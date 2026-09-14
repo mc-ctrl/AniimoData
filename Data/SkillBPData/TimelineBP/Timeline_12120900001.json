@@ -1,0 +1,156 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "96b15cfb-d946-43be-9dcd-e27dbc922f1a",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "name": "dropEffectStr",
+      "UID": "2c832e7b-1509-4d78-8b65-47537b39e0f9",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "24": {
+      "name": "dropEffectStr",
+      "UID": "65d320a4-2192-4e59-93f1-b003ce14b4ef",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "5": {
+      "UID": "a4010e68-10df-45ee-a47d-461d93e81461",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          21,
+          28
+        ]
+      },
+      "NodeID": 5
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "9f44462d-f7c2-481b-822c-acc6fccbe59f",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "EnvBehav_Bloom"
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "18e83fdd-63c3-428b-8103-47dcca46ae57",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8de6e0af-a348-4d22-9458-e8b871dbc5b7",
+      "effectId": "Eff_Parmon_10212_Skill_MagicFlower_Body_003",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "26": {
+      "UID": "df0c2166-3145-410b-8ad6-142074bf74c3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          24,
+          27,
+          30
+        ]
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "cffab434-9c28-4595-b2d0-9df0a52de7c8",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "timelineId": 12120900002,
+      "name": "jumpToNextTimeline",
+      "UID": "63aa9f8c-ddaf-487f-b91f-9f54c9201c4f",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "d8537da3-2b24-4ced-91c7-71f8a03da571",
+      "effectId": "Eff_Parmon_10212_Skill_MagicFlower_Body_003",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "adab2442-25f4-4a3b-a2be-0dabc26acfa3",
+      "name": "triggerAbilityDelayEnterCd",
+      "NodeID": 30
+    },
+    "11": {
+      "UID": "fea04609-d4f4-4dc6-8a8f-a5f7acc54e74",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "19": {
+      "time": 14,
+      "notShowCountDown": false,
+      "actionIds": [
+        23,
+        22,
+        29,
+        30,
+        17
+      ],
+      "aiTriggerTime": 1,
+      "UID": "c60d002f-bbb4-4819-b06b-2367cd1a90cb",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 19
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 20,
+      "UID": "ed3d242f-0dab-470c-b1ef-bea4eb6338da"
+    },
+    "21": {
+      "UID": "9bcedf7f-0a72-4be0-b3af-db7474a2c98c",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "name": "playGroundFlowerEffect",
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_12120900",
+  "NodeID": 7,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    5,
+    11,
+    26,
+    20
+  ],
+  "layer": "Base",
+  "length": 14
+}

@@ -1,0 +1,845 @@
+{
+  "LEAVE_BATTLE_FIELD": {
+    "eventName": "leaveBattleField",
+    "desc": "离开污染区域事件",
+    "isDungeonUse": 1
+  },
+  "LEAVE_BLOCK_MAP": {
+    "param": [
+      [
+        "blockMapId",
+        "long"
+      ]
+    ],
+    "desc": "离开小区块区域",
+    "eventName": "leaveBlockMap"
+  },
+  "LEAVE_CALL_FRIENDS": {
+    "paramOutput": [
+      [
+        "entity",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "离开呼朋引伴",
+    "eventName": "leaveCallFriends"
+  },
+  "LEAVE_LOCK_TARGET": {
+    "paramOutput": [
+      [
+        "entity",
+        "GameObject"
+      ]
+    ],
+    "desc": "离开强锁",
+    "eventName": "leaveLockTarget"
+  },
+  "LEAVE_TRIGGER": {
+    "paramOutput": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "离开trigger",
+    "eventName": "leaveTrigger"
+  },
+  "LEVELITEM_ARRIVE": {
+    "param": [
+      [
+        "wayPointId",
+        "long"
+      ]
+    ],
+    "levelItemRequired": 1,
+    "desc": "关卡元件到达目标点",
+    "eventName": "levelItemArrive"
+  },
+  "LEVELITEM_STATE_CHANGE": {
+    "param": [
+      [
+        "state",
+        "int"
+      ]
+    ],
+    "levelItemRequired": 1,
+    "desc": "关卡元件状态变化",
+    "eventName": "levelItemStateChange"
+  },
+  "NPC_BEHAVIOR_STATUS": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "behaviorId",
+        "long"
+      ],
+      [
+        "state",
+        "int"
+      ]
+    ],
+    "desc": "监听NPC行为状态",
+    "eventName": "npcBehaviorStatus"
+  },
+  "NPC_SPECIAL_STATE": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "specialState",
+        "int"
+      ]
+    ],
+    "desc": "NPC特殊状态监听",
+    "eventName": "npcSpecialState"
+  },
+  "ON_SPAWNER_DEATH": {
+    "param": [
+      [
+        "spawnerId",
+        "long"
+      ]
+    ],
+    "desc": "Spawner死亡",
+    "eventName": "onSpawnerDeath"
+  },
+  "OPEN_CHEST": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "开启宝箱",
+    "eventName": "openChest"
+  },
+  "OPEN_COLLECT_ITEM": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "打开采集物",
+    "eventName": "openCollectItem"
+  },
+  "OPEN_PUPPET_CHEST": {
+    "param": [
+      [
+        "puppetStaticId",
+        "long"
+      ]
+    ],
+    "desc": "打开puppet创建的宝箱",
+    "eventName": "openPuppetChest"
+  },
+  "OPEN_RESOURCEBOX": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "type",
+        "int"
+      ]
+    ],
+    "desc": "打开资源箱子",
+    "eventName": "openResourceBox"
+  },
+  "PET_DEATH_COUNT": {
+    "paramOutput": [
+      [
+        "count",
+        "long"
+      ]
+    ],
+    "eventName": "petDeathCount",
+    "desc": "宠物死亡计数累加",
+    "isDungeonUse": 1
+  },
+  "PET_DISMOUNT_VEHICLE": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "宠物离开指定staticId载具",
+    "eventName": "petDismountVehicle"
+  },
+  "PET_MOUNT_VEHICLE": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "宠物乘上指定staticId载具",
+    "eventName": "petMountVehicle"
+  },
+  "PHOTO_GUESS": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "百变怪拍照结果",
+    "eventName": "PhotoGuess"
+  },
+  "PLAYERORPET_ADD_BUFF": {
+    "param": [
+      [
+        "buffId",
+        "int"
+      ]
+    ],
+    "desc": "player或pet添加指定buff",
+    "eventName": "playerOrPetAddBuff"
+  },
+  "PLAYERORPET_REMOVE_BUFF": {
+    "param": [
+      [
+        "buffId",
+        "int"
+      ]
+    ],
+    "desc": "player或pet移除指定buff",
+    "eventName": "playerOrPetRemoveBuff"
+  },
+  "PLAYER_DEATH_COUNT": {
+    "paramOutput": [
+      [
+        "count",
+        "long"
+      ]
+    ],
+    "eventName": "playerDeathCount",
+    "desc": "玩家死亡次数累加",
+    "isDungeonUse": 1
+  },
+  "PLAYER_DISMOUNT_VEHICLE": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "玩家离开指定staticId载具",
+    "eventName": "playerDismountVehicle"
+  },
+  "PLAYER_ENTER_COMBAT": {
+    "desc": "监听主角进入战斗状态",
+    "eventName": "playerEnterCombat"
+  },
+  "PLAYER_INTERACT_ENV_EVENT": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "interactId",
+        "int"
+      ]
+    ],
+    "desc": "与Env交互事件",
+    "eventName": "interactEnvEvent"
+  },
+  "PLAYER_LEAVE_COMBAT": {
+    "desc": "监听主角离开战斗状态",
+    "eventName": "playerLeaveCombat"
+  },
+  "PLAYER_MOUNT_VEHICLE": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "玩家乘上指定staticId载具",
+    "eventName": "playerMountVehicle"
+  },
+  "PLAYER_RELOGIN": {
+    "desc": "玩家重登",
+    "eventName": "playerRelogin"
+  },
+  "PLAYER_STATE_CHANGE": {
+    "param": [
+      [
+        "state",
+        "int"
+      ]
+    ],
+    "desc": "玩家状态变化",
+    "eventName": "playerStateChange"
+  },
+  "PUPPET_ADD_BUFF": {
+    "paramOutput": [
+      [
+        "entity",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "buffId",
+        "int"
+      ]
+    ],
+    "desc": "puppet添加指定buff",
+    "eventName": "puppetAddBuff"
+  },
+  "PUPPET_DEATH": {
+    "param": [
+      [
+        "templateId",
+        "long"
+      ]
+    ],
+    "desc": "puppet死亡",
+    "eventName": "puppetDeath"
+  },
+  "PUPPET_ENTER_COMBAT": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "指定puppet进入战斗触发",
+    "eventName": "puppetEnterCombat"
+  },
+  "PUPPET_LEAVE_COMBAT": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "指定puppet退出战斗触发",
+    "eventName": "puppetLeaveCombat"
+  },
+  "PUPPET_LIFE_DEAD": {
+    "param": [
+      [
+        "staticId",
+        "int"
+      ]
+    ],
+    "desc": "puppet生命为0进入濒死状态",
+    "eventName": "puppetLifeDead"
+  },
+  "PUPPET_REMOVE_BUFF": {
+    "paramOutput": [
+      [
+        "entity",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "buffId",
+        "int"
+      ]
+    ],
+    "desc": "puppet移除指定buff",
+    "eventName": "puppetRemoveBuff"
+  },
+  "REMOVE_ENTITY_TAG": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "entityTag",
+        "string"
+      ]
+    ],
+    "desc": "监听指定staticId的entity移除指定的tag",
+    "eventName": "removeEntityTag"
+  },
+  "ROGUE_BUFF_SELECT": {
+    "eventName": "rogueBuffSelect",
+    "desc": "肉鸽buff选择结束",
+    "isDungeonUse": 1
+  },
+  "ROGUE_CHOOSE_OPTION": {
+    "paramOutput": [
+      [
+        "player",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "optionId",
+        "long"
+      ]
+    ],
+    "desc": "爬塔随机事件选项",
+    "eventName": "rogueChooseOption"
+  },
+  "ROGUE_START_BATTLE": {
+    "desc": "肉鸽开始战斗",
+    "eventName": "rogueStartBattle"
+  },
+  "SANDBOX_COMPLETED_LOAD": {
+    "desc": "Sandbox全部加载完成",
+    "eventName": "sandboxCompletedLoad"
+  },
+  "SANDBOX_EVENT": {
+    "param": [
+      [
+        "eventType",
+        "eventType"
+      ]
+    ],
+    "levelItemRequired": 1,
+    "desc": "sandboxEvent",
+    "eventName": "sandboxEvent"
+  },
+  "STARD_GUIDANCE": {
+    "paramOutput": [
+      [
+        "player",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "guidanceId",
+        "long"
+      ]
+    ],
+    "desc": "开始引导",
+    "eventName": "startGuidance"
+  },
+  "TOGGLE_PET": {
+    "desc": "切换宠物",
+    "eventName": "togglePet"
+  },
+  "USE_ABILITY": {
+    "param": [
+      [
+        "abilityId",
+        "long"
+      ]
+    ],
+    "desc": "主角使用技能",
+    "eventName": "useAbility"
+  },
+  "ABILITY_EVENT": {
+    "param": [
+      [
+        "abilityEvent",
+        "string"
+      ],
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "技能事件",
+    "eventName": "abilityEvent"
+  },
+  "ABILITY_HIT_PLAYER": {
+    "param": [
+      [
+        "abilityId",
+        "long"
+      ]
+    ],
+    "desc": "监听指定技能命中玩家",
+    "eventName": "abilityHitPlayer"
+  },
+  "ACCEPT_QUEST": {
+    "paramOutput": [
+      [
+        "player",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "questId",
+        "long"
+      ]
+    ],
+    "desc": "接取过任务(已接取、已完成、已提交)",
+    "eventName": "acceptQuest"
+  },
+  "ADD_ENTITY_TAG": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "entityTag",
+        "string"
+      ]
+    ],
+    "desc": "监听指定staticId的entity增加指定的tag",
+    "eventName": "addEntityTag"
+  },
+  "AI_EVENT": {
+    "param": [
+      [
+        "aiEvent",
+        "string"
+      ],
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "AI相关事件",
+    "eventName": "AI_Event"
+  },
+  "ALL_PET_DEATH": {
+    "desc": "所有宠物死亡",
+    "eventName": "allPetDeath"
+  },
+  "ALL_PLAYER_DEATH": {
+    "desc": "所有玩家死亡",
+    "eventName": "allPlayerDeath"
+  },
+  "ALL_PLAYER_LEAVE_COMBAT": {
+    "eventName": "allPlayerLeaveCombat",
+    "desc": "所有玩家离开战斗状态",
+    "isDungeonUse": 1
+  },
+  "ANY_PLAYER_DEATH": {
+    "eventName": "anyPlayerDeath",
+    "desc": "任意玩家死亡",
+    "isDungeonUse": 1
+  },
+  "ANY_PLAYER_ENTER_COMBAT": {
+    "eventName": "anyPlayerEnterCombat",
+    "desc": "任意玩家进入战斗状态",
+    "isDungeonUse": 1
+  },
+  "ATTACH_DETACH": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "attachId",
+        "long"
+      ]
+    ],
+    "desc": "挂接分离",
+    "eventName": "attachDetach"
+  },
+  "BALL_HIT": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "投掷球命中Entity",
+    "eventName": "ballHit"
+  },
+  "CATCH_PUPPET": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "捕捉puppet",
+    "eventName": "catchPuppet"
+  },
+  "CATCH_PUPPET_FAIL": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "捕捉puppet失败",
+    "eventName": "catchPuppetFail"
+  },
+  "COMPLETED_QUEST": {
+    "paramOutput": [
+      [
+        "player",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "questId",
+        "long"
+      ]
+    ],
+    "desc": "完成过任务(已完成、已提交)",
+    "eventName": "completedQuest"
+  },
+  "CUR_PET_DEAD": {
+    "desc": "当前附身宠物死亡",
+    "eventName": "curPetDead"
+  },
+  "CUSTOM_TRIGGER": {
+    "param": [
+      [
+        "customDataId",
+        "long"
+      ]
+    ],
+    "desc": "通用条件触发（triggerMap的condition完成）",
+    "eventName": "customTrigger"
+  },
+  "DIALOGUE_GRAPH_FINISH": {
+    "paramOutput": [
+      [
+        "branch",
+        "int"
+      ]
+    ],
+    "param": [
+      [
+        "graphId",
+        "long"
+      ]
+    ],
+    "desc": "对话图结束",
+    "eventName": "dialogueGraphFinish"
+  },
+  "DIALOGUE_GRAPH_START": {
+    "param": [
+      [
+        "graphId",
+        "long"
+      ]
+    ],
+    "desc": "对话图开始",
+    "eventName": "dialogueGraphStart"
+  },
+  "DIALOGUE_GROUP_FINISH": {
+    "paramOutput": [
+      [
+        "player",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "groupId",
+        "long"
+      ]
+    ],
+    "desc": "对白结束",
+    "eventName": "dialogueGroupFinish"
+  },
+  "DIALOGUE_GROUP_START": {
+    "paramOutput": [
+      [
+        "player",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "groupId",
+        "long"
+      ]
+    ],
+    "desc": "对白开始",
+    "eventName": "dialogueGroupStart"
+  },
+  "DITTO_ENTRY_INTERACT": {
+    "desc": "百变怪入口交互",
+    "eventName": "dittoEntryInteract"
+  },
+  "ENTER_BATTLE_FIELD": {
+    "eventName": "enterBattleField",
+    "desc": "进入污染区域事件",
+    "isDungeonUse": 1
+  },
+  "ENTER_BLOCK_MAP": {
+    "param": [
+      [
+        "blockMapId",
+        "long"
+      ]
+    ],
+    "desc": "进入小区块区域",
+    "eventName": "enterBlockMap"
+  },
+  "ENTER_CALL_FRIENDS": {
+    "paramOutput": [
+      [
+        "entity",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "进入呼朋引伴",
+    "eventName": "enterCallFriends"
+  },
+  "ENTER_DAYLIGHT": {
+    "desc": "进入白天",
+    "eventName": "enterDaylight"
+  },
+  "ENTER_LOCK_TARGET": {
+    "paramOutput": [
+      [
+        "entity",
+        "GameObject"
+      ]
+    ],
+    "desc": "进入强锁",
+    "eventName": "enterLockTarget"
+  },
+  "ENTER_NIGHT": {
+    "desc": "进入黑夜",
+    "eventName": "enterNight"
+  },
+  "ENTER_TIME_PERIOD": {
+    "param": [
+      [
+        "timePeriod",
+        "int"
+      ]
+    ],
+    "desc": "切换到指定昼夜状态",
+    "eventName": "enterTimePeriod"
+  },
+  "ENTER_TRIGGER": {
+    "paramOutput": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "进入trigger",
+    "eventName": "enterTrigger"
+  },
+  "FB_BOSSRUSH_ALL_BOSS_FINISH_EVENT": {
+    "desc": "全息协战所有Boss挑战过一次后触发",
+    "eventName": "fbBossRushAllBossFinishEvent"
+  },
+  "FINISH_GUIDANCE": {
+    "paramOutput": [
+      [
+        "player",
+        "GameObject"
+      ]
+    ],
+    "param": [
+      [
+        "guidanceId",
+        "long"
+      ]
+    ],
+    "desc": "完成引导",
+    "eventName": "finishGuidance"
+  },
+  "FISHING_PHASE_CHANGE": {
+    "param": [
+      [
+        "phase",
+        "int"
+      ]
+    ],
+    "desc": "BOSS捕捉阶段变化",
+    "eventName": "fishingPhaseChange"
+  },
+  "FISHING_PHASE_TIME": {
+    "param": [
+      [
+        "pastTime",
+        "int"
+      ]
+    ],
+    "desc": "BOSS捕捉玩法阶段计时",
+    "eventName": "fishingPhaseTime"
+  },
+  "GRAPH_END": {
+    "param": [
+      [
+        "result",
+        "bool"
+      ]
+    ],
+    "desc": "蓝图结束",
+    "eventName": "graphEnd"
+  },
+  "GRAVITATIONAL_MANIPULATION_DETECTION": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ]
+    ],
+    "desc": "引力操控检测",
+    "eventName": "GravitationalManipulationDetection"
+  },
+  "INTERACT_NPC_EVENT": {
+    "param": [
+      [
+        "staticId",
+        "long"
+      ],
+      [
+        "index",
+        "int"
+      ]
+    ],
+    "desc": "监听NPC配置交互",
+    "eventName": "interactNpcEvent"
+  },
+  "INTERACT_NPC_SANDBOX_CUSTOM_EVENT": {
+    "param": [
+      [
+        "InteractId",
+        "long"
+      ]
+    ],
+    "desc": "与NPC交互sandbox自定义事件",
+    "eventName": "interactNPCSandboxCustomEvent"
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "gameSystem": 1,
+    "param": 200,
+    "name": 1832013591,
+    "type": 1,
+    "condition": 307001
+  },
+  {
+    "gameSystem": 1,
+    "param": 120,
+    "name": 1899956340,
+    "type": 2,
+    "condition": 307001
+  },
+  {
+    "gameSystem": 2,
+    "type": 3,
+    "param": 1,
+    "name": 1667450629
+  },
+  {
+    "gameSystem": 2,
+    "type": 4,
+    "param": 1,
+    "name": 1279280415
+  }
+]

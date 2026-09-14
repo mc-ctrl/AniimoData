@@ -1,0 +1,144 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 18,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10011_Skill_Gliding_Bullet",
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "89": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2101101,
+      "NodeID": 89,
+      "UID": "db1827e4-999e-4305-9440-45209a7ec333",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "85": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_starly_attack_hit",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "7e93b252-a620-46fc-9f60-7ed39bc8dfaa",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 85
+    },
+    "18": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_starly_attack_hit",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "cb6d6aac-1239-46ad-a0d1-962d7f88ffcd",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 18
+    },
+    "83": {
+      "name": "hasBuffTag",
+      "UID": "d19c897b-d212-4cf5-ad7c-05776244ecef",
+      "target": "TARGET",
+      "NodeID": 83,
+      "buffTag": 4
+    },
+    "19": {
+      "actionIds": [
+        89,
+        85
+      ],
+      "conditionActionIds": [
+        83
+      ],
+      "UID": "c91fd970-bfd4-4246-9c35-46847f61438a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "25": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4411993a-ccb2-4c20-813f-0084b95b926b",
+      "effectId": "Eff_Parmon_10011_Skill_Gliding_Hit",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "21": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 18,
+      "NodeID": 21,
+      "UID": "b145a9f2-ae00-4ae1-87ca-273ac736bd6c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.7,
+            1.7,
+            2.2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        19
+      ]
+    }
+  },
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    21,
+    25
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "BPName": "ability_10120310",
+  "tickInterval": 0,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "defaultHitSoundType": "s",
+  "maxHitNum": 1,
+  "impulseId": 2000,
+  "acceleration": 0
+}

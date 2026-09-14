@@ -1,0 +1,114 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120313",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "tags": [
+    26,
+    28
+  ],
+  "immuneTags": {},
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "cb4689fa-bb98-45f3-bcfb-f6823b4021bf",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        4
+      ]
+    },
+    "4": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 212031301,
+      "NodeID": 4,
+      "UID": "5c0392ba-46e0-4b71-aa21-649194f79720",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "buffId": 212031302,
+      "name": "hasBuff",
+      "UID": "762f8f16-73db-4463-834b-2792cf869bb1",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "15": {
+      "name": "isActorType",
+      "UID": "c805f3b9-a0d0-4b80-8bfc-4d04e6f74d97",
+      "target": "OWNER",
+      "NodeID": 15,
+      "actorType": 2
+    },
+    "7": {
+      "UID": "349429a6-ecde-4e05-929d-b53f4f9afe2d",
+      "value": false,
+      "name": "setForceControlMode",
+      "NodeID": 7
+    },
+    "16": {
+      "id": 2026,
+      "duration": 3,
+      "NodeID": 16,
+      "UID": "a95a2387-3170-41b3-acd4-e5e64c57f557",
+      "name": "showBossMechanismTip"
+    },
+    "8": {
+      "buffId": 212031301,
+      "name": "removeBuff",
+      "UID": "2f696aea-11f2-4f6f-856f-f6dcd94472ac",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "4feb1237-88eb-4b5e-a59f-79d2cabe1e22",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "11": {
+      "UID": "78d74ac5-705b-4fda-a0bd-29336cc6c6f3",
+      "state": 2,
+      "name": "setPetControlState",
+      "NodeID": 11
+    },
+    "13": {
+      "buffId": 2120313,
+      "name": "removeBuff",
+      "UID": "70cdc287-712a-4492-96a6-9b27d3886f24",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "a59dc7af-c07c-4fd7-8d70-621a6779194c",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "onBuffThinkIds": [
+    5
+  ],
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    2,
+    7,
+    11,
+    14,
+    16
+  ]
+}

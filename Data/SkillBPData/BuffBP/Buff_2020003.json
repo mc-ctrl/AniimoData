@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "0b1463f2-60bb-4743-95b1-08c05fc2c7f9",
+      "name": "getBuffSeriesCnt",
+      "buffSeries": 2,
+      "NodeID": 3
+    },
+    "4": {
+      "key": "ShieldCnt",
+      "name": "setRoguePersistData",
+      "UID": "43c3cda4-44ab-4f40-b4fe-69da5fa8f01b",
+      "value": {
+        "UID": "0b1463f2-60bb-4743-95b1-08c05fc2c7f9",
+        "name": "getBuffSeriesCnt",
+        "buffSeries": 2,
+        "NodeID": 3
+      },
+      "NodeID": 4
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "02518e49-873d-455a-b6e1-33e61a549371",
+      "name": "registerBuffSeriesCntChangeEvent",
+      "buffSeries": 2
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "5127603e-e5d1-4cb2-bb06-900e6eae977c",
+      "NodeID": 6
+    }
+  },
+  "BPName": "buff_2020003",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

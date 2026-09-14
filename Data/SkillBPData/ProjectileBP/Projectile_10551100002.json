@@ -1,0 +1,142 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 46,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Bullet",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "48": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 46,
+      "NodeID": 48,
+      "UID": "1e1992aa-4289-43ea-b588-9fe38f69a5a7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        46
+      ]
+    },
+    "77": {
+      "name": "stopSoundStr",
+      "UID": "90d350b9-1e80-4a40-9dc5-cfac9f2e073a",
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost02",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "74": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c4a47b12-28f7-4f7e-908e-1cf837ef4af6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost03",
+      "NodeID": 74
+    },
+    "46": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10551100,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "ae7e6a45-ad6f-4d13-9566-48ba503862be",
+      "target": "TARGET",
+      "NodeID": 46,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2001,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10055_Skill_WolfGhost_Explode01",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 12,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103
+      }
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3b2cb81e-5144-4712-97f5-fbba4b5e1c5b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost02",
+      "NodeID": 76
+    }
+  },
+  "reboundData": {
+    "reboundRelation": 2,
+    "maxCount": {
+      "rValue": 5,
+      "name": "add",
+      "UID": "98a29949-2c08-492b-88e6-4d8cf9e95103",
+      "NodeID": 61,
+      "lValue": {
+        "rValue": 2,
+        "name": "multiply",
+        "UID": "7dd8b03a-7308-4a49-9983-980a4da49b08",
+        "NodeID": 60,
+        "lValue": {
+          "templateId": 2105512,
+          "name": "getBuffLayer",
+          "UID": "4f4796b0-e663-4f1e-8bd8-9cb7165afe8a",
+          "target": "OWNER",
+          "NodeID": 59
+        }
+      }
+    },
+    "isReboundSelf": true,
+    "searchRadius": 10
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    77
+  ],
+  "onProjectileHitIds": [
+    48,
+    74
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "BPName": "ability_10551100",
+  "tickInterval": 0.5,
+  "onProjectileStartIds": [
+    76
+  ],
+  "startSleepTime": 0,
+  "maxHitNum": 999,
+  "defaultHitSoundType": "h",
+  "impulseId": 2001,
+  "acceleration": 0
+}

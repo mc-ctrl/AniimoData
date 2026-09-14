@@ -1,0 +1,46 @@
+{
+  "ONLYBALLTYPE": {},
+  "SETTLEMENT_BOSS_EFFECT_KEY": "Eff_Env_Level_IOT_ButterflyValley_Guoshi_Disappear",
+  "SUCCESS_BOSS_ANIM_KEY": "StunEnd",
+  "SUCCESS_BOSS_EFFECT_KEY": "Eff_Env_Sceneobject_BossCatch_Success",
+  "SUCCESS_CAMERA_BLEND_TIME": 1,
+  "SUCCESS_CAMERA_FOV": 50,
+  "SUCCESS_CAMERA_OFFSET": [
+    0,
+    0.8,
+    3
+  ],
+  "SUCCESS_CAMERA_ROT": [
+    0,
+    180,
+    0
+  ],
+  "SUCCESS_PLAYER_ANIM": [
+    "Social_Encourage_Start",
+    "Social_Encourage_Loop",
+    "Social_Encourage_End"
+  ],
+  "SUCCESS_TIMELINE_ID": 401,
+  "THROW_SKILL_ID": 9200026,
+  "THROW_SKILL_INTERVAL": 0.2,
+  "TICKET_ITEM_ID": 1018,
+  "TICKET_SHOP_ITEM_ID": 360008,
+  "BUBBLE_SHOW_TIME": 4.1,
+  "CHANGE_CAMERA_DELAY": 5.3,
+  "CRIT_EFFECT_ID": "Eff_Env_Home_Build_Lighting",
+  "FAIL_TIME_ID": 402,
+  "FISHING_BALL_EFF": "Eff_CatchBall_NormalBall_TailStarHit_bosscatch",
+  "FISHING_BALL_SHOWTIME": 1.5,
+  "FISHING_CAMERA_BLEND_TIME": 0,
+  "FISHING_F_REAWARD": 14004,
+  "LEVEL_RANDOM_FAIL_BIG_EFFECT": "Eff_Env_Sceneobject_BossCatch_KeyItem_BossReward_Purple",
+  "LEVEL_RANDOM_FAIL_BIG_PM": "Eff_Env_SceneObject_BossCatch_Purple",
+  "LEVEL_RANDOM_FAIL_PM_DURATION": 0.5,
+  "LEVEL_RANDOM_FAIL_SMALL_EFFECT": "Eff_Env_Sceneobject_BossCatch_KeyItem_BossReward_Blue",
+  "LEVEL_RANDOM_FAIL_SMALL_PM": "Eff_Env_SceneObject_BossCatch_Blue",
+  "LEVEL_RANDOM_SUCCESS_EFFECT": "Eff_Env_Sceneobject_BossCatch_KeyItem_BossReward_Gold",
+  "LEVEL_RANDOM_SUCCESS_PM": "Eff_Parmon_BossCatch_Caught",
+  "LEVEL_RANDOM_SUCCESS_PM_DURATION": 2,
+  "LEVEL_TOAST_SHOWTIME": 1.5,
+  "MAX_FIRETHROW_DIS": 20
+}

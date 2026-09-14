@@ -1,0 +1,38 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126203",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    1,
+    20
+  ],
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10261_Skill_CloudShield"
+    }
+  ],
+  "nodeMap": {
+    "3": {
+      "buffId": 2126203,
+      "name": "removeBuff",
+      "UID": "fc649965-1fef-4729-b00f-76907813a49b",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "b8e470f7-554b-48c4-9381-13cf0db129af",
+      "target": "OWNER",
+      "NodeID": 4
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

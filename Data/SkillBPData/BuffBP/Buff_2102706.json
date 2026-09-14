@@ -1,0 +1,221 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "taken_dmg_dec_rate_v": 0.3
+  },
+  "NodeID": 1,
+  "UID": "b618e1a3-c3b0-4a87-a696-337b5fb1193e",
+  "tags": [
+    10,
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2102706",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "109ebee7-63cb-475f-a0e6-eaea06a083c9",
+      "target": "OWNER",
+      "NodeID": 6,
+      "animId": "Skill_DefMode_End"
+    },
+    "8": {
+      "UID": "f0734016-6f5a-4138-9322-866b463766c1",
+      "name": "stopAnimation",
+      "anim": "Skill_DefMode_Loop",
+      "NodeID": 8
+    },
+    "9": {
+      "drag": 0,
+      "inputAcceleration": 0,
+      "NodeID": 9,
+      "UID": "c74535d3-04f0-4330-a67a-9e5959c1249b",
+      "name": "enableSpecialDefenseST",
+      "enable": true,
+      "maxVelocity": 0
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "02a96185-c86a-4994-979b-692bc0a431b1",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_ShockWave",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "fd28ff14-a73d-423d-bad3-cc0f9981f7fe",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Skill_DefMode_Hit"
+    },
+    "22": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "65ae78c0-efc5-4c8d-94fc-1662b87304c7",
+      "to": 10270421,
+      "NodeID": 22,
+      "from": 10270420
+    },
+    "4": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0f1da8a8-977d-4007-ae85-ec748f83dcfc",
+      "target": "OWNER",
+      "NodeID": 4,
+      "animId": "Skill_DefMode_Loop"
+    },
+    "24": {
+      "UID": "393592bf-ba04-43c7-8759-26d9bfbd6c13",
+      "name": "disableWeightPush",
+      "NodeID": 24
+    },
+    "10": {
+      "drag": 0,
+      "inputAcceleration": 0,
+      "NodeID": 10,
+      "UID": "a84e8086-6d7f-42d4-ba08-c49c2e3131e1",
+      "name": "enableSpecialDefenseST",
+      "enable": false,
+      "maxVelocity": 0
+    },
+    "15": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 0
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10021,
+        "hitSoundType": "h",
+        "impulseId": 0,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      },
+      "UID": "f0decc0e-61d2-4bff-8950-d9ae22cd87d9",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cdb65ae6-a166-4f65-96fe-92bb4f9882c2",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "dae136c4-06dd-49fa-adbc-3073c9541b68",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "17": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 15,
+      "NodeID": 17,
+      "UID": "d6bce02a-3666-435b-85fa-ccf3a4675427",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        15,
+        28,
+        30
+      ]
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "44e7b82f-29cb-4678-827a-4a44de027fdb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10027_Skill_DefMode_Hit",
+      "NodeID": 29
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c6222813-b551-4540-8712-4ae0ff12b394",
+      "effectId": "Eff_Parmon_10194_Buff_Heal_Arrow_Up",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "13": {
+      "actionIds": [
+        11,
+        17,
+        21,
+        29
+      ],
+      "interval": 0.1,
+      "UID": "1842dbde-4535-414b-9b5d-9d56cd548768",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 13
+    },
+    "23": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "690d6cab-2eee-401e-86fd-c80ac2a6f14f",
+      "to": 10270420,
+      "NodeID": 23,
+      "from": 10270421
+    },
+    "28": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.02
+      },
+      "name": "calcResult",
+      "UID": "9121a090-ea07-4c11-8dc1-7e6eeadcf6c9",
+      "target": "OWNER",
+      "NodeID": 28
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8,
+    6,
+    10,
+    23,
+    26
+  ],
+  "onBuffStartIds": [
+    4,
+    9,
+    13,
+    22,
+    24,
+    25
+  ]
+}

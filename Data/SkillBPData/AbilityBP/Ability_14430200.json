@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_14430200",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 10900480,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 14430200001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Sonar_Start",
+    "Skill_Sonar_End",
+    "Skill_Sonar_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10443_Skill_Sonar_Screen",
+    "Eff_Parmon_10443_Skill_Sonar_Weakness_02"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 1,
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "name": "声纳攻击"
+}

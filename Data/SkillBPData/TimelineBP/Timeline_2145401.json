@@ -1,0 +1,225 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "6": {
+      "key": "killenemy",
+      "name": "setCacheVal",
+      "UID": "fc257a90-7742-4fbd-8c07-025ebb84c73f",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 6
+    },
+    "8": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "c492b6bd-6d36-4c11-bfbd-ddbb7a0dac14",
+      "NodeID": 8,
+      "lValue": {
+        "key": "killenemy",
+        "name": "getCacheVal",
+        "UID": "f2425640-1538-4d5e-8df1-e278829060eb",
+        "target": "OWNER",
+        "NodeID": 7
+      }
+    },
+    "9": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "d8cc6f69-22b7-47e0-a277-f817f00661bd",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11,
+        17,
+        26,
+        29
+      ],
+      "NodeID": 9
+    },
+    "11": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e1cca300-d444-4103-b53f-6d7dfc38d6e5",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_Break",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "8f92c39b-006a-47b9-816d-4414f14ccb14",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "5335d60e-4f5b-455b-8b40-311cbd870cae",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 21
+    },
+    "22": {
+      "buffId": 9145402,
+      "name": "hasBuff",
+      "UID": "f725a2f5-6379-4da9-a967-846cd4de862c",
+      "target": "MASTER",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "327ed0e8-7e12-4815-af44-1ce720f82d41",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          6,
+          21,
+          28
+        ]
+      },
+      "NodeID": 4
+    },
+    "10": {
+      "UID": "bf3e24e7-0efa-4494-af60-c34da62753d0",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        18
+      ],
+      "name": "actOnTargets",
+      "UID": "16b5baaa-5e47-4146-a396-caef35389237",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.5
+          ],
+          "shapeArgs": [
+            8,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 15
+    },
+    "25": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "0973f36f-4a21-44d8-88ba-fb73d59552f1",
+      "NodeID": 25,
+      "lValue": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "e2fb2ccf-ae4d-4686-a73c-99870a91b757",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "add8271f-7715-433a-be84-7d76f6da798d",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_Start_2",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "17": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "f43956b2-42fd-4f48-9951-56785d8bfb56",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e602e1b9-4ee6-4296-9965-b202a2e22f4d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RockCollision_RockBreak",
+      "NodeID": 29
+    },
+    "18": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2145401,
+      "NodeID": 18,
+      "UID": "784bca85-efa4-4f10-a86c-e29a18a53b43",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b3ec4f14-7974-439a-bb9b-a14400f19c14",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RockCollision_RockRise",
+      "NodeID": 28
+    },
+    "2": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c1c8ca8a-ba51-4c8c-95ce-b1ec75de990c",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_Start_2",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "13": {
+      "UID": "c2c40420-47c2-4224-85ca-d0f31a25ecba",
+      "eventType": "EventExit",
+      "NodeID": 13
+    },
+    "23": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "70d466fc-f466-4991-be53-191b1b4578ff",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 23
+    }
+  },
+  "BPName": "timeline_2145401",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    4,
+    10,
+    13
+  ],
+  "layer": "Base",
+  "length": 10
+}

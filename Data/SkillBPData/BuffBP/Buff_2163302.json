@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": -0.5,
+    "speed_ratio_sprint_v": -0.5,
+    "speed_ratio_walk_v": -0.5,
+    "speed_ratio_dash_v": -0.5
+  },
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    11
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 2163302,
+    "speed_ratio_sprint_v": "param0",
+    "speed_ratio_dash_v": "param0",
+    "type": 1,
+    "speed_ratio_run_v": "param0",
+    "speed_ratio_walk_v": "param0"
+  },
+  "BPName": "buff_2163302",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "343be3cb-9d55-464f-b5cf-fb96f06e5dea",
+      "effectId": "Eff_Buff_Movement_Arrow_Down",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "17371372-a9f0-4053-8b5f-23b7f66d2ca7",
+      "effectId": "Eff_Buff_Movement_Arrow_Down",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

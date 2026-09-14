@@ -1,0 +1,109 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "327ed0e8-7e12-4815-af44-1ce720f82d41",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          7,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "c1cab311-34f4-4eaa-8b3e-f782b46dd54b",
+      "eventType": "EventExit",
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        8,
+        12
+      ],
+      "NodeID": 10,
+      "UID": "e9b5505f-65b4-4e25-bd20-45aa0485c0f6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13,
+        15,
+        16
+      ]
+    },
+    "15": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "73f21e67-e05e-4f95-9833-c6132a08ca21",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Tree_Out",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "duration": 0,
+      "disableWhenFinished": false,
+      "NodeID": 7,
+      "UID": "9561a16f-e780-4a29-9bd8-317705cf2a57",
+      "target": "CASTER",
+      "presetName": "Eff_Monster_90213_Mon_Skill_Green_Tree_Dis",
+      "name": "playPreset"
+    },
+    "16": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "3b35ef98-e61b-41bb-a32f-038de67fe50a",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Tree_Out_Break",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "4b450b1f-26c3-4694-bff5-5ede5355d828",
+      "name": "stopPreset",
+      "presetName": "Eff_Monster_90213_Mon_Skill_Green_Tree_Dis_Invet",
+      "NodeID": 8
+    },
+    "13": {
+      "UID": "bbef0150-62dc-4ce2-a2d2-9c89ad18b8c0",
+      "name": "stopPreset",
+      "presetName": "Eff_Monster_90213_Mon_Skill_Green_Tree_Dis_Invet",
+      "NodeID": 13
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10,
+      "NodeID": 11,
+      "UID": "089106db-f78c-4ff3-acb2-b50d5bad9c89"
+    },
+    "2": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "7e4dac28-354f-4848-badf-33fcddf5477a",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Tree_In",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "12": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "736397ba-3a76-4f6a-9b62-9aa59987e58d",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Tree_Out",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2921303",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    4,
+    11,
+    6
+  ],
+  "layer": "Base",
+  "length": 15
+}

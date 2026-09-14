@@ -1,0 +1,84 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12110002",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10211_Attack01",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxAngularOffset": 1000,
+  "maxHitNum": 1,
+  "duration": 3.2,
+  "minAngularOffset": 0,
+  "moveSpeed": 14,
+  "defaultHitSoundType": "s",
+  "onProjectileHitIds": [
+    27,
+    36
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "27": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12110002,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "fc5b3add-490b-4175-8a58-47aafc5e4275",
+      "target": "TARGET",
+      "NodeID": 27,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102,
+        "hitFrameFreezeId": -1,
+        "elementType": 6,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt"
+      }
+    },
+    "54": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.75
+      },
+      "name": "calcResult",
+      "UID": "e1a349ec-707e-4796-bfe2-3dca4e4a9f72",
+      "target": "CASTER",
+      "NodeID": 54
+    },
+    "35": {
+      "UID": "932f9194-ec4a-46ad-b8f5-551e5e13f490",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 35
+    },
+    "36": {
+      "actionIds": [
+        54
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "01731cb3-0aa4-4e17-bcab-1be359f91549",
+      "name": "doActionsByConditions",
+      "NodeID": 36
+    }
+  },
+  "tickInterval": 0,
+  "calcResultNodeId": 27,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

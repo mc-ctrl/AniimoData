@@ -1,0 +1,168 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10120003",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10012_Attack04_Bullet",
+  "enableMaxAngleTime": 1,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 10,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "62": {
+      "buffId": 2101206,
+      "name": "hasBuff",
+      "UID": "454e5c7e-d156-46fe-9c30-74db211416da",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "64": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10120003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "1c5f1c94-a02a-4f89-931d-b93e28edef50",
+      "target": "TARGET",
+      "NodeID": 64,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3001,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "battle_projectilehit_psychic_h",
+        "hitCameraShakeId": 30402
+      }
+    },
+    "25": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.4
+      },
+      "name": "calcResult",
+      "UID": "228007ae-5bbe-4f8b-a010-56da01ed0697",
+      "target": "CASTER",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "6b83711e-2f43-4165-b380-63c6b9a84279",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "28": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 64,
+      "NodeID": 28,
+      "UID": "95f74105-e60e-44ff-bd07-eab91f650d51",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3001,
+      "actionIds": [
+        32,
+        26
+      ]
+    },
+    "32": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        62
+      ],
+      "UID": "e1fa336d-34ec-493e-954a-11155496803e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        64
+      ],
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "38708b00-c5e2-4d5d-bee8-7de0640feb1d",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 33
+    },
+    "31": {
+      "name": "calcResult",
+      "overrideCaster": "MASTER",
+      "calcInfoByLuaConfig": {
+        "id": 10120003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "1668ecc9-38e4-4451-b624-9f01415fc619",
+      "target": "TARGET",
+      "NodeID": 31,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3001,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "battle_projectilehit_psychic_h",
+        "hitCameraShakeId": 30402
+      }
+    },
+    "17": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a93f9c9f-16c9-462a-b60b-bf44d4ea49d2",
+      "effectId": "Eff_Parmon_10012_Attack04_Hit",
+      "speed": 1,
+      "NodeID": 17
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    17
+  ],
+  "onProjectileHitIds": [
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "calcResultNodeId": 64,
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "duration": 0.8,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3001,
+  "acceleration": 0
+}

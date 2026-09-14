@@ -1,0 +1,66 @@
+{
+  "BPName": "ability_9200024",
+  "NodeID": 1,
+  "UID": "736d9b36-3c40-4ce7-97df-312536837d47",
+  "abilityParamId": 9200022,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 9200024001,
+      "name": "setCombatActionTimeline",
+      "UID": "3693c471-8f5f-467e-b796-79ab948773a5",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "19": {
+      "name": "enablePetProtectState",
+      "NodeID": 19,
+      "absorbEffPosOffsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "UID": "605974fd-9cfa-4535-9511-c4de496a6bdf",
+      "dissolveEffectDuration": 0,
+      "enable": false,
+      "appearEffectDuration": 0
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "555872a6-302a-4777-becc-161346dffe86",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_Icon",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "57862e91-6fae-42f8-89d8-9b5ac8cf3208",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_01",
+      "target": "OWNER",
+      "NodeID": 21
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicCap_Throw"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Female_Skill_MagicCap_Bullet",
+    "Eff_Avatar_Female_Skill_MagicCap_Disappear"
+  ],
+  "searchRelation": 1,
+  "name": "迷灵巨大化",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 2,
+  "onAbilityEndIds": [
+    19,
+    21,
+    31
+  ],
+  "searchTargetRangeDown": 2
+}

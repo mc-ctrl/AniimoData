@@ -1,0 +1,116 @@
+{
+  "1003": {
+    "bindingPrefab": "$UI_Node_Hud_Interaction_Sign.prefab",
+    "canInteractAnime": [
+      "Vx_Hud_Interaction_Sign_Diffuse"
+    ],
+    "distGroup": [
+      [
+        10,
+        0
+      ]
+    ],
+    "animeGroup": [
+      [
+        "Vx_Hud_Interaction_Sign_In",
+        "Vx_Hud_Interaction_Sign_Loop",
+        "Vx_Hud_Interaction_Sign_Out"
+      ]
+    ]
+  },
+  "1002": {
+    "bindingPrefab": "$UI_Node_Hud_Interaction_Sign.prefab",
+    "canInteractAnime": [
+      "Vx_Hud_Interaction_Sign_Diffuse"
+    ],
+    "distGroup": [
+      [
+        10,
+        0
+      ]
+    ],
+    "animeGroup": [
+      [
+        "Vx_Hud_Interaction_Sign_In",
+        "Vx_Hud_Interaction_Sign_Loop",
+        "Vx_Hud_Interaction_Sign_Out"
+      ]
+    ]
+  },
+  "2001": {
+    "bindingPrefab": "$UI_3D_MarkPetTip.prefab",
+    "canInteractAnime": [
+      "VX_3D_MarkPetTip_Click"
+    ],
+    "distGroup": [
+      [
+        12,
+        0
+      ]
+    ],
+    "animeGroup": [
+      [
+        "VX_3D_MarkPetTip_In",
+        "VX_3D_MarkPetTip_Loop",
+        "VX_3D_MarkPetTip_Out"
+      ]
+    ]
+  },
+  "1001": {
+    "bindingPrefab": "$UI_Node_Hud_Interaction_Sign.prefab",
+    "canInteractAnime": [
+      "Vx_Hud_Interaction_Sign_Diffuse"
+    ],
+    "distGroup": [
+      [
+        10,
+        0
+      ]
+    ],
+    "animeGroup": [
+      [
+        "Vx_Hud_Interaction_Sign_In",
+        "Vx_Hud_Interaction_Sign_Loop",
+        "Vx_Hud_Interaction_Sign_Out"
+      ]
+    ]
+  },
+  "2002": {
+    "bindingPrefab": "$UI_3D_MarkPetTip.prefab",
+    "canInteractAnime": [
+      "VX_3D_MarkPetTip_Click"
+    ],
+    "distGroup": [
+      [
+        8,
+        0
+      ]
+    ],
+    "animeGroup": [
+      [
+        "VX_3D_MarkPetTip_In",
+        "VX_3D_MarkPetTip_Loop",
+        "VX_3D_MarkPetTip_Out"
+      ]
+    ]
+  },
+  "1005": {
+    "bindingPrefab": "$UI_Node_Hud_Interaction_Sign.prefab",
+    "canInteractAnime": [
+      "Vx_Hud_Interaction_Sign_Diffuse"
+    ],
+    "distGroup": [
+      [
+        10,
+        0
+      ]
+    ],
+    "animeGroup": [
+      [
+        "Vx_Hud_Interaction_Sign_In",
+        "Vx_Hud_Interaction_Sign_Loop",
+        "Vx_Hud_Interaction_Sign_Out"
+      ]
+    ]
+  }
+}

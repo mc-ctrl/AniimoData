@@ -1,0 +1,5720 @@
+{
+  "1017200": {
+    "16200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300111": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10300100": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1028304": {
+    "10500350": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10500440": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11200470": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "16400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500460": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10500461
+    },
+    "10500340": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    }
+  },
+  "100210002": {
+    "10700000": {
+      "skillOrder": 4,
+      "abilityType": "normal"
+    },
+    "10700190": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "abilityType": "explore"
+    },
+    "10700010": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    }
+  },
+  "104310002": {
+    "10800330": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "7002000": {
+    "10101010": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10101201": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101110": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101220": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "abilityType": "skill"
+    },
+    "10101100": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10101200": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101210": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10101211": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "10101000": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "101810004": {
+    "12200000": {
+      "showContentLocked": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10900400": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1014300": {
+    "10400140": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 6,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10400141
+    },
+    "10400150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 8,
+      "abilityType": "ultimate"
+    },
+    "14000000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400100": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10400110": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11300120": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1014302
+      ],
+      "abilityType": "skill"
+    },
+    "10300021": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1014301
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "1020700": {
+    "10600090": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 10,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10800111": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 12,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800114
+    },
+    "10600092": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 9,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600260": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "16500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800310": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1020101,
+        1020301,
+        1020701
+      ],
+      "abilityType": "skill",
+      "order": 9,
+      "banFeedBack": 1,
+      "derive": 10600092
+    }
+  },
+  "102210001": {
+    "10400202": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "1018700": {
+    "10900041": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10900161": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10900162
+    },
+    "10300220": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1018101,
+        1018401,
+        1018501,
+        1018701
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "19700000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600600": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "needPetFormsUnlock": [
+        1018103,
+        1018403,
+        1018503,
+        1018703
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "10900540": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10900170": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    }
+  },
+  "102120000": {
+    "10600515": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600142": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    },
+    "11900000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600514": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "101870000": {
+    "10900166": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    },
+    "10900048": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "12200000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10900049": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1032300": {
+    "10400280": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1032301
+      ],
+      "abilityType": "skill"
+    },
+    "10600370": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600410": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600400": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600401
+    },
+    "10301030": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1032302
+      ],
+      "abilityType": "skill"
+    },
+    "10600390": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    }
+  },
+  "102610002": {
+    "11100010": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "1048100": {
+    "10301040": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "13900000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10301050": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1048300": {
+    "10301040": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "13900000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10301051": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillIdBefore": 10301050,
+      "abilityType": "skill"
+    },
+    "10301060": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10301061
+    },
+    "10301070": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    }
+  },
+  "1050100": {
+    "10800340": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800350": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1050300": {
+    "10800340": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800430": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10800440": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800441
+    },
+    "11200480": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1050301
+      ],
+      "abilityType": "skill"
+    },
+    "10800350": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "101320001": {
+    "10200061": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "100530002": {
+    "10500230": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "100530000": {
+    "10500104": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    },
+    "10500123": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 11,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10500000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500124": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "100520003": {
+    "10500231": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "100510004": {
+    "10510530": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10510540": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10510550": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10510560": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10500000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "100110002": {
+    "12400000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11100010": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1001100": {
+    "11100020": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11100011": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "14500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1001200": {
+    "11100030": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "skillIdBefore": 11100011,
+      "enhancedSkillId": 11100035
+    },
+    "11100070": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "14500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10200250": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1001202
+      ],
+      "abilityType": "skill"
+    },
+    "10301020": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1001201
+      ],
+      "abilityType": "skill"
+    },
+    "11100040": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 11,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "11100024": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillIdBefore": 11100020,
+      "abilityType": "skill"
+    }
+  },
+  "100420001": {
+    "10200160": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "100270000": {
+    "11200390": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200380": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11200001": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200400": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    }
+  },
+  "100230002": {
+    "10900130": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "7001000": {
+    "10101010": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10101201": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101110": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101220": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "abilityType": "skill"
+    },
+    "10101100": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10101200": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101210": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10101211": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "10101000": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "100210001": {
+    "10700000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10700190": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "explore"
+    },
+    "10700011": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "100120000": {
+    "11100025": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11100064": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    },
+    "11100012": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11100034": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1022100": {
+    "10400202": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400210": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1022200": {
+    "10400200": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400211": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10400190": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10400192
+    },
+    "11200170": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1022201
+      ],
+      "abilityType": "skill"
+    },
+    "10400220": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    }
+  },
+  "1035200": {
+    "11201200": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11201210": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200240": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "11201190": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11201191
+    }
+  },
+  "102220000": {
+    "10400268": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    },
+    "10400430": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10400000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400310": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1014100": {
+    "10400100": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10400110": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "14000000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1038300": {
+    "10800520": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 12,
+      "abilityType": "ultimate"
+    },
+    "10800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800490": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 7,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800491
+    },
+    "10800500": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10800510": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    }
+  },
+  "1013100": {
+    "10200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10200081": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10200061": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200286": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1013102
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "1013200": {
+    "10200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10200081": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10200061": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200286": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1013202,
+        1013102
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "1013300": {
+    "10200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10200081": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10200090": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10200100": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10200101
+    },
+    "11300100": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1013301
+      ],
+      "abilityType": "skill"
+    },
+    "10200061": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "11200286": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1013302,
+        1013202,
+        1013102
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "103310004": {
+    "10500231": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "1002300": {
+    "10700020": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 15,
+      "abilityType": "ultimate"
+    },
+    "10900020": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 13,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 12,
+      "banFeedBack": 1,
+      "derive": 10700170,
+      "enhancedSkillId": 10900021
+    },
+    "16700000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10700180": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 9,
+      "abilityType": "skill"
+    },
+    "10900200": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "derive": 10100010,
+      "abilityType": "skill"
+    }
+  },
+  "1004100": {
+    "10200020": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1004102
+      ],
+      "abilityType": "skill"
+    },
+    "13900000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300040": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300011": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1004200": {
+    "10200020": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1004202
+      ],
+      "abilityType": "skill"
+    },
+    "13900000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300040": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300011": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1012200": {
+    "10400470": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10400471
+    },
+    "10400070": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10400071": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "13000000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400052": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1002600": {
+    "11200130": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11200140": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11200141
+    },
+    "10200260": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1002101,
+        1002601,
+        1002701
+      ],
+      "abilityType": "skill"
+    },
+    "11200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200160": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "11200150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "100230000": {
+    "10900000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500271": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10700251": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    },
+    "10700221": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1002500": {
+    "10500420": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10500380": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 6,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10500381
+    },
+    "10500390": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 8,
+      "abilityType": "ultimate"
+    },
+    "10500021": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10900680": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1002503
+      ],
+      "abilityType": "skill"
+    },
+    "11800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1004300": {
+    "10300050": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 8,
+      "abilityType": "ultimate"
+    },
+    "11300160": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1004303
+      ],
+      "abilityType": "skill"
+    },
+    "10300040": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10300045
+    },
+    "10200020": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1004302
+      ],
+      "abilityType": "skill"
+    },
+    "13900000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300020": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "10300011": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1003100": {
+    "11200030": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200021": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600513": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1003101,
+        1003201
+      ],
+      "abilityType": "skill"
+    },
+    "11200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "100015": {
+    "10700030": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10700031": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10700040": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10700041": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10700050": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10700060": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "10500170": {
+      "isShare": 1,
+      "skillOrder": 10,
+      "abilityType": "skill"
+    },
+    "10700091": {
+      "isShare": 1,
+      "skillOrder": 9,
+      "abilityType": "skill"
+    },
+    "10500171": {
+      "isShare": 1,
+      "skillOrder": 11,
+      "abilityType": "skill"
+    },
+    "10500180": {
+      "isShare": 1,
+      "skillOrder": 12,
+      "abilityType": "skill"
+    },
+    "10500190": {
+      "isShare": 1,
+      "skillOrder": 13,
+      "abilityType": "skill"
+    },
+    "10500191": {
+      "isShare": 1,
+      "skillOrder": 14,
+      "abilityType": "skill"
+    },
+    "10500192": {
+      "isShare": 1,
+      "skillOrder": 15,
+      "abilityType": "skill"
+    },
+    "10500193": {
+      "isShare": 1,
+      "skillOrder": 16,
+      "abilityType": "skill"
+    },
+    "10500200": {
+      "isShare": 1,
+      "skillOrder": 17,
+      "abilityType": "skill"
+    },
+    "10500210": {
+      "isShare": 1,
+      "skillOrder": 18,
+      "abilityType": "skill"
+    },
+    "10500220": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "abilityType": "skill"
+    },
+    "10700101": {
+      "isShare": 1,
+      "skillOrder": 20,
+      "abilityType": "skill"
+    },
+    "48023010": {
+      "isShare": 1,
+      "skillOrder": 21,
+      "abilityType": "skill"
+    },
+    "48023011": {
+      "isShare": 1,
+      "skillOrder": 22,
+      "abilityType": "skill"
+    },
+    "48023020": {
+      "isShare": 1,
+      "skillOrder": 23,
+      "abilityType": "skill"
+    },
+    "48023030": {
+      "isShare": 1,
+      "skillOrder": 24,
+      "abilityType": "skill"
+    },
+    "48023040": {
+      "isShare": 1,
+      "skillOrder": 25,
+      "abilityType": "skill"
+    },
+    "48023041": {
+      "isShare": 1,
+      "skillOrder": 26,
+      "abilityType": "skill"
+    },
+    "10700100": {
+      "isShare": 1,
+      "skillOrder": 19,
+      "abilityType": "skill"
+    },
+    "10700090": {
+      "isShare": 1,
+      "skillOrder": 8,
+      "abilityType": "skill"
+    }
+  },
+  "1028300": {
+    "10500350": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10500440": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11200470": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1028301
+      ],
+      "abilityType": "skill"
+    },
+    "16400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500460": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10500461
+    },
+    "10500340": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    }
+  },
+  "1003300": {
+    "10400340": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "11300170": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1003305
+      ],
+      "abilityType": "skill"
+    },
+    "16300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400320": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10400330": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152003": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10400331
+    },
+    "10400440": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    }
+  },
+  "6999300": {
+    "10500601": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        6999301
+      ],
+      "abilityType": "skill"
+    },
+    "10500720": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10500580": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10500581
+    },
+    "14100000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500590": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10500600": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    }
+  },
+  "1037100": {
+    "11300150": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "unlockCondition": 697,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 5,
+      "banFeedBack": 0
+    },
+    "11300091": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "11300061": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "unlockCondition": 696,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 4,
+      "banFeedBack": 0
+    },
+    "11300071": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11300080": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152002": 1
+      },
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11300081
+    },
+    "14600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1016100": {
+    "16600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600520": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10600060": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10800320": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1016101,
+        1016102,
+        1016201,
+        1016202
+      ],
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "derive": 10600060
+    }
+  },
+  "1016200": {
+    "10600520": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "16600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800051": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800053
+    },
+    "10800320": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1016101,
+        1016102,
+        1016201,
+        1016202
+      ],
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "derive": 10600060
+    },
+    "10600060": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10800070": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    }
+  },
+  "1016300": {
+    "10200140": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "16100000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10200150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10200120": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10200121
+    },
+    "10200130": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1028100": {
+    "16600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800140": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10800150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1028400": {
+    "16600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800140": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10800150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1028500": {
+    "16600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800200": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 6,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800201
+    },
+    "10800140": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10800210": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "10800150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1047100": {
+    "10200380": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1047101
+      ],
+      "abilityType": "skill"
+    },
+    "10600540": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10600550": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "16500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1047500": {
+    "16500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600610": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "ultimate"
+    },
+    "10200380": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1047501
+      ],
+      "abilityType": "skill"
+    },
+    "10600540": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10600550": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10600620": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 1,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600621
+    }
+  },
+  "1018100": {
+    "10900041": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300220": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1018101,
+        1018401,
+        1018501,
+        1018701
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "10900090": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10600600": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "needPetFormsUnlock": [
+        1018103,
+        1018403,
+        1018503,
+        1018703
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "14400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10900400": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    }
+  },
+  "1043300": {
+    "10800410": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10800360": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "14300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800370": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10800380": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800381
+    }
+  },
+  "1018400": {
+    "10900041": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10900242": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "10900230": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "skillIdBefore": 10900090,
+      "enhancedSkillId": 10900231
+    },
+    "10900290": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "10600600": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "needPetFormsUnlock": [
+        1018103,
+        1018403,
+        1018503,
+        1018703
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "14400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300220": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1018101,
+        1018401,
+        1018501,
+        1018701
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    }
+  },
+  "1018500": {
+    "10900041": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "14400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400300": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "needPetFormsUnlock": [
+        1018502
+      ],
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "derive": 10900191
+    },
+    "10300220": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1018101,
+        1018401,
+        1018501,
+        1018701
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "10900390": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 7,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10900391
+    },
+    "10600600": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "needPetFormsUnlock": [
+        1018103,
+        1018403,
+        1018503,
+        1018703
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "10900191": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10900280": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 8,
+      "abilityType": "ultimate"
+    }
+  },
+  "1047400": {
+    "10400390": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10400400": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10400410": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "ultimate"
+    },
+    "10400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400380": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 1,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10400381
+    }
+  },
+  "1005500": {
+    "16800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200410": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 11,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10500730": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1005503
+      ],
+      "abilityType": "skill"
+    },
+    "11200290": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11200291
+    },
+    "11200300": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10500470": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    }
+  },
+  "1026100": {
+    "10900160": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10400290": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1026101,
+        1026201
+      ],
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "derive": 10900250
+    },
+    "10900250": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "14400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1051100": {
+    "10500500": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10500490": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "16400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1051200": {
+    "10500490": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10500570": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "10500500": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10500510": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10500511
+    },
+    "16400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1045300": {
+    "10800270": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10800000": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200640": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1045302
+      ],
+      "abilityType": "skill"
+    },
+    "10800240": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10200286": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1045301
+      ],
+      "abilityType": "skill"
+    },
+    "10800260": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 5,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800261
+    },
+    "10800250": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    }
+  },
+  "1026200": {
+    "10900160": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10400290": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1026101,
+        1026201
+      ],
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "derive": 10900250
+    },
+    "10900270": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "14400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200330": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1026204
+      ],
+      "abilityType": "skill"
+    },
+    "10900250": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10900260": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 5,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10900261
+    }
+  },
+  "1037300": {
+    "11300150": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "unlockCondition": 697,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 5,
+      "banFeedBack": 0
+    },
+    "11300091": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "11300061": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "unlockCondition": 696,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 4,
+      "banFeedBack": 0
+    },
+    "14600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11300071": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "11300080": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11300081": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1044300": {
+    "13400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10900490": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10900500": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10900520": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10900480": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10900481
+    }
+  },
+  "1026300": {
+    "11200350": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "11200360": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 1,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 1,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11200361
+    },
+    "11200370": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "ultimate"
+    },
+    "14500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200340": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "1035100": {
+    "11201200": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11201180": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1020100": {
+    "10600080": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "16500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600530": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10800290": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1020101,
+        1020301,
+        1020701
+      ],
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "derive": 10600080
+    }
+  },
+  "1043100": {
+    "14300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800330": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10800360": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1002700": {
+    "16800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11200260": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11200202": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11200203
+    },
+    "10200270": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1002101,
+        1002601,
+        1002701
+      ],
+      "abilityType": "skill"
+    },
+    "11200220": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10700350": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1019200": {
+    "10300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300080": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300090": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1045100": {
+    "10800240": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10200286": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1045101
+      ],
+      "abilityType": "skill"
+    },
+    "10800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800250": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1002200": {
+    "16700000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10700180": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 9,
+      "abilityType": "skill"
+    },
+    "10900200": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "derive": 10100010,
+      "abilityType": "skill"
+    }
+  },
+  "1002400": {
+    "16700000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10700180": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10900200": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "derive": 10100010,
+      "abilityType": "skill"
+    }
+  },
+  "1005100": {
+    "10500230": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10800280": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "needPetFormsUnlock": [
+        1005101,
+        1005201,
+        1005301
+      ],
+      "abilityType": "skill",
+      "order": 7,
+      "banFeedBack": 1,
+      "derive": 10500080
+    },
+    "10500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500080": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1017100": {
+    "16200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300111": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10300100": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1045400": {
+    "10800460": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800461
+    },
+    "10800522": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10800470": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10800480": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10200370": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1045401
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "1032100": {
+    "10600000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600370": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600390": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1005200": {
+    "10500230": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10800280": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "needPetFormsUnlock": [
+        1005101,
+        1005201,
+        1005301
+      ],
+      "abilityType": "skill",
+      "order": 7,
+      "banFeedBack": 1,
+      "derive": 10500080
+    },
+    "10500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500080": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1005300": {
+    "10500120": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 11,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "10800280": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 8,
+      "needPetFormsUnlock": [
+        1005101,
+        1005201,
+        1005301
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10500080
+    },
+    "10500102": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10500106
+    },
+    "10500230": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10400010": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "needPetFormsUnlock": [
+        1005302
+      ],
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "derive": 10500080
+    },
+    "10500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500080": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    }
+  },
+  "1032400": {
+    "10600570": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10600580": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10600590": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "14200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11300180": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1032402
+      ],
+      "abilityType": "skill"
+    },
+    "10600560": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 5,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600561
+    }
+  },
+  "1044100": {
+    "13400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10900490": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10900510": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1002100": {
+    "10700356": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200260": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "16800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10200270": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1002101,
+        1002601,
+        1002701
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "1014200": {
+    "10400100": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10400110": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "14000000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1024100": {
+    "10241001": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "102410001": {
+    "10241001": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1023100": {
+    "10900221": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600500": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1023101,
+        1023201
+      ],
+      "abilityType": "skill"
+    },
+    "10600110": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200270": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1023102,
+        1023202
+      ],
+      "abilityType": "skill"
+    },
+    "14400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800450": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1023103,
+        1023203
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "1023200": {
+    "14400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10900221": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10900223
+    },
+    "10600500": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1023101,
+        1023201
+      ],
+      "abilityType": "skill"
+    },
+    "10600251": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10600110": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200270": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1023102,
+        1023202
+      ],
+      "abilityType": "skill"
+    },
+    "10900430": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 8,
+      "abilityType": "ultimate"
+    },
+    "10800450": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1023103,
+        1023203
+      ],
+      "abilityType": "skill"
+    }
+  },
+  "1023300": {
+    "10600490": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "14200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600340": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10600360": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10600480": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600481
+    }
+  },
+  "1020300": {
+    "11200193": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1020302
+      ],
+      "abilityType": "skill"
+    },
+    "14500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600532": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 7,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600533
+    },
+    "11200230": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 14,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10800300": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "needPetFormsUnlock": [
+        1020101,
+        1020301,
+        1020701
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 11200180
+    },
+    "11200180": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200190": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    }
+  },
+  "1019400": {
+    "10300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300080": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11300110": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1019402
+      ],
+      "abilityType": "skill",
+      "order": 5,
+      "banFeedBack": 1,
+      "derive": 10300090
+    },
+    "10301330": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10301332
+    },
+    "10300150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10300090": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10400270": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1019401
+      ],
+      "abilityType": "skill",
+      "order": 5,
+      "banFeedBack": 1,
+      "derive": 10300090
+    }
+  },
+  "1036100": {
+    "11300051": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "11300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11300020": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11300030": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "unlockCondition": 696,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 4,
+      "banFeedBack": 0
+    },
+    "11300040": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152002": 1
+      },
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11300041
+    },
+    "11300140": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "unlockCondition": 697,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 5,
+      "banFeedBack": 0
+    }
+  },
+  "1036300": {
+    "11300051": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    },
+    "11300140": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "unlockCondition": 697,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 5,
+      "banFeedBack": 0
+    },
+    "11300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "11300020": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "11300030": {
+      "isShare": 1,
+      "showContentLocked": 0,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "unlockCondition": 696,
+      "abilityType": "skill",
+      "isHideLocked": 1,
+      "order": 4,
+      "banFeedBack": 0
+    },
+    "11300040": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "11300041": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1029300": {
+    "10400350": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "14000000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400360": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152004": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10400361
+    },
+    "10400420": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "11300130": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1029301
+      ],
+      "abilityType": "skill"
+    },
+    "10400370": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    }
+  },
+  "1021100": {
+    "10600150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10600913": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "14200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  },
+  "1029100": {
+    "14000000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10400370": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10400360": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "9020700": {
+    "10600191": {
+      "isShare": 1,
+      "skillOrder": 12,
+      "abilityType": "skill"
+    },
+    "10600192": {
+      "isShare": 1,
+      "skillOrder": 13,
+      "abilityType": "skill"
+    },
+    "10600193": {
+      "isShare": 1,
+      "skillOrder": 14,
+      "abilityType": "skill"
+    },
+    "10600220": {
+      "isShare": 1,
+      "skillOrder": 15,
+      "abilityType": "skill"
+    },
+    "10600221": {
+      "isShare": 1,
+      "skillOrder": 16,
+      "abilityType": "skill"
+    },
+    "10600230": {
+      "isShare": 1,
+      "skillOrder": 17,
+      "abilityType": "skill"
+    },
+    "10600240": {
+      "isShare": 1,
+      "skillOrder": 18,
+      "abilityType": "skill"
+    },
+    "10600241": {
+      "isShare": 1,
+      "skillOrder": 19,
+      "abilityType": "skill"
+    },
+    "10600280": {
+      "isShare": 1,
+      "skillOrder": 20,
+      "abilityType": "skill"
+    },
+    "10600160": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600161": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10600162": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10600170": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10600171": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "10600172": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "abilityType": "skill"
+    },
+    "10800160": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10600180": {
+      "isShare": 1,
+      "skillOrder": 8,
+      "abilityType": "skill"
+    },
+    "10600181": {
+      "isShare": 1,
+      "skillOrder": 9,
+      "abilityType": "skill"
+    },
+    "10600182": {
+      "isShare": 1,
+      "skillOrder": 10,
+      "abilityType": "skill"
+    },
+    "10600381": {
+      "isShare": 1,
+      "skillOrder": 22,
+      "abilityType": "skill"
+    },
+    "10600380": {
+      "isShare": 1,
+      "skillOrder": 21,
+      "abilityType": "skill"
+    },
+    "10600190": {
+      "isShare": 1,
+      "skillOrder": 11,
+      "abilityType": "skill"
+    }
+  },
+  "7000000": {
+    "10101010": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10101201": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101110": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101220": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "abilityType": "skill"
+    },
+    "10101100": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10101200": {
+      "isShare": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10101210": {
+      "isShare": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10101211": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "abilityType": "skill"
+    },
+    "10101000": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "1021200": {
+    "10600913": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10600150": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "14200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600930": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "10600923": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600924
+    }
+  },
+  "1021300": {
+    "14200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600630": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    },
+    "10600660": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "ultimate"
+    },
+    "10600640": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 2,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 2,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600641
+    }
+  },
+  "1004500": {
+    "10600306": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600322": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10600420": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    },
+    "14200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600301": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10600308
+    }
+  },
+  "1003200": {
+    "11200011": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 9,
+      "banFeedBack": 1,
+      "enhancedSkillId": 11200013
+    },
+    "11200030": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "11200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500020": {
+      "isShare": 1,
+      "skillOrder": 6,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1003202
+      ],
+      "abilityType": "skill"
+    },
+    "11200021": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600513": {
+      "isShare": 1,
+      "skillOrder": 7,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "needPetFormsUnlock": [
+        1003101,
+        1003201
+      ],
+      "abilityType": "skill"
+    },
+    "11200040": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 12,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "ultimate"
+    }
+  },
+  "100510001": {
+    "10500230": {
+      "isShare": 1,
+      "skillOrder": 1,
+      "abilityType": "skill"
+    }
+  },
+  "100450000": {
+    "11900000": {
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600307": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "ultimate"
+    },
+    "10600326": {
+      "isShare": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300042": {
+      "isShare": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1019100": {
+    "10300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300080": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300090": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    }
+  },
+  "1033100": {
+    "10500360": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "14100000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500231": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1033300": {
+    "10500360": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "14100000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10500400": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10500410": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10500411
+    },
+    "10500231": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    }
+  },
+  "1038100": {
+    "10800500": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10800000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800510": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 7,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    }
+  },
+  "1017300": {
+    "11200250": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "needPetFormsUnlock": [
+        1017301
+      ],
+      "abilityType": "skill",
+      "order": 9,
+      "banFeedBack": 1,
+      "derive": 10300201
+    },
+    "10300190": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 10,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10300201": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 9,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10300000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300110": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 4,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300180": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 7,
+      "banFeedBack": 1,
+      "skillIdBefore": 10300100,
+      "enhancedSkillId": 10300181
+    }
+  },
+  "1017400": {
+    "10301530": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10300111": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10300113": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1017402
+      ],
+      "abilityType": "skill",
+      "order": 3,
+      "banFeedBack": 1,
+      "derive": 10300111
+    },
+    "16200000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10300160": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 6,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "10300083": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "skillIdBefore": 10300100,
+      "enhancedSkillId": 10300085
+    }
+  },
+  "1018704": {
+    "10900041": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 8,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10900161": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 6,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 4,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10900162
+    },
+    "10300220": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1018101,
+        1018401,
+        1018501,
+        1018701
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "19700000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10600600": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 4,
+      "needPetFormsUnlock": [
+        1018103,
+        1018403,
+        1018503,
+        1018703
+      ],
+      "abilityType": "skill",
+      "order": 8,
+      "banFeedBack": 1,
+      "derive": 10900041
+    },
+    "10900540": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 5,
+      "abilityType": "skill"
+    },
+    "10900170": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 5,
+      "banFeedBack": 1,
+      "skillOrder": 7,
+      "abilityType": "ultimate"
+    }
+  },
+  "1020702": {
+    "10600090": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 10,
+      "banFeedBack": 1,
+      "skillOrder": 4,
+      "abilityType": "skill"
+    },
+    "10800111": {
+      "isShare": 1,
+      "rarity": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 5,
+      "upgradeConsume": {
+        "152000": 1
+      },
+      "abilityType": "skill",
+      "order": 12,
+      "banFeedBack": 1,
+      "enhancedSkillId": 10800114
+    },
+    "10600092": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 9,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "10600260": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 13,
+      "banFeedBack": 1,
+      "skillOrder": 6,
+      "abilityType": "ultimate"
+    },
+    "16500000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    },
+    "10800310": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "skillOrder": 3,
+      "needPetFormsUnlock": [
+        1020101,
+        1020301,
+        1020701
+      ],
+      "abilityType": "skill",
+      "order": 9,
+      "banFeedBack": 1,
+      "derive": 10600092
+    }
+  },
+  "1028200": {
+    "10500450": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 3,
+      "banFeedBack": 1,
+      "skillOrder": 3,
+      "abilityType": "skill"
+    },
+    "10500440": {
+      "isShare": 1,
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 2,
+      "banFeedBack": 1,
+      "skillOrder": 2,
+      "abilityType": "skill"
+    },
+    "16400000": {
+      "showContentLocked": 1,
+      "showInManual": 1,
+      "order": 1,
+      "banFeedBack": 1,
+      "skillOrder": 1,
+      "abilityType": "normal"
+    }
+  }
+}

@@ -1,0 +1,601 @@
+{
+  "7230704961": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 8,
+        "4": ">=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1127
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 7230704961
+  },
+  "7878665681": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 3,
+        "4": ">=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1117
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 7878665681
+  },
+  "8160037051": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        81546207,
+        0,
+        ">=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 8160037051
+  },
+  "8160037061": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        81546207,
+        0,
+        ">=",
+        2
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 8160037061
+  },
+  "8160037081": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        81546207,
+        0,
+        ">=",
+        3
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 8160037081
+  },
+  "8498545061": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        84985420,
+        0,
+        ">=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 8498545061
+  },
+  "8498545071": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        84985420,
+        0,
+        ">=",
+        2
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 8498545071
+  },
+  "8498545091": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        84985420,
+        0,
+        ">=",
+        3
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 8498545091
+  },
+  "9100715041": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91007126,
+        0,
+        ">=",
+        0
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 9100715041
+  },
+  "9100715051": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91007126,
+        0,
+        ">=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 9100715051
+  },
+  "9100825791": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91005777,
+        0,
+        "<=",
+        2
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 9100825791
+  },
+  "9110524461": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "3": [
+          100,
+          0
+        ],
+        "4": "",
+        "1": "PET_HP_PERCENT",
+        "5": 1
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 9110524461
+  },
+  "55006605511": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 6,
+        "4": ">=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1128
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 55006605511
+  },
+  "60262191541": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 12,
+        "4": ">=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1127
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 60262191541
+  },
+  "78786656121": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 3,
+        "4": ">=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1125
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 78786656121
+  },
+  "78786656161": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 5,
+        "4": ">=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1126
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 78786656161
+  },
+  "79413445121": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "GOTO_POSITION",
+        "2": 80586736
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 79413445121
+  },
+  "80901777121": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1119
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 80901777121
+  },
+  "82593347591": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        82574191,
+        0,
+        "=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 82593347591
+  },
+  "82593347701": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        82574191,
+        0,
+        "=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 82593347701
+  },
+  "86700099201": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        86700074,
+        0,
+        "=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 86700099201
+  },
+  "86700099381": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        86700074,
+        0,
+        "=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 86700099381
+  },
+  "87460786241": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 5,
+        "4": ">=",
+        "1": "CHECK_CUSTOM_VARIABLE",
+        "2": 1118
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 87460786241
+  },
+  "91006115231": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91006103,
+        0,
+        "<=",
+        2
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 91006115231
+  },
+  "91006115241": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91006103,
+        0,
+        "<=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 91006115241
+  },
+  "91006560171": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91006522,
+        0,
+        "<=",
+        2
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 91006560171
+  },
+  "91006560181": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91006522,
+        0,
+        "<=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 91006560181
+  },
+  "91007197591": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "OPEN_CHEST_BY_STATICID",
+        "2": 91009523
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 91007197591
+  },
+  "91008257101": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      [
+        "TRIGGER_TARGET_SANDBOX_PHASE",
+        91005777,
+        0,
+        "<=",
+        1
+      ]
+    ],
+    "triggerTimes": 1,
+    "id": 91008257101
+  },
+  "91012599731": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "OPEN_CHEST_BY_STATICID",
+        "2": 91012597
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 91012599731
+  },
+  "91067061681": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "OPEN_CHEST_BY_STATICID",
+        "2": 91067046
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 91067061681
+  },
+  "766961931221": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "OPEN_CHEST_BY_STATICID",
+        "2": 76696190
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 766961931221
+  },
+  "910684531261": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "OPEN_CHEST_BY_STATICID",
+        "2": 91068438
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 910684531261
+  },
+  "910859681021": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionUse": 6,
+    "userId": 0,
+    "condition": [
+      {
+        "5": 1,
+        "4": "=",
+        "1": "OPEN_CHEST_BY_STATICID",
+        "2": 91085953
+      }
+    ],
+    "triggerTimes": 1,
+    "id": 910859681021
+  }
+}

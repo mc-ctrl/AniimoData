@@ -1,0 +1,142 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b3b8886a-f57d-48aa-bc90-3cb9b82663c9",
+      "effectId": "Eff_Parmon_10262_Skill_Ex_09_flower",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "14": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.05
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 4,
+        "id": 2126202
+      },
+      "UID": "11295a9a-b941-4d15-a877-07314530f735",
+      "target": "TrapTarget",
+      "name": "calcResult",
+      "NodeID": 14
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 10,
+      "relation": 1,
+      "enterTrapActionIds": [
+        9
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        0.65
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "a7d895ff-7470-4ddd-927f-cebdeb06c432"
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bfb10cee-e2e3-4e8c-8d21-439c59e2aa35",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_03_1",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_10262_Skill_Ex_09_flower",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "155c2486-5869-4b77-a013-2e112df6a6e0",
+      "effectId": "Eff_Common_Buff_Healing",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1a1f48d4-9b64-4867-b6dd-d3cc793c6d02",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_02",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "actionIds": [
+        16,
+        14,
+        7,
+        15,
+        18,
+        12
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "b77173ba-9637-4804-a540-c527018bc62f",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "94e2b0e1-2243-453d-aad9-69a31ef23e87",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10232_Skill_ShadowCure_02",
+      "NodeID": 18
+    },
+    "19": {
+      "name": "isActorType",
+      "UID": "4c91699e-4918-492d-bc21-9c3cf9935d98",
+      "target": "TrapTarget",
+      "NodeID": 19,
+      "actorType": 2
+    },
+    "5": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          17,
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 11
+      },
+      "name": "destroyEntity",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2126202",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 99999
+}

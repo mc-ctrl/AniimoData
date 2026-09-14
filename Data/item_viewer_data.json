@@ -1,0 +1,1677 @@
+{
+  "309": {
+    "title": 1864093806,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300309.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300309,
+      2
+    ],
+    "desc": 2124164355,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "187": {
+    "text": 2019211284,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108502,
+      1
+    ],
+    "resType": 4,
+    "title": 1205665786
+  },
+  "208": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1245040533,
+    "pictureFront": "$UI_Help_60108.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "310": {
+    "title": 2102922196,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300310.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300310,
+      2
+    ],
+    "desc": 1579476749,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "311": {
+    "title": 1588517813,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300311.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300311,
+      2
+    ],
+    "desc": 2121791340,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "314": {
+    "title": 1582525498,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300314.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300314,
+      2
+    ],
+    "desc": 1545138458,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "315": {
+    "title": 1198738465,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300315.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300315,
+      2
+    ],
+    "desc": 1183383485,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "316": {
+    "title": 1227874872,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300316.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300316,
+      2
+    ],
+    "desc": 1819385911,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "323": {
+    "title": 1261678891,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300323.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300323,
+      2
+    ],
+    "desc": 2041305474,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "324": {
+    "title": 1950782053,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300324.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300324,
+      2
+    ],
+    "desc": 1673299229,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "325": {
+    "title": 1327836556,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300325.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300325,
+      2
+    ],
+    "desc": 1633974268,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "328": {
+    "title": 1117893280,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300328.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300328,
+      2
+    ],
+    "desc": 1186369784,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "329": {
+    "title": 2037908341,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300329.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300329,
+      2
+    ],
+    "desc": 1744528471,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "331": {
+    "title": 1553726572,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300331.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300331,
+      2
+    ],
+    "desc": 1678710472,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "5": {
+    "modelRes": "$Prefab/Prefab_Prop_Catch_CatchBall_GreatlBall.prefab",
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "resType": 1,
+    "background": "$background_black.prefab",
+    "desc": 1884194970,
+    "modelRotationInit": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 1
+  },
+  "127": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1443120064,
+    "pictureFront": "$UI_Help_60071.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "6": {
+    "background": "$background_white.prefab",
+    "contentRes": "$UI_Loading_Panel.prefab",
+    "resType": 2
+  },
+  "7": {
+    "background": "$background_black.prefab",
+    "text": 1139717291,
+    "resType": 4,
+    "title": 1688540008
+  },
+  "8": {
+    "text": 1728774983,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108101,
+      1
+    ],
+    "resType": 4,
+    "title": 1673868621
+  },
+  "9": {
+    "background": "$background_black.prefab",
+    "resType": 4,
+    "title": 1875564814
+  },
+  "11": {
+    "background": "$background_black.prefab",
+    "text": 1674579786,
+    "resType": 4,
+    "title": 1323726355
+  },
+  "12": {
+    "background": "$background_black.prefab",
+    "text": 1218400877,
+    "resType": 4,
+    "title": 1540148548
+  },
+  "13": {
+    "background": "$background_black.prefab",
+    "text": 1209869796,
+    "resType": 4,
+    "title": 1845473577
+  },
+  "155": {
+    "background": "$background_black.prefab",
+    "text": 1997460456,
+    "resType": 4,
+    "title": 1978696810
+  },
+  "14": {
+    "text": 1579665580,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      100201,
+      1
+    ],
+    "resType": 4,
+    "title": 1858333154
+  },
+  "156": {
+    "background": "$background_black.prefab",
+    "text": 1441898877,
+    "resType": 4,
+    "title": 1990788321
+  },
+  "15": {
+    "text": 1329372600,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      100202,
+      1
+    ],
+    "resType": 4,
+    "title": 1853114277
+  },
+  "16": {
+    "text": 1859729520,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      100203,
+      1
+    ],
+    "resType": 4,
+    "title": 2137455165
+  },
+  "17": {
+    "text": 1371083867,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      100204,
+      1
+    ],
+    "resType": 4,
+    "title": 1094762584
+  },
+  "184": {
+    "resType": 2,
+    "pictureFront": "$UI_Img_ItemView_UmbralSociety_logo.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "145": {
+    "text": 1085800671,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108302,
+      1
+    ],
+    "resType": 4,
+    "title": 2091829607
+  },
+  "146": {
+    "text": 2104625373,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108303,
+      1
+    ],
+    "resType": 4,
+    "title": 1342036403
+  },
+  "153": {
+    "text": 1184106888,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101803,
+      1
+    ],
+    "resType": 4,
+    "title": 1642723341
+  },
+  "148": {
+    "text": 1288076979,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108305,
+      1
+    ],
+    "resType": 4,
+    "title": 1307411600
+  },
+  "162": {
+    "text": 1232895003,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101101,
+      1
+    ],
+    "resType": 4,
+    "title": 1662130736
+  },
+  "211": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1370320683,
+    "pictureFront": "$UI_Help_60111.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "212": {
+    "background": "$background_white.prefab",
+    "text": 2133527654,
+    "resType": 4,
+    "title": 1076154773
+  },
+  "213": {
+    "background": "$background_white.prefab",
+    "text": 2118878442,
+    "resType": 4,
+    "title": 1074794987
+  },
+  "322": {
+    "title": 1337924883,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300322.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300322,
+      2
+    ],
+    "desc": 1089655960,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "326": {
+    "title": 1110020269,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300326.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300326,
+      2
+    ],
+    "desc": 1878678246,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "215": {
+    "background": "$background_black.prefab",
+    "text": 1264419585,
+    "resType": 4,
+    "title": 1601442502
+  },
+  "185": {
+    "title": 1767932788,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Note_2.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "216": {
+    "background": "$background_black.prefab",
+    "text": 1776093164,
+    "resType": 4,
+    "title": 2082213431
+  },
+  "186": {
+    "text": 1913204117,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108501,
+      1
+    ],
+    "resType": 4,
+    "title": 1081025279
+  },
+  "217": {
+    "background": "$background_black.prefab",
+    "text": 1584678266,
+    "resType": 4,
+    "title": 1891215484
+  },
+  "218": {
+    "background": "$background_black.prefab",
+    "text": 2100861526,
+    "resType": 4,
+    "title": 1455175062
+  },
+  "219": {
+    "background": "$background_black.prefab",
+    "text": 2056825989,
+    "resType": 4,
+    "title": 1217636538
+  },
+  "220": {
+    "background": "$background_black.prefab",
+    "text": 1748028252,
+    "resType": 4,
+    "title": 1687921330
+  },
+  "221": {
+    "background": "$background_black.prefab",
+    "text": 1346731988,
+    "resType": 4,
+    "title": 1244429017
+  },
+  "102": {
+    "modelRes": "$P_Item_SceneObject_Prop_Hat_01.prefab",
+    "rotationYLimit": [
+      -30,
+      30
+    ],
+    "rotationXLimit": [
+      -30,
+      30
+    ],
+    "background": "$background_white.prefab",
+    "resType": 1,
+    "modelRotationInit": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 0.6
+  },
+  "130": {
+    "background": "$background_white.prefab",
+    "resType": 2,
+    "pictureFront": "$UI_Help_1011.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "103": {
+    "modelRes": "$P_Parmon_10011.prefab",
+    "rotationYLimit": [
+      -30,
+      30
+    ],
+    "rotationXLimit": [
+      -30,
+      30
+    ],
+    "background": "$background_white.prefab",
+    "resType": 1,
+    "modelRotationInit": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 0.6
+  },
+  "104": {
+    "modelRes": "$P_Parmon_10011.prefab",
+    "rotationYLimit": [
+      -30,
+      30
+    ],
+    "rotationXLimit": [
+      -30,
+      30
+    ],
+    "background": "$background_white.prefab",
+    "resType": 1,
+    "modelRotationInit": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 0.6
+  },
+  "209": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1224725032,
+    "pictureFront": "$UI_Help_60109.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "210": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1113271181,
+    "pictureFront": "$UI_Help_60110.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "48": {
+    "background": "$background_black.prefab",
+    "text": 1969031045,
+    "resType": 4,
+    "title": 1216038490
+  },
+  "300": {
+    "title": 1911762068,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300300.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300300,
+      2
+    ],
+    "desc": 1407840066,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "161": {
+    "title": 1759298847,
+    "background": "$background_white.prefab",
+    "pictureFront": "$TreasureMap01.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      10
+    ]
+  },
+  "317": {
+    "title": 1870235139,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300317.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300317,
+      2
+    ],
+    "desc": 2070675923,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "164": {
+    "text": 1320581134,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101103,
+      1
+    ],
+    "resType": 4,
+    "title": 1347616450
+  },
+  "167": {
+    "text": 1212257162,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101301,
+      1
+    ],
+    "resType": 4,
+    "title": 1794111881
+  },
+  "168": {
+    "background": "$background_white.prefab",
+    "contentRes": "$UI_Node_ItemView_Musicalscore01.prefab",
+    "resType": 3
+  },
+  "169": {
+    "background": "$background_black.prefab",
+    "text": 1921672890,
+    "resType": 4,
+    "title": 2134189824
+  },
+  "171": {
+    "text": 1539641900,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101701,
+      1
+    ],
+    "resType": 4,
+    "title": 2019304068
+  },
+  "174": {
+    "text": 1564221017,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      100302,
+      1
+    ],
+    "resType": 4,
+    "title": 1885868366
+  },
+  "318": {
+    "title": 1360092800,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300318.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300318,
+      2
+    ],
+    "desc": 1710906917,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "136": {
+    "text": 1243956701,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108203,
+      1
+    ],
+    "resType": 4,
+    "title": 2008680069
+  },
+  "137": {
+    "text": 1939149347,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108204,
+      1
+    ],
+    "resType": 4,
+    "title": 1872343023
+  },
+  "122": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1225533369,
+    "pictureFront": "$UI_Help_60021.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "123": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1752802301,
+    "pictureFront": "$UI_Help_60031.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "125": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1404385994,
+    "pictureFront": "$UI_Help_60051.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "126": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1519448569,
+    "pictureFront": "$UI_Help_60061.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "128": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1874906474,
+    "pictureFront": "$UI_Help_60081.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "129": {
+    "background": "$background_white.prefab",
+    "resType": 2,
+    "pictureFront": "$UI_Help_1011.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "31": {
+    "background": "$background_white.prefab",
+    "text": 1532913571,
+    "resType": 4,
+    "title": 1534410765
+  },
+  "134": {
+    "text": 1645196820,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108201,
+      1
+    ],
+    "resType": 4,
+    "title": 1226078457
+  },
+  "403": {
+    "title": 1199646711,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Forest_4.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "135": {
+    "text": 1664634092,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108202,
+      1
+    ],
+    "resType": 4,
+    "title": 1353467900
+  },
+  "121": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1657242307,
+    "pictureFront": "$UI_Help_60011.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "22": {
+    "background": "$background_black.prefab",
+    "text": 1619591670,
+    "resType": 4,
+    "title": 1921627485
+  },
+  "23": {
+    "background": "$background_black.prefab",
+    "text": 2124387763,
+    "resType": 4,
+    "title": 1374156883
+  },
+  "149": {
+    "text": 1753054880,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108306,
+      1
+    ],
+    "resType": 4,
+    "title": 1247869442
+  },
+  "40": {
+    "heading": 1308572140,
+    "article": 2099679250,
+    "background": "$background_white.prefab",
+    "pictureList": [
+      "$UI_Img_ItemView_Zhaohuatrip.png"
+    ],
+    "resType": 5,
+    "writer": 1116711508
+  },
+  "222": {
+    "background": "$background_black.prefab",
+    "text": 1811890971,
+    "resType": 4,
+    "title": 1352637013
+  },
+  "154": {
+    "background": "$background_black.prefab",
+    "text": 1967875898,
+    "resType": 4,
+    "title": 1587089452
+  },
+  "150": {
+    "text": 1953154897,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108307,
+      1
+    ],
+    "resType": 4,
+    "title": 1449601244
+  },
+  "138": {
+    "text": 1365962647,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108205,
+      1
+    ],
+    "resType": 4,
+    "title": 1594824012
+  },
+  "151": {
+    "text": 1171650703,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101801,
+      1
+    ],
+    "resType": 4,
+    "title": 1254402701
+  },
+  "141": {
+    "text": 1705052714,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108208,
+      1
+    ],
+    "resType": 4,
+    "title": 1465772045
+  },
+  "29": {
+    "background": "$background_black.prefab",
+    "text": 2097842257,
+    "resType": 4,
+    "title": 1924860298
+  },
+  "30": {
+    "contentRes": "$UI_Node_ItemView_ImageText_Ark_0001.prefab",
+    "showPagePoint": 1,
+    "background": "$background_white.prefab",
+    "resType": 3,
+    "useExitInPrefab": 1
+  },
+  "32": {
+    "background": "$background_white.prefab",
+    "text": 1709383862,
+    "resType": 4,
+    "title": 1902344969
+  },
+  "33": {
+    "background": "$background_white.prefab",
+    "text": 1329798057,
+    "resType": 4,
+    "title": 1635172503
+  },
+  "34": {
+    "background": "$background_white.prefab",
+    "text": 1133585133,
+    "resType": 4,
+    "title": 2068052987
+  },
+  "36": {
+    "background": "$background_white.prefab",
+    "text": 1622236924,
+    "resType": 4,
+    "title": 1538877334
+  },
+  "37": {
+    "background": "$background_white.prefab",
+    "text": 1290490575,
+    "resType": 4,
+    "title": 1919402021
+  },
+  "165": {
+    "text": 1926658856,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101104,
+      1
+    ],
+    "resType": 4,
+    "title": 2121020600
+  },
+  "39": {
+    "background": "$background_white.prefab",
+    "resType": 2,
+    "pictureFront": "$UI_Img_ItemView_BeachWahle_2.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      10
+    ]
+  },
+  "166": {
+    "text": 2063497392,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101105,
+      1
+    ],
+    "resType": 4,
+    "title": 1758128978
+  },
+  "41": {
+    "background": "$background_black.prefab",
+    "text": 1142783424,
+    "resType": 4,
+    "title": 2126946541
+  },
+  "42": {
+    "background": "$background_black.prefab",
+    "text": 1385686337,
+    "resType": 4,
+    "title": 1720530941
+  },
+  "35": {
+    "background": "$background_white.prefab",
+    "text": 1444245604,
+    "resType": 4,
+    "title": 1550325192
+  },
+  "332": {
+    "title": 1210363604,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300332.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300332,
+      2
+    ],
+    "desc": 1856263957,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "170": {
+    "text": 1991243920,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101601,
+      1
+    ],
+    "resType": 4,
+    "title": 2126320216
+  },
+  "330": {
+    "title": 1358968462,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300330.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300330,
+      2
+    ],
+    "desc": 1783698249,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "327": {
+    "title": 1470791067,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300327.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300327,
+      2
+    ],
+    "desc": 1477521152,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "172": {
+    "background": "$background_white.prefab",
+    "contentRes": "$UI_Node_ItemView_Musicalscore02.prefab",
+    "resType": 3
+  },
+  "173": {
+    "text": 1162685661,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      100301,
+      1
+    ],
+    "resType": 4,
+    "title": 1522950510
+  },
+  "313": {
+    "title": 1420391630,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300313.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300313,
+      2
+    ],
+    "desc": 1960296568,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1": {
+    "modelRes": "$P_Parmon_10011.prefab",
+    "rotationYLimit": [
+      -30,
+      30
+    ],
+    "rotationXLimit": [
+      -30,
+      30
+    ],
+    "background": "$background_black.prefab",
+    "resType": 1,
+    "modelRotationInit": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 0.6
+  },
+  "2": {
+    "pictureBack": "$UI_Help_1012.png",
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Help_1011.png",
+    "desc": 2055247537,
+    "pictureRotationInit": [
+      0,
+      0,
+      10
+    ]
+  },
+  "3": {
+    "background": "$background_white.prefab",
+    "resType": 3,
+    "contentRes": "$UI_Node_ItemView_ImageText_Test.prefab",
+    "desc": 1487842322
+  },
+  "4": {
+    "background": "$background_black.prefab",
+    "resType": 4,
+    "desc": 1927103356,
+    "title": 1975736067
+  },
+  "312": {
+    "title": 1343858717,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300312.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300312,
+      2
+    ],
+    "desc": 1417188002,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "176": {
+    "text": 1104515118,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108401,
+      1
+    ],
+    "resType": 4,
+    "title": 1623174521
+  },
+  "101": {
+    "text": 1825525829,
+    "pictureBack": "$UI_Img_Map_Preview_GamePlay_EcologyLimit.png",
+    "title": 1135464536,
+    "background": "$background_white.prefab",
+    "resType": 2,
+    "pictureFront": "$UI_Img_test_DogPic.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      10
+    ]
+  },
+  "177": {
+    "title": 1086986463,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Mural01.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "175": {
+    "text": 1780815911,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      100303,
+      1
+    ],
+    "resType": 4,
+    "title": 1737049843
+  },
+  "301": {
+    "title": 2031243735,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300301.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300301,
+      2
+    ],
+    "desc": 1656987899,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "401": {
+    "title": 1463343758,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Forest_2.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "139": {
+    "text": 2053600070,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108206,
+      1
+    ],
+    "resType": 4,
+    "title": 1852182085
+  },
+  "179": {
+    "pictureBack": "$UI_Img_ItemView_Note_3.png",
+    "title": 1188386229,
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Note_2.png",
+    "desc": 1108506095,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "140": {
+    "text": 1320766641,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108207,
+      1
+    ],
+    "resType": 4,
+    "title": 1228074536
+  },
+  "180": {
+    "title": 1186990308,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Note_3.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "142": {
+    "text": 1402805528,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108209,
+      1
+    ],
+    "resType": 4,
+    "title": 1874235981
+  },
+  "181": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1656710563,
+    "pictureFront": "$UI_Help_60082.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "303": {
+    "title": 1602410267,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300303.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300303,
+      2
+    ],
+    "desc": 1156185151,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "183": {
+    "text": 1286895663,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      107801,
+      1
+    ],
+    "resType": 4,
+    "title": 1076482802
+  },
+  "20": {
+    "background": "$background_black.prefab",
+    "text": 1801929414,
+    "resType": 4,
+    "title": 1118400050
+  },
+  "188": {
+    "text": 1828039236,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108503,
+      1
+    ],
+    "resType": 4,
+    "title": 1153918159
+  },
+  "21": {
+    "background": "$background_black.prefab",
+    "text": 2125216212,
+    "resType": 4,
+    "title": 1769456720
+  },
+  "189": {
+    "text": 1853366080,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108504,
+      1
+    ],
+    "resType": 4,
+    "title": 1436966202
+  },
+  "147": {
+    "text": 2122332059,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108304,
+      1
+    ],
+    "resType": 4,
+    "title": 1875414135
+  },
+  "190": {
+    "text": 1365152938,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108505,
+      1
+    ],
+    "resType": 4,
+    "title": 1381971937
+  },
+  "152": {
+    "text": 1290735283,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101802,
+      1
+    ],
+    "resType": 4,
+    "title": 1929519176
+  },
+  "192": {
+    "text": 1872877852,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108403,
+      1
+    ],
+    "resType": 4,
+    "title": 1818962742
+  },
+  "400": {
+    "title": 1704790019,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Forest_1.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "193": {
+    "text": 1496003853,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108404,
+      1
+    ],
+    "resType": 4,
+    "title": 1799727227
+  },
+  "182": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1252528814,
+    "pictureFront": "$UI_Help_60083.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "194": {
+    "text": 1600640943,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108405,
+      1
+    ],
+    "resType": 4,
+    "title": 1584905262
+  },
+  "157": {
+    "resType": 2,
+    "pictureFront": "$UI_Home.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "195": {
+    "text": 1691220872,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108406,
+      1
+    ],
+    "resType": 4,
+    "title": 1995113766
+  },
+  "163": {
+    "text": 1656610127,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      101102,
+      1
+    ],
+    "resType": 4,
+    "title": 1688515093
+  },
+  "196": {
+    "title": 1817750196,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Mural02.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "124": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1689890807,
+    "pictureFront": "$UI_Help_60041.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "143": {
+    "text": 1244512376,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108001,
+      1
+    ],
+    "resType": 4,
+    "title": 1688236243
+  },
+  "302": {
+    "title": 1341306619,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300302.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300302,
+      2
+    ],
+    "desc": 1210497938,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "10": {
+    "background": "$background_black.prefab",
+    "text": 1965811091,
+    "resType": 4,
+    "title": 2123876899
+  },
+  "304": {
+    "title": 1386391338,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300304.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300304,
+      2
+    ],
+    "desc": 1541624934,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "305": {
+    "title": 2138210838,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300305.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300305,
+      2
+    ],
+    "desc": 1212603150,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "306": {
+    "title": 1161482477,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300306.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300306,
+      2
+    ],
+    "desc": 1362298904,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "307": {
+    "title": 1921707401,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300307.png",
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      300307,
+      2
+    ],
+    "desc": 1988953723,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "308": {
+    "title": 1450310475,
+    "resType": 2,
+    "pictureFront": "UI_Img_Knowledge_300308.png",
+    "background": "$background_white.prefab",
+    "knowledgeConnect": [
+      300308,
+      2
+    ],
+    "desc": 1838617464,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "178": {
+    "heading": 1836927486,
+    "article": 1418571984,
+    "background": "$background_white.prefab",
+    "pictureList": [
+      "$UI_Img_ItemView_Note_1.png"
+    ],
+    "resType": 5,
+    "title": 1983577579
+  },
+  "402": {
+    "title": 2108060031,
+    "background": "$background_white.prefab",
+    "pictureFront": "$UI_Img_ItemView_Forest_3.png",
+    "resType": 2,
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "38": {
+    "background": "$background_white.prefab",
+    "resType": 2,
+    "pictureFront": "$UI_Img_ItemView_BeachWahle_1.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      10
+    ]
+  },
+  "120": {
+    "resType": 2,
+    "background": "$background_white.prefab",
+    "desc": 1765887072,
+    "pictureFront": "$UI_Help_60001.png",
+    "pictureRotationInit": [
+      0,
+      0,
+      0
+    ]
+  },
+  "144": {
+    "text": 1317765207,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108301,
+      1
+    ],
+    "resType": 4,
+    "title": 1233435716
+  },
+  "191": {
+    "text": 1765017618,
+    "background": "$background_black.prefab",
+    "knowledgeConnect": [
+      108402,
+      1
+    ],
+    "resType": 4,
+    "title": 1363852653
+  }
+}

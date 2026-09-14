@@ -1,0 +1,434 @@
+{
+  "821001": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10001.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821002": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10002.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821005": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10005.prefab",
+    "showStatus": 2,
+    "fashion": 30
+  },
+  "821006": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10006.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821007": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10007.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821011": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10011.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821015": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10015.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821016": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10016.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821017": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10017.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821018": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10018.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821024": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10024.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821025": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10025.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821026": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10026.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821028": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10028.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821031": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10031.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821032": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10032.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "821041": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10041.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821052": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10052.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821094": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10094.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "821098": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10098.prefab",
+    "showStatus": 2,
+    "fashion": 20
+  },
+  "821101": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Head_H10101.prefab",
+    "showStatus": 3,
+    "fashion": 20
+  },
+  "822001": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Face_F10001.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "822003": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Face_F10003.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "822005": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Face_F10005.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "822007": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Face_F10007.prefab",
+    "showStatus": 2,
+    "fashion": 10
+  },
+  "822008": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Face_F10008.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "822009": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Face_F10009.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "824002": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Neck_N10002.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "824006": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Neck_N10006.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "824007": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Neck_N10007.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "824008": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Neck_N10008.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "824009": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Neck_N10009.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "824010": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Neck_N10010.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826003": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10003.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826004": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10004.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826006": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10006.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826011": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10011.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826012": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10012.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826015": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10015.prefab",
+    "showStatus": 2,
+    "fashion": 10
+  },
+  "826016": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10016.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826017": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10017.prefab",
+    "showStatus": 2,
+    "fashion": 10
+  },
+  "826018": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10018.prefab",
+    "showStatus": 2,
+    "fashion": 10
+  },
+  "826020": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10020.prefab",
+    "showStatus": 1,
+    "fashion": 30
+  },
+  "825016": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10016.prefab",
+    "showStatus": 2,
+    "fashion": 20
+  },
+  "825028": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10028.prefab",
+    "showStatus": 3,
+    "fashion": 20
+  },
+  "825039": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10039.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "826002": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10002.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826027": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10027.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826029": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10029.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826035": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10035.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826036": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10036.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826037": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10037.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "826041": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10041.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "826042": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10042.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "826050": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10050.prefab",
+    "showStatus": 3,
+    "fashion": 20
+  },
+  "826051": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10051.prefab",
+    "showStatus": 3,
+    "fashion": 20
+  },
+  "826086": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10086.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "826088": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10088.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "825015": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10015.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "825014": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10014.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "825013": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10013.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "825007": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10007.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "825006": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10006.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "825005": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10005.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "825004": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10004.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "825002": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10002.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "825001": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Back_B10001.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "824011": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Neck_N10011.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826021": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10002.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826022": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10022.prefab",
+    "showStatus": 1,
+    "fashion": 20
+  },
+  "826023": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10023.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  },
+  "826025": {
+    "type": 1,
+    "res": "$E_P_Avatar_Acc_Misc_M10025.prefab",
+    "showStatus": 1,
+    "fashion": 10
+  }
+}

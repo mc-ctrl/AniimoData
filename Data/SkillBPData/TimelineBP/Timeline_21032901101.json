@@ -1,0 +1,17 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "0394793e-a794-41eb-a6bc-84e0bffe451f",
+      "eventType": "EventEnter",
+      "NodeID": 5
+    }
+  },
+  "BPName": "buff_21032901",
+  "NodeID": 7,
+  "UID": "b8aaf9d4-5c7c-4022-ba47-3d20d8e4b475",
+  "eventIds": [
+    5
+  ],
+  "layer": "Parallel",
+  "length": 5.7
+}

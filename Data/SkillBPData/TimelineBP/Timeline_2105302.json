@@ -1,0 +1,96 @@
+{
+  "nodeMap": {
+    "3": {
+      "target": "MASTER",
+      "duration": 1,
+      "buffId": 2105305,
+      "NodeID": 3,
+      "UID": "7cbf849b-0786-41d9-9cf0-d161194c73a8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "target": "MASTER",
+      "name": "playEffectStr",
+      "UID": "e4495093-f902-4f8d-a18d-87c5d5da2ad5",
+      "effectId": "Eff_Parmon_10053_Skill_FlyStrike_02",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        -0.8,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6b04de5e-2d4a-4475-acc0-126d1a931cce",
+      "effectId": "Eff_Parmon_10053_Skill_FlyStrike_Success",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "bce4a964-2342-4b9a-aa40-80073d70169b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "329ec4a4-a3e0-4c47-acbd-5140c7cf2ab1",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_air_strike_perfect_hit",
+      "NodeID": 10
+    },
+    "11": {
+      "duration": 0.5,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 11,
+      "UID": "865077bc-f134-4c2a-bd2c-e0a8b1d27867",
+      "name": "playRadialBlur"
+    },
+    "5": {
+      "UID": "d0964b69-7f99-487b-919b-9702aa260eff",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        3,
+        10,
+        11,
+        12,
+        14,
+        9
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "keepTime": 0.12,
+      "target": "MASTER",
+      "outTime": 0,
+      "NodeID": 12,
+      "UID": "65b11894-bade-4c17-8725-50acf9695d3e",
+      "inTime": 0,
+      "name": "globalFreeze",
+      "freezeScale": 0.3
+    }
+  },
+  "BPName": "timeline_2105302",
+  "NodeID": 1,
+  "UID": "b1d3dba4-5268-4034-ae43-7ec03495e127",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 0.5
+}

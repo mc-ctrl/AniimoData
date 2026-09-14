@@ -1,0 +1,188 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116109",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "b52eef17-63a8-4f61-89f7-7e3c997683c8",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "3d083be4-4c07-4932-85df-c78b234ad8d2",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9116111,
+      "NodeID": 8,
+      "UID": "7e7104cf-d541-44d0-b164-e1271bb5ce94",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "d6edca23-4fe7-4209-b1d0-a341e667d36f",
+      "cd": 0.4,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "11": {
+      "UID": "109db0fd-c9aa-4475-8ead-f6090e1540f9",
+      "conditionIds": [
+        10,
+        13
+      ],
+      "name": "conditionAnd",
+      "NodeID": 11
+    },
+    "20": {
+      "naturalDecayV": 0.075,
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 6,
+      "name": "registerPassiveEnergyInfo",
+      "UID": "6d6207a3-a62d-49ac-a75a-0bc18ba75e9c",
+      "superBoosted": true,
+      "spEnergyMaxV": 6,
+      "spEnergyInitV": 0,
+      "NodeID": 20,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 0.25
+    },
+    "3": {
+      "name": "isInBurrow",
+      "UID": "d1a9359c-90be-494b-ad73-5f427589a76d",
+      "target": "OWNER",
+      "NodeID": 3,
+      "not": false
+    },
+    "4": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "391aa738-3ccd-458a-bb6b-015eb9ae11c2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "fb4f4e48-73b3-438f-9f74-54f47014d674",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        23
+      ],
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "b646f4a9-37a3-401b-ba5a-9cc7505900db",
+      "name": "removeBuff",
+      "buffId": 9116111,
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "8621c3fa-2001-43ed-a708-ea677589ebd6",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 10
+    },
+    "16": {
+      "key": "LeaveCombat",
+      "duration": 3,
+      "actionIds": [
+        14,
+        22
+      ],
+      "NodeID": 16,
+      "UID": "2c5ff2f0-42fd-4c8e-b78a-602627a3ed91",
+      "name": "addTimer"
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "3e6a46e0-2c39-4396-99b3-6bb3a8884652",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9116111,
+      "NodeID": 18,
+      "UID": "87d27abc-73c9-4b68-9c04-a639af1eb967",
+      "layer": 2,
+      "name": "addBuff",
+      "level": 1
+    },
+    "23": {
+      "UID": "e0566301-d058-4a46-8302-9d889693d293",
+      "name": "removeTimer",
+      "key": "LeaveCombat",
+      "NodeID": 23
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "NodeID": 19,
+      "UID": "f02d5c1e-a4bb-4ea6-b001-e0635e68de4d",
+      "cd": 0.4,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "13": {
+      "UID": "d1a655a0-a729-4cf8-be15-7f3448ee3caf",
+      "name": "isNot",
+      "action": {
+        "buffId": 9116112,
+        "name": "hasBuff",
+        "UID": "84a7fc44-0bd1-4dec-9740-e35d585bf224",
+        "target": "OWNER",
+        "NodeID": 12
+      },
+      "NodeID": 13
+    },
+    "22": {
+      "calcInfo": {
+        "passive_energy_cur": -6
+      },
+      "name": "calcResult",
+      "UID": "0447ff32-d4d7-47ec-9633-50b0ddd3dcc6",
+      "target": "OWNER",
+      "NodeID": 22
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    17,
+    20,
+    24
+  ]
+}

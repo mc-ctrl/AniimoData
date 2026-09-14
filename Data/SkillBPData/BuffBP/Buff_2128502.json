@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2128502",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    7,
+    3
+  ],
+  "tags": [
+    1,
+    20
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "7bcb5c66-f978-429e-a64f-5fe9c3629218",
+      "name": "showBossMechanismTip",
+      "id": 2012,
+      "NodeID": 3
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f05d5380-d422-455b-8963-adbef2820f9a",
+      "effectId": "Eff_Parmon_10285_Skill_SoilShield_Break",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5cd29c3b-efff-49d3-bbd5-54bffe7c6763",
+      "effectId": "Eff_Parmon_10285_Skill_SoilShield",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "5": {
+      "UID": "b8bff81e-5f56-4c42-8a28-ad18ada11146",
+      "name": "hideBossMechanismTip",
+      "id": 2012,
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    8,
+    5
+  ],
+  "onBuffStartIds": [
+    7,
+    3
+  ]
+}

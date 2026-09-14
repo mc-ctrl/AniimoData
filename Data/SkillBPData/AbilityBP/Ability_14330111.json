@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_14330111",
+  "NodeID": 1,
+  "UID": "ad2ab66f-ef5b-416b-84dc-4299f0cff45c",
+  "abilityParamId": 10800372,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14330111001,
+      "name": "setCombatActionTimeline",
+      "UID": "4cf2f94d-6d15-4f6a-b7ff-9746debf7c2d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_TurretForm_Start",
+    "Skill_TurretForm_End",
+    "Skill_TurretForm_Fire"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10433_Skill_TurretForm_01",
+    "Eff_Parmon_10433_Skill_TurretForm_03",
+    "Eff_Parmon_10433_Skill_TurretForm_02"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 30,
+  "searchTargetRangeRadius": 50,
+  "searchTargetRangeUp": 20,
+  "isSwitch": false
+}

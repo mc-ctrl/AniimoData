@@ -1,0 +1,65 @@
+{
+  "BPName": "ability_9200010",
+  "NodeID": 1,
+  "UID": "95e52ea3-8c1b-4b90-ab4a-4ea63308d06e",
+  "abilityParamId": 9200010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "50": {
+      "name": "stopEffectStr",
+      "UID": "6d1a1380-3c3e-4f3f-b1a4-1d20284d8344",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_L",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "49": {
+      "name": "stopEffectStr",
+      "UID": "bdaabfaf-b486-42de-b7d0-f4175252e03a",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_R",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "7": {
+      "timelineId": 9200010001,
+      "name": "setCombatActionTimeline",
+      "UID": "ffb2e4a6-c0a4-40f2-93bf-be59534fccd6",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "47": {
+      "name": "stopEffectStr",
+      "UID": "ba786e18-b665-4e55-9866-51e2a4547b59",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_Appear",
+      "target": "OWNER",
+      "NodeID": 47
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ShieldWave_Ready",
+    "Skill_ShieldWave_Idle",
+    "Skill_ShieldWave_End"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Female_Skill_ShieldWave_Appear",
+    "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_L",
+    "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_R",
+    "Eff_Avatar_Female_Skill_ShieldWave_Finalwave",
+    "Eff_Hit_Avatar_Blunt"
+  ],
+  "searchRelation": 1,
+  "searchTargetRangeDown": 0,
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "onAbilityEndIds": [
+    47,
+    49,
+    50
+  ],
+  "onlyHasActOnTargets": true
+}

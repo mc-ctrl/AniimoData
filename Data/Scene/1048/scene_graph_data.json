@@ -1,0 +1,53 @@
+{
+  "61644940": {
+    "graphId": 61644940,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "TimeOut",
+        "targetNode": 2,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "bff4b145d29225edfc5e9139abbaff82",
+    "nodes": {
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "c474e2a6-c3a8-4817-b17a-938c8ea5f1ba"
+      },
+      "1": {
+        "_inputPortValues": {
+          "TimeOutSecond": 5
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "cc36ef85-ce75-41db-a288-07da87679269"
+      },
+      "2": {
+        "_inputPortValues": {
+          "SpawnerId": 61687469,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "42a598bc-0e2c-4d06-9eae-fe4e71cbf1a7"
+      }
+    }
+  }
+}

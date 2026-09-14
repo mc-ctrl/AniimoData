@@ -1,0 +1,446 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2160301",
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "onBuffRefreshIds": [
+    17
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 33
+      },
+      "name": "playSoundStr",
+      "UID": "88a7741c-f2bd-4d37-9000-2a69c880c922",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10433_Skill_ChimneySentry_Start",
+      "NodeID": 37
+    },
+    "38": {
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 33
+      },
+      "name": "playSoundStr",
+      "UID": "b7622e7f-b668-4e7d-8a13-8c3287d1430d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10433_Skill_ChimneySentry_Loop",
+      "NodeID": 38
+    },
+    "39": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "1b5ff28d-ab60-4499-872c-82e1a64e0849",
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 33
+      },
+      "NodeID": 39,
+      "animId": "Skill_Dragonfly_Born"
+    },
+    "40": {
+      "UID": "6d5cbac9-1f00-4237-a933-3c5e2ad893cb",
+      "name": "getFollowPhantom",
+      "NodeID": 40
+    },
+    "41": {
+      "isRootDir": false,
+      "NodeID": 41,
+      "UID": "982b0359-6a2f-467f-a8cd-9344be4178dc",
+      "target": {
+        "UID": "6d5cbac9-1f00-4237-a933-3c5e2ad893cb",
+        "name": "getFollowPhantom",
+        "NodeID": 40
+      },
+      "name": "getBonePosition",
+      "boneName": "Bone C Body Qing"
+    },
+    "42": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2160301101,
+      "name": "createProjectile",
+      "UID": "30f59073-5ee0-47be-a51b-affc620834a3",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": {
+        "isRootDir": false,
+        "NodeID": 41,
+        "UID": "982b0359-6a2f-467f-a8cd-9344be4178dc",
+        "target": {
+          "UID": "6d5cbac9-1f00-4237-a933-3c5e2ad893cb",
+          "name": "getFollowPhantom",
+          "NodeID": 40
+        },
+        "name": "getBonePosition",
+        "boneName": "Bone C Body Qing"
+      },
+      "projectileType": "Tracking",
+      "NodeID": 42,
+      "targetPos": {
+        "key": "14330300",
+        "name": "getCacheVal",
+        "UID": "c4a3dab1-5ccf-44e3-b39a-653b7c44dce4",
+        "target": "OWNER",
+        "NodeID": 48
+      }
+    },
+    "43": {
+      "key": "3",
+      "duration": 0.1,
+      "actionIds": [
+        42
+      ],
+      "NodeID": 43,
+      "UID": "1444c7b2-0a1f-4b38-99d7-613e147e71fc",
+      "name": "addTimer"
+    },
+    "65": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "abd9deb1-a32c-442c-a5a4-8b88c415b6e6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10603_Skill_Dragonfly_Fire",
+      "NodeID": 65
+    },
+    "4": {
+      "scale": 1,
+      "name": "createFollowingPhantom",
+      "eventMaps": {
+        "Start": 36,
+        "Attack": 45,
+        "SkillHit": 21
+      },
+      "idleState": "Skill_Dragonfly_Idle",
+      "ignoreCombat": true,
+      "moveState": "Skill_Dragonfly_Idle",
+      "offsetBack": 0,
+      "offsetHeight": 0,
+      "offsetHorizontal": -0.6,
+      "templateList": [
+        0
+      ],
+      "UID": "a237da3b-f9a7-4225-b323-c49d17f091b3",
+      "skillState": "",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "7f859e34-8207-4adb-910a-7da33852b701",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "SkillHit",
+      "NodeID": 6
+    },
+    "64": {
+      "calcId": 2160301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 64,
+      "UID": "ae5538b5-e3c3-43f1-a3e1-65366c0cd9a8",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "actionIds": [
+        6,
+        27
+      ],
+      "NodeID": 8,
+      "UID": "e006442a-7d7b-4d75-9ab5-28df5b179ecb",
+      "cd": {
+        "calcId": 2160301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 64,
+        "UID": "ae5538b5-e3c3-43f1-a3e1-65366c0cd9a8",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "62": {
+      "rValue": 16030200,
+      "name": "equal",
+      "UID": "241dd1ea-28db-4325-b1f6-a4feeb029fc8",
+      "NodeID": 62,
+      "lValue": {
+        "data": {
+          "UID": "8411b20c-4c67-499b-932c-c4802399a56f",
+          "name": "getEventData",
+          "eventName": "onAttack",
+          "NodeID": 60
+        },
+        "propertyName": "abilityId",
+        "name": "getProperty",
+        "UID": "4d92bef6-754c-41e7-bd83-e398a0f7d28c",
+        "NodeID": 61
+      }
+    },
+    "13": {
+      "UID": "533fefc2-010b-43d7-8afe-4d0d2e14e94b",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 13
+    },
+    "10": {
+      "actionIds": [
+        25,
+        8
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "341aba84-93b8-4a08-a536-5f756d29fc45",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "05be0360-a931-4c6b-a884-492c3fbb8dbe",
+      "target": {
+        "UID": "97656f54-70ca-4cc4-bcb8-8427eb57e7e8",
+        "name": "getFollowPhantom",
+        "NodeID": 18
+      },
+      "NodeID": 19,
+      "animId": "Skill_Dragonfly_Attack"
+    },
+    "11": {
+      "conditionActionIds": [
+        62
+      ],
+      "UID": "584bf8ff-fe4a-43ec-8ac6-850184f3e5f8",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "26": {
+      "UID": "c2090fe6-e678-4a93-986b-30c4abe4a3c0",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "Attack",
+      "NodeID": 26
+    },
+    "21": {
+      "eventName": "SkillHit",
+      "NodeID": 21,
+      "UID": "bbb1c7e2-d5d8-42ed-a26c-f5e4c9fb9dfb",
+      "name": "followPhantomEventAction",
+      "actionIds": [
+        32,
+        19,
+        23
+      ]
+    },
+    "18": {
+      "UID": "97656f54-70ca-4cc4-bcb8-8427eb57e7e8",
+      "name": "getFollowPhantom",
+      "NodeID": 18
+    },
+    "23": {
+      "key": "2",
+      "duration": 0.2,
+      "actionIds": [
+        19,
+        65
+      ],
+      "NodeID": 23,
+      "UID": "922df0a4-72db-459f-bd37-0280d7f0e3a2",
+      "name": "addTimer"
+    },
+    "45": {
+      "eventName": "Attack",
+      "NodeID": 45,
+      "UID": "5175007c-360f-4357-9aff-13a5428b8f03",
+      "name": "followPhantomEventAction",
+      "actionIds": [
+        46,
+        43
+      ]
+    },
+    "17": {
+      "UID": "b00005ad-fb92-4581-bb6e-10de74621c09",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "Start",
+      "NodeID": 17
+    },
+    "46": {
+      "pos": {
+        "isRootDir": false,
+        "NodeID": 41,
+        "UID": "982b0359-6a2f-467f-a8cd-9344be4178dc",
+        "target": {
+          "UID": "6d5cbac9-1f00-4237-a933-3c5e2ad893cb",
+          "name": "getFollowPhantom",
+          "NodeID": 40
+        },
+        "name": "getBonePosition",
+        "boneName": "Bone C Body Qing"
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "abbb029c-9c0e-4b74-adf5-080dbe4c8264",
+      "effectId": "Eff_Parmon_10603_Skill_Dragonfly_Fire",
+      "speed": 1,
+      "NodeID": 46
+    },
+    "15": {
+      "unsummonValid": false,
+      "actionIds": [
+        13
+      ],
+      "name": "registerGroupEvent",
+      "UID": "ef62904c-bb2a-4be8-919d-4174e0bb665d",
+      "NodeID": 15
+    },
+    "25": {
+      "key": "14330300",
+      "name": "setCacheVal",
+      "UID": "867efbbf-b372-4b80-9079-18e757424dcc",
+      "target": "OWNER",
+      "val": {
+        "UID": "f034b6bf-df11-4cd4-9dc8-3a2a81d6de7a",
+        "name": "getEventAttackTarget",
+        "NodeID": 24
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "ace58240-2b63-40fe-9750-e0b3c1597953",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 16
+    },
+    "27": {
+      "key": "1",
+      "duration": 0.1,
+      "actionIds": [
+        26
+      ],
+      "NodeID": 27,
+      "UID": "c4fed7dd-2b99-4ae8-bcc9-cff2e5268f4f",
+      "name": "addTimer"
+    },
+    "28": {
+      "UID": "88795c58-8dd2-4e28-8129-d32f2498c32c",
+      "name": "getFollowPhantom",
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "9146b0ad-ad45-4f2e-9365-af68d4bee757",
+      "target": {
+        "UID": "88795c58-8dd2-4e28-8129-d32f2498c32c",
+        "name": "getFollowPhantom",
+        "NodeID": 28
+      },
+      "name": "getTargetPosition",
+      "NodeID": 29
+    },
+    "30": {
+      "offsetXYZ": [
+        -0.6,
+        1.5,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "a8fe6e1b-2d68-4550-850f-ba07f61d1510",
+      "effectId": "Eff_Parmon_Die",
+      "pos": {
+        "UID": "9146b0ad-ad45-4f2e-9365-af68d4bee757",
+        "target": {
+          "UID": "88795c58-8dd2-4e28-8129-d32f2498c32c",
+          "name": "getFollowPhantom",
+          "NodeID": 28
+        },
+        "name": "getTargetPosition",
+        "NodeID": 29
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 30,
+      "scale": 0.5
+    },
+    "32": {
+      "time": 1,
+      "rotateSpeed": 360,
+      "name": "followPhantomRotateTo",
+      "UID": "0f8dc547-5d25-4586-aab1-8e1e8cc18893",
+      "target": {
+        "key": "14330300",
+        "name": "getCacheVal",
+        "UID": "a6f3e324-461c-43f6-8bbe-e594f975f6f1",
+        "target": "OWNER",
+        "NodeID": 31
+      },
+      "NodeID": 32,
+      "boneName": "Bone L Hand 00"
+    },
+    "33": {
+      "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+      "name": "getFollowPhantom",
+      "NodeID": 33
+    },
+    "34": {
+      "offsetXYZ": [
+        -0.62,
+        0,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "c4761a7f-a6c2-4f02-b944-83913d7c0650",
+      "effectId": "Eff_Parmon_10433_Skill_ChimneySentry_Loop",
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 33
+      },
+      "NodeID": 34,
+      "speed": 1,
+      "offsetRotation": [
+        -180,
+        0,
+        0
+      ],
+      "scale": 1
+    },
+    "36": {
+      "eventName": "Start",
+      "NodeID": 36,
+      "UID": "1e0750d1-a74e-4011-97e3-252b28bed1e9",
+      "name": "followPhantomEventAction",
+      "actionIds": [
+        39,
+        37,
+        38,
+        34
+      ]
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    30
+  ],
+  "onBuffStartIds": [
+    15,
+    4,
+    17
+  ]
+}

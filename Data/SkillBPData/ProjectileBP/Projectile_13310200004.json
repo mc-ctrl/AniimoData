@@ -1,0 +1,158 @@
+{
+  "angularIncreaseDuration": 0.1,
+  "BPName": "ability_13310200",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10333_Skill_Bullet",
+  "trackingNoOffsetRotationRange": 3,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "duration": 3,
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "defaultHitSoundType": "h",
+  "onProjectileHitIds": [
+    147
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "147": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 149,
+      "NodeID": 147,
+      "UID": "bd45f9ce-f725-4a32-ad3c-b030a8c339a6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        149,
+        150,
+        145,
+        180
+      ]
+    },
+    "182": {
+      "value": {
+        "calcId": 13310200,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 181,
+        "UID": "847dad0f-361c-4ffc-92a1-a5ed4ecbdd25",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "922d1b1f-86f7-4ea0-b55e-2187c5acb496",
+      "element": 0,
+      "target": "TARGET",
+      "NodeID": 182
+    },
+    "149": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13310200,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "98a05d75-2b53-4aa3-bff1-256a60a41f81",
+      "target": "TARGET",
+      "NodeID": 149,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt_Big"
+      }
+    },
+    "150": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "478a808d-52b0-4180-8387-569d5bfd2af9",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1.01,
+      "NodeID": 150
+    },
+    "144": {
+      "UID": "3766f7b2-1794-4a13-a6c9-96777c302672",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 144
+    },
+    "145": {
+      "UID": "1539638e-b1d1-4c9d-b0d2-ea059d459028",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        144
+      ],
+      "NodeID": 145
+    },
+    "181": {
+      "calcId": 13310200,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 181,
+      "UID": "847dad0f-361c-4ffc-92a1-a5ed4ecbdd25",
+      "name": "getParamByLuaConfig"
+    },
+    "179": {
+      "buffId": 9133303,
+      "name": "hasBuff",
+      "UID": "bae46660-f333-4f15-a85b-be7a51280243",
+      "target": "TARGET",
+      "NodeID": 179
+    },
+    "180": {
+      "actionIds": [
+        182
+      ],
+      "conditionActionIds": [
+        179
+      ],
+      "UID": "25e69fce-99b3-4beb-a7fc-fa7c183f0275",
+      "name": "doActionsByConditions",
+      "NodeID": 180
+    }
+  },
+  "tickInterval": 0.05,
+  "calcResultNodeId": 149,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt_Big",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

@@ -1,0 +1,173 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e2781b8c-721a-4489-8f3d-6508b0ce202f",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_loop",
+      "NodeID": 22
+    },
+    "4": {
+      "action": {
+        "actionIds": [
+          2,
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 4,
+      "UID": "c599b074-072b-4d0f-b706-d4d5903f4a58"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "89709bd8-b6ea-40ef-af2d-58d58421d40d",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind04",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "impulseId": 3002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "0bee709d-c67d-4a1d-bd18-df0541680647",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "8": {
+      "UID": "fdf1cdfe-75e1-4f0c-bc16-c771b067d6e4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6,
+          22
+        ]
+      },
+      "NodeID": 8
+    },
+    "29": {
+      "name": "moveByDirection",
+      "duration": 6,
+      "velocity": [
+        0,
+        0,
+        15
+      ],
+      "NodeID": 29,
+      "UID": "ba027f48-ec98-4a7e-8079-f38f10cc3c2d",
+      "collisionTestDistance": 0,
+      "isLocalDir": true,
+      "needForceOnGround": false
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 30,
+      "UID": "b1631bca-d1f3-475f-85c6-e44c81adf43b"
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "18b09aab-1bb0-45fa-bd6c-b70bc770ddd3",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind01_0.5",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "12": {
+      "calcResultNodeId": 10,
+      "name": "actOnTargets",
+      "UID": "a75cec96-725a-40d5-9757-e11853657751",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            3,
+            5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "Enemy",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        10
+      ],
+      "impulseId": 3002,
+      "NodeID": 12
+    },
+    "14": {
+      "eventType": "NotifyState",
+      "endTime": 2.4,
+      "NodeID": 14,
+      "UID": "a9c8a16a-457e-4c37-a327-f860586c4bd5",
+      "onUpdate": {
+        "actionIds": [
+          12
+        ]
+      },
+      "startTime": 0.2,
+      "tickInterval": 0.05
+    },
+    "21": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "56253b19-d939-47f7-938c-21557d5df3e3",
+      "val": {
+        "UID": "8bdea8f1-5ec5-47b9-86f2-dfb81cd83127",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 20
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2107110",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    8,
+    14,
+    30,
+    4
+  ],
+  "layer": "Base",
+  "length": 6
+}

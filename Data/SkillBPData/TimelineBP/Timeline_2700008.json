@@ -1,0 +1,289 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "28cbdc06-7cea-4e3f-92c0-0f87cfad8f21",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          7,
+          11,
+          14
+        ]
+      },
+      "NodeID": 5
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "276ff34b-5bde-41c1-b5c0-37d1dee9a98a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Drop",
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "b64ef4e4-70d6-43e8-af83-d088ca9b2083",
+      "effectId": "Eff_Buff_Rogue_Money_Drop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "2e2e35c3-a55f-4cde-b026-71d7a39cb466",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 31
+    },
+    "26": {
+      "UID": "6d72d086-7384-4e92-8287-55ec8cd5f046",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 26
+    },
+    "28": {
+      "scale": 1,
+      "target": {
+        "UID": "4eed6be3-ee5a-4a1a-8ea2-96e20a5261ec",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 27
+      },
+      "name": "playEffectStr",
+      "UID": "7e230bff-0010-4b03-9185-3b83343cc09c",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "11": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 11,
+      "relation": 1,
+      "enterTrapActionIds": [
+        10
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        1
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "59a1659e-2c7b-46d5-bd5b-a64612874d59"
+    },
+    "20": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "e9d1f684-401e-494c-a4f4-122fda07c9ab",
+      "NodeID": 20,
+      "lValue": {
+        "key": "touzi",
+        "name": "getCacheVal",
+        "UID": "befcb368-9a47-4e69-a8b4-cc93aa5bf649",
+        "target": "MASTER",
+        "NodeID": 19
+      }
+    },
+    "21": {
+      "actionIds": [
+        30
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "816785fd-bcac-4bf4-b16a-80ca931e6ff6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 21
+    },
+    "3": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "79fef7cc-681d-48a3-a178-037fa0f64154",
+      "effectId": "Eff_Buff_Rogue_Money_Drop",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "23": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "688d250c-2f40-4784-acd4-cdf6dc73b449",
+      "NodeID": 23,
+      "lValue": {
+        "key": "touzi",
+        "name": "getCacheVal",
+        "UID": "9bcbfa5e-de6f-4cb9-85e5-7bb4be27f5ba",
+        "target": "MASTER",
+        "NodeID": 22
+      }
+    },
+    "24": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "02cd7beb-5907-4bce-b853-4bcb2d9e8bad",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        34
+      ],
+      "NodeID": 24
+    },
+    "14": {
+      "key": "timeline_270000814",
+      "duration": 60,
+      "actionIds": [
+        12,
+        25
+      ],
+      "NodeID": 14,
+      "UID": "5025c3ac-78fc-4938-acc5-c347d881e1c0",
+      "name": "addEntityTimer"
+    },
+    "10": {
+      "actionIds": [
+        28,
+        21,
+        8,
+        18,
+        16
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "128453a6-b1d6-4ed3-824d-6eb9d6aa1d53",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "30": {
+      "name": "addRogueCoin",
+      "UID": "9346bbe9-b986-4e51-afad-9b802e4e4639",
+      "count": 50,
+      "target": {
+        "UID": "a89dac9d-bd1d-44f1-839d-bdad824db1c6",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 29
+      },
+      "NodeID": 30
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "cf8f2899-9ef2-4a18-96e6-a579c37e4064",
+      "effectId": "Eff_Buff_Rogue_Money_Drop",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "cc23d59b-2d4c-4598-9aa6-555eab635ee9",
+      "actorId": {
+        "UID": "5f2f3cbe-0196-4bbb-9d87-a22080fe1f47",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 15
+      },
+      "name": "destroyEntity",
+      "NodeID": 16
+    },
+    "27": {
+      "UID": "4eed6be3-ee5a-4a1a-8ea2-96e20a5261ec",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 27
+    },
+    "17": {
+      "name": "isActorType",
+      "UID": "e23bbcde-4546-423f-804f-80d627c5f3a4",
+      "target": "TrapTarget",
+      "NodeID": 17,
+      "actorType": 2
+    },
+    "29": {
+      "UID": "a89dac9d-bd1d-44f1-839d-bdad824db1c6",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 29
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "178a1b06-23ea-4f78-aabd-f3370b70bcc1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Pickup",
+      "NodeID": 18
+    },
+    "32": {
+      "name": "addRogueCoin",
+      "UID": "9b9d9014-c72a-4c65-827f-fe50a775ad2e",
+      "count": 50,
+      "target": {
+        "UID": "2e2e35c3-a55f-4cde-b026-71d7a39cb466",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 31
+      },
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "d4b11243-ab0b-43aa-9daa-9eebd9303646",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 33
+    },
+    "34": {
+      "name": "addRogueCoin",
+      "UID": "eabdf299-54b0-4932-aed3-f19a4794747b",
+      "count": 1,
+      "target": {
+        "UID": "d4b11243-ab0b-43aa-9daa-9eebd9303646",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 33
+      },
+      "NodeID": 34
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 2700008201,
+      "name": "createProjectile",
+      "UID": "91a6e56c-dde0-4d24-a751-c2b2be8d3474",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "UID": "6d72d086-7384-4e92-8287-55ec8cd5f046",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 26
+      },
+      "NodeID": 12,
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ]
+    }
+  },
+  "BPName": "timeline_2700008",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 99999
+}

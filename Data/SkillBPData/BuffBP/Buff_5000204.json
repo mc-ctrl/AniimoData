@@ -1,0 +1,183 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000204",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    14,
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "UID": "ca60fa05-f35e-44c0-bfb0-7d766c809a05",
+      "name": "registerShieldChangeEvent",
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "name": "doPetsActions",
+      "UID": "2f056a44-5bf7-4ffb-a41f-f6e33c9b6b9b",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "24": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "aa6cc8ab-0dbf-4e7f-8c40-90440eebda10",
+      "NodeID": 24,
+      "lValue": {
+        "UID": "5dd1a4b4-c288-4337-8c21-749faab5cc4d",
+        "name": "getBuffShieldPoint",
+        "NodeID": 23
+      }
+    },
+    "6": {
+      "UID": "7688aa4a-cd44-468c-a8cc-fc6a6e6118d7",
+      "name": "addShieldData",
+      "shieldData": {
+        "absorbRate": 1,
+        "isGeneral": true,
+        "isTeamShare": false,
+        "elementType": 0,
+        "shieldPoint": {
+          "rValue": {
+            "calcId": 5000204,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 9,
+            "UID": "23b06934-a9ff-4aa4-b284-c1fd9d84e61a",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "779f6f06-7258-4b9c-9edf-8d9edc5ab5fe",
+          "NodeID": 4,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "f5b93223-31f5-416d-90d0-231a71a3d1c8",
+            "target": "OWNER",
+            "NodeID": 3,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "268ad1ac-766c-45e5-91ad-dd863a2f573d",
+      "name": "getBuffShieldPoint",
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "ddc2cf91-8560-47e9-8182-ab215bf1741c",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "bb8b1b9e-533d-40ed-8adb-dad5303c0f5b",
+      "destroyReason": "timeout",
+      "name": "buffDestroyReason",
+      "NodeID": 25
+    },
+    "23": {
+      "UID": "5dd1a4b4-c288-4337-8c21-749faab5cc4d",
+      "name": "getBuffShieldPoint",
+      "NodeID": 23
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "6d968eb8-703e-402c-b04a-df86cc2fad87",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "17": {
+      "buffId": 5000202,
+      "name": "hasBuff",
+      "UID": "f5c0eee9-ace4-4c0d-bcc0-78aec03d4680",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "calcId": 5000204,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "23b06934-a9ff-4aa4-b284-c1fd9d84e61a",
+      "name": "getParamByLuaConfig"
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ef6b9479-4139-4ce2-98a5-aa5d50b3c06b",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Loop",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "cfbcb673-2f3f-42ea-8933-e4f9db26064f",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "409b144b-22c6-4e10-a5c3-86f5a530e99b",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Loop",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "20": {
+      "UID": "c6bcd502-5c53-40a7-b1d0-846d6469f667",
+      "name": "removeBuff",
+      "buffId": 5000204,
+      "NodeID": 20
+    },
+    "12": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "UID": "268ad1ac-766c-45e5-91ad-dd863a2f573d",
+          "name": "getBuffShieldPoint",
+          "NodeID": 10
+        }
+      },
+      "name": "calcResult",
+      "UID": "30f55d31-2392-4b14-8ccc-f59ffd101c35",
+      "target": "TARGET",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    15,
+    19
+  ],
+  "onBuffStartIds": [
+    18,
+    6,
+    22
+  ]
+}

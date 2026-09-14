@@ -1,0 +1,82 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9117304",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    9
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0.1,
+      "interval": 1,
+      "UID": "3017f01e-c790-4698-82d0-8e0f83dd8a36",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "9": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "b52eef17-63a8-4f61-89f7-7e3c997683c8",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "6": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "9f8cfd4f-bcde-40c6-a9d2-2659595db814",
+      "NodeID": 6,
+      "lValue": {
+        "voxelTag": "waterPool",
+        "radius": 0.8,
+        "UID": "7e2417ea-62b3-458f-ba2f-920c8f8136f2",
+        "NodeID": 5,
+        "name": "getVoxelNum"
+      }
+    },
+    "19": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "d5aaffd5-3031-4293-b880-99cabe19dab4",
+      "NodeID": 19,
+      "lValue": {
+        "key": "waterPool",
+        "name": "getCacheVal",
+        "UID": "63e8a02a-20cb-484e-93ca-1d8a4b548465",
+        "target": "OWNER",
+        "NodeID": 18
+      }
+    },
+    "7": {
+      "UID": "3ee83dfa-33b3-4aab-95d5-f812c8befb8a",
+      "conditionIds": [
+        6,
+        19
+      ],
+      "name": "conditionOr",
+      "NodeID": 7
+    },
+    "16": {
+      "target": "OWNER",
+      "duration": 15,
+      "buffId": 91173041,
+      "NodeID": 16,
+      "UID": "d1a0db63-ce1e-49d5-be62-079680636c80",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

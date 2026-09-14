@@ -1,0 +1,14 @@
+{
+  "3": {
+    "EventName": "vox_playerr_skill_common_recharge"
+  },
+  "0": {
+    "EventName": "vox_player_skill_common_attack"
+  },
+  "1": {
+    "EventName": "vox_playerr_skill_common_defense"
+  },
+  "2": {
+    "EventName": "vox_playerr_skill_common_heal"
+  }
+}

@@ -1,0 +1,253 @@
+[
+  {
+    "3": {
+      "chatChannelName": "한국어",
+      "language": "ko_KR",
+      "mainLanguageId": 0
+    },
+    "4": {
+      "chatChannelName": "にほんご",
+      "language": "ja_JP",
+      "mainLanguageId": 0
+    },
+    "6": {
+      "chatChannelName": "Русский",
+      "language": "ru_RU",
+      "mainLanguageId": 0
+    },
+    "10": {
+      "chatChannelName": "Português",
+      "language": "pt_PT",
+      "mainLanguageId": 0
+    },
+    "7": {
+      "chatChannelName": "Deutsch",
+      "language": "de_DE",
+      "mainLanguageId": 0
+    },
+    "8": {
+      "chatChannelName": "Français",
+      "language": "fr_FR",
+      "mainLanguageId": 0
+    },
+    "12": {
+      "chatChannelName": "ไทย",
+      "language": "th_TH",
+      "mainLanguageId": 0
+    },
+    "9": {
+      "chatChannelName": "Español",
+      "language": "es_ES",
+      "mainLanguageId": 0
+    },
+    "11": {
+      "chatChannelName": "Indonesia",
+      "language": "id_ID",
+      "mainLanguageId": 0
+    },
+    "5": {
+      "chatChannelName": "Tiếng Việt",
+      "language": "vi_VN",
+      "mainLanguageId": 0
+    },
+    "0": {
+      "chatChannelName": "中文",
+      "language": "zh_CN"
+    },
+    "1": {
+      "chatChannelName": "中文",
+      "language": "zh_TW",
+      "mainLanguageId": 0
+    },
+    "2": {
+      "chatChannelName": "English",
+      "language": "en",
+      "mainLanguageId": 0
+    }
+  },
+  {
+    "3": {
+      "chatChannelName": "한국어",
+      "language": "ko_KR",
+      "mainLanguageId": 2
+    },
+    "4": {
+      "chatChannelName": "にほんご",
+      "language": "ja_JP",
+      "mainLanguageId": 2
+    },
+    "6": {
+      "chatChannelName": "Русский",
+      "language": "ru_RU"
+    },
+    "10": {
+      "chatChannelName": "Português",
+      "language": "pt_PT"
+    },
+    "7": {
+      "chatChannelName": "Deutsch",
+      "language": "de_DE"
+    },
+    "8": {
+      "chatChannelName": "Français",
+      "language": "fr_FR"
+    },
+    "12": {
+      "chatChannelName": "ไทย",
+      "language": "th_TH",
+      "mainLanguageId": 2
+    },
+    "9": {
+      "chatChannelName": "Español",
+      "language": "es_ES"
+    },
+    "11": {
+      "chatChannelName": "Indonesia",
+      "language": "id_ID",
+      "mainLanguageId": 2
+    },
+    "5": {
+      "chatChannelName": "Tiếng Việt",
+      "language": "vi_VN",
+      "mainLanguageId": 2
+    },
+    "0": {
+      "chatChannelName": "中文",
+      "language": "zh_CN",
+      "mainLanguageId": 2
+    },
+    "1": {
+      "chatChannelName": "中文",
+      "language": "zh_TW",
+      "mainLanguageId": 2
+    },
+    "2": {
+      "chatChannelName": "English",
+      "language": "en"
+    }
+  },
+  {
+    "3": {
+      "chatChannelName": "한국어",
+      "language": "ko_KR",
+      "mainLanguageId": 2
+    },
+    "4": {
+      "chatChannelName": "にほんご",
+      "language": "ja_JP",
+      "mainLanguageId": 2
+    },
+    "6": {
+      "chatChannelName": "Русский",
+      "language": "ru_RU",
+      "mainLanguageId": 2
+    },
+    "10": {
+      "chatChannelName": "Português",
+      "language": "pt_PT"
+    },
+    "7": {
+      "chatChannelName": "Deutsch",
+      "language": "de_DE",
+      "mainLanguageId": 2
+    },
+    "8": {
+      "chatChannelName": "Français",
+      "language": "fr_FR",
+      "mainLanguageId": 2
+    },
+    "12": {
+      "chatChannelName": "ไทย",
+      "language": "th_TH",
+      "mainLanguageId": 2
+    },
+    "9": {
+      "chatChannelName": "Español",
+      "language": "es_ES"
+    },
+    "11": {
+      "chatChannelName": "Indonesia",
+      "language": "id_ID",
+      "mainLanguageId": 2
+    },
+    "5": {
+      "chatChannelName": "Tiếng Việt",
+      "language": "vi_VN",
+      "mainLanguageId": 2
+    },
+    "0": {
+      "chatChannelName": "中文",
+      "language": "zh_CN",
+      "mainLanguageId": 2
+    },
+    "1": {
+      "chatChannelName": "中文",
+      "language": "zh_TW",
+      "mainLanguageId": 2
+    },
+    "2": {
+      "chatChannelName": "English",
+      "language": "en"
+    }
+  },
+  {
+    "3": {
+      "chatChannelName": "한국어",
+      "language": "ko_KR"
+    },
+    "4": {
+      "chatChannelName": "にほんご",
+      "language": "ja_JP"
+    },
+    "6": {
+      "chatChannelName": "Русский",
+      "language": "ru_RU",
+      "mainLanguageId": 2
+    },
+    "10": {
+      "chatChannelName": "Português",
+      "language": "pt_PT",
+      "mainLanguageId": 2
+    },
+    "7": {
+      "chatChannelName": "Deutsch",
+      "language": "de_DE",
+      "mainLanguageId": 2
+    },
+    "8": {
+      "chatChannelName": "Français",
+      "language": "fr_FR",
+      "mainLanguageId": 2
+    },
+    "12": {
+      "chatChannelName": "ไทย",
+      "language": "th_TH"
+    },
+    "9": {
+      "chatChannelName": "Español",
+      "language": "es_ES",
+      "mainLanguageId": 2
+    },
+    "11": {
+      "chatChannelName": "Indonesia",
+      "language": "id_ID"
+    },
+    "5": {
+      "chatChannelName": "Tiếng Việt",
+      "language": "vi_VN"
+    },
+    "0": {
+      "chatChannelName": "简体中文",
+      "language": "zh_CN",
+      "mainLanguageId": 2
+    },
+    "1": {
+      "chatChannelName": "繁體中文",
+      "language": "zh_TW"
+    },
+    "2": {
+      "chatChannelName": "English",
+      "language": "en"
+    }
+  }
+]

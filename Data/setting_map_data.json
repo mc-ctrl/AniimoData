@@ -1,0 +1,204 @@
+{
+  "setVideoQuality": [
+    {
+      "tab": 1,
+      "condition": "setVideoQuality",
+      "relationTable": [
+        [
+          "puppetCountLimit",
+          {
+            "IOS": 8,
+            "Windows": 30,
+            "PS5": 30,
+            "XBOX": 30,
+            "Android": 8
+          }
+        ],
+        [
+          "petCountLimit",
+          {
+            "IOS": 4,
+            "Windows": 15,
+            "PS5": 15,
+            "XBOX": 15,
+            "Android": 4
+          }
+        ],
+        [
+          "playerCountLimit",
+          {
+            "IOS": 4,
+            "Windows": 15,
+            "PS5": 15,
+            "XBOX": 15,
+            "Android": 4
+          }
+        ],
+        [
+          "envObjCountLimit",
+          {
+            "IOS": 25,
+            "Windows": 50,
+            "PS5": 50,
+            "XBOX": 50,
+            "Android": 25
+          }
+        ],
+        [
+          "giState",
+          0
+        ]
+      ]
+    },
+    {
+      "tab": 2,
+      "condition": "setVideoQuality",
+      "relationTable": [
+        [
+          "puppetCountLimit",
+          {
+            "IOS": 8,
+            "Windows": 40,
+            "PS5": 40,
+            "XBOX": 40,
+            "Android": 8
+          }
+        ],
+        [
+          "petCountLimit",
+          {
+            "IOS": 4,
+            "Windows": 20,
+            "PS5": 20,
+            "XBOX": 20,
+            "Android": 4
+          }
+        ],
+        [
+          "playerCountLimit",
+          {
+            "IOS": 4,
+            "Windows": 20,
+            "PS5": 20,
+            "XBOX": 20,
+            "Android": 4
+          }
+        ],
+        [
+          "envObjCountLimit",
+          {
+            "IOS": 50,
+            "Windows": 100,
+            "PS5": 100,
+            "XBOX": 100,
+            "Android": 50
+          }
+        ],
+        [
+          "giState",
+          1
+        ]
+      ]
+    },
+    {
+      "tab": 3,
+      "condition": "setVideoQuality",
+      "relationTable": [
+        [
+          "puppetCountLimit",
+          {
+            "IOS": 15,
+            "Windows": 50,
+            "PS5": 50,
+            "XBOX": 50,
+            "Android": 15
+          }
+        ],
+        [
+          "petCountLimit",
+          {
+            "IOS": 6,
+            "Windows": 25,
+            "PS5": 25,
+            "XBOX": 25,
+            "Android": 6
+          }
+        ],
+        [
+          "playerCountLimit",
+          {
+            "IOS": 6,
+            "Windows": 25,
+            "PS5": 25,
+            "XBOX": 25,
+            "Android": 6
+          }
+        ],
+        [
+          "envObjCountLimit",
+          {
+            "IOS": 75,
+            "Windows": 150,
+            "PS5": 150,
+            "XBOX": 150,
+            "Android": 75
+          }
+        ],
+        [
+          "giState",
+          1
+        ]
+      ]
+    },
+    {
+      "tab": 4,
+      "condition": "setVideoQuality",
+      "relationTable": [
+        [
+          "puppetCountLimit",
+          {
+            "IOS": 22,
+            "Windows": 100,
+            "PS5": 60,
+            "XBOX": 60,
+            "Android": 22
+          }
+        ],
+        [
+          "petCountLimit",
+          {
+            "IOS": 8,
+            "Windows": 30,
+            "PS5": 30,
+            "XBOX": 30,
+            "Android": 8
+          }
+        ],
+        [
+          "playerCountLimit",
+          {
+            "IOS": 8,
+            "Windows": 30,
+            "PS5": 30,
+            "XBOX": 30,
+            "Android": 8
+          }
+        ],
+        [
+          "envObjCountLimit",
+          {
+            "IOS": 100,
+            "Windows": 200,
+            "PS5": 200,
+            "XBOX": 200,
+            "Android": 100
+          }
+        ],
+        [
+          "giState",
+          1
+        ]
+      ]
+    }
+  ]
+}

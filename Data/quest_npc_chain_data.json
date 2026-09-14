@@ -1,0 +1,77 @@
+{
+  "503": {
+    "clueFeedback": 26060145,
+    "clueName": 2018801363,
+    "cluePreID": [
+      501,
+      502
+    ]
+  },
+  "501": {
+    "clueFeedback": 26060135,
+    "clueName": 1299869420
+  },
+  "302": {
+    "clueFeedback": 651803,
+    "clueName": 1296813370
+  },
+  "303": {
+    "cluePreID": [
+      301,
+      302
+    ],
+    "clueName": 1746852221
+  },
+  "201": {
+    "clueFeedback": 651702,
+    "clueName": 1493529203
+  },
+  "202": {
+    "clueFeedback": 651703,
+    "clueName": 1941081940
+  },
+  "301": {
+    "clueFeedback": 651802,
+    "clueName": 1869840277
+  },
+  "401": {
+    "clueFeedback": 5608406,
+    "clueName": 1180516724
+  },
+  "504": {
+    "clueFeedback": 260601670,
+    "clueName": 1174985584,
+    "clueType": 1,
+    "cluePrecondition": [
+      2607001
+    ]
+  },
+  "402": {
+    "clueFeedback": 5608407,
+    "clueName": 1867971692
+  },
+  "502": {
+    "clueFeedback": 26060137,
+    "clueName": 1170021545
+  },
+  "203": {
+    "clueFeedback": 651704,
+    "clueName": 1922258970,
+    "cluePreID": [
+      201,
+      202
+    ]
+  },
+  "404": {
+    "cluePreID": [
+      401,
+      402,
+      403
+    ],
+    "clueName": 1179254925
+  },
+  "403": {
+    "clueFeedback": 5608409,
+    "clueName": 1739525549
+  }
+}

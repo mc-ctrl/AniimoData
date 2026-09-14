@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_11631500",
+  "NodeID": 1,
+  "UID": "0d60a06c-3db4-4b70-8523-eec15727b526",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11631500001,
+      "name": "setCombatActionTimeline",
+      "UID": "a88dfbe4-bb3e-4000-a0d1-d5bc5d13fc87",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_RotateSlash_Start",
+    "Skill_RotateSlash_Loop",
+    "Skill_RotateSlash_End"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Slash",
+    "Eff_Parmon_10163_Skill_IceStorm",
+    "Eff_Parmon_10163_Skill_RotateSlash_02",
+    "Eff_Parmon_10161_Skill_MagicLeaf_Ice_H_Boss"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10200220
+}

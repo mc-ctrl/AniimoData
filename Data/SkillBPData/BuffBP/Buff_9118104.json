@@ -1,0 +1,85 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9118104",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91181042,
+      "NodeID": 8,
+      "UID": "f8580a43-dd78-4091-ae32-b3f77f7a642f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "UID": "6bbe4152-a2cc-4215-8297-77418af2762b",
+      "name": "removeTimer",
+      "key": "LeaveCombat",
+      "NodeID": 17
+    },
+    "18": {
+      "buffId": 91181041,
+      "name": "removeBuff",
+      "UID": "337c4206-5b4a-4fab-b62f-b4b5dada0d88",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "14": {
+      "key": "LeaveCombat",
+      "duration": 3,
+      "actionIds": [
+        12,
+        16
+      ],
+      "NodeID": 14,
+      "UID": "c818f70c-85c5-426e-8340-fd5aad29630c",
+      "name": "addTimer"
+    },
+    "10": {
+      "UID": "4bd6ed6b-4135-41c3-88f5-bd4eaf1a1887",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        8,
+        18,
+        17
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "19fc7d26-573e-4d76-a157-68568179a60a",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "16": {
+      "buffId": 91181042,
+      "name": "removeBuff",
+      "UID": "b9be7c1a-988d-41e9-ab29-172bda9b3bf1",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "12": {
+      "buffId": 91181041,
+      "name": "removeBuff",
+      "UID": "c87bd13d-0922-4d54-b222-76e1efbad8cb",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10,
+    15
+  ]
+}

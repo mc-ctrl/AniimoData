@@ -1,0 +1,12 @@
+{
+  "stackRule": 0,
+  "dynamicRPCStates": {},
+  "calcInfo": {
+    "heal_add_ratio": 0.1
+  },
+  "NodeID": 1,
+  "UID": "a29df3cb-4153-43a0-ae81-1db6138f460c",
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_270010015"
+}

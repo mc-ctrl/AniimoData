@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_14330304",
+  "NodeID": 1,
+  "UID": "864782d4-abe2-4854-a9bb-b78bd0154bd3",
+  "abilityParamId": 14300000,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14330304001,
+      "name": "setCombatActionTimeline",
+      "UID": "f494949f-7d8f-4436-824c-ea834ce86ce1",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "58": {
+      "name": "stopEffectStr",
+      "UID": "fe5d5eb7-b90f-4599-baa3-7063a138e2f4",
+      "effectId": "Eff_Parmon_10041_Attack01_Prepare",
+      "target": "OWNER",
+      "NodeID": 58
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10433_Attack_03_Bullet",
+    "Eff_Hit_Rock_Blunt"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 3,
+  "onAbilityEndIds": [
+    58
+  ],
+  "onlyHasActOnTargets": true,
+  "refBones": [
+    "Root"
+  ]
+}

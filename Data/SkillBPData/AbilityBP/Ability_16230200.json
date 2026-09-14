@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_16230200",
+  "NodeID": 1,
+  "UID": "67fcaffd-ea61-4085-8e42-c89fb077516a",
+  "abilityParamId": 10301200,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 16230200001,
+      "name": "setCombatActionTimeline",
+      "UID": "771250d3-08b2-4642-896f-9c97571d5ee1",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_TurnTable_Start",
+    "Skill_TurnTable_Loop",
+    "Skill_TurnTable_End"
+  ],
+  "preloadEffs": [
+    "ParadoxNotion.Serialization.LUASerializer+constStringActionNodeInfo",
+    "Eff_Parmon_10623_Skill_TurnTable_01",
+    "Eff_Parmon_10623_Skill_TurnTable_Bubble_3_RecoverEp"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2
+}

@@ -1,0 +1,3600 @@
+{
+  "1012": [
+    {
+      "text": 2066516698,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        58449920
+      ]
+    },
+    {
+      "text": 1921411836,
+      "duration": 2,
+      "time": 2.5,
+      "anim": [
+        "Perform_Talk",
+        0
+      ],
+      "staticIds": [
+        58448781
+      ]
+    }
+  ],
+  "4014": [
+    {
+      "text": 2103308339,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        89437541
+      ]
+    },
+    {
+      "text": 1182686105,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        89437591
+      ]
+    },
+    {
+      "text": 1675661470,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        89437591
+      ]
+    }
+  ],
+  "1013": [
+    {
+      "text": 2126134469,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        64692132
+      ]
+    },
+    {
+      "text": 1938235621,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        64692132
+      ]
+    },
+    {
+      "text": 2070965801,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        64692182
+      ]
+    },
+    {
+      "text": 1657181703,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        64692182
+      ]
+    },
+    {
+      "text": 1140940307,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        64692182
+      ]
+    }
+  ],
+  "4016": [
+    {
+      "text": 1654119981,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        90875880
+      ]
+    },
+    {
+      "text": 1523004521,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        90875877
+      ]
+    },
+    {
+      "text": 1577671718,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        90875880
+      ]
+    },
+    {
+      "text": 2049641663,
+      "duration": 4,
+      "time": 12.1,
+      "staticIds": [
+        90875877
+      ]
+    }
+  ],
+  "1014": [
+    {
+      "text": 1380386749,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        64692641
+      ]
+    },
+    {
+      "text": 1611149689,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        64692643
+      ]
+    }
+  ],
+  "370701": [
+    {
+      "text": 1783879857,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        76877288
+      ]
+    },
+    {
+      "text": 1580138731,
+      "duration": 3,
+      "time": 1,
+      "staticIds": [
+        76877939
+      ]
+    }
+  ],
+  "1015": [
+    {
+      "text": 1683991610,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        65380672
+      ]
+    },
+    {
+      "text": 1476898607,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        65380672
+      ]
+    },
+    {
+      "text": 1808612688,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        65380705
+      ]
+    },
+    {
+      "text": 1846672830,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        65380705
+      ]
+    },
+    {
+      "text": 1727246578,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        65380672
+      ]
+    }
+  ],
+  "370703": [
+    {
+      "text": 1726510888,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        76877284
+      ]
+    },
+    {
+      "text": 1714949993,
+      "duration": 3,
+      "time": 1,
+      "staticIds": [
+        76877349
+      ]
+    }
+  ],
+  "1016": [
+    {
+      "text": 2047971270,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        66429716
+      ]
+    },
+    {
+      "text": 1759264232,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        66429707
+      ]
+    },
+    {
+      "text": 1280939591,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        66429716
+      ]
+    },
+    {
+      "text": 2097722211,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        66429707
+      ]
+    }
+  ],
+  "370705": [
+    {
+      "text": 1345649296,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        91046391
+      ]
+    },
+    {
+      "text": 1806084744,
+      "duration": 4,
+      "time": 3,
+      "staticIds": [
+        91046394
+      ]
+    }
+  ],
+  "2001": [
+    {
+      "text": 1168086563,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        51876312
+      ]
+    },
+    {
+      "text": 1558341950,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        52166291
+      ]
+    },
+    {
+      "text": 1621951837,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        52166291
+      ]
+    },
+    {
+      "text": 1550664236,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        52166291
+      ]
+    },
+    {
+      "text": 1286594198,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        51876312
+      ]
+    },
+    {
+      "text": 1320519640,
+      "duration": 2,
+      "time": 12.5,
+      "staticIds": [
+        52166291
+      ]
+    },
+    {
+      "text": 1339747268,
+      "duration": 2,
+      "time": 15,
+      "staticIds": [
+        52166291
+      ]
+    },
+    {
+      "text": 1492801583,
+      "duration": 2,
+      "time": 17.5,
+      "staticIds": [
+        51876312
+      ]
+    },
+    {
+      "text": 1460323335,
+      "duration": 2,
+      "time": 20,
+      "staticIds": [
+        52166291
+      ]
+    }
+  ],
+  "370707": [
+    {
+      "text": 1244045870,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        91297325
+      ]
+    },
+    {
+      "text": 1890092684,
+      "duration": 3,
+      "time": 3.2,
+      "staticIds": [
+        91297325
+      ]
+    }
+  ],
+  "370708": [
+    {
+      "text": 1280399064,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        91297296
+      ]
+    },
+    {
+      "text": 1218975685,
+      "duration": 3,
+      "time": 3.2,
+      "staticIds": [
+        91297296
+      ]
+    }
+  ],
+  "370800": [
+    {
+      "text": 1771787178,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        79805196
+      ]
+    },
+    {
+      "text": 1152454571,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        79805209
+      ]
+    },
+    {
+      "text": 1623184237,
+      "duration": 3,
+      "time": 7,
+      "staticIds": [
+        79805203
+      ]
+    }
+  ],
+  "2002": [
+    {
+      "text": 1674101294,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        51879834
+      ]
+    },
+    {
+      "text": 1726747779,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        51879834
+      ]
+    },
+    {
+      "text": 2091389510,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        51879844
+      ]
+    },
+    {
+      "text": 1273989550,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        51879834
+      ]
+    },
+    {
+      "text": 1422928530,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        51879844
+      ]
+    },
+    {
+      "text": 2096453669,
+      "duration": 2,
+      "time": 12.5,
+      "staticIds": [
+        51879834
+      ]
+    },
+    {
+      "text": 1167119221,
+      "duration": 2,
+      "time": 15,
+      "staticIds": [
+        51879844
+      ]
+    },
+    {
+      "text": 2012323574,
+      "duration": 2,
+      "time": 17.5,
+      "staticIds": [
+        51879834
+      ]
+    },
+    {
+      "text": 1865766594,
+      "duration": 2,
+      "time": 20,
+      "staticIds": [
+        51879844
+      ]
+    },
+    {
+      "text": 1943196370,
+      "duration": 2,
+      "time": 22.5,
+      "staticIds": [
+        51879834
+      ]
+    }
+  ],
+  "370802": [
+    {
+      "text": 1454719959,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        79805196
+      ]
+    },
+    {
+      "text": 1975687396,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        79805209
+      ]
+    },
+    {
+      "text": 1993669779,
+      "duration": 3,
+      "time": 7,
+      "staticIds": [
+        79805203
+      ]
+    },
+    {
+      "text": 2134728248,
+      "duration": 3,
+      "time": 10.5,
+      "staticIds": [
+        79805209
+      ]
+    },
+    {
+      "text": 1645672784,
+      "duration": 3,
+      "time": 14,
+      "staticIds": [
+        79805196
+      ]
+    }
+  ],
+  "370901": [
+    {
+      "text": 2084871065,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        82323997
+      ]
+    },
+    {
+      "text": 2021538325,
+      "duration": 2,
+      "time": 3.5,
+      "staticIds": [
+        82323999
+      ]
+    }
+  ],
+  "371001": [
+    {
+      "text": 1412566779,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        84676200
+      ]
+    },
+    {
+      "text": 1431400727,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        84676202
+      ]
+    }
+  ],
+  "371002": [
+    {
+      "text": 1922258262,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        84676211
+      ]
+    },
+    {
+      "text": 1647714562,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        84676214
+      ]
+    }
+  ],
+  "372001": [
+    {
+      "text": 1089481459,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        84676202
+      ]
+    }
+  ],
+  "372002": {
+    "2": {
+      "text": 1584862404,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        84676211
+      ]
+    }
+  },
+  "2005": [
+    {
+      "text": 1867737956,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        83625988
+      ]
+    },
+    {
+      "text": 1222130187,
+      "duration": 4,
+      "time": 5,
+      "staticIds": [
+        83625988
+      ]
+    },
+    {
+      "text": 1331746788,
+      "duration": 4,
+      "time": 10,
+      "staticIds": [
+        83625988
+      ]
+    }
+  ],
+  "560801": [
+    {
+      "text": 1847801963,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        91065429
+      ]
+    },
+    {
+      "text": 1476671100,
+      "duration": 4,
+      "time": 3.2,
+      "staticIds": [
+        91065429
+      ]
+    }
+  ],
+  "2006": [
+    {
+      "text": 2075431026,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        83625990
+      ]
+    },
+    {
+      "text": 1168240393,
+      "duration": 4,
+      "time": 5,
+      "staticIds": [
+        83625990
+      ]
+    },
+    {
+      "text": 1398874646,
+      "duration": 4,
+      "time": 10,
+      "staticIds": [
+        83625990
+      ]
+    }
+  ],
+  "2007": [
+    {
+      "text": 1374813561,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        83625994
+      ]
+    },
+    {
+      "text": 1462663743,
+      "duration": 4,
+      "time": 5,
+      "staticIds": [
+        83625994
+      ]
+    },
+    {
+      "text": 2060829278,
+      "duration": 4,
+      "time": 10,
+      "staticIds": [
+        83625994
+      ]
+    }
+  ],
+  "2008": [
+    {
+      "text": 1540359678,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        80346252
+      ]
+    },
+    {
+      "text": 2104407108,
+      "duration": 4,
+      "time": 5,
+      "staticIds": [
+        80346252
+      ]
+    },
+    {
+      "text": 1303393216,
+      "duration": 4,
+      "time": 10,
+      "staticIds": [
+        80346252
+      ]
+    }
+  ],
+  "2009": [
+    {
+      "text": 2044478227,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        83533324
+      ]
+    },
+    {
+      "text": 1190642185,
+      "duration": 4,
+      "time": 5,
+      "staticIds": [
+        83533324
+      ]
+    },
+    {
+      "text": 1626674659,
+      "duration": 4,
+      "time": 10,
+      "staticIds": [
+        83533324
+      ]
+    },
+    {
+      "text": 1423065576,
+      "duration": 4,
+      "time": 15,
+      "staticIds": [
+        83533326
+      ]
+    }
+  ],
+  "2010": [
+    {
+      "text": 2066731767,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        83533327
+      ]
+    },
+    {
+      "text": 1654542037,
+      "duration": 4,
+      "time": 5,
+      "staticIds": [
+        83533327
+      ]
+    },
+    {
+      "text": 1431578454,
+      "duration": 4,
+      "time": 10,
+      "staticIds": [
+        83533327
+      ]
+    },
+    {
+      "text": 1565114010,
+      "duration": 4,
+      "time": 15,
+      "staticIds": [
+        83533327
+      ]
+    },
+    {
+      "text": 1975133260,
+      "duration": 4,
+      "time": 20,
+      "staticIds": [
+        83533327
+      ]
+    },
+    {
+      "text": 1779998246,
+      "duration": 4,
+      "time": 25,
+      "staticIds": [
+        83533327
+      ]
+    },
+    {
+      "text": 1239841416,
+      "duration": 4,
+      "time": 30,
+      "staticIds": [
+        83533327
+      ]
+    },
+    {
+      "text": 1238290519,
+      "duration": 4,
+      "time": 35,
+      "staticIds": [
+        83533327
+      ]
+    }
+  ],
+  "5": [
+    {
+      "text": 1947126499,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        73502169
+      ]
+    },
+    {
+      "text": 1542519990,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        73502169
+      ]
+    },
+    {
+      "text": 1246163591,
+      "duration": 3,
+      "time": 7,
+      "staticIds": [
+        73502169
+      ]
+    }
+  ],
+  "372003": {
+    "3": {
+      "text": 2040441635,
+      "duration": 3,
+      "time": 6,
+      "staticIds": [
+        84676214
+      ]
+    }
+  },
+  "6": [
+    {
+      "text": 1474371610,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        73502169
+      ]
+    },
+    {
+      "text": 1275064139,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        73502169
+      ]
+    }
+  ],
+  "370801": [
+    {
+      "text": 1750648747,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        79805203
+      ]
+    },
+    {
+      "text": 1610803073,
+      "duration": 2,
+      "time": 3.5,
+      "staticIds": [
+        79805209
+      ]
+    },
+    {
+      "text": 1244927649,
+      "duration": 3,
+      "time": 6,
+      "staticIds": [
+        79805196
+      ]
+    }
+  ],
+  "370706": [
+    {
+      "text": 1977400035,
+      "duration": 3.5,
+      "time": 0.1,
+      "staticIds": [
+        91046399
+      ]
+    },
+    {
+      "text": 1265235768,
+      "duration": 3,
+      "time": 3.6,
+      "staticIds": [
+        91046401
+      ]
+    }
+  ],
+  "7": [
+    {
+      "text": 1855359435,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        73502169
+      ]
+    }
+  ],
+  "3001": [
+    {
+      "text": 1131491476,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        62989534
+      ]
+    },
+    {
+      "text": 2049650044,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        62989534
+      ]
+    },
+    {
+      "text": 1989181083,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        62989534
+      ]
+    },
+    {
+      "text": 2001079670,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        62989534
+      ]
+    }
+  ],
+  "8": [
+    {
+      "text": 1857969072,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        73502169
+      ]
+    },
+    {
+      "text": 2131900462,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        73502169
+      ]
+    }
+  ],
+  "370704": [
+    {
+      "text": 2042150172,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        91046465
+      ]
+    },
+    {
+      "text": 1240251134,
+      "duration": 4,
+      "time": 3,
+      "staticIds": [
+        91046467
+      ]
+    }
+  ],
+  "370702": [
+    {
+      "text": 1655913417,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72789724
+      ]
+    },
+    {
+      "text": 1292673766,
+      "duration": 3,
+      "time": 2,
+      "staticIds": [
+        72789720
+      ]
+    }
+  ],
+  "4017": [
+    {
+      "text": 1121201665,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        90877384
+      ]
+    },
+    {
+      "text": 2123120026,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        90877386
+      ]
+    },
+    {
+      "text": 1819338785,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        90877386
+      ]
+    },
+    {
+      "text": 1519541730,
+      "duration": 3,
+      "time": 11.1,
+      "staticIds": [
+        90877386
+      ]
+    },
+    {
+      "text": 1397099970,
+      "duration": 4,
+      "time": 15.1,
+      "staticIds": [
+        90877386
+      ]
+    }
+  ],
+  "4015": [
+    {
+      "text": 2110144003,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        89417162
+      ]
+    },
+    {
+      "text": 1419236759,
+      "duration": 5,
+      "time": 5.1,
+      "staticIds": [
+        89417162
+      ]
+    },
+    {
+      "text": 1169826037,
+      "duration": 3,
+      "time": 8.1,
+      "staticIds": [
+        89417162
+      ]
+    },
+    {
+      "text": 1783822521,
+      "duration": 3,
+      "time": 11.1,
+      "staticIds": [
+        89417160
+      ]
+    },
+    {
+      "text": 1723975353,
+      "duration": 3,
+      "time": 14.1,
+      "staticIds": [
+        89417160
+      ]
+    },
+    {
+      "text": 1229519498,
+      "duration": 4,
+      "time": 18.1,
+      "staticIds": [
+        89417162
+      ]
+    }
+  ],
+  "4013": [
+    {
+      "text": 1853779885,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        89437661
+      ]
+    },
+    {
+      "text": 1366598305,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        89437669
+      ]
+    }
+  ],
+  "1035": [
+    {
+      "text": 1147256638,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83716354
+      ]
+    },
+    {
+      "text": 1424976611,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83716354
+      ]
+    },
+    {
+      "text": 1706237186,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        83716356
+      ]
+    },
+    {
+      "text": 1845810161,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        83716356
+      ]
+    },
+    {
+      "text": 1966593809,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        83716358
+      ]
+    },
+    {
+      "text": 1472911057,
+      "duration": 2,
+      "time": 12.5,
+      "staticIds": [
+        83716358
+      ]
+    }
+  ],
+  "3002": [
+    {
+      "text": 1342401850,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        62989534
+      ]
+    },
+    {
+      "text": 2028347960,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        62989534
+      ]
+    },
+    {
+      "text": 1604865621,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        62989534
+      ]
+    }
+  ],
+  "4011": [
+    {
+      "text": 1386247901,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        90875812
+      ]
+    },
+    {
+      "text": 1704056667,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        90875829
+      ]
+    },
+    {
+      "text": 2064902979,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        90875821
+      ]
+    },
+    {
+      "text": 2088870587,
+      "duration": 4,
+      "time": 12.1,
+      "staticIds": [
+        90875812
+      ]
+    },
+    {
+      "text": 2001065525,
+      "duration": 4,
+      "time": 16.1,
+      "staticIds": [
+        90875812
+      ]
+    },
+    {
+      "text": 1508655678,
+      "duration": 4,
+      "time": 20.1,
+      "staticIds": [
+        90875812
+      ]
+    },
+    {
+      "text": 2027476635,
+      "duration": 4,
+      "time": 24.1,
+      "staticIds": [
+        90875821
+      ]
+    },
+    {
+      "text": 1185209870,
+      "duration": 4,
+      "time": 28.1,
+      "staticIds": [
+        90875829
+      ]
+    }
+  ],
+  "1033": [
+    {
+      "text": 1590737526,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83708766
+      ]
+    },
+    {
+      "text": 1291875749,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83708766
+      ]
+    },
+    {
+      "text": 1427532795,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        83708769
+      ]
+    },
+    {
+      "text": 1159799626,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        83708769
+      ]
+    }
+  ],
+  "4009": [
+    {
+      "text": 1717121957,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        89429963
+      ]
+    },
+    {
+      "text": 2026786876,
+      "duration": 3,
+      "time": 3.1,
+      "staticIds": [
+        2
+      ]
+    },
+    {
+      "text": 1193440975,
+      "duration": 4,
+      "time": 7.1,
+      "staticIds": [
+        3
+      ]
+    }
+  ],
+  "1032": [
+    {
+      "text": 1162783158,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625728
+      ]
+    },
+    {
+      "text": 2091249462,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 1239883826,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625730
+      ]
+    }
+  ],
+  "4006": [
+    {
+      "text": 1814337487,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        76506297
+      ]
+    },
+    {
+      "text": 2106739456,
+      "duration": 3,
+      "time": 3.1,
+      "staticIds": [
+        76506243
+      ]
+    },
+    {
+      "text": 1705702346,
+      "duration": 3,
+      "time": 6.1,
+      "staticIds": [
+        76506295
+      ]
+    },
+    {
+      "text": 1323400665,
+      "duration": 3,
+      "time": 9.1,
+      "staticIds": [
+        76506297
+      ]
+    },
+    {
+      "text": 1488708032,
+      "duration": 3,
+      "time": 12.1,
+      "staticIds": [
+        76506243
+      ]
+    },
+    {
+      "text": 1440076284,
+      "duration": 5,
+      "time": 17.1,
+      "staticIds": [
+        76506295
+      ]
+    },
+    {
+      "text": 1473451026,
+      "duration": 5,
+      "time": 22.1,
+      "staticIds": [
+        76506295
+      ]
+    },
+    {
+      "text": 1832581138,
+      "duration": 3,
+      "time": 25.1,
+      "staticIds": [
+        76506297
+      ]
+    }
+  ],
+  "1034": [
+    {
+      "text": 1231567629,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83714985
+      ]
+    },
+    {
+      "text": 1654689880,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83716350
+      ]
+    },
+    {
+      "text": 2121390501,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        83716350
+      ]
+    }
+  ],
+  "4003": [
+    {
+      "text": 1396098315,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        74376363
+      ]
+    },
+    {
+      "text": 2030004889,
+      "duration": 2,
+      "time": 2.1,
+      "staticIds": [
+        74255680
+      ]
+    }
+  ],
+  "4002": [
+    {
+      "text": 1281364631,
+      "duration": 5,
+      "time": 0.1,
+      "staticIds": [
+        74376363
+      ]
+    },
+    {
+      "text": 1627835421,
+      "duration": 2,
+      "time": 2.1,
+      "staticIds": [
+        74255680
+      ]
+    }
+  ],
+  "4001": [
+    {
+      "text": 1227816836,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        74376883
+      ]
+    },
+    {
+      "text": 1816012693,
+      "duration": 5,
+      "time": 5.1,
+      "staticIds": [
+        74376883
+      ]
+    },
+    {
+      "text": 2048263311,
+      "duration": 2,
+      "time": 7.1,
+      "staticIds": [
+        76508121
+      ]
+    },
+    {
+      "text": 1962145837,
+      "duration": 3,
+      "time": 10.1,
+      "staticIds": [
+        74376883
+      ]
+    },
+    {
+      "text": 1662281203,
+      "duration": 3,
+      "time": 13.1,
+      "staticIds": [
+        76508121
+      ]
+    }
+  ],
+  "3003": [
+    {
+      "text": 1432358855,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        62989552
+      ]
+    },
+    {
+      "text": 1561976361,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        62989552
+      ]
+    },
+    {
+      "text": 1498370486,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        62989552
+      ]
+    },
+    {
+      "text": 1903175763,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        62989552
+      ]
+    }
+  ],
+  "3023": [
+    {
+      "text": 1285207868,
+      "duration": 3,
+      "time": 1,
+      "staticIds": [
+        72789724
+      ]
+    }
+  ],
+  "3014": [
+    {
+      "text": 2120959068,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72806022
+      ]
+    },
+    {
+      "text": 1715587381,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        72794571
+      ]
+    },
+    {
+      "text": 1556344568,
+      "duration": 3,
+      "time": 7,
+      "staticIds": [
+        72806022
+      ]
+    },
+    {
+      "text": 1456548770,
+      "duration": 3,
+      "time": 10.5,
+      "staticIds": [
+        72794571
+      ]
+    }
+  ],
+  "3021": [
+    {
+      "text": 1642652367,
+      "duration": 3,
+      "time": 1,
+      "staticIds": [
+        72789724
+      ]
+    }
+  ],
+  "3017": [
+    {
+      "text": 2102232511,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72796251
+      ]
+    },
+    {
+      "text": 2003700955,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        72796251
+      ]
+    }
+  ],
+  "3019": [
+    {
+      "text": 1778252795,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72789722
+      ]
+    },
+    {
+      "text": 1501440746,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        72789718
+      ]
+    },
+    {
+      "text": 1501277769,
+      "duration": 3,
+      "time": 7,
+      "staticIds": [
+        72789722
+      ]
+    }
+  ],
+  "3018": [
+    {
+      "text": 1662795833,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72806028
+      ]
+    },
+    {
+      "text": 1291656295,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        72796316
+      ]
+    }
+  ],
+  "1017": [
+    {
+      "text": 1366979051,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        65380672
+      ]
+    },
+    {
+      "text": 1818318562,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        65380705
+      ]
+    },
+    {
+      "text": 1480662570,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        65380672
+      ]
+    }
+  ],
+  "1018": [
+    {
+      "text": 2123743162,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        72458105
+      ]
+    },
+    {
+      "text": 1600200447,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        72458172
+      ]
+    }
+  ],
+  "1019": [
+    {
+      "text": 1185248142,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        72462499
+      ]
+    },
+    {
+      "text": 1471622244,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        72462501
+      ]
+    },
+    {
+      "text": 1740976786,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        72462496
+      ]
+    }
+  ],
+  "1020": [
+    {
+      "text": 1928048892,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        72766069
+      ]
+    },
+    {
+      "text": 1485192037,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        72766067
+      ]
+    }
+  ],
+  "1021": [
+    {
+      "text": 1458964662,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        72465983
+      ]
+    },
+    {
+      "text": 2107203044,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        72465983
+      ]
+    },
+    {
+      "text": 1080403905,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        72424026
+      ]
+    },
+    {
+      "text": 2128150264,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        72424026
+      ]
+    },
+    {
+      "text": 2074756412,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        72424026
+      ]
+    },
+    {
+      "text": 1601319842,
+      "duration": 2,
+      "time": 12.5,
+      "staticIds": [
+        72424026
+      ]
+    }
+  ],
+  "1022": [
+    {
+      "text": 2059880675,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        73275861
+      ]
+    },
+    {
+      "text": 1525813943,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        73275865
+      ]
+    },
+    {
+      "text": 1323266931,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        73275861
+      ]
+    },
+    {
+      "text": 1075136314,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        73275865
+      ]
+    }
+  ],
+  "1023": [
+    {
+      "text": 1499281644,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        74234984
+      ]
+    },
+    {
+      "text": 1482139284,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        74234984
+      ]
+    },
+    {
+      "text": 1249242628,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        74234984
+      ]
+    },
+    {
+      "text": 1299963757,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        74234989
+      ]
+    },
+    {
+      "text": 1605253032,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        74234989
+      ]
+    }
+  ],
+  "1024": [
+    {
+      "text": 1771019330,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        78519081
+      ]
+    },
+    {
+      "text": 1556456152,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        78519079
+      ]
+    },
+    {
+      "text": 1840268773,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        78519077
+      ]
+    }
+  ],
+  "1025": [
+    {
+      "text": 1113905531,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        78519095
+      ]
+    },
+    {
+      "text": 1468453361,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        78519097
+      ]
+    },
+    {
+      "text": 1600648293,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        78519095
+      ]
+    }
+  ],
+  "1026": {
+    "3": {
+      "text": 1188661914,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82623427
+      ]
+    },
+    "5": {
+      "text": 1413903028,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82623431
+      ]
+    },
+    "1": {
+      "text": 1800321380,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82623427
+      ]
+    },
+    "2": {
+      "text": 1817465946,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82623429
+      ]
+    }
+  },
+  "1027": [
+    {
+      "text": 1617893083,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625622
+      ]
+    },
+    {
+      "text": 1721103986,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625671
+      ]
+    }
+  ],
+  "1028": [
+    {
+      "text": 1136278008,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625688
+      ]
+    },
+    {
+      "text": 1763514748,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625690
+      ]
+    },
+    {
+      "text": 1280633449,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625690
+      ]
+    },
+    {
+      "text": 1229453511,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82625688
+      ]
+    }
+  ],
+  "1029": [
+    {
+      "text": 1865306621,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625706
+      ]
+    },
+    {
+      "text": 1250417866,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625708
+      ]
+    },
+    {
+      "text": 1949062447,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625706
+      ]
+    },
+    {
+      "text": 1562261780,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82625706
+      ]
+    },
+    {
+      "text": 1111572924,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        82625708
+      ]
+    }
+  ],
+  "1030": [
+    {
+      "text": 1397550902,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625715
+      ]
+    },
+    {
+      "text": 1258331636,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625717
+      ]
+    }
+  ],
+  "1031": [
+    {
+      "text": 1742487580,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625719
+      ]
+    },
+    {
+      "text": 2067425962,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625721
+      ]
+    }
+  ],
+  "2": [
+    {
+      "text": 1330321274,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        73502169
+      ]
+    },
+    {
+      "text": 2070644224,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        73502169
+      ]
+    }
+  ],
+  "3": [
+    {
+      "text": 1082496541,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        73502169
+      ]
+    },
+    {
+      "text": 1438299905,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        73502169
+      ]
+    }
+  ],
+  "4": [
+    {
+      "text": 1858293099,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        73502169
+      ]
+    },
+    {
+      "text": 1987862248,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        73502169
+      ]
+    }
+  ],
+  "1002": [
+    {
+      "text": 1196217946,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        39137028
+      ]
+    },
+    {
+      "text": 1990053218,
+      "duration": 2,
+      "time": 2.5,
+      "anim": [
+        "Perform_Talk",
+        0
+      ],
+      "staticIds": [
+        39137053
+      ]
+    }
+  ],
+  "1036": [
+    {
+      "text": 1714288427,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83718841
+      ]
+    },
+    {
+      "text": 1320846737,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83718841
+      ]
+    },
+    {
+      "text": 2046934150,
+      "duration": 2,
+      "time": 5,
+      "anim": [
+        "Show_Pose01_Loop",
+        1
+      ],
+      "staticIds": [
+        83718841
+      ]
+    },
+    {
+      "text": 1363026820,
+      "duration": 2,
+      "time": 7.5,
+      "anim": [
+        "OutBag",
+        0
+      ],
+      "staticIds": [
+        84191174
+      ]
+    },
+    {
+      "text": 1748335741,
+      "duration": 2,
+      "time": 10,
+      "anim": [
+        "Emotion_Excited_Loop",
+        1
+      ],
+      "staticIds": [
+        84191174
+      ]
+    }
+  ],
+  "1037": [
+    {
+      "text": 1097564147,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83720628
+      ]
+    },
+    {
+      "text": 1816581855,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83720628
+      ]
+    },
+    {
+      "text": 1884748666,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        83720628
+      ]
+    },
+    {
+      "text": 1284848816,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        83720628
+      ]
+    },
+    {
+      "text": 1103788648,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        83720628
+      ]
+    },
+    {
+      "text": 1508547759,
+      "duration": 2,
+      "time": 12.5,
+      "staticIds": [
+        83720631
+      ]
+    }
+  ],
+  "1038": [
+    {
+      "text": 1408088863,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83720789
+      ]
+    },
+    {
+      "text": 1720565334,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83720762
+      ]
+    },
+    {
+      "text": 1260000985,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        83720789
+      ]
+    },
+    {
+      "text": 1976831276,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        83720789
+      ]
+    },
+    {
+      "text": 2094174669,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        83720762
+      ]
+    }
+  ],
+  "1039": [
+    {
+      "text": 1897547916,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83724890
+      ]
+    },
+    {
+      "text": 1618675297,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83724890
+      ]
+    },
+    {
+      "text": 1804197365,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        83724892
+      ]
+    },
+    {
+      "text": 1892718318,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        83724892
+      ]
+    }
+  ],
+  "1040": [
+    {
+      "text": 2120000021,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        87041871
+      ]
+    },
+    {
+      "text": 2034290297,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        87041871
+      ]
+    },
+    {
+      "text": 1769143702,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        87042031
+      ]
+    },
+    {
+      "text": 1809023969,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        87042031
+      ]
+    }
+  ],
+  "1041": {
+    "3": {
+      "text": 1605642937,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    "6": {
+      "text": 1882630750,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    "7": {
+      "text": 1402935534,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        82625730
+      ]
+    },
+    "1": {
+      "text": 1431410173,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625730
+      ]
+    },
+    "2": {
+      "text": 1488500449,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625730
+      ]
+    }
+  },
+  "1042": [
+    {
+      "text": 2103998455,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 2022570309,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 1551098382,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 1368197543,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 1389848959,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        82625730
+      ]
+    }
+  ],
+  "1043": [
+    {
+      "text": 1251352036,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        87042898
+      ]
+    },
+    {
+      "text": 1500536126,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        87042898
+      ]
+    },
+    {
+      "text": 1199181793,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        87042869
+      ]
+    },
+    {
+      "text": 1886009558,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        87042869
+      ]
+    }
+  ],
+  "1044": [
+    {
+      "text": 1663377560,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        87043945
+      ]
+    },
+    {
+      "text": 1683803169,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        87043945
+      ]
+    },
+    {
+      "text": 1963657604,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        87044026
+      ]
+    },
+    {
+      "text": 1307377372,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        87043945
+      ]
+    },
+    {
+      "text": 2056181807,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        87043945
+      ]
+    }
+  ],
+  "1045": [
+    {
+      "text": 2050115603,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 1380193029,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 2073166886,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 2079496235,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82625730
+      ]
+    },
+    {
+      "text": 1562494892,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        82625730
+      ]
+    }
+  ],
+  "1046": [
+    {
+      "text": 1877687962,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        83718846
+      ]
+    },
+    {
+      "text": 1403953046,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        83718846
+      ]
+    },
+    {
+      "text": 1699548982,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        83718849
+      ]
+    }
+  ],
+  "1047": [
+    {
+      "text": 1119694571,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        65380672
+      ]
+    },
+    {
+      "text": 1571025995,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        65380672
+      ]
+    },
+    {
+      "text": 1800573774,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        65380672
+      ]
+    },
+    {
+      "text": 1426833198,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        65380705
+      ]
+    },
+    {
+      "text": 1406439527,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        65380705
+      ]
+    }
+  ],
+  "1048": [
+    {
+      "text": 1929425876,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        55870306
+      ]
+    },
+    {
+      "text": 1611310821,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        55870216
+      ]
+    },
+    {
+      "text": 1712473098,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        55870306
+      ]
+    },
+    {
+      "text": 2036481597,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        55870216
+      ]
+    },
+    {
+      "text": 1214377434,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        55870306
+      ]
+    },
+    {
+      "text": 1923740474,
+      "duration": 2,
+      "time": 12.5,
+      "staticIds": [
+        55870216
+      ]
+    },
+    {
+      "text": 1217563704,
+      "duration": 2,
+      "time": 15,
+      "staticIds": [
+        55870306
+      ]
+    },
+    {
+      "text": 1816654082,
+      "duration": 2,
+      "time": 17.5,
+      "staticIds": [
+        55870306
+      ]
+    }
+  ],
+  "1049": [
+    {
+      "text": 1083079906,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        84363958
+      ]
+    },
+    {
+      "text": 2050488641,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        84363772
+      ]
+    },
+    {
+      "text": 1808462745,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        84363772
+      ]
+    },
+    {
+      "text": 1678546030,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        84363958
+      ]
+    }
+  ],
+  "1050": [
+    {
+      "text": 1217744641,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625692
+      ]
+    },
+    {
+      "text": 1751559979,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625696
+      ]
+    },
+    {
+      "text": 1272273951,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625692
+      ]
+    },
+    {
+      "text": 1270722121,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82625696
+      ]
+    },
+    {
+      "text": 1773457018,
+      "duration": 2,
+      "time": 10,
+      "staticIds": [
+        82625692
+      ]
+    },
+    {
+      "text": 1944493794,
+      "duration": 2,
+      "time": 12.5,
+      "staticIds": [
+        82625696
+      ]
+    },
+    {
+      "text": 1126180333,
+      "duration": 2,
+      "time": 15,
+      "staticIds": [
+        82625692
+      ]
+    }
+  ],
+  "1051": [
+    {
+      "text": 1645171084,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        82625694
+      ]
+    },
+    {
+      "text": 1587001613,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        82625702
+      ]
+    },
+    {
+      "text": 1703616914,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        82625694
+      ]
+    },
+    {
+      "text": 2031733533,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        82625702
+      ]
+    }
+  ],
+  "3004": [
+    {
+      "text": 1083147667,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        62989552
+      ]
+    },
+    {
+      "text": 1422533541,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        62989552
+      ]
+    },
+    {
+      "text": 1141612730,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        62989552
+      ]
+    }
+  ],
+  "3005": [
+    {
+      "text": 1812155080,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        62989579
+      ]
+    },
+    {
+      "text": 1997888180,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        62989579
+      ]
+    },
+    {
+      "text": 1961871017,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        62989579
+      ]
+    },
+    {
+      "text": 1197687167,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        62989579
+      ]
+    }
+  ],
+  "3006": [
+    {
+      "text": 2076208760,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        62989579
+      ]
+    },
+    {
+      "text": 1855355207,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        62989579
+      ]
+    },
+    {
+      "text": 1391433025,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        62989579
+      ]
+    }
+  ],
+  "3007": [
+    {
+      "text": 1537769873,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72308253
+      ]
+    },
+    {
+      "text": 1870001190,
+      "duration": 4,
+      "time": 3.1,
+      "staticIds": [
+        72137522
+      ]
+    }
+  ],
+  "3008": [
+    {
+      "text": 1685375895,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72137403
+      ]
+    },
+    {
+      "text": 1547376908,
+      "duration": 3,
+      "time": 3.1,
+      "staticIds": [
+        72308207
+      ]
+    }
+  ],
+  "3009": [
+    {
+      "text": 1107897930,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        62989534
+      ]
+    }
+  ],
+  "3010": [
+    {
+      "text": 1829378560,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        62989534
+      ]
+    }
+  ],
+  "3011": [
+    {
+      "text": 1443781629,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        62989534
+      ]
+    }
+  ],
+  "3012": [
+    {
+      "text": 1758563082,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        62989534
+      ]
+    }
+  ],
+  "3013": [
+    {
+      "text": 1635383539,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        62989534
+      ]
+    }
+  ],
+  "1001": [
+    {
+      "text": 1502056881,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        39628426
+      ]
+    },
+    {
+      "text": 2105446498,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        39628426
+      ]
+    },
+    {
+      "text": 1949654351,
+      "duration": 2,
+      "time": 5,
+      "anim": [
+        "Perform_Talk",
+        0
+      ],
+      "staticIds": [
+        39628439
+      ]
+    },
+    {
+      "text": 1309877807,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        39628439
+      ]
+    }
+  ],
+  "3015": [
+    {
+      "text": 2050882422,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72794639
+      ]
+    },
+    {
+      "text": 1497509633,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        72794639
+      ]
+    },
+    {
+      "text": 1906998394,
+      "duration": 3,
+      "time": 7,
+      "staticIds": [
+        72794639
+      ]
+    }
+  ],
+  "3016": [
+    {
+      "text": 2128000763,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72806026
+      ]
+    },
+    {
+      "text": 1127434649,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        72806026
+      ]
+    }
+  ],
+  "1003": [
+    {
+      "text": 1697155400,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        39628808
+      ]
+    },
+    {
+      "text": 1915178345,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        39628808
+      ]
+    },
+    {
+      "text": 1422293007,
+      "duration": 2,
+      "time": 5,
+      "anim": [
+        "Perform_Talk",
+        0
+      ],
+      "staticIds": [
+        39113088
+      ]
+    },
+    {
+      "text": 1800730618,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        39113088
+      ]
+    }
+  ],
+  "1004": [
+    {
+      "text": 1667343926,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        42139313
+      ]
+    },
+    {
+      "text": 1188823329,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        39440269
+      ]
+    },
+    {
+      "text": 1816516414,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        39440269
+      ]
+    }
+  ],
+  "1005": [
+    {
+      "text": 1143302658,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        39628767
+      ]
+    },
+    {
+      "text": 1567227316,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        39628767
+      ]
+    },
+    {
+      "text": 1553098522,
+      "duration": 2,
+      "time": 5,
+      "anim": [
+        "Perform_Talk",
+        0
+      ],
+      "staticIds": [
+        39628776
+      ]
+    },
+    {
+      "text": 1975540638,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        39628776
+      ]
+    }
+  ],
+  "3020": [
+    {
+      "text": 1806984106,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        72789724
+      ]
+    },
+    {
+      "text": 1655205764,
+      "duration": 3,
+      "time": 3.5,
+      "staticIds": [
+        72789720
+      ]
+    },
+    {
+      "text": 1548099018,
+      "duration": 3,
+      "time": 7,
+      "staticIds": [
+        72789724
+      ]
+    }
+  ],
+  "1006": [
+    {
+      "text": 1082414179,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        38506866
+      ]
+    },
+    {
+      "text": 1582928061,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        38506841
+      ]
+    }
+  ],
+  "3022": [
+    {
+      "text": 1237189612,
+      "duration": 3,
+      "time": 1,
+      "staticIds": [
+        72789724
+      ]
+    }
+  ],
+  "1007": [
+    {
+      "text": 1681258861,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        39644011
+      ]
+    },
+    {
+      "text": 2112047502,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        39644011
+      ]
+    },
+    {
+      "text": 1090013806,
+      "duration": 2,
+      "time": 5,
+      "anim": [
+        "Perform_Talk",
+        0
+      ],
+      "staticIds": [
+        39644006
+      ]
+    },
+    {
+      "text": 1603647596,
+      "duration": 2,
+      "time": 7.5,
+      "staticIds": [
+        39644006
+      ]
+    }
+  ],
+  "4000": [
+    {
+      "text": 1949262503,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        76630357
+      ]
+    },
+    {
+      "text": 1462008022,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        76630357
+      ]
+    },
+    {
+      "text": 1564448178,
+      "duration": 3,
+      "time": 6.1,
+      "staticIds": [
+        76629744
+      ]
+    },
+    {
+      "text": 1761706743,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        76630357
+      ]
+    },
+    {
+      "text": 1094430119,
+      "duration": 4,
+      "time": 14.1,
+      "staticIds": [
+        76630357
+      ]
+    },
+    {
+      "text": 2011082382,
+      "duration": 2,
+      "time": 16.1,
+      "staticIds": [
+        76629744
+      ]
+    },
+    {
+      "text": 1512392464,
+      "duration": 4,
+      "time": 20.1,
+      "staticIds": [
+        76630357
+      ]
+    },
+    {
+      "text": 1766405054,
+      "duration": 3,
+      "time": 23.1,
+      "staticIds": [
+        76629744
+      ]
+    }
+  ],
+  "1008": [
+    {
+      "text": 1077826025,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        39628556
+      ]
+    },
+    {
+      "text": 1542027215,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        39628561
+      ]
+    }
+  ],
+  "4004": [
+    {
+      "text": 1182028117,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        74376363
+      ]
+    },
+    {
+      "text": 1756529029,
+      "duration": 2,
+      "time": 2.1,
+      "staticIds": [
+        74255680
+      ]
+    }
+  ],
+  "1009": [
+    {
+      "text": 1111795723,
+      "duration": 2,
+      "time": 0.1,
+      "anim": [
+        "Perform_Talk",
+        0
+      ],
+      "staticIds": [
+        42382187
+      ]
+    },
+    {
+      "text": 1276396757,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        42382189
+      ]
+    }
+  ],
+  "4008": [
+    {
+      "text": 1308740878,
+      "duration": 3,
+      "time": 0.1,
+      "staticIds": [
+        76705145
+      ]
+    },
+    {
+      "text": 1707315838,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        76705149
+      ]
+    },
+    {
+      "text": 2097029909,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        76705145
+      ]
+    },
+    {
+      "text": 1858662131,
+      "duration": 4,
+      "time": 12.1,
+      "staticIds": [
+        76705149
+      ]
+    },
+    {
+      "text": 1601413670,
+      "duration": 4,
+      "time": 16.1,
+      "staticIds": [
+        76705145
+      ]
+    },
+    {
+      "text": 1987215651,
+      "duration": 4,
+      "time": 20.1,
+      "staticIds": [
+        76705145
+      ]
+    }
+  ],
+  "1010": [
+    {
+      "text": 1793546625,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        64683130
+      ]
+    },
+    {
+      "text": 1402373177,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        64683135
+      ]
+    }
+  ],
+  "4010": [
+    {
+      "text": 2116410781,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        89445554
+      ]
+    },
+    {
+      "text": 2061237938,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        89445554
+      ]
+    },
+    {
+      "text": 1620558865,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        89445558
+      ]
+    },
+    {
+      "text": 1991817289,
+      "duration": 4,
+      "time": 12.1,
+      "staticIds": [
+        89445558
+      ]
+    }
+  ],
+  "1011": [
+    {
+      "text": 2100876387,
+      "duration": 2,
+      "time": 0.1,
+      "staticIds": [
+        64691805
+      ]
+    },
+    {
+      "text": 2069217311,
+      "duration": 2,
+      "time": 2.5,
+      "staticIds": [
+        64691822
+      ]
+    },
+    {
+      "text": 1503023139,
+      "duration": 2,
+      "time": 5,
+      "staticIds": [
+        64691805
+      ]
+    }
+  ],
+  "4012": [
+    {
+      "text": 1452396433,
+      "duration": 4,
+      "time": 0.1,
+      "staticIds": [
+        89413735
+      ]
+    },
+    {
+      "text": 2104820264,
+      "duration": 4,
+      "time": 4.1,
+      "staticIds": [
+        89413735
+      ]
+    },
+    {
+      "text": 1090565191,
+      "duration": 4,
+      "time": 8.1,
+      "staticIds": [
+        89413731
+      ]
+    },
+    {
+      "text": 1535221212,
+      "duration": 4,
+      "time": 12.1,
+      "staticIds": [
+        89413731
+      ]
+    }
+  ]
+}

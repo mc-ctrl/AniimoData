@@ -1,0 +1,213 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9158301",
+  "name": "光合作用",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    3,
+    9,
+    19
+  ],
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "c19515bc-6d79-41cc-b607-06c057af04ef",
+      "NodeID": 6,
+      "lValue": {
+        "templateId": 91583011,
+        "name": "getBuffLayer",
+        "UID": "cbe998a2-a754-4baa-b8b4-57445f021cb1",
+        "target": "OWNER",
+        "NodeID": 5
+      }
+    },
+    "7": {
+      "UID": "87cd18ef-983a-44ba-b163-f45bfa10e07c",
+      "conditionIds": [
+        6,
+        23
+      ],
+      "name": "conditionOr",
+      "NodeID": 7
+    },
+    "8": {
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "a18924a7-0519-429c-bb8a-4e99964fdd51",
+      "name": "doActionsByConditions",
+      "NodeID": 8,
+      "elseActionIds": [
+        13
+      ]
+    },
+    "9": {
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 1,
+      "spEnergyInitV": 0,
+      "UID": "ca435ba2-0223-4462-93aa-127a8414a68d",
+      "superBoosted": true,
+      "spEnergyMaxV": 10,
+      "name": "registerPassiveEnergyInfo",
+      "NodeID": 9,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 1
+    },
+    "11": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91583011,
+      "NodeID": 11,
+      "UID": "21f98d48-01be-4434-86ea-ee7af511f545",
+      "layer": {
+        "calcId": 9158301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 10,
+        "UID": "0ba68c65-f98b-4ec9-8106-d826b5292510",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "addBuff",
+      "level": 1
+    },
+    "20": {
+      "buffId": 91583013,
+      "name": "removeBuff",
+      "UID": "38ef5275-89f6-4fe0-945c-7e8ca44fddce",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "3": {
+      "delay": 0,
+      "interval": 3,
+      "UID": "df26af48-af2c-40bb-884d-171a2bead4bb",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "13": {
+      "actionIds": [
+        11,
+        15
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "0713b539-71d9-4ca2-86fd-f413aa95c0c9",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "24": {
+      "name": "isInCombat",
+      "UID": "feac5945-ffa1-4b91-a1be-588b98861bf3",
+      "target": "OWNER",
+      "NodeID": 24,
+      "not": false
+    },
+    "10": {
+      "calcId": 9158301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "0ba68c65-f98b-4ec9-8106-d826b5292510",
+      "name": "getParamByLuaConfig"
+    },
+    "15": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "fa6c8600-9d99-497d-bce2-7ccaa982592e",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "eb052a93-4521-4709-8f9a-632802019bb2",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10583_SheepHeal_01",
+      "NodeID": 25
+    },
+    "16": {
+      "buffId": 91583011,
+      "name": "removeBuff",
+      "UID": "64311b04-99c6-4e5b-a61d-29e9d940424e",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "NodeID": 27,
+      "UID": "5f898459-366b-43b9-8953-7bf32757fefa",
+      "applyAbilityIds": [
+        15830100,
+        15830110,
+        15810100
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "18": {
+      "key": "delay",
+      "duration": 3,
+      "actionIds": [
+        16,
+        20,
+        22,
+        25,
+        26,
+        27
+      ],
+      "NodeID": 18,
+      "UID": "a57de13a-d5ec-4e36-bc45-f0a522fb8e12",
+      "name": "addTimer"
+    },
+    "26": {
+      "UID": "2b70497a-f6be-458a-8445-2cc9d7e6e141",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10581_SheepHeal_01",
+      "NodeID": 26
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "2bfa8e7f-76ad-4e80-9116-75c947ba9c20",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "22": {
+      "calcInfo": {
+        "passive_energy_cur": -10
+      },
+      "name": "calcResult",
+      "UID": "40f61c36-c75f-4224-915f-4c739025a8e5",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "23": {
+      "buffId": 91583013,
+      "name": "hasBuff",
+      "UID": "e541c78d-d2ec-43d6-93e6-00e825bfa54e",
+      "target": "OWNER",
+      "NodeID": 23
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    9,
+    19
+  ]
+}

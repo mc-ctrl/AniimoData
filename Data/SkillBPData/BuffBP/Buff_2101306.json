@@ -1,0 +1,56 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 2101306,
+    "type": 1,
+    "taken_skill_dmg_inc_rate_v": "param0"
+  },
+  "BPName": "buff_2101306",
+  "NodeID": 1,
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "key": "10013scale",
+      "name": "setCacheVal",
+      "UID": "6b61eeb5-381c-4b61-a760-f91282dd808f",
+      "target": "OWNER",
+      "val": {
+        "rValue": {
+          "calcId": 2101306,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 6,
+          "UID": "6cb8dbab-a2bb-4fb9-859d-70f3e4d58dbe",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "add",
+        "UID": "72264fe7-4cf4-4524-99f8-0f24639ff724",
+        "NodeID": 4,
+        "lValue": {
+          "key": "10013scale",
+          "name": "getCacheVal",
+          "UID": "e2bcf77c-d25c-4f79-a4ba-8e35b8d5e768",
+          "target": "OWNER",
+          "NodeID": 3
+        }
+      },
+      "NodeID": 5
+    },
+    "6": {
+      "calcId": 2101306,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 6,
+      "UID": "6cb8dbab-a2bb-4fb9-859d-70f3e4d58dbe",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "stackRule": 0,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

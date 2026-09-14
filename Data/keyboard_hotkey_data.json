@@ -1,0 +1,466 @@
+{
+  "37": {
+    "inputkey": "<Keyboard>/f7",
+    "keycolor": "Yellow",
+    "actionName": "Bind/QuickPhoto",
+    "type": 1532956764,
+    "desc": 1236675661,
+    "keyorder": 68
+  },
+  "38": {
+    "inputkey": "<Keyboard>/f8",
+    "keycolor": "White",
+    "actionName": "Bind/Snapshot",
+    "type": 1706808514,
+    "desc": 1401022259,
+    "keyorder": 75
+  },
+  "39": {
+    "inputkey": "<Keyboard>/o",
+    "keycolor": "White",
+    "actionName": "Bind/OpenEmotion",
+    "type": 1585920719,
+    "desc": 2083142590,
+    "keyorder": 76
+  },
+  "40": {
+    "inputkey": "<Keyboard>/g",
+    "keycolor": "White",
+    "actionName": "Bind/ItemDetail",
+    "type": 1908573341,
+    "desc": 1847877943,
+    "keyorder": 77
+  },
+  "41": {
+    "inputkey": "<Keyboard>/f5",
+    "keycolor": "White",
+    "actionName": "Bind/VoiceChannel",
+    "type": 1816248983,
+    "desc": 2074120838,
+    "keyorder": 78
+  },
+  "42": {
+    "inputkey": "<Keyboard>/f3",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenSpecialTrain",
+    "type": 1116375185,
+    "desc": 1308602403,
+    "keyorder": 63
+  },
+  "35": {
+    "inputkey": "<Keyboard>/m",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenMap",
+    "type": 1446767706,
+    "desc": 1875499167,
+    "keyorder": 55
+  },
+  "44": {
+    "inputkey": "<Keyboard>/f10",
+    "keycolor": "Yellow",
+    "actionName": "Bind/Service",
+    "type": 1348002887,
+    "desc": 1552843682,
+    "keyorder": 66
+  },
+  "1": {
+    "inputkey": "<Keyboard>/w",
+    "keycolor": "Grey",
+    "actionName": "Bind/MoveUp",
+    "type": 1459578008,
+    "desc": 1364218950,
+    "keyorder": 1
+  },
+  "2": {
+    "inputkey": "<Keyboard>/leftShift",
+    "keycolor": "Grey",
+    "actionName": "Bind/Sprint",
+    "type": 1281958834,
+    "desc": 1705597646,
+    "keyorder": 7
+  },
+  "3": {
+    "inputkey": "<Keyboard>/s",
+    "keycolor": "Grey",
+    "actionName": "Bind/MoveDown",
+    "type": 1778022523,
+    "desc": 1344228899,
+    "keyorder": 2
+  },
+  "4": {
+    "inputkey": "<Keyboard>/space",
+    "keycolor": "Grey",
+    "actionName": "Bind/Jump",
+    "type": 1280582967,
+    "desc": 1779132668,
+    "keyorder": 6
+  },
+  "61": {
+    "inputkey": "<Keyboard>/n",
+    "keycolor": "White",
+    "actionName": "Bind/ItemClose",
+    "type": 1245177680,
+    "desc": 1868920092,
+    "keyorder": 79
+  },
+  "60": {
+    "inputkey": "<Keyboard>/=",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandSeason",
+    "type": 1249841874,
+    "desc": 1737875663,
+    "keyorder": 100
+  },
+  "59": {
+    "inputkey": "<Keyboard>/-",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandDesign",
+    "type": 1544007709,
+    "desc": 1571918266,
+    "keyorder": 99
+  },
+  "51": {
+    "inputkey": "<Keyboard>/9",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandPlantBook",
+    "type": 1469060231,
+    "desc": 1789895447,
+    "keyorder": 97
+  },
+  "57": {
+    "inputkey": "<Keyboard>/pageUp",
+    "keycolor": "Purple",
+    "actionName": "Bind/SwitchTeamNegative",
+    "type": 1655980876,
+    "desc": 1298396631,
+    "keyorder": 40
+  },
+  "56": {
+    "inputkey": "<Keyboard>/f11",
+    "keycolor": "Yellow",
+    "actionName": "Bind/Rule",
+    "type": 1391449300,
+    "desc": 1496700697,
+    "keyorder": 67
+  },
+  "55": {
+    "inputkey": "<Keyboard>/f9",
+    "keycolor": "Yellow",
+    "actionName": "Bind/Shop",
+    "type": 1930104564,
+    "desc": 1093248609,
+    "keyorder": 65
+  },
+  "54": {
+    "inputkey": "<Keyboard>/6",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandManage",
+    "type": 1663457686,
+    "desc": 2141163216,
+    "keyorder": 94
+  },
+  "53": {
+    "inputkey": "<Keyboard>/f1",
+    "keycolor": "Yellow",
+    "actionName": "Bind/SeasonLobby",
+    "type": 1803341895,
+    "desc": 1623226794,
+    "keyorder": 61
+  },
+  "52": {
+    "inputkey": "<Keyboard>/f6",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandMainPage",
+    "type": 1249815115,
+    "desc": 1988430901,
+    "keyorder": 91
+  },
+  "58": {
+    "inputkey": "<Keyboard>/pageDown",
+    "keycolor": "Purple",
+    "actionName": "Bind/SwitchTeamPositive",
+    "type": 1812272900,
+    "desc": 1595874728,
+    "keyorder": 41
+  },
+  "49": {
+    "inputkey": "<Keyboard>/8",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandStore",
+    "type": 1832913495,
+    "desc": 1510301389,
+    "keyorder": 96
+  },
+  "48": {
+    "inputkey": "<Keyboard>/7",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandBuild",
+    "type": 1586703568,
+    "desc": 1132994469,
+    "keyorder": 95
+  },
+  "18": {
+    "inputkey": "<Keyboard>/e",
+    "keycolor": "Green",
+    "actionName": "Bind/Skill2",
+    "type": 2092412525,
+    "desc": 1969621413,
+    "keyorder": 22
+  },
+  "5": {
+    "inputkey": "<Keyboard>/a",
+    "keycolor": "Grey",
+    "actionName": "Bind/MoveLeft",
+    "type": 1267470009,
+    "desc": 1575443832,
+    "keyorder": 3
+  },
+  "46": {
+    "inputkey": "<Keyboard>/0",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandLog",
+    "type": 2019190820,
+    "desc": 1425214543,
+    "keyorder": 92
+  },
+  "17": {
+    "inputkey": "<Keyboard>/q",
+    "keycolor": "Green",
+    "actionName": "Bind/Skill1",
+    "type": 1998346494,
+    "desc": 2126067684,
+    "keyorder": 21
+  },
+  "6": {
+    "inputkey": "<Keyboard>/x",
+    "keycolor": "Grey",
+    "actionName": "Bind/ClimbJump",
+    "type": 1846432682,
+    "desc": 2126242822,
+    "keyorder": 5
+  },
+  "43": {
+    "inputkey": "<Keyboard>/f2",
+    "keycolor": "Yellow",
+    "actionName": "Bind/Extra1",
+    "type": 1572345581,
+    "desc": 1789150966,
+    "keyorder": 62
+  },
+  "12": {
+    "inputkey": "<Keyboard>/tab",
+    "keycolor": "Purple",
+    "actionName": "Bind/Lock",
+    "type": 1187722129,
+    "desc": 1125951482,
+    "keyorder": 31
+  },
+  "7": {
+    "inputkey": "<Keyboard>/d",
+    "keycolor": "Grey",
+    "actionName": "Bind/MoveRight",
+    "type": 1298946026,
+    "desc": 1377717455,
+    "keyorder": 4
+  },
+  "13": {
+    "inputkey": "<Keyboard>/3",
+    "keycolor": "Purple",
+    "actionName": "Bind/Pet3",
+    "type": 1439695656,
+    "desc": 1624240390,
+    "keyorder": 35
+  },
+  "8": {
+    "inputkey": "<Mouse>/rightButton",
+    "keycolor": "Purple",
+    "actionName": "Bind/SwitchCatchMode",
+    "type": 1641309667,
+    "desc": 1909685833,
+    "keyorder": 9998
+  },
+  "31": {
+    "inputkey": "<Keyboard>/k",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenHandBook",
+    "type": 1564788771,
+    "desc": 1454086135,
+    "keyorder": 51
+  },
+  "9": {
+    "inputkey": "<Keyboard>/1",
+    "keycolor": "Purple",
+    "actionName": "Bind/Pet1",
+    "type": 1310072801,
+    "desc": 1231494405,
+    "keyorder": 33
+  },
+  "16": {
+    "inputkey": "<Keyboard>/c",
+    "keycolor": "Purple",
+    "actionName": "Bind/SwitchPet",
+    "type": 1585512741,
+    "desc": 1090950103,
+    "keyorder": 37
+  },
+  "19": {
+    "inputkey": "<Keyboard>/r",
+    "keycolor": "Green",
+    "actionName": "Bind/Skill3",
+    "type": 1688592519,
+    "desc": 1610780339,
+    "keyorder": 23
+  },
+  "11": {
+    "inputkey": "<Keyboard>/2",
+    "keycolor": "Purple",
+    "actionName": "Bind/Pet2",
+    "type": 1184222966,
+    "desc": 2089572272,
+    "keyorder": 34
+  },
+  "20": {
+    "inputkey": "<Keyboard>/t",
+    "keycolor": "Green",
+    "actionName": "Bind/ExploreSkill",
+    "type": 1487345556,
+    "desc": 1947201465,
+    "keyorder": 24
+  },
+  "21": {
+    "inputkey": "<Keyboard>/y",
+    "keycolor": "Green",
+    "actionName": "Bind/SkillChainAttack",
+    "type": 1713430549,
+    "desc": 1774956777,
+    "keyorder": 25
+  },
+  "22": {
+    "inputkey": "<Keyboard>/j",
+    "keycolor": "Purple",
+    "actionName": "Bind/SwitchPetMode",
+    "type": 1512424168,
+    "desc": 1385728377,
+    "keyorder": 38
+  },
+  "23": {
+    "inputkey": "<Keyboard>/h",
+    "keycolor": "Purple",
+    "actionName": "Bind/SwitchPetTeam",
+    "type": 2000499925,
+    "desc": 1611636981,
+    "keyorder": 39
+  },
+  "45": {
+    "inputkey": "<Keyboard>/f4",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenSchoolGuide",
+    "type": 1162398577,
+    "desc": 1940800229,
+    "keyorder": 64
+  },
+  "14": {
+    "inputkey": "<Keyboard>/ctrl",
+    "keycolor": "Purple",
+    "actionName": "Bind/ItemModifier",
+    "type": 1816881569,
+    "desc": 2099423244,
+    "keyorder": 32
+  },
+  "10": {
+    "inputkey": "<Mouse>/leftButton",
+    "keycolor": "Green",
+    "actionName": "Bind/NormalAttack",
+    "type": 1087318816,
+    "desc": 1508028834,
+    "keyorder": 9997
+  },
+  "15": {
+    "inputkey": "<Keyboard>/4",
+    "keycolor": "Purple",
+    "actionName": "Bind/Pet4",
+    "type": 1866364025,
+    "desc": 1815883426,
+    "keyorder": 36
+  },
+  "47": {
+    "inputkey": "<Keyboard>/5",
+    "keycolor": "White",
+    "actionName": "Bind/HomelandPet",
+    "type": 1730017588,
+    "desc": 1547981951,
+    "keyorder": 93
+  },
+  "26": {
+    "inputkey": "<Keyboard>/v",
+    "keycolor": "White",
+    "actionName": "Bind/TrackOpenSpecial",
+    "type": 1321235138,
+    "desc": 1838363869,
+    "keyorder": 71
+  },
+  "27": {
+    "inputkey": "<Keyboard>/alt",
+    "keycolor": "White",
+    "actionName": "Bind/ShowCursor",
+    "type": 1316510497,
+    "desc": 1596627952,
+    "keyorder": 72
+  },
+  "28": {
+    "inputkey": "<Keyboard>/enter",
+    "keycolor": "White",
+    "actionName": "Bind/Confirm",
+    "type": 1523377039,
+    "desc": 1705739517,
+    "keyorder": 73
+  },
+  "29": {
+    "inputkey": "<Keyboard>/f",
+    "keycolor": "Grey",
+    "actionName": "Bind/Interact",
+    "type": 1323528391,
+    "desc": 1424614952,
+    "keyorder": 8
+  },
+  "30": {
+    "inputkey": "<Keyboard>/backquote",
+    "keycolor": "White",
+    "actionName": "Bind/SwitchPage",
+    "type": 1994490426,
+    "desc": 1261209035,
+    "keyorder": 74
+  },
+  "32": {
+    "inputkey": "<Keyboard>/i",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenInformation",
+    "type": 1616617280,
+    "desc": 1461080103,
+    "keyorder": 52
+  },
+  "33": {
+    "inputkey": "<Keyboard>/p",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenPet",
+    "type": 1251835203,
+    "desc": 1571859200,
+    "keyorder": 53
+  },
+  "34": {
+    "inputkey": "<Keyboard>/l",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenMission",
+    "type": 1451115790,
+    "desc": 1931937915,
+    "keyorder": 54
+  },
+  "36": {
+    "inputkey": "<Keyboard>/b",
+    "keycolor": "Yellow",
+    "actionName": "Bind/OpenBag",
+    "type": 1872503285,
+    "desc": 1178423511,
+    "keyorder": 56
+  }
+}

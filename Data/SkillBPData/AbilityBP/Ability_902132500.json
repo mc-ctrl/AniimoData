@@ -1,0 +1,46 @@
+{
+  "BPName": "ability_902132500",
+  "NodeID": 1,
+  "UID": "8e3c3b93-6299-4253-8dc7-01b469c2329a",
+  "abilityParamId": 49224010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902132500001,
+      "name": "setCombatActionTimeline",
+      "UID": "7559cb89-4e15-496c-8e86-1ecff00f4fe7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Blue_XczlStart",
+    "Skill_Blue_XczlLoop",
+    "Skill_Blue_XczlEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Fly",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Loop01",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_End01",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Fly_01",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Loop02",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_End02",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Fly_02",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Sky_Loop",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Sky_End",
+    "Eff_Monster_90213_Mon_Attack_Teleport_Absorb_Nofollow",
+    "Eff_Monster_90213_Mon_Attack_Teleport_End",
+    "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Launch"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 999,
+  "searchTargetRangeUp": 999,
+  "searchTargetRangeDown": 999
+}

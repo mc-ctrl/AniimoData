@@ -1,0 +1,54 @@
+{
+  "duration": 1,
+  "BPName": "ability_13610101",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10361_Skill_Attack02_Normal",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    33
+  ],
+  "nodeMap": {
+    "33": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_None_Blunt"
+      },
+      "UID": "14af67bf-3294-4fcd-b2a2-b58431bfba4a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 33
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.05,
+  "angularIncreaseDuration": 1,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_None_Blunt",
+  "calcResultNodeId": 33,
+  "impulseId": 2000,
+  "acceleration": 0
+}

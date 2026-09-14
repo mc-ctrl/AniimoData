@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_16030000",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10600000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 16030000001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Grass_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "草普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    16030001,
+    16030002
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

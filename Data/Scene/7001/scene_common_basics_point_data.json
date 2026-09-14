@@ -1,0 +1,69 @@
+{
+  "82797521": {
+    "name": "基础点位_82797521",
+    "rotation": [
+      0,
+      155.6,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 82753187,
+    "id": 82797521,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -21.24,
+        10.22,
+        54.95
+      ],
+      "circleRadius": 15,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -21.24,
+      10.22,
+      54.95
+    ]
+  },
+  "85750621": {
+    "name": "基础点位_82797521",
+    "rotation": [
+      0,
+      245.26,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 82753187,
+    "id": 85750621,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        11.4,
+        11.1,
+        5.52
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        34
+      ],
+      "name": "",
+      "circleRadius": 15,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      11.4,
+      11.1,
+      5.52
+    ]
+  }
+}

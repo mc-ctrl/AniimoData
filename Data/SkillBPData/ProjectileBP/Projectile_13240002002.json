@@ -1,0 +1,69 @@
+{
+  "refControlPoint": [
+    [
+      0.84,
+      1.58,
+      2.23
+    ]
+  ],
+  "duration": 3.2,
+  "calcResultNodeId": 27,
+  "defaultHitSoundType": "s",
+  "effectId": "Eff_Parmon_10324_Attack01",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "BezierCurve",
+  "nodeMap": {
+    "27": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13240002,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "1c2a4f22-c69e-4af0-8058-6411d40ae829",
+      "target": "TARGET",
+      "NodeID": 27,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt"
+      }
+    }
+  },
+  "maxHitNum": 1,
+  "moveSpeed": 18,
+  "refTargetPoint": [
+    0,
+    0.41,
+    9.5
+  ],
+  "onProjectileHitIds": [
+    27
+  ],
+  "NodeID": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "BPName": "ability_13240002",
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

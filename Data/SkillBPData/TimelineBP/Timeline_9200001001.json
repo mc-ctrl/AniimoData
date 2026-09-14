@@ -1,0 +1,147 @@
+{
+  "nodeMap": {
+    "22": {
+      "name": "showEmojiBubbleByRef",
+      "UID": "f15e776a-fc8d-4552-9a53-5ccf8086835b",
+      "target": "CURPET_OR_TEAM_PET",
+      "emojiId": "Emoji_Test_Happy",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "a81087bb-febd-48d4-b736-74a837e7c332",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8,
+          2,
+          21,
+          19,
+          24
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "calcInfo": {
+        "tp_temp_max": 999,
+        "tp_temp_cur": 999
+      },
+      "name": "addDynamicAttribute",
+      "UID": "df33f63f-7036-4523-8b98-2d27f74f331a",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "10": {
+      "UID": "809672ed-3c4b-406a-8325-0628288c0227",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13,
+          16,
+          22,
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 15,
+      "UID": "101e3e0a-3d31-4c4f-9a5e-d1c1cd9ad651"
+    },
+    "16": {
+      "target": "CURPET_OR_TEAM_PET",
+      "name": "playEffectStr",
+      "UID": "74be7d21-f94e-4e1c-82f1-91743577bef3",
+      "effectId": "Eff_Avatar_Girl_Skill_FirstAid_Hit",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "lockTarget": "CURPET",
+      "name": "lockTarget",
+      "UID": "d059b754-10ab-423e-8518-29eb16f3f780",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "target": "CURPET_OR_TEAM_PET",
+      "duration": 12,
+      "buffId": 920000101,
+      "NodeID": 17,
+      "UID": "25057c02-9154-4dd3-9ee1-58f3412c5ce5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "21": {
+      "UID": "f0affd73-efe9-4cf1-ae74-a9f7fb40e3dc",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 21
+    },
+    "18": {
+      "key": "BUFF",
+      "duration": 0.2,
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18,
+      "UID": "e8f6a2d4-252a-4f1d-906f-891125ececd8",
+      "name": "addTimer"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "43400c36-d9e6-4cbd-b464-92628ac459ff",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Cure",
+      "NodeID": 19
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 11,
+      "UID": "e314e219-c21e-43a7-ab51-b789dfa874dd"
+    },
+    "13": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.1
+      },
+      "name": "calcResult",
+      "UID": "ba018c34-d692-44cd-97fc-c5204eb48dd8",
+      "target": "CURPET_OR_TEAM_PET",
+      "NodeID": 13
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ec8e26f9-d5c6-439a-8f11-30adad6aeab6",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_FlashHeal"
+    }
+  },
+  "BPName": "ability_9200001",
+  "NodeID": 6,
+  "UID": "55634e2a-432b-4b5d-bce2-49223e090b19",
+  "eventIds": [
+    4,
+    15,
+    11
+  ],
+  "layer": "Base",
+  "length": 1.66
+}

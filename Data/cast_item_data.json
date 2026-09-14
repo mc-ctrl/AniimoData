@@ -1,0 +1,1171 @@
+{
+  "1000": {
+    "ballLv": 1,
+    "ballLvDownRange": 100,
+    "ballLvUpRange": 100,
+    "ballProbBase": 1,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 110001,
+    "happyRactionDelay": 4,
+    "initV": 18,
+    "maxColl": 2,
+    "maxHitDistance": 5,
+    "maxV": 18,
+    "petBackground1": "$UI_Img_PetType_BallBg_110001.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110001.png",
+    "name": "教学用谜立方",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_Catch_CatchBall_NormalBall_Throw.prefab",
+    "aimSwitchDistance": 22.5,
+    "animType": 1,
+    "antiGTime": 2
+  },
+  "1013": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.06
+      ],
+      [
+        0.65,
+        0.42
+      ],
+      [
+        1.05,
+        0.9
+      ],
+      [
+        1.45,
+        0.95
+      ],
+      [
+        2,
+        0.75
+      ],
+      [
+        5,
+        0.55
+      ]
+    ],
+    "bindingId": 110011,
+    "happyRactionDelay": 4,
+    "initV": 25,
+    "maxColl": 2,
+    "maxHitDistance": 5,
+    "maxV": 25,
+    "name": "神秘立方",
+    "proxy": "FishingCaptureBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_Catch_CatchBall_BossCatchBall_Throw.prefab",
+    "aimSwitchDistance": 28.5,
+    "animType": 1,
+    "antiGTime": 1.15
+  },
+  "1014": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 10000,
+    "ballScreenEffect": 11,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.06
+      ],
+      [
+        0.65,
+        0.42
+      ],
+      [
+        1.05,
+        0.9
+      ],
+      [
+        1.45,
+        0.95
+      ],
+      [
+        2,
+        0.75
+      ],
+      [
+        5,
+        0.55
+      ]
+    ],
+    "bindingId": 110014,
+    "happyRactionDelay": 4,
+    "initV": 25,
+    "isSpecialSlot": 1,
+    "maxColl": 2,
+    "maxHitDistance": 10,
+    "maxV": 25,
+    "petBackground1": "$UI_Img_PetType_BallBg_110011.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110011.png",
+    "petBallFigure": "$UI_Img_PetType_BallFigure_110011.png",
+    "name": "传说立方·逐风启程",
+    "proxy": "CatchBall",
+    "randomTalentGroup": 16,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_ShinyChampionBall_01.mat",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Cone_L",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Cone_R",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Struggle_Successful",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "shinyEffectReplace": "Shine_Irisalis",
+    "shinyStyleRandomGroup": 1,
+    "model": "$P_Item_Catch_CatchBall_LegendBall_Irisalis_Throw.prefab",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "rotationOffset": [
+      0,
+      -90,
+      -90
+    ],
+    "recycleLevel": 1,
+    "probeRadius": 0.3,
+    "forceShiny": 1,
+    "aimSwitchDistance": 28.5,
+    "animType": 1,
+    "antiGTime": 1.15
+  },
+  "3007": {
+    "ballLv": 10,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 1400004,
+    "happyRactionDelay": 4,
+    "initV": 12,
+    "maxColl": 9,
+    "maxHitDistance": 5,
+    "maxV": 15,
+    "name": "风之果实",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "probeRadius": 0.3,
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "throwMaterial": 80221393,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_SceneObject_Fruit_Wind.prefab",
+    "aimSwitchDistance": 11.5,
+    "animType": 1,
+    "antiGTime": 1
+  },
+  "3008": {
+    "ballLv": 10,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 1400005,
+    "happyRactionDelay": 4,
+    "initV": 12,
+    "maxColl": 9,
+    "maxHitDistance": 5,
+    "maxV": 15,
+    "name": "睡梦果实",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "probeRadius": 0.3,
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "throwMaterial": 80378355,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_SceneObject_Fruit_Sleep.prefab",
+    "aimSwitchDistance": 11.5,
+    "animType": 1,
+    "antiGTime": 1
+  },
+  "3009": {
+    "ballLv": 10,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 1200152,
+    "happyRactionDelay": 4,
+    "initV": 12,
+    "maxColl": 9,
+    "maxHitDistance": 5,
+    "maxV": 15,
+    "name": "迷梦香晶",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_SceneObject_SugarRock.prefab",
+    "aimSwitchDistance": 11.5,
+    "animType": 1,
+    "antiGTime": 1
+  },
+  "3010": {
+    "ballLv": 10,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 1400006,
+    "happyRactionDelay": 4,
+    "initV": 12,
+    "maxColl": 9,
+    "maxHitDistance": 5,
+    "maxV": 15,
+    "name": "黑耀果实（抢蛋主用）",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "probeRadius": 0.3,
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "throwMaterial": 77654185,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_SceneObject_Fruit_BlackFog.prefab",
+    "aimSwitchDistance": 11.5,
+    "animType": 1,
+    "antiGTime": 1
+  },
+  "1001": {
+    "ballLv": 15,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.08
+      ],
+      [
+        0.62,
+        0.5
+      ],
+      [
+        1,
+        1.15
+      ],
+      [
+        1.4,
+        1
+      ],
+      [
+        2,
+        0.6
+      ],
+      [
+        5,
+        0.22
+      ]
+    ],
+    "bindingId": 110001,
+    "happyRactionDelay": 4,
+    "initV": 18,
+    "maxColl": 2,
+    "maxHitDistance": 5,
+    "maxV": 18,
+    "petBackground1": "$UI_Img_PetType_BallBg_110001.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110001.png",
+    "name": "谜立方",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      -90,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_Catch_CatchBall_NormalBall_Throw.prefab",
+    "aimSwitchDistance": 22.5,
+    "animType": 1,
+    "antiGTime": 0.95
+  },
+  "1003": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 10000,
+    "ballScreenEffect": 10,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.06
+      ],
+      [
+        0.65,
+        0.42
+      ],
+      [
+        1.05,
+        0.9
+      ],
+      [
+        1.45,
+        0.95
+      ],
+      [
+        2,
+        0.75
+      ],
+      [
+        5,
+        0.55
+      ]
+    ],
+    "bindingId": 110003,
+    "happyRactionDelay": 4,
+    "initV": 25,
+    "isSpecialSlot": 1,
+    "bone": "Bone Hold Ball",
+    "maxHitDistance": 10,
+    "maxV": 25,
+    "petBackground1": "$UI_Img_PetType_BallBg_110003.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110003.png",
+    "petBallFigure": "$UI_Img_PetType_BallFigure_110003.png",
+    "name": "冠军立方",
+    "proxy": "CatchBall",
+    "randomTalentGroup": 15,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      -90,
+      -90
+    ],
+    "recycleLevel": 1,
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "maxColl": 2,
+    "model": "$P_Item_Catch_CatchBall_ChampionBall_Throw.prefab",
+    "aimSwitchDistance": 28.5,
+    "animType": 1,
+    "antiGTime": 1.15
+  },
+  "1004": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 2,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.06
+      ],
+      [
+        0.65,
+        0.42
+      ],
+      [
+        1.05,
+        0.9
+      ],
+      [
+        1.45,
+        0.95
+      ],
+      [
+        2,
+        0.75
+      ],
+      [
+        5,
+        0.55
+      ]
+    ],
+    "bindingId": 110004,
+    "happyRactionDelay": 4,
+    "initV": 25,
+    "maxColl": 2,
+    "maxHitDistance": 10,
+    "maxV": 25,
+    "petBackground1": "$UI_Img_PetType_BallBg_110004.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110004.png",
+    "name": "极速立方",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_Catch_CatchBall_FeatherBall_Throw.prefab",
+    "aimSwitchDistance": 28.5,
+    "animType": 1,
+    "antiGTime": 1.15
+  },
+  "1002": {
+    "ballLv": 25,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1.5,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.08
+      ],
+      [
+        0.62,
+        0.5
+      ],
+      [
+        1,
+        1.15
+      ],
+      [
+        1.4,
+        1
+      ],
+      [
+        2,
+        0.6
+      ],
+      [
+        5,
+        0.22
+      ]
+    ],
+    "bindingId": 110002,
+    "happyRactionDelay": 4,
+    "initV": 18,
+    "maxColl": 2,
+    "maxHitDistance": 5,
+    "maxV": 18,
+    "petBackground1": "$UI_Img_PetType_BallBg_110002.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110002.png",
+    "name": "超级立方",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_Catch_CatchBall_GreatBall_Throw.prefab",
+    "aimSwitchDistance": 22.5,
+    "animType": 1,
+    "antiGTime": 0.95
+  },
+  "1007": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 2,
+    "chargeSpeed": 20,
+    "createPlentyProb": 3,
+    "happyRactionDelay": 3,
+    "initV": 30,
+    "bone": "Bip001 Prop1",
+    "maxHitDistance": 64,
+    "maxV": 30,
+    "petBackground1": "$UI_Img_PetType_BallBg_111001.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_111001.png",
+    "petBallFigure": "$UI_Img_PetType_BallFigure_111001.png",
+    "name": "大白球（遥控版）",
+    "proxy": "BigBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 1.3,
+    "ifInWaterDestroy": 1,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "model": "$P_Item_Catch_CatchBall_BigWhiteBall_Mimic_Throw.prefab",
+    "aimSwitchDistance": 22.5,
+    "animType": 2,
+    "maxCount": 10
+  },
+  "1005": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 2,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.06
+      ],
+      [
+        0.65,
+        0.42
+      ],
+      [
+        1.05,
+        0.9
+      ],
+      [
+        1.45,
+        0.95
+      ],
+      [
+        2,
+        0.75
+      ],
+      [
+        5,
+        0.55
+      ]
+    ],
+    "bindingId": 110005,
+    "happyRactionDelay": 4,
+    "initV": 25,
+    "maxColl": 2,
+    "maxHitDistance": 10,
+    "maxV": 25,
+    "petBackground1": "$UI_Img_PetType_BallBg_110005.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110005.png",
+    "name": "追踪立方",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_Catch_CatchBall_ChaseBall_Throw.prefab",
+    "aimSwitchDistance": 28.5,
+    "animType": 1,
+    "antiGTime": 1.15
+  },
+  "3005": {
+    "ballLv": 10,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 1400003,
+    "happyRactionDelay": 4,
+    "initV": 12,
+    "maxColl": 9,
+    "maxHitDistance": 5,
+    "maxV": 15,
+    "name": "黑洞果实",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "probeRadius": 0.3,
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "throwMaterial": 77654185,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_SceneObject_Fruit_BlackHole.prefab",
+    "aimSwitchDistance": 11.5,
+    "animType": 1,
+    "antiGTime": 1
+  },
+  "1012": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 2,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.08
+      ],
+      [
+        0.62,
+        0.5
+      ],
+      [
+        1,
+        1.15
+      ],
+      [
+        1.4,
+        1
+      ],
+      [
+        2,
+        0.6
+      ],
+      [
+        5,
+        0.22
+      ]
+    ],
+    "bindingId": 110007,
+    "happyRactionDelay": 4,
+    "initV": 18,
+    "maxColl": 2,
+    "maxHitDistance": 5,
+    "maxV": 18,
+    "petBackground1": "$UI_Img_PetType_BallBg_110007.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110007.png",
+    "name": "究极立方",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "probeRadius": 0.3,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_Catch_CatchBall_UltraBall_Throw.prefab",
+    "aimSwitchDistance": 22.5,
+    "animType": 1,
+    "antiGTime": 0.95
+  },
+  "3000": {
+    "ballLv": 10,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 1400002,
+    "happyRactionDelay": 4,
+    "initV": 12,
+    "maxColl": 9,
+    "maxHitDistance": 5,
+    "maxV": 15,
+    "name": "火焰果实",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "probeRadius": 0.3,
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "throwMaterial": 77654156,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_SceneObject_Fruit_Fire.prefab",
+    "aimSwitchDistance": 11.5,
+    "animType": 1,
+    "antiGTime": 1
+  },
+  "1011": {
+    "ballLv": 35,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 10000,
+    "ballScreenEffect": 11,
+    "canQuickCaptureInHand": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "extraGCurve": [
+      [
+        0,
+        0
+      ],
+      [
+        0.3,
+        0.06
+      ],
+      [
+        0.65,
+        0.42
+      ],
+      [
+        1.05,
+        0.9
+      ],
+      [
+        1.45,
+        0.95
+      ],
+      [
+        2,
+        0.75
+      ],
+      [
+        5,
+        0.55
+      ]
+    ],
+    "bindingId": 110006,
+    "happyRactionDelay": 4,
+    "initV": 25,
+    "isSpecialSlot": 1,
+    "maxColl": 2,
+    "maxHitDistance": 10,
+    "maxV": 25,
+    "petBackground1": "$UI_Img_PetType_BallBg_110006.png",
+    "petBackground2": "$UI_Img_PetType_BallBg_Large_110006.png",
+    "petBallFigure": "$UI_Img_PetType_BallFigure_110006.png",
+    "name": "闪耀立方",
+    "proxy": "CatchBall",
+    "randomTalentGroup": 16,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_ShinyChampionBall_01.mat",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Cone_L",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Cone_R",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_ShinyChampionBall_Struggle_Successful",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "shinyStyleRandomGroup": 1,
+    "model": "$P_Item_Catch_CatchBall_ShinyChampionBall_Throw.prefab",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "rotationOffset": [
+      0,
+      -90,
+      -90
+    ],
+    "recycleLevel": 1,
+    "probeRadius": 0.3,
+    "forceShiny": 1,
+    "aimSwitchDistance": 28.5,
+    "animType": 1,
+    "antiGTime": 1.15
+  },
+  "3001": {
+    "ballLv": 10,
+    "ballLvDownRange": 10,
+    "ballLvUpRange": 10,
+    "ballProbBase": 1,
+    "chargeSpeed": 10,
+    "createPlentyProb": 1,
+    "bindingId": 1400001,
+    "happyRactionDelay": 4,
+    "initV": 12,
+    "maxColl": 9,
+    "maxHitDistance": 5,
+    "maxV": 15,
+    "name": "电果实",
+    "proxy": "CatchBall",
+    "recycleLevel": 1,
+    "replaceEffectKeys": [
+      "$Eff_Catch_MagicCube_NormalBall_16.mat",
+      "Eff_Catch_MagicCube_NormalBall_Cone_L",
+      "Eff_Catch_MagicCube_NormalBall_Cone_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Start",
+      "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Successful_OneShoot",
+      "$EffD_Catch_CatchBall_NormalBall_TrailSuccess.prefab",
+      "Eff_CatchBall_NormalBall_TailStarHit",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "Eff_Catch_MagicCube_NormalBall_Struggle_Small"
+    ],
+    "probeRadius": 0.3,
+    "rotationOffset": [
+      0,
+      0,
+      0
+    ],
+    "throwMaterial": 77653709,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "bone": "Bone Hold Ball",
+    "model": "$P_Item_SceneObject_Fruit_Electric.prefab",
+    "aimSwitchDistance": 11.5,
+    "animType": 1,
+    "antiGTime": 1
+  }
+}

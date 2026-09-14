@@ -1,0 +1,213 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104514",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Common_Skill_Grass_Shield_Loop"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "90fdfdd6-3e2c-4e6a-bba4-0e16023fa608",
+      "target": "OWNER",
+      "val": {
+        "UID": "1faf0106-f8f2-48f6-9a6d-7c2279ab4cf2",
+        "target": {
+          "UID": "1548136d-3a67-4038-876f-3f28f2bc83c7",
+          "name": "getLockedTarget",
+          "NodeID": 3
+        },
+        "name": "getTargetId",
+        "NodeID": 4
+      },
+      "NodeID": 5
+    },
+    "13": {
+      "endNum": 3,
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13,
+      "UID": "f352a77a-b7e9-4b76-9b0c-37be63fd947e",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "14": {
+      "key": "timer2",
+      "duration": 50,
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14,
+      "UID": "d274dcae-da28-4e0c-af0f-fdf8745a84c8",
+      "name": "addTimer"
+    },
+    "10": {
+      "key": "timer1",
+      "duration": 25,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "099b7a6d-1fa4-40b0-b746-3fc15a1149b8",
+      "name": "addTimer"
+    },
+    "8": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104514,
+      "name": "createEntity",
+      "UID": "9ae558bc-8043-4087-98da-72ee8967b450",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 8,
+      "pos": {
+        "targetPos": "OWNER",
+        "radius": 11,
+        "UID": "c6741254-b646-4fff-a7bc-4d2159ea3183",
+        "NodeID": 7,
+        "name": "randomPoint"
+      }
+    },
+    "17": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 104514,
+      "name": "createEntity",
+      "UID": "4eb38c65-0092-4db6-8a03-404f891d8492",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": -1,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 17,
+      "pos": {
+        "targetPos": {
+          "UID": "c24d09d5-3bd6-4433-9aa9-ab4bb8c87287",
+          "name": "getBornPos",
+          "NodeID": 15
+        },
+        "radius": 13,
+        "UID": "2575dddb-27a8-4c18-938d-78c106d03786",
+        "NodeID": 16,
+        "name": "randomPoint"
+      }
+    },
+    "9": {
+      "endNum": 3,
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "a7f4a807-c7c9-43c0-b37b-77a01da69514",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "21": {
+      "UID": "7a46328b-ffe3-4acc-a6df-07021595a7e9",
+      "value": "im buff",
+      "name": "print",
+      "NodeID": 21
+    },
+    "19": {
+      "endNum": 3,
+      "actionIds": [
+        17,
+        20,
+        21
+      ],
+      "NodeID": 19,
+      "UID": "681c8a85-a1e7-46c4-ac3a-205991341cbd",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "20": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "6dacf370-1ee2-4172-b27a-1521f12e6851",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "CASTER",
+      "NodeID": 20,
+      "pos": {
+        "targetPos": {
+          "UID": "c24d09d5-3bd6-4433-9aa9-ab4bb8c87287",
+          "name": "getBornPos",
+          "NodeID": 15
+        },
+        "radius": 13,
+        "UID": "2575dddb-27a8-4c18-938d-78c106d03786",
+        "NodeID": 16,
+        "name": "randomPoint"
+      }
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104514,
+      "name": "createEntity",
+      "UID": "e88c2a16-92ab-43a6-91b8-17b03c80d44e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": -1,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 12,
+      "pos": {
+        "targetPos": "OWNER",
+        "radius": 9,
+        "UID": "68521235-627f-4a8c-902a-516341c5bd9f",
+        "NodeID": 11,
+        "name": "randomPoint"
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    19,
+    10,
+    14
+  ]
+}

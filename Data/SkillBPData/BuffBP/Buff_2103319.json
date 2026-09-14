@@ -1,0 +1,109 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103319",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "petTarget": "OWNER",
+      "triggerId": 20002022,
+      "name": "onEntityTrigger",
+      "UID": "0013eaa3-c341-4c0f-a464-da5d6bf411a4",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "78202318-1911-4a1e-933b-c4a3a82be472",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 6
+    },
+    "15": {
+      "key": "buff_210331915",
+      "duration": 1,
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15,
+      "UID": "73b491d0-d757-4dfd-b808-1cab62fb4e5f",
+      "name": "addEntityTimer"
+    },
+    "7": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "d19fcf8d-0510-42cc-b48c-8dd793d1055d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7f8f3c8d-b97d-476c-ad2c-8265707eaa73",
+      "effectId": "Eff_Parmon_10033_Skill_FlyBlade_Debuff",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "fbedcc2e-acd4-4553-a501-540595ea33d9",
+      "effectId": "Eff_Parmon_10033_Skill_FlyBlade_Debuff",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "63b45b5f-24cc-42db-b03d-3e40922b486e",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 14
+    },
+    "13": {
+      "UID": "bcc14ab8-0cf3-4eae-a5a3-b598c735d9ac",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "11": {
+      "UID": "d6d176ed-63ba-4659-8ee1-d8e430d5ed48",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": 0.5
+      },
+      "NodeID": 11
+    },
+    "2": {
+      "name": "enableCamouFlage",
+      "leaveStateDamage": 1,
+      "UID": "17b622ba-8465-4220-8431-1ef6a615deea",
+      "lerpTime": 0.5,
+      "enable": true,
+      "NodeID": 2
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "c2d0d451-c40a-4430-9ce8-6e37827c1430",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    4,
+    7,
+    9,
+    15
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    6,
+    8,
+    13
+  ]
+}

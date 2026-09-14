@@ -1,0 +1,113 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "UID": "1f0c5d28-7fab-4982-951a-d1765740fb36",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "a86d64d9-489a-4ea1-b224-837806e743b8",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "9": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 2921204,
+      "NodeID": 9,
+      "UID": "1e072ad9-92f2-4989-97e9-79e28fd32735",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "pos": "POS_OR_TARGET",
+      "scale": 3.4,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0537d340-53c4-4169-a6a9-046eb77bc5f7",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_02",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "11": {
+      "actOnTag": "grassGrowFlower",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 11,
+      "UID": "e9527ded-44bb-476b-ad65-07ba6b273824",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            12,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "name": "actOnTargets"
+    },
+    "13": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 19,
+      "NodeID": 13,
+      "UID": "9cace562-79f9-426a-b0ba-1e0cf101316c",
+      "onUpdate": {
+        "actionIds": [
+          11
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          11
+        ]
+      }
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "1fc408b3-6cbc-4013-945c-047f97acc157",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Grass",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2921204",
+  "NodeID": 1,
+  "UID": "8aa4cd8e-25ba-44d0-8ed2-2a71684c7340",
+  "eventIds": [
+    13,
+    8,
+    4
+  ],
+  "layer": "Base",
+  "length": 9999
+}

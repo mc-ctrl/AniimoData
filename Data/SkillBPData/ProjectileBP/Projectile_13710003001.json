@@ -1,0 +1,174 @@
+{
+  "duration": 2,
+  "BPName": "ability_13710003",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 0.5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "effectId": "Eff_Parmon_10371_Attack04",
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    26,
+    38,
+    33,
+    65,
+    64
+  ],
+  "angularIncreaseDuration": 0.5,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "nodeMap": {
+    "23": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13710003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "9210c734-9353-48d3-8989-999d526317d2",
+      "target": "TARGET",
+      "NodeID": 23,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "impulseId": 5003,
+        "elementType": 13,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102
+      }
+    },
+    "24": {
+      "actionIds": [
+        60
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "cfee44a3-a82b-4863-b9cf-f7d349462c4e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 24
+    },
+    "56": {
+      "buffId": 2137102,
+      "name": "hasBuff",
+      "UID": "a4381100-cf26-4993-9c02-0e8e7606ab3e",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "64": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b1248f7f-9a87-4d74-ac78-4f3e8c9bca86",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10371_Attack_04_Hit",
+      "NodeID": 64
+    },
+    "26": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 23,
+      "NodeID": 26,
+      "UID": "5232786b-4a7d-4d7d-bdc9-6ee2b21d556a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5003,
+      "actionIds": [
+        24,
+        67
+      ]
+    },
+    "67": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "9ef92e89-3b41-4bfe-a7de-e5a016bd7a17",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Fox_Attack_Hit",
+      "NodeID": 67
+    },
+    "60": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13710003,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "17b90d74-1701-4e22-9c11-060203924caf",
+      "target": "TARGET",
+      "NodeID": 60,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "impulseId": 5003,
+        "elementType": 13,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102
+      }
+    },
+    "33": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "f635cc26-5b1e-4e0c-a17e-79e09c68d2c2",
+      "effectId": "Eff_Parmon_10371_Attack04_Explosion",
+      "speed": 1.01,
+      "NodeID": 33
+    },
+    "65": {
+      "name": "stopSoundStr",
+      "UID": "1c194b94-594d-490c-b93d-0da4a12fa19a",
+      "soundId": "SFX_Combat_10371_Attack_04_Loop",
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "38": {
+      "cameraShakeId": 21124,
+      "name": "playCameraImpulseById",
+      "UID": "f32c7556-fa9a-4b9c-a093-293ad9e0cc74",
+      "target": "OWNER",
+      "NodeID": 38
+    }
+  },
+  "tickInterval": 0.05,
+  "calcResultNodeId": 23,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+  "groundSweepRadius": 0.25,
+  "impulseId": 5003,
+  "acceleration": 1
+}

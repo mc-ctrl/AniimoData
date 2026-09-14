@@ -1,0 +1,102 @@
+{
+  "BPName": "ability_10450504",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "化作圆月迅速的攻击前方的敌人，将敌人聚集在面前，再释放火焰力量攻击敌人。",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10450504001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        83
+      ],
+      "UID": "437b4fc4-3c9b-4559-b61e-ec6996e848b2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        91
+      ],
+      "NodeID": 9
+    },
+    "82": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "a109357d-27c1-41af-b89d-70d62a8908cc",
+        "target": "OWNER",
+        "NodeID": 81,
+        "attributeName": "hp_max_cur"
+      },
+      "name": "div",
+      "UID": "b4bc5fa6-3a37-4e6c-8ebd-15c2354e6b45",
+      "NodeID": 82,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "7768290d-e6c2-4bb2-b228-cd061f8f11d7",
+        "target": "OWNER",
+        "NodeID": 84,
+        "attributeName": "hp_cur"
+      }
+    },
+    "83": {
+      "rValue": 0.5,
+      "name": "greater",
+      "UID": "31043b05-f390-4722-9909-0ea256cf3800",
+      "NodeID": 83,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "a109357d-27c1-41af-b89d-70d62a8908cc",
+          "target": "OWNER",
+          "NodeID": 81,
+          "attributeName": "hp_max_cur"
+        },
+        "name": "div",
+        "UID": "b4bc5fa6-3a37-4e6c-8ebd-15c2354e6b45",
+        "NodeID": 82,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "7768290d-e6c2-4bb2-b228-cd061f8f11d7",
+          "target": "OWNER",
+          "NodeID": 84,
+          "attributeName": "hp_cur"
+        }
+      }
+    },
+    "91": {
+      "timelineId": 10450504002,
+      "name": "setCombatActionTimeline",
+      "UID": "bf9a8236-674e-4797-85b6-8e14207dca0e",
+      "target": "CASTER",
+      "NodeID": 91
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "EnvBehav_Water"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10194_Mon_Skill_AbsorbWater_Start",
+    "Eff_Parmon_10194_Mon_Skill_WaterPillar_State",
+    "Eff_Parmon_10194_Mon_Skill_WaterPillar_Start",
+    "Eff_Parmon_10194_Mon_Skill_Pressurizing"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 3,
+  "abilityParamId": 10300028,
+  "name": "普通冲撞"
+}

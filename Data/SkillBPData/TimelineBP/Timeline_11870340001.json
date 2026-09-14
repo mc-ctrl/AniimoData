@@ -1,0 +1,307 @@
+{
+  "nodeMap": {
+    "7": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "0c205ee8-02b2-4f11-a426-f252d5a5ea12",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "31": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 107105,
+      "name": "createEntity",
+      "UID": "b978e4a8-788c-4f09-af2e-2be38825f8e0",
+      "offsetRotation": [
+        0,
+        45,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 31,
+      "pos": "CASTER"
+    },
+    "9": {
+      "UID": "2011fe5f-c977-4841-b293-a949e2c925be",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18,
+          7
+        ]
+      },
+      "NodeID": 9
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5762aad5-18f0-478e-ac1b-d2845a52dd37",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Whirlwind"
+    },
+    "35": {
+      "offsetXYZ": [
+        0,
+        4,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "20f06f9d-8f74-4211-8b8b-08fb39f2f465",
+      "effectId": "Eff_Parmon_10012_Boss_Warning",
+      "speed": 1.5,
+      "NodeID": 35
+    },
+    "20": {
+      "UID": "3b7a896c-a433-48e9-946f-b0433c052dd0",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "335dfa73-0543-4a49-99ba-720fc23c4d19",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "c3d2cf8f-163e-4241-8de4-ed5a01055eef",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "UID": "37f4d74c-df2f-4769-acc0-976b3a400622",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 23
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.2,
+      "NodeID": 24,
+      "UID": "d95c10d7-5e1e-454e-88b8-131cc9fce3f2"
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          15,
+          10,
+          16,
+          30,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 12,
+      "UID": "de9a28dc-816d-43e1-818b-acc5b3ef8261"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ae6fb372-eb9a-430a-8d89-79afa6c38707",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_cast",
+      "NodeID": 10
+    },
+    "15": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "90b98cc9-aa0f-4dc9-8d28-62a38d1182df",
+      "val": {
+        "UID": "8ab40bb4-697a-4f46-8a64-bcb9139434c1",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 14
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "name": "playEffectOnPosRot",
+      "UID": "0a62338e-3937-4322-b1a9-8e803c861117",
+      "offsetRotation": [
+        0,
+        1,
+        0
+      ],
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Warning_TriWhirlwind",
+      "NodeID": 25
+    },
+    "16": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 107105,
+      "name": "createEntity",
+      "UID": "3eacce99-1aec-4fd4-a089-021ca745326b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 16,
+      "pos": "CASTER"
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          28,
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 27,
+      "UID": "44157d4f-153c-4030-b2d5-230f8dca964f"
+    },
+    "28": {
+      "name": "playEffectOnPosRot",
+      "UID": "d4693d7b-5748-4fdc-801b-6aba92e9dff1",
+      "offsetRotation": [
+        0,
+        46,
+        0
+      ],
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Warning_TriWhirlwind",
+      "NodeID": 28
+    },
+    "29": {
+      "name": "playEffectOnPosRot",
+      "UID": "947027f4-31ae-4af8-88ce-328edabe7f54",
+      "offsetRotation": [
+        0,
+        -44,
+        0
+      ],
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Warning_TriWhirlwind",
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "d69cd523-7b46-4f81-9d8e-5c4b79213d50",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "bbf4edba-2b4b-4974-b26c-e5e6bd027036",
+      "target": "OWNER",
+      "timeScale": 0.1,
+      "NodeID": 32
+    },
+    "30": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 107105,
+      "name": "createEntity",
+      "UID": "3dcd4310-eba0-4932-83f5-cdb72f78d3f6",
+      "offsetRotation": [
+        0,
+        -45,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 30,
+      "pos": "CASTER"
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          36,
+          32,
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 34,
+      "UID": "87912f5e-1936-48ac-a39b-1130bf0cd409"
+    },
+    "36": {
+      "UID": "87d5d532-9dc6-4bbd-8cc2-1cb1e1dc8e42",
+      "target": "TARGET",
+      "name": "sendAIDodgeMsg",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11870340",
+  "NodeID": 5,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    9,
+    3,
+    27,
+    34,
+    12,
+    24,
+    21
+  ],
+  "layer": "Base",
+  "length": 2.6
+}

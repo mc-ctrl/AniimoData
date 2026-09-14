@@ -1,0 +1,92 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 3,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10072_Skill_ChainLightening_Ballistics",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.5
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "18429ef2-b849-424c-b96a-bb09385945cd",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "3bd54089-ce55-4e05-b630-90d1a5c31f7f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        3
+      ]
+    },
+    "21": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "e692f0a3-cfa4-4029-a96d-f6c9d2db2d76",
+      "effectId": "Eff_Parmon_10072_Skill_Hit",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    5,
+    21
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "BPName": "ability_10720400",
+  "tickInterval": 0.05,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "defaultHitSoundType": "s",
+  "maxHitNum": 1,
+  "impulseId": 3002,
+  "acceleration": 0
+}

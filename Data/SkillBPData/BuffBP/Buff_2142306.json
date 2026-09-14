@@ -1,0 +1,175 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2142306",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    16,
+    3,
+    18
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "3acf5a44-9a20-4b83-ba5c-5de377b08aef",
+      "name": "doActionsByConditions",
+      "NodeID": 3,
+      "elseActionIds": [
+        2
+      ]
+    },
+    "13": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "f01d65f9-dc67-4953-80d6-d509d2b40af3",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "14": {
+      "cdTime": 20,
+      "name": "forceSetSkillCD",
+      "NodeID": 14,
+      "UID": "c164810d-297a-4f4e-8257-4ce884fe96de",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 14230200
+    },
+    "10": {
+      "rValue": {
+        "calcId": 2142306,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 15,
+        "UID": "71a8da3c-f11c-450e-91d1-ef165a7f08b5",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "greater",
+      "UID": "4a33fcbf-2ca7-4b65-a14e-1b17c5449272",
+      "NodeID": 10,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "efd30fee-6ba9-488a-b955-b9908c80fa94",
+        "target": "OWNER",
+        "NodeID": 9,
+        "attributeName": "ep_cur"
+      }
+    },
+    "15": {
+      "calcId": 2142306,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 15,
+      "UID": "71a8da3c-f11c-450e-91d1-ef165a7f08b5",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "f4b396ff-e68d-4b71-a20b-d1560ba3626f",
+      "to": 14230200,
+      "NodeID": 7,
+      "from": 14230200
+    },
+    "16": {
+      "value": {
+        "calcId": 2142306,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 15,
+        "UID": "71a8da3c-f11c-450e-91d1-ef165a7f08b5",
+        "name": "getParamByLuaConfig"
+      },
+      "epCostReason": 1,
+      "name": "costEp",
+      "UID": "80ebf194-d6ca-4837-8359-14c6cad8f506",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "5": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "346bacea-08b1-4874-948f-aa3daa4b7dcb",
+      "to": 14230201,
+      "NodeID": 5,
+      "from": 14230200
+    },
+    "19": {
+      "buffId": 2142308,
+      "name": "removeBuff",
+      "UID": "46164332-85b2-496f-8f14-abfdd1097795",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "18": {
+      "name": "calcResult",
+      "UID": "dde25e16-2bae-44d0-9b7d-ce77d0b01187",
+      "target": "OWNER",
+      "NodeID": 18,
+      "calcInfoByLuaConfig": {
+        "id": 2142306,
+        "sp_cur": "param1",
+        "type": 1
+      }
+    },
+    "2": {
+      "abilityTarget": "OWNER",
+      "forceCast": true,
+      "NodeID": 2,
+      "UID": "657e748b-8903-424a-b07a-eab7a1af6bfb",
+      "name": "castAbility",
+      "abilityId": 14230201
+    },
+    "11": {
+      "UID": "8ca1cfa1-3bb1-456e-9a37-d385f960b435",
+      "conditionIds": [
+        10,
+        12
+      ],
+      "name": "conditionOr",
+      "NodeID": 11
+    },
+    "20": {
+      "buffId": 2142304,
+      "name": "removeBuff",
+      "UID": "948a2afc-1232-41b8-b6d4-289cd4881cc6",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "rValue": {
+        "calcId": 2142306,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 15,
+        "UID": "71a8da3c-f11c-450e-91d1-ef165a7f08b5",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "equal",
+      "UID": "6f2cdc94-3c91-4ff3-8e00-30fb668932cd",
+      "NodeID": 12,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "efd30fee-6ba9-488a-b955-b9908c80fa94",
+        "target": "OWNER",
+        "NodeID": 9,
+        "attributeName": "ep_cur"
+      }
+    }
+  },
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "onBuffDestroyIds": [
+    14,
+    7,
+    19,
+    20
+  ],
+  "onBuffStartIds": [
+    5,
+    13
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "BPName": "ability_13930130",
+  "NodeID": 1,
+  "UID": "9dc23fc1-7db2-4ea8-9c4f-82f45b83b2cc",
+  "abilityIndicator": 1,
+  "abilityParamId": 10301081,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 13930130001,
+      "name": "setCombatActionTimeline",
+      "UID": "08270518-3696-47ff-a382-f70a831fef68",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "49": {
+      "key": "9139303",
+      "name": "setCacheVal",
+      "UID": "bb96d46d-285d-45be-a2d5-728af3a8d559",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 49
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_JumpBite_02"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Water_Blunt",
+    "Eff_Buff_Movement_Arrow_Up"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      1,
+      1,
+      11.5,
+      1.5,
+      0.5
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    49
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

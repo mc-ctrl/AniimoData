@@ -1,0 +1,133 @@
+{
+  "61214411": {
+    "graphId": 61214411,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 3,
+        "sourcePortName": "state",
+        "targetNode": 4,
+        "targetPortName": "Value"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "Out",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "2",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 5,
+        "sourcePortName": "3",
+        "targetNode": 6,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "c2552f2f5adbfbf04a9bb19451793874",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {
+          "LevelItemId": 61214088,
+          "DoOnce": false,
+          "fieldName": "state",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "state"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "c875e56d-a1cb-4353-9e64-6684cc389397"
+      },
+      "4": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchIntNode",
+        "startInt": 0,
+        "uid": "541f62f9-977a-47f9-93af-04cd8181c053",
+        "endInt": 2
+      },
+      "6": {
+        "_inputPortValues": {
+          "Success": true
+        },
+        "_outputPortValues": {},
+        "className": "FinishDungeonNode",
+        "uid": "00920eb1-bcc4-4c37-ae57-ba46894cf620"
+      },
+      "5": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "a51e1dab-8d88-45f8-acf8-7ea1447121d7",
+        "portCount": 3
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "49b40042-f7ec-49f3-b04f-7b0d93db3e70"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "60835727-fa33-46bf-a3bb-1f2585534a64",
+        "portCount": 5
+      },
+      "2": {
+        "_inputPortValues": {
+          "DoOnce": true,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "DungeonNode",
+        "eventParams": {
+          "spawnerId": 0
+        },
+        "uid": "ec34332c-9eb8-4c5b-bf96-7c9ae93242c6",
+        "postActions": {},
+        "preActions": [
+          {
+            "eventName": "fbForceTmpPetTeam",
+            "eventParams": [
+              99999,
+              {}
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

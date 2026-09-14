@@ -1,0 +1,120 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "UID": "b06784a9-ceff-4acf-9b8b-54566594cb35",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "c89c932a-4dce-41a9-bb85-829c277936c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "13": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 7,
+      "NodeID": 13,
+      "UID": "1ec6d47a-6e80-4f68-a014-0aae6128a4e8",
+      "onUpdate": {
+        "actionIds": [
+          12
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          12
+        ]
+      }
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4c07e1df-6469-451b-ad88-66508e661af9",
+      "effectId": "Eff_Parmon_10187_Skill_Ex02",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "name": "actOnTargets",
+      "UID": "e4b23bd6-fbb7-4732-84d5-a2d6b09d29ac",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            9,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 12
+    },
+    "11": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 2118706,
+      "NodeID": 11,
+      "UID": "5b43996c-253b-46d1-bb6b-759df787f509",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6d57082f-7b04-47de-ae53-504fd0195ffd",
+      "effectId": "Eff_Parmon_10187_Skill_Ex03",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3544074f-2228-42d0-854c-3bba224a5721",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10187_Skill_Ex_2",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2118701",
+  "NodeID": 1,
+  "UID": "fed0390b-61d5-41f0-b009-32f669367ff4",
+  "eventIds": [
+    4,
+    13,
+    8
+  ],
+  "layer": "Base",
+  "length": 8
+}

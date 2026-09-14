@@ -1,0 +1,130 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "NodeID": 3,
+      "UID": "4611452d-7bac-45c2-9183-c77becb0b116",
+      "effectId": "Eff_Parmon_10174_Skill_Wall_End",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "8e8f0de1-d461-481a-813b-9a9e6537832c",
+      "effectId": "Eff_Parmon_10174_Skill_Wall_2",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "7": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 7
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.11,
+      "NodeID": 35,
+      "UID": "7c68dbad-0904-4866-ba2f-b10daf889de8"
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "302ebec4-9434-49c3-9562-c3368a35ea4d",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_Dramotter_skill_wall_summon",
+      "NodeID": 27
+    },
+    "28": {
+      "UID": "f29be3e3-f333-4a9a-8691-20d3f44cbb64",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "82a7ee15-836e-4364-84ed-99174e973bac",
+      "soundId": "parmon_Dramotter_skill_wall_destroy",
+      "NodeID": 29
+    },
+    "30": {
+      "offsetXYZ": [
+        0.2,
+        0,
+        0
+      ],
+      "NodeID": 30,
+      "UID": "a5b48e24-8338-4eeb-b6cf-7f46a1743937",
+      "effectId": "Eff_Parmon_10174_Skill_Wall_2",
+      "global": true,
+      "pos": "OWNER",
+      "speed": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "32": {
+      "UID": "262c7a9c-1bbf-46fe-8cc5-1201c8d377d1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          30,
+          33
+        ]
+      },
+      "NodeID": 32
+    },
+    "33": {
+      "name": "hideModel",
+      "UID": "161afac3-53ec-45a7-afd5-d965b98d6f55",
+      "target": "OWNER",
+      "NodeID": 33,
+      "maxHideTime": 0.11
+    },
+    "34": {
+      "UID": "2261fe85-3109-4bb8-8f4f-088cf68c89a7",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 34
+    },
+    "5": {
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        3,
+        13,
+        29
+      ],
+      "NodeID": 5
+    }
+  },
+  "BPName": "timeline_2117401",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    7,
+    28,
+    32,
+    35
+  ],
+  "layer": "Base",
+  "length": 9999
+}

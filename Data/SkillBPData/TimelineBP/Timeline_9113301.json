@@ -1,0 +1,320 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 9113301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "cd84980a-3780-4392-a44c-64db7893d8d7",
+      "target": "TARGET",
+      "NodeID": 5,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash",
+            "rotAngle": 45,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000
+      }
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "5ca733ab-27ad-4e22-89a8-75facab3f327",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        5,
+        29
+      ]
+    },
+    "9": {
+      "tickInterval": 0.15,
+      "eventType": "NotifyState",
+      "endTime": 1.65,
+      "NodeID": 9,
+      "UID": "41925b7f-2bc5-4aa0-a8dd-64f4a2bf0061",
+      "onUpdate": {
+        "actionIds": [
+          7
+        ]
+      },
+      "startTime": 1.2,
+      "onEnter": {
+        "actionIds": [
+          7
+        ]
+      }
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 20,
+      "UID": "8c1bc701-f8f4-44c2-a6aa-64ad757f9388"
+    },
+    "21": {
+      "offsetXYZ": [
+        0,
+        0.83,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "870ce00c-4132-46bb-aec0-98452960ff9e",
+      "effectId": "Eff_Parmon_10133_Skill_BladeSweep_Ice_Field_002_Boss",
+      "target": "OWNER",
+      "NodeID": 21,
+      "speed": 1,
+      "offsetRotation": [
+        7,
+        100,
+        196
+      ],
+      "scale": 2
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.35,
+      "NodeID": 22,
+      "UID": "a6d6b4b4-973e-40d4-adcd-83104e83344f"
+    },
+    "13": {
+      "playTime": 1.2,
+      "stayTime": 0.1,
+      "name": "playIndicatorEff",
+      "UID": "5843e35f-b967-4449-b584-e3e3756f1954",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          4,
+          3,
+          1
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 24,
+      "UID": "a734c51f-16ee-42e7-b8e9-4d3c2faf3b2b"
+    },
+    "14": {
+      "UID": "6229697d-1d20-4b8e-85d5-6b898dd3afae",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 14
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4cb0b793-74e1-48b1-9a3b-8ac98ef00b65",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10131_skill_bladesweep_ice_field",
+      "NodeID": 15
+    },
+    "25": {
+      "offsetXYZ": [
+        0,
+        0.85,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "714dd174-54f3-4dc1-a5a7-eea07c03ea29",
+      "effectId": "Eff_Parmon_10133_Skill_BladeSweep_Ice_Field_002_Boss",
+      "target": "OWNER",
+      "NodeID": 25,
+      "speed": 1,
+      "offsetRotation": [
+        13,
+        121,
+        178
+      ],
+      "scale": 2
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.05,
+      "NodeID": 16,
+      "UID": "2f74dd01-9e08-49de-8be6-ec66de862768"
+    },
+    "17": {
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "048889b6-082c-4c71-9bef-76c167b73f7c",
+      "effectId": "Eff_Parmon_10133_Skill_BladeSweep_Ice_Field_001_Boss",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "29": {
+      "value": {
+        "calcId": 9113301,
+        "calcType": 4,
+        "paramName": "param1",
+        "NodeID": 28,
+        "UID": "df32cbd6-5029-446c-88da-ac168c7686bd",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "7a664a11-50e3-476b-89e5-b78456134e89",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "360315df-d905-42de-bf44-2fa3b773278e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 18
+    },
+    "28": {
+      "calcId": 9113301,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 28,
+      "UID": "df32cbd6-5029-446c-88da-ac168c7686bd",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        0.85,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "594c3f24-9866-487f-b0fd-da5373eff7a9",
+      "effectId": "Eff_Parmon_10133_Skill_BladeSweep_Ice_Field_002_Boss",
+      "target": "OWNER",
+      "NodeID": 19,
+      "speed": 1,
+      "offsetRotation": [
+        15,
+        116,
+        -180
+      ],
+      "scale": 2
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.65,
+      "NodeID": 26,
+      "UID": "2d3b4262-4722-4b85-9dba-dae3ce7548c0"
+    },
+    "23": {
+      "offsetXYZ": [
+        0,
+        0.85,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "e217e133-d234-44e9-99a7-2e49f869f5ae",
+      "effectId": "Eff_Parmon_10133_Skill_BladeSweep_Ice_Field_002_Boss",
+      "target": "OWNER",
+      "NodeID": 23,
+      "speed": 1,
+      "offsetRotation": [
+        27,
+        -78,
+        -180
+      ],
+      "scale": 2
+    }
+  },
+  "BPName": "timeline_9113301",
+  "NodeID": 1,
+  "UID": "d62a301e-d5d0-4d37-bc93-e12a81c597e0",
+  "eventIds": [
+    14,
+    9,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26
+  ],
+  "layer": "Base",
+  "length": 5
+}

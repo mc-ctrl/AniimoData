@@ -1,0 +1,339 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102330",
+  "name": "衔接强化普攻",
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffStartIds": [
+    3,
+    15
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "name": "stopEffectStr",
+      "UID": "49e7f057-daf3-4cd1-aef1-8a417d1d1bd5",
+      "effectId": "Eff_Parmon_10023_Skill_ShieldReverse_Wind_Enter_liuli",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "39": {
+      "NodeID": 39,
+      "name": "checkReceiveAttackDirInAngleRange",
+      "leftEndAngle": 90,
+      "UID": "9ddfc4aa-cf83-46c7-b65b-b8ef45376f6e",
+      "rightEndAngle": 90,
+      "rightStartAngle": 0,
+      "leftStartAngle": 0
+    },
+    "6": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "d29eb43b-db85-4139-829c-98b006623044",
+      "to": 10230210,
+      "NodeID": 6,
+      "from": 10230210
+    },
+    "42": {
+      "buffId": 2102303,
+      "name": "removeBuff",
+      "UID": "7c416678-cb2d-49a7-a44a-83f64b273653",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "799b0387-6b0b-4b7c-9b90-f91d668e7277",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10023_Block_04",
+      "NodeID": 35
+    },
+    "44": {
+      "name": "stopSoundStr",
+      "UID": "7a09afa1-db2c-4c45-9f98-9f2782a88f5c",
+      "soundId": "SFX_Combat_10023_Block_02",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "8": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "7aa12159-5ff2-45c3-b7e1-eeb4f8426b4e",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "50": {
+      "rValue": {
+        "UID": "6a60cf50-d29a-4bb0-a34f-1452aa5ecd50",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 49
+      },
+      "name": "equal",
+      "UID": "26a73bd2-71cd-40b2-874b-96a85e8d08e3",
+      "NodeID": 50,
+      "lValue": {
+        "UID": "af2e7aae-f1dd-41bc-bb88-e1c7fb0a38fc",
+        "target": "CURPET",
+        "name": "getTargetId",
+        "NodeID": 51
+      }
+    },
+    "19": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 23,
+      "NodeID": 19,
+      "UID": "5f43f050-f1f3-4f3e-a5b9-78ca8eff8ac0",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5000,
+      "actionIds": [
+        23,
+        28,
+        33
+      ]
+    },
+    "23": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30404,
+        "hitFrameFreezeId": 10032,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 5000
+      },
+      "UID": "1b7d9fc6-48b4-4f60-aa64-aacb3751879a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 23
+    },
+    "46": {
+      "UID": "e4eaf3b7-1026-4294-9e2a-7f970458e449",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10023_Skill_ShieldReverse_Wind_Enter_02",
+      "NodeID": 46
+    },
+    "43": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "292fd713-58dc-454d-b491-a69b81ab8e67",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "21": {
+      "key": "1",
+      "duration": 0.15,
+      "actionIds": [
+        19,
+        36
+      ],
+      "NodeID": 21,
+      "UID": "e28282f6-9f40-4b16-b781-06ee34012ea6",
+      "name": "addEntityTimer"
+    },
+    "3": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "da40a24c-9af0-45f0-b056-5e5c3615563f",
+      "to": 10230211,
+      "NodeID": 3,
+      "from": 10230210
+    },
+    "13": {
+      "key": "1",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 13,
+      "UID": "16f18c47-bda3-4bb6-8d5a-886bbb5c3cc3",
+      "cd": 0.5,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "45": {
+      "name": "stopSoundStr",
+      "UID": "34727d2e-365f-499f-b715-e6f269d4df29",
+      "soundId": "SFX_Combat_10023_Block_01",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "3baacdd0-1e90-4830-ab64-18bab219c631",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "key": "reflect",
+      "actionIds": [
+        8,
+        29,
+        32,
+        34,
+        30,
+        35,
+        21,
+        48
+      ],
+      "NodeID": 10,
+      "UID": "51298bfe-90e5-4175-9081-d59b3af84301",
+      "cd": 1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "interval": 0.5,
+      "UID": "8d759393-464a-4c5c-84a0-39976d422bdc",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 15
+    },
+    "47": {
+      "buffId": 2102206,
+      "name": "removeBuff",
+      "UID": "b47a30e9-70ef-4049-8c4d-e197e189ff37",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "16": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "c895fd28-beb5-416c-ab6e-c253eb49e1fa",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "48": {
+      "cameraShakeId": 30404,
+      "NodeID": 48,
+      "UID": "b350323e-d756-4aab-8e9a-bc2e2181acde",
+      "target": "OWNER",
+      "name": "playCameraImpulseById",
+      "ignoreShakeCD": true
+    },
+    "28": {
+      "target": "TARGET",
+      "duration": 0.2,
+      "speed": 10,
+      "NodeID": 28,
+      "UID": "2f0b6d94-17ff-47bb-9dfd-727dac946844",
+      "displacementDir": "OUT",
+      "displacementTarget": "OWNER",
+      "name": "forceDisplacement"
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9adb6d8c-3e0f-4aa4-b67f-f75f4a60be7a",
+      "effectId": "Eff_Parmon_10023_Skill_ShieldReverse_Wind_EndLight_liuli",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8750664b-1878-48f0-b45e-b903d93e9901",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10023_Block_03",
+      "NodeID": 30
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "241d9518-7049-4140-be76-373abb4ea3ca",
+      "effectId": "Eff_Parmon_10023_Skill_ShieldReverse_Wind_Enter",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "bebefc1d-a6e6-4c9d-8e43-ad424b0cd6ff",
+      "name": "playRadialBlur",
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 33
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "73a25860-cff3-4a05-a8cb-ebacde2843af",
+      "effectId": "Eff_Parmon_10023_Skill_ShieldReverse_Wind_EndLight02_liuli",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "36": {
+      "buffId": 2102330,
+      "name": "removeBuff",
+      "UID": "6d17d608-e4b3-4f78-ac0a-bd79955a661e",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    37,
+    16
+  ],
+  "isUnSummonFreeze": false
+}

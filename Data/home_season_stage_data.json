@@ -1,0 +1,42 @@
+{
+  "101": {
+    "stageQuestId": 6519001,
+    "endDayTimeRefId": 11012,
+    "seasonId": 1,
+    "startDayTimeRefId": 11001,
+    "moduleList": [
+      101,
+      102,
+      103,
+      105,
+      108
+    ]
+  },
+  "103": {
+    "startDayTimeRefId": 11031,
+    "endDayTimeRefId": 11002,
+    "seasonId": 1,
+    "moduleList": [
+      101,
+      102,
+      103,
+      105,
+      106,
+      107,
+      108
+    ]
+  },
+  "102": {
+    "startDayTimeRefId": 11021,
+    "endDayTimeRefId": 11022,
+    "seasonId": 1,
+    "moduleList": [
+      101,
+      102,
+      103,
+      105,
+      106,
+      108
+    ]
+  }
+}

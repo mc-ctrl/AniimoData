@@ -1,0 +1,78 @@
+{
+  "duration": 0.75,
+  "calcResultNodeId": 23,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10203_Skill_OutEx_01",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    30,
+    74,
+    68
+  ],
+  "nodeMap": {
+    "66": {
+      "name": "stopEffectStr",
+      "UID": "b059730e-5abc-432b-b80a-8bfc3b3c2124",
+      "effectId": "Eff_Parmon_10203_Skill_EX_01D",
+      "target": "OWNER",
+      "NodeID": 66
+    },
+    "74": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "d064178e-5d08-4084-ba0a-08e2a7f3d096",
+      "effectId": "Eff_Parmon_10203_Skill_EX_06",
+      "speed": 1,
+      "NodeID": 74
+    },
+    "68": {
+      "key": "ability_1203990068",
+      "duration": 0.217,
+      "actionIds": [
+        75,
+        66
+      ],
+      "NodeID": 68,
+      "UID": "53c4f9aa-da9f-4ebe-8aa2-7247718bfae6",
+      "name": "addEntityTimer"
+    },
+    "75": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "97f09137-3563-4bc1-8a7f-1eeea1dcd3b2",
+      "effectId": "Eff_Parmon_10203_Skill_EX_07",
+      "speed": 1,
+      "NodeID": 75
+    },
+    "30": {
+      "pos": "PROJECTILE",
+      "name": "createSpellField",
+      "UID": "f31f44ab-8588-44c2-9709-e44bb1fb70e3",
+      "timelineId": 12039900002,
+      "destroyOnMasterDead": true,
+      "NodeID": 30
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.05,
+  "sweepShape": 0,
+  "BPName": "ability_12039900",
+  "tickInterval": 0.05,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 5003,
+  "acceleration": 0
+}

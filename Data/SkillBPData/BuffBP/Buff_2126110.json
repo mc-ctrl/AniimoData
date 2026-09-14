@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126110",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "tags": [
+    2
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "hideModel",
+      "UID": "8f07fa51-a6a5-448f-be61-a756d064469e",
+      "target": "OWNER",
+      "NodeID": 8,
+      "maxHideTime": 20
+    },
+    "4": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "07260ff4-534e-4d3c-9ed3-990be67559c7",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 4
+    },
+    "9": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "f9a0f53f-87ed-4031-a327-ac6c18d178e0",
+      "name": "addTimer"
+    },
+    "6": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "a70199c1-d869-4100-82b1-ce5fd3e25c0d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "e9506344-1969-4f21-bb38-b15239a10b55",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 10
+    }
+  },
+  "onBuffDestroyIds": [
+    6,
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    9
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132407",
+  "calcInfoByLuaConfig": {
+    "id": 2132407,
+    "crit_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Attack_Arrow_Up"
+    }
+  ]
+}

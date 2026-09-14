@@ -1,0 +1,91 @@
+{
+  "Wet": {
+    "order": 80,
+    "abilityInteract": [
+      "T_Interact_Electric",
+      "T_Interact_Ice",
+      "T_Interact_Fire",
+      "T_Interact_Wind"
+    ],
+    "overrideTag": {
+      "Wettable": 0
+    }
+  },
+  "Wettable": {
+    "order": 13,
+    "abilityInteract": [
+      "T_Interact_Water"
+    ]
+  },
+  "Frozen": {
+    "order": 60,
+    "abilityInteract": [
+      "T_Interact_Electric"
+    ],
+    "overrideTag": {
+      "Freezable": 0
+    }
+  },
+  "Breakable": {
+    "order": 17,
+    "abilityInteract": [
+      "T_Interact_PhysicsHeavy",
+      "T_Interact_PhysicsLv4",
+      "T_Interact_PhysicsLight",
+      "T_Interact_PhysicsMiddle",
+      "T_Interact_PhysicsSpecial"
+    ]
+  },
+  "Burning": {
+    "order": 90,
+    "abilityInteract": [
+      "T_Interact_Water",
+      "T_Interact_Ice",
+      "T_Interact_Wind"
+    ],
+    "overrideTag": {
+      "Flammable": 0
+    }
+  },
+  "Conducted": {
+    "order": 70,
+    "abilityInteract": [
+      "T_Interact_Electric",
+      "T_Interact_Fire",
+      "T_Interact_Wind"
+    ],
+    "overrideTag": {
+      "Conductive": 0
+    }
+  },
+  "Conductive": {
+    "order": 15,
+    "abilityInteract": [
+      "T_Interact_Electric"
+    ]
+  },
+  "Explosive": {
+    "order": 19,
+    "abilityInteract": [
+      "T_Interact_Fire"
+    ]
+  },
+  "Flammable": {
+    "order": 20,
+    "abilityInteract": [
+      "T_Interact_Fire"
+    ]
+  },
+  "Freezable": {
+    "order": 14,
+    "abilityInteract": [
+      "T_Interact_Ice"
+    ]
+  },
+  "Meltable": {
+    "order": 18,
+    "abilityInteract": [
+      "T_Interact_Fire"
+    ]
+  }
+}

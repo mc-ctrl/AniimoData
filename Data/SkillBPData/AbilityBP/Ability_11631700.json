@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_11631700",
+  "NodeID": 1,
+  "UID": "0d60a06c-3db4-4b70-8523-eec15727b526",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11631700001,
+      "name": "setCombatActionTimeline",
+      "UID": "a88dfbe4-bb3e-4000-a0d1-d5bc5d13fc87",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_SpikeAttack",
+    "Skill_MagicLeaf",
+    "IdleSpecial"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10133_Skill_EX_04_Small"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10200240
+}

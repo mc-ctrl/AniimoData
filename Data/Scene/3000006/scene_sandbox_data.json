@@ -1,0 +1,35 @@
+{
+  "72563485": {
+    "areaType": 124,
+    "position": [
+      -1566.81,
+      87.85,
+      1004.74
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "forceSync": false,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 503,
+    "publishTags": [
+      "3DAY_系统"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "板块1-星落森林_其他关卡_星落森林篝火元件",
+    "spawners": [
+      72799120
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 72563485,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "keepGraphOnFinished": false,
+    "owner": "蔡颖",
+    "chunk": 994290
+  }
+}

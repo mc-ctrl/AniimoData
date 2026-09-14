@@ -1,0 +1,57 @@
+[
+  [
+    {
+      "randomReward": 14101,
+      "catchAddProp": 0,
+      "randomProp": 0.0025
+    },
+    {
+      "randomReward": 14102,
+      "catchAddProp": 0,
+      "randomProp": 0.0025
+    },
+    {
+      "randomReward": 14103,
+      "catchAddProp": 0,
+      "randomProp": 0.0025
+    },
+    {
+      "randomReward": 14104,
+      "catchAddProp": 0,
+      "randomProp": 0.0025
+    },
+    {
+      "randomReward": 14105,
+      "emojiId": "Happy",
+      "catchAddProp": 0,
+      "permEff": "-1",
+      "randomProp": 0.005
+    },
+    {
+      "randomReward": 14106,
+      "catchAddProp": 0,
+      "randomProp": 0.005
+    },
+    {
+      "randomReward": 14107,
+      "catchAddProp": 0,
+      "randomProp": 0.005
+    },
+    {
+      "randomReward": 14108,
+      "catchAddProp": 0,
+      "randomProp": 0.005
+    },
+    {
+      "randomReward": 14109,
+      "catchAddProp": 0,
+      "randomProp": 0.005
+    },
+    {
+      "randomReward": 14110,
+      "catchAddProp": 0,
+      "emojiId": "Love",
+      "randomProp": 0.01
+    }
+  ]
+]

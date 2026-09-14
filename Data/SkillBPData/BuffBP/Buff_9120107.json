@@ -1,0 +1,153 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9120107",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91201071,
+      "NodeID": 3,
+      "UID": "d8f447cd-b2e7-43ba-bcb2-f998abef194b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "26ce2d59-8546-4b03-80ba-059f8b08b05c",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "buffId": 91201073,
+      "name": "removeBuff",
+      "UID": "ab70adb4-54a5-4c44-9cd8-11b4bab59fc5",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "buffId": 91201071,
+      "name": "removeBuff",
+      "UID": "d3bc0f18-80e0-4439-98d2-7496199f819d",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "b50ba540-a471-4169-a9a8-cfbc2bcce778",
+      "name": "removeTimer",
+      "key": "LeaveCombat",
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "ebcf9633-e56a-49e4-b963-f334caeac2ba",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        5,
+        15
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "buffId": 91201073,
+      "name": "removeBuff",
+      "UID": "aaad9579-1197-4d4a-ae08-19fac49d913a",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "4135daf8-68c1-4725-a4a0-39aaa0586431",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "22": {
+      "buffId": 91201071,
+      "name": "hasBuff",
+      "UID": "a2b2d6ad-b1ca-4e2d-a11d-15a8318c529c",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "21": {
+      "UID": "d13c8cb1-270f-480b-ad1a-229b9397ba35",
+      "conditionIds": [
+        20,
+        22
+      ],
+      "name": "conditionOr",
+      "NodeID": 21
+    },
+    "18": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "f100686c-7604-48f1-b873-e787b58fd87d",
+      "NodeID": 18,
+      "lValue": {
+        "key": "912031",
+        "name": "getCacheVal",
+        "UID": "3ecfa6b9-4a38-4512-aeb0-a293eff4750b",
+        "target": "OWNER",
+        "NodeID": 17
+      }
+    },
+    "5": {
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "fe7e52f6-e759-4dfe-ba92-f6c7729e7e29",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        3,
+        16
+      ]
+    },
+    "19": {
+      "key": "912031",
+      "name": "setCacheVal",
+      "UID": "972703dd-89c3-4d10-8302-7fdb27e56830",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 19
+    },
+    "20": {
+      "buffId": 91201073,
+      "name": "hasBuff",
+      "UID": "d44f3843-bac9-4437-a173-3d76465e1d2c",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "key": "LeaveCombat",
+      "duration": 3,
+      "actionIds": [
+        10,
+        14
+      ],
+      "NodeID": 12,
+      "UID": "ddfd8346-d102-4857-95bb-d0df1de1ea04",
+      "name": "addTimer"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    13
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_10121400",
+  "NodeID": 1,
+  "UID": "3b920889-dcc2-407a-82cc-b45031291735",
+  "abilityParamId": 11100030,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 10121400001,
+      "name": "setCombatActionTimeline",
+      "UID": "8503fe97-6c91-436e-827f-31de9a57a2f4",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Swift"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10011_Attack_Hit",
+    "Eff_Parmon_10012_Skill_Swift_Bullet",
+    "Eff_Parmon_10012_Skill_Swift_Start",
+    "Eff_Parmon_10012_Skill_Swift_Trail",
+    "Eff_Parmon_10012_Skill_Swift_B",
+    "Eff_Parmon_10012_Boss_Warning",
+    "Eff_Parmon_10012_Skill_Swift_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

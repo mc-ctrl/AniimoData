@@ -1,0 +1,110 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91283116",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    9,
+    13
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "9f3b970f-2ae1-4eae-a640-8c26458f5f88",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "9": {
+      "actionIds": [
+        11
+      ],
+      "name": "actOnTargets",
+      "UID": "9bf299a3-0a5c-4969-bc05-e6f605e0de54",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 9
+    },
+    "6": {
+      "renderNameFilter": [
+        "MI_Parmon_10283_Body_03a"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 6,
+      "UID": "688c9d53-4ffd-4786-9344-f687b95c01ad",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10283_Rock",
+      "name": "playPreset"
+    },
+    "13": {
+      "value": 20,
+      "name": "applyECSElement",
+      "UID": "2ce4a59d-cbfc-4354-87b5-a4e4cca0cde3",
+      "element": 0,
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "11": {
+      "templateId": 104302,
+      "name": "destroyCreatedEntity",
+      "UID": "ffa0571c-b1ae-4eb7-bf75-2a2b473d1093",
+      "target": "TARGET",
+      "entityType": "Creation",
+      "NodeID": 11
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "71b9ce45-9edc-49a0-ae51-0cee869e7d93",
+      "effectId": "Eff_Parmon_10283_Skill_Active",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": -1,
+      "speed": 1,
+      "NodeID": 2,
+      "UID": "899f9faa-5832-44c4-b014-0243d3e70605",
+      "effectId": "Eff_Parmon_10283_Skill_Active",
+      "offsetXYZ": [
+        0,
+        -0.1,
+        0
+      ],
+      "name": "playEffectStr"
+    }
+  },
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "onBuffDestroyIds": [
+    12
+  ],
+  "onBuffStartIds": [
+    2,
+    6,
+    4
+  ]
+}

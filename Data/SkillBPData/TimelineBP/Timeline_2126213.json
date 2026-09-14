@@ -1,0 +1,48 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "affc0997-b123-48bd-b70d-980143f2b3c4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "6": {
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "eventType": "Notify",
+      "time": 15,
+      "NodeID": 6,
+      "UID": "f56dcc4e-6c76-461f-8726-c8f7d9d09d1b"
+    },
+    "5": {
+      "UID": "16e86a94-3c06-4c0a-8fba-f95c4b319ffd",
+      "name": "destroyEntity",
+      "NodeID": 5
+    },
+    "2": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b44ee629-98dd-4732-91ec-12637b88216d",
+      "effectId": "Eff_Parmon_10262_Skill_Cloud",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2126213",
+  "NodeID": 1,
+  "UID": "07727928-ffb7-48b8-9fdc-02cbb826eef0",
+  "eventIds": [
+    3,
+    6
+  ],
+  "layer": "Parallel",
+  "length": 20
+}

@@ -1,0 +1,211 @@
+{
+  "duration": 5,
+  "calcResultNodeId": 124,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_69993_Skill_FireBall_Bullet",
+  "nodeMap": {
+    "128": {
+      "pos": {
+        "UID": "3a6f79ef-2272-4b99-81e1-9b75c4c215e8",
+        "name": "getProjectilePos",
+        "NodeID": 127
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "7cb54c9e-ef6b-41da-8027-28f9c9e25b34",
+      "effectId": "Eff_Parmon_69993_Skill_FireBall_Explode",
+      "speed": 1,
+      "NodeID": 128
+    },
+    "70": {
+      "targetPos": "TARGET",
+      "name": "playSoundAtPos",
+      "UID": "b8b1d5b7-5239-4608-a90c-c2c094756874",
+      "soundId": "SFX_Combat_10431_MudBowling_Explode",
+      "NodeID": 70
+    },
+    "121": {
+      "UID": "a2e5fd0d-0da9-4637-a573-e0a1fdc6b884",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 121
+    },
+    "71": {
+      "pos": "TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "37be3cab-b6af-4858-aa6d-79b0c96aed36",
+      "effectId": "Eff_Parmon_69993_Skill_FireBall_Explode",
+      "speed": 1,
+      "NodeID": 71
+    },
+    "122": {
+      "conditionActionIds": [
+        121
+      ],
+      "UID": "0ec05f43-73a2-41f9-9a79-839e37ad830c",
+      "name": "doActionsByConditions",
+      "NodeID": 122,
+      "elseActionIds": [
+        125,
+        128,
+        129
+      ]
+    },
+    "65": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "dbfe90ed-1c0b-4fb5-b7e8-7c5baec13899",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 699930300,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "NodeID": 65
+    },
+    "124": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "aa7f196f-478d-44e8-98f2-310c9c199b9c",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 699930300,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "NodeID": 124
+    },
+    "66": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 65,
+      "NodeID": 66,
+      "UID": "4bb4e930-f27e-4278-8267-b2e62b4c66e6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        65
+      ]
+    },
+    "125": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 124,
+      "NodeID": 125,
+      "UID": "10dacb06-f4be-4796-8baf-e01a96ac04c2",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        124
+      ]
+    },
+    "129": {
+      "targetPos": {
+        "UID": "3a6f79ef-2272-4b99-81e1-9b75c4c215e8",
+        "name": "getProjectilePos",
+        "NodeID": 127
+      },
+      "name": "playSoundAtPos",
+      "UID": "6e65aaee-ae69-4a4b-b006-ad6cbf113690",
+      "soundId": "SFX_Combat_69993_Skill_FireBall_Explode",
+      "NodeID": 129
+    }
+  },
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "stickGravity": 0.5,
+  "maxHitNum": 1,
+  "maxHeightOffset": 5,
+  "stickPitchMaxOffset": 40,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    122
+  ],
+  "onProjectileHitIds": [
+    66,
+    71,
+    70
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.4,
+  "sweepShape": 0,
+  "BPName": "ability_699930300",
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3002,
+  "acceleration": 0
+}

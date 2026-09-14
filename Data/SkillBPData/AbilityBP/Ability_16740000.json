@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_16740000",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "desc": "",
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 16740000001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Rock_Slash",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "藏宝蟹普攻1段",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    16740001,
+    16740002,
+    16740003
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 16400000
+}

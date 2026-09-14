@@ -1,0 +1,146 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "key": "delay1111",
+      "duration": 0.01,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "07c1f387-dbda-46e9-b76b-167ec986f614",
+      "name": "addEntityTimer"
+    },
+    "4": {
+      "actionIds": [
+        2,
+        26
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "a1f59583-8ab9-4015-b14e-00e8cd24cd8b",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "94147779-24b6-44d0-a0d4-10fd0dae1ddb",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "57968cea-3478-475e-8df2-45ff291d3410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21,
+          14,
+          8
+        ]
+      },
+      "NodeID": 10
+    },
+    "7": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "1680266a-4b6d-47a9-ab0e-3fb6ef6c7de6",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "aaccdbdb-8208-41d5-8729-757a989b2cbe",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_LotusLeafEssence_End",
+      "NodeID": 26
+    },
+    "8": {
+      "target": "OWNER",
+      "actionIds": [
+        7
+      ],
+      "attributeName": "hp_cur",
+      "UID": "bd285c7c-27e5-4e3a-9834-6afdd5792e9c",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 8
+    },
+    "17": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "6339187b-4a86-4d1b-8758-7cebbd7f19e5",
+      "NodeID": 17,
+      "lValue": {
+        "UID": "78939778-5388-4d4e-ad29-73609f356a1e",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 16
+      }
+    },
+    "18": {
+      "UID": "06cf3bcb-08c9-42eb-94ba-30f203ada9f3",
+      "target": "MASTER",
+      "name": "isTargetAlive",
+      "NodeID": 18
+    },
+    "21": {
+      "actionIds": [
+        19
+      ],
+      "name": "registerDeadEvent",
+      "UID": "71203eb0-18bf-4479-9e54-729c577b68f2",
+      "target": "MASTER",
+      "NodeID": 21
+    },
+    "19": {
+      "UID": "44bdd0b6-18fb-4276-98b5-6c6ca1dcbcb2",
+      "name": "destroyEntity",
+      "NodeID": 19
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "0febe82e-e8fc-477b-9120-50343e8fbb83",
+      "effectId": "Eff_Parmon_10045_Skill_LotusLeafEssence",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "2": {
+      "offsetXYZ": [
+        0,
+        -1,
+        0
+      ],
+      "templateId": 104514,
+      "NodeID": 2,
+      "UID": "d931fc18-284f-4958-95fe-cc43931011e6",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Creation",
+      "stick": 0,
+      "pos": "OWNER",
+      "name": "createEntity"
+    }
+  },
+  "BPName": "timeline_2104516",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    10
+  ],
+  "layer": "Base",
+  "length": 9999
+}

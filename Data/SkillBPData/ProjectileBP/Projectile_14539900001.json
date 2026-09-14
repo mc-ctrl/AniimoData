@@ -1,0 +1,262 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 22,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10453_Skill_EX_spere_xuanzhuan",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "BPName": "ability_14539900",
+  "maxHitNum": 9999,
+  "nodeMap": {
+    "22": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14539900,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "b6e735c4-e6f7-43ff-ac56-67ff84f94d3a",
+      "target": "TARGET",
+      "NodeID": 22,
+      "attackData": {
+        "hitSoundType": "s",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Parmon_10453_Skill_EX_spere_shouji"
+      }
+    },
+    "23": {
+      "actionIds": [
+        56
+      ],
+      "conditionActionIds": [
+        54
+      ],
+      "UID": "a7914c23-c521-46a1-8544-471757319a52",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 23
+    },
+    "54": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "e97bd6f0-c432-4bdc-9757-29e63b4c9cb2",
+      "NodeID": 54,
+      "lValue": {
+        "key": "4539902",
+        "name": "getCacheVal",
+        "UID": "abd18415-7b4d-45ae-8c9d-9307fa6eb20b",
+        "target": "OWNER",
+        "NodeID": 53
+      }
+    },
+    "42": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a21a6df4-0bda-422c-af3e-f4407467ec16",
+      "effectId": "Eff_Parmon_10453_Skill_EX_boom",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "25": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 22,
+      "NodeID": 25,
+      "UID": "4c7cb226-2879-4536-b373-05393fa0424e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        50,
+        23,
+        58
+      ]
+    },
+    "58": {
+      "UID": "91fa1005-77f6-498c-99ea-bb6206ec0679",
+      "value": {
+        "key": "4539902",
+        "name": "getCacheVal",
+        "UID": "60dc4f2c-b10b-43c5-9314-fa6ead94351a",
+        "target": "OWNER",
+        "NodeID": 57
+      },
+      "name": "print",
+      "NodeID": 58
+    },
+    "72": {
+      "targetPos": "PROJECTILE",
+      "name": "playSoundAtPos",
+      "UID": "a7e581d1-c2d6-4e22-b18b-f6bc08f46900",
+      "soundId": "SFX_Combat_10453_Skill_EX_Boom",
+      "NodeID": 72
+    },
+    "50": {
+      "key": "4539902",
+      "name": "setCacheVal",
+      "UID": "a92737ac-9a1d-49b9-b57d-85ab3cc8a9bf",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "a60c014d-8d1b-444d-abd9-73280db9cf72",
+        "NodeID": 49,
+        "lValue": {
+          "key": "4539902",
+          "name": "getCacheVal",
+          "UID": "1295832e-f65a-4ef7-81c0-7e99281bacf5",
+          "target": "OWNER",
+          "NodeID": 48
+        }
+      },
+      "NodeID": 50
+    },
+    "33": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 32,
+      "NodeID": 33,
+      "UID": "0408a584-2e47-4f32-a994-6780f20c9e2c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        32
+      ]
+    },
+    "56": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14539900,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "f7ab0175-5da6-4694-9297-6baa4739bd6d",
+      "target": "TARGET",
+      "NodeID": 56,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103
+      }
+    },
+    "32": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14539900,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "4a948256-8871-4f62-bdb9-410b0fc61234",
+      "target": "TARGET",
+      "NodeID": 32,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 5002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30404
+      }
+    }
+  },
+  "onProjectileTickIds": [
+    25
+  ],
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    42,
+    33,
+    72
+  ],
+  "defaultHitSoundType": "s",
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "destroyOnHit": false,
+  "tickInterval": 0.2,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Parmon_10453_Skill_EX_spere_shouji",
+  "groundSweepRadius": 0.05,
+  "impulseId": 5002,
+  "acceleration": 0
+}

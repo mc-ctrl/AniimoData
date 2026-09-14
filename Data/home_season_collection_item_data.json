@@ -1,0 +1,262 @@
+{
+  "100025": {
+    "itemId": 40600086,
+    "seasonId": 1,
+    "pointPerItem": 60
+  },
+  "100026": {
+    "itemId": 40600087,
+    "seasonId": 1,
+    "pointPerItem": 60
+  },
+  "100027": {
+    "itemId": 4001066,
+    "seasonId": 1,
+    "pointPerItem": 1
+  },
+  "100028": {
+    "itemId": 4030092,
+    "seasonId": 1,
+    "pointPerItem": 100
+  },
+  "100029": {
+    "itemId": 4030093,
+    "seasonId": 1,
+    "pointPerItem": 100
+  },
+  "100002": {
+    "itemId": 41100010,
+    "seasonId": 1,
+    "pointPerItem": 120
+  },
+  "100052": {
+    "itemId": 4010151,
+    "seasonId": 1,
+    "pointPerItem": 8
+  },
+  "100051": {
+    "itemId": 4010150,
+    "seasonId": 1,
+    "pointPerItem": 4
+  },
+  "100050": {
+    "itemId": 4010149,
+    "seasonId": 1,
+    "pointPerItem": 4
+  },
+  "100041": {
+    "itemId": 4030103,
+    "seasonId": 1,
+    "pointPerItem": 200
+  },
+  "100042": {
+    "itemId": 4030104,
+    "seasonId": 1,
+    "pointPerItem": 200
+  },
+  "100031": {
+    "itemId": 4030095,
+    "seasonId": 1,
+    "pointPerItem": 100
+  },
+  "100032": {
+    "itemId": 4030096,
+    "seasonId": 1,
+    "pointPerItem": 200
+  },
+  "100030": {
+    "itemId": 4030094,
+    "seasonId": 1,
+    "pointPerItem": 200
+  },
+  "100034": {
+    "itemId": 4030098,
+    "seasonId": 1,
+    "pointPerItem": 400
+  },
+  "100035": {
+    "itemId": 4030141,
+    "seasonId": 1,
+    "pointPerItem": 800
+  },
+  "100036": {
+    "itemId": 4001067,
+    "seasonId": 1,
+    "pointPerItem": 1
+  },
+  "100037": {
+    "itemId": 4030099,
+    "seasonId": 1,
+    "pointPerItem": 100
+  },
+  "100038": {
+    "itemId": 4030100,
+    "seasonId": 1,
+    "pointPerItem": 100
+  },
+  "100039": {
+    "itemId": 4030101,
+    "seasonId": 1,
+    "pointPerItem": 200
+  },
+  "100040": {
+    "itemId": 4030102,
+    "seasonId": 1,
+    "pointPerItem": 100
+  },
+  "100049": {
+    "itemId": 4010148,
+    "seasonId": 1,
+    "pointPerItem": 8
+  },
+  "100048": {
+    "itemId": 4010147,
+    "seasonId": 1,
+    "pointPerItem": 8
+  },
+  "100047": {
+    "itemId": 4010146,
+    "seasonId": 1,
+    "pointPerItem": 8
+  },
+  "100046": {
+    "itemId": 4000044,
+    "seasonId": 1,
+    "pointPerItem": 1
+  },
+  "100045": {
+    "itemId": 4000043,
+    "seasonId": 1,
+    "pointPerItem": 1
+  },
+  "100044": {
+    "itemId": 4030142,
+    "seasonId": 1,
+    "pointPerItem": 800
+  },
+  "100001": {
+    "itemId": 41100009,
+    "seasonId": 1,
+    "pointPerItem": 660
+  },
+  "100043": {
+    "itemId": 4030105,
+    "seasonId": 1,
+    "pointPerItem": 400
+  },
+  "100033": {
+    "itemId": 4030097,
+    "seasonId": 1,
+    "pointPerItem": 200
+  },
+  "100003": {
+    "itemId": 40300022,
+    "seasonId": 1,
+    "pointPerItem": 440
+  },
+  "100013": {
+    "itemId": 40500013,
+    "seasonId": 1,
+    "pointPerItem": 370
+  },
+  "100004": {
+    "itemId": 40700022,
+    "seasonId": 1,
+    "pointPerItem": 660
+  },
+  "100014": {
+    "itemId": 40700023,
+    "seasonId": 1,
+    "pointPerItem": 60
+  },
+  "100005": {
+    "itemId": 40600084,
+    "seasonId": 1,
+    "pointPerItem": 120
+  },
+  "100006": {
+    "itemId": 40900018,
+    "seasonId": 1,
+    "pointPerItem": 240
+  },
+  "100007": {
+    "itemId": 40900019,
+    "seasonId": 1,
+    "pointPerItem": 290
+  },
+  "100008": {
+    "itemId": 40900020,
+    "seasonId": 1,
+    "pointPerItem": 290
+  },
+  "100009": {
+    "itemId": 41100011,
+    "seasonId": 1,
+    "pointPerItem": 180
+  },
+  "100010": {
+    "itemId": 41100012,
+    "seasonId": 1,
+    "pointPerItem": 150
+  },
+  "100011": {
+    "itemId": 40500012,
+    "seasonId": 1,
+    "pointPerItem": 240
+  },
+  "100012": {
+    "itemId": 40200022,
+    "seasonId": 1,
+    "pointPerItem": 30
+  },
+  "100015": {
+    "itemId": 40600085,
+    "seasonId": 1,
+    "pointPerItem": 60
+  },
+  "100016": {
+    "itemId": 40700024,
+    "seasonId": 1,
+    "pointPerItem": 530
+  },
+  "100017": {
+    "itemId": 40700025,
+    "seasonId": 1,
+    "pointPerItem": 530
+  },
+  "100018": {
+    "itemId": 50400023,
+    "seasonId": 1,
+    "pointPerItem": 60
+  },
+  "100019": {
+    "itemId": 50400024,
+    "seasonId": 1,
+    "pointPerItem": 60
+  },
+  "100020": {
+    "itemId": 50400025,
+    "seasonId": 1,
+    "pointPerItem": 60
+  },
+  "100021": {
+    "itemId": 50400026,
+    "seasonId": 1,
+    "pointPerItem": 120
+  },
+  "100022": {
+    "itemId": 50400027,
+    "seasonId": 1,
+    "pointPerItem": 120
+  },
+  "100023": {
+    "itemId": 50400028,
+    "seasonId": 1,
+    "pointPerItem": 120
+  },
+  "100024": {
+    "itemId": 50400029,
+    "seasonId": 1,
+    "pointPerItem": 120
+  }
+}

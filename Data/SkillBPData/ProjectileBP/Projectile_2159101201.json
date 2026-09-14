@@ -1,0 +1,91 @@
+{
+  "duration": 6,
+  "BPName": "timeline_2159101",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10593_Skill_Drop_Bullet",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "nodeMap": {
+    "28": {
+      "targetPos": {
+        "key": "PlayerPos",
+        "name": "getCacheVal",
+        "UID": "5bf25489-5b85-452e-af53-f2369eef8cc0",
+        "target": "OWNER",
+        "NodeID": 27
+      },
+      "name": "playSoundAtPos",
+      "UID": "d2795c70-8148-4ef4-8245-0938f8ca7956",
+      "soundId": "SFX_Combat_10591_Skill_Passive03",
+      "NodeID": 28
+    },
+    "29": {
+      "value": {
+        "calcId": 2159101,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 32,
+        "UID": "96089217-1050-4a3c-9463-667f7ab33000",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "3edfc258-d819-4f67-8603-c4b6437b922f",
+      "target": {
+        "key": "PlayerPos",
+        "name": "getCacheVal",
+        "UID": "5bf25489-5b85-452e-af53-f2369eef8cc0",
+        "target": "OWNER",
+        "NodeID": 27
+      },
+      "NodeID": 29
+    },
+    "32": {
+      "calcId": 2159101,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 32,
+      "UID": "96089217-1050-4a3c-9463-667f7ab33000",
+      "name": "getParamByLuaConfig"
+    },
+    "20": {
+      "UID": "a6525c5b-a126-4c13-a04e-c4edd11770fd",
+      "actorId": {
+        "UID": "51578043-52f5-4968-b53d-7c3eb9318f65",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 19
+      },
+      "name": "destroyEntity",
+      "NodeID": 20
+    },
+    "25": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "dfd54758-d921-433c-9e45-e347fa63d4db",
+      "effectId": "Eff_Parmon_10593_Skill_Drop_Pick",
+      "speed": 1,
+      "NodeID": 25
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    25,
+    29,
+    28,
+    20
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 10
+}

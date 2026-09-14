@@ -1,0 +1,49 @@
+{
+  "BPName": "ability_10720000",
+  "NodeID": 1,
+  "UID": "2b8c5410-3480-4a32-b12a-297e0b089e20",
+  "abilityParamId": 11700000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10720000001,
+      "name": "setCombatActionTimeline",
+      "UID": "aee8f9a7-d637-47e0-81ef-f74f7fbab6b0",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01",
+    "Attack01_BackSwing"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10072_Skill_Hit",
+    "Eff_Parmon_10072_Attack01",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "电系远程普攻",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "subAbilityIds": [
+    10720001,
+    10720002,
+    10720011,
+    10720012,
+    10720010
+  ],
+  "switchSkillByState": {
+    "FLYRISE": 10720010,
+    "FLYHOVER": 10720010,
+    "FLYMOVE": 10720010,
+    "FLYING": 10720010
+  },
+  "searchTargetRangeDown": 3
+}

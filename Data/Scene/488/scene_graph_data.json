@@ -1,0 +1,68 @@
+{
+  "90993487": {
+    "graphId": 90993487,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "0",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "4013193a7fc596820aba36e79921bf57",
+    "nodes": {
+      "0": {
+        "_inputPortValues": {
+          "LevelItemId": 91000610,
+          "DoOnce": false,
+          "fieldName": "state",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "state"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "d1fb6ace-6d02-45b0-b61c-1f1386ae841e"
+      },
+      "1": {
+        "_inputPortValues": {
+          "Value": 0
+        },
+        "_outputPortValues": {},
+        "className": "SwitchIntNode",
+        "startInt": 0,
+        "uid": "09f1271b-98bb-4cec-80e0-92931d4fec81",
+        "endInt": 1
+      },
+      "2": {
+        "_inputPortValues": {
+          "Index": 0,
+          "DoOnce": false,
+          "LevelItemId": 91000544,
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": {},
+        "className": "MoveLevelItemNode",
+        "uid": "95e6d7f5-9f9b-440c-8ed2-3fd53636682e"
+      }
+    }
+  },
+  "91044112": {
+    "graphId": 91044112,
+    "blackboard": {},
+    "connections": {},
+    "isSandbox": true,
+    "md5": "d58535e494241c45e668e8295fda6017",
+    "nodes": {}
+  }
+}

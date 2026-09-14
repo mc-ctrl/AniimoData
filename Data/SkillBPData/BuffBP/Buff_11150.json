@@ -1,0 +1,101 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11150",
+  "NodeID": 1,
+  "UID": "aaadfacb-3167-4596-93d1-0781cb83ead6",
+  "desc": "催眠花小哭苞buff",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        6,
+        12
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "3b9e053c-bcee-419a-ab8c-eb8e96737cab",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "67ee18e1-f1f6-4e58-9097-83c4d7a17aac",
+      "name": "doActionsByConditions",
+      "NodeID": 4,
+      "elseActionIds": [
+        3
+      ]
+    },
+    "12": {
+      "buffId": 1145126,
+      "name": "removeBuff",
+      "UID": "37c3b92a-2174-4f5f-9398-887903224aaf",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "6": {
+      "offsetXYZ": [
+        -2,
+        0,
+        2
+      ],
+      "templateId": 1200162,
+      "name": "createEntity",
+      "UID": "30a171d8-fc1a-4556-82e7-0ccfcea72fb5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "EnvObject",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 6,
+      "pos": "OWNER"
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 1145126,
+      "NodeID": 10,
+      "UID": "d9111553-71b3-49d6-9723-a44e7a51643d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "buffId": 1145126,
+      "name": "hasBuff",
+      "UID": "47bb48eb-8ca6-4ddd-94a7-52c03a26b9f9",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "8": {
+      "templateId": 1200162,
+      "name": "destroyCreatedEntity",
+      "UID": "957dec11-7196-4172-a189-287d24f065cc",
+      "target": "OWNER",
+      "entityType": "EnvObject",
+      "NodeID": 8
+    },
+    "2": {
+      "UID": "311bc685-e011-41a2-90b3-17065e502a70",
+      "randomPercent": 10,
+      "name": "isRandom",
+      "NodeID": 2
+    }
+  },
+  "name": "催眠花小哭苞buff",
+  "onBuffDestroyIds": [
+    8,
+    10
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

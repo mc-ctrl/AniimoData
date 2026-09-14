@@ -1,0 +1,106 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        9,
+        14,
+        16
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "6ac1fcd5-e744-423f-ab2e-e7ac63dd9fd7",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "91524486-88f0-4402-a65b-a03f7cb1fa9f",
+      "name": "checkAbilityElementType",
+      "elementType": 4,
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "2e7569a4-4476-4d0e-8f11-318bf5e84cd6",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "15": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "3a3e886e-4d1f-4332-be2d-ef1b115357b3",
+      "target": "SRC",
+      "val": 0,
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "f626a1c7-f37a-4b84-9e11-2c5f9ef33f79",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "key": "default111",
+      "duration": 0.2,
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16,
+      "UID": "8eef8efc-e55f-4e0d-bea0-4dd6ad7f5247",
+      "name": "addEntityTimer"
+    },
+    "9": {
+      "eventName": "beHit",
+      "name": "notifyCustomEvent",
+      "UID": "cb279de5-f6dd-4788-866c-4350ce1f5dce",
+      "target": "SRC",
+      "NodeID": 9
+    },
+    "11": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "64e20adf-4611-449e-a675-973cc0cc6ba3",
+      "target": "SRC",
+      "val": 0,
+      "NodeID": 11
+    },
+    "13": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "f5b6728f-cf84-420a-8d63-2f8e055c9ea0",
+      "NodeID": 13,
+      "lValue": {
+        "key": "Bullet2",
+        "name": "getCacheVal",
+        "UID": "05d09fca-ccf3-4185-a1c1-9ac0455163b2",
+        "target": "SRC",
+        "NodeID": 12
+      }
+    },
+    "14": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "e41bb9e0-afb0-4c68-b7dd-8e70940522d2",
+      "target": "SRC",
+      "val": 1,
+      "NodeID": 14
+    }
+  },
+  "BPName": "buff_2129303",
+  "dynamicRPCStates": {},
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    7
+  ]
+}

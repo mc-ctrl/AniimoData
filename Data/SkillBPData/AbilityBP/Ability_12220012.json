@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_12220012",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10400001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12220012001,
+      "name": "setCombatActionTimeline",
+      "UID": "ec06f08e-589d-4658-9e35-933dca2bca89",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Boss_Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10222_Attack03_R",
+    "Eff_Hit_Electric_Slash_Y",
+    "Eff_Parmon_10222_Attack03_L"
+  ],
+  "searchRelation": 2,
+  "name": "电近战普攻",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

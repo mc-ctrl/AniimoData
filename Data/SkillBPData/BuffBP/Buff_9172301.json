@@ -1,0 +1,197 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9172301",
+  "name": "冰瓷雀-特性",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    47
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        39,
+        41,
+        45
+      ],
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "d84a6b3e-499e-45fe-b506-532e20be7528",
+      "name": "doActionsByConditions",
+      "NodeID": 37
+    },
+    "39": {
+      "templateId": 916430102,
+      "name": "removeBuffLayer",
+      "UID": "462de270-e3fa-4391-892f-0c8cfdb0aa97",
+      "layer": 10,
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "41": {
+      "value": 5,
+      "name": "recoverEp",
+      "UID": "bb5c8216-2ac5-4d8a-84ad-8c60fa14b045",
+      "target": "OWNER",
+      "NodeID": 41,
+      "applyIncRatio": false
+    },
+    "42": {
+      "UID": "5c8b54a9-9374-4585-b178-9beac2c43e8b",
+      "value": "dopets",
+      "name": "print",
+      "NodeID": 42
+    },
+    "43": {
+      "UID": "aabb61cb-ae06-4963-b407-8f5124ad433c",
+      "value": "skill",
+      "name": "print",
+      "NodeID": 43
+    },
+    "31": {
+      "UID": "30e24539-4c8f-4fd8-9ac0-31607ebb12f9",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        30
+      ],
+      "NodeID": 31
+    },
+    "21": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 916430102,
+      "NodeID": 21,
+      "UID": "936c904e-0142-4f7f-8e9b-57be58e5cbc5",
+      "layer": 5,
+      "name": "addBuff",
+      "level": 1
+    },
+    "23": {
+      "actionIds": [
+        21,
+        43
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "d695f215-bb02-4fcf-b44c-a936e9ef2417",
+      "name": "doActionsByConditions",
+      "NodeID": 23
+    },
+    "24": {
+      "actionIds": [
+        23
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "88fdb86d-9c43-4a76-b593-30fc149f3e54",
+      "target": "TARGET",
+      "NodeID": 24
+    },
+    "46": {
+      "buffId": 10086,
+      "name": "hasBuff",
+      "UID": "c3ead535-04f3-492b-ba98-aaa79cbb6e1b",
+      "target": "CURPET_OR_TEAM_PET",
+      "NodeID": 46
+    },
+    "47": {
+      "actionIds": [
+        48
+      ],
+      "conditionActionIds": [
+        46
+      ],
+      "UID": "450722b0-0627-4d74-929e-30c38b05d050",
+      "name": "doActionsByConditions",
+      "NodeID": 47
+    },
+    "26": {
+      "actionIds": [
+        24,
+        42
+      ],
+      "name": "doPetsActions",
+      "UID": "1cec886c-925d-477e-81ab-40f415ba91f5",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "48": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 916430102,
+      "NodeID": 48,
+      "UID": "c218ec8a-cc0c-4601-bdf4-ffb41631d73d",
+      "layer": 5,
+      "name": "addBuff",
+      "level": 1
+    },
+    "28": {
+      "UID": "4f116265-f575-4e81-b091-94cfda628893",
+      "name": "registerPetListChangeEvent",
+      "actionIds": [
+        26
+      ],
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "37867e0f-16cf-4687-8b59-881c58feb5e1",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 29
+    },
+    "30": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "be837639-e33b-4453-beff-bcb1f6124e91",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "50": {
+      "UID": "5d4bc141-74f3-4c7d-9c1d-1fe471804c91",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 50
+    },
+    "49": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "a1660219-6156-4116-8658-3f6bbbd21563",
+      "name": "buffStartThink",
+      "NodeID": 49
+    },
+    "45": {
+      "UID": "91f7c538-50ec-444c-b68c-94a267e2ab3f",
+      "value": "recoverep",
+      "name": "print",
+      "NodeID": 45
+    },
+    "36": {
+      "rValue": 9.5,
+      "name": "greater",
+      "UID": "99b21170-d86a-4fbe-b4af-0a7f93783ccf",
+      "NodeID": 36,
+      "lValue": {
+        "templateId": 916430102,
+        "name": "getBuffLayer",
+        "UID": "7f2ea22a-211f-4595-b7bd-dad48d72c1e1",
+        "target": "OWNER",
+        "NodeID": 35
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    26,
+    28,
+    31,
+    49
+  ]
+}

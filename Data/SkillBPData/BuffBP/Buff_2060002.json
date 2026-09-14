@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "calcInfoByLuaConfig": {
+        "id": 2060002,
+        "type": 1,
+        "rogue_coin_cost_reduce_v": "param0"
+      },
+      "UID": "f19fae38-17d4-4013-8361-1a48a3221fa6",
+      "name": "addBuffSeriesCntAttribute",
+      "NodeID": 3,
+      "buffSeries": 6
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "8afba254-2932-4592-be12-a3a3a01f7536",
+      "name": "registerBuffSeriesCntChangeEvent",
+      "buffSeries": 6
+    },
+    "6": {
+      "UID": "a823fdfc-3664-4ec0-b4d1-d97e47b8fc3b",
+      "name": "updateBuffSeriesCntAttribute",
+      "buffSeries": 6,
+      "NodeID": 6
+    }
+  },
+  "BPName": "buff_2060002",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7
+  ]
+}

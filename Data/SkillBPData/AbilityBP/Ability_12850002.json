@@ -1,0 +1,31 @@
+{
+  "BPName": "ability_12850002",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 16600000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12850002001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "searchRelation": 2,
+  "name": "岩近战普攻",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

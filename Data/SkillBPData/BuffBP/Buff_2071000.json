@@ -1,0 +1,118 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "4": {
+      "UID": "7834f253-33e0-424b-94ac-51b5f4fd0679",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        12,
+        15
+      ],
+      "conditionActionIds": [
+        4,
+        9
+      ],
+      "UID": "2ce6c13c-ad42-4167-b8a7-5a0c1b106e26",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "15": {
+      "actionIds": [
+        16,
+        18
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "cd7804c0-8fab-41ff-8de8-ccbaa0e65b34",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "fa88264f-0f00-4495-9d65-6f520de9d0ca",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "key": "castAttackSkillCnt",
+      "name": "setCacheVal",
+      "UID": "796f08d9-1738-4946-a1e7-dedb9acf53b6",
+      "val": 0,
+      "NodeID": 16
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        7
+      ],
+      "name": "registerGroupEvent",
+      "UID": "607bca50-2869-4e1b-a00b-1779537d1ba2",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "90820494-9d47-414c-8beb-e63cbd041265",
+      "tag": 0,
+      "name": "isAbilityEffectTag",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "f4daf202-ace1-4636-9853-9a15331641ab",
+      "count": 1,
+      "name": "setCastSkillFreeEpCnt",
+      "NodeID": 18
+    },
+    "2": {
+      "key": "castAttackSkillCnt",
+      "name": "setCacheVal",
+      "UID": "301f3b0b-285b-4b1b-b2eb-91b0684e2b1f",
+      "val": 0,
+      "NodeID": 2
+    },
+    "14": {
+      "rValue": 3,
+      "name": "greater",
+      "UID": "4efd4353-dd25-401d-a0ed-33b2b5641806",
+      "NodeID": 14,
+      "lValue": {
+        "UID": "3ed49215-bfc6-4086-8e38-cdaab0e87d43",
+        "name": "getCacheVal",
+        "key": "castAttackSkillCnt",
+        "NodeID": 10
+      }
+    },
+    "12": {
+      "key": "castAttackSkillCnt",
+      "name": "setCacheVal",
+      "UID": "7ced5421-a148-4e9c-be96-21271495124a",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "4d01526b-83f7-4ad7-8043-b3e49d09970a",
+        "NodeID": 11,
+        "lValue": {
+          "UID": "3ed49215-bfc6-4086-8e38-cdaab0e87d43",
+          "name": "getCacheVal",
+          "key": "castAttackSkillCnt",
+          "NodeID": 10
+        }
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2071000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    8
+  ]
+}

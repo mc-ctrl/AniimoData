@@ -1,0 +1,160 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "8f4e0fd0-7e4e-4dad-b854-9316a7676ef4",
+      "name": "stopBurrow",
+      "NodeID": 37
+    },
+    "4": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "f76ef8eb-09df-4aaa-81f2-6944997f3ed4",
+      "name": "isInControlState",
+      "controlState": 2,
+      "NodeID": 24
+    },
+    "6": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "46223660-c98a-4191-a766-3ca0eb79d558",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_BurrowSkill_Enter",
+      "NodeID": 39
+    },
+    "25": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "22b49013-2a3e-4378-bea4-ab3205cb8b8b",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "5f8009f4-1c4a-4210-80c5-111d77099dd9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "duration": -1,
+      "name": "burrow",
+      "UID": "7d6fcb0a-b67b-4618-8354-af99a93e15e7",
+      "velocity": 5,
+      "enableTurnInstant": false,
+      "enterBuffIds": [
+        2116101
+      ],
+      "exitCastAbilityId": 12840905,
+      "switchBurrowStateTime": 0.1,
+      "switchToAbilityId": 12840905,
+      "NodeID": 27
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          25,
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 23,
+      "UID": "b00ccb87-a28b-490b-a32e-54efc6724c03"
+    },
+    "29": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          39
+        ]
+      },
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 18,
+      "UID": "d7f087b4-7c89-4c10-854c-a24ecad9437a"
+    },
+    "12": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 12
+    },
+    "14": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "20": {
+      "name": "isActorType",
+      "UID": "57a09c9f-89c7-46fd-9384-07ac18956bbd",
+      "target": "OWNER",
+      "NodeID": 20,
+      "actorType": 3
+    },
+    "21": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "08df7811-907b-4567-82fe-3365c0c0aea0",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_12840900",
+  "NodeID": 8,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    6,
+    14,
+    29,
+    18,
+    23
+  ],
+  "layer": "Base",
+  "length": 3
+}

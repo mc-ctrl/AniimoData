@@ -1,0 +1,81 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "scale": 5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "81777d27-256f-4381-9d6a-822821bb45c4",
+      "effectId": "Eff_Parmon_10261_Skill_Throw",
+      "speed": 0.25,
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "123d842e-396a-418e-a2d0-16a11becbc8c",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 13
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 9,
+      "relation": 2,
+      "enterTrapActionIds": [
+        7,
+        11
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        2
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "d591a986-3fb4-4052-8099-7fb3954e2e66"
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "c14e6a79-e11a-4663-b578-ef0381b9e1b2",
+      "effectId": "Eff_Parmon_10261_Skill_Throw",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 6126102,
+      "NodeID": 7,
+      "UID": "bcf9849f-495d-4857-a0f1-4e72a94b820c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "UID": "f8807402-67cb-4e34-908c-ad225a57d8f8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          9,
+          13
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "timeline_6126102",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 60
+}

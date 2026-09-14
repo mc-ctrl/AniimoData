@@ -1,0 +1,48 @@
+{
+  "100004": {
+    "wallParam": [
+      5,
+      5
+    ],
+    "wallType": 3,
+    "resID": "Eff_Env_GrabEgg_Airwall_Ready",
+    "endResID": "Eff_Env_GrabEgg_Airwall_Ready_Disappear",
+    "editorName": "NPC对决空气墙",
+    "showType": 1
+  },
+  "100002": {
+    "wallParam": [
+      1,
+      1
+    ],
+    "wallType": 3,
+    "resID": "Eff_Env_GrabEgg_Airwall_Ready_reborn",
+    "endResID": "Eff_Env_GrabEgg_Airwall_Ready_Disappear",
+    "editorName": "抢蛋准备阶段空气墙",
+    "showType": 1
+  },
+  "100003": {
+    "wallParam": [
+      400,
+      200,
+      3
+    ],
+    "wallType": 2,
+    "resID": "Eff_Env_GrabEgg_Airwall_Ready",
+    "endResID": "Eff_Env_GrabEgg_Airwall_Ready_Disappear",
+    "editorName": "家园外围空气墙",
+    "showType": 1
+  },
+  "100001": {
+    "wallParam": [
+      7,
+      7,
+      3
+    ],
+    "wallType": 2,
+    "resID": "Eff_Env_GrabEgg_Airwall_Ready",
+    "endResID": "Eff_Env_GrabEgg_Airwall_Ready_Disappear",
+    "editorName": "PVP准备阶段空气墙",
+    "showType": 1
+  }
+}

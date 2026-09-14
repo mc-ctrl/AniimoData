@@ -1,0 +1,98 @@
+{
+  "duration": 2,
+  "BPName": "buff_9138312",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10383_Skill_Smash_RecoverEp",
+  "gravityRatio": 1.3,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "32": {
+      "key": "10383src2",
+      "name": "setProjectileCacheVal",
+      "UID": "3e22bbb5-abfe-4ea3-b150-3e385ded8306",
+      "val": {
+        "key": "10383src",
+        "name": "getCacheVal",
+        "UID": "e53273af-e9db-4f3c-8333-e7d97822ff47",
+        "target": "OWNER",
+        "NodeID": 31
+      },
+      "NodeID": 32
+    },
+    "19": {
+      "value": {
+        "rValue": {
+          "key": "10383bufflayer",
+          "name": "getCacheVal",
+          "UID": "805f08ac-9b5d-459e-92df-5a568c876c7d",
+          "target": "OWNER",
+          "NodeID": 38
+        },
+        "name": "multiply",
+        "UID": "f29194c0-c0d9-44b4-bb0d-067f7e873844",
+        "NodeID": 18,
+        "lValue": {
+          "calcId": 9138312,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 17,
+          "UID": "ed0c293b-b432-4076-973e-4616b36e463c",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "recoverEp",
+      "UID": "b08b0c79-a201-4d3d-8adb-e0bc546da743",
+      "target": {
+        "UID": "9bb5c849-e4c7-4745-800a-faf87dab1f4d",
+        "name": "getProjectileCacheVal",
+        "key": "10383src2",
+        "NodeID": 37
+      },
+      "NodeID": 19,
+      "applyIncRatio": true
+    },
+    "17": {
+      "calcId": 9138312,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 17,
+      "UID": "ed0c293b-b432-4076-973e-4616b36e463c",
+      "name": "getParamByLuaConfig"
+    },
+    "40": {
+      "scale": 2,
+      "target": {
+        "UID": "47a22e00-1c67-4f9c-8338-74a2533e2a0f",
+        "name": "getProjectileCacheVal",
+        "key": "10383src2",
+        "NodeID": 39
+      },
+      "name": "playEffectStr",
+      "UID": "84510626-fcae-4958-9f5a-dbf57d2594c0",
+      "effectId": "Eff_Parmon_10623_Skill_TurnTable_Bubble_3_RecoverEp",
+      "speed": 1,
+      "NodeID": 40
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    40,
+    19
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "acceleration": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "onProjectileStartIds": [
+    32
+  ]
+}

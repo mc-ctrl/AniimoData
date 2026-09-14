@@ -1,0 +1,67 @@
+{
+  "BPName": "ability_11740500",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "149": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1bb4b161-e3e3-41a4-a7d2-8c50dc8a2383",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_Dramotter_skill_roll_end",
+      "NodeID": 149
+    },
+    "7": {
+      "timelineId": 11740500001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "142": {
+      "name": "stopSoundStr",
+      "UID": "e13c2f4b-ae72-4577-87f1-baa2dc3424cf",
+      "soundId": "parmon_Dramotter_skill_roll_loop",
+      "target": "OWNER",
+      "NodeID": 142
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "onAbilityRemovedIds": [
+    149,
+    142
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10174_Skill_Roll",
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_10174_Skill_Roll_Hit",
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Water_Blunt_Big"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "switchSafeTime": 1,
+  "searchTargetRangeDown": 0.5,
+  "delayStartCd": true,
+  "notTurnToTarget": true,
+  "onAbilityEndIds": [
+    149,
+    142
+  ],
+  "onlyHasActOnTargets": true,
+  "preloadAnims": [
+    "Skill_Roll_Start",
+    "Skill_Roll_End",
+    "Skill_Roll_Loop"
+  ],
+  "abilityParamId": 10300083
+}

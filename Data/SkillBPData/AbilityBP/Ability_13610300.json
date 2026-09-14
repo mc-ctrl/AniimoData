@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_13610300",
+  "NodeID": 1,
+  "UID": "253f6372-2656-420f-a413-3ed8fe2c1ac9",
+  "abilityParamId": 11300030,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 13610300001,
+      "name": "setCombatActionTimeline",
+      "UID": "71e5d1fd-933d-401e-a85e-ac3bc71d6ef1",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3.5,
+  "preloadAnims": [
+    "Skill_Rotate"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10363_Skill_Rotate_Strat_Holy",
+    "Eff_Parmon_10363_Skill_Rotate_Holy",
+    "Eff_Common_Battle_Break",
+    "Eff_Debuff_stun"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

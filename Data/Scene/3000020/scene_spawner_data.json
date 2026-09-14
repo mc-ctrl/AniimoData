@@ -1,0 +1,40 @@
+{
+  "90843322": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      201.59,
+      156.79,
+      978.04
+    ],
+    "sandboxId": 90843321,
+    "autoInitial": false,
+    "sandboxType": 1,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "guangling",
+    "levelAreaConfigId": 21500,
+    "id": 90843322,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90843323
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 21500,
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

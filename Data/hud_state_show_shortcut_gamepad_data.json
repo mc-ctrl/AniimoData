@@ -1,0 +1,815 @@
+{
+  "HudBigWhiteBall": {
+    "desc": "大白球状态",
+    "inputKeyTable": [
+      [
+        [
+          "BallDrive/Move"
+        ],
+        1369053835
+      ]
+    ]
+  },
+  "HudCatch": {
+    "desc": "捕捉",
+    "inputKeyTable": [
+      [
+        [
+          "Hud/CombineBallAndItemUse"
+        ],
+        1476321287
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1353546471
+      ]
+    ]
+  },
+  "HudClimb": {
+    "desc": "攀爬",
+    "inputKeyTable": [
+      [
+        [
+          "Player/ClimbJump",
+          "Player/ClimbJump2"
+        ],
+        1624417567
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1977378483,
+        802
+      ]
+    ]
+  },
+  "HudConnectionCanClimbHereMode": {
+    "desc": "链接模式_可以攀爬",
+    "inputKeyTable": [
+      [
+        [
+          "Player/SpecialAbility"
+        ],
+        1900812352
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1863078720,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        2059930599,
+        804
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        2024429692
+      ]
+    ]
+  },
+  "HudConnectionLockModeA": {
+    "desc": "链接模式下锁定模式A",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        2108731959
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1444770066,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        1712439265,
+        804
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1578828741
+      ]
+    ]
+  },
+  "HudConnectionLockModeB": {
+    "desc": "链接模式下默认锁定模式",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1802048539
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1763069640,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        1524110845,
+        804
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        1431522249
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1380341964
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1487754503
+      ]
+    ]
+  },
+  "HudConnectionMode": {
+    "desc": "链接模式",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1984888762
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1188101034,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        1127892679,
+        804
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1877190732
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        2103225257
+      ],
+      [
+        [
+          "Hud/TeamSpeech"
+        ],
+        1798732178,
+        996
+      ],
+      [
+        [
+          "Hud/PushTalk"
+        ],
+        1720393803,
+        997
+      ]
+    ]
+  },
+  "HudConnectionModeGrabEgg": {
+    "desc": "链接模式_抢蛋玩法",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1801387245
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1765976523,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        2031914666,
+        804
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1649746002
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        1647373383
+      ],
+      [
+        [
+          "Hud/TeamSpeech"
+        ],
+        1225314591,
+        996
+      ],
+      [
+        [
+          "Hud/PushTalk"
+        ],
+        1517831842,
+        997
+      ]
+    ]
+  },
+  "HudConnectionModeRogue": {
+    "desc": "链接模式_全息训练",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1966816081
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1562239843,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        1878830863,
+        804
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1738810291
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        1412455849
+      ]
+    ]
+  },
+  "HudCrawl": {
+    "desc": "远程抓取-进入状态",
+    "inputKeyTable": [
+      [
+        [
+          "Skill/Grab"
+        ],
+        1866980219
+      ],
+      [
+        [
+          "Skill/CancelGrab"
+        ],
+        1290209792
+      ]
+    ]
+  },
+  "HudFly": {
+    "desc": "飞行",
+    "inputKeyTable": [
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1151540445
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1113910006
+      ]
+    ]
+  },
+  "HudGoCanClimbHereMode": {
+    "desc": "非链接模式_可以攀爬",
+    "inputKeyTable": [
+      [
+        [
+          "Player/SpecialAbility"
+        ],
+        1788876666
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        2007984973,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        1436370544,
+        804
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        2123623027
+      ],
+      [
+        [
+          "Player/Crouch"
+        ],
+        1402625297
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1163707006
+      ],
+      [
+        [
+          "Hud/TeamSpeech"
+        ],
+        1546657179,
+        996
+      ],
+      [
+        [
+          "Hud/PushTalk"
+        ],
+        1753510880,
+        997
+      ]
+    ]
+  },
+  "HudGoMode": {
+    "desc": "非链接模式",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1383962211
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1391870749,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        1352407706,
+        804
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        2024820354
+      ],
+      [
+        [
+          "Player/Crouch"
+        ],
+        1196698783
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1764543793
+      ],
+      [
+        [
+          "Hud/TeamSpeech"
+        ],
+        1785924232,
+        996
+      ],
+      [
+        [
+          "Hud/PushTalk"
+        ],
+        2072077401,
+        997
+      ]
+    ]
+  },
+  "HudGoModeGrabEgg": {
+    "desc": "非链接模式_抢蛋玩法",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1118561321
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1413126821,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        2028091135,
+        804
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        2064404725
+      ],
+      [
+        [
+          "Player/Crouch"
+        ],
+        2091068477
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1400683426
+      ],
+      [
+        [
+          "Hud/TeamSpeech"
+        ],
+        2132044455,
+        996
+      ],
+      [
+        [
+          "Hud/PushTalk"
+        ],
+        1148059421,
+        997
+      ]
+    ]
+  },
+  "HudGoModeRogue": {
+    "desc": "非链接模式_全息训练",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1454389279
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1128518781,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        1955141020,
+        804
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        1764272308
+      ],
+      [
+        [
+          "Player/Crouch"
+        ],
+        2112773139
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1654748481
+      ]
+    ]
+  },
+  "HudGrabItem": {
+    "desc": "远程抓取-抓到物品",
+    "inputKeyTable": [
+      [
+        [
+          "Skill/ZoomIn"
+        ],
+        1536452077
+      ],
+      [
+        [
+          "Skill/ZoomOut"
+        ],
+        1197869220
+      ]
+    ]
+  },
+  "HudHomelandEdit": {
+    "desc": "家园编辑模式",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Move"
+        ],
+        1971367344
+      ],
+      [
+        [
+          "Raw/GamepadRightStickMove"
+        ],
+        1256085953
+      ],
+      [
+        [
+          "Skill/ZoomIn"
+        ],
+        1803411664
+      ],
+      [
+        [
+          "Skill/ZoomOut"
+        ],
+        2110727656
+      ],
+      [
+        [
+          "Common/GamepadConfirm"
+        ],
+        1930710520
+      ]
+    ]
+  },
+  "HudNotConnectionLockModeA": {
+    "desc": "非链接模式下锁定模式A",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1999035876
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        2061795314,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        2016753268,
+        804
+      ],
+      [
+        [
+          "Player/Crouch"
+        ],
+        1645397564
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1210755740
+      ]
+    ]
+  },
+  "HudNotConnectionLockModeB": {
+    "desc": "非链接模式下默认锁定模式",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        1808564429
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1468788588,
+        802
+      ],
+      [
+        [
+          "Hud/NormalAttack"
+        ],
+        2117730796,
+        804
+      ],
+      [
+        [
+          "Hud/GamepadMenu"
+        ],
+        1736958454
+      ],
+      [
+        [
+          "Player/Crouch"
+        ],
+        1145553549
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1322379527
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1770438813
+      ]
+    ]
+  },
+  "HudNpcDuel": {
+    "desc": "NPC对决",
+    "inputKeyTable": [
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1870033252
+      ]
+    ]
+  },
+  "HudRiding": {
+    "desc": "载具蒲公英骑乘状态",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Move"
+        ],
+        1628052643,
+        1044
+      ]
+    ]
+  },
+  "HudSkate": {
+    "desc": "滑板",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        2032710970
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1663935824
+      ]
+    ]
+  },
+  "HudSwimPet": {
+    "desc": "探索宠游泳",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Jump"
+        ],
+        2018030071
+      ],
+      [
+        [
+          "Player/StartSprint"
+        ],
+        1209108570,
+        802
+      ]
+    ]
+  },
+  "HudTransformMode01": {
+    "desc": "头目变身模式（花舞兰）"
+  },
+  "HudTransformMode02": {
+    "desc": "头目变身模式（雷光貂）"
+  },
+  "HudTransformMode03": {
+    "desc": "头目变身模式（大号鸥）"
+  },
+  "HudTransformMode04": {
+    "desc": "头目变身模式（莲冠龙）"
+  },
+  "HudTransformMode05": {
+    "desc": "头目变身模式（银盔龙）"
+  },
+  "HudTransformMode06": {
+    "desc": "头目变身模式（狼斗士）"
+  },
+  "HudTransformMode07": {
+    "desc": "头目变身模式（星魔师）"
+  },
+  "HudHomelandPlacementConsole": {
+    "desc": "家园手柄建造模式",
+    "inputKeyTable": [
+      [
+        [
+          "Raw/GamepadDPad"
+        ],
+        1460636840
+      ],
+      [
+        [
+          "Raw/GamepadRightStickMove"
+        ],
+        2040567426
+      ],
+      [
+        [
+          "Skill/ZoomIn"
+        ],
+        1293789696
+      ],
+      [
+        [
+          "Skill/ZoomOut"
+        ],
+        1249863834
+      ]
+    ]
+  },
+  "HudSkillModify": {
+    "desc": "组合技切换",
+    "inputKeyTable": [
+      [
+        [
+          "Player/Crouch"
+        ],
+        1712019958
+      ],
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1446391682
+      ]
+    ]
+  },
+  "HudSkillModifyInConnection": {
+    "desc": "组合技切换-链接模式",
+    "inputKeyTable": [
+      [
+        [
+          "Skill/LockTarget"
+        ],
+        1844059914
+      ]
+    ]
+  }
+}

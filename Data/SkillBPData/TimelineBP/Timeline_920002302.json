@@ -1,0 +1,265 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "6": {
+      "tag": "TE_Cre_DuckBait",
+      "name": "addEntityTag",
+      "UID": "77b7a1b1-92d3-4fad-a3bf-ca1ac4f6b9e7",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "e1524451-dac4-4761-9ffe-c2c7c1e259a6",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "key": "DuckDisappear",
+      "duration": 20,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "cf74f2e6-57c9-4929-9184-af40fae732e3",
+      "name": "addTimer"
+    },
+    "31": {
+      "key": "duck",
+      "duration": 1,
+      "actionIds": [
+        29
+      ],
+      "NodeID": 31,
+      "UID": "8672383d-8cf7-40c6-a0e9-5c80bfb2918c",
+      "name": "addEntityTimer"
+    },
+    "9": {
+      "triggerName": "Dance",
+      "name": "setEffectAnimTrigger",
+      "UID": "8edd0f8d-a411-4269-9174-3221e5c7d7d1",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "20": {
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 20,
+      "onExit": {
+        "actionIds": [
+          18
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          18
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1,
+      "onEnter": {
+        "actionIds": [
+          18
+        ]
+      },
+      "UID": "b31dc6f3-b3ad-455f-ba7f-3f0629057161"
+    },
+    "2": {
+      "name": "playEffectOnPosRot",
+      "UID": "e8fdbf85-d27f-4e1b-bd12-f469fead2eed",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 2,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "4": {
+      "UID": "59d96ad5-96d6-4395-a3bd-6288876b60e3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6,
+          2,
+          8,
+          9,
+          10,
+          31,
+          33,
+          13,
+          34
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "c728b87e-b99f-47bf-815b-75a7c5d7a6b7",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_DancingPlus01",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "c06851c9-3503-42ab-9647-19699974eee6",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 23
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "name": "playEffectOnPosRot",
+      "UID": "dd51b0f4-56cc-42d1-a6ca-4bfbdb08b57a",
+      "effectId": "Eff_Duck_Die",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 14,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "10": {
+      "name": "playEffectOnPosRot",
+      "UID": "cfe84c48-7652-4e26-94e2-0b105dc788ac",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_MockAppear",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 10,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 26,
+      "UID": "c7d16a08-c60c-4fe2-8425-e1d09e7b9b77"
+    },
+    "13": {
+      "key": "duck",
+      "name": "setServerCacheVal",
+      "UID": "6de0cc53-d3b9-483e-8a76-7c9aaa937790",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 13
+    },
+    "17": {
+      "eventName": "Msg_DuckBait",
+      "name": "sendAIMsg",
+      "UID": "09520323-08eb-4e4b-a181-4129efbdde23",
+      "target": "TARGET",
+      "NodeID": 17
+    },
+    "29": {
+      "offsetXYZ": [
+        -0.8,
+        0.9,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "72978797-a1a3-4eef-98e1-e84b1b3a18ec",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock01",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": {
+        "name": "getEntityEffectRotation",
+        "UID": "41b3fab7-c3b6-4ab9-a896-410bef228261",
+        "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+        "target": "OWNER",
+        "NodeID": 28
+      },
+      "rotTo": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "name": "actOnTargets",
+      "UID": "41101e4e-6164-4c46-a048-500cd9d7b5c5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            15,
+            15,
+            15
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 18
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f79c78f6-43d7-426a-9ed4-90a4f96ff9ae",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Duck_End_Up",
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2d92d979-8d7d-40ea-a092-b8e3d5d72b96",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Duck_Music_Up",
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e00d02f6-ecf6-45ac-bd84-c8f3900a71b7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Duck_Throw_Up",
+      "NodeID": 34
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14,
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 19.9,
+      "NodeID": 16,
+      "UID": "1e765159-bb8d-420e-8062-4e6105a66e2c"
+    }
+  },
+  "BPName": "timeline_920002302",
+  "NodeID": 1,
+  "UID": "de8ac413-8f73-4d2c-b2e6-de1af3c87972",
+  "eventIds": [
+    4,
+    26,
+    16,
+    20
+  ],
+  "layer": "Base",
+  "length": 999
+}

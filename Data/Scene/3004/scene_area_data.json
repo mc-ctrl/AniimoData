@@ -1,0 +1,986 @@
+{
+  "86387566": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      14.31,
+      120.39,
+      21.31,
+      119.3,
+      25.28,
+      118.06,
+      30.98,
+      115.34,
+      38.62,
+      109.79,
+      51.01,
+      84.41,
+      49.98,
+      72.64,
+      46.21,
+      63.09,
+      38.19,
+      52.72,
+      22.78,
+      44.27,
+      10.69,
+      42.57,
+      -0.48,
+      44.69,
+      -12.04,
+      51.44,
+      -19.42,
+      59.3,
+      -24.59,
+      70.35,
+      -26.43,
+      84.96,
+      -12.22,
+      113.1,
+      -4.12,
+      117.39,
+      5.05,
+      119.9
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 86387566,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              1,
+              2
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 8.95,
+    "sandboxId": 86382698,
+    "position": [
+      10.87,
+      15.54,
+      79.59
+    ],
+    "pointType": 1,
+    "name": "祭坛分区1FB"
+  },
+  "91016832": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "id": 91016832,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "grabEggEvacuationPointEnter",
+            [
+              1,
+              14
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "grabEggEvacuationPointExit",
+            [
+              1,
+              14
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 20,
+    "radius": 4.05,
+    "sandboxId": 91016822,
+    "position": [
+      10.17,
+      15.57,
+      31.68
+    ],
+    "pointType": 1,
+    "name": "区域_91016832"
+  },
+  "86387708": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      14.31,
+      120.39,
+      21.31,
+      119.3,
+      25.28,
+      118.06,
+      30.98,
+      115.34,
+      38.62,
+      109.79,
+      47.72,
+      98.54,
+      51.01,
+      84.41,
+      49.98,
+      72.64,
+      46.21,
+      63.09,
+      38.19,
+      52.72,
+      22.78,
+      44.27,
+      10.69,
+      42.57,
+      -0.48,
+      44.69,
+      -12.04,
+      51.44,
+      -19.42,
+      59.3,
+      -24.59,
+      70.35,
+      -25.69,
+      77.37,
+      -54.06,
+      77.6,
+      -82.53,
+      57.3,
+      -82.94,
+      106.21,
+      -54.09,
+      106.18,
+      -53.59,
+      85.6,
+      -26.43,
+      84.96,
+      -25.01,
+      94.64,
+      -19.21,
+      106.27,
+      -12.22,
+      113.1,
+      -4.12,
+      117.39,
+      5.05,
+      119.9
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 86387708,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 8.95,
+    "sandboxId": 86382698,
+    "position": [
+      10.87,
+      25.33,
+      79.59
+    ],
+    "pointType": 1,
+    "name": "祭坛分区2F"
+  },
+  "90828333": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -41.31,
+      -169.96,
+      -35.63,
+      -180.62,
+      -120.49,
+      -185.95,
+      -133.63,
+      -170.55
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90828333,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": [
+          {
+            "events": {},
+            "stayTime": 0
+          }
+        ]
+      }
+    ],
+    "height": 30,
+    "sandboxId": 86636178,
+    "position": [
+      -59.93,
+      10.12,
+      -175.11
+    ],
+    "pointType": 1,
+    "name": "神庙地面3",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "86637838": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -62.55,
+      -168.68,
+      -94.15,
+      -226.22,
+      -103.8,
+      -226.42,
+      -188.26,
+      -167.07,
+      -189.37,
+      -115.32,
+      -189.41,
+      -40.8,
+      -31.72,
+      -35.74,
+      -31.7,
+      -168.7
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 86637838,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              2,
+              1,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 8.19,
+    "sandboxId": 86636178,
+    "position": [
+      -89.39,
+      -4.41,
+      -141.06
+    ],
+    "pointType": 1,
+    "name": "神庙分区1F",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "90622744": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -171.03,
+      -40.9,
+      -188.48,
+      -26.19,
+      -202.46,
+      -29.68,
+      -193.73,
+      -59.7
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90622744,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": [
+          {
+            "events": {},
+            "stayTime": 0
+          }
+        ]
+      }
+    ],
+    "height": 1.94,
+    "sandboxId": 86636178,
+    "position": [
+      -177.25,
+      10.25,
+      -39.39
+    ],
+    "pointType": 1,
+    "name": "神庙地面5"
+  },
+  "86640580": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -62.55,
+      -168.68,
+      -94.03,
+      -226.04,
+      -189.37,
+      -115.32,
+      -191.69,
+      -29.42,
+      -35.15,
+      -34.37,
+      -31.34,
+      -168.43
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 86640580,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              2,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 4.17,
+    "sandboxId": 86636178,
+    "position": [
+      -89.39,
+      8.57,
+      -141.06
+    ],
+    "pointType": 1,
+    "name": "神庙分区2F"
+  },
+  "90622734": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -97.9,
+      -34.33,
+      -92.29,
+      -16.45,
+      -77.65,
+      -15.39,
+      -73.57,
+      -33.12
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90622734,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": [
+          {
+            "events": {},
+            "stayTime": 0
+          }
+        ]
+      }
+    ],
+    "height": 2.54,
+    "sandboxId": 86636178,
+    "position": [
+      -85.53,
+      10.82,
+      -32.34
+    ],
+    "pointType": 1,
+    "name": "神庙地面4",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "86641643": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -169.87,
+      -35.45,
+      -169.93,
+      -167.14,
+      -32.78,
+      -168.64,
+      -30.68,
+      -34.93
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 86641643,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              2,
+              3,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 12.1,
+    "sandboxId": 86636178,
+    "position": [
+      -132.71,
+      24.57,
+      -85.18
+    ],
+    "pointType": 1,
+    "name": "神庙分区3F",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "90619238": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -120.69,
+      -22.26,
+      -130.93,
+      -34.45,
+      -137.42,
+      -33.42,
+      -125.4,
+      -18.86
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90619238,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": [
+          {
+            "events": {},
+            "stayTime": 0
+          }
+        ]
+      }
+    ],
+    "height": 1.43,
+    "sandboxId": 86636178,
+    "position": [
+      -124.14,
+      24.83,
+      -23.66
+    ],
+    "pointType": 1,
+    "name": "神庙地面2",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "76900110": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "sandboxId": 76900111,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 76900110,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "grabEggEvacuationPointEnter",
+            [
+              1,
+              14
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "grabEggEvacuationPointExit",
+            [
+              1,
+              14
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "radius": 10,
+    "position": [
+      250.9,
+      28.83,
+      -212.6
+    ],
+    "pointType": 1,
+    "name": "区域_76880015",
+    "AreaLoadTypeNoNormal": 0
+  },
+  "90618764": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      14.52,
+      -98.1,
+      -24.23,
+      -79.24,
+      -22.81,
+      -64.67,
+      21.18,
+      -62.8
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90618764,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": [
+          {
+            "events": {},
+            "stayTime": 0
+          }
+        ]
+      }
+    ],
+    "height": 4.11,
+    "sandboxId": 86636178,
+    "position": [
+      6.47,
+      10.15,
+      -85.96
+    ],
+    "pointType": 1,
+    "name": "神庙地面1",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "77466441": {
+    "areaLoadType": 0,
+    "areaPoints": [
+      -244.92,
+      -216.49,
+      -237.23,
+      -213.82,
+      -216.59,
+      -220.55,
+      -226.75,
+      -231.88,
+      -237.32,
+      -237.16,
+      -259.94,
+      -225.07,
+      -255.95,
+      -214
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 77466441,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "grabEggHighGrassEnter",
+            {}
+          ],
+          [
+            "enableHighGrassDither",
+            [
+              79157179,
+              1
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "grabEggHighGrassExit",
+            {}
+          ],
+          [
+            "enableHighGrassDither",
+            [
+              79157179,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "sandboxId": 76717294,
+    "position": [
+      -240.66,
+      14.05,
+      -223.47
+    ],
+    "pointType": 1,
+    "name": "区域_77466441",
+    "AreaLoadTypeNoNormal": 0
+  },
+  "90614186": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      46.87,
+      143.54,
+      45.19,
+      31.81,
+      -98.74,
+      48.9
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90614186,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 2.22,
+    "sandboxId": 86382698,
+    "position": [
+      -61.12,
+      13.46,
+      121.77
+    ],
+    "pointType": 1,
+    "name": "祭坛地面"
+  },
+  "86384111": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -82.87,
+      106.11,
+      -82.94,
+      56.84,
+      -54.17,
+      106.11
+    ],
+    "areaShapeType": 2,
+    "entityType": 0,
+    "entityTypeList": {},
+    "id": 86384111,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 8.46,
+    "sandboxId": 86382698,
+    "position": [
+      -69.15,
+      15.88,
+      90.42
+    ],
+    "pointType": 1,
+    "name": "祭坛分区1FA"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "craftId": 4020000,
+    "typeId": 1,
+    "facilityId": [
+      10300011,
+      10300012,
+      10300013
+    ]
+  },
+  {
+    "craftId": 4020001,
+    "typeId": 1,
+    "facilityId": [
+      10300012,
+      10300013
+    ]
+  },
+  {
+    "craftId": 4020002,
+    "typeId": 1,
+    "facilityId": [
+      10300013
+    ]
+  },
+  {
+    "craftId": 4020008,
+    "typeId": 2,
+    "facilityId": [
+      10300021,
+      10300022,
+      10300023
+    ]
+  },
+  {
+    "craftId": 4020009,
+    "typeId": 2,
+    "facilityId": [
+      10300022,
+      10300023
+    ]
+  },
+  {
+    "craftId": 4020010,
+    "typeId": 2,
+    "facilityId": [
+      10300023
+    ]
+  }
+]

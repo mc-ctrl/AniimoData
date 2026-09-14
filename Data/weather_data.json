@@ -1,0 +1,105 @@
+{
+  "3": {
+    "ecsInfo": [
+      2,
+      1,
+      20
+    ],
+    "forecast": 1,
+    "name": 1448958060,
+    "push": 1737171565,
+    "icon": "$UI_Img_Weather_Snow.png",
+    "conditions": [
+      825
+    ],
+    "effect": "$UI_Node_Weather_Snow.prefab",
+    "weatherRTPC": 50,
+    "picture": "$UI_Img_Map_Preview_GamePlay6.png",
+    "weatherPrefab": "WeatherProfile_Snow_Small",
+    "noPetPush": 1925574596
+  },
+  "4": {
+    "ecsInfo": [
+      1,
+      1,
+      20
+    ],
+    "forecast": 1,
+    "name": 1842010927,
+    "push": 1698037734,
+    "icon": "$UI_Img_Weather_Thunderstorm.png",
+    "conditions": [
+      825
+    ],
+    "effect": "$UI_Node_Weather_Thunder.prefab",
+    "weatherRTPC": 40,
+    "picture": "$UI_Img_Map_Preview_GamePlay4.png",
+    "weatherPrefab": "WeatherProfile_Rain_Storm",
+    "noPetPush": 1920779629
+  },
+  "13": {
+    "ecsInfo": [
+      2,
+      1,
+      20
+    ],
+    "forecast": 1,
+    "name": 2051489671,
+    "push": 1737633528,
+    "icon": "$UI_Img_Weather_Snow.png",
+    "conditions": [
+      825
+    ],
+    "effect": "$UI_Node_Weather_Snow.prefab",
+    "weatherRTPC": 70,
+    "picture": "$UI_Img_Map_Preview_GamePlay6.png",
+    "weatherPrefab": "WeatherProfile_Snow_Heavy",
+    "noPetPush": 1420590455
+  },
+  "12": {
+    "ecsInfo": [
+      1,
+      1,
+      20
+    ],
+    "forecast": 1,
+    "name": 1144964246,
+    "push": 2051311673,
+    "icon": "$UI_Img_Weather_Rainy.png",
+    "conditions": [
+      825
+    ],
+    "effect": "$UI_Node_Weather_Rain.prefab",
+    "weatherRTPC": 30,
+    "picture": "$UI_Img_Map_Preview_GamePlay7.png",
+    "weatherPrefab": "WeatherProfile_Rain_Heavy",
+    "noPetPush": 1724511599
+  },
+  "1": {
+    "effect": "$UI_Node_Weather_Sun.prefab",
+    "name": 1894387254,
+    "weatherPrefab": "WeatherProfile_Sunny",
+    "picture": "$UI_Img_Map_Preview_GamePlay5.png",
+    "weatherRTPC": 0,
+    "icon": "$UI_Img_Weather_Sunny.png"
+  },
+  "2": {
+    "ecsInfo": [
+      1,
+      1,
+      20
+    ],
+    "forecast": 1,
+    "name": 1688453796,
+    "push": 1530149332,
+    "icon": "$UI_Img_Weather_Rainy.png",
+    "conditions": [
+      825
+    ],
+    "effect": "$UI_Node_Weather_Rain.prefab",
+    "weatherRTPC": 10,
+    "picture": "$UI_Img_Map_Preview_GamePlay7.png",
+    "weatherPrefab": "WeatherProfile_Rain_Small",
+    "noPetPush": 1149128170
+  }
+}

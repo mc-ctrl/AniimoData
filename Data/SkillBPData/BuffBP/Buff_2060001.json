@@ -1,0 +1,95 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "7f5b44c3-dd6a-43ce-a486-8cda85ce648a",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "calcId": 2060001,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "2886924a-46b8-4e05-a755-928b4b0aa402",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "key": "getmoneyaward",
+      "name": "setRoguePersistData",
+      "UID": "ceccece2-245f-4ef4-afa1-75e8ff382fbb",
+      "value": {
+        "UID": "08937b7e-354f-4237-982a-c2a9e2706e4c",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 8
+      },
+      "NodeID": 9
+    },
+    "5": {
+      "name": "addRogueCoin",
+      "UID": "62d9cf24-b2d6-473e-b79a-e32c324e28e5",
+      "count": {
+        "calcId": 2060001,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 4,
+        "UID": "2886924a-46b8-4e05-a755-928b4b0aa402",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "10": {
+      "UID": "4bdcad40-6032-433e-a309-b58d2c61148c",
+      "name": "getRoguePersistData",
+      "key": "getmoneyaward",
+      "NodeID": 10
+    },
+    "11": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "ec7eefbe-3ae8-4594-89db-4b62618b4e74",
+      "NodeID": 11,
+      "lValue": {
+        "UID": "4bdcad40-6032-433e-a309-b58d2c61148c",
+        "name": "getRoguePersistData",
+        "key": "getmoneyaward",
+        "NodeID": 10
+      }
+    },
+    "7": {
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "fa0022b6-5d26-4a80-b226-bd95b139369a",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        5,
+        9
+      ]
+    },
+    "2": {
+      "buffId": 2060000,
+      "name": "hasBuff",
+      "UID": "0ce152a9-fee8-46b4-90d0-f7001f313117",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2060001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2156304",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    11,
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "b6743696-84ed-46b2-8911-3d449424e63f",
+      "name": "stopAnimation",
+      "anim": "StunLoop",
+      "NodeID": 3
+    },
+    "5": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "54fe6c2c-763e-4414-a7e1-db4e5ab92693",
+      "target": "OWNER",
+      "NodeID": 5,
+      "animId": "StunLoop"
+    }
+  },
+  "onBuffDestroyIds": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

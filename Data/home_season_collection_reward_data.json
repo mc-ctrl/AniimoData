@@ -1,0 +1,52 @@
+{
+  "1003": {
+    "reward": 200727,
+    "needPoint": 6000,
+    "seasonId": 1
+  },
+  "1004": {
+    "reward": 200728,
+    "needPoint": 10000,
+    "seasonId": 1
+  },
+  "1002": {
+    "reward": 200726,
+    "needPoint": 3000,
+    "seasonId": 1
+  },
+  "1006": {
+    "reward": 200730,
+    "needPoint": 40000,
+    "seasonId": 1
+  },
+  "1007": {
+    "reward": 200731,
+    "needPoint": 60000,
+    "seasonId": 1
+  },
+  "1008": {
+    "reward": 200732,
+    "needPoint": 90000,
+    "seasonId": 1
+  },
+  "1009": {
+    "reward": 200733,
+    "needPoint": 120000,
+    "seasonId": 1
+  },
+  "1010": {
+    "reward": 200734,
+    "needPoint": 160000,
+    "seasonId": 1
+  },
+  "1001": {
+    "reward": 200725,
+    "needPoint": 1000,
+    "seasonId": 1
+  },
+  "1005": {
+    "reward": 200729,
+    "needPoint": 20000,
+    "seasonId": 1
+  }
+}

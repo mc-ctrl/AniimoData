@@ -1,0 +1,100 @@
+{
+  "angularIncreaseDuration": 0.3,
+  "BPName": "buff_1011000010",
+  "NodeID": 0,
+  "effectId": "Eff_Buff_Rogue_Shield_Equip_Bullet_01",
+  "trackingNoOffsetRotationRange": 5,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 300,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "46": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 45,
+      "NodeID": 46,
+      "UID": "99a17694-9750-461e-83a9-252fa850e9aa",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 1
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        45
+      ]
+    },
+    "43": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "c7495c55-b3f6-4b04-bc22-7d64a380aa56",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Shield_Bullet_01",
+      "NodeID": 43
+    },
+    "45": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 2,
+        "reduce_cur_tp_rate": 0
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10021,
+        "hitSoundType": "h",
+        "impulseId": 0,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      },
+      "UID": "1386f7a8-e4f1-4928-9f3a-2ec45e85ba8f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 45
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 8,
+  "calcResultNodeId": 45,
+  "onProjectileHitIds": [
+    46
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 300,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "onProjectileStartIds": [
+    43
+  ],
+  "tickInterval": 0,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "duration": 6,
+  "groundSweepRadius": 0.05,
+  "impulseId": 0,
+  "acceleration": 10
+}

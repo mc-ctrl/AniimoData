@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135202",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    5,
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "icon_buff_meihuo"
+    }
+  ],
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "83aa333e-c084-4c15-88bb-0c665bc350f3",
+      "effectId": "Eff_Buff_Charm",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "a617a37e-42ad-4819-b9a7-f42bfa3bd9ae",
+      "effectId": "Eff_Buff_Charm",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

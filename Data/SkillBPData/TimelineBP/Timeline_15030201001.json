@@ -1,0 +1,335 @@
+{
+  "nodeMap": {
+    "53": {
+      "calcId": 15030201,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 53,
+      "UID": "19f9cc6f-3eea-41b6-818f-5f5f9ada1846",
+      "name": "getParamByLuaConfig"
+    },
+    "40": {
+      "buffId": 2150104,
+      "name": "removeBuff",
+      "UID": "f89b2e57-8830-4f5d-b086-bc26e2c969ca",
+      "target": "TARGET",
+      "NodeID": 40
+    },
+    "41": {
+      "buffId": 2150104,
+      "name": "hasBuff",
+      "UID": "2d6c6e91-e841-496d-a469-11f2c946b221",
+      "target": "TARGET",
+      "NodeID": 41
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 35,
+      "UID": "e8104263-4b87-40f0-96b7-74127a0e6dce"
+    },
+    "56": {
+      "target": "TARGET",
+      "duration": {
+        "calcId": 15030201,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 55,
+        "UID": "47ac7879-a148-4799-9567-885eb05befff",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 10072,
+      "NodeID": 56,
+      "UID": "e2083056-3efd-4438-aac6-4f57c2ef25d4",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "55": {
+      "calcId": 15030201,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 55,
+      "UID": "47ac7879-a148-4799-9567-885eb05befff",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "UID": "530e10cc-5fbb-49b3-a8f0-190eee42d991",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10,
+          47,
+          48
+        ]
+      },
+      "NodeID": 12
+    },
+    "48": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d545c134-3962-4b0d-b62b-b285acd2440a",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_Earthshock_Start",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "4": {
+      "UID": "147d7e8d-84af-4bfe-b9ec-5713e39c04ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          17
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "calcId": 15030201,
+          "calcType": 2,
+          "paramName": "param0",
+          "NodeID": 53,
+          "UID": "19f9cc6f-3eea-41b6-818f-5f5f9ada1846",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10501,
+        "hitFrameFreezeId": 10022,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Metal_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 3002
+      },
+      "UID": "b5a38bf6-e965-49d9-9774-b4c803dcfdbf",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 45
+    },
+    "14": {
+      "UID": "ef2ffd1e-b647-4a43-8bc6-068331714dbe",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "cancellable": 1
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c9504d59-aa76-4b3b-b1ad-e37de0386cf4",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_EarthShock"
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 15,
+      "UID": "ae12c1a3-e576-4942-8de8-0ca1776369c0"
+    },
+    "25": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "calcId": 15030201,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 53,
+            "UID": "19f9cc6f-3eea-41b6-818f-5f5f9ada1846",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "584f3932-11f3-452f-a741-ece449dc5907",
+          "NodeID": 51,
+          "lValue": {
+            "rValue": 0.1,
+            "name": "multiply",
+            "UID": "4468b055-ddcd-4765-a736-4a8b37317fa3",
+            "NodeID": 50,
+            "lValue": {
+              "templateId": 2150104,
+              "name": "getBuffLayer",
+              "UID": "e5691e58-d06f-4527-af5e-26dd4b4fab89",
+              "target": "TARGET",
+              "NodeID": 49
+            }
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10501,
+        "hitFrameFreezeId": 10022,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Metal_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 3002
+      },
+      "UID": "88ca2839-02d8-488e-b9a7-4655d16b4573",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 25
+    },
+    "47": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8cf5e2f0-5318-4e1d-8c5f-ade1ff76d6f9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10503_Rampage_Skill_EarthShock",
+      "NodeID": 47
+    },
+    "27": {
+      "actionIds": [
+        25,
+        40,
+        56
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "ae98705b-35be-4a33-9f82-c80bc7da0ffa",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        45
+      ],
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "6180cfc4-a19f-4304-8e77-c039b312fed6",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 17
+    },
+    "2": {
+      "UID": "5bb34d5f-07d8-4b6d-818d-58d71f120bd7",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 2
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 30,
+      "UID": "9e435b6e-7f9b-4574-85e9-148975e40baf"
+    },
+    "21": {
+      "UID": "507665a6-1528-47d7-8251-bc4aea054e51",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    },
+    "19": {
+      "UID": "c38d460e-5eb7-410f-b750-4d4d7c740ae2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 19
+    },
+    "34": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0,
+        3
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "38ea9fb4-0efd-49ca-942e-6dd157bccbe3",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_EarthShock",
+      "scale": 1,
+      "NodeID": 34
+    },
+    "28": {
+      "calcResultNodeId": 45,
+      "name": "actOnTargets",
+      "UID": "e454e8ba-6d22-467c-b0bb-f281a32d6fc2",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            3
+          ],
+          "shapeArgs": [
+            3,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "100",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        27
+      ],
+      "impulseId": 3002,
+      "NodeID": 28
+    }
+  },
+  "BPName": "ability_15030201",
+  "NodeID": 6,
+  "UID": "f8d925ef-bcfa-4a35-b359-89445eb7b576",
+  "eventIds": [
+    4,
+    21,
+    12,
+    35,
+    30,
+    15
+  ],
+  "layer": "Base",
+  "length": 4.44
+}

@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_13730120",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "abilityParamId": 11300061,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 13730120001,
+      "name": "setCombatActionTimeline",
+      "UID": "7d8cee22-643a-48db-b69d-5e440653cc6f",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Cast_Short"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10371_Skill_MoonLight_Combo",
+    "Eff_Parmon_10371_Skill_MoonLight_Combo_01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

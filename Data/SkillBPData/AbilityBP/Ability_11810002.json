@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_11810002",
+  "NodeID": 1,
+  "UID": "ec3fff6d-6d93-42db-829a-17dbd92d338d",
+  "abilityParamId": 14400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11810002001,
+      "name": "setCombatActionTimeline",
+      "UID": "663d54e7-5df0-4a75-8120-5de8103025dc",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Whisbird_10181_Attack",
+    "Eff_Hit_Wind_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "风系远程普攻",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "switchSkillByState": {
+    "FLYRISE": 11810012,
+    "FLYHOVER": 11810012,
+    "FLYMOVE": 11810012,
+    "FLYING": 11810012
+  },
+  "searchTargetRangeDown": 3
+}

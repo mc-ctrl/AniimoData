@@ -1,0 +1,65 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10075",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    3,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 0.3,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 3,
+      "UID": "64b1bc20-771b-48a6-89f7-fcf413abbcfc",
+      "name": "playRadialBlur"
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "0bded94e-627e-4b3f-8863-48d53d46e9d7",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ca9b6afe-ad01-4ed1-9cf4-f8981bb92631",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_sfx_parmon_break",
+      "NodeID": 9
+    },
+    "11": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 11,
+      "UID": "dfd77371-8499-4cb9-838b-a48a12bf36b1",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "7": {
+      "name": "playHitEffect",
+      "UID": "e2b32bb6-b962-4ae9-9a60-ca9603e6eaf2",
+      "target": "OWNER",
+      "NodeID": 7,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    }
+  },
+  "onBuffDestroyIds": [
+    13
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    3,
+    9,
+    7
+  ]
+}

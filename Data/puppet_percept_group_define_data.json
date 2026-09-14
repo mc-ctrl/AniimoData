@@ -1,0 +1,2930 @@
+{
+  "PG_GrabEggs_BirdGuardSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124011,
+      212011
+    ],
+    "visionAreaLow": [
+      124011,
+      212011
+    ],
+    "visionHeight": [
+      -15,
+      15
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_GrabEggs_BoomSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124011,
+      212011
+    ],
+    "visionAreaLow": [
+      124011,
+      212011
+    ],
+    "visionHeight": [
+      0,
+      10
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.5
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_GrabEggs_GuardSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124011,
+      212011
+    ],
+    "visionAreaLow": [
+      124011,
+      212011
+    ],
+    "visionHeight": [
+      -10,
+      10
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.5
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_GrabEggs_GuardSense1": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      324011,
+      412011
+    ],
+    "visionAreaLow": [
+      324011,
+      412011
+    ],
+    "visionHeight": [
+      -50,
+      50
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_GrabEggs_IslandSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124017,
+      212017
+    ],
+    "visionAreaLow": [
+      124012,
+      212012
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_GrabEggs_patrolSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 10,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124018,
+      212018
+    ],
+    "visionAreaLow": [
+      124018,
+      212018
+    ],
+    "visionHeight": [
+      -10,
+      10
+    ],
+    "visionType": 1,
+    "attenuation": -10,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.5
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_PT1_Stage1": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      190012,
+      290012
+    ],
+    "visionAreaLow": [
+      190012,
+      290012
+    ],
+    "visionAreaMid": [
+      190012,
+      290012
+    ],
+    "visionAreaNone": [
+      190012,
+      290012
+    ],
+    "visionHeight": [
+      -15,
+      15
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Simple_Bird_Circle_10": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1360101
+    ],
+    "visionAreaLow": [
+      1360101
+    ],
+    "visionHeight": [
+      -10,
+      10
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Simple_Circle_10": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1360101
+    ],
+    "visionAreaLow": [
+      1360101
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_ DefaultNoSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaLow": [
+      1240002,
+      2120002
+    ],
+    "visionAreaMid": [
+      1240001,
+      2120001
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10021_NewBie": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10022_Excited": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 100,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110009,
+      220009,
+      330009,
+      440009
+    ],
+    "visionAreaLow": [
+      110009,
+      220009,
+      330009,
+      440009
+    ],
+    "visionAreaMid": [
+      110009,
+      220009,
+      330009,
+      440009
+    ],
+    "visionHeight": [
+      -9,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10022_No3State": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110022,
+      210022
+    ],
+    "visionAreaLow": [
+      110022,
+      210022
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10024_Angry": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 100,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110012,
+      210012
+    ],
+    "visionAreaLow": [
+      110012,
+      210012
+    ],
+    "visionAreaMid": [
+      110012,
+      210012
+    ],
+    "visionHeight": [
+      -9,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10031_Chaser": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110009,
+      220009,
+      330009,
+      440009
+    ],
+    "visionAreaLow": [
+      110009,
+      220009,
+      330009,
+      440009
+    ],
+    "visionAreaMid": [
+      110009,
+      220009,
+      330009,
+      440009
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10041_QuickSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 70,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240006,
+      210063
+    ],
+    "visionAreaMid": [
+      1240006,
+      210063
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10051_Stage1": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110042,
+      210042
+    ],
+    "visionAreaLow": [
+      110042,
+      210042
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10161": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110003,
+      220003,
+      330003,
+      440003
+    ],
+    "visionAreaLow": [
+      110003,
+      220003,
+      330003,
+      440003
+    ],
+    "visionAreaMid": [
+      110003,
+      220003,
+      330003,
+      440003
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10161_Sp": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "visionAreaLow": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "visionAreaMid": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10171_CatchTutorial": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240003,
+      2120003
+    ],
+    "visionAreaLow": [
+      1240002,
+      2120002
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10181": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      109018,
+      218018,
+      304518,
+      404518
+    ],
+    "visionAreaLow": [
+      109018,
+      218018,
+      304518,
+      404518
+    ],
+    "visionAreaMid": [
+      109018,
+      218018,
+      304518,
+      404518
+    ],
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10181_CanNotCatch": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "visionAreaLow": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "visionAreaMid": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "visionHeight": [
+      -7,
+      7
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10181_GDC": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "visionAreaLow": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "visionAreaMid": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10187": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "visionAreaLow": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "visionAreaMid": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10191": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "visionAreaLow": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "visionAreaMid": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10191_Mimicry": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "visionAreaLow": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "visionAreaMid": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "visionHeight": [
+      -7,
+      7
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10201_Forest": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110008,
+      220008,
+      330008,
+      4400080
+    ],
+    "visionAreaLow": [
+      110008,
+      220008,
+      330008,
+      4400080
+    ],
+    "visionAreaMid": [
+      110008,
+      220008,
+      330008,
+      4400080
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10201_Giant": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110007,
+      220007,
+      330007,
+      440007
+    ],
+    "visionAreaLow": [
+      110007,
+      220007,
+      330007,
+      440007
+    ],
+    "visionAreaMid": [
+      110007,
+      220007,
+      330007,
+      440007
+    ],
+    "visionHeight": [
+      -2,
+      2
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10201_MiserBro": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110011,
+      220011,
+      330011,
+      440011
+    ],
+    "visionAreaLow": [
+      110011,
+      220011,
+      330011,
+      440011
+    ],
+    "visionAreaMid": [
+      110011,
+      220011,
+      330011,
+      440011
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10201_QuickSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 70,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110032,
+      210032
+    ],
+    "visionAreaMid": [
+      110032,
+      210032
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10201_QuickSensePro": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 70,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110062,
+      210062
+    ],
+    "visionAreaMid": [
+      110062,
+      210062
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10203_Mimicry": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110005,
+      330005,
+      440005
+    ],
+    "visionAreaLow": [
+      110010,
+      220010,
+      330010,
+      440010
+    ],
+    "visionAreaMid": [
+      110005,
+      330005,
+      440005
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10203_Patrol": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110005,
+      330005,
+      440005
+    ],
+    "visionAreaLow": [
+      110010,
+      220010,
+      330010,
+      440010
+    ],
+    "visionAreaMid": [
+      110005,
+      330005,
+      440005
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10207_Skill": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "visionAreaLow": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "visionAreaMid": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "visionHeight": [
+      -2,
+      2
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10231_Mimicry": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110052,
+      210052
+    ],
+    "visionAreaLow": [
+      110052,
+      210052
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10261": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionAreaLow": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionAreaMid": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_1026101": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124016,
+      212016
+    ],
+    "visionAreaLow": [
+      124016,
+      212016
+    ],
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_10351_No3State": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240007,
+      2120007
+    ],
+    "visionAreaMid": [
+      1240002,
+      2120002
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10441_Stage1": {
+    "rayCastingSwitch": 0,
+    "tallGrassSwitch": 0,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240001,
+      2120001
+    ],
+    "visionAreaLow": [
+      1240002,
+      2120002
+    ],
+    "visionHeight": [
+      -20,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 0,
+    "playerCrounch": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 1
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10471_Stage1": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124014,
+      212014
+    ],
+    "visionAreaLow": [
+      124014,
+      212014
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_10501_Stage1": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124013,
+      212013
+    ],
+    "visionAreaLow": [
+      124013,
+      212013
+    ],
+    "visionAreaMid": [
+      124015,
+      212015
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_11018100": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240010,
+      2120010
+    ],
+    "visionAreaLow": [
+      1240002,
+      2120002
+    ],
+    "visionHeight": [
+      -10,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_11018100_No3State": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240010,
+      2120010
+    ],
+    "visionAreaLow": [
+      1240002,
+      2120002
+    ],
+    "visionHeight": [
+      -10,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Common_Boss": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240009,
+      2120009
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Common_Elite": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "visionAreaLow": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "visionAreaMid": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -20,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_Common_FlowerSea": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240004,
+      2120004
+    ],
+    "visionAreaLow": [
+      1240004,
+      2120004
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Common_NewBie": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 50,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionAreaLow": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionAreaMid": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -25,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_Common_NewBie_7Day": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 50,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionAreaLow": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionAreaMid": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -25,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_Common_NewBie_GDC": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionAreaLow": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionAreaMid": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_Common_No3State": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240001,
+      2120001
+    ],
+    "visionAreaLow": [
+      1240002,
+      2120002
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Common_No3State_Low": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 200,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 200,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240007,
+      2120007
+    ],
+    "visionAreaLow": [
+      1240008,
+      2120008
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Common_None": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 0,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": 0,
+    "attenuationWait": 2,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {},
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_Common_Stage1": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240001,
+      2120001
+    ],
+    "visionAreaLow": [
+      1240002,
+      2120002
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Common_Stage1_Low": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      1240007,
+      2120007
+    ],
+    "visionAreaLow": [
+      1240008,
+      2120008
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_Common_Test1": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionAreaLow": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionAreaMid": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {},
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  "PG_Common_Test2": {
+    "rayCastingSwitch": 0,
+    "tallGrassSwitch": 0,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionAreaLow": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionAreaMid": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 2,
+    "attenuation": -8,
+    "attenuationWait": 2,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 0,
+    "playerCrounch": {},
+    "playerIdle": {
+      "NONE": 0.1
+    },
+    "playerRun": {},
+    "playerSprint": {}
+  },
+  "PG_GrabEggs_10222_GuardSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124012,
+      212012
+    ],
+    "visionAreaLow": [
+      124012,
+      212012
+    ],
+    "visionHeight": [
+      -20,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  },
+  "PG_GrabEggs_AssassinSense": {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "valueAlert": 20,
+    "valueChange": 5,
+    "valueIdle": 0,
+    "valueMax": 100,
+    "valueSensed": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "visionAreaDefault": [
+      124012,
+      212012
+    ],
+    "visionAreaLow": [
+      124012,
+      212012
+    ],
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "visionType": 1,
+    "attenuation": -15,
+    "attenuationWait": 2,
+    "ballHitAddValue": 1,
+    "ballNearbyAddValue": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {
+      "GRASS": 0
+    },
+    "playerRun": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.5
+    }
+  }
+}

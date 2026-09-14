@@ -1,0 +1,166 @@
+{
+  "nodeMap": {
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2203efdb-ff4e-421e-82b0-475929429677",
+      "target": "CASTER",
+      "NodeID": 3,
+      "animId": "Behav_HappyStart"
+    },
+    "24": {
+      "UID": "4698038d-70ce-4ee7-aad2-16f67273fb6e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "9befcbf7-cc67-4cd5-891d-9ff6f80d5d05",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "fd51c511-f3e7-47c1-9c95-6236d7d096ba",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 10
+    },
+    "22": {
+      "duration": 5,
+      "buffId": 1001100,
+      "NodeID": 22,
+      "UID": "16d8fc7b-7fac-4304-909a-81d7e5dc26ef",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "26": {
+      "offsetXYZ": [
+        2,
+        0,
+        0
+      ],
+      "templateId": 2102610006,
+      "name": "createEntity",
+      "UID": "e3cccb69-9dce-4f3a-9170-22edc6c6eb00",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": {
+        "name": "getAttribute",
+        "UID": "d7678097-318c-40b6-aec0-834fb40eda2d",
+        "target": "OWNER",
+        "NodeID": 25,
+        "attributeName": "hp_cur"
+      },
+      "stick": 0,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "id": 2005,
+      "duration": 4.33,
+      "NodeID": 27,
+      "UID": "ee89f263-76e4-4bf2-bb9c-ef3b5a18ccc3",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "17": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "86756371-2358-4c38-928b-72d721657f3b",
+      "target": "CASTER",
+      "NodeID": 17,
+      "animId": "Behav_HappyEnd"
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.93,
+      "NodeID": 21,
+      "UID": "c118cc19-2bcc-4d21-a500-8d7444e48ac2"
+    },
+    "5": {
+      "UID": "6f52ca36-1251-4a1a-af9d-a53696ab5923",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          27
+        ]
+      },
+      "NodeID": 5
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 11,
+      "UID": "3ef8d312-c58a-4a51-9f47-e08b99c2d94a"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          26,
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.33,
+      "NodeID": 19,
+      "UID": "8aa76bbc-457c-4639-b2e1-999cf28e105d"
+    },
+    "20": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cfd8b1aa-571f-4003-b93b-dbb9b91fec79",
+      "target": "CASTER",
+      "NodeID": 20,
+      "animId": "Behav_HappyLoop"
+    },
+    "12": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "259ed318-3320-4705-95fe-57601ee6c3c0",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12620602",
+  "NodeID": 7,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    14,
+    11,
+    5,
+    24,
+    19,
+    21
+  ],
+  "layer": "Base",
+  "length": 5
+}

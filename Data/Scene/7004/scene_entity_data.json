@@ -1,0 +1,51 @@
+{
+  "91278515": {
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "attachId": 0,
+    "attachToSpawnerId": 0,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "chestSpawnerStaticId": 0,
+    "enableFixedScale": false,
+    "enable_Morphling_Detail": false,
+    "enable_elite_rate": false,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 1000002,
+    "isAuto": false,
+    "isCancelBubble": false,
+    "isCancelDialogue": false,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "largeAreaId": 0,
+    "levelAreaConfigId": 0,
+    "owner": "汪岩嵩",
+    "persistEntityInfoFlag": false,
+    "position": [
+      -348.17,
+      126.42,
+      1123.8
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      -0.96,
+      0,
+      0.29
+    ],
+    "routeId": 91300308,
+    "sandboxId": 91292243,
+    "sizeCoefficient": 0.83,
+    "spawnerBornState": "LOCOMOTION",
+    "spawnerId": 91278516,
+    "staticId": 91278515,
+    "stick": true,
+    "subType": "Puppet",
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 213.66,
+    "spawnerIdleMotionState": "LOCOMOTION",
+    "unknowDialogue": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10090",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    2
+  ],
+  "name": "任务专用，玩家自杀",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "3f1c6d40-122d-468b-b25c-a601d52d6c85",
+      "name": "destroyEntity",
+      "NodeID": 3
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "8d127eaf-39e8-47c6-98fd-2d17bd3e85a9",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "onBuffThinkIds": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118714",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "transferGroup": 1,
+  "tags": [
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    22
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "38": {
+      "UID": "d2981499-766e-46ae-b6ca-116eac3ba20e",
+      "oldPetActionIds": [
+        36,
+        39,
+        40,
+        41
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 38
+    },
+    "39": {
+      "name": "stopEffectStr",
+      "UID": "a0d23084-76c8-4585-b9ff-c6667f7b660a",
+      "effectId": "Eff_Parmon_10187_Skill_DefenseStance",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "5525cbd3-bd9e-48f8-9689-170d36ddaf68",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind05_Boss",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "buffId": 2118714,
+      "name": "removeBuff",
+      "UID": "4e6d92f6-7031-45aa-9f23-2e4d6b8dc968",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "name": "stopEffectStr",
+      "UID": "a15c3dd4-fd74-43c0-a1b2-af96e87c299c",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 42
+    },
+    "43": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "ac32d5b8-496d-4c3e-91b6-558df2904675",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "44": {
+      "calcId": 2118714,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 44,
+      "UID": "f36e1e40-73a5-4654-9f56-21b257c939b2",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "UID": "9557db0f-66fe-4077-8627-57eb65c7ee41",
+      "name": "addShieldData",
+      "shieldData": {
+        "absorbRate": 1,
+        "isGeneral": true,
+        "isTeamShare": false,
+        "elementType": 0,
+        "shieldPoint": {
+          "rValue": {
+            "calcId": 2118714,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 44,
+            "UID": "f36e1e40-73a5-4654-9f56-21b257c939b2",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "d8a2e461-f124-4ae3-a259-e576fc1c70ff",
+          "NodeID": 6,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "91e05c4d-2d6d-4bde-ba55-5138bdff6549",
+            "target": "OWNER",
+            "NodeID": 5,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "NodeID": 8
+    },
+    "21": {
+      "rValue": {
+        "rValue": {
+          "calcId": 2118714,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 45,
+          "UID": "e3ee994f-2ed7-437c-afd5-78a5fad95f0c",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "265f01a1-056a-41ce-a820-54d962d8bd76",
+        "NodeID": 20,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "372e0576-b01d-4f65-b1c2-1fd9e86d9123",
+          "target": "OWNER",
+          "NodeID": 19,
+          "attributeName": "hp_max_cur"
+        }
+      },
+      "name": "greater",
+      "UID": "6d2d9d14-8e9a-405d-a3fe-cff270ee11bb",
+      "NodeID": 21,
+      "lValue": {
+        "UID": "a0f5f56e-201a-41ba-a463-8c6f54d8b52e",
+        "target": "OWNER",
+        "name": "getShieldPoint",
+        "NodeID": 28
+      }
+    },
+    "22": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "f2e15c37-ac3f-4552-9b14-b701b75684d5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 22
+    },
+    "23": {
+      "value": {
+        "rValue": {
+          "calcId": 2118714,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 45,
+          "UID": "e3ee994f-2ed7-437c-afd5-78a5fad95f0c",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "265f01a1-056a-41ce-a820-54d962d8bd76",
+        "NodeID": 20,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "372e0576-b01d-4f65-b1c2-1fd9e86d9123",
+          "target": "OWNER",
+          "NodeID": 19,
+          "attributeName": "hp_max_cur"
+        }
+      },
+      "name": "removeShieldPoint",
+      "UID": "73444c58-6938-4c15-ab17-3ca231bac2de",
+      "notifyAttackEvent": true,
+      "NodeID": 23,
+      "applyToAll": true
+    },
+    "24": {
+      "eventName": "shieldDestroy",
+      "name": "notifyCustomEvent",
+      "UID": "fa53d725-e294-4d2d-91a4-f0aef1713206",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "15": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "954501ec-c3b4-45b3-b101-1dbc39140dac",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "buffId": 2118714,
+      "name": "removeBuff",
+      "UID": "eef79955-70b2-4260-af51-491ad872270f",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "237f0ab7-34b2-460b-9e06-6e18dd6aceea",
+      "name": "buffStopThink",
+      "NodeID": 26
+    },
+    "45": {
+      "calcId": 2118714,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 45,
+      "UID": "e3ee994f-2ed7-437c-afd5-78a5fad95f0c",
+      "name": "getParamByLuaConfig"
+    },
+    "29": {
+      "value": {
+        "UID": "a0f5f56e-201a-41ba-a463-8c6f54d8b52e",
+        "target": "OWNER",
+        "name": "getShieldPoint",
+        "NodeID": 28
+      },
+      "name": "removeShieldPoint",
+      "UID": "92853b4d-d9f9-4b37-9e33-093797fc29a0",
+      "notifyAttackEvent": true,
+      "NodeID": 29,
+      "applyToAll": true
+    },
+    "2": {
+      "delay": 0,
+      "interval": 0.25,
+      "UID": "c184f686-2d5f-4c2e-82d7-e8c4ee79bdd6",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "32": {
+      "key": "9118714",
+      "name": "setCacheVal",
+      "UID": "3a5e7b5d-54fe-439b-9f9c-8949cbf01cdd",
+      "target": "OWNER",
+      "val": {
+        "rValue": {
+          "UID": "76788eb9-5f46-4da5-82d4-3c9057730321",
+          "name": "getEventShieldChangePoint",
+          "NodeID": 35
+        },
+        "name": "add",
+        "UID": "7ecd3ffb-65a4-42fa-9ea7-65011d1b8955",
+        "NodeID": 31,
+        "lValue": {
+          "key": "9118714",
+          "name": "getCacheVal",
+          "UID": "8b8f24d1-2bd4-44a0-9887-6413434f6e93",
+          "target": "OWNER",
+          "NodeID": 30
+        }
+      },
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "18b9b133-4292-4b44-9361-f4c6ee8837e9",
+      "name": "registerShieldChangeEvent",
+      "actionIds": [
+        32
+      ],
+      "NodeID": 33
+    },
+    "34": {
+      "key": "9118714",
+      "name": "setCacheVal",
+      "UID": "f7ec3b67-e50d-4032-b057-386d4d835995",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 34
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "50a85b38-9b8e-428d-a317-31db93d69bc9",
+      "effectId": "Eff_Parmon_10187_Skill_Warning_Petrifaction",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    15,
+    24,
+    26,
+    25,
+    42
+  ],
+  "onBuffStartIds": [
+    34,
+    2,
+    33,
+    38,
+    43,
+    8
+  ]
+}

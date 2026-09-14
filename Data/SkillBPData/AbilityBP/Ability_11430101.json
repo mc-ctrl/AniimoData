@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_11430101",
+  "NodeID": 1,
+  "UID": "a3c64e5c-0569-423d-8db1-90e8cdb25b44",
+  "abilityParamId": 10400251,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11430101001,
+      "name": "setCombatActionTimeline",
+      "UID": "271342e9-3940-4b18-bed8-eaba63ca304e",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_DropBackReturn",
+    "Behav_LoveStart",
+    "Behav_LoveLoop",
+    "Behav_LoveEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Electric_Blunt",
+    "Eff_Parmon_10012_Mon_Skill_Warning_Boss",
+    "Eff_Parmon_10072_Skill_Thunder"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "isLeaveCombatClearCD": true,
+  "name": ""
+}

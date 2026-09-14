@@ -1,0 +1,18 @@
+{
+  "72558101": {
+    "id": 72558101,
+    "owner": "蔡颖",
+    "markIconSpawnerId": 0,
+    "name": "板块1海滩_其他关卡_滩涂篝火元件",
+    "sandboxType": 3,
+    "spawners": [
+      72800698
+    ],
+    "poiType": 503,
+    "position": [
+      -4.75,
+      39.83,
+      157.74
+    ]
+  }
+}

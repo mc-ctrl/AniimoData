@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91163042",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11,
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "3f76f03d-9cad-43e1-b18d-bbb5e8222e0b",
+      "scale": 0,
+      "name": "setAnimFreezeScale",
+      "NodeID": 3
+    },
+    "13": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "56ae15b6-d8b0-4408-a877-843b669d6517",
+      "effectId": "Eff_Parmon_10133_Debuff_Deceleration",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "b64eb149-04c8-48ad-be36-90a517ab8fca",
+      "effectId": "Eff_Parmon_10133_Debuff_Deceleration",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "7a75507b-ff80-43ba-b120-0d0ac934e5bf",
+      "name": "delVolumeEffect",
+      "index": 8,
+      "NodeID": 10
+    },
+    "7": {
+      "name": "setShaderFrozen",
+      "NodeID": 7,
+      "UID": "e9267757-f8e8-47c2-9dae-6edae89267d3",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": true
+    },
+    "8": {
+      "name": "setShaderFrozen",
+      "NodeID": 8,
+      "UID": "dfb93edc-3982-495c-a36a-6a6b6c8e1db7",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": false
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "942c8d34-2d4e-409a-849c-95c751953fa4",
+      "effectId": "Eff_Parmon_10133_Skill_Debuff_ColdScreen_Break",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "2d69b4f3-e8bf-4dc2-af53-b4ff3b498c7d",
+      "name": "addVolumeEffect",
+      "index": 8,
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "c62f6d12-4bfd-4c9f-923a-8765ad479ce2",
+      "scale": 1,
+      "name": "setAnimFreezeScale",
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "62b1e5df-5cfc-490b-bef2-9c199afb2ec0",
+      "name": "delVolumeEffect",
+      "index": 7,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5,
+    8,
+    12,
+    10,
+    9,
+    14
+  ],
+  "onBuffStartIds": [
+    3,
+    7,
+    11,
+    13
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "duration": 5,
+  "BPName": "ability_11710310",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "gravityRatio": 5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 0,
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    126
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "125": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104302,
+      "name": "createEntity",
+      "UID": "4bf9f39a-ec72-4073-8adc-4287def23469",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "stick": 0,
+      "pos": {
+        "UID": "6c3621cf-5fd3-453b-b123-14e8962cc0cb",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "7ef94b5f-75c8-4f42-8e71-d335e88b6cd4",
+          "target": "PROJECTILE",
+          "name": "getTargetPosition",
+          "NodeID": 123
+        },
+        "NodeID": 124
+      },
+      "NodeID": 125
+    },
+    "123": {
+      "UID": "7ef94b5f-75c8-4f42-8e71-d335e88b6cd4",
+      "target": "PROJECTILE",
+      "name": "getTargetPosition",
+      "NodeID": 123
+    },
+    "126": {
+      "key": "1",
+      "actionIds": [
+        125
+      ],
+      "NodeID": 126,
+      "UID": "9c91dcf5-0940-48ed-970d-0b8f43151612",
+      "cd": 0.3,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    }
+  },
+  "acceleration": 0
+}

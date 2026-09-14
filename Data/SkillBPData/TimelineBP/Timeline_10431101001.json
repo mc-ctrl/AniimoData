@@ -1,0 +1,139 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "d92a383b-49be-44f8-9048-4e5f9b349d59",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "5853d4ba-100a-499d-b0b0-de78d7db5b5f",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 24,
+      "UID": "fe4b45ba-5da1-4b34-8623-cda6141b8a71"
+    },
+    "6": {
+      "UID": "0e6e99b6-647c-40ae-ab93-2ea7b180a131",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          11
+        ]
+      },
+      "NodeID": 6
+    },
+    "15": {
+      "UID": "11f862a6-62bc-456f-bdcd-45d89dfe1cdc",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 2104315,
+      "NodeID": 25,
+      "UID": "10fddf5c-73ab-4a8b-872e-4e4279ee3187",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "78a305c1-b7c8-4549-b1f4-cd883d85465a",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_WaterHeal"
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 27,
+      "UID": "5baf84ce-0439-40f4-82db-9feb6197f611"
+    },
+    "18": {
+      "UID": "33a55999-0341-4a12-a159-c45df3aee647",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "92a9b7f0-373b-4db8-857e-1673a709667f",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 11
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b24ad9d9-7ffc-4dff-b445-f44babacf484",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_waterheal_release",
+      "NodeID": 19
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 20,
+      "UID": "f95c47b3-4817-488d-aec2-60fc80079b91"
+    },
+    "4": {
+      "UID": "6ec84670-b002-4620-a4ff-a827b9d823c4",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    }
+  },
+  "BPName": "ability_10431101",
+  "NodeID": 8,
+  "UID": "9dd1e3f1-5b52-4613-8aa3-088f7f01c5ac",
+  "eventIds": [
+    6,
+    15,
+    18,
+    27,
+    20,
+    24
+  ],
+  "layer": "Base",
+  "length": 1.2
+}

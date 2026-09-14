@@ -1,0 +1,120 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "UID": "c4e26852-5b95-444d-a338-0203845aa243",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "actOnTargets",
+      "UID": "65d4ad13-1890-4112-85d5-e812c29f9c46",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 9
+    },
+    "8": {
+      "weightRange": [
+        5,
+        20
+      ],
+      "duration": 0.5,
+      "name": "forceDisplacement",
+      "UID": "759e7089-6f1d-4bab-8495-ca86f54e2227",
+      "target": "TARGET",
+      "displacementDir": "IN",
+      "displacementRange": [
+        0.5,
+        2
+      ],
+      "speed": 5,
+      "displacementTarget": "OWNER",
+      "NodeID": 8
+    },
+    "10": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 7.5,
+      "NodeID": 10,
+      "UID": "3cb7e53c-55fc-499a-9ac8-fef8e5a47850",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0.5,
+      "onEnter": {
+        "actionIds": [
+          9
+        ]
+      }
+    },
+    "5": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "ec4d5fb2-c50f-4cd7-8f2c-e4aa5857390e",
+      "effectId": "Eff_Parmon_10011_Skill_BuffField_B",
+      "rot": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "07e0812b-8015-45d7-a1c3-0ce0564704a5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 7
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "bd7bad29-376a-4010-b47e-c228e6319f57",
+      "effectId": "Eff_Parmon_10011_Skill_BuffField_B",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2109901",
+  "NodeID": 1,
+  "UID": "6b598858-f4ac-4611-9e3c-6075946cb338",
+  "eventIds": [
+    7,
+    10,
+    3
+  ],
+  "layer": "Base",
+  "length": 10
+}

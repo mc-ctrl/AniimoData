@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9113301",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91133011,
+      "NodeID": 3,
+      "UID": "aa865781-7c49-46ab-b3c3-bc3b05406890",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "actionIds": [
+        12,
+        8,
+        3
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "bf74f138-ec73-432a-99ee-70425b3fac7c",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "8": {
+      "UID": "ebb45833-d3e2-4b24-b0fb-39a03db4783a",
+      "name": "callClientAction",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "6": {
+      "UID": "750969b1-2f33-4580-8772-a655c703a548",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "name": "hasBuffTag",
+      "UID": "992ab581-85f1-4f69-816e-47e18e29baf8",
+      "target": {
+        "UID": "fd9cc6a6-4097-4d19-9414-7343748ba945",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 9
+      },
+      "NodeID": 10,
+      "buffTag": 9
+    },
+    "11": {
+      "calcId": 9113301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 11,
+      "UID": "c8d0a151-eb3b-47f4-aa87-e23200a3c66f",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "66febdfc-8c33-4a04-9265-8641a62a4c48",
+      "effectId": "Eff_Parmon_10012_Buff",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "12": {
+      "value": {
+        "calcId": 9113301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 11,
+        "UID": "c8d0a151-eb3b-47f4-aa87-e23200a3c66f",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "ad28a37a-3252-44b5-b054-860510a05b1e",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "1000": {
+    "isServer": [
+      0
+    ],
+    "priorityOf": [
+      1
+    ],
+    "interruptSameLevel": 1,
+    "durations": [
+      15
+    ],
+    "conditions": [
+      1300002
+    ],
+    "playerCooldowns": [
+      10
+    ]
+  }
+}

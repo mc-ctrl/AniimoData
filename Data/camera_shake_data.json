@@ -1,0 +1,1440 @@
+{
+  "21121": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-左-lv2",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Left_Lv2.asset"
+  },
+  "21122": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-右-lv2",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Right_Lv2.asset"
+  },
+  "21123": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-上-lv2",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Up_Lv2.asset"
+  },
+  "21124": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-下-lv2",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Down_Lv2.asset"
+  },
+  "21131": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-左-lv3",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Left_Lv3.asset"
+  },
+  "21132": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-右-lv3",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Right_Lv3.asset"
+  },
+  "21133": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-上-lv3",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Up_Lv3.asset"
+  },
+  "21134": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.23,
+    "name": "动画震屏-空挥-下-lv3",
+    "shakeTime": 0.23,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Down_Lv3.asset"
+  },
+  "21144": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.5,
+    "name": "动画震屏-空挥-下-lv4",
+    "shakeTime": 0.5,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Down_Lv4.asset"
+  },
+  "22100": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 1.4,
+    "name": "炼狱火狼三阶蓄力拳空挥震屏",
+    "shakeTime": 1.4,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_10053_Extreme.asset"
+  },
+  "30305": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "前向-4阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.15,
+      0.15,
+      0.3
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 25,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.15,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      0,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30102": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "纵向-1阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.06,
+      0.15,
+      0.06
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 12,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      1,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30103": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "纵向-2阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.09,
+      0.2,
+      0.09
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 16,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_03",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      1,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "10100": {
+    "name": "不震动",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0,
+    "shakeDir": [
+      0,
+      0,
+      -1
+    ],
+    "shakeDissipationDistance": 0,
+    "shakeFrequency": 0,
+    "shakeKeepTime": 0,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 0,
+    "shakeRadius": 0
+  },
+  "10101": {
+    "name": "纵向震动-1阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.05,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.05,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10102": {
+    "name": "纵向震动-2阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 18,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.06,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 20,
+    "shakeRadius": 2
+  },
+  "30105": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "纵向-4阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.15,
+      0.3,
+      0.15
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 25,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.15,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      1,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30303": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "前向-2阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.09,
+      0.09,
+      0.2
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 16,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_03",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      0,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30304": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "前向-3阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.12,
+      0.12,
+      0.25
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 20,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      0,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30201": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "横向-0阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.1,
+      0.03,
+      0.03
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 8,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      0,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30202": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "横向-1阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.15,
+      0.06,
+      0.06
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 12,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      0,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30203": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "横向-2阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.2,
+      0.09,
+      0.09
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 16,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_03",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      0,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30204": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "横向-3阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.25,
+      0.12,
+      0.12
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 20,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      0,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30205": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "横向-4阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.3,
+      0.15,
+      0.15
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 25,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.15,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      0,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30301": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "前向-0阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.03,
+      0.03,
+      0.1
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 8,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      0,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30302": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "前向-1阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.06,
+      0.06,
+      0.15
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 12,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      0,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "10203": {
+    "name": "横向震动-3阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 18,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_03",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 20,
+    "shakeRadius": 2
+  },
+  "30402": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "综合-1阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 12,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      1,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "10204": {
+    "name": "横向震动-4阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.2,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "30501": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "挖蛋",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.01,
+      0.01,
+      0.06
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 8,
+    "shakeKeepTime": 0.1,
+    "shakeRadius": 2,
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      0,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "10205": {
+    "name": "横向震动-5阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.7,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 15,
+    "shakeKeepTime": 0.35,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "30601": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "捕捉-背刺",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.05,
+      0.12,
+      0.04
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 50,
+    "shakeFrequency": 12,
+    "shakeKeepTime": 0.12,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      1,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "10301": {
+    "name": "前向震动-1阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.05,
+    "shakeDir": [
+      0,
+      0,
+      -1
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.05,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10302": {
+    "name": "前向震动-2阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      0,
+      0,
+      -1
+    ],
+    "shakeDissipationDistance": 18,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.06,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 20,
+    "shakeRadius": 2
+  },
+  "10303": {
+    "name": "前向震动-3阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      0,
+      0,
+      -1
+    ],
+    "shakeDissipationDistance": 18,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 20,
+    "shakeRadius": 2
+  },
+  "10304": {
+    "name": "前向震动-4阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 1.2,
+    "shakeDir": [
+      0,
+      0,
+      -1
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.3,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10104": {
+    "name": "纵向震动-4阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.2,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10401": {
+    "name": "登场技震动-1阶",
+    "isCenter": false,
+    "shakeAmplitude": 0.5,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.2,
+    "shakeRadius": 2,
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeType": 0
+  },
+  "10402": {
+    "name": "炼狱火狼-空翔击",
+    "isCenter": false,
+    "shakeAmplitude": 1,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.3,
+    "shakeRadius": 2,
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeType": 0
+  },
+  "10403": {
+    "name": "银盔龙大招俯冲震屏X",
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 5,
+    "shakeKeepTime": 1.5,
+    "shakeRadius": 2,
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeType": 0
+  },
+  "10404": {
+    "name": "银盔龙大招俯冲震屏Y",
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 1.5,
+    "shakeRadius": 2,
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeType": 0
+  },
+  "10405": {
+    "name": "银盔龙大招俯冲落地",
+    "isCenter": false,
+    "shakeAmplitude": 1,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.5,
+    "shakeRadius": 2,
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeType": 0
+  },
+  "10406": {
+    "name": "炼狱火狼大招砸地震屏Y",
+    "isCenter": false,
+    "shakeAmplitude": 2,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.3,
+    "shakeRadius": 2,
+    "shakeTime": 0.5,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeType": 0
+  },
+  "20100": {
+    "shakeDissipationDistance": 50,
+    "shakeType": 1,
+    "cameraShakeAnimName": "$CameraShakeAnim_Blunt_Hit_Lv1.asset",
+    "name": "动画震屏-命中-钝器-lv1",
+    "shakeTime": 0.12,
+    "shakeRadius": 50,
+    "shakeKeepTime": 0.12,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02"
+  },
+  "10407": {
+    "name": "炼狱火狼大招砸地震屏X",
+    "isCenter": false,
+    "shakeAmplitude": 0.8,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 3,
+    "shakeKeepTime": 0.3,
+    "shakeRadius": 2,
+    "shakeTime": 0.5,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeType": 0
+  },
+  "10501": {
+    "name": "命中横向震动-1阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.08,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10502": {
+    "name": "命中横向震动-2阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.15,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10503": {
+    "name": "命中横向震动-3阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.3,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.35,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10504": {
+    "name": "命中横向震动-4阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.5,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.5,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10511": {
+    "name": "命中纵向震动-1阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.08,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10512": {
+    "name": "命中纵向震动-2阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.15,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10513": {
+    "name": "命中纵向震动-3阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.3,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.35,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10514": {
+    "name": "命中纵向震动-4阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.5,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.5,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "30101": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "纵向-0阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.03,
+      0.1,
+      0.03
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 8,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      1,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "20101": {
+    "shakeDissipationDistance": 50,
+    "shakeType": 1,
+    "cameraShakeAnimName": "$CameraShakeAnim_Blunt_Hit_Lv2.asset",
+    "name": "动画震屏-命中-钝器-lv2",
+    "shakeTime": 0.2,
+    "shakeRadius": 50,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04"
+  },
+  "20102": {
+    "shakeDissipationDistance": 50,
+    "shakeType": 1,
+    "cameraShakeAnimName": "$CameraShakeAnim_Blunt_Hit_Lv0.asset",
+    "name": "动画震屏-命中-钝器-lv0",
+    "shakeTime": 0.12,
+    "shakeRadius": 50,
+    "shakeKeepTime": 0.12,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01"
+  },
+  "20103": {
+    "shakeDissipationDistance": 50,
+    "shakeType": 1,
+    "cameraShakeAnimName": "$CameraShakeAnim_Blunt_Hit_Lv3.asset",
+    "name": "动画震屏-命中-钝器-lv3",
+    "shakeTime": 0.2,
+    "shakeRadius": 50,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05"
+  },
+  "21104": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-下-lv0",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Down_Lv0.asset"
+  },
+  "30405": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "综合-4阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 25,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.15,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      1,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30404": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "综合-3阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 20,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      1,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "21111": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-左-lv1",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Left_Lv1.asset"
+  },
+  "30403": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "综合-2阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 16,
+    "shakeKeepTime": 0.15,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_03",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      1,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "30401": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "综合-0阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 8,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.05,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      1,
+      1,
+      1
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  },
+  "21112": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-右-lv1",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Right_Lv1.asset"
+  },
+  "10105": {
+    "name": "纵向震动-5阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.7,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 10,
+    "shakeKeepTime": 0.35,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_05",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "10103": {
+    "name": "纵向震动-3阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 18,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.1,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_03",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 20,
+    "shakeRadius": 2
+  },
+  "21113": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-上-lv1",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Up_Lv1.asset"
+  },
+  "10202": {
+    "name": "横向震动-2阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.1,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 18,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.06,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_02",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 20,
+    "shakeRadius": 2
+  },
+  "10201": {
+    "name": "横向震动-1阶",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.05,
+    "shakeDir": [
+      -1,
+      0,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.05,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "21114": {
+    "shakeDissipationDistance": 50,
+    "shakeKeepTime": 0.12,
+    "name": "动画震屏-空挥-下-lv1",
+    "shakeTime": 0.12,
+    "shakeType": 1,
+    "shakeRadius": 50,
+    "cameraShakeAnimName": "$CameraShakeAnim_Swing_Down_Lv1.asset"
+  },
+  "10106": {
+    "name": "震屏-超高频",
+    "shakeType": 0,
+    "isCenter": false,
+    "shakeAmplitude": 0.05,
+    "shakeDir": [
+      0,
+      -1,
+      0
+    ],
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 7,
+    "shakeKeepTime": 0.05,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_01",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "shakeDistance": 30,
+    "shakeRadius": 2
+  },
+  "30104": {
+    "noiseRotSeeds": [
+      0,
+      0,
+      0
+    ],
+    "name": "纵向-3阶",
+    "shakeType": 2,
+    "noisePosAmplitudes": [
+      0.12,
+      0.25,
+      0.12
+    ],
+    "shakeRadius": 2,
+    "shakeDissipationDistance": 28,
+    "shakeFrequency": 20,
+    "shakeKeepTime": 0.2,
+    "cameraShakePrefab": "Eff_Hit_ShakeCamera_04",
+    "shakeTime": 0.1,
+    "dirMode": 0,
+    "noisePosSeeds": [
+      0,
+      1,
+      0
+    ],
+    "noiseRotAmplitudes": [
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "signinDayType": 1,
+    "type": 1,
+    "taskGroupId": 7000,
+    "signinDay": 7
+  },
+  {
+    "signinDayType": 2,
+    "type": 2,
+    "taskGroupId": 8000,
+    "signinDay": 14
+  }
+]

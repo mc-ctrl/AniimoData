@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_10430211",
+  "NodeID": 1,
+  "UID": "c975de51-c726-4db6-a8a2-52b82b73cbcd",
+  "abilityParamId": 10300012,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10430211001,
+      "name": "setCombatActionTimeline",
+      "UID": "7bda0e3e-1e0a-48ac-8685-6840c9a66e22",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ShortBreath"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Common_Skill_Water_Bullet_Fly",
+    "Eff_Parmon_10043_Attack01_Hit",
+    "Eff_Parmon_Common_Skill_Water_Bullet_Bomb",
+    "Eff_Parmon_10043_Skill_Water_Bullet_Start"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 3,
+  "searchTargetRangeDown": 2
+}

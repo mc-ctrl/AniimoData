@@ -1,0 +1,38 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2107201",
+  "NodeID": 1,
+  "UID": "e3d792be-072e-4aa7-9eab-c02952243d36",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "503f52a8-53c7-48ad-8a03-830d5e47f7e6",
+      "effectId": "Eff_Parmon_10072_Skill_ChainLightening_Buff",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "f3a5a96a-eab3-4b63-b049-7946651057b1",
+      "effectId": "Eff_Parmon_10072_Skill_ChainLightening_Buff",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "calcInfo": {
+    "def_mag_p": -0.2,
+    "def_p": -0.2
+  },
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "501": {
+    "maxInstanceNum": 200,
+    "newPercent": 0.75,
+    "name": 2125473521,
+    "destroyPercent": 0.1,
+    "initInstanceNum": 5,
+    "maxInstanceCapacity": 200
+  },
+  "19999": {
+    "maxInstanceNum": 2000,
+    "newPercent": 0.75,
+    "name": 1944955748,
+    "destroyPercent": 0.125,
+    "initInstanceNum": 5,
+    "maxInstanceCapacity": 8
+  },
+  "513": {
+    "maxInstanceNum": 4,
+    "newPercent": 0.5,
+    "switchInstance": [
+      69525352
+    ],
+    "name": 1491758226,
+    "destroyPercent": 0.25,
+    "initInstanceNum": 2,
+    "maxInstanceCapacity": 4
+  },
+  "530": {
+    "maxInstanceNum": 200,
+    "newPercent": 0.5,
+    "name": 1404074726,
+    "destroyPercent": 0.25,
+    "initInstanceNum": 2,
+    "maxInstanceCapacity": 4
+  },
+  "3000001": {
+    "maxInstanceNum": 9999999,
+    "newPercent": 0.75,
+    "name": 1522392911,
+    "destroyPercent": 0.125,
+    "initInstanceNum": 5,
+    "maxInstanceCapacity": 8
+  }
+}

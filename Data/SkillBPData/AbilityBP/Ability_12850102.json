@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_12850102",
+  "NodeID": 1,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "6": {
+      "timelineId": 12850102001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+    "Eff_Parmon_10285_Skill_Bullet_Soil",
+    "Eff_Parmon_10285_Skill_Bullet_Soil_Hit",
+    "Eff_Parmon_10023_Skill_Warning_Landingattack"
+  ],
+  "searchRelation": 2,
+  "name": "火花",
+  "searchTargetRangeRadius": 50,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10800233
+}

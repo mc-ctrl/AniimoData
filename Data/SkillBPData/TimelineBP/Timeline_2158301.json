@@ -1,0 +1,108 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "actionIds": [
+        11
+      ],
+      "name": "actOnTargets",
+      "UID": "be49381f-1fab-46a5-a1d1-fd794f8f203a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            8,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 4
+    },
+    "6": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 2,
+      "NodeID": 6,
+      "UID": "acba33ff-413e-450d-8e76-2dbd895dde02",
+      "onUpdate": {
+        "actionIds": [
+          4
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          4
+        ]
+      }
+    },
+    "10": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 2158301,
+            "calcType": 4,
+            "paramName": "param0",
+            "NodeID": 12,
+            "UID": "2b2c9c0b-1bc2-46b3-87a3-2d9e49395466",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "8e5db8d6-43ef-4647-b8b2-1a55a3403fa9",
+          "NodeID": 8,
+          "lValue": {
+            "key": "hp10583",
+            "name": "getCacheVal",
+            "UID": "45c5fbf2-aa39-4cc9-b57e-c853feba8f17",
+            "target": "MASTER",
+            "NodeID": 7
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "bd675b15-f13f-4439-a7ee-c90793211929",
+      "target": "TARGET",
+      "NodeID": 10
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "doPetsActions",
+      "UID": "579a0c69-c271-40d2-9538-05bccb8aff8b",
+      "target": "TARGET",
+      "NodeID": 11
+    },
+    "12": {
+      "calcId": 2158301,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "2b2c9c0b-1bc2-46b3-87a3-2d9e49395466",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "timeline_2158301",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

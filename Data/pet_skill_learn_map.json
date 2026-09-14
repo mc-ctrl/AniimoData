@@ -1,0 +1,3780 @@
+{
+  "1017200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300111,
+        2
+      ],
+      [
+        10300100,
+        1
+      ],
+      [
+        16200000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10300111": 2,
+      "10300100": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1028304": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500460,
+        1
+      ],
+      [
+        10500340,
+        2
+      ],
+      [
+        11200470,
+        0
+      ],
+      [
+        10500350,
+        0
+      ],
+      [
+        10500440,
+        0
+      ],
+      [
+        16400000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500350": 3,
+      "10500440": 1,
+      "11200470": 3,
+      "10500460": 2,
+      "10500340": 3
+    },
+    "randomAbilitys": {}
+  },
+  "104310002": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800330,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "100120000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11100012,
+        0
+      ],
+      [
+        11100064,
+        0
+      ],
+      [
+        11100034,
+        1
+      ],
+      [
+        11100025,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1018700": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600600,
+        0
+      ],
+      [
+        10900170,
+        0
+      ],
+      [
+        10900540,
+        2
+      ],
+      [
+        19700000,
+        0
+      ],
+      [
+        10300220,
+        0
+      ],
+      [
+        10900041,
+        0
+      ],
+      [
+        10900161,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900041": 1,
+      "10900161": 3,
+      "10300220": 3,
+      "10600600": 3,
+      "10900540": 2,
+      "10900170": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1020700": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800111,
+        1
+      ],
+      [
+        10600260,
+        0
+      ],
+      [
+        10600090,
+        0
+      ],
+      [
+        16500000,
+        0
+      ],
+      [
+        10800310,
+        0
+      ],
+      [
+        10600092,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600090": 2,
+      "10800111": 1,
+      "10600092": 3,
+      "10600260": 3,
+      "10800310": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1014300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400150,
+        0
+      ],
+      [
+        14000000,
+        0
+      ],
+      [
+        11300120,
+        0
+      ],
+      [
+        10400100,
+        0
+      ],
+      [
+        10300021,
+        0
+      ],
+      [
+        10400110,
+        2
+      ],
+      [
+        10400140,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400140": 3,
+      "10400150": 3,
+      "10400100": 1,
+      "10400110": 2,
+      "11300120": 2,
+      "10300021": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1032300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600370,
+        0
+      ],
+      [
+        10301030,
+        0
+      ],
+      [
+        10600390,
+        2
+      ],
+      [
+        10400280,
+        0
+      ],
+      [
+        10600400,
+        1
+      ],
+      [
+        10600410,
+        0
+      ],
+      [
+        10600000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400280": 1,
+      "10600370": 2,
+      "10600390": 3,
+      "10600400": 3,
+      "10301030": 3,
+      "10600410": 3
+    },
+    "randomAbilitys": {}
+  },
+  "102610002": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11100010,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1048100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10301050,
+        2
+      ],
+      [
+        10301040,
+        1
+      ],
+      [
+        13900000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1048300": {
+    "evolveIdMap": {
+      "10301050": 10301051
+    },
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10301070,
+        0
+      ],
+      [
+        10301060,
+        1
+      ],
+      [
+        13900000,
+        0
+      ],
+      [
+        10301051,
+        2
+      ],
+      [
+        10301040,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1050100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800340,
+        1
+      ],
+      [
+        10800000,
+        0
+      ],
+      [
+        10800350,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1050300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11200480,
+        0
+      ],
+      [
+        10800430,
+        0
+      ],
+      [
+        10800340,
+        2
+      ],
+      [
+        10800000,
+        0
+      ],
+      [
+        10800350,
+        0
+      ],
+      [
+        10800440,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "102210001": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400202,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "102120000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600142,
+        0
+      ],
+      [
+        10600514,
+        1
+      ],
+      [
+        11900000,
+        0
+      ],
+      [
+        10600515,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "101870000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        12200000,
+        0
+      ],
+      [
+        10900049,
+        2
+      ],
+      [
+        10900048,
+        1
+      ],
+      [
+        10900166,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "101810004": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        12200000,
+        0
+      ],
+      [
+        10900400,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "101320001": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200061,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "100530002": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500230,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "100530000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500104,
+        0
+      ],
+      [
+        10500000,
+        0
+      ],
+      [
+        10500124,
+        1
+      ],
+      [
+        10500123,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1019200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300090,
+        2
+      ],
+      [
+        10300000,
+        0
+      ],
+      [
+        10300080,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10300000": 3,
+      "10300080": 2,
+      "10300090": 1
+    },
+    "randomAbilitys": {}
+  },
+  "100510004": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10510540,
+        1
+      ],
+      [
+        10510550,
+        0
+      ],
+      [
+        10500000,
+        0
+      ],
+      [
+        10510560,
+        0
+      ],
+      [
+        10510530,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1003200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11200011,
+        1
+      ],
+      [
+        10500020,
+        0
+      ],
+      [
+        11200021,
+        2
+      ],
+      [
+        11200030,
+        0
+      ],
+      [
+        10600513,
+        0
+      ],
+      [
+        11200000,
+        0
+      ],
+      [
+        11200040,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200011": 3,
+      "10500020": 3,
+      "11200021": 1,
+      "11200030": 2,
+      "11200040": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1001100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11100011,
+        2
+      ],
+      [
+        11100020,
+        1
+      ],
+      [
+        14500000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11100020": 1,
+      "11100011": 2
+    },
+    "randomAbilitys": {}
+  },
+  "100420001": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200160,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "100270000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11200400,
+        0
+      ],
+      [
+        11200390,
+        2
+      ],
+      [
+        11200001,
+        0
+      ],
+      [
+        11200380,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "100230002": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10900130,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1022100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400000,
+        0
+      ],
+      [
+        10400210,
+        1
+      ],
+      [
+        10400202,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400202": 1,
+      "10400210": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1022200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400211,
+        1
+      ],
+      [
+        10400190,
+        2
+      ],
+      [
+        10400000,
+        0
+      ],
+      [
+        11200170,
+        0
+      ],
+      [
+        10400220,
+        0
+      ],
+      [
+        10400200,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400200": 1,
+      "10400000": 3,
+      "10400211": 3,
+      "10400190": 2,
+      "11200170": 3,
+      "10400220": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1035200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11201210,
+        2
+      ],
+      [
+        11200240,
+        0
+      ],
+      [
+        11201200,
+        0
+      ],
+      [
+        11200000,
+        0
+      ],
+      [
+        11201190,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200240": 3,
+      "11201200": 1,
+      "11201210": 2,
+      "11201190": 3
+    },
+    "randomAbilitys": {}
+  },
+  "102220000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400000,
+        0
+      ],
+      [
+        10400430,
+        2
+      ],
+      [
+        10400310,
+        1
+      ],
+      [
+        10400268,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1014100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400100,
+        1
+      ],
+      [
+        14000000,
+        0
+      ],
+      [
+        10400110,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400100": 1,
+      "10400110": 2
+    },
+    "randomAbilitys": {}
+  },
+  "100210001": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10700000,
+        0
+      ],
+      [
+        10700190,
+        0
+      ],
+      [
+        10700011,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1014200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400100,
+        1
+      ],
+      [
+        14000000,
+        0
+      ],
+      [
+        10400110,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400100": 1,
+      "10400110": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1013200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200081,
+        2
+      ],
+      [
+        11200286,
+        0
+      ],
+      [
+        10200061,
+        1
+      ],
+      [
+        10200000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200081": 2,
+      "10200061": 1,
+      "11200286": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1013300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200100,
+        2
+      ],
+      [
+        10200061,
+        1
+      ],
+      [
+        11300100,
+        0
+      ],
+      [
+        10200081,
+        0
+      ],
+      [
+        10200090,
+        0
+      ],
+      [
+        11200286,
+        0
+      ],
+      [
+        10200000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200081": 2,
+      "10200090": 3,
+      "10200100": 3,
+      "11300100": 3,
+      "10200061": 1,
+      "11200286": 3
+    },
+    "randomAbilitys": {}
+  },
+  "103310004": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500231,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1002300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10900200,
+        0
+      ],
+      [
+        10900020,
+        1
+      ],
+      [
+        10700020,
+        0
+      ],
+      [
+        16700000,
+        0
+      ],
+      [
+        10700180,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900200": 3,
+      "10900020": 1,
+      "10700020": 3,
+      "10700180": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1004100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300040,
+        1
+      ],
+      [
+        13900000,
+        0
+      ],
+      [
+        10300011,
+        2
+      ],
+      [
+        10200020,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200020": 3,
+      "10300040": 1,
+      "10300011": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1001200": {
+    "evolveIdMap": {
+      "11100020": 11100024,
+      "11100011": 11100030
+    },
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11100040,
+        1
+      ],
+      [
+        11100070,
+        0
+      ],
+      [
+        10200250,
+        0
+      ],
+      [
+        11100024,
+        0
+      ],
+      [
+        14500000,
+        0
+      ],
+      [
+        11100030,
+        2
+      ],
+      [
+        10301020,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11100030": 2,
+      "11100070": 3,
+      "10200250": 3,
+      "10301020": 3,
+      "11100040": 3,
+      "11100024": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1004300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300040,
+        1
+      ],
+      [
+        13900000,
+        0
+      ],
+      [
+        10200020,
+        0
+      ],
+      [
+        11300160,
+        0
+      ],
+      [
+        10300020,
+        0
+      ],
+      [
+        10300050,
+        0
+      ],
+      [
+        10300011,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10300050": 3,
+      "11300160": 3,
+      "10300040": 1,
+      "10200020": 3,
+      "10300020": 3,
+      "10300011": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1002600": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200260,
+        2
+      ],
+      [
+        11200150,
+        0
+      ],
+      [
+        11200160,
+        0
+      ],
+      [
+        11200140,
+        1
+      ],
+      [
+        11200000,
+        0
+      ],
+      [
+        11200130,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200130": 3,
+      "11200140": 1,
+      "10200260": 3,
+      "11200150": 2,
+      "11200160": 3
+    },
+    "randomAbilitys": {}
+  },
+  "100230000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10700251,
+        0
+      ],
+      [
+        10500271,
+        1
+      ],
+      [
+        10900000,
+        0
+      ],
+      [
+        10700221,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1002500": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500390,
+        0
+      ],
+      [
+        10500021,
+        0
+      ],
+      [
+        10500420,
+        2
+      ],
+      [
+        10900680,
+        0
+      ],
+      [
+        10500380,
+        1
+      ],
+      [
+        11800000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500420": 2,
+      "10500380": 1,
+      "10500390": 3,
+      "10500021": 3,
+      "10900680": 4
+    },
+    "randomAbilitys": {}
+  },
+  "7002000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10101010,
+        0
+      ],
+      [
+        10101200,
+        0
+      ],
+      [
+        10101100,
+        1
+      ],
+      [
+        10101110,
+        2
+      ],
+      [
+        10101201,
+        0
+      ],
+      [
+        10101210,
+        0
+      ],
+      [
+        10101211,
+        0
+      ],
+      [
+        10101220,
+        0
+      ],
+      [
+        10101000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1003100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11200030,
+        2
+      ],
+      [
+        10600513,
+        0
+      ],
+      [
+        11200000,
+        0
+      ],
+      [
+        11200021,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200021": 1,
+      "10600513": 3,
+      "11200030": 2
+    },
+    "randomAbilitys": {}
+  },
+  "7001000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10101010,
+        0
+      ],
+      [
+        10101200,
+        0
+      ],
+      [
+        10101100,
+        1
+      ],
+      [
+        10101110,
+        2
+      ],
+      [
+        10101201,
+        0
+      ],
+      [
+        10101210,
+        0
+      ],
+      [
+        10101211,
+        0
+      ],
+      [
+        10101220,
+        0
+      ],
+      [
+        10101000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1028300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500460,
+        1
+      ],
+      [
+        10500340,
+        2
+      ],
+      [
+        11200470,
+        0
+      ],
+      [
+        10500350,
+        0
+      ],
+      [
+        10500440,
+        0
+      ],
+      [
+        16400000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500350": 3,
+      "10500440": 1,
+      "11200470": 3,
+      "10500460": 2,
+      "10500340": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1003300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400330,
+        1
+      ],
+      [
+        10400340,
+        0
+      ],
+      [
+        16300000,
+        0
+      ],
+      [
+        10400440,
+        0
+      ],
+      [
+        10400320,
+        2
+      ],
+      [
+        11300170,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11300170": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1012200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400052,
+        2
+      ],
+      [
+        13000000,
+        0
+      ],
+      [
+        10400470,
+        3
+      ],
+      [
+        10400070,
+        1
+      ],
+      [
+        10400071,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400470": 2,
+      "10400070": 3,
+      "10400052": 1
+    },
+    "randomAbilitys": {}
+  },
+  "6999300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500580,
+        0
+      ],
+      [
+        10500590,
+        0
+      ],
+      [
+        14100000,
+        0
+      ],
+      [
+        10500601,
+        0
+      ],
+      [
+        10500720,
+        0
+      ],
+      [
+        10500600,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1016100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800320,
+        0
+      ],
+      [
+        16600000,
+        0
+      ],
+      [
+        10600520,
+        2
+      ],
+      [
+        10600060,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600520": 1,
+      "10600060": 2,
+      "10800320": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1016200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800320,
+        2
+      ],
+      [
+        10800051,
+        1
+      ],
+      [
+        10600060,
+        0
+      ],
+      [
+        10600520,
+        0
+      ],
+      [
+        10800070,
+        0
+      ],
+      [
+        16600000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600520": 3,
+      "10800051": 2,
+      "10800320": 3,
+      "10600060": 1,
+      "10800070": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1016300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200130,
+        2
+      ],
+      [
+        10200120,
+        1
+      ],
+      [
+        10200150,
+        0
+      ],
+      [
+        10200140,
+        0
+      ],
+      [
+        16100000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200140": 3,
+      "10200120": 1,
+      "10200150": 3,
+      "10200130": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1028100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800140,
+        2
+      ],
+      [
+        10800150,
+        1
+      ],
+      [
+        16600000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800140": 2,
+      "10800150": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1028400": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800140,
+        2
+      ],
+      [
+        10800150,
+        1
+      ],
+      [
+        16600000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800140": 2,
+      "10800150": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1028500": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800140,
+        2
+      ],
+      [
+        10800200,
+        1
+      ],
+      [
+        10800150,
+        0
+      ],
+      [
+        10800210,
+        0
+      ],
+      [
+        16600000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800200": 3,
+      "10800210": 3,
+      "10800140": 2,
+      "10800150": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1047100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200380,
+        0
+      ],
+      [
+        10600550,
+        2
+      ],
+      [
+        16500000,
+        0
+      ],
+      [
+        10600540,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200380": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1047400": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400400,
+        0
+      ],
+      [
+        10400000,
+        0
+      ],
+      [
+        10400410,
+        0
+      ],
+      [
+        10400380,
+        1
+      ],
+      [
+        10400390,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1018100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600600,
+        0
+      ],
+      [
+        10900400,
+        0
+      ],
+      [
+        10900090,
+        1
+      ],
+      [
+        10300220,
+        0
+      ],
+      [
+        14400000,
+        0
+      ],
+      [
+        10900041,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900041": 2,
+      "10300220": 3,
+      "10900090": 1,
+      "10600600": 3,
+      "10900400": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1043300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800360,
+        0
+      ],
+      [
+        14300000,
+        0
+      ],
+      [
+        10800370,
+        2
+      ],
+      [
+        10800380,
+        1
+      ],
+      [
+        10800410,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800410": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1018400": {
+    "evolveIdMap": {
+      "10900090": 10900230
+    },
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600600,
+        0
+      ],
+      [
+        10900041,
+        2
+      ],
+      [
+        10900242,
+        0
+      ],
+      [
+        10900290,
+        0
+      ],
+      [
+        10300220,
+        0
+      ],
+      [
+        14400000,
+        0
+      ],
+      [
+        10900230,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900041": 2,
+      "10900230": 1,
+      "10900290": 3,
+      "10600600": 3,
+      "10900242": 3,
+      "10300220": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1018500": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400300,
+        0
+      ],
+      [
+        10900390,
+        1
+      ],
+      [
+        14400000,
+        0
+      ],
+      [
+        10900041,
+        0
+      ],
+      [
+        10900191,
+        2
+      ],
+      [
+        10300220,
+        0
+      ],
+      [
+        10900280,
+        0
+      ],
+      [
+        10600600,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900041": 2,
+      "10400300": 3,
+      "10300220": 3,
+      "10900390": 1,
+      "10600600": 3,
+      "10900191": 3,
+      "10900280": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1047500": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        16500000,
+        0
+      ],
+      [
+        10600620,
+        1
+      ],
+      [
+        10200380,
+        0
+      ],
+      [
+        10600550,
+        0
+      ],
+      [
+        10600610,
+        0
+      ],
+      [
+        10600540,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200380": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1005500": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500730,
+        0
+      ],
+      [
+        11200300,
+        2
+      ],
+      [
+        10500470,
+        0
+      ],
+      [
+        11200290,
+        1
+      ],
+      [
+        16800000,
+        0
+      ],
+      [
+        11200410,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200410": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1026100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        14400000,
+        0
+      ],
+      [
+        10900250,
+        1
+      ],
+      [
+        10400290,
+        0
+      ],
+      [
+        10900160,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900160": 2,
+      "10400290": 3,
+      "10900250": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1051100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500500,
+        0
+      ],
+      [
+        16400000,
+        0
+      ],
+      [
+        10500490,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1051200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500490,
+        0
+      ],
+      [
+        16400000,
+        0
+      ],
+      [
+        10500500,
+        0
+      ],
+      [
+        10500570,
+        0
+      ],
+      [
+        10500510,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1037100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        14600000,
+        0
+      ],
+      [
+        11300080,
+        1
+      ],
+      [
+        11300091,
+        0
+      ],
+      [
+        11300071,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {
+      "11300150": [
+        1,
+        10000
+      ],
+      "11300061": [
+        1,
+        10000
+      ]
+    },
+    "pvpAbilitys": {
+      "11300150": 1,
+      "11300091": 3,
+      "11300061": 1,
+      "11300071": 2,
+      "11300080": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1026200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10900260,
+        1
+      ],
+      [
+        10900270,
+        0
+      ],
+      [
+        11200330,
+        0
+      ],
+      [
+        14400000,
+        0
+      ],
+      [
+        10900250,
+        0
+      ],
+      [
+        10400290,
+        0
+      ],
+      [
+        10900160,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900160": 1,
+      "10400290": 3,
+      "10900270": 3,
+      "11200330": 2,
+      "10900250": 3,
+      "10900260": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1045300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800270,
+        0
+      ],
+      [
+        11200640,
+        0
+      ],
+      [
+        10200286,
+        0
+      ],
+      [
+        10800240,
+        0
+      ],
+      [
+        10800000,
+        0
+      ],
+      [
+        10800250,
+        2
+      ],
+      [
+        10800260,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800270": 3,
+      "10800000": 3,
+      "11200640": 2,
+      "10800240": 1,
+      "10200286": 2,
+      "10800260": 3,
+      "10800250": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1037300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11300091,
+        0
+      ],
+      [
+        14600000,
+        0
+      ],
+      [
+        11300080,
+        1
+      ],
+      [
+        11300081,
+        1
+      ],
+      [
+        11300071,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {
+      "11300150": [
+        1,
+        10000
+      ],
+      "11300061": [
+        1,
+        10000
+      ]
+    },
+    "pvpAbilitys": {
+      "11300150": 3,
+      "11300091": 3,
+      "11300061": 3,
+      "11300071": 2,
+      "11300080": 1,
+      "11300081": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1026300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        14500000,
+        0
+      ],
+      [
+        11200360,
+        1
+      ],
+      [
+        11200340,
+        2
+      ],
+      [
+        11200370,
+        0
+      ],
+      [
+        11200350,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1044300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10900480,
+        1
+      ],
+      [
+        13400000,
+        0
+      ],
+      [
+        10900490,
+        0
+      ],
+      [
+        10900520,
+        2
+      ],
+      [
+        10900500,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900500": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1020100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800290,
+        0
+      ],
+      [
+        10600530,
+        1
+      ],
+      [
+        10600080,
+        2
+      ],
+      [
+        16500000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600080": 1,
+      "10600530": 2,
+      "10800290": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1035100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11201200,
+        1
+      ],
+      [
+        11201180,
+        2
+      ],
+      [
+        11200000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11201180": 2,
+      "11201200": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1002700": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11200260,
+        0
+      ],
+      [
+        11200202,
+        1
+      ],
+      [
+        16800000,
+        0
+      ],
+      [
+        11200220,
+        0
+      ],
+      [
+        10700350,
+        2
+      ],
+      [
+        10200270,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200260": 3,
+      "11200202": 2,
+      "10200270": 3,
+      "11200220": 3,
+      "10700350": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1043100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800360,
+        2
+      ],
+      [
+        10800330,
+        1
+      ],
+      [
+        14300000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800330": 1,
+      "10800360": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1045100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800250,
+        2
+      ],
+      [
+        10800000,
+        0
+      ],
+      [
+        10800240,
+        1
+      ],
+      [
+        10200286,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800240": 1,
+      "10200286": 2,
+      "10800000": 3,
+      "10800250": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1002200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10900200,
+        0
+      ],
+      [
+        16700000,
+        0
+      ],
+      [
+        10700180,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900200": 1,
+      "10700180": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1002400": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10900200,
+        0
+      ],
+      [
+        16700000,
+        0
+      ],
+      [
+        10700180,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900200": 2,
+      "10700180": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1005100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500080,
+        2
+      ],
+      [
+        10500000,
+        0
+      ],
+      [
+        10800280,
+        0
+      ],
+      [
+        10500230,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500230": 1,
+      "10800280": 3,
+      "10500080": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1017100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300111,
+        2
+      ],
+      [
+        10300100,
+        1
+      ],
+      [
+        16200000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10300111": 2,
+      "10300100": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1045400": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800480,
+        0
+      ],
+      [
+        10800460,
+        1
+      ],
+      [
+        10800522,
+        0
+      ],
+      [
+        10800000,
+        0
+      ],
+      [
+        10200370,
+        0
+      ],
+      [
+        10800470,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10800460": 1,
+      "10800522": 5,
+      "10800470": 2,
+      "10800480": 4,
+      "10800000": 3,
+      "10200370": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1032100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600370,
+        2
+      ],
+      [
+        10600000,
+        0
+      ],
+      [
+        10600390,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600370": 1,
+      "10600390": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1005200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500080,
+        2
+      ],
+      [
+        10500000,
+        0
+      ],
+      [
+        10800280,
+        0
+      ],
+      [
+        10500230,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500230": 1,
+      "10800280": 3,
+      "10500080": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1005300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500080,
+        2
+      ],
+      [
+        10800280,
+        0
+      ],
+      [
+        10500102,
+        1
+      ],
+      [
+        10500120,
+        0
+      ],
+      [
+        10500000,
+        0
+      ],
+      [
+        10400010,
+        0
+      ],
+      [
+        10500230,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500120": 3,
+      "10800280": 3,
+      "10500102": 3,
+      "10500230": 1,
+      "10500080": 3,
+      "10400010": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1032400": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600560,
+        1
+      ],
+      [
+        14200000,
+        0
+      ],
+      [
+        10600590,
+        0
+      ],
+      [
+        10600580,
+        0
+      ],
+      [
+        11300180,
+        2
+      ],
+      [
+        10600570,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600570": 3,
+      "10600580": 3,
+      "10600590": 3,
+      "11300180": 3,
+      "10600560": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1044100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10900510,
+        2
+      ],
+      [
+        13400000,
+        0
+      ],
+      [
+        10900490,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1002100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10700356,
+        2
+      ],
+      [
+        11200260,
+        1
+      ],
+      [
+        16800000,
+        0
+      ],
+      [
+        10200270,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10700356": 2,
+      "11200260": 1,
+      "10200270": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1013100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10200081,
+        2
+      ],
+      [
+        11200286,
+        0
+      ],
+      [
+        10200061,
+        1
+      ],
+      [
+        10200000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200081": 2,
+      "10200061": 1,
+      "11200286": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1024100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10241001,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "102410001": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10241001,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1023100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600110,
+        2
+      ],
+      [
+        10600500,
+        0
+      ],
+      [
+        11200270,
+        0
+      ],
+      [
+        10900221,
+        1
+      ],
+      [
+        14400000,
+        0
+      ],
+      [
+        10800450,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900221": 1,
+      "10600500": 3,
+      "10600110": 2,
+      "11200270": 3,
+      "10800450": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1023200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600110,
+        2
+      ],
+      [
+        10600500,
+        0
+      ],
+      [
+        11200270,
+        0
+      ],
+      [
+        10900430,
+        0
+      ],
+      [
+        10900221,
+        1
+      ],
+      [
+        10600251,
+        0
+      ],
+      [
+        14400000,
+        0
+      ],
+      [
+        10800450,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900221": 1,
+      "10600500": 3,
+      "10600251": 3,
+      "10600110": 2,
+      "11200270": 3,
+      "10900430": 3,
+      "10800450": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1023300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600340,
+        0
+      ],
+      [
+        14200000,
+        0
+      ],
+      [
+        10600360,
+        0
+      ],
+      [
+        10600490,
+        2
+      ],
+      [
+        10600480,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600490": 2,
+      "10600360": 3,
+      "10600480": 1,
+      "10600340": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1020300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11200193,
+        0
+      ],
+      [
+        10600532,
+        1
+      ],
+      [
+        10800300,
+        0
+      ],
+      [
+        11200180,
+        2
+      ],
+      [
+        14500000,
+        0
+      ],
+      [
+        11200190,
+        0
+      ],
+      [
+        11200230,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200193": 2,
+      "10600532": 3,
+      "11200230": 3,
+      "10800300": 3,
+      "11200180": 1,
+      "11200190": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1019400": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10301330,
+        1
+      ],
+      [
+        10300000,
+        0
+      ],
+      [
+        11300110,
+        0
+      ],
+      [
+        10300090,
+        2
+      ],
+      [
+        10400270,
+        0
+      ],
+      [
+        10300080,
+        0
+      ],
+      [
+        10300150,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10300080": 2,
+      "11300110": 3,
+      "10300150": 3,
+      "10301330": 1,
+      "10300090": 3,
+      "10400270": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1036100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11300040,
+        1
+      ],
+      [
+        11300020,
+        2
+      ],
+      [
+        11300000,
+        0
+      ],
+      [
+        11300051,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {
+      "11300140": [
+        1,
+        10000
+      ],
+      "11300030": [
+        1,
+        10000
+      ]
+    },
+    "pvpAbilitys": {
+      "11300051": 3,
+      "11300020": 1,
+      "11300030": 1,
+      "11300040": 2,
+      "11300140": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1036300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        11300040,
+        1
+      ],
+      [
+        11300020,
+        2
+      ],
+      [
+        11300051,
+        0
+      ],
+      [
+        11300000,
+        0
+      ],
+      [
+        11300041,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {
+      "11300140": [
+        1,
+        10000
+      ],
+      "11300030": [
+        1,
+        10000
+      ]
+    },
+    "pvpAbilitys": {
+      "11300051": 3,
+      "11300140": 3,
+      "11300020": 1,
+      "11300030": 1,
+      "11300040": 2,
+      "11300041": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1029300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400360,
+        1
+      ],
+      [
+        10400370,
+        0
+      ],
+      [
+        10400350,
+        2
+      ],
+      [
+        14000000,
+        0
+      ],
+      [
+        11300130,
+        0
+      ],
+      [
+        10400420,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400350": 1,
+      "10400360": 2,
+      "10400420": 5,
+      "11300130": 4,
+      "10400370": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1021100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600913,
+        1
+      ],
+      [
+        14200000,
+        0
+      ],
+      [
+        10600150,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600150": 2,
+      "10600913": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1029100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10400360,
+        1
+      ],
+      [
+        14000000,
+        0
+      ],
+      [
+        10400370,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10400370": 2,
+      "10400360": 1
+    },
+    "randomAbilitys": {}
+  },
+  "9020700": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600380,
+        0
+      ],
+      [
+        10600160,
+        0
+      ],
+      [
+        10800160,
+        0
+      ],
+      [
+        10600280,
+        0
+      ],
+      [
+        10600180,
+        0
+      ],
+      [
+        10600381,
+        0
+      ],
+      [
+        10600170,
+        0
+      ],
+      [
+        10600241,
+        0
+      ],
+      [
+        10600192,
+        0
+      ],
+      [
+        10600161,
+        0
+      ],
+      [
+        10600190,
+        0
+      ],
+      [
+        10600181,
+        0
+      ],
+      [
+        10600221,
+        0
+      ],
+      [
+        10600171,
+        0
+      ],
+      [
+        10600193,
+        0
+      ],
+      [
+        10600191,
+        0
+      ],
+      [
+        10600182,
+        0
+      ],
+      [
+        10600230,
+        0
+      ],
+      [
+        10600172,
+        0
+      ],
+      [
+        10600220,
+        0
+      ],
+      [
+        10600162,
+        0
+      ],
+      [
+        10600240,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "7000000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10101010,
+        0
+      ],
+      [
+        10101200,
+        0
+      ],
+      [
+        10101100,
+        1
+      ],
+      [
+        10101110,
+        2
+      ],
+      [
+        10101201,
+        0
+      ],
+      [
+        10101210,
+        0
+      ],
+      [
+        10101211,
+        0
+      ],
+      [
+        10101220,
+        0
+      ],
+      [
+        10101000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1021200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600930,
+        0
+      ],
+      [
+        14200000,
+        0
+      ],
+      [
+        10600923,
+        1
+      ],
+      [
+        10600913,
+        2
+      ],
+      [
+        10600150,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600150": 3,
+      "10600930": 3,
+      "10600913": 1,
+      "10600923": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1021300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600660,
+        0
+      ],
+      [
+        14200000,
+        0
+      ],
+      [
+        10600630,
+        2
+      ],
+      [
+        10600640,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600630": 1,
+      "10600660": 3,
+      "10600640": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1004500": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600301,
+        1
+      ],
+      [
+        10600322,
+        2
+      ],
+      [
+        10600420,
+        0
+      ],
+      [
+        14200000,
+        0
+      ],
+      [
+        10600306,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600306": 3,
+      "10600420": 3,
+      "10600322": 1,
+      "10600301": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1004200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300040,
+        1
+      ],
+      [
+        13900000,
+        0
+      ],
+      [
+        10300011,
+        2
+      ],
+      [
+        10200020,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10200020": 3,
+      "10300040": 1,
+      "10300011": 2
+    },
+    "randomAbilitys": {}
+  },
+  "100510001": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500230,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "100450000": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300042,
+        2
+      ],
+      [
+        10600326,
+        1
+      ],
+      [
+        11900000,
+        0
+      ],
+      [
+        10600307,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1019100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300090,
+        2
+      ],
+      [
+        10300000,
+        0
+      ],
+      [
+        10300080,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10300080": 1,
+      "10300090": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1033100": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        14100000,
+        0
+      ],
+      [
+        10500360,
+        1
+      ],
+      [
+        10500231,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500360": 2,
+      "10500231": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1033300": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500360,
+        2
+      ],
+      [
+        10500400,
+        0
+      ],
+      [
+        14100000,
+        0
+      ],
+      [
+        10500410,
+        1
+      ],
+      [
+        10500231,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500400": 3,
+      "10500360": 2,
+      "10500410": 3,
+      "10500231": 1
+    },
+    "randomAbilitys": {}
+  },
+  "100520003": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500231,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {},
+    "randomAbilitys": {}
+  },
+  "1017300": {
+    "evolveIdMap": {
+      "10300100": 10300180
+    },
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300110,
+        0
+      ],
+      [
+        10300000,
+        0
+      ],
+      [
+        10300201,
+        2
+      ],
+      [
+        10300190,
+        0
+      ],
+      [
+        11200250,
+        0
+      ],
+      [
+        10300180,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "11200250": 3,
+      "10300190": 3,
+      "10300201": 2,
+      "10300000": 3,
+      "10300110": 3,
+      "10300180": 1
+    },
+    "randomAbilitys": {}
+  },
+  "1017400": {
+    "evolveIdMap": {
+      "10300100": 10300083
+    },
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10300111,
+        0
+      ],
+      [
+        10300160,
+        0
+      ],
+      [
+        16200000,
+        0
+      ],
+      [
+        10300113,
+        0
+      ],
+      [
+        10300083,
+        1
+      ],
+      [
+        10301530,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10301530": 1,
+      "10300111": 3,
+      "10300113": 3,
+      "16200000": 3,
+      "10300160": 3,
+      "10300083": 2
+    },
+    "randomAbilitys": {}
+  },
+  "1018704": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10600600,
+        0
+      ],
+      [
+        10900170,
+        0
+      ],
+      [
+        10900540,
+        2
+      ],
+      [
+        19700000,
+        0
+      ],
+      [
+        10300220,
+        0
+      ],
+      [
+        10900041,
+        0
+      ],
+      [
+        10900161,
+        1
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10900041": 1,
+      "10900161": 3,
+      "10300220": 3,
+      "10600600": 3,
+      "10900540": 2,
+      "10900170": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1020702": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10800111,
+        1
+      ],
+      [
+        10600260,
+        0
+      ],
+      [
+        10600090,
+        0
+      ],
+      [
+        16500000,
+        0
+      ],
+      [
+        10800310,
+        0
+      ],
+      [
+        10600092,
+        2
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10600090": 2,
+      "10800111": 1,
+      "10600092": 3,
+      "10600260": 3,
+      "10800310": 3
+    },
+    "randomAbilitys": {}
+  },
+  "1028200": {
+    "evolveIdMap": {},
+    "extraRareAbilitys": {},
+    "initAbilitys": [
+      [
+        10500450,
+        2
+      ],
+      [
+        10500440,
+        1
+      ],
+      [
+        16400000,
+        0
+      ]
+    ],
+    "levelUpAbilitys": {},
+    "pvpAbilitys": {
+      "10500440": 1,
+      "10500450": 2
+    },
+    "randomAbilitys": {}
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "62": {
+      "rValue": {
+        "UID": "9d7b7062-aa94-4f7a-9f19-6dc991a0b70e",
+        "number": 10,
+        "name": "constNumber",
+        "NodeID": 64
+      },
+      "name": "div",
+      "UID": "c0818167-1a7a-4c10-8000-7a46225ee6fe",
+      "NodeID": 62,
+      "lValue": {
+        "templateId": 916430102,
+        "name": "getBuffLayer",
+        "UID": "e2746cfb-4540-4ad1-9530-6ee6d1cacd8e",
+        "target": "MASTER",
+        "NodeID": 61
+      }
+    },
+    "81": {
+      "NodeID": 81,
+      "name": "getTargetOffsetPos",
+      "UID": "76cd6db3-449f-44ae-b0d1-d6107185faf6",
+      "target": "CASTER",
+      "offset": [
+        1,
+        2.2,
+        0.8
+      ],
+      "rotType": "CASTER"
+    },
+    "6": {
+      "action": {
+        "actionIds": [
+          4,
+          60,
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 6,
+      "UID": "2f44bd14-f517-4b31-8d84-af178e05e3a5"
+    },
+    "8": {
+      "offsetXYZ": [
+        0,
+        0.7,
+        -0.7
+      ],
+      "templateId": 2164301201,
+      "name": "createProjectile",
+      "UID": "00759f92-05d3-4f35-b729-e215b0e9172e",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "BezierCurve",
+      "targetPos": {
+        "relation": 2,
+        "heightDown": 5,
+        "heightUp": 5,
+        "UID": "dd65a3b0-482d-4ab9-a556-e321b16428b1",
+        "radius": 15,
+        "name": "searchEntity",
+        "NodeID": 2
+      },
+      "NodeID": 8,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "9": {
+      "lockTarget": {
+        "relation": 2,
+        "heightDown": 5,
+        "heightUp": 5,
+        "UID": "dd65a3b0-482d-4ab9-a556-e321b16428b1",
+        "radius": 15,
+        "name": "searchEntity",
+        "NodeID": 2
+      },
+      "name": "lockTarget",
+      "UID": "2f2a03d1-f2de-48bc-8ddd-1eca90d01d16",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "85": {
+      "buffId": 916430101,
+      "name": "hasBuff",
+      "UID": "2410f393-4165-428d-81a8-d92ceec7bfb4",
+      "target": "MASTER",
+      "NodeID": 85
+    },
+    "86": {
+      "NodeID": 86,
+      "name": "getTargetOffsetPos",
+      "UID": "68c5f536-65cc-4686-b1ff-d6d3ce2d62aa",
+      "target": "CASTER",
+      "offset": [
+        -1,
+        2.2,
+        0
+      ],
+      "rotType": "CASTER"
+    },
+    "69": {
+      "pos": {
+        "NodeID": 91,
+        "name": "getTargetOffsetPos",
+        "UID": "13b29b0d-94bf-436b-a158-9464d037baca",
+        "target": "PROJECTILE",
+        "offset": [
+          0,
+          0.3,
+          0
+        ],
+        "rotType": "MASTER"
+      },
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "rotationTowardsPos": {
+        "NodeID": 81,
+        "name": "getTargetOffsetPos",
+        "UID": "76cd6db3-449f-44ae-b0d1-d6107185faf6",
+        "target": "CASTER",
+        "offset": [
+          1,
+          2.2,
+          0.8
+        ],
+        "rotType": "CASTER"
+      },
+      "name": "createSegmentedProjectile",
+      "UID": "af56ac42-53e3-40ef-9e7b-a10f04764070",
+      "templateId": 2164301210,
+      "NodeID": 69
+    },
+    "3": {
+      "UID": "c7e807d0-97b3-4039-99af-fd87b21fad3f",
+      "target": {
+        "relation": 2,
+        "heightDown": 5,
+        "heightUp": 5,
+        "UID": "dd65a3b0-482d-4ab9-a556-e321b16428b1",
+        "radius": 15,
+        "name": "searchEntity",
+        "NodeID": 2
+      },
+      "name": "hasTarget",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "07cbbebb-3acb-413a-a86e-43c0408e59c4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        68
+      ],
+      "NodeID": 4
+    },
+    "71": {
+      "pos": {
+        "NodeID": 91,
+        "name": "getTargetOffsetPos",
+        "UID": "13b29b0d-94bf-436b-a158-9464d037baca",
+        "target": "PROJECTILE",
+        "offset": [
+          0,
+          0.3,
+          0
+        ],
+        "rotType": "MASTER"
+      },
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "rotationTowardsPos": {
+        "NodeID": 86,
+        "name": "getTargetOffsetPos",
+        "UID": "68c5f536-65cc-4686-b1ff-d6d3ce2d62aa",
+        "target": "CASTER",
+        "offset": [
+          -1,
+          2.2,
+          0
+        ],
+        "rotType": "CASTER"
+      },
+      "name": "createSegmentedProjectile",
+      "UID": "8a86de5f-59cc-41d9-838b-f90588acb220",
+      "templateId": 2164301212,
+      "NodeID": 71
+    },
+    "90": {
+      "buffId": 916430101,
+      "name": "hasBuff",
+      "UID": "dbc994f8-a315-4df9-b23c-ae6b07b4969f",
+      "target": "MASTER",
+      "NodeID": 90
+    },
+    "91": {
+      "NodeID": 91,
+      "name": "getTargetOffsetPos",
+      "UID": "13b29b0d-94bf-436b-a158-9464d037baca",
+      "target": "PROJECTILE",
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "rotType": "MASTER"
+    },
+    "77": {
+      "NodeID": 77,
+      "name": "getTargetOffsetPos",
+      "UID": "4edd00ff-5814-44ca-bad1-36e38e8e8c7d",
+      "target": "CASTER",
+      "offset": [
+        -1,
+        1.8,
+        1
+      ],
+      "rotType": "CASTER"
+    },
+    "60": {
+      "target": "MASTER",
+      "duration": {
+        "rValue": {
+          "convertType": 1,
+          "name": "toInt",
+          "UID": "80b1e671-81d7-4018-bf01-8c098a82771f",
+          "val": {
+            "rValue": {
+              "UID": "9d7b7062-aa94-4f7a-9f19-6dc991a0b70e",
+              "number": 10,
+              "name": "constNumber",
+              "NodeID": 64
+            },
+            "name": "div",
+            "UID": "c0818167-1a7a-4c10-8000-7a46225ee6fe",
+            "NodeID": 62,
+            "lValue": {
+              "templateId": 916430102,
+              "name": "getBuffLayer",
+              "UID": "e2746cfb-4540-4ad1-9530-6ee6d1cacd8e",
+              "target": "MASTER",
+              "NodeID": 61
+            }
+          },
+          "NodeID": 63
+        },
+        "name": "add",
+        "UID": "ddcefbaa-b0bc-4ce6-b9c2-fe37f0e1fbfb",
+        "NodeID": 59,
+        "lValue": {
+          "UID": "870d95a9-ef30-4571-a405-88492437c74b",
+          "number": 6,
+          "name": "constNumber",
+          "NodeID": 58
+        }
+      },
+      "buffId": 916430101,
+      "NodeID": 60,
+      "UID": "2422d1bd-1503-4fc9-a0d3-85f0099774fc",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "2": {
+      "relation": 2,
+      "heightDown": 5,
+      "heightUp": 5,
+      "UID": "dd65a3b0-482d-4ab9-a556-e321b16428b1",
+      "radius": 15,
+      "name": "searchEntity",
+      "NodeID": 2
+    },
+    "68": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.9,
+        -1
+      ],
+      "rotationTowardsPos": {
+        "NodeID": 77,
+        "name": "getTargetOffsetPos",
+        "UID": "4edd00ff-5814-44ca-bad1-36e38e8e8c7d",
+        "target": "CASTER",
+        "offset": [
+          -1,
+          1.8,
+          1
+        ],
+        "rotType": "CASTER"
+      },
+      "name": "createSegmentedProjectile",
+      "UID": "709ccf6e-d435-4c76-bd31-a8ec618e7c0f",
+      "templateId": 2164301208,
+      "NodeID": 68
+    },
+    "63": {
+      "convertType": 1,
+      "name": "toInt",
+      "UID": "80b1e671-81d7-4018-bf01-8c098a82771f",
+      "val": {
+        "rValue": {
+          "UID": "9d7b7062-aa94-4f7a-9f19-6dc991a0b70e",
+          "number": 10,
+          "name": "constNumber",
+          "NodeID": 64
+        },
+        "name": "div",
+        "UID": "c0818167-1a7a-4c10-8000-7a46225ee6fe",
+        "NodeID": 62,
+        "lValue": {
+          "templateId": 916430102,
+          "name": "getBuffLayer",
+          "UID": "e2746cfb-4540-4ad1-9530-6ee6d1cacd8e",
+          "target": "MASTER",
+          "NodeID": 61
+        }
+      },
+      "NodeID": 63
+    }
+  },
+  "BPName": "timeline_2164301",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 15
+}

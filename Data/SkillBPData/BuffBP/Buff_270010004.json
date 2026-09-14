@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010004",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "343be3cb-9d55-464f-b5cf-fb96f06e5dea",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "17371372-a9f0-4053-8b5f-23b7f66d2ca7",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "10": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "UID": "154670d4-294f-46f3-9670-f45f03e9c034",
+            "number": 0.01,
+            "name": "constNumber",
+            "NodeID": 11
+          },
+          "name": "multiply",
+          "UID": "dbbc3639-7a1f-417c-b8ae-5eeff368d088",
+          "NodeID": 8,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "0fd02941-a4ef-4ff1-b15b-bc22c10843db",
+            "target": "OWNER",
+            "NodeID": 7,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "1d7e881d-6f87-4350-8e67-cca74bc0d127",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "12": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "d06113de-101f-4244-a703-32529e5fe222",
+      "name": "buffStartThink",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    12,
+    3
+  ]
+}

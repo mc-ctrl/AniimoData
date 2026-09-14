@@ -1,0 +1,80 @@
+{
+  "91300090": {
+    "owner": "刘丰槊",
+    "chunk": 1019874,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91315419,
+    "levelItems": {
+      "91309134": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          7.3,
+          32.64,
+          -10.98
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91309134,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          40.25,
+          1,
+          37.87
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "全局_新洞穴玩法内容_好恶熊",
+    "spawners": [
+      91300092,
+      91300094,
+      91300096,
+      91300098,
+      91300105,
+      91309143,
+      91311015,
+      91313023,
+      91313025,
+      91313028,
+      91313030,
+      91313033,
+      91313035,
+      91313038,
+      91313040,
+      91344178
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7514/Sandbox_91300090_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91300090,
+    "markIconSpawnerId": 0,
+    "position": [
+      10.47,
+      -0.17,
+      -11.27
+    ]
+  }
+}

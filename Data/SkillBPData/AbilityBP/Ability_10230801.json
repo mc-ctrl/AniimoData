@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10230801",
+  "NodeID": 1,
+  "UID": "1c9b4272-c115-4821-b208-914e36b8c6bc",
+  "abilityParamId": 10500250,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10230801001,
+      "name": "setCombatActionTimeline",
+      "UID": "0ef7516d-a6fc-4821-9f31-83756b35bc96",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Monster_Fireball"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10023_Mon_Skill_Fireball_02_0.6",
+    "Eff_Parmon_10023_Mon_Skill_Fireball_03_0.6",
+    "Eff_Parmon_10023_Mon_Skill_Fireball_01_0.6"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1,
+  "refBones": [
+    "Bone M Tongue 02"
+  ]
+}

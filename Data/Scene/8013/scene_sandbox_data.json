@@ -1,0 +1,369 @@
+{
+  "65118722": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018849,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 65118723,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 507,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "辉耀能量收集教学",
+    "sightLevelType": 256,
+    "spawners": [
+      65120983
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8013/Sandbox_65118722_GraphRef.asset",
+    "position": [
+      -13.68,
+      7,
+      -115.92
+    ],
+    "owner": "路司机",
+    "id": 65118722,
+    "levelItems": {
+      "42478974": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          -13.9,
+          7.28,
+          -58.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42478974,
+        "siblingIndex": 3,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42478974_43015735"
+          }
+        },
+        "configId": 73,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478738": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头1-触碰辉耀琥珀",
+        "position": [
+          -13.9,
+          7,
+          -115.71
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42478738,
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "65835349": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -18.72,
+          7,
+          -73.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 5,
+        "id": 65835349,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42478777": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点1-触碰辉耀琥珀",
+        "position": [
+          -13.9,
+          6.69,
+          -107.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42478777,
+        "siblingIndex": 2,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42478777_43015308"
+          }
+        },
+        "configId": 72,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42833376": {
+        "majorCompId": 42742113,
+        "scale": [
+          100,
+          9.46,
+          50
+        ],
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          -14.16,
+          -0.42,
+          -72.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 42833376,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.1,
+            "detectType": 3,
+            "playerRevivePos": [
+              -14.47,
+              17.13,
+              -77.9
+            ],
+            "playerReviveType": 3
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "65118913": {
+        "majorCompId": 50268828,
+        "owner": "路司机",
+        "EditorName": "P_Item_CollectItemPuzzle_Container",
+        "position": [
+          -14.1,
+          6.44,
+          -99.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 4,
+        "serializeVersion": 3,
+        "id": 65118913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "50268828": {
+            "chestSpawnerId": 65120983,
+            "luaTransData": {
+              "transData": [
+                {
+                  "refName": "StartTrigger",
+                  "trans": {
+                    "localPosition": [
+                      0.18,
+                      1.46,
+                      0
+                    ],
+                    "localRotation": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ]
+            },
+            "itemList": [
+              [
+                0.27,
+                0.6,
+                5.18
+              ],
+              [
+                -8.93,
+                0.48,
+                8.48
+              ],
+              [
+                -8.6,
+                0.48,
+                17.59
+              ],
+              [
+                8.04,
+                0.48,
+                18.52
+              ],
+              [
+                0.32,
+                0.48,
+                22.71
+              ],
+              [
+                8.27,
+                0.48,
+                8.55
+              ]
+            ],
+            "itemCount": 6
+          }
+        },
+        "configId": 146,
+        "defaultValue": {
+          "chestSpawnerId": 65120983,
+          "itemCount": 6
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      }
+    },
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "收集散逸的辉耀能量",
+      "autoSetContent1": true,
+      "compassShowDistance": 25,
+      "initState": 0,
+      "inactiveDesc": "收集散逸的辉耀能量",
+      "mapAreaId": 0,
+      "markConfigId": 10414,
+      "markContent1": 65118722,
+      "nearState": 2,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 1,
+      "scale2": 0,
+      "compassTxt": "辉耀能量收集",
+      "positionParam": [
+        0,
+        0
+      ],
+      "SloganPlayOnce": false,
+      "POIDesc": "辉耀能量收集",
+      "POIIcon": "$UI_Icon_POI_Decrypt_TimeLimited.png",
+      "POIOrNot": false,
+      "yaw": 0,
+      "title": "辉耀能量收集",
+      "showPortalOffset": false,
+      "activeDisplayType": 1,
+      "activeDistance": 20,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "scale3": 0,
+      "markType": 0,
+      "arriveParam": {},
+      "arriveType": 1,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "inactiveTitle": "辉耀能量收集"
+    }
+  },
+  "64959633": {
+    "areaType": 0,
+    "chunk": 1018849,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 64959633,
+    "owner": "路司机",
+    "position": [
+      -13.78,
+      6.37,
+      -126.38
+    ],
+    "markIconSpawnerId": 0
+  }
+}

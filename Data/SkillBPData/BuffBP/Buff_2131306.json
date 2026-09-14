@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2131306",
+  "NodeID": 1,
+  "UID": "239c5d04-d396-4e4d-adcc-b96d568a2b84",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": true,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2131306,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 6,
+        "UID": "982948ad-20f4-4a63-8326-371c23df10c0",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "d842bcde-4430-4fee-bac7-8001c3ec692b",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "bbc9a959-7816-4a78-aada-6cc374a2a996",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10313_Skill_Bullet_04"
+    }
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "calcId": 2131306,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "982948ad-20f4-4a63-8326-371c23df10c0",
+      "name": "getParamByLuaConfig"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62120107",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    10,
+    9,
+    7,
+    4
+  ],
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "SRC",
+      "name": "playSoundStr",
+      "UID": "67a7a6c8-a30a-4838-a411-02e016c58576",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_04",
+      "NodeID": 3
+    },
+    "4": {
+      "key": "3",
+      "duration": 1.5,
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4,
+      "UID": "30613eab-8abb-43c5-b810-3a3f6f05379e",
+      "name": "addTimer"
+    },
+    "9": {
+      "key": "1",
+      "duration": 0.5,
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "30bac466-b4dc-4bd3-b94c-b0599f570af4",
+      "name": "addTimer"
+    },
+    "6": {
+      "target": "SRC",
+      "name": "playSoundStr",
+      "UID": "55af9721-e1ad-489a-98fc-7d5f9644a41e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_03",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "SRC",
+      "name": "playSoundStr",
+      "UID": "81f6b4ce-5f50-4a04-b1d4-1920c5920806",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_01",
+      "NodeID": 10
+    },
+    "11": {
+      "delay": 0,
+      "interval": 4,
+      "UID": "f7850df2-5b00-46af-ac44-997964b9996b",
+      "name": "buffStartThink",
+      "NodeID": 11
+    },
+    "7": {
+      "key": "2",
+      "duration": 1,
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "08d4f972-d2c3-43a5-8fd2-9c4ea6b35f24",
+      "name": "addTimer"
+    },
+    "8": {
+      "target": "SRC",
+      "name": "playSoundStr",
+      "UID": "533f42e1-d76f-473e-9676-3948bfa8773b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_02",
+      "NodeID": 8
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

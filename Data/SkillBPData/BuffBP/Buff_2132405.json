@@ -1,0 +1,288 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132405",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "a1f3cc9f-ee33-43f9-868d-c752c8910855",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "39": {
+      "target": "CURPET",
+      "duration": -1,
+      "buffId": 2132408,
+      "NodeID": 39,
+      "UID": "3c8e4ade-3ef8-4033-9dee-f455d63f4011",
+      "layer": 9,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "UID": "a73850da-1f2f-421f-8a74-e7ce42a68d48",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "40": {
+      "key": "cd",
+      "actionIds": [
+        36,
+        39
+      ],
+      "NodeID": 40,
+      "UID": "bfcdf129-1463-4067-85b2-db3a01ae7104",
+      "cd": 5,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "37": {
+      "UID": "34337dbf-fb12-416b-aec8-31debed35778",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        40
+      ],
+      "NodeID": 37
+    },
+    "35": {
+      "buffId": 2132418,
+      "name": "removeBuff",
+      "UID": "60bc5b01-e577-4ca3-9fe6-3f1100db0287",
+      "target": "CURPET",
+      "NodeID": 35
+    },
+    "23": {
+      "buffId": 2132408,
+      "name": "removeBuff",
+      "UID": "dc5f97e2-82a1-4500-82c1-6816f4cf9667",
+      "target": "CURPET",
+      "NodeID": 23
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        6,
+        17,
+        31
+      ],
+      "name": "registerGroupEvent",
+      "UID": "61f84320-1c5b-41a1-a3cc-948cc8cbcb14",
+      "NodeID": 8
+    },
+    "31": {
+      "actionIds": [
+        30
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "4b0774e4-5c4b-4ce4-a779-d9329a04dd2e",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "22": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "e288017d-a4eb-4964-8f04-d223488738d3",
+      "NodeID": 22,
+      "lValue": {
+        "templateId": 2132408,
+        "name": "getBuffLayer",
+        "UID": "9d4c65f5-de77-4449-9334-8dcd6d483dbe",
+        "target": "CURPET",
+        "NodeID": 21
+      }
+    },
+    "33": {
+      "UID": "1de63ab6-da9c-4562-a815-c387cf1cb159",
+      "conditionIds": [
+        32,
+        34
+      ],
+      "name": "conditionOr",
+      "NodeID": 33
+    },
+    "13": {
+      "UID": "24d0d6a6-37d9-46c3-afe0-bcc8e29d00f1",
+      "name": "callClientAction",
+      "actionIds": [
+        11,
+        18,
+        19
+      ],
+      "NodeID": 13
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "be06b6a1-e96e-4f5c-881a-de4b0bd7cb29",
+      "effectId": "Eff_Parmon_10324_Ability_01",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "00030194-7754-4323-9124-1704ec0a7a83",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 20
+    },
+    "30": {
+      "buffId": 2132408,
+      "name": "removeBuff",
+      "UID": "a98f31b7-f2e8-4d0c-aa00-ea63c4968145",
+      "target": "CURPET",
+      "NodeID": 30
+    },
+    "3": {
+      "target": "CURPET",
+      "duration": -1,
+      "buffId": 2132408,
+      "NodeID": 3,
+      "UID": "fb874d26-b7fc-455e-ace1-c26e5b20abfe",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "9dd7ad4c-8eab-4b43-b4c4-d2f775d7bb4d",
+      "name": "doActionsByConditions",
+      "NodeID": 4,
+      "elseActionIds": [
+        3
+      ]
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "b58db3e0-6a93-4445-a01c-13767eddc49c",
+      "effectId": "Eff_Parmon_10324_Ability_01",
+      "target": "CURPET",
+      "NodeID": 24
+    },
+    "26": {
+      "UID": "51e596b0-949b-4c96-a76f-c6f39d1777ab",
+      "oldPetActionIds": [
+        24,
+        27,
+        28
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 26
+    },
+    "10": {
+      "UID": "83f5b4b4-fb10-4310-8c4e-4ccfbe7eba63",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        13,
+        23,
+        35
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "6a727004-6ab7-42f7-99e6-fe2b141d0331",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "1b7dcedc-c37e-4f18-9788-875f2e2e74b0",
+      "effectId": "Eff_Parmon_10324_Ability_03",
+      "target": "CURPET",
+      "NodeID": 28
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "c43ed08a-919e-4e76-9896-818670a2496e",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "b7bcfe42-cc20-49f6-8950-51fc9bfa20a9",
+      "effectId": "Eff_Parmon_10324_Ability_02",
+      "target": "CURPET",
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "0885e5f8-5e44-4307-a3aa-b213ce53faf7",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17
+    },
+    "29": {
+      "buffId": 2132408,
+      "name": "removeBuff",
+      "UID": "b24e9834-0c96-4842-9be3-d52d5147172d",
+      "target": "CURPET",
+      "NodeID": 29
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "dbe59453-5e9a-4673-81d8-0b6ec51b24fd",
+      "effectId": "Eff_Parmon_10324_Ability_02",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "32": {
+      "name": "checkPetPrototypeId",
+      "UID": "888dc467-dd65-4895-8099-6ef94abc9c9a",
+      "target": "CURPET",
+      "petPrototypeId": 1032400,
+      "NodeID": 32
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "c3fb4283-f11e-49b7-b751-a9d8f20573e1",
+      "effectId": "Eff_Parmon_10324_Ability_03",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "34": {
+      "name": "checkPetPrototypeId",
+      "UID": "a7330d53-3158-4cb5-95b8-76df8d39f73c",
+      "target": "CURPET",
+      "petPrototypeId": 1032402,
+      "NodeID": 34
+    },
+    "36": {
+      "target": "CURPET",
+      "duration": -1,
+      "buffId": 2132408,
+      "NodeID": 36,
+      "UID": "22644537-7b72-4bdb-b393-8974b0024405",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onBuffDestroyIds": [
+    29
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    26,
+    37
+  ]
+}

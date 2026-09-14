@@ -1,0 +1,74 @@
+{
+  "duration": 2.5,
+  "BPName": "ability_902132500",
+  "NodeID": 0,
+  "destroyOnHit": true,
+  "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Fly_02",
+  "onProjectileGroundedIds": [
+    177,
+    224,
+    227
+  ],
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "177": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902132500,
+        "instant_dmg_rate_v": "param2",
+        "type": 2
+      },
+      "UID": "ba6c2fa8-22ba-4de2-8a41-0327c89098ce",
+      "target": "TARGET",
+      "NodeID": 177,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "SFX_Combat_90213_Skill_Blue_Xczl_04",
+        "elementType": 1
+      }
+    },
+    "227": {
+      "UID": "121f1cf2-cc27-46d8-84b1-1f09d5a14728",
+      "name": "destroyProjectile",
+      "NodeID": 227
+    },
+    "224": {
+      "name": "playEffectOnPosRot",
+      "UID": "3cf39c82-f6b5-4fc3-900b-86f4b95e1582",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Xcz_Bullet_Launch",
+      "global": true,
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "NodeID": 224
+    }
+  },
+  "moveSpeed": 75,
+  "onProjectileFinishIds": [
+    177,
+    224,
+    227
+  ],
+  "onProjectileHitIds": [
+    177,
+    224,
+    227
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "waterDestroy": false,
+  "tickInterval": 0,
+  "maxHitNum": 999,
+  "startSleepTime": 0,
+  "calcResultNodeId": 177,
+  "groundSweepRadius": 0.05,
+  "bounciness": 1,
+  "acceleration": 0
+}

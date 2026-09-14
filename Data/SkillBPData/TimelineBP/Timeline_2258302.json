@@ -1,0 +1,273 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "86f12066-4196-4a80-bd70-d97a39e9d2f6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          3,
+          30
+        ]
+      },
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "238773fc-2f0d-4cf3-ace1-a4aa74fead52",
+      "actorId": "OWNER",
+      "name": "destroyEntity",
+      "NodeID": 7
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6804c3a8-d3be-43f7-b7e7-3100b7112b1c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glameep_Skill_SmallPopo",
+      "NodeID": 31
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 9,
+      "relation": 2,
+      "enterTrapActionIds": [
+        28,
+        31,
+        16,
+        17,
+        7
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        0.4
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "fad3ba12-bdfa-40e6-9981-9de47515143f"
+    },
+    "11": {
+      "eventType": "NotifyState",
+      "endTime": 65,
+      "NodeID": 11,
+      "UID": "b6fa3327-a8a1-44a7-aab1-db70b295febd",
+      "onUpdate": {
+        "actionIds": [
+          21,
+          9
+        ]
+      },
+      "startTime": 5,
+      "tickInterval": 0.1
+    },
+    "20": {
+      "duration": 1,
+      "name": "moveByDirection",
+      "UID": "c231bf98-9fba-4a99-ac88-608af6f679ee",
+      "collisionTestDistance": 0,
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "trackTarget": {
+        "NodeID": 19,
+        "UID": "515ee29d-4f07-4272-8461-4f6ff0b72eca",
+        "checkValidLock": false,
+        "heightDown": 60,
+        "radius": 100,
+        "relation": 2,
+        "name": "searchEntity",
+        "heightUp": 60,
+        "filterCondition": 18
+      },
+      "velocity": [
+        0,
+        1,
+        2.5
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "27334722-5e05-43a0-93eb-2cbac76017af",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_10583_Skill_GatherBubble_paopao_Boss",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "23": {
+      "buffId": 21583001,
+      "name": "hasBuff",
+      "UID": "b00cf1d5-261f-4741-a0d9-c8b529d8c3ee",
+      "target": {
+        "relation": 2,
+        "checkValidLock": false,
+        "heightDown": 60,
+        "NodeID": 22,
+        "UID": "3a57172d-25d8-4eed-a077-efee5f42569d",
+        "radius": 100,
+        "name": "searchEntity",
+        "heightUp": 60
+      },
+      "NodeID": 23
+    },
+    "24": {
+      "UID": "da714145-7dad-4be0-8f3d-3ca1eb614c5b",
+      "conditionIds": [
+        26,
+        23
+      ],
+      "name": "conditionAnd",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          29
+        ]
+      },
+      "NodeID": 14
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6e475865-724d-4a34-aad3-e00bc09d9f0d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glameep_Skill_SmallPopo_Boom",
+      "NodeID": 30
+    },
+    "16": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_v": 0
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 0,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "parmon_10043_waterbreath_hit",
+        "hitCameraShakeId": 0
+      },
+      "UID": "c3a7b0ad-1440-4aa9-8399-4ab444691141",
+      "target": "TrapTarget",
+      "calcInfoByLuaConfig": {
+        "id": 2258302,
+        "instant_dmg_v": "param0",
+        "type": 4
+      },
+      "NodeID": 16
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "d995431b-9553-4aa3-9fd9-22e7f1b2a0f4",
+      "effectId": "Eff_Parmon_10583_Skill_GatherBubble_paopao_Boss",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "17": {
+      "target": "TrapTarget",
+      "duration": 60,
+      "buffId": 21583002,
+      "NodeID": 17,
+      "UID": "fb8ec51b-ebfa-4ac9-a2ea-266213255922",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ca7867fb-1f4d-420c-a4c6-b88ec05107eb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glameep_Skill_SmallPopo",
+      "NodeID": 29
+    },
+    "18": {
+      "buffId": 21583001,
+      "name": "hasBuff",
+      "UID": "3c51bcbb-d601-49f3-99b2-f7cdc2aa7aea",
+      "target": "TARGET",
+      "NodeID": 18
+    },
+    "26": {
+      "UID": "d201f280-87d4-4be7-9400-481176d37f4b",
+      "name": "isNot",
+      "action": {
+        "buffId": 21583003,
+        "name": "hasBuff",
+        "UID": "2da5464a-61b3-4dd9-b2ed-8806ff778e38",
+        "target": {
+          "relation": 2,
+          "checkValidLock": false,
+          "heightDown": 60,
+          "NodeID": 22,
+          "UID": "3a57172d-25d8-4eed-a077-efee5f42569d",
+          "radius": 100,
+          "name": "searchEntity",
+          "heightUp": 60
+        },
+        "NodeID": 25
+      },
+      "NodeID": 26
+    },
+    "19": {
+      "NodeID": 19,
+      "UID": "515ee29d-4f07-4272-8461-4f6ff0b72eca",
+      "checkValidLock": false,
+      "heightDown": 60,
+      "radius": 100,
+      "relation": 2,
+      "name": "searchEntity",
+      "heightUp": 60,
+      "filterCondition": 18
+    },
+    "12": {
+      "duration": 65,
+      "target": "OWNER",
+      "NodeID": 12,
+      "UID": "478cc79a-9d35-4c1e-908d-b129db301cd8",
+      "effectId": "Eff_Parmon_10583_Skill_GatherBubble_Smallpaopao_Boss",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "22": {
+      "relation": 2,
+      "checkValidLock": false,
+      "heightDown": 60,
+      "NodeID": 22,
+      "UID": "3a57172d-25d8-4eed-a077-efee5f42569d",
+      "radius": 100,
+      "name": "searchEntity",
+      "heightUp": 60
+    }
+  },
+  "BPName": "timeline_2258302",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    14,
+    11,
+    5
+  ],
+  "layer": "Base",
+  "length": 65
+}

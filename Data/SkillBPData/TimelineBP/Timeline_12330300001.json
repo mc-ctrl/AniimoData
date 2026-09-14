@@ -1,0 +1,113 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "de1a2316-0ba6-43dd-b60d-fe3c4f08f599",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          16
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 14,
+      "UID": "7aeaf09e-69f9-4086-bb71-246a04c47a18"
+    },
+    "16": {
+      "UID": "13fde584-2bcc-43b0-a914-62ad88cfd69a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "13": {
+      "UID": "60aed95a-32af-465c-9109-c1a35672cf1c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 13
+    },
+    "9": {
+      "target": "CASTER",
+      "duration": 0.5,
+      "buffId": 2123101,
+      "NodeID": 9,
+      "UID": "2dc00d00-89dc-4125-b955-372d1ee0c6a2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5b1d1f6d-a291-41e8-bb4f-07095f615f94",
+      "effectId": "Eff_Parmon_Futternym_10233_Skill_Dance",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.43,
+      "NodeID": 19,
+      "UID": "087a4b80-05ff-4818-9716-1fe91970f3d8"
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          20,
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 11,
+      "UID": "295dffd1-8121-43e1-9985-a1dd9486367a"
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "14da576f-486d-4e29-85de-28a97321e1f9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_dance",
+      "NodeID": 20
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "16e0ac69-457d-44dd-9c35-68fb95200ff1",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Dance"
+    }
+  },
+  "BPName": "ability_12330300",
+  "NodeID": 6,
+  "UID": "565084b5-9852-411f-8059-eb08aec2712d",
+  "eventIds": [
+    11,
+    14,
+    4,
+    19
+  ],
+  "layer": "Base",
+  "length": 3.33
+}

@@ -1,0 +1,39 @@
+{
+  "91089639": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -1.07,
+      40.33,
+      29.61
+    ],
+    "sandboxId": 91029359,
+    "autoInitial": false,
+    "sandboxType": 2,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "张博文",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91089639,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91089638
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

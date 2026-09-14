@@ -1,0 +1,338 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 6126103,
+    "type": 1,
+    "speed_ratio_egg_mode_v": "param1",
+    "speed_ratio_load_adjustment_v": "param0"
+  },
+  "BPName": "buff_6126103",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    11
+  ],
+  "stackRule": 0,
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    5,
+    20
+  ],
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        40,
+        10,
+        32,
+        46
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "956733e8-06c4-4a48-a4da-f2d8b99ef1f8",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "38": {
+      "id": 2052,
+      "duration": 5,
+      "NodeID": 38,
+      "UID": "763aacd2-5aa8-44c4-91ae-520af590aa24",
+      "name": "showBossMechanismTip"
+    },
+    "40": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 6126104,
+      "NodeID": 40,
+      "UID": "c82bf47c-64cb-4ff2-8d3a-5e6ecc791746",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "41": {
+      "scale": 1,
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "0c6c067f-6095-4566-b77f-e6fc541cddfe",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "speed": 1,
+      "NodeID": 41
+    },
+    "42": {
+      "name": "stopEffectStr",
+      "UID": "06ed444b-5ae7-4723-841f-abcdee2f86c8",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "CURPET",
+      "NodeID": 42
+    },
+    "43": {
+      "name": "stopEffectStr",
+      "UID": "535f24ba-8f08-4757-92b9-14ea16e46aff",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "CURPET",
+      "NodeID": 43
+    },
+    "44": {
+      "name": "stopEffectStr",
+      "UID": "3c9d353a-bde4-4acc-b4b9-aacd794c6e92",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "CURPET",
+      "NodeID": 44
+    },
+    "8": {
+      "UID": "a065ad64-f85f-4b35-86fc-9816471b28fd",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        17,
+        13,
+        33,
+        29,
+        26,
+        42,
+        44,
+        43,
+        5,
+        20
+      ],
+      "NodeID": 8
+    },
+    "48": {
+      "scale": 1,
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "37ebfa3d-47e7-4b9f-ac2f-86124ad77516",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "47": {
+      "scale": 1,
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "25580ac7-f718-4b19-9759-b0154c536280",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "46": {
+      "name": "stopEffectStr",
+      "UID": "5a1af3ef-ef81-4c85-856a-36a90074a2bd",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "CURPET",
+      "NodeID": 46
+    },
+    "16": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "0e67ff06-691d-4111-8e1c-e2e216cb11b2",
+      "NodeID": 16,
+      "lValue": {
+        "UID": "16ec4042-79e0-4768-9210-90c57d44c1f8",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 15
+      }
+    },
+    "20": {
+      "actionIds": [
+        34,
+        47
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "e43cb74b-fd3d-4f31-8545-f113f273ee1f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 20
+    },
+    "23": {
+      "actionIds": [
+        36,
+        48
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "c2dab6c6-8ebe-4dc6-b4c9-8e945595452c",
+      "name": "doActionsByConditions",
+      "NodeID": 23
+    },
+    "22": {
+      "rValue": 7,
+      "name": "equal",
+      "UID": "ee491909-5afa-4a52-b31f-3d5e00f07b21",
+      "NodeID": 22,
+      "lValue": {
+        "templateId": 6126103,
+        "name": "getBuffLayer",
+        "UID": "14c24754-25eb-4171-b3a1-65e31c5eb60e",
+        "target": "OWNER",
+        "NodeID": 21
+      }
+    },
+    "4": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "0ede10bd-7318-4eea-87c6-00a73ee625c9",
+      "NodeID": 4,
+      "lValue": {
+        "templateId": 6126103,
+        "name": "getBuffLayer",
+        "UID": "93b1d023-42d3-4ede-bddc-d5ef89d5a9d8",
+        "target": "OWNER",
+        "NodeID": 3
+      }
+    },
+    "45": {
+      "scale": 0.8,
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "5dbe972b-1d07-414a-a18c-9b1ba4f88117",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Disappear_01",
+      "speed": 1,
+      "NodeID": 45
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "8f59ee55-35f1-4ea7-9439-d92323c42bdb",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6126104,
+      "NodeID": 10,
+      "UID": "1fe9c310-138f-40d9-a6ed-b9c1ee6809eb",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "331954eb-749d-4d37-918b-140dcfdfe892",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "25": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "4a0b6c39-40d8-40f5-8aec-f794c7e5d46b",
+      "NodeID": 25,
+      "lValue": {
+        "templateId": 2129304,
+        "name": "getBuffLayer",
+        "UID": "62db56ec-319c-48c1-8e02-56f6056e369b",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "26": {
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "e11e9a13-d4dc-4cdb-9b9c-dd95bcec9fad",
+      "name": "doActionsByConditions",
+      "NodeID": 26,
+      "elseActionIds": [
+        45,
+        27
+      ]
+    },
+    "27": {
+      "scale": 0.8,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7519ede1-fa58-4594-99a3-4ab47843ef83",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Disappear_01",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "17": {
+      "actionIds": [
+        41,
+        30
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "3788b178-2a25-4adc-87fd-265c1712c2d5",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "e30b74c0-9397-4881-acef-567a06960415",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0ec983c0-2207-4c4b-bee0-02998112cd58",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "6c085473-a771-4dc2-996b-0cbe1d13a3ef",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "rValue": 4,
+      "name": "equal",
+      "UID": "079c80a9-ed8d-4dbd-ada6-cb467aeec512",
+      "NodeID": 19,
+      "lValue": {
+        "templateId": 6126103,
+        "name": "getBuffLayer",
+        "UID": "b0ac823f-eaff-4fc1-9821-3324b43ea416",
+        "target": "OWNER",
+        "NodeID": 18
+      }
+    },
+    "34": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "06119d9d-209b-4308-9759-3e0bccb70290",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "36": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f69de378-9d7a-4b65-a3f9-8548d4125950",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_02",
+      "speed": 1,
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    13,
+    33,
+    29,
+    26,
+    42,
+    44,
+    43
+  ],
+  "onBuffStartIds": [
+    17,
+    38,
+    8
+  ]
+}

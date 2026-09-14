@@ -1,0 +1,32 @@
+{
+  "BPName": "ability_30100010",
+  "NodeID": 1,
+  "UID": "5f7c282c-2ff6-4eb0-a771-c580949539a1",
+  "abilityParamId": 30100010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 30100010001,
+      "name": "setCombatActionTimeline",
+      "UID": "ef3716da-afe0-4978-bc72-ceb2f1c96554",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10032_Skill_ShadowCutter_Start1",
+    "Eff_Parmon_10222_Skill_Backstab_Disappear1"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 0,
+  "notTurnToTarget": true,
+  "searchTargetRangeDown": 0
+}

@@ -1,0 +1,71 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "b41eeafc-981a-4ad2-be64-edc638628ec5",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "outlineRemainTimeCamouflage": 20,
+      "outlineRemainTimeTag": 0,
+      "name": "setGhostEyeState",
+      "NodeID": 14,
+      "UID": "85b18729-a6f4-406e-8ea9-8ceee148c42f",
+      "target": "MASTER",
+      "entityTagList": [
+        "TE_Env_Metal",
+        "TE_Wild_Metal",
+        "TE_Chest_Metal"
+      ],
+      "ghostEyeState": 5
+    },
+    "11": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkillOnlyClient",
+      "UID": "9d69033d-6446-4ab5-b69d-bc0e6a4b8f12",
+      "to": 10210910,
+      "NodeID": 11,
+      "from": 10210900
+    },
+    "15": {
+      "cdTime": 0.2,
+      "name": "forceSetSkillCD",
+      "NodeID": 15,
+      "UID": "4f7ea7cc-c107-4e1b-b477-6ed2f70b298f",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 10210910
+    },
+    "6": {
+      "UID": "03dbc6a2-1c0b-4c32-a4d8-3044065bd2eb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          14,
+          15,
+          4
+        ]
+      },
+      "NodeID": 6
+    }
+  },
+  "BPName": "ability_10210900",
+  "NodeID": 8,
+  "UID": "735303ae-12ab-479a-8166-e434662d0319",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 1
+}

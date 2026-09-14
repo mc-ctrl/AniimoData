@@ -1,0 +1,30 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "unsummonValid": false,
+      "actionIds": [
+        2
+      ],
+      "name": "registerGroupEvent",
+      "UID": "7b5f509f-58ad-4dad-857b-8df90c2d3df1",
+      "NodeID": 3
+    },
+    "2": {
+      "name": "delayProcessDamage",
+      "interval": 1,
+      "UID": "bf9b3167-9b3e-41a4-a1fe-dd96fe346889",
+      "delayCount": 3,
+      "ratio": 0.5,
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2052001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "1": [
+    {
+      "delaySecondsEnergyHUD": 6.85,
+      "tipDelay": 1.65,
+      "totalDuration": 3.4,
+      "waveInterval": 0.8,
+      "delaySeconds": 3.45
+    },
+    {
+      "delaySecondsEnergyHUD": 7.65,
+      "tipDelay": 1.65,
+      "totalDuration": 4.2,
+      "waveInterval": 0.8,
+      "delaySeconds": 3.45
+    },
+    {
+      "delaySecondsEnergyHUD": 8.45,
+      "tipDelay": 1.65,
+      "totalDuration": 5,
+      "waveInterval": 0.8,
+      "delaySeconds": 3.45
+    },
+    {
+      "delaySecondsEnergyHUD": 9.25,
+      "tipDelay": 1.65,
+      "totalDuration": 5.8,
+      "waveInterval": 0.8,
+      "delaySeconds": 3.45
+    }
+  ],
+  "2": {
+    "4": {
+      "delaySecondsEnergyHUD": 10.05,
+      "tipDelay": 1.65,
+      "totalDuration": 6.6,
+      "waveInterval": 0.8,
+      "delaySeconds": 3.45
+    }
+  }
+}

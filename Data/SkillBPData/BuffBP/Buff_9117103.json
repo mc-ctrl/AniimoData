@@ -1,0 +1,106 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9117103",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91171031,
+      "NodeID": 3,
+      "UID": "9c6bf150-ef78-4998-936d-41899f65d105",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "14d9460f-7bb1-4c3a-801d-f27e599ea3d9",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "doPetsActions",
+      "UID": "49477a73-a10c-44e8-929b-bd312b1d0f1e",
+      "target": "MASTER",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "43237ef3-0eff-4065-9fd5-76bad203e92b",
+      "target": "TARGET",
+      "name": "getTargetConfigData",
+      "NodeID": 10
+    },
+    "7": {
+      "key": "Admission",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "d75a62f6-a4a9-41d1-b38f-9e2833a95bab",
+      "cd": 20,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "8": {
+      "UID": "9ef5e6a2-a90f-4f8e-9ce9-a7a28652b1b5",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "b9de1625-a4ba-4b30-9b7a-5d4d42925a64",
+      "target": "TARGET",
+      "name": "checkGenderDifference",
+      "NodeID": 9
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "bf751d78-aaf0-49f0-a05c-ff54db0f3536",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "12": {
+      "rValue": 1017,
+      "name": "equal",
+      "UID": "d5ca5bc7-052e-428c-81c2-79471592a821",
+      "NodeID": 12,
+      "lValue": {
+        "data": {
+          "UID": "43237ef3-0eff-4065-9fd5-76bad203e92b",
+          "target": "TARGET",
+          "name": "getTargetConfigData",
+          "NodeID": 10
+        },
+        "propertyName": "ethnicGroup",
+        "name": "getProperty",
+        "UID": "f35ccc99-3c93-4b7a-a3ee-ee57854bdbad",
+        "NodeID": 11
+      }
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

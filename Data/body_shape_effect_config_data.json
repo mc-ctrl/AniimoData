@@ -1,0 +1,27 @@
+{
+  "1003": {
+    "TpPowerRate": 1.2,
+    "TpResistRate": 1.2,
+    "weightLevel": 2
+  },
+  "1004": {
+    "TpPowerRate": 1.5,
+    "TpResistRate": 1.5,
+    "weightLevel": 3
+  },
+  "1002": {
+    "TpPowerRate": 1,
+    "TpResistRate": 1,
+    "weightLevel": 1
+  },
+  "1001": {
+    "TpPowerRate": 1,
+    "TpResistRate": 1,
+    "weightLevel": 0
+  },
+  "1005": {
+    "TpPowerRate": 2,
+    "TpResistRate": 5,
+    "weightLevel": 4
+  }
+}

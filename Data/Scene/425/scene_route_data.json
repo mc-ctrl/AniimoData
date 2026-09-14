@@ -1,0 +1,1293 @@
+{
+  "91125078": {
+    "id": 91125078,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "position": [
+          -1304.81,
+          67.93,
+          795.05
+        ],
+        "ignoreRotation": true,
+        "yaw": 77.89,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 83.34,
+        "position": [
+          -1294.01,
+          70.64,
+          796.21
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1298.61,
+          69.63,
+          807.27
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1309.34,
+          65.73,
+          808.84
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1316.78,
+          64.64,
+          797
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1312.81,
+          65.21,
+          784.13
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1299.52,
+          68.33,
+          786.59
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1293.95,
+          70.66,
+          796.27
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 77.89,
+        "position": [
+          -1306.11,
+          67.51,
+          793.77
+        ]
+      }
+    ],
+    "pos": [
+      -1300.14,
+      82.06,
+      788.92
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125079": {
+    "id": 91125079,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "position": [
+          -1304.8,
+          68.14,
+          797.09
+        ],
+        "ignoreRotation": true,
+        "yaw": 77.89,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 83.34,
+        "position": [
+          -1294.01,
+          70.64,
+          796.21
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1298.61,
+          69.63,
+          807.27
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1309.34,
+          65.73,
+          808.84
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1316.78,
+          64.64,
+          797
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1312.81,
+          65.21,
+          784.13
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1299.52,
+          68.33,
+          786.59
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1293.95,
+          70.66,
+          796.27
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 77.89,
+        "position": [
+          -1305.06,
+          68.21,
+          798.3
+        ]
+      }
+    ],
+    "pos": [
+      -1300.14,
+      81.49,
+      788.92
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125080": {
+    "id": 91125080,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "position": [
+          -1306.56,
+          67.68,
+          796.07
+        ],
+        "ignoreRotation": true,
+        "yaw": 77.89,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 83.34,
+        "position": [
+          -1294.01,
+          70.64,
+          796.21
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1298.61,
+          69.63,
+          807.27
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1309.34,
+          65.73,
+          808.84
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1316.78,
+          64.64,
+          797
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1312.81,
+          65.21,
+          784.13
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1299.52,
+          68.33,
+          786.59
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 83.34,
+        "position": [
+          -1293.95,
+          70.66,
+          796.27
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 77.89,
+        "position": [
+          -1306.56,
+          67.68,
+          796.07
+        ]
+      }
+    ],
+    "pos": [
+      -1300.14,
+      81.44,
+      788.92
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125081": {
+    "id": 91125081,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Chat"
+            }
+          ]
+        },
+        "yaw": 296.11,
+        "position": [
+          -1331.77,
+          64.41,
+          733.34
+        ]
+      }
+    ],
+    "pos": [
+      -1326.76,
+      69.83,
+      743.76
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125082": {
+    "id": 91125082,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Chat"
+            }
+          ]
+        },
+        "yaw": 340.51,
+        "position": [
+          -1333.24,
+          64.39,
+          733.2
+        ]
+      }
+    ],
+    "pos": [
+      -1329.07,
+      69.83,
+      740.76
+    ],
+    "quaternion": [
+      0,
+      0.38,
+      0,
+      0.93
+    ],
+    "sandboxId": 91125077
+  },
+  "91125083": {
+    "id": 91125083,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -1346.58,
+          58.14,
+          803.89
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_SwitchToState",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "MIMICRY",
+                  "name": "tStateName"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1336.57,
+          59.69,
+          799.29
+        ],
+        "ignoreRotation": true,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1364.98,
+      67.4,
+      815.97
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125084": {
+    "id": 91125084,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -1351.79,
+          57.08,
+          804.62
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_SwitchToState",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "MIMICRY",
+                  "name": "tStateName"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1353.66,
+          57.09,
+          794.23
+        ],
+        "ignoreRotation": true,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1366.74,
+      67.4,
+      815.2
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125085": {
+    "id": 91125085,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -1355,
+          56.19,
+          805.28
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_SwitchToState",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "MIMICRY",
+                  "name": "tStateName"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1357.6,
+          55.33,
+          795.4
+        ],
+        "ignoreRotation": true,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1366.84,
+      67.4,
+      818.9
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125086": {
+    "id": 91125086,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Angry"
+            },
+            {
+              "templateKey": "ST_Idle",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 5,
+                  "name": "idleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 230.4,
+        "position": [
+          -1319.43,
+          69.81,
+          833.7
+        ]
+      }
+    ],
+    "pos": [
+      -1320.47,
+      69.81,
+      834.86
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125087": {
+    "pos": [
+      -1293.15,
+      79.92,
+      913.59
+    ],
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1293.15,
+          79.92,
+          913.59
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 245.32
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1311.93,
+          75.54,
+          901.71
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 177.76
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1315.02,
+          72.95,
+          887.82
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 149.52
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1306.85,
+          70.76,
+          872.69
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 221.36
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1316.65,
+          67.94,
+          859.99
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 241.93
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1329.29,
+          66,
+          852.03
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 145.6
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1309.41,
+          64.29,
+          831.73
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 36.83
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1301.02,
+          66.87,
+          850.3
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 72.44
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1288.13,
+          68.49,
+          857.73
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 81.41
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1272.19,
+          70.35,
+          861.39
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 6.54
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1268.75,
+          77.8,
+          890.69
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 331.55
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "useOnlinePathFinding": true,
+        "position": [
+          -1277.66,
+          80.05,
+          899.19
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 310.76
+      }
+    ],
+    "id": 91125087,
+    "extraLongRoute": true,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "ignoreAILod": true,
+    "sandboxId": 91125077
+  },
+  "91125088": {
+    "id": 91125088,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep"
+            }
+          ]
+        },
+        "yaw": 231.31,
+        "position": [
+          -1280.44,
+          69.59,
+          757.63
+        ]
+      }
+    ],
+    "pos": [
+      -1280.44,
+      70.11,
+      757.63
+    ],
+    "quaternion": [
+      0,
+      0.53,
+      0,
+      -0.85
+    ],
+    "sandboxId": 91125077
+  },
+  "91125089": {
+    "id": 91125089,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 352.04,
+        "position": [
+          -1280.52,
+          69.44,
+          755.61
+        ]
+      }
+    ],
+    "pos": [
+      -1281.66,
+      70.11,
+      756.18
+    ],
+    "quaternion": [
+      0,
+      0.92,
+      0,
+      0.39
+    ],
+    "sandboxId": 91125077
+  },
+  "91125090": {
+    "id": 91125090,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 329.6,
+        "position": [
+          -1280.96,
+          69.33,
+          753.91
+        ]
+      }
+    ],
+    "pos": [
+      -1282.28,
+      70.11,
+      754.74
+    ],
+    "quaternion": [
+      0,
+      0.93,
+      0,
+      -0.36
+    ],
+    "sandboxId": 91125077
+  },
+  "91125091": {
+    "id": 91125091,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1187.12,
+          85.62,
+          1044.48
+        ]
+      }
+    ],
+    "pos": [
+      -1187.12,
+      85.62,
+      1044.48
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125092": {
+    "id": 91125092,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            },
+            {
+              "templateKey": "ST_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "cryTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 299.91,
+        "position": [
+          -1188.88,
+          85.78,
+          1043.96
+        ]
+      }
+    ],
+    "pos": [
+      -1188.88,
+      85.78,
+      1043.96
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125093": {
+    "id": 91125093,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            },
+            {
+              "templateKey": "ST_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "cryTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 238.86,
+        "position": [
+          -1188.74,
+          86.23,
+          1041.88
+        ]
+      }
+    ],
+    "pos": [
+      -1188.74,
+      86.23,
+      1041.88
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125094": {
+    "id": 91125094,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "position": [
+          -1313.01,
+          81.31,
+          899.31
+        ]
+      }
+    ],
+    "pos": [
+      -1313.01,
+      81.31,
+      899.31
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125095": {
+    "id": 91125095,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "position": [
+          -1331.68,
+          67.71,
+          849.94
+        ]
+      }
+    ],
+    "pos": [
+      -1331.68,
+      67.71,
+      849.94
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125096": {
+    "id": 91125096,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "sleepTimeOut"
+                },
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1331.68,
+          67.71,
+          849.94
+        ]
+      }
+    ],
+    "pos": [
+      -1331.68,
+      67.71,
+      849.94
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125097": {
+    "id": 91125097,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "sleepTimeOut"
+                },
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1316.35,
+          66.8,
+          847.06
+        ]
+      }
+    ],
+    "pos": [
+      -1316.35,
+      66.8,
+      847.06
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125098": {
+    "id": 91125098,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "sleepTimeOut"
+                },
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1313.61,
+          67.14,
+          848.61
+        ]
+      }
+    ],
+    "pos": [
+      -1313.61,
+      67.14,
+      848.61
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  },
+  "91125099": {
+    "id": 91125099,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "sleepTimeOut"
+                },
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1312.52,
+          66.92,
+          845.8
+        ]
+      }
+    ],
+    "pos": [
+      -1312.52,
+      66.92,
+      845.8
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91125077
+  }
+}

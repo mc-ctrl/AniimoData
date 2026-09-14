@@ -1,0 +1,221 @@
+{
+  "nodeMap": {
+    "54": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "f19b788c-33cb-4397-a85f-ce092ec1ef14",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 54
+    },
+    "11": {
+      "key": "hp10181",
+      "name": "setCacheVal",
+      "UID": "a98983e0-6065-4fcb-a2c0-e4ef3b3aae8d",
+      "target": "CASTER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "fcd6e2dd-56e8-44d6-8cc4-2062349e51eb",
+        "target": "CASTER",
+        "NodeID": 10,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 11
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7b66f3f0-ba2c-4984-8a11-f311adf1ef96",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_whisbird_skill_conjure",
+      "NodeID": 17
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "58f5f0b2-1e8a-4855-a938-fac87fec9c31",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Conjure"
+    },
+    "19": {
+      "UID": "f01db827-0c3c-4bec-b419-a85846ffbfb1",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 19
+    },
+    "4": {
+      "UID": "d9be6ef3-fff8-4fb1-b308-db9fff780d1d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          11,
+          24,
+          17,
+          19,
+          33
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "offsetXYZ": [
+        0,
+        0.15,
+        0.15
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f8f1e31b-ea99-40ca-b966-0d0b22328ba0",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Attention_sing",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "55": {
+      "actionIds": [
+        54
+      ],
+      "conditionActionIds": [
+        58
+      ],
+      "UID": "c73ff357-c437-4f08-8b34-7c78ef54f674",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        57
+      ],
+      "NodeID": 55
+    },
+    "56": {
+      "UID": "0b171a07-1610-4e70-b8eb-6ba4af81095e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          55
+        ]
+      },
+      "NodeID": 56
+    },
+    "21": {
+      "UID": "ae2b6074-72ee-48ad-96ec-9d80415e5a91",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 21
+    },
+    "57": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "ed5058bb-33d5-4fa5-a4f4-cb723fc326a1",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 57
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 16,
+      "UID": "0b11aeef-4ee5-499e-9b05-2f5b1e2a3856"
+    },
+    "58": {
+      "UID": "a6a8b620-0e6c-42a0-922b-d3d9b681df9e",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 58
+    },
+    "28": {
+      "UID": "70f01f36-1950-489c-9208-4f3e7b7b4d28",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 28
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 23,
+      "UID": "deb5ee18-ada1-4da6-a8aa-a94a9e40b90d"
+    },
+    "30": {
+      "UID": "c8914c2f-0d10-4395-a5aa-5f40581aecb1",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "UID": "475a3475-bf3a-48de-ad5d-b6de5c67d13c",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "81a53ec6-e945-41f8-87fe-d61f1fb0844a",
+      "effectId": "Eff_Parmon_10181_Skill_Conjure_Release",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "26": {
+      "UID": "1e1a2b03-2816-4c15-8a26-ae99be669243",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 26
+    },
+    "12": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 2118102,
+      "NodeID": 12,
+      "UID": "78bf6e3b-ee96-4caf-9978-dee9e0cea9fc",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "ability_11810200",
+  "NodeID": 6,
+  "UID": "2f177381-ed2b-448e-a52c-fc9496151615",
+  "eventIds": [
+    23,
+    16,
+    4,
+    28,
+    32,
+    56
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

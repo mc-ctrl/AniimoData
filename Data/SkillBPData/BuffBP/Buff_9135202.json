@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "8": {
+      "UID": "22ed4fe3-32d9-4d3d-b64e-20373b8330fd",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 8
+    },
+    "10": {
+      "UID": "05b0595e-6c10-49c7-b30e-2622972d2a8f",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "9": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "b1027a86-1ba2-4836-a967-5d654eff49ca",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "12": {
+      "target": {
+        "UID": "69d4f058-6b70-450c-b246-0de6ce8ab6cf",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 11
+      },
+      "duration": 0,
+      "buffId": 91352022,
+      "NodeID": 12,
+      "UID": "1b12e38d-34df-436e-b420-8d1e57f2ba95",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_9135202",
+  "dynamicRPCStates": {},
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10
+  ]
+}

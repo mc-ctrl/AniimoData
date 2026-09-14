@@ -1,0 +1,1693 @@
+{
+  "64064184": {
+    "cratesInfoFromTarget": 201001,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "64160853": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·废弃矿洞",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "41251759": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·冰封岩石",
+    "infoTitleNot": "辉耀印记·冰封岩石",
+    "infoText": "洞穴内的坚冰不为四季所动，仿佛是某种力量的守护。冰面下，模糊的符文图案若隐若现，似在低语着远古的传说。"
+  },
+  "71354597": {
+    "timeoutItemId": 410004,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：狼斗士",
+    "rewardId": 44423,
+    "materials": 1674745082,
+    "periodRewardId": {
+      "3": 50032,
+      "4": 50033,
+      "6": 50035,
+      "10": 50039,
+      "7": 50036,
+      "8": 50037,
+      "9": 50038,
+      "5": 50034,
+      "0": 50030,
+      "1": 50030,
+      "2": 50031
+    },
+    "recommendPet": [
+      301,
+      801
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44216,
+    "traceId": 8083,
+    "stageSortPriority": 3,
+    "stageTypeGroup": 1,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72534259
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1295.1348876953,
+        142.77604675293,
+        1373.9189453125
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "小炭犬家族的头目",
+    "successRewardId": 44216
+  },
+  "41269205": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·残骸调查",
+    "infoTitleNot": "辉耀印记·残骸调查",
+    "infoText": "一架受损的飞行器横卧在草地上，机身毁坏严重，已经彻底无法启动。但其中的一些装置尚且保存完好，印证着它曾在空中翱翔的光辉事迹。"
+  },
+  "72037491": {
+    "timeoutItemId": 410009,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "chestPosition": [
+      [
+        -11.26999,
+        44.546,
+        107.94
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "rewardId": 44428,
+    "materials": 1904855724,
+    "periodRewardId": {
+      "3": 50122,
+      "4": 50123,
+      "6": 50125,
+      "10": 50129,
+      "7": 50126,
+      "8": 50127,
+      "9": 50128,
+      "5": 50124,
+      "0": 50120,
+      "1": 50120,
+      "2": 50121
+    },
+    "recommendPet": [
+      701,
+      401
+    ],
+    "showRewardId": 44221,
+    "traceId": 8088,
+    "stageSortPriority": 4,
+    "stageTypeGroup": 4,
+    "respawnTo": [
+      3000,
+      72038885
+    ],
+    "infoTitle": "谜灵头目：吊灯水母",
+    "cost": [
+      1009,
+      30
+    ],
+    "infoText": "水母家族的头目",
+    "infoTitleNot": "谜灵头目：未知"
+  },
+  "72085399": {
+    "cratesInfoFromTarget": 202601,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "72149581": {
+    "cratesInfoFromTarget": 202501,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "72228980": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·闪电之森",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "42315820": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·碎石重圆",
+    "infoTitleNot": "辉耀印记·碎石重圆",
+    "infoText": "三块巨石上破碎的图案引发了许多人的好奇心，但它所隐藏的力量却至今无人发现。"
+  },
+  "72336492": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·鸢尾花海",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "42415984": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·一孔之见",
+    "infoTitleNot": "辉耀印记·一孔之见",
+    "infoText": "草原上的雕像经历了漫长岁月的洗礼，但雄鹰般犀利的眼眸却始终眺望着远方，似乎在注视着什么。"
+  },
+  "72393365": {
+    "timeoutItemId": 410020,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "警告：仍待发现的首领级谜灵，极度危险",
+    "infoTitle": "谜灵首领：星骑士",
+    "infoTitleNot": "首领级谜灵：待发现",
+    "materials": 1168940374,
+    "periodRewardId": {
+      "3": 50192,
+      "4": 50193,
+      "6": 50195,
+      "10": 50199,
+      "7": 50196,
+      "8": 50197,
+      "9": 50198,
+      "5": 50194,
+      "0": 50190,
+      "1": 50190,
+      "2": 50191
+    },
+    "recommendPet": [
+      601,
+      201,
+      701
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44230,
+    "stageBossTip": 2140877308,
+    "stageSortPriority": 1,
+    "stageTypeGroup": 4,
+    "traceId": 665,
+    "infoText": "玫瑰海滩的首领",
+    "respawnTo": [
+      3000,
+      72534053
+    ],
+    "cost": [
+      1009,
+      50
+    ],
+    "chestPosition": [
+      [
+        -1341,
+        24.65821,
+        1968
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "chestId": 11070,
+    "successRewardId": 44230
+  },
+  "47670633": {
+    "infoTextNot": "瀑布顺流而下，溪谷中什么谜灵在打闹嬉戏呢？",
+    "infoTitle": "栖息地-莲顶鱼",
+    "infoTitleNot": "这是什么？",
+    "infoText": "瀑布顺流而下，溪谷中莲顶鱼在打闹嬉戏！"
+  },
+  "72662792": {
+    "cratesInfoFromTarget": 202701,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "81547900": {
+    "timeoutItemId": 410015,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：熔岩暴龙",
+    "rewardId": 44433,
+    "materials": 1215386327,
+    "periodRewardId": {
+      "3": 50112,
+      "4": 50113,
+      "6": 50115,
+      "10": 50119,
+      "7": 50116,
+      "8": 50117,
+      "9": 50118,
+      "5": 50114,
+      "0": 50110,
+      "1": 50110,
+      "2": 50111
+    },
+    "recommendPet": [
+      301,
+      501,
+      401
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44227,
+    "traceId": 832,
+    "stageSortPriority": 3,
+    "stageTypeGroup": 2,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      90830686
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        650.86999511719,
+        -78.480606079102,
+        1531.1500244141
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "熔岩暴龙家族的头目",
+    "successRewardId": 44227
+  },
+  "48198169": {},
+  "51876300": {
+    "infoTextNot": "山谷的大树枝繁叶茂，这里生活着什么样的谜灵呢？",
+    "infoTitle": "栖息地-星乐蒂",
+    "infoTitleNot": "这是什么？",
+    "infoText": "巨大的星皮果树下，生活着馋嘴的星乐蒂"
+  },
+  "86074653": {
+    "successRewardId": 45400
+  },
+  "86692173": {
+    "cratesInfoFromTarget": 202801,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "86734832": {
+    "cratesInfoFromTarget": 202901,
+    "helpID": 504,
+    "playerNum": 2
+  },
+  "51914717": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·登高望远",
+    "infoTitleNot": "辉耀印记·登高望远",
+    "infoText": "站在悬崖上眺望岛屿旁的海石，岩石间隐约刻着古时的符文，每一道印记都诉说着历史的轨迹。"
+  },
+  "51915814": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·以假乱真",
+    "infoTitleNot": "辉耀印记·以假乱真",
+    "infoText": "古林深处，巨石矗立如同守护者，表面刻画的符文图案在阳光与树影的交错下显得扑朔迷离，看似相近的图案之中似乎藏着唯一的真相。"
+  },
+  "53882389": {
+    "timeoutItemId": 410012,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：盔卫士",
+    "rewardId": 44430,
+    "materials": 1545933849,
+    "periodRewardId": {
+      "3": 50152,
+      "4": 50153,
+      "6": 50155,
+      "10": 50159,
+      "7": 50156,
+      "8": 50157,
+      "9": 50158,
+      "5": 50154,
+      "0": 50150,
+      "1": 50150,
+      "2": 50151
+    },
+    "recommendPet": [
+      501,
+      901
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44224,
+    "traceId": 8090,
+    "stageSortPriority": 3,
+    "stageTypeGroup": 4,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72577244
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -445.39001464844,
+        62.7907,
+        1582.9799804688
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "大眼盔家族的头目",
+    "successRewardId": 44224
+  },
+  "54817714": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "{需填写文本}",
+    "infoTitleNot": "辉耀印记",
+    "infoText": "{需填写文本}"
+  },
+  "54818360": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·朝花印象",
+    "infoTitleNot": "辉耀印记·朝花印象",
+    "infoText": "朝花乡景色宜人，晨光中花瓣轻摇，在花丛中的某个角落可以捕捉到一瞬的美丽。"
+  },
+  "54833823": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·云中印记",
+    "infoTitleNot": "辉耀印记·云中印记",
+    "infoText": "身处云团之中，远处朦胧的符文图案如同远古的呼唤，脚下的蒲公英仿佛是自然的向导，引领着寻秘者的步伐。"
+  },
+  "54832390": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·遗迹之门",
+    "infoTitleNot": "辉耀印记·遗迹之门",
+    "infoText": "在这片青翠草海中，石柱与后方的遗迹之门共同诉说着古老传说。当石柱与门扉合二为一，那被岁月封存的故事也缓缓展开。"
+  },
+  "55006589": {
+    "POIDesc": "格拉斯博士在进行走调草的研究",
+    "infoTitle": "格拉斯博士的考验",
+    "infoText": "格拉斯博士给予学生的走调草保龄球挑战。"
+  },
+  "89285549": {
+    "successRewardId": 45403
+  },
+  "89285551": {
+    "successRewardId": 45405
+  },
+  "89285553": {
+    "successRewardId": 45404
+  },
+  "54939049": {
+    "POIDesc": "格拉斯博士在进行云朵羊的研究",
+    "infoTitle": "格拉斯博士的考验",
+    "infoText": "格拉斯博士给予学生的云朵羊粘羊挑战。"
+  },
+  "55706454": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·青石台",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "55706551": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·鲸落浅滩",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "90826884": {
+    "successRewardId": 45401
+  },
+  "90826905": {
+    "successRewardId": 45406
+  },
+  "55706721": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·废弃矿洞",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "86700074": {
+    "successRewardId": 15043
+  },
+  "56750089": {
+    "timeoutItemId": 410005,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：莲冠龙",
+    "rewardId": 44424,
+    "materials": 2133862821,
+    "periodRewardId": {
+      "3": 50042,
+      "4": 50043,
+      "6": 50045,
+      "10": 50049,
+      "7": 50046,
+      "8": 50047,
+      "9": 50048,
+      "5": 50044,
+      "0": 50040,
+      "1": 50040,
+      "2": 50041
+    },
+    "recommendPet": [
+      501,
+      601,
+      701
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44217,
+    "traceId": 8084,
+    "stageSortPriority": 4,
+    "stageTypeGroup": 1,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72532017
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1110.5300292969,
+        67.209999084473,
+        1033.25
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "莹冰龙家族的头目",
+    "successRewardId": 44217
+  },
+  "56755396": {
+    "timeoutItemId": 410008,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：晶壳蟹",
+    "infoTitleNot": "谜灵头目：未知",
+    "materials": 1789901223,
+    "periodRewardId": {
+      "3": 50072,
+      "4": 50073,
+      "6": 50075,
+      "10": 50079,
+      "7": 50076,
+      "8": 50077,
+      "9": 50078,
+      "5": 50074,
+      "0": 50070,
+      "1": 50070,
+      "2": 50071
+    },
+    "recommendPet": [
+      101,
+      801
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44220,
+    "traceId": 8087,
+    "stageSortPriority": 4,
+    "stageTypeGroup": 3,
+    "rewardId": 44427,
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1240.8499755859,
+        63.2906,
+        981.88000488281
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "花芽蟹家族的头目",
+    "successRewardId": 44220
+  },
+  "56907557": {
+    "cost": [
+      1009,
+      50
+    ],
+    "respawnTo": [
+      3000,
+      58447737
+    ],
+    "periodRewardId": {
+      "3": 50182,
+      "4": 50183,
+      "6": 50185,
+      "10": 50189,
+      "7": 50186,
+      "8": 50187,
+      "9": 50188,
+      "5": 50184,
+      "0": 50180,
+      "1": 50180,
+      "2": 50181
+    },
+    "recommendPet": [
+      301,
+      801
+    ],
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1
+  },
+  "56974895": {
+    "timeoutItemId": 410006,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：雷光貂",
+    "rewardId": 44425,
+    "materials": 1972888418,
+    "periodRewardId": {
+      "3": 50052,
+      "4": 50053,
+      "6": 50055,
+      "10": 50059,
+      "7": 50056,
+      "8": 50057,
+      "9": 50058,
+      "5": 50054,
+      "0": 50050,
+      "1": 50050,
+      "2": 50051
+    },
+    "recommendPet": [
+      701,
+      401
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44218,
+    "traceId": 8085,
+    "stageSortPriority": 8,
+    "stageTypeGroup": 1,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72534199
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -758.15997314453,
+        145.1306,
+        463.2200012207
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "闪电貂家族的头目",
+    "successRewardId": 44218
+  },
+  "58447372": {
+    "timeoutItemId": 410002,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：星魔师",
+    "rewardId": 44421,
+    "materials": 2003098947,
+    "periodRewardId": {
+      "3": 50012,
+      "4": 50013,
+      "6": 50015,
+      "10": 50019,
+      "7": 50016,
+      "8": 50017,
+      "9": 50018,
+      "5": 50014,
+      "0": 50010,
+      "1": 50010,
+      "2": 50011
+    },
+    "recommendPet": [
+      501,
+      901
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44214,
+    "traceId": 677,
+    "stageSortPriority": 2,
+    "stageTypeGroup": 1,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72533929
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1619.9599609375,
+        74.4186,
+        979
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "星露莉家族的头目",
+    "successRewardId": 44214
+  },
+  "58447729": {
+    "timeoutItemId": 410019,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "警告：仍待发现的首领级谜灵，极度危险",
+    "infoTitle": "谜灵首领：炎铠龙",
+    "infoTitleNot": "首领级谜灵：待发现",
+    "materials": 1164305530,
+    "periodRewardId": {
+      "3": 50182,
+      "4": 50183,
+      "6": 50185,
+      "10": 50189,
+      "7": 50186,
+      "8": 50187,
+      "9": 50188,
+      "5": 50184,
+      "0": 50180,
+      "1": 50180,
+      "2": 50181
+    },
+    "recommendPet": [
+      301,
+      801
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44229,
+    "stageBossTip": 1144752621,
+    "stageSortPriority": 2,
+    "stageTypeGroup": 4,
+    "traceId": 666,
+    "infoText": "龙卷峰的首领",
+    "respawnTo": [
+      3000,
+      58447737
+    ],
+    "cost": [
+      1009,
+      50
+    ],
+    "chestPosition": [
+      [
+        -155.66000366211,
+        186.7799987793,
+        1635.1199951172
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "chestId": 11071,
+    "successRewardId": 44229
+  },
+  "58471584": {
+    "timeoutItemId": 410011,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：簇晶脊龙",
+    "rewardId": 44429,
+    "materials": 1606321552,
+    "periodRewardId": {
+      "3": 50102,
+      "4": 50103,
+      "6": 50105,
+      "10": 50109,
+      "7": 50106,
+      "8": 50107,
+      "9": 50108,
+      "5": 50104,
+      "0": 50100,
+      "1": 50100,
+      "2": 50101
+    },
+    "recommendPet": [
+      301,
+      201
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44223,
+    "traceId": 8089,
+    "stageSortPriority": 5,
+    "stageTypeGroup": 3,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72531822
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1221.1899414062,
+        33.630001068115,
+        1145.5899658203
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "哥斯拉家族的头目",
+    "successRewardId": 44223
+  },
+  "91136335": {
+    "timeoutItemId": 410010,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：霜锋狼",
+    "rewardId": 44439,
+    "materials": 2014027030,
+    "periodRewardId": {
+      "3": 50202,
+      "4": 50203,
+      "6": 50205,
+      "10": 50209,
+      "7": 50206,
+      "8": 50207,
+      "9": 50208,
+      "5": 50204,
+      "0": 50200,
+      "1": 50200,
+      "2": 50201
+    },
+    "recommendPet": [
+      101,
+      801
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44235,
+    "traceId": 8095,
+    "stageSortPriority": 5,
+    "stageTypeGroup": 1,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      91136815
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1425.4157714844,
+        28.702894210815,
+        1307.6977539062
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "霜锋狼家族的头目",
+    "successRewardId": 44235
+  },
+  "91066875": {
+    "showRewardId": 44219,
+    "rewardId": 44426,
+    "cost": [
+      1009,
+      30
+    ],
+    "respawnTo": [
+      3000,
+      72534290
+    ],
+    "periodRewardId": {
+      "3": 50062,
+      "4": 50063,
+      "6": 50065,
+      "10": 50069,
+      "7": 50066,
+      "8": 50067,
+      "9": 50068,
+      "5": 50064,
+      "0": 50060,
+      "1": 50060,
+      "2": 50061
+    },
+    "recommendPet": [
+      601,
+      901
+    ],
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1
+  },
+  "58811034": {
+    "infoTextNot": "团团白云下的草地上，生活着什么样的谜灵呢？",
+    "infoTitle": "栖息地-云朵羊",
+    "infoTitleNot": "这是什么？",
+    "infoText": "团团白云下的草地上，生活着无忧无虑的云朵羊"
+  },
+  "58458838": {
+    "timeoutItemId": 410007,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：蓬蓬羊",
+    "rewardId": 44426,
+    "materials": 1779713714,
+    "periodRewardId": {
+      "3": 50062,
+      "4": 50063,
+      "6": 50065,
+      "10": 50069,
+      "7": 50066,
+      "8": 50067,
+      "9": 50068,
+      "5": 50064,
+      "0": 50060,
+      "1": 50060,
+      "2": 50061
+    },
+    "recommendPet": [
+      601,
+      901
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44219,
+    "traceId": 8086,
+    "stageSortPriority": 1,
+    "stageTypeGroup": 1,
+    "respawnTo": [
+      3000,
+      72534290
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1009.1699829102,
+        88.13,
+        759
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "云朵羊家族的头目",
+    "infoTitleNot": "谜灵头目：未知"
+  },
+  "74114735": {
+    "timeoutItemId": 410018,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "警告：仍待发现的首领级谜灵，极度危险",
+    "infoTitle": "谜灵首领：埋埋",
+    "infoTitleNot": "首领级谜灵：待发现",
+    "materials": 1179605523,
+    "periodRewardId": {
+      "3": 50172,
+      "4": 50173,
+      "6": 50175,
+      "10": 50179,
+      "7": 50176,
+      "8": 50177,
+      "9": 50178,
+      "5": 50174,
+      "0": 50170,
+      "1": 50170,
+      "2": 50171
+    },
+    "recommendPet": [
+      101,
+      501,
+      401
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44228,
+    "stageBossTip": 1850051936,
+    "stageSortPriority": 1,
+    "stageTypeGroup": 2,
+    "traceId": 8093,
+    "infoText": "迷雾森林的首领",
+    "respawnTo": [
+      3000,
+      72534046
+    ],
+    "cost": [
+      1009,
+      50
+    ],
+    "chestPosition": [
+      [
+        -921.03997802734,
+        102.3439,
+        1221.0600585938
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "chestId": 11069,
+    "successRewardId": 44228
+  },
+  "90427810": {
+    "timeoutItemId": 410017,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：岩球郎",
+    "rewardId": 44437,
+    "materials": 1626667541,
+    "periodRewardId": {
+      "3": 50082,
+      "4": 50083,
+      "6": 50085,
+      "10": 50089,
+      "7": 50086,
+      "8": 50087,
+      "9": 50088,
+      "5": 50084,
+      "0": 50080,
+      "1": 50080,
+      "2": 50081
+    },
+    "recommendPet": [
+      301,
+      201
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44233,
+    "traceId": 830,
+    "stageSortPriority": 7,
+    "stageTypeGroup": 1,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      90830837
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1021.667,
+        72.80717,
+        1790.483
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "滚滚郎家族的头目",
+    "successRewardId": 44233
+  },
+  "59320976": {
+    "cratesInfoFromTarget": 200301,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "59324184": {
+    "cratesInfoFromTarget": 42001,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "90352692": {
+    "timeoutItemId": 410016,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：暴睡熊",
+    "rewardId": 44438,
+    "materials": 1150365945,
+    "periodRewardId": {
+      "3": 50162,
+      "4": 50163,
+      "6": 50165,
+      "10": 50169,
+      "7": 50166,
+      "8": 50167,
+      "9": 50168,
+      "5": 50164,
+      "0": 50160,
+      "1": 50160,
+      "2": 50161
+    },
+    "recommendPet": [
+      301,
+      201
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44234,
+    "traceId": 831,
+    "stageSortPriority": 3,
+    "stageTypeGroup": 3,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      90843453
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        54.06,
+        150.93,
+        1115.92
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "暴睡熊家族的头目",
+    "successRewardId": 44234
+  },
+  "59492916": {
+    "cratesInfoFromTarget": 200501,
+    "helpID": 504,
+    "playerNum": 2
+  },
+  "59496781": {
+    "cratesInfoFromTarget": 200401,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "59498329": {
+    "cratesInfoFromTarget": 41301,
+    "helpID": 504,
+    "rewardDisplay": 40012,
+    "rewardDisplayDIsappear": 1,
+    "rewardDisplayName": "TREASURE_REWARD_TOTAL",
+    "playerNum": 1
+  },
+  "59501511": {
+    "cratesInfoFromTarget": 200801,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "59502374": {
+    "cratesInfoFromTarget": 200701,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "59502936": {
+    "cratesInfoFromTarget": 200201,
+    "helpID": 504,
+    "playerNum": 2
+  },
+  "59504240": {
+    "cratesInfoFromTarget": 201101,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "59504773": {
+    "cratesInfoFromTarget": 200601,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "60013062": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·绿树林荫",
+    "infoTitleNot": "辉耀印记·绿树林荫",
+    "infoText": "绿树下，凉风吹过，隐约看见大树上有某种神秘的花纹"
+  },
+  "89285547": {
+    "successRewardId": 45402
+  },
+  "72393141": {
+    "cost": [
+      1009,
+      50
+    ],
+    "respawnTo": [
+      3000,
+      72534053
+    ],
+    "periodRewardId": {
+      "3": 50192,
+      "4": 50193,
+      "6": 50195,
+      "10": 50199,
+      "7": 50196,
+      "8": 50197,
+      "9": 50198,
+      "5": 50194,
+      "0": 50190,
+      "1": 50190,
+      "2": 50191
+    },
+    "recommendPet": [
+      601,
+      201,
+      701
+    ],
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1
+  },
+  "61144380": {
+    "timeoutItemId": 410003,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：胖胖獭",
+    "rewardId": 44422,
+    "materials": 1673568236,
+    "periodRewardId": {
+      "3": 50022,
+      "4": 50023,
+      "6": 50025,
+      "10": 50029,
+      "7": 50026,
+      "8": 50027,
+      "9": 50028,
+      "5": 50024,
+      "0": 50020,
+      "1": 50020,
+      "2": 50021
+    },
+    "recommendPet": [
+      601,
+      201,
+      701
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44215,
+    "traceId": 8082,
+    "stageSortPriority": 6,
+    "stageTypeGroup": 1,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72534213
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1584.3399658203,
+        24.22633,
+        1643.1500244141
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "羞羞獭家族的头目",
+    "successRewardId": 44215
+  },
+  "72336523": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·潮花岸",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "62443474": {
+    "successRewardId": 44222,
+    "showRewardId": 44222,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：吊灯水母",
+    "cost": [
+      1009,
+      30
+    ],
+    "infoTitleNot": "谜灵头目：未知",
+    "periodRewardId": {
+      "3": 50122,
+      "4": 50123,
+      "6": 50125,
+      "10": 50129,
+      "7": 50126,
+      "8": 50127,
+      "9": 50128,
+      "5": 50124,
+      "0": 50120,
+      "1": 50120,
+      "2": 50121
+    },
+    "recommendPet": [
+      701,
+      401
+    ],
+    "infoText": "水母家族的头目",
+    "respawnTo": [
+      3000,
+      72038885
+    ]
+  },
+  "61144600": {
+    "timeoutItemId": 410001,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：大号鸥",
+    "rewardId": 44420,
+    "materials": 1350188962,
+    "periodRewardId": {
+      "3": 50132,
+      "4": 50133,
+      "6": 50135,
+      "10": 50139,
+      "7": 50136,
+      "8": 50137,
+      "9": 50138,
+      "5": 50134,
+      "0": 50130,
+      "1": 50130,
+      "2": 50131
+    },
+    "recommendPet": [
+      601,
+      901
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44213,
+    "traceId": 676,
+    "stageSortPriority": 2,
+    "stageTypeGroup": 2,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72533932
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -1139.0799560547,
+        24.479999542236,
+        575.26000976562
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "口哨鸥家族的头目",
+    "successRewardId": 44213
+  },
+  "59331068": {
+    "cratesInfoFromTarget": 42101,
+    "helpID": 504,
+    "playerNum": 1
+  },
+  "56662519": {
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "警告：仍待发现的首领级谜灵，极度危险",
+    "infoTitle": "谜灵首领：埋埋",
+    "cost": [
+      1009,
+      50
+    ],
+    "infoTitleNot": "首领级谜灵：待发现",
+    "periodRewardId": {
+      "3": 50172,
+      "4": 50173,
+      "6": 50175,
+      "10": 50179,
+      "7": 50176,
+      "8": 50177,
+      "9": 50178,
+      "5": 50174,
+      "0": 50170,
+      "1": 50170,
+      "2": 50171
+    },
+    "recommendPet": [
+      101,
+      501,
+      401
+    ],
+    "infoText": "迷雾森林的首领",
+    "respawnTo": [
+      3000,
+      72534046
+    ]
+  },
+  "61144909": {
+    "timeoutItemId": 410013,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：淬刃螳螂",
+    "rewardId": 44431,
+    "materials": 1266925285,
+    "periodRewardId": {
+      "3": 50092,
+      "4": 50093,
+      "6": 50095,
+      "10": 50099,
+      "7": 50096,
+      "8": 50097,
+      "9": 50098,
+      "5": 50094,
+      "0": 50090,
+      "1": 50090,
+      "2": 50091
+    },
+    "recommendPet": [
+      501,
+      901
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44225,
+    "traceId": 8091,
+    "stageSortPriority": 2,
+    "stageTypeGroup": 3,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      90830765
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -687.9702,
+        146.0721,
+        1328.916
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "幽爪镰家族的头目",
+    "successRewardId": 44225
+  },
+  "55706054": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·狼牙岭",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "55701582": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·鸥鸣湾",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "62108760": {
+    "timeoutItemId": 410014,
+    "LevelOrNot": 1,
+    "PropertyOrNot": 1,
+    "infoTextNot": "未知家族的头目",
+    "infoTitle": "谜灵头目：花舞兰",
+    "rewardId": 44432,
+    "materials": 1455344093,
+    "periodRewardId": {
+      "3": 50142,
+      "4": 50143,
+      "6": 50145,
+      "10": 50149,
+      "7": 50146,
+      "8": 50147,
+      "9": 50148,
+      "5": 50144,
+      "0": 50140,
+      "1": 50140,
+      "2": 50141
+    },
+    "recommendPet": [
+      101,
+      501,
+      401
+    ],
+    "refreshTime": 20,
+    "showRewardId": 44226,
+    "traceId": 8092,
+    "stageSortPriority": 1,
+    "stageTypeGroup": 3,
+    "infoTitleNot": "谜灵头目：未知",
+    "respawnTo": [
+      3000,
+      72534204
+    ],
+    "cost": [
+      1009,
+      30
+    ],
+    "chestPosition": [
+      [
+        -135.28999328613,
+        102.6369,
+        627.53997802734
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "infoText": "鸢尾花家族的头目",
+    "successRewardId": 44226
+  },
+  "55703240": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·迷雾深处",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "55705939": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·朝花乡",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "62185704": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·三色之森",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "55706612": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·玫瑰海岸",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "62186803": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·龙卷峰",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "59419446": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·云上草原",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "63544634": {
+    "infoTextNot": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+    "infoTitle": "地脉晶簇·星落森林",
+    "infoTitleNot": "地脉晶簇：待激活",
+    "successRewardId": 15009,
+    "infoText": "地脉能量涌现的位置，冒险家可以通过地脉晶簇快速旅行。"
+  },
+  "65197954": {
+    "POIDesc": "格拉斯博士在进行贝壳星的研究",
+    "infoTitle": "格拉斯博士的考验",
+    "infoText": "格拉斯博士给予学生的贝壳星冲刺挑战。"
+  },
+  "42115762": {
+    "infoTextNot": "来自远古的辉耀琥珀，隐藏着什么秘密呢？",
+    "infoTitle": "辉耀印记·水天一色",
+    "infoTitleNot": "辉耀印记·水天一色",
+    "infoText": "在这片风光旖旎的沙洲上，巨大的鲸尾之骨伫立于此，这里的宁静掩盖了未知的秘密，令谜灵们敬而远之。"
+  }
+}

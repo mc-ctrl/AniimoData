@@ -1,0 +1,98 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117404",
+  "NodeID": 1,
+  "UID": "9fc6e081-19b0-45e8-a20a-350f05dd609e",
+  "tags": [
+    3,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "14": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "2d5a129d-3931-4491-ae1f-c2a07f89a5bd",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 14
+    },
+    "10": {
+      "autoRecover": true,
+      "moveImpulse": 0,
+      "NodeID": 10,
+      "UID": "6105ee38-c3a6-4372-be07-87ee469d3c88",
+      "name": "setMoveImpulse"
+    },
+    "15": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "673fe5a6-4888-4831-892d-55c72a913c22",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 15
+    },
+    "8": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 8,
+      "UID": "73f2109a-21ac-48bc-8128-ca9469f87122",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunLoop"
+    },
+    "9": {
+      "UID": "b3bb35e8-c852-4494-8754-506c826f774e",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 9
+    },
+    "2": {
+      "duration": 0.6,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 2,
+      "UID": "c0075d6e-dfa9-4680-b4dd-b320c9aa41dc",
+      "name": "playRadialBlur"
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5c2c0241-2ac5-4771-b909-3b46d2c342e6",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "6": {
+      "name": "playHitEffect",
+      "UID": "2cc5cab9-5d10-4891-a554-d4794913f5b3",
+      "target": "OWNER",
+      "NodeID": 6,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "84948024-93b6-470d-a841-3ce044c4a236",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    15,
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    14,
+    2,
+    6,
+    9,
+    10,
+    11
+  ]
+}

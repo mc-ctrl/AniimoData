@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102305",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "angleDamageReduceData": {
+    "leftEndAngle": 105,
+    "leftStartAngle": 0,
+    "rightEndAngle": 105,
+    "reduceRate": 0.3,
+    "rightStartAngle": 0
+  }
+}

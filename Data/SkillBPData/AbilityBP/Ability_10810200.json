@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_10810200",
+  "NodeID": 1,
+  "UID": "b36e25be-448d-46bd-825a-5903c25227e9",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10810200001,
+      "name": "setCombatActionTimeline",
+      "UID": "76244b3f-4d69-4e7f-b4a7-8525c6d682de",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Charm"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Skill_Charm_Bullet_02",
+    "Eff_Parmon_10011_Skill_Charm_Creation",
+    "Eff_Buff_Charm",
+    "Eff_Parmon_10012_Skill_Charm_Bullet_01",
+    "Eff_Parmon_10011_Attack_Hit"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 5,
+  "shortDesc": "",
+  "abilityParamId": 11100010,
+  "name": ""
+}

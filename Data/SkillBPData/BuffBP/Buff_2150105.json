@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": 0.8,
+    "speed_ratio_sprint_v": 0.8,
+    "speed_ratio_walk_v": 0.8,
+    "speed_ratio_dash_v": 0.8
+  },
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2150105"
+}

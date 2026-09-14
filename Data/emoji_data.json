@@ -1,0 +1,76 @@
+{
+  "Emoji_Avatar_Skill_Proud": {
+    "emojiTime": 5,
+    "interruptSameTagEmoji": 1,
+    "emojiRef": "Proud"
+  },
+  "Emoji_Avatar_Skill_Strong": {
+    "emojiTime": 5,
+    "interruptSameTagEmoji": 1,
+    "emojiRef": "Strong"
+  },
+  "Emoji_Test_Angry": {
+    "emojiTime": 2.5,
+    "emojiRef": "Angry",
+    "emojiTag": "Avatar_Skill"
+  },
+  "Emoji_Test_Doubt": {
+    "emojiTime": 2.5,
+    "emojiRef": "Doubt",
+    "emojiTag": "Avatar_Skill"
+  },
+  "Emoji_Test_Doubt_Interrupt": {
+    "emojiCd": 2,
+    "emojiRef": "Doubt",
+    "emojiTag": "Avatar_Skill",
+    "emojiTime": 2.5,
+    "interruptSameTagEmoji": 1
+  },
+  "Emoji_Test_Eat": {
+    "emojiCd": 2,
+    "emojiRef": "Eat",
+    "emojiTag": "Avatar_Skill",
+    "emojiTime": 2.5,
+    "interruptSameTagEmoji": 1
+  },
+  "Emoji_Test_Happy": {
+    "emojiTime": 2.5,
+    "emojiRef": "Happy",
+    "emojiTag": "Avatar_Skill"
+  },
+  "Gohome": {},
+  "Halo": {},
+  "Heartbreak": {},
+  "Hunger": {},
+  "Kiss": {},
+  "Laugh": {},
+  "Proud": {},
+  "Rain": {},
+  "Relaxcool": {},
+  "Rest": {},
+  "Shame": {},
+  "Shy": {},
+  "Sick": {},
+  "Sign": {},
+  "Stroll": {},
+  "Strong": {},
+  "Surprise": {},
+  "Thirsty": {},
+  "Travel": {},
+  "Work": {},
+  "Happy": {},
+  "Think": {},
+  "Alert": {},
+  "Angry": {},
+  "Doubt": {},
+  "Eat": {},
+  "Sleep": {},
+  "Chat": {},
+  "Cry": {},
+  "Drink": {},
+  "Emoji_Avatar_Skill_Happy": {
+    "emojiTime": 2.5,
+    "emojiRef": "Happy",
+    "emojiTag": "Avatar_Skill"
+  }
+}

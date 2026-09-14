@@ -1,0 +1,144 @@
+{
+  "IntoWater": {
+    "Small": {
+      "Strong": {
+        "effectRes": "Eff_Common_WaterSplash_Fast_Small",
+        "rippleIntensity": 30,
+        "rippleIntensityInRiver": 80,
+        "sfxRes": "SFX_3C_IntoWater_Splash_Large_Light",
+        "speedRange": [
+          15,
+          999
+        ]
+      },
+      "Medium": {
+        "effectRes": "Eff_Common_WaterSplash_Medium_Small",
+        "rippleIntensity": 10,
+        "rippleIntensityInRiver": 40,
+        "sfxRes": "SFX_3C_IntoWater_Splash_Medium_Light",
+        "speedRange": [
+          8,
+          15
+        ]
+      },
+      "Weak": {
+        "effectRes": "Eff_Common_WaterSplash_Slow_Small",
+        "rippleIntensity": 2,
+        "rippleIntensityInRiver": 5,
+        "sfxRes": "SFX_3C_IntoWater_Splash_Small_Light",
+        "speedRange": [
+          2.5,
+          8
+        ]
+      }
+    },
+    "Large": {
+      "Strong": {
+        "effectRes": "Eff_Common_WaterSplash_Fast_Large",
+        "rippleIntensity": 40,
+        "rippleIntensityInRiver": 95,
+        "sfxRes": "SFX_3C_IntoWater_Splash_Large_Heavy",
+        "speedRange": [
+          15,
+          999
+        ]
+      },
+      "Medium": {
+        "effectRes": "Eff_Common_WaterSplash_Medium_Large",
+        "rippleIntensity": 12,
+        "rippleIntensityInRiver": 50,
+        "sfxRes": "SFX_3C_IntoWater_Splash_Medium_Heavy",
+        "speedRange": [
+          8,
+          15
+        ]
+      },
+      "Weak": {
+        "effectRes": "Eff_Common_WaterSplash_Slow_Large",
+        "rippleIntensity": 3,
+        "rippleIntensityInRiver": 8,
+        "sfxRes": "SFX_3C_IntoWater_Splash_Small_Heavy",
+        "speedRange": [
+          2.5,
+          8
+        ]
+      }
+    }
+  },
+  "OutOfWater": {
+    "Small": {
+      "Strong": {
+        "effectRes": "Eff_Common_WaterSplashOut_Fast_Small",
+        "rippleIntensity": 20,
+        "rippleIntensityInRiver": 80,
+        "sfxRes": "SFX_3C_OutOfWater_Splash_Medium",
+        "speedRange": [
+          15,
+          999
+        ]
+      },
+      "Medium": {
+        "effectRes": "Eff_Common_WaterSplashOut_Medium_Small",
+        "rippleIntensity": 8,
+        "rippleIntensityInRiver": 40,
+        "sfxRes": "SFX_3C_OutOfWater_Splash_Small",
+        "speedRange": [
+          8,
+          15
+        ]
+      },
+      "Weak": {
+        "effectRes": "Eff_Common_WaterSplashOut_Slow_Small",
+        "rippleIntensity": 2,
+        "rippleIntensityInRiver": 5,
+        "sfxRes": "SFX_3C_OutOfWater_Splash_Small",
+        "speedRange": [
+          2.5,
+          8
+        ]
+      }
+    },
+    "Large": {
+      "Week": {
+        "effectRes": "Eff_Common_WaterSplashOut_Slow_Large",
+        "rippleIntensity": 3,
+        "rippleIntensityInRiver": 8,
+        "sfxRes": "SFX_3C_OutOfWater_Splash_Small",
+        "speedRange": [
+          2.5,
+          8
+        ]
+      },
+      "Strong": {
+        "effectRes": "Eff_Common_WaterSplashOut_Fast_Large",
+        "rippleIntensity": 31,
+        "rippleIntensityInRiver": 95,
+        "sfxRes": "SFX_3C_OutOfWater_Splash_Large",
+        "speedRange": [
+          15,
+          999
+        ]
+      },
+      "Medium": {
+        "effectRes": "Eff_Common_WaterSplashOut_Medium_Large",
+        "rippleIntensity": 10,
+        "rippleIntensityInRiver": 50,
+        "sfxRes": "SFX_3C_OutOfWater_Splash_Medium",
+        "speedRange": [
+          8,
+          15
+        ]
+      },
+      "Weak": {
+        "effectRes": "Eff_Common_WaterSplashOut_Slow_Large",
+        "rippleIntensity": 3,
+        "rippleIntensityInRiver": 8,
+        "sfxRes": "SFX_3C_OutOfWater_Splash_Small",
+        "speedRange": [
+          2.5,
+          8
+        ]
+      }
+    }
+  }
+}

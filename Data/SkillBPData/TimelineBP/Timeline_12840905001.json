@@ -1,0 +1,188 @@
+{
+  "nodeMap": {
+    "4": {
+      "action": {
+        "actionIds": [
+          21,
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.01,
+      "NodeID": 4,
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3"
+    },
+    "14": {
+      "UID": "803914b6-9d7b-40fb-8314-353cad0d2ce7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "cd80f15e-6ef6-4b62-bbbe-23a2fca94761",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "21": {
+      "UID": "3e7a3196-9b31-4080-b0f6-1fb6d463a34e",
+      "name": "stopBurrow",
+      "NodeID": 21
+    },
+    "25": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12840905,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "b05e9384-29ac-482a-9eca-d24b1e9c82b7",
+      "target": "TARGET",
+      "NodeID": 25,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_helgon_attack05",
+        "hitCameraShakeId": 10003,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 3002
+      }
+    },
+    "16": {
+      "UID": "f86a0968-7cd1-48a5-8b2b-20dfe201be94",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 25,
+      "NodeID": 27,
+      "UID": "59482ef4-b9e8-48a8-b9c8-1dddcb3a3bce",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        25
+      ]
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 28,
+      "UID": "8977f18c-6626-40b6-9fd7-fa192e1a96a5"
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "aebb4ef7-c22e-452c-9dfb-acb3df605cf1",
+      "isAbilityEndRemove": false,
+      "soundId": "Ani_Parmon_10161_Skill_BurrowSkill_CombatExit",
+      "NodeID": 31
+    },
+    "18": {
+      "UID": "3057404a-3f59-4b58-9534-42567c26bfeb",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 32,
+      "UID": "ebc49b8d-f214-4350-ab03-4ee2d47d3b31"
+    },
+    "12": {
+      "UID": "bda93d8c-ebc9-459d-80a6-1d322f8413f1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 12
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 20,
+      "UID": "6943ae87-2d8b-4661-a947-5fd06e58fef7"
+    },
+    "2": {
+      "buffId": 2116101,
+      "name": "removeBuff",
+      "UID": "27a1626f-c10d-4383-b4a3-bacc52e24a5f",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_12840905",
+  "NodeID": 6,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    12,
+    16,
+    20,
+    4,
+    32,
+    28
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

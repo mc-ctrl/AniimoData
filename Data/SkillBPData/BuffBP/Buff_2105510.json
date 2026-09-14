@@ -1,0 +1,166 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2105510",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "991d9e7b-5c0a-445b-a2af-26321afd5483",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "d43dd03e-1941-4b0d-a572-3d05a2b26a2a",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2105511,
+      "NodeID": 6,
+      "UID": "af7aa69b-01b1-450a-849b-203671563890",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "21": {
+      "overrideAbilityType": -9999,
+      "name": "setEntityOverrideDamageAbilityType",
+      "UID": "a3e524dc-bd0c-46a3-96a9-85a5c8f4525d",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "15": {
+      "buffId": 2105512,
+      "name": "hasBuff",
+      "UID": "6f880b06-6757-4137-8d1b-5f1b40582da7",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "2": {
+      "UID": "58ec7740-b139-4749-a443-4fe4cb652f5c",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 2
+    },
+    "16": {
+      "overrideAbilityType": 1,
+      "name": "setEntityOverrideDamageAbilityType",
+      "UID": "8307abf3-0ecc-43ea-9069-9fb07c299c96",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "913a9b1a-8806-427f-a31d-25181562735d",
+      "name": "doActionsByConditions",
+      "NodeID": 8,
+      "elseActionIds": [
+        6,
+        14
+      ]
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "7ba6e466-43a9-4433-8097-7f4e671a151e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21
+      ],
+      "NodeID": 17
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "4863dd41-8c05-47b2-9fc5-5687710adf4e",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "18": {
+      "key": "2105510",
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18,
+      "UID": "b5627271-64df-49ad-8f86-1fbe860291ee",
+      "name": "registerCacheValChange"
+    },
+    "14": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "9a669b37-f247-42c5-b4f9-83592f182c83",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "11": {
+      "name": "isInCombat",
+      "UID": "87dd2afc-bb73-4660-b373-6349e50bac05",
+      "target": "OWNER",
+      "NodeID": 11,
+      "not": false
+    },
+    "20": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "d7c18b82-5480-484b-beac-fba7618be970",
+      "NodeID": 20,
+      "lValue": {
+        "key": "2105510",
+        "name": "getCacheVal",
+        "UID": "e89aea40-f0f1-44d1-9244-200676a237f8",
+        "target": "OWNER",
+        "NodeID": 19
+      }
+    },
+    "12": {
+      "naturalDecayV": 0,
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 8,
+      "name": "registerPassiveEnergyInfo",
+      "UID": "bac8b97b-6cae-40f3-b290-bc742d19137f",
+      "superBoosted": true,
+      "uiOffsetXYZ": [
+        0,
+        1.5,
+        0
+      ],
+      "spEnergyMaxV": 8,
+      "spEnergyInitV": 0,
+      "NodeID": 12,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 0
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    12,
+    18
+  ]
+}

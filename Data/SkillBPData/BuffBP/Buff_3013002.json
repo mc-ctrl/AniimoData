@@ -1,0 +1,34 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_3013002",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "UID": "a8a76e5a-70ba-42d6-b851-25c3ac3467b1",
+      "target": "CURPET",
+      "NodeID": 5,
+      "calcInfoByLuaConfig": {
+        "id": 3013002,
+        "sp_cur": "param0",
+        "type": 1
+      }
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "87453ad5-4a1f-4e89-8ba1-9bf83de8e371",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

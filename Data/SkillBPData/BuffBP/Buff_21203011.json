@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21203011",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    4
+  ],
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "c025773f-ea97-444d-ba34-af280f03103a",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "4": {
+      "name": "calcResult",
+      "UID": "8ac036a2-9e46-4b18-9bc7-efa4b36690d8",
+      "target": "TARGET",
+      "NodeID": 4,
+      "calcInfoByLuaConfig": {
+        "id": 21203011,
+        "type": 1,
+        "instant_dmg_hp_max_p": "param0"
+      }
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 21203012,
+      "NodeID": 10,
+      "UID": "8ebd7c3b-594d-4562-bd65-18da0f5391ef",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9d736627-2c4a-4671-b03d-aee41b0b5c5c",
+      "effectId": "Eff_Buff_Leech",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "943acfad-6fe9-4449-b1f3-7bb2f39b66db",
+      "effectId": "Eff_Buff_Leech",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "onBuffDestroyIds": [
+    8,
+    10
+  ],
+  "onBuffStartIds": [
+    5,
+    7
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "duration": 1.5,
+  "BPName": "ability_902070221",
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 0,
+  "onProjectileTickIds": [
+    54
+  ],
+  "moveSpeed": 25,
+  "nodeMap": {
+    "54": {
+      "calcResultNodeId": 61,
+      "name": "actOnTargets",
+      "UID": "76ef6b9d-2def-454e-a0ff-8dcbb0f87266",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.9,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        61
+      ],
+      "impulseId": 2000,
+      "NodeID": 54
+    },
+    "61": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902070221,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      },
+      "UID": "97e1f93e-0e0f-463c-94c3-d7430b719cae",
+      "target": "TARGET",
+      "NodeID": 61,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 2000
+      }
+    }
+  },
+  "hasAttackDataInOnProjectileHit": false,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.2,
+  "sweepShape": 0,
+  "relation": 2,
+  "tickInterval": 0.2,
+  "calcResultNodeId": 61,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

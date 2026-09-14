@@ -1,0 +1,78 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11119",
+  "NodeID": 1,
+  "UID": "6e1b1382-3a03-4b2d-97c2-ab1266bae04b",
+  "tags": [
+    21
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "4f31d97f-247a-47a9-af9e-c720e0558a4a",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "name": "petProfileShowEmoji",
+      "UID": "d3f3752f-552e-4f32-bd9a-1b74eb63d0e2",
+      "target": "OWNER",
+      "NodeID": 4,
+      "emojiName": "Sleep"
+    },
+    "6": {
+      "buffId": 11115,
+      "name": "removeBuff",
+      "UID": "9c0fbead-8a6c-493f-a7fc-eed80d2b0766",
+      "target": "CASTER",
+      "NodeID": 6
+    },
+    "10": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "6ba28aa7-311b-43eb-b920-acb2b043afee",
+      "target": "OWNER",
+      "val": 4,
+      "NodeID": 10
+    },
+    "11": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "9a2aa2a6-9961-433d-95ad-84f595075fba",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 11
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "092be540-e990-41f3-83e7-15962067a3eb",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "2": {
+      "duration": 30,
+      "name": "playStartLoopEndAni",
+      "NodeID": 2,
+      "UID": "a0a99fcb-4029-4c03-a4ec-0a2f8c55b6bf",
+      "endAni": "Behav_SleepEnd",
+      "loopAni": "Behav_SleepLoop",
+      "startAni": "Behav_SleepLoop"
+    }
+  },
+  "onBuffDestroyIds": [
+    8,
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    4,
+    2,
+    7,
+    10
+  ]
+}

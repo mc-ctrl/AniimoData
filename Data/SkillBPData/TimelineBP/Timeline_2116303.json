@@ -1,0 +1,320 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2116303,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "58f1b45f-8aaa-474c-bc53-50e973a475f4",
+      "target": "TARGET",
+      "NodeID": 5,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 1000
+      }
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "cf9600c0-0fc9-42d6-a0c8-110ba64d3691",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.2,
+            180,
+            2.2,
+            0.6
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        5,
+        26,
+        24
+      ]
+    },
+    "31": {
+      "UID": "a40b2720-ba51-46dc-b4ca-1ec39216104a",
+      "name": "checkIsMoving",
+      "NodeID": 31
+    },
+    "9": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 9,
+      "UID": "cf1a9899-8c32-4be8-9140-32ff5b7785ee",
+      "onUpdate": {
+        "actionIds": [
+          7,
+          21,
+          17
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          7,
+          21,
+          17
+        ]
+      }
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2d85a9c1-0abf-4715-90aa-cb1e8e019c2b",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_Ice_End",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "21": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "aba3667d-008a-4862-b22f-db591525f015",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_Ice_H",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "e3117503-b1b0-4abb-a6e8-e3afe3a4b64a",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 20
+      },
+      "NodeID": 21
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "24cee0b0-cf9a-4c41-980b-79669b5e950d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice_Loop",
+      "NodeID": 35
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "11656c23-4c3e-450a-967a-a99101b6b437",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_Ice_S",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "24": {
+      "value": {
+        "calcId": 2116303,
+        "calcType": 4,
+        "paramName": "param1",
+        "NodeID": 23,
+        "UID": "9741c3aa-5149-4e54-9ae5-0fcfab270771",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "499488ac-1f70-4226-8935-e0fa0f40b4ec",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 24
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b940a3e1-4751-4b49-8328-8ead6094431b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice_attack",
+      "NodeID": 17
+    },
+    "33": {
+      "duration": 10,
+      "name": "moveByDirection",
+      "UID": "7a7db270-159c-4692-bcf5-271d8208043d",
+      "collisionTestDistance": 2,
+      "isLocalDir": true,
+      "needForceOnGround": true,
+      "trackTarget": {
+        "name": "getTargetOffsetPos",
+        "UID": "86c749b2-9545-4cf3-8839-26f9584fd404",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          30
+        ],
+        "NodeID": 36
+      },
+      "velocity": [
+        0,
+        0,
+        3
+      ],
+      "NodeID": 33
+    },
+    "15": {
+      "UID": "d0a56fad-8ef0-4b97-8e44-d4358bc54322",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13,
+          16,
+          19,
+          18
+        ]
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "name": "getTargetOffsetPos",
+      "UID": "0e29adbe-7a7b-4918-b363-c5b13a1e5d13",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 25
+    },
+    "26": {
+      "duration": 0.1,
+      "name": "moveByDirection",
+      "UID": "57e61e62-ece3-4d65-ae01-10807056864e",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "0e29adbe-7a7b-4918-b363-c5b13a1e5d13",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "NodeID": 25
+      },
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "collisionTestDistance": 2,
+      "NodeID": 26
+    },
+    "27": {
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "cbfe3be7-2572-41be-887a-3b76f40d63df",
+      "name": "doActionsByConditions",
+      "NodeID": 27,
+      "elseActionIds": [
+        26
+      ]
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "name": "registerMoveChangeEvent",
+      "UID": "f0fc8ca5-f53f-4145-bc8f-cb286131193a",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "30": {
+      "UID": "63fab4f6-7a70-4d0f-b747-4c5c2d990837",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          28,
+          35
+        ]
+      },
+      "NodeID": 30
+    },
+    "18": {
+      "name": "stopSoundStr",
+      "UID": "98698746-d26a-4dd4-b9e5-8452fd6b858f",
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice_Loop",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "23": {
+      "calcId": 2116303,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 23,
+      "UID": "9741c3aa-5149-4e54-9ae5-0fcfab270771",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e38aeeb5-498f-48d6-8da0-dca9393d55e2",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_Ani_Parmon_10161_Skill_MagicLeaf_loop",
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "6d31a39c-6362-4e1f-bea5-e2dd5dcad614",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "NodeID": 34
+    },
+    "36": {
+      "name": "getTargetOffsetPos",
+      "UID": "86c749b2-9545-4cf3-8839-26f9584fd404",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        30
+      ],
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2116303",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    34,
+    9,
+    30,
+    15
+  ],
+  "layer": "Base",
+  "length": 9
+}

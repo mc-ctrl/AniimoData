@@ -1,0 +1,124 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2128304",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "熔岩暴龙-疾行出生buff",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": [
+    "SPEEDBURSTLOOP"
+  ],
+  "nodeMap": {
+    "5": {
+      "duration": 1500,
+      "name": "addExtraCollisionTest",
+      "UID": "d62684e3-b115-40c4-9c8a-e4d22275a2e9",
+      "NodeID": 5,
+      "relation": 4,
+      "radius": 1.5,
+      "offset": [
+        0,
+        0.5,
+        1
+      ],
+      "actOnTargetActionIds": [
+        4
+      ],
+      "actOnTargetCd": 0.2,
+      "collidableActorTypes": [
+        10
+      ],
+      "impulseId": 13002,
+      "triggerInterval": 0.01
+    },
+    "4": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 13002
+      },
+      "UID": "9fb7f610-1ab6-42c2-9529-25169511133f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 4
+    },
+    "13": {
+      "UID": "3bfa45e5-4f75-49f7-92d2-51708f819e56",
+      "name": "removeExtraCollisionTest",
+      "NodeID": 13
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "3b9f0004-b943-4ace-8129-969de0a7ead9",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "1a5a30fd-646a-4379-a2a0-20cd6dad5e78",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "15": {
+      "UID": "561bfee9-e524-4668-8075-e6a77f371398",
+      "name": "isLeaveCharacterState",
+      "characterState": [
+        "SPEEDBURSTLOOP"
+      ],
+      "NodeID": 15
+    },
+    "8": {
+      "actionIds": [
+        6,
+        14
+      ],
+      "name": "registerCharacterStateChangeEvent",
+      "UID": "a12538dd-ba9d-4bf5-b120-b925c520e7d1",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "12": {
+      "UID": "87124240-eba7-49b4-9ca2-8797beae5698",
+      "name": "isEnterCharacterState",
+      "characterState": [
+        "SPEEDBURSTLOOP"
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": [
+    "SPEEDBURSTLOOP"
+  ],
+  "onBuffStartIds": [
+    8
+  ]
+}

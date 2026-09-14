@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21443011",
+  "calcInfoByLuaConfig": {
+    "id": 21443011,
+    "taken_dmg_inc_rate_v": "param1",
+    "type": 1
+  },
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "40877c92-73a4-4753-b102-cdf0d59c8786",
+      "effectId": "Eff_Parmon_10443_Skill_Sonar_Weakness_02",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e5d03959-865e-4f8f-9b89-f60da90fe7dc",
+      "effectId": "Eff_Parmon_10443_Skill_Sonar_Weakness_02",
+      "speed": 1,
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

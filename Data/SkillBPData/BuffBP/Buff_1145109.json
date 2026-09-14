@@ -1,0 +1,24 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145109",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    2
+  ],
+  "onBuffRefreshIds": [
+    2
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "key": "P_Parmon_10501_2Crystal",
+      "name": "applyMaterialEffect",
+      "NodeID": 2
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

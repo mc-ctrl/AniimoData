@@ -1,0 +1,6551 @@
+{
+  "104": {
+    "IOS": [
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ]
+    ],
+    "OpenHarmony": [
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ]
+    ],
+    "PS5Base": [
+      [
+        "Middle"
+      ],
+      [
+        "Middle"
+      ]
+    ],
+    "PS5Pro": [
+      [
+        "High"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "XSS": [
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ]
+    ],
+    "XSX": [
+      [
+        "Middle"
+      ],
+      [
+        "Middle"
+      ]
+    ],
+    "isShow": 0,
+    "key": "terrainQualitySetting",
+    "widgetParam": [
+      "High",
+      "Middle",
+      "Low",
+      "VeryLow"
+    ],
+    "valueType": "enum",
+    "name": 1956297924,
+    "Windows": [
+      [
+        "High"
+      ],
+      [
+        "High"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "Android": [
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ],
+      [
+        "Low"
+      ]
+    ]
+  },
+  "105": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "supportGrassWhiteList",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "99": {
+    "IOS": [
+      75,
+      75,
+      75
+    ],
+    "OpenHarmony": [
+      75,
+      75,
+      75
+    ],
+    "PS5Base": [
+      150,
+      150
+    ],
+    "PS5Pro": [
+      150,
+      150
+    ],
+    "XSS": [
+      150,
+      150
+    ],
+    "XSX": [
+      150,
+      150
+    ],
+    "isShow": 0,
+    "key": "mainLightShadowDistance",
+    "widgetParam": [
+      50,
+      200
+    ],
+    "valueType": "float",
+    "Windows": [
+      150,
+      150,
+      150
+    ],
+    "Android": [
+      75,
+      75,
+      75
+    ]
+  },
+  "6": {
+    "IOS": [
+      [
+        "MemoryBudgetLow"
+      ],
+      [
+        "MemoryBudgetLow"
+      ],
+      [
+        "MemoryBudgetMedium"
+      ],
+      [
+        "MemoryBudgetMedium"
+      ]
+    ],
+    "OpenHarmony": [
+      [
+        "MemoryBudgetLow"
+      ],
+      [
+        "MemoryBudgetLow"
+      ],
+      [
+        "MemoryBudgetMedium"
+      ],
+      [
+        "MemoryBudgetMedium"
+      ]
+    ],
+    "PS5Base": [
+      [
+        "MemoryBudgetMedium"
+      ],
+      [
+        "MemoryBudgetHigh"
+      ]
+    ],
+    "PS5Pro": [
+      [
+        "MemoryBudgetHigh"
+      ],
+      [
+        "MemoryBudgetHigh"
+      ]
+    ],
+    "XSS": [
+      [
+        "MemoryBudgetMedium"
+      ],
+      [
+        "MemoryBudgetHigh"
+      ]
+    ],
+    "XSX": [
+      [
+        "MemoryBudgetMedium"
+      ],
+      [
+        "MemoryBudgetHigh"
+      ]
+    ],
+    "isShow": 0,
+    "key": "xgiProbeMemoryBudget",
+    "widgetParam": [
+      "MemoryBudgetLow",
+      "MemoryBudgetMedium",
+      "MemoryBudgetHigh"
+    ],
+    "valueType": "enum",
+    "Windows": [
+      [
+        "MemoryBudgetMedium"
+      ],
+      [
+        "MemoryBudgetHigh"
+      ],
+      [
+        "MemoryBudgetHigh"
+      ],
+      [
+        "MemoryBudgetHigh"
+      ]
+    ],
+    "Android": [
+      [
+        "MemoryBudgetLow"
+      ],
+      [
+        "MemoryBudgetLow"
+      ],
+      [
+        "MemoryBudgetMedium"
+      ],
+      [
+        "MemoryBudgetMedium"
+      ]
+    ]
+  },
+  "7": {
+    "IOS": [
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ]
+    ],
+    "OpenHarmony": [
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ]
+    ],
+    "PS5Base": [
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL2"
+      ]
+    ],
+    "PS5Pro": [
+      [
+        "SphericalHarmonicsL2"
+      ],
+      [
+        "SphericalHarmonicsL2"
+      ]
+    ],
+    "XSS": [
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ]
+    ],
+    "XSX": [
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL2"
+      ]
+    ],
+    "isShow": 0,
+    "key": "xgiProbeSHBands",
+    "widgetParam": [
+      "SphericalHarmonicsL1",
+      "SphericalHarmonicsL2"
+    ],
+    "valueType": "enum",
+    "Windows": [
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL2"
+      ],
+      [
+        "SphericalHarmonicsL2"
+      ]
+    ],
+    "Android": [
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ],
+      [
+        "SphericalHarmonicsL1"
+      ]
+    ]
+  },
+  "8": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "xgiUseDeviceConfig",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1519790310,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "56": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportLightShaftBloom",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "57": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportFsrRCAS",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "58": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportSimpleDepthOfField",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "59": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportDiaphragmDepthOfField",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "61": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "supportSMAA",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "62": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportFXAA",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "63": {
+    "IOS": [
+      1,
+      2,
+      3
+    ],
+    "OpenHarmony": [
+      1,
+      2,
+      3
+    ],
+    "PS5Base": [
+      5,
+      5
+    ],
+    "PS5Pro": [
+      5,
+      5
+    ],
+    "XSS": [
+      3,
+      3
+    ],
+    "XSX": [
+      5,
+      5
+    ],
+    "isShow": 0,
+    "key": "bloomQuality",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "valueType": "int",
+    "Windows": [
+      3,
+      3,
+      5
+    ],
+    "Android": [
+      1,
+      2,
+      3
+    ]
+  },
+  "64": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "supportRayTracing",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "65": {
+    "IOS": [
+      2000,
+      2000,
+      2000
+    ],
+    "OpenHarmony": [
+      2000,
+      2000,
+      2000
+    ],
+    "PS5Base": [
+      2000,
+      2000
+    ],
+    "PS5Pro": [
+      2000,
+      2000
+    ],
+    "XSS": [
+      2000,
+      2000
+    ],
+    "XSX": [
+      2000,
+      2000
+    ],
+    "isShow": 0,
+    "key": "sceneCameraViewDistance",
+    "widgetParam": [
+      500,
+      2000
+    ],
+    "valueType": "float",
+    "Windows": [
+      2000,
+      2000,
+      2000
+    ],
+    "Android": [
+      2000,
+      2000,
+      2000
+    ]
+  },
+  "66": {
+    "IOS": [
+      12000,
+      12000,
+      12000
+    ],
+    "OpenHarmony": [
+      12000,
+      12000,
+      12000
+    ],
+    "PS5Base": [
+      12000,
+      12000
+    ],
+    "PS5Pro": [
+      12000,
+      12000
+    ],
+    "XSS": [
+      12000,
+      12000
+    ],
+    "XSX": [
+      12000,
+      12000
+    ],
+    "isShow": 0,
+    "key": "sceneCameraSkyItemViewDistance",
+    "widgetParam": [
+      10000,
+      12000
+    ],
+    "valueType": "float",
+    "Windows": [
+      12000,
+      12000,
+      12000
+    ],
+    "Android": [
+      12000,
+      12000,
+      12000
+    ]
+  },
+  "67": {
+    "IOS": [
+      1,
+      1,
+      1
+    ],
+    "OpenHarmony": [
+      1,
+      1,
+      1
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "sceneStaticLodBias",
+    "widgetParam": [
+      0,
+      2
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      1,
+      1,
+      1
+    ]
+  },
+  "15": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      true
+    ],
+    "PS5Pro": [
+      false,
+      true
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      true
+    ],
+    "isShow": 0,
+    "key": "xgiEnableBackfaceDiffuse",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "69": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportSSAO",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1167362496,
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "70": {
+    "IOS": [
+      2,
+      2,
+      2
+    ],
+    "OpenHarmony": [
+      2,
+      2,
+      2
+    ],
+    "PS5Base": [
+      1,
+      0
+    ],
+    "PS5Pro": [
+      0,
+      0
+    ],
+    "XSS": [
+      2,
+      1
+    ],
+    "XSX": [
+      1,
+      0
+    ],
+    "isShow": 1,
+    "key": "ssrQuality",
+    "showlogin": 1,
+    "widgetParam": [
+      2,
+      1,
+      0
+    ],
+    "platform": [
+      1,
+      4,
+      5
+    ],
+    "showType": 1,
+    "valueType": "int",
+    "widgetTxt": [
+      2,
+      3,
+      4
+    ],
+    "name": 1330421100,
+    "Windows": [
+      2,
+      1,
+      1,
+      0
+    ],
+    "Android": [
+      2,
+      2,
+      2
+    ]
+  },
+  "71": {
+    "IOS": [
+      3,
+      3,
+      2,
+      2
+    ],
+    "OpenHarmony": [
+      3,
+      3,
+      2,
+      2
+    ],
+    "PS5Base": [
+      1,
+      0
+    ],
+    "PS5Pro": [
+      0,
+      0
+    ],
+    "XSS": [
+      2,
+      1
+    ],
+    "XSX": [
+      1,
+      0
+    ],
+    "isShow": 1,
+    "key": "aoQuality",
+    "showlogin": 1,
+    "widgetParam": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "platform": [
+      1,
+      4,
+      5
+    ],
+    "showType": 1,
+    "valueType": "int",
+    "widgetTxt": [
+      14,
+      2,
+      3,
+      4
+    ],
+    "name": 1378925971,
+    "Windows": [
+      3,
+      1,
+      1,
+      0
+    ],
+    "Android": [
+      3,
+      3,
+      2,
+      2
+    ]
+  },
+  "72": {
+    "IOS": [
+      2,
+      2,
+      2
+    ],
+    "OpenHarmony": [
+      2,
+      2,
+      2
+    ],
+    "PS5Base": [
+      0,
+      0
+    ],
+    "PS5Pro": [
+      0,
+      0
+    ],
+    "XSS": [
+      0,
+      0
+    ],
+    "XSX": [
+      0,
+      0
+    ],
+    "isShow": 0,
+    "key": "refractionQuality",
+    "widgetParam": [
+      2,
+      1,
+      0
+    ],
+    "valueType": "int",
+    "Windows": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "Android": [
+      2,
+      2,
+      2
+    ]
+  },
+  "73": {
+    "IOS": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "OpenHarmony": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "PS5Base": [
+      1,
+      0
+    ],
+    "PS5Pro": [
+      0,
+      0
+    ],
+    "XSS": [
+      1,
+      0
+    ],
+    "XSX": [
+      1,
+      0
+    ],
+    "isShow": 0,
+    "key": "subsurfaceQuality",
+    "widgetParam": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "valueType": "int",
+    "Windows": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "Android": [
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "74": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "useBurleySSS",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "75": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "useSeparableSSS",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "76": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "subsurfaceHalfRes",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "77": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      true
+    ],
+    "PS5Pro": [
+      false,
+      true
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportSSGI",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "78": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportSSR",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "79": {
+    "IOS": [
+      false,
+      false,
+      true
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supprotSSPR",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      true
+    ]
+  },
+  "81": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportSSRefraction",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "82": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportMaterialDepth",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "83": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportVegetation",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1097069106,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "84": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportVegetationShadow",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "85": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      false,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "enableVegetationCrossFade",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "86": {
+    "IOS": [
+      0.3,
+      0.4,
+      0.6
+    ],
+    "OpenHarmony": [
+      0.3,
+      0.4,
+      0.6
+    ],
+    "PS5Base": [
+      0.8,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      0.6,
+      0.6
+    ],
+    "XSX": [
+      0.8,
+      1
+    ],
+    "isShow": 0,
+    "key": "vegetationDensityScale",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "float",
+    "Windows": [
+      0.6,
+      0.8,
+      1
+    ],
+    "Android": [
+      0.3,
+      0.4,
+      0.6
+    ]
+  },
+  "87": {
+    "IOS": [
+      0.067,
+      0.1,
+      0.25,
+      0.25
+    ],
+    "OpenHarmony": [
+      0.067,
+      0.1,
+      0.25,
+      0.25
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      0.6,
+      0.6
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "grassCullDistanceScale",
+    "widgetParam": [
+      0,
+      2
+    ],
+    "valueType": "float",
+    "Windows": [
+      0.5,
+      0.6,
+      1,
+      1
+    ],
+    "Android": [
+      0.067,
+      0.1,
+      0.25,
+      0.25
+    ]
+  },
+  "88": {
+    "IOS": [
+      0.1,
+      0.1,
+      0.1,
+      0.2
+    ],
+    "OpenHarmony": [
+      0.1,
+      0.1,
+      0.1,
+      0.2
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "treeCullDistanceScale",
+    "widgetParam": [
+      0,
+      2
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      0.1,
+      0.1,
+      0.1,
+      0.2
+    ]
+  },
+  "89": {
+    "IOS": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "OpenHarmony": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "impostorCullDistanceScale",
+    "widgetParam": [
+      0,
+      2
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "90": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportShadow",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1628726142,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "91": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportScreenSpaceShadow",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "92": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportPunctualShadow",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "93": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportHeightFieldShadow",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "94": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "supportPerObjectShadow",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "95": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportDynamicVegetationShadow",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "96": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "usePlatformMainLightShadowMapSize",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "97": {
+    "IOS": [
+      [
+        "_1024"
+      ],
+      [
+        "_1024"
+      ],
+      [
+        "_1024"
+      ]
+    ],
+    "OpenHarmony": [
+      [
+        "_1024"
+      ],
+      [
+        "_1024"
+      ],
+      [
+        "_1024"
+      ]
+    ],
+    "PS5Base": [
+      [
+        "_1024"
+      ],
+      [
+        "_2048"
+      ]
+    ],
+    "PS5Pro": [
+      [
+        "_2048"
+      ],
+      [
+        "_2048"
+      ]
+    ],
+    "XSS": [
+      [
+        "_1024"
+      ],
+      [
+        "_2048"
+      ]
+    ],
+    "XSX": [
+      [
+        "_1024"
+      ],
+      [
+        "_2048"
+      ]
+    ],
+    "isShow": 0,
+    "key": "mainLightShadowMapSize",
+    "widgetParam": [
+      "_512",
+      "_1024",
+      "_2048",
+      "_4096"
+    ],
+    "valueType": "enum",
+    "Windows": [
+      [
+        "_2048"
+      ],
+      [
+        "_2048"
+      ],
+      [
+        "_2048"
+      ]
+    ],
+    "Android": [
+      [
+        "_1024"
+      ],
+      [
+        "_1024"
+      ],
+      [
+        "_1024"
+      ]
+    ]
+  },
+  "98": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "usePlatformMainLightShadowDistance",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "106": {
+    "IOS": [
+      [
+        "Low"
+      ],
+      [
+        "Middle"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "OpenHarmony": [
+      [
+        "Low"
+      ],
+      [
+        "Middle"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "PS5Base": [
+      [
+        "Middle"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "PS5Pro": [
+      [
+        "Middle"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "XSS": [
+      [
+        "Low"
+      ],
+      [
+        "Middle"
+      ]
+    ],
+    "XSX": [
+      [
+        "Middle"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "isShow": 0,
+    "key": "vegetationQualitySetting",
+    "widgetParam": [
+      "High",
+      "Middle",
+      "Low"
+    ],
+    "valueType": "enum",
+    "Windows": [
+      [
+        "Low"
+      ],
+      [
+        "Middle"
+      ],
+      [
+        "High"
+      ]
+    ],
+    "Android": [
+      [
+        "Low"
+      ],
+      [
+        "Middle"
+      ],
+      [
+        "High"
+      ]
+    ]
+  },
+  "107": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportSkyAtmosphere",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1958613711,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "108": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportGlobalFogs",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "109": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportVolumetricFogs",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "110": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportVolumetricCloud",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "113": {
+    "IOS": [
+      0.3,
+      0.6,
+      1
+    ],
+    "OpenHarmony": [
+      0.3,
+      0.6,
+      1
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "xBatchFarLodBias",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      0.3,
+      0.6,
+      1
+    ]
+  },
+  "116": {
+    "IOS": [
+      1,
+      1,
+      1
+    ],
+    "OpenHarmony": [
+      1,
+      1,
+      1
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "objectSizeCullFactor",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      1,
+      1,
+      1
+    ]
+  },
+  "117": {
+    "IOS": [
+      600,
+      1200,
+      10000
+    ],
+    "OpenHarmony": [
+      600,
+      1200,
+      10000
+    ],
+    "PS5Base": [
+      10000,
+      10000
+    ],
+    "PS5Pro": [
+      10000,
+      10000
+    ],
+    "XSS": [
+      10000,
+      10000
+    ],
+    "XSX": [
+      10000,
+      10000
+    ],
+    "isShow": 0,
+    "key": "staticCullDistance",
+    "widgetParam": [
+      0,
+      10000
+    ],
+    "valueType": "float",
+    "Windows": [
+      10000,
+      10000,
+      10000
+    ],
+    "Android": [
+      600,
+      1200,
+      10000
+    ]
+  },
+  "122": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      true,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "RemoveOverheadPartsPlayer",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "115": {
+    "IOS": [
+      10,
+      20,
+      30
+    ],
+    "OpenHarmony": [
+      10,
+      20,
+      30
+    ],
+    "PS5Base": [
+      25,
+      50
+    ],
+    "PS5Pro": [
+      50,
+      50
+    ],
+    "XSS": [
+      20,
+      25
+    ],
+    "XSX": [
+      25,
+      50
+    ],
+    "isShow": 0,
+    "key": "castShadowDistance",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "valueType": "float",
+    "Windows": [
+      20,
+      25,
+      50
+    ],
+    "Android": [
+      10,
+      20,
+      30
+    ]
+  },
+  "118": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      true,
+      false
+    ],
+    "XSX": [
+      true,
+      false
+    ],
+    "isShow": 1,
+    "key": "supportXGIProbe",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "valueType": "bool",
+    "name": 2129043224,
+    "Windows": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "119": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      true,
+      false
+    ],
+    "XSX": [
+      true,
+      false
+    ],
+    "isShow": 0,
+    "key": "xgiProbeEnableShading",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "120": {
+    "IOS": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportBloom",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  "121": {
+    "IOS": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportDiaphragmDepthOfField",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  "127": {
+    "IOS": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "OpenHarmony": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "name": 1813989161,
+    "isShow": 1,
+    "key": "resolutionScale",
+    "widgetParam": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "widgetTxt": [
+      2,
+      3,
+      4,
+      25
+    ],
+    "order": 2,
+    "valueType": "int",
+    "Android": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "showType": 1
+  },
+  "128": {
+    "IOS": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "entityShadowOff",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1340683379,
+    "Windows": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  "129": {
+    "IOS": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "OpenHarmony": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "PS5Base": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "PS5Pro": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "XSS": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "XSX": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "isShow": 0,
+    "key": "entityShadowOffFromLOD",
+    "widgetParam": [
+      0,
+      1,
+      10,
+      100
+    ],
+    "valueType": "float",
+    "name": 1409064179,
+    "Windows": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "Android": [
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  "130": {
+    "IOS": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "OpenHarmony": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "PS5Base": [
+      2,
+      3
+    ],
+    "PS5Pro": [
+      2,
+      3
+    ],
+    "XSS": [
+      2,
+      3
+    ],
+    "XSX": [
+      2,
+      3
+    ],
+    "desc": 2118489982,
+    "isShow": 1,
+    "key": "mainLightShadowQuality",
+    "showlogin": 1,
+    "widgetParam": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "widgetTxt": [
+      14,
+      2,
+      3,
+      4
+    ],
+    "showType": 1,
+    "valueType": "int",
+    "name": 1410297818,
+    "Windows": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "Android": [
+      1,
+      1,
+      2,
+      3
+    ]
+  },
+  "131": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "desc": 1614157776,
+    "isShow": 1,
+    "key": "largeScreenMode",
+    "showlogin": 1,
+    "widgetParam": [
+      0,
+      1
+    ],
+    "platform": [
+      2,
+      3,
+      6
+    ],
+    "showType": 1,
+    "valueType": "bool",
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "name": 1737758643,
+    "Windows": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "132": {
+    "IOS": [
+      0.7,
+      1,
+      1,
+      1.5
+    ],
+    "OpenHarmony": [
+      0.7,
+      1,
+      1,
+      1.5
+    ],
+    "PS5Base": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "xRendererLodBias_Default",
+    "widgetParam": [
+      0.5,
+      1,
+      1.5,
+      2
+    ],
+    "valueType": "float",
+    "name": 1716953858,
+    "Windows": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      0.7,
+      1,
+      1,
+      1.5
+    ]
+  },
+  "133": {
+    "IOS": [
+      4,
+      4,
+      6,
+      8
+    ],
+    "OpenHarmony": [
+      4,
+      4,
+      6,
+      8
+    ],
+    "PS5Base": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "PS5Pro": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "XSS": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "XSX": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "isShow": 0,
+    "key": "maxFurCountForShow",
+    "widgetParam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      16,
+      32
+    ],
+    "valueType": "int",
+    "name": 1180085087,
+    "Windows": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "Android": [
+      4,
+      4,
+      6,
+      8
+    ]
+  },
+  "100": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportShadowCache",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "45": {
+    "IOS": [
+      1,
+      1,
+      1
+    ],
+    "OpenHarmony": [
+      1,
+      1,
+      1
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "screenResolutionScale",
+    "widgetParam": [
+      0.1,
+      1
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      1,
+      1,
+      1
+    ]
+  },
+  "46": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportPostProcess",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1759270578,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "47": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportCustomPostProcess",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "48": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportExposure",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "49": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportLocalExposure",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "50": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportWhiteBalance",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "111": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "enableXBatchCrossFade",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1686709621,
+    "Windows": [
+      false,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "52": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportTonemapping",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "53": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportLensFlare",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "60": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportTAA",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "31": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "supportDLSS",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "112": {
+    "IOS": [
+      0.3,
+      0.6,
+      1
+    ],
+    "OpenHarmony": [
+      0.3,
+      0.6,
+      1
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "xBatchDefaultLodBias",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      0.3,
+      0.6,
+      1
+    ]
+  },
+  "20": {
+    "IOS": [
+      128,
+      64,
+      64
+    ],
+    "OpenHarmony": [
+      128,
+      64,
+      64
+    ],
+    "PS5Base": [
+      64,
+      64
+    ],
+    "PS5Pro": [
+      64,
+      64
+    ],
+    "XSS": [
+      128,
+      64
+    ],
+    "XSX": [
+      64,
+      64
+    ],
+    "isShow": 0,
+    "key": "xgiTranslucencyVolumeGridPixelSize",
+    "widgetParam": [
+      8,
+      128
+    ],
+    "valueType": "int",
+    "Windows": [
+      128,
+      128,
+      128,
+      64
+    ],
+    "Android": [
+      128,
+      64,
+      64
+    ]
+  },
+  "21": {
+    "IOS": [
+      80,
+      80,
+      80
+    ],
+    "OpenHarmony": [
+      80,
+      80,
+      80
+    ],
+    "PS5Base": [
+      80,
+      80
+    ],
+    "PS5Pro": [
+      80,
+      80
+    ],
+    "XSS": [
+      80,
+      80
+    ],
+    "XSX": [
+      80,
+      80
+    ],
+    "isShow": 0,
+    "key": "xgiTranslucencyGridEndDistanceFromCamera",
+    "widgetParam": [
+      10,
+      1000
+    ],
+    "valueType": "float",
+    "Windows": [
+      40,
+      40,
+      60,
+      80
+    ],
+    "Android": [
+      80,
+      80,
+      80
+    ]
+  },
+  "22": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "xgiUseRadianceCache",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "23": {
+    "IOS": [
+      30,
+      50,
+      100,
+      100
+    ],
+    "OpenHarmony": [
+      30,
+      50,
+      100,
+      100
+    ],
+    "PS5Base": [
+      50,
+      100
+    ],
+    "PS5Pro": [
+      100,
+      100
+    ],
+    "XSS": [
+      30,
+      50
+    ],
+    "XSX": [
+      50,
+      100
+    ],
+    "isShow": 0,
+    "key": "xgiRadianceCacheBudget",
+    "widgetParam": [
+      10,
+      300
+    ],
+    "valueType": "int",
+    "Windows": [
+      30,
+      50,
+      100,
+      100
+    ],
+    "Android": [
+      30,
+      50,
+      100,
+      100
+    ]
+  },
+  "24": {
+    "IOS": [
+      2,
+      3,
+      4
+    ],
+    "OpenHarmony": [
+      2,
+      3,
+      4
+    ],
+    "PS5Base": [
+      3,
+      4
+    ],
+    "PS5Pro": [
+      3,
+      4
+    ],
+    "XSS": [
+      2,
+      3
+    ],
+    "XSX": [
+      3,
+      4
+    ],
+    "isShow": 0,
+    "key": "xgiTranslucencyGridDistributionZScale",
+    "widgetParam": [
+      1,
+      6
+    ],
+    "valueType": "float",
+    "Windows": [
+      2,
+      2,
+      3,
+      4
+    ],
+    "Android": [
+      2,
+      3,
+      4
+    ]
+  },
+  "25": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportDecal",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1370575557,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "26": {
+    "IOS": [
+      500,
+      500,
+      500
+    ],
+    "OpenHarmony": [
+      500,
+      500,
+      500
+    ],
+    "PS5Base": [
+      800,
+      1000
+    ],
+    "PS5Pro": [
+      800,
+      1000
+    ],
+    "XSS": [
+      500,
+      800
+    ],
+    "XSX": [
+      800,
+      1000
+    ],
+    "isShow": 0,
+    "key": "supportDecal_DrawInstance",
+    "widgetParam": [
+      500,
+      2000
+    ],
+    "valueType": "int",
+    "Windows": [
+      500,
+      800,
+      1000
+    ],
+    "Android": [
+      500,
+      500,
+      500
+    ]
+  },
+  "27": {
+    "IOS": [
+      2048,
+      2048,
+      2048
+    ],
+    "OpenHarmony": [
+      2048,
+      2048,
+      2048
+    ],
+    "PS5Base": [
+      4096,
+      4096
+    ],
+    "PS5Pro": [
+      4096,
+      4096
+    ],
+    "XSS": [
+      2048,
+      2048
+    ],
+    "XSX": [
+      4096,
+      4096
+    ],
+    "isShow": 0,
+    "key": "supportDecal_AtlasWidth",
+    "widgetParam": [
+      2048,
+      4096
+    ],
+    "valueType": "int",
+    "Windows": [
+      2048,
+      4096,
+      4096
+    ],
+    "Android": [
+      2048,
+      2048,
+      2048
+    ]
+  },
+  "28": {
+    "IOS": [
+      2048,
+      2048,
+      2048
+    ],
+    "OpenHarmony": [
+      2048,
+      2048,
+      2048
+    ],
+    "PS5Base": [
+      4096,
+      4096
+    ],
+    "PS5Pro": [
+      4096,
+      4096
+    ],
+    "XSS": [
+      2048,
+      2048
+    ],
+    "XSX": [
+      4096,
+      4096
+    ],
+    "isShow": 0,
+    "key": "supportDecal_AtlasHeight",
+    "widgetParam": [
+      2048,
+      4096
+    ],
+    "valueType": "int",
+    "Windows": [
+      2048,
+      4096,
+      4096
+    ],
+    "Android": [
+      2048,
+      2048,
+      2048
+    ]
+  },
+  "29": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "supportDecal_PerChannelMask",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "30": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportDrs",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1097854258,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "32": {
+    "IOS": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "OpenHarmony": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "PS5Base": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "PS5Pro": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "XSS": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "XSX": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "isShow": 1,
+    "key": "dlssModeInt",
+    "showlogin": 1,
+    "widgetParam": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "platform": [
+      1
+    ],
+    "order": 5,
+    "showType": 1,
+    "valueType": "int",
+    "widgetTxt": [
+      47,
+      48,
+      49,
+      50
+    ],
+    "name": 2105166138,
+    "Windows": [
+      4,
+      2,
+      2,
+      1
+    ],
+    "Android": [
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "33": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "affectMipBias",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "34": {
+    "IOS": [
+      50,
+      60,
+      75,
+      75
+    ],
+    "OpenHarmony": [
+      50,
+      60,
+      75,
+      75
+    ],
+    "PS5Base": [
+      41.666,
+      66.666
+    ],
+    "PS5Pro": [
+      66.666,
+      80
+    ],
+    "XSS": [
+      50,
+      71
+    ],
+    "XSX": [
+      50,
+      66.666
+    ],
+    "isShow": 0,
+    "key": "renderingResPercentage",
+    "widgetParam": [
+      50,
+      100
+    ],
+    "valueType": "float",
+    "Windows": [
+      50,
+      50,
+      58.88,
+      66.66
+    ],
+    "Android": [
+      50,
+      60,
+      75,
+      75
+    ]
+  },
+  "36": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportInteractionBurn",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "37": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportInteractionTrail",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "38": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportInteractionForce",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "39": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportInteractionHeight",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "40": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportInteractionFluid",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "41": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportPunctualLight",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 1499218789,
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "42": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportAreaLight",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "35": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportInteraction",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "name": 2099604568,
+    "Windows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "44": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportMotionVector",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "123": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      true,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "RemoveOverheadPartsOtherPlayer",
+    "widgetParam": [
+      0,
+      2
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "125": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      true,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "RemoveOverheadPartsUI",
+    "widgetParam": [
+      0,
+      4
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "126": {
+    "IOS": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "OpenHarmony": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "PS5Base": [
+      2,
+      2
+    ],
+    "PS5Pro": [
+      2,
+      2
+    ],
+    "XSS": [
+      2,
+      2
+    ],
+    "XSX": [
+      2,
+      2
+    ],
+    "isShow": 1,
+    "key": "animationQuality",
+    "valueType": "int",
+    "widgetParam": [
+      1,
+      2,
+      3
+    ],
+    "widgetTxt": [
+      2,
+      3,
+      4
+    ],
+    "showType": 1,
+    "name": 1268272275,
+    "Windows": [
+      2,
+      2,
+      2,
+      3
+    ],
+    "Android": [
+      1,
+      2,
+      2,
+      2
+    ]
+  },
+  "1": {
+    "name": 1983846130,
+    "desc": 2005265575,
+    "isShow": 1,
+    "key": "videoQuality",
+    "funcType": "videoQualityNew",
+    "widgetParam": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "widgetTxt": [
+      49,
+      2,
+      3,
+      4
+    ],
+    "order": 1,
+    "valueType": "int",
+    "showlogin": 1,
+    "showType": 1
+  },
+  "2": {
+    "IOS": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "OpenHarmony": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "PS5Base": [
+      3,
+      4
+    ],
+    "PS5Pro": [
+      3,
+      4
+    ],
+    "XSS": [
+      1,
+      2
+    ],
+    "XSX": [
+      3,
+      4
+    ],
+    "isShow": 1,
+    "key": "xgiConfigRecipeInt",
+    "showlogin": 1,
+    "widgetParam": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "platform": [
+      1,
+      4,
+      5
+    ],
+    "showType": 1,
+    "valueType": "int",
+    "widgetTxt": [
+      49,
+      2,
+      3,
+      4
+    ],
+    "name": 1723531306,
+    "Windows": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "Android": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "3": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      false,
+      true
+    ],
+    "XSX": [
+      false,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportXGI",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "101": {
+    "IOS": [
+      10,
+      10,
+      10
+    ],
+    "OpenHarmony": [
+      10,
+      10,
+      10
+    ],
+    "PS5Base": [
+      2,
+      2
+    ],
+    "PS5Pro": [
+      2,
+      2
+    ],
+    "XSS": [
+      2,
+      2
+    ],
+    "XSX": [
+      2,
+      2
+    ],
+    "isShow": 0,
+    "key": "shadowCacheMissingDistance",
+    "widgetParam": [
+      1,
+      50
+    ],
+    "valueType": "float",
+    "Windows": [
+      2,
+      2,
+      2
+    ],
+    "Android": [
+      10,
+      10,
+      10
+    ]
+  },
+  "124": {
+    "IOS": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      false,
+      false
+    ],
+    "PS5Pro": [
+      false,
+      false
+    ],
+    "XSS": [
+      true,
+      false
+    ],
+    "XSX": [
+      false,
+      false
+    ],
+    "isShow": 0,
+    "key": "RemoveOverheadPartsPuppet",
+    "widgetParam": [
+      0,
+      3
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "Android": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "55": {
+    "IOS": [
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportLightShaftOcclusion",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false
+    ]
+  },
+  "51": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportColorGrading",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  },
+  "43": {
+    "IOS": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ],
+    "OpenHarmony": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ],
+    "PS5Base": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ],
+    "PS5Pro": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ],
+    "XSS": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ],
+    "XSX": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ],
+    "isShow": 0,
+    "key": "msaaSampleCount",
+    "widgetParam": [
+      "None",
+      "MSAA2x",
+      "MSAA4x",
+      "MSAA8x"
+    ],
+    "valueType": "enum",
+    "name": 1618309764,
+    "Windows": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ],
+    "Android": [
+      [
+        "None"
+      ],
+      [
+        "None"
+      ],
+      [
+        "None"
+      ]
+    ]
+  },
+  "12": {
+    "IOS": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ],
+    "OpenHarmony": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ],
+    "PS5Base": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ],
+    "PS5Pro": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ],
+    "XSS": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ],
+    "XSX": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ],
+    "isShow": 0,
+    "key": "xgiScreenProbeTraceType",
+    "widgetParam": [
+      "None",
+      "Screen",
+      "MeshDF",
+      "VoxelOctree",
+      "Voxels",
+      "LocalSkyProbe",
+      "HardWareRayTracing",
+      "SkyCubemap"
+    ],
+    "valueType": "enum",
+    "Windows": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ],
+    "Android": [
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ],
+      [
+        "Screen",
+        "Voxels",
+        "VoxelOctree"
+      ]
+    ]
+  },
+  "13": {
+    "IOS": [
+      64,
+      64,
+      64,
+      64
+    ],
+    "OpenHarmony": [
+      64,
+      64,
+      64,
+      64
+    ],
+    "PS5Base": [
+      16,
+      32
+    ],
+    "PS5Pro": [
+      16,
+      32
+    ],
+    "XSS": [
+      16,
+      16
+    ],
+    "XSX": [
+      16,
+      32
+    ],
+    "isShow": 0,
+    "key": "xgiScreenProbeTraceVoxelMaxTraceStep",
+    "widgetParam": [
+      8,
+      64
+    ],
+    "valueType": "int",
+    "Windows": [
+      8,
+      16,
+      24,
+      32
+    ],
+    "Android": [
+      64,
+      64,
+      64,
+      64
+    ]
+  },
+  "9": {
+    "IOS": [
+      16,
+      16,
+      16
+    ],
+    "OpenHarmony": [
+      16,
+      16,
+      16
+    ],
+    "PS5Base": [
+      32,
+      16
+    ],
+    "PS5Pro": [
+      32,
+      16
+    ],
+    "XSS": [
+      32,
+      32
+    ],
+    "XSX": [
+      32,
+      16
+    ],
+    "isShow": 0,
+    "key": "xgiScreenProbeDownSampleFactor",
+    "widgetParam": [
+      8,
+      64
+    ],
+    "valueType": "int",
+    "Windows": [
+      32,
+      32,
+      32,
+      16
+    ],
+    "Android": [
+      16,
+      16,
+      16
+    ]
+  },
+  "10": {
+    "IOS": [
+      16,
+      16,
+      4
+    ],
+    "OpenHarmony": [
+      16,
+      16,
+      4
+    ],
+    "PS5Base": [
+      16,
+      4
+    ],
+    "PS5Pro": [
+      16,
+      4
+    ],
+    "XSS": [
+      16,
+      16
+    ],
+    "XSX": [
+      16,
+      4
+    ],
+    "isShow": 0,
+    "key": "xgiAdaptiveProbeMinDownSampleFactor",
+    "widgetParam": [
+      4,
+      64
+    ],
+    "valueType": "int",
+    "Windows": [
+      16,
+      16,
+      8,
+      4
+    ],
+    "Android": [
+      16,
+      16,
+      4
+    ]
+  },
+  "11": {
+    "IOS": [
+      8,
+      8,
+      8
+    ],
+    "OpenHarmony": [
+      8,
+      8,
+      8
+    ],
+    "PS5Base": [
+      8,
+      8
+    ],
+    "PS5Pro": [
+      8,
+      8
+    ],
+    "XSS": [
+      8,
+      8
+    ],
+    "XSX": [
+      8,
+      8
+    ],
+    "isShow": 0,
+    "key": "xgiScreenProbeTraceOctahedronResolution",
+    "widgetParam": [
+      1,
+      8
+    ],
+    "valueType": "int",
+    "Windows": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "Android": [
+      8,
+      8,
+      8
+    ]
+  },
+  "14": {
+    "IOS": [
+      1,
+      1,
+      1
+    ],
+    "OpenHarmony": [
+      1,
+      1,
+      1
+    ],
+    "PS5Base": [
+      5,
+      2
+    ],
+    "PS5Pro": [
+      5,
+      2
+    ],
+    "XSS": [
+      10,
+      5
+    ],
+    "XSX": [
+      5,
+      2
+    ],
+    "isShow": 0,
+    "key": "xgiScreenProbeTraceVoxelStepFactor",
+    "widgetParam": [
+      1,
+      10
+    ],
+    "valueType": "float",
+    "Windows": [
+      10,
+      5,
+      4,
+      2
+    ],
+    "Android": [
+      1,
+      1,
+      1
+    ]
+  },
+  "68": {
+    "IOS": [
+      0,
+      0,
+      0
+    ],
+    "OpenHarmony": [
+      0,
+      0,
+      0
+    ],
+    "PS5Base": [
+      0,
+      0
+    ],
+    "PS5Pro": [
+      0,
+      0
+    ],
+    "XSS": [
+      0,
+      0
+    ],
+    "XSX": [
+      0,
+      0
+    ],
+    "isShow": 0,
+    "key": "sceneStaticMaximumLODLevel",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "int",
+    "Windows": [
+      0,
+      0,
+      0
+    ],
+    "Android": [
+      0,
+      0,
+      0
+    ]
+  },
+  "114": {
+    "IOS": [
+      0.3,
+      0.6,
+      1
+    ],
+    "OpenHarmony": [
+      0.3,
+      0.6,
+      1
+    ],
+    "PS5Base": [
+      1,
+      1
+    ],
+    "PS5Pro": [
+      1,
+      1
+    ],
+    "XSS": [
+      1,
+      1
+    ],
+    "XSX": [
+      1,
+      1
+    ],
+    "isShow": 0,
+    "key": "xBatchPropLodBias",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "valueType": "float",
+    "Windows": [
+      1,
+      1,
+      1
+    ],
+    "Android": [
+      0.3,
+      0.6,
+      1
+    ]
+  },
+  "19": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "xgiEnableTranslucency",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "18": {
+    "IOS": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "OpenHarmony": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "PS5Base": [
+      0.02,
+      0.02
+    ],
+    "PS5Pro": [
+      0.02,
+      0.02
+    ],
+    "XSS": [
+      0.02,
+      0.02
+    ],
+    "XSX": [
+      0.02,
+      0.02
+    ],
+    "isShow": 0,
+    "key": "xgiScreenProbeHistoryDistanceThreshold",
+    "widgetParam": [
+      0.001,
+      1
+    ],
+    "valueType": "float",
+    "Windows": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "Android": [
+      0.02,
+      0.02,
+      0.02
+    ]
+  },
+  "17": {
+    "IOS": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "OpenHarmony": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "PS5Base": [
+      20,
+      20
+    ],
+    "PS5Pro": [
+      20,
+      20
+    ],
+    "XSS": [
+      20,
+      20
+    ],
+    "XSX": [
+      20,
+      20
+    ],
+    "isShow": 0,
+    "key": "xgiScreenProbeReprojectionMaxFramesAccumulated",
+    "widgetParam": [
+      10,
+      50
+    ],
+    "valueType": "int",
+    "Windows": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "Android": [
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "16": {
+    "IOS": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "OpenHarmony": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "PS5Base": [
+      false,
+      true
+    ],
+    "PS5Pro": [
+      false,
+      true
+    ],
+    "XSS": [
+      false,
+      false
+    ],
+    "XSX": [
+      false,
+      true
+    ],
+    "isShow": 0,
+    "key": "xgiEnableRoughSpecularIndirect",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "Android": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "102": {
+    "IOS": [
+      0,
+      0,
+      0
+    ],
+    "OpenHarmony": [
+      0,
+      0,
+      0
+    ],
+    "PS5Base": [
+      0,
+      0
+    ],
+    "PS5Pro": [
+      0,
+      0
+    ],
+    "XSS": [
+      0,
+      0
+    ],
+    "XSX": [
+      0,
+      0
+    ],
+    "isShow": 0,
+    "key": "shadowCacheCascadeIndexBegin",
+    "widgetParam": [
+      0,
+      3
+    ],
+    "valueType": "int",
+    "Windows": [
+      0,
+      0,
+      0
+    ],
+    "Android": [
+      0,
+      0,
+      0
+    ]
+  },
+  "103": {
+    "IOS": [
+      0,
+      0,
+      1
+    ],
+    "OpenHarmony": [
+      0,
+      0,
+      1
+    ],
+    "PS5Base": [
+      2,
+      3
+    ],
+    "PS5Pro": [
+      3,
+      3
+    ],
+    "XSS": [
+      0,
+      1
+    ],
+    "XSX": [
+      2,
+      3
+    ],
+    "isShow": 0,
+    "key": "ssdoQuality",
+    "widgetParam": [
+      0,
+      3
+    ],
+    "valueType": "int",
+    "Windows": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Android": [
+      0,
+      0,
+      1
+    ]
+  },
+  "80": {
+    "IOS": [
+      true,
+      true,
+      true
+    ],
+    "OpenHarmony": [
+      true,
+      true,
+      true
+    ],
+    "PS5Base": [
+      true,
+      true
+    ],
+    "PS5Pro": [
+      true,
+      true
+    ],
+    "XSS": [
+      true,
+      true
+    ],
+    "XSX": [
+      true,
+      true
+    ],
+    "isShow": 0,
+    "key": "supportSSSubsurface",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "valueType": "bool",
+    "Windows": [
+      true,
+      true,
+      true
+    ],
+    "Android": [
+      true,
+      true,
+      true
+    ]
+  }
+}

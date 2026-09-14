@@ -1,0 +1,97 @@
+{
+  "nodeMap": {
+    "22": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 22,
+      "UID": "37659278-a974-4496-a97b-6c783477dda3"
+    },
+    "13": {
+      "UID": "7d4c90be-2ac3-4095-aeb8-3e077ab6bd28",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "a88e1ffb-0ef0-4a12-b356-25cda37581df",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          11
+        ]
+      },
+      "NodeID": 6
+    },
+    "15": {
+      "UID": "e1247915-ef1b-4913-aed4-c2beea652aee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "33c40b74-5e8b-47b9-a829-05f2cc427959",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_DoubleTeam"
+    },
+    "18": {
+      "UID": "c3832f6f-6a80-4d66-b19d-f69417288c10",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "a5faca67-ffb0-4783-9627-db0a203e9ea2",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "dda9af96-9c2e-4c86-8399-6ff0810250bc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 20
+    },
+    "4": {
+      "UID": "c6e5158e-f560-4cfb-8862-4499fb842bcf",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    }
+  },
+  "BPName": "ability_13330500",
+  "NodeID": 8,
+  "UID": "2cf52b96-c03f-47ac-a456-a3b028e6a949",
+  "eventIds": [
+    6,
+    15,
+    18,
+    22
+  ],
+  "layer": "Base",
+  "length": 6.217
+}

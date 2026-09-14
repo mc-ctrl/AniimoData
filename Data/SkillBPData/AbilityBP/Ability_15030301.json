@@ -1,0 +1,83 @@
+{
+  "BPName": "ability_15030301",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800440,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "c3933404-07ec-4b9a-859b-dad2875fd57b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 8
+    },
+    "31": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "19cf3603-3a81-49cb-907b-fe752ad3fe7c",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "29": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "a3196eb2-6824-4dd0-aed4-fac94b45fa57",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "a5d0a8c6-2fca-4b95-9c9f-0d22721bf224",
+      "conditionIds": [
+        29,
+        31
+      ],
+      "name": "conditionOr",
+      "NodeID": 30
+    },
+    "7": {
+      "timelineId": 15030301001,
+      "name": "setCombatActionTimeline",
+      "UID": "6cab6386-0fac-4f33-805a-337f22311c1a",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "22": {
+      "timelineId": 15030000001,
+      "name": "setCombatActionTimeline",
+      "UID": "7bf550a6-172e-4582-843e-3a36dc465806",
+      "target": "CASTER",
+      "NodeID": 22
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CriticalHit"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10503_Skill_Rampage_CriticalHit_RHand",
+    "Eff_Parmon_10503_Skill_Rampage_CriticalHit_Jab_01",
+    "Eff_Parmon_10503_Skill_Rampage_CriticalHit_Jab_02",
+    "Eff_Parmon_10503_Skill_Rampage_CriticalHit_Jab_03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

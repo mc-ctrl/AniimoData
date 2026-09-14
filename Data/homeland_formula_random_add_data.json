@@ -1,0 +1,96 @@
+[
+  [
+    {
+      "addProbability": 0
+    },
+    {
+      "addProbability": 0
+    },
+    {
+      "addProbability": 0.00025
+    },
+    {
+      "addProbability": 0.00025
+    }
+  ],
+  [
+    {
+      "addProbability": 0.0005
+    },
+    {
+      "addProbability": 0
+    },
+    {
+      "addProbability": 0.00025
+    },
+    {
+      "addProbability": 0.00025
+    }
+  ],
+  {
+    "3": {
+      "addProbability": 0.00025
+    },
+    "4": {
+      "addProbability": 0.00025
+    },
+    "2": {
+      "addProbability": 0.0005
+    }
+  },
+  [
+    {
+      "addProbability": 0.00015
+    },
+    {
+      "addProbability": 0
+    },
+    {
+      "addProbability": 7.5e-05
+    },
+    {
+      "addProbability": 7.5e-05
+    }
+  ],
+  {
+    "3": {
+      "addProbability": 7.5e-05
+    },
+    "4": {
+      "addProbability": 7.5e-05
+    },
+    "2": {
+      "addProbability": 0.00015
+    }
+  },
+  {
+    "3": {
+      "addProbability": 7.5e-05
+    },
+    "4": {
+      "addProbability": 7.5e-05
+    },
+    "2": {
+      "addProbability": 0.00015
+    }
+  },
+  {
+    "3": {
+      "addProbability": 2.5e-05
+    },
+    "4": {
+      "addProbability": 2.5e-05
+    },
+    "2": {
+      "addProbability": 5e-05
+    }
+  },
+  {
+    "3": {
+      "addProbability": 3.75e-05
+    },
+    "4": {
+      "addProbability": 1.25e-05
+    }
+  }
+]

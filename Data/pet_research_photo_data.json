@@ -1,0 +1,98 @@
+[
+  {
+    "bloomId": [
+      3000,
+      78053833
+    ],
+    "displayPart": 1,
+    "extraReward": 100175,
+    "pet1": 1016100,
+    "phaseReward": 100064,
+    "stageRewards": [
+      [
+        1,
+        100065
+      ],
+      [
+        3,
+        100066
+      ],
+      [
+        5,
+        100067
+      ]
+    ]
+  },
+  {
+    "bloomId": [
+      3000,
+      72336492
+    ],
+    "displayPart": 1,
+    "extraReward": 100175,
+    "pet1": 1004301,
+    "phaseReward": 100064,
+    "stageRewards": [
+      [
+        1,
+        100065
+      ],
+      [
+        3,
+        100066
+      ],
+      [
+        5,
+        100067
+      ]
+    ]
+  },
+  {
+    "bloomId": [
+      3000,
+      62186803
+    ],
+    "displayPart": 1,
+    "extraReward": 100175,
+    "pet1": 1002301,
+    "phaseReward": 100064,
+    "stageRewards": [
+      [
+        1,
+        100065
+      ],
+      [
+        3,
+        100066
+      ],
+      [
+        5,
+        100067
+      ]
+    ]
+  },
+  {
+    "bloomId": [
+      3003,
+      91012173
+    ],
+    "displayPart": 1,
+    "extraReward": 100175,
+    "pet1": 1062300,
+    "phaseReward": 100064,
+    "stageRewards": [
+      [
+        1,
+        100065
+      ],
+      [
+        3,
+        100066
+      ],
+      [
+        5,
+        100067
+      ]
+    ]
+  }
+]

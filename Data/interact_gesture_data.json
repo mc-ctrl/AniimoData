@@ -1,0 +1,39 @@
+{
+  "1016": {
+    "loopTime": 999999999,
+    "order": 1,
+    "animationLoop": "Daily_Horn_Loop",
+    "animationName": "偶遇吹号角测试-循环",
+    "icon": "$UI_SkillIcon_Avatar_GravityMaster_1015.png"
+  },
+  "1018": {
+    "loopTime": -1,
+    "order": 3,
+    "icon": "$UI_SkillIcon_Avatar_GravityMaster_1015.png",
+    "animationName": "偶遇互动动作测试-打招呼",
+    "animationStart": "Daily_Hello"
+  },
+  "1019": {
+    "loopTime": -1,
+    "order": 4,
+    "icon": "$UI_SkillIcon_Avatar_GravityMaster_1015.png",
+    "animationName": "偶遇互动动作测试-丢buff加油",
+    "animationStart": "Daily_Fighting"
+  },
+  "1020": {
+    "loopTime": -1,
+    "order": 5,
+    "icon": "$UI_SkillIcon_Avatar_GravityMaster_1015.png",
+    "animationName": "偶遇互动动作测试-感谢",
+    "animationStart": "Daily_Thanks"
+  },
+  "1017": {
+    "loopTime": 5,
+    "order": 2,
+    "icon": "$UI_SkillIcon_Avatar_GravityMaster_1015.png",
+    "animationEnd": "Daily_Horn_End",
+    "animationLoop": "Daily_Horn_Loop",
+    "animationName": "偶遇吹号角测试-完整",
+    "animationStart": "Daily_Horn_Start"
+  }
+}

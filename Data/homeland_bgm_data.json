@@ -1,0 +1,92 @@
+[
+  {
+    "bgmEvent": "BGM_BloomVileCeremony",
+    "sortId": 2,
+    "isUnlock": 1,
+    "name": 1483208309
+  },
+  {
+    "bgmEvent": "BGM_Scene_Farm",
+    "sortId": 1,
+    "isUnlock": 1,
+    "name": 1398981120
+  },
+  {
+    "bgmEvent": "BGM_Initial_Place",
+    "sortId": 3,
+    "isUnlock": 1,
+    "name": 1669723907
+  },
+  {
+    "bgmEvent": "BGM_Home_Mid_Autumn",
+    "itemID": 4040113,
+    "sortId": 4,
+    "name": 1854203043
+  },
+  {
+    "bgmEvent": "BGM_Scene_BloomVile",
+    "sortId": 5,
+    "isUnlock": 1,
+    "name": 1646078704
+  },
+  {
+    "bgmEvent": "BGM_BonfireScene",
+    "sortId": 6,
+    "isUnlock": 1,
+    "name": 1801181085
+  },
+  {
+    "bgmEvent": "BGM_Camp",
+    "sortId": 7,
+    "isUnlock": 1,
+    "name": 2111660640
+  },
+  {
+    "bgmEvent": "BGM_LostForest",
+    "sortId": 8,
+    "isUnlock": 1,
+    "name": 1129766837
+  },
+  {
+    "bgmEvent": "BGM_Scene_Forest",
+    "sortId": 9,
+    "isUnlock": 1,
+    "name": 1571040692
+  },
+  {
+    "bgmEvent": "BGM_Scene_FlowerSea",
+    "sortId": 10,
+    "isUnlock": 1,
+    "name": 1948956783
+  },
+  {
+    "bgmEvent": "BGM_Scene_RVCamp",
+    "sortId": 11,
+    "isUnlock": 1,
+    "name": 2141671006
+  },
+  {
+    "bgmEvent": "BGM_Scene_StarfallForest",
+    "sortId": 12,
+    "isUnlock": 1,
+    "name": 1961076154
+  },
+  {
+    "bgmEvent": "BGM_Scene_ValleyCastle",
+    "sortId": 13,
+    "isUnlock": 1,
+    "name": 1419034328
+  },
+  {
+    "bgmEvent": "BGM_beach03",
+    "sortId": 14,
+    "isUnlock": 1,
+    "name": 1868133110
+  },
+  {
+    "bgmEvent": "BGM_Scene_ArgentStrait_Song",
+    "itemID": 4040121,
+    "sortId": 15,
+    "name": 1407423453
+  }
+]

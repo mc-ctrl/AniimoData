@@ -1,0 +1,114 @@
+{
+  "nodeMap": {
+    "112": {
+      "scale": 2,
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "3cd57175-0cc0-455e-929c-f642c0bf6809",
+      "effectId": "Eff_Parmon_10032_Skill_ShadowCutter_BlockSuc",
+      "speed": 1,
+      "NodeID": 112
+    },
+    "113": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2b9000be-572d-4e8c-aa25-2b171852d41e",
+      "target": "OWNER",
+      "NodeID": 113,
+      "animId": "Hit_H"
+    },
+    "126": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10320311,
+        "add_cur_bp_max_p": "param0",
+        "type": 2
+      },
+      "UID": "3124294b-113f-479b-ba59-fab838aceebd",
+      "target": "OWNER",
+      "NodeID": 126,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    },
+    "114": {
+      "key": "1",
+      "duration": 0.3,
+      "actionIds": [
+        113
+      ],
+      "NodeID": 114,
+      "UID": "b257bc3a-22b1-4785-9568-c7fb87a010ee",
+      "name": "addTimer"
+    },
+    "123": {
+      "UID": "65238045-a943-480f-a3a2-2668e81b78f7",
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 123
+    },
+    "128": {
+      "duration": 0.5,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 128,
+      "UID": "b1b8db65-0fe6-43e1-8161-effb553500c5",
+      "name": "playRadialBlur"
+    },
+    "127": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c4724a21-ac8b-4d4d-a946-73e86977dc47",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10032_Skill_ShadowCutter_Block",
+      "NodeID": 127
+    },
+    "102": {
+      "duration": 0.3,
+      "ignoreCamp": true,
+      "NodeID": 102,
+      "UID": "789916b3-ceca-4945-b1cb-034087a3d177",
+      "timeScale": 0.1,
+      "name": "createTimeScaleZone"
+    },
+    "104": {
+      "UID": "d07aa1ce-9679-4649-8a3b-46ea0c6e4e76",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          123,
+          102,
+          111,
+          112,
+          114,
+          115,
+          127,
+          126,
+          128
+        ]
+      },
+      "NodeID": 104
+    },
+    "111": {
+      "cameraShakeId": 30402,
+      "name": "playCameraImpulseById",
+      "UID": "4d618910-7d52-4c28-99d0-434db7aa7a33",
+      "target": "TARGET",
+      "NodeID": 111
+    },
+    "115": {
+      "UID": "9a2d9509-cd42-489c-ad55-65dfb276b96a",
+      "name": "removeEvent",
+      "eventName": "onRePressSkillSlot",
+      "NodeID": 115
+    }
+  },
+  "BPName": "ability_10320311",
+  "NodeID": 106,
+  "UID": "da080689-dbcf-46ad-9dd3-35963ed0ea30",
+  "eventIds": [
+    104
+  ],
+  "layer": "Base",
+  "length": 1.92
+}

@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_12810400",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10100010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12810400001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Smash"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10024_Skill_Headbutt_End"
+  ],
+  "searchRelation": 2,
+  "name": "冲撞",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "notCastInState": [
+    "BURROW_ST"
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

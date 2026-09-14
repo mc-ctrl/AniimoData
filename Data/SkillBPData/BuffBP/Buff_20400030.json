@@ -1,0 +1,125 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20400030",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    28
+  ],
+  "nodeMap": {
+    "28": {
+      "key": "EquipAttr",
+      "calcInfo": {
+        "instant_crit_rate_v": {
+          "rValue": {
+            "calcId": 20400030,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 30,
+            "UID": "11838c16-c89e-49a3-951c-51b3b8d4adde",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "a46caadd-bcec-4851-a59b-812a8b08d41b",
+          "NodeID": 26,
+          "lValue": {
+            "key": "EquipAttr",
+            "attributeName": "instant_crit_rate_v",
+            "UID": "7541aca4-63b3-4a84-9407-407c1b7523c5",
+            "name": "getRogueProp",
+            "NodeID": 25
+          }
+        }
+      },
+      "NodeID": 28,
+      "UID": "8089d44a-c52b-4c50-93b8-051cef6141c3",
+      "name": "setRogueProp"
+    },
+    "29": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_rate_v",
+      "UID": "77083bc8-377d-4350-8969-0624e7986695",
+      "name": "getRogueProp",
+      "NodeID": 29
+    },
+    "30": {
+      "calcId": 20400030,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 30,
+      "UID": "11838c16-c89e-49a3-951c-51b3b8d4adde",
+      "name": "getParamByLuaConfig"
+    },
+    "31": {
+      "calcId": 20400030,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 31,
+      "UID": "ed9b07d2-2f0a-4a99-be56-db015be81431",
+      "name": "getParamByLuaConfig"
+    },
+    "25": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_rate_v",
+      "UID": "7541aca4-63b3-4a84-9407-407c1b7523c5",
+      "name": "getRogueProp",
+      "NodeID": 25
+    },
+    "24": {
+      "key": "EquipAttr",
+      "calcInfo": {
+        "instant_crit_rate_v": {
+          "rValue": {
+            "rValue": {
+              "rValue": -1,
+              "name": "multiply",
+              "UID": "9180d38f-3aa9-4dc9-a973-651145604e52",
+              "NodeID": 32,
+              "lValue": {
+                "calcId": 20400030,
+                "calcType": 1,
+                "paramName": "param0",
+                "NodeID": 31,
+                "UID": "ed9b07d2-2f0a-4a99-be56-db015be81431",
+                "name": "getParamByLuaConfig"
+              }
+            },
+            "name": "multiply",
+            "UID": "be2ac2fb-a0c9-404b-956d-30d5310b9867",
+            "NodeID": 21,
+            "lValue": {
+              "UID": "10e68e44-2e81-48ed-9bbe-ae237e649807",
+              "target": "OWNER",
+              "name": "getBuffLayer",
+              "NodeID": 20
+            }
+          },
+          "name": "add",
+          "UID": "f4140bd9-865e-42e7-8fbc-13cbc4d5f4d5",
+          "NodeID": 22,
+          "lValue": {
+            "key": "EquipAttr",
+            "attributeName": "instant_crit_rate_v",
+            "UID": "77083bc8-377d-4350-8969-0624e7986695",
+            "name": "getRogueProp",
+            "NodeID": 29
+          }
+        }
+      },
+      "NodeID": 24,
+      "UID": "588e010e-5d4f-4bd6-aa6c-25b46550d171",
+      "name": "setRogueProp"
+    }
+  },
+  "onBuffDestroyIds": [
+    24
+  ],
+  "onBuffStartIds": [
+    28
+  ]
+}

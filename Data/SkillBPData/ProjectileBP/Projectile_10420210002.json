@@ -1,0 +1,215 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 80,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Fly",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 1,
+  "defaultHitSoundType": "s",
+  "moveSpeed": 17,
+  "onProjectileFinishIds": [
+    84
+  ],
+  "BPName": "ability_10420210",
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "nodeMap": {
+    "89": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 80,
+      "NodeID": 89,
+      "UID": "07b2d3f3-9ce7-4397-aa9b-f58d2f168bfb",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        80
+      ]
+    },
+    "82": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 80,
+      "NodeID": 82,
+      "UID": "a3f6d51e-e48c-450c-b17f-5544ce61062c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        80
+      ]
+    },
+    "98": {
+      "pos": {
+        "UID": "61f7c62d-cfd1-46c9-b05c-9ee5d71ecbf2",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "20ca9be1-0e7b-4c4c-9fd4-6a5fb22feea8",
+          "name": "getProjectilePos",
+          "NodeID": 96
+        },
+        "NodeID": 97
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "dbe7961c-5877-4545-9f91-51dcabe1e91b",
+      "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Bomb",
+      "rot": {
+        "refPos": {
+          "UID": "20ca9be1-0e7b-4c4c-9fd4-6a5fb22feea8",
+          "name": "getProjectilePos",
+          "NodeID": 96
+        },
+        "name": "getGroundTangentRotation",
+        "UID": "6c63f200-9a5c-4f79-8d75-f96e84ccb455",
+        "simpleTest": false,
+        "refYawRot": "PROJECTILE",
+        "NodeID": 99
+      },
+      "NodeID": 98
+    },
+    "123": {
+      "pos": "TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "a4d0ec3d-79a4-4863-a2e8-b14835692737",
+      "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Bomb",
+      "rot": {
+        "refPos": "POS_OR_TARGET",
+        "name": "getGroundTangentRotation",
+        "UID": "595ab0fd-9dda-455d-9492-4e1891fd201b",
+        "simpleTest": false,
+        "refYawRot": "POS_OR_TARGET",
+        "NodeID": 122
+      },
+      "NodeID": 123
+    },
+    "84": {
+      "actionIds": [
+        123,
+        82,
+        130
+      ],
+      "conditionActionIds": [
+        93
+      ],
+      "UID": "8eb775e9-c988-47fc-a536-40291249398b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        98,
+        89,
+        102,
+        130
+      ],
+      "NodeID": 84
+    },
+    "93": {
+      "UID": "5422ff75-a48b-4e07-8924-79c478d58ca4",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 93
+    },
+    "102": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "462e0401-a5a2-40a4-a431-812abe833859",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_laricander_attack_hit",
+      "NodeID": 102
+    },
+    "130": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c9774a99-9583-43b7-86c6-06ce4e1625dd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10653_Skill_DripTrampoline_Bullet",
+      "NodeID": 130
+    },
+    "80": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10420210,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "b8fa5483-4235-4bed-a846-dac6090e97f3",
+      "target": "TARGET",
+      "NodeID": 80,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10005,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 3000
+      }
+    }
+  },
+  "tickInterval": 0,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "groundSweepRadius": 0.2,
+  "impulseId": 3000,
+  "acceleration": 5
+}

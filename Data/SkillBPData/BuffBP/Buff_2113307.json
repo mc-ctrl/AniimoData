@@ -1,0 +1,353 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2113307",
+  "NodeID": 1,
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    17,
+    10
+  ],
+  "onBuffStartIds": [
+    2,
+    14,
+    20,
+    23,
+    30
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2113307101,
+      "name": "createProjectile",
+      "UID": "1c042ec5-9f41-453d-ab2d-e270ca7850c0",
+      "rotation": "Direct",
+      "pos": {
+        "key": "11330410pos",
+        "name": "getCacheVal",
+        "UID": "90c6cef5-b239-4d5f-95f1-ec1a8674a8ae",
+        "target": "OWNER",
+        "NodeID": 52
+      },
+      "projectileType": "Tracking",
+      "targetRotation": {
+        "key": "11330410rot",
+        "name": "getCacheVal",
+        "UID": "abbe742a-11f2-4acf-8821-6b1b8ecf0d3f",
+        "target": "OWNER",
+        "NodeID": 53
+      },
+      "NodeID": 37,
+      "targetPos": "CASTER"
+    },
+    "62": {
+      "buffId": 2113307,
+      "name": "removeBuff",
+      "UID": "6e38ad6c-a713-4dc1-989f-80fe442df471",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "54": {
+      "eventName": "11330410",
+      "name": "notifyCustomEvent",
+      "UID": "7e988e50-6c92-4ba4-b95e-db155cf6a859",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "64": {
+      "key": "removeBuff07",
+      "duration": 5,
+      "actionIds": [
+        62
+      ],
+      "NodeID": 64,
+      "UID": "54ae72b2-9cc3-4d3a-8271-0aa5a504e719",
+      "name": "addEntityTimer"
+    },
+    "7": {
+      "rValue": {
+        "calcId": 2113307,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 16,
+        "UID": "5c5d14c7-a950-4e12-8c0b-8970a36938b1",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "greater",
+      "UID": "067859cf-6f6b-48ff-bf90-e1f0d5971032",
+      "NodeID": 7,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "c5621400-f025-475b-8f73-c8fa0ef62fcf",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "ep_cur"
+      }
+    },
+    "2": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "bfd07edb-ae6c-42cd-a24f-4b8356bb8f11",
+      "to": 11330411,
+      "NodeID": 2,
+      "from": 11330410
+    },
+    "8": {
+      "UID": "7c48d84c-842a-458d-bbae-dafc0e92b7b8",
+      "conditionIds": [
+        7,
+        12
+      ],
+      "name": "conditionOr",
+      "NodeID": 8
+    },
+    "60": {
+      "key": "skillPos",
+      "name": "setCacheVal",
+      "UID": "64d45378-d576-494b-8ba0-e450e52fdbcd",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 60
+    },
+    "9": {
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "c693dc7f-62b3-46e3-96fe-8f772b04a88b",
+      "name": "doActionsByConditions",
+      "NodeID": 9,
+      "elseActionIds": [
+        28,
+        64
+      ]
+    },
+    "23": {
+      "key": "FollowDelay",
+      "duration": 3,
+      "actionIds": [
+        22
+      ],
+      "NodeID": 23,
+      "UID": "556559ff-2ab4-4efa-a2e4-b2c534ea261c",
+      "name": "addTimer"
+    },
+    "12": {
+      "rValue": {
+        "calcId": 2113307,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 16,
+        "UID": "5c5d14c7-a950-4e12-8c0b-8970a36938b1",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "equal",
+      "UID": "3ada12f1-58c1-478a-841f-314d82ae58fb",
+      "NodeID": 12,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "c5621400-f025-475b-8f73-c8fa0ef62fcf",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "ep_cur"
+      }
+    },
+    "30": {
+      "actionIds": [
+        28,
+        64
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "e8968f27-d61b-44d3-a847-d4b25f7f1369",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "20": {
+      "eventName": "StopThink",
+      "NodeID": 20,
+      "UID": "67d4d7cb-eb97-4c82-9e42-f74a6622467f",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        19
+      ]
+    },
+    "21": {
+      "UID": "cdec6e10-156c-4ac9-910a-97cfe6a867de",
+      "name": "isInControlState",
+      "controlState": 2,
+      "NodeID": 21
+    },
+    "22": {
+      "actionIds": [
+        28,
+        64
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "38ce772a-f399-4c8c-b3a8-aff937d2ab8b",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "4": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "7ab27d5b-5d5f-4737-96c4-9f052c923d5f",
+      "to": 11330410,
+      "NodeID": 4,
+      "from": 11330410
+    },
+    "24": {
+      "eventName": "11330410",
+      "name": "notifyCustomEvent",
+      "UID": "659b3ed4-1f70-479b-a946-8c4a6abf66aa",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "eventName": "StartThink",
+      "NodeID": 14,
+      "UID": "a8cb9b86-f5db-451c-8831-785c5daab90a",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        13
+      ]
+    },
+    "10": {
+      "key": "delayTimer",
+      "duration": 0.9,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "e5145c70-9de4-4ace-92b7-0f81908ea878",
+      "name": "addTimer"
+    },
+    "28": {
+      "actionIds": [
+        60,
+        61,
+        54,
+        37,
+        59
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "e76d60ca-1906-443a-b8d4-45b8717064b7",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "26": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "13c7412b-c044-425f-8453-d556fe136880",
+      "NodeID": 26,
+      "lValue": {
+        "key": "skillPos",
+        "name": "getCacheVal",
+        "UID": "ceb27673-35b2-4e44-9647-5ae02ba43e48",
+        "target": "OWNER",
+        "NodeID": 25
+      }
+    },
+    "16": {
+      "calcId": 2113307,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 16,
+      "UID": "5c5d14c7-a950-4e12-8c0b-8970a36938b1",
+      "name": "getParamByLuaConfig"
+    },
+    "27": {
+      "UID": "6168e126-4f95-43cd-b67f-1c62f87180fe",
+      "conditionIds": [
+        26,
+        32
+      ],
+      "name": "conditionAnd",
+      "NodeID": 27
+    },
+    "17": {
+      "value": {
+        "calcId": 2113307,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 16,
+        "UID": "5c5d14c7-a950-4e12-8c0b-8970a36938b1",
+        "name": "getParamByLuaConfig"
+      },
+      "epCostReason": 1,
+      "name": "costEp",
+      "UID": "93df631d-3954-439d-8f42-6f6afc1de750",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "59": {
+      "eventName": "StopThink",
+      "name": "notifyCustomEvent",
+      "UID": "3284b715-8853-449d-b966-ec96dbecf2c2",
+      "target": "OWNER",
+      "NodeID": 59
+    },
+    "18": {
+      "key": "skillPos",
+      "name": "setCacheVal",
+      "UID": "6b7a4965-86de-4801-a5b6-131eb67baa7c",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 18
+    },
+    "32": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "531a4d87-5360-494a-9123-65fd22e8891e",
+      "NodeID": 32,
+      "lValue": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "b257b6a2-2c54-4921-ba28-edd6f1dace12",
+        "target": "OWNER",
+        "NodeID": 31
+      }
+    },
+    "19": {
+      "UID": "cf5f3e69-4a6b-4891-975d-b835d5308327",
+      "name": "buffStopThink",
+      "buffTemplateId": 2113307,
+      "NodeID": 19
+    },
+    "61": {
+      "abilityIds": [
+        11330520,
+        11330521
+      ],
+      "NodeID": 61,
+      "UID": "528e81e0-cedb-4e4f-8b18-b3c26e13278c",
+      "name": "registerAbilityBackswingForAbilityIds",
+      "duration": 9999
+    },
+    "13": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "fd5aa979-a70d-48c2-9dc6-c087e719f35f",
+      "name": "buffStartThink",
+      "NodeID": 13
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4,
+    18,
+    24
+  ],
+  "isUnSummonFreeze": false
+}

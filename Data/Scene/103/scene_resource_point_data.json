@@ -1,0 +1,557 @@
+{
+  "51213161": {
+    "yaw": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -117.65,
+      0.5,
+      60.16
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51471417,
+    "id": 51213161,
+    "activeRangeOverride": 0,
+    "templateId": 51213139,
+    "climbTreeId": 0,
+    "routeIds": [
+      51213174,
+      51220146,
+      51220175
+    ]
+  },
+  "51468702": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1002100,
+    "templateId": 51298563,
+    "position": [
+      -39.86,
+      0.5,
+      8.03
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51386377,
+    "id": 51468702,
+    "yaw": 0,
+    "activeRangeOverride": 0,
+    "routeIds": [
+      51468699,
+      51468700,
+      51468701
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "51815206": {
+    "yaw": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -100.56,
+      0.5,
+      65.12
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 42218109,
+    "sandboxId": 51796527,
+    "id": 51815206,
+    "activeRangeOverride": 0,
+    "templateId": 42399579,
+    "climbTreeId": 0,
+    "routeIds": {}
+  },
+  "51815790": {
+    "yaw": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "name": "",
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 51815686,
+    "sandboxId": 51796527,
+    "id": 51815790,
+    "templateId": 42399579,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "position": [
+      -98.68,
+      0.5,
+      64.18
+    ]
+  },
+  "51816223": {
+    "yaw": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "name": "",
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 51816145,
+    "sandboxId": 51796527,
+    "id": 51816223,
+    "templateId": 42399579,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "position": [
+      -100.28,
+      0.5,
+      63.06
+    ]
+  },
+  "52409611": {
+    "yaw": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -72.2,
+      0.5,
+      78.73
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 52398165,
+    "sandboxId": 51398736,
+    "id": 52409611,
+    "activeRangeOverride": 0,
+    "templateId": 42399579,
+    "climbTreeId": 0,
+    "routeIds": {}
+  },
+  "52498147": {
+    "yaw": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -45.7,
+      0.5,
+      89.07
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51982565,
+    "id": 52498147,
+    "activeRangeOverride": 0,
+    "templateId": 47668217,
+    "climbTreeId": 0,
+    "routeIds": {}
+  },
+  "53120375": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": [
+      {
+        "interactDirDescs": {},
+        "portPosition": [
+          5.8,
+          0,
+          0
+        ]
+      }
+    ],
+    "position": [
+      -96.18,
+      0.5,
+      89.68
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51982064,
+    "id": 53120375,
+    "yaw": 0,
+    "templateId": 42722672,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 42382015,
+    "groupBehaviourLevelItemId": 0
+  },
+  "53717723": {
+    "yaw": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "name": "",
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 53352117,
+    "sandboxId": 51982595,
+    "id": 53717723,
+    "templateId": 47731453,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "position": [
+      -48.18,
+      0.5,
+      106.06
+    ]
+  },
+  "59399117": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1017102,
+    "portOverrideDatas": {},
+    "position": [
+      -142.75,
+      0.5,
+      237.13
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 59407964,
+    "sandboxId": 59397905,
+    "id": 59399117,
+    "yaw": 0,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59495333": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": [
+      {
+        "interactDirDescs": {},
+        "portPosition": [
+          5.8,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "",
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51982064,
+    "id": 59495333,
+    "yaw": 0,
+    "templateId": 42722672,
+    "routeIds": {},
+    "activeRangeOverride": 0,
+    "position": [
+      -89.1,
+      0.5,
+      86.94
+    ],
+    "climbTreeId": 55012529,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59654741": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1018101,
+    "portOverrideDatas": {},
+    "name": "海鸥在石头上唱歌",
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 59397905,
+    "id": 59654741,
+    "yaw": 0,
+    "templateId": 59499986,
+    "routeIds": [
+      59481672,
+      59652671,
+      59655073
+    ],
+    "activeRangeOverride": 0,
+    "position": [
+      -156.54,
+      0.5,
+      222.15
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59671812": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -153.47,
+      0.5,
+      261.69
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 59397905,
+    "id": 59671812,
+    "yaw": 0,
+    "templateId": 50265235,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59671813": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -157.07,
+      0.5,
+      258.48
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 59397905,
+    "id": 59671813,
+    "yaw": 0,
+    "templateId": 51211963,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59674684": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1017301,
+    "portOverrideDatas": {},
+    "position": [
+      -122.4,
+      0.5,
+      254.25
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 59674716,
+    "sandboxId": 59397905,
+    "id": 59674684,
+    "yaw": 0,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59676645": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1002201,
+    "portOverrideDatas": {},
+    "position": [
+      -148.93,
+      0.5,
+      246.37
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 59676477,
+    "sandboxId": 59397905,
+    "id": 59676645,
+    "yaw": 359.02,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59680839": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -111.18,
+      0.5,
+      217.76
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 59680878,
+    "sandboxId": 59397905,
+    "id": 59680839,
+    "yaw": 0,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59739284": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1028101,
+    "portOverrideDatas": {},
+    "position": [
+      -49.11,
+      1.38,
+      257.97
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 59739066,
+    "sandboxId": 59397905,
+    "id": 59739284,
+    "yaw": 0,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59741411": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1023101,
+    "portOverrideDatas": {},
+    "position": [
+      -38.84,
+      0.5,
+      207.97
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 59740885,
+    "sandboxId": 59397905,
+    "id": 59741411,
+    "yaw": 0,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59743661": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -124.62,
+      0.5,
+      295.97
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 59743624,
+    "sandboxId": 59397905,
+    "id": 59743661,
+    "yaw": 0,
+    "templateId": 59758085,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "59764034": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -165.45,
+      0.5,
+      290.35
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 59397905,
+    "id": 59764034,
+    "yaw": 0,
+    "templateId": 59764694,
+    "activeRangeOverride": 0,
+    "routeIds": [
+      59763656,
+      59763668,
+      59763669
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "62420916": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1017100,
+    "portOverrideDatas": {},
+    "position": [
+      -41.69,
+      0.5,
+      31.32
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51532520,
+    "id": 62420916,
+    "yaw": 0,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "62803992": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 1016101,
+    "portOverrideDatas": {},
+    "position": [
+      -46,
+      0.5,
+      -8.12
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 53361611,
+    "id": 62803992,
+    "yaw": 0,
+    "templateId": 51532723,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "70825983": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -70.45,
+      0.5,
+      5.87
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51398671,
+    "id": 70825983,
+    "yaw": 0,
+    "templateId": 70643626,
+    "routeIds": {},
+    "activeRangeOverride": 0,
+    "additiveTags": [
+      "TR_EcoHabit_Eat"
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "79366907": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -137.77,
+      0.5,
+      85.89
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 51471431,
+    "id": 79366907,
+    "yaw": 0,
+    "templateId": 70643626,
+    "routeIds": {},
+    "activeRangeOverride": 0,
+    "additiveTags": [
+      "TR_Mimicry"
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  }
+}

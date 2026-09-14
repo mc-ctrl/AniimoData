@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_12210300",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10400202,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12210300001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "58": {
+      "UID": "41a93514-f741-4124-93c6-9abc33fbb7a5",
+      "name": "stopPreset",
+      "presetName": "Eff_10221_parmon_Lighten_Trail_Iron",
+      "NodeID": 58
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3,
+  "preloadAnims": [
+    "Skill_Tail"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10221_Lighten_Tail_Elec_01",
+    "Eff_Hit_Electric_Blunt_Big"
+  ],
+  "searchRelation": 2,
+  "name": "钢尾",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "tags": {},
+  "onAbilityEndIds": [
+    58
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": "钢尾"
+}

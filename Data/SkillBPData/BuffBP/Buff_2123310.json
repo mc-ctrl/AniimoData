@@ -1,0 +1,25 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123310",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "addSpecialTemporaryEp",
+      "epCount": 2,
+      "UID": "e2610bcc-a81b-452d-828b-39e3aa116d08",
+      "startFlashTime": 7,
+      "NodeID": 3,
+      "flashInterval": 0.24
+    }
+  },
+  "transferGroup": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

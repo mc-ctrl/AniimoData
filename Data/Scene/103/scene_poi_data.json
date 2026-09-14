@@ -1,0 +1,45 @@
+{
+  "14400076": {
+    "markConfig": {
+      "markType": 10,
+      "activeDisplayType": 1,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "autoSetContent1": true,
+      "compassShowDistance": 50,
+      "initState": 0,
+      "activeDistance": 0,
+      "markContent1": 14400076
+    },
+    "pos": [
+      -47.95,
+      0,
+      -12.74
+    ]
+  },
+  "14916345": {
+    "markConfig": {
+      "markType": 15,
+      "yaw": 81.36,
+      "showUI": true,
+      "activeDisplayType": 2,
+      "activeDistance": 30,
+      "scale2": 1,
+      "compassTxt": "将要发生有趣的事情",
+      "autoSetContent1": true,
+      "compassShowDistance": 30,
+      "initState": 0,
+      "scale3": 1,
+      "scale1": 1,
+      "revivedPointState": true,
+      "markContent1": 14916345
+    },
+    "pos": [
+      22.495,
+      1.19,
+      65.93
+    ],
+    "name": "Cube (22)"
+  }
+}

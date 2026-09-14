@@ -1,0 +1,115 @@
+{
+  "duration": 1.6,
+  "calcResultNodeId": 28,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10433_Skill_TurretForm_03",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "34": {
+      "targetPos": {
+        "UID": "6f1d5e17-e4af-41d0-87a6-6f22e4ca2a52",
+        "name": "getProjectilePos",
+        "NodeID": 32
+      },
+      "name": "playSoundAtPos",
+      "UID": "c779b38a-4734-4402-a97e-896ba9117c89",
+      "soundId": "SFX_Combat_10433_Skill_TurretForm_Explode",
+      "NodeID": 34
+    },
+    "28": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14330111,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "fd6ba0e5-76ae-4b34-8f37-a7b61c11cdf9",
+      "target": "TARGET",
+      "NodeID": 28,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      }
+    },
+    "29": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 28,
+      "NodeID": 29,
+      "UID": "71383afd-1d68-47d6-a724-e736fa9498da",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        28
+      ]
+    },
+    "33": {
+      "pos": {
+        "UID": "6f1d5e17-e4af-41d0-87a6-6f22e4ca2a52",
+        "name": "getProjectilePos",
+        "NodeID": 32
+      },
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "e5d93a45-546c-4087-bb71-eb1032977516",
+      "effectId": "Eff_Parmon_10433_Skill_TurretForm_02",
+      "speed": 1,
+      "NodeID": 33
+    }
+  },
+  "maxHitNum": 1,
+  "maxHeightOffset": 5,
+  "stickGravity": 0.5,
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    29,
+    33,
+    34
+  ],
+  "stickPitchMaxOffset": 40,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "BPName": "ability_14330111",
+  "tickInterval": 0.05,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3002,
+  "acceleration": 0
+}

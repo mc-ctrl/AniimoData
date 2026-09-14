@@ -1,0 +1,98 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "2c4e3c26-a62d-4cda-906c-deb06600184b",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        2,
+        20
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "name": "playEffectOnPosRot",
+      "UID": "34ff69e6-63fe-4481-a2bc-f0c3ab9aa288",
+      "effectId": "Eff_Parmon_90213_Skill_Rainbow",
+      "pos": "MASTER",
+      "target": "OWNER",
+      "NodeID": 24,
+      "speed": 2,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "6": {
+      "UID": "69f054f5-023f-4639-a5c8-1e18500fa821",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24,
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "21": {
+      "name": "isActorType",
+      "UID": "7d9de3dd-eabf-4d73-91ae-deb84c0207cc",
+      "target": "MASTER",
+      "NodeID": 21,
+      "actorType": 2
+    },
+    "19": {
+      "needEcs": true,
+      "UID": "eeb23276-079b-49fb-8b1e-844d6b87cade",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.2,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "NodeID": 19,
+      "name": "actOnTargets"
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "b6521bc6-21d0-4d76-8fb7-5d94b8e2557b",
+      "name": "doActionsByConditions",
+      "NodeID": 20
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "e86a7eb9-538c-4221-9a25-9d162d032861",
+      "effectId": "Eff_Parmon_10213_Skill_Rainbow",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2921301",
+  "NodeID": 1,
+  "UID": "ecb3476c-f7e8-4356-8328-31f81369d1ec",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 15
+}

@@ -1,0 +1,174 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "bp_reduce_rate_v": 5
+  },
+  "NodeID": 1,
+  "UID": "06ac01a0-c9cd-4096-a413-c6cc2189205c",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    10,
+    13
+  ],
+  "BPName": "buff_9802301",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "15400ce4-2d2b-434c-830f-1f526ec357c2",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_shield_spawn",
+      "NodeID": 6
+    },
+    "8": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "b459277b-b67b-49fc-a093-00ef984883d6",
+      "name": "buffStartThink",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "f5a88d12-8e21-411e-a97b-8398d335cecb",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 31
+    },
+    "9": {
+      "name": "hasBuffTag",
+      "UID": "ed2dd8fb-28da-4726-8ced-a240657a17f3",
+      "target": "OWNER",
+      "NodeID": 9,
+      "buffTag": 4
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bc6476a5-e18f-41fa-98dc-526ed30958c3",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Override_Buff",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3d4c0d8c-a5e7-4f61-991d-25b9ebf549cd",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Override_Head_Buff",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "13": {
+      "actionIds": [
+        16,
+        31
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "fa62096d-fdf1-43ab-a818-5e343db59cda",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "14": {
+      "buffId": 9802301,
+      "name": "removeBuff",
+      "UID": "ec72d29c-18c8-4e0f-953f-5a467b7daec2",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        14,
+        30
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "7a2d0332-6ed2-4884-9a4b-fdc5018e1f47",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "ffae9959-231f-4ab5-ad41-b496a13b3b6f",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Override_Buff",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "buffId": 9802301,
+      "name": "removeBuff",
+      "UID": "8da61ed0-1c4e-4976-836a-8948d56d29ce",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "calcInfo": {
+        "bp_cur": -500
+      },
+      "name": "calcResult",
+      "UID": "c390a456-ff13-4cee-b33f-1d9b5abab57c",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "UID": "fb61bb73-e244-4e28-a229-fa8451b1f791",
+      "name": "hideBubbleMsg",
+      "msgId": 2116,
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "c41ae38e-3e91-4e38-af97-c4370a59f92f",
+      "name": "hideBubbleMsg",
+      "msgId": 2127,
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "f9cbadc2-170d-44f7-b34a-e6c35d916d58",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 30
+    },
+    "32": {
+      "key": "80023_Bianshen",
+      "name": "applyMaterialEffect",
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "2dda64a9-ea00-4959-8b59-1b032f88b4ad",
+      "name": "removeMaterialEffect",
+      "key": "80023_Bianshen",
+      "NodeID": 33
+    },
+    "12": {
+      "name": "hasBuffTag",
+      "UID": "7e5b327d-f2df-433c-9515-2decd8a90492",
+      "target": "OWNER",
+      "NodeID": 12,
+      "buffTag": 6
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "d1ce2b34-19da-40c5-97db-d89049cdc770",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Override_Head_Buff",
+      "target": "OWNER",
+      "NodeID": 23
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    33,
+    25,
+    23,
+    28,
+    29
+  ],
+  "onBuffStartIds": [
+    8,
+    6,
+    32,
+    21,
+    22,
+    27
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "1000": {
+    "DelayCreationTime": 5,
+    "LandingSandboxID": 72036473,
+    "impactPrefabResID": "$P_LevelItem_Tem_Eff_Env_Level_IOT_SceneObject_LightShaft.prefab",
+    "meteorPrefabResID": "$P_LevelItem_Eff_ChainBurst_Lightning_yellow.prefab",
+    "meteorRotation": [
+      0,
+      0,
+      0
+    ],
+    "meteorWorldTransform": [
+      -1463.67639,
+      50.7299995,
+      1561.73242
+    ],
+    "editorName": "测试用第一个流星临时资源"
+  },
+  "1004": {
+    "DelayCreationTime": 6.8,
+    "LandingSandboxID": 72123844,
+    "impactPrefabResID": "$P_Eff_Env_Level_IOT_IridescentLightPillar_01.prefab",
+    "meteorPrefabResID": "$P_Eff_Env_Level_IOT_IridescentMeteor_01.prefab",
+    "meteorRotation": [
+      349.285828,
+      15.8380833,
+      33.2379532
+    ],
+    "meteorWorldTransform": [
+      -1634.56995,
+      24.4400005,
+      1620.13
+    ],
+    "editorName": "正式虹光流星_鲸骨两肋骨间_直流星斜飞_01"
+  },
+  "1002": {
+    "DelayCreationTime": 2.4,
+    "LandingSandboxID": 72045189,
+    "impactPrefabResID": "$P_LevelItem_Tem_Eff_Env_Level_IOT_SceneObject_LightShaft.prefab",
+    "meteorPrefabResID": "$P_LevelItem_Eff_ChainBurst_Lightning_yellow.prefab",
+    "meteorRotation": [
+      0,
+      0,
+      0
+    ],
+    "meteorWorldTransform": [
+      -1630.64197,
+      24.0129833,
+      1627.17456
+    ],
+    "editorName": "测试用第3个流星临时资源"
+  },
+  "1006": {
+    "DelayCreationTime": 6.8,
+    "LandingSandboxID": 73272893,
+    "impactPrefabResID": "$P_Eff_Env_Level_IOT_IridescentLightPillar_01.prefab",
+    "meteorPrefabResID": "$P_Eff_Env_Level_IOT_IridescentMeteor_01.prefab",
+    "meteorRotation": [
+      25.894,
+      26.442,
+      48.712
+    ],
+    "meteorWorldTransform": [
+      -1412.45,
+      94.19,
+      1396.63
+    ],
+    "editorName": "正式虹光流星_大树边上_直流星斜飞_03"
+  },
+  "1007": {
+    "DelayCreationTime": 6.8,
+    "LandingSandboxID": 73297243,
+    "impactPrefabResID": "$P_Eff_Env_Level_IOT_IridescentLightPillar_01.prefab",
+    "meteorPrefabResID": "$P_Eff_Env_Level_IOT_IridescentMeteor_01.prefab",
+    "meteorRotation": [
+      0,
+      0,
+      31.685
+    ],
+    "meteorWorldTransform": [
+      -703.9622,
+      124.5948,
+      684.9374
+    ],
+    "editorName": "正式虹光流星_大树边上_直流星斜飞_03"
+  },
+  "1008": {
+    "DelayCreationTime": 6.8,
+    "LandingSandboxID": 88131270,
+    "impactPrefabResID": "$P_Eff_Env_Level_IOT_IridescentLightPillar_01.prefab",
+    "meteorPrefabResID": "$P_Eff_Env_Level_IOT_IridescentMeteor_01.prefab",
+    "meteorRotation": [
+      27.8,
+      1.03,
+      72.7
+    ],
+    "meteorWorldTransform": [
+      -1352.4931640625,
+      101.1940078,
+      1273.33
+    ],
+    "editorName": "正式虹光流星_大树边上_直流星斜飞_03"
+  },
+  "1003": {
+    "DelayCreationTime": 6.8,
+    "LandingSandboxID": 72045189,
+    "impactPrefabResID": "$Eff_Env_Level_IOT_WhaleBeach_LightPillar_01.prefab",
+    "meteorPrefabResID": "$Eff_Env_Level_IOT_WhaleBeach_Meteor_01.prefab",
+    "meteorRotation": [
+      339.989868,
+      11.9777479,
+      17.8437805
+    ],
+    "meteorWorldTransform": [
+      -1630.64197,
+      24.0129833,
+      1627.17456
+    ],
+    "editorName": "正式贝壳星流星"
+  },
+  "1001": {
+    "DelayCreationTime": 2.4,
+    "LandingSandboxID": 72045194,
+    "impactPrefabResID": "$P_LevelItem_Tem_Eff_Env_Level_IOT_SceneObject_LightShaft.prefab",
+    "meteorPrefabResID": "$P_LevelItem_Eff_ChainBurst_Lightning_yellow.prefab",
+    "meteorRotation": [
+      0,
+      0,
+      0
+    ],
+    "meteorWorldTransform": [
+      -1546.302,
+      25.1654739,
+      1615.85156
+    ],
+    "editorName": "测试用第2个流星临时资源"
+  },
+  "1": {
+    "DelayCreationTime": 10,
+    "LandingSandboxID": 101,
+    "impactPrefabResID": "ccc",
+    "meteorPrefabResID": "bbb",
+    "meteorRotation": [
+      0,
+      0,
+      0
+    ],
+    "meteorWorldTransform": [
+      100,
+      100,
+      100
+    ],
+    "editorName": "aaa"
+  },
+  "1005": {
+    "DelayCreationTime": 6.8,
+    "LandingSandboxID": 72123664,
+    "impactPrefabResID": "$P_Eff_Env_Level_IOT_IridescentLightPillar_01.prefab",
+    "meteorPrefabResID": "$P_Eff_Env_Level_IOT_IridescentMeteor_01.prefab",
+    "meteorRotation": [
+      64.8728561,
+      335.1315,
+      5.47145271
+    ],
+    "meteorWorldTransform": [
+      -1581.93298,
+      46.6780014,
+      1655.71997
+    ],
+    "editorName": "正式虹光流星_鲸骨珊瑚上_直流星斜飞_02"
+  }
+}

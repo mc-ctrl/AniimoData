@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "2": {
+      "UID": "70078701-23d7-4a91-9f68-563ad359041d",
+      "target": "CURPET",
+      "name": "stopFly",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_11125",
+  "dynamicRPCStates": {},
+  "UID": "6e1b1382-3a03-4b2d-97c2-ab1266bae04b",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

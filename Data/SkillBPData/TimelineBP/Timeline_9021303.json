@@ -1,0 +1,102 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.01,
+      "NodeID": 4,
+      "UID": "df14e51f-ecea-4f74-bb28-bd8b7551fba2"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7f854408-0f38-488b-8f44-ee0d3241ad79",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Attack_01",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "time": 0.01,
+      "rotateSpeed": 3600,
+      "name": "rotateTo",
+      "UID": "aa3e1065-a58f-47f9-850a-6bf5ad08cdf0",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 10
+    },
+    "7": {
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.5,
+      "NodeID": 7,
+      "UID": "b648b556-0e0d-42e8-b963-0778437f4012"
+    },
+    "8": {
+      "duration": 4,
+      "target": "OWNER",
+      "NodeID": 8,
+      "UID": "2537de95-b615-4552-b07f-5736c87b5156",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Attack_01",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8.01667,
+      "NodeID": 9,
+      "UID": "e55ecb30-7b60-4bd1-a57c-a26a071c35a5"
+    },
+    "13": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "b2466beb-2456-4f18-bc45-42c1c9055f1a",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "2": {
+      "duration": 12,
+      "target": "OWNER",
+      "NodeID": 2,
+      "UID": "fd771f93-1a92-4e9b-a3a2-04377ce414e4",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "12": {
+      "UID": "d9bebbd8-8744-4013-ab70-1669e8d1bdec",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13,
+          10
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_9021303",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    12,
+    7,
+    9,
+    4
+  ],
+  "layer": "Base",
+  "length": 35
+}

@@ -1,0 +1,53 @@
+{
+  "canClimb": {
+    "levelMax": 3,
+    "name": 1920781034,
+    "speed": [
+      1.5,
+      2,
+      2.5
+    ],
+    "icon": [
+      "$UI_Icon_PetChar_Climb.png"
+    ],
+    "levelMin": 1,
+    "priority": 2
+  },
+  "canFly": {
+    "levelMax": 3,
+    "name": 1152332783,
+    "icon": [
+      "$UI_Icon_PetChar_Glide.png"
+    ],
+    "levelMin": 1,
+    "priority": 0
+  },
+  "canGlide": {
+    "levelMax": 3,
+    "name": 2000320107,
+    "speed": [
+      5,
+      6,
+      7
+    ],
+    "icon": [
+      "$UI_Icon_PetChar_Glide.png"
+    ],
+    "levelMin": 1,
+    "priority": 3
+  },
+  "canSwim": {
+    "levelMax": 3,
+    "name": 2002923889,
+    "speed": [
+      3,
+      4,
+      5
+    ],
+    "icon": [
+      "$UI_Icon_PetChar_Swim.png"
+    ],
+    "levelMin": 1,
+    "priority": 1
+  }
+}

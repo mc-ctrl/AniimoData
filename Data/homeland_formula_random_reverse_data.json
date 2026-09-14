@@ -1,0 +1,614 @@
+{
+  "4030108": {
+    "formulaId": 4001068,
+    "rType": 6
+  },
+  "4030109": {
+    "formulaId": 4001068,
+    "rType": 1
+  },
+  "4030110": {
+    "formulaId": 4001068,
+    "rType": 4
+  },
+  "4030111": {
+    "formulaId": 4001068,
+    "rType": 5
+  },
+  "4030112": {
+    "formulaId": 4001068,
+    "rType": 7
+  },
+  "4030121": {
+    "formulaId": 4001015,
+    "rType": 2
+  },
+  "4030122": {
+    "formulaId": 4001015,
+    "rType": 3
+  },
+  "4030123": {
+    "formulaId": 4001015,
+    "rType": 6
+  },
+  "4030124": {
+    "formulaId": 4001015,
+    "rType": 1
+  },
+  "4030016": {
+    "formulaId": 4001001,
+    "rType": 6
+  },
+  "4030017": {
+    "formulaId": 4001001,
+    "rType": 1
+  },
+  "4030018": {
+    "formulaId": 4001001,
+    "rType": 4
+  },
+  "4030019": {
+    "formulaId": 4001001,
+    "rType": 5
+  },
+  "4030020": {
+    "formulaId": 4001001,
+    "rType": 7
+  },
+  "4030021": {
+    "formulaId": 4001003,
+    "rType": 2
+  },
+  "4030022": {
+    "formulaId": 4001003,
+    "rType": 3
+  },
+  "4030023": {
+    "formulaId": 4001003,
+    "rType": 6
+  },
+  "4001001": {
+    "formulaId": 4001001,
+    "rType": 0
+  },
+  "4001002": {
+    "formulaId": 4001002,
+    "rType": 0
+  },
+  "4030025": {
+    "formulaId": 4001003,
+    "rType": 4
+  },
+  "4030000": {
+    "formulaId": 4001000,
+    "rType": 2
+  },
+  "4030027": {
+    "formulaId": 4001003,
+    "rType": 7
+  },
+  "4030001": {
+    "formulaId": 4001000,
+    "rType": 3
+  },
+  "4001007": {
+    "formulaId": 4001007,
+    "rType": 0
+  },
+  "4030029": {
+    "formulaId": 4001004,
+    "rType": 3
+  },
+  "4001009": {
+    "formulaId": 4001009,
+    "rType": 0
+  },
+  "4030030": {
+    "formulaId": 4001004,
+    "rType": 6
+  },
+  "4030004": {
+    "formulaId": 4001000,
+    "rType": 4
+  },
+  "4030031": {
+    "formulaId": 4001004,
+    "rType": 1
+  },
+  "4030006": {
+    "formulaId": 4001000,
+    "rType": 7
+  },
+  "4030033": {
+    "formulaId": 4001004,
+    "rType": 5
+  },
+  "4030034": {
+    "formulaId": 4001004,
+    "rType": 7
+  },
+  "4030035": {
+    "formulaId": 4001005,
+    "rType": 2
+  },
+  "4030036": {
+    "formulaId": 4001005,
+    "rType": 3
+  },
+  "4030037": {
+    "formulaId": 4001005,
+    "rType": 6
+  },
+  "4030011": {
+    "formulaId": 4001002,
+    "rType": 4
+  },
+  "4030012": {
+    "formulaId": 4001002,
+    "rType": 5
+  },
+  "4030039": {
+    "formulaId": 4001005,
+    "rType": 4
+  },
+  "4030040": {
+    "formulaId": 4001005,
+    "rType": 5
+  },
+  "4030041": {
+    "formulaId": 4001005,
+    "rType": 7
+  },
+  "4030042": {
+    "formulaId": 4001009,
+    "rType": 2
+  },
+  "4030043": {
+    "formulaId": 4001009,
+    "rType": 3
+  },
+  "4030044": {
+    "formulaId": 4001009,
+    "rType": 6
+  },
+  "4030045": {
+    "formulaId": 4001009,
+    "rType": 1
+  },
+  "4030046": {
+    "formulaId": 4001009,
+    "rType": 4
+  },
+  "4030047": {
+    "formulaId": 4001009,
+    "rType": 5
+  },
+  "4030048": {
+    "formulaId": 4001009,
+    "rType": 7
+  },
+  "4030049": {
+    "formulaId": 4001007,
+    "rType": 2
+  },
+  "4030050": {
+    "formulaId": 4001007,
+    "rType": 3
+  },
+  "4030051": {
+    "formulaId": 4001007,
+    "rType": 6
+  },
+  "4030052": {
+    "formulaId": 4001007,
+    "rType": 1
+  },
+  "4030053": {
+    "formulaId": 4001007,
+    "rType": 4
+  },
+  "4030054": {
+    "formulaId": 4001007,
+    "rType": 5
+  },
+  "4030055": {
+    "formulaId": 4001007,
+    "rType": 7
+  },
+  "4030056": {
+    "formulaId": 4001013,
+    "rType": 2
+  },
+  "4030057": {
+    "formulaId": 4001013,
+    "rType": 3
+  },
+  "4030058": {
+    "formulaId": 4001013,
+    "rType": 6
+  },
+  "4001062": {
+    "formulaId": 4001062,
+    "rType": 0
+  },
+  "4030059": {
+    "formulaId": 4001013,
+    "rType": 1
+  },
+  "4030060": {
+    "formulaId": 4001013,
+    "rType": 4
+  },
+  "4030061": {
+    "formulaId": 4001013,
+    "rType": 5
+  },
+  "4030062": {
+    "formulaId": 4001013,
+    "rType": 7
+  },
+  "4030063": {
+    "formulaId": 4001014,
+    "rType": 2
+  },
+  "4030064": {
+    "formulaId": 4001014,
+    "rType": 3
+  },
+  "4030065": {
+    "formulaId": 4001014,
+    "rType": 6
+  },
+  "4030066": {
+    "formulaId": 4001014,
+    "rType": 1
+  },
+  "4030067": {
+    "formulaId": 4001014,
+    "rType": 4
+  },
+  "4030068": {
+    "formulaId": 4001014,
+    "rType": 5
+  },
+  "4030069": {
+    "formulaId": 4001014,
+    "rType": 7
+  },
+  "4030070": {
+    "formulaId": 4001010,
+    "rType": 2
+  },
+  "4030071": {
+    "formulaId": 4001010,
+    "rType": 3
+  },
+  "4030072": {
+    "formulaId": 4001010,
+    "rType": 6
+  },
+  "4030073": {
+    "formulaId": 4001010,
+    "rType": 1
+  },
+  "4030074": {
+    "formulaId": 4001010,
+    "rType": 4
+  },
+  "4030075": {
+    "formulaId": 4001010,
+    "rType": 5
+  },
+  "4030076": {
+    "formulaId": 4001010,
+    "rType": 7
+  },
+  "4030077": {
+    "formulaId": 4001016,
+    "rType": 2
+  },
+  "4030078": {
+    "formulaId": 4001016,
+    "rType": 3
+  },
+  "4030079": {
+    "formulaId": 4001016,
+    "rType": 6
+  },
+  "4030080": {
+    "formulaId": 4001016,
+    "rType": 1
+  },
+  "4030081": {
+    "formulaId": 4001016,
+    "rType": 4
+  },
+  "4030082": {
+    "formulaId": 4001016,
+    "rType": 5
+  },
+  "4030083": {
+    "formulaId": 4001016,
+    "rType": 7
+  },
+  "4030084": {
+    "formulaId": 4001062,
+    "rType": 2
+  },
+  "4030085": {
+    "formulaId": 4001062,
+    "rType": 3
+  },
+  "4030086": {
+    "formulaId": 4001062,
+    "rType": 6
+  },
+  "4030087": {
+    "formulaId": 4001062,
+    "rType": 1
+  },
+  "4030088": {
+    "formulaId": 4001062,
+    "rType": 4
+  },
+  "4030089": {
+    "formulaId": 4001062,
+    "rType": 5
+  },
+  "4030090": {
+    "formulaId": 4001062,
+    "rType": 7
+  },
+  "4030091": {
+    "formulaId": 4001062,
+    "rType": 8
+  },
+  "4001010": {
+    "formulaId": 4001010,
+    "rType": 0
+  },
+  "4030003": {
+    "formulaId": 4001000,
+    "rType": 1
+  },
+  "4001013": {
+    "formulaId": 4001013,
+    "rType": 0
+  },
+  "4001014": {
+    "formulaId": 4001014,
+    "rType": 0
+  },
+  "4001016": {
+    "formulaId": 4001016,
+    "rType": 0
+  },
+  "4030010": {
+    "formulaId": 4001002,
+    "rType": 1
+  },
+  "4030038": {
+    "formulaId": 4001005,
+    "rType": 1
+  },
+  "4030013": {
+    "formulaId": 4001002,
+    "rType": 7
+  },
+  "4030014": {
+    "formulaId": 4001001,
+    "rType": 2
+  },
+  "4001000": {
+    "formulaId": 4001000,
+    "rType": 0
+  },
+  "4001068": {
+    "formulaId": 4001068,
+    "rType": 0
+  },
+  "4030015": {
+    "formulaId": 4001001,
+    "rType": 3
+  },
+  "4001004": {
+    "formulaId": 4001004,
+    "rType": 0
+  },
+  "4001003": {
+    "formulaId": 4001003,
+    "rType": 0
+  },
+  "4001005": {
+    "formulaId": 4001005,
+    "rType": 0
+  },
+  "4030005": {
+    "formulaId": 4001000,
+    "rType": 5
+  },
+  "4030007": {
+    "formulaId": 4001002,
+    "rType": 2
+  },
+  "4001067": {
+    "formulaId": 4001067,
+    "rType": 0
+  },
+  "4030008": {
+    "formulaId": 4001002,
+    "rType": 3
+  },
+  "4030002": {
+    "formulaId": 4001000,
+    "rType": 6
+  },
+  "4030125": {
+    "formulaId": 4001015,
+    "rType": 4
+  },
+  "4030032": {
+    "formulaId": 4001004,
+    "rType": 4
+  },
+  "4030126": {
+    "formulaId": 4001015,
+    "rType": 5
+  },
+  "4030026": {
+    "formulaId": 4001003,
+    "rType": 5
+  },
+  "4030127": {
+    "formulaId": 4001015,
+    "rType": 7
+  },
+  "4001015": {
+    "formulaId": 4001015,
+    "rType": 0
+  },
+  "4030128": {
+    "formulaId": 4001015,
+    "rType": 8
+  },
+  "4030009": {
+    "formulaId": 4001002,
+    "rType": 6
+  },
+  "4030129": {
+    "formulaId": 4001000,
+    "rType": 8
+  },
+  "4001066": {
+    "formulaId": 4001066,
+    "rType": 0
+  },
+  "4030130": {
+    "formulaId": 4001002,
+    "rType": 8
+  },
+  "4030092": {
+    "formulaId": 4001066,
+    "rType": 2
+  },
+  "4030131": {
+    "formulaId": 4001001,
+    "rType": 8
+  },
+  "4030093": {
+    "formulaId": 4001066,
+    "rType": 3
+  },
+  "4030132": {
+    "formulaId": 4001003,
+    "rType": 8
+  },
+  "4030094": {
+    "formulaId": 4001066,
+    "rType": 6
+  },
+  "4030133": {
+    "formulaId": 4001004,
+    "rType": 8
+  },
+  "4030095": {
+    "formulaId": 4001066,
+    "rType": 1
+  },
+  "4030134": {
+    "formulaId": 4001005,
+    "rType": 8
+  },
+  "4030096": {
+    "formulaId": 4001066,
+    "rType": 4
+  },
+  "4030135": {
+    "formulaId": 4001009,
+    "rType": 8
+  },
+  "4030097": {
+    "formulaId": 4001066,
+    "rType": 5
+  },
+  "4030136": {
+    "formulaId": 4001007,
+    "rType": 8
+  },
+  "4030098": {
+    "formulaId": 4001066,
+    "rType": 7
+  },
+  "4030137": {
+    "formulaId": 4001013,
+    "rType": 8
+  },
+  "4030099": {
+    "formulaId": 4001067,
+    "rType": 2
+  },
+  "4030138": {
+    "formulaId": 4001014,
+    "rType": 8
+  },
+  "4030100": {
+    "formulaId": 4001067,
+    "rType": 3
+  },
+  "4030139": {
+    "formulaId": 4001010,
+    "rType": 8
+  },
+  "4030101": {
+    "formulaId": 4001067,
+    "rType": 6
+  },
+  "4030140": {
+    "formulaId": 4001016,
+    "rType": 8
+  },
+  "4030102": {
+    "formulaId": 4001067,
+    "rType": 1
+  },
+  "4030141": {
+    "formulaId": 4001066,
+    "rType": 8
+  },
+  "4030103": {
+    "formulaId": 4001067,
+    "rType": 4
+  },
+  "4030142": {
+    "formulaId": 4001067,
+    "rType": 8
+  },
+  "4030104": {
+    "formulaId": 4001067,
+    "rType": 5
+  },
+  "4030143": {
+    "formulaId": 4001068,
+    "rType": 8
+  },
+  "4030105": {
+    "formulaId": 4001067,
+    "rType": 7
+  },
+  "4030028": {
+    "formulaId": 4001004,
+    "rType": 2
+  },
+  "4030106": {
+    "formulaId": 4001068,
+    "rType": 2
+  },
+  "4030024": {
+    "formulaId": 4001003,
+    "rType": 1
+  },
+  "4030107": {
+    "formulaId": 4001068,
+    "rType": 3
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "c9dd8333-7df4-40b2-ac36-dbef25a8a762",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          20,
+          38
+        ]
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "de1a2316-0ba6-43dd-b60d-fe3c4f08f599",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          37,
+          17
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "60aed95a-32af-465c-9109-c1a35672cf1c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "doPetsActions",
+      "UID": "3fcfc82d-93e1-4990-98cc-b89eb1b2b5d3",
+      "target": "TARGET",
+      "NodeID": 10
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 15,
+      "UID": "7aeaf09e-69f9-4086-bb71-246a04c47a18"
+    },
+    "38": {
+      "key": "12310310",
+      "name": "setCacheVal",
+      "UID": "30f27822-5777-4590-b413-21cdfd5db9d2",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 38
+    },
+    "17": {
+      "UID": "13fde584-2bcc-43b0-a914-62ad88cfd69a",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 17
+    },
+    "9": {
+      "target": "TARGET",
+      "duration": 0.5,
+      "buffId": 2123103,
+      "NodeID": 9,
+      "UID": "2dc00d00-89dc-4125-b955-372d1ee0c6a2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "37": {
+      "key": "12310310",
+      "name": "setCacheVal",
+      "UID": "432f7718-882b-4448-aa26-446641528580",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 37
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "16e0ac69-457d-44dd-9c35-68fb95200ff1",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Dance"
+    },
+    "11": {
+      "UID": "259ce189-ce28-4145-99aa-a76e3d098404",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "472a86ee-613b-4f5a-ba5e-b16cbc033f17",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "canMove": 0
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 12,
+      "UID": "295dffd1-8121-43e1-9985-a1dd9486367a"
+    }
+  },
+  "BPName": "ability_12310310",
+  "NodeID": 6,
+  "UID": "565084b5-9852-411f-8059-eb08aec2712d",
+  "eventIds": [
+    12,
+    15,
+    4,
+    22
+  ],
+  "layer": "Base",
+  "length": 1.67
+}

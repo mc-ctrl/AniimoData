@@ -1,0 +1,130 @@
+{
+  "duration": 5,
+  "calcResultNodeId": 55,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "gravityRatio": 2,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "effectId": "Eff_Parmon_10513_Skill_Bullet_Bullet01",
+  "maxHitNum": 0,
+  "maxMoveSpeed": 12,
+  "relation": 2,
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    57,
+    68,
+    67,
+    86
+  ],
+  "NodeID": 0,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "55": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 15130100,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "a69f8e87-98da-4681-840f-053817d6643f",
+      "target": "TARGET",
+      "NodeID": 55,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 5,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Wind_Blunt"
+      }
+    },
+    "67": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a49db337-5f1e-4edb-aec7-2a02389a1bcf",
+      "effectId": "Eff_Parmon_10513_Skill_Bullet_Bomb02",
+      "speed": 1,
+      "NodeID": 67
+    },
+    "86": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "812881ec-cd1e-41a1-bd04-d8150020964c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10513_Skill_Bullet_Bomb01",
+      "NodeID": 86
+    },
+    "68": {
+      "name": "stopEffectStr",
+      "UID": "49d41f8e-919e-4db6-a625-74f23b1d9ade",
+      "effectId": "Eff_Parmon_10513_Skill_Bullet_State01",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "57": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 55,
+      "NodeID": 57,
+      "UID": "984a9006-e0b7-4196-a225-4d4946dbae8c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        55,
+        69
+      ]
+    },
+    "69": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 915130101,
+      "NodeID": 69,
+      "UID": "129d9da7-da8c-4a67-9118-56bc8612791b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "tickInterval": 0.05,
+  "BPName": "ability_15130100",
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Wind_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

@@ -1,0 +1,201 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11115",
+  "NodeID": 1,
+  "UID": "6e1b1382-3a03-4b2d-97c2-ab1266bae04b",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "38": {
+      "name": "stopSoundStr",
+      "UID": "2fee9211-cade-4b51-94f4-39ebc18f4cd1",
+      "soundId": "SFX_Parmon_10351_CatchHoney",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "name": "stopSoundStr",
+      "UID": "a0dd5c8a-3de9-4c43-950a-b12ad5b5072d",
+      "soundId": "SFX_Parmon_10351_DeliveryHoney",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4ed4036e-da26-46c1-931d-7ca5e4fbf63d",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Collect",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "7": {
+      "name": "setSubModelVisible",
+      "UID": "888e3467-89ef-48f7-bca6-96353a56debc",
+      "NodeID": 7,
+      "subModelName": "M_Parmon_10351_Body01_fnr",
+      "visible": true
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ae7008b5-eee6-49b1-afad-3f308324aaca",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Delivery",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "31": {
+      "key": "FallingSleep",
+      "duration": 16.5,
+      "NodeID": 31,
+      "UID": "8c0121bd-4b17-47de-b541-86f762492a65",
+      "name": "addTimer"
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "0722e02c-59d3-4696-941f-2478a9cffd93",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "2": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "da020391-dcea-4554-af4e-8795d01584a5",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 2
+    },
+    "22": {
+      "tag": "TE_Wild_DewyHasHoney",
+      "name": "removeEntityTag",
+      "UID": "7140da47-fead-41ae-9581-687a47d63b7b",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "4": {
+      "key": "Catch",
+      "duration": 0,
+      "actionIds": [
+        2,
+        6,
+        32,
+        7
+      ],
+      "NodeID": 4,
+      "UID": "698e0180-7fe0-4237-b14b-14934a527d5d",
+      "name": "addTimer"
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "4407689d-2896-4575-9c60-ce15911c976b",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Collect",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "10": {
+      "key": "Delivery",
+      "duration": 2,
+      "actionIds": [
+        23,
+        8,
+        33,
+        35
+      ],
+      "NodeID": 10,
+      "UID": "77c20eba-0ecc-4d62-b5c9-86bcbb255944",
+      "name": "addTimer"
+    },
+    "25": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "768145c8-c9e0-4ab6-b636-de381f5f3d58",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 25
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "f1ba92e2-75d7-4ed1-a5b7-0e54c2a3f3b1",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Delivery",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "6f5c55ad-223f-47e4-88be-5b2388bdd84c",
+      "effectId": "Eff_Parmon_10351_CatchHoney_DeliveryFailed",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "name": "setSubModelVisible",
+      "UID": "19d812cc-e401-4e91-a1cc-4acab4a9c16d",
+      "NodeID": 28,
+      "subModelName": "M_Parmon_10351_Body01_fnr",
+      "visible": false
+    },
+    "40": {
+      "name": "stopSoundStr",
+      "UID": "9cec9d2c-3ba5-4df5-8d30-cfc814a4d9d6",
+      "soundId": "SFX_Parmon_10351_DeliveryFailed",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "35": {
+      "name": "stopSoundStr",
+      "UID": "3e6e743c-fdd1-43bf-86e7-21deba8d7c9a",
+      "soundId": "SFX_Parmon_10351_CatchHoney",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e587696e-0ee5-449c-ace3-f5a9d505bed1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10351_CatchHoney",
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "79bc8d67-15dc-4558-9268-b616d3d5fac2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10351_DeliveryHoney",
+      "NodeID": 33
+    },
+    "13": {
+      "key": "DeliveryFailed",
+      "duration": 15,
+      "NodeID": 13,
+      "UID": "62081ed6-1bd1-44df-98a0-4dabdff463c0",
+      "name": "addTimer"
+    },
+    "23": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "8a3e1e71-f41d-48aa-aad3-23fe7aee7e18",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 23
+    }
+  },
+  "onBuffDestroyIds": [
+    24,
+    25,
+    26,
+    20,
+    27,
+    28,
+    22,
+    38,
+    39,
+    40
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    10,
+    13,
+    31
+  ]
+}

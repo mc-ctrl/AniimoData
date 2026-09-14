@@ -1,0 +1,143 @@
+{
+  "61213263": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 61214411,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_神庙"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "Level_FB_Temple_13",
+    "sightLevelType": 512,
+    "spawners": [
+      61213910,
+      61213998
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 512,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2013/Sandbox_61213263_GraphRef.asset",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "徐一乘",
+    "forceSync": true,
+    "id": 61213263,
+    "levelItems": {
+      "61214088": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_EndingMachine_SinglePlayer",
+        "position": [
+          0,
+          100,
+          77.5
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 61214088,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "61214251": {
+        "majorCompId": 42742113,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          0,
+          83,
+          40
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 61214251,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "42742113": {
+            "blackScreenId": 2000,
+            "playerBloodProportion": 0.2
+          }
+        },
+        "configId": 8,
+        "scale": [
+          80,
+          12,
+          120
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68915857": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Temple_StoneStatueBase_BlessTip",
+        "position": [
+          0.35,
+          102,
+          -9.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 68915857,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 377,
+        "defaultValue": {
+          "canReturn": false,
+          "noticeKey": "STATUEGUIDE_TEMPLE_BlESS",
+          "realCharacters": "BLESSING",
+          "tempPetTemplateId": 0,
+          "state": 1,
+          "guideId": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

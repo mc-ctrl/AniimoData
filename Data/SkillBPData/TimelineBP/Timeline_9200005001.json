@@ -1,0 +1,146 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "2b2f691d-eaa8-46db-98a6-1f1caa61eda2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          11,
+          28
+        ]
+      },
+      "NodeID": 4
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 10,
+      "UID": "e832d2bb-4b62-4484-9e3e-58a1aae23cf9"
+    },
+    "15": {
+      "UID": "adaa847c-1bfe-4ded-bfd9-39eb16efcdb9",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13,
+          31
+        ]
+      },
+      "NodeID": 15
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "ac641794-c651-4bce-911c-13d38f7ac8c6",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Heal",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.28,
+      "NodeID": 30,
+      "UID": "647cec6a-df6a-4fae-b620-0548c3d0b50c"
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ecf4e1ea-7eed-4ed1-a27d-cd21177a47fb",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Release",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e5e21ba4-cbf3-421d-9d3b-51a8d12d63ea",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Appear",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "9": {
+      "UID": "44acdba6-ceb4-4573-84c9-3a93ab315e13",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 9
+    },
+    "18": {
+      "rotation": "ToTarget",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "templateId": 9200005001,
+      "name": "createProjectile",
+      "UID": "2b44cd42-c17f-48b0-bd94-f602e66fb854",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 18
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.47,
+      "NodeID": 19,
+      "UID": "c2d6e586-8447-42fd-a706-4422d622fb6e"
+    },
+    "11": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "81829e13-f16f-4db4-b97b-b40828abed13",
+      "target": "OWNER",
+      "NodeID": 11,
+      "animId": "Skill_FirstAid"
+    },
+    "13": {
+      "UID": "fc13d08f-2b09-4829-9e8d-e9933661fa82",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "2": {
+      "lockTarget": "CURPET",
+      "name": "lockTarget",
+      "UID": "ebf4ac98-f969-4105-93f2-2771a96ecdb8",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_9200005",
+  "NodeID": 6,
+  "UID": "9b20e0a4-d102-44f8-ad9c-18899e79e983",
+  "eventIds": [
+    4,
+    30,
+    19,
+    10,
+    15
+  ],
+  "layer": "Base",
+  "length": 1.667
+}

@@ -1,0 +1,315 @@
+{
+  "1016": {
+    "function1": "TOWER_PETS",
+    "function2": "TOWER_BUFF"
+  },
+  "0": {
+    "function3": "PETENTRY",
+    "function4": "CASHSHOP",
+    "function5": "MAP",
+    "function6": "TAKEPHOTO",
+    "function7": "SPECIALTRAIN",
+    "function8": "SCHOOLGUIDE",
+    "function1": "SeasonLobby",
+    "function2": "ACTIVITYCENTER"
+  },
+  "2002": {
+    "function1": "TAKEPHOTO"
+  },
+  "2003": {
+    "function1": "TAKEPHOTO"
+  },
+  "2004": {
+    "function1": "TAKEPHOTO"
+  },
+  "2005": {
+    "function1": "TAKEPHOTO"
+  },
+  "20032": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "2006": {
+    "function1": "TAKEPHOTO"
+  },
+  "20034": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "2007": {
+    "function1": "TAKEPHOTO"
+  },
+  "20036": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "2008": {
+    "function1": "TAKEPHOTO"
+  },
+  "20038": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20039": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20041": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "2010": {
+    "function1": "TAKEPHOTO"
+  },
+  "20043": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "2011": {
+    "function1": "TAKEPHOTO"
+  },
+  "20045": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "1070": {
+    "function3": "APPEARANCE",
+    "function4": "CONFIG",
+    "function1": "PLAYERENHANCEMENT",
+    "function2": "PETENTRY"
+  },
+  "20047": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20048": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20049": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20050": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20051": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20052": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20053": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20054": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20055": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20056": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20057": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20058": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20059": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20060": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "515": {
+    "function3": "BAG",
+    "function4": "SeasonLobby",
+    "function5": "ACTIVITYCENTER",
+    "function6": "CASHSHOP",
+    "function7": "MAP",
+    "function8": "TAKEPHOTO",
+    "function1": "HOMELANDLOG",
+    "function2": "HOMELANDPLANTHANDBOOK"
+  },
+  "3000101": {
+    "function3": "HOMECAMPREPORT",
+    "function4": "SeasonLobby",
+    "function5": "ACTIVITYCENTER",
+    "function6": "CASHSHOP",
+    "function7": "MAP",
+    "function8": "TAKEPHOTO",
+    "function1": "HOMECAR_MANAGEMENT",
+    "function2": "STATIONMANAGE"
+  },
+  "2022": {
+    "function1": "TAKEPHOTO"
+  },
+  "2023": {
+    "function1": "TAKEPHOTO"
+  },
+  "2024": {
+    "function1": "TAKEPHOTO"
+  },
+  "413": {
+    "function1": "TAKEPHOTO"
+  },
+  "2026": {
+    "function1": "TAKEPHOTO"
+  },
+  "2027": {
+    "function1": "TAKEPHOTO"
+  },
+  "2028": {
+    "function1": "TAKEPHOTO"
+  },
+  "2029": {
+    "function1": "TAKEPHOTO"
+  },
+  "420": {
+    "function1": "TAKEPHOTO"
+  },
+  "421": {
+    "function1": "TAKEPHOTO"
+  },
+  "513": {
+    "function3": "MAP",
+    "function4": "PETRESEARCH",
+    "function1": "BAG",
+    "function2": "PETENTRY"
+  },
+  "521": {
+    "function3": "ALBUM",
+    "function4": "APPEARANCE",
+    "function5": "TAKEPHOTO",
+    "function1": "PHOTOINVITE",
+    "function2": "PETENTRY"
+  },
+  "550": {
+    "function1": "HOMELANDLOG",
+    "function2": "HOMELANDPLANTHANDBOOK",
+    "function3": "BAG",
+    "function4": "HOMELANDDESIGN",
+    "function5": "HOMELANDSEASON",
+    "function6": "ACTIVITYCENTER",
+    "function7": "MAP",
+    "function8": "TAKEPHOTO",
+    "function9": "HOMELANDREPORT"
+  },
+  "3000100": {
+    "function3": "HOMECAMPREPORT",
+    "function4": "SeasonLobby",
+    "function5": "ACTIVITYCENTER",
+    "function6": "CASHSHOP",
+    "function7": "MAP",
+    "function8": "TAKEPHOTO",
+    "function1": "HOMECAR_MANAGEMENT",
+    "function2": "STATIONMANAGE"
+  },
+  "3000102": {
+    "function3": "HOMECAMPREPORT",
+    "function4": "SeasonLobby",
+    "function5": "ACTIVITYCENTER",
+    "function6": "CASHSHOP",
+    "function7": "MAP",
+    "function8": "TAKEPHOTO",
+    "function1": "HOMECAR_MANAGEMENT",
+    "function2": "STATIONMANAGE"
+  },
+  "3000103": {
+    "function3": "HOMECAMPREPORT",
+    "function4": "SeasonLobby",
+    "function5": "ACTIVITYCENTER",
+    "function6": "CASHSHOP",
+    "function7": "MAP",
+    "function8": "TAKEPHOTO",
+    "function1": "HOMECAR_MANAGEMENT",
+    "function2": "STATIONMANAGE"
+  },
+  "20040": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "3004": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "3005": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "29999": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "2025": {
+    "function1": "TAKEPHOTO"
+  },
+  "2013": {
+    "function1": "TAKEPHOTO"
+  },
+  "8011": {
+    "function1": "TAKEPHOTO"
+  },
+  "20031": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20033": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20035": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20037": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20042": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20044": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "20046": {
+    "function1": "GRABEGG_BAG",
+    "function2": "MAP"
+  },
+  "2021": {
+    "function1": "TAKEPHOTO"
+  },
+  "2020": {
+    "function1": "TAKEPHOTO"
+  },
+  "2019": {
+    "function1": "TAKEPHOTO"
+  },
+  "2018": {
+    "function1": "TAKEPHOTO"
+  },
+  "2017": {
+    "function1": "TAKEPHOTO"
+  },
+  "2016": {
+    "function1": "TAKEPHOTO"
+  },
+  "2015": {
+    "function1": "TAKEPHOTO"
+  }
+}

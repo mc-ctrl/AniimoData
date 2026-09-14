@@ -1,0 +1,277 @@
+{
+  "48463252": {
+    "owner": "汪玉笠",
+    "autoSave": false,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "disposable": false,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 48463263,
+    "levelItems": {
+      "73212121": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container (4)",
+        "position": [
+          0.46,
+          -0.16,
+          -0.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73212121,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72680147": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          0.46,
+          -0.16,
+          -0.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72680147,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72852278": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "狼斗士对话图播完状态机",
+        "position": [
+          0.46,
+          -0.16,
+          -0.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72852278,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91217165": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "宠物列表显示控制",
+        "position": [
+          3.3,
+          -6.59,
+          4.93
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91217165,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72852903": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "走调草消灭计数器",
+        "position": [
+          0.46,
+          -0.16,
+          -0.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72852903,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73442816": {
+        "majorCompId": 0,
+        "owner": "xiaoyu",
+        "EditorName": "P_Item_SceneObject_Tutorial_CheckPoint",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73442816,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72680142": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 72680142,
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "73212120": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "狼斗士附身成功状态机",
+        "position": [
+          0.46,
+          -0.16,
+          -0.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73212120,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 3,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "sightLevel": 64,
+    "spawners": [
+      61677135,
+      72852898,
+      72852900,
+      72852998,
+      73442606,
+      73675693
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1040/Sandbox_48463252_GraphRef.asset",
+    "id": 48463252,
+    "markIconSpawnerId": 0,
+    "chunk": 1019875
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "BPName": "ability_11840905",
+  "NodeID": 1,
+  "UID": "51ad2801-7d20-4ec1-a635-a712b4b97529",
+  "desc": "",
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 11840905001,
+      "name": "setCombatActionTimeline",
+      "UID": "67940b9e-108e-434c-9e9f-c8fc4d5810ad",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 9400103,
+  "name": ""
+}

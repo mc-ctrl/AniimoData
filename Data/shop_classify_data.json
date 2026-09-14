@@ -1,0 +1,394 @@
+{
+  "37": {
+    "type": 1,
+    "classify": [
+      31
+    ]
+  },
+  "38": {
+    "name": 2045428951,
+    "maskRes": "$UI_ARK_Shop_Transition4.png",
+    "pet_modelPos": [
+      0,
+      0,
+      0
+    ],
+    "pet_modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "pet_res": 1026100,
+    "pet_scale": 1,
+    "subtitle": 1968415424,
+    "classify": [
+      16
+    ],
+    "type": 2,
+    "prefabResID": "$P_NPC_Parmon_10261_Ark_Clothing.prefab",
+    "pic": "$P_Clothing_Scene.prefab"
+  },
+  "39": {
+    "type": 1,
+    "classify": [
+      41,
+      42
+    ],
+    "subtitle": 1369310980,
+    "name": 1938972298
+  },
+  "40": {
+    "type": 1,
+    "classify": [
+      44
+    ]
+  },
+  "41": {
+    "type": 1,
+    "classify": [
+      45
+    ],
+    "subtitle": 1578696200,
+    "name": 1413273313
+  },
+  "35": {
+    "type": 1,
+    "classify": [
+      35,
+      48
+    ]
+  },
+  "1": {
+    "type": 1,
+    "classify": [
+      6
+    ]
+  },
+  "2": {
+    "type": 1,
+    "classify": [
+      6
+    ]
+  },
+  "3": {
+    "type": 1,
+    "classify": [
+      6
+    ]
+  },
+  "4": {
+    "name": 2087687983,
+    "maskRes": "$UI_ARK_Shop_Transition3.png",
+    "pet_modelPos": [
+      0,
+      0,
+      0
+    ],
+    "pet_modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "pet_res": 1002400,
+    "pet_scale": 1,
+    "subtitle": 1177267093,
+    "classify": [
+      22
+    ],
+    "type": 2,
+    "prefabResID": "$P_NPC_Parmon_10024_Ark_Supercikw.prefab",
+    "pic": "$P_Supercikw_Scene.prefab"
+  },
+  "5": {
+    "type": 1,
+    "classify": [
+      6,
+      27,
+      63
+    ]
+  },
+  "53": {
+    "type": 1,
+    "classify": [
+      60
+    ]
+  },
+  "6": {
+    "type": 1,
+    "classify": [
+      20,
+      18,
+      8,
+      16
+    ]
+  },
+  "52": {
+    "type": 1,
+    "bgRes": "$UI_Img_HomeCollection_BgSeason.png",
+    "classify": [
+      52
+    ]
+  },
+  "28": {
+    "name": 1187904879,
+    "maskRes": "$UI_ARK_Shop_Transition8.png",
+    "pet_modelPos": [
+      0,
+      0,
+      0
+    ],
+    "pet_modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "pet_res": 1040300,
+    "pet_scale": 0.6,
+    "subtitle": 1113234749,
+    "classify": [
+      32
+    ],
+    "type": 2,
+    "prefabResID": "$P_NPC_Parmon_10403_Ark_PropShop.prefab",
+    "pic": "$P_Propshop_Scene.prefab"
+  },
+  "7": {
+    "type": 1,
+    "classify": [
+      8
+    ]
+  },
+  "50": {
+    "type": 1,
+    "classify": [
+      16
+    ],
+    "name": 1928217604
+  },
+  "8": {
+    "type": 1,
+    "classify": [
+      9
+    ]
+  },
+  "31": {
+    "name": 1779816765,
+    "maskRes": "$UI_ARK_Shop_Transition1.png",
+    "pet_modelPos": [
+      0,
+      0,
+      0.3
+    ],
+    "pet_modelRotation": [
+      0,
+      -12,
+      0
+    ],
+    "pet_res": 1005300,
+    "pet_scale": 0.7,
+    "subtitle": 1622863300,
+    "classify": [
+      30
+    ],
+    "type": 2,
+    "prefabResID": "$P_NPC_Parmon_10053_Ark_Barbecue.prefab",
+    "pic": "$P_Barbecue_Scene.prefab"
+  },
+  "9": {
+    "type": 1,
+    "classify": [
+      10
+    ]
+  },
+  "16": {
+    "type": 1,
+    "classify": [
+      56
+    ]
+  },
+  "48": {
+    "type": 1,
+    "classify": [
+      55
+    ],
+    "subtitle": 1547538516,
+    "name": 2117288343
+  },
+  "11": {
+    "type": 1,
+    "classify": [
+      13
+    ]
+  },
+  "20": {
+    "type": 1,
+    "classify": [
+      20
+    ]
+  },
+  "21": {
+    "type": 1,
+    "classify": [
+      21
+    ]
+  },
+  "47": {
+    "type": 1,
+    "classify": [
+      47
+    ],
+    "subtitle": 2021741571,
+    "name": 1661592005
+  },
+  "23": {
+    "type": 1,
+    "classify": [
+      23,
+      24
+    ]
+  },
+  "46": {
+    "type": 1,
+    "classify": [
+      53,
+      54
+    ],
+    "subtitle": 1315304453,
+    "name": 2140183277
+  },
+  "14": {
+    "type": 1,
+    "classify": [
+      14
+    ]
+  },
+  "10": {
+    "type": 1,
+    "classify": [
+      12
+    ]
+  },
+  "15": {
+    "type": 1,
+    "classify": [
+      18
+    ]
+  },
+  "25": {
+    "type": 1,
+    "classify": [
+      25
+    ]
+  },
+  "26": {
+    "type": 1,
+    "classify": [
+      26,
+      40,
+      59,
+      50
+    ]
+  },
+  "27": {
+    "name": 1822582853,
+    "maskRes": "$UI_ARK_Shop_Transition2.png",
+    "pet_modelPos": [
+      0,
+      0,
+      0
+    ],
+    "pet_modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "pet_res": 1014300,
+    "pet_scale": 0.87,
+    "subtitle": 1343195957,
+    "classify": [
+      16
+    ],
+    "type": 2,
+    "prefabResID": "$P_NPC_Parmon_10143_Ark_Trendytoys.prefab",
+    "pic": "$P_Trendytoys_Scene.prefab"
+  },
+  "17": {
+    "type": 1,
+    "classify": [
+      17
+    ]
+  },
+  "49": {
+    "type": 1,
+    "classify": [
+      58
+    ]
+  },
+  "30": {
+    "type": 1,
+    "classify": [
+      29,
+      57
+    ],
+    "name": 1228942062
+  },
+  "32": {
+    "name": 1387206398,
+    "maskRes": "$UI_ARK_Shop_Transition7.png",
+    "pet_modelPos": [
+      0,
+      0,
+      0
+    ],
+    "pet_modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "pet_res": 1001100,
+    "pet_scale": 1,
+    "subtitle": 1132395136,
+    "classify": [
+      31
+    ],
+    "type": 2,
+    "prefabResID": "$P_NPC_Parmon_10011_Ark_Souvenir.prefab",
+    "pic": "$P_Souvenir_Scene.prefab"
+  },
+  "33": {
+    "name": 1416440329,
+    "maskRes": "$UI_ARK_Shop_Transition5.png",
+    "pet_modelPos": [
+      0,
+      0,
+      0
+    ],
+    "pet_modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "pet_res": 1020100,
+    "pet_scale": 1,
+    "subtitle": 1799356042,
+    "classify": [
+      33
+    ],
+    "type": 2,
+    "prefabResID": "$P_NPC_Parmon_10201_Ark_Toystore.prefab",
+    "pic": "$P_Toystore_Scene.prefab"
+  },
+  "51": {
+    "type": 1,
+    "bgRes": "$UI_Img_HomeCollection_BgSeason.png",
+    "classify": [
+      51
+    ]
+  },
+  "36": {
+    "type": 1,
+    "classify": [
+      36
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "4": {
+    "sort": 2,
+    "icon": "$UI_Icon_PetResearch_RarityCard_Rarity.png",
+    "name": 1512153975
+  },
+  "0": {
+    "sort": 1,
+    "icon": "$UI_ResearchBook_Index_Count2.png",
+    "name": 1477252953
+  },
+  "1": {
+    "sort": 4,
+    "icon": "$UI_ResearchBook_Index_Count4.png",
+    "name": 1545744004
+  },
+  "2": {
+    "sort": 3,
+    "icon": "$UI_Icon_PetResearch_RarityCard_Boss.png",
+    "name": 2034864143
+  }
+}

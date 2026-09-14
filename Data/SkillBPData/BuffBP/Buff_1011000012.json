@@ -1,0 +1,101 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1011000012",
+  "NodeID": 1,
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "onBuffRefreshIds": [
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": [
+        -1,
+        0.4,
+        3
+      ],
+      "templateId": 11020100002,
+      "name": "createEntity",
+      "UID": "cfd905f5-32a1-4741-b521-6dce6565fe9c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "NodeID": 3,
+      "entityName": "Puppet",
+      "stick": 0,
+      "rot": "OWNER",
+      "setLevel": true,
+      "pos": "OWNER"
+    },
+    "6": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -1,
+        0.4,
+        3
+      ],
+      "speed": 1,
+      "NodeID": 6,
+      "UID": "5e327d00-4f24-4ce8-96e9-a564e389dde9",
+      "effectId": "Eff_Parmon_10207_Skill_SummonBomb_Release02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 80000085,
+      "name": "createEntity",
+      "UID": "65de2787-4231-411f-85f6-1d4e9f4c45bc",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "NodeID": 10,
+      "entityName": "Puppet",
+      "stick": 0,
+      "rot": "OWNER",
+      "setLevel": true,
+      "pos": "OWNER"
+    },
+    "5": {
+      "actionIds": [
+        6,
+        3
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "ddf03492-baf4-48b5-8bff-96b2c8da6d4c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 5
+    },
+    "8": {
+      "rValue": {
+        "UID": "bb33fe23-61d9-477b-8aef-09b32a3cbe96",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 7
+      },
+      "name": "greater",
+      "UID": "2debd3bd-ab4b-4189-a0d4-13fdc506d739",
+      "NodeID": 8,
+      "lValue": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

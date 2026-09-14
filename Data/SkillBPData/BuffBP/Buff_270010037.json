@@ -1,0 +1,50 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010037",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "key": "touzi",
+      "name": "setCacheVal",
+      "UID": "926184de-d793-4bf2-ba32-fb3f038fb15f",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 6
+    },
+    "4": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2700003,
+      "name": "createEntity",
+      "UID": "6fe4d6f2-2e0d-4d48-afed-7994dc77f881",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 4,
+      "pos": {
+        "NodeID": 3,
+        "name": "constVector3",
+        "UID": "9db909b7-23cc-433f-9507-a3b0fd575643",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    4
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9101204",
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    6
+  ],
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 910120401,
+      "NodeID": 3,
+      "UID": "ffdbf92e-ab49-496b-a717-0dd96a4e165e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "660a19d2-53ca-4cc3-b3f7-dc800dd8eb1d",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "ca08879b-f14b-4c2f-9d94-55993c38e498",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 910120401,
+      "name": "removeBuff",
+      "UID": "f63f9b7c-728f-4a49-93c6-2f7cf136565c",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "f591fb22-0ecd-4bef-9b04-5e20f173c552",
+      "actorId": {
+        "key": "11001201",
+        "name": "getCacheVal",
+        "UID": "46d38e7a-4720-4ac2-a542-0743b3f51fe1",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "16": {
+      "UID": "a61595c0-4a34-429e-8fcd-3f185e9b737f",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "8": {
+      "delay": 5,
+      "interval": 5,
+      "UID": "9ab7b92f-06e8-4901-8e99-e9cdf5757b91",
+      "name": "buffStartThink",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "9dc87a06-bcf5-449b-9236-880319282332",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 9
+    },
+    "5": {
+      "actionIds": [
+        3,
+        8
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "2367a321-9c23-4127-befa-f5b38b8ba6c4",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    }
+  },
+  "onBuffThinkIds": [
+    10,
+    13
+  ],
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    6
+  ],
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    16,
+    6
+  ]
+}

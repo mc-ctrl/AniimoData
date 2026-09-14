@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10820210",
+  "NodeID": 1,
+  "UID": "31e4b1a2-57f0-4c35-8159-fdfba0cadf44",
+  "desc": "抛出爱心攻击敌人，一定概率造成魅惑状态。",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10820210001,
+      "name": "setCombatActionTimeline",
+      "UID": "20d0ddab-956e-445b-86eb-668b3d4a2349",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Charm"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Skill_Charm_Bullet_02",
+    "Eff_Parmon_10011_Skill_Charm_Creation",
+    "Eff_Buff_Charm",
+    "Eff_Parmon_10012_Skill_Charm_Bullet_01"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "异常赋予",
+  "abilityParamId": 11100011,
+  "name": "念力魅惑"
+}

@@ -1,0 +1,105 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020007",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    8
+  ],
+  "nodeMap": {
+    "5": {
+      "rValue": 9,
+      "name": "greater",
+      "UID": "10e7546c-4079-4b5c-aabc-0431fe3b3ffe",
+      "NodeID": 5,
+      "lValue": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "adc7cbb9-e1e5-4e8a-a926-534c2473ebb3",
+        "target": "CURPET",
+        "NodeID": 4
+      }
+    },
+    "13": {
+      "buffId": 402000701,
+      "name": "hasBuff",
+      "UID": "fe36bb2f-76e4-4ddf-8486-59515aa75618",
+      "target": "CURPET",
+      "NodeID": 13
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        7
+      ],
+      "name": "registerGroupEvent",
+      "UID": "a6d952be-13b7-435e-8e7e-f1970c3244c8",
+      "NodeID": 8
+    },
+    "6": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "6e3555fc-53ec-435a-9692-a7e07839ff55",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 402000701,
+      "NodeID": 10,
+      "UID": "62e8ad8a-1c2a-4c48-9697-4bda7971ab09",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "f03219d4-237a-4c4a-b4a6-ecf876c9985c",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "cecc70ab-64ce-46d8-b679-e01cb4f00b6d",
+      "target": "OWNER",
+      "buffId": 10079,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": true,
+      "isListenLayerIncrease": true,
+      "isListenStart": false,
+      "name": "registerBuffLifeEvent"
+    },
+    "12": {
+      "buffId": 402000701,
+      "name": "removeBuff",
+      "UID": "01b53a57-355b-497e-84b4-16099c302f5b",
+      "target": "CURPET",
+      "NodeID": 12
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "startText": 1871958945,
+    "icon": "$UI_Home_Icon_Choose.png",
+    "closeText": 1376661344,
+    "tooltipText": 1367098564
+  },
+  {
+    "startText": 1328299611,
+    "tooltipText": 1371005337,
+    "icon": "$UI_Home_Icon_Grid.png",
+    "closeText": 1123902484,
+    "defaultState": 1
+  },
+  {
+    "startText": 1149767484,
+    "tooltipText": 1780397614,
+    "icon": "$UI_Home_Icon_Adsorption.png",
+    "closeText": 2058729021,
+    "defaultState": 1
+  },
+  {
+    "startText": 1746719757,
+    "icon": "$UI_Home_Icon_Looking_Down.png",
+    "closeText": 2123879257,
+    "tooltipText": 1233615008
+  }
+]

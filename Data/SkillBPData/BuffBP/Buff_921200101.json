@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_921200101",
+  "name": "鼓舞曲 lv1",
+  "UID": "1b10a68a-745d-4819-aea6-8507d4e773f5",
+  "desc": "鼓舞曲 lv1",
+  "tips": "232276665",
+  "tags": [
+    10
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Avatar_Girl_CheerStick_Skill_Inspire_BurstByQte"
+    }
+  ],
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

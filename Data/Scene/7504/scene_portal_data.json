@@ -1,0 +1,24 @@
+{
+  "91301447": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 64.17,
+    "markPosition": [
+      -22.38,
+      65.68,
+      -10.66
+    ]
+  },
+  "91314434": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 118.68,
+    "markPosition": [
+      -23.2,
+      0.65,
+      34.26
+    ]
+  }
+}

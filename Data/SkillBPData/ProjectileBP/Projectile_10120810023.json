@@ -1,0 +1,101 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 143,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_02_Rogue",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    145,
+    159,
+    163
+  ],
+  "nodeMap": {
+    "143": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 5003,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "a0c7f07b-8103-419d-8c75-76c252688118",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 143
+    },
+    "145": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 143,
+      "NodeID": 145,
+      "UID": "7b15e156-0f19-49dc-b31d-e8e484a7622d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2.7,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5003,
+      "actionIds": [
+        143
+      ]
+    },
+    "163": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "229b2de9-d4cf-4c54-ab58-4f42e6ea7e05",
+      "target": "OWNER",
+      "NodeID": 163
+    },
+    "159": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "632d77b3-f49a-43e1-aba2-01ea334dcdc5",
+      "effectId": "Eff_Parmon_10011_Skill_Charm_Creation",
+      "speed": 1,
+      "NodeID": 159
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "BPName": "ability_10120810",
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 5003,
+  "acceleration": 0
+}

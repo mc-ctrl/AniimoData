@@ -1,0 +1,92 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "455c4421-f6f0-4f96-96fe-1d361e726ab9",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "fec0b6c3-bb17-4fbe-b562-9e9c4ecbaf99",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 15,
+      "UID": "41e3363a-15dc-47f1-bd28-d9fa9072d1f6"
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 9999,
+      "buffId": 2117410,
+      "NodeID": 14,
+      "UID": "f975de61-43dd-492d-b20f-8d62afb4eb79",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6e0a0aaf-9749-46b6-9f9e-0d28faf0233c",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Behav_Angry"
+    },
+    "11": {
+      "UID": "d7bcf6e0-9231-4d1c-9745-6df2b2d276bc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "a491b529-a743-42f6-a987-9d75e90ee07b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "5": {
+      "UID": "a8b5a2c0-438a-4258-87ce-cdb96ad0bd14",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "ability_11740004",
+  "NodeID": 7,
+  "UID": "bb518666-618c-4c9e-a380-0ffb86d7dcbc",
+  "eventIds": [
+    5,
+    13,
+    15,
+    20
+  ],
+  "layer": "Base",
+  "length": 2.467
+}

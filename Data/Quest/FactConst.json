@@ -1,0 +1,22 @@
+{
+  "test_int": {
+    "defaultValue": 10,
+    "factType": 2,
+    "factName": "test_int"
+  },
+  "test_string": {
+    "defaultValue": 3.5,
+    "factType": 4,
+    "factName": "test_string"
+  },
+  "test_bool": {
+    "defaultValue": true,
+    "factType": 1,
+    "factName": "test_bool"
+  },
+  "test_float": {
+    "defaultValue": 3.5,
+    "factType": 3,
+    "factName": "test_float"
+  }
+}

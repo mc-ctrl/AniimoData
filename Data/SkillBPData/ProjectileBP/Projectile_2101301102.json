@@ -1,0 +1,71 @@
+{
+  "duration": 5,
+  "BPName": "buff_2101301",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10013_Skill_Draw_Fly_01",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "22": {
+      "bpDamageRate": 1,
+      "damageRate": 1,
+      "enableDummyCloneHitTimeline": false,
+      "NodeID": 22,
+      "UID": "d74ee17e-5de2-4225-8da4-35e3665433db",
+      "pos": {
+        "UID": "1a3e7937-2c2a-41b5-bc65-3b042c917e24",
+        "name": "getProjectilePos",
+        "NodeID": 25
+      },
+      "templateId": 1100130001,
+      "duration": 20,
+      "rot": {
+        "UID": "1429ed4c-d547-44f1-aba1-16c8e46ab0c1",
+        "target": "OWNER",
+        "name": "getTargetRotation",
+        "NodeID": 21
+      },
+      "isForceLabel": false,
+      "name": "createDummyClone"
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "700e3d1a-c058-45f7-aba6-89fff31be453",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10013_Skill_Draw_04",
+      "NodeID": 41
+    },
+    "26": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "bfc474a1-92b0-47c3-bda1-72f86e545a02",
+      "effectId": "Eff_Parmon_10013_Skill_Draw_Fly_02",
+      "speed": 1,
+      "NodeID": 26
+    }
+  },
+  "moveSpeed": 4,
+  "onProjectileFinishIds": [
+    26,
+    41,
+    22
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "useModelScale": false,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

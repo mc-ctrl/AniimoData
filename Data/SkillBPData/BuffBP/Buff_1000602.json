@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1000602",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "onBuffRefreshIds": [
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 10006,
+      "name": "removeBuff",
+      "UID": "fb394592-394f-490c-85ec-c5cdc4fa5273",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "actionIds": [
+        3,
+        6
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "d8029ce6-0b9f-4571-98e9-40a262b40cf1",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "6": {
+      "buffId": 1000601,
+      "name": "removeBuff",
+      "UID": "3bc556b5-ea8a-4076-89b9-e18c6adfd722",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 1000602,
+    "type": 1,
+    "bp_reduce_rate_v": "param0"
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

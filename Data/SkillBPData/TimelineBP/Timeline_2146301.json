@@ -1,0 +1,184 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "ca1e0369-3316-47ab-bb91-a4f88bdd0f71",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          20,
+          25,
+          11,
+          26,
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "7": {
+      "actionIds": [
+        20,
+        25,
+        11,
+        26,
+        3
+      ],
+      "name": "registerDeadEvent",
+      "UID": "e36f8ccb-312c-48a4-84b8-18e63b6d648f",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "9": {
+      "UID": "178724e4-aa6e-4c5b-a16d-26d2f5571d56",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          10,
+          14,
+          7
+        ]
+      },
+      "NodeID": 9
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "12694ce0-7396-45f9-9121-39cd4df11b31",
+      "effectId": "Eff_Parmon_10463_Skill_SmashGround_Start",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3b68118d-7210-4156-8517-5423b53e5257",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_BurrowSkill_CombatExit",
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "61a2c03c-34dc-40e2-b5ab-43f521ef5389",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "be3005c2-12bb-442c-93fc-b5856761ffba",
+      "actorId": {
+        "UID": "04cf62c7-5c39-461f-b70c-1c663045bd64",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 2
+      },
+      "name": "destroyEntity",
+      "NodeID": 3
+    },
+    "13": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "b3057be2-bfab-4b11-aa43-6a2cee1b6705",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "da8b63b9-b57c-469d-b557-d9fbbfbbb4dc",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "10": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "12a520ec-fa10-4bcb-94cb-330cb05ce73d",
+      "effectId": "Eff_Parmon_10463_Skill_SmashGround_Start",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "73caf95e-58bb-43a5-a454-e5bf61e06dbf",
+      "effectId": "Eff_Parmon_10463_Skill_SmashGround_End",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.18
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "5940567c-b748-4dd4-82b5-b1d85dd1c0ed",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 16
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "aa0f5ced-20d0-49b4-a66a-f64b51349385",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 17
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d88ecd9b-9b45-4607-b391-601c5f6a8200",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_SmashGround_Break",
+      "NodeID": 26
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c59383df-774c-4a8e-a874-98b3cc1b1412",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_SmashGround_Down",
+      "NodeID": 19
+    },
+    "12": {
+      "UID": "de8d2f53-df74-49dd-a04d-e724e42ba0e9",
+      "name": "isReceiveDamageEventElementType",
+      "elementType": 5,
+      "NodeID": 12
+    },
+    "23": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 1
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "8343b97e-f086-46ea-8371-088cc4f23906",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 23
+    }
+  },
+  "BPName": "timeline_2146301",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    9,
+    5
+  ],
+  "layer": "Base",
+  "length": 8
+}

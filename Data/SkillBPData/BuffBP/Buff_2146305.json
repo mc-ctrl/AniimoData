@@ -1,0 +1,86 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2146305",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2146305,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 10,
+        "UID": "1948cd4e-a67d-44cb-bcad-57b865de78b1",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 7,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "a0b08c0b-902b-4fa0-bd91-4087da94e826",
+          "target": "CASTER",
+          "NodeID": 9,
+          "attributeName": "hp_cur"
+        },
+        "name": "sub",
+        "UID": "98b801c8-1143-45f5-955b-5f3d422b13b6",
+        "NodeID": 6,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+          "target": "CASTER",
+          "NodeID": 5,
+          "attributeName": "hp_max_cur"
+        }
+      }
+    },
+    "isGeneral": true,
+    "isTeamShare": false
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10463_Skill_ShieldEnd",
+      "NodeID": 3
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "da0c834e-b90e-4ddf-9100-99795b434e29",
+      "effectId": "Eff_Parmon_10463_Skill_Bubble_SmashGroundBuff_Start_02",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "10": {
+      "calcId": 2146305,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "1948cd4e-a67d-44cb-bcad-57b865de78b1",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c0bb85b0-8950-41a4-b7be-b77b9e62b40f",
+      "effectId": "Eff_Parmon_10463_Skill_Bubble_SmashGroundBuff_Start_02",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    11,
+    3
+  ],
+  "onBuffStartIds": [
+    12
+  ]
+}

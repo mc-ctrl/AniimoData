@@ -1,0 +1,79 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2101304",
+  "NodeID": 1,
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10013_Skill_Bless_02"
+    }
+  ],
+  "onBuffInheritIds": [
+    7
+  ],
+  "nodeMap": {
+    "4": {
+      "UID": "7eb464ba-1cdd-4a40-9f00-b6089dd36395",
+      "name": "callClientAction",
+      "actionIds": [
+        2,
+        12
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "41d18824-f97f-4205-a5d9-e5e6bc78d4d4",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        4,
+        10
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "name": "calcResult",
+      "UID": "6749f050-9dbb-473c-8b94-ff9992946b68",
+      "target": "OWNER",
+      "NodeID": 10,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 2101304
+      }
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3a75f74b-75c6-4717-bab6-97c33199c6aa",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10013_Skill_Bless_02",
+      "NodeID": 12
+    },
+    "7": {
+      "unsummonValid": true,
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "c4e5070e-7fc0-481c-81a9-69b8fb8900a2",
+      "name": "registerGroupEvent",
+      "isReceiveCreationEvent": true
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "27b39ed6-256b-412a-b66a-6aeb4cab4756",
+      "effectId": "Eff_Parmon_10013_Skill_Bless_03",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "dynamicRPCStates": {},
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

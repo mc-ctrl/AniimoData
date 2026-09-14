@@ -1,0 +1,458 @@
+{
+  "nodeMap": {
+    "62": {
+      "target": "OWNER",
+      "duration": 1.5,
+      "buffId": 10011,
+      "NodeID": 62,
+      "UID": "ec87c538-3a5a-46f8-b9b1-558b8d1694ff",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "38": {
+      "UID": "e4b18d53-6f90-4f51-86d7-0c2d4a1267ca",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          36,
+          39
+        ]
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9fe1cff7-49eb-47c4-b6e4-20d6ec20f9a8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_BurrowSkill_Enter",
+      "NodeID": 39
+    },
+    "40": {
+      "time": 0.3,
+      "rotateSpeed": 360,
+      "name": "rotateTo",
+      "UID": "c9813908-66ea-41cf-b032-f1769de0111b",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 41,
+      "UID": "1aab7cb8-65ed-4f54-b959-ac2b7c452c69"
+    },
+    "35": {
+      "eventType": "NotifyState",
+      "endTime": 5.3,
+      "NodeID": 35,
+      "UID": "fbde029f-d946-452d-82b6-b22551fdf006",
+      "onUpdate": {
+        "actionIds": [
+          34
+        ]
+      },
+      "startTime": 1.3,
+      "tickInterval": 0.8
+    },
+    "44": {
+      "UID": "478ec35a-d36d-47d2-a7ca-17b40fc581a6",
+      "name": "stopBurrow",
+      "NodeID": 44
+    },
+    "67": {
+      "action": {
+        "actionIds": [
+          65
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 67,
+      "UID": "a86cde4a-b5d7-4954-8979-587659b878b0"
+    },
+    "3": {
+      "UID": "faa8c9bd-8e80-4d22-bdfe-0583c6f4af8d",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "70": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "95c74e16-f4db-4f61-83c4-4cdd47380bb7",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "71": {
+      "action": {
+        "actionIds": [
+          70
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 71,
+      "UID": "086ed3fc-41cf-4081-8751-9a393f6242ee"
+    },
+    "5": {
+      "UID": "6dac062f-21e2-4b8f-bf7c-508390d1c432",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          62
+        ]
+      },
+      "NodeID": 5
+    },
+    "65": {
+      "UID": "d7db64cc-27de-4dbf-8d70-e4f05f81a862",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 65
+    },
+    "63": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "35dadd2f-95e3-497f-81c5-f51d82c2b71f",
+      "target": "OWNER",
+      "NodeID": 63
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 31,
+      "UID": "83eb7874-454e-4c70-a83f-52fd311923eb"
+    },
+    "49": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "608c7478-4f10-4077-a59d-0e796c2defb5",
+      "target": "OWNER",
+      "NodeID": 49,
+      "animId": "Skill_BurrowSkill_CombatExit"
+    },
+    "34": {
+      "duration": 0.8,
+      "name": "moveByDirection",
+      "UID": "6a6f1c60-fe2e-4445-bc48-19bdab62573e",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "targetPos": "TARGET",
+      "velocity": [
+        0,
+        0,
+        6
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 34
+    },
+    "53": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11631501,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "e822a442-e4a0-4c07-b5ef-f778c64455e8",
+      "target": "TARGET",
+      "NodeID": 53,
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5004,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 2,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "11": {
+      "UID": "790c8dc4-142c-45ef-b54f-8c203c445404",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 18,
+      "NodeID": 20,
+      "UID": "f8dc4098-f16d-4685-aea4-d508730aa487",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        18
+      ]
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f848cbaa-1ca4-4d39-9b66-c25e037e2157",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice_attack",
+      "NodeID": 32
+    },
+    "22": {
+      "eventType": "NotifyState",
+      "endTime": 5.3,
+      "NodeID": 22,
+      "UID": "15502323-e52a-4ecf-a803-6a15e8b45219",
+      "onUpdate": {
+        "actionIds": [
+          20,
+          33,
+          32
+        ]
+      },
+      "startTime": 1.3,
+      "tickInterval": 0.8
+    },
+    "13": {
+      "UID": "8b9e95db-cd5d-44f6-9c2e-16894c3d6013",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          61,
+          63
+        ]
+      },
+      "NodeID": 13
+    },
+    "55": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 53,
+      "NodeID": 55,
+      "UID": "2c4c68c7-fb9a-4cc8-be4a-556ccdd09097",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.3,
+            2.5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5004,
+      "actionIds": [
+        53
+      ]
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "4cdac420-b1a6-4323-ac47-467f6c12bd3f",
+      "effectId": "Eff_Parmon_10163_Skill_IceStorm",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          44,
+          48,
+          47,
+          49,
+          59,
+          55,
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.6,
+      "NodeID": 46,
+      "UID": "5b122bfe-2c16-4969-a322-53e3ad4dfdec"
+    },
+    "29": {
+      "time": 4.3,
+      "rotateSpeed": 180,
+      "name": "rotateTo",
+      "UID": "3fa88060-6083-4197-a61c-d338d79363f3",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 29
+    },
+    "47": {
+      "UID": "60830f11-1401-497e-8b4b-b3f3e7cc13b1",
+      "name": "stopAnimation",
+      "anim": "SneakOutGround",
+      "NodeID": 47
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.6,
+      "NodeID": 27,
+      "UID": "e8029882-cb56-47e6-b16c-940bcdbb30ff"
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6d906c6d-0f40-4bef-84a8-2132acf1ef78",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_MagicZone_SpikeAttack_Ice",
+      "NodeID": 48
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b40cae9e-5646-4964-89a4-00353bccc811",
+      "effectId": "Eff_Parmon_10163_Skill_RotateSlash_02",
+      "speed": 2,
+      "NodeID": 28
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "45393c20-39b0-45d5-8ffa-251f241a3ad9",
+      "effectId": "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit",
+      "speed": 1,
+      "NodeID": 59
+    },
+    "18": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11631501,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "03590916-660e-4fa7-9e5d-8152661ce340",
+      "target": "TARGET",
+      "NodeID": 18,
+      "attackData": {
+        "weaponSoundType": "slash",
+        "hitSoundType": "s",
+        "impulseId": 3002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 2,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "60": {
+      "UID": "19b49636-4ac5-492c-8d88-1da978785ab3",
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 60
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "abd37079-80dc-4a3a-bcd5-1ed12c0c9815",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_Ice_H_Boss",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "61": {
+      "name": "stopEffectStr",
+      "UID": "8df4e22e-f85a-4ac1-979c-90430b86cf54",
+      "effectId": "Eff_Parmon_10163_Skill_IceStorm",
+      "target": "OWNER",
+      "NodeID": 61
+    },
+    "36": {
+      "velocity": 5.5,
+      "duration": 5.6,
+      "enableTurnInstant": false,
+      "NodeID": 36,
+      "UID": "43bc2300-83ff-4134-9174-e603ca4bd71c",
+      "name": "burrow",
+      "switchToAbilityId": 11630110,
+      "exitCastAbilityId": 11630110
+    }
+  },
+  "BPName": "ability_11631501",
+  "NodeID": 7,
+  "UID": "562a0299-2b4b-44aa-a419-87778fd7d68d",
+  "eventIds": [
+    5,
+    13,
+    71,
+    31,
+    27,
+    22,
+    46,
+    67,
+    35,
+    38,
+    41
+  ],
+  "layer": "Base",
+  "length": 7.6
+}

@@ -1,0 +1,298 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000160",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 5000162,
+      "name": "hasBuff",
+      "UID": "5e57687a-80ed-4e92-a34a-56af087c80e2",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "1ca468eb-9e1d-42b5-a6b9-a9f03d4599e5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 5000160,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 25,
+            "UID": "bd827ce3-53bb-4bc0-a96b-dab6c2cb9077",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "4769b160-7e0f-4dae-a521-70b9c9bcaca9",
+          "NodeID": 20,
+          "lValue": {
+            "UID": "a320875b-0f52-41c8-bcc2-54d7f5703d20",
+            "name": "getOverHealPoint",
+            "NodeID": 19
+          }
+        },
+        "hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "a145b990-52f4-496a-bf3c-8581fd335893",
+      "target": "TARGET",
+      "NodeID": 24
+    },
+    "6": {
+      "UID": "533b15b2-8850-4fcb-9259-0a64962abe44",
+      "name": "registerCasterOverHealEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "09bfef26-ec97-4358-a2bf-fa6105e1834b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 10
+    },
+    "25": {
+      "calcId": 5000160,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 25,
+      "UID": "bd827ce3-53bb-4bc0-a96b-dab6c2cb9077",
+      "name": "getParamByLuaConfig"
+    },
+    "29": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "name": "getAttribute",
+            "UID": "431f0b0c-cbf4-4cbf-8071-fba2eff81794",
+            "target": "TARGET",
+            "NodeID": 30,
+            "attributeName": "hp_cur"
+          },
+          "name": "sub",
+          "UID": "360dae64-5b17-4586-85e0-918ad23f0aff",
+          "NodeID": 27,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "4c41c81a-7ea9-47d9-a563-7a9e16b730e9",
+            "target": "TARGET",
+            "NodeID": 26,
+            "attributeName": "hp_max_cur"
+          }
+        },
+        "hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "7f07c6ff-9801-4a86-b697-ecb1ada0fc5b",
+      "target": "TARGET",
+      "NodeID": 29
+    },
+    "17": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "name": "getAttribute",
+            "UID": "329e0274-eee6-4aca-bb83-d30719007cb4",
+            "target": "TARGET",
+            "NodeID": 14,
+            "attributeName": "hp_cur"
+          },
+          "name": "sub",
+          "UID": "161cad4d-1ae8-4785-9a48-22277da16358",
+          "NodeID": 15,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "8165a565-1534-4596-8c42-1c9b5be7122d",
+            "target": "TARGET",
+            "NodeID": 18,
+            "attributeName": "hp_max_cur"
+          }
+        },
+        "hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "0b30df80-9b28-4546-9aa5-9aa34c3ce420",
+      "target": "TARGET",
+      "NodeID": 17
+    },
+    "9": {
+      "rValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "329e0274-eee6-4aca-bb83-d30719007cb4",
+          "target": "TARGET",
+          "NodeID": 14,
+          "attributeName": "hp_cur"
+        },
+        "name": "sub",
+        "UID": "161cad4d-1ae8-4785-9a48-22277da16358",
+        "NodeID": 15,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "8165a565-1534-4596-8c42-1c9b5be7122d",
+          "target": "TARGET",
+          "NodeID": 18,
+          "attributeName": "hp_max_cur"
+        }
+      },
+      "name": "greater",
+      "UID": "73190e34-c052-45d3-afd6-e68e3b15d402",
+      "NodeID": 9,
+      "lValue": {
+        "rValue": {
+          "calcId": 5000160,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 13,
+          "UID": "5b15ce26-934d-4925-80d7-8ad38a0fb93c",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "dc956c4c-d381-4f7f-a233-475a3e45f252",
+        "NodeID": 8,
+        "lValue": {
+          "UID": "c7d1669b-6e19-4cb9-8eac-3feaf1001c9a",
+          "name": "getOverHealPoint",
+          "NodeID": 7
+        }
+      }
+    },
+    "22": {
+      "actionIds": [
+        29
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "3a393e8f-47bb-4791-994e-e906b9129874",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 22
+    },
+    "21": {
+      "rValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "431f0b0c-cbf4-4cbf-8071-fba2eff81794",
+          "target": "TARGET",
+          "NodeID": 30,
+          "attributeName": "hp_cur"
+        },
+        "name": "sub",
+        "UID": "360dae64-5b17-4586-85e0-918ad23f0aff",
+        "NodeID": 27,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "4c41c81a-7ea9-47d9-a563-7a9e16b730e9",
+          "target": "TARGET",
+          "NodeID": 26,
+          "attributeName": "hp_max_cur"
+        }
+      },
+      "name": "greater",
+      "UID": "ce7395b5-dc6a-4444-849d-d814a8fc785a",
+      "NodeID": 21,
+      "lValue": {
+        "rValue": {
+          "calcId": 5000160,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 25,
+          "UID": "bd827ce3-53bb-4bc0-a96b-dab6c2cb9077",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "4769b160-7e0f-4dae-a521-70b9c9bcaca9",
+        "NodeID": 20,
+        "lValue": {
+          "UID": "a320875b-0f52-41c8-bcc2-54d7f5703d20",
+          "name": "getOverHealPoint",
+          "NodeID": 19
+        }
+      }
+    },
+    "13": {
+      "calcId": 5000160,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 13,
+      "UID": "5b15ce26-934d-4925-80d7-8ad38a0fb93c",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "selectPet",
+      "UID": "1be905df-bd83-4ac1-8842-ecfd3cffcc0d",
+      "selectType": 1,
+      "selectAction": {
+        "UID": "560d07d3-2897-4ee0-9a7a-62c5fb47d1f3",
+        "target": "TARGET",
+        "name": "getHpRatio",
+        "NodeID": 31
+      },
+      "NodeID": 5
+    },
+    "12": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 5000160,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 13,
+            "UID": "5b15ce26-934d-4925-80d7-8ad38a0fb93c",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "dc956c4c-d381-4f7f-a233-475a3e45f252",
+          "NodeID": 8,
+          "lValue": {
+            "UID": "c7d1669b-6e19-4cb9-8eac-3feaf1001c9a",
+            "name": "getOverHealPoint",
+            "NodeID": 7
+          }
+        },
+        "hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "0956c8c5-4571-439f-aeab-38e121f16578",
+      "target": "TARGET",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

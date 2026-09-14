@@ -1,0 +1,123 @@
+{
+  "91295292": {
+    "graphId": 91295292,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Out",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "Out",
+        "targetNode": 5,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "3c69f41649aa776d29fb24926fa19d06",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {
+          "EventName": "setMarkStates"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "09f02c5a-10d0-471c-831b-fa58b94216b8",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            [
+              [
+                3000,
+                91296674
+              ]
+            ],
+            3,
+            1
+          ]
+        }
+      },
+      "4": {
+        "_inputPortValues": {
+          "LevelItemId": 91342520,
+          "DoOnce": false,
+          "fieldName": "state",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "state"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "5dbad6af-8ed9-472f-8894-7a903b16ce8b"
+      },
+      "5": {
+        "_inputPortValues": {
+          "EventName": "dialogue"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "fae20290-e65e-4c6c-8eb3-36c0d4e47bbb",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            1047204,
+            0,
+            0
+          ]
+        }
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "8eb99cee-101d-4894-ae7d-cc16020e19c8"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "f9fe4aa8-f749-48ff-a7cf-c47e8c2bf42f",
+        "portCount": 2
+      },
+      "2": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "openChest"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "staticId": 91294708
+        },
+        "uid": "77e99c71-4099-474a-a8a4-35a8b35087ab"
+      }
+    }
+  }
+}

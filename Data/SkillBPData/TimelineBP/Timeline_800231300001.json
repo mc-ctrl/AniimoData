@@ -1,0 +1,258 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "60ae7c1e-209a-4850-840a-3042ee227a3e",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 37
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.27,
+      "NodeID": 39,
+      "UID": "99d34891-d0b9-486d-94d4-19214a1457a6"
+    },
+    "40": {
+      "UID": "2e3144c9-46f2-4190-9661-cc39e9a3204c",
+      "value": true,
+      "name": "forceUngrounded",
+      "NodeID": 40
+    },
+    "41": {
+      "UID": "db61aa72-e678-41ce-bb0c-ddc7c53dc729",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 41
+    },
+    "42": {
+      "isRootDir": true,
+      "NodeID": 42,
+      "UID": "bf69c434-65d8-4eb8-b467-edd13c2487df",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "43": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e8a4c702-7340-4762-9ca0-429f93494a01",
+      "effectId": "Eff_Monster_80023_Mon_Skill_JumpBomb_02",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "11": {
+      "UID": "763b015e-47ab-4ab1-bd2a-ed9f81e55528",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "5274dfd9-a9fe-49bb-b855-bc10f653692f",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 20
+    },
+    "21": {
+      "key": "bombPos",
+      "name": "setCacheVal",
+      "UID": "b7e1f889-a658-4101-8316-0de1b17c1c65",
+      "target": "OWNER",
+      "val": {
+        "UID": "5274dfd9-a9fe-49bb-b855-bc10f653692f",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 20
+      },
+      "NodeID": 21
+    },
+    "4": {
+      "UID": "5f5bbf15-c0ca-4194-beaf-5f9b48a73e2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.23,
+      "NodeID": 45,
+      "UID": "16452f64-a88a-4a0b-a114-6acf4492b68e"
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.83,
+      "NodeID": 52,
+      "UID": "f437079d-2ab3-4a0d-b983-2c87b0432315"
+    },
+    "15": {
+      "UID": "295b41d5-25be-4134-b032-9922898bb142",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 15
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 23,
+      "UID": "6eb3740d-7a9d-4d96-ae76-a680a206191b"
+    },
+    "49": {
+      "action": {
+        "actionIds": [
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.01,
+      "NodeID": 49,
+      "UID": "f8e0459b-d3fa-4df3-b6b6-dfd58c458593"
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4ebd3096-091d-4a64-8877-36f5703f6970",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_jumpbomb",
+      "NodeID": 48
+    },
+    "17": {
+      "UID": "a4b920dc-7e46-4fb3-9ff8-251e7b694c90",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15,
+          41
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 800231300001,
+      "name": "createProjectile",
+      "UID": "63123718-222a-4a53-8905-1cbb8b01a0dd",
+      "rotation": "ToTarget",
+      "pos": {
+        "isRootDir": true,
+        "NodeID": 42,
+        "UID": "bf69c434-65d8-4eb8-b467-edd13c2487df",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone M Tongue 02"
+      },
+      "projectileType": "Free3d",
+      "targetPos": {
+        "key": "bombPos",
+        "name": "getCacheVal",
+        "UID": "9f92fcab-6963-4577-9049-173204cfd155",
+        "target": "OWNER",
+        "NodeID": 36
+      },
+      "NodeID": 29,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.85,
+      "NodeID": 30,
+      "UID": "bc70c58c-08d6-4b17-84e9-94504d8bc63c"
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "79323a3d-3b88-4173-98ff-f52f54f83fbc",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_JumpBomb"
+    },
+    "19": {
+      "action": {
+        "actionIds": {}
+      },
+      "eventType": "Notify",
+      "time": 3.27,
+      "NodeID": 19,
+      "UID": "9d59150d-f0f2-45fc-ad49-acdd5cdda129"
+    },
+    "51": {
+      "UID": "7d2f2e42-3c34-4492-b7e0-6f78b9807b27",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 51
+    },
+    "13": {
+      "UID": "783a3f6d-4d06-4675-8045-340a03ca319e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          40
+        ]
+      },
+      "NodeID": 13
+    }
+  },
+  "BPName": "ability_800231300",
+  "NodeID": 6,
+  "UID": "26bc3730-850c-44a2-96ab-c127e885acb4",
+  "eventIds": [
+    13,
+    17,
+    4,
+    23,
+    19,
+    49,
+    52,
+    39,
+    30,
+    45
+  ],
+  "layer": "Base",
+  "length": 4.03
+}

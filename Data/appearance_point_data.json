@@ -1,0 +1,187 @@
+{
+  "35": {
+    "text": 1843427552,
+    "icon": "$UI_Img_Avatar_PinchFace_Lipstick.png",
+    "name": "MouthMakeup"
+  },
+  "203": {
+    "sort": 2,
+    "icon": "$UI_Img_Avatar_Dress_Vfx.png",
+    "text": 1826548474,
+    "name": "Effect"
+  },
+  "60": {
+    "text": 1515772218,
+    "name": "Hat"
+  },
+  "101": {
+    "text": 1659505338,
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1,
+    "name": "Jewelry1"
+  },
+  "201": {
+    "sort": 1,
+    "icon": "$UI_Icon_Avatar_Dress_FootDustTrail.png",
+    "text": 1713029422,
+    "name": "FootPrint"
+  },
+  "202": {
+    "sort": 4,
+    "icon": "$UI_Img_Avatar_Dress_Hand.png",
+    "text": 1863335452,
+    "name": "HandHeld"
+  },
+  "5": {
+    "text": 1554960513,
+    "icon": "$UI_Img_Avatar_PinchFace_EyeLiner.png",
+    "name": "Eyelash"
+  },
+  "110": {
+    "text": 1891577174,
+    "hidden": 1,
+    "name": "Jewelry10",
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1
+  },
+  "20": {
+    "text": 1535945261,
+    "icon": "$UI_Img_Avatar_Hair_Fringe.png",
+    "name": "Fringe"
+  },
+  "34": {
+    "text": 1449891061,
+    "icon": "$UI_Img_Avatar_PinchFace_Pupil.png",
+    "name": "FaceMakeup"
+  },
+  "31": {
+    "text": 2092274728,
+    "icon": "$UI_Img_Avatar_PinchFace_Eyelid.png",
+    "name": "Eyeball"
+  },
+  "22": {
+    "text": 1729015731,
+    "icon": "$UI_Img_Avatar_Hair_Tail.png",
+    "name": "Tail"
+  },
+  "24": {
+    "text": 1770869635,
+    "icon": "$UI_Img_Avatar_Hair_Plait.png",
+    "name": "Plait"
+  },
+  "102": {
+    "text": 2132900587,
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1,
+    "name": "Jewelry2"
+  },
+  "11": {
+    "text": 1382585495,
+    "icon": "$UI_Img_Avatar_Dress_Top.png",
+    "costType": 2,
+    "name": "Coat"
+  },
+  "103": {
+    "text": 1852521381,
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1,
+    "name": "Jewelry3"
+  },
+  "21": {
+    "text": 1216168162,
+    "icon": "$UI_Img_Avatar_Hair_Temples.png",
+    "name": "Temples"
+  },
+  "104": {
+    "text": 1195228844,
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1,
+    "name": "Jewelry4"
+  },
+  "13": {
+    "text": 1322503794,
+    "icon": "$UI_Img_Avatar_Dress_Gloves.png",
+    "costType": 2,
+    "name": "Gloves"
+  },
+  "105": {
+    "text": 2024228674,
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1,
+    "name": "Jewelry5"
+  },
+  "14": {
+    "text": 1930520224,
+    "icon": "$UI_Img_Avatar_Dress_Socks.png",
+    "costType": 2,
+    "name": "Socks"
+  },
+  "106": {
+    "text": 1510042727,
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1,
+    "name": "Jewelry6"
+  },
+  "15": {
+    "text": 2008003115,
+    "icon": "$UI_Img_Avatar_Dress_Shoes.png",
+    "costType": 2,
+    "name": "Shoes"
+  },
+  "107": {
+    "text": 1303749304,
+    "hidden": 1,
+    "name": "Jewelry7",
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1
+  },
+  "12": {
+    "text": 1364307994,
+    "icon": "$UI_Img_Avatar_Dress_Bottom.png",
+    "costType": 2,
+    "name": "Trousers"
+  },
+  "108": {
+    "text": 1823652212,
+    "hidden": 1,
+    "name": "Jewelry8",
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1
+  },
+  "23": {
+    "text": 1238251815,
+    "icon": "$UI_Img_Avatar_Hair_Body.png",
+    "name": "Body"
+  },
+  "109": {
+    "text": 1304550212,
+    "hidden": 1,
+    "name": "Jewelry9",
+    "icon": "$UI_Img_Avatar_Dress_Accessory.png",
+    "costType": 1
+  },
+  "30": {
+    "text": 1516754858,
+    "icon": "$UI_Img_Avatar_PinchFace_EyeBrow.png",
+    "name": "Eyebrow"
+  },
+  "32": {
+    "text": 1582858955,
+    "icon": "$UI_Img_Avatar_PinchFace_Dynamic_Pupil.png",
+    "name": "DynamicEyeball"
+  },
+  "33": {
+    "text": 1651536347,
+    "icon": "$UI_Img_Avatar_PinchFace_Eyelashes.png",
+    "name": "EyeMakeup"
+  },
+  "61": {
+    "text": 1969062917,
+    "name": "Wing"
+  },
+  "36": {
+    "text": 1504123594,
+    "icon": "$UI_Img_Avatar_PinchFace_Color.png",
+    "name": "Skin"
+  }
+}

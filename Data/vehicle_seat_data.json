@@ -1,0 +1,1102 @@
+{
+  "104": {
+    "name": "ARK通用座位（中宠）2",
+    "petAttachId": 121,
+    "actorFilter": 4,
+    "forbidBigBodyLevel": 3,
+    "forbidSmallBodyLevel": 1
+  },
+  "105": {
+    "name": "ARK通用座位（大宠）1",
+    "petAttachId": 122,
+    "actorFilter": 4,
+    "forbidBigBodyLevel": 4,
+    "forbidSmallBodyLevel": 2
+  },
+  "99": {
+    "petAttachId": 116,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）1"
+  },
+  "5": {
+    "skillGroup": [
+      1
+    ],
+    "playerAttachId": 5,
+    "name": "秋千椅子 座位1",
+    "petAttachId": 13,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 2
+  },
+  "6": {
+    "skillGroup": [
+      1
+    ],
+    "playerAttachId": 6,
+    "name": "秋千椅子 座位2",
+    "petAttachId": 14,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "7": {
+    "skillGroup": [
+      2
+    ],
+    "playerAttachId": 7,
+    "name": "跷跷板椅子 座位1",
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 2
+  },
+  "8": {
+    "skillGroup": [
+      2
+    ],
+    "name": "跷跷板椅子 座位2",
+    "petAttachId": 15,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "56": {
+    "petAttachId": 80,
+    "actorFilter": 2,
+    "playerAttachId": 74,
+    "name": "动作pose_坐楼梯上1 玩家"
+  },
+  "57": {
+    "petAttachId": 81,
+    "actorFilter": 2,
+    "playerAttachId": 75,
+    "name": "动作pose_坐楼梯上2 玩家"
+  },
+  "58": {
+    "petAttachId": 82,
+    "actorFilter": 2,
+    "playerAttachId": 76,
+    "name": "动作pose_靠墙站立 玩家"
+  },
+  "59": {
+    "petAttachId": 83,
+    "actorFilter": 2,
+    "playerAttachId": 77,
+    "name": "动作pose_站立观望 玩家"
+  },
+  "61": {
+    "playerAttachId": 73,
+    "name": "动作pose_趴栏杆上 宠物",
+    "petAttachId": 79,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "62": {
+    "playerAttachId": 74,
+    "name": "动作pose_坐楼梯上1 宠物",
+    "petAttachId": 80,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "63": {
+    "playerAttachId": 75,
+    "name": "动作pose_坐楼梯上2 宠物",
+    "petAttachId": 81,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "64": {
+    "playerAttachId": 76,
+    "name": "动作pose_靠墙站立 宠物",
+    "petAttachId": 82,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "65": {
+    "playerAttachId": 77,
+    "name": "动作pose_站立观望 宠物",
+    "petAttachId": 83,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "14": {
+    "actorFilter": 2,
+    "playerAttachId": 19,
+    "name": "篝火场景椅子2"
+  },
+  "67": {
+    "petAttachId": 85,
+    "actorFilter": 4,
+    "name": "ARK饮水机 座位2-小中大宠物"
+  },
+  "68": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 88,
+    "name": "家具_便携折椅_人",
+    "petInControl": true,
+    "homePetAttachId": 174,
+    "actorFilter": 6
+  },
+  "69": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_四叶草毯_宠",
+    "petAttachId": 89,
+    "petInControl": true,
+    "homePetAttachId": 89,
+    "actorFilter": 4
+  },
+  "70": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 90,
+    "name": "家具_藤编座椅_人",
+    "petInControl": true,
+    "homePetAttachId": 174,
+    "actorFilter": 6
+  },
+  "71": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_藤编坐垫_宠",
+    "petAttachId": 91,
+    "petInControl": true,
+    "homePetAttachId": 91,
+    "actorFilter": 4
+  },
+  "72": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_简约坐垫_宠",
+    "petAttachId": 92,
+    "petInControl": true,
+    "homePetAttachId": 92,
+    "actorFilter": 4
+  },
+  "73": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 93,
+    "name": "家具_矮床_人",
+    "petInControl": true,
+    "homePetAttachId": 94,
+    "actorFilter": 2
+  },
+  "74": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_矮床_宠",
+    "petAttachId": 94,
+    "petInControl": true,
+    "homePetAttachId": 175,
+    "actorFilter": 4
+  },
+  "75": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 95,
+    "name": "家具_高床_人",
+    "petInControl": true,
+    "homePetAttachId": 96,
+    "actorFilter": 2
+  },
+  "19": {
+    "playerAttachId": 23,
+    "name": "磨坊木马 座位1",
+    "petAttachId": 27,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "77": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 97,
+    "name": "家具_吧台凳_人",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "79": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 97,
+    "name": "家具_高脚凳_人",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "81": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 99,
+    "name": "家具_木质矮凳_人",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "83": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 101,
+    "name": "家具_地毯_人",
+    "petInControl": true,
+    "homePetAttachId": 175,
+    "actorFilter": 2
+  },
+  "84": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_地毯_宠",
+    "petAttachId": 102,
+    "petInControl": true,
+    "actorFilter": 4
+  },
+  "85": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_蹦床_宠",
+    "petAttachId": 103,
+    "petInControl": true,
+    "actorFilter": 4
+  },
+  "86": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 104,
+    "name": "家具_秋千_人",
+    "petInControl": true,
+    "homePetAttachId": 176,
+    "actorFilter": 6
+  },
+  "87": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_秋千_宠",
+    "petAttachId": 105,
+    "petInControl": true,
+    "actorFilter": 4
+  },
+  "88": {
+    "actorFilter": 2,
+    "playerAttachId": 106,
+    "name": "设施_谜立方_人"
+  },
+  "89": {
+    "actorFilter": 2,
+    "playerAttachId": 107,
+    "name": "设施_烘干器_人"
+  },
+  "90": {
+    "actorFilter": 2,
+    "playerAttachId": 108,
+    "name": "设施_火炉_人"
+  },
+  "91": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 109,
+    "name": "家具_蹦床_人",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "92": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_藤编座椅_宠",
+    "petAttachId": 110,
+    "petInControl": true,
+    "actorFilter": 4
+  },
+  "93": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_便携折椅_宠",
+    "petAttachId": 111,
+    "petInControl": true,
+    "homePetAttachId": 174,
+    "actorFilter": 4
+  },
+  "94": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 112,
+    "name": "载具_沙滩椅_人",
+    "petInControl": true,
+    "homePetAttachId": 175,
+    "actorFilter": 6
+  },
+  "97": {
+    "actorFilter": 2,
+    "playerAttachId": 114,
+    "name": "ARK通用座位（人）1"
+  },
+  "98": {
+    "actorFilter": 2,
+    "playerAttachId": 115,
+    "name": "ARK通用座位（人）2"
+  },
+  "106": {
+    "name": "ARK通用座位（大宠）2",
+    "petAttachId": 123,
+    "actorFilter": 4,
+    "forbidBigBodyLevel": 4,
+    "forbidSmallBodyLevel": 2
+  },
+  "107": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 124,
+    "name": "家具_藤编坐垫_人",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "108": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 125,
+    "name": "家具_简约坐垫_人",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "109": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 126,
+    "name": "家具_四叶草毯_人",
+    "petAttachId": 89,
+    "petInControl": true,
+    "homePetAttachId": 175,
+    "actorFilter": 6
+  },
+  "110": {
+    "itemAttachId": 10019,
+    "playerAttachId": 200,
+    "name": "格拉斯博士_云朵羊风团",
+    "petAttachId": 202,
+    "actorFilter": 1070
+  },
+  "113": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 97,
+    "name": "家具_金属高脚凳_人",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "116": {
+    "actorFilter": 2,
+    "playerAttachId": 130,
+    "name": "ARK通用座位（人）4"
+  },
+  "117": {
+    "actorFilter": 2,
+    "playerAttachId": 131,
+    "name": "ARK通用座位（人）5"
+  },
+  "122": {
+    "actorFilter": 2,
+    "playerAttachId": 136,
+    "name": "ARK通用高脚座位（人）2"
+  },
+  "115": {
+    "actorFilter": 2,
+    "playerAttachId": 129,
+    "name": "ARK通用座位（人）3"
+  },
+  "118": {
+    "petAttachId": 132,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）3"
+  },
+  "119": {
+    "petAttachId": 133,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）4"
+  },
+  "120": {
+    "petAttachId": 134,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）5"
+  },
+  "121": {
+    "actorFilter": 2,
+    "playerAttachId": 135,
+    "name": "ARK通用高脚座位（人）1"
+  },
+  "127": {
+    "actorFilter": 2,
+    "playerAttachId": 141,
+    "name": "家园_商店_圆形大沙发（人）1"
+  },
+  "128": {
+    "actorFilter": 2,
+    "playerAttachId": 142,
+    "name": "家园_商店_圆形大沙发（人）2"
+  },
+  "129": {
+    "actorFilter": 2,
+    "playerAttachId": 143,
+    "name": "家园_商店_圆形大沙发（人）3"
+  },
+  "130": {
+    "petAttachId": 144,
+    "actorFilter": 4,
+    "name": "家园_商店_圆形大沙发（宠）1"
+  },
+  "131": {
+    "petAttachId": 145,
+    "actorFilter": 4,
+    "name": "家园_商店_圆形大沙发（宠）2"
+  },
+  "132": {
+    "petAttachId": 146,
+    "actorFilter": 4,
+    "name": "家园_商店_圆形大沙发（宠）3"
+  },
+  "133": {
+    "actorFilter": 2,
+    "playerAttachId": 147,
+    "name": "ARK通用座位（人）6"
+  },
+  "100": {
+    "petAttachId": 117,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）2"
+  },
+  "45": {
+    "petAttachId": 65,
+    "actorFilter": 6,
+    "playerAttachId": 63,
+    "name": "能量聚合器游玩1"
+  },
+  "46": {
+    "petAttachId": 66,
+    "actorFilter": 6,
+    "playerAttachId": 64,
+    "name": "能量聚合器游玩2"
+  },
+  "47": {
+    "playerAttachId": 67,
+    "name": "沐羽鸟泡泡",
+    "petAttachId": 67,
+    "petInControl": true,
+    "actorFilter": 6
+  },
+  "48": {
+    "playerAttachId": 68,
+    "name": "ARK高脚凳1人",
+    "petAttachId": 69,
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "49": {
+    "playerAttachId": 68,
+    "name": "ARK高脚凳1宠",
+    "petAttachId": 69,
+    "petInControl": true,
+    "actorFilter": 4
+  },
+  "50": {
+    "playerAttachId": 68,
+    "name": "ARK高脚凳2人",
+    "petAttachId": 69,
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "111": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 127,
+    "name": "家具_新秋千_人",
+    "petInControl": true,
+    "homePetAttachId": 175,
+    "actorFilter": 2
+  },
+  "52": {
+    "actorFilter": 2,
+    "playerAttachId": 71,
+    "name": "果汁桶1 人游玩"
+  },
+  "148": {
+    "petAttachId": 162,
+    "actorFilter": 4,
+    "name": "洗手台通用挂点宠"
+  },
+  "53": {
+    "petAttachId": 70,
+    "name": "果汁桶1 宠游玩",
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "54": {
+    "petAttachId": 78,
+    "actorFilter": 2,
+    "playerAttachId": 72,
+    "name": "动作pose_坐栏杆上 玩家"
+  },
+  "60": {
+    "playerAttachId": 72,
+    "name": "动作pose_坐栏杆上 宠物",
+    "petAttachId": 78,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "66": {
+    "actorFilter": 2,
+    "playerAttachId": 84,
+    "name": "ARK饮水机 座位1-人"
+  },
+  "24": {
+    "playerAttachId": 40,
+    "name": "纺车 座位2",
+    "petAttachId": 32,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "173": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 104,
+    "name": "家具_付费_秋千",
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "31": {
+    "skillGroup": [
+      4
+    ],
+    "actorFilter": 2,
+    "playerAttachId": 46,
+    "name": "偶遇双人长椅 座位1"
+  },
+  "11": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 17,
+    "name": "上升蒲公英",
+    "petAttachId": 17,
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "9": {
+    "playerAttachId": 1,
+    "name": "ARK椅子2 座位1",
+    "petAttachId": 9,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 6
+  },
+  "13": {
+    "actorFilter": 2,
+    "playerAttachId": 18,
+    "name": "篝火场景椅子1"
+  },
+  "12": {
+    "name": "ARK宠物座椅",
+    "petAttachId": 9,
+    "petInControl": true,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "20": {
+    "playerAttachId": 24,
+    "name": "磨坊木马 座位2",
+    "petAttachId": 28,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "21": {
+    "playerAttachId": 25,
+    "name": "磨坊木马 座位3",
+    "petAttachId": 29,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "22": {
+    "playerAttachId": 26,
+    "name": "磨坊木马 座位4",
+    "petAttachId": 30,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "23": {
+    "playerAttachId": 39,
+    "name": "纺车 座位1",
+    "petAttachId": 31,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "55": {
+    "petAttachId": 79,
+    "actorFilter": 2,
+    "playerAttachId": 73,
+    "name": "动作pose_趴栏杆上 玩家"
+  },
+  "51": {
+    "playerAttachId": 68,
+    "name": "ARK高脚凳2宠",
+    "petAttachId": 69,
+    "petInControl": true,
+    "actorFilter": 4
+  },
+  "43": {
+    "petAttachId": 61,
+    "actorFilter": 4,
+    "playerAttachId": 52,
+    "name": "空载具_眺望2"
+  },
+  "136": {
+    "petAttachId": 150,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）6"
+  },
+  "25": {
+    "playerAttachId": 41,
+    "name": "纺车 座位3",
+    "petAttachId": 33,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "26": {
+    "playerAttachId": 42,
+    "name": "纺车 座位4",
+    "petAttachId": 34,
+    "forbidBigBodyLevel": 3,
+    "actorFilter": 6
+  },
+  "27": {
+    "actorFilter": 2,
+    "playerAttachId": 35,
+    "name": "纺车工作"
+  },
+  "28": {
+    "petAttachId": 36,
+    "petInControl": true,
+    "actorFilter": 4,
+    "name": "滚滚郎泥坑"
+  },
+  "29": {
+    "actorFilter": 2,
+    "playerAttachId": 38,
+    "name": "手工台工作 1"
+  },
+  "30": {
+    "petAttachId": 43,
+    "actorFilter": 6,
+    "playerAttachId": 44,
+    "name": "手工台工作 2"
+  },
+  "32": {
+    "skillGroup": [
+      4
+    ],
+    "actorFilter": 2,
+    "playerAttachId": 47,
+    "name": "偶遇双人长椅 座位2"
+  },
+  "33": {
+    "petAttachId": 48,
+    "petInControl": true,
+    "actorFilter": 4,
+    "name": "熔岩龙家族泡澡"
+  },
+  "34": {
+    "playerAttachId": 49,
+    "name": "ark商店座椅 座位1",
+    "petAttachId": 57,
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "36": {
+    "playerAttachId": 51,
+    "name": "ark商店座椅 座位3",
+    "petAttachId": 59,
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "37": {
+    "petAttachId": 61,
+    "actorFilter": 2,
+    "playerAttachId": 52,
+    "name": "空载具_眺望"
+  },
+  "38": {
+    "petAttachId": 54,
+    "actorFilter": 2,
+    "playerAttachId": 53,
+    "name": "ARK咖啡店座椅（大） 人"
+  },
+  "39": {
+    "petAttachId": 54,
+    "actorFilter": 4,
+    "playerAttachId": 53,
+    "name": "ARK咖啡店座椅（小） 宠"
+  },
+  "40": {
+    "petAttachId": 56,
+    "actorFilter": 2,
+    "playerAttachId": 55,
+    "name": "ARK咖啡店座椅（小）人"
+  },
+  "41": {
+    "petAttachId": 56,
+    "actorFilter": 4,
+    "playerAttachId": 55,
+    "name": "ARK咖啡店座椅（小）宠"
+  },
+  "42": {
+    "playerAttachId": 60,
+    "name": "浴球鸟泡泡",
+    "petAttachId": 60,
+    "petInControl": true,
+    "actorFilter": 6
+  },
+  "35": {
+    "playerAttachId": 50,
+    "name": "ark商店座椅 座位2",
+    "petAttachId": 58,
+    "petInControl": true,
+    "actorFilter": 2
+  },
+  "44": {
+    "petAttachId": 62,
+    "actorFilter": 4,
+    "playerAttachId": 55,
+    "name": "ARK咖啡店座椅（小）宠2"
+  },
+  "137": {
+    "petAttachId": 151,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）7"
+  },
+  "140": {
+    "appearanceIds": [
+      -1
+    ],
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 154,
+    "name": "淋浴通用挂点（人）",
+    "actorFilter": 2
+  },
+  "163": {
+    "petAttachId": 103,
+    "name": "圆盘编织沙发_宠",
+    "actorFilter": 4,
+    "homePetAttachId": 103
+  },
+  "123": {
+    "actorFilter": 2,
+    "playerAttachId": 137,
+    "name": "ARK通用高脚座位（人）3"
+  },
+  "125": {
+    "actorFilter": 2,
+    "playerAttachId": 139,
+    "name": "ARK通用高脚座位（人）5"
+  },
+  "126": {
+    "petAttachId": 83,
+    "actorFilter": 2,
+    "playerAttachId": 140,
+    "name": "动作pose_跳舞 玩家"
+  },
+  "134": {
+    "actorFilter": 2,
+    "playerAttachId": 148,
+    "name": "ARK通用座位（人）7"
+  },
+  "135": {
+    "actorFilter": 2,
+    "playerAttachId": 149,
+    "name": "ARK通用座位（人）8"
+  },
+  "3": {
+    "playerAttachId": 3,
+    "name": "ARK椅子 座位1",
+    "petAttachId": 11,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 2
+  },
+  "4": {
+    "playerAttachId": 4,
+    "name": "ARK椅子 座位2",
+    "petAttachId": 12,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "138": {
+    "petAttachId": 152,
+    "actorFilter": 4,
+    "name": "ARK通用座位（所有宠）8"
+  },
+  "139": {
+    "appearanceIds": [
+      -1
+    ],
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 153,
+    "name": "泡澡通用挂点（人）",
+    "actorFilter": 2
+  },
+  "101": {
+    "petAttachId": 118,
+    "name": "ARK通用座位（小宠）1",
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "141": {
+    "name": "马桶通用挂点（人）",
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 155,
+    "actorFilter": 2
+  },
+  "142": {
+    "petAttachId": 156,
+    "autoSwitchToPlayer": true,
+    "name": "洗手通用挂点（人）",
+    "actorFilter": 2
+  },
+  "143": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 157,
+    "name": "双人床通用挂点（人）",
+    "homePetAttachId": 159,
+    "actorFilter": 2
+  },
+  "144": {
+    "petAttachId": 158,
+    "actorFilter": 4,
+    "name": "双人床通用挂点（宠）"
+  },
+  "145": {
+    "petAttachId": 159,
+    "name": "宠物单独床挂点",
+    "actorFilter": 4,
+    "homePetAttachId": 159
+  },
+  "146": {
+    "petAttachId": 160,
+    "name": "座椅通用挂点（宠）",
+    "actorFilter": 4,
+    "homePetAttachId": 160
+  },
+  "147": {
+    "actorFilter": 2,
+    "playerAttachId": 161,
+    "name": "洗手台通用挂点（人）"
+  },
+  "149": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 163,
+    "name": "双人沙发通用挂点（人1）",
+    "homePetAttachId": 174,
+    "actorFilter": 6
+  },
+  "150": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 164,
+    "name": "双人沙发通用挂点（人2）",
+    "homePetAttachId": 174,
+    "actorFilter": 2
+  },
+  "151": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 163,
+    "name": "多人人沙发带宠挂点1",
+    "homePetAttachId": 175,
+    "actorFilter": 2
+  },
+  "152": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 164,
+    "name": "多人人沙发带宠挂点2",
+    "petAttachId": 166,
+    "homePetAttachId": 166,
+    "actorFilter": 6
+  },
+  "153": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 167,
+    "name": "泳池带宠挂点",
+    "petAttachId": 168,
+    "homePetAttachId": 168,
+    "actorFilter": 6
+  },
+  "154": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 169,
+    "name": "通用高脚凳单人物",
+    "homePetAttachId": 174,
+    "actorFilter": 6
+  },
+  "155": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 169,
+    "name": "双人高沙发通用挂点（人1）",
+    "homePetAttachId": 172,
+    "actorFilter": 6
+  },
+  "156": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 171,
+    "name": "双人高沙发通用挂点（人2）",
+    "homePetAttachId": 172,
+    "actorFilter": 6
+  },
+  "157": {
+    "petAttachId": 172,
+    "name": "通用宠物坐垫睡觉挂点",
+    "actorFilter": 4,
+    "homePetAttachId": 172
+  },
+  "158": {
+    "petAttachId": 170,
+    "name": "通用宠物座位挂点",
+    "actorFilter": 4,
+    "homePetAttachId": 170
+  },
+  "159": {
+    "autoSwitchToPlayer": true,
+    "name": "多人人沙发带宠挂点2（宠）",
+    "petAttachId": 165,
+    "homePetAttachId": 175,
+    "actorFilter": 4
+  },
+  "160": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 169,
+    "name": "单人高脚凳宠物站立",
+    "homePetAttachId": 173,
+    "actorFilter": 6
+  },
+  "161": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 88,
+    "name": "单人沙发无宠物",
+    "petInControl": true,
+    "actorFilter": 6
+  },
+  "162": {
+    "actorFilter": 2,
+    "name": "圆盘编织沙发_人",
+    "playerAttachId": 112,
+    "homePetAttachId": 103
+  },
+  "124": {
+    "actorFilter": 2,
+    "playerAttachId": 138,
+    "name": "ARK通用高脚座位（人）4"
+  },
+  "164": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 109,
+    "name": "藤巢沙发_人",
+    "petInControl": true,
+    "homePetAttachId": 103,
+    "actorFilter": 6
+  },
+  "165": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 163,
+    "name": "长沙发带宠挂点1",
+    "petAttachId": 166,
+    "homePetAttachId": 166,
+    "actorFilter": 6
+  },
+  "166": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 164,
+    "name": "长沙发带宠挂点2",
+    "petAttachId": 172,
+    "homePetAttachId": 172,
+    "actorFilter": 6
+  },
+  "167": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 88,
+    "name": "单人座允许家园宠物",
+    "petInControl": true,
+    "homePetAttachId": 160,
+    "actorFilter": 6
+  },
+  "168": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 163,
+    "name": "长沙发带宠挂点1",
+    "petAttachId": 166,
+    "homePetAttachId": 166,
+    "actorFilter": 6
+  },
+  "169": {
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 164,
+    "name": "长沙发带宠挂点2",
+    "petAttachId": 172,
+    "homePetAttachId": 172,
+    "actorFilter": 6
+  },
+  "170": {
+    "autoSwitchToPlayer": true,
+    "name": "泳池带宠挂点",
+    "petAttachId": 168,
+    "homePetAttachId": 168,
+    "actorFilter": 4
+  },
+  "171": {
+    "name": "滑板车挂点（人）",
+    "autoSwitchToPlayer": true,
+    "playerAttachId": 177,
+    "actorFilter": 2
+  },
+  "172": {
+    "petAttachId": 178,
+    "actorFilter": 4,
+    "name": "滑板车挂点（宠）"
+  },
+  "10": {
+    "playerAttachId": 1,
+    "name": "ARK椅子3 座位1",
+    "petAttachId": 9,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 6
+  },
+  "174": {
+    "petAttachId": 83,
+    "actorFilter": 2,
+    "playerAttachId": 179,
+    "name": "动作pose_站立 玩家"
+  },
+  "175": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_四叶草毯_家园宠",
+    "petAttachId": 175,
+    "petInControl": true,
+    "homePetAttachId": 175,
+    "actorFilter": 4
+  },
+  "2": {
+    "playerAttachId": 2,
+    "name": "测试椅子 座位2",
+    "petAttachId": 10,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 6
+  },
+  "1": {
+    "playerAttachId": 1,
+    "name": "测试椅子 座位1",
+    "petAttachId": 9,
+    "petInControl": true,
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 6
+  },
+  "18": {
+    "playerAttachId": 22,
+    "name": "睡觉毛团",
+    "petAttachId": 22,
+    "petInControl": true,
+    "actorFilter": 4
+  },
+  "17": {
+    "petAttachId": 17,
+    "actorFilter": 6,
+    "playerAttachId": 17,
+    "name": "上升蒲公英"
+  },
+  "16": {
+    "actorFilter": 2,
+    "playerAttachId": 21,
+    "name": "篝火场景椅子4"
+  },
+  "15": {
+    "actorFilter": 2,
+    "playerAttachId": 20,
+    "name": "篝火场景椅子3"
+  },
+  "102": {
+    "petAttachId": 119,
+    "name": "ARK通用座位（小宠）2",
+    "forbidBigBodyLevel": 2,
+    "actorFilter": 4
+  },
+  "103": {
+    "name": "ARK通用座位（中宠）1",
+    "petAttachId": 120,
+    "actorFilter": 4,
+    "forbidBigBodyLevel": 3,
+    "forbidSmallBodyLevel": 1
+  },
+  "76": {
+    "autoSwitchToPlayer": true,
+    "name": "家具_高床_宠",
+    "petAttachId": 96,
+    "petInControl": true,
+    "homePetAttachId": 175,
+    "actorFilter": 4
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": -0.2,
+    "speed_ratio_sprint_v": -0.2,
+    "speed_ratio_walk_v": -0.2,
+    "speed_ratio_dash_v": -0.2
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2161403,
+    "speed_ratio_sprint_v": "param0",
+    "speed_ratio_dash_v": "param0",
+    "type": 1,
+    "speed_ratio_run_v": "param0",
+    "speed_ratio_walk_v": "param0"
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "3d2e8354-75d3-4a3e-9349-6a8481823a30",
+      "effectId": "Eff_Parmon_10614_Skill_OutEx_lianxian_point",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5843ddab-f923-4b56-8db8-8bf929043c40",
+      "effectId": "Eff_Parmon_10614_Skill_OutEx_lianxian_point",
+      "speed": 1,
+      "NodeID": 4
+    }
+  },
+  "BPName": "buff_2161403",
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

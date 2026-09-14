@@ -1,0 +1,132 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10014",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    9,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "3f76f03d-9cad-43e1-b18d-bbb5e8222e0b",
+      "scale": 0,
+      "name": "setAnimFreezeScale",
+      "NodeID": 3
+    },
+    "13": {
+      "name": "setShaderFrozen",
+      "NodeID": 13,
+      "UID": "fdeeb3df-efa4-4f59-ad07-260a744cdfed",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": false
+    },
+    "6": {
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "12fe3d14-d60d-4c04-b1df-f7ee77491995",
+      "name": "doActionsByConditions",
+      "NodeID": 6,
+      "elseActionIds": [
+        5
+      ]
+    },
+    "10": {
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "54e06855-f654-488b-ad9f-7ef3e34894db",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        13,
+        8
+      ]
+    },
+    "15": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "9d10341a-6d54-4c22-a1aa-950e7fc13c07",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "c62f6d12-4bfd-4c9f-923a-8765ad479ce2",
+      "scale": 1,
+      "name": "setAnimFreezeScale",
+      "NodeID": 7
+    },
+    "16": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "458c30a6-c6e8-48cf-a4b2-ccc49e54f0a8",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "key": "wait",
+      "duration": 0.1,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "b3d83f17-ab4d-4343-b4e7-32fa3c860726",
+      "name": "addEntityTimer"
+    },
+    "17": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "a07e35fd-6775-4719-8534-3f101a40bde5",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "14": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "4ae35e6c-183a-4cef-a065-29af1e536110",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "11": {
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "69292eb0-03d8-47c7-9ee2-a380c4f50761",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "5": {
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "06c5c077-80dd-4641-a28f-66b0823fafe0",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        12,
+        3
+      ]
+    },
+    "12": {
+      "name": "setShaderFrozen",
+      "NodeID": 12,
+      "UID": "e9267757-f8e8-47c2-9dae-6edae89267d3",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": true
+    }
+  },
+  "onBuffDestroyIds": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

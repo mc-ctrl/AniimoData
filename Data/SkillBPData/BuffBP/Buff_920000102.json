@@ -1,0 +1,291 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920000102",
+  "NodeID": 1,
+  "UID": "608beafb-ce26-42d2-ae0f-dd19d0b9c799",
+  "desc": "篝火恢复",
+  "onBuffRefreshIds": [
+    37,
+    13,
+    4,
+    27,
+    12,
+    6
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    17
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "key": "Bonfire_Cure1",
+      "name": "setCacheVal",
+      "UID": "a21efdce-b76e-4acd-9254-c651db37327e",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 37
+    },
+    "6": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "c506b8b7-d8ec-4a1d-b4d4-e6ee26a6aa82",
+      "oldPetActionIds": [
+        22
+      ],
+      "NodeID": 6,
+      "newPetActionIds": [
+        4
+      ]
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "3de12008-2439-4168-98fe-faec2467d0ba",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 7
+    },
+    "8": {
+      "key": "delay",
+      "duration": 0.01,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "6aabe93f-2272-44d4-9584-f0fb84caa79e",
+      "name": "addEntityTimer"
+    },
+    "31": {
+      "key": "Bonfire_Cure1",
+      "name": "setCacheVal",
+      "UID": "596b5b1d-c266-41f7-aaa8-588c3ae10f2a",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 31
+    },
+    "23": {
+      "key": "Bonfire_Cure1",
+      "name": "setCacheVal",
+      "UID": "30179954-05e9-4947-967f-52dd36685a62",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 23
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "2d453582-7f76-4e51-8605-ecab85c48d15",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 22
+    },
+    "11": {
+      "actionIds": [
+        28,
+        20
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "3e6a164b-8d8e-4ff4-a2c4-356f0a8d103e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "90ec0f96-4fe1-44ef-99d5-528f5d1168cf",
+      "name": "refreshBuffDuration",
+      "NodeID": 20
+    },
+    "12": {
+      "name": "registerAttributeChange",
+      "actionIds": [
+        11
+      ],
+      "attributeName": "hp_cur",
+      "UID": "9d2fcc45-7b28-433d-beba-1d9f76f7ac64",
+      "target": "OWNER",
+      "targetType": 1,
+      "NodeID": 12
+    },
+    "3": {
+      "rValue": {
+        "UID": "ae7af5d3-df22-47d2-bbc4-1f4e77ae3ffb",
+        "target": "CURPET",
+        "name": "getHpRatio",
+        "NodeID": 2
+      },
+      "name": "greater",
+      "UID": "97e31ed2-5fdc-4f61-a651-93778c41fad8",
+      "NodeID": 3,
+      "lValue": 1
+    },
+    "4": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "2ec3a84e-76d9-4923-8afd-7e87a7622066",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        36
+      ],
+      "NodeID": 4
+    },
+    "13": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "e0054a99-4b71-46b0-9c8e-bc096806af6b",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "26": {
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "68d0040e-3cec-449a-bb43-67594dc95519",
+      "name": "doActionsByConditions",
+      "NodeID": 26,
+      "elseActionIds": [
+        30
+      ]
+    },
+    "10": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "5bb01cda-f44d-4454-8e43-6a9f383cac4d",
+      "NodeID": 10,
+      "lValue": {
+        "UID": "23400579-308f-49af-afdd-a3236052b529",
+        "target": "CURPET",
+        "name": "getHpRatio",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.05
+      },
+      "name": "calcResult",
+      "UID": "0e6d2764-eb04-4411-8ba3-f51403c9bc9f",
+      "target": "TARGET",
+      "NodeID": 15
+    },
+    "25": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "d7be1658-5016-4ceb-a413-e92cda0ff77a",
+      "NodeID": 25,
+      "lValue": {
+        "key": "Bonfire_Cure1",
+        "name": "getCacheVal",
+        "UID": "fd962683-17a6-4f8f-a9c4-381044d774a2",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "df53da9d-3394-4fa8-987e-371988279437",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "27": {
+      "key": "Bonfire_Cure1",
+      "actionIds": [
+        26
+      ],
+      "NodeID": 27,
+      "UID": "7f9ee803-4d04-491c-bda1-718fe6d2f9c2",
+      "name": "registerCacheValChange"
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17,
+      "UID": "520afcb8-0f70-49a1-9692-59c478558201",
+      "target": "OWNER",
+      "name": "doPetsActions",
+      "applyOnExplorePets": true
+    },
+    "28": {
+      "key": "Bonfire_Cure1",
+      "name": "setCacheVal",
+      "UID": "7f81a6fa-fa29-43cc-9f2c-a898130bb95a",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 28
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "272558b8-9d22-4225-b0b5-45d9fc96ec14",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 30
+    },
+    "32": {
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "ea2c431a-7047-4a04-af22-b985ab7d9ad0",
+      "name": "doActionsByConditions",
+      "NodeID": 32,
+      "elseActionIds": [
+        31
+      ]
+    },
+    "19": {
+      "rValue": {
+        "UID": "717684cf-b848-4e09-a5ce-e87af56628ab",
+        "target": "TARGET",
+        "name": "getHpRatio",
+        "NodeID": 18
+      },
+      "name": "greater",
+      "UID": "d34d1e87-d3d3-427d-8310-d1bc0ce08e0e",
+      "NodeID": 19,
+      "lValue": 1
+    },
+    "34": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "f69fbb71-74b2-4198-a014-81dc3bd4771d",
+      "NodeID": 34,
+      "lValue": {
+        "key": "Bonfire_Cure1",
+        "name": "getCacheVal",
+        "UID": "9c8a2b73-d4ad-4a2c-80f1-b596d3bb66f5",
+        "target": "OWNER",
+        "NodeID": 33
+      }
+    },
+    "36": {
+      "key": "Bonfire_Cure1",
+      "name": "setCacheVal",
+      "UID": "2623da41-70ce-41e9-a8d1-432c6bef6391",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 36
+    }
+  },
+  "name": "篝火恢复",
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    37,
+    13,
+    4,
+    27,
+    12,
+    6
+  ]
+}

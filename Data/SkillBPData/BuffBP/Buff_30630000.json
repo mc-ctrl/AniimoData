@@ -1,0 +1,106 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_30630000",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    3
+  ],
+  "tags": [
+    1
+  ],
+  "immuneTags": [
+    3,
+    5,
+    8,
+    9,
+    21,
+    17
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        5,
+        11,
+        8
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "c35a6cbf-8f38-4936-81bb-6a208276f7c6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 3
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "0a7136b6-631f-43d9-a373-8d9e16c670b2",
+      "count": 3,
+      "name": "doCounterAction"
+    },
+    "5": {
+      "calcInfo": {
+        "atk_mag_p": 0,
+        "hp_max_p": 0,
+        "atk_p": 0,
+        "def_mag_p": 0,
+        "def_p": 0
+      },
+      "calcInfoByLuaConfig": {
+        "id": 30630000,
+        "atk_mag_p": "param0",
+        "hp_max_p": "param0",
+        "atk_p": "param0",
+        "def_mag_p": "param0",
+        "def_p": "param0",
+        "type": 1
+      },
+      "UID": "26436c34-33a7-4f3d-8008-237bbc84120e",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 5
+    },
+    "8": {
+      "UID": "dabb789b-cb74-4be2-8914-cbb4fb583e47",
+      "name": "buffStopThink",
+      "NodeID": 8
+    },
+    "11": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 30630000
+      },
+      "UID": "410e40fa-5a0f-4f27-bc6b-23d953b5d352",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 11
+    },
+    "7": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "b5695e25-b652-4444-965d-9e3632a01899",
+      "name": "buffStartThink",
+      "NodeID": 7
+    },
+    "2": {
+      "buffId": 3063000,
+      "name": "hasBuff",
+      "UID": "9b199d80-d0d1-4385-ab46-fec3e8c54418",
+      "target": "MASTER",
+      "NodeID": 2
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

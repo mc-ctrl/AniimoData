@@ -1,0 +1,1677 @@
+{
+  "71441384": {
+    "owner": "唐睿尚",
+    "chunk": 1019876,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "forceSync": true,
+    "levelItems": {
+      "71441300": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置1",
+        "position": [
+          -17.71,
+          54.94,
+          64.59
+        ],
+        "rotation": [
+          18.02,
+          91.56,
+          0.19
+        ],
+        "id": 71441300,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441282": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间3触发器1",
+        "position": [
+          37.8,
+          40,
+          109.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441282,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441282_52068346",
+            "detectType": 128
+          },
+          "54919957": {
+            "size": [
+              27,
+              1,
+              30
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441301": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间1门",
+        "position": [
+          27,
+          52,
+          63.95
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 71441301,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441302": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间2状态机1 (2)",
+        "position": [
+          12.33,
+          43.46,
+          58.86
+        ],
+        "rotation": [
+          354.12,
+          89.96,
+          5.23
+        ],
+        "id": 71441302,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441303": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间3状态机2",
+        "position": [
+          72.32,
+          43,
+          110.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441303,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441304": {
+        "majorCompId": 42742113,
+        "owner": "唐睿尚",
+        "EditorName": "房间1DeathBox",
+        "position": [
+          0,
+          38,
+          62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441304,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerRevivePos": [
+              500,
+              7,
+              41
+            ],
+            "blackScreenId": 2000,
+            "playerReviveType": 2,
+            "detectType": 131,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          55,
+          3,
+          55
+        ],
+        "isActive": true
+      },
+      "71441305": {
+        "majorCompId": 42742113,
+        "owner": "唐睿尚",
+        "EditorName": "房间3DeathBox (2)",
+        "position": [
+          55,
+          38,
+          150
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441305,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerRevivePos": [
+              555,
+              9,
+              99
+            ],
+            "blackScreenId": 2000,
+            "playerReviveType": 2,
+            "detectType": 131,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          70,
+          3,
+          140
+        ],
+        "isActive": true
+      },
+      "71441306": {
+        "majorCompId": 54312401,
+        "owner": "唐睿尚",
+        "EditorName": "房间2洞",
+        "position": [
+          57,
+          42,
+          62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441306,
+        "configId": 243,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.75,
+          1.75,
+          1.75
+        ],
+        "isActive": true
+      },
+      "71441307": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间3镜头触发2",
+        "position": [
+          40,
+          45.1,
+          186
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441307,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441307_52068346",
+            "detectType": 128
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "71441308": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间2触发器",
+        "position": [
+          2.03,
+          39,
+          60.43
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 71441308,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441308_52068346",
+            "detectType": 128
+          },
+          "54919957": {
+            "size": [
+              50,
+              1,
+              50
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441309": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间3触发器2",
+        "position": [
+          37.8,
+          40,
+          170.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441309,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441309_52068346",
+            "detectType": 128
+          },
+          "54919957": {
+            "size": [
+              27,
+              1,
+              60
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91334860": {
+        "majorCompId": 44987560,
+        "owner": "唐睿尚",
+        "EditorName": "重置石球",
+        "position": [
+          11,
+          50,
+          46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91334860,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 102002
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441310": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "木球位置状态 (1)",
+        "position": [
+          27,
+          62.19,
+          147.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441310,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441295": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置3",
+        "position": [
+          49.78,
+          62.3,
+          113.08
+        ],
+        "rotation": [
+          36.73,
+          0.53,
+          0
+        ],
+        "id": 71441295,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441311": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间3镜头触发",
+        "position": [
+          40,
+          45.1,
+          132
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441311,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441311_52068346",
+            "detectType": 128
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "71441281": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "木球刷新触发器",
+        "position": [
+          45.85,
+          38,
+          166.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441281,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441281_52068346",
+            "detectType": 128
+          },
+          "54919957": {
+            "size": [
+              30,
+              1,
+              30
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          2,
+          1,
+          2
+        ],
+        "isActive": true
+      },
+      "91242093": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "玩家死亡监听",
+        "position": [
+          34.36,
+          49.99,
+          68.24
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91242093,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441312": {
+        "majorCompId": 54312401,
+        "owner": "唐睿尚",
+        "EditorName": "房间3洞2",
+        "position": [
+          40,
+          43,
+          186
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441312,
+        "configId": 243,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.75,
+          1.75,
+          1.75
+        ],
+        "isActive": true
+      },
+      "91143825": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          55,
+          52,
+          126.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91143825,
+        "configId": 3,
+        "scale": [
+          8,
+          4,
+          1
+        ],
+        "isActive": true
+      },
+      "71441313": {
+        "majorCompId": 54312401,
+        "owner": "唐睿尚",
+        "EditorName": "房间3洞1",
+        "position": [
+          40,
+          43,
+          132
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441313,
+        "configId": 243,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.75,
+          1.75,
+          1.75
+        ],
+        "isActive": true
+      },
+      "91143824": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "木球卡住状态机",
+        "position": [
+          25.03,
+          58.42,
+          170.18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91143824,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441314": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          26.41,
+          59.26,
+          104.63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441314,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441314_52068346",
+            "detectType": 128
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          2,
+          3,
+          4
+        ],
+        "isActive": true
+      },
+      "72038437": {
+        "majorCompId": 55004214,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_LevelItem_WaterMechanism_ECS",
+        "position": [
+          26.5,
+          56,
+          91.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72038437,
+        "configId": 356,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441315": {
+        "majorCompId": 54312401,
+        "owner": "唐睿尚",
+        "EditorName": "房间1洞",
+        "position": [
+          -2,
+          41,
+          65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441315,
+        "configId": 243,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.75,
+          1.75,
+          1.75
+        ],
+        "isActive": true
+      },
+      "91013864": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (2)",
+        "position": [
+          51.01,
+          54.03,
+          169.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91013864,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              8,
+              20
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441284": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置3 (1)",
+        "position": [
+          51.13,
+          61.58,
+          167.75
+        ],
+        "rotation": [
+          39.48,
+          359.33,
+          0
+        ],
+        "id": 71441284,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73161131": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "镜头记录器",
+        "position": [
+          19.48,
+          51.99,
+          65.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73161131,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441285": {
+        "majorCompId": 50866965,
+        "owner": "唐睿尚",
+        "EditorName": "房间2踏板",
+        "position": [
+          57,
+          44.1,
+          62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441285,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73161132": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "镜头记录器 (1)",
+        "position": [
+          19.48,
+          51.99,
+          65.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73161132,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441286": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间3状态机1",
+        "position": [
+          42.32,
+          43,
+          110.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441286,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73161133": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "镜头记录器 (2)",
+        "position": [
+          19.48,
+          51.99,
+          65.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73161133,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441287": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_TempleComponent_MachineGate_4m (1)",
+        "position": [
+          55,
+          50,
+          179
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441287,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441288": {
+        "majorCompId": 50866965,
+        "owner": "唐睿尚",
+        "EditorName": "房间3踏板1",
+        "position": [
+          40,
+          45.1,
+          132
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441288,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91013842": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (1)",
+        "position": [
+          51.01,
+          54.03,
+          115.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91013842,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              8,
+              20
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441289": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_TempleComponent_EndingMachine_SinglePlayer",
+        "position": [
+          55,
+          56,
+          256
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 71441289,
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441290": {
+        "majorCompId": 50866965,
+        "owner": "唐睿尚",
+        "EditorName": "房间1踏板",
+        "position": [
+          -2,
+          43.1,
+          65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441290,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91013839": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB",
+        "position": [
+          47.05,
+          54.03,
+          104.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91013839,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              0.8,
+              8,
+              2.5
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441291": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_TempleComponent_MachineGate_4m",
+        "position": [
+          55,
+          50,
+          125
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441291,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441292": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Temple_StoneStatueBase",
+        "position": [
+          0,
+          48.7,
+          14
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 71441292,
+        "componentsInfo": {
+          "53631173": {
+            "tempPetTemplateId": 100510001,
+            "noticeKey": "STATUEGUIDE_TEMPLE_25",
+            "guideId": 104400,
+            "realCharacters": "PUZZLE"
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "tempPetTemplateId": 100510001,
+          "noticeKey": "STATUEGUIDE_TEMPLE_25",
+          "guideId": 104400,
+          "realCharacters": "PUZZLE"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441293": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "木箱位置检测",
+        "position": [
+          26.95,
+          58.14,
+          153.86
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441293,
+        "componentsInfo": {
+          "52068266": {
+            "expressionKey": "71441293_52068266",
+            "detectType": 128
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "73161135": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "镜头记录器 (3)",
+        "position": [
+          19.48,
+          51.99,
+          65.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73161135,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91143821": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "木球卡住检测",
+        "position": [
+          26.04,
+          57.95,
+          171.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91143821,
+        "componentsInfo": {
+          "91118258": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068266": {
+            "expressionKey": "91143821_52068266",
+            "detectType": 128
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          3,
+          4,
+          8
+        ],
+        "isActive": true
+      },
+      "71441294": {
+        "majorCompId": 55701939,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_LevelItem_FireMechanism",
+        "position": [
+          26.34,
+          58.5,
+          110.5
+        ],
+        "rotation": [
+          90,
+          180,
+          0
+        ],
+        "id": 71441294,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441278": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间2镜头触发",
+        "position": [
+          57,
+          44.75,
+          62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441278,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441278_52068346",
+            "detectType": 128
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          4,
+          2,
+          4
+        ],
+        "isActive": true
+      },
+      "71441283": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "木球位置检测 (1)",
+        "position": [
+          26.38,
+          62.16,
+          149.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441283,
+        "componentsInfo": {
+          "52068266": {
+            "expressionKey": "71441283_52068266",
+            "detectType": 128
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          4,
+          12,
+          12
+        ],
+        "isActive": true
+      },
+      "71441296": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "木箱子位置状态",
+        "position": [
+          27,
+          61.06,
+          153.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441296,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441279": {
+        "majorCompId": 42742113,
+        "owner": "唐睿尚",
+        "EditorName": "房间2DeathBox (1)",
+        "position": [
+          53,
+          38,
+          62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441279,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerRevivePos": [
+              535,
+              7,
+              61
+            ],
+            "blackScreenId": 2000,
+            "playerReviveType": 2,
+            "detectType": 131,
+            "playerReviveRot": [
+              0,
+              90,
+              0
+            ],
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          55,
+          3,
+          55
+        ],
+        "isActive": true
+      },
+      "71441297": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置2",
+        "position": [
+          55.16,
+          56.74,
+          45.54
+        ],
+        "rotation": [
+          20.34,
+          1.03,
+          0
+        ],
+        "id": 71441297,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441280": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间1镜头触发",
+        "position": [
+          -2.14,
+          43.1,
+          64.83
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441280,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "71441280_52068346",
+            "detectType": 128
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "71441298": {
+        "majorCompId": 50866965,
+        "owner": "唐睿尚",
+        "EditorName": "房间3踏板2",
+        "position": [
+          40,
+          45.1,
+          186
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441298,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91334856": {
+        "majorCompId": 44987560,
+        "owner": "唐睿尚",
+        "EditorName": "重置木球2",
+        "position": [
+          45,
+          54,
+          154
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91334856,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 102002
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "71441299": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "房间2门",
+        "position": [
+          55.05,
+          52,
+          88.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71441299,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91334858": {
+        "majorCompId": 44987560,
+        "owner": "唐睿尚",
+        "EditorName": "重置木球1",
+        "position": [
+          42.05,
+          56,
+          100.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91334858,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 102002
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "全局_其他关卡_火初始神庙_房间同侧",
+    "spawners": [
+      71441322,
+      71441324,
+      71441337,
+      71441339,
+      71441341,
+      71441343,
+      71441346,
+      71441349,
+      71441351,
+      71441360,
+      71441362,
+      71441366,
+      71441369,
+      71441383,
+      71442164,
+      71442171,
+      71442173,
+      72537978
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2025/Sandbox_71441384_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      51,
+      123
+    ],
+    "graphId": 71441385,
+    "id": 71441384,
+    "enableFinishMark": false
+  }
+}

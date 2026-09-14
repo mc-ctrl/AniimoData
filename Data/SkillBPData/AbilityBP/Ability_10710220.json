@@ -1,0 +1,45 @@
+{
+  "BPName": "ability_10710220",
+  "NodeID": 1,
+  "UID": "f3644147-36d9-4e13-83b1-034f0bbf2be3",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10710220001,
+      "name": "setCombatActionTimeline",
+      "UID": "81651cf7-1b4e-4f1b-9a35-56550255e890",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Thunder",
+    "Fly_Skill_Thunder"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10072_ChargeFur",
+    "Eff_Parmon_10072_ChargeFur_Biu",
+    "Eff_Parmon_10072_Skill_Hit",
+    "Eff_Parmon_10072_Skill_Thunder",
+    "Eff_Range_Indicator_Circle3",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "onlyHasActOnTargets": true,
+  "parentDynamicRPCStates": [
+    "FLYING"
+  ],
+  "abilityParamId": 10400022
+}

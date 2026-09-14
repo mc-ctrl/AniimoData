@@ -1,0 +1,7 @@
+[
+  {
+    "model": "$default_model.prefab",
+    "supportTxtClips": 1,
+    "skin": "$default_skin.prefab"
+  }
+]

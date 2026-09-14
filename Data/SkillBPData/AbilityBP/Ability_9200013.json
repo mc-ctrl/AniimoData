@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_9200013",
+  "NodeID": 1,
+  "UID": "a7b7a946-bb29-4c38-bd0b-f822c0617793",
+  "abilityParamId": 9200013,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200013001,
+      "name": "setCombatActionTimeline",
+      "UID": "1cdfb53f-0d2b-4505-b2e4-11d0a1d6fb98",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10051_Fireball",
+    "Eff_Parmon_10051_Fireball_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "一刀Break",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2
+}

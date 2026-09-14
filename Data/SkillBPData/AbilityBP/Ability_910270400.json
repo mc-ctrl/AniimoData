@@ -1,0 +1,53 @@
+{
+  "BPName": "ability_910270400",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 910270400001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "34": {
+      "buffId": 2102704,
+      "name": "removeBuff",
+      "UID": "8ead3622-50c0-4e9e-a7bf-5607fa9891bc",
+      "target": "OWNER",
+      "NodeID": 34
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "onAbilityRemovedIds": [
+    34
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10027_Skill_DefMode_ShockWave",
+    "Eff_Parmon_10027_Skill_DefMode_Loop",
+    "Eff_Hit_Dark_Blunt",
+    "Eff_Parmon_10027_Skill_DefMode_Start",
+    "Eff_Parmon_10027_Skill_DefMode_Start2",
+    "Eff_Parmon_10027_Skill_DefMode_Start3"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    910270401
+  ],
+  "searchTargetRangeDown": 0.5,
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 11200400,
+  "preloadAnims": [
+    "Skill_DefMode_Start"
+  ]
+}

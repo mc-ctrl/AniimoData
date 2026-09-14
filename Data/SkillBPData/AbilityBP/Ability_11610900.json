@@ -1,0 +1,84 @@
+{
+  "stopBurrowActOnTgtNodeId": 0,
+  "stopBurrowTimelineId": 11610900001,
+  "BPName": "ability_11610900",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "burrowDuration": -1,
+  "burrowEnterBuffIds": [
+    2116101
+  ],
+  "burrowExitCastAbilityId": 11610210,
+  "burrowSwitchToAbilityId": 11610210,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11610900001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "71": {
+      "actionIds": [
+        67
+      ],
+      "conditionActionIds": [
+        72
+      ],
+      "UID": "05ce7a63-96ec-4aa5-b6bc-756a63e69932",
+      "name": "doActionsByConditions",
+      "NodeID": 71
+    },
+    "73": {
+      "UID": "b2a6f101-d789-4a73-a7a3-a68858ee0d3c",
+      "name": "isInControlState",
+      "controlState": 2,
+      "NodeID": 73
+    },
+    "72": {
+      "name": "isActorType",
+      "UID": "66390814-3c73-4cae-9bf3-8cd1a8514348",
+      "target": "OWNER",
+      "NodeID": 72,
+      "actorType": 3
+    },
+    "67": {
+      "UID": "5a5a7df2-6575-4028-b624-2ab3c18a0bfe",
+      "name": "stopBurrow",
+      "NodeID": 67
+    },
+    "69": {
+      "actionIds": [
+        67
+      ],
+      "conditionActionIds": [
+        73
+      ],
+      "UID": "ce13577b-74ee-4154-88cd-110717e8c7b6",
+      "name": "doActionsByConditions",
+      "NodeID": 69
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "subAbilityIds": [
+    11610210
+  ],
+  "abilityType": 9,
+  "abilityParamId": 9400091,
+  "onAbilityEndIds": [
+    69,
+    71
+  ],
+  "desc": "",
+  "canCastByCallFriends": false,
+  "aiSelectWeight": 1
+}

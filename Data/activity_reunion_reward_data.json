@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "scoreNum1": 1,
+      "scoreNum2": 3,
+      "scoreNum3": 5,
+      "scoreNum4": 7,
+      "scoreNum5": 9,
+      "scoreReward1": 100021,
+      "scoreReward2": 100022,
+      "scoreReward3": 100023,
+      "scoreReward4": 100024,
+      "scoreReward5": 100025
+    },
+    {
+      "scoreNum1": 1,
+      "scoreNum2": 3,
+      "scoreNum3": 5,
+      "scoreNum4": 7,
+      "scoreNum5": 9,
+      "scoreReward1": 100021,
+      "scoreReward2": 100022,
+      "scoreReward3": 100023,
+      "scoreReward4": 100038,
+      "scoreReward5": 100039
+    }
+  ]
+]

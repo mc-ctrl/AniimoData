@@ -1,0 +1,106 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "b41eeafc-981a-4ad2-be64-edc638628ec5",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "outlineRemainTimeCamouflage": 20,
+      "outlineRemainTimeTag": 0,
+      "name": "setGhostEyeState",
+      "UID": "85b18729-a6f4-406e-8ea9-8ceee148c42f",
+      "target": "MASTER",
+      "NodeID": 13,
+      "ghostEyeState": 5
+    },
+    "14": {
+      "cdTime": 0.2,
+      "name": "forceSetSkillCD",
+      "NodeID": 14,
+      "UID": "4f7ea7cc-c107-4e1b-b477-6ed2f70b298f",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 15730910
+    },
+    "10": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkillOnlyClient",
+      "UID": "9d69033d-6446-4ab5-b69d-bc0e6a4b8f12",
+      "to": 15730910,
+      "NodeID": 10,
+      "from": 15730900
+    },
+    "19": {
+      "duration": 10,
+      "name": "setCampScanEffect",
+      "UID": "59da80d3-9dc0-4024-9648-8e8f853689fa",
+      "target": "TARGET",
+      "NodeID": 19
+    },
+    "17": {
+      "actionIds": [
+        19
+      ],
+      "name": "actOnTargets",
+      "UID": "d516c26a-0edc-4275-83e9-3788f11b039a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            30,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 20
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 17
+    },
+    "5": {
+      "UID": "03dbc6a2-1c0b-4c32-a4d8-3044065bd2eb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10,
+          13,
+          17,
+          14,
+          3
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "ability_15730900",
+  "NodeID": 7,
+  "UID": "735303ae-12ab-479a-8166-e434662d0319",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 1
+}

@@ -1,0 +1,39 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9120106",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "自己对Debuff敌人造成的伤害提升。",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "registerCharacterBuff",
+      "NodeID": 3,
+      "calcInfoByLuaConfig": {
+        "id": 9120106,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "c94dbc6a-1c33-4952-ac67-dcd3b6239922",
+      "conditionType": 4,
+      "conditions": [
+        {
+          "name": "hasBuffTag",
+          "NodeID": 2,
+          "UID": "1cda51c9-3b42-495b-a0c5-bb47a0c9fbce",
+          "target": "TARGET",
+          "abilityType": 0,
+          "buffTag": 11
+        }
+      ],
+      "characterBuffType": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

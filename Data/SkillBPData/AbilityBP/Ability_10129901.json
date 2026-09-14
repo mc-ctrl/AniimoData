@@ -1,0 +1,62 @@
+{
+  "BPName": "ability_10129901",
+  "NodeID": 1,
+  "UID": "7ba2c3f7-5cae-4fb0-8519-161330eb28c0",
+  "abilityParamId": 11101060,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10129901001,
+      "name": "setCombatActionTimeline",
+      "UID": "33aa17e4-9ddd-4d26-be52-2e1c6ebd086a",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "32": {
+      "timelineId": 10129901002,
+      "name": "setCombatActionTimeline",
+      "UID": "5bd8677c-133c-4163-ad0e-973cd03f7495",
+      "target": "CASTER",
+      "NodeID": 32
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "0c3dadec-b885-482a-9963-3b8093940b42",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        32
+      ],
+      "NodeID": 9
+    },
+    "25": {
+      "UID": "7d967397-61d7-44a8-9ecb-a8d238ac0677",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 25
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Ex_t",
+    "Eff_Parmon_10012_Ex_h"
+  ],
+  "searchRelation": 2,
+  "name": "星魔师大招 陨石",
+  "searchTargetRangeRadius": 50,
+  "searchTargetRangeUp": 5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 5
+}

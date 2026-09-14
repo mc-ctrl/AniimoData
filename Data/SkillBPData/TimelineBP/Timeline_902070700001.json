@@ -1,0 +1,93 @@
+{
+  "nodeMap": {
+    "23": {
+      "UID": "f89271ca-33e6-4a8d-a513-8cdc8a71fd42",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 23
+    },
+    "4": {
+      "UID": "6b242134-3ec8-4c1b-8962-82f55da4b28a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          21
+        ]
+      },
+      "NodeID": 4
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cf32a87c-fcd1-4a34-8990-f248664d1654",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Behav_Angry"
+    },
+    "21": {
+      "UID": "303fa1ce-bfe2-4204-b756-f692e38b44e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 21
+    },
+    "10": {
+      "UID": "6ab6cea2-064e-4f92-8eb9-b22585b9f992",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "19": {
+      "UID": "d8e80216-6cbb-4b58-938d-268afce4c36b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          23,
+          17
+        ]
+      },
+      "NodeID": 19
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "69ca5acc-2d75-4970-a490-68392500d9bd",
+      "effectId": "Eff_Monster_90207_WeakLoop",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "2": {
+      "UID": "aca54ad7-2e61-4d13-b10b-3483c2a07b78",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_902070700",
+  "NodeID": 6,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    4,
+    19,
+    10
+  ],
+  "layer": "Base",
+  "length": 4.3
+}

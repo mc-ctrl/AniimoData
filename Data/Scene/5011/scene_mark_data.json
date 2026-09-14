@@ -1,0 +1,55 @@
+{
+  "0": {
+    "72766403": {
+      "favorableCollectId": 0,
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 0,
+      "infoText": "",
+      "infoTextNot": "",
+      "infoTitle": "",
+      "infoTitleNot": "",
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 0,
+      "markConfigId": 2,
+      "markPosition": [
+        831.66,
+        14.2,
+        20.73
+      ],
+      "markType": 0,
+      "openMapState": 0,
+      "randomRange": 0,
+      "realSceneId": 5011,
+      "revivedPointState": true,
+      "scale1": 0,
+      "idInType": 0,
+      "scale3": 0,
+      "showUI": true,
+      "smallAreaId": 0,
+      "largeAreaId": 0,
+      "sandboxId": 72766274,
+      "POIBoundStaticId": 0,
+      "POIDesc": "",
+      "POIOrNot": false,
+      "POIPriority": 0,
+      "ShoworNot": 0,
+      "yaw": 178.76,
+      "type": 0,
+      "activeDistance": 0,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "activeState": 0,
+      "affiliatedCamp": {},
+      "arriveParam": {},
+      "scale2": 0,
+      "circleRadius": 5,
+      "enableHudShow": 1,
+      "arriveType": 1
+    }
+  }
+}

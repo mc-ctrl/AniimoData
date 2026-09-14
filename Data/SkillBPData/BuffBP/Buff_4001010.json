@@ -1,0 +1,257 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4001010",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        21
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "faaeb5d2-b020-4431-aca3-02df096053c2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "3b4b4d20-d88c-47b0-8679-98ea8ad05ba7",
+      "target": "CURPET",
+      "name": "getMainElementType",
+      "NodeID": 6
+    },
+    "7": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "f91857c3-aeb2-4416-b452-53563048cd06",
+      "NodeID": 7,
+      "lValue": {
+        "UID": "3b4b4d20-d88c-47b0-8679-98ea8ad05ba7",
+        "target": "CURPET",
+        "name": "getMainElementType",
+        "NodeID": 6
+      }
+    },
+    "8": {
+      "actionIds": [
+        15,
+        25
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "eb0c6f5c-1b9b-462e-82f9-4cddb1e90410",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "5dc18d7d-9cda-4ff7-bb9b-4e70d74f452c",
+      "target": "CURPET",
+      "name": "getMainElementType",
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "23fd4fe0-e644-479c-88e8-ad5eca32bf33",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "21": {
+      "UID": "e7d9cea5-0849-4b89-af96-d74178d27efe",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        19,
+        22,
+        23
+      ],
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "c89fafb9-368d-4363-a006-8fe841e27957",
+      "target": "CURPET",
+      "name": "getMainElementType",
+      "NodeID": 3
+    },
+    "4": {
+      "rValue": 6,
+      "name": "equal",
+      "UID": "e5e05c73-f363-4f77-a69a-1e2dbe8ac95a",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "c89fafb9-368d-4363-a006-8fe841e27957",
+        "target": "CURPET",
+        "name": "getMainElementType",
+        "NodeID": 3
+      }
+    },
+    "24": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        14
+      ],
+      "voxelTag": "waterPool",
+      "radius": 1,
+      "UID": "4ea0c941-1066-43e0-8534-33b1b4f08664",
+      "target": "CURPET",
+      "NodeID": 24,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 4001011,
+      "NodeID": 14,
+      "UID": "1a52f99c-e6b9-4e53-b31e-dfd57c462eaa",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "10": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "2370849c-7b2d-4576-9fce-2f5bef4d7ce1",
+      "NodeID": 10,
+      "lValue": {
+        "UID": "5dc18d7d-9cda-4ff7-bb9b-4e70d74f452c",
+        "target": "CURPET",
+        "name": "getMainElementType",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "dbfbff49-6631-4bdf-a16d-3e997f7293ba",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "e3e349fb-7983-480c-a682-58ce8b0e0f24",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        24
+      ],
+      "NodeID": 25
+    },
+    "28": {
+      "buffId": 4001010,
+      "name": "removeBuff",
+      "UID": "6e870f5e-4775-4da6-b0a2-4a719a2a7706",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "27": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "cb3ace84-5c65-4ed2-a574-f66f76de3929",
+      "NodeID": 27,
+      "lValue": {
+        "key": "waterPool",
+        "name": "getCacheVal",
+        "UID": "b947f130-4a7d-483a-9e67-dbc772585ef7",
+        "target": "CURPET",
+        "NodeID": 26
+      }
+    },
+    "17": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        14
+      ],
+      "voxelTag": "burning",
+      "radius": 1,
+      "UID": "f99b4fd1-06c7-4f4e-9e25-4fe58e4bdf0c",
+      "target": "CURPET",
+      "NodeID": 17,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "29": {
+      "actionIds": [
+        28
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "1404bea1-0469-4684-ab3d-b922e43563a8",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "6e6720bd-8b98-4f39-8ee1-6b7d80ab7925",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18
+    },
+    "23": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        14
+      ],
+      "voxelTag": "grassGroupFlower",
+      "radius": 1,
+      "UID": "65a3fa99-430a-41c4-ae71-0b80b8a02d71",
+      "target": "CURPET",
+      "NodeID": 23,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "19": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        14
+      ],
+      "voxelTag": "seed",
+      "radius": 1,
+      "UID": "feb73e17-c2e3-4c64-be5e-998666fdab44",
+      "target": "CURPET",
+      "NodeID": 19,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "22": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        14
+      ],
+      "voxelTag": "normalGrass",
+      "radius": 1,
+      "UID": "a332a3b9-af15-4d60-9847-80f9ece34e46",
+      "target": "CURPET",
+      "NodeID": 22,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "12": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "cb3d1793-acd7-4387-94fb-29b168389a3e",
+      "name": "buffStartThink",
+      "NodeID": 12
+    }
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    12,
+    29
+  ]
+}

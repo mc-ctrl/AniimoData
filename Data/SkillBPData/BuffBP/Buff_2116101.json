@@ -1,0 +1,110 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2116101",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "34c19962-e3b7-4106-89b6-28a192ca3459",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "actionIds": [
+        8,
+        2,
+        7
+      ],
+      "name": "registerSkillMoveBlocked",
+      "UID": "1844e584-08ac-44f2-a2f2-abc508528f47",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "10": {
+      "name": "isActorType",
+      "UID": "a1756843-ed9e-4a17-ab70-85aec86365dc",
+      "target": "OWNER",
+      "NodeID": 10,
+      "actorType": 3
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 2116104,
+      "NodeID": 15,
+      "UID": "e010e5c3-ea44-4a96-b5c0-3bb7da983158",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "buffId": 2116105,
+      "name": "removeBuff",
+      "UID": "7bd39e6f-7378-4f85-85c9-09abfdd195dc",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "2164000d-6a0d-4a09-9411-c3b20f45836f",
+      "name": "stopBurrowByHit",
+      "NodeID": 8
+    },
+    "9": {
+      "name": "isActorType",
+      "UID": "76070f17-8f05-483a-86fe-93955d8fce21",
+      "target": "OWNER",
+      "NodeID": 9,
+      "actorType": 3
+    },
+    "13": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "399aba92-ba48-4d22-bfa7-846f5a076e12",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "11": {
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "4a1e23bb-b742-4297-b753-66112658f3a5",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        13
+      ]
+    },
+    "12": {
+      "buffId": 9116101,
+      "name": "hasBuff",
+      "UID": "740920c6-11fe-47dd-a9e5-13ff1aae701d",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "2": {
+      "buffId": 2116101,
+      "name": "removeBuff",
+      "UID": "df4c8935-7165-4a13-864b-e269214a21aa",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

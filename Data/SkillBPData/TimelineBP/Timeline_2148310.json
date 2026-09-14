@@ -1,0 +1,118 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 148308,
+      "name": "createEntity",
+      "UID": "67c0579e-331d-4f6a-a2df-ac5d38a8e352",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 3,
+      "pos": "OWNER"
+    },
+    "13": {
+      "UID": "7369a402-40e5-4f94-9646-dbc010def199",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "9": {
+      "value": {
+        "calcId": 2148310,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "e5c60180-3c3d-4f96-b7d6-a8c44ce6b63a",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "6063c912-f86d-4441-be48-d02af2279e03",
+      "target": "MASTER",
+      "NodeID": 9
+    },
+    "8": {
+      "calcId": 2148310,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "e5c60180-3c3d-4f96-b7d6-a8c44ce6b63a",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "UID": "44b00955-d241-4e88-842a-9478d2e49569",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          7,
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "11": {
+      "delayTime": 0,
+      "duration": 0.8,
+      "NodeID": 11,
+      "UID": "6b2438a7-3def-4c88-8df8-b3eb89cea8c8",
+      "radius": 12,
+      "waterPoolDissolveRange": [
+        1,
+        2
+      ],
+      "commonMount": "CM_common_warning",
+      "levelActions": [
+        {
+          "actionIds": [
+            9
+          ],
+          "count": 1
+        }
+      ],
+      "notConsumeRate": 0,
+      "waterPoolDelayTime": 0.1,
+      "maxCount": 1,
+      "waterPoolVanishDuration": 1.3,
+      "name": "waterAbsorb"
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3e8a3e39-6c3c-4dae-9de5-2f8a5ad9796b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10483_Skill_GatherBubble_03",
+      "NodeID": 7
+    },
+    "12": {
+      "buffId": 21483051,
+      "name": "removeBuff",
+      "UID": "c6a656f0-c4f1-49e3-a03a-11dc12f84d85",
+      "target": "MASTER",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2148310",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    5,
+    13
+  ],
+  "layer": "Base",
+  "length": 1.667
+}

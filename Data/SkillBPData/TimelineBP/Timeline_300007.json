@@ -1,0 +1,138 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "UID": "f920333c-89e4-4df4-9a02-2aa70915d676",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "6": {
+      "target": "MASTER",
+      "name": "followTarget",
+      "UID": "2c0fbb4e-5de9-4736-86e6-9a9ccf3b6d05",
+      "stopDistance": 0,
+      "NodeID": 6,
+      "followSpeed": 30
+    },
+    "10": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "cbd0d809-014f-4302-ab8f-58d6e9ca45d4",
+      "effectId": "Eff_ParmonO_Monster_RogueCatch_Epicenter",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "7fdeac1c-6324-49fa-af4b-7f3f5fad3c54",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 9
+      },
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "1cecf20d-6845-4023-aace-91ab8eea42d6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "actionIds": [
+        17
+      ],
+      "name": "actOnTargets",
+      "UID": "aba2a405-657e-4efb-8708-c7ae3eb30c1f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            7,
+            180,
+            2.2,
+            0.6
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 16
+    },
+    "17": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 1114101,
+      "NodeID": 17,
+      "UID": "7c02d679-5a46-46de-a3bd-b23ee7bb9ada",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "21": {
+      "eventName": "masterDead",
+      "NodeID": 21,
+      "UID": "e40c3dd9-06c4-41d2-a18d-d2c8ae93af0b",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        20
+      ]
+    },
+    "20": {
+      "UID": "7b7b13a3-bde6-42fa-89df-a155d9927c14",
+      "name": "destroyEntity",
+      "NodeID": 20
+    },
+    "12": {
+      "actionIds": [
+        10,
+        16
+      ],
+      "name": "registerDeadEvent",
+      "UID": "03f66cd5-8723-4e14-9d63-a79bf97dcbc8",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_300007",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    13,
+    7,
+    22
+  ],
+  "layer": "Base",
+  "length": 9999
+}

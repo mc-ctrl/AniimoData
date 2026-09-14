@@ -1,0 +1,56 @@
+{
+  "nodeMap": {
+    "3": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkillOnlyClient",
+      "UID": "2d9896bc-4602-403b-9272-f61c763c4a92",
+      "to": 10120910,
+      "NodeID": 3,
+      "from": 10120900
+    },
+    "13": {
+      "outlineRemainTimeCamouflage": 0,
+      "outlineRemainTimeTag": 0,
+      "name": "setGhostEyeState",
+      "UID": "bf340f91-9f7f-4490-b06e-4a99789d6f2e",
+      "target": "MASTER",
+      "NodeID": 13,
+      "ghostEyeState": 4
+    },
+    "5": {
+      "UID": "46e7b32d-95d5-4e54-98a3-1d1e3be81ff5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          13,
+          12
+        ]
+      },
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "9cbf808a-c60e-4594-a84b-d53921dd3d68",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_10120900",
+  "NodeID": 7,
+  "UID": "635c51e4-23fe-47a3-a417-f47a0b5f97aa",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 1.65101
+}

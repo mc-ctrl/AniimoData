@@ -1,0 +1,42 @@
+{
+  "28230614": {
+    "isFunny": false,
+    "locationChooseMethod": 0,
+    "endTime": -1,
+    "remainingActiveCount": -1,
+    "smartTerrainType": 1,
+    "stpType": 1,
+    "startTime": -1,
+    "priority": 0,
+    "pos": [
+      49.79,
+      0.1,
+      -19.61
+    ],
+    "yaw": 0,
+    "templateId": 11004100,
+    "pointList": [
+      {
+        "yaw": 0,
+        "position": [
+          49.79,
+          0.1,
+          -19.61
+        ]
+      }
+    ],
+    "PerceptibilityRangeMultiple": 0.5,
+    "activeCD": 0,
+    "behaviorStateKey": {
+      "templateKey": "ST_STP_Angry",
+      "behaviorTreeTemplateParameters": [
+        {
+          "type": "float",
+          "value": "5",
+          "name": "angryTime"
+        }
+      ]
+    },
+    "interruptDetection": false
+  }
+}

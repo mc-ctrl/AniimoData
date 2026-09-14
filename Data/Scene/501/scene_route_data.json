@@ -1,0 +1,7328 @@
+{
+  "91248778": {
+    "id": 91248778,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          -41.84,
+          37.03,
+          322.95
+        ],
+        "animHashKey1": "Swim_Forward",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -39.89,
+          37.03,
+          327.1
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -34.74,
+          37.03,
+          329.12
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -30.91,
+          37.03,
+          326.4
+        ],
+        "facingDir": [
+          -0.41,
+          0,
+          0.91
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -28.79,
+          37.03,
+          322.28
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -28.49,
+          37.03,
+          317.32
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -24.25,
+          37.03,
+          314.96
+        ],
+        "facingDir": [
+          0.11,
+          0,
+          0.99
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -22.81,
+          37.03,
+          317.93
+        ],
+        "facingDir": [
+          0.09,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -25.67,
+          37.03,
+          320.55
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -30.23,
+          37.03,
+          326.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -34.94,
+          37.03,
+          329.83
+        ],
+        "facingDir": [
+          -0.01,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -39.79,
+          37.03,
+          328.13
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -39.89,
+      37.03,
+      327.47
+    ],
+    "sandboxId": 91034395
+  },
+  "91248785": {
+    "id": 91248785,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          -43.26,
+          37.08,
+          325.03
+        ],
+        "animHashKey1": "Swim_Forward",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -41.31,
+          37.08,
+          329.18
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -36.16,
+          37.08,
+          331.2
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -32.33,
+          37.08,
+          328.48
+        ],
+        "facingDir": [
+          -0.41,
+          0,
+          0.91
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -30.21,
+          37.08,
+          324.36
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -29.91,
+          37.08,
+          319.4
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -25.67,
+          37.08,
+          317.04
+        ],
+        "facingDir": [
+          0.11,
+          0,
+          0.99
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -24.23,
+          37.08,
+          320.01
+        ],
+        "facingDir": [
+          0.09,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -27.09,
+          37.08,
+          322.63
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -31.65,
+          37.08,
+          328.76
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -36.36,
+          37.08,
+          331.91
+        ],
+        "facingDir": [
+          -0.01,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -41.21,
+          37.08,
+          330.21
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -41.31,
+      37.08,
+      329.55
+    ],
+    "sandboxId": 91034395
+  },
+  "91248794": {
+    "id": 91248794,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          -24.45,
+          42.18,
+          303.73
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -29.84,
+          42.7,
+          311.92
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -36.23,
+          43.91,
+          301.14
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -41.72,
+          43.4,
+          307.78
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -41.72,
+          43.4,
+          307.78
+        ],
+        "isStatic": true,
+        "animHashKey1": "Skill_Dance",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -43.71,
+          42.49,
+          316.58
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.87,
+          0,
+          0.49
+        ]
+      },
+      {
+        "position": [
+          -53.86,
+          41.62,
+          311.63
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.04,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -53.86,
+          41.62,
+          311.63
+        ],
+        "isStatic": true,
+        "animHashKey1": "Idle02",
+        "facingDir": [
+          0.04,
+          0,
+          1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91034395
+  },
+  "91248833": {
+    "id": 91248833,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -12.26,
+          38,
+          388.49
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.85,
+          0,
+          0.52
+        ]
+      },
+      {
+        "position": [
+          -12.26,
+          38,
+          388.49
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_MakeLove",
+        "facingDir": [
+          0.85,
+          0,
+          0.52
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.4,
+      0,
+      0.92
+    ],
+    "pos": [
+      -12.98,
+      37.94,
+      386.96
+    ],
+    "sandboxId": 55529712
+  },
+  "91248842": {
+    "id": 91248842,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -9.91,
+          38.05,
+          390.78
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.55,
+          0,
+          -0.83
+        ]
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 5,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Shy"
+          }
+        ],
+        "facingDir": [
+          -0.55,
+          0,
+          -0.83
+        ],
+        "position": [
+          -9.91,
+          38.05,
+          390.78
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_SeekLove"
+      },
+      {
+        "position": [
+          -10.95,
+          38.13,
+          389.54
+        ],
+        "facingDir": [
+          -0.65,
+          0,
+          -0.76
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -10.95,
+          38.13,
+          389.54
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_MakeLove",
+        "facingDir": [
+          -0.65,
+          0,
+          -0.76
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.4,
+      0,
+      0.92
+    ],
+    "pos": [
+      -7.62,
+      37.94,
+      391.98
+    ],
+    "sandboxId": 55529712
+  },
+  "91248865": {
+    "id": 91248865,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          14.05,
+          38,
+          578.23
+        ],
+        "facingDir": [
+          -0.64,
+          0,
+          -0.77
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          14.05,
+          38,
+          578.23
+        ],
+        "isStatic": true,
+        "animHashKey1": "Emotion_Helpless",
+        "facingDir": [
+          -0.64,
+          0,
+          -0.77
+        ]
+      },
+      {
+        "position": [
+          9.78,
+          38,
+          578.27
+        ],
+        "facingDir": [
+          0.67,
+          0,
+          -0.75
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          9.78,
+          38,
+          578.27
+        ],
+        "isStatic": true,
+        "animHashKey1": "Emotion_Sorrow_Loop",
+        "facingDir": [
+          0.67,
+          0,
+          -0.75
+        ]
+      },
+      {
+        "position": [
+          10.08,
+          38,
+          575.34
+        ],
+        "facingDir": [
+          0.56,
+          0,
+          0.83
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          10.08,
+          38,
+          575.34
+        ],
+        "isStatic": true,
+        "animHashKey1": "Emotion_Helpless",
+        "facingDir": [
+          0.56,
+          0,
+          0.83
+        ]
+      },
+      {
+        "position": [
+          14.2,
+          38,
+          575.25
+        ],
+        "facingDir": [
+          -0.76,
+          0,
+          0.65
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          14.2,
+          38,
+          575.25
+        ],
+        "isStatic": true,
+        "animHashKey1": "Emotion_Sorrow_Loop",
+        "facingDir": [
+          -0.76,
+          0,
+          0.65
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0.13,
+      0,
+      0.99
+    ],
+    "pos": [
+      15.68,
+      39.91,
+      581.01
+    ],
+    "sandboxId": 72874664
+  },
+  "91248870": {
+    "id": 91248870,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          67.3,
+          26.96,
+          419
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -1,
+          0,
+          0.04
+        ]
+      },
+      {
+        "position": [
+          67.3,
+          26.96,
+          419
+        ],
+        "facingDir": [
+          -1,
+          0,
+          0.04
+        ],
+        "animHashKey1": "Behav_EatStart",
+        "animHashKey2": "Behav_EatLoop",
+        "animHashKey3": "Behav_EatEnd",
+        "animationTimeout": 6,
+        "isStatic": true,
+        "enterNotifyInfoList": [
+          {
+            "timeout": 6,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Eat"
+          }
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      62.99,
+      28.21,
+      419.35
+    ],
+    "sandboxId": 54991393
+  },
+  "91248872": {
+    "id": 91248872,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -12.65,
+          38.13,
+          433.52
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.04,
+          0,
+          -1
+        ]
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 5,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Think"
+          }
+        ],
+        "facingDir": [
+          0.04,
+          0,
+          -1
+        ],
+        "position": [
+          -12.65,
+          38.13,
+          433.52
+        ],
+        "isStatic": true,
+        "animHashKey1": "Emotion_Think"
+      },
+      {
+        "position": [
+          -12.12,
+          38.13,
+          436.13
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.84,
+          0,
+          0.54
+        ]
+      },
+      {
+        "position": [
+          -14.01,
+          38.13,
+          437.44
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.45,
+          0,
+          -0.89
+        ]
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 5,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Think"
+          }
+        ],
+        "facingDir": [
+          0.45,
+          0,
+          -0.89
+        ],
+        "position": [
+          -14.01,
+          38.13,
+          437.44
+        ],
+        "isStatic": true,
+        "animHashKey1": "Emotion_Think"
+      },
+      {
+        "position": [
+          -13.08,
+          38.13,
+          435.74
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.21,
+          0,
+          -0.98
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -14.79,
+      38.13,
+      434.62
+    ],
+    "sandboxId": 65377855
+  },
+  "91250022": {
+    "id": 91250022,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          -56.94,
+          41.95,
+          426.45
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -1,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "position": [
+          -56.94,
+          41.95,
+          426.45
+        ],
+        "animHashKey1": "Behav_EatStart",
+        "animHashKey2": "Behav_EatLoop",
+        "animHashKey3": "Behav_EatEnd",
+        "animationTimeout": 3,
+        "isStatic": true,
+        "facingDir": [
+          -1,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "position": [
+          -59.7,
+          42.21,
+          421.97
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.96,
+          0,
+          0.28
+        ]
+      },
+      {
+        "position": [
+          -63.94,
+          42.09,
+          421.5
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.47,
+          0,
+          0.88
+        ]
+      },
+      {
+        "position": [
+          -63.94,
+          42.09,
+          421.5
+        ],
+        "animHashKey1": "Behav_EatStart",
+        "animHashKey2": "Behav_EatLoop",
+        "animHashKey3": "Behav_EatEnd",
+        "animationTimeout": 3,
+        "isStatic": true,
+        "facingDir": [
+          0.47,
+          0,
+          0.88
+        ]
+      },
+      {
+        "position": [
+          -59.88,
+          42.21,
+          422.3
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.52,
+          0,
+          0.85
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -57.97,
+      40.16,
+      432.47
+    ],
+    "sandboxId": 54991393
+  },
+  "91250749": {
+    "id": 91250749,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          38.26,
+          40,
+          490.04
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.93,
+          0,
+          -0.36
+        ]
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 5,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Chat"
+          }
+        ],
+        "facingDir": [
+          0.93,
+          0,
+          -0.36
+        ],
+        "position": [
+          38.26,
+          40,
+          490.04
+        ],
+        "isStatic": true,
+        "animHashKey1": "Competition_WRS_DrawA"
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 3,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Cry"
+          }
+        ],
+        "facingDir": [
+          0.93,
+          0,
+          -0.36
+        ],
+        "position": [
+          38.26,
+          40,
+          490.04
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_Cry"
+      }
+    ],
+    "quaternion": [
+      0,
+      0.67,
+      0,
+      0.75
+    ],
+    "pos": [
+      33.41,
+      43.93,
+      490.72
+    ],
+    "sandboxId": 54921643
+  },
+  "91250825": {
+    "id": 91250825,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          39.86,
+          40,
+          489.22
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.92,
+          0,
+          0.39
+        ]
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 5,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Chat"
+          }
+        ],
+        "facingDir": [
+          -0.92,
+          0,
+          0.39
+        ],
+        "position": [
+          39.86,
+          40,
+          489.22
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_Alert"
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 3,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Proud"
+          }
+        ],
+        "facingDir": [
+          -0.92,
+          0,
+          0.39
+        ],
+        "position": [
+          39.86,
+          40,
+          489.22
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_Happy"
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.61,
+      0,
+      0.79
+    ],
+    "pos": [
+      44.15,
+      43.94,
+      486.87
+    ],
+    "sandboxId": 54921643
+  },
+  "91251141": {
+    "id": 91251141,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          88.23,
+          51.86,
+          1007.52
+        ],
+        "speed": 1.3,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.92,
+          0,
+          0.38
+        ]
+      },
+      {
+        "animHashKey1": "Story_Greet",
+        "facingDir": [
+          -0.92,
+          0,
+          0.38
+        ],
+        "position": [
+          88.23,
+          51.86,
+          1007.52
+        ],
+        "isStatic": true,
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000508,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          92.49,
+          51.86,
+          1013.59
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          -0.99,
+          0,
+          -0.11
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000509,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          93.33,
+          51.26,
+          1018.81
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          -0.87,
+          0,
+          -0.49
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000510,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          108.07,
+          46,
+          1022.05
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          -1,
+          0,
+          -0.1
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000511,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          127.48,
+          46,
+          1013.62
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          -0.77,
+          0,
+          0.64
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000512,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          129.69,
+          41.54,
+          996.06
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          -0.1,
+          0,
+          1
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000513,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "position": [
+          123.19,
+          41.54,
+          992.33
+        ],
+        "speed": 1.3,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.64,
+          0,
+          -0.76
+        ]
+      },
+      {
+        "position": [
+          123.19,
+          41.54,
+          992.33
+        ],
+        "isStatic": true,
+        "animHashKey1": "Story_Greet02",
+        "facingDir": [
+          0.64,
+          0,
+          -0.76
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          123.88,
+          41.54,
+          999.86
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.09,
+          0,
+          -1
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000514,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "position": [
+          117.38,
+          41.54,
+          996.99
+        ],
+        "speed": 1.3,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -1,
+          0,
+          -0.04
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          109.33,
+          41.09,
+          997.23
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.99,
+          0,
+          0.11
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000515,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          99.6,
+          41.54,
+          993.08
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.99,
+          0,
+          -0.12
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000516,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          90.54,
+          41.54,
+          1002.91
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.64,
+          0,
+          -0.76
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000517,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          83.15,
+          41.54,
+          1000.36
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.92,
+          0,
+          -0.39
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000518,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          87.44,
+          44.65,
+          987.74
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          -0.42,
+          0,
+          0.91
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000519,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          96.26,
+          46,
+          979.8
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          -0.73,
+          0,
+          0.68
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000520,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "position": [
+          112.33,
+          46,
+          973.27
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000521,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.94,
+          0,
+          0.35
+        ]
+      },
+      {
+        "position": [
+          129.46,
+          50.55,
+          984.4
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.79,
+          0,
+          -0.61
+        ]
+      },
+      {
+        "position": [
+          129.84,
+          54.88,
+          1011.66
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.64,
+          0,
+          -0.76
+        ]
+      },
+      {
+        "position": [
+          118.95,
+          54.88,
+          1019.83
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000522,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.77,
+          0,
+          -0.63
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          110.23,
+          54.88,
+          1011.17
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.72,
+          0,
+          0.69
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000523,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "position": [
+          120.69,
+          54.88,
+          1005.23
+        ],
+        "speed": 1.3,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.87,
+          0,
+          0.5
+        ]
+      },
+      {
+        "position": [
+          121.06,
+          54.88,
+          993.07
+        ],
+        "speed": 1.3,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.02,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          113.71,
+          54.88,
+          984.9
+        ],
+        "speed": 1.3,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.69,
+          0,
+          0.73
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          101.66,
+          54.88,
+          982.64
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.96,
+          0,
+          0.27
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000524,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          97.57,
+          54.88,
+          976.32
+        ],
+        "speed": 1.3,
+        "facingDir": [
+          0.4,
+          0,
+          0.92
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 9000525,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "position": [
+          83.22,
+          52.49,
+          993.35
+        ],
+        "speed": 1.3,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.64,
+          0,
+          -0.76
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      88.99,
+      51.86,
+      1007.05
+    ],
+    "sandboxId": 72293035
+  },
+  "91259148": {
+    "id": 91259148,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          -41.84,
+          36.75,
+          322.95
+        ],
+        "animHashKey1": "Swim_Forward",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -39.89,
+          36.75,
+          327.1
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -34.74,
+          36.75,
+          329.12
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -30.91,
+          36.75,
+          326.4
+        ],
+        "facingDir": [
+          -0.41,
+          0,
+          0.91
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -28.79,
+          36.75,
+          322.28
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -28.49,
+          36.75,
+          317.32
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -24.25,
+          36.75,
+          314.96
+        ],
+        "facingDir": [
+          0.11,
+          0,
+          0.99
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -22.81,
+          36.75,
+          317.93
+        ],
+        "facingDir": [
+          0.09,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -25.67,
+          36.75,
+          320.55
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -30.23,
+          36.75,
+          326.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -34.94,
+          36.75,
+          329.83
+        ],
+        "facingDir": [
+          -0.01,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -39.79,
+          36.75,
+          328.13
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -39.89,
+      36.75,
+      327.47
+    ],
+    "sandboxId": 91034395
+  },
+  "91259149": {
+    "id": 91259149,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          -43.26,
+          36.74,
+          325.03
+        ],
+        "animHashKey1": "Swim_Forward",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -41.31,
+          36.74,
+          329.18
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -36.16,
+          36.74,
+          331.2
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -32.33,
+          36.74,
+          328.48
+        ],
+        "facingDir": [
+          -0.41,
+          0,
+          0.91
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -30.21,
+          36.74,
+          324.36
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -29.91,
+          36.74,
+          319.4
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -25.67,
+          36.74,
+          317.04
+        ],
+        "facingDir": [
+          0.11,
+          0,
+          0.99
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -24.23,
+          36.74,
+          320.01
+        ],
+        "facingDir": [
+          0.09,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -27.09,
+          36.74,
+          322.63
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -31.65,
+          36.74,
+          328.76
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -36.36,
+          36.74,
+          331.91
+        ],
+        "facingDir": [
+          -0.01,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -41.21,
+          36.74,
+          330.21
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "Swim_Forward",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -41.31,
+      36.74,
+      329.55
+    ],
+    "sandboxId": 91034395
+  },
+  "91278021": {
+    "id": 91278021,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          28.23,
+          25,
+          562.08
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "SprintLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          27.15,
+          25,
+          562.54
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "SprintLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          26.98,
+          25,
+          563.95
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "SprintLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          28.38,
+          25,
+          564.96
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "SprintLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          29.24,
+          25,
+          563.61
+        ],
+        "facingDir": [
+          -0.88,
+          0,
+          0.47
+        ],
+        "animHashKey1": "SprintLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          29.24,
+          25,
+          563.61
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_AngryLoop",
+        "facingDir": [
+          -0.88,
+          0,
+          0.47
+        ]
+      },
+      {
+        "position": [
+          29.21,
+          25,
+          562.77
+        ],
+        "facingDir": [
+          0.15,
+          0,
+          0.99
+        ],
+        "animHashKey1": "SprintLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      28.18,
+      25,
+      562.35
+    ],
+    "sandboxId": 91275283
+  },
+  "91294759": {
+    "id": 91294759,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -103.04,
+          37.17,
+          292.7
+        ],
+        "facingDir": [
+          -0.04,
+          0,
+          -1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -102.06,
+          37.17,
+          285.84
+        ],
+        "facingDir": [
+          -1,
+          0,
+          -0.01
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -102.06,
+          37.17,
+          285.84
+        ],
+        "animHashKey1": "Behav_HappyStart",
+        "animHashKey2": "Behav_HappyLoop",
+        "animHashKey3": "Behav_HappyEnd",
+        "animationTimeout": 0,
+        "isStatic": true,
+        "facingDir": [
+          -1,
+          0,
+          -0.01
+        ]
+      },
+      {
+        "position": [
+          -99.85,
+          37.17,
+          281.39
+        ],
+        "facingDir": [
+          -0.18,
+          0,
+          0.98
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -100.96,
+          37.17,
+          287.08
+        ],
+        "facingDir": [
+          -0.43,
+          0,
+          0.9
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -102.8,
+      37.17,
+      290.8
+    ],
+    "sandboxId": 91292172
+  },
+  "91294907": {
+    "id": 91294907,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -103.06,
+          37.17,
+          269.37
+        ],
+        "facingDir": [
+          -0.89,
+          0,
+          -0.46
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -107.41,
+          37.17,
+          267.21
+        ],
+        "facingDir": [
+          -0.89,
+          0,
+          0.45
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -107.41,
+          37.17,
+          267.21
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_Alert",
+        "facingDir": [
+          -0.89,
+          0,
+          0.45
+        ]
+      },
+      {
+        "position": [
+          -108.13,
+          37.17,
+          263.46
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -105.34,
+          37.17,
+          262.3
+        ],
+        "facingDir": [
+          0.76,
+          0,
+          -0.66
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -105.34,
+          37.17,
+          262.3
+        ],
+        "isStatic": true,
+        "animHashKey1": "IdleSpecial",
+        "facingDir": [
+          0.76,
+          0,
+          -0.66
+        ]
+      },
+      {
+        "position": [
+          -105.46,
+          37.17,
+          265.78
+        ],
+        "facingDir": [
+          0.59,
+          0,
+          0.81
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -101.77,
+          37.17,
+          267.87
+        ],
+        "facingDir": [
+          1,
+          0,
+          0.09
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -101.77,
+          37.17,
+          267.87
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_Happy",
+        "facingDir": [
+          1,
+          0,
+          0.09
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -103.06,
+      37.17,
+      269.37
+    ],
+    "sandboxId": 91292172
+  },
+  "91315992": {
+    "id": 91315992,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -85.78,
+          40,
+          389.43
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.55,
+          0,
+          -0.84
+        ]
+      },
+      {
+        "position": [
+          -91.15,
+          40,
+          375.04
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.46,
+          0,
+          -0.89
+        ]
+      },
+      {
+        "position": [
+          -95.78,
+          39.85,
+          362.33
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.73,
+          0,
+          -0.69
+        ]
+      },
+      {
+        "position": [
+          -105.29,
+          39.8,
+          336.83
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.8,
+          0,
+          0.6
+        ]
+      },
+      {
+        "position": [
+          -96.56,
+          39.85,
+          362.7
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.53,
+          0,
+          0.85
+        ]
+      },
+      {
+        "position": [
+          -91.97,
+          40,
+          375.06
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.31,
+          0,
+          0.95
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.24,
+      0,
+      0.97
+    ],
+    "pos": [
+      -84.61,
+      43.53,
+      380.58
+    ],
+    "sandboxId": 54991393
+  },
+  "91316005": {
+    "id": 91316005,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -101.85,
+          39.8,
+          339.49
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.41,
+          0,
+          0.91
+        ]
+      },
+      {
+        "position": [
+          -97.48,
+          39.8,
+          353.65
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.32,
+          0,
+          0.95
+        ]
+      },
+      {
+        "position": [
+          -86.8,
+          39.8,
+          378.03
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.61,
+          0,
+          0.8
+        ]
+      },
+      {
+        "position": [
+          -81.76,
+          39.8,
+          387.69
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.7,
+          0,
+          -0.72
+        ]
+      },
+      {
+        "position": [
+          -87.63,
+          39.8,
+          376.72
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.39,
+          0,
+          -0.92
+        ]
+      },
+      {
+        "position": [
+          -96.89,
+          39.8,
+          353.25
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.15,
+          0,
+          -0.99
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.95,
+      0,
+      -0.32
+    ],
+    "pos": [
+      -100.26,
+      43.53,
+      346.16
+    ],
+    "sandboxId": 54991393
+  },
+  "91316010": {
+    "id": 91316010,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -83.27,
+          39.8,
+          310
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.82,
+          0,
+          0.57
+        ]
+      },
+      {
+        "position": [
+          -68.99,
+          39.8,
+          315.35
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.76,
+          0,
+          0.65
+        ]
+      },
+      {
+        "position": [
+          -62.73,
+          38,
+          321.47
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.93,
+          0,
+          0.37
+        ]
+      },
+      {
+        "position": [
+          -48.07,
+          38,
+          336.64
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.97,
+          0,
+          -0.26
+        ]
+      },
+      {
+        "position": [
+          -63.61,
+          38,
+          322.02
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.81,
+          0,
+          -0.59
+        ]
+      },
+      {
+        "position": [
+          -69.81,
+          39.8,
+          317.11
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.64,
+          0,
+          -0.77
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -1,
+      0,
+      -0.06
+    ],
+    "pos": [
+      -85.26,
+      43.53,
+      310.48
+    ],
+    "sandboxId": 54991393
+  },
+  "91316013": {
+    "id": 91316013,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -2.58,
+          29.94,
+          354.81
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.69,
+          0,
+          0.72
+        ]
+      },
+      {
+        "position": [
+          -0.55,
+          29.94,
+          356.53
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.79,
+          0,
+          0.61
+        ]
+      },
+      {
+        "position": [
+          8.5,
+          25,
+          364.81
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.58,
+          0,
+          -0.81
+        ]
+      },
+      {
+        "position": [
+          11.67,
+          25,
+          362.3
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.54,
+          0,
+          -0.84
+        ]
+      },
+      {
+        "position": [
+          3.2,
+          29.94,
+          354.31
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.63,
+          0,
+          -0.78
+        ]
+      },
+      {
+        "position": [
+          0.47,
+          29.94,
+          351.48
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.63,
+          0,
+          -0.78
+        ]
+      },
+      {
+        "position": [
+          -8.38,
+          34.94,
+          343.18
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.19,
+          0,
+          -0.98
+        ]
+      },
+      {
+        "position": [
+          -17.94,
+          38,
+          339.06
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.96,
+          0,
+          -0.27
+        ]
+      },
+      {
+        "position": [
+          -28.33,
+          38,
+          342.7
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.97,
+          0,
+          -0.23
+        ]
+      },
+      {
+        "position": [
+          -18.94,
+          38,
+          343.56
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.93,
+          0,
+          0.37
+        ]
+      },
+      {
+        "position": [
+          -11.81,
+          34.94,
+          345.23
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.03
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      11.04,
+      25,
+      362.08
+    ],
+    "sandboxId": 54991393
+  },
+  "91316029": {
+    "id": 91316029,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          110.49,
+          38,
+          524.68
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.12,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          102.75,
+          38,
+          544.56
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.25,
+          0,
+          0.97
+        ]
+      },
+      {
+        "position": [
+          100.51,
+          38,
+          552.14
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.48,
+          0,
+          0.88
+        ]
+      },
+      {
+        "position": [
+          98.95,
+          38,
+          567.29
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.23,
+          0,
+          -0.97
+        ]
+      },
+      {
+        "position": [
+          98.57,
+          38,
+          552.04
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.32,
+          0,
+          -0.95
+        ]
+      },
+      {
+        "position": [
+          101.9,
+          38,
+          543.94
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          -1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.6,
+      0,
+      0.8
+    ],
+    "pos": [
+      100.14,
+      43.53,
+      568.95
+    ],
+    "sandboxId": 54991393
+  },
+  "91330246": {
+    "id": 91330246,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -83.69,
+          40,
+          339.35
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.44,
+          0,
+          -0.9
+        ]
+      },
+      {
+        "position": [
+          -86.9,
+          39.88,
+          332.16
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.78,
+          0,
+          -0.62
+        ]
+      },
+      {
+        "position": [
+          -93,
+          39.8,
+          327.65
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.97,
+          0,
+          0.26
+        ]
+      },
+      {
+        "position": [
+          -116.47,
+          39.8,
+          335.13
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.97,
+          0,
+          -0.23
+        ]
+      },
+      {
+        "position": [
+          -144.32,
+          39.8,
+          330.1
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "position": [
+          -116.93,
+          39.8,
+          330.1
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.98,
+          0,
+          -0.18
+        ]
+      },
+      {
+        "position": [
+          -86.03,
+          39.88,
+          325.03
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.18,
+          0,
+          0.98
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -89.32,
+      39.88,
+      327.98
+    ],
+    "sandboxId": 91311436
+  },
+  "91330263": {
+    "id": 91330263,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -89.87,
+          39.87,
+          271.93
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.01,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -80.13,
+          39.87,
+          264.89
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.14,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          -76.44,
+          39.87,
+          290.87
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.48,
+          0,
+          0.88
+        ]
+      },
+      {
+        "position": [
+          -86.61,
+          39.87,
+          309.48
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.62,
+          0,
+          -0.79
+        ]
+      },
+      {
+        "position": [
+          -77.47,
+          39.87,
+          296.69
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "position": [
+          -78.85,
+          39.87,
+          267.34
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.6,
+          0,
+          -0.8
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -76.37,
+      46,
+      269.01
+    ],
+    "sandboxId": 91311436
+  },
+  "91330301": {
+    "id": 91330301,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -103.2,
+          39.87,
+          321.81
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.95,
+          0,
+          -0.31
+        ]
+      },
+      {
+        "position": [
+          -93.66,
+          39.87,
+          318.88
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.71,
+          0,
+          -0.71
+        ]
+      },
+      {
+        "position": [
+          -86.09,
+          39.87,
+          310.91
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.81,
+          0,
+          -0.58
+        ]
+      },
+      {
+        "position": [
+          -77.61,
+          39.8,
+          304.8
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.33,
+          0,
+          0.94
+        ]
+      },
+      {
+        "position": [
+          -81.28,
+          39.8,
+          315.32
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.84,
+          0,
+          0.54
+        ]
+      },
+      {
+        "position": [
+          -105.5,
+          39.8,
+          330.64
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.25,
+          0,
+          -0.97
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -99.05,
+      39.8,
+      323.81
+    ],
+    "sandboxId": 91311436
+  },
+  "91401584": {
+    "id": 91401584,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -34.39,
+          39.39,
+          303.62
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          -0.5,
+          0,
+          0.87
+        ]
+      },
+      {
+        "position": [
+          -32.54,
+          38.93,
+          301.14
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          0.11,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          -30.73,
+          38.69,
+          302.87
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          -0.11,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          -31.42,
+          38.88,
+          304.65
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          0.97,
+          0,
+          -0.25
+        ]
+      },
+      {
+        "position": [
+          -31.97,
+          38.97,
+          305.52
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          -0.54,
+          0,
+          0.84
+        ]
+      },
+      {
+        "position": [
+          -31.4,
+          38.87,
+          304.61
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          -0.28,
+          0,
+          0.96
+        ]
+      },
+      {
+        "position": [
+          -30.73,
+          38.7,
+          302.9
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          -0.72,
+          0,
+          0.69
+        ]
+      },
+      {
+        "position": [
+          -32.51,
+          38.92,
+          301.13
+        ],
+        "animHashKey1": "Walk",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -34.37,
+      39.46,
+      305.46
+    ],
+    "sandboxId": 91034395
+  },
+  "58208348": {
+    "id": 58208348,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 29.28,
+        "position": [
+          -25.69,
+          38.36,
+          374.46
+        ]
+      }
+    ],
+    "pos": [
+      -25.98,
+      38.36,
+      373.94
+    ],
+    "quaternion": [
+      0,
+      -0.38,
+      0,
+      0.93
+    ],
+    "sandboxId": 58128151
+  },
+  "58208373": {
+    "id": 58208373,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat"
+            }
+          ]
+        },
+        "yaw": 35,
+        "position": [
+          -24.76,
+          38.36,
+          373.85
+        ]
+      }
+    ],
+    "pos": [
+      -24.98,
+      38.36,
+      373.53
+    ],
+    "quaternion": [
+      0,
+      -0.38,
+      0,
+      0.93
+    ],
+    "sandboxId": 58128151
+  },
+  "72868102": {
+    "id": 72868102,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 223.23,
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 55.91,
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "72868103": {
+    "id": 72868103,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 221.2,
+        "position": [
+          68.3,
+          59.37,
+          1095.79
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "yaw": 55.91,
+        "behaviorSpeedRateType": 2,
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ]
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "yaw": 223.23,
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91035734": {
+    "id": 91035734,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_SwitchToGround"
+            },
+            {
+              "templateKey": "ST_Eat",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 6,
+                  "name": "eatTimeOut"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_SwitchToFly",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 4,
+                  "name": "tFlyHeight"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 271.78,
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_SwitchToGround"
+            },
+            {
+              "templateKey": "ST_Eat"
+            },
+            {
+              "templateKey": "ST_SwitchToFly"
+            }
+          ]
+        },
+        "yaw": 91.05,
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ]
+      }
+    ],
+    "pos": [
+      40.58,
+      53.48,
+      991.89
+    ],
+    "ignoreAILod": true,
+    "sandboxId": 91025674
+  },
+  "91036703": {
+    "id": 91036703,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -24.45,
+          42.18,
+          303.73
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -29.84,
+          42.7,
+          311.92
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -36.23,
+          43.91,
+          301.14
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Skill_Dance",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "inexecutionAction": true,
+        "ignoreRotation": true,
+        "position": [
+          -41.72,
+          43.4,
+          307.78
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 299.48,
+        "position": [
+          -43.71,
+          42.49,
+          316.58
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Idle02",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -53.86,
+          41.62,
+          311.63
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 2.13
+      }
+    ],
+    "firstWayPointSelectType": 1,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91034395
+  },
+  "91058776": {
+    "id": 91058776,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep"
+            }
+          ]
+        },
+        "position": [
+          34.12,
+          59.86,
+          988.58
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 352.61,
+        "behaviorSpeedRateType": 1,
+        "position": [
+          34.33,
+          59.86,
+          989.28
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Doubt"
+            }
+          ]
+        },
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          33.81,
+          58.19,
+          990.79
+        ]
+      },
+      {
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          33.81,
+          59.34,
+          991.91
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 70.61,
+        "position": [
+          34.17,
+          59.26,
+          992.83
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 176.82,
+        "behaviorSpeedRateType": 1,
+        "position": [
+          34.09,
+          59.3,
+          991.96
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "yaw": 193.16,
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          34.19,
+          58.18,
+          990.47
+        ]
+      },
+      {
+        "yaw": 230.48,
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          34.71,
+          59.9,
+          989.06
+        ]
+      }
+    ],
+    "pos": [
+      34.12,
+      59.86,
+      988.58
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91025674
+  },
+  "91067507": {
+    "id": 91067507,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep"
+            }
+          ]
+        },
+        "yaw": 265.65,
+        "position": [
+          52.4,
+          28.6,
+          407.66
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 345.56,
+        "behaviorSpeedRateType": 1,
+        "position": [
+          51.99,
+          28.58,
+          407.02
+        ]
+      },
+      {
+        "yaw": 14.82,
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          52.96,
+          30.56,
+          407.97
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep"
+            }
+          ]
+        },
+        "yaw": 156.37,
+        "position": [
+          53.41,
+          30.47,
+          408.71
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 192.55,
+        "behaviorSpeedRateType": 1,
+        "position": [
+          53.51,
+          30.57,
+          407.88
+        ]
+      },
+      {
+        "yaw": 319.05,
+        "position": [
+          52.85,
+          28.61,
+          407.09
+        ],
+        "behaviorPatrolMoveType": 1,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      63.76,
+      33.34,
+      407.85
+    ],
+    "quaternion": [
+      0,
+      -0.57,
+      0,
+      0.82
+    ],
+    "sandboxId": 54991393
+  },
+  "91120034": {
+    "id": 91120034,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "IdleSpecial",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Cool",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 145.04,
+        "position": [
+          71.72,
+          51.76,
+          1028.89
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "behaviorSpeedRateType": 3
+      }
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91025674
+  },
+  "91120048": {
+    "id": 91120048,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1.1,
+                  "name": "tWaitTime"
+                },
+                {
+                  "realValue": "Behav_Happy",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 4,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Surprise2",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 4,
+                  "name": "tEmojiBubbleTimeout"
+                },
+                {
+                  "realValue": true,
+                  "name": "tEmojiBubbleMustPlayFull"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 297.11,
+        "position": [
+          73.82,
+          51.76,
+          1027.45
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "behaviorSpeedRateType": 3
+      }
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91025674
+  },
+  "91128411": {
+    "id": 91128411,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          71.72,
+          51.76,
+          1028.89
+        ],
+        "speed": 7,
+        "facingDir": [
+          0.57,
+          0,
+          -0.82
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 5,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Cool"
+          }
+        ],
+        "facingDir": [
+          0.57,
+          0,
+          -0.82
+        ],
+        "position": [
+          71.72,
+          51.76,
+          1028.89
+        ],
+        "isStatic": true,
+        "animHashKey1": "IdleSpecial"
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "sandboxId": 91025674
+  },
+  "91128412": {
+    "id": 91128412,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          73.82,
+          51.76,
+          1027.45
+        ],
+        "facingDir": [
+          -0.89,
+          0,
+          0.46
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 4,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "matchMultiple": true,
+            "emojiName": "Surprise2"
+          }
+        ],
+        "facingDir": [
+          -0.89,
+          0,
+          0.46
+        ],
+        "position": [
+          73.82,
+          51.76,
+          1027.45
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_Happy"
+      },
+      {
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "sandboxId": 91025674
+  },
+  "91128433": {
+    "id": 91128433,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ],
+        "animHashKey1": "FlyMove",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Down",
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_EatLoop",
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Up",
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ],
+        "animHashKey1": "FlyMove",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Down",
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ]
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_EatLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ]
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Up",
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      40.58,
+      53.48,
+      991.89
+    ],
+    "sandboxId": 91025674
+  },
+  "91132988": {
+    "id": 91132988,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -19.73,
+          32.4,
+          399.23
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.69,
+          0,
+          0.72
+        ]
+      },
+      {
+        "position": [
+          -10.52,
+          32.4,
+          408.21
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.79,
+          0,
+          0.61
+        ]
+      },
+      {
+        "position": [
+          -2.82,
+          29,
+          415.4
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.58,
+          0,
+          -0.81
+        ]
+      },
+      {
+        "position": [
+          -0.45,
+          29,
+          414.34
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.58,
+          0,
+          -0.81
+        ]
+      },
+      {
+        "position": [
+          -0.49,
+          29,
+          410.93
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.54,
+          0,
+          -0.84
+        ]
+      },
+      {
+        "position": [
+          -6.75,
+          32.4,
+          404.52
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.63,
+          0,
+          -0.78
+        ]
+      },
+      {
+        "position": [
+          -16.07,
+          32.4,
+          395.45
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.63,
+          0,
+          -0.78
+        ]
+      },
+      {
+        "position": [
+          -21.19,
+          35.2,
+          389.64
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.19,
+          0,
+          -0.98
+        ]
+      },
+      {
+        "position": [
+          -39.45,
+          35.21,
+          387.74
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.99,
+          0,
+          0.13
+        ]
+      },
+      {
+        "position": [
+          -50.13,
+          38,
+          391.99
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.03
+        ]
+      },
+      {
+        "position": [
+          -39.33,
+          35.2,
+          392.2
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.03
+        ]
+      },
+      {
+        "position": [
+          -24.58,
+          35.2,
+          393.58
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.03
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      21.6,
+      -8.87,
+      -11.35
+    ],
+    "sandboxId": 54991393
+  },
+  "91132996": {
+    "id": 91132996,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -56.97,
+          39.7,
+          492.46
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.44,
+          0,
+          -0.9
+        ]
+      },
+      {
+        "position": [
+          -66.37,
+          39.7,
+          473.31
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.29,
+          0,
+          -0.96
+        ]
+      },
+      {
+        "position": [
+          -59.34,
+          39.8,
+          452.51
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.54,
+          0,
+          -0.84
+        ]
+      },
+      {
+        "position": [
+          -54.9,
+          39.8,
+          446.17
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.01,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          -55.14,
+          39.8,
+          452.73
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.35,
+          0,
+          0.94
+        ]
+      },
+      {
+        "position": [
+          -62.67,
+          39.7,
+          473.75
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.41,
+          0,
+          0.91
+        ]
+      },
+      {
+        "position": [
+          -47.34,
+          39.7,
+          505.64
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.47,
+          0,
+          0.88
+        ]
+      },
+      {
+        "position": [
+          -51.2,
+          39.7,
+          506.5
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.29,
+          0,
+          -0.96
+        ]
+      },
+      {
+        "position": [
+          -53.16,
+          39.7,
+          501.63
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.44,
+          0,
+          -0.9
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -54.04,
+      39.8,
+      520.71
+    ],
+    "sandboxId": 83722300
+  },
+  "91133005": {
+    "id": 91133005,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          2.98,
+          25,
+          483.28
+        ],
+        "facingDir": [
+          0.32,
+          0,
+          0.95
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          21.9,
+          25,
+          508.8
+        ],
+        "facingDir": [
+          0.92,
+          0,
+          0.4
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          47.34,
+          25.07,
+          519.4
+        ],
+        "facingDir": [
+          0.94,
+          0,
+          -0.34
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          71.92,
+          25,
+          518.44
+        ],
+        "facingDir": [
+          0.68,
+          0,
+          -0.73
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          94.04,
+          25,
+          491.8
+        ],
+        "facingDir": [
+          -0.16,
+          0,
+          -0.99
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          91.94,
+          25,
+          468.43
+        ],
+        "facingDir": [
+          -0.75,
+          0,
+          -0.66
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          68.77,
+          25.07,
+          441.68
+        ],
+        "facingDir": [
+          -0.84,
+          0,
+          -0.54
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          49.62,
+          25.07,
+          436.29
+        ],
+        "facingDir": [
+          -0.85,
+          0,
+          0.52
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          18.29,
+          25.07,
+          457.33
+        ],
+        "facingDir": [
+          -0.3,
+          0,
+          0.95
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      35.14,
+      25,
+      518.03
+    ],
+    "sandboxId": 83841103
+  },
+  "91133041": {
+    "id": 91133041,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          17.34,
+          51.94,
+          1003.6
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          26.66,
+          51.94,
+          1003.6
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          31.11,
+          51.94,
+          1008.13
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          30.08,
+          51.94,
+          1018.7
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          43.35,
+          51.94,
+          1030.32
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          43.35,
+          51.94,
+          1008.43
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          35.74,
+          51.94,
+          1000.66
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      17.34,
+      51.94,
+      1003.6
+    ],
+    "sandboxId": 72422356
+  },
+  "91133045": {
+    "id": 91133045,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          105.14,
+          25,
+          493.97
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.23,
+          0,
+          -0.97
+        ]
+      },
+      {
+        "position": [
+          94.48,
+          25,
+          458.4
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.99,
+          0,
+          -0.17
+        ]
+      },
+      {
+        "position": [
+          108.65,
+          25,
+          457.32
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.17,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          111.88,
+          25,
+          468.81
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.03,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          116.93,
+          25,
+          478.24
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.08
+        ]
+      },
+      {
+        "position": [
+          127.35,
+          25.11,
+          486.8
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.01,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          127.23,
+          25.02,
+          494.92
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -1,
+          0,
+          0
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.18,
+      0,
+      0.98
+    ],
+    "pos": [
+      107.81,
+      25,
+      493.64
+    ],
+    "sandboxId": 83841103
+  },
+  "91133075": {
+    "id": 91133075,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          65.32,
+          51.76,
+          1002.8
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          67.75,
+          51.76,
+          1009.68
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          70.67,
+          51.76,
+          1018.06
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          64.99,
+          51.76,
+          1024
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          64.99,
+          51.76,
+          1011.56
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          62.76,
+          51.76,
+          1004.28
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      63.7,
+      51.76,
+      1000.99
+    ],
+    "sandboxId": 72422356
+  },
+  "91133080": {
+    "id": 91133080,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          46.4,
+          51.76,
+          984.19
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.01,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          50.15,
+          51.76,
+          980.55
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.17,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          55.76,
+          51.76,
+          986.94
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.03,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          54.23,
+          51.76,
+          1019.59
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          49.75,
+          51.76,
+          1022.15
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          45.67,
+          51.76,
+          1018.82
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      50.61,
+      51.76,
+      984.23
+    ],
+    "sandboxId": 72422356
+  },
+  "91133086": {
+    "id": 91133086,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          27.51,
+          40,
+          474.39
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.92,
+          0,
+          -0.39
+        ]
+      },
+      {
+        "position": [
+          15.49,
+          40,
+          465.04
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.88,
+          0,
+          -0.48
+        ]
+      },
+      {
+        "position": [
+          3.24,
+          39.85,
+          459.55
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.99,
+          0,
+          -0.17
+        ]
+      },
+      {
+        "position": [
+          -19.22,
+          38,
+          451.49
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          0.05
+        ]
+      },
+      {
+        "position": [
+          3.75,
+          39.85,
+          458.2
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.91,
+          0,
+          0.41
+        ]
+      },
+      {
+        "position": [
+          16.93,
+          40,
+          463.68
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.78,
+          0,
+          0.62
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0.05,
+      0,
+      1
+    ],
+    "pos": [
+      22.66,
+      43.53,
+      468.53
+    ],
+    "sandboxId": 54991393
+  },
+  "91133096": {
+    "id": 91133096,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          9.11,
+          25,
+          452.94
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.43,
+          0,
+          -0.9
+        ]
+      },
+      {
+        "position": [
+          12.9,
+          25,
+          444.13
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.8,
+          0,
+          -0.6
+        ]
+      },
+      {
+        "position": [
+          23.83,
+          25.07,
+          436.04
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          0.04
+        ]
+      },
+      {
+        "position": [
+          32.05,
+          25,
+          436.46
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.74,
+          0,
+          -0.67
+        ]
+      },
+      {
+        "position": [
+          33.22,
+          25.21,
+          445.23
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.66,
+          0,
+          0.75
+        ]
+      },
+      {
+        "position": [
+          19.89,
+          25.21,
+          458.55
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.91,
+          0,
+          -0.42
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      11.04,
+      25,
+      459.29
+    ],
+    "sandboxId": 83841103
+  },
+  "91133105": {
+    "id": 91133105,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          70.1,
+          40.04,
+          501.41
+        ],
+        "facingDir": [
+          1,
+          0,
+          -0.08
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          81.19,
+          40.04,
+          501.13
+        ],
+        "facingDir": [
+          0.73,
+          0,
+          0.68
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          102.75,
+          38,
+          521.4
+        ],
+        "facingDir": [
+          -0.83,
+          0,
+          0.56
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          101.51,
+          38,
+          522.24
+        ],
+        "facingDir": [
+          -0.72,
+          0,
+          -0.69
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          80.9,
+          40.04,
+          502.8
+        ],
+        "facingDir": [
+          -0.99,
+          0,
+          0.15
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      49.71,
+      31,
+      562.3
+    ],
+    "sandboxId": 72874664
+  },
+  "91133107": {
+    "id": 91133107,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          100.54,
+          39.52,
+          461.7
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.97,
+          0,
+          -0.26
+        ]
+      },
+      {
+        "position": [
+          121.11,
+          38,
+          455
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.58,
+          0,
+          0.81
+        ]
+      },
+      {
+        "position": [
+          125.78,
+          38,
+          461.28
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.42,
+          0,
+          -0.91
+        ]
+      },
+      {
+        "position": [
+          122.96,
+          38,
+          455.62
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.95,
+          0,
+          0.32
+        ]
+      },
+      {
+        "position": [
+          100.46,
+          39.57,
+          463.2
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.95,
+          0,
+          0.3
+        ]
+      },
+      {
+        "position": [
+          78.43,
+          40,
+          469.65
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.93,
+          0,
+          -0.37
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0.79,
+      0,
+      0.61
+    ],
+    "pos": [
+      112.38,
+      38.49,
+      458.69
+    ],
+    "sandboxId": 83707758
+  },
+  "91133115": {
+    "id": 91133115,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          94.84,
+          38.31,
+          519.71
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.67,
+          0,
+          -0.74
+        ]
+      },
+      {
+        "position": [
+          77.88,
+          40.01,
+          505.03
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.63,
+          0,
+          0.78
+        ]
+      },
+      {
+        "position": [
+          93.66,
+          38.36,
+          520.22
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.66,
+          0,
+          0.75
+        ]
+      },
+      {
+        "position": [
+          99.11,
+          38,
+          525.11
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.77,
+          0,
+          -0.64
+        ]
+      },
+      {
+        "position": [
+          100.17,
+          38,
+          524.21
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.77,
+          0,
+          -0.63
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0.33,
+      0,
+      0.94
+    ],
+    "pos": [
+      121.93,
+      40.05,
+      520.86
+    ],
+    "sandboxId": 72874664
+  },
+  "91133123": {
+    "id": 91133123,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          15.62,
+          39.5,
+          509.95
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.68,
+          0,
+          0.73
+        ]
+      },
+      {
+        "position": [
+          -5.95,
+          38,
+          533.22
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.68,
+          0,
+          0.73
+        ]
+      },
+      {
+        "position": [
+          25.62,
+          40,
+          503.19
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.68,
+          0,
+          0.73
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0.36,
+      0,
+      0.93
+    ],
+    "pos": [
+      -5.95,
+      40.05,
+      533.22
+    ],
+    "sandboxId": 72874664
+  },
+  "91133125": {
+    "id": 91133125,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -29.18,
+          39.8,
+          521.44
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.9,
+          0,
+          0.43
+        ]
+      },
+      {
+        "position": [
+          -17.79,
+          38,
+          523.23
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.92,
+          0,
+          -0.38
+        ]
+      },
+      {
+        "position": [
+          -8.6,
+          38,
+          519.28
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.34,
+          0,
+          0.94
+        ]
+      },
+      {
+        "position": [
+          -0.81,
+          38,
+          536.87
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.97,
+          0,
+          -0.23
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -29.74,
+      39.8,
+      527.8
+    ],
+    "sandboxId": 83722300
+  },
+  "91133137": {
+    "id": 91133137,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          92.24,
+          25,
+          446.23
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.14,
+          0,
+          -0.99
+        ]
+      },
+      {
+        "position": [
+          92.63,
+          25.05,
+          441.9
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.87,
+          0,
+          -0.5
+        ]
+      },
+      {
+        "position": [
+          87.52,
+          25,
+          438.94
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.84,
+          0,
+          0.54
+        ]
+      },
+      {
+        "position": [
+          71.71,
+          25.21,
+          448.6
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.14,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          76.16,
+          25.21,
+          462.51
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          86.11,
+          25.21,
+          462.44
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.41,
+          0,
+          -0.91
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      93.93,
+      25,
+      444.51
+    ],
+    "sandboxId": 83841103
+  },
+  "91133148": {
+    "id": 91133148,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          61.07,
+          25,
+          436.13
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          0.09
+        ]
+      },
+      {
+        "position": [
+          78.32,
+          25,
+          437.56
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.61,
+          0,
+          -0.79
+        ]
+      },
+      {
+        "position": [
+          82.54,
+          25,
+          431.87
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -1,
+          0,
+          0.09
+        ]
+      },
+      {
+        "position": [
+          58.86,
+          25,
+          433.38
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.62,
+          0,
+          0.78
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      67.07,
+      25,
+      432.34
+    ],
+    "sandboxId": 83841103
+  },
+  "91133224": {
+    "id": 91133224,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          68.3,
+          59.37,
+          1095.79
+        ],
+        "facingDir": [
+          -0.66,
+          0,
+          -0.75
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "facingDir": [
+          0.83,
+          0,
+          0.56
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.68,
+          0,
+          -0.73
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91133225": {
+    "id": 91133225,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "facingDir": [
+          -0.68,
+          0,
+          -0.73
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "facingDir": [
+          0.83,
+          0,
+          0.56
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91133754": {
+    "id": 91133754,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          65.43,
+          25,
+          518.78
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.97,
+          0,
+          0.25
+        ]
+      },
+      {
+        "position": [
+          38.29,
+          25,
+          529.09
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          0.05
+        ]
+      },
+      {
+        "position": [
+          73.39,
+          25.02,
+          530.66
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.69,
+          0,
+          -0.72
+        ]
+      },
+      {
+        "position": [
+          101.77,
+          25,
+          502.38
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.91,
+          0,
+          0.41
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      -0.63,
+      0,
+      0.78
+    ],
+    "pos": [
+      89.22,
+      25,
+      510.53
+    ],
+    "sandboxId": 83841103
+  },
+  "91133757": {
+    "id": 91133757,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -29.36,
+          38,
+          439.89
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.27,
+          0,
+          -0.96
+        ]
+      },
+      {
+        "position": [
+          -30.41,
+          38,
+          453.38
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.15,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          -39.53,
+          38,
+          444.95
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.98,
+          0,
+          -0.2
+        ]
+      },
+      {
+        "position": [
+          -48.97,
+          39.8,
+          439.56
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.98,
+          0,
+          -0.2
+        ]
+      },
+      {
+        "position": [
+          -69.6,
+          40.2,
+          434.38
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.9,
+          0,
+          0.43
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 54991393
+  },
+  "91133763": {
+    "id": 91133763,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          2.24,
+          25,
+          456.32
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.92,
+          0,
+          0.39
+        ]
+      },
+      {
+        "position": [
+          -5.49,
+          25,
+          459.57
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.33,
+          0,
+          0.94
+        ]
+      },
+      {
+        "position": [
+          -18.34,
+          25,
+          491.22
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.99,
+          0,
+          -0.13
+        ]
+      },
+      {
+        "position": [
+          -36.07,
+          25,
+          489.09
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.31,
+          0,
+          0.95
+        ]
+      },
+      {
+        "position": [
+          -41.07,
+          25.05,
+          506.22
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          -8.99,
+          25,
+          505.13
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.24,
+          0,
+          -0.97
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      2.49,
+      25,
+      453.05
+    ],
+    "sandboxId": 83841103
+  },
+  "91133766": {
+    "id": 91133766,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          43.38,
+          25,
+          535.59
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.97,
+          0,
+          -0.23
+        ]
+      },
+      {
+        "position": [
+          16.99,
+          25.02,
+          527.7
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.43,
+          0,
+          -0.9
+        ]
+      },
+      {
+        "position": [
+          10.45,
+          25,
+          513.1
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.87,
+          0,
+          0.5
+        ]
+      },
+      {
+        "position": [
+          32.71,
+          25,
+          524.91
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.05
+        ]
+      },
+      {
+        "position": [
+          61.47,
+          25,
+          523.53
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.83,
+          0,
+          0.56
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      22.85,
+      25,
+      545.6
+    ],
+    "sandboxId": 83841103
+  },
+  "91133773": {
+    "id": 91133773,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -49.53,
+          40.2,
+          436.39
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.82,
+          0,
+          0.57
+        ]
+      },
+      {
+        "position": [
+          -36.75,
+          38,
+          443.85
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.9,
+          0,
+          0.43
+        ]
+      },
+      {
+        "position": [
+          -20.42,
+          38,
+          441.63
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.3,
+          0,
+          -0.95
+        ]
+      },
+      {
+        "position": [
+          -41.11,
+          38,
+          438.61
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.8,
+          0,
+          -0.6
+        ]
+      },
+      {
+        "position": [
+          -56.68,
+          40.2,
+          419.97
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.62,
+          0,
+          0.78
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -21.98,
+      21.72,
+      -1.67
+    ],
+    "sandboxId": 54991393
+  },
+  "91133787": {
+    "id": 91133787,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          -53.22,
+          38,
+          389.95
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.75,
+          0,
+          -0.67
+        ]
+      },
+      {
+        "position": [
+          -50.18,
+          38,
+          383.2
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.72,
+          0,
+          -0.69
+        ]
+      },
+      {
+        "position": [
+          -37.94,
+          38,
+          372.92
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.27,
+          0,
+          -0.96
+        ]
+      },
+      {
+        "position": [
+          -30.64,
+          38,
+          362.96
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.19,
+          0,
+          0.98
+        ]
+      },
+      {
+        "position": [
+          -36.56,
+          38,
+          374.02
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.64,
+          0,
+          0.77
+        ]
+      },
+      {
+        "position": [
+          -49.06,
+          38,
+          385.82
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.52,
+          0,
+          0.86
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -59.92,
+      39.8,
+      398.69
+    ],
+    "sandboxId": 54991393
+  },
+  "91133858": {
+    "id": 91133858,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          19.83,
+          51.84,
+          1023.28
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.77,
+          0,
+          -0.64
+        ]
+      },
+      {
+        "position": [
+          12.7,
+          51.84,
+          1017.31
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.77,
+          0,
+          -0.64
+        ]
+      },
+      {
+        "position": [
+          13.6,
+          51.84,
+          1010.98
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.77,
+          0,
+          -0.64
+        ]
+      },
+      {
+        "position": [
+          20.45,
+          51.84,
+          1016.72
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.77,
+          0,
+          -0.64
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      17.18,
+      51.84,
+      1021.06
+    ],
+    "sandboxId": 82785133
+  },
+  "91133860": {
+    "id": 91133860,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          127.37,
+          46,
+          1018.42
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.84,
+          0,
+          0.54
+        ]
+      },
+      {
+        "position": [
+          122.92,
+          46,
+          1015.27
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.92,
+          0,
+          -0.39
+        ]
+      },
+      {
+        "position": [
+          110.16,
+          46,
+          1019.86
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.71,
+          0,
+          -0.7
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      123.97,
+      46,
+      1022.98
+    ],
+    "sandboxId": 72293035
+  },
+  "91136590": {
+    "id": 91136590,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          27.19,
+          51.76,
+          1011.41
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.32,
+          0,
+          0.95
+        ]
+      },
+      {
+        "position": [
+          27.19,
+          51.76,
+          1011.41
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HeadBeHit",
+        "facingDir": [
+          -0.32,
+          0,
+          0.95
+        ]
+      },
+      {
+        "position": [
+          27.19,
+          51.76,
+          1011.41
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.32,
+          0,
+          0.95
+        ]
+      },
+      {
+        "position": [
+          27.19,
+          51.76,
+          1011.41
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HitHead",
+        "facingDir": [
+          -0.32,
+          0,
+          0.95
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      32.2,
+      51.76,
+      1030.37
+    ],
+    "sandboxId": 91036067
+  },
+  "91136591": {
+    "id": 91136591,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          26.75,
+          51.76,
+          1012.18
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.32,
+          0,
+          -0.95
+        ]
+      },
+      {
+        "position": [
+          26.75,
+          51.76,
+          1012.18
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HitHead",
+        "facingDir": [
+          0.32,
+          0,
+          -0.95
+        ]
+      },
+      {
+        "position": [
+          26.75,
+          51.76,
+          1012.18
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.32,
+          0,
+          -0.95
+        ]
+      },
+      {
+        "position": [
+          26.75,
+          51.76,
+          1012.18
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HeadBeHit",
+        "facingDir": [
+          0.32,
+          0,
+          -0.95
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      32.33,
+      51.76,
+      1029.43
+    ],
+    "sandboxId": 91036067
+  },
+  "91154482": {
+    "id": 91154482,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "animHashKey1": "WalkLoop",
+        "position": [
+          34.61,
+          51.91,
+          1015.78
+        ],
+        "speed": 1.6,
+        "facingDir": [
+          -0.88,
+          0,
+          0.47
+        ],
+        "leaveNotifyInfoList": [
+          {
+            "dialogueId": 37071201,
+            "callbackFunctionName": "smShowDialogue"
+          }
+        ]
+      },
+      {
+        "position": [
+          27.97,
+          51.91,
+          1020.35
+        ],
+        "speed": 1.6,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.48,
+          0,
+          0.88
+        ]
+      },
+      {
+        "position": [
+          27.97,
+          51.91,
+          1020.35
+        ],
+        "animHashKey1": "Emotion_Firm_Start",
+        "animHashKey2": "Emotion_Firm_Loop",
+        "animHashKey3": "Emotion_Firm_End",
+        "animationTimeout": 1,
+        "isStatic": true,
+        "facingDir": [
+          -0.48,
+          0,
+          0.88
+        ]
+      },
+      {
+        "position": [
+          26.04,
+          51.91,
+          1013.03
+        ],
+        "speed": 1.6,
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.93,
+          0,
+          -0.36
+        ]
+      },
+      {
+        "position": [
+          26.04,
+          51.91,
+          1013.03
+        ],
+        "animHashKey1": "Emotion_Think_Start",
+        "animHashKey2": "Emotion_Think_Loop",
+        "animHashKey3": "Emotion_Think_End",
+        "animationTimeout": 2,
+        "isStatic": true,
+        "facingDir": [
+          -0.93,
+          0,
+          -0.36
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      34.2,
+      51.91,
+      1018.36
+    ],
+    "sandboxId": 91036067
+  },
+  "91154500": {
+    "id": 91154500,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          33.8,
+          51.76,
+          1018.7
+        ],
+        "facingDir": [
+          -0.85,
+          0,
+          0.52
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.74,
+          0,
+          0.68
+        ],
+        "position": [
+          26.25,
+          51.76,
+          1020.5
+        ],
+        "behaviorSpeedRateType": 1,
+        "leaveNotifyInfoList": [
+          {
+            "timeout": 2,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Cry"
+          }
+        ]
+      },
+      {
+        "position": [
+          24.69,
+          51.76,
+          1013.76
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          31.98,
+          51.76,
+          1012.97
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      33.98,
+      51.76,
+      1016.48
+    ],
+    "sandboxId": 91036067
+  },
+  "91248765": {
+    "id": 91248765,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          68.38,
+          26.96,
+          416.03
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.91,
+          0,
+          -0.4
+        ]
+      },
+      {
+        "position": [
+          68.38,
+          26.96,
+          416.03
+        ],
+        "facingDir": [
+          -0.91,
+          0,
+          -0.4
+        ],
+        "animHashKey1": "Behav_EatStart",
+        "animHashKey2": "Behav_EatLoop",
+        "animHashKey3": "Behav_EatEnd",
+        "animationTimeout": 6,
+        "isStatic": true,
+        "enterNotifyInfoList": [
+          {
+            "timeout": 6,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Eat"
+          }
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      69.73,
+      27.65,
+      403.65
+    ],
+    "sandboxId": 54991393
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104502",
+  "NodeID": 1,
+  "UID": "d1822160-e693-4771-9952-029877be62f5",
+  "onBuffRefreshIds": [
+    7,
+    12
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "620ad6cf-c187-4ea4-8c40-7de6bd58f0a6",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 3
+    },
+    "13": {
+      "name": "checkElementType",
+      "UID": "a4a7827b-1da8-4d57-b2e4-55a6b9dc15bf",
+      "target": "OWNER",
+      "NodeID": 13,
+      "elementType": 6
+    },
+    "14": {
+      "buffId": 21045021,
+      "name": "removeBuff",
+      "UID": "5c339882-93ea-425a-855e-64fec0f7dc75",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "calcId": 2104502,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 10,
+      "UID": "bcb59722-0362-418b-8b74-55ab632d3d75",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "thresholdActionIds": [
+        5
+      ],
+      "failedActionIds": [
+        9
+      ],
+      "threshold": 1,
+      "UID": "f4999677-bca0-4647-9a7a-8831ac5ab550",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "grassGroupFlower",
+      "NodeID": 7,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "9": {
+      "buffId": 21045021,
+      "name": "removeBuff",
+      "UID": "01bb7216-eca0-41fb-a1c6-afbcb67e0ee8",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "11": {
+      "value": {
+        "calcId": 2104502,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 10,
+        "UID": "bcb59722-0362-418b-8b74-55ab632d3d75",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "657b3657-6ba4-47ab-94c6-501773fa9f32",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 21045021,
+      "NodeID": 5,
+      "UID": "3d26a441-ce32-41b0-abc3-e78a0fbeb7c1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "4fb5c185-f106-4533-81f9-0f53542ca413",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    14,
+    3
+  ],
+  "onBuffStartIds": [
+    7,
+    12
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126108",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "isClearOld": true,
+      "UID": "6171d566-cbfd-40db-b475-770a1b11ab07",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 3,
+      "calcInfoByLuaConfig": {
+        "id": 2126108,
+        "shield_add_ratio": "param0",
+        "type": 1
+      }
+    },
+    "4": {
+      "UID": "d896519c-a600-41f1-98d4-fd98c427359c",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

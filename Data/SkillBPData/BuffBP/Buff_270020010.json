@@ -1,0 +1,84 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "6add5f12-c042-4644-b132-af984ff847cc",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "actOnTargets",
+      "UID": "f6572c92-4936-4791-aa33-db56ab97bac7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": {
+            "NodeID": 6,
+            "name": "constVector3",
+            "UID": "582064c1-3aa9-4c4a-9b12-bd94b7377034",
+            "x": 20,
+            "y": 3,
+            "z": 3
+          },
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 2
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 4
+    },
+    "8": {
+      "UID": "ba3239ec-d59b-48bd-a449-5823461c93fc",
+      "target": "TARGET",
+      "name": "isTargetAlive",
+      "NodeID": 8
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerDeadEvent",
+      "UID": "600e5a16-2293-48d0-accb-46d846d0d0ab",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "2": {
+      "target": "TARGET",
+      "duration": -1,
+      "buffId": 2700200100,
+      "NodeID": 2,
+      "UID": "b9529ae8-1c30-44fa-900c-31bca4dc15e6",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_270020010",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "a88e1ffb-0ef0-4a12-b356-25cda37581df",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.34,
+      "NodeID": 38,
+      "UID": "cd4de96a-470c-492a-98fd-fec6044de3a9"
+    },
+    "39": {
+      "buffId": 11153,
+      "name": "hasBuff",
+      "UID": "b3b3b4ef-4c24-4c3d-b539-15150a93947a",
+      "target": "TARGET",
+      "NodeID": 39
+    },
+    "40": {
+      "actionIds": [
+        44,
+        41,
+        43
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "4af4a251-c1d6-448b-914d-9bde3692b98a",
+      "name": "doActionsByConditions",
+      "NodeID": 40
+    },
+    "41": {
+      "duration": 0.1,
+      "name": "forceDisplacement",
+      "UID": "2cb022cf-4900-43c4-8cc7-eebd2e068bf7",
+      "target": "OWNER",
+      "speed": 10,
+      "ignoreKnockST": true,
+      "displacementTarget": "TARGET",
+      "displacementDir": "OUT",
+      "ignoreYAxis": true,
+      "NodeID": 41
+    },
+    "43": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f0a1f838-058a-4f4c-885d-c1dcde5993ab",
+      "target": "CASTER",
+      "NodeID": 43,
+      "animId": "Behav_Angry"
+    },
+    "44": {
+      "UID": "09dc7a82-92b4-4d76-b599-ddaeb57e87a2",
+      "name": "stopAnimation",
+      "anim": "Skill_Absorb",
+      "NodeID": 44
+    },
+    "31": {
+      "offsetXYZ": [
+        -0.008,
+        0.743,
+        0.457
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "31309dc3-60ea-49e7-b454-fe3b093dcc01",
+      "effectId": "Eff_Parmon_10241_Skill_Absorb_01",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          22,
+          18,
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 20,
+      "UID": "6e800eaf-d6c6-4d92-8cca-0010a056c455"
+    },
+    "21": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 920002103,
+      "NodeID": 21,
+      "UID": "20c2b54f-0f37-4d0f-8248-373883cd6285",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "3": {
+      "UID": "c6e5158e-f560-4cfb-8862-4499fb842bcf",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "14": {
+      "UID": "e1247915-ef1b-4913-aed4-c2beea652aee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "33c40b74-5e8b-47b9-a829-05f2cc427959",
+      "target": "CASTER",
+      "NodeID": 15,
+      "animId": "Skill_Absorb"
+    },
+    "25": {
+      "UID": "cf5f8a49-ce80-4493-81d7-92d9f68d0004",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 25
+    },
+    "37": {
+      "actionIds": [
+        40
+      ],
+      "name": "actOnTargets",
+      "UID": "74b3f117-7a85-4cbc-a64e-c9371257257b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            45,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 37
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.7,
+      "NodeID": 27,
+      "UID": "37659278-a974-4496-a97b-6c783477dda3"
+    },
+    "17": {
+      "UID": "c3832f6f-6a80-4d66-b19d-f69417288c10",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          34
+        ]
+      },
+      "NodeID": 17
+    },
+    "12": {
+      "UID": "7d4c90be-2ac3-4095-aeb8-3e077ab6bd28",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "18": {
+      "offsetXYZ": [
+        0,
+        0.6,
+        0.55
+      ],
+      "templateId": 101314,
+      "name": "createEntity",
+      "UID": "b7d7a810-e64a-481f-b579-34ff27019e91",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 18,
+      "pos": "OWNER"
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.683,
+      "NodeID": 32,
+      "UID": "974c846f-4a86-4777-a84b-edbbd6289d48"
+    },
+    "33": {
+      "offsetXYZ": [
+        -0.008,
+        0.743,
+        0.457
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f62c4e80-582d-49b3-8b95-cf63a05604b1",
+      "effectId": "Eff_Parmon_10241_Skill_Absorb_02",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ce70650f-cbaa-454c-b0d9-50215fbaa81c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10241_Skill_Absorb",
+      "NodeID": 34
+    },
+    "22": {
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "bed57c19-193c-458d-aadb-48ba873441bc",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.3
+          ],
+          "shapeArgs": [
+            0.3,
+            2,
+            2.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "Morphling_Absorb"
+    }
+  },
+  "BPName": "ability_13310301",
+  "NodeID": 7,
+  "UID": "2cf52b96-c03f-47ac-a456-a3b028e6a949",
+  "eventIds": [
+    5,
+    14,
+    17,
+    32,
+    20,
+    38,
+    27
+  ],
+  "layer": "Base",
+  "length": 3
+}

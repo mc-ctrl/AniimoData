@@ -1,0 +1,125 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004112",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "a7f9de52-b31f-481f-87b4-d44952db64cd",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "6": {
+      "actionIds": [
+        16,
+        10
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "651115b5-e889-4a51-a829-0d943a10dade",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "calcId": 4004112,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 12,
+          "UID": "e3a5a520-61d4-4097-a7da-7e1480bf66d8",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 1000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30102
+      },
+      "UID": "485db640-9451-44f6-bb0a-7cfee09c21c0",
+      "target": {
+        "UID": "910e114f-1717-421c-a855-11cf41e1be25",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 14
+      },
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "15": {
+      "scale": 0.5,
+      "target": {
+        "UID": "910e114f-1717-421c-a855-11cf41e1be25",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 14
+      },
+      "name": "playEffectStr",
+      "UID": "10476e15-9b72-4957-8298-c3a32ef013a7",
+      "effectId": "Eff_Parmon_10194_Skill_ShellSmash_Ground_Water_BossRush",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "c0370418-92f9-4b89-b3ec-229eb31147a3",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "7294ae2b-7055-438c-91b0-74c3aa9dae5c",
+      "name": "callClientAction",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        7
+      ],
+      "name": "registerGroupEvent",
+      "UID": "b9867458-07f3-4721-b0a1-d214bfc0e141",
+      "NodeID": 8
+    },
+    "2": {
+      "buffId": 4004112,
+      "name": "removeBuff",
+      "UID": "75da40ae-8922-4d00-9b1c-dfcbdb02b526",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "5": {
+      "UID": "47b58ea8-b8ed-41f4-aac6-e9ffc33822c0",
+      "name": "isCalcResultCritical",
+      "NodeID": 5
+    },
+    "12": {
+      "calcId": 4004112,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "e3a5a520-61d4-4097-a7da-7e1480bf66d8",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "onBuffInheritIds": [
+    3,
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    8
+  ]
+}

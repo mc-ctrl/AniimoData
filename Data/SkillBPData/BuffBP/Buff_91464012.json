@@ -1,0 +1,12 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91464012",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "name": "激励-扣血次数",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": {}
+}

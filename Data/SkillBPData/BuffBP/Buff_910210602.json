@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "dynamicRPCStates": {},
+  "calcInfo": {
+    "combat_ep_regen_v": {
+      "calcId": 910210602,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 2,
+      "UID": "27ec9121-9307-4c5a-8672-5c84e6164e50",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_910210602"
+}

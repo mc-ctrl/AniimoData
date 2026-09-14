@@ -1,0 +1,116 @@
+{
+  "duration": 5,
+  "calcResultNodeId": 74,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10261_Skill_Throw_Electric",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 1,
+  "nodeMap": {
+    "81": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ba1dc8ae-829c-40a9-afef-030d2ef07634",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10261_Skill_Throw_Explosion_Electric",
+      "NodeID": 81
+    },
+    "90": {
+      "pos": {
+        "UID": "c9edf711-d9c9-4b54-a816-45637f344787",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "3dff89f1-f8bc-412f-943f-e739ab211ad7",
+          "name": "getProjectilePos",
+          "NodeID": 88
+        },
+        "NodeID": 89
+      },
+      "scale": 0.8,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "d3662024-0859-4847-b2e9-cfab70a526c4",
+      "effectId": "Eff_Parmon_10261_Skill_Throw_Bomb_Electric",
+      "speed": 1,
+      "NodeID": 90
+    },
+    "57": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 74,
+      "NodeID": 57,
+      "UID": "d0f25e5e-9f24-4335-abf9-1eabfd884106",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        74
+      ]
+    },
+    "74": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12610150,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "2598f207-1ddc-4c9d-a144-9a524be1b97c",
+      "target": "TARGET",
+      "NodeID": 74,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100
+      }
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    57,
+    81,
+    90
+  ],
+  "BPName": "ability_12610150",
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "relation": 2,
+  "tickInterval": 0.05,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 1
+}

@@ -1,0 +1,134 @@
+{
+  "Russian": {
+    "gameLanguage": 6
+  },
+  "SerboCroatian": {
+    "gameLanguage": 2
+  },
+  "Slovak": {
+    "gameLanguage": 2
+  },
+  "Slovenian": {
+    "gameLanguage": 2
+  },
+  "Spanish": {
+    "gameLanguage": 9
+  },
+  "Swedish": {
+    "gameLanguage": 2
+  },
+  "Thai": {
+    "gameLanguage": 12
+  },
+  "Turkish": {
+    "gameLanguage": 2
+  },
+  "Ukrainian": {
+    "gameLanguage": 2
+  },
+  "Unknown": {
+    "gameLanguage": 2
+  },
+  "Vietnamese": {
+    "gameLanguage": 5
+  },
+  "Afrikaans": {
+    "gameLanguage": 2
+  },
+  "Arabic": {
+    "gameLanguage": 2
+  },
+  "Basque": {
+    "gameLanguage": 2
+  },
+  "Belarusian": {
+    "gameLanguage": 2
+  },
+  "Bulgarian": {
+    "gameLanguage": 2
+  },
+  "Catalan": {
+    "gameLanguage": 2
+  },
+  "Chinese": {
+    "gameLanguage": 0
+  },
+  "ChineseSimplified": {
+    "gameLanguage": 0
+  },
+  "ChineseTraditional": {
+    "gameLanguage": 1
+  },
+  "Czech": {
+    "gameLanguage": 2
+  },
+  "Danish": {
+    "gameLanguage": 2
+  },
+  "Dutch": {
+    "gameLanguage": 2
+  },
+  "English": {
+    "gameLanguage": 2
+  },
+  "Estonian": {
+    "gameLanguage": 2
+  },
+  "Faroese": {
+    "gameLanguage": 2
+  },
+  "Finnish": {
+    "gameLanguage": 2
+  },
+  "French": {
+    "gameLanguage": 8
+  },
+  "German": {
+    "gameLanguage": 7
+  },
+  "Greek": {
+    "gameLanguage": 2
+  },
+  "Hebrew": {
+    "gameLanguage": 2
+  },
+  "Hindi": {
+    "gameLanguage": 2
+  },
+  "Hungarian": {
+    "gameLanguage": 2
+  },
+  "Icelandic": {
+    "gameLanguage": 2
+  },
+  "Indonesian": {
+    "gameLanguage": 11
+  },
+  "Italian": {
+    "gameLanguage": 2
+  },
+  "Japanese": {
+    "gameLanguage": 4
+  },
+  "Korean": {
+    "gameLanguage": 3
+  },
+  "Latvian": {
+    "gameLanguage": 2
+  },
+  "Lithuanian": {
+    "gameLanguage": 2
+  },
+  "Norwegian": {
+    "gameLanguage": 2
+  },
+  "Polish": {
+    "gameLanguage": 2
+  },
+  "Portuguese": {
+    "gameLanguage": 10
+  },
+  "Romanian": {
+    "gameLanguage": 2
+  }
+}

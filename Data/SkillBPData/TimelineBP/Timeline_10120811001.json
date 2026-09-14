@@ -1,0 +1,59 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "5cf291ad-a220-4584-a4b0-994dabb227d2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          10
+        ]
+      },
+      "NodeID": 4
+    },
+    "10": {
+      "UID": "da2d5708-4f40-4dda-bc8a-64df38e695c7",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 13,
+      "UID": "8b59aa26-f895-4e85-b68a-21f680d25a23"
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "819afff2-7a15-4080-ab86-bc302198df35",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Behav_SleepLoop"
+    },
+    "12": {
+      "UID": "3b83de06-3ebd-4dfc-bd00-d53fce985488",
+      "name": "setMask",
+      "mask": {
+        "inCast": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_10120811",
+  "NodeID": 6,
+  "UID": "e2b3ad84-e880-4176-9108-634ea97cfcc7",
+  "eventIds": [
+    4,
+    13
+  ],
+  "layer": "Base",
+  "length": 5
+}

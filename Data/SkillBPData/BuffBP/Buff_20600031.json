@@ -1,0 +1,138 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20600031",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "targetPos": "CURPET",
+      "innerRadius": 4,
+      "name": "randomPoint",
+      "UID": "f6397217-6d26-4783-8194-107e3bed6b7f",
+      "radius": 5,
+      "NodeID": 5
+    },
+    "13": {
+      "calcId": 20600031,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "5f060d15-8e20-4280-9413-d19246330ac2",
+      "name": "getParamByLuaConfig"
+    },
+    "14": {
+      "UID": "d3dd7896-62d5-466e-afa7-f13f6f5535d3",
+      "randomPercent": {
+        "calcId": 20600031,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 13,
+        "UID": "5f060d15-8e20-4280-9413-d19246330ac2",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "isRandom",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "registerReceiveDamageEvent",
+      "UID": "77fee76a-a616-417d-b158-1e86793ce27f",
+      "targetType": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "calcId": 20600031,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 15,
+      "UID": "1619a767-5ff9-49c6-bb9a-70e3b0002dc3",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "endNum": {
+        "calcId": 20600031,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 15,
+        "UID": "1619a767-5ff9-49c6-bb9a-70e3b0002dc3",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        5,
+        18
+      ],
+      "NodeID": 7,
+      "UID": "399e6cb9-cc43-4718-9823-6c01251adf6d",
+      "stepNum": {
+        "UID": "aefff09b-26a9-4064-a98a-55fc8a2a5867",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 12
+      },
+      "startNum": {
+        "UID": "aefff09b-26a9-4064-a98a-55fc8a2a5867",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 12
+      },
+      "name": "forEach"
+    },
+    "8": {
+      "UID": "f8a9095a-0a01-4ae3-9930-88dedeb8088d",
+      "name": "callClientAction",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "06d53ec4-2a36-4c2b-987f-49ab4d0cfb47",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "18": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 20600031101,
+      "name": "createProjectile",
+      "UID": "25e978c7-dac6-438f-9ddb-2f09c7bf1d43",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "CURPET",
+      "projectileType": "Parabola3d",
+      "NodeID": 18,
+      "targetPos": "RANDOM_POINT"
+    },
+    "11": {
+      "unsummonValid": false,
+      "actionIds": [
+        10
+      ],
+      "name": "registerGroupEvent",
+      "UID": "e740c3ff-9ffa-44d2-8f33-d1308a5e5ea8",
+      "NodeID": 11
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

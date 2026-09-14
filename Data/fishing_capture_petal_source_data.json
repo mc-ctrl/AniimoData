@@ -1,0 +1,169 @@
+{
+  "10000029": {
+    "5000": [
+      {
+        "configsource": 8195,
+        "tab": 1,
+        "name": 1493302709,
+        "actid": 10000029,
+        "source": 5000,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item10.png",
+        "logassign": 4,
+        "logtype": 11
+      }
+    ],
+    "1005": [
+      {
+        "name": 1634205820,
+        "source": 1005,
+        "configsource": 7001,
+        "logassign": 50,
+        "logtype": 12,
+        "tab": 1,
+        "logtext": 1521443218,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item12.png",
+        "actid": 10000029
+      }
+    ],
+    "9005": [
+      {
+        "configsource": 661,
+        "tab": 2,
+        "name": 1698741764,
+        "actid": 10000029,
+        "source": 9005,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item02.png",
+        "logassign": 17,
+        "logtype": 4
+      }
+    ],
+    "2006": [
+      {
+        "configsource": 7008,
+        "tab": 2,
+        "name": 1303883182,
+        "actid": 10000029,
+        "source": 2006,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item14.png",
+        "logassign": 16,
+        "logtype": 8
+      }
+    ],
+    "2028": [
+      {
+        "configsource": 7016,
+        "tab": 2,
+        "name": 1999399692,
+        "actid": 10000029,
+        "source": 2028,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item05.png",
+        "logassign": 14,
+        "logtype": 7
+      }
+    ],
+    "2007": [
+      {
+        "configsource": 7010,
+        "tab": 2,
+        "name": 1985958710,
+        "actid": 10000029,
+        "source": 2007,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item13.png",
+        "logassign": 8,
+        "logtype": 2
+      }
+    ],
+    "20040": [
+      {
+        "name": 1434065218,
+        "conditionText": 1597470004,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item11.png",
+        "logassign": 6,
+        "logtype": 10,
+        "showCondition": 10000015,
+        "tab": 1,
+        "source": 20040,
+        "configsource": 7014,
+        "actid": 10000029
+      }
+    ],
+    "20012": [
+      {
+        "name": 1834372809,
+        "conditionText": 1530682438,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item06.png",
+        "logassign": 7,
+        "logtype": 5,
+        "showCondition": 1300001,
+        "tab": 2,
+        "source": 20012,
+        "configsource": 7015,
+        "actid": 10000029
+      }
+    ],
+    "5101": [
+      {
+        "configsource": 749,
+        "tab": 2,
+        "name": 1569714761,
+        "actid": 10000029,
+        "source": 5101,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item08.png",
+        "logassign": 18,
+        "logtype": 6
+      }
+    ],
+    "2009": [
+      {
+        "name": 2135170091,
+        "source": 2009,
+        "configsource": 7009,
+        "logassign": 12,
+        "logtype": 1,
+        "tab": 2,
+        "relocateSource": {
+          "3502129": 9005
+        },
+        "icon": "$UI_Icon_Event_BossCatchReward_Item01.png",
+        "actid": 10000029
+      }
+    ],
+    "10050": [
+      {
+        "name": 1230731162,
+        "source": 10050,
+        "configsource": 8068,
+        "logassign": 5,
+        "logtype": 9,
+        "showCondition": 10000016,
+        "tab": 2,
+        "tabEndDayTime": {
+          "3": 1796889599,
+          "4": 1796846399,
+          "1": 1796846399,
+          "2": 1796875199
+        },
+        "tabStartDayTime": {
+          "3": 1789891200,
+          "4": 1789848000,
+          "1": 1789848000,
+          "2": 1789876800
+        },
+        "icon": "$UI_Icon_Event_BossCatchReward_Item09.png",
+        "actid": 10000029
+      }
+    ],
+    "10058": [
+      {
+        "configsource": 7005,
+        "tab": 2,
+        "name": 2019371560,
+        "actid": 10000029,
+        "source": 10058,
+        "icon": "$UI_Icon_Event_BossCatchReward_Item07.png",
+        "logassign": 10,
+        "logtype": 3
+      }
+    ]
+  }
+}

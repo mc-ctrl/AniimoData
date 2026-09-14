@@ -1,0 +1,63 @@
+{
+  "BE_Eat": {
+    "0": {}
+  },
+  "BE_Happy": {
+    "10012": {
+      "emojiOnTopLogo": "Love",
+      "sfx": "SFX_Act_Parmon_%d_Behav_Happy",
+      "effect": "Eff_Common_Behav_Love",
+      "beDuration": 10,
+      "emojiOnTeamUI": "Happy"
+    },
+    "0": {
+      "emojiOnTopLogo": "Happy",
+      "sfx": "SFX_Act_Parmon_%d_Behav_Happy",
+      "effect": "Eff_Common_Behav_Love",
+      "position": [
+        0,
+        5,
+        0
+      ],
+      "beDuration": 10,
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "emojiOnTeamUI": "Happy"
+    },
+    "10013": {
+      "sfx": "SFX_Act_Parmon_Common_Happy",
+      "beDuration": 5,
+      "effect": "Eff_Common_Behav_Love",
+      "emojiOnTeamUI": "Happy"
+    },
+    "10011": {
+      "emojiOnTopLogo": "Angry",
+      "sfx": "SFX_Act_Parmon_%d_Behav_Happy",
+      "effect": "Eff_Common_Behav_Love",
+      "beDuration": 10,
+      "effectDuration": 1,
+      "emojiOnTeamUI": "Happy"
+    }
+  },
+  "BE_Love": {
+    "0": {}
+  },
+  "BE_Sleep": {
+    "0": {}
+  },
+  "BE_Alert": {
+    "0": {}
+  },
+  "BE_Angry": {
+    "0": {}
+  },
+  "BE_Cry": {
+    "0": {}
+  },
+  "BE_Drink": {
+    "0": {}
+  }
+}

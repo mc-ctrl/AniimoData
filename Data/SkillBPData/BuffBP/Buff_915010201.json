@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915010201",
+  "calcInfoByLuaConfig": {
+    "id": 915010201,
+    "combat_ep_regen_p": "param0",
+    "type": 1
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

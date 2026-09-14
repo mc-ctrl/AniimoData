@@ -1,0 +1,153 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91281032",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "templateId": 91281031,
+        "name": "getBuffLayer",
+        "UID": "7109b305-1c34-433b-bd1e-60b6b4159724",
+        "target": "OWNER",
+        "NodeID": 7
+      },
+      "name": "multiply",
+      "UID": "0f353875-ac84-499d-af77-7585c3ec58c1",
+      "NodeID": 5,
+      "lValue": {
+        "rValue": {
+          "calcId": 91281032,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 20,
+          "UID": "69279b13-5717-44e6-98fe-26b1c9bc968e",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "f5efde9b-5f37-4a22-9797-bc999dcbb0fd",
+        "NodeID": 4,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "a32e3609-12b4-46c6-97e1-d93a47015773",
+          "target": "OWNER",
+          "NodeID": 3,
+          "attributeName": "hp_max_cur"
+        }
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "58971df4-3e8e-439f-8464-4ea05e9ef6ad",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "84f6b894-5e45-436a-b115-27031ee15f04",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil_Up",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "21": {
+      "calcId": 91281032,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 21,
+      "UID": "36b85be3-ec7e-4b1e-aed5-6a2931f0776c",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "UID": "913e0328-39f4-49f8-b9a4-5dc80071d491",
+      "name": "addShieldData",
+      "shieldData": {
+        "elementType": 0,
+        "shieldPoint": {
+          "rValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "5b8573b3-2045-41bc-9cda-0bb4bd1835d8",
+            "NodeID": 22,
+            "lValue": {
+              "calcId": 91281032,
+              "calcType": 1,
+              "paramName": "param1",
+              "NodeID": 21,
+              "UID": "36b85be3-ec7e-4b1e-aed5-6a2931f0776c",
+              "name": "getParamByLuaConfig"
+            }
+          },
+          "name": "multiply",
+          "UID": "678f7d58-c326-46c5-b0de-6295336b0ad8",
+          "NodeID": 17,
+          "lValue": {
+            "UID": "7455c37f-ed8f-420a-a9d5-d1ea9d7c9e70",
+            "target": "OWNER",
+            "name": "getShieldPoint",
+            "NodeID": 16
+          }
+        },
+        "isGeneral": true,
+        "isTeamShare": false
+      },
+      "NodeID": 19
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "8754cb9d-37a3-41d7-9d1b-0725b14ffde3",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "eventName": "huiyin",
+      "NodeID": 15,
+      "UID": "aea7613f-b7ba-47b7-a83f-883103aad1af",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        13,
+        19
+      ]
+    },
+    "20": {
+      "calcId": 91281032,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 20,
+      "UID": "69279b13-5717-44e6-98fe-26b1c9bc968e",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6ac9176a-1058-49a3-ae34-1e02f2a04c39",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil_End",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    12,
+    10
+  ],
+  "onBuffStartIds": [
+    8,
+    15
+  ]
+}

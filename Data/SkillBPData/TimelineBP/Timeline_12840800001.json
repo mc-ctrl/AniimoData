@@ -1,0 +1,244 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "0f7d49c8-ecad-4259-8f51-baf5279ae539",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c2d332c2-4a7b-46e7-94ef-d3ae43a8cc36",
+      "isAbilityEndRemove": false,
+      "soundId": "Ani_Parmon_10161_Skill_Burrow_DashAttack",
+      "NodeID": 38
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.05,
+      "NodeID": 39,
+      "UID": "76d81279-3326-4715-9922-af39299510cd"
+    },
+    "35": {
+      "UID": "f7fceee9-b312-4276-9401-084d5706fbba",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "NodeID": 35
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 20,
+      "UID": "9587f0af-04a1-4c6b-8599-a8b55af88c08"
+    },
+    "12": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "e1df09b4-d347-441a-b04c-4e95bc904ec0",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "23": {
+      "UID": "8a2384ed-af1d-4dc7-922f-bef58cd473b0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50,
+          21
+        ]
+      },
+      "NodeID": 23
+    },
+    "14": {
+      "UID": "9ca738ec-b06c-4ba5-b859-a464cd4fd375",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 14
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 52,
+      "UID": "caeebdd6-292b-4682-b9fc-4eee6234eb9e"
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d6fac77f-6bdc-40a1-9f03-c4d79d0da5c9",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Skill_Burrow_DashAttack"
+    },
+    "25": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102,
+        "elementType": 0,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Rock_Blunt_Big"
+      },
+      "UID": "d8889f2a-6fb6-4345-803c-5e7b272d7341",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "6eb4ecda-25df-4e07-a611-f8afecff2efb",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "calcResultNodeId": 25,
+      "name": "actOnTargets",
+      "UID": "8c173552-aaf7-4e5a-930b-38c0da5b94b7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.2,
+            1.2,
+            1.5,
+            2.5,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1284",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        25,
+        32
+      ],
+      "impulseId": 2000,
+      "NodeID": 27
+    },
+    "50": {
+      "UID": "72e07a1e-1d97-481f-83c1-ed1e5d7c2b7b",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 50
+    },
+    "29": {
+      "eventType": "NotifyState",
+      "endTime": 1.5,
+      "NodeID": 29,
+      "UID": "ce982483-e248-4542-84e3-63317ecff3a8",
+      "onUpdate": {
+        "actionIds": [
+          27
+        ]
+      },
+      "startTime": 0.3,
+      "tickInterval": 0.2
+    },
+    "18": {
+      "UID": "3bc7b5c8-0f20-4987-9246-c41f165f3336",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "calcInfo": {},
+      "name": "calcResult",
+      "UID": "9ccc8978-b353-4279-80ab-7085f69146a3",
+      "target": "CASTER",
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 33,
+      "UID": "4cfb26f1-7045-451d-91d1-87d5cbe4495b",
+      "effectId": "Eff_Parmon_10161_Skill_Burrow_DashAttack",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "51": {
+      "UID": "021d71d5-f628-49e5-89cb-116e3a05eec7",
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 51
+    },
+    "7": {
+      "UID": "b6cb29f5-df89-47d1-96f5-fcc000cf0cc7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5,
+          12
+        ]
+      },
+      "NodeID": 7
+    }
+  },
+  "BPName": "ability_12840800",
+  "NodeID": 9,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    7,
+    20,
+    16,
+    35,
+    23,
+    29,
+    52,
+    39
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

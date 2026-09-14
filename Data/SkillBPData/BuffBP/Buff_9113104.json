@@ -1,0 +1,113 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9113104",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "16": {
+      "rValue": 5,
+      "name": "greater",
+      "UID": "10a40537-a89b-403e-a2b3-59298f0de9cc",
+      "NodeID": 16,
+      "lValue": {
+        "templateId": 10087,
+        "name": "getBuffLayer",
+        "UID": "db5ef5a9-259b-4a90-94fe-c0f382782ac9",
+        "target": {
+          "eventName": "onMergeAttackCalcResult",
+          "name": "getEventCombatContextTarget",
+          "UID": "53b47329-9f6b-428f-b2b0-2b0b30d62c54",
+          "target": "TARGET",
+          "NodeID": 9
+        },
+        "NodeID": 10
+      }
+    },
+    "13": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "aafebba0-b688-4064-9991-707413218f17",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "9": {
+      "eventName": "onMergeAttackCalcResult",
+      "name": "getEventCombatContextTarget",
+      "UID": "53b47329-9f6b-428f-b2b0-2b0b30d62c54",
+      "target": "TARGET",
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "7be3a4f1-ab9b-45b2-bea9-05346b376816",
+      "name": "registerMergeAttackCalcInfo",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "18": {
+      "calcId": 9113104,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 18,
+      "UID": "9bdb97f4-a0c3-46f9-9327-d3abdba6dc62",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "bd82ed72-97c1-4774-8146-e9029499c3ea",
+      "NodeID": 11,
+      "lValue": {
+        "templateId": 10087,
+        "name": "getBuffLayer",
+        "UID": "db5ef5a9-259b-4a90-94fe-c0f382782ac9",
+        "target": {
+          "eventName": "onMergeAttackCalcResult",
+          "name": "getEventCombatContextTarget",
+          "UID": "53b47329-9f6b-428f-b2b0-2b0b30d62c54",
+          "target": "TARGET",
+          "NodeID": 9
+        },
+        "NodeID": 10
+      }
+    },
+    "20": {
+      "UID": "acf1ed2f-2411-491b-ba71-ebebba1aa6e7",
+      "name": "mergeAttackCalcInfo",
+      "calcInfo": {
+        "instant_crit_rate_v": {
+          "calcId": 9113104,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 18,
+          "UID": "9bdb97f4-a0c3-46f9-9327-d3abdba6dc62",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "7eb8ec87-f95c-4c64-bd5c-12399dd42f5e",
+      "conditionIds": [
+        11,
+        16
+      ],
+      "name": "conditionOr",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    14
+  ]
+}

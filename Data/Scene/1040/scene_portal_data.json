@@ -1,0 +1,26 @@
+{
+  "61576355": {
+    "markType": 0,
+    "respawnHp": 1,
+    "yaw": 270,
+    "revivedPointState": true,
+    "randomRange": 0,
+    "markPosition": [
+      8,
+      0,
+      0
+    ]
+  },
+  "73211665": {
+    "markType": 0,
+    "respawnHp": 1,
+    "yaw": 0,
+    "revivedPointState": true,
+    "randomRange": 0,
+    "markPosition": [
+      8,
+      0,
+      0
+    ]
+  }
+}

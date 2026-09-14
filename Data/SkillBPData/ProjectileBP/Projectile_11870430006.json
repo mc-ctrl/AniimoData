@@ -1,0 +1,105 @@
+{
+  "refControlPoint": [
+    [
+      2,
+      0,
+      2
+    ]
+  ],
+  "duration": 1,
+  "BPName": "ability_11870430",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10187_Skill_PauseWhirlwind_02",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "BezierCurve",
+  "refTargetPoint": [
+    0,
+    0,
+    3.13
+  ],
+  "maxHitNum": 1,
+  "maxHeightOffset": 0.8,
+  "onProjectileTickIds": [
+    37
+  ],
+  "moveSpeed": 10,
+  "stickPitchMaxOffset": 40,
+  "onProjectileStartIds": [
+    63
+  ],
+  "stickGravity": 1,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.4,
+  "sweepShape": 0,
+  "relation": 2,
+  "tickInterval": 0.05,
+  "refStartPoint": [
+    1,
+    0,
+    0
+  ],
+  "startSleepTime": 0,
+  "nodeMap": {
+    "37": {
+      "needEcs": true,
+      "actionIds": [
+        41
+      ],
+      "NodeID": 37,
+      "UID": "febcf682-1a8d-4149-a45b-baf2e66b8720",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": ""
+    },
+    "41": {
+      "notBlockInput": true,
+      "duration": 0.3,
+      "name": "forceDisplacement",
+      "UID": "ac5b3e8c-dd0c-4962-831f-0895a64cb560",
+      "target": "TARGET",
+      "speed": 10,
+      "ignoreYAxis": true,
+      "displacementDir": "IN",
+      "displacementTarget": "PROJECTILE",
+      "NodeID": 41
+    },
+    "63": {
+      "target": "PROJECTILE",
+      "name": "playSoundStr",
+      "UID": "3609b281-090a-4688-9fa7-12169032f123",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10187_Skill_PauseWhirlwind_Loop",
+      "NodeID": 63
+    }
+  },
+  "groundSweepRadius": 0.05,
+  "heightAboveGround": 0.4,
+  "acceleration": 0
+}

@@ -1,0 +1,64 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62132305",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": {},
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    4
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "id": 2050,
+      "duration": 5,
+      "NodeID": 3,
+      "UID": "282304a4-ed84-40b7-9786-f8dd241bbdbe",
+      "name": "showBossMechanismTip"
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "6796ba79-8ca0-4fb8-99db-50d046493447",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "8": {
+      "UID": "a5cf51a3-0733-4c84-b688-271f3aef51d5",
+      "name": "hideBossMechanismTip",
+      "id": 2050,
+      "NodeID": 8
+    },
+    "7": {
+      "UID": "c38c3175-97b1-4eb1-a17a-5c548c24ea5c",
+      "name": "isNot",
+      "action": {
+        "name": "hasBuffTag",
+        "UID": "f0671318-0aae-491a-9065-e0f584482202",
+        "target": "SRC",
+        "NodeID": 6,
+        "buffTag": 3
+      },
+      "NodeID": 7
+    },
+    "5": {
+      "delay": 0,
+      "interval": 20,
+      "UID": "925c61fc-aaf7-4d78-81b1-d0f126f51ad7",
+      "name": "buffStartThink",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010003",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "343be3cb-9d55-464f-b5cf-fb96f06e5dea",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_Loop",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "6": {
+      "target": {
+        "UID": "75560bcf-8287-4143-a8d0-a7b466a7cc59",
+        "name": "getEventTrapTarget",
+        "NodeID": 5
+      },
+      "duration": 0,
+      "buffId": 270010004,
+      "NodeID": 6,
+      "UID": "25c79775-c1ac-47b1-a234-cb2dc21d60c5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 7,
+      "UID": "b1312f1a-e33d-41bd-9245-5ffa345cf1fb",
+      "enterTrapActionIds": [
+        6
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        9
+      ],
+      "shapeArgs": [
+        6.5
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 1,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "32c37fa9-689e-4cd6-8c33-aefae561c806",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_Loop",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "19993687-22b6-4e22-83a5-54d7a5575e36",
+      "name": "getEventTrapTarget",
+      "NodeID": 8
+    },
+    "9": {
+      "buffId": 270010004,
+      "name": "removeBuff",
+      "UID": "bc24e066-e326-49d9-92e0-5aa0d718f3ca",
+      "target": {
+        "UID": "19993687-22b6-4e22-83a5-54d7a5575e36",
+        "name": "getEventTrapTarget",
+        "NodeID": 8
+      },
+      "NodeID": 9
+    },
+    "18": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "35a2bbf8-0b76-47d3-a1d1-bb2ff520e4d7",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_End",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0758b14b-46fc-4ac1-888d-7fb01a65badd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_AoeHeal_Loop",
+      "NodeID": 19
+    },
+    "20": {
+      "name": "stopSoundStr",
+      "UID": "dbee8ce7-53d0-4dae-9360-35c5339980cd",
+      "soundId": "SFX_Combat_Monster_Robot_Skill_AoeHeal_Loop",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "5": {
+      "UID": "75560bcf-8287-4143-a8d0-a7b466a7cc59",
+      "name": "getEventTrapTarget",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    16,
+    18,
+    20
+  ],
+  "onBuffStartIds": [
+    3,
+    7,
+    19
+  ]
+}

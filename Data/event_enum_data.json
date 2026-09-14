@@ -1,0 +1,7003 @@
+{
+  "setSandboxPhase": {
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_sandbox_data",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ],
+      {}
+    ],
+    "paramName": [
+      "SandboxID",
+      "Phase状态Int值"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "SandboxID",
+      "Phase状态Int"
+    ],
+    "desc": "设置SandboxPhase状态Int值",
+    "displayName": "设置SandboxPhase"
+  },
+  "setSavePortals": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "场景id",
+      "标记点id",
+      "是否临时激活（不存盘）"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景id，标记点id，是否临时激活（不存盘）"
+    ],
+    "desc": "例如   {100，15017533， 1}  激活；需要是当前场景，并且标记点类型是传送站1或者复活点15。不存盘",
+    "displayName": "设置临时复活点状态"
+  },
+  "setSpawnerActived": {
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "spawnerId",
+      "激活状态"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "Spawner ID",
+      "0关闭，1激活"
+    ],
+    "desc": "设置spawner创生物激活状态",
+    "displayName": "设置spawner激活状态"
+  },
+  "setTimerTxt": {
+    "paramName": [
+      "界面文本配置表的KEY"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "界面文本配置表的KEY"
+    ],
+    "desc": "改变计时器目标显示",
+    "displayName": "改变计时器目标显示"
+  },
+  "setUserPreference": {
+    "paramName": [
+      "类别 ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "类别 id"
+    ],
+    "desc": "选择特训计划倾向",
+    "displayName": "选择特训计划倾向"
+  },
+  "setVegetationVisible": {
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "场景ID",
+      "植被类型ID",
+      "1: 显示 0: 隐藏"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景ID",
+      "植被类型ID",
+      "1: 显示 0: 隐藏"
+    ],
+    "desc": "指定场景的指定植被类型显示/隐藏",
+    "displayName": "指定场景的指定植被类型显示/隐藏"
+  },
+  "shop": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "商品库归类id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "商品库归类id"
+    ],
+    "desc": "打开商店",
+    "displayName": "打开商店"
+  },
+  "showBranchLineArea": {
+    "paramName": [
+      "显示交互"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "ark奖励Id"
+    ],
+    "desc": "开启或关闭分线交互入口",
+    "displayName": "分线区域"
+  },
+  "showCatchRogueFinishUI": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "玩家交互后弹出完成界面",
+    "displayName": "捉宠爬塔-最终传送门"
+  },
+  "showCatchRogueStartUI": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "玩家交互跳转到对应捉宠爬塔玩法界面",
+    "displayName": "捉宠爬塔-大世界传送门"
+  },
+  "showContent": {
+    "refData": [
+      [
+        [
+          "Data.item_viewer_data",
+          [
+            "$L#title",
+            "$L#text"
+          ]
+        ]
+      ]
+    ],
+    "paramName": [
+      [
+        [
+          "可查看内容ID"
+        ]
+      ]
+    ],
+    "paramType": [
+      [
+        [
+          "Elua"
+        ]
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "可查看内容IDs"
+    ],
+    "desc": "进入查看模式，显示配置的内容",
+    "displayName": "查看内容"
+  },
+  "showEmojiBubble": {
+    "refData": [
+      [
+        "Data.emoji_data",
+        {}
+      ],
+      {}
+    ],
+    "paramType": [
+      "S",
+      "F"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "资源名",
+      "持续时间"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "资源名，持续时间"
+    ],
+    "desc": "在npc头顶显示气泡，里面可显示图标（单位秒，-1表示持续显示）",
+    "displayName": "显示气泡"
+  },
+  "showEntity": {
+    "levelOrDungeonUse": 1,
+    "paramType": [
+      [
+        [
+          "I"
+        ]
+      ],
+      "I",
+      "I"
+    ],
+    "refData": [
+      [
+        [
+          [
+            "Common.Data.Scene.$B#SceneId.scene_entity_data",
+            [
+              "$L#editorShowName",
+              "$L#idInType",
+              "$L#sandboxId"
+            ]
+          ]
+        ]
+      ],
+      {},
+      [
+        "Data.npc_visibility_param_key",
+        [
+          "description",
+          "ids"
+        ]
+      ]
+    ],
+    "refSelectData": [
+      [
+        [
+          [
+            "sandboxId",
+            "∈",
+            "$B#SandboxIds"
+          ]
+        ]
+      ],
+      {}
+    ],
+    "desc": "显隐NPC",
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{{entityStaticId}}",
+      "显隐状态(0隐藏1显示)",
+      "标识key"
+    ],
+    "displayName": "设置entity显示状态",
+    "paramName": [
+      [
+        [
+          "entityStaticId"
+        ]
+      ],
+      "显隐状态(0隐藏1显示)",
+      "唯一标识key"
+    ]
+  },
+  "showFishingCaptureContractConfirm": {
+    "paramName": [
+      "状态"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "鸢尾副本打开交互界面",
+    "displayName": "鸢尾副本打开交互界面"
+  },
+  "showFishingCaptureStartUI": {
+    "paramName": [
+      "结果（1周本，2最终副本）"
+    ],
+    "eventFlag": "c",
+    "paramType": [
+      "I"
+    ],
+    "desc": "玩家交互跳转到对应BOSS捕捉玩法界面",
+    "displayName": "BOSS捕捉-大世界传送门"
+  },
+  "showIPContent": {
+    "paramName": [
+      "碎片化信息配置表id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "碎片化信息配置表id"
+    ],
+    "desc": "显示碎片化信息提示",
+    "displayName": "显示碎片化信息提示"
+  },
+  "showMapIcon": {
+    "paramName": [
+      "地图标记id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "地图标记id"
+    ],
+    "desc": "将地图标记显示出来，功能等同于靠近激活",
+    "displayName": "打开地图标记显示"
+  },
+  "showMultiBubble": {
+    "refData": [
+      [
+        "Data.bubble_group_data",
+        {}
+      ]
+    ],
+    "paramName": [
+      "群体冒泡ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "bubbleId"
+    ],
+    "desc": "播放群体冒泡",
+    "displayName": "群体冒泡显示"
+  },
+  "showPetBallHatch": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "孵化器开启孵化界面",
+    "displayName": "孵化器开启孵化"
+  },
+  "showPhoto": {
+    "paramName": [
+      "资源名称",
+      "需要放入宠物相册的宠物id"
+    ],
+    "eventFlag": "c",
+    "paramType": [
+      "S",
+      "Elua"
+    ],
+    "desc": "往相册存入预设照片，只本地可见，换设备不可见",
+    "displayName": "往相册存入预设照片"
+  },
+  "showRogueDungeonInfo": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "展示面板信息",
+    "displayName": "展示面板信息"
+  },
+  "showRogueExchangeReward": {
+    "paramName": [
+      "类型"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "兑换类型"
+    ],
+    "desc": "消耗体力兑换携带物",
+    "displayName": "消耗体力兑换携带物"
+  },
+  "showSource": {
+    "paramName": [
+      "来源id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "来源ID"
+    ],
+    "desc": "调用来源功能。可以使用类型1外的其他来源类型",
+    "displayName": "调用来源功能"
+  },
+  "showTarget": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "玩法目标id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "目标id"
+    ],
+    "desc": "显示玩法目标",
+    "displayName": "显示玩法目标"
+  },
+  "skillState": {
+    "paramType": [
+      "Elua",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "技能槽Q/E/R",
+      "状态"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{技能槽Q,技能槽E,技能槽R}，状态：0=隐藏，1=显示"
+    ],
+    "desc": "技能槽显隐功能",
+    "displayName": "技能槽显隐功能"
+  },
+  "spending": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "displayName": "玩家累充",
+    "paramType": {}
+  },
+  "starRobEggLimitTimeChallenge": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "开启限时挑战",
+    "displayName": "开启限时挑战"
+  },
+  "startAIRemind": {
+    "paramType": [
+      "I",
+      "S",
+      "S",
+      "S",
+      "S",
+      "S"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "AI助手id",
+      "参数1",
+      "参数2",
+      "参数3",
+      "参数4",
+      "参数5"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "AI助手ID，参数1，参数2，参数3，参数4，参数5"
+    ],
+    "desc": "触发AI助手提示",
+    "displayName": "触发AI助手提示"
+  },
+  "startArkExchange": {
+    "paramName": [
+      "mmoltem的ld",
+      "levelltem的ld"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "desc": "开启扭蛋机",
+    "displayName": "开启扭蛋机"
+  },
+  "startBehavior": {
+    "paramName": [
+      "Static ID",
+      "动作名"
+    ],
+    "paramType": [
+      "I",
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "StaticID",
+      "动作名"
+    ],
+    "desc": "让X播放Y动作",
+    "displayName": "播放指定动作"
+  },
+  "startBossGamePlay": {
+    "paramName": [
+      "头目战配置表id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "头目战配置表id"
+    ],
+    "desc": "开启头目战界面",
+    "displayName": "开启头目战界面"
+  },
+  "startCourse": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "教学关卡id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "教学关卡id"
+    ],
+    "desc": "开始教学关卡",
+    "displayName": "开始教学关卡"
+  },
+  "startFishingCaptureBattle": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "玩家交互后开启BOSS战",
+    "displayName": "BOSS捕捉-开始游戏（怪物刷新）"
+  },
+  "startGuide": {
+    "levelOrDungeonUse": 3,
+    "triggerParam": [
+      "FINISH_GUIDE",
+      "$1",
+      "",
+      ">=",
+      1
+    ],
+    "paramType": [
+      "I"
+    ],
+    "refData": [
+      [
+        "Data.guide_data",
+        {}
+      ]
+    ],
+    "desc": "开始引导组",
+    "eventFlag": "s",
+    "paramTooltip": [
+      "引导组ID"
+    ],
+    "displayName": "开始引导",
+    "paramName": [
+      "引导组id"
+    ]
+  },
+  "startGuideStep": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "引导组ID",
+      "引导步骤ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "引导组ID",
+      "引导步骤ID"
+    ],
+    "desc": "从某个引导步骤开始执行引导",
+    "displayName": "从某个引导步开始引导"
+  },
+  "startHomeSeasonCelebration": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "开启家园赛季庆典活动",
+    "displayName": "开启家园赛季庆典活动"
+  },
+  "startMeteorology": {
+    "paramName": [
+      "区块id",
+      "天象类型",
+      "持续时间分钟"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "区块id",
+      "天象类型",
+      "持续时间分钟"
+    ],
+    "desc": "指定区域开始某种天象，并持续一段时间",
+    "displayName": "指定区域开始某种天象"
+  },
+  "startMeteorologyNowadays": {
+    "paramName": [
+      "天象类型",
+      "持续时间分钟"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "天象类型",
+      "持续时间分钟"
+    ],
+    "desc": "所在区域开始某种天象，并持续一段时间",
+    "displayName": "所在区域开始某种天象"
+  },
+  "startNpcDuelClearDialogue": {
+    "displayName": "NPC对决清除对话",
+    "eventFlag": "s"
+  },
+  "startNpcDuelDialogue": {
+    "displayName": "开启NPC对决对话",
+    "eventFlag": "s"
+  },
+  "startParmonCompetition": {
+    "refData": [
+      [
+        "Data.parmon_competition_data",
+        {}
+      ]
+    ],
+    "paramName": [
+      "帕蒙比赛配置表id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "帕蒙比赛配置表id"
+    ],
+    "desc": "开启某个难度的帕蒙比赛，id来自帕蒙比赛配置表",
+    "displayName": "开启帕蒙比赛"
+  },
+  "startRogueBattle": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "开始爬塔战斗",
+    "displayName": "开始爬塔战斗"
+  },
+  "startSlotMachine": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "StaticId"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "StaticId"
+    ],
+    "desc": "ARK老虎机",
+    "displayName": "老虎机开启"
+  },
+  "startSpecialTrainSystem": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "开启特训计划",
+    "displayName": "开启特训计划"
+  },
+  "startWeather": {
+    "paramName": [
+      "区块id",
+      "天气类型",
+      "持续时间分钟"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "区块id",
+      "天气类型",
+      "持续时间分钟"
+    ],
+    "desc": "指定区域开始某种天气，并持续一段时间",
+    "displayName": "指定区域开始某种天气"
+  },
+  "startWeatherNowadays": {
+    "paramName": [
+      "天气类型",
+      "持续时间分钟"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "天气类型",
+      "持续时间分钟"
+    ],
+    "desc": "所在区域开始某种天气，并持续一段时间",
+    "displayName": "所在区域开始某种天气"
+  },
+  "stopEffect": {
+    "paramName": [
+      "特效ID"
+    ],
+    "paramType": [
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "特效ID"
+    ],
+    "desc": "停止特效",
+    "displayName": "停止特效"
+  },
+  "stopPlaySound": {
+    "paramType": [
+      [
+        "S"
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        "音效资源名"
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "音效资源名",
+      "音效资源名"
+    ],
+    "desc": "停止播放音效",
+    "displayName": "停止音效"
+  },
+  "switchAd": {
+    "levelOrDungeonUse": 1,
+    "eventFlag": "c",
+    "paramTooltip": [
+      "广告id(id可为空)"
+    ],
+    "desc": "切换广告到指定id，不填id则为播放下一条",
+    "displayName": "切换广告"
+  },
+  "switchCatchMode": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "参数"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "切换玩家捕捉状态:1进入,0退出,nil 则 toggle"
+    ],
+    "desc": "切换玩家进入或退出捕捉状态",
+    "displayName": "捕捉状态切换"
+  },
+  "switchOffAreaMask": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "道路ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "道路ID（64蝴蝶谷128海岛洞穴）"
+    ],
+    "desc": "关闭对应道路",
+    "displayName": "关闭对应道路"
+  },
+  "switchOnAreaMask": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "道路ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "道路ID（64蝴蝶谷128海岛洞穴）"
+    ],
+    "desc": "打开对应道路",
+    "displayName": "打开对应道路"
+  },
+  "teleportFlower": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "自动定位最近一次变为花苞态的地脉花",
+    "displayName": "自动定位最近一次变为花苞态的地脉花"
+  },
+  "teleportRobEggLimitChallenge": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "开启限时挑战",
+    "displayName": "开启限时挑战"
+  },
+  "teleportScene": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "场景id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景id"
+    ],
+    "desc": "进入目标场景",
+    "displayName": "进入场景"
+  },
+  "teleportScenePosition": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "场景Id",
+      "传送站Id",
+      "禁用特效(1关闭)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景id",
+      "传送站id",
+      "禁用特效"
+    ],
+    "desc": "传送到场景的指定位置，需要使用地图打点工具，并且点的类型要是传送站；黑幕ID可置空",
+    "displayName": "传送"
+  },
+  "teleportScenePositionByConfirm": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "场景Id",
+      "传送站Id",
+      "禁用特效(1关闭)",
+      "需要二次确认(1需要)"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "场景id",
+      "传送站id",
+      "禁用特效",
+      "需要二次确认"
+    ],
+    "desc": "传送到场景的指定位置，需要使用地图打点工具，并且点的类型要是传送站",
+    "displayName": "传送"
+  },
+  "teleportScenePositionRepeat": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "场景Id",
+      "传送站Id",
+      "禁用特效(1关闭)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景id",
+      "传送站id",
+      "禁用特效"
+    ],
+    "desc": "传送到场景的指定位置，需要使用地图打点工具，并且点的类型要是传送站。若未执行完成，上线时会自动重新触发",
+    "displayName": "传送（自动重新触发）"
+  },
+  "teleportSelfHomeLand": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "传送到玩家自己家园的门口，无参数，详见单号#6754910660",
+    "displayName": "传送到玩家自己家园的门口"
+  },
+  "teleportSelfHomeLandWithConfirm": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "传送到家园（在家园外有二次确认）",
+    "displayName": "传送到家园（在家园外有二次确认）"
+  },
+  "teleportToHomeCar": {
+    "eventFlag": "c",
+    "paramType": {},
+    "displayName": "家园传送门交互事件",
+    "paramName": {}
+  },
+  "teleportXYZ": {
+    "paramName": [
+      "定点传送表Id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "定点传送表id"
+    ],
+    "desc": "传送到指定的坐标",
+    "displayName": "传送到指定的坐标"
+  },
+  "timeSwitch": {
+    "paramName": [
+      "昼夜时段ID（int,1,2,3,4)"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "昼夜时段ID（1,2,3,4)"
+    ],
+    "desc": "按最小间隔自动切换昼夜(判断间隔了switchTimeInterVal后向下流转1）",
+    "displayName": "按最小间隔自动切换昼夜"
+  },
+  "timeSwitchForce": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "昼夜时段ID（int,1,2,3,4)",
+      "动画开关（1开启）"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "昼夜时段ID（1,2,3,4)",
+      "动画开关（1开启）"
+    ],
+    "desc": "强制切换昼夜（不传则自动+1），可以配置是否要播动画，不配为不播",
+    "displayName": "强制切换昼夜"
+  },
+  "timerClose": {
+    "paramName": [
+      "计时器id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "计时器id"
+    ],
+    "desc": "关闭一个计时器",
+    "displayName": "关闭一个计时器"
+  },
+  "timerStart": {
+    "paramName": [
+      "计时器id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "计时器id"
+    ],
+    "desc": "开启一个计时器",
+    "displayName": "开启一个计时器"
+  },
+  "toast": {
+    "refData": [
+      [
+        "Data.sys_notice_data",
+        [
+          "$L#desc"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "反馈id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "反馈id"
+    ],
+    "desc": "播一条反馈提示",
+    "displayName": "播一条反馈提示"
+  },
+  "trapEvent": {
+    "paramType": [
+      "S"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "状态机"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "状态机"
+    ],
+    "desc": "靠近npc时的npc的动作",
+    "displayName": "设置NPC靠近动作"
+  },
+  "triggerExplode": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "部分特殊的陷阱交互物，需要模拟宝箱使用F交互后，触发陷阱的爆炸",
+    "displayName": "触发ECS爆炸物的爆炸逻辑"
+  },
+  "unlockBattleResearch": {
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "pet_ability_index_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "宠物模板Id",
+      "宠物技能Id"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帕蒙模板ID",
+      "帕蒙技能ID"
+    ],
+    "desc": "解锁一个指定宠物图鉴的一个指定技能，必须是未学习状态，否则失败",
+    "displayName": "解锁图鉴技能"
+  },
+  "unlockFeatureResearch": {
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "pet_ability_index_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "宠物模板Id",
+      "宠物特性Id"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帕蒙模板ID",
+      "帕蒙特性ID"
+    ],
+    "desc": "解锁一个指定宠物图鉴的一个指定特性，必须是未学习状态，否则失败",
+    "displayName": "解锁图鉴特性"
+  },
+  "unlockHelp": {
+    "paramName": [
+      "帮助表id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帮助表ID"
+    ],
+    "desc": "静默解锁帮助条目",
+    "displayName": "静默解锁帮助条目"
+  },
+  "unlockSpecialTrainType": {
+    "paramName": [
+      "类型id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "特训类型"
+    ],
+    "desc": "解锁指定特训类型",
+    "displayName": "解锁特训类型"
+  },
+  "unregisterCustomTrigger": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "条件id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "条件id"
+    ],
+    "desc": "条件定义在条件触发表中。仅支持条件用途类型10、用registerCustomTrigger手动注册的事件",
+    "displayName": "取消注册自定义条件"
+  },
+  "unregisterNpcDialogueBubble": {
+    "paramName": [
+      "staticID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticId"
+    ],
+    "desc": "删除NPC动态气泡，不论是否高优先级",
+    "displayName": "删除NPC动态气泡"
+  },
+  "upStarTitle": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "玩家头衔升级",
+    "displayName": "升头衔"
+  },
+  "autoEquipExplorerPet": {
+    "paramName": [
+      "开关状态(0关闭，1开启)"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "开关状态（0关闭，1开启）"
+    ],
+    "desc": "自动装配探索宠",
+    "displayName": "自动装配探索宠"
+  },
+  "reportReward": {
+    "eventFlag": "c",
+    "desc": "帕蒙捕捉汇报",
+    "displayName": "帕蒙捕捉汇报"
+  },
+  "autoCutSeamlessSwitch": {
+    "paramName": [
+      "场景id",
+      "开关状态( 0关闭、1开启)"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景id",
+      "开关（0关闭，1打开）"
+    ],
+    "desc": "开启或关闭自动位面",
+    "displayName": "自动位面开关"
+  },
+  "arkCampUnlock": {
+    "levelOrDungeonUse": 1,
+    "paramName": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "营地开启",
+    "displayName": "营地开启"
+  },
+  "setMarkStateClose": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "sceneId",
+      "staticId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景id",
+      "目标id"
+    ],
+    "desc": "提前关闭一些标点，会在后续设置的时候自动跳状态",
+    "displayName": "提前关闭标点"
+  },
+  "setMarkStateSelf": {
+    "levelOrDungeonUse": 1,
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "refData": [
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "useMask": 8,
+    "desc": "-- 地图标记状态\n0, --隐藏 1, --灰色 2, --绿色 3, --绿色对勾\n 强制=1表示直接set，0或空为执行时状态只能往大了设，禁止回退",
+    "eventFlag": "s",
+    "paramTooltip": [
+      "状态",
+      "是否强制"
+    ],
+    "displayName": "设置地图标记状态",
+    "paramName": [
+      "状态（0隐 1灰 2绿 3绿打勾）",
+      "是否强制"
+    ]
+  },
+  "setMarkStates": {
+    "refData": [
+      [
+        [
+          {},
+          {}
+        ]
+      ],
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramType": [
+      [
+        [
+          "I",
+          "I"
+        ]
+      ],
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      [
+        [
+          "地图",
+          "标记id"
+        ]
+      ],
+      "状态（0隐 1灰 2绿 3绿打勾）",
+      "是否强制"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{{地图,id1},{地图,id2},{地图,id3},{地图,id4}}",
+      "状态",
+      "是否强制"
+    ],
+    "desc": "-- 地图标记状态\n0, --隐藏 1, --灰色 2, --绿色 3, --绿色对勾\n 强制=1表示直接set，0或空为执行时状态只能往大了设，禁止回退",
+    "displayName": "设置地图标记状态"
+  },
+  "setMimicry": {
+    "useMask": 8,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "状态1开启 0关闭"
+    ],
+    "desc": "设置puppet的拟态状态，开启或关闭",
+    "displayName": "设置拟态状态"
+  },
+  "setNpcBehavior": {
+    "refData": [
+      {},
+      [
+        "Data.parmon_behavior_data",
+        [
+          "$L#behavId"
+        ]
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "S",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "Static ID",
+      "BehavId",
+      "增删(1Add0Remove)"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "StaticId",
+      "BehavId",
+      "增删(1Add0Remove)"
+    ],
+    "desc": "动态为NPC增删行为(BP开头的行为名)",
+    "displayName": "修改NPC挂载行为"
+  },
+  "setNpcBehaviorStatus": {
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "StaticID",
+      "行为ID",
+      "状态"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "NPCStaticID",
+      "行为ID",
+      "状态"
+    ],
+    "desc": "设置NPC行为状态，见NPC行为状态表",
+    "displayName": "设置NPC行为状态"
+  },
+  "setNpcContentByDict": {
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "staticId",
+      [
+        {},
+        {}
+      ]
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "S"
+    ],
+    "desc": "专用于神庙同不不同的玩家",
+    "displayName": "根据字典修改NPC状态"
+  },
+  "setNpcContent": {
+    "levelOrDungeonUse": 1,
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_entity_data",
+        [
+          "$L#editorShowName",
+          "$L#idInType",
+          "$L#sandboxId"
+        ]
+      ],
+      [
+        "Data.npc_special_state_data",
+        [
+          "$L#behavGroupId",
+          "$L#actionPrototypeIds"
+        ]
+      ]
+    ],
+    "refSelectData": [
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "desc": "设置NPC特殊状态",
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticId",
+      "特殊状态id"
+    ],
+    "displayName": "设置NPC特殊状态",
+    "paramName": [
+      "staticId",
+      "特殊状态id"
+    ]
+  },
+  "grabEggSnatch": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "传送器争夺",
+    "paramName": {}
+  },
+  "grabEggTransfer": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "传送器传送",
+    "paramName": {}
+  },
+  "guideEffectToLeylineTree": {
+    "paramName": [
+      "特效ID",
+      "朝向的staticID",
+      "偏移坐标{x,y,z}"
+    ],
+    "paramType": [
+      "S",
+      "S",
+      "V3"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "特效ID",
+      "朝向的staticID",
+      "偏移向量"
+    ],
+    "desc": "播放朝向地脉树的特效",
+    "displayName": "播放朝向地脉树的特效"
+  },
+  "handleInteractEnv": {
+    "eventFlag": "s",
+    "useMask": 8,
+    "displayName": "handleEnv交互"
+  },
+  "hideUI": {
+    "refData": [
+      [
+        "$B"
+      ],
+      {},
+      [
+        [
+          {}
+        ]
+      ]
+    ],
+    "paramType": [
+      "I",
+      "I",
+      [
+        [
+          "I"
+        ]
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "隐藏1/显示0",
+      "隐藏的最长时间(秒)",
+      [
+        [
+          "例外的界面id"
+        ]
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "隐藏/显示",
+      "隐藏的最长时间",
+      "{{例外的界面1,例外的界面2}}"
+    ],
+    "desc": "隐藏/显示除例外界面外的其他UI",
+    "displayName": "隐藏/显示UI"
+  },
+  "hintAnimeState": {
+    "paramName": [
+      "挂接entity类型=npc/envobj/chest/interact/static",
+      "挂接主体ID",
+      "动效挂接表ID",
+      "NPCfuncID",
+      "状态：0=隐藏，1=激活"
+    ],
+    "paramType": [
+      "S",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "挂接entity类型=npc/envobj/chest/interact/static",
+      "挂接主体ID",
+      "动效挂接表ID",
+      "NPCfuncID",
+      "状态：0=隐藏，1=激活"
+    ],
+    "desc": "控制对应主体上的对应动效挂接表ID的激活和隐藏状态，其中NPCfunc、主体ID、挂接类型可置空",
+    "displayName": "提示动效激活控制"
+  },
+  "homeAddStamina": {
+    "paramName": [
+      "词条id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "词条id"
+    ],
+    "desc": "家园增加体力上限",
+    "displayName": "家园增加体力上限"
+  },
+  "homelandHatchCarSpeed": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "增加家园内孵化器的效率",
+    "paramName": {}
+  },
+  "incProgressNotice": {
+    "eventFlag": "s",
+    "paramTooltip": [
+      "任务id",
+      "任务目标序号",
+      "改变值"
+    ],
+    "desc": "某个任务的某个目标的进度改变N（改变后确保不超过目标数值范围）",
+    "displayName": "修改任务目标进度"
+  },
+  "individualPointAdd": {
+    "paramName": [
+      "触发概率",
+      "提升六维",
+      "提升数值"
+    ],
+    "paramType": [
+      "F",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "触发概率",
+      "提升六维",
+      "提升数值"
+    ],
+    "desc": "想使用的这个功能要客户端传入宠物id！！！！\n提升数值一定要和数值确认，不要乱用，尽量都是一个值！！！\n全局变量表有该事件单宠物可执行上限individualPropEnhanceTimesMax\n【参数说明】\n触发概率：调用该事件时，需要使用该概率判断是否成功触发，成功则执行后续处理，失败则不做任何处理。\n 提升六维：I，整数，1-6对应六个属性，0表示随机一个，-1表示选择六维中最低的，-2表示推荐属性中低的哪个，-3表示两个推荐属性都加。\n 提升数值：I，整数，本次增加的个体值数值",
+    "displayName": "先天资质提升"
+  },
+  "initGuide": {
+    "refData": [
+      [
+        "Data.guide_data",
+        {}
+      ]
+    ],
+    "paramType": [
+      [
+        "I"
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        "引导组id"
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{引导组ID}",
+      "{引导组ID}",
+      "{引导组ID}"
+    ],
+    "desc": "引导次数重置为0，可重新触发引导",
+    "displayName": "引导重置"
+  },
+  "interactLeylineTree": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "地脉树ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "地脉树ID"
+    ],
+    "desc": "与地脉树互动，打开地脉树注入印记界面+地脉树相关动画",
+    "displayName": "与地脉树互动"
+  },
+  "interactNourish": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "地脉树ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "地脉树ID"
+    ],
+    "desc": "滋养地脉树",
+    "displayName": "打开地脉树滋养界面"
+  },
+  "interactWeather": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "地脉树ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "地脉树ID"
+    ],
+    "desc": "地脉树改变天象",
+    "displayName": "打开地脉树虹天象界面"
+  },
+  "inviteMultiPlayer": {
+    "eventFlag": "s",
+    "desc": "多人玩法召唤其他人",
+    "displayName": "组队交互物"
+  },
+  "joinMultiAction": {
+    "paramName": [
+      "互动动作ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "动作表ID"
+    ],
+    "displayName": "加入多人互动动作",
+    "paramType": [
+      "I"
+    ]
+  },
+  "keepSpark": {
+    "displayName": "续火花成功",
+    "eventFlag": "s"
+  },
+  "knowledgeUIOpen": {
+    "paramName": [
+      "见闻条目ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "见闻条目ID"
+    ],
+    "desc": "打开指定ID见闻页面（未解锁则无效）",
+    "displayName": "打开指定ID见闻页面"
+  },
+  "knowledgeUnlock": {
+    "paramName": [
+      "见闻条目ID"
+    ],
+    "paramType": [
+      "Elua"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "见闻条目ID"
+    ],
+    "desc": "解锁指定ID见闻(elua）",
+    "displayName": "解锁指定ID见闻"
+  },
+  "learnBehaviorAbility": {
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramName": [
+      "宠物模板Id",
+      "宠物行为Id",
+      "宠物行为等级"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帕蒙ID",
+      "行为ID",
+      "行为等级"
+    ],
+    "desc": "学习一个指定等级的宠物行为，只能高级覆盖低级",
+    "displayName": "学习宠物行为"
+  },
+  "learnSkill": {
+    "refData": [
+      [
+        "Data.player_skill_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "角色冒险技能id",
+      "技能等级",
+      "显示提示面板"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "技能id，等级，是否显示提示面板"
+    ],
+    "desc": "学会技能",
+    "displayName": "学会技能"
+  },
+  "lockingMapPoints": {
+    "paramName": [
+      "场景id，标记ID"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "场景id，地图标记 id"
+    ],
+    "desc": "打开地图界面，并自动锁定地图poi点位，并将地图视野移动到相应地图点的位置",
+    "displayName": "地图锁定POI点"
+  },
+  "logout": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "强制退出登录，回到主界面",
+    "displayName": "强制登出"
+  },
+  "monthCardActivate": {
+    "paramName": [
+      "获得月卡天数"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "获得月卡天数"
+    ],
+    "desc": "月卡激活X天",
+    "displayName": "月卡激活"
+  },
+  "nearLuminAmber": {
+    "paramName": [
+      "距离"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "最大距离限制"
+    ],
+    "desc": "追踪方圆X米内最近的辉耀琥珀",
+    "displayName": "追踪最近的辉耀琥珀"
+  },
+  "nearMorphling": {
+    "paramName": [
+      "距离"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "最大距离限制"
+    ],
+    "desc": "追踪方圆X米内最近的魔弗灵",
+    "displayName": "追踪最近的魔弗灵"
+  },
+  "nearPetFlash": {
+    "paramName": [
+      "距离"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "最大距离限制"
+    ],
+    "desc": "追踪方圆X米内最近的闪光宠",
+    "displayName": "追踪最近的闪宠"
+  },
+  "nearPhoto": {
+    "paramName": [
+      "距离"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "最大距离限制"
+    ],
+    "desc": "追踪方圆X米内最近的生态拍照点",
+    "displayName": "追踪最近的生态拍照点"
+  },
+  "npcAddBuff": {
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "staticId",
+      "buffId",
+      "duration"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I",
+      "F"
+    ],
+    "desc": "指定staticId对象添加buff",
+    "displayName": "指定staticId对象添加buff"
+  },
+  "npcDuelPlayEndStateDialogue": {
+    "eventFlag": "s",
+    "desc": "结束状态时的常态交互",
+    "displayName": "对话"
+  },
+  "npcPhoneCall": {
+    "refData": [
+      [
+        "Data.puppet_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Editor.Data.dialogue_graph_editor_data",
+        [
+          "$L#desc"
+        ]
+      ],
+      [
+        "$B"
+      ],
+      [
+        "Data.Quest.quest_base",
+        [
+          "$L#title"
+        ]
+      ]
+    ],
+    "paramName": [
+      "NPC Template ID",
+      "对话图 ID",
+      "触发 UI",
+      "任务 ID"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "npcId",
+      "对话图Id",
+      "是否触发UI"
+    ],
+    "desc": "NPC来电，用于显示NPC来电界面和支持回拨，触发特定对话图",
+    "displayName": "NPC来电"
+  },
+  "npcRemoveBuff": {
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "staticId",
+      "buffId"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "desc": "指定staticId对象移除buff",
+    "displayName": "指定staticId对象移除buff"
+  },
+  "onPlayerPositionReset": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "重置玩家坐标的回调",
+    "displayName": "玩家重置坐标"
+  },
+  "onPoiResult": {
+    "refData": [
+      {},
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramName": [
+      "地图标记类型",
+      "地图标记ID",
+      "是否成功(1成功，0失败)"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "地图标记类型",
+      "地图标记ID",
+      "是否成功"
+    ],
+    "desc": "判定poi是否成功。成功会根据地图大点的发奖信息发奖，失败则结束",
+    "displayName": "判定poi是否成功"
+  },
+  "openActiveDungeon": {
+    "paramName": [
+      "活动id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "活动ID"
+    ],
+    "desc": "打开多人头目挑战玩法",
+    "displayName": "【新】裂隙调查"
+  },
+  "openAreaInfo": {
+    "paramName": [
+      "区域id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "区域id"
+    ],
+    "desc": "自动打开地图，切到全局层，并选中此区域",
+    "displayName": "自动打开地图，切到全局层，并选中此区域"
+  },
+  "openChat": {
+    "paramName": {},
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "页签ID"
+    ],
+    "desc": "特训跳转好友列表",
+    "displayName": "打开好友列表页签"
+  },
+  "openChest": {
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "开启宝箱",
+    "displayName": "开启宝箱"
+  },
+  "openEnvObj": {
+    "eventFlag": "s",
+    "useMask": 8,
+    "displayName": "打开场景物件"
+  },
+  "openHomeBuildTab": {
+    "paramName": [
+      "大类id",
+      "小类id或不配"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "大类id",
+      "小类id或不配"
+    ],
+    "desc": "仅能在家园场景内使用",
+    "displayName": "打开家园内建造界面对应大类/小类tab"
+  },
+  "openHugPetSelectPanel": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "打开抱宠选宠界面",
+    "displayName": "打开抱宠选宠界面"
+  },
+  "openMapFocusPoint": {
+    "eventFlag": "c",
+    "paramTooltip": [
+      "追踪点编号",
+      "场景id"
+    ],
+    "displayName": "打开地图指定追踪点",
+    "paramType": {}
+  },
+  "openMultiplayerInstance": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "篝火椅子交互开启多人位面",
+    "displayName": "篝火椅子交互开启多人位面"
+  },
+  "openNourish": {
+    "paramName": [
+      "区域id（即原来的小区块）"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "区域id（即原来的小区块）"
+    ],
+    "desc": "打开滋养界面",
+    "displayName": "打开滋养界面"
+  },
+  "openPic": {
+    "paramType": [
+      [
+        "S"
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        "图片资源名"
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "图片资源名",
+      "图片资源名"
+    ],
+    "desc": "打开图片",
+    "displayName": "打开图片"
+  },
+  "openPicEx": {
+    "paramType": [
+      [
+        [
+          "S"
+        ]
+      ],
+      "S"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        [
+          "图片资源名"
+        ]
+      ],
+      "额外的参数"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "图片资源名",
+      "图片资源名"
+    ],
+    "desc": "打开图片（可单独使用）",
+    "displayName": "打开图片（可单独使用）"
+  },
+  "openRechargeRebate": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "打开测试奖励领取网页",
+    "displayName": "打开测试奖励领取网页"
+  },
+  "openSpecialTrainAndTraceType": {
+    "refData": [
+      [
+        "Data.special_train_type_data",
+        [
+          "$L#typeId"
+        ]
+      ]
+    ],
+    "paramName": [
+      "特训任务类型ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "特训任务类型ID(1必修2联结之路3探索之路4胜利之路5璀璨之路)"
+    ],
+    "desc": "打开特训计划系统界面，找到对应任务类型页签并切换；\n主hud上tab切换到特训页签，自动追踪对应页签排序最高的第一个未完成任务。",
+    "displayName": "打开特训并切换页签追踪指定章节"
+  },
+  "openStreamForceBind": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "打开steam邮箱绑定",
+    "displayName": "打开steam邮箱绑定"
+  },
+  "openTaskChapter": {
+    "paramName": [
+      "章节id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "章节id"
+    ],
+    "displayName": "打开任务面板并定位至所选章节",
+    "paramType": [
+      "I"
+    ]
+  },
+  "openUI": {
+    "paramType": [
+      "I",
+      "Elua",
+      "Elua"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "界面ID",
+      "参数1（可选）",
+      "参数2（可选）"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "界面id",
+      "参数1",
+      "参数2"
+    ],
+    "desc": "打开指定UI",
+    "displayName": "打开指定UI"
+  },
+  "openUISuper": {
+    "paramType": [
+      "I",
+      [
+        [
+          "S",
+          "Elua"
+        ]
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "界面ID",
+      [
+        [
+          "字段名",
+          "参数"
+        ]
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "界面id",
+      "{{字段名,参数},{字段名,参数}}"
+    ],
+    "desc": "打开指定UI并对应到具体的参数",
+    "displayName": "打开指定UI"
+  },
+  "petBallBreed": {
+    "useMask": 4,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "繁育配置id"
+    ],
+    "desc": "调宠乐球繁育配置",
+    "displayName": "宠乐球繁育配置"
+  },
+  "petBallExercise": {
+    "useMask": 4,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "锻炼配置id"
+    ],
+    "desc": "调宠乐球锻炼配置",
+    "displayName": "宠乐球锻炼配置"
+  },
+  "petBallFeed": {
+    "useMask": 4,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "喂食配置id"
+    ],
+    "desc": "调宠乐球喂食配置",
+    "displayName": "宠乐球喂食配置"
+  },
+  "petEggHatch": {
+    "eventFlag": "s",
+    "paramTooltip": [
+      "range",
+      "speed"
+    ],
+    "desc": "孵化",
+    "displayName": "孵化"
+  },
+  "petExp": {
+    "eventFlag": "s",
+    "paramTooltip": [
+      "【服务器专用】"
+    ],
+    "desc": "获得帕蒙经验（指定帕蒙）",
+    "displayName": "获得帕蒙经验（指定帕蒙）"
+  },
+  "petExpCurPrepareList": {
+    "eventFlag": "s",
+    "paramTooltip": [
+      "经验值"
+    ],
+    "desc": "获得帕蒙经验（当前出战列表）",
+    "displayName": "获得帕蒙经验（当前出战列表）"
+  },
+  "petTraitStateSet": {
+    "refData": [
+      [
+        "Data.pet_trait_data",
+        {}
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "宠物特征配置表Id",
+      "宠物特征序号Id",
+      "可见性"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠物特征配置表Id",
+      "宠物特征序号Id",
+      "可见性"
+    ],
+    "desc": "可见性：0隐藏   1显示线索     2完全显示。   此可见性只能往大了设，禁止回退",
+    "displayName": "解锁特性条目"
+  },
+  "petTraitStateSetClient": {
+    "refData": [
+      [
+        "Data.pet_trait_data",
+        {}
+      ],
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramName": [
+      "宠物特征配置表Id",
+      "宠物特征序号Id",
+      "可见性"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠物特征配置表Id",
+      "宠物特征序号Id",
+      "可见性"
+    ],
+    "desc": "可见性：0隐藏   1显示线索     2完全显示。   此可见性只能往大了设，禁止回退",
+    "displayName": "解锁特性条目"
+  },
+  "petTriggerCurPrepareList": {
+    "useMask": 2,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "经验值"
+    ],
+    "desc": "触发通用条件（当前出战列表）",
+    "displayName": "触发通用条件（当前出战列表）"
+  },
+  "playAction": {
+    "paramName": [
+      "互动动作ID1,互动动作ID2"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "动作表ID列表"
+    ],
+    "desc": "可配置多个，随机播放一个",
+    "displayName": "播放互动动作"
+  },
+  "playCameraShake": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "震动ID",
+      "Static ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "震动ID",
+      "StaticId"
+    ],
+    "desc": "相机震屏事件",
+    "displayName": "相机震屏事件"
+  },
+  "playCutscene": {
+    "paramName": [
+      "cutscene资源名"
+    ],
+    "paramType": [
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "资源resId"
+    ],
+    "desc": "以玩家为单位播放cutscene",
+    "displayName": "播放cutscene"
+  },
+  "playCutsceneByStaticId": {
+    "paramType": [
+      "S",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "cutscene资源名",
+      "staticId",
+      "是否隐藏自身（1隐藏 0或不填不隐藏）"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "资源resId，staticId，是否隐藏自身（1隐藏 0或不填不隐藏）"
+    ],
+    "desc": "需要一个StaticId，以他为单位播放cutscene",
+    "displayName": "以Static为目标播放cutscene"
+  },
+  "playCutsceneSelf": {
+    "useMask": 8,
+    "paramName": [
+      "cutscene资源名",
+      "是否隐藏自身（1隐藏 0或不填不隐藏）"
+    ],
+    "paramType": [
+      "S",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "资源resId"
+    ],
+    "desc": "以执行者自身为单位播放cutscene",
+    "displayName": "执行者自身播放cutscene"
+  },
+  "playDialogueGraph": {
+    "hasCallback": 1,
+    "levelOrDungeonUse": 1,
+    "triggerParam": [
+      "UNLOCK_DIALOGUE_GRAPH",
+      "$1",
+      0,
+      ">=",
+      1
+    ],
+    "paramType": [
+      "I"
+    ],
+    "desc": "播放对话图",
+    "refData": [
+      [
+        "Editor.Data.dialogue_graph_editor_data",
+        [
+          "$L#desc"
+        ]
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "对话图ID"
+    ],
+    "displayName": "播放对话图",
+    "paramName": [
+      "对话图ID"
+    ]
+  },
+  "playDialogueGraphRepeat": {
+    "hasCallback": 1,
+    "levelOrDungeonUse": 1,
+    "paramType": [
+      "I"
+    ],
+    "desc": "播放对话图。若未播放完成，上线会自动重播",
+    "refData": [
+      [
+        "Editor.Data.dialogue_graph_editor_data",
+        [
+          "$L#desc"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "对话图ID"
+    ],
+    "displayName": "播放对话图（自动重播）",
+    "paramName": [
+      "对话图ID"
+    ]
+  },
+  "playDialoguePro": {
+    "refData": [
+      [
+        "Data.dialogue_data",
+        [
+          "$L#desc"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "脚本动画ID"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "脚本动画ID"
+    ],
+    "desc": "播放脚本动画",
+    "displayName": "【已废弃】播放脚本动画"
+  },
+  "playEffect": {
+    "paramName": [
+      "特效ID"
+    ],
+    "paramType": [
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "特效ID"
+    ],
+    "desc": "播放特效",
+    "displayName": "播放特效"
+  },
+  "playEffectOn": {
+    "paramName": [
+      "特效ID",
+      "staticID"
+    ],
+    "paramType": [
+      "S",
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "特效ID",
+      "staticID"
+    ],
+    "desc": "在指定Entity上播放特效",
+    "displayName": "在指定Entity上播放特效"
+  },
+  "playEffectOnRandom": {
+    "paramName": [
+      "{effectKey1,effectKey2}",
+      "npcStaticId"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "{effectKey1,effectKey2}",
+      "npcStaticId"
+    ],
+    "displayName": "NPC随机播放特效",
+    "paramType": [
+      "Elua",
+      "I"
+    ]
+  },
+  "playFlute": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "偶遇笛子吹笛",
+    "displayName": "吹笛"
+  },
+  "playRogueExchangeNpcEffect": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "播放携带物兑换NPC特效",
+    "displayName": "播放携带物兑换NPC特效"
+  },
+  "playSound": {
+    "paramType": [
+      [
+        "S"
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        "音效资源名"
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "音效资源名",
+      "音效资源名"
+    ],
+    "desc": "播放音效",
+    "displayName": "播放音效"
+  },
+  "playVideo": {
+    "paramType": [
+      "S"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "视频资源名"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "视频资源名"
+    ],
+    "desc": "播放视频",
+    "displayName": "播放视频"
+  },
+  "playerInteract": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "面对面打开社交面板",
+    "displayName": "面对面打开社交面板"
+  },
+  "preStartRift": {
+    "paramName": [
+      "裂隙NPCid"
+    ],
+    "paramType": [
+      "Elua"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "裂隙NPCid"
+    ],
+    "desc": "打开对应NPC的裂隙玩法准备界面",
+    "displayName": "打开裂隙玩法"
+  },
+  "puppetSwitchCamp": {
+    "levelOrDungeonUse": 1,
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_entity_data",
+        [
+          "$L#editorShowName",
+          "$L#idInType",
+          "$L#sandboxId"
+        ]
+      ]
+    ],
+    "refSelectData": [
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "desc": "来回切换npc阵营 友善 / 敌对",
+    "eventFlag": "s",
+    "paramTooltip": [
+      "npc的staticId",
+      "目标阵营 0怪物1NPC"
+    ],
+    "displayName": "切换npc阵营",
+    "paramName": [
+      "Static ID",
+      "阵营(0敌1友)"
+    ]
+  },
+  "questClueReveal": {
+    "paramName": [
+      "线索id",
+      "状态(1揭示，0取消揭示)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "线索id",
+      "状态(1揭示，0取消揭示)"
+    ],
+    "displayName": "揭示或取消揭示任务线索",
+    "paramType": [
+      "I",
+      "I"
+    ]
+  },
+  "questManualJump": {
+    "refData": [
+      {},
+      [
+        [
+          "Data.quest_base",
+          [
+            "$L#groupId"
+          ]
+        ],
+        [
+          "Data.quest_main",
+          [
+            "$L#sectionId"
+          ]
+        ]
+      ]
+    ],
+    "paramName": [
+      "类型(1任务2线索）",
+      "幕ID或线索组ID(elua)"
+    ],
+    "paramType": [
+      "I",
+      "Elua"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "类型(1任务2线索）",
+      "幕ID或线索组ID(elua)"
+    ],
+    "desc": "参数1类型：1任务2线索\n参数2幕ID或线索组ID；执行后会尝试找到配置的ID，打开任务手册跳转到对应页签，并定位到配置内容的首条内容；",
+    "displayName": "打开任务手册并跳转到指定幕任务/线索"
+  },
+  "questManualJumpAndTrace": {
+    "refData": [
+      [
+        "Data.quest_main",
+        [
+          "$L#sectionId"
+        ]
+      ]
+    ],
+    "paramName": [
+      "幕ID"
+    ],
+    "paramType": [
+      "Elua"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "幕ID（elua）"
+    ],
+    "desc": "执行后会尝试找到配置的ID，打开任务手册跳转到对应页签，并定位到配置内容的首条内容；\n自动追踪配置elua内的第一个未完成任务；主hud上tab切换到对应任务的存储页签；",
+    "displayName": "打开任务手册并强制追踪指定任务"
+  },
+  "quickEnterControlMode": {
+    "paramType": [
+      "Elua",
+      "Elua",
+      "Elua",
+      "Elua",
+      "Elua",
+      "Elua"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "宠物基础模板ID",
+      "基础形态宠物ID",
+      "宠物家族ID",
+      "形态词缀ID",
+      "进化阶段",
+      "稀有标签"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "宠物基础模板ID",
+      "基础形态宠物ID",
+      "宠物家族ID",
+      "形态词缀ID",
+      "进化阶段",
+      "稀有标签"
+    ],
+    "desc": "宠物家族、基础形态宠物、宠物模板ID三者仅需要填写一个；如都填写了优先按基础模板>基础形态宠物>家族来匹配；形态词缀ID，进化阶段，稀有标签均可不填；\n宠物基础模板ID：id\n基础形态宠物：baseFormPet\n家族：ethnicGroup\n形态词缀：formName\n进化阶段：stage\n稀有标签：label(NPC表）找到玩家在探索背包内可用的全部符合条件的伊莫，然后进行优先级排序：优先级：战力>稀有标签>形态词缀>等级>进化阶段；进行联结提示；- 玩家点击确认后，会替换掉当前编队中4号出战位的宠物，并选中该入队宠物进入联结状态；",
+    "displayName": "伊莫快速联结提示"
+  },
+  "quitSeamless": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "无缝方式退出位面，确保当前场景有mainScene的配置",
+    "displayName": "无缝方式退出位面"
+  },
+  "quitSpace": {
+    "levelOrDungeonUse": 3,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "离开当前场景，回到最后一次离开大世界时所在位置",
+    "displayName": "离开场景"
+  },
+  "quizAgain": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "重答当前题目",
+    "displayName": "重答当前题目"
+  },
+  "quizResult": {
+    "paramName": [
+      "结果（1成功，0失败）"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "结果（1成功，0失败）"
+    ],
+    "desc": "执行结果为直接进入答题最终判定",
+    "displayName": "判定答题结果"
+  },
+  "quizStart": {
+    "paramName": [
+      "答题配置表id",
+      "是否切回人型（不配为切回，1为不变）"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "答题配置表id",
+      "是否切回人型（不配为切回，1为不变）"
+    ],
+    "desc": "开始单人答题",
+    "displayName": "开始单人答题"
+  },
+  "receiveMail": {
+    "refData": [
+      [
+        "Data.mail_data",
+        [
+          "$L#title"
+        ]
+      ]
+    ],
+    "paramName": [
+      "邮件配置id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "mailConfigId"
+    ],
+    "desc": "收到一封邮件",
+    "displayName": "收到邮件"
+  },
+  "recover": {
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "禁止弹界面提示"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "恢复",
+    "displayName": "恢复"
+  },
+  "recoverAllPets": {
+    "levelOrDungeonUse": 1,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "恢复谜灵管理系统内所有宠物",
+    "displayName": "恢复谜灵管理系统内所有宠物"
+  },
+  "refreshOperationHint": {
+    "eventFlag": "c",
+    "desc": "刷新HUD操作提示",
+    "displayName": "刷新HUD操作提示"
+  },
+  "refreshPetSkillSwap": {
+    "paramName": [
+      [
+        "宠物1id",
+        "宠物2id"
+      ],
+      [
+        "宠物1旧技能id",
+        "宠物2旧技能id"
+      ],
+      [
+        "宠物1新技能id",
+        "宠物2新技能id"
+      ]
+    ],
+    "paramType": [
+      "Elua",
+      "Elua",
+      "Elua"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      [
+        "宠物1id",
+        "宠物2id"
+      ],
+      [
+        "宠物1旧技能id",
+        "宠物2旧技能id"
+      ],
+      [
+        "宠物1新技能id",
+        "宠物2新技能id"
+      ]
+    ],
+    "desc": "完成主线升级XY必杀技",
+    "displayName": "技能替换"
+  },
+  "regionSwitch": {
+    "paramName": [
+      "映射区id",
+      "开关状态( 0关闭、1开启)"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "映射区id",
+      "开关（0关闭，1打开）"
+    ],
+    "desc": "开启或关闭映射区",
+    "displayName": "映射区开关"
+  },
+  "registerCustomTrigger": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "条件id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "条件id"
+    ],
+    "desc": "条件定义在条件触发表中。仅支持条件用途类型10，默认不监听，注册后条件开始监听",
+    "displayName": "注册自定义条件"
+  },
+  "registerNpcDialogueBubble": {
+    "paramName": [
+      "staticId",
+      "对白id",
+      "是否高优先级"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticId",
+      "对白id",
+      "是否高优先级"
+    ],
+    "desc": "修改NPC动态气泡",
+    "displayName": "修改NPC动态气泡"
+  },
+  "releaseControlMode": {
+    "levelOrDungeonUse": 3,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "解除强制附身状态",
+    "displayName": "释放强制附身"
+  },
+  "removeBuff": {
+    "refData": [
+      [
+        "Common.Data.SkillBPData.buff_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "buffid"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "buffId"
+    ],
+    "desc": "玩家移除指定buff",
+    "displayName": "玩家移除buff"
+  },
+  "removeBuffByEnvObj": {
+    "useMask": 8,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "偏移坐标{x,y,z}",
+      "buff影响半径",
+      "{符合宝宝标准templateId}",
+      "buffID"
+    ],
+    "desc": "特定envobj销毁后，在影响半径内对符合标准的templateID移除buff",
+    "displayName": "销毁envobj时移除buffID"
+  },
+  "removeCurPetBuff": {
+    "refData": [
+      [
+        "Common.Data.SkillBPData.buff_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "buffid"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "buffId"
+    ],
+    "desc": "玩家移除当前宠物buff",
+    "displayName": "玩家移除当前宠物buff"
+  },
+  "removePetBuffByTemplateId": {
+    "refData": [
+      [
+        "Common.Data.SkillBPData.buff_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "buffId",
+      "templateId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "buffId",
+      "templateId"
+    ],
+    "desc": "玩家根据id移除当前宠物buff",
+    "displayName": "玩家根据id移除当前宠物buff"
+  },
+  "removeTagByNpcStaticId": {
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "Static ID",
+      "Tag"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "S"
+    ],
+    "desc": "给指定 Static ID 的对象移除 Tag",
+    "displayName": "给指定 Static ID 的对象移除Tag"
+  },
+  "replyFluteNotify": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "收到笛子推送AI助手",
+    "displayName": "收到笛子推送AI助手"
+  },
+  "reportUpload": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "帕蒙捕捉汇报",
+    "displayName": "帕蒙捕捉汇报"
+  },
+  "resetActivityRewardCounts": {
+    "paramName": [
+      "活动ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "活动ID"
+    ],
+    "desc": "把玩家的活动奖励次数重置清零",
+    "displayName": "活动奖励次数重置"
+  },
+  "resetBGM": {
+    "paramType": {},
+    "levelOrDungeonUse": 1,
+    "paramName": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "重置BGM",
+    "displayName": "重置BGM"
+  },
+  "resetNpcContent": {
+    "levelOrDungeonUse": 1,
+    "paramType": [
+      "I"
+    ],
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_entity_data",
+        [
+          "$L#editorShowName",
+          "$L#idInType",
+          "$L#sandboxId"
+        ]
+      ],
+      {}
+    ],
+    "refSelectData": [
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "desc": "设置NPC特殊状态",
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticId"
+    ],
+    "displayName": "设置NPC特殊状态",
+    "paramName": [
+      "staticId"
+    ]
+  },
+  "resetPlayerCamera": {
+    "levelOrDungeonUse": 1,
+    "paramName": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "重置玩家摄像机",
+    "displayName": "重置玩家摄像机"
+  },
+  "resetTimerTxt": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "重置计时器目标显示",
+    "displayName": "重置计时器目标显示"
+  },
+  "resetTmpPetTeam": {
+    "paramType": {},
+    "levelOrDungeonUse": 3,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "重置玩家队伍为玩家自设的状态",
+    "displayName": "重置玩家队伍"
+  },
+  "rogueStartBattle": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "玩家交互后进行怪物的整体刷新",
+    "displayName": "捉宠爬塔-开始游戏（怪物刷新）"
+  },
+  "sendAIEvent": {
+    "paramType": [
+      "I",
+      "Elua",
+      "S"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "Static ID",
+      "参数",
+      "(可选)suffix"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "NPC 的 Static ID",
+      "事件参数，用大括号包裹",
+      "suffix"
+    ],
+    "desc": "向指定Entity的行为触发蓝图传递事件（使用CommonClientMsgTrigger接收）",
+    "displayName": "触发AI事件"
+  },
+  "sendArkReward": {
+    "paramName": [
+      "ark奖励Id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "ark奖励Id"
+    ],
+    "displayName": "ARK发奖励",
+    "paramType": [
+      "I"
+    ]
+  },
+  "sendChatToExchangeOwner": {
+    "paramName": [
+      "聊天推送 ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "聊天推送 id"
+    ],
+    "desc": "选择聊天推送消息",
+    "displayName": "给交换前主人发消息"
+  },
+  "sendCustomLog": {
+    "paramName": [
+      "logName",
+      "logParam"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "日志类型",
+      "日志参数"
+    ],
+    "displayName": "发送埋点日志",
+    "paramType": [
+      "S",
+      "Elua"
+    ]
+  },
+  "sendGroupSingPuzzleEvent": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "levelItemId",
+      "state"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "levelItemId",
+      "state"
+    ],
+    "desc": "ARK发送艺宠玩法事件   state: 1 开始 2关闭 3播放演出",
+    "displayName": "ARK发送艺宠玩法事件"
+  },
+  "setAreaPetState": {
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "区域id（即原来的小区块）",
+      "宠物形态原型id",
+      "状态(0未知，1见过，2已获得)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "区域id（即原来的小区块）",
+      "宠物形态原型id",
+      "状态(0未知，1见过，2已获得)"
+    ],
+    "desc": "激活指定区域的某种宠物，使之显示为已收集",
+    "displayName": "激活指定区域的某个宠物，使之显示为已收集"
+  },
+  "setBGM": {
+    "paramType": [
+      "S"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "bgm资源名"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "bgm资源名"
+    ],
+    "desc": "设置BGM，不存盘",
+    "displayName": "设置BGM"
+  },
+  "setBadgeState": {
+    "paramName": [
+      "徽章id",
+      "状态(0隐藏1线索2完全显示3达成)",
+      "是否强制(0不强制1强制)"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "徽章id",
+      "状态(0隐藏1线索2完全显示3达成)",
+      "是否强制(0不强制1强制)"
+    ],
+    "desc": "改变徽章状态",
+    "displayName": "改变徽章状态"
+  },
+  "setBanNpcFunc": {
+    "refData": [
+      [
+        [
+          "Data.puppet_data",
+          [
+            "$L#name"
+          ]
+        ],
+        [
+          "$B"
+        ],
+        {}
+      ]
+    ],
+    "paramType": [
+      [
+        "I",
+        "I",
+        [
+          [
+            "I"
+          ]
+        ]
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        "NpcId",
+        "是否关闭功能",
+        [
+          [
+            "功能id"
+          ]
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": "{{aNpcId,是否关闭功能,{功能id，功能id}}，{bNpcId，是否关闭功能，{功能id，功能id}}} ",
+    "desc": "（1为关闭功能，0为恢复开启功能）",
+    "displayName": "设置NPC功能"
+  },
+  "setCameraFilters": {
+    "refData": [
+      [
+        [
+          "$B"
+        ],
+        {}
+      ]
+    ],
+    "paramType": [
+      [
+        "I",
+        "I"
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        "打开1/关闭0",
+        "滤镜资源名"
+      ]
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "{打开/关闭,滤镜资源名}"
+    ],
+    "desc": "打开或者关闭指定滤镜",
+    "displayName": "设置滤镜"
+  },
+  "setCurPetVisible": {
+    "paramName": [
+      "开关状态(0关闭，1开启)"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "开关状态（0关闭，1开启）"
+    ],
+    "desc": "设置玩家当前是否能招出出战宠物跟随",
+    "displayName": "开关玩家宠物跟随"
+  },
+  "setCustomVariable": {
+    "refData": [
+      [
+        "Common.Data.custom_variable_data",
+        [
+          "name"
+        ]
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "变量Id",
+      "设定的值"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "变量id，设定的值"
+    ],
+    "desc": "设置自定义变量",
+    "displayName": "设置自定义变量"
+  },
+  "setFlowerState": {
+    "paramName": [
+      "花的staticId",
+      "状态id",
+      "是否强制(0不强制，1强制，默认为0)",
+      "绽放类型（1自动触发2滋养）"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "desc": "{ 花的staticId , 状态id , 是否强制（0不强制，1强制，默认为0）,绽放类型}",
+    "displayName": "设置地脉花状态"
+  },
+  "setFlowerStateSelf": {
+    "paramName": [
+      "状态id",
+      "是否强制(0不强制，1强制，默认为0)",
+      "绽放类型（1自动触发2滋养）"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "desc": "{ 状态id , 是否强制（0不强制，1强制，默认为0）,绽放类型}",
+    "displayName": "设置当前地脉花状态"
+  },
+  "setFunctionUnlock": {
+    "refData": [
+      [
+        "Data.func_index_config_data",
+        {}
+      ],
+      {}
+    ],
+    "paramType": [
+      "S",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "功能名",
+      "开关状态( -1已屏蔽、0已锁定、1已解锁)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "功能名，开关状态（ -1",
+      "--已屏蔽    0",
+      "--已锁定   1",
+      "--已解锁）"
+    ],
+    "desc": "设置功能状态",
+    "displayName": "设置功能状态"
+  },
+  "setGhostFollow": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "s",
+    "paramTooltip": [
+      "状态：0=隐藏，1=显示"
+    ],
+    "desc": "死亡复活幽灵状态",
+    "displayName": "死亡复活幽灵状态"
+  },
+  "setHomeFacilitySkipNextState": {
+    "paramName": [
+      "家具id",
+      "下阶段id/0不检查"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "家具id",
+      "下阶段id/0不检查"
+    ],
+    "desc": "第一个参数表示家具templateId，第二个参数表示nextStateCheck下一阶段检查，假如配置了会检查下一阶段是否是配置的阶段，如果匹配才进行跳过，如果第二个参数不配或者配成0就表示不进行检查直接进行跳过",
+    "displayName": "将家具生产过程直接跳转至下结算"
+  },
+  "setInSocialArea": {
+    "paramName": [
+      "状态：0=不在，1=在",
+      "区域ID"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "状态：0=不在，1=在",
+      "区域ID"
+    ],
+    "desc": "是否进入社交聚集区域",
+    "displayName": "是否进入社交聚集区域"
+  },
+  "setLocalTime": {
+    "refData": [
+      [
+        "Data.Quest.quest_base",
+        [
+          "$L#title"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "时",
+      "分"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "时",
+      "分"
+    ],
+    "desc": "设置盖亚时间，从而自动加载对应的昼夜效果",
+    "displayName": "设置盖亚时间"
+  },
+  "setLockTargetEnable": {
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "开关强锁功能(0关闭，1开启)"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "控制强锁功能的开启关闭，0关闭，1开启",
+    "displayName": "开关强锁功能"
+  },
+  "setMarkState": {
+    "refData": [
+      [
+        [
+          {},
+          {},
+          {}
+        ]
+      ],
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramType": [
+      [
+        [
+          "I",
+          "I",
+          "I"
+        ]
+      ],
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        [
+          "地图",
+          "功能类型",
+          "标记id"
+        ]
+      ],
+      "状态（0隐 1灰 2绿 3绿打勾）",
+      "是否强制"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{{地图,类型,id1},{地图,类型,id2},{地图,类型,id3},{地图,类型,id4}}",
+      "状态",
+      "是否强制"
+    ],
+    "desc": "-- 地图标记状态\n0, --隐藏 1, --灰色 2, --绿色 3, --绿色对勾\n 强制=1表示直接set，0或空为执行时状态只能往大了设，禁止回退",
+    "displayName": "设置地图标记状态(废弃)"
+  },
+  "CreateStumpPuppet": {
+    "eventFlag": "c",
+    "desc": "创建木桩",
+    "displayName": "创建木桩"
+  },
+  "accQuest": {
+    "refData": [
+      [
+        "Data.Quest.quest_base",
+        [
+          "$L#title"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "任务id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "请慎重使用事件接取任务，因为这有可能会绕过对任务接取条件的检查，请考虑在对应的任务上使用可领取条件 - Trigger 来接取任务"
+    ],
+    "desc": "接取任务，需判断任务接取条件，不通过则返回失败",
+    "displayName": "接取任务"
+  },
+  "acceptHornNotify": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "偶遇号角确认匹配",
+    "displayName": "偶遇号角确认匹配"
+  },
+  "actPutFireworks": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "活动放烟花",
+    "paramName": {}
+  },
+  "activateLeylineTreePoint": {
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "staticId1",
+      "staticId2",
+      "staticId3"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticId点位列表"
+    ],
+    "desc": "激活地脉树点位图",
+    "displayName": "激活地脉树点位图"
+  },
+  "activateRobEggUnderGroudPlace": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "激活抢蛋地宫终点传送门",
+    "paramName": {}
+  },
+  "activeBadgeSubType": {
+    "paramName": [
+      "大类id",
+      "小类id"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "大类id",
+      "小类id"
+    ],
+    "desc": "执行此事件时，会一并激活小类所在的大类，以及徽章功能页",
+    "displayName": "开启徽章小类"
+  },
+  "activeLeylineTree": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "地脉树ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "地脉树ID"
+    ],
+    "desc": "激活地脉树，稍后打开地脉树界面+地脉树相关动画",
+    "displayName": "激活地脉树"
+  },
+  "setNpcContentSelf": {
+    "levelOrDungeonUse": 1,
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "desc": "设置NPC自身特殊状态",
+    "useMask": 8,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "特殊状态id"
+    ],
+    "displayName": "设置NPC自身特殊状态",
+    "paramName": [
+      "特殊状态id"
+    ]
+  },
+  "setNpcDuelState": {
+    "paramName": [
+      "NPC对决id",
+      " 状态值"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "NPC对决id",
+      " 状态值"
+    ],
+    "desc": "用于打开默认关闭的NPC对决玩法, state=1为开启",
+    "displayName": "设置NPC对决状态"
+  },
+  "setNpcInfo": {
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "NpcId",
+      "状态(0隐藏1显示)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "npcid",
+      "状态"
+    ],
+    "desc": "设置npc显示状态。可显示或隐藏名称和挂接特效。状态：0为隐藏，1为显示",
+    "displayName": "设置NPC名称显示"
+  },
+  "setNpcPosition": {
+    "paramType": [
+      "I",
+      "V3",
+      "V3"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "Static ID",
+      "NPC存盘位置",
+      "NPC朝向"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticID",
+      "存盘位置",
+      "rotation"
+    ],
+    "desc": "设置NPC存盘位置，不会改变当前NPC位置，玩家重进sandbox时生效",
+    "displayName": "设置NPC存盘位置"
+  },
+  "setNpcRoute": {
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "路点id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "路点id"
+    ],
+    "desc": "设置NPC路点，小退能保留效果，大退重置",
+    "displayName": "设置NPC路点"
+  },
+  "setPetAppearance": {
+    "refData": [
+      [
+        "Data.pet_individuation_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "个性化条目ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "entityId",
+      "个性化条目Id"
+    ],
+    "desc": "强行set，将同type的条目变更为参数中的条目（宠物野怪entityId由客户端传）",
+    "displayName": "强制改变个性化条目"
+  },
+  "setPetCallFriend": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "宠物StaticID",
+      "进入/退出呼朋引伴(1/0)"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "staticId",
+      "进入/退出呼朋引伴(1/0)"
+    ],
+    "desc": "设置宝宝进入/退出呼朋引伴状态",
+    "displayName": "宝宝进出呼朋引伴"
+  },
+  "setPlayerRoute": {
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "路点id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "路点id"
+    ],
+    "desc": "设置玩家路点，小退能保留效果，大退重置",
+    "displayName": "设置玩家路点"
+  },
+  "setQuestPause": {
+    "refData": [
+      [
+        "Data.Quest.quest_base",
+        [
+          "$L#title"
+        ]
+      ],
+      [
+        "$B"
+      ]
+    ],
+    "paramName": [
+      "任务ID",
+      "状态(0正常1静止)"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "任务ID",
+      "静止状态(0正常1静止)"
+    ],
+    "desc": "将任务设置至无法更新流转的静止状态，当前通常与时间配合使用",
+    "displayName": "更新任务静止状态"
+  },
+  "autoFollow": {
+    "displayName": "自动发起跟随组队",
+    "eventFlag": "c"
+  },
+  "batchPlayDialogueGraph": {
+    "paramName": [
+      [
+        "dialogueIds"
+      ],
+      "isRandom"
+    ],
+    "paramType": [
+      [
+        "Elua"
+      ],
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "对话图组id",
+      "是否是随机顺序"
+    ],
+    "desc": "批量播放对话图",
+    "displayName": "批量播放对话图"
+  },
+  "blackScreen": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "黑幕id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "黑幕id"
+    ],
+    "desc": "插入黑幕/白幕",
+    "displayName": "插入黑幕"
+  },
+  "blackScreenTeleport": {
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "黑幕id((0是不黑幕))",
+      "x",
+      "y",
+      "z"
+    ],
+    "eventFlag": "c",
+    "paramType": [
+      "I",
+      "F",
+      "F",
+      "F"
+    ],
+    "desc": "黑幕传送指定点位",
+    "displayName": "黑幕传送指定点位"
+  },
+  "bossRushTeleport": {
+    "paramName": [
+      "目的地场景代号"
+    ],
+    "paramType": [
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "目的地场景代号"
+    ],
+    "desc": "目的地场景代号 可填内容：prepare、bossLeft、bossRight、bossMid、miniGameLeft、miniGameRight",
+    "displayName": "全息协战场景内传送"
+  },
+  "calCustomVariable": {
+    "refData": [
+      [
+        "Common.Data.custom_variable_data",
+        [
+          "name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "变量Id",
+      "运算值",
+      "算符（1~5对+-*/%）"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "变量id，运算值，运算符"
+    ],
+    "desc": "在自定义变量上执行简单自运算",
+    "displayName": "运算自定义变量"
+  },
+  "callGraph": {
+    "eventFlag": "s",
+    "paramTooltip": [
+      "蓝图名称"
+    ],
+    "desc": "调用蓝图",
+    "displayName": "调用蓝图"
+  },
+  "challengeDungeon": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "场景id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景ID"
+    ],
+    "desc": "挑战副本",
+    "displayName": "挑战副本-服务端"
+  },
+  "challengeDungeonBySelf": {
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "refDungeonSceneId"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "通过NPC传送副本",
+    "displayName": "根据副本改自身状态"
+  },
+  "challengeDungeonclient": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "场景id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "场景ID"
+    ],
+    "desc": "挑战副本",
+    "displayName": "挑战副本-客户端"
+  },
+  "changeMapLayerData": {
+    "paramName": [
+      "多层区Id",
+      "层级",
+      "局部区块"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "多层区Id",
+      "层级",
+      "局部区块"
+    ],
+    "desc": "改变玩家所在地图多层区域的位置",
+    "displayName": "改变玩家多层区域的位置"
+  },
+  "enterNpcDuelBattleRoom": {
+    "displayName": "开启NPC对决时判断开战条件",
+    "eventFlag": "c"
+  },
+  "enterRobEggDoor": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "进出抢蛋地图随机地宫的事件",
+    "paramName": {}
+  },
+  "enterSeamless": {
+    "paramName": [
+      "场景 ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "场景id"
+    ],
+    "desc": "无缝方式进入静态位面，确保前后2个场景的场景资源保持一致。以区域位置展开",
+    "displayName": "无缝方式进入静态位面"
+  },
+  "enterSeamlessDynamic": {
+    "paramName": [
+      "场景id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "场景id"
+    ],
+    "desc": "无缝方式进入动态位面，确保前后2个场景的场景资源保持一致。以玩家当前坐标为中心展开",
+    "displayName": "无缝方式进入动态位面"
+  },
+  "event_enterRobEggPvpArea": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "进入pvp事件",
+    "paramName": {}
+  },
+  "event_exitRobEggPvpArea": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "退出pvp事件",
+    "paramName": {}
+  },
+  "evolveItemConditionSet": {
+    "refData": [
+      [
+        "Data.pet_evolve_data",
+        {}
+      ],
+      {},
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramName": [
+      "宠物进化配置表Id",
+      "宠物进化序号Id",
+      "道具序号",
+      "可见性"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠物进化配置表Id",
+      "宠物进化序号Id",
+      "道具序号",
+      "可见性"
+    ],
+    "desc": "可见性：0隐藏   1显示线索     2完全显示。   此可见性只能往大了设，禁止回退",
+    "displayName": "设置进化需求道具条件显示状态"
+  },
+  "evolveNormalConditionSet": {
+    "refData": [
+      [
+        "Data.pet_evolve_data",
+        {}
+      ],
+      {},
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramName": [
+      "宠物进化配置表Id",
+      "宠物进化序号Id",
+      "条件序号",
+      "可见性"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠物进化配置表Id",
+      "宠物进化序号Id",
+      "条件序号",
+      "可见性"
+    ],
+    "desc": "可见性：0隐藏   1显示线索     2完全显示。   此可见性只能往大了设，禁止回退",
+    "displayName": "设置进化常规条件显示状态"
+  },
+  "evolveRouteConditionSet": {
+    "refData": [
+      [
+        "Data.pet_evolve_data",
+        {}
+      ],
+      {},
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramName": [
+      "宠物进化配置表Id",
+      "宠物进化序号Id",
+      "可见性"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠物进化配置表Id",
+      "宠物进化序号Id",
+      "可见性"
+    ],
+    "desc": "可见性：0隐藏   1显示虚影虚线     2完全显示。   此可见性只能往大了设，禁止回退",
+    "displayName": "设置进化链显示状态"
+  },
+  "exitNpcDuelDungeon": {
+    "displayName": "退出NPC对决",
+    "eventFlag": "s"
+  },
+  "fbAddBuff": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "buffId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "和宠物都添加指定buf"
+    ],
+    "desc": "人和宠物都添加指定buff",
+    "displayName": "添加指定buff"
+  },
+  "fbAddBuffByArgs": {
+    "paramType": [
+      "Elua",
+      "Elua"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "流派列表",
+      "星级列表"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "据参数添加buf"
+    ],
+    "desc": "根据参数添加buff",
+    "displayName": "根据参数添加buff"
+  },
+  "fbCreateSpawner": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "spawnerId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "定spawnerId创建spawner对"
+    ],
+    "desc": "指定spawnerId创建spawner对象",
+    "displayName": "创建spawner"
+  },
+  "fbDestroySpawner": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "spawnerId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "毁spawner",
+      "不触发死"
+    ],
+    "desc": "销毁spawner, 不触发死亡",
+    "displayName": "销毁spawner"
+  },
+  "fbForceEnterCombat": {
+    "paramType": {},
+    "levelOrDungeonUse": 2,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": [
+      "制玩家宠物和怪物进入战"
+    ],
+    "desc": "强制玩家宠物和怪物进入战斗",
+    "displayName": "强制玩家宠物和怪物进入战斗"
+  },
+  "fbForceLeaveCombat": {
+    "paramType": {},
+    "levelOrDungeonUse": 2,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": [
+      "制玩家宠物和怪物离开战"
+    ],
+    "desc": "强制玩家宠物和怪物离开战斗",
+    "displayName": "强制玩家宠物和怪物离开战斗"
+  },
+  "fbForceMorphlingPet": {
+    "paramType": {},
+    "levelOrDungeonUse": 2,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": [
+      "制变身为百变怪玩法里的魔弗"
+    ],
+    "desc": "强制变身为百变怪玩法里的魔弗灵",
+    "displayName": "强制附身魔弗灵"
+  },
+  "fbForceTmpPetTeam": {
+    "paramType": [
+      "I",
+      [
+        [
+          "I",
+          "I"
+        ]
+      ]
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "持续时间",
+      [
+        [
+          "队中位置",
+          "临时宠物Id"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "予玩家临时宠"
+    ],
+    "desc": "赋予玩家临时宠物, 不填id意味着清空大世界宠物",
+    "displayName": "赋予玩家临时宠物"
+  },
+  "fbLevelStart": {
+    "levelOrDungeonUse": 3,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "通知服务端当前sandbox中挑战开始",
+    "displayName": "通知服务端挑战开始"
+  },
+  "fbPetCastAbility": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "技能id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "定玩家宠物使用指定技"
+    ],
+    "desc": "指定玩家宠物使用指定技能",
+    "displayName": "玩家出战宠物使用指定技能"
+  },
+  "fbPlayerCastAbility": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "技能id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "制玩家使用指定技"
+    ],
+    "desc": "强制玩家使用指定技能",
+    "displayName": "玩家使用指定技能"
+  },
+  "fbRecoverAllPetHp": {
+    "paramType": [
+      "F"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "百分比"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "复所有玩家宠物指定百分比的血"
+    ],
+    "desc": "恢复所有玩家宠物指定百分比的血量",
+    "displayName": "恢复所有玩家宠物血量"
+  },
+  "fbRecoverPlayerHp": {
+    "paramType": [
+      "F"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "百分比"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "复所有玩家指定百分比的血"
+    ],
+    "desc": "恢复所有玩家指定百分比的血量",
+    "displayName": "恢复所有玩家血量"
+  },
+  "fbRemoveAllBuff": {
+    "paramType": {},
+    "levelOrDungeonUse": 2,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": [
+      "除的玩家所有buf"
+    ],
+    "desc": "清除的玩家所有buff",
+    "displayName": "清除的玩家所有buff"
+  },
+  "fbRemoveAllPetAllbuff": {
+    "paramType": {},
+    "levelOrDungeonUse": 2,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": [
+      "除所有宠物buf"
+    ],
+    "desc": "清除所有宠物buff",
+    "displayName": "清除所有宠物buff"
+  },
+  "fbRemoveBuff": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "buffId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "和宠物都移除指定buf"
+    ],
+    "desc": "人和宠物都移除指定buff",
+    "displayName": "清除指定buff"
+  },
+  "fbRemoveRogueBuffs": {
+    "paramType": [
+      "I",
+      "Elua",
+      "Elua"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "数量",
+      "流派列表",
+      "星级列表"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "据参数移除Buff"
+    ],
+    "desc": "根据参数移除buff",
+    "displayName": "根据参数移除buff"
+  },
+  "fbRogueAddPuppetBuff": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "buffId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "给Puppet添加Buff"
+    ],
+    "desc": "给Puppet添加Buff",
+    "displayName": "给Puppet添加Buff"
+  },
+  "fbRogueSendSomeReward": {
+    "paramType": {},
+    "levelOrDungeonUse": 2,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramTooltip": [
+      "放肉鸽奖"
+    ],
+    "desc": "发放肉鸽奖励",
+    "displayName": "发放肉鸽奖励"
+  },
+  "fbSelectBuff": {
+    "paramName": [
+      "超时时间",
+      "保底数量",
+      "保底流派",
+      "保底稀有度"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I",
+      "Elua",
+      "Elua"
+    ],
+    "displayName": "调用buff选择界面",
+    "levelOrDungeonUse": 2
+  },
+  "fbSelectBuffByArgs": {
+    "paramType": [
+      "Elua",
+      "Elua"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "流派列表",
+      "星级列表"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "据参数选择buf"
+    ],
+    "desc": "根据参数选择buff",
+    "displayName": "根据参数选择buff"
+  },
+  "fbSendBossChanllengeReward": {
+    "paramType": {},
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "dungeonId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "人玩法副本发放奖"
+    ],
+    "desc": "多人玩法副本发放奖励",
+    "displayName": "多人玩法副本发放奖励"
+  },
+  "fbShowChallengeSuccess": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "成功或失败(填1是成功)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "知客户端显示挑战结果U"
+    ],
+    "desc": "通知客户端显示挑战结果UI",
+    "displayName": "通知客户端显示挑战结果UI"
+  },
+  "fbShowStage": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "波次",
+      "总波次"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "示当前刷怪波"
+    ],
+    "desc": "显示当前刷怪波次",
+    "displayName": "显示当前刷怪波次"
+  },
+  "fbStartNewRogue": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "roguelikeId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "跳转至roguelikeid"
+    ],
+    "desc": "跳转至roguelikeId",
+    "displayName": "跳转至roguelikeId"
+  },
+  "fbTeleportEntity": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "staticId",
+      "传送点id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "指定staticId对象传送到指定传送点{portalId"
+    ],
+    "desc": "将指定staticId对象传送到指定传送点{portalId}",
+    "displayName": "根据staticId传送服务器entity"
+  },
+  "fbTeleportPlayer": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 2,
+    "paramName": [
+      "传送点id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "定同场景的其他传送点{portalId}进行传送行"
+    ],
+    "desc": "指定同场景的其他传送点{portalId}进行传送行为",
+    "displayName": "传送玩家"
+  },
+  "finishAIRemind": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "AI助手id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "AI助手ID"
+    ],
+    "desc": "结束AI助手提示",
+    "displayName": "结束AI助手提示"
+  },
+  "finishBehavior": {
+    "paramName": [
+      "Static ID",
+      "动作名"
+    ],
+    "paramType": [
+      "I",
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "StaticID",
+      "动作名"
+    ],
+    "desc": "让X停止播放Y动作",
+    "displayName": "停止播放指定动作"
+  },
+  "finishCourse": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "教学关卡id",
+      "是否显示UI"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "教学关卡id"
+    ],
+    "desc": "完成教学关卡",
+    "displayName": "完成教学关卡"
+  },
+  "finishEvolution": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "完成宠物进化进程",
+    "displayName": "完成宠物进化进程"
+  },
+  "finishGuide": {
+    "refData": [
+      [
+        "Data.guide_data",
+        {}
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "引导组id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "引导组ID"
+    ],
+    "desc": "完成引导组，该组引导次数+1",
+    "displayName": "完成引导"
+  },
+  "finishGuideStep": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "引导步骤id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "引导步骤ID"
+    ],
+    "desc": "完成该引导步骤",
+    "displayName": "完成引导步骤"
+  },
+  "fishingPhaseChange": {
+    "paramName": [
+      "当前阶段"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "当前的阶段"
+    ],
+    "desc": "当前的阶段",
+    "displayName": "BOSS捕捉阶段变化"
+  },
+  "fishingPhaseTime": {
+    "paramName": [
+      "已过秒数"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "配置5的整数倍"
+    ],
+    "desc": "每5秒为1单位",
+    "displayName": "BOSS捕捉玩法阶段计时"
+  },
+  "forceChangeCombatPet": {
+    "paramName": [
+      "开关状态(0关闭，1开启)"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "开关状态（0关闭，1开启）"
+    ],
+    "desc": "强制替换当前出战宠为新获得宠",
+    "displayName": "强制替换当前出战宠为新获得宠"
+  },
+  "forceControlMode": {
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "持续时间",
+      "临时宠物Id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "持续时间",
+      "临时宠物Id"
+    ],
+    "desc": "强制玩家与指定宠物（填-1用当前宠物）进入附身模式，期间玩家不能解除附身，也不能更换宠物",
+    "displayName": "强制附身战斗"
+  },
+  "forceEquipBattlePet": {
+    "paramName": [
+      "宠物id1",
+      "宠物id2",
+      "宠物id3",
+      "宠物id4"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{坑位1,坑位2,坑位3,坑位4}，填0的坑位表示不动"
+    ],
+    "desc": "强制装备指定宠物",
+    "displayName": "强制装备指定宠物"
+  },
+  "forceEvolveTeamPet": {
+    "paramName": [
+      "队伍编号",
+      "进化编号",
+      "是否播放进化动画（默认为1播放、0不播放）"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "队伍编号",
+      "进化编号",
+      "是否播放进化动画"
+    ],
+    "desc": "队伍编号= 0当前选择宠     1~4，对应队伍序列的宠\n进化编号=宠物进化配置表中的序号，有些宠物会有多个进化方向，填写表里的序号，比如1或是2\n是否播放进化动画：缺省为1，即播放           填0为不播",
+    "displayName": "强制进化携带中的宠物"
+  },
+  "forceNormalState": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "强制切换为普通状态",
+    "displayName": "强制切换玩家为普通状态"
+  },
+  "forceTmpPetTeam": {
+    "paramType": [
+      "I",
+      [
+        [
+          "I",
+          "I"
+        ]
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "持续时间",
+      [
+        [
+          "队中位置",
+          "临时宠物Id"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "持续时间",
+      "{{队中位置,临时宠物Id}}"
+    ],
+    "desc": "将指定队伍位置的队友改为指定的宠物，期间玩家无法编辑队伍",
+    "displayName": "强制设置队伍"
+  },
+  "forceTracedQuest": {
+    "paramName": [
+      "任务或任务组ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "任务或任务组ID"
+    ],
+    "desc": "事件配置任务组或任务ID，触发事件时，检查该任务组中是否有任务已接取未完成，且有任务在玩家的任务面板中；若是将hud追踪切换为在玩家任务面板已激活任务的追踪，并对任务发起一次V追踪行为；",
+    "displayName": "追踪指定ID任务"
+  },
+  "forceUninstAllPet": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "强制卸载当前队伍里的所有宠物",
+    "displayName": "强制卸载当前队伍里的所有宠物"
+  },
+  "getFruit": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "摘取果实，获得奖励，并退回状态1",
+    "displayName": "摘取地脉花果实"
+  },
+  "getItem": {
+    "refData": [
+      [
+        [
+          "Data.item_data",
+          [
+            "$L#itemName"
+          ]
+        ],
+        {}
+      ]
+    ],
+    "paramName": [
+      [
+        "道具id",
+        "道具数量"
+      ]
+    ],
+    "paramType": [
+      [
+        "I",
+        "I"
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{道具id,道具数量}"
+    ],
+    "desc": "获得道具(只能是货币【自动变化设定表】中的道具)",
+    "displayName": "获得道具"
+  },
+  "getReward": {
+    "refData": [
+      [
+        "Data.drop_data",
+        {}
+      ],
+      [
+        "$B"
+      ]
+    ],
+    "paramName": [
+      "奖励配置表ID",
+      "是否全屏(不填为否)"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "奖励配置表ID",
+      "是否全屏"
+    ],
+    "desc": "发放奖励，可选是否全屏，不填默认为非全屏",
+    "displayName": "发放奖励"
+  },
+  "getRiftReward": {
+    "paramName": [
+      "裂隙NPCid"
+    ],
+    "paramType": [
+      "Elua"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "裂隙NPCid"
+    ],
+    "desc": "领取对应NPC的裂隙玩法奖励",
+    "displayName": "领取裂隙奖励"
+  },
+  "getSpecialTrainNpcReward": {
+    "paramName": [
+      "0类别奖励/1徽章阶段",
+      "trainType/stageid"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "0=徽章阶段/1=类别奖励",
+      "stageid/trainType"
+    ],
+    "desc": "获得特训计划大类奖励",
+    "displayName": "获得特训计划大类奖励"
+  },
+  "getTrophy": {
+    "paramName": [
+      "奖杯id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "奖杯ID"
+    ],
+    "desc": "激活PS/XBOX奖杯",
+    "displayName": "激活PS/XBOX奖杯"
+  },
+  "goNextCatchRogue": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "玩家交互后传送到下一关关卡",
+    "displayName": "捉宠爬塔-通关传送门"
+  },
+  "goNextDungeonScene": {
+    "levelOrDungeonUse": 2,
+    "paramName": {},
+    "eventFlag": "c",
+    "paramType": {},
+    "desc": "需要配置副本肉鸽表中的createNpcList和referenceDungeonId字段来确认完后副本后放出的NPC及与NPC交互后的传送场景地址",
+    "displayName": "肉鸽副本传送"
+  },
+  "goodbye": {
+    "eventFlag": "c",
+    "levelOrDungeonUse": 1,
+    "desc": "结束本次交互，关闭交互界面",
+    "displayName": "关闭交互界面"
+  },
+  "grabEggCatchEggEnterArea": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "进入变蛋玩法区域",
+    "paramName": {}
+  },
+  "grabEggCatchEggExitArea": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "离开变蛋玩法区域",
+    "paramName": {}
+  },
+  "grabEggEnterRoom": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "抢蛋进入视野受限区域",
+    "displayName": "进入视野受限区域"
+  },
+  "grabEggEvacuationPointEnter": {
+    "paramName": [
+      "撤离点类型",
+      "撤离点ID"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "desc": "抢蛋撤离点进入区域",
+    "displayName": "抢蛋撤离点进入区域"
+  },
+  "grabEggEvacuationPointExit": {
+    "paramName": [
+      "撤离点类型",
+      "撤离点ID"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "desc": "抢蛋撤离点离开区域",
+    "displayName": "抢蛋撤离点离开区域"
+  },
+  "grabEggExitRoom": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "抢蛋离开视野受限区域",
+    "displayName": "离开视野受限区域"
+  },
+  "grabEggHatchCollectEgg": {
+    "eventFlag": "c",
+    "paramType": {},
+    "displayName": "孵化器领取",
+    "paramName": {}
+  },
+  "grabEggHatchEgg": {
+    "eventFlag": "c",
+    "paramType": {},
+    "displayName": "孵化器孵化",
+    "paramName": {}
+  },
+  "grabEggHatchRobEgg": {
+    "eventFlag": "c",
+    "paramType": {},
+    "displayName": "孵化器争夺",
+    "paramName": {}
+  },
+  "grabEggHighGrassEnter": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "抢蛋场景进入高草区域",
+    "displayName": "抢蛋场景进入高草区域"
+  },
+  "grabEggHighGrassExit": {
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "抢蛋场景离开高草区域",
+    "displayName": "抢蛋场景离开高草区域"
+  },
+  "changeNpcBehavior": {
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "staticId",
+      "行为树Id"
+    ],
+    "paramType": [
+      "I",
+      "S"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticId",
+      "行为树Id"
+    ],
+    "desc": "控制实体的行为树切换",
+    "displayName": "切换Npc行为树"
+  },
+  "changePetAppearance": {
+    "refData": [
+      [
+        "Data.pet_individuation_data",
+        [
+          "name"
+        ]
+      ],
+      [
+        "Data.pet_individuation_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "变化前的个性化条目ID",
+      "变化后的个性化条目ID"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "entityId",
+      "变化前的个性化条目Id，变化后的个性化条目Id"
+    ],
+    "desc": "检测是否具备变化前的个性化条目，变更为变化后的个性化条目（宠物野怪entityId由客户端传）",
+    "displayName": "特定情况下变更个性化条目"
+  },
+  "clearEmotionAction": {
+    "paramName": [
+      "toastID"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "需配置情绪移除时收到的toastID",
+    "displayName": "移除情绪图标"
+  },
+  "clearNpcVisibilityKey": {
+    "refData": [
+      [
+        [
+          [
+            "Common.Data.Scene.$B#SceneId.scene_entity_data",
+            [
+              "$L#editorShowName",
+              "$L#idInType",
+              "$L#sandboxId"
+            ]
+          ]
+        ]
+      ],
+      [
+        "Data.npc_visibility_param_key",
+        [
+          "description"
+        ]
+      ]
+    ],
+    "paramType": [
+      [
+        [
+          "I"
+        ]
+      ],
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        [
+          "NpcId"
+        ]
+      ],
+      "KeyId"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      [
+        [
+          "NpcId"
+        ]
+      ],
+      "KeyId"
+    ],
+    "desc": "清除NPC显隐key，清除后会根据NPC身上的剩余key来重新计算NPC显隐，如果没有key会默认显示该NPC",
+    "displayName": "清除NPC显隐key"
+  },
+  "clearSpawner": {
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        [
+          [
+            "Common.Data.Scene.$B#SceneId.scene_spawner_data",
+            {}
+          ]
+        ]
+      ],
+      [
+        "Data.spawner_visibility_param_key",
+        [
+          "description"
+        ]
+      ]
+    ],
+    "paramName": [
+      "SceneId",
+      [
+        [
+          "SpawnerId"
+        ]
+      ],
+      "KeyId"
+    ],
+    "paramType": [
+      "I",
+      [
+        [
+          "I"
+        ]
+      ],
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "SceneId",
+      [
+        [
+          "SpawnerId"
+        ]
+      ],
+      "KeyId"
+    ],
+    "desc": "清除Spawner显隐key，清除后会根据Spawner身上的剩余key来重新计算Spawner显隐，注意还要考虑spawner自己的刷新规则",
+    "displayName": "清除Spawner显隐key"
+  },
+  "clientFinishGuide": {
+    "refData": [
+      [
+        "Data.guide_data",
+        {}
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "引导组id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "引导组ID"
+    ],
+    "desc": "完成引导组，该组引导次数+1",
+    "displayName": "完成引导"
+  },
+  "clientGreatPortalTeleport": {
+    "paramName": [
+      "场景ID",
+      "传送阵组ID",
+      "传送点位 Static ID/0组内随机选点"
+    ],
+    "paramType": [
+      "S",
+      "S",
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "场景ID",
+      "传送阵组ID",
+      "传送点位staticId/0组内随机选点"
+    ],
+    "desc": "大传送阵传送",
+    "displayName": "大传送阵传送"
+  },
+  "clientQuizAgain": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "重答当前题目",
+    "displayName": "重答当前题目"
+  },
+  "clientQuizContinue": {
+    "paramName": {},
+    "paramType": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "desc": "继续答题",
+    "displayName": "继续答题"
+  },
+  "clientQuizResult": {
+    "paramName": [
+      "结果（1成功，0失败）"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "结果（1成功，0失败）"
+    ],
+    "desc": "执行结果为直接进入答题最终判定",
+    "displayName": "判定答题结果"
+  },
+  "clientSetMarkStates": {
+    "refData": [
+      [
+        [
+          {},
+          {}
+        ]
+      ],
+      {},
+      [
+        "$B"
+      ]
+    ],
+    "paramType": [
+      [
+        [
+          "I",
+          "I"
+        ]
+      ],
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      [
+        [
+          "地图",
+          "标记id"
+        ]
+      ],
+      "状态（0隐 1灰 2绿 3绿打勾）",
+      "是否强制"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "{{地图,id1},{地图,id2},{地图,id3},{地图,id4}}",
+      "状态",
+      "是否强制"
+    ],
+    "desc": "-- 地图标记状态\n0, --隐藏 1, --灰色 2, --绿色 3, --绿色对勾\n 强制=1表示直接set，0或空为执行时状态只能往大了设，禁止回退",
+    "displayName": "设置地图标记状态"
+  },
+  "clientStartGuide": {
+    "refData": [
+      [
+        "Data.guide_data",
+        {}
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "引导组id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "引导组ID"
+    ],
+    "desc": "开始引导组",
+    "displayName": "开始引导"
+  },
+  "closeBlackScreen": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "黑幕id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "黑幕ID"
+    ],
+    "desc": "强制关闭黑幕",
+    "displayName": "结束黑幕"
+  },
+  "closeMapIcon": {
+    "paramName": [
+      "地图标记id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "地图标记id"
+    ],
+    "desc": "彻底关闭地图标记的显示，不可逆",
+    "displayName": "关闭地图标记显示"
+  },
+  "closeQuest": {
+    "refData": [
+      [
+        "Data.Quest.quest_base",
+        [
+          "$L#title"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "任务 ID(非任务组)"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "用于关闭任务或任务分支，偏Hack操作，注意风险"
+    ],
+    "desc": "用于关闭任务或任务分支，偏Hack操作，注意风险",
+    "displayName": "关闭任务"
+  },
+  "closeUI": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "界面ID"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "界面id"
+    ],
+    "desc": "关闭指定UI",
+    "displayName": "关闭指定UI"
+  },
+  "comQuest": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "任务id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "任务id"
+    ],
+    "desc": "强制完成所有任务目标",
+    "displayName": "强制完成所有目标"
+  },
+  "combatPetLearnSkill": {
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "pet_ability_index_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "宠物模板Id",
+      "宠物技能Id"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帕蒙模板ID",
+      "帕蒙技能ID"
+    ],
+    "desc": "当前出战宠学会技能，不管是分离还是附身",
+    "displayName": "当前出战宠学会技能"
+  },
+  "completePetTarget": {
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramName": [
+      "帕蒙模板",
+      "sn",
+      "阶段id"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帕蒙模板",
+      "sn",
+      "阶段id"
+    ],
+    "desc": "达成宠物收集目标",
+    "displayName": "达成宠物收集目标"
+  },
+  "completeSubTarget": {
+    "paramType": [
+      "I",
+      [
+        [
+          "I"
+        ]
+      ]
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "玩法目标id",
+      [
+        [
+          "子目标序号1"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "目标id",
+      "{子目标序号1,子目标序号2……}"
+    ],
+    "desc": "完成玩法目标的子目标",
+    "displayName": "完成玩法目标的子目标"
+  },
+  "completeTracedQuest": {
+    "eventFlag": "s",
+    "desc": "达成当前追踪委托的第一个目标",
+    "displayName": "达成当前任务第一个目标"
+  },
+  "createEntity": {
+    "refSelectData": [
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_spawner_data",
+        [
+          "$L#editorShowName",
+          "$L#sandboxId"
+        ]
+      ]
+    ],
+    "paramName": [
+      "spawnerId",
+      "是否渐显"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "spawnerId"
+    ],
+    "desc": "在spawner上创建entity",
+    "displayName": "创建spawner"
+  },
+  "createEntityNearby": {
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "spawnerId",
+      "半径",
+      "是否面向玩家"
+    ],
+    "paramType": [
+      "I",
+      "F",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "spawnerId",
+      "半径",
+      "是否面向玩家（1面向  0随机）"
+    ],
+    "desc": "在spawner附近创建entity",
+    "displayName": "在附近创建spawner"
+  },
+  "createEntityNearbyForWorld": {
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramName": [
+      "spawnerId",
+      "半径",
+      "是否面向玩家"
+    ],
+    "paramType": [
+      "I",
+      "F",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "spawnerId",
+      "半径",
+      "是否面向玩家（1面向  0随机）"
+    ],
+    "desc": "在spawner附近创建entity",
+    "displayName": "在附近创建spawner"
+  },
+  "createEnvObjByRoot": {
+    "useMask": 8,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景物件ID",
+      "随机半径",
+      "{x,y,z}",
+      "是否要进行关联"
+    ],
+    "desc": "在传入的坐标点上创建EnvObj，可随机一定范围，再以随机的点做偏移。关联的1为是，默认不填为0，表示独立存在",
+    "displayName": "创建envobj"
+  },
+  "createMeteor": {
+    "paramName": [
+      "流星id",
+      "概率",
+      "是否不限次"
+    ],
+    "paramType": [
+      "I",
+      "F",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "流星id",
+      "概率（0到1）",
+      "是否不限次（不填默认限次，填1则不限次）"
+    ],
+    "desc": "创建流星事件",
+    "displayName": "创建流星"
+  },
+  "createPrivateHomeCamp": {
+    "paramName": {},
+    "eventFlag": "c",
+    "paramTooltip": {},
+    "displayName": "创建私人房车驿站",
+    "paramType": {}
+  },
+  "createPuppetByRoot": {
+    "useMask": 8,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "templateId",
+      "随机半径",
+      "{x,y,z}",
+      "是否要进行关联"
+    ],
+    "desc": "在传入的坐标点上创建Puppet，可随机一定范围，再以随机的点做偏移。关联的1为是，默认不填为0，表示独立存在",
+    "displayName": "创建puppet"
+  },
+  "createSpellArea": {
+    "useMask": 8,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "创生物ID",
+      "随机半径",
+      "{x,y,z}"
+    ],
+    "desc": "在传入的坐标点上创建创生物，可随机一定范围，再以随机的点做偏移。",
+    "displayName": "创建限时创生物"
+  },
+  "delEntity": {
+    "refSelectData": [
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_spawner_data",
+        [
+          "$L#editorShowName",
+          "$L#sandboxId"
+        ]
+      ]
+    ],
+    "paramName": [
+      "spawnerId",
+      "是否渐隐"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "Spawner 的 ID（我们更推荐你使用 disableSpawner 事件 ;-）"
+    ],
+    "desc": "删除spawner管理的entity",
+    "displayName": "删除spawner"
+  },
+  "delEntityTag": {
+    "paramName": [
+      "TAG名称"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "S"
+    ],
+    "displayName": "去除entityTag",
+    "useMask": 8
+  },
+  "delItem": {
+    "refData": [
+      [
+        [
+          "Data.item_data",
+          [
+            "$L#itemName"
+          ]
+        ],
+        {}
+      ]
+    ],
+    "paramType": [
+      [
+        "I",
+        "I"
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        "道具id",
+        "道具数量"
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{道具id,道具数量}"
+    ],
+    "desc": "删除道具(只能是货币【自动变化设定表】中的道具)",
+    "displayName": "删除道具"
+  },
+  "delNpcSpecialInteract": {
+    "refSelectData": [
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_entity_data",
+        [
+          "$L#editorShowName",
+          "$L#idInType",
+          "$L#sandboxId"
+        ]
+      ],
+      [
+        "Data.interact_data",
+        [
+          "$L#actionName",
+          "$L#iconId"
+        ]
+      ],
+      [
+        "Data.sys_event_data",
+        [
+          "$L#eventType",
+          "$L#eventParam"
+        ]
+      ]
+    ],
+    "paramName": [
+      "Static ID",
+      "交互 ID (可选)",
+      "添加事件 ID (可选)"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "NPC 的 Static ID",
+      "交互 ID，和事件 ID 二选一，如果都不填则移除所有交互",
+      "添加交互所用的事件的 ID，和交互 ID 二选一，如果都不填则移除所有交互"
+    ],
+    "desc": "删除由添加NPC交互添加的交互，interactId和eventId任一配置应用对应索引规则。如果都没则删除所有交互条目",
+    "displayName": "删除NPC交互"
+  },
+  "delPet": {
+    "paramName": [
+      "宠物模版id",
+      "数量"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠物模版id",
+      "数量"
+    ],
+    "desc": "删除背包里符合条件的宠物，按当前排序，从前往后删除",
+    "displayName": "从宠物背包里删除指定的宠物"
+  },
+  "delTarget": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "玩法目标id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "目标id"
+    ],
+    "desc": "移除玩法目标",
+    "displayName": "移除玩法目标"
+  },
+  "deleteNpcListPosition": {
+    "paramType": [
+      [
+        [
+          "I"
+        ]
+      ]
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      [
+        [
+          "Static ID"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "{{staticID}}"
+    ],
+    "desc": "批量移除NPC存盘位置",
+    "displayName": "批量移除NPC存盘位置"
+  },
+  "deleteNpcPosition": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "Static ID"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "staticID"
+    ],
+    "desc": "移除NPC存盘位置",
+    "displayName": "移除NPC存盘位置"
+  },
+  "dialogue": {
+    "hasCallback": 1,
+    "levelOrDungeonUse": 1,
+    "paramType": [
+      "I",
+      "I",
+      "I"
+    ],
+    "desc": "和NPC进行对话，加1表示退出全屏再播放这段，最后一个参数用于编辑器调用时指定目标",
+    "refData": [
+      [
+        "Data.npc_dialogue_data",
+        {}
+      ],
+      [
+        "$B"
+      ],
+      {}
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "对白ID",
+      "1",
+      "npcStaticId"
+    ],
+    "displayName": "和NPC对话",
+    "paramName": [
+      "对白ID",
+      "退出全屏再播",
+      "对白目标npcStaticId"
+    ]
+  },
+  "dialogueGraphTeleport": {
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "传送前对话图id",
+      "黑幕id",
+      "场景id",
+      "传送点id",
+      "禁用特效（1关闭）",
+      "传送后对话图id"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "传送前对话图id",
+      "黑幕id",
+      "场景id",
+      "传送点id",
+      "禁用特效（1关闭）",
+      "传送后对话图id"
+    ],
+    "desc": "播放对话图然后传送，传送期间使用黑幕loading。对话图ID和黑幕loadingID可不配；",
+    "displayName": "播放对话图后黑幕传送"
+  },
+  "dialogueGraphTeleportRepeat": {
+    "refData": [
+      [
+        "Editor.Data.dialogue_graph_editor_data",
+        [
+          "$L#desc"
+        ]
+      ],
+      [
+        "Data.guide_data",
+        {}
+      ],
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {},
+      [
+        "Editor.Data.dialogue_graph_editor_data",
+        [
+          "$L#desc"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "传送前对话图id",
+      "黑幕id",
+      "场景id",
+      "传送点id",
+      "禁用特效（1关闭）",
+      "传送后对话图id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "传送前对话图id",
+      "黑幕id",
+      "场景id",
+      "传送点id",
+      "禁用特效（1关闭）",
+      "传送后对话图id"
+    ],
+    "desc": "播放对话图然后传送，传送期间使用黑幕loading。对话图ID和黑幕loadingID可不配；若未执行完成，上线时会自动重新触发",
+    "displayName": "播放对话图后黑幕传送（自动重新触发）"
+  },
+  "dialogueMoveCamera": {
+    "paramType": [
+      "S",
+      "S",
+      "S",
+      "S",
+      "F"
+    ],
+    "paramName": [
+      "起点坐标x,y,z",
+      "起点旋转x,y,z",
+      "终点坐标x,y,z",
+      "终点旋转x,y,z",
+      "持续时间"
+    ],
+    "dialogueTimelineAction": 1,
+    "eventFlag": "c",
+    "paramTooltip": [
+      "起点坐标",
+      "终点坐标",
+      "持续时间"
+    ],
+    "displayName": "dialogue独立镜头控制",
+    "desc": "在dialogue timeline中使用，区别于camera track"
+  },
+  "disableSpawner": {
+    "refSelectData": [
+      {},
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Common.Data.Scene.$B#SceneId.scene_spawner_data",
+        [
+          "$L#editorShowName",
+          "$L#sandboxId"
+        ]
+      ],
+      {},
+      [
+        "Data.spawner_visibility_param_key",
+        [
+          "description",
+          "ids"
+        ]
+      ]
+    ],
+    "paramName": [
+      "场景 ID",
+      "Spawner ID",
+      "是否渐隐",
+      "标识key"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景 ID",
+      "注意区分 Spawner 与 Entity，Spawner 通常为 Entity 外层的生成器",
+      "唯一标识key"
+    ],
+    "desc": "关闭 spawner 并删除 entity（支持跨场景执行/不允许多人）",
+    "displayName": "关闭spawner"
+  },
+  "disableSpawnerList": {
+    "refSelectData": [
+      {},
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        [
+          [
+            "Common.Data.Scene.$B#SceneId.scene_spawner_data",
+            [
+              "$L#editorShowName",
+              "$L#sandboxId"
+            ]
+          ]
+        ]
+      ],
+      {},
+      [
+        "Data.spawner_visibility_param_key",
+        [
+          "description",
+          "ids"
+        ]
+      ]
+    ],
+    "paramName": [
+      "场景 ID",
+      [
+        [
+          "Spawner ID"
+        ]
+      ],
+      "是否渐隐",
+      "标识key"
+    ],
+    "paramType": [
+      "I",
+      [
+        [
+          "I"
+        ]
+      ],
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景 ID",
+      "注意区分 Spawner 与 Entity，Spawner 通常为 Entity 外层的生成器",
+      "唯一标识key"
+    ],
+    "desc": "批量关闭 spawner 并删除 entity（支持跨场景执行/不允许多人）",
+    "displayName": "批量关闭spawner"
+  },
+  "displayUnlockEffect": {
+    "paramName": [
+      "徽章id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "徽章id"
+    ],
+    "desc": "立即播放徽章解锁反馈动画",
+    "displayName": "立即播放徽章解锁反馈动画"
+  },
+  "doActionByVariable": {
+    "levelOrDungeonUse": 1,
+    "eventFlag": "s",
+    "paramTooltip": {},
+    "desc": "全局变量表中设置对应的变量，变量的不同值触发不同的action",
+    "displayName": "根据全局变量值触发action"
+  },
+  "eggShipEnterCore": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "蛋船进入核心区",
+    "paramName": {}
+  },
+  "eggShipEnterOutSkirt": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "蛋船返回外围区",
+    "paramName": {}
+  },
+  "eggShipExit": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "蛋船撤离",
+    "paramName": {}
+  },
+  "eggShipForceExit": {
+    "eventFlag": "s",
+    "paramType": {},
+    "displayName": "蛋船强制撤离",
+    "paramName": {}
+  },
+  "enableHighGrassDither": {
+    "eventFlag": "c",
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "displayName": "开关高草dither效果",
+    "paramName": [
+      "高草 Static ID",
+      "1: 启用 0: 禁用"
+    ]
+  },
+  "enableSpawner": {
+    "refSelectData": [
+      {},
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Common.Data.Scene.$B#SceneId.scene_spawner_data",
+        [
+          "$L#editorShowName",
+          "$L#sandboxId"
+        ]
+      ],
+      {},
+      [
+        "Data.spawner_visibility_param_key",
+        [
+          "description",
+          "ids"
+        ]
+      ]
+    ],
+    "paramName": [
+      "场景 ID",
+      "Spawner ID",
+      "是否渐显",
+      "标识key"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景 ID",
+      "注意区分 Spawner 与 Entity，Spawner 通常为 Entity 外层的生成器",
+      "唯一标识key"
+    ],
+    "desc": "激活 spawner 并创建 entity（支持跨场景执行/不允许多人）",
+    "displayName": "激活spawner"
+  },
+  "enableSpawnerList": {
+    "refSelectData": [
+      {},
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        [
+          [
+            "Common.Data.Scene.$B#SceneId.scene_spawner_data",
+            [
+              "$L#editorShowName",
+              "$L#sandboxId"
+            ]
+          ]
+        ]
+      ],
+      {},
+      [
+        "Data.spawner_visibility_param_key",
+        [
+          "description",
+          "ids"
+        ]
+      ]
+    ],
+    "paramName": [
+      "场景 ID",
+      [
+        [
+          "Spawner ID"
+        ]
+      ],
+      "是否渐显",
+      "标识key"
+    ],
+    "paramType": [
+      "I",
+      [
+        [
+          "I"
+        ]
+      ],
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "场景 ID",
+      "注意区分 Spawner 与 Entity，Spawner 通常为 Entity 外层的生成器",
+      "唯一标识key"
+    ],
+    "desc": "批量激活 spawner 并创建 entity（支持跨场景执行/不允许多人）",
+    "displayName": "批量激活spawner"
+  },
+  "enterControlMode": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "宠物模板ID"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠物模板ID"
+    ],
+    "desc": "让玩家附身特定模板ID的宠物，不填或填0则为临时背包中第一个的宠物",
+    "displayName": "让玩家附身特定宠物"
+  },
+  "enterNpcDuel": {
+    "displayName": "进入NPC对决",
+    "eventFlag": "s"
+  },
+  "applyPhotoPreset": {
+    "paramType": [
+      "S"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "拍照预设名"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "拍照预设名"
+    ],
+    "desc": "调用拍照预设",
+    "displayName": "拍照预设"
+  },
+  "appearSceneHelpPanel": {
+    "eventFlag": "c",
+    "paramType": {},
+    "displayName": "打开当前副本帮助",
+    "paramName": {}
+  },
+  "appearHelpSimple": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "帮助表id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帮助表ID"
+    ],
+    "desc": "功能解锁时播放帮助底部提示",
+    "displayName": "解锁提示"
+  },
+  "appearHelp": {
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "帮助表id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帮助表ID"
+    ],
+    "desc": "出现帮助提示",
+    "displayName": "出现帮助提示"
+  },
+  "aiHelperTrackTarget": {
+    "paramName": [
+      "类型名"
+    ],
+    "paramType": [
+      "S"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "追踪的类型"
+    ],
+    "desc": "AI提示轻度提示追踪类型",
+    "displayName": "AI提示轻度提示追踪类型"
+  },
+  "addbuff": {
+    "refData": [
+      [
+        "Common.Data.SkillBPData.buff_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "F"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "buffid",
+      "时长"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "buffid",
+      "时长"
+    ],
+    "desc": "获得一个buff，时长单位秒",
+    "displayName": "玩家获得buff"
+  },
+  "addToHomeWarehouse": {
+    "paramName": [
+      "道具id",
+      "数量"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "道具id",
+      "数量"
+    ],
+    "desc": "仅能在家园场景内使用，背包内需要有对应道具",
+    "displayName": "从背包往家园仓库中添加道具"
+  },
+  "addTeamBuff": {
+    "refData": [
+      [
+        "Common.Data.SkillBPData.buff_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "F",
+      "I"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "buffid",
+      "时长",
+      "是否对主角生效"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "buffid",
+      "时长",
+      "是否对主角生效"
+    ],
+    "desc": "主角及主角出战宠物们添加buff，时间结束后卸载buff，未配置时间则应用buff本身时长",
+    "displayName": "主角团队加buff"
+  },
+  "addTagByNpcStaticId": {
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "Static ID",
+      "Tag"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "S"
+    ],
+    "desc": "给指定 Static ID 的对象添加 Tag",
+    "displayName": "给指定 Static ID 的对象添加Tag"
+  },
+  "addStrengthenPoint": {
+    "useMask": 4,
+    "paramName": [
+      "属性类型",
+      "数量"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "属性类型",
+      "数量"
+    ],
+    "desc": "提升帕蒙努力值",
+    "displayName": "提升帕蒙努力值"
+  },
+  "addShowTitle": {
+    "paramName": [
+      "称号表ID"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "称号表ID"
+    ],
+    "displayName": "解锁称号",
+    "paramType": [
+      "I"
+    ]
+  },
+  "addPetBall": {
+    "refData": [
+      [
+        "Data.pet_ball_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I"
+    ],
+    "levelOrDungeonUse": 1,
+    "paramName": [
+      "宠乐球配置id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "宠乐球配置id"
+    ],
+    "desc": "获得一个宠乐球",
+    "displayName": "获得宠乐球"
+  },
+  "addPet": {
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {},
+      {}
+    ],
+    "paramName": [
+      "帕蒙模板id",
+      "等级",
+      "稀有标签",
+      "不提示(1是0否)"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "帕蒙id",
+      "等级",
+      "稀有标签",
+      "不提示"
+    ],
+    "desc": "获得一只帕蒙",
+    "displayName": "获得帕蒙"
+  },
+  "addNpcSpecialInteract": {
+    "refSelectData": [
+      [
+        "sandboxId",
+        "∈",
+        "$B#SandboxIds"
+      ]
+    ],
+    "refData": [
+      [
+        "Common.Data.Scene.$B#SceneId.scene_entity_data",
+        [
+          "$L#editorShowName",
+          "$L#idInType",
+          "$L#sandboxId"
+        ]
+      ],
+      [
+        "Data.interact_data",
+        [
+          "$L#actionName",
+          "$L#iconId"
+        ]
+      ],
+      [
+        "Data.event_enum_data",
+        [
+          "$L#displayName",
+          "$L#desc"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramName": [
+      "Static ID",
+      "交互 ID",
+      "事件类型",
+      "事件参数",
+      "最大交互次数"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "Elua",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "NPC 的 Static ID",
+      "交互 ID，详见交互配置表（对话常用 1001）",
+      "交互后触发的事件",
+      "事件参数，用大括号包裹",
+      "最大交互次数"
+    ],
+    "desc": "添加NPC交互，引用交互ID为交互样式，并自定义交互参数（同交互ID仅存一个）",
+    "displayName": "添加NPC交互"
+  },
+  "addHomePetNumLimit": {
+    "eventFlag": "s",
+    "paramTooltip": [
+      "增加个数"
+    ],
+    "displayName": "增加家园内可放置宠物上限",
+    "paramType": [
+      "I"
+    ]
+  },
+  "addHeadIcon": {
+    "paramName": [
+      "头像表id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "头像表ID"
+    ],
+    "displayName": "解锁头像",
+    "paramType": [
+      "I"
+    ]
+  },
+  "addHeadFrame": {
+    "paramName": [
+      "头像框表id"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "头像框表ID"
+    ],
+    "displayName": "解锁头像框",
+    "paramType": [
+      "I"
+    ]
+  },
+  "addGameTime": {
+    "paramName": [
+      "增加的游戏时长"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "增加捉宠爬塔玩法游戏时长",
+    "displayName": "增加捉宠爬塔玩法游戏时长"
+  },
+  "addEntityTag": {
+    "paramName": [
+      "TAG名称"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "S"
+    ],
+    "displayName": "添加entityTag",
+    "useMask": 8
+  },
+  "addCustomVariable": {
+    "paramName": [
+      "变量Id",
+      "改变的值"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "变量id，改变的值"
+    ],
+    "desc": "增加自定义变量",
+    "displayName": "新增自定义变量"
+  },
+  "addCurPetBuff": {
+    "refData": [
+      [
+        "Common.Data.SkillBPData.buff_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ],
+      {}
+    ],
+    "paramName": [
+      "buffid",
+      "时长"
+    ],
+    "paramType": [
+      "I",
+      "F"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "buffid",
+      "时长"
+    ],
+    "desc": "获得一个buff，时长单位秒",
+    "displayName": "宠物获得buff"
+  },
+  "addCurControllerBuff": {
+    "refData": [
+      [
+        "Common.Data.SkillBPData.buff_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "F"
+    ],
+    "levelOrDungeonUse": 3,
+    "paramName": [
+      "buffid",
+      "时长"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "buffid",
+      "时长"
+    ],
+    "desc": "玩家添加当前宠物buff，时长单位秒",
+    "displayName": "玩家添加当前宠物buff"
+  },
+  "addColorJewelry": {
+    "paramName": [
+      "炫彩饰品ID"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "炫彩饰品ID"
+    ],
+    "desc": "当玩家点击领取炫彩饰品道具时，直接使用获得并对应饰品",
+    "displayName": "获得炫彩饰品"
+  },
+  "addCardBackground": {
+    "paramName": [
+      "背景表ID"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "背景表ID"
+    ],
+    "displayName": "解锁背景",
+    "paramType": [
+      "I"
+    ]
+  },
+  "addCampPetNumLimit": {
+    "eventFlag": "s",
+    "paramTooltip": [
+      "增加个数"
+    ],
+    "displayName": "增加营地内可放置宠物上限",
+    "paramType": [
+      "I"
+    ]
+  },
+  "addBuffByEnvObj": {
+    "useMask": 8,
+    "eventFlag": "s",
+    "paramTooltip": [
+      "偏移坐标{x,y,z}",
+      "buff影响半径",
+      "{符合宝宝标准templateId}",
+      "buffID"
+    ],
+    "desc": "特定envobj销毁后，在影响半径内对符合标准的templateID施加buff",
+    "displayName": "销毁envobj时施加buffID"
+  },
+  "addActivityRewardCounts": {
+    "paramName": [
+      "活动ID",
+      "奖励次数"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "活动ID",
+      "奖励次数"
+    ],
+    "desc": "玩家的活动奖励发放次数累计",
+    "displayName": "增加活动奖励次数"
+  },
+  "addAction": {
+    "paramName": [
+      "互动动作ID"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "动作表ID"
+    ],
+    "displayName": "解锁互动动作",
+    "paramType": [
+      "I"
+    ]
+  },
+  "activityResult": {
+    "paramName": [
+      "活动ID",
+      "结果（0失败，1成功）"
+    ],
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "活动ID",
+      "结果（0失败，1成功）"
+    ],
+    "desc": "玩家的活动结算成功还是失败",
+    "displayName": "玩家活动结束成功与否"
+  },
+  "activePetManual": {
+    "paramName": [
+      "板块id"
+    ],
+    "paramType": [
+      "I"
+    ],
+    "eventFlag": "s",
+    "paramTooltip": [
+      "板块ID"
+    ],
+    "desc": "激活图鉴册",
+    "displayName": "激活图鉴册"
+  },
+  "activeMapLayer": {
+    "paramName": [
+      "场景 ID",
+      "layerId",
+      "layerLevel",
+      "layerArea"
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "eventFlag": "c",
+    "paramTooltip": [
+      "sceneId",
+      "layerId",
+      "layerLevel",
+      "layerArea"
+    ],
+    "desc": "激活对应的地图层级",
+    "displayName": "激活对应的地图层级"
+  }
+}

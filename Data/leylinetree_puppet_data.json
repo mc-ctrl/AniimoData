@@ -1,0 +1,792 @@
+{
+  "113": {
+    "ethnicGroup": 1048,
+    "familyName": 1077920119,
+    "radius": 13,
+    "puppetIds": [
+      11048100,
+      11048300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "115": {
+    "ethnicGroup": 1032,
+    "familyName": 1238726110,
+    "radius": 13,
+    "puppetIds": [
+      11032100,
+      11032400
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "117": {
+    "ethnicGroup": 1028,
+    "familyName": 1741796488,
+    "radius": 13,
+    "puppetIds": [
+      11028100,
+      11028200,
+      11028300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "119": {
+    "ethnicGroup": 1013,
+    "familyName": 1380597161,
+    "radius": 13,
+    "puppetIds": [
+      11013100,
+      11013200,
+      11013300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "123": {
+    "ethnicGroup": 1001,
+    "familyName": 1516355253,
+    "radius": 13,
+    "puppetIds": [
+      11001100,
+      11001200,
+      11001201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "125": {
+    "ethnicGroup": 1018,
+    "familyName": 1332988998,
+    "radius": 13,
+    "puppetIds": [
+      11018100,
+      11018500,
+      11018400,
+      11018700
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "5": {
+    "ethnicGroup": 2002,
+    "familyName": 1677034291,
+    "radius": 13,
+    "puppetIds": [
+      11002400,
+      11002200,
+      11002300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "127": {
+    "ethnicGroup": 1020,
+    "familyName": 1427687660,
+    "radius": 13,
+    "puppetIds": [
+      11020100,
+      11020300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "129": {
+    "ethnicGroup": 1018,
+    "familyName": 1360542010,
+    "radius": 13,
+    "puppetIds": [
+      11018103,
+      11018503,
+      11018403,
+      11018703
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "131": {
+    "ethnicGroup": 1023,
+    "familyName": 1682020594,
+    "radius": 13,
+    "puppetIds": [
+      11023103,
+      11023203
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "133": {
+    "ethnicGroup": 1047,
+    "familyName": 2145716097,
+    "radius": 13,
+    "puppetIds": [
+      11047103,
+      11047503,
+      11047101,
+      11047501
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "31": {
+    "ethnicGroup": 1005,
+    "familyName": 1315522355,
+    "radius": 13,
+    "puppetIds": [
+      11005104,
+      11005204,
+      11005304,
+      11005302
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "9": {
+    "ethnicGroup": 1005,
+    "familyName": 1743584227,
+    "radius": 13,
+    "puppetIds": [
+      11005100,
+      11005200,
+      11005300,
+      11005302
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "11": {
+    "ethnicGroup": 1013,
+    "familyName": 1265819518,
+    "radius": 13,
+    "puppetIds": [
+      11013100,
+      11013200,
+      11013300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "121": {
+    "ethnicGroup": 1005,
+    "familyName": 2119771302,
+    "radius": 13,
+    "puppetIds": [
+      11005100,
+      11005200,
+      11005300,
+      11005302
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "23": {
+    "ethnicGroup": 1003,
+    "familyName": 1794966497,
+    "radius": 13,
+    "puppetIds": [
+      11003100,
+      11003200
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "55": {
+    "ethnicGroup": 1021,
+    "familyName": 1211086411,
+    "radius": 13,
+    "puppetIds": [
+      11021103,
+      11021203
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "75": {
+    "ethnicGroup": 1035,
+    "familyName": 1418712357,
+    "radius": 13,
+    "puppetIds": [
+      11035100,
+      11035200
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "57": {
+    "ethnicGroup": 1021,
+    "familyName": 1644392585,
+    "radius": 13,
+    "puppetIds": [
+      11021106,
+      11021206
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "27": {
+    "ethnicGroup": 1004,
+    "familyName": 1476453913,
+    "radius": 13,
+    "puppetIds": [
+      11004101,
+      11004201,
+      11004301
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "77": {
+    "ethnicGroup": 1033,
+    "familyName": 1326376152,
+    "radius": 13,
+    "puppetIds": [
+      11033100,
+      11033300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "29": {
+    "ethnicGroup": 1005,
+    "familyName": 1528589351,
+    "radius": 13,
+    "puppetIds": [
+      11005101,
+      11005201,
+      11005301,
+      11005302
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "79": {
+    "ethnicGroup": 1033,
+    "familyName": 1680155851,
+    "radius": 13,
+    "puppetIds": [
+      11033101,
+      11033301
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "61": {
+    "ethnicGroup": 1022,
+    "familyName": 1391123594,
+    "radius": 13,
+    "puppetIds": [
+      11022102,
+      11022202
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "37": {
+    "ethnicGroup": 1016,
+    "familyName": 1147042316,
+    "radius": 13,
+    "puppetIds": [
+      11016102,
+      11016202
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "39": {
+    "ethnicGroup": 1016,
+    "familyName": 1811038735,
+    "radius": 13,
+    "puppetIds": [
+      11016103,
+      11016203
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "63": {
+    "ethnicGroup": 1023,
+    "familyName": 1365859607,
+    "radius": 13,
+    "puppetIds": [
+      11023100,
+      11023200
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "41": {
+    "ethnicGroup": 1017,
+    "familyName": 1197507026,
+    "radius": 13,
+    "puppetIds": [
+      11017100,
+      11017200,
+      11017400,
+      11017101,
+      11017201,
+      11017401
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "35": {
+    "ethnicGroup": 1016,
+    "familyName": 1442092686,
+    "radius": 13,
+    "puppetIds": [
+      11016101,
+      11016201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "65": {
+    "ethnicGroup": 1023,
+    "familyName": 1211152974,
+    "radius": 13,
+    "puppetIds": [
+      11023101,
+      11023201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "67": {
+    "ethnicGroup": 1023,
+    "familyName": 2081381017,
+    "radius": 13,
+    "puppetIds": [
+      11023102,
+      11023202
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "1": {
+    "ethnicGroup": 1001,
+    "familyName": 1208794684,
+    "radius": 13,
+    "puppetIds": [
+      11001100,
+      11001200,
+      11001201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "87": {
+    "ethnicGroup": 1016,
+    "familyName": 1341304677,
+    "radius": 13,
+    "puppetIds": [
+      11016100,
+      11016300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "3": {
+    "ethnicGroup": 1002,
+    "familyName": 1926747076,
+    "radius": 13,
+    "puppetIds": [
+      11002100,
+      11002101,
+      11002600,
+      11002601,
+      11002700,
+      11002701
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "89": {
+    "ethnicGroup": 1026,
+    "familyName": 1122877071,
+    "radius": 13,
+    "puppetIds": [
+      11026105,
+      11026205,
+      11026101,
+      11026201,
+      11026105,
+      11026205,
+      11026101,
+      11026201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "101": {
+    "ethnicGroup": 1029,
+    "familyName": 2023034260,
+    "radius": 13,
+    "puppetIds": [
+      11029100,
+      11029300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "73": {
+    "ethnicGroup": 1032,
+    "familyName": 1646436558,
+    "radius": 13,
+    "puppetIds": [
+      11032100,
+      11032300,
+      11032301
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "93": {
+    "ethnicGroup": 1013,
+    "familyName": 1107303366,
+    "radius": 13,
+    "puppetIds": [
+      11013102,
+      11013202,
+      11013302
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "97": {
+    "ethnicGroup": 1003,
+    "familyName": 1368859268,
+    "radius": 13,
+    "puppetIds": [
+      11003103,
+      11003203
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "1000": {
+    "ethnicGroup": 6999,
+    "familyName": 1218734075,
+    "radius": 13,
+    "puppetIds": [
+      16999300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "33": {
+    "ethnicGroup": 1014,
+    "familyName": 2133106563,
+    "radius": 13,
+    "puppetIds": [
+      11014100,
+      11014200,
+      11014300,
+      11014301,
+      11014301
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "53": {
+    "ethnicGroup": 1021,
+    "familyName": 1407835814,
+    "radius": 13,
+    "puppetIds": [
+      11021102,
+      11021202
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "143": {
+    "ethnicGroup": 1051,
+    "familyName": 1709330304,
+    "radius": 13,
+    "puppetIds": [
+      11051100,
+      11051200
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "91": {
+    "ethnicGroup": 1004,
+    "familyName": 1277470469,
+    "radius": 13,
+    "puppetIds": [
+      11004102,
+      11004202,
+      11004302
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "49": {
+    "ethnicGroup": 1021,
+    "familyName": 2085976463,
+    "radius": 13,
+    "puppetIds": [
+      11021100,
+      11021200
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "25": {
+    "ethnicGroup": 1003,
+    "familyName": 1550464143,
+    "radius": 13,
+    "puppetIds": [
+      11003101,
+      11003201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "59": {
+    "ethnicGroup": 1022,
+    "familyName": 1689238616,
+    "radius": 13,
+    "puppetIds": [
+      11022100,
+      11022200
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "17": {
+    "ethnicGroup": 1017,
+    "familyName": 2092287957,
+    "radius": 13,
+    "puppetIds": [
+      11017100,
+      11017200,
+      11017400
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "103": {
+    "ethnicGroup": 1047,
+    "familyName": 1380440716,
+    "radius": 13,
+    "puppetIds": [
+      11047100,
+      11047500,
+      11047101,
+      11047501
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "7": {
+    "ethnicGroup": 1004,
+    "familyName": 1395372489,
+    "radius": 13,
+    "puppetIds": [
+      11004100,
+      11004200,
+      11004300,
+      11004500
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "15": {
+    "ethnicGroup": 1016,
+    "familyName": 1326577140,
+    "radius": 13,
+    "puppetIds": [
+      11016100,
+      11016200
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "43": {
+    "ethnicGroup": 1018,
+    "familyName": 1276462555,
+    "radius": 13,
+    "puppetIds": [
+      11018101,
+      11018501,
+      11018401,
+      11018701
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "105": {
+    "ethnicGroup": 1047,
+    "familyName": 1331533610,
+    "radius": 13,
+    "puppetIds": [
+      11047102,
+      11047502,
+      11047101,
+      11047501
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "45": {
+    "ethnicGroup": 1020,
+    "familyName": 1757320230,
+    "radius": 13,
+    "puppetIds": [
+      11020100,
+      11020300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "21": {
+    "ethnicGroup": 1019,
+    "familyName": 1333155903,
+    "radius": 13,
+    "puppetIds": [
+      11019100,
+      11019200,
+      11019400,
+      11019401
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "19": {
+    "ethnicGroup": 1018,
+    "familyName": 1477630294,
+    "radius": 13,
+    "puppetIds": [
+      11018100,
+      11018500,
+      11018400,
+      11018700
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "47": {
+    "ethnicGroup": 1020,
+    "familyName": 1262194060,
+    "radius": 13,
+    "puppetIds": [
+      11020101,
+      11020301
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "81": {
+    "ethnicGroup": 1033,
+    "familyName": 2099642891,
+    "radius": 13,
+    "puppetIds": [
+      11033102,
+      11033302
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "83": {
+    "ethnicGroup": 1033,
+    "familyName": 1225106161,
+    "radius": 13,
+    "puppetIds": [
+      11033103,
+      11033303
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "95": {
+    "ethnicGroup": 1021,
+    "familyName": 2143343815,
+    "radius": 13,
+    "puppetIds": [
+      11021105,
+      11021205
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "109": {
+    "ethnicGroup": 1050,
+    "familyName": 1143767820,
+    "radius": 13,
+    "puppetIds": [
+      11050100,
+      1105030001
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "85": {
+    "ethnicGroup": 1045,
+    "familyName": 1289997884,
+    "radius": 13,
+    "puppetIds": [
+      11045100,
+      11045300,
+      11045400,
+      11045101,
+      11045301,
+      11045401
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "51": {
+    "ethnicGroup": 1021,
+    "familyName": 1318880978,
+    "radius": 13,
+    "puppetIds": [
+      11021101,
+      11021201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "71": {
+    "ethnicGroup": 1028,
+    "familyName": 1607662258,
+    "radius": 13,
+    "puppetIds": [
+      11028100,
+      11028400,
+      11028500
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "111": {
+    "ethnicGroup": 1043,
+    "familyName": 1841055272,
+    "radius": 13,
+    "puppetIds": [
+      11043100,
+      11043300
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  },
+  "69": {
+    "ethnicGroup": 1026,
+    "familyName": 1428722919,
+    "radius": 13,
+    "puppetIds": [
+      11026100,
+      11026200,
+      11026101,
+      11026201,
+      11026100,
+      11026200,
+      11026101,
+      11026201
+    ],
+    "quality": 1,
+    "maxRefresh": 20
+  }
+}

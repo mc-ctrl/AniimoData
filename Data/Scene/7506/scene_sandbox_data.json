@@ -1,0 +1,891 @@
+{
+  "91312756": {
+    "owner": "陈智豪",
+    "chunk": 1019874,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91312807,
+    "levelItems": {
+      "91342421": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否触发自言自语",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91342421,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91328426": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "2号幽幽焰到达3号篝火检测 ",
+        "position": [
+          8.81,
+          0.06,
+          -7.28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91328426,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "91328426_52068346",
+            "detectType": 1073741959
+          },
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          2.12,
+          1,
+          1.76
+        ],
+        "isActive": true
+      },
+      "91328434": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "2号幽幽焰是否到达3号篝火位置",
+        "position": [
+          8.59,
+          0.04,
+          -19.92
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91328434,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91328448": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号点燃篝火出现特效 ",
+        "position": [
+          8.71,
+          -0.05,
+          -7.56
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91328448,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91329693": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号幽幽焰消失特效",
+        "position": [
+          10.54,
+          0.01,
+          -8.65
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329693,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91328452": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "2号幽幽焰消失特效",
+        "position": [
+          8.79,
+          -0.2,
+          -6.41
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91328452,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91329715": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "高级宝箱出现特效",
+        "position": [
+          12.4,
+          0.74,
+          -8.44
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329715,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91328578": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号幽幽焰出现特效",
+        "position": [
+          10.54,
+          0.01,
+          -8.65
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91328578,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91312758": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "1号篝火",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312758,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91328719": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否可以出现高级宝箱",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91328719,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91312770": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "1号幽幽焰出现特效",
+        "position": [
+          -0.18,
+          -0.14,
+          10.59
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312770,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91328720": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号是否幽幽焰出现",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91328720,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91312775": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "2号幽幽焰出现特效",
+        "position": [
+          6.06,
+          -0.23,
+          5.46
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312775,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91329132": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "4号篝火",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329132,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91312776": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "二号点燃篝火出现特效",
+        "position": [
+          6.18,
+          -0.11,
+          5.63
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312776,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91329133": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "5号篝火",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329133,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91312777": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "1号幽幽焰消失特效",
+        "position": [
+          5.35,
+          -0.2,
+          6.34
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312777,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91329134": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "6号篝火",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329134,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91312781": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "1号幽幽焰是否到达2号篝火位置",
+        "position": [
+          8.59,
+          0.04,
+          -19.92
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312781,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91329144": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "7号篝火",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329144,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91312783": {
+        "majorCompId": 75060209,
+        "owner": "陈智豪",
+        "EditorName": "高级宝箱出现",
+        "position": [
+          12.53,
+          0.36,
+          -8.37
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312783,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91312797,
+            "flyToPlayer": false
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91329697": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号幽幽焰是否消失",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329697,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91312786": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          7.7,
+          36.88,
+          -10.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91312786,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          41.1,
+          1,
+          42.51
+        ],
+        "isActive": true
+      },
+      "91312787": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号篝火 ",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312787,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91329717": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号幽幽焰再次出现特效",
+        "position": [
+          10.49,
+          0.13,
+          -8.5
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329717,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Parmon_LevelAppear_Big.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91312788": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "2号篝火 ",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91312788,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91329720": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "3号幽幽焰是否再次出现",
+        "position": [
+          18.5,
+          -0.2,
+          -13.39
+        ],
+        "rotation": [
+          0,
+          70.47,
+          0
+        ],
+        "id": 91329720,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91328140": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "1号幽幽焰到达2号篝火检测",
+        "position": [
+          6.2,
+          0.06,
+          5.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91328140,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "91328140_52068346",
+            "detectType": 1073741955
+          },
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          2.12,
+          1,
+          1.76
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "6号洞穴内容",
+    "spawners": [
+      91312790,
+      91312796,
+      91312801,
+      91328027,
+      91328302,
+      91328314,
+      91328356,
+      91328407,
+      91328409,
+      91328559,
+      91329093,
+      91329613,
+      91329709
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7506/Sandbox_91312756_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91312756,
+    "markIconSpawnerId": 0,
+    "position": [
+      5.14,
+      -0.17,
+      -12.04
+    ]
+  }
+}

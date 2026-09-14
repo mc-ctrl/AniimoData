@@ -1,0 +1,142 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "scale": 2,
+      "NodeID": 3,
+      "UID": "4611452d-7bac-45c2-9183-c77becb0b116",
+      "effectId": "Eff_Parmon_10222_Skill_ShadowBoom",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 59,
+      "NodeID": 13,
+      "UID": "90bf8c40-9e1a-487f-a6df-d4551e7ae21e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        59
+      ]
+    },
+    "49": {
+      "UID": "2470e44c-9395-4abc-b370-dda9aadd1665",
+      "name": "removeEvent",
+      "eventName": "onEnterTrap",
+      "NodeID": 49
+    },
+    "6": {
+      "action": {
+        "actionIds": [
+          3,
+          16,
+          13,
+          19,
+          48,
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 6,
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5"
+    },
+    "59": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2122203,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "98009214-d8a4-4fdc-be32-79a5df4c19fe",
+      "target": "TARGET",
+      "NodeID": 59,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10014,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Slash_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "defaultHitEffect": "Eff_Hit_Electric_Blunt_Big",
+        "impulseId": 5002,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      }
+    },
+    "19": {
+      "UID": "81ced794-da4d-4add-a7a3-2992f98b0f08",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 19
+    },
+    "48": {
+      "name": "removeGhostEffect",
+      "UID": "a5745d70-dc92-43db-ac94-8ec0e335a414",
+      "target": "MASTER",
+      "NodeID": 48,
+      "instanceId": {
+        "key": "cy1022200Server",
+        "name": "getServerCacheVal",
+        "UID": "690274fa-da0b-4b59-98d6-43cc04aa0356",
+        "target": "OWNER",
+        "NodeID": 47
+      }
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "51510d66-df3b-426d-9f66-6f7e2a70ae12",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_thunder",
+      "NodeID": 16
+    }
+  },
+  "BPName": "timeline_2122203",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 5
+}

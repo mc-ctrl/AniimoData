@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_10431320",
+  "NodeID": 1,
+  "UID": "93c44763-d513-4c36-81fc-f87133f25529",
+  "abilityParamId": 10200021,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10431320001,
+      "name": "setCombatActionTimeline",
+      "UID": "0f96f025-906e-45d3-aafc-2ce1b8f4a5c9",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ShortBreath"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_Skill_Breath",
+    "Eff_Parmon_10043_Skill_Breath_Accumulator",
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Range_Indicator_Sector_120_4"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2
+}

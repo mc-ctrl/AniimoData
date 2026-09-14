@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_15130100",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "abilityParamId": 10500490,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15130100001,
+      "name": "setCombatActionTimeline",
+      "UID": "7d8cee22-643a-48db-b69d-5e440653cc6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Bullet01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10513_Skill_Bullet_Bullet01",
+    "Eff_Parmon_10233_Skill_Hypnospore01",
+    "Eff_Parmon_10513_Skill_Bullet_Bomb01",
+    "Eff_Parmon_10513_Skill_Buff_Fire01",
+    "Eff_Parmon_10513_Skill_Bullet_Bomb02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

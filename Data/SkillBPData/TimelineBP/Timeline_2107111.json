@@ -1,0 +1,247 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "28": {
+      "value": {
+        "calcId": 2107111,
+        "calcType": 4,
+        "paramName": "param1",
+        "NodeID": 27,
+        "UID": "74b1b3b0-3127-40cf-bde0-373e1b2c7da4",
+        "name": "getParamByLuaConfig"
+      },
+      "epCostReason": 1,
+      "name": "costEp",
+      "UID": "531902a8-7ef6-4f51-b7eb-7783e92d4971",
+      "target": "TARGET",
+      "NodeID": 28
+    },
+    "4": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2107111,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 4
+      },
+      "UID": "0d2d1bc1-8a57-426b-b867-9ac5d6053860",
+      "target": "TARGET",
+      "NodeID": 4,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2001
+      }
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 24,
+      "UID": "b06784a9-ceff-4acf-9b8b-54566594cb35"
+    },
+    "6": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 4,
+      "NodeID": 6,
+      "UID": "e5a610b2-70a8-4e46-a243-4c840a704270",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.8,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        4,
+        26,
+        28
+      ]
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "283e236f-909b-4c8c-9176-a05e91923f57",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_Whirlwind_Water",
+      "NodeID": 25
+    },
+    "15": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "870137ae-8f3b-45b8-83b4-2f4aebf7318a",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Whirlwind05_Water",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "a1fe4d6d-1acf-48d0-b052-8d0f49445eed",
+      "cd": 0.4,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "26": {
+      "cameraShakeId": 10101,
+      "name": "playCameraImpulseById",
+      "UID": "d01ca9a4-75cd-4df7-bd9f-44baba630cdb",
+      "target": "MASTER",
+      "NodeID": 26
+    },
+    "27": {
+      "calcId": 2107111,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 27,
+      "UID": "74b1b3b0-3127-40cf-bde0-373e1b2c7da4",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "UID": "c89c932a-4dce-41a9-bb85-829c277936c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          25
+        ]
+      },
+      "NodeID": 17
+    },
+    "9": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 2.5,
+      "NodeID": 9,
+      "UID": "1ec6d47a-6e80-4f68-a014-0aae6128a4e8",
+      "onUpdate": {
+        "actionIds": [
+          19,
+          7
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          19,
+          7
+        ]
+      }
+    },
+    "18": {
+      "notBlockInput": true,
+      "duration": 1,
+      "NodeID": 18,
+      "UID": "f3900061-a192-43fa-94e3-83f6db7b921c",
+      "target": "TARGET",
+      "name": "forceDisplacement",
+      "speed": 3,
+      "displacementTarget": "OWNER",
+      "displacementDir": "IN"
+    },
+    "23": {
+      "name": "stopSoundStr",
+      "UID": "403faf48-39b7-4c71-b182-f1e418a52975",
+      "soundId": "SFX_Combat_Parmon_10184_Skill_Whirlwind_Water",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "name": "actOnTargets",
+      "UID": "04111a71-91e8-4bbc-9082-cf0695c42784",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 19
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "2cdff757-ba18-4064-9db1-16d367137ab8",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Whirlwind05_Water",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.8,
+      "NodeID": 14,
+      "UID": "a421d480-32a3-4891-af6e-63840f27a7a3"
+    }
+  },
+  "BPName": "timeline_2107111",
+  "NodeID": 1,
+  "UID": "fed0390b-61d5-41f0-b009-32f669367ff4",
+  "eventIds": [
+    17,
+    24,
+    14,
+    9
+  ],
+  "layer": "Base",
+  "length": 3.5
+}

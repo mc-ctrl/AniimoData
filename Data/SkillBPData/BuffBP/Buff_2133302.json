@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "dmg_fire_dec_ratio": -0.02
+  },
+  "BPName": "buff_2133302",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    6
+  ],
+  "nodeMap": {
+    "5": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "f4333634-c3af-4f78-8e74-8a700996b849",
+      "NodeID": 5,
+      "lValue": {
+        "templateId": 2133302,
+        "name": "getBuffLayer",
+        "UID": "2bd461c6-4af6-4e9e-bdfa-7c94400fcd63",
+        "target": "OWNER",
+        "NodeID": 4
+      }
+    },
+    "8": {
+      "buffId": 2133303,
+      "name": "removeBuff",
+      "UID": "966b0668-9293-4fb5-849b-c3c93e66764e",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2133303,
+      "NodeID": 7,
+      "UID": "8e77dab2-5f31-4bdc-991c-c60e0f370b15",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "3b79e32a-2ff6-4881-8317-039f8bf61fd7",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

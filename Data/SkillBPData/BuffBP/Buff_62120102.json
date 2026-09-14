@@ -1,0 +1,145 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62120102",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    3
+  ],
+  "tags": [
+    27
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c3b232a1-7f1f-4f99-b747-b54f8ad2f67b",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Behav_Happy"
+    },
+    "55": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 62132306,
+      "NodeID": 55,
+      "UID": "112d18ec-2a92-4f22-be0c-33eb0a3a32d4",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "key": "grassHits",
+      "name": "setServerCacheVal",
+      "UID": "ce6ac651-b4b0-43b9-a5d4-289b76f80fec",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 6
+    },
+    "10": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 10,
+      "UID": "48c2d860-9edf-4712-8c99-8c0a4fb75bbb",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10201_Buff_Parasitism",
+      "name": "playPreset"
+    },
+    "7": {
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "6fcb035a-4d44-4cd8-baec-f55938a51135",
+      "ignoreSelf": true,
+      "NodeID": 7
+    },
+    "56": {
+      "actionIds": [
+        55
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "31764275-cba4-4ad8-849c-8863b6171dd7",
+      "name": "doActionsByConditions",
+      "NodeID": 56
+    },
+    "8": {
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "21803dbd-db0d-4545-997b-0336e4c617d5",
+      "ignoreSelf": false,
+      "NodeID": 8
+    },
+    "57": {
+      "UID": "07658f3c-1248-4618-a04b-80ddfc109ca8",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        56
+      ],
+      "NodeID": 57
+    },
+    "59": {
+      "UID": "e14983cb-0bb2-441a-b056-9749e152c7d8",
+      "name": "registerImmuneToDamageEvent",
+      "actionIds": [
+        58
+      ],
+      "NodeID": 59
+    },
+    "58": {
+      "buffId": 62132306,
+      "name": "removeBuff",
+      "UID": "5a02182f-1673-4ab3-9f49-9723d8df1b01",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "60": {
+      "eventName": "onReceiveBeAttacked",
+      "name": "getEventCombatContextTarget",
+      "UID": "948e4454-65c1-468f-8b7b-9181c999d11b",
+      "target": "CASTER",
+      "NodeID": 60
+    },
+    "11": {
+      "UID": "48650552-041f-492c-8ae9-b8cfe499c260",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10201_Buff_Parasitism",
+      "NodeID": 11
+    },
+    "61": {
+      "buffId": 62120101,
+      "name": "hasBuff",
+      "UID": "017d173a-1976-48b0-b9bf-64845a8d6bd2",
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "948e4454-65c1-468f-8b7b-9181c999d11b",
+        "target": "CASTER",
+        "NodeID": 60
+      },
+      "NodeID": 61
+    },
+    "5": {
+      "delay": 0,
+      "interval": 8.25,
+      "UID": "b08ae4dd-5b19-49e2-9292-17bf9170c984",
+      "name": "buffStartThink",
+      "NodeID": 5
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffDestroyIds": [
+    8,
+    11
+  ],
+  "onBuffStartIds": [
+    6,
+    5,
+    57,
+    59,
+    3,
+    7,
+    10
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2128303",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "熔岩暴龙-点燃",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "isPetTrigger": true,
+      "petTarget": "OWNER",
+      "triggerId": 102820091,
+      "name": "onEntityTrigger",
+      "UID": "4ae5606e-0601-46e8-993e-65cc8db04f72",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "7": {
+      "buffId": 920000102,
+      "name": "removeBuff",
+      "UID": "28df8880-04ff-48ed-9ee8-caf9fb71dc89",
+      "target": "CURPET",
+      "NodeID": 7
+    },
+    "6": {
+      "buffId": 920000102,
+      "name": "removeBuff",
+      "UID": "378ee75f-169c-4345-9c9f-c73ddce4df82",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "calcInfo": {
+    "dmg_fire_dec_ratio": 0.05
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    4,
+    7
+  ]
+}

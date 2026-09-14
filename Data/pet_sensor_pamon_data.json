@@ -1,0 +1,68 @@
+{
+  "210043002": {
+    "triggeredAction": "ST_MB_Angry",
+    "conditionIDList": [
+      "Distance_0_20",
+      "TargetParmontIsLaricander"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 10,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210043003": {
+    "triggeredAction": "ST_MB_Leave",
+    "conditionIDList": [
+      "Distance_0_20",
+      "TargetParmontIsWingenie"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 15,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210043004": {
+    "triggeredAction": "ST_MB_Angry",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsWildPet",
+      "DoAttack"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 10,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210043001": {
+    "triggeredAction": "ST_MB_Happy",
+    "conditionIDList": [
+      "Distance_0_20",
+      "TargetParmontIsLariple"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 10,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104503",
+  "NodeID": 1,
+  "UID": "d1822160-e693-4771-9952-029877be62f5",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "UID": "2078f9e9-63f9-4261-9f8d-27d66040617e",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": true,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  [
+    {
+      "reward": 42000,
+      "pic": "$UI_Img_TeachingCard_Low.png",
+      "name": 1594251488,
+      "num": 1
+    },
+    {
+      "reward": 42001,
+      "num": 2
+    },
+    {
+      "reward": 42002,
+      "num": 4
+    },
+    {
+      "reward": 42004,
+      "num": 5
+    }
+  ],
+  [
+    {
+      "reward": 42005,
+      "pic": "$UI_Img_TeachingCard_Intermediate.png",
+      "name": 1190116173,
+      "num": 1
+    },
+    {
+      "reward": 42006,
+      "num": 2
+    },
+    {
+      "reward": 42007,
+      "num": 3
+    },
+    {
+      "reward": 42009,
+      "num": 5
+    }
+  ],
+  [
+    {
+      "reward": 42010,
+      "pic": "$UI_Img_TeachingCard_Advanced.png",
+      "name": 1708586715,
+      "num": 1
+    },
+    {
+      "reward": 42011,
+      "num": 2
+    },
+    {
+      "reward": 42012,
+      "num": 3
+    },
+    {
+      "reward": 42014,
+      "num": 4
+    }
+  ]
+]

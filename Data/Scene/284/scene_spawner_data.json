@@ -1,0 +1,139 @@
+{
+  "64172058": {
+    "spawnType": 0,
+    "owner": "徐梦璇",
+    "sandboxType": 0,
+    "position": [
+      -258.49,
+      0.1,
+      5.36
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 63976941,
+    "id": 64172058,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64172056
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "63976955": {
+    "spawnType": 0,
+    "owner": "徐梦璇",
+    "sandboxType": 0,
+    "position": [
+      -246.1,
+      0.1,
+      -5.37
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 63976941,
+    "id": 63976955,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          63976954
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "63977182": {
+    "spawnType": 0,
+    "owner": "徐梦璇",
+    "sandboxType": 0,
+    "position": [
+      -245.89,
+      0.1,
+      -7.81
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 63976941,
+    "id": 63977182,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          63977181,
+          63977185
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "63992548": {
+    "spawnType": 0,
+    "owner": "徐梦璇",
+    "sandboxType": 0,
+    "position": [
+      -243.11,
+      0.1,
+      2.74
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 63976941,
+    "id": 63992548,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          63992547,
+          63992553
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64168332": {
+    "spawnType": 0,
+    "owner": "徐梦璇",
+    "sandboxType": 0,
+    "position": [
+      -257.06,
+      0.1,
+      3.58
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 63976941,
+    "id": 64168332,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64168323
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2000003",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "calcId": 2000003,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "425015c1-3546-4f75-a565-0bbdb486da78",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "c27750ea-aea0-4e00-ad21-626ea607c779",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "9": {
+      "value": {
+        "calcId": 2000003,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "425015c1-3546-4f75-a565-0bbdb486da78",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "0aa64f4d-8717-4b7e-9f02-26b768a1c198",
+      "target": "OWNER",
+      "NodeID": 9
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

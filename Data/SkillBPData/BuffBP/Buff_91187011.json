@@ -1,0 +1,27 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "bp_add_ratio": {
+      "calcId": 91187011,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "da1fb0d5-9b02-4b54-b5a2-fedf88b7742f",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_91187011",
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_AttackUp"
+    }
+  ]
+}

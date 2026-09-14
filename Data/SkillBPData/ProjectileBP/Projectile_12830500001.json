@@ -1,0 +1,164 @@
+{
+  "duration": 0.5,
+  "calcResultNodeId": 47,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10283_Skill_Rock",
+  "gravityRatio": 5,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 99,
+  "defaultHitSoundType": "h",
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    38,
+    42,
+    43,
+    101
+  ],
+  "BPName": "ability_12830500",
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "nodeMap": {
+    "38": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 47,
+      "NodeID": 38,
+      "UID": "f8582c9c-84e4-4102-9c82-20c35151e98b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            180,
+            1,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        47,
+        82
+      ]
+    },
+    "101": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c9aa3a2b-d164-4882-b0c8-3c052563243d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10283_Skill_ThrowRock04",
+      "NodeID": 101
+    },
+    "82": {
+      "target": "TARGET",
+      "duration": 10,
+      "buffId": 91283114,
+      "NodeID": 82,
+      "UID": "afcb302e-f200-4ee0-8350-0f35ea713b5d",
+      "layer": 2,
+      "name": "addBuff",
+      "level": 1
+    },
+    "42": {
+      "pos": {
+        "UID": "8052654b-696f-4f2c-8682-bcd5d19f57b8",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "de695b1e-d9cb-439e-9e68-ddafaece71aa",
+          "name": "getProjectilePos",
+          "NodeID": 40
+        },
+        "NodeID": 41
+      },
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0a4a9016-bd75-4ec4-b6cb-e72dd097d711",
+      "effectId": "Eff_Parmon_10283_Skill_Explode",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "47": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12830500,
+        "instant_dmg_rate_v": "param2",
+        "reduce_cur_tp_rate": "param2",
+        "type": 2
+      },
+      "UID": "8fdf710e-979b-4ded-aaae-55d6e46bfe2b",
+      "target": "TARGET",
+      "NodeID": 47,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 5,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      }
+    },
+    "43": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 128303,
+      "name": "createEntity",
+      "UID": "113495d9-e401-4b29-b0d3-5b1a896727f2",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 43,
+      "pos": {
+        "UID": "8052654b-696f-4f2c-8682-bcd5d19f57b8",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "de695b1e-d9cb-439e-9e68-ddafaece71aa",
+          "name": "getProjectilePos",
+          "NodeID": 40
+        },
+        "NodeID": 41
+      }
+    }
+  },
+  "tickInterval": 0.05,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

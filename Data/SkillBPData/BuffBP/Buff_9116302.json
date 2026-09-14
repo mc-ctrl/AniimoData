@@ -1,0 +1,93 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116302",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "3a4fde58-b5d0-4177-b07e-953aff36ab00",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "17": {
+      "name": "hasBuffTag",
+      "UID": "4dd8272d-8061-4907-9566-3542dd3b1fa3",
+      "target": {
+        "UID": "15416b3f-b5bf-426b-a18c-e1ec17f5a1e6",
+        "name": "getEventAttackTarget",
+        "NodeID": 14
+      },
+      "NodeID": 17,
+      "buffTag": 9
+    },
+    "9": {
+      "UID": "3ac48f23-fd3d-4161-9581-538650a8837a",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "16": {
+      "UID": "0954b42d-e16c-4fcb-bc76-bc670f50aef7",
+      "conditionIds": [
+        17,
+        15
+      ],
+      "name": "conditionOr",
+      "NodeID": 16
+    },
+    "15": {
+      "buffId": 2116309,
+      "name": "hasBuff",
+      "UID": "c74b84d4-17fd-4826-8d02-c6b41a98106f",
+      "target": {
+        "UID": "15416b3f-b5bf-426b-a18c-e1ec17f5a1e6",
+        "name": "getEventAttackTarget",
+        "NodeID": 14
+      },
+      "NodeID": 15
+    },
+    "11": {
+      "UID": "93e576f0-2516-4391-8b82-70a6f73b7b8c",
+      "target": "OWNER",
+      "name": "clearDynamicAttribute",
+      "NodeID": 11
+    },
+    "7": {
+      "name": "addDynamicAttribute",
+      "UID": "38a628d3-38f5-48d7-86f7-54916818b295",
+      "target": "OWNER",
+      "NodeID": 7,
+      "calcInfoByLuaConfig": {
+        "id": 9116302,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      }
+    },
+    "12": {
+      "UID": "a7c86c09-c529-416c-8ac7-2df595bb89a6",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    12
+  ]
+}

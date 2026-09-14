@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_70020100",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10101210,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 70020100001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Cannon_Skill_Burst_Dmg",
+    "Cannon_Skill_Burst_DmgEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "ParadoxNotion.Serialization.LUASerializer+constStringActionNodeInfo",
+    "Eff_Hit_None_Blunt",
+    "Eff_Monster_Robot_IndicatorBox_02_Rogue"
+  ],
+  "searchRelation": 2,
+  "name": "暗普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

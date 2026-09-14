@@ -1,0 +1,92 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_16830003",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10683_Skill_Attack04_bullet",
+  "duration": 1,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "defaultHitSoundType": "h",
+  "minAngularOffset": 0,
+  "moveSpeed": 150,
+  "onProjectileFinishIds": {},
+  "onProjectileHitIds": [
+    35,
+    40
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "38": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.45
+      },
+      "name": "calcResult",
+      "UID": "ad9368a3-f917-4552-8947-d3f860fc06bd",
+      "target": "CASTER",
+      "NodeID": 38
+    },
+    "40": {
+      "actionIds": [
+        38,
+        43
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "9186ae56-dfac-426d-b82f-2f8ba733307c",
+      "name": "doActionsByConditions",
+      "NodeID": 40
+    },
+    "41": {
+      "UID": "10a44228-c879-43d3-90e2-a712baf47b8e",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 41
+    },
+    "35": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 16830003,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "75e89905-7f1b-4649-9c68-31ce7a5d1467",
+      "target": "TARGET",
+      "NodeID": 35,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "elementType": 8,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Rock_Blunt",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101
+      }
+    },
+    "43": {
+      "key": "PirateCrabCast",
+      "name": "setCacheVal",
+      "UID": "9ce53885-8767-4714-9a2c-71329d198dbc",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 43
+    }
+  },
+  "tickInterval": 0,
+  "calcResultNodeId": 35,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Rock_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

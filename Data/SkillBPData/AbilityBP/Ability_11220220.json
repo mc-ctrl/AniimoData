@@ -1,0 +1,61 @@
+{
+  "BPName": "ability_11220220",
+  "NodeID": 1,
+  "UID": "3c88d30e-ca4e-493a-b024-ad060491adcd",
+  "abilityIndicator": 1,
+  "abilityParamId": 10400052,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11220220001,
+      "name": "setCombatActionTimeline",
+      "UID": "ec86f502-87a3-43c8-a892-8e1f94fad818",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 6,
+  "preloadAnims": [
+    "Skill_Current"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10122_Skill_Current",
+    "Eff_Hit_Electric_Slash_Y"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 4.8,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      0.8,
+      0.8,
+      4.8,
+      2,
+      2
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

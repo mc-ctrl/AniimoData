@@ -1,0 +1,16 @@
+{
+  "Sleep": {
+    "ActionList": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ]
+  },
+  "Eat": {
+    "ActionList": [
+      "Behav_EatStart",
+      "Behav_EatLoop",
+      "Behav_EatEnd"
+    ]
+  }
+}

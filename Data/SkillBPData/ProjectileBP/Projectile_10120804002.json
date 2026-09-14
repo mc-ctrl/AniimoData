@@ -1,0 +1,97 @@
+{
+  "duration": 8,
+  "calcResultNodeId": 3,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "T_Eff_Starry_Z_10012_EX_Bullet",
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.84,
+        "instant_dmg_rate_v": 2
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "f7b16d97-5db9-4724-b43d-66b82906206d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "58": {
+      "UID": "5e2f8091-3ea9-489d-81b4-9c3db7bcf655",
+      "name": "setProjectileSleep",
+      "time": 0.8,
+      "NodeID": 58
+    },
+    "29": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "64ffa95e-173e-47cc-9f29-2894a3a8f1d7",
+      "effectId": "Eff_Parmon_10011_Attack_Hit",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "5": {
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "b17adcaf-d194-4e49-b1c4-098188aabb89",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        3
+      ]
+    }
+  },
+  "moveSpeed": 16,
+  "onProjectileFinishIds": [
+    5,
+    29
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "acceleration": 0,
+  "startSleepTime": 0,
+  "BPName": "ability_10120804",
+  "ignoreAbilityElement": true,
+  "maxHitNum": 0,
+  "onProjectileStartIds": [
+    58
+  ]
+}

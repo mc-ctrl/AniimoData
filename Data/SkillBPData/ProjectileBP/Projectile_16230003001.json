@@ -1,0 +1,191 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_16230003",
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "effectId": {
+    "str": "Eff_Parmon_10623_Skill_Bubble_",
+    "name": "constString",
+    "UID": "1a7f8deb-e677-4d1f-9fe9-f2d7463911fd",
+    "NodeID": 33,
+    "concatenateNumber": {
+      "key": "10623RandomBubble",
+      "name": "getCacheVal",
+      "UID": "769f3a38-e9d6-4154-9fe2-9605e07089d8",
+      "target": "OWNER",
+      "NodeID": 32
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    43,
+    46,
+    20
+  ],
+  "calcResultNodeId": 18,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "48": {
+      "buffId": 9162304,
+      "name": "hasBuff",
+      "UID": "5f71073b-88a4-468d-89af-f09ff4a1c78d",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "24": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 18,
+      "NodeID": 24,
+      "UID": "e4bf7a88-5241-471f-92e3-6c9e0d6f8ca7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        18
+      ]
+    },
+    "18": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 16230003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "f7e28df3-3f92-42fd-9021-45ae09bff24e",
+      "target": "TARGET",
+      "NodeID": 18,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "SFX_Combat_10623_Skill_Attack02_hit",
+        "hitCameraShakeId": 10100
+      }
+    },
+    "46": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "5a5656dc-1c52-470f-842c-8abca1aa3f6e",
+      "effectId": {
+        "str": "Eff_Parmon_10623_Skill_Bubble_Hit_",
+        "name": "constString",
+        "UID": "f903bd07-2f42-4a7d-acbe-14e7fb4e1449",
+        "NodeID": 45,
+        "concatenateNumber": {
+          "UID": "a4b7ebff-fe6e-4bb7-a317-4fa34584c2e3",
+          "name": "getProjectileCacheVal",
+          "key": "10623Bubble2",
+          "NodeID": 44
+        }
+      },
+      "speed": 1,
+      "NodeID": 46
+    },
+    "19": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 18,
+      "NodeID": 19,
+      "UID": "52585a56-9f33-4c4c-98f6-f7e6805cf809",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 1
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        18
+      ]
+    },
+    "20": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "dee0c2c1-3de3-4631-9062-08144fdc06d7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "43": {
+      "key": "10623Bubble2",
+      "name": "setProjectileCacheVal",
+      "UID": "03386eff-3fe5-4bbf-b66e-169fd4ecf0ac",
+      "val": {
+        "key": "10623RandomBubble",
+        "name": "getCacheVal",
+        "UID": "ff34031e-2096-46f6-b5cb-bb914d922a93",
+        "target": "OWNER",
+        "NodeID": 42
+      },
+      "NodeID": 43
+    }
+  },
+  "tickInterval": 0,
+  "duration": 1,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

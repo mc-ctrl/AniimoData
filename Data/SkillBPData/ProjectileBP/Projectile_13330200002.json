@@ -1,0 +1,146 @@
+{
+  "trackingNoOffsetRotationRange": 3,
+  "duration": 5,
+  "calcResultNodeId": 151,
+  "NodeID": 0,
+  "defaultHitSoundType": "h",
+  "effectId": "Eff_Parmon_10333_Skill_Bullet",
+  "nodeMap": {
+    "28": {
+      "actionIds": [
+        26
+      ],
+      "name": "actOnTargets",
+      "UID": "d6f1e9ad-ce14-430d-9174-1bcaf84c5d5d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 28
+    },
+    "153": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 151,
+      "NodeID": 153,
+      "UID": "3c19363b-68d7-47eb-a9d6-355d5cec35b9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        151,
+        154
+      ]
+    },
+    "151": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13330200,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "306164cf-6b88-4641-bb7d-1f0196e3915f",
+      "target": "TARGET",
+      "NodeID": 151,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt_Big"
+      }
+    },
+    "154": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "9587cdc5-5714-49e1-98ef-c1cea5eed225",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1.01,
+      "NodeID": 154
+    },
+    "26": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "e2f606f2-8e30-46c6-bb55-97b5218eeb1c",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1.01,
+      "NodeID": 26
+    }
+  },
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "angularIncreaseDuration": 0.05,
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    28
+  ],
+  "onProjectileHitIds": [
+    153
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "BPName": "ability_13330200",
+  "tickInterval": 0.05,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt_Big",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

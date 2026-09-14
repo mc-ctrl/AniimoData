@@ -1,0 +1,110 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "heal_add_ratio": 0
+  },
+  "NodeID": 1,
+  "UID": "766ec944-932c-4930-9d5f-fd03a1b73f88",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    4
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 2700200120,
+    "heal_add_ratio": "param1",
+    "type": 1
+  },
+  "BPName": "buff_2700200120",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "calcInfo": {
+        "instant_dmg_fix": {
+          "rValue": {
+            "calcId": 2700200120,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 10,
+            "UID": "52d8f1cf-9f74-412d-ae0f-e5b126c9f387",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "dff9c856-7af1-4b0a-9ca4-67af728e4333",
+          "NodeID": 6,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "629da824-6e3d-4d3c-8f24-266c0a8bcb79",
+            "target": "OWNER",
+            "NodeID": 5,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "c249a540-0680-4cd1-aff4-6ff8e3670700",
+      "checkValidTarget": false,
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "a2f80d41-c486-47bd-bc4a-6af9390d00cf",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "name": "isInCombat",
+      "UID": "9f53f788-93b2-4017-803f-4dbd1ad93fa4",
+      "target": "OWNER",
+      "NodeID": 14,
+      "not": false
+    },
+    "10": {
+      "calcId": 2700200120,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "52d8f1cf-9f74-412d-ae0f-e5b126c9f387",
+      "name": "getParamByLuaConfig"
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "840e0203-3feb-4889-a3c7-98c08372a751",
+      "effectId": "Eff_Parmon_10513_Skill_Buff_Fire01",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "8": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "d3a66a58-1cb0-4e62-8c88-2264035ce271",
+      "name": "buffStartThink",
+      "NodeID": 8
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b77908b4-c6c0-409a-aa13-03d3c11202d3",
+      "effectId": "Eff_Parmon_10513_Skill_Buff_Fire01",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    13
+  ],
+  "onBuffStartIds": [
+    8,
+    12
+  ]
+}

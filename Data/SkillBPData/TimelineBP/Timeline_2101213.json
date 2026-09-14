@@ -1,0 +1,70 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": [
+        0,
+        1,
+        0.2
+      ],
+      "templateId": 2101213201,
+      "name": "createProjectile",
+      "UID": "02c50387-bc28-4c02-b02b-ba57bc590309",
+      "rotation": "ToPos",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "rotationTowardsPos": {
+        "key": "targetPos",
+        "name": "getCacheVal",
+        "UID": "5bc65c57-db79-4a0b-b017-f2b5b120d563",
+        "target": "MASTER",
+        "NodeID": 2
+      },
+      "NodeID": 3,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "4": {
+      "duration": 0.2,
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4,
+      "UID": "daec8752-0546-4d4c-99c9-96e7206349a7",
+      "name": "addTimer"
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "25977206-e468-40d3-8097-d612c2ed5148",
+      "effectId": "Eff_Parmon_10371_Skill_MoonLight_Combo",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "6": {
+      "eventType": "NotifyState",
+      "endTime": 15,
+      "NodeID": 6,
+      "UID": "473a9e52-7a7e-4ef3-890c-8034c0ea44e0",
+      "onUpdate": {
+        "actionIds": [
+          4,
+          8
+        ]
+      },
+      "startTime": 1,
+      "tickInterval": 2
+    }
+  },
+  "BPName": "timeline_2101213",
+  "NodeID": 1,
+  "UID": "c5f957ab-050f-4b6c-95dc-869abfcaf882",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 15
+}

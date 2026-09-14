@@ -1,0 +1,112 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21194050",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2119405,
+      "NodeID": 3,
+      "UID": "5981a999-1132-4dda-a1b6-05f2940a2916",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "delay": 3,
+      "interval": 0.1,
+      "UID": "f18d2e16-b825-456a-b5d8-0cd8acf863bd",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "9": {
+      "relation": 1,
+      "radius": 50,
+      "heightDown": 10,
+      "NodeID": 9,
+      "UID": "2ec8ff9c-1735-4eb6-bf07-8daac43e83c5",
+      "name": "searchEntity",
+      "heightUp": 10,
+      "filterCondition": 8
+    },
+    "6": {
+      "buffId": 2119405,
+      "name": "removeBuff",
+      "UID": "9a830d49-7f61-453c-9852-55f80074e03e",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "30d2a0e4-febe-4fb2-819b-9879552f7314",
+      "target": {
+        "relation": 1,
+        "radius": 50,
+        "heightDown": 10,
+        "NodeID": 9,
+        "UID": "2ec8ff9c-1735-4eb6-bf07-8daac43e83c5",
+        "name": "searchEntity",
+        "heightUp": 10,
+        "filterCondition": 8
+      },
+      "name": "getTargetConfigData",
+      "NodeID": 10
+    },
+    "8": {
+      "name": "isActorType",
+      "UID": "50c2263f-5530-4030-9816-7984b6c52a6f",
+      "target": "TARGET",
+      "NodeID": 8,
+      "actorType": 3
+    },
+    "7": {
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "792cf47b-d521-496d-a584-d5fa8f3dace0",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        6
+      ]
+    },
+    "12": {
+      "rValue": 1019,
+      "name": "equal",
+      "UID": "e5f276b5-af0e-49c7-810e-975cde7ccfb5",
+      "NodeID": 12,
+      "lValue": {
+        "data": {
+          "UID": "30d2a0e4-febe-4fb2-819b-9879552f7314",
+          "target": {
+            "relation": 1,
+            "radius": 50,
+            "heightDown": 10,
+            "NodeID": 9,
+            "UID": "2ec8ff9c-1735-4eb6-bf07-8daac43e83c5",
+            "name": "searchEntity",
+            "heightUp": 10,
+            "filterCondition": 8
+          },
+          "name": "getTargetConfigData",
+          "NodeID": 10
+        },
+        "propertyName": "ethnicGroup",
+        "name": "getProperty",
+        "UID": "c8c9b064-c71f-4379-b560-83dad93ce7e8",
+        "NodeID": 11
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

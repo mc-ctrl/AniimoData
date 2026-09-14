@@ -1,0 +1,54 @@
+{
+  "90836552": {
+    "graphId": 90836552,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "Out",
+        "targetNode": 2,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "97f3c4005d8d267eaa5d60d55243ebfd",
+    "nodes": {
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "82d0a8a9-4184-4ecf-b9c0-54cccf09f5d6"
+      },
+      "1": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "npcSpecialState"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "specialState": 0,
+          "staticId": 0
+        },
+        "uid": "50daf876-d165-448e-8afc-ea881d96eb55"
+      },
+      "2": {
+        "_inputPortValues": {
+          "Success": true
+        },
+        "_outputPortValues": {},
+        "className": "GraphEndNode",
+        "uid": "0d918e5b-5439-4a2f-8fa3-9bd5c59e4104"
+      }
+    }
+  }
+}

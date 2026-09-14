@@ -1,0 +1,131 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          23
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "target": "CASTER",
+      "duration": -1,
+      "buffId": 2119413,
+      "NodeID": 24,
+      "UID": "d49ed8a8-7692-4d01-880e-d3faddef5ef7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "1a140359-c379-4596-9b20-ec36e3bbe276",
+      "NodeID": 15,
+      "groupKey": 0
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "255118da-a577-4864-92c3-d849dbf9c00c",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_GreatSword_End",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "23": {
+      "buffId": 2119413,
+      "name": "removeBuff",
+      "UID": "4f9bd4e2-21df-4390-a1e6-a92013aaceef",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 22,
+      "UID": "1d6f0204-75c5-4950-add6-94394fc47a31"
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          15,
+          24
+        ]
+      },
+      "NodeID": 5
+    },
+    "18": {
+      "UID": "72526b86-1b0d-445d-b7ca-4ec0faa74c73",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          20,
+          19
+        ]
+      },
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 11
+    },
+    "19": {
+      "buffId": 2119411,
+      "name": "removeBuff",
+      "UID": "98f9737e-7dcf-47ba-9dfa-6ba097b3baa5",
+      "target": "CASTER",
+      "NodeID": 19
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "2acd62fd-8d54-4c8d-9390-71823934d24e",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_GreatSword_Loop",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ab36897b-67ae-4c0b-9288-29889feb8e8f",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Behav_Angry"
+    }
+  },
+  "BPName": "ability_11949902",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    13,
+    18,
+    22
+  ],
+  "layer": "Base",
+  "length": 4
+}

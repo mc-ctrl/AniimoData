@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_12229912",
+  "NodeID": 1,
+  "UID": "788b05eb-fded-4506-8bf5-6974569adf6b",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12229912001,
+      "name": "setCombatActionTimeline",
+      "UID": "09d1b24d-c604-4bf8-a953-84465e2a2b75",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Spark"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_1022200_Skill_lightning"
+  ],
+  "searchRelation": 2,
+  "name": "螳螂必杀技",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10400260
+}

@@ -1,0 +1,827 @@
+{
+  "nodeMap": {
+    "52": {
+      "key": "90207Trap02",
+      "name": "setCacheVal",
+      "UID": "b1583d45-7348-4cdb-a968-6dd9c8d2281d",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          -6,
+          0,
+          11
+        ],
+        "templateId": 80000005,
+        "name": "createEntity",
+        "UID": "4c1e3800-5b97-46eb-b6c9-919d1c769302",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Puppet",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 51,
+        "pos": "OWNER"
+      },
+      "NodeID": 52
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          37,
+          68
+        ]
+      },
+      "eventType": "Notify",
+      "time": 23,
+      "NodeID": 39,
+      "UID": "76f49bf2-3800-44f0-9fb5-7dc91db0ddf3"
+    },
+    "63": {
+      "UID": "303fa1ce-bfe2-4204-b756-f692e38b44e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 63
+    },
+    "41": {
+      "UID": "4451e169-98ac-444f-bb1c-7384ee812289",
+      "name": "hideBubbleMsg",
+      "msgId": 2174,
+      "NodeID": 41
+    },
+    "42": {
+      "name": "stopSoundStr",
+      "UID": "be418127-f496-4b34-8bb5-2825ef606189",
+      "soundId": "SFX_Combat_Monster_90207_WeakLoop",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "35": {
+      "buffId": 29020715,
+      "name": "removeBuff",
+      "UID": "eabfb08c-384b-43a5-9417-7ed74e34191b",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "44": {
+      "UID": "42ed35b7-82ec-438b-be6e-4cb39920d763",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "NodeID": 44
+    },
+    "66": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "df039dba-4ad9-4f86-86fa-e7c6aed052f5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_MazeCreate",
+      "NodeID": 66
+    },
+    "67": {
+      "UID": "2936d800-e9f3-4f94-91f5-000a8aaa4ea7",
+      "name": "showDialog",
+      "dialogId": 20000170,
+      "NodeID": 67
+    },
+    "68": {
+      "buffId": 29020715,
+      "name": "removeBuff",
+      "UID": "62f81a8e-9372-46f3-8b85-f69208a3281c",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "87": {
+      "key": "90207VineWall_03",
+      "name": "setCacheVal",
+      "UID": "66650d19-af60-46ee-af1c-0b0bac342080",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          -12.68,
+          0,
+          10.58
+        ],
+        "templateId": 9020712,
+        "name": "createEntity",
+        "UID": "f36123bd-76fe-4104-86ab-eaa6d99fe6a4",
+        "offsetRotation": [
+          0,
+          -46.715,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 86,
+        "pos": "OWNER"
+      },
+      "NodeID": 87
+    },
+    "3": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 3,
+      "UID": "974f31eb-6477-4337-9e8a-d5ace1b50d42",
+      "endAni": "WeakEnd",
+      "loopAni": "WeakLoop",
+      "startAni": "WeakStart"
+    },
+    "71": {
+      "key": "90207VineWall_05",
+      "name": "setCacheVal",
+      "UID": "f513e273-87ac-439d-a758-cd813cb9e7c3",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0.28439,
+          0,
+          -22.72
+        ],
+        "templateId": 9020714,
+        "name": "createEntity",
+        "UID": "0e391767-6ed0-40d5-9efa-572a058cde9f",
+        "offsetRotation": [
+          0,
+          8.023,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 70,
+        "pos": "OWNER"
+      },
+      "NodeID": 71
+    },
+    "116": {
+      "buffId": 90207001,
+      "name": "removeBuff",
+      "UID": "b60ae689-370a-4d8b-a456-28460c6082c3",
+      "target": "OWNER",
+      "NodeID": 116
+    },
+    "115": {
+      "templateId": 1009207,
+      "name": "checkTargetTemplateId",
+      "UID": "c5259dee-0421-40f2-a5be-59a311d8756c",
+      "target": "OWNER",
+      "NodeID": 115
+    },
+    "114": {
+      "action": {
+        "actionIds": [
+          113
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 114,
+      "UID": "ae876240-85b3-4f5e-9427-a78e2aa72ba2"
+    },
+    "113": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "73367ba0-1003-4a6a-9fc4-86900cf4a371",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_WeakLoop",
+      "NodeID": 113
+    },
+    "112": {
+      "UID": "cac3a123-bf2e-4db6-a328-72c03ee19a9a",
+      "actorId": {
+        "key": "90207VineWall_Wall",
+        "name": "getCacheVal",
+        "UID": "2ada1655-5bb8-4a4d-bb76-4bb5ef53b718",
+        "target": "OWNER",
+        "NodeID": 111
+      },
+      "name": "destroyEntity",
+      "NodeID": 112
+    },
+    "110": {
+      "UID": "d01fefef-aba4-4977-9ba9-63ea115fffc5",
+      "actorId": {
+        "key": "90207VineWall_Wall",
+        "name": "getCacheVal",
+        "UID": "8dd6a6e2-4134-4c87-b7e3-1ef2831081bb",
+        "target": "OWNER",
+        "NodeID": 109
+      },
+      "name": "destroyEntity",
+      "NodeID": 110
+    },
+    "108": {
+      "UID": "6507b55b-51d5-4dc8-bb6f-29d3427b2cb2",
+      "actorId": {
+        "key": "90207VineWall_06",
+        "name": "getCacheVal",
+        "UID": "e87e15b7-6c9c-4658-b91f-c000aa16aa03",
+        "target": "OWNER",
+        "NodeID": 107
+      },
+      "name": "destroyEntity",
+      "NodeID": 108
+    },
+    "93": {
+      "UID": "14f74985-1577-4bad-8856-edcf2f50265c",
+      "name": "cancelLock",
+      "NodeID": 93
+    },
+    "58": {
+      "key": "90207Trap04",
+      "name": "setCacheVal",
+      "UID": "9a9ba4b6-9ce8-4a8f-8a77-6ce0051f5697",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          -19,
+          0,
+          7
+        ],
+        "templateId": 80000005,
+        "name": "createEntity",
+        "UID": "8bb08ebf-c3c8-4cfd-b45e-fbf82b4aec4b",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Puppet",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 57,
+        "pos": "OWNER"
+      },
+      "NodeID": 58
+    },
+    "94": {
+      "UID": "abbdae88-cdf5-4d03-b5db-4ddd80b375c2",
+      "name": "hideBattleDialog",
+      "dialogId": 20000170,
+      "NodeID": 94
+    },
+    "28": {
+      "buffId": 10064,
+      "name": "removeBuff",
+      "UID": "54b02cd6-9d4a-44ab-bcb8-b98816efd43d",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "104": {
+      "UID": "ea3b3700-be3f-497a-bbf9-c1dbf135380d",
+      "actorId": {
+        "key": "90207VineWall_04",
+        "name": "getCacheVal",
+        "UID": "0061e4c1-c53e-4a7e-ae0d-9ef4b5a640fb",
+        "target": "OWNER",
+        "NodeID": 103
+      },
+      "name": "destroyEntity",
+      "NodeID": 104
+    },
+    "5": {
+      "UID": "6ab6cea2-064e-4f92-8eb9-b22585b9f992",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          36
+        ]
+      },
+      "NodeID": 5
+    },
+    "96": {
+      "UID": "dc77f427-1124-497c-a239-456660ad2ee5",
+      "actorId": {
+        "key": "90207VineWall_01",
+        "name": "getCacheVal",
+        "UID": "e3103281-dc80-416b-851c-95b4f3f7726f",
+        "target": "OWNER",
+        "NodeID": 95
+      },
+      "name": "destroyEntity",
+      "NodeID": 96
+    },
+    "34": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 29020714,
+      "NodeID": 34,
+      "UID": "38b1b549-d23f-4c0c-bc83-a0b38d8db133",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "100": {
+      "UID": "2cab4b6d-8f73-42ad-9757-bca28c5bc753",
+      "actorId": {
+        "key": "90207VineWall_02",
+        "name": "getCacheVal",
+        "UID": "b89c7174-96a3-4a6c-8aa6-b34ccc72c7d1",
+        "target": "OWNER",
+        "NodeID": 99
+      },
+      "name": "destroyEntity",
+      "NodeID": 100
+    },
+    "91": {
+      "key": "90207VineWall_06",
+      "name": "setCacheVal",
+      "UID": "74a39ad5-4f68-47c7-bf35-ce7641d5f9bd",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          2,
+          -0.5,
+          6.7877
+        ],
+        "templateId": 9020715,
+        "name": "createEntity",
+        "UID": "a0b00796-0ffd-4fde-9e23-ca1fa421ca13",
+        "offsetRotation": [
+          0,
+          6.813,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 90,
+        "pos": "OWNER"
+      },
+      "NodeID": 91
+    },
+    "98": {
+      "action": {
+        "actionIds": [
+          96,
+          100,
+          102,
+          104,
+          110,
+          106,
+          108
+        ]
+      },
+      "eventType": "Notify",
+      "time": 20,
+      "NodeID": 98,
+      "UID": "72e0f9b3-1469-49cd-a991-8c8d757be820"
+    },
+    "83": {
+      "key": "90207VineWall_02",
+      "name": "setCacheVal",
+      "UID": "19927ba1-033d-4477-9a0f-28d5278759ca",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          13.13,
+          0,
+          -4.26
+        ],
+        "templateId": 9020711,
+        "name": "createEntity",
+        "UID": "9a951316-96cc-4c35-9a4d-04aaa4b3ba62",
+        "offsetRotation": [
+          0,
+          94.769,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 82,
+        "pos": "OWNER"
+      },
+      "NodeID": 83
+    },
+    "79": {
+      "key": "90207VineWall_01",
+      "name": "setCacheVal",
+      "UID": "767d8009-0ff6-4489-8d9f-00d01033810f",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          6.98,
+          0,
+          9.74
+        ],
+        "templateId": 9020710,
+        "name": "createEntity",
+        "UID": "639c7006-3266-446a-b99d-a4d582802062",
+        "offsetRotation": [
+          0,
+          121.949,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 78,
+        "pos": "OWNER"
+      },
+      "NodeID": 79
+    },
+    "75": {
+      "key": "90207VineWall_04",
+      "name": "setCacheVal",
+      "UID": "56c9d926-ec43-465d-a6fe-ce2845728176",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          -7.65,
+          0,
+          -1.30585
+        ],
+        "templateId": 9020713,
+        "name": "createEntity",
+        "UID": "7ed79955-1967-4cdd-ac7e-1c200a9605ff",
+        "offsetRotation": [
+          0,
+          78.925,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 74,
+        "pos": "OWNER"
+      },
+      "NodeID": 75
+    },
+    "31": {
+      "UID": "6b242134-3ec8-4c1b-8962-82f55da4b28a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41,
+          63,
+          29,
+          67,
+          93
+        ]
+      },
+      "NodeID": 31
+    },
+    "65": {
+      "UID": "e6008ba4-3978-437b-b83e-689599f9341d",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 65
+    },
+    "40": {
+      "UID": "71914e8d-a0b9-4745-bdc5-9f1177656fdf",
+      "name": "hideBubbleMsg",
+      "msgId": 2175,
+      "NodeID": 40
+    },
+    "102": {
+      "UID": "18f5c5b0-189b-424f-80a9-0ef87a98f0ce",
+      "actorId": {
+        "key": "90207VineWall_03",
+        "name": "getCacheVal",
+        "UID": "e22d2916-e09f-4980-b043-95cfbff7086d",
+        "target": "OWNER",
+        "NodeID": 101
+      },
+      "name": "destroyEntity",
+      "NodeID": 102
+    },
+    "11": {
+      "UID": "1b655a45-61af-43cc-a8f4-a21e38f1b32f",
+      "actorId": {
+        "key": "90207VineWall_01",
+        "name": "getCacheVal",
+        "UID": "7ce54c9f-efae-40fd-a104-73adbd51d7a0",
+        "target": "OWNER",
+        "NodeID": 10
+      },
+      "name": "destroyEntity",
+      "NodeID": 11
+    },
+    "33": {
+      "UID": "815419ed-40a8-4088-89b3-72c1dabf0ff8",
+      "actorId": {
+        "key": "90207VineWall_06",
+        "name": "getCacheVal",
+        "UID": "a9b6b0a8-25a9-4a0b-81ad-a840487c17fe",
+        "target": "OWNER",
+        "NodeID": 32
+      },
+      "name": "destroyEntity",
+      "NodeID": 33
+    },
+    "21": {
+      "UID": "cac5175e-637c-4103-a285-8db6581c2eb2",
+      "actorId": {
+        "key": "90207VineWall_05",
+        "name": "getCacheVal",
+        "UID": "07a4314b-3437-4b24-acdf-67a374a9e654",
+        "target": "OWNER",
+        "NodeID": 20
+      },
+      "name": "destroyEntity",
+      "NodeID": 21
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "17c492a8-95e8-4f4b-8694-cdd6e73c5373",
+      "effectId": "Eff_Monster_90207_WeakLoop",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "d8e80216-6cbb-4b58-938d-268afce4c36b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          15,
+          17,
+          19,
+          21,
+          112,
+          33,
+          40,
+          22,
+          65,
+          35,
+          42,
+          34,
+          94
+        ]
+      },
+      "NodeID": 13
+    },
+    "55": {
+      "key": "90207Trap03",
+      "name": "setCacheVal",
+      "UID": "4ba5ffcf-384a-43e0-8275-6ebcc0fa9f9a",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          3,
+          0,
+          -12
+        ],
+        "templateId": 80000005,
+        "name": "createEntity",
+        "UID": "f3925bf0-150a-4044-848c-081eb6116853",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Puppet",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 54,
+        "pos": "OWNER"
+      },
+      "NodeID": 55
+    },
+    "29": {
+      "actionIds": [
+        116
+      ],
+      "conditionActionIds": [
+        115
+      ],
+      "UID": "f63d4144-5138-4426-bec9-4ae39ee2f675",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 29
+    },
+    "106": {
+      "UID": "d006ede2-f9e2-4047-9369-034b592ab96c",
+      "actorId": {
+        "key": "90207VineWall_05",
+        "name": "getCacheVal",
+        "UID": "cef5a76f-8701-496e-a481-eee5bd6e9e6d",
+        "target": "OWNER",
+        "NodeID": 105
+      },
+      "name": "destroyEntity",
+      "NodeID": 106
+    },
+    "15": {
+      "UID": "ee354690-015d-4559-baf1-e5896a83dbeb",
+      "actorId": {
+        "key": "90207VineWall_02",
+        "name": "getCacheVal",
+        "UID": "8dc1edc5-a42a-4a68-83de-07c0a7209b4c",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "47": {
+      "key": "90207Trap01",
+      "name": "setCacheVal",
+      "UID": "1d604338-68fa-4442-a605-79f9c7140141",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          16,
+          0,
+          2
+        ],
+        "templateId": 80000005,
+        "name": "createEntity",
+        "UID": "8f0ac0d9-602d-4c4c-ac6f-c7dc7f659ef7",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Puppet",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 46,
+        "pos": "OWNER"
+      },
+      "NodeID": 47
+    },
+    "25": {
+      "key": "90207VineWall_Wall",
+      "name": "setCacheVal",
+      "UID": "8c68f125-3cc5-4ac7-82da-77566f277e21",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 9020702,
+        "name": "createEntity",
+        "UID": "b7f8aa74-7d37-467a-abfa-83a8f7e20c41",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 24,
+        "pos": "OWNER"
+      },
+      "NodeID": 25
+    },
+    "27": {
+      "UID": "f05bbe1d-55ec-41a1-8d29-52ef3fc88bc9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          79,
+          83,
+          75,
+          71,
+          87,
+          91,
+          66,
+          25
+        ]
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "2987a776-2f27-47f9-b377-526119963d4e",
+      "actorId": {
+        "key": "90207VineWall_03",
+        "name": "getCacheVal",
+        "UID": "c830df06-36e9-45bb-a4d1-854fac975438",
+        "target": "OWNER",
+        "NodeID": 16
+      },
+      "name": "destroyEntity",
+      "NodeID": 17
+    },
+    "49": {
+      "UID": "ecafa735-9816-4ecd-bddb-96036ef54ec2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          47,
+          52,
+          55,
+          58,
+          61
+        ]
+      },
+      "NodeID": 49
+    },
+    "37": {
+      "name": "stopSoundStr",
+      "UID": "0a3daddf-4642-466a-8275-94f4f383a78c",
+      "soundId": "SFX_Combat_Monster_90207_WeakLoop",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "43": {
+      "buffId": 29020715,
+      "name": "removeBuff",
+      "UID": "6ac0de33-2130-4675-aa25-6c612bc9234f",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "19": {
+      "UID": "121ca5f6-3360-4fd2-8f4f-9497d3701ea9",
+      "actorId": {
+        "key": "90207VineWall_04",
+        "name": "getCacheVal",
+        "UID": "460ba7f0-3153-4df4-8e9c-0160d95fd904",
+        "target": "OWNER",
+        "NodeID": 18
+      },
+      "name": "destroyEntity",
+      "NodeID": 19
+    },
+    "61": {
+      "key": "90207Trap04",
+      "name": "setCacheVal",
+      "UID": "2232b053-c66f-4eff-b448-42a3773605c7",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          13,
+          0,
+          -17
+        ],
+        "templateId": 80000005,
+        "name": "createEntity",
+        "UID": "7b2f445f-877e-4b72-b07b-a8feb2fa3750",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Puppet",
+        "stick": 0,
+        "rot": "OWNER",
+        "NodeID": 60,
+        "pos": "OWNER"
+      },
+      "NodeID": 61
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "38c7bef7-9acd-40b9-87f1-58da1ff64a0f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_WeakLoop",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_902070601",
+  "NodeID": 7,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    31,
+    13,
+    44,
+    114,
+    5,
+    39,
+    98,
+    49,
+    27
+  ],
+  "layer": "Base",
+  "length": 25
+}

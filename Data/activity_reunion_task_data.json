@@ -1,0 +1,94 @@
+[
+  [
+    {
+      "sort": 1,
+      "taskType": 1,
+      "taskName": -978763759,
+      "taskConditions": 6047,
+      "score": 1,
+      "quality": 0,
+      "taskDes": -239115728,
+      "event": 1398
+    },
+    {
+      "sort": 2,
+      "taskType": 1,
+      "taskName": -1582644954,
+      "taskConditions": 6048,
+      "score": 1,
+      "quality": 1,
+      "taskDes": -1100724479,
+      "event": 1398
+    },
+    {
+      "sort": 3,
+      "taskType": 1,
+      "taskName": -1432295157,
+      "taskConditions": 6049,
+      "score": 1,
+      "quality": 2,
+      "taskDes": -653986591,
+      "event": 1398
+    },
+    {
+      "sort": 1,
+      "taskType": 2,
+      "taskName": -1505806603,
+      "taskConditions": 6050,
+      "score": 1,
+      "quality": 0,
+      "taskDes": -1147302872,
+      "event": 1413
+    },
+    {
+      "sort": 2,
+      "taskType": 2,
+      "taskName": -1866347193,
+      "taskConditions": 6051,
+      "score": 1,
+      "quality": 1,
+      "taskDes": -461139016,
+      "event": 1413
+    },
+    {
+      "sort": 3,
+      "taskType": 2,
+      "taskName": -1611170652,
+      "taskConditions": 6052,
+      "score": 1,
+      "quality": 2,
+      "taskDes": -1857849604,
+      "event": 1413
+    },
+    {
+      "sort": 1,
+      "taskType": 3,
+      "taskName": -743856778,
+      "taskConditions": 6053,
+      "score": 1,
+      "quality": 0,
+      "taskDes": -302544058,
+      "event": 1176
+    },
+    {
+      "sort": 2,
+      "taskType": 3,
+      "taskName": -1827955287,
+      "taskConditions": 6054,
+      "score": 1,
+      "quality": 1,
+      "taskDes": -1742326744,
+      "event": 1176
+    },
+    {
+      "sort": 3,
+      "taskType": 3,
+      "taskName": -840710046,
+      "taskConditions": 6055,
+      "score": 1,
+      "quality": 2,
+      "taskDes": -1434037603,
+      "event": 1176
+    }
+  ]
+]

@@ -1,0 +1,478 @@
+{
+  "41701388": {
+    "owner": "路司机",
+    "chunk": 1018848,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 43015680,
+    "levelItems": {
+      "74960164": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockIgnoreMagnesis_SB",
+        "position": [
+          -3.82,
+          9.83,
+          -107.28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 74960164,
+        "configId": 406,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "74960169": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockIgnoreMagnesis_SB (1)",
+        "position": [
+          -24.62,
+          9.83,
+          -107.28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 74960169,
+        "configId": 406,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "43165910": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -8.23,
+          6.45,
+          -96.43
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43165910,
+        "configId": 4,
+        "templateId": 0,
+        "isActive": true
+      },
+      "43165911": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43165911,
+        "configId": 4,
+        "templateId": 0,
+        "isActive": true
+      },
+      "43165918": {
+        "majorCompId": 0,
+        "scale": [
+          2.5,
+          10,
+          2
+        ],
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -13.73,
+          6.45,
+          -111.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43165918,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "isActive": true
+      },
+      "43165922": {
+        "majorCompId": 0,
+        "scale": [
+          2.5,
+          10,
+          2
+        ],
+        "EditorName": "P_Item_Trigger_SB_1",
+        "position": [
+          -13.73,
+          6.45,
+          -91.79
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43165922,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "isActive": true
+      },
+      "43165923": {
+        "majorCompId": 0,
+        "scale": [
+          12,
+          10,
+          2
+        ],
+        "EditorName": "P_Item_Trigger_SB_2",
+        "position": [
+          -13.73,
+          6.45,
+          -122
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43165923,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "isActive": true
+      },
+      "43168983": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          10,
+          1
+        ],
+        "EditorName": "P_Item_Trigger_SB_3",
+        "position": [
+          -14,
+          6.45,
+          -95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43168983,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "isActive": true
+      },
+      "43169087": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43169087,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "43447584": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43447584,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "43447728": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          -8.7,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43447728,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "43447781": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_5",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43447781,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "43528077": {
+        "id": 43528077,
+        "scale": [
+          0,
+          0,
+          0
+        ],
+        "EditorName": "P_Item_SceneObject_Tutorial_CheckPoint",
+        "configId": 72,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "majorCompId": 0,
+        "isActive": true
+      },
+      "43797002": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint",
+        "position": [
+          -14.12,
+          6.45,
+          -78.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43797002,
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -14.12,
+            6.45,
+            -78.6
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "isActive": true
+      },
+      "44657218": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_6",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 44657218,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "44657223": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_7",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 44657223,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "sightLevel": 256,
+    "spawners": [
+      43165833,
+      43165835,
+      43165837,
+      43165839,
+      43168322
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8104/Sandbox_41701388_GraphRef.asset",
+    "id": 41701388,
+    "markIconSpawnerId": 0,
+    "position": [
+      -9.72,
+      9.83,
+      -131.18
+    ]
+  }
+}

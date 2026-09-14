@@ -1,0 +1,32 @@
+[
+  {
+    "actEnd": "Behav_HappyEnd",
+    "actLoop": "Behav_HappyLoop",
+    "actStart": "Behav_HappyStart"
+  },
+  {
+    "actEnd": "Behav_AngryEnd",
+    "actLoop": "Behav_AngryLoop",
+    "actStart": "Behav_AngryStart"
+  },
+  {
+    "actEnd": "Behav_CryEnd",
+    "actLoop": "Behav_CryLoop",
+    "actStart": "Behav_CryStart"
+  },
+  {
+    "actEnd": "Behav_AlertEnd",
+    "actLoop": "Behav_AlertLoop",
+    "actStart": "Behav_AlertStart"
+  },
+  {
+    "actEnd": "Behav_LoveEnd",
+    "actLoop": "Behav_LoveLoop",
+    "actStart": "Behav_LoveStart"
+  },
+  {
+    "actEnd": "Behav_SleepEnd",
+    "actLoop": "Behav_SleepLoop",
+    "actStart": "Behav_SleepStart"
+  }
+]

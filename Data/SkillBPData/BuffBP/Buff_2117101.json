@@ -1,0 +1,104 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117101",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "06ca7101-40c1-4b17-bd67-57a1dc64c1c7",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water_break",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "16": {
+      "name": "stopSoundStr",
+      "UID": "f4a85363-442e-4e08-9176-2fcec242c165",
+      "soundId": "parmon_ottery_skill_shield_loop",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "14": {
+      "calcInfo": {
+        "add_cur_hp_fix": 0,
+        "add_cur_hp_max_p": 0.02286
+      },
+      "name": "calcResult",
+      "UID": "2698f3af-7c3d-4721-b0d2-3a779a42eb86",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28efae2a-95aa-4467-a2e9-55e3613fe4a4",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_ottery_skill_shield_loop",
+      "NodeID": 5
+    },
+    "11": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "05d66f50-dd49-4ddd-b924-79528a55fffe",
+      "name": "buffStartThink",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_ottery_skill_shield_ice_destroy",
+      "NodeID": 7
+    },
+    "12": {
+      "duration": 1.2,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12,
+      "UID": "2ea7a837-478d-4427-87eb-a6c0d30bbdfa",
+      "name": "addTimer"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    14
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.2,
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 9,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "OWNER",
+        "NodeID": 8,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    16,
+    3,
+    7
+  ],
+  "onBuffStartIds": [
+    5,
+    12
+  ]
+}

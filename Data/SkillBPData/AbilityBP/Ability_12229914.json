@@ -1,0 +1,48 @@
+{
+  "BPName": "ability_12229914",
+  "NodeID": 1,
+  "UID": "788b05eb-fded-4506-8bf5-6974569adf6b",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12229914001,
+      "name": "setCombatActionTimeline",
+      "UID": "09d1b24d-c604-4bf8-a953-84465e2a2b75",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "23c98ebd-dec3-4916-92fc-f514a14a32b8",
+      "effectId": "Eff_Range_Indicator_Circle1",
+      "target": "TARGET",
+      "NodeID": 53
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Tail"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Electric_Blunt",
+    "Eff_Parmon_10222_Skill_Ex_03",
+    "Eff_Parmon_10222_Skill_Ex_01",
+    "Eff_Range_Indicator_Circle1"
+  ],
+  "searchRelation": 2,
+  "name": "螳螂必杀技",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "onAbilityEndIds": [
+    53
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10400260
+}

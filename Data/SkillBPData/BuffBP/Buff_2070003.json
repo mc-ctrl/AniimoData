@@ -1,0 +1,15 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "skill_bp_add_ratio": 0.5
+  },
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2070003"
+}

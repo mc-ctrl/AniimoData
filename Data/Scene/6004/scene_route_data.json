@@ -1,0 +1,599 @@
+{
+  "91014097": {
+    "id": 91014097,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Chat"
+            }
+          ]
+        },
+        "yaw": 128.93,
+        "position": [
+          -1740.36,
+          168.64,
+          578.13
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 128.93,
+        "position": [
+          -1740.28,
+          168.56,
+          578.25
+        ]
+      }
+    ],
+    "pos": [
+      -1276.79,
+      72.94,
+      811.02
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91012567
+  },
+  "91270787": {
+    "id": 91270787,
+    "wayPoints": [
+      {
+        "yaw": 244.09,
+        "position": [
+          -1730.37,
+          166.45,
+          573.57
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3.5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Cry",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 20,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1739.59,
+          165.64,
+          564.98
+        ],
+        "ignoreRotation": true,
+        "speed": 3.5,
+        "yaw": 285.87,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 35.8,
+        "position": [
+          -1744.28,
+          165.69,
+          566.35
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3.5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 81.93,
+        "position": [
+          -1744.24,
+          166.2,
+          570.29
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3.5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 81.93,
+        "position": [
+          -1736.96,
+          166.92,
+          575.39
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3.5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 190.83,
+        "position": [
+          -1736.23,
+          167.36,
+          581.64
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3.5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 190.83,
+        "position": [
+          -1731.8,
+          167.41,
+          582.65
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3.5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          -1729.28,
+          167.29,
+          579.51
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3.5,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1746.26,
+      171.06,
+      565.36
+    ],
+    "quaternion": [
+      0,
+      -0.22,
+      0,
+      0.98
+    ],
+    "sandboxId": 91012567
+  },
+  "91012584": {
+    "id": 91012584,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 249.81,
+        "position": [
+          -1748.27,
+          167.41,
+          582.15
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 248.3,
+        "position": [
+          -1752.01,
+          167.01,
+          579.47
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1,
+                  "name": "eatTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 262.48,
+        "position": [
+          -1753.28,
+          167.29,
+          581.31
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 262.48,
+        "position": [
+          -1751.55,
+          167.29,
+          583.59
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 262.48,
+        "position": [
+          -1748.04,
+          167.7,
+          583.84
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1287.49,
+      72.09,
+      816.45
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91012567
+  },
+  "91012586": {
+    "id": 91012586,
+    "wayPoints": [
+      {
+        "yaw": 346.21,
+        "position": [
+          -1756.79,
+          168.37,
+          588.23
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -1751.45,
+          169.89,
+          591.29
+        ],
+        "ignoreRotation": true,
+        "speed": 3,
+        "yaw": 346.21,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 346.21,
+        "position": [
+          -1746.33,
+          169.96,
+          593.17
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 346.21,
+        "position": [
+          -1745.48,
+          170.09,
+          596.75
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 346.21,
+        "position": [
+          -1756.74,
+          169.62,
+          593.84
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 3,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1294.77,
+      69.13,
+      824.53
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91012567
+  },
+  "91012587": {
+    "id": 91012587,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Chat"
+            }
+          ]
+        },
+        "yaw": 286.26,
+        "position": [
+          -1738.91,
+          168.59,
+          577.58
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Chat"
+            }
+          ]
+        },
+        "yaw": 286.26,
+        "position": [
+          -1738.91,
+          168.59,
+          577.58
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1279.25,
+      74.79,
+      805.3
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91012567
+  },
+  "91012588": {
+    "id": 91012588,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_Node_Com_IdleSpecial"
+            }
+          ]
+        },
+        "yaw": 87.56,
+        "position": [
+          -1755.53,
+          167.39,
+          574.51
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_Node_Com_IdleSpecial"
+            }
+          ]
+        },
+        "yaw": 87.56,
+        "position": [
+          -1755.53,
+          167.39,
+          574.51
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1288.29,
+      71.54,
+      804.33
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91012567
+  },
+  "91012589": {
+    "id": 91012589,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1,
+                  "name": "eatTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 146.23,
+        "position": [
+          -1762.48,
+          166.43,
+          585.36
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat"
+            }
+          ]
+        },
+        "position": [
+          -1758.35,
+          166.65,
+          579.52
+        ],
+        "ignoreRotation": true,
+        "yaw": 146.23,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat"
+            }
+          ]
+        },
+        "position": [
+          -1759.89,
+          165.26,
+          574.12
+        ],
+        "ignoreRotation": true,
+        "yaw": 146.23,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "position": [
+          -1761.8,
+          164.72,
+          571.11
+        ],
+        "yaw": 185.72,
+        "behaviorPatrolMoveType": 1,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat"
+            }
+          ]
+        },
+        "position": [
+          -1763.55,
+          163.62,
+          571.75
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 185.72,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 185.72,
+        "position": [
+          -1764.87,
+          163.15,
+          574.85
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorPatrolMoveType": 1,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat"
+            }
+          ]
+        },
+        "position": [
+          -1765.99,
+          164.56,
+          581.88
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "yaw": 185.72,
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -1300.09,
+      71.34,
+      819.66
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91012567
+  }
+}

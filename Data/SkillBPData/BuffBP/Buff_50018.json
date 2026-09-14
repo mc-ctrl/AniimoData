@@ -1,0 +1,59 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50018",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "12": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": 0.5,
+          "name": "multiply",
+          "UID": "9f82a270-c2e3-46eb-b6ba-4cd05aefe3f0",
+          "NodeID": 10,
+          "lValue": {
+            "UID": "dadcb234-ce23-4cb1-9388-8446e9d7acc5",
+            "name": "getOverHealPoint",
+            "NodeID": 9
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "44be213c-4964-4385-818b-31337a00d18e",
+      "target": "TARGET",
+      "NodeID": 12
+    },
+    "7": {
+      "UID": "0c702fe8-74f1-4692-b24c-77edd35f3658",
+      "name": "registerTransferOverHealEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "6": {
+      "actionIds": [
+        12
+      ],
+      "name": "selectPet",
+      "UID": "3ed7ceeb-0426-463b-a9d4-84898bb4e5c4",
+      "selectType": 1,
+      "selectAction": {
+        "UID": "582de1e4-661f-4f39-9b1e-d8e42579ad17",
+        "target": "TARGET",
+        "name": "getHpRatio",
+        "NodeID": 5
+      },
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

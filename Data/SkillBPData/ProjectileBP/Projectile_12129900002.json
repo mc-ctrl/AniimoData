@@ -1,0 +1,100 @@
+{
+  "duration": 4,
+  "BPName": "ability_12129900",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Small",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 1000,
+  "maxHitNum": 1,
+  "angularIncreaseDuration": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 10,
+  "defaultHitSoundType": "s",
+  "onProjectileHitIds": [
+    53,
+    70
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 90,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "70": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 72,
+      "NodeID": 70,
+      "UID": "6c21ad6f-6f40-4913-93de-ad4c121c7165",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        72
+      ]
+    },
+    "53": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "aa42b7c7-a6c7-4213-b1c1-99e9db1c5432",
+      "effectId": "Eff_Parmon_10212_Skill_Ex_Hit",
+      "speed": 1,
+      "NodeID": 53
+    },
+    "72": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12129900,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "495db3f2-5f43-4555-9caf-8e6dc7aa6c04",
+      "target": "TARGET",
+      "NodeID": 72,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 1000,
+        "defaultHitEffect": "Eff_Parmon_10212_Skill_Ex_Hit"
+      }
+    }
+  },
+  "tickInterval": 0,
+  "calcResultNodeId": 72,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Parmon_10212_Skill_Ex_Hit",
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

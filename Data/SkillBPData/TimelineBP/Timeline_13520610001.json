@@ -1,0 +1,301 @@
+{
+  "nodeMap": {
+    "5": {
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 5,
+      "UID": "deb6e80c-fa34-468e-b6d8-b3d614d9c28c"
+    },
+    "39": {
+      "UID": "9cdf7bef-7489-4cf1-922d-884e7cb70501",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bf330f11-0b77-4f37-8a22-cadf99be9f63",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10352_Skill_Fragrance_Bomb",
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 41,
+      "UID": "05582e63-066a-4c9c-9d8e-f7142b44057f"
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6b43fbf5-8251-4e8c-b49f-0fbbb898acce",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_liuli",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "35": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2135206,
+      "NodeID": 35,
+      "UID": "14b3e424-92e6-4259-a2b6-c3d2ead42ece",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "674aa617-16a0-4948-aff9-2c48629b473d",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_01_Liuli",
+      "speed": 1,
+      "NodeID": 44
+    },
+    "11": {
+      "name": "isActorType",
+      "UID": "6a411a66-2fc5-4793-b068-84333b6ba935",
+      "target": "OWNER",
+      "NodeID": 11,
+      "actorType": 3
+    },
+    "21": {
+      "UID": "8eb89a30-cdf1-45e6-8156-d458b01e95fa",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 21
+    },
+    "22": {
+      "UID": "38e37a91-d4f4-4d9c-8f2b-98d009dcc01f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "actionIds": [
+        2,
+        10
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "e713792f-a50c-41ce-a9c4-bb3682277933",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "d384ef26-dfc4-491c-88aa-c4c2073719c1",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1
+      },
+      "NodeID": 24
+    },
+    "46": {
+      "name": "dropEffectStr",
+      "UID": "439fb349-ab2b-42bb-8928-792f9078f71b",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_01_Liuli",
+      "target": "CASTER",
+      "NodeID": 46
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8f043461-c819-4c48-a6d7-112c55b29454",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.467,
+      "NodeID": 45,
+      "UID": "ce4471bc-ef12-47ca-9542-0363564ccb59"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 25,
+      "UID": "be6b8336-6a5a-4692-8ff0-fd4dd6059a20"
+    },
+    "16": {
+      "UID": "848f2e9c-50fa-4c21-8ffc-b4dc0f492e68",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 33,
+      "NodeID": 27,
+      "UID": "2afb3abb-20c5-4154-8f22-610c24009260",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.5,
+            2,
+            0.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        33,
+        35
+      ]
+    },
+    "43": {
+      "name": "setSkillHitDistance",
+      "UID": "85e5f0fd-bcee-453a-b9b1-2447b1b21474",
+      "skillHitDisplacementId": 1023,
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 29,
+      "UID": "1fa89405-0612-46e4-aba8-fc711247a788"
+    },
+    "18": {
+      "UID": "198a4373-6ab8-4e94-bf3b-6a578e24ea00",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          19,
+          42,
+          43
+        ]
+      },
+      "NodeID": 18
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9844962c-f70e-4ba0-9c2c-524e91d27b7e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10352_Attack_01",
+      "NodeID": 37
+    },
+    "33": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13520610,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "e5d87e58-8417-48e5-b6bf-219f39907861",
+      "target": "TARGET",
+      "NodeID": 33,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "isPlayRadialBlur": true,
+        "impulseId": 2001
+      }
+    },
+    "2": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "c16b9b5c-26c8-4e98-9130-14cdeae9d265",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 2
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "893855a8-85c0-414d-b07c-49abe5c16ac6",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_Feather"
+    }
+  },
+  "BPName": "ability_13520610",
+  "NodeID": 7,
+  "UID": "81608a50-d56d-47a3-bba4-5c843e90e736",
+  "eventIds": [
+    5,
+    18,
+    25,
+    22,
+    39,
+    29,
+    45,
+    41
+  ],
+  "layer": "Base",
+  "length": 4.16
+}

@@ -1,0 +1,54 @@
+{
+  "10001": {
+    "amplitude": [
+      0,
+      0,
+      0
+    ],
+    "duration": 0,
+    "frequency": 0,
+    "name": "无抖动",
+    "shakeLevel": "Light",
+    "randomness": 0,
+    "fadeOut": false
+  },
+  "10004": {
+    "amplitude": [
+      0.04,
+      0,
+      0.04
+    ],
+    "duration": 0.2,
+    "frequency": 40,
+    "name": "重度受击",
+    "shakeLevel": "Heavy",
+    "randomness": 90,
+    "fadeOut": false
+  },
+  "10003": {
+    "amplitude": [
+      0.02,
+      0,
+      0.02
+    ],
+    "duration": 0.2,
+    "frequency": 20,
+    "name": "中度受击",
+    "shakeLevel": "Medium",
+    "randomness": 90,
+    "fadeOut": false
+  },
+  "10002": {
+    "amplitude": [
+      0.02,
+      0,
+      0.02
+    ],
+    "duration": 0.2,
+    "frequency": 20,
+    "name": "轻度受击",
+    "shakeLevel": "Light",
+    "randomness": 90,
+    "fadeOut": false
+  }
+}

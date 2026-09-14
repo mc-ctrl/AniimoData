@@ -1,0 +1,35 @@
+[
+  {
+    "islandMainImage": "$UI_Event_WaterArea_EntranceBase_Islands.png",
+    "islandName": 2101261192,
+    "islandTaskGroupId": 4000,
+    "islandTitle": 2059131562,
+    "petResearchImage": [
+      "1038100",
+      "1062100",
+      "1058100"
+    ],
+    "petResearchName": [
+      1210578421,
+      1177411757,
+      1927410871
+    ],
+    "petResearchTaskGroupId": [
+      4001,
+      4002,
+      4003
+    ],
+    "event": 1556,
+    "petShow": 1038303,
+    "relatedTaskGroupId": 4005,
+    "trainReward": 100145,
+    "trainTitle": 1571547525,
+    "petResearchTitle": [
+      1845724727,
+      1621060968,
+      2101093883
+    ],
+    "grandPrize": 310031,
+    "islandImage": "$UI_Event_WaterArea_EntranceBase_Islands2.png"
+  }
+]

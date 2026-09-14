@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "3915ed58-ec20-49d7-a3a1-6fe780ec0c5d",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "ede63256-405c-4eaa-afbf-95405c26c153",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 4
+    },
+    "2": {
+      "target": "CURPET",
+      "duration": 20,
+      "buffId": 20020010,
+      "NodeID": 2,
+      "UID": "63a2ff85-5358-4ee5-a838-a179bb4b56b3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_2002001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

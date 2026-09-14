@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_14540300",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800480,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14540300001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ClayBall"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10454_Skill_ClyBall_Throw",
+    "Eff_Parmon_10454_Skill_Shouji_01",
+    "Eff_Parmon_10454_Skill_ClayBall",
+    "Eff_Parmon_10454_Skill_ClyBall_Throw02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "searchTargetRangeDown": 0.5
+}

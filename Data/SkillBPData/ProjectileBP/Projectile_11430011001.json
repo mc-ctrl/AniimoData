@@ -1,0 +1,112 @@
+{
+  "refControlPoint": [
+    [
+      -3.8,
+      2.2,
+      3.8
+    ]
+  ],
+  "duration": 1,
+  "calcResultNodeId": 70,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10143_Attack_Boss",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "BezierCurve",
+  "maxHitNum": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    71,
+    73
+  ],
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "ignoreAbilityElement": true,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "refTargetPoint": [
+    0.2,
+    0.6,
+    10
+  ],
+  "tickInterval": 0.3,
+  "nodeMap": {
+    "70": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11430011,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param1",
+        "type": 2
+      },
+      "UID": "d0c61b7c-8805-4a1a-832b-cbd448bd484e",
+      "target": "TARGET",
+      "NodeID": 70,
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "battle_projectilehit_electric_s",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "73": {
+      "pos": "PROJECTILE",
+      "scale": 3,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "5fb38a12-52e0-4640-a1ea-93232d87174d",
+      "effectId": "Eff_Parmon_10072_Skill_Hit",
+      "speed": 1,
+      "NodeID": 73
+    },
+    "71": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 70,
+      "NodeID": 71,
+      "UID": "4411b9e7-bb71-480b-9e22-1247c779824b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.3,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        70
+      ]
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_11430011",
+  "hasAttackDataInOnProjectileHit": false,
+  "impulseId": 2000,
+  "acceleration": 5
+}

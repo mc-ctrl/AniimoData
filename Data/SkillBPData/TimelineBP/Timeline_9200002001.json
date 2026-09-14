@@ -1,0 +1,118 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "fd0f54ab-b819-4352-8bba-23ae25b0d7ed",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          9,
+          16,
+          19
+        ]
+      },
+      "NodeID": 4
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 15,
+      "UID": "9bfb22e3-ce57-4bc5-9773-6039392e705d"
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a2391d31-e8d2-454d-9e80-b20de57673f3",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_FlashHeal"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "dce3b6d9-a9c1-4d68-88c6-7858164c1223",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Revive",
+      "NodeID": 19
+    },
+    "17": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "64da2958-55a2-49f9-a252-bcf9a2e69980",
+      "effectId": "Eff_Avatar_Girl_Skill_Revive",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "02786654-7d45-4b2f-8c1b-1978623b3fe8",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 9
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 18,
+      "UID": "a0c181fa-f774-47b5-abce-24eabbcfb3b9"
+    },
+    "2": {
+      "lockTarget": "CURPET",
+      "name": "lockTarget",
+      "UID": "028f0230-098f-4179-ad26-c827312aec8b",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "11": {
+      "UID": "9d63f3c3-bcd8-4cb1-be14-71c20aa73fe3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "13": {
+      "applyOnAllPets": true,
+      "hpRate": 0.3,
+      "onlyApplyOnDeadEnt": false,
+      "NodeID": 13,
+      "UID": "a4245bf4-84df-491f-a0a5-6ce3aa0ae41b",
+      "target": "CURPET",
+      "name": "revive"
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 12,
+      "UID": "5bbd0d8d-edad-48d6-aef5-57c056e167a5"
+    }
+  },
+  "BPName": "ability_9200002",
+  "NodeID": 6,
+  "UID": "3b0e0626-3727-468a-874d-d674306ef7ca",
+  "eventIds": [
+    4,
+    15,
+    18,
+    12
+  ],
+  "layer": "Base",
+  "length": 4.3
+}

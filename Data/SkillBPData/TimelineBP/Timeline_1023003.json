@@ -1,0 +1,248 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "e0fc56a0-0f9a-40cf-8b3c-0f44faefb521",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          39,
+          9
+        ]
+      },
+      "NodeID": 5
+    },
+    "39": {
+      "UID": "42d80204-0a3e-4498-a404-e2145a12be46",
+      "value": true,
+      "name": "forceUngrounded",
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "7909e682-fa35-477f-9a25-8430f744ee35",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 40
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "559ec8de-e6ea-47e1-ad1f-75324603f68b",
+      "effectId": "Eff_Parmon_10023_Skill_GreatAttack_Boss",
+      "speed": 1,
+      "NodeID": 41
+    },
+    "7": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "bafa8c0a-d52b-409b-b64f-9eac68ede05b",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 31,
+      "UID": "8df809c6-15f6-41b7-9489-2070b97b7219"
+    },
+    "9": {
+      "UID": "25ffccc1-1799-4bd8-9109-b0e00edcaa06",
+      "name": "callClientAction",
+      "actionIds": [
+        7,
+        10
+      ],
+      "NodeID": 9
+    },
+    "3": {
+      "UID": "f1affebb-52f2-4c3d-bfe6-8d9d58bf4fe9",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 16,
+      "NodeID": 13,
+      "UID": "0658311b-f210-459b-acd0-754bb070210c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        16,
+        25
+      ]
+    },
+    "24": {
+      "UID": "bf4b550c-cf6d-4d2a-a1c4-6e8e54885e20",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          22,
+          26,
+          40,
+          45
+        ]
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 14,
+      "UID": "1623c654-b30c-4ef6-932a-ea84fbb497d7"
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a3cb499e-a4e6-4502-8358-53bc9f21c902",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_Petrifaction_End"
+    },
+    "25": {
+      "target": "TARGET",
+      "duration": 0.2,
+      "speed": 10,
+      "NodeID": 25,
+      "UID": "ee5d7d48-cc29-4184-aac6-39c1ed722c5a",
+      "displacementDir": "OUT",
+      "displacementTarget": "OWNER",
+      "name": "forceDisplacement"
+    },
+    "16": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 9999
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10003,
+        "impulseId": 5002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dragon_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_helmet_attack_hit_02",
+        "hitCameraShakeId": 10003
+      },
+      "UID": "a9e9e567-d2f2-4209-8cd5-4d8a253cec90",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 16
+    },
+    "28": {
+      "UID": "537a741d-35f0-43af-a622-fcad00816e16",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 29,
+      "UID": "6d391cf9-7a5e-4c8a-bfcd-237c390c91a0"
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "26c2e334-bd06-43e5-a86d-f9ceedae1614",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_shield_attack",
+      "NodeID": 30
+    },
+    "45": {
+      "name": "stopEffectStr",
+      "UID": "d05b252b-3f1f-460e-a947-4f1f2b3af958",
+      "effectId": "Eff_Parmon_10023_Skill_Warning_Petrifaction",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 43,
+      "UID": "176d5eb0-00e2-4235-ba4a-58357e5a8c65"
+    },
+    "22": {
+      "UID": "c509dc97-2434-4dea-a490-f35a66d4baa3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 22
+    },
+    "26": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "494f1679-c3ca-4218-835e-316cff08df30",
+      "target": "OWNER",
+      "NodeID": 26
+    }
+  },
+  "BPName": "timeline_1023003",
+  "NodeID": 1,
+  "UID": "4a095858-7ad5-4d4d-a1e3-528661ee00a7",
+  "eventIds": [
+    5,
+    14,
+    24,
+    29,
+    31,
+    43
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

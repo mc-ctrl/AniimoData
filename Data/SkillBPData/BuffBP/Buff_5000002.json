@@ -1,0 +1,117 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000002",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "2a609579-0a21-4aed-9af3-3982a8e35d74",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": {
+        "calcId": 5000002,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 8,
+        "UID": "304ae50c-f7c9-4644-b2d4-42a48066e7e3",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "greater",
+      "UID": "3ebe701c-3872-46ec-bebb-49acc128e832",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "90b84cca-068b-43bb-a9ac-57a3191e3621",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "pet_individual_point_bp_atk"
+      }
+    },
+    "9": {
+      "calcId": 5000002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "8940fcfe-8bf4-42fe-a856-5c36de4e3ef5",
+      "name": "getParamByLuaConfig"
+    },
+    "14": {
+      "calcInfo": {
+        "bp_add_ratio": {
+          "calcId": 5000002,
+          "calcType": 1,
+          "paramName": "param2",
+          "NodeID": 12,
+          "UID": "7cac9aef-eaac-440f-a1d5-b1f3084eab8b",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "78368644-0305-473d-82cc-2368215cbe4c",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 14
+    },
+    "8": {
+      "calcId": 5000002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 8,
+      "UID": "304ae50c-f7c9-4644-b2d4-42a48066e7e3",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "calcInfo": {
+        "bp_add_ratio": {
+          "calcId": 5000002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 9,
+          "UID": "8940fcfe-8bf4-42fe-a856-5c36de4e3ef5",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "4f53fb53-a298-420c-9ae3-21532c22eb91",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 11
+    },
+    "7": {
+      "actionIds": [
+        5
+      ],
+      "attributeName": "pet_individual_point_bp_atk",
+      "UID": "f6b3e274-b086-46d4-be6f-3a23cba15dc3",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 7
+    },
+    "12": {
+      "calcId": 5000002,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 12,
+      "UID": "7cac9aef-eaac-440f-a1d5-b1f3084eab8b",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    7
+  ]
+}

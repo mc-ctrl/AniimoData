@@ -1,0 +1,48 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 402001701,
+    "type": 1,
+    "final_taken_dmg_inc_rate_v": "param0"
+  },
+  "BPName": "buff_402001701",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7,
+    5
+  ],
+  "tags": [
+    10
+  ],
+  "stackRule": 0,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "scale": 1.5,
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "20706004-e770-4130-a57a-f283f10c18c9",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "eba14920-d0c7-406a-8138-555f4e8cd8c8",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "target": "CURPET",
+      "NodeID": 7
+    },
+    "8": {
+      "delay": 0,
+      "interval": 2,
+      "UID": "c3ecf909-9297-4fe2-a15f-5bfb85100cda",
+      "name": "buffStartThink",
+      "NodeID": 8
+    }
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

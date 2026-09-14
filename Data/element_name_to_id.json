@@ -1,0 +1,16 @@
+{
+  "Fire": 5,
+  "Grass": 6,
+  "Ice": 2,
+  "Metal": 7,
+  "Poison": 10,
+  "Psychic": 11,
+  "Wind": 9,
+  "Holy": 13,
+  "null": 0,
+  "Water": 3,
+  "Rock": 8,
+  "Normal": 1,
+  "Dark": 12,
+  "Electric": 4
+}

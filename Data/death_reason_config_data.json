@@ -1,0 +1,22 @@
+[
+  {
+    "helpID": 201,
+    "icon": "$UI_Img_Reborn_PetRestraint.png",
+    "guideId": 8400,
+    "name": 1469282343
+  },
+  {
+    "icon": "$UI_Img_Reborn_AttributeRestraint.png",
+    "helpID": 315,
+    "name": 1505166855
+  },
+  {
+    "icon": "$UI_Img_Reborn_SkillRestraint.png",
+    "helpID": 304,
+    "name": 1654835508
+  },
+  {
+    "name": 1950918102,
+    "icon": "$UI_Img_Reborn_SkillRestraint_Horn.png"
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "1003": {
+    "prosandboxid": 91250295,
+    "recommendedElements": [
+      "Electric",
+      "Fire"
+    ],
+    "sandbox_lv": 3,
+    "sandboxid": 91196540,
+    "sandboxtype": 1,
+    "sceneid": 276,
+    "desc": "完成限时击杀",
+    "Name": "限时击杀测试3",
+    "time": 90,
+    "stacticid": 91250309,
+    "entity_lv": 60,
+    "envBuff01": 101,
+    "envBuff02": 102,
+    "firstRewardId": 2009001,
+    "npcid": 203207
+  },
+  "1002": {
+    "prosandboxid": 91250295,
+    "recommendedElements": [
+      "Electric",
+      "Fire"
+    ],
+    "sandbox_lv": 2,
+    "sandboxid": 91196540,
+    "sandboxtype": 1,
+    "sceneid": 276,
+    "desc": "完成限时击杀",
+    "Name": "限时击杀测试2",
+    "time": 120,
+    "entity_lv": 50,
+    "envBuff01": 101,
+    "stacticid": 91250309,
+    "firstRewardId": 2009001,
+    "npcid": 203207
+  },
+  "1001": {
+    "prosandboxid": 91250295,
+    "recommendedElements": [
+      "Electric",
+      "Fire"
+    ],
+    "sandbox_lv": 1,
+    "sandboxid": 91196540,
+    "sandboxtype": 1,
+    "sceneid": 276,
+    "desc": "完成限时击杀",
+    "Name": "限时击杀测试1",
+    "entity_lv": 40,
+    "time": 120,
+    "stacticid": 91250309,
+    "firstRewardId": 2009001,
+    "npcid": 203207
+  },
+  "1011": {
+    "recommendedElements": [
+      "Electric",
+      "Fire"
+    ],
+    "sandbox_lv": 1,
+    "sandboxid": 1002,
+    "sandboxtype": 2,
+    "desc": "完成限时生存",
+    "Name": "限时生存测试1",
+    "time": 180,
+    "entity_lv": 40,
+    "envBuff01": 101,
+    "envBuff02": 102,
+    "firstRewardId": 2009001,
+    "npcid": 203208
+  },
+  "1021": {
+    "recommendedElements": [
+      "Water",
+      "Dark"
+    ],
+    "sandbox_lv": 1,
+    "sandboxid": 1003,
+    "sandboxtype": 3,
+    "desc": "完成守护目标",
+    "Name": "守护目标测试1",
+    "time": 180,
+    "entity_lv": 40,
+    "envBuff01": 101,
+    "envBuff02": 102,
+    "firstRewardId": 2009001,
+    "npcid": 203209
+  }
+}

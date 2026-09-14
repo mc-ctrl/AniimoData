@@ -1,0 +1,111 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 8,
+      "NodeID": 5,
+      "UID": "e55fbf84-2582-42ce-8183-04b5ddbe3b15",
+      "onUpdate": {
+        "actionIds": [
+          4
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          4
+        ]
+      }
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "name": "actOnTargets",
+      "UID": "4067fa45-9939-49f5-b0ca-1ccf210f3f0e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "922dc1f1-be46-4d7c-b545-3fb70ff02cdb",
+      "eventType": "Notify",
+      "time": 7.8,
+      "NodeID": 9
+    },
+    "8": {
+      "UID": "b645fd78-2351-47e5-a3ca-32eb271b8dd9",
+      "eventType": "EventEnter",
+      "NodeID": 8
+    },
+    "10": {
+      "UID": "311ad318-223d-41a3-8f9c-3ecceea01ac5",
+      "eventType": "EventExit",
+      "NodeID": 10
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8a9d4f48-ab8c-4e07-ac35-94f4b1d99f5b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_ripzor_skill_smoke_spawn",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 2103203,
+      "NodeID": 7,
+      "UID": "70c9d61e-e9f5-457e-a993-ef9c41af7387",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "UID": "76e995e6-8d9a-4eb2-abdc-185d510ef102",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2103201",
+  "NodeID": 1,
+  "UID": "d62a301e-d5d0-4d37-bc93-e12a81c597e0",
+  "eventIds": [
+    8,
+    12,
+    10,
+    9,
+    5
+  ],
+  "layer": "Base",
+  "length": 10
+}

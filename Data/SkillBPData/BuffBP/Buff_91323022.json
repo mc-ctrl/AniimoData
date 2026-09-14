@@ -1,0 +1,58 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91323022",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10323_Skill_SwordDance_Buff"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "ea8c344e-3361-4a9a-8c51-170a3150b0f5",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "5bf1a721-3831-4d1b-bc63-67f92a575e1d",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 4
+    },
+    "8": {
+      "buffId": 91323022,
+      "name": "removeBuff",
+      "UID": "3a8d6429-3a7b-4678-96c8-7a5443b3d332",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "6": {
+      "UID": "f720fc92-a3af-42a6-90f2-8626d366b01f",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 91323022,
+    "type": 1,
+    "taken_normal_attack_dmg_inc_rate_v": "param0"
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

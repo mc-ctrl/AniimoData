@@ -1,0 +1,71 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "name": "getAttribute",
+            "UID": "8934faf6-2c35-4674-8eff-fa03b02515e5",
+            "target": "OWNER",
+            "NodeID": 2,
+            "attributeName": "hp_cur"
+          },
+          "name": "sub",
+          "UID": "a3f1ac7f-e405-4baa-b0af-952aec4464f2",
+          "NodeID": 3,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "39ce4acb-55e4-4bba-855c-7769dabbbaea",
+            "target": "MASTER",
+            "NodeID": 7,
+            "attributeName": "hp_cur"
+          }
+        },
+        "hp_max_fix": 4000
+      },
+      "isClearOld": true,
+      "UID": "adc3a63b-f80f-4780-9720-ddacd58e4197",
+      "target": "OWNER",
+      "name": "addDynamicAttribute",
+      "NodeID": 5
+    },
+    "11": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "name": "getAttribute",
+            "UID": "b490c985-fff1-4bc8-a516-fb6d0a86f832",
+            "target": "OWNER",
+            "NodeID": 8,
+            "attributeName": "hp_cur"
+          },
+          "name": "sub",
+          "UID": "4cdf725d-5688-47be-8611-f182c22c5307",
+          "NodeID": 9,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "b5e431b7-0341-4b0c-874c-3ae4116f31bf",
+            "target": "MASTER",
+            "NodeID": 12,
+            "attributeName": "hp_cur"
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "60a22633-8e84-4406-a569-74c68e6b6864",
+      "target": "OWNER",
+      "name": "addDynamicAttribute",
+      "NodeID": 11
+    }
+  },
+  "BPName": "buff_1011000023",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    11
+  ]
+}

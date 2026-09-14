@@ -1,0 +1,63 @@
+{
+  "BPName": "ability_910000107",
+  "NodeID": 1,
+  "UID": "6f06c50b-3e01-4486-975b-de3c2c4e521e",
+  "abilityParamId": 9100001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 910000107001,
+      "name": "setCombatActionTimeline",
+      "UID": "525d522f-d1b2-49ae-99be-806ca10bed63",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "45": {
+      "name": "enableWalkingAttackMode",
+      "UID": "14966e41-9f60-4a46-a4dc-da4df232d05e",
+      "upperAvatarMask": "$Mask_Avatar_Boy_MoveAttack.mask",
+      "enable": true,
+      "NodeID": 45
+    },
+    "41": {
+      "UID": "299b7371-ee27-41b5-a034-954b307a777e",
+      "name": "enableWalkingAttackMode",
+      "enable": false,
+      "NodeID": 41
+    }
+  },
+  "onAbilityCastIds": [
+    45,
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01",
+    "Attack02",
+    "Attack03",
+    "Attack04",
+    "Attack01_Upper",
+    "Attack02_Upper",
+    "Attack03_Upper",
+    "Attack03_Base",
+    "Attack04_Upper"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Male_Attack_04_01",
+    "Eff_Avatar_Male_Gather_04_Hand_01",
+    "Eff_Avatar_Male_Gather_04_Hand_02",
+    "Eff_Avatar_Male_Gather_04",
+    "Eff_Avatar_Male_Attack_04_Shoot"
+  ],
+  "searchRelation": 2,
+  "name": "手套普攻",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    41
+  ],
+  "searchTargetRangeDown": 1
+}

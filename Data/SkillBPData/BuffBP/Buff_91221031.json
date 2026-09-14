@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91221031",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "d439751e-7221-430a-b8a7-c4824574fa70",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        16,
+        9
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "dae00101-5fe6-4898-8e07-90dc168e3ef0",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "9": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        7,
+        14
+      ],
+      "NodeID": 9,
+      "UID": "a04bb697-7c14-44ee-9b2d-5c36eaca968d",
+      "name": "addTimer"
+    },
+    "14": {
+      "UID": "eb75e161-98ba-4722-8765-3fd50c1a66f9",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 14
+    },
+    "5": {
+      "UID": "22bdb4a3-b80d-4daa-b136-e47dd8d2c060",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "7": {
+      "buffId": 91221031,
+      "name": "removeBuff",
+      "UID": "bea98e59-e816-4dec-b923-830c9ef6db50",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "1fee68e3-89f6-454b-a115-ba3ffdffb89a",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 91221031,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 16
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

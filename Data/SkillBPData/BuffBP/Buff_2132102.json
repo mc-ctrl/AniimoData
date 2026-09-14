@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132102",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "warpEndTime": 2,
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "fcfd8cc9-2f6b-4832-9c2c-42fadf34d1ff",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Behav_Cry"
+    },
+    "5": {
+      "UID": "cc3c286e-8e3c-4896-bdb1-9aa878e188fe",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "Buff_2132102",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

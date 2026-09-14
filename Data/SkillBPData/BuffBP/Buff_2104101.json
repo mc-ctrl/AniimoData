@@ -1,0 +1,131 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104101",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "nodeMap": {
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 17,
+      "NodeID": 5,
+      "UID": "f7ba02d6-128e-47a1-851d-c6ab382963bc",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5.5,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        14,
+        17
+      ]
+    },
+    "17": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10012,
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": -1
+      },
+      "UID": "ef280ebc-3acc-4eac-9c12-aa88affb3ecb",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 17
+    },
+    "14": {
+      "target": "TARGET",
+      "duration": 1.5,
+      "buffId": 10014,
+      "NodeID": 14,
+      "UID": "05d0cdcc-53ac-451b-adf4-882350dc3d6b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "acdaffd6-a388-4f7b-a358-024267a70d46",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_shield_ice_destroy",
+      "NodeID": 10
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "31b10c88-a037-4775-b6ce-e904c997f54e",
+      "effectId": "Eff_Parmon_10043_Skill_Shield_02",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6fb8090b-5c65-4c98-a06a-2eef5d6245a3",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_shield_ice_form",
+      "NodeID": 8
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.06,
+      "name": "multiply",
+      "UID": "20e1e2f8-3aa0-4a18-838a-952095696ecd",
+      "NodeID": 12,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "ceef94dc-8a84-4b60-bebb-663ce054a3a6",
+        "target": "OWNER",
+        "NodeID": 11,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10043_Skill_Shield_01"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    5,
+    7
+  ],
+  "onBuffStartIds": [
+    8
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "nodeMap": {
+    "52": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "65fcc1f4-2909-4a1f-aa52-82548db28f97",
+      "target": "OWNER",
+      "NodeID": 52,
+      "animId": "Skill_FrenzyBeatEnd"
+    },
+    "54": {
+      "UID": "fd79bf67-94e1-4be9-ba51-aedf6530d2cc",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          61,
+          52,
+          65,
+          68,
+          72,
+          157
+        ]
+      },
+      "NodeID": 54
+    },
+    "65": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6c5350ce-3e9b-437b-ba21-a0809d41b298",
+      "effectId": "Eff_Parmon_10475_Skill_FrenzyBeat_02_liuli",
+      "speed": 1,
+      "NodeID": 65
+    },
+    "144": {
+      "buffId": 9147104,
+      "name": "removeBuff",
+      "UID": "7cb15c2c-ffe7-409f-8ef2-5e8450fe329a",
+      "target": "OWNER",
+      "NodeID": 144
+    },
+    "86": {
+      "UID": "017f2a6d-e362-4210-82f8-1b8eb1c8b2b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 86
+    },
+    "146": {
+      "UID": "75d899e3-0c2d-4586-a95c-72009f421e6d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          144,
+          147,
+          149
+        ]
+      },
+      "NodeID": 146
+    },
+    "147": {
+      "result": 3,
+      "name": "pushChargeQteResult",
+      "UID": "f29f2a93-24ee-4846-8d7c-9da1a62e971d",
+      "NodeID": 147,
+      "chargeQteId": "QTE_10475_Charge"
+    },
+    "88": {
+      "action": {
+        "actionIds": [
+          86,
+          103
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 88,
+      "UID": "94e42cfc-165a-4cae-98c8-4fc61cd5ad4e"
+    },
+    "105": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14750310,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "4fa56a8c-ddb3-46d8-9f2f-d0c560042f30",
+      "target": "TARGET",
+      "NodeID": 105,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+        "hitCameraShakeId": 20100,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "SFX_Parmon_10475_Hit_Light",
+        "airImpulseId": 11200
+      }
+    },
+    "149": {
+      "UID": "ef00ec8f-4457-432d-833c-b1918d109f1c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 149
+    },
+    "72": {
+      "UID": "b9ef5329-ec52-4513-8d0d-fd79c6ee8215",
+      "target": "OWNER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 72
+    },
+    "107": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 105,
+      "NodeID": 107,
+      "UID": "42bb446d-104f-4e63-bfe3-1e4dc820cf6e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            40,
+            2,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        105,
+        162
+      ]
+    },
+    "162": {
+      "target": "TARGET",
+      "duration": {
+        "calcId": 14750310,
+        "calcType": 2,
+        "paramName": "param3",
+        "NodeID": 161,
+        "UID": "19b4181b-3714-4e92-ae1e-b42536191cdb",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 10072,
+      "NodeID": 162,
+      "UID": "003d8c25-8864-45bd-9eb8-25bd6fdc046c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "68": {
+      "name": "stopEffectStr",
+      "UID": "bd532173-fa91-4c82-b9df-2370e7681993",
+      "effectId": "Eff_Parmon_10475_Skill_FrenzyBeat_01_liuli",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "92": {
+      "UID": "bdb4e3c1-8bc4-41e3-b6b0-209d98fa5045",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 92
+    },
+    "109": {
+      "tickInterval": 0.15,
+      "eventType": "NotifyState",
+      "endTime": 0.3,
+      "NodeID": 109,
+      "UID": "a3e86036-5c45-4234-b654-b08eb4c9c27c",
+      "onUpdate": {
+        "actionIds": [
+          107
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          107
+        ]
+      }
+    },
+    "157": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "33742c8e-e00c-4c14-941c-d00613ab7d44",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10475_Skill_FrenzyBeat_End1",
+      "NodeID": 157
+    },
+    "161": {
+      "calcId": 14750310,
+      "calcType": 2,
+      "paramName": "param3",
+      "NodeID": 161,
+      "UID": "19b4181b-3714-4e92-ae1e-b42536191cdb",
+      "name": "getParamByLuaConfig"
+    },
+    "94": {
+      "UID": "8e771af7-855d-42f2-bcfc-34ec7af878c9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          92
+        ]
+      },
+      "NodeID": 94
+    },
+    "61": {
+      "result": 1,
+      "name": "pushChargeQteResult",
+      "UID": "09da21c8-1504-432f-95c1-610a62ab73f7",
+      "NodeID": 61,
+      "chargeQteId": "QTE_10475_Charge"
+    },
+    "103": {
+      "UID": "2c285f2b-bfc2-4c84-a865-a785f6b93ac6",
+      "name": "stopChargeQte",
+      "chargeQteId": "QTE_10475_Charge",
+      "NodeID": 103
+    }
+  },
+  "BPName": "ability_14750310",
+  "NodeID": 56,
+  "UID": "fb8be53e-146a-4d54-a0e4-8000a6725eab",
+  "eventIds": [
+    54,
+    88,
+    94,
+    146,
+    109
+  ],
+  "layer": "Base",
+  "length": 3
+}

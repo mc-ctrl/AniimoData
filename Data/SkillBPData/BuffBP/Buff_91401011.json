@@ -1,0 +1,87 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91401011",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "setOverrideAnim",
+      "NodeID": 5,
+      "UID": "e03cbf83-a16c-4be6-82e2-26cb27a0fe4a",
+      "disableRecoverOnExit": false,
+      "dstAnimKey": "Idle_Passive",
+      "srcAnimKey": "Idle"
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "43cc4ad2-72a4-49cc-a622-457ce03241d3",
+      "effectId": "Eff_Parmon_10401_Skill_Passive_State",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "9": {
+      "NodeID": 9,
+      "UID": "a416834a-a734-4fb1-ba95-f47ebb2d794a",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 10,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "6": {
+      "calcId": 91401011,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "3c021c9d-068d-4507-b8a3-c912fc6a2ff6",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "89b9bc63-e896-434a-8e9a-8c833817d87c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10401_Skill_Passive",
+      "NodeID": 8
+    },
+    "7": {
+      "value": {
+        "calcId": 91401011,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 6,
+        "UID": "3c021c9d-068d-4507-b8a3-c912fc6a2ff6",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "53b50477-7a2a-4d91-bdcd-651e1bf957da",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "030dc999-f47b-4297-8e01-b75d6941aee3",
+      "effectId": "Eff_Parmon_10401_Skill_Passive_State",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    5,
+    2,
+    7,
+    8,
+    9
+  ]
+}

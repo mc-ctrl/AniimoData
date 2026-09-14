@@ -1,0 +1,37 @@
+{
+  "nodeMap": {
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "03e5fcc8-7dd2-4348-940c-82ab0a5834e9",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Command_Back"
+    },
+    "10": {
+      "UID": "7e8dc42f-5766-4959-adb3-31c86d17b2b4",
+      "petState": 3,
+      "name": "setPetState",
+      "NodeID": 10
+    },
+    "5": {
+      "UID": "71aa644b-f86e-4b69-8934-4c5544528888",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "ability_10010007",
+  "NodeID": 7,
+  "UID": "f30fbc11-cfed-4b22-8188-170103aeaf20",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 1
+}

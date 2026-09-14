@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "3dae6693-b8b4-4e9c-825b-81d1a30d6f44",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "9": {
+      "buffId": 2120109,
+      "name": "hasBuff",
+      "UID": "4ef76b58-78e1-40a1-95a0-6756c2e6b6e7",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "buffId": 2120107,
+      "name": "hasBuff",
+      "UID": "846bccc9-b806-429c-9f20-0eca479ee440",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "5c421eb7-e642-4974-9fc0-59d90e1790c3",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "5": {
+      "duration": 20,
+      "actionIds": [
+        8,
+        3
+      ],
+      "NodeID": 5,
+      "UID": "f8ac570f-a5a9-4ef4-b758-253e045755b2",
+      "name": "addTimer"
+    },
+    "7": {
+      "isPetTrigger": true,
+      "petTarget": "OWNER",
+      "triggerId": 102070092,
+      "name": "onEntityTrigger",
+      "UID": "e9f9bc08-7ce6-4607-840d-11c9e78118d6",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "2": {
+      "isPetTrigger": true,
+      "petTarget": "OWNER",
+      "triggerId": 102070091,
+      "name": "onEntityTrigger",
+      "UID": "4bf4fea2-e4c6-432f-93de-4c5621341677",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2120106",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

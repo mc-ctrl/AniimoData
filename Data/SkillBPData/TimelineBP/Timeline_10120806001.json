@@ -1,0 +1,491 @@
+{
+  "nodeMap": {
+    "52": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 52,
+      "UID": "e336e05f-1b27-4a78-8a26-14ecba4cf4cf"
+    },
+    "38": {
+      "target": "OWNER",
+      "duration": 4,
+      "buffId": 10011,
+      "NodeID": 38,
+      "UID": "3cce59df-16af-4fd0-9453-42fb4d5614ca",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "40": {
+      "UID": "2d63bb3d-557e-4e85-bd3c-d53f4556b550",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          80,
+          38,
+          44
+        ]
+      },
+      "NodeID": 40
+    },
+    "41": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "1f86b4d4-d812-48d8-8ebe-2a5a33b1103e",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "64": {
+      "offsetXYZ": [
+        -3,
+        1,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "a982f95e-a822-438d-89c3-e395be7479b7",
+      "effectId": "Eff_Parmon_Starmouse_Skill_Start",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 64
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 43,
+      "UID": "b0bb0205-a127-4e63-9a56-a329649a261f"
+    },
+    "44": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "eb0e3495-4ab3-4fab-a020-2b3105a82a77",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "84": {
+      "action": {
+        "actionIds": [
+          82
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 84,
+      "UID": "85720f7c-3431-4cc6-8797-7bdea3cc9f01"
+    },
+    "66": {
+      "offsetXYZ": [
+        -6,
+        1,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "7a798b82-361f-4f1c-8008-fd07e10c93b6",
+      "effectId": "Eff_Parmon_Starmouse_Skill_Start",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 66
+    },
+    "67": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "9ed8698f-393d-48c7-8a8e-dc550e64da2f",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_swift_attack",
+      "NodeID": 67
+    },
+    "68": {
+      "action": {
+        "actionIds": [
+          67
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 68,
+      "UID": "f7d6acb0-9502-4247-9829-2c1a2b0ffd20"
+    },
+    "87": {
+      "action": {
+        "actionIds": [
+          86
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 87,
+      "UID": "07d8fdca-f467-4894-bc69-fc06c0ce3736"
+    },
+    "73": {
+      "offsetXYZ": [
+        0,
+        0.65,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "91c488db-b7cf-445a-a1cf-92614d8ae94b",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 0.8,
+      "NodeID": 73
+    },
+    "7": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        6,
+        0.6,
+        0.5
+      ],
+      "templateId": 10120806001,
+      "name": "createProjectile",
+      "UID": "92af434f-3108-466f-aa20-f627f67d28a3",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 7
+    },
+    "86": {
+      "UID": "5bd307ae-ee45-4781-ae05-b6291df136d6",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 86
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          7,
+          63
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 9,
+      "UID": "325f1c1c-d9a8-4290-9cf0-67476e653adf"
+    },
+    "82": {
+      "UID": "7e4dfa74-f425-4a72-80fd-d812bc905c25",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 82
+    },
+    "65": {
+      "offsetXYZ": [
+        3,
+        1,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "983f9324-f6d1-48e8-8bb0-838c60ca6518",
+      "effectId": "Eff_Parmon_Starmouse_Skill_Start",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 65
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.85,
+      "NodeID": 35,
+      "UID": "b4e730d8-a458-45cf-ae3e-14ae57c9b8e3"
+    },
+    "20": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        3,
+        0.6,
+        0.5
+      ],
+      "templateId": 10120806004,
+      "name": "createProjectile",
+      "UID": "38ad562c-1bb3-4496-870f-45787ed02d03",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 20
+    },
+    "33": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a0054887-bf42-492a-a6d0-334b2ece6ffb",
+      "target": "OWNER",
+      "NodeID": 33,
+      "animId": "Skill_Swift"
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          65
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.25,
+      "NodeID": 22,
+      "UID": "56cebfb4-f945-477b-8819-ef60452126df"
+    },
+    "23": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        -6,
+        0.6,
+        0.5
+      ],
+      "templateId": 10120806005,
+      "name": "createProjectile",
+      "UID": "f0a1f2b9-4ea9-48da-8d21-172527124ba4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 23
+    },
+    "50": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "5caed952-31a7-46a9-89d7-f737172fc600",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_swift_release",
+      "NodeID": 50
+    },
+    "14": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        0.5
+      ],
+      "templateId": 10120806002,
+      "name": "createProjectile",
+      "UID": "3ed3c4c2-8b8f-4c0b-b2a2-7571d1f0af5d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 14
+    },
+    "56": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 56,
+      "UID": "9e925b90-da7e-45c6-abbc-47e0a49fbff5"
+    },
+    "75": {
+      "action": {
+        "actionIds": [
+          73
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 75,
+      "UID": "dd295e33-3244-4fe6-8c26-16dfb0a27b53"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23,
+          66
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 25,
+      "UID": "30d587a6-474b-4adc-b5d3-ce56527d64eb"
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14,
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 16,
+      "UID": "dee6f40c-f4da-4f52-939b-7eb5e901db29"
+    },
+    "58": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.85,
+      "NodeID": 58,
+      "UID": "82a7bdbf-babe-4ccd-a973-405139771261"
+    },
+    "17": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        -3,
+        0.6,
+        0.5
+      ],
+      "templateId": 10120806003,
+      "name": "createProjectile",
+      "UID": "8a193029-955c-4d67-b22a-306794936f91",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 17
+    },
+    "48": {
+      "offsetXYZ": [
+        0,
+        1,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "4aaee7b4-9b4a-4223-b2f7-811aa9bb2fd9",
+      "effectId": "Eff_Parmon_Starmouse_Skill_Start",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 48
+    },
+    "54": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 54,
+      "UID": "d7a92405-bdba-48fe-9050-519b84cf4d5f"
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.35,
+      "NodeID": 60,
+      "UID": "1933ddf0-f646-45bc-b47d-70a9501f9e8d"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17,
+          64
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 19,
+      "UID": "cf4f7dce-a3b4-47aa-bc1b-428acf0d29af"
+    },
+    "63": {
+      "offsetXYZ": [
+        6,
+        1,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "37c637cb-a4b1-40a4-81d3-a434d1e928a5",
+      "effectId": "Eff_Parmon_Starmouse_Skill_Start",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 63
+    },
+    "80": {
+      "UID": "cefd01f4-a57e-419b-8c4c-62a82d7f0a82",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_10120806",
+  "NodeID": 11,
+  "UID": "52b9e5d6-f558-4e91-bd63-eda310f2446b",
+  "eventIds": [
+    40,
+    35,
+    84,
+    43,
+    9,
+    16,
+    52,
+    58,
+    54,
+    60,
+    56,
+    19,
+    22,
+    25,
+    87,
+    68,
+    75
+  ],
+  "layer": "Base",
+  "length": 3.6
+}

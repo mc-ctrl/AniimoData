@@ -1,0 +1,296 @@
+{
+  "113": {
+    "sort": 37,
+    "res": "$T_Avatar_Female_Decal_F10013_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "116": {
+    "sort": 40,
+    "res": "$T_Avatar_Female_Decal_F10016_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "115": {
+    "sort": 39,
+    "res": "$T_Avatar_Female_Decal_F10015_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "117": {
+    "sort": 41,
+    "res": "$T_Avatar_Female_Decal_F10017_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "118": {
+    "sort": 42,
+    "res": "$T_Avatar_Female_Decal_F10018_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "1": {
+    "sort": 1,
+    "res": "$T_DetailFabric_01_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "2": {
+    "sort": 2,
+    "res": "$T_DetailFabric_02_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "3": {
+    "sort": 3,
+    "res": "$T_DetailFabric_03_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "4": {
+    "sort": 4,
+    "res": "$T_DetailFabric_04_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "101": {
+    "sort": 25,
+    "res": "$T_Avatar_Female_Decal_F10001_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "123": {
+    "sort": 47,
+    "res": "$T_Avatar_Female_Decal_F10023_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "125": {
+    "sort": 49,
+    "res": "$T_Avatar_Female_Decal_F10025_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "10": {
+    "sort": 10,
+    "res": "$T_DetailFabric_10_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "122": {
+    "sort": 46,
+    "res": "$T_Avatar_Female_Decal_F10022_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "121": {
+    "sort": 45,
+    "res": "$T_Avatar_Female_Decal_F10021_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "120": {
+    "sort": 44,
+    "res": "$T_Avatar_Female_Decal_F10020_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "119": {
+    "sort": 43,
+    "res": "$T_Avatar_Female_Decal_F10019_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "5": {
+    "sort": 5,
+    "res": "$T_DetailFabric_05_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "114": {
+    "sort": 38,
+    "res": "$T_Avatar_Female_Decal_F10014_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "112": {
+    "sort": 36,
+    "res": "$T_Avatar_Female_Decal_F10012_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "6": {
+    "sort": 6,
+    "res": "$T_DetailFabric_06_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "24": {
+    "sort": 24,
+    "res": "$T_DetailFabric_24_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "110": {
+    "sort": 34,
+    "res": "$T_Avatar_Female_Decal_F10010_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "7": {
+    "sort": 7,
+    "res": "$T_DetailFabric_07_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "20": {
+    "sort": 20,
+    "res": "$T_DetailFabric_20_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "8": {
+    "sort": 8,
+    "res": "$T_DetailFabric_08_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "13": {
+    "sort": 13,
+    "res": "$T_DetailFabric_13_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "9": {
+    "sort": 9,
+    "res": "$T_DetailFabric_09_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "124": {
+    "sort": 48,
+    "res": "$T_Avatar_Female_Decal_F10024_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "102": {
+    "sort": 26,
+    "res": "$T_Avatar_Female_Decal_F10002_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "11": {
+    "sort": 11,
+    "res": "$T_DetailFabric_11_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "103": {
+    "sort": 27,
+    "res": "$T_Avatar_Female_Decal_F10003_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "12": {
+    "sort": 12,
+    "res": "$T_DetailFabric_12_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "22": {
+    "sort": 22,
+    "res": "$T_DetailFabric_22_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "23": {
+    "sort": 23,
+    "res": "$T_DetailFabric_23_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "105": {
+    "sort": 29,
+    "res": "$T_Avatar_Female_Decal_F10005_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "14": {
+    "sort": 14,
+    "res": "$T_DetailFabric_14_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "106": {
+    "sort": 30,
+    "res": "$T_Avatar_Female_Decal_F10006_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "15": {
+    "sort": 15,
+    "res": "$T_DetailFabric_15_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "107": {
+    "sort": 31,
+    "res": "$T_Avatar_Female_Decal_F10007_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "16": {
+    "sort": 16,
+    "res": "$T_DetailFabric_16_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "108": {
+    "sort": 32,
+    "res": "$T_Avatar_Female_Decal_F10008_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "17": {
+    "sort": 17,
+    "res": "$T_DetailFabric_17_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "109": {
+    "sort": 33,
+    "res": "$T_Avatar_Female_Decal_F10009_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "18": {
+    "sort": 18,
+    "res": "$T_DetailFabric_18_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "21": {
+    "sort": 21,
+    "res": "$T_DetailFabric_21_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "19": {
+    "sort": 19,
+    "res": "$T_DetailFabric_19_CNRN.tga",
+    "type": 2,
+    "initialClaim": 1
+  },
+  "111": {
+    "sort": 35,
+    "res": "$T_Avatar_Female_Decal_F10011_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  },
+  "104": {
+    "sort": 28,
+    "res": "$T_Avatar_Female_Decal_F10004_CA.tga",
+    "type": 1,
+    "initialClaim": 1
+  }
+}

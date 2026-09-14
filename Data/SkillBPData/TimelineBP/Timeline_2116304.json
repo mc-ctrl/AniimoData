@@ -1,0 +1,128 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "UID": "f29be3e3-f333-4a9a-8691-20d3f44cbb64",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "actionIds": [
+        16,
+        10,
+        17,
+        18
+      ],
+      "name": "registerDeadEvent",
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "262c7a9c-1bbf-46fe-8cc5-1201c8d377d1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "cd8038e5-eabd-42c3-b84b-e502609fe81e",
+      "actorId": {
+        "UID": "1f7fdf5e-dc8c-4955-b8d7-7a8fb0bd98c6",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 9
+      },
+      "name": "destroyEntity",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "2261fe85-3109-4bb8-8f4f-088cf68c89a7",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 7
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7fbb2599-de33-475e-9936-acc84cf80ef4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_BurrowSkill_CombatExit",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "7c68dbad-0904-4866-ba2f-b10daf889de8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "cbf2938b-47c0-4b04-a442-1e2950441788",
+      "effectId": "Eff_Parmon_10463_Skill_IceSurf_01",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "84deb05f-b159-460a-ad0d-f92f36f5354b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_IceSurf_Break",
+      "NodeID": 18
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "302ebec4-9434-49c3-9562-c3368a35ea4d",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_Dramotter_skill_wall_summon",
+      "NodeID": 2
+    },
+    "12": {
+      "UID": "65ce57b2-9630-4994-998f-0677116e3fda",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16,
+          10,
+          17,
+          18
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2116304",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    15,
+    3,
+    6,
+    8,
+    12
+  ],
+  "layer": "Base",
+  "length": 5
+}

@@ -1,0 +1,101 @@
+{
+  "duration": 5,
+  "BPName": "ability_10450605",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Fly_DoubleSize",
+  "gravityRatio": 1.3,
+  "groundDestroy": false,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "62": {
+      "templateId": 104514,
+      "name": "checkTargetTemplateId",
+      "UID": "8e39c191-525d-4b59-bd5f-ac2c97a59a2f",
+      "target": "TARGET",
+      "NodeID": 62
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a705b622-13e2-429c-a2b5-5b17564cc316",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterCannonShell_End",
+      "NodeID": 45
+    },
+    "40": {
+      "actionIds": [
+        39
+      ],
+      "conditionActionIds": [
+        62
+      ],
+      "UID": "ddc2aac6-f72b-42fb-aa2f-7e13a8589605",
+      "name": "doActionsByConditions",
+      "NodeID": 40
+    },
+    "24": {
+      "actionIds": [
+        40
+      ],
+      "name": "actOnTargets",
+      "UID": "0dd7196c-5e00-4a6c-9bae-d61733914991",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.75,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "rotFrom": "OWNER"
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 24
+    },
+    "39": {
+      "UID": "a7ff89d7-497a-4b77-8a02-bd2a1a5883b7",
+      "actorId": {
+        "UID": "b224209c-1f74-49e5-aae5-c50ca619cf5a",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 38
+      },
+      "name": "destroyEntity",
+      "NodeID": 39
+    }
+  },
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    24,
+    45
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.6,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "relation": 2,
+  "startSleepTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "groundSweepRadius": 0.6,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

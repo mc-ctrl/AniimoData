@@ -1,0 +1,59 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2008001",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8,
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "offsetXYZ": [
+        -1,
+        0.4,
+        2
+      ],
+      "templateId": 1102010099,
+      "name": "createEntity",
+      "UID": "ff701f2b-9c10-4e59-813d-e170e350198b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "OWNER",
+      "NodeID": 5
+    },
+    "8": {
+      "offsetXYZ": [
+        -1,
+        0.4,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1a78d63e-9b2c-4285-9611-490e2b11432f",
+      "effectId": "Eff_Parmon_10207_Skill_SummonBomb_Release02",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "2": {
+      "delay": 0,
+      "interval": 12,
+      "UID": "135fb7ef-b3f5-4245-a88b-9d73cd46db45",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "badgeCollectNum": 10,
+    "satgeRewardId": 60401
+  },
+  {
+    "badgeCollectNum": 30,
+    "satgeRewardId": 60402
+  },
+  {
+    "badgeCollectNum": 60,
+    "satgeRewardId": 60403
+  },
+  {
+    "badgeCollectNum": 90,
+    "satgeRewardId": 60404
+  },
+  {
+    "badgeCollectNum": 120,
+    "satgeRewardId": 60405
+  },
+  {
+    "badgeCollectNum": 150,
+    "satgeRewardId": 60406
+  },
+  {
+    "chat": 59332581,
+    "npcId": [
+      400079,
+      400102
+    ],
+    "badgeCollectNum": 180,
+    "mainRewardId": 1,
+    "satgeRewardId": 60407,
+    "specialShowcaseId": 1
+  }
+]

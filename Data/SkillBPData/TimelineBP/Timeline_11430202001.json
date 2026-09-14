@@ -1,0 +1,362 @@
+{
+  "nodeMap": {
+    "38": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 38,
+      "UID": "015fe944-5ece-43bb-a892-3d5181b81cb8"
+    },
+    "39": {
+      "rotateSpeed": -38,
+      "name": "rotateBySelf",
+      "UID": "32269750-457b-4ab8-a06c-ee48672684ba",
+      "time": 10,
+      "NodeID": 39
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 40,
+      "UID": "fec8ca9a-e24d-4a7d-8673-5217f708c3df"
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e93ede5f-bb3e-4d97-b4f2-8085dec3f094",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_End",
+      "NodeID": 41
+    },
+    "35": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2dc39a4f-5c4a-43ad-b09b-8fbc3736bca1",
+      "target": "OWNER",
+      "NodeID": 35,
+      "animId": "Skill_Wave_End"
+    },
+    "44": {
+      "playTime": 1.1,
+      "stayTime": 0,
+      "name": "playIndicatorEff",
+      "UID": "b52b456e-8589-4c78-866d-b1b4a75708ab",
+      "target": {
+        "offsetXYZ": [
+          -0.1,
+          0.3,
+          0
+        ],
+        "shapeArgs": [
+          0.35,
+          0.35,
+          7.5,
+          1,
+          1
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 44
+    },
+    "31": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11430202,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "9f41a40f-b540-43b2-920d-c9d4d651f737",
+      "target": "TARGET",
+      "NodeID": 31,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_10043_waterbreath_hit",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10143_Skill_ElectricBreath_Hit_Loop",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 4,
+        "impulseId": 1000
+      }
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "abf85982-adab-417d-87fe-88271e03bab7",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Wave_Start"
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "14430a3d-89a0-4870-83a1-d8699a411b9d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_Loop",
+      "NodeID": 23
+    },
+    "11": {
+      "scale": 1.2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0f3ffbb1-0a6c-438d-a448-0e9296bf2e63",
+      "effectId": "Eff_Parmon_10143_Skill_ElectricBreath",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "da825f1e-a8ca-491e-9f86-f02d4142354b",
+      "effectId": "Eff_Parmon_10143_Skill_ElectricBreath",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2e08f70b-4453-4527-9f62-927d05c6719a",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Skill_Wave_Loop"
+    },
+    "3": {
+      "UID": "03e28604-1d0f-414d-b1fd-1d20def9fc5b",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "a7ce9a59-5fea-4516-9b3a-7c2346a20b00",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.617,
+      "NodeID": 24,
+      "UID": "30be2f6e-565f-4342-aea8-c4031126edb4"
+    },
+    "14": {
+      "UID": "78196841-403e-4fcc-b3d4-00eb601a36be",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "773e7ab0-1ff8-45c5-b30b-2d1f050b85a5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.617,
+      "NodeID": 22,
+      "UID": "2ddbc353-731f-4059-8d87-28eb6f152002"
+    },
+    "25": {
+      "name": "stopSoundStr",
+      "UID": "2127d558-173f-47c1-91a0-24a874fcc882",
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_Loop",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "52889313-4cf5-4680-8151-5862cfd087f3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14,
+          20,
+          35,
+          41,
+          25
+        ]
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "UID": "e78e6b87-eaa4-4a30-a4d2-ad5aa8abacec",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "ce2c775f-7b29-4ccd-b428-3eeb5f5b8427",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.617,
+      "NodeID": 12,
+      "UID": "142b4161-04fe-435a-90a9-6d910e231221"
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3e724257-1620-4567-83bc-c2316b9bba50",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_Star",
+      "NodeID": 26
+    },
+    "32": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 31,
+      "NodeID": 32,
+      "UID": "046d19e8-0fb6-4613-a47e-6e6873564bdc",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            12,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        31
+      ]
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 19,
+      "UID": "7d325068-af4a-44bd-af05-5c790c184922"
+    },
+    "34": {
+      "tickInterval": 0.2,
+      "eventType": "NotifyState",
+      "endTime": 10,
+      "NodeID": 34,
+      "UID": "d426725c-5f7f-48e8-b50b-2d9aedb845fb",
+      "onUpdate": {
+        "actionIds": [
+          32
+        ]
+      },
+      "startTime": 0.617,
+      "onEnter": {
+        "actionIds": [
+          32
+        ]
+      }
+    },
+    "36": {
+      "overridePos": "TARGET",
+      "duration": 1,
+      "name": "puppetPreCastAction",
+      "UID": "7503d113-2fd0-418e-8fd5-c14824982490",
+      "effectId": "Eff_Parmon_10143_Boss_Warning",
+      "timeScale": 0.2,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": true,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11430202",
+  "NodeID": 6,
+  "UID": "58f1e0e7-a913-439a-a59b-7c626c83e8f6",
+  "eventIds": [
+    4,
+    16,
+    22,
+    12,
+    34,
+    38,
+    10,
+    40,
+    27,
+    19,
+    24
+  ],
+  "layer": "Base",
+  "length": 10
+}

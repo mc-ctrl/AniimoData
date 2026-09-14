@@ -1,0 +1,48 @@
+[
+  {
+    "eventType": 16,
+    "switchName": "ACTIVE",
+    "name": 1742494621,
+    "rank": 1,
+    "icon": "$UI_Event_Icon_SchoolGuide_DailyActive.png",
+    "switch": 1,
+    "energySwitch": 0
+  },
+  {
+    "ruleId": 8,
+    "switchName": "CHALLENGE",
+    "name": 1237350032,
+    "rank": 2,
+    "icon": "$UI_Event_Icon_SchoolGuide_ImoChallengeIcon.png",
+    "switch": 1,
+    "energySwitch": 1
+  },
+  {
+    "ruleId": 9,
+    "switchName": "SIM",
+    "switch": 1,
+    "name": 2069455043,
+    "rank": 3,
+    "icon": "$UI_Event_Icon_SchoolGuide_DungeonBattleIcon.png",
+    "conditions": 304025,
+    "energySwitch": 0
+  },
+  {
+    "ruleId": 16,
+    "switchName": "CRAFT",
+    "switch": 0,
+    "name": 1873091917,
+    "rank": 4,
+    "icon": "$UI_Event_Icon_SchoolCrafting.png",
+    "conditions": 304024,
+    "energySwitch": 1
+  },
+  {
+    "switchName": "MEDAL",
+    "name": 1625477980,
+    "rank": 5,
+    "icon": "$UI_Event_Icon_SchoolGuide_Medal.png",
+    "switch": 1,
+    "energySwitch": 0
+  }
+]

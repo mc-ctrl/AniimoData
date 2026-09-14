@@ -1,0 +1,44 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4006020",
+  "calcInfoByLuaConfig": {
+    "element_resist_add_ratio": "param1",
+    "type": 1,
+    "final_taken_dmg_dec_rate_v": "param0",
+    "id": 4006020
+  },
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "icon": "",
+  "NodeID": 1,
+  "tags": [
+    10
+  ],
+  "isDeathKeep": true,
+  "onBuffInheritIds": [
+    4
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 4006020,
+      "name": "removeBuff",
+      "UID": "065f8fb3-c52e-4779-95b9-6b4b047d29e9",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "842e17c8-9887-4dc1-9659-ea33cd85fcad",
+      "target": "OWNER",
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

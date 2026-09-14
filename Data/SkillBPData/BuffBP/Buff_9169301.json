@@ -1,0 +1,157 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9169301",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "actionIds": [
+        20
+      ],
+      "attributeName": "passive_energy_cur",
+      "UID": "1e69a06d-efcd-4f65-a886-49d3cd4a710c",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 22
+    },
+    "23": {
+      "switchTag": "Water",
+      "name": "setModelSwitchTag",
+      "UID": "4f23ca7a-660c-432f-baf1-64d6f3f7708b",
+      "NodeID": 23,
+      "groupKey": 0
+    },
+    "39": {
+      "buffId": 91693012,
+      "name": "removeBuff",
+      "UID": "632f042a-5be0-485b-81f5-35374d0fa42a",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "df761bbe-7442-4aea-94c9-b89526591e3f",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 40
+    },
+    "10": {
+      "naturalDecayV": 0,
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 10,
+      "name": "registerPassiveEnergyInfo",
+      "UID": "b34a2005-4146-4e47-95cf-7983a52e284e",
+      "superBoosted": true,
+      "uiOffsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "spEnergyMaxV": 150,
+      "spEnergyInitV": 0,
+      "NodeID": 10,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 0
+    },
+    "25": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "0c600b63-1817-4ecd-b6ac-36820505917d",
+      "NodeID": 25,
+      "groupKey": 0
+    },
+    "38": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91693012,
+      "NodeID": 38,
+      "UID": "f4e27ff5-1687-47f9-a10a-88b55d2d5005",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "19d1f713-794d-487b-bfe4-0ab615537fff",
+      "NodeID": 17,
+      "groupKey": 0
+    },
+    "37": {
+      "UID": "2cd5de55-755f-422e-939e-5db6cf56d224",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 37
+    },
+    "30": {
+      "actionIds": [
+        28,
+        31
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "ad5656ed-dc20-4713-b736-4cc88a497238",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "31": {
+      "buffId": 91693011,
+      "name": "removeBuff",
+      "UID": "391b1870-85fb-45d4-b17f-e070fb91935e",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "19": {
+      "rValue": 99,
+      "name": "greater",
+      "UID": "98fa024c-7e25-4512-b6a6-aa3c5cc84c9d",
+      "NodeID": 19,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "c00aa438-ec64-4f0d-899e-c5ade9a6d33e",
+        "target": "OWNER",
+        "NodeID": 18,
+        "attributeName": "passive_energy_cur"
+      }
+    },
+    "20": {
+      "actionIds": [
+        23,
+        37,
+        38
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "ba48796d-e89c-441f-a241-d4a9ca8eb9e6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25,
+        40,
+        39
+      ],
+      "NodeID": 20
+    },
+    "28": {
+      "calcInfo": {
+        "passive_energy_cur": -150
+      },
+      "name": "calcResult",
+      "UID": "cdd95565-470f-4888-b8dd-344f931bc42e",
+      "target": "OWNER",
+      "NodeID": 28
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": [
+    10,
+    17,
+    22,
+    30
+  ]
+}

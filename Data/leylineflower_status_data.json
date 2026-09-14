@@ -1,0 +1,69 @@
+[
+  {
+    "npcState": 0
+  },
+  {
+    "npcState": 123,
+    "stateTime": 7200
+  },
+  {
+    "killMonsterNum1": [
+      0,
+      4
+    ],
+    "killMonsterNum2": [
+      5,
+      8
+    ],
+    "killMonsterNum3": [
+      9,
+      12
+    ],
+    "killMonsterNum4": [
+      13,
+      16
+    ],
+    "killMonsterNum5": [
+      17,
+      19
+    ],
+    "killMonsterNum6": [
+      20,
+      20
+    ],
+    "npcState": 124,
+    "stateTime": 120
+  },
+  {
+    "killMonsterNum1": [
+      0,
+      4
+    ],
+    "killMonsterNum2": [
+      5,
+      8
+    ],
+    "killMonsterNum3": [
+      9,
+      12
+    ],
+    "killMonsterNum4": [
+      13,
+      16
+    ],
+    "killMonsterNum5": [
+      17,
+      19
+    ],
+    "killMonsterNum6": [
+      20,
+      20
+    ],
+    "npcState": 125,
+    "stateTime": 7200
+  },
+  {
+    "npcState": 126,
+    "stateTime": 6
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "duration": 1,
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreActorCollision": false,
+  "onProjectileGroundedIds": [
+    48
+  ],
+  "acceleration": 0,
+  "BPName": "timeline_2103202",
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10032_Skill_Sickle02",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "48": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "07db8d18-16c2-4a41-a094-e97a6e04ebca",
+      "effectId": "Eff_Hit_Ice_Blunt",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "72": {
+      "name": "stopSoundStr",
+      "UID": "5611828e-1402-44f2-9103-8f9c1cf2a1a1",
+      "soundId": "SFX_Combat_10032_Skill_Sickle_Loop",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2103202,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param0",
+        "type": 4
+      },
+      "UID": "e0b00d07-d0e4-4104-ac14-2c62f4f2ae05",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Slash_Big",
+            "rotAngle": -15,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "impulseId": 2000
+      }
+    },
+    "18": {
+      "calcResultNodeId": 29,
+      "name": "actOnTargets",
+      "UID": "3750d7a0-c300-466d-96d2-1d475265593f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        29
+      ],
+      "impulseId": 2000,
+      "NodeID": 18
+    }
+  },
+  "maxHitNum": 999,
+  "maxHeightOffset": 5,
+  "onProjectileTickIds": [
+    18
+  ],
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    72
+  ],
+  "startNoGravityTime": 0,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "sweepBoxSize": [
+    0.75,
+    2,
+    2
+  ],
+  "stickGravity": 0.5,
+  "sweepShape": 1,
+  "NodeID": 0,
+  "tickInterval": 0.2,
+  "calcResultNodeId": 29,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "stickPitchMaxOffset": 40
+}

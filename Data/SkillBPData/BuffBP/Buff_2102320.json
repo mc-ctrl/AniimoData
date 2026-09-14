@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102320",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "onBuffRefreshIds": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 0,
+      "disableWhenFinished": false,
+      "NodeID": 3,
+      "UID": "6af9faae-b41f-424f-adfa-53e1082b9590",
+      "target": "OWNER",
+      "presetName": "Eff_Env_CE_Tutorial_Icosahedron_Boss_Fresnel",
+      "name": "playPreset"
+    }
+  },
+  "name": "二十面体",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

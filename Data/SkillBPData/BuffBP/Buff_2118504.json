@@ -1,0 +1,179 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118504",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": [
+    "IDLE",
+    "FLYING"
+  ],
+  "dynamicRPCStates": [
+    "IDLE",
+    "FLYING"
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Attack_Arrow_Up"
+    }
+  ],
+  "nodeMap": {
+    "4": {
+      "NodeID": 4,
+      "UID": "b0996eb9-3836-423b-a004-a98354e82148",
+      "blendTime": 0.3,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1.7,
+      "cameraPivotOffsetXOverride": 0.7,
+      "cameraPivotOffsetZOverride": -0.6,
+      "cameraYawOffset": 0,
+      "maxPitch": 60,
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "name": "setIsInAim",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": false,
+      "minPitch": -60,
+      "showAimUI": true,
+      "val": true,
+      "targetAimLength": 1
+    },
+    "24": {
+      "tags": 1,
+      "name": "setEffectOpacityByPerformanceTag",
+      "UID": "10517d4b-3cac-4f5d-91f6-b6a291fa7311",
+      "opacity": 0.5,
+      "NodeID": 24
+    },
+    "14": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "c095fabd-057c-492b-aa14-75ccec9940f0",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "22683c11-b5ae-4ae0-b500-2922734ee4bd",
+      "to": 11850700,
+      "NodeID": 10,
+      "from": 11850700
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "name": "registerCharacterStateChangeEvent",
+      "UID": "777ba735-4452-4b1f-93de-dee504e4e848",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "8f768417-79c9-4744-aa90-3b65240e5827",
+      "to": 11850720,
+      "NodeID": 7,
+      "from": 11850000
+    },
+    "26": {
+      "UID": "82b1950e-ce80-4f3c-927b-5ff14ab05010",
+      "name": "isLeaveCharacterState",
+      "characterState": [
+        "IDLE",
+        "FLYING"
+      ],
+      "NodeID": 26
+    },
+    "8": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 8,
+      "UID": "0344f55c-b51c-491f-9114-db6f7bad8e74",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "25": {
+      "tags": 1,
+      "name": "setEffectOpacityByPerformanceTag",
+      "UID": "56a882eb-7311-4da4-b11d-b8644ac66f05",
+      "opacity": -1,
+      "NodeID": 25
+    },
+    "6": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "7376eb13-09ed-4b1e-81a9-0d8d85bb23a4",
+      "to": 11850710,
+      "NodeID": 6,
+      "from": 11850700
+    },
+    "19": {
+      "value": true,
+      "name": "disableMotion",
+      "UID": "b212ccaa-f4a9-499e-ae16-16a87cca2ba2",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "b8578458-c6a1-4c7a-a9b7-01b72eb4a1db",
+      "to": 11850000,
+      "NodeID": 11,
+      "from": 11850000
+    },
+    "20": {
+      "value": false,
+      "name": "disableMotion",
+      "UID": "8608d791-9d01-4ae5-8a5c-ef114b45aecf",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "buffId": 2118504,
+      "name": "removeBuff",
+      "UID": "328f16ad-319c-4d59-807b-cda7e5f4c47a",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    8,
+    25,
+    10,
+    11,
+    20
+  ],
+  "onBuffStartIds": [
+    6,
+    7,
+    4,
+    15,
+    19,
+    24
+  ]
+}

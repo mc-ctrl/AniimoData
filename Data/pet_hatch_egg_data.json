@@ -1,0 +1,1683 @@
+{
+  "540303": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000002,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1965223624,
+    "itemSpeedUpLimit": 1
+  },
+  "540304": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000003,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1827468686,
+    "itemSpeedUpLimit": 1
+  },
+  "540305": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000004,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1636643320,
+    "itemSpeedUpLimit": 1
+  },
+  "540306": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000005,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1111956336,
+    "itemSpeedUpLimit": 1
+  },
+  "540307": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000006,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 2041771476,
+    "itemSpeedUpLimit": 1
+  },
+  "540308": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000007,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1737469330,
+    "itemSpeedUpLimit": 1
+  },
+  "540309": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000008,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1466805996,
+    "itemSpeedUpLimit": 1
+  },
+  "540310": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000009,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1627580496,
+    "itemSpeedUpLimit": 1
+  },
+  "540311": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000010,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1357430674,
+    "itemSpeedUpLimit": 1
+  },
+  "540312": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000011,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1501801072,
+    "itemSpeedUpLimit": 1
+  },
+  "540313": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000012,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1157293513,
+    "itemSpeedUpLimit": 1
+  },
+  "540314": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000013,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1186947927,
+    "itemSpeedUpLimit": 1
+  },
+  "540315": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000014,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1321245981,
+    "itemSpeedUpLimit": 1
+  },
+  "540316": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 240,
+    "bonusId": 1000015,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1182482169,
+    "itemSpeedUpLimit": 1
+  },
+  "540317": {
+    "times": 150,
+    "bonusId": 1000016,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540318": {
+    "times": 150,
+    "bonusId": 1000017,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540319": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000018,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1175182992,
+    "itemSpeedUpLimit": 1
+  },
+  "540320": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000019,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1713950675,
+    "itemSpeedUpLimit": 1
+  },
+  "560201": {
+    "times": 10,
+    "bonusId": 2200,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560202": {
+    "times": 10,
+    "bonusId": 2201,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560203": {
+    "times": 10,
+    "bonusId": 2202,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560204": {
+    "times": 10,
+    "bonusId": 2203,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560205": {
+    "times": 10,
+    "bonusId": 2204,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560211": {
+    "times": 150,
+    "bonusId": 2200,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560212": {
+    "times": 150,
+    "bonusId": 2201,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560213": {
+    "times": 150,
+    "bonusId": 2202,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560214": {
+    "times": 150,
+    "bonusId": 2203,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560215": {
+    "times": 150,
+    "bonusId": 2204,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560301": {
+    "times": 150,
+    "bonusId": 2304,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560311": {
+    "times": 150,
+    "bonusId": 2305,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560312": {
+    "times": 150,
+    "bonusId": 2306,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560321": {
+    "suggest": [
+      110003,
+      902
+    ],
+    "times": 300,
+    "unavailable": {
+      "110006": 1
+    },
+    "bonusId": 2301,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1507972172,
+    "itemSpeedUpLimit": 1
+  },
+  "560322": {
+    "times": 300,
+    "bonusId": 2302,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560323": {
+    "times": 300,
+    "bonusId": 2303,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560331": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 2300,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1239368926,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "560341": {
+    "times": 150,
+    "bonusId": 2401,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560342": {
+    "times": 150,
+    "bonusId": 2402,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560343": {
+    "times": 150,
+    "bonusId": 2403,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560344": {
+    "times": 150,
+    "bonusId": 2404,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540142": {
+    "times": 1,
+    "tagConfigManageType": [
+      1001,
+      1004
+    ],
+    "bonusId": 15346,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "560346": {
+    "times": 150,
+    "bonusId": 2406,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540143": {
+    "times": 0.1,
+    "bonusId": 2007,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560348": {
+    "times": 150,
+    "bonusId": 2408,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540144": {
+    "times": 0.1,
+    "bonusId": 2008,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560350": {
+    "times": 150,
+    "bonusId": 2410,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540145": {
+    "times": 1,
+    "bonusId": 2009,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560352": {
+    "times": 150,
+    "bonusId": 2412,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540146": {
+    "times": 0.1,
+    "bonusId": 2010,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560354": {
+    "times": 150,
+    "bonusId": 2414,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560355": {
+    "times": 150,
+    "bonusId": 2415,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560356": {
+    "times": 150,
+    "bonusId": 2416,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560357": {
+    "times": 150,
+    "bonusId": 2417,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560358": {
+    "times": 150,
+    "bonusId": 2418,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560359": {
+    "times": 150,
+    "bonusId": 2419,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560360": {
+    "times": 150,
+    "bonusId": 2420,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560361": {
+    "times": 150,
+    "bonusId": 2421,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560362": {
+    "times": 150,
+    "bonusId": 2422,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560363": {
+    "times": 150,
+    "bonusId": 2423,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560364": {
+    "times": 150,
+    "bonusId": 2424,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560365": {
+    "times": 150,
+    "bonusId": 2425,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560366": {
+    "times": 150,
+    "bonusId": 2426,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560367": {
+    "times": 150,
+    "bonusId": 2427,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560368": {
+    "times": 150,
+    "bonusId": 2428,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560369": {
+    "times": 150,
+    "bonusId": 2429,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560370": {
+    "times": 150,
+    "bonusId": 2430,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910010": {
+    "times": 150,
+    "bonusId": 15357,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910110": {
+    "times": 150,
+    "bonusId": 15358,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910111": {
+    "times": 150,
+    "bonusId": 15375,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910112": {
+    "times": 150,
+    "bonusId": 15376,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910113": {
+    "times": 150,
+    "bonusId": 15377,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910114": {
+    "times": 150,
+    "bonusId": 15378,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910115": {
+    "times": 150,
+    "bonusId": 15379,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910116": {
+    "times": 150,
+    "bonusId": 15380,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910117": {
+    "times": 150,
+    "bonusId": 15381,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560411": {
+    "times": 300,
+    "bonusId": 2501,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560412": {
+    "times": 300,
+    "bonusId": 2502,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560413": {
+    "times": 300,
+    "bonusId": 2503,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560414": {
+    "times": 300,
+    "bonusId": 2504,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560415": {
+    "times": 300,
+    "bonusId": 2505,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560416": {
+    "times": 300,
+    "bonusId": 2506,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560417": {
+    "times": 300,
+    "bonusId": 2507,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560418": {
+    "times": 300,
+    "bonusId": 2508,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560419": {
+    "times": 300,
+    "bonusId": 2509,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560420": {
+    "times": 300,
+    "bonusId": 2510,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560421": {
+    "times": 300,
+    "bonusId": 2511,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560422": {
+    "times": 300,
+    "bonusId": 2512,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560423": {
+    "times": 300,
+    "bonusId": 2513,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560424": {
+    "times": 300,
+    "bonusId": 2514,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560425": {
+    "times": 300,
+    "bonusId": 2515,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560426": {
+    "times": 300,
+    "bonusId": 2516,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560427": {
+    "times": 300,
+    "bonusId": 2517,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560428": {
+    "times": 300,
+    "bonusId": 2518,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560429": {
+    "times": 300,
+    "bonusId": 2519,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560430": {
+    "times": 300,
+    "bonusId": 2520,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560431": {
+    "times": 300,
+    "bonusId": 2521,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560432": {
+    "times": 300,
+    "bonusId": 2522,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560433": {
+    "times": 300,
+    "bonusId": 2523,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560434": {
+    "times": 300,
+    "bonusId": 2524,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560435": {
+    "times": 300,
+    "bonusId": 2525,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560436": {
+    "times": 300,
+    "bonusId": 2526,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560437": {
+    "times": 300,
+    "bonusId": 2527,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560438": {
+    "times": 300,
+    "bonusId": 2528,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560439": {
+    "times": 300,
+    "bonusId": 2529,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560440": {
+    "times": 300,
+    "bonusId": 2530,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "913146": {
+    "times": 150,
+    "bonusId": 19042,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "913163": {
+    "times": 150,
+    "bonusId": 19047,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911301": {
+    "times": 600,
+    "bonusId": 15391,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "990067": {
+    "times": 300,
+    "bonusId": 100186,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911217": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15373,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1538378526,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911216": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15372,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1713961285,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911215": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15371,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 2015231310,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911214": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15356,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1616421587,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911213": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15354,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 2138717770,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911212": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15353,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1992398181,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911211": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15352,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1952416455,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911210": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15342,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1983087009,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911209": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15351,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1287599037,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911208": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15350,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1301190365,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911207": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15349,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1427074823,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911206": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15348,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1397073071,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911205": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15347,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1343211088,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911204": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15346,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1317846411,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911203": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15344,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 2024630800,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911202": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15343,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1641508524,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911201": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15341,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1630200527,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "5911007": {
+    "times": 300,
+    "bonusId": 15388,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911006": {
+    "times": 300,
+    "bonusId": 15387,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911005": {
+    "times": 300,
+    "bonusId": 15386,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911004": {
+    "times": 300,
+    "bonusId": 15385,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911003": {
+    "times": 300,
+    "bonusId": 15384,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911002": {
+    "times": 300,
+    "bonusId": 15383,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911001": {
+    "times": 300,
+    "bonusId": 15382,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911000": {
+    "times": 300,
+    "bonusId": 15390,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5910999": {
+    "times": 300,
+    "bonusId": 15389,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "4040120": {
+    "times": 300,
+    "bonusId": 2303,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "990077": {
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "times": 300
+  },
+  "990076": {
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "times": 300
+  },
+  "990075": {
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "times": 300
+  },
+  "990068": {
+    "times": 300,
+    "bonusId": 100187,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "5911300": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 15374,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 2098597431,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "990066": {
+    "times": 300,
+    "bonusId": 100185,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "990065": {
+    "times": 300,
+    "bonusId": 100184,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "unavailable": {
+      "110006": 1
+    }
+  },
+  "920003": {
+    "times": 150,
+    "bonusId": 2409,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560345": {
+    "times": 150,
+    "bonusId": 2405,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560347": {
+    "times": 150,
+    "bonusId": 2407,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560349": {
+    "times": 150,
+    "bonusId": 2409,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560351": {
+    "times": 150,
+    "bonusId": 2411,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "560353": {
+    "times": 150,
+    "bonusId": 2413,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "7011": {
+    "times": 720,
+    "bonusId": 2012,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "540102": {
+    "times": 0.1,
+    "bonusId": 2300,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540111": {
+    "times": 10,
+    "bonusId": 2200,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540112": {
+    "times": 10,
+    "bonusId": 2201,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540113": {
+    "times": 10,
+    "bonusId": 2202,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540114": {
+    "times": 10,
+    "bonusId": 2203,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540115": {
+    "times": 10,
+    "bonusId": 2204,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540116": {
+    "times": 240,
+    "bonusId": 15305,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540117": {
+    "times": 1,
+    "bonusId": 15306,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540118": {
+    "times": 240,
+    "bonusId": 15307,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540119": {
+    "times": 240,
+    "bonusId": 15308,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540120": {
+    "times": 720,
+    "bonusId": 100012,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540121": {
+    "times": 720,
+    "bonusId": 100013,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540122": {
+    "times": 720,
+    "bonusId": 100014,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540123": {
+    "times": 720,
+    "bonusId": 100015,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540124": {
+    "times": 150,
+    "bonusId": 15309,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540125": {
+    "times": 60,
+    "bonusId": 15305,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540126": {
+    "times": 240,
+    "bonusId": 15305,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540127": {
+    "times": 0.1,
+    "bonusId": 15310,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540128": {
+    "times": 30,
+    "tagConfigManageType": [
+      1004
+    ],
+    "bonusId": 2200,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540129": {
+    "times": 30,
+    "tagConfigManageType": [
+      1004
+    ],
+    "bonusId": 2201,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540130": {
+    "times": 30,
+    "tagConfigManageType": [
+      1004
+    ],
+    "bonusId": 2202,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540131": {
+    "times": 30,
+    "tagConfigManageType": [
+      1004
+    ],
+    "bonusId": 2203,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540132": {
+    "times": 30,
+    "tagConfigManageType": [
+      1004
+    ],
+    "bonusId": 2204,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540133": {
+    "times": 150,
+    "tagConfigManageType": [
+      1011
+    ],
+    "bonusId": 15400,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540134": {
+    "times": 720,
+    "bonusId": 100048,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540135": {
+    "times": 720,
+    "bonusId": 100049,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540136": {
+    "times": 720,
+    "bonusId": 100050,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540137": {
+    "times": 720,
+    "bonusId": 100051,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540138": {
+    "times": 720,
+    "bonusId": 100052,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540139": {
+    "times": 720,
+    "bonusId": 100053,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540140": {
+    "times": 720,
+    "bonusId": 100054,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540141": {
+    "times": 720,
+    "bonusId": 100055,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540147": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 2011,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1278709365,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "540148": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 2012,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1783755189,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "540149": {
+    "times": 720,
+    "bonusId": 2013,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540150": {
+    "times": 600,
+    "unavailable": {
+      "110006": 1,
+      "110003": 1
+    },
+    "bonusId": 2014,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "540151": {
+    "times": 150,
+    "bonusId": 2015,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540152": {
+    "times": 150,
+    "bonusId": 2016,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540153": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "itemSpeedUpLimit": 1,
+    "bonusId": 2017,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1662711342,
+    "requireEnvs": [
+      1,
+      1
+    ]
+  },
+  "540154": {
+    "times": 300,
+    "bonusId": 2018,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540300": {
+    "times": 0.1,
+    "bonusId": 2001,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1,
+    "unavailable": {
+      "110006": 1,
+      "110003": 1
+    }
+  },
+  "540301": {
+    "times": 1440,
+    "bonusId": 2001,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "itemSpeedUpLimit": 1
+  },
+  "540302": {
+    "suggest": [
+      110006,
+      903
+    ],
+    "times": 600,
+    "bonusId": 1000001,
+    "fondleByPlayerLimitDaily": 1,
+    "fondleLimitTotalDaily": 2,
+    "desc": 1102478660,
+    "itemSpeedUpLimit": 1
+  }
+}

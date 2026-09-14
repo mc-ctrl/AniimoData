@@ -1,0 +1,51 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9147105",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 15,
+      "buffId": 91471020,
+      "NodeID": 3,
+      "UID": "dc13efe7-5cb5-490e-82ce-4ac1523a26a8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "ee9483d6-591d-45c3-b481-58e7208f2e0e",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "5": {
+      "UID": "b36523f5-cd0f-4180-a738-d3834a3fd03b",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "caa7ad8e-645a-4577-b262-1e8a44e930d8",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 6
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

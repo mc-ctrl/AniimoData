@@ -1,0 +1,57 @@
+{
+  "nodeMap": {
+    "58": {
+      "name": "isInBurrow",
+      "UID": "507ae4fe-86a0-4ea1-89de-13a2f5ee55dc",
+      "target": "OWNER",
+      "NodeID": 58,
+      "not": false
+    },
+    "9": {
+      "timelineId": 12850800001,
+      "name": "jumpToNextTimeline",
+      "UID": "8232ec2a-2f33-4e81-92d6-1601b1d2dfe8",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "10": {
+      "actionIds": [
+        65
+      ],
+      "conditionActionIds": [
+        58
+      ],
+      "UID": "316ad25e-ef25-45de-b3fe-ffdd38a6e292",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "8c64ce5e-dc16-48ca-a402-b6afad8b7a76",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "65": {
+      "timelineId": 12850800003,
+      "name": "jumpToNextTimeline",
+      "UID": "d76f3935-e60a-4024-afa4-8fbceee56008",
+      "target": "OWNER",
+      "NodeID": 65
+    }
+  },
+  "BPName": "ability_12850800",
+  "NodeID": 13,
+  "UID": "c6318437-c6d1-43bc-ba13-51638459c474",
+  "eventIds": [
+    11
+  ],
+  "layer": "Base",
+  "length": 1
+}

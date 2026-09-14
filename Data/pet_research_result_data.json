@@ -1,0 +1,51 @@
+{
+  "avatar": {
+    "researchPageIcon": "default",
+    "unlockTips": 1528412897,
+    "title": 1996143223
+  },
+  "base": {
+    "researchPageIcon": "UI_Icon_Basic",
+    "researchPageIdx": 0,
+    "title": 1592191041
+  },
+  "battleSkill": {
+    "unlockTips": 1393175089,
+    "researchPageIcon": "default",
+    "researchPageIdx": 4,
+    "title": 2045498570
+  },
+  "battleSkillRare": {
+    "unlockTips": 1784922571,
+    "researchPageIcon": "default",
+    "researchPageIdx": 4,
+    "title": 1658545704
+  },
+  "dataStatistic": {
+    "researchPageIcon": "default",
+    "researchPageIdx": 6,
+    "title": 1136546537
+  },
+  "featureRare": {
+    "unlockTips": 1674298787,
+    "researchPageIcon": "default",
+    "researchPageIdx": 4,
+    "title": 1744309486
+  },
+  "stageUpgrade": {
+    "researchPageIcon": "default",
+    "researchPageIdx": 3,
+    "title": 1461443274
+  },
+  "traits": {
+    "researchPageIcon": "UI_Icon_BS_Earth",
+    "researchPageIdx": 7,
+    "title": 2025580839
+  },
+  "feature": {
+    "unlockTips": 2014474867,
+    "researchPageIcon": "default",
+    "researchPageIdx": 4,
+    "title": 1652922158
+  }
+}

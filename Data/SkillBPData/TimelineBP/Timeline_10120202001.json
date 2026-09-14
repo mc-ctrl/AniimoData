@@ -1,0 +1,204 @@
+{
+  "nodeMap": {
+    "38": {
+      "action": {
+        "actionIds": [
+          36,
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 38,
+      "UID": "fafedeef-8c95-45e2-ad0d-14b6aabb89e7"
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "209d0eed-4da1-47e3-977d-9bba3cd7b841",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 0.8,
+      "NodeID": 39
+    },
+    "44": {
+      "UID": "aa814a1d-35b2-44f5-bcde-fa0df54a862a",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 44
+    },
+    "31": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "fca1f4c7-ae69-4646-84a7-9cedd1b061d0",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_charge",
+      "NodeID": 31
+    },
+    "9": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "e6ca1933-82e0-401a-b5cd-0050a5d2b1a8",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "14f31ab3-f0e0-43d8-88fa-9e39494514f5",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Charm"
+    },
+    "4": {
+      "UID": "fa9b4848-a454-4873-a4bc-ea0611031a84",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50,
+          2,
+          9
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "UID": "90f5d59b-fc24-43a3-a95b-328280b0624b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "NodeID": 45
+    },
+    "15": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "templateId": 10120202001,
+      "name": "createProjectile",
+      "UID": "3f4b2c55-52a8-4412-b4b3-d84c5c2040eb",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 15
+    },
+    "47": {
+      "UID": "70405c66-0959-4a4c-9c9b-3c4e4b948bee",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 47
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.7,
+      "NodeID": 48,
+      "UID": "1618a1ac-968e-4605-90c0-18c2e09845bd"
+    },
+    "28": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "f8a077ad-9992-4cc6-8734-57284b353233",
+      "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_01",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.12,
+      "NodeID": 30,
+      "UID": "0d069417-3def-44f2-ac30-e550264a5297"
+    },
+    "32": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "27bb5af0-56d1-42d7-999e-0df51028ac9c",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_attack",
+      "NodeID": 32
+    },
+    "50": {
+      "UID": "c51c85f1-6263-4b36-9bff-697d1eb60140",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 50
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.05,
+      "NodeID": 17,
+      "UID": "d7a39adc-dc26-4049-95a9-3b99f0cb2024"
+    },
+    "36": {
+      "duration": 0.7,
+      "name": "frameFreeze",
+      "UID": "2e3a3047-9d7e-40ea-82fd-1fd698d93bca",
+      "target": "OWNER",
+      "timeScale": 0.1,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_10120202",
+  "NodeID": 6,
+  "UID": "4aab33e9-bcfa-4d13-a395-0c5ca38d88af",
+  "eventIds": [
+    4,
+    45,
+    17,
+    38,
+    48,
+    30
+  ],
+  "layer": "Base",
+  "length": 3
+}

@@ -1,0 +1,66 @@
+{
+  "84198088": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaPoints": [
+      -986.63,
+      1761.84,
+      -995.2,
+      1764.67,
+      -999.73,
+      1760.62,
+      -1000.56,
+      1754,
+      -990.76,
+      1750.46,
+      -986.05,
+      1756.65
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "areaAABB": [
+      -1000.56,
+      1750.46,
+      -986.05,
+      1764.67
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "INFO_DISABLE_1_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30.14,
+    "sandboxId": 72553252,
+    "position": [
+      -995.18,
+      72.16,
+      1757.56
+    ],
+    "pointType": 1,
+    "name": "区域_84198088",
+    "id": 84198088
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11146",
+  "NodeID": 1,
+  "UID": "6e1b1382-3a03-4b2d-97c2-ab1266bae04b",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "46f7fcd5-6eb5-4b0a-b5b6-48d684fb5a65",
+      "effectId": "Eff_Parmon_10481_Bubble",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 20,
+      "buffId": 10072,
+      "NodeID": 14,
+      "UID": "4f601c6c-0dde-4ef8-a444-b2e1b8b1aeac",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a21af92d-d876-482c-b198-39f169e459f2",
+      "effectId": "Eff_Parmon_10481_Bubble",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "d5a786ca-9424-4fbd-93a8-52a7265162d4",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 15
+    },
+    "7": {
+      "calcInfo": {
+        "add_cur_bp_max_p": 0.3
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "elementType": 0,
+        "dmgWordUITypes": [
+          "Null"
+        ]
+      },
+      "UID": "8b3f5af7-15d9-4f52-9318-9b84d4c1f16e",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 7
+    },
+    "16": {
+      "tag": "TE_Par_Leave",
+      "name": "removeEntityTag",
+      "UID": "a0c08f3e-5cc1-4149-b3fd-3b14888943ed",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "UID": "17d0806e-1f38-4731-a362-605dff3c77e5",
+      "name": "immuneDamage",
+      "NodeID": 17
+    },
+    "9": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "73f72d51-c8d2-477a-9336-04430d81d7d7",
+      "target": "OWNER",
+      "val": 11146,
+      "NodeID": 9
+    },
+    "18": {
+      "tag": "TE_Par_IsInCombat",
+      "name": "removeEntityTag",
+      "UID": "ccf83121-accd-43f5-9a41-a6b55208d377",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "UID": "baa04db5-ce97-40f4-887d-8622fb84ee14",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 19
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "740dca24-6ae8-44c4-8d41-ae84b4b7b9ad",
+      "effectId": "Eff_Parmon_10481_Bubble_End",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "4": {
+      "actionIds": [
+        17,
+        7,
+        2,
+        18,
+        19,
+        14
+      ],
+      "interval": 0.1,
+      "UID": "75c4fb88-4bcc-433b-beb5-88bac68a5b7e",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 4
+    },
+    "2": {
+      "buffId": 11146,
+      "name": "removeBuff",
+      "UID": "7a3779ce-de9c-4272-9730-7f42673138d1",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    15,
+    13,
+    11,
+    16
+  ],
+  "onBuffStartIds": [
+    9,
+    10,
+    4
+  ]
+}

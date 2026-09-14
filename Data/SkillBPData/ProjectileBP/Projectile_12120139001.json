@@ -1,0 +1,59 @@
+{
+  "angularIncreaseDuration": 5,
+  "BPName": "ability_12120139",
+  "NodeID": 0,
+  "trackingNoOffsetRotationRange": 5,
+  "effectId": "Eff_Parmon_10212_Skill_MagicFlower_Bullet",
+  "duration": 6,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 20,
+  "minAngularOffset": 0,
+  "moveSpeed": 5,
+  "defaultHitSoundType": "s",
+  "onProjectileHitIds": [
+    24
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "24": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12120139,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "e5dd527f-ae1a-4dae-ae16-acbc22ec8575",
+      "target": "TARGET",
+      "NodeID": 24,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106,
+        "hitFrameFreezeId": -1,
+        "elementType": 6,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt"
+      }
+    }
+  },
+  "tickInterval": 0,
+  "calcResultNodeId": 24,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 3
+}

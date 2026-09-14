@@ -1,0 +1,72 @@
+{
+  "BPName": "ability_12910001",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 14000000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        30
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "e782a715-214a-4cc3-9913-854e75d7009a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "29": {
+      "buffId": 2129301,
+      "name": "hasBuff",
+      "UID": "5bbe1667-783e-40f1-b63e-deca5c57356d",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "7": {
+      "timelineId": 12910001001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "30": {
+      "timelineId": 12910004001,
+      "name": "setCombatActionTimeline",
+      "UID": "a635c424-923e-495f-8a8e-d8c9376111c9",
+      "target": "CASTER",
+      "NodeID": 30
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack02"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10293_Skill_Attack_Tail",
+    "Eff_Hit_Electric_Blunt",
+    "Eff_Parmon_10293_Attack_LightningBall_Small"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    12910004,
+    12910005,
+    12910006
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "refBones": [
+    "Root"
+  ]
+}

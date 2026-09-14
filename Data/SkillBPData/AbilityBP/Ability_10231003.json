@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_10231003",
+  "NodeID": 1,
+  "UID": "db13e75f-c9c6-469f-8ec0-db8b5f7adcec",
+  "abilityParamId": 10700260,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 10231003001,
+      "name": "setCombatActionTimeline",
+      "UID": "ae7eed83-4dd1-41df-8ada-2b265cfe715c",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Monster_Landingattack"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10023_Skill_Warning_Landingattack",
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Parmon_10023_Skill_Ex_GroundBoom"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞飞行中落地下砸",
+  "searchTargetRangeRadius": 100,
+  "searchTargetRangeUp": 15,
+  "onlyHasActOnTargets": true,
+  "selectPos": 1,
+  "searchTargetRangeDown": 15
+}

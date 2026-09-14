@@ -1,0 +1,88 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116106",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "isInBurrow",
+      "UID": "3dbc30c3-53a8-4612-b409-6728703d57bf",
+      "target": "OWNER",
+      "NodeID": 3,
+      "not": false
+    },
+    "4": {
+      "actionIds": [
+        8,
+        13
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "313ed140-7ab9-409c-996d-8c4a29dda49d",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "13": {
+      "petTarget": "OWNER",
+      "triggerId": 20002009,
+      "name": "onEntityTrigger",
+      "UID": "bf16ff7b-1734-450d-b63b-1638914c11bf",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "11": {
+      "name": "registerCharacterBuff",
+      "NodeID": 11,
+      "calcInfoByLuaConfig": {
+        "id": 9116106,
+        "pet_switch_cd_reduce_ratio": "param0",
+        "type": 1
+      },
+      "UID": "c3e31a9e-f0dd-4202-81d0-af559927af87",
+      "conditionType": 1,
+      "conditions": [
+        {
+          "stateName": "SNEAK",
+          "isParentState": true,
+          "NodeID": 10,
+          "UID": "98a70228-52e0-4010-b50c-8e23759626fd",
+          "target": "OWNER",
+          "name": "isInCharacterState",
+          "abilityType": 0
+        }
+      ],
+      "characterBuffType": 1
+    },
+    "5": {
+      "UID": "462b9173-8a7d-44a1-8a07-9b6372f554a2",
+      "newPetActionIds": [
+        4
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 5
+    },
+    "8": {
+      "target": {
+        "UID": "4b02a898-6349-4e13-8129-cd6b1b573201",
+        "name": "getEventData",
+        "eventName": "onNewPetSwitch",
+        "NodeID": 7
+      },
+      "duration": 10,
+      "buffId": 91161061,
+      "NodeID": 8,
+      "UID": "67f9568c-c463-4be5-9993-bf235aa5d781",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    5
+  ]
+}

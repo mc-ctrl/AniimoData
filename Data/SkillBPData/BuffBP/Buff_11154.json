@@ -1,0 +1,135 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11154",
+  "NodeID": 1,
+  "UID": "1071c4a3-fee6-4a06-a40f-99a798e523b1",
+  "desc": "珊壳鱼吵架cd",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "cf873e67-0073-4fba-834f-f5129c3ae4d5",
+      "name": "createList",
+      "list": [
+        {
+          "name": "showBubble",
+          "UID": "f45ae171-bc14-41ba-a5e2-82fe4baebe23",
+          "target": "OWNER",
+          "NodeID": 2,
+          "emojiName": "Surprise"
+        },
+        {
+          "name": "showBubble",
+          "UID": "1b0285d1-0e37-4ef9-bb3b-daa1ff668c81",
+          "target": "OWNER",
+          "NodeID": 11,
+          "emojiName": "Fear"
+        },
+        {
+          "name": "showBubble",
+          "UID": "6696030e-ed3d-4982-a58d-dad78e566ec7",
+          "target": "OWNER",
+          "NodeID": 10,
+          "emojiName": "Alert"
+        },
+        {
+          "name": "showBubble",
+          "UID": "a2b77e45-aa2b-454f-a2a4-d8086f517fd4",
+          "target": "OWNER",
+          "NodeID": 9,
+          "emojiName": "Dizzy"
+        }
+      ],
+      "NodeID": 3
+    },
+    "4": {
+      "NodeID": 4,
+      "UID": "803d2849-a7ba-4b52-b495-bc38a5796b07",
+      "name": "doActionByIndex",
+      "actionsListId": 3,
+      "index": {
+        "convertType": 0,
+        "name": "toInt",
+        "UID": "71de1553-cafa-4cef-ab73-9f7bd51574b7",
+        "val": {
+          "NodeID": 7,
+          "UID": "08d22de5-bdd0-4380-9af2-89735c905e9a",
+          "min": 1,
+          "max": 4,
+          "name": "random"
+        },
+        "NodeID": 8
+      }
+    },
+    "6": {
+      "name": "isActorType",
+      "UID": "86da4df1-7874-4bfc-a456-e08dd1640ea7",
+      "target": "OWNER",
+      "NodeID": 6,
+      "actorType": 3
+    },
+    "10": {
+      "name": "showBubble",
+      "UID": "6696030e-ed3d-4982-a58d-dad78e566ec7",
+      "target": "OWNER",
+      "NodeID": 10,
+      "emojiName": "Alert"
+    },
+    "7": {
+      "NodeID": 7,
+      "UID": "08d22de5-bdd0-4380-9af2-89735c905e9a",
+      "min": 1,
+      "max": 4,
+      "name": "random"
+    },
+    "8": {
+      "convertType": 0,
+      "name": "toInt",
+      "UID": "71de1553-cafa-4cef-ab73-9f7bd51574b7",
+      "val": {
+        "NodeID": 7,
+        "UID": "08d22de5-bdd0-4380-9af2-89735c905e9a",
+        "min": 1,
+        "max": 4,
+        "name": "random"
+      },
+      "NodeID": 8
+    },
+    "9": {
+      "name": "showBubble",
+      "UID": "a2b77e45-aa2b-454f-a2a4-d8086f517fd4",
+      "target": "OWNER",
+      "NodeID": 9,
+      "emojiName": "Dizzy"
+    },
+    "11": {
+      "name": "showBubble",
+      "UID": "1b0285d1-0e37-4ef9-bb3b-daa1ff668c81",
+      "target": "OWNER",
+      "NodeID": 11,
+      "emojiName": "Fear"
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "d51a936d-f96d-41b5-8a9a-0f61b0002ad2",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "2": {
+      "name": "showBubble",
+      "UID": "f45ae171-bc14-41ba-a5e2-82fe4baebe23",
+      "target": "OWNER",
+      "NodeID": 2,
+      "emojiName": "Surprise"
+    }
+  },
+  "name": "珊壳鱼吵架cd",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

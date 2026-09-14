@@ -1,0 +1,164 @@
+{
+  "76243956": {
+    "spawnType": 0,
+    "owner": "徐云涛",
+    "sandboxType": 3,
+    "position": [
+      -75.94,
+      0.51,
+      -88.86
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 69524816,
+    "id": 76243956,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          76243954
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70547163": {
+    "spawnType": 0,
+    "owner": "徐云涛",
+    "sandboxType": 3,
+    "position": [
+      -88.72,
+      0.5,
+      -88.74
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 69524816,
+    "id": 70547163,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70547161
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70547168": {
+    "spawnType": 0,
+    "owner": "徐云涛",
+    "sandboxType": 3,
+    "position": [
+      -81.6,
+      0.5,
+      -88.83
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 69524816,
+    "id": 70547168,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70547166
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "71149900": {
+    "spawnType": 0,
+    "owner": "徐云涛",
+    "sandboxType": 3,
+    "position": [
+      -13.93,
+      15.25,
+      -55.82
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 69524816,
+    "id": 71149900,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "联结者可以在此处进行传送",
+      "autoSetContent1": true,
+      "compassShowDistance": 100,
+      "initState": 0,
+      "inactiveDesc": "联结者可以在此处进行传送",
+      "mapAreaId": 0,
+      "markConfigId": 1,
+      "markContent1": 71149899,
+      "nearState": 2,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": true,
+      "scale1": 1,
+      "scale2": 1,
+      "compassTxt": "传送点",
+      "showUI": true,
+      "positionParam": [
+        0,
+        0
+      ],
+      "image": "$UI_Icon_MarkPoint_Transmit.png",
+      "SloganPlayOnce": false,
+      "title": "传送台",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "showActiveDistance": false,
+      "scale3": 1,
+      "inactiveTitle": "传送台",
+      "activeDisplayType": 1,
+      "activeDistance": 5,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "markType": 0,
+      "arriveType": 1,
+      "arriveParam": {},
+      "isPorfal": true,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "inactiveImage": "$UI_Icon_MarkPoint_Transmit.png"
+    },
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          71149899
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

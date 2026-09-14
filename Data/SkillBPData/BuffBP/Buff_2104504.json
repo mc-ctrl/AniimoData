@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104504",
+  "NodeID": 1,
+  "UID": "d1822160-e693-4771-9952-029877be62f5",
+  "transferGroup": 0,
+  "onBuffRefreshIds": [
+    6,
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "620ad6cf-c187-4ea4-8c40-7de6bd58f0a6",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 3
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "8d0c3ef8-5028-4300-a4da-e954d5c4824b",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_S",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "isClearOld": true,
+      "UID": "2bd87833-f844-4a53-aed1-244df536064a",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 6,
+      "calcInfoByLuaConfig": {
+        "id": 2104504,
+        "dmg_grass_add_ratio": "param1",
+        "type": 1
+      }
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "89718d3d-be36-4834-9c78-d1aab3ddcfb3",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_End",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "900cca2f-7334-46a5-aed1-0d86e1f3f18e",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_S",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    9,
+    3
+  ],
+  "onBuffStartIds": [
+    6,
+    8
+  ]
+}

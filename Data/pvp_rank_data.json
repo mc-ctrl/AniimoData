@@ -1,0 +1,384 @@
+{
+  "1003": {
+    "rank": 3,
+    "rankName": 1319989557,
+    "rewardDisplay": [
+      [
+        150001,
+        10,
+        1
+      ],
+      [
+        110001,
+        5,
+        1
+      ],
+      [
+        2,
+        1000,
+        1
+      ]
+    ],
+    "needScore": 200,
+    "icon": "$UI_Icon_Badge_001.png",
+    "levelName": 2144240437,
+    "pvpId": 1
+  },
+  "1004": {
+    "rank": 4,
+    "rankName": 1562645030,
+    "rewardDisplay": [
+      [
+        150001,
+        15,
+        1
+      ],
+      [
+        110001,
+        10,
+        1
+      ],
+      [
+        2,
+        2000,
+        1
+      ]
+    ],
+    "needScore": 300,
+    "icon": "$UI_Icon_Badge_001.png",
+    "levelName": 1751116149,
+    "pvpId": 1
+  },
+  "1002": {
+    "rank": 2,
+    "rankName": 1744553640,
+    "rewardDisplay": [
+      [
+        150001,
+        5,
+        1
+      ],
+      [
+        110001,
+        5,
+        1
+      ],
+      [
+        2,
+        1000,
+        1
+      ]
+    ],
+    "needScore": 100,
+    "icon": "$UI_Icon_Badge_001.png",
+    "levelName": 1308541269,
+    "pvpId": 1
+  },
+  "1013": {
+    "rank": 13,
+    "rankName": 1728278124,
+    "rewardDisplay": [
+      [
+        150003,
+        15,
+        1
+      ],
+      [
+        110002,
+        10,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 2200,
+    "icon": "$UI_Icon_Badge_003.png",
+    "levelName": 1576199156,
+    "pvpId": 1
+  },
+  "1006": {
+    "rank": 6,
+    "rankName": 1999967494,
+    "rewardDisplay": [
+      [
+        150002,
+        15,
+        1
+      ],
+      [
+        110002,
+        10,
+        1
+      ],
+      [
+        2,
+        2000,
+        1
+      ]
+    ],
+    "needScore": 500,
+    "icon": "$UI_Icon_Badge_002.png",
+    "levelName": 1233724845,
+    "pvpId": 1
+  },
+  "1016": {
+    "rank": 16,
+    "rankName": 1906642428,
+    "rewardDisplay": [
+      [
+        150002,
+        15,
+        1
+      ],
+      [
+        110002,
+        10,
+        1
+      ],
+      [
+        2,
+        2000,
+        1
+      ]
+    ],
+    "needScore": 3300,
+    "icon": "$UI_Icon_Badge_004.png",
+    "levelName": 1793923064,
+    "pvpId": 1
+  },
+  "1007": {
+    "rank": 7,
+    "rankName": 1984800127,
+    "rewardDisplay": [
+      [
+        150002,
+        20,
+        1
+      ],
+      [
+        110002,
+        10,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 700,
+    "icon": "$UI_Icon_Badge_002.png",
+    "levelName": 1413897452,
+    "pvpId": 1
+  },
+  "1015": {
+    "rank": 15,
+    "rankName": 1309856553,
+    "rewardDisplay": [
+      [
+        150003,
+        25,
+        1
+      ],
+      [
+        110002,
+        15,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 2800,
+    "icon": "$UI_Icon_Badge_003.png",
+    "levelName": 2078810339,
+    "pvpId": 1
+  },
+  "1008": {
+    "rank": 8,
+    "rankName": 1482455368,
+    "rewardDisplay": [
+      [
+        150003,
+        15,
+        1
+      ],
+      [
+        110002,
+        10,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 900,
+    "icon": "$UI_Icon_Badge_002.png",
+    "levelName": 1201859924,
+    "pvpId": 1
+  },
+  "1014": {
+    "rank": 14,
+    "rankName": 1247394530,
+    "rewardDisplay": [
+      [
+        150003,
+        20,
+        1
+      ],
+      [
+        110002,
+        15,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 2500,
+    "icon": "$UI_Icon_Badge_003.png",
+    "levelName": 1950799040,
+    "pvpId": 1
+  },
+  "1012": {
+    "rank": 12,
+    "rankName": 1184024371,
+    "rewardDisplay": [
+      [
+        150002,
+        20,
+        1
+      ],
+      [
+        110002,
+        10,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 1900,
+    "icon": "$UI_Icon_Badge_003.png",
+    "levelName": 1678011051,
+    "pvpId": 1
+  },
+  "1011": {
+    "rank": 11,
+    "rankName": 1313538046,
+    "rewardDisplay": [
+      [
+        150002,
+        15,
+        1
+      ],
+      [
+        110002,
+        10,
+        1
+      ],
+      [
+        2,
+        2000,
+        1
+      ]
+    ],
+    "needScore": 1600,
+    "icon": "$UI_Icon_Badge_003.png",
+    "levelName": 2131056014,
+    "pvpId": 1
+  },
+  "1005": {
+    "rank": 5,
+    "rankName": 1599161041,
+    "rewardDisplay": [
+      [
+        150002,
+        10,
+        1
+      ],
+      [
+        110001,
+        10,
+        1
+      ],
+      [
+        2,
+        2000,
+        1
+      ]
+    ],
+    "needScore": 400,
+    "icon": "$UI_Icon_Badge_001.png",
+    "levelName": 1958329292,
+    "pvpId": 1
+  },
+  "1001": {
+    "rankName": 1960418586,
+    "rank": 1,
+    "icon": "$UI_Icon_Badge_001.png",
+    "levelName": 1117110369,
+    "pvpId": 1
+  },
+  "1009": {
+    "rank": 9,
+    "rankName": 1115209866,
+    "rewardDisplay": [
+      [
+        150003,
+        20,
+        1
+      ],
+      [
+        110002,
+        15,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 1100,
+    "icon": "$UI_Icon_Badge_002.png",
+    "levelName": 1933233480,
+    "pvpId": 1
+  },
+  "1010": {
+    "rank": 10,
+    "rankName": 1505184687,
+    "rewardDisplay": [
+      [
+        150003,
+        25,
+        1
+      ],
+      [
+        110002,
+        15,
+        1
+      ],
+      [
+        2,
+        3000,
+        1
+      ]
+    ],
+    "needScore": 1300,
+    "icon": "$UI_Icon_Badge_002.png",
+    "levelName": 1224067339,
+    "pvpId": 1
+  }
+}

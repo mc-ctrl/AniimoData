@@ -1,0 +1,167 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "taken_dmg_dec_rate_v": 0.4
+  },
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2119405",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "collider": [
+        {
+          "centerOffsetXYZ": [
+            0,
+            0.75,
+            0
+          ],
+          "shapeArgs": [
+            1.115
+          ],
+          "shapeKind": "Sphere"
+        }
+      ],
+      "hitEffectId": "",
+      "interactDuration": 20,
+      "NodeID": 4,
+      "UID": "edd9b12e-3bd6-4965-bcd0-df5de3424bf4",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_Loop2",
+      "target": "OWNER",
+      "speed": 1,
+      "interactType": "Receive_Atk",
+      "name": "playInteractableEffect"
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "59c49744-0841-4092-9406-38fac127f72f",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_Loop2",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "15": {
+      "name": "getRotationFromTo",
+      "UID": "917dea87-dc9b-426f-b007-4c0b285e12db",
+      "to": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "e9605906-4566-4347-9517-04a672bd95a7",
+        "target": "CASTER",
+        "NodeID": 14
+      },
+      "NodeID": 15,
+      "from": "OWNER"
+    },
+    "16": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2119405101,
+      "name": "createProjectile",
+      "UID": "832b8026-5015-4904-b70c-b342c6a96485",
+      "rotation": "Direct",
+      "pos": "OWNER",
+      "projectileType": "Free3d",
+      "targetRotation": {
+        "name": "getRotationFromTo",
+        "UID": "917dea87-dc9b-426f-b007-4c0b285e12db",
+        "to": {
+          "eventName": "onReceiveBeAttacked",
+          "name": "getEventCombatContextTarget",
+          "UID": "e9605906-4566-4347-9517-04a672bd95a7",
+          "target": "CASTER",
+          "NodeID": 14
+        },
+        "NodeID": 15,
+        "from": "OWNER"
+      },
+      "NodeID": 16,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "fc51e131-5a9d-4f67-ac61-4522f3d2763c",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_Hit",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "NodeID": 28,
+      "UID": "4e41902d-e8c0-4e45-bea2-6d3c1d3e50b6",
+      "cd": 15,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "34b1f6a0-9595-4a53-8a6b-c539f4a96c85",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatershield_hit",
+      "NodeID": 9
+    },
+    "27": {
+      "id": 2010,
+      "duration": 5,
+      "NodeID": 27,
+      "UID": "69f5f609-17fe-4476-a0c5-34bc789c1fbd",
+      "name": "showBossMechanismTip",
+      "hasCountDown": false
+    },
+    "14": {
+      "eventName": "onReceiveBeAttacked",
+      "name": "getEventCombatContextTarget",
+      "UID": "e9605906-4566-4347-9517-04a672bd95a7",
+      "target": "CASTER",
+      "NodeID": 14
+    },
+    "11": {
+      "actionIds": [
+        9,
+        16,
+        28
+      ],
+      "NodeID": 11,
+      "UID": "ee5916ef-e78a-4cbb-86b5-f90df58cdc6b",
+      "cd": 0.35,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0ab3d032-792c-4bee-9ec2-5cab639c3259",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_End",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "dda4312e-7888-47ca-95f2-639c36104772",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    8,
+    13
+  ],
+  "onBuffStartIds": [
+    4,
+    12
+  ]
+}

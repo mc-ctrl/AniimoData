@@ -1,0 +1,675 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9120703",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "tags": [
+    12
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000094,
+      "name": "createEntity",
+      "UID": "772237f5-9a53-43d7-80eb-930a8fd92c0b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": {
+        "listId": "Hp",
+        "NodeID": 43,
+        "UID": "f4fc61f0-8e65-4f83-b475-c45a7cf6385c",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "UID": "04f6234f-743b-4a01-b502-7839985fb9a5",
+          "name": "getIterNumber",
+          "NodeID": 42
+        }
+      },
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 37
+    },
+    "38": {
+      "NodeID": 38,
+      "name": "constVector3",
+      "UID": "4949a63a-e3a1-4d2c-bdf8-d2da04115d21",
+      "x": 0,
+      "y": 0.4,
+      "z": 2.4
+    },
+    "39": {
+      "UID": "63c9fb50-8bcd-4d7b-b646-816bbe655606",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 38,
+          "name": "constVector3",
+          "UID": "4949a63a-e3a1-4d2c-bdf8-d2da04115d21",
+          "x": 0,
+          "y": 0.4,
+          "z": 2.4
+        },
+        {
+          "NodeID": 40,
+          "name": "constVector3",
+          "UID": "ecc07bb2-38a6-43da-a180-71a200b14ff4",
+          "x": -2,
+          "y": 0.4,
+          "z": 2
+        },
+        {
+          "NodeID": 41,
+          "name": "constVector3",
+          "UID": "ef496d13-0645-4cce-8209-d46d37f1585c",
+          "x": 2,
+          "y": 0.4,
+          "z": 1.6
+        }
+      ],
+      "NodeID": 39
+    },
+    "40": {
+      "NodeID": 40,
+      "name": "constVector3",
+      "UID": "ecc07bb2-38a6-43da-a180-71a200b14ff4",
+      "x": -2,
+      "y": 0.4,
+      "z": 2
+    },
+    "41": {
+      "NodeID": 41,
+      "name": "constVector3",
+      "UID": "ef496d13-0645-4cce-8209-d46d37f1585c",
+      "x": 2,
+      "y": 0.4,
+      "z": 1.6
+    },
+    "35": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000089,
+      "name": "createEntity",
+      "UID": "80a3dae6-8f50-4483-9356-884a4243e49f",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": {
+        "listId": "Hp",
+        "NodeID": 43,
+        "UID": "f4fc61f0-8e65-4f83-b475-c45a7cf6385c",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "UID": "04f6234f-743b-4a01-b502-7839985fb9a5",
+          "name": "getIterNumber",
+          "NodeID": 42
+        }
+      },
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 35
+    },
+    "44": {
+      "listId": "Hp",
+      "NodeID": 44,
+      "UID": "d340c929-c092-4e44-81ec-b8b0b11129c9",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": false
+    },
+    "3": {
+      "templateId": 9120703,
+      "name": "removeBuffLayer",
+      "UID": "51175d1e-03eb-41fc-a174-39565a9def29",
+      "layer": 1,
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "endNum": 1,
+      "actionIds": [
+        19,
+        23,
+        3
+      ],
+      "NodeID": 5,
+      "UID": "3889db22-41d6-42dd-9402-4c3d8bbec1b3",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "6": {
+      "eventName": "10201dead",
+      "NodeID": 6,
+      "UID": "27893215-9067-4316-9ef5-5e7f8966bf7b",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        5
+      ]
+    },
+    "55": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "60587e34-be6e-49d3-b40f-69967dd331f1",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "54": {
+      "name": "checkPetPrototypeId",
+      "UID": "7f81dd7b-499c-4db5-8539-4fd3f254edbe",
+      "target": "OWNER",
+      "petPrototypeId": 1020700,
+      "NodeID": 54
+    },
+    "53": {
+      "name": "checkPetPrototypeId",
+      "UID": "2cf9541a-f2ac-424c-b971-37b0f6349040",
+      "target": "OWNER",
+      "petPrototypeId": 1020700,
+      "NodeID": 53
+    },
+    "52": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "87a6541f-99ec-4d86-968f-56da6278803a",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "8": {
+      "endNum": {
+        "UID": "ccaa941b-00e8-4b61-83c9-0bcff0c80737",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 13
+      },
+      "actionIds": [
+        19,
+        23,
+        3
+      ],
+      "NodeID": 8,
+      "UID": "9b4b7cf4-5975-47c2-a9b8-6b5f05486d9b",
+      "stepNum": {
+        "UID": "cccc9c00-4029-40af-8620-3874ae3025ba",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 14
+      },
+      "startNum": {
+        "UID": "cccc9c00-4029-40af-8620-3874ae3025ba",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 14
+      },
+      "name": "forEach"
+    },
+    "31": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000181,
+      "name": "createEntity",
+      "UID": "0637004b-2079-4a5e-baae-22c583ed2aad",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": {
+        "listId": "Hp",
+        "NodeID": 43,
+        "UID": "f4fc61f0-8e65-4f83-b475-c45a7cf6385c",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "UID": "04f6234f-743b-4a01-b502-7839985fb9a5",
+          "name": "getIterNumber",
+          "NodeID": 42
+        }
+      },
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 31
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "38dd531c-2a46-4f3b-9997-b5692882320a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 9
+    },
+    "51": {
+      "name": "checkPetPrototypeId",
+      "UID": "6ea4a089-3508-48ab-9f6f-ebaa00d0577a",
+      "target": "OWNER",
+      "petPrototypeId": 1020700,
+      "NodeID": 51
+    },
+    "50": {
+      "name": "checkPetPrototypeId",
+      "UID": "8e626825-23bc-406c-a4d0-4fd0ba25f3b9",
+      "target": "OWNER",
+      "petPrototypeId": 1020700,
+      "NodeID": 50
+    },
+    "11": {
+      "eventName": "Summon",
+      "NodeID": 11,
+      "UID": "87ba2cbb-ac86-4296-978f-d76979daf3bb",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        9,
+        44
+      ]
+    },
+    "20": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000182,
+      "name": "createEntity",
+      "UID": "7fe02db9-d426-4a7f-8bf5-5041a587e298",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "5cd31e46-6dd7-46d4-9729-c6fd2deacdf6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "22": {
+      "actionIds": [
+        21
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "0f510b2e-7241-4d2a-a931-c6e472a7f665",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 22
+    },
+    "23": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "5f83a6bc-2371-4ff5-990b-f423282f74da",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 23
+    },
+    "45": {
+      "listId": "Hp",
+      "name": "getDynamicListCount",
+      "UID": "da03c5e8-2b2e-485c-a1e6-8709b6ba8e7b",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "43": {
+      "listId": "Hp",
+      "NodeID": 43,
+      "UID": "f4fc61f0-8e65-4f83-b475-c45a7cf6385c",
+      "target": "OWNER",
+      "name": "getDynamicListItem",
+      "index": {
+        "UID": "04f6234f-743b-4a01-b502-7839985fb9a5",
+        "name": "getIterNumber",
+        "NodeID": 42
+      }
+    },
+    "12": {
+      "endNum": 3,
+      "actionIds": [
+        19,
+        23,
+        3
+      ],
+      "NodeID": 12,
+      "UID": "fd0b5f9a-514c-4f44-98cc-93594de79672",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "19": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "69ad89f7-8648-4b20-ab4a-031e2c2b2ba5",
+      "effectId": "Eff_Parmon_10207_Skill_SummonBomb_Release02",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "47": {
+      "rValue": {
+        "UID": "4f51ef19-6ceb-486b-926b-d2172b2aee28",
+        "name": "getIterNumber",
+        "NodeID": 48
+      },
+      "name": "greater",
+      "UID": "b0d28896-6071-43e4-9f43-fb5fa659a00d",
+      "NodeID": 47,
+      "lValue": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "6e5d65a0-bc3c-46da-acff-7c4811ee9ac8",
+        "NodeID": 46,
+        "lValue": {
+          "listId": "Hp",
+          "name": "getDynamicListCount",
+          "UID": "da03c5e8-2b2e-485c-a1e6-8709b6ba8e7b",
+          "target": "OWNER",
+          "NodeID": 45
+        }
+      }
+    },
+    "16": {
+      "rValue": {
+        "UID": "bd3e10d2-5e9e-4ee9-9070-2bf0337ba552",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 15
+      },
+      "name": "greater",
+      "UID": "04224dba-4208-4215-9dba-ddcc0b5011db",
+      "NodeID": 16,
+      "lValue": 4
+    },
+    "27": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000181,
+      "name": "createEntity",
+      "UID": "ec2e780e-11ea-492c-a957-01e7a50d34f4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 27
+    },
+    "28": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000089,
+      "name": "createEntity",
+      "UID": "0ae93555-e5cd-4dc1-a85c-185f503042c1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "4edef3ac-b07a-4fa2-a73d-96f2b8f8d55d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        30
+      ],
+      "NodeID": 29
+    },
+    "30": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000094,
+      "name": "createEntity",
+      "UID": "53483994-f79f-4e17-8a94-e714a6fcf0b9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        53
+      ],
+      "UID": "1eb95853-5155-4640-b40c-5a4537353e9f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        34
+      ],
+      "NodeID": 32
+    },
+    "33": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "341736f3-c1b4-43a4-acd0-6c4367c934a7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        36
+      ],
+      "NodeID": 33
+    },
+    "34": {
+      "offsetXYZ": {
+        "listId": 39,
+        "NodeID": 18,
+        "UID": "45c9cb23-77e0-47bf-af09-ec25d7395e7a",
+        "name": "getListItem",
+        "index": {
+          "UID": "29496288-d641-4f00-9b72-6b277a31dff7",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "templateId": 80000182,
+      "name": "createEntity",
+      "UID": "9221d1d2-d5e3-4f7b-9823-f0a2fbdcbe63",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": {
+        "listId": "Hp",
+        "NodeID": 43,
+        "UID": "f4fc61f0-8e65-4f83-b475-c45a7cf6385c",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "UID": "04f6234f-743b-4a01-b502-7839985fb9a5",
+          "name": "getIterNumber",
+          "NodeID": 42
+        }
+      },
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 34
+    },
+    "36": {
+      "actionIds": [
+        35
+      ],
+      "conditionActionIds": [
+        54
+      ],
+      "UID": "3a9f2008-19f4-4bd4-910c-fadd4d992f05",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        37
+      ],
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    11
+  ]
+}

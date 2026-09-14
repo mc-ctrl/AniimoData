@@ -1,0 +1,131 @@
+{
+  "refControlPoint": [
+    [
+      2.765,
+      0.468,
+      -0.09
+    ],
+    [
+      3.363,
+      1.22,
+      3.961
+    ]
+  ],
+  "duration": 0.5,
+  "calcResultNodeId": 56,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10045_Skill_GrassTail_End",
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "BezierCurve",
+  "nodeMap": {
+    "58": {
+      "key": "attack03",
+      "duration": 0.08,
+      "actionIds": [
+        61,
+        56
+      ],
+      "NodeID": 58,
+      "UID": "bbbc978b-45bd-4406-8dc5-d5ffd7eedd9e",
+      "name": "addTimer"
+    },
+    "84": {
+      "offsetXYZ": [
+        0,
+        -0.2,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "88ef9fe8-2041-4da3-99f6-8b13ecc2c808",
+      "effectId": "Eff_Hit_Grass_Blunt",
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 84,
+      "scale": 1.2
+    },
+    "56": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      },
+      "UID": "07b0ee95-afae-44e4-ae40-399f00096ba8",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 56
+    },
+    "83": {
+      "UID": "276f859e-7c7d-4a53-af3f-0648a9a393d7",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 83
+    },
+    "61": {
+      "actionIds": [
+        60
+      ],
+      "conditionActionIds": [
+        83
+      ],
+      "UID": "369b38d7-0b5e-4471-aa9c-7159fe18841f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        84
+      ],
+      "NodeID": 61
+    },
+    "60": {
+      "offsetXYZ": [
+        0,
+        -0.2,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "83b99667-2593-44a8-b69b-79f3fb87e1fc",
+      "effectId": "Eff_Hit_Grass_Blunt",
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 60,
+      "scale": 1.2
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    58
+  ],
+  "onProjectileHitIds": [
+    58
+  ],
+  "refTargetPoint": [
+    -0.087,
+    0.404,
+    12.03
+  ],
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "BPName": "ability_10450311",
+  "tickInterval": 0,
+  "refStartPoint": [
+    -1.068,
+    0.514,
+    -1.771
+  ],
+  "startSleepTime": 0,
+  "maxHitNum": 0,
+  "defaultHitSoundType": "s",
+  "impulseId": 2000,
+  "acceleration": 0
+}

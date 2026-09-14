@@ -1,0 +1,112 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "258bec6a-7dcf-4975-87c0-9b363f805792",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          13
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bfc1c610-c68d-42ad-8fd9-a517c7b0f320",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10286_Skill_Talus_End",
+      "NodeID": 24
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "fc497432-62fd-47b4-b1eb-1cb68782a11e",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_01",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "13": {
+      "key": "3",
+      "duration": 0.9,
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13,
+      "UID": "116be3f1-27e6-4630-8852-592625cad547",
+      "name": "addTimer"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          18,
+          15,
+          20,
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 17,
+      "UID": "f24859e3-7859-4695-a351-23b08ca74f95"
+    },
+    "19": {
+      "UID": "71d7c15b-1d3b-4555-8b10-0b4c0402d35c",
+      "name": "destroyEntity",
+      "NodeID": 19
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8f585b4f-4765-41a8-a35f-275efb97b03c",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_01_End",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "12": {
+      "eventName": "gesila10",
+      "NodeID": 12,
+      "UID": "43724fe5-b6a7-46ba-bd60-04f1e1e7e3c1",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        11
+      ]
+    },
+    "11": {
+      "timelineId": 2128502201,
+      "name": "jumpToNextTimeline",
+      "UID": "927a789d-dc87-4a0d-a6ba-fb1b6f4cc5db",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "key": "2",
+      "duration": 0.9,
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20,
+      "UID": "86acb3c2-741a-4716-af4f-2669d0555483",
+      "name": "addTimer"
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ff3eee6c-7dba-456c-8691-a1fdf16cae47",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_01",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2128502",
+  "NodeID": 1,
+  "UID": "c68f6dbe-b30f-4f4b-a28a-32f068380c98",
+  "eventIds": [
+    4,
+    17
+  ],
+  "layer": "Base",
+  "length": 6
+}

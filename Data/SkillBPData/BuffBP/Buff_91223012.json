@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91223012",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "10": {
+      "name": "stopSoundStr",
+      "UID": "bbf2da03-f7b5-45b9-9fd5-56fd6dea746b",
+      "soundId": "SFX_Combat_10223_Skill_Passive",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "74bc1372-9917-475b-97cc-c50f00a4b2e4",
+      "effectId": "Eff_Parmon_10223_Skill_Spring",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "679218b3-0746-49e3-afa4-108b3876f33b",
+      "effectId": "Eff_Parmon_10223_Skill_Spring",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1efb08e1-5306-4400-bd86-998415c2d5a3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10223_Skill_Passive",
+      "NodeID": 9
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7,
+    10
+  ],
+  "onBuffStartIds": [
+    4,
+    9
+  ]
+}

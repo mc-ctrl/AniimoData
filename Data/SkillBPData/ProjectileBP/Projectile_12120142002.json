@@ -1,0 +1,58 @@
+{
+  "duration": 5,
+  "BPName": "ability_12120142",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Small",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 0,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 20,
+  "minAngularOffset": 0,
+  "moveSpeed": 5,
+  "onProjectileFinishIds": [
+    58
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 2,
+  "trackingNoOffsetRotationRange": 0.5,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "58": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 121205,
+      "name": "createEntity",
+      "UID": "e218945f-394b-49fa-9d86-45304acb6ff7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 58,
+      "pos": {
+        "UID": "a4512aa8-8a04-4cd2-8abe-7e71e29f61c7",
+        "name": "getProjectilePos",
+        "NodeID": 57
+      }
+    }
+  },
+  "groundSweepRadius": 0.05,
+  "angularIncreaseDuration": 1,
+  "acceleration": 20
+}

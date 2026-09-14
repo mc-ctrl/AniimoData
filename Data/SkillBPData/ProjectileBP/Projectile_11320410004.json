@@ -1,0 +1,199 @@
+{
+  "duration": 1.8,
+  "calcResultNodeId": 82,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10133_Skill_Throw_Ice02_small",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxHitNum": 99,
+  "onProjectileStartIds": [
+    130
+  ],
+  "onProjectileTickIds": [
+    84,
+    127
+  ],
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    127,
+    133,
+    134,
+    139
+  ],
+  "destroyOnHit": false,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepBoxSize": [
+    2.4,
+    2.4,
+    2.4
+  ],
+  "sweepShape": 1,
+  "relation": 2,
+  "tickInterval": 0.2,
+  "nodeMap": {
+    "139": {
+      "buffId": 2113201,
+      "name": "removeBuff",
+      "UID": "9e2cccf2-bf42-4cb7-b982-d5b0a9e61410",
+      "target": "OWNER",
+      "NodeID": 139
+    },
+    "126": {
+      "targetA": "PROJECTILE",
+      "targetB": "CASTER",
+      "NodeID": 126,
+      "UID": "278e8c9a-f401-49ba-9a6e-da170a65e0e6",
+      "name": "checkDistanceLess",
+      "ignoreYAxis": false,
+      "distance": 1.4
+    },
+    "82": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11320410,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      },
+      "UID": "1c77cc25-c816-42cd-9fd6-3858e41cb29a",
+      "target": "TARGET",
+      "NodeID": 82,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 3001
+      }
+    },
+    "115": {
+      "value": {
+        "calcId": 11320410,
+        "calcType": 2,
+        "paramName": "param2",
+        "NodeID": 111,
+        "UID": "e1e20a30-7638-405e-8950-f29e69500bf2",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "2a0ca2bf-9b9c-4f16-89e9-29d14445ce69",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 115
+    },
+    "84": {
+      "calcResultNodeId": 82,
+      "name": "actOnTargets",
+      "UID": "6d3f0ef7-85e0-43a8-b584-a3dab4ba31a9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        82,
+        115
+      ],
+      "impulseId": 3001,
+      "NodeID": 84
+    },
+    "133": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2e52d6ad-b1d9-4fe4-8d25-f109870f1f60",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10133_skill_throw_ice_loop",
+      "NodeID": 133
+    },
+    "111": {
+      "calcId": 11320410,
+      "calcType": 2,
+      "paramName": "param2",
+      "NodeID": 111,
+      "UID": "e1e20a30-7638-405e-8950-f29e69500bf2",
+      "name": "getParamByLuaConfig"
+    },
+    "134": {
+      "name": "stopSoundStr",
+      "UID": "872a8df1-a225-4834-856f-22f3270c6777",
+      "soundId": "parmon_10133_skill_throw_ice_loop",
+      "target": "OWNER",
+      "NodeID": 134
+    },
+    "130": {
+      "key": "darts",
+      "name": "setAbilityCacheVal",
+      "UID": "31fd2119-c191-4efa-b315-8fb1af7d3377",
+      "value": {
+        "UID": "4a360639-c004-4e11-8c8d-4b167f939a27",
+        "name": "getProjectileInstanceId",
+        "NodeID": 129
+      },
+      "NodeID": 130
+    },
+    "127": {
+      "actionIds": [
+        132
+      ],
+      "conditionActionIds": [
+        126
+      ],
+      "UID": "561d964b-db9c-4e6a-9190-1a6e90ab57cd",
+      "name": "doActionsByConditions",
+      "NodeID": 127
+    },
+    "132": {
+      "UID": "ce2f7ea2-74ce-4191-86eb-8423d8638382",
+      "projInstanceId": {
+        "UID": "9953105c-46bf-446b-900d-fe4fca7c8cf7",
+        "name": "getAbilityCacheVal",
+        "key": "darts",
+        "NodeID": 131
+      },
+      "name": "destroyProjectile",
+      "NodeID": 132
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_11320410",
+  "NodeID": 0,
+  "impulseId": 3001,
+  "acceleration": 0
+}

@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145118",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    23
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 1145118,
+      "name": "removeBuff",
+      "UID": "19fb1c1b-65e2-46d9-b9da-a3b5e7f5229b",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "b2791e0b-1baa-46cf-b2e4-9b7f78dd29ea",
+      "ignoreSelf": true,
+      "NodeID": 9
+    },
+    "5": {
+      "actionIds": [
+        3,
+        7
+      ],
+      "name": "registerReceiveDamageThreshold",
+      "UID": "e7742652-943c-4607-8e36-6f5a702ba074",
+      "thresholdCount": 15,
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "e13ff26d-6d78-474e-87c0-2bff2b2ac47c",
+      "name": "destroyEntity",
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "af451d53-d684-47a7-bd08-ca8e1f1de5ac",
+      "name": "removeExtraCollisionTest",
+      "NodeID": 8
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    9,
+    5
+  ]
+}

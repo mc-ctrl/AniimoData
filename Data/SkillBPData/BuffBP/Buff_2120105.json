@@ -1,0 +1,182 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120105",
+  "NodeID": 1,
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "tags": [
+    23
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "eventName": "UnSummon",
+      "NodeID": 6,
+      "UID": "02f0dabb-017b-4434-8ba1-0619a5bebe9b",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        17,
+        24,
+        23,
+        4
+      ]
+    },
+    "8": {
+      "duration": 0.1,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 8,
+      "UID": "2893840b-7bed-46b8-bebf-42e560ec6e79",
+      "name": "addTimer"
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "4f6f8594-81bf-4e8d-809f-411b814d5751",
+      "target": "MASTER",
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "3e0a150c-c7f4-46f9-98c7-365eee8d1539",
+      "conditionIds": [
+        16,
+        10
+      ],
+      "name": "conditionAnd",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "cae7ec2e-8ee7-402c-a778-a89ee1412cb3",
+      "name": "registerAttackHpZero",
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "buffId": 2120704,
+      "name": "hasBuff",
+      "UID": "1ee7fd0c-bdf2-411a-84a6-0aa5cbe1e94c",
+      "target": "MASTER",
+      "NodeID": 21
+    },
+    "4": {
+      "UID": "dee70b9c-e4a3-4abb-baf0-1167aa237614",
+      "actorId": {
+        "UID": "b8c846db-8c59-4d6e-b55e-37d44397fc23",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 3
+      },
+      "name": "destroyEntity",
+      "NodeID": 4
+    },
+    "24": {
+      "name": "hideModel",
+      "UID": "44c94ff6-7614-4371-809a-8b96265ca302",
+      "target": "OWNER",
+      "NodeID": 24,
+      "maxHideTime": 10
+    },
+    "14": {
+      "eventName": "10201dead",
+      "name": "notifyCustomEvent",
+      "UID": "2b666f6b-42af-4332-a9e0-1c481c3fb674",
+      "target": "MASTER",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "isInCombat",
+      "UID": "c764252d-0a58-418f-a9f7-bf4448dd16d1",
+      "target": "MASTER",
+      "NodeID": 10,
+      "not": false
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9bb7e4e3-9982-4430-a869-f1bcb60fa982",
+      "effectId": "Eff_Parmon_10207_Skill_SummonBomb_Release02",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "16": {
+      "UID": "a3048bfb-c52e-46d8-be33-22716d25f1b4",
+      "name": "isGoingBeKilled",
+      "NodeID": 16
+    },
+    "17": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 9120703,
+      "NodeID": 17,
+      "UID": "e28a85e1-fe55-48e7-bb36-83c6ee6344ba",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "petTarget": "MASTER",
+      "triggerId": 1020702,
+      "name": "onEntityTrigger",
+      "UID": "aa265ab5-9ab3-4cd5-9091-acbdcd68dd3b",
+      "target": "MASTER",
+      "NodeID": 18
+    },
+    "23": {
+      "listId": "Hp",
+      "name": "addDynamicListItem",
+      "UID": "06f20370-a7b8-47fd-96d6-1b9bbbe2d584",
+      "target": "MASTER",
+      "value": {
+        "name": "getAttribute",
+        "UID": "644c51c7-fba6-41ea-a69e-eadd20b1a7dd",
+        "target": "OWNER",
+        "NodeID": 22,
+        "attributeName": "hp_cur"
+      },
+      "NodeID": 23
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "f7a5964b-ae97-4321-b1ab-e4aa25fb12ba",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "12": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "a459227d-291b-4e99-9ccf-6feaa3770491",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "13": {
+      "UID": "5c7c6bff-c6d2-442b-b882-d20649f96fae",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    6,
+    15,
+    13,
+    20
+  ]
+}

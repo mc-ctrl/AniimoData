@@ -1,0 +1,66 @@
+{
+  "BPName": "ability_11840900",
+  "NodeID": 1,
+  "UID": "51ad2801-7d20-4ec1-a635-a712b4b97529",
+  "isExploreFly": true,
+  "desc": "",
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "78dd51bc-2ae1-476c-bcaa-c4f36ad8a112",
+      "to": 11840905,
+      "NodeID": 8,
+      "from": 11840900
+    },
+    "10": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "2403ccd8-9b81-421d-841e-3fb851f54d17",
+      "to": 11840900,
+      "NodeID": 10,
+      "from": 11840900
+    },
+    "7": {
+      "timelineId": 11840900001,
+      "name": "setCombatActionTimeline",
+      "UID": "905e6552-1dae-4609-9a0e-a913f8f249bd",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "9": {
+      "target": "OWNER",
+      "NodeID": 9,
+      "UID": "08b5a1b2-5523-44bb-8c0d-a7aca55312ce",
+      "exitActionIds": [
+        10
+      ],
+      "name": "registerFlyStateChangeEvent",
+      "enterActionIds": [
+        8
+      ]
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "subAbilityIds": [
+    11840905
+  ],
+  "abilityParamId": 9400102,
+  "onAbilityAddedIds": [
+    9
+  ],
+  "name": ""
+}

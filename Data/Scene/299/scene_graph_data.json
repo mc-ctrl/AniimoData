@@ -1,0 +1,6137 @@
+{
+  "90837024": {
+    "graphId": 90837024,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 34,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "5",
+        "targetNode": 55,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Out",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "1",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "2",
+        "targetNode": 7,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "3",
+        "targetNode": 10,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "4",
+        "targetNode": 13,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "5",
+        "targetNode": 16,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "6",
+        "targetNode": 19,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "7",
+        "targetNode": 22,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "8",
+        "targetNode": 25,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "9",
+        "targetNode": 28,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "10",
+        "targetNode": 31,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "Out",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 5,
+        "sourcePortName": "Out",
+        "targetNode": 6,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 7,
+        "sourcePortName": "Out",
+        "targetNode": 8,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 8,
+        "sourcePortName": "Out",
+        "targetNode": 9,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 10,
+        "sourcePortName": "Out",
+        "targetNode": 11,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 11,
+        "sourcePortName": "Out",
+        "targetNode": 12,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 13,
+        "sourcePortName": "Out",
+        "targetNode": 14,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 14,
+        "sourcePortName": "Out",
+        "targetNode": 15,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 16,
+        "sourcePortName": "Out",
+        "targetNode": 17,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 17,
+        "sourcePortName": "Out",
+        "targetNode": 18,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 19,
+        "sourcePortName": "Out",
+        "targetNode": 20,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 20,
+        "sourcePortName": "Out",
+        "targetNode": 21,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 22,
+        "sourcePortName": "Out",
+        "targetNode": 23,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 23,
+        "sourcePortName": "Out",
+        "targetNode": 24,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 25,
+        "sourcePortName": "Out",
+        "targetNode": 26,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 26,
+        "sourcePortName": "Out",
+        "targetNode": 27,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 28,
+        "sourcePortName": "Out",
+        "targetNode": 29,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 29,
+        "sourcePortName": "Out",
+        "targetNode": 30,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 31,
+        "sourcePortName": "Out",
+        "targetNode": 32,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 32,
+        "sourcePortName": "Out",
+        "targetNode": 33,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "1",
+        "targetNode": 35,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "2",
+        "targetNode": 37,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "3",
+        "targetNode": 39,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "4",
+        "targetNode": 41,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "5",
+        "targetNode": 43,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "6",
+        "targetNode": 45,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "7",
+        "targetNode": 47,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "8",
+        "targetNode": 49,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "9",
+        "targetNode": 51,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "10",
+        "targetNode": 53,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 35,
+        "sourcePortName": "Out",
+        "targetNode": 36,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 37,
+        "sourcePortName": "Out",
+        "targetNode": 38,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 39,
+        "sourcePortName": "Out",
+        "targetNode": 40,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 41,
+        "sourcePortName": "Out",
+        "targetNode": 42,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 43,
+        "sourcePortName": "Out",
+        "targetNode": 44,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 45,
+        "sourcePortName": "Out",
+        "targetNode": 46,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 47,
+        "sourcePortName": "Out",
+        "targetNode": 48,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 49,
+        "sourcePortName": "Out",
+        "targetNode": 50,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 51,
+        "sourcePortName": "Out",
+        "targetNode": 52,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 53,
+        "sourcePortName": "Out",
+        "targetNode": 54,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "1",
+        "targetNode": 56,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "2",
+        "targetNode": 57,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "3",
+        "targetNode": 58,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "4",
+        "targetNode": 59,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "5",
+        "targetNode": 60,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "6",
+        "targetNode": 61,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "7",
+        "targetNode": 62,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "8",
+        "targetNode": 63,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "9",
+        "targetNode": 64,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "10",
+        "targetNode": 65,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 66,
+        "sourcePortName": "Out",
+        "targetNode": 67,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 67,
+        "sourcePortName": "Out",
+        "targetNode": 68,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 68,
+        "sourcePortName": "Out",
+        "targetNode": 69,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 70,
+        "sourcePortName": "Out",
+        "targetNode": 71,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 71,
+        "sourcePortName": "Out",
+        "targetNode": 72,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 72,
+        "sourcePortName": "Out",
+        "targetNode": 73,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 74,
+        "sourcePortName": "Out",
+        "targetNode": 75,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 75,
+        "sourcePortName": "Out",
+        "targetNode": 76,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 76,
+        "sourcePortName": "Out",
+        "targetNode": 77,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 78,
+        "sourcePortName": "Out",
+        "targetNode": 79,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 79,
+        "sourcePortName": "Out",
+        "targetNode": 80,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 80,
+        "sourcePortName": "Out",
+        "targetNode": 81,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 82,
+        "sourcePortName": "Out",
+        "targetNode": 83,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 83,
+        "sourcePortName": "Out",
+        "targetNode": 84,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 84,
+        "sourcePortName": "Out",
+        "targetNode": 85,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 86,
+        "sourcePortName": "Out",
+        "targetNode": 87,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 87,
+        "sourcePortName": "Out",
+        "targetNode": 88,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 88,
+        "sourcePortName": "Out",
+        "targetNode": 89,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 90,
+        "sourcePortName": "Out",
+        "targetNode": 91,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 91,
+        "sourcePortName": "Out",
+        "targetNode": 92,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 92,
+        "sourcePortName": "Out",
+        "targetNode": 93,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 94,
+        "sourcePortName": "Out",
+        "targetNode": 95,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 95,
+        "sourcePortName": "Out",
+        "targetNode": 96,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 96,
+        "sourcePortName": "Out",
+        "targetNode": 97,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 98,
+        "sourcePortName": "Out",
+        "targetNode": 99,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 99,
+        "sourcePortName": "Out",
+        "targetNode": 100,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 100,
+        "sourcePortName": "Out",
+        "targetNode": 101,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 102,
+        "sourcePortName": "Out",
+        "targetNode": 103,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 103,
+        "sourcePortName": "Out",
+        "targetNode": 104,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 104,
+        "sourcePortName": "Out",
+        "targetNode": 105,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "70d8df19d702504d7ac9038cb48abc13",
+    "nodes": {
+      "64": {
+        "_inputPortValues": {
+          "SpawnerId": 90837015,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "33e0ac59-87d7-4d8a-b58a-9130726584de"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "441b604a-0408-4942-b670-1cff4ac001c7"
+      },
+      "87": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b1062591-37a8-4aa9-b674-01de7730f1ba",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837006,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "104": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "46268b31-a671-4932-a84e-5e9dfd36e325",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90836994,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "88": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9632fcae-1aa6-44e5-afaa-105668a09179",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837006,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "102": {
+        "_inputPortValues": {
+          "SpawnerId": 90836995,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "a23a1be5-47e5-40f9-a31b-769ec24dfa83"
+      },
+      "101": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "f036b2b9-03d3-400d-961f-58cbd0e4d83b",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837000,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "89": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "437268f1-c00a-476f-8587-f9c9a3a4f23e",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837006,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "99": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "6feb2dbb-ab59-42bd-ad46-13627da18689",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837000,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "90": {
+        "_inputPortValues": {
+          "SpawnerId": 90837005,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "defef13c-7df3-4f4c-b93b-87b2b659c319"
+      },
+      "5": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "5c2f6cf1-1084-48d2-b867-18b01d9ec84f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90836994,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "97": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "57314c04-9dc9-4a24-82a1-3b9e89667b71",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837002,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "91": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "1d05fafa-6222-4527-b468-40076f931810",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837004,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "6": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "28f77d10-b977-4e85-9cd9-a6517cafd79b",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90836994,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "95": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "67119832-673a-4078-9094-128c21e47f81",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837002,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "92": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "6dc46ff8-c341-40f3-b4c7-602a45d4527d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837004,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "7": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b046c8fc-7ac4-4124-9f90-cd9d8a52e474",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837000,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "93": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "ce963e78-9b5b-4879-867b-24c7ba7bd688",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837004,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "8": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a4ca300a-207e-4522-a052-2d83fc26a698",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837000,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "31": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "e214f084-f951-47e4-9d66-b5dbe8c6447f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837016,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "9": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "43efc901-37a0-4ff8-b0e1-0f6f12c7b338",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837000,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "65": {
+        "_inputPortValues": {
+          "SpawnerId": 90837017,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "8ba3ab01-8172-4c0c-bd5a-660f51d44073"
+      },
+      "86": {
+        "_inputPortValues": {
+          "SpawnerId": 90837007,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "a90683b5-61dc-4114-b036-73838418804a"
+      },
+      "11": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b2b2384b-42cb-4851-9800-b3cc89bc89ef",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837002,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "20": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c32c57dc-3037-4b4a-94a6-e770a0a6fca3",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837008,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "21": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "098092e9-a25f-406c-902f-fb2c8bf25e39",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837008,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "22": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c9af8637-dd97-4ba4-909e-a800d732ee89",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837010,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "13": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "d91f33e6-3546-4b49-869a-f27fda826eea",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837004,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "24": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "fcb15337-1fe3-4374-92d8-d2da670e0389",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837010,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "25": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "32296f36-9850-4bef-8384-6b371b54a493",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837012,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "94": {
+        "_inputPortValues": {
+          "SpawnerId": 90837003,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "6b3e2c13-4157-47df-9e1a-cc04de3122b8"
+      },
+      "15": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b265bfaf-5c4b-442f-91d7-1eb5d9b5a207",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837004,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "96": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c4d750b0-062a-427c-b5c5-f8fb32985a85",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837002,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "16": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "37061c73-b839-4a68-adcb-0d4d992f9805",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837006,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "98": {
+        "_inputPortValues": {
+          "SpawnerId": 90837001,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "fc3e5890-c30f-467b-8bd1-5de9d498f1f1"
+      },
+      "17": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c5183c99-497b-4abe-94ef-bb6bfbd514a6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837006,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "100": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c5c5006f-df59-4523-b40c-208cb5c0b234",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837000,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "18": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "52236080-d2b1-4b5c-892e-eb8c411dfc1a",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837006,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "103": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "dc0a853b-b7b8-486e-b662-34cc2bc0a585",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90836994,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "19": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "efe0fbdb-ffea-4f30-a4dc-b5c23cd0717c",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837008,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "105": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "19c2452c-2cd6-47d5-a6a5-ebb747f7e6f7",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90836994,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "75": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "f671c4c9-4eea-4372-8233-0f8f67f0df62",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837012,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "32": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "031c1842-229d-47bb-b75e-ac03b8e488a8",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837016,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "76": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a9406f63-b2bb-4377-bdea-e26452a65d69",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837012,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "33": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "31d68630-a8b2-46f5-8020-60889b5f3728",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837016,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "77": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "02fcff60-4254-4138-b224-19cd81f00b41",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837012,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "34": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "ed683ed2-9515-4d22-98d7-ed57101f0f10",
+        "portCount": 10
+      },
+      "78": {
+        "_inputPortValues": {
+          "SpawnerId": 90837011,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "b68e20d3-09b7-474d-ba2a-dfc9ef08cbe4"
+      },
+      "35": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90836995
+        },
+        "uid": "6ed0a751-5c34-476c-b570-04dde1639012"
+      },
+      "79": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4b1c1a7f-2efb-42a5-ad0c-52779fd0b253",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837010,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "36": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4bc66881-e537-4632-a3a7-ebc24a393fa2",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90836994,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "80": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "84607f4e-8b6d-47a7-a4ab-2856fb904671",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837010,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "37": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837001
+        },
+        "uid": "721fac2c-9307-44c5-9f93-e1d1ac5cc85e"
+      },
+      "81": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9eb8ebb0-04f3-4bb1-b0aa-af521b71aaf0",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837010,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "38": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "414257f2-dad7-414e-8f69-e45102f6fda4",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837000,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "82": {
+        "_inputPortValues": {
+          "SpawnerId": 90837009,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "06db05af-166d-4c43-96c6-e12303be3863"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "d3059b71-2ffc-4668-bb9b-d9753b8a72a8",
+        "portCount": 5
+      },
+      "2": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "openResourceBox"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "type": 1,
+          "staticId": 90837022
+        },
+        "uid": "0cb50896-575f-4236-9f77-1f3818a16a9c"
+      },
+      "3": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "099a195b-8e7d-4a88-8ea2-1426fa53d797",
+        "portCount": 10
+      },
+      "4": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9293fe40-2471-4ffe-89a9-b5cd8409636c",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90836994,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "41": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837005
+        },
+        "uid": "13f436df-ece3-47b8-9eb5-20b40a12d9c8"
+      },
+      "85": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c94d3a28-cde5-45ee-9045-bb410263ce34",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837008,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "42": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4855e223-0f40-4432-a1f7-e3a281a3c3b5",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837004,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "84": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a6c28a6d-1960-49ac-af7d-56a49aba71fa",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837008,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "43": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837007
+        },
+        "uid": "c5577de9-4f0c-4880-9211-aef65d0f82d9"
+      },
+      "83": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "017b9b2a-ebd3-4617-8e86-f8ff77eae529",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837008,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "44": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4b30f199-d54d-46d3-9540-28319c0a98f7",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837006,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "74": {
+        "_inputPortValues": {
+          "SpawnerId": 90837013,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "2bde7187-2ce4-436b-93cd-3114e8180bb6"
+      },
+      "45": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837009
+        },
+        "uid": "4ab6d288-78fa-476f-8a5c-91c762f703ba"
+      },
+      "73": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a3774f52-50ad-4c40-a07d-01b58386e994",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837014,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "46": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "00bcf7d3-d29b-4962-90cd-b43b4b7108ac",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837008,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "72": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "78015c00-169f-4a6d-a534-765bf6e92cfa",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837014,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "47": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837011
+        },
+        "uid": "1ab72a6a-aca1-4a57-ae2f-5921c987fd6a"
+      },
+      "71": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2e328d4a-82fc-4848-a08d-462162b148d6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837014,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "48": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "901ab07c-87a3-4031-b895-71dac56ed458",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837010,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "70": {
+        "_inputPortValues": {
+          "SpawnerId": 90837015,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "9434c086-0d27-478e-813e-412c93f815b8"
+      },
+      "49": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837013
+        },
+        "uid": "ec1525aa-8c7f-4610-9032-529193644253"
+      },
+      "69": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "082d9039-135f-45f8-aeb7-7506ce64b236",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837016,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "50": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "38f569c8-f102-4b65-95a6-727d26d4d2f4",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837012,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "68": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "5805959d-7e27-44b2-9c40-f1b94c220441",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837016,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "51": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837015
+        },
+        "uid": "183119a0-f496-4002-a8bd-18fd69e62ea6"
+      },
+      "67": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a5c9721b-6b34-4561-a376-67fe62f16f76",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837016,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "52": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2e3be073-863d-4f04-b3a6-22fdb251b709",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837014,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "66": {
+        "_inputPortValues": {
+          "SpawnerId": 90837023,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "011b5605-4dcf-44ea-94af-1b403d87a665"
+      },
+      "53": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837023
+        },
+        "uid": "5d697a5a-db9e-4bf1-97f1-5056fb2489e7"
+      },
+      "14": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "34ff2b2e-70f1-4823-9cbd-ec19c670f7f5",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837004,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "54": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2e774da4-a2c5-43aa-a3ee-890d8f40cbb2",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837016,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "39": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837003
+        },
+        "uid": "c3b87805-7fd5-45dc-a929-1a7cd8dc3829"
+      },
+      "55": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "16c503ef-4ae4-4259-97fd-b3180d0b2092",
+        "portCount": 10
+      },
+      "30": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "79b24c45-3e36-4d67-8de1-e5ec37e5eff6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837014,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "56": {
+        "_inputPortValues": {
+          "SpawnerId": 90836995,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "400b03b4-7a3b-470d-9075-110852a43fdd"
+      },
+      "23": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "03d83d6e-c893-4f78-8fa5-b8c1aac14d8e",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837010,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "57": {
+        "_inputPortValues": {
+          "SpawnerId": 90837001,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "08d52398-eebf-4fae-954e-6f93239c85d2"
+      },
+      "29": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "02e2604f-389e-4198-9c5e-9311d252a5d0",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837014,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "58": {
+        "_inputPortValues": {
+          "SpawnerId": 90837003,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "086e8165-87e9-4f4a-904d-79927cfdc4c6"
+      },
+      "26": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "375df23a-96f2-4493-bfab-4b0a50b1887d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837012,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "59": {
+        "_inputPortValues": {
+          "SpawnerId": 90837005,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "ea275e83-2094-47ac-82cc-781506c09ade"
+      },
+      "28": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2af5dc40-cb15-4738-9702-60d1358dac7f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837014,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "60": {
+        "_inputPortValues": {
+          "SpawnerId": 90837007,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "5fcdd1e6-0c7c-4b72-abbd-c5afd6bccb0a"
+      },
+      "27": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b01288a3-ed90-4ea6-9e7a-8dddccfedb3d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837012,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "61": {
+        "_inputPortValues": {
+          "SpawnerId": 90837009,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "1a578daa-8774-4509-853a-e0512d6eb9e2"
+      },
+      "10": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "780cb999-44c8-4ad2-b7de-57cc91492c78",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837002,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "62": {
+        "_inputPortValues": {
+          "SpawnerId": 90837011,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "5cc8247c-4212-4a80-b29c-e6f07170241d"
+      },
+      "12": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "8c1d10e8-6bee-4a0d-a121-a5a2b531f22b",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837002,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "63": {
+        "_inputPortValues": {
+          "SpawnerId": 90837013,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "0a711d01-8e25-4500-8e1e-f9f9a43fb774"
+      },
+      "40": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9603d877-f098-429f-a581-128521a2eef6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837002,
+            "TE_Par_Bellicose"
+          ]
+        }
+      }
+    }
+  },
+  "90837842": {
+    "graphId": 90837842,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 34,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "5",
+        "targetNode": 125,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Out",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "1",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "2",
+        "targetNode": 7,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "3",
+        "targetNode": 10,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "4",
+        "targetNode": 13,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "5",
+        "targetNode": 16,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "6",
+        "targetNode": 19,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "7",
+        "targetNode": 22,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "8",
+        "targetNode": 25,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "9",
+        "targetNode": 28,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "10",
+        "targetNode": 31,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "Out",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 5,
+        "sourcePortName": "Out",
+        "targetNode": 6,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 7,
+        "sourcePortName": "Out",
+        "targetNode": 8,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 8,
+        "sourcePortName": "Out",
+        "targetNode": 9,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 10,
+        "sourcePortName": "Out",
+        "targetNode": 11,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 11,
+        "sourcePortName": "Out",
+        "targetNode": 12,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 13,
+        "sourcePortName": "Out",
+        "targetNode": 14,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 14,
+        "sourcePortName": "Out",
+        "targetNode": 15,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 16,
+        "sourcePortName": "Out",
+        "targetNode": 17,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 17,
+        "sourcePortName": "Out",
+        "targetNode": 18,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 19,
+        "sourcePortName": "Out",
+        "targetNode": 20,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 20,
+        "sourcePortName": "Out",
+        "targetNode": 21,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 22,
+        "sourcePortName": "Out",
+        "targetNode": 23,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 23,
+        "sourcePortName": "Out",
+        "targetNode": 24,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 25,
+        "sourcePortName": "Out",
+        "targetNode": 26,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 26,
+        "sourcePortName": "Out",
+        "targetNode": 27,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 28,
+        "sourcePortName": "Out",
+        "targetNode": 29,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 29,
+        "sourcePortName": "Out",
+        "targetNode": 30,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 31,
+        "sourcePortName": "Out",
+        "targetNode": 32,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 32,
+        "sourcePortName": "Out",
+        "targetNode": 33,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "1",
+        "targetNode": 35,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "2",
+        "targetNode": 44,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "3",
+        "targetNode": 53,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "4",
+        "targetNode": 62,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "5",
+        "targetNode": 71,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "6",
+        "targetNode": 80,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "7",
+        "targetNode": 89,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "8",
+        "targetNode": 98,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "9",
+        "targetNode": 107,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "10",
+        "targetNode": 116,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 35,
+        "sourcePortName": "Out",
+        "targetNode": 36,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 36,
+        "sourcePortName": "Out",
+        "targetNode": 37,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 37,
+        "sourcePortName": "Out",
+        "targetNode": 38,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 38,
+        "sourcePortName": "Out",
+        "targetNode": 39,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 39,
+        "sourcePortName": "Out",
+        "targetNode": 40,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 40,
+        "sourcePortName": "Out",
+        "targetNode": 41,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 41,
+        "sourcePortName": "Out",
+        "targetNode": 42,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 42,
+        "sourcePortName": "TimeOut",
+        "targetNode": 43,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 44,
+        "sourcePortName": "Out",
+        "targetNode": 45,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 45,
+        "sourcePortName": "Out",
+        "targetNode": 46,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 46,
+        "sourcePortName": "Out",
+        "targetNode": 47,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 47,
+        "sourcePortName": "Out",
+        "targetNode": 48,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 48,
+        "sourcePortName": "Out",
+        "targetNode": 49,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 49,
+        "sourcePortName": "Out",
+        "targetNode": 50,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 50,
+        "sourcePortName": "Out",
+        "targetNode": 51,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 51,
+        "sourcePortName": "TimeOut",
+        "targetNode": 52,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 53,
+        "sourcePortName": "Out",
+        "targetNode": 54,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 54,
+        "sourcePortName": "Out",
+        "targetNode": 55,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 55,
+        "sourcePortName": "Out",
+        "targetNode": 56,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 56,
+        "sourcePortName": "Out",
+        "targetNode": 57,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 57,
+        "sourcePortName": "Out",
+        "targetNode": 58,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 58,
+        "sourcePortName": "Out",
+        "targetNode": 59,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 59,
+        "sourcePortName": "Out",
+        "targetNode": 60,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 60,
+        "sourcePortName": "TimeOut",
+        "targetNode": 61,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 62,
+        "sourcePortName": "Out",
+        "targetNode": 63,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 63,
+        "sourcePortName": "Out",
+        "targetNode": 64,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 64,
+        "sourcePortName": "Out",
+        "targetNode": 65,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 65,
+        "sourcePortName": "Out",
+        "targetNode": 66,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 66,
+        "sourcePortName": "Out",
+        "targetNode": 67,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 67,
+        "sourcePortName": "Out",
+        "targetNode": 68,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 68,
+        "sourcePortName": "Out",
+        "targetNode": 69,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 69,
+        "sourcePortName": "TimeOut",
+        "targetNode": 70,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 71,
+        "sourcePortName": "Out",
+        "targetNode": 72,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 72,
+        "sourcePortName": "Out",
+        "targetNode": 73,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 73,
+        "sourcePortName": "Out",
+        "targetNode": 74,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 74,
+        "sourcePortName": "Out",
+        "targetNode": 75,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 75,
+        "sourcePortName": "Out",
+        "targetNode": 76,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 76,
+        "sourcePortName": "Out",
+        "targetNode": 77,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 77,
+        "sourcePortName": "Out",
+        "targetNode": 78,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 78,
+        "sourcePortName": "TimeOut",
+        "targetNode": 79,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 80,
+        "sourcePortName": "Out",
+        "targetNode": 81,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 81,
+        "sourcePortName": "Out",
+        "targetNode": 82,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 82,
+        "sourcePortName": "Out",
+        "targetNode": 83,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 83,
+        "sourcePortName": "Out",
+        "targetNode": 84,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 84,
+        "sourcePortName": "Out",
+        "targetNode": 85,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 85,
+        "sourcePortName": "Out",
+        "targetNode": 86,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 86,
+        "sourcePortName": "Out",
+        "targetNode": 87,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 87,
+        "sourcePortName": "TimeOut",
+        "targetNode": 88,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 89,
+        "sourcePortName": "Out",
+        "targetNode": 90,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 90,
+        "sourcePortName": "Out",
+        "targetNode": 91,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 91,
+        "sourcePortName": "Out",
+        "targetNode": 92,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 92,
+        "sourcePortName": "Out",
+        "targetNode": 93,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 93,
+        "sourcePortName": "Out",
+        "targetNode": 94,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 94,
+        "sourcePortName": "Out",
+        "targetNode": 95,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 95,
+        "sourcePortName": "Out",
+        "targetNode": 96,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 96,
+        "sourcePortName": "TimeOut",
+        "targetNode": 97,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 98,
+        "sourcePortName": "Out",
+        "targetNode": 99,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 99,
+        "sourcePortName": "Out",
+        "targetNode": 100,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 100,
+        "sourcePortName": "Out",
+        "targetNode": 101,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 101,
+        "sourcePortName": "Out",
+        "targetNode": 102,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 102,
+        "sourcePortName": "Out",
+        "targetNode": 103,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 103,
+        "sourcePortName": "Out",
+        "targetNode": 104,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 104,
+        "sourcePortName": "Out",
+        "targetNode": 105,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 105,
+        "sourcePortName": "TimeOut",
+        "targetNode": 106,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 107,
+        "sourcePortName": "Out",
+        "targetNode": 108,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 108,
+        "sourcePortName": "Out",
+        "targetNode": 109,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 109,
+        "sourcePortName": "Out",
+        "targetNode": 110,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 110,
+        "sourcePortName": "Out",
+        "targetNode": 111,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 111,
+        "sourcePortName": "Out",
+        "targetNode": 112,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 112,
+        "sourcePortName": "Out",
+        "targetNode": 113,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 113,
+        "sourcePortName": "Out",
+        "targetNode": 114,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 114,
+        "sourcePortName": "TimeOut",
+        "targetNode": 115,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 116,
+        "sourcePortName": "Out",
+        "targetNode": 117,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 117,
+        "sourcePortName": "Out",
+        "targetNode": 118,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 118,
+        "sourcePortName": "Out",
+        "targetNode": 119,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 119,
+        "sourcePortName": "Out",
+        "targetNode": 120,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 120,
+        "sourcePortName": "Out",
+        "targetNode": 121,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 121,
+        "sourcePortName": "Out",
+        "targetNode": 122,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 122,
+        "sourcePortName": "Out",
+        "targetNode": 123,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 123,
+        "sourcePortName": "TimeOut",
+        "targetNode": 124,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "1",
+        "targetNode": 126,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "2",
+        "targetNode": 127,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "3",
+        "targetNode": 128,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "4",
+        "targetNode": 129,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "5",
+        "targetNode": 130,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "6",
+        "targetNode": 131,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "7",
+        "targetNode": 132,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "8",
+        "targetNode": 133,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "9",
+        "targetNode": 134,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 125,
+        "sourcePortName": "10",
+        "targetNode": 135,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "975cda741dbb58f3699629953a23fcf5",
+    "nodes": {
+      "64": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "8c998683-6c8f-40c9-84db-516e715ba7e6"
+      },
+      "110": {
+        "_inputPortValues": {
+          "SpawnerId": 90837837,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "9434c086-0d27-478e-813e-412c93f815b8"
+      },
+      "111": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2e328d4a-82fc-4848-a08d-462162b148d6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837836,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "112": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "78015c00-169f-4a6d-a534-765bf6e92cfa",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837836,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "113": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a3774f52-50ad-4c40-a07d-01b58386e994",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837836,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "114": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "31a29c00-ef4d-49cf-b458-449efc1399d4"
+      },
+      "115": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "1d4d4644-fe24-4a56-99a8-85040da855b1"
+      },
+      "116": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837841
+        },
+        "uid": "5d697a5a-db9e-4bf1-97f1-5056fb2489e7"
+      },
+      "117": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2e774da4-a2c5-43aa-a3ee-890d8f40cbb2",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837838,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "118": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "7e48a31a-9569-446b-91cb-e25950688744"
+      },
+      "119": {
+        "_inputPortValues": {
+          "SpawnerId": 90837841,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "011b5605-4dcf-44ea-94af-1b403d87a665"
+      },
+      "120": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a5c9721b-6b34-4561-a376-67fe62f16f76",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837838,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "121": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "5805959d-7e27-44b2-9c40-f1b94c220441",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837838,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "122": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "082d9039-135f-45f8-aeb7-7506ce64b236",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837838,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "123": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "d59d89c7-9086-4c95-a72a-c92666d16767"
+      },
+      "124": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "c4ce507f-8824-4598-be79-3b1d3196ee85"
+      },
+      "125": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "16c503ef-4ae4-4259-97fd-b3180d0b2092",
+        "portCount": 10
+      },
+      "126": {
+        "_inputPortValues": {
+          "SpawnerId": 90837821,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "400b03b4-7a3b-470d-9075-110852a43fdd"
+      },
+      "127": {
+        "_inputPortValues": {
+          "SpawnerId": 90837823,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "08d52398-eebf-4fae-954e-6f93239c85d2"
+      },
+      "7": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b046c8fc-7ac4-4124-9f90-cd9d8a52e474",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837822,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "129": {
+        "_inputPortValues": {
+          "SpawnerId": 90837827,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "ea275e83-2094-47ac-82cc-781506c09ade"
+      },
+      "8": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a4ca300a-207e-4522-a052-2d83fc26a698",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837822,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "131": {
+        "_inputPortValues": {
+          "SpawnerId": 90837831,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "1a578daa-8774-4509-853a-e0512d6eb9e2"
+      },
+      "9": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "43efc901-37a0-4ff8-b0e1-0f6f12c7b338",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837822,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "65": {
+        "_inputPortValues": {
+          "SpawnerId": 90837827,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "defef13c-7df3-4f4c-b93b-87b2b659c319"
+      },
+      "134": {
+        "_inputPortValues": {
+          "SpawnerId": 90837837,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "33e0ac59-87d7-4d8a-b58a-9130726584de"
+      },
+      "11": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b2b2384b-42cb-4851-9800-b3cc89bc89ef",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837824,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "67": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "6dc46ff8-c341-40f3-b4c7-602a45d4527d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837826,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "13": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "d91f33e6-3546-4b49-869a-f27fda826eea",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837826,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "69": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "ce3339e2-1ebf-4b18-9730-aed2074f22d5"
+      },
+      "15": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b265bfaf-5c4b-442f-91d7-1eb5d9b5a207",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837826,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "16": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "37061c73-b839-4a68-adcb-0d4d992f9805",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837828,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "17": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c5183c99-497b-4abe-94ef-bb6bfbd514a6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837828,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "18": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "52236080-d2b1-4b5c-892e-eb8c411dfc1a",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837828,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "19": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "efe0fbdb-ffea-4f30-a4dc-b5c23cd0717c",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837830,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "75": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b1062591-37a8-4aa9-b674-01de7730f1ba",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837828,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "76": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9632fcae-1aa6-44e5-afaa-105668a09179",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837828,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "77": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "437268f1-c00a-476f-8587-f9c9a3a4f23e",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837828,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "78": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "cccd6fa5-b292-4673-a2b7-5edb32b227ab"
+      },
+      "79": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "18769926-1ef1-449b-8a88-9c802b14cf73"
+      },
+      "80": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837831
+        },
+        "uid": "4ab6d288-78fa-476f-8a5c-91c762f703ba"
+      },
+      "81": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "00bcf7d3-d29b-4962-90cd-b43b4b7108ac",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837830,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "82": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "7d4d0fc6-5663-424b-8818-7c277e053247"
+      },
+      "83": {
+        "_inputPortValues": {
+          "SpawnerId": 90837831,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "06db05af-166d-4c43-96c6-e12303be3863"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "441b604a-0408-4942-b670-1cff4ac001c7"
+      },
+      "135": {
+        "_inputPortValues": {
+          "SpawnerId": 90837839,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "8ba3ab01-8172-4c0c-bd5a-660f51d44073"
+      },
+      "133": {
+        "_inputPortValues": {
+          "SpawnerId": 90837835,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "0a711d01-8e25-4500-8e1e-f9f9a43fb774"
+      },
+      "132": {
+        "_inputPortValues": {
+          "SpawnerId": 90837833,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "5cc8247c-4212-4a80-b29c-e6f07170241d"
+      },
+      "130": {
+        "_inputPortValues": {
+          "SpawnerId": 90837829,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "5fcdd1e6-0c7c-4b72-abbd-c5afd6bccb0a"
+      },
+      "31": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "e214f084-f951-47e4-9d66-b5dbe8c6447f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837838,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "84": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "017b9b2a-ebd3-4617-8e86-f8ff77eae529",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837830,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "85": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a6c28a6d-1960-49ac-af7d-56a49aba71fa",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837830,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "86": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c94d3a28-cde5-45ee-9045-bb410263ce34",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837830,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "87": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "a7cfb0a2-d7d0-46c9-8492-785943831a4e"
+      },
+      "88": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "3854a703-5380-4d84-911b-b0c66f400887"
+      },
+      "89": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837833
+        },
+        "uid": "1ab72a6a-aca1-4a57-ae2f-5921c987fd6a"
+      },
+      "90": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "901ab07c-87a3-4031-b895-71dac56ed458",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837832,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "91": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "0cd55030-d1d4-41d8-99d7-499a57a83ed8"
+      },
+      "92": {
+        "_inputPortValues": {
+          "SpawnerId": 90837833,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "b68e20d3-09b7-474d-ba2a-dfc9ef08cbe4"
+      },
+      "93": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4b1c1a7f-2efb-42a5-ad0c-52779fd0b253",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837832,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "94": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "84607f4e-8b6d-47a7-a4ab-2856fb904671",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837832,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "95": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9eb8ebb0-04f3-4bb1-b0aa-af521b71aaf0",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837832,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "96": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "fc8877aa-9d1a-400e-8ca5-b9396e771b6d"
+      },
+      "97": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "03c50d00-a8ab-4cd1-9b7d-b05e6c014632"
+      },
+      "98": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837835
+        },
+        "uid": "ec1525aa-8c7f-4610-9032-529193644253"
+      },
+      "99": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "38f569c8-f102-4b65-95a6-727d26d4d2f4",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837834,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "100": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "c7d65394-d6b7-49f5-b12a-31ffc5510858"
+      },
+      "102": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "f671c4c9-4eea-4372-8233-0f8f67f0df62",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837834,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "103": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a9406f63-b2bb-4377-bdea-e26452a65d69",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837834,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "104": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "02fcff60-4254-4138-b224-19cd81f00b41",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837834,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "105": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "5b2ba4a5-76a0-4f77-9a0a-faba152aefe0"
+      },
+      "106": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "4096ddea-0a68-4495-8ba2-828eb6812006"
+      },
+      "107": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837837
+        },
+        "uid": "183119a0-f496-4002-a8bd-18fd69e62ea6"
+      },
+      "108": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2e3be073-863d-4f04-b3a6-22fdb251b709",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837836,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "109": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "00412e40-9a18-4e76-8fd1-c2c2350ca421"
+      },
+      "128": {
+        "_inputPortValues": {
+          "SpawnerId": 90837825,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "086e8165-87e9-4f4a-904d-79927cfdc4c6"
+      },
+      "34": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "ed683ed2-9515-4d22-98d7-ed57101f0f10",
+        "portCount": 10
+      },
+      "40": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "46268b31-a671-4932-a84e-5e9dfd36e325",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837820,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "35": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837821
+        },
+        "uid": "6ed0a751-5c34-476c-b570-04dde1639012"
+      },
+      "6": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "28f77d10-b977-4e85-9cd9-a6517cafd79b",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837820,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "36": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4bc66881-e537-4632-a3a7-ebc24a393fa2",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837820,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "12": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "8c1d10e8-6bee-4a0d-a121-a5a2b531f22b",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837824,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "37": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "b6a4f199-66ad-41d8-a653-6a6fec573036"
+      },
+      "21": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "098092e9-a25f-406c-902f-fb2c8bf25e39",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837830,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "38": {
+        "_inputPortValues": {
+          "SpawnerId": 90837821,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "a23a1be5-47e5-40f9-a31b-769ec24dfa83"
+      },
+      "10": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "780cb999-44c8-4ad2-b7de-57cc91492c78",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837824,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "d3059b71-2ffc-4668-bb9b-d9753b8a72a8",
+        "portCount": 5
+      },
+      "2": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "openResourceBox"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "type": 1,
+          "staticId": 90837840
+        },
+        "uid": "0cb50896-575f-4236-9f77-1f3818a16a9c"
+      },
+      "3": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "099a195b-8e7d-4a88-8ea2-1426fa53d797",
+        "portCount": 10
+      },
+      "4": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9293fe40-2471-4ffe-89a9-b5cd8409636c",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837820,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "41": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "19c2452c-2cd6-47d5-a6a5-ebb747f7e6f7",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837820,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "24": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "fcb15337-1fe3-4374-92d8-d2da670e0389",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837832,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "101": {
+        "_inputPortValues": {
+          "SpawnerId": 90837835,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "2bde7187-2ce4-436b-93cd-3114e8180bb6"
+      },
+      "27": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "b01288a3-ed90-4ea6-9e7a-8dddccfedb3d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837834,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "43": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "b84ba56f-ce70-400f-9e6b-dbf5dbbde543"
+      },
+      "32": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "031c1842-229d-47bb-b75e-ac03b8e488a8",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837838,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "44": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837823
+        },
+        "uid": "721fac2c-9307-44c5-9f93-e1d1ac5cc85e"
+      },
+      "28": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "2af5dc40-cb15-4738-9702-60d1358dac7f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837836,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "45": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "414257f2-dad7-414e-8f69-e45102f6fda4",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837822,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "42": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "7bbe3c0c-00dc-4110-bf22-c99c492a49ec"
+      },
+      "46": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "3e222157-e4f7-46f8-8bc4-24ad50d8b737"
+      },
+      "26": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "375df23a-96f2-4493-bfab-4b0a50b1887d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837834,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "47": {
+        "_inputPortValues": {
+          "SpawnerId": 90837823,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "fc3e5890-c30f-467b-8bd1-5de9d498f1f1"
+      },
+      "73": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "04d2547c-38d2-4306-a953-d7989ab69d05"
+      },
+      "48": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "6feb2dbb-ab59-42bd-ad46-13627da18689",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837822,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "29": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "02e2604f-389e-4198-9c5e-9311d252a5d0",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837836,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "49": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c5c5006f-df59-4523-b40c-208cb5c0b234",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837822,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "71": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837829
+        },
+        "uid": "c5577de9-4f0c-4880-9211-aef65d0f82d9"
+      },
+      "50": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "f036b2b9-03d3-400d-961f-58cbd0e4d83b",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837822,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "23": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "03d83d6e-c893-4f78-8fa5-b8c1aac14d8e",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837832,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "51": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "116a90c9-6446-4bb6-b018-750e0a904344"
+      },
+      "68": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "ce963e78-9b5b-4879-867b-24c7ba7bd688",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837826,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "52": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "5de3b1fb-d9a5-479a-808f-4bae345cdf65"
+      },
+      "30": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "79b24c45-3e36-4d67-8de1-e5ec37e5eff6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837836,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "53": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837825
+        },
+        "uid": "c3b87805-7fd5-45dc-a929-1a7cd8dc3829"
+      },
+      "14": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "34ff2b2e-70f1-4823-9cbd-ec19c670f7f5",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837826,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "54": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9603d877-f098-429f-a581-128521a2eef6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837824,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "39": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "dc0a853b-b7b8-486e-b662-34cc2bc0a585",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837820,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "55": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "133e64ae-d990-493f-ab07-73fd85fcd813"
+      },
+      "66": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "1d05fafa-6222-4527-b468-40076f931810",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837826,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "56": {
+        "_inputPortValues": {
+          "SpawnerId": 90837825,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "6b3e2c13-4157-47df-9e1a-cc04de3122b8"
+      },
+      "70": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "9af9d54a-8a87-4c75-be2f-ebac57e51197"
+      },
+      "57": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "67119832-673a-4078-9094-128c21e47f81",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837824,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "72": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4b30f199-d54d-46d3-9540-28319c0a98f7",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837828,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "58": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c4d750b0-062a-427c-b5c5-f8fb32985a85",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837824,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "74": {
+        "_inputPortValues": {
+          "SpawnerId": 90837829,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "a90683b5-61dc-4114-b036-73838418804a"
+      },
+      "59": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "57314c04-9dc9-4a24-82a1-3b9e89667b71",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837824,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "33": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "31d68630-a8b2-46f5-8020-60889b5f3728",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837838,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "60": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0.2
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "433cf855-fda0-40aa-b7c3-be88fc37f19c"
+      },
+      "25": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "32296f36-9850-4bef-8384-6b371b54a493",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837834,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "61": {
+        "_inputPortValues": {
+          "LevelItemId": 90837817,
+          "fieldValue": 0,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "292ce97f-4882-46cb-9f37-7ca9c75ad84c"
+      },
+      "22": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c9af8637-dd97-4ba4-909e-a800d732ee89",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837832,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "62": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837827
+        },
+        "uid": "13f436df-ece3-47b8-9eb5-20b40a12d9c8"
+      },
+      "20": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c32c57dc-3037-4b4a-94a6-e770a0a6fca3",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837830,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "63": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4855e223-0f40-4432-a1f7-e3a281a3c3b5",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837826,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "5": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "5c2f6cf1-1084-48d2-b867-18b01d9ec84f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837820,
+            "TE_Par_Bellicose"
+          ]
+        }
+      }
+    }
+  },
+  "90830275": {
+    "graphId": 90830275,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 34,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Out",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "1",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "2",
+        "targetNode": 7,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "3",
+        "targetNode": 10,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "4",
+        "targetNode": 13,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "5",
+        "targetNode": 16,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "6",
+        "targetNode": 19,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "7",
+        "targetNode": 22,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "8",
+        "targetNode": 25,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "9",
+        "targetNode": 28,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "10",
+        "targetNode": 31,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "Out",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 5,
+        "sourcePortName": "Out",
+        "targetNode": 6,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 7,
+        "sourcePortName": "Out",
+        "targetNode": 8,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 8,
+        "sourcePortName": "Out",
+        "targetNode": 9,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 10,
+        "sourcePortName": "Out",
+        "targetNode": 11,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 11,
+        "sourcePortName": "Out",
+        "targetNode": 12,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 13,
+        "sourcePortName": "Out",
+        "targetNode": 14,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 14,
+        "sourcePortName": "Out",
+        "targetNode": 15,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 16,
+        "sourcePortName": "Out",
+        "targetNode": 17,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 17,
+        "sourcePortName": "Out",
+        "targetNode": 18,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 19,
+        "sourcePortName": "Out",
+        "targetNode": 20,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 20,
+        "sourcePortName": "Out",
+        "targetNode": 21,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 22,
+        "sourcePortName": "Out",
+        "targetNode": 23,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 23,
+        "sourcePortName": "Out",
+        "targetNode": 24,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 25,
+        "sourcePortName": "Out",
+        "targetNode": 26,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 26,
+        "sourcePortName": "Out",
+        "targetNode": 27,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 28,
+        "sourcePortName": "Out",
+        "targetNode": 29,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 29,
+        "sourcePortName": "Out",
+        "targetNode": 30,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 31,
+        "sourcePortName": "Out",
+        "targetNode": 32,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 32,
+        "sourcePortName": "Out",
+        "targetNode": 33,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "1",
+        "targetNode": 35,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "2",
+        "targetNode": 37,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "3",
+        "targetNode": 39,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "4",
+        "targetNode": 41,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "5",
+        "targetNode": 43,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "6",
+        "targetNode": 45,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "7",
+        "targetNode": 47,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "8",
+        "targetNode": 49,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "9",
+        "targetNode": 51,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 34,
+        "sourcePortName": "10",
+        "targetNode": 53,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 35,
+        "sourcePortName": "Out",
+        "targetNode": 36,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 37,
+        "sourcePortName": "Out",
+        "targetNode": 38,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 39,
+        "sourcePortName": "Out",
+        "targetNode": 40,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 41,
+        "sourcePortName": "Out",
+        "targetNode": 42,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 43,
+        "sourcePortName": "Out",
+        "targetNode": 44,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 45,
+        "sourcePortName": "Out",
+        "targetNode": 46,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 47,
+        "sourcePortName": "Out",
+        "targetNode": 48,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 49,
+        "sourcePortName": "Out",
+        "targetNode": 50,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 51,
+        "sourcePortName": "Out",
+        "targetNode": 52,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 53,
+        "sourcePortName": "Out",
+        "targetNode": 54,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "f4dfc8b959b352f6a0809e3e49af9c39",
+    "nodes": {
+      "32": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "ff211f88-e233-4b84-b058-dddcd951762f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837286,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "33": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4379cb48-c8ec-4403-8472-c98ed176fd01",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837286,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "34": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "fee6c71d-7a09-485a-ba2d-f40d5b3fd70e",
+        "portCount": 10
+      },
+      "35": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837269
+        },
+        "uid": "8bff4dd9-e58b-4ee0-bc42-da76a531f55c"
+      },
+      "36": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "8980d213-6720-474b-a7a8-3d4eb162bc56",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830348,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "37": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837271
+        },
+        "uid": "4099b355-9e7a-4d67-af27-28020248d310"
+      },
+      "38": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "0488dbc9-a7f3-4cb5-8b52-06f55123ab06",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830350,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "d6477f91-1370-4394-b164-bb2eeb24db9c"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "b36b734d-997a-47ae-b8ea-a1bdad2ff7fd",
+        "portCount": 2
+      },
+      "2": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "openResourceBox"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "type": 1,
+          "staticId": 90837266
+        },
+        "uid": "1a01f5ac-731c-4fa2-b71b-ee6d578a879e"
+      },
+      "3": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "5b64eba8-54ee-4d93-b1a1-56322de85329",
+        "portCount": 10
+      },
+      "4": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4fdc9643-88a6-45d4-b846-7bf6c1d415bc",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837268,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "41": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837275
+        },
+        "uid": "64034381-f50d-4817-b729-c8ceefc9c14e"
+      },
+      "42": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a1ffdd09-b4b3-4d96-8356-486fa51679fe",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830354,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "43": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837277
+        },
+        "uid": "1a8b2747-c335-4b6f-86b0-7c8bf7ba0271"
+      },
+      "44": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "c3503c95-15ea-415b-be23-c9fa7d061050",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830357,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "19": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "61a4da7b-1280-4cdc-9d5d-f88b443a4eee",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837278,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "45": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837279
+        },
+        "uid": "3a7d7a27-921c-46ff-b776-b0ac78671472"
+      },
+      "53": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837287
+        },
+        "uid": "bc6dd65d-cf6f-46fc-bfdc-60609d1a3c66"
+      },
+      "46": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "8f9ddb59-eac8-4869-bcc6-202fd4c35203",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830360,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "52": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "fb298037-c168-4f44-ae56-25e053e32640",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830366,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "47": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837281
+        },
+        "uid": "3d0cfd87-59a8-418b-9c1f-2075698b65ff"
+      },
+      "51": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837285
+        },
+        "uid": "e7680ba1-7bf4-4d65-90c3-f9bf593dc427"
+      },
+      "5": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "1ebcd548-503f-466c-976b-a9f8a4b06a8d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837268,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "48": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a44f4315-ca1b-4869-bf8f-4a6468866ec4",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830362,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "49": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837283
+        },
+        "uid": "2d056b96-9aeb-4ced-9941-8f910e6d12ee"
+      },
+      "6": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "1761c1d1-7aba-4d63-b2ff-323bfa4df0b1",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837268,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "50": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "5c183a12-9d66-44c9-a303-af134df81d9e",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830364,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "40": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "25270736-dcd3-4d35-93ea-d7e9472badee",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830352,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "7": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "d3cb0b03-4dc6-44b3-bba5-dcff8cd0dd41",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837270,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "39": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 90837273
+        },
+        "uid": "05a2a66b-6908-4368-a5e5-247c6ef0e4ed"
+      },
+      "8": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "0a6a5270-7842-45b2-a653-807cd59bc1e1",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837270,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "31": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "29aabf2a-2985-4f98-82d9-dfd60427caf3",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837286,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "9": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9c0487b6-309f-445b-ba85-df91d24d4a64",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837270,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "13": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "8b811bb3-99be-4f4a-b6eb-b81d54b3706d",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837274,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "54": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "9ce7c17a-f7e8-4d2e-8090-fc48a19e53f6",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90830368,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "11": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "96ddc49f-8248-4834-8e56-379cfa047164",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837272,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "20": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "98d2941f-e1df-4968-b85b-234a3054fec5",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837278,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "12": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "fa92923b-1396-460d-bd53-68f583939fc1",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837272,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "22": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "af2f5968-2b54-4a16-bb51-cd966c055210",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837280,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "23": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "45584b60-6947-45f9-b0e1-b4fd9773e19f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837280,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "24": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "dee9f967-6746-4e61-8395-d996221a407c",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837280,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "25": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "1c3bf2d4-9370-4cce-b1b3-79f6d505b156",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837282,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "10": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "a7094ec1-1f30-452d-a337-d7a3e8dfc731",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837272,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "26": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "42d1580f-aeb0-4730-a0b0-5928a217b49f",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837282,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "18": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "4958dc63-49af-4b7d-b43b-e18cf3f30670",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837276,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "27": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "fdf5a54c-4165-41bd-a88d-001d0ad95f6c",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837282,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "17": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "f592890e-c6a9-417d-a2d2-bc1afa8d5cae",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837276,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "28": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "47d54933-1b39-4adc-8621-36db9f9d07c5",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837284,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "21": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "49faaae0-a369-44e1-b6fc-e5552b3d78bd",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837278,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "29": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "244ccb40-d10f-4a72-ae53-cc8b09ac5c30",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837284,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "16": {
+        "_inputPortValues": {
+          "EventName": "removeTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "723d09ab-4f4b-4358-b253-e61041d1d69b",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837276,
+            "TE_Par_Bellicose"
+          ]
+        }
+      },
+      "30": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "12d1a610-6091-4fce-bcd2-f960906a5834",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837284,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "15": {
+        "_inputPortValues": {
+          "EventName": "npcAddBuff"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "3daacf2f-5038-4bc4-ba1b-d4bb1b687156",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837274,
+            2135102,
+            -1
+          ]
+        }
+      },
+      "14": {
+        "_inputPortValues": {
+          "EventName": "addTagByNpcStaticId"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "14886aa1-5480-448e-89c9-9d85d5d8118e",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            90837274,
+            "TE_Par_Bellicose"
+          ]
+        }
+      }
+    }
+  }
+}

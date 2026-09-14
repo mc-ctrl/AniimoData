@@ -1,0 +1,155 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "4df325c5-00d1-4cce-8000-1de688a79dbd",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "NodeID": 52
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e96a1f25-2e4b-4251-a4cf-e1bb6a449fd1",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_wishytar_waterpillar_loop",
+      "NodeID": 55
+    },
+    "46": {
+      "UID": "2296ff8e-95c3-449d-8eed-e0740cf06ba3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 46
+    },
+    "57": {
+      "UID": "2a2cbf9a-4ff8-496a-a1fa-c4105f6d066d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          55,
+          58
+        ]
+      },
+      "NodeID": 57
+    },
+    "83": {
+      "name": "stopEffectStr",
+      "UID": "7e83ec13-52ef-409a-ba18-cd70c0086dd9",
+      "effectId": "Eff_Parmon_10043_Skill_SlurryBreath_loop",
+      "target": "OWNER",
+      "NodeID": 83
+    },
+    "48": {
+      "UID": "f089c0d3-602a-4e8b-89af-cf690acff524",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 48
+    },
+    "66": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 66,
+      "UID": "f23fce51-18ba-46d9-87e7-5a28ed7ce28c",
+      "val": false,
+      "aimOffsetAnim": "AttackSpecial_AimOffset",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": false,
+      "name": "setIsInAim",
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "blendTime": 0.5,
+      "cameraPitchOffset": 0
+    },
+    "49": {
+      "action": {
+        "actionIds": [
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 49,
+      "UID": "b8a6add3-b08a-4354-ba06-0d80f9c397d3"
+    },
+    "81": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "a8dac9c4-8350-41e0-bac9-9ee3dd78a5d2",
+      "effectId": "Eff_Parmon_10043_Skill_SlurryBreath_loop_end",
+      "offsetRotation": [
+        0,
+        90,
+        0
+      ],
+      "NodeID": 81
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "412c691d-5a0d-4e22-b0d8-99a7841cee87",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_longbreath_water_end",
+      "NodeID": 58
+    },
+    "34": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c5aa7c86-e62b-4abe-ba66-70d6ef001a72",
+      "target": "OWNER",
+      "NodeID": 34,
+      "animId": "Skill_LongBreath_End"
+    },
+    "51": {
+      "UID": "75ea4731-17ba-4fad-85f3-71e0d1eb22b0",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 51
+    },
+    "36": {
+      "UID": "7d2ea782-7f07-4a4f-a034-3bf142b8badd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34,
+          66,
+          83,
+          46,
+          81
+        ]
+      },
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_10430300",
+  "NodeID": 38,
+  "UID": "d5466dd0-f169-4f0b-8426-f75d9012c479",
+  "eventIds": [
+    36,
+    49,
+    52,
+    57
+  ],
+  "layer": "Base",
+  "length": 1.783
+}

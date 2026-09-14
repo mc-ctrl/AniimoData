@@ -1,0 +1,18 @@
+{
+  "P_Item_SceneObject_Floor_Fragile_01": {
+    "name": "墙体破碎（正式）",
+    "breakRuinEff": "Eff_Common_Element_Broken_Floor"
+  },
+  "P_Item_SceneObject_Stone_Fragile": {
+    "name": "石头破碎（正式）",
+    "breakRuinEff": "Eff_Common_Element_StoneBroken_Ball"
+  },
+  "BreakableRock": {
+    "name": "石头破碎",
+    "breakRuinEff": "Eff_Common_Element_StoneBroken"
+  },
+  "BreakableWall": {
+    "name": "墙体破碎",
+    "breakRuinEff": "Eff_Common_Element_Wallfall"
+  }
+}

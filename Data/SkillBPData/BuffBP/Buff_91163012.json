@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91163012",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    9,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "3f76f03d-9cad-43e1-b18d-bbb5e8222e0b",
+      "scale": 0,
+      "name": "setAnimFreezeScale",
+      "NodeID": 3
+    },
+    "9": {
+      "name": "setShaderFrozen",
+      "NodeID": 9,
+      "UID": "fdeeb3df-efa4-4f59-ad07-260a744cdfed",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": false
+    },
+    "6": {
+      "key": "wait",
+      "duration": 0.1,
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "b3d83f17-ab4d-4343-b4e7-32fa3c860726",
+      "name": "addEntityTimer"
+    },
+    "5": {
+      "UID": "c62f6d12-4bfd-4c9f-923a-8765ad479ce2",
+      "scale": 1,
+      "name": "setAnimFreezeScale",
+      "NodeID": 5
+    },
+    "8": {
+      "name": "setShaderFrozen",
+      "NodeID": 8,
+      "UID": "e9267757-f8e8-47c2-9dae-6edae89267d3",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": true
+    }
+  },
+  "onBuffDestroyIds": [
+    9,
+    6
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    3
+  ]
+}

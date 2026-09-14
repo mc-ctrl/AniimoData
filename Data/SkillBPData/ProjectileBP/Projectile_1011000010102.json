@@ -1,0 +1,50 @@
+{
+  "duration": 5,
+  "BPName": "buff_1011000010",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Money_Drop_Fly",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "50": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062002,
+      "name": "createEntity",
+      "UID": "a39cdca5-2d24-4c25-b684-657d4567f810",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 50,
+      "pos": "PROJECTILE"
+    }
+  },
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    50
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

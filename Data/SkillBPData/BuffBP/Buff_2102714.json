@@ -1,0 +1,91 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": -0.5,
+    "speed_ratio_sprint_v": -0.5,
+    "sidewalkspeed_cur": -0.5,
+    "walkbackspeed_cur": -0.5,
+    "walkspeed_cur": -0.5,
+    "runspeed_cur": -0.5,
+    "speed_ratio_walk_v": -0.5
+  },
+  "NodeID": 1,
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "tags": [
+    17,
+    28
+  ],
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2102714",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "enterTime": 0,
+      "exitTime": 1,
+      "presetName": "1",
+      "NodeID": 3,
+      "UID": "ff17bbc2-ca98-4374-86f0-085963b58540",
+      "name": "setShaderSquash",
+      "degree": 0.1
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "89e81f10-33b2-4ef2-a9e5-9e42c00a3f3c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 9
+    },
+    "6": {
+      "enterTime": 2,
+      "exitTime": 0.35,
+      "presetName": "1",
+      "NodeID": 6,
+      "UID": "2f1fc6b0-cee9-4722-b2de-ef6b46986965",
+      "name": "setShaderSquash",
+      "degree": 1
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b355c7d4-f6b6-4a48-9ecc-b6d4fb4c7980",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 8
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "f2ce6fb4-f10f-4e80-9c08-37fd85078c1a",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d7c531c0-5f55-4535-a7b6-a2973ec67d64",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "16": {
+      "id": 2028,
+      "duration": 3,
+      "NodeID": 16,
+      "UID": "ba7f401f-f6b3-489c-b6ec-430a380ac1c6",
+      "name": "showBossMechanismTip"
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    6,
+    9,
+    15
+  ],
+  "onBuffStartIds": [
+    3,
+    8,
+    14,
+    16
+  ]
+}

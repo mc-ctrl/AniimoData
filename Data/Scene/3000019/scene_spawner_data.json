@@ -1,0 +1,40 @@
+{
+  "87741373": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      606.36,
+      -79.23,
+      1522.97
+    ],
+    "sandboxId": 87699964,
+    "sandboxType": 1,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "曾楠",
+    "levelAreaConfigId": 31402,
+    "avoidRepeatGroupCount": 0,
+    "id": 87741373,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          87741372
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31402,
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20420000",
+  "NodeID": 1,
+  "UID": "da4513a7-933c-48a5-9306-62d546d0a83e",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    5
+  ],
+  "nodeMap": {
+    "3": {
+      "rValue": {
+        "calcId": 20420000,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 16,
+        "UID": "dfefa405-9826-4cbe-b8d5-b570c84d79c1",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "equal",
+      "UID": "1ca79c34-6f38-444f-bf6f-3cf863558e25",
+      "NodeID": 3,
+      "lValue": {
+        "UID": "18616989-a771-43a3-a148-f8526125423d",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 2
+      }
+    },
+    "4": {
+      "UID": "e90c0fd7-1d07-4dfb-a268-321e168504d7",
+      "conditionIds": [
+        3,
+        18
+      ],
+      "name": "conditionOr",
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "4d2c31cb-ad7c-4780-b418-2bf5b51df1f7",
+      "target": "OWNER",
+      "name": "getTargetPosition",
+      "NodeID": 14
+    },
+    "15": {
+      "key": "targetPosRogue",
+      "name": "setCacheVal",
+      "UID": "7b8dae48-be09-458c-a091-a8f4b8caa2f3",
+      "target": "SRC",
+      "val": {
+        "UID": "4d2c31cb-ad7c-4780-b418-2bf5b51df1f7",
+        "target": "OWNER",
+        "name": "getTargetPosition",
+        "NodeID": 14
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "buffId": 20420000,
+      "name": "removeBuff",
+      "UID": "21a83c77-6ca1-416d-a8f5-c30410826eaf",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "calcId": 20420000,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 16,
+      "UID": "dfefa405-9826-4cbe-b8d5-b570c84d79c1",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "calcId": 20420000,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 19,
+      "UID": "62fbad3d-1429-4333-a958-a7b7ec898544",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "actionIds": [
+        7,
+        13,
+        15
+      ],
+      "name": "registerDeadEvent",
+      "UID": "32cf5303-564c-4efe-ab1d-7a041a9ae399",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "rValue": {
+        "calcId": 20420000,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 19,
+        "UID": "62fbad3d-1429-4333-a958-a7b7ec898544",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "greater",
+      "UID": "5f1b153f-f049-4fd2-976f-81086ea38612",
+      "NodeID": 18,
+      "lValue": {
+        "UID": "7dcb960a-cb37-4171-837e-f11d9df3d03e",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 17
+      }
+    },
+    "13": {
+      "target": "SRC",
+      "duration": 0,
+      "buffId": 20420001,
+      "NodeID": 13,
+      "UID": "02ae5fbd-a221-455c-a1e2-19a08bb8ad46",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "82bb4aae-278d-49b0-bc57-bf0aedd34f14",
+      "effectId": "Eff_Buff_Rogue_Defense_Equip_Enemy_Buff",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        7,
+        13,
+        15
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "79108e5e-d648-4256-8b1f-20d29991ad8c",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "12": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8fb3f46e-12e3-4b6a-a2a3-40c443c55bc5",
+      "effectId": "Eff_Buff_Rogue_Defense_Equip_Enemy_Buff",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    11
+  ],
+  "onBuffStartIds": [
+    12,
+    9
+  ]
+}

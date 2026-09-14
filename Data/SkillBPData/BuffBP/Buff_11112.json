@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11112",
+  "NodeID": 1,
+  "UID": "9af64d35-eed6-489d-942b-50fe29a1fb2f",
+  "desc": "迷雾森林外围传送",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3d95f118-7a7a-4d65-a27e-b572d727cb51",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "13": {
+      "lerpTime": 3,
+      "name": "enableVignette",
+      "NodeID": 13,
+      "UID": "1f0be78f-58c6-4299-be8c-0bcf54ddd34b",
+      "endWidth": 0,
+      "enable": false,
+      "startWdith": 1
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "037816a7-a9ac-4c8a-95fe-c034deaa2810",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "blackScreenId": 113,
+      "name": "serverPlayBlackScreen",
+      "UID": "245c690b-20d8-4e55-aa23-15e85788e607",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "12": {
+      "lerpTime": 0.1,
+      "name": "enableVignette",
+      "NodeID": 12,
+      "UID": "a8245b5d-d26e-4b10-a707-479fa2e62ace",
+      "endWidth": 1,
+      "enable": true,
+      "startWdith": 0
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "cb451413-107b-4d8d-87c5-ff43dafe4ee8",
+      "effectId": "Eff_Avatar_Losing_Buff",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "delay": 1,
+      "markIdList": [
+        54247613
+      ],
+      "UID": "4b0bcf67-2f1a-4848-b1f2-f4f5d08ee9ee",
+      "target": "OWNER",
+      "name": "gameplayRandomTeleportToMarkIdByList",
+      "NodeID": 7
+    },
+    "2": {
+      "duration": 2,
+      "name": "playStartLoopEndAni",
+      "NodeID": 2,
+      "UID": "3f747c51-7fc5-4267-b314-7c5dc059124b",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9,
+    11,
+    13
+  ],
+  "onBuffStartIds": [
+    2,
+    8,
+    6,
+    7,
+    12
+  ]
+}

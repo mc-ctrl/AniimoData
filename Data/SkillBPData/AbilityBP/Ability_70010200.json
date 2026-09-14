@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_70010200",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10101120,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 70010200001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Shield_Skill_Block"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_Robot_Normal_Def_Shield_Skill_Block_Wave",
+    "Eff_Skill_Common_Warning",
+    "Eff_Buff_Rogue_Skill_Shield"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

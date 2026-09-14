@@ -1,0 +1,19 @@
+[
+  {},
+  {
+    "costNum": 5000,
+    "costType": 2
+  },
+  {
+    "costNum": 10000,
+    "costType": 2
+  },
+  {
+    "costNum": 20000,
+    "costType": 2
+  },
+  {
+    "costNum": 40000,
+    "costType": 2
+  }
+]

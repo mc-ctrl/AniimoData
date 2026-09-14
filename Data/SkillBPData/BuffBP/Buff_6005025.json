@@ -1,0 +1,16 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6005025",
+  "calcInfoByLuaConfig": {
+    "id": 6005025,
+    "type": 1,
+    "stamina_regen_p": "param1",
+    "stamina_max_p": "param0"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

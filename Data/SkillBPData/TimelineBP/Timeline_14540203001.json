@@ -1,0 +1,120 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "a6c60c17-00d8-4726-a9fe-148cbb0d597d",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 22
+    },
+    "23": {
+      "UID": "561640d5-18c6-4cc8-ad4e-00960e81507a",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 23
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "3704dafb-5de5-4443-9da6-30e210bdadcd",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_move",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "2d010379-aca6-40a1-be73-201500124459",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_move_02",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "cd8ded23-320e-436b-9738-25217caa22ea",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 17,
+      "UID": "dbc61470-241e-4a3d-a8b6-05739baf2f9f"
+    },
+    "26": {
+      "NodeID": 26,
+      "from": 14540200,
+      "to": 14540200,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 5,
+      "recoverOnExit": true,
+      "name": "switchSkill",
+      "UID": "f358040e-eec0-4920-805a-fbf220f0f2b7",
+      "notShowCountDown": false
+    },
+    "4": {
+      "UID": "3fb3e1dc-79e1-48a8-a5e5-943a99363d42",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          24,
+          25,
+          26
+        ]
+      },
+      "NodeID": 4
+    },
+    "19": {
+      "UID": "57fb33c0-cc08-4b16-b5e6-222587298cd7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 19
+    },
+    "20": {
+      "UID": "df2f75ea-fac9-490d-89a3-f1728555a6a3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 20
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f987e707-43f5-4ca6-9560-e01f527519b2",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_RollingBall_End"
+    }
+  },
+  "BPName": "ability_14540203",
+  "NodeID": 6,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    20,
+    17,
+    23,
+    4
+  ],
+  "layer": "Base",
+  "length": 2
+}

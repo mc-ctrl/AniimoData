@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102502",
+  "calcInfoByLuaConfig": {
+    "id": 9102502,
+    "type": 1,
+    "taken_skill_dmg_inc_rate_v": "param0"
+  },
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "火焰之力",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

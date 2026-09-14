@@ -1,0 +1,2312 @@
+{
+  "11005101": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11005104": {
+    "visionArea": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11005200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11018700": {
+    "visionArea": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11005300": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11019100": {
+    "visionArea": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11019200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11007100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11007200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11008100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11008300": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11012200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11013100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11013300": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11018710": {
+    "visionArea": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -12,
+      5
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000003": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11002101": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11002200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "80000020": {
+    "visionArea": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11018140": {
+    "visionArea": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -7,
+      7
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11018130": {
+    "visionArea": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -7,
+      7
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "80000014": {
+    "visionArea": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11016200": {
+    "visionArea": [
+      110003,
+      220003,
+      330003,
+      440003
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11016100": {
+    "visionArea": [
+      110003,
+      220003,
+      330003,
+      440003
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000011": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000010": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000009": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000008": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000007": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000006": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000005": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000004": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "91002100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "80000002": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000001": {
+    "visionArea": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "valueChange": 5,
+    "valueMax": 160,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -2,
+      2
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11": {
+    "visionArea": [
+      109009,
+      218009,
+      304509,
+      404509
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21019400": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "12": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21018701": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "13": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11003100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "14": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11004300": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "15": {
+    "visionArea": [
+      109009,
+      218009,
+      304509,
+      404509
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11001102": {
+    "visionArea": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "valueChange": 10,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11002100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21005300": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21005200": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21004310": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21004300": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21003200": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11018500": {
+    "visionArea": [
+      109018,
+      218018,
+      304518,
+      404518
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "91002301": {
+    "visionArea": [
+      110009,
+      220009,
+      330009,
+      440009
+    ],
+    "valueChange": 15,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -9,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21002301": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11019105": {
+    "visionArea": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11020100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21001201": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21001200": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11020301": {
+    "visionArea": [
+      110005,
+      330005,
+      440005
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 100,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -2,
+      2
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11020302": {
+    "visionArea": [
+      110005,
+      330005,
+      440005
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 100,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11026100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11001101": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "401002": {
+    "visionArea": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11001103": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11001104": {
+    "visionArea": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11001109": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11004310": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11005103": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11007101": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11008101": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11008200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11011300": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11013103": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11017410": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11018110": {
+    "visionArea": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11001100": {
+    "visionArea": [
+      110006,
+      220006,
+      330006,
+      440006
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11001200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11018150": {
+    "visionArea": [
+      109019,
+      218019,
+      304519,
+      404519
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -7,
+      7
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11018160": {
+    "visionArea": [
+      109013,
+      218013,
+      304513,
+      404513
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11018170": {
+    "visionArea": [
+      109013,
+      218013,
+      304513,
+      404513
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11018180": {
+    "visionArea": [
+      109013,
+      218013,
+      304513,
+      404513
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11018190": {
+    "visionArea": [
+      109013,
+      218013,
+      304513,
+      404513
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11018199": {
+    "visionArea": [
+      109013,
+      218013,
+      304513,
+      404513
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11002300": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11019104": {
+    "visionArea": [
+      110004,
+      220004,
+      330004,
+      440004
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11002400": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11020103": {
+    "visionArea": [
+      110007,
+      220007,
+      330007,
+      440007
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -2,
+      2
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11020104": {
+    "visionArea": [
+      110008,
+      220008,
+      330008,
+      4400080
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 30,
+    "ballNearbyAddValue": 30,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11020105": {
+    "visionArea": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "valueChange": 10,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21001100": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -10,
+    "perceptGroup": 1
+  },
+  "11002600": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11017100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21002100": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21002300": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11002700": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21002700": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21003100": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11017200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11003101": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11017300": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11003200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11017400": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21005301": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "21007200": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21008300": {
+    "visionArea": [
+      109010,
+      218010,
+      304510,
+      404510
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "21017400": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11004100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11004101": {
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11004102": {
+    "visionArea": [
+      110002,
+      220002,
+      330002,
+      440002
+    ],
+    "valueChange": 10,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "11004200": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "80000012": {
+    "visionArea": [
+      109001,
+      218001,
+      304501,
+      404501
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000013": {
+    "visionArea": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11018100": {
+    "visionArea": [
+      109018,
+      218018,
+      304518,
+      404518
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -8,
+      2
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000015": {
+    "visionArea": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "80000016": {
+    "visionArea": [
+      109014,
+      218014,
+      304514,
+      404514
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "80000023": {
+    "visionArea": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -20,
+    "perceptGroup": 1
+  },
+  "80000024": {
+    "visionArea": [
+      109018,
+      218018,
+      304518,
+      404518
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -5,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 1
+  },
+  "11005100": {
+    "visionArea": [
+      110001,
+      220001,
+      330001,
+      440001
+    ],
+    "valueChange": 5,
+    "valueMax": 100,
+    "valueShowEnd": 95,
+    "valueShowStart": 5,
+    "ballHitAddValue": 0,
+    "ballNearbyAddValue": 10,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "attenuation": -8,
+    "perceptGroup": 2
+  }
+}

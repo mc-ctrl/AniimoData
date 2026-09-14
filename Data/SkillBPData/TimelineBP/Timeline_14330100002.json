@@ -1,0 +1,114 @@
+{
+  "nodeMap": {
+    "45": {
+      "UID": "09dcdb9f-52b7-489f-ade5-9f8561a8e554",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 45
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 46,
+      "UID": "d7aeb2ec-6325-48b8-acb2-0a6d7e608e27"
+    },
+    "42": {
+      "UID": "f22b5b01-14c6-4b01-921c-fe846d59169c",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 42
+    },
+    "25": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4e544764-1d21-4c84-9cb6-ba6d35f363da",
+      "target": "OWNER",
+      "NodeID": 25,
+      "animId": "Skill_TurretForm_End"
+    },
+    "27": {
+      "UID": "1b45bdb1-1d49-41b6-aef7-f9529fc8bb6e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          94,
+          25,
+          50
+        ]
+      },
+      "NodeID": 27
+    },
+    "49": {
+      "UID": "adb090cf-44e6-4422-8e43-f6040add46cf",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          48
+        ]
+      },
+      "NodeID": 49
+    },
+    "50": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b855a096-f6d4-48c7-acee-c07d90e65065",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10433_Skill_TurretForm_Exit",
+      "NodeID": 50
+    },
+    "94": {
+      "UID": "45ab30b0-07f5-486a-bf8a-90ade76d0841",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "TurretOut",
+      "NodeID": 94
+    },
+    "43": {
+      "UID": "5dca416e-b8d0-48b6-9239-4906fbe29d30",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "NodeID": 43
+    },
+    "48": {
+      "UID": "ffcf090c-cedd-45ff-8d63-82213cf3c713",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 48
+    }
+  },
+  "BPName": "ability_14330100",
+  "NodeID": 29,
+  "UID": "74cf8e3b-b7df-444d-a070-087231f1ee57",
+  "eventIds": [
+    27,
+    43,
+    46,
+    49
+  ],
+  "layer": "Base",
+  "length": 0.85
+}

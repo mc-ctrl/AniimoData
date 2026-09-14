@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10120330",
+  "NodeID": 1,
+  "UID": "fbc85552-454b-4ca4-aba3-4fb5bae0c26d",
+  "desc": "移动的同时持续落下星星攻击敌人。",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10120330001,
+      "name": "setCombatActionTimeline",
+      "UID": "259f8897-2ee5-4174-9fce-b952d6f5d05f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Gliding"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Model_StarTail",
+    "Eff_Parmon_10011_Skill_Gliding_Bullet",
+    "Eff_Parmon_10011_Skill_Gliding_Hit",
+    "Eff_Parmon_10012_Boss_Warning"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "范围攻击",
+  "abilityParamId": 11100023,
+  "name": "念力星空滑翔"
+}

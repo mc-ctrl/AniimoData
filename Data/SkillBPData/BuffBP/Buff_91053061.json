@@ -1,0 +1,41 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91053061",
+  "name": "",
+  "UID": "f2aa1a8d-0678-47e1-83f5-0e5a225a2890",
+  "desc": "火狼通用特性",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "calcInfoByLuaConfig": {
+    "id": 91053061,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "b6e5f85b-3930-4ef3-95f5-48935496b4b5",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c28c7e52-ad1f-49c7-8da2-cb554c083ec2",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 4
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

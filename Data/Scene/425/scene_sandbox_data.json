@@ -1,0 +1,68 @@
+{
+  "91125077": {
+    "owner": "路司机",
+    "sandboxType": 1,
+    "chunk": 999408,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91125077,
+    "markIconSpawnerId": 0,
+    "spawners": [
+      91125107,
+      91125110,
+      91125121,
+      91125125,
+      91125147,
+      91125176,
+      91125181,
+      91125194,
+      91125199,
+      91125204,
+      91125206,
+      91125212,
+      91125240,
+      91125244,
+      91125248,
+      91125259,
+      91125273,
+      91125294
+    ],
+    "sandBoxLevel": 0,
+    "position": [
+      -1274.4,
+      72.65,
+      881.12
+    ],
+    "poiType": 501,
+    "name": "板块1草原_生态点_开图点周围补充_迁移"
+  },
+  "91300859": {
+    "owner": "路司机",
+    "chunk": 1020897,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 504,
+    "sandBoxLevel": 0,
+    "sandboxType": 10,
+    "sightLevel": 128,
+    "spawners": [
+      91300864,
+      91300866,
+      91300869,
+      91300871,
+      91300898
+    ],
+    "activeOnInit": 1,
+    "id": 91300859,
+    "markIconSpawnerId": 0,
+    "name": "全局_宝箱解谜_Spwaner模板匹配POI类型测试",
+    "position": [
+      86.19,
+      0.05,
+      -96.27
+    ]
+  }
+}

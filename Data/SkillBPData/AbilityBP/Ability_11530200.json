@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_11530200",
+  "NodeID": 1,
+  "UID": "3e3f0d1e-67e9-4ff0-9614-ba571aceebf1",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11530200001,
+      "name": "setCombatActionTimeline",
+      "UID": "8247ef00-58b9-44a0-a012-8346a77ef162",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Whirlwind"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "parentDynamicRPCStates": [
+    "FLYING"
+  ],
+  "abilityParamId": 10900040
+}

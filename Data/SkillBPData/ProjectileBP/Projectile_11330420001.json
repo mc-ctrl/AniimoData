@@ -1,0 +1,130 @@
+{
+  "calcResultNodeId": 12,
+  "duration": 1,
+  "BPName": "ability_11330420",
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10133_Skill_Throw_Ice",
+  "ignoreActorCollision": true,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "onProjectileGroundedIds": [
+    107
+  ],
+  "maxHitNum": 0,
+  "relation": 2,
+  "onProjectileTickIds": [
+    14
+  ],
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    42
+  ],
+  "hasAttackDataInOnProjectileHit": false,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "12": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.15
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000
+      },
+      "UID": "eac86700-66e6-4bd6-aa36-e0174d040015",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 12
+    },
+    "42": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 11330420002,
+      "name": "createProjectile",
+      "UID": "d836a0e9-4ab3-4c6a-ab45-9278bdb85cdb",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": "PROJECTILE",
+      "projectileType": "Free3d",
+      "NodeID": 42,
+      "targetPos": "CASTER"
+    },
+    "107": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "9f343470-fca2-46a1-b974-34bcf80898a5",
+      "effectId": "Eff_Hit_Ice_Blunt",
+      "speed": 1,
+      "NodeID": 107
+    },
+    "14": {
+      "calcResultNodeId": 12,
+      "name": "actOnTargets",
+      "UID": "b912cea4-7399-4dab-9557-d783b5aa6752",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 2,
+      "needEcs": true,
+      "actionIds": [
+        12
+      ],
+      "impulseId": 2000,
+      "NodeID": 14
+    }
+  },
+  "tickInterval": 0.2,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

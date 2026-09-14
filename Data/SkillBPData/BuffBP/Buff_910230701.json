@@ -1,0 +1,59 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_910230701",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "对敌人造成新的减益状态时（刷新不算），回复2EP",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "hasBuffTag",
+      "UID": "e92e5752-30d6-4fc8-ab82-42f46cee0431",
+      "target": "OWNER",
+      "NodeID": 3,
+      "buffTag": 11
+    },
+    "4": {
+      "actionIds": [
+        8,
+        6
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "ac026bf7-ae2d-44ac-98ec-5f8d6710556a",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "target": "SRC",
+      "name": "playEffectStr",
+      "UID": "45939997-eca2-4460-b3c6-8267962c379c",
+      "effectId": "Eff_Parmon_10042_Skill_WaterHeal",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "8": {
+      "value": 20,
+      "name": "recoverEp",
+      "UID": "4d33d742-007f-4366-b6f6-5955e22a735b",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "UID": "002ce441-8676-4817-9f6d-c5c9d1b151b9",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

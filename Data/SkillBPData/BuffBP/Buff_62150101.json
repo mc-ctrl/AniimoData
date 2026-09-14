@@ -1,0 +1,203 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62150101",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "tags": [
+    10
+  ],
+  "nodeMap": {
+    "4": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "aeaef2a6-3ab7-4572-a7f7-a827f00871c2",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "3ab3ae4b-fae2-4287-8551-b5d3d337732f",
+      "target": "OWNER",
+      "name": "checkTargetBeCarried",
+      "NodeID": 6
+    },
+    "10": {
+      "calcId": 62150101,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "17c4d704-738c-4942-893a-7e5f079b333c",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "1f0aeae9-552d-4e83-92c8-f5642192e0f3",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        8
+      ]
+    },
+    "16": {
+      "rValue": {
+        "key": "CuddleBear",
+        "name": "getCacheVal",
+        "UID": "a32d9c6f-0d9c-431a-ab68-89befa1d03b6",
+        "target": "OWNER",
+        "NodeID": 15
+      },
+      "name": "equal",
+      "UID": "0f756d5e-d81b-4c47-a69c-51e74ce93512",
+      "NodeID": 16,
+      "lValue": {
+        "templateId": 62150101,
+        "name": "getBuffLayer",
+        "UID": "7a060594-3d58-4972-baae-631032961f94",
+        "target": "OWNER",
+        "NodeID": 18
+      }
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 62150101,
+      "NodeID": 8,
+      "UID": "2aa2cef9-a7db-449c-92f7-6e3641d4e763",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "actionIds": [
+        19,
+        21
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "e18185f5-c7aa-4a5a-bcde-e4d39ca55c79",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "21": {
+      "buffId": 62150101,
+      "name": "removeBuff",
+      "UID": "3a027744-8e5e-42f0-b3ad-9b1abfdbf2e0",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "19": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 62150102,
+      "NodeID": 19,
+      "UID": "c10a24a8-635d-43fc-aa48-9f8316ebba0b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "calcId": 62150101,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 14,
+      "UID": "3b390386-07c0-463f-acef-b88c42b45545",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "NodeID": 11,
+      "UID": "5bac5d9d-58ea-4c3b-9b25-7abff370416c",
+      "min": {
+        "calcId": 62150101,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 10,
+        "UID": "17c4d704-738c-4942-893a-7e5f079b333c",
+        "name": "getParamByLuaConfig"
+      },
+      "max": {
+        "calcId": 62150101,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 14,
+        "UID": "3b390386-07c0-463f-acef-b88c42b45545",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "random"
+    },
+    "13": {
+      "key": "CuddleBear",
+      "name": "setCacheVal",
+      "UID": "91f9977c-09dc-4c47-87d0-752ab6eeb21e",
+      "target": "OWNER",
+      "val": {
+        "convertType": 3,
+        "name": "toInt",
+        "UID": "bd3a6592-03f8-4aef-9cc0-0831e87c2a53",
+        "val": {
+          "NodeID": 11,
+          "UID": "5bac5d9d-58ea-4c3b-9b25-7abff370416c",
+          "min": {
+            "calcId": 62150101,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 10,
+            "UID": "17c4d704-738c-4942-893a-7e5f079b333c",
+            "name": "getParamByLuaConfig"
+          },
+          "max": {
+            "calcId": 62150101,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 14,
+            "UID": "3b390386-07c0-463f-acef-b88c42b45545",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "random"
+        },
+        "NodeID": 12
+      },
+      "NodeID": 13
+    },
+    "12": {
+      "convertType": 3,
+      "name": "toInt",
+      "UID": "bd3a6592-03f8-4aef-9cc0-0831e87c2a53",
+      "val": {
+        "NodeID": 11,
+        "UID": "5bac5d9d-58ea-4c3b-9b25-7abff370416c",
+        "min": {
+          "calcId": 62150101,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 10,
+          "UID": "17c4d704-738c-4942-893a-7e5f079b333c",
+          "name": "getParamByLuaConfig"
+        },
+        "max": {
+          "calcId": 62150101,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 14,
+          "UID": "3b390386-07c0-463f-acef-b88c42b45545",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "random"
+      },
+      "NodeID": 12
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    17
+  ],
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13,
+    4
+  ]
+}

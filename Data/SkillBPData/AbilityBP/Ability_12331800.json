@@ -1,0 +1,75 @@
+{
+  "BPName": "ability_12331800",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "27": {
+      "UID": "b1f3be9a-e0f5-4612-ad4e-2a7c7c5d7d49",
+      "name": "cancelCameraLockOnTarget",
+      "checkCaster": false,
+      "NodeID": 27
+    },
+    "131": {
+      "id": 2041,
+      "hasCountDown": true,
+      "NodeID": 131,
+      "UID": "6122b7bb-98a3-4722-8a2b-084a7dbb9d56",
+      "name": "hideBossMechanismTip"
+    },
+    "7": {
+      "timelineId": 12331800001,
+      "name": "setCombatActionTimeline",
+      "UID": "3dc91cb4-0974-48cf-bc37-9b8a2d0f06a7",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "126": {
+      "UID": "2f90c7d8-b76a-4cc9-aaa4-4cf2e0d63ab1",
+      "name": "hideBattleDialog",
+      "dialogId": 71000006,
+      "NodeID": 126
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "onAbilityRemovedIds": [
+    27,
+    126,
+    131
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10233_Mon_Skill_Hurricane_Start",
+    "Eff_Parmon_10233_Mon_Skill_Hurricane_Loop_02",
+    "Eff_Parmon_10233_Mon_Skill_Hurricane_Loop_01",
+    "Eff_Parmon_10233_Mon_Skill_Hurricane_End_01",
+    "Eff_Parmon_10233_Mon_Skill_Hurricane_End_02",
+    "Eff_Parmon_10233_Mon_Skill_Hurricane_Trail",
+    "Eff_Hit_Psychic_Blunt",
+    "Eff_Parmon_10233_Mon_Skill_MirrorImage"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "onAbilityEndIds": [
+    27,
+    126,
+    131
+  ],
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 40900005,
+  "preloadAnims": [
+    "Skill_Hurricane_Start",
+    "Skill_Hurricane_Loop",
+    "Skill_Hurricane_End",
+    "Skill_MirrorImage"
+  ]
+}

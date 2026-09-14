@@ -1,0 +1,223 @@
+{
+  "BPName": "timeline_402",
+  "NodeID": 1,
+  "UID": "226ff204-234d-4aa6-8cd7-90fc2b07055d",
+  "layer": "Base",
+  "isSkillTimeline": false,
+  "length": 0.4,
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "easeType": 3,
+      "duration": 0.3,
+      "name": "tweenEffectPos",
+      "NodeID": 4,
+      "UID": "9ca6852f-06a1-4d68-b6a1-946254c1bdc8",
+      "effectStoreKey": "test",
+      "endPos": {
+        "data": {
+          "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 2
+        },
+        "propertyName": "FinalPos",
+        "name": "getProperty",
+        "UID": "859ff42b-6052-4dd0-a604-da4cd4262536",
+        "NodeID": 3
+      },
+      "startPos": {
+        "data": {
+          "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 2
+        },
+        "propertyName": "HitPos",
+        "name": "getProperty",
+        "UID": "f34cf2dd-03b7-4e95-8046-a086d54214f0",
+        "NodeID": 13
+      }
+    },
+    "6": {
+      "UID": "a87ebeeb-d07b-4260-927a-d218dc50757d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          4,
+          16,
+          20
+        ]
+      },
+      "NodeID": 6
+    },
+    "21": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "d989c74b-35f9-4456-bff2-f8f1eda79de1",
+      "soundId": "SFX_Prop_CatchBall_CatchBoss_Lose",
+      "NodeID": 21
+    },
+    "14": {
+      "name": "playEffectOnPosRot",
+      "UID": "cd107109-426e-422a-a0ac-0e3b3304c765",
+      "effectId": "Eff_Catch_MagicCube_NormalBall_Struggle_Small",
+      "global": true,
+      "pos": {
+        "data": {
+          "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 2
+        },
+        "propertyName": "HitPos",
+        "name": "getProperty",
+        "UID": "f34cf2dd-03b7-4e95-8046-a086d54214f0",
+        "NodeID": 13
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "effectStoreKey": "test",
+      "NodeID": 14
+    },
+    "16": {
+      "UID": "6473148b-8b90-4cb5-afd8-d1731cae0af1",
+      "value": {
+        "str": "wmh",
+        "name": "constString",
+        "UID": "04dc8b36-886c-4dd7-95f0-8d2a5cbf15dd",
+        "NodeID": 15,
+        "concatenateNumber": {
+          "data": {
+            "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+            "target": "OWNER",
+            "name": "getTargetConfigData",
+            "NodeID": 2
+          },
+          "propertyName": "HitPos",
+          "name": "getProperty",
+          "UID": "f34cf2dd-03b7-4e95-8046-a086d54214f0",
+          "NodeID": 13
+        }
+      },
+      "name": "print",
+      "NodeID": 16
+    },
+    "8": {
+      "name": "playEffectOnPosRot",
+      "UID": "1a6ffc3c-1e5d-4214-bfef-dc9d3ace06e8",
+      "effectId": "Eff_Catch_MagicCube_NormalBall_Lose_R",
+      "global": true,
+      "pos": {
+        "data": {
+          "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 2
+        },
+        "propertyName": "FinalPos",
+        "name": "getProperty",
+        "UID": "859ff42b-6052-4dd0-a604-da4cd4262536",
+        "NodeID": 3
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "effectStoreKey": "test",
+      "NodeID": 8
+    },
+    "19": {
+      "reclaim": true,
+      "name": "stopEffectByEffectStoreKey",
+      "UID": "0d1f2da4-a257-441d-bb54-9198fd715c07",
+      "effectStoreKey": "test",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "4499d379-169c-4d0f-83bd-b860682e8d0f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 9
+    },
+    "18": {
+      "rValue": true,
+      "name": "equal",
+      "UID": "54546ca4-3084-47ee-8b6a-81fd1f8ddab5",
+      "NodeID": 18,
+      "lValue": {
+        "data": {
+          "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 2
+        },
+        "propertyName": "LorR",
+        "name": "getProperty",
+        "UID": "9ca0587d-019c-45cc-bbb6-f2340f09ed6d",
+        "NodeID": 17
+      }
+    },
+    "2": {
+      "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 2
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          19,
+          9,
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 11,
+      "UID": "5747ea0f-e1e0-43ba-97a1-c22b13195be3"
+    },
+    "20": {
+      "UID": "af6bc7f0-1711-4294-b6d4-c6d4561f6b3d",
+      "name": "hideCatchBall",
+      "NodeID": 20
+    },
+    "12": {
+      "name": "playEffectOnPosRot",
+      "UID": "a56596a7-ba92-40aa-854a-8ddc7818003a",
+      "effectId": "Eff_Catch_MagicCube_NormalBall_Lose_L",
+      "global": true,
+      "pos": {
+        "data": {
+          "UID": "7d4306b8-2211-4fea-aa8a-3ced3c8e24bc",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 2
+        },
+        "propertyName": "FinalPos",
+        "name": "getProperty",
+        "UID": "859ff42b-6052-4dd0-a604-da4cd4262536",
+        "NodeID": 3
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "effectStoreKey": "test",
+      "NodeID": 12
+    }
+  },
+  "eventIds": [
+    6,
+    11
+  ]
+}

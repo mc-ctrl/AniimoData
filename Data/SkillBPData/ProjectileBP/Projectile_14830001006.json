@@ -1,0 +1,23 @@
+{
+  "duration": 1,
+  "BPName": "ability_14830001",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10483_Attack_01_x0.6",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {},
+  "moveSpeed": 15,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_10420330",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 10300021,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10420330001,
+      "name": "setCombatActionTimeline",
+      "UID": "8f7e3418-9269-4f99-bfb0-d163533d86c0",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_LongBreath_Start",
+    "Skill_LongBreath_Loop",
+    "Skill_LongBreath_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_AttackSpecial_length",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "UID": "7bd42372-10b0-4c2d-89b0-95158965cdcf"
+}

@@ -1,0 +1,72 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102105",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "10": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "5aaee2f5-43ff-4702-87e4-78980480a9d5",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "82eb2ead-239c-4eef-8c93-52c8f93ba004",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "9": {
+      "rValue": 2102107,
+      "name": "equal",
+      "UID": "74122e43-c670-4f26-a528-169df6d79e18",
+      "NodeID": 9,
+      "lValue": {
+        "data": {
+          "UID": "6f08db01-49ab-48a3-96ca-08b99f61107a",
+          "name": "getEventData",
+          "eventName": "onKill",
+          "NodeID": 7
+        },
+        "propertyName": "buffTemplateId",
+        "name": "getProperty",
+        "UID": "f2ce1df2-bc0f-4614-9714-011ad866215a",
+        "NodeID": 8
+      }
+    },
+    "12": {
+      "isPetTrigger": true,
+      "petTarget": "OWNER",
+      "triggerId": 100270092,
+      "name": "onEntityTrigger",
+      "UID": "71cdb341-a455-4475-870a-12c69da35d63",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "calcInfo": {
+    "bp_atk_fix": {
+      "calcId": 9102105,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "aec9f874-67ca-45f9-bcd3-347519ae82c9",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

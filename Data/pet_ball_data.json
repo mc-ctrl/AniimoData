@@ -1,0 +1,12 @@
+[
+  {
+    "exp": 110,
+    "name": 1397389601,
+    "forbidSpecies": [
+      2
+    ],
+    "petBallIcon": "ball_1",
+    "petBallRes": "$P_Item_PetBall_GrassWood.prefab",
+    "fitElement": {}
+  }
+]

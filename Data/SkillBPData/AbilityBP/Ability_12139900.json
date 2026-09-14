@@ -1,0 +1,42 @@
+{
+  "cutSceneDuration": 2.55,
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10600660,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "preloadCutSceneBySuitDefaultResId": "$Parmon_10213_Skill_Ex_Timeline.prefab",
+  "preloadCutScenesBySuit": {
+    "5": "$Parmon_10213_Skill_Ex_Timeline05.prefab",
+    "4": "$Parmon_10213_Skill_Ex_Timeline04.prefab"
+  },
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10213_OutEx_01",
+    "Eff_Parmon_10213_OutEx_03"
+  ],
+  "searchRelation": 2,
+  "name": "复苏之梦",
+  "searchTargetRangeRadius": 12.5,
+  "searchTargetRangeUp": 5,
+  "tags": {},
+  "searchTargetRangeDown": 5,
+  "BPName": "ability_12139900",
+  "onAbilityCastIds": [
+    8
+  ],
+  "nodeMap": {
+    "8": {
+      "timelineId": 12139900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "desc": ""
+}

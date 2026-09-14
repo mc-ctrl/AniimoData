@@ -1,0 +1,627 @@
+{
+  "nodeMap": {
+    "62": {
+      "isRootDir": false,
+      "target": "OWNER",
+      "NodeID": 62,
+      "UID": "1a794cbc-630b-4e41-bdbb-94dc5a9e7a5a",
+      "positionOffset": [
+        0,
+        0,
+        1.5
+      ],
+      "name": "getBonePosition",
+      "boneName": "Root"
+    },
+    "38": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        95
+      ],
+      "UID": "70929cdd-0e9d-46f8-86c4-c9ce31b498e7",
+      "name": "doActionsByConditions",
+      "NodeID": 38
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.86,
+      "NodeID": 39,
+      "UID": "acb164ff-62ac-4070-88b9-223b39de6d6d"
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.3,
+      "NodeID": 40,
+      "UID": "85598f9d-8029-4d35-b986-da15c704dc9d"
+    },
+    "83": {
+      "offsetXYZ": [
+        0.05,
+        0.5,
+        0.6
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "872f94e9-06d6-4a29-bf03-8c32ff508a91",
+      "effectId": "Eff_Parmon_10162_Skill_SunBeam",
+      "speed": 1,
+      "NodeID": 83
+    },
+    "65": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 65,
+      "UID": "1e97719a-70a0-46f6-a454-eecd266ba470",
+      "onUpdate": {
+        "actionIds": [
+          63
+        ]
+      },
+      "startTime": 0.65,
+      "onEnter": {
+        "actionIds": [
+          63
+        ]
+      }
+    },
+    "67": {
+      "name": "getBoneRotation",
+      "UID": "b0f91c4a-6184-42a6-97eb-d2b77ac39f44",
+      "target": "OWNER",
+      "NodeID": 67,
+      "boneName": "Root"
+    },
+    "86": {
+      "name": "stopSoundStr",
+      "UID": "9179514b-4b9a-4f6f-89d6-5819c3d2914d",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 86
+    },
+    "87": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7f8d2674-67c1-4081-8c87-f72065f11e6c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10212_Skill_SunBeam_Charge",
+      "NodeID": 87
+    },
+    "3": {
+      "UID": "0f7d49c8-ecad-4259-8f51-baf5279ae539",
+      "name": "setMask",
+      "mask": {
+        "canMove": 1,
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "88": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5c4dee51-66aa-4334-9eeb-2d2aff7b8b23",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10212_Skill_SunBeam_Attack",
+      "NodeID": 88
+    },
+    "71": {
+      "calcInfo": {
+        "instant_bp_add_ratio": {
+          "key": "Rate",
+          "key2": {
+            "UID": "fe10f5c5-9563-4db9-bbbe-16e686ff92a2",
+            "target": "TARGET",
+            "name": "getTargetId",
+            "NodeID": 144
+          },
+          "NodeID": 145,
+          "UID": "045dbe20-3dd5-46aa-913b-89f2c6978c88",
+          "name": "getAbilityCacheVal"
+        },
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "rValue": {
+              "key": "Rate",
+              "key2": {
+                "UID": "fe10f5c5-9563-4db9-bbbe-16e686ff92a2",
+                "target": "TARGET",
+                "name": "getTargetId",
+                "NodeID": 100
+              },
+              "NodeID": 101,
+              "UID": "045dbe20-3dd5-46aa-913b-89f2c6978c88",
+              "name": "getAbilityCacheVal"
+            },
+            "name": "add",
+            "UID": "30385a1d-08fb-4603-94e0-0b792fb08899",
+            "NodeID": 104,
+            "lValue": 1
+          },
+          "name": "multiply",
+          "UID": "c0035a27-bdc8-47d6-90cd-ab13bf8d2eb2",
+          "NodeID": 98,
+          "lValue": {
+            "calcId": 11620700,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 97,
+            "UID": "f31cfffc-0472-4fe3-85b6-94b9033fc2d2",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 1000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": 10301
+      },
+      "UID": "b1e967eb-3c5f-413c-875e-75679b16d43c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 71
+    },
+    "91": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "4a3bcb46-1fd3-449e-83c7-d28a0898d580",
+      "target": "OWNER",
+      "NodeID": 91
+    },
+    "92": {
+      "actionIds": [
+        91
+      ],
+      "conditionActionIds": [
+        94
+      ],
+      "UID": "8380a6bc-a8ba-4717-8b93-8081687e2103",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        93
+      ],
+      "NodeID": 92
+    },
+    "112": {
+      "duration": 0.45,
+      "name": "puppetPreCastAction",
+      "UID": "6becae09-5d0d-4880-914e-6682e4aed0d9",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 112
+    },
+    "93": {
+      "time": 3.3,
+      "rotateSpeed": 30,
+      "name": "rotateTo",
+      "UID": "64de8025-e5d7-47dd-9e16-40a551e12ed6",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 93
+    },
+    "111": {
+      "duration": 0.2,
+      "name": "puppetPreCastAction",
+      "UID": "20281940-a58c-4c3a-8d57-b1f4b6cac081",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 111
+    },
+    "94": {
+      "name": "isActorType",
+      "UID": "7867871e-ab93-4267-8312-01f285f899b1",
+      "target": "OWNER",
+      "NodeID": 94,
+      "actorType": 2
+    },
+    "110": {
+      "action": {
+        "actionIds": [
+          109
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 110,
+      "UID": "76d726cc-3e62-4a90-9b82-c16dda59bb7e"
+    },
+    "95": {
+      "name": "isActorType",
+      "UID": "7371c9b7-0ec0-4bdf-aac0-c01b2e46b13a",
+      "target": "OWNER",
+      "NodeID": 95,
+      "actorType": 2
+    },
+    "5": {
+      "UID": "b6cb29f5-df89-47d1-96f5-fcc000cf0cc7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          23,
+          92
+        ]
+      },
+      "NodeID": 5
+    },
+    "96": {
+      "name": "dropEffectStr",
+      "UID": "e604531f-7c20-41b7-87d5-6fe90bc09f9d",
+      "effectId": "Eff_Parmon_10162_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 96
+    },
+    "109": {
+      "actionIds": [
+        111
+      ],
+      "conditionActionIds": [
+        108
+      ],
+      "UID": "ce8680ff-fbd8-4f12-94e3-530b54d8f775",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        112
+      ],
+      "NodeID": 109
+    },
+    "97": {
+      "calcId": 11620700,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 97,
+      "UID": "f31cfffc-0472-4fe3-85b6-94b9033fc2d2",
+      "name": "getParamByLuaConfig"
+    },
+    "108": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "c4cd0075-04d7-47a2-96d6-6ff01210b5b8",
+      "target": "OWNER",
+      "NodeID": 108
+    },
+    "107": {
+      "calcId": 11620700,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 107,
+      "UID": "83b2426c-8693-4e29-af15-2895c2d191f4",
+      "name": "getParamByLuaConfig"
+    },
+    "103": {
+      "key": "Rate",
+      "key2": {
+        "UID": "fe10f5c5-9563-4db9-bbbe-16e686ff92a2",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 100
+      },
+      "NodeID": 103,
+      "UID": "e91e6978-71ec-43af-be66-8b1ef631fd71",
+      "value": {
+        "rValue": {
+          "calcId": 11620700,
+          "calcType": 2,
+          "paramName": "param1",
+          "NodeID": 107,
+          "UID": "83b2426c-8693-4e29-af15-2895c2d191f4",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "add",
+        "UID": "c42b65a7-d0d8-46dc-bfc5-dbe5f185d79f",
+        "NodeID": 102,
+        "lValue": {
+          "key": "Rate",
+          "key2": {
+            "UID": "fe10f5c5-9563-4db9-bbbe-16e686ff92a2",
+            "target": "TARGET",
+            "name": "getTargetId",
+            "NodeID": 100
+          },
+          "NodeID": 101,
+          "UID": "045dbe20-3dd5-46aa-913b-89f2c6978c88",
+          "name": "getAbilityCacheVal"
+        }
+      },
+      "name": "setAbilityCacheVal"
+    },
+    "89": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6016bcc-a968-4b89-981f-146d99613b49",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "NodeID": 89
+    },
+    "85": {
+      "action": {
+        "actionIds": [
+          83,
+          88,
+          89
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 85,
+      "UID": "3dc9a361-6c87-445e-be60-38c8b16a8948"
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.86,
+      "NodeID": 31,
+      "UID": "9dd98c90-44fc-4fe9-a834-79bdd9a90b55"
+    },
+    "81": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.1,
+        -0.2,
+        1
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "fd287492-ec66-4d0b-aa5d-b2cab5695afd",
+      "effectId": "Eff_Parmon_10162_Skill_SunBeam_XuLi",
+      "scale": 1,
+      "NodeID": 81
+    },
+    "63": {
+      "boxExtends": [
+        1.3,
+        2,
+        2
+      ],
+      "name": "actOnSweepTargets",
+      "UID": "6641aed3-63fb-4e8c-b560-1630c1226b93",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "rotationNodeId": 67,
+      "startPosNodeId": 62,
+      "sweepDistance": 8,
+      "hitCd": 0.2,
+      "relation": 2,
+      "needEcs": true,
+      "actionIds": [
+        71,
+        103
+      ],
+      "calcResultNodeId": 71,
+      "impulseId": 1000,
+      "NodeID": 63
+    },
+    "23": {
+      "UID": "1ff177cb-fb6b-4bb9-9d85-6fc6b78e9ef5",
+      "name": "enableFourWayMove",
+      "enable": true,
+      "NodeID": 23
+    },
+    "11": {
+      "UID": "9ca738ec-b06c-4ba5-b859-a464cd4fd375",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "4a0fbed5-b970-4b12-af4c-84e3e4b2f0e4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18,
+          81,
+          87
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "920da26c-3e98-4cca-80ad-d0d498187c96",
+      "name": "enableFourWayMove",
+      "enable": false,
+      "NodeID": 21
+    },
+    "22": {
+      "UID": "31a3b99f-2d19-45e4-ab11-63b88e168bf0",
+      "name": "enableFourWayMove",
+      "enable": false,
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "6eb4ecda-25df-4e07-a611-f8afecff2efb",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          96,
+          11,
+          22,
+          78,
+          86
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "79fd62ee-c070-432d-a085-c622ca38ee76",
+      "eventType": "Notify",
+      "time": 0.85,
+      "NodeID": 24
+    },
+    "37": {
+      "actionIds": [
+        36
+      ],
+      "aiTriggerTime": 1,
+      "notShowCountDown": false,
+      "overrideTagId": 51,
+      "time": 2.44,
+      "NodeID": 37,
+      "name": "registerRePressSkillSlot",
+      "onlyTriggerOnce": true,
+      "UID": "75369704-bb3c-41c8-b58e-7d061468e4a0"
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d6fac77f-6bdc-40a1-9f03-c4d79d0da5c9",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_MovingSweep_Charge"
+    },
+    "15": {
+      "UID": "3bc7b5c8-0f20-4987-9246-c41f165f3336",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 0
+      },
+      "NodeID": 15
+    },
+    "57": {
+      "UID": "a57312aa-b4d6-413e-8b9e-cdf925742537",
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 57
+    },
+    "28": {
+      "UID": "6a9db497-fdb3-4437-91f6-f68db958a6e1",
+      "eventType": "Notify",
+      "time": 3.2,
+      "NodeID": 28
+    },
+    "58": {
+      "UID": "8f9486c3-c3ec-44c8-a0ea-7507d8d7e1c0",
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 58
+    },
+    "77": {
+      "UID": "9e4677be-a18a-40bb-9a48-55762d2cfd52",
+      "eventType": "Notify",
+      "time": 0.05,
+      "NodeID": 77
+    },
+    "29": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bf55a08b-e32e-4dd7-bb1e-03aed139d4b5",
+      "target": "OWNER",
+      "NodeID": 29,
+      "animId": "Skill_MovingSweep_Charge_Hold"
+    },
+    "78": {
+      "name": "stopEffectStr",
+      "UID": "8636ae99-c992-48b5-9e62-57a56d196f4b",
+      "effectId": "Eff_Parmon_10162_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 78
+    },
+    "60": {
+      "UID": "c7f1d8b4-aef5-486d-883e-61df34f4a455",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 1,
+        "cancellable": 0
+      },
+      "NodeID": 60
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.58,
+      "NodeID": 17,
+      "UID": "9587f0af-04a1-4c6b-8599-a8b55af88c08"
+    },
+    "61": {
+      "action": {
+        "actionIds": [
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 61,
+      "UID": "7453c538-5af2-4d14-b46e-4ce49e911432"
+    },
+    "36": {
+      "timelineId": 11620700002,
+      "name": "jumpToNextTimeline",
+      "UID": "e7644251-0e39-4dc8-9abd-a090f76135ba",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11620700",
+  "NodeID": 7,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    5,
+    17,
+    13,
+    28,
+    20,
+    24,
+    40,
+    85,
+    31,
+    65,
+    39,
+    57,
+    58,
+    110,
+    77,
+    61
+  ],
+  "layer": "Base",
+  "length": 3.92
+}

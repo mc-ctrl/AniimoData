@@ -1,0 +1,80 @@
+{
+  "duration": 6,
+  "BPName": "timeline_2031002",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Heal_Drop_Fly",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "nodeMap": {
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Buff_Rogue_Heal_Drop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.1
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 4,
+        "id": 2031002
+      },
+      "UID": "11295a9a-b941-4d15-a877-07314530f735",
+      "target": "CURPET",
+      "name": "calcResult",
+      "NodeID": 17
+    },
+    "18": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "155c2486-5869-4b77-a013-2e112df6a6e0",
+      "effectId": "Eff_Buff_Rogue_Heal_Pickup",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "15": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 14
+      },
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "94e2b0e1-2243-453d-aad9-69a31ef23e87",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Heal_Drop",
+      "NodeID": 20
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    18,
+    17,
+    8,
+    20,
+    15
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 10
+}

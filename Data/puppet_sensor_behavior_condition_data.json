@@ -1,0 +1,461 @@
+{
+  "IsWildPet": {
+    "conditionType": "IsWildPet"
+  },
+  "LevelDeltaHigher": {
+    "conditionParam1": [
+      5,
+      10
+    ],
+    "conditionType": "LevelDelta"
+  },
+  "LevelDeltaLower": {
+    "conditionParam1": [
+      -10,
+      -5
+    ],
+    "conditionType": "LevelDelta"
+  },
+  "MoodValue": {
+    "conditionParam1": [
+      6000,
+      10000
+    ],
+    "conditionType": "MoodValue"
+  },
+  "Personality_Careful": {
+    "conditionParam1": [
+      8
+    ],
+    "conditionType": "Nature"
+  },
+  "Personality_Earnest": {
+    "conditionParam1": [
+      5
+    ],
+    "conditionType": "Nature"
+  },
+  "Personality_Impetuous": {
+    "conditionParam1": [
+      2
+    ],
+    "conditionType": "Nature"
+  },
+  "Personality_Indifferent": {
+    "conditionParam1": [
+      6
+    ],
+    "conditionType": "Nature"
+  },
+  "Personality_Mild": {
+    "conditionParam1": [
+      3
+    ],
+    "conditionType": "Nature"
+  },
+  "Personality_Outgoing": {
+    "conditionParam1": [
+      1
+    ],
+    "conditionType": "Nature"
+  },
+  "Personality_Sensitive": {
+    "conditionParam1": [
+      7
+    ],
+    "conditionType": "Nature"
+  },
+  "Personality_Steady": {
+    "conditionParam1": [
+      4
+    ],
+    "conditionType": "Nature"
+  },
+  "TakePhoto": {
+    "conditionType": "TakePhoto"
+  },
+  "TargetFOV_Forward": {
+    "conditionParam1": [
+      -10,
+      10
+    ],
+    "conditionType": "TargetFOV"
+  },
+  "TargetFOV_ForwardWide": {
+    "conditionParam1": [
+      -45,
+      45
+    ],
+    "conditionType": "TargetFOV"
+  },
+  "TargetFOV_Left": {
+    "conditionParam1": [
+      -180,
+      -45
+    ],
+    "conditionType": "TargetFOV"
+  },
+  "TargetFOV_Right": {
+    "conditionParam1": [
+      45,
+      180
+    ],
+    "conditionType": "TargetFOV"
+  },
+  "TargetPetIsDizzalos": {
+    "conditionParam1": [
+      1007200
+    ],
+    "conditionType": "TargetParmonID"
+  },
+  "TargetPetIsDizzill": {
+    "conditionParam1": [
+      1007100
+    ],
+    "conditionType": "TargetParmonID"
+  },
+  "TargetPetIsRipzor": {
+    "conditionParam1": [
+      10032
+    ],
+    "conditionType": "TargetParmonID"
+  },
+  "TargetPetIsStarly": {
+    "conditionParam1": [
+      101110111
+    ],
+    "conditionType": "TargetParmonID"
+  },
+  "TargetPetIsWolferno": {
+    "conditionParam1": [
+      10053
+    ],
+    "conditionType": "TargetParmonID"
+  },
+  "TargetPetType_All": {
+    "conditionParam1": [
+      "WildPet",
+      "FollowPet",
+      "PlayerControlledPet"
+    ],
+    "conditionType": "TargetPetType"
+  },
+  "TargetPetType_Wild_Follow": {
+    "conditionParam1": [
+      "WildPet",
+      "FollowPet"
+    ],
+    "conditionType": "TargetPetType"
+  },
+  "Touch": {
+    "conditionParam1": [
+      0.3
+    ],
+    "conditionType": "Touch"
+  },
+  "UseSkill": {
+    "conditionParam1": [
+      101101111
+    ],
+    "conditionType": "UseSkill"
+  },
+  "VisionValue_T1": {
+    "conditionParam1": [
+      5,
+      80
+    ],
+    "conditionType": "VisionValueRange"
+  },
+  "VisionValue_T2": {
+    "conditionParam1": [
+      80,
+      120
+    ],
+    "conditionType": "VisionValueRange"
+  },
+  "VisionValue_T3": {
+    "conditionParam1": [
+      120,
+      160
+    ],
+    "conditionType": "VisionValueRange"
+  },
+  "VisionValue_T4": {
+    "conditionParam1": [
+      5,
+      6400
+    ],
+    "conditionType": "VisionValueRange"
+  },
+  "VisionValue_T5": {
+    "conditionParam1": [
+      6300,
+      6400
+    ],
+    "conditionType": "VisionValueRange"
+  },
+  "Weather": {
+    "conditionParam1": [
+      "Rain"
+    ],
+    "conditionType": "Weather"
+  },
+  "AsControlledPet": {
+    "conditionType": "AsControlledPet"
+  },
+  "AsHuman": {
+    "conditionType": "AsHuman"
+  },
+  "AsStarly": {
+    "conditionParam1": [
+      101110111
+    ],
+    "conditionType": "AsControlledPet"
+  },
+  "AsWingenie": {
+    "conditionParam1": [
+      1008300
+    ],
+    "conditionType": "AsControlledPet"
+  },
+  "BodySizeGreaterThan_2m": {
+    "conditionParam1": [
+      2,
+      99
+    ],
+    "conditionType": "BodySize"
+  },
+  "CheckIsNotSneakInSand": {
+    "conditionParam1": [
+      0
+    ],
+    "conditionType": "CheckIsSneakInSand"
+  },
+  "CheckIsSneakInSand": {
+    "conditionParam1": [
+      1
+    ],
+    "conditionType": "CheckIsSneakInSand"
+  },
+  "CheckNearbyIronBox": {
+    "conditionParam1": [
+      23
+    ],
+    "conditionType": "AsEnvObj"
+  },
+  "CheckNearbyShell": {
+    "conditionParam1": [
+      102
+    ],
+    "conditionType": "AsEnvObj"
+  },
+  "CheckNearbyShellMeat": {
+    "conditionParam1": [
+      100
+    ],
+    "conditionType": "AsEnvObj"
+  },
+  "ChemStateIsAflame": {
+    "conditionParam1": [
+      "STATE_AFLAME_KEY"
+    ],
+    "conditionType": "TargetChemStateActive"
+  },
+  "ChemStateIsElectrice": {
+    "conditionParam1": [
+      "STATE_ELECTRIC_KEY"
+    ],
+    "conditionType": "TargetChemStateActive"
+  },
+  "ChemStateIsFrozen": {
+    "conditionParam1": [
+      "STATE_FROZEN_KEY"
+    ],
+    "conditionType": "TargetChemStateActive"
+  },
+  "ChemStateIsWet": {
+    "conditionParam1": [
+      "STATE_WET_KEY"
+    ],
+    "conditionType": "TargetChemStateActive"
+  },
+  "ConnectValue": {
+    "conditionParam1": [
+      6000,
+      10000
+    ],
+    "conditionType": "ConnectValue"
+  },
+  "Distance_0_10": {
+    "conditionParam1": [
+      0,
+      10
+    ],
+    "conditionType": "Distance"
+  },
+  "Distance_0_20": {
+    "conditionParam1": [
+      0,
+      20
+    ],
+    "conditionType": "Distance"
+  },
+  "Distance_0_30": {
+    "conditionParam1": [
+      0,
+      30
+    ],
+    "conditionType": "Distance"
+  },
+  "Distance_0_5": {
+    "conditionParam1": [
+      0,
+      5
+    ],
+    "conditionType": "Distance"
+  },
+  "Distance_10_30": {
+    "conditionParam1": [
+      10,
+      30
+    ],
+    "conditionType": "Distance"
+  },
+  "Distance_25_50": {
+    "conditionParam1": [
+      25,
+      50
+    ],
+    "conditionType": "Distance"
+  },
+  "ElementBody": {
+    "conditionParam1": [
+      "Grass"
+    ],
+    "conditionType": "ElementBody"
+  },
+  "FOV_Forward": {
+    "conditionParam1": [
+      -45,
+      45
+    ],
+    "conditionType": "FOV"
+  },
+  "FOV_Left": {
+    "conditionParam1": [
+      -180,
+      -45
+    ],
+    "conditionType": "FOV"
+  },
+  "FOV_Right": {
+    "conditionParam1": [
+      45,
+      180
+    ],
+    "conditionType": "FOV"
+  },
+  "Gender": {
+    "conditionParam1": [
+      "GENDER_TYPE_MALE"
+    ],
+    "conditionType": "Gender"
+  },
+  "HeightGreaterThan_1dot7m": {
+    "conditionParam1": [
+      1.7,
+      99
+    ],
+    "conditionType": "BodyHeight"
+  },
+  "HeightLowerThan_1dot7m": {
+    "conditionParam1": [
+      0,
+      1.7
+    ],
+    "conditionType": "BodyHeight"
+  },
+  "IsAsLaricander": {
+    "conditionParam1": [
+      1004300
+    ],
+    "conditionType": "AsControlledPet"
+  },
+  "IsAte": {
+    "conditionParam1": [
+      "Movement",
+      2
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsDance": {
+    "conditionParam1": [
+      "Skill",
+      5
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsDash": {
+    "conditionParam1": [
+      "Dash",
+      2
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsElectric": {
+    "conditionParam1": [
+      "Electric"
+    ],
+    "conditionType": "ElementBody"
+  },
+  "IsFollowPet": {
+    "conditionType": "IsFollowPet"
+  },
+  "IsHit": {
+    "conditionParam1": [
+      "Skill",
+      2
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsHoldBall": {
+    "conditionParam1": [
+      "HoldBall",
+      2
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsIdle": {
+    "conditionParam1": [
+      "Idle",
+      5
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsJumped": {
+    "conditionParam1": [
+      "Jump",
+      1
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsThrowBall": {
+    "conditionParam1": [
+      "ThrowBall",
+      2
+    ],
+    "conditionType": "AnimationState"
+  },
+  "IsUseSkill10530100": {
+    "conditionParam1": [
+      10530100
+    ],
+    "conditionType": "UseSkill"
+  },
+  "IsUseSkillicicle": {
+    "conditionParam1": [
+      10430420
+    ],
+    "conditionType": "UseSkill"
+  }
+}

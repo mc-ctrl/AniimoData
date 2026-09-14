@@ -1,0 +1,93 @@
+{
+  "angularIncreaseDuration": 0.5,
+  "BPName": "ability_10410003",
+  "defaultHitSoundType": "s",
+  "effectId": "Eff_Parmon_10041_Attack04_Bullet",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "trackingNoOffsetRotationRange": 5,
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    16
+  ],
+  "onProjectileHitIds": [
+    23,
+    27
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.5,
+  "nodeMap": {
+    "27": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "a3c582df-c124-42bd-9d40-ed19026b25f5",
+      "name": "doActionsByConditions",
+      "NodeID": 27
+    },
+    "23": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10410003,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "729793d2-aa06-4840-854f-f444f38c9d45",
+      "target": "TARGET",
+      "NodeID": 23,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30402,
+        "hitFrameFreezeId": -1,
+        "elementType": 3,
+        "impulseId": 2000
+      }
+    },
+    "28": {
+      "UID": "b5952aae-0b03-4aa6-8544-b62360720ffd",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 28
+    },
+    "16": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "e69f41af-f79b-4e48-9f0d-baa91e7f18fb",
+      "effectId": "Eff_Hit_Water_Blunt_Big",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "26": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.73
+      },
+      "name": "calcResult",
+      "UID": "6d1f38ed-ad8b-4b68-a237-b9681f0d3de7",
+      "target": "CASTER",
+      "NodeID": 26
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 1,
+  "calcResultNodeId": 23,
+  "impulseId": 2000,
+  "acceleration": 0
+}

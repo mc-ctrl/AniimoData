@@ -1,0 +1,349 @@
+{
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        3,
+        11
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "ab9e0aaf-ec0e-45ef-a0ef-a97db81c3b85",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "38": {
+      "UID": "e50e46f4-b8b7-4efe-ad0c-ac066891a653",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "70851be2-b11c-4fe3-9795-9455c52cbed2",
+      "target": "OWNER",
+      "NodeID": 39,
+      "animId": "Shield_Skill_SelfDestruct_Loop"
+    },
+    "6": {
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 6,
+      "UID": "ff1a4567-a371-4d72-aa80-f9755d7d4dc5"
+    },
+    "41": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d9b9e6fc-6bca-4711-a088-ae28821c370e",
+      "target": "OWNER",
+      "NodeID": 41,
+      "animId": "Shield_Skill_SelfDestruct_End"
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.5,
+      "NodeID": 42,
+      "UID": "9530d6cb-5b5a-4e5e-9a49-fbd5a859d70f"
+    },
+    "35": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 9.5,
+      "NodeID": 35,
+      "UID": "a02ed896-76a1-477d-9b3a-61f41f43c925",
+      "onUpdate": {
+        "actionIds": [
+          33,
+          48,
+          45
+        ]
+      },
+      "startTime": 0.5,
+      "onEnter": {
+        "actionIds": [
+          33,
+          48,
+          45
+        ]
+      }
+    },
+    "44": {
+      "name": "stopEffectStr",
+      "UID": "6b271d9c-2439-4182-a15e-ebfd44e02fe3",
+      "effectId": "Eff_Parmon_10207_Skill_NoiseWave_Rogue",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "31": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "182299be-6ea4-4dd6-9ab4-4ac80c9cdf82",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 31
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "61737315-f2e5-4f74-bc28-192512069905",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "21": {
+      "UID": "611a6570-dd65-478a-917c-4bd6d99d69dd",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          44,
+          19
+        ]
+      },
+      "NodeID": 21
+    },
+    "3": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "91f1c0cc-f50e-4c67-b3c2-c1f791b4e8e7",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 3
+    },
+    "23": {
+      "UID": "712103b3-62de-44de-bfcb-f5dc54058c90",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 1,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 23
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8da1dc66-3700-4723-8ac9-8905bbe76f19",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice_attack",
+      "NodeID": 45
+    },
+    "49": {
+      "duration": 9.5,
+      "name": "moveByDirection",
+      "UID": "b49ed16c-7d06-4a04-bf8f-fcdc1c78ae5d",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": true,
+      "velocity": [
+        0,
+        0,
+        5
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 49
+    },
+    "48": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "5d164e35-8215-4313-8e8a-7c4e99b98a90",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_Ice_H_Rogue",
+      "scale": 0.7,
+      "NodeID": 48
+    },
+    "15": {
+      "UID": "265791ae-c80a-45f8-b266-cdc670f24103",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23,
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 25,
+      "UID": "000c5417-28c8-4681-913d-2522681ca55e"
+    },
+    "43": {
+      "time": 9.5,
+      "rotateSpeed": 240,
+      "name": "rotateTo",
+      "UID": "102afdfe-9acb-4fcc-a06d-2c3eebc33026",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 43
+    },
+    "27": {
+      "UID": "f7c56889-7a3b-4bb9-8797-2d13c777a95d",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "47a90d7e-9357-4a3f-ae01-a8176d2db1ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          43
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.5,
+      "NodeID": 29,
+      "UID": "b0f1218f-f3db-42e1-bcf2-5301d315c3d5"
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 40,
+      "UID": "685023cc-4fbb-415e-8137-0a25a1be7713"
+    },
+    "37": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "79984ced-c88a-4e4f-b168-b8e2b48deba3",
+      "target": "OWNER",
+      "NodeID": 37,
+      "animId": "Shield_Skill_SelfDestruct_Start"
+    },
+    "33": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 31,
+      "NodeID": 33,
+      "UID": "125441d8-5dd9-4ead-a34f-9ae63e33c72b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            180,
+            1.7,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        31
+      ]
+    },
+    "12": {
+      "name": "isActorType",
+      "UID": "3e673f15-75ac-4af0-bcd9-e0ae5d86ea72",
+      "target": "OWNER",
+      "NodeID": 12,
+      "actorType": 3
+    },
+    "19": {
+      "UID": "b1fe044a-0725-4821-a759-19bfc38518af",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 19
+    }
+  },
+  "BPName": "ability_70010300",
+  "NodeID": 8,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    17,
+    25,
+    29,
+    21,
+    6,
+    38,
+    40,
+    42,
+    35
+  ],
+  "layer": "Base",
+  "length": 10
+}

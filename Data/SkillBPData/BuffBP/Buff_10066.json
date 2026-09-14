@@ -1,0 +1,222 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10066",
+  "NodeID": 1,
+  "UID": "51040902-e045-4bb2-8134-cb629b22d78a",
+  "tags": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "duration": 0.6,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 6,
+      "UID": "4c747102-f48f-42fa-95c1-4156168b5b26",
+      "name": "playRadialBlur"
+    },
+    "9": {
+      "name": "playHitEffect",
+      "UID": "7030ec60-18f2-4d77-ba4d-4464afb0bba7",
+      "target": "OWNER",
+      "NodeID": 9,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "06f19187-e37c-4cff-9fa7-f4e9f27f7b6e",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_ultimateskill_break_boss",
+      "NodeID": 11
+    },
+    "20": {
+      "buffId": 10064,
+      "name": "removeBuff",
+      "UID": "df888334-a685-4b4a-9abc-503757abcc8c",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "d831dcfb-8451-45b7-8f4f-1394b3946d9f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "22": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 10064,
+      "NodeID": 22,
+      "UID": "3573c581-b6bd-4232-8fc6-054411728ebc",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        16,
+        18,
+        11
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "4d5faab2-08fd-45d9-ba49-75b42a1da4a5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17,
+        2,
+        19
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 24,
+      "UID": "81e91eb7-24d6-4f1a-a363-5c7741596831",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "14": {
+      "key": "flyingState",
+      "name": "setServerCacheVal",
+      "UID": "78991820-beb4-4407-b5e3-b908760e7587",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 14
+    },
+    "28": {
+      "templateId": 1009207,
+      "name": "checkTargetTemplateId",
+      "UID": "4f5f89fd-16ee-4b83-9efe-e2936e5eca33",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "15": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "48a8f7c0-0678-4c87-86c9-9a3addc741f7",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "65a9aa3c-8885-4a19-b6c4-e78418504514",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 25
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ec24432a-f6a6-4232-8aaf-4da54b8aeb85",
+      "effectId": "Eff_Parmon_10023_Boss_ScreenUV",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "27": {
+      "buffId": 90207001,
+      "name": "removeBuff",
+      "UID": "8910acd8-f733-45a2-9f19-2bfcd96d6d61",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a23ca2a9-5c63-436b-a5c0-c0e27097bf9f",
+      "effectId": "Eff_Common_Battle_Break",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "29": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 90207001,
+      "NodeID": 29,
+      "UID": "56071267-168b-4ca1-b2fb-79c6eaed9898",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "keepTime": 1,
+      "target": "OWNER",
+      "outTime": 0.1,
+      "NodeID": 18,
+      "UID": "7ab84a84-ae34-49fc-adaf-1d151a0cf9d3",
+      "inTime": 0.1,
+      "name": "globalFreeze",
+      "freezeScale": 0.05
+    },
+    "26": {
+      "templateId": 1009207,
+      "name": "checkTargetTemplateId",
+      "UID": "45604449-99ef-47a2-974a-19059aa31c81",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6fed08ca-4758-4125-a604-c9061e20c357",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_ultimateskill_break",
+      "NodeID": 19
+    },
+    "2": {
+      "keepTime": 0.3,
+      "target": "OWNER",
+      "outTime": 0.1,
+      "NodeID": 2,
+      "UID": "da8421ff-55d1-4f3a-a2b4-ec1ef31fa042",
+      "inTime": 0.1,
+      "name": "globalFreeze",
+      "freezeScale": 0.05
+    },
+    "23": {
+      "actionIds": [
+        29
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "59156b46-dcac-4153-a617-a0da4aa55d4a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 23
+    }
+  },
+  "calcInfo": {
+    "crit_rate_dec_v": -1
+  },
+  "onBuffDestroyIds": [
+    23
+  ],
+  "onBuffStartIds": [
+    25,
+    21,
+    6,
+    14,
+    24,
+    9,
+    4
+  ]
+}

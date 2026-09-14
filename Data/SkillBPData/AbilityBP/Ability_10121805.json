@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_10121805",
+  "NodeID": 1,
+  "UID": "a3c64e5c-0569-423d-8db1-90e8cdb25b44",
+  "abilityParamId": 51012030,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "timelineId": 10121805001,
+      "name": "setCombatActionTimeline",
+      "UID": "271342e9-3940-4b18-bed8-eaba63ca304e",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicField",
+    "Skill_DropBackReturn"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10011_Skill_Gliding_Bullet",
+    "Eff_Hit_Psychic_Blunt",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+    "Eff_Parmon_10012_Mon_Skill_Warning_Boss",
+    "Eff_Parmon_10011_Skill_Gliding_Hit"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "isLeaveCombatClearCD": true,
+  "name": ""
+}

@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9123304",
+  "NodeID": 1,
+  "UID": "114d36ec-d014-4b0e-9769-3762fd267b3b",
+  "tags": [
+    10
+  ],
+  "transferGroup": 1,
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "MASTER",
+      "duration": -1,
+      "buffId": 2123303,
+      "NodeID": 5,
+      "UID": "1b1f6952-ac38-4965-80f4-437993d206dc",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "002567e2-9f1a-496e-a9bf-17237d0d3f90",
+      "effectId": "Eff_Parmon_Futternym_10233_Skill_Shadowcure_04",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "buffId": 2123303,
+      "name": "removeBuff",
+      "UID": "39c4519e-22a8-4528-9c3a-20683b66c296",
+      "target": "MASTER",
+      "NodeID": 7
+    },
+    "9": {
+      "buffId": 2123304,
+      "name": "removeBuff",
+      "UID": "987a00d3-8fdd-41d9-b264-edd88429c8c3",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7,
+    9,
+    10
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

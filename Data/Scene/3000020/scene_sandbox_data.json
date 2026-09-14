@@ -1,0 +1,25 @@
+{
+  "90843321": {
+    "owner": "guangling ",
+    "sandboxType": 3,
+    "chunk": 0,
+    "spawners": [
+      90843322
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "id": 90843321,
+    "sandBoxLevel": 0,
+    "markIconSpawnerId": 0,
+    "lastModifiedBy": "",
+    "position": [
+      -118.52,
+      141.71,
+      -553.94
+    ],
+    "name": "板块1草原_其他关卡_玫瑰塔林篝火元件",
+    "poiType": 503,
+    "enableFinishMark": false
+  }
+}

@@ -1,0 +1,1457 @@
+{
+  "503": {
+    "uiType": "PanelLayer",
+    "isServerSave": 1,
+    "resID": "$UI_Pb_Tower_Revival_Gameplay.prefab",
+    "fullScreen": true,
+    "timeStop": 1,
+    "module": "rogEventRevival",
+    "orderWidget": 1000
+  },
+  "508": {
+    "uiType": "PanelLayer",
+    "module": "rogEventVenture",
+    "isServerSave": 1,
+    "resID": "$UI_Pb_Tower_Venture_Capita.prefab"
+  },
+  "5119": {
+    "coin_Line": [
+      4,
+      2
+    ],
+    "module": "tradeMarketPetRemoveDetail"
+  },
+  "6000": {
+    "uiType": "PanelLayer",
+    "blockCommonQuit": true,
+    "hairLayerCount": 8,
+    "mobileHighQuality": true,
+    "uiSceneResId": "$P_Avatar_CreateRole_New_Scene.prefab",
+    "resID": "$UI_Pb_Avatar_Video.prefab",
+    "module": "createRoleTimeline",
+    "fullScreen": true
+  },
+  "1401": {
+    "blockCommonQuit": true,
+    "isServerSave": 1,
+    "resID": "$UI_Pb_Home_CampingCar_Name.prefab",
+    "module": "homeCarName",
+    "uiType": "PanelLayer"
+  },
+  "9004": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_PetBaptize.prefab",
+    "uiType": "PanelLayer",
+    "module": "petTransmog",
+    "mobileHighQuality": true
+  },
+  "105": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Photograph_Identification.prefab",
+    "module": "photoIdentify",
+    "orderWidget": 1000
+  },
+  "99": {
+    "uiType": "PanelLayer",
+    "fullScreen": true,
+    "mobileHighQuality": true,
+    "resID": "$UI_Pb_Avatar_Panel.prefab",
+    "timeStop": 1,
+    "module": "appearance",
+    "orderWidget": 1000
+  },
+  "505": {
+    "uiType": "PopupLayer",
+    "module": "levelBreakthroughResult",
+    "resID": "$UI_Pb_Popup_LevelBreakthrough.prefab"
+  },
+  "506": {
+    "uiType": "PopupLayer",
+    "module": "levelBreakthroughTip",
+    "resID": "$UI_Pb_Popup_ReplaceProps.prefab"
+  },
+  "416": {
+    "fullScreen": true,
+    "resID": "$UI_Node_Home_FurnitureStore.prefab",
+    "coin_Line": [
+      1010,
+      1011
+    ],
+    "module": "homelandFurnitureStore",
+    "uiType": "PanelLayer"
+  },
+  "7": {
+    "uiType": "PanelLayer",
+    "openAudio": "ui_sfx_photo_open",
+    "resID": "$UI_Prefab_Photograph.prefab",
+    "closeAudio": "ui_sfx_photo_close",
+    "isModel": false,
+    "lockCursor": true,
+    "module": "photo",
+    "orderWidget": 1000
+  },
+  "504": {
+    "uiType": "PopupLayer",
+    "module": "levelBreakthrough",
+    "resID": "$UI_Pb_PopUp_Upggrade_New.prefab"
+  },
+  "9": {
+    "uiType": "SceneLayer",
+    "resID": "$UI_Prefab_Damage_Number_Panel.prefab",
+    "module": "damageNumber",
+    "ignore": true
+  },
+  "58": {
+    "resID": "$UI_Pb_PVP.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "pvpBattle",
+    "orderWidget": 11
+  },
+  "11": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Report.prefab",
+    "uiType": "PopupLayer",
+    "module": "reporter",
+    "enableMainCamera": 1
+  },
+  "61": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_PVP_PetManage.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "pvpPetSet",
+    "orderWidget": 1000
+  },
+  "62": {
+    "uiType": "InfosLayer",
+    "resID": "$UI_Pb_Config.prefab",
+    "module": "config",
+    "orderWidget": 100
+  },
+  "63": {
+    "resID": "$UI_Pb_Config_Favorite.prefab",
+    "uiType": "InfosLayer",
+    "ignore": true,
+    "module": "configTopping",
+    "orderWidget": 11
+  },
+  "64": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_PVP_Choose.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "pvpChose",
+    "orderWidget": 1000
+  },
+  "65": {
+    "uiType": "InfosLayer",
+    "module": "pvpLoading",
+    "lockCursor": true,
+    "resID": "$UI_Pb_PVP_Loading.prefab"
+  },
+  "66": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Pb_Setting.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "setting",
+    "orderWidget": 1000
+  },
+  "67": {
+    "uiType": "InfosLayer",
+    "module": "gameCutToBlack",
+    "lockCursor": true,
+    "resID": "$UI_Pb_CutTo.prefab"
+  },
+  "68": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Setting_Brilliance.prefab",
+    "module": "settingOperation",
+    "orderWidget": 1000
+  },
+  "69": {
+    "openAudio": "SFX_UI_HUD_OptionMenu_Open",
+    "fxAA": true,
+    "resID": "$UI_Pb_FunMenu.prefab",
+    "uiType": "PanelLayer",
+    "module": "funcMenu",
+    "orderWidget": 1000
+  },
+  "70": {
+    "isModel": true,
+    "uiType": "SceneLayer",
+    "module": "picture",
+    "resID": "$UI_Pb_Image.prefab"
+  },
+  "71": {
+    "uiType": "PopupLayer",
+    "module": "replaceSkillPvp",
+    "resID": "$UI_Node_PetManage_ChangeSkill.prefab"
+  },
+  "17": {
+    "syncLoad": true,
+    "resID": "$UI_Loading_Panel.prefab",
+    "uiType": "InfosLayer",
+    "isPermanent": true,
+    "module": "loadProgress",
+    "orderWidget": 99
+  },
+  "73": {
+    "blockCommonQuit": true,
+    "resID": "$UI_Pb_ChatPanel.prefab",
+    "uiType": "PanelLayer",
+    "module": "chat",
+    "orderWidget": 1000
+  },
+  "18": {
+    "uiType": "SceneLayer",
+    "lockCursor": true,
+    "isModel": true,
+    "resID": "$UI_Pb_Dialogue.prefab",
+    "coin_Line": [
+      1,
+      2
+    ],
+    "params": [
+      80290249
+    ],
+    "module": "dialogue",
+    "orderWidget": 10
+  },
+  "75": {
+    "uiType": "PopupLayer",
+    "module": "playerCard",
+    "resID": "$UI_Pb_PlayerCard.prefab"
+  },
+  "76": {
+    "uiType": "PanelLayer",
+    "fullScreen": true,
+    "mobileHighQuality": true,
+    "resID": "$UI_Pb_Avatar_PinchFace_Entrance.prefab",
+    "timeStop": 1,
+    "module": "avatarMain",
+    "orderWidget": 1000
+  },
+  "77": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Setting_KeyReplace.prefab",
+    "module": "settingKeyReplace",
+    "orderWidget": 1000
+  },
+  "80": {
+    "uiType": "PopupLayer",
+    "module": "itemViewPopup",
+    "resID": "$UI_Pb_Inventory_ToolStory.prefab"
+  },
+  "79": {
+    "uiType": "InfosLayer",
+    "module": "dialogueDialog",
+    "resID": "$UI_Pb_Dialogue.prefab"
+  },
+  "81": {
+    "uiType": "PopupLayer",
+    "module": "friendInviteList",
+    "resID": "$UI_Pb_Popup_FriendInvent.prefab"
+  },
+  "82": {
+    "uiType": "InfosLayer",
+    "module": "pvpFloatingWnd",
+    "lockCursor": true,
+    "resID": "$UI_Pb_Matching.prefab"
+  },
+  "83": {
+    "resID": "$UI_Pb_TeamRoom.prefab",
+    "uiType": "PanelLayer",
+    "mobileHighQuality": true,
+    "module": "teamRoom",
+    "orderWidget": 1000
+  },
+  "84": {
+    "uiType": "PopupLayer",
+    "timeStop": 1,
+    "module": "countryIll",
+    "resID": "$UI_Pb_PetManual_Country.prefab"
+  },
+  "85": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_PetManual.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "petResearch",
+    "orderWidget": 1000
+  },
+  "86": {
+    "uiType": "InfosLayer",
+    "syncLoad": true,
+    "enableMainCamera": 1,
+    "resID": "$UI_Pb_BlackScreen.prefab",
+    "isModel": true,
+    "fullScreen": true,
+    "module": "blackScreen",
+    "orderWidget": 98
+  },
+  "89": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Pb_PetManage.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "petManagement",
+    "orderWidget": 1000
+  },
+  "90": {
+    "uiType": "PopupLayer",
+    "module": "petManagementFilter",
+    "resID": "$UI_Pop_PetManage_Filter.prefab"
+  },
+  "91": {
+    "uiType": "PopupLayer",
+    "module": "petResearchProgressReward",
+    "resID": "$UI_Pb_PetResearch_ProgressReward.prefab"
+  },
+  "502": {
+    "uiType": "PanelLayer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_Tower_SelectLevel.prefab",
+    "bgm": "BGM_Rogue_EnterUI",
+    "timeStop": 1,
+    "module": "rogLevelSelect",
+    "orderWidget": 1000
+  },
+  "93": {
+    "isServerSave": 1,
+    "resID": "$UI_Pb_PetManual_Evolve.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "petEvolveBranchSelect",
+    "orderWidget": 1000
+  },
+  "94": {
+    "uiType": "PopupLayer",
+    "module": "commonLongPopup",
+    "resID": "$UI_Popup_Long.prefab"
+  },
+  "95": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Reborn_New.prefab",
+    "module": "deadPanel",
+    "orderWidget": 1000
+  },
+  "96": {
+    "uiType": "PopupLayer",
+    "module": "pvpReplaceFeature",
+    "resID": "$UI_Node_PetManage_PVPSkill.prefab"
+  },
+  "97": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Manual_Evolve_PetShow.prefab",
+    "module": "petEvolvePetShow",
+    "orderWidget": 1000
+  },
+  "98": {
+    "resID": "$UI_Pb_AiCommunicate_Dialogue.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "npcCall",
+    "orderWidget": 10
+  },
+  "107": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Avatar_Panel_Outfit.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "appearanceOutfit",
+    "orderWidget": 1000
+  },
+  "108": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "uiType": "PanelLayer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_Tower_Main.prefab",
+    "isServerSave": 1,
+    "timeStop": 1,
+    "module": "towerMain",
+    "orderWidget": 1000
+  },
+  "109": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Tower_BuffDetail.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "towerBuffDetail",
+    "orderWidget": 1000
+  },
+  "110": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Tower_StageInfo.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "towerStageInfo",
+    "orderWidget": 1000
+  },
+  "113": {
+    "uiType": "PopupLayer",
+    "module": "towerFinal",
+    "resID": "$UI_Pb_Tower_Final.prefab"
+  },
+  "116": {
+    "blockCommonQuit": true,
+    "resID": "$UI_Pb_AiCommunicate_Projection.prefab",
+    "isModel": true,
+    "module": "plotPhoneCall",
+    "uiType": "SceneLayer"
+  },
+  "117": {
+    "uiType": "InfosLayer",
+    "enableMainCamera": 1,
+    "resID": "$UI_Pb_HUD_DialogueReview.prefab",
+    "isModel": true,
+    "fullScreen": true,
+    "module": "dialogReview",
+    "orderWidget": 9002
+  },
+  "122": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Pb_PetManual_Album.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "photo",
+    "orderWidget": 1000
+  },
+  "118": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Avatar_Color_Picker.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "colorPicker",
+    "orderWidget": 1000
+  },
+  "119": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Avatar_PinchFace_Preview.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "avatarPreview",
+    "orderWidget": 1000
+  },
+  "121": {
+    "MutexDisplay": true,
+    "resID": "$UI_Pb_Quest_ChapterAppearPanel.prefab",
+    "uiType": "InfosLayer",
+    "module": "questChapter",
+    "ignore": true
+  },
+  "128": {
+    "uiType": "PanelLayer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_TimeSwitch.prefab",
+    "enableMainCamera": 1,
+    "timeStop": 1,
+    "module": "timeSwitch",
+    "orderWidget": 1000
+  },
+  "130": {
+    "blockCommonQuit": true,
+    "resID": "$UI_Node_Guide_Plot.prefab",
+    "uiType": "SceneLayer",
+    "lockCursor": true,
+    "module": "aiAssistant",
+    "orderWidget": 10
+  },
+  "131": {
+    "uiType": "PanelLayer",
+    "module": "QuestVlog",
+    "fullScreen": true,
+    "resID": "$UI_Pb_VlogShow.prefab"
+  },
+  "133": {
+    "fxAA": true,
+    "resID": "$UI_Pb_Shop_Poster.prefab",
+    "uiType": "PanelLayer",
+    "module": "shopPoster",
+    "orderWidget": 1000
+  },
+  "180": {
+    "blockCommonQuit": true,
+    "enableMainCamera": 1,
+    "resID": "$UI_Pb_LiveStreaming.prefab",
+    "uiType": "PanelLayer",
+    "module": "LiveStreaming",
+    "fullScreen": true
+  },
+  "181": {
+    "uiType": "PanelLayer",
+    "module": "QuestSceneChoice",
+    "resID": "$UI_Pb_SceneChoice.prefab"
+  },
+  "182": {
+    "uiType": "PanelLayer",
+    "module": "QuestNaturalChoice",
+    "resID": "$UI_3D_NatureQuestion.prefab"
+  },
+  "184": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_WhiteScreen.prefab",
+    "isModel": true,
+    "timeStop": 1,
+    "module": "whiteScreen",
+    "orderWidget": 98,
+    "syncLoad": true,
+    "uiType": "InfosLayer",
+    "enableMainCamera": 1
+  },
+  "190": {
+    "uiType": "PanelLayer",
+    "module": "itemViewer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_ItemView.prefab"
+  },
+  "191": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_TotemWorship.prefab",
+    "module": "totemWorship",
+    "orderWidget": 1000
+  },
+  "192": {
+    "resID": "$UI_Pb_Hud_Vehicle.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "VehicleInteration",
+    "orderWidget": 10
+  },
+  "193": {
+    "uiType": "PANEL_LAYER",
+    "module": "PiecesItemTip",
+    "fullScreen": true,
+    "resID": "$UI_Pb_FragmentInfo.prefab"
+  },
+  "47": {
+    "resID": "$UI_Prefab_Hud_BigWhiteBallCtr.prefab",
+    "uiType": "SceneLayer",
+    "lockCursor": true,
+    "module": "bigWhiteBall",
+    "orderWidget": 12
+  },
+  "48": {
+    "resID": "$UI_Pb_Training.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "training",
+    "orderWidget": 12
+  },
+  "49": {
+    "resID": "$UI_Pb_PetChat.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "petChat",
+    "orderWidget": 10
+  },
+  "51": {
+    "resID": "$UI_Pb_Hud_Offline.prefab",
+    "uiType": "SceneLayer",
+    "lockCursor": true,
+    "module": "hudOffline",
+    "orderWidget": 10
+  },
+  "52": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Avatar_PinchFace.prefab",
+    "coin_Line": [
+      1,
+      2
+    ],
+    "timeStop": 1,
+    "module": "avatar",
+    "orderWidget": 1000,
+    "mobileHighQuality": true,
+    "uiType": "PanelLayer",
+    "isServerSave": 1
+  },
+  "148": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Pb_Event.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "event",
+    "orderWidget": 1000
+  },
+  "53": {
+    "resID": "$UI_Tips_BuffInfo.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "commonBuffInfoTip",
+    "orderWidget": 10
+  },
+  "54": {
+    "openAudio": "SFX_UI_HUD_OptionMenu_Open",
+    "resID": "$UI_Node_Hud_Function_Console.prefab",
+    "uiType": "PanelLayer",
+    "module": "gamepadMenu",
+    "orderWidget": 1000
+  },
+  "225": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Avatar_Accessories_Common.prefab",
+    "fullScreen": true,
+    "mobileHighQuality": true,
+    "coin_Line": [
+      1,
+      2,
+      3
+    ],
+    "timeStop": 1,
+    "module": "appearanceV2",
+    "orderWidget": 1000
+  },
+  "230": {
+    "openAudio": "SFX_UI_HUD_OptionMenu_Open",
+    "resID": "$UI_Pb_Hud_Function_Wheel_Console.prefab",
+    "uiType": "PanelLayer",
+    "module": "gamepadMenuNew",
+    "orderWidget": 1000
+  },
+  "60": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_PVP_Main.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "pvpMenu",
+    "orderWidget": 1000
+  },
+  "520": {
+    "uiType": "PanelLayer",
+    "module": "createPlayerRename",
+    "isServerSave": 1,
+    "resID": "$UI_Pb_InputName.prefab"
+  },
+  "235": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "blockCommonQuit": true,
+    "enableMainCamera": 1,
+    "resID": "$UI_Pb_Train_MainPanel.prefab",
+    "timeStop": 1,
+    "module": "SpecialTrainNew",
+    "orderWidget": 10,
+    "uiType": "PanelLayer",
+    "fullScreen": true
+  },
+  "522": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Answer.prefab",
+    "module": "quiz",
+    "orderWidget": 1000
+  },
+  "5118": {
+    "coin_Line": [
+      4,
+      2
+    ],
+    "module": "tradeMarketPetSellDetail"
+  },
+  "5117": {
+    "module": "tradeMarketHistoryPet"
+  },
+  "523": {
+    "uiType": "PopupLayer",
+    "module": "petManagementTidyUp",
+    "resID": "$UI_Pop_PetManage_Box.prefab"
+  },
+  "240": {
+    "uiType": "InfosLayer",
+    "module": "racingDungeon",
+    "lockCursor": true,
+    "resID": "$UI_Pb_RacingDungeon_New.prefab"
+  },
+  "72": {
+    "uiType": "PopupLayer",
+    "blockCommonQuit": true,
+    "module": "pvpReward",
+    "resID": "$UI_Pb_PVP_Result.prefab"
+  },
+  "102": {
+    "uiType": "PopupLayer",
+    "module": "dungeonInvitePopup",
+    "resID": "$UI_Pb_Popup_TeamInvent.prefab"
+  },
+  "114": {
+    "isServerSave": 1,
+    "resID": "$UI_Pb_PetSelection.prefab",
+    "uiType": "PanelLayer",
+    "module": "petSelectionPanel",
+    "orderWidget": 1000
+  },
+  "5111": {
+    "coin_Line": [
+      4
+    ],
+    "module": "tradeMarketPetBuyDetail"
+  },
+  "55": {
+    "openAudio": "SFX_UI_10431Rhythm_Start",
+    "resID": "$UI_Pb_RacingDungeon_New.prefab",
+    "uiType": "PanelLayer",
+    "module": "gameCountTime",
+    "lockCursor": true
+  },
+  "1655": {
+    "module": "SeasonHeadTips"
+  },
+  "1653": {
+    "module": "seasonAchievement"
+  },
+  "1652": {
+    "module": "seasonCalendar"
+  },
+  "1651": {
+    "coin_Line": [
+      1013
+    ],
+    "module": "seasonShop"
+  },
+  "1650": {
+    "module": "SeasonLobby"
+  },
+  "200": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Function_Unlock.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "funcMenuUnlock",
+    "orderWidget": 1000
+  },
+  "1617": {
+    "module": "battlepass"
+  },
+  "1612": {
+    "uiType": "PanelLayer",
+    "module": "battlepass",
+    "fullScreen": true,
+    "resID": "$UI_Pb_BP_Permit.prefab"
+  },
+  "1600": {
+    "module": "CASHSHOP",
+    "mobileHighQuality": true
+  },
+  "328": {
+    "uiType": "InfosLayer",
+    "blockCommonQuit": true,
+    "enableMainCamera": 1,
+    "resID": "$UI_Loading_Show.prefab",
+    "syncLoad": true,
+    "fullScreen": true,
+    "module": "loadingShow",
+    "orderWidget": 99
+  },
+  "1113": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Pb_InfoPlayer_Main.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "infoPlayer",
+    "orderWidget": 1000
+  },
+  "1024": {
+    "uiType": "PopupLayer",
+    "MutexDisplay": 1,
+    "fullScreen": true,
+    "ignore": true,
+    "isModel": true,
+    "timeStop": 1,
+    "module": "vitalityRedeem",
+    "resID": "$UI_Pb_Popup_HomeManufacture.prefab"
+  },
+  "1023": {
+    "uiType": "PopupLayer",
+    "MutexDisplay": 1,
+    "fullScreen": true,
+    "ignore": true,
+    "isModel": true,
+    "timeStop": 1,
+    "module": "vitalityGot",
+    "resID": "$UI_Pb_Pop_EnergySupplement.prefab"
+  },
+  "1022": {
+    "uiType": "PanelLayer",
+    "MutexDisplay": 1,
+    "fullScreen": true,
+    "ignore": true,
+    "isModel": true,
+    "timeStop": 1,
+    "module": "vitalityV0",
+    "resID": "$UI_Pb_Pop_EnergySystem.prefab"
+  },
+  "1020": {
+    "uiType": "PopupLayer",
+    "MutexDisplay": 1,
+    "fullScreen": true,
+    "ignore": true,
+    "isModel": true,
+    "timeStop": 1,
+    "module": "debugVitality",
+    "resID": "$UI_Pb_Popup_VitalityValue.prefab"
+  },
+  "112": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Tower_Result_Lose.prefab",
+    "module": "towerDefeat",
+    "orderWidget": 1000
+  },
+  "314": {
+    "resID": "$UI_Pb_PetManagement_Cultivate.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "petTrainingNew",
+    "orderWidget": 1000
+  },
+  "21": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "openAudio": "ui_sfx_map_open",
+    "fullScreen": true,
+    "closeAudio": "ui_sfx_map_close",
+    "coin_Line": [
+      1009
+    ],
+    "timeStop": 1,
+    "module": "map",
+    "orderWidget": 1000,
+    "uiType": "PanelLayer",
+    "resID": "$UI_Prefab_WorldMap.prefab"
+  },
+  "22": {
+    "uiType": "PopupLayer",
+    "module": "replaceSkill",
+    "resID": "$UI_Node_PetManage_ChangeSkill.prefab"
+  },
+  "23": {
+    "resID": "$UI_Prefab_Qte_Panel.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "qte",
+    "orderWidget": 11
+  },
+  "24": {
+    "uiType": "PopupLayer",
+    "module": "skillPopup",
+    "resID": "$UI_Node_Skill_InfoTip.prefab"
+  },
+  "801": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_BagSort.prefab",
+    "coin_Line": [
+      1014
+    ],
+    "timeStop": 1,
+    "module": "grabEggBag",
+    "uiType": "PanelLayer"
+  },
+  "754": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Pb_Event_SchhoolGuide.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "schoolGuide",
+    "orderWidget": 1000
+  },
+  "526": {
+    "uiType": "PopupLayer",
+    "module": "mapLocation",
+    "resID": "$UI_Node_MapLocInput.prefab"
+  },
+  "25": {
+    "openAudio": "ui_sfx_toy_ball_open",
+    "closeAudio": "ui_sfx_toy_ball_close",
+    "uiType": "PanelLayer",
+    "resID": "$UI_Prefab_PetBall_Panel.prefab",
+    "module": "petBall",
+    "orderWidget": 1000
+  },
+  "26": {
+    "addBlackChange": [
+      0.1,
+      1.2
+    ],
+    "openAudio": "ui_sfx_strengthen_open",
+    "closeAudio": "ui_sfx_strengthen_close",
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Personal.prefab",
+    "module": "playerEnhance",
+    "orderWidget": 1000
+  },
+  "27": {
+    "resID": "$UI_Node_HUD_HP_BOSS.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "bossTitle",
+    "orderWidget": 1
+  },
+  "28": {
+    "MutexDisplay": true,
+    "resID": "$UI_Pb_ObtainPanel.prefab",
+    "timeStop": 1,
+    "module": "itemObtain",
+    "uiType": "PopupLayer"
+  },
+  "29": {
+    "fullScreen": true,
+    "resID": "$UI_Prefab_Shop_Panel.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "shop",
+    "orderWidget": 1000
+  },
+  "525": {
+    "uiType": "PopupLayer",
+    "module": "petManagementReleaseReviewConfirm",
+    "resID": "$UI_Pop_PetRelease_Confirm.prefab"
+  },
+  "404": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Home_Market.prefab",
+    "coin_Line": [
+      1010,
+      1011
+    ],
+    "module": "homelandMarket",
+    "uiType": "PanelLayer"
+  },
+  "288": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Knowledge.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "knowledgeEntrance",
+    "bgm": "BGM_System_Knowledge"
+  },
+  "34": {
+    "resID": "$UI_Common_PropInfo.prefab",
+    "uiType": "InfosLayer",
+    "ignore": true,
+    "module": "commonItemTip",
+    "orderWidget": 98
+  },
+  "36": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Panel_Quest.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "quest",
+    "orderWidget": 1000
+  },
+  "46": {
+    "resID": "$UI_Pb_Arrow_Danger.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "hatredArrowTip",
+    "orderWidget": -10
+  },
+  "38": {
+    "resID": "$UI_Pb_Interaction.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "interact",
+    "orderWidget": 11
+  },
+  "90010": {
+    "uiType": "PanelLayer",
+    "module": "battlepass",
+    "fullScreen": true,
+    "resID": "$UI_Pb_BP_Permit.prefab"
+  },
+  "40": {
+    "uiType": "InfosLayer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_VideoPlayer.prefab",
+    "isModel": true,
+    "timeStop": 1,
+    "module": "video",
+    "orderWidget": 100
+  },
+  "41": {
+    "uiType": "PopupLayer",
+    "module": "makeSkill",
+    "resID": "$UI_Pb_PetManagent_Tip_MakeSkill.prefab"
+  },
+  "42": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Prefab_Help.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "help",
+    "orderWidget": 1000
+  },
+  "43": {
+    "uiType": "PopupLayer",
+    "MutexDisplay": 1,
+    "module": "commonUseConfirm",
+    "resID": "$UI_Pb_Common_Tip_Use.prefab"
+  },
+  "44": {
+    "uiType": "PopupLayer",
+    "MutexDisplay": 1,
+    "module": "commonSelectUse",
+    "resID": "$UI_Pb_PopUp_Upggrade_New.prefab"
+  },
+  "524": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_PetManage_ViewRelease.prefab",
+    "module": "petManagementReleaseReview",
+    "orderWidget": 1000
+  },
+  "500": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Tower_Unlock_Transformation.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "rogUltimateUnlock",
+    "orderWidget": 1000
+  },
+  "263": {
+    "uiType": "InfosLayer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_Dialogue_Skip.prefab",
+    "enableMainCamera": 1,
+    "timeStop": 1,
+    "module": "dialogueSkip",
+    "orderWidget": 2000
+  },
+  "123": {
+    "uiType": "InfosLayer",
+    "lockCursor": true,
+    "fullScreen": true,
+    "ignore": true,
+    "resID": "$UI_Pb_BlackScreen_DragonBus.prefab",
+    "timeStop": 1,
+    "module": "dragonBusBlackScreen",
+    "orderWidget": 1001
+  },
+  "125": {
+    "uiType": "PopupLayer",
+    "module": "petTeamQuickSwitch",
+    "resID": "$UI_Pb_Hud_Mate_Team_Console.prefab"
+  },
+  "126": {
+    "uiType": "PopupLayer",
+    "module": "firstPetShow",
+    "fullScreen": true,
+    "resID": "$UI_Pb_Hud_PetFirst.prefab"
+  },
+  "1": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Login_Panel.prefab",
+    "uiType": "PanelLayer",
+    "module": "login",
+    "orderWidget": 1000
+  },
+  "135": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "uiType": "PanelLayer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_Map_LeylinesTree_New.prefab",
+    "coin_Line": [
+      540500
+    ],
+    "timeStop": 1,
+    "module": "leylineTree",
+    "orderWidget": 1000
+  },
+  "3": {
+    "syncLoad": true,
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "resID": "$UI_Prefab_Toplogo_Panel.prefab",
+    "isPermanent": true,
+    "module": "topLogo",
+    "orderWidget": -1
+  },
+  "4": {
+    "resID": "$UI_Pb_TipsGene_Frame.prefab",
+    "uiType": "InfosLayer",
+    "ignore": true,
+    "module": "tips",
+    "orderWidget": 999
+  },
+  "501": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Tower_Unlock_Prompt.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "rogUltimateUpgrade",
+    "orderWidget": 1000
+  },
+  "1400": {
+    "uiType": "PanelLayer",
+    "blockCommonQuit": true,
+    "fullScreen": true,
+    "resID": "$UI_Pb_Home_CampingCar_Create.prefab",
+    "uiSceneResId": "$P_RV_Scene.prefab",
+    "uiSceneName": "HomeCarScene",
+    "module": "homeCarModify",
+    "isServerSave": 1
+  },
+  "101": {
+    "uiType": "PanelLayer",
+    "fullScreen": true,
+    "resID": "$UI_Pb_GameDungeonInfo.prefab",
+    "coin_Line": [
+      1,
+      2
+    ],
+    "timeStop": 1,
+    "module": "gameDungeonInfo",
+    "orderWidget": 1000
+  },
+  "806": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_GameMod_GrabEggs_Copy.prefab",
+    "timeStop": 1,
+    "module": "grabEggsMode",
+    "uiType": "PanelLayer"
+  },
+  "100": {
+    "uiType": "InfosLayer",
+    "module": "petLevelUp",
+    "resID": "$UI_Pb_Popup_Levelup_New.prefab"
+  },
+  "301": {
+    "uiType": "SceneLayer",
+    "resID": "$UI_Pb_MarkShare_Bubble.prefab",
+    "module": "markShareBubble",
+    "ignore": true
+  },
+  "45": {
+    "uiType": "InfosLayer",
+    "resID": "$UI_Pb_Buff_Tips.prefab",
+    "module": "buffTips",
+    "ignore": true
+  },
+  "271": {
+    "resID": "$UI_Pb_PetManagement_PetProperty.prefab",
+    "uiType": "PopupLayer",
+    "timeStop": 1,
+    "module": "petProperty",
+    "orderWidget": 1000
+  },
+  "290": {
+    "uiType": "PopupLayer",
+    "bgm": "BGM_System_Knowledge",
+    "fullScreen": true,
+    "resID": "$UI_Popup_Knowledge_Image.prefab",
+    "isModel": true,
+    "timeStop": 1,
+    "module": "knowledgePopup",
+    "orderWidget": 1100
+  },
+  "147": {
+    "addBlackChange": [
+      0.1,
+      0.3
+    ],
+    "fullScreen": true,
+    "resID": "$UI_Pb_ElectronicManual_New.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "electronicManual",
+    "orderWidget": 1000
+  },
+  "272": {
+    "uiType": "InfosLayer",
+    "timeStop": 1,
+    "module": "petSwitchSkillPreset",
+    "resID": "$UI_Pb_PetManagement_SkillGroup.prefab"
+  },
+  "150": {
+    "syncLoad": true,
+    "resID": "$UI_Pb_GuidePanel.prefab",
+    "uiType": "InfosLayer",
+    "ignore": true,
+    "module": "guidePanel",
+    "orderWidget": 1000
+  },
+  "151": {
+    "MutexDisplay": true,
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_GuidePanel_SliderL.prefab",
+    "isModel": true,
+    "timeStop": 1,
+    "module": "guidePopupPanel",
+    "orderWidget": 1000
+  },
+  "273": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_PetManagement_SkillPanel.prefab",
+    "coin_Line": [
+      [
+        2
+      ]
+    ],
+    "timeStop": 1,
+    "module": "petSkill",
+    "orderWidget": 1000
+  },
+  "289": {
+    "uiType": "PanelLayer",
+    "bgm": "BGM_System_Knowledge",
+    "fullScreen": true,
+    "resID": "$UI_Pb_Knowledge_Details.prefab",
+    "isModel": true,
+    "timeStop": 1,
+    "module": "knowledgeDetail",
+    "orderWidget": 1000
+  },
+  "277": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Popup_GameAnnouncement.prefab",
+    "timeStop": 1,
+    "module": "announcement",
+    "uiType": "PopupLayer"
+  },
+  "276": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_GuideBeginner.prefab",
+    "uiType": "PanelLayer",
+    "module": "questCourse",
+    "bgm": "BGM_System_Course"
+  },
+  "274": {
+    "resID": "$UI_Pb_PetManagement_Training.prefab",
+    "uiType": "PanelLayer",
+    "timeStop": 1,
+    "module": "petTraining",
+    "orderWidget": 1000
+  },
+  "194": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_Npc_ViewEvents.prefab",
+    "uiType": "PanelLayer",
+    "enableMainCamera": 1,
+    "module": "QuestNpcEventChain",
+    "orderWidget": 10
+  },
+  "78": {
+    "uiType": "InfosLayer",
+    "module": "settingKeyAttention",
+    "resID": "$UI_Pb_Setting_Attention.prefab"
+  },
+  "35": {
+    "uiType": "SceneLayer",
+    "resID": "$UI_Common_PropInfo.prefab",
+    "module": "commonSkillTip",
+    "ignore": true
+  },
+  "160": {
+    "uiType": "InfosLayer",
+    "ignore": true,
+    "resID": "$UI_Node_Hud_TestHint.prefab",
+    "isPermanent": true,
+    "module": "developHint",
+    "orderWidget": 200
+  },
+  "161": {
+    "uiType": "InfosLayer",
+    "resID": "$UI_Pb_Hud_Logo.prefab",
+    "module": "hudLogo",
+    "ignore": true
+  },
+  "162": {
+    "resID": "$UI_Pb_PetFertility_Main.prefab",
+    "uiType": "PanelLayer",
+    "bgm": "BGM_Petball",
+    "module": "petFertility",
+    "orderWidget": 1000
+  },
+  "163": {
+    "resID": "$UI_Pb_PetFertility_Result.prefab",
+    "uiType": "PanelLayer",
+    "bgm": "BGM_Petball",
+    "module": "petFertilityResult",
+    "orderWidget": 1000
+  },
+  "164": {
+    "resID": "$UI_Pb_PetFertility_Rules.prefab",
+    "uiType": "PanelLayer",
+    "bgm": "BGM_Petball",
+    "module": "petFertilityRule",
+    "orderWidget": 1000
+  },
+  "165": {
+    "uiType": "PopupLayer",
+    "module": "petFertilityResultPop",
+    "bgm": "BGM_Petball",
+    "resID": "$UI_Pop_PetFertility_Result.prefab"
+  },
+  "166": {
+    "resID": "$UI_Tips_BuffInfo.prefab",
+    "uiType": "PopupLayer",
+    "ignore": true,
+    "module": "commonCustomInfoTip",
+    "orderWidget": 10
+  },
+  "167": {
+    "resID": "$UI_Pb_PetFertility_HiveResult.prefab",
+    "uiType": "PanelLayer",
+    "bgm": "BGM_Petball",
+    "module": "petFertilityHatchResult",
+    "orderWidget": 1000
+  },
+  "168": {
+    "resID": "$UI_Pb_Map_Cultivate.prefab",
+    "coin_Line": [
+      1103,
+      1102
+    ],
+    "uiType": "PanelLayer",
+    "module": "nourish",
+    "orderWidget": 1000
+  },
+  "169": {
+    "resID": "$UI_Pb_MarkShare_View.prefab",
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "module": "markShareView",
+    "orderWidget": 1
+  },
+  "170": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_MarkShare_Panel.prefab",
+    "module": "markShareEdit",
+    "orderWidget": 1000
+  },
+  "171": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_MarkShare_View.prefab",
+    "module": "markShareViewSimple",
+    "orderWidget": 1000
+  },
+  "172": {
+    "uiType": "PanelLayer",
+    "resID": "$UI_Pb_Photography_VideoDetails.prefab",
+    "module": "simpleView",
+    "orderWidget": 1000
+  },
+  "10": {
+    "openAudio": "ui_sfx_bag_open",
+    "fullScreen": true,
+    "resID": "$UI_Pb_Inventory.prefab",
+    "coin_Line": [
+      1,
+      2
+    ],
+    "timeStop": 1,
+    "module": "inventory",
+    "orderWidget": 1000,
+    "uiType": "PanelLayer",
+    "closeAudio": "ui_sfx_bag_close"
+  },
+  "5110": {
+    "coin_Line": [
+      4,
+      2
+    ],
+    "module": "tradeMarketSellPet"
+  },
+  "305": {
+    "uiType": "PanelLayer",
+    "module": "GuideMode",
+    "fullScreen": true,
+    "resID": "$UI_Pb_GuideSettings.prefab"
+  },
+  "306": {
+    "fullScreen": true,
+    "resID": "$UI_Pb_NameIn.prefab",
+    "uiType": "PanelLayer",
+    "module": "QuestCharacterAppearance",
+    "enableMainCamera": 1
+  },
+  "103": {
+    "uiType": "PopupLayer",
+    "module": "petSkillLearn",
+    "resID": "$UI_Node_PetManage_LearnSkill.prefab"
+  },
+  "5113": {
+    "coin_Line": [
+      4,
+      2
+    ],
+    "module": "tradeMarketGoodsDetail"
+  },
+  "2": {
+    "uiType": "SceneLayer",
+    "ignore": true,
+    "coin_Line": [
+      1,
+      2
+    ],
+    "resID": "$UI_Pb_Hud_Frame.prefab",
+    "module": "hud",
+    "orderWidget": 0
+  },
+  "5115": {
+    "coin_Line": [
+      4,
+      2
+    ],
+    "module": "tradeMarketSellGoods"
+  },
+  "74": {
+    "uiType": "PopupLayer",
+    "module": "itemCompositePopup",
+    "resID": "$UI_Node_Inventory_Compound.prefab"
+  },
+  "5116": {
+    "module": "tradeMarketHistoryGoods"
+  },
+  "59": {
+    "uiType": "PopupLayer",
+    "module": "rogBuffSelect",
+    "resID": "$UI_Pb_Tower_ChooseBuff.prefab"
+  },
+  "521": {
+    "uiType": "PopupLayer",
+    "module": "multiChooseChest",
+    "resID": "$UI_Pb_Popup_LootBox.prefab"
+  }
+}

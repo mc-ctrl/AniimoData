@@ -1,0 +1,621 @@
+{
+  "113": {
+    "resources": "C_02",
+    "suitId": 4,
+    "type": 1,
+    "name": 1489315075,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.006451613,
+      0.0085791,
+      0.0119403,
+      0.0176796
+    ],
+    "typename": 1135224351
+  },
+  "116": {
+    "resources": "C_05",
+    "type": 1,
+    "name": 1566956705,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.006451613,
+      0.0085791,
+      0.0119403,
+      0.0176796
+    ],
+    "typename": 1632437854
+  },
+  "115": {
+    "resources": "C_04",
+    "type": 1,
+    "name": 1622733018,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.006451613,
+      0.0085791,
+      0.0119403,
+      0.0176796
+    ],
+    "typename": 1860319180
+  },
+  "117": {
+    "resources": "A_01",
+    "type": 1,
+    "name": 1435562225,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.129032258,
+      0.1219839,
+      0.1119403,
+      0.0966851
+    ],
+    "typename": 1383962263
+  },
+  "206": {
+    "resources": "Wing_05",
+    "suitId": 5,
+    "type": 2,
+    "name": 1212273920,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.016129032,
+      0.0214477,
+      0.0298507,
+      0.0441989
+    ],
+    "typename": 1973225069
+  },
+  "403": {
+    "resources": "Body_02",
+    "suitId": 1,
+    "type": 4,
+    "name": 1838165160,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.096774194,
+      0.1126005,
+      0.1343284,
+      0.1657459
+    ],
+    "typename": 1395112762
+  },
+  "203": {
+    "resources": "Wing_02",
+    "suitId": 1,
+    "type": 2,
+    "name": 1670483689,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.096774194,
+      0.1126005,
+      0.1343284,
+      0.1657459
+    ],
+    "typename": 1283962544
+  },
+  "501": {
+    "effectSwitch": 1,
+    "resources": "$P_Home_SetDressing_CarLV4_Pink.prefab",
+    "type": 5,
+    "name": 1877134118,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "typename": 1101136549
+  },
+  "101": {
+    "resources": "B_01",
+    "suitId": 0,
+    "type": 1,
+    "name": 1206342829,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0,
+      0,
+      0
+    ],
+    "typename": 2025524114
+  },
+  "201": {
+    "resources": "Wing_02",
+    "suitId": 0,
+    "type": 2,
+    "name": 1182820954,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "typename": 1691541093
+  },
+  "202": {
+    "resources": "Wing_01",
+    "type": 2,
+    "name": 1869860825,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.774193548,
+      0.7319035,
+      0.6716418,
+      0.5801105
+    ],
+    "typename": 1087006113
+  },
+  "301": {
+    "resources": "Hat_02",
+    "suitId": 0,
+    "type": 3,
+    "name": 1509760191,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "typename": 1136265177
+  },
+  "401": {
+    "resources": "Body_02",
+    "suitId": 0,
+    "type": 4,
+    "name": 1370392565,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "typename": 1828451473
+  },
+  "110": {
+    "resources": "B_04",
+    "type": 1,
+    "name": 1544661007,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.038709677,
+      0.0450402,
+      0.0537313,
+      0.0662983
+    ],
+    "typename": 1962283830
+  },
+  "204": {
+    "resources": "Wing_03",
+    "suitId": 2,
+    "type": 2,
+    "name": 1934152594,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.096774194,
+      0.1126005,
+      0.1343284,
+      0.1657459
+    ],
+    "typename": 1390483064
+  },
+  "205": {
+    "resources": "Wing_04",
+    "suitId": 4,
+    "type": 2,
+    "name": 2052182297,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.016129032,
+      0.0214477,
+      0.0298507,
+      0.0441989
+    ],
+    "typename": 1322371681
+  },
+  "502": {
+    "effectSwitch": 0,
+    "resources": "$P_Home_SetDressing_CarLV4_Green.prefab",
+    "type": 5,
+    "name": 1506348189,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "typename": 1128417824
+  },
+  "114": {
+    "resources": "C_03",
+    "type": 1,
+    "name": 1901122394,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.006451613,
+      0.0085791,
+      0.0119403,
+      0.0176796
+    ],
+    "typename": 1447592232
+  },
+  "112": {
+    "resources": "C_01",
+    "suitId": 5,
+    "type": 1,
+    "name": 1718154765,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.006451613,
+      0.0085791,
+      0.0119403,
+      0.0176796
+    ],
+    "typename": 1408820908
+  },
+  "103": {
+    "resources": "A_03",
+    "type": 1,
+    "name": 1074494093,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.129032258,
+      0.1219839,
+      0.1119403,
+      0.0966851
+    ],
+    "typename": 1781111981
+  },
+  "106": {
+    "resources": "A_06",
+    "type": 1,
+    "name": 1982787074,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.129032258,
+      0.1219839,
+      0.1119403,
+      0.0966851
+    ],
+    "typename": 2146852250
+  },
+  "104": {
+    "resources": "A_04",
+    "type": 1,
+    "name": 1267575537,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.129032258,
+      0.1219839,
+      0.1119403,
+      0.0966851
+    ],
+    "typename": 1925648008
+  },
+  "405": {
+    "name": 1345034093,
+    "effectLight": [
+      [
+        "Light",
+        "CM_Suit_Body_01"
+      ],
+      [
+        "Light",
+        "CM_Suit_Body_02"
+      ],
+      [
+        "Light",
+        "CM_Suit_Body_03"
+      ],
+      [
+        "Light",
+        "CM_Suit_Body_04"
+      ]
+    ],
+    "resources": "Body_04",
+    "typename": 1267130036,
+    "suitId": 4,
+    "effect": [
+      [
+        "Light",
+        "CM_Suit_Body_01"
+      ],
+      [
+        "Light",
+        "CM_Suit_Body_02"
+      ],
+      [
+        "Light",
+        "CM_Suit_Body_03"
+      ],
+      [
+        "Light",
+        "CM_Suit_Body_04"
+      ]
+    ],
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.016129032,
+      0.0214477,
+      0.0298507,
+      0.0441989
+    ],
+    "type": 4
+  },
+  "105": {
+    "resources": "A_05",
+    "type": 1,
+    "name": 1444740207,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.129032258,
+      0.1219839,
+      0.1119403,
+      0.0966851
+    ],
+    "typename": 1362424766
+  },
+  "302": {
+    "resources": "Hat_01",
+    "type": 3,
+    "name": 1510197370,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.774193548,
+      0.7319035,
+      0.6716418,
+      0.5801105
+    ],
+    "typename": 1604053624
+  },
+  "303": {
+    "name": 1894563237,
+    "effectLight": [
+      [
+        "Default",
+        "CM_Suit_Hat_02_01"
+      ]
+    ],
+    "resources": "Hat_02",
+    "typename": 1439906381,
+    "suitId": 1,
+    "effect": [
+      [
+        "Default",
+        "CM_Suit_Hat_02_01"
+      ]
+    ],
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.096774194,
+      0.1126005,
+      0.1343284,
+      0.1657459
+    ],
+    "type": 3
+  },
+  "304": {
+    "resources": "Hat_03",
+    "suitId": 2,
+    "type": 3,
+    "name": 1999153484,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.096774194,
+      0.1126005,
+      0.1343284,
+      0.1657459
+    ],
+    "typename": 1178457025
+  },
+  "305": {
+    "name": 1970954871,
+    "effectLight": [
+      [
+        "Light",
+        "CM_Suit_Hat_01"
+      ]
+    ],
+    "resources": "Hat_04",
+    "typename": 1267608010,
+    "suitId": 4,
+    "effect": [
+      [
+        "Default",
+        "CM_Suit_Hat_01"
+      ]
+    ],
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.016129032,
+      0.0214477,
+      0.0298507,
+      0.0441989
+    ],
+    "type": 3
+  },
+  "306": {
+    "name": 1138458837,
+    "effectLight": [
+      [
+        "01_Light",
+        "Bone C Hat 05 01"
+      ],
+      [
+        "02_Light",
+        "Bone C Hua 05 01"
+      ]
+    ],
+    "resources": "Hat_05",
+    "typename": 1237684130,
+    "suitId": 5,
+    "effect": [
+      [
+        "01_Default",
+        "Bone C Hat 05 01"
+      ],
+      [
+        "02_Default",
+        "Bone C Hua 05 01"
+      ]
+    ],
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.016129032,
+      0.0214477,
+      0.0298507,
+      0.0441989
+    ],
+    "type": 3
+  },
+  "108": {
+    "resources": "B_02",
+    "suitId": 2,
+    "type": 1,
+    "name": 1947305817,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.038709677,
+      0.0450402,
+      0.0537313,
+      0.0662983
+    ],
+    "typename": 1832479843
+  },
+  "404": {
+    "resources": "Body_03",
+    "suitId": 2,
+    "type": 4,
+    "name": 2048720239,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.096774194,
+      0.1126005,
+      0.1343284,
+      0.1657459
+    ],
+    "typename": 1486148578
+  },
+  "109": {
+    "resources": "B_03",
+    "type": 1,
+    "name": 1838480870,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.038709677,
+      0.0450402,
+      0.0537313,
+      0.0662983
+    ],
+    "typename": 1258391451
+  },
+  "402": {
+    "resources": "Body_01",
+    "type": 4,
+    "name": 1606910883,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.774193548,
+      0.7319035,
+      0.6716418,
+      0.5801105
+    ],
+    "typename": 1854628770
+  },
+  "406": {
+    "resources": "Body_05",
+    "suitId": 5,
+    "type": 4,
+    "name": 1768283398,
+    "petId": 1021300,
+    "quality": 5,
+    "probability": [
+      0.016129032,
+      0.0214477,
+      0.0298507,
+      0.0441989
+    ],
+    "typename": 1182534512
+  },
+  "102": {
+    "resources": "A_02",
+    "type": 1,
+    "name": 1461486631,
+    "petId": 1021300,
+    "quality": 3,
+    "probability": [
+      0.129032259,
+      0.1219839,
+      0.1119403,
+      0.0966851
+    ],
+    "typename": 1455296958
+  },
+  "111": {
+    "resources": "B_05",
+    "type": 1,
+    "name": 1137740532,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.038709677,
+      0.0450402,
+      0.0537313,
+      0.0662983
+    ],
+    "typename": 1675652345
+  },
+  "107": {
+    "resources": "B_01",
+    "suitId": 1,
+    "type": 1,
+    "name": 1404876391,
+    "petId": 1021300,
+    "quality": 4,
+    "probability": [
+      0.038709677,
+      0.0450402,
+      0.0537313,
+      0.0662983
+    ],
+    "typename": 1526132525
+  }
+}

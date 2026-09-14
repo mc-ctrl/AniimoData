@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010021",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "96a63edd-75ea-4025-a287-ac1a6b9e1604",
+      "name": "doActionsByConditions",
+      "NodeID": 8,
+      "elseActionIds": [
+        9
+      ]
+    },
+    "4": {
+      "key": "buff270010017",
+      "name": "setRoguePersistData",
+      "UID": "6ae2ed35-7697-4261-b2dd-2cda367d4452",
+      "value": {
+        "UID": "6b61bccb-bb84-4ea0-a9b7-7977c029e8f5",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 3
+      },
+      "NodeID": 4
+    },
+    "7": {
+      "buffId": 270010017,
+      "name": "hasBuff",
+      "UID": "10ad6255-9eb9-4201-8b5f-4e44f41d3f7c",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "9": {
+      "duration": -1,
+      "buffId": 270010017,
+      "NodeID": 9,
+      "UID": "afc86c2b-ac28-4583-8b72-c7cd3da92b55",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    8
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9168301",
+  "NodeID": 1,
+  "UID": "909fb2f4-9b28-4886-a093-54c9012c7417",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "calcInfo": {
+        "passive_energy_cur": -5
+      },
+      "name": "calcResult",
+      "UID": "ebfd094e-2429-4ff8-913f-e99cfb60b277",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "4": {
+      "targetPos": "TARGET",
+      "innerRadius": 4,
+      "name": "randomPoint",
+      "UID": "0d617fb6-b21c-4b22-ab31-0e6d05fd0872",
+      "radius": 5,
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        4,
+        12,
+        10
+      ],
+      "NodeID": 6,
+      "UID": "bd84dd24-be44-46ed-8ea0-4db2eac06596",
+      "cd": 1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "00890216-611c-4e2b-9e14-acedeff36c90",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Passive01",
+      "NodeID": 10
+    },
+    "15": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "b136d78e-10f5-4ebf-9cce-3693600fbc0d",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "62cfc848-8cbb-42a2-b8cc-f57a7fab8833",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        6
+      ]
+    },
+    "16": {
+      "eventName": "PirateCrabGetCoin",
+      "NodeID": 16,
+      "UID": "f95a715e-5635-4218-817a-0a73acdb37c9",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        15
+      ]
+    },
+    "8": {
+      "key": "PirateCrabCast",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "1a13cdbb-48e9-47cd-b763-d23c54bdb230",
+      "name": "registerCacheValChange"
+    },
+    "17": {
+      "buffId": 9168302,
+      "name": "removeBuff",
+      "UID": "7a435d74-8031-4411-923e-5388900b7aa0",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "23": {
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 5,
+      "spEnergyInitV": 0,
+      "UID": "d71ce78d-e2a0-4950-ade6-77b9a11b81bb",
+      "superBoosted": false,
+      "spEnergyMaxV": 5,
+      "name": "registerPassiveEnergyInfo",
+      "NodeID": 23,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 1
+    },
+    "13": {
+      "name": "isActorType",
+      "UID": "b5673ecc-cc26-41e0-8a16-8d8d56b71b5a",
+      "target": "OWNER",
+      "NodeID": 13,
+      "actorType": 3
+    },
+    "19": {
+      "duration": 20,
+      "actionIds": [
+        17,
+        22
+      ],
+      "NodeID": 19,
+      "UID": "159e7550-82e6-4a0a-b500-1089cdb51fac",
+      "name": "addTimer"
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "1033650b-7f98-46c7-b40c-cb0751cb99ef",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 9168301101,
+      "name": "createProjectile",
+      "UID": "533eb886-9819-452f-bae2-e7e8948d1bba",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "TARGET",
+      "projectileType": "Parabola3d",
+      "NodeID": 12,
+      "targetPos": "RANDOM_POINT"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    20,
+    23,
+    16
+  ]
+}

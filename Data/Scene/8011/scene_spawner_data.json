@@ -1,0 +1,30 @@
+{
+  "42891240": {
+    "spawnType": 2,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "position": [
+      1.6,
+      6,
+      -138.73
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42834374,
+    "id": 42891240,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42891238
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

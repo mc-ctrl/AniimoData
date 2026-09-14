@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_4101201",
+  "NodeID": 1,
+  "UID": "1558690a-fc1c-439a-aaf7-54b69cda00e9",
+  "abilityParamId": 41012010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 4101201001,
+      "name": "setCombatActionTimeline",
+      "UID": "1b16c49d-46f9-45c7-9d70-5ec2a8607ef1",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_DropBackReturn",
+    "Skill_MagicField"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+    "Eff_Parmon_10023_Boss_ScreenUV",
+    "Eff_Common_Battle_Break"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "isLeaveCombatClearCD": true,
+  "name": "星魔师分身技能"
+}

@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11109",
+  "NodeID": 1,
+  "UID": "f04515a5-8822-49d5-830d-46ba31037b38",
+  "tags": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 1,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "cb81dc34-b5e4-4a4f-bbf0-c6a805498092",
+      "name": "addTimer"
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "952af657-b92d-4196-a01b-50d212bac70a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Env_Losing",
+      "NodeID": 13
+    },
+    "10": {
+      "blackScreenId": 111,
+      "name": "serverPlayBlackScreen",
+      "UID": "de720ed3-a138-4a11-a1ec-9c933b1f1d1a",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "bb1e4ae8-d53e-4beb-b26f-47a5635ca26b",
+      "effectId": "Eff_Avatar_Losing_Buff",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "9": {
+      "duration": 2,
+      "name": "playStartLoopEndAni",
+      "NodeID": 9,
+      "UID": "a61faef7-1bc3-4f3d-bd3d-c32c1f8716ad",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "2": {
+      "delay": 0,
+      "name": "gameplayRandomTeleportToMarkId",
+      "UID": "a90d53fd-7b6e-4ae5-b934-5747df6e2a64",
+      "target": "OWNER",
+      "srcEnt": "SRC",
+      "NodeID": 2
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "68ef85e2-2826-4808-83d7-178b7d95ec07",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5d2f588f-5943-4b53-a93d-bb79d9b35b92",
+      "effectId": "Eff_Avatar_Losing_Buff",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "3e1aa8c3-d96c-406e-aadc-49283d83571b",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    7,
+    3,
+    12
+  ],
+  "onBuffStartIds": [
+    5,
+    9,
+    11,
+    13
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "nodeMap": {
+    "52": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3b87b401-5bd3-48c2-a72e-f41389df3dc1",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Start_01",
+      "speed": 1,
+      "NodeID": 52
+    },
+    "38": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 36,
+      "NodeID": 38,
+      "UID": "84f463e0-f4fb-4855-b2c7-767f36e83249",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            90,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        36
+      ]
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 39,
+      "UID": "e895a4c8-a392-404a-973e-4734c1a4b37f"
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.75,
+      "NodeID": 40,
+      "UID": "318a2d9e-c480-4e10-80ca-17e041b44d7c"
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.75,
+      "NodeID": 41,
+      "UID": "6dec8880-e7a0-4ff3-ae3e-da9f8635e031"
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "62": {
+      "UID": "01d0fa1e-827a-4d76-ac11-dcaf7b7887c8",
+      "target": "TARGET",
+      "name": "sendAIDodgeMsg",
+      "NodeID": 62
+    },
+    "61": {
+      "UID": "9561b618-1f6f-49d3-bfa8-f47a98117eae",
+      "eventType": "Notify",
+      "time": 0.85,
+      "NodeID": 61
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.76,
+      "NodeID": 46,
+      "UID": "cd060f9e-9680-46be-b220-914abce85d33"
+    },
+    "59": {
+      "UID": "9a4c2955-c1ea-4eb4-a50c-1daf60d5b0ed",
+      "eventType": "Notify",
+      "time": 2.6,
+      "NodeID": 59
+    },
+    "57": {
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.9,
+      "NodeID": 57,
+      "UID": "01e1c242-d7f7-4726-9130-c630625d77fe"
+    },
+    "54": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 54,
+      "UID": "6cac20d5-1167-48f3-900c-ff2f3846d0df",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Start_02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "53": {
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.36,
+      "NodeID": 53,
+      "UID": "3244cdf6-90d1-48d0-a818-d7706193ffc4"
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.91,
+      "NodeID": 31,
+      "UID": "8224dce5-affa-43cc-ac76-068c0ab63ab7"
+    },
+    "19": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "e927d856-7bcf-42ce-9173-8f068f429e89",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 19
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "24": {
+      "name": "isActorType",
+      "UID": "463c53a8-ee2e-4432-9932-a14b5e6486b7",
+      "target": "OWNER",
+      "NodeID": 24,
+      "actorType": 3
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e900ab44-ca45-437a-aca9-c51bf1f50482",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_FlowingWaterSword_Attack_02",
+      "speed": 1,
+      "NodeID": 45
+    },
+    "21": {
+      "actionIds": [
+        19,
+        23,
+        62
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "0b877065-cd59-4f63-9b20-9943bb6cae88",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 22,
+      "UID": "ee29f3a1-2608-4126-a266-444cf23db3e7"
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0f428329-b05d-4bb3-a762-26a132ba054b",
+      "effectId": "Eff_Parmon_10194_Boss_Warning",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.36,
+      "NodeID": 55,
+      "UID": "0272e08c-bde1-4a21-a828-6eadc8582a87"
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "56": {
+      "name": "stopEffectStr",
+      "UID": "260cd631-c46b-49ce-913d-001062f19ebe",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Start_02",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "16": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "47": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "49ed260d-73a1-4ddc-a66f-a21cb1ad52e3",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_End",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "26": {
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "motionWarpingTarget": "TARGET",
+      "motionWarpingXZMaxLen": 6,
+      "offsetTime": 0,
+      "warpEndTime": 0.8,
+      "warpStartTime": 0.2,
+      "animId": "Skill_FlowingWaterSword",
+      "NodeID": 26
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 48,
+      "UID": "6f53c860-182e-4a6b-9d95-efea857ce98e"
+    },
+    "28": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e68dd7bb-bfa3-4ce8-9bca-416d18415730",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_FlowingWaterSword_Attack_01",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.4,
+      "NodeID": 18,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "60": {
+      "UID": "04f4a46e-8820-4122-b2f3-aae6f68b4fa2",
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 60
+    },
+    "33": {
+      "UID": "c7785be1-a8e9-4262-8fd5-68cb7099db84",
+      "eventType": "EventEnter",
+      "NodeID": 33
+    },
+    "51": {
+      "UID": "d3e81a8e-6811-4aa8-b4cd-fd95d07a7337",
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 51
+    },
+    "36": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 3000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "69b862e1-7f7c-4b3b-8620-7c11bf267f3d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11940501",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    28,
+    18,
+    31,
+    46,
+    48,
+    33,
+    51,
+    53,
+    55,
+    57,
+    22,
+    39,
+    40,
+    41,
+    61,
+    60,
+    59
+  ],
+  "layer": "Base",
+  "length": 3.5
+}

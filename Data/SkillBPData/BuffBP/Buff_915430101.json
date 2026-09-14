@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915430101",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "b9d314df-f70b-4262-b05f-df864fb30cd9",
+      "value": {
+        "UID": "36932e6c-f1af-4d08-b113-a1549daf4010",
+        "target": "SRC",
+        "name": "getTargetId",
+        "NodeID": 5
+      },
+      "name": "print",
+      "NodeID": 8
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "6c0ea8b5-e339-47d4-880d-f48937d8412c",
+      "effectId": "Eff_Parmon_10543_Skill_Buff_Mark01",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "6": {
+      "key": "10543_SRC",
+      "name": "setCacheVal",
+      "UID": "33cce625-c487-4fd5-8df9-2efb1265c971",
+      "target": "OWNER",
+      "val": {
+        "UID": "36932e6c-f1af-4d08-b113-a1549daf4010",
+        "target": "SRC",
+        "name": "getTargetId",
+        "NodeID": 5
+      },
+      "NodeID": 6
+    }
+  },
+  "name": "淤泥标记",
+  "onBuffDestroyIds": [
+    2
+  ],
+  "onBuffStartIds": [
+    6,
+    8
+  ]
+}

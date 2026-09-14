@@ -1,0 +1,66 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2010005",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    16
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "unsummonValid": false,
+      "actionIds": [
+        11,
+        18
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f19c890e-5694-43e1-800c-73dc4cd3f03d",
+      "NodeID": 13
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "415d2fe2-389f-4ce8-86ad-353ad1362e26",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "10": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "a7b15662-8dd0-40df-9db7-d8a825e916b2",
+      "name": "buffStartThink",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "7f0e882a-8cdf-423e-be8b-9e425a1c9e23",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "17": {
+      "UID": "e4503e71-9f74-451c-bcb8-7fceda5fbcbd",
+      "name": "buffStopThink",
+      "NodeID": 17
+    },
+    "16": {
+      "name": "calcResult",
+      "UID": "e5cdb6ea-68de-4024-83f9-e01d35d3212e",
+      "target": "CURPET",
+      "NodeID": 16,
+      "calcInfoByLuaConfig": {
+        "id": 2010005,
+        "sp_cur": "param0",
+        "type": 1
+      }
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13
+  ]
+}

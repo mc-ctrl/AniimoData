@@ -1,0 +1,134 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "21": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.3
+      },
+      "name": "calcResult",
+      "UID": "0ca7974e-1810-4bbb-8070-ef8850ee7db9",
+      "target": "CASTER",
+      "NodeID": 21
+    },
+    "6": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b642e1f2-7423-4a9f-b271-e36dacbdbb60",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_02",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "15": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.3,
+        "reduce_cur_tp_rate": 0.3
+      },
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "hitSoundType": "s",
+        "impulseId": 1000,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0
+      },
+      "UID": "9a5817d9-784b-4ceb-aa2b-81d41276a2fb",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 15
+    },
+    "11": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 15,
+      "NodeID": 11,
+      "UID": "d8549f80-6715-4b70-8fbf-b62d96a71f01",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        15,
+        21
+      ]
+    },
+    "13": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 8,
+      "NodeID": 13,
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886",
+      "onUpdate": {
+        "actionIds": [
+          11
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          11
+        ]
+      }
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Grass",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2104508",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    13,
+    8,
+    4
+  ],
+  "layer": "Base",
+  "length": 9999
+}

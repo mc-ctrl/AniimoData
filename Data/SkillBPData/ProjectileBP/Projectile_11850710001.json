@@ -1,0 +1,45 @@
+{
+  "duration": 1,
+  "BPName": "ability_11850710",
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10185_Skill_WindCannon_Bullet_liuli",
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "70": {
+      "pos": "PROJECTILE",
+      "timelineId": 11850710003,
+      "NodeID": 70,
+      "UID": "19ae748f-e181-478c-8cd2-0bf206ec51f8",
+      "name": "createSpellField",
+      "destroyOnMasterDead": true,
+      "isOnGround": false
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    70
+  ],
+  "angularIncreaseDuration": 1,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.01,
+  "calcResultNodeId": 65,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Wind_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

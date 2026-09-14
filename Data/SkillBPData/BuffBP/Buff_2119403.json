@@ -1,0 +1,128 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119403",
+  "calcInfoByLuaConfig": {
+    "id": 2119403,
+    "combat_ep_regen_p": "param0",
+    "type": 1
+  },
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2e8d0753-9822-4135-acc7-b3a8987441e6",
+      "effectId": "Eff_Parmon_10194_Passive",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a37fd384-36c7-4d08-857d-5acf74ba11bf",
+      "effectId": "Eff_Parmon_10194_Passive_R",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "570f7649-f5a1-4ea0-aec2-5e16a4358241",
+      "effectId": "Eff_Parmon_10194_Passive_L_Red",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "name": "checkPetPrototypeId",
+      "UID": "50f486f1-0b5b-4a1e-96a2-c8448b3ea969",
+      "target": "OWNER",
+      "petPrototypeId": 1019402,
+      "NodeID": 10
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "f2445ccc-03f6-4350-85d1-f86db125ac97",
+      "effectId": "Eff_Parmon_10194_Passive_R_Red",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        6,
+        9
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "82210f88-0120-46cf-b410-017e2810590c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11,
+        13
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "825da059-ac9f-45f8-a9e2-0c06b97457cd",
+      "effectId": "Eff_Parmon_10194_Passive_L",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "996592d9-ad1e-4ed5-bb02-dff0b549d4ca",
+      "effectId": "Eff_Parmon_10194_Passive_R_Red",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "79c5cf83-25a4-48fa-9d6a-4f8859e70336",
+      "effectId": "Eff_Parmon_10194_Passive_R",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "eff0631e-c9de-4139-9212-358d3aa45d1e",
+      "effectId": "Eff_Parmon_10194_Passive_L",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "5127647d-db76-4619-ae99-d9fb93b83621",
+      "effectId": "Eff_Parmon_10194_Passive",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "8f207da4-2851-4656-b895-16eda8532c1d",
+      "effectId": "Eff_Parmon_10194_Passive_L_Red",
+      "target": "OWNER",
+      "NodeID": 14
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14,
+    16,
+    17,
+    18,
+    19
+  ],
+  "onBuffStartIds": [
+    8,
+    3
+  ]
+}

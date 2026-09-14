@@ -1,0 +1,288 @@
+{
+  "42418261": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 42464233,
+    "levelItems": {
+      "42418262": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头",
+        "position": [
+          0,
+          1,
+          0.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42418262,
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "76152898": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          11.98,
+          4,
+          15.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 4,
+        "id": 76152898,
+        "serializeVersion": 3,
+        "scale": [
+          8,
+          14,
+          1
+        ],
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42418263": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点1",
+        "position": [
+          0.22,
+          0.67,
+          7.62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42418263,
+        "siblingIndex": 1,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42418263_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            0.22,
+            0.67,
+            7.62
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42418264": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          0.42,
+          1.05,
+          34.63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42418264,
+        "siblingIndex": 2,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42418264_43015735"
+          }
+        },
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            0.42,
+            1.05,
+            34.63
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "76152903": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockBox_SB (1)",
+        "position": [
+          -12.02,
+          4,
+          15.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 5,
+        "serializeVersion": 3,
+        "id": 76152903,
+        "scale": [
+          8,
+          14,
+          1
+        ],
+        "path": "",
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "43013450": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "全部抓捕信号器",
+        "position": [
+          3.51,
+          1.63,
+          24.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43013450,
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "sightLevel": 512,
+    "sightLevelType": 512,
+    "spawners": [
+      42722608
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8003/Sandbox_42418261_GraphRef.asset",
+    "owner": "路司机",
+    "position": [
+      -1.02,
+      1,
+      8.74
+    ],
+    "areaIds": [
+      90938793
+    ],
+    "forceSync": false,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 42418261,
+    "keepGraphOnFinished": false,
+    "name": "大白球"
+  },
+  "41614183": {
+    "areaType": 0,
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 41614183,
+    "owner": "路司机",
+    "position": [
+      0,
+      0,
+      0
+    ]
+  }
+}

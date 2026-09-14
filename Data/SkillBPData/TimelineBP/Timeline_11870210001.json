@@ -1,0 +1,112 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "d9be6ef3-fff8-4fb1-b308-db9fff780d1d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          11,
+          21,
+          16
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "0b11aeef-4ee5-499e-9b05-2f5b1e2a3856",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "16": {
+      "UID": "f01db827-0c3c-4bec-b419-a85846ffbfb1",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "21": {
+      "offsetXYZ": [
+        0,
+        0.15,
+        0.15
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f8f1e31b-ea99-40ca-b966-0d0b22328ba0",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Attention_sing",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "18": {
+      "UID": "ae2b6074-72ee-48ad-96ec-9d80415e5a91",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 18
+    },
+    "12": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 2118102,
+      "NodeID": 12,
+      "UID": "78bf6e3b-ee96-4caf-9978-dee9e0cea9fc",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "key": "hp10181",
+      "name": "setCacheVal",
+      "UID": "a98983e0-6065-4fcb-a2c0-e4ef3b3aae8d",
+      "target": "CASTER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "fcd6e2dd-56e8-44d6-8cc4-2062349e51eb",
+        "target": "CASTER",
+        "NodeID": 10,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 20,
+      "UID": "deb5ee18-ada1-4da6-a8aa-a94a9e40b90d"
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "58f5f0b2-1e8a-4855-a938-fac87fec9c31",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Conjure"
+    }
+  },
+  "BPName": "ability_11870210",
+  "NodeID": 6,
+  "UID": "2f177381-ed2b-448e-a52c-fc9496151615",
+  "eventIds": [
+    20,
+    14,
+    4
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

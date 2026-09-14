@@ -1,0 +1,16 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "speed_ratio_run_v": 0.03,
+    "speed_ratio_sprint_v": 0.03
+  },
+  "BPName": "buff_20010010",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {}
+}

@@ -1,0 +1,166 @@
+{
+  "84750948": {
+    "sceneId": 3000102,
+    "image": "$UI_Img_Home_CampSwitch_PlotPic_2.png",
+    "unlockCondition": [
+      62027
+    ],
+    "desc": 1661544005,
+    "areaId": 3,
+    "areaPrefix": "A3",
+    "name": 1997292510,
+    "bucketCount": 4,
+    "carId": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "createPrivateCampTeleportPos": 91121747,
+    "extraRewardItemList": [
+      4040076,
+      4040077
+    ],
+    "plateId": 1,
+    "rewardDes1": 1712574062,
+    "rewardDes2": 1595938237,
+    "rewardDes3": 1495493003,
+    "rewardItemList": [
+      4010121,
+      4010128,
+      4010122
+    ],
+    "rewards": [
+      200158,
+      200147,
+      200148
+    ],
+    "sublineMaxNum": 399999,
+    "sublineMinNum": 300000
+  },
+  "84750989": {
+    "sceneId": 3000103,
+    "image": "$UI_Img_Home_CampSwitch_PlotPic_4.png",
+    "unlockCondition": [
+      62028
+    ],
+    "desc": 2127346741,
+    "areaId": 4,
+    "areaPrefix": "A4",
+    "name": 1689513723,
+    "bucketCount": 4,
+    "carId": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "createPrivateCampTeleportPos": 91121688,
+    "extraRewardItemList": [
+      4040076,
+      4040077
+    ],
+    "plateId": 1,
+    "rewardDes1": 1988874577,
+    "rewardDes2": 1915843880,
+    "rewardDes3": 1123697944,
+    "rewardItemList": [
+      4010125,
+      4010130,
+      4010132
+    ],
+    "rewards": [
+      200152,
+      200153,
+      200154
+    ],
+    "sublineMaxNum": 499999,
+    "sublineMinNum": 400000
+  },
+  "83980508": {
+    "sceneId": 3000100,
+    "image": "$UI_Img_Home_CampSwitch_PlotPic_1.png",
+    "unlockCondition": [
+      62025
+    ],
+    "desc": 1650019952,
+    "areaId": 1,
+    "areaPrefix": "A1",
+    "name": 1957776955,
+    "bucketCount": 4,
+    "carId": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "createPrivateCampTeleportPos": 91121658,
+    "extraRewardItemList": [
+      4040076,
+      4040077
+    ],
+    "plateId": 1,
+    "rewardDes1": 1402961535,
+    "rewardDes2": 1303792618,
+    "rewardDes3": 1472375499,
+    "rewardItemList": [
+      4010129,
+      4010123,
+      4010124
+    ],
+    "rewards": [
+      200149,
+      200150,
+      200151
+    ],
+    "sublineMaxNum": 199999,
+    "sublineMinNum": 100000
+  },
+  "84748009": {
+    "sceneId": 3000101,
+    "image": "$UI_Img_Home_CampSwitch_PlotPic_3.png",
+    "unlockCondition": [
+      62026
+    ],
+    "desc": 1630164686,
+    "areaId": 2,
+    "areaPrefix": "A2",
+    "name": 1930575057,
+    "bucketCount": 4,
+    "carId": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "createPrivateCampTeleportPos": 91121735,
+    "extraRewardItemList": [
+      4040076,
+      4040077
+    ],
+    "plateId": 1,
+    "rewardDes1": 1441212908,
+    "rewardDes2": 2087936928,
+    "rewardDes3": 1732320280,
+    "rewardItemList": [
+      4010126,
+      4010131,
+      4010127
+    ],
+    "rewards": [
+      200155,
+      200156,
+      200157
+    ],
+    "sublineMaxNum": 299999,
+    "sublineMinNum": 200000
+  }
+}

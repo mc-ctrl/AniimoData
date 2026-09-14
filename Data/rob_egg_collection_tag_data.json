@@ -1,0 +1,261 @@
+{
+  "5": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1617562284,
+    "effect": "Eff_Env_GrabEggBattle_Collection_EEStar",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_xgss.png",
+    "tagLevel": 1,
+    "tagScr": 3000,
+    "tagWeight": 100,
+    "tagName": 1580711830
+  },
+  "6": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1869075417,
+    "effect": "Eff_Env_GrabEggBattle_Collection_EEFireGlow",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_hc.png",
+    "tagLevel": 2,
+    "tagScr": 5000,
+    "tagWeight": 100,
+    "tagName": 1729350438
+  },
+  "7": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 2070720364,
+    "tagWeight": 10,
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_yck.png",
+    "tagLevel": 3,
+    "tagScr": 40000,
+    "hiddenMark": 1,
+    "tagName": 1581240698
+  },
+  "8": {
+    "guarTimes": [
+      1
+    ],
+    "tagDes": 1845561287,
+    "tagExcl": {
+      "13": 1,
+      "14": 1,
+      "18": 1,
+      "15": 1,
+      "16": 1,
+      "12": 1
+    },
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_wmwx.png",
+    "tagLevel": 1,
+    "tagScr": 10000,
+    "tagWeight": 100,
+    "tagName": 1517801478
+  },
+  "9": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1643691240,
+    "effect": "Eff_Env_GrabEggBattle_Collection_EEGoldenLight",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_jx.png",
+    "tagLevel": 2,
+    "tagScr": 10000,
+    "tagWeight": 100,
+    "tagName": 1159047177
+  },
+  "11": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1659614443,
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_xqcr.png",
+    "tagLevel": 3,
+    "tagScr": 10000,
+    "tagWeight": 100,
+    "tagName": 1495569472
+  },
+  "1": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1599127329,
+    "effect": "Eff_Env_GrabEggBattle_Collection_EERune",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_ygfw.png",
+    "tagLevel": 1,
+    "tagScr": 3000,
+    "tagWeight": 100,
+    "tagName": 2031847845
+  },
+  "12": {
+    "tagName": 1328165493,
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1940749499,
+    "effect": "Eff_Env_GrabEggBattle_EEFake",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_yp.png",
+    "tagLevel": -1,
+    "tagScr": -3000,
+    "tagWeight": 100,
+    "tagExcl": {
+      "8": 1
+    }
+  },
+  "3": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1797736666,
+    "effect": "Eff_Env_GrabEggBattle_Collection_EEErratic",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_nlcl.png",
+    "tagLevel": 1,
+    "tagScr": 3000,
+    "tagWeight": 100,
+    "tagName": 1369402359
+  },
+  "4": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1869492334,
+    "effect": "Eff_Env_GrabEggBattle_Collection_EESign",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_mjdc.png",
+    "tagLevel": 2,
+    "tagScr": 10000,
+    "tagWeight": 100,
+    "tagName": 1857340389
+  },
+  "14": {
+    "tagName": 1528127295,
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1617580722,
+    "effect": "Eff_Env_GrabEggBattle_{0}_EEBurn",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_sh.png",
+    "tagLevel": -2,
+    "tagScr": -5000,
+    "tagWeight": 100,
+    "tagExcl": {
+      "8": 1
+    }
+  },
+  "10": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1695518840,
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_jyhx.png",
+    "tagLevel": 2,
+    "tagScr": 5000,
+    "tagWeight": 100,
+    "tagName": 1968790291
+  },
+  "15": {
+    "tagName": 1835647540,
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1343610778,
+    "effect": "Eff_Env_GrabEggBattle_{0}_EEStain",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_ms.png",
+    "tagLevel": -2,
+    "tagScr": -5000,
+    "tagWeight": 100,
+    "tagExcl": {
+      "8": 1
+    }
+  },
+  "16": {
+    "tagName": 1842176872,
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1643551990,
+    "effect": "Eff_Env_GrabEggBattle_{0}_EEImpurity",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_ds.png",
+    "tagLevel": -2,
+    "tagScr": -5000,
+    "tagWeight": 100,
+    "tagExcl": {
+      "8": 1
+    }
+  },
+  "18": {
+    "tagName": 1874998210,
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1467751381,
+    "effect": "Eff_Env_GrabEggBattle_{0}_EEColor",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_rs.png",
+    "tagLevel": -3,
+    "tagScr": -10000,
+    "tagWeight": 100,
+    "tagExcl": {
+      "8": 1
+    }
+  },
+  "2": {
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1981161870,
+    "effect": "Eff_Env_GrabEggBattle_Collection_EEReffect",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_wmqg.png",
+    "tagLevel": 1,
+    "tagScr": 3000,
+    "tagWeight": 100,
+    "tagName": 1296661596
+  },
+  "13": {
+    "tagName": 1458916216,
+    "guarTimes": [
+      1,
+      1,
+      1
+    ],
+    "tagDes": 1539739171,
+    "effect": "Eff_Env_GrabEggBattle_{0}_EECrack",
+    "tagIcon": "$UI_Img_Calcination_Collectibles_Tag_Icon_lw.png",
+    "tagLevel": -1,
+    "tagScr": -3000,
+    "tagWeight": 100,
+    "tagExcl": {
+      "8": 1
+    }
+  }
+}

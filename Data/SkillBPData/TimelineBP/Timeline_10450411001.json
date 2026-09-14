@@ -1,0 +1,123 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c9537920-e2c5-497f-910f-560abe02ed67",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_FlowerCircle"
+    },
+    "25": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "1ef0c407-9f75-4507-a9fe-80aa704d3e0a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.2,
+      "NodeID": 17,
+      "UID": "1df632f8-626a-4fa6-817b-4c4da36f0386"
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104508,
+      "name": "createEntity",
+      "UID": "93ffa426-d908-40c9-8288-c89210b9d515",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 19,
+      "pos": "OWNER"
+    },
+    "11": {
+      "UID": "b27c743e-86b0-4ddd-a437-8b89bb2ac495",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 21,
+      "UID": "966c0da1-f0c7-4019-9d11-8aac43f9e4ee"
+    }
+  },
+  "BPName": "ability_10450411",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    11,
+    17,
+    27,
+    21
+  ],
+  "layer": "Base",
+  "length": 3.2
+}

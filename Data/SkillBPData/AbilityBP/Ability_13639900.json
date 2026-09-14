@@ -1,0 +1,54 @@
+{
+  "BPName": "ability_13639900",
+  "NodeID": 1,
+  "UID": "707cd5c0-714f-4a12-9efa-7ac14a5a1b33",
+  "desc": "",
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 13639900001,
+      "name": "setCombatActionTimeline",
+      "UID": "7f041c8b-36be-435e-9578-7865f5863062",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "59": {
+      "name": "stopSoundStr",
+      "UID": "d6ee213e-3af6-46de-826a-d06825877959",
+      "soundId": "SFX_Combat_Parmon_10363_Skill_Ex",
+      "target": "OWNER",
+      "NodeID": 59
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Holy_Blunt",
+    "Eff_Parmon_10363_Buff_End_01",
+    "Eff_Parmon_10361_Skill_OutEx_01",
+    "Eff_Parmon_10363_Character",
+    "Eff_Parmon_10361_Character"
+  ],
+  "searchRelation": 2,
+  "name": "螳螂必杀技",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "preloadCutScenes": [
+    "$Parmon_10363_Skill_Ex_Timeline.prefab"
+  ],
+  "onAbilityEndIds": [
+    59
+  ],
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 11300051,
+  "cutSceneDuration": 2
+}

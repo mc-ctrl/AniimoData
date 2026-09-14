@@ -1,0 +1,303 @@
+{
+  "APPEARANCE": {
+    "unlockDesc": 1311444190,
+    "uiId": [
+      225
+    ],
+    "desc": 1253956456,
+    "initState": 0
+  },
+  "APPEARANCE_COSTUME_CUSTOM": {
+    "initState": 0
+  },
+  "BOSSRUSH": {
+    "uiId": [
+      1200
+    ],
+    "initState": 0,
+    "unlockDesc": 1852426609,
+    "desc": 1824346439,
+    "needPlayerTitle": 8
+  },
+  "CASHSHOP": {
+    "uiId": [
+      1600
+    ],
+    "initState": 0,
+    "unlockDesc": 1932862630,
+    "desc": 2128695077,
+    "needPlayerTitle": 2
+  },
+  "DAYNIGHTCHANGE": {
+    "unlockDesc": 1885607203,
+    "uiId": [
+      128
+    ],
+    "needPlayerTitle": 3,
+    "initState": 0
+  },
+  "EVENT": {
+    "unlockDesc": 1669980211,
+    "needHotKey": 1,
+    "uiId": [
+      276
+    ],
+    "initState": 0
+  },
+  "GRABEGGS": {
+    "uiId": [
+      806
+    ],
+    "initState": 0,
+    "unlockDesc": 1143394579,
+    "desc": 1433840515,
+    "needPlayerTitle": 7
+  },
+  "HOMECAR_MANAGEMENT": {
+    "initState": 0
+  },
+  "HOMELAND": {
+    "uiId": [
+      404,
+      416,
+      423,
+      419,
+      1420
+    ],
+    "initState": 0,
+    "unlockDesc": 1112820397,
+    "desc": 1431282362,
+    "needPlayerTitle": 3
+  },
+  "HOMELANDDESIGN": {
+    "initState": 1
+  },
+  "HOMELANDLOG": {
+    "initState": 1
+  },
+  "HOMELANDPLANTHANDBOOK": {
+    "initState": 1
+  },
+  "HOMELAND_PET": {
+    "initState": 0
+  },
+  "MAIL": {
+    "unlockDesc": 1404225999,
+    "needPlayerTitle": 2,
+    "initState": 0
+  },
+  "MAP": {
+    "unlockType": 1,
+    "needHotKey": 1,
+    "uiId": [
+      21
+    ],
+    "initState": 0,
+    "unlockDesc": 1477016477,
+    "desc": 1650387050,
+    "guideGroupId": 5100,
+    "entrance": [
+      0,
+      81
+    ]
+  },
+  "MARKSHARE": {
+    "needHotKey": 1,
+    "uiId": [
+      170
+    ],
+    "initState": 0,
+    "unlockDesc": 1346224935,
+    "needPlayerTitle": 3
+  },
+  "OEVERSEAS_PAYTEST": {
+    "initState": 1
+  },
+  "PETENTRY": {
+    "needHotKey": 1,
+    "uiId": [
+      89
+    ],
+    "initState": 0,
+    "desc": 1519734584,
+    "unlockDesc": 2002087617
+  },
+  "PETEQUIPMENT": {
+    "unlockDesc": 1904563351,
+    "needPlayerTitle": 4,
+    "desc": 1225913118,
+    "initState": 0
+  },
+  "PETEQUIPMENTGEM": {
+    "unlockDesc": 1465922829,
+    "desc": 1706402614,
+    "initState": 0
+  },
+  "PETEXCHANGE": {
+    "unlockDesc": 1554098431,
+    "needPlayerTitle": 2,
+    "initState": 0
+  },
+  "PETPOTENTIAL": {
+    "unlockDesc": 1104664567,
+    "needPlayerTitle": 5,
+    "desc": 1492910944,
+    "initState": 0
+  },
+  "PETRENAME": {
+    "initState": 0
+  },
+  "PETRESEARCH": {
+    "needHotKey": 1,
+    "uiId": [
+      111,
+      147
+    ],
+    "initState": 0,
+    "dialogueGraphId": 91059229,
+    "desc": 1159293093,
+    "unlockDesc": 1202820815
+  },
+  "PETRISINGSTAR": {
+    "unlockDesc": 1313490290,
+    "needPlayerTitle": 3,
+    "desc": 1170378943,
+    "initState": 0
+  },
+  "PHOTOGRAPHYSTUDIO": {
+    "initState": 1
+  },
+  "PLAYERENHANCEMENT": {
+    "needHotKey": 1,
+    "uiId": [
+      26
+    ],
+    "initState": 0,
+    "desc": 1533476983,
+    "unlockDesc": 1821975050
+  },
+  "QUICKCATCH": {
+    "needHotKey": 1,
+    "unlockDesc": 1891111714,
+    "initState": 1
+  },
+  "ROGUELIKE": {
+    "needHotKey": 1,
+    "needPlayerTitle": 6,
+    "initState": 0,
+    "unlockDesc": 1681412708,
+    "desc": 1985438448,
+    "uiId": [
+      502
+    ]
+  },
+  "ROGUELIKEHARVEST": {
+    "initState": 0
+  },
+  "ROGUELIKESWEEP": {
+    "initState": 0
+  },
+  "SCHOOLGUIDE": {
+    "uiId": [
+      754
+    ],
+    "initState": 0,
+    "unlockDesc": 1839992282,
+    "desc": 1691761699,
+    "needPlayerTitle": 2
+  },
+  "SPECIALTRAIN": {
+    "needHotKey": 1,
+    "needPlayerTitle": 2,
+    "initState": 0,
+    "unlockDesc": 2138415481,
+    "desc": 1121448887,
+    "uiId": [
+      235
+    ]
+  },
+  "SURVEY": {
+    "entrance": [
+      0,
+      184
+    ],
+    "uiId": [
+      275
+    ],
+    "initState": 1
+  },
+  "SeasonLobby": {
+    "unlockDesc": 1340032309,
+    "needPlayerTitle": 2,
+    "initState": 0
+  },
+  "TAKEPHOTO": {
+    "unlockDesc": 1799163576,
+    "needHotKey": 1,
+    "uiId": [
+      7
+    ],
+    "initState": 0
+  },
+  "VIP": {
+    "unlockDesc": 1955395171,
+    "needPlayerTitle": 2,
+    "initState": 0
+  },
+  "VITALITY": {
+    "needPlayerTitle": 1,
+    "desc": 1690739275,
+    "initState": 0
+  },
+  "TEAM": {
+    "unlockDesc": 1524583585,
+    "needPlayerTitle": 2,
+    "initState": 0
+  },
+  "service": {
+    "initState": 1
+  },
+  "QUEST": {
+    "needHotKey": 1,
+    "uiId": [
+      36
+    ],
+    "initState": 1,
+    "desc": 1957811799,
+    "unlockDesc": 1947421865
+  },
+  "CHAT": {
+    "needHotKey": 1,
+    "uiId": [
+      73
+    ],
+    "initState": 0,
+    "unlockDesc": 1667740902,
+    "needPlayerTitle": 2
+  },
+  "battlepass": {
+    "unlockDesc": 2027343297,
+    "needPlayerTitle": 2,
+    "desc": 1211723126,
+    "initState": 0
+  },
+  "HELP": {
+    "uiId": [
+      42
+    ],
+    "initState": 1
+  },
+  "ACTIVITY": {
+    "initState": 1
+  },
+  "ACTIVITYCENTER": {
+    "needHotKey": 1,
+    "needPlayerTitle": 2,
+    "initState": 0,
+    "desc": 1657309907,
+    "unlockDesc": 1627762214
+  },
+  "ANNOUNCEMENT": {
+    "initState": 1
+  }
+}

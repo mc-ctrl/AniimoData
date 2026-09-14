@@ -1,0 +1,92 @@
+{
+  "angularIncreaseDuration": 0.5,
+  "BPName": "ability_15710001",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10231_Attack02_Bullet",
+  "enableMaxAngleTime": 0.5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 15710001,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "d3a91c54-abc7-4ec3-ae86-7420ab614d7a",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 9,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "18": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "1484f25d-cf9b-4150-ac2d-14add50329de",
+      "effectId": "Eff_Hit_Wind_Blunt",
+      "speed": 1.01,
+      "NodeID": 18
+    },
+    "30": {
+      "UID": "1ab84957-bb23-4de8-a8de-955be1507e54",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 30
+    },
+    "25": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.37
+      },
+      "name": "calcResult",
+      "UID": "3229435f-0102-468e-abfa-c661ba43d1cc",
+      "target": "CASTER",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "6804a26b-a7d2-4785-893c-45035e468a09",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 25,
+  "onProjectileFinishIds": [
+    18
+  ],
+  "onProjectileHitIds": [
+    29,
+    26
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "calcResultNodeId": 29,
+  "tickInterval": 0,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 0.8,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

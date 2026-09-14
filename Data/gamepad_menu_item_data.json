@@ -1,0 +1,42 @@
+{
+  "SPECIALTRAIN": {
+    "name": -1639598392,
+    "icon": "$UI_HUD_Entry_Training.png"
+  },
+  "PETENTRY": {
+    "name": -1990387285,
+    "icon": "$UI_HUD_Entry_Manage.png"
+  },
+  "TOWER_PETS": {
+    "name": -494518859,
+    "icon": "$UI_Img_TowNewSet_icon8.png"
+  },
+  "TAKEPHOTO": {
+    "name": -892717802,
+    "icon": "$UI_HUD_Entry_Photo.png"
+  },
+  "QUEST": {
+    "name": -1195237455,
+    "icon": "$UI_HUD_Entry_Task.png"
+  },
+  "PETRESEARCH": {
+    "name": -1536706745,
+    "icon": "$UI_HUD_Entry_ResearchLog.png"
+  },
+  "TOWER_BUFF": {
+    "name": -777143887,
+    "icon": "$UI_Img_TowNewSet_icon7.png"
+  },
+  "ACTIVITYCENTER": {
+    "name": -842960725,
+    "icon": "$UI_HUD_Entry_EventMain.png"
+  },
+  "MAP": {
+    "name": -278258856,
+    "icon": "$UI_HUD_Entry_Map.png"
+  },
+  "BAG": {
+    "name": -1382903929,
+    "icon": "$UI_HUD_Entry_Inventory.png"
+  }
+}

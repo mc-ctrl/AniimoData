@@ -1,0 +1,47 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102310",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "name": "新手炎铠龙回能",
+  "onBuffThinkIds": [
+    8
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "calcInfo": {
+        "sp_cur": 300
+      },
+      "name": "calcResult",
+      "UID": "bc567a2a-a737-4dca-b42b-a81cc44da167",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "81b13c8e-a993-4030-ba65-6d05d8267bd2",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "10": {
+      "calcInfo": {
+        "sp_cur": 300
+      },
+      "name": "calcResult",
+      "UID": "ca446d61-dd1f-4c7c-b52d-a50702ddf810",
+      "target": "OWNER",
+      "NodeID": 10
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    10
+  ]
+}

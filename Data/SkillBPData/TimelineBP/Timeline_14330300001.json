@@ -1,0 +1,216 @@
+{
+  "nodeMap": {
+    "31": {
+      "UID": "df71217c-7d19-4421-affd-a7e178a6ceef",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "NodeID": 31
+    },
+    "33": {
+      "UID": "98e5c79f-a9e2-432f-b8be-fe6be1899bd1",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 33
+    },
+    "12": {
+      "UID": "3c407bf8-e010-45f1-869a-a0dd4edb7be8",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 12
+    },
+    "21": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2143301,
+      "NodeID": 21,
+      "UID": "81b8450a-6b04-4e37-beb9-6109da836f39",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "30": {
+      "actionIds": [
+        29
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "3e186e6c-5d11-445b-8916-ddd29d03ff78",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        32
+      ],
+      "NodeID": 30
+    },
+    "23": {
+      "UID": "d082c1ce-7cf1-4558-994d-e9fd65800703",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 23
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "b9d2afe7-a06d-40ab-97f5-3eb957cba96f",
+      "target": "CASTER",
+      "NodeID": 2
+    },
+    "14": {
+      "UID": "8d06ad3c-cdf9-4c84-b9ed-7b6ce550727e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19,
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "93511ecd-859c-46fa-acfa-cf499db831a4",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2868e199-dfda-46d7-8900-95c58ae05557",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "Skill_ChimneySentry_Start"
+    },
+    "25": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.35,
+        0.9,
+        -0.15
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "f1f9f76f-e3a4-4ad5-90a2-1983cf7a90a4",
+      "effectId": "Eff_Parmon_10433_Skill_ChimneySentry_Release",
+      "offsetRotation": [
+        0,
+        0,
+        90
+      ],
+      "NodeID": 25
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 26,
+      "UID": "b1a80bd9-5816-40e9-953f-fcd36abe051d"
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6131b460-9ed4-4b24-8dc3-3d36b4e8a425",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "Skill_ChimneySentry_End"
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 28,
+      "UID": "84c6ee8c-b91f-4f38-aec7-cc8368cabadc"
+    },
+    "29": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "e1659b24-4d5b-4129-bf91-ac55f72fa335",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 18,
+      "UID": "6346d8ad-4a18-44e9-a0f5-e4ad7de4a04e"
+    },
+    "32": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "ee940a7e-982b-4323-80f2-e45209d70b1b",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 32
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "1be36c18-5b2d-4f7e-bac0-2a59fac1094c",
+      "effectId": "Eff_Parmon_10041_Attack01_Prepare",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "17": {
+      "UID": "87cbe983-0aa8-4f25-b397-db81c5765ec7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 17
+    },
+    "4": {
+      "UID": "b581cd28-03e6-4b71-9438-db9b28affdaf",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          10,
+          15
+        ]
+      },
+      "NodeID": 4
+    }
+  },
+  "BPName": "ability_14330300",
+  "NodeID": 6,
+  "UID": "7c0a90df-c3cb-40c4-b57d-332730182290",
+  "eventIds": [
+    4,
+    26,
+    23,
+    18,
+    14,
+    28,
+    31
+  ],
+  "layer": "Base",
+  "length": 1.167
+}

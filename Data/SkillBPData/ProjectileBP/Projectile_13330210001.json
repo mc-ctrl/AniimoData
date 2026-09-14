@@ -1,0 +1,51 @@
+{
+  "duration": 5,
+  "BPName": "ability_13330210",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10052_Fireball",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "102": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 133301,
+      "name": "createEntity",
+      "UID": "88691d8c-723f-49f8-9e59-8c0f8e7ad2a2",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 102,
+      "pos": {
+        "UID": "6e9735db-a3ae-4576-b5e2-4af53644808f",
+        "name": "getProjectilePos",
+        "NodeID": 101
+      }
+    }
+  },
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    102
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0.01,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

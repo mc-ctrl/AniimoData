@@ -1,0 +1,39 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "e5b58cc7-1026-41ff-bb5f-bc263fb8f894",
+      "name": "registerHealEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3
+    },
+    "4": {
+      "unsummonValid": false,
+      "actionIds": [
+        3
+      ],
+      "name": "registerGroupEvent",
+      "UID": "2360c0b2-c129-401a-9c0e-7593e6c444f0",
+      "NodeID": 4
+    },
+    "2": {
+      "duration": 0,
+      "buffId": 20300000,
+      "NodeID": 2,
+      "UID": "8ad8f271-be0f-4e1e-9431-ebaf88e86e26",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_2030000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_12220201",
+  "NodeID": 1,
+  "UID": "f30de826-1d3d-4ecc-9b3b-5957349cc19c",
+  "abilityParamId": 10400123,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 12220201001,
+      "name": "setCombatActionTimeline",
+      "UID": "d4d73658-7292-4e30-a55a-0b7b51b12558",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Spark"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Electric_Blunt",
+    "Eff_Parmon_10222_Skill_EleField_01_L",
+    "Eff_Parmon_10222_Skill_EleField_01_R",
+    "Eff_Parmon_10222_Skill_EleField_02",
+    "Eff_Parmon_10222_Skill_Shield_Spark",
+    "Eff_Hit_Electric_Slash_Y",
+    "Eff_Parmon_10072_ChargeFur",
+    "Eff_Parmon_10072_ChargeFur_Biu",
+    "Eff_Parmon_10221_Skill_ElectroShield"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0
+}

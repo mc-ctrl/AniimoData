@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "19": {
+      "calcId": 2050005,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 19,
+      "UID": "aa6e9d00-77b7-4eac-b70f-693c851c4297",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "name": "delayProcessDamage",
+      "interval": 1,
+      "UID": "2d0b5def-2c44-4f53-88de-25405ff9c2bb",
+      "delayCount": {
+        "calcId": 2050005,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 19,
+        "UID": "aa6e9d00-77b7-4eac-b70f-693c851c4297",
+        "name": "getParamByLuaConfig"
+      },
+      "ratio": {
+        "calcId": 2050005,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 16,
+        "UID": "621360af-e3be-47cf-95ef-e80d8a827910",
+        "name": "getParamByLuaConfig"
+      },
+      "NodeID": 17
+    },
+    "18": {
+      "unsummonValid": false,
+      "actionIds": [
+        17
+      ],
+      "name": "registerGroupEvent",
+      "UID": "66c0dbd2-16fc-4538-afbd-b5572ab42bcd",
+      "NodeID": 18
+    },
+    "16": {
+      "calcId": 2050005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 16,
+      "UID": "621360af-e3be-47cf-95ef-e80d8a827910",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_2050005",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    18
+  ]
+}

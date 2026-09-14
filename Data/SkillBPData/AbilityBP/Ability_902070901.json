@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_902070901",
+  "NodeID": 1,
+  "UID": "4490a65a-f1f3-4f83-b7e9-e0e3a8fd1e03",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 902070901001,
+      "name": "setCombatActionTimeline",
+      "UID": "d0734830-ff4a-42f9-ae65-0a58b9dae76a",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Appear"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90207_Skill_RoarAttack02",
+    "Eff_Monster_90207_Skill_RoarAttack",
+    "Eff_Hit_None_Blunt",
+    "Eff_Monster_Eff_90207_appear01",
+    "Eff_Monster_90207_appear02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 49027011
+}

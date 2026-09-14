@@ -1,0 +1,110 @@
+[
+  {
+    "num": 2,
+    "element": "Fire",
+    "buffId": 10094,
+    "name": 1631704791
+  },
+  {
+    "num": 2,
+    "element": "Grass",
+    "buffId": 10095,
+    "name": 1665892319
+  },
+  {
+    "num": 2,
+    "element": "Water",
+    "buffId": 10096,
+    "name": 1893888198
+  },
+  {
+    "num": 2,
+    "element": "Rock",
+    "buffId": 10097,
+    "name": 1676893068
+  },
+  {
+    "num": 2,
+    "element": "Electric",
+    "buffId": 10098,
+    "name": 1670773773
+  },
+  {
+    "num": 2,
+    "element": "Ice",
+    "buffId": 10099,
+    "name": 2123645238
+  },
+  {
+    "num": 2,
+    "element": "Wind",
+    "buffId": 10100,
+    "name": 1237587351
+  },
+  {
+    "num": 2,
+    "element": "Dark",
+    "buffId": 10101,
+    "name": 2063678498
+  },
+  {
+    "num": 2,
+    "element": "Holy",
+    "buffId": 10102,
+    "name": 1427314328
+  },
+  {
+    "num": 5,
+    "element": "Fire",
+    "buffId": 10104,
+    "name": 1772307077
+  },
+  {
+    "num": 5,
+    "element": "Grass",
+    "buffId": 10105,
+    "name": 1923341824
+  },
+  {
+    "num": 5,
+    "element": "Water",
+    "buffId": 10106,
+    "name": 1332767778
+  },
+  {
+    "num": 5,
+    "element": "Rock",
+    "buffId": 10107,
+    "name": 1416622241
+  },
+  {
+    "num": 5,
+    "element": "Electric",
+    "buffId": 10108,
+    "name": 1982369871
+  },
+  {
+    "num": 5,
+    "element": "Ice",
+    "buffId": 10109,
+    "name": 1251110572
+  },
+  {
+    "num": 5,
+    "element": "Wind",
+    "buffId": 10110,
+    "name": 1471490429
+  },
+  {
+    "num": 5,
+    "element": "Dark",
+    "buffId": 10111,
+    "name": 1849641877
+  },
+  {
+    "num": 5,
+    "element": "Holy",
+    "buffId": 10112,
+    "name": 1259501530
+  }
+]

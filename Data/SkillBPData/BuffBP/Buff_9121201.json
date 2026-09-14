@@ -1,0 +1,259 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9121201",
+  "name": "花舞鸢尾舞力值特性buff",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "草地上每次造成技能伤害积累1点舞力值，续满后下一次释放技能时提高100%魔攻持续2s",
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    25
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "7": {
+      "buffId": 912120101,
+      "name": "removeBuff",
+      "UID": "2cd21dec-d30d-44a9-885f-b71547791523",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "9": {
+      "key": "delay",
+      "duration": 3,
+      "actionIds": [
+        7,
+        11,
+        30
+      ],
+      "NodeID": 9,
+      "UID": "06850f8b-077e-4072-8c47-a19c6f14841b",
+      "name": "addTimer"
+    },
+    "11": {
+      "buffId": 912120102,
+      "name": "removeBuff",
+      "UID": "ca036520-0812-48bf-9118-194132643e0b",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 912120101,
+      "NodeID": 20,
+      "UID": "85e5052c-e7bc-4ef9-a219-4d3a1fea3835",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "2": {
+      "UID": "b1baa881-bb6b-4ee3-a492-12d617d4df52",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 2
+    },
+    "3": {
+      "actionIds": [
+        22
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "df9617bd-ee14-4890-8c82-7df07a727313",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "4be51a1d-47c9-484e-8067-e8e0a631f548",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 912120106,
+      "NodeID": 24,
+      "UID": "9fc2c2d0-ad1a-438a-a361-c5f4e20d37a9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "71eb6571-9908-428f-bc7c-69fae01d08a4",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "709cb5bb-966c-4072-ae7f-bc5fd66a55e4",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 13,
+      "UID": "4a6c0fa7-3e34-408d-970f-21a2900e6420",
+      "enterTrapActionIds": [
+        17
+      ],
+      "relation": 4,
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        19
+      ],
+      "shapeArgs": [
+        0
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "prefFilterActionIds": [
+        12
+      ],
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "25": {
+      "thresholdActionIds": [
+        24
+      ],
+      "failedActionIds": [
+        27
+      ],
+      "threshold": 1,
+      "UID": "e9e6201a-e0f6-438c-9c1e-60551322c3fe",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "normalGrass",
+      "NodeID": 25,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "12": {
+      "name": "hasEntityTag",
+      "UID": "ddf503c7-0160-4268-9ce2-41c2290654b7",
+      "target": "TrapTarget",
+      "NodeID": 12,
+      "entityTag": "TE_Cre_Grass"
+    },
+    "27": {
+      "buffId": 912120106,
+      "name": "removeBuff",
+      "UID": "0817e58b-07fb-4c5a-a740-85eb07671b17",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "2febfc81-2d60-4b5b-8a59-8c7b538f4c5d",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "34047427-8c22-47e7-904d-81bb308793b1",
+        "NodeID": 16,
+        "lValue": {
+          "key": "seed",
+          "name": "getCacheVal",
+          "UID": "bb826971-a978-46e7-9292-b0ace1ba257b",
+          "target": "OWNER",
+          "NodeID": 15
+        }
+      },
+      "NodeID": 17
+    },
+    "28": {
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 1,
+      "spEnergyInitV": 0,
+      "UID": "05db77ef-fc5c-4de3-bbab-dd7dc4efcae6",
+      "superBoosted": true,
+      "spEnergyMaxV": 24,
+      "name": "registerPassiveEnergyInfo",
+      "NodeID": 28,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 1
+    },
+    "30": {
+      "calcInfo": {
+        "passive_energy_cur": -24
+      },
+      "name": "calcResult",
+      "UID": "cb30669c-0027-4dbb-8f20-11ab2b24f575",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "17e6a5b9-d720-4965-9af2-280929ee1b6a",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "c1a3487b-4ae7-4a3d-bb6e-d843a1f40a25",
+      "target": "OWNER",
+      "val": {
+        "rValue": -1,
+        "name": "add",
+        "UID": "1c2bc4a7-3c78-4be9-96be-75240623612c",
+        "NodeID": 18,
+        "lValue": {
+          "key": "seed",
+          "name": "getCacheVal",
+          "UID": "bb826971-a978-46e7-9292-b0ace1ba257b",
+          "target": "OWNER",
+          "NodeID": 15
+        }
+      },
+      "NodeID": 19
+    },
+    "22": {
+      "actionIds": [
+        20,
+        32
+      ],
+      "NodeID": 22,
+      "UID": "4ead161c-1506-407d-b147-bbdf89719873",
+      "cd": 0.1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "23": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "d8447623-bb41-492d-9ce3-87cc0b2c5a56",
+      "name": "buffStartThink",
+      "NodeID": 23
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    14,
+    13,
+    4,
+    10,
+    23,
+    28
+  ]
+}

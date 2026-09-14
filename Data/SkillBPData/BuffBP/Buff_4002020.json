@@ -1,0 +1,140 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4002020",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "calcId": 4002020,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 13,
+      "UID": "a6fec9be-1e89-4920-8fb5-d65f34c960a6",
+      "name": "getParamByLuaConfig"
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "ba6d69dc-2c0a-48b9-85e2-23e9946704a1",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 14
+    },
+    "10": {
+      "unsummonValid": false,
+      "actionIds": [
+        9
+      ],
+      "name": "registerGroupEvent",
+      "UID": "070b4a62-9c8a-45a2-815b-5577586c8090",
+      "NodeID": 10
+    },
+    "15": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "c8010044-80bd-46b1-8cf5-ce94ebeb3c34",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "calcInfo": {
+        "add_cur_hp_max_p": {
+          "rValue": {
+            "calcId": 4002020,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 13,
+            "UID": "a6fec9be-1e89-4920-8fb5-d65f34c960a6",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "2735a603-6bbf-4831-aef7-eabe3b8d1430",
+          "NodeID": 5,
+          "lValue": {
+            "UID": "9c4f6ce6-17ed-435b-a6b1-824b7e2eda56",
+            "name": "getCostEpValue",
+            "NodeID": 4
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "88d3c117-d7a6-49d5-a627-16106436b77b",
+      "target": "CURPET",
+      "NodeID": 7
+    },
+    "16": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "654f09a1-6028-4a6b-b86a-a5073b0847f6",
+      "effectId": "Eff_Parmon_10194_Buff_Heal_Arrow_Up",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "857ddb63-c231-4984-9f08-d402c947ba76",
+      "effectId": "Eff_Parmon_10194_Buff_Heal_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "04507de2-8191-45b4-93b3-0990cf7c1068",
+      "name": "registerCostEpEvent",
+      "actionIds": [
+        16,
+        7,
+        18
+      ],
+      "NodeID": 9
+    },
+    "18": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18,
+      "UID": "5e036987-81a7-4c64-ad17-76fb9d2ff598",
+      "name": "addTimer"
+    },
+    "19": {
+      "buffId": 4002020,
+      "name": "removeBuff",
+      "UID": "69a80d95-56f4-4c00-8226-7f574a2af908",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "c84fccac-46bd-4409-935d-e9bc3826432c",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "4": {
+      "UID": "9c4f6ce6-17ed-435b-a6b1-824b7e2eda56",
+      "name": "getCostEpValue",
+      "NodeID": 4
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 4002020,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    14
+  ],
+  "onBuffStartIds": [
+    20,
+    15,
+    10
+  ]
+}

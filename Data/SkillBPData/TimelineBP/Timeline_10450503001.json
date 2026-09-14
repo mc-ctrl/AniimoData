@@ -1,0 +1,1948 @@
+{
+  "nodeMap": {
+    "52": {
+      "offsetXYZ": [
+        6,
+        0,
+        10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "1ec65853-9aab-4c29-83da-cdbc85194eea",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 52,
+      "pos": "CASTER"
+    },
+    "53": {
+      "offsetXYZ": [
+        -6,
+        0,
+        10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "e10925b3-82b8-45c2-bef4-258111836a2d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 53,
+      "pos": "CASTER"
+    },
+    "126": {
+      "offsetXYZ": [
+        18.48,
+        0,
+        -7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "1e690dd1-cf77-4e76-b58a-056ebd296372",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 126,
+      "pos": "CASTER"
+    },
+    "54": {
+      "offsetXYZ": [
+        -12,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "a3b2c134-95d0-4d8e-8a0a-667cfe13daf5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 54,
+      "pos": "CASTER"
+    },
+    "130": {
+      "offsetXYZ": [
+        -7.65,
+        0,
+        -18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "3f5c98b3-6177-41c4-a892-90cce2173077",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 130,
+      "pos": "CASTER"
+    },
+    "119": {
+      "offsetXYZ": [
+        18.48,
+        0,
+        7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "78600ccf-cc77-490e-abea-de01cb707a3a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 119,
+      "pos": "CASTER"
+    },
+    "120": {
+      "offsetXYZ": [
+        -18.48,
+        0,
+        -7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "4e79e15f-2dda-4d13-8199-50264eaaf4a8",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 120,
+      "pos": "CASTER"
+    },
+    "121": {
+      "offsetXYZ": [
+        7.65,
+        0,
+        18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "6a289741-9d02-4717-b0a0-7c5df0ddbb45",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 121,
+      "pos": "CASTER"
+    },
+    "122": {
+      "offsetXYZ": [
+        -7.65,
+        0,
+        -18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "a1551cab-7475-4ff7-96d3-1ba76ea4a7eb",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 122,
+      "pos": "CASTER"
+    },
+    "123": {
+      "offsetXYZ": [
+        -7.65,
+        0,
+        18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "b7ac8f4e-4bdd-401b-97d8-38562582b0b2",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 123,
+      "pos": "CASTER"
+    },
+    "124": {
+      "offsetXYZ": [
+        7.65,
+        0,
+        -18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "597ccdf6-6eb2-4387-a12c-30fad83c40e9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 124,
+      "pos": "CASTER"
+    },
+    "125": {
+      "offsetXYZ": [
+        -18.48,
+        0,
+        7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "a0c6ab66-fbe3-4d3a-b4b0-a64c0b8b5fd4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 125,
+      "pos": "CASTER"
+    },
+    "127": {
+      "offsetXYZ": [
+        18.48,
+        0,
+        7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "81cd85f8-5368-4159-915d-c0bbc73fa7ad",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 127,
+      "pos": "CASTER"
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "129": {
+      "offsetXYZ": [
+        7.65,
+        0,
+        18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "4e73aea6-ce70-41ce-a80f-37bf4307edbe",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 129,
+      "pos": "CASTER"
+    },
+    "131": {
+      "offsetXYZ": [
+        -7.65,
+        0,
+        18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "c2b74aad-d61b-49d0-ac49-b1b2373dc7cb",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 131,
+      "pos": "CASTER"
+    },
+    "132": {
+      "offsetXYZ": [
+        7.65,
+        0,
+        -18.48
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "c3e92c34-14aa-4595-a105-756791b7bf4c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 132,
+      "pos": "CASTER"
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 31,
+      "UID": "683e2f71-dae9-4c07-aeab-c67a01f2df6b"
+    },
+    "133": {
+      "offsetXYZ": [
+        -18.48,
+        0,
+        7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "2ba170ad-d4ac-4a5a-92e4-9f053d888410",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 133,
+      "pos": "CASTER"
+    },
+    "134": {
+      "offsetXYZ": [
+        18.48,
+        0,
+        -7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "06e6afde-5a8b-4b3a-b139-7362843bc1f3",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 134,
+      "pos": "CASTER"
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          135,
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 20,
+      "UID": "91bd9fd5-3567-4394-b41f-457ab9087fce"
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "135": {
+      "UID": "ac5d8370-e1b0-4719-a652-d785398506f7",
+      "name": "stopAnimation",
+      "anim": "Attack04_NoMotion",
+      "NodeID": 135
+    },
+    "128": {
+      "offsetXYZ": [
+        -18.48,
+        0,
+        -7.65
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "e677a2b7-3e62-4a2e-80b5-4d9aab5e7c83",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 128,
+      "pos": "CASTER"
+    },
+    "55": {
+      "offsetXYZ": [
+        -6,
+        0,
+        -10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "9af24220-20c5-48f0-a902-b31e3e95dd95",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 55,
+      "pos": "CASTER"
+    },
+    "74": {
+      "offsetXYZ": [
+        14.14,
+        0,
+        -14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ddeb7441-f633-497e-acbe-e432b43c8ec8",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 74,
+      "pos": "CASTER"
+    },
+    "56": {
+      "offsetXYZ": [
+        6,
+        0,
+        -10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "104accf3-ebc7-4bf2-8867-58b49c2fee8b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 56,
+      "pos": "CASTER"
+    },
+    "75": {
+      "offsetXYZ": [
+        6.12,
+        0,
+        -14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "59ad466d-5aff-43b3-ba96-10f01af0559b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 75,
+      "pos": "CASTER"
+    },
+    "57": {
+      "offsetXYZ": [
+        14.78,
+        0,
+        6
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ab977744-cfe4-4f55-a449-5cff4e4ca694",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 57,
+      "pos": "CASTER"
+    },
+    "76": {
+      "offsetXYZ": [
+        14.78,
+        0,
+        -6.12
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "c2320f03-e6a2-4c1c-a11a-77a1ccc21011",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 76,
+      "pos": "CASTER"
+    },
+    "112": {
+      "offsetXYZ": [
+        6.93,
+        0,
+        -4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "e5827088-eb0d-4812-829d-8234976761f5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 112,
+      "pos": "CASTER"
+    },
+    "77": {
+      "offsetXYZ": [
+        20,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ad99879a-d8f1-47d9-8711-3c99f0165c84",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 77,
+      "pos": "CASTER"
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          57,
+          60,
+          61,
+          62,
+          63,
+          64,
+          75,
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.9,
+      "NodeID": 59,
+      "UID": "c9226e60-5da2-4021-975f-090cbca6f3b4"
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2ad91fde-1221-4eb9-8d2d-a989028f303d",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "IdleSpecial"
+    },
+    "60": {
+      "offsetXYZ": [
+        6.12,
+        0,
+        14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "906246d1-a7f7-42fb-8973-b231b3e5e3c7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 60,
+      "pos": "CASTER"
+    },
+    "79": {
+      "action": {
+        "actionIds": [
+          77,
+          80,
+          81,
+          82,
+          83,
+          84,
+          128,
+          86,
+          127,
+          129,
+          131,
+          133,
+          85,
+          130,
+          132,
+          134
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 79,
+      "UID": "beda4790-8135-45b4-97e9-7b7a583808c4"
+    },
+    "61": {
+      "offsetXYZ": [
+        -6.12,
+        0,
+        14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ee858f07-eb02-43d0-90c5-2c7ef8502e9a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 61,
+      "pos": "CASTER"
+    },
+    "80": {
+      "offsetXYZ": [
+        14.14,
+        0,
+        14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "e06be514-e23a-41f1-97de-55f83c6a6181",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 80,
+      "pos": "CASTER"
+    },
+    "37": {
+      "action": {
+        "actionIds": [
+          35,
+          38,
+          39,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 37,
+      "UID": "bf926f69-771d-4bc3-b610-5da9f0df99ea"
+    },
+    "38": {
+      "offsetXYZ": [
+        0,
+        0,
+        4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "4a7052c8-69b2-492b-a18d-14ed0a55d641",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 38,
+      "pos": "CASTER"
+    },
+    "39": {
+      "offsetXYZ": [
+        -4,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "153d04e5-4643-44b6-80ab-e42a64f306e3",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 39,
+      "pos": "CASTER"
+    },
+    "40": {
+      "offsetXYZ": [
+        0,
+        0,
+        -4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "408b98fe-ff6c-4d5d-82d2-8d4014c81a5c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 40,
+      "pos": "CASTER"
+    },
+    "41": {
+      "offsetXYZ": [
+        6.93,
+        0,
+        4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ce41904d-7108-4d9b-84c7-66f745c40915",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 41,
+      "pos": "CASTER"
+    },
+    "64": {
+      "offsetXYZ": [
+        -6.12,
+        0,
+        -14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "2803dbbc-d3bc-490a-b39f-68845e50f708",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 64,
+      "pos": "CASTER"
+    },
+    "35": {
+      "offsetXYZ": [
+        4,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "9f45368e-a1e6-4ccb-bf61-2b1ab8a2fb16",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 35,
+      "pos": "CASTER"
+    },
+    "44": {
+      "offsetXYZ": [
+        0,
+        0,
+        8
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "072fc941-d8f1-46a8-ae42-73b58082dfbc",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 44,
+      "pos": "CASTER"
+    },
+    "84": {
+      "offsetXYZ": [
+        -14.14,
+        0,
+        -14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "74e46517-f74f-41b6-af4d-963d693c744d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 84,
+      "pos": "CASTER"
+    },
+    "111": {
+      "offsetXYZ": [
+        0,
+        0,
+        -8
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "5dd7ec40-d9ba-43d7-b5ce-260b99811c21",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 111,
+      "pos": "CASTER"
+    },
+    "83": {
+      "offsetXYZ": [
+        -20,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ff0fb110-83a7-489e-b1e4-ea099b75c586",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 83,
+      "pos": "CASTER"
+    },
+    "67": {
+      "action": {
+        "actionIds": [
+          65,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          119,
+          121,
+          123,
+          125,
+          126,
+          124,
+          122,
+          120
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.4,
+      "NodeID": 67,
+      "UID": "70a90d7d-f17b-4729-8cdc-a6fa6b40f386"
+    },
+    "109": {
+      "offsetXYZ": [
+        -6.93,
+        0,
+        4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "877883c2-81da-4270-a93a-95abc1eeaa2d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 109,
+      "pos": "CASTER"
+    },
+    "86": {
+      "offsetXYZ": [
+        14.14,
+        0,
+        -14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "a2bbd125-c334-491e-9d08-4505a2934697",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 86,
+      "pos": "CASTER"
+    },
+    "108": {
+      "offsetXYZ": [
+        0,
+        0,
+        8
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "c23d9b87-1bf2-4fa9-82e9-83025748a034",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 108,
+      "pos": "CASTER"
+    },
+    "87": {
+      "offsetXYZ": [
+        14.78,
+        0,
+        6
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ab9a1012-f8a9-461a-92fe-4e6dfa9928fc",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 87,
+      "pos": "CASTER"
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "70": {
+      "offsetXYZ": [
+        -14.14,
+        0,
+        14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "36b9fa55-ebed-439d-b411-fc69e1e3f737",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 70,
+      "pos": "CASTER"
+    },
+    "107": {
+      "action": {
+        "actionIds": [
+          105,
+          108,
+          109,
+          110,
+          111,
+          112
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7,
+      "NodeID": 107,
+      "UID": "b23392b6-9db0-498b-85da-2dbf29b40a1b"
+    },
+    "89": {
+      "action": {
+        "actionIds": [
+          87,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 89,
+      "UID": "4c030d6c-be79-43e4-ba7d-26f3aa2f835a"
+    },
+    "101": {
+      "offsetXYZ": [
+        -6,
+        0,
+        10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "88554cc4-bf0f-4699-9739-b2499bf717c4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 101,
+      "pos": "CASTER"
+    },
+    "72": {
+      "offsetXYZ": [
+        -14.14,
+        0,
+        -14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "4588f371-3abe-4745-8c04-cba37750d281",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 72,
+      "pos": "CASTER"
+    },
+    "105": {
+      "offsetXYZ": [
+        6.93,
+        0,
+        4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "f1ac9fcb-f1e6-4cd3-8e16-0a3cccce5cf1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 105,
+      "pos": "CASTER"
+    },
+    "73": {
+      "offsetXYZ": [
+        0,
+        0,
+        -20
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "2a168810-d6d6-4363-8196-453f5c3d3313",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 73,
+      "pos": "CASTER"
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10,
+      "NodeID": 29,
+      "UID": "1dc70c5b-53ff-4f4c-81b5-ffb212980a44"
+    },
+    "92": {
+      "offsetXYZ": [
+        -14.78,
+        0,
+        6.12
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "7c037208-d05b-477d-a20f-a06d72cc1190",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 92,
+      "pos": "CASTER"
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "93": {
+      "offsetXYZ": [
+        -14.78,
+        0,
+        -6.12
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "a03d9571-94c2-4a5d-a02f-170c8712970d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 93,
+      "pos": "CASTER"
+    },
+    "15": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 15,
+      "UID": "07d1059a-48b5-4e08-bf71-a8c338485d44",
+      "target": "OWNER",
+      "disableMotion": true,
+      "animId": "Attack04_NoMotion"
+    },
+    "94": {
+      "offsetXYZ": [
+        -6.12,
+        0,
+        -14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "0e696a7c-a49e-4cfc-899e-a0d6916f2613",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 94,
+      "pos": "CASTER"
+    },
+    "28": {
+      "UID": "afbdc6c2-1c03-44b6-8720-91ce5d9b2a08",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 28
+    },
+    "95": {
+      "offsetXYZ": [
+        6.12,
+        0,
+        -14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "60617d78-bca3-4d91-ada7-9c7ae95751db",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 95,
+      "pos": "CASTER"
+    },
+    "30": {
+      "target": "OWNER",
+      "scale": 0.6,
+      "speed": 1,
+      "NodeID": 30,
+      "UID": "b27fc38a-7913-4244-82ef-2d311a03ff07",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_State",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "96": {
+      "offsetXYZ": [
+        14.78,
+        0,
+        -6.12
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "cff54f26-b07f-4209-91ca-ca31c934f157",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 96,
+      "pos": "CASTER"
+    },
+    "91": {
+      "offsetXYZ": [
+        -6.12,
+        0,
+        14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "911f5785-882a-4116-834c-5f63e9b0e123",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 91,
+      "pos": "CASTER"
+    },
+    "97": {
+      "offsetXYZ": [
+        12,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "88c05982-7337-49ae-bdb7-49960bb34ea9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 97,
+      "pos": "CASTER"
+    },
+    "90": {
+      "offsetXYZ": [
+        6.12,
+        0,
+        14.78
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "8aa9bde9-0e9b-406f-a7fe-3b8b17563041",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 90,
+      "pos": "CASTER"
+    },
+    "85": {
+      "offsetXYZ": [
+        0,
+        0,
+        -20
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "2da17d05-a456-4a9e-9fb8-02283f3994db",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 85,
+      "pos": "CASTER"
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "bac3dc10-fa8a-4091-ab32-8f2445c6b0de",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_State",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "99": {
+      "action": {
+        "actionIds": [
+          97,
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.5,
+      "NodeID": 99,
+      "UID": "9eed3948-05b9-4b80-917d-8d754c7d13b2"
+    },
+    "82": {
+      "offsetXYZ": [
+        -14.14,
+        0,
+        14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "3c1bd332-d358-480e-9ca3-8b334c701299",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 82,
+      "pos": "CASTER"
+    },
+    "100": {
+      "offsetXYZ": [
+        6,
+        0,
+        10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "6e75f641-0667-49ae-acf7-168c8f52a865",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 100,
+      "pos": "CASTER"
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          41,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 43,
+      "UID": "fbf4a576-e6b9-4114-83c9-035bb3a6eb6b"
+    },
+    "63": {
+      "offsetXYZ": [
+        -14.78,
+        0,
+        -6.12
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ccc53be5-71f9-4504-b28b-98356ed23a00",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 63,
+      "pos": "CASTER"
+    },
+    "102": {
+      "offsetXYZ": [
+        -12,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "3806e562-c3f6-4add-bd3e-f7007214dc3e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 102,
+      "pos": "CASTER"
+    },
+    "46": {
+      "offsetXYZ": [
+        -6.93,
+        0,
+        -4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "77b127b3-8d2a-4583-b93a-4f2654485de1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 46,
+      "pos": "CASTER"
+    },
+    "103": {
+      "offsetXYZ": [
+        -6,
+        0,
+        -10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "44d111ec-7244-4577-b907-0419ce5c3465",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 103,
+      "pos": "CASTER"
+    },
+    "24": {
+      "target": "OWNER",
+      "scale": 0.6,
+      "speed": 1,
+      "NodeID": 24,
+      "UID": "ed60ec4c-3c50-4827-a549-a69e9b717a04",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_AbsorbWater_Start",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "104": {
+      "offsetXYZ": [
+        6,
+        0,
+        -10.39
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "f441d151-8bbb-4981-a810-72b6133275d1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 104,
+      "pos": "CASTER"
+    },
+    "17": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          24
+        ]
+      },
+      "NodeID": 17
+    },
+    "45": {
+      "offsetXYZ": [
+        -6.93,
+        0,
+        4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "c64a87ad-7a90-4136-a282-42918e5374a0",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 45,
+      "pos": "CASTER"
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8.7,
+      "NodeID": 34,
+      "UID": "91bb1f3e-80b2-43ce-946b-1a34d047b5ea"
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "62": {
+      "offsetXYZ": [
+        -14.78,
+        0,
+        6.12
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "e41df9b1-7e60-4fb9-9aad-c9c64d39ff61",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 62,
+      "pos": "CASTER"
+    },
+    "47": {
+      "offsetXYZ": [
+        0,
+        0,
+        -8
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "8d51b70d-3960-4ea0-94e9-f7d1ea8b4c78",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 47,
+      "pos": "CASTER"
+    },
+    "65": {
+      "offsetXYZ": [
+        20,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "381aaff7-95dd-4042-ad30-9e78b6608092",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 65,
+      "pos": "CASTER"
+    },
+    "48": {
+      "offsetXYZ": [
+        6.93,
+        0,
+        -4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ef6521d8-7fc1-425e-aa5d-afa5b312e862",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 48,
+      "pos": "CASTER"
+    },
+    "81": {
+      "offsetXYZ": [
+        0,
+        0,
+        20
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "7bea362e-55d5-4dc6-8ae1-e528d459c431",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 81,
+      "pos": "CASTER"
+    },
+    "49": {
+      "offsetXYZ": [
+        12,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "8e6ae8e9-2b94-4aba-a52f-d2d108cc0dd5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 49,
+      "pos": "CASTER"
+    },
+    "71": {
+      "offsetXYZ": [
+        -20,
+        0,
+        0
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "61426b11-a30d-4f93-94a2-30c9769f9bf5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 71,
+      "pos": "CASTER"
+    },
+    "110": {
+      "offsetXYZ": [
+        -6.93,
+        0,
+        -4
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "59683983-ae40-4f14-b1b3-f5c1fd456490",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 110,
+      "pos": "CASTER"
+    },
+    "69": {
+      "offsetXYZ": [
+        0,
+        0,
+        20
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "a61e08d3-75dc-4c64-8ae7-da552de187d4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 69,
+      "pos": "CASTER"
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          49,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 51,
+      "UID": "08fd931e-16be-4031-a6f5-4312f10acf30"
+    },
+    "68": {
+      "offsetXYZ": [
+        14.14,
+        0,
+        14.14
+      ],
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "5ecbcb0a-b15e-40b3-89b1-02eeafb2de07",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 68,
+      "pos": "CASTER"
+    }
+  },
+  "BPName": "ability_10450503",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    17,
+    20,
+    34,
+    29,
+    107,
+    99,
+    89,
+    79,
+    31,
+    67,
+    59,
+    51,
+    43,
+    37
+  ],
+  "layer": "Base",
+  "length": 9
+}

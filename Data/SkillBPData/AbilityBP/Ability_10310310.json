@@ -1,0 +1,63 @@
+{
+  "BPName": "ability_10310310",
+  "NodeID": 1,
+  "UID": "5186a9d2-4715-4484-aba7-ad961b1c0d20",
+  "abilityIndicator": 1,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10310310001,
+      "name": "setCombatActionTimeline",
+      "UID": "4be6d300-b0e2-493e-b8d1-0195930185c3",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 7,
+  "preloadAnims": [
+    "Skill_Dash"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10031_Skill_Dash_Shadow",
+    "Eff_Parmon_10031_Skill_Dash_Enhance_L",
+    "Eff_Parmon_10031_Skill_Dash_Enhance_R",
+    "Eff_Hit_Dark_Slash"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      0.75,
+      0.75,
+      5,
+      2,
+      2
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 11200021
+}

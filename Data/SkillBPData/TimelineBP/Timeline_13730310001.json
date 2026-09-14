@@ -1,0 +1,646 @@
+{
+  "nodeMap": {
+    "62": {
+      "duration": 0.75,
+      "disableWhenFinished": false,
+      "NodeID": 62,
+      "UID": "24f34acc-a2c0-4cfa-bf16-1edf377f2489",
+      "target": "OWNER",
+      "presetName": "Eff_parmon_10373_EX_Fresnel01",
+      "name": "playPreset"
+    },
+    "53": {
+      "key": "ability_1373031053",
+      "duration": 0.25,
+      "NodeID": 53,
+      "UID": "7efa5b2d-a165-442b-bb19-aa876b7df159",
+      "name": "addEntityTimer"
+    },
+    "40": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13730310,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "cc60b6fe-74c8-4cab-a0c6-008c111894f2",
+      "target": "TARGET",
+      "NodeID": 40,
+      "attackData": {
+        "hitFrameFreezeId": 10021,
+        "impulseId": 5007,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10512
+      }
+    },
+    "54": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f3e3c200-5d55-495d-be3c-ef1fb9c76a75",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10373_Skill_Moon_Crash_Start",
+      "NodeID": 54
+    },
+    "42": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 40,
+      "NodeID": 42,
+      "UID": "9d255498-8aea-42d4-8812-cbbe02bf5bf6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            0.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "key": "TargetPos",
+            "name": "getCacheVal",
+            "UID": "c865422d-5934-4805-86df-24cfeeb5adb5",
+            "target": "OWNER",
+            "NodeID": 47
+          },
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5007,
+      "actionIds": [
+        40,
+        99,
+        79
+      ]
+    },
+    "35": {
+      "pos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "4c2135c6-1de0-46a7-86e1-d680dc8c257e",
+        "target": "OWNER",
+        "NodeID": 29
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "d6087168-1f46-49d4-bc43-afb25d5ec85c",
+      "effectId": "Eff_Parmon_10373_Skill_Mooncrash_Fly",
+      "speed": 1,
+      "NodeID": 35
+    },
+    "65": {
+      "actionIds": [
+        68
+      ],
+      "conditionActionIds": [
+        64
+      ],
+      "UID": "e9a13dc9-f6b5-45ff-8d08-14592bfde0a5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        70
+      ],
+      "NodeID": 65
+    },
+    "84": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 86,
+      "NodeID": 84,
+      "UID": "3d2cdf3f-8095-4412-82d9-84c8ea50d357",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            0.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        86,
+        100
+      ]
+    },
+    "66": {
+      "UID": "dc1331ec-c869-44d0-a67a-098efa386bc6",
+      "target": "POS_OR_TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 66
+    },
+    "68": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "ea538b61-65e1-4366-a32b-4238d2b9a9c3",
+      "target": "OWNER",
+      "val": {
+        "UID": "562de5f7-96bf-4453-8fad-d838028d809a",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "dc1331ec-c869-44d0-a67a-098efa386bc6",
+          "target": "POS_OR_TARGET",
+          "name": "getTargetPosition",
+          "NodeID": 66
+        },
+        "NodeID": 67
+      },
+      "NodeID": 68
+    },
+    "2": {
+      "UID": "aca54ad7-2e61-4d13-b10b-3483c2a07b78",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 2
+    },
+    "4": {
+      "UID": "6b242134-3ec8-4c1b-8962-82f55da4b28a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          23
+        ]
+      },
+      "NodeID": 4
+    },
+    "71": {
+      "name": "getTargetOffsetPos",
+      "UID": "d698f37e-3b54-4678-8994-d5bd7749a768",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        7.5
+      ],
+      "NodeID": 71
+    },
+    "73": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "eaa77ae4-2439-4c11-b724-6f5cefae6c58",
+      "target": "OWNER",
+      "val": {
+        "UID": "98f258a3-880a-442e-8833-4711683a940a",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "d698f37e-3b54-4678-8994-d5bd7749a768",
+          "target": "OWNER",
+          "offset": [
+            0,
+            0,
+            7.5
+          ],
+          "NodeID": 71
+        },
+        "NodeID": 72
+      },
+      "NodeID": 73
+    },
+    "50": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "24f620b2-eb0d-48a5-8e9b-9f9460945c2c",
+      "effectId": "Eff_Parmon_10373_Skill_Mooncrash_Release03",
+      "speed": 1,
+      "NodeID": 50
+    },
+    "70": {
+      "actionIds": [
+        76
+      ],
+      "conditionActionIds": [
+        69
+      ],
+      "UID": "21b2efde-3541-4fdc-a6c5-b7141ed4bbb6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        73
+      ],
+      "NodeID": 70
+    },
+    "76": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "200f30f2-fb49-497e-ba5c-1c97e1211e93",
+      "target": "OWNER",
+      "val": {
+        "UID": "8294f261-aea4-4e1f-af3d-711e56ca363e",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "bba0b23c-e297-4be8-98f8-fa4596257150",
+          "target": "TARGET",
+          "name": "getTargetPosition",
+          "NodeID": 74
+        },
+        "NodeID": 75
+      },
+      "NodeID": 76
+    },
+    "78": {
+      "actionIds": [
+        84,
+        80,
+        82
+      ],
+      "conditionActionIds": [
+        77
+      ],
+      "UID": "2abdeaf5-825f-4f61-96f0-166610e56a8f",
+      "name": "doActionsByConditions",
+      "NodeID": 78
+    },
+    "86": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13730310,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "c11b9844-00ab-4fed-b70e-832ac8fccf52",
+      "target": "TARGET",
+      "NodeID": 86,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 1000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "82": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "54622b95-bd63-4b81-98cb-47e12a29ffcd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10373_Skil_Moon_Crash_Boom01_liuli",
+      "NodeID": 82
+    },
+    "44": {
+      "key": "ability_1373031044",
+      "duration": 0.65,
+      "actionIds": [
+        42,
+        49,
+        98
+      ],
+      "NodeID": 44,
+      "UID": "24330f3b-6bbc-4016-8337-5f4a7dca3e59",
+      "name": "addEntityTimer"
+    },
+    "79": {
+      "key": "Boom",
+      "duration": 0.35,
+      "actionIds": [
+        78
+      ],
+      "NodeID": 79,
+      "UID": "58329f67-fd80-4065-8d9f-87bf68d8f0ae",
+      "name": "addEntityTimer"
+    },
+    "97": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a9b5f673-89d0-4983-9e3e-09410764e442",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10373_Skill_Moon_Crash_Charge",
+      "NodeID": 97
+    },
+    "77": {
+      "buffId": 2137105,
+      "name": "hasBuff",
+      "UID": "3d10ad79-8a24-4306-82ee-22f21bb29b49",
+      "target": "TARGET",
+      "NodeID": 77
+    },
+    "98": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c9500d80-e523-4b6c-8844-43516285cc35",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10373_Skil_Moon_Crash_Boom",
+      "NodeID": 98
+    },
+    "49": {
+      "pos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "c865422d-5934-4805-86df-24cfeeb5adb5",
+        "target": "OWNER",
+        "NodeID": 47
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "dc4617d1-3418-42b3-b5c5-5429f67dd737",
+      "effectId": "Eff_Parmon_10373_Skill_Mooncrash_Explosion",
+      "speed": 1,
+      "NodeID": 49
+    },
+    "99": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "821a6fca-a998-4760-ac3c-2789aa3b0e5a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Fox_Skill_Hit",
+      "NodeID": 99
+    },
+    "69": {
+      "UID": "64ae500c-dbd5-43bb-83f8-db2ebaacd7e7",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 69
+    },
+    "100": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "8a05295d-08ee-463e-877d-1042ab9207eb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Fox_Skill_Hit",
+      "NodeID": 100
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cf32a87c-fcd1-4a34-8990-f248664d1654",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Cast_Long"
+    },
+    "34": {
+      "pos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "4c2135c6-1de0-46a7-86e1-d680dc8c257e",
+        "target": "OWNER",
+        "NodeID": 29
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "31188627-d834-40f7-8c4e-e8b196e1c2a6",
+      "effectId": "Eff_Parmon_10373_Skill_Mooncrash_Release02",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "64": {
+      "UID": "7fa894e3-4977-45d5-8bb6-62ae2cd39d37",
+      "targetPos": "POS_OR_TARGET",
+      "name": "checkTargetPos",
+      "NodeID": 64
+    },
+    "11": {
+      "UID": "6ab6cea2-064e-4f92-8eb9-b22585b9f992",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          62
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "afa013d3-ad97-42f3-8d84-f28c04178550",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 0,
+        "inCombo": 0
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.48,
+      "NodeID": 21,
+      "UID": "d8cd4736-1111-4393-9408-bdd77e2924f3"
+    },
+    "32": {
+      "key": "ability_1373031032",
+      "duration": 0.05,
+      "actionIds": [
+        65,
+        30,
+        34,
+        35
+      ],
+      "NodeID": 32,
+      "UID": "58c9dd19-6b05-4a0e-b0df-bdc69a6581ff",
+      "name": "addEntityTimer"
+    },
+    "23": {
+      "UID": "303fa1ce-bfe2-4204-b756-f692e38b44e3",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 23
+    },
+    "55": {
+      "UID": "2ee87d98-3782-44d6-8216-858906b90f8d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "NodeID": 55
+    },
+    "74": {
+      "UID": "bba0b23c-e297-4be8-98f8-fa4596257150",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 74
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          53,
+          44,
+          97
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 46,
+      "UID": "ed4ff3cc-487a-4a23-9d15-e2c2905c92c1"
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.01,
+      "NodeID": 51,
+      "UID": "720d71c9-1607-4387-a49d-a31dfa7d5a41"
+    },
+    "57": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "419c17f5-5e89-44e7-af32-a8a2ed8cdd34",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "26": {
+      "UID": "f89271ca-33e6-4a8d-a513-8cdc8a71fd42",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 26
+    },
+    "58": {
+      "actionIds": [
+        60
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "bd2d099d-3d51-4e52-a4c0-f113403ff8d3",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        61
+      ],
+      "NodeID": 58
+    },
+    "28": {
+      "UID": "d8e80216-6cbb-4b58-938d-268afce4c36b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 28
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 59,
+      "UID": "600788eb-3244-4429-a4e9-8f331919a15d"
+    },
+    "30": {
+      "pos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "4c2135c6-1de0-46a7-86e1-d680dc8c257e",
+        "target": "OWNER",
+        "NodeID": 29
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "c743cdde-9497-4ced-aeae-ab8ec19ede2e",
+      "effectId": "Eff_Parmon_10373_Skill_Mooncrash_Release01",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "60": {
+      "duration": 0.3,
+      "name": "puppetPreCastAction",
+      "UID": "47a767b2-8270-44da-8e4c-035a737d9296",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 60
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 33,
+      "UID": "ccebc110-49d3-4296-877c-ddec72c043c3"
+    },
+    "61": {
+      "duration": 0.6,
+      "name": "puppetPreCastAction",
+      "UID": "a04eb871-0c9b-4f00-89ca-eb4893d4d7a1",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 61
+    },
+    "80": {
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "43f4b81f-0ec4-48e2-9942-ca1c131c5496",
+      "effectId": "Eff_Parmon_10371_Attack04_Explosion",
+      "speed": 1,
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_13730310",
+  "NodeID": 6,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    4,
+    28,
+    21,
+    55,
+    59,
+    11,
+    46,
+    33,
+    51
+  ],
+  "layer": "Base",
+  "length": 2.85
+}

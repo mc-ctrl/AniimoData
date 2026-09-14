@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_800231400",
+  "NodeID": 1,
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "abilityParamId": 10500210,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 800231400001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_SplitBomb"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10023_Mon_Skill_SplitBomb_Ballistics02",
+    "Eff_Parmon_10023_Mon_Skill_SplitBomb_Ballistics03",
+    "Eff_Parmon_10023_Mon_Skill_SplitBomb_Ballistics01",
+    "Eff_Parmon_10023_Mon_Skill_Fireball_03",
+    "Eff_Monster_80023_Mon_Skill_Skill_SplitBomb_Absord_01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

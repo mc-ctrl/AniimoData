@@ -1,0 +1,44 @@
+{
+  "3": {
+    "3001": {
+      "rank": 1,
+      "switchName": "HOLOBATTLE",
+      "switch": 1,
+      "name": 1184771018
+    }
+  },
+  "2": {
+    "2002": {
+      "type": 2,
+      "name": 1503364748,
+      "rank": 2,
+      "switchName": "HEAD",
+      "desc": 1690750788,
+      "switch": 1
+    },
+    "2003": {
+      "type": 3,
+      "name": 1417584684,
+      "rank": 3,
+      "switchName": "HEAD",
+      "desc": 1392913623,
+      "switch": 1
+    },
+    "2001": {
+      "type": 1,
+      "name": 2137523622,
+      "rank": 1,
+      "switchName": "HEAD",
+      "desc": 1375750822,
+      "switch": 1
+    },
+    "2004": {
+      "type": 4,
+      "name": 1947952893,
+      "rank": 4,
+      "switchName": "HEAD",
+      "desc": 1345931083,
+      "switch": 1
+    }
+  }
+}

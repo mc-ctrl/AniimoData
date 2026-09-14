@@ -1,0 +1,58 @@
+{
+  "1101": {
+    "DialogueText": 1138852525,
+    "DialogueTrans": 1594044667,
+    "Duration": 3,
+    "templateId": 1001100,
+    "DialogueRate": 0.6
+  },
+  "2301": {
+    "DialogueText": 1900691604,
+    "DialogueTrans": 1473718470,
+    "Duration": 3,
+    "templateId": 1002300,
+    "DialogueRate": 0.5
+  },
+  "1202": {
+    "DialogueText": 1991580783,
+    "DialogueTrans": 1327355354,
+    "Duration": 3,
+    "templateId": 1001200,
+    "DialogueRate": 0.5
+  },
+  "1201": {
+    "DialogueText": 1416087224,
+    "DialogueTrans": 2079373673,
+    "Duration": 3,
+    "templateId": 1001200,
+    "DialogueRate": 0.5
+  },
+  "2302": {
+    "DialogueText": 1504368660,
+    "DialogueTrans": 1586740007,
+    "Duration": 3,
+    "templateId": 1002300,
+    "DialogueRate": 0.3
+  },
+  "2102": {
+    "DialogueText": 1212799894,
+    "DialogueTrans": 1571542065,
+    "Duration": 3,
+    "templateId": 1002100,
+    "DialogueRate": 0.5
+  },
+  "2101": {
+    "DialogueText": 1208709463,
+    "DialogueTrans": 2104284251,
+    "Duration": 3,
+    "templateId": 1002100,
+    "DialogueRate": 0.6
+  },
+  "1102": {
+    "DialogueText": 1126335592,
+    "DialogueTrans": 1774798010,
+    "Duration": 3,
+    "templateId": 1001100,
+    "DialogueRate": 0.3
+  }
+}

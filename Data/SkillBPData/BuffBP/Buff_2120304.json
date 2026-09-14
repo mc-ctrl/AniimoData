@@ -1,0 +1,161 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120304",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "920f4563-f468-458a-bc27-db39e9f47970",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "24": {
+      "buffId": 2120304,
+      "name": "removeBuff",
+      "UID": "022061dd-3f01-445e-8654-6ffb27d1fe11",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "6": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.65,
+        "reduce_cur_tp_rate": 0.65
+      },
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 12,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "6d288963-344a-48d3-bf58-60a9fd56c2ee",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        8,
+        16,
+        26
+      ],
+      "name": "registerDeadEvent",
+      "UID": "e4defe3d-e397-43aa-bb2b-875176389f5a",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "25": {
+      "key": "zuzhouDead",
+      "duration": 5,
+      "actionIds": [
+        24
+      ],
+      "NodeID": 25,
+      "UID": "2d12d852-1b46-47b4-93b6-5a1b16f2b3ab",
+      "name": "addTimer"
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "86b3e832-3983-4c55-9cb6-6f9d1007a94e",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Attack",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 6,
+      "NodeID": 8,
+      "UID": "989727fc-e73a-4811-96b3-9e9bf93d1e3f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        6,
+        22,
+        21
+      ]
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "c8ece504-019a-4ac4-88b6-ac2cde271ffd",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "8150dd37-9c63-46a8-ba88-1dbeaf36925e",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "22": {
+      "target": "TARGET",
+      "duration": 8,
+      "buffId": 2120305001,
+      "NodeID": 22,
+      "UID": "53a9032a-362a-4827-bf36-f6b6f64efd89",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "21": {
+      "target": "TARGET",
+      "duration": 8,
+      "buffId": 2120304,
+      "NodeID": 21,
+      "UID": "50f51241-b78d-44ec-87db-97337f817dad",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onBuffDestroyIds": [
+    17
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    25,
+    10
+  ]
+}

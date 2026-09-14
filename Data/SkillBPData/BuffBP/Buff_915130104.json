@@ -1,0 +1,37 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915130104",
+  "name": "火焰炮强化技能切换",
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "08c59813-ba46-43ee-89d1-5fc03728bc92",
+      "to": 15130300,
+      "NodeID": 4,
+      "from": 15130300
+    },
+    "2": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "1e4ab941-483d-48c7-9867-a06a2409bafd",
+      "to": 15130301,
+      "NodeID": 2,
+      "from": 15130300
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "isUnSummonFreeze": false
+}

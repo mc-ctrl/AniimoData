@@ -1,0 +1,40 @@
+{
+  "refControlPoint": [
+    [
+      -3.8,
+      -0.2,
+      3.8
+    ]
+  ],
+  "duration": 1,
+  "BPName": "ability_11430012",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10143_Attack_Boss",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "BezierCurve",
+  "nodeMap": {},
+  "moveSpeed": 30,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "tickInterval": 0.3,
+  "refTargetPoint": [
+    0.2,
+    0.6,
+    10
+  ],
+  "startSleepTime": 0,
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "maxHitNum": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "acceleration": 5
+}

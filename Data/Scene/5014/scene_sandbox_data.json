@@ -1,0 +1,180 @@
+{
+  "72107730": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018850,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 2001,
+    "publishTags": [
+      "3DAY_支线"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_任务POI_ARK体素支线",
+    "sightLevelType": 128,
+    "spawners": [
+      72107928,
+      72108075
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      -1,
+      0.42,
+      -31.27
+    ],
+    "owner": "陈瑾瑜",
+    "id": 72107730,
+    "autoEndType": 0
+  },
+  "72037349": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019874,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 72037591,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 406,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "sightLevel": 128,
+    "sightLevelType": 128,
+    "spawners": [
+      72038063,
+      72038211,
+      72038215,
+      72040555,
+      89983664
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/5014/Sandbox_72037349_GraphRef.asset",
+    "owner": "宋雨轩",
+    "position": [
+      10.98,
+      0,
+      -8.52
+    ],
+    "autoEndType": 2,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 72037349,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "地脉晶簇涌现的位置，联结者可以通过地脉晶簇快速旅行",
+      "autoSetContent1": true,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 0,
+      "markConfigId": 10406,
+      "markContent1": 72037349,
+      "nearState": 1,
+      "openMapState": 1,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": true,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "showUI": true,
+      "positionParam": [
+        0,
+        0
+      ],
+      "image": "$UI_Img_Map_Preview_TeleportationArray.png",
+      "SloganPlayOnce": true,
+      "showActiveDistance": true,
+      "title": "地脉晶簇",
+      "POIIcon": "$UI_Icon_POI_Explore_Transmit.png",
+      "showPortalOffset": false,
+      "POIOrNot": true,
+      "yaw": 0,
+      "entityStaticIdType": 0,
+      "inactiveDesc": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+      "inactiveTitle": "地脉晶簇：待激活",
+      "arriveParam": {},
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "inactiveImage": "$UI_Img_Map_Preview_TeleportationArray.png",
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "markType": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "keepGraphOnFinished": false,
+    "name": "全局_传送点_模拟宇宙"
+  },
+  "72477980": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019874,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 2001,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_任务POI_AI支线裂隙",
+    "sightLevelType": 128,
+    "spawners": [
+      72478064,
+      72497711
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      13.78,
+      0.39,
+      -17.33
+    ],
+    "owner": "唐睿尚",
+    "id": 72477980,
+    "autoEndType": 0
+  }
+}

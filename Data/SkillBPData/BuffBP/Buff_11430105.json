@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11430105",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        7,
+        10,
+        13,
+        11
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "d7891940-f4d6-4714-b3d5-bd1a6dc3600d",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 5,
+      "name": "greater",
+      "UID": "25841a80-fd6c-40ff-9e1f-59ee97ff6eb9",
+      "NodeID": 4,
+      "lValue": {
+        "key": "BulblyDeath",
+        "name": "getServerCacheVal",
+        "UID": "1765a9d4-8314-4dcb-bb6d-c5da54c61e05",
+        "target": "OWNER",
+        "NodeID": 3
+      }
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 10003,
+      "NodeID": 13,
+      "UID": "a83dc663-c853-4634-994d-e97528b0c59c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "key": "BulblyDeath",
+      "name": "setServerCacheVal",
+      "UID": "b691ce91-e361-468b-83b4-8bb705680ff1",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 12
+    },
+    "10": {
+      "UID": "f48b1297-269c-4eab-90b5-ef39c278f75e",
+      "name": "hideBossMechanismTip",
+      "id": 2005,
+      "NodeID": 10
+    },
+    "11": {
+      "buffId": 11430105,
+      "name": "removeBuff",
+      "UID": "ba7d556f-ac39-47ac-a57d-a7df034a0015",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "calcInfo": {
+        "add_cur_bp_max_p": 1
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "22bf6452-5c2a-40d7-9aba-80bdf6443180",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 7
+    },
+    "2": {
+      "delay": 0,
+      "interval": 0.01,
+      "UID": "b17a79af-cdd7-452f-9bf5-fc57058a77aa",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "onBuffDestroyIds": [
+    12
+  ],
+  "onBuffStartIds": [
+    2
+  ]
+}

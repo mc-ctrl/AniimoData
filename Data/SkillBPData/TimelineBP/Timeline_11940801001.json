@@ -1,0 +1,41 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "62c013ab-e7e5-4652-a454-045b85702f5e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "c502f02c-af23-4d1e-aa81-e131986b685c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 9
+    },
+    "2": {
+      "target": "CASTER",
+      "duration": -1,
+      "buffId": 2119412,
+      "NodeID": 2,
+      "UID": "21ae2bd0-5329-4623-84f9-48eeb381b494",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "ability_11940801",
+  "NodeID": 5,
+  "UID": "79d698c9-c795-4c56-aad3-37688492ea10",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

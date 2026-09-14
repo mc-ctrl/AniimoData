@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62132307",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 62132302,
+      "name": "hasBuff",
+      "UID": "be5e8736-ed09-4f06-9d5d-38585e2038a4",
+      "target": "TARGET",
+      "NodeID": 3
+    },
+    "4": {
+      "relation": 2,
+      "radius": 15,
+      "heightDown": 2,
+      "NodeID": 4,
+      "UID": "9347dcd5-ceeb-4449-8a5d-0fc5b5485cb4",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 3
+    },
+    "5": {
+      "key": "mutourenPoint",
+      "name": "setServerCacheVal",
+      "UID": "d9360f04-4a7c-4565-8b7a-ba24b76910f3",
+      "target": "OWNER",
+      "val": {
+        "relation": 2,
+        "radius": 15,
+        "heightDown": 2,
+        "NodeID": 4,
+        "UID": "9347dcd5-ceeb-4449-8a5d-0fc5b5485cb4",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 3
+      },
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

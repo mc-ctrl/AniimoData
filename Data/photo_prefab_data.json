@@ -1,0 +1,16 @@
+{
+  "802101": {
+    "id": 802101,
+    "initialClaim": 1,
+    "name": 1290933359,
+    "icon": "$UI_Icon_Photostudio_PinkBackground2.png",
+    "res": "0"
+  },
+  "802102": {
+    "id": 802102,
+    "initialClaim": 1,
+    "name": 1669595390,
+    "icon": "$UI_Icon_Photostudio_StarrySkyBackground2.png",
+    "res": "1"
+  }
+}

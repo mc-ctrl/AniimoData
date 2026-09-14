@@ -1,0 +1,96 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104507",
+  "NodeID": 1,
+  "UID": "d1822160-e693-4771-9952-029877be62f5",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    17,
+    23
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "620ad6cf-c187-4ea4-8c40-7de6bd58f0a6",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 3
+    },
+    "17": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 2104507,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 20,
+            "UID": "5d153513-48fa-49b3-a5d7-df43ac6b27a1",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "575d3884-4d1a-4587-95c8-9ed8ba076d33",
+          "NodeID": 15,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "7c72e7ea-01ac-49ba-86b5-a7330095cc76",
+            "target": "OWNER",
+            "NodeID": 14,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "e3e7d20d-2424-4273-ab17-c891be91ee2c",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "23": {
+      "calcInfo": {
+        "heal_add_ratio": {
+          "calcId": 2104507,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 21,
+          "UID": "29630acd-4506-4b34-8a4c-237c5720acca",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "9ae96c0b-99ed-4137-97e3-ab85339929db",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 23
+    },
+    "5": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "1e363f34-b240-4309-97bb-35a89ac23342",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "20": {
+      "calcId": 2104507,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 20,
+      "UID": "5d153513-48fa-49b3-a5d7-df43ac6b27a1",
+      "name": "getParamByLuaConfig"
+    },
+    "21": {
+      "calcId": 2104507,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 21,
+      "UID": "29630acd-4506-4b34-8a4c-237c5720acca",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    3
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

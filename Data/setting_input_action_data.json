@@ -1,0 +1,164 @@
+{
+  "3": {
+    "device1": "gamePad",
+    "tab": "operate",
+    "name": "攻击",
+    "actionMaps": "Bind",
+    "cate": "go",
+    "actions": "NormalAttack",
+    "widgetType": 9,
+    "locked": 1
+  },
+  "4": {
+    "device1": "gamePad",
+    "tab": "operate",
+    "name": "乐器技能",
+    "actionMaps": "Bind",
+    "cate": "go",
+    "actions": "Skill2",
+    "widgetType": 9,
+    "locked": 1
+  },
+  "107": {
+    "tab": "operate",
+    "name": "使用宠物技能1",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "PetSkill1",
+    "widgetType": 4,
+    "device1": "Keyboard&Mouse"
+  },
+  "6": {
+    "device1": "gamePad",
+    "tab": "operate",
+    "name": "切换2号宠",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "Pet2",
+    "widgetType": 9,
+    "locked": 1
+  },
+  "101": {
+    "widgetType": 4,
+    "tab": "operate",
+    "name": "去吧",
+    "actionMaps": "Bind",
+    "cate": "go",
+    "actions": "Go",
+    "desc": "让宠物去打怪",
+    "device1": "Keyboard&Mouse"
+  },
+  "108": {
+    "tab": "operate",
+    "name": "使用宠物技能2",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "PetSkill2",
+    "widgetType": 4,
+    "device1": "Keyboard&Mouse"
+  },
+  "7": {
+    "device1": "gamePad",
+    "tab": "operate",
+    "name": "使用宠物技能1",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "PetSkill1",
+    "widgetType": 9,
+    "locked": 1
+  },
+  "106": {
+    "tab": "operate",
+    "name": "切换2号宠",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "Pet2",
+    "widgetType": 4,
+    "device1": "Keyboard&Mouse"
+  },
+  "8": {
+    "device1": "gamePad",
+    "tab": "operate",
+    "name": "使用宠物技能2",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "PetSkill2",
+    "widgetType": 9,
+    "locked": 1
+  },
+  "5": {
+    "device1": "gamePad",
+    "tab": "operate",
+    "name": "切换1号宠",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "Pet1",
+    "widgetType": 9,
+    "locked": 1
+  },
+  "103": {
+    "tab": "operate",
+    "name": "攻击",
+    "actionMaps": "Bind",
+    "cate": "go",
+    "actions": "NormalAttack",
+    "widgetType": 4,
+    "device1": "Keyboard&Mouse"
+  },
+  "104": {
+    "tab": "operate",
+    "name": "乐器技能",
+    "actionMaps": "Bind",
+    "cate": "go",
+    "actions": "Skill2",
+    "widgetType": 4,
+    "device1": "Keyboard&Mouse"
+  },
+  "105": {
+    "tab": "operate",
+    "name": "切换1号宠",
+    "actionMaps": "Bind",
+    "cate": "connect",
+    "actions": "Pet1",
+    "widgetType": 4,
+    "device1": "Keyboard&Mouse"
+  },
+  "102": {
+    "widgetType": 4,
+    "tab": "operate",
+    "name": "回来/停留",
+    "actionMaps": "Bind",
+    "cate": "go",
+    "actions": "Stop",
+    "desc": "让宠物回来或停留",
+    "device1": "Keyboard&Mouse"
+  },
+  "1": {
+    "name": "去吧",
+    "cate": "go",
+    "device1": "gamePad",
+    "desc": "让宠物去打怪",
+    "tab": "operate",
+    "widgetParam": [
+      "D-Pad/Left",
+      "D-Pad/Right"
+    ],
+    "actions": "Go",
+    "widgetType": 8,
+    "actionMaps": "Bind"
+  },
+  "2": {
+    "name": "回来/停留",
+    "cate": "go",
+    "device1": "gamePad",
+    "desc": "让宠物回来或停留",
+    "tab": "operate",
+    "widgetParam": [
+      "D-Pad/Left",
+      "D-Pad/Right"
+    ],
+    "actions": "Stop",
+    "widgetType": 8,
+    "actionMaps": "Bind"
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "42382369": {
+    "sightLevel": 512,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 42416360,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "远程操控",
+    "sightLevelType": 512,
+    "spawners": [
+      42382481,
+      42382483,
+      42382485,
+      42382489,
+      42417322,
+      42417324,
+      42417376,
+      42417378,
+      42417381,
+      42417383,
+      42417385,
+      42417386,
+      42417389,
+      42417390,
+      42417392,
+      42485285,
+      42485325,
+      42485347,
+      42485366,
+      42485373,
+      42485403,
+      42485464,
+      42740811,
+      42740818,
+      42741198,
+      42742696
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8009/Sandbox_42382369_GraphRef.asset",
+    "poiType": 0,
+    "owner": "路司机",
+    "id": 42382369,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "42399125": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          -13.98,
+          13.88,
+          -55.66
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42399125,
+        "siblingIndex": 8,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42399125_43015735"
+          }
+        },
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -13.98,
+            13.88,
+            -55.66
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43340796": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "完成流程节点监听器",
+        "position": [
+          5.92,
+          7.43,
+          -38.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43340796,
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "43535813": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点2",
+        "position": [
+          0,
+          0.69,
+          -35.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 2,
+        "id": 43535813,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "43535813_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            0,
+            0.69,
+            -35.35
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "57003237": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          -4.6,
+          1.01,
+          -55.9
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 9,
+        "serializeVersion": 3,
+        "id": 57003237,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 263,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42399154": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点1-指引箭头",
+        "position": [
+          0,
+          1,
+          -2.3
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 42399154,
+        "siblingIndex": 7,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42409865": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点1",
+        "position": [
+          0,
+          0.69,
+          -15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 3,
+        "id": 42409865,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42409865_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            0,
+            0.69,
+            -15
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42741295": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3",
+        "position": [
+          2.87,
+          1.84,
+          -54.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 4,
+        "id": 42741295,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42741295_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            2.87,
+            1.84,
+            -54.9
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42741313": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点2-指引箭头",
+        "position": [
+          0.65,
+          1,
+          -42.53
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 6,
+        "id": 42741313,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42741332": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3-指引箭头",
+        "position": [
+          -6.11,
+          5.79,
+          -54.81
+        ],
+        "rotation": [
+          270,
+          270,
+          0
+        ],
+        "siblingIndex": 5,
+        "id": 42741332,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43340795": {
+        "majorCompId": 0,
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "EditorName": "穿越第一道障碍触发器",
+        "position": [
+          0.01,
+          5,
+          -33.83
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43340795,
+        "siblingIndex": 0,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "43340795_52068346"
+          },
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "41614871": {
+    "areaType": 0,
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "功能性点位布置",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 41614871,
+    "owner": "路司机",
+    "position": [
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "nodeMap": {
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.54,
+      "NodeID": 35,
+      "UID": "e1893e5c-f67e-4a85-8917-401a1b07ad8c"
+    },
+    "4": {
+      "UID": "d1fc712f-bfad-466a-9137-90da8328f46d",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "00cd0506-b1e8-4e8f-9861-0008fd6aa384",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10045_Skill_GrassShield",
+      "NodeID": 24
+    },
+    "6": {
+      "UID": "bea1d307-d42e-430e-895a-7127b0c6ea8e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "34": {
+      "cameraShakeId": 21104,
+      "name": "playCameraImpulseById",
+      "UID": "040230aa-ceef-4cf8-a8ff-f78a1cbb2a67",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 28,
+      "UID": "972d1bf9-7070-4eac-ad11-efc88631a349"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 25,
+      "UID": "d2ee4f7c-d5fa-425e-8fec-aecbdb6c3b1e"
+    },
+    "16": {
+      "UID": "3f76a129-dd15-496e-ab29-5aa9d5f2113c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "70ea7b9c-30c8-4a03-bf37-ad3a11e2d8dc",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_shield_prepare_02",
+      "NodeID": 26
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.58,
+      "NodeID": 17,
+      "UID": "fa562be3-55ce-4cf6-85f5-3d418e8a2132"
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 23,
+      "UID": "120e9e4a-ae3c-4fcc-9f26-cb8e93dfe85f"
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4f1352f4-e636-44e8-99b8-5f6f76815b8d",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_WaterHeal"
+    },
+    "21": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 2104501,
+      "NodeID": 21,
+      "UID": "90855b12-e534-4e5a-be03-1f02f3afc69f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "UID": "d022ea45-06a4-4e47-978c-00ff7f4d1bdd",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "20": {
+      "UID": "2556d289-0b7a-4c9a-9d4e-29a36e19c881",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "298a0870-3b90-4ead-afa6-3b7f032ae148",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_10450110",
+  "NodeID": 8,
+  "UID": "33bba6cc-cc8d-45f2-9268-e8a9b8c4a389",
+  "eventIds": [
+    6,
+    14,
+    23,
+    17,
+    25,
+    28,
+    20,
+    35
+  ],
+  "layer": "Base",
+  "length": 1.75
+}

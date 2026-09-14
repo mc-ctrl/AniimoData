@@ -1,0 +1,1127 @@
+[
+  {
+    "lvExp": 200,
+    "nodeType": 1,
+    "talentTreeNode": [
+      1,
+      2
+    ],
+    "title": 1891389053,
+    "icon": "$UI_Rogue_Talent_Tree_Special.png",
+    "desc": 1077794509,
+    "event": "unlockExtraTeamPos"
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      2,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_03.png",
+    "desc": 1366296286,
+    "title": 1145091953,
+    "param0": 20,
+    "preNode": [
+      1
+    ],
+    "property": [
+      [
+        "atk_fix",
+        20
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      3,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_20.png",
+    "desc": 1191065732,
+    "title": 1361477039,
+    "param0": 2,
+    "preNode": [
+      2
+    ],
+    "property": [
+      [
+        "crit_rate_v",
+        0.02
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      4,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_19.png",
+    "desc": 1452527742,
+    "title": 1558938593,
+    "param0": 5,
+    "preNode": [
+      3
+    ],
+    "property": [
+      [
+        "crit_dmg_v",
+        0.05
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      2,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "desc": 2078974430,
+    "title": 1208504710,
+    "param0": 2,
+    "preNode": [
+      1
+    ],
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.02
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      3,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "desc": 2114809296,
+    "title": 2118957458,
+    "param0": 2,
+    "preNode": [
+      5
+    ],
+    "property": [
+      [
+        "taken_dmg_dec_rate_v",
+        0.02
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      4,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_08.png",
+    "desc": 2029692658,
+    "title": 1467800573,
+    "param0": 10,
+    "preNode": [
+      6
+    ],
+    "property": [
+      [
+        "bp_atk_v",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      2,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "desc": 1138432552,
+    "title": 1101952152,
+    "param0": 400,
+    "preNode": [
+      1
+    ],
+    "property": [
+      [
+        "hp_max_fix",
+        400
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      3,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "desc": 1455772883,
+    "title": 1483188209,
+    "param0": 10,
+    "preNode": [
+      8
+    ],
+    "property": [
+      [
+        "def_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 100,
+    "nodeType": 0,
+    "talentTreeNode": [
+      4,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "desc": 1959653288,
+    "title": 1169518195,
+    "param0": 10,
+    "preNode": [
+      9
+    ],
+    "property": [
+      [
+        "def_mag_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 300,
+    "nodeType": 1,
+    "talentTreeNode": [
+      5,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "conditionText": 1382974346,
+    "icon": "$UI_Rogue_Talent_Tree_Special.png",
+    "desc": 1390771253,
+    "event": "unlockBuffSeries",
+    "eventParam": [
+      6
+    ],
+    "title": 1128415992,
+    "preNode": [
+      4,
+      7,
+      10
+    ]
+  },
+  {
+    "lvExp": 250,
+    "nodeType": 0,
+    "talentTreeNode": [
+      6,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_03.png",
+    "desc": 2008165971,
+    "title": 1121831617,
+    "param0": 20,
+    "preNode": [
+      11
+    ],
+    "property": [
+      [
+        "atk_fix",
+        20
+      ]
+    ]
+  },
+  {
+    "lvExp": 250,
+    "nodeType": 0,
+    "talentTreeNode": [
+      7,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_20.png",
+    "desc": 1423674517,
+    "title": 1573251304,
+    "param0": 2,
+    "preNode": [
+      12
+    ],
+    "property": [
+      [
+        "crit_rate_v",
+        0.02
+      ]
+    ]
+  },
+  {
+    "lvExp": 250,
+    "nodeType": 0,
+    "talentTreeNode": [
+      8,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_19.png",
+    "desc": 1140116773,
+    "title": 1557834596,
+    "param0": 5,
+    "preNode": [
+      13
+    ],
+    "property": [
+      [
+        "crit_dmg_v",
+        0.05
+      ]
+    ]
+  },
+  {
+    "lvExp": 250,
+    "nodeType": 0,
+    "talentTreeNode": [
+      6,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Money.png",
+    "desc": 1175087843,
+    "title": 1811203363,
+    "param0": 10,
+    "preNode": [
+      11
+    ],
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.1
+      ]
+    ]
+  },
+  {
+    "lvExp": 500,
+    "nodeType": 1,
+    "talentTreeNode": [
+      7,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Money.png",
+    "desc": 1778221019,
+    "event": "initRogueCoin",
+    "eventParam": [
+      750
+    ],
+    "title": 1610607687,
+    "preNode": [
+      15
+    ],
+    "param0": 500
+  },
+  {
+    "lvExp": 250,
+    "nodeType": 0,
+    "talentTreeNode": [
+      6,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "desc": 1442955118,
+    "title": 1324244126,
+    "param0": 400,
+    "preNode": [
+      11
+    ],
+    "property": [
+      [
+        "hp_max_fix",
+        400
+      ]
+    ]
+  },
+  {
+    "lvExp": 250,
+    "nodeType": 0,
+    "talentTreeNode": [
+      7,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "desc": 1630557176,
+    "title": 2010044241,
+    "param0": 10,
+    "preNode": [
+      17
+    ],
+    "property": [
+      [
+        "def_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 250,
+    "nodeType": 0,
+    "talentTreeNode": [
+      8,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "desc": 2004705890,
+    "title": 1537518866,
+    "param0": 10,
+    "preNode": [
+      18
+    ],
+    "property": [
+      [
+        "def_mag_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 750,
+    "nodeType": 1,
+    "talentTreeNode": [
+      9,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "conditionText": 2037868940,
+    "icon": "$UI_Rogue_Talent_Tree_Special.png",
+    "desc": 1078380428,
+    "event": "unlockResetBuff",
+    "title": 1149719090,
+    "eventParam": [
+      1,
+      200,
+      0
+    ],
+    "preNode": [
+      14,
+      19
+    ],
+    "param1": 1,
+    "param0": 200
+  },
+  {
+    "lvExp": 750,
+    "nodeType": 0,
+    "talentTreeNode": [
+      10,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Boss.png",
+    "desc": 1367602502,
+    "event": "addBuff",
+    "eventParam": [
+      206100002
+    ],
+    "title": 2098191136,
+    "preNode": [
+      20
+    ],
+    "param0": 20
+  },
+  {
+    "lvExp": 750,
+    "nodeType": 0,
+    "talentTreeNode": [
+      11,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Boss.png",
+    "desc": 1092148359,
+    "event": "addBuff",
+    "eventParam": [
+      206100003
+    ],
+    "title": 1665515760,
+    "preNode": [
+      21
+    ],
+    "param0": 20
+  },
+  {
+    "lvExp": 1200,
+    "nodeType": 1,
+    "talentTreeNode": [
+      12,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Boss.png",
+    "desc": 1517929984,
+    "event": "addBuff",
+    "eventParam": [
+      206100004
+    ],
+    "title": 2064452080,
+    "preNode": [
+      22
+    ]
+  },
+  {
+    "lvExp": 750,
+    "nodeType": 0,
+    "talentTreeNode": [
+      10,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Money.png",
+    "desc": 1634725075,
+    "title": 1179239830,
+    "param0": 10,
+    "preNode": [
+      20
+    ],
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.1
+      ]
+    ]
+  },
+  {
+    "lvExp": 750,
+    "nodeType": 0,
+    "talentTreeNode": [
+      11,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_08.png",
+    "desc": 1369416028,
+    "title": 2090457887,
+    "param0": 10,
+    "preNode": [
+      24
+    ],
+    "property": [
+      [
+        "bp_atk_v",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 1200,
+    "nodeType": 0,
+    "talentTreeNode": [
+      12,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_07.png",
+    "desc": 1838095704,
+    "title": 1248260472,
+    "preNode": [
+      25
+    ],
+    "param0": 20
+  },
+  {
+    "lvExp": 750,
+    "nodeType": 0,
+    "talentTreeNode": [
+      10,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Buff.png",
+    "desc": 1429466028,
+    "title": 1277243187,
+    "param0": 10,
+    "preNode": [
+      20
+    ],
+    "property": [
+      [
+        "instant_crit_rate_v",
+        0.1
+      ]
+    ]
+  },
+  {
+    "lvExp": 750,
+    "nodeType": 0,
+    "talentTreeNode": [
+      11,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Buff.png",
+    "desc": 2075055842,
+    "title": 1542713003,
+    "param0": 20,
+    "preNode": [
+      27
+    ],
+    "property": [
+      [
+        "instant_crit_dmg_v",
+        0.02
+      ]
+    ]
+  },
+  {
+    "lvExp": 1200,
+    "nodeType": 1,
+    "talentTreeNode": [
+      12,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Buff.png",
+    "desc": 1506463883,
+    "event": "gainExtraBuff",
+    "eventParam": [
+      0.1,
+      1
+    ],
+    "title": 1756166589,
+    "preNode": [
+      28
+    ],
+    "param0": 20
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 1,
+    "talentTreeNode": [
+      13,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "conditionText": 1274688633,
+    "icon": "$UI_Rogue_Talent_Tree_Training.png",
+    "desc": 1671801335,
+    "event": "unlockSweep",
+    "title": 1769726066,
+    "preNode": [
+      26
+    ],
+    "param0": 50
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      14,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_03.png",
+    "desc": 1730412227,
+    "title": 1088730022,
+    "param0": 40,
+    "preNode": [
+      30
+    ],
+    "property": [
+      [
+        "atk_fix",
+        40
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      15,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_20.png",
+    "desc": 1253892838,
+    "title": 1499983653,
+    "param0": 6,
+    "preNode": [
+      31
+    ],
+    "property": [
+      [
+        "crit_rate_v",
+        0.06
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      16,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_19.png",
+    "desc": 1736514394,
+    "title": 1231581622,
+    "param0": 10,
+    "preNode": [
+      32
+    ],
+    "property": [
+      [
+        "crit_dmg_v",
+        0.1
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      14,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "desc": 1748874224,
+    "title": 2054287509,
+    "param0": 3,
+    "preNode": [
+      30
+    ],
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.03
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      15,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "desc": 1241679811,
+    "title": 1391627920,
+    "param0": 3,
+    "preNode": [
+      34
+    ],
+    "property": [
+      [
+        "taken_dmg_dec_rate_v",
+        0.03
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      16,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_08.png",
+    "desc": 1833542029,
+    "title": 2000464777,
+    "param0": 20,
+    "preNode": [
+      35
+    ],
+    "property": [
+      [
+        "bp_atk_v",
+        20
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      14,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "desc": 1717556886,
+    "title": 1777176376,
+    "param0": 800,
+    "preNode": [
+      30
+    ],
+    "property": [
+      [
+        "hp_max_fix",
+        400
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      15,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "desc": 1320996772,
+    "title": 1561406975,
+    "param0": 20,
+    "preNode": [
+      37
+    ],
+    "property": [
+      [
+        "def_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      16,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "desc": 1232113639,
+    "title": 1979986475,
+    "param0": 20,
+    "preNode": [
+      38
+    ],
+    "property": [
+      [
+        "def_mag_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 3000,
+    "nodeType": 1,
+    "talentTreeNode": [
+      17,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Special.png",
+    "desc": 1386936994,
+    "event": "unlockResetBuff",
+    "eventParam": [
+      1,
+      100,
+      0
+    ],
+    "title": 1847964126,
+    "preNode": [
+      33,
+      36,
+      39
+    ],
+    "param0": 50
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      18,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "desc": 1264845700,
+    "title": 1174055244,
+    "param0": 3,
+    "preNode": [
+      40
+    ],
+    "property": [
+      [
+        "taken_dmg_dec_rate_v",
+        0.03
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      19,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_08.png",
+    "desc": 1273571618,
+    "title": 1606947414,
+    "param0": 20,
+    "preNode": [
+      41
+    ],
+    "property": [
+      [
+        "bp_atk_v",
+        20
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      20,
+      1
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "desc": 1502949309,
+    "title": 2039511602,
+    "maxLv": 10,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.03
+      ]
+    ],
+    "preNode": [
+      42
+    ],
+    "param0": 3
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      18,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "desc": 2072017549,
+    "title": 1676846736,
+    "param0": 800,
+    "preNode": [
+      40
+    ],
+    "property": [
+      [
+        "hp_max_fix",
+        400
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 1,
+    "talentTreeNode": [
+      19,
+      2
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Special.png",
+    "desc": 1154693961,
+    "event": "applyItemSet",
+    "eventParam": [
+      0,
+      1
+    ],
+    "title": 1755536429,
+    "preNode": [
+      44
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      18,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "desc": 1601794632,
+    "title": 1585814571,
+    "param0": 20,
+    "preNode": [
+      40
+    ],
+    "property": [
+      [
+        "def_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      19,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "desc": 2122910957,
+    "title": 2109350104,
+    "param0": 20,
+    "preNode": [
+      46
+    ],
+    "property": [
+      [
+        "def_mag_fix",
+        10
+      ]
+    ]
+  },
+  {
+    "lvExp": 1500,
+    "nodeType": 0,
+    "talentTreeNode": [
+      20,
+      3
+    ],
+    "condition": [
+      1
+    ],
+    "icon": "$UI_Rogue_Talent_Tree_Money.png",
+    "desc": 1555128097,
+    "title": 2060655354,
+    "maxLv": 10,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.1
+      ]
+    ],
+    "preNode": [
+      47
+    ],
+    "param0": 10
+  }
+]

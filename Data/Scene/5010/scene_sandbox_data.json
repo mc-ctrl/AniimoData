@@ -1,0 +1,355 @@
+{
+  "72039809": {
+    "owner": "汪玉笠",
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72039837,
+    "levelItems": {
+      "72039810": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          3.29,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 72039810,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039811": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          3.29,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 72039811,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039812": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039812,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039813": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_5",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039813,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039814": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_6",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039814,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039815": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039815,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039816": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_7",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039816,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039817": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039817,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039818": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039818,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72089334": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_8",
+        "position": [
+          -4.94,
+          3.21,
+          3.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72089334,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "0层",
+    "spawners": [
+      72039824,
+      72039826,
+      72039828,
+      72039830,
+      72532656
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/5010/Sandbox_72039809_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 256,
+    "position": [
+      0,
+      3.91,
+      0
+    ],
+    "id": 72039809,
+    "enableFinishMark": false
+  },
+  "72443559": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1033187,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "name": "房间1",
+    "sightLevelType": 64,
+    "spawners": [
+      72446159
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 40,
+    "position": [
+      834.97,
+      14.2,
+      2.73
+    ],
+    "owner": "旺旺",
+    "id": 72443559,
+    "autoEndType": 0
+  }
+}

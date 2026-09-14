@@ -1,0 +1,43 @@
+{
+  "BPName": "ability_13520600",
+  "NodeID": 1,
+  "UID": "a6e839a9-1bba-435b-9417-5a0b531bb63f",
+  "abilityParamId": 11201190,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "17": {
+      "timelineId": 13520600001,
+      "name": "setCombatActionTimeline",
+      "UID": "d65a6cb7-d6ce-493d-b0c0-f0631640c4fa",
+      "target": "CASTER",
+      "NodeID": 17
+    }
+  },
+  "onAbilityCastIds": [
+    17
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3.5,
+  "preloadAnims": [
+    "Skill_Feather"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Blunt",
+    "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+    "Eff_Parmon_1020302_Skill_MaliciousZone_Debuff",
+    "Eff_Parmon_10352_Skill_PerfumeSign",
+    "Eff_Parmon_10352_Skill_PerfumeSign_01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 5,
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 5,
+  "desc": ""
+}

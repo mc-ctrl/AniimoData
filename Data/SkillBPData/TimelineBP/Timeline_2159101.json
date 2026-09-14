@@ -1,0 +1,219 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        12,
+        16,
+        3,
+        18,
+        11
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "eb2ad118-a401-4119-b2d7-9fdeeaae2490",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "6": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 6,
+      "relation": 1,
+      "enterTrapActionIds": [
+        5
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        0.65
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "a7d895ff-7470-4ddd-927f-cebdeb06c432"
+    },
+    "8": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          31,
+          13,
+          17,
+          6,
+          24
+        ]
+      },
+      "NodeID": 8
+    },
+    "31": {
+      "key": "PlayerPos",
+      "name": "setCacheVal",
+      "UID": "9211fb77-b8d4-4265-a326-e050a739b296",
+      "target": "OWNER",
+      "val": {
+        "UID": "99c98cec-2e30-4d55-b48c-2d9ca6509864",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 30
+      },
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 10
+      },
+      "name": "destroyEntity",
+      "NodeID": 11
+    },
+    "12": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "155c2486-5869-4b77-a013-2e112df6a6e0",
+      "effectId": "Eff_Parmon_10593_Skill_Drop_Pick",
+      "speed": 1,
+      "NodeID": 12
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_10593_Skill_Drop",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1a1f48d4-9b64-4867-b6dd-d3cc793c6d02",
+      "effectId": "Eff_Parmon_10593_Skill_Drop",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "24": {
+      "eventName": "91591",
+      "NodeID": 24,
+      "UID": "3c8c33f8-b68b-42cf-adc7-61208fa71980",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        26,
+        33,
+        22,
+        34
+      ]
+    },
+    "14": {
+      "name": "isActorType",
+      "UID": "86c7055d-6507-469f-9e64-1ced1747fb0e",
+      "target": "TrapTarget",
+      "NodeID": 14,
+      "actorType": 2
+    },
+    "15": {
+      "calcId": 2159101,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 15,
+      "UID": "1aaabbf8-e911-49fc-ab27-bc9a43da9210",
+      "name": "getParamByLuaConfig"
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "f8512daf-92ea-43ae-91d8-dcc40add059d",
+      "effectId": "Eff_Parmon_10593_Skill_Drop",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "17": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "3e350bb2-92c7-4a3f-8f36-c60449b04ff6",
+      "soundId": "SFX_Combat_10591_Skill_Passive02",
+      "NodeID": 17
+    },
+    "22": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 2159101201,
+      "name": "createProjectile",
+      "UID": "58d702da-9d92-4889-96b4-7a9034bed782",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "key": "PlayerPos",
+        "name": "getCacheVal",
+        "UID": "5bf25489-5b85-452e-af53-f2369eef8cc0",
+        "target": "OWNER",
+        "NodeID": 27
+      },
+      "NodeID": 22,
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ]
+    },
+    "30": {
+      "UID": "99c98cec-2e30-4d55-b48c-2d9ca6509864",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 30
+    },
+    "18": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "c3629973-f0e1-4445-808b-4e3134f27787",
+      "soundId": "SFX_Combat_10591_Skill_Passive03",
+      "NodeID": 18
+    },
+    "33": {
+      "UID": "9c9d6b57-a55c-42f3-8131-250aaefab079",
+      "name": "removeEvent",
+      "eventName": "onEnterTrap",
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6a96e581-74f1-4687-88dc-897b6f7da6c6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10591_Skill_Passive01",
+      "NodeID": 34
+    },
+    "16": {
+      "value": {
+        "calcId": 2159101,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 15,
+        "UID": "1aaabbf8-e911-49fc-ab27-bc9a43da9210",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "651f9e5b-c0b8-42b3-85f4-079fa6a12ffb",
+      "target": "TrapTarget",
+      "NodeID": 16
+    }
+  },
+  "BPName": "timeline_2159101",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    8
+  ],
+  "layer": "Base",
+  "length": 30
+}

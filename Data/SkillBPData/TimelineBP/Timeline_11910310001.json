@@ -1,0 +1,310 @@
+{
+  "nodeMap": {
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "91e926b4-b773-4272-b6fc-8ba8186cc04a",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starimm_shellsmash",
+      "NodeID": 38
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "87359fce-cf5b-488b-bed3-43870cee243b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starimm_roll_loop",
+      "NodeID": 39
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 40,
+      "UID": "a8556079-1412-49ab-ab90-791bb6fd2554"
+    },
+    "54": {
+      "petTarget": "OWNER",
+      "triggerId": 1017401,
+      "name": "onEntityTrigger",
+      "UID": "f9344d49-33ba-43d2-9bbb-ecde84cba72f",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "42": {
+      "name": "stopSoundStr",
+      "UID": "240fed53-5bff-450b-af38-afc9b6364f23",
+      "soundId": "parmon_starimm_roll_loop",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "43": {
+      "UID": "f2d6ec77-b94a-4040-9af2-579222588a9f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "NodeID": 43
+    },
+    "57": {
+      "UID": "aa6d2f59-8cf0-497a-8e40-b2b288945d69",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "NodeID": 57
+    },
+    "56": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2119105,
+      "NodeID": 56,
+      "UID": "f1bc7e90-92f6-41fa-873d-6aa70b193d00",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d4c1f2df-2f2b-4c5e-966c-9770e9ec2af4",
+      "effectId": "Eff_Parmon_10191_Skill_Roll_Start",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "50": {
+      "duration": 65,
+      "name": "scrollWithInput",
+      "angleVelocity": 270,
+      "enableScrollCamera": false,
+      "hitTriggerCD": 1,
+      "hitTriggerSelfActionCD": 3,
+      "refCameraDir": true,
+      "velocity": 0,
+      "radius": 1.5,
+      "UID": "e908eb96-265c-45fc-b4dc-c9bea030322d",
+      "NodeID": 50
+    },
+    "53": {
+      "actionIds": [
+        51,
+        54,
+        55
+      ],
+      "name": "registerSkillMoveBlocked",
+      "UID": "26ffcae7-cae0-44ca-bafd-b2d2b9af68ac",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "29f954f6-7263-4d4d-a9b0-0b83336f0a7f",
+      "effectId": "Eff_Parmon_10191_Skill_Roll_Loop",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "ec2b3f7a-35c6-4bd4-a15b-4a05c1b001f8",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "b76a50c0-0439-470a-8424-739c94686cd0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 21
+    },
+    "51": {
+      "UID": "c2f889da-ed73-4687-ac1d-120dadb80921",
+      "reflectTurnTime": 0,
+      "name": "reflectOnSkillMoveBlocked",
+      "NodeID": 51
+    },
+    "4": {
+      "UID": "d9dbe7af-2dbf-4c32-98df-5774e964886e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          38,
+          15
+        ]
+      },
+      "NodeID": 4
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "13e42506-808f-4b35-b080-04dbc0dfc54e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_3C_10174_Sprint_Attack",
+      "NodeID": 55
+    },
+    "48": {
+      "UID": "fd844a46-53d5-4480-8267-6bc1f9f67cf4",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 48
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.08,
+      "NodeID": 10,
+      "UID": "42edd624-69d0-41a9-a37a-9a7625f61dd7"
+    },
+    "15": {
+      "actionIds": [
+        17,
+        13
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "23e39b18-6f79-4fd9-81f2-cf9bded118aa",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "47": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "ac6d667b-352d-441a-b636-0a8d29524337",
+        "target": "MASTER",
+        "NodeID": 46,
+        "attributeName": "stamina_cur"
+      },
+      "name": "greater",
+      "UID": "2fccd977-9ee4-4c99-874d-eb44b0603f4d",
+      "NodeID": 47,
+      "lValue": 2
+    },
+    "16": {
+      "actionIds": [
+        11,
+        27
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "16dd8819-5161-4cab-b3ad-eb9426802f2f",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "27": {
+      "timelineId": 11910310002,
+      "name": "jumpToNextTimeline",
+      "UID": "e1c92d11-9aa8-4b97-8ae4-bc7cbd1e38cc",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "target": "MASTER",
+      "actionIds": [
+        16
+      ],
+      "attributeName": "stamina_cur",
+      "UID": "f7b3fdf3-43c7-4cab-adba-891ffcbf5140",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 17
+    },
+    "49": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "040fc236-441c-41f3-a71f-d515e429e93d",
+      "target": "OWNER",
+      "NodeID": 49,
+      "animId": "Skill_Roll_Loop"
+    },
+    "18": {
+      "UID": "8b7321b1-1f31-4f90-98c7-451d33a94a69",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          27
+        ]
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "de112889-0d92-4807-9088-c92154fb6303",
+      "effectId": "Eff_Parmon_10191_Skill_Roll_Loop",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b3b6697d-8f90-43d0-8f6e-804a3a48bd01",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Roll_Start"
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          49,
+          50,
+          32,
+          53
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.74,
+      "NodeID": 34,
+      "UID": "683710ff-2326-470f-822b-086f154029ad"
+    },
+    "13": {
+      "actionIds": [
+        11,
+        27
+      ],
+      "aiTriggerTime": 1,
+      "noTriggerTime": 1,
+      "onlyTriggerOnce": true,
+      "time": 10,
+      "NodeID": 13,
+      "name": "registerRePressSkillSlot",
+      "UID": "96e0165e-daec-43e5-affa-210554d9a9ba",
+      "notShowCountDown": true
+    }
+  },
+  "BPName": "ability_11910310",
+  "NodeID": 6,
+  "UID": "d299a5d8-61a9-489c-b9bc-93be6a559fe1",
+  "eventIds": [
+    21,
+    10,
+    4,
+    57,
+    34,
+    40,
+    18,
+    43
+  ],
+  "layer": "Base",
+  "length": 999
+}

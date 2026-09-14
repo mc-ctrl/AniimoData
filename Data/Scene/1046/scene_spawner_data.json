@@ -1,0 +1,56 @@
+{
+  "61644537": {
+    "spawnType": 2,
+    "owner": "汪玉笠",
+    "sandboxType": 2,
+    "position": [
+      -3.51,
+      774.04,
+      4.1
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 61644535,
+    "id": 61644537,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61644536
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61644539": {
+    "spawnType": 2,
+    "owner": "汪玉笠",
+    "sandboxType": 2,
+    "position": [
+      -6.21,
+      774.04,
+      1.18
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 61644535,
+    "id": 61644539,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61644538
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

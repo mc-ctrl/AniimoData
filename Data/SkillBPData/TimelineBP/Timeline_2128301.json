@@ -1,0 +1,166 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "30": {
+      "calcId": 2128301,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 30,
+      "UID": "964b72bd-0cf3-42af-94a3-67ba416806c0",
+      "name": "getParamByLuaConfig"
+    },
+    "29": {
+      "calcId": 2128301,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 29,
+      "UID": "43e488de-7aae-4e00-9506-1e6b517a2b73",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 6,
+      "NodeID": 9,
+      "UID": "df2bbd98-78df-42ba-8e9b-f9d2b23a1594",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        6
+      ]
+    },
+    "6": {
+      "overrideCaster": "MASTER",
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "calcId": 2128301,
+            "calcType": 4,
+            "paramName": "param0",
+            "NodeID": 29,
+            "UID": "43e488de-7aae-4e00-9506-1e6b517a2b73",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "52e3cce8-5fde-4739-a928-6e0846707580",
+          "NodeID": 23,
+          "lValue": {
+            "rValue": {
+              "calcId": 2128301,
+              "calcType": 4,
+              "paramName": "param1",
+              "NodeID": 30,
+              "UID": "964b72bd-0cf3-42af-94a3-67ba416806c0",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "dc319578-64af-4be9-b052-4326ece67ae8",
+            "NodeID": 22,
+            "lValue": {
+              "b": {
+                "UID": "74ded0bd-fe6f-49fc-b7e3-7afe6f416ee4",
+                "number": 15,
+                "name": "constNumber",
+                "NodeID": 31
+              },
+              "NodeID": 21,
+              "UID": "ae7c024e-5d53-40d7-b094-062b38cc7018",
+              "name": "min",
+              "a": {
+                "templateId": 10079,
+                "name": "getBuffLayer",
+                "UID": "c78c1f1e-cf17-414f-8532-4fec3d0a92dd",
+                "target": "TARGET",
+                "NodeID": 20
+              }
+            }
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10105,
+        "hitFrameFreezeId": 10014,
+        "elementType": 5,
+        "isPlayRadialBlur": true,
+        "impulseId": 5005,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt"
+      },
+      "UID": "536f7a56-acfd-45da-b24c-c09c067bcd0f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "a6e8062f-4b63-4e6c-b015-941252c51964",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "56239aca-750c-4c06-9708-211977ff70a0",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10283_Skill_Ex02",
+      "NodeID": 19
+    },
+    "18": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          19
+        ]
+      },
+      "NodeID": 18
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4f09d8f9-8164-4565-bf4a-8aea34d06bc8",
+      "effectId": "Eff_Parmon_10283_OutEx_Boom_01",
+      "speed": 1,
+      "NodeID": 16
+    }
+  },
+  "BPName": "timeline_2128301",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    18,
+    10
+  ],
+  "layer": "Base",
+  "length": 99999
+}

@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4006010",
+  "calcInfoByLuaConfig": {
+    "id": 4006010,
+    "element_restraint_add_ratio": "param1",
+    "type": 1,
+    "final_taken_dmg_inc_rate_v": "param0"
+  },
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "isDeathKeep": true
+}

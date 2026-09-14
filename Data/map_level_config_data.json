@@ -1,0 +1,274 @@
+{
+  "3000": [
+    {
+      "-1": {
+        "0": {
+          "areaId": 82312861,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 2144091305,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    },
+    {
+      "-1": {
+        "0": {
+          "areaId": 91137716,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1096388994,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    },
+    [
+      {
+        "0": {
+          "areaId": 91139910,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 2085610453,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      },
+      {
+        "0": {
+          "areaId": 91141854,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1148456562,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      },
+      {
+        "0": {
+          "areaId": 91141921,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1166551045,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    ],
+    {
+      "-1": [
+        {
+          "areaId": 91149883,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1815565589,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        },
+        {
+          "areaId": 91148922,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1583100840,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ]
+    },
+    {
+      "-1": [
+        {
+          "areaId": 91171198,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1999324034,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ]
+    },
+    {
+      "-1": [
+        {
+          "areaId": 91171421,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1589921845,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ]
+    },
+    {
+      "-1": [
+        {
+          "areaId": 91171697,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 2113686756,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ]
+    },
+    {
+      "-1": [
+        {
+          "areaId": 82301580,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1616085489,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        },
+        {
+          "areaId": 91173803,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1517218859,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        },
+        {
+          "areaId": 91174799,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1861885206,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ]
+    }
+  ],
+  "3004": [
+    [
+      [
+        {
+          "areaId": 86384111,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 2112326833,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        },
+        {
+          "areaId": 86387566,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1352615982,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ],
+      {
+        "0": {
+          "areaId": 86387708,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1432199188,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    ],
+    [
+      {
+        "0": {
+          "areaId": 86637838,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1128311606,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      },
+      {
+        "0": {
+          "areaId": 86640580,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1930556417,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      },
+      {
+        "0": {
+          "areaId": 86641643,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1510680593,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    ]
+  ],
+  "3005": [
+    [
+      [
+        {
+          "areaId": 90826280,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1275705390,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        },
+        {
+          "areaId": 90826281,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 2009931573,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ],
+      {
+        "0": {
+          "areaId": 90826282,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1119433482,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    ],
+    [
+      {
+        "0": {
+          "areaId": 90826235,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1183243076,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      },
+      {
+        "0": {
+          "areaId": 90826236,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1144800591,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      },
+      {
+        "0": {
+          "areaId": 90826237,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1183597301,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    ]
+  ],
+  "513": [
+    {
+      "-3": {
+        "0": {
+          "areaId": 70392548,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1725715556,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      },
+      "-2": [
+        {
+          "areaId": 70392362,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "syncUnlock": [
+            2
+          ],
+          "desc": 2091465972,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        },
+        {
+          "areaId": 70392466,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "syncUnlock": [
+            1
+          ],
+          "desc": 2047147047,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      ],
+      "-1": {
+        "0": {
+          "areaId": 70392235,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 2093655248,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    }
+  ],
+  "501": [
+    [
+      {
+        "0": {
+          "areaId": 73394884,
+          "unSelectedIcon": "$UI_Img_MapLayerSys_UpperUnselected.png",
+          "desc": 1315376522,
+          "selectedIcon": "$UI_Img_MapLayerSys_UpperSelected.png"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "cd80f15e-6ef6-4b62-bbbe-23a2fca94761",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "bda93d8c-ebc9-459d-80a6-1d322f8413f1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          19
+        ]
+      },
+      "NodeID": 6
+    },
+    "16": {
+      "UID": "3057404a-3f59-4b58-9534-42567c26bfeb",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 18,
+      "UID": "6943ae87-2d8b-4661-a947-5fd06e58fef7"
+    },
+    "14": {
+      "UID": "f86a0968-7cd1-48a5-8b2b-20dfe201be94",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "19": {
+      "UID": "3e7a3196-9b31-4080-b0f6-1fb6d463a34e",
+      "name": "stopBurrow",
+      "NodeID": 19
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "aebb4ef7-c22e-452c-9dfb-acb3df605cf1",
+      "isAbilityEndRemove": false,
+      "soundId": "Ani_Parmon_10161_Skill_BurrowSkill_CombatExit",
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "803914b6-9d7b-40fb-8314-353cad0d2ce7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_11610905",
+  "NodeID": 8,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    6,
+    14,
+    18,
+    22
+  ],
+  "layer": "Base",
+  "length": 1
+}

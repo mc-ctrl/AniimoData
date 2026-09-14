@@ -1,0 +1,277 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126302",
+  "name": "花舞鸢尾舞力值特性buff",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "草地上每次造成技能伤害积累1点舞力值，续满后下一次释放技能时提高100%魔攻持续2s",
+  "tags": [
+    11,
+    21
+  ],
+  "onBuffRefreshIds": [
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "00f9084c-9f6d-47b8-a067-e7c7b3e1a29e",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        6,
+        3
+      ]
+    },
+    "38": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "600fa5f4-e85b-4eda-8ce8-4ed18a1ab2ff",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "f8a00146-1e9c-4b9c-a881-961caff4dcb5",
+      "name": "stopAnimation",
+      "anim": "Behav_SleepLoop",
+      "NodeID": 39
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "338a8e21-f215-4578-a430-de256854f124",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "7": {
+      "buffId": 2126302,
+      "name": "removeBuff",
+      "UID": "7c8a69f5-876e-42fd-b5e0-f6300f140460",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "37": {
+      "UID": "960952fb-123c-4a34-99e9-4e58cfc0a54b",
+      "conditionIds": [
+        36,
+        38
+      ],
+      "name": "conditionOr",
+      "NodeID": 37
+    },
+    "31": {
+      "petTarget": "SRC",
+      "triggerId": 1026301,
+      "name": "onEntityTrigger",
+      "UID": "c10adab8-2193-43b6-8701-0f18068d13da",
+      "target": "SRC",
+      "NodeID": 31
+    },
+    "9": {
+      "UID": "ffc18365-4882-42a0-86f8-72603e1825c8",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        14,
+        26,
+        7
+      ],
+      "NodeID": 9
+    },
+    "23": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "897d4c9e-9853-4f1b-93f6-734e9757cda3",
+      "target": "OWNER",
+      "val": 4,
+      "NodeID": 23
+    },
+    "35": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "e0a36ce1-9d97-4208-a056-459e3d680dc5",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "11": {
+      "key": "defaultdelay",
+      "duration": 0.05,
+      "actionIds": [
+        9,
+        13
+      ],
+      "NodeID": 11,
+      "UID": "0b019843-dbde-45c5-84c3-52e86894c12c",
+      "name": "addEntityTimer"
+    },
+    "22": {
+      "key": "delay",
+      "duration": 1,
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "6056d2d3-9c13-45a4-9ac1-0f4e18beafba",
+      "name": "addTimer"
+    },
+    "21": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 21,
+      "UID": "bdc232eb-f25b-4f11-8f9f-0009c9680ccf",
+      "target": "OWNER",
+      "fadeTime": 0.3,
+      "animId": "Behav_SleepLoop"
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e90d4f85-1c9e-4f5a-bfff-7ebffff8f6ff",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "a85ac727-85dd-461d-94c0-8abe940f9227",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        14,
+        26,
+        7
+      ],
+      "NodeID": 13
+    },
+    "24": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "936ef16e-1818-44ae-9bd8-f4b5ae90d57a",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 24
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "538d2542-259d-4296-bcf5-bf436025a15f",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "33": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "af428b61-84db-4a72-a7dd-91f838766770",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e2808d43-d470-4b66-89ef-5a60a19dbd8f",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "3ccf6beb-3604-46fd-a3e1-3337b08d1012",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_003",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "bf41075a-b3d5-4c72-8eae-bcd30e81978a",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_003",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "buffId": 2126301,
+      "name": "removeBuff",
+      "UID": "5591bfe1-2493-42d9-a1f2-78ac007b8b64",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "30f37a17-0eed-4abf-a848-64668dd35bac",
+      "name": "doActionsByConditions",
+      "NodeID": 17,
+      "elseActionIds": [
+        15,
+        18,
+        22
+      ]
+    },
+    "29": {
+      "buffId": 1145129,
+      "name": "hasBuff",
+      "UID": "db44f703-9646-4bc0-9d6d-59401bd624d4",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 18,
+      "UID": "c595135a-080a-4f38-945b-b99f55b8a48e",
+      "target": "OWNER",
+      "fadeTime": 0.3,
+      "animId": "Behav_SleepStart"
+    },
+    "30": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "93a96ef4-240f-4bbd-93ef-7409369a4824",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "9f96eeed-0a20-4afb-9055-f387e6b6a509",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "21bb8861-3a3f-4bc8-b13b-1efc292ff205",
+      "conditionIds": [
+        33,
+        35
+      ],
+      "name": "conditionOr",
+      "NodeID": 34
+    },
+    "36": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "cbcaee31-1ce7-4424-b5e4-5f051d062caa",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    19,
+    24,
+    25,
+    39
+  ],
+  "onBuffStartIds": [
+    23,
+    27,
+    11,
+    17,
+    30
+  ]
+}

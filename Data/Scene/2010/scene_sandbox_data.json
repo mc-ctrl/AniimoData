@@ -1,0 +1,120 @@
+{
+  "56736265": {
+    "owner": "徐一乘",
+    "chunk": 1018850,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 56736269,
+    "levelItems": {
+      "68915832": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Temple_StoneStatueBase_BlessTip",
+        "position": [
+          0.26,
+          102,
+          -8.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 68915832,
+        "configId": 377,
+        "defaultValue": {
+          "canReturn": false,
+          "noticeKey": "STATUEGUIDE_TEMPLE_BlESS",
+          "realCharacters": "BLESSING",
+          "tempPetTemplateId": 0,
+          "state": 1,
+          "guideId": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91339519": {
+        "majorCompId": 42742113,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          0,
+          80,
+          40
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91339519,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "expressionKey": "91339519_42742113",
+            "blackScreenId": 2000,
+            "playerReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          76,
+          12,
+          120
+        ],
+        "isActive": true
+      },
+      "63471345": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_EndingMachine_SinglePlayer",
+        "position": [
+          0,
+          100,
+          77.5
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 63471345,
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 1002,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "Level_FB_Temple_12",
+    "spawners": [
+      56736267,
+      63472431
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2010/Sandbox_56736265_GraphRef.asset",
+    "sightLevel": 512,
+    "id": 56736265,
+    "markIconSpawnerId": 0,
+    "position": [
+      -37.63,
+      0,
+      -51.08
+    ]
+  }
+}

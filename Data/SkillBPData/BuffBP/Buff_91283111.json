@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "atk_p": 0,
+    "atk_v": 0,
+    "dmg_water_add_ratio": 0,
+    "def_p": 0,
+    "def_mag_p": 0
+  },
+  "calcInfoByLuaConfig": {
+    "id": 91283111,
+    "type": 1,
+    "atk_p": "param2",
+    "atk_v": "param2",
+    "dmg_water_add_ratio": "param1",
+    "def_p": "param0",
+    "def_mag_p": "param0"
+  },
+  "UID": "3fafcb1c-301e-46d6-9f40-ebc04bb0fe0a",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "duration": 32,
+      "disableWhenFinished": true,
+      "NodeID": 5,
+      "UID": "f98c5ca4-31d4-4a9f-86e3-1ea1a1a64646",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10283_Rock",
+      "name": "playPreset"
+    },
+    "9": {
+      "id": 2019,
+      "hasCountDown": true,
+      "NodeID": 9,
+      "UID": "fb723874-5d04-4a55-83c2-6f619e5a7c15",
+      "name": "hideBossMechanismTip"
+    },
+    "6": {
+      "UID": "5f2c027f-5ead-4a80-a8e8-6f9e5d0e8ea3",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10283_Rock",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "NodeID": 10,
+      "UID": "0e2a237f-aecc-49ff-8861-cba008db03d2",
+      "layer": 2000,
+      "name": "clearElement",
+      "elementType": 0
+    },
+    "11": {
+      "buffId": 10079,
+      "name": "removeBuff",
+      "UID": "9c48509c-55b6-46d5-ad5a-1147b8fbc256",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "8": {
+      "id": 2019,
+      "duration": 30,
+      "NodeID": 8,
+      "UID": "aa1036c4-e3c0-4269-9f69-aac2e6661c99",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e78f38e5-2018-42ab-b9a8-9bc1c03e1d80",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Explosion"
+    }
+  },
+  "BPName": "buff_91283111",
+  "onBuffDestroyIds": [
+    9,
+    6,
+    10,
+    11
+  ],
+  "onBuffStartIds": [
+    2,
+    5,
+    8
+  ]
+}

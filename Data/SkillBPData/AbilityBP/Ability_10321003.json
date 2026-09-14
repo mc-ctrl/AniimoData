@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_10321003",
+  "NodeID": 1,
+  "UID": "c034e49c-c23e-47c7-9bb0-50e933e3f097",
+  "abilityParamId": 11200001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10321003001,
+      "name": "setCombatActionTimeline",
+      "UID": "9a60edd0-6c73-4e34-95bd-139bbdd9260a",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack04"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Blunt_Big",
+    "Eff_Parmon_10032_Attack04",
+    "Eff_Parmon_10032_Attack04_01",
+    "Eff_Parmon_10032_Attack04_Hide",
+    "Eff_Parmon_10032_Attack04_02",
+    "Eff_Hit_Fire_Blunt_Big",
+    "Eff_Parmon_10032_Attack04_Fire",
+    "Eff_Parmon_10032_Attack04_Hide_Fire",
+    "Eff_Parmon_10032_Attack04_01_Fire",
+    "Eff_Parmon_10032_Attack04_02_Fire"
+  ],
+  "searchRelation": 2,
+  "name": "暗普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

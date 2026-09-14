@@ -1,0 +1,331 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "calcId": 215630101,
+      "calcType": 4,
+      "paramName": "param2",
+      "NodeID": 37,
+      "UID": "949bb42e-259b-4c7d-ba11-107650e07ed3",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "isSwitchPetInherit": true,
+      "target": "CURPET",
+      "NodeID": 6,
+      "UID": "b2dd253d-a512-4914-8eec-8f721733b95a",
+      "effectId": "Eff_Parmon_10563_Skill_SporeCloud_liuli",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "41": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "d3e54f01-2dfb-4fab-830f-22220ca5b92e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10563_Skill_SporeCloud_Down",
+      "NodeID": 41
+    },
+    "42": {
+      "isSwitchPetInherit": true,
+      "target": "CURPET",
+      "NodeID": 42,
+      "UID": "e2ce405d-0754-4ef5-8f6e-b2e198cf4966",
+      "effectId": "Eff_Parmon_10563_Skill_SporeCloud_01",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "35": {
+      "calcId": 215630101,
+      "calcType": 4,
+      "paramName": "param2",
+      "NodeID": 35,
+      "UID": "96b92843-da2f-4375-ada4-91cb4b765374",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "isSwitchPetInherit": true,
+      "NodeID": 8,
+      "UID": "07d2c254-da5c-42ca-90b4-ea403762f89c",
+      "effectId": "Eff_Parmon_10563_Skill_SporeCloud",
+      "target": "CURPET",
+      "name": "stopEffectStr"
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "cae9ac3e-57cf-4a43-9d5f-b3bed1de0e29",
+      "effectId": "Eff_Parmon_10563_Skill_SporeCloud_Trigger",
+      "target": "CURPET",
+      "NodeID": 11
+    },
+    "20": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "name": "getAttribute",
+            "UID": "980d59d3-c160-4530-995d-6c34e1a0dfbb",
+            "target": "OWNER",
+            "NodeID": 25,
+            "attributeName": "hp_max_cur"
+          },
+          "name": "multiply",
+          "UID": "891f5019-dd2b-40fe-8c1e-f3e4273fa992",
+          "NodeID": 23,
+          "lValue": {
+            "calcId": 215630101,
+            "calcType": 4,
+            "paramName": "param1",
+            "NodeID": 22,
+            "UID": "968231a3-33cc-4da9-b49e-edc47a1ef669",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "calcInfoByLuaConfig": {
+        "id": 215630101,
+        "type": 4,
+        "add_cur_ep_fix": "param0"
+      },
+      "UID": "d2785909-3b26-429f-806d-36ce3b3e8dbd",
+      "target": "CURPET",
+      "name": "calcResult",
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "a616c7f9-fc64-422f-8b86-ce6a4e478d01",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "22": {
+      "calcId": 215630101,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 22,
+      "UID": "968231a3-33cc-4da9-b49e-edc47a1ef669",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "tickInterval": 5,
+      "eventType": "NotifyState",
+      "endTime": 9999,
+      "NodeID": 4,
+      "UID": "b6df5a17-0877-4f55-ac18-564226dcb59c",
+      "onUpdate": {
+        "actionIds": [
+          2,
+          16,
+          41
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          14,
+          6
+        ]
+      }
+    },
+    "14": {
+      "eventName": "InDmg",
+      "NodeID": 14,
+      "UID": "abb57239-3f2d-4d1a-9330-5fa38a500e61",
+      "target": "CURPET",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        12,
+        18,
+        42
+      ]
+    },
+    "10": {
+      "UID": "2461a70a-f94c-41a6-9f1b-9e2a1ec00984",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          8,
+          11
+        ]
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "buffId": 2156303,
+      "name": "hasBuff",
+      "UID": "68f1d18e-9868-4bf7-8885-d0f6bfe31cde",
+      "target": "MASTER",
+      "NodeID": 15
+    },
+    "40": {
+      "calcId": 215630101,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 40,
+      "UID": "5806bdb6-df40-4c79-80bc-c9f14a2926d6",
+      "name": "getParamByLuaConfig"
+    },
+    "26": {
+      "name": "checkElementType",
+      "UID": "c13848a0-aef6-4237-87fc-26e2b7acea93",
+      "target": "CURPET",
+      "NodeID": 26,
+      "elementType": 6
+    },
+    "27": {
+      "name": "checkElementType",
+      "UID": "25e7be48-21b6-4524-83df-96495fccd08b",
+      "target": "CURPET",
+      "NodeID": 27,
+      "elementType": 6
+    },
+    "28": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "d905da2b-6603-47a2-8290-12be29dfce36",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "29": {
+      "calcId": 215630101,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 29,
+      "UID": "580c3dcb-6364-4d22-b171-aa53e5e17aa8",
+      "name": "getParamByLuaConfig"
+    },
+    "18": {
+      "renderNameFilter": [
+        "M_Parmon_10563_Body"
+      ],
+      "duration": 0.8,
+      "disableWhenFinished": true,
+      "NodeID": 18,
+      "UID": "67162db1-d6d3-4322-8916-7c1de4752eeb",
+      "target": "MASTER",
+      "presetName": "PM_Eff_Parmon_10563_Skill_BombMushroom_Hit",
+      "name": "playPreset"
+    },
+    "12": {
+      "timelineId": 2156301,
+      "time": 1,
+      "name": "fastforwardTimeline",
+      "UID": "772b1d7f-285c-4f22-bf2c-487fd0064fb0",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "33": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "02935d29-6c6f-41b4-8840-d0753a23d6a7",
+            "NodeID": 36,
+            "lValue": {
+              "calcId": 215630101,
+              "calcType": 4,
+              "paramName": "param2",
+              "NodeID": 35,
+              "UID": "96b92843-da2f-4375-ada4-91cb4b765374",
+              "name": "getParamByLuaConfig"
+            }
+          },
+          "name": "multiply",
+          "UID": "c6c83983-7be1-4628-b848-1074ddc15771",
+          "NodeID": 31,
+          "lValue": {
+            "rValue": {
+              "name": "getAttribute",
+              "UID": "4e651d5a-ac20-4072-bf3b-3352b6ed9bfa",
+              "target": "OWNER",
+              "NodeID": 34,
+              "attributeName": "hp_max_cur"
+            },
+            "name": "multiply",
+            "UID": "30abaa86-e19e-4c3a-9848-8554b67bbeeb",
+            "NodeID": 30,
+            "lValue": {
+              "calcId": 215630101,
+              "calcType": 4,
+              "paramName": "param1",
+              "NodeID": 29,
+              "UID": "580c3dcb-6364-4d22-b171-aa53e5e17aa8",
+              "name": "getParamByLuaConfig"
+            }
+          }
+        },
+        "add_cur_ep_fix": {
+          "rValue": {
+            "calcId": 215630101,
+            "calcType": 4,
+            "paramName": "param0",
+            "NodeID": 40,
+            "UID": "5806bdb6-df40-4c79-80bc-c9f14a2926d6",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "285e2b81-3a84-44e6-8e84-0bb3bfb88042",
+          "NodeID": 39,
+          "lValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "5d4caa1f-333a-479b-b689-acabc3c54dea",
+            "NodeID": 38,
+            "lValue": {
+              "calcId": 215630101,
+              "calcType": 4,
+              "paramName": "param2",
+              "NodeID": 37,
+              "UID": "949bb42e-259b-4c7d-ba11-107650e07ed3",
+              "name": "getParamByLuaConfig"
+            }
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "b18c1376-7ec9-4bf0-8c96-2f034496dc84",
+      "target": "CURPET",
+      "NodeID": 33
+    },
+    "2": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "abbfcccf-5244-4420-a2c4-1324cc3f1b81",
+      "effectId": "Eff_Parmon_10563_Skill_SporeCloud_Trigger_liuli",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "16": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "6f44e374-5010-4f25-845f-23fdc0c4fd99",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21
+      ],
+      "NodeID": 16
+    }
+  },
+  "BPName": "timeline_215630101",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    4,
+    10
+  ],
+  "layer": "Base",
+  "length": 50
+}

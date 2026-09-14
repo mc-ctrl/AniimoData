@@ -1,0 +1,174 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9146401",
+  "name": "号胜象-普通特性",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "",
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "doPetsActions",
+      "UID": "6e9de6e2-89a5-4c26-b757-3e38287906eb",
+      "target": "TARGET",
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "4980b57d-c7df-4cff-9910-22e123b5aef0",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "8": {
+      "UID": "a2d9b8b5-3e58-4de1-a9a8-a2ddacc4721e",
+      "name": "registerPetListChangeEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 8
+    },
+    "11": {
+      "actionIds": [
+        12,
+        14
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "b62a2a54-7930-4e08-8af5-90c82a8e99ff",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "20": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 20,
+      "UID": "8515d22e-9912-4f85-b059-f9a4c29211f5",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage03",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "21": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 21,
+      "UID": "14d1f4e2-faf3-43a8-b99f-417b6413e687",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "4": {
+      "actionIds": [
+        2,
+        11
+      ],
+      "name": "registerPostReceiveDamageEvent",
+      "UID": "eaa3c553-8a05-459d-9a58-4599fa16c256",
+      "target": "TARGET",
+      "NodeID": 4
+    },
+    "24": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 24,
+      "UID": "679ed53f-dbeb-4f0c-a4c7-c57a8af76009",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage02",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91464011,
+      "NodeID": 14,
+      "UID": "60507886-4bbd-4d7b-b40a-895a514d4f6b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "rValue": 9,
+      "name": "greater",
+      "UID": "c8677619-f51d-412f-95fb-d4e649361a2d",
+      "NodeID": 10,
+      "lValue": {
+        "templateId": 91464012,
+        "name": "getBuffLayer",
+        "UID": "fc0babc3-9c0d-4dec-a7be-93d417bb9dc7",
+        "target": "OWNER",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 15,
+      "UID": "bf0af773-eed2-4f08-b915-c9656f8a9490",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "25": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 25,
+      "UID": "7263389e-72c5-4ee2-adb8-ea2c7ca3dd00",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage03",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "17": {
+      "UID": "854188ec-8abb-4f3c-932a-3e919b2da30d",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        15,
+        19,
+        20
+      ],
+      "NodeID": 17
+    },
+    "12": {
+      "buffId": 91464012,
+      "name": "removeBuff",
+      "UID": "4b8b114e-f8d6-445f-9b20-84c97d3f7bbf",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "19": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 19,
+      "UID": "e0718c80-b41b-4136-928e-2bc57f48c528",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage02",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91464012,
+      "NodeID": 2,
+      "UID": "c700cc12-2efe-4604-b2eb-01ae0f0878f5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "23": {
+      "UID": "135eb759-231c-44ce-bf7c-78fc782898ff",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        21,
+        24,
+        25
+      ],
+      "NodeID": 23
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    17,
+    23,
+    8
+  ]
+}

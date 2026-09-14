@@ -1,0 +1,63 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9118501",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "eventName": "10185Remove",
+      "NodeID": 8,
+      "UID": "b9e7b026-dc84-4efa-8972-939db4e403d4",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        7
+      ]
+    },
+    "7": {
+      "calcInfo": {
+        "ep_cost_reduce_ratio": {
+          "rValue": {
+            "calcId": 9118501,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 10,
+            "UID": "d897a618-eb36-432d-b2d3-705d994cf4d1",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "83abd0ae-1968-46b5-b8c9-84a2800ed03e",
+          "NodeID": 5,
+          "lValue": {
+            "key": "10185Num",
+            "name": "getCacheVal",
+            "UID": "b397c38b-9f12-4bd7-a7ee-5fe088e1642d",
+            "target": "MASTER",
+            "NodeID": 4
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "7bd5fde2-4ba2-43c7-a7b3-875522256370",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 7
+    },
+    "10": {
+      "calcId": 9118501,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "d897a618-eb36-432d-b2d3-705d994cf4d1",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    8
+  ]
+}

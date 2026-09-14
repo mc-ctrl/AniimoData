@@ -1,0 +1,18 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "dmg_holy_add_ratio": "param0",
+    "type": 1,
+    "id": 2136104
+  },
+  "BPName": "buff_2136104",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

@@ -1,0 +1,9898 @@
+{
+  "1017200": [
+    {
+      "conditionDesc": 2010582060,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1017211,
+          2,
+          10
+        ],
+        [
+          1017212,
+          5,
+          10
+        ],
+        [
+          1017213,
+          10,
+          10
+        ],
+        [
+          1017214,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1361445775,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1017221,
+          1,
+          10
+        ],
+        [
+          1017222,
+          2,
+          10
+        ],
+        [
+          1017223,
+          5,
+          10
+        ],
+        [
+          1017224,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1445560130,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1017231,
+          1,
+          10
+        ],
+        [
+          1017232,
+          2,
+          10
+        ],
+        [
+          1017233,
+          4,
+          10
+        ],
+        [
+          1017234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1266450994,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1017241,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2099618547,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1017251,
+          10,
+          10
+        ],
+        [
+          1017252,
+          20,
+          10
+        ],
+        [
+          1017253,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1018700": [
+    {
+      "conditionDesc": 1563368814,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1018711,
+          10,
+          10
+        ],
+        [
+          1018712,
+          20,
+          10
+        ],
+        [
+          1018713,
+          40,
+          10
+        ],
+        [
+          1018714,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1926714279,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1018721,
+          5,
+          10
+        ],
+        [
+          1018722,
+          10,
+          10
+        ],
+        [
+          1018723,
+          20,
+          10
+        ],
+        [
+          1018724,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1734541859,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1018731,
+          2,
+          10
+        ],
+        [
+          1018732,
+          5,
+          10
+        ],
+        [
+          1018733,
+          10,
+          10
+        ],
+        [
+          1018734,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1248322908,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1018741,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1936498101,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1018751,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1579867750,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1018761,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1032300": [
+    {
+      "conditionDesc": 1804462640,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1032311,
+          10,
+          10
+        ],
+        [
+          1032312,
+          20,
+          10
+        ],
+        [
+          1032313,
+          40,
+          10
+        ],
+        [
+          1032314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1284942036,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1032321,
+          2,
+          10
+        ],
+        [
+          1032322,
+          5,
+          10
+        ],
+        [
+          1032323,
+          10,
+          10
+        ],
+        [
+          1032324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2015296997,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1032331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1138329929,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1032341,
+          5,
+          10
+        ],
+        [
+          1032342,
+          10,
+          10
+        ],
+        [
+          1032343,
+          20,
+          10
+        ],
+        [
+          1032344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1249135418,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1032351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1442024922,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1032361,
+          1,
+          20,
+          30007
+        ]
+      ]
+    }
+  ],
+  "1048100": [
+    {
+      "conditionDesc": 1697353307,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1048111,
+          5,
+          10
+        ],
+        [
+          1048112,
+          10,
+          10
+        ],
+        [
+          1048113,
+          20,
+          10
+        ],
+        [
+          1048114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1310201288,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1048121,
+          10,
+          10
+        ],
+        [
+          1048122,
+          50,
+          10
+        ],
+        [
+          1048123,
+          100,
+          10
+        ],
+        [
+          1048124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1956452711,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1048131,
+          1,
+          10
+        ],
+        [
+          1048132,
+          2,
+          10
+        ],
+        [
+          1048133,
+          4,
+          10
+        ],
+        [
+          1048134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1780967307,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1048141,
+          1,
+          10
+        ],
+        [
+          1048142,
+          2,
+          10
+        ],
+        [
+          1048143,
+          5,
+          10
+        ],
+        [
+          1048144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1048300": [
+    {
+      "conditionDesc": 1446902960,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1048311,
+          10,
+          10
+        ],
+        [
+          1048312,
+          20,
+          10
+        ],
+        [
+          1048313,
+          40,
+          10
+        ],
+        [
+          1048314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1587922515,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1048321,
+          2,
+          10
+        ],
+        [
+          1048322,
+          5,
+          10
+        ],
+        [
+          1048323,
+          10,
+          10
+        ],
+        [
+          1048324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1709532703,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1048331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2020784304,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1048341,
+          5,
+          10
+        ],
+        [
+          1048342,
+          10,
+          10
+        ],
+        [
+          1048343,
+          20,
+          10
+        ],
+        [
+          1048344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2107837754,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1048351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1050100": [
+    {
+      "conditionDesc": 1499456632,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1050111,
+          5,
+          10
+        ],
+        [
+          1050112,
+          10,
+          10
+        ],
+        [
+          1050113,
+          20,
+          10
+        ],
+        [
+          1050114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2097773245,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1050121,
+          10,
+          10
+        ],
+        [
+          1050122,
+          50,
+          10
+        ],
+        [
+          1050123,
+          100,
+          10
+        ],
+        [
+          1050124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2091409670,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1050131,
+          1,
+          10
+        ],
+        [
+          1050132,
+          2,
+          10
+        ],
+        [
+          1050133,
+          4,
+          10
+        ],
+        [
+          1050134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2025457108,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1050141,
+          1,
+          10
+        ],
+        [
+          1050142,
+          2,
+          10
+        ],
+        [
+          1050143,
+          5,
+          10
+        ],
+        [
+          1050144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1050300": [
+    {
+      "conditionDesc": 1494143968,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1050311,
+          10,
+          10
+        ],
+        [
+          1050312,
+          20,
+          10
+        ],
+        [
+          1050313,
+          40,
+          10
+        ],
+        [
+          1050314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1245930289,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1050321,
+          2,
+          10
+        ],
+        [
+          1050322,
+          5,
+          10
+        ],
+        [
+          1050323,
+          10,
+          10
+        ],
+        [
+          1050324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1710550939,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1050331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1643999221,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1050341,
+          5,
+          10
+        ],
+        [
+          1050342,
+          10,
+          10
+        ],
+        [
+          1050343,
+          20,
+          10
+        ],
+        [
+          1050344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1885445010,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1050351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2060712659,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1050361,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1022100": [
+    {
+      "conditionDesc": 1798838628,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1022111,
+          5,
+          10
+        ],
+        [
+          1022112,
+          10,
+          10
+        ],
+        [
+          1022113,
+          20,
+          10
+        ],
+        [
+          1022114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1495213601,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1022121,
+          1,
+          10
+        ],
+        [
+          1022122,
+          2,
+          10
+        ],
+        [
+          1022123,
+          5,
+          10
+        ],
+        [
+          1022124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1777498325,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1022131,
+          10,
+          10
+        ],
+        [
+          1022132,
+          50,
+          10
+        ],
+        [
+          1022133,
+          100,
+          10
+        ],
+        [
+          1022134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1502140651,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1022141,
+          1,
+          10
+        ],
+        [
+          1022142,
+          2,
+          10
+        ],
+        [
+          1022143,
+          4,
+          10
+        ],
+        [
+          1022144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2118531527,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 24,
+      "condition": [
+        [
+          1022151,
+          5,
+          20,
+          30003
+        ]
+      ]
+    }
+  ],
+  "1022200": [
+    {
+      "conditionDesc": 1877058111,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1022211,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1379535269,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1022221,
+          5,
+          10
+        ],
+        [
+          1022222,
+          10,
+          10
+        ],
+        [
+          1022223,
+          20,
+          10
+        ],
+        [
+          1022224,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2134962625,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1022231,
+          2,
+          10
+        ],
+        [
+          1022232,
+          5,
+          10
+        ],
+        [
+          1022233,
+          10,
+          10
+        ],
+        [
+          1022234,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1781466622,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1022241,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1488958453,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1022251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1371643356,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1022261,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1035200": [
+    {
+      "conditionDesc": 2141635741,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1035211,
+          10,
+          10
+        ],
+        [
+          1035212,
+          20,
+          10
+        ],
+        [
+          1035213,
+          40,
+          10
+        ],
+        [
+          1035214,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1861950172,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1035221,
+          2,
+          10
+        ],
+        [
+          1035222,
+          5,
+          10
+        ],
+        [
+          1035223,
+          10,
+          10
+        ],
+        [
+          1035224,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2101237514,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1035231,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1342234926,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1035241,
+          5,
+          10
+        ],
+        [
+          1035242,
+          10,
+          10
+        ],
+        [
+          1035243,
+          20,
+          10
+        ],
+        [
+          1035244,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1366774717,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1035251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1014100": [
+    {
+      "conditionDesc": 1813332118,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1014111,
+          5,
+          10
+        ],
+        [
+          1014112,
+          10,
+          10
+        ],
+        [
+          1014113,
+          20,
+          10
+        ],
+        [
+          1014114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1132314276,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1014121,
+          1,
+          10
+        ],
+        [
+          1014122,
+          2,
+          10
+        ],
+        [
+          1014123,
+          5,
+          10
+        ],
+        [
+          1014124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1157711744,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1014131,
+          10,
+          10
+        ],
+        [
+          1014132,
+          50,
+          10
+        ],
+        [
+          1014133,
+          100,
+          10
+        ],
+        [
+          1014134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1346419723,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1014141,
+          1,
+          10
+        ],
+        [
+          1014142,
+          2,
+          10
+        ],
+        [
+          1014143,
+          4,
+          10
+        ],
+        [
+          1014144,
+          8,
+          10
+        ]
+      ]
+    }
+  ],
+  "1014200": [
+    {
+      "conditionDesc": 1290635008,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1014211,
+          2,
+          10
+        ],
+        [
+          1014212,
+          5,
+          10
+        ],
+        [
+          1014213,
+          10,
+          10
+        ],
+        [
+          1014214,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1670150753,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1014221,
+          1,
+          10
+        ],
+        [
+          1014222,
+          2,
+          10
+        ],
+        [
+          1014223,
+          5,
+          10
+        ],
+        [
+          1014224,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1524765643,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1014231,
+          1,
+          10
+        ],
+        [
+          1014232,
+          2,
+          10
+        ],
+        [
+          1014233,
+          4,
+          10
+        ],
+        [
+          1014234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2058795485,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1014241,
+          10,
+          10
+        ],
+        [
+          1014242,
+          20,
+          10
+        ],
+        [
+          1014243,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1013200": [
+    {
+      "conditionDesc": 1569905868,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1013211,
+          2,
+          10
+        ],
+        [
+          1013212,
+          5,
+          10
+        ],
+        [
+          1013213,
+          10,
+          10
+        ],
+        [
+          1013214,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1325073378,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1013221,
+          1,
+          10
+        ],
+        [
+          1013222,
+          2,
+          10
+        ],
+        [
+          1013223,
+          5,
+          10
+        ],
+        [
+          1013224,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1598100799,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1013231,
+          1,
+          10
+        ],
+        [
+          1013232,
+          2,
+          10
+        ],
+        [
+          1013233,
+          4,
+          10
+        ],
+        [
+          1013234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1361901618,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1013241,
+          10,
+          10
+        ],
+        [
+          1013242,
+          20,
+          10
+        ],
+        [
+          1013243,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1013300": [
+    {
+      "conditionDesc": 1661428926,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1013311,
+          5,
+          10
+        ],
+        [
+          1013312,
+          10,
+          10
+        ],
+        [
+          1013313,
+          20,
+          10
+        ],
+        [
+          1013314,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1308673004,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1013321,
+          2,
+          10
+        ],
+        [
+          1013322,
+          5,
+          10
+        ],
+        [
+          1013323,
+          10,
+          10
+        ],
+        [
+          1013324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1517708478,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1013331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1900740018,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1013341,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1960110978,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1013351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1002300": [
+    {
+      "conditionDesc": 1149071647,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1002311,
+          10,
+          10
+        ],
+        [
+          1002312,
+          20,
+          10
+        ],
+        [
+          1002313,
+          40,
+          10
+        ],
+        [
+          1002314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1585414668,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1002321,
+          5,
+          10
+        ],
+        [
+          1002322,
+          10,
+          10
+        ],
+        [
+          1002323,
+          20,
+          10
+        ],
+        [
+          1002324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1205969698,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1002331,
+          2,
+          10
+        ],
+        [
+          1002332,
+          5,
+          10
+        ],
+        [
+          1002333,
+          10,
+          10
+        ],
+        [
+          1002334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2024110054,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1002341,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1554969882,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1002351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1004100": [
+    {
+      "conditionDesc": 1424199144,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1004111,
+          5,
+          10
+        ],
+        [
+          1004112,
+          10,
+          10
+        ],
+        [
+          1004113,
+          20,
+          10
+        ],
+        [
+          1004114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1247422674,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1004121,
+          1,
+          10
+        ],
+        [
+          1004122,
+          2,
+          10
+        ],
+        [
+          1004123,
+          5,
+          10
+        ],
+        [
+          1004124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1506174155,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1004131,
+          10,
+          10
+        ],
+        [
+          1004132,
+          50,
+          10
+        ],
+        [
+          1004133,
+          100,
+          10
+        ],
+        [
+          1004134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1739025253,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1004141,
+          1,
+          10
+        ],
+        [
+          1004142,
+          2,
+          10
+        ],
+        [
+          1004143,
+          4,
+          10
+        ],
+        [
+          1004144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1375229673,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 24,
+      "condition": [
+        [
+          1004151,
+          5,
+          20,
+          30003
+        ]
+      ]
+    }
+  ],
+  "1001200": [
+    {
+      "conditionDesc": 1697542385,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1001211,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1724423717,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1001221,
+          5,
+          10
+        ],
+        [
+          1001222,
+          10,
+          10
+        ],
+        [
+          1001223,
+          20,
+          10
+        ],
+        [
+          1001224,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2102456434,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1001231,
+          2,
+          10
+        ],
+        [
+          1001232,
+          5,
+          10
+        ],
+        [
+          1001233,
+          10,
+          10
+        ],
+        [
+          1001234,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1996598544,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1001241,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1715018231,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1001251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1736168381,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1001261,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1004300": [
+    {
+      "conditionDesc": 1084773137,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1004311,
+          10,
+          10
+        ],
+        [
+          1004312,
+          20,
+          10
+        ],
+        [
+          1004313,
+          40,
+          10
+        ],
+        [
+          1004314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1099016421,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1004321,
+          5,
+          10
+        ],
+        [
+          1004322,
+          10,
+          10
+        ],
+        [
+          1004323,
+          20,
+          10
+        ],
+        [
+          1004324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1758046197,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1004331,
+          2,
+          10
+        ],
+        [
+          1004332,
+          5,
+          10
+        ],
+        [
+          1004333,
+          10,
+          10
+        ],
+        [
+          1004334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1132479987,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1004341,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1870419175,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1004351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1968798950,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1004361,
+          1,
+          20,
+          30007
+        ]
+      ]
+    }
+  ],
+  "1002600": [
+    {
+      "conditionDesc": 1796966793,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1002611,
+          10,
+          10
+        ],
+        [
+          1002612,
+          20,
+          10
+        ],
+        [
+          1002613,
+          40,
+          10
+        ],
+        [
+          1002614,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2013402126,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1002621,
+          5,
+          10
+        ],
+        [
+          1002622,
+          10,
+          10
+        ],
+        [
+          1002623,
+          20,
+          10
+        ],
+        [
+          1002624,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1541517753,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1002631,
+          2,
+          10
+        ],
+        [
+          1002632,
+          5,
+          10
+        ],
+        [
+          1002633,
+          10,
+          10
+        ],
+        [
+          1002634,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1696458746,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1002641,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1500768854,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1002651,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1132373556,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1002661,
+          1,
+          20,
+          30007
+        ]
+      ]
+    }
+  ],
+  "1002500": [
+    {
+      "conditionDesc": 1293736000,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1002511,
+          10,
+          10
+        ],
+        [
+          1002512,
+          20,
+          10
+        ],
+        [
+          1002513,
+          40,
+          10
+        ],
+        [
+          1002514,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1272248619,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1002521,
+          5,
+          10
+        ],
+        [
+          1002522,
+          10,
+          10
+        ],
+        [
+          1002523,
+          20,
+          10
+        ],
+        [
+          1002524,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1733153360,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1002531,
+          2,
+          10
+        ],
+        [
+          1002532,
+          5,
+          10
+        ],
+        [
+          1002533,
+          10,
+          10
+        ],
+        [
+          1002534,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2030356608,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1002541,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1977681683,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1002551,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1003100": [
+    {
+      "conditionDesc": 1476584455,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1003111,
+          5,
+          10
+        ],
+        [
+          1003112,
+          10,
+          10
+        ],
+        [
+          1003113,
+          20,
+          10
+        ],
+        [
+          1003114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1784261580,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1003121,
+          1,
+          10
+        ],
+        [
+          1003122,
+          2,
+          10
+        ],
+        [
+          1003123,
+          5,
+          10
+        ],
+        [
+          1003124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2049487926,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1003131,
+          10,
+          10
+        ],
+        [
+          1003132,
+          50,
+          10
+        ],
+        [
+          1003133,
+          100,
+          10
+        ],
+        [
+          1003134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1288002366,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1003141,
+          1,
+          10
+        ],
+        [
+          1003142,
+          2,
+          10
+        ],
+        [
+          1003143,
+          4,
+          10
+        ],
+        [
+          1003144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1291011855,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1003151,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1123532974,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1003161,
+          3,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1028300": [
+    {
+      "conditionDesc": 1164493060,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1028311,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1220513338,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1028321,
+          2,
+          10
+        ],
+        [
+          1028322,
+          5,
+          10
+        ],
+        [
+          1028323,
+          10,
+          10
+        ],
+        [
+          1028324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1213009388,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1028331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2108376837,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1028341,
+          5,
+          10
+        ],
+        [
+          1028342,
+          10,
+          10
+        ],
+        [
+          1028343,
+          20,
+          10
+        ],
+        [
+          1028344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1689703030,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1028351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1600262292,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1028361,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1003300": [
+    {
+      "conditionDesc": 1798267929,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1003311,
+          10,
+          10
+        ],
+        [
+          1003312,
+          20,
+          10
+        ],
+        [
+          1003313,
+          40,
+          10
+        ],
+        [
+          1003314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1683226850,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1003321,
+          2,
+          10
+        ],
+        [
+          1003322,
+          5,
+          10
+        ],
+        [
+          1003323,
+          10,
+          10
+        ],
+        [
+          1003324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1414118434,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1003331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1600037666,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1003341,
+          5,
+          10
+        ],
+        [
+          1003342,
+          10,
+          10
+        ],
+        [
+          1003343,
+          20,
+          10
+        ],
+        [
+          1003344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1131780460,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1003351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1016100": [
+    {
+      "conditionDesc": 1276088372,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1016111,
+          5,
+          10
+        ],
+        [
+          1016112,
+          10,
+          10
+        ],
+        [
+          1016113,
+          20,
+          10
+        ],
+        [
+          1016114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1784713943,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1016121,
+          1,
+          10
+        ],
+        [
+          1016122,
+          2,
+          10
+        ],
+        [
+          1016123,
+          5,
+          10
+        ],
+        [
+          1016124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1226274349,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1016131,
+          10,
+          10
+        ],
+        [
+          1016132,
+          50,
+          10
+        ],
+        [
+          1016133,
+          100,
+          10
+        ],
+        [
+          1016134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1468452287,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1016141,
+          1,
+          10
+        ],
+        [
+          1016142,
+          2,
+          10
+        ],
+        [
+          1016143,
+          4,
+          10
+        ],
+        [
+          1016144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1491938629,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1016151,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1519026573,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1016161,
+          4,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1016200": [
+    {
+      "conditionDesc": 2142448882,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1016211,
+          10,
+          10
+        ],
+        [
+          1016212,
+          20,
+          10
+        ],
+        [
+          1016213,
+          40,
+          10
+        ],
+        [
+          1016214,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1212701678,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1016221,
+          5,
+          10
+        ],
+        [
+          1016222,
+          10,
+          10
+        ],
+        [
+          1016223,
+          20,
+          10
+        ],
+        [
+          1016224,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1881181104,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1016231,
+          2,
+          10
+        ],
+        [
+          1016232,
+          5,
+          10
+        ],
+        [
+          1016233,
+          10,
+          10
+        ],
+        [
+          1016234,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1408379896,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1016241,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1355684815,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1016251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1016300": [
+    {
+      "conditionDesc": 1964670223,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1016311,
+          10,
+          10
+        ],
+        [
+          1016312,
+          20,
+          10
+        ],
+        [
+          1016313,
+          40,
+          10
+        ],
+        [
+          1016314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1896279120,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1016321,
+          5,
+          10
+        ],
+        [
+          1016322,
+          10,
+          10
+        ],
+        [
+          1016323,
+          20,
+          10
+        ],
+        [
+          1016324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2067516363,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1016331,
+          2,
+          10
+        ],
+        [
+          1016332,
+          5,
+          10
+        ],
+        [
+          1016333,
+          10,
+          10
+        ],
+        [
+          1016334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1913278748,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1016341,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2106175243,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1016351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1982889201,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1016361,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1028100": [
+    {
+      "conditionDesc": 1463199853,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1028111,
+          5,
+          10
+        ],
+        [
+          1028112,
+          10,
+          10
+        ],
+        [
+          1028113,
+          20,
+          10
+        ],
+        [
+          1028114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1458800752,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1028121,
+          1,
+          10
+        ],
+        [
+          1028122,
+          2,
+          10
+        ],
+        [
+          1028123,
+          5,
+          10
+        ],
+        [
+          1028124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1435305000,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1028131,
+          10,
+          10
+        ],
+        [
+          1028132,
+          50,
+          10
+        ],
+        [
+          1028133,
+          100,
+          10
+        ],
+        [
+          1028134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1532749604,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1028141,
+          1,
+          10
+        ],
+        [
+          1028142,
+          2,
+          10
+        ],
+        [
+          1028143,
+          4,
+          10
+        ],
+        [
+          1028144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2003192587,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1028151,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    }
+  ],
+  "1028400": [
+    {
+      "conditionDesc": 1521904693,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1028411,
+          5,
+          10
+        ],
+        [
+          1028412,
+          10,
+          10
+        ],
+        [
+          1028413,
+          20,
+          10
+        ],
+        [
+          1028414,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1876971331,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1028421,
+          10,
+          10
+        ],
+        [
+          1028422,
+          50,
+          10
+        ],
+        [
+          1028423,
+          100,
+          10
+        ],
+        [
+          1028424,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1954620704,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1028431,
+          1,
+          10
+        ],
+        [
+          1028432,
+          2,
+          10
+        ],
+        [
+          1028433,
+          4,
+          10
+        ],
+        [
+          1028434,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1700769967,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1028441,
+          10,
+          10
+        ],
+        [
+          1028442,
+          20,
+          10
+        ],
+        [
+          1028443,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1028500": [
+    {
+      "conditionDesc": 1882886908,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1028511,
+          10,
+          10
+        ],
+        [
+          1028512,
+          20,
+          10
+        ],
+        [
+          1028513,
+          40,
+          10
+        ],
+        [
+          1028514,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1352449361,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1028521,
+          5,
+          10
+        ],
+        [
+          1028522,
+          10,
+          10
+        ],
+        [
+          1028523,
+          20,
+          10
+        ],
+        [
+          1028524,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1323981195,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1028531,
+          2,
+          10
+        ],
+        [
+          1028532,
+          5,
+          10
+        ],
+        [
+          1028533,
+          10,
+          10
+        ],
+        [
+          1028534,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1798377870,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1028541,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1923292092,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1028551,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1629003738,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1028561,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1028200": [
+    {
+      "conditionDesc": 2133902095,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1028211,
+          2,
+          10
+        ],
+        [
+          1028212,
+          5,
+          10
+        ],
+        [
+          1028213,
+          10,
+          10
+        ],
+        [
+          1028214,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1672304918,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1028221,
+          1,
+          10
+        ],
+        [
+          1028222,
+          2,
+          10
+        ],
+        [
+          1028223,
+          5,
+          10
+        ],
+        [
+          1028224,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1263647188,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1028231,
+          1,
+          10
+        ],
+        [
+          1028232,
+          2,
+          10
+        ],
+        [
+          1028233,
+          4,
+          10
+        ],
+        [
+          1028234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1734737241,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1028241,
+          10,
+          10
+        ],
+        [
+          1028242,
+          20,
+          10
+        ],
+        [
+          1028243,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1043300": [
+    {
+      "conditionDesc": 1614097355,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1043311,
+          10,
+          10
+        ],
+        [
+          1043312,
+          20,
+          10
+        ],
+        [
+          1043313,
+          40,
+          10
+        ],
+        [
+          1043314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2063149444,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1043321,
+          2,
+          10
+        ],
+        [
+          1043322,
+          5,
+          10
+        ],
+        [
+          1043323,
+          10,
+          10
+        ],
+        [
+          1043324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1632308099,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1043331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1157767005,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1043341,
+          5,
+          10
+        ],
+        [
+          1043342,
+          10,
+          10
+        ],
+        [
+          1043343,
+          20,
+          10
+        ],
+        [
+          1043344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2076349506,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1043351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1018400": [
+    {
+      "conditionDesc": 2023686669,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1018411,
+          10,
+          10
+        ],
+        [
+          1018412,
+          20,
+          10
+        ],
+        [
+          1018413,
+          40,
+          10
+        ],
+        [
+          1018414,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1356449169,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1018421,
+          5,
+          10
+        ],
+        [
+          1018422,
+          10,
+          10
+        ],
+        [
+          1018423,
+          20,
+          10
+        ],
+        [
+          1018424,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1087532158,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1018431,
+          2,
+          10
+        ],
+        [
+          1018432,
+          5,
+          10
+        ],
+        [
+          1018433,
+          10,
+          10
+        ],
+        [
+          1018434,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1347063528,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1018441,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2084856442,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1018451,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1018500": [
+    {
+      "conditionDesc": 1234515884,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1018511,
+          10,
+          10
+        ],
+        [
+          1018512,
+          20,
+          10
+        ],
+        [
+          1018513,
+          40,
+          10
+        ],
+        [
+          1018514,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1671642013,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1018521,
+          5,
+          10
+        ],
+        [
+          1018522,
+          10,
+          10
+        ],
+        [
+          1018523,
+          20,
+          10
+        ],
+        [
+          1018524,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1497190694,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1018531,
+          2,
+          10
+        ],
+        [
+          1018532,
+          5,
+          10
+        ],
+        [
+          1018533,
+          10,
+          10
+        ],
+        [
+          1018534,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1798155190,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1018541,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1252914644,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1018551,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1687767896,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1018561,
+          1,
+          20,
+          30007
+        ]
+      ]
+    }
+  ],
+  "1005500": [
+    {
+      "conditionDesc": 1552495587,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1005511,
+          10,
+          10
+        ],
+        [
+          1005512,
+          20,
+          10
+        ],
+        [
+          1005513,
+          40,
+          10
+        ],
+        [
+          1005514,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2113101928,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1005521,
+          2,
+          10
+        ],
+        [
+          1005522,
+          5,
+          10
+        ],
+        [
+          1005523,
+          10,
+          10
+        ],
+        [
+          1005524,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1599112266,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1005531,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1563718418,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1005541,
+          5,
+          10
+        ],
+        [
+          1005542,
+          10,
+          10
+        ],
+        [
+          1005543,
+          20,
+          10
+        ],
+        [
+          1005544,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1825556886,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1005551,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1026100": [
+    {
+      "conditionDesc": 1707807171,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1026111,
+          5,
+          10
+        ],
+        [
+          1026112,
+          10,
+          10
+        ],
+        [
+          1026113,
+          20,
+          10
+        ],
+        [
+          1026114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1086323706,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1026121,
+          1,
+          10
+        ],
+        [
+          1026122,
+          2,
+          10
+        ],
+        [
+          1026123,
+          5,
+          10
+        ],
+        [
+          1026124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2009444570,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1026131,
+          10,
+          10
+        ],
+        [
+          1026132,
+          50,
+          10
+        ],
+        [
+          1026133,
+          100,
+          10
+        ],
+        [
+          1026134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1843288427,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1026141,
+          1,
+          10
+        ],
+        [
+          1026142,
+          2,
+          10
+        ],
+        [
+          1026143,
+          4,
+          10
+        ],
+        [
+          1026144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2113182640,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1026151,
+          4,
+          20,
+          30009
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1441656052,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1026161,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    }
+  ],
+  "1051100": [
+    {
+      "conditionDesc": 1762328594,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1051111,
+          5,
+          10
+        ],
+        [
+          1051112,
+          10,
+          10
+        ],
+        [
+          1051113,
+          20,
+          10
+        ],
+        [
+          1051114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1901473134,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1051121,
+          10,
+          10
+        ],
+        [
+          1051122,
+          50,
+          10
+        ],
+        [
+          1051123,
+          100,
+          10
+        ],
+        [
+          1051124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2129356069,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1051131,
+          1,
+          10
+        ],
+        [
+          1051132,
+          2,
+          10
+        ],
+        [
+          1051133,
+          4,
+          10
+        ],
+        [
+          1051134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1660286405,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1051141,
+          1,
+          10
+        ],
+        [
+          1051142,
+          2,
+          10
+        ],
+        [
+          1051143,
+          5,
+          10
+        ],
+        [
+          1051144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1051200": [
+    {
+      "conditionDesc": 2031949336,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1051211,
+          10,
+          10
+        ],
+        [
+          1051212,
+          20,
+          10
+        ],
+        [
+          1051213,
+          40,
+          10
+        ],
+        [
+          1051214,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1629873487,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1051221,
+          2,
+          10
+        ],
+        [
+          1051222,
+          5,
+          10
+        ],
+        [
+          1051223,
+          10,
+          10
+        ],
+        [
+          1051224,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1415679761,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1051231,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1501297202,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1051241,
+          5,
+          10
+        ],
+        [
+          1051242,
+          10,
+          10
+        ],
+        [
+          1051243,
+          20,
+          10
+        ],
+        [
+          1051244,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2021351435,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1051251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1026200": [
+    {
+      "conditionDesc": 1839323205,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1026211,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1791303604,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1026221,
+          5,
+          10
+        ],
+        [
+          1026222,
+          10,
+          10
+        ],
+        [
+          1026223,
+          20,
+          10
+        ],
+        [
+          1026224,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1977787458,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1026231,
+          2,
+          10
+        ],
+        [
+          1026232,
+          5,
+          10
+        ],
+        [
+          1026233,
+          10,
+          10
+        ],
+        [
+          1026234,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1430109753,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1026241,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1764613235,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1026251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1585640354,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1026261,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1020700": [
+    {
+      "conditionDesc": 1549903554,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1020711,
+          10,
+          10
+        ],
+        [
+          1020712,
+          20,
+          10
+        ],
+        [
+          1020713,
+          40,
+          10
+        ],
+        [
+          1020714,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1727953339,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1020721,
+          5,
+          10
+        ],
+        [
+          1020722,
+          10,
+          10
+        ],
+        [
+          1020723,
+          20,
+          10
+        ],
+        [
+          1020724,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2133357086,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1020731,
+          2,
+          10
+        ],
+        [
+          1020732,
+          5,
+          10
+        ],
+        [
+          1020733,
+          10,
+          10
+        ],
+        [
+          1020734,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1316874461,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1020741,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1387624192,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1020751,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "6999300": [
+    {
+      "conditionDesc": 1140586534,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          6999311,
+          10,
+          10
+        ],
+        [
+          6999312,
+          20,
+          10
+        ],
+        [
+          6999313,
+          40,
+          10
+        ],
+        [
+          6999314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1861297182,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          6999321,
+          5,
+          10
+        ],
+        [
+          6999322,
+          10,
+          10
+        ],
+        [
+          6999323,
+          20,
+          10
+        ],
+        [
+          6999324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1650199130,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          6999331,
+          2,
+          10
+        ],
+        [
+          6999332,
+          5,
+          10
+        ],
+        [
+          6999333,
+          10,
+          10
+        ],
+        [
+          6999334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1704853369,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          6999341,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1029300": [
+    {
+      "conditionDesc": 1359585373,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1029311,
+          10,
+          10
+        ],
+        [
+          1029312,
+          20,
+          10
+        ],
+        [
+          1029313,
+          40,
+          10
+        ],
+        [
+          1029314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1910774526,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1029321,
+          2,
+          10
+        ],
+        [
+          1029322,
+          5,
+          10
+        ],
+        [
+          1029323,
+          10,
+          10
+        ],
+        [
+          1029324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1545616126,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1029331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1311329543,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1029341,
+          5,
+          10
+        ],
+        [
+          1029342,
+          10,
+          10
+        ],
+        [
+          1029343,
+          20,
+          10
+        ],
+        [
+          1029344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1835523364,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1029351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1230991102,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1029361,
+          1,
+          20,
+          30007
+        ]
+      ]
+    }
+  ],
+  "1047500": [
+    {
+      "conditionDesc": 1976056675,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1047511,
+          10,
+          10
+        ],
+        [
+          1047512,
+          20,
+          10
+        ],
+        [
+          1047513,
+          40,
+          10
+        ],
+        [
+          1047514,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1490230910,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1047521,
+          2,
+          10
+        ],
+        [
+          1047522,
+          5,
+          10
+        ],
+        [
+          1047523,
+          10,
+          10
+        ],
+        [
+          1047524,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1487426814,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1047531,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2022201740,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1047541,
+          5,
+          10
+        ],
+        [
+          1047542,
+          10,
+          10
+        ],
+        [
+          1047543,
+          20,
+          10
+        ],
+        [
+          1047544,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1975006291,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1047551,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1029100": [
+    {
+      "conditionDesc": 2078316131,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1029111,
+          5,
+          10
+        ],
+        [
+          1029112,
+          10,
+          10
+        ],
+        [
+          1029113,
+          20,
+          10
+        ],
+        [
+          1029114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1710834272,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1029121,
+          10,
+          10
+        ],
+        [
+          1029122,
+          50,
+          10
+        ],
+        [
+          1029123,
+          100,
+          10
+        ],
+        [
+          1029124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1754473630,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1029131,
+          1,
+          10
+        ],
+        [
+          1029132,
+          2,
+          10
+        ],
+        [
+          1029133,
+          4,
+          10
+        ],
+        [
+          1029134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1315114092,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1029141,
+          1,
+          10
+        ],
+        [
+          1029142,
+          2,
+          10
+        ],
+        [
+          1029143,
+          5,
+          10
+        ],
+        [
+          1029144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1047400": [
+    {
+      "conditionDesc": 1368703676,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1047411,
+          10,
+          10
+        ],
+        [
+          1047412,
+          20,
+          10
+        ],
+        [
+          1047413,
+          40,
+          10
+        ],
+        [
+          1047414,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1379343708,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1047421,
+          2,
+          10
+        ],
+        [
+          1047422,
+          5,
+          10
+        ],
+        [
+          1047423,
+          10,
+          10
+        ],
+        [
+          1047424,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1578281481,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1047431,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1331405002,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1047441,
+          5,
+          10
+        ],
+        [
+          1047442,
+          10,
+          10
+        ],
+        [
+          1047443,
+          20,
+          10
+        ],
+        [
+          1047444,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1076978518,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1047451,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1045100": [
+    {
+      "conditionDesc": 2007908326,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1045111,
+          5,
+          10
+        ],
+        [
+          1045112,
+          10,
+          10
+        ],
+        [
+          1045113,
+          20,
+          10
+        ],
+        [
+          1045114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1667591143,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1045121,
+          10,
+          10
+        ],
+        [
+          1045122,
+          50,
+          10
+        ],
+        [
+          1045123,
+          100,
+          10
+        ],
+        [
+          1045124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1892483146,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1045131,
+          1,
+          10
+        ],
+        [
+          1045132,
+          2,
+          10
+        ],
+        [
+          1045133,
+          4,
+          10
+        ],
+        [
+          1045134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2065137939,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1045141,
+          1,
+          10
+        ],
+        [
+          1045142,
+          2,
+          10
+        ],
+        [
+          1045143,
+          5,
+          10
+        ],
+        [
+          1045144,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1436125107,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1045151,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    }
+  ],
+  "1002200": [
+    {
+      "conditionDesc": 1550299073,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1002211,
+          2,
+          10
+        ],
+        [
+          1002212,
+          5,
+          10
+        ],
+        [
+          1002213,
+          10,
+          10
+        ],
+        [
+          1002214,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1311409244,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1002221,
+          1,
+          10
+        ],
+        [
+          1002222,
+          2,
+          10
+        ],
+        [
+          1002223,
+          5,
+          10
+        ],
+        [
+          1002224,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2063902349,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1002231,
+          1,
+          10
+        ],
+        [
+          1002232,
+          2,
+          10
+        ],
+        [
+          1002233,
+          4,
+          10
+        ],
+        [
+          1002234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1339319966,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1002241,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1545204923,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1002251,
+          10,
+          10
+        ],
+        [
+          1002252,
+          20,
+          10
+        ],
+        [
+          1002253,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1002400": [
+    {
+      "conditionDesc": 1904720917,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1002411,
+          5,
+          10
+        ],
+        [
+          1002412,
+          10,
+          10
+        ],
+        [
+          1002413,
+          20,
+          10
+        ],
+        [
+          1002414,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1884451441,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1002421,
+          1,
+          10
+        ],
+        [
+          1002422,
+          2,
+          10
+        ],
+        [
+          1002423,
+          5,
+          10
+        ],
+        [
+          1002424,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1465557417,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1002431,
+          10,
+          10
+        ],
+        [
+          1002432,
+          50,
+          10
+        ],
+        [
+          1002433,
+          100,
+          10
+        ],
+        [
+          1002434,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1263815807,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1002441,
+          1,
+          10
+        ],
+        [
+          1002442,
+          2,
+          10
+        ],
+        [
+          1002443,
+          4,
+          10
+        ],
+        [
+          1002444,
+          8,
+          10
+        ]
+      ]
+    }
+  ],
+  "1005100": [
+    {
+      "conditionDesc": 1952176708,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1005111,
+          5,
+          10
+        ],
+        [
+          1005112,
+          10,
+          10
+        ],
+        [
+          1005113,
+          20,
+          10
+        ],
+        [
+          1005114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1199772736,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1005121,
+          1,
+          10
+        ],
+        [
+          1005122,
+          2,
+          10
+        ],
+        [
+          1005123,
+          5,
+          10
+        ],
+        [
+          1005124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1954388204,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1005131,
+          10,
+          10
+        ],
+        [
+          1005132,
+          50,
+          10
+        ],
+        [
+          1005133,
+          100,
+          10
+        ],
+        [
+          1005134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1558383120,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1005141,
+          1,
+          10
+        ],
+        [
+          1005142,
+          2,
+          10
+        ],
+        [
+          1005143,
+          4,
+          10
+        ],
+        [
+          1005144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1460099812,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 24,
+      "condition": [
+        [
+          1005151,
+          5,
+          20,
+          30003
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1334264210,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1005161,
+          3,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1017100": [
+    {
+      "conditionDesc": 1895605461,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1017111,
+          5,
+          10
+        ],
+        [
+          1017112,
+          10,
+          10
+        ],
+        [
+          1017113,
+          20,
+          10
+        ],
+        [
+          1017114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1728955165,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1017121,
+          1,
+          10
+        ],
+        [
+          1017122,
+          2,
+          10
+        ],
+        [
+          1017123,
+          5,
+          10
+        ],
+        [
+          1017124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1662544196,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1017131,
+          10,
+          10
+        ],
+        [
+          1017132,
+          50,
+          10
+        ],
+        [
+          1017133,
+          100,
+          10
+        ],
+        [
+          1017134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1834510031,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1017141,
+          1,
+          10
+        ],
+        [
+          1017142,
+          2,
+          10
+        ],
+        [
+          1017143,
+          4,
+          10
+        ],
+        [
+          1017144,
+          8,
+          10
+        ]
+      ]
+    }
+  ],
+  "1045400": [
+    {
+      "conditionDesc": 1469138630,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1045411,
+          10,
+          10
+        ],
+        [
+          1045412,
+          20,
+          10
+        ],
+        [
+          1045413,
+          40,
+          10
+        ],
+        [
+          1045414,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2096270817,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1045421,
+          2,
+          10
+        ],
+        [
+          1045422,
+          5,
+          10
+        ],
+        [
+          1045423,
+          10,
+          10
+        ],
+        [
+          1045424,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1735652834,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1045431,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1593545467,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1045441,
+          5,
+          10
+        ],
+        [
+          1045442,
+          10,
+          10
+        ],
+        [
+          1045443,
+          20,
+          10
+        ],
+        [
+          1045444,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1840067529,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1045451,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2051276279,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1045461,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1047100": [
+    {
+      "conditionDesc": 1587260233,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1047111,
+          5,
+          10
+        ],
+        [
+          1047112,
+          10,
+          10
+        ],
+        [
+          1047113,
+          20,
+          10
+        ],
+        [
+          1047114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2106562758,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1047121,
+          10,
+          10
+        ],
+        [
+          1047122,
+          50,
+          10
+        ],
+        [
+          1047123,
+          100,
+          10
+        ],
+        [
+          1047124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1334351412,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1047131,
+          1,
+          10
+        ],
+        [
+          1047132,
+          2,
+          10
+        ],
+        [
+          1047133,
+          4,
+          10
+        ],
+        [
+          1047134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1254611366,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1047141,
+          1,
+          10
+        ],
+        [
+          1047142,
+          2,
+          10
+        ],
+        [
+          1047143,
+          5,
+          10
+        ],
+        [
+          1047144,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1141655103,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1047151,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1624038906,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1047161,
+          4,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1032100": [
+    {
+      "conditionDesc": 1652031362,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1032111,
+          5,
+          10
+        ],
+        [
+          1032112,
+          10,
+          10
+        ],
+        [
+          1032113,
+          20,
+          10
+        ],
+        [
+          1032114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1991095844,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1032121,
+          10,
+          10
+        ],
+        [
+          1032122,
+          50,
+          10
+        ],
+        [
+          1032123,
+          100,
+          10
+        ],
+        [
+          1032124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2107155010,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1032131,
+          1,
+          10
+        ],
+        [
+          1032132,
+          2,
+          10
+        ],
+        [
+          1032133,
+          4,
+          10
+        ],
+        [
+          1032134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1826226404,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1032141,
+          1,
+          10
+        ],
+        [
+          1032142,
+          2,
+          10
+        ],
+        [
+          1032143,
+          5,
+          10
+        ],
+        [
+          1032144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1005300": [
+    {
+      "conditionDesc": 1627650223,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1005311,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1459242592,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1005321,
+          5,
+          10
+        ],
+        [
+          1005322,
+          10,
+          10
+        ],
+        [
+          1005323,
+          20,
+          10
+        ],
+        [
+          1005324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1768128623,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1005331,
+          2,
+          10
+        ],
+        [
+          1005332,
+          5,
+          10
+        ],
+        [
+          1005333,
+          10,
+          10
+        ],
+        [
+          1005334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1315881257,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1005341,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1322641841,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1005351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1251541922,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1005361,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1045300": [
+    {
+      "conditionDesc": 1480363442,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1045311,
+          10,
+          10
+        ],
+        [
+          1045312,
+          20,
+          10
+        ],
+        [
+          1045313,
+          40,
+          10
+        ],
+        [
+          1045314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1960647992,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1045321,
+          2,
+          10
+        ],
+        [
+          1045322,
+          5,
+          10
+        ],
+        [
+          1045323,
+          10,
+          10
+        ],
+        [
+          1045324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1145296314,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1045331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1267063435,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1045341,
+          5,
+          10
+        ],
+        [
+          1045342,
+          10,
+          10
+        ],
+        [
+          1045343,
+          20,
+          10
+        ],
+        [
+          1045344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1265401655,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1045351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1044100": [
+    {
+      "conditionDesc": 1480050193,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1044111,
+          5,
+          10
+        ],
+        [
+          1044112,
+          10,
+          10
+        ],
+        [
+          1044113,
+          20,
+          10
+        ],
+        [
+          1044114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1275390906,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1044121,
+          10,
+          10
+        ],
+        [
+          1044122,
+          50,
+          10
+        ],
+        [
+          1044123,
+          100,
+          10
+        ],
+        [
+          1044124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1759562660,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1044131,
+          1,
+          10
+        ],
+        [
+          1044132,
+          2,
+          10
+        ],
+        [
+          1044133,
+          4,
+          10
+        ],
+        [
+          1044134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2141866589,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1044141,
+          1,
+          10
+        ],
+        [
+          1044142,
+          2,
+          10
+        ],
+        [
+          1044143,
+          5,
+          10
+        ],
+        [
+          1044144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1002100": [
+    {
+      "conditionDesc": 1190298251,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1002111,
+          5,
+          10
+        ],
+        [
+          1002112,
+          10,
+          10
+        ],
+        [
+          1002113,
+          20,
+          10
+        ],
+        [
+          1002114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1840168100,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1002121,
+          1,
+          10
+        ],
+        [
+          1002122,
+          2,
+          10
+        ],
+        [
+          1002123,
+          5,
+          10
+        ],
+        [
+          1002124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1575860593,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1002131,
+          10,
+          10
+        ],
+        [
+          1002132,
+          50,
+          10
+        ],
+        [
+          1002133,
+          100,
+          10
+        ],
+        [
+          1002134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1303111752,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1002141,
+          1,
+          10
+        ],
+        [
+          1002142,
+          2,
+          10
+        ],
+        [
+          1002143,
+          4,
+          10
+        ],
+        [
+          1002144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1212567276,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1002151,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1250547966,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1002161,
+          3,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1044300": [
+    {
+      "conditionDesc": 1594362788,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1044311,
+          10,
+          10
+        ],
+        [
+          1044312,
+          20,
+          10
+        ],
+        [
+          1044313,
+          40,
+          10
+        ],
+        [
+          1044314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1549094649,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1044321,
+          2,
+          10
+        ],
+        [
+          1044322,
+          5,
+          10
+        ],
+        [
+          1044323,
+          10,
+          10
+        ],
+        [
+          1044324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1502420902,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1044331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1088683691,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1044341,
+          5,
+          10
+        ],
+        [
+          1044342,
+          10,
+          10
+        ],
+        [
+          1044343,
+          20,
+          10
+        ],
+        [
+          1044344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1536705484,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1044351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1043100": [
+    {
+      "conditionDesc": 2103936024,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1043111,
+          5,
+          10
+        ],
+        [
+          1043112,
+          10,
+          10
+        ],
+        [
+          1043113,
+          20,
+          10
+        ],
+        [
+          1043114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1090907326,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1043121,
+          10,
+          10
+        ],
+        [
+          1043122,
+          50,
+          10
+        ],
+        [
+          1043123,
+          100,
+          10
+        ],
+        [
+          1043124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2003488611,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1043131,
+          1,
+          10
+        ],
+        [
+          1043132,
+          2,
+          10
+        ],
+        [
+          1043133,
+          4,
+          10
+        ],
+        [
+          1043134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1094724401,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1043141,
+          1,
+          10
+        ],
+        [
+          1043142,
+          2,
+          10
+        ],
+        [
+          1043143,
+          5,
+          10
+        ],
+        [
+          1043144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1035100": [
+    {
+      "conditionDesc": 1963034428,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1035111,
+          5,
+          10
+        ],
+        [
+          1035112,
+          10,
+          10
+        ],
+        [
+          1035113,
+          20,
+          10
+        ],
+        [
+          1035114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1970448006,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1035121,
+          10,
+          10
+        ],
+        [
+          1035122,
+          50,
+          10
+        ],
+        [
+          1035123,
+          100,
+          10
+        ],
+        [
+          1035124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1091638475,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1035131,
+          1,
+          10
+        ],
+        [
+          1035132,
+          2,
+          10
+        ],
+        [
+          1035133,
+          4,
+          10
+        ],
+        [
+          1035134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1330770301,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1035141,
+          1,
+          10
+        ],
+        [
+          1035142,
+          2,
+          10
+        ],
+        [
+          1035143,
+          5,
+          10
+        ],
+        [
+          1035144,
+          10,
+          10
+        ]
+      ]
+    }
+  ],
+  "1023100": [
+    {
+      "conditionDesc": 1853687469,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1023111,
+          5,
+          10
+        ],
+        [
+          1023112,
+          10,
+          10
+        ],
+        [
+          1023113,
+          20,
+          10
+        ],
+        [
+          1023114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2142966729,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1023121,
+          1,
+          10
+        ],
+        [
+          1023122,
+          2,
+          10
+        ],
+        [
+          1023123,
+          5,
+          10
+        ],
+        [
+          1023124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1804533259,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1023131,
+          10,
+          10
+        ],
+        [
+          1023132,
+          50,
+          10
+        ],
+        [
+          1023133,
+          100,
+          10
+        ],
+        [
+          1023134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1690632580,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1023141,
+          1,
+          10
+        ],
+        [
+          1023142,
+          2,
+          10
+        ],
+        [
+          1023143,
+          4,
+          10
+        ],
+        [
+          1023144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1462377431,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1023151,
+          4,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1023200": [
+    {
+      "conditionDesc": 1770504874,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1023211,
+          10,
+          10
+        ],
+        [
+          1023212,
+          20,
+          10
+        ],
+        [
+          1023213,
+          40,
+          10
+        ],
+        [
+          1023214,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1628355184,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1023221,
+          5,
+          10
+        ],
+        [
+          1023222,
+          10,
+          10
+        ],
+        [
+          1023223,
+          20,
+          10
+        ],
+        [
+          1023224,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2100828596,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1023231,
+          2,
+          10
+        ],
+        [
+          1023232,
+          5,
+          10
+        ],
+        [
+          1023233,
+          10,
+          10
+        ],
+        [
+          1023234,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1142072505,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1023241,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1197776706,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1023251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1023300": [
+    {
+      "conditionDesc": 1899652734,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1023311,
+          10,
+          10
+        ],
+        [
+          1023312,
+          20,
+          10
+        ],
+        [
+          1023313,
+          40,
+          10
+        ],
+        [
+          1023314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1535332802,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1023321,
+          5,
+          10
+        ],
+        [
+          1023322,
+          10,
+          10
+        ],
+        [
+          1023323,
+          20,
+          10
+        ],
+        [
+          1023324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1517061497,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1023331,
+          2,
+          10
+        ],
+        [
+          1023332,
+          5,
+          10
+        ],
+        [
+          1023333,
+          10,
+          10
+        ],
+        [
+          1023334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1865103351,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1023341,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1020300": [
+    {
+      "conditionDesc": 1947240111,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1020311,
+          10,
+          10
+        ],
+        [
+          1020312,
+          20,
+          10
+        ],
+        [
+          1020313,
+          40,
+          10
+        ],
+        [
+          1020314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1699943576,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1020321,
+          5,
+          10
+        ],
+        [
+          1020322,
+          10,
+          10
+        ],
+        [
+          1020323,
+          20,
+          10
+        ],
+        [
+          1020324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2105071140,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1020331,
+          2,
+          10
+        ],
+        [
+          1020332,
+          5,
+          10
+        ],
+        [
+          1020333,
+          10,
+          10
+        ],
+        [
+          1020334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1141664801,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1020341,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2001234723,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1020351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1369484189,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1020361,
+          1,
+          20,
+          30007
+        ]
+      ]
+    }
+  ],
+  "1019400": [
+    {
+      "conditionDesc": 1367569109,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1019411,
+          10,
+          10
+        ],
+        [
+          1019412,
+          20,
+          10
+        ],
+        [
+          1019413,
+          40,
+          10
+        ],
+        [
+          1019414,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1199310953,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1019421,
+          5,
+          10
+        ],
+        [
+          1019422,
+          10,
+          10
+        ],
+        [
+          1019423,
+          20,
+          10
+        ],
+        [
+          1019424,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1938340434,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1019431,
+          2,
+          10
+        ],
+        [
+          1019432,
+          5,
+          10
+        ],
+        [
+          1019433,
+          10,
+          10
+        ],
+        [
+          1019434,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1113858883,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1019441,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1956230008,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1019451,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1223167321,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1019461,
+          1,
+          20,
+          30007
+        ]
+      ]
+    }
+  ],
+  "1017300": [
+    {
+      "conditionDesc": 1561525296,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1017311,
+          10,
+          10
+        ],
+        [
+          1017312,
+          20,
+          10
+        ],
+        [
+          1017313,
+          40,
+          10
+        ],
+        [
+          1017314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1539990723,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 22,
+      "condition": [
+        [
+          1017321,
+          5,
+          10
+        ],
+        [
+          1017322,
+          10,
+          10
+        ],
+        [
+          1017323,
+          20,
+          10
+        ],
+        [
+          1017324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1903210646,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1017331,
+          2,
+          10
+        ],
+        [
+          1017332,
+          5,
+          10
+        ],
+        [
+          1017333,
+          10,
+          10
+        ],
+        [
+          1017334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2084286581,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1017341,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1738198140,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1017351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1019200": [
+    {
+      "conditionDesc": 2083827113,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1019211,
+          5,
+          10
+        ],
+        [
+          1019212,
+          10,
+          10
+        ],
+        [
+          1019213,
+          20,
+          10
+        ],
+        [
+          1019214,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1402395656,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1019221,
+          10,
+          10
+        ],
+        [
+          1019222,
+          50,
+          10
+        ],
+        [
+          1019223,
+          100,
+          10
+        ],
+        [
+          1019224,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1529182469,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1019231,
+          1,
+          10
+        ],
+        [
+          1019232,
+          2,
+          10
+        ],
+        [
+          1019233,
+          4,
+          10
+        ],
+        [
+          1019234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1914531640,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1019241,
+          10,
+          10
+        ],
+        [
+          1019242,
+          20,
+          10
+        ],
+        [
+          1019243,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1032400": [
+    {
+      "conditionDesc": 1707068884,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1032411,
+          10,
+          10
+        ],
+        [
+          1032412,
+          20,
+          10
+        ],
+        [
+          1032413,
+          40,
+          10
+        ],
+        [
+          1032414,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1492721793,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1032421,
+          2,
+          10
+        ],
+        [
+          1032422,
+          5,
+          10
+        ],
+        [
+          1032423,
+          10,
+          10
+        ],
+        [
+          1032424,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2117338543,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1032431,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1660703807,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1032441,
+          5,
+          10
+        ],
+        [
+          1032442,
+          10,
+          10
+        ],
+        [
+          1032443,
+          20,
+          10
+        ],
+        [
+          1032444,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1312611597,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1032451,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1021100": [
+    {
+      "conditionDesc": 1614422875,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1021111,
+          5,
+          10
+        ],
+        [
+          1021112,
+          10,
+          10
+        ],
+        [
+          1021113,
+          20,
+          10
+        ],
+        [
+          1021114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2067210290,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1021121,
+          1,
+          10
+        ],
+        [
+          1021122,
+          2,
+          10
+        ],
+        [
+          1021123,
+          5,
+          10
+        ],
+        [
+          1021124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1154391092,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1021131,
+          10,
+          10
+        ],
+        [
+          1021132,
+          50,
+          10
+        ],
+        [
+          1021133,
+          100,
+          10
+        ],
+        [
+          1021134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1292142412,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1021141,
+          1,
+          10
+        ],
+        [
+          1021142,
+          2,
+          10
+        ],
+        [
+          1021143,
+          4,
+          10
+        ],
+        [
+          1021144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1215394759,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1021151,
+          7,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1012200": [
+    {
+      "conditionDesc": 2048552363,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1012211,
+          10,
+          10
+        ],
+        [
+          1012212,
+          20,
+          10
+        ],
+        [
+          1012213,
+          40,
+          10
+        ],
+        [
+          1012214,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1554488150,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1012221,
+          2,
+          10
+        ],
+        [
+          1012222,
+          5,
+          10
+        ],
+        [
+          1012223,
+          10,
+          10
+        ],
+        [
+          1012224,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1993752098,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1012231,
+          5,
+          10
+        ],
+        [
+          1012232,
+          10,
+          10
+        ],
+        [
+          1012233,
+          20,
+          10
+        ],
+        [
+          1012234,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1421999319,
+      "icon": "$UI_Icon_Task_Cultivate.png",
+      "type": 25,
+      "condition": [
+        [
+          1012241,
+          20,
+          10
+        ],
+        [
+          1012242,
+          30,
+          10
+        ],
+        [
+          1012243,
+          40,
+          10
+        ],
+        [
+          1012244,
+          45,
+          10
+        ]
+      ]
+    }
+  ],
+  "1004200": [
+    {
+      "conditionDesc": 1187747278,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1004211,
+          2,
+          10
+        ],
+        [
+          1004212,
+          5,
+          10
+        ],
+        [
+          1004213,
+          10,
+          10
+        ],
+        [
+          1004214,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2006954288,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1004221,
+          1,
+          10
+        ],
+        [
+          1004222,
+          2,
+          10
+        ],
+        [
+          1004223,
+          5,
+          10
+        ],
+        [
+          1004224,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1558969841,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1004231,
+          1,
+          10
+        ],
+        [
+          1004232,
+          2,
+          10
+        ],
+        [
+          1004233,
+          4,
+          10
+        ],
+        [
+          1004234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1731570243,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1004241,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1935417356,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1004251,
+          10,
+          10
+        ],
+        [
+          1004252,
+          20,
+          10
+        ],
+        [
+          1004253,
+          40,
+          10
+        ]
+      ]
+    }
+  ],
+  "1003200": [
+    {
+      "conditionDesc": 1818166628,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1003211,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1402250867,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1003221,
+          5,
+          10
+        ],
+        [
+          1003222,
+          10,
+          10
+        ],
+        [
+          1003223,
+          20,
+          10
+        ],
+        [
+          1003224,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1410000961,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1003231,
+          2,
+          10
+        ],
+        [
+          1003232,
+          5,
+          10
+        ],
+        [
+          1003233,
+          10,
+          10
+        ],
+        [
+          1003234,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1575214541,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1003241,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1986561751,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1003251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1576394878,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1003261,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1021200": [
+    {
+      "conditionDesc": 2071621305,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1021211,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1339463527,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1021221,
+          5,
+          10
+        ],
+        [
+          1021222,
+          10,
+          10
+        ],
+        [
+          1021223,
+          20,
+          10
+        ],
+        [
+          1021224,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1747540293,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1021231,
+          2,
+          10
+        ],
+        [
+          1021232,
+          5,
+          10
+        ],
+        [
+          1021233,
+          10,
+          10
+        ],
+        [
+          1021234,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1278407498,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1021241,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1434878654,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1021251,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2101394398,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1021261,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1021300": [
+    {
+      "conditionDesc": 2116226014,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1021311,
+          10,
+          10
+        ],
+        [
+          1021312,
+          20,
+          10
+        ],
+        [
+          1021313,
+          40,
+          10
+        ],
+        [
+          1021314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1578608189,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1021321,
+          5,
+          10
+        ],
+        [
+          1021322,
+          10,
+          10
+        ],
+        [
+          1021323,
+          20,
+          10
+        ],
+        [
+          1021324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2132072128,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1021331,
+          2,
+          10
+        ],
+        [
+          1021332,
+          5,
+          10
+        ],
+        [
+          1021333,
+          10,
+          10
+        ],
+        [
+          1021334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2105850968,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1021341,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1004500": [
+    {
+      "conditionDesc": 1169839867,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1004511,
+          10,
+          10
+        ],
+        [
+          1004512,
+          20,
+          10
+        ],
+        [
+          1004513,
+          40,
+          10
+        ],
+        [
+          1004514,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1396705190,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1004521,
+          5,
+          10
+        ],
+        [
+          1004522,
+          10,
+          10
+        ],
+        [
+          1004523,
+          20,
+          10
+        ],
+        [
+          1004524,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1245542369,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1004531,
+          2,
+          10
+        ],
+        [
+          1004532,
+          5,
+          10
+        ],
+        [
+          1004533,
+          10,
+          10
+        ],
+        [
+          1004534,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1485430266,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1004541,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1756402362,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1004551,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1836129490,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1004561,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1001100": [
+    {
+      "conditionDesc": 1282168805,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1001111,
+          5,
+          10
+        ],
+        [
+          1001112,
+          10,
+          10
+        ],
+        [
+          1001113,
+          20,
+          10
+        ],
+        [
+          1001114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2101278292,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1001121,
+          1,
+          10
+        ],
+        [
+          1001122,
+          2,
+          10
+        ],
+        [
+          1001123,
+          5,
+          10
+        ],
+        [
+          1001124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1169344404,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1001131,
+          10,
+          10
+        ],
+        [
+          1001132,
+          50,
+          10
+        ],
+        [
+          1001133,
+          100,
+          10
+        ],
+        [
+          1001134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1752040441,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 12,
+      "condition": [
+        [
+          1001141,
+          10,
+          20,
+          30003
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1633308405,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1001151,
+          1,
+          10
+        ],
+        [
+          1001152,
+          2,
+          10
+        ],
+        [
+          1001153,
+          4,
+          10
+        ],
+        [
+          1001154,
+          8,
+          10
+        ]
+      ]
+    }
+  ],
+  "1019100": [
+    {
+      "conditionDesc": 1688028841,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1019111,
+          5,
+          10
+        ],
+        [
+          1019112,
+          10,
+          10
+        ],
+        [
+          1019113,
+          20,
+          10
+        ],
+        [
+          1019114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2096747776,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1019121,
+          1,
+          10
+        ],
+        [
+          1019122,
+          2,
+          10
+        ],
+        [
+          1019123,
+          5,
+          10
+        ],
+        [
+          1019124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1818214843,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1019131,
+          10,
+          10
+        ],
+        [
+          1019132,
+          50,
+          10
+        ],
+        [
+          1019133,
+          100,
+          10
+        ],
+        [
+          1019134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1373269790,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1019141,
+          1,
+          10
+        ],
+        [
+          1019142,
+          2,
+          10
+        ],
+        [
+          1019143,
+          4,
+          10
+        ],
+        [
+          1019144,
+          8,
+          10
+        ]
+      ]
+    }
+  ],
+  "1014300": [
+    {
+      "conditionDesc": 1653953962,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1014311,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1822671569,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1014321,
+          5,
+          10
+        ],
+        [
+          1014322,
+          10,
+          10
+        ],
+        [
+          1014323,
+          20,
+          10
+        ],
+        [
+          1014324,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1524497247,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1014331,
+          2,
+          10
+        ],
+        [
+          1014332,
+          5,
+          10
+        ],
+        [
+          1014333,
+          10,
+          10
+        ],
+        [
+          1014334,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1651391015,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1014341,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2035890184,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1014351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2016102036,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1014361,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1013100": [
+    {
+      "conditionDesc": 1356538374,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1013111,
+          5,
+          10
+        ],
+        [
+          1013112,
+          10,
+          10
+        ],
+        [
+          1013113,
+          20,
+          10
+        ],
+        [
+          1013114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1773817357,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1013121,
+          1,
+          10
+        ],
+        [
+          1013122,
+          2,
+          10
+        ],
+        [
+          1013123,
+          5,
+          10
+        ],
+        [
+          1013124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1450039283,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1013131,
+          10,
+          10
+        ],
+        [
+          1013132,
+          50,
+          10
+        ],
+        [
+          1013133,
+          100,
+          10
+        ],
+        [
+          1013134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1580175093,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1013141,
+          1,
+          10
+        ],
+        [
+          1013142,
+          2,
+          10
+        ],
+        [
+          1013143,
+          4,
+          10
+        ],
+        [
+          1013144,
+          8,
+          10
+        ]
+      ]
+    }
+  ],
+  "1033100": [
+    {
+      "conditionDesc": 2125821291,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1033111,
+          5,
+          10
+        ],
+        [
+          1033112,
+          10,
+          10
+        ],
+        [
+          1033113,
+          20,
+          10
+        ],
+        [
+          1033114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1591504879,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1033121,
+          10,
+          10
+        ],
+        [
+          1033122,
+          50,
+          10
+        ],
+        [
+          1033123,
+          100,
+          10
+        ],
+        [
+          1033124,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1950174595,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1033131,
+          1,
+          10
+        ],
+        [
+          1033132,
+          2,
+          10
+        ],
+        [
+          1033133,
+          4,
+          10
+        ],
+        [
+          1033134,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2073514082,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1033141,
+          1,
+          10
+        ],
+        [
+          1033142,
+          2,
+          10
+        ],
+        [
+          1033143,
+          5,
+          10
+        ],
+        [
+          1033144,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1135744399,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1033151,
+          4,
+          20,
+          30009
+        ]
+      ]
+    }
+  ],
+  "1033300": [
+    {
+      "conditionDesc": 1112300696,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1033311,
+          10,
+          10
+        ],
+        [
+          1033312,
+          20,
+          10
+        ],
+        [
+          1033313,
+          40,
+          10
+        ],
+        [
+          1033314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1229058688,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1033321,
+          2,
+          10
+        ],
+        [
+          1033322,
+          5,
+          10
+        ],
+        [
+          1033323,
+          10,
+          10
+        ],
+        [
+          1033324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1631773435,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1033331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1544839639,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1033341,
+          5,
+          10
+        ],
+        [
+          1033342,
+          10,
+          10
+        ],
+        [
+          1033343,
+          20,
+          10
+        ],
+        [
+          1033344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1664594255,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1033351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1002700": [
+    {
+      "conditionDesc": 1614542261,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1002711,
+          10,
+          10
+        ],
+        [
+          1002712,
+          20,
+          10
+        ],
+        [
+          1002713,
+          40,
+          10
+        ],
+        [
+          1002714,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1121200957,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1002721,
+          5,
+          10
+        ],
+        [
+          1002722,
+          10,
+          10
+        ],
+        [
+          1002723,
+          20,
+          10
+        ],
+        [
+          1002724,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1158668131,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1002731,
+          2,
+          10
+        ],
+        [
+          1002732,
+          5,
+          10
+        ],
+        [
+          1002733,
+          10,
+          10
+        ],
+        [
+          1002734,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1148030319,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1002741,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1716059772,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1002751,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1309894259,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1002761,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1005200": [
+    {
+      "conditionDesc": 1718304120,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1005211,
+          2,
+          10
+        ],
+        [
+          1005212,
+          5,
+          10
+        ],
+        [
+          1005213,
+          10,
+          10
+        ],
+        [
+          1005214,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1400473562,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1005221,
+          1,
+          10
+        ],
+        [
+          1005222,
+          2,
+          10
+        ],
+        [
+          1005223,
+          5,
+          10
+        ],
+        [
+          1005224,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1924704578,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1005231,
+          1,
+          10
+        ],
+        [
+          1005232,
+          2,
+          10
+        ],
+        [
+          1005233,
+          4,
+          10
+        ],
+        [
+          1005234,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1633889975,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1005241,
+          10,
+          10
+        ],
+        [
+          1005242,
+          20,
+          10
+        ],
+        [
+          1005243,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1545779695,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1005251,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    }
+  ],
+  "1017400": [
+    {
+      "conditionDesc": 1677716866,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1017411,
+          1,
+          20,
+          30007
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1160349107,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1017421,
+          5,
+          10
+        ],
+        [
+          1017422,
+          10,
+          10
+        ],
+        [
+          1017423,
+          20,
+          10
+        ],
+        [
+          1017424,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1464784172,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1017431,
+          2,
+          10
+        ],
+        [
+          1017432,
+          5,
+          10
+        ],
+        [
+          1017433,
+          10,
+          10
+        ],
+        [
+          1017434,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1573614862,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1017441,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1493173431,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1017451,
+          1,
+          20,
+          30005
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1150076324,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 15,
+      "condition": [
+        [
+          1017461,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1026300": [
+    {
+      "conditionDesc": 1889344284,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 21,
+      "condition": [
+        [
+          1026311,
+          10,
+          10
+        ],
+        [
+          1026312,
+          20,
+          10
+        ],
+        [
+          1026313,
+          40,
+          10
+        ],
+        [
+          1026314,
+          80,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1821753365,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 23,
+      "condition": [
+        [
+          1026321,
+          2,
+          10
+        ],
+        [
+          1026322,
+          5,
+          10
+        ],
+        [
+          1026323,
+          10,
+          10
+        ],
+        [
+          1026324,
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1848155522,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 14,
+      "condition": [
+        [
+          1026331,
+          1,
+          20,
+          30006
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1770988879,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 22,
+      "condition": [
+        [
+          1026341,
+          5,
+          10
+        ],
+        [
+          1026342,
+          10,
+          10
+        ],
+        [
+          1026343,
+          20,
+          10
+        ],
+        [
+          1026344,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2094494873,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 16,
+      "condition": [
+        [
+          1026351,
+          1,
+          20,
+          30005
+        ]
+      ]
+    }
+  ],
+  "1020100": [
+    {
+      "conditionDesc": 1807957410,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1020111,
+          5,
+          10
+        ],
+        [
+          1020112,
+          10,
+          10
+        ],
+        [
+          1020113,
+          20,
+          10
+        ],
+        [
+          1020114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1710508670,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1020121,
+          1,
+          10
+        ],
+        [
+          1020122,
+          2,
+          10
+        ],
+        [
+          1020123,
+          5,
+          10
+        ],
+        [
+          1020124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1574632670,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1020131,
+          10,
+          10
+        ],
+        [
+          1020132,
+          50,
+          10
+        ],
+        [
+          1020133,
+          100,
+          10
+        ],
+        [
+          1020134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1735208967,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 13,
+      "condition": [
+        [
+          1020141,
+          10,
+          20,
+          30003
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1634883901,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1020151,
+          1,
+          10
+        ],
+        [
+          1020152,
+          2,
+          10
+        ],
+        [
+          1020153,
+          4,
+          10
+        ],
+        [
+          1020154,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1874944466,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1020161,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    }
+  ],
+  "1018100": [
+    {
+      "conditionDesc": 1364724417,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 19,
+      "condition": [
+        [
+          1018111,
+          5,
+          10
+        ],
+        [
+          1018112,
+          10,
+          10
+        ],
+        [
+          1018113,
+          20,
+          10
+        ],
+        [
+          1018114,
+          40,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1153058258,
+      "icon": "$UI_Icon_Task_Combat.png",
+      "type": 20,
+      "condition": [
+        [
+          1018121,
+          1,
+          10
+        ],
+        [
+          1018122,
+          2,
+          10
+        ],
+        [
+          1018123,
+          5,
+          10
+        ],
+        [
+          1018124,
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2051217461,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 11,
+      "condition": [
+        [
+          1018131,
+          10,
+          10
+        ],
+        [
+          1018132,
+          50,
+          10
+        ],
+        [
+          1018133,
+          100,
+          10
+        ],
+        [
+          1018134,
+          1000,
+          10,
+          30010
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 2095399298,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 17,
+      "condition": [
+        [
+          1018141,
+          1,
+          10
+        ],
+        [
+          1018142,
+          2,
+          10
+        ],
+        [
+          1018143,
+          4,
+          10
+        ],
+        [
+          1018144,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1468102586,
+      "icon": "$UI_Icon_Task_Evolve.png",
+      "type": 18,
+      "condition": [
+        [
+          1018151,
+          1,
+          20,
+          30004,
+          -1
+        ]
+      ]
+    },
+    {
+      "conditionDesc": 1650925229,
+      "icon": "$UI_Icon_Task_Catch.png",
+      "type": 25,
+      "condition": [
+        [
+          1018161,
+          3,
+          20,
+          30009
+        ]
+      ]
+    }
+  ]
+}

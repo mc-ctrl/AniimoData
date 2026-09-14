@@ -1,0 +1,112 @@
+{
+  "duration": 8,
+  "calcResultNodeId": 38,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10133_Skill_Throw_Ice",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 0,
+  "onProjectileTickIds": [
+    40
+  ],
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    100,
+    115
+  ],
+  "relation": 2,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.2,
+  "sweepShape": 0,
+  "destroyOnHit": false,
+  "tickInterval": 0.3,
+  "nodeMap": {
+    "100": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e7a779b2-0df0-4dd1-9735-b028ec252ff0",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10133_skill_throw_ice_loop",
+      "NodeID": 100
+    },
+    "38": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.02
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 1000
+      },
+      "UID": "69c4fd84-c9e2-45a5-aab2-1b62f31d35f9",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 38
+    },
+    "115": {
+      "name": "stopSoundStr",
+      "UID": "469078fb-3e97-4e94-a617-fefeabf06d61",
+      "soundId": "parmon_10133_skill_throw_ice_loop",
+      "target": "OWNER",
+      "NodeID": 115
+    },
+    "40": {
+      "calcResultNodeId": 38,
+      "name": "actOnTargets",
+      "UID": "10fe2754-da6c-4f24-9447-e016fe8db66f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 30,
+      "needEcs": true,
+      "actionIds": [
+        38
+      ],
+      "impulseId": 1000,
+      "NodeID": 40
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_11330420",
+  "NodeID": 0,
+  "impulseId": 1000,
+  "acceleration": 0
+}

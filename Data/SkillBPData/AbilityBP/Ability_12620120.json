@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_12620120",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12620120001,
+      "name": "setCombatActionTimeline",
+      "UID": "7d8cee22-643a-48db-b69d-5e440653cc6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Throw"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10261_Skill_Psychic_Orb_Bullet",
+    "Eff_Parmon_Common_Skill_Psychic_Orb_Hit",
+    "Eff_Parmon_10261_Skill_Psychic_Orb_Start_01",
+    "Eff_Parmon_10261_Skill_Psychic_Orb_Start_02"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 11100010,
+  "name": ""
+}

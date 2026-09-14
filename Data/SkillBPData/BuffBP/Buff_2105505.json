@@ -1,0 +1,98 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "buffId": 2105504,
+      "name": "hasBuff",
+      "UID": "7bebf096-e0a8-466a-9718-444d8b9af237",
+      "target": {
+        "eventName": "onAttack",
+        "name": "getEventCombatContextTarget",
+        "UID": "2adc07b1-7f3a-4384-933e-37aa0d30d2ac",
+        "target": "TARGET",
+        "NodeID": 2
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "32381f0a-3824-497f-b83a-70b44e783a78",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "035544e7-b332-4ed3-b729-2283b7da92d2",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "7f199abf-178d-4f9e-9c24-a5f60a2666c0",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "11": {
+      "UID": "c3c01839-addc-4ea7-ac6c-a4c0c64ab355",
+      "name": "checkDamageAbilityType",
+      "abilityType": 2,
+      "NodeID": 11
+    },
+    "7": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2105505,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "b0e9c0ea-9b91-49cb-8d77-d7b297efea92",
+      "target": {
+        "eventName": "onAttack",
+        "name": "getEventCombatContextTarget",
+        "UID": "2adc07b1-7f3a-4384-933e-37aa0d30d2ac",
+        "target": "TARGET",
+        "NodeID": 2
+      },
+      "NodeID": 7,
+      "attackData": {
+        "overrideAbilityType": 1,
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30202,
+        "hitFrameFreezeId": 10022,
+        "elementType": 12,
+        "impulseId": 2000
+      }
+    },
+    "2": {
+      "eventName": "onAttack",
+      "name": "getEventCombatContextTarget",
+      "UID": "2adc07b1-7f3a-4384-933e-37aa0d30d2ac",
+      "target": "TARGET",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2105505",
+  "dynamicRPCStates": {},
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

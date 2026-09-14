@@ -1,0 +1,86 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2168302",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "2a0734d1-bfed-4eb6-abc4-ce74db738e8c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 8
+    },
+    "4": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "0b1a8afc-b72f-4a3c-91df-df71ec372e04",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "9": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "d9710beb-0811-4406-8b2d-4c263e04db09",
+      "to": 16830302,
+      "NodeID": 9,
+      "from": 16830300
+    },
+    "6": {
+      "targetA": {
+        "UID": "633424de-f3eb-4d9f-9417-a9588e496e3a",
+        "name": "getLockedTarget",
+        "NodeID": 5
+      },
+      "targetB": "OWNER",
+      "name": "getDistanceBetweenTarget",
+      "UID": "03b951ab-62f0-487e-875c-03e39ee69a8a",
+      "NodeID": 6
+    },
+    "10": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "71a66f01-5b58-43cd-a60e-dbd789f00f61",
+      "to": 16830300,
+      "NodeID": 10,
+      "from": 16830300
+    },
+    "7": {
+      "rValue": 5,
+      "name": "greater",
+      "UID": "5e615634-f26a-4c1d-85c2-f9cd92334e59",
+      "NodeID": 7,
+      "lValue": {
+        "targetA": {
+          "UID": "633424de-f3eb-4d9f-9417-a9588e496e3a",
+          "name": "getLockedTarget",
+          "NodeID": 5
+        },
+        "targetB": "OWNER",
+        "name": "getDistanceBetweenTarget",
+        "UID": "03b951ab-62f0-487e-875c-03e39ee69a8a",
+        "NodeID": 6
+      }
+    }
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

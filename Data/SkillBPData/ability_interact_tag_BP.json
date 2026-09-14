@@ -1,0 +1,4010 @@
+{
+  "11331411": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11920210": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "11920300": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11940000": {},
+  "11940100": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11940110": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Electric"
+  ],
+  "11940130": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11940200": [
+    "T_Interact_Water"
+  ],
+  "11940210": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "11940300": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11940530": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11940532": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12010000": {},
+  "12010100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13330401": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "13710301": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13719900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13719901": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13730000": {},
+  "13730120": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13730220": {},
+  "13730300": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Ice"
+  ],
+  "13730310": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13730311": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13730410": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Ice"
+  ],
+  "13739900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14030000": {},
+  "14310000": {},
+  "14310100": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14330000": {},
+  "14330100": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14339900": {},
+  "14410000": {},
+  "14410100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14410101": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "14410102": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "14410200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14430000": {},
+  "14430100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14430101": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "14430102": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "14430300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14510000": {},
+  "14510100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14510110": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "14510200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14530000": {},
+  "14530100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14530101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14530110": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Ice"
+  ],
+  "14530200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14530300": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14530301": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14539900": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14540000": {},
+  "10231000": {},
+  "10231001": {},
+  "10231002": {},
+  "10231310": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10240001": {},
+  "10240002": {},
+  "12331002": {},
+  "12331300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12331400": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12331500": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12331700": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12331800": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12610001": {},
+  "12610002": {},
+  "12610003": {},
+  "12620001": {},
+  "12620002": {},
+  "12620003": {},
+  "12620011": {},
+  "12620012": {},
+  "12620013": {},
+  "12620130": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12620240": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12620250": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12620260": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12620410": {},
+  "12620521": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12630001": {},
+  "12630002": {},
+  "12630003": {},
+  "12810001": {},
+  "12810002": {},
+  "12810101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12820001": {},
+  "12820002": {},
+  "12820003": {},
+  "12830001": {},
+  "12830002": {},
+  "12830003": {},
+  "12830004": {},
+  "12830005": {},
+  "12830006": {},
+  "12830007": {},
+  "10310003": {},
+  "10310010": {},
+  "10310011": {},
+  "10310012": {},
+  "10310013": {},
+  "10320001": {},
+  "10320002": {},
+  "10320003": {},
+  "10320010": {},
+  "10320011": {},
+  "10320012": {},
+  "10320013": {},
+  "10320111": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10320511": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10320601": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10320700": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10321001": {},
+  "10321002": {},
+  "10321003": {},
+  "10330001": {},
+  "10330002": {},
+  "10330003": {},
+  "10410001": {},
+  "10410002": {},
+  "10410003": {},
+  "10410300": [
+    "T_Interact_Ice"
+  ],
+  "10420001": {},
+  "10420002": {},
+  "10420003": {},
+  "10420300": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Ice"
+  ],
+  "10430001": {},
+  "10430002": {},
+  "10430003": {},
+  "10430004": {},
+  "10430101": [
+    "T_Interact_Water"
+  ],
+  "10430211": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "10430223": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "10430321": [
+    "T_Interact_Ice"
+  ],
+  "10430331": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10430332": [
+    "T_Interact_Water"
+  ],
+  "10430333": [
+    "T_Interact_Water"
+  ],
+  "10430401": [
+    "T_Interact_Ice"
+  ],
+  "10430411": [
+    "T_Interact_Water"
+  ],
+  "10430412": [
+    "T_Interact_Water"
+  ],
+  "10430511": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "10430521": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Water"
+  ],
+  "10431000": {},
+  "10431001": {},
+  "10431002": {},
+  "10431003": {},
+  "10431101": [
+    "T_Interact_Water"
+  ],
+  "10431320": [
+    "T_Interact_Ice"
+  ],
+  "10431511": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Ice"
+  ],
+  "10439902": [
+    "T_Interact_Water"
+  ],
+  "10450001": {},
+  "10450002": {},
+  "10450003": {},
+  "10450201": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10450211": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10450221": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10450301": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10450311": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10450501": [
+    "T_Interact_Water"
+  ],
+  "10450502": [
+    "T_Interact_Water"
+  ],
+  "10450503": [
+    "T_Interact_Water"
+  ],
+  "10450504": [
+    "T_Interact_Water"
+  ],
+  "10450505": [
+    "T_Interact_Water"
+  ],
+  "10450506": [
+    "T_Interact_Water"
+  ],
+  "10450507": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10450508": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10450509": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10450510": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10450514": [
+    "T_Interact_Water"
+  ],
+  "10450515": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10450516": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10450517": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10450518": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10450601": [
+    "T_Interact_Water"
+  ],
+  "10450602": [
+    "T_Interact_Water"
+  ],
+  "10510001": {},
+  "10510002": {},
+  "10520001": {},
+  "10520002": {},
+  "10520003": {},
+  "10530001": {},
+  "10530002": {},
+  "10530003": {},
+  "10530010": {},
+  "10530011": {},
+  "10530012": {},
+  "10530013": {},
+  "10530101": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10531210": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10531310": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10531312": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10531400": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10531500": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "10531710": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "10531800": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10539902": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10539910": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10550001": {},
+  "10550002": {},
+  "10550003": {},
+  "10551000": {},
+  "10551001": {},
+  "10551002": {},
+  "10551003": {},
+  "10551100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10551300": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10710000": {},
+  "10710001": {},
+  "10710002": {},
+  "10710010": {},
+  "10710011": {},
+  "10710012": {},
+  "10710100": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10710200": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10710210": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10710220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10710310": [
+    "T_Interact_Fire"
+  ],
+  "10720000": {},
+  "10720001": {},
+  "10720002": {},
+  "10720010": {},
+  "10720011": {},
+  "10720012": {},
+  "10720100": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10720200": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "699930200": [
+    "T_Interact_Fire"
+  ],
+  "699930300": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "699930310": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "699939900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "902070100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070103": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070201": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070202": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070203": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070204": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070205": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070210": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070211": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070212": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070213": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070214": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070220": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070221": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070222": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070223": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070224": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070230": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070231": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070232": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070233": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070400": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070410": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070430": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070431": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070450": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070901": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902071000": {},
+  "902131800": {},
+  "910120000": {},
+  "910120422": [
+    "T_Interact_PhysicsLight"
+  ],
+  "910230000": {},
+  "910230205": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910230501": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910270000": {},
+  "910270320": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910270400": {},
+  "910272220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910450000": {},
+  "910530000": {},
+  "910531500": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910539902": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910539910": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "911870000": {},
+  "911870512": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "912120000": {},
+  "912120201": {},
+  "912120203": {},
+  "912120500": [
+    "T_Interact_PhysicsLight"
+  ],
+  "912220000": {},
+  "912220701": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Electric"
+  ],
+  "912229914": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15030302": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15030303": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13619900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030310": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15030311": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030500": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030501": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030502": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030503": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030504": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030505": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030506": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030507": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13610003": {},
+  "13610002": {},
+  "15039900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13610300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15110000": {},
+  "15110001": {},
+  "15110002": {},
+  "15110003": {},
+  "910270002": {},
+  "910270001": {},
+  "910230002": {},
+  "910230001": {},
+  "15110100": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15110200": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15120000": {},
+  "15120001": {},
+  "15120002": {},
+  "15120003": {},
+  "15120010": {},
+  "15120100": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15120200": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15120300": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15120301": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15120310": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15120311": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15129900": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15130000": {},
+  "13610001": {},
+  "15130002": {},
+  "15130003": {},
+  "15130010": {},
+  "13610000": {},
+  "15130200": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15130300": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11630004": {},
+  "11630002": {},
+  "11630001": {},
+  "11620003": {},
+  "11620002": {},
+  "11610003": {},
+  "11610002": {},
+  "11610001": {},
+  "11530400": {},
+  "11530300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11530003": {},
+  "11530002": {},
+  "11530001": {},
+  "11530000": {},
+  "11520003": {},
+  "10210222": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740311": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12210400": [
+    "T_Interact_Electric"
+  ],
+  "11740120": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740010": {},
+  "10250001": {},
+  "11410220": [
+    "T_Interact_Water",
+    "T_Interact_Electric"
+  ],
+  "13310200": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "13310300": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "13310500": [
+    "T_Interact_Fire"
+  ],
+  "13310510": [
+    "T_Interact_Fire"
+  ],
+  "13330000": {},
+  "13330200": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "13330210": [
+    "T_Interact_Fire"
+  ],
+  "13330300": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "13330400": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "13339900": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "13510000": {},
+  "13510002": {},
+  "13510003": {},
+  "699930110": [
+    "T_Interact_Fire"
+  ],
+  "699930100": [
+    "T_Interact_Fire"
+  ],
+  "13510300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13510400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13520000": {},
+  "699930000": {},
+  "13520001": {},
+  "13520002": {},
+  "13520003": {},
+  "70020600": {},
+  "70020210": {},
+  "13520004": {},
+  "70020200": {},
+  "13520300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "70020100": {},
+  "70020000": {},
+  "13520500": [
+    "T_Interact_PhysicsLight"
+  ],
+  "70010300": {},
+  "70000610": {},
+  "13520600": [
+    "T_Interact_PhysicsLight"
+  ],
+  "70000501": {},
+  "70000500": {},
+  "70000400": {},
+  "70000301": {},
+  "70000300": {},
+  "70000204": {},
+  "70000203": {},
+  "70000202": {},
+  "70000201": {},
+  "70000103": [
+    "T_Interact_PhysicsLight"
+  ],
+  "70000102": [
+    "T_Interact_PhysicsLight"
+  ],
+  "70000101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "70000100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "70000002": {},
+  "70000001": {},
+  "70000000": {},
+  "47010100": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "17610002": {},
+  "17610001": {},
+  "17610000": {},
+  "17130003": {},
+  "17130002": {},
+  "17130001": {},
+  "17130000": {},
+  "16940002": {},
+  "16940001": {},
+  "16940000": {},
+  "16930002": {},
+  "16930001": {},
+  "16930000": {},
+  "16910003": {},
+  "16910002": {},
+  "16910001": {},
+  "16910000": {},
+  "16830003": {},
+  "16830002": {},
+  "16830001": {},
+  "16830000": {},
+  "16810003": {},
+  "16810002": {},
+  "16810001": {},
+  "16810000": {},
+  "16740003": {},
+  "16740002": {},
+  "16740001": {},
+  "16740000": {},
+  "16730003": {},
+  "16730002": {},
+  "16730001": {},
+  "16730000": {},
+  "16710002": {},
+  "16710001": {},
+  "16710000": {},
+  "11610400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "16640006": {},
+  "16640005": {},
+  "16640004": {},
+  "16640003": {},
+  "16640002": {},
+  "16640001": {},
+  "16640000": {},
+  "16630003": {},
+  "16630002": {},
+  "16630001": {},
+  "16630000": {},
+  "16610002": {},
+  "16610001": {},
+  "16610000": {},
+  "16530900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16530002": {},
+  "16530001": {},
+  "16530000": {},
+  "16510900": [
+    "T_Interact_Water"
+  ],
+  "16510003": {},
+  "16510002": {},
+  "16510001": {},
+  "16510000": {},
+  "16440003": {},
+  "16440002": {},
+  "16440001": {},
+  "16440000": {},
+  "16430003": {},
+  "16430002": {},
+  "16430001": {},
+  "16430000": {},
+  "16410003": {},
+  "16410002": {},
+  "16410001": {},
+  "16410000": {},
+  "16239900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230310": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230304": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230303": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230302": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230301": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230300": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230200": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16230100": [
+    "T_Interact_Water"
+  ],
+  "16230003": {},
+  "16230002": {},
+  "16230001": {},
+  "16230000": {},
+  "16210200": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "16210100": [
+    "T_Interact_Water"
+  ],
+  "16210003": {},
+  "16210002": {},
+  "16210001": {},
+  "16210000": {},
+  "16140003": {},
+  "16140002": {},
+  "16140001": {},
+  "16140000": {},
+  "16130003": {},
+  "16130002": {},
+  "16130001": {},
+  "16130000": {},
+  "16110003": {},
+  "16110002": {},
+  "16110001": {},
+  "16110000": {},
+  "16040002": {},
+  "16040001": {},
+  "16040000": {},
+  "16030002": {},
+  "16030001": {},
+  "16030000": {},
+  "16010002": {},
+  "16010001": {},
+  "16010000": {},
+  "15940003": {},
+  "15940002": {},
+  "15940001": {},
+  "15940000": {},
+  "15930002": {},
+  "15930001": {},
+  "15930000": {},
+  "15910003": {},
+  "15910002": {},
+  "15910001": {},
+  "15910000": {},
+  "15840003": {},
+  "15840002": {},
+  "15840001": {},
+  "15840000": {},
+  "15830007": {},
+  "15830006": {},
+  "15830005": {},
+  "15830004": {},
+  "15830003": {},
+  "15830002": {},
+  "15830001": {},
+  "15830000": {},
+  "15810003": {},
+  "15810002": {},
+  "15810001": {},
+  "11910310": [
+    "T_Interact_Water"
+  ],
+  "11920001": {},
+  "11920002": {},
+  "11940001": {},
+  "11940002": {},
+  "11940003": {},
+  "11940005": {},
+  "11940006": {},
+  "11940007": {},
+  "11940008": {},
+  "11940009": {},
+  "11940010": {},
+  "11940011": {},
+  "11940012": {},
+  "11940013": {},
+  "11940101": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11940201": [
+    "T_Interact_Water"
+  ],
+  "11940301": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11940401": [
+    "T_Interact_Water"
+  ],
+  "11940501": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11940511": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11940531": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11940533": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11940601": [
+    "T_Interact_Water"
+  ],
+  "11940602": [
+    "T_Interact_Water"
+  ],
+  "11940801": [
+    "T_Interact_Water"
+  ],
+  "11949901": {},
+  "11949902": [
+    "T_Interact_Water"
+  ],
+  "12010001": {},
+  "12010002": {},
+  "12010003": {},
+  "12010010": {},
+  "12010011": {},
+  "12010012": {},
+  "12010013": {},
+  "12010111": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12010131": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12010221": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12030001": {},
+  "12030002": {},
+  "12030003": {},
+  "12030240": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12030252": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12070001": {},
+  "12070002": {},
+  "12070003": {},
+  "12070111": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12070221": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12070331": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12110001": {},
+  "12110002": {},
+  "12120001": {},
+  "12120002": {},
+  "12120003": {},
+  "12120011": {},
+  "12120012": {},
+  "12120013": {},
+  "12120139": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12120140": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12120141": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12120143": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12130001": {},
+  "12130002": {},
+  "12130003": {},
+  "12210001": {},
+  "12210002": {},
+  "12210111": [
+    "T_Interact_Electric"
+  ],
+  "12220001": {},
+  "12220002": {},
+  "12220003": {},
+  "12220010": {},
+  "12220011": {},
+  "12220012": {},
+  "12220013": {},
+  "12220101": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220111": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220201": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12220401": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12220501": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "12220511": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220601": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220701": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12220801": [
+    "T_Interact_Electric"
+  ],
+  "12229901": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12229902": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12229903": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12229904": [
+    "T_Interact_Electric"
+  ],
+  "12229910": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12229911": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12229912": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12229913": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12229914": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12230000": {},
+  "12230001": {},
+  "12230002": {},
+  "12230003": {},
+  "12310001": {},
+  "12310002": {},
+  "12320001": {},
+  "12320002": {},
+  "13630001": {},
+  "13630002": {},
+  "13630003": {},
+  "13630101": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13630102": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13710001": {},
+  "13710002": {},
+  "13710003": {},
+  "13730001": {},
+  "13730002": {},
+  "13730003": {},
+  "13810000": {},
+  "13810001": {},
+  "13810002": {},
+  "13810003": {},
+  "13810300": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13830000": {},
+  "13830001": {},
+  "13830002": {},
+  "13830003": {},
+  "13830100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13830110": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13830300": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13839900": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13910000": {},
+  "13910001": {},
+  "13910002": {},
+  "13930000": {},
+  "13930001": {},
+  "13930002": {},
+  "13930120": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Water"
+  ],
+  "13930130": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Water"
+  ],
+  "14010000": {},
+  "14010001": {},
+  "14010002": {},
+  "14010003": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14030001": {},
+  "14030002": {},
+  "14030003": {},
+  "14031000": {},
+  "14031001": {},
+  "14031002": {},
+  "14031003": {},
+  "14210000": {},
+  "14210001": {},
+  "14210002": {},
+  "14230000": {},
+  "14230001": {},
+  "14230002": {},
+  "14230003": {},
+  "14230004": {},
+  "14310001": {},
+  "14310002": {},
+  "14310003": {},
+  "14330001": {},
+  "14330003": {},
+  "14330111": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14330304": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14340000": {},
+  "14340001": {},
+  "14340002": {},
+  "14340003": {},
+  "14340110": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14410001": {},
+  "14410002": {},
+  "14430001": {},
+  "14430002": {},
+  "14430003": {},
+  "14430004": {},
+  "14440000": {},
+  "14440001": {},
+  "14440002": {},
+  "14440003": {},
+  "14510001": {},
+  "14510002": {},
+  "14510003": {},
+  "14510300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14530001": {},
+  "14530002": {},
+  "14530003": {},
+  "14540001": {},
+  "14540002": {},
+  "14540003": {},
+  "15810000": {},
+  "15730003": {},
+  "15730002": {},
+  "15730001": {},
+  "15730000": {},
+  "15710003": {},
+  "15710002": {},
+  "15710001": {},
+  "15710000": {},
+  "15640201": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15640101": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15640005": {},
+  "15640004": {},
+  "11620510": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10320300": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsLight"
+  ],
+  "10320310": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10320311": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10320400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15640003": {},
+  "10320510": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10320513": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10320600": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10320602": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10320603": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10320604": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15640002": {},
+  "10321000": {},
+  "15640001": {},
+  "10329900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15640000": {},
+  "10329920": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10330000": {},
+  "10330100": [
+    "T_Interact_Electric"
+  ],
+  "15630002": {},
+  "10330201": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10330300": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "15630001": {},
+  "10339900": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10410000": {},
+  "10410100": [
+    "T_Interact_Water"
+  ],
+  "10410200": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "10410210": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10410220": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "10410230": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10410310": [
+    "T_Interact_Water"
+  ],
+  "10410320": [
+    "T_Interact_Ice"
+  ],
+  "10410400": [
+    "T_Interact_Ice"
+  ],
+  "10420000": {},
+  "10420100": [
+    "T_Interact_Water"
+  ],
+  "10420200": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "10420210": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10420230": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10420310": [
+    "T_Interact_Water",
+    "T_Interact_Ice"
+  ],
+  "10420330": [
+    "T_Interact_Water"
+  ],
+  "10430000": {},
+  "10430100": [
+    "T_Interact_Water"
+  ],
+  "10430110": [
+    "T_Interact_Water"
+  ],
+  "10430120": [
+    "T_Interact_Water"
+  ],
+  "10430200": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsLight"
+  ],
+  "10430210": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10430230": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10430240": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10430250": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10430300": {},
+  "10430310": [
+    "T_Interact_Water"
+  ],
+  "10430330": [
+    "T_Interact_Water"
+  ],
+  "10430510": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Ice"
+  ],
+  "10430520": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Water"
+  ],
+  "10439900": [
+    "T_Interact_Water"
+  ],
+  "10450000": {},
+  "10450100": [
+    "T_Interact_Water"
+  ],
+  "15630000": {},
+  "10450210": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10450320": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15610101": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15610003": {},
+  "15610002": {},
+  "15610001": {},
+  "15610000": {},
+  "15430900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15430002": {},
+  "15430001": {},
+  "15430000": {},
+  "15410900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15410002": {},
+  "15410001": {},
+  "15410000": {},
+  "15130311": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13520610": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15130301": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "902131402": {},
+  "902131500": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902131501": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902131600": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902131700": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902131701": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902132000": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902132200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902132601": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902132701": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902132702": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902132703": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910000101": {},
+  "910000102": {},
+  "910000103": {},
+  "910000104": {},
+  "910000105": {},
+  "910000106": {},
+  "910000107": {},
+  "910120001": {},
+  "910120002": {},
+  "910120003": {},
+  "12330001": {},
+  "12330002": {},
+  "12331000": {},
+  "12331001": {},
+  "910270003": {},
+  "910272221": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910272222": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "910450001": {},
+  "910450002": {},
+  "910450003": {},
+  "910530001": {},
+  "910530002": {},
+  "910530003": {},
+  "911870001": {},
+  "911870002": {},
+  "912120001": {},
+  "912120002": {},
+  "912120003": {},
+  "912220001": {},
+  "912220002": {},
+  "912220003": {},
+  "912220502": [
+    "T_Interact_PhysicsLight"
+  ],
+  "912220503": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030301": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030300": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15030211": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030201": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030117": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13610100": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030115": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030114": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030113": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030112": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13610101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030110": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030107": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030106": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12840905": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12850000": {},
+  "12850100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850200": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850201": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850202": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12850203": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10260400": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850500": {},
+  "12850610": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12850700": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850710": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850800": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15030105": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12850905": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030104": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12851001": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12851002": {},
+  "15030103": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12859900": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12910000": {},
+  "12910100": [
+    "T_Interact_Electric"
+  ],
+  "12910200": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12930000": {},
+  "12930100": [
+    "T_Interact_Electric"
+  ],
+  "12930200": [
+    "T_Interact_Electric"
+  ],
+  "12930201": [
+    "T_Interact_Electric"
+  ],
+  "12930300": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12930301": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12939900": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13210000": {},
+  "13210100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15030102": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13230000": {},
+  "13230100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13230110": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15030101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13230210": [
+    "T_Interact_Water"
+  ],
+  "13230400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13230410": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13239900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13240000": {},
+  "15030017": {},
+  "15030016": {},
+  "15030015": {},
+  "15030014": {},
+  "13240300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030013": {},
+  "13310000": {},
+  "12830101": [
+    "T_Interact_Fire"
+  ],
+  "12830102": [
+    "T_Interact_Fire"
+  ],
+  "12830103": [
+    "T_Interact_Fire"
+  ],
+  "12830201": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12830301": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12830400": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsLight"
+  ],
+  "12830500": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12830600": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12830601": [
+    "T_Interact_Fire"
+  ],
+  "12830700": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12840001": {},
+  "12840002": {},
+  "12840003": {},
+  "12840101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12850001": {},
+  "12850002": {},
+  "12850003": {},
+  "12850101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12850102": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12850111": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850600": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12850711": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850713": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12850801": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12851003": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12851010": {},
+  "12851011": {},
+  "12910001": {},
+  "12910002": {},
+  "12910003": {},
+  "12910004": {},
+  "12910005": {},
+  "12910006": {},
+  "12910201": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "12930001": {},
+  "12930002": {},
+  "12930003": {},
+  "12930004": {},
+  "12930005": {},
+  "12930006": {},
+  "12930101": [
+    "T_Interact_Electric"
+  ],
+  "12930900": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13110000": {},
+  "13110001": {},
+  "13110002": {},
+  "13130000": {},
+  "13130001": {},
+  "13130002": {},
+  "13130003": {},
+  "13210001": {},
+  "13210002": {},
+  "13230001": {},
+  "13230002": {},
+  "13230003": {},
+  "13230401": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13230402": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13230411": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13230412": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13231000": {},
+  "13231001": {},
+  "13231002": {},
+  "13231003": {},
+  "13231100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13231400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13231401": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13231402": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13231403": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13239901": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13240001": {},
+  "13240002": {},
+  "13240003": {},
+  "13310001": {},
+  "13310002": {},
+  "13330001": {},
+  "13330002": {},
+  "13330310": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "13339901": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "13340100": [
+    "T_Interact_Water",
+    "T_Interact_Fire"
+  ],
+  "13510001": {},
+  "15030012": {},
+  "15030011": {},
+  "15030010": {},
+  "15030007": {},
+  "15030006": {},
+  "15030005": {},
+  "15030004": {},
+  "15030003": {},
+  "15030002": {},
+  "15030001": {},
+  "15030000": {},
+  "15010900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15010201": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15010200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15010107": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "15010106": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "15010105": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15010104": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15010103": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10110000": {},
+  "10110100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10110200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10110210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10110220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Ice"
+  ],
+  "10110300": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120000": {},
+  "10120100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10120220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Ice"
+  ],
+  "10120300": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120303": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120310": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120320": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120330": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120340": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Ice"
+  ],
+  "10120350": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "10120400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120420": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120422": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120430": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15010102": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13610102": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15010100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15010007": {},
+  "10210000": {},
+  "10210200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10210210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10210220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10210230": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15010006": {},
+  "10210310": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10210311": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "13610120": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15010004": {},
+  "10210600": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15010003": {},
+  "15010002": {},
+  "10220000": {},
+  "15010001": {},
+  "10220300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10220320": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10220400": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10220500": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10220600": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10230000": {},
+  "15010000": {},
+  "14930003": {},
+  "14930002": {},
+  "14930001": {},
+  "14930000": {},
+  "10230252": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10230300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10230305": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10230320": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10230400": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10230423": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10230500": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10230501": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14910003": {},
+  "10230801": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "14910002": {},
+  "10231003": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10231301": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10239900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10240000": {},
+  "10240300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10240320": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10240500": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14910001": {},
+  "10250000": {},
+  "10250100": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10250101": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10250300": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10250301": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10250500": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsLight"
+  ],
+  "10250501": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "14910000": {},
+  "10259900": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10260000": {},
+  "14839900": [
+    "T_Interact_Water"
+  ],
+  "10260220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10260230": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10260320": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10260321": {},
+  "14830311": [
+    "T_Interact_Water"
+  ],
+  "14830310": [
+    "T_Interact_Water"
+  ],
+  "10270000": {},
+  "10270220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10270230": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10270320": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10270321": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10270400": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14830301": [
+    "T_Interact_Water"
+  ],
+  "10279900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10310000": {},
+  "10310310": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10310510": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10310520": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14830300": [
+    "T_Interact_Water"
+  ],
+  "14830200": [
+    "T_Interact_Water"
+  ],
+  "10320000": {},
+  "10320100": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10320130": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14830100": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14830004": {},
+  "14830003": {},
+  "14830002": {},
+  "14830001": {},
+  "14830000": {},
+  "14810200": [
+    "T_Interact_Water"
+  ],
+  "14810100": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14810003": {},
+  "14810002": {},
+  "14810001": {},
+  "14810000": {},
+  "14759900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14750310": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14750300": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14750210": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14750200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14750102": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14750101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14750100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14750003": {},
+  "14750002": {},
+  "14750001": {},
+  "14750000": {},
+  "14749900": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14740300": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "14740200": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14740110": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "14740100": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "14740003": {},
+  "14740002": {},
+  "14740001": {},
+  "14740000": {},
+  "14710210": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "14710200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14710102": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14710101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14710100": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14710003": {},
+  "14710002": {},
+  "14710001": {},
+  "14710000": {},
+  "14640003": {},
+  "14640002": {},
+  "14640001": {},
+  "14640000": {},
+  "13610121": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13610200": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "912220501": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13619901": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13630000": {},
+  "13630100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13630200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13630300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14549900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13630310": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13630400": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "14540300": [
+    "T_Interact_PhysicsLight"
+  ],
+  "13630410": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13630411": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13639900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14540201": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14540200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "14540102": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13710000": {},
+  "14540100": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13710100": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13710120": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13710200": {},
+  "13710220": {},
+  "10260221": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12810400": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "13710300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14540004": {},
+  "14540005": {},
+  "14540006": {},
+  "14540007": {},
+  "14540101": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14540202": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14540204": [
+    "T_Interact_Ice"
+  ],
+  "14540205": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14540301": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "14540400": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14610000": {},
+  "14610001": {},
+  "14610002": {},
+  "14610003": {},
+  "14630000": {},
+  "14630001": {},
+  "14630002": {},
+  "14630003": {},
+  "10510000": {},
+  "10510100": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10510200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10510210": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10510220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10510230": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10510300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10510500": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "10510510": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "10510530": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10510540": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10510550": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10510560": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10520000": {},
+  "10520200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10520210": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10520220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10520230": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10520300": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10520500": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "10520510": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "10530000": {},
+  "10530200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10530210": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10530212": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10530220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10530230": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10530400": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10530513": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "10530530": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "10530531": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "10530532": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "10530700": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "10530710": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Fire"
+  ],
+  "10539900": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "10550000": {},
+  "10550100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10550101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15010005": {},
+  "10550201": [
+    "T_Interact_Fire"
+  ],
+  "10550300": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "15010101": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11220000": {},
+  "11220220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "11220400": [
+    "T_Interact_PhysicsMiddle",
+    "T_Interact_Electric"
+  ],
+  "11220510": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "11220600": [
+    "T_Interact_Electric"
+  ],
+  "11220601": [
+    "T_Interact_Electric"
+  ],
+  "11229900": [
+    "T_Interact_Electric"
+  ],
+  "11310000": {},
+  "11310110": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11310130": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11310410": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11320000": {},
+  "11320110": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11320130": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11320410": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11320520": [
+    "T_Interact_Electric",
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11330000": {},
+  "11330110": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11330130": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11330140": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11330420": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "11330520": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11330521": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11339900": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11410000": {},
+  "11410100": [
+    "T_Interact_Electric"
+  ],
+  "11410200": [
+    "T_Interact_Electric"
+  ],
+  "11410210": [
+    "T_Interact_Water"
+  ],
+  "10320110": [
+    "T_Interact_PhysicsLight"
+  ],
+  "15030111": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11420000": {},
+  "11420100": [
+    "T_Interact_Electric"
+  ],
+  "11420200": [
+    "T_Interact_Electric"
+  ],
+  "11420210": [
+    "T_Interact_Water"
+  ],
+  "15030116": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11430000": {},
+  "11430100": [
+    "T_Interact_Electric"
+  ],
+  "11430200": [
+    "T_Interact_Electric"
+  ],
+  "11430210": [
+    "T_Interact_Water"
+  ],
+  "11430220": [
+    "T_Interact_Electric"
+  ],
+  "11430230": {},
+  "11430400": [
+    "T_Interact_Electric"
+  ],
+  "11430402": [
+    "T_Interact_Electric"
+  ],
+  "11430500": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12030110": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11439900": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11610000": {},
+  "11610210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15030600": {},
+  "15030900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12030410": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11610600": {},
+  "12030510": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12039900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11611000": [
+    "T_Interact_Fire"
+  ],
+  "11620000": {},
+  "11620210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12070220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15130001": {},
+  "11620400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11620530": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11620700": {},
+  "15130100": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11629900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11630000": {},
+  "11630110": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "15130310": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11630220": [
+    "T_Interact_Ice"
+  ],
+  "11630230": [
+    "T_Interact_Ice"
+  ],
+  "10720210": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10720220": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10720310": [
+    "T_Interact_Fire"
+  ],
+  "10720400": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10720410": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10720420": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "10800351": {},
+  "10810000": {},
+  "10810001": {},
+  "10810002": {},
+  "10810003": {},
+  "10810200": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10810210": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10820000": {},
+  "12120231": {},
+  "12120301": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11710100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11710110": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10820210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11710310": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11720000": {},
+  "11720110": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12130300": {},
+  "11720310": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11720400": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11730000": {},
+  "11730110": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12210110": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11730310": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11730410": [
+    "T_Interact_Water"
+  ],
+  "12220000": {},
+  "11730610": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11730620": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11739900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220502": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "12220504": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "12220512": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220600": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220602": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12220610": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12220700": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12229900": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12310000": {},
+  "11331200": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11331300": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11331410": [
+    "T_Interact_Ice"
+  ],
+  "11331520": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11339901": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11410001": {},
+  "12320000": {},
+  "11410201": [
+    "T_Interact_Electric"
+  ],
+  "11420001": {},
+  "11420002": {},
+  "11430001": {},
+  "11430002": {},
+  "11430010": {},
+  "11430011": {},
+  "11430012": {},
+  "11430101": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "12330000": {},
+  "11430104": [
+    "T_Interact_Electric"
+  ],
+  "11430105": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight"
+  ],
+  "11430106": [
+    "T_Interact_Electric"
+  ],
+  "11430107": [
+    "T_Interact_Electric"
+  ],
+  "11430108": [
+    "T_Interact_Electric"
+  ],
+  "11430109": [
+    "T_Interact_Electric"
+  ],
+  "12330500": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11430112": [
+    "T_Interact_Electric"
+  ],
+  "12330700": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11430115": [
+    "T_Interact_Electric"
+  ],
+  "12410100": {},
+  "12610000": {},
+  "12610100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12610110": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "12610120": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12610130": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12610150": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "12610200": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12610210": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11520001": {},
+  "12610400": {},
+  "100002": [
+    "T_Interact_Ice"
+  ],
+  "12610600": [
+    "T_Interact_Electric"
+  ],
+  "9100001": {},
+  "9200007": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "9200008": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "9200009": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12620000": {},
+  "12620010": {},
+  "12620100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12620110": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "12620120": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11620001": {},
+  "12620160": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12620220": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10110003": {},
+  "12620510": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12620520": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12620530": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12620540": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10120003": {},
+  "10120006": {},
+  "12630000": {},
+  "10120008": {},
+  "10120009": {},
+  "11720001": {},
+  "12639900": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12810000": {},
+  "12810100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12810200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11730003": {},
+  "11730600": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12810910": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12820000": {},
+  "12820100": [
+    "T_Interact_Water",
+    "T_Interact_Fire"
+  ],
+  "12820200": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12830000": {},
+  "12830100": [
+    "T_Interact_Fire"
+  ],
+  "12830200": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12830202": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12830300": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12830302": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12839900": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12840000": {},
+  "12840100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12840200": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10121802": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12840500": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12840700": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12840710": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12840800": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10124002": {},
+  "10124003": {},
+  "10124410": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10124500": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10130000": {},
+  "10130001": {},
+  "10130002": {},
+  "10130003": {},
+  "10130900": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10210001": {},
+  "10210002": {},
+  "10210003": {},
+  "10210221": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11330410": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10210231": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10210232": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10220001": {},
+  "10220002": {},
+  "10230001": {},
+  "10230002": {},
+  "70000502": {},
+  "70010400": {},
+  "70020102": {},
+  "70020201": {},
+  "70020601": {},
+  "103200000": {},
+  "114301051": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "699930001": {},
+  "699930002": {},
+  "699930003": {},
+  "800230000": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230001": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230100": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230101": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230200": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230300": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230400": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "800230500": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "800230501": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "800230600": [
+    "T_Interact_Fire"
+  ],
+  "800230700": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230701": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230702": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230703": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230800": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230801": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800230802": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800231200": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800231201": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "800231300": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800231400": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Fire"
+  ],
+  "800231800": [
+    "T_Interact_Fire",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070104": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070206": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070207": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070216": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070217": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070225": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070226": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902070227": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "902070401": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "902130100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902130200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "902130600": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Water"
+  ],
+  "902130700": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11630005": {},
+  "11630006": {},
+  "11630007": {},
+  "11630310": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11630400": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11630420": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11630430": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631200": [
+    "T_Interact_Ice"
+  ],
+  "11631300": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631301": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsLight"
+  ],
+  "11631302": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631303": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631400": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631500": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631501": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631600": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11631700": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11639900": [
+    "T_Interact_Ice"
+  ],
+  "11710000": {},
+  "11710001": {},
+  "11710002": {},
+  "11810001": {},
+  "11740001": {},
+  "12220300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740002": {},
+  "11740003": {},
+  "12220110": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740011": {},
+  "11910002": {},
+  "11910001": {},
+  "11740012": {},
+  "11740101": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740110": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11870005": {},
+  "11870004": {},
+  "11870003": {},
+  "11870002": {},
+  "11870001": {},
+  "11870000": {},
+  "11949900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11859900": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11850710": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11850700": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11850520": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "11850510": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11850330": [
+    "T_Interact_Water"
+  ],
+  "11850320": [
+    "T_Interact_Fire"
+  ],
+  "11850012": {},
+  "11850011": {},
+  "12010110": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11850010": {},
+  "12010130": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11850002": {},
+  "12010200": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12010220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11850001": {},
+  "12010230": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "12030000": {},
+  "11850000": {},
+  "11849900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11840410": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12030220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12030230": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11840330": [
+    "T_Interact_Water"
+  ],
+  "11840320": [
+    "T_Interact_Fire"
+  ],
+  "12620230": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12030260": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12030500": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12070000": {},
+  "11840003": {},
+  "11840002": {},
+  "11840001": {},
+  "12070110": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11840000": {},
+  "12070210": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11810400": [
+    "T_Interact_PhysicsSpecial"
+  ],
+  "11810330": [
+    "T_Interact_Water"
+  ],
+  "12079900": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12110000": {},
+  "11810320": [
+    "T_Interact_Fire"
+  ],
+  "12110100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12110120": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12110130": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12120000": {},
+  "11810012": {},
+  "11810011": {},
+  "11810010": {},
+  "12120010": {},
+  "11810002": {},
+  "10330200": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11810000": {},
+  "12120100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12120120": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12120130": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11749900": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740600": [
+    "T_Interact_Water"
+  ],
+  "11740511": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740510": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12120201": {},
+  "12120202": {},
+  "12120203": {},
+  "12120230": {},
+  "10124001": {},
+  "10124000": {},
+  "10121810": {},
+  "10121805": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10121410": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10121400": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10121320": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10121300": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10121200": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10121100": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10121004": {},
+  "10121003": {},
+  "10121002": {},
+  "10121001": {},
+  "10120810": {},
+  "10120805": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10120802": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10120703": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120702": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10120410": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120351": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "10120341": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Ice"
+  ],
+  "10120302": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120301": [
+    "T_Interact_PhysicsLight"
+  ],
+  "10120211": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10120007": {},
+  "10120002": {},
+  "10120001": {},
+  "11630003": {},
+  "10110221": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsLight",
+    "T_Interact_Ice"
+  ],
+  "10110002": {},
+  "10110001": {},
+  "10000030": [
+    "T_Interact_Water"
+  ],
+  "9220020": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "9200020": [
+    "T_Interact_PhysicsLight"
+  ],
+  "9200013": {},
+  "12620500": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "9200010": [
+    "T_Interact_PhysicsLight"
+  ],
+  "11520300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11520002": {},
+  "11520000": {},
+  "11510300": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11510002": {},
+  "11510001": {},
+  "11510000": {},
+  "11430401": [
+    "T_Interact_Electric"
+  ],
+  "11430301": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "11430202": [
+    "T_Interact_Electric"
+  ],
+  "11430201": [
+    "T_Interact_Electric"
+  ],
+  "11430114": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "11430111": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "11430102": [
+    "T_Interact_PhysicsHeavy",
+    "T_Interact_Electric"
+  ],
+  "11410002": {},
+  "11331110": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11331003": {},
+  "11331002": {},
+  "11331001": {},
+  "11331000": {},
+  "11330411": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11330003": {},
+  "11330002": {},
+  "11330001": {},
+  "11320411": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11320003": {},
+  "11320002": {},
+  "11320001": {},
+  "11310411": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11310002": {},
+  "11310001": {},
+  "11220002": {},
+  "11220001": {},
+  "10830210": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10830200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10830003": {},
+  "10830002": {},
+  "10830001": {},
+  "10830000": {},
+  "10820200": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10820003": {},
+  "10820002": {},
+  "10820001": {},
+  "12120500": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12129900": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12130000": {},
+  "11740502": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740501": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740500": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "12130100": {},
+  "10310002": {},
+  "10310001": {},
+  "10279901": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10272225": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10272224": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10272223": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10272222": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10272221": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10272220": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10271320": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10271232": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10271231": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10271230": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10270403": [
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10270232": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10270231": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "10270222": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10270221": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10270013": {},
+  "10270012": {},
+  "10270011": {},
+  "10270010": {},
+  "10270003": {},
+  "10270002": {},
+  "10270001": {},
+  "10269901": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10260232": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10260231": [
+    "T_Interact_Ice",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "10260222": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "14330002": {},
+  "10260003": {},
+  "10260002": {},
+  "10260001": {},
+  "10250005": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Fire"
+  ],
+  "10250003": {},
+  "10250002": {},
+  "12130500": [
+    "T_Interact_PhysicsLight"
+  ],
+  "12210000": {},
+  "11740401": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740400": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11870370": [
+    "T_Interact_Water"
+  ],
+  "12210300": [
+    "T_Interact_Electric",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11870430": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740310": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11870510": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11870512": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11870520": [
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11740013": {},
+  "11910000": {},
+  "11910100": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11910200": [
+    "T_Interact_Water"
+  ],
+  "11910210": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Water"
+  ],
+  "11910300": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsHeavy"
+  ],
+  "11920000": {},
+  "11920100": [
+    "T_Interact_Water",
+    "T_Interact_PhysicsMiddle"
+  ],
+  "11920200": [
+    "T_Interact_Water"
+  ],
+  "12220500": [
+    "T_Interact_PhysicsLight",
+    "T_Interact_Electric"
+  ],
+  "11740000": {},
+  "11730002": {},
+  "11730001": {},
+  "11720003": {},
+  "11720002": {}
+}

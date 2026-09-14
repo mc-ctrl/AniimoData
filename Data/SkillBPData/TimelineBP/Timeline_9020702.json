@@ -1,0 +1,30 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "UID": "493cf092-c6a9-404e-9931-749a184b2b74",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "2": {
+      "name": "setEntityAnimatorTrigger",
+      "UID": "622333a3-9ac5-4a92-8b72-6756a593b913",
+      "target": "OWNER",
+      "triggerName": "Destroy",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_9020702",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    3
+  ],
+  "layer": "Base",
+  "length": 25
+}

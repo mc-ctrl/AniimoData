@@ -1,0 +1,62 @@
+{
+  "0": {
+    "22517157": {
+      "favorableCollectId": 0,
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoImage": "UI_Img_Camp",
+      "infoImageNot": "$UI_Icon_MarkPoint_Transmit.png",
+      "infoPage": 0,
+      "infoText": "297892779",
+      "infoTextNot": 1355733282,
+      "infoTitle": "393559178",
+      "infoTitleNot": 1728182781,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 0,
+      "markConfigId": 1,
+      "markPosition": [
+        -3.54,
+        0.33,
+        -17
+      ],
+      "markType": 0,
+      "openMapState": 0,
+      "randomRange": 0,
+      "realSceneId": 265,
+      "revivedPointState": true,
+      "scale1": 1,
+      "idInType": 0,
+      "scale3": 1,
+      "scale4": 1,
+      "showUI": true,
+      "smallAreaId": 0,
+      "largeAreaId": 0,
+      "sandboxId": 0,
+      "ClickorNot": 0,
+      "OnlyShowInMinimapResizeArea": 0,
+      "POIBoundStaticId": 0,
+      "POIDesc": "",
+      "POIOrNot": false,
+      "POIPriority": 0,
+      "ShoworNot": 1,
+      "UsableState": [
+        1,
+        2
+      ],
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "yaw": 0,
+      "activeShapes": {},
+      "activeState": 0,
+      "affiliatedCamp": [
+        0
+      ],
+      "arriveType": 0,
+      "type": 0,
+      "circleRadius": 0,
+      "scale2": 1,
+      "arriveParam": {}
+    }
+  }
+}

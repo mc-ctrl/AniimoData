@@ -1,0 +1,1728 @@
+{
+  "1050301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1734196761,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1050300,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1050300,
+        [
+          1050301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1062301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1062300,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1062300,
+        [
+          1062301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1062102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1062100,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1062100,
+        [
+          1062102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1051201": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1051200,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1051200,
+        [
+          1051201
+        ]
+      ]
+    ],
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1038101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1656338638,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1038100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1038100,
+        [
+          1038101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1018402": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1886681526,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1018400,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1018400,
+        [
+          1018402
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1046101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 2114695546,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1046100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1046100,
+        [
+          1046101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1001104": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1378249506,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1001100,
+      4,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1001100,
+        [
+          1001104
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1062101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1062100,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1062100,
+        [
+          1062101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1014301": {
+    "takePhotoDistance": [
+      0,
+      999999999
+    ],
+    "desc": 1335322209,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1014300,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        800000,
+        [
+          1014301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1051101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1051100,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1051100,
+        [
+          1051101
+        ]
+      ]
+    ],
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1047102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1147842468,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1047100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1047100,
+        [
+          1047102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1062302": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1062300,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1062300,
+        [
+          1062302
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1038302": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1606603599,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1038300,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1038300,
+        [
+          1038302
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1050101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1050100,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1050100,
+        [
+          1050101
+        ]
+      ]
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchType": 1,
+    "desc": 1844280681,
+    "event": "petTraitStateSet"
+  },
+  "1026103": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1801922903,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1026100,
+      3,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1026100,
+        [
+          1026103
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1028501": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1814396153,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1028500,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1028500,
+        [
+          1028501
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1002202": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1240699161,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1002200,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1002200,
+        [
+          1002202
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1044101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1284506568,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1044100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1044100,
+        [
+          1044101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1017201": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1236614145,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1017200,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1017200,
+        [
+          1017201
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1047402": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1957172179,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1047400,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1047400,
+        [
+          1047402
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1002403": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1751336609,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1002400,
+      3,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1002400,
+        [
+          1002403
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1003302": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1883324701,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1003300,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1003300,
+        [
+          1003302
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1045301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1770568342,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1045300,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1045300,
+        [
+          1045301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1004102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "waitText": 1004102,
+    "showDistance": [
+      0,
+      25
+    ],
+    "desc": 2086576399,
+    "event": "petTraitStateSet",
+    "beforeText": 1004101,
+    "eventArg": [
+      1004100,
+      2,
+      2
+    ],
+    "inspect": 1,
+    "matchEntities": [
+      [
+        1004100
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showText": 1004103,
+    "successText": 1004104
+  },
+  "1004103": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1779816929,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1004100,
+      3,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1004100,
+        [
+          1004103
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1005501": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 2043853914,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1005500,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1005500,
+        [
+          1005501
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1012201": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1012200,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1012200,
+        [
+          1012201
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1017101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1337260161,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1017100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1017100,
+        [
+          1017101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1017102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "waitText": 1017102,
+    "showDistance": [
+      0,
+      25
+    ],
+    "desc": 1928639885,
+    "event": "petTraitStateSet",
+    "beforeText": 1017101,
+    "eventArg": [
+      1017100,
+      2,
+      2
+    ],
+    "inspect": 1,
+    "matchEntities": [
+      [
+        1017100
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showText": 1017103,
+    "successText": 1017104
+  },
+  "1017103": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1017100,
+      3,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1017100,
+        [
+          1017103
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1002100": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "waitText": 20000002,
+    "showDistance": [
+      0,
+      25
+    ],
+    "desc": 1958751505,
+    "event": "petTraitStateSet",
+    "beforeText": 20000001,
+    "eventArg": [
+      1002100,
+      2,
+      2
+    ],
+    "inspect": 1,
+    "matchEntities": [
+      [
+        1002100
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showText": 20000003,
+    "successText": 20000004
+  },
+  "1019102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1649632772,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1019100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1019100,
+        [
+          1019102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1019201": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1992456212,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1019200,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1019200,
+        [
+          1019201
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1019202": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1019200,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1019200,
+        [
+          1019202
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1020102": {
+    "laserToCapsule": 1,
+    "desc": 1918850382,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1020100,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1020100,
+        [
+          1020102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "showDistance": [
+      0,
+      25
+    ]
+  },
+  "1021301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1021300,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1021300,
+        [
+          1021301
+        ]
+      ]
+    ],
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1026302": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1439738504,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1026300,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1026300,
+        [
+          1026302
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1028101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1262738397,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1028100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1028100,
+        [
+          1028101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1028102": {
+    "laserToCapsule": 1,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1028100,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1028100,
+        [
+          1028102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "showDistance": [
+      0,
+      25
+    ]
+  },
+  "1035101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1945849418,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1035100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1035100,
+        [
+          1035101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1035202": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1430332012,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1035200,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1035200,
+        [
+          1035202
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1043101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1043100,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1043100,
+        [
+          1043101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1046102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1447816124,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1046100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1046100,
+        [
+          1046102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1048101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1692262095,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1048100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1048100,
+        [
+          1048101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1048301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1487139714,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1048300,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1048300,
+        [
+          1048301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1016301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1207141461,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1016300,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1016300,
+        [
+          1016301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1050102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1198299356,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1050100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1050100,
+        [
+          1050102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1038301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1530061152,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1038300,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1038300,
+        [
+          1038301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1058301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1058300,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1058300,
+        [
+          1058301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1029102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1384109248,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1029100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1029100,
+        [
+          1029102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1042101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1697608971,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1042100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1042100,
+        [
+          1042101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1021201": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1746849442,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1021200,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1021200,
+        [
+          1021201
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1016102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1085913764,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1016100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1016100,
+        [
+          1016102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1014102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1394021849,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1014100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1014100,
+        [
+          1014102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1002302": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1874171764,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1002300,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1002300,
+        [
+          1002302
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1016101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1194882167,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1016100,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1016100,
+        [
+          1016101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1005301": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1433695646,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1005300,
+      1,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1005300,
+        [
+          1005301
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1005102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "matchEntityCondition2": [
+      1005103
+    ],
+    "matchEntityNum2": 1,
+    "desc": 1484107304,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1005100,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1005100,
+        [
+          1005102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ]
+  },
+  "1022102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "desc": 1802637430,
+    "event": "petTraitStateSet",
+    "eventArg": [
+      1022100,
+      2,
+      2
+    ],
+    "showDistance": [
+      0,
+      25
+    ],
+    "matchEntities": [
+      [
+        1022100,
+        [
+          1022102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "inspect": 2
+  },
+  "1058101": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1058100,
+      1,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1058100,
+        [
+          1058101
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  },
+  "1058102": {
+    "takePhotoDistance": [
+      0,
+      25
+    ],
+    "eventArg": [
+      1058100,
+      2,
+      2
+    ],
+    "inspect": 2,
+    "matchEntities": [
+      [
+        1058100,
+        [
+          1058102
+        ]
+      ]
+    ],
+    "matchEntityNum1": 1,
+    "matchType": 1,
+    "showDistance": [
+      0,
+      25
+    ],
+    "event": "petTraitStateSet"
+  }
+}

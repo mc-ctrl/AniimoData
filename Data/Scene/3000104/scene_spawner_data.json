@@ -1,0 +1,88 @@
+{
+  "91103657": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      554.99,
+      99.25,
+      129.13
+    ],
+    "sandboxId": 91103540,
+    "autoInitial": false,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "targetPositionData": {
+      "entity": 90807952,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "name": "",
+      "position": [
+        554.99,
+        99.25,
+        129.13
+      ],
+      "author": "worldx_ch"
+    },
+    "owner": "端木一康",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91103657,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91103658
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91103659": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      554.19,
+      99.18,
+      130.08
+    ],
+    "sandboxId": 91103540,
+    "autoInitial": false,
+    "sandboxType": 0,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "端木一康",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91103659,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91103660
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

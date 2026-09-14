@@ -1,0 +1,57 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119202",
+  "calcInfoByLuaConfig": {
+    "dmg_water_add_ratio": "param0",
+    "type": 1,
+    "id": 2119202
+  },
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0c47da20-3b75-49fb-bc0b-12ef6247cd2e",
+      "effectId": "Eff_Parmon_10192_Passive_L",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "0b8211a6-1cc3-4943-b5df-c661413a276d",
+      "effectId": "Eff_Parmon_10192_Passive_R",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "c50ba6a5-3ebe-43e8-890e-c93cf2abff64",
+      "effectId": "Eff_Parmon_10192_Passive_L",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "75dc8219-1248-4a5d-b9e8-e8f4fd409ad0",
+      "effectId": "Eff_Parmon_10192_Passive_R",
+      "speed": 1,
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7,
+    9
+  ],
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

@@ -1,0 +1,743 @@
+{
+  "20027": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20028": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20029": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20030": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20046": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20017": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20039": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20058": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20057": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20056": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20043": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "3000": {
+    "desiredMapSize": [
+      9216,
+      9216
+    ],
+    "column": 9,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 9,
+    "explorePixelRadius": 10,
+    "chunkResolution": 1024
+  },
+  "20100": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20047": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20031": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20032": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20033": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20034": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20035": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20036": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20037": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20038": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20022": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20041": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20042": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20040": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20044": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20045": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "3004": {
+    "desiredMapSize": [
+      6144,
+      4096
+    ],
+    "column": 6,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 4,
+    "explorePixelRadius": 10,
+    "chunkResolution": 1024
+  },
+  "3005": {
+    "desiredMapSize": [
+      6144,
+      4096
+    ],
+    "column": 6,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 4,
+    "explorePixelRadius": 10,
+    "chunkResolution": 1024
+  },
+  "20048": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20049": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20050": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20051": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20052": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20053": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20054": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20055": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20001": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20002": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20003": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20059": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20060": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20018": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20016": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20015": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20020": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20010": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20011": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20012": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20013": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20014": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20021": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20023": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20024": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20025": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  },
+  "20026": {
+    "desiredMapSize": [
+      4096,
+      4096
+    ],
+    "column": 8,
+    "frameHeight": 0,
+    "frameWidth": 0,
+    "unitPixel": 16,
+    "row": 8,
+    "explorePixelRadius": 10,
+    "chunkResolution": 512
+  }
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "stageDesc": 2128505052,
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "triggerRainbowProbDesc": 1303049877,
+    "resId": "Eff_Env_SceneObject_LeaderFlower_Openidle_KeyItem_LV1",
+    "flowerScale": 0.8,
+    "VXStage": 1,
+    "materialEffect": "LeaderFlower_RainbowStage1",
+    "rainbowEnergyNeed": 0
+  },
+  {
+    "stageDesc": 1408720793,
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "triggerRainbowProbDesc": 1081924338,
+    "resId": "Eff_Env_SceneObject_LeaderFlower_Openidle_KeyItem_LV2",
+    "flowerScale": 0.9,
+    "VXStage": 2,
+    "materialEffect": "LeaderFlower_RainbowStage2",
+    "rainbowEnergyNeed": 501
+  },
+  {
+    "stageDesc": 1978655169,
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "triggerRainbowProbDesc": 1757600089,
+    "resId": "Eff_Env_SceneObject_LeaderFlower_Openidle_KeyItem_LV3",
+    "flowerScale": 1,
+    "VXStage": 3,
+    "materialEffect": "LeaderFlower_RainbowStage3",
+    "rainbowEnergyNeed": 1501
+  },
+  {
+    "stageDesc": 1293609062,
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "triggerRainbowProbDesc": 1232377900,
+    "resId": "Eff_Env_SceneObject_LeaderFlower_Openidle_KeyItem_LV4",
+    "flowerScale": 1.1,
+    "VXStage": 4,
+    "materialEffect": "LeaderFlower_RainbowStage4",
+    "rainbowEnergyNeed": 3001
+  },
+  {
+    "stageDesc": 1791026805,
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "triggerRainbowProbDesc": 1347436628,
+    "resId": "Eff_Env_SceneObject_LeaderFlower_Openidle_KeyItem_LV5",
+    "flowerScale": 1.2,
+    "VXStage": 5,
+    "materialEffect": "LeaderFlower_RainbowStage5",
+    "rainbowEnergyNeed": 6001
+  },
+  {
+    "stageDesc": 1628954163,
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "triggerRainbowProbDesc": 1670492682,
+    "resId": "Eff_Env_SceneObject_LeaderFlower_Openidle_KeyItem_LV5",
+    "flowerScale": 1.3,
+    "VXStage": 6,
+    "materialEffect": "LeaderFlower_RainbowStage5",
+    "rainbowEnergyNeed": 10500
+  }
+]

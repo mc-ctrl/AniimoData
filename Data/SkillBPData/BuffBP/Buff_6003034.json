@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003034",
+  "calcInfoByLuaConfig": {
+    "id": 6003034,
+    "type": 1,
+    "fall_dmg_add_ratio": "param2",
+    "stamina_regen_p": "param0",
+    "stamina_cost_ratio_v": "param1",
+    "speed_ratio_load_adjustment_v": "param3"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

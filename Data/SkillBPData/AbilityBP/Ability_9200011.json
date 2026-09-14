@@ -1,0 +1,29 @@
+{
+  "preloadAnims": [
+    "Skill_ShieldDance"
+  ],
+  "BPName": "ability_9200011",
+  "NodeID": 1,
+  "UID": "93c46760-2a69-433d-8e88-e9eb7c993478",
+  "searchTargetRangeUp": 0,
+  "abilityParamId": 9200011,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeRadius": 0,
+  "checkExistBurrow": false,
+  "searchTargetRangeDown": 0,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200011001,
+      "name": "setCombatActionTimeline",
+      "UID": "731c00d4-8d0e-4f3f-8ae6-faa923141c46",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 1
+}

@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_14530303",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10800263,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14530303001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "10": {
+      "name": "stopSoundStr",
+      "UID": "4f731c1f-91a2-4499-bdeb-9301468a0135",
+      "soundId": "SFX_Combat_10453_Skill_Dount",
+      "target": "OWNER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_DountEnd"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "onAbilityEndIds": [
+    10
+  ],
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,85 @@
+{
+  "BPName": "ability_15030506",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 11200480,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "f4a13a20-2b97-4df9-bc52-63f772c03d81",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        49
+      ],
+      "NodeID": 8
+    },
+    "49": {
+      "timelineId": 15030502001,
+      "name": "setCombatActionTimeline",
+      "UID": "a0001f12-adf0-4a69-bc0d-1c9e5826bfd7",
+      "target": "CASTER",
+      "NodeID": 49
+    },
+    "50": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "17206b6b-60bd-4d5e-b82d-9194f6ad53ba",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "52": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "56cd727e-979b-4162-80a6-08401244632c",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "7": {
+      "timelineId": 15030506001,
+      "name": "setCombatActionTimeline",
+      "UID": "34aa28d7-6376-4c2b-9e80-5dd9b8adc219",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "51": {
+      "UID": "def61b1b-66ba-4b16-b386-93e488c4378e",
+      "conditionIds": [
+        50,
+        52
+      ],
+      "name": "conditionOr",
+      "NodeID": 51
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrazyClaw03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Rampage_Skill_Dark_CrazyClaw3_L",
+    "Eff_Hit_Dark_Slash",
+    "Eff_Parmon_10503_Rampage_Skill_Dark_CrazyClaw3_R",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint1",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint2",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint1",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint2"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

@@ -1,0 +1,37 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010007",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2700001,
+      "name": "createEntity",
+      "UID": "9ead22c0-33fc-4e8a-acbd-475c32050edc",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 1,
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "OWNER",
+      "NodeID": 3
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    3
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020012",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "name": "",
+  "onBuffThinkIds": [
+    17
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "a3083583-4352-4e76-bc5d-2783dcb6be47",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        4
+      ]
+    },
+    "4": {
+      "target": "CURPET",
+      "duration": 3600,
+      "buffId": 402001201,
+      "NodeID": 4,
+      "UID": "de94287e-30ec-42d8-98e1-16f365795262",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "buffId": 402001201,
+      "name": "hasBuff",
+      "UID": "d15c4fc3-169b-4e92-883b-e2349a9af5f1",
+      "target": "CURPET",
+      "NodeID": 14
+    },
+    "10": {
+      "rValue": 1,
+      "name": "greater",
+      "UID": "0f7d7644-4821-4f12-8e8a-b39e7e1aa941",
+      "NodeID": 10,
+      "lValue": {
+        "UID": "47038df8-cfc0-4e2b-b74a-2c76f416ef60",
+        "target": "CURPET",
+        "name": "getShieldPoint",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "4aaaad9a-5b05-4a22-9212-08abc8343e32",
+      "name": "buffStartThink",
+      "NodeID": 15
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "47c830d5-ec77-4540-af10-bf8b9e61ce92",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "2870a2a4-51fd-4db5-98a3-492ffce8b28c",
+      "target": "CURPET",
+      "name": "hasShield",
+      "NodeID": 16
+    },
+    "17": {
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "56fd4b39-80ca-4dd5-9358-0cd37e7803cb",
+      "name": "doActionsByConditions",
+      "NodeID": 17,
+      "elseActionIds": [
+        18
+      ]
+    },
+    "18": {
+      "buffId": 402001201,
+      "name": "removeBuff",
+      "UID": "9e05215e-aeaf-4ec5-b0ec-9deb12962331",
+      "target": "CURPET",
+      "NodeID": 18
+    },
+    "11": {
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "24df11db-a36d-4a42-b26f-57da3ce7fe6d",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        12
+      ]
+    },
+    "6": {
+      "addActionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "8dca3571-87fe-47e2-9039-6c7a1b73dcf6",
+      "name": "registerShieldChangeEvent",
+      "actionIds": [
+        11
+      ]
+    },
+    "12": {
+      "buffId": 402001201,
+      "name": "removeBuff",
+      "UID": "e8dd4ab3-b012-4d20-9994-3aa311de7619",
+      "target": "CURPET",
+      "NodeID": 12
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    15,
+    7
+  ]
+}

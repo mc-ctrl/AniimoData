@@ -1,0 +1,44 @@
+{
+  "cutSceneDuration": 1.05,
+  "preloadCutScenes": [
+    "$Parmon_10133_Skill_Ex_Timeline.prefab"
+  ],
+  "UID": "306272b8-fd02-46a5-afc7-118f5c157e42",
+  "abilityParamId": 10200090,
+  "abilityType": 4,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11339900001,
+      "name": "setCombatActionTimeline",
+      "UID": "656af3d0-5603-4e08-98a8-26323e998745",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Slash",
+    "Eff_Parmon_10133_Skill_EX_Weapon",
+    "Eff_Parmon_10133_Skill_EX_01",
+    "Eff_Parmon_10133_Skill_EX_03",
+    "Eff_Parmon_10133_Skill_EX_02",
+    "Eff_Parmon_10133_Skill_EX_04"
+  ],
+  "searchRelation": 2,
+  "name": "冰狼大招",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "onlyHasActOnTargets": true,
+  "BPName": "ability_11339900",
+  "NodeID": 1
+}

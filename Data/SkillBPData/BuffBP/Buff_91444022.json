@@ -1,0 +1,33 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91444022",
+  "calcInfoByLuaConfig": {
+    "id": 91444022,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "onBuffRefreshIds": [
+    4
+  ],
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9a554fb4-1f23-436a-9424-ffc66a7bca2e",
+      "effectId": "Eff_Parmon_10444_Skill_Shadow_AttackUp",
+      "speed": 1,
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

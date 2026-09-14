@@ -1,0 +1,77 @@
+{
+  "502": {
+    "type": "wind",
+    "level": 3,
+    "name": "风3"
+  },
+  "501": {
+    "type": "wind",
+    "level": 2,
+    "name": "风2"
+  },
+  "200": {
+    "type": "water",
+    "level": 1,
+    "name": "水1"
+  },
+  "101": {
+    "type": "fire",
+    "level": 2,
+    "name": "中火"
+  },
+  "201": {
+    "type": "water",
+    "level": 2,
+    "name": "水2"
+  },
+  "202": {
+    "type": "water",
+    "level": 3,
+    "name": "水3"
+  },
+  "301": {
+    "type": "ice",
+    "level": 2,
+    "name": "冰2"
+  },
+  "401": {
+    "type": "electr",
+    "level": 2,
+    "name": "电2"
+  },
+  "100": {
+    "type": "fire",
+    "level": 1,
+    "name": "小火"
+  },
+  "500": {
+    "type": "wind",
+    "level": 1,
+    "name": "风1"
+  },
+  "300": {
+    "type": "ice",
+    "level": 1,
+    "name": "冰1"
+  },
+  "102": {
+    "type": "fire",
+    "level": 3,
+    "name": "大火"
+  },
+  "402": {
+    "type": "electr",
+    "level": 3,
+    "name": "电3"
+  },
+  "400": {
+    "type": "electr",
+    "level": 1,
+    "name": "电1"
+  },
+  "302": {
+    "type": "ice",
+    "level": 3,
+    "name": "冰3"
+  }
+}

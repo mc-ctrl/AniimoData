@@ -1,0 +1,17 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 402000601,
+    "final_taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "BPName": "buff_402000601",
+  "NodeID": 1,
+  "UID": "172f3401-3722-42dc-a48f-248827bb43ea",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

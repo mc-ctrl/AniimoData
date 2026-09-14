@@ -1,0 +1,64 @@
+{
+  "BPName": "ability_902132302",
+  "NodeID": 1,
+  "UID": "21d347c4-1fee-4def-b06d-c94f129c8234",
+  "abilityParamId": 49223014,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902132302001,
+      "name": "setCombatActionTimeline",
+      "UID": "bbd5e773-3d17-4283-a751-70cd8de1f3ea",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "41": {
+      "timelineId": 902132302002,
+      "name": "setCombatActionTimeline",
+      "UID": "04f5d73c-58cb-4700-b1f9-52554c191ad5",
+      "target": "CASTER",
+      "NodeID": 41
+    },
+    "34": {
+      "buffId": 1145108,
+      "name": "hasBuff",
+      "UID": "509f7726-7868-445c-92bc-3dd1ae4fd139",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "10": {
+      "actionIds": [
+        41
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "d8b84c81-b57e-4944-b12f-0359ba106d91",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Combat_Start"
+  ],
+  "preloadEffs": [
+    "Eff_Yuanwei_SleepBall_BattleIdle_San",
+    "Eff_Monster_90213_Mon_Skill_Green_Waterwave",
+    "Eff_Common_Battle_Break",
+    "Eff_Parmon_10023_Boss_ScreenUV"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,51 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_210230300",
+  "NodeID": 1,
+  "UID": "b1ca9073-297f-45d2-94cd-6c69bd7d9c46",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "a9cc1d27-95b2-4d55-baa6-4efe93a95859",
+      "to": 10230201,
+      "NodeID": 6,
+      "from": 10230200
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "e2193263-6a3b-4866-9419-cbe9c47f9b4a",
+      "effectId": "Eff_Parmon_10023_Skill_Petrifaction_Success_Charge",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "7": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "198207dd-8630-44c4-8c68-7e539c70ca95",
+      "to": 10230200,
+      "NodeID": 7,
+      "from": 10230200
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c1f6e502-e6f8-4c28-a20f-e5adbc5db734",
+      "effectId": "Eff_Parmon_10023_Skill_Petrifaction_Success_Charge",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    7,
+    4
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    2
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2122206",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "697877a1-2ca2-4776-a027-20d46f4f0608",
+      "NodeID": 8,
+      "groupKey": 0
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "eb1ad7ed-2d19-4a5c-a757-288cbdee73b1",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9073d7ce-877e-4554-bc62-03a08d6a493a",
+      "effectId": "Eff_Parmon_10072_ChargeFur_Biu",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "6": {
+      "switchTag": "Spark",
+      "name": "setModelSwitchTag",
+      "UID": "9d12e61a-5083-408c-92ab-0975ff7228e6",
+      "NodeID": 6,
+      "groupKey": 0
+    }
+  },
+  "onBuffDestroyIds": [
+    4,
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10,
+    6
+  ]
+}

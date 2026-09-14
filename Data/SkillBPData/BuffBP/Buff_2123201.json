@@ -1,0 +1,25 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123201",
+  "NodeID": 1,
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "onBuffRefreshIds": [
+    2
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ad803305-7ecd-4cd1-bcc7-76b369421d8f",
+      "effectId": "Eff_Parmon_10232_Stive",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "duration": 0.5,
+  "calcResultNodeId": 49,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10283_OutEx_Fly_01",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxHitNum": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    69,
+    60,
+    52
+  ],
+  "nodeMap": {
+    "52": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 49,
+      "NodeID": 52,
+      "UID": "ec48082f-e0de-4e6d-ae78-581ae255ffea",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        49
+      ]
+    },
+    "66": {
+      "calcId": 12839900,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 66,
+      "UID": "3faa56df-9334-454e-b837-77fd0ce186c7",
+      "name": "getParamByLuaConfig"
+    },
+    "49": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "calcId": 12839900,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 66,
+            "UID": "3faa56df-9334-454e-b837-77fd0ce186c7",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "b453f2a9-fe3b-4f6f-8a9f-90a1f30f69c6",
+          "NodeID": 64,
+          "lValue": {
+            "rValue": {
+              "calcId": 12839900,
+              "calcType": 2,
+              "paramName": "param1",
+              "NodeID": 67,
+              "UID": "4511f5dc-5ab8-4853-8f74-ac68af1f443d",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "5fc431f3-90e6-4eb9-846e-093af0879a9e",
+            "NodeID": 63,
+            "lValue": {
+              "b": {
+                "UID": "88d6631d-8b9d-4e96-a904-3551737bc8c4",
+                "number": 15,
+                "name": "constNumber",
+                "NodeID": 68
+              },
+              "NodeID": 62,
+              "UID": "36012667-3ae3-4b93-8332-b18db0035bca",
+              "name": "min",
+              "a": {
+                "templateId": 10079,
+                "name": "getBuffLayer",
+                "UID": "c9fec05f-fd6d-40ac-8599-ce9f56efd9ac",
+                "target": "TARGET",
+                "NodeID": 61
+              }
+            }
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10105,
+        "hitFrameFreezeId": 10014,
+        "elementType": 5,
+        "isPlayRadialBlur": true,
+        "impulseId": 5005,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt"
+      },
+      "UID": "974812eb-4ef9-4bbc-9406-13450a28a5b3",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 49
+    },
+    "67": {
+      "calcId": 12839900,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 67,
+      "UID": "4511f5dc-5ab8-4853-8f74-ac68af1f443d",
+      "name": "getParamByLuaConfig"
+    },
+    "60": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f821151c-67c4-403f-87c5-98319e217575",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10283_Skill_Ex02",
+      "NodeID": 60
+    },
+    "69": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "cffecab6-4d1f-4fb7-81ac-3c17bfddf704",
+      "effectId": "Eff_Parmon_10283_OutEx_Boom_01",
+      "speed": 1,
+      "NodeID": 69
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "BPName": "ability_12839900",
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+  "NodeID": 0,
+  "impulseId": 5005,
+  "acceleration": 0
+}

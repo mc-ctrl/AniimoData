@@ -1,0 +1,168 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "6c0f0645-963d-4427-85b6-8b6d09e6ce3c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "checkGroundLayer": true,
+      "faceToTarget": "TARGET",
+      "failedActionIds": [
+        22
+      ],
+      "NodeID": 23,
+      "UID": "cf4ea419-cd62-4dd5-8705-ca4fa553ee44",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": "OWNER",
+      "performer": "OWNER",
+      "name": "teleport",
+      "offsetXYZ": [
+        10,
+        0,
+        0
+      ]
+    },
+    "24": {
+      "checkGroundLayer": true,
+      "faceToTarget": "TARGET",
+      "failedActionIds": [
+        23
+      ],
+      "NodeID": 24,
+      "UID": "6686cd9d-c8fc-4388-be6c-6151fb93ee0a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": "POS_OR_TARGET",
+      "performer": "OWNER",
+      "name": "teleport",
+      "offsetXYZ": [
+        0,
+        0,
+        -10
+      ]
+    },
+    "14": {
+      "UID": "783a3f6d-4d06-4675-8045-340a03ca319e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 25,
+      "UID": "98a03866-db34-4579-84ed-ecd623023498"
+    },
+    "16": {
+      "UID": "295b41d5-25be-4134-b032-9922898bb142",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 16
+    },
+    "22": {
+      "checkGroundLayer": true,
+      "faceToTarget": "TARGET",
+      "performer": "OWNER",
+      "UID": "0a728b96-65c6-4114-afcb-3077e7f10b65",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": "OWNER",
+      "name": "teleport",
+      "offsetXYZ": [
+        -10,
+        0,
+        0
+      ],
+      "NodeID": 22
+    },
+    "18": {
+      "UID": "a4b920dc-7e46-4fb3-9ff8-251e7b694c90",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "12": {
+      "UID": "763b015e-47ab-4ab1-bd2a-ed9f81e55528",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 12
+    },
+    "19": {
+      "time": 0.7,
+      "rotateSpeed": 120,
+      "name": "rotateTo",
+      "UID": "dca32e7d-6650-4174-a5d9-7bb6686eb520",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 19
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.2,
+      "NodeID": 5,
+      "UID": "9d59150d-f0f2-45fc-ad49-acdd5cdda129"
+    },
+    "21": {
+      "UID": "5f5bbf15-c0ca-4194-beaf-5f9b48a73e2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_902131200",
+  "NodeID": 7,
+  "UID": "26bc3730-850c-44a2-96ab-c127e885acb4",
+  "eventIds": [
+    14,
+    18,
+    21,
+    5,
+    25
+  ],
+  "layer": "Base",
+  "length": 10
+}

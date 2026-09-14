@@ -1,0 +1,138 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119407",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "be04fa2c-8d4c-4807-8bf4-c60fb8b3873c",
+      "conditionIds": [
+        4,
+        9,
+        11
+      ],
+      "name": "conditionAnd",
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "7d692faf-f1c0-4955-99fa-b412094fc8bc",
+      "NodeID": 4,
+      "lValue": {
+        "key": "10194Hit01",
+        "name": "getCacheVal",
+        "UID": "93fb2ac8-7e2a-41ee-8014-d892b252b0a2",
+        "target": "OWNER",
+        "NodeID": 3
+      }
+    },
+    "6": {
+      "actionIds": [
+        12,
+        18
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "736dec9c-d3df-4f70-8c85-cd6f81b47c3d",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "7": {
+      "key": "10194Hit03",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "5d910e7f-8ca1-46d0-9b0b-a4e08214fe67",
+      "name": "registerCacheValChange"
+    },
+    "16": {
+      "key": "10194Hit02",
+      "name": "setCacheVal",
+      "UID": "b4dbada3-b04e-4f9d-a13e-b6b60db9fed1",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 16
+    },
+    "17": {
+      "key": "10194Hit03",
+      "name": "setCacheVal",
+      "UID": "36d89f55-8c06-425a-a66a-75c5226887de",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 17
+    },
+    "9": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "57d7b6f3-59c0-4dae-a497-d5b76aef127e",
+      "NodeID": 9,
+      "lValue": {
+        "key": "10194Hit02",
+        "name": "getCacheVal",
+        "UID": "60f78fbe-ae2b-4779-b912-d0f15b2f2d7a",
+        "target": "OWNER",
+        "NodeID": 8
+      }
+    },
+    "18": {
+      "NodeID": 18,
+      "from": 11940532,
+      "to": 11940533,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 10,
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "UID": "18fcc616-099a-449a-888e-be1f3b29eedf",
+      "notShowCountDown": false
+    },
+    "11": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "27286605-1bbf-492e-89fd-f4fe3b94e03f",
+      "NodeID": 11,
+      "lValue": {
+        "key": "10194Hit03",
+        "name": "getCacheVal",
+        "UID": "d38f3fef-a371-4520-b369-fcb8aef973de",
+        "target": "OWNER",
+        "NodeID": 10
+      }
+    },
+    "14": {
+      "key": "10194Hit01",
+      "name": "setCacheVal",
+      "UID": "c00c97a3-a349-4a3d-96fb-ae71d4285b2b",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 14
+    },
+    "12": {
+      "NodeID": 12,
+      "from": 11940530,
+      "to": 11940531,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 10,
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "UID": "b981f7b8-529b-425c-8882-8a1be8f15c3b",
+      "notShowCountDown": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14,
+    16,
+    17
+  ],
+  "onBuffStartIds": [
+    7
+  ]
+}

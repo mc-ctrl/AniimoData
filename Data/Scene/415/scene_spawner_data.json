@@ -1,0 +1,105 @@
+{
+  "76700582": {
+    "spawnType": 0,
+    "owner": "戴婧",
+    "sandboxType": 1,
+    "position": [
+      -269.26,
+      0.1,
+      16.61
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 76700580,
+    "id": 76700582,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          76700581,
+          76703450
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "76778208": {
+    "spawnType": 0,
+    "owner": "戴婧",
+    "sandboxType": 1,
+    "position": [
+      -291.85,
+      0.1,
+      21.84
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": false,
+    "sandboxId": 76778205,
+    "id": 76778208,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          76778207,
+          76953453,
+          76953454
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "77194687": {
+    "spawnType": 0,
+    "owner": "戴婧",
+    "sandboxType": 0,
+    "position": [
+      -310.48,
+      0.1,
+      18.92
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": false,
+    "sandboxId": 77194683,
+    "id": 77194687,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          77195488,
+          81532812
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

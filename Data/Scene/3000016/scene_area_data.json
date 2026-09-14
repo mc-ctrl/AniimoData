@@ -1,0 +1,73 @@
+{
+  "91220178": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaPoints": [
+      -709.37,
+      1379.05,
+      -705.25,
+      1382.18,
+      -698.17,
+      1383.82,
+      -692.78,
+      1379.83,
+      -689.2,
+      1375.75,
+      -694.84,
+      1370.47,
+      -698.7,
+      1366.8,
+      -706.41,
+      1366.69,
+      -709.4,
+      1369.37,
+      -710.26,
+      1373.88
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "areaAABB": [
+      -710.26,
+      1366.69,
+      -689.2,
+      1383.82
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "INFO_DISABLE_1_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 20,
+    "sandboxId": 81925476,
+    "position": [
+      -701.36,
+      150.4,
+      1373.77
+    ],
+    "pointType": 1,
+    "name": "区域_91220178",
+    "id": 91220178
+  }
+}

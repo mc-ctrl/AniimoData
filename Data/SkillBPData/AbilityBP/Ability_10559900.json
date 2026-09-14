@@ -1,0 +1,40 @@
+{
+  "cutSceneDuration": 2.76,
+  "preloadCutScenes": [
+    "$Parmon_10055_Skill_Ex_Timeline.prefab"
+  ],
+  "UID": "707cd5c0-714f-4a12-9efa-7ac14a5a1b33",
+  "abilityParamId": 11200410,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10559900001,
+      "name": "setCombatActionTimeline",
+      "UID": "7f041c8b-36be-435e-9578-7865f5863062",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 10,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10055_OutEx_Start_L",
+    "Eff_Parmon_10055_OutEx_Start_R"
+  ],
+  "searchRelation": 2,
+  "name": "御魂狼必杀技",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 10,
+  "searchTargetRangeDown": 10,
+  "desc": "",
+  "BPName": "ability_10559900",
+  "NodeID": 1
+}

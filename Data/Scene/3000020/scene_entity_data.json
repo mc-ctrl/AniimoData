@@ -1,0 +1,47 @@
+{
+  "90843323": {
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "attachId": 0,
+    "attachToSpawnerId": 0,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "bornEffect": "",
+    "chestSpawnerStaticId": 0,
+    "enableFixedScale": false,
+    "enable_elite_rate": false,
+    "isDynamicVehicle": true,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 22,
+    "isAuto": false,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "largeAreaId": 21500,
+    "levelAreaConfigId": 21500,
+    "overrideLvType": 6,
+    "owner": "guangling",
+    "position": [
+      201.59,
+      156.79,
+      978.04
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      -0.32,
+      0,
+      0.95
+    ],
+    "sandboxId": 90843321,
+    "sizeCoefficient": 1,
+    "spawnerId": 90843322,
+    "staticId": 90843323,
+    "type": "Vehicle",
+    "subType": "Bonfire",
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 322.77,
+    "stick": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_12130310",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10600641,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12130310001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Charge01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10174_Boss_Warning",
+    "Eff_Parmon_10213_Skill_Doppelganger_Attack01_liuli",
+    "Eff_Parmon_10213_Skill_Doppelganger_Bullet001",
+    "Eff_Parmon_10213_Skill_Hit_Liuli"
+  ],
+  "searchRelation": 2,
+  "name": "电近战普攻",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

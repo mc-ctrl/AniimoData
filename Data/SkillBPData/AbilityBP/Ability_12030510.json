@@ -1,0 +1,62 @@
+{
+  "BPName": "ability_12030510",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityIndicator": 1,
+  "abilityParamId": 11200193,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12030510001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 15,
+  "preloadAnims": [
+    "Skill_MaliciousZone"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_1020302_Skill_MaliciousZone",
+    "Eff_Hit_Dark_Blunt_Big",
+    "Eff_Parmon_10203_Skill_MaliciousZone_Hit",
+    "Eff_Parmon_1020302_Skill_MaliciousZone_Hit",
+    "Eff_Common_Buff_EnergyRegen_s"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      3,
+      1.6,
+      0.8
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "POS_OR_TARGET",
+    "maxNum": 0
+  },
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

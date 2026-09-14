@@ -1,0 +1,170 @@
+{
+  "1003": {
+    "name": 1628106197,
+    "image": "$UI_Quest_Bg1.png",
+    "conditionType": 1,
+    "type": 2,
+    "autoDownloadOrder": 2,
+    "order": 3,
+    "group": 1,
+    "conditionParam": [
+      110001
+    ],
+    "buttonName1": 1959773328
+  },
+  "1002": {
+    "name": 1665280728,
+    "image": "$UI_Quest_Bg1.png",
+    "conditionType": 1,
+    "type": 2,
+    "autoDownloadOrder": 1,
+    "order": 2,
+    "group": 1,
+    "conditionParam": [
+      100001
+    ],
+    "buttonName1": 1455363040
+  },
+  "3003": {
+    "name": 1834220581,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 3,
+    "type": 3,
+    "showInList": 1,
+    "conditionType": 2,
+    "order": 3,
+    "conditionParam": [
+      "ROGUELIKE"
+    ],
+    "canDelete": 1,
+    "choosableDownloadOrder": 5
+  },
+  "3005": {
+    "name": 2107245092,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 5,
+    "type": 3,
+    "showInList": 1,
+    "conditionType": 2,
+    "order": 1,
+    "conditionParam": [
+      "EVENT"
+    ],
+    "canDelete": 1,
+    "choosableDownloadOrder": 7
+  },
+  "3006": {
+    "type": 3,
+    "autoDownloadOrder": 4,
+    "name": 1988299981,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 5,
+    "order": 2,
+    "showInList": 1
+  },
+  "3001": {
+    "name": 1547212084,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 3,
+    "type": 3,
+    "showInList": 1,
+    "conditionType": 4,
+    "order": 1,
+    "conditionParam": [
+      200027
+    ],
+    "canDelete": 1,
+    "choosableDownloadOrder": 3
+  },
+  "4003": {
+    "type": 4,
+    "name": 2120879170,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 5,
+    "order": 3,
+    "showInList": 1
+  },
+  "4002": {
+    "type": 3,
+    "showInList": 1,
+    "name": 1286179311,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 4,
+    "order": 2,
+    "choosableDownloadOrder": 2
+  },
+  "2001": {
+    "name": 1294382150,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 2,
+    "type": 2,
+    "conditionType": 3,
+    "order": 1,
+    "autoDownloadOrder": 3,
+    "buttonName1": 1977859046,
+    "buttonName2": 1114143287,
+    "conditionParam": [
+      124423
+    ],
+    "showInList": 1
+  },
+  "4001": {
+    "type": 4,
+    "showInList": 1,
+    "name": 1575299146,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 4,
+    "order": 1,
+    "choosableDownloadOrder": 1
+  },
+  "3004": {
+    "name": 1097146438,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 3,
+    "type": 3,
+    "showInList": 1,
+    "conditionType": 2,
+    "order": 4,
+    "conditionParam": [
+      "HOMELAND"
+    ],
+    "canDelete": 1,
+    "choosableDownloadOrder": 6
+  },
+  "1001": {
+    "name": 1172335798,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 1,
+    "type": 1,
+    "order": 1
+  },
+  "2002": {
+    "name": 1254149753,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 2,
+    "type": 2,
+    "conditionType": 3,
+    "order": 1,
+    "autoDownloadOrder": 3,
+    "buttonName1": 1416949112,
+    "buttonName2": 1948704415,
+    "conditionParam": [
+      124423
+    ],
+    "showInList": 1
+  },
+  "3002": {
+    "name": 1400184476,
+    "image": "$UI_Quest_Bg1.png",
+    "group": 3,
+    "type": 3,
+    "showInList": 1,
+    "conditionType": 2,
+    "order": 2,
+    "conditionParam": [
+      "GRABEGGS"
+    ],
+    "canDelete": 1,
+    "choosableDownloadOrder": 4
+  }
+}

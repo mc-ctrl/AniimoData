@@ -1,0 +1,169 @@
+{
+  "56736269": {
+    "graphId": 56736269,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 3,
+        "sourcePortName": "state",
+        "targetNode": 4,
+        "targetPortName": "Value"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "Out",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "2",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 5,
+        "sourcePortName": "3",
+        "targetNode": 6,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "4241d23e0c6c4bfd437e92361cb5514b",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {
+          "LevelItemId": 63471345,
+          "DoOnce": false,
+          "fieldName": "state",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "state"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "424a2fa0-1abd-40f3-87b7-be7b71fbccc4"
+      },
+      "4": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchIntNode",
+        "startInt": 0,
+        "uid": "39b273ff-d252-45fc-b80c-e1b521a80fdc",
+        "endInt": 2
+      },
+      "6": {
+        "_inputPortValues": {
+          "RewardPosition": [
+            0,
+            0,
+            0
+          ],
+          "Success": true
+        },
+        "_outputPortValues": {},
+        "className": "FinishDungeonNode",
+        "uid": "84862801-48b3-4db3-bc7b-725907031725"
+      },
+      "7": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "DungeonDoActionNode",
+        "actions": [
+          {
+            "eventName": "activateLeylineTreePoint",
+            "eventParams": [
+              606082451,
+              0,
+              0
+            ]
+          }
+        ],
+        "uid": "f276b57d-6ca8-4b4c-a873-a9bdcdabb9c7"
+      },
+      "8": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "DungeonDoActionNode",
+        "actions": [
+          {
+            "eventName": "setMarkStateClose",
+            "eventParams": [
+              3000,
+              59502374
+            ]
+          }
+        ],
+        "uid": "aa363cda-3bf4-4347-b72d-910899104b66"
+      },
+      "5": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "dd4de718-25e6-4eb3-b1ce-6f520f127062",
+        "portCount": 3
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "a963a01f-8319-402d-ab1f-4ae458f9f696"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "ee5b7f94-516a-4ef5-849b-c87940eb8a52",
+        "portCount": 5
+      },
+      "2": {
+        "_inputPortValues": {
+          "DoOnce": true,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "DungeonNode",
+        "eventParams": {
+          "spawnerId": 0
+        },
+        "uid": "9e9a620d-06f8-4ae2-9ce3-f92468804830",
+        "postActions": {},
+        "preActions": [
+          {
+            "eventName": "fbForceTmpPetTeam",
+            "eventParams": [
+              99999,
+              {}
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

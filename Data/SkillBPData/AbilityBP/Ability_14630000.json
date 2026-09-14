@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_14630000",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 16100000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14630000001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Slash",
+    "Eff_Parmon_10463_Attack_01_01"
+  ],
+  "searchRelation": 2,
+  "name": "冰普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    14630001,
+    14630002,
+    14630003
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,144 @@
+{
+  "91059489": {
+    "owner": "周晓晨",
+    "chunk": 1018852,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "sightLevel": 1024,
+    "spawners": {},
+    "activeOnInit": 1,
+    "id": 91059489,
+    "markIconSpawnerId": 0,
+    "name": "全局_其他关卡_草板块NPC对决",
+    "position": [
+      -10.6,
+      44.48,
+      106.89
+    ]
+  },
+  "91326472": {
+    "owner": "刘丰槊",
+    "chunk": 1025020,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91327002,
+    "levelItems": {
+      "91327468": {
+        "majorCompId": 0,
+        "owner": "刘丰槊",
+        "EditorName": "P_NoLeafFan_BearCave (1)",
+        "position": [
+          373.29,
+          126.87,
+          1609.41
+        ],
+        "rotation": [
+          9.12,
+          90,
+          0
+        ],
+        "id": 91327468,
+        "componentsInfo": {
+          "42662676": {
+            "power": 50
+          }
+        },
+        "configId": 581,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          2,
+          9
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "全局_利用霸体_横风环境",
+    "spawners": {},
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/30001/Sandbox_91326472_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91326472,
+    "markIconSpawnerId": 0,
+    "position": [
+      375.24,
+      121.78,
+      1607.81
+    ]
+  },
+  "91327834": {
+    "owner": "刘丰槊",
+    "position": [
+      364.62,
+      102.8,
+      1336.24
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91327835": {
+        "majorCompId": 0,
+        "owner": "刘丰槊",
+        "EditorName": "P_NoLeafFan_BearCave (1)",
+        "position": [
+          355.24,
+          113.13,
+          1312.2
+        ],
+        "rotation": [
+          1.27,
+          118.18,
+          8.79
+        ],
+        "id": 91327835,
+        "componentsInfo": {
+          "42662676": {
+            "power": 50
+          }
+        },
+        "configId": 581,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1.67,
+          2,
+          3.59
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "全局_巨物爱好者_横风环境",
+    "spawners": {},
+    "activeOnInit": 1,
+    "lastModifiedBy": "刘丰槊",
+    "sightLevel": 128,
+    "id": 91327834,
+    "markIconSpawnerId": 0,
+    "chunk": 1027065
+  }
+}

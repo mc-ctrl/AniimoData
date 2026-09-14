@@ -1,0 +1,269 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 37,
+      "UID": "ba55823f-9a41-4453-ad0e-492dddc71678"
+    },
+    "39": {
+      "UID": "082318fd-1949-45ab-9c1c-8810c11ae3f2",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "1603a8d1-60e4-4288-8359-56125e3e73b9",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 40
+    },
+    "35": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "3968958e-659f-4ceb-8fbb-dc6362c4c138",
+      "target": "OWNER",
+      "val": {
+        "UID": "12679ed6-758a-42bc-b7fb-03cdb54a5148",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 34
+      },
+      "NodeID": 35
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.83,
+      "NodeID": 44,
+      "UID": "0fd7759a-9e82-4486-8550-d85b755a2a51"
+    },
+    "31": {
+      "UID": "2532ac50-aaa8-4baf-9def-863c6e01bc01",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          29,
+          40
+        ]
+      },
+      "NodeID": 31
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "29ccf5c2-aa17-4253-a60a-86ca73657260",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_fireball_release",
+      "NodeID": 21
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 22,
+      "UID": "e1f5aea4-adb4-4ead-9be0-a567fe4db427"
+    },
+    "4": {
+      "UID": "eb4cd78d-26d2-483b-9a15-b93b3591aaac",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          32
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "name": "getTargetOffsetPos",
+      "UID": "304c87d4-f39d-4696-bf6a-34e96efd0615",
+      "target": "OWNER",
+      "offset": [
+        0,
+        -6,
+        6
+      ],
+      "NodeID": 45
+    },
+    "14": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 800230500001,
+      "name": "createProjectile",
+      "UID": "85b65007-0ba0-4235-be7e-112b33a6b066",
+      "rotation": "ToTarget",
+      "pos": {
+        "isRootDir": true,
+        "NodeID": 33,
+        "UID": "17e2bb7a-bf86-4c73-b3c0-2f0b45d264ff",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone M Tongue 02"
+      },
+      "projectileType": "Free3d",
+      "targetPos": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "97b5c069-d357-4590-9e90-549bd33a4f2c",
+        "target": "OWNER",
+        "NodeID": 38
+      },
+      "NodeID": 14,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "46": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "f2522ab1-0fa5-4f7f-bba1-8ebc497f3d76",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "304c87d4-f39d-4696-bf6a-34e96efd0615",
+        "target": "OWNER",
+        "offset": [
+          0,
+          -6,
+          6
+        ],
+        "NodeID": 45
+      },
+      "NodeID": 46
+    },
+    "47": {
+      "UID": "86db2244-886c-4306-93bf-9bd2689366cb",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 47
+    },
+    "25": {
+      "UID": "cc359573-2677-4e16-a40e-b4462368210b",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.15,
+      "NodeID": 16,
+      "UID": "5297968f-dc63-44e0-a044-cd200aa1b23e"
+    },
+    "27": {
+      "UID": "65916c54-2f54-4378-bab5-e9c5ae6d6bb6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25,
+          39
+        ]
+      },
+      "NodeID": 27
+    },
+    "43": {
+      "UID": "ffa2bf6a-c697-4833-8006-2a84d2144fa2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 43
+    },
+    "29": {
+      "UID": "0b5b67a6-43ef-45a1-abd5-18ba5059cd8e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 29
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4f589c34-f0a7-47e9-b182-559f03db838d",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Monster_Fireball"
+    },
+    "32": {
+      "time": 0.8,
+      "rotateSpeed": 180,
+      "name": "rotateTo",
+      "UID": "252f61d1-0b48-46c8-aa0a-1177a3b3afa7",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 32
+    },
+    "33": {
+      "isRootDir": true,
+      "NodeID": 33,
+      "UID": "17e2bb7a-bf86-4c73-b3c0-2f0b45d264ff",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "34": {
+      "UID": "12679ed6-758a-42bc-b7fb-03cdb54a5148",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 34
+    },
+    "36": {
+      "actionIds": [
+        35
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "4e21d31e-5685-4913-a2df-dee0770e4375",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        46
+      ],
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_800230500",
+  "NodeID": 6,
+  "UID": "50133a16-e2d0-410a-b84d-9096212a4ede",
+  "eventIds": [
+    27,
+    31,
+    4,
+    16,
+    22,
+    37,
+    44
+  ],
+  "layer": "Base",
+  "length": 3.03
+}

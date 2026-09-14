@@ -1,0 +1,471 @@
+{
+  "1012": {
+    "0": {
+      "toolsIcon": "$UI_Icon_Explore.png",
+      "name": "抢蛋区名称显示"
+    }
+  },
+  "1013": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_TreasureChest.png",
+      "icon": "$UI_Icon_MarkPoint_TreasureChest.png",
+      "name": "珍稀宝箱"
+    }
+  },
+  "1014": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_Lair.png",
+      "icon": "$Img_Map_Mark_GrabEgg_Lair.png",
+      "name": "蛋巢"
+    }
+  },
+  "1015": {
+    "0": {
+      "toolsIcon": "$UI_Icon_Explore.png",
+      "name": "地宫预留"
+    }
+  },
+  "1016": {
+    "0": {
+      "toolsIcon": "$UI_Icon_Explore.png",
+      "name": "地宫预留"
+    }
+  },
+  "1996": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_Uderground_Key_Blue.png",
+      "icon": "$Img_Map_Mark_Uderground_Key_Blue.png",
+      "name": "蓝钥匙房"
+    }
+  },
+  "1997": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_Uderground_Key_Purple.png",
+      "icon": "$Img_Map_Mark_Uderground_Key_Purple.png",
+      "name": "紫钥匙房"
+    }
+  },
+  "1998": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_Uderground_Key_Orange.png",
+      "icon": "$Img_Map_Mark_Uderground_Key_Orange.png",
+      "name": "金钥匙房"
+    }
+  },
+  "1999": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_Icon_Intrigue.png",
+      "icon": "$Img_Map_Mark_GrabEgg_Icon_Intrigue.png",
+      "name": "限时挑战"
+    }
+  },
+  "10101": {
+    "0": {
+      "iconUnknow": "$UI_Img_Bg_Map_Mark_Pet_Unknown.png",
+      "toolsIcon": "$UI_Icon_MapFloat_Transmit.png",
+      "name": "神兽巢穴"
+    }
+  },
+  "31": {
+    "0": {
+      "name": "生态溯源",
+      "icon": "$UI_Icon_MarkPoint_DailySurvey.png"
+    }
+  },
+  "2000": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_CampingCar_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_CampingCar.png",
+      "name": "房车营地"
+    }
+  },
+  "20": {
+    "0": {
+      "toolsIcon": "$UI_Icon_MarkPoint_Transmit.png",
+      "name": "传送点"
+    }
+  },
+  "21": {
+    "0": {
+      "name": "队友",
+      "icon": "$UI_Icon_Map_Ally.png"
+    }
+  },
+  "13": {
+    "0": {
+      "toolsIcon": "$UI_Icon_Explore.png",
+      "name": "小区块名称显示"
+    }
+  },
+  "120": {
+    "0": {
+      "iconUnknow": "$UI_Icon_Mark01.png",
+      "icon": "$UI_Icon_Mark01.png",
+      "name": "玩家标记点"
+    }
+  },
+  "10306": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_RuinsGroup_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_RuinsGroup.png",
+      "name": "大型遗迹"
+    }
+  },
+  "16": {
+    "0": {
+      "toolsIcon": "$UI_icon_mythlingkeeper.png",
+      "name": "NPC"
+    }
+  },
+  "10202": {
+    "0": {
+      "name": "裂隙调查",
+      "icon": "$UI_Icon_MarkPoint_BossCatch.png"
+    }
+  },
+  "10400": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_ThemeDecryption_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_ThemeDecryption.png",
+      "name": "主题解谜"
+    }
+  },
+  "30": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_DailySurvey.png",
+      "icon": "$UI_Icon_MarkPoint_DailySurvey.png",
+      "name": "追踪点"
+    }
+  },
+  "32": {
+    "0": {
+      "name": "传送台",
+      "icon": "$UI_Icon_MarkPoint_GreatPortal.png"
+    }
+  },
+  "33": {
+    "0": {
+      "name": "村庄",
+      "icon": "$UI_Icon_MarkPoint_Village.png"
+    }
+  },
+  "1000": {
+    "0": {
+      "name": "传送阵",
+      "icon": "$Img_Map_Mark_GrabEgg_Extraction.png"
+    }
+  },
+  "1018": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_Poi_Double_Monster.png",
+      "icon": "$Img_Map_Mark_GrabEgg_Poi_Double_Monster.png",
+      "name": "金币怪"
+    }
+  },
+  "1019": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_Icon_Fade.png",
+      "icon": "$Img_Map_Mark_GrabEgg_Icon_Fade.png",
+      "name": "伊莫蛋"
+    }
+  },
+  "1020": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_Icon_Rainbow.png",
+      "icon": "$Img_Map_Mark_GrabEgg_Icon_Rainbow.png",
+      "name": "珍稀伊莫蛋"
+    }
+  },
+  "10303": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Habitat_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_Habitat.png",
+      "name": "生态栖息地(B级)"
+    }
+  },
+  "1022": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_HugeEgg_HEggShine.png",
+      "icon": "$Img_Map_Mark_GrabEgg_HugeEgg_HEggShine.png",
+      "name": "金色极巨蛋"
+    }
+  },
+  "10304": {
+    "0": {
+      "iconUnknow": "$UI_Icon_Bossbg_Unknown.png",
+      "icon": "$UI_Icon_Bossbg.png",
+      "name": "BOSS区"
+    }
+  },
+  "10401": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_RuneDecryption_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_RuneDecryption.png",
+      "name": "辉耀印记"
+    }
+  },
+  "10402": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_VersatileDecryption_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_VersatileDecryption.png",
+      "name": "魔弗灵的回忆"
+    }
+  },
+  "10403": {
+    "0": {
+      "iconUnknow": "$UI_UI_Icon_MarkPoint_EcologyLimit_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_EcologyLimit.png",
+      "name": "生态限时挑战"
+    }
+  },
+  "10408": {
+    "0": {
+      "name": "洞穴入口",
+      "icon": "$UI_Icon_MarkPoint_Cave.png"
+    }
+  },
+  "1": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Transmit_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_Transmit.png",
+      "name": "传送台"
+    }
+  },
+  "10405": {
+    "0": {
+      "toolsIcon": "$UI_Icon_MapFloat_Camp.png",
+      "name": "关键生态点"
+    }
+  },
+  "1002": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_HugeEgg_HEggShine.png",
+      "icon": "$Img_Map_Mark_GrabEgg_HugeEgg_HEggShine.png",
+      "name": "极巨黑耀蛋"
+    }
+  },
+  "10407": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Camp_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_Camp.png",
+      "name": "ARK营地"
+    }
+  },
+  "10410": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Tree5.png",
+      "icon": "$UI_Icon_MarkPoint_Tree3.png",
+      "name": "大量发生"
+    }
+  },
+  "10411": {
+    "0": {
+      "iconUnknow": "$UI_Img_Bg_Map_Mark_Pet_Unknown.png",
+      "icon": "$UI_Img_Bg_Map_Mark_Pet.png",
+      "name": "生态栖息地(B级)"
+    }
+  },
+  "10412": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_HelpAniimo.png",
+      "icon": "$UI_Icon_MarkPoint_HelpAniimo.png",
+      "name": "帮帮伊莫"
+    }
+  },
+  "10413": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Challenge_TimeLimited_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_Challenge_TimeLimited.png",
+      "name": "逃脱的琥珀"
+    }
+  },
+  "10504": {
+    "0": {
+      "name": "宝箱",
+      "icon": "$UI_Icon_MarkPoint_Chest.png"
+    }
+  },
+  "10414": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Challenge_TimeLimited_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_Challenge_TimeLimited.png",
+      "name": "辉耀能量收集"
+    }
+  },
+  "10511": {
+    "0": {
+      "name": "NPC对决",
+      "icon": "$Img_Map_Mark_BattleRoom_Icon_Twice.png"
+    }
+  },
+  "10505": {
+    "0": {
+      "name": "辉耀琥珀",
+      "icon": "$UI_Icon_MarkPoint_MythicalAnimals.png"
+    }
+  },
+  "10506": {
+    "0": {
+      "name": "宝箱",
+      "icon": "$UI_Icon_MarkPoint_Chest.png"
+    }
+  },
+  "10510": {
+    "0": {
+      "name": "NPC对决",
+      "icon": "$Img_Map_Mark_BattleRoom_Npc_Normal.png"
+    }
+  },
+  "10600": {
+    "0": {
+      "name": "新洞穴入口",
+      "icon": "$UI_Icon_MarkPoint_Cave.png"
+    }
+  },
+  "100": {
+    "0": {
+      "iconUnknow": "$UI_Hud_Icon_MainLine_Grayed_Unknow.png",
+      "icon": "$UI_Hud_Icon_MainLine_Grayed.png",
+      "name": "任务标识"
+    }
+  },
+  "1017": {
+    "0": {
+      "name": "地宫预留"
+    }
+  },
+  "10406": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Transmit_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_Transmit.png",
+      "name": "地脉晶簇"
+    }
+  },
+  "1001": {
+    "0": {
+      "name": "登陆点",
+      "icon": "$Img_Map_Mark_GrabEgg_Spawn.png"
+    }
+  },
+  "10301": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_LeylineTree_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_LeylineTree.png",
+      "name": "地脉之树(开图点)"
+    }
+  },
+  "29": {
+    "0": {
+      "name": "追踪点",
+      "icon": "$UI_Icon_Mark01.png"
+    }
+  },
+  "104": {
+    "0": {
+      "name": "标记分享",
+      "icon": "$UI_Icon_MarkPoint_MarkShare.png"
+    }
+  },
+  "121": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Particulars.png",
+      "icon": "$UI_Icon_MarkPoint_Particulars.png",
+      "name": "地脉丰盈大量发生"
+    }
+  },
+  "35": {
+    "0": {
+      "name": "追踪点",
+      "icon": "$UI_Icon_MarkPoint_ArkPartyTask.png"
+    }
+  },
+  "109": {
+    "0": {
+      "name": "线索",
+      "icon": "$UI_Hud_Icon_Clue_Green.png"
+    }
+  },
+  "1003": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_Transmitter_NotActive.png",
+      "icon": "$Img_Map_Mark_GrabEgg_Transmitter_Active.png",
+      "name": "传送器"
+    }
+  },
+  "27": {
+    "0": {
+      "name": "追踪点",
+      "icon": "$UI_Hud_Icon_SpecialTraining_Receive.png"
+    }
+  },
+  "1007": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_EggBoat.png",
+      "icon": "$Img_Map_Mark_GrabEgg_EggBoat.png",
+      "name": "蛋船"
+    }
+  },
+  "10305": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_Temple_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_Temple.png",
+      "name": "地宫"
+    }
+  },
+  "1008": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_Uderground_Begin.png",
+      "icon": "$Img_Map_Mark_Uderground_Begin.png",
+      "name": "失落地宫偏门"
+    }
+  },
+  "1021": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_Poi_Double_Monster.png",
+      "icon": "$Img_Map_Mark_GrabEgg_Poi_Double_Monster.png",
+      "name": "金币使者出没"
+    }
+  },
+  "1009": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_Uderground_Front_Door.png",
+      "icon": "$Img_Map_Mark_Uderground_Front_Door.png",
+      "name": "失落地宫正门"
+    }
+  },
+  "10201": {
+    "0": {
+      "iconUnknow": "$UI_Img_Bg_Map_Mark_Pet_Unknown.png",
+      "toolsIcon": "$UI_icon_homekeeper.png",
+      "name": "使徒巢穴"
+    }
+  },
+  "1010": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_GrabEgg_HugeEgg_Finish.png",
+      "icon": "$Img_Map_Mark_GrabEgg_HugeEgg_Hatching.png",
+      "name": "脉源之茧"
+    }
+  },
+  "10404": {
+    "0": {
+      "iconUnknow": "$UI_Bg_Head_Unknown.png",
+      "icon": "$UI_Bg_Head.png",
+      "name": "野外头目"
+    }
+  },
+  "1011": {
+    "0": {
+      "iconUnknow": "$Img_Map_Mark_Uderground_Key.png",
+      "icon": "$Img_Map_Mark_Uderground_Key.png",
+      "name": "钥匙门"
+    }
+  },
+  "10409": {
+    "0": {
+      "iconUnknow": "$UI_Icon_MarkPoint_TotemPillar_Unknown.png",
+      "icon": "$UI_Icon_MarkPoint_TotemPillar.png",
+      "name": "神灵图腾"
+    }
+  }
+}

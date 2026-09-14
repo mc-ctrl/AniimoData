@@ -1,0 +1,44 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119106",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    2
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2783e3c1-d3e5-4249-bc6b-155f8bed864d",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Mimicry_Idle"
+    },
+    "5": {
+      "UID": "6af28549-e1c6-42f5-80a9-43d711a17e91",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8e3bf692-2e7f-46fb-afaa-624492b51cca",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_Loop",
+      "speed": 3,
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": [
+    3,
+    5,
+    6
+  ]
+}

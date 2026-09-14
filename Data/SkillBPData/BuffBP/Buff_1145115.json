@@ -1,0 +1,36 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145115",
+  "name": "花舞鸢尾舞力值特性buff",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "草地上每次造成技能伤害积累1点舞力值，续满后下一次释放技能时提高100%魔攻持续2s",
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "delay",
+      "duration": 2,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "9c2f86e5-1522-46ca-a13b-7c8706ba540f",
+      "name": "addTimer"
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 1145114,
+      "NodeID": 2,
+      "UID": "be62105b-2f26-4eb0-bd0b-66e36f4c265c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

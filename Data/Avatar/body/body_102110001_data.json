@@ -1,0 +1,218 @@
+{
+  "-1581420143": {
+    "key": "-1581420143",
+    "order": 1,
+    "originDisplayName": "手臂",
+    "displayName": 33666095,
+    "kindList": {
+      "243374363": {
+        "key": "243374363",
+        "order": 3,
+        "originDisplayName": "手掌",
+        "displayName": 35837678,
+        "reactionList": [
+          {
+            "key": 102,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 36891094
+            }
+          }
+        ]
+      },
+      "-1581414875": {
+        "key": "-1581414875",
+        "order": 2,
+        "originDisplayName": "大臂",
+        "displayName": 45542577,
+        "reactionList": [
+          {
+            "key": 10,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 57556085
+            }
+          },
+          {
+            "key": 11,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 42994452
+            }
+          }
+        ]
+      },
+      "-1581415603": {
+        "key": "-1581415603",
+        "order": 1,
+        "originDisplayName": "小臂",
+        "displayName": 66147080,
+        "reactionList": [
+          {
+            "key": 20,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 44847424
+            }
+          },
+          {
+            "key": 21,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 52649991
+            }
+          }
+        ]
+      }
+    }
+  },
+  "-1004600355": {
+    "key": "-1004600355",
+    "order": 3,
+    "originDisplayName": "躯干",
+    "displayName": 37693203,
+    "kindList": {
+      "-158090554": {
+        "key": "-158090554",
+        "order": 3,
+        "originDisplayName": "臀部",
+        "displayName": 59143011,
+        "reactionList": [
+          {
+            "key": 72,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 55890675
+            }
+          },
+          {
+            "key": 81,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 37976086
+            }
+          }
+        ]
+      },
+      "-1863786843": {
+        "key": "-1863786843",
+        "order": 0,
+        "originDisplayName": "肩膀",
+        "displayName": 39513264,
+        "reactionList": [
+          {
+            "key": 110,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 38715129
+            }
+          }
+        ]
+      },
+      "-158090306": {
+        "key": "-158090306",
+        "order": 1,
+        "originDisplayName": "胸部",
+        "displayName": 47324237,
+        "reactionList": [
+          {
+            "key": 62,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 36550519
+            }
+          }
+        ]
+      },
+      "-158090442": {
+        "key": "-158090442",
+        "order": 2,
+        "originDisplayName": "腰部",
+        "displayName": 47472474,
+        "reactionList": [
+          {
+            "key": 31,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 36525930
+            }
+          }
+        ]
+      }
+    }
+  },
+  "-158090437": {
+    "key": "-158090437",
+    "order": 4,
+    "originDisplayName": "腿部",
+    "displayName": 66189498,
+    "kindList": {
+      "-1870388092": {
+        "key": "-1870388092",
+        "order": 2,
+        "originDisplayName": "大腿",
+        "displayName": 38535701,
+        "reactionList": [
+          {
+            "key": 41,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 56751295
+            }
+          }
+        ]
+      },
+      "-1870388820": {
+        "key": "-1870388820",
+        "order": 1,
+        "originDisplayName": "小腿",
+        "displayName": 52386096,
+        "reactionList": [
+          {
+            "key": 51,
+            "operation": {
+              "opName": -1,
+              "tIndex": 0,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 66760364
+            }
+          }
+        ]
+      }
+    }
+  }
+}

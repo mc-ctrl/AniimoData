@@ -1,0 +1,266 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114306",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    17
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "key": "TE_Elec",
+      "name": "setCacheVal",
+      "UID": "d938216c-7780-43fe-8f8c-7cd60f3e6c84",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 37
+    },
+    "38": {
+      "delay": 0.2,
+      "interval": 1,
+      "UID": "db7b54f7-f5e9-4c48-afb8-0db81cbe24f4",
+      "name": "buffStartThink",
+      "NodeID": 38
+    },
+    "40": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "14422581-1648-4304-b5b9-b383cc797bb3",
+      "NodeID": 40,
+      "lValue": {
+        "key": "TE_Elec",
+        "name": "getCacheVal",
+        "UID": "7965baaa-ba9b-4a47-abfe-af6e63b885d0",
+        "target": "OWNER",
+        "NodeID": 39
+      }
+    },
+    "42": {
+      "name": "stopEffectStr",
+      "UID": "4da19de4-ba3e-488c-a1b5-794255bd5adc",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "35": {
+      "key": "TE_Elec",
+      "name": "setCacheVal",
+      "UID": "04e326e9-f589-4aa4-8ef5-4eec58e9bd87",
+      "target": "OWNER",
+      "val": {
+        "rValue": -1,
+        "name": "add",
+        "UID": "3e6d0039-2fb7-49a0-8494-58507418ffd5",
+        "NodeID": 34,
+        "lValue": {
+          "key": "TE_Elec",
+          "name": "getCacheVal",
+          "UID": "74f297a7-c4d6-424d-ad90-d3a1aa1a932d",
+          "target": "OWNER",
+          "NodeID": 33
+        }
+      },
+      "NodeID": 35
+    },
+    "31": {
+      "key": "TE_Elec",
+      "name": "setCacheVal",
+      "UID": "9a29f228-d67c-473f-be66-fc020ec54de6",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "1e1a9783-b0ef-4ec1-8ef7-9c842240814c",
+        "NodeID": 30,
+        "lValue": {
+          "key": "TE_Elec",
+          "name": "getCacheVal",
+          "UID": "e3cc0402-0dd9-414b-8a32-366c0ac6ca7a",
+          "target": "OWNER",
+          "NodeID": 29
+        }
+      },
+      "NodeID": 31
+    },
+    "20": {
+      "name": "hasEntityTag",
+      "UID": "6731dc26-1294-459f-aaf1-366147c689d5",
+      "target": "TrapTarget",
+      "NodeID": 20,
+      "entityTag": "TE_Cre_Elec"
+    },
+    "12": {
+      "UID": "36e5073f-9201-4603-ac4e-6a274911de03",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 12
+    },
+    "13": {
+      "actionIds": [
+        47,
+        45,
+        25,
+        28
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "cb74b505-15f5-4d79-be62-e6e3bcb4553d",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "24": {
+      "actionIds": [
+        23
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "0a8e98ab-0bd5-435b-82b2-ac4ddeb72e4d",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "347e04b8-b201-4746-a82f-8362653e0ac1",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "46": {
+      "UID": "d49f88f0-f4ac-4c46-8ab8-443d20288bde",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 46
+    },
+    "15": {
+      "UID": "300511d7-1a23-47ed-b60f-9e39582bed52",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "873b716a-5886-470f-82b6-bfaae8c20621",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "47": {
+      "name": "stopEffectStr",
+      "UID": "858c4604-05c6-4e95-9f5f-efebc112079f",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "3ec9e8d4-5cad-4941-be7a-bc4f4dce6692",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "actionIds": [
+        15,
+        24
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "c55dbe66-af03-4cc6-9775-ed589e7d1e87",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 17
+    },
+    "45": {
+      "isClearOld": true,
+      "UID": "0d35855c-094e-4304-8c53-b7766b80a444",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 45,
+      "calcInfoByLuaConfig": {
+        "id": 2114306,
+        "dmg_electric_add_ratio": "param0",
+        "type": 1
+      }
+    },
+    "18": {
+      "buffId": 2114306,
+      "name": "removeBuff",
+      "UID": "14552300-212f-4d31-9027-bafbaece2a4f",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "21": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 21,
+      "UID": "3e6a34ff-7551-4cf3-8ab0-b23939d57a53",
+      "enterTrapActionIds": [
+        31
+      ],
+      "relation": 4,
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        35
+      ],
+      "shapeArgs": [
+        2
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "prefFilterActionIds": [
+        20
+      ],
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "23": {
+      "buffId": 2114306,
+      "name": "removeBuff",
+      "UID": "b70b0917-c063-4346-bb58-81646298b872",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "28": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        27
+      ],
+      "NodeID": 28,
+      "UID": "c825600a-f245-4d8c-b514-bd4741461ad1",
+      "name": "addTimer"
+    },
+    "36": {
+      "key": "electric",
+      "name": "setCacheVal",
+      "UID": "47df2f35-2329-4f56-9887-805d7a3c3e9b",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    42,
+    46
+  ],
+  "onBuffStartIds": [
+    36,
+    37,
+    21,
+    38
+  ]
+}

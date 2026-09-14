@@ -1,0 +1,83 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004040",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "f5dcdcbd-54cc-4821-a41f-1787a418a3a0",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "name": "actOnTargets",
+      "UID": "ff40d5ae-22d5-4466-a65c-4586af409925",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            50,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 4
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "9f994d5f-4652-4115-978a-7556576e649d",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "7": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 4004041,
+      "NodeID": 7,
+      "UID": "70294313-d791-4b81-9497-2644082aa12c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "buffId": 4004040,
+      "name": "removeBuff",
+      "UID": "5861bd7a-52ad-47bd-a261-367485332823",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    5
+  ]
+}

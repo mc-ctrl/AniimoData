@@ -1,0 +1,40 @@
+[
+  {
+    "groupList": [
+      [
+        1000,
+        1
+      ],
+      [
+        1003,
+        1
+      ]
+    ],
+    "passNumber": 10,
+    "settleTime": 5,
+    "stateRight": "Happy",
+    "stateWrong": "Sad",
+    "passReward": 20001,
+    "quickReward": 10002,
+    "rightReward": 10001,
+    "readyTime": 3,
+    "timeline": "100",
+    "random": 1,
+    "answerTime": 20
+  },
+  {
+    "timeline": "101",
+    "groupList": [
+      [
+        1000,
+        1
+      ]
+    ],
+    "passNumber": 8,
+    "settleTime": 5,
+    "readyTime": 3,
+    "stateRight": "Happy",
+    "stateWrong": "Sad",
+    "answerTime": 20
+  }
+]

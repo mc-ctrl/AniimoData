@@ -1,0 +1,91 @@
+{
+  "angularIncreaseDuration": 0.5,
+  "BPName": "ability_15710000",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10231_Attack01_Bullet",
+  "enableMaxAngleTime": 0.5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "27": {
+      "UID": "2078acc4-fb23-4f62-b77f-27cd2f1b6218",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 27
+    },
+    "13": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0,
+        "instant_dmg_rate_v": 0.35
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 9,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      },
+      "UID": "2c7e39a3-b660-439a-a7ab-d4c33c10228e",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 13
+    },
+    "43": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.35
+      },
+      "name": "calcResult",
+      "UID": "752ba6cf-2eab-4c63-bba6-47609b55338b",
+      "target": "CASTER",
+      "NodeID": 43
+    },
+    "25": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a122d866-cb94-46d0-a098-5ce4664841f0",
+      "effectId": "Eff_Hit_Wind_Blunt",
+      "speed": 1.01,
+      "NodeID": 25
+    },
+    "28": {
+      "actionIds": [
+        43
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "3bc3626c-de97-4267-9ea4-ddef2dd30b03",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 25,
+  "onProjectileFinishIds": [
+    25
+  ],
+  "onProjectileHitIds": [
+    13,
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "calcResultNodeId": 13,
+  "tickInterval": 0,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 0.8,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

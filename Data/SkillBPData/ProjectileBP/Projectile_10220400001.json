@@ -1,0 +1,104 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 11,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    13,
+    20,
+    28
+  ],
+  "nodeMap": {
+    "28": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.84
+      },
+      "name": "calcResult",
+      "UID": "7d783df9-55e0-4aa9-9a18-d31f46e6398c",
+      "target": "CASTER",
+      "NodeID": 28
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 11,
+      "NodeID": 13,
+      "UID": "1207d800-b8ea-46e7-a2a3-13c2e4760a3c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        11
+      ]
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "cc307252-cf0e-4c04-9f13-a926fdf348d5",
+      "isAbilityEndRemove": false,
+      "soundId": "battle_projectilehit_electric_h",
+      "NodeID": 20
+    },
+    "11": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 3000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002
+      },
+      "UID": "5a9634be-07da-4762-be13-473784e91ac7",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 11
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "BPName": "ability_10220400",
+  "tickInterval": 0.05,
+  "effectId": "Eff_Parmon_10023_Fly_LightBreath_Bullet",
+  "startSleepTime": 0,
+  "defaultHitSoundType": "s",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

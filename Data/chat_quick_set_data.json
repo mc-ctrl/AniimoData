@@ -1,0 +1,254 @@
+[
+  {
+    "label": 1298889906,
+    "channelType": "World",
+    "widgetType": 2,
+    "func": "openSwitchChannelPanel"
+  },
+  {
+    "label": 1417091895,
+    "channelType": "Team",
+    "widgetType": 2,
+    "func": "openTeamGameplayPanel"
+  },
+  {
+    "widgetDefaultValue": 1,
+    "label": 2072171277,
+    "checkFunc": "checkChannelSettingState",
+    "func": "setChannelSettingState",
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "settingType": 2,
+    "widgetType": 0,
+    "channelType": "Team"
+  },
+  {
+    "label": 1135763100,
+    "checkFunc": "checkChatOnTop",
+    "func": "setChatOnTop",
+    "widgetDefaultValue": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetType": 0,
+    "channelType": "Player"
+  },
+  {
+    "label": 1404373871,
+    "channelType": "Player",
+    "widgetType": 3,
+    "func": "removeChannel"
+  },
+  {
+    "widgetDefaultValue": 1,
+    "label": 1213533694,
+    "checkFunc": "checkChannelSettingState",
+    "func": "setChannelSettingState",
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "settingType": 2,
+    "widgetType": 0,
+    "channelType": "Home"
+  },
+  {
+    "widgetDefaultValue": 1,
+    "label": 1098925195,
+    "checkFunc": "checkChannelSettingState",
+    "func": "setChannelSettingState",
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "settingType": 2,
+    "widgetType": 0,
+    "channelType": "Friend"
+  },
+  {
+    "label": 1252226418,
+    "func": "setRemark",
+    "widgetType": 2,
+    "checkShowFunc": "checkCanSetRemark",
+    "channelType": "Player"
+  },
+  {
+    "label": 2002605715,
+    "func": "changeFriendGroup",
+    "widgetType": 2,
+    "checkShowFunc": "checkCanChangeFriendGroup",
+    "channelType": "Player"
+  },
+  {
+    "label": 1643543137,
+    "channelType": "Group",
+    "widgetType": 3,
+    "func": "removeChannel"
+  },
+  {
+    "label": 1235111368,
+    "checkFunc": "checkChatOnTop",
+    "func": "setChatOnTop",
+    "widgetDefaultValue": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetType": 0,
+    "channelType": "Group"
+  },
+  {
+    "channelType": "Group",
+    "checkFunc": "checkChannelSettingStateById",
+    "func": "setChannelSettingStateById",
+    "isChatGroupSetting": 1,
+    "settingType": 2,
+    "widgetType": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "label": 1708239824,
+    "widgetDefaultValue": 1
+  },
+  {
+    "channelType": "Group",
+    "checkFunc": "checkChannelSettingStateById",
+    "func": "setChannelSettingStateById",
+    "isChatGroupSetting": 1,
+    "settingType": 99,
+    "widgetType": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "label": 1432753864,
+    "widgetDefaultValue": 1
+  },
+  {
+    "channelType": "Group",
+    "func": "openGroupChatManage",
+    "isChatGroupSetting": 1,
+    "widgetType": 2,
+    "label": 1261310399
+  },
+  {
+    "channelType": "World",
+    "checkFunc": "checkChannelSettingStateById",
+    "func": "setChannelSettingStateById",
+    "isChatGroupSetting": 1,
+    "settingType": 99,
+    "widgetType": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "label": 1757628555,
+    "widgetDefaultValue": 1
+  },
+  {
+    "channelType": "Home",
+    "checkFunc": "checkChannelSettingStateById",
+    "func": "setChannelSettingStateById",
+    "isChatGroupSetting": 1,
+    "settingType": 99,
+    "widgetType": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "label": 1274632909,
+    "widgetDefaultValue": 1
+  },
+  {
+    "channelType": "Near",
+    "checkFunc": "checkChannelSettingStateById",
+    "func": "setChannelSettingStateById",
+    "isChatGroupSetting": 1,
+    "settingType": 99,
+    "widgetType": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "label": 1313160463,
+    "widgetDefaultValue": 1
+  },
+  {
+    "channelType": "Recruit",
+    "checkFunc": "checkChannelSettingStateById",
+    "func": "setChannelSettingStateById",
+    "isChatGroupSetting": 1,
+    "settingType": 99,
+    "widgetType": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "label": 1268057511,
+    "widgetDefaultValue": 1
+  },
+  {
+    "label": 1277935394,
+    "channelType": "Player",
+    "widgetType": 4,
+    "func": "translateCurrentPage"
+  },
+  {
+    "label": 1640658190,
+    "channelType": "World",
+    "widgetType": 4,
+    "func": "translateCurrentPage"
+  },
+  {
+    "label": 1902792429,
+    "channelType": "Near",
+    "widgetType": 4,
+    "func": "translateCurrentPage"
+  },
+  {
+    "label": 1944291661,
+    "channelType": "Team",
+    "widgetType": 4,
+    "func": "translateCurrentPage"
+  },
+  {
+    "label": 1241055681,
+    "channelType": "Friend",
+    "widgetType": 4,
+    "func": "translateCurrentPage"
+  },
+  {
+    "label": 1675846294,
+    "channelType": "Home",
+    "widgetType": 4,
+    "func": "translateCurrentPage"
+  },
+  {
+    "label": 1474578443,
+    "channelType": "Group",
+    "widgetType": 4,
+    "func": "translateCurrentPage"
+  },
+  {
+    "label": 1225647388,
+    "checkFunc": "getAutoDeleteReadMails",
+    "func": "setAutoDeleteReadMails",
+    "widgetDefaultValue": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetType": 0,
+    "channelType": "Mail"
+  },
+  {
+    "label": 1677515606,
+    "channelType": "Mail",
+    "widgetType": 4,
+    "func": "toggleMailTranslation"
+  }
+]

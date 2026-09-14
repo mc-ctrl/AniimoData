@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "antiOneShotData": {
+    "solveRemainingDamage": false,
+    "buffId": 11133,
+    "buffDuration": 5,
+    "lockHpRatio": 0.05
+  },
+  "BPName": "buff_11131",
+  "NodeID": 1,
+  "UID": "3fafcb1c-301e-46d6-9f40-ebc04bb0fe0a",
+  "tags": [
+    16
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {}
+}

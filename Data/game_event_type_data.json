@@ -1,0 +1,284 @@
+{
+  "113": {
+    "iconResId": "$UI_Img_Event_LeftTab_Superstar.png",
+    "switchName": "LevelingGuide",
+    "tabType": 2,
+    "name": 1662937299
+  },
+  "116": {
+    "iconResId": "$UI_Img_Event_LeftTab_WelfareRefund.png",
+    "switchName": "Rebate",
+    "tabType": 2,
+    "name": 1316410801
+  },
+  "115": {
+    "areaNo": [
+      1
+    ],
+    "name": 1230893530,
+    "iconResId": "$UI_Img_Event_LeftTab_RedBook.png",
+    "switchName": "RedNote",
+    "tabType": 1
+  },
+  "117": {
+    "areaNo": [
+      1
+    ],
+    "name": 1375108783,
+    "iconResId": "$UI_Img_Event_LeftTab_TikTok_Pet.png",
+    "switchName": "LittleFirePersonGuide",
+    "tabType": 2
+  },
+  "118": {
+    "areaNo": [
+      1
+    ],
+    "name": 1354711567,
+    "iconResId": "$UI_Img_Event_LeftTab_Guide.png",
+    "switchName": "TapWeb",
+    "tabType": 2
+  },
+  "1": {
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "switchName": "PuppetCatch",
+    "tabType": 1,
+    "name": 2063884958
+  },
+  "2": {
+    "moveInSound": "SFX_UI_ImoSurvey_MoveIn",
+    "helpId": 901,
+    "name": 1708607812,
+    "iconResId": "$UI_Img_Event_LeftTab_MorphologicalSurvey.png",
+    "switchName": "PuppetPhoto",
+    "tabType": 1
+  },
+  "3": {
+    "iconResId": "$UI_Img_Event_LeftTab_Prayers.png",
+    "switchName": "WeekWish",
+    "tabType": 1,
+    "name": 1618444040
+  },
+  "4": {
+    "moveInSound": "SFX_UI_OfficialCommunity_MoveIn",
+    "name": 1997587429,
+    "iconResId": "$UI_Img_Event_LeftTab_OfficialGroup.png",
+    "switchName": "OfficialGroup",
+    "tabType": 2
+  },
+  "101": {
+    "iconResId": "$UI_Img_Event_LeftTab_MockBattle.png",
+    "switchName": "MockBattle",
+    "tabType": 2,
+    "name": 1493997564
+  },
+  "114": {
+    "iconResId": "$UI_Img_Event_LeftTab_Steam.png",
+    "switchName": "BindEmail",
+    "tabType": 2,
+    "name": 1517803979
+  },
+  "112": {
+    "iconResId": "$UI_Img_Event_LeftTab_SecretStore.png",
+    "switchName": "MysteriousMerchant",
+    "tabType": 2,
+    "name": 1149909073
+  },
+  "16": {
+    "switchName": "BattlePass",
+    "tabType": 4,
+    "name": 1140764433
+  },
+  "5": {
+    "iconResId": "$UI_Img_Event_LeftTab_PetSave.png",
+    "switchName": "PetSave",
+    "tabType": 1,
+    "name": 1301362630
+  },
+  "106": {
+    "iconResId": "$UI_Img_Event_TabHolographicBattle.png",
+    "switchName": "Interlink",
+    "tabType": 2,
+    "name": 2075611716
+  },
+  "20": {
+    "iconResId": "$UI_Img_Event_LeftTab_TikTok.png",
+    "switchName": "LittleFirePerson",
+    "tabType": 1,
+    "name": 1159867454
+  },
+  "6": {
+    "iconResId": "$UI_Img_Event_Crack.png",
+    "switchName": "CatchRogue",
+    "tabType": 1,
+    "name": 1154419147
+  },
+  "108": {
+    "iconResId": "$UI_Img_Event_LeftTab_SpeedUpIncubation.png",
+    "switchName": "PetHatch",
+    "tabType": 1,
+    "name": 1111233161
+  },
+  "110": {
+    "iconResId": "$UI_Img_Event_LeftTab_SeasonCollection.png",
+    "switchName": "SeasonPage",
+    "tabType": 1,
+    "name": 1252504811
+  },
+  "7": {
+    "moveInSound": "SFX_UI_Vitality_MoveIn",
+    "name": 2102499013,
+    "iconResId": "$UI_Img_Event_VitalityContest.png",
+    "switchName": "EnergyMatch",
+    "tabType": 1
+  },
+  "105": {
+    "iconResId": "$UI_Img_EventTab_WaterHype.png",
+    "switchName": "WaterArea",
+    "tabType": 1,
+    "name": 1941795133
+  },
+  "8": {
+    "moveInSound": "SFX_UI_ImoDiscover_MoveIn",
+    "name": 1386994792,
+    "iconResId": "$UI_Img_Event_LeftTab_EcologicalTraceability.png",
+    "switchName": "EcologyTrace",
+    "tabType": 1
+  },
+  "13": {
+    "moveInSound": "SFX_UI_DailyCheckIn_MoveIn",
+    "name": 1701247386,
+    "iconResId": "$UI_Img_Event_LeftTab_SignIn.png",
+    "switchName": "SignNewbie",
+    "tabType": 1
+  },
+  "9": {
+    "iconResId": "$UI_Img_Event_LeftTab_Carnival.png",
+    "switchName": "ArkCarn",
+    "tabType": 1,
+    "name": 1828494994
+  },
+  "17": {
+    "iconResId": "$UI_Img_EventTab_PaidWipeTest.png",
+    "switchName": "RechargeRebate",
+    "tabType": 1,
+    "name": 1775606084
+  },
+  "102": {
+    "iconResId": "$UI_Img_Event_LeftTab_Fracture.png",
+    "switchName": "Fracture",
+    "tabType": 2,
+    "name": 1418397172
+  },
+  "11": {
+    "iconResId": "$UI_Img_Event_LeftTab_Reunion.png",
+    "switchName": "JourneyTrial",
+    "tabType": 1,
+    "name": 1805118677
+  },
+  "103": {
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "switchName": "LeylineTreeGuide",
+    "tabType": 2,
+    "name": 1826494737
+  },
+  "12": {
+    "switchName": "DailyActive",
+    "tabType": 3,
+    "name": 1656687070
+  },
+  "104": {
+    "iconResId": "$UI_Img_Event_EggGrabTab.png",
+    "switchName": "EggGrab",
+    "tabType": 2,
+    "name": 1646587011
+  },
+  "23": {
+    "switchName": "SeasonActivity",
+    "tabType": 4,
+    "name": 1106348228
+  },
+  "24": {
+    "switchName": "SeasonIntroduction",
+    "tabType": 4,
+    "name": 1667734813
+  },
+  "14": {
+    "iconResId": "$UI_Img_Event_Tab_NewHandSignin.png",
+    "switchName": "SignVersion",
+    "tabType": 1,
+    "name": 1908134108
+  },
+  "10": {
+    "moveInSound": "SFX_UI_WaterArea_ MoveIn",
+    "name": 1712748882,
+    "iconResId": "$UI_Img_Event_LeftTab_WaterArea.png",
+    "switchName": "AreaActivity",
+    "tabType": 1
+  },
+  "15": {
+    "moveInSound": "SFX_UI_PetDispatch_MoveIn",
+    "name": 1454158354,
+    "iconResId": "$UI_Img_Event_TabThemeMonth.png",
+    "switchName": "PetDispatch",
+    "tabType": 1
+  },
+  "25": {
+    "switchName": "SeasonAchievements",
+    "tabType": 4,
+    "name": 2040215539
+  },
+  "26": {
+    "iconResId": "$UI_Img_EventTab_BossCatch.png",
+    "switchName": "FishingCapture",
+    "tabType": 2,
+    "name": 1380770584
+  },
+  "27": {
+    "iconResId": "$UI_Img_Event_LeftTab_Totallogins.png",
+    "switchName": "LongTermSign",
+    "tabType": 1,
+    "name": 1442615428
+  },
+  "28": {
+    "iconResId": "$UI_Img_Event_LeftTab_Totallogins.png",
+    "switchName": "CrossPlatform",
+    "tabType": 1,
+    "name": 1715344437
+  },
+  "109": {
+    "iconResId": "$UI_Img_Event_LeftTab_XyTeaParty.png",
+    "switchName": "TeaParty",
+    "tabType": 2,
+    "name": 1591765102
+  },
+  "18": {
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "switchName": "LeylineTreeUp",
+    "tabType": 2,
+    "name": 2021797207
+  },
+  "21": {
+    "iconResId": "$UI_Img_Event_LeftTab_Steam.png",
+    "switchName": "BindAccount",
+    "tabType": 2,
+    "name": 1672198329
+  },
+  "19": {
+    "iconResId": "$UI_Img_EventTab_GrowthGift.png",
+    "switchName": "GrowthGift",
+    "tabType": 1,
+    "name": 1409945525
+  },
+  "111": {
+    "iconResId": "$UI_Img_Event_LeftTab_EnterpriseWeChat.png",
+    "switchName": "AdventureBuddy",
+    "tabType": 2,
+    "name": 1949725558
+  },
+  "22": {
+    "iconResId": "$UI_Img_Event_LeftTab_FirstTopup.png",
+    "switchName": "FirstTopup",
+    "tabType": 1,
+    "name": 1250105679
+  }
+}

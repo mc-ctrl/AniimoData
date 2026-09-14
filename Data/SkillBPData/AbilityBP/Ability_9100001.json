@@ -1,0 +1,100 @@
+{
+  "BPName": "ability_9100001",
+  "NodeID": 1,
+  "UID": "6f06c50b-3e01-4486-975b-de3c2c4e521e",
+  "abilityParamId": 9100001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 9100001001,
+      "name": "setCombatActionTimeline",
+      "UID": "3cd004a6-414a-4eaf-a105-121055593f8c",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "31": {
+      "gender": 1,
+      "name": "isActorGender",
+      "UID": "f7e876cc-6588-46f6-a1b4-c639771167b4",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "49": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "88fd8024-c9e2-4449-965c-2b04729a57b6",
+      "to": 910000104,
+      "NodeID": 49,
+      "from": 9100001
+    },
+    "32": {
+      "actionIds": [
+        49
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "710c5882-ecce-409f-a26e-faadebc716c1",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "43": {
+      "name": "enableWalkingAttackMode",
+      "UID": "df6fc07e-a942-440f-8e87-25cdf730c8e5",
+      "upperAvatarMask": "$Mask_Avatar_Girl_MoveAttack.mask",
+      "enable": true,
+      "NodeID": 43
+    },
+    "44": {
+      "UID": "299b7371-ee27-41b5-a034-954b307a777e",
+      "name": "enableWalkingAttackMode",
+      "enable": false,
+      "NodeID": 44
+    }
+  },
+  "onAbilityCastIds": [
+    43,
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01",
+    "Attack02",
+    "Attack03",
+    "Attack04",
+    "Attack01_Upper",
+    "Attack02_Upper",
+    "Attack03_Upper",
+    "Attack03_Base",
+    "Attack04_Upper"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Female_Attack_ReleaseSkill_01",
+    "Eff_Avatar_Female_Attack_Hit_01",
+    "Eff_Avatar_Female_Attack_New_01_04",
+    "Eff_Avatar_Female_Attack_New_01_03"
+  ],
+  "searchRelation": 2,
+  "name": "手套普攻",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1,
+  "shortDesc": "",
+  "subAbilityIds": [
+    910000101,
+    910000102,
+    910000103,
+    910000104,
+    910000105,
+    910000106
+  ],
+  "onAbilityEndIds": [
+    44
+  ],
+  "searchTargetRangeDown": 1,
+  "onAbilityAddedIds": [
+    32
+  ]
+}

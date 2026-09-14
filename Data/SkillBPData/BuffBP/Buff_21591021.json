@@ -1,0 +1,38 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21591021",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 21591021,
+      "NodeID": 3,
+      "UID": "12f51bab-c9a2-4a73-a854-696e3690f412",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4,
+      "UID": "3d500166-a25e-42bd-a5db-2b894afa0a7e",
+      "target": "OWNER",
+      "buffId": 10086,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": true,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

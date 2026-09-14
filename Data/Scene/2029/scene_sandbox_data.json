@@ -1,0 +1,6983 @@
+{
+  "78176944": {
+    "owner": "钟雪儿",
+    "position": [
+      8.97,
+      -1.38,
+      -162.84
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 78195850,
+    "levelItems": {
+      "91008635": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_5_Room1-2 (1)",
+        "position": [
+          17.11,
+          3.16,
+          -48.86
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 91008635,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91008640": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_4_Room1-2 (1)",
+        "position": [
+          17.11,
+          4.46,
+          -48.86
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 91008640,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91008649": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_6_Room1-2 (1)",
+        "position": [
+          17.11,
+          1.8,
+          -48.86
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 91008649,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91008770": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (13)",
+        "position": [
+          31.67,
+          -3.9,
+          -23.99
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91008770,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91008771": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (19)",
+        "position": [
+          31.42,
+          -3.12,
+          -24.01
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91008771,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004365": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (18)",
+        "position": [
+          162,
+          -0.57,
+          -42.9
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 91004365,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 2.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004371": {
+        "majorCompId": 90997732,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseRemote_Room4_1",
+        "position": [
+          203.6,
+          -1.36,
+          25.06
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91004371,
+        "componentsInfo": {
+          "90997732": {
+            "chargeTime": 0.6
+          }
+        },
+        "configId": 608,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          1.5,
+          1.5
+        ],
+        "isActive": true
+      },
+      "91027878": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Fan_SB (1)",
+        "position": [
+          26.73,
+          -5.54,
+          -86.95
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 91027878,
+        "componentsInfo": {
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                6,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.85,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004372": {
+        "majorCompId": 90997732,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseRemote_Room4_2",
+        "position": [
+          203.55,
+          -1.27,
+          33.09
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91004372,
+        "componentsInfo": {
+          "90997732": {
+            "chargeTime": 0.6
+          }
+        },
+        "configId": 608,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          1.5,
+          1.5
+        ],
+        "isActive": true
+      },
+      "91027898": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (19)",
+        "position": [
+          199.35,
+          -2.75,
+          41.07
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91027898,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004373": {
+        "majorCompId": 44987560,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Switch_Once_SB",
+        "position": [
+          192.5,
+          -5.32,
+          46.82
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91004373,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 471
+          },
+          "72138475": {
+            "size": [
+              0.92,
+              1,
+              1.65
+            ]
+          }
+        },
+        "configId": 318,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006316": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (10)",
+        "position": [
+          41.33,
+          -3.92,
+          -36.63
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91006316,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006317": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (11)",
+        "position": [
+          31.67,
+          -3.9,
+          -35.04
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91006317,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006318": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (8)",
+        "position": [
+          41.33,
+          -3.92,
+          -40.29
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91006318,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006319": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (9)",
+        "position": [
+          31.67,
+          -3.9,
+          -38.72
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91006319,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006345": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (6)",
+        "position": [
+          31.42,
+          -3.12,
+          -26.91
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006345,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006346": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (7)",
+        "position": [
+          31.59,
+          -3.12,
+          -28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006346,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006347": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (9)",
+        "position": [
+          31.42,
+          -3.12,
+          -29.69
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006347,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006348": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (8)",
+        "position": [
+          31.59,
+          -3.12,
+          -30.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006348,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006349": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (10)",
+        "position": [
+          31.42,
+          -3.12,
+          -32.5
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006349,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006350": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (11)",
+        "position": [
+          31.59,
+          -3.12,
+          -33.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006350,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006351": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (12)",
+        "position": [
+          31.59,
+          -3.12,
+          -36.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006351,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006352": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (13)",
+        "position": [
+          31.42,
+          -3.12,
+          -35.31
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006352,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006353": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (14)",
+        "position": [
+          31.42,
+          -3.12,
+          -38.08
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006353,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006354": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (15)",
+        "position": [
+          31.59,
+          -3.12,
+          -39.17
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006354,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006355": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (16)",
+        "position": [
+          31.42,
+          -3.12,
+          -40.81
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006355,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006356": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (17)",
+        "position": [
+          31.59,
+          -3.12,
+          -41.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006356,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006357": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (18)",
+        "position": [
+          42.2,
+          -3.12,
+          -35.31
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006357,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006358": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (24)",
+        "position": [
+          42.2,
+          -3.12,
+          -32.5
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006358,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063586": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (1)",
+        "position": [
+          -40.97,
+          -1.84,
+          -125.26
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91063586,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006359": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (19)",
+        "position": [
+          42.2,
+          -3.12,
+          -29.69
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006359,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006360": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (20)",
+        "position": [
+          42.37,
+          -3.12,
+          -28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006360,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006361": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (21)",
+        "position": [
+          42.37,
+          -3.12,
+          -33.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006361,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006362": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (22)",
+        "position": [
+          42.2,
+          -3.12,
+          -40.81
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006362,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006363": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (23)",
+        "position": [
+          42.37,
+          -3.12,
+          -39.17
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006363,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006364": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (25)",
+        "position": [
+          42.2,
+          -3.12,
+          -26.91
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006364,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006365": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (26)",
+        "position": [
+          42.37,
+          -3.12,
+          -30.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006365,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006366": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (27)",
+        "position": [
+          42.2,
+          -3.12,
+          -38.08
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91006366,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006367": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (28)",
+        "position": [
+          42.37,
+          -3.12,
+          -36.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006367,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006368": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (29)",
+        "position": [
+          42.37,
+          -3.12,
+          -41.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006368,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006374": {
+        "majorCompId": 42742113,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_DeathBox_SB_Room1-2",
+        "position": [
+          7.07,
+          -8.47,
+          -38.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006374,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerReviveType": 1,
+            "blackScreenId": 2000,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          28,
+          10,
+          56.6
+        ],
+        "isActive": true
+      },
+      "91067923": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (10)",
+        "position": [
+          88.1,
+          -1.91,
+          -60.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067923,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006376": {
+        "majorCompId": 42742113,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_DeathBox_SB_Room2+3",
+        "position": [
+          101.87,
+          -15.82,
+          -37.54
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006376,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerReviveType": 1,
+            "blackScreenId": 2000,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          162.2,
+          10,
+          60.5
+        ],
+        "isActive": true
+      },
+      "78181274": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Temple_StoneStatueBase (1)",
+        "position": [
+          15.95,
+          -5.38,
+          -123.24
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 78181274,
+        "componentsInfo": {
+          "53631173": {
+            "canReturn": true,
+            "noticeKey": "STATUEGUIDE_TEMPLE_29",
+            "realCharacters": "PUZZLE",
+            "tempPetTemplateId": 104310002,
+            "guideId": 105000
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "canReturn": true,
+          "noticeKey": "STATUEGUIDE_TEMPLE_29",
+          "realCharacters": "PUZZLE",
+          "tempPetTemplateId": 104310002,
+          "guideId": 105000
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006377": {
+        "majorCompId": 42742113,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_DeathBox_SB_Room4",
+        "position": [
+          203.47,
+          -17.68,
+          20.96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006377,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerReviveType": 1,
+            "blackScreenId": 2000,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          55.8,
+          10,
+          88.5
+        ],
+        "isActive": true
+      },
+      "91006379": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room3-1",
+        "position": [
+          108.29,
+          0.49,
+          -32.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006379,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          16.06,
+          8.83,
+          6.75
+        ],
+        "isActive": true
+      },
+      "91063641": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (12)",
+        "position": [
+          69.31,
+          1.68,
+          -45.09
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91063641,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006381": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room3-2",
+        "position": [
+          174.23,
+          0.39,
+          -40.88
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006381,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          8.6,
+          8.83,
+          44.94
+        ],
+        "isActive": true
+      },
+      "91063643": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (13)",
+        "position": [
+          69.62,
+          1.66,
+          -46.85
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063643,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91006383": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room3-3",
+        "position": [
+          200.99,
+          -0.5,
+          -38.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91006383,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          14.9,
+          8.83,
+          21.85
+        ],
+        "isActive": true
+      },
+      "91063644": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (14)",
+        "position": [
+          72.85,
+          1.64,
+          -45.23
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91063644,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007063": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (12)",
+        "position": [
+          41.33,
+          -3.92,
+          -25.57
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91007063,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007067": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (30)",
+        "position": [
+          42.37,
+          -3.12,
+          -25.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91007067,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79356406": {
+        "majorCompId": 76239567,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_SpikeGroup_Room2",
+        "position": [
+          55.75,
+          -5.17,
+          -49.07
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79356406,
+        "componentsInfo": {
+          "76239567": {
+            "spikeIdGroups": [
+              {
+                "spikeIds": [
+                  91067897,
+                  91067901,
+                  91067903,
+                  91067902
+                ]
+              }
+            ]
+          }
+        },
+        "configId": 446,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007070": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (18)",
+        "position": [
+          31.59,
+          -3.12,
+          -25.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91007070,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007178": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_4_Room1-2",
+        "position": [
+          17.11,
+          8.66,
+          -48.86
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 91007178,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79356550": {
+        "majorCompId": 50866965,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          86.93,
+          2.12,
+          -49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79356550,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007179": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_5_Room1-2",
+        "position": [
+          17.11,
+          7.23,
+          -48.86
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 91007179,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063652": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (18)",
+        "position": [
+          131.5,
+          -4.8,
+          -34.94
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91063652,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007198": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_6_Room1-2",
+        "position": [
+          17.11,
+          5.79,
+          -48.86
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 91007198,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063653": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (19)",
+        "position": [
+          142.73,
+          -4.43,
+          -38.87
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91063653,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007242": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_TempleComponent_MachineGate_8m_Room1",
+        "position": [
+          6.95,
+          -1.38,
+          -78.83
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91007242,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063657": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (20)",
+        "position": [
+          170.02,
+          -2.32,
+          -37.15
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91063657,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91007309": {
+        "majorCompId": 56996091,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Stela_Room1",
+        "position": [
+          6.89,
+          -1.38,
+          -85.18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91007309,
+        "configId": 278,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063658": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (21)",
+        "position": [
+          202.04,
+          -7.3,
+          -8.85
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063658,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79498032": {
+        "majorCompId": 42742113,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_DeathBox_SB_Room1-1",
+        "position": [
+          3.87,
+          -15.82,
+          -103.44
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79498032,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerReviveType": 1,
+            "blackScreenId": 2000,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          112.95,
+          10,
+          78.33
+        ],
+        "isActive": true
+      },
+      "91063660": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (22)",
+        "position": [
+          194.17,
+          -8.33,
+          10.67
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91063660,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79499148": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room1_1",
+        "position": [
+          -20.96,
+          8.45,
+          -128.96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79499148,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          8,
+          20.2,
+          8
+        ],
+        "isActive": true
+      },
+      "91063667": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (23)",
+        "position": [
+          194.24,
+          -5.79,
+          17.52
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063667,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90997236": {
+        "majorCompId": 90997210,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseAIm_Room1",
+        "position": [
+          44.77,
+          2.63,
+          -115.14
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90997236,
+        "configId": 606,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063669": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (24)",
+        "position": [
+          193.95,
+          0.78,
+          36.31
+        ],
+        "rotation": [
+          90,
+          90,
+          0
+        ],
+        "id": 91063669,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90997810": {
+        "majorCompId": 91056615,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_Rotatewall_Temple29_Room1",
+        "position": [
+          44.79,
+          -3.28,
+          -93.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90997810,
+        "componentsInfo": {
+          "91056615": {
+            "rotationStates": [
+              {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "state": 0,
+                "duration": 0.5
+              },
+              {
+                "rotation": [
+                  90,
+                  0,
+                  0
+                ],
+                "state": 1,
+                "duration": 0.5
+              }
+            ]
+          },
+          "91062076": {
+            "bindLevelItemIds": [
+              91008280
+            ],
+            "initPosition": [
+              44.79,
+              -3.28,
+              -93.04
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "bindEntStaticIds": [
+              91062355
+            ]
+          }
+        },
+        "configId": 609,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063672": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (25)",
+        "position": [
+          192.92,
+          -1.73,
+          40.76
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91063672,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067924": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (11)",
+        "position": [
+          88.1,
+          -1.91,
+          -62.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067924,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067897": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-1",
+        "position": [
+          58.1,
+          -4.85,
+          -48.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067897,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90997906": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism",
+        "position": [
+          -45.16,
+          0.43,
+          -119.67
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 90997906,
+        "componentsInfo": {
+          "55701939": {
+            "onceSpurtTime": 5,
+            "spurtInterval": 5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "onceSpurtTime": 5,
+          "spurtInterval": 5
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067901": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2 -1(1)",
+        "position": [
+          58.1,
+          -4.85,
+          -50.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067901,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999804": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism",
+        "position": [
+          -38.47,
+          4.14,
+          -90.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999804,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999805": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (1)",
+        "position": [
+          -36.94,
+          4.14,
+          -90.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999805,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999806": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (2)",
+        "position": [
+          -35.42,
+          4.14,
+          -90.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999806,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999807": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (3)",
+        "position": [
+          -33.95,
+          4.14,
+          -90.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999807,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999808": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (4)",
+        "position": [
+          -32.38,
+          4.14,
+          -90.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999808,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067910": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2",
+        "position": [
+          78.03,
+          -2.91,
+          -60.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067910,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999809": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (5)",
+        "position": [
+          -30.72,
+          4.14,
+          -90.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999809,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067913": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (1)",
+        "position": [
+          78.03,
+          -2.91,
+          -62.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067913,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999833": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_TempleComponent_MachineGate_4m",
+        "position": [
+          109.75,
+          -3.88,
+          -36.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999833,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90999852": {
+        "majorCompId": 90997210,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseAIm_Room2-2",
+        "position": [
+          109.74,
+          2.13,
+          -37.16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90999852,
+        "configId": 606,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91094504": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_OverlapCounter_SB (1)",
+        "position": [
+          -22.11,
+          0.98,
+          -128.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91094504,
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          6,
+          6,
+          8
+        ],
+        "isActive": true
+      },
+      "91000004": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_TempleComponent_MachineGate_8m",
+        "position": [
+          202.98,
+          -5.86,
+          61.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91000004,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000011": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (10)",
+        "position": [
+          199.35,
+          -1.26,
+          41.07
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91000011,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067917": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (6)",
+        "position": [
+          96.1,
+          -2.91,
+          -60.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067917,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000012": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (8)",
+        "position": [
+          199.35,
+          1.71,
+          41.07
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91000012,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067918": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (7)",
+        "position": [
+          94.1,
+          -2.91,
+          -62.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067918,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000013": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (9)",
+        "position": [
+          199.35,
+          0.25,
+          41.07
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91000013,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067919": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (4)",
+        "position": [
+          94.1,
+          -2.91,
+          -60.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067919,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000035": {
+        "majorCompId": 50866965,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          133.34,
+          -4.37,
+          -44.51
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91000035,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000043": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_TempleComponent_MachineGate_4m_Room1-2",
+        "position": [
+          18.09,
+          -0.75,
+          -19.46
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91000043,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91094485": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_OverlapCounter_SB",
+        "position": [
+          44.79,
+          0.98,
+          -128.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91094485,
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          4,
+          6,
+          3.9
+        ],
+        "isActive": true
+      },
+      "91000045": {
+        "majorCompId": 90997210,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseAIm_Room1-2",
+        "position": [
+          17.11,
+          5.24,
+          -19.46
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91000045,
+        "configId": 606,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91090618": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (29)",
+        "position": [
+          162.26,
+          -4.09,
+          -37.15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91090618,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000046": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (11)",
+        "position": [
+          194.36,
+          -1.87,
+          48.87
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91000046,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91090617": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (28)",
+        "position": [
+          135.05,
+          -4.81,
+          -38.87
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91090617,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000047": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (13)",
+        "position": [
+          194.36,
+          -4.84,
+          48.87
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91000047,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067931": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room3",
+        "position": [
+          134.3,
+          -5.38,
+          -57.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067931,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000048": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (12)",
+        "position": [
+          194.36,
+          -3.33,
+          48.87
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91000048,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002939": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (16)",
+        "position": [
+          112.68,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002939,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              112.68,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000050": {
+        "majorCompId": 56996091,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Stela",
+        "position": [
+          203.11,
+          -5.86,
+          54.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91000050,
+        "configId": 278,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002940": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (19)",
+        "position": [
+          130.71,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002940,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              130.71,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067934": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room3 (1)",
+        "position": [
+          132.3,
+          -5.38,
+          -57.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067934,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002941": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (14)",
+        "position": [
+          133.73,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002941,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              133.73,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067935": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room3 (2)",
+        "position": [
+          132.3,
+          -5.38,
+          -55.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067935,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002942": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (13)",
+        "position": [
+          127.69,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002942,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              127.69,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067936": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room3 (3)",
+        "position": [
+          134.3,
+          -5.38,
+          -55.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067936,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002943": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (18)",
+        "position": [
+          124.68,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002943,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              124.68,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91090604": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (26)",
+        "position": [
+          -24.87,
+          -1.84,
+          -128.98
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91090604,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002944": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (10)",
+        "position": [
+          109.69,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002944,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              109.69,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91090614": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (27)",
+        "position": [
+          104.8,
+          -0.4,
+          -45.28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91090614,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002945": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (12)",
+        "position": [
+          121.69,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002945,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              121.69,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002750": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (6)",
+        "position": [
+          31.67,
+          -3.9,
+          -27.67
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91002750,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002751": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (7)",
+        "position": [
+          41.33,
+          -3.92,
+          -29.25
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91002751,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002752": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (5)",
+        "position": [
+          41.33,
+          -3.92,
+          -32.92
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91002752,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002905": {
+        "majorCompId": 44987560,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Switch_Once_SB",
+        "position": [
+          172.95,
+          -1.33,
+          -37.25
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91002905,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 471
+          },
+          "72138475": {
+            "size": [
+              0.92,
+              1,
+              1.65
+            ]
+          }
+        },
+        "configId": 318,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002925": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          106.69,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002925,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              106.69,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002926": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (1)",
+        "position": [
+          109.69,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002926,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              109.69,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91118587": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_TeachLeft",
+        "position": [
+          -22.11,
+          0.98,
+          -128.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91118587,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          6,
+          6,
+          8
+        ],
+        "isActive": true
+      },
+      "91002927": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (2)",
+        "position": [
+          112.68,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002927,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              112.68,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91118588": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_TeachRight",
+        "position": [
+          44.79,
+          0.98,
+          -128.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91118588,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          4,
+          6,
+          3.9
+        ],
+        "isActive": true
+      },
+      "91002928": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (3)",
+        "position": [
+          115.68,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002928,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              115.68,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067922": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (9)",
+        "position": [
+          86.1,
+          -1.91,
+          -60.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067922,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002929": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (4)",
+        "position": [
+          118.69,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002929,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              118.69,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067921": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (8)",
+        "position": [
+          86.1,
+          -1.91,
+          -62.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067921,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002930": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (5)",
+        "position": [
+          121.69,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002930,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              121.69,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067920": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (5)",
+        "position": [
+          96.1,
+          -2.91,
+          -62.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067920,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003283": {
+        "majorCompId": 44987560,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Switch_Once_SB",
+        "position": [
+          -37.12,
+          3.17,
+          -107.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91003283,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 471
+          },
+          "72138475": {
+            "size": [
+              0.92,
+              1,
+              1.65
+            ]
+          }
+        },
+        "configId": 318,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003434": {
+        "majorCompId": 44987560,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Switch_Once_SB_Room1-2",
+        "position": [
+          9.16,
+          5.24,
+          -52.08
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 91003434,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 471
+          },
+          "72138475": {
+            "size": [
+              0.92,
+              1,
+              1.65
+            ]
+          }
+        },
+        "configId": 318,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002932": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (7)",
+        "position": [
+          127.69,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002932,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              127.69,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003637": {
+        "majorCompId": 90997732,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseRemote_Room1-2",
+        "position": [
+          10.11,
+          1.84,
+          -55.01
+        ],
+        "rotation": [
+          0,
+          90,
+          270
+        ],
+        "id": 91003637,
+        "componentsInfo": {
+          "90997732": {
+            "chargeTime": 0.6
+          }
+        },
+        "configId": 608,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          0.73,
+          0.73,
+          0.73
+        ],
+        "isActive": true
+      },
+      "91002933": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (8)",
+        "position": [
+          130.71,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002933,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              130.71,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067915": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (3)",
+        "position": [
+          80.03,
+          -2.91,
+          -62.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067915,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003644": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_Room1-2",
+        "position": [
+          -3.03,
+          3.54,
+          -53
+        ],
+        "rotation": [
+          0,
+          180,
+          90
+        ],
+        "id": 91003644,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067914": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2-2 (2)",
+        "position": [
+          80.03,
+          -2.91,
+          -60.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067914,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002937": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (11)",
+        "position": [
+          115.68,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002937,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              115.68,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067903": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2 -1(3)",
+        "position": [
+          60.1,
+          -4.85,
+          -48.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067903,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002938": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (17)",
+        "position": [
+          118.69,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002938,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              118.69,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91067902": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_4x4_waitRhythm_Room2 -1(2)",
+        "position": [
+          60.1,
+          -4.85,
+          -50.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91067902,
+        "configId": 448,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004316": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism",
+        "position": [
+          71.34,
+          5.58,
+          -51.17
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 91004316,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004317": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (6)",
+        "position": [
+          71.34,
+          4.09,
+          -51.17
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 91004317,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063651": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (17)",
+        "position": [
+          101.29,
+          -0.4,
+          -45.28
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91063651,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004319": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (7)",
+        "position": [
+          71.34,
+          2.57,
+          -51.17
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 91004319,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063650": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (16)",
+        "position": [
+          88.82,
+          1.68,
+          -45.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91063650,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004327": {
+        "majorCompId": 90997732,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseRemote_Room2-1",
+        "position": [
+          69.74,
+          0.87,
+          -53.16
+        ],
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "id": 91004327,
+        "componentsInfo": {
+          "90997732": {
+            "chargeTime": 0.6
+          }
+        },
+        "configId": 608,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1.01,
+          1.01,
+          1.01
+        ],
+        "isActive": true
+      },
+      "91063648": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (15)",
+        "position": [
+          81.32,
+          1.67,
+          -45.36
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91063648,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004350": {
+        "majorCompId": 76239567,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_SpikeGroup_Room3",
+        "position": [
+          133.28,
+          -5.35,
+          -51.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91004350,
+        "componentsInfo": {
+          "76239567": {
+            "spikeIdGroups": [
+              {
+                "spikeIds": [
+                  91067931,
+                  91067934,
+                  91067936,
+                  91067935
+                ]
+              }
+            ]
+          }
+        },
+        "configId": 446,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063639": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (11)",
+        "position": [
+          50.33,
+          -1.16,
+          -38.86
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063639,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004356": {
+        "majorCompId": 90997732,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseRemote_Room3",
+        "position": [
+          150.58,
+          0.04,
+          -48
+        ],
+        "rotation": [
+          0,
+          90,
+          270
+        ],
+        "id": 91004356,
+        "componentsInfo": {
+          "90997732": {
+            "chargeTime": 0.6
+          }
+        },
+        "configId": 608,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          1.5,
+          1.5
+        ],
+        "isActive": true
+      },
+      "91063638": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (10)",
+        "position": [
+          2.67,
+          -1.16,
+          -25.5
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063638,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004363": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism",
+        "position": [
+          162,
+          -3.38,
+          -42.9
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 91004363,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 2.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91004364": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism (17)",
+        "position": [
+          162,
+          -1.95,
+          -42.9
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 91004364,
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 2.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063634": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (9)",
+        "position": [
+          13.35,
+          5.19,
+          -42.7
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063634,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063606": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (8)",
+        "position": [
+          11.97,
+          3.47,
+          -52.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91063606,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063604": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (7)",
+        "position": [
+          9.47,
+          0.22,
+          -61.93
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 91063604,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063603": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (6)",
+        "position": [
+          -2.72,
+          -1.84,
+          -85.1
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91063603,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063601": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (5)",
+        "position": [
+          -41.53,
+          1.7,
+          -75.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91063601,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063595": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (4)",
+        "position": [
+          -33.72,
+          3.74,
+          -84.98
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91063595,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063591": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (3)",
+        "position": [
+          -34.83,
+          3.73,
+          -90.86
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063591,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063588": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole (2)",
+        "position": [
+          -39.43,
+          2.78,
+          -113.6
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91063588,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91063585": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_HookHole",
+        "position": [
+          -37.36,
+          -1.83,
+          -128.98
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91063585,
+        "configId": 648,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91054322": {
+        "majorCompId": 72193952,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_RevivalPoint_Room4",
+        "position": [
+          212.56,
+          -5.87,
+          -3.87
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054322,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              -10.41,
+              1.96,
+              -0.25
+            ],
+            "localScale": [
+              23.68,
+              7.29,
+              9.75
+            ]
+          },
+          "72193952": {
+            "savePointId": 91054320
+          }
+        },
+        "configId": 395,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91054283": {
+        "majorCompId": 72193952,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_RevivalPoint_Room3",
+        "position": [
+          124.08,
+          -4.37,
+          -40.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054283,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              5.51,
+              2.65,
+              -0.48
+            ],
+            "localScale": [
+              12,
+              8,
+              12
+            ]
+          },
+          "72193952": {
+            "savePointId": 91054282
+          }
+        },
+        "configId": 395,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91054262": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room2-2",
+        "position": [
+          106.9,
+          0.64,
+          -51.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054262,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          11.02,
+          9.84,
+          25.01
+        ],
+        "isActive": true
+      },
+      "91054254": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room2-1 (1)",
+        "position": [
+          71.14,
+          3.23,
+          -44.93
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054254,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          3.72,
+          6.06,
+          3.9
+        ],
+        "isActive": true
+      },
+      "91054239": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room2-1",
+        "position": [
+          64.83,
+          -1.17,
+          -56.62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054239,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          7.36,
+          6.06,
+          17.16
+        ],
+        "isActive": true
+      },
+      "91054225": {
+        "majorCompId": 72193952,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_RevivalPoint_Room2",
+        "position": [
+          22.97,
+          -0.75,
+          -31.81
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054225,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              0.79,
+              1.69,
+              12.32
+            ],
+            "localScale": [
+              9.29,
+              8.5,
+              15.12
+            ]
+          },
+          "72193952": {
+            "savePointId": 79342586
+          }
+        },
+        "configId": 395,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91054143": {
+        "majorCompId": 72193952,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_RevivalPoint_Room1",
+        "position": [
+          -1.61,
+          0.63,
+          -63.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054143,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              9.11,
+              3.89,
+              -1.6
+            ],
+            "localScale": [
+              20.56,
+              8.15,
+              5.87
+            ]
+          },
+          "72193952": {
+            "savePointId": 91054162
+          }
+        },
+        "configId": 395,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91054125": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room1_1 (1)",
+        "position": [
+          30.84,
+          -2.26,
+          -128.79
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054125,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          4,
+          4.59,
+          8
+        ],
+        "isActive": true
+      },
+      "91027882": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Fan_SB (2)",
+        "position": [
+          26.73,
+          -5.54,
+          -82.86
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 91027882,
+        "componentsInfo": {
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                6,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.85,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91019248": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Fan_SB",
+        "position": [
+          42.97,
+          -3.38,
+          -83.12
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 91019248,
+        "componentsInfo": {
+          "49544975": {
+            "size": [
+              4,
+              8,
+              4
+            ]
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.85,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91008774": {
+        "majorCompId": 75059569,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_Spike_1x1_Temple_Big (31)",
+        "position": [
+          42.2,
+          -3.12,
+          -23.96
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "id": 91008774,
+        "configId": 489,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91008280": {
+        "majorCompId": 90997732,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_ImpulseRemote_Room1-1",
+        "position": [
+          39.15,
+          -3.76,
+          -95.69
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 91008280,
+        "componentsInfo": {
+          "90997732": {
+            "chargeTime": 0.6
+          }
+        },
+        "configId": 608,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          0.7,
+          0.7,
+          0.7
+        ],
+        "isActive": true
+      },
+      "91002749": {
+        "majorCompId": 58204944,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TrapBridge (4)",
+        "position": [
+          31.67,
+          -3.9,
+          -31.34
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91002749,
+        "configId": 302,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000347": {
+        "majorCompId": 91062886,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_RotateRoom_1_Temple29",
+        "position": [
+          194.36,
+          -1.34,
+          25.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91000347,
+        "componentsInfo": {
+          "91062884": {
+            "bindLevelItemIds": [
+              91004371
+            ],
+            "initPosition": [
+              194.36,
+              -1.34,
+              25.13
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "91062886": {
+            "rotationStates": [
+              {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "state": 0,
+                "duration": 0.5
+              },
+              {
+                "rotation": [
+                  0,
+                  0,
+                  90
+                ],
+                "state": 1,
+                "duration": 0.5
+              }
+            ]
+          }
+        },
+        "configId": 613,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000051": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_TempleComponent_MachineGate_4m_Room1",
+        "position": [
+          44.8,
+          -3.39,
+          -113.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91000051,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91000348": {
+        "majorCompId": 91062958,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_RotateRoom_2_Temple29",
+        "position": [
+          194.36,
+          -1.34,
+          33.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91000348,
+        "componentsInfo": {
+          "91062958": {
+            "rotationStates": [
+              {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "state": 0,
+                "duration": 0.5
+              },
+              {
+                "rotation": [
+                  0,
+                  0,
+                  90
+                ],
+                "state": 1,
+                "duration": 0.5
+              }
+            ]
+          },
+          "91062960": {
+            "bindLevelItemIds": [
+              91004372,
+              91063669
+            ],
+            "initPosition": [
+              194.36,
+              -1.34,
+              33.08
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "bindEntStaticIds": [
+              91063044,
+              91063040
+            ]
+          }
+        },
+        "configId": 614,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002946": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (15)",
+        "position": [
+          106.69,
+          -4.39,
+          -22.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002946,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              106.69,
+              -4.39,
+              -22.66
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79489931": {
+        "majorCompId": 56996091,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TempleEndingMachine_MultiPlayer",
+        "position": [
+          203.23,
+          2.15,
+          114.32
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 79489931,
+        "configId": 135,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003232": {
+        "majorCompId": 91062485,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_Rotatewall_2_Temple29_Room1-2",
+        "position": [
+          10.14,
+          5.55,
+          -52.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91003232,
+        "componentsInfo": {
+          "91062434": {
+            "bindLevelItemIds": [
+              91003434,
+              91003637,
+              91063606
+            ],
+            "initPosition": [
+              10.14,
+              5.55,
+              -52.34
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "91062485": {
+            "rotationStates": [
+              {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "state": 0,
+                "duration": 0.5
+              },
+              {
+                "rotation": [
+                  0,
+                  90,
+                  0
+                ],
+                "state": 1,
+                "duration": 0.5
+              }
+            ]
+          }
+        },
+        "configId": 619,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79408253": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room4",
+        "position": [
+          202.35,
+          -3.73,
+          56.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79408253,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          15.13,
+          8.83,
+          10.23
+        ],
+        "isActive": true
+      },
+      "91003237": {
+        "majorCompId": 91062626,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_Rotatecube_Temple29_Room2-1",
+        "position": [
+          71.34,
+          4.12,
+          -53.17
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91003237,
+        "componentsInfo": {
+          "91062626": {
+            "rotationStates": [
+              {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "state": 0,
+                "duration": 0.5
+              },
+              {
+                "rotation": [
+                  90,
+                  0,
+                  0
+                ],
+                "state": 1,
+                "duration": 0.5
+              }
+            ]
+          },
+          "91062631": {
+            "bindLevelItemIds": [
+              91004327,
+              91004316,
+              91004317,
+              91004319
+            ],
+            "initPosition": [
+              71.34,
+              4.12,
+              -53.17
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 620,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79357066": {
+        "majorCompId": 76239567,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_SpikeGroup_3_Room2",
+        "position": [
+          83.72,
+          -2.21,
+          -60.82
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79357066,
+        "componentsInfo": {
+          "76239567": {
+            "spikeIdGroups": [
+              {
+                "spikeIds": [
+                  91067922,
+                  91067921,
+                  91067923,
+                  91067924
+                ]
+              }
+            ]
+          }
+        },
+        "configId": 446,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003238": {
+        "majorCompId": 91062744,
+        "owner": "钟雪儿",
+        "EditorName": "P_LevelItem_RotateRoom_3_Temple29",
+        "position": [
+          150.6,
+          0.02,
+          -38.78
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 91003238,
+        "componentsInfo": {
+          "91062744": {
+            "rotationStates": [
+              {
+                "rotation": [
+                  0,
+                  90,
+                  0
+                ],
+                "state": 0,
+                "duration": 0.5
+              },
+              {
+                "rotation": [
+                  0,
+                  90,
+                  90
+                ],
+                "state": 1,
+                "duration": 0.5
+              }
+            ]
+          },
+          "91062746": {
+            "bindLevelItemIds": [
+              91004356
+            ],
+            "initPosition": [
+              150.6,
+              0.02,
+              -38.78
+            ],
+            "initRotation": [
+              0,
+              0.71,
+              0,
+              0.71
+            ]
+          }
+        },
+        "configId": 607,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79357003": {
+        "majorCompId": 76239567,
+        "owner": "钟雪儿",
+        "EditorName": "P_Levelltem_SpikeGroup_2_Room2",
+        "position": [
+          76.11,
+          -2.93,
+          -60.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79357003,
+        "componentsInfo": {
+          "76239567": {
+            "spikeIdGroups": [
+              {
+                "spikeIds": [
+                  91067910,
+                  91067913,
+                  91067914,
+                  91067915
+                ]
+              },
+              {
+                "spikeIds": [
+                  91067919,
+                  91067918,
+                  91067917,
+                  91067920
+                ]
+              }
+            ]
+          }
+        },
+        "configId": 446,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79356408": {
+        "majorCompId": 50866965,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          59.15,
+          -5.46,
+          -45
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79356408,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79353723": {
+        "majorCompId": 56996091,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Stela_Room3",
+        "position": [
+          182.08,
+          -1.95,
+          -37.11
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 79353723,
+        "configId": 278,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003645": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_2_Room1-2",
+        "position": [
+          -3.03,
+          2.11,
+          -53
+        ],
+        "rotation": [
+          0,
+          180,
+          90
+        ],
+        "id": 91003645,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79353175": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_TempleComponent_MachineGate_8m_Room3",
+        "position": [
+          190.78,
+          -1.89,
+          -37.09
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 79353175,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91003646": {
+        "majorCompId": 55701939,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_FireMechanism_3_Room1-2",
+        "position": [
+          -3.03,
+          0.67,
+          -53
+        ],
+        "rotation": [
+          0,
+          180,
+          90
+        ],
+        "id": 91003646,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 0,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79342535": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room5",
+        "position": [
+          203.3,
+          -1.47,
+          69.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79342535,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          36.03,
+          8.89,
+          11.35
+        ],
+        "isActive": true
+      },
+      "79240392": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_Room1_2",
+        "position": [
+          7.08,
+          1.61,
+          -87.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79240392,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          19.8,
+          8.83,
+          15.63
+        ],
+        "isActive": true
+      },
+      "78181142": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Temple_StoneStatueBase",
+        "position": [
+          -0.94,
+          -5.38,
+          -123.24
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 78181142,
+        "componentsInfo": {
+          "53631173": {
+            "canReturn": true,
+            "noticeKey": "STATUEGUIDE_TEMPLE_29",
+            "realCharacters": "PUZZLE",
+            "tempPetTemplateId": 100260001,
+            "guideId": 104900
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "canReturn": true,
+          "noticeKey": "STATUEGUIDE_TEMPLE_29",
+          "realCharacters": "PUZZLE",
+          "tempPetTemplateId": 100260001,
+          "guideId": 104900
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002934": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (9)",
+        "position": [
+          133.73,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002934,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              133.73,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91002931": {
+        "majorCompId": 58031210,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (6)",
+        "position": [
+          124.68,
+          -4.39,
+          -25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91002931,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              124.68,
+              -4.39,
+              -25.64
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -7.5
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "全局_Temple_29",
+    "spawners": [
+      78177674,
+      90997958,
+      90999877,
+      91062356,
+      91063041,
+      91063045
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2029/Sandbox_78176944_GraphRef.asset",
+    "sightLevel": -1,
+    "enableFinishMark": false,
+    "forceSync": true,
+    "id": 78176944,
+    "chunk": 1019872
+  }
+}

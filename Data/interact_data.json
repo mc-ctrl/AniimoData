@@ -1,0 +1,6771 @@
+{
+  "1012": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "actionName": 1273388026,
+    "checkBlock": 1
+  },
+  "103002": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "isIgnoreDisCheck": 1,
+    "actionName": 2140015128
+  },
+  "1013": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actionName": 1124450606,
+    "stopAnim": 1,
+    "isLocationConflictByCancel": true,
+    "demandLocationChange": 1
+  },
+  "1014": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actionName": 1839155976,
+    "stopAnim": 1,
+    "isLocationConflictByCancel": true,
+    "demandLocationChange": 1
+  },
+  "1015": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actionName": 1851714659,
+    "stopAnim": 1,
+    "isLocationConflictByCancel": true,
+    "demandLocationChange": 1
+  },
+  "1016": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actionName": 1413551750,
+    "stopAnim": 1,
+    "isLocationConflictByCancel": true,
+    "demandLocationChange": 1
+  },
+  "334": {
+    "actionName": 1157065405,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "323": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60002
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "324": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60003
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "325": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60004
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "328": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60007
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "329": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60008
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "331": {
+    "actionName": 1480302778,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "335": {
+    "actionName": 1490955336,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Gift.png"
+  },
+  "6": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "type": 6,
+    "interactiveDist": 2,
+    "actionName": 1916494649
+  },
+  "7": {
+    "actWhenArrive": 0,
+    "faceToTarget": 1,
+    "interactiveDist": 25,
+    "actionName": 1749871482
+  },
+  "337": {
+    "faceToTarget": 1,
+    "actionTime": 4,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Survey.png",
+    "startAnim": "Story_TouchMiddle_Start",
+    "endAnim": "Story_TouchMiddle_End",
+    "loopAnim": "Story_TouchMiddle_Loop",
+    "checkBlock": 1,
+    "faceToInteractions": 1,
+    "demandLocationChange": true,
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "type": 1,
+    "actionName": 1980241203,
+    "interactiveForceDist": 1,
+    "isLocationConflictByCancel": true
+  },
+  "338": {
+    "iconId": "$UI_Icon_InteractionTitle_Clean.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop_Digging",
+    "actionName": 1254036493,
+    "type": 1
+  },
+  "339": {
+    "iconId": "$UI_HomeToplogo_Icon_Storage.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "openUI",
+        [
+          410
+        ],
+        1
+      ]
+    ],
+    "actionName": 1543254023,
+    "type": 164
+  },
+  "340": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          120
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1678227102,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "341": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          121
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1263769737,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "342": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          122
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1557926028,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "343": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          123
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1544051149,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "344": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          124
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1295908537,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "345": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          125
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1496163904,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "346": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          126
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1726402388,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "347": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          127
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1125333963,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "349": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          129
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1474721359,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "350": {
+    "actionName": 1654017547,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Levelup.png"
+  },
+  "351": {
+    "faceToTarget": 1,
+    "events": [
+      [
+        "dialogue",
+        [
+          70002541
+        ],
+        1
+      ]
+    ],
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "interactiveDist": 1.5,
+    "checkAngle": 180
+  },
+  "352": {
+    "iconId": "$UI_Icon_InteractionTitle_Collect.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_CollectLoop",
+    "actionName": 1670014715,
+    "type": 1
+  },
+  "355": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 2109202835,
+    "type": 1
+  },
+  "356": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1791024694,
+    "type": 1
+  },
+  "358": {
+    "iconId": "$UI_Icon_InteractionTitle_Handwork.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1528679600,
+    "type": 1
+  },
+  "359": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1160916204,
+    "type": 1
+  },
+  "360": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "type": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 1604324265,
+    "checkBlock": 1
+  },
+  "361": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "openActiveDungeon",
+        [
+          10001
+        ],
+        1
+      ]
+    ],
+    "actionName": 1762743378,
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveDist": 3
+  },
+  "19": {
+    "actionName": 2110212895,
+    "hotkeyType": "Player/SpecialAbility"
+  },
+  "362": {
+    "iconId": "$UI_Icon_InteractionTitle_Play.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1149765999,
+    "type": 1
+  },
+  "10004": {
+    "iconId": "$UI_Icon_InteractionTitle_Extraction.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "interactiveDist": 10,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "eggShipForceExit",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1132017629,
+    "checkBlock": 1
+  },
+  "10301": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          4
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1740396287
+  },
+  "364": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "isLocationConflictByCancel": true,
+    "loopAnim": "Story_TouchMiddle_Loop",
+    "actionTime": 4,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchMiddle_Start",
+    "endAnim": "Story_TouchMiddle_End",
+    "interactiveForceDist": 4,
+    "checkBlock": 1,
+    "interactiveDist": 4,
+    "actionName": 1224699645,
+    "faceToInteractions": 1
+  },
+  "365": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "actionName": 2000065710,
+    "interactiveIconDist": 1.8,
+    "type": 1,
+    "interactiveDist": 1.5
+  },
+  "366": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addCustomVariable",
+        [
+          1032,
+          1
+        ],
+        1
+      ]
+    ],
+    "actionName": 1090559453,
+    "interactiveIconDist": 2.5,
+    "type": 1,
+    "interactiveDist": 3
+  },
+  "367": {
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_SitDown.png",
+    "actionName": 1622890101
+  },
+  "368": {
+    "iconId": "$UI_HomeToplogo_Icon_Power.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1453855563,
+    "type": 1
+  },
+  "369": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addCustomVariable",
+        [
+          1032,
+          1
+        ],
+        1
+      ]
+    ],
+    "actionName": 1356727161,
+    "interactiveIconDist": 2.5,
+    "demandAnim": true,
+    "demandLocationChange": true,
+    "isAnimConflictByCancel": true,
+    "isLocationConflictByCancel": true,
+    "type": 1,
+    "stopMove": 1,
+    "checkBlock": 1,
+    "interactiveDist": 3
+  },
+  "370": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 2128107346,
+    "type": 1
+  },
+  "371": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1447868109,
+    "type": 1
+  },
+  "403": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 2029458664
+  },
+  "372": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1560183064,
+    "type": 1
+  },
+  "373": {
+    "iconId": "$UI_HomeToplogo_Icon_Mall.png",
+    "interactiveDist": 3,
+    "events": [
+      [
+        "openUI",
+        [
+          416
+        ],
+        1
+      ]
+    ],
+    "actionName": 1471426661,
+    "type": 165
+  },
+  "374": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "isLocationConflictByCancel": true,
+    "loopAnim": "Float_Idle",
+    "startAnim": "Float_Start",
+    "actionTime": 3,
+    "interactiveDist": 2,
+    "changeToPlayer": 1
+  },
+  "375": {
+    "faceToTarget": 1,
+    "changeToPlayer": 1,
+    "demandModelChange": true,
+    "isModelConflictByCancel": true,
+    "interactiveDist": 1.2,
+    "interactiveForceDist": 0.55,
+    "actionName": 1710447717,
+    "checkBlock": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "demandAnim": true
+  },
+  "376": {
+    "actionName": 1138026157,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "demandAnim": true
+  },
+  "377": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "isLocationConflictByCancel": true,
+    "interactiveForceDist": 1,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToInteractions": 1
+  },
+  "378": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actionName": 2120348354,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "379": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actionName": 1299441659,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "381": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actionName": 2121745320,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "382": {
+    "faceToTarget": 1,
+    "changeToPlayer": 1,
+    "demandModelChange": true,
+    "isModelConflictByCancel": true,
+    "interactiveDist": 1.5,
+    "interactiveForceDist": 0.65,
+    "actionName": 1665068627,
+    "checkBlock": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "demandAnim": true
+  },
+  "383": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1.2,
+    "interactiveForceDist": 0.6,
+    "actionName": 1386430750,
+    "checkBlock": 1,
+    "changeToPlayer": 1
+  },
+  "384": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1.5,
+    "interactiveForceDist": 0.8,
+    "actionName": 2088377904,
+    "checkBlock": 1,
+    "changeToPlayer": 1
+  },
+  "385": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "grabEggHatchEgg",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1756130165,
+    "checkAngle": 90
+  },
+  "386": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "grabEggHatchCollectEgg",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1881942215,
+    "checkAngle": 90
+  },
+  "387": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "grabEggHatchRobEgg",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 2020976700,
+    "checkAngle": 90
+  },
+  "101001": {
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actionName": 1178853568
+  },
+  "125": {
+    "actionName": 1447367218,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "126": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "interactiveDist": 1.5,
+    "checkBlock": 1
+  },
+  "133": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "type": 81,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1884334830,
+    "checkBlock": 1
+  },
+  "20": {
+    "actionName": 1638211285,
+    "hotkeyType": "Player/Jump"
+  },
+  "21": {
+    "actionName": 2130620907,
+    "hotkeyType": "Player/SpecialAbility"
+  },
+  "222": {
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actionName": 1526823317
+  },
+  "25": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "actionName": 1440022752,
+    "checkBlock": 1
+  },
+  "26": {
+    "iconId": "$UI_Icon_MarkPoint_Camp.png",
+    "faceToTarget": 1,
+    "checkAngle": 30,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1845462860,
+    "checkBlock": 1
+  },
+  "27": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "actionName": 1874220420,
+    "checkBlock": 1
+  },
+  "28": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1680610137
+  },
+  "29": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 2025179850
+  },
+  "30": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1973343908
+  },
+  "32": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1891929893
+  },
+  "33": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1372102338
+  },
+  "327": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60006
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "36": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "actionName": 1860650084
+  },
+  "332": {
+    "actionName": 1796450314,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "333": {
+    "actionName": 1729477099,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Therapy.png"
+  },
+  "39": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1150345498
+  },
+  "353": {
+    "iconId": "$UI_Icon_InteractionTitle_Drink.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1709612437,
+    "type": 1
+  },
+  "41": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1994579092
+  },
+  "42": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1394414815
+  },
+  "43": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1314774152
+  },
+  "391": {
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actionName": 2128706925,
+    "interactiveDist": 2,
+    "checkBlock": 1
+  },
+  "427": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1.5,
+    "checkBlock": 0,
+    "actWhenArrive": 0,
+    "actionTime": 3,
+    "actionName": 2080545025,
+    "changeToPlayer": 1
+  },
+  "431": {
+    "iconId": "$UI_Icon_InteractionTitle_Trade.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          27
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1630206917
+  },
+  "432": {
+    "iconId": "$UI_Icon_InteractionTitle_Trade.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          31
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1605569276
+  },
+  "172": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "endAnim": "Sit_Read_End",
+    "loopAnim": "Sit_Read_Loop",
+    "actWhenArrive": 0,
+    "startAnim": "Sit_Read_Start",
+    "actionName": 1652995719,
+    "demandAnim": true
+  },
+  "439": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1,
+    "conditionId": [
+      240700142
+    ],
+    "actWhenArrive": 0,
+    "type": 120,
+    "actionName": 2011622009,
+    "checkBlock": 1
+  },
+  "443": {
+    "actionName": 1123182573,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Hug.png"
+  },
+  "444": {
+    "actionName": 1383547762,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Retrieve.png"
+  },
+  "449": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addbuff",
+        [
+          6004002,
+          -1
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 2.5,
+    "interactiveDist": 3,
+    "actionName": 1550368919
+  },
+  "453": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addbuff",
+        [
+          6004003,
+          -1
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 2.5,
+    "interactiveDist": 3,
+    "actionName": 1203994994
+  },
+  "455": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 5,
+    "checkAngle": 180,
+    "actCooldown": 20,
+    "actWhenArrive": 0,
+    "type": 1,
+    "actionName": 1297486923
+  },
+  "456": {
+    "actionName": 1433335302,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "457": {
+    "iconId": "$UI_Icon_InteractionTitle_Dry.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 2007521584,
+    "type": 1
+  },
+  "462": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1598372030
+  },
+  "463": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1855907189
+  },
+  "464": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 5,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "type": 1,
+    "actionName": 1975737049
+  },
+  "465": {
+    "iconId": "$UI_Icon_MarkPoint_LeylineTree.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actionName": 1955433646,
+    "type": 24,
+    "interactiveDist": 4,
+    "events": [
+      [
+        "activeLeylineTree",
+        [
+          200027
+        ],
+        1
+      ],
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ]
+    ]
+  },
+  "468": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "joinMultiAction",
+        [
+          801118
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "actionName": 1158077104,
+    "checkAngle": 180
+  },
+  "469": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "playAction",
+        [
+          801119
+        ],
+        1
+      ],
+      [
+        "clearEmotionAction",
+        [
+          103012
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "actionName": 1205421626,
+    "checkAngle": 180
+  },
+  "470": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "autoFollow",
+        {},
+        1
+      ],
+      [
+        "clearEmotionAction",
+        [
+          103011
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "actionName": 2067591242,
+    "checkAngle": 180
+  },
+  "471": {
+    "actionName": 1814338096,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "472": {
+    "actionName": 2084219090,
+    "interactiveDist": 2,
+    "interactiveIconDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "473": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "playAction",
+        [
+          801120
+        ],
+        1
+      ]
+    ],
+    "actionName": 1592328031,
+    "interactiveIconDist": 2
+  },
+  "204": {
+    "actionName": 1995019051,
+    "type": 84,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "205": {
+    "actionName": 1485066332,
+    "type": 85,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "404": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 2010795413
+  },
+  "405": {
+    "actionName": 1751389936,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_CallPet.png"
+  },
+  "410": {
+    "iconId": "$UI_Icon_InteractionTitle_Dizi.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "playFlute",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "actionName": 1655357710
+  },
+  "411": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1904357120
+  },
+  "412": {
+    "actionName": 1677322726,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "504": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1175324457
+  },
+  "272": {
+    "actionName": 1748129391,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_HomeToplogo_Icon_Set.png"
+  },
+  "208": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveDist": 5,
+    "actionName": 1126028115
+  },
+  "507": {
+    "actionName": 1609942209,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "509": {
+    "actionName": 1385001546,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "510": {
+    "iconId": "$UI_Icon_InteractionTitle_Survey.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionName": 1283332052
+  },
+  "511": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionName": 2021015601
+  },
+  "500": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1218279496
+  },
+  "600": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1258989700
+  },
+  "606": {
+    "actionName": 1556288049,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "608": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11126,
+          15
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "conditionId": [
+      240700137
+    ],
+    "actionName": 1524487410,
+    "checkBlock": 1
+  },
+  "610": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11128,
+          15
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "conditionId": [
+      240700139
+    ],
+    "actionName": 1955041571,
+    "checkBlock": 1
+  },
+  "613": {
+    "interactiveDist": 3,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11123,
+          2
+        ],
+        1
+      ],
+      [
+        "getReward",
+        [
+          11027
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 3,
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1841957859,
+    "conditionId": [
+      240700134
+    ]
+  },
+  "615": {
+    "interactiveDist": 3,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11123,
+          2
+        ],
+        1
+      ],
+      [
+        "getReward",
+        [
+          11029
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 3,
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1732565236,
+    "conditionId": [
+      240700136
+    ]
+  },
+  "617": {
+    "actionName": 1299672548,
+    "interactiveDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "74": {
+    "actionName": 1311857504,
+    "interactiveDist": 2
+  },
+  "75": {
+    "actionName": 1655446241,
+    "interactiveDist": 2
+  },
+  "76": {
+    "actionName": 1821703050,
+    "interactiveDist": 2
+  },
+  "77": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actCooldown": 6,
+    "actWhenArrive": 0,
+    "actionTime": 1,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actionName": 1349426033,
+    "interactiveDist": 3
+  },
+  "78": {
+    "actionName": 1706788858,
+    "interactiveDist": 2
+  },
+  "79": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 25,
+    "actionName": 1491294145
+  },
+  "80": {
+    "actionName": 1874778005,
+    "interactiveDist": 3,
+    "type": 18,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "1017": {
+    "actionName": 2072561286,
+    "interactiveDist": 12,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "1018": {
+    "demandLocationChange": 1,
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1867307363
+  },
+  "1019": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1784797326
+  },
+  "1020": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1490678786
+  },
+  "1021": {
+    "demandLocationChange": 1,
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1512212559
+  },
+  "1022": {
+    "actionName": 1878345104,
+    "interactiveDist": 5,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "1023": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1350906780
+  },
+  "1024": {
+    "iconId": "$UI_Icon_InteractionTitle_Camera.png",
+    "interactiveDist": 15,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1076406507
+  },
+  "84": {
+    "hotkeyType": "Player/SpecialAbility"
+  },
+  "1026": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1752489512
+  },
+  "1027": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "interactiveDist": 1.2,
+    "actionName": 1232375956
+  },
+  "1028": {
+    "actionName": 1727459903,
+    "faceToTarget": 1,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "502": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1880690730
+  },
+  "203": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          8
+        ],
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "conditionId": [
+      8000013
+    ],
+    "interactiveForceDist": 0.8,
+    "actionName": 2115450377,
+    "interactiveIconDist": 1.5,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "1031": {
+    "actionName": 1565046554,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "1032": {
+    "actionName": 1488011457,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "1033": {
+    "actionName": 1628910592,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "1034": {
+    "iconId": "$UI_Icon_InteractionTitle_Vlog.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actionName": 1913899699,
+    "interactiveDist": 16
+  },
+  "1035": {
+    "actionName": 1604815295,
+    "faceToTarget": 1,
+    "interactiveDist": 5,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "1036": {
+    "actionName": 1388973175,
+    "faceToTarget": 1,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "1037": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "conditionId": [
+      371300001
+    ],
+    "actionName": 1866951320,
+    "noCheckBefore": 1
+  },
+  "1038": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 5,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1076039401
+  },
+  "1039": {
+    "demandLocationChange": 1,
+    "interactiveDist": 5,
+    "checkAngle": 90,
+    "stopAnim": 1,
+    "actWhenArrive": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1077435456
+  },
+  "1040": {
+    "iconId": "$UI_Icon_InteractionTitle_Survey.png",
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "actionName": 1622034821,
+    "interactiveDist": 15
+  },
+  "1041": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actionName": 1462409996,
+    "interactiveDist": 3
+  },
+  "1042": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 5,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1836398733
+  },
+  "1043": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 5,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1914037234
+  },
+  "1050": {
+    "iconId": "$UI_Icon_InteractionTitle_Survey.png",
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "actionName": 1987402746,
+    "interactiveDist": 3
+  },
+  "100": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ],
+      [
+        "setNpcContentSelf",
+        [
+          100
+        ],
+        1
+      ],
+      [
+        "guideEffectToLeylineTree",
+        [
+          "Eff_Env_TeleportFlower_Guide",
+          83998397,
+          "0,1,0"
+        ],
+        1,
+        3
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 1085480967,
+    "checkAngle": 90
+  },
+  "102": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "createPuppetByRoot",
+        [
+          1101910004,
+          0,
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        1
+      ],
+      [
+        "petTraitStateSet",
+        [
+          1019100,
+          1,
+          2
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 4,
+    "interactiveDist": 0.8,
+    "actionName": 1650826367
+  },
+  "103": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "createPuppetByRoot",
+        [
+          1101910005,
+          0,
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        1
+      ],
+      [
+        "petTraitStateSet",
+        [
+          1019100,
+          1,
+          2
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 4,
+    "interactiveDist": 0.8,
+    "actionName": 1126626790
+  },
+  "104": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 25,
+    "actionName": 1990946909,
+    "conNotice": 2149
+  },
+  "105": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 25,
+    "actionName": 1299691151,
+    "conNotice": 2150
+  },
+  "46": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1974445576
+  },
+  "47": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1945043642
+  },
+  "48": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1201872561
+  },
+  "49": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1486584278
+  },
+  "53": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "type": 15,
+    "interactiveDist": 2,
+    "actionName": 1883128360
+  },
+  "54": {
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1635135142
+  },
+  "122": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 1,
+    "actionName": 1422159005
+  },
+  "123": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "setCustomVariable",
+        [
+          1008,
+          1
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveIconDist": 4,
+    "interactiveDist": 1.5,
+    "actionName": 1776760857
+  },
+  "10006": {
+    "iconId": "$UI_Icon_InteractionTitle_Position.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "interactiveDist": 10,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "eggShipEnterOutSkirt",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1908184678,
+    "checkBlock": 1
+  },
+  "128": {
+    "actionName": 2112725338,
+    "interactiveDist": 3,
+    "type": 18,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "129": {
+    "actionName": 1631645699,
+    "interactiveDist": 2,
+    "type": 20,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "131": {
+    "iconId": "$UI_Icon_MarkPoint_LeylineTree.png",
+    "faceToTarget": 1,
+    "checkAngle": 120,
+    "interactiveDist": 4,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "openUI",
+        [
+          60
+        ],
+        1
+      ]
+    ],
+    "actionName": 1486133550,
+    "checkBlock": 1
+  },
+  "132": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "type": 80,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1614277615,
+    "checkBlock": 1
+  },
+  "134": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "actionName": 2142950790,
+    "checkBlock": 1
+  },
+  "135": {
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "type": 82,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchHigh_Loop",
+    "endAnim": "Story_TouchHigh_End",
+    "loopAnim": "Story_TouchHigh_Loop",
+    "actionName": 1848203185,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "121": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addCustomVariable",
+        [
+          1032,
+          1
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 2.5,
+    "interactiveDist": 3,
+    "actionName": 1930608070
+  },
+  "55": {
+    "actionName": 2069864061,
+    "interactiveDist": 2
+  },
+  "388": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "interactiveForceDist": 0.6,
+    "actionName": 1442609182,
+    "interactiveDist": 1.5,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "389": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actionName": 1812029000,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "57": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "actionName": 1162164286,
+    "interactiveIconDist": 4,
+    "type": 1,
+    "interactiveDist": 0.8
+  },
+  "392": {
+    "iconId": "$UI_Icon_InteractionTitle_Gift.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actionName": 1952058597,
+    "interactiveDist": 2,
+    "checkBlock": 1
+  },
+  "393": {
+    "actionName": 2096073605,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actCooldown": 4
+  },
+  "394": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "openUI",
+        [
+          502
+        ],
+        1
+      ]
+    ],
+    "actionName": 2110422655,
+    "checkBlock": 0
+  },
+  "395": {
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png",
+    "interactiveDist": 0.4,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionName": 1773800853
+  },
+  "396": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "openUI",
+        [
+          1200
+        ],
+        1
+      ]
+    ],
+    "actionName": 1383088821,
+    "checkBlock": 0
+  },
+  "397": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "openUI",
+        [
+          806
+        ],
+        1
+      ]
+    ],
+    "actionName": 1472463324,
+    "checkBlock": 0
+  },
+  "398": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "playDialogueGraph",
+        [
+          90999772
+        ],
+        1
+      ]
+    ],
+    "actionName": 1696682780,
+    "checkBlock": 0
+  },
+  "399": {
+    "actionName": 1686782440,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Spinning.png"
+  },
+  "63": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "toast",
+        [
+          2123
+        ],
+        1
+      ]
+    ],
+    "actionName": 1289182004,
+    "interactiveDist": 1.5
+  },
+  "413": {
+    "iconId": "$UI_Icon_InteractionTitle_Liked.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1953871691,
+    "type": 1
+  },
+  "414": {
+    "actionName": 1992136160,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "415": {
+    "actionName": 1678856828,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_HomeToplogo_Icon_Productivity.png"
+  },
+  "416": {
+    "iconId": "$UI_Icon_InteractionTitle_CampManage.png",
+    "interactiveDist": 2,
+    "actionName": 1999713492,
+    "showWhenCantAct": 61001,
+    "type": 1
+  },
+  "417": {
+    "actionName": 2001328636,
+    "interactiveDist": 3,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Gohome.png"
+  },
+  "418": {
+    "actionName": 1458682608,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "67": {
+    "faceToTarget": 1,
+    "checkAngle": 30,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "checkBlock": 1,
+    "type": 14,
+    "interactiveDist": 2.5,
+    "actionName": 2086273947
+  },
+  "419": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "isLocationConflictByCancel": true,
+    "actionTime": 3,
+    "changeToPlayer": 1,
+    "startAnim": "Float_Start",
+    "events": [
+      [
+        "blackScreen",
+        [
+          127
+        ],
+        1
+      ]
+    ],
+    "loopAnim": "Float_Idle",
+    "interactiveDist": 2
+  },
+  "420": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "actPutFireworks",
+        [
+          84669857,
+          90880468,
+          10000018
+        ],
+        1
+      ]
+    ],
+    "actCooldown": 10,
+    "actionName": 1794726045,
+    "type": 1,
+    "checkAngle": 180
+  },
+  "421": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "actPutFireworks",
+        [
+          85691390,
+          90880511,
+          10000018
+        ],
+        1
+      ]
+    ],
+    "actCooldown": 10,
+    "actionName": 1684016910,
+    "type": 1,
+    "checkAngle": 180
+  },
+  "422": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "actPutFireworks",
+        [
+          85693046,
+          90880522,
+          10000018
+        ],
+        1
+      ]
+    ],
+    "actCooldown": 10,
+    "actionName": 1774220456,
+    "type": 1,
+    "checkAngle": 180
+  },
+  "423": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "actPutFireworks",
+        [
+          85693290,
+          90880531,
+          10000018
+        ],
+        1
+      ]
+    ],
+    "actCooldown": 10,
+    "actionName": 1556936283,
+    "type": 1,
+    "checkAngle": 180
+  },
+  "424": {
+    "actionName": 1096263553,
+    "interactiveDist": 4,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Drink.png"
+  },
+  "72": {
+    "actionName": 2136775906,
+    "interactiveDist": 2
+  },
+  "425": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ],
+      [
+        "setNpcContentSelf",
+        [
+          100
+        ],
+        1
+      ],
+      [
+        "guideEffectToLeylineTree",
+        [
+          "Eff_Env_TeleportFlower_Guide",
+          83998397,
+          "0,1,0"
+        ],
+        1,
+        3
+      ]
+    ],
+    "checkBlock": 1,
+    "interactiveDist": 4,
+    "actionName": 1331413852
+  },
+  "426": {
+    "iconId": "$UI_Icon_InteractionTitle_Therapy.png",
+    "interactiveDist": 3,
+    "events": [
+      [
+        "playSound",
+        [
+          "SFX_SceneObject_ARK_Sign_Repair"
+        ],
+        1
+      ],
+      [
+        "playDialogueGraph",
+        [
+          87365742
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 0,
+    "actWhenArrive": 0,
+    "actionTime": 3,
+    "actionName": 1100101078,
+    "changeToPlayer": 1
+  },
+  "428": {
+    "iconId": "$UI_Icon_InteractionTitle_Trade.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          28
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1613830168
+  },
+  "429": {
+    "iconId": "$UI_Icon_InteractionTitle_Trade.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          33
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1637053455
+  },
+  "430": {
+    "iconId": "$UI_Icon_InteractionTitle_Trade.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          32
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1957183274
+  },
+  "434": {
+    "iconId": "$UI_Icon_InteractionTitle_Trade.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          4
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1166419709
+  },
+  "435": {
+    "iconId": "$UI_Icon_InteractionTitle_SitDown.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "setNpcContent",
+        [
+          88671856,
+          401081
+        ],
+        1
+      ],
+      [
+        "setNpcContent",
+        [
+          90821909,
+          401081
+        ],
+        1
+      ],
+      [
+        "setNpcContent",
+        [
+          90821898,
+          401081
+        ],
+        1
+      ]
+    ],
+    "actionName": 1774057502,
+    "checkBlock": 1
+  },
+  "436": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 4,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionName": 2103980948
+  },
+  "138": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "interactiveDist": 4.5,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ],
+      [
+        "setNpcContentSelf",
+        [
+          105
+        ],
+        1
+      ],
+      [
+        "playCutsceneSelf",
+        [
+          "$P_Item_Temple_TempleEntrance_InActiveToActive.prefab",
+          1
+        ],
+        1
+      ]
+    ],
+    "actionName": 1145718041,
+    "changeToPlayer": 1
+  },
+  "437": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionName": 1301715477
+  },
+  "438": {
+    "interactiveDist": 4,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "conditionId": [
+      240700142
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1473880225
+  },
+  "440": {
+    "actWhenArrive": 0,
+    "interactiveDist": 1.5,
+    "iconId": "$UI_Icon_InteractionTitle_Lying.png",
+    "actionName": 1752299500
+  },
+  "142": {
+    "actionName": 1728839474,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actCooldown": 5
+  },
+  "445": {
+    "actionName": 1890135743,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Switch.png"
+  },
+  "446": {
+    "actionName": 1454984493,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Switch.png"
+  },
+  "447": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "isIgnoreDisCheck": 1,
+    "actionName": 1231000925
+  },
+  "448": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addbuff",
+        [
+          6004001,
+          -1
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 2.5,
+    "interactiveDist": 3,
+    "actionName": 1526562706
+  },
+  "450": {
+    "actionName": 1319908662,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_HomeGeneral.png"
+  },
+  "451": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addbuff",
+        [
+          6004004,
+          -1
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 2.5,
+    "interactiveDist": 3,
+    "actionName": 1446933332
+  },
+  "452": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addbuff",
+        [
+          6004005,
+          -1
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 2.5,
+    "interactiveDist": 3,
+    "actionName": 2102675807
+  },
+  "458": {
+    "actionName": 1512272601,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_HomeGeneral.png"
+  },
+  "459": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1105686696
+  },
+  "460": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1250714839
+  },
+  "461": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1731383183
+  },
+  "466": {
+    "iconId": "$UI_Icon_MarkPoint_LeylineTree.png",
+    "interactiveDist": 4,
+    "checkAngle": 90,
+    "actionName": 1441497911,
+    "type": 24,
+    "events": [
+      [
+        "interactLeylineTree",
+        [
+          200027
+        ],
+        1
+      ]
+    ]
+  },
+  "467": {
+    "iconId": "$UI_Icon_LeylinesTree_Nourish.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "interactNourish",
+        [
+          200027
+        ],
+        1
+      ]
+    ],
+    "actionName": 1254927467,
+    "type": 24
+  },
+  "474": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 5,
+    "events": [
+      [
+        "joinMultiAction",
+        [
+          801118
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "actionName": 1911046097,
+    "checkAngle": 180
+  },
+  "2151": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "checkForwardAngleRange": 160,
+    "checkAngle": 90,
+    "interactiveForceDist": 1.25,
+    "actionName": 1850007654,
+    "interactiveDist": 2,
+    "faceToTarget": 1,
+    "faceToInteractions": 1
+  },
+  "10008": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$Img_Map_Mark_Uderground_End.png",
+    "events": [
+      [
+        "enterRobEggDoor",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1560508113,
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveDist": 3
+  },
+  "10009": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "events": [
+      [
+        "activateRobEggUnderGroudPlace",
+        {},
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 82,
+    "interactiveDist": 3,
+    "actionName": 2087372341
+  },
+  "10010": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "interactiveDist": 3,
+    "interactiveForceDist": 2,
+    "actionName": 1327340698,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "230": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          4
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1110749204,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "601": {
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11121,
+          20
+        ],
+        1
+      ]
+    ],
+    "actionName": 1224961075,
+    "type": 120,
+    "checkBlock": 1,
+    "conditionId": [
+      240700131
+    ]
+  },
+  "602": {
+    "interactiveDist": 3,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11123,
+          2
+        ],
+        1
+      ],
+      [
+        "getReward",
+        [
+          11023
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1481648343,
+    "conditionId": [
+      240700132
+    ]
+  },
+  "605": {
+    "interactiveDist": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionTime": 0.1,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "openEnvObj",
+        {},
+        1
+      ],
+      [
+        "addEntityTag",
+        [
+          "TE_Env_Bait"
+        ],
+        1
+      ]
+    ],
+    "actionName": 1601982431,
+    "type": 1
+  },
+  "234": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          8
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1540478211,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "609": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11127,
+          15
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "conditionId": [
+      240700138
+    ],
+    "actionName": 2126473350,
+    "checkBlock": 1
+  },
+  "611": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11129,
+          15
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "conditionId": [
+      240700140
+    ],
+    "actionName": 1900196763,
+    "checkBlock": 1
+  },
+  "237": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          11
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1.5,
+    "actionName": 1761292229,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "614": {
+    "interactiveDist": 3,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11123,
+          2
+        ],
+        1
+      ],
+      [
+        "getReward",
+        [
+          11028
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 3,
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1843698645,
+    "conditionId": [
+      240700135
+    ]
+  },
+  "616": {
+    "actionName": 1972343943,
+    "interactiveDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "239": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          13
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1.5,
+    "actionName": 2110744362,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "619": {
+    "actionName": 1965016438,
+    "interactiveDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "620": {
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png",
+    "interactiveDist": 0.5,
+    "conditionId": [
+      670
+    ],
+    "actWhenArrive": 0,
+    "actionName": 1573081499,
+    "checkAngle": 180
+  },
+  "621": {
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png",
+    "interactiveDist": 0.5,
+    "conditionId": [
+      672
+    ],
+    "actWhenArrive": 0,
+    "actionName": 1312021961,
+    "checkAngle": 180
+  },
+  "622": {
+    "actionName": 1238106753,
+    "interactiveDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "623": {
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png",
+    "interactiveDist": 2,
+    "conditionId": [
+      673
+    ],
+    "actWhenArrive": 0,
+    "actionName": 1228131097
+  },
+  "624": {
+    "actionName": 1473299557,
+    "interactiveDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "625": {
+    "interactiveDist": 1.5,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11147,
+          20
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 2048694061,
+    "conditionId": [
+      240700142
+    ]
+  },
+  "626": {
+    "interactiveDist": 5,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "createEnvObjByRoot",
+        [
+          1200152,
+          0,
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        1
+      ],
+      [
+        "addCurPetBuff",
+        [
+          11148,
+          2
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1962136894,
+    "conditionId": [
+      240700143
+    ]
+  },
+  "627": {
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actCooldown": 10,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "getReward",
+        [
+          11030
+        ],
+        1
+      ],
+      [
+        "addCurPetBuff",
+        [
+          11152,
+          10
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1789573818,
+    "conditionId": [
+      240700144
+    ]
+  },
+  "628": {
+    "actionName": 1415642392,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_Peek.png"
+  },
+  "629": {
+    "actionName": 1407591620,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_Exit.png"
+  },
+  "630": {
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11121,
+          99
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1900184327,
+    "conditionId": [
+      240700145
+    ]
+  },
+  "631": {
+    "interactiveDist": 3,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11123,
+          2
+        ],
+        1
+      ],
+      [
+        "getReward",
+        [
+          11023
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1497758424,
+    "conditionId": [
+      240700131
+    ]
+  },
+  "632": {
+    "interactiveDist": 8,
+    "checkAngle": 180,
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "appearHelpSimple",
+        [
+          689
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1897582981,
+    "conditionId": [
+      90047
+    ]
+  },
+  "633": {
+    "actionName": 1412254417,
+    "interactiveDist": 1.5,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "634": {
+    "iconId": "$UI_Icon_InteractionTitle_BattleRoom.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1503827930
+  },
+  "635": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "stopMove": 1,
+    "events": [
+      [
+        "addCustomVariable",
+        [
+          1032,
+          1
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 2.5,
+    "interactiveDist": 5,
+    "actionName": 1494013272
+  },
+  "636": {
+    "actionName": 1299482837,
+    "interactiveDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "320": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1.2,
+    "checkAngle": 180,
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          3,
+          1
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 2060506275
+  },
+  "638": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1.5,
+    "checkBlock": 1,
+    "interactiveIconDist": 1.5,
+    "isIgnoreDisCheck": 1,
+    "actionName": 2007973368
+  },
+  "639": {
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11121,
+          99
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1618259837,
+    "conditionId": [
+      240700131
+    ]
+  },
+  "640": {
+    "interactiveDist": 3,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11123,
+          2
+        ],
+        1
+      ],
+      [
+        "getReward",
+        [
+          11023
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1132807426,
+    "conditionId": [
+      240700132
+    ]
+  },
+  "641": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "getReward",
+        [
+          11030
+        ],
+        1
+      ]
+    ],
+    "actCooldown": 10,
+    "actionName": 1269904985,
+    "type": 1,
+    "checkAngle": 180
+  },
+  "10001": {
+    "iconId": "$UI_Icon_InteractionTitle_OpenEgg.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "interactiveDist": 10,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "grabEggTransfer",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1715242807,
+    "checkBlock": 1
+  },
+  "273": {
+    "iconId": "$UI_HomeToplogo_Icon_Field.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop_Digging",
+    "actionName": 1553313007,
+    "type": 1
+  },
+  "274": {
+    "iconId": "$UI_Icon_InteractionTitle_Sow.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_SowLoop",
+    "actionName": 1899293732,
+    "type": 1
+  },
+  "650": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "openEnvObj",
+        {},
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 3,
+    "interactiveDist": 2,
+    "actionName": 1936621192
+  },
+  "276": {
+    "actionName": 2063974692,
+    "interactiveDist": 0.4,
+    "iconId": "$UI_HomeToplogo_Icon_Field.png"
+  },
+  "233": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          7
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1925652941,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "277": {
+    "iconId": "$UI_Icon_InteractionTitle_Harvest.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_HarvestLoop",
+    "actionName": 1263643330,
+    "type": 1
+  },
+  "279": {
+    "actionName": 1935921906,
+    "interactiveDist": 3,
+    "checkBlock": 1
+  },
+  "283": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "getFruit",
+        {},
+        1
+      ],
+      [
+        "setFlowerStateSelf",
+        [
+          5,
+          0
+        ],
+        1
+      ]
+    ],
+    "actionName": 1982267160,
+    "interactiveDist": 4
+  },
+  "161": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actionName": 1773960655,
+    "interactiveDist": 3,
+    "checkBlock": 1
+  },
+  "164": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openPicEx",
+        [
+          [
+            [
+              "$UI_Img_Shop_Poster_newMenu_01.png"
+            ]
+          ],
+          "53867605"
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 2,
+    "actionName": 2090341164,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "167": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "startSlotMachine",
+        [
+          56211542
+        ],
+        1
+      ]
+    ],
+    "actionName": 1604946636,
+    "checkBlock": 1
+  },
+  "168": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "conditionId": [
+      8000006
+    ],
+    "actionName": 2048007062,
+    "events": [
+      [
+        "dialogue",
+        [
+          90000236
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "169": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "interactiveDist": 4,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ]
+    ],
+    "actionName": 1369417711,
+    "checkBlock": 1
+  },
+  "171": {
+    "iconId": "$UI_Icon_InteractionTitle_SitDown.png",
+    "interactiveDist": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1823216703,
+    "checkBlock": 1
+  },
+  "174": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          3,
+          1
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "interactiveDist": 1.2,
+    "isIgnoreDisCheck": 1,
+    "actionName": 1398196634
+  },
+  "206": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 6,
+    "events": [
+      [
+        "playDialogueGraph",
+        [
+          59071196
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "handlePetEthnicGroup": 1,
+    "actionName": 1995161628,
+    "checkAngle": 90
+  },
+  "321": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 120,
+    "actWhenArrive": 0,
+    "actionTime": 1,
+    "actionTimeByPet": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchMiddle_Start",
+    "events": [
+      [
+        "dialogue",
+        [
+          90000257
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 3,
+    "checkBlock": 0,
+    "interactiveDist": 3,
+    "actionName": 1439518980,
+    "faceToInteractions": 1
+  },
+  "137": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1217469146
+  },
+  "1052": {
+    "actionName": 1746536357,
+    "interactiveDist": 3,
+    "checkAngle": 60,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "1053": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "checkForwardAngleRange": 120,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 2115746268
+  },
+  "1054": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 2061098897
+  },
+  "1056": {
+    "iconId": "$UI_Icon_InteractionTitle_SitDown.png",
+    "interactiveDist": 1.5,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionName": 1763720646,
+    "checkBlock": 0
+  },
+  "1057": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1189864960
+  },
+  "1058": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1828178140
+  },
+  "1059": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1979898377
+  },
+  "1060": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1639134891
+  },
+  "1061": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1721035604
+  },
+  "200": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          5
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1742972450,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "780": {
+    "startEffect": "Eff_SceneObject_DuneDisappear_Beach",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "actionTime": 1.4,
+    "actionTimeByPet": 0,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "DigEgg_Start",
+    "endAnim": "DigEgg_End",
+    "loopAnim": "DigEgg_Idle",
+    "checkBlock": 1,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2.5,
+    "actionName": 1105586087
+  },
+  "781": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "actionTime": 0.3,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkBlock": 1,
+    "type": 1,
+    "interactiveDist": 20,
+    "actionName": 1336868321
+  },
+  "782": {
+    "demandLocationChange": 1,
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "toast",
+        [
+          199411
+        ],
+        1
+      ]
+    ],
+    "actionName": 1282596613,
+    "stopAnim": 1,
+    "isLocationConflictByCancel": true,
+    "interactiveDist": 2
+  },
+  "31": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1219341983
+  },
+  "10002": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "grabEggSnatch",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1443816336,
+    "checkAngle": 90
+  },
+  "10003": {
+    "iconId": "$UI_Icon_InteractionTitle_Extraction.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "interactiveDist": 10,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "eggShipExit",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1277110167,
+    "checkBlock": 1
+  },
+  "120": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 2.5,
+    "actionName": 1924870677,
+    "checkBlock": 1
+  },
+  "160": {
+    "iconId": "$UI_Icon_LeylinesTree_Nourish.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "interactNourish",
+        [
+          200011
+        ],
+        1
+      ]
+    ],
+    "actionName": 1121537696,
+    "type": 24
+  },
+  "163": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openPicEx",
+        [
+          [
+            [
+              "$UI_Img_Shop_Poster_Divine.png"
+            ]
+          ],
+          "53363809"
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 2,
+    "actionName": 2050541528,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "1099": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1270309264
+  },
+  "1100": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1679854462
+  },
+  "166": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openPicEx",
+        [
+          [
+            [
+              "$UI_Img_Shop_Poster_Game.png"
+            ]
+          ],
+          "53868044"
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 2,
+    "actionName": 1490635625,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "35": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1126765569
+  },
+  "170": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "events": [
+      [
+        "openUI",
+        [
+          191,
+          1001
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 3,
+    "actionName": 2057878435,
+    "isLocationConflictByCancel": true,
+    "interactiveDist": 4,
+    "faceToInteractions": 1
+  },
+  "173": {
+    "faceToTarget": 1,
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "actionTime": 4,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchMiddle_Start",
+    "endAnim": "Story_TouchMiddle_End",
+    "loopAnim": "Story_TouchMiddle_Loop",
+    "checkBlock": 1,
+    "events": [
+      [
+        "setNpcContentSelf",
+        [
+          111
+        ],
+        1
+      ]
+    ],
+    "actionName": 1140902638,
+    "demandAnim": true
+  },
+  "1": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "actionName": 1668306938
+  },
+  "2": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "interactiveDist": 1.5,
+    "checkBlock": 1,
+    "actionName": 1845431935
+  },
+  "175": {
+    "actionName": 1875261643,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "4": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "type": 9,
+    "interactiveDist": 1.5,
+    "actionName": 1748632334
+  },
+  "1002": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 2100724346
+  },
+  "176": {
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "type": 82,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchMiddle_Loop",
+    "endAnim": "Story_TouchMiddle_End",
+    "loopAnim": "Story_TouchMiddle_Loop",
+    "actionName": 1478843450,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "101": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1540938131
+  },
+  "177": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "type": 83,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1316021233,
+    "checkBlock": 1
+  },
+  "202": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          7
+        ],
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "conditionId": [
+      8000012
+    ],
+    "interactiveForceDist": 0.8,
+    "actionName": 1148747762,
+    "interactiveIconDist": 1.5,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "178": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "type": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 1183819597,
+    "checkBlock": 1
+  },
+  "401": {
+    "actionName": 2127878247,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Play.png"
+  },
+  "179": {
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actionName": 1425411198
+  },
+  "180": {
+    "actionName": 1641904809,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "181": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 2080708608
+  },
+  "183": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1.2,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "type": 1,
+    "isIgnoreDisCheck": 0,
+    "actionName": 1811344520
+  },
+  "188": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actionName": 1770915286,
+    "checkBlock": 1
+  },
+  "189": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "showContent",
+        [
+          7
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "actionName": 2074387573
+  },
+  "190": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          1
+        ],
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "conditionId": [
+      8000009
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1350211045,
+    "interactiveIconDist": 1.5,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "192": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 1,
+    "checkAngle": 90,
+    "actionName": 1558234115,
+    "interactiveIconDist": 1,
+    "checkBlock": 1
+  },
+  "193": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 1,
+    "checkAngle": 90,
+    "actionName": 1300130975,
+    "interactiveIconDist": 1,
+    "checkBlock": 1
+  },
+  "194": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 1,
+    "checkAngle": 90,
+    "actionName": 1411984871,
+    "interactiveIconDist": 1,
+    "checkBlock": 1
+  },
+  "195": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 1,
+    "checkAngle": 90,
+    "actionName": 1469865552,
+    "interactiveIconDist": 1,
+    "checkBlock": 1
+  },
+  "196": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 1,
+    "checkAngle": 90,
+    "actionName": 1553263915,
+    "interactiveIconDist": 1,
+    "checkBlock": 1
+  },
+  "2152": {
+    "iconId": "$UI_Icon_InteractionTitle_SpeedUp.png",
+    "checkForwardAngleRange": 160,
+    "checkAngle": 90,
+    "interactiveForceDist": 1.25,
+    "actionName": 1629599521,
+    "interactiveDist": 2,
+    "faceToTarget": 1,
+    "faceToInteractions": 1
+  },
+  "2153": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "checkForwardAngleRange": 160,
+    "checkAngle": 90,
+    "interactiveForceDist": 1.25,
+    "actionName": 1704272049,
+    "interactiveDist": 2,
+    "faceToTarget": 1,
+    "faceToInteractions": 1
+  },
+  "2154": {
+    "iconId": "$UI_Icon_InteractionTitle_PutEgg.png",
+    "checkForwardAngleRange": 160,
+    "checkAngle": 90,
+    "interactiveForceDist": 1.25,
+    "actionName": 1944392129,
+    "interactiveDist": 2,
+    "faceToTarget": 1,
+    "faceToInteractions": 1
+  },
+  "2155": {
+    "iconId": "$UI_Icon_InteractionTitle_OpenEgg.png",
+    "checkForwardAngleRange": 160,
+    "checkAngle": 90,
+    "interactiveForceDist": 1.25,
+    "actionName": 1906140240,
+    "interactiveDist": 2,
+    "faceToTarget": 1,
+    "faceToInteractions": 1
+  },
+  "2156": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2
+  },
+  "390": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actionName": 1557870034,
+    "checkBlock": 1,
+    "demandAnim": true
+  },
+  "402": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 2,
+    "interactiveDist": 2,
+    "actionName": 1634816206
+  },
+  "406": {
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png",
+    "interactiveDist": 1.5,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 1.5,
+    "actionName": 1606230390
+  },
+  "407": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "interactiveDist": 1.5,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 1.5,
+    "actionName": 1966067292,
+    "checkBlock": 1
+  },
+  "408": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1224753179,
+    "checkBlock": 1
+  },
+  "409": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "type": 186,
+    "loopAnim": "Story_TouchHigh_Loop",
+    "actionName": 1286549587,
+    "interactiveIconDist": 2,
+    "startAnim": "Story_TouchHigh_Start",
+    "interactiveDist": 2
+  },
+  "102002": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actionName": 1723909129,
+    "checkBlock": 1
+  },
+  "503": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1175262267
+  },
+  "508": {
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png",
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionName": 1348664754
+  },
+  "603": {
+    "faceToTarget": 1,
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11125,
+          1
+        ],
+        1
+      ]
+    ],
+    "type": 120,
+    "actWhenArrive": 1,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "604": {
+    "actionName": 1242595081,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "127": {
+    "actionName": 1876353957,
+    "interactiveDist": 10,
+    "type": 21,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "247": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 1142405112
+  },
+  "100006": {
+    "actionName": 2105365091,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "100007": {
+    "actionName": 1629481737,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "100008": {
+    "actionName": 1842103447,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "155": {
+    "actionName": 1362644742,
+    "type": 85,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "100010": {
+    "actionName": 1560451598,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "156": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 1,
+    "events": [
+      [
+        "dialogue",
+        [
+          90000190
+        ],
+        1
+      ]
+    ],
+    "actionName": 1393766704,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "checkAngle": 90
+  },
+  "100012": {
+    "actionName": 1838656245,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Shower.png"
+  },
+  "100015": {
+    "actionName": 1422188480,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "100016": {
+    "actionName": 2119799189,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "100017": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1192831727,
+    "type": 1
+  },
+  "100018": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1383718970,
+    "type": 1
+  },
+  "100019": {
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 2010860655,
+    "type": 1
+  },
+  "100020": {
+    "actionName": 1711970817,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_SitDown.png"
+  },
+  "100021": {
+    "iconId": "$UI_Icon_InteractionTitle_SitDown.png",
+    "interactiveDist": 1.2,
+    "endAnim": "Home_SitRelax01_End",
+    "loopAnim": "Home_SitRelax01_Loop",
+    "actionName": 1646567758,
+    "startAnim": "Home_SitRelax01_Start"
+  },
+  "100022": {
+    "actionName": 1110623489,
+    "interactiveDist": 1.5,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "153": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "blackScreen",
+        [
+          901
+        ],
+        1
+      ],
+      [
+        "playSound",
+        [
+          "SFX_SceneObject_ARK_Sign_Repair"
+        ],
+        1
+      ],
+      [
+        "setNpcContentSelf",
+        [
+          801
+        ],
+        1
+      ],
+      [
+        "sendArkReward",
+        [
+          30001
+        ],
+        1
+      ]
+    ],
+    "actionName": 1530263616,
+    "checkBlock": 1,
+    "checkAngle": 90
+  },
+  "197": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          2
+        ],
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "conditionId": [
+      8000010
+    ],
+    "interactiveForceDist": 0.8,
+    "actionName": 2144171886,
+    "interactiveIconDist": 1.5,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "199": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          4
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1466514992,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "162": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "blackScreen",
+        [
+          901
+        ],
+        1
+      ],
+      [
+        "playSound",
+        [
+          "SFX_SceneObject_ARK_Sign_Repair"
+        ],
+        1
+      ],
+      [
+        "setNpcContentSelf",
+        [
+          802
+        ],
+        1
+      ],
+      [
+        "sendArkReward",
+        [
+          30002
+        ],
+        1
+      ]
+    ],
+    "actionName": 1929149689,
+    "checkBlock": 0,
+    "checkAngle": 180
+  },
+  "207": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveDist": 5,
+    "actionName": 2062644939
+  },
+  "211": {
+    "checkAngle": 180,
+    "targetTurnToPlayer": 1
+  },
+  "100014": {
+    "actionName": 1832802304,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "212": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1,
+    "actWhenArrive": 0,
+    "actionName": 1462876916,
+    "checkBlock": 1
+  },
+  "322": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60001
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "214": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "type": 82,
+    "actionName": 1095218635
+  },
+  "326": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60005
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "215": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "showPetBallHatch",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1449655061,
+    "checkAngle": 90
+  },
+  "185": {
+    "iconId": "$UI_Icon_InteractionTitle_SitDown.png",
+    "interactiveDist": 2.5,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1925980568,
+    "checkBlock": 0
+  },
+  "216": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "playDialogueGraph",
+        [
+          61641379
+        ],
+        1
+      ]
+    ],
+    "interactiveDist": 2,
+    "actionName": 1509797214,
+    "handlePetEthnicGroup": 1,
+    "checkBlock": 1,
+    "checkAngle": 90
+  },
+  "186": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "teleportScenePosition",
+        [
+          501,
+          37824947
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 1762102157,
+    "checkAngle": 90
+  },
+  "217": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "events": [
+      [
+        "dialogue",
+        [
+          70002324
+        ],
+        1
+      ]
+    ],
+    "actionName": 1708201832,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "handlePetEthnicGroup": 1
+  },
+  "140": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "interactiveDist": 4.5,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ],
+      [
+        "setNpcContentSelf",
+        [
+          110
+        ],
+        1
+      ],
+      [
+        "playCutsceneSelf",
+        [
+          "$P_Item_Temple_TempleEntrance_ActiveToPass.prefab",
+          1
+        ],
+        1
+      ]
+    ],
+    "actionName": 1933931764,
+    "changeToPlayer": 1
+  },
+  "141": {
+    "actionName": 1943120513,
+    "interactiveDist": 2
+  },
+  "10012": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actionName": 1874704557,
+    "interactiveDist": 2,
+    "checkBlock": 1
+  },
+  "220": {
+    "actionName": 2064258044,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "checkAngle": 0,
+    "conditionId": 240700124
+  },
+  "104003": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "teleportScenePosition",
+        [
+          3003,
+          91086497
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 8,
+    "actionName": 1170798488,
+    "checkAngle": 270
+  },
+  "198": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          3
+        ],
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "conditionId": [
+      8000011
+    ],
+    "interactiveForceDist": 0.8,
+    "actionName": 2085215757,
+    "interactiveIconDist": 1.5,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "104001": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "teleportScenePosition",
+        [
+          1002,
+          91029366
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 8,
+    "actionName": 1222958313,
+    "checkAngle": 270
+  },
+  "130": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "conditionId": [
+      1
+    ],
+    "interactiveDist": 4,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ],
+      [
+        "setNpcContentSelf",
+        [
+          101
+        ],
+        1
+      ],
+      [
+        "playCutsceneSelf",
+        [
+          "$P_TL_Temp_UnlockMap.prefab"
+        ],
+        1
+      ]
+    ],
+    "actionName": 1613386120,
+    "checkAngle": 90
+  },
+  "223": {
+    "faceToTarget": 1,
+    "actionTime": 4,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchMiddle_Start",
+    "endAnim": "Story_TouchMiddle_End",
+    "loopAnim": "Story_TouchMiddle_Loop",
+    "actionName": 1535972726,
+    "type": 106,
+    "interactiveDist": 3
+  },
+  "259": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "playDialogueGraph",
+        [
+          61641379
+        ],
+        1
+      ]
+    ],
+    "actionName": 1101760138,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "checkAngle": 90
+  },
+  "224": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1,
+    "events": [
+      [
+        "dialogue",
+        [
+          4101191
+        ],
+        1
+      ],
+      [
+        "getItem",
+        [
+          [
+            913097,
+            1
+          ]
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "type": 9,
+    "actionName": 1264734118,
+    "checkBlock": 1
+  },
+  "260": {
+    "actionName": 2113056736,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Exit.png"
+  },
+  "225": {
+    "actionName": 1751660420,
+    "type": 84,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "209": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1615977804
+  },
+  "226": {
+    "actionName": 1506994982,
+    "type": 84,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "210": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1246010139
+  },
+  "227": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          1
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1806397505,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "228": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          2
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1610119066,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "104002": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "teleportScenePosition",
+        [
+          3003,
+          91086482
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 8,
+    "actionName": 1343157211,
+    "checkAngle": 270
+  },
+  "265": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 4,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchMiddle_Start",
+    "endAnim": "Story_TouchMiddle_End",
+    "loopAnim": "Story_TouchMiddle_Loop",
+    "checkBlock": 1,
+    "interactiveIconDist": 1.5,
+    "interactiveDist": 1.2,
+    "actionName": 1553480053
+  },
+  "102001": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Survey.png",
+    "interactiveForceDist": 2,
+    "actionName": 1077145115,
+    "isLocationConflictByCancel": true,
+    "checkBlock": 1,
+    "interactiveDist": 6
+  },
+  "231": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          5
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1477021827,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "101000": {
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actionName": 1982565464
+  },
+  "240": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          14
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1.5,
+    "actionName": 1555166236,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "268": {
+    "iconId": "$UI_HomeToplogo_Icon_Env.png",
+    "interactiveDist": 2,
+    "loopAnim": "Daily_CareFlower_Loop",
+    "actionName": 1225800333,
+    "type": 162
+  },
+  "241": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          15
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1.5,
+    "actionName": 1891490112,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "269": {
+    "iconId": "$UI_HomeToplogo_Icon_Mall.png",
+    "interactiveDist": 3,
+    "conditionId": [
+      63000
+    ],
+    "actionName": 2072338388,
+    "type": 163,
+    "events": [
+      [
+        "openUI",
+        [
+          404
+        ],
+        1
+      ]
+    ]
+  },
+  "242": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          16
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1.5,
+    "actionName": 1753680977,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "271": {
+    "iconId": "$UI_Icon_InteractionTitle_Cook.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop",
+    "actionName": 1763343078,
+    "type": 1
+  },
+  "100013": {
+    "actionName": 1706286281,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Shower.png"
+  },
+  "280": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkBlock": 1,
+    "actionName": 1772367284,
+    "isIgnoreDisCheck": 1,
+    "interactiveDist": 0.7
+  },
+  "100011": {
+    "actionName": 1855866445,
+    "interactiveDist": 2,
+    "iconId": "$UI_Img_Home_MusicPlayer_ItemIconNml.png"
+  },
+  "238": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          12
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1.5,
+    "actionName": 1336217865,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "100009": {
+    "actionName": 1774301009,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "282": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "setFlowerStateSelf",
+        [
+          3,
+          0
+        ],
+        1
+      ]
+    ],
+    "actionName": 1570340552,
+    "interactiveDist": 4
+  },
+  "243": {
+    "actionName": 1797450918,
+    "type": 84,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "284": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "openNourish",
+        [
+          0
+        ],
+        1
+      ]
+    ],
+    "actionName": 1275476951,
+    "interactiveDist": 4,
+    "showWhenCantAct": 1,
+    "conNotice": 102018
+  },
+  "100005": {
+    "actionName": 1647063094,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "285": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "faceToTarget": 1,
+    "conditionId": [
+      305234
+    ],
+    "actionName": 2123993406,
+    "interactiveDist": 4,
+    "events": [
+      [
+        "setFlowerStateSelf",
+        [
+          2,
+          0
+        ],
+        1
+      ]
+    ]
+  },
+  "100004": {
+    "actionName": 1472723196,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "286": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "openNourish",
+        [
+          0
+        ],
+        1
+      ]
+    ],
+    "actionName": 1735116032,
+    "interactiveDist": 4
+  },
+  "100003": {
+    "actionName": 1684841413,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "287": {
+    "iconId": "$UI_Icon_InteractionTitle_Digging.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_OperateLoop_Digging",
+    "actionName": 1518451695,
+    "type": 1
+  },
+  "60": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "interactiveDist": 1.5,
+    "actWhenArrive": 0,
+    "actionTime": 5,
+    "actionTimeByPet": 0,
+    "actionName": 1655573150
+  },
+  "288": {
+    "actionName": 1345007151,
+    "interactiveDist": 0.5,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "251": {
+    "actionName": 1700565645,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "100002": {
+    "actionName": 2056978877,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "100001": {
+    "actionName": 1534204525,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Comfort.png"
+  },
+  "229": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          3
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1526464846,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "10303": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "actWhenArrive": 0,
+    "isIgnoreDisCheck": 1,
+    "actionName": 1081138203
+  },
+  "10016": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "teleportRobEggLimitChallenge",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1566338387,
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveDist": 2.5
+  },
+  "8": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 2051398864
+  },
+  "10005": {
+    "iconId": "$UI_Icon_InteractionTitle_Position.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "interactiveDist": 10,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "eggShipEnterCore",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1996892326,
+    "checkBlock": 1
+  },
+  "10011": {
+    "actionName": 1769901038,
+    "faceToTarget": 1,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "10007": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$Img_Map_Mark_Uderground_Begin.png",
+    "events": [
+      [
+        "enterRobEggDoor",
+        {},
+        1
+      ]
+    ],
+    "actionName": 1536079271,
+    "type": 1,
+    "checkBlock": 0,
+    "interactiveDist": 3
+  },
+  "10013": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actionName": 2126219781,
+    "interactiveDist": 2,
+    "checkBlock": 1
+  },
+  "10014": {
+    "actionName": 1230671562,
+    "faceToTarget": 1,
+    "interactiveDist": 2.8,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "58": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 0.9,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "checkBlock": 1,
+    "interactiveDist": 1.8,
+    "actionName": 1496954246
+  },
+  "182": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 1979091909
+  },
+  "10015": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "starRobEggLimitTimeChallenge",
+        {},
+        1
+      ]
+    ],
+    "actionName": 2106224649,
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveDist": 2.5
+  },
+  "264": {
+    "actionName": 1870749875,
+    "interactiveDist": 2,
+    "events": [
+      [
+        "setNpcContent",
+        [
+          70547161,
+          5
+        ],
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "91": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "type": 15,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1672953528,
+    "changeToPlayer": 1
+  },
+  "236": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          10
+        ],
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "conditionId": [
+      8000014
+    ],
+    "interactiveForceDist": 0.8,
+    "actionName": 1965325859,
+    "interactiveIconDist": 1.5,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "270": {
+    "actionName": 1103818457,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_HomeGeneral.png"
+  },
+  "618": {
+    "actionName": 1983407762,
+    "interactiveDist": 2,
+    "iconId": "$UI_HomeToplogo_Icon_Pet.png"
+  },
+  "266": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1677421153
+  },
+  "44": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1840489795
+  },
+  "254": {
+    "actionName": 2029960742,
+    "iconId": "$UI_Icon_InteractionTitle_Exit.png"
+  },
+  "612": {
+    "interactiveDist": 3,
+    "checkAngle": 180,
+    "actCooldown": 3,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "addCurPetBuff",
+        [
+          11123,
+          2
+        ],
+        1
+      ],
+      [
+        "getReward",
+        [
+          11026
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 3,
+    "checkBlock": 1,
+    "type": 120,
+    "actionName": 1346174790,
+    "conditionId": [
+      240700133
+    ]
+  },
+  "232": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          6
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1717238034,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "136": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "type": 83,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1890926531,
+    "checkBlock": 1
+  },
+  "139": {
+    "iconId": "$UI_Icon_MarkPoint_Temple.png",
+    "interactiveDist": 4.5,
+    "events": [
+      [
+        "challengeDungeonclient",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "actionName": 1293989173,
+    "changeToPlayer": 1
+  },
+  "73": {
+    "actionName": 2082600777,
+    "interactiveDist": 2
+  },
+  "71": {
+    "actionName": 1888858223,
+    "interactiveDist": 2
+  },
+  "70": {
+    "actionName": 1357075824,
+    "interactiveDist": 2
+  },
+  "165": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "isLocationConflictByCancel": true,
+    "events": [
+      [
+        "openPicEx",
+        [
+          [
+            [
+              "$UI_Img_Shop_Poster_newCoffee_01.png",
+              "$UI_Img_Shop_Poster_newCoffee_02.png",
+              "$UI_Img_Shop_Poster_newCoffee_03.png"
+            ]
+          ],
+          "53867967"
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 2,
+    "actionName": 2080185398,
+    "interactiveDist": 3,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "69": {
+    "type": 1,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "events": [
+      [
+        "dialogue",
+        [
+          1103000
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "actionName": 1771230398,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "conditionId": [
+      11201057
+    ],
+    "interactiveDist": 1.5,
+    "conNotice": 2120,
+    "noCheckBefore": 1,
+    "showWhenCantAct": 1,
+    "checkBlock": 1
+  },
+  "64": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 5,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Attack01",
+    "endAnim": "Attack03",
+    "loopAnim": "Attack02",
+    "actionName": 1815891800,
+    "interactiveDist": 2
+  },
+  "66": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "actionName": 1649873981,
+    "interactiveDist": 3
+  },
+  "154": {
+    "actionName": 1518112665,
+    "type": 84,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "65": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "createPuppetByRoot",
+        [
+          11019100,
+          0,
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        1
+      ],
+      [
+        "petTraitStateSet",
+        [
+          1019100,
+          1,
+          2
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 4,
+    "interactiveDist": 0.8,
+    "actionName": 1536857131
+  },
+  "354": {
+    "iconId": "$UI_Icon_InteractionTitle_Mining.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_MineLoop",
+    "actionName": 1327811372,
+    "type": 1
+  },
+  "221": {
+    "iconId": "$UI_Icon_MarkPoint_Report.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "reportUpload",
+        {},
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 6,
+    "actionName": 2111045614,
+    "checkAngle": 150
+  },
+  "62": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "toast",
+        [
+          2123
+        ],
+        1
+      ]
+    ],
+    "actionName": 2120410044,
+    "type": 16,
+    "interactiveDist": 0.8
+  },
+  "61": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "interactiveDist": 1.5,
+    "actWhenArrive": 0,
+    "actionTime": 5,
+    "actionTimeByPet": 0,
+    "actionName": 1641369643
+  },
+  "157": {
+    "iconId": "$UI_Icon_MarkPoint_LeylineTree.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actionName": 1458869213,
+    "type": 24,
+    "interactiveDist": 4,
+    "events": [
+      [
+        "activeLeylineTree",
+        [
+          200011
+        ],
+        1
+      ],
+      [
+        "setMarkStateSelf",
+        [
+          2,
+          1
+        ],
+        1
+      ]
+    ]
+  },
+  "59": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "type": 1,
+    "checkBlock": 1,
+    "interactiveIconDist": 3,
+    "interactiveDist": 2,
+    "actionName": 1093746702
+  },
+  "158": {
+    "iconId": "$UI_Icon_MarkPoint_LeylineTree.png",
+    "interactiveDist": 4,
+    "checkAngle": 90,
+    "actionName": 1873751073,
+    "type": 24,
+    "events": [
+      [
+        "interactLeylineTree",
+        [
+          200011
+        ],
+        1
+      ]
+    ]
+  },
+  "40": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1160987684
+  },
+  "38": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1678221166
+  },
+  "56": {
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "actionTime": 1.2,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "openEnvObj",
+        {},
+        1
+      ],
+      [
+        "addEntityTag",
+        [
+          "TE_Env_Bait"
+        ],
+        1
+      ],
+      [
+        "dialogue",
+        [
+          20120105
+        ],
+        1
+      ]
+    ],
+    "actionName": 1403683621,
+    "interactiveIconDist": 4,
+    "type": 1,
+    "interactiveDist": 2
+  },
+  "37": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 30,
+    "type": 14,
+    "actWhenArrive": 0,
+    "interactiveDist": 2.5,
+    "actionName": 1221597932,
+    "checkBlock": 1
+  },
+  "34": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1525875302
+  },
+  "159": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "interactiveDist": 4,
+    "events": [
+      [
+        "openUI",
+        [
+          21
+        ],
+        1
+      ]
+    ],
+    "actionName": 2010063471,
+    "type": 24
+  },
+  "348": {
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "showContent",
+        [
+          128
+        ],
+        1
+      ]
+    ],
+    "type": 1,
+    "actionName": 1392103792,
+    "interactiveIconDist": 1.8,
+    "checkBlock": 1,
+    "interactiveDist": 1.5
+  },
+  "278": {
+    "actionName": 1187022541,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_HomeDetails.png"
+  },
+  "357": {
+    "iconId": "$UI_Icon_InteractionTitle_Felling.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_FellingLoop",
+    "actionName": 1855518644,
+    "type": 1
+  },
+  "363": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actCooldown": 5,
+    "actionName": 1159371897,
+    "interactiveForceDist": 0,
+    "interactiveDist": 1,
+    "checkBlock": 1
+  },
+  "380": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 10,
+    "checkAngle": 180,
+    "actCooldown": 5,
+    "actWhenArrive": 1,
+    "events": [
+      [
+        "setMarkStateSelf",
+        [
+          3,
+          1
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 1530099192
+  },
+  "250": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "events": [
+      [
+        "setNpcContentSelf",
+        [
+          801
+        ],
+        1
+      ],
+      [
+        "playSound",
+        [
+          "SFX_SceneObject_ARK_Sign_Repair"
+        ],
+        1
+      ]
+    ],
+    "actionName": 1590324060,
+    "checkBlock": 1,
+    "checkAngle": 90
+  },
+  "45": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 0.5,
+    "actionName": 1305800673
+  },
+  "281": {
+    "iconId": "$UI_Icon_MarkPoint_Transmit.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "appearHelpSimple",
+        [
+          118
+        ],
+        1
+      ],
+      [
+        "toast",
+        [
+          102018
+        ],
+        1
+      ]
+    ],
+    "actionName": 1682549113,
+    "interactiveDist": 4
+  },
+  "400": {
+    "actionName": 1455300383,
+    "interactiveDist": 2,
+    "type": 1,
+    "iconId": "$UI_Icon_InteractionTitle_Handwork.png"
+  },
+  "267": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1382655757
+  },
+  "300": {
+    "actWhenArrive": 1,
+    "faceToTarget": 1,
+    "stateCheckExclude": [
+      "FALL_ST",
+      "CLIMB_ST"
+    ],
+    "interactiveDist": 8
+  },
+  "109": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "actWhenArrive": 0,
+    "interactiveDist": 25,
+    "actionName": 1900389244,
+    "conNotice": 2237
+  },
+  "275": {
+    "iconId": "$UI_HomeToplogo_Icon_Water.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_WaterLoop",
+    "actionName": 1246095779,
+    "type": 1
+  },
+  "263": {
+    "actionName": 1424594289,
+    "interactiveDist": 2,
+    "events": [
+      [
+        "playerInteract",
+        {},
+        1
+      ]
+    ],
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "262": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionTime": 1,
+    "actionTimeByPet": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Story_TouchMiddle_Start",
+    "events": [
+      [
+        "dialogue",
+        [
+          90000257
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1.5,
+    "checkBlock": 0,
+    "interactiveDist": 3,
+    "actionName": 1188465620,
+    "faceToInteractions": 1
+  },
+  "261": {
+    "actionName": 1161073830,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Peek.png"
+  },
+  "258": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "playDialogueGraph",
+        [
+          61641379
+        ],
+        1
+      ]
+    ],
+    "actionName": 2136137975,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "checkAngle": 90
+  },
+  "257": {
+    "actionName": 1692489171,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "256": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1506568490,
+    "checkBlock": 1
+  },
+  "255": {
+    "actionName": 1357063368,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "191": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "showContent",
+        [
+          13
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 3,
+    "actionName": 1330513410
+  },
+  "253": {
+    "actionName": 1222716473,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "252": {
+    "actionName": 1759704297,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "219": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "events": [
+      [
+        "dialogue",
+        [
+          70002344
+        ],
+        1
+      ]
+    ],
+    "actionName": 1325476564,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "handlePetEthnicGroup": 1
+  },
+  "92": {
+    "faceToTarget": 1,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "actionTime": 0,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actionName": 1848490005,
+    "interactiveIconDist": 2,
+    "type": 9,
+    "interactiveDist": 2
+  },
+  "90": {
+    "faceToTarget": 1,
+    "type": 1,
+    "actionName": 1712100737,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addPet",
+        [
+          1017100,
+          1,
+          1
+        ],
+        1
+      ],
+      [
+        "delItem",
+        [
+          [
+            540103,
+            1
+          ]
+        ],
+        1
+      ]
+    ],
+    "interactiveDist": 1.5,
+    "conNotice": 2136,
+    "noCheckBefore": 1,
+    "showWhenCantAct": 1,
+    "conditionId": [
+      603
+    ]
+  },
+  "89": {
+    "faceToTarget": 1,
+    "type": 1,
+    "actionName": 1882635414,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addPet",
+        [
+          1005100,
+          1,
+          1
+        ],
+        1
+      ],
+      [
+        "delItem",
+        [
+          [
+            540103,
+            1
+          ]
+        ],
+        1
+      ]
+    ],
+    "interactiveDist": 1.5,
+    "conNotice": 2136,
+    "noCheckBefore": 1,
+    "showWhenCantAct": 1,
+    "conditionId": [
+      603
+    ]
+  },
+  "88": {
+    "faceToTarget": 1,
+    "type": 1,
+    "actionName": 1449865803,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addPet",
+        [
+          1005100,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        "delItem",
+        [
+          [
+            540103,
+            1
+          ]
+        ],
+        1
+      ]
+    ],
+    "interactiveDist": 1.5,
+    "conNotice": 2136,
+    "noCheckBefore": 1,
+    "showWhenCantAct": 1,
+    "conditionId": [
+      603
+    ]
+  },
+  "87": {
+    "faceToTarget": 1,
+    "type": 1,
+    "actionName": 1454332185,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addPet",
+        [
+          1001100,
+          1,
+          1
+        ],
+        1
+      ],
+      [
+        "delItem",
+        [
+          [
+            540103,
+            1
+          ]
+        ],
+        1
+      ]
+    ],
+    "interactiveDist": 1.5,
+    "conNotice": 2136,
+    "noCheckBefore": 1,
+    "showWhenCantAct": 1,
+    "conditionId": [
+      603
+    ]
+  },
+  "86": {
+    "faceToTarget": 1,
+    "type": 1,
+    "actionName": 1518753467,
+    "actWhenArrive": 0,
+    "actionTime": 0.6,
+    "actionTimeByPet": 0,
+    "changeToPlayer": 1,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "events": [
+      [
+        "addPet",
+        [
+          1001100,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        "delItem",
+        [
+          [
+            540103,
+            1
+          ]
+        ],
+        1
+      ]
+    ],
+    "interactiveDist": 1.5,
+    "conNotice": 2136,
+    "noCheckBefore": 1,
+    "showWhenCantAct": 1,
+    "conditionId": [
+      603
+    ]
+  },
+  "85": {
+    "hotkeyType": "Player/SpecialAbility"
+  },
+  "83": {
+    "actionName": 2135320396,
+    "hotkeyType": "Player/SpecialAbility"
+  },
+  "82": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 5,
+    "actWhenArrive": 0,
+    "actionTime": 0.583,
+    "actionTimeByPet": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "startAnim": "Kick",
+    "type": 1,
+    "interactiveDist": 1.5,
+    "checkBlock": 1,
+    "interactiveIconDist": 4,
+    "isIgnoreDisCheck": 1,
+    "actionName": 1897454017
+  },
+  "81": {
+    "actionName": 1362426303,
+    "interactiveDist": 2,
+    "type": 20,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "433": {
+    "iconId": "$UI_Icon_InteractionTitle_Trade.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "actWhenArrive": 0,
+    "events": [
+      [
+        "shop",
+        [
+          38
+        ],
+        1
+      ]
+    ],
+    "checkBlock": 1,
+    "actionName": 2110194024
+  },
+  "218": {
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actCooldown": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "events": [
+      [
+        "dialogue",
+        [
+          70002334
+        ],
+        1
+      ]
+    ],
+    "actionName": 1526337484,
+    "interactiveDist": 2,
+    "checkBlock": 1,
+    "handlePetEthnicGroup": 1
+  },
+  "12000": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "events": [
+      [
+        "goNextDungeonScene",
+        {},
+        1
+      ]
+    ],
+    "actCooldown": 10,
+    "interactiveIconDist": 3
+  },
+  "124": {
+    "actionName": 2090437896,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_General.png"
+  },
+  "289": {
+    "iconId": "$UI_Icon_InteractionTitle_HomeGeneral.png",
+    "interactiveDist": 2,
+    "loopAnim": "Home_HarvestLoop",
+    "actionName": 1660499378,
+    "type": 1
+  },
+  "235": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          9
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1446953703,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "501": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1721692303
+  },
+  "1001": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1430415109
+  },
+  "505": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3,
+    "actWhenArrive": 0,
+    "actionName": 1789917964,
+    "checkBlock": 1
+  },
+  "506": {
+    "actionName": 1308622875,
+    "interactiveDist": 2,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png"
+  },
+  "1003": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1917049215
+  },
+  "1004": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1630369180
+  },
+  "1005": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1709746802
+  },
+  "187": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "events": [
+      [
+        "teleportScenePosition",
+        [
+          3000,
+          52160377
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 0,
+    "interactiveDist": 4,
+    "actionName": 2122429458,
+    "checkAngle": 90
+  },
+  "1006": {
+    "demandLocationChange": 1,
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "stopAnim": 1,
+    "actWhenArrive": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1214614972
+  },
+  "607": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "faceToTarget": 1,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "interactiveIconDist": 4,
+    "interactiveDist": 4,
+    "actionName": 1303381066
+  },
+  "1007": {
+    "demandLocationChange": 1,
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "actionName": 1115779605,
+    "stopAnim": 1,
+    "interactiveDist": 2,
+    "isLocationConflictByCancel": true
+  },
+  "201": {
+    "demandLocationChange": true,
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "interactiveDist": 3.3,
+    "events": [
+      [
+        "openUI",
+        [
+          260,
+          6
+        ],
+        1
+      ]
+    ],
+    "interactiveForceDist": 1,
+    "actionName": 1381016630,
+    "interactiveIconDist": 1,
+    "checkBlock": 1,
+    "faceToInteractions": 1
+  },
+  "1008": {
+    "demandLocationChange": 1,
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "stopAnim": 1,
+    "actWhenArrive": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1502917833
+  },
+  "330": {
+    "interactiveDist": 4,
+    "events": [
+      [
+        "sendArkReward",
+        [
+          60009
+        ],
+        1
+      ]
+    ],
+    "actWhenArrive": 1,
+    "checkBlock": 1,
+    "checkAngle": 180
+  },
+  "1009": {
+    "demandLocationChange": 1,
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "stopAnim": 1,
+    "actWhenArrive": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1145402251
+  },
+  "637": {
+    "interactiveDist": 2,
+    "checkAngle": 180,
+    "actWhenArrive": 0,
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "events": [
+      [
+        "dialogue",
+        [
+          91143369
+        ],
+        1
+      ]
+    ],
+    "actionName": 1498007336,
+    "type": 120,
+    "checkBlock": 1,
+    "conditionId": [
+      17000
+    ]
+  },
+  "1010": {
+    "demandLocationChange": 1,
+    "interactiveDist": 2,
+    "checkAngle": 90,
+    "stopAnim": 1,
+    "actWhenArrive": 0,
+    "isLocationConflictByCancel": true,
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "actionName": 1731338327
+  },
+  "1030": {
+    "iconId": "$UI_Icon_InteractionTitle_Vlog.png",
+    "faceToTarget": 1,
+    "checkAngle": 60,
+    "actionName": 1753058341,
+    "interactiveDist": 12
+  },
+  "1011": {
+    "iconId": "$UI_Icon_InteractionTitle_Chat.png",
+    "interactiveDist": 8,
+    "checkAngle": 90,
+    "actWhenArrive": 0,
+    "actionName": 1870369386
+  },
+  "5": {
+    "iconId": "$UI_Icon_InteractionTitle_General.png",
+    "faceToTarget": 1,
+    "checkAngle": 90,
+    "type": 13,
+    "actWhenArrive": 0,
+    "interactiveDist": 2,
+    "actionName": 1522315757,
+    "checkBlock": 1
+  }
+}

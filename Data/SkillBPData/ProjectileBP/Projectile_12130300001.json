@@ -1,0 +1,175 @@
+{
+  "duration": 0.1,
+  "BPName": "ability_12130300",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "",
+  "heightAboveGround": 1,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "62": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "81e0668a-3a24-48de-b556-ba10bcbd4d89",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Summon_Born01",
+      "NodeID": 62
+    },
+    "28": {
+      "name": "getRotationFromTo",
+      "UID": "81dcec60-0876-4ae4-b24e-deee19b0a505",
+      "to": "OWNER",
+      "NodeID": 28,
+      "from": "PROJECTILE"
+    },
+    "71": {
+      "NodeID": 71,
+      "name": "getTargetOffsetPos",
+      "UID": "8b2d7e25-ba6f-4221-a724-6d414d262e2a",
+      "target": "PROJECTILE",
+      "offset": [
+        0,
+        0,
+        0.5
+      ],
+      "rotType": {
+        "name": "getRotationFromTo",
+        "considerYAxis": false,
+        "UID": "c3570bc0-7572-4083-bcf6-c23bc84c18c9",
+        "to": "OWNER",
+        "NodeID": 70,
+        "from": "PROJECTILE"
+      }
+    },
+    "30": {
+      "key": "10213_Clone",
+      "name": "setCacheVal",
+      "UID": "a6240b8e-50e9-4d84-91a7-7ea731457170",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 1102130001,
+        "name": "createSummonedEntity",
+        "notifyMasterAbilityEvent": true,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "f05fe7b3-2fbf-45ea-98fb-64807251f217",
+          "name": "getGroundPosFromRefPos",
+          "refPos": {
+            "NodeID": 71,
+            "name": "getTargetOffsetPos",
+            "UID": "8b2d7e25-ba6f-4221-a724-6d414d262e2a",
+            "target": "PROJECTILE",
+            "offset": [
+              0,
+              0,
+              0.5
+            ],
+            "rotType": {
+              "name": "getRotationFromTo",
+              "considerYAxis": false,
+              "UID": "c3570bc0-7572-4083-bcf6-c23bc84c18c9",
+              "to": "OWNER",
+              "NodeID": 70,
+              "from": "PROJECTILE"
+            }
+          },
+          "NodeID": 72
+        },
+        "rot": {
+          "name": "getRotationFromTo",
+          "UID": "81dcec60-0876-4ae4-b24e-deee19b0a505",
+          "to": "OWNER",
+          "NodeID": 28,
+          "from": "PROJECTILE"
+        },
+        "campWithHost": true,
+        "deadWithHost": false,
+        "lifeTime": 30,
+        "NodeID": 29,
+        "UID": "021c432e-7e36-43e7-aaa4-197acd81e1e2"
+      },
+      "NodeID": 30
+    },
+    "70": {
+      "name": "getRotationFromTo",
+      "considerYAxis": false,
+      "UID": "c3570bc0-7572-4083-bcf6-c23bc84c18c9",
+      "to": "OWNER",
+      "NodeID": 70,
+      "from": "PROJECTILE"
+    },
+    "69": {
+      "key": "target",
+      "name": "setCacheVal",
+      "UID": "29da2b54-ba68-4ba4-b97b-aa1b0b88d7ac",
+      "target": "TARGET",
+      "val": {
+        "UID": "49e6c27d-6d45-426b-9df0-adecc8fd46a3",
+        "name": "getLockedTarget",
+        "NodeID": 68
+      },
+      "NodeID": 69
+    },
+    "67": {
+      "key": "1",
+      "duration": 0.7,
+      "actionIds": [
+        69,
+        65
+      ],
+      "NodeID": 67,
+      "UID": "faac026b-e23e-4fc9-8330-c5a1263bd35e",
+      "name": "addEntityTimer"
+    },
+    "65": {
+      "eventName": "10213_shootsp",
+      "name": "notifyCustomEvent",
+      "UID": "23931ab0-c5c9-4d4b-836f-8e0f2133f5da",
+      "target": {
+        "UID": "92b7d626-44d3-4dcb-a4d3-2fb09dbd101d",
+        "target": {
+          "key": "10213_Clone",
+          "name": "getCacheVal",
+          "UID": "5cd40bd6-d277-4a8a-9810-5e9db96f4c77",
+          "target": "OWNER",
+          "NodeID": 63
+        },
+        "name": "getTargetId",
+        "NodeID": 64
+      },
+      "NodeID": 65
+    }
+  },
+  "maxHeightOffset": 1.1,
+  "moveSpeed": 40,
+  "onProjectileFinishIds": [
+    30,
+    67,
+    62
+  ],
+  "stickGravity": 5,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 9999,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "stickPitchMaxOffset": 45,
+  "tickInterval": 0.01,
+  "gravityRatio": 0,
+  "startSleepTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "groundSweepRadius": 0.15,
+  "maxHitNum": 999,
+  "acceleration": 0
+}

@@ -1,0 +1,137 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "MASTER",
+      "name": "followTarget",
+      "UID": "a360472d-0a2a-48a3-93fa-9957e0e71587",
+      "stopDistance": 0,
+      "NodeID": 3,
+      "followSpeed": 30
+    },
+    "4": {
+      "UID": "95304de3-0e54-4733-bb42-d662eb200a5a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "4d11da99-02e7-4d5b-95b6-ad7ec7feaca8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 14
+    },
+    "7": {
+      "eventName": "masterDead1",
+      "NodeID": 7,
+      "UID": "2dec7d78-b804-46c6-8da9-7bed962a8ca7",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        6
+      ]
+    },
+    "8": {
+      "UID": "dbdd0aa9-8af2-42bd-b7ea-8f8afa6a53f2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "NodeID": 8
+    },
+    "17": {
+      "pos": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "4f8fe6ad-9240-4459-81ce-e9717077a348",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 16
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "225c3962-9cb3-4d25-9869-b34f8495108e",
+      "effectId": "Eff_ParmonO_Monster_RogueCatch_Pollen",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "18": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 1114201,
+      "NodeID": 18,
+      "UID": "83d12b92-e3a3-4d99-a76a-4e2aaab3775e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "actionIds": [
+        18
+      ],
+      "name": "actOnTargets",
+      "UID": "9672b8a5-87e7-434a-8c26-2be2c51f7aaf",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            7,
+            180,
+            2.2,
+            0.6
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 11
+    },
+    "13": {
+      "actionIds": [
+        11,
+        17
+      ],
+      "name": "registerDeadEvent",
+      "UID": "46b1280a-819d-4f02-9e8c-0c92afa83ec0",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "cfbc89a4-1273-4d1a-805f-96027d79757e",
+      "name": "destroyEntity",
+      "NodeID": 6
+    }
+  },
+  "BPName": "timeline_300008",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    14,
+    4,
+    8
+  ],
+  "layer": "Base",
+  "length": 9999
+}

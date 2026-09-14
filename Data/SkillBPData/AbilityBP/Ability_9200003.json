@@ -1,0 +1,52 @@
+{
+  "preloadAnims": [
+    "Skill_FirstAid"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Girl_Skill_FirstAid"
+  ],
+  "BPName": "ability_9200003",
+  "NodeID": 1,
+  "UID": "95e52ea3-8c1b-4b90-ab4a-4ea63308d06e",
+  "searchTargetRangeUp": 0,
+  "abilityParamId": 9200003,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeRadius": 0,
+  "checkExistBurrow": false,
+  "searchTargetRangeDown": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "bd598aca-3fa3-46c3-83a6-2061c01d6e02",
+      "name": "isNot",
+      "action": {
+        "name": "checkInControl",
+        "NodeID": 2
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "4215466d-9c22-459f-9928-a76d46ba00bc",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "16": {
+      "timelineId": 9200003002,
+      "name": "setCombatActionTimeline",
+      "UID": "e640c9a3-1348-43d4-a3d3-8b4a0c2bd058",
+      "target": "CASTER",
+      "NodeID": 16
+    }
+  },
+  "onAbilityCastIds": [
+    4
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 1
+}

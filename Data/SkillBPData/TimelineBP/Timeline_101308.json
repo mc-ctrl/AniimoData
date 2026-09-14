@@ -1,0 +1,341 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9130bbfc-3be3-4f09-91dd-8c49d0a3a96d",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_charge",
+      "NodeID": 37
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "44b0e6c0-7aa3-42ef-b7c7-3e5eddbcffce",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_attack",
+      "NodeID": 38
+    },
+    "6": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ecc9ff10-e62f-44cd-b65f-69571837dec8",
+      "target": "OWNER",
+      "NodeID": 6,
+      "animId": "Skill_DropBackReturn"
+    },
+    "54": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "1769c329-7559-4b87-946e-b1e0f1629e5d",
+      "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_01",
+      "speed": 1,
+      "NodeID": 54
+    },
+    "43": {
+      "offsetXYZ": [
+        0,
+        0,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "9a1f337d-8e0f-4cf9-9e28-4dba44ed1999",
+      "effectId": "Eff_Range_Indicator_Ripzor_Dash_Thin",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 0.6,
+      "NodeID": 43,
+      "offsetRotation": [
+        0,
+        150,
+        0
+      ]
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1dd51e6e-1cda-4cad-9bc7-cc1e2c891e6e",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_attack",
+      "NodeID": 44
+    },
+    "8": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "723d2e8f-9096-4cf4-839e-6232d6e080cd",
+      "target": "CASTER",
+      "NodeID": 8,
+      "animId": "Skill_Charm"
+    },
+    "59": {
+      "offsetXYZ": [
+        0,
+        0,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "210bde44-73e1-4bf2-8e5e-37a3fc2ef936",
+      "effectId": "Eff_Range_Indicator_Ripzor_Dash_Thin",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 0.6,
+      "NodeID": 59,
+      "offsetRotation": [
+        0,
+        210,
+        0
+      ]
+    },
+    "20": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "templateId": 101308203,
+      "name": "createProjectile",
+      "UID": "a5a0fa67-9edb-4025-8317-ec70fde27862",
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 20
+    },
+    "2": {
+      "lockTarget": "MASTER",
+      "name": "lockTarget",
+      "UID": "737ca21f-7eae-4990-86b9-b73196070aab",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.05,
+      "NodeID": 22,
+      "UID": "d62ddb53-a07e-4c41-89a8-c3b25c6fec51"
+    },
+    "4": {
+      "UID": "11d8f841-0f1c-4ed4-8770-aaac92c6c123",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          8
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "32df336d-323c-4347-b569-7f43247c734b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_attack",
+      "NodeID": 45
+    },
+    "14": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "templateId": 101308201,
+      "name": "createProjectile",
+      "UID": "46cc37b8-6d4e-44be-8b0d-b116adf978dc",
+      "offsetRotation": [
+        0,
+        -30,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 14
+    },
+    "56": {
+      "action": {
+        "actionIds": [
+          54,
+          59,
+          57
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.12,
+      "NodeID": 56,
+      "UID": "582daf31-5799-4493-b6fc-5582bf7d7a41"
+    },
+    "57": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7eb5e190-9b62-47bd-9174-14392fd4dfbf",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_charge",
+      "NodeID": 57
+    },
+    "47": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "82080153-a7a4-4b08-b959-dd9e9160652a",
+      "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_01",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14,
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.05,
+      "NodeID": 16,
+      "UID": "a2bee405-57fc-4510-99dc-4749bf77ef8d"
+    },
+    "52": {
+      "offsetXYZ": [
+        0,
+        0,
+        0.5
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "dcc3e85b-4c48-499a-8edb-19fdcd4625a6",
+      "effectId": "Eff_Range_Indicator_Ripzor_Dash_Thin",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 0.6,
+      "NodeID": 52,
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ]
+    },
+    "17": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "templateId": 101308202,
+      "name": "createProjectile",
+      "UID": "8f17ca21-d8a4-4463-8be0-7c8fc8048434",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 17
+    },
+    "49": {
+      "action": {
+        "actionIds": [
+          47,
+          52,
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.62,
+      "NodeID": 49,
+      "UID": "d1332a01-6f27-41d9-91e4-270e14f0d11c"
+    },
+    "7": {
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 7,
+      "UID": "2887f200-fcb2-4719-a535-af22fc739c1a"
+    },
+    "50": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "79efe211-f256-43b4-a413-812f1235a837",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_charge",
+      "NodeID": 50
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.55,
+      "NodeID": 19,
+      "UID": "395d0995-eee1-4a9d-9cf7-9d541503286c"
+    },
+    "34": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        1.1
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "3e654a35-7264-48e4-be90-4e26204607c6",
+      "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_01",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          34,
+          43,
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.12,
+      "NodeID": 36,
+      "UID": "ed443fcf-91d6-4435-9294-c4d4e85103ce"
+    }
+  },
+  "BPName": "timeline_101308",
+  "NodeID": 1,
+  "UID": "91fc71ee-36e4-493f-90a4-f1fbf78a0eaa",
+  "eventIds": [
+    4,
+    36,
+    16,
+    19,
+    22,
+    7,
+    49,
+    56
+  ],
+  "layer": "Base",
+  "length": 10
+}

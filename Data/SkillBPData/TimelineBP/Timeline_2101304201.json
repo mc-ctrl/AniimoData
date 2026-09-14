@@ -1,0 +1,73 @@
+{
+  "nodeMap": {
+    "104": {
+      "UID": "ba2f8b9e-5f05-4eb3-80f3-871ac2d2f01d",
+      "actorId": {
+        "UID": "c9aa43d4-526d-4f36-b64a-bc63e5f806c4",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 103
+      },
+      "name": "destroyEntity",
+      "NodeID": 104
+    },
+    "105": {
+      "action": {
+        "actionIds": [
+          104
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 105,
+      "UID": "ac737bf1-dda7-4a7b-9d9d-270f9fa22855"
+    },
+    "110": {
+      "name": "stopEffectStr",
+      "UID": "6df601a1-7642-4f9d-802f-491ce16cc7af",
+      "effectId": "Eff_Parmon_10013_OutEx_Vortex_Loop",
+      "target": "OWNER",
+      "NodeID": 110
+    },
+    "113": {
+      "action": {
+        "actionIds": [
+          112
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 113,
+      "UID": "869319bb-4923-4079-9f3a-48a9a3e20232"
+    },
+    "111": {
+      "action": {
+        "actionIds": [
+          110
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 111,
+      "UID": "be579752-0548-445d-a731-7c9630ba12c1"
+    },
+    "112": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "15b82666-80a1-4c7c-9083-3d8bd4b8ad83",
+      "effectId": "Eff_Parmon_10013_OutEx_Vortex_End",
+      "speed": 1,
+      "NodeID": 112
+    }
+  },
+  "BPName": "timeline_2101304",
+  "NodeID": 107,
+  "UID": "cf832905-bc4e-4c76-80b8-63e725a8e578",
+  "eventIds": [
+    105,
+    111,
+    113
+  ],
+  "layer": "Base",
+  "length": 3
+}

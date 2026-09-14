@@ -1,0 +1,54 @@
+[
+  {
+    "buffId": 270020001,
+    "icon": "$UI_Img_Tower_BuffClassIconTagDefense.png"
+  },
+  {
+    "buffId": 270020002,
+    "icon": "$UI_Img_Tower_BuffClassIconTagAttack.png"
+  },
+  {
+    "buffId": 270020003,
+    "icon": "$UI_Img_Tower_BuffClassIconTagDefense.png"
+  },
+  {
+    "buffId": 270020004,
+    "icon": "$UI_Img_Tower_BuffClassIconTagDefense.png"
+  },
+  {
+    "buffId": 270020005,
+    "icon": "$UI_Img_Tower_BuffClassIconTagHeal.png"
+  },
+  {
+    "buffId": 270020006,
+    "icon": "$UI_Img_Tower_BuffClassIconTagHeal.png"
+  },
+  {
+    "buffId": 270020007,
+    "icon": "$UI_Img_Tower_BuffClassIconTagSpecial.png"
+  },
+  {
+    "buffId": 270020008,
+    "icon": "$UI_Img_Tower_BuffClassIconTagHeal.png"
+  },
+  {
+    "buffId": 270020009,
+    "icon": "$UI_Img_Tower_BuffClassIconTagSpecial.png"
+  },
+  {
+    "buffId": 270020010,
+    "icon": "$UI_Img_Tower_BuffClassIconTagSpecial.png"
+  },
+  {
+    "buffId": 270020011,
+    "icon": "$UI_Img_Tower_BuffClassIconTagDefense.png"
+  },
+  {
+    "buffId": 270020012,
+    "icon": "$UI_Img_Tower_BuffClassIconTagSpecial.png"
+  },
+  {
+    "buffId": 270020013,
+    "icon": "$UI_Img_Tower_BuffClassIconTagSpecial.png"
+  }
+]

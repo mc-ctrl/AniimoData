@@ -1,0 +1,254 @@
+{
+  "63036813": {
+    "id": 63036813,
+    "logics": {},
+    "pointType": 2,
+    "name": "LL",
+    "rotation": [
+      0,
+      56.17,
+      0
+    ],
+    "position": [
+      -1588.04,
+      87.64,
+      834.43
+    ],
+    "sandboxId": 52160363
+  },
+  "63036820": {
+    "id": 63036820,
+    "logics": {},
+    "pointType": 2,
+    "name": "Amy",
+    "rotation": [
+      0,
+      92,
+      0
+    ],
+    "position": [
+      -1588.16,
+      87.66,
+      834.99
+    ],
+    "sandboxId": 52160363
+  },
+  "63036821": {
+    "id": 63036821,
+    "logics": {},
+    "pointType": 2,
+    "name": "Nuy",
+    "rotation": [
+      0,
+      129.6,
+      0
+    ],
+    "position": [
+      -1587.82,
+      87.57,
+      836.12
+    ],
+    "sandboxId": 52160363
+  },
+  "63069954": {
+    "id": 63069954,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_63069954",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -1594.95,
+      93.71,
+      844.74
+    ],
+    "sandboxId": 52160363
+  },
+  "70670703": {
+    "name": "基础点位_70670703",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 52160363,
+    "id": 70670703,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "entity": 52417422,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1603.41,
+        87.4,
+        836.51
+      ],
+      "name": "头衔考核",
+      "arriveType": 1,
+      "author": "yuntao.xu"
+    },
+    "position": [
+      -1603.41,
+      87.4,
+      836.51
+    ]
+  },
+  "72146148": {
+    "name": "跟上利威尔",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 52160363,
+    "id": 72146148,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        6
+      ],
+      "position": [
+        -1588.56,
+        89.05,
+        817.34
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1588.56,
+      89.05,
+      817.34
+    ]
+  },
+  "91125900": {
+    "id": 91125900,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_91125900",
+    "position": [
+      -1587.18,
+      86.9,
+      819.52
+    ],
+    "rotation": [
+      0,
+      2.5,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 52160363
+  },
+  "58098340": {
+    "name": "找到利威尔_58098340",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 52160363,
+    "id": 58098340,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        -1602.98,
+        87.4,
+        835.22
+      ],
+      "name": "lin.xu",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1602.98,
+      87.4,
+      835.22
+    ]
+  },
+  "58464999": {
+    "id": 58464999,
+    "logics": {},
+    "pointType": 2,
+    "name": "NK02_58464999",
+    "position": [
+      -1601.5,
+      87.56,
+      835.82
+    ],
+    "rotation": [
+      0,
+      296,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 52160363
+  },
+  "58465021": {
+    "id": 58465021,
+    "logics": {},
+    "pointType": 2,
+    "name": "Y02_58464999",
+    "position": [
+      -1601.14,
+      87.59,
+      836.4
+    ],
+    "rotation": [
+      0,
+      268.8,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 52160363
+  },
+  "61582888": {
+    "id": 61582888,
+    "logics": {},
+    "pointType": 2,
+    "name": "临时搬运_61582888",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        -1573.48,
+        90.56,
+        854.32
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -1573.48,
+      90.56,
+      854.32
+    ],
+    "sandboxId": 52160363
+  }
+}

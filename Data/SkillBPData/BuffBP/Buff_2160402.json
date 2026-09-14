@@ -1,0 +1,107 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2160402",
+  "NodeID": 1,
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "onBuffRefreshIds": [
+    15,
+    7,
+    10
+  ],
+  "tags": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "enterTime": 0,
+      "exitTime": 1,
+      "presetName": "1",
+      "NodeID": 3,
+      "UID": "ff17bbc2-ca98-4374-86f0-085963b58540",
+      "name": "setShaderSquash",
+      "degree": 0.1
+    },
+    "13": {
+      "UID": "fae35036-38e3-4e53-b518-6301b5b909f2",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 13
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b355c7d4-f6b6-4a48-9ecc-b6d4fb4c7980",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1884c845-8b20-4a2d-9773-a18e470ceff4",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "enterTime": 0,
+      "exitTime": 1,
+      "presetName": "1",
+      "NodeID": 15,
+      "UID": "de30594e-a797-419c-9eff-0e99ba893447",
+      "name": "setShaderSquash",
+      "degree": 0.1
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "89e81f10-33b2-4ef2-a9e5-9e42c00a3f3c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 7
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b93d23fe-1781-4099-8820-359e3d0c1243",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "a9b0c4e0-172f-44d5-846d-7759d25e94fb",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "14": {
+      "UID": "933150b7-d1fb-4cdb-9afd-9ffa05decd4d",
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 14
+    },
+    "5": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 5,
+      "UID": "9af234eb-2ce9-4a7d-a2c4-930629884582",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    14,
+    11
+  ],
+  "onBuffStartIds": [
+    5,
+    3,
+    6,
+    9,
+    13
+  ]
+}

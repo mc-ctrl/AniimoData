@@ -1,0 +1,655 @@
+{
+  "tillGiftDailyRefreshLimit": 3,
+  "tillGiftEventType": 13,
+  "tillHelpTextLevels": [
+    [
+      10,
+      79
+    ],
+    [
+      20,
+      80
+    ],
+    [
+      30,
+      81
+    ]
+  ],
+  "tillRewardDailyLimitByOneOwner": 5,
+  "tillRewardDailyTotalLimit": 30,
+  "tillRewardboxId": 91216058,
+  "transportCountConfig": [
+    60,
+    80,
+    100,
+    120
+  ],
+  "unlockDefaultCampId": 83980508,
+  "urgentOrderFlushCondition": 60004,
+  "visitorRecordCount": 3,
+  "yAxisRange": [
+    0,
+    30
+  ],
+  "facilityTopLogoNearDistance": 5,
+  "foodFacilityIds": [
+    20400005
+  ],
+  "foodItemMaxCount": 99,
+  "gashaponDisplayRewards": 200683,
+  "hatchBoxLoveBubbleVfxOffset": 2.5,
+  "hatchBoxLoveVfxOffset": 2.5,
+  "hatchBoxTopLogoHeightOffset": 0,
+  "homeCampLoadLimit": 80000,
+  "homeCarAreaRange": [
+    -7,
+    7,
+    -5,
+    5
+  ],
+  "homeCarEditorDistanceRange": [
+    10,
+    50
+  ],
+  "homeCarEditorFov": 25,
+  "homeCarPetAni": "Behav_SleepLoop",
+  "homeCarPetRewardLevel": 10,
+  "homeCarPetRoot": "HomeCarPetRoot",
+  "homeCarRewardPetId": 1029301,
+  "homeCarYAxisRange": [
+    0,
+    15
+  ],
+  "homeCurrencyId": 1010,
+  "homeEditorRotationList": [
+    1,
+    15,
+    45,
+    90
+  ],
+  "homeFacilityAbilityRequirementRatio": {
+    "1020004": 5,
+    "1010000": 8,
+    "1010001": 8,
+    "1020005": 5,
+    "1020011": 5,
+    "1020006": 5,
+    "1020001": 5,
+    "1020010": 5,
+    "1020007": 5,
+    "1020002": 5,
+    "1020008": 5,
+    "1020009": 5,
+    "1020003": 5,
+    "1020000": 5
+  },
+  "homeFoodGetEvent": 1810,
+  "homeFrontTaskId": 6505006,
+  "homeLotteryCostItemCount": [
+    [
+      1,
+      100000
+    ],
+    [
+      2,
+      200000
+    ],
+    [
+      3,
+      300000
+    ],
+    [
+      4,
+      400000
+    ],
+    [
+      5,
+      500000
+    ],
+    [
+      6,
+      600000
+    ],
+    [
+      7,
+      700000
+    ],
+    [
+      8,
+      800000
+    ],
+    [
+      9,
+      900000
+    ],
+    [
+      10,
+      1000000
+    ],
+    [
+      11,
+      1200000
+    ],
+    [
+      12,
+      1400000
+    ],
+    [
+      13,
+      1600000
+    ],
+    [
+      14,
+      1800000
+    ],
+    [
+      15,
+      2000000
+    ],
+    [
+      16,
+      2200000
+    ],
+    [
+      17,
+      2400000
+    ],
+    [
+      18,
+      2600000
+    ],
+    [
+      19,
+      2800000
+    ],
+    [
+      20,
+      3000000
+    ],
+    [
+      21,
+      3300000
+    ],
+    [
+      22,
+      3600000
+    ],
+    [
+      23,
+      3900000
+    ],
+    [
+      24,
+      4200000
+    ],
+    [
+      25,
+      4500000
+    ],
+    [
+      26,
+      4800000
+    ],
+    [
+      27,
+      5100000
+    ],
+    [
+      28,
+      5400000
+    ],
+    [
+      29,
+      5700000
+    ],
+    [
+      30,
+      6000000
+    ]
+  ],
+  "homeLotteryCostItemId": 1010,
+  "homeLotteryDrawLimit": [
+    [
+      1,
+      30
+    ],
+    [
+      2,
+      30
+    ],
+    [
+      3,
+      30
+    ],
+    [
+      4,
+      30
+    ],
+    [
+      5,
+      30
+    ],
+    [
+      6,
+      30
+    ],
+    [
+      7,
+      30
+    ],
+    [
+      8,
+      30
+    ],
+    [
+      9,
+      30
+    ],
+    [
+      10,
+      30
+    ],
+    [
+      11,
+      30
+    ],
+    [
+      12,
+      30
+    ],
+    [
+      13,
+      30
+    ],
+    [
+      14,
+      30
+    ],
+    [
+      15,
+      30
+    ],
+    [
+      16,
+      30
+    ],
+    [
+      17,
+      30
+    ],
+    [
+      18,
+      30
+    ],
+    [
+      19,
+      30
+    ],
+    [
+      20,
+      30
+    ]
+  ],
+  "homeLotteryFurnitureId": 70100002,
+  "homeLotteryResetParam": [
+    1,
+    4,
+    0,
+    0
+  ],
+  "homeLotteryResetType": 2,
+  "homeLotteryRewardDelay": 7.64,
+  "homeMarketInventorySpecialTabIcon": "$UI_Img_Shop_HomeStarCoinSale.png",
+  "homeMarketInventoryTabIcon": "$UI_Img_Shop_HomelandCoinSale.png",
+  "AdvancedBagShop": {
+    "50": 1,
+    "26": 1,
+    "40": 1
+  },
+  "ContinuousPurchaseHelpId": 704,
+  "ElectricOperationId": 5002,
+  "FONDLE_ANI_END_DURATION_M_SECOND": 2500,
+  "FONDLE_ANI_LOOP_DURATION_M_SECOND": 3000,
+  "FONDLE_ANI_START_DURATION_M_SECOND": 5000,
+  "FieldTypeId": 1010000,
+  "HOME_CAMP_PET_UISCALE": 0.8,
+  "HomeCampInviteValidTime": 3600,
+  "HomeCampOrnamentMax": 100,
+  "InteractSignTopLogoMaxCount": 5,
+  "QuickPlacementHelpId": 705,
+  "TopLogoMaxCount": 10,
+  "WoodlandTypeId": 1010001,
+  "addOnDisplayBuffId": 10103,
+  "addOnValidSeconds": 10800,
+  "attachDistanceXZ": 0.5,
+  "attachDistanceY": 0.5,
+  "cameraPitchRange": [
+    -88,
+    88
+  ],
+  "campAddOnGainTriggerId": 63023,
+  "campOfflineExpireDays": 3,
+  "campParkExpireDays": 7,
+  "campPrivateLineCostItemList": [
+    [
+      1010,
+      500000
+    ]
+  ],
+  "campPrivateLineDissolveMailId": 40,
+  "campPrivateLineDissolveNoticeId": 100004,
+  "campPrivateLineDissolveRewardId": 200159,
+  "carInteractOffset": [
+    5.5,
+    0,
+    0
+  ],
+  "carNameMaxLen": 10,
+  "createHomelandPortId": 90828405,
+  "createPetPointId": 82509653,
+  "dailyRandomHighPriceItemNum": [
+    2,
+    6
+  ],
+  "dailyRandomHighPriceMultiple": [
+    [
+      3,
+      0.8
+    ],
+    [
+      5,
+      0.15
+    ],
+    [
+      10,
+      0.05
+    ]
+  ],
+  "dailyRandomHighPriceStoreNum": [
+    1,
+    1
+  ],
+  "defaultOrders": [
+    1
+  ],
+  "editorMaxScale": 3,
+  "editorMinScale": 0.5,
+  "editorScaleStep": 0.1,
+  "electricMaxWorkRate": 1.2,
+  "electricTip": 1878590541,
+  "envDiffWorkRatioInfo": [
+    1,
+    0.8,
+    0.5,
+    0.2
+  ],
+  "envSimulateLevel": 6,
+  "eventLoginMaxCount": 20,
+  "eventMaxCount": 200,
+  "eventRandCountRange": [
+    1,
+    2
+  ],
+  "eventRandInterval": 129600,
+  "facilityTopLogoEnterDistance": 15,
+  "facilityTopLogoFarDistance": 12,
+  "facilityTopLogoMidDistance": 8,
+  "IndicatorIconDisplayArea": 10,
+  "homeOrderRefreshCost": [
+    [
+      5,
+      100
+    ],
+    [
+      10,
+      500
+    ],
+    [
+      15,
+      1000
+    ],
+    [
+      20,
+      2000
+    ],
+    [
+      25,
+      4000
+    ],
+    [
+      30,
+      6000
+    ],
+    [
+      35,
+      10000
+    ],
+    [
+      40,
+      15000
+    ]
+  ],
+  "homeOrderRefreshMaxCost": 30000,
+  "homePayOrderRefreshLimit": 45,
+  "homePetBreakPoints1": [
+    91048948,
+    91048953,
+    91048957,
+    91048959,
+    91048962,
+    91048963,
+    91048965,
+    91048966,
+    91048967,
+    91048968
+  ],
+  "homePetBreakPoints2": [
+    91048972,
+    91048973,
+    91048987,
+    91048988,
+    91049006,
+    91049008,
+    91049041,
+    91049048,
+    91049053,
+    91049054
+  ],
+  "homePetBreakTeleportPoint": 91050602,
+  "homePetWelcome": [
+    90201751,
+    90202895,
+    90203360,
+    90204038
+  ],
+  "homePlotsPrefab": "$P_FB_Build_Homeland_001_20X15.prefab",
+  "homeProducePlotNum": 16,
+  "homeRewardboxId": 72555527,
+  "homeSeasonCurrencyId": 4040034,
+  "homeSpInteractiveItem": [
+    50500009
+  ],
+  "homeTransportAbilityRequirementRatio": 10,
+  "homeVoucherCollectorHome": 70100001,
+  "homeVoucherId": 1011,
+  "homecampSnapshotUploadInterval": 600,
+  "homelandAreaRange": [
+    -50,
+    50,
+    -37.5,
+    37.5
+  ],
+  "homelandCameraAreaRange": [
+    -50,
+    50,
+    -40,
+    37.5
+  ],
+  "homelandCarPosition": 90822141,
+  "homelandNewSceneId": 550,
+  "homelandSceneId": 515,
+  "homelandShopId": 26,
+  "homelandSnapshotUploadInterval": 900,
+  "initCarPetCount": 0,
+  "linkAttachDistanceXA": 0.5,
+  "linkAttachDistanceY": 0.7,
+  "maxBlueprintCoverImageCount": 4,
+  "maxBlueprintDescLength": 100,
+  "maxBlueprintNameLength": 20,
+  "maxEnterCount": 50,
+  "maxFavoriteOrnamentCount": 15,
+  "maxFurniturePerBlueprint": 100,
+  "maxMultiSelectHeight": 15,
+  "maxMultiSelectNum": 500,
+  "maxMultiSelectSize": 40,
+  "maxPetCount": 0,
+  "maxPinnedFormulaCount": 1,
+  "maxSavedOtherBlueprintCount": 15,
+  "maxUploadBlueprintCount": 15,
+  "newHomePlotsPrefab": "$P_FB_Build_Homeland_001_20X15_new.prefab",
+  "newcreatePetPointId": 91274708,
+  "newhomePetBreakPoints1": [
+    91274754,
+    91274755,
+    91274756,
+    91274757,
+    91274758,
+    91274759,
+    91274760,
+    91274761,
+    91274762,
+    91274763
+  ],
+  "newhomePetBreakPoints2": [
+    91274764,
+    91274765,
+    91274766,
+    91274767,
+    91274768,
+    91274769,
+    91274770,
+    91274771,
+    91274772,
+    91274773
+  ],
+  "newhomePetBreakTeleportPoint": 91274752,
+  "newhomePetWelcome": [
+    91274709,
+    91274710,
+    91274711,
+    91274712
+  ],
+  "newhomeRewardboxId": 91274714,
+  "newhomelandCarPosition": 91274753,
+  "newjianzaocreatePetPointId": 91370734,
+  "newtillGetChestConfig": [
+    10,
+    91274784
+  ],
+  "newtillRewardboxId": 91274785,
+  "noFoodWorkRatio": 0.2,
+  "orderFlushByPayCondition": 60004,
+  "orderFlushUnlockCondition": 60004,
+  "pettingIcon": "$UI_Home_TopLogo_Stroke.png",
+  "pettingName": 1126803536,
+  "pettingReward": 200737,
+  "pettingRewardDailyLimit": 5,
+  "placeFurnitureAngle": 30,
+  "placeFurnitureHeightDiffLimit": 2,
+  "playerUnitTimeWorkload": 120,
+  "rotationAngleIndex": 3,
+  "rushOrderProbability": [
+    [
+      100,
+      95
+    ],
+    [
+      200,
+      4
+    ],
+    [
+      500,
+      1
+    ]
+  ],
+  "shadowLightBandWidth": 2,
+  "shadowLightDistance": {
+    "IOS": [
+      10,
+      12,
+      15,
+      18
+    ],
+    "PS5Base": [
+      25,
+      30
+    ],
+    "PS5Pro": [
+      30,
+      30
+    ],
+    "XSS": [
+      20,
+      25
+    ],
+    "XSX": [
+      25,
+      30
+    ],
+    "Windows": [
+      15,
+      20,
+      25,
+      30
+    ],
+    "Android": [
+      10,
+      12,
+      15,
+      18
+    ]
+  },
+  "shadowLightMaxCount": {
+    "IOS": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "PS5Base": [
+      6,
+      8
+    ],
+    "PS5Pro": [
+      8,
+      10
+    ],
+    "XSS": [
+      3,
+      4
+    ],
+    "XSX": [
+      6,
+      6
+    ],
+    "Windows": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "Android": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "shadowLightMinIntensity": 3,
+  "shadowLightMoveThreshold": 0.5,
+  "shadowLightUpdateInterval": 1,
+  "tillGetChestConfig": [
+    10,
+    91216059
+  ]
+}

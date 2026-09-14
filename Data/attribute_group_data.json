@@ -1,0 +1,638 @@
+{
+  "242": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_break_add_ratio"
+    ],
+    "name": 1254646401
+  },
+  "113": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "attrs": [
+      "pet_individual_point_def"
+    ],
+    "name": 1770081191
+  },
+  "244": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_15.png",
+    "attrs": [
+      "common_skill_cd_dec_rate_v"
+    ],
+    "name": 1857998753
+  },
+  "236": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_02.png",
+    "attrs": [
+      "common_def_penetration_rate_v"
+    ],
+    "name": 1933628343
+  },
+  "208": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "taken_dmg_dec_rate_v"
+    ],
+    "name": 1942594961
+  },
+  "238": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_skill_dmg_inc_rate_v"
+    ],
+    "name": 1664825408
+  },
+  "243": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_10.png",
+    "attrs": [
+      "caster_heal_add_ratio"
+    ],
+    "name": 1887343375
+  },
+  "117": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_08.png",
+    "attrs": [
+      "bp_atk_v"
+    ],
+    "name": 1896761816
+  },
+  "206": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_07.png",
+    "attrs": [
+      "ep_regen_force_p"
+    ],
+    "name": 2015771435
+  },
+  "118": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_07.png",
+    "attrs": [
+      "ep_regen_force_v"
+    ],
+    "name": 1809336178
+  },
+  "119": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "attrs": [
+      "def_mag_fix",
+      "def_fix"
+    ],
+    "name": 1634149249
+  },
+  "235": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_08.png",
+    "attrs": [
+      "bp_atk_p"
+    ],
+    "name": 1287620130
+  },
+  "110": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_05.png",
+    "attrs": [
+      "pet_individual_point_atk",
+      "pet_individual_point_hp",
+      "pet_individual_point_def",
+      "pet_individual_point_def_mag",
+      "pet_individual_point_ep_regen_force",
+      "pet_individual_point_bp_atk"
+    ],
+    "name": 1995976657
+  },
+  "245": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_63.png",
+    "attrs": [
+      "element_restraint_add_ratio"
+    ],
+    "name": 1103044961
+  },
+  "114": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "attrs": [
+      "pet_individual_point_def_mag"
+    ],
+    "name": 1337184706
+  },
+  "112": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "attrs": [
+      "pet_individual_point_hp"
+    ],
+    "name": 1638470706
+  },
+  "230": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_dark_dec_ratio"
+    ],
+    "name": 1941437547
+  },
+  "900": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "final_taken_dmg_inc_rate_v"
+    ],
+    "name": 1576259157
+  },
+  "901": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "final_taken_dmg_dec_rate_v"
+    ],
+    "name": 1417339142
+  },
+  "902": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_07.png",
+    "attrs": [
+      "ep_max_fix"
+    ],
+    "name": 1863078625
+  },
+  "234": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "final_taken_dmg_dec_rate_v"
+    ],
+    "name": 1357492167
+  },
+  "237": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_normal_attack_dmg_inc_rate_v"
+    ],
+    "name": 2022766960
+  },
+  "239": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_ultimate_dmg_inc_rate_v"
+    ],
+    "name": 1605033560
+  },
+  "116": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_08.png",
+    "attrs": [
+      "pet_individual_point_bp_atk"
+    ],
+    "name": 2083489455
+  },
+  "308": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "puppet_element_resist_add_ratio"
+    ],
+    "name": 1448034244
+  },
+  "307": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "puppet_element_restraint_add_ratio"
+    ],
+    "name": 2070049603
+  },
+  "306": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_dmg_lv60_inc_rate_v",
+      "bp_add_lv60_ratio"
+    ],
+    "name": 1974437057
+  },
+  "203": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_05.png",
+    "attrs": [
+      "atk_mag_p"
+    ],
+    "name": 1795115902
+  },
+  "305": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_dmg_lv50_inc_rate_v",
+      "bp_add_lv50_ratio"
+    ],
+    "name": 2136634129
+  },
+  "199": {
+    "attrs": [
+      "primary_convert_str",
+      "hp_max_v"
+    ],
+    "showType": 0,
+    "name": 1658232227
+  },
+  "304": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_dmg_lv40_inc_rate_v",
+      "bp_add_lv40_ratio"
+    ],
+    "name": 1769172856
+  },
+  "303": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_dmg_lv30_inc_rate_v",
+      "bp_add_lv30_ratio"
+    ],
+    "name": 1093446027
+  },
+  "302": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_dmg_lv20_inc_rate_v",
+      "bp_add_lv20_ratio"
+    ],
+    "name": 1457522931
+  },
+  "301": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_dmg_lv10_inc_rate_v",
+      "bp_add_lv10_ratio"
+    ],
+    "name": 1393840704
+  },
+  "101": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "attrs": [
+      "hp_max_v"
+    ],
+    "name": 1226299818
+  },
+  "201": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "attrs": [
+      "hp_max_p"
+    ],
+    "name": 1753773884
+  },
+  "202": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_03.png",
+    "attrs": [
+      "atk_p"
+    ],
+    "name": 1555201380
+  },
+  "211": {
+    "attrs": [
+      "speed_ratio_walk_v",
+      "speed_ratio_run_v",
+      "speed_ratio_dash_v",
+      "speed_ratio_sprint_v"
+    ],
+    "showType": 1,
+    "name": 2122715272
+  },
+  "246": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_64.png",
+    "attrs": [
+      "element_resist_add_ratio"
+    ],
+    "name": 1487759329
+  },
+  "212": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_normal_add_ratio"
+    ],
+    "name": 1589685182
+  },
+  "115": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_07.png",
+    "attrs": [
+      "pet_individual_point_ep_regen_force"
+    ],
+    "name": 1809475715
+  },
+  "213": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_ice_add_ratio"
+    ],
+    "name": 1737866067
+  },
+  "207": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "taken_dmg_inc_rate_v"
+    ],
+    "name": 1332107989
+  },
+  "214": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_water_add_ratio"
+    ],
+    "name": 1200951927
+  },
+  "222": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_normal_dec_ratio"
+    ],
+    "name": 1418200076
+  },
+  "215": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_electric_add_ratio"
+    ],
+    "name": 1215524605
+  },
+  "204": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "attrs": [
+      "def_p"
+    ],
+    "name": 1218018210
+  },
+  "216": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_fire_add_ratio"
+    ],
+    "name": 1863498614
+  },
+  "233": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "final_taken_dmg_inc_rate_v"
+    ],
+    "name": 1148083830
+  },
+  "217": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_grass_add_ratio"
+    ],
+    "name": 1848554357
+  },
+  "104": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "attrs": [
+      "def_v"
+    ],
+    "name": 1636116057
+  },
+  "218": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_rock_add_ratio"
+    ],
+    "name": 2071942177
+  },
+  "190": {
+    "attrs": [
+      "weight"
+    ],
+    "showType": 2,
+    "name": 1491688959
+  },
+  "219": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_wind_add_ratio"
+    ],
+    "name": 1693012802
+  },
+  "223": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_ice_dec_ratio"
+    ],
+    "name": 1252263920
+  },
+  "220": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_dark_add_ratio"
+    ],
+    "name": 1717110575
+  },
+  "205": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "attrs": [
+      "def_mag_p"
+    ],
+    "name": 1520044140
+  },
+  "221": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_holy_add_ratio"
+    ],
+    "name": 1406556689
+  },
+  "102": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_03.png",
+    "attrs": [
+      "atk_v"
+    ],
+    "name": 1156270351
+  },
+  "105": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "attrs": [
+      "def_mag_v"
+    ],
+    "name": 1083842350
+  },
+  "103": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_05.png",
+    "attrs": [
+      "atk_mag_v"
+    ],
+    "name": 1311668271
+  },
+  "107": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_03.png",
+    "attrs": [
+      "atk_fix"
+    ],
+    "name": 1862171421
+  },
+  "224": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_water_dec_ratio"
+    ],
+    "name": 1427686353
+  },
+  "106": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_01.png",
+    "attrs": [
+      "hp_max_fix"
+    ],
+    "name": 1686441737
+  },
+  "225": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_electric_dec_ratio"
+    ],
+    "name": 1456546474
+  },
+  "209": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_20.png",
+    "attrs": [
+      "crit_rate_v"
+    ],
+    "name": 1832253089
+  },
+  "226": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_fire_dec_ratio"
+    ],
+    "name": 2083224489
+  },
+  "210": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_19.png",
+    "attrs": [
+      "crit_dmg_v"
+    ],
+    "name": 1312631826
+  },
+  "227": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_grass_dec_ratio"
+    ],
+    "name": 1660941298
+  },
+  "228": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_rock_dec_ratio"
+    ],
+    "name": 1361896978
+  },
+  "108": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_04.png",
+    "attrs": [
+      "def_fix"
+    ],
+    "name": 1505098799
+  },
+  "229": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_wind_dec_ratio"
+    ],
+    "name": 1984952054
+  },
+  "109": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_06.png",
+    "attrs": [
+      "def_mag_fix"
+    ],
+    "name": 1881688207
+  },
+  "231": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_21.png",
+    "attrs": [
+      "dmg_holy_dec_ratio"
+    ],
+    "name": 1443978345
+  },
+  "232": {
+    "attrs": [
+      "stamina_max_p"
+    ],
+    "showType": 1,
+    "name": 1900093590
+  },
+  "240": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_07.png",
+    "attrs": [
+      "sp_regen_p"
+    ],
+    "name": 1805869879
+  },
+  "111": {
+    "showType": 0,
+    "icon": "$ui_img_skill_icon_buff_03.png",
+    "attrs": [
+      "pet_individual_point_atk"
+    ],
+    "name": 1102038018
+  },
+  "241": {
+    "showType": 1,
+    "icon": "$ui_img_skill_icon_buff_17.png",
+    "attrs": [
+      "dmg_elite_add_ratio"
+    ],
+    "name": 2046238105
+  }
+}

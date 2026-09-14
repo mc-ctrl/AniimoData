@@ -1,0 +1,45 @@
+{
+  "stopBurrowActOnTgtNodeId": 55,
+  "stopBurrowTimelineId": 11631501001,
+  "BPName": "ability_11631501",
+  "NodeID": 1,
+  "UID": "0d60a06c-3db4-4b70-8523-eec15727b526",
+  "abilityParamId": 10200221,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "burrowSwitchToAbilityId": 11630110,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11631501001,
+      "name": "setCombatActionTimeline",
+      "UID": "a88dfbe4-bb3e-4000-a0d1-d5bc5d13fc87",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BurrowSkill_CombatExit"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Slash",
+    "Eff_Parmon_10163_Skill_RotateSlash_02",
+    "Eff_Parmon_10161_Skill_MagicLeaf_Ice_H_Boss",
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "canCastByCallFriends": false,
+  "burrowExitCastAbilityId": 11630110,
+  "onlyHasActOnTargets": true,
+  "burrowDuration": 5.6,
+  "desc": ""
+}

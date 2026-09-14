@@ -1,0 +1,79 @@
+{
+  "duration": 1,
+  "BPName": "ability_13110002",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10311_Skill_Attack_03",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0.1,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "24": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.166
+      },
+      "name": "calcResult",
+      "UID": "bfc4242d-7017-4a2b-9806-ed8c0abd3e9d",
+      "target": "CASTER",
+      "NodeID": 24
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "0bcd321d-5b01-4b3c-9b96-e0ef18232525",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "20": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1.166
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Water_Blunt",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102
+      },
+      "UID": "8e392317-7f72-4181-9fa6-b9b88d6e54a8",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 20
+    },
+    "26": {
+      "UID": "c1356c4c-0935-4a68-91c7-4fadb8986ea8",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 26
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": {},
+  "onProjectileHitIds": [
+    20,
+    25
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "defaultHitSoundType": "s",
+  "tickInterval": 0.05,
+  "angularIncreaseDuration": 1,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Water_Blunt",
+  "calcResultNodeId": 20,
+  "impulseId": 2000,
+  "acceleration": 0
+}

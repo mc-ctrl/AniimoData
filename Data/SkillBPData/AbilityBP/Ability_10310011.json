@@ -1,0 +1,32 @@
+{
+  "BPName": "ability_10310011",
+  "NodeID": 1,
+  "UID": "a5dc1494-e034-4776-a38d-c682205d7dd6",
+  "abilityParamId": 10500000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10310011001,
+      "name": "setCombatActionTimeline",
+      "UID": "451722db-4681-492a-822d-12cbd865c859",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

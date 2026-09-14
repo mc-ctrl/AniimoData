@@ -1,0 +1,106 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "10": {
+      "key": "defaulttimer",
+      "duration": 0.35,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "0cc44cf6-413d-45f9-9995-8e4828112c5f",
+      "name": "addEntityTimer"
+    },
+    "13": {
+      "NodeID": 13,
+      "name": "getTargetOffsetPos",
+      "UID": "d0336890-be80-4340-b2fc-fe44c95cbf8d",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        8
+      ],
+      "rotType": {
+        "name": "getRotationFromTo",
+        "considerYAxis": false,
+        "UID": "61113c70-c686-463b-bbad-0edf7d6c57c1",
+        "to": "SRC",
+        "NodeID": 12,
+        "from": "OWNER"
+      }
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 2131303101,
+      "name": "createProjectile",
+      "UID": "4c4a2bd3-bf42-4597-adf2-d10c019ec296",
+      "rotation": "ToPos",
+      "targetPos": {
+        "NodeID": 13,
+        "name": "getTargetOffsetPos",
+        "UID": "d0336890-be80-4340-b2fc-fe44c95cbf8d",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          8
+        ],
+        "rotType": {
+          "name": "getRotationFromTo",
+          "considerYAxis": false,
+          "UID": "61113c70-c686-463b-bbad-0edf7d6c57c1",
+          "to": "SRC",
+          "NodeID": 12,
+          "from": "OWNER"
+        }
+      },
+      "projectileType": "Parabola3d",
+      "rotationTowardsPos": {
+        "NodeID": 13,
+        "name": "getTargetOffsetPos",
+        "UID": "d0336890-be80-4340-b2fc-fe44c95cbf8d",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          8
+        ],
+        "rotType": {
+          "name": "getRotationFromTo",
+          "considerYAxis": false,
+          "UID": "61113c70-c686-463b-bbad-0edf7d6c57c1",
+          "to": "SRC",
+          "NodeID": 12,
+          "from": "OWNER"
+        }
+      },
+      "NodeID": 9,
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ]
+    },
+    "12": {
+      "name": "getRotationFromTo",
+      "considerYAxis": false,
+      "UID": "61113c70-c686-463b-bbad-0edf7d6c57c1",
+      "to": "SRC",
+      "NodeID": 12,
+      "from": "OWNER"
+    }
+  },
+  "BPName": "buff_2131303",
+  "dynamicRPCStates": {},
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10
+  ]
+}

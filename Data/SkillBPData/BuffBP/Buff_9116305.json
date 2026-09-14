@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116305",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "74d56c46-3fe7-47a6-9a71-db27b8b6e539",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "960e95b8-860f-41a5-936f-1fe8bf9d68d7",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "calcId": 9116305,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "90d32ec2-3bcf-4e2c-a50b-af2a1a9e733c",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "value": {
+        "calcId": 9116305,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 6,
+        "UID": "90d32ec2-3bcf-4e2c-a50b-af2a1a9e733c",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "6958368a-7056-43e2-8cba-f78156028df0",
+      "element": 2,
+      "target": {
+        "UID": "8f831c9d-0f8d-4fd7-a038-01be28259c83",
+        "name": "getEventAttackTarget",
+        "NodeID": 8
+      },
+      "NodeID": 7
+    },
+    "5": {
+      "UID": "cbc87547-f8ad-4077-8d36-ef38f7f4ac8c",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

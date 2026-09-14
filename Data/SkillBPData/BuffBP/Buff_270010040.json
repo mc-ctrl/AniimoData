@@ -1,0 +1,79 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010040",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "tags": [
+    3,
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3
+      },
+      "name": "calcResult",
+      "UID": "4f4ca261-0122-4411-8a97-7e51e82eed30",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6e122145-7fba-4edf-875d-70adc1e9e8e1",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "14": {
+      "name": "changeControlState",
+      "UID": "79bae2e7-562c-4caf-9479-eefd7f861cea",
+      "target": "OWNER",
+      "controlState": "LOCOMOTION",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "694f8590-64f4-4d26-b982-563c7b38484b",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "13": {
+      "tag": "TE_Wild_Stun",
+      "name": "removeEntityTag",
+      "UID": "e7c57035-8dae-4410-b582-411c3e32b578",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "7": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 7,
+      "UID": "bd69cb19-396d-4ae9-8014-0f1d97b45f4e",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "12": {
+      "tag": "TE_Wild_Stun",
+      "name": "addEntityTag",
+      "UID": "6f06e1c7-bffe-49b3-8739-8ba13c294185",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    13,
+    4
+  ],
+  "onBuffStartIds": [
+    14,
+    7,
+    9,
+    12
+  ]
+}

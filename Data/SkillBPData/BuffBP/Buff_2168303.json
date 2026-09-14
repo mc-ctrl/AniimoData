@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2168303",
+  "calcInfoByLuaConfig": {
+    "id": 2168303,
+    "type": 1,
+    "final_taken_dmg_inc_rate_v": "param0"
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

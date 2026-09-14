@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000152",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 5000153,
+      "name": "removeBuff",
+      "UID": "131e6fa4-1657-430e-98f6-5bc2d64b418b",
+      "target": "OWNER",
+      "NodeID": 3
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    3
+  ]
+}

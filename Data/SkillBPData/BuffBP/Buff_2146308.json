@@ -1,0 +1,57 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2146308",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "key": "hp10043",
+      "name": "getCacheVal",
+      "UID": "373cacac-8206-44bc-b312-a519aa81a6d9",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_SmashGround_ShieldEnd",
+      "NodeID": 3
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "66676f1f-f805-46b7-a425-f605e1960856",
+      "effectId": "Eff_Parmon_10463_Skill_Bubble_SmashGroundBuff_Start_01",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "6": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "268547c1-8c88-4c9c-b910-8239195d6713",
+      "effectId": "Eff_Parmon_10463_Skill_Bubble_SmashGroundBuff_Start_01",
+      "speed": 1,
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5,
+    3
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

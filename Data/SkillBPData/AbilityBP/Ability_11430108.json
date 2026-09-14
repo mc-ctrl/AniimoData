@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_11430108",
+  "NodeID": 1,
+  "UID": "c88f312d-c9fd-474b-945a-cb212274c879",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11430108001,
+      "name": "setCombatActionTimeline",
+      "UID": "a0fada19-9d09-4acd-8625-5ef95b60924c",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10143_Skill_Ex_Light_Red",
+    "Eff_Parmon_10143_Skill_Charge",
+    "Eff_Parmon_10143_Skill_Shield_Spark",
+    "Eff_Parmon_10143_Skill_Ex_Star",
+    "Eff_Parmon_10143_Skill_Charge03"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 10400258,
+  "name": ""
+}

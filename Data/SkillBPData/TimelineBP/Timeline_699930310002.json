@@ -1,0 +1,202 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "b567cb82-c10d-4357-83df-9d0084bae576",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "NodeID": 52
+    },
+    "136": {
+      "name": "stopSoundStr",
+      "UID": "8d310247-0693-4478-a287-319f6b255e14",
+      "soundId": "SFX_Combat_69993_Skill_FireBall_Loop",
+      "target": "OWNER",
+      "NodeID": 136
+    },
+    "135": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1418f899-56f9-467e-a702-7f432ed112c6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_69993_Skill_FireBall_Fire",
+      "NodeID": 135
+    },
+    "126": {
+      "name": "stopEffectStr",
+      "UID": "57b2bf76-051b-40bd-b658-34bd3a0e874a",
+      "effectId": "Eff_Parmon_6999301_Skill_FireBall_Loop",
+      "target": "OWNER",
+      "NodeID": 126
+    },
+    "46": {
+      "UID": "9b4ae613-2aeb-4355-a977-513db29ed652",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "NodeID": 46
+    },
+    "117": {
+      "offsetXYZ": [
+        0.4,
+        0.75,
+        -0.6
+      ],
+      "templateId": 699930310002,
+      "name": "createProjectile",
+      "UID": "195a5f3a-aadc-4432-b03b-dc9a30a11529",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "NodeID": 117,
+      "offsetRotation": [
+        30,
+        0,
+        0
+      ]
+    },
+    "69": {
+      "offsetXYZ": [
+        0.4,
+        0.75,
+        -0.6
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1d0af63e-919e-45aa-b308-0f46ed237a44",
+      "effectId": "Eff_Parmon_6999301_Skill_FireBall_Fire",
+      "speed": 1,
+      "NodeID": 69
+    },
+    "44": {
+      "UID": "6ae97229-7189-4789-a4ab-99db789e50e3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 44
+    },
+    "48": {
+      "UID": "06f77444-bef8-45e6-9abd-0e452d1287fa",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 48
+    },
+    "58": {
+      "action": {
+        "actionIds": [
+          117,
+          56,
+          59,
+          69,
+          126
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 58,
+      "UID": "e87f4c0d-248b-4a20-b588-ebf6ab92cc85"
+    },
+    "59": {
+      "startPosOffset": [
+        0,
+        0.1,
+        0
+      ],
+      "duration": 5,
+      "name": "enableSupportAimEffect",
+      "UID": "1d9345cc-fa3f-4cea-bdbe-bd2f6f392d50",
+      "startNoGravityTime": 0,
+      "gravityRatio": 1,
+      "rotationOffset": [
+        20,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 59,
+      "enable": false,
+      "moveSpeed": 20
+    },
+    "56": {
+      "NodeID": 56,
+      "UID": "e18136a0-a4ca-4119-949a-93c30591ac69",
+      "blendTime": 0.6,
+      "cameraPitchOffset": 0,
+      "cameraYawOffset": -5,
+      "maxPitch": 25,
+      "shoulderX": 0.8,
+      "shoulderY": 0,
+      "shoulderZ": -0.3,
+      "name": "setIsInAim",
+      "aimAnim": "Skill_MudBowling_Loop",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "minPitch": -35,
+      "showAimUI": false,
+      "val": false
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 50,
+      "UID": "998040d8-ca4c-4303-af66-eec05d37c439"
+    },
+    "34": {
+      "UID": "b3c04971-ed47-4e28-8361-90233a6f2655",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 34
+    },
+    "51": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "9e22ec54-4301-466b-8a51-da8855f5e978",
+      "target": "OWNER",
+      "NodeID": 51,
+      "animId": "Skill_FireBall_End"
+    },
+    "36": {
+      "UID": "a7a36050-81ab-46e9-9a04-89d7ec44d304",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34,
+          136,
+          135
+        ]
+      },
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_699930310",
+  "NodeID": 38,
+  "UID": "f07658df-0697-49ca-a9df-560500a2f712",
+  "eventIds": [
+    36,
+    46,
+    50,
+    52,
+    58
+  ],
+  "layer": "Base",
+  "length": 1.45
+}

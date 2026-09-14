@@ -1,0 +1,81 @@
+{
+  "nodeMap": {
+    "22": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7f792798-0087-4c07-ba78-35cc2764a1fa",
+      "target": "OWNER",
+      "NodeID": 22,
+      "animId": "Skill_Roll_End"
+    },
+    "29": {
+      "UID": "7abd5aec-379f-40a0-9cf3-6815442cf917",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCombo": 0,
+        "cancellable": 1
+      },
+      "NodeID": 29
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 30,
+      "UID": "cd232846-411e-4454-823a-a4f6c3fb8ffd"
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "55d89cc3-f919-4acb-a37c-9a7992846b00",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starimm_roll_end",
+      "NodeID": 41
+    },
+    "37": {
+      "UID": "2ef156eb-66d3-4d0b-9bef-4999c6a46588",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 37
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "293a1b08-d81d-4f67-a35f-21454654d608",
+      "effectId": "Eff_Parmon_10191_Skill_Roll_End",
+      "speed": 1,
+      "NodeID": 35
+    },
+    "24": {
+      "UID": "17b8a0f8-f09f-4d34-8066-f55d8d431b26",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22,
+          35,
+          41,
+          37
+        ]
+      },
+      "NodeID": 24
+    }
+  },
+  "BPName": "ability_11910310",
+  "NodeID": 26,
+  "UID": "77c9e824-922e-4a11-a830-0e3b5473ddd4",
+  "eventIds": [
+    24,
+    30
+  ],
+  "layer": "Base",
+  "length": 1
+}

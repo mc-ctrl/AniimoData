@@ -1,0 +1,147 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_910530901",
+  "name": "",
+  "UID": "f2aa1a8d-0678-47e1-83f5-0e5a225a2890",
+  "icon": "",
+  "desc": "火狼稀有特性-火狼",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c20e5fce-de58-44a4-ac59-b6c0f14731eb",
+      "effectId": "Eff_Parmon_10053_Skill_ChargeFull_Buff_01",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "name": "checkPetPrototypeId",
+      "UID": "eb714f8c-9b5d-4fc6-baba-f27fbb9f2846",
+      "target": "OWNER",
+      "petPrototypeId": 1005300,
+      "NodeID": 13
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "a62a3db2-0f16-4f88-bf36-cdf229556a75",
+      "effectId": "Eff_Parmon_10053_Skill_ChargeFull_Buff_01",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "21": {
+      "key": "FirewolfTrigger",
+      "name": "setCacheVal",
+      "UID": "1dc4b6f8-79df-4fb9-a659-003ca67441ef",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 21
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "30d261e3-15aa-4b6f-857f-39e6241c69bf",
+      "effectId": "Eff_Parmon_10053_Skill_Fire_Hand_L",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "870364f4-27c9-48d0-a6d0-0a584bfead89",
+      "effectId": "Eff_Parmon_10053_Skill_Fire_Hand_L",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2ec28179-ac2d-490c-bb2e-a9152a0639b0",
+      "effectId": "Eff_Parmon_10053_Skill_Fire_Hand_R",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "544b1b2d-11f3-4063-aa3f-b053eb2a7801",
+      "effectId": "Eff_Parmon_10053_Skill_Fire_Hand_R",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "6": {
+      "actionIds": [
+        11,
+        3,
+        7,
+        8,
+        12,
+        21
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "1a085cbb-3681-4a96-bf9b-efed989512d4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3,
+        7,
+        8,
+        12
+      ],
+      "NodeID": 6
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "2110fe77-8e7d-43eb-934a-4be971e92966",
+      "effectId": "Eff_Parmon_10053_Skill_Fire_Foot_L",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "7d63eeb9-9691-43e0-aeef-62923a162f29",
+      "effectId": "Eff_Parmon_10053_Skill_Fire_Foot_R",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 11,
+      "UID": "cf4a2f56-d77d-4297-827d-581ab44c44f3",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10053_Fire",
+      "name": "playPreset"
+    },
+    "20": {
+      "UID": "b4fc9302-4e16-46ca-ad54-b54cc614fe72",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10053_Fire",
+      "NodeID": 20
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "dac57dce-6029-4210-8c13-80846091967e",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_smash_fire",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

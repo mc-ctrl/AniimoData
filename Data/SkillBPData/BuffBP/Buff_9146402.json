@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9146402",
+  "name": "号胜象-稀有特性",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "",
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9146401,
+      "NodeID": 2,
+      "UID": "ae183390-d90a-4971-8896-6eeaf936e21c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

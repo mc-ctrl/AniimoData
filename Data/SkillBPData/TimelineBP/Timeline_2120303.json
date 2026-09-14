@@ -1,0 +1,140 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "20": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 20,
+      "UID": "73a8239a-38ac-4177-bd5b-2725bc19a5d8",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Dark_End",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    },
+    "4": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          20,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "9": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 7,
+      "NodeID": 9,
+      "UID": "590c627e-18d1-4080-94ef-b370f9b2c56b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        7
+      ]
+    },
+    "19": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 19
+    },
+    "17": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a8d5cd45-608b-42f4-9143-92e438407422",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Dark",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "11": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 6,
+      "NodeID": 11,
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          9
+        ]
+      }
+    },
+    "7": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.65,
+        "reduce_cur_tp_rate": 0.65
+      },
+      "attackData": {
+        "impulseId": 2000,
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 12,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "36b3b845-d09c-4bcc-873a-28ee6f6801c3",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 7
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Dark",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2120303",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    11,
+    19,
+    4
+  ],
+  "layer": "Base",
+  "length": 6
+}

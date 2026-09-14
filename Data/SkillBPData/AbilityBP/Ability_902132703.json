@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_902132703",
+  "NodeID": 1,
+  "UID": "8e3c3b93-6299-4253-8dc7-01b469c2329a",
+  "abilityParamId": 49226010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902132703001,
+      "name": "setCombatActionTimeline",
+      "UID": "7559cb89-4e15-496c-8e86-1ecff00f4fe7",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Green_Gm_03"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Skill_Green_Gm_03_01",
+    "Eff_Monster_90213_Mon_Skill_Green_Gm_03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 60,
+  "searchTargetRangeUp": 20,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 20,
+  "refBones": [
+    "Bip001 Spine"
+  ]
+}

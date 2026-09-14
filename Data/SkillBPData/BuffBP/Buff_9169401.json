@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9169401",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "naturalDecayV": 0,
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 1,
+      "name": "registerPassiveEnergyInfo",
+      "UID": "b34a2005-4146-4e47-95cf-7983a52e284e",
+      "superBoosted": true,
+      "uiOffsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "spEnergyMaxV": 6,
+      "spEnergyInitV": 0,
+      "NodeID": 5,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 0
+    },
+    "9": {
+      "buffId": 91694011,
+      "name": "removeTeamSharedBuff",
+      "UID": "1ea82dba-09d3-4e53-b79b-f3030b534d01",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "6752d8e0-55bb-4444-be1f-3ebacd3dab20",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 18
+    },
+    "26": {
+      "UID": "fde9a842-57d6-4687-9998-11dadebcc03e",
+      "oldPetActionIds": [
+        24
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 26
+    },
+    "24": {
+      "calcInfo": {
+        "passive_energy_cur": -6
+      },
+      "name": "calcResult",
+      "UID": "c2e36a74-6348-42f2-9b36-725fd99fe6f4",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91694011,
+      "NodeID": 8,
+      "UID": "9d33a655-10f5-475e-95e4-cd0142afa7f7",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "16": {
+      "calcInfo": {
+        "passive_energy_cur": {
+          "templateId": 2169401,
+          "name": "getBuffLayer",
+          "UID": "4f828979-2d84-4b9a-85f1-615c8950ee0e",
+          "target": "OWNER",
+          "NodeID": 14
+        }
+      },
+      "name": "calcResult",
+      "UID": "b3326974-01c2-42fc-8c19-d0c77b6e3582",
+      "target": "OWNER",
+      "NodeID": 16
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9
+  ],
+  "onBuffStartIds": [
+    5,
+    8,
+    18,
+    26
+  ]
+}

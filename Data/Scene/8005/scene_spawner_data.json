@@ -1,0 +1,88 @@
+{
+  "42721815": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "position": [
+      -44.98,
+      8.1,
+      -108.77
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42131862,
+    "id": 42721815,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42721813
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42132011": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "position": [
+      -4.47,
+      6.37,
+      -91.03
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42131862,
+    "id": 42132011,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42745072,
+          42203239,
+          73890133
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42133890": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "position": [
+      -29.99,
+      6,
+      -90.98
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42131862,
+    "id": 42133890,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42133882
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

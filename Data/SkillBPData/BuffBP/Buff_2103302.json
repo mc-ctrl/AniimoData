@@ -1,0 +1,31 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103302",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9bc64e39-5d4a-4353-996d-4b1aee9c426f",
+      "effectId": "Eff_Parmon_10033_Skill_FlyBlade_Debuff",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "125afb4c-fa55-405f-8e6f-c2881fac2cd2",
+      "effectId": "Eff_Parmon_10033_Skill_FlyBlade_Debuff",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

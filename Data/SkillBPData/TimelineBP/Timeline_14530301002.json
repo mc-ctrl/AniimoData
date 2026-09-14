@@ -1,0 +1,82 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "64455eca-9c50-4f49-a47c-e1fc760b68b3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50,
+          76,
+          96,
+          109
+        ]
+      },
+      "NodeID": 52
+    },
+    "96": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bb8ce413-bba6-4871-b27e-3432cf7f7cfb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10453_Skill_Dount_End",
+      "NodeID": 96
+    },
+    "109": {
+      "NodeID": 109,
+      "from": 14530301,
+      "to": 14530301,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 5,
+      "recoverOnExit": true,
+      "name": "switchSkill",
+      "UID": "4b731952-c6ac-4a6f-8753-30d5829b9245",
+      "notShowCountDown": false
+    },
+    "50": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0ff51dc5-e24f-47b0-a2e4-c6ef91eed701",
+      "target": "OWNER",
+      "NodeID": 50,
+      "animId": "Skill_DountEnd"
+    },
+    "113": {
+      "action": {
+        "actionIds": [
+          112
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 113,
+      "UID": "98e0be56-273f-4c5a-9058-f5a8dc9893b9"
+    },
+    "112": {
+      "UID": "213855d9-f7bb-4ea2-8488-d07991614ab1",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0,
+        "cancellable": 1
+      },
+      "NodeID": 112
+    },
+    "76": {
+      "name": "stopSoundStr",
+      "UID": "2486df04-0aed-432f-9b46-59117cdbace0",
+      "soundId": "SFX_Combat_10453_Skill_Dount",
+      "target": "OWNER",
+      "NodeID": 76
+    }
+  },
+  "BPName": "ability_14530301",
+  "NodeID": 54,
+  "UID": "2c8ebd3a-87cf-4629-aa1f-3d662e575a4b",
+  "eventIds": [
+    52,
+    113
+  ],
+  "layer": "Base",
+  "length": 1.3
+}

@@ -1,0 +1,315 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 6001007,
+      "NodeID": 37,
+      "UID": "b1c10dea-9a5d-4e1d-b748-c1514aaae349",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "38": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6001008,
+      "NodeID": 38,
+      "UID": "fdba8178-0f1e-4f59-aead-5271c5403f49",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "UID": "8be8ed10-7f1d-4ecd-92ee-3aafcdc01a6d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "41": {
+      "calcId": 30100050,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 41,
+      "UID": "c204cfce-039d-4146-9061-ff6ea8a599c0",
+      "name": "getParamByLuaConfig"
+    },
+    "42": {
+      "cdTime": {
+        "calcId": 30100050,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 41,
+        "UID": "c204cfce-039d-4146-9061-ff6ea8a599c0",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "forceSetSkillCD",
+      "NodeID": 42,
+      "UID": "9b6a363d-146b-4ea6-9713-bd630e45f666",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 30100050
+    },
+    "35": {
+      "calcId": 30100050,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 35,
+      "UID": "6528b37d-8535-4875-a1eb-a607fac6ab9b",
+      "name": "getParamByLuaConfig"
+    },
+    "44": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 6001009,
+      "NodeID": 44,
+      "UID": "603ca34f-69b7-4e9e-836c-f5d91ffc28d3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "43": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6001009,
+      "NodeID": 43,
+      "UID": "350ac56a-2300-403d-bb7f-eb4d8f56af02",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "40": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 6001008,
+      "NodeID": 40,
+      "UID": "9a984cbd-e79d-45bf-a62f-80857ba8b716",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "23": {
+      "UID": "63eee82a-6263-47ca-ac82-fef6e3d9595b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21,
+          26,
+          29
+        ]
+      },
+      "NodeID": 23
+    },
+    "20": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "728b75c3-d028-447a-96f2-ece17f4a443a",
+      "NodeID": 20,
+      "lValue": {
+        "typeId": 3,
+        "name": "getChipQuality",
+        "UID": "b118f022-b50b-47c4-9f8c-f5f64b903636",
+        "target": "OWNER",
+        "NodeID": 19
+      }
+    },
+    "21": {
+      "actionIds": [
+        30,
+        37,
+        36
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "c12e8305-0a62-4577-8ab1-01105c98b93e",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "33": {
+      "cdTime": {
+        "calcId": 30100050,
+        "calcType": 2,
+        "paramName": "param2",
+        "NodeID": 32,
+        "UID": "b9beecb1-3818-48c8-a2c7-d8480598c3ae",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "forceSetSkillCD",
+      "NodeID": 33,
+      "UID": "9149025e-af75-42ad-8902-54837f17c4ab",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 30100050
+    },
+    "4": {
+      "UID": "c8d9e76f-80ea-4db1-8a28-3d0b9369fa45",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "typeId": 3,
+      "name": "getChipQuality",
+      "UID": "78eeda2b-3e11-4739-9071-e0f04e8060aa",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "38180093-b572-4f09-8de9-7abb4e88272c",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "12": {
+      "UID": "e987d05e-cad7-404a-be06-b414e0e3a507",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "30": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6001007,
+      "NodeID": 30,
+      "UID": "dbdff037-c272-4622-8ba2-31d902c034da",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "25": {
+      "rValue": 4,
+      "name": "equal",
+      "UID": "083e419f-efa1-49cc-9156-c1d3b9b2b513",
+      "NodeID": 25,
+      "lValue": {
+        "typeId": 3,
+        "name": "getChipQuality",
+        "UID": "78eeda2b-3e11-4739-9071-e0f04e8060aa",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "26": {
+      "actionIds": [
+        40,
+        38,
+        42
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "56752a5c-dfe4-4f02-8f58-006d781d9ef6",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "27": {
+      "typeId": 3,
+      "name": "getChipQuality",
+      "UID": "e8fd81ae-5a14-4bc8-84f7-9663649d1795",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "67e5659d-c853-4941-a581-3ff5242e58bb",
+      "NodeID": 28,
+      "lValue": {
+        "typeId": 3,
+        "name": "getChipQuality",
+        "UID": "e8fd81ae-5a14-4bc8-84f7-9663649d1795",
+        "target": "OWNER",
+        "NodeID": 27
+      }
+    },
+    "29": {
+      "actionIds": [
+        44,
+        43,
+        33
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "c633cccf-9158-47fe-9d2f-9f056800da4b",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 18,
+      "UID": "8be90d37-beda-49c7-93e2-636a5e1eeeb8"
+    },
+    "32": {
+      "calcId": 30100050,
+      "calcType": 2,
+      "paramName": "param2",
+      "NodeID": 32,
+      "UID": "b9beecb1-3818-48c8-a2c7-d8480598c3ae",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "typeId": 3,
+      "name": "getChipQuality",
+      "UID": "b118f022-b50b-47c4-9f8c-f5f64b903636",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "16": {
+      "UID": "dd26592b-ccde-4276-b675-6361e9c1cd6c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "36": {
+      "cdTime": {
+        "calcId": 30100050,
+        "calcType": 2,
+        "paramName": "param0",
+        "NodeID": 35,
+        "UID": "6528b37d-8535-4875-a1eb-a607fac6ab9b",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "forceSetSkillCD",
+      "NodeID": 36,
+      "UID": "63ed93d2-a78b-438f-b316-7ed4913cb518",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 30100050
+    }
+  },
+  "BPName": "ability_30100050",
+  "NodeID": 8,
+  "UID": "dbe226bd-29b5-4cd2-9045-53230942546f",
+  "eventIds": [
+    6,
+    14,
+    18,
+    23
+  ],
+  "layer": "Base",
+  "length": 1
+}

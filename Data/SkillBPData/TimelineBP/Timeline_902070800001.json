@@ -1,0 +1,1227 @@
+{
+  "nodeMap": {
+    "52": {
+      "offsetXYZ": [
+        -14.78,
+        0,
+        6.12
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "e41df9b1-7e60-4fb9-9aad-c9c64d39ff61",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 52,
+      "pos": "CASTER"
+    },
+    "53": {
+      "offsetXYZ": [
+        -14.78,
+        0,
+        -6.12
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "ccc53be5-71f9-4504-b28b-98356ed23a00",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 53,
+      "pos": "CASTER"
+    },
+    "54": {
+      "offsetXYZ": [
+        -6.12,
+        0,
+        -14.78
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "2803dbbc-d3bc-490a-b39f-68845e50f708",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 54,
+      "pos": "CASTER"
+    },
+    "60": {
+      "offsetXYZ": [
+        0,
+        0,
+        20
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "a61e08d3-75dc-4c64-8ae7-da552de187d4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 60,
+      "pos": "CASTER"
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10,
+          88
+        ]
+      },
+      "NodeID": 5
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          28,
+          32,
+          33,
+          34,
+          35,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 31,
+      "UID": "4c030d6c-be79-43e4-ba7d-26f3aa2f835a"
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          82,
+          18,
+          86
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.5,
+      "NodeID": 20,
+      "UID": "91bb1f3e-80b2-43ce-946b-1a34d047b5ea"
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21,
+          25,
+          26,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 23,
+      "UID": "bf926f69-771d-4bc3-b610-5da9f0df99ea"
+    },
+    "55": {
+      "offsetXYZ": [
+        20,
+        0,
+        0
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "381aaff7-95dd-4042-ad30-9e78b6608092",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 55,
+      "pos": "CASTER"
+    },
+    "74": {
+      "offsetXYZ": [
+        -18.48,
+        0,
+        7.65
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "a0c6ab66-fbe3-4d3a-b4b0-a64c0b8b5fd4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 74,
+      "pos": "CASTER"
+    },
+    "75": {
+      "offsetXYZ": [
+        18.48,
+        0,
+        -7.65
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "1e690dd1-cf77-4e76-b58a-056ebd296372",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 75,
+      "pos": "CASTER"
+    },
+    "57": {
+      "action": {
+        "actionIds": [
+          55,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          68,
+          70,
+          72,
+          74,
+          75,
+          73,
+          71,
+          69
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 57,
+      "UID": "6e467f64-fc6e-44d7-a6dc-4ec293cc41c5"
+    },
+    "76": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "64e886e4-c694-419a-9a49-82ee83f26616",
+      "target": "OWNER",
+      "NodeID": 76,
+      "animId": "Skill_Smash_Prepare"
+    },
+    "27": {
+      "offsetXYZ": [
+        0,
+        0,
+        -4
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "408b98fe-ff6c-4d5d-82d2-8d4014c81a5c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 27,
+      "pos": "CASTER"
+    },
+    "28": {
+      "offsetXYZ": [
+        6.93,
+        0,
+        4
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "ce41904d-7108-4d9b-84c7-66f745c40915",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 28,
+      "pos": "CASTER"
+    },
+    "59": {
+      "offsetXYZ": [
+        14.14,
+        0,
+        14.14
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "5ecbcb0a-b15e-40b3-89b1-02eeafb2de07",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 59,
+      "pos": "CASTER"
+    },
+    "78": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          76
+        ]
+      },
+      "NodeID": 78
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        0,
+        8
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "072fc941-d8f1-46a8-ae42-73b58082dfbc",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 32,
+      "pos": "CASTER"
+    },
+    "79": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3e713d5f-686f-4079-a161-57b1ca50fee9",
+      "target": "OWNER",
+      "NodeID": 79,
+      "animId": "Skill_Smash_Loop"
+    },
+    "61": {
+      "offsetXYZ": [
+        -14.14,
+        0,
+        14.14
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "36b9fa55-ebed-439d-b411-fc69e1e3f737",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 61,
+      "pos": "CASTER"
+    },
+    "36": {
+      "offsetXYZ": [
+        6.93,
+        0,
+        -4
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "ef6521d8-7fc1-425e-aa5d-afa5b312e862",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 36,
+      "pos": "CASTER"
+    },
+    "37": {
+      "offsetXYZ": [
+        12,
+        0,
+        0
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "8e6ae8e9-2b94-4aba-a52f-d2d108cc0dd5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 37,
+      "pos": "CASTER"
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          37,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 39,
+      "UID": "08fd931e-16be-4031-a6f5-4312f10acf30"
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          37,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 40,
+      "UID": "9eed3948-05b9-4b80-917d-8d754c7d13b2"
+    },
+    "41": {
+      "offsetXYZ": [
+        6,
+        0,
+        10.39
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "1ec65853-9aab-4c29-83da-cdbc85194eea",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 41,
+      "pos": "CASTER"
+    },
+    "42": {
+      "offsetXYZ": [
+        -6,
+        0,
+        10.39
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "e10925b3-82b8-45c2-bef4-258111836a2d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 42,
+      "pos": "CASTER"
+    },
+    "35": {
+      "offsetXYZ": [
+        0,
+        0,
+        -8
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "8d51b70d-3960-4ea0-94e9-f7d1ea8b4c78",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 35,
+      "pos": "CASTER"
+    },
+    "44": {
+      "offsetXYZ": [
+        -6,
+        0,
+        -10.39
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "9af24220-20c5-48f0-a902-b31e3e95dd95",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 44,
+      "pos": "CASTER"
+    },
+    "66": {
+      "offsetXYZ": [
+        6.12,
+        0,
+        -14.78
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "59ad466d-5aff-43b3-ba96-10f01af0559b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 66,
+      "pos": "CASTER"
+    },
+    "85": {
+      "action": {
+        "actionIds": [
+          83
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 85,
+      "UID": "3932e0ba-abaa-4b58-a59d-8eb6dc86b049"
+    },
+    "86": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6e33b800-4f49-4c1f-b9eb-bfeab2005f86",
+      "effectId": "Eff_SkillObj_90207_SoilShield_Break",
+      "speed": 1,
+      "NodeID": 86
+    },
+    "69": {
+      "offsetXYZ": [
+        -18.48,
+        0,
+        -7.65
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "4e79e15f-2dda-4d13-8199-50264eaaf4a8",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 69,
+      "pos": "CASTER"
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "70": {
+      "offsetXYZ": [
+        7.65,
+        0,
+        18.48
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "6a289741-9d02-4717-b0a0-7c5df0ddbb45",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 70,
+      "pos": "CASTER"
+    },
+    "71": {
+      "offsetXYZ": [
+        -7.65,
+        0,
+        -18.48
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "a1551cab-7475-4ff7-96d3-1ba76ea4a7eb",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 71,
+      "pos": "CASTER"
+    },
+    "72": {
+      "offsetXYZ": [
+        -7.65,
+        0,
+        18.48
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "b7ac8f4e-4bdd-401b-97d8-38562582b0b2",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 72,
+      "pos": "CASTER"
+    },
+    "73": {
+      "offsetXYZ": [
+        7.65,
+        0,
+        -18.48
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "597ccdf6-6eb2-4387-a12c-30fad83c40e9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 73,
+      "pos": "CASTER"
+    },
+    "92": {
+      "action": {
+        "actionIds": [
+          91
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 92,
+      "UID": "d0ed2e7e-3ee5-43df-8df5-812ecff4fe3c"
+    },
+    "93": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0355ba65-c439-4724-980f-599c4d90c388",
+      "effectId": "Eff_Monster_90207_Skill_Smash_Explosion",
+      "speed": 1,
+      "NodeID": 93
+    },
+    "94": {
+      "action": {
+        "actionIds": [
+          93
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.5,
+      "NodeID": 94,
+      "UID": "f198dec5-c09f-4555-8666-31b36028ca9e"
+    },
+    "65": {
+      "offsetXYZ": [
+        14.14,
+        0,
+        -14.14
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "ddeb7441-f633-497e-acbe-e432b43c8ec8",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 65,
+      "pos": "CASTER"
+    },
+    "89": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "37fe4c5c-daa6-44ae-a763-ba88be93b197",
+      "target": "OWNER",
+      "NodeID": 89
+    },
+    "88": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 10011,
+      "NodeID": 88,
+      "UID": "cc069ee5-f660-4220-a1cb-17d96c1ed107",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "87": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 29020711,
+      "NodeID": 87,
+      "UID": "f8850bda-9541-49a3-b382-da7a2374e1d6",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "34": {
+      "offsetXYZ": [
+        -6.93,
+        0,
+        -4
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "77b127b3-8d2a-4583-b93a-4f2654485de1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 34,
+      "pos": "CASTER"
+    },
+    "33": {
+      "offsetXYZ": [
+        -6.93,
+        0,
+        4
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "c64a87ad-7a90-4136-a282-42918e5374a0",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 33,
+      "pos": "CASTER"
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "bac3dc10-fa8a-4091-ab32-8f2445c6b0de",
+      "effectId": "Eff_SkillObj_90207_SoilShield",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "91": {
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b6a61585-a4c7-4fd1-bf71-d5236306db31",
+      "effectId": "Eff_Monster_90207_Skill_Smash_GroundWave",
+      "speed": 1,
+      "NodeID": 91
+    },
+    "63": {
+      "offsetXYZ": [
+        -14.14,
+        0,
+        -14.14
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "4588f371-3abe-4745-8c04-cba37750d281",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 63,
+      "pos": "CASTER"
+    },
+    "26": {
+      "offsetXYZ": [
+        -4,
+        0,
+        0
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "153d04e5-4643-44b6-80ab-e42a64f306e3",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 26,
+      "pos": "CASTER"
+    },
+    "25": {
+      "offsetXYZ": [
+        0,
+        0,
+        4
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "4a7052c8-69b2-492b-a18d-14ed0a55d641",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 25,
+      "pos": "CASTER"
+    },
+    "46": {
+      "offsetXYZ": [
+        14.78,
+        0,
+        6
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "ab977744-cfe4-4f55-a449-5cff4e4ca694",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 46,
+      "pos": "CASTER"
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          87,
+          89
+        ]
+      },
+      "NodeID": 14
+    },
+    "43": {
+      "offsetXYZ": [
+        -12,
+        0,
+        0
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "a3b2c134-95d0-4d8e-8a0a-667cfe13daf5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 43,
+      "pos": "CASTER"
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28,
+          32,
+          33,
+          34,
+          35,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 30,
+      "UID": "fbf4a576-e6b9-4114-83c9-035bb3a6eb6b"
+    },
+    "21": {
+      "offsetXYZ": [
+        4,
+        0,
+        0
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "9f45368e-a1e6-4ccb-bf61-2b1ab8a2fb16",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 21,
+      "pos": "CASTER"
+    },
+    "45": {
+      "offsetXYZ": [
+        6,
+        0,
+        -10.39
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "104accf3-ebc7-4bf2-8867-58b49c2fee8b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 45,
+      "pos": "CASTER"
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          21,
+          25,
+          26,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 24,
+      "UID": "beda4790-8135-45b4-97e9-7b7a583808c4"
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "68": {
+      "offsetXYZ": [
+        18.48,
+        0,
+        7.65
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "78600ccf-cc77-490e-abea-de01cb707a3a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 68,
+      "pos": "CASTER"
+    },
+    "67": {
+      "offsetXYZ": [
+        14.78,
+        0,
+        -6.12
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "c2320f03-e6a2-4c1c-a11a-77a1ccc21011",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 67,
+      "pos": "CASTER"
+    },
+    "62": {
+      "offsetXYZ": [
+        -20,
+        0,
+        0
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "61426b11-a30d-4f93-94a2-30c9769f9bf5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 62,
+      "pos": "CASTER"
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          46,
+          50,
+          51,
+          52,
+          53,
+          54,
+          66,
+          67
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.2,
+      "NodeID": 48,
+      "UID": "c9226e60-5da2-4021-975f-090cbca6f3b4"
+    },
+    "64": {
+      "offsetXYZ": [
+        0,
+        0,
+        -20
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "2a168810-d6d6-4363-8196-453f5c3d3313",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 64,
+      "pos": "CASTER"
+    },
+    "49": {
+      "action": {
+        "actionIds": [
+          46,
+          50,
+          51,
+          52,
+          53,
+          54,
+          66,
+          67
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 49,
+      "UID": "b23392b6-9db0-498b-85da-2dbf29b40a1b"
+    },
+    "81": {
+      "action": {
+        "actionIds": [
+          79
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 81,
+      "UID": "91bd9fd5-3567-4394-b41f-457ab9087fce"
+    },
+    "50": {
+      "offsetXYZ": [
+        6.12,
+        0,
+        14.78
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "906246d1-a7f7-42fb-8973-b231b3e5e3c7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 50,
+      "pos": "CASTER"
+    },
+    "82": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cb92caa3-6c07-4e36-839b-f7644ea0f0c1",
+      "target": "OWNER",
+      "NodeID": 82,
+      "animId": "Skill_PullBack_End"
+    },
+    "51": {
+      "offsetXYZ": [
+        -6.12,
+        0,
+        14.78
+      ],
+      "templateId": 9020707,
+      "name": "createEntity",
+      "UID": "ee858f07-eb02-43d0-90c5-2c7ef8502e9a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 51,
+      "pos": "CASTER"
+    },
+    "83": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "491dad2b-54fb-4182-9569-995d1c6b3138",
+      "target": "OWNER",
+      "NodeID": 83,
+      "animId": "Skill_Smash_QuickAttack"
+    }
+  },
+  "BPName": "ability_902070800",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    78,
+    92,
+    81,
+    20,
+    23,
+    94,
+    30,
+    85,
+    39,
+    48,
+    24,
+    31,
+    40,
+    49,
+    57
+  ],
+  "layer": "Base",
+  "length": 9
+}

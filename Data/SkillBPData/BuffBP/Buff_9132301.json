@@ -1,0 +1,15 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "dmg_grass_add_ratio": 0.12
+  },
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_9132301"
+}

@@ -1,0 +1,137 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "3a3422a8-211b-4cb4-9f39-b1ed194afd2f",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 0
+      },
+      "NodeID": 37
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.54,
+      "NodeID": 38,
+      "UID": "13627b5c-c0ed-4cd0-8466-1d610527aebe"
+    },
+    "53": {
+      "UID": "fb5377f6-24ef-4df1-98f0-0c696dbd800e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "NodeID": 53
+    },
+    "40": {
+      "UID": "c226849e-ee77-4b1b-8120-518dc0cf967d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 40
+    },
+    "41": {
+      "UID": "c288296a-b2fb-4407-b0cf-f83d7f526a88",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "NodeID": 41
+    },
+    "43": {
+      "UID": "26a103e3-9dc1-4e0e-8551-03a0111d21d4",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 43
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.02,
+      "NodeID": 44,
+      "UID": "170bb3a5-6efe-47b1-8478-a5d1d8645b77"
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "24231e67-d709-4257-b097-65417bb08803",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "Skill_Roll_End"
+    },
+    "29": {
+      "UID": "d098cfb9-28e2-4be3-af45-973150784d0a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "NodeID": 29
+    },
+    "50": {
+      "UID": "cd0bd374-9607-41d5-b031-988f55c8e96d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "NodeID": 50
+    },
+    "52": {
+      "UID": "68fdadb9-0e0b-4c4d-a451-ccd23759b754",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 52
+    },
+    "49": {
+      "UID": "6c7c521c-19ea-4d7a-b6d5-97f39d4525f4",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 49
+    }
+  },
+  "BPName": "ability_11740511",
+  "NodeID": 31,
+  "UID": "816aaaf0-2e93-4779-a836-c5855b5915d0",
+  "eventIds": [
+    50,
+    41,
+    38,
+    44,
+    53,
+    29
+  ],
+  "layer": "Base",
+  "length": 1.117
+}

@@ -1,0 +1,619 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5ee184d7-c32f-4dc6-96f0-704169bb7912",
+      "effectId": "Eff_Parmon_10163_Skill_Ex_04",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "39": {
+      "target": "OWNER",
+      "speed": 0.45,
+      "offsetRotation": [
+        0,
+        -111,
+        0
+      ],
+      "NodeID": 39,
+      "UID": "4ab3bd4a-d15e-474d-abda-40556dfdf50a",
+      "effectId": "Eff_parmon_10163_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "63": {
+      "UID": "a8c42142-e72e-4ca7-9765-efd21b701555",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 63
+    },
+    "41": {
+      "target": "OWNER",
+      "speed": 0.45,
+      "offsetRotation": [
+        0,
+        -62,
+        0
+      ],
+      "NodeID": 41,
+      "UID": "cfb47dac-51d1-44ce-8aa1-d57cb1b0440d",
+      "effectId": "Eff_parmon_10163_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "55": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2116305,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "06f2ede2-f926-4aa9-9fa9-75e95cfa8b23",
+      "target": "TARGET",
+      "NodeID": 55,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 2,
+        "impulseId": 5003,
+        "hitCameraShakeId": -1
+      }
+    },
+    "35": {
+      "target": "OWNER",
+      "speed": 0.45,
+      "offsetRotation": [
+        0,
+        -169,
+        0
+      ],
+      "NodeID": 35,
+      "UID": "428aeea0-ab28-46a3-ba4c-1260faf53e16",
+      "effectId": "Eff_parmon_10163_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "62": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2c9fc883-93d5-462d-8e78-afa8a66769ea",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10133_skill_tailsmash_ice_explosion",
+      "NodeID": 62
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6b7086c0-ef3b-4b00-9910-59958049b5c3",
+      "effectId": "Eff_Parmon_10163_Skill_Ex_04_1",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 59,
+      "UID": "41272453-5e22-4d99-8d4c-0d187939cc76"
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "5f9077db-7ab2-445a-aedc-8218d2357995",
+      "effectId": "Eff_Parmon_10163_Skill_Ex_03",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "58": {
+      "isScaleWithModel": false,
+      "NodeID": 58,
+      "UID": "d134eff2-1678-4f79-8700-ad43747e4ae2",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            7,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        68,
+        56
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 68
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4e56a5d1-ca16-4b28-a096-4bb8ebe4023c",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10133_skill_tailsmash_ice_explosion",
+      "NodeID": 56
+    },
+    "68": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2116305,
+        "instant_dmg_rate_v": "param1",
+        "type": 4
+      },
+      "UID": "c4233b07-5fcb-4555-ac44-87546b2e53cb",
+      "target": "TARGET",
+      "NodeID": 68,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 2,
+        "impulseId": 5003,
+        "hitCameraShakeId": -1
+      }
+    },
+    "18": {
+      "isScaleWithModel": false,
+      "NodeID": 18,
+      "UID": "b0ae0b6c-6cc4-41bc-9166-59ace718117d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            31,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        55
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 55
+    },
+    "21": {
+      "isScaleWithModel": false,
+      "NodeID": 21,
+      "UID": "552abf6d-fb0b-4a8d-a881-8a1a01bbdf63",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            88,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        55
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 55
+    },
+    "3": {
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 3,
+      "UID": "10274072-8c87-458a-bc7b-118977c788a6"
+    },
+    "13": {
+      "isScaleWithModel": false,
+      "NodeID": 13,
+      "UID": "f1ab35b8-8e37-4e93-8de8-a9d840bf84ca",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -15,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        55
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 55
+    },
+    "24": {
+      "isScaleWithModel": false,
+      "NodeID": 24,
+      "UID": "3a76d081-bb7c-4fd8-8a03-153f21a47a2c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            135,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        55
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 55
+    },
+    "37": {
+      "UID": "dcefe39a-5241-49d2-8e3f-3857d7b0a314",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          35,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51
+        ]
+      },
+      "NodeID": 37
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 10,
+      "UID": "27a8dc73-2f05-4bb1-961d-867a8df7fa02"
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          62,
+          33,
+          30,
+          27,
+          13,
+          18,
+          21,
+          24,
+          63
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 15,
+      "UID": "4882e1da-e8eb-4ea3-8e11-2dbf2a5cf6bd"
+    },
+    "47": {
+      "target": "OWNER",
+      "speed": 0.45,
+      "offsetRotation": [
+        0,
+        88,
+        0
+      ],
+      "NodeID": 47,
+      "UID": "fe70f0ec-7280-4592-af36-b89e1fbf2e4d",
+      "effectId": "Eff_parmon_10163_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "45": {
+      "target": "OWNER",
+      "speed": 0.45,
+      "offsetRotation": [
+        0,
+        31,
+        0
+      ],
+      "NodeID": 45,
+      "UID": "b5178a11-e06c-4d5f-ab03-65dfb62afda0",
+      "effectId": "Eff_parmon_10163_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "27": {
+      "isScaleWithModel": false,
+      "NodeID": 27,
+      "UID": "c604704d-4221-42a4-9073-f3fe179e6310",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -62,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        55
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 55
+    },
+    "43": {
+      "target": "OWNER",
+      "speed": 0.45,
+      "offsetRotation": [
+        0,
+        -15,
+        0
+      ],
+      "NodeID": 43,
+      "UID": "57cca4b1-dfa3-43c1-9125-1cc4d4502f5b",
+      "effectId": "Eff_parmon_10163_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "49": {
+      "target": "OWNER",
+      "speed": 0.45,
+      "offsetRotation": [
+        0,
+        135,
+        0
+      ],
+      "NodeID": 49,
+      "UID": "03b08f7a-a540-48e3-96ab-2b973dcb319e",
+      "effectId": "Eff_parmon_10163_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "30": {
+      "isScaleWithModel": false,
+      "NodeID": 30,
+      "UID": "58fb1f0b-b117-4ac9-8c2d-0b4f87687769",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -111,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        55
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 55
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c5a2e9d1-4162-4e5e-9445-145ea627bc92",
+      "effectId": "Eff_Parmon_10163_Skill_Ex_03",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "33": {
+      "isScaleWithModel": false,
+      "NodeID": 33,
+      "UID": "80a54294-c0f7-4acd-ae52-4047f09597c7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -169,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "name": "actOnTargets",
+      "actionIds": [
+        55
+      ],
+      "impulseId": 5003,
+      "calcResultNodeId": 55
+    },
+    "51": {
+      "UID": "7374d6e8-3cab-4234-a55c-9b60b223a2c5",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 51
+    },
+    "7": {
+      "action": {
+        "actionIds": [
+          5,
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.75,
+      "NodeID": 7,
+      "UID": "0b4ba667-b46b-435b-bfe7-a4fe8a540b2b"
+    }
+  },
+  "BPName": "timeline_2116305",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    37,
+    15,
+    59,
+    3,
+    7,
+    10
+  ],
+  "layer": "Base",
+  "length": 9
+}

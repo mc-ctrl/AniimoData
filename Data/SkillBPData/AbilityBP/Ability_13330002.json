@@ -1,0 +1,64 @@
+{
+  "BPName": "ability_13330002",
+  "NodeID": 1,
+  "UID": "c6d9d9dc-72e8-4e2a-839a-2318877d41da",
+  "abilityParamId": 11800000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "61": {
+      "timelineId": 13330002002,
+      "name": "setCombatActionTimeline",
+      "UID": "e603b030-9d42-4903-8a8b-21e1801cf971",
+      "target": "OWNER",
+      "NodeID": 61
+    },
+    "55": {
+      "UID": "1358527c-0278-406e-ba9f-ad795606d2bc",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 55
+    },
+    "7": {
+      "timelineId": 13330002001,
+      "name": "setCombatActionTimeline",
+      "UID": "0f453f32-5594-4e9c-bc69-5c41920f0f75",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "9": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "f7dde304-8730-49b3-be12-4054327ee778",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        61
+      ],
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10333_Attack03",
+    "Eff_Parmon_10333_Attack03_Ground",
+    "Eff_Parmon_10331_Attack03_Bullet",
+    "Eff_Parmon_10051_Fireball_Hit",
+    "Eff_Parmon_10331_Attack03"
+  ],
+  "searchRelation": 2,
+  "name": "念力远程攻击",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "searchTargetRangeDown": 3
+}

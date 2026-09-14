@@ -1,0 +1,543 @@
+{
+  "nodeMap": {
+    "37": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 35,
+      "NodeID": 37,
+      "UID": "3e4f69e2-08e9-4e2b-abf1-ae0c5e1aa773",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            16,
+            1.2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        35
+      ]
+    },
+    "38": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 35,
+      "NodeID": 38,
+      "UID": "d2c50c53-a080-4c41-8029-edd074f78135",
+      "target": [
+        {
+          "offsetXYZ": [
+            1,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            16,
+            1.2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        35
+      ]
+    },
+    "39": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 35,
+      "NodeID": 39,
+      "UID": "abc0adc2-25b1-401f-9e7d-4f7fae17bd57",
+      "target": [
+        {
+          "offsetXYZ": [
+            -1,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            16,
+            1.2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        35
+      ]
+    },
+    "40": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.2,
+        0.2
+      ],
+      "speed": 1.2,
+      "name": "playEffectStr",
+      "UID": "7ec01248-6b9f-473b-bad0-59363ec2c659",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Up_Body_XuLi",
+      "scale": 0.6,
+      "NodeID": 40
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2f033458-b6c9-490a-9be0-8c69142107c7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10212_Skill_SunBeam_Charge",
+      "NodeID": 41
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "72cd316f-eff6-43e0-9c52-634e47cfc651",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10212_Skill_SunBeam_Attack",
+      "NodeID": 42
+    },
+    "35": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "calcId": 912120203,
+          "calcType": 2,
+          "paramName": "param0",
+          "NodeID": 96,
+          "UID": "231e3b4c-d69b-4475-a624-28b771fa7fe0",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+        "elementType": 0,
+        "impulseId": 1000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "b028323d-c50c-4545-9a3c-4719b89196fd",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 35
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          49,
+          57,
+          58,
+          47,
+          42,
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.64,
+      "NodeID": 44,
+      "UID": "f7b2b722-40f0-4017-a19d-976fbc5082e3"
+    },
+    "84": {
+      "rValue": {
+        "UID": "732a165c-00f8-4b67-957c-f177417e380e",
+        "name": "getRoguePersistData",
+        "key": "rogueSkillEp",
+        "NodeID": 83
+      },
+      "name": "greater",
+      "UID": "caf60a12-d012-4358-99c4-6128d388c8a0",
+      "NodeID": 84,
+      "lValue": 0
+    },
+    "85": {
+      "buffId": 3030001,
+      "name": "hasBuff",
+      "UID": "fd6d78b3-93d0-4039-8c18-efb788217f77",
+      "target": "OWNER",
+      "NodeID": 85
+    },
+    "86": {
+      "UID": "7ae44f67-5d11-4848-b048-eec5d9f9e137",
+      "conditionIds": [
+        85,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "name": "conditionOr",
+      "NodeID": 86
+    },
+    "87": {
+      "buffId": 3130001,
+      "name": "hasBuff",
+      "UID": "b161e42f-1738-41b8-8745-d1fcd8709694",
+      "target": "OWNER",
+      "NodeID": 87
+    },
+    "4": {
+      "UID": "992e1672-26e7-4be5-8640-baf54c1dfa48",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "89": {
+      "buffId": 3330001,
+      "name": "hasBuff",
+      "UID": "4d6a749f-e718-4cbe-ba85-ce050c4ee9d3",
+      "target": "OWNER",
+      "NodeID": 89
+    },
+    "90": {
+      "buffId": 3430001,
+      "name": "hasBuff",
+      "UID": "3c1794e2-9d1d-4b43-b94b-f73e0a03d446",
+      "target": "OWNER",
+      "NodeID": 90
+    },
+    "92": {
+      "buffId": 3630001,
+      "name": "hasBuff",
+      "UID": "e0b55785-b45b-45f7-af74-fe4aab6c28c7",
+      "target": "OWNER",
+      "NodeID": 92
+    },
+    "58": {
+      "offsetXYZ": [
+        -0.5,
+        0.2,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9c60d74f-a896-4dcb-adb6-ed8a4a4e008b",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Body_Rogue",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "96": {
+      "calcId": 912120203,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 96,
+      "UID": "231e3b4c-d69b-4475-a624-28b771fa7fe0",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "UID": "5375d6c0-7728-482a-87be-f106e186a74d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          52,
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "91": {
+      "buffId": 3530001,
+      "name": "hasBuff",
+      "UID": "2bd0d9e9-3a67-4bda-9493-94c671ca6148",
+      "target": "OWNER",
+      "NodeID": 91
+    },
+    "11": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "35572142-fdeb-48cc-9ad7-01a75c61bcd9",
+      "target": "OWNER",
+      "NodeID": 11,
+      "animId": "Skill_SunBeam_Start"
+    },
+    "20": {
+      "timelineId": 912120203002,
+      "name": "jumpToNextTimeline",
+      "UID": "bde7e461-6bb2-4862-9137-76d45d368d16",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "22": {
+      "noTriggerTime": 0.5,
+      "notShowCountDown": false,
+      "actionIds": [
+        20
+      ],
+      "aiTriggerTime": 1,
+      "UID": "50bbd753-e6bd-4dc6-949b-d2caaa353c2c",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "154157f7-cccc-4886-ab22-821ff870bac9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          40,
+          41,
+          22,
+          76
+        ]
+      },
+      "NodeID": 13
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5d99bef0-27fd-458f-ab31-0520e364cb87",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "NodeID": 45
+    },
+    "88": {
+      "buffId": 3230001,
+      "name": "hasBuff",
+      "UID": "fe6326a7-90cd-4deb-bae0-dfb394df6ce6",
+      "target": "OWNER",
+      "NodeID": 88
+    },
+    "82": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "f19b7592-c957-4c1e-a67b-1fde681f44e7",
+      "value": {
+        "rValue": {
+          "UID": "361083f5-b932-402a-8684-a7598d6321db",
+          "name": "getRoguePersistData",
+          "key": "rogueSkillEp",
+          "NodeID": 77
+        },
+        "name": "add",
+        "UID": "ed93c9bf-7a90-48af-8858-d799511052c7",
+        "NodeID": 81,
+        "lValue": {
+          "rValue": {
+            "UID": "9aaa3130-e054-4bc1-abbb-124febe2f925",
+            "number": -2.5,
+            "name": "constNumber",
+            "NodeID": 93
+          },
+          "name": "multiply",
+          "UID": "37707932-7199-4ec1-ba8b-62c072b93e22",
+          "NodeID": 94,
+          "lValue": 0.8
+        }
+      },
+      "NodeID": 82
+    },
+    "23": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        84
+      ],
+      "UID": "d082ffc4-393a-4278-8192-8aa6e0fefee0",
+      "name": "doActionsByConditions",
+      "NodeID": 23
+    },
+    "47": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "27c56d6e-1385-4c32-a559-647e547b4de5",
+      "target": "OWNER",
+      "NodeID": 47,
+      "animId": "Skill_SunBeam_Loop"
+    },
+    "26": {
+      "tickInterval": 0.25,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 26,
+      "UID": "45e63def-66c1-4e05-a65e-b721d395c64a",
+      "onUpdate": {
+        "actionIds": [
+          37,
+          38,
+          39,
+          80,
+          23
+        ]
+      },
+      "startTime": 0.8,
+      "onEnter": {
+        "actionIds": [
+          37,
+          38,
+          39,
+          80,
+          23
+        ]
+      }
+    },
+    "52": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "16de1f12-3033-492a-ab3a-994d139a97d9",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "77": {
+      "UID": "361083f5-b932-402a-8684-a7598d6321db",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 77
+    },
+    "49": {
+      "offsetXYZ": [
+        0.5,
+        0.2,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e4e701be-3fd6-44a9-a344-27cd14985b21",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Body_Rogue",
+      "speed": 1,
+      "NodeID": 49
+    },
+    "57": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7594e39c-9a76-4f38-86bd-cbcd3b0c2cbb",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Body_Rogue",
+      "speed": 1,
+      "NodeID": 57
+    },
+    "76": {
+      "NodeID": 76,
+      "UID": "1eda8dc0-12e3-40e7-9673-c0353bda5579",
+      "blendTime": 0.6,
+      "cameraPitchOffset": 4,
+      "cameraPivotHeightOverride": 2.5,
+      "cameraPivotOffsetXOverride": 2,
+      "cameraPivotOffsetZOverride": -2,
+      "cameraYawOffset": -5,
+      "maxPitch": 0,
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "name": "setIsInAim",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "minPitch": 0,
+      "showAimUI": true,
+      "val": true
+    },
+    "79": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "e133c33f-15df-4801-abb5-e1daa45f1f11",
+      "value": {
+        "rValue": {
+          "UID": "361083f5-b932-402a-8684-a7598d6321db",
+          "name": "getRoguePersistData",
+          "key": "rogueSkillEp",
+          "NodeID": 77
+        },
+        "name": "add",
+        "UID": "53ad339f-48df-4727-8d13-7712462db296",
+        "NodeID": 78,
+        "lValue": {
+          "UID": "9aaa3130-e054-4bc1-abbb-124febe2f925",
+          "number": -2.5,
+          "name": "constNumber",
+          "NodeID": 93
+        }
+      },
+      "NodeID": 79
+    },
+    "83": {
+      "UID": "732a165c-00f8-4b67-957c-f177417e380e",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 83
+    },
+    "80": {
+      "actionIds": [
+        82
+      ],
+      "conditionActionIds": [
+        86
+      ],
+      "UID": "52cc4e70-5393-47cc-b5b1-790dd4193d9c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        79
+      ],
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_912120203",
+  "NodeID": 8,
+  "UID": "ada719f7-0154-485d-ac75-dbe49030f533",
+  "eventIds": [
+    13,
+    44,
+    26,
+    6
+  ],
+  "layer": "Base",
+  "length": 9999
+}

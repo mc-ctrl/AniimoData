@@ -1,0 +1,107 @@
+{
+  "pet": {
+    "desc": "宠物名字"
+  },
+  "num": {
+    "desc": "数量"
+  },
+  "appellation": {
+    "desc": "称号名称"
+  },
+  "cmd": {
+    "desc": "指令"
+  },
+  "collectionType": {
+    "desc": "图鉴类型"
+  },
+  "countryName": {
+    "desc": "国家名称"
+  },
+  "cycleType": {
+    "desc": "周期类型"
+  },
+  "dayTime": {
+    "desc": "日期时间"
+  },
+  "gameName": {
+    "desc": "玩法名称"
+  },
+  "item": {
+    "desc": "道具名字"
+  },
+  "itemName": {
+    "desc": "道具名字"
+  },
+  "itemNum": {
+    "desc": "道具数量"
+  },
+  "petFamily": {
+    "desc": "宠物家族"
+  },
+  "petForm": {
+    "desc": "宠物形态名称"
+  },
+  "petName": {
+    "desc": "宠物名称"
+  },
+  "petResearchLevel": {
+    "desc": "研究手册等级"
+  },
+  "areaName": {
+    "desc": "板块"
+  },
+  "player": {
+    "desc": "玩家名字"
+  },
+  "playerExp": {
+    "desc": "冒险经验"
+  },
+  "playerLevel": {
+    "desc": "冒险等级"
+  },
+  "playerStar": {
+    "desc": "冒险星级"
+  },
+  "playerTitle": {
+    "desc": "冒险头衔"
+  },
+  "petLevel": {
+    "desc": "宠物等级"
+  },
+  "quest": {
+    "desc": "任务名称"
+  },
+  "feature": {
+    "desc": "特性名字"
+  },
+  "starNum": {
+    "desc": "评分星级"
+  },
+  "weather": {
+    "desc": "天气"
+  },
+  "sceneName": {
+    "desc": "场景名称"
+  },
+  "state": {
+    "desc": "状态"
+  },
+  "title": {
+    "desc": "课程名"
+  },
+  "playerTitleStar": {
+    "desc": "冒险头衔+星级"
+  },
+  "plate": {
+    "desc": "板块分区名"
+  },
+  "element": {
+    "desc": "元素名"
+  },
+  "position": {
+    "desc": "地点"
+  },
+  "skill": {
+    "desc": "技能名字"
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        60
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "161a1bf2-d536-4f7e-9b63-5a855b412f5c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        36
+      ],
+      "NodeID": 37
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.17,
+      "NodeID": 38,
+      "UID": "699d0f01-c177-4792-a88c-658094ab2ea7"
+    },
+    "39": {
+      "UID": "302e7798-63c7-4f3f-90cb-a644806aa415",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d05b7fae-3a64-4e8f-87b5-82c7c9dd54ea",
+      "isAbilityEndRemove": false,
+      "soundId": "Parmon_10026_Skill_Ex_Pc",
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.77,
+      "NodeID": 41,
+      "UID": "fe78ff06-d873-4e29-9964-5a943230da37"
+    },
+    "64": {
+      "name": "checkPetPrototypeId",
+      "UID": "ae364026-cfb6-4dcc-9e22-0872855638c2",
+      "target": "OWNER",
+      "petPrototypeId": 1002604,
+      "NodeID": 64
+    },
+    "43": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91026020,
+      "NodeID": 43,
+      "UID": "8dfddb8d-42a1-4e0b-bc82-1f8e41f51f91",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "UID": "ab780893-62e6-4b28-a840-7cce2b81844d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "NodeID": 44
+    },
+    "66": {
+      "name": "checkPetPrototypeId",
+      "UID": "99ee68ff-e764-4acf-b3f4-23736fd56df6",
+      "target": "OWNER",
+      "petPrototypeId": 1002604,
+      "NodeID": 66
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "701621ec-350a-4b9b-bc5d-c4ed54925eb2",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01_00_Red",
+      "speed": 1,
+      "NodeID": 67
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "fa12f563-2433-445f-820d-7da7f0dce6ae",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Ex"
+    },
+    "4": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          39,
+          45
+        ]
+      },
+      "NodeID": 4
+    },
+    "65": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "861ec641-ba79-46be-9933-14ef7a966922",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01_Red",
+      "speed": 1,
+      "NodeID": 65
+    },
+    "63": {
+      "name": "checkPetPrototypeId",
+      "UID": "39f6c499-d4f7-4c13-b56c-4bdb8dffd775",
+      "target": "OWNER",
+      "petPrototypeId": 1002604,
+      "NodeID": 63
+    },
+    "62": {
+      "duration": 2.77,
+      "timezoneDuration": 3.5,
+      "name": "playCutScene",
+      "UID": "1f516ef4-dc29-4012-8d52-9fa8f73e1e51",
+      "NodeID": 62,
+      "resId": "$Parmon_1002603_Skill_Ex_Timeline.prefab"
+    },
+    "61": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c01977e4-b030-4304-b326-f4c9b30f444a",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01_00",
+      "speed": 1,
+      "NodeID": 61
+    },
+    "60": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e89da396-75c0-4ce3-9371-ad40821c3a42",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01_00_Red",
+      "speed": 1,
+      "NodeID": 60
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3021394b-c47e-43e7-b153-cd3f545012f9",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01_Red",
+      "speed": 1,
+      "NodeID": 59
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6f0eeede-0b94-40d1-9d10-ed63df63ced0",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01_Ice",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "57": {
+      "name": "checkPetPrototypeId",
+      "UID": "da14703e-b43c-4d30-b58e-020c00ef5647",
+      "target": "OWNER",
+      "petPrototypeId": 1002601,
+      "NodeID": 57
+    },
+    "56": {
+      "name": "checkPetPrototypeId",
+      "UID": "38a3b9b0-eda9-4bd5-bcec-e928a5ec1e27",
+      "target": "OWNER",
+      "petPrototypeId": 1002603,
+      "NodeID": 56
+    },
+    "55": {
+      "name": "checkPetPrototypeId",
+      "UID": "de0cabe6-c80f-4784-9568-df50b5b7a63f",
+      "target": "OWNER",
+      "petPrototypeId": 1002601,
+      "NodeID": 55
+    },
+    "54": {
+      "name": "checkPetPrototypeId",
+      "UID": "1ce7b1ac-70ce-4b9c-8d24-b51591e72520",
+      "target": "OWNER",
+      "petPrototypeId": 1002603,
+      "NodeID": 54
+    },
+    "53": {
+      "duration": 2.77,
+      "timezoneDuration": 3.5,
+      "name": "playCutScene",
+      "UID": "e0bb1848-adc8-4da0-82f1-f4079c864914",
+      "NodeID": 53,
+      "resId": "$Parmon_10026_Skill_Ex_Timeline.prefab"
+    },
+    "52": {
+      "duration": 2.77,
+      "timezoneDuration": 3.5,
+      "name": "playCutScene",
+      "UID": "cfbb8941-1d6f-4560-9155-3187660fa0a7",
+      "NodeID": 52,
+      "resId": "$Parmon_1002601_Skill_Ex_Timeline.prefab"
+    },
+    "51": {
+      "actionIds": [
+        62
+      ],
+      "conditionActionIds": [
+        63
+      ],
+      "UID": "113262ec-b92b-4ffc-a6b9-187ce5375836",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        50
+      ],
+      "NodeID": 51
+    },
+    "50": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "0f9d76fe-3d0f-4112-98e4-a45f09da130f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        53
+      ],
+      "NodeID": 50
+    },
+    "49": {
+      "name": "checkPetPrototypeId",
+      "UID": "bf8f6514-20d4-4459-9691-eef0f71bf67e",
+      "target": "OWNER",
+      "petPrototypeId": 1002601,
+      "NodeID": 49
+    },
+    "48": {
+      "name": "checkPetPrototypeId",
+      "UID": "a9ed0e52-93a9-4817-96f6-02995d1514ac",
+      "target": "OWNER",
+      "petPrototypeId": 1002603,
+      "NodeID": 48
+    },
+    "47": {
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.3,
+      "NodeID": 47,
+      "UID": "f3737e67-2444-4c1c-b6f1-c293a8b0e743"
+    },
+    "46": {
+      "UID": "708153a6-e994-4213-abd8-8bc9f6def582",
+      "target": "OWNER",
+      "name": "stopSkillCameraAnim",
+      "NodeID": 46
+    },
+    "45": {
+      "NodeID": 45,
+      "from": 10269900,
+      "to": 10269901,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 15,
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "UID": "38b9f5ef-03b7-4a39-a51e-f9d93b5fc08a",
+      "notShowCountDown": false
+    },
+    "31": {
+      "actionIds": [
+        65
+      ],
+      "conditionActionIds": [
+        64
+      ],
+      "UID": "17a1a8c1-b7d0-42d3-9c17-3af15b527a92",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        30
+      ],
+      "NodeID": 31
+    },
+    "35": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "0c745c74-032e-4e2b-87fa-4b14551e319d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        61
+      ],
+      "NodeID": 35
+    },
+    "13": {
+      "UID": "4a25f05c-f5e2-40cd-9dcb-4cee49ad59b7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "19": {
+      "UID": "2918bea5-1e3a-4eac-ad26-ac67b697b9d4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 19
+    },
+    "11": {
+      "UID": "23bc8e72-c598-4ecb-ae47-ef57181a4d2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "forcePlay": false,
+      "target": "CASTER",
+      "name": "playSkillCameraAnim",
+      "NodeID": 20,
+      "UID": "086bffe1-a386-4e85-84f3-eb53421a6424",
+      "blendInTime": 0,
+      "blendOutTime": 0.3,
+      "animResId": "$CameraAni_Parmon_10026_Skill_Ex.asset"
+    },
+    "17": {
+      "duration": 2.77,
+      "timezoneDuration": 3.5,
+      "name": "playCutScene",
+      "UID": "7810dc18-a8b0-4f64-a1b0-f720a11377ef",
+      "NodeID": 17,
+      "resId": "$Parmon_1002603_Skill_Ex_Timeline.prefab"
+    },
+    "22": {
+      "UID": "c6fe862a-cac9-4409-b737-0b05e1068836",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 22
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "82e612c1-87d8-4de3-91fa-7cc8ea8bf5ce",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Flash",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.27,
+      "NodeID": 24,
+      "UID": "9529704b-dce0-4d2d-a607-ed5cbe3908e8"
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "e42041a2-9840-45b4-bad1-e0bcc30ff2a7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        51
+      ],
+      "NodeID": 18
+    },
+    "10": {
+      "UID": "b3a08477-2037-4e65-bd75-99fd0444b4e1",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.7,
+      "NodeID": 15,
+      "UID": "11001f86-4df6-4237-bd06-4bedd9883239"
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "113cc4f1-d0dc-4670-8f8c-9e1dd3d56498",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_02",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.68,
+      "NodeID": 26,
+      "UID": "bbdf0bba-df06-488e-9e04-556c51404d75"
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4edfd059-dae1-4b5b-a8f1-1413d0059b69",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Out_Kuosan_01",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.27,
+      "NodeID": 28,
+      "UID": "9530886d-53f8-4118-beb5-223923df46be"
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "049d4b4f-3a13-412d-8229-25a53b70cfe1",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "30": {
+      "actionIds": [
+        58
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "08ca07ea-50d8-4f6e-8bd9-63607830c009",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        59
+      ],
+      "conditionActionIds": [
+        54
+      ],
+      "UID": "a9c8f609-fe9d-44ca-9566-09404ca2ead0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        31
+      ],
+      "NodeID": 32
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.84,
+      "NodeID": 33,
+      "UID": "15243aee-4717-4986-8449-a68bdbb5dc06"
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a827976f-dd62-4945-b300-5dd7de329411",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Sword_01_00_Ice",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "36": {
+      "actionIds": [
+        67
+      ],
+      "conditionActionIds": [
+        66
+      ],
+      "UID": "790ccd4f-026c-49fa-b07c-e2c6792032dc",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        35
+      ],
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_10269900",
+  "NodeID": 6,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    11,
+    4,
+    15,
+    19,
+    24,
+    26,
+    28,
+    33,
+    38,
+    44,
+    47,
+    41,
+    22
+  ],
+  "layer": "Base",
+  "length": 4
+}

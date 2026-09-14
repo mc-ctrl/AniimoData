@@ -1,0 +1,51 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "playTime": 1.1,
+      "stayTime": 0.1,
+      "name": "playIndicatorEff",
+      "UID": "299a7948-3154-44b9-a875-ff3dc84b2cf1",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          5,
+          5,
+          5
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 6
+    }
+  },
+  "BPName": "timeline_2258305",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 65
+}

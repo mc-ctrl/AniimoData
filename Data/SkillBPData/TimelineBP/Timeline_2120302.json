@@ -1,0 +1,151 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 22,
+      "UID": "fc4259d8-f539-4f69-b71e-4a6ed99e49d5",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Grass_End",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    },
+    "4": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          22,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "7": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.65,
+        "reduce_cur_tp_rate": 0.65
+      },
+      "attackData": {
+        "impulseId": 2000,
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "36b3b845-d09c-4bcc-873a-28ee6f6801c3",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 7
+    },
+    "9": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 7,
+      "NodeID": 9,
+      "UID": "590c627e-18d1-4080-94ef-b370f9b2c56b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        7,
+        23
+      ]
+    },
+    "23": {
+      "target": "TARGET",
+      "duration": 8,
+      "buffId": 2120301,
+      "NodeID": 23,
+      "UID": "ce19522d-0884-493b-99fe-48ab7bfac221",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Grass",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "19": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b642e1f2-7423-4a9f-b271-e36dacbdbb60",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Grass",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "11": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 6,
+      "NodeID": 11,
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          9
+        ]
+      }
+    },
+    "21": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2120302",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    11,
+    21,
+    4
+  ],
+  "layer": "Base",
+  "length": 6
+}

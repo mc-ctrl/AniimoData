@@ -1,0 +1,53 @@
+{
+  "nodeMap": {
+    "78": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "91233ab3-0224-4c36-9f40-6778455913c1",
+      "target": "OWNER",
+      "NodeID": 78,
+      "animId": "Skill_Burst_AttackEnd"
+    },
+    "79": {
+      "UID": "58d532df-8c27-4ab6-aed6-45294e3c0fee",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          78
+        ]
+      },
+      "NodeID": 79
+    },
+    "12": {
+      "UID": "99901c2c-49fd-4564-9bfd-f7364ee076d1",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 12
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 14,
+      "UID": "a71188b8-781b-47f5-bce6-2e8451902950"
+    }
+  },
+  "BPName": "ability_16210200",
+  "NodeID": 16,
+  "UID": "d414c5b4-e594-4dce-a27a-298b3cde2772",
+  "eventIds": [
+    79,
+    14
+  ],
+  "layer": "Base",
+  "length": 1
+}

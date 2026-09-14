@@ -1,0 +1,222 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "acc15ef8-3f95-4db7-8f01-5ecb51720e42",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "NodeID": 37
+    },
+    "6": {
+      "UID": "b0cfb750-e34b-43a9-b162-627702eb40e5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          33
+        ]
+      },
+      "NodeID": 6
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0f5d3101-ae81-40fa-b5fa-b37131fd67cc",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_swift_release",
+      "NodeID": 35
+    },
+    "12": {
+      "UID": "1493cee9-0ce1-4702-979e-bfb6897bc19e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "23": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "UID": "c11ceb6f-5e6c-4dc2-97fb-803701352453",
+        "name": "getCacheVal",
+        "key": "Pos500",
+        "NodeID": 22
+      },
+      "name": "teleport",
+      "UID": "82d426b5-4d59-4e68-aa87-cc2c6c084efc",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "OWNER",
+      "NodeID": 23
+    },
+    "4": {
+      "UID": "7cb4a60a-7b48-4a5c-91b4-da4de0f3ee32",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8dfc7858-51b9-4bb7-8ce9-b76226b88b8c",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 14,
+      "UID": "2cfbfdca-4a3f-4af5-9e24-0eba70468607"
+    },
+    "21": {
+      "UID": "3de19b94-d015-4882-8f3f-97822c362558",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          34
+        ]
+      },
+      "NodeID": 21
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ad48392f-4540-4cfe-8014-d9420ed109ec",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_DropBackReturn"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.44,
+      "NodeID": 25,
+      "UID": "0a166e0b-2230-44a5-b7d0-6114a361c776"
+    },
+    "16": {
+      "UID": "26667ce1-8897-4304-b361-c502a5debcec",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "18": {
+      "UID": "7afa52d9-e99b-4cb1-bb1e-49e52885cc8b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26,
+          32,
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 28,
+      "UID": "35c443bc-fa29-4b72-a8a4-04a11fdfbd6f"
+    },
+    "29": {
+      "name": "dropEffectStr",
+      "UID": "6761bf9c-710a-42f3-8e27-dd7a2b6b722a",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 30,
+      "UID": "9b162a9b-ebc2-4f7d-98ea-11db94dc8da7"
+    },
+    "32": {
+      "UID": "0d8dcaa7-4da2-43d4-b687-4c070287a6ea",
+      "actorId": {
+        "UID": "1b21acc8-a4eb-4c96-a9bf-61da752acbe4",
+        "name": "getCacheVal",
+        "key": "10120500",
+        "NodeID": 31
+      },
+      "name": "destroyEntity",
+      "NodeID": 32
+    },
+    "33": {
+      "buffId": 2101201,
+      "name": "removeBuff",
+      "UID": "91ad424c-2318-40ab-8b67-6d08faa4e3fe",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "260e2f23-f835-4bb3-a569-535a79c7e422",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_Start",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "36": {
+      "pitchCurveName": "CommonPitch_10angle",
+      "duration": 1,
+      "NodeID": 36,
+      "UID": "3e8195e4-66e3-4d48-a57f-6ec1397f4d62",
+      "blendInTime": 0.3,
+      "target": "OWNER",
+      "name": "playPitchYawCameraAnim"
+    }
+  },
+  "BPName": "ability_10120501",
+  "NodeID": 8,
+  "UID": "58a65cde-c9fa-4bbc-8c23-ae23f906b7be",
+  "eventIds": [
+    6,
+    14,
+    18,
+    21,
+    25,
+    28,
+    30,
+    37
+  ],
+  "layer": "Base",
+  "length": 1
+}

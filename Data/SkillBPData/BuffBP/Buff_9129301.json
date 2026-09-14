@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9129301",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "calcInfoByLuaConfig": {
+    "id": 9129301,
+    "dmg_electric_add_ratio": "param0",
+    "type": 1
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "calcInfo": {
+    "dmg_electric_add_ratio": 10
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": {}
+}

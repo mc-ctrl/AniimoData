@@ -1,0 +1,476 @@
+{
+  "64594603": {
+    "areaType": 0,
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 64594603,
+    "owner": "刘飘扬",
+    "position": [
+      0,
+      1.61,
+      0
+    ],
+    "markIconSpawnerId": 0
+  },
+  "64594590": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 64594602,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "捕捉道具副本",
+    "sightLevelType": 512,
+    "spawners": [
+      64594601,
+      66578798,
+      66578904
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/511/Sandbox_64594590_GraphRef.asset",
+    "sightLevel": 512,
+    "position": [
+      -1.02,
+      1,
+      8.74
+    ],
+    "owner": "刘飘扬",
+    "id": 64594590,
+    "levelItems": {
+      "66675349": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_Empty_SB_left",
+        "position": [
+          -29.29,
+          1,
+          -1.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 11,
+        "id": 66675349,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66670274": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint_left",
+        "position": [
+          -33.64,
+          1,
+          0.79
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 66670274,
+        "siblingIndex": 6,
+        "serializeVersion": 3,
+        "configId": 73,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "66675353": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_Empty_SB_right",
+        "position": [
+          32.87,
+          1,
+          -5.87
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 12,
+        "id": 66675353,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66670335": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint_right",
+        "position": [
+          38.02,
+          1,
+          0.7
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 66670335,
+        "siblingIndex": 7,
+        "serializeVersion": 3,
+        "configId": 73,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "66675382": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -1.02,
+          1,
+          -4.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 13,
+        "id": 66675382,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66592396": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_Direction_forward",
+        "position": [
+          -0.12,
+          1,
+          2.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 66592396,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66592409": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_CheckPoint_forward",
+        "position": [
+          -0.1,
+          1,
+          9.44
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66592409,
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "configId": 72,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66592437": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint_forward",
+        "position": [
+          6.87,
+          1,
+          27.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66592437,
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "configId": 73,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "66670350": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_CheckPoint_right",
+        "position": [
+          15.79,
+          1,
+          -5.08
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 66670350,
+        "siblingIndex": 8,
+        "serializeVersion": 3,
+        "configId": 72,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66670057": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_Direction_left",
+        "position": [
+          -6.56,
+          1,
+          -4.85
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 66670057,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66670633": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint",
+        "position": [
+          0.75,
+          1,
+          -7.38
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66670633,
+        "siblingIndex": 9,
+        "serializeVersion": 3,
+        "configId": 73,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "66670086": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_Direction_right",
+        "position": [
+          6.71,
+          1,
+          -4.87
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 4,
+        "id": 66670086,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66675279": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_Empty_SB__forward",
+        "position": [
+          4.83,
+          1,
+          28.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 10,
+        "id": 66675279,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66670239": {
+        "majorCompId": 0,
+        "owner": "刘飘扬",
+        "EditorName": "P_Item_SceneObject_Tutorial_CheckPoint_left",
+        "position": [
+          -15.97,
+          1,
+          -5.27
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 66670239,
+        "siblingIndex": 5,
+        "serializeVersion": 3,
+        "configId": 72,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

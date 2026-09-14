@@ -1,0 +1,376 @@
+{
+  "57959176": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      60.44,
+      22.86,
+      -0.97
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57951553,
+    "id": 57959176,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957393,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "name": "",
+      "scene": 506,
+      "position": [
+        60.44,
+        22.86,
+        -0.97
+      ],
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57959175
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57959367": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      60.44,
+      22.86,
+      -7.26
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57951553,
+    "id": 57959367,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957393,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "name": "",
+      "scene": 506,
+      "position": [
+        60.44,
+        22.86,
+        -7.26
+      ],
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57959368
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57959370": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      60.44,
+      22.86,
+      -14.06
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57951553,
+    "id": 57959370,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957393,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "name": "",
+      "scene": 506,
+      "position": [
+        60.44,
+        22.86,
+        -14.06
+      ],
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57959369
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57960911": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      60.44,
+      22.86,
+      1.61
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57951553,
+    "id": 57960911,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957393,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "name": "",
+      "scene": 506,
+      "position": [
+        60.44,
+        22.86,
+        1.61
+      ],
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57960910
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57960954": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      53.24,
+      22.86,
+      -3.1
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57953381,
+    "id": 57960954,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957283,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "name": "",
+      "scene": 506,
+      "position": [
+        53.24,
+        22.86,
+        -3.1
+      ],
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57960953
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57957286": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      53.21,
+      22.86,
+      -1.72
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57953381,
+    "id": 57957286,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957283,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        53.21,
+        22.86,
+        -1.72
+      ],
+      "scene": 506,
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57957283
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57957381": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      54.39,
+      22.86,
+      -1.72
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57953381,
+    "id": 57957381,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957382,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        54.39,
+        22.86,
+        -1.72
+      ],
+      "scene": 506,
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57957382
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57957394": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      51.8,
+      22.86,
+      -1.72
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57953381,
+    "id": 57957394,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957393,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        51.8,
+        22.86,
+        -1.72
+      ],
+      "scene": 506,
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57957393
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "57957403": {
+    "spawnType": 6,
+    "owner": "徐麟",
+    "sandboxType": 0,
+    "position": [
+      50.68,
+      22.86,
+      -6.71
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 57953381,
+    "id": 57957403,
+    "SpawnState": 0,
+    "targetPositionData": {
+      "entity": 57957404,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        50.68,
+        22.86,
+        -6.71
+      ],
+      "scene": 506,
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57957404
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "840002": {
+    "showStatus": 1,
+    "icon": "$UI_Makeup_Preset_840002.png",
+    "makeupList": [
+      831005,
+      834018,
+      835031
+    ],
+    "body": [
+      11
+    ]
+  },
+  "840003": {
+    "showStatus": 1,
+    "icon": "$UI_Makeup_Preset_840003.png",
+    "makeupList": [
+      831005,
+      834018,
+      835031
+    ],
+    "body": [
+      21
+    ]
+  }
+}

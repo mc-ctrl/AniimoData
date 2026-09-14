@@ -1,0 +1,48 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104505",
+  "NodeID": 1,
+  "UID": "d1822160-e693-4771-9952-029877be62f5",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 10081,
+      "NodeID": 3,
+      "UID": "3d26a441-ce32-41b0-abc3-e78a0fbeb7c1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "thresholdActionIds": [
+        3
+      ],
+      "failedActionIds": [
+        5
+      ],
+      "threshold": 1,
+      "UID": "f4999677-bca0-4647-9a7a-8831ac5ab550",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "normalGrass",
+      "NodeID": 4,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "5": {
+      "buffId": 10081,
+      "name": "removeBuff",
+      "UID": "01bb7216-eca0-41fb-a1c6-afbcb67e0ee8",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

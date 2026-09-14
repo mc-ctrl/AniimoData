@@ -1,0 +1,218 @@
+{
+  "61485637": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      218.83,
+      0.04,
+      -19.85
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485637,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485638
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61485776": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      209.37,
+      0.04,
+      -28.32
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485776,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485775
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61485778": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      214.19,
+      0.04,
+      -28.82
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485778,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485777
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61485780": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      218.97,
+      0.04,
+      -28.76
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485780,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485779
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61485782": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      209.68,
+      0.04,
+      -36.87
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485782,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485781
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61485784": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      212.93,
+      0.04,
+      -36.95
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485784,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485783
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61485413": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      209.16,
+      0.04,
+      -18.47
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485413,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485412
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61485636": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      214.05,
+      0.04,
+      -18.37
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 60886330,
+    "id": 61485636,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61485635
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,780 @@
+{
+  "1016301": {
+    "positiveTag": [
+      "Phy_Dmg"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "sceneId": 1070,
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000095
+        ]
+      ]
+    },
+    "sandboxId": 78323852,
+    "intelligentFilterId": "BossRush_1016301",
+    "bossId": 80000095,
+    "elementRecmmend": [
+      "Fire",
+      "Rock"
+    ],
+    "leftEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "leftLightIntensity": 66,
+    "leftLightPosition": [
+      0.05436,
+      503.21,
+      6.452
+    ],
+    "leftLightRotation": [
+      0.907,
+      -0.0882,
+      0.3098,
+      0.27
+    ],
+    "leftModelPosition": [
+      3.309,
+      500,
+      2.16
+    ],
+    "leftModelRotation": [
+      0,
+      -0.0598,
+      0,
+      1
+    ],
+    "leftModelScale": [
+      1,
+      1,
+      1
+    ],
+    "levelId": "Level_Boss_Rock_02",
+    "negativeTag": [
+      "Mag_Dmg"
+    ]
+  },
+  "1018702": {
+    "positiveTag": [
+      "Normal_Attack"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "rightEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "rightLightIntensity": 45,
+    "rightLightPosition": [
+      0.055879950523376,
+      503.2200012207,
+      6.4481210708618
+    ],
+    "rightLightRotation": [
+      0.94555276632309,
+      0.050758436322212,
+      -0.15890267491341,
+      0.27947023510933
+    ],
+    "rightModelPosition": [
+      -1.1000000238419,
+      500.11999511719,
+      3.2400000095367
+    ],
+    "sandboxId": 78323852,
+    "rightModelScale": [
+      1,
+      1,
+      1
+    ],
+    "intelligentFilterId": "BossRush_1018701",
+    "bossId": 80000097,
+    "elementRecmmend": [
+      "Electric",
+      "Holy"
+    ],
+    "leftLightPosition": 2.4,
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000097
+        ]
+      ]
+    },
+    "sceneId": 1070,
+    "rightModelRotation": [
+      0,
+      0.17204940319061,
+      0,
+      0.98508834838867
+    ],
+    "leftModelScale": 0.6,
+    "levelId": "Level_Boss_Water_03",
+    "negativeTag": [
+      "Many_Skill"
+    ]
+  },
+  "1018701": {
+    "positiveTag": [
+      "Melee_Attack"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "sceneId": 1070,
+    "rightLightIntensity": 45,
+    "rightLightPosition": [
+      0.055879950523376,
+      503.2200012207,
+      6.4481210708618
+    ],
+    "rightLightRotation": [
+      0.94555276632309,
+      0.050758436322212,
+      -0.15890267491341,
+      0.27947023510933
+    ],
+    "rightModelPosition": [
+      -1.1000000238419,
+      500.11999511719,
+      3.2400000095367
+    ],
+    "rightModelRotation": [
+      0,
+      0.17204940319061,
+      0,
+      0.98508834838867
+    ],
+    "rightModelScale": [
+      1,
+      1,
+      1
+    ],
+    "intelligentFilterId": "BossRush_1018701",
+    "bossId": 80000097,
+    "elementRecmmend": [
+      "Electric",
+      "Holy"
+    ],
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000097
+        ]
+      ]
+    },
+    "rightEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "sandboxId": 78323852,
+    "leftModelScale": 0.8,
+    "levelId": "Level_Boss_Water_03",
+    "negativeTag": [
+      "Range_Attack"
+    ]
+  },
+  "1018703": {
+    "positiveTag": [
+      "Ongoing_Skill",
+      "Shield_Break"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "sceneId": 1070,
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000097
+        ]
+      ]
+    },
+    "intelligentFilterId": "BossRush_1018701",
+    "bossId": 80000097,
+    "elementRecmmend": [
+      "Electric",
+      "Holy"
+    ],
+    "sandboxId": 78323852,
+    "midModelRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "midEffectScale": [
+      0.7,
+      0.7,
+      0.7
+    ],
+    "midLightIntensity": 28,
+    "midLightPosition": [
+      0.055000066757202,
+      503.23001098633,
+      6.4400005340576
+    ],
+    "midLightRotation": [
+      0.95677322149277,
+      -0.011070605367422,
+      0.049727715551853,
+      0.2863384783268
+    ],
+    "midModelPosition": [
+      1,
+      500,
+      2
+    ],
+    "levelId": "Level_Boss_Water_03",
+    "midModelScale": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  "1045401": {
+    "positiveTag": [
+      "Many_Dmg",
+      "Fly"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "rightEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "rightLightIntensity": 45,
+    "rightLightPosition": [
+      0.055879950523376,
+      503.2200012207,
+      6.4481210708618
+    ],
+    "bossId": 80000101,
+    "elementRecmmend": [
+      "Water",
+      "Grass"
+    ],
+    "rightModelRotation": [
+      0,
+      0.172,
+      0,
+      1
+    ],
+    "rightModelScale": [
+      1.2,
+      1.2,
+      1.2
+    ],
+    "intelligentFilterId": "BossRush_1045401",
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000101
+        ]
+      ]
+    },
+    "sceneId": 1070,
+    "sandboxId": 78323852,
+    "rightModelPosition": [
+      -1,
+      500,
+      3
+    ],
+    "levelId": "Level_Boss_Rock_02",
+    "rightLightRotation": [
+      0.94555276632309,
+      0.050758436322212,
+      -0.15890267491341,
+      0.27947023510933
+    ]
+  },
+  "1028501": {
+    "positiveTag": [
+      "Many_Dmg",
+      "Quake"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "sceneId": 1070,
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000096
+        ]
+      ]
+    },
+    "intelligentFilterId": "BossRush_1028501",
+    "bossId": 80000096,
+    "elementRecmmend": [
+      "Water",
+      "Grass"
+    ],
+    "sandboxId": 78323852,
+    "midModelRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "midEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "midLightIntensity": 28,
+    "midLightPosition": [
+      0.055000066757202,
+      503.23001098633,
+      6.4400005340576
+    ],
+    "midLightRotation": [
+      0.95677322149277,
+      -0.011070605367422,
+      0.049727715551853,
+      0.2863384783268
+    ],
+    "midModelPosition": [
+      0.85000002384186,
+      499.92999267578,
+      1.3400000333786
+    ],
+    "levelId": "Level_Boss_Rock_01",
+    "midModelScale": [
+      1.5,
+      1.5,
+      1.5
+    ]
+  },
+  "1021201": {
+    "positiveTag": [
+      "Fire_Buff",
+      "Under"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "rightEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "rightLightIntensity": 45,
+    "rightLightPosition": [
+      0.055879950523376,
+      503.2200012207,
+      6.4481210708618
+    ],
+    "bossId": 80000099,
+    "elementRecmmend": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "rightModelRotation": [
+      0,
+      0.172,
+      0,
+      1
+    ],
+    "rightModelScale": [
+      1,
+      1,
+      1
+    ],
+    "intelligentFilterId": "BossRush_1021201",
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000099
+        ]
+      ]
+    },
+    "sceneId": 1070,
+    "sandboxId": 78323852,
+    "rightModelPosition": [
+      -1,
+      500,
+      3.45
+    ],
+    "levelId": "Level_Boss_Grass_01",
+    "rightLightRotation": [
+      0.94555276632309,
+      0.050758436322212,
+      -0.15890267491341,
+      0.27947023510933
+    ]
+  },
+  "1017401": {
+    "positiveTag": [
+      "Phy_Dmg"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "rightEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000102
+        ]
+      ]
+    },
+    "rightLightPosition": [
+      0.055879950523376,
+      503.2200012207,
+      6.4481210708618
+    ],
+    "rightLightRotation": [
+      0.94555276632309,
+      0.050758436322212,
+      -0.15890267491341,
+      0.27947023510933
+    ],
+    "rightModelPosition": [
+      -1,
+      500,
+      3
+    ],
+    "rightModelRotation": [
+      0,
+      0.172,
+      0,
+      1
+    ],
+    "rightModelScale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "intelligentFilterId": "BossRush_1017401",
+    "bossId": 80000102,
+    "elementRecmmend": [
+      "Electric",
+      "Grass",
+      "Ice"
+    ],
+    "rightLightIntensity": 45,
+    "sceneId": 1070,
+    "sandboxId": 78323852,
+    "levelId": "Level_Boss_Water_03",
+    "negativeTag": [
+      "Mag_Dmg"
+    ]
+  },
+  "10012": {
+    "sceneId": 1070,
+    "teleportId": 78327049,
+    "levelId": "Level_Boss_Rock_02",
+    "sandboxId": 78323857
+  },
+  "10013": {
+    "sceneId": 1070,
+    "teleportId": 78327049,
+    "levelId": "Level_Boss_Rock_02",
+    "sandboxId": 78323857
+  },
+  "1021202": {
+    "positiveTag": [
+      "Fire_Buff",
+      "Under"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "sceneId": 1070,
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000099
+        ]
+      ]
+    },
+    "sandboxId": 78323852,
+    "bossId": 80000099,
+    "elementRecmmend": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "leftEffectScale": [
+      0.3,
+      0.8,
+      0.3
+    ],
+    "leftLightIntensity": 66,
+    "intelligentFilterId": "BossRush_1021201",
+    "leftLightRotation": [
+      0.907,
+      -0.0882,
+      0.3098,
+      0.27
+    ],
+    "leftModelPosition": [
+      3.3,
+      500,
+      3.042
+    ],
+    "leftModelRotation": [
+      0,
+      -0.0598,
+      0,
+      1
+    ],
+    "leftModelScale": [
+      1.2,
+      1.2,
+      1.2
+    ],
+    "levelId": "Level_Boss_Grass_01",
+    "leftLightPosition": [
+      0.05436,
+      503.21,
+      6.452
+    ]
+  },
+  "1005301": {
+    "positiveTag": [
+      "Water_Buff",
+      "Rock"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "sceneId": 1070,
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000098
+        ]
+      ]
+    },
+    "sandboxId": 78323852,
+    "bossId": 80000098,
+    "elementRecmmend": [
+      "Water",
+      "Rock"
+    ],
+    "leftEffectScale": [
+      0.83,
+      0.83,
+      0.83
+    ],
+    "leftLightIntensity": 66,
+    "intelligentFilterId": "BossRush_1005301",
+    "leftLightRotation": [
+      0.907,
+      -0.0882,
+      0.3098,
+      0.27
+    ],
+    "leftModelPosition": [
+      3.3,
+      500,
+      3.042
+    ],
+    "leftModelRotation": [
+      0,
+      -0.0598,
+      0,
+      1
+    ],
+    "leftModelScale": [
+      0.9,
+      0.9,
+      0.9
+    ],
+    "levelId": "Level_Boss_Rock_01",
+    "leftLightPosition": [
+      0.05436,
+      503.21,
+      6.452
+    ]
+  },
+  "10001": {
+    "sceneId": 1070,
+    "teleportId": [
+      78326032,
+      91288069,
+      91288068,
+      91288067
+    ],
+    "levelId": "Level_Prepare",
+    "sandboxId": 78323844
+  },
+  "1014301": {
+    "positiveTag": [
+      "Heal",
+      "Normal_Attack"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "rightEffectScale": [
+      1,
+      1,
+      1
+    ],
+    "rightLightIntensity": 45,
+    "rightLightPosition": [
+      0.055879950523376,
+      503.2200012207,
+      6.4481210708618
+    ],
+    "bossId": 80000103,
+    "elementRecmmend": [
+      "Ice",
+      "Dark"
+    ],
+    "rightModelRotation": [
+      0,
+      0.172,
+      0,
+      1
+    ],
+    "rightModelScale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "intelligentFilterId": "BossRush_1014301",
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000103
+        ]
+      ]
+    },
+    "sceneId": 1070,
+    "sandboxId": 78323852,
+    "rightModelPosition": [
+      -1,
+      500,
+      3
+    ],
+    "levelId": "Level_Boss_Water_01",
+    "rightLightRotation": [
+      0.94555276632309,
+      0.050758436322212,
+      -0.15890267491341,
+      0.27947023510933
+    ]
+  },
+  "10011": {
+    "sceneId": 1070,
+    "teleportId": 78326451,
+    "levelId": "Level_Boss_Rock_01",
+    "sandboxId": 78323855
+  },
+  "1020701": {
+    "positiveTag": [
+      "Phy_Dmg"
+    ],
+    "teleportId": [
+      78326164,
+      91288046,
+      91288045,
+      91288044
+    ],
+    "sceneId": 1070,
+    "spawnerOverrideContent": {
+      "78797760": [
+        [
+          80000100
+        ]
+      ]
+    },
+    "sandboxId": 78323852,
+    "intelligentFilterId": "BossRush_1020701",
+    "bossId": 80000100,
+    "elementRecmmend": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "leftEffectScale": [
+      3,
+      3,
+      3
+    ],
+    "leftLightIntensity": 66,
+    "leftLightPosition": [
+      0.05436,
+      505,
+      6
+    ],
+    "leftLightRotation": [
+      0.907,
+      -0.0882,
+      0.3098,
+      0.27
+    ],
+    "leftModelPosition": [
+      3,
+      500.6,
+      3.2
+    ],
+    "leftModelRotation": [
+      0,
+      -0.172,
+      0,
+      1
+    ],
+    "leftModelScale": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "levelId": "Level_Boss_Grass_03",
+    "negativeTag": [
+      "Mag_Dmg"
+    ]
+  }
+}

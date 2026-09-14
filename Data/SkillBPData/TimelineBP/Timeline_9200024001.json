@@ -1,0 +1,105 @@
+{
+  "nodeMap": {
+    "3": {
+      "targetPos": "PROJECTILE",
+      "offsetXYZ": [
+        -0.117,
+        1.17,
+        0.638
+      ],
+      "templateId": 9200024001,
+      "name": "createProjectile",
+      "UID": "7998643a-fc97-4bee-8512-91b26c99fab4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 3
+    },
+    "23": {
+      "UID": "e23eac3c-4b6e-491b-a948-6762dc53bf21",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 23
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "73ffe45f-5ed5-42b6-9988-fde97cbb2eb7",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "Skill_MagicCap_Throw"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 25,
+      "UID": "98082930-2af0-46ae-aaa8-d2c4499f2abb"
+    },
+    "17": {
+      "UID": "b0349d03-dd84-45e0-908e-0a19d2702cc5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          28,
+          32,
+          33
+        ]
+      },
+      "NodeID": 17
+    },
+    "32": {
+      "key": "920002201",
+      "name": "setCacheVal",
+      "UID": "524e1a8f-dd14-4553-8a8d-1d0eec5dc5e3",
+      "val": 0,
+      "NodeID": 32
+    },
+    "33": {
+      "buffId": 920002201,
+      "name": "removeBuff",
+      "UID": "c7d91bfc-7dfc-4e4f-a186-2f331780f5c4",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 5,
+      "UID": "bee9b66a-c8b8-4b9f-b456-52d42b9875dc"
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "1f51972e-2678-4627-92b3-3050985a87d6",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_Icon",
+      "target": "OWNER",
+      "NodeID": 28
+    }
+  },
+  "BPName": "ability_9200024",
+  "NodeID": 7,
+  "UID": "20c1c0f1-e709-45bc-ad60-adf6c014fd5d",
+  "eventIds": [
+    17,
+    25,
+    5
+  ],
+  "layer": "Base",
+  "length": 3.58
+}

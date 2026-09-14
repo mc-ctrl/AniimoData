@@ -1,0 +1,4601 @@
+{
+  "1013102": [
+    {
+      "ethnicGroup": 1013,
+      "position": 0,
+      "groupId": 2,
+      "stage": 1,
+      "normalConditions": [
+        [
+          101320290,
+          1266486180,
+          2063203968,
+          2
+        ],
+        {
+          "3": 1176020223,
+          "4": 2,
+          "1": 110001
+        }
+      ],
+      "simpleDesc": 1599360425,
+      "targetPetId": 1013202,
+      "grayConditionsExclude": [
+        110001
+      ],
+      "cameraPositionIndividual": [
+        -0.87,
+        -0.2,
+        0
+      ]
+    }
+  ],
+  "1013202": [
+    {
+      "ethnicGroup": 1013,
+      "position": 1,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540006,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          101330290,
+          1078858322,
+          1713696874,
+          2
+        ],
+        {
+          "3": 1468872371,
+          "4": 2,
+          "1": 110001
+        }
+      ],
+      "simpleDesc": 1621393461,
+      "targetPetId": 1013302,
+      "stage": 2,
+      "grayConditionsExclude": [
+        110001
+      ],
+      "cameraPositionIndividual": [
+        -2.1,
+        0,
+        -0.2
+      ]
+    }
+  ],
+  "1013302": [
+    {
+      "ethnicGroup": 1013,
+      "stage": 3,
+      "groupId": 2,
+      "position": 2
+    }
+  ],
+  "1016202": [
+    {
+      "ethnicGroup": 1016,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1016203": [
+    {
+      "ethnicGroup": 1016,
+      "stage": 2,
+      "groupId": 4,
+      "position": 1
+    }
+  ],
+  "1017201": [
+    {
+      "ethnicGroup": 1017,
+      "position": 1,
+      "grayConditionsExclude": [
+        110001
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1425183073,
+        "4": 2,
+        "1": 30310001
+      },
+      "normalConditions": [
+        [
+          101740190,
+          1610651419,
+          1259912622,
+          2
+        ],
+        {
+          "3": 1827821462,
+          "4": 2,
+          "1": 110001
+        },
+        [
+          100000004,
+          1326157000,
+          1581630781,
+          2
+        ]
+      ],
+      "simpleDesc": 2122943453,
+      "targetPetId": 1017401,
+      "stage": 2,
+      "groupId": 2,
+      "cameraPositionIndividual": [
+        -1.8,
+        0,
+        0
+      ]
+    },
+    {
+      "simpleDesc": 1232543121,
+      "targetPetId": 1017301,
+      "grayConditionsExclude": [
+        110001
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          101730190,
+          1275259400,
+          1101699426,
+          2
+        ],
+        [
+          101720001,
+          1462039401,
+          1259018745,
+          2
+        ],
+        [
+          100000003,
+          1575445520,
+          1914599455,
+          2
+        ],
+        {
+          "3": 1686429991,
+          "4": 2,
+          "1": 110001
+        }
+      ]
+    }
+  ],
+  "1017301": [
+    {
+      "ethnicGroup": 1017,
+      "stage": 3,
+      "groupId": 2,
+      "position": 2
+    }
+  ],
+  "1017401": [
+    {
+      "ethnicGroup": 1017,
+      "stage": 3,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1018101": [
+    {
+      "ethnicGroup": 1018,
+      "cameraPositionIndividual": [
+        -1.07,
+        0.15,
+        1
+      ],
+      "groupId": 2,
+      "stage": 1,
+      "normalConditions": [
+        [
+          101840190,
+          1339797687,
+          1151096444,
+          2
+        ],
+        [
+          101840101,
+          1103866420,
+          1966621309,
+          2
+        ],
+        [
+          101840091,
+          1872273730,
+          1847770854,
+          2
+        ]
+      ],
+      "simpleDesc": 2112018803,
+      "targetPetId": 1018401,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "simpleDesc": 1963685205,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "targetPetId": 1018501,
+      "normalConditions": [
+        [
+          101840190,
+          2070349494,
+          1437228541,
+          2
+        ]
+      ]
+    },
+    {
+      "simpleDesc": 2041271806,
+      "targetPetId": 1018701,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1637945030,
+        "4": 2,
+        "1": 30310003
+      },
+      "normalConditions": [
+        [
+          101840190,
+          1490583956,
+          2076694837,
+          2
+        ],
+        [
+          101870101,
+          1333254085,
+          1486174953,
+          2
+        ]
+      ]
+    }
+  ],
+  "1018103": [
+    {
+      "ethnicGroup": 1018,
+      "position": 0,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          101840390,
+          1428284471,
+          1629695627,
+          2
+        ],
+        [
+          101840301,
+          1565564999,
+          1145041394,
+          2
+        ],
+        {
+          "3": 1549901255,
+          "4": 2,
+          "1": 120005
+        },
+        [
+          101840091,
+          1882448884,
+          1949892188,
+          2
+        ]
+      ],
+      "simpleDesc": 2030991919,
+      "targetPetId": 1018403,
+      "stage": 1,
+      "grayConditionsExclude": [
+        120005
+      ],
+      "cameraPositionIndividual": [
+        -1.07,
+        0.15,
+        1
+      ]
+    },
+    {
+      "simpleDesc": 1365541598,
+      "targetPetId": 1018503,
+      "grayConditionsExclude": [
+        120005
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          101840390,
+          1654927803,
+          1749309600,
+          2
+        ],
+        {
+          "3": 1331193410,
+          "4": 2,
+          "1": 120005
+        }
+      ]
+    },
+    {
+      "simpleDesc": 1525763321,
+      "targetPetId": 1018703,
+      "grayConditionsExclude": [
+        120005
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1559399314,
+        "4": 2,
+        "1": 30310003
+      },
+      "normalConditions": [
+        [
+          101840390,
+          1143925381,
+          1126651845,
+          2
+        ],
+        [
+          101870301,
+          1885158871,
+          2125131185,
+          2
+        ],
+        {
+          "3": 1558393782,
+          "4": 2,
+          "1": 120005
+        }
+      ]
+    }
+  ],
+  "1018401": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 2,
+      "position": 0
+    }
+  ],
+  "1018403": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 3,
+      "position": 0
+    }
+  ],
+  "1018501": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1018503": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1018701": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 2,
+      "position": 2
+    }
+  ],
+  "1018703": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 3,
+      "position": 2
+    }
+  ],
+  "1035100": [
+    {
+      "ethnicGroup": 1035,
+      "cameraPositionIndividual": [
+        -1.15,
+        -0.5,
+        -0.4
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          103520090,
+          1579139479,
+          1889261344,
+          2
+        ]
+      ],
+      "simpleDesc": 1546703542,
+      "targetPetId": 1035200,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1035200": [
+    {
+      "ethnicGroup": 1035,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1014100": [
+    {
+      "ethnicGroup": 1014,
+      "targetPetId": 1014200,
+      "simpleDesc": 1368154945,
+      "cameraPositionIndividual": [
+        -0.85,
+        -0.5,
+        -0.5
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          101420090,
+          1520116697,
+          1372962356,
+          2
+        ]
+      ]
+    }
+  ],
+  "1014200": [
+    {
+      "ethnicGroup": 1014,
+      "position": 1,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540007,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1236832966,
+        "4": 2,
+        "1": 30310013
+      },
+      "normalConditions": [
+        [
+          101430090,
+          2119639263,
+          1280218322,
+          2
+        ]
+      ],
+      "simpleDesc": 1081028197,
+      "targetPetId": 1014300,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        -2.3,
+        -0.2,
+        -0.7
+      ]
+    }
+  ],
+  "1013200": [
+    {
+      "ethnicGroup": 1013,
+      "cameraPositionIndividual": [
+        -2.1,
+        0,
+        -0.2
+      ],
+      "groupId": 1,
+      "stage": 2,
+      "normalConditions": [
+        [
+          101330090,
+          1942768964,
+          1139460005,
+          2
+        ]
+      ],
+      "simpleDesc": 1829312527,
+      "targetPetId": 1013300,
+      "position": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540006,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1014300": [
+    {
+      "ethnicGroup": 1014,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1020101": [
+    {
+      "ethnicGroup": 1020,
+      "cameraPositionIndividual": [
+        -0.7,
+        0,
+        0.4
+      ],
+      "groupId": 2,
+      "stage": 1,
+      "normalConditions": [
+        [
+          102030190,
+          1712150605,
+          1906224131,
+          2
+        ]
+      ],
+      "simpleDesc": 1936964335,
+      "targetPetId": 1020301,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "ethnicGroup": 1020,
+      "targetPetId": 1020701,
+      "simpleDesc": 1249311791,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 2112333578,
+        "4": 2,
+        "1": 30310009
+      },
+      "normalConditions": [
+        [
+          102030190,
+          1277418428,
+          1810665530,
+          2
+        ],
+        [
+          102070191,
+          2014494558,
+          1616040527,
+          2,
+          [
+            8011,
+            8011
+          ]
+        ]
+      ]
+    }
+  ],
+  "1020301": [
+    {
+      "ethnicGroup": 1020,
+      "stage": 2,
+      "groupId": 2,
+      "position": 0
+    }
+  ],
+  "1004100": [
+    {
+      "ethnicGroup": 1004,
+      "targetPetId": 1004200,
+      "simpleDesc": 1404708323,
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.5,
+        -0.3
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          100420090,
+          1296509847,
+          1335030893,
+          2
+        ]
+      ]
+    }
+  ],
+  "1020701": [
+    {
+      "ethnicGroup": 1020,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1021101": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "grayConditionsExclude": [
+        120005
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1911807869,
+        "4": 2,
+        "1": 30310015
+      },
+      "normalConditions": [
+        [
+          102120190,
+          1539394891,
+          1863755876,
+          2
+        ],
+        {
+          "3": 1564962439,
+          "4": 2,
+          "1": 120005
+        }
+      ],
+      "simpleDesc": 1205179299,
+      "targetPetId": 1021201,
+      "stage": 1,
+      "groupId": 2,
+      "cameraPositionIndividual": [
+        -1,
+        -0.4,
+        -0.4
+      ]
+    }
+  ],
+  "1002600": [
+    {
+      "ethnicGroup": 1002,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1021103": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "grayConditionsExclude": [
+        130003
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 2070724295,
+        "4": 2,
+        "1": 30310015
+      },
+      "normalConditions": [
+        [
+          102120390,
+          1640770751,
+          2109997824,
+          2
+        ],
+        {
+          "3": 1170751630,
+          "4": 2,
+          "1": 130003
+        }
+      ],
+      "simpleDesc": 1133325665,
+      "targetPetId": 1021203,
+      "stage": 1,
+      "groupId": 4,
+      "cameraPositionIndividual": [
+        -1,
+        -0.4,
+        -0.4
+      ]
+    }
+  ],
+  "1002500": [
+    {
+      "ethnicGroup": 2002,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1021105": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "grayConditionsExclude": [
+        120006
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1870273160,
+        "4": 2,
+        "1": 30310015
+      },
+      "normalConditions": [
+        [
+          102120590,
+          2089295699,
+          1907526172,
+          2
+        ],
+        {
+          "3": 1373405748,
+          "4": 2,
+          "1": 120006
+        }
+      ],
+      "simpleDesc": 1758616260,
+      "targetPetId": 1021205,
+      "stage": 1,
+      "groupId": 6,
+      "cameraPositionIndividual": [
+        -1,
+        -0.4,
+        -0.4
+      ]
+    }
+  ],
+  "1003100": [
+    {
+      "ethnicGroup": 1003,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.3,
+        -0.3
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          100320090,
+          1487060307,
+          1484525846,
+          2
+        ],
+        [
+          100320001,
+          1195612061,
+          1491631190,
+          2
+        ]
+      ],
+      "simpleDesc": 1575109048,
+      "targetPetId": 1003200,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "simpleDesc": 1975956866,
+      "itemConditions": [
+        {
+          "1": [
+            540007,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "targetPetId": 1003300,
+      "normalConditions": [
+        [
+          100320090,
+          1158777544,
+          1913886391,
+          2
+        ],
+        [
+          102620999,
+          1730983343,
+          1212214841,
+          2
+        ]
+      ]
+    }
+  ],
+  "1021201": [
+    {
+      "ethnicGroup": 1021,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1003200": [
+    {
+      "ethnicGroup": 1003,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1003300": [
+    {
+      "ethnicGroup": 1003,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1021204": [
+    {
+      "ethnicGroup": 1021,
+      "stage": 2,
+      "groupId": 7,
+      "position": 1
+    }
+  ],
+  "1021205": [
+    {
+      "ethnicGroup": 1021,
+      "stage": 2,
+      "groupId": 6,
+      "position": 1
+    }
+  ],
+  "1021206": [
+    {
+      "ethnicGroup": 1021,
+      "stage": 2,
+      "groupId": 5,
+      "position": 1
+    }
+  ],
+  "1016200": [
+    {
+      "ethnicGroup": 1016,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1022102": [
+    {
+      "ethnicGroup": 1022,
+      "position": 0,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540007,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1284931493,
+        "4": 2,
+        "1": 30310011
+      },
+      "normalConditions": [
+        [
+          102220290,
+          1327812585,
+          1632099073,
+          2
+        ],
+        [
+          130008,
+          1867451828,
+          1251999345,
+          2,
+          [
+            8015,
+            8015
+          ]
+        ]
+      ],
+      "simpleDesc": 1558485483,
+      "targetPetId": 1022202,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1.15,
+        -0.4,
+        -0.1
+      ]
+    }
+  ],
+  "1028100": [
+    {
+      "ethnicGroup": 1028,
+      "targetPetId": 1028200,
+      "simpleDesc": 1890066195,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.5,
+        -0.3
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          102820090,
+          1693770003,
+          2110643922,
+          2
+        ]
+      ]
+    },
+    {
+      "simpleDesc": 1904860107,
+      "targetPetId": 1028400,
+      "normalConditions": [
+        [
+          102840090,
+          1579284902,
+          1651911107,
+          2
+        ]
+      ]
+    }
+  ],
+  "1028400": [
+    {
+      "ethnicGroup": 1028,
+      "position": 1,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1988040154,
+        "4": 2,
+        "1": 30310014
+      },
+      "normalConditions": [
+        [
+          102850090,
+          1146201008,
+          1808503680,
+          2
+        ]
+      ],
+      "simpleDesc": 1234049109,
+      "targetPetId": 1028500,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        -2.37,
+        -0.1,
+        -0.3
+      ]
+    }
+  ],
+  "1022202": [
+    {
+      "ethnicGroup": 1022,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1018100": [
+    {
+      "ethnicGroup": 1018,
+      "cameraPositionIndividual": [
+        -1.07,
+        0.15,
+        1
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          101840090,
+          1138375763,
+          1867460316,
+          2
+        ],
+        [
+          101840001,
+          1596525485,
+          1402594309,
+          2
+        ],
+        [
+          101840091,
+          1292986739,
+          1327283122,
+          2
+        ]
+      ],
+      "simpleDesc": 1652962997,
+      "targetPetId": 1018400,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "simpleDesc": 1778762353,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "targetPetId": 1018500,
+      "normalConditions": [
+        [
+          101840090,
+          2127207056,
+          2009367789,
+          2
+        ]
+      ]
+    },
+    {
+      "simpleDesc": 1878551186,
+      "targetPetId": 1018700,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1848021688,
+        "4": 2,
+        "1": 30310003
+      },
+      "normalConditions": [
+        [
+          101840090,
+          2103318341,
+          1503364939,
+          2
+        ],
+        [
+          101870001,
+          1473088404,
+          1227593950,
+          2
+        ]
+      ]
+    }
+  ],
+  "1023101": [
+    {
+      "ethnicGroup": 1023,
+      "position": 0,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          102320190,
+          1836452957,
+          2023564498,
+          2
+        ],
+        {
+          "3": 1411042912,
+          "4": 2,
+          "1": 120008
+        }
+      ],
+      "simpleDesc": 1083016169,
+      "targetPetId": 1023201,
+      "stage": 1,
+      "grayConditionsExclude": [
+        120008
+      ],
+      "cameraPositionIndividual": [
+        -1.15,
+        -0.3,
+        -0.4
+      ]
+    }
+  ],
+  "1023102": [
+    {
+      "ethnicGroup": 1023,
+      "position": 0,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          102320290,
+          1305212832,
+          1687487618,
+          2
+        ],
+        {
+          "3": 2116952515,
+          "4": 2,
+          "1": 110001
+        }
+      ],
+      "simpleDesc": 1585522766,
+      "targetPetId": 1023202,
+      "stage": 1,
+      "grayConditionsExclude": [
+        110001
+      ],
+      "cameraPositionIndividual": [
+        -1.15,
+        -0.3,
+        -0.4
+      ]
+    }
+  ],
+  "1023103": [
+    {
+      "ethnicGroup": 1023,
+      "position": 0,
+      "groupId": 4,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          102320390,
+          2071147482,
+          1345374748,
+          2
+        ],
+        {
+          "3": 1531952813,
+          "4": 2,
+          "1": 120002
+        }
+      ],
+      "simpleDesc": 1744801204,
+      "targetPetId": 1023203,
+      "stage": 1,
+      "grayConditionsExclude": [
+        120002
+      ],
+      "cameraPositionIndividual": [
+        -1.15,
+        -0.3,
+        -0.4
+      ]
+    }
+  ],
+  "1023201": [
+    {
+      "ethnicGroup": 1023,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1026100": [
+    {
+      "ethnicGroup": 1026,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1955603075,
+        "4": 2,
+        "1": 30310008
+      },
+      "normalConditions": [
+        [
+          102620090,
+          1526169402,
+          1260221181,
+          2
+        ]
+      ],
+      "simpleDesc": 1941721275,
+      "targetPetId": 1026200,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.2,
+        0.8
+      ]
+    },
+    {
+      "simpleDesc": 1970792430,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "targetPetId": 1026300,
+      "normalConditions": [
+        [
+          102620090,
+          1764240333,
+          2048596041,
+          2
+        ],
+        [
+          102630091,
+          2144679078,
+          1982601127,
+          2
+        ],
+        [
+          102620091,
+          2023886306,
+          1471212621,
+          2
+        ]
+      ]
+    }
+  ],
+  "1023203": [
+    {
+      "ethnicGroup": 1023,
+      "stage": 2,
+      "groupId": 4,
+      "position": 1
+    }
+  ],
+  "1051200": [
+    {
+      "ethnicGroup": 1051,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1026101": [
+    {
+      "ethnicGroup": 1026,
+      "position": 0,
+      "grayConditionsExclude": [
+        100002
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1205871993,
+        "4": 2,
+        "1": 30310008
+      },
+      "normalConditions": [
+        [
+          102620190,
+          1422499108,
+          1175002616,
+          2
+        ],
+        {
+          "3": 1750285889,
+          "4": 2,
+          "1": 100002
+        }
+      ],
+      "simpleDesc": 1124193417,
+      "targetPetId": 1026201,
+      "stage": 1,
+      "groupId": 2,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.2,
+        0.8
+      ]
+    }
+  ],
+  "1026200": [
+    {
+      "ethnicGroup": 1026,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1047103": [
+    {
+      "ethnicGroup": 1047,
+      "targetPetId": 1047503,
+      "stage": 1,
+      "position": 0,
+      "groupId": 4,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "simpleDesc": 1906631947,
+      "normalConditions": [
+        [
+          104740390,
+          1372649268,
+          1263970601,
+          2
+        ]
+      ]
+    }
+  ],
+  "1026102": [
+    {
+      "ethnicGroup": 1026,
+      "position": 0,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1433560139,
+        "4": 2,
+        "1": 30310008
+      },
+      "normalConditions": [
+        [
+          102620290,
+          1182095191,
+          1150411868,
+          2
+        ]
+      ],
+      "simpleDesc": 1956706052,
+      "targetPetId": 1026202,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.2,
+        0.8
+      ]
+    }
+  ],
+  "1026105": [
+    {
+      "ethnicGroup": 1026,
+      "position": 0,
+      "grayConditionsExclude": [
+        120006
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1849934006,
+        "4": 2,
+        "1": 30310008
+      },
+      "normalConditions": [
+        [
+          102620590,
+          1953603112,
+          1702327237,
+          2
+        ],
+        {
+          "3": 1646449430,
+          "4": 2,
+          "1": 120006
+        }
+      ],
+      "simpleDesc": 1100625735,
+      "targetPetId": 1026205,
+      "stage": 1,
+      "groupId": 4,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.2,
+        0.8
+      ]
+    }
+  ],
+  "1026201": [
+    {
+      "ethnicGroup": 1026,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1026202": [
+    {
+      "ethnicGroup": 1026,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1047503": [
+    {
+      "ethnicGroup": 1047,
+      "stage": 2,
+      "groupId": 4,
+      "position": 1
+    }
+  ],
+  "1045100": [
+    {
+      "ethnicGroup": 1045,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        220001,
+        2135630540,
+        1193261478,
+        2,
+        [
+          8012,
+          8012
+        ]
+      ],
+      "normalConditions": [
+        [
+          104530090,
+          1256048074,
+          1467054173,
+          2
+        ]
+      ],
+      "simpleDesc": 2074512769,
+      "targetPetId": 1045300,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -0.9,
+        -0.3,
+        0.4
+      ]
+    },
+    {
+      "ethnicGroup": 1045,
+      "targetPetId": 1045400,
+      "simpleDesc": 1788847680,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1284811600,
+        "4": 2,
+        "1": 30310018
+      },
+      "normalConditions": [
+        [
+          104530090,
+          2092123845,
+          1642687935,
+          2
+        ],
+        [
+          104530091,
+          1081307347,
+          1792384165,
+          2
+        ]
+      ]
+    }
+  ],
+  "1002200": [
+    {
+      "ethnicGroup": 2002,
+      "position": 1,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        900002,
+        1865069309,
+        1699509685,
+        2
+      ],
+      "normalConditions": [
+        [
+          100230090,
+          1588327205,
+          1589089780,
+          2
+        ]
+      ],
+      "simpleDesc": 1217416015,
+      "targetPetId": 1002300,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        -2,
+        0.2,
+        -0.1
+      ]
+    },
+    {
+      "simpleDesc": 1353876661,
+      "targetPetId": 1002500,
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1577072218,
+        "4": 2,
+        "1": 30310006
+      },
+      "normalConditions": [
+        [
+          100250090,
+          1329692778,
+          1308513381,
+          2
+        ],
+        [
+          100220001,
+          2075424464,
+          1978861202,
+          2
+        ]
+      ]
+    }
+  ],
+  "1002400": [
+    {
+      "ethnicGroup": 2002,
+      "targetPetId": 1002200,
+      "simpleDesc": 1821268331,
+      "cameraPositionIndividual": [
+        -0.9,
+        -0.3,
+        -0.2
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          100220090,
+          1859875108,
+          1876063086,
+          2
+        ]
+      ]
+    }
+  ],
+  "1004101": [
+    {
+      "ethnicGroup": 1004,
+      "position": 0,
+      "groupId": 2,
+      "stage": 1,
+      "normalConditions": [
+        [
+          100420190,
+          1427371587,
+          1100000559,
+          2
+        ],
+        {
+          "3": 1406607965,
+          "4": 2,
+          "1": 120004
+        }
+      ],
+      "simpleDesc": 1311757596,
+      "targetPetId": 1004201,
+      "grayConditionsExclude": [
+        120004
+      ],
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.5,
+        -0.3
+      ]
+    }
+  ],
+  "1017100": [
+    {
+      "ethnicGroup": 1017,
+      "targetPetId": 1017200,
+      "simpleDesc": 1725135235,
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.7,
+        -1.3
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          101720090,
+          2055410488,
+          2110418783,
+          2
+        ]
+      ]
+    }
+  ],
+  "1045400": [
+    {
+      "ethnicGroup": 1045,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1005200": [
+    {
+      "ethnicGroup": 1005,
+      "position": 1,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1283913363,
+        "4": 2,
+        "1": 30310002
+      },
+      "normalConditions": [
+        [
+          100530090,
+          1936510218,
+          1745938348,
+          2
+        ]
+      ],
+      "simpleDesc": 1934890805,
+      "targetPetId": 1005300,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        -1.97,
+        0,
+        -0.3
+      ]
+    },
+    {
+      "simpleDesc": 1688075775,
+      "targetPetId": 1005500,
+      "cameraPositionIndividual": [
+        -1.97,
+        0,
+        -0.3
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        },
+        {
+          "1": [
+            540213,
+            6
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        200001,
+        1996622874,
+        1447451003,
+        2
+      ],
+      "normalConditions": [
+        [
+          100530090,
+          1263974006,
+          1211023361,
+          2
+        ]
+      ]
+    }
+  ],
+  "1017101": [
+    {
+      "ethnicGroup": 1017,
+      "position": 0,
+      "groupId": 2,
+      "stage": 1,
+      "normalConditions": [
+        [
+          101720190,
+          1240709910,
+          1557228286,
+          2
+        ],
+        {
+          "3": 1630981863,
+          "4": 2,
+          "1": 110001
+        }
+      ],
+      "simpleDesc": 1207853376,
+      "targetPetId": 1017201,
+      "grayConditionsExclude": [
+        110001
+      ],
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.16,
+        0
+      ]
+    }
+  ],
+  "1016102": [
+    {
+      "ethnicGroup": 1016,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.1,
+        0.9
+      ],
+      "groupId": 3,
+      "stage": 1,
+      "normalConditions": [
+        [
+          101620290,
+          1449618244,
+          1450828476,
+          2
+        ]
+      ],
+      "simpleDesc": 1883590052,
+      "targetPetId": 1016202,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1044100": [
+    {
+      "ethnicGroup": 1044,
+      "cameraPositionIndividual": [
+        -1.1,
+        -0.4,
+        -0.3
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          104430090,
+          2100318859,
+          1997918477,
+          2
+        ],
+        [
+          30310020,
+          1151516369,
+          1141323829,
+          2
+        ]
+      ],
+      "simpleDesc": 1976692204,
+      "targetPetId": 1044300,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1002100": [
+    {
+      "ethnicGroup": 1002,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        975,
+        1996884384,
+        1517036188,
+        2
+      ],
+      "normalConditions": [
+        [
+          100260090,
+          1279169868,
+          1813272760,
+          2
+        ]
+      ],
+      "simpleDesc": 1869849764,
+      "targetPetId": 1002600,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1,
+        0,
+        0.8
+      ]
+    },
+    {
+      "simpleDesc": 1307443562,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "targetPetId": 1002700,
+      "normalConditions": [
+        [
+          100270090,
+          1798457686,
+          1094847850,
+          2
+        ],
+        [
+          100270092,
+          1333049342,
+          1866370825,
+          2
+        ],
+        [
+          100270091,
+          1188728884,
+          2111503833,
+          2
+        ]
+      ]
+    }
+  ],
+  "1004301": [
+    {
+      "ethnicGroup": 1004,
+      "stage": 3,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1023100": [
+    {
+      "ethnicGroup": 1023,
+      "cameraPositionIndividual": [
+        -1.15,
+        -0.3,
+        -0.4
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          102320090,
+          1805348004,
+          1819215904,
+          2
+        ]
+      ],
+      "simpleDesc": 1313411994,
+      "targetPetId": 1023200,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1023200": [
+    {
+      "ethnicGroup": 1023,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1023300": [
+    {
+      "ethnicGroup": 1023,
+      "position": 0,
+      "groupId": 1,
+      "stage": 1,
+      "individual": 1
+    }
+  ],
+  "1020300": [
+    {
+      "ethnicGroup": 1020,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1019400": [
+    {
+      "ethnicGroup": 1019,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1021100": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1915224242,
+        "4": 2,
+        "1": 30310015
+      },
+      "normalConditions": [
+        [
+          102120090,
+          1996893697,
+          1899210824,
+          2
+        ]
+      ],
+      "simpleDesc": 1080602655,
+      "targetPetId": 1021200,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1,
+        -0.4,
+        -0.4
+      ]
+    }
+  ],
+  "1033102": [
+    {
+      "ethnicGroup": 1033,
+      "position": 0,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          103330290,
+          1824842254,
+          1893421258,
+          2
+        ],
+        {
+          "3": 2112861433,
+          "4": 2,
+          "1": 130006
+        }
+      ],
+      "simpleDesc": 1903928565,
+      "targetPetId": 1033302,
+      "stage": 1,
+      "grayConditionsExclude": [
+        130006
+      ],
+      "cameraPositionIndividual": [
+        -1,
+        -0.3,
+        -0.2
+      ]
+    }
+  ],
+  "1033103": [
+    {
+      "ethnicGroup": 1033,
+      "position": 0,
+      "groupId": 4,
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          103330390,
+          1140579954,
+          1948558092,
+          2
+        ],
+        {
+          "3": 1946744507,
+          "4": 2,
+          "1": 130007
+        }
+      ],
+      "simpleDesc": 1553233620,
+      "targetPetId": 1033303,
+      "stage": 1,
+      "grayConditionsExclude": [
+        130007
+      ],
+      "cameraPositionIndividual": [
+        -1,
+        -0.3,
+        -0.2
+      ]
+    }
+  ],
+  "1021200": [
+    {
+      "ethnicGroup": 1021,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1021300": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "groupId": 1,
+      "stage": 3,
+      "individual": 1
+    }
+  ],
+  "1004500": [
+    {
+      "ethnicGroup": 1004,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1017400": [
+    {
+      "ethnicGroup": 1017,
+      "stage": 3,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1017200": [
+    {
+      "ethnicGroup": 1017,
+      "position": 1,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1465318371,
+        "4": 2,
+        "1": 30310001
+      },
+      "normalConditions": [
+        [
+          101740090,
+          2069910291,
+          1708097049,
+          2
+        ]
+      ],
+      "simpleDesc": 1895253015,
+      "targetPetId": 1017400,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        -1.8,
+        -0.15,
+        -1.3
+      ]
+    },
+    {
+      "simpleDesc": 2018693328,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "targetPetId": 1017300,
+      "normalConditions": [
+        [
+          101730090,
+          2021668140,
+          1779727211,
+          2
+        ],
+        [
+          101720001,
+          1778257569,
+          1977837384,
+          2
+        ]
+      ]
+    }
+  ],
+  "1018700": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1032300": [
+    {
+      "ethnicGroup": 1032,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1048100": [
+    {
+      "ethnicGroup": 1048,
+      "cameraPositionIndividual": [
+        -1.1,
+        -0.5,
+        -0.5
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          104830090,
+          2026278863,
+          1457215687,
+          2
+        ]
+      ],
+      "simpleDesc": 1942441453,
+      "targetPetId": 1048300,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1048300": [
+    {
+      "ethnicGroup": 1048,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1050100": [
+    {
+      "ethnicGroup": 1050,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1575485445,
+        "4": 2,
+        "1": 30310017
+      },
+      "normalConditions": [
+        [
+          105030090,
+          1902999339,
+          2128536367,
+          2
+        ]
+      ],
+      "simpleDesc": 1282396705,
+      "targetPetId": 1050300,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1.1,
+        -0.3,
+        -0.1
+      ]
+    }
+  ],
+  "1050300": [
+    {
+      "ethnicGroup": 1050,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1022100": [
+    {
+      "ethnicGroup": 1022,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540007,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1689510789,
+        "4": 2,
+        "1": 30310011
+      },
+      "normalConditions": [
+        [
+          102220090,
+          2131900326,
+          1203006379,
+          2
+        ],
+        [
+          130008,
+          1299204396,
+          1123327284,
+          2,
+          [
+            8015,
+            8015
+          ]
+        ]
+      ],
+      "simpleDesc": 1459176209,
+      "targetPetId": 1022200,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1.15,
+        -0.4,
+        -0.1
+      ]
+    }
+  ],
+  "1022200": [
+    {
+      "ethnicGroup": 1022,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1047400": [
+    {
+      "ethnicGroup": 1047,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "6999300": [
+    {
+      "ethnicGroup": 6999,
+      "position": 0,
+      "groupId": 1,
+      "stage": 1,
+      "individual": 1
+    }
+  ],
+  "1051100": [
+    {
+      "ethnicGroup": 1051,
+      "cameraPositionIndividual": [
+        -1.1,
+        -0.5,
+        -0.5
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          105130090,
+          1107332101,
+          1654573391,
+          2
+        ]
+      ],
+      "simpleDesc": 1240300735,
+      "targetPetId": 1051200,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1047502": [
+    {
+      "ethnicGroup": 1047,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1047501": [
+    {
+      "ethnicGroup": 1047,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1047500": [
+    {
+      "ethnicGroup": 1047,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1012200": [
+    {
+      "ethnicGroup": 1012,
+      "position": 0,
+      "groupId": 1,
+      "stage": 1,
+      "individual": 1
+    }
+  ],
+  "1047102": [
+    {
+      "ethnicGroup": 1047,
+      "targetPetId": 1047502,
+      "stage": 1,
+      "position": 0,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "simpleDesc": 1096155370,
+      "normalConditions": [
+        [
+          104740290,
+          1652282884,
+          1128312791,
+          2
+        ]
+      ]
+    }
+  ],
+  "1047101": [
+    {
+      "ethnicGroup": 1047,
+      "targetPetId": 1047501,
+      "stage": 1,
+      "position": 0,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "simpleDesc": 1801008952,
+      "normalConditions": [
+        [
+          104740190,
+          1254408749,
+          1283829370,
+          2
+        ]
+      ]
+    }
+  ],
+  "1047100": [
+    {
+      "ethnicGroup": 1047,
+      "targetPetId": 1047500,
+      "stage": 1,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "simpleDesc": 1671277472,
+      "normalConditions": [
+        [
+          104740090,
+          1170023873,
+          1600009564,
+          2
+        ]
+      ]
+    },
+    {
+      "ethnicGroup": 1047,
+      "targetPetId": 1047400,
+      "cameraPositionIndividual": [
+        -1.1,
+        -0.4,
+        -0.3
+      ],
+      "simpleDesc": 1337866046,
+      "itemConditions": [
+        {
+          "1": [
+            540007,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1659135555,
+        "4": 2,
+        "1": 900004
+      },
+      "normalConditions": [
+        [
+          104740090,
+          1796382382,
+          1637216465,
+          2
+        ]
+      ]
+    }
+  ],
+  "1045401": [
+    {
+      "ethnicGroup": 1045,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1045301": [
+    {
+      "ethnicGroup": 1045,
+      "stage": 2,
+      "groupId": 2,
+      "position": 0
+    }
+  ],
+  "1045300": [
+    {
+      "ethnicGroup": 1045,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1045101": [
+    {
+      "ethnicGroup": 1045,
+      "position": 0,
+      "grayConditionsExclude": [
+        100001
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        220001,
+        1201123121,
+        1324760635,
+        2,
+        [
+          8012,
+          8012
+        ]
+      ],
+      "normalConditions": [
+        [
+          104530190,
+          1846712826,
+          1664181352,
+          2
+        ],
+        {
+          "3": 1877385125,
+          "4": 2,
+          "1": 100001
+        }
+      ],
+      "simpleDesc": 1475775117,
+      "targetPetId": 1045301,
+      "stage": 1,
+      "groupId": 2,
+      "cameraPositionIndividual": [
+        -0.9,
+        -0.3,
+        0.4
+      ]
+    },
+    {
+      "ethnicGroup": 1045,
+      "targetPetId": 1045401,
+      "simpleDesc": 1817269569,
+      "grayConditionsExclude": [
+        100001
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1931324357,
+        "4": 2,
+        "1": 30310018
+      },
+      "normalConditions": [
+        [
+          104530190,
+          1357960972,
+          1186576563,
+          2
+        ],
+        {
+          "3": 1598836379,
+          "4": 2,
+          "1": 100001
+        },
+        [
+          104530091,
+          2069493253,
+          1362834966,
+          2
+        ]
+      ]
+    }
+  ],
+  "1044300": [
+    {
+      "ethnicGroup": 1044,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1032100": [
+    {
+      "ethnicGroup": 1032,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.4,
+        -0.1
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          103230090,
+          1117937962,
+          2124624113,
+          2
+        ],
+        [
+          103210001,
+          2080329650,
+          1413823214,
+          2
+        ]
+      ],
+      "simpleDesc": 1671517074,
+      "targetPetId": 1032300,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "ethnicGroup": 1032,
+      "targetPetId": 1032400,
+      "simpleDesc": 1907298078,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        },
+        {
+          "1": [
+            400020,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        200002,
+        1939608824,
+        1093197898,
+        2
+      ],
+      "normalConditions": [
+        [
+          103230090,
+          2084769490,
+          1154315825,
+          2
+        ],
+        [
+          103210002,
+          1908185672,
+          1891314563,
+          2
+        ]
+      ]
+    }
+  ],
+  "1033101": [
+    {
+      "ethnicGroup": 1033,
+      "position": 0,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          103330190,
+          1529015059,
+          1186893695,
+          2
+        ],
+        {
+          "3": 1323118468,
+          "4": 2,
+          "1": 130005
+        }
+      ],
+      "simpleDesc": 1796206957,
+      "targetPetId": 1033301,
+      "stage": 1,
+      "grayConditionsExclude": [
+        130005
+      ],
+      "cameraPositionIndividual": [
+        -1,
+        -0.3,
+        -0.2
+      ]
+    }
+  ],
+  "1033303": [
+    {
+      "ethnicGroup": 1033,
+      "stage": 2,
+      "groupId": 4,
+      "position": 1
+    }
+  ],
+  "1033302": [
+    {
+      "ethnicGroup": 1033,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1033301": [
+    {
+      "ethnicGroup": 1033,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1033300": [
+    {
+      "ethnicGroup": 1033,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1043100": [
+    {
+      "ethnicGroup": 1043,
+      "cameraPositionIndividual": [
+        -1.2,
+        -0.45,
+        -0.4
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          104330090,
+          1690626893,
+          2132155993,
+          2
+        ]
+      ],
+      "simpleDesc": 1580972795,
+      "targetPetId": 1043300,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1033100": [
+    {
+      "ethnicGroup": 1033,
+      "cameraPositionIndividual": [
+        -1,
+        -0.3,
+        -0.2
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          103330090,
+          1408215411,
+          1588680881,
+          2
+        ]
+      ],
+      "simpleDesc": 1906425860,
+      "targetPetId": 1033300,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1032400": [
+    {
+      "ethnicGroup": 1032,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1032303": [
+    {
+      "ethnicGroup": 1032,
+      "stage": 2,
+      "groupId": 2,
+      "position": 0
+    }
+  ],
+  "1032103": [
+    {
+      "ethnicGroup": 1032,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.4,
+        -0.1
+      ],
+      "groupId": 2,
+      "stage": 1,
+      "normalConditions": [
+        [
+          103230390,
+          1124246324,
+          1125420124,
+          2
+        ],
+        [
+          103210001,
+          1077202351,
+          1104331684,
+          2
+        ],
+        {
+          "3": 2133658188,
+          "4": 2,
+          "1": 30310023
+        }
+      ],
+      "simpleDesc": 1151366740,
+      "targetPetId": 1032303,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    }
+  ],
+  "1043300": [
+    {
+      "ethnicGroup": 1043,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1021106": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "grayConditionsExclude": [
+        120009
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1197010248,
+        "4": 2,
+        "1": 30310015
+      },
+      "normalConditions": [
+        [
+          102120690,
+          1446959947,
+          1080464993,
+          2
+        ],
+        {
+          "3": 2035649919,
+          "4": 2,
+          "1": 120009
+        }
+      ],
+      "simpleDesc": 1478095601,
+      "targetPetId": 1021206,
+      "stage": 1,
+      "groupId": 5,
+      "cameraPositionIndividual": [
+        -1,
+        -0.4,
+        -0.4
+      ]
+    }
+  ],
+  "1005100": [
+    {
+      "ethnicGroup": 1005,
+      "position": 0,
+      "groupId": 1,
+      "stage": 1,
+      "normalCondition0": {
+        "3": 1732166023,
+        "4": 2,
+        "1": 30310024
+      },
+      "normalConditions": [
+        [
+          100520090,
+          1809884103,
+          1084228505,
+          2
+        ]
+      ],
+      "simpleDesc": 1103153395,
+      "targetPetId": 1005200,
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.3,
+        -0.3
+      ]
+    }
+  ],
+  "1028500": [
+    {
+      "ethnicGroup": 1028,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1028300": [
+    {
+      "ethnicGroup": 1028,
+      "stage": 3,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1028200": [
+    {
+      "ethnicGroup": 1028,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 2015754243,
+        "4": 2,
+        "1": 30310016
+      },
+      "normalConditions": [
+        [
+          102830090,
+          1658065744,
+          1649873384,
+          2
+        ],
+        [
+          102820091,
+          1221992329,
+          2045045741,
+          2,
+          [
+            8013,
+            8013
+          ]
+        ]
+      ],
+      "simpleDesc": 1974097826,
+      "targetPetId": 1028300,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        1,
+        -0.2,
+        -0.4
+      ]
+    }
+  ],
+  "1026300": [
+    {
+      "ethnicGroup": 1026,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1026205": [
+    {
+      "ethnicGroup": 1026,
+      "stage": 2,
+      "groupId": 4,
+      "position": 1
+    }
+  ],
+  "1013300": [
+    {
+      "ethnicGroup": 1013,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1002300": [
+    {
+      "ethnicGroup": 2002,
+      "stage": 3,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1004102": [
+    {
+      "ethnicGroup": 1004,
+      "position": 0,
+      "groupId": 3,
+      "stage": 1,
+      "normalConditions": [
+        [
+          100420290,
+          1734104961,
+          1479657440,
+          2
+        ],
+        {
+          "3": 1614255861,
+          "4": 2,
+          "1": 100001
+        }
+      ],
+      "simpleDesc": 1819588824,
+      "targetPetId": 1004202,
+      "grayConditionsExclude": [
+        100001
+      ],
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.5,
+        -0.3
+      ]
+    }
+  ],
+  "1016300": [
+    {
+      "ethnicGroup": 1016,
+      "stage": 2,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1021203": [
+    {
+      "ethnicGroup": 1021,
+      "stage": 2,
+      "groupId": 4,
+      "position": 1
+    }
+  ],
+  "1021202": [
+    {
+      "ethnicGroup": 1021,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1029300": [
+    {
+      "ethnicGroup": 1029,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1021104": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "groupId": 7,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1833205285,
+        "4": 2,
+        "1": 30310015
+      },
+      "normalConditions": [
+        [
+          102120790,
+          1313351042,
+          1984515430,
+          2
+        ]
+      ],
+      "simpleDesc": 1284253163,
+      "targetPetId": 1021204,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1,
+        -0.4,
+        -0.4
+      ]
+    }
+  ],
+  "1029100": [
+    {
+      "ethnicGroup": 1029,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540007,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        900001,
+        1580830567,
+        2074906650,
+        2
+      ],
+      "normalConditions": [
+        [
+          102930090,
+          1734613276,
+          1316861576,
+          2
+        ]
+      ],
+      "simpleDesc": 1163976416,
+      "targetPetId": 1029300,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1.1,
+        -0.5,
+        -0.4
+      ]
+    }
+  ],
+  "1018400": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 1,
+      "position": 0
+    }
+  ],
+  "1002101": [
+    {
+      "ethnicGroup": 1002,
+      "position": 0,
+      "grayConditionsExclude": [
+        100001
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        975,
+        1295386122,
+        2019144837,
+        2
+      ],
+      "normalConditions": [
+        [
+          100260190,
+          1368115625,
+          1535552192,
+          2
+        ],
+        {
+          "3": 1171130879,
+          "4": 2,
+          "1": 100001
+        }
+      ],
+      "simpleDesc": 1255905475,
+      "targetPetId": 1002601,
+      "stage": 1,
+      "groupId": 2,
+      "cameraPositionIndividual": [
+        -1,
+        0,
+        0.8
+      ]
+    },
+    {
+      "simpleDesc": 1293977191,
+      "targetPetId": 1002701,
+      "grayConditionsExclude": [
+        100001
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          100270190,
+          1481639129,
+          2051865768,
+          2
+        ],
+        [
+          100270192,
+          1245705140,
+          1149234548,
+          2
+        ],
+        {
+          "3": 1337420288,
+          "4": 2,
+          "1": 100001
+        },
+        [
+          100270091,
+          1582351114,
+          1742044365,
+          2
+        ]
+      ]
+    }
+  ],
+  "1002102": [
+    {
+      "ethnicGroup": 1002,
+      "position": 0,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        975,
+        2042915446,
+        1479084405,
+        2
+      ],
+      "normalConditions": [
+        [
+          100260290,
+          1814156008,
+          1238943479,
+          2
+        ]
+      ],
+      "simpleDesc": 1400339430,
+      "targetPetId": 1002602,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1,
+        0,
+        0.8
+      ]
+    },
+    {
+      "simpleDesc": 2115074422,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "targetPetId": 1002702,
+      "normalConditions": [
+        [
+          100270290,
+          1295545684,
+          2071254537,
+          2
+        ],
+        [
+          100270292,
+          1152878584,
+          1946650174,
+          2
+        ],
+        [
+          100270091,
+          1789586310,
+          1326037123,
+          2
+        ]
+      ]
+    }
+  ],
+  "1018500": [
+    {
+      "ethnicGroup": 1018,
+      "stage": 3,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1002201": [
+    {
+      "ethnicGroup": 2002,
+      "position": 1,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540003,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": [
+        900002,
+        2045297655,
+        2040399156,
+        2
+      ],
+      "normalConditions": [
+        [
+          100230190,
+          1642566909,
+          1172015392,
+          2
+        ]
+      ],
+      "simpleDesc": 1225195509,
+      "targetPetId": 1002301,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        -2,
+        0.2,
+        -0.1
+      ]
+    }
+  ],
+  "1016101": [
+    {
+      "ethnicGroup": 1016,
+      "position": 0,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          101620190,
+          1885534124,
+          1514851085,
+          2
+        ],
+        {
+          "3": 2101141611,
+          "4": 2,
+          "1": 120004
+        }
+      ],
+      "simpleDesc": 1822425044,
+      "targetPetId": 1016201,
+      "stage": 1,
+      "grayConditionsExclude": [
+        120004
+      ],
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.1,
+        0.9
+      ]
+    }
+  ],
+  "1016103": [
+    {
+      "ethnicGroup": 1016,
+      "position": 0,
+      "groupId": 4,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          101620390,
+          1308045948,
+          1160817216,
+          2
+        ],
+        {
+          "3": 1298027564,
+          "4": 2,
+          "1": 130002
+        }
+      ],
+      "simpleDesc": 1994148095,
+      "targetPetId": 1016203,
+      "stage": 1,
+      "grayConditionsExclude": [
+        130002
+      ],
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.1,
+        0.9
+      ]
+    }
+  ],
+  "1016201": [
+    {
+      "ethnicGroup": 1016,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1004200": [
+    {
+      "ethnicGroup": 1004,
+      "cameraPositionIndividual": [
+        -1.97,
+        0,
+        -0.3
+      ],
+      "groupId": 1,
+      "stage": 2,
+      "normalConditions": [
+        [
+          100430090,
+          1348225526,
+          1626194579,
+          2
+        ]
+      ],
+      "simpleDesc": 1689924634,
+      "targetPetId": 1004300,
+      "position": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "simpleDesc": 1554437607,
+      "targetPetId": 1004500,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1846053092,
+        "4": 2,
+        "1": 30310010
+      },
+      "normalConditions": [
+        [
+          100450090,
+          1273412941,
+          1332858314,
+          2
+        ],
+        [
+          130009,
+          1905794829,
+          1146455205,
+          2,
+          [
+            8016,
+            8016
+          ]
+        ]
+      ]
+    }
+  ],
+  "1002301": [
+    {
+      "ethnicGroup": 2002,
+      "stage": 3,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1002401": [
+    {
+      "ethnicGroup": 2002,
+      "targetPetId": 1002201,
+      "simpleDesc": 1758760299,
+      "cameraPositionIndividual": [
+        -0.9,
+        -0.3,
+        -0.2
+      ],
+      "groupId": 2,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          100220190,
+          1662732794,
+          1749925618,
+          2
+        ]
+      ]
+    }
+  ],
+  "1020700": [
+    {
+      "ethnicGroup": 1020,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1013100": [
+    {
+      "ethnicGroup": 1013,
+      "targetPetId": 1013200,
+      "simpleDesc": 1850377568,
+      "cameraPositionIndividual": [
+        -0.87,
+        -0.2,
+        0
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          101320090,
+          1655749745,
+          2089460247,
+          2
+        ]
+      ]
+    }
+  ],
+  "1020100": [
+    {
+      "ethnicGroup": 1020,
+      "cameraPositionIndividual": [
+        -0.7,
+        0,
+        0.4
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          102030090,
+          1352120501,
+          1995271844,
+          2
+        ]
+      ],
+      "simpleDesc": 1962140686,
+      "targetPetId": 1020300,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "ethnicGroup": 1020,
+      "targetPetId": 1020700,
+      "simpleDesc": 1762171496,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1224359738,
+        "4": 2,
+        "1": 30310009
+      },
+      "normalConditions": [
+        [
+          102030090,
+          1997442765,
+          1876288957,
+          2
+        ],
+        [
+          102070091,
+          1225521731,
+          1548898830,
+          2,
+          [
+            8010,
+            8010
+          ]
+        ]
+      ]
+    }
+  ],
+  "1005300": [
+    {
+      "ethnicGroup": 1005,
+      "stage": 3,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1002601": [
+    {
+      "ethnicGroup": 1002,
+      "stage": 2,
+      "groupId": 2,
+      "position": 0
+    }
+  ],
+  "1002602": [
+    {
+      "ethnicGroup": 1002,
+      "stage": 2,
+      "groupId": 3,
+      "position": 0
+    }
+  ],
+  "1001100": [
+    {
+      "ethnicGroup": 1001,
+      "position": 0,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1963448426,
+        "4": 2,
+        "1": 30310007
+      },
+      "normalConditions": [
+        [
+          100120090,
+          1878798470,
+          1185055618,
+          2
+        ]
+      ],
+      "simpleDesc": 1917264918,
+      "targetPetId": 1001200,
+      "stage": 1,
+      "cameraPositionIndividual": [
+        -1.25,
+        -0.3,
+        0
+      ]
+    }
+  ],
+  "1002701": [
+    {
+      "ethnicGroup": 1002,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1002702": [
+    {
+      "ethnicGroup": 1002,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1017300": [
+    {
+      "ethnicGroup": 1017,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1003101": [
+    {
+      "ethnicGroup": 1003,
+      "position": 0,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          100320190,
+          2005325475,
+          1345154144,
+          2
+        ],
+        [
+          100320101,
+          1922106181,
+          1389683147,
+          2
+        ],
+        {
+          "3": 2046179525,
+          "4": 2,
+          "1": 120001
+        }
+      ],
+      "simpleDesc": 2145786537,
+      "targetPetId": 1003201,
+      "stage": 1,
+      "grayConditionsExclude": [
+        120001
+      ],
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.3,
+        -0.3
+      ]
+    }
+  ],
+  "1003103": [
+    {
+      "ethnicGroup": 1003,
+      "position": 0,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540011,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          100320390,
+          1749374573,
+          1384036954,
+          2
+        ],
+        [
+          100320301,
+          1441295884,
+          1368265722,
+          2
+        ],
+        {
+          "3": 1749556566,
+          "4": 2,
+          "1": 120003
+        }
+      ],
+      "simpleDesc": 1439067748,
+      "targetPetId": 1003203,
+      "stage": 1,
+      "grayConditionsExclude": [
+        120003
+      ],
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.3,
+        -0.3
+      ]
+    }
+  ],
+  "1002700": [
+    {
+      "ethnicGroup": 1002,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1003201": [
+    {
+      "ethnicGroup": 1003,
+      "stage": 2,
+      "groupId": 2,
+      "position": 1
+    }
+  ],
+  "1019100": [
+    {
+      "ethnicGroup": 1019,
+      "targetPetId": 1019200,
+      "simpleDesc": 1910259230,
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.6,
+        -0.8
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "position": 0,
+      "normalConditions": [
+        [
+          101920090,
+          1798000200,
+          1522681983,
+          2
+        ]
+      ]
+    }
+  ],
+  "1003203": [
+    {
+      "ethnicGroup": 1003,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1019200": [
+    {
+      "ethnicGroup": 1019,
+      "position": 1,
+      "groupId": 1,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1394475027,
+        "4": 2,
+        "1": 611
+      },
+      "normalConditions": [
+        [
+          101940090,
+          1281831824,
+          1081058707,
+          2
+        ]
+      ],
+      "simpleDesc": 1851079900,
+      "targetPetId": 1019400,
+      "stage": 2,
+      "cameraPositionIndividual": [
+        -1.86999998,
+        -0.3,
+        -1.4
+      ]
+    }
+  ],
+  "1023202": [
+    {
+      "ethnicGroup": 1023,
+      "stage": 2,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1005500": [
+    {
+      "ethnicGroup": 1005,
+      "stage": 3,
+      "groupId": 1,
+      "position": 2
+    }
+  ],
+  "1004201": [
+    {
+      "ethnicGroup": 1004,
+      "position": 1,
+      "groupId": 2,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          100430190,
+          1700451714,
+          1657124660,
+          2
+        ],
+        {
+          "3": 2075025188,
+          "4": 2,
+          "1": 120004
+        }
+      ],
+      "simpleDesc": 2022194744,
+      "targetPetId": 1004301,
+      "stage": 2,
+      "grayConditionsExclude": [
+        120004
+      ],
+      "cameraPositionIndividual": [
+        -1.97,
+        0,
+        -0.3
+      ]
+    }
+  ],
+  "1004202": [
+    {
+      "ethnicGroup": 1004,
+      "position": 1,
+      "groupId": 3,
+      "itemConditions": [
+        {
+          "1": [
+            540002,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalConditions": [
+        [
+          100430290,
+          1327762541,
+          2098893329,
+          2
+        ],
+        {
+          "3": 2089551559,
+          "4": 2,
+          "1": 100001
+        }
+      ],
+      "simpleDesc": 1683493171,
+      "targetPetId": 1004302,
+      "stage": 2,
+      "grayConditionsExclude": [
+        100001
+      ],
+      "cameraPositionIndividual": [
+        -1.97,
+        0,
+        -0.3
+      ]
+    }
+  ],
+  "1004302": [
+    {
+      "ethnicGroup": 1004,
+      "stage": 3,
+      "groupId": 3,
+      "position": 1
+    }
+  ],
+  "1021102": [
+    {
+      "ethnicGroup": 1021,
+      "position": 0,
+      "grayConditionsExclude": [
+        130004
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540010,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1701794934,
+        "4": 2,
+        "1": 30310015
+      },
+      "normalConditions": [
+        [
+          102120290,
+          1983471369,
+          1664291710,
+          2
+        ],
+        {
+          "3": 1820256775,
+          "4": 2,
+          "1": 130004
+        }
+      ],
+      "simpleDesc": 1354056091,
+      "targetPetId": 1021202,
+      "stage": 1,
+      "groupId": 3,
+      "cameraPositionIndividual": [
+        -1,
+        -0.4,
+        -0.4
+      ]
+    }
+  ],
+  "1005101": [
+    {
+      "ethnicGroup": 1005,
+      "position": 0,
+      "groupId": 2,
+      "stage": 1,
+      "normalConditions": [
+        [
+          100520190,
+          1535708546,
+          1417603511,
+          2
+        ],
+        {
+          "3": 1211593706,
+          "4": 2,
+          "1": 120005
+        }
+      ],
+      "simpleDesc": 2009214408,
+      "targetPetId": 1005201,
+      "grayConditionsExclude": [
+        120005
+      ],
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.3,
+        -0.3
+      ]
+    }
+  ],
+  "1005104": [
+    {
+      "ethnicGroup": 1005,
+      "position": 0,
+      "groupId": 3,
+      "stage": 1,
+      "normalConditions": [
+        [
+          100520490,
+          1600989548,
+          1289750004,
+          2
+        ],
+        {
+          "3": 1566684526,
+          "4": 2,
+          "1": 130001
+        }
+      ],
+      "simpleDesc": 1765944849,
+      "targetPetId": 1005204,
+      "grayConditionsExclude": [
+        130001
+      ],
+      "cameraPositionIndividual": [
+        -0.770000017,
+        -0.3,
+        -0.3
+      ]
+    }
+  ],
+  "1005201": [
+    {
+      "ethnicGroup": 1005,
+      "position": 1,
+      "grayConditionsExclude": [
+        120005
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1622311224,
+        "4": 2,
+        "1": 30310002
+      },
+      "normalConditions": [
+        [
+          100530190,
+          1723810555,
+          1238760022,
+          2
+        ],
+        {
+          "3": 2042318689,
+          "4": 2,
+          "1": 120005
+        }
+      ],
+      "simpleDesc": 1501086171,
+      "targetPetId": 1005301,
+      "stage": 2,
+      "groupId": 2,
+      "cameraPositionIndividual": [
+        -1.97,
+        0,
+        -0.3
+      ]
+    }
+  ],
+  "1005204": [
+    {
+      "ethnicGroup": 1005,
+      "position": 1,
+      "grayConditionsExclude": [
+        130001
+      ],
+      "itemConditions": [
+        {
+          "1": [
+            540001,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1215728707,
+        "4": 2,
+        "1": 30310002
+      },
+      "normalConditions": [
+        [
+          100530490,
+          1593860642,
+          1854233129,
+          2
+        ],
+        {
+          "3": 1325677353,
+          "4": 2,
+          "1": 130001
+        }
+      ],
+      "simpleDesc": 1678688095,
+      "targetPetId": 1005304,
+      "stage": 2,
+      "groupId": 3,
+      "cameraPositionIndividual": [
+        -1.97,
+        0,
+        -0.3
+      ]
+    }
+  ],
+  "1005301": [
+    {
+      "ethnicGroup": 1005,
+      "stage": 3,
+      "groupId": 2,
+      "position": 2
+    }
+  ],
+  "1016100": [
+    {
+      "ethnicGroup": 1016,
+      "cameraPositionIndividual": [
+        -0.7,
+        -0.1,
+        0.9
+      ],
+      "groupId": 1,
+      "stage": 1,
+      "normalConditions": [
+        [
+          101620090,
+          1149302322,
+          1386946386,
+          2
+        ]
+      ],
+      "simpleDesc": 1627336807,
+      "targetPetId": 1016200,
+      "position": 0,
+      "itemConditions": [
+        {
+          "1": [
+            540008,
+            1
+          ],
+          "4": 2
+        }
+      ]
+    },
+    {
+      "simpleDesc": 1216735288,
+      "targetPetId": 1016300,
+      "itemConditions": [
+        {
+          "1": [
+            540006,
+            1
+          ],
+          "4": 2
+        }
+      ],
+      "normalCondition0": {
+        "3": 1263954783,
+        "4": 2,
+        "1": 30310005
+      },
+      "normalConditions": [
+        [
+          101630090,
+          1966516500,
+          1952033334,
+          2
+        ],
+        [
+          101610001,
+          1894643533,
+          1285170510,
+          2
+        ]
+      ]
+    }
+  ],
+  "1001200": [
+    {
+      "ethnicGroup": 1001,
+      "stage": 2,
+      "groupId": 1,
+      "position": 1
+    }
+  ],
+  "1005304": [
+    {
+      "ethnicGroup": 1005,
+      "stage": 3,
+      "groupId": 3,
+      "position": 2
+    }
+  ],
+  "1004300": [
+    {
+      "ethnicGroup": 1004,
+      "stage": 3,
+      "groupId": 1,
+      "position": 1
+    }
+  ]
+}

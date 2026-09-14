@@ -1,0 +1,193 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "3e08b490-5dd6-42a7-80a7-01cdc2b780cb",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 37
+    },
+    "4": {
+      "UID": "5a006872-5d3f-4000-932a-470d9b6c10b5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          30,
+          2,
+          9,
+          10
+        ]
+      },
+      "NodeID": 4
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 38,
+      "UID": "63e582d9-f470-4276-8db8-9936871afa4e"
+    },
+    "11": {
+      "name": "setNextComboAbilityId",
+      "UID": "46de25e1-aab3-4518-92bc-e3dbac54eef7",
+      "target": "CASTER",
+      "NodeID": 11,
+      "abilityId": 0
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "1c887f7e-a6c7-463a-a63a-af72c7230cec",
+      "target": "CASTER",
+      "NodeID": 10
+    },
+    "13": {
+      "UID": "da02b5eb-5f49-4a9a-9a5b-57ae77219250",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          32,
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.56,
+      "NodeID": 35,
+      "UID": "907d9157-1243-4d43-865d-313cdff460a1"
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 28,
+      "UID": "e218a06e-6b27-4f4d-9a73-e1818be4d7af"
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b0f33a5e-157b-4eb3-8001-3636c1a5a1c4",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10081_attack_h",
+      "NodeID": 27
+    },
+    "17": {
+      "offsetXYZ": [
+        0,
+        1.5,
+        0.2
+      ],
+      "templateId": 10810001001,
+      "name": "createProjectile",
+      "UID": "8953393c-0921-49fb-9d23-cdfc7cefc340",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 17,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c80704c9-95ed-41d0-b7d7-a11642b6720e",
+      "target": "CASTER",
+      "NodeID": 9,
+      "animId": "Attack02"
+    },
+    "30": {
+      "UID": "8f2ee418-ca33-444f-87fc-cd805336d2cc",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "UID": "653b3603-2e58-430d-b2a6-ee17843d1819",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 32
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.48,
+      "NodeID": 19,
+      "UID": "cd92795b-dc32-43b9-835d-f70f6399fa0b"
+    },
+    "34": {
+      "UID": "d41fae38-7899-43a2-b5c8-f6c2f98718f2",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 1,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 34
+    },
+    "2": {
+      "name": "setNextComboAbilityId",
+      "UID": "1aacbc6f-0904-492f-b145-5251a880ea90",
+      "target": "CASTER",
+      "NodeID": 2,
+      "abilityId": 10810002
+    }
+  },
+  "BPName": "ability_10810001",
+  "NodeID": 6,
+  "UID": "f80fbc16-1933-4e82-b08a-34eb04a8db4c",
+  "eventIds": [
+    4,
+    13,
+    19,
+    35,
+    38,
+    28
+  ],
+  "layer": "Base",
+  "length": 2.3
+}

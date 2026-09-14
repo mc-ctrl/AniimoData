@@ -1,0 +1,169 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 27,
+      "UID": "5f709b24-0841-46be-aeba-df11195d1820"
+    },
+    "39": {
+      "offsetXYZ": [
+        -2,
+        0,
+        -1
+      ],
+      "templateId": 2105512203,
+      "name": "createProjectile",
+      "UID": "2a6d2938-ad8a-4202-9322-a6d29dab952d",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": [
+        -0.1,
+        1,
+        999
+      ],
+      "NodeID": 39,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2105512201,
+      "name": "createProjectile",
+      "UID": "74864179-64ef-4457-a72d-1dbb1eeac590",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": [
+        -0.1,
+        1,
+        999
+      ],
+      "NodeID": 9,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "53": {
+      "action": {
+        "actionIds": [
+          51,
+          65
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 53,
+      "UID": "57e56e61-48d0-43e3-8084-b51f811ab87c"
+    },
+    "51": {
+      "offsetXYZ": [
+        4,
+        0,
+        -2
+      ],
+      "templateId": 2105512204,
+      "name": "createProjectile",
+      "UID": "a8d35632-b173-411d-8d6b-c1c8ba3f9744",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": [
+        -0.1,
+        1,
+        999
+      ],
+      "NodeID": 51,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "11": {
+      "UID": "49168b69-593e-49e2-94ef-4d4fd2536536",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 11
+    },
+    "25": {
+      "offsetXYZ": [
+        2,
+        0,
+        -1
+      ],
+      "templateId": 2105512202,
+      "name": "createProjectile",
+      "UID": "0ce20e15-1ca6-4371-b740-a97dde3c4478",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": [
+        -0.1,
+        1,
+        999
+      ],
+      "NodeID": 25,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "65": {
+      "offsetXYZ": [
+        -4,
+        0,
+        -2
+      ],
+      "templateId": 2105512205,
+      "name": "createProjectile",
+      "UID": "99742cac-50d5-4507-8ca0-2d428e1c7342",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": [
+        -0.1,
+        1,
+        999
+      ],
+      "NodeID": 65,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "BPName": "timeline_2105512",
+  "NodeID": 1,
+  "UID": "d62a301e-d5d0-4d37-bc93-e12a81c597e0",
+  "eventIds": [
+    11,
+    27,
+    53
+  ],
+  "layer": "Base",
+  "length": 8
+}

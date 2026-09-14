@@ -1,0 +1,43 @@
+{
+  "BPName": "ability_14530200",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10800250,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14530200001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Drift"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10453_Skill_Drift",
+    "Eff_Parmon_10453_Skill_Drift02",
+    "Eff_Parmon_10453_Skill_Drift_BallB",
+    "Eff_Parmon_10453_Skill_Drift_BallA",
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Buff_Attack_Arrow_Up",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_L_Skill",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_R_Skill",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_L_Skill_Blue",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_R_Skill_Blue"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

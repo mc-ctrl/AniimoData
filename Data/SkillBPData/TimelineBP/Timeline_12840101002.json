@@ -1,0 +1,104 @@
+{
+  "nodeMap": {
+    "22": {
+      "actionIds": [
+        20,
+        24
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "22f846b7-e92b-41a4-8d09-a43ed410da7a",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 23,
+      "UID": "4cf6eeff-1ada-4776-a3a6-4f26740e6219"
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9e7bf68e-3cc5-4502-bb95-edaec97ad460",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "10": {
+      "UID": "a80d5e72-f560-4873-8206-cba660b47489",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "72": {
+      "timelineId": 12840101003,
+      "name": "jumpToNextTimeline",
+      "UID": "6b11723b-acf6-4757-9040-ba16ce03be97",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "25": {
+      "name": "isActorType",
+      "UID": "c1cb7159-a30a-4c40-8018-3a0fe9d8c45d",
+      "target": "OWNER",
+      "NodeID": 25,
+      "actorType": 3
+    },
+    "8": {
+      "timelineId": 12840101001,
+      "name": "jumpToNextTimeline",
+      "UID": "7b390220-3253-4fac-bc55-842fcb048d3e",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        72
+      ],
+      "conditionActionIds": [
+        119
+      ],
+      "UID": "1390f250-7152-4d37-a23f-aa114466da82",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "20": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "d7fb721a-d212-434e-b319-d2dc71090b0a",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 20
+    },
+    "119": {
+      "name": "isInBurrow",
+      "UID": "e20a0c7f-5992-4b48-a995-4be46a72b722",
+      "target": "CASTER",
+      "NodeID": 119,
+      "not": false
+    }
+  },
+  "BPName": "ability_12840101",
+  "NodeID": 12,
+  "UID": "13ae237c-cea1-49af-9637-40a6dac2894e",
+  "eventIds": [
+    10,
+    23
+  ],
+  "layer": "Base",
+  "length": 2
+}

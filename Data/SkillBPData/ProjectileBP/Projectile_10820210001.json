@@ -1,0 +1,161 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 11,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_02",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxHitNum": 0,
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    13,
+    18
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "22": {
+      "target": "TARGET",
+      "duration": 4,
+      "buffId": 1100101,
+      "NodeID": 22,
+      "UID": "fa07b2b5-7b7c-4d51-8434-52e3035a4126",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 11,
+      "NodeID": 13,
+      "UID": "1e7444b3-b571-472b-9731-b42873513cfd",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        11,
+        24
+      ]
+    },
+    "24": {
+      "actionIds": [
+        22,
+        36
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "2f5ca9c9-2903-47d7-8103-6674ff1956b4",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "25": {
+      "UID": "489c0fc3-69e4-438a-a689-a95161abf97f",
+      "randomPercent": 50,
+      "name": "isRandom",
+      "NodeID": 25
+    },
+    "38": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 10054,
+      "NodeID": 38,
+      "UID": "27d815a5-0140-4309-9d86-407cd9f2fc26",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "1bb97897-c5ef-40ee-975c-b44aab97fdd4",
+      "effectId": "Eff_Parmon_10011_Skill_Charm_Creation",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "37": {
+      "buffId": 9108101,
+      "name": "hasBuff",
+      "UID": "26786592-5dfe-453c-8bd3-1eb9e79f28fb",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "11": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 5002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002
+      },
+      "UID": "1b7cbd9b-aa8b-46ee-867b-4bd1ee5b9d2d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 11
+    },
+    "34": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 2108101,
+      "NodeID": 34,
+      "UID": "64a95722-7343-415c-b02d-029774eb101c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "36": {
+      "actionIds": [
+        34,
+        38
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "ac52196d-75cd-4058-8682-fbea197c0ec5",
+      "name": "doActionsByConditions",
+      "NodeID": 36
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_10820210",
+  "defaultHitSoundType": "h",
+  "impulseId": 5002,
+  "acceleration": 0
+}

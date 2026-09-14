@@ -1,0 +1,74 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116108",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "b52eef17-63a8-4f61-89f7-7e3c997683c8",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "f34a2073-751c-4f60-98bf-856c3fd86d08",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 4
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "d6edca23-4fe7-4209-b1d0-a341e667d36f",
+      "cd": 1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "6": {
+      "UID": "300cae59-f5e1-4307-b9c3-8987f6b5376b",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "7": {
+      "calcId": 9116108,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "a98d19cb-19ca-402c-a430-abc4059c93ea",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "value": {
+        "calcId": 9116108,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "a98d19cb-19ca-402c-a430-abc4059c93ea",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "2f74d32e-69df-4bef-9c1a-ec426c5aa9e9",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

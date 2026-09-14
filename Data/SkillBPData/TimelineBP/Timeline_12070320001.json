@@ -1,0 +1,323 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "6f52ca36-1251-4a1a-af9d-a53696ab5923",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "56cd3fae-e83b-4afd-948b-642f924fa1cb",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 38
+    },
+    "39": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "e3689d5b-d2cd-406b-8ee2-760c94bf78f4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        41
+      ],
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "a4bac5f8-278d-4abb-978c-d91764b1b704",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "NodeID": 40
+    },
+    "41": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "5bceaa8d-2c77-4d07-b41d-28e3ca038eb8",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 41
+    },
+    "42": {
+      "UID": "8fd26c86-9432-4688-8468-53fe1edbe281",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 42
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "86f982ac-4d70-4b4b-a5ee-fed53f550133",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10207_Skill_Summonbomb",
+      "NodeID": 35
+    },
+    "31": {
+      "offsetXYZ": [
+        -1,
+        0.4,
+        2
+      ],
+      "templateId": 80000002,
+      "name": "createEntity",
+      "UID": "29c91e64-8df6-4cc3-bc03-2e9328fa3c81",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "pos": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "setLevel": true,
+      "NodeID": 31
+    },
+    "37": {
+      "UID": "c7049322-93e9-4e01-a1c4-45ab18214156",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "NodeID": 37
+    },
+    "23": {
+      "UID": "7171ebf1-90b1-4609-806f-c0db624dbd07",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21,
+          35
+        ]
+      },
+      "NodeID": 23
+    },
+    "20": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d3a5252f-5d47-4375-b694-74e543df2397",
+      "target": "CASTER",
+      "NodeID": 20,
+      "animId": "Skill_SummonBomb_Rooted"
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "31163e37-2f40-4a0b-801f-1c18f2fc4638",
+      "effectId": "Eff_Parmon_10207_Skill_SummonBomb_Release01",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2203efdb-ff4e-421e-82b0-475929429677",
+      "target": "CASTER",
+      "NodeID": 3,
+      "animId": "Skill_SummonBomb"
+    },
+    "4": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "54abd9b0-6e4b-403b-a4a6-720c0374b724",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "da08eb5d-a601-4ccf-8430-1f0dc70aee4c",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "fd51c511-f3e7-47c1-9c95-6236d7d096ba",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "214b4c16-7763-43d6-8ca5-07d89ed4e69b",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 15,
+      "UID": "3ef8d312-c58a-4a51-9f47-e08b99c2d94a"
+    },
+    "17": {
+      "UID": "01e8b34e-e4ea-4608-b6e3-d643002d3cd3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 17
+    },
+    "26": {
+      "offsetXYZ": [
+        1,
+        0.4,
+        2
+      ],
+      "templateId": 80000002,
+      "name": "createEntity",
+      "UID": "0125dd09-b36a-4082-9253-9fcca1e14194",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "pos": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "setLevel": true,
+      "NodeID": 26
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          34,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.37,
+      "NodeID": 33,
+      "UID": "a2ca5578-222f-4954-ae8e-90c5017169bb"
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          29,
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.67,
+      "NodeID": 28,
+      "UID": "5d535755-3131-49e4-973c-2c61494e36b2"
+    },
+    "29": {
+      "offsetXYZ": [
+        1,
+        0.4,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1fde18c4-a289-41ca-a25c-12b84604166b",
+      "effectId": "Eff_Parmon_10207_Skill_SummonBomb_Release02",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "a597829f-e3c9-4a9a-b35c-37bbdbc05b3b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 18
+    },
+    "12": {
+      "UID": "9befcbf7-cc67-4cd5-891d-9ff6f80d5d05",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10,
+          24
+        ]
+      },
+      "NodeID": 12
+    },
+    "19": {
+      "isNot": false,
+      "stateName": "TAKEROOT",
+      "isParentState": false,
+      "NodeID": 19,
+      "UID": "e0327a2c-2bc5-45c7-84a2-b9772d338ff6",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "34": {
+      "offsetXYZ": [
+        -1,
+        0.4,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ca7b4e8d-fb97-4572-983b-2baa4b95bb3e",
+      "effectId": "Eff_Parmon_10207_Skill_SummonBomb_Release02",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0ff04f93-1a08-4a36-bfec-1d8920e3b88c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10207_Skill_Summonbomb",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_12070320",
+  "NodeID": 7,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    12,
+    5,
+    18,
+    15,
+    23,
+    28,
+    33,
+    37,
+    40
+  ],
+  "layer": "Base",
+  "length": 3.38
+}

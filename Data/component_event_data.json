@@ -1,0 +1,29 @@
+{
+  "mockBattle": [
+    10000005,
+    10000009,
+    10000011
+  ],
+  "officialGroup": [
+    10000008
+  ],
+  "petResearch": [
+    10000001,
+    10000007
+  ],
+  "petSave": [
+    10000003
+  ],
+  "reunion": [
+    10000004
+  ],
+  "weekWish": [
+    10000002
+  ],
+  "fracture": [
+    10000006
+  ],
+  "leylineTreeGuide": [
+    10000010
+  ]
+}

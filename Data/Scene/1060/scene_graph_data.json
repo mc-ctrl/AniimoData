@@ -1,0 +1,31 @@
+{
+  "47743805": {
+    "graphId": 47743805,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "7b4f62e9c14dd58b98252987b7cc7dc6",
+    "nodes": {
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "FinishDungeonNode",
+        "uid": "12dfbfab-87ce-494f-ac82-06b0e5751435"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "88819e5b-5a0f-4931-a55c-a5e9cae1ea60"
+      }
+    }
+  }
+}

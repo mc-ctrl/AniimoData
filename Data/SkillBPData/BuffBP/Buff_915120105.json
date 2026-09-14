@@ -1,0 +1,12 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915120105",
+  "name": "琉璃技能-火焰炮强化技能切换",
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "isUnSummonFreeze": false
+}

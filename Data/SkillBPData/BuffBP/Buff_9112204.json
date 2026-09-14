@@ -1,0 +1,89 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9112204",
+  "NodeID": 1,
+  "UID": "8c9497fb-57e7-46ee-9dfc-f6eea6990fa9",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "ce587b86-08e4-4cd3-a136-2b4505cdec1e",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "17": {
+      "calcInfo": {
+        "add_cur_ep_fix": 30
+      },
+      "calcInfoByLuaConfig": {
+        "id": 9112204,
+        "type": 1,
+        "add_cur_ep_fix": "param0"
+      },
+      "UID": "b26f7aa5-65fb-458a-b0ea-be42f8efcef0",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 17
+    },
+    "14": {
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "cda55086-f0cd-4a56-9fe6-7715e2d2bd77",
+      "name": "doActionsByConditions",
+      "NodeID": 14,
+      "elseActionIds": [
+        17,
+        20
+      ]
+    },
+    "23": {
+      "UID": "e8d85378-f3b0-4101-aa2f-3c9b16950a02",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 23
+    },
+    "13": {
+      "rValue": 19,
+      "name": "greater",
+      "UID": "e1360377-845e-4aa5-a74a-a4bc28dd7fa8",
+      "NodeID": 13,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "a6e65b98-f64a-4e81-86d6-cd371e15146e",
+        "target": "OWNER",
+        "NodeID": 12,
+        "attributeName": "ep_cur"
+      }
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5d157736-0f98-4abc-91db-8472e6c03523",
+      "effectId": "Eff_Parmon_10122_Skill_Superpower",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        22
+      ],
+      "name": "registerAbilityDisableReturnEvent",
+      "UID": "4e4da5ab-daef-4a2b-ab8d-7aa317a402b0",
+      "target": "OWNER",
+      "NodeID": 21
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    21
+  ]
+}

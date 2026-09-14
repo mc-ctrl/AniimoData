@@ -1,0 +1,62 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2165302",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "10e3b8b6-307c-47d0-b958-f68c3e8631ed",
+      "effectId": "Eff_Buff_Movement_Arrow_Down",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5ea57b73-40ba-4342-829c-97cc0aad94a1",
+      "effectId": "Eff_Parmon_10653_Skill_DripTrampoline_Ground_Buff",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "39eb169a-d12f-426f-b182-a1b58f3f0dd7",
+      "effectId": "Eff_Parmon_10653_Skill_DripTrampoline_Ground_Buff",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "657a4136-3317-4729-a8ac-700bf1888792",
+      "effectId": "Eff_Buff_Movement_Arrow_Down",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "speed_ratio_run_v": "param0",
+    "speed_ratio_sprint_v": "param0",
+    "sidewalkspeed_cur": "param0",
+    "runspeed_cur": "param0",
+    "speed_ratio_walk_v": "param0",
+    "id": 2165302,
+    "walkbackspeed_cur": "param0",
+    "type": 1,
+    "walkspeed_cur": "param0"
+  },
+  "onBuffDestroyIds": [
+    5,
+    9
+  ],
+  "onBuffStartIds": [
+    3,
+    8
+  ]
+}

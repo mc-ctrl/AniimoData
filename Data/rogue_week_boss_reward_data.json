@@ -1,0 +1,32 @@
+[
+  {
+    "startPoint": 1,
+    "rangeId": 77001,
+    "rewardIcon": "77001"
+  },
+  {
+    "startPoint": 2,
+    "rangeId": 77002,
+    "rewardIcon": "77002"
+  },
+  {
+    "startPoint": 3,
+    "rangeId": 77003,
+    "rewardIcon": "77003"
+  },
+  {
+    "startPoint": 4,
+    "rangeId": 77004,
+    "rewardIcon": "77004"
+  },
+  {
+    "startPoint": 5,
+    "rangeId": 77005,
+    "rewardIcon": "77005"
+  },
+  {
+    "startPoint": 6,
+    "rangeId": 77006,
+    "rewardIcon": "77006"
+  }
+]

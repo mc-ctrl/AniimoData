@@ -1,0 +1,15 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104513",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Common_Skill_Grass_Shield_Loop"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "nodeMap": {}
+}

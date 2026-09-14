@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915130101",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "stopSoundStr",
+      "UID": "bacaa562-e6d4-46c4-a26d-ba8c6f2f73da",
+      "soundId": "SFX_Combat_10513_Skill_Bullet_Buff",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "6c0ea8b5-e339-47d4-880d-f48937d8412c",
+      "effectId": "Eff_Parmon_10513_Skill_Buff_Fire01",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9f5eb866-4537-4968-9d95-c4a79bf15e98",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10513_Skill_Bullet_Buff",
+      "NodeID": 7
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4c1f73f1-e0ad-4068-842a-bde7224b4f04",
+      "effectId": "Eff_Parmon_10513_Skill_Buff_Fire01",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "name": "火焰标记",
+  "onBuffDestroyIds": [
+    4,
+    8
+  ],
+  "onBuffStartIds": [
+    2,
+    7
+  ]
+}

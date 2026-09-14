@@ -1,0 +1,216 @@
+{
+  "duration": 5,
+  "calcResultNodeId": 22,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "ignoreAbilityElement": true,
+  "gravityRatio": 2,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 0,
+  "effectId": "Eff_Parmon_10513_Skill_Bullet_Bullet01",
+  "relation": 2,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    10,
+    43,
+    29,
+    44,
+    63,
+    62,
+    60
+  ],
+  "hasAttackDataInOnProjectileHit": false,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "22": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 15130100,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "b4f18aea-e0d2-42cd-b7de-3508d2d16993",
+      "target": "TARGET",
+      "NodeID": 22,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 5,
+        "hitSoundStr": "parmon_starmage_skill_charm_hit_Psychic",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "63": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 15130100006,
+      "name": "createProjectile",
+      "UID": "ed16a05a-b28c-474c-8103-bfecb7664cc8",
+      "offsetRotation": [
+        90,
+        0,
+        0
+      ],
+      "pos": "PROJECTILE",
+      "projectileType": "Parabola3d",
+      "NodeID": 63,
+      "targetPos": {
+        "key": "TargetPos1",
+        "name": "getCacheVal",
+        "UID": "c6aeab01-5f39-4b7d-9114-8006d34b3b3c",
+        "target": "CASTER",
+        "NodeID": 83
+      }
+    },
+    "10": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 22,
+      "NodeID": 10,
+      "UID": "bed2db78-c379-4ff9-ae2d-80c5ee49f0ec",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        22,
+        47
+      ]
+    },
+    "47": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 915130101,
+      "NodeID": 47,
+      "UID": "70744fcf-938f-478a-9573-24204f100cde",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "acf4ab48-1de6-4d3c-a630-e770e95f65ab",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10513_Skill_Bullet_Bomb01",
+      "NodeID": 44
+    },
+    "29": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "a86554a5-9a05-47a2-b24d-ffe0fcdc6a4a",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "60": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 15130100004,
+      "name": "createProjectile",
+      "UID": "34826fc0-35ef-4b59-a9cc-d6c76719085c",
+      "offsetRotation": [
+        90,
+        0,
+        0
+      ],
+      "pos": "PROJECTILE",
+      "projectileType": "Parabola3d",
+      "NodeID": 60,
+      "targetPos": {
+        "key": "TargetPos3",
+        "name": "getCacheVal",
+        "UID": "1386154f-a9e2-40c2-b82f-7c300164f939",
+        "target": "CASTER",
+        "NodeID": 85
+      }
+    },
+    "43": {
+      "pos": {
+        "UID": "ffd07547-e1d3-47f2-8e82-eea0e68e79d3",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "rotation": "PROJECTILE",
+          "radius": 0,
+          "NodeID": 41,
+          "UID": "2363efb6-cf22-42e2-bfbb-5b2178606f64",
+          "angle": 0,
+          "center": "PROJECTILE",
+          "name": "getRotatedPoint"
+        },
+        "NodeID": 42
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "db6de07e-31a5-4824-af55-bdd9a925bf3a",
+      "effectId": "Eff_Parmon_10513_Skill_Bullet_Bomb01",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "62": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 15130100005,
+      "name": "createProjectile",
+      "UID": "86e29656-3ede-4d15-9a59-a6c6eb4e74f2",
+      "offsetRotation": [
+        90,
+        0,
+        0
+      ],
+      "pos": "PROJECTILE",
+      "projectileType": "Parabola3d",
+      "NodeID": 62,
+      "targetPos": {
+        "key": "TargetPos2",
+        "name": "getCacheVal",
+        "UID": "081b8766-a9b4-41c8-b2fd-9e1f92779cd7",
+        "target": "CASTER",
+        "NodeID": 84
+      }
+    }
+  },
+  "tickInterval": 0.05,
+  "BPName": "ability_15130100",
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

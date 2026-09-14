@@ -1,0 +1,26 @@
+{
+  "3": {
+    "slotName": 1169966694,
+    "slotIcon": "$UI_Img_GrabEggs_Robot_Weapon_Chip1.png"
+  },
+  "13": {
+    "slotName": 1542453686,
+    "slotIcon": "$UI_Img_GrabEggs_Robot_Armor_Chip3.png"
+  },
+  "12": {
+    "slotName": 1271005158,
+    "slotIcon": "$UI_Img_GrabEggs_Robot_Armor_Chip1.png"
+  },
+  "11": {
+    "slotName": 1822410648,
+    "slotIcon": "$UI_Img_GrabEggs_Robot_Armor_Chip2.png"
+  },
+  "1": {
+    "slotName": 1916465231,
+    "slotIcon": "$UI_Img_GrabEggs_Robot_Weapon_Chip3.png"
+  },
+  "2": {
+    "slotName": 1455740007,
+    "slotIcon": "$UI_Img_GrabEggs_Robot_Weapon_Chip2.png"
+  }
+}

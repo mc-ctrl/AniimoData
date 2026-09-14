@@ -1,0 +1,70 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145107",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "73ae3018-eeb4-4121-98a4-b0d33fd58a87",
+      "effectId": "Eff_Yuanwei_SleepBall_BattleIdle",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a64e4a4d-1809-4aff-b3c9-34b183eccbe3",
+      "effectId": "Eff_Yuanwei_SleepBall_BattleIdle",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "94c9f2cb-1919-4179-b3f2-a6acc67898c6",
+      "name": "hideBubbleMsg",
+      "msgId": 2242,
+      "NodeID": 9
+    },
+    "10": {
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "4f6dffc4-14d7-4c59-ad83-7eefa68d6878",
+      "ignoreSelf": true,
+      "NodeID": 10
+    },
+    "11": {
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "6e398d05-bb7d-487c-bb09-7e2344d0a3c0",
+      "ignoreSelf": false,
+      "NodeID": 11
+    },
+    "8": {
+      "UID": "60f68e89-b60e-462c-aa33-b465bdc05427",
+      "name": "showBubbleMsg",
+      "msgId": 2242,
+      "NodeID": 8
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a8611fd5-9f79-4895-9d74-61d92a8d8eb5",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "FY_Idle"
+    }
+  },
+  "onBuffDestroyIds": [
+    5,
+    11,
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    4,
+    8,
+    10
+  ]
+}

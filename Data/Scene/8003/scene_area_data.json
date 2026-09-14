@@ -1,0 +1,50 @@
+{
+  "90938793": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90938793,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ],
+          [
+            "DisableModule",
+            "PetLink"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "radius": 40,
+    "sandboxId": 42418261,
+    "position": [
+      -2.54,
+      1,
+      14.96
+    ],
+    "pointType": 1,
+    "name": "功能禁用"
+  }
+}

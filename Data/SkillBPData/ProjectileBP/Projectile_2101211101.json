@@ -1,0 +1,132 @@
+{
+  "duration": 5,
+  "BPName": "buff_2101211",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Money_Drop_Fly",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "8": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062002,
+      "name": "createEntity",
+      "UID": "a3a45380-6a2f-4bec-ba1d-b8c3c320d133",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 8,
+      "pos": "PROJECTILE"
+    },
+    "13": {
+      "UID": "a5e09253-910b-45f2-81b8-ddb8b13fc6af",
+      "randomPercent": 5,
+      "name": "isRandom",
+      "NodeID": 13
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "67070734-b291-4311-b9ec-78b70253e444",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        15
+      ],
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "328bd6bb-2696-4d86-926f-44bd542fae71",
+      "randomPercent": 42,
+      "name": "isRandom",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "ade70e5d-fc45-4f5f-a6cb-674043e420fa",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062001,
+      "name": "createEntity",
+      "UID": "da14c829-c83e-4fd9-9fd1-66c85cf2900a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 15,
+      "pos": "PROJECTILE"
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062003,
+      "name": "createEntity",
+      "UID": "a2d97bb8-980f-476f-aaf9-4b4a90b96683",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 12,
+      "pos": "PROJECTILE"
+    }
+  },
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    10
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

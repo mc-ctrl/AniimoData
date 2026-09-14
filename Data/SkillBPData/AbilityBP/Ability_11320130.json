@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_11320130",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 11200286,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11320130001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_BladeSweep"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Dark_Slash_Big",
+    "Eff_Parmon_10133_Skill_BladeSweep_Dark_Attack02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 4,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

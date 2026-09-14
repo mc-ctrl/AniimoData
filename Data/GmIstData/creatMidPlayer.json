@@ -1,0 +1,22 @@
+{
+  "steps": [
+    {
+      "delay": 0,
+      "params": {
+        "uid": 0
+      },
+      "mid": "middleLevelPlayer",
+      "name": "设定中级玩家"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "excludeFuncTypes": "{10410}",
+        "uid": 0
+      },
+      "mid": "unlockAllMapData",
+      "name": "解锁当前地图浓雾+薄雾，解锁所有标记"
+    }
+  ],
+  "name": "creatMidPlayer"
+}

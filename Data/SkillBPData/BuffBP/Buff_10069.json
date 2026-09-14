@@ -1,0 +1,169 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10069",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "9411d306-f3bf-4697-9e91-09f5b332268c",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Idle_Soil",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "actionIds": [
+        5,
+        9
+      ],
+      "name": "registerDeadEvent",
+      "UID": "9bb5a900-909b-4f34-bdf8-a5cdc82d8c20",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "buffId": 10064,
+      "name": "removeBuff",
+      "UID": "7a4caa4f-77fc-4c9b-b957-b11e272574df",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        22
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "f35ebf5d-c05b-4323-9cc2-785427ee3f87",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "20": {
+      "buffId": 29020713,
+      "name": "removeBuff",
+      "UID": "47375d41-0d10-4d43-acda-93071ebe6c3d",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "triggerName": "LeaveCombat",
+      "name": "setEffectAnimTrigger",
+      "UID": "8d1c6914-1c7c-4b2b-9649-a282c0d793cd",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "22": {
+      "buffId": 90207001,
+      "name": "removeBuff",
+      "UID": "e979b904-1c12-403d-8184-e92d3f198736",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "25090b6d-e939-4a8e-9578-6e6c61eb1cec",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Idle_Soil",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "d7e9d279-5213-4712-810f-15e3f633083b",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Idle_Soil",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        13,
+        16,
+        18,
+        20,
+        17,
+        19
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "5af58ab1-c426-445b-bb78-226adecaa381",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "16": {
+      "buffId": 29020715,
+      "name": "removeBuff",
+      "UID": "170a18d8-c0a4-491c-997c-f99aa530d383",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "buffId": 29020712,
+      "name": "removeBuff",
+      "UID": "53aa4b47-e49e-45b4-b75e-38fd832f1ad8",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "23": {
+      "templateId": 1009207,
+      "name": "checkTargetTemplateId",
+      "UID": "3162750e-4ac8-4328-9e78-98f15944c801",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "18": {
+      "buffId": 29020714,
+      "name": "removeBuff",
+      "UID": "dc200099-fae0-49d4-aae7-30539d5ee38b",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "12": {
+      "UID": "f7b107c8-e7b0-4698-a550-312b1e8fc42c",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": true,
+      "NodeID": 12
+    },
+    "19": {
+      "buffId": 29020711,
+      "name": "removeBuff",
+      "UID": "431859a4-1bce-4e08-b862-13eda4db451c",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "13": {
+      "key": "90207HammerCurHp",
+      "name": "setCacheVal",
+      "UID": "0779d4e6-9a5c-4fb2-bdcd-fc123b5f63a2",
+      "target": "OWNER",
+      "val": -1,
+      "NodeID": 13
+    },
+    "2": {
+      "UID": "456031b5-4d84-4af0-bd05-0bc34bfd36f2",
+      "name": "setScarDecalData",
+      "hpRatioRange": [
+        0,
+        0.9
+      ],
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    21,
+    10
+  ],
+  "onBuffStartIds": [
+    2,
+    4,
+    7,
+    12,
+    15
+  ]
+}

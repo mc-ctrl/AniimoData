@@ -1,0 +1,51 @@
+[
+  {
+    "refreshType": 1,
+    "commonSwitchKey": "ShopMall_Random",
+    "maskRes": "$UI_ARK_Shop_Transition9.png",
+    "des": 1784613886,
+    "petId": 1062300,
+    "postionIndex": [
+      1.104,
+      0.07598877,
+      -0.484
+    ],
+    "topTierLimit": 1,
+    "freeRefreshTimes": 1,
+    "name": 1336647624,
+    "moneyType": 700034,
+    "rotationIndex": [
+      -0.947,
+      -40.311,
+      -1.596
+    ],
+    "scaleIndex": [
+      1,
+      1,
+      1
+    ],
+    "showPity": 0,
+    "shopType": 1,
+    "topTierLimitScope": 1,
+    "startTime": {
+      "3": 1774468800,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774468800
+    },
+    "sourceId": 100001,
+    "lockLimit": 4,
+    "endTime": {
+      "3": 1796860799,
+      "4": 1796860799,
+      "1": 1796860799,
+      "2": 1796860799
+    },
+    "pityParam": {
+      "3000": [
+        2
+      ]
+    },
+    "pityType": 1
+  }
+]

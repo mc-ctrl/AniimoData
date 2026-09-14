@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_11331410",
+  "NodeID": 1,
+  "UID": "565df737-956d-4230-be4e-3454d5abd551",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11331410001,
+      "name": "setCombatActionTimeline",
+      "UID": "b239566d-bda8-45a4-ab7f-5c19d9dab6df",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 8,
+  "preloadAnims": [
+    "Boss_Skill_Throw"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10133_Skill_Throw_Ice01_Boss",
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Ice_Slash_Big",
+    "Eff_Hit_Ice_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "abilityParamId": 10211331
+}

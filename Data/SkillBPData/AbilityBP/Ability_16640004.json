@@ -1,0 +1,34 @@
+{
+  "BPName": "ability_16640004",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 14300000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 16640004001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack05"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "水普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,492 @@
+{
+  "3": {
+    "10300": {
+      "itemInfo": [
+        [
+          4000,
+          250
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 3,
+      "buffInfo": [
+        [
+          1,
+          [
+            3
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    },
+    "10301": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            3
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ]
+    },
+    "10302": {
+      "itemInfo": {},
+      "itemSetType": 1,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            3
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    }
+  },
+  "4": {
+    "10401": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            4
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ]
+    },
+    "10402": {
+      "itemInfo": {},
+      "itemSetType": 1,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            4
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    },
+    "10400": {
+      "itemInfo": [
+        [
+          4000,
+          250
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 3,
+      "buffInfo": [
+        [
+          1,
+          [
+            4
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    }
+  },
+  "99": {
+    "19900": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 1,
+      "buffInfo": {}
+    }
+  },
+  "6": {
+    "10603": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 1,
+      "buffInfo": [
+        [
+          0,
+          [
+            2060000
+          ]
+        ]
+      ]
+    },
+    "10604": {
+      "itemInfo": {},
+      "itemSetType": 1,
+      "itemSetWeight": 1,
+      "buffInfo": [
+        [
+          1,
+          [
+            6
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    },
+    "10600": {
+      "itemInfo": [
+        [
+          4000,
+          250
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            6
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    },
+    "10601": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 12,
+      "buffInfo": [
+        [
+          1,
+          [
+            6
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ]
+    },
+    "10602": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 1,
+      "buffInfo": [
+        [
+          0,
+          [
+            2060000
+          ]
+        ]
+      ]
+    }
+  },
+  "5": {
+    "10501": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            5
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ]
+    },
+    "10500": {
+      "itemInfo": [
+        [
+          4000,
+          250
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 3,
+      "buffInfo": [
+        [
+          1,
+          [
+            5
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    },
+    "10502": {
+      "itemInfo": {},
+      "itemSetType": 1,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            5
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    }
+  },
+  "0": {
+    "10000": {
+      "itemInfo": [
+        [
+          4000,
+          250
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 3,
+      "buffInfo": [
+        [
+          1,
+          [
+            0
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    },
+    "10002": {
+      "itemInfo": {},
+      "itemSetType": 1,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            0
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    },
+    "10001": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            0
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ]
+    }
+  },
+  "1": {
+    "10100": {
+      "itemInfo": [
+        [
+          4000,
+          250
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 3,
+      "buffInfo": [
+        [
+          1,
+          [
+            1
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    },
+    "10101": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            1
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ]
+    },
+    "10102": {
+      "itemInfo": {},
+      "itemSetType": 1,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            1
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    }
+  },
+  "2": {
+    "10202": {
+      "itemInfo": {},
+      "itemSetType": 1,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            2
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    },
+    "10201": {
+      "itemInfo": [
+        [
+          4000,
+          500
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 6,
+      "buffInfo": [
+        [
+          1,
+          [
+            2
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ]
+    },
+    "10200": {
+      "itemInfo": [
+        [
+          4000,
+          250
+        ]
+      ],
+      "itemSetType": 0,
+      "itemSetWeight": 3,
+      "buffInfo": [
+        [
+          1,
+          [
+            2
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    }
+  }
+}

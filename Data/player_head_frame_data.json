@@ -1,0 +1,73 @@
+{
+  "3": {
+    "res": "$UI_PlayerHeadFrame_Home.png",
+    "unlockframe_txt": 1434650671,
+    "name": 1189746985,
+    "desc": 1666324216,
+    "item": 110518
+  },
+  "4": {
+    "res": "$UI_PlayerHeadFrame_HoloTraining.png",
+    "unlockframe_txt": 1375994118,
+    "name": 1915790913,
+    "desc": 1968855786,
+    "item": 110519
+  },
+  "14": {
+    "res": "$UI_PlayerHeadFrame_Imo.png",
+    "unlockframe_txt": 1387658584,
+    "name": 2130920353,
+    "desc": 1553917752,
+    "item": 110538
+  },
+  "10": {
+    "res": "$UI_PlayerHeadFrame_PointsShop.png",
+    "unlockframe_txt": 1534205607,
+    "name": 1847828264,
+    "desc": 1786903699,
+    "item": 110534
+  },
+  "9": {
+    "res": "$UI_PlayerHeadFrame_Home1.png",
+    "unlockframe_txt": 1538102154,
+    "name": 1195219531,
+    "desc": 1980702605,
+    "item": 110532
+  },
+  "13": {
+    "res": "$UI_PlayerHeadFrame_Egg.png",
+    "unlockframe_txt": 1442111903,
+    "name": 1618227041,
+    "desc": 1781387563,
+    "item": 110537
+  },
+  "5": {
+    "res": "$UI_PlayerHeadFrame_GrassPlate.png",
+    "unlockframe_txt": 1584381609,
+    "name": 1651858013,
+    "desc": 1769954598,
+    "item": 110521
+  },
+  "11": {
+    "res": "$UI_PlayerHeadFrame_Tiktok.png",
+    "unlockframe_txt": 2081700348,
+    "name": 1464836195,
+    "desc": 1103277535,
+    "item": 110535
+  },
+  "1": {
+    "item": 110511,
+    "unlockframe_txt": 1887139712,
+    "name": 1438746143,
+    "defaultUnlock": 1,
+    "desc": 2131978970,
+    "res": "$UI_Img_FunMenu_Avatar.png"
+  },
+  "2": {
+    "res": "$UI_PlayerHeadFrame_RainbowElectroMantis.png",
+    "unlockframe_txt": 2122165594,
+    "name": 1408495125,
+    "desc": 1370565951,
+    "item": 110517
+  }
+}

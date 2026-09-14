@@ -1,0 +1,32 @@
+{
+  "BPName": "ability_10000031",
+  "NodeID": 1,
+  "UID": "51ad2801-7d20-4ec1-a635-a712b4b97529",
+  "desc": "",
+  "abilityType": 9,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "2": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "5cdb2868-52bd-4a97-9fc3-747257335a9d",
+      "to": 10000030,
+      "NodeID": 2,
+      "from": 10000030
+    }
+  },
+  "onAbilityCastIds": [
+    2
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0,
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "shortDesc": "",
+  "notTurnToTarget": true,
+  "abilityParamId": 9400113,
+  "name": ""
+}

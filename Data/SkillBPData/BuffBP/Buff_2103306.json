@@ -1,0 +1,42 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103306",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "onBuffRefreshIds": [
+    3,
+    5
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    3,
+    5
+  ],
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "07e27e53-c18d-4882-a542-99a1b5803325",
+      "effectId": "Eff_Parmon_10033_Skill_BladeDance_Up",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "5": {
+      "duration": 1,
+      "disableWhenFinished": false,
+      "NodeID": 5,
+      "UID": "36319ea6-2e92-4095-a02e-3f5abecce01d",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10033_Skill_BladeDance_Up",
+      "name": "playPreset"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

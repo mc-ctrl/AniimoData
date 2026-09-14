@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_70000610",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10101251,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "12": {
+      "timelineId": 70000610001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 12
+    }
+  },
+  "onAbilityCastIds": [
+    12
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Shield_Skill_SelfDestruct_Start",
+    "Shield_Skill_SelfDestruct_Loop",
+    "Shield_Skill_SelfDestruct_End"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_Robot_Normal_Atk_Shield_Skill_SelfDestruct_02",
+    "Eff_Parmon_Test_Firewave",
+    "Eff_Hit_None_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "暗普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

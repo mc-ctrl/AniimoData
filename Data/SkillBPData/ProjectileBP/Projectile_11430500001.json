@@ -1,0 +1,136 @@
+{
+  "duration": 2,
+  "BPName": "ability_11430500",
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10143_Skill_Charge04",
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxAngularOffset": 20,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "28": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 75,
+      "NodeID": 28,
+      "UID": "086d25ac-aea1-450e-b417-206b50099ad8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        75,
+        26,
+        91
+      ]
+    },
+    "91": {
+      "pos": {
+        "UID": "83988105-e752-4f36-b53f-2fe64d0c0256",
+        "name": "getProjectilePos",
+        "NodeID": 90
+      },
+      "name": "playEffectOnPosRot",
+      "UID": "9ae570f7-f281-45ca-99ae-672265175c30",
+      "effectId": "Eff_Hit_Electric_Blunt_Y_Big",
+      "speed": 1.01,
+      "NodeID": 91
+    },
+    "46": {
+      "UID": "76467d0b-deef-4cfb-a142-342cf59c8fb0",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 46
+    },
+    "75": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11430500,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "75ba61f2-61d8-4b92-bd7c-93dae1ff2413",
+      "target": "TARGET",
+      "NodeID": 75,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Blunt_Y_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 4,
+        "impulseId": 3000
+      }
+    },
+    "25": {
+      "calcInfo": {},
+      "name": "calcResult",
+      "UID": "68bb56d4-c3a2-4d04-af09-d10c8e0e977e",
+      "target": "CASTER",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        46
+      ],
+      "UID": "fdf62731-3af7-40c1-90a6-7c56872f7895",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    28
+  ],
+  "calcResultNodeId": 75,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.01,
+  "bounciness": 1,
+  "startSleepTime": 0,
+  "angularIncreaseDuration": 1,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

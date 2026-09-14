@@ -1,0 +1,107 @@
+{
+  "43163243": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 4,
+    "position": [
+      -17,
+      6.45,
+      -88.22
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "id": 43163243,
+    "sandboxId": 41701052,
+    "autoInitial": false,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43163242
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "43163239": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 4,
+    "position": [
+      -14.1,
+      6.2,
+      -108.95
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "id": 43163239,
+    "sandboxId": 41701052,
+    "autoInitial": false,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43163238
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "43163241": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 4,
+    "position": [
+      -14.1,
+      6.45,
+      -90.64
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "id": 43163241,
+    "sandboxId": 41701052,
+    "autoInitial": false,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43163240
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

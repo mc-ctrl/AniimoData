@@ -1,0 +1,91 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.2,
+        "instant_dmg_rate_v": 0.2
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "impulseId": 5001,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10011_Attack_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "ea5d095f-58a9-4ecf-8d9f-e26303854e29",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "7447d392-e9ff-4bf5-accb-796fd77f4e8e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            19,
+            2,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5001,
+      "actionIds": [
+        3
+      ]
+    },
+    "6": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 10,
+      "NodeID": 6,
+      "UID": "a871eae0-932e-435a-a3e1-2c42977bdf20",
+      "onUpdate": {
+        "actionIds": [
+          5
+        ]
+      },
+      "startTime": 0.1,
+      "onEnter": {
+        "actionIds": [
+          5
+        ]
+      }
+    }
+  },
+  "BPName": "timeline_2102303",
+  "NodeID": 1,
+  "UID": "4510fe2e-4d3f-4898-bfe2-5487dc86f97c",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 10
+}

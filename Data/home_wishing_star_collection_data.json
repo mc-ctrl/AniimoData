@@ -1,0 +1,27 @@
+{
+  "1003": {
+    "iconBg": "$UI_Img_thunderstorm_bg.png",
+    "iconSmall": "$UI_Icon_thunderstormsmall5.png",
+    "rate": 1.2,
+    "sort": 3,
+    "icon": "$UI_Icon_thunderstorm5.png",
+    "appearanceType": 1,
+    "appearanceValue": 5
+  },
+  "1001": {
+    "sort": 1,
+    "iconSmall": "$UI_Img_ManualFilter_Flash_Nml.png",
+    "rate": 1.5,
+    "appearanceType": 2,
+    "appearanceValue": 0
+  },
+  "1002": {
+    "iconBg": "$UI_Img_rainbow_bg.png",
+    "iconSmall": "$UI_Icon_rainbowsmall6.png",
+    "rate": 1.4,
+    "sort": 2,
+    "icon": "$UI_Icon_rainbow6.png",
+    "appearanceType": 1,
+    "appearanceValue": 6
+  }
+}

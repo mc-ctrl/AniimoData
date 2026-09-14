@@ -1,0 +1,165 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "NodeID": 3,
+      "UID": "4611452d-7bac-45c2-9183-c77becb0b116",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_End",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "4": {
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8,
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 10,
+      "UID": "5270b078-503e-400d-a59f-80b4d9d1bbba"
+    },
+    "16": {
+      "eventType": "NotifyState",
+      "endTime": 11,
+      "NodeID": 16,
+      "onExit": {
+        "actionIds": [
+          14
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          14
+        ]
+      },
+      "startTime": 1,
+      "tickInterval": 0.2,
+      "onEnter": {
+        "actionIds": [
+          14
+        ]
+      },
+      "UID": "d33af025-0a62-461b-a5be-5f7c91b4e76d"
+    },
+    "8": {
+      "NodeID": 8,
+      "UID": "4fb9035d-7d62-43f5-8667-62a835420f45",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_Start",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "9": {
+      "NodeID": 9,
+      "UID": "8c6599d2-847d-4612-b86e-e10634224ab4",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_Loop",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "14": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 12,
+      "NodeID": 14,
+      "UID": "77a0abed-01ac-4d87-8920-53fc2f70302d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            16,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        12
+      ]
+    },
+    "12": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2000
+      },
+      "UID": "2cf57a61-e5f5-4cef-9075-6c5cda2a008d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2119401",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    6,
+    10,
+    16
+  ],
+  "layer": "Base",
+  "length": 9999
+}

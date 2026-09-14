@@ -1,0 +1,161 @@
+{
+  "nodeMap": {
+    "104": {
+      "UID": "e5fa2fa8-96ae-47dc-975a-1312103825f1",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          103
+        ]
+      },
+      "NodeID": 104
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2d8cffb8-59ff-469f-be7f-7f2131c9303d",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_attack_Ice",
+      "NodeID": 38
+    },
+    "105": {
+      "UID": "e31dbf7d-81b0-47a8-a83b-951ae512c440",
+      "name": "checkIsInAutoAim",
+      "NodeID": 105
+    },
+    "97": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 97,
+      "UID": "13a4d257-a504-4cec-a1a2-10f22ccd055a",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "101": {
+      "action": {
+        "actionIds": [
+          100
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 101,
+      "UID": "dd24ab56-85cb-4817-ab66-37b160174d97"
+    },
+    "98": {
+      "action": {
+        "actionIds": [
+          97
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 98,
+      "UID": "71c79c2b-736f-4ea8-8f56-45886999417c"
+    },
+    "107": {
+      "UID": "d2deb7bf-b7ec-460c-b467-bc01d2ea77ba",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 107
+    },
+    "100": {
+      "UID": "196545cf-f081-4272-8f47-97409a040db0",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 100
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          38,
+          51,
+          15,
+          107
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 18,
+      "UID": "111a13af-fa44-4916-b1fa-38ed530fc38e"
+    },
+    "102": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 102,
+      "UID": "b7e5468a-526e-4085-b551-6938f2f34c6e",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "103": {
+      "actionIds": [
+        102
+      ],
+      "conditionActionIds": [
+        105
+      ],
+      "UID": "e37ab30e-ace1-44de-add6-4d08e6e583c2",
+      "name": "doActionsByConditions",
+      "NodeID": 103
+    },
+    "51": {
+      "cameraShakeId": 21113,
+      "name": "playCameraImpulseById",
+      "UID": "3da3e5a7-2ae8-4aac-b7c2-c2c66eace7f1",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0.6,
+        0.9
+      ],
+      "templateId": 10110220001,
+      "name": "createProjectile",
+      "UID": "ea8b8b16-5fa3-4026-8b14-276f00747f41",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 15,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "BPName": "ability_10110220",
+  "NodeID": 20,
+  "UID": "7dcd2b9a-fb5a-43ef-904b-2eb10b4462a3",
+  "eventIds": [
+    18,
+    101,
+    98,
+    104
+  ],
+  "layer": "Base",
+  "length": 2.3
+}

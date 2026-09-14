@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "ffc2800b-c0f6-415e-9795-4c3b4f9f71cc",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 3
+    },
+    "9": {
+      "UID": "c118d253-280e-4dd9-8e9b-174a34ba3f15",
+      "count": 1,
+      "name": "setCastSkillFreeSpCnt",
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "235de2a9-3716-4585-a7b5-1ba41073f5a6",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "bfec85ba-d998-4fab-80f5-3d7ef212a025",
+      "count": {
+        "calcId": 2011000,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 12,
+        "UID": "2bf88691-1b61-470e-b397-1f15184d292a",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "doCounterAction"
+    },
+    "5": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "ca755881-fba6-4e25-aa98-cb3a997f0a9d",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f19c890e-5694-43e1-800c-73dc4cd3f03d",
+      "NodeID": 7
+    },
+    "12": {
+      "calcId": 2011000,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "2bf88691-1b61-470e-b397-1f15184d292a",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_2011000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

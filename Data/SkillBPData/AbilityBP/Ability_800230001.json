@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_800230001",
+  "NodeID": 1,
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "abilityParamId": 10700031,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "timelineId": 800230001001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Claw_Near"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Parmon_10023_Mon_Skill_Claw_01",
+    "Eff_Parmon_10023_Mon_Skill_Claw_02",
+    "Eff_Parmon_10023_Mon_Skill_Claw_03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

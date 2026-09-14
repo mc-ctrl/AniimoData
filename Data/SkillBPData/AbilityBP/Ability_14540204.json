@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_RollingBall_End"
+  ],
+  "searchTargetRangeRadius": 5,
+  "BPName": "ability_14540204",
+  "name": "",
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 10200371,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14540204001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

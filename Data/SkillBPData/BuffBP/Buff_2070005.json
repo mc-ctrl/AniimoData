@@ -1,0 +1,91 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2070005",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "killenemy",
+      "name": "setCacheVal",
+      "UID": "32e5ad0c-cb6b-42e1-8d50-cde6169cfc7e",
+      "val": 0,
+      "NodeID": 3
+    },
+    "9": {
+      "UID": "325c35ea-cf4e-4736-ab04-1eec67f80a80",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        7,
+        12
+      ],
+      "NodeID": 9
+    },
+    "6": {
+      "rValue": 20,
+      "name": "greater",
+      "UID": "a4dac901-22d7-42a7-945d-4c44080f9a38",
+      "NodeID": 6,
+      "lValue": {
+        "UID": "bc4c8c56-bfda-4a74-9d60-7263546b0c15",
+        "name": "getCacheVal",
+        "key": "castAttackSkillCnt",
+        "NodeID": 5
+      }
+    },
+    "10": {
+      "unsummonValid": false,
+      "actionIds": [
+        9
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f19c890e-5694-43e1-800c-73dc4cd3f03d",
+      "NodeID": 10
+    },
+    "14": {
+      "UID": "9485fe6b-6e57-43d2-b66b-2a5350eb7a78",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "bp_atk_v": 0.5
+      },
+      "NodeID": 14
+    },
+    "7": {
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "c98b1e15-c924-47d2-81ad-888a1d12c464",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        14
+      ]
+    },
+    "12": {
+      "key": "killenemy",
+      "name": "setCacheVal",
+      "UID": "915fdc6c-fbe7-4c89-8bd1-0663dfd52fc5",
+      "val": {
+        "rValue": {
+          "UID": "bc4c8c56-bfda-4a74-9d60-7263546b0c15",
+          "name": "getCacheVal",
+          "key": "castAttackSkillCnt",
+          "NodeID": 5
+        },
+        "name": "add",
+        "UID": "d093e670-129e-48e4-b854-c63112180b16",
+        "NodeID": 11,
+        "lValue": 1
+      },
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    10
+  ]
+}

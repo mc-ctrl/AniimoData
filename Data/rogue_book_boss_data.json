@@ -1,0 +1,156 @@
+{
+  "3": {
+    "3033000": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "0": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3033002": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3033001": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    }
+  },
+  "4": {
+    "3043002": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "0": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3043000": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3043001": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    }
+  },
+  "6": {
+    "3063000": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "0": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3063002": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3063001": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    }
+  },
+  "5": {
+    "0": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3053000": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3053001": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3053002": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    }
+  },
+  "0": {
+    "3003001": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "0": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3003002": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3003000": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    }
+  },
+  "1": {
+    "3013002": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "0": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3013000": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3013001": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    }
+  },
+  "2": {
+    "0": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3023000": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3023001": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    },
+    "3023002": {
+      "reward": 160003,
+      "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+      "collectGroup": 1002
+    }
+  }
+}

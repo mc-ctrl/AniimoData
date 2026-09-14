@@ -1,0 +1,6145 @@
+{
+  "590": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    },
+    "90874690": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "272": {
+    "56220612": {
+      "checkSpaceOwner": false,
+      "detectType": 5271,
+      "checkInterval": 0.5
+    },
+    "76758910": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "56220611": {
+      "forwardSpeed": 5,
+      "highest": 1.06,
+      "leaveVelocity": 14,
+      "lowest": 0.83,
+      "minTriggerSpeed": 100
+    }
+  },
+  "208": {
+    "58210784": {
+      "antiGravityPercent": 0
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210785": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "500": {
+    "74996227": {
+      "dittoPetTemplateId": 1001200,
+      "dittoScaleFactor": 0.5,
+      "petAnimStateName": "RunLoop",
+      "petScaleFactor": 0.5,
+      "petTemplateId": 1001100,
+      "sceneId": 6001,
+      "dittoAnimStateName": "RunLoop"
+    },
+    "75052572": {
+      "checkSpaceOwner": true,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "600": {},
+  "606": {
+    "90997210": {
+      "chargeTime": -1,
+      "impulseThreshold": 100
+    }
+  },
+  "608": {
+    "90997732": {
+      "chargeTime": -1,
+      "impulseThreshold": 100
+    }
+  },
+  "553": {
+    "55701939": {
+      "delaySpurtTime": 0,
+      "scaleValue": 0.5,
+      "onceSpurtTime": 1,
+      "spurtInterval": 0
+    }
+  },
+  "554": {},
+  "314": {
+    "58210716": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210715": {
+      "antiGravityPercent": 0
+    }
+  },
+  "315": {
+    "58639662": {
+      "checkOnStay": false,
+      "detectType": 7,
+      "checkSpaceOwner": false
+    },
+    "59154155": {
+      "size": [
+        32,
+        10,
+        2
+      ],
+      "height": 0,
+      "center": [
+        0,
+        3,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "557": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    }
+  },
+  "558": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    }
+  },
+  "324": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    },
+    "60538665": {
+      "attachKey": "Cube1"
+    }
+  },
+  "561": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    }
+  },
+  "563": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    }
+  },
+  "8": {
+    "42742113": {
+      "blackScreenId": 0,
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "envobjRevivePos": [
+        0,
+        0,
+        0
+      ],
+      "envobjReviveType": 0,
+      "playerBloodProportion": 0,
+      "playerRevivePos": [
+        0,
+        0,
+        0
+      ],
+      "playerReviveRot": [
+        0,
+        0,
+        0
+      ],
+      "playerReviveType": 0,
+      "puppetBloodProportion": 0,
+      "puppetRevivePos": [
+        0,
+        0,
+        0
+      ],
+      "puppetReviveType": 0
+    }
+  },
+  "574": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0,
+            -0.52,
+            0,
+            0.86
+          ],
+          "position": [
+            -21.42,
+            5.21,
+            42.18
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.12,
+            0,
+            0.99
+          ],
+          "position": [
+            -7.1,
+            5.51,
+            -22.36
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.53,
+            0,
+            0.85
+          ],
+          "position": [
+            -39.64,
+            6.54,
+            -57
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.91,
+            0,
+            0.42
+          ],
+          "position": [
+            -82.84,
+            3.88,
+            -14.29
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -1,
+            0,
+            0.07
+          ],
+          "position": [
+            -100.47,
+            3.88,
+            74.25
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            -24.35,
+            5.21,
+            68.15
+          ],
+          "controlPointTo": [
+            -100.41,
+            3.88,
+            74.93
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 0,
+          "targetIndex": 4,
+          "type": "BezierMoveAction",
+          "duration": 34,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -129.34,
+            3.88,
+            59.77
+          ],
+          "controlPointTo": [
+            -82.84,
+            3.88,
+            -14.29
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 4,
+          "targetIndex": 3,
+          "type": "BezierMoveAction",
+          "duration": 36,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -82.84,
+            3.88,
+            -14.29
+          ],
+          "controlPointTo": [
+            -39.64,
+            6.54,
+            -57
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 3,
+          "targetIndex": 2,
+          "type": "BezierMoveAction",
+          "duration": 24,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -16.53,
+            6.54,
+            -66.49
+          ],
+          "controlPointTo": [
+            -7.1,
+            5.51,
+            -22.36
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 2,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 19,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -7.1,
+            5.51,
+            -22.36
+          ],
+          "controlPointTo": [
+            -21.67,
+            5.21,
+            42.15
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 26,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        }
+      ]
+    }
+  },
+  "575": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0,
+            1,
+            0,
+            0.04
+          ],
+          "position": [
+            -12.88,
+            0.05,
+            -2.14
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.94,
+            0,
+            0.33
+          ],
+          "position": [
+            -4.66,
+            6.38,
+            109.67
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.56,
+            0,
+            0.83
+          ],
+          "position": [
+            25.76,
+            6.38,
+            97.32
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.14,
+            0,
+            0.99
+          ],
+          "position": [
+            7.16,
+            4.57,
+            32.19
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.26,
+            0,
+            0.96
+          ],
+          "position": [
+            35.79,
+            10.44,
+            -42.96
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.84,
+            0,
+            0.55
+          ],
+          "position": [
+            -11.84,
+            6.31,
+            -41.32
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -1,
+            0,
+            -0.09
+          ],
+          "position": [
+            -27.4,
+            6.38,
+            78.16
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            -13.25,
+            -1.03,
+            -2.47
+          ],
+          "controlPointTo": [
+            -11.69,
+            6.31,
+            -41.78
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 0,
+          "targetIndex": 5,
+          "type": "BezierMoveAction",
+          "duration": 9,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -5.62,
+            6.31,
+            -49.81
+          ],
+          "controlPointTo": [
+            29.92,
+            10.44,
+            -67.04
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 5,
+          "targetIndex": 4,
+          "type": "BezierMoveAction",
+          "duration": 20,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            35.61,
+            10.44,
+            -41.56
+          ],
+          "controlPointTo": [
+            -3.72,
+            4.57,
+            21.21
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 4,
+          "targetIndex": 3,
+          "type": "BezierMoveAction",
+          "duration": 33,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            7.93,
+            4.57,
+            35.51
+          ],
+          "controlPointTo": [
+            36.51,
+            6.38,
+            84.54
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 3,
+          "targetIndex": 2,
+          "type": "BezierMoveAction",
+          "duration": 30,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            24.06,
+            6.38,
+            98.75
+          ],
+          "controlPointTo": [
+            5.68,
+            6.38,
+            115.42
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 2,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 13,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -6.7,
+            6.38,
+            108.25
+          ],
+          "controlPointTo": [
+            -27.4,
+            6.38,
+            78.16
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 1,
+          "targetIndex": 6,
+          "type": "BezierMoveAction",
+          "duration": 16,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -30.82,
+            6.38,
+            67.29
+          ],
+          "controlPointTo": [
+            -12.96,
+            0.1,
+            -1.86
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 6,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 32,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        }
+      ]
+    }
+  },
+  "577": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    }
+  },
+  "578": {},
+  "13": {
+    "52068332": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "52068333": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "350": {
+    "64146362": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "52068266": {
+      "checkSpaceOwner": false,
+      "detectType": 512,
+      "checkInterval": 0.5
+    },
+    "74305865": {
+      "syncState": false,
+      "useKinematicOnFinish": false,
+      "speed": 1,
+      "applyRotation": true,
+      "setPosOnFinish": false
+    }
+  },
+  "601": {},
+  "355": {},
+  "356": {},
+  "77": {
+    "42666534": {
+      "soulPlatformId": 0
+    },
+    "42666535": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "42666536": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "609": {
+    "91062076": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    },
+    "91056615": {
+      "customPivotPoint": [
+        0,
+        0,
+        0
+      ],
+      "pivotMode": 0,
+      "rotationStates": [
+        {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "state": 0,
+          "duration": 0.5
+        },
+        {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "state": 1,
+          "duration": 0.5
+        }
+      ]
+    }
+  },
+  "595": {
+    "80520879": {
+      "checkSpaceOwner": false,
+      "detectType": 7,
+      "checkInterval": 0.5
+    },
+    "80529385": {
+      "actOnMaster": false,
+      "buffId": 11150
+    }
+  },
+  "618": {
+    "91064248": {
+      "path": [
+        {
+          "rotation": [
+            0,
+            -0.27,
+            0,
+            0.96
+          ],
+          "position": [
+            10.84,
+            25,
+            -11.19
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.05,
+            0,
+            1
+          ],
+          "position": [
+            -4.45,
+            25,
+            9.22
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.77,
+            0,
+            0.64
+          ],
+          "position": [
+            -4.22,
+            7.52,
+            7.68
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.95,
+            0,
+            0.3
+          ],
+          "position": [
+            -1.73,
+            4.79,
+            3.44
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.87,
+            0,
+            0.49
+          ],
+          "position": [
+            0.07,
+            3.32,
+            2.65
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.88,
+            0,
+            0.48
+          ],
+          "position": [
+            11.17,
+            7.11,
+            -0.78
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.95,
+            0,
+            -0.3
+          ],
+          "position": [
+            13.97,
+            15.59,
+            -13.04
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "EmitSignalAction",
+          "signal": "load",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "controlPointFrom": [
+            10.84,
+            25,
+            -11.19
+          ],
+          "controlPointTo": [
+            -4.45,
+            25,
+            9.22
+          ],
+          "rotateSpeed": 0,
+          "startIndex": 0,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 2,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -4.45,
+            25,
+            9.22
+          ],
+          "controlPointTo": [
+            -4.22,
+            7.52,
+            7.68
+          ],
+          "rotateSpeed": 0,
+          "startIndex": 1,
+          "targetIndex": 2,
+          "type": "BezierMoveAction",
+          "duration": 2,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -4.22,
+            7.52,
+            7.68
+          ],
+          "controlPointTo": [
+            -1.73,
+            4.79,
+            3.44
+          ],
+          "rotateSpeed": 0,
+          "startIndex": 2,
+          "targetIndex": 3,
+          "type": "BezierMoveAction",
+          "duration": 1,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "WaitAction",
+          "waitTime": 1,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.WaitAction"
+        },
+        {
+          "controlPointFrom": [
+            -1.73,
+            4.79,
+            3.44
+          ],
+          "controlPointTo": [
+            0.07,
+            3.32,
+            2.65
+          ],
+          "rotateSpeed": 0,
+          "startIndex": 3,
+          "targetIndex": 4,
+          "type": "BezierMoveAction",
+          "duration": 1,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "open",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "type": "WaitAction",
+          "waitTime": 1,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.WaitAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "unload",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "type": "WaitAction",
+          "waitTime": 1,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.WaitAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "close",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "type": "WaitAction",
+          "waitTime": 1,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.WaitAction"
+        },
+        {
+          "controlPointFrom": [
+            0.07,
+            3.32,
+            2.65
+          ],
+          "controlPointTo": [
+            11.17,
+            7.11,
+            -0.78
+          ],
+          "rotateSpeed": 0,
+          "startIndex": 4,
+          "targetIndex": 5,
+          "type": "BezierMoveAction",
+          "duration": 1.5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            11.17,
+            7.11,
+            -0.78
+          ],
+          "controlPointTo": [
+            13.97,
+            15.59,
+            -13.04
+          ],
+          "rotateSpeed": 0,
+          "startIndex": 5,
+          "targetIndex": 6,
+          "type": "BezierMoveAction",
+          "duration": 1.5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            13.97,
+            15.59,
+            -13.04
+          ],
+          "controlPointTo": [
+            10.84,
+            25,
+            -11.19
+          ],
+          "rotateSpeed": 0,
+          "startIndex": 6,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 1.5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "WaitAction",
+          "waitTime": 1,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.WaitAction"
+        }
+      ]
+    }
+  },
+  "619": {
+    "91062485": {
+      "customPivotPoint": [
+        0,
+        0,
+        0
+      ],
+      "pivotMode": 0,
+      "rotationStates": [
+        {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "state": 0,
+          "duration": 0.5
+        },
+        {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "state": 1,
+          "duration": 0.5
+        }
+      ]
+    },
+    "91062434": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "364": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "365": {
+    "59832261": {
+      "rotationCoord": 0,
+      "rotDir": 0,
+      "rotSpeed": 0,
+      "rotTime": 0,
+      "rotationAxis": 1
+    },
+    "65717640": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "184": {
+    "58210662": {
+      "antiGravityPercent": 0
+    },
+    "58210663": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    }
+  },
+  "145": {
+    "55701939": {
+      "delaySpurtTime": 0,
+      "scaleValue": 1,
+      "onceSpurtTime": 1,
+      "spurtInterval": 0
+    }
+  },
+  "371": {
+    "61919973": {
+      "distance": 20
+    }
+  },
+  "630": {
+    "91021526": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "153": {
+    "50584946": {
+      "resetTime": 3,
+      "repeatable": true,
+      "eventId": 70000113
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "203": {
+    "49996533": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "54408025": {
+      "chestId": 0,
+      "customId2State": {},
+      "id2State": {
+        "0": 1
+      }
+    },
+    "49996532": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    }
+  },
+  "633": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0,
+            0.85,
+            0,
+            0.52
+          ],
+          "position": [
+            0.23,
+            1.53,
+            -0.81
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.78,
+            0,
+            -0.63
+          ],
+          "position": [
+            -23.59,
+            1.71,
+            1.93
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.82,
+            0,
+            0.57
+          ],
+          "position": [
+            18.77,
+            -27.91,
+            13.14
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            1,
+            0,
+            0.09
+          ],
+          "position": [
+            7.97,
+            -28.4,
+            48.65
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.21,
+            0,
+            0.98
+          ],
+          "position": [
+            -23.08,
+            -25.59,
+            19.34
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.89,
+            0,
+            0.46
+          ],
+          "position": [
+            -15.17,
+            -0.18,
+            12.43
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            -1.72,
+            6.68,
+            0.68
+          ],
+          "controlPointTo": [
+            -10.21,
+            8.26,
+            9.61
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 0,
+          "targetIndex": 5,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -21.34,
+            -12.07,
+            17.81
+          ],
+          "controlPointTo": [
+            -25.27,
+            -23.61,
+            13.52
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 5,
+          "targetIndex": 4,
+          "type": "BezierMoveAction",
+          "duration": 7,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -18.48,
+            -32,
+            33.86
+          ],
+          "controlPointTo": [
+            0.44,
+            -22.69,
+            50.58
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 4,
+          "targetIndex": 3,
+          "type": "BezierMoveAction",
+          "duration": 12,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            8.17,
+            -27.97,
+            45.4
+          ],
+          "controlPointTo": [
+            18.25,
+            -27.98,
+            14.61
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 3,
+          "targetIndex": 2,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -30.06,
+            -21.18,
+            1.04
+          ],
+          "controlPointTo": [
+            -28.23,
+            -6.25,
+            3.07
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 2,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 10,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -20.23,
+            9.99,
+            1.79
+          ],
+          "controlPointTo": [
+            0.23,
+            1.53,
+            -0.81
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        }
+      ]
+    }
+  },
+  "199": {
+    "61919973": {
+      "distance": 20
+    }
+  },
+  "635": {
+    "72095828": {
+      "localPosition": [
+        -5.24,
+        1.04,
+        5.32
+      ],
+      "localScale": [
+        2.34,
+        1,
+        2.34
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72134409": {
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "88": {
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "44987560": {
+      "workableWhenStart": true,
+      "invokeSound": "",
+      "actionPrototypeId": 55,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    }
+  },
+  "320": {
+    "42720819": {
+      "startIndex": 0,
+      "bindEntStaticIds": {},
+      "bindLevelItemIds": {},
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ]
+      ],
+      "speed": 1,
+      "platformType": 0
+    },
+    "59767489": {
+      "checkCollisionDir": [
+        0,
+        1,
+        0
+      ],
+      "forceRatio": 1,
+      "rayCastThreshold": 5
+    }
+  },
+  "95": {
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "44987560": {
+      "workableWhenStart": true,
+      "invokeSound": "",
+      "actionPrototypeId": 55,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    }
+  },
+  "640": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6.67
+        ]
+      ]
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "211": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          20.7
+        ]
+      ]
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "599": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    },
+    "90874690": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "646": {
+    "91059289": {
+      "exchangeId": 2
+    },
+    "91059288": {
+      "multiTimeline": true,
+      "resIdList": [
+        "$P_TL_Level_ARK_GachaponArchitecture_01.prefab",
+        "$P_TL_Level_ARK_GachaponArchitecture_02.prefab"
+      ],
+      "resId": ""
+    }
+  },
+  "273": {
+    "49996533": {
+      "bindSwitchId": 55714232,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "54408025": {
+      "chestId": 0,
+      "customId2State": {},
+      "id2State": {
+        "55714232": 1
+      }
+    }
+  },
+  "326": {
+    "59832261": {
+      "rotationCoord": 0,
+      "rotDir": 0,
+      "rotSpeed": 0,
+      "rotTime": 0,
+      "rotationAxis": 1
+    }
+  },
+  "649": {
+    "61919973": {
+      "distance": 30
+    }
+  },
+  "185": {
+    "50950636": {
+      "antiGravityPercent": 0
+    },
+    "50954209": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    }
+  },
+  "276": {
+    "50950636": {
+      "antiGravityPercent": 0
+    },
+    "50954209": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    }
+  },
+  "186": {
+    "66503787": {
+      "power": 135,
+      "elementLevel": 0,
+      "elementPower": 0,
+      "isConstraintWhenStart": true,
+      "shape": {
+        "endPosition": [
+          0,
+          1,
+          0
+        ],
+        "shapeType": "LinearShape",
+        "startPosition": [
+          0,
+          0,
+          0
+        ]
+      },
+      "constraintPower": 0
+    },
+    "58210678": {
+      "antiGravityPercent": 0
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210679": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "279": {
+    "64768415": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "62712938": {
+      "duration": 5
+    }
+  },
+  "372": {},
+  "373": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    },
+    "67274312": {
+      "resId": ""
+    }
+  },
+  "658": {
+    "91219647": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": 0,
+      "moveTime": 0,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "375": {
+    "52068332": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    },
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ]
+    }
+  },
+  "376": {
+    "68917848": {
+      "hidePlayer": false,
+      "invokeSound": "SFX_SceneObject_BarSwitch_Active",
+      "rotateAngleX": 90,
+      "rotateAngleY": 45,
+      "switchCd": 1,
+      "actionPrototypeId": 261,
+      "cameraPosition": [
+        0,
+        1.3,
+        0
+      ],
+      "cameraRotation": [
+        0,
+        0,
+        0
+      ],
+      "cancelPrototypeId": 260,
+      "fleldOfView": 65
+    },
+    "70738739": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "72095828": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72134409": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "257": {
+    "50950636": {
+      "antiGravityPercent": 0
+    },
+    "50954209": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    }
+  },
+  "378": {
+    "52068332": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "70298930": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "70657339": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "70657340": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "71784199": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "71787199": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "91405131": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "91405132": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "70298927": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "69435569": {
+      "counterPosition": [
+        0,
+        0,
+        0
+      ],
+      "counterRotation": [
+        0,
+        0,
+        0
+      ],
+      "counterScale": [
+        10,
+        5,
+        10
+      ],
+      "downLeftPointPosition": [
+        3,
+        -1.5,
+        -5
+      ],
+      "downRightPointPosition": [
+        -3,
+        -1.5,
+        -5
+      ],
+      "leftDecalPosition": [
+        3,
+        0,
+        2
+      ],
+      "previewPosition": [
+        0,
+        0,
+        10
+      ],
+      "minDistance": 0.02,
+      "totemType": 0,
+      "upLeftPointPosition": [
+        3,
+        1.25,
+        -5
+      ],
+      "upRightPointPosition": [
+        -3,
+        1.25,
+        -5
+      ],
+      "rightDecalPosition": [
+        -3,
+        0,
+        2
+      ]
+    },
+    "70298926": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "901": {
+    "54501466": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "44987560": {
+      "workableWhenStart": true,
+      "invokeSound": "SFX_SceneObject_ConsoleTrigger_ButtonPress",
+      "actionPrototypeId": 251,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    }
+  },
+  "614": {
+    "91062960": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    },
+    "91062958": {
+      "customPivotPoint": [
+        0,
+        0,
+        0
+      ],
+      "pivotMode": 0,
+      "rotationStates": [
+        {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "state": 0,
+          "duration": 0.5
+        },
+        {
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "state": 1,
+          "duration": 0.5
+        }
+      ]
+    }
+  },
+  "259": {},
+  "383": {
+    "58210678": {
+      "antiGravityPercent": 0
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210679": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "620": {
+    "91062631": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    },
+    "91062626": {
+      "customPivotPoint": [
+        0,
+        0,
+        0
+      ],
+      "pivotMode": 0,
+      "rotationStates": [
+        {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "state": 0,
+          "duration": 0.5
+        },
+        {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "state": 1,
+          "duration": 0.5
+        }
+      ]
+    }
+  },
+  "860": {
+    "76595557": {
+      "multiVideo": true
+    }
+  },
+  "261": {
+    "55186723": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "55186724": {
+      "actOnMaster": false,
+      "buffId": 11112
+    }
+  },
+  "46": {
+    "50866965": {
+      "bounceHeight": 0.05,
+      "pressHeight": -0.1,
+      "pressMass": 10,
+      "speed": 1
+    },
+    "73703619": {
+      "checkSpaceOwner": false,
+      "detectType": 1159,
+      "checkInterval": 0.5
+    },
+    "50866619": {
+      "checkSpaceOwner": false,
+      "detectType": 1159,
+      "checkInterval": 0.5
+    }
+  },
+  "210": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6.67
+        ]
+      ]
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "107": {
+    "47159063": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "47151008": {
+      "bounceHeight": -0.3,
+      "pressHeight": -0.4,
+      "pressMass": 10,
+      "speed": 1
+    },
+    "47152738": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "228": {
+    "58210733": {
+      "antiGravityPercent": 1
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210734": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "676": {
+    "91142295": {
+      "isAnimator": true
+    },
+    "91099674": {
+      "spawnerId": 0,
+      "subCompType": "SpawnerControl"
+    }
+  },
+  "275": {
+    "58210809": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210808": {
+      "antiGravityPercent": 0
+    }
+  },
+  "109": {
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0.5
+    }
+  },
+  "632": {
+    "91034138": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    },
+    "91030284": {
+      "customPivotPoint": [
+        0,
+        0,
+        0
+      ],
+      "pivotMode": 0,
+      "rotationStates": [
+        {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "state": 0,
+          "duration": 1
+        },
+        {
+          "rotation": [
+            -90,
+            0,
+            90
+          ],
+          "state": 1,
+          "duration": 2
+        },
+        {
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "state": 2,
+          "duration": 3
+        }
+      ]
+    }
+  },
+  "680": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": true,
+      "moveHeight": -1,
+      "moveTime": 3,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "681": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": -1,
+      "moveTime": 3,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "268": {
+    "55614713": {
+      "rowOffset": 1.5,
+      "columnConfig": [
+        {
+          "canInteract": true,
+          "enableRows": {},
+          "templateIndex": 0
+        },
+        {
+          "canInteract": true,
+          "enableRows": {},
+          "templateIndex": 1
+        },
+        {
+          "canInteract": true,
+          "enableRows": {},
+          "templateIndex": 2
+        },
+        {
+          "canInteract": true,
+          "enableRows": {},
+          "templateIndex": 3
+        },
+        {
+          "canInteract": true,
+          "enableRows": {},
+          "templateIndex": 4
+        }
+      ],
+      "columnOffset": 1.5,
+      "rowNum": 10
+    }
+  },
+  "677": {
+    "91099674": {
+      "spawnerId": 0,
+      "subCompType": "SpawnerControl"
+    }
+  },
+  "675": {
+    "80520879": {
+      "checkSpaceOwner": false,
+      "detectType": 4,
+      "checkInterval": 0.5
+    },
+    "80529385": {
+      "actOnMaster": false,
+      "buffId": 1145128
+    }
+  },
+  "674": {
+    "91099674": {
+      "spawnerId": 0,
+      "subCompType": "SpawnerControl"
+    }
+  },
+  "113": {
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0
+    }
+  },
+  "168": {
+    "61919973": {
+      "distance": 20
+    }
+  },
+  "54": {
+    "74439271": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "74439269": {
+      "bounceHeight": 0,
+      "pressHeight": -0.25,
+      "pressMass": 10,
+      "speed": 1
+    },
+    "74439270": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "673": {
+    "91091386": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": true
+    },
+    "91091388": {
+      "resetTime": -1,
+      "basicIds": "",
+      "familyIds": "",
+      "formNames": "",
+      "labels": "",
+      "repeatable": false,
+      "templateIds": "",
+      "stages": ""
+    },
+    "91091390": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "115": {
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0
+    }
+  },
+  "659": {
+    "91219652": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": true,
+      "moveHeight": -1,
+      "moveTime": 3,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "657": {
+    "91219645": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": 0,
+      "moveTime": 0,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "174": {
+    "52075635": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "52075636": {
+      "actOnMaster": false,
+      "buffId": 10016
+    },
+    "79110749": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "117": {
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0
+    }
+  },
+  "206": {
+    "49991837": {
+      "dropType": 0,
+      "dropIndex": 1,
+      "slotData": [
+        {
+          "slotPosition": [
+            0,
+            1,
+            0
+          ],
+          "autoCreate": true,
+          "disableSlot": false,
+          "templateId": 10001,
+          "slotRotation": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "slotPosition": [
+            0,
+            1,
+            0
+          ],
+          "autoCreate": true,
+          "disableSlot": false,
+          "templateId": 10001,
+          "slotRotation": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "slotPosition": [
+            0,
+            1,
+            0
+          ],
+          "autoCreate": true,
+          "disableSlot": false,
+          "templateId": 0,
+          "slotRotation": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "treeState": 0
+    }
+  },
+  "118": {
+    "48769805": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 15
+    },
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0
+    }
+  },
+  "650": {
+    "52420522": {
+      "chargeTime": 1,
+      "impulseThreshold": 400
+    },
+    "91048981": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "119": {
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0
+    }
+  },
+  "249": {
+    "54501466": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "54501368": {
+      "interactCD": 1,
+      "interactPrototypeId": 155,
+      "interactRefId": 0,
+      "interactRefList": {}
+    }
+  },
+  "634": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0,
+            -0.8,
+            0,
+            -0.6
+          ],
+          "position": [
+            0.23,
+            1.53,
+            -0.81
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.83,
+            0,
+            -0.56
+          ],
+          "position": [
+            -23.59,
+            -10.42,
+            1.93
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.37,
+            0,
+            0.93
+          ],
+          "position": [
+            0.83,
+            -28.44,
+            -26.4
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.97,
+            0,
+            0.24
+          ],
+          "position": [
+            6.54,
+            -28.4,
+            48.5
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            -0.2,
+            0,
+            -0.98
+          ],
+          "position": [
+            -23.08,
+            -25.59,
+            19.34
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.57,
+            0,
+            -0.82
+          ],
+          "position": [
+            -15.31,
+            -0.18,
+            13.49
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            -1.72,
+            6.68,
+            0.68
+          ],
+          "controlPointTo": [
+            -10.21,
+            11.9,
+            9.61
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 0,
+          "targetIndex": 5,
+          "type": "BezierMoveAction",
+          "duration": 4,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -21.34,
+            -12.07,
+            17.81
+          ],
+          "controlPointTo": [
+            -25.27,
+            -23.61,
+            13.52
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 5,
+          "targetIndex": 4,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -18.48,
+            -32,
+            33.86
+          ],
+          "controlPointTo": [
+            0.44,
+            -22.69,
+            50.58
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 4,
+          "targetIndex": 3,
+          "type": "BezierMoveAction",
+          "duration": 8,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -4.53,
+            -21.55,
+            26.82
+          ],
+          "controlPointTo": [
+            -8.85,
+            -19.47,
+            -5.18
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 3,
+          "targetIndex": 2,
+          "type": "BezierMoveAction",
+          "duration": 10,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -25.2,
+            -22.77,
+            -1.85
+          ],
+          "controlPointTo": [
+            -24.58,
+            -17.65,
+            2.17
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 2,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 7,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -13.92,
+            9.99,
+            -8.62
+          ],
+          "controlPointTo": [
+            0.23,
+            1.53,
+            -0.81
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 4,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        }
+      ]
+    }
+  },
+  "250": {
+    "54501466": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "54501523": {
+      "interactCD": 1,
+      "interactPrototypeId": 154,
+      "interactRefId": 0,
+      "interactRefList": {}
+    }
+  },
+  "821": {
+    "72095828": {
+      "localPosition": [
+        -4.14,
+        1.04,
+        0.29
+      ],
+      "localScale": [
+        7.56,
+        2.68,
+        5.61
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "91228560": {
+      "arkConditionId": 1000,
+      "forward": [
+        -1,
+        0,
+        -0.8
+      ],
+      "staticId": 91244529
+    },
+    "72134409": {
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "631": {
+    "91021511": {
+      "gridCellIds": {},
+      "switchCellId": 0
+    }
+  },
+  "122": {
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "51386932": {
+      "workableWhenStart": true,
+      "invokeSound": "",
+      "actionPrototypeId": 125,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    },
+    "44987560": {
+      "workableWhenStart": true,
+      "invokeSound": "",
+      "actionPrototypeId": 125,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    }
+  },
+  "861": {
+    "76595557": {
+      "multiVideo": true
+    }
+  },
+  "862": {
+    "76595557": {
+      "multiVideo": true
+    }
+  },
+  "613": {
+    "91062886": {
+      "customPivotPoint": [
+        0,
+        0,
+        0
+      ],
+      "pivotMode": 0,
+      "rotationStates": [
+        {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "state": 0,
+          "duration": 0.5
+        },
+        {
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "state": 1,
+          "duration": 0.5
+        }
+      ]
+    },
+    "91062884": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "607": {
+    "91062744": {
+      "customPivotPoint": [
+        0,
+        0,
+        0
+      ],
+      "pivotMode": 0,
+      "rotationStates": [
+        {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "state": 0,
+          "duration": 0.5
+        },
+        {
+          "rotation": [
+            0,
+            90,
+            90
+          ],
+          "state": 1,
+          "duration": 0.5
+        }
+      ]
+    },
+    "91062746": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "125": {
+    "51219203": {
+      "tweenRadiusSpeed": 20,
+      "fogCutoffRadius": 10
+    }
+  },
+  "591": {},
+  "587": {
+    "55701939": {
+      "delaySpurtTime": 0,
+      "scaleValue": 1,
+      "onceSpurtTime": 1,
+      "spurtInterval": 0
+    },
+    "59832261": {
+      "rotationCoord": 0,
+      "rotDir": 0,
+      "rotSpeed": 0,
+      "rotTime": -1,
+      "rotationAxis": 1
+    }
+  },
+  "126": {
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    }
+  },
+  "559": {
+    "59832261": {
+      "rotationCoord": 1,
+      "rotDir": 0,
+      "rotSpeed": 10,
+      "rotTime": -1,
+      "rotationAxis": 1
+    }
+  },
+  "556": {},
+  "280": {
+    "66654361": {
+      "vector3Params": {},
+      "vector4Params": {},
+      "floatParams": [
+        {
+          "propertyName": "RandomMinScale",
+          "propertyValue": 0.2
+        },
+        {
+          "propertyName": "RandomMaxScale",
+          "propertyValue": 5
+        }
+      ],
+      "intParams": {},
+      "vector2Params": {}
+    },
+    "66654408": {
+      "vector3Params": {},
+      "vector4Params": {},
+      "floatParams": {},
+      "intParams": {},
+      "vector2Params": {}
+    },
+    "56905866": {
+      "lineDuration": 0.5,
+      "lineResolution": 20,
+      "toStoneId": 0,
+      "dottedLineDuration": 1,
+      "dottedLineResolution": 25,
+      "fromStoneId": 0
+    }
+  },
+  "498": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0.1,
+            0,
+            0,
+            1
+          ],
+          "position": [
+            0.1,
+            -0.02,
+            0.08
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0.02,
+            0,
+            4.15
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            5.26,
+            -1.21,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            6.39
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 0,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "load",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "controlPointFrom": [
+            0,
+            0,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            0
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "unload",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        }
+      ]
+    }
+  },
+  "497": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0.1,
+            0,
+            0,
+            1
+          ],
+          "position": [
+            0.1,
+            -0.02,
+            0.08
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0.02,
+            0,
+            4.15
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            5.26,
+            -1.21,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            6.39
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 0,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "load",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "controlPointFrom": [
+            0,
+            0,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            0
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "unload",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        }
+      ]
+    }
+  },
+  "264": {
+    "55186723": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "55186724": {
+      "actOnMaster": false,
+      "buffId": 11113
+    }
+  },
+  "146": {
+    "50268829": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": true
+    },
+    "50268828": {
+      "itemCount": 5,
+      "duration": 30,
+      "blackScreenId": 0,
+      "resetPortalId": 0,
+      "itemList": [
+        [
+          -0.17,
+          0.48,
+          2.32
+        ],
+        [
+          -1.22,
+          0.48,
+          3.78
+        ],
+        [
+          -0.27,
+          0.48,
+          5.08
+        ],
+        [
+          1.9,
+          0.48,
+          3.43
+        ],
+        [
+          1.01,
+          0.48,
+          5.41
+        ]
+      ],
+      "chestSpawnerId": 0,
+      "showTime": 1,
+      "markId": 0,
+      "luaTransData": {
+        "transData": [
+          {
+            "refName": "StartTrigger",
+            "trans": {
+              "localPosition": [
+                0.18,
+                1.02,
+                0
+              ],
+              "localRotation": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ]
+      },
+      "cameraHeightDelta": 0.5,
+      "cameraMaxLockTime": 3,
+      "cameraTargetShoulder": [
+        2,
+        1,
+        0
+      ],
+      "cameraTransitionSpeed": 1
+    }
+  },
+  "495": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0.1,
+            0,
+            0,
+            1
+          ],
+          "position": [
+            0.1,
+            -0.02,
+            0.08
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0.02,
+            0,
+            4.15
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            5.26,
+            -1.21,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            6.39
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 0,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "load",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "controlPointFrom": [
+            0,
+            0,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            0
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "unload",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        }
+      ]
+    }
+  },
+  "270": {
+    "55186432": {
+      "fanAcceleration": 360,
+      "power": 60,
+      "constraintPower": 6,
+      "fanMaxSpeed": 720
+    },
+    "55186433": {
+      "power": 60,
+      "elementLevel": 0,
+      "elementPower": 0,
+      "isConstraintWhenStart": true,
+      "shape": {
+        "endPosition": [
+          0,
+          34,
+          0
+        ],
+        "shapeType": "LinearShape",
+        "startPosition": [
+          0,
+          30,
+          0
+        ]
+      },
+      "constraintPower": 6
+    },
+    "55186434": {
+      "checkSpaceOwner": false,
+      "detectType": 1687,
+      "checkInterval": 0.5
+    },
+    "55770537": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "55770553": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "61213165": {
+      "vector3Params": {},
+      "vector4Params": {},
+      "floatParams": [
+        {
+          "propertyName": "Scale Height",
+          "propertyValue": 19
+        }
+      ],
+      "intParams": {},
+      "vector2Params": {}
+    }
+  },
+  "178": {},
+  "87": {
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "44987560": {
+      "workableWhenStart": true,
+      "invokeSound": "",
+      "actionPrototypeId": 55,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    }
+  },
+  "489": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": -1,
+      "moveTime": 1,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "31": {
+    "42809358": {
+      "nurseryState": 0,
+      "checkTemplateId": 10001
+    },
+    "42809359": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "193": {
+    "50584946": {
+      "resetTime": -1,
+      "repeatable": true,
+      "eventId": 70000115
+    },
+    "56398137": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398135": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "487": {
+    "58210702": {
+      "antiGravityPercent": 0
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210703": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "134": {
+    "49655611": {
+      "blackScreenDelay": 2,
+      "reTriggerCD": 3,
+      "teleportDelay": 2.5,
+      "teleportMarkIds": {},
+      "buffId": 2117402,
+      "blackScreenId": 5
+    },
+    "49655612": {
+      "checkOnStay": false,
+      "detectType": 7,
+      "checkSpaceOwner": false
+    },
+    "45489018": {
+      "checkOnStay": false,
+      "detectType": 7,
+      "checkSpaceOwner": false
+    }
+  },
+  "486": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0,
+            0.46,
+            0,
+            -0.89
+          ],
+          "position": [
+            0.23,
+            1.53,
+            -0.81
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.82,
+            0,
+            -0.58
+          ],
+          "position": [
+            42.77,
+            1.71,
+            11.67
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.97,
+            0,
+            -0.26
+          ],
+          "position": [
+            59.38,
+            1.73,
+            44.46
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.97,
+            0,
+            0.23
+          ],
+          "position": [
+            41.53,
+            1.82,
+            97.92
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.69,
+            0,
+            0.72
+          ],
+          "position": [
+            4.42,
+            2.6,
+            105.29
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0.09,
+            0,
+            1
+          ],
+          "position": [
+            -26.98,
+            2.6,
+            48.43
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            -31.26,
+            2.6,
+            59.84
+          ],
+          "controlPointTo": [
+            4.42,
+            2.6,
+            105.29
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 5,
+          "targetIndex": 4,
+          "type": "BezierMoveAction",
+          "duration": 26,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            15.14,
+            2.6,
+            109.34
+          ],
+          "controlPointTo": [
+            41.43,
+            2.6,
+            97.39
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 4,
+          "targetIndex": 3,
+          "type": "BezierMoveAction",
+          "duration": 15,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            54.69,
+            2.6,
+            89.9
+          ],
+          "controlPointTo": [
+            59.38,
+            1.73,
+            44.46
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 3,
+          "targetIndex": 2,
+          "type": "BezierMoveAction",
+          "duration": 22,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            59.38,
+            1.73,
+            44.46
+          ],
+          "controlPointTo": [
+            42.77,
+            1.71,
+            11.67
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 2,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 14,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            42.77,
+            1.71,
+            11.67
+          ],
+          "controlPointTo": [
+            -0.87,
+            1.53,
+            -0.26
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 18,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "controlPointFrom": [
+            -9.97,
+            1.53,
+            -3.31
+          ],
+          "controlPointTo": [
+            -26.79,
+            2.6,
+            47.29
+          ],
+          "rotateSpeed": 3,
+          "startIndex": 0,
+          "targetIndex": 5,
+          "type": "BezierMoveAction",
+          "duration": 22,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        }
+      ]
+    }
+  },
+  "135": {
+    "56920428": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "56920467": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "152": {
+    "50584946": {
+      "resetTime": -1,
+      "repeatable": true,
+      "eventId": 70000114
+    },
+    "58211387": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "485": {
+    "80520879": {
+      "checkSpaceOwner": false,
+      "detectType": 7,
+      "checkInterval": 0.5
+    },
+    "80529385": {
+      "actOnMaster": false,
+      "buffId": 1145114
+    }
+  },
+  "144": {
+    "50273285": {
+      "checkSpaceOwner": false,
+      "detectType": 1175,
+      "checkInterval": 0.5
+    },
+    "50273287": {
+      "checkSpaceOwner": false,
+      "detectType": 1175,
+      "checkInterval": 0.5
+    }
+  },
+  "198": {
+    "61919973": {
+      "distance": 20
+    }
+  },
+  "478": {
+    "54919957": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "79795784": {
+      "isTriggerSensor": true,
+      "maxHitCount": 5
+    },
+    "52068346": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "265": {
+    "52420522": {
+      "chargeTime": 1,
+      "impulseThreshold": 400
+    },
+    "91048981": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "154": {
+    "50584946": {
+      "resetTime": -1,
+      "repeatable": true,
+      "eventId": 70000115
+    },
+    "56398060": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "150": {
+    "50878643": {
+      "workableWhenStart": true,
+      "invokeSound": "",
+      "actionPrototypeId": 142,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    },
+    "50928747": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "187": {
+    "58210702": {
+      "antiGravityPercent": 0
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210703": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "464": {
+    "91139464": {
+      "customData": 0,
+      "enableState": 0,
+      "subCompType": "DynamicVoxelSB",
+      "boundMax": [
+        4,
+        4.12,
+        0.79
+      ],
+      "boundMin": [
+        -4,
+        0,
+        -0.76
+      ]
+    },
+    "78987178": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "463": {
+    "91139459": {
+      "customData": 0,
+      "enableState": 0,
+      "subCompType": "DynamicVoxelSB",
+      "boundMax": [
+        4,
+        4.13,
+        0.79
+      ],
+      "boundMin": [
+        -4.03,
+        0,
+        -0.76
+      ]
+    },
+    "78987178": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "197": {
+    "61919973": {
+      "distance": 20
+    }
+  },
+  "157": {
+    "50950636": {
+      "antiGravityPercent": 0
+    },
+    "50954209": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    }
+  },
+  "395": {
+    "72193952": {
+      "savePointId": 0,
+      "forbidRecoverHp": false
+    },
+    "72193953": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72198956": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "158": {
+    "51219211": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "50950685": {
+      "antiGravityPercent": 0
+    },
+    "50954241": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    }
+  },
+  "397": {
+    "59832261": {
+      "rotationCoord": 0,
+      "rotDir": 0,
+      "rotSpeed": 0,
+      "rotTime": 0,
+      "rotationAxis": 2
+    },
+    "72513881": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "330": {},
+  "173": {
+    "52420522": {
+      "chargeTime": -1,
+      "impulseThreshold": 100
+    }
+  },
+  "165": {
+    "51380994": {
+      "resetTime": -1,
+      "repeatable": true,
+      "eventId": 70000114
+    },
+    "51380993": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "444": {
+    "74220301": {
+      "titleKey": "",
+      "duration": 60
+    }
+  },
+  "454": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": -1,
+      "moveTime": 1,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "41": {
+    "52068321": {
+      "bounceHeight": 0,
+      "pressHeight": -0.25,
+      "pressMass": 10,
+      "speed": 1
+    },
+    "52068323": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "52068324": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "278": {
+    "56920428": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "56920467": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "446": {
+    "76239567": {
+      "deltaTime": 0,
+      "spikeIdGroups": {}
+    }
+  },
+  "451": {
+    "76595557": {
+      "multiVideo": true
+    }
+  },
+  "448": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": true,
+      "moveHeight": -1,
+      "moveTime": 0.25,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "431": {
+    "73871347": {
+      "dialogueGraphId": 0
+    }
+  },
+  "447": {
+    "76288671": {
+      "progressTextKey": "ball_target_progress",
+      "spawnerId": 0,
+      "autoReset": false,
+      "maxBallCount": 1542
+    }
+  },
+  "433": {
+    "74830881": {
+      "interactId": 0,
+      "interactType": 0,
+      "interactInfo": {},
+      "onlyDoOnceForever": false,
+      "overrideNpcTemplateId": -1,
+      "showStyle": 0,
+      "uiShowDistance": 0,
+      "useConfigActCooldown": false,
+      "staticId": 0,
+      "handlePetEthnicGroup": false,
+      "canInteractDistance": 0
+    }
+  },
+  "439": {
+    "75060209": {
+      "chestId": 0,
+      "duration": 1,
+      "syncChestPosition": true,
+      "flyToPlayer": true
+    }
+  },
+  "441": {
+    "75293426": {
+      "chestId": 0,
+      "duration": 1,
+      "syncChestPosition": true,
+      "flyToPlayer": false
+    }
+  },
+  "1": {
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "44987560": {
+      "workableWhenStart": true,
+      "invokeSound": "SFX_SceneObject_BarSwitch_Active",
+      "actionPrototypeId": 180,
+      "switchCd": 1,
+      "interactWhenUnWorkable": true
+    }
+  },
+  "2": {
+    "42720819": {
+      "startIndex": 0,
+      "bindEntStaticIds": {},
+      "bindLevelItemIds": {},
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ],
+      "speed": 1,
+      "platformType": 0
+    }
+  },
+  "175": {
+    "52075636": {
+      "actOnMaster": false,
+      "buffId": 11110
+    },
+    "52075635": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "453": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": -1,
+      "moveTime": 1,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "455": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": true,
+      "moveHeight": -1,
+      "moveTime": 3,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "176": {
+    "50950636": {
+      "antiGravityPercent": 0
+    },
+    "50954209": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    }
+  },
+  "148": {
+    "50598754": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": true
+    },
+    "50598753": {
+      "luaSpline": {
+        "splineData": [
+          {
+            "position": [
+              0,
+              0.56,
+              0
+            ]
+          },
+          {
+            "position": [
+              -3.64,
+              0.84,
+              6.46
+            ]
+          },
+          {
+            "position": [
+              -0.72,
+              0.81,
+              11.73
+            ]
+          },
+          {
+            "position": [
+              1.59,
+              0.71,
+              20.05
+            ]
+          },
+          {
+            "position": [
+              4.71,
+              1.17,
+              20.87
+            ]
+          },
+          {
+            "position": [
+              4.91,
+              1.19,
+              25.16
+            ]
+          }
+        ]
+      },
+      "duration": 30,
+      "blackScreenId": 0,
+      "resetPortalId": 0,
+      "itemList": {},
+      "chestSpawnerId": 0,
+      "markId": 0,
+      "luaTransData": {
+        "transData": [
+          {
+            "refName": "StartTriggerRoot",
+            "trans": {
+              "localPosition": [
+                0,
+                0,
+                0
+              ],
+              "localRotation": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "refName": "RaceSpline",
+            "trans": {
+              "localPosition": [
+                0,
+                0,
+                0
+              ],
+              "localRotation": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "refName": "LookAtPoint",
+            "trans": {
+              "localPosition": [
+                0,
+                1,
+                10
+              ],
+              "localRotation": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ]
+      },
+      "effectMoveDuration": 4
+    }
+  },
+  "462": {},
+  "202": {
+    "53123078": {
+      "bounceHeight": 1.85,
+      "pressHeight": 0.25,
+      "pressMass": 10,
+      "speed": 1
+    },
+    "53123199": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "53123200": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    }
+  },
+  "301": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    "60348572": {
+      "bindLevelItemIds": {},
+      "initPosition": [
+        0,
+        0,
+        0
+      ],
+      "initRotation": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bindEntStaticIds": {}
+    }
+  },
+  "465": {
+    "91139465": {
+      "customData": 0,
+      "enableState": 0,
+      "subCompType": "DynamicVoxelSB",
+      "boundMax": [
+        4,
+        4.12,
+        0.79
+      ],
+      "boundMin": [
+        -4,
+        0,
+        -0.76
+      ]
+    },
+    "78987178": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "468": {
+    "78993158": {
+      "actOnMaster": false,
+      "buffId": 0
+    },
+    "78993157": {
+      "checkSpaceOwner": false,
+      "detectType": 7,
+      "checkInterval": 0.5
+    }
+  },
+  "430": {
+    "73429185": {
+      "positions": {},
+      "rotations": {}
+    }
+  },
+  "106": {
+    "42720819": {
+      "startIndex": 0,
+      "bindEntStaticIds": {},
+      "bindLevelItemIds": {},
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ],
+      "speed": 1,
+      "platformType": 0
+    },
+    "47148946": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "435": {
+    "50584946": {
+      "resetTime": 3,
+      "repeatable": true,
+      "eventId": 70000113
+    },
+    "-1": {
+      "path": {}
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "436": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": -1,
+      "moveTime": 1,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "139": {
+    "49978287": {
+      "turnWindPower": 10,
+      "maxSpeed": 1000,
+      "acceleration": 500
+    }
+  },
+  "437": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": -1,
+      "moveTime": 1,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "438": {
+    "75059569": {
+      "bindDynamicObject": false,
+      "bindEntStaticId": 0,
+      "cd": 0,
+      "deltaPosition": [
+        0,
+        0,
+        0
+      ],
+      "deltaRotation": [
+        0,
+        0,
+        0
+      ],
+      "enableMove": false,
+      "moveHeight": -1,
+      "moveTime": 3,
+      "impulseId": 0,
+      "bindLevelItemId": 0
+    }
+  },
+  "440": {
+    "75141201": {
+      "playSequence": false,
+      "resId": "",
+      "noReconnectPlay": false
+    }
+  },
+  "442": {
+    "75256528": {
+      "chestId": 0,
+      "duration": 1,
+      "syncChestPosition": true,
+      "flyToPlayer": false
+    }
+  },
+  "96": {
+    "72040899": {
+      "tightness": 0.8,
+      "staticId": 0,
+      "offset": [
+        0,
+        0.5,
+        0
+      ],
+      "length": 5
+    }
+  },
+  "189": {
+    "50950636": {
+      "antiGravityPercent": 0
+    },
+    "50954209": {
+      "checkSpaceOwner": false,
+      "detectType": 135,
+      "checkInterval": 0.5
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    }
+  },
+  "141": {
+    "62363277": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "49991837": {
+      "dropType": 0,
+      "dropIndex": 1,
+      "slotData": [
+        {
+          "slotPosition": [
+            0.55,
+            2.66,
+            0.31
+          ],
+          "autoCreate": true,
+          "disableSlot": false,
+          "templateId": 10001,
+          "slotRotation": [
+            0.02,
+            -0.42,
+            0.03,
+            0.91
+          ]
+        },
+        {
+          "slotPosition": [
+            1.03,
+            1.53,
+            -0.71
+          ],
+          "autoCreate": true,
+          "disableSlot": false,
+          "templateId": 10001,
+          "slotRotation": [
+            0,
+            -0.28,
+            0,
+            -0.96
+          ]
+        },
+        {
+          "slotPosition": [
+            -1.11,
+            1.43,
+            0.82
+          ],
+          "autoCreate": true,
+          "disableSlot": false,
+          "templateId": 10001,
+          "slotRotation": [
+            0,
+            0.79,
+            0,
+            -0.61
+          ]
+        }
+      ],
+      "treeState": 0
+    }
+  },
+  "142": {
+    "49996533": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "49996534": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "54408025": {
+      "chestId": 0,
+      "customId2State": {},
+      "id2State": {
+        "0": 1
+      }
+    },
+    "49996532": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    }
+  },
+  "484": {
+    "52075635": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "52075636": {
+      "actOnMaster": true,
+      "buffId": 10016
+    },
+    "79110749": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "143": {
+    "50584946": {
+      "resetTime": -1,
+      "repeatable": false,
+      "eventId": 0
+    },
+    "63479933": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "204": {
+    "49996532": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "49996533": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "49996534": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "54408025": {
+      "chestId": 0,
+      "customId2State": {},
+      "id2State": {
+        "0": 1
+      }
+    },
+    "53172216": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    }
+  },
+  "205": {
+    "53172238": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "53172239": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "49996532": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "49996533": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "49996534": {
+      "bindSwitchId": 0,
+      "targetState": 1,
+      "radius": 1.9
+    },
+    "54408025": {
+      "chestId": 0,
+      "customId2State": {},
+      "id2State": {
+        "0": 1
+      }
+    }
+  },
+  "488": {},
+  "194": {
+    "50584946": {
+      "resetTime": -1,
+      "repeatable": true,
+      "eventId": 70000115
+    },
+    "56398277": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398271": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398273": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398275": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "188": {
+    "58210716": {
+      "checkSpaceOwner": false,
+      "detectType": 133,
+      "checkInterval": 0.5
+    },
+    "66481959": {
+      "power": 85,
+      "elementLevel": 0,
+      "elementPower": 0,
+      "isConstraintWhenStart": true,
+      "shape": {
+        "endPosition": [
+          0,
+          1,
+          0
+        ],
+        "shapeType": "LinearShape",
+        "startPosition": [
+          0,
+          0,
+          0
+        ]
+      },
+      "constraintPower": 0
+    },
+    "51219203": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "58210715": {
+      "antiGravityPercent": 0
+    }
+  },
+  "195": {
+    "56398323": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398325": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398327": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398329": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "50584944": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "50584946": {
+      "resetTime": -1,
+      "repeatable": true,
+      "eventId": 70000115
+    },
+    "56398271": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398273": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398275": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    },
+    "56398277": {
+      "checkOnStay": false,
+      "detectType": 3,
+      "checkSpaceOwner": false
+    }
+  },
+  "493": {
+    "82694593": {
+      "resId": "",
+      "hitTimeWindow": 0.1
+    }
+  },
+  "494": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0.1,
+            0,
+            0,
+            1
+          ],
+          "position": [
+            0.1,
+            -0.02,
+            0.08
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "position": [
+            92.76,
+            0,
+            7.88
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            5.26,
+            -1.21,
+            0
+          ],
+          "controlPointTo": [
+            94.77,
+            0,
+            15.84
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 0,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "load",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "controlPointFrom": [
+            0,
+            -0.06,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            -0.22,
+            0
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "unload",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        }
+      ]
+    }
+  },
+  "460": {
+    "72095828": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72134409": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  },
+  "496": {
+    "80670650": {
+      "path": [
+        {
+          "rotation": [
+            0.1,
+            0,
+            0,
+            1
+          ],
+          "position": [
+            0.1,
+            -0.02,
+            0.08
+          ]
+        },
+        {
+          "rotation": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0.02,
+            0,
+            4.15
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "controlPointFrom": [
+            5.26,
+            -1.21,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            6.39
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 0,
+          "targetIndex": 1,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "load",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        },
+        {
+          "controlPointFrom": [
+            0,
+            0,
+            0
+          ],
+          "controlPointTo": [
+            0,
+            0,
+            0
+          ],
+          "rotateSpeed": 1,
+          "startIndex": 1,
+          "targetIndex": 0,
+          "type": "BezierMoveAction",
+          "duration": 5,
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.BezierMoveAction"
+        },
+        {
+          "type": "EmitSignalAction",
+          "signal": "unload",
+          "LuaForCsClass": "FunPlus.WorldX.GameApp.Sandbox.ClientPlatform.EmitSignalAction"
+        }
+      ]
+    }
+  },
+  "302": {
+    "58204944": {
+      "fallDelay": 1,
+      "restoreDelay": 3.5
+    },
+    "58204945": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    }
+  },
+  "405": {
+    "82133680": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "82133681": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "82133678": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "72162659": {
+      "fadeDistance": 25,
+      "maxOffSet": 1.5,
+      "posRecordInterval": 0,
+      "recoverCameraDelay": 0,
+      "targetArmLength": 7,
+      "fadeTime": 15,
+      "wayPoints": [
+        [
+          -6.78,
+          0,
+          0
+        ],
+        [
+          6.27,
+          0,
+          0
+        ]
+      ],
+      "cameraBlendTime": 0,
+      "cameraFov": 60,
+      "chestSpawnerIds": {},
+      "countDownTime": 60
+    },
+    "72162660": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72162661": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72162662": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72162663": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72163792": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "72163793": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "72163794": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "72163795": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "72163796": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "72170497": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "72170498": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "72170499": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "72170500": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "72170501": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "72204409": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "82131466": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "82133677": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "52068266": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "82133679": {
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "499": {
+    "83712329": {
+      "titleKey": "ARK_BUILDING_3",
+      "radius": 5,
+      "descKey": "",
+      "sectors": [
+        [
+          90,
+          270
+        ]
+      ],
+      "showPoints": [
+        {
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "resId": "$P_Item_ArkMark_UI.prefab"
+    }
+  },
+  "116": {
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0
+    }
+  },
+  "303": {
+    "90879962": {
+      "checkSpaceOwner": true,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "90879963": {
+      "checkSpaceOwner": true,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "90879964": {
+      "checkSpaceOwner": true,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "91118258": {
+      "size": [
+        6.04,
+        4.28,
+        6.04
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "91290735": {
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "91290736": {
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "91290737": {
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "91291368": {
+      "localPosition": [
+        3.12,
+        0.2,
+        -3.91
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "91296983": {
+      "localPosition": [
+        4.54,
+        0,
+        5.98
+      ],
+      "localScale": [
+        3,
+        3,
+        3
+      ],
+      "localEulerAngles": [
+        349.69,
+        52.24,
+        3.06
+      ]
+    },
+    "91379295": {
+      "localPosition": [
+        6.25,
+        0.21,
+        -1.53
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "91379296": {
+      "localPosition": [
+        5.04,
+        -0.28,
+        2.08
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "91379297": {
+      "localPosition": [
+        4.54,
+        0,
+        5.98
+      ],
+      "localScale": [
+        3,
+        3,
+        3
+      ],
+      "localEulerAngles": [
+        0,
+        0,
+        0
+      ]
+    },
+    "52068266": {
+      "checkSpaceOwner": true,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "78987458": {
+      "subFlowers": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "moveTime": 1,
+          "end": [
+            3.12,
+            0.2,
+            -3.91
+          ]
+        },
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "moveTime": 1,
+          "end": [
+            -0.39,
+            0.64,
+            3.87
+          ]
+        },
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "moveTime": 1,
+          "end": [
+            3.96,
+            0.11,
+            1.54
+          ]
+        }
+      ],
+      "ends": [
+        [
+          3.12,
+          0.2,
+          -3.91
+        ],
+        [
+          -0.39,
+          0.64,
+          3.87
+        ],
+        [
+          3.96,
+          0.11,
+          1.54
+        ]
+      ],
+      "fanEndPos": [
+        0,
+        1,
+        0
+      ],
+      "fanMoveTime": 1,
+      "fanStartPos": [
+        0,
+        0,
+        0
+      ],
+      "moveTimes": [
+        1,
+        1,
+        1
+      ],
+      "starts": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "centerPos": [
+        4.54,
+        0,
+        5.98
+      ],
+      "timeOut": 999
+    }
+  },
+  "318": {
+    "44987562": {
+      "checkSpaceOwner": false,
+      "detectType": 3,
+      "checkInterval": 0.5
+    },
+    "72138475": {
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "height": 0,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    "44987560": {
+      "workableWhenStart": true,
+      "invokeSound": "SFX_SceneObject_BarSwitch_Active",
+      "actionPrototypeId": 180,
+      "switchCd": 1,
+      "interactWhenUnWorkable": false
+    }
+  },
+  "327": {
+    "58031210": {
+      "path": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ]
+      ]
+    }
+  },
+  "160": {},
+  "256": {},
+  "321": {
+    "50866965": {
+      "bounceHeight": 0,
+      "pressHeight": -0.2,
+      "pressMass": 1,
+      "speed": 1
+    },
+    "58808436": {
+      "checkSpaceOwner": false,
+      "detectType": 1155,
+      "checkInterval": 0.5
+    },
+    "58808435": {
+      "checkSpaceOwner": false,
+      "detectType": 1155,
+      "checkInterval": 0.5
+    }
+  },
+  "338": {
+    "61568800": {
+      "blendInExp": 2,
+      "blendInFunc": 0,
+      "blendOutDuration": 2,
+      "blendOutExp": 2,
+      "blendOutFunc": 0,
+      "blendToPos": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "blendInDuration": 2
+    }
+  },
+  "114": {
+    "47163674": {
+      "checkSpaceOwner": false,
+      "detectType": 131,
+      "checkInterval": 0.5
+    },
+    "47163675": {
+      "tweenRadiusSpeed": 5,
+      "fogCutoffRadius": 10
+    },
+    "47754953": {
+      "antiGravityPercent": 0
+    }
+  },
+  "243": {
+    "54299514": {
+      "checkSpaceOwner": false,
+      "detectType": 128,
+      "checkInterval": 0.5
+    }
+  }
+}

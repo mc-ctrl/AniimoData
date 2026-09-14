@@ -1,0 +1,100 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91323020",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10323_Skill_SwordDance_Buff"
+    }
+  ],
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "37b0d7b8-11a6-46d8-93a6-4503642b390a",
+      "effectId": "Eff_Parmon_10323_Skill_SwordDance_Buff_01",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "templateId": 1032103,
+      "name": "checkTargetTemplateId",
+      "UID": "162830f5-2612-4c84-b965-17bd36480c62",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "8074ee94-466e-474e-8917-e609c5153a74",
+      "effectId": "Eff_Parmon_10323_Skill_SwordDance_Buff_02",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "calcInfo": {
+        "passive_energy_cur": -4
+      },
+      "name": "calcResult",
+      "UID": "1fd8b305-0da4-4725-bc14-ab4d14fb0452",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3761230e-041f-4364-9cdc-41c958566cad",
+      "effectId": "Eff_Parmon_10323_Skill_SwordDance_Buff_02",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "9e91142b-3c72-42e4-a4bd-79077e51b1d3",
+      "effectId": "Eff_Parmon_10323_Skill_SwordDance_Buff_01",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "11": {
+      "templateId": 1032100,
+      "name": "checkTargetTemplateId",
+      "UID": "cffaae4a-e0a2-40f7-992d-512127bc0029",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "cfc3ce95-cba5-4952-8318-f1343f4325dc",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        3,
+        7
+      ]
+    },
+    "12": {
+      "UID": "a34455d8-2e4f-4d7c-8b52-d4c32fa0e2cc",
+      "conditionIds": [
+        11,
+        13
+      ],
+      "name": "conditionOr",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    8,
+    10,
+    15
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

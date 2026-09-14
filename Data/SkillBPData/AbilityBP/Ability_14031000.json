@@ -1,0 +1,68 @@
+{
+  "BPName": "ability_14031000",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10300000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14031000001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "56": {
+      "UID": "e68c7381-2202-4cf6-9af9-4ad1258ab477",
+      "randomPercent": 0.7,
+      "name": "isRandom",
+      "NodeID": 56
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "d2dd1caa-c6f0-443c-ace8-e8cdfd45cece",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        55
+      ],
+      "NodeID": 9
+    },
+    "55": {
+      "timelineId": 14031000002,
+      "name": "setCombatActionTimeline",
+      "UID": "ae5c4e6a-df03-4ad7-abf4-221556dfc6ae",
+      "target": "CASTER",
+      "NodeID": 55
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01_Boss"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Water_Blunt",
+    "Eff_Skill_Common_Warning_NoFrame",
+    "Eff_Parmon_10403_Attack01_Left_Boss",
+    "Eff_Parmon_10403_Attack01_Right_Boss"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    14031001,
+    14031003
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

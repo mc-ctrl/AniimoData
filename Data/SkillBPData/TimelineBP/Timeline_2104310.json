@@ -1,0 +1,86 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b1f8128d-befa-423d-95ed-8b7a4760b297",
+      "effectId": "Eff_Parmon_10194_Skill_waterPolishing",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "key": "waterPool",
+      "name": "setCacheVal",
+      "UID": "4ef0ac5b-f79e-45c1-84a0-c8d9efd7f109",
+      "target": "TrapTarget",
+      "val": {
+        "rValue": -1,
+        "name": "add",
+        "UID": "8326ea53-797e-40ee-9767-62fca6eb0714",
+        "NodeID": 12,
+        "lValue": {
+          "key": "waterPool",
+          "name": "getCacheVal",
+          "UID": "0fa419cc-f567-4611-ae1e-288f93a9d4ce",
+          "target": "TrapTarget",
+          "NodeID": 11
+        }
+      },
+      "NodeID": 13
+    },
+    "9": {
+      "key": "waterPool",
+      "name": "setCacheVal",
+      "UID": "d0ca15c8-b127-41f6-823f-ac0713709de5",
+      "target": "TrapTarget",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "516876cc-052f-4f0c-89a7-ad6870a1c9b4",
+        "NodeID": 8,
+        "lValue": {
+          "key": "waterPool",
+          "name": "getCacheVal",
+          "UID": "ae743a52-3878-4f1b-8500-5642a72b7c73",
+          "target": "TrapTarget",
+          "NodeID": 7
+        }
+      },
+      "NodeID": 9
+    },
+    "10": {
+      "leaveActionIds": [
+        13
+      ],
+      "relation": 4,
+      "NodeID": 10,
+      "UID": "c12338e2-86c0-4d67-bc2b-0c72df182b6d",
+      "radius": 1,
+      "name": "addAOITrap",
+      "enterActionIds": [
+        9
+      ]
+    },
+    "5": {
+      "UID": "98ccdb22-490d-4893-b501-e4470fbec4dd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "timeline_2104310",
+  "NodeID": 1,
+  "UID": "3d411bb5-7658-46cd-91d0-adcaa95ac826",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 99999
+}

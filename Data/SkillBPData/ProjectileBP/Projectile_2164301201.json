@@ -1,0 +1,132 @@
+{
+  "allowHitCaster": false,
+  "duration": 15,
+  "BPName": "timeline_2164301",
+  "defaultHitSoundType": "h",
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10643_Skill_Note_Bullet01",
+  "nodeMap": {
+    "17": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2164301202,
+      "name": "createProjectile",
+      "UID": "9b230f76-dcd9-4cc5-8d7d-595f6c1bb57e",
+      "rotation": "Direct",
+      "pos": "PROJECTILE",
+      "projectileType": "Tracking",
+      "targetRotation": {
+        "name": "getRotationFromTo",
+        "UID": "e1792e09-564e-4cda-aa73-f1000b09c889",
+        "to": "CURPET_OR_TEAM_PET",
+        "NodeID": 24,
+        "from": "PROJECTILE"
+      },
+      "targetPos": "CURPET_OR_TEAM_PET",
+      "NodeID": 17,
+      "offsetRotation": [
+        80,
+        20,
+        20
+      ]
+    },
+    "24": {
+      "name": "getRotationFromTo",
+      "UID": "e1792e09-564e-4cda-aa73-f1000b09c889",
+      "to": "CURPET_OR_TEAM_PET",
+      "NodeID": 24,
+      "from": "PROJECTILE"
+    },
+    "30": {
+      "buffId": 916430101,
+      "name": "hasBuff",
+      "UID": "e36de04a-ab33-469f-8626-280f9345a632",
+      "target": "MASTER",
+      "NodeID": 30
+    },
+    "56": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2164301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "6989a286-177c-4339-bab6-004009caab3d",
+      "target": "TARGET",
+      "NodeID": 56,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 21104,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10643_Skill_Note_Hit01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2000
+      }
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "9aa93f9e-a8b4-4a97-a679-03a4260f8279",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    }
+  },
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "BezierCurve",
+  "refTargetPoint": [
+    0,
+    2,
+    8
+  ],
+  "maxHitNum": 1,
+  "maxMoveSpeed": 15,
+  "autoSwitchTrack": true,
+  "moveSpeed": 6,
+  "onProjectileFinishIds": [
+    18
+  ],
+  "onProjectileHitIds": [
+    56
+  ],
+  "performRatio": 0.7,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "refControlPoint": [
+    [
+      0,
+      6.5,
+      3
+    ]
+  ],
+  "tickInterval": 0.2,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "calcResultNodeId": 56,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 2
+}

@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2160304",
+  "calcInfoByLuaConfig": {
+    "id": 2160304,
+    "speed_ratio_sprint_v": "param0",
+    "speed_ratio_dash_v": "param0",
+    "type": 1,
+    "speed_ratio_run_v": "param0",
+    "speed_ratio_walk_v": "param0"
+  },
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

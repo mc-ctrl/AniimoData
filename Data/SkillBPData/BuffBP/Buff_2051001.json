@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "UID": "efa8ddd4-596f-4615-a575-c4c181208afe",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 20510010,
+      "NodeID": 4,
+      "UID": "4399197e-4ff6-41d4-a20f-6d4fa234cb84",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "6bf9683e-6954-49e1-8b71-32926f5570a9",
+      "NodeID": 6
+    }
+  },
+  "BPName": "buff_2051001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

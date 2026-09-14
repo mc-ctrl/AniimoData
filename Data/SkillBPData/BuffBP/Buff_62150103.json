@@ -1,0 +1,82 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62150103",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "templateId": 11050100050,
+      "name": "checkTargetTemplateId",
+      "UID": "79edc948-60ae-4c85-ba6f-dac989fc914f",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "delay": 0,
+      "interval": 20,
+      "UID": "46a806a7-2a4e-48b3-a858-9b18653da3f9",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "9": {
+      "dialogId": 20000243,
+      "name": "showDialog",
+      "UID": "91b46356-a90c-4ad9-8970-435f3ba42cca",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "c9f9f7eb-4369-4e3d-93d2-23a57db76cf9",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "dialogId": 20000244,
+      "name": "showDialog",
+      "UID": "b8d7078b-ee21-4d7b-aeb9-c1aca23efa32",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "buffId": 62150101,
+      "name": "hasBuff",
+      "UID": "af9e794a-7019-4299-9e25-034f9a247305",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "b307cfaa-d4fc-4e28-916d-a8b335891b3d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 8
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

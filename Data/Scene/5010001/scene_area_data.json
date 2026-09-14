@@ -1,0 +1,33 @@
+{
+  "77406719": {
+    "airWallAssetUrl": "",
+    "areaLoadType": 1,
+    "areaPoints": [
+      20.31,
+      1151.39,
+      56.8,
+      1130.29,
+      67.63,
+      1156.94,
+      35.85,
+      1171.42
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "id": 77406719,
+    "logics": {},
+    "height": 10.2,
+    "sandboxId": 77406716,
+    "position": [
+      39.88,
+      124.29,
+      1164.77
+    ],
+    "pointType": 1,
+    "name": "区域_77406719"
+  }
+}

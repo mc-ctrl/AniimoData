@@ -1,0 +1,162 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          28
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "4f6e70a9-7857-45d1-ae85-10d4c203ba97",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 24
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 22,
+      "UID": "7c953543-56f9-4ecc-b548-1f31f441b53c"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.35,
+      "NodeID": 26,
+      "UID": "d1a208ca-4d6c-420f-a64d-7751a6c082be"
+    },
+    "16": {
+      "duration": 30,
+      "name": "burrow",
+      "UID": "7d6fcb0a-b67b-4618-8354-af99a93e15e7",
+      "burrowInAnim": "BurrowInSand",
+      "enableTurnInstant": false,
+      "enterBuffIds": [
+        2116101
+      ],
+      "exitCastAbilityId": 12850713,
+      "velocity": 5,
+      "switchToAbilityId": 12850713,
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 10011,
+      "NodeID": 27,
+      "UID": "9fc8e776-e215-4a09-ab55-2c00f49e7497",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "28": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "63d16bf7-332b-42af-8406-0d4f66b4d8f0",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "5": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          27
+        ]
+      },
+      "NodeID": 5
+    },
+    "18": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 11
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "5ec03722-5a84-4782-948d-ec0b294ccb4b",
+      "effectId": "Eff_Parmon_10201_Bejav_JumpInGround_RunStop",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 19,
+      "scale": 2.8
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.95,
+      "NodeID": 20,
+      "UID": "1379f39a-ebc6-4074-8809-11b59f17d50a"
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "98a12c08-39c7-46a8-84fe-3681c9b85097",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_BurrowSkill_Enter",
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_12850701",
+  "NodeID": 7,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    5,
+    13,
+    18,
+    20,
+    22,
+    26
+  ],
+  "layer": "Base",
+  "length": 2.583
+}

@@ -1,0 +1,113 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_90213009",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    10,
+    15
+  ],
+  "tags": [
+    1,
+    20
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "bedbcfd1-888a-45d8-bcd7-aa467bcfac82",
+      "ignoreSelf": false,
+      "NodeID": 5
+    },
+    "4": {
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "ddc30e8c-0920-4156-ac60-753e48ee3145",
+      "ignoreSelf": true,
+      "NodeID": 4
+    },
+    "14": {
+      "buffId": 1145108,
+      "name": "hasBuff",
+      "UID": "3e501001-b41b-4d2a-beea-7dfa2993faa4",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "86ec9919-ab33-45e6-a710-0c82d6adceed",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "97b58157-3108-4e05-8106-9d37edeea5a2",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "d44bd194-eb90-480d-a5a2-849c2e79212f",
+      "name": "ignoreVelocityProjection",
+      "enable": true,
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "28c2896b-1bba-4edc-829c-b9dd7a5d10b1",
+      "name": "buffStopThink",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "9e091ae7-5b46-44d0-983f-e713219b764b",
+      "name": "ignoreVelocityProjection",
+      "enable": false,
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "ddf9b500-7b51-49da-92f4-f7f4640b95a6",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "ZaiJinFY",
+      "NodeID": 9
+    },
+    "13": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "f32392f3-ab5a-49ef-ada3-686fbe70b462",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "2": {
+      "UID": "fd6ab695-2123-43da-a4a1-5aac05382894",
+      "name": "cancelLock",
+      "NodeID": 2
+    },
+    "12": {
+      "buffId": 1145116,
+      "name": "hasBuff",
+      "UID": "6fb99ea3-97f1-4b50-b681-afc3d74e3f1b",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "UID": "3fafcb1c-301e-46d6-9f40-ebc04bb0fe0a",
+  "onBuffDestroyIds": [
+    5,
+    8
+  ],
+  "onBuffStartIds": [
+    4,
+    2,
+    7,
+    13
+  ]
+}

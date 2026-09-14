@@ -1,0 +1,694 @@
+{
+  "GridGame": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "GroupSingPuzzle": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "HitCounter": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "LevelButton": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "LevelItem": {
+    "listenFieldType": [
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "flame"
+    ]
+  },
+  "LevelItemMulti": {
+    "listenFieldType": [
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "ownerPassTime"
+    ]
+  },
+  "LevelItemMultiInteractor": {
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ],
+    "switchPort": [
+      [
+        "state",
+        2,
+        "地宫完成"
+      ]
+    ]
+  },
+  "MechanismBallHole": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "Microphone": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "MovingPlatform": {
+    "listenFieldType": [
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "actived"
+    ]
+  },
+  "MusicPianoStair": {
+    "listenFieldType": [
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "tracks"
+    ]
+  },
+  "MusicStep": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "OverlapCounter": {
+    "eventList": [
+      "OVERLAP_COUNTER_BUSY",
+      "OVERLAP_COUNTER_FREE"
+    ],
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ]
+  },
+  "PaintArea": {
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ],
+    "switchPort": [
+      [
+        "state",
+        0,
+        "未完成"
+      ],
+      [
+        "state",
+        1,
+        "完成未领取奖励"
+      ],
+      [
+        "state",
+        2,
+        "完成领取奖励"
+      ]
+    ]
+  },
+  "Peep": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "PetChallengeGoal": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "PetExchangeItem": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "Piano": {
+    "listenFieldType": [
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "tracks"
+    ]
+  },
+  "PlantNursery": {
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ],
+    "switchPort": [
+      [
+        "state",
+        0,
+        "未种植"
+      ],
+      [
+        "state",
+        1,
+        "已种植"
+      ]
+    ]
+  },
+  "PlantTree": {
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ],
+    "switchPort": [
+      [
+        "state",
+        0,
+        "生长状态"
+      ],
+      [
+        "state",
+        1,
+        "未种植"
+      ]
+    ]
+  },
+  "PlatformPro": {
+    "listenFieldType": [
+      "int",
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "performState",
+      "movingState",
+      "actived"
+    ]
+  },
+  "PositionBlender": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "PosterDisplay": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "PressPlatform": {
+    "listenField": [
+      "state",
+      "isOn"
+    ],
+    "listenFieldType": [
+      "int",
+      "bool"
+    ],
+    "switchPort": [
+      [
+        "state",
+        1,
+        "到达顶端"
+      ],
+      [
+        "state",
+        2,
+        "到达底端"
+      ],
+      [
+        "state",
+        3,
+        "持续升起"
+      ],
+      [
+        "state",
+        4,
+        "持续下降"
+      ],
+      [
+        "isOn",
+        true,
+        "压下"
+      ],
+      [
+        "isOn",
+        false,
+        "弹起"
+      ]
+    ]
+  },
+  "QuickControl": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "RacePuzzle": {
+    "listenFieldType": [
+      "int",
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "puzzleState",
+      "puzzleResultState"
+    ]
+  },
+  "Rope": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "RotatingPlatform": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "Seesaw": {
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ],
+    "switchPort": [
+      [
+        "state",
+        -1,
+        "左倾"
+      ],
+      [
+        "state",
+        0,
+        "平衡"
+      ],
+      [
+        "state",
+        1,
+        "右倾"
+      ]
+    ]
+  },
+  "SequenceSound": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "SlotMachine": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "SpurtItem": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "StunMushroom": {
+    "eventList": [
+      "TRIGGER_ENTER",
+      "TRIGGER_LEAVE"
+    ]
+  },
+  "Switch": {
+    "listenFieldType": [
+      "int",
+      "bool",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "isOn",
+      "fly"
+    ]
+  },
+  "TimelineContainer": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "TimerSB": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "TotemPuzzle": {
+    "listenField": [
+      "state",
+      "actived",
+      "disableByLevel"
+    ],
+    "listenFieldType": [
+      "int",
+      "bool"
+    ],
+    "switchPort": [
+      [
+        "state",
+        0,
+        "进入辉耀印记范围"
+      ],
+      [
+        "state",
+        1,
+        "离开辉耀印记范围"
+      ],
+      [
+        "state",
+        2,
+        "正确拼接辉耀印记"
+      ],
+      [
+        "state",
+        3,
+        "辉耀印记满足持续时间"
+      ],
+      [
+        "state",
+        4,
+        "辉耀印记玩法完成"
+      ]
+    ]
+  },
+  "Trampoline": {},
+  "TrickTrigger": {
+    "eventList": [
+      "TRIGGER_ENTER",
+      "TRIGGER_LEAVE"
+    ],
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ]
+  },
+  "Trigger": {
+    "eventList": [
+      "TRIGGER_ENTER",
+      "TRIGGER_LEAVE"
+    ]
+  },
+  "TwinklePlatformController": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "VirtualEntitiesContainer": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "VirtualPuppetContainer": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "AddInteract": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "ArkBridge": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "BallTargetSB": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "BilateralTotem": {
+    "listenField": [
+      "state"
+    ],
+    "listenFieldType": [
+      "int"
+    ],
+    "switchPort": [
+      [
+        "state",
+        0,
+        "未开启双侧视觉"
+      ],
+      [
+        "state",
+        1,
+        "开启双侧视觉，并且图腾出现在视野中"
+      ],
+      [
+        "state",
+        2,
+        "图腾拼接完成，开始停留倒计时"
+      ],
+      [
+        "state",
+        3,
+        "留倒计时结束，开始消散"
+      ],
+      [
+        "state",
+        4,
+        "消散结束"
+      ]
+    ]
+  },
+  "BuffTrigger": {
+    "eventList": [
+      "OVERLAP_COUNTER_BUSY",
+      "OVERLAP_COUNTER_FREE"
+    ]
+  },
+  "ChallengeDoor": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "ChestContainer": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "ChestShield": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "CollectItemPuzzle": {
+    "listenFieldType": [
+      "int",
+      "int",
+      "int"
+    ],
+    "listenField": [
+      "state",
+      "puzzleState",
+      "puzzleResultState"
+    ]
+  },
+  "DeathBox": {
+    "eventList": [
+      "TRIGGER_ENTER",
+      "TRIGGER_LEAVE"
+    ]
+  },
+  "DialoguePlayer": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "DittoEntry": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "DungeonSavePoint": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "EchoLink": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "EchoStone": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "EventTrigger": {
+    "eventList": [
+      "TRIGGER_ENTER",
+      "TRIGGER_LEAVE"
+    ],
+    "listenField": [
+      "animSpeedUp"
+    ],
+    "listenFieldType": [
+      "int"
+    ]
+  },
+  "FilterCurtain": {
+    "eventList": [
+      "TRIGGER_ENTER",
+      "TRIGGER_LEAVE"
+    ]
+  },
+  "FogController": {},
+  "Geyser": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "GrabEggDoor": {
+    "listenFieldType": [
+      "int",
+      "bool"
+    ],
+    "listenField": [
+      "state",
+      "isOn"
+    ]
+  },
+  "GrabEggExitPoint": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  },
+  "GridCell": {
+    "listenFieldType": [
+      "int"
+    ],
+    "listenField": [
+      "state"
+    ]
+  }
+}

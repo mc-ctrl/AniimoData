@@ -1,0 +1,145 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "73": {
+      "buffId": 2120702,
+      "name": "removeBuff",
+      "UID": "25efb3c4-f2fc-4e63-911a-da7874a13f11",
+      "target": "OWNER",
+      "NodeID": 73
+    },
+    "64": {
+      "duration": 0,
+      "NodeID": 64,
+      "UID": "36043ccd-1641-4b9c-8d10-5c9b20506679",
+      "enable": false,
+      "name": "enableTakeRootState"
+    },
+    "72": {
+      "buffId": 2120702,
+      "name": "removeBuff",
+      "UID": "b34d727f-a997-46af-844d-d9b922fa8cd2",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "16": {
+      "UID": "5f8009f4-1c4a-4210-80c5-111d77099dd9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "71": {
+      "action": {
+        "actionIds": [
+          69,
+          73
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.38,
+      "NodeID": 71,
+      "UID": "638f3135-7cf6-4c27-9129-5d2e744fcc08"
+    },
+    "66": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          64
+        ]
+      },
+      "NodeID": 66
+    },
+    "69": {
+      "name": "stopEffectStr",
+      "UID": "52736555-94b3-4bda-b77e-7bfbab786a1d",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Start",
+      "target": "OWNER",
+      "NodeID": 69
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 18,
+      "UID": "d7f087b4-7c89-4c10-854c-a24ecad9437a"
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2f0f2f1a-4271-4af7-8a8b-e5aad53f912c",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_End",
+      "speed": 1,
+      "NodeID": 67
+    },
+    "68": {
+      "UID": "910b2f88-1f4e-4ea9-8c13-bfcc338effb3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          67
+        ]
+      },
+      "NodeID": 68
+    },
+    "6": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          72
+        ]
+      },
+      "NodeID": 6
+    },
+    "12": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12070401",
+  "NodeID": 8,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    6,
+    14,
+    18,
+    66,
+    68,
+    71
+  ],
+  "layer": "Base",
+  "length": 2.2
+}

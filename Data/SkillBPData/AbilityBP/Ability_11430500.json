@@ -1,0 +1,58 @@
+{
+  "BPName": "ability_11430500",
+  "NodeID": 1,
+  "UID": "c975de51-c726-4db6-a8a2-52b82b73cbcd",
+  "abilityParamId": 10400115,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11430500001,
+      "name": "setCombatActionTimeline",
+      "UID": "ea154939-6972-4841-bedc-901c2e717dc3",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "69": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 69,
+      "UID": "51998157-ecde-4709-b5d4-e7a723482da7",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Wave_Start",
+    "Skill_Wave_End"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10143_Skill_Charge04",
+    "Eff_Hit_Electric_Blunt_Y_Big"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "onAbilityEndIds": [
+    69
+  ],
+  "searchTargetRangeDown": 0.5,
+  "isAim": true
+}

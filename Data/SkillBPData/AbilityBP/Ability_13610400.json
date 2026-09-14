@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_13610400",
+  "NodeID": 1,
+  "UID": "aee8257f-20d0-4cde-9360-2771d0518f80",
+  "abilityParamId": 11300140,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 13610400001,
+      "name": "setCombatActionTimeline",
+      "UID": "5bb9d130-9f10-4908-aa52-c9478d6d4d26",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Holy"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10361_Skill_HolyEmbrace_Charge",
+    "Eff_Common_Buff_EnergyRegen",
+    "Eff_Parmon_10361_Skill_HolyEmbrace_Done"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "searchTargetRangeDown": 3
+}

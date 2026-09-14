@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114404",
+  "calcInfoByLuaConfig": {
+    "id": 2114404,
+    "combat_ep_regen_p": "param0",
+    "type": 1
+  },
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Charge_Arrow_Up"
+    }
+  ]
+}

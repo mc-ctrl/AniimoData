@@ -1,0 +1,116 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2071001",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "castSkill",
+      "name": "setCacheVal",
+      "UID": "32e5ad0c-cb6b-42e1-8d50-cde6169cfc7e",
+      "val": 0,
+      "NodeID": 3
+    },
+    "13": {
+      "key": "castAttackSkillCnt",
+      "name": "setCacheVal",
+      "UID": "5f69f4ce-ab6d-48ee-b2a9-b17ed78228f2",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "ddb0b646-dceb-4814-8c84-0f69288f30e4",
+        "NodeID": 12,
+        "lValue": {
+          "UID": "84cd4a69-2b09-4790-8852-ef26ff7ce13a",
+          "name": "getCacheVal",
+          "key": "castSkill",
+          "NodeID": 11
+        }
+      },
+      "NodeID": 13
+    },
+    "10": {
+      "UID": "8fbe99fb-25e1-4ec2-92e1-ecbd9696052b",
+      "tag": 0,
+      "name": "isAbilityEffectTag",
+      "NodeID": 10
+    },
+    "7": {
+      "actionIds": [
+        13,
+        17
+      ],
+      "conditionActionIds": [
+        5,
+        10
+      ],
+      "UID": "ca755881-fba6-4e25-aa98-cb3a997f0a9d",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "rValue": 20,
+      "name": "greater",
+      "UID": "31054182-6028-4b55-8d40-ce7684a47259",
+      "NodeID": 16,
+      "lValue": {
+        "UID": "c5ddd00b-3497-4eba-9744-4b8a3409c0d6",
+        "name": "getCacheVal",
+        "key": "castSkill",
+        "NodeID": 15
+      }
+    },
+    "8": {
+      "UID": "235de2a9-3716-4585-a7b5-1ba41073f5a6",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "8d985a90-fe11-467c-85ab-b55e647c66ba",
+      "name": "doActionsByConditions",
+      "NodeID": 17,
+      "elseActionIds": [
+        19
+      ]
+    },
+    "9": {
+      "unsummonValid": false,
+      "actionIds": [
+        8
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f19c890e-5694-43e1-800c-73dc4cd3f03d",
+      "NodeID": 9
+    },
+    "19": {
+      "UID": "dd4db301-5a5f-4973-a4cd-bd96ead16217",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "speed_ratio_run_v": 0.02,
+        "speed_ratio_sprint_v": 0.02
+      },
+      "NodeID": 19
+    },
+    "5": {
+      "UID": "ffc2800b-c0f6-415e-9795-4c3b4f9f71cc",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    9
+  ]
+}

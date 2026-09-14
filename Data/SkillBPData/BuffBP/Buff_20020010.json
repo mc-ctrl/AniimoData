@@ -1,0 +1,126 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20020010",
+  "NodeID": 1,
+  "UID": "42d3709d-ef91-48b5-a071-d2c228143b04",
+  "onBuffRefreshIds": [
+    27,
+    6,
+    10,
+    20,
+    23
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        -1
+      ],
+      "target": "TARGET",
+      "name": "teleport",
+      "UID": "6e0da605-0a81-49b5-8309-9d3c3ac2d802",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "CURPET",
+      "NodeID": 3
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d4eb65c0-0540-4d1d-942b-25b67105df9d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Teleport_Start",
+      "NodeID": 23
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "895baa6d-f76c-4988-a459-599d5f40663d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Teleport_End",
+      "NodeID": 24
+    },
+    "6": {
+      "key": "1",
+      "duration": 0.3,
+      "actionIds": [
+        19,
+        3,
+        9,
+        24
+      ],
+      "NodeID": 6,
+      "UID": "cbd813ba-1310-48f4-aecd-df823b52462c",
+      "name": "addTimer"
+    },
+    "10": {
+      "name": "hideModel",
+      "UID": "21268965-b10b-4fe8-b705-d75cc83efd8c",
+      "target": "OWNER",
+      "NodeID": 10,
+      "maxHideTime": 0.6
+    },
+    "26": {
+      "calcId": 20020010,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 26,
+      "UID": "27e8e97a-7dda-4f17-a8eb-248b4afc1d39",
+      "name": "getParamByLuaConfig"
+    },
+    "27": {
+      "value": {
+        "calcId": 20020010,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 26,
+        "UID": "27e8e97a-7dda-4f17-a8eb-248b4afc1d39",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "0cc87199-e36a-4b46-80cd-cbc08b888023",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "14e18f4d-5f5a-45d9-b6fa-1e11d94f1376",
+      "effectId": "Eff_Buff_Rogue_Skill_Equip_Teleport_02",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "19": {
+      "name": "lockTargetBySearchRadius",
+      "UID": "3c9e8e5a-9d10-48eb-95ee-33dc24a5b76c",
+      "searchRadius": 60,
+      "NodeID": 19,
+      "forceSearch": true
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "29ebf106-c454-4ddb-8905-1e5672de435f",
+      "effectId": "Eff_Buff_Rogue_Skill_Equip_Teleport_01",
+      "speed": 1,
+      "NodeID": 20
+    }
+  },
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    27,
+    6,
+    10,
+    20,
+    23
+  ]
+}

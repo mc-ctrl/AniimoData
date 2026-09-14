@@ -1,0 +1,63 @@
+{
+  "homelandHatchMaxCountLimit": 9,
+  "itemSpeedUpInfo": {
+    "110002": [
+      0,
+      0.5
+    ],
+    "110001": [
+      600,
+      0
+    ]
+  },
+  "otherHomeHatchFondleCount": 10,
+  "petBallBehavGroup": "BG_Pet_PetBallDefault",
+  "PET_FERTILITY_TOPLOGO_DISTANCE": 25,
+  "petPlayBallNumInit": 6,
+  "petPlayBallNumMax": 9,
+  "petPlayBallWithExpUpPercent": 0.1,
+  "selfHomeHatchFondleCount": 20,
+  "specialBreedingEggItemId": 540301,
+  "petBallPatrolRange": 3,
+  "actionPointGetEveryTime": 5,
+  "actionPointInit": 200,
+  "actionPointMax": 200,
+  "breedLimit": 3,
+  "breedPetLvLimit": 1,
+  "breedingEggItemId": 540300,
+  "canBreedingTimes": 3,
+  "cannotBreedList": [
+    1021300,
+    1023300,
+    1036100,
+    1036300,
+    1037100,
+    1037300,
+    1012200,
+    1064400
+  ],
+  "dispatchEggItemId": 4040120,
+  "emotionInit": 5000,
+  "emotionReduce": 40,
+  "exerciseLimit": 2,
+  "feedCoefficient": [
+    1.2,
+    1.1,
+    1,
+    0.9
+  ],
+  "feedLimit": 1,
+  "hatchSlotInitCount": 7,
+  "hatchingChangeRatio": 0.5,
+  "hatchingQualityColour": [
+    "#54995b",
+    "#4184d3",
+    "#b767e1",
+    "#e1a347"
+  ],
+  "homelandHatchCarSpeedUpRatio": 0.2,
+  "homelandHatchEnvFormulaId": 6007,
+  "homelandHatchFondleReduction": [
+    600
+  ]
+}

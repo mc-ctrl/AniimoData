@@ -1,0 +1,206 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "089407ea-e787-484c-a8e6-7758b2ad704d",
+      "name": "addTimer"
+    },
+    "23": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 211410101,
+      "NodeID": 23,
+      "UID": "791cabdb-5f2d-4517-bd59-61bd58f5320d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "204184cb-7696-4cfc-91d3-d1e41616a1f4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_Star",
+      "NodeID": 24
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "b5af86ee-0540-4d29-8e01-fc3f25b950d7",
+      "effectId": "Eff_Parmon_10143_HaloMax02_Loop",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c0e49fa2-c333-4136-bf03-95486e076de9",
+      "effectId": "Eff_Parmon_10143_HaloMax02_Loop",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "16": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 21,
+      "NodeID": 16,
+      "UID": "78668b49-8cd6-494a-bf60-d31ab2bde015",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        21,
+        23
+      ]
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "686ac25e-34f3-4c16-ac66-14ced2a44c9e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_End",
+      "NodeID": 29
+    },
+    "25": {
+      "tickInterval": 1.1,
+      "eventType": "NotifyState",
+      "endTime": 6.6,
+      "NodeID": 25,
+      "UID": "06d6a742-b25c-4e30-8a6e-8b85fa918eb1",
+      "onUpdate": {
+        "actionIds": [
+          24
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          24
+        ]
+      }
+    },
+    "9": {
+      "UID": "e19faf2d-bfb1-4624-8e05-d24ae81c7f37",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "NodeID": 9
+    },
+    "18": {
+      "tickInterval": 1.1,
+      "eventType": "NotifyState",
+      "endTime": 6.6,
+      "NodeID": 18,
+      "UID": "629d7128-8787-44ff-b544-fb69f8f95380",
+      "onUpdate": {
+        "actionIds": [
+          16
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          16
+        ]
+      }
+    },
+    "21": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2114106,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "87dd027e-bc25-4f23-b870-24920332d705",
+      "target": "TARGET",
+      "NodeID": 21,
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "impulseId": 1000,
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 4,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 0
+      }
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1ff93f00-3955-4d95-bba6-e556b4e735fd",
+      "effectId": "Eff_Parmon_10143_HaloMax02_End",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          10,
+          19,
+          3,
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7,
+      "NodeID": 5,
+      "UID": "187d9c3f-7f77-4c6d-98ea-61c5bc865588"
+    },
+    "2": {
+      "UID": "680f862e-8085-4f57-8b17-db324d7ae322",
+      "name": "destroyEntity",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2114106",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    9,
+    18,
+    25,
+    5
+  ],
+  "layer": "Base",
+  "length": 12
+}

@@ -1,0 +1,88 @@
+{
+  "20003": {
+    "0": {
+      "attach": "RoofOrnament",
+      "res": "$P_Home_SetDressing_CarChair03.prefab"
+    }
+  },
+  "10003": [
+    {
+      "res": "$P_Home_SetDressing_CarLV0_Blue.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV1_Blue.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV2_Blue.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV3_Blue.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV4_Blue.prefab"
+    }
+  ],
+  "10002": [
+    {
+      "res": "$P_Home_SetDressing_CarLV0_Yellow.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV1_Yellow.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV2_Yellow.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV3_Yellow.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV4_Yellow.prefab"
+    }
+  ],
+  "10001": [
+    {
+      "res": "$P_Home_SetDressing_CarLV0_Pink.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV1_Pink.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV2_Pink.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV3_Pink.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV4_Pink.prefab"
+    }
+  ],
+  "20001": {
+    "0": {
+      "attach": "RoofOrnament",
+      "res": "$P_Home_SetDressing_CarChair01.prefab"
+    }
+  },
+  "20002": {
+    "0": {
+      "attach": "RoofOrnament",
+      "res": "$P_Home_SetDressing_CarChair02.prefab"
+    }
+  },
+  "10004": [
+    {
+      "res": "$P_Home_SetDressing_CarLV0_Green.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV1_Green.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV2_Green.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV3_Green.prefab"
+    },
+    {
+      "res": "$P_Home_SetDressing_CarLV4_Green.prefab"
+    }
+  ]
+}

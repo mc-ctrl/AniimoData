@@ -1,0 +1,28 @@
+{
+  "180006": {
+    "cardName": 1189511133,
+    "res": "$UI_Img_ChatFrame_HomelandBubble.png",
+    "source": [
+      8210
+    ]
+  },
+  "180004": {
+    "cardName": 1373823799,
+    "res": "$UI_Img_ChatFrame_Egg.png",
+    "source": [
+      717
+    ]
+  },
+  "180005": {
+    "cardName": 1437879357,
+    "res": "$UI_Img_ChatFrame_HolographicTrainingBubbleDecorationRight.png",
+    "source": [
+      8199
+    ]
+  },
+  "180001": {
+    "cardName": 1180954839,
+    "defaultUnlock": 1,
+    "res": "$UI_Img_Chat_Bubble_Bg_Me.png"
+  }
+}

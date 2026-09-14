@@ -1,0 +1,175 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120308",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff"
+    }
+  ],
+  "onBuffInheritIds": [
+    7
+  ],
+  "nodeMap": {
+    "3": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b72df226-6cfc-4c3a-afda-027a695a1007",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Hit",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "2ffcc2e9-1a1f-40e2-8842-595a2613e416",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        4,
+        11,
+        15,
+        16
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "54a9bcf7-1d12-4bba-8c8b-f2f49db384e3",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "calcId": 2120308,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "848542e2-3d2c-4728-a48e-7fc263871022",
+      "name": "getParamByLuaConfig"
+    },
+    "15": {
+      "petTarget": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "966fa8a2-750a-4dbb-af2f-2c02abed7fe6",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "triggerId": 1020302,
+      "name": "onEntityTrigger",
+      "UID": "bef7ae09-d0a9-4833-9a62-604f2779844e",
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "966fa8a2-750a-4dbb-af2f-2c02abed7fe6",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "7f51d630-8612-44fb-9c55-512d08575ef0",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "966fa8a2-750a-4dbb-af2f-2c02abed7fe6",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "name": "playEffectStr",
+      "UID": "eabf0ef2-2dfe-4a7b-8404-0b63c65ac08c",
+      "effectId": "Eff_Common_Buff_EnergyRegen_s",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "name": "checkPetPrototypeId",
+      "UID": "42cd269a-74e9-44f0-b52d-0377f1521abd",
+      "target": "SRC",
+      "petPrototypeId": 1020302,
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "8a96a103-5608-4f6a-ba27-55cd2640316d",
+      "name": "checkDamageAbilityType",
+      "abilityType": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "35ddd25c-6f37-4e64-8d3f-a16170122e20",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Hit",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "14": {
+      "eventName": "onReceiveBeAttacked",
+      "name": "getEventCombatContextTarget",
+      "UID": "966fa8a2-750a-4dbb-af2f-2c02abed7fe6",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "11": {
+      "value": {
+        "calcId": 2120308,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 10,
+        "UID": "848542e2-3d2c-4728-a48e-7fc263871022",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "ee8d9b29-8b1b-41d7-8160-7026ac4fc54c",
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "966fa8a2-750a-4dbb-af2f-2c02abed7fe6",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "1ecc4e3f-6ec8-45b9-a033-cb0b6e233465",
+      "conditionIds": [
+        17,
+        12
+      ],
+      "name": "conditionAnd",
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "aee8d84a-b5b3-4c82-8de2-a050e1d136c5",
+      "name": "isReceiveBeAttackedEventElementType",
+      "elementType": 12,
+      "NodeID": 12
+    }
+  },
+  "dynamicRPCStates": {},
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

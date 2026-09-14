@@ -1,0 +1,198 @@
+{
+  "1002100": {
+    "27": {
+      "weight": 1,
+      "randomText": 1617645853,
+      "pet_nature": 3
+    },
+    "28": {
+      "weight": 1,
+      "randomText": 1667741944,
+      "pet_nature": 4
+    },
+    "29": {
+      "weight": 1,
+      "randomText": 1086072959,
+      "pet_nature": 5
+    },
+    "30": {
+      "weight": 1,
+      "randomText": 1458636787,
+      "pet_nature": 6
+    },
+    "32": {
+      "weight": 1,
+      "randomText": 1326745970,
+      "pet_nature": 8
+    },
+    "31": {
+      "weight": 1,
+      "randomText": 1743540562,
+      "pet_nature": 7
+    },
+    "25": {
+      "weight": 1,
+      "randomText": 1975523706,
+      "pet_nature": 1
+    },
+    "26": {
+      "weight": 1,
+      "randomText": 1573836780,
+      "pet_nature": 2
+    }
+  },
+  "1051100": {
+    "37": {
+      "weight": 1,
+      "randomText": 1545399524,
+      "pet_nature": 1
+    },
+    "38": {
+      "weight": 1,
+      "randomText": 1385657128,
+      "pet_nature": 1
+    },
+    "34": {
+      "weight": 1,
+      "randomText": 1517549831,
+      "pet_nature": 1
+    },
+    "33": {
+      "weight": 1,
+      "randomText": 2019744476,
+      "pet_nature": 1
+    },
+    "35": {
+      "weight": 1,
+      "randomText": 2059245279,
+      "pet_nature": 1
+    },
+    "36": {
+      "weight": 1,
+      "randomText": 2129881255,
+      "pet_nature": 1
+    }
+  },
+  "1001100": [
+    {
+      "weight": 1,
+      "randomText": 1987058982,
+      "pet_nature": 1
+    },
+    {
+      "weight": 1,
+      "randomText": 1384255095,
+      "pet_nature": 2
+    },
+    {
+      "weight": 1,
+      "randomText": 1953331979,
+      "pet_nature": 3
+    },
+    {
+      "weight": 1,
+      "randomText": 1091959671,
+      "pet_nature": 4
+    },
+    {
+      "weight": 1,
+      "randomText": 1844435529,
+      "pet_nature": 5
+    },
+    {
+      "weight": 1,
+      "randomText": 1152376853,
+      "pet_nature": 6
+    },
+    {
+      "weight": 1,
+      "randomText": 1779565840,
+      "pet_nature": 7
+    },
+    {
+      "weight": 1,
+      "randomText": 1101018698,
+      "pet_nature": 8
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 1
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 2
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 3
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 4
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 5
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 6
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 7
+    },
+    {
+      "weight": 1,
+      "dialogue_id": 81000019,
+      "pet_nature": 8
+    },
+    {
+      "weight": 1,
+      "randomText": 2142208384,
+      "pet_nature": 1
+    },
+    {
+      "weight": 1,
+      "randomText": 1339026070,
+      "pet_nature": 2
+    },
+    {
+      "weight": 1,
+      "randomText": 2121157116,
+      "pet_nature": 3
+    },
+    {
+      "weight": 1,
+      "randomText": 1923089851,
+      "pet_nature": 4
+    },
+    {
+      "weight": 1,
+      "randomText": 1429316582,
+      "pet_nature": 5
+    },
+    {
+      "weight": 1,
+      "randomText": 1880178921,
+      "pet_nature": 6
+    },
+    {
+      "weight": 1,
+      "randomText": 1440724280,
+      "pet_nature": 7
+    },
+    {
+      "weight": 1,
+      "randomText": 1272012313,
+      "pet_nature": 8
+    }
+  ]
+}

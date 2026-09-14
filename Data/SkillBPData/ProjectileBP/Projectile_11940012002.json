@@ -1,0 +1,57 @@
+{
+  "duration": 1.5,
+  "BPName": "ability_11940012",
+  "NodeID": 28,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10194_Mon_Skill_GreatSword_Chop01",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "moveSpeed": 30,
+  "nodeMap": {
+    "33": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11940012,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "02b49116-e772-41c1-af31-d2bfdb640d1a",
+      "target": "TARGET",
+      "NodeID": 33,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3000,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0
+      }
+    }
+  },
+  "onProjectileHitIds": [
+    33
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 3,
+  "sweepShape": 0,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "nextTemplateId": 11940012001,
+  "UID": "70e175ae-54b3-49b6-893a-5b03090893c9",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 33,
+  "impulseId": 3000,
+  "acceleration": 0
+}

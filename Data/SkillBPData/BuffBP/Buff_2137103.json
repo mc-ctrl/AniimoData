@@ -1,0 +1,28 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "taken_mag_dmg_dec_rate_v": {
+      "rValue": -1,
+      "name": "multiply",
+      "UID": "4b8d1a00-4118-435e-a4c5-60b557e9149a",
+      "NodeID": 6,
+      "lValue": {
+        "calcId": 2137103,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 5,
+        "UID": "0fdefeaa-97d3-417d-a2bd-e426c42cc860",
+        "name": "getParamByLuaConfig"
+      }
+    }
+  },
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2137103"
+}

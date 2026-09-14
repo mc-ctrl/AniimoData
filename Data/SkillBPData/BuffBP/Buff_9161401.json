@@ -1,0 +1,203 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9161401",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "key": "TimerDelayAdd",
+      "duration": 0.5,
+      "actionIds": [
+        4,
+        12,
+        30
+      ],
+      "NodeID": 6,
+      "UID": "b8341a24-5b38-4d0a-a37e-34d2ef2bf4ef",
+      "name": "addTimer"
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "249f5911-d88a-4274-b6ea-a9e45441cdb5",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "634e63b8-6193-4e9a-b9f0-7d3685c9b93c",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "eeb608fa-ec5e-4bc9-86d1-7854e51f5b5d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10614_Skill_RoyalJelly_Start",
+      "NodeID": 31
+    },
+    "20": {
+      "UID": "c3872633-416b-4fd7-93db-09a92179d73c",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "af1030ce-7e0a-40a8-a7b6-0400c32a92a7",
+      "name": "checkDamageAbilityType",
+      "abilityType": 2,
+      "NodeID": 21
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0b10f017-07fd-4b5a-9e42-c1fd819444fe",
+      "effectId": "Eff_Parmon_10614_Skill_Blessing",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "10": {
+      "UID": "8346c326-a74c-41d6-ba8c-75734c0f58c8",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        13,
+        23,
+        31
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "a4481f52-1930-42a0-b5cb-13aa07d7ce97",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "25": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "532c4ad3-7fdd-4b53-8528-4547f3c94cb1",
+      "NodeID": 25,
+      "lValue": {
+        "key": "IsHitTarget",
+        "name": "getCacheVal",
+        "UID": "ad60d64f-38ea-4ac5-ac70-6cbe82cb4e20",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "26": {
+      "key": "IsHitTarget",
+      "name": "setCacheVal",
+      "UID": "61748756-910d-471d-a508-ac69ba9b5dee",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 26
+    },
+    "27": {
+      "key": "IsHitTargetCd",
+      "duration": 0.2,
+      "actionIds": [
+        26
+      ],
+      "NodeID": 27,
+      "UID": "0e1d2b3b-c330-4d7f-8d88-73516780fec3",
+      "name": "addEntityTimer"
+    },
+    "17": {
+      "key": "IsHitTarget",
+      "name": "setCacheVal",
+      "UID": "14cc8494-1b03-4a9b-8b36-fce96c4f1cba",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 17
+    },
+    "12": {
+      "calcInfo": {
+        "add_cur_ep_fix": 10
+      },
+      "calcInfoByLuaConfig": {
+        "id": 9161401,
+        "type": 1,
+        "add_cur_ep_fix": "param0"
+      },
+      "UID": "975d4d68-d50c-4b90-b607-229c2120c03c",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 12
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "daa10be7-5000-44a3-afd5-b3fce437b3b9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10614_Skill_RoyalJelly_Start",
+      "NodeID": 30
+    },
+    "13": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "009d5966-4d87-46a5-b8d7-c73063197e5f",
+      "effectId": "Eff_Parmon_10614_Skill_Blessing",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "19": {
+      "actionIds": [
+        17,
+        27
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "781fff32-1f58-4909-8cd7-28eed963afa0",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "23": {
+      "calcInfo": {
+        "add_cur_ep_fix": 10
+      },
+      "calcInfoByLuaConfig": {
+        "id": 9161401,
+        "type": 1,
+        "add_cur_ep_fix": "param0"
+      },
+      "UID": "943266ff-453e-4ed5-80e4-df24d528339a",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 23
+    },
+    "16": {
+      "key": "IsHitTarget",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16,
+      "UID": "bc301068-2c89-42d3-b302-7044d003e007",
+      "name": "registerCacheValChange"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    20,
+    16
+  ]
+}

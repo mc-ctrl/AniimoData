@@ -1,0 +1,67 @@
+{
+  "BPName": "ability_114301051",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 114301051001,
+      "name": "setCombatActionTimeline",
+      "UID": "3dc91cb4-0974-48cf-bc37-9b8a2d0f06a7",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "124": {
+      "buffId": 10012,
+      "name": "removeBuff",
+      "UID": "be6663b0-6aaa-4669-b004-5057f2fb7ad8",
+      "target": "OWNER",
+      "NodeID": 124
+    },
+    "120": {
+      "name": "stopEffectStr",
+      "UID": "6eec2060-c169-4a83-90b6-7b6789879e3a",
+      "effectId": "Eff_SkillIndicator_Comm",
+      "target": "OWNER",
+      "NodeID": 120
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Wave_Start",
+    "Boss_Skill_Field",
+    "Skill_Wave_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10207_Skill_SummonBomb_Release01",
+    "Eff_Parmon_10143_Skill_Field_Ball",
+    "Eff_Parmon_10143_Skill_Field_Boom",
+    "Eff_Parmon_10143_Skill_Ex_Light",
+    "Eff_Parmon_10143_Skill_Ex_Star",
+    "Eff_Hit_Electric_Slash_Y",
+    "Eff_Buff_Defense_Arrow_Up",
+    "Eff_Parmon_10143_Skill_Charge",
+    "Eff_Parmon_10143_Teleport",
+    "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+    "Eff_Hit_Electric_Blunt",
+    "Eff_Parmon_10012_Mon_Skill_Warning_Boss",
+    "Eff_Parmon_10072_Skill_Thunder"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    120,
+    124
+  ],
+  "searchTargetRangeDown": 3,
+  "abilityParamId": 10400271
+}

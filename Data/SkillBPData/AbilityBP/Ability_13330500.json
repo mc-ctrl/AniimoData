@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_DoubleTeam"
+  ],
+  "searchTargetRangeRadius": 5,
+  "BPName": "ability_13330500",
+  "name": "",
+  "UID": "ebf3f0e1-0645-415f-8961-4cc9bab8e2c8",
+  "searchTargetRangeUp": 4.5,
+  "abilityParamId": 11100011,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 3,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "9": {
+      "timelineId": 13330500001,
+      "name": "setCombatActionTimeline",
+      "UID": "0be97c41-cbd4-4005-a7c7-9de74a5fe0b3",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

@@ -1,0 +1,263 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "a88e1ffb-0ef0-4a12-b356-25cda37581df",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          32
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 38,
+      "UID": "fc7fe5d1-cb62-4a07-a341-9aaa520953cd"
+    },
+    "35": {
+      "overridePos": "TARGET",
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "568d9515-3657-4186-af72-edde221165ea",
+      "effectId": "Eff_Parmon_10143_Boss_Warning",
+      "timeScale": 0.1,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": true,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 35
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "62156596-8ba5-4a51-9c98-15499bd4b490",
+      "effectId": "Eff_Parmon_10143_Skill_Field_Ball",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7dcb9f61-8208-46f7-a369-1fb40da70ae2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10143_Skill_Field_Star",
+      "NodeID": 37
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.35,
+      "NodeID": 20,
+      "UID": "37659278-a974-4496-a97b-6c783477dda3"
+    },
+    "12": {
+      "UID": "7d4c90be-2ac3-4095-aeb8-3e077ab6bd28",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "3": {
+      "UID": "c6e5158e-f560-4cfb-8862-4499fb842bcf",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 114302,
+      "name": "createEntity",
+      "UID": "c99a829a-e80c-41bb-8760-2912e388d98e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 23,
+      "pos": "OWNER"
+    },
+    "18": {
+      "UID": "dda9af96-9c2e-4c86-8399-6ff0810250bc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 18
+    },
+    "14": {
+      "UID": "e1247915-ef1b-4913-aed4-c2beea652aee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          31
+        ]
+      },
+      "NodeID": 14
+    },
+    "26": {
+      "offsetXYZ": [
+        0,
+        0.3,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "df624a86-5a23-4527-b44d-a9c6f35c95c5",
+      "effectId": "Eff_Parmon_10143_Skill_Field_Ball",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "33c40b74-5e8b-47b9-a829-05f2cc427959",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "Boss_Skill_Field"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23,
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 25,
+      "UID": "ce66e6c2-0d03-44b3-a578-9d8d53a29a82"
+    },
+    "16": {
+      "UID": "c3832f6f-6a80-4d66-b19d-f69417288c10",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.28,
+      "NodeID": 27,
+      "UID": "70d5583c-ccbe-4b06-906c-b1f246ce5b16"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5d59fe76-5509-4100-8100-4abf82aeed4c",
+      "effectId": "Eff_Parmon_10143_Skill_Field_Boom1",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "3ef4abaf-8fdb-4aaf-93a1-9550eccab060",
+      "effectId": "Eff_Parmon_10143_Skill_Field_Ball",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 30,
+      "UID": "4a7f61f3-801d-49e4-a9dd-4a6cae45e9ef"
+    },
+    "32": {
+      "overridePos": "TARGET",
+      "name": "puppetPreCastAction",
+      "UID": "df4ee3ab-2107-4952-b4bd-6ae11674636a",
+      "effectId": "Eff_Parmon_10143_Boss_Warning",
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": true,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": false,
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1ba128d7-c8ae-449c-8797-148d8015e50a",
+      "effectId": "Eff_Parmon_10143_Skill_Warning_Petrifaction1",
+      "speed": 0.625,
+      "NodeID": 33
+    },
+    "34": {
+      "UID": "519880db-c1b0-4b04-a096-ca8c86d38671",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "NodeID": 34
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 36,
+      "UID": "da472aa6-bc08-4e3b-99f7-3b19a7b001d4"
+    }
+  },
+  "BPName": "ability_11430401",
+  "NodeID": 7,
+  "UID": "2cf52b96-c03f-47ac-a456-a3b028e6a949",
+  "eventIds": [
+    20,
+    5,
+    14,
+    34,
+    36,
+    27,
+    25,
+    16,
+    38,
+    30
+  ],
+  "layer": "Base",
+  "length": 2.45
+}

@@ -1,0 +1,32 @@
+{
+  "nodeMap": {
+    "13": {
+      "UID": "f4e56dc0-fe99-44b8-a528-f2bb730485f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "1bd213df-444a-4673-a455-ec9b391e93ac",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12110900",
+  "NodeID": 15,
+  "UID": "4ff78c1a-e98b-48bd-a71b-b5e593b89d70",
+  "eventIds": [
+    13
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

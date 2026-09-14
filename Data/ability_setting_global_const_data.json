@@ -1,0 +1,229 @@
+{
+  "flyHitTimelineIdHitL": 100,
+  "flyHitTimelineIdHitShake": 100,
+  "flyHitTimelineIdHitStand": 100,
+  "flyHitTimelineIdHitThrow": 100,
+  "flyHitTimelineIdNone": 100,
+  "followingPhantomAcceleration": 2.5,
+  "followingPhantomAngleDamp": 1,
+  "followingPhantomMaxVelocity": 3,
+  "followingPhantomMinMoveDis": 1,
+  "followingPhantomTeleportDis": 10,
+  "forceLevelRange": [
+    10,
+    20,
+    38,
+    50
+  ],
+  "forceLockDis": 15,
+  "friction": 1,
+  "goSwitchProbability": 0.4,
+  "gravity": 50,
+  "growFlowerEndRandomTimeMax": 0.5,
+  "growFlowerEndRandomTimeMin": 0.25,
+  "growFlowerStartRandomTimeMax": 1,
+  "growFlowerStartRandomTimeMin": 0.5,
+  "hitReturnCDRate": 1,
+  "hitReturnEPRate": 1,
+  "hitReturnSkillEPRate": 1,
+  "hitStaminaValue": 300,
+  "hitStaminaValueTime": 2,
+  "hitTimelineIdHitAvatar": 102,
+  "hitTimelineIdHitBack": 105,
+  "hitTimelineIdHitH": 103,
+  "hitTimelineIdHitL": 102,
+  "hitTimelineIdHitShake": 101,
+  "hitTimelineIdHitStand": 106,
+  "hitTimelineIdHitThrow": 104,
+  "hitTimelineIdNone": 100,
+  "impulseSquashThresholdMap": [
+    [
+      30,
+      920000704
+    ],
+    [
+      38,
+      920000705
+    ],
+    [
+      45,
+      920000706
+    ]
+  ],
+  "inCastStaminaValue": 300,
+  "inCastWeightValue": 50,
+  "keyCacheNum": 1,
+  "keyCacheTime": 0.3,
+  "knockBackImpulseRange": [
+    3,
+    5
+  ],
+  "knockHeavyMinImpulse": 1,
+  "knockUpHorizontalClamp": [
+    3,
+    10
+  ],
+  "knockUpImpulseRange": [
+    3,
+    8
+  ],
+  "knockbackThreshold": 2,
+  "knockupThreshold": 5.5,
+  "leaveForceLockDis": 30,
+  "lockByDisDuration": 3,
+  "maxElementValue": 2000,
+  "minCollisionMovementPercentage": 0.1,
+  "petDashMoveDis": 15,
+  "petDecelerateTime": 0.3,
+  "physicsImpulse": {
+    "T_Interact_PhysicsSpecial": 0,
+    "T_Interact_PhysicsWeak": 70,
+    "T_Interact_NormalATKPhysicsLight": 70,
+    "T_Interact_NormalATKPhysicsMiddle": 140,
+    "T_Interact_PhysicsHeavy": 480,
+    "T_Interact_PhysicsLight": 140,
+    "T_Interact_PhysicsLv4": 800,
+    "T_Interact_PhysicsMiddle": 250
+  },
+  "planGrassEndRandomTimeMax": 0.5,
+  "planGrassEndRandomTimeMin": 0.25,
+  "playerDisplyHpRange": [
+    0.5,
+    0.2
+  ],
+  "playerTakeDamageImmuneTime": 1.5,
+  "puppetDecelerateTime": 0.4,
+  "pvpBreakRatio": 1,
+  "pvpDashStaminaCostRatio": 1,
+  "pvpEpNorAtkRatio": 0,
+  "pvpStaminaRecoverRatio": 0.5,
+  "pvp_ep_Region_v": 0,
+  "sameElementDamageAddRatio": 0.1,
+  "shakeModelCurveId": 1,
+  "shakeModelShakeRatio": 0.5,
+  "shakeModelShakeTime": 0.3,
+  "specialStateToCastSkill": [
+    "BURROW_ST",
+    "FLY_ST",
+    "TAKE_ROOT_ST",
+    "DEAD_ST"
+  ],
+  "switchFromExtraTempPetPreset": "Eff_Skill_Rogue_Transform_Start_Player_Appear",
+  "switchToExtraTempPetPreset": "Eff_Skill_Rogue_Transform_Start_Player_DisAppear",
+  "thornsCollisionCd": 0.5,
+  "thornsHitInWaterTimeline": 109,
+  "thornsImpulseId": 3000,
+  "thornsInAirImpulseId": 5000,
+  "formulaExplictDesc": "<style=Hint_BgL>%s</style></style><受%s属性影响>",
+  "HitFlyRecoverToBackSwingTime": 1,
+  "SouDaCheInCombatDashCost": 30,
+  "abilityEpCostToSpRate": 1,
+  "abilityIndicatorColor": [
+    0.1465,
+    0.6081,
+    0.8396
+  ],
+  "airWallProgressEngageTime": 2,
+  "appearDashAcceleration": 120,
+  "appearDashDesireSpeed": 100,
+  "appearDashEff": "Eff_Avatar_Common_FlyIntoParmon_fly",
+  "appearDashMaxTime": 1.5,
+  "autoCastCancelTime": 0.4,
+  "breakHitTimelineIdHitH": 101,
+  "breakHitTimelineIdHitL": 101,
+  "breakHitTimelineIdHitShake": 101,
+  "breakHitTimelineIdHitStand": 101,
+  "breakHitTimelineIdHitThrow": 101,
+  "breakHitTimelineIdNone": 100,
+  "breakTimelineIdHitBack": 101,
+  "buffTag2BreakMap": {
+    "Stun": [
+      3199,
+      0.01
+    ],
+    "Sleep": [
+      3199,
+      0.005
+    ],
+    "Palsy": [
+      3199,
+      0.0008
+    ],
+    "Charm": [
+      3199,
+      0.005
+    ],
+    "Frozen": [
+      3199,
+      0.01
+    ],
+    "Silent": [
+      3199,
+      0.001
+    ]
+  },
+  "callFriendsCD": 2,
+  "cameraImpulseDirMode": 0,
+  "cameraImpulseIsCenter": 0,
+  "cameraImpulseShakeAmplitude": 0,
+  "cameraImpulseShakeDir": [
+    1,
+    0,
+    0
+  ],
+  "cameraImpulseShakeDissipationDistance": 28,
+  "cameraImpulseShakeDistance": 30,
+  "cameraImpulseShakeFrequency": 6,
+  "cameraImpulseShakeRadius": 2,
+  "cameraImpulseShakeTime": 0,
+  "conductHitInWaterTimeline": 109,
+  "conductImpulseId": 5000,
+  "conductInAirImpulseId": 5000,
+  "dashCacheTime": 0.2,
+  "dashInInvincibleTime": [
+    0,
+    0.3
+  ],
+  "dashReturnCDRate": 1,
+  "dashReturnEPRate": 1,
+  "dashReturnSkillEPRate": 1,
+  "defaultHitPositionPercent": 0.5,
+  "disengageAutoReduceRate": 0.3,
+  "effMagnifyRatio": 0.25,
+  "effMagnifyThreshold": 5,
+  "efxPenetrationDepth": 0.1,
+  "elementValue": [
+    [
+      0,
+      20
+    ],
+    [
+      11,
+      40
+    ],
+    [
+      16,
+      70
+    ]
+  ],
+  "elementValuePerLayer": 100,
+  "epRecoverOutOfCombatTime": 5,
+  "extraTempPetAppearPreset": "Eff_Skill_Rogue_Transform_Start_Boss_Appear",
+  "extraTempPetDissolvePreset": "Eff_Skill_Rogue_Transform_Start_Boss_DisAppear",
+  "extraTempPetLoopPreset": "Eff_Skill_Rogue_Transform_Loop_Fresnel_02",
+  "fallSquashThresholdMap": [
+    [
+      0.1,
+      920000704
+    ],
+    [
+      0.15,
+      920000705
+    ],
+    [
+      0.2,
+      920000706
+    ]
+  ],
+  "flyHitTimelineIdHitH": 100
+}

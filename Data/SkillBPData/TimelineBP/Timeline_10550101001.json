@@ -1,0 +1,295 @@
+{
+  "nodeMap": {
+    "53": {
+      "buffId": 2105511,
+      "name": "removeBuff",
+      "UID": "f17eb1fb-5ffa-4b87-8674-7f0eb27ad0fb",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "40": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 10550101001,
+      "name": "createProjectile",
+      "UID": "a3681304-aa63-427d-a9ba-802f1c7def4e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 40
+    },
+    "54": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9f9eaea1-318e-463c-8bc3-a0f18f146ff1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost01",
+      "NodeID": 54
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3371ba4b-f082-4872-b3d8-fc2cf80e2ec9",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Liuli",
+      "speed": 1,
+      "NodeID": 44
+    },
+    "69": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 10550101002,
+      "name": "createProjectile",
+      "UID": "a1a5ab3b-20e2-468d-9fea-d5758cdbc69f",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 69
+    },
+    "59": {
+      "calcInfo": {
+        "passive_energy_cur": -8
+      },
+      "name": "calcResult",
+      "UID": "defa86da-3a97-4b78-8c8b-07fe5e1b88ec",
+      "target": "OWNER",
+      "NodeID": 59
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a5cd0f6f-c4f6-4bfd-a8ed-f659dcc36499",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_WolfGhost"
+    },
+    "49": {
+      "buffId": 2105512,
+      "name": "hasBuff",
+      "UID": "85004fb7-9924-436a-a68d-c8b510a420d4",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "17": {
+      "name": "isActorType",
+      "UID": "73622733-8ce8-4585-a3c3-0151e61164bc",
+      "target": "OWNER",
+      "NodeID": 17,
+      "actorType": 3
+    },
+    "11": {
+      "UID": "40c4a539-17d0-4318-b351-8234d0e5815c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          54
+        ]
+      },
+      "NodeID": 11
+    },
+    "50": {
+      "actionIds": [
+        51,
+        53,
+        59
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "0dc9d41f-be61-42d4-a20f-77124abd579d",
+      "name": "doActionsByConditions",
+      "NodeID": 50
+    },
+    "21": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 21
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 22,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "4": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          24,
+          50
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "actionIds": [
+        12,
+        16
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "3a3176be-be5b-4fd6-a217-0a84446b1a21",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "46": {
+      "UID": "fb633daf-efbe-47b0-8b27-01d30969e256",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "NodeID": 46
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 15,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "57": {
+      "name": "dropEffectStr",
+      "UID": "dbced86d-745e-4c09-abf0-4a51fc32b45b",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "26": {
+      "UID": "27a15d24-d886-4370-a8f5-2de7c092e8e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 26
+    },
+    "12": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "0e3d2ff6-8546-4e0b-a953-7b754de1f8eb",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 12
+    },
+    "28": {
+      "UID": "d8b239da-f6be-4c58-8a77-ef753a972845",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          26,
+          57
+        ]
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "fad6715f-2ab9-4207-9d81-d3be568c2e26",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 29
+    },
+    "30": {
+      "actionIds": [
+        69
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "488f091c-2f61-4f29-b9a0-20f25585c59a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        40
+      ],
+      "NodeID": 30
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 32,
+      "UID": "22feedbd-51e1-47d1-b787-eee5652ac8f2"
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "51": {
+      "buffId": 2105512,
+      "name": "removeBuff",
+      "UID": "20d11aff-10a1-48a5-98c9-378ee0bb662a",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "757c5a67-31fb-4027-b3de-bdd227227a9f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_10550101",
+  "NodeID": 6,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    4,
+    28,
+    11,
+    15,
+    22,
+    32,
+    46
+  ],
+  "layer": "Base",
+  "length": 2.45
+}

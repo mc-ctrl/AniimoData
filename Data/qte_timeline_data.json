@@ -1,0 +1,2184 @@
+{
+  "QTE_10122_MomentEnergy": [
+    {
+      "qtePartId": "QTE_10122_MomentEnergy",
+      "position": [
+        0.75,
+        0.25
+      ]
+    }
+  ],
+  "QTE_10122_Piano": [
+    {
+      "qtePartId": "QTE_10122_Piano",
+      "position": [
+        0.75,
+        0.25
+      ]
+    }
+  ],
+  "QTE_10451_EggCharge": [
+    {
+      "qtePartId": "QTE_10451_EggCharge",
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_10471_Combo": [
+    {
+      "qtePartId": "QTE_10471_Combo",
+      "position": [
+        0.75,
+        0.25
+      ]
+    }
+  ],
+  "QTE_Become_Egg_Free": [
+    {
+      "qtePartId": "QTE_Become_Egg_Free",
+      "startTime": 0,
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_Combo": [
+    {
+      "qtePartId": "QTE_Combo",
+      "startTime": 0,
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_Combo_Test": [
+    {
+      "qtePartId": "QTE_Combo_Test",
+      "startTime": 0,
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_Continous_Button": [
+    {
+      "qtePartId": "QTE_Continous_Button",
+      "startTime": 0,
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_DIGEGG01": [
+    {
+      "qtePartId": "QTE_DIGEGG_01",
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_DIGEGG02": [
+    {
+      "qtePartId": "QTE_DIGEGG_02",
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_Group_Avatar_Skill_Cure": [
+    {
+      "qtePartId": "QTE_Button_Round_Avatar_Skill_Cure",
+      "offsetTime": 0.166,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_Button_Round_Avatar_Skill_Cure",
+      "offsetTime": 1.15,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_Button_Round_Avatar_Skill_Cure",
+      "offsetTime": 1.15,
+      "position": [
+        0.8,
+        0.2
+      ]
+    }
+  ],
+  "QTE_Group_Avatar_Skill_FirstAid": [
+    {
+      "qtePartId": "QTE_Button_Round_Avatar_Skill_FirstAid",
+      "startTime": 0,
+      "position": [
+        0.8,
+        0.25
+      ]
+    }
+  ],
+  "QTE_Group_Avatar_Skill_Inspire": [
+    {
+      "qtePartId": "QTE_Button_Round_Avatar_Skill_Inspire",
+      "offsetTime": 0,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_Button_Round_Avatar_Skill_Inspire",
+      "offsetTime": 1.3846,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_Button_Round_Avatar_Skill_Inspire",
+      "offsetTime": 1.3846,
+      "position": [
+        0.8,
+        0.2
+      ]
+    }
+  ],
+  "QTE_WRS_CompetitionMid": [
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "startTime": 0.3,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.26,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.34,
+      "position": [
+        0.8,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.37,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.34,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.25,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.13,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.99,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.84,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.72,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.64,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.61,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.64,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.72,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.84,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.98,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.12,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.24,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.32,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.35,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.32,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.24,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.12,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.98,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.83,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.71,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.63,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.6,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.63,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.71,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.83,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.97,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.11,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.24,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.32,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.35,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.32,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.23,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.11,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.97,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.82,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.62,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.59,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.62,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.8,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.82,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.97,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.11,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.23,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.31,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.34,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.31,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.23,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.11,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.96,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.82,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.62,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.59,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.61,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.82,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.96,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.1,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.22,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.31,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.33,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.3,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.22,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.1,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.96,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.81,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.69,
+      "position": [
+        0.7,
+        0.35
+      ]
+    }
+  ],
+  "QTE_WRS_CompetitionHard": [
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "startTime": 0.3,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.25,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.17,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.82,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.74,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.82,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.99,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.17,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.24,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.17,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.99,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.81,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.74,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.81,
+      "position": [
+        0.8,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.98,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.16,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.23,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.16,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.98,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.8,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.73,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.8,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.98,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.15,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.22,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.15,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.97,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.79,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.72,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.79,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.97,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.14,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.22,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.14,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.96,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.79,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.71,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.78,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.96,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.14,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.21,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.13,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.96,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.78,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.78,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.95,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.13,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.2,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.13,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.95,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.77,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.77,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.94,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.12,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.19,
+      "position": [
+        0.8,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.12,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.94,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.76,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.69,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.76,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.94,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.11,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.18,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.11,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.93,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.75,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.68,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.75,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.93,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.1,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.18,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.1,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.92,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.75,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.67,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.74,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.92,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.1,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.17,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.09,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.92,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.74,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.66,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.74,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.91,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.09,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.16,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.09,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.91,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.73,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.66,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.73,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.9,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.08,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.15,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.08,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.9,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.72,
+      "position": [
+        0.8,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.65,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.72,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.9,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.07,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.14,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.07,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.89,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.71,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.64,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.71,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.89,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.06,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.14,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.06,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.88,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.71,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.63,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.88,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.06,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.13,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.05,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.88,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.62,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.7,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.87,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.05,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.12,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.05,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 0.87,
+      "position": [
+        0.7,
+        0.7
+      ]
+    }
+  ],
+  "QTE_WRS_Competition": [
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "startTime": 0.3,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.35,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.5,
+      "position": [
+        0.8,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.35,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.99,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.64,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.49,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.63,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.98,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.34,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.48,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.33,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.98,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.62,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.47,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.62,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.97,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.32,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.46,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 3.32,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.96,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.6,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.46,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.6,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.95,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.3,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.45,
+      "position": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.3,
+      "position": [
+        0.9,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.94,
+      "position": [
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.59,
+      "position": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.44,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.58,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.94,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.29,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 3.43,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.28,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.93,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.57,
+      "position": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.42,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.57,
+      "position": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 1.92,
+      "position": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.27,
+      "position": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "qtePartId": "QTE_WRS_Competition_01",
+      "offsetTime": 2.42,
+      "position": [
+        0.7,
+        0.7
+      ]
+    }
+  ],
+  "QTE_Group_Test_01": [
+    {
+      "qtePartId": "QTE_Button_Round_Test_01",
+      "startTime": 0,
+      "position": [
+        0.9,
+        0.05
+      ]
+    }
+  ],
+  "QTE_10122_Current": [
+    {
+      "qtePartId": "QTE_10122_Current",
+      "position": [
+        0.75,
+        0.25
+      ]
+    }
+  ],
+  "QTE_10122_Dance": [
+    {
+      "qtePartId": "QTE_10122_Dance",
+      "position": [
+        0.75,
+        0.25
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2148301",
+  "name": "泡沫buff",
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "setSubModelVisible",
+      "UID": "677a7ad5-fd2e-499a-a4f9-772d5644a629",
+      "NodeID": 3,
+      "subModelName": "M_Parmon_10481_Body02",
+      "visible": false
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "f298d449-e5ea-44f1-9706-2844922572d1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "templateId": 1048300,
+      "name": "checkTargetTemplateId",
+      "UID": "ed142767-b38a-4b5f-894d-1b1ae50acccf",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "8": {
+      "name": "setSubModelVisible",
+      "UID": "1c6b4bf5-b3b9-411c-98e9-5e44f32a52a7",
+      "NodeID": 8,
+      "subModelName": "M_Parmon_10483_Body02",
+      "visible": false
+    },
+    "7": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "782128af-01b9-4587-a657-6eee286f2f07",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "5": {
+      "templateId": 1048100,
+      "name": "checkTargetTemplateId",
+      "UID": "15155a12-f0b7-4020-8b14-354caecccd5f",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

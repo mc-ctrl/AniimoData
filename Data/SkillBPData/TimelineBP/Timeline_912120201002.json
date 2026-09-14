@@ -1,0 +1,115 @@
+{
+  "nodeMap": {
+    "75": {
+      "name": "stopSoundStr",
+      "UID": "700b4bf3-f7c2-4417-92ad-baf0850a84c5",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 75
+    },
+    "64": {
+      "rotateSpeed": 60,
+      "name": "rotateBySelf",
+      "UID": "6e74d2e8-2b43-4cc8-9868-1edee01045a0",
+      "time": 0.5,
+      "NodeID": 64
+    },
+    "65": {
+      "UID": "1836d86e-0eff-4cd7-b090-31d567532e19",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          64
+        ]
+      },
+      "NodeID": 65
+    },
+    "27": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "3344ce9c-8664-43ea-a9ed-92cc4bcbdb5c",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Boss",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "77": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "6ac0d680-16f2-481c-842f-a29456003ec4",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "29": {
+      "UID": "280131f4-dc62-4c75-b2b8-6cd8beaeb2e4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          42,
+          75
+        ]
+      },
+      "NodeID": 29
+    },
+    "67": {
+      "UID": "78e47d3f-73a5-46fa-9c7c-8631f8ba8494",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 67
+    },
+    "42": {
+      "timelineTag": "",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ec67c448-a6b9-459b-af26-aae83d3d1839",
+      "target": "OWNER",
+      "NodeID": 42,
+      "animId": "Skill_SleepEnd"
+    },
+    "112": {
+      "UID": "fb527b99-96f5-461e-ab8d-7774b2011b2f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          111
+        ]
+      },
+      "NodeID": 112
+    },
+    "111": {
+      "cdTime": 20,
+      "name": "forceSetSkillCD",
+      "NodeID": 111,
+      "UID": "6ac7e0e1-2603-42e4-a443-063c2a765278",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 912120201
+    },
+    "69": {
+      "action": {
+        "actionIds": [
+          67,
+          77
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 69,
+      "UID": "914fe8af-b7b5-413e-bc21-15d9c298b6ba"
+    }
+  },
+  "BPName": "ability_912120201",
+  "NodeID": 31,
+  "UID": "0fdfbd40-fd84-4706-a88e-bc9c1553f853",
+  "eventIds": [
+    65,
+    29,
+    69,
+    112
+  ],
+  "layer": "Base",
+  "length": 4
+}

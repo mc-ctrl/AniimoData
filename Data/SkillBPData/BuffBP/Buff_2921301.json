@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2921301",
+  "NodeID": 1,
+  "UID": "c3a19940-52bc-4636-8372-ae2be944070e",
+  "tags": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "28": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 28,
+      "UID": "c4981246-b820-4bb8-b602-2c4a46f9cfb2",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "26": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "2b808da2-6ec0-423b-8234-0c2e4347b213",
+      "name": "buffStartThink",
+      "NodeID": 26
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    26,
+    28
+  ]
+}

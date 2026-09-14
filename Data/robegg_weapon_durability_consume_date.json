@@ -1,0 +1,133 @@
+{
+  "5": {
+    "skillId": 12120130,
+    "fixedCost": 1.2
+  },
+  "6": {
+    "skillId": 11330410,
+    "fixedCost": 1.2
+  },
+  "7": {
+    "skillId": 14230200,
+    "fixedCost": 0.6
+  },
+  "8": {
+    "skillId": 14230201,
+    "fixedCost": 0.6
+  },
+  "9": {
+    "skillId": 14230210,
+    "fixedCost": 0.6
+  },
+  "whiteSkill": {
+    "11330410": 1.2,
+    "10330201": 1.2,
+    "10600370": 0.8,
+    "11430200": 0.6,
+    "11430210": 0.6,
+    "11430230": 0.6,
+    "12120130": 1.2,
+    "14230200": 0.6,
+    "14230201": 0.6,
+    "14230210": 0.6,
+    "14230211": 0.6,
+    "10330200": 1.2,
+    "14530301": 1.2,
+    "14530300": 1.2
+  },
+  "11": {
+    "skillId": 11430200,
+    "fixedCost": 0.6
+  },
+  "1": {
+    "falseTargetTag": [
+      2,
+      3,
+      4
+    ],
+    "fixedCost": 0.04,
+    "skillTag": [
+      [
+        0,
+        1,
+        11,
+        12,
+        16
+      ],
+      [
+        13
+      ]
+    ],
+    "costCoefficient": 0
+  },
+  "12": {
+    "skillId": 11430210,
+    "fixedCost": 0.6
+  },
+  "3": {
+    "falseTargetTag": [
+      2,
+      3,
+      4
+    ],
+    "fixedCost": 0,
+    "skillTag": [
+      0,
+      1,
+      11,
+      12,
+      16
+    ],
+    "costCoefficient": 0.04
+  },
+  "4": {
+    "fixedCost": 0.8,
+    "skillId": 10600370,
+    "costCoefficient": 0
+  },
+  "14": {
+    "skillId": 14530300,
+    "fixedCost": 1.2
+  },
+  "10": {
+    "skillId": 14230211,
+    "fixedCost": 0.6
+  },
+  "15": {
+    "skillId": 14530301,
+    "fixedCost": 1.2
+  },
+  "16": {
+    "skillId": 10330200,
+    "fixedCost": 1.2
+  },
+  "17": {
+    "skillId": 10330201,
+    "fixedCost": 1.2
+  },
+  "2": {
+    "falseTargetTag": [
+      2,
+      3,
+      4
+    ],
+    "fixedCost": 0,
+    "skillTag": [
+      [
+        0,
+        1,
+        11,
+        12,
+        16
+      ],
+      [
+        14
+      ]
+    ],
+    "costCoefficient": 0.04
+  },
+  "13": {
+    "skillId": 11430230,
+    "fixedCost": 0.6
+  }
+}

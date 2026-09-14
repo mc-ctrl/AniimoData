@@ -1,0 +1,39 @@
+{
+  "91278516": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -348.17,
+      126.42,
+      1123.8
+    ],
+    "sandboxId": 91292243,
+    "autoInitial": false,
+    "sandboxType": 37,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "汪岩嵩",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91278516,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91278515
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

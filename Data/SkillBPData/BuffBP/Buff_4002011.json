@@ -1,0 +1,56 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4002011",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "74867e4c-5308-4309-8011-011477d7d42c",
+      "effectId": "Eff_Buff_Defense_Arrow_Down",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "7c83c97c-4066-4ebd-8460-fc723296f3bc",
+      "effectId": "Eff_Buff_Defense_Arrow_Down",
+      "target": "CURPET",
+      "NodeID": 4
+    },
+    "7": {
+      "buffId": 4002011,
+      "name": "removeBuff",
+      "UID": "3e954167-00ae-4e6f-a65e-ac9186d4a33e",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "47ef2664-0b91-4b0e-a8ab-742785e08ace",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 4002011,
+    "type": 1,
+    "final_taken_dmg_inc_rate_v": "param0"
+  },
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    5,
+    8
+  ]
+}

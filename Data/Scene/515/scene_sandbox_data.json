@@ -1,0 +1,253 @@
+{
+  "91026142": {
+    "sightLevel": 1024,
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_其他关卡_家园区域桩点",
+    "sightLevelType": 1024,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "poiType": 1003,
+    "owner": "",
+    "forceSync": false,
+    "id": 91026142,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "85021853": {
+    "owner": "meng.wu",
+    "autoSave": false,
+    "position": [
+      -0.01,
+      0,
+      -59.88
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "saveRole": 1,
+    "onFinished": 1,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 22,
+    "name": "全局_场景交互物_新家园剧情任务用",
+    "spawners": [
+      90820275,
+      90820277,
+      90824164,
+      90824166,
+      90824168,
+      90824171,
+      90824174,
+      90824177,
+      90925504,
+      90925514,
+      90925516,
+      90925518,
+      91195038,
+      91195043
+    ],
+    "id": 85021853,
+    "syncLevelItemRole": 1,
+    "sightLevel": 64,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1018850
+  },
+  "90549734": {
+    "owner": "端木一康",
+    "autoSave": true,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "90955172": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          0,
+          0,
+          -135.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90955172,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1000,
+          1000,
+          1
+        ],
+        "isActive": true
+      },
+      "90955217": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          135.8,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90955217,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1000,
+          1000
+        ],
+        "isActive": true
+      },
+      "90955235": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          0,
+          0,
+          162.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90955235,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1000,
+          1000,
+          1
+        ],
+        "isActive": true
+      },
+      "90955239": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          -124.1,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90955239,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1000,
+          1000
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "全局_其他关卡_家园相关",
+    "spawners": [
+      90549752,
+      90820007,
+      90820009,
+      90830911,
+      90858692,
+      90858706,
+      90858710,
+      90858712,
+      90858720
+    ],
+    "id": 90549734,
+    "sightLevel": 1024,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1019875
+  },
+  "72610829": {
+    "owner": "赵子昕",
+    "autoSave": false,
+    "name": "全局_场景交互物_家园",
+    "disposable": true,
+    "spawners": [
+      72555528
+    ],
+    "sightLevel": 128,
+    "sandboxType": 6,
+    "activeOnInit": 1,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "position": [
+      -23.43,
+      0,
+      -84.49
+    ],
+    "onFinished": 1,
+    "graphId": 0,
+    "poiType": 1003,
+    "id": 72610829
+  }
+}

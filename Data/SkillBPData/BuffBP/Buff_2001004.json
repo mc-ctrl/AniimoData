@@ -1,0 +1,70 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "3915ed58-ec20-49d7-a3a1-6fe780ec0c5d",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "16196d6a-a3da-4a69-844e-b8e4e6d00230",
+      "name": "registerOverDamageEvent",
+      "actionIds": [
+        2,
+        7
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "33394acd-87d2-4d94-9e3a-90da09de89ec",
+      "name": "getOverDamage",
+      "NodeID": 6
+    },
+    "7": {
+      "key": "OverDamage",
+      "name": "setCacheVal",
+      "UID": "dde75ed4-c814-4f34-88ad-4c5168ad885d",
+      "target": "OWNER",
+      "val": {
+        "UID": "33394acd-87d2-4d94-9e3a-90da09de89ec",
+        "name": "getOverDamage",
+        "NodeID": 6
+      },
+      "NodeID": 7
+    },
+    "2": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "templateId": 2008000,
+      "name": "createEntity",
+      "UID": "cd95eaa1-9563-41f8-bc72-0f548dff10f4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2001004",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

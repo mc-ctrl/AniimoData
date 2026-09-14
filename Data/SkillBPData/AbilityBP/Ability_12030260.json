@@ -1,0 +1,64 @@
+{
+  "BPName": "ability_12030260",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityIndicator": 1,
+  "abilityParamId": 10600533,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 12030260001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_NoiseWave"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Common_Buff_EnergyRegen",
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Parmon_10203_Skill_NoiseWave_Grass_Liuli",
+    "Eff_Parmon_10203_Skill_MaliciousZone_Hit",
+    "Eff_Parmon_1020302_Skill_MaliciousZone_Hit",
+    "Eff_Common_Buff_EnergyRegen_s"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0.3
+    ],
+    "shapeArgs": [
+      1,
+      1,
+      4.8,
+      2,
+      0.5
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "searchTargetRangeDown": 0.5
+}

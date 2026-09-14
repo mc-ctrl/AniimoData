@@ -1,0 +1,39 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119490",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "onBuffRefreshIds": [
+    3
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3e059072-6035-4c05-87b7-6d5ef9586036",
+      "effectId": "Eff_Parmon_10194_Enpowered_Ex_Passive_loop",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0fcf7399-8628-4096-99c0-9b04b59d9156",
+      "effectId": "Eff_Parmon_10194_Enpowered_Ex_Passive_end",
+      "speed": 1,
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

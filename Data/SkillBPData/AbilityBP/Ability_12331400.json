@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_12331400",
+  "NodeID": 1,
+  "UID": "56cf8e36-23fb-4edf-8411-f2494fef8e20",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12331400001,
+      "name": "setCombatActionTimeline",
+      "UID": "91855ad9-53ed-41f4-9144-2f980ceb64f1",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Whirlwind_Start",
+    "Skill_Whirlwind_End",
+    "Skill_Whirlwind_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10233_Skill_Wave01",
+    "Eff_Parmon_10072_Skill_Hit",
+    "Eff_Parmon_10233_Skill_Wave02_Boss"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 40900003
+}

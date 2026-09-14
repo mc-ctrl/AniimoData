@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1038",
+  "calcInfoByLuaConfig": {
+    "id": 1038,
+    "type": 1,
+    "stamina_cost_ratio_v": "param0"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

@@ -1,0 +1,18 @@
+{
+  "1009": {
+    "autoChangeRange": [
+      0,
+      300
+    ],
+    "changeValue": 1,
+    "cycleValue": 360,
+    "initTitle": 1,
+    "initValue": 100,
+    "itemEffect": 60,
+    "moneyShopItemId": 20008,
+    "shopItemId": 150008,
+    "useItemId": 620002,
+    "maxValue": 3000,
+    "cycleType": 4
+  }
+}

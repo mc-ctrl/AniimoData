@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145127",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "onBuffRefreshIds": [
+    2,
+    5
+  ],
+  "tags": [
+    14
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "217c725e-ab5d-4783-84be-20f0dd73c356",
+      "effectId": "Eff_Env_LevIOT_Hudiegu_ButterFly_Trail",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "2": {
+      "name": "hideModel",
+      "UID": "7b241c0a-c857-4ff3-9f2f-2a4ca8b5a2d1",
+      "target": "OWNER",
+      "NodeID": 2,
+      "maxHideTime": 9999
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    2,
+    5
+  ],
+  "onBuffStartIds": [
+    2,
+    5
+  ]
+}

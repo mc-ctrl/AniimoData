@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10068",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "rValue": 5,
+      "name": "greater",
+      "UID": "a2a29da7-889b-456d-84a1-fc4079abebd2",
+      "NodeID": 5,
+      "lValue": {
+        "UID": "1f875eff-4160-450d-8dff-a8c6c6ede486",
+        "name": "getEventAddAbilityImpulseValue",
+        "NodeID": 4
+      }
+    },
+    "4": {
+      "UID": "1f875eff-4160-450d-8dff-a8c6c6ede486",
+      "name": "getEventAddAbilityImpulseValue",
+      "NodeID": 4
+    },
+    "9": {
+      "target": "OWNER",
+      "duration": 1.6,
+      "buffId": 10018,
+      "NodeID": 9,
+      "UID": "9ab1ce98-da70-44bc-b8e8-3609cdd3312a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "62483e30-e1b6-4567-b69a-476aaf5964a4",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "7": {
+      "UID": "673ff847-f6b1-43c0-91c3-87475d7022d2",
+      "name": "registerAddAbilityImpulse",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

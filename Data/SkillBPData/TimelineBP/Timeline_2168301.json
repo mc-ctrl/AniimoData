@@ -1,0 +1,241 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        12,
+        32,
+        3,
+        16,
+        11,
+        44
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "eb2ad118-a401-4119-b2d7-9fdeeaae2490",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        34
+      ],
+      "NodeID": 5
+    },
+    "38": {
+      "UID": "517ba331-d35f-457b-9190-1e6223e15e5a",
+      "actorId": {
+        "UID": "195676f3-2cd3-4f84-9745-da6f51d8b256",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 37
+      },
+      "name": "destroyEntity",
+      "NodeID": 38
+    },
+    "39": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "b8bcfffa-9c75-4843-b56c-fc44f15fa2d6",
+      "effectId": "Eff_Parmon_10683_Skill_Greed_pick",
+      "speed": 1,
+      "NodeID": 39
+    },
+    "6": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 6,
+      "relation": 1,
+      "enterTrapActionIds": [
+        5
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        0.65
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "a7d895ff-7470-4ddd-927f-cebdeb06c432"
+    },
+    "41": {
+      "target": "TrapTarget",
+      "duration": 20,
+      "buffId": 9168302,
+      "NodeID": 41,
+      "UID": "cf0c66f9-7285-4704-8a1f-6caff2671b23",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "42": {
+      "target": "MASTER",
+      "duration": 20,
+      "buffId": 9168302,
+      "NodeID": 42,
+      "UID": "1f93b7d2-5687-4d33-9c52-759ee660e7af",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "cd0afdc1-f435-4f54-8ea1-fc3af404e3a6",
+      "effectId": "Eff_Parmon_10683_Skill_Greed_gold",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "44": {
+      "eventName": "PirateCrabGetCoin",
+      "name": "notifyCustomEvent",
+      "UID": "c9762ba2-352f-4e6d-8198-028f1301e223",
+      "target": "TrapTarget",
+      "NodeID": 44
+    },
+    "8": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          29,
+          13,
+          15,
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "11": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 10
+      },
+      "name": "destroyEntity",
+      "NodeID": 11
+    },
+    "12": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "155c2486-5869-4b77-a013-2e112df6a6e0",
+      "effectId": "Eff_Parmon_10683_Skill_Greed_pick",
+      "speed": 1,
+      "NodeID": 12
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_10683_Skill_Greed_gold",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1a1f48d4-9b64-4867-b6dd-d3cc793c6d02",
+      "effectId": "Eff_Parmon_10683_Skill_Greed_gold",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "14": {
+      "name": "isActorType",
+      "UID": "86c7055d-6507-469f-9e64-1ced1747fb0e",
+      "target": "TrapTarget",
+      "NodeID": 14,
+      "actorType": 2
+    },
+    "15": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "3e350bb2-92c7-4a3f-8f36-c60449b04ff6",
+      "soundId": "SFX_Combat_10683_Skill_Greed02",
+      "NodeID": 15
+    },
+    "16": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "c3629973-f0e1-4445-808b-4e3134f27787",
+      "soundId": "SFX_Combat_10683_Skill_Greed03",
+      "NodeID": 16
+    },
+    "28": {
+      "UID": "99c98cec-2e30-4d55-b48c-2d9ca6509864",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 28
+    },
+    "29": {
+      "key": "PlayerPos",
+      "name": "setCacheVal",
+      "UID": "9211fb77-b8d4-4265-a326-e050a739b296",
+      "target": "OWNER",
+      "val": {
+        "UID": "99c98cec-2e30-4d55-b48c-2d9ca6509864",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 28
+      },
+      "NodeID": 29
+    },
+    "43": {
+      "eventName": "PirateCrabGetCoin",
+      "name": "notifyCustomEvent",
+      "UID": "d5c91fbb-2a18-401f-93c8-e946d44873ba",
+      "target": "MASTER",
+      "NodeID": 43
+    },
+    "32": {
+      "target": "TrapTarget",
+      "duration": 20,
+      "buffId": 9168302,
+      "NodeID": 32,
+      "UID": "948be992-6dde-4fcd-9db4-8dc4ddd43724",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "33": {
+      "name": "hasEntityTag",
+      "UID": "e5fd3047-1b8a-4ca0-aa74-f933ef708f90",
+      "target": "TrapTarget",
+      "NodeID": 33,
+      "entityTag": "TE_Wild_LittlePirateCrab"
+    },
+    "34": {
+      "actionIds": [
+        39,
+        41,
+        42,
+        43,
+        35,
+        40,
+        38
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "835e9c59-6304-4374-a529-5b06029c2ac0",
+      "name": "doActionsByConditions",
+      "NodeID": 34
+    },
+    "40": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "458dbd29-56f8-4c0b-beb6-276f22da609c",
+      "soundId": "SFX_Combat_10434_Skill_Passive03",
+      "NodeID": 40
+    }
+  },
+  "BPName": "timeline_2168301",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    8
+  ],
+  "layer": "Base",
+  "length": 30
+}

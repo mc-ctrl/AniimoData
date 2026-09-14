@@ -1,0 +1,231 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9163301",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        13
+      ],
+      "name": "actOnTargets",
+      "UID": "de145d94-2222-42bf-9efb-02cab290ad65",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "UID": "e4a13b83-e82b-4722-a4a8-2ee300d48451",
+            "target": {
+              "key": "DeathPos",
+              "name": "getServerCacheVal",
+              "UID": "301d4660-7d37-43a3-b3ce-2c4cfc71c421",
+              "target": "MASTER",
+              "NodeID": 29
+            },
+            "name": "getTargetPosition",
+            "NodeID": 30
+          },
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 5
+    },
+    "7": {
+      "eventName": "targetDead",
+      "NodeID": 7,
+      "UID": "c6624bc4-51c1-4c6c-8e79-d2cb31d74175",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        15,
+        5
+      ]
+    },
+    "9": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2163301,
+      "NodeID": 9,
+      "UID": "691ad73c-e5a2-46af-ae50-c85b05a248d3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "20": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9163302,
+      "NodeID": 20,
+      "UID": "dc72230d-4bde-4072-85be-f8a745f7090f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "21": {
+      "UID": "abe27d94-4e7a-4621-8422-0248bbedc5c5",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "35e3a865-6465-449f-a0d2-504003e34e26",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "d2853ecc-b283-4c55-a674-3fdba249ad81",
+      "target": "TARGET",
+      "name": "isTargetAlive",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "e5db5468-d727-44db-a67b-592d5f4cf9b9",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "key": "9163301",
+      "name": "setCacheVal",
+      "UID": "80f2c6c5-06e1-4032-8eb5-bdfa32f17b19",
+      "target": "MASTER",
+      "val": 0,
+      "NodeID": 15
+    },
+    "25": {
+      "actionIds": [
+        23,
+        26
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "9fda0c1a-9401-4516-a90c-47637ec90895",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "buffId": 9163303,
+      "name": "removeBuff",
+      "UID": "b4564d6f-a93b-46ac-b70f-8a0bd6f4c855",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "buffId": 2163303,
+      "name": "hasBuff",
+      "UID": "b9115fb7-f918-464d-a522-91bcba79958f",
+      "target": "MASTER",
+      "NodeID": 27
+    },
+    "17": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "e1d1d922-ed1e-4b27-bea9-2d262178ec27",
+      "NodeID": 17,
+      "lValue": {
+        "key": "9163301",
+        "name": "getCacheVal",
+        "UID": "e14c50de-8c78-490f-89e7-409b0f7fc6dd",
+        "target": "MASTER",
+        "NodeID": 16
+      }
+    },
+    "30": {
+      "UID": "e4a13b83-e82b-4722-a4a8-2ee300d48451",
+      "target": {
+        "key": "DeathPos",
+        "name": "getServerCacheVal",
+        "UID": "301d4660-7d37-43a3-b3ce-2c4cfc71c421",
+        "target": "MASTER",
+        "NodeID": 29
+      },
+      "name": "getTargetPosition",
+      "NodeID": 30
+    },
+    "28": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2163304,
+      "NodeID": 28,
+      "UID": "a150d10e-1208-405f-8018-278a610fa74a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "19": {
+      "key": "9163301",
+      "name": "setCacheVal",
+      "UID": "e7455050-5267-4ea2-88f4-6eb3c587c7b1",
+      "target": "MASTER",
+      "val": {
+        "UID": "0f5e63d0-9e32-47b7-b9b3-c1976e892a82",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 18
+      },
+      "NodeID": 19
+    },
+    "12": {
+      "actionIds": [
+        10,
+        19
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "e5e41d23-d6b7-46b4-84b8-ea562ff29d7e",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "23": {
+      "buffId": 9163302,
+      "name": "removeBuff",
+      "UID": "655ce847-09d5-4005-bf75-db8fb7b1c7cc",
+      "target": "OWNER",
+      "NodeID": 23
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    21,
+    25
+  ]
+}

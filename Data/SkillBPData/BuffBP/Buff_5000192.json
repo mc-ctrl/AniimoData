@@ -1,0 +1,138 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000192",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 5000192,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "510dd879-be43-4e6e-b51d-1dc4707ac765",
+      "name": "getParamByLuaConfig"
+    },
+    "13": {
+      "needEcs": true,
+      "isScaleWithModel": false,
+      "NodeID": 13,
+      "UID": "f72fa643-8d30-415e-8b0d-57bda1b3f83d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.65
+          ],
+          "shapeArgs": [
+            10,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        12
+      ]
+    },
+    "10": {
+      "key": "1",
+      "duration": {
+        "calcId": 5000192,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 9,
+        "UID": "8b4ac60d-7c1d-4de4-867c-7fe656d694a1",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        11
+      ],
+      "NodeID": 10,
+      "UID": "6142df6b-bb66-499c-be26-2c06328d5626",
+      "name": "addTimer"
+    },
+    "7": {
+      "actionIds": [
+        5,
+        10,
+        13
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "c85a1ff9-c5cf-405e-bb9a-ecb671c2a3e4",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "9c893f3e-0103-4247-9c70-771e65f1dceb",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerAbilityDisableReturnEvent",
+      "UID": "8b2558bd-2a1c-4331-a461-6577f22da178",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "calcId": 5000192,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 9,
+      "UID": "8b4ac60d-7c1d-4de4-867c-7fe656d694a1",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "UID": "4afd92c2-5b06-4a9d-85b9-f3cdd369ade3",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 11
+    },
+    "5": {
+      "calcInfo": {
+        "taken_dmg_dec_rate_v": {
+          "calcId": 5000192,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 3,
+          "UID": "510dd879-be43-4e6e-b51d-1dc4707ac765",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "0c8f35bc-4c3a-472e-90a3-97ed57dd3b24",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 5
+    },
+    "12": {
+      "duration": 5,
+      "name": "forceTaunt",
+      "UID": "98a52a51-2c4e-4e06-9321-88a97965f257",
+      "target": "TARGET",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "72038215": {
+    "spawnType": 2,
+    "owner": "胡鹏",
+    "position": [
+      -0.1,
+      0.37,
+      -14.46
+    ],
+    "sandboxId": 72037349,
+    "sandboxType": 0,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": false,
+    "isAuto": false,
+    "id": 72038215,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "manualInit": false,
+    "targetPositionData": {
+      "entity": 72038214,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        -0.1,
+        0.37,
+        -14.46
+      ],
+      "author": "worldx_ch"
+    },
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72038214
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72040555": {
+    "spawnType": 2,
+    "owner": "汪玉笠",
+    "position": [
+      0.08,
+      -0.2,
+      -12.59
+    ],
+    "sandboxId": 72037349,
+    "sandboxType": 0,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": false,
+    "isAuto": false,
+    "id": 72040555,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "manualInit": false,
+    "targetPositionData": {
+      "entity": 72040554,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        0.08,
+        -0.2,
+        -12.59
+      ],
+      "author": "worldx_ch"
+    },
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72040554
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72107928": {
+    "spawnType": 0,
+    "owner": "陈瑾瑜",
+    "sandboxType": 0,
+    "position": [
+      -4.29,
+      -0.08,
+      -19.64
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72107730,
+    "id": 72107928,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "targetPositionData": {
+      "entity": 72107927,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        -4.29,
+        -0.08,
+        -19.64
+      ],
+      "author": "worldx_ch"
+    },
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72107927
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72108075": {
+    "spawnType": 0,
+    "owner": "陈瑾瑜",
+    "sandboxType": 0,
+    "position": [
+      -4.29,
+      -0.08,
+      -19.64
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72107730,
+    "id": 72108075,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "targetPositionData": {
+      "entity": 72108074,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        -4.29,
+        -0.08,
+        -19.64
+      ],
+      "author": "houwang.zuo"
+    },
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72108074
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72478064": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 0,
+    "position": [
+      -4.33,
+      1.73,
+      -16.25
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72477980,
+    "id": 72478064,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72478174,
+          72478170,
+          72478167,
+          72478063,
+          72478169,
+          72478173,
+          72478168,
+          72478171,
+          72478175
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72497711": {
+    "spawnType": 0,
+    "owner": "旺旺",
+    "sandboxType": 0,
+    "position": [
+      -4.24,
+      -0.11,
+      -16.02
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72477980,
+    "id": 72497711,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "targetPositionData": {
+      "entity": 72497710,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        -4.24,
+        -0.11,
+        -16.02
+      ],
+      "author": "houwang.zuo"
+    },
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72497710
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "89983664": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      0.27,
+      0.35,
+      -3.95
+    ],
+    "sandboxId": 72037349,
+    "sandboxType": 0,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "avoidRepeatGroupCount": 0,
+    "id": 89983664,
+    "SpawnState": 0,
+    "owner": "唐睿尚",
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          89983644
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72038063": {
+    "spawnType": 0,
+    "owner": "宋雨轩",
+    "sandboxType": 0,
+    "position": [
+      0.02,
+      0.42,
+      -25.57
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72037349,
+    "id": 72038063,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "targetPositionData": {
+      "entity": 72038062,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        0.02,
+        0.42,
+        -25.57
+      ],
+      "author": "peng.hu"
+    },
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72038062
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72038211": {
+    "spawnType": 2,
+    "owner": "胡鹏",
+    "position": [
+      -0.1,
+      0.37,
+      -14.46
+    ],
+    "sandboxId": 72037349,
+    "sandboxType": 0,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": false,
+    "isAuto": false,
+    "id": 72038211,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "manualInit": false,
+    "targetPositionData": {
+      "entity": 72038210,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        -0.1,
+        0.37,
+        -14.46
+      ],
+      "author": "peng.hu"
+    },
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72038210
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

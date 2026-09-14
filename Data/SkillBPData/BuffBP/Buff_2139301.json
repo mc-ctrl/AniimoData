@@ -1,0 +1,81 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2139301",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "eventName": "91393",
+      "name": "notifyCustomEvent",
+      "UID": "af9b0101-65a2-49ad-8138-028604da37f5",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ce713947-51a8-4eb4-aa0c-32315f18f056",
+      "effectId": "Eff_Parmon_10393_Skill_FinCut_Buff",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "6": {
+      "name": "checkPetPrototypeId",
+      "UID": "4319c052-bf5a-4ca7-8cf7-6ba860f6911b",
+      "target": "OWNER",
+      "petPrototypeId": 1039100,
+      "NodeID": 6
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "cf52289c-41a6-4f61-ab6f-286d867935bf",
+      "effectId": "Eff_Parmon_10391_Skill_FinCut_Buff",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "3c075e70-92b6-40a1-bda5-6b6ed4b1f09a",
+      "effectId": "Eff_Parmon_10393_Skill_FinCut_Buff",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "024e3b4b-80fc-46af-bfd1-51d0c1233922",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "20adc245-e282-43c5-97ab-84dc3af2f87b",
+      "effectId": "Eff_Parmon_10391_Skill_FinCut_Buff",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    3,
+    10,
+    11
+  ],
+  "onBuffStartIds": [
+    7,
+    3
+  ]
+}

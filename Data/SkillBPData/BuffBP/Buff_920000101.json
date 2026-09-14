@@ -1,0 +1,65 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920000101",
+  "name": "生命恢复 hot",
+  "UID": "608beafb-ce26-42d2-ae0f-dd19d0b9c799",
+  "parentDynamicRPCStates": {},
+  "desc": "生命恢复 hot",
+  "onBuffThinkIds": [
+    6
+  ],
+  "onBuffRefreshIds": [
+    11
+  ],
+  "NodeID": 1,
+  "onBuffInheritIds": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 2,
+      "interval": 2,
+      "UID": "d711cfc1-7ae5-44d2-a847-be390a076413",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "11": {
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 11,
+      "UID": "76f3e7b1-d3da-4cd6-b0ec-c71747236785",
+      "target": "OWNER",
+      "presetName": "Eff_Buff_Heal_Fresnel",
+      "name": "playPreset"
+    },
+    "6": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.01
+      },
+      "name": "calcResult",
+      "UID": "60ffa361-a23c-48b0-b30a-5816814be899",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "ad5f91e6-c124-4801-8c55-cb6c467ad568",
+      "effectId": "Eff_Avatar_Common_Buff_Cure",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Avatar_Common_Buff_Cure"
+    }
+  ],
+  "onBuffDestroyIds": [
+    2
+  ],
+  "onBuffStartIds": [
+    3,
+    11
+  ]
+}

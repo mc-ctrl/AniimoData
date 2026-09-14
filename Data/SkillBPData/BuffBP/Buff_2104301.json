@@ -1,0 +1,183 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104301",
+  "NodeID": 1,
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "icon": "ui_img_skill_icon_buff_10",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    18,
+    20
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "UID": "4af36d16-6cb2-4c78-8b49-6709eff5e8c1",
+      "name": "doPetsActions",
+      "actionIds": [
+        11,
+        17
+      ],
+      "NodeID": 13
+    },
+    "14": {
+      "isSwitchPetInherit": true,
+      "target": "OWNER",
+      "NodeID": 14,
+      "UID": "f24fae2f-37cd-4269-b060-16e1ebc75356",
+      "effectId": "Eff_Parmon_10043_Heal_Arrow",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "10": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 2104301,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 21,
+            "UID": "411bf7b9-9267-49e0-92a2-6390658f2f29",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "80ad13ec-2db5-42f3-9bdd-66f1a3590665",
+          "NodeID": 5,
+          "lValue": {
+            "key": "hp10041",
+            "name": "getCacheVal",
+            "UID": "0552051b-959c-4ef6-92f3-d9dca79f870d",
+            "target": "OWNER",
+            "NodeID": 4
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "c0ceacf8-fa9e-4066-aea4-b8e0394d21fb",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "23": {
+      "name": "isActorType",
+      "UID": "9534b093-745c-4829-8585-37c90c0db855",
+      "target": "OWNER",
+      "NodeID": 23,
+      "actorType": 2
+    },
+    "7": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 2104301,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 21,
+            "UID": "411bf7b9-9267-49e0-92a2-6390658f2f29",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "80ad13ec-2db5-42f3-9bdd-66f1a3590665",
+          "NodeID": 5,
+          "lValue": {
+            "key": "hp10041",
+            "name": "getCacheVal",
+            "UID": "0552051b-959c-4ef6-92f3-d9dca79f870d",
+            "target": "OWNER",
+            "NodeID": 4
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "7bcfea1f-a110-4fe6-ac16-30cf62083511",
+      "target": "TARGET",
+      "NodeID": 7
+    },
+    "16": {
+      "isSwitchPetInherit": true,
+      "target": "OWNER",
+      "NodeID": 16,
+      "UID": "66af16b9-2953-4803-969a-b8a0a11f8379",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_Loop",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "8": {
+      "UID": "94c89a35-b960-4ca0-81b9-3d20602ecc05",
+      "name": "doPetsActions",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "42a01e75-8377-4e74-9531-c559ffcfdcc6",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_Loop",
+      "target": "TARGET",
+      "NodeID": 17
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "c6bfe4d2-75f7-4c69-b369-2bbd25e3c737",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "b2eb6e37-d378-46d7-a71a-0afd724c9e49",
+      "name": "buffStopThink",
+      "NodeID": 18
+    },
+    "21": {
+      "calcId": 2104301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 21,
+      "UID": "411bf7b9-9267-49e0-92a2-6390658f2f29",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "33cd3802-7fa1-4edf-8c69-e6dafdaf1695",
+      "effectId": "Eff_Parmon_10043_Heal_Arrow",
+      "target": "TARGET",
+      "NodeID": 11
+    },
+    "20": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "95a08c1c-ac21-494a-868d-7ffdd184d118",
+      "name": "buffStartThink",
+      "NodeID": 20
+    },
+    "2": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "ad0b04ee-7341-4c97-b252-7495d875cd93",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    13
+  ],
+  "onBuffStartIds": [
+    2,
+    14,
+    16
+  ]
+}

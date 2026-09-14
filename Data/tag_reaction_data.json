@@ -1,0 +1,28 @@
+{
+  "froze": {
+    "waterPool": 102
+  },
+  "ignite": {
+    "waterPool": 101,
+    "inflammable": 150
+  },
+  "forceIgnite": {
+    "inflammable": 150
+  },
+  "actWater": {
+    "burning": 170
+  },
+  "actWet": {
+    "burning": 160
+  },
+  "blow": {
+    "fragment": 130
+  },
+  "conduct": {
+    "conductive": 120,
+    "waterPool": 120
+  },
+  "break": {
+    "fragile": 140
+  }
+}

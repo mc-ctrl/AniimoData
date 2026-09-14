@@ -1,0 +1,89 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "14": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 14
+    },
+    "17": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104506,
+      "name": "createEntity",
+      "UID": "2fce89bc-30d2-4959-a051-56a813a8c6ed",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 17,
+      "pos": "RANDOM_POINT"
+    },
+    "19": {
+      "UID": "2a4ba90f-6a8c-4902-a281-3c8f9bc10859",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20,
+          17
+        ]
+      },
+      "NodeID": 19
+    },
+    "20": {
+      "targetPos": "CASTER",
+      "innerRadius": 1,
+      "name": "randomPoint",
+      "UID": "1e9833a6-026a-4bf9-af7e-92a7eb6b13f9",
+      "radius": 5.5,
+      "NodeID": 20
+    },
+    "16": {
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_10450402",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    16,
+    19
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

@@ -1,0 +1,123 @@
+{
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        9,
+        12
+      ],
+      "name": "actOnTargets",
+      "UID": "21f0c268-acb6-47d2-a85c-d4f06b1358a3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 5
+    },
+    "13": {
+      "name": "playEffectOnPosRot",
+      "UID": "e9cb6808-a628-4311-ab01-6254fc898d07",
+      "effectId": "Eff_Parmon_10051_Skill_Fire_Field_Loop",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 13,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "9": {
+      "target": "TARGET",
+      "duration": 1.2,
+      "buffId": 2105301,
+      "NodeID": 9,
+      "UID": "af5d8810-b345-409d-af5d-dbb26b405f41",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 14,
+      "UID": "8c8c4cf6-79ef-42fe-ae20-5885e077a835"
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 16,
+      "UID": "bf78b7f2-9242-4fc0-8298-11fda1d5d4db"
+    },
+    "15": {
+      "name": "playEffectOnPosRot",
+      "UID": "c4ff06d6-b215-449d-bd5b-a45a270c20d7",
+      "effectId": "Eff_Parmon_10051_Skill_Fire_Field_Loop",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 15,
+      "speed": 0.2,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "7": {
+      "eventType": "NotifyState",
+      "endTime": 8,
+      "NodeID": 7,
+      "UID": "f1020601-3318-43c3-ae65-410f05ac66b1",
+      "onUpdate": {
+        "actionIds": [
+          5
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.5
+    },
+    "12": {
+      "calcInfo": {
+        "add_cur_hp_fix": 0
+      },
+      "name": "calcResult",
+      "UID": "e8af38e7-4d4d-49de-acfc-8d6e3652a6ac",
+      "target": "TARGET",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2105101",
+  "NodeID": 1,
+  "UID": "2f08ad50-0edc-442d-ad20-82c3d8ad381b",
+  "eventIds": [
+    7,
+    14,
+    16
+  ],
+  "layer": "Base",
+  "length": 12
+}

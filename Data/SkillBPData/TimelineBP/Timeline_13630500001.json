@@ -1,0 +1,278 @@
+{
+  "nodeMap": {
+    "37": {
+      "buffId": 2136101,
+      "name": "removeBuff",
+      "UID": "71be648d-84a3-4957-aec7-41e73b4edc1d",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "64d6ade0-7b55-4737-9568-7cb71ac7c13e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10363_Skill_HolyEmbrace",
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "7e2768d7-63fa-4924-b608-f95f9e19ec70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "scale": 1.25,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0f954e17-1218-49bb-b10d-546a02075087",
+      "effectId": "Eff_Common_Buff_EnergyRegen",
+      "speed": 1,
+      "NodeID": 40
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          44,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 42,
+      "UID": "60773002-7cd6-497d-ad8b-c295a94198a8"
+    },
+    "35": {
+      "value": {
+        "calcId": 13630500,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 34,
+        "UID": "4edcaf8d-2469-4f0f-b97c-7676aa0e1523",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "42b1fad9-e410-4b0c-9fdd-7aca22b4defa",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "44": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "49da4b37-564e-4be5-95fd-e914173dd9bd",
+      "effectId": "Eff_Parmon_10363_Skill_HolyEmbrace_Done",
+      "speed": 1,
+      "NodeID": 44
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29,
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 31,
+      "UID": "cd7dab38-e40c-4c6b-98ee-4e5d5dd58b09"
+    },
+    "9": {
+      "UID": "88cd9031-5216-4f76-8062-25f03e88ec7e",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 9
+    },
+    "11": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c1420a87-f014-4f34-80c6-c545e4617d1c",
+      "effectId": "Eff_Parmon_10363_Skill_HolyEmbrace_Charge",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "273e5949-fc82-4737-9759-18bb4e9bd075",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 20
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "33335fb2-a761-4fdd-ae2d-953c9b930809",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Holy"
+    },
+    "3": {
+      "UID": "bcb69d44-dce6-4068-bac7-09bba2ffe221",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "24": {
+      "name": "dropEffectStr",
+      "UID": "b9b4d7ab-ccef-4bd6-a170-9304df8160c2",
+      "effectId": "Eff_Parmon_10361_Skill_HolyEmbrace",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "43": {
+      "UID": "0593fa43-64b6-401c-9d19-17648c396a4a",
+      "name": "disableReturnAbilityConsumes",
+      "NodeID": 43
+    },
+    "10": {
+      "UID": "0bd4edde-d14d-494c-8983-e9d312b80bf7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "17": {
+      "UID": "ea02520a-370b-4b97-9c68-14342d68554b",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 17
+    },
+    "12": {
+      "UID": "e474a01d-ab5c-4a6c-bc8d-4944001d4acf",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    },
+    "26": {
+      "cameraShakeId": 30403,
+      "name": "playCameraImpulseById",
+      "UID": "ae0a0d7a-0c6c-427e-b0c6-d3b3c0d00e7d",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 27,
+      "UID": "37c1e599-8244-473c-b907-760570a48599"
+    },
+    "28": {
+      "buffId": 2136101,
+      "name": "hasBuff",
+      "UID": "5681ee33-07f6-49d0-83dd-2349b6f06c69",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        35,
+        37
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "3d941cdc-3ebd-4add-a7c7-49b791caa909",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        33
+      ],
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "72da3281-1d20-417e-a798-7ca70a792f61",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "calcId": 13630500,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 32,
+      "UID": "bce1c936-6632-49c7-8a46-529c16fc9314",
+      "name": "getParamByLuaConfig"
+    },
+    "33": {
+      "value": {
+        "calcId": 13630500,
+        "calcType": 2,
+        "paramName": "param0",
+        "NodeID": 32,
+        "UID": "bce1c936-6632-49c7-8a46-529c16fc9314",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "ff94a770-a777-438f-9755-ee855b68ace8",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "calcId": 13630500,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 34,
+      "UID": "4edcaf8d-2469-4f0f-b97c-7676aa0e1523",
+      "name": "getParamByLuaConfig"
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.85,
+      "NodeID": 22,
+      "UID": "7834215d-6e59-4c81-a3ab-66dbd7271e79"
+    }
+  },
+  "BPName": "ability_13630500",
+  "NodeID": 5,
+  "UID": "e3dca4cf-f390-4de1-851c-b27fed1878fc",
+  "eventIds": [
+    10,
+    18,
+    22,
+    3,
+    12,
+    42,
+    27,
+    31,
+    39
+  ],
+  "layer": "Base",
+  "length": 2.29
+}

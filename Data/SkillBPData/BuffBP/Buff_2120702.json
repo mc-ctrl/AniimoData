@@ -1,0 +1,96 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120702",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10,
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "duration": 15,
+      "disableWhenFinished": true,
+      "NodeID": 5,
+      "UID": "2e6389b1-8827-4bcf-95f5-697a78598401",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "name": "playPreset"
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "63ba8bc1-4051-4a4b-b73c-45cb3b5aac03",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Attack_02",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "90bfe324-f592-4a3e-b3cc-f71b067210ff",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": true,
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "5f144ade-3668-47f8-88aa-dcfc990f48a8",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "a6a5a15e-dff2-496e-8cf5-3512d8d6675e",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": false,
+      "NodeID": 15
+    },
+    "7": {
+      "duration": 15,
+      "disableWhenFinished": true,
+      "NodeID": 7,
+      "UID": "12b66f52-d9ab-4e14-bb58-83d7f745649b",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "name": "playPreset"
+    },
+    "16": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "2c21fe96-82cd-4fc7-82d3-a972152b04a7",
+      "name": "buffStartThink",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "70e95509-68fe-421f-84c5-d2779941fa83",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 8
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "085cab7f-915c-4e38-bdf4-056b4c0cdf74",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Start",
+      "target": "OWNER",
+      "NodeID": 11
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2120702,
+    "taken_dmg_dec_rate_v": "param0",
+    "combat_ep_regen_v": "param1",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    8,
+    10,
+    11,
+    13,
+    15
+  ],
+  "onBuffStartIds": [
+    5,
+    7,
+    14,
+    16
+  ]
+}

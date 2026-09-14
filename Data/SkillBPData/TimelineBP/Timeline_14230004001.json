@@ -1,0 +1,171 @@
+{
+  "nodeMap": {
+    "37": {
+      "buffId": 2142305,
+      "name": "hasBuff",
+      "UID": "1bd53ca4-6e99-437a-a3ca-4905372e1877",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "4": {
+      "UID": "57c64247-a7dc-4d71-804e-8d4245f90801",
+      "name": "removeEvent",
+      "eventName": "onEndCharge",
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "695be936-c1c8-4c79-a0a5-fc5ac5e56dc8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4,
+        20,
+        90
+      ],
+      "NodeID": 6
+    },
+    "15": {
+      "chargeTimeActions": [
+        {
+          "actionIds": [
+            4,
+            20,
+            90
+          ],
+          "chargeTime": 0
+        },
+        {
+          "actionIds": [
+            4,
+            20,
+            90
+          ],
+          "chargeTime": 0.1
+        },
+        {
+          "actionIds": [
+            4,
+            20,
+            90
+          ],
+          "chargeTime": 0.2
+        },
+        {
+          "actionIds": [
+            18
+          ],
+          "chargeTime": 0.3
+        }
+      ],
+      "minChargeTime": 0,
+      "NodeID": 15,
+      "UID": "b5b753cf-d54f-4d9a-a69b-e0b675423b73",
+      "name": "registerStopChargeEvent"
+    },
+    "92": {
+      "UID": "141c85ce-e98a-48f3-8558-6f0049550c8d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          91
+        ]
+      },
+      "NodeID": 92
+    },
+    "91": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b27d8a4d-6135-4164-bf79-9bc547ecf70d",
+      "target": "OWNER",
+      "NodeID": 91,
+      "animId": "Skill_Ghost"
+    },
+    "8": {
+      "UID": "f7953751-a30c-4d50-a6ae-3867276c2d70",
+      "eventType": "EventEnter",
+      "action": {
+        "UID": "8421f7e2-d703-47c1-8ba4-6d3777a8346f",
+        "actionIds": [
+          6
+        ],
+        "name": "doActions"
+      },
+      "NodeID": 8
+    },
+    "28": {
+      "timelineId": 14230004002,
+      "name": "jumpToNextTimeline",
+      "UID": "239e0a60-8066-4874-aed2-5a9ca8f66a68",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "90": {
+      "timelineId": 14230000001,
+      "name": "jumpToNextTimeline",
+      "UID": "7c1fb82c-ee96-4278-b2ac-4ff37e765f15",
+      "target": "OWNER",
+      "NodeID": 90
+    },
+    "18": {
+      "actionIds": [
+        38,
+        36,
+        28
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "7b495198-ff1f-4418-8ff8-a299d87305cd",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4,
+        20,
+        90
+      ],
+      "NodeID": 18
+    },
+    "38": {
+      "UID": "ab22612c-ba8d-471b-a584-792c26b4a74f",
+      "name": "removeBuff",
+      "buffId": 2142305,
+      "NodeID": 38
+    },
+    "36": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2142302,
+      "NodeID": 36,
+      "UID": "e2f72040-c0c0-44e8-9db4-8739a4ec1fc7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "20": {
+      "UID": "7c717406-9e52-44e6-bacf-1858c20dd391",
+      "target": "OWNER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 20
+    },
+    "21": {
+      "buffId": 2142305,
+      "name": "hasBuff",
+      "UID": "1fbec1c6-a160-41ff-8b1a-14798d6beaab",
+      "target": "OWNER",
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_14230004",
+  "NodeID": 10,
+  "UID": "b2e58560-8d06-424d-b8e7-5d848c332eb5",
+  "eventIds": [
+    8,
+    92
+  ],
+  "layer": "Base",
+  "length": 2.367
+}

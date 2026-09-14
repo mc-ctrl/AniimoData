@@ -1,0 +1,232 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          36,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.61,
+      "NodeID": 38,
+      "UID": "4d849b32-f604-468c-8513-07440a418d46"
+    },
+    "40": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "templateId": 10450323003,
+      "name": "createProjectile",
+      "UID": "a6d38f08-4171-4870-95fe-094e0bfc5e1f",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 40
+    },
+    "21": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          29
+        ]
+      },
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22,
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.59,
+      "NodeID": 24,
+      "UID": "cd060f9e-9680-46be-b220-914abce85d33"
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e900ab44-ca45-437a-aca9-c51bf1f50482",
+      "effectId": "Eff_Parmon_10045_Skill_GrassTail_Start_01",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "16": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "26": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "templateId": 10450323001,
+      "name": "createProjectile",
+      "UID": "255e904a-d37b-45b8-a07d-1d81bb10c204",
+      "offsetRotation": [
+        0,
+        -80,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 26
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.7,
+      "NodeID": 18,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "29": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "54554e38-9a66-43b9-8c8a-72e86e2e65ab",
+      "target": "OWNER",
+      "val": {
+        "UID": "b6d24d35-ae92-4e7d-9a2f-3804efba78b5",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 28
+      },
+      "NodeID": 29
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1068e39e-9009-4bc0-997a-41a208332a08",
+      "effectId": "Eff_Parmon_10045_Skill_GrassTail_Start_01",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30,
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 32,
+      "UID": "ce58a2c4-a349-4cb5-8535-bd9b9002aea0"
+    },
+    "19": {
+      "timelineTag": "",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Boss_Skill_Tail"
+    },
+    "34": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "templateId": 10450323002,
+      "name": "createProjectile",
+      "UID": "6c8c8ddd-d875-4310-8704-4ff25de21485",
+      "offsetRotation": [
+        0,
+        80,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 34
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "224af3c4-df9d-4f57-9521-ab10240acb01",
+      "effectId": "Eff_Parmon_10045_Skill_GrassTail_Start_01",
+      "speed": 1,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_10450323",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    18,
+    21,
+    24,
+    32,
+    38
+  ],
+  "layer": "Base",
+  "length": 2
+}

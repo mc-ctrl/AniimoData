@@ -1,0 +1,60 @@
+{
+  "BPName": "ability_10510530",
+  "NodeID": 1,
+  "isAim": true,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10510530001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "79": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 79,
+      "UID": "de0d1a0b-09c1-4369-962c-42953b593a94",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FullBodyFire",
+    "Skill_FireBall_Start"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10051_Fireball",
+    "Eff_Parmon_10051_Fireball_Hit",
+    "Eff_Parmon_10051_Fireball_Start"
+  ],
+  "searchRelation": 2,
+  "name": "火花",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "onAbilityEndIds": [
+    79
+  ],
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10510530,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8"
+}

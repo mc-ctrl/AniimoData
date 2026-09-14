@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_12851010",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12851010001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Earthquake",
+    "Skill_Earthquake_BurrowState"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Rock_Blunt_Big",
+    "Eff_Parmon_10285_Skill_GroundWave"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 2.5,
+  "searchTargetRangeUp": 1.5,
+  "tags": [
+    1
+  ],
+  "abilityParamId": 10800220,
+  "name": "地震波"
+}

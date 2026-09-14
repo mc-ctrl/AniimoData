@@ -1,0 +1,11 @@
+{
+  "9000001": {
+    "rigidbody": "Component_Rock",
+    "volume": 0.075,
+    "elementType": "Rock",
+    "chemistryMaterial": 8,
+    "Break_template": 132,
+    "Fragile": 1,
+    "propID": 10000
+  }
+}

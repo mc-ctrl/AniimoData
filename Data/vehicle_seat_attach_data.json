@@ -1,0 +1,2281 @@
+{
+  "104": {
+    "seatHP": "Bone_AvatarMid",
+    "name": "家具_秋千_人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      -0.043,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "105": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_秋千_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "99": {
+    "seatHP": "seat_1",
+    "name": "家具_矮凳_人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "5": {
+    "seatHP": "seat_1",
+    "name": "秋千椅子 座位1 人",
+    "dropHP": "end_1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "enterAnim": "Interact_Swing_Start",
+    "loopAnim": "Interact_Swing_Loop"
+  },
+  "6": {
+    "seatHP": "seat_2",
+    "name": "秋千椅子 座位2 人",
+    "dropHP": "end_2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "enterAnim": "Interact_Swing_Start",
+    "loopAnim": "Interact_Swing_Loop"
+  },
+  "7": {
+    "seatHP": "seat_1",
+    "name": "跷跷板椅子 座位1 人",
+    "dropHP": "end_1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Interact_Seesaw_Loop"
+  },
+  "8": {
+    "seatHP": "seat_2",
+    "name": "跷跷板椅子 座位2 人",
+    "dropHP": "end_2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Interact_Seesaw_Loop"
+  },
+  "56": {
+    "seatHP": "pet_seat_1",
+    "name": "ARK咖啡店座椅（小） 宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "57": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "ark商店座椅1 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "58": {
+    "seatHP": "pet_seat_2",
+    "loopAnim": "Idle",
+    "name": "ark商店座椅2 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "59": {
+    "seatHP": "pet_seat_3",
+    "loopAnim": "Idle",
+    "name": "ark商店座椅3 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "61": {
+    "seatHP": "overlook_2",
+    "loopAnim": "Idle",
+    "name": "空载具_眺望2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "62": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "ARK咖啡店座椅（小） 宠2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "63": {
+    "seatHP": "player_dance_01",
+    "loopAnim": "Home_DanceLoop",
+    "name": "能量聚合器玩家游玩点1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "64": {
+    "seatHP": "player_dance_02",
+    "loopAnim": "Home_DanceLoop",
+    "name": "能量聚合器玩家游玩点2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "65": {
+    "seatHP": "pet_dance_01",
+    "loopAnim": "Home_OperateLoop_None",
+    "name": "能量聚合器宠物游玩点1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "14": {
+    "seatHP": "pet_seat_2",
+    "name": "秋千椅子 座位2 宠物",
+    "dropHP": "pet_end_2",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "67": {
+    "seatHP": "pet_seat_2",
+    "name": "沐羽鸟泡泡",
+    "endPlayAnim": "Float_End",
+    "enterAnim": "EnvBehav_BubbleVehicle_Start",
+    "exitAnim": "Float_End",
+    "playAnim": "Float_End",
+    "loopAnim": "EnvBehav_BubbleVehicle_Loop",
+    "offset": [
+      0,
+      0.4,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "15": {
+    "seatHP": "pet_seat_1",
+    "name": "跷跷板椅子 座位1 宠物",
+    "dropHP": "pet_end_1",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "69": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "ARK高脚凳宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "16": {
+    "seatHP": "pet_seat_2",
+    "name": "跷跷板椅子 座位2 宠物",
+    "dropHP": "pet_end_2",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "71": {
+    "seatHP": "work_1",
+    "disableSyncAnimState": 1,
+    "name": "家园 果汁桶1 玩家工作",
+    "loopAnim": "Home_SquatWorkLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "17": {
+    "seatHP": "pet_seat_2",
+    "name": "上升蒲公英",
+    "endPlayAnim": "Float_End",
+    "enterAnim": "Float_Start",
+    "exitAnim": "Float_End",
+    "playAnim": "Float_End",
+    "loopAnim": "Float_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "73": {
+    "seatHP": "overlook",
+    "name": "动作pose_趴栏杆上 玩家",
+    "dropHP": "end",
+    "loopAnim": "Pose_LieOnRailing",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "74": {
+    "seatHP": "Stairs_player",
+    "loopAnim": "Pose_SitOnStairs_1",
+    "name": "动作pose_坐楼梯上1 玩家",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "75": {
+    "seatHP": "Stairs_player",
+    "loopAnim": "Pose_SitOnStairs_2",
+    "name": "动作pose_坐楼梯上2 玩家",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "19": {
+    "playAnim": "Sit_End",
+    "seatHP": "bonfire_seat_2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "篝火场景椅子2",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "77": {
+    "seatHP": "overlook",
+    "loopAnim": "Pose_StandLook",
+    "name": "动作pose_站立观望 玩家",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "78": {
+    "seatHP": "overlook_2",
+    "loopAnim": "Idle",
+    "name": "动作pose_坐栏杆上 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "79": {
+    "seatHP": "overlook_2",
+    "loopAnim": "Idle",
+    "name": "动作pose_趴栏杆上 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "81": {
+    "seatHP": "Stairs_pet",
+    "loopAnim": "Idle",
+    "name": "动作pose_坐楼梯上2 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "82": {
+    "seatHP": "overlook_2",
+    "loopAnim": "Idle",
+    "name": "动作pose_靠墙站立 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "83": {
+    "seatHP": "overlook_2",
+    "loopAnim": "Idle",
+    "name": "动作pose_站立观望 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "84": {
+    "seatHP": "seat_1",
+    "loopAnim": "Idle",
+    "name": "ARK饮水机 座位1-人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "85": {
+    "seatHP": "pet_seat_1",
+    "name": "ARK饮水机 座位2-小中大宠物",
+    "endPlayAnim": "Behav_EatEnd",
+    "enterAnim": "Behav_EatStart",
+    "exitAnim": "Behav_EatEnd",
+    "playAnim": "Behav_EatLoop",
+    "loopAnim": "Behav_EatLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "86": {
+    "seatHP": "seat_1",
+    "passengerHP": "Root",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "name": "ARK饮水机 座位1-人"
+  },
+  "87": {
+    "seatHP": "pet_seat_1",
+    "name": "ARK饮水机 座位3-中大",
+    "endPlayAnim": "Behav_EatEnd",
+    "enterAnim": "Behav_EatStart",
+    "exitAnim": "Behav_EatEnd",
+    "playAnim": "Behav_EatLoop",
+    "loopAnim": "Behav_EatLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "88": {
+    "seatHP": "seat_1",
+    "name": "家具_便携折椅",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "89": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_四叶草毯_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "90": {
+    "seatHP": "seat_1",
+    "name": "家具_藤编座椅_人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "91": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_藤编坐垫_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "92": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_简约坐垫_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "93": {
+    "seatHP": "seat_1",
+    "name": "家具_矮床_人",
+    "endPlayAnim": "Lying_End",
+    "enterAnim": "Sleep03_Start",
+    "exitAnim": "Sleep03_End",
+    "playAnim": "Lying_End",
+    "loopAnim": "Sleep03_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "94": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_矮床_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "95": {
+    "seatHP": "seat_1",
+    "name": "家具_高床_人",
+    "endPlayAnim": "Lying_End",
+    "enterAnim": "Lying_Start",
+    "exitAnim": "Lying_End",
+    "playAnim": "Lying_End",
+    "loopAnim": "Lying_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "96": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_高床_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "97": {
+    "seatHP": "seat_1",
+    "loopAnim": "SitOnStool_Loop",
+    "name": "家具_凳_人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "98": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_凳_宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "106": {
+    "seatHP": "work_1",
+    "disableSyncAnimState": 1,
+    "name": "家园 谜立方 玩家工作",
+    "loopAnim": "Home_SquatWorkLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "107": {
+    "seatHP": "work_1",
+    "disableSyncAnimState": 1,
+    "name": "设施_烘干器_人",
+    "loopAnim": "Home_OperateLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "108": {
+    "seatHP": "work_1",
+    "disableSyncAnimState": 1,
+    "name": "设施_火炉_人",
+    "loopAnim": "Home_SquatWorkLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "109": {
+    "playAnim": "Sit_End",
+    "seatHP": "seat_1",
+    "passengerHP": "Root",
+    "name": "家具_蹦床_人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "110": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_藤编座椅_宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "113": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "载具_沙滩椅_宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "116": {
+    "seatHP": "pet_seat_1",
+    "name": "ARK通用挂点（所有宠）1",
+    "dropHP": "pet_end_1",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "117": {
+    "seatHP": "pet_seat_2",
+    "name": "ARK通用挂点（所有宠）2",
+    "dropHP": "pet_end_2",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "122": {
+    "seatHP": "L_pet_seat_1",
+    "name": "ARK通用挂点（大宠）1",
+    "dropHP": "pet_end_1",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "115": {
+    "seatHP": "seat_2",
+    "name": "ARK通用挂点（人）2",
+    "dropHP": "end_2",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "118": {
+    "seatHP": "S_pet_seat_1",
+    "name": "ARK通用挂点（小宠）1",
+    "dropHP": "pet_end_1",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "119": {
+    "seatHP": "S_pet_seat_2",
+    "name": "ARK通用挂点（小宠）2",
+    "dropHP": "pet_end_2",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "120": {
+    "seatHP": "M_pet_seat_1",
+    "name": "ARK通用挂点（中宠）1",
+    "dropHP": "pet_end_1",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "121": {
+    "seatHP": "M_pet_seat_2",
+    "name": "ARK通用挂点（中宠）2",
+    "dropHP": "pet_end_2",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "127": {
+    "seatHP": "seat_1",
+    "loopAnim": "SitOnStool_Loop",
+    "name": "家具_新秋千_人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "128": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_新秋千_宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "129": {
+    "seatHP": "seat_3",
+    "name": "ARK通用挂点（人）3",
+    "dropHP": "end_3",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "130": {
+    "seatHP": "seat_4",
+    "name": "ARK通用挂点（人）4",
+    "dropHP": "end_4",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "131": {
+    "seatHP": "seat_5",
+    "name": "ARK通用挂点（人）5",
+    "dropHP": "end_5",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "132": {
+    "seatHP": "pet_seat_3",
+    "name": "ARK通用挂点（所有宠）3",
+    "dropHP": "pet_end_3",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "133": {
+    "seatHP": "pet_seat_4",
+    "name": "ARK通用挂点（所有宠）4",
+    "dropHP": "pet_end_4",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "100": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_矮凳_宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "45": {
+    "seatHP": "Work_Pet",
+    "loopAnim": "Home_OperateLoop_Wind",
+    "name": "纺车 宠物工作",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "46": {
+    "playAnim": "Sit_End",
+    "seatHP": "seat_1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "偶遇双人长椅 座位1",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "47": {
+    "playAnim": "Sit_End",
+    "seatHP": "seat_2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "偶遇双人长椅 座位2",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "48": {
+    "seatHP": "Gugu_1",
+    "name": "熔岩龙泡澡点位",
+    "endPlayAnim": "EnvBehav_BathEnd",
+    "enterAnim": "EnvBehav_BathStart",
+    "exitAnim": "EnvBehav_BathEnd",
+    "playAnim": "EnvBehav_BathEnd",
+    "loopAnim": "EnvBehav_BathLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "49": {
+    "seatHP": "seat_1",
+    "name": "ark商店座椅1",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "50": {
+    "seatHP": "seat_2",
+    "name": "ark商店座椅2",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "111": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_便携折椅_宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "52": {
+    "seatHP": "overlook",
+    "loopAnim": "Work_Laptop_Loop",
+    "name": "空载具_眺望",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "148": {
+    "seatHP": "seat_7",
+    "name": "ARK通用挂点（人）7",
+    "dropHP": "end_7",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "53": {
+    "seatHP": "seat_1",
+    "name": "ARK咖啡店座椅（大） 人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "54": {
+    "seatHP": "pet_seat_1",
+    "name": "ARK咖啡店座椅（大） 宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "60": {
+    "seatHP": "pet_seat_2",
+    "name": "浴球鸟泡泡",
+    "endPlayAnim": "Float_End",
+    "enterAnim": "EnvBehav_BubbleVehicle_Start",
+    "exitAnim": "Float_End",
+    "playAnim": "Float_End",
+    "loopAnim": "EnvBehav_BubbleVehicle_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "202": {
+    "seatHP": "Target",
+    "passengerHP": "Bip001",
+    "name": "格拉斯博士_云朵羊风团",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Float_Idle",
+    "enterAnim": "Float_Start",
+    "exitAnim": "Float_End"
+  },
+  "179": {
+    "seatHP": "overlook",
+    "loopAnim": "Show_Pose03_Loop",
+    "name": "ARK动作pose_站立（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "178": {
+    "seatHP": "pet_scooter",
+    "loopAnim": "Idle",
+    "name": "滑板车宠物挂点",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "177": {
+    "seatHP": "human_scooter",
+    "name": "滑板车玩家挂点",
+    "endPlayAnim": "Float_End",
+    "enterAnim": "Float_Start",
+    "exitAnim": "Float_End",
+    "playAnim": "Float_End",
+    "loopAnim": "Float_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "68": {
+    "seatHP": "seat_1",
+    "name": "ARK高脚凳人",
+    "endPlayAnim": "SitOnStool_End",
+    "enterAnim": "SitOnStool_Start",
+    "exitAnim": "SitOnStool_End",
+    "playAnim": "SitOnStool_End",
+    "loopAnim": "SitOnStool_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "66": {
+    "seatHP": "pet_dance_02",
+    "loopAnim": "Home_OperateLoop_None",
+    "name": "能量聚合器宠物游玩点2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "24": {
+    "seatHP": "Bone_Human_Seat_2",
+    "name": "磨坊木马2",
+    "dropHP": "Bone_End_2",
+    "loopAnim": "Home_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "173": {
+    "seatHP": "pet_seat_2",
+    "loopAnim": "Idle",
+    "name": "家园宠物站立挂点",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "11": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "ARK椅子 座位1  宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "9": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "测试椅子 座位1 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "13": {
+    "seatHP": "pet_seat_1",
+    "name": "秋千椅子 座位1 宠物",
+    "dropHP": "pet_end_1",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "31": {
+    "seatHP": "Bone_Pet_Seat_1",
+    "name": "纺车座椅1",
+    "dropHP": "pet_end_1",
+    "loopAnim": "Home_Play_SitLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "12": {
+    "seatHP": "pet_seat_2",
+    "loopAnim": "Idle",
+    "name": "ARK椅子 座位2 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "51": {
+    "seatHP": "seat_3",
+    "name": "ark商店座椅3",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "43": {
+    "seatHP": "work_2",
+    "loopAnim": "Home_OperateLoop_None",
+    "name": "手工台 宠物工作 2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "112": {
+    "seatHP": "seat_1",
+    "passengerHP": "Root",
+    "name": "载具_沙滩椅_人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "SitOnGround_Idle",
+    "enterAnim": "SitOnGround_Start",
+    "exitAnim": "SitOnGround_End"
+  },
+  "20": {
+    "playAnim": "Sit_End",
+    "seatHP": "bonfire_seat_3",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "篝火场景椅子3",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "21": {
+    "playAnim": "Sit_End",
+    "seatHP": "bonfire_seat_4",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "篝火场景椅子4",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "22": {
+    "seatHP": "furr_sleep_1",
+    "name": "睡觉毛团1",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "23": {
+    "seatHP": "Bone_Human_Seat_1",
+    "name": "磨坊木马1",
+    "dropHP": "Bone_End_1",
+    "loopAnim": "Home_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "55": {
+    "seatHP": "seat_1",
+    "name": "ARK咖啡店座椅（小） 人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "134": {
+    "seatHP": "pet_seat_5",
+    "name": "ARK通用挂点（所有宠）5",
+    "dropHP": "pet_end_5",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "135": {
+    "seatHP": "seat_1",
+    "name": "ARK通用高脚挂点（人）1",
+    "dropHP": "end_1",
+    "loopAnim": "SitOnStool_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "136": {
+    "seatHP": "seat_2",
+    "name": "ARK通用高脚挂点（人）2",
+    "dropHP": "end_2",
+    "loopAnim": "SitOnStool_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "25": {
+    "seatHP": "Bone_Human_Seat_3",
+    "name": "磨坊木马3",
+    "dropHP": "Bone_End_3",
+    "loopAnim": "Home_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "26": {
+    "seatHP": "Bone_Human_Seat_4",
+    "name": "磨坊木马4",
+    "dropHP": "Bone_End_4",
+    "loopAnim": "Home_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "27": {
+    "seatHP": "Bone_Pet_Seat_1",
+    "name": "磨坊木马1 宠物",
+    "dropHP": "Bone_End_1",
+    "loopAnim": "Home_Play_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "28": {
+    "seatHP": "Bone_Pet_Seat_2",
+    "name": "磨坊木马2 宠物",
+    "dropHP": "Bone_End_2",
+    "loopAnim": "Home_Play_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "29": {
+    "seatHP": "Bone_Pet_Seat_3",
+    "name": "磨坊木马3 宠物",
+    "dropHP": "Bone_End_3",
+    "loopAnim": "Home_Play_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "30": {
+    "seatHP": "Bone_Pet_Seat_4",
+    "name": "磨坊木马4 宠物",
+    "dropHP": "Bone_End_4",
+    "loopAnim": "Home_Play_RideLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "32": {
+    "seatHP": "Bone_Pet_Seat_2",
+    "name": "纺车座椅2",
+    "dropHP": "pet_end_2",
+    "loopAnim": "Home_Play_SitLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "33": {
+    "seatHP": "Bone_Pet_Seat_3",
+    "name": "纺车座椅3",
+    "dropHP": "pet_end_3",
+    "loopAnim": "Home_Play_SitLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "34": {
+    "seatHP": "Bone_Pet_Seat_4",
+    "name": "纺车座椅4",
+    "dropHP": "pet_end_4",
+    "loopAnim": "Home_Play_SitLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "36": {
+    "seatHP": "Gugu_1",
+    "name": "滚滚郎泥坑",
+    "endPlayAnim": "Mimicry_End",
+    "enterAnim": "Mimicry_Start",
+    "exitAnim": "Mimicry_End",
+    "playAnim": "Mimicry_End",
+    "loopAnim": "Mimicry_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "37": {
+    "seatHP": "work_1",
+    "loopAnim": "Home_OperateLoop_None",
+    "name": "手工台 宠物工作 1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "38": {
+    "seatHP": "work_1",
+    "loopAnim": "Home_HandworkLoop",
+    "name": "手工台 玩家工作 1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "39": {
+    "seatHP": "Bone_Human_Seat_1",
+    "name": "纺车座椅1 人",
+    "dropHP": "end_1",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "40": {
+    "seatHP": "Bone_Human_Seat_2",
+    "name": "纺车座椅2 人",
+    "dropHP": "end_2",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "41": {
+    "seatHP": "Bone_Human_Seat_3",
+    "name": "纺车座椅3 人",
+    "dropHP": "end_3",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "42": {
+    "seatHP": "Bone_Human_Seat_4",
+    "name": "纺车座椅4 人",
+    "dropHP": "end_4",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "35": {
+    "seatHP": "work_1",
+    "loopAnim": "Home_WheelLoop",
+    "name": "纺车 玩家工作",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "44": {
+    "seatHP": "work_2",
+    "loopAnim": "Home_HandworkLoop",
+    "name": "手工台 玩家工作 2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "163": {
+    "seatHP": "seat_1",
+    "name": "双人沙发通用挂点（人1）",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "137": {
+    "seatHP": "seat_3",
+    "name": "ARK通用高脚挂点（人）3",
+    "dropHP": "end_3",
+    "loopAnim": "SitOnStool_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "140": {
+    "seatHP": "overlook",
+    "loopAnim": "Show_Dance02",
+    "name": "ARK动作pose_跳舞（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "123": {
+    "seatHP": "L_pet_seat_2",
+    "name": "ARK通用挂点（大宠）2",
+    "dropHP": "pet_end_2",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "125": {
+    "seatHP": "seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_简约坐垫_人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "126": {
+    "seatHP": "seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_四叶草毯_人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "1": {
+    "playAnim": "Sit_End",
+    "seatHP": "seat_1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "测试椅子 座位1 人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "2": {
+    "playAnim": "Sit_End",
+    "seatHP": "seat_2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "测试椅子 座位2 人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "3": {
+    "playAnim": "Sit_End",
+    "seatHP": "seat_1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "ARK椅子 座位1  人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "4": {
+    "playAnim": "Sit_End",
+    "seatHP": "seat_2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "ARK椅子 座位2 人",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "138": {
+    "seatHP": "seat_4",
+    "name": "ARK通用高脚挂点（人）4",
+    "dropHP": "end_4",
+    "loopAnim": "SitOnStool_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "139": {
+    "seatHP": "seat_5",
+    "name": "ARK通用高脚挂点（人）5",
+    "dropHP": "end_5",
+    "loopAnim": "SitOnStool_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "101": {
+    "seatHP": "seat_1",
+    "name": "家具_地毯_人",
+    "endPlayAnim": "Lying_End",
+    "enterAnim": "Lying_Start",
+    "exitAnim": "Lying_End",
+    "playAnim": "Lying_End",
+    "loopAnim": "Lying_Loop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "141": {
+    "seatHP": "seat_1",
+    "name": "家园_商店_圆形大沙发（人）1",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "142": {
+    "seatHP": "seat_2",
+    "name": "家园_商店_圆形大沙发（人）2",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "143": {
+    "seatHP": "seat_3",
+    "name": "家园_商店_圆形大沙发（人）3",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "144": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Idle",
+    "name": "家园_商店_圆形大沙发（宠）1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "145": {
+    "seatHP": "pet_seat_2",
+    "loopAnim": "Idle",
+    "name": "家园_商店_圆形大沙发（宠）2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "146": {
+    "seatHP": "pet_seat_3",
+    "loopAnim": "Idle",
+    "name": "家园_商店_圆形大沙发（宠）3",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "147": {
+    "seatHP": "seat_6",
+    "name": "ARK通用挂点（人）6",
+    "dropHP": "end_6",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "149": {
+    "seatHP": "seat_8",
+    "name": "ARK通用挂点（人）8",
+    "dropHP": "end_8",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "150": {
+    "seatHP": "pet_seat_6",
+    "name": "ARK通用挂点（所有宠）6",
+    "dropHP": "pet_end_6",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "151": {
+    "seatHP": "pet_seat_7",
+    "name": "ARK通用挂点（所有宠）7",
+    "dropHP": "pet_end_7",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "152": {
+    "seatHP": "pet_seat_8",
+    "name": "ARK通用挂点（所有宠）8",
+    "dropHP": "pet_end_8",
+    "loopAnim": "Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "153": {
+    "seatHP": "seat_1",
+    "passengerHP": "Root",
+    "name": "泡澡通用挂点（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Home_Bath01_Loop",
+    "enterAnim": "Home_Bath01_Start",
+    "exitAnim": "Home_Bath01_End"
+  },
+  "154": {
+    "seatHP": "seat_1",
+    "passengerHP": "Root",
+    "name": "淋浴通用挂点（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Home_Shower01_Loop",
+    "enterAnim": "Home_Shower01_Start",
+    "exitAnim": "Home_Shower01_End"
+  },
+  "155": {
+    "seatHP": "seat_1",
+    "passengerHP": "Root",
+    "name": "马桶通用挂点（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Home_BathSit_Loop",
+    "enterAnim": "Home_BathSit_Start",
+    "exitAnim": "Home_BathSit_End"
+  },
+  "156": {
+    "seatHP": "seat_1",
+    "loopAnim": "Home_WashHand",
+    "name": "洗手通用挂点（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "157": {
+    "seatHP": "seat_1",
+    "passengerHP": "Root",
+    "name": "双人床通用挂点（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sleep03_Loop",
+    "enterAnim": "Sleep03_Start",
+    "exitAnim": "Sleep03_End"
+  },
+  "158": {
+    "seatHP": "pet_seat_1",
+    "name": "双人床通用挂点（宠）",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "159": {
+    "seatHP": "pet_seat_1",
+    "name": "宠物单独床挂点",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "160": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Home_Play_SitLoop",
+    "name": "座椅通用挂点（宠）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "161": {
+    "seatHP": "seat_1",
+    "loopAnim": "Home_WashHand",
+    "name": "洗手台通用挂点（人）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "162": {
+    "seatHP": "pet_seat_1",
+    "passengerHP": "Root",
+    "name": "洗手台通用挂点宠",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Behav_HappyLoop",
+    "enterAnim": "Behav_HappyStart",
+    "exitAnim": "Behav_HappyEnd"
+  },
+  "124": {
+    "seatHP": "seat_1",
+    "loopAnim": "Idle",
+    "name": "家具_藤编坐垫_人",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "164": {
+    "seatHP": "seat_2",
+    "name": "双人沙发通用挂点（人2）",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "165": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Home_Play_SitLoop",
+    "name": "双人沙发通用挂点（宠1）",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "166": {
+    "seatHP": "pet_seat_2",
+    "name": "双人沙发通用挂点（宠2）",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "167": {
+    "seatHP": "seat_1",
+    "name": "泳池通用人物挂点",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "168": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Swim_Idle",
+    "passengerHP": "Root",
+    "name": "泳池通用宠物挂点",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnimAlter": "Idle"
+  },
+  "169": {
+    "seatHP": "seat_1",
+    "loopAnim": "SitOnStool_Loop",
+    "name": "通用高脚凳单人物挂点1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "170": {
+    "seatHP": "pet_seat_1",
+    "loopAnim": "Home_Play_SitLoop",
+    "name": "通用高脚凳家园宠物挂点",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "171": {
+    "seatHP": "seat_1",
+    "loopAnim": "SitOnStool_Loop",
+    "name": "通用高脚凳单人物挂点2",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "172": {
+    "seatHP": "pet_seat_1",
+    "name": "通用睡觉宠物挂点",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "10": {
+    "seatHP": "pet_seat_2",
+    "loopAnim": "Idle",
+    "name": "测试椅子 座位2 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "174": {
+    "seatHP": "pet_seat_2",
+    "loopAnim": "Home_Play_SitLoop",
+    "name": "家园宠物坐姿挂点",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "175": {
+    "seatHP": "pet_seat_2",
+    "name": "家园宠物睡觉挂点",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "176": {
+    "seatHP": "Bone_ParmonLeft",
+    "loopAnim": "Home_Play_SitLoop",
+    "name": "秋千宠物坐姿挂点",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "70": {
+    "seatHP": "jump_1",
+    "name": "家园 果汁桶1 宠物游玩",
+    "dropHP": "end_1",
+    "loopAnim": "Home_Play_Jump",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "72": {
+    "seatHP": "overlook",
+    "name": "动作pose_坐栏杆上 玩家",
+    "dropHP": "end",
+    "loopAnim": "Pose_SitOnRailing",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "114": {
+    "seatHP": "seat_1",
+    "name": "ARK通用挂点（人）1",
+    "dropHP": "end_1",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End",
+    "playAnim": "Sit_End",
+    "loopAnim": "Sit_Idle",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "18": {
+    "playAnim": "Sit_End",
+    "seatHP": "bonfire_seat_1",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "loopAnim": "Sit_Idle",
+    "name": "篝火场景椅子1",
+    "endPlayAnim": "Sit_End",
+    "enterAnim": "Sit_Start",
+    "exitAnim": "Sit_End"
+  },
+  "102": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_地毯_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "103": {
+    "seatHP": "pet_seat_1",
+    "name": "家具_蹦床_宠",
+    "endPlayAnim": "Behav_SleepEnd",
+    "enterAnim": "Behav_SleepStart",
+    "exitAnim": "Behav_SleepEnd",
+    "playAnim": "Behav_SleepEnd",
+    "loopAnim": "Behav_SleepLoop",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "80": {
+    "seatHP": "Stairs_pet",
+    "loopAnim": "Idle",
+    "name": "动作pose_坐楼梯上1 宠物",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  },
+  "76": {
+    "seatHP": "overlook",
+    "loopAnim": "Pose_StandByWall",
+    "name": "动作pose_靠墙站立 玩家",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "passengerHP": "Root"
+  }
+}

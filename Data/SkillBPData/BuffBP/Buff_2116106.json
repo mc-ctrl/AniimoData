@@ -1,0 +1,161 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2116106",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    8,
+    24,
+    19
+  ],
+  "onBuffInheritIds": [
+    2,
+    15
+  ],
+  "nodeMap": {
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d543eb9a-cfe9-4314-a969-0c6d568f62d7",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_Ani_Parmon_10161_Skill_MagicLeaf_loop",
+      "NodeID": 22
+    },
+    "24": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "8bb072dc-e7e6-4511-b007-aba19ad4cde5",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_H_Rock",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "10531832-4a02-4f5c-be0b-4d708f633940",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 23
+      },
+      "NodeID": 24
+    },
+    "6": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.125,
+        "reduce_cur_tp_rate": 0.125
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 2000
+      },
+      "UID": "7158964e-3fe2-4b83-a5c4-95bdc0c9438c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 6
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "604b9b0a-1742-4576-a61e-f99ff2c6613b",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_S_Rock",
+      "speed": 2,
+      "NodeID": 15
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "977fbb0e-2752-4e3b-b968-765e19d7b7d1",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_S_Rock",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 6,
+      "NodeID": 8,
+      "UID": "c5acde0d-8a2e-4c78-936c-11ef2b9cf0e9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.2,
+            180,
+            2.2,
+            0.6
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        6
+      ]
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f1602f59-8bb3-4d85-81ea-e995a0324c71",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_End_Rock",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "233d80f5-3987-471e-b63d-a02e2d533c20",
+      "isAbilityEndRemove": false,
+      "soundId": "Ani_Parmon_10161_Skill_MagicLeaf_Attack_Rock",
+      "NodeID": 19
+    },
+    "2": {
+      "delay": 0.4,
+      "interval": 0.7,
+      "UID": "94c44fc8-e533-405c-92cd-e8209add3d45",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "21": {
+      "name": "stopSoundStr",
+      "UID": "9c2fe77c-60c0-4683-a0f9-3e192d61eeb5",
+      "soundId": "Ani_Parmon_10161_Skill_MagicLeaf_Loop_Rock",
+      "target": "OWNER",
+      "NodeID": 21
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    16,
+    18,
+    22,
+    21
+  ],
+  "onBuffStartIds": [
+    2,
+    15
+  ]
+}

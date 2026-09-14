@@ -1,0 +1,315 @@
+{
+  "nodeMap": {
+    "276": {
+      "effectKey": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 276,
+      "UID": "db0166c9-f120-4dee-8b16-94ede79a76e9",
+      "target": "OWNER",
+      "presetName": "SledgeHammerDis",
+      "name": "playPreset"
+    },
+    "167": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ac4c1fae-297d-43a0-84d0-edb8ab80da47",
+      "target": "OWNER",
+      "NodeID": 167,
+      "animId": "Skill_Crush_Level2"
+    },
+    "166": {
+      "action": {
+        "actionIds": [
+          164
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.75,
+      "NodeID": 166,
+      "UID": "256ff9f9-572c-4c97-821b-b0c34ae2df8d"
+    },
+    "187": {
+      "target": "TARGET",
+      "duration": 2,
+      "buffId": 920000702,
+      "NodeID": 187,
+      "UID": "e4632589-0074-4a52-86eb-6f1a6b603f88",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "278": {
+      "action": {
+        "actionIds": [
+          279,
+          276,
+          300,
+          305
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.75,
+      "NodeID": 278,
+      "UID": "073b0f53-1f9a-493c-bded-26ead0febfcf"
+    },
+    "171": {
+      "name": "playSoundStr",
+      "UID": "d4daee73-2c4d-4fb5-b01e-136d36ef0c97",
+      "soundId": "SFX_Avatar_Female_Skill_Crush_Level2",
+      "target": "OWNER",
+      "NodeID": 171
+    },
+    "170": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "53aa1259-acbf-4269-935c-d17c2e8a48da",
+      "target": "OWNER",
+      "NodeID": 170
+    },
+    "318": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "e20b4982-ebc1-4139-8a11-fc224ac240c3",
+      "target": "TARGET",
+      "NodeID": 318
+    },
+    "172": {
+      "triggerName": "Level2",
+      "name": "setEffectAnimTrigger",
+      "UID": "4d66d62f-dafd-4a10-93b4-d779fc89e033",
+      "effectId": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 172
+    },
+    "173": {
+      "result": 3,
+      "name": "pushChargeQteResult",
+      "UID": "35d5565c-5765-4a02-9823-ab3819e2672b",
+      "NodeID": 173,
+      "chargeQteId": "QTE_Hammer"
+    },
+    "195": {
+      "cameraShakeId": 21134,
+      "name": "playCameraImpulseById",
+      "UID": "1419076e-67df-4381-b19f-6f006f4af146",
+      "target": "OWNER",
+      "NodeID": 195
+    },
+    "206": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "09481350-4480-4bfe-9fc6-8aa066226823",
+      "target": "TARGET",
+      "NodeID": 206
+    },
+    "162": {
+      "UID": "370ee92d-2904-4699-93fe-af0347d55b28",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          160
+        ]
+      },
+      "NodeID": 162
+    },
+    "279": {
+      "name": "dropEffectStr",
+      "UID": "80560bd7-dce3-4db2-a7b9-9c26a09a7ae7",
+      "effectId": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "target": "MASTER",
+      "NodeID": 279
+    },
+    "155": {
+      "UID": "900b34ed-a9b1-4222-96d5-bc7952a3e86f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          153
+        ]
+      },
+      "NodeID": 155
+    },
+    "257": {
+      "effectKey": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "duration": 0.3,
+      "disableWhenFinished": true,
+      "NodeID": 257,
+      "UID": "210e3048-6285-4926-8785-1afbfe9f9ac4",
+      "target": "OWNER",
+      "presetName": "SledgeHammerGlow",
+      "name": "playPreset"
+    },
+    "253": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "524340fc-6b55-43d2-b100-2ebf31adfa50",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_CrushDecide",
+      "NodeID": 253
+    },
+    "177": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.8
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10013,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Avatar_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 1100
+      },
+      "UID": "fec7fcfc-e116-41d1-bbb2-37c62e8a40a0",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 177
+    },
+    "305": {
+      "name": "stopEffectStr",
+      "UID": "c09679c5-1b99-433e-b3f6-d103134834a4",
+      "effectId": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 305
+    },
+    "189": {
+      "conditionActionIds": [
+        206
+      ],
+      "UID": "29c6853a-1537-4b6f-a236-e27fba0865ca",
+      "name": "doActionsByConditions",
+      "NodeID": 189,
+      "elseActionIds": [
+        188
+      ]
+    },
+    "188": {
+      "conditionActionIds": [
+        318
+      ],
+      "UID": "9ac30ddd-d678-415b-8dc3-e4a06ca48f95",
+      "name": "doActionsByConditions",
+      "NodeID": 188,
+      "elseActionIds": [
+        187
+      ]
+    },
+    "169": {
+      "UID": "a7c82d79-f2db-4f99-a67a-03d2a93e4c75",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          167,
+          171,
+          170,
+          173,
+          253,
+          172
+        ]
+      },
+      "NodeID": 169
+    },
+    "179": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 177,
+      "NodeID": 179,
+      "UID": "70a2e6cd-bbc9-400c-83d9-08af737b673f",
+      "target": [
+        {
+          "offsetXYZ": [
+            -0.2,
+            0,
+            2
+          ],
+          "shapeArgs": [
+            1.4,
+            1.9,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1100,
+      "actionIds": [
+        177,
+        189
+      ]
+    },
+    "300": {
+      "key": "9200007HammerDis",
+      "name": "setCacheVal",
+      "UID": "ea78cb42-4000-42ac-8b7e-896a553d2c6b",
+      "val": 1,
+      "NodeID": 300
+    },
+    "160": {
+      "UID": "640d2896-f882-480a-85c8-9d3b63bf863d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 160
+    },
+    "153": {
+      "UID": "f36a0426-3079-43f1-b234-144cc3e8a59d",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 153
+    },
+    "181": {
+      "action": {
+        "actionIds": [
+          179,
+          195,
+          257
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.587,
+      "NodeID": 181,
+      "UID": "f0339c8c-3111-413f-a1a7-6beb3d17f77c"
+    },
+    "164": {
+      "UID": "dfefc800-a40b-4eb0-9c05-b490a50c4efa",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 164
+    }
+  },
+  "BPName": "ability_9200007",
+  "NodeID": 157,
+  "UID": "3bab1f8a-e058-4361-9608-8396d8789074",
+  "eventIds": [
+    155,
+    162,
+    278,
+    169,
+    166,
+    181
+  ],
+  "layer": "Base",
+  "length": 3
+}

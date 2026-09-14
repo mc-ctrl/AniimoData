@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11142",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 300008,
+      "NodeID": 13,
+      "UID": "13f91e84-d8d3-4e29-a7a3-4232224c2b37",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "pos": "OWNER",
+      "name": "createEntity"
+    },
+    "11": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "9aaa157d-850d-460c-a0f7-84c01de683d3",
+      "target": "OWNER",
+      "val": {
+        "UID": "54ba724f-e4ca-4b5f-8365-83cfd180e87d",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 10
+      },
+      "NodeID": 11
+    },
+    "14": {
+      "eventName": "masterDead1",
+      "name": "notifyCustomEvent",
+      "UID": "bdf84153-29bf-440a-9280-be349dc72319",
+      "target": "OWNER",
+      "NodeID": 14
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14
+  ],
+  "onBuffStartIds": [
+    11,
+    13
+  ]
+}

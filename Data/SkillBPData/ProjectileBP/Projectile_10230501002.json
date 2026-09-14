@@ -1,0 +1,98 @@
+{
+  "duration": 0.5,
+  "BPName": "ability_10230501",
+  "NodeID": 106,
+  "destroyOnHit": false,
+  "effectId": "Eff_Monster_10023_Mon_Attack_IronClaw_jianqi",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "moveSpeed": 8,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "onProjectileHitIds": [
+    63
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.1,
+  "sweepShape": 0,
+  "targetPos": {
+    "key": "TargetPos",
+    "name": "getCacheVal",
+    "UID": "94ec7d69-4fc4-4b3f-a6d6-85cb8799a933",
+    "target": "OWNER",
+    "NodeID": 104
+  },
+  "tickInterval": 0,
+  "nodeMap": {
+    "61": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 4.2
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 5000,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0
+      },
+      "UID": "f6de3cd9-f321-4e24-ab7a-6bca19e4d9b0",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 61
+    },
+    "63": {
+      "calcResultNodeId": 61,
+      "name": "actOnTargets",
+      "UID": "08782406-849c-424d-881b-067095d1653a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            15,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        61
+      ],
+      "impulseId": 5000,
+      "NodeID": 63
+    }
+  },
+  "UID": "9e594f37-82a2-4e25-9ff7-9abb0b88e3ca",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 61,
+  "impulseId": 5000,
+  "acceleration": -10
+}

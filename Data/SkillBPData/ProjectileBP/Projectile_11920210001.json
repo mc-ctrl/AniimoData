@@ -1,0 +1,111 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 27,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 9999,
+  "maxHitNum": 1,
+  "minAngularOffset": 9999,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    28,
+    37,
+    38
+  ],
+  "nodeMap": {
+    "27": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "parmon_wishytar_skill_bubble_hit",
+        "hitCameraShakeId": 10005
+      },
+      "UID": "89ce11f6-1284-4842-896c-ebf30191f46a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 27
+    },
+    "28": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 27,
+      "NodeID": 28,
+      "UID": "e36f7e79-be4d-4735-afd7-3b16db2f3a45",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        27
+      ]
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "48b68403-e7c3-4d8e-92e1-9f67bfa66f0f",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_laricander_attack_hit",
+      "NodeID": 38
+    },
+    "37": {
+      "pos": "PROJECTILE",
+      "offsetXYZ": [
+        0,
+        0.3,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "7cf3f321-b9ba-400c-9cc8-4d924f018f8a",
+      "effectId": "Eff_Parmon_10043_Skill_Bubble_Creation_01_New",
+      "speed": 1,
+      "NodeID": 37
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.25,
+  "sweepShape": 0,
+  "BPName": "ability_11920210",
+  "tickInterval": 0.05,
+  "effectId": "Eff_Parmon_10043_Skill_Bubble_Large_New",
+  "startSleepTime": 0,
+  "defaultHitSoundType": "s",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

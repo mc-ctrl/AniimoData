@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_11430210",
+  "NodeID": 1,
+  "UID": "f9b223be-67fc-41cf-873a-f177296a914f",
+  "abilityParamId": 10300021,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11430210001,
+      "name": "setCombatActionTimeline",
+      "UID": "2e7dfff9-4b33-4b80-bd76-8abd5b2219f5",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 7,
+  "preloadAnims": [
+    "Skill_Wave_Start",
+    "Skill_Wave_Loop",
+    "Skill_Wave_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_Skill_WaterBreath_long",
+    "Eff_Parmon_Laricander_Attack01_Hit",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10194_Mon_Skill_AbsorbWater_Start"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "isAim": true,
+  "onlyHasActOnTargets": true,
+  "desc": "",
+  "refBones": [
+    "Root"
+  ]
+}

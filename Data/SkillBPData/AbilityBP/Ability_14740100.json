@@ -1,0 +1,61 @@
+{
+  "BPName": "ability_14740100",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityIndicator": 1,
+  "abilityParamId": 10400380,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14740100001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Sweep"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Electric_Blunt_Y",
+    "Eff_Parmon_10474_Skill_Sweep_01",
+    "Eff_Parmon_10474_Skill_Sweep_02",
+    "Eff_Parmon_10474_Skill_Sweep_03",
+    "Eff_Parmon_10474_Skill_Sweep_04"
+  ],
+  "searchRelation": 2,
+  "name": "钢尾",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      4,
+      2,
+      2.5
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "CASTER",
+    "maxNum": 0
+  },
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": "钢尾"
+}

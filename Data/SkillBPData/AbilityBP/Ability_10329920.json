@@ -1,0 +1,45 @@
+{
+  "BPName": "ability_10329920",
+  "NodeID": 1,
+  "UID": "786b95d2-2189-4e65-bbc1-6a1be001a84a",
+  "abilityParamId": 11200320,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10329920001,
+      "name": "setCombatActionTimeline",
+      "UID": "895b702d-566c-408a-8574-96fd6b4dbeef",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BossEX"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Slash",
+    "Eff_Monster_10032_BossEx_Indicator_Line",
+    "Eff_Parmon_10032_IndicatorCircle",
+    "Eff_Parmon_10032_Skill_BossEX_trail1",
+    "Eff_Parmon_10032_Skill_BossEX_xiaoshi",
+    "Eff_Parmon_10032_Skill_BossEX_chuxian",
+    "Eff_Parmon_10032_Skill_BossEX_trail2",
+    "Eff_Parmon_10032_Skill_BossEX_daoguang1",
+    "Eff_Parmon_10032_Skill_BossEX_daoguang2",
+    "Eff_Parmon_10032_Skill_BossEX_Boom",
+    "Eff_Parmon_10032_Skill_BossEX_daoguang3"
+  ],
+  "searchRelation": 2,
+  "name": "暗影分身",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0
+}

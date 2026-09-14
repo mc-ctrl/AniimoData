@@ -1,0 +1,2676 @@
+{
+  "nodeMap": {
+    "52": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ff4e052c-7861-40a0-a052-450b9e5fdbb7",
+      "target": "OWNER",
+      "NodeID": 52,
+      "animId": "Skill_Spark"
+    },
+    "113": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 113,
+      "UID": "d9fc73ac-ffc8-4154-a9ef-05909a7f7283",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -45,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "168": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 168,
+      "UID": "bcc9a76c-b8c3-4fe1-9ec5-f00eb9f9af8a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            105,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "169": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "5d8e5d25-2665-4733-a433-4190eb8179cd",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          105,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 169
+    },
+    "171": {
+      "action": {
+        "actionIds": [
+          179,
+          173,
+          169,
+          176,
+          182,
+          185,
+          188,
+          191
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 171,
+      "UID": "b2e09499-7d90-48f6-8b0b-34fef969caeb"
+    },
+    "254": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "92af34a4-ce0b-4ed3-8e17-1643e8055c8d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Ex_Charge",
+      "NodeID": 254
+    },
+    "116": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "1d48a163-3e6b-45b5-a944-07f698eb0710",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        135,
+        0
+      ],
+      "NodeID": 116
+    },
+    "174": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 174,
+      "UID": "4745c20e-4ccf-4668-919d-9c44ec044b41",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            60,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "117": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "50fcfb44-5878-48f6-a65c-9a957dc71206",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        90,
+        0
+      ],
+      "NodeID": 117
+    },
+    "176": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "6a192eee-bc72-47b4-93c5-0427546c3742",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          150,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 176
+    },
+    "118": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "de4863ee-8575-4396-83c8-54d1ee10e9af",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        45,
+        0
+      ],
+      "NodeID": 118
+    },
+    "179": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "e9ee3d94-2382-488f-b0c8-1f610c74e652",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          15,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 179
+    },
+    "180": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 180,
+      "UID": "a6bed4e2-2e51-4a77-a935-fa1729d9ba1e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            15,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "120": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "cd0361fc-35f0-42bb-aeea-9e654866bfa8",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -90,
+        0
+      ],
+      "NodeID": 120
+    },
+    "182": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "15cc3c9b-5542-4123-8b99-5be974d5e053",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -165,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 182
+    },
+    "121": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "1cba8ad4-672a-4086-8df0-7b55aaca3ed2",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -45,
+        0
+      ],
+      "NodeID": 121
+    },
+    "270": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b13fb7c9-aa89-4121-a6c4-f6e3e715e9e8",
+      "effectId": "Eff_Parmon_10222_Skill_Ex_01",
+      "speed": 1,
+      "NodeID": 270
+    },
+    "185": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "ea1ab12d-55ab-4f4c-851b-0748b2ec9ff2",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -120,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 185
+    },
+    "186": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 186,
+      "UID": "619fad84-b8c5-4971-9d16-d0018901e4e5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -120,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "210": {
+      "action": {
+        "actionIds": [
+          218,
+          212,
+          208,
+          215,
+          221,
+          224,
+          227,
+          230
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.5,
+      "NodeID": 210,
+      "UID": "41f1e55d-9b2b-49aa-b2f3-7593e3e3e4fd"
+    },
+    "188": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "8a5f74c4-e723-4345-970f-91e5d3f5eb6b",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -75,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 188
+    },
+    "189": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 189,
+      "UID": "7eb08c90-af46-4c1b-9cef-9e2e1420c251",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -75,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "268": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3ce04f80-5c4e-404d-a6b4-2c4cd3fe35ed",
+      "target": "OWNER",
+      "NodeID": 268,
+      "animId": "Behav_AngryEnd"
+    },
+    "191": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "8296423e-a2b2-488a-b651-5f18ae3a7299",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -30,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 191
+    },
+    "192": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 192,
+      "UID": "13499ebc-1206-43ab-8e57-843a12236732",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -30,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "193": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "1591ce35-7074-4376-9149-2c631fe83e3b",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -165,
+        0
+      ],
+      "NodeID": 193
+    },
+    "194": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "a44a6099-e761-4df6-8904-6cf4f423e5e5",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        150,
+        0
+      ],
+      "NodeID": 194
+    },
+    "195": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "5253c29b-d5c3-447e-91d4-3729847c8a6a",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        105,
+        0
+      ],
+      "NodeID": 195
+    },
+    "196": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "9dd582e7-33c6-4f2c-ab8b-c4ece0053f07",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        60,
+        0
+      ],
+      "NodeID": 196
+    },
+    "197": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "083df066-67e8-4bb4-a234-676297c26a66",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -120,
+        0
+      ],
+      "NodeID": 197
+    },
+    "198": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "6fe1dea3-7868-4188-99bd-9ee8d6cb8577",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -75,
+        0
+      ],
+      "NodeID": 198
+    },
+    "199": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "d3a0292e-6075-428e-93de-14dc0faeca2c",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -30,
+        0
+      ],
+      "NodeID": 199
+    },
+    "200": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "0bc15e6e-c73e-4bb5-ad29-562933e2fd9d",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ],
+      "NodeID": 200
+    },
+    "212": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "cbfeb0c8-b17e-4f3e-b632-b54b845b038d",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          75,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 212
+    },
+    "221": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "c8581b07-884f-4a21-948a-bd0d6e1fc5f0",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -150,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 221
+    },
+    "267": {
+      "action": {
+        "actionIds": [
+          266
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.583,
+      "NodeID": 267,
+      "UID": "4e89c7e7-881e-41ca-851e-d3c9fbb77426"
+    },
+    "231": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 231,
+      "UID": "e95fbc9e-d6ba-4116-89dc-8f71322c12d0",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -15,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "218": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "ebc06a45-a3b4-455d-98be-86f26271222a",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          30,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 218
+    },
+    "215": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "008c81f3-8877-45b3-b463-7b68bd4726c9",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          165,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 215
+    },
+    "219": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 219,
+      "UID": "3354a25f-2d89-4192-a018-11402fc23f1e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            30,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "216": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 216,
+      "UID": "bf470dce-2832-4aea-ae66-cc1b861d0b11",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            165,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "264": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20ce4a5b-4815-42c0-8cf4-cbf438ff48df",
+      "target": "OWNER",
+      "NodeID": 264,
+      "animId": "Behav_AngryStart"
+    },
+    "262": {
+      "UID": "b0a3c3f7-56f8-4510-96d7-04ddfc93a954",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          261
+        ]
+      },
+      "NodeID": 262
+    },
+    "20": {
+      "UID": "3eaa18e0-5c27-4fb7-acdf-ccd004343199",
+      "name": "setMask",
+      "mask": {
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "72a9b3be-5f21-4c3c-a405-8e31ea9f992e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "224": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "b334a8ac-1e08-48cd-9f62-1beb9636227e",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -105,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 224
+    },
+    "260": {
+      "action": {
+        "actionIds": [
+          259
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.7,
+      "NodeID": 260,
+      "UID": "936ecb6b-e116-457e-b1ec-9096212a0da2"
+    },
+    "55": {
+      "name": "hideModel",
+      "UID": "32031edc-44ad-42f7-ab38-7fde1a968f15",
+      "target": "OWNER",
+      "NodeID": 55,
+      "maxHideTime": 2.2
+    },
+    "14": {
+      "UID": "7c7c7fb0-8d7b-4cb6-81e3-91fc4500bf3d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          39
+        ]
+      },
+      "NodeID": 14
+    },
+    "222": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 222,
+      "UID": "1f3dbcb5-7aef-4b5c-ba71-8990f517c5c3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -150,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "75": {
+      "key": "1222ExPos",
+      "name": "setCacheVal",
+      "UID": "217e65a1-0888-4196-8d3a-062e3b8f4904",
+      "target": "OWNER",
+      "val": {
+        "NodeID": 74,
+        "name": "getTargetOffsetPos",
+        "UID": "cc37a794-7609-4995-b3e6-0ae28e79cfee",
+        "target": "TARGET",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotType": "CASTER"
+      },
+      "NodeID": 75
+    },
+    "57": {
+      "action": {
+        "actionIds": [
+          55,
+          270
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 57,
+      "UID": "1c65a146-867e-4de0-b088-9eff656e4e4b"
+    },
+    "16": {
+      "UID": "ba2e37ce-e9fb-49bf-8e56-c24174e9897a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1
+      },
+      "NodeID": 16
+    },
+    "259": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d581b467-267e-474a-8a04-eeee59d202bd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Ex_Ground",
+      "NodeID": 259
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8,
+      "NodeID": 17,
+      "UID": "604b4dc1-cc99-429c-8499-1292470be42e"
+    },
+    "225": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 225,
+      "UID": "2702df36-eab8-4354-a71d-3443fedd76d9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -105,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "78": {
+      "scale": 1.2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f7062707-4359-4453-ac01-4486ebc4b62c",
+      "effectId": "Eff_Parmon_10222_Skill_Ex_03",
+      "speed": 1,
+      "NodeID": 78
+    },
+    "227": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "1db70ac8-c0af-4dbb-a798-0db7a42d304a",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -60,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 227
+    },
+    "228": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 228,
+      "UID": "e0e0adb8-341f-475c-9244-020b555442a4",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -60,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "255": {
+      "UID": "7afa08c7-1e4d-4ed7-8093-cb91b8226c2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          254
+        ]
+      },
+      "NodeID": 255
+    },
+    "80": {
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "37a331c1-ef86-4a36-81c2-0d68fbdd62e5",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "speed": 1,
+      "NodeID": 80
+    },
+    "62": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.4
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10034,
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "weaponSoundType": "slash",
+        "impulseId": 5005,
+        "hitCameraShakeId": 20101
+      },
+      "UID": "3943a9f2-938e-4a09-a99f-06c3bdc0a951",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 62
+    },
+    "38": {
+      "target": "CASTER",
+      "duration": 3.45,
+      "buffId": 10011,
+      "NodeID": 38,
+      "UID": "a838e7fa-eb20-4c3e-a830-8c9fd82dfd2e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "39": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "d4032612-7e7b-485f-9ecd-d459e4ce36a1",
+      "target": "CASTER",
+      "NodeID": 39
+    },
+    "10": {
+      "UID": "62dc0cd7-9d96-46a5-93bd-a465af153c53",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 10
+    },
+    "53": {
+      "UID": "9efd8fed-9054-44ed-abc2-800a5f5ee983",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "NodeID": 53
+    },
+    "64": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 62,
+      "NodeID": 64,
+      "UID": "b012d570-06a4-4efb-bf6a-144ff326e6eb",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6,
+            3,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "key": "1222ExPos",
+            "name": "getCacheVal",
+            "UID": "48e0f805-8579-4552-8ab4-b3f31a660723",
+            "target": "OWNER",
+            "NodeID": 79
+          },
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        62
+      ]
+    },
+    "43": {
+      "target": "OWNER",
+      "duration": 38,
+      "buffId": 2122201,
+      "NodeID": 43,
+      "UID": "2ea2c140-d90a-426d-bba9-3bddf30d3cfa",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 44,
+      "UID": "4f1e4c31-d939-45a1-859e-a5ae1dcf59c5"
+    },
+    "240": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.15
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10034,
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "weaponSoundType": "slash",
+        "impulseId": 5005,
+        "hitCameraShakeId": 20101
+      },
+      "UID": "715e400e-c1c0-4394-a950-39a8d30e0ca0",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 240
+    },
+    "66": {
+      "action": {
+        "actionIds": [
+          64,
+          77,
+          78
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.7,
+      "NodeID": 66,
+      "UID": "71b47e84-ef52-46e9-aed6-f1fefa162fbd"
+    },
+    "238": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "022f1ffd-66c3-453b-8503-a92b96c1c137",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -15,
+        0
+      ],
+      "NodeID": 238
+    },
+    "237": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "1fdbb7e1-8414-437c-b9fd-4d72799e943d",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -60,
+        0
+      ],
+      "NodeID": 237
+    },
+    "236": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "5c40373b-d200-4a58-9ae7-ae189dcf97d3",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -105,
+        0
+      ],
+      "NodeID": 236
+    },
+    "203": {
+      "action": {
+        "actionIds": [
+          219,
+          213,
+          207,
+          216,
+          222,
+          225,
+          200,
+          235,
+          234,
+          233,
+          232,
+          236,
+          237,
+          238,
+          228,
+          231
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 203,
+      "UID": "15a9dc62-15e0-48d9-8585-af8a8052832b"
+    },
+    "235": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "a7b2e727-07f1-4cae-a8f8-d2d6a08d88de",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        75,
+        0
+      ],
+      "NodeID": 235
+    },
+    "2": {
+      "UID": "23ff45d7-d1a2-41ff-99f8-029f2fdf4404",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 2
+    },
+    "234": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "75262cc7-6b0d-4ad5-b9f8-b1b8bdf48752",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        120,
+        0
+      ],
+      "NodeID": 234
+    },
+    "4": {
+      "UID": "a27b5166-08eb-44a2-81a8-ff9b181d1d93",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          10,
+          38
+        ]
+      },
+      "NodeID": 4
+    },
+    "233": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "c21cc95e-835d-4f64-a255-876d10fb5bf8",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        165,
+        0
+      ],
+      "NodeID": 233
+    },
+    "89": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 89,
+      "UID": "7caba292-537e-4cb9-ba87-2ced1e02aa66",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            90,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "101": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 101,
+      "UID": "fe3ef859-85c0-472e-9346-72dc3a1e4dac",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "90": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "2ad2cf8f-27e6-4b43-8f70-c584b8571db6",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          90,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 90
+    },
+    "232": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "5be25e4e-a940-487c-846d-bfe76c643c52",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -150,
+        0
+      ],
+      "NodeID": 232
+    },
+    "73": {
+      "action": {
+        "actionIds": [
+          75,
+          71
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.2,
+      "NodeID": 73,
+      "UID": "745f4d71-50c0-4881-9865-f36419a1490e"
+    },
+    "250": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.15
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10034,
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "weaponSoundType": "slash",
+        "impulseId": 5005,
+        "hitCameraShakeId": 20101
+      },
+      "UID": "064b475a-2a6f-42dd-b106-5f7edfca048a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 250
+    },
+    "92": {
+      "action": {
+        "actionIds": [
+          100,
+          94,
+          90,
+          97,
+          103,
+          106,
+          109,
+          112
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 92,
+      "UID": "0a83ff89-b952-4ec6-9c0e-aecf0df155bc"
+    },
+    "256": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "87089d7a-94cf-49bf-ae20-33d13edf0cd3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Ex_Slash",
+      "NodeID": 256
+    },
+    "257": {
+      "action": {
+        "actionIds": [
+          256
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.02,
+      "NodeID": 257,
+      "UID": "18dff9d0-a55e-40b4-9303-7e1f087e98dd"
+    },
+    "258": {
+      "action": {
+        "actionIds": [
+          256
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 258,
+      "UID": "95c45687-3534-443d-b3c8-2309aa5ad7cd"
+    },
+    "94": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "f23a1d78-0082-4aef-a14f-3cfe2b0a0a7e",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          45,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 94
+    },
+    "261": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "01c61eaf-09d4-4bb4-a047-090c1db5be78",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 261
+    },
+    "95": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 95,
+      "UID": "6075d22b-3b29-41bb-95e2-d475068e793f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            45,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "265": {
+      "action": {
+        "actionIds": [
+          264
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 265,
+      "UID": "5691184e-2524-45d1-9e4d-c91e5a7b06c8"
+    },
+    "266": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6c2b0e7f-a2c8-4267-8acb-f414f9e007d3",
+      "target": "OWNER",
+      "NodeID": 266,
+      "animId": "Behav_AngryLoop"
+    },
+    "213": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 213,
+      "UID": "d26f921c-7b78-445a-a0de-b497609336d9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            75,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "97": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "2b4dd60b-3eac-4ae3-bab1-ebd6f8f1421b",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          135,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 97
+    },
+    "269": {
+      "action": {
+        "actionIds": [
+          268
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.833,
+      "NodeID": 269,
+      "UID": "b6edda58-9b1f-4493-b207-134a943e6c83"
+    },
+    "98": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 98,
+      "UID": "42d4080c-b10b-4889-b97a-696d0c33c1b1",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            135,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "208": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "2ae2c23e-df47-4e5b-9974-53ddf4722eb3",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          120,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 208
+    },
+    "207": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 245,
+      "NodeID": 207,
+      "UID": "3fdaba29-34e7-485d-a238-3254b25e6896",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            120,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        245
+      ]
+    },
+    "183": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 183,
+      "UID": "713627fd-4abb-4d4c-a9ea-f4e8f7deaa66",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -165,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "100": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "108c364e-6318-4bc0-8e04-4b97f71a3b42",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 100
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8,
+      "NodeID": 21,
+      "UID": "0914ae67-5136-445e-8353-e6eb35c72505"
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 50,
+      "UID": "3d8f2874-e073-48d3-8cef-1bc26ab66357"
+    },
+    "49": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a041ac18-d331-41e0-bbd5-cab5a3fcdad4",
+      "effectId": "Eff_Parmon_10222_Skill_Ex_00",
+      "speed": 1,
+      "NodeID": 49
+    },
+    "77": {
+      "checkGroundLayer": true,
+      "faceToTarget": "TARGET",
+      "performer": "OWNER",
+      "UID": "c0df8458-99aa-4d6f-8a01-3c23e09f3b43",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "key": "1222ExPos",
+        "name": "getCacheVal",
+        "UID": "df762847-e43b-4936-94f7-b957d88e0bc0",
+        "target": "OWNER",
+        "NodeID": 76
+      },
+      "name": "teleport",
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 77
+    },
+    "103": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "f4fd3e74-b092-49ee-b6d7-fa6d3e77508f",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          180,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 103
+    },
+    "230": {
+      "playTime": 1.5,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "269083eb-2889-44d7-b1cf-be0fde5b29b0",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -15,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 230
+    },
+    "104": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 104,
+      "UID": "5e58be7f-1d0d-4bd6-8fb6-5d2b6c6a0b32",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            180,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "74": {
+      "NodeID": 74,
+      "name": "getTargetOffsetPos",
+      "UID": "cc37a794-7609-4995-b3e6-0ae28e79cfee",
+      "target": "TARGET",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotType": "CASTER"
+    },
+    "71": {
+      "playTime": 1.5,
+      "stayTime": 0.5,
+      "name": "playIndicatorEff",
+      "UID": "db857ec9-7e5d-4d83-b059-7039c27f9115",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          6,
+          3,
+          0
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": {
+          "key": "1222ExPos",
+          "name": "getCacheVal",
+          "UID": "48e0f805-8579-4552-8ab4-b3f31a660723",
+          "target": "OWNER",
+          "NodeID": 79
+        },
+        "maxNum": 0
+      },
+      "NodeID": 71
+    },
+    "245": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.15
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10034,
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "weaponSoundType": "slash",
+        "impulseId": 5005,
+        "hitCameraShakeId": 20101
+      },
+      "UID": "400ad606-0998-4f77-b37d-5595c283038c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 245
+    },
+    "106": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "123758b8-337a-40e1-856c-55cac7b146a4",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -135,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 106
+    },
+    "83": {
+      "action": {
+        "actionIds": [
+          101,
+          95,
+          89,
+          98,
+          104,
+          107,
+          80,
+          118,
+          117,
+          116,
+          115,
+          119,
+          120,
+          121,
+          110,
+          113
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 83,
+      "UID": "7c27399a-afc0-4427-b972-9dcf707c1344"
+    },
+    "107": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 107,
+      "UID": "a778a630-b89c-441e-8e3f-12618d8bc62a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -135,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "115": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "fde22e71-48cd-4dc9-b8c6-026674792652",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "NodeID": 115
+    },
+    "110": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 240,
+      "NodeID": 110,
+      "UID": "414567b2-0667-4243-8bcb-f9abc40be612",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -90,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        240
+      ]
+    },
+    "112": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "6d09f41a-e79d-4af8-b6fd-8fda5ce7d8c3",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -45,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 112
+    },
+    "109": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "2833b7a0-5d53-477a-9246-cd73df162638",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          -90,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 109
+    },
+    "119": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "1d28071b-f9bd-4d3c-a2b1-2a18dadeb78b",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        -135,
+        0
+      ],
+      "NodeID": 119
+    },
+    "161": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "75fabac9-7af7-427a-9537-c4307ba0271f",
+      "effectId": "Eff_Parmon_1022200_Skill_lightning",
+      "offsetRotation": [
+        0,
+        15,
+        0
+      ],
+      "NodeID": 161
+    },
+    "173": {
+      "playTime": 1.3,
+      "stayTime": 0.3,
+      "name": "playIndicatorEff",
+      "UID": "02a9dfc1-916b-4aeb-ab16-89da48755434",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          2,
+          22,
+          2,
+          2
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          60,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 173
+    },
+    "177": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 250,
+      "NodeID": 177,
+      "UID": "e80b216d-d4ce-474b-b879-eb099f27e4e4",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            22,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            150,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        250
+      ]
+    },
+    "164": {
+      "action": {
+        "actionIds": [
+          180,
+          174,
+          168,
+          177,
+          183,
+          186,
+          161,
+          196,
+          195,
+          194,
+          193,
+          197,
+          198,
+          199,
+          189,
+          192
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.8,
+      "NodeID": 164,
+      "UID": "f68f0b1a-7c85-4e01-9ee1-6c8ce2fcf9f9"
+    }
+  },
+  "BPName": "ability_12229901",
+  "NodeID": 6,
+  "UID": "3c545a7d-3821-4533-b428-c3ae021c6ad1",
+  "eventIds": [
+    4,
+    14,
+    17,
+    21,
+    50,
+    53,
+    265,
+    267,
+    269,
+    44,
+    92,
+    83,
+    171,
+    164,
+    210,
+    203,
+    57,
+    262,
+    73,
+    66,
+    255,
+    257,
+    258,
+    260
+  ],
+  "layer": "Base",
+  "length": 9
+}

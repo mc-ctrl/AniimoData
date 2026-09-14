@@ -1,0 +1,88 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9161302",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "nodeMap": {
+    "5": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "2bb3ee0e-52be-4129-8192-ff51a062fceb",
+      "NodeID": 5,
+      "lValue": {
+        "templateId": 9161302,
+        "name": "getBuffLayer",
+        "UID": "62231963-d095-4e59-a4d3-0f2249937c6c",
+        "target": "OWNER",
+        "NodeID": 4
+      }
+    },
+    "13": {
+      "actionIds": [
+        11,
+        15
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "83004865-398d-4614-9427-92826c78a3ae",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "actionIds": [
+        8,
+        10
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "15d06993-7051-415d-863b-d1042916e430",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 9161302,
+      "name": "removeBuff",
+      "UID": "f95167dc-25fa-4e92-8fc3-3ead11e022f5",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "buffId": 9161302,
+      "name": "removeBuff",
+      "UID": "68e43196-2904-4a4a-af41-f0320ca393e1",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "15": {
+      "calcInfo": {
+        "passive_energy_cur": -5
+      },
+      "name": "calcResult",
+      "UID": "736a5a13-49e6-4169-a637-f46e863fcaf2",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9161303,
+      "NodeID": 8,
+      "UID": "4ed64ebd-d530-4c9c-a8ba-cbd4f6614178",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    6
+  ],
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10018",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    3,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cb534593-6df1-481f-9bad-69687d7d4eda",
+      "target": "CASTER",
+      "NodeID": 13,
+      "animId": "Hit_Stand"
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ca9b6afe-ad01-4ed1-9cf4-f8981bb92631",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_sfx_parmon_break",
+      "NodeID": 9
+    },
+    "6": {
+      "name": "playHitEffect",
+      "UID": "e2b32bb6-b962-4ae9-9a60-ca9603e6eaf2",
+      "target": "OWNER",
+      "NodeID": 6,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "12722c22-c10f-4eef-90bb-4a56bf7ac6c9",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "0bded94e-627e-4b3f-8863-48d53d46e9d7",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13,
+    11,
+    9,
+    6
+  ]
+}

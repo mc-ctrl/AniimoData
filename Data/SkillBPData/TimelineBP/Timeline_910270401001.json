@@ -1,0 +1,69 @@
+{
+  "nodeMap": {
+    "3": {
+      "buffId": 2102709,
+      "name": "removeBuff",
+      "UID": "16d1aca5-30c5-4547-8e30-072630779c58",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "87b5158c-0315-48ec-ace2-85ecd5942ea6",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "cancellable": 1
+      },
+      "NodeID": 13
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 14,
+      "UID": "98899bb7-ac58-4888-be6f-412e55871a3e"
+    },
+    "11": {
+      "UID": "51de53dd-3e9e-40e0-a303-f3f3bbb669ae",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 11
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "cad1d2c2-c8f5-4623-b081-128ec769ee38",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10027_Skill_DefMode_End",
+      "NodeID": 15
+    },
+    "5": {
+      "UID": "b7e50f2b-b27a-4a0d-b144-76a11aa018b8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          3,
+          15
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "ability_910270401",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14
+  ],
+  "layer": "Base",
+  "length": 4
+}

@@ -1,0 +1,56 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21233003",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "tags": [
+    1,
+    2,
+    20,
+    27
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "5230e5e0-8ac3-46f9-a637-2df18c266242",
+      "name": "cancelLock",
+      "NodeID": 3
+    },
+    "9": {
+      "UID": "b102b5ec-6c19-414b-8935-f847955bcffe",
+      "name": "ignoreVelocityProjection",
+      "enable": false,
+      "NodeID": 9
+    },
+    "6": {
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "c3889ea3-e0b9-499e-860b-6b2196eb2568",
+      "ignoreSelf": false,
+      "NodeID": 6
+    },
+    "5": {
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "8927baef-ea0c-4dbb-953b-18608b871ec6",
+      "ignoreSelf": true,
+      "NodeID": 5
+    },
+    "8": {
+      "UID": "acc1c5f4-9577-436c-90c5-4079554066f6",
+      "name": "ignoreVelocityProjection",
+      "enable": true,
+      "NodeID": 8
+    }
+  },
+  "onBuffDestroyIds": [
+    6,
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    3,
+    8
+  ]
+}

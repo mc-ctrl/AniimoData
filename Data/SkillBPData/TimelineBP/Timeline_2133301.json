@@ -1,0 +1,192 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "calcId": 2133301,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 22,
+      "UID": "581ec5fe-d3dc-4f9a-b8fa-778f2dc68729",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2133301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "98009214-d8a4-4fdc-be32-79a5df4c19fe",
+      "target": "TARGET",
+      "NodeID": 4,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10014,
+        "elementType": 5,
+        "impulseId": 5002,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt_Big"
+      }
+    },
+    "24": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 10079,
+      "NodeID": 24,
+      "UID": "393f1a05-447c-405e-8fd3-bac590881b26",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 4,
+      "NodeID": 6,
+      "UID": "90bf8c40-9e1a-487f-a6df-d4551e7ae21e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            3,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        4,
+        21,
+        24
+      ]
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b009f59d-f22f-4156-bf9b-521c5c6b1ffd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil_Hit",
+      "NodeID": 15
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cfefa49d-accf-4f0c-9889-47c82944b738",
+      "effectId": "Eff_Parmon_10052_Fireball",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13,
+          15,
+          6,
+          14,
+          19
+        ]
+      },
+      "NodeID": 8
+    },
+    "23": {
+      "value": {
+        "calcId": 2133301,
+        "calcType": 4,
+        "paramName": "param1",
+        "NodeID": 22,
+        "UID": "581ec5fe-d3dc-4f9a-b8fa-778f2dc68729",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "57e111f5-f4bf-47c7-8786-aff546a3ecae",
+      "element": 0,
+      "target": "TARGET",
+      "NodeID": 23
+    },
+    "13": {
+      "scale": 0.5,
+      "name": "playEffectOnPosRot",
+      "UID": "feddf400-afc2-45c1-a709-f37be7d645a5",
+      "effectId": "Eff_Parmon_10333_Ex_04",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 13
+    },
+    "18": {
+      "UID": "bd2338ca-13af-4287-aef9-8ff14f609d38",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "14": {
+      "affectCameraAnim": true,
+      "cameraShakeId": 10406,
+      "NodeID": 14,
+      "UID": "aec621cb-a588-463f-806e-e6c7bc6fe989",
+      "target": "OWNER",
+      "name": "playCameraImpulseById",
+      "checkCasterIsPlayer": false
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "e73addd7-d595-4da7-954a-4290907f4864",
+      "effectId": "Eff_Parmon_10052_Fireball",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "20": {
+      "buffId": 9133303,
+      "name": "hasBuff",
+      "UID": "938f56e2-be32-4817-82ea-91958724e1dd",
+      "target": "TARGET",
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "f886febd-8c7b-4625-80f1-b16077e3136d",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2133301",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    18,
+    8
+  ],
+  "layer": "Base",
+  "length": 9999
+}

@@ -1,0 +1,185 @@
+{
+  "90829816": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -1595.21,
+      815.83,
+      -1582.66,
+      818.16,
+      -1576.81,
+      811.78,
+      -1549.26,
+      807.72,
+      -1548.05,
+      797.76,
+      -1552,
+      794.24,
+      -1557.05,
+      791.94,
+      -1569.78,
+      798.82,
+      -1577.76,
+      797.76,
+      -1585.62,
+      799.59,
+      -1593.15,
+      807.92
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "areaAABB": [
+      -1595.21,
+      791.94,
+      -1548.05,
+      818.16
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "INFO_DISABLE_2_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "sandboxId": 52160363,
+    "position": [
+      -1590.74,
+      72.38,
+      820.54
+    ],
+    "pointType": 1,
+    "name": "禁止异步留言",
+    "id": 90829816
+  },
+  "63578937": {
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 0,
+    "sandboxId": 52160363,
+    "id": 63578937,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "setBGM",
+            [
+              "bgm_scene_3000"
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            2
+          ]
+        ]
+      }
+    ],
+    "height": 30,
+    "radius": 40,
+    "position": [
+      -1598.21,
+      87.59,
+      850.78
+    ],
+    "name": "区域_63578937",
+    "pointType": 1
+  },
+  "72783256": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -1577,
+      826.25,
+      -1610.72,
+      825.13,
+      -1624.72,
+      838.99,
+      -1622.44,
+      851.72,
+      -1625.82,
+      865.68,
+      -1598.62,
+      869.5,
+      -1578.39,
+      868,
+      -1567.87,
+      851.92
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "areaAABB": [
+      -1625.82,
+      825.13,
+      -1567.87,
+      869.5
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "INFO_DISABLE_1_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "sandboxId": 52160363,
+    "position": [
+      -1589.61,
+      87.09,
+      828.99
+    ],
+    "pointType": 1,
+    "name": "区域_72783256",
+    "id": 72783256
+  }
+}

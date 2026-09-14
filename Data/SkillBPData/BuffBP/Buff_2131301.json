@@ -1,0 +1,574 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2131301",
+  "NodeID": 1,
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "62": {
+      "key": "10313Pos",
+      "name": "setCacheVal",
+      "UID": "80326e14-a04f-40ec-b8b9-30cf5da924f7",
+      "target": {
+        "key": "10313ID",
+        "name": "getCacheVal",
+        "UID": "a5135013-e94d-4d62-8380-4d06ae1253dd",
+        "target": "OWNER",
+        "NodeID": 61
+      },
+      "val": {
+        "UID": "d9f546fc-f41c-4670-bb86-921a3ace3404",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 63
+      },
+      "NodeID": 62
+    },
+    "38": {
+      "target": "OWNER",
+      "offsetXYZ": {
+        "NodeID": 37,
+        "name": "constVector3",
+        "UID": "25ad4555-0c79-465b-af4b-f981ceb10360",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "0fe2ce51-bf97-46ba-88be-e7485faddd95",
+          "NodeID": 36,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "77b35371-b2e0-48d3-8e76-588d5fee1bda",
+            "NodeID": 35,
+            "lValue": {
+              "UID": "4585be8e-3024-490f-acda-370ac8c27d01",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 34
+            }
+          }
+        },
+        "z": 0
+      },
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "2ed8f94b-d16c-40af-939b-a5322a9aa323",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_Start",
+      "scale": 2,
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "c8de3557-8ca5-42bc-b4bf-f76f6601e221",
+      "name": "checkAbilityElementType",
+      "elementType": 3,
+      "NodeID": 39
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "ae3ba69a-a129-428d-8253-222cf7c1c2fd",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_01",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "64": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2131309,
+      "NodeID": 64,
+      "UID": "caa9e42e-7655-4f41-825a-f4ca598866c9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "43": {
+      "name": "stopEffectStr",
+      "UID": "841f559d-eccc-4b2b-af77-08f997e7d42a",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_03",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "44": {
+      "name": "stopEffectStr",
+      "UID": "700cbbbb-4b53-4721-9257-588c9f9bda31",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_00",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "66": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "585033ad-6360-4549-b645-ae6a1b78d756",
+      "NodeID": 66,
+      "lValue": {
+        "templateId": 2131309,
+        "name": "getBuffLayer",
+        "UID": "624c029d-2f81-4925-90cc-1318b19d3c1a",
+        "target": "OWNER",
+        "NodeID": 65
+      }
+    },
+    "67": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2131309,
+      "NodeID": 67,
+      "UID": "4f80d914-c36c-4f56-b98c-693a14b69a2c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "2": {
+      "UID": "5ec82464-05aa-45a8-ad5c-3353100b1e59",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 2
+    },
+    "70": {
+      "buffId": 2131309,
+      "name": "removeBuff",
+      "UID": "ac703a25-4e3f-41b2-a4b3-0c299acb7042",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "71": {
+      "key": "default2",
+      "duration": 0.1,
+      "actionIds": [
+        70
+      ],
+      "NodeID": 71,
+      "UID": "8687f27f-0d8a-4377-a0ed-dab63526c492",
+      "name": "addEntityTimer"
+    },
+    "73": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2131309,
+      "NodeID": 73,
+      "UID": "7a4a0270-8609-4e06-a673-b3dbfb1918a1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "offsetXYZ": {
+        "NodeID": 5,
+        "name": "constVector3",
+        "UID": "d3de2b95-25e9-495a-83f0-aa1bd949e6f1",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "46e70d3d-d8ae-48ab-9d16-f1896f8165ce",
+          "NodeID": 4,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "40dfb892-3de9-4f5f-9b4d-889a0fa3d837",
+            "NodeID": 3,
+            "lValue": {
+              "UID": "5ec82464-05aa-45a8-ad5c-3353100b1e59",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 2
+            }
+          }
+        },
+        "z": 0
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "907466da-a46a-4d42-a69a-9bf32d0e2aaf",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_01",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "24": {
+      "UID": "beb35b4b-98fe-4283-8020-d1457e99afc9",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 24
+    },
+    "50": {
+      "name": "stopEffectStr",
+      "UID": "3eedd6ab-6673-440c-b206-c3817c95bf8a",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_00",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "8": {
+      "actionIds": [
+        28,
+        6,
+        64,
+        50
+      ],
+      "conditionActionIds": [
+        69
+      ],
+      "UID": "a49767c1-bded-4f59-ba75-159843840932",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 8
+    },
+    "69": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "61eae1a9-a224-4f05-971b-9fe9be68b4b2",
+      "NodeID": 69,
+      "lValue": {
+        "templateId": 2131309,
+        "name": "getBuffLayer",
+        "UID": "95f7f742-f0dc-417a-b703-c896ab0b4fe6",
+        "target": "OWNER",
+        "NodeID": 68
+      }
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "6a976a10-345f-455b-8733-17a7c5d11a4a",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "17": {
+      "offsetXYZ": {
+        "NodeID": 16,
+        "name": "constVector3",
+        "UID": "fdf50f27-d36d-4e47-b884-b677eb9d482b",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "a897c3cc-7f32-4c35-ab66-fb46027c04ad",
+          "NodeID": 15,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "ccb6457f-cb29-4a8a-a022-ca6db3a180ab",
+            "NodeID": 14,
+            "lValue": {
+              "UID": "7a8e782a-e88e-4704-be94-9f8d4bb6b1f2",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 13
+            }
+          }
+        },
+        "z": 0
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "eb922a0b-04b4-48bd-aa0e-40bdc6425385",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_02",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "34": {
+      "UID": "4585be8e-3024-490f-acda-370ac8c27d01",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 34
+    },
+    "11": {
+      "UID": "7451e13e-db4d-48cc-9b62-81fb273031c2",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "01f8a42f-8132-4d80-afa6-71702a00d9d7",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_01",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "c755dfc2-ef38-4ebb-9566-a7af667d5ae7",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_02",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "33": {
+      "target": "OWNER",
+      "offsetXYZ": {
+        "NodeID": 32,
+        "name": "constVector3",
+        "UID": "8b03a61e-1f83-46a6-90d9-9f10f590b52a",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "739087e6-b938-4390-b4d0-e3e9b703bbcb",
+          "NodeID": 31,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "93c219fa-e6cc-47b3-adb7-9f7635d0bd53",
+            "NodeID": 30,
+            "lValue": {
+              "UID": "3098a0ba-f0a0-4907-a8ca-e41502fa0fa0",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 29
+            }
+          }
+        },
+        "z": 0
+      },
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "3d80aa86-3b84-4774-aae5-bd5777d7ca02",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_Start",
+      "scale": 1.5,
+      "NodeID": 33
+    },
+    "13": {
+      "UID": "7a8e782a-e88e-4704-be94-9f8d4bb6b1f2",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 13
+    },
+    "55": {
+      "offsetXYZ": {
+        "NodeID": 54,
+        "name": "constVector3",
+        "UID": "0645217d-90b1-472c-ab1a-91207328cbde",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "78f4a786-b83f-49ad-87ab-dc9cdd50f0be",
+          "NodeID": 53,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "e87ad3ba-ca3f-41d4-8bae-bb7ed57fa09f",
+            "NodeID": 52,
+            "lValue": {
+              "UID": "6b5e7b2c-8923-4e86-8457-0199ae2eb7a2",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 51
+            }
+          }
+        },
+        "z": 0
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "686fadb6-a787-4777-b9ba-6462bd3db205",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_00",
+      "speed": 1,
+      "NodeID": 55
+    },
+    "74": {
+      "buffId": 2131309,
+      "name": "removeBuff",
+      "UID": "65e3c853-83fa-4800-a125-f82e8a4e7fc1",
+      "target": "OWNER",
+      "NodeID": 74
+    },
+    "10": {
+      "key": "CD1",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "92774cb7-8c91-4307-8cab-9fcddfa0ab16",
+      "cd": 0.16,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "29": {
+      "UID": "3098a0ba-f0a0-4907-a8ca-e41502fa0fa0",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 29
+    },
+    "57": {
+      "actionIds": [
+        60
+      ],
+      "name": "doPetsActions",
+      "UID": "d546b1b7-173e-49bf-aa1b-e834f9f46ad8",
+      "target": {
+        "key": "10313ID",
+        "name": "getCacheVal",
+        "UID": "affcb4e1-909d-47a2-858f-6a2074df365e",
+        "target": "OWNER",
+        "NodeID": 56
+      },
+      "NodeID": 57
+    },
+    "76": {
+      "rValue": {
+        "UID": "a607e6d4-cf5f-4349-ada2-95feecd3ec3a",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 77
+      },
+      "name": "equal",
+      "UID": "2f5199b9-ad19-4057-aab8-32ad6b6939c8",
+      "NodeID": 76,
+      "lValue": {
+        "key": "10313ID",
+        "name": "getCacheVal",
+        "UID": "f221e358-812e-49fb-aa88-0bd80c2b9514",
+        "target": "OWNER",
+        "NodeID": 75
+      }
+    },
+    "45": {
+      "UID": "e43d8ed0-7297-415b-bcd4-54abc83de501",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 45
+    },
+    "28": {
+      "offsetXYZ": {
+        "NodeID": 27,
+        "name": "constVector3",
+        "UID": "7e3612f2-568a-4cf9-94a0-3c29ead91f95",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "1c46e894-fd74-4cbc-b237-04ba8651febc",
+          "NodeID": 26,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "bd4c05f1-dedc-47e1-b5e8-a7224b7a59ac",
+            "NodeID": 25,
+            "lValue": {
+              "UID": "beb35b4b-98fe-4283-8020-d1457e99afc9",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 24
+            }
+          }
+        },
+        "z": 0
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "24e915bc-374e-4a41-8657-b032f7b8ccab",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_Start",
+      "speed": 2,
+      "NodeID": 28
+    },
+    "59": {
+      "target": "TARGET",
+      "duration": 0.2,
+      "buffId": 2131308,
+      "NodeID": 59,
+      "UID": "73c6eb46-88e7-4942-b9e0-64d9383bda1f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "49": {
+      "offsetXYZ": {
+        "NodeID": 48,
+        "name": "constVector3",
+        "UID": "b48742ab-8cd0-4391-a08e-8ded9607ecec",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "c86b4191-e6d3-4346-9bff-f55cc1a48300",
+          "NodeID": 47,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "b2cdde9c-02c3-4831-be04-1e335b9dc312",
+            "NodeID": 46,
+            "lValue": {
+              "UID": "e43d8ed0-7297-415b-bcd4-54abc83de501",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 45
+            }
+          }
+        },
+        "z": 0
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ac559fd3-6e8a-42e9-bba2-4f63e6e998ba",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_00",
+      "speed": 1,
+      "NodeID": 49
+    },
+    "60": {
+      "actionIds": [
+        59
+      ],
+      "conditionActionIds": [
+        76
+      ],
+      "UID": "3efb4215-fdac-4136-a8ca-9e551e16cbc5",
+      "name": "doActionsByConditions",
+      "NodeID": 60
+    },
+    "19": {
+      "actionIds": [
+        33,
+        17,
+        20,
+        67
+      ],
+      "conditionActionIds": [
+        66
+      ],
+      "UID": "92041552-a002-48f4-a3cf-7ba34126b04d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        38,
+        62,
+        57,
+        21,
+        73,
+        71,
+        55
+      ],
+      "NodeID": 19
+    },
+    "51": {
+      "UID": "6b5e7b2c-8923-4e86-8457-0199ae2eb7a2",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 51
+    },
+    "42": {
+      "name": "stopEffectStr",
+      "UID": "a45da6e3-0bbf-480d-8297-59c06757f52b",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_02",
+      "target": "OWNER",
+      "NodeID": 42
+    }
+  },
+  "onBuffDestroyIds": [
+    74,
+    40,
+    42,
+    43,
+    44
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    49
+  ]
+}

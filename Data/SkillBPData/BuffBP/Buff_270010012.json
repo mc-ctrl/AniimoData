@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010012",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2700002,
+      "name": "createEntity",
+      "UID": "5027854d-8a16-4fd7-bd47-4723f00a264d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 3,
+      "pos": "OWNER"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

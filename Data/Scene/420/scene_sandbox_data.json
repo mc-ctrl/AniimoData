@@ -1,0 +1,1917 @@
+{
+  "50869580": {
+    "owner": "xu1.li",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51804333,
+    "levelItems": {
+      "55010127": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB (2)",
+        "position": [
+          84,
+          78,
+          -298
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 55010127,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              12,
+              0
+            ],
+            "size": [
+              4,
+              32,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 140
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                26,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                20,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "path": "",
+        "isActive": true
+      },
+      "55010128": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB (3)",
+        "position": [
+          88,
+          78,
+          -298
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 55010128,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              12,
+              0
+            ],
+            "size": [
+              4,
+              32,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 140
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                26,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                20,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "path": "",
+        "isActive": true
+      },
+      "55527705": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB",
+        "position": [
+          110,
+          112,
+          -362
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 55527705,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              3,
+              0
+            ],
+            "size": [
+              4,
+              14,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 8,
+            "power": 100
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                6,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "isActive": true
+      },
+      "55527872": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB (5)",
+        "position": [
+          110,
+          112,
+          -366
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 55527872,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              3,
+              0
+            ],
+            "size": [
+              4,
+              14,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 8,
+            "power": 100
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                6,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "path": "",
+        "isActive": true
+      },
+      "55530065": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_ElectricAnd",
+        "position": [
+          86,
+          118,
+          -386
+        ],
+        "rotation": [
+          0,
+          270,
+          270
+        ],
+        "id": 55530065,
+        "configId": 171,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "55530872": {
+        "majorCompId": 72050842,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_TempleLight",
+        "position": [
+          80,
+          110,
+          -386
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 55530872,
+        "configId": 178,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "55531527": {
+        "majorCompId": 72050842,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_TempleLight (1)",
+        "position": [
+          92,
+          110,
+          -386
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 55531527,
+        "configId": 178,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "isActive": true
+      },
+      "55535025": {
+        "majorCompId": 72050842,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_TempleLight",
+        "position": [
+          60,
+          70,
+          -126
+        ],
+        "rotation": [
+          90,
+          270,
+          0
+        ],
+        "id": 55535025,
+        "configId": 178,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "55535056": {
+        "majorCompId": 72050842,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_TempleLight (2)",
+        "position": [
+          60,
+          70,
+          -138
+        ],
+        "rotation": [
+          90,
+          270,
+          0
+        ],
+        "id": 55535056,
+        "configId": 178,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "isActive": true
+      },
+      "55697384": {
+        "majorCompId": 42742113,
+        "scale": [
+          28,
+          8,
+          40
+        ],
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          86,
+          55,
+          -214
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 55697384,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "expressionKey": "55697384_42742113",
+            "blackScreenId": 2000,
+            "playerReviveType": 3,
+            "playerReviveRot": [
+              0,
+              180,
+              0
+            ],
+            "playerRevivePos": [
+              86,
+              78,
+              -171
+            ]
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "isActive": true
+      },
+      "55855230": {
+        "majorCompId": 55701939,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_FireMechanism (14)",
+        "position": [
+          79,
+          90.5,
+          -206
+        ],
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "id": 55855230,
+        "configId": 145,
+        "defaultValue": {
+          "state": 0,
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "55877386": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB",
+        "position": [
+          88,
+          124,
+          -387
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 55877386,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              8,
+              0
+            ],
+            "size": [
+              4,
+              24,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 140
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                19,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                16,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "55877481": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (6)",
+        "position": [
+          84,
+          124,
+          -387
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 55877481,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              8,
+              0
+            ],
+            "size": [
+              4,
+              24,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 140
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                19,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                16,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56386104": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_TempleMachineDoor_L",
+        "position": [
+          86,
+          106,
+          -387
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56386104,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56715258": {
+        "majorCompId": 42742113,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          88,
+          94,
+          -420
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56715258,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "expressionKey": "56715258_42742113",
+            "blackScreenId": 2000,
+            "playerReviveType": 1,
+            "playerReviveRot": [
+              0,
+              180,
+              0
+            ],
+            "playerRevivePos": [
+              86,
+              106.5,
+              -393
+            ]
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          60,
+          8,
+          68
+        ],
+        "isActive": true
+      },
+      "56720310": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          86,
+          82,
+          -166
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 56720310,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          12,
+          8,
+          12
+        ],
+        "isActive": true
+      },
+      "56720667": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          86,
+          109,
+          -304
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56720667,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          24,
+          24,
+          24
+        ],
+        "isActive": true
+      },
+      "56823217": {
+        "majorCompId": 51219203,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Temple_Cloud_04",
+        "position": [
+          6,
+          62,
+          -133
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56823217,
+        "configId": 276,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56824228": {
+        "majorCompId": 51219203,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Temple_Cloud_03",
+        "position": [
+          162,
+          107,
+          -270
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56824228,
+        "configId": 257,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56921633": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          86,
+          116,
+          -392
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56921633,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          16,
+          20,
+          8
+        ],
+        "isActive": true
+      },
+      "57003372": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_EndingMachine_SinglePlayer",
+        "position": [
+          86,
+          108,
+          -425.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 57003372,
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59221976": {
+        "majorCompId": 44987560,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Switch_SB_01",
+        "position": [
+          16,
+          68,
+          -137
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59221976,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 225
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "isActive": true
+      },
+      "59222713": {
+        "majorCompId": 44987560,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Switch_SB_03",
+        "position": [
+          70,
+          102.25,
+          -354
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 59222713,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 225
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "isActive": true
+      },
+      "59224754": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          70,
+          102,
+          -330
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 59224754,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_MovableWall_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_MovableWall_01.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59225517": {
+        "majorCompId": 44987560,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Switch_Once_SB_01",
+        "position": [
+          78,
+          102.5,
+          -340
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 59225517,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 226
+          },
+          "72138475": {
+            "size": [
+              0.92,
+              1,
+              1.65
+            ]
+          }
+        },
+        "configId": 318,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "isActive": true
+      },
+      "59236914": {
+        "majorCompId": 44987560,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Switch_Once_SB_02",
+        "position": [
+          94,
+          102.5,
+          -340
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 59236914,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 226
+          },
+          "72138475": {
+            "size": [
+              0.92,
+              1,
+              1.65
+            ]
+          }
+        },
+        "configId": 318,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "isActive": true
+      },
+      "59308299": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          102,
+          116,
+          -330
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59308299,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_MovableWall_02.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_MovableWall_02.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59308348": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Prefab_Container (1)",
+        "position": [
+          102,
+          112,
+          -330
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59308348,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_MovableWall_02.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_MovableWall_02.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61922317": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_01",
+        "position": [
+          48.15,
+          66,
+          -132.07
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61922317,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61922569": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_02",
+        "position": [
+          17.97,
+          66.99,
+          -132.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61922569,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61922746": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_03",
+        "position": [
+          86.18,
+          106,
+          -382.21
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61922746,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62175292": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB",
+        "position": [
+          64,
+          98,
+          -338
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 62175292,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              5,
+              0
+            ],
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 8,
+            "power": 100
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                13,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                11,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62175695": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB_01",
+        "position": [
+          50,
+          124,
+          -354
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62175695,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          16,
+          20,
+          20
+        ],
+        "isActive": true
+      },
+      "62177189": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_01",
+        "position": [
+          16.87,
+          78.05,
+          -132.58
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62177189,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62177859": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_02",
+        "position": [
+          85.89,
+          106,
+          -378.63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62177859,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62345873": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -42,
+          61,
+          -132
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62345873,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4,
+          8,
+          12
+        ],
+        "isActive": true
+      },
+      "62701400": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_MachineGate_8m",
+        "position": [
+          61,
+          66,
+          -132
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 62701400,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62703713": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          86,
+          122,
+          -324
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 62703713,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_MovableWall_05.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_MovableWall_05.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "53972739": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_Temple_StoneStatueBase",
+        "position": [
+          -50.5,
+          57.75,
+          -132
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 53972739,
+        "componentsInfo": {
+          "53631173": {
+            "tempPetTemplateId": 102620002,
+            "noticeKey": "STATUEGUIDE_TEMPLE_04",
+            "guideId": 102400,
+            "realCharacters": "PUZZLE"
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "tempPetTemplateId": 102620002,
+          "noticeKey": "STATUEGUIDE_TEMPLE_04",
+          "guideId": 102400,
+          "realCharacters": "PUZZLE"
+        },
+        "isActive": true
+      },
+      "54917600": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          92,
+          82,
+          -194
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 54917600,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_MovableWall_03.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_MovableWall_03.prefab"
+        },
+        "isActive": true
+      },
+      "91318178": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          85.53,
+          106.19,
+          -328.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91318178,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          10.71,
+          21.92,
+          8.71
+        ],
+        "isActive": true
+      },
+      "54918962": {
+        "majorCompId": 55701939,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_FireMechanism",
+        "position": [
+          79,
+          90.5,
+          -206
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 54918962,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "isActive": true
+      },
+      "54919901": {
+        "majorCompId": 55701939,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_FireMechanism (12)",
+        "position": [
+          79,
+          90.5,
+          -216
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 54919901,
+        "configId": 145,
+        "defaultValue": {
+          "state": 0,
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "isActive": true
+      },
+      "54919902": {
+        "majorCompId": 55701939,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_FireMechanism (13)",
+        "position": [
+          79,
+          90.5,
+          -216
+        ],
+        "rotation": [
+          0,
+          180,
+          180
+        ],
+        "id": 54919902,
+        "configId": 145,
+        "defaultValue": {
+          "state": 0,
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "isActive": true
+      },
+      "55002401": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB",
+        "position": [
+          90,
+          90,
+          -278
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 55002401,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              4,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 8,
+            "power": 100
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                10,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                4,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "isActive": true
+      },
+      "71250206": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -77.83,
+          62.8,
+          -131.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71250206,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4.19,
+          4.36,
+          13.02
+        ],
+        "isActive": true
+      },
+      "55002735": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB (1)",
+        "position": [
+          90,
+          90,
+          -282
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 55002735,
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              4,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 8,
+            "power": 100
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                10,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                4,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "path": "",
+        "isActive": true
+      },
+      "55007439": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          100,
+          80,
+          -268
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 55007439,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_MovableWall_04.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_MovableWall_04.prefab"
+        },
+        "isActive": true
+      },
+      "62704216": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_03",
+        "position": [
+          85.62,
+          100,
+          -325
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62704216,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 1002,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "全局_副本关卡_云朵羊_Temple_04",
+    "spawners": [
+      55421753,
+      55423351,
+      55507947,
+      55508035,
+      55510326,
+      55519930,
+      55519972,
+      55521266,
+      55532367,
+      55852451,
+      55852496,
+      57000458,
+      57000562,
+      57000590,
+      58042359,
+      59918792,
+      62702482
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/420/Sandbox_50869580_GraphRef.asset",
+    "sightLevel": 512,
+    "enableFinishMark": false,
+    "forceSync": true,
+    "id": 50869580,
+    "chunk": 1019875
+  }
+}

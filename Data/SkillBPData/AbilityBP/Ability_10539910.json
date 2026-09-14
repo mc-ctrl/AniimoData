@@ -1,0 +1,43 @@
+{
+  "BPName": "ability_10539910",
+  "NodeID": 1,
+  "UID": "71eeed9b-f8e3-4347-acf3-a6c901c58bca",
+  "desc": "起跳后连续七次空翔踢,最后砸拳收尾",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10539910001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2fc7fe5-f2ed-49ff-84a8-30877442f08d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex_001"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Fire_Blunt_Big",
+    "Eff_Parmon_10053_SkIll_EX_Fireball",
+    "Eff_Parmon_10053_SkIll_EX_FireAbsorb",
+    "Eff_Parmon_10053_SkIll_EX_JumpPrepare",
+    "Eff_Parmon_10053_SkIll_EX_JumpSmoke",
+    "Eff_Parmon_10053_Skill_EX_FireExplode",
+    "Eff_Parmon_10053_Skill_FlyStrike_Fire_04",
+    "Eff_Parmon_10053_IndicatorCircle_Ex001_1"
+  ],
+  "searchRelation": 2,
+  "name": "无限炼狱",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火狼头目大招",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1.5,
+  "abilityParamId": 10500121
+}

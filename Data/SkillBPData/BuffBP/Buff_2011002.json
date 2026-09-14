@@ -1,0 +1,100 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "22": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_hp_by_cur_hp_rate": 0.2
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "24f6b941-5082-4afe-8f6f-3bb59b61ce14",
+      "target": "CURPET",
+      "calcInfoByLuaConfig": {
+        "id": 2011002,
+        "instant_dmg_hp_by_cur_hp_rate": "param0",
+        "type": 1
+      },
+      "NodeID": 22
+    },
+    "17": {
+      "unsummonValid": false,
+      "actionIds": [
+        16
+      ],
+      "name": "registerGroupEvent",
+      "UID": "503e4b71-5c12-4214-be65-643df0eb9610",
+      "NodeID": 17
+    },
+    "24": {
+      "calcId": 2011002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 24,
+      "UID": "bdbfd4bb-387d-485e-939c-d410b4f16771",
+      "name": "getParamByLuaConfig"
+    },
+    "14": {
+      "actionIds": [
+        12,
+        22
+      ],
+      "NodeID": 14,
+      "UID": "ed9ab842-8c29-4969-a563-6df2b556f66e",
+      "cd": {
+        "calcId": 2011002,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 24,
+        "UID": "bdbfd4bb-387d-485e-939c-d410b4f16771",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "12": {
+      "duration": 0,
+      "buffId": 20110020,
+      "NodeID": 12,
+      "UID": "cea7373a-fdb2-43a2-81ad-1a67361200a3",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "34252edc-89a3-4fde-ab0e-68a135a106d1",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "20": {
+      "UID": "3920fe9a-9f30-4e4f-a72a-a32e1dcb681c",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 20
+    },
+    "16": {
+      "UID": "0a655262-c223-4984-bc14-597b002cb67b",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    }
+  },
+  "BPName": "buff_2011002",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    17
+  ]
+}

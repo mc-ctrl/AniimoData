@@ -1,0 +1,114 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "d14429a1-f26a-48a8-acd6-5a0d11033340",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6015d66-12b3-4012-a9f9-4fb079ff6849",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10603_Skill_Inhale_Splash",
+      "NodeID": 28
+    },
+    "14": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 12,
+      "NodeID": 14,
+      "UID": "8e81c3dd-8e2d-4272-b6f6-cb907f24ffcb",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        12
+      ]
+    },
+    "12": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2160303,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "7925acd5-5a04-4dee-8e91-4b8679bcbea1",
+      "target": "TARGET",
+      "NodeID": 12,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "rotAngle": 100,
+            "posMode": "HitPos",
+            "addRandomAngle": true
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 2001
+      }
+    },
+    "16": {
+      "UID": "20faf9cd-78d7-4ec8-9dd0-c816b65e3959",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          28
+        ]
+      },
+      "NodeID": 16
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "829e0947-8bee-458d-9dc5-6d6f869df0d6",
+      "effectId": "Eff_Parmon_10603_Skill_Inhale_Splash",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "BPName": "buff_2160303",
+  "NodeID": 18,
+  "UID": "50f9a120-5308-4e6e-82c7-81ecf23ed91c",
+  "eventIds": [
+    22,
+    16
+  ],
+  "layer": "Base",
+  "length": 3
+}

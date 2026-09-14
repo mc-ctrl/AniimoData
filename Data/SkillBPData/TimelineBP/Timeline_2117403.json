@@ -1,0 +1,116 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "NodeID": 3,
+      "UID": "4611452d-7bac-45c2-9183-c77becb0b116",
+      "effectId": "Eff_Parmon_10174_Skill_Wall_End",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "14": {
+      "rValue": 1,
+      "name": "greater",
+      "UID": "fe022e98-2662-4732-b6ff-9c9612549d8f",
+      "NodeID": 14,
+      "lValue": {
+        "UID": "ca580e4f-9fec-4fdd-b7c0-a6ac7b2d8597",
+        "name": "getVoxelWaterDepth",
+        "NodeID": 13
+      }
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "302ebec4-9434-49c3-9562-c3368a35ea4d",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_Dramotter_skill_wall_summon",
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "a8dcc95a-cc07-476b-80c8-7fc1d3b3d2d3",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "4cb37440-8736-4a38-bfbb-966e93080736",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "17": {
+      "UID": "02ca0227-7405-4211-86a1-209b02222f64",
+      "name": "destroyEntity",
+      "NodeID": 17
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "8e8f0de1-d461-481a-813b-9a9e6537832c",
+      "effectId": "Eff_Parmon_10174_Skill_Wall_2",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "f29be3e3-f333-4a9a-8691-20d3f44cbb64",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        3,
+        9,
+        12
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "82a7ee15-836e-4364-84ed-99174e973bac",
+      "soundId": "parmon_Dramotter_skill_wall_destroy",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2117403",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    7,
+    11,
+    16
+  ],
+  "layer": "Base",
+  "length": 9999
+}

@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21032031",
+  "calcInfoByLuaConfig": {
+    "id": 21032031,
+    "type": 1,
+    "taken_normal_attack_dmg_inc_rate_v": "param0"
+  },
+  "UID": "321e5799-376b-476f-8b77-496e3dd488b3",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "57ed41c8-9c17-413d-bfa0-4662ce809a9f",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_L",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "3ea4fcee-c35e-4fc7-8110-05929323b306",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_R",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "duration": 10,
+      "disableWhenFinished": true,
+      "NodeID": 6,
+      "UID": "8115d09c-f408-4dcf-9256-ab38edfd6ac3",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10032_BladeBuff_Super_R",
+      "name": "playPreset"
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "6e38a9f0-047f-44fd-a6c6-67d507afae07",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_L",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8661b0d6-4f00-44e2-a0a2-0701e9c2f88e",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_R",
+      "speed": 1,
+      "NodeID": 5
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    11,
+    13
+  ],
+  "onBuffStartIds": [
+    3,
+    5,
+    6
+  ]
+}

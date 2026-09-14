@@ -1,0 +1,160 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "rValue": {
+        "UID": "23ab8dba-6a15-4cff-814b-952989fac298",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 2
+      },
+      "name": "greater",
+      "UID": "e9176b08-33f2-44fa-92fa-d89498cdf8a6",
+      "NodeID": 3,
+      "lValue": 0.5
+    },
+    "4": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "54ec3f44-9c3e-45e3-9d33-95f026d01004",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "key": "count",
+      "name": "setCacheVal",
+      "UID": "3d2a461b-b118-4e58-8699-218e0cef479e",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "67008760-dacc-4c05-ae30-d11409369562",
+        "NodeID": 13,
+        "lValue": {
+          "key": "count",
+          "name": "getCacheVal",
+          "UID": "26471b86-0962-4d30-b79b-c1b1a37dba56",
+          "target": "OWNER",
+          "NodeID": 12
+        }
+      },
+      "NodeID": 14
+    },
+    "7": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "049aea4d-9843-485b-9db9-2e88cadf68e8",
+      "NodeID": 7,
+      "lValue": {
+        "key": "count",
+        "name": "getCacheVal",
+        "UID": "2f7eaac2-5819-47f6-92ef-3334f88bd03f",
+        "target": "OWNER",
+        "NodeID": 6
+      }
+    },
+    "16": {
+      "UID": "a28277d1-378d-49de-9d7a-25c2db660f86",
+      "actorId": {
+        "UID": "772d41f3-ae4a-4ceb-a97f-a645ba6739e8",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 15
+      },
+      "name": "destroyEntity",
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        14,
+        9,
+        11,
+        17
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "04e968e0-37dd-45e0-909c-f6408bf0ceaa",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "17": {
+      "key": "default2",
+      "duration": 0.5,
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17,
+      "UID": "063a4833-0e78-4dd8-986c-e858f1696e24",
+      "name": "addEntityTimer"
+    },
+    "9": {
+      "offsetXYZ": [
+        5,
+        0,
+        5
+      ],
+      "templateId": 70030024,
+      "name": "createEntity",
+      "UID": "d37847c8-69f9-4fa3-8184-6a9d973a76cb",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "pos": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "setLevel": true,
+      "NodeID": 9
+    },
+    "11": {
+      "offsetXYZ": [
+        -5,
+        0,
+        5
+      ],
+      "templateId": 70030024,
+      "name": "createEntity",
+      "UID": "76fe11b1-9b53-4dc0-8a0b-70bdff2c7d6d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "pos": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "setLevel": true,
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "attributeName": "hp_cur",
+      "UID": "d3459c4d-9e59-4c51-bf9d-77c9d3a24a6f",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 5
+    }
+  },
+  "BPName": "buff_1011000022",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

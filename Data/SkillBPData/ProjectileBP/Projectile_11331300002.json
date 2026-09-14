@@ -1,0 +1,113 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 91,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Monster_10133_Mon_Skill_BladeRealm_FrostBlade_02",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "waterDestroy": false,
+  "relation": 2,
+  "moveSpeed": 50,
+  "onProjectileFinishIds": [
+    75
+  ],
+  "onProjectileHitIds": [
+    91,
+    120
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepBoxSize": [
+    4,
+    1,
+    2
+  ],
+  "sweepShape": 1,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "120": {
+      "value": {
+        "calcId": 11331300,
+        "calcType": 2,
+        "paramName": "param2",
+        "NodeID": 119,
+        "UID": "e84ff0bc-6425-449f-9ffe-8570cf775b80",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "bac8f911-fe2b-4a3f-9ae5-ee17f367d9de",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 120
+    },
+    "115": {
+      "calcId": 11331300,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 115,
+      "UID": "b72e49d3-e38e-42fa-a409-048976ed2088",
+      "name": "getParamByLuaConfig"
+    },
+    "75": {
+      "name": "stopSoundStr",
+      "UID": "9f1496e9-6056-4422-a471-84f2c1e1f7e2",
+      "soundId": "SFX_Combat_10032_Skill_Sickle_Loop",
+      "target": "OWNER",
+      "NodeID": 75
+    },
+    "119": {
+      "calcId": 11331300,
+      "calcType": 2,
+      "paramName": "param2",
+      "NodeID": 119,
+      "UID": "e84ff0bc-6425-449f-9ffe-8570cf775b80",
+      "name": "getParamByLuaConfig"
+    },
+    "91": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "calcId": 11331300,
+          "calcType": 2,
+          "paramName": "param1",
+          "NodeID": 115,
+          "UID": "b72e49d3-e38e-42fa-a409-048976ed2088",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash_Big",
+            "rotAngle": 0,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000
+      },
+      "UID": "ff54bac0-4eb3-4eed-beca-dc31d2ecb4ca",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 91
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_11331300",
+  "groundSweepRadius": 1,
+  "impulseId": 2000,
+  "acceleration": 0
+}

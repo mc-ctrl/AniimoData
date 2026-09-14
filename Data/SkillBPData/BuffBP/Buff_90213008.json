@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_90213008",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1e15875b-991c-4208-aa6f-48aa237bd191",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Waterwave",
+      "speed": 1,
+      "NodeID": 3
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

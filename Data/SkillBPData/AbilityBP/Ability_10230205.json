@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10230205",
+  "NodeID": 1,
+  "UID": "4243304f-53b7-40aa-be1f-18bb85697fb0",
+  "abilityParamId": 10700250,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10230205001,
+      "name": "setCombatActionTimeline",
+      "UID": "2ad632aa-df81-44fc-ac50-c29f48527514",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Petrifaction_Enter",
+    "Skill_Petrifaction_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10023_Skill_Warning_Petrifaction"
+  ],
+  "searchRelation": 2,
+  "name": "普通护盾反击开关1",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    10230201,
+    10230202
+  ],
+  "searchTargetRangeDown": 0.5
+}

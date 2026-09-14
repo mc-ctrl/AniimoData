@@ -1,0 +1,31 @@
+{
+  "53637653": {
+    "areaType": 102,
+    "chunk": 999409,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 503,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "板块1草原_宝箱解谜_上升蒲公英教学",
+    "spawners": [
+      53637655,
+      53637657
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 53637653,
+    "owner": "贺桥",
+    "position": [
+      -1275.44,
+      75,
+      896.85
+    ]
+  }
+}

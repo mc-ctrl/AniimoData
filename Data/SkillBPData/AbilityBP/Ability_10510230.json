@@ -1,0 +1,46 @@
+{
+  "BPName": "ability_10510230",
+  "NodeID": 1,
+  "UID": "13281e51-2021-4b7b-8537-03318759e892",
+  "abilityParamId": 10800280,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10510230001,
+      "name": "setCombatActionTimeline",
+      "UID": "4a46812d-d555-4d75-b136-cd163ffdfc7f",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 4,
+  "preloadAnims": [
+    "Skill_Air_Strike"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Skill_Common_DodgePerfect",
+    "Eff_Parmon_10053_Skill_FlyStrike_Rock_02",
+    "Eff_Parmon_10053_Skill_FlyStrike_Fire_04_Heavy",
+    "Eff_Hit_Electric_Blunt_Y",
+    "Eff_Parmon_10053_Skill_FlyStrike_Rock_03",
+    "Eff_Parmon_10053_Skill_FlyStrike_Rock_01",
+    "Eff_Parmon_10053_Skill_FlyStrike_Rock_04"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 5,
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 5,
+  "desc": ""
+}

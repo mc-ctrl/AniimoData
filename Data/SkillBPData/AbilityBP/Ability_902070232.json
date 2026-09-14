@@ -1,0 +1,94 @@
+{
+  "BPName": "ability_902070232",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10600192,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902070232001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "275": {
+      "name": "stopEffectStr",
+      "UID": "78b07ce6-2d9f-4eec-8dfb-24cb572ed9c4",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Smash_End",
+      "target": "OWNER",
+      "NodeID": 275
+    },
+    "274": {
+      "triggerName": "LeaveCombat",
+      "name": "setEffectAnimTrigger",
+      "UID": "5970cd75-91b8-48d9-b746-68039dea7ebd",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 274
+    },
+    "272": {
+      "vineTraceRadiusMin": 0,
+      "vineTraceRadiusMax": 0,
+      "NodeID": 272,
+      "name": "enableVineChainIK",
+      "UID": "c286fae1-d4de-46fe-b7b7-b8c63d47669d",
+      "targetOffsetY": 0,
+      "enable": false,
+      "trackVelocityConstraint": 0
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "rigConfig": 1,
+  "preloadAnims": [
+    "Skill_Smash_Prepare",
+    "Skill_Smash_Loop",
+    "Skill_Smash_Attack",
+    "Skill_PullBack_Start",
+    "Skill_PullBack_Loop",
+    "Skill_PullBack_End",
+    "Skill_Smash_QuickAttack"
+  ],
+  "preloadEffs": [
+    "Eff_Common_Battle_Break",
+    "Eff_Parmon_10023_Boss_ScreenUV",
+    "Eff_Monster_90207_Hit",
+    "Eff_Monster_90207_Skill_Smash_Indicator_1",
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Monster_90207_Skill_WallPopout",
+    "Eff_Monster_90207_Skill_WallDisappear",
+    "Eff_Monster_90207_Skill_Smash_FistPopout",
+    "Eff_Hit_None_Blunt",
+    "Eff_Monster_90207_Mon_Skill_Smash_End",
+    "Eff_Monster_90207_Skill_Smash_Explosion",
+    "Eff_Monster_90207_Skill_Smash_GroundWave",
+    "Eff_Monster_90207_Skill_Smash_PullBack",
+    "Eff_Monster_90207_Skill_PullBack_Loop",
+    "Eff_Monster_90207_Skill_RoarAttack02",
+    "Eff_Monster_90207_Skill_RoarAttack",
+    "Eff_Monster_90207_MedSlowDown",
+    "Eff_SkillObj_90207_Fence",
+    "Eff_Monster_90207_Skill_Smash_FistPopout_01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 50,
+  "searchTargetRangeUp": 1.5,
+  "rigAnimatorEffectId": "Eff_SkillObj_90207_Vine",
+  "onAbilityEndIds": [
+    272,
+    274,
+    275
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "rigBoneData": [
+    "Bone Weapon A",
+    "Bone Hand Position"
+  ]
+}

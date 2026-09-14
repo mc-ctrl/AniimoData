@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_fly_v": 0.4,
+    "speed_ratio_fly_sprint_v": 0.4
+  },
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_1042",
+  "parentDynamicRPCStates": {},
+  "name": "大世界竞速增益-飞行"
+}

@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "def_fix": 10,
+    "def_mag_fix": 10
+  },
+  "BPName": "buff_2102711",
+  "NodeID": 1,
+  "UID": "01fa85de-98ad-4b5e-bcec-f1bcac114545",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {}
+}

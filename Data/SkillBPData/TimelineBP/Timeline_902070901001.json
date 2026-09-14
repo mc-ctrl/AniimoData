@@ -1,0 +1,259 @@
+{
+  "nodeMap": {
+    "39": {
+      "target": "TARGET",
+      "duration": 0.3,
+      "speed": 22,
+      "NodeID": 39,
+      "UID": "e749f0cf-5c7a-4d09-8b7b-f6c0e58f6c76",
+      "displacementDir": "OUT",
+      "displacementTarget": "OWNER",
+      "name": "forceDisplacement"
+    },
+    "6": {
+      "UID": "4d930af7-c928-46d4-9262-cd0723ec8da3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          24
+        ]
+      },
+      "NodeID": 6
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.3,
+      "NodeID": 41,
+      "UID": "f7bf9e7a-56e5-42a3-83fd-723684f7f9f3"
+    },
+    "43": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b3335876-8593-4e68-b5a9-e930ec85ffb7",
+      "effectId": "Eff_Monster_90207_appear02",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.8,
+      "NodeID": 44,
+      "UID": "ba210262-a9a8-45f9-829a-4d5cbd36613f"
+    },
+    "11": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bb0f0953-d6d4-4422-b607-b48f6cddeeee",
+      "target": "OWNER",
+      "NodeID": 11,
+      "animId": "Appear"
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "17ce3089-8ba1-40b7-a56e-df06b697c61e",
+      "effectId": "Eff_Monster_90207_Skill_RoarAttack02",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          23,
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.5,
+      "NodeID": 22,
+      "UID": "cc1f1958-484d-4a7c-b072-b718717f8fe9"
+    },
+    "4": {
+      "UID": "2388113b-f01b-44b6-851f-af91ecd98a4f",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "duration": 9,
+      "buffId": 10012,
+      "NodeID": 24,
+      "UID": "7febc046-8021-4d7d-ade7-cb6fab2a049c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cc6935ae-e718-4bab-b3dc-d6e7b8816f57",
+      "effectId": "Eff_Monster_Eff_90207_appear01",
+      "speed": 1,
+      "NodeID": 40
+    },
+    "25": {
+      "UID": "b2cf21a0-90bd-4930-af9a-98d578318e86",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "lightGrassOn",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "67a7da30-393e-4870-a619-7b3146fc936f",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 16
+    },
+    "13": {
+      "UID": "4dc3e8c6-5722-4c28-8635-f99ec5245af4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          26
+        ]
+      },
+      "NodeID": 13
+    },
+    "28": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 10000
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "disableShowJumpWord": true,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 5002,
+        "hitCameraShakeId": 20100
+      },
+      "UID": "5eeea679-c1d3-4239-9c9c-72686059ff24",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 28
+    },
+    "18": {
+      "UID": "03e16777-bad0-4689-a48f-fbdbc9d74245",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16,
+          19
+        ]
+      },
+      "NodeID": 18
+    },
+    "30": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 28,
+      "NodeID": 30,
+      "UID": "792ec299-1684-4617-92c1-91fdf692c5df",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            15,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        28,
+        39
+      ]
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.45,
+      "NodeID": 32,
+      "UID": "fb119a43-fe9d-4347-bc52-516cbc075a78"
+    },
+    "19": {
+      "UID": "bbd00d0d-4f06-43ba-b865-67f93158d741",
+      "target": "OWNER",
+      "name": "stopSkillCameraAnim",
+      "NodeID": 19
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "276cc5fd-37b6-4901-8a89-4f43ac2b7d69",
+      "effectId": "Eff_Monster_90207_Skill_RoarAttack",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "20df948f-86cc-4d6a-af97-5533ea144511",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Appear",
+      "NodeID": 26
+    }
+  },
+  "BPName": "ability_902070901",
+  "NodeID": 8,
+  "UID": "d07aaba8-2c00-49b6-8298-43e9ab24b9fd",
+  "eventIds": [
+    6,
+    18,
+    44,
+    41,
+    13,
+    22,
+    32
+  ],
+  "layer": "Base",
+  "length": 9.6
+}

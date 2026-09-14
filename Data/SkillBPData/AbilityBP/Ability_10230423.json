@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_10230423",
+  "NodeID": 1,
+  "UID": "72d6686b-70e2-41cb-8eed-c339738169e6",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10230423001,
+      "name": "setCombatActionTimeline",
+      "UID": "b3fc9ec7-a4dc-4ecd-9f8f-08067a3844b7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Breath"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_10023_Mon_Attack_Fly_Breath_Fire",
+    "Eff_Skill_Common_Warning",
+    "Eff_Range_Indicator_Sector_120_4"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "selectPos": 1,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1,
+  "abilityParamId": 10500270
+}

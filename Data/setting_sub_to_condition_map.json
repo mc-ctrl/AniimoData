@@ -1,0 +1,42 @@
+{
+  "giState": {
+    "setVideoQuality": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "petCountLimit": {
+    "setVideoQuality": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "playerCountLimit": {
+    "setVideoQuality": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "puppetCountLimit": {
+    "setVideoQuality": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "envObjCountLimit": {
+    "setVideoQuality": [
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+}

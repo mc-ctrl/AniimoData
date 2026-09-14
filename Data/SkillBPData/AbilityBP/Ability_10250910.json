@@ -1,0 +1,31 @@
+{
+  "BPName": "ability_10250910",
+  "NodeID": 1,
+  "UID": "e2af8c1e-e820-47bc-a780-7deff92ab513",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10250910001,
+      "name": "setCombatActionTimeline",
+      "UID": "db7a8134-9f8d-4cb5-bad5-14177f6d8dbe",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 5,
+  "isGhostEye": true,
+  "shortDesc": "",
+  "selectPos": 1,
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10700331,
+  "name": "时间漫游"
+}

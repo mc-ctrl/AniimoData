@@ -1,0 +1,145 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20600041",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "targetPos": {
+        "UID": "53ff6a6c-8643-4031-a916-f1de783a71d2",
+        "name": "getEventAttackTarget",
+        "NodeID": 4
+      },
+      "innerRadius": 4,
+      "name": "randomPoint",
+      "UID": "f6397217-6d26-4783-8194-107e3bed6b7f",
+      "radius": 5,
+      "NodeID": 5
+    },
+    "13": {
+      "calcId": 20600041,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "e283dbed-f8a7-4b25-a6de-5a359fbc70f6",
+      "name": "getParamByLuaConfig"
+    },
+    "14": {
+      "UID": "d3dd7896-62d5-466e-afa7-f13f6f5535d3",
+      "randomPercent": {
+        "calcId": 20600041,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 13,
+        "UID": "e283dbed-f8a7-4b25-a6de-5a359fbc70f6",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "isRandom",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "8e99257b-e5e9-4d6a-8202-1b7dbdc904a7",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "7": {
+      "endNum": {
+        "calcId": 20600041,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 16,
+        "UID": "173334dd-7327-47bb-b4ba-d96a823202cb",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        5,
+        12
+      ],
+      "NodeID": 7,
+      "UID": "8cc51533-d3db-43b0-8e94-167dae8be5f8",
+      "stepNum": {
+        "UID": "e73834ff-9c0a-4bf5-945e-167ed4e4a2ea",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 15
+      },
+      "startNum": {
+        "UID": "e73834ff-9c0a-4bf5-945e-167ed4e4a2ea",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 15
+      },
+      "name": "forEach"
+    },
+    "16": {
+      "calcId": 20600041,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 16,
+      "UID": "173334dd-7327-47bb-b4ba-d96a823202cb",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "UID": "f8a9095a-0a01-4ae3-9930-88dedeb8088d",
+      "name": "callClientAction",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "06d53ec4-2a36-4c2b-987f-49ab4d0cfb47",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "11": {
+      "unsummonValid": false,
+      "actionIds": [
+        10
+      ],
+      "name": "registerGroupEvent",
+      "UID": "e740c3ff-9ffa-44d2-8f33-d1308a5e5ea8",
+      "NodeID": 11
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 20600041101,
+      "name": "createProjectile",
+      "UID": "25e978c7-dac6-438f-9ddb-2f09c7bf1d43",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": {
+        "UID": "53ff6a6c-8643-4031-a916-f1de783a71d2",
+        "name": "getEventAttackTarget",
+        "NodeID": 4
+      },
+      "projectileType": "Parabola3d",
+      "NodeID": 12,
+      "targetPos": "RANDOM_POINT"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

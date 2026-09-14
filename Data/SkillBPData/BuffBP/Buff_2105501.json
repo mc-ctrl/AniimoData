@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "bp_reduce_rate_v": {
+      "calcId": 2105501,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "2917527a-b382-47c6-9c2f-5e45a0ffaa93",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_2105501",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "isUnSummonKeep": true,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isDeathKeep": true,
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": {}
+}

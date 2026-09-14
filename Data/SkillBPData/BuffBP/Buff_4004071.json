@@ -1,0 +1,138 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004071",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "onBuffRefreshIds": [
+    3,
+    9,
+    13
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "171fc3d7-7760-46f8-b2e3-72377982acfc",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "7459eee9-6481-4f88-a9a1-3778bd55187d",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "10": {
+      "calcId": 4004071,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "a4ad1821-8c2d-4d4a-a8c1-72157598a0c5",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2040701,
+      "NodeID": 7,
+      "UID": "66c08763-278e-4640-81a9-576b0c0eeace",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Creation",
+      "stick": 1,
+      "pos": {
+        "targetPos": "OWNER",
+        "innerRadius": 4,
+        "name": "randomPoint",
+        "UID": "dfe39df2-79c4-4a39-b942-b456d4e895b4",
+        "radius": 6,
+        "NodeID": 6
+      },
+      "name": "createEntity"
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "8c884955-2e63-4509-a851-e299228befdd",
+      "cd": {
+        "calcId": 4004071,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 10,
+        "UID": "a4ad1821-8c2d-4d4a-a8c1-72157598a0c5",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "53279fd4-fb29-42e6-8d34-2c4bcec6364b",
+      "target": "OWNER",
+      "buffId": 10079,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": true,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    },
+    "2": {
+      "buffId": 4004071,
+      "name": "removeBuff",
+      "UID": "54148af2-075b-49a3-990f-bf17273dbf50",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "5": {
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "1e48fa12-9119-41f0-8967-d3e48e8f66e8",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        2
+      ]
+    },
+    "12": {
+      "rValue": 9,
+      "name": "greater",
+      "UID": "3664ddf4-fdd2-4d2a-9137-c4f841972c67",
+      "NodeID": 12,
+      "lValue": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "f5b3a2ad-a2eb-4fd8-aceb-27e8392e5396",
+        "target": "OWNER",
+        "NodeID": 11
+      }
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    9,
+    13
+  ]
+}

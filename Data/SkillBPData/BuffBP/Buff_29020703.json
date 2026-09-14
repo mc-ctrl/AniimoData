@@ -1,0 +1,119 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_29020703",
+  "NodeID": 1,
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    9,
+    5,
+    13
+  ],
+  "name": "战斗非战斗模型显隐",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "9fa6961b-c797-4170-9463-0960c507f9b7",
+      "name": "isInAbility",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "3149cb0c-2756-41ec-a016-2b4f7362e84c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 4
+    },
+    "14": {
+      "buffId": 10064,
+      "name": "removeBuff",
+      "UID": "6cb241ae-5b11-40c2-bba3-c9f13253f993",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "15": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "abe05ff5-bb0b-4fa5-98b7-438310c648c0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "7": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 7,
+      "UID": "2471422b-7c83-4648-af8d-03422700ee07",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "enable": true,
+      "childTransformName": "E_P_SkillObj_90207_Vine"
+    },
+    "16": {
+      "buffId": 90207001,
+      "name": "removeBuff",
+      "UID": "24689ddf-625d-422d-8e0b-fab41193c36b",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "templateId": 1009207,
+      "name": "checkTargetTemplateId",
+      "UID": "e4272413-6373-47c1-b922-cd2bfe3173a4",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 9,
+      "UID": "d0b6fcc2-603d-4903-b984-76cde58865d3",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "enable": false,
+      "childTransformName": "E_P_SkillObj_90207_Vine"
+    },
+    "13": {
+      "delay": 0,
+      "interval": 0.05,
+      "UID": "9a14fea9-da05-48f2-b165-679bedd18e5a",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "5": {
+      "UID": "66fb358b-5e0f-4bbf-b57e-6d564eed1b91",
+      "name": "registerAbilityStateChangeEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "actionIds": [
+        9,
+        15
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "ca00b830-a5b3-4704-8381-11d9025f17b9",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffThinkIds": [
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    5,
+    13
+  ]
+}

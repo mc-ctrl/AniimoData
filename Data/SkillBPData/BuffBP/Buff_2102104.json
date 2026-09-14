@@ -1,0 +1,73 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102104",
+  "NodeID": 1,
+  "UID": "fde4c871-4af1-44ad-bb9b-f717ba91c776",
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "0e07098d-c29c-44c4-8622-b2e2585fc032",
+      "effectId": "",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "64252fdc-091c-4311-949e-4befe8d5f898",
+      "effectId": "",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "7": {
+      "name": "playSoundStr",
+      "UID": "0b9b1d41-68c4-4420-a8ab-32176434faa0",
+      "isAbilityEndRemove": false,
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9acfc547-bf1e-4dff-a3ac-712dcf009b05",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helmet_skill_shield_shield",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.2,
+      "name": "multiply",
+      "UID": "884b4a8f-9dff-415d-8fba-3d10036b935f",
+      "NodeID": 10,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "8a5cc01b-7c58-4926-9fc4-f61c02f4052c",
+        "target": "OWNER",
+        "NodeID": 9,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10021_Skill_Petrifaction_Enter"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7,
+    3,
+    8
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

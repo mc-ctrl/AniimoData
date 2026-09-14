@@ -1,0 +1,91 @@
+{
+  "91103540": {
+    "owner": "端木一康",
+    "autoSave": true,
+    "chunk": 1028069,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "板块1草原_其他关卡_水板块测试营地",
+    "spawners": [
+      91103657,
+      91103659
+    ],
+    "activeOnInit": 1,
+    "lastModifiedBy": "端木一康",
+    "sightLevel": 128,
+    "position": [
+      555.18,
+      99.29,
+      129.08
+    ],
+    "id": 91103540,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "infoPage": 0,
+      "autoSetContent1": true,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 0,
+      "markConfigId": 2000,
+      "markContent1": 91103540,
+      "nearState": 1,
+      "openMapState": 1,
+      "portalOffset": [
+        -0.18,
+        -0.1,
+        -4.37
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": true,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "image": "$UI_Img_Map_Preview_Home_Camp01.png",
+      "SloganPlayOnce": true,
+      "desc": "位于浪漫花海与松林之间的驿站，联结者们可以在这里休憩、交友、装饰露营地台、获得驿站增益，还可以派遣伊莫外出探险。",
+      "title": "房车驿站·鸢尾花海",
+      "showUI": true,
+      "showPortalOffset": true,
+      "showActiveDistance": false,
+      "POIDesc": "松风轻语，花舞翩跹。",
+      "POIIcon": "$UI_Icon_POI_Explore_CampingCar.png",
+      "POIMusic": "",
+      "POIOrNot": true,
+      "yaw": 120,
+      "entityStaticIdType": 0,
+      "markType": 32,
+      "arriveParam": {},
+      "inactiveImage": "$UI_Img_Map_Preview_Home_Camp01.png",
+      "activeDisplayType": 1,
+      "activeDistance": 20,
+      "activeHigh": [
+        10,
+        -10
+      ],
+      "activeShapes": {},
+      "inactiveDesc": "位于浪漫花海与松林之间的驿站，联结者们可以在这里休憩、交友、装饰露营地台、获得驿站增益，还可以派遣伊莫外出探险。<style=Hint_BgL>可前往驿站管理员滨滨处激活</style>。",
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "inactiveTitle": "房车驿站·鸢尾花海：待激活",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    }
+  }
+}

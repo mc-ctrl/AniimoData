@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_15030400",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800540,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15030400001,
+      "name": "setCombatActionTimeline",
+      "UID": "6cab6386-0fac-4f33-805a-337f22311c1a",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Rampage"
+  ],
+  "preloadEffs": [
+    "Eff_Common_Behav_Sleep",
+    "Eff_Parmon_10503_Skill_Rampage_Start",
+    "Eff_Parmon_10503_Skill_Rampage_Loop",
+    "Eff_Parmon_10503_Skill_Rampage_Dark_Start",
+    "Eff_Parmon_10503_Skill_Rampage_Dark_Loop",
+    "Eff_Parmon_10503_Skill_Rampage_End",
+    "Eff_Parmon_10503_Skill_Rampage_Dark_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "searchTargetRangeDown": 0.5
+}

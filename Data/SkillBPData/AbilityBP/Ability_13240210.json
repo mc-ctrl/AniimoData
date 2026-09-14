@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_13240210",
+  "NodeID": 1,
+  "UID": "3b920889-dcc2-407a-82cc-b45031291735",
+  "abilityParamId": 11300180,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 13240210001,
+      "name": "setCombatActionTimeline",
+      "UID": "8503fe97-6c91-436e-827f-31de9a57a2f4",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_RoseBurst"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10324_Skill_RoseBurst_01_Light"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

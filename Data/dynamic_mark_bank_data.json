@@ -1,0 +1,11 @@
+[
+  {
+    "res": "$UI_MapMisc_MarkCommonIcon.prefab"
+  },
+  {
+    "res": "$UI_MapMisc_PVP.prefab"
+  },
+  {
+    "res": "$UI_MapMisc_GetEgg_HugeEgg.prefab"
+  }
+]

@@ -1,0 +1,125 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 28,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10011_Skill_Charm_Bullet_01",
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "62": {
+      "cameraShakeId": 21123,
+      "name": "playCameraImpulseById",
+      "UID": "e2a36b2c-c7fa-44e2-b018-7357913ea69a",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 28,
+      "NodeID": 13,
+      "UID": "200cc09a-c3ad-4973-b43d-fa14cce8f898",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        28
+      ]
+    },
+    "24": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "5ae15e25-d1ce-4d21-90bd-28ea32b1a283",
+      "effectId": "Eff_Parmon_10012_Skill_Swift_Hit",
+      "rot": "PROJECTILE",
+      "NodeID": 24
+    },
+    "42": {
+      "name": "isActorType",
+      "UID": "6909c6e6-9893-410e-9ad3-87d7d4ad1958",
+      "target": "CASTER",
+      "NodeID": 42,
+      "actorType": 3
+    },
+    "43": {
+      "UID": "01bfa34f-c98c-4df7-bdfd-e7e262d9e8cf",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        42
+      ],
+      "NodeID": 43
+    },
+    "28": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10121100,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "a753b783-8ef8-4a5e-ba69-f4c762bd79c2",
+      "target": "TARGET",
+      "NodeID": 28,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10011_Attack_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      }
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    13,
+    24,
+    62,
+    43
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "BPName": "ability_10121100",
+  "tickInterval": 0.05,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "defaultHitSoundType": "h",
+  "maxHitNum": 0,
+  "impulseId": 2000,
+  "acceleration": 0
+}

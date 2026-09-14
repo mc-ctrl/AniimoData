@@ -1,0 +1,104 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_402001201",
+  "NodeID": 1,
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "icon": "ui_img_skill_icon_buff_10",
+  "onBuffRefreshIds": [
+    10,
+    12
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    10,
+    12
+  ],
+  "nodeMap": {
+    "13": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "b3f6d174-c263-4821-8a20-029eca577bd3",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "6": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "rValue": {
+              "calcId": 402001201,
+              "calcType": 1,
+              "paramName": "param0",
+              "NodeID": 2,
+              "UID": "411bf7b9-9267-49e0-92a2-6390658f2f29",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "76c29a79-3803-40a6-b46b-403cf9dba2d8",
+            "NodeID": 3,
+            "lValue": 2
+          },
+          "name": "multiply",
+          "UID": "05ed1e2b-c9ad-4ce1-9c1c-6af3215e0116",
+          "NodeID": 4,
+          "lValue": {
+            "key": "LeafyShieldResultServer",
+            "name": "getServerCacheVal",
+            "UID": "5c8d7cf7-6e48-4536-9309-2a2d6568914d",
+            "target": "OWNER",
+            "NodeID": 15
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "0e3d0da7-51e4-4c6c-8fe7-34f624c4d9ed",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "7a76b6fb-ca8d-4748-a668-f9581a9ce595",
+      "name": "buffStopThink",
+      "NodeID": 10
+    },
+    "17": {
+      "key": "LeafyShieldResultServer",
+      "name": "setServerCacheVal",
+      "UID": "c9d3ccce-7fba-4039-8e29-e25d4baea036",
+      "target": "OWNER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "ae3c4a20-a7e5-4682-b007-d41a5b7a7a6f",
+        "target": "OWNER",
+        "NodeID": 16,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 17
+    },
+    "2": {
+      "calcId": 402001201,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 2,
+      "UID": "411bf7b9-9267-49e0-92a2-6390658f2f29",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "54669527-b7cf-4358-8cea-5a2f9b46b7bf",
+      "name": "buffStartThink",
+      "NodeID": 12
+    }
+  },
+  "onBuffThinkIds": [
+    6
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13,
+    17
+  ]
+}

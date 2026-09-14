@@ -1,0 +1,220 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "86f12066-4196-4a80-bd70-d97a39e9d2f6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          3,
+          25
+        ]
+      },
+      "NodeID": 5
+    },
+    "7": {
+      "templateId": 148306,
+      "name": "checkTargetTemplateId",
+      "UID": "63575b7c-7c7a-43d3-8fd3-a435ad504741",
+      "target": "TARGET",
+      "NodeID": 7
+    },
+    "8": {
+      "NodeID": 8,
+      "UID": "3a57172d-25d8-4eed-a077-efee5f42569d",
+      "checkValidLock": false,
+      "heightDown": 2,
+      "radius": 1,
+      "relation": 4,
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 7
+    },
+    "9": {
+      "key": "2148306",
+      "name": "setCacheVal",
+      "UID": "e2bf7d0e-89e5-4d7a-839b-6bde9a49e10f",
+      "target": "OWNER",
+      "val": {
+        "NodeID": 8,
+        "UID": "3a57172d-25d8-4eed-a077-efee5f42569d",
+        "checkValidLock": false,
+        "heightDown": 2,
+        "radius": 1,
+        "relation": 4,
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 7
+      },
+      "NodeID": 9
+    },
+    "11": {
+      "eventType": "NotifyState",
+      "endTime": 6,
+      "NodeID": 11,
+      "UID": "b6fa3327-a8a1-44a7-aab1-db70b295febd",
+      "onUpdate": {
+        "actionIds": [
+          9,
+          14
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "98da7092-dab7-4ad5-b026-13d2f93da62e",
+      "effectId": "Eff_Paemon_10483_Skill_GatherBubble_Field01_fusion",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "478cc79a-9d35-4c1e-908d-b129db301cd8",
+      "effectId": "Eff_Parmon_10483_Skill_GatherBubble_Field02_paopao",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_10483_Skill_GatherBubble_Field02_paopao",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "ae15c155-a567-46c6-b942-bdb6f05a405f",
+      "target": {
+        "key": "2148306",
+        "name": "getCacheVal",
+        "UID": "fea3c5ea-6c8b-4e09-a61a-15da60a6f16d",
+        "target": "OWNER",
+        "NodeID": 12
+      },
+      "name": "hasTarget",
+      "NodeID": 13
+    },
+    "24": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "286eebb7-9139-448a-919c-d5cf85c5f61b",
+      "NodeID": 24,
+      "lValue": {
+        "key": "2148305",
+        "name": "getCacheVal",
+        "UID": "24de649e-5dd8-4146-83fa-5fdaf2dd866a",
+        "target": "OWNER",
+        "NodeID": 23
+      }
+    },
+    "14": {
+      "actionIds": [
+        19,
+        17,
+        20,
+        15
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "5c88748d-d1e2-4dea-94d6-7f5b8ed0daaa",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 148301,
+      "name": "createEntity",
+      "UID": "78b941fb-a20b-4b2e-81e9-cf29f874c838",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 15,
+      "pos": "OWNER"
+    },
+    "25": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "1bddc1ff-3253-4828-93db-87f1090c343e",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "26": {
+      "calcId": 2148306,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 26,
+      "UID": "1d0bba0a-57b6-4aed-bc73-3d7911e56d53",
+      "name": "getParamByLuaConfig"
+    },
+    "27": {
+      "value": {
+        "calcId": 2148306,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 26,
+        "UID": "1d0bba0a-57b6-4aed-bc73-3d7911e56d53",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "b6e7a62c-366f-4df4-b9af-d0afb4229879",
+      "target": "MASTER",
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "238773fc-2f0d-4cf3-ace1-a4aa74fead52",
+      "actorId": "OWNER",
+      "name": "destroyEntity",
+      "NodeID": 17
+    },
+    "19": {
+      "UID": "f881a007-2169-478a-9a43-8866ce1ef4b8",
+      "actorId": {
+        "key": "2148306",
+        "name": "getCacheVal",
+        "UID": "0e96d5b6-7895-44de-918c-7fa6036ade33",
+        "target": "OWNER",
+        "NodeID": 18
+      },
+      "name": "destroyEntity",
+      "NodeID": 19
+    },
+    "22": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    }
+  },
+  "BPName": "timeline_2148306",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    22,
+    11,
+    5
+  ],
+  "layer": "Base",
+  "length": 99999
+}

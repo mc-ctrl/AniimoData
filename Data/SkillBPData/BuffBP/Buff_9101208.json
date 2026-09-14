@@ -1,0 +1,94 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9101208",
+  "NodeID": 1,
+  "UID": "ec2dc841-88d7-4996-ad4c-75336db66765",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 910120801,
+      "NodeID": 3,
+      "UID": "db945d29-d1f8-4a89-9b94-8839f49866c5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "465b56f1-8a9b-48b4-a1a1-8c29e88dd733",
+      "NodeID": 9,
+      "lValue": {
+        "key": "11001201",
+        "name": "getCacheVal",
+        "UID": "dced9ade-9a7b-43b6-b0c0-d9450521a999",
+        "target": "OWNER",
+        "NodeID": 8
+      }
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerAbilityDisableReturnEvent",
+      "UID": "47100d0f-8e85-43e5-b09d-be0037410385",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "62e8cba2-4193-4c92-9b0a-715277a32875",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        11
+      ]
+    },
+    "11": {
+      "target": {
+        "key": "11001201",
+        "name": "getCacheVal",
+        "UID": "dced9ade-9a7b-43b6-b0c0-d9450521a999",
+        "target": "OWNER",
+        "NodeID": 8
+      },
+      "duration": 10,
+      "buffId": 910120801,
+      "NodeID": 11,
+      "UID": "7d400793-9055-46e1-81e7-5a338aebe105",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "actionIds": [
+        3,
+        10
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "3d818557-42b0-4894-b775-f9a41fa88762",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "2104f59e-b749-4b2b-a87b-46f806ee9a0a",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

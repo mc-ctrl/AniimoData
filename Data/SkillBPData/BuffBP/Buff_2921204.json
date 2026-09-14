@@ -1,0 +1,48 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2921204",
+  "NodeID": 1,
+  "UID": "4efe9e88-2b80-47c1-8918-ddd1693354c0",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "UID": "67ce542a-342c-4ca5-9101-d3829ce7e93b",
+      "target": "OWNER",
+      "NodeID": 5,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 2921204
+      }
+    },
+    "6": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        5
+      ],
+      "voxelTag": "grassGroupFlower",
+      "radius": 1,
+      "UID": "7a135803-7f7a-4c40-8eb1-900c79d501fa",
+      "target": "OWNER",
+      "NodeID": 6,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "2": {
+      "UID": "94103b4d-901c-47df-9518-46824c7d5537",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    2
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

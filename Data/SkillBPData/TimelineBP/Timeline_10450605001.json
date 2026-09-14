@@ -1,0 +1,441 @@
+{
+  "nodeMap": {
+    "53": {
+      "playTime": 0,
+      "stayTime": 1.5,
+      "name": "playIndicatorEff",
+      "UID": "77dac088-2ec8-4a02-9e7b-1d794ee85cae",
+      "target": {
+        "maxNum": 0,
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          0.6,
+          1,
+          0
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 1,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "TARGET",
+        "rotFrom": "OWNER"
+      },
+      "NodeID": 53
+    },
+    "41": {
+      "duration": 1,
+      "name": "puppetPreCastAction",
+      "UID": "7d8641e7-c05f-4818-81e1-80fc92ce64c2",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.25,
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.9,
+        0.5
+      ],
+      "scale": 1.1,
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 41
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bf883bf8-c207-400c-9486-4c1bd11cc8c5",
+      "effectId": "Eff_Parmon_10045_Skill_Water_Bullet_Start",
+      "speed": 2,
+      "NodeID": 42
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4e0a2eaf-bd28-49b3-9368-70c4e3d6c533",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterCannonShell_Start",
+      "NodeID": 44
+    },
+    "68": {
+      "UID": "010e5a0a-a83f-43c3-9cb5-3b2db91520a8",
+      "name": "stopAnimation",
+      "anim": "Skill_WaterBall",
+      "NodeID": 68
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          68,
+          73,
+          74,
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 70,
+      "UID": "e3bcc5cb-80a4-40ae-bfb8-2029895668e1"
+    },
+    "71": {
+      "action": {
+        "actionIds": [
+          68,
+          73,
+          74,
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 71,
+      "UID": "8c7ef5d5-2b46-4d96-a229-99888a9ccdee"
+    },
+    "72": {
+      "UID": "21f81039-9fd5-46ba-adda-522969fea320",
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 72
+    },
+    "73": {
+      "target": "OWNER",
+      "offsetTime": 0.5,
+      "name": "playAnimation",
+      "UID": "929e38a9-ee57-4949-b82c-eed10f5b7c55",
+      "speed": 0.4,
+      "NodeID": 73,
+      "animId": "Skill_WaterBall"
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          53,
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 31,
+      "UID": "1d8160e0-3717-4f14-ae23-27f5b73e743d"
+    },
+    "76": {
+      "time": 5,
+      "rotateSpeed": 120,
+      "name": "rotateTo",
+      "UID": "1f2578cb-c5c2-497a-87a3-8ccb43c6ba55",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 76
+    },
+    "17": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          41,
+          42,
+          44,
+          76
+        ]
+      },
+      "NodeID": 17
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          21
+        ]
+      },
+      "NodeID": 14
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 20,
+      "UID": "1dc70c5b-53ff-4f4c-81b5-ffb212980a44"
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "bac3dc10-fa8a-4091-ab32-8f2445c6b0de",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_State",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "15": {
+      "target": "OWNER",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "07d1059a-48b5-4e08-bf71-a8c338485d44",
+      "speed": 0.7,
+      "NodeID": 15,
+      "animId": "Skill_WaterBall"
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 10450605003,
+      "name": "createProjectile",
+      "UID": "1ef9876d-b521-43eb-8f9d-41e79960242d",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "targetPos": {
+        "UID": "d9fc03c6-39b6-4c46-8cbf-7995128b57dc",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 54
+      },
+      "NodeID": 32,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "74": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bef2567e-644c-40a0-8491-15a098add3fe",
+      "effectId": "Eff_Parmon_10045_Skill_Water_Bullet_Start",
+      "speed": 2,
+      "NodeID": 74
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "75": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a87a4d4a-9cba-40dd-91ea-d4432a20950a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterCannonShell_Start",
+      "NodeID": 75
+    },
+    "57": {
+      "playTime": 0,
+      "stayTime": 1.5,
+      "name": "playIndicatorEff",
+      "UID": "f9f0c44f-da09-4a23-8fd2-e481ca83e57f",
+      "target": {
+        "maxNum": 0,
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          0.6,
+          1,
+          0
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 1,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "TARGET",
+        "rotFrom": "OWNER"
+      },
+      "NodeID": 57
+    },
+    "26": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 10450605001,
+      "name": "createProjectile",
+      "UID": "61062832-4962-4aa6-b41d-a63212f65dd8",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "targetPos": {
+        "UID": "ca32161e-f39b-44cd-b290-d16a4139f4ce",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 46
+      },
+      "NodeID": 26,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "29": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 10450605002,
+      "name": "createProjectile",
+      "UID": "b144154e-e5f0-4e2c-9127-f0946440788a",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "targetPos": {
+        "UID": "fd24d1c6-70b4-4a31-9368-c7ff6627c0c0",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 50
+      },
+      "NodeID": 29,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          49,
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 28,
+      "UID": "f2dae15c-60d3-488b-9132-ccef13f7d1af"
+    },
+    "49": {
+      "playTime": 0,
+      "stayTime": 1.5,
+      "name": "playIndicatorEff",
+      "UID": "6951d7fd-aa53-4ac2-a94f-d0018b9d73d9",
+      "target": {
+        "maxNum": 0,
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          0.6,
+          1,
+          0
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 1,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "TARGET",
+        "rotFrom": "OWNER"
+      },
+      "NodeID": 49
+    },
+    "46": {
+      "UID": "ca32161e-f39b-44cd-b290-d16a4139f4ce",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 46
+    },
+    "50": {
+      "UID": "fd24d1c6-70b4-4a31-9368-c7ff6627c0c0",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 50
+    },
+    "19": {
+      "UID": "afbdc6c2-1c03-44b6-8720-91ce5d9b2a08",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 19
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          57,
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.6,
+      "NodeID": 34,
+      "UID": "08124a1f-cff5-4c5d-a8fa-4744a0558c5e"
+    },
+    "54": {
+      "UID": "d9fc03c6-39b6-4c46-8cbf-7995128b57dc",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 54
+    }
+  },
+  "BPName": "ability_10450605",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    20,
+    17,
+    70,
+    71,
+    72,
+    28,
+    31,
+    34
+  ],
+  "layer": "Base",
+  "length": 5
+}

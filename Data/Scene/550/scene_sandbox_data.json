@@ -1,0 +1,339 @@
+{
+  "91274705": {
+    "owner": "端木一康",
+    "autoSave": false,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 0,
+    "name": "全局_场景交互物_家园",
+    "spawners": [
+      91274713,
+      91352353
+    ],
+    "activeOnInit": 1,
+    "lastModifiedBy": "端木一康",
+    "sightLevel": 256,
+    "position": [
+      -23.43,
+      100.6,
+      -84.49
+    ],
+    "id": 91274705,
+    "markIconSpawnerId": 0
+  },
+  "91274747": {
+    "owner": "端木一康",
+    "position": [
+      0,
+      100.79,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91274751": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          -124.1,
+          100.79,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274751,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1000,
+          1000
+        ],
+        "isActive": true
+      },
+      "91274748": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          0,
+          100.79,
+          -192.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274748,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1000,
+          1000,
+          1
+        ],
+        "isActive": true
+      },
+      "91274749": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          135.8,
+          100.79,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274749,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1000,
+          1000
+        ],
+        "isActive": true
+      },
+      "91274750": {
+        "majorCompId": 0,
+        "owner": "端木一康",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          0,
+          100.79,
+          162.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274750,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1000,
+          1000,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 6,
+    "name": "全局_其他关卡_家园相关",
+    "spawners": [
+      91274776,
+      91274778,
+      91274784,
+      91274786,
+      91274788,
+      91274790,
+      91274792,
+      91322202,
+      91333984,
+      91388201,
+      91388205,
+      91388208,
+      91388212,
+      91388214
+    ],
+    "activeOnInit": 1,
+    "lastModifiedBy": "端木一康",
+    "sightLevel": 1024,
+    "id": 91274747,
+    "markIconSpawnerId": 0,
+    "chunk": 1019875
+  },
+  "91336989": {
+    "activeParams": [
+      6521003,
+      1
+    ],
+    "owner": "端木一康",
+    "chunk": 1019873,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 517,
+    "sandBoxLevel": 0,
+    "sandboxType": 17,
+    "name": "全局_家园_家园_动态桥",
+    "spawners": [
+      91337009
+    ],
+    "activeOnInit": 2,
+    "questActiveType": 1,
+    "sightLevel": 512,
+    "id": 91336989,
+    "markIconSpawnerId": 0,
+    "position": [
+      0,
+      0,
+      0
+    ]
+  },
+  "91284414": {
+    "owner": "吴萌",
+    "position": [
+      19.27,
+      100.33,
+      -49.24
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91284415,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 19,
+    "name": "全局_任务POI_家园OBT赛季限时任务",
+    "templateFrom": [
+      266,
+      91021065
+    ],
+    "spawners": [
+      91284480,
+      91284485,
+      91284526,
+      91284553,
+      91284675,
+      91284679,
+      91284696,
+      91284704,
+      91284720,
+      91284756,
+      91284766,
+      91284773,
+      91284802
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/550/Sandbox_91284414_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91284414,
+    "chunk": 1019874
+  },
+  "91257906": {
+    "owner": "",
+    "chunk": 1018850,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 6,
+    "sightLevel": 128,
+    "spawners": {},
+    "activeOnInit": 1,
+    "id": 91257906,
+    "markIconSpawnerId": 0,
+    "name": "全局_其他关卡_家园新场景",
+    "position": [
+      -0.87,
+      100.99,
+      -57.53
+    ]
+  },
+  "91329896": {
+    "owner": "meng.wu",
+    "chunk": 1018850,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 517,
+    "sandBoxLevel": 0,
+    "sandboxType": 19,
+    "sightLevel": 64,
+    "spawners": [
+      91329901,
+      91329903,
+      91335396,
+      91335398,
+      91335400,
+      91335402,
+      91335496,
+      91335501,
+      91335503,
+      91335508,
+      91338621,
+      91338625,
+      91338630,
+      91338632,
+      91338639,
+      91338641,
+      91344121,
+      91344123,
+      91348166,
+      91348169,
+      91348202,
+      91349141,
+      91349155,
+      91349157,
+      91349160,
+      91349509,
+      91349511,
+      91356180,
+      91356182,
+      91356257,
+      91419905,
+      91419936
+    ],
+    "activeOnInit": 1,
+    "id": 91329896,
+    "markIconSpawnerId": 0,
+    "name": "全局_任务POI_家园升级剧情任务",
+    "position": [
+      -1.03,
+      100.9,
+      -58.61
+    ]
+  }
+}

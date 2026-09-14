@@ -1,0 +1,502 @@
+{
+  "nodeMap": {
+    "39": {
+      "UID": "8a719b2c-393c-44d4-9476-de960561b131",
+      "name": "checkIsInAutoAim",
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "48724f66-b03a-4487-a3d2-86f16e27ff04",
+      "name": "checkIsInAutoAim",
+      "NodeID": 40
+    },
+    "41": {
+      "NodeID": 41,
+      "UID": "db9be603-b1a6-476a-b6ce-fc59516193e1",
+      "blendTime": 0.4,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1.43,
+      "cameraYawOffset": 0,
+      "maxPitch": 20,
+      "shoulderX": 0.45,
+      "shoulderY": 0.22,
+      "shoulderZ": -0.15,
+      "name": "setIsInAim",
+      "aimAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": false,
+      "minPitch": -20,
+      "showAimUI": false,
+      "val": true,
+      "targetAimLength": 2.4
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 42,
+      "UID": "82f34d7a-cc54-473b-9e34-1f728e0176e9"
+    },
+    "35": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 35,
+      "UID": "f1747bb1-1f69-443e-8746-d4ebea87fa21",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "85": {
+      "gender": 2,
+      "name": "isActorGender",
+      "UID": "b397303d-3d19-4d46-8693-f6ddd0b1dba0",
+      "target": "OWNER",
+      "NodeID": 85
+    },
+    "86": {
+      "triggerName": "Boy_OnHand",
+      "name": "setEffectAnimTrigger",
+      "UID": "2d653abc-4718-4ba3-828f-bfbc4e31c560",
+      "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet",
+      "target": "OWNER",
+      "NodeID": 86
+    },
+    "69": {
+      "UID": "245594ae-a8c5-4c84-8d41-a69ff619806d",
+      "name": "enableSkillThrowState",
+      "enable": true,
+      "NodeID": 69
+    },
+    "3": {
+      "UID": "7cef87d4-f556-463a-87b5-d7d28377f926",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "88": {
+      "gender": 2,
+      "name": "isActorGender",
+      "UID": "cd093dc7-379f-477a-b2f5-ff739a94994b",
+      "target": "OWNER",
+      "NodeID": 88
+    },
+    "89": {
+      "actionIds": [
+        102
+      ],
+      "conditionActionIds": [
+        88
+      ],
+      "UID": "b11dd18c-298c-48f7-becf-9ff0f3a9ff61",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        103
+      ],
+      "NodeID": 89
+    },
+    "99": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "40c6f54f-8bdc-48af-aa5e-0f057e3bdef9",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Appear",
+      "speed": 1,
+      "NodeID": 99
+    },
+    "125": {
+      "key": "angle",
+      "name": "setAbilityCacheVal",
+      "UID": "683a42ca-b211-4675-9659-d779b4e39161",
+      "value": 0,
+      "NodeID": 125
+    },
+    "93": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "89eee701-5cce-43a1-bf13-f87457880461",
+      "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet02",
+      "speed": 1,
+      "NodeID": 93
+    },
+    "5": {
+      "UID": "ce7d1481-eba3-4289-b08c-49e20689d636",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          110,
+          111,
+          125
+        ]
+      },
+      "NodeID": 5
+    },
+    "111": {
+      "key": "Aim",
+      "name": "setCacheVal",
+      "UID": "97041764-8d16-4089-8206-05d61e30ef37",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 111
+    },
+    "98": {
+      "effectKey": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet",
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 98,
+      "UID": "859633a2-d804-46e2-bbcc-dd3da5cb35ed",
+      "target": "OWNER",
+      "presetName": "DuckAppear",
+      "name": "playPreset"
+    },
+    "131": {
+      "UID": "093fb585-14fc-4110-b254-3586c104fccf",
+      "name": "triggerAbilityDelayEnterCd",
+      "NodeID": 131
+    },
+    "110": {
+      "UID": "9ff58419-1a8c-4432-b228-4e3319ec7d89",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 110
+    },
+    "104": {
+      "key": "Aim",
+      "name": "setCacheVal",
+      "UID": "e23fd5ec-3fe3-4ebe-9f22-1a25c41de663",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 104
+    },
+    "91": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6d787984-b29a-4a52-9937-147175bb3a38",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Appear",
+      "speed": 1,
+      "NodeID": 91
+    },
+    "82": {
+      "actionIds": [
+        99,
+        80,
+        98
+      ],
+      "conditionActionIds": [
+        85
+      ],
+      "UID": "09c3e28d-0ea0-499b-9264-5606d542c621",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        91,
+        86
+      ],
+      "NodeID": 82
+    },
+    "95": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ad7fefee-dc2c-42fd-b2d1-f3f73dc49e67",
+      "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet03",
+      "speed": 1,
+      "NodeID": 95
+    },
+    "102": {
+      "startPosOffset": [
+        0.2,
+        1.15,
+        -0.2
+      ],
+      "duration": 2,
+      "NodeID": 102,
+      "UID": "d434566b-203a-48bc-92ef-4420532ed8b2",
+      "startNoGravityTime": 0,
+      "gravityRatio": 0.5,
+      "rotationOffset": [
+        0,
+        0,
+        0
+      ],
+      "name": "enableSupportAimEffect",
+      "acceleration": 2,
+      "damageIndicator": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          5,
+          5,
+          5
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "enable": true,
+      "moveSpeed": 25
+    },
+    "11": {
+      "UID": "3609af43-39fb-4d71-bfb2-92be51b2e68c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 11
+    },
+    "103": {
+      "startPosOffset": [
+        0.25,
+        1.25,
+        0.2
+      ],
+      "duration": 2,
+      "NodeID": 103,
+      "UID": "1495dd69-36ee-4826-945f-4cd3e919a9ae",
+      "startNoGravityTime": 0,
+      "gravityRatio": 0.5,
+      "rotationOffset": [
+        0,
+        0,
+        0
+      ],
+      "name": "enableSupportAimEffect",
+      "acceleration": 2,
+      "damageIndicator": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          5,
+          5,
+          5
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "enable": true,
+      "moveSpeed": 25
+    },
+    "21": {
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "14433b7c-f18f-4bc1-87b2-f4e881703693",
+      "name": "doActionsByConditions",
+      "NodeID": 21,
+      "elseActionIds": [
+        104,
+        16,
+        34
+      ]
+    },
+    "22": {
+      "chargeTimeActions": [
+        {
+          "actionIds": [
+            21
+          ],
+          "chargeTime": 0
+        }
+      ],
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "28e18468-79ee-49e9-9f21-ad6ddf99c656",
+      "onlyTriggerOnce": true,
+      "name": "registerAimSkillEndEvent",
+      "autoAimTime": 0.2
+    },
+    "13": {
+      "actionIds": [
+        35,
+        11
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "44705235-a881-47f6-94ba-1c71aab605a3",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        53
+      ],
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "3c486852-da22-442b-98ef-39efe11a2f12",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          75,
+          22
+        ]
+      },
+      "NodeID": 24
+    },
+    "53": {
+      "UID": "18e322a6-686c-4cc1-9708-220a4f4d8c9a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 53
+    },
+    "15": {
+      "UID": "15896191-7f38-47bd-ad13-265408806cf1",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          131,
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "75": {
+      "UID": "88c4135f-0f7c-4448-aa1f-076aa1d5c3c3",
+      "name": "setMask",
+      "mask": {
+        "canMove": 1
+      },
+      "NodeID": 75
+    },
+    "25": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "eda45247-89f5-474d-b98c-7fdc1baef2b0",
+      "target": "OWNER",
+      "NodeID": 25,
+      "animId": "Skill_DuckBomb_Throw"
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3a1ee9c2-79f0-4ed0-b41e-d37b05a5c308",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Duck_Throw_Start",
+      "NodeID": 16
+    },
+    "27": {
+      "actionIds": [
+        69,
+        93,
+        89
+      ],
+      "conditionActionIds": [
+        77
+      ],
+      "UID": "0bd89607-fba5-47ee-8816-20b11077cf5c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        95,
+        25,
+        82
+      ],
+      "NodeID": 27
+    },
+    "77": {
+      "UID": "c321c8a5-afe3-4497-b003-a8ede7956486",
+      "name": "isInAimCameraMode",
+      "NodeID": 77
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 29,
+      "UID": "41124685-7cae-4261-9a48-e2bf2b2a5c46"
+    },
+    "18": {
+      "actionIds": [
+        16,
+        34
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "eed80a7b-ac2c-4415-9dcc-5e0500fd2769",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    },
+    "43": {
+      "UID": "f7c50366-4c10-4625-b11e-1332ec922418",
+      "name": "checkIsInAutoAim",
+      "NodeID": 43
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 19,
+      "UID": "4d52a6b4-cf28-4bf4-8192-ee5eb9a13761"
+    },
+    "34": {
+      "timelineId": 9200023002,
+      "name": "jumpToNextTimeline",
+      "UID": "04fd75e6-2598-4305-9372-b2f660d2cb53",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "80": {
+      "triggerName": "Girl_OnHand",
+      "name": "setEffectAnimTrigger",
+      "UID": "bc6b006d-a2da-4840-9d52-add9a3902dcc",
+      "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet",
+      "target": "OWNER",
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_9200023",
+  "NodeID": 7,
+  "UID": "13ae237c-cea1-49af-9637-40a6dac2894e",
+  "eventIds": [
+    5,
+    15,
+    42,
+    24,
+    19,
+    29
+  ],
+  "layer": "Base",
+  "length": 99
+}

@@ -1,0 +1,371 @@
+{
+  "nodeMap": {
+    "139": {
+      "UID": "62504201-0652-4dee-ae44-861c7f851761",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          137
+        ]
+      },
+      "NodeID": 139
+    },
+    "194": {
+      "UID": "13a00dfc-ca50-455f-843f-abecd04766cb",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 194
+    },
+    "167": {
+      "UID": "cad95059-2957-4c98-8a29-fc26f9b37818",
+      "eventType": "Notify",
+      "time": 0.17,
+      "NodeID": 167
+    },
+    "192": {
+      "UID": "55a2574e-7bdd-4bc6-95aa-e1cf78c29857",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 192
+    },
+    "169": {
+      "UID": "35e60964-e9ec-4fba-a5d5-72aee988a974",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 169
+    },
+    "170": {
+      "action": {
+        "actionIds": [
+          169
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.06,
+      "NodeID": 170,
+      "UID": "859ff643-e2f1-4e8f-8b7f-94c5d1ed7699"
+    },
+    "142": {
+      "action": {
+        "actionIds": [
+          141
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 142,
+      "UID": "274b37a9-4de6-426f-99c3-704b70e3ac5d"
+    },
+    "172": {
+      "name": "setSubModelVisible",
+      "UID": "774924ee-688b-4ae8-956a-0e95da49ffd3",
+      "NodeID": 172,
+      "subModelName": "M_Parmon_10174_Body01",
+      "visible": true
+    },
+    "130": {
+      "UID": "2c94f772-29b7-464d-bfd4-c218a09af0dd",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 130
+    },
+    "174": {
+      "name": "setSubModelVisible",
+      "UID": "37bbb783-6946-4c2b-9ff1-1d285949a6ad",
+      "NodeID": 174,
+      "subModelName": "M_Parmon_10174_Body01",
+      "visible": false
+    },
+    "144": {
+      "UID": "04cca609-9658-4157-b31a-d124d6d69993",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          143
+        ]
+      },
+      "NodeID": 144
+    },
+    "178": {
+      "UID": "32092cda-ca55-44ba-81aa-52956a229340",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          177
+        ]
+      },
+      "NodeID": 178
+    },
+    "134": {
+      "name": "setNextComboAbilityId",
+      "UID": "59a28a22-85c2-4c60-aa70-b6dc4623c81e",
+      "target": "OWNER",
+      "NodeID": 134,
+      "abilityId": 0
+    },
+    "151": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 149,
+      "NodeID": 151,
+      "UID": "470f9297-dc15-4f1a-9d6f-578d56986558",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1.6,
+            0.3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        149,
+        155
+      ]
+    },
+    "177": {
+      "UID": "8ce6942a-70e4-462e-bdeb-9f30d45a5aef",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "cancellable": 1
+      },
+      "NodeID": 177
+    },
+    "175": {
+      "action": {
+        "actionIds": [
+          174
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.05,
+      "NodeID": 175,
+      "UID": "8a9dab7f-a1e4-4043-a3f9-22428c2e4ed6"
+    },
+    "173": {
+      "action": {
+        "actionIds": [
+          172
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.14,
+      "NodeID": 173,
+      "UID": "f0be21ac-131c-4f3a-817d-558772f7da3e"
+    },
+    "171": {
+      "name": "setSubModelVisible",
+      "UID": "07c81362-f177-45ef-b943-c5710a951b5e",
+      "NodeID": 171,
+      "subModelName": "M_Parmon_10174_Body01",
+      "visible": false
+    },
+    "133": {
+      "name": "setNextComboAbilityId",
+      "UID": "927c30e1-46f0-438f-9dad-e7591872be47",
+      "target": "OWNER",
+      "NodeID": 133,
+      "abilityId": 11740003
+    },
+    "153": {
+      "action": {
+        "actionIds": [
+          151
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.233,
+      "NodeID": 153,
+      "UID": "a7add289-8610-4b0c-a6e2-051c558f50bf"
+    },
+    "149": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11740002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "cab7016e-800d-4d99-92ac-43eb56b6ccfc",
+      "target": "TARGET",
+      "NodeID": 149,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2000
+      }
+    },
+    "72": {
+      "UID": "aac7d3ee-ac9f-4f05-b5c1-ab3380d741c5",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 72
+    },
+    "143": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6bc8f79b-f42b-4121-bc45-54f69612b8e1",
+      "effectId": "Eff_Parmon_10174_Attack03_1",
+      "speed": 1,
+      "NodeID": 143
+    },
+    "155": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.18
+      },
+      "name": "calcResult",
+      "UID": "f60137b9-bca3-454b-ab31-cc5392b877c6",
+      "target": "CASTER",
+      "NodeID": 155
+    },
+    "157": {
+      "UID": "81af4c68-e429-4ab6-9dfb-b5b91bc890b4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          156
+        ]
+      },
+      "NodeID": 157
+    },
+    "136": {
+      "UID": "d7bc11b9-58c2-485d-bdb4-5825d74bf331",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          194,
+          134,
+          171
+        ]
+      },
+      "NodeID": 136
+    },
+    "156": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4942719a-5d47-4fec-bd54-ad926162ebfd",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_Dramotter_skill_attack03",
+      "NodeID": 156
+    },
+    "137": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "8baacd95-5a37-46d9-a92b-404e3c9016c5",
+      "target": "OWNER",
+      "NodeID": 137,
+      "animId": "Attack03"
+    },
+    "132": {
+      "UID": "eb8c532f-bcca-4769-a7da-c6790b080962",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          130,
+          192,
+          133,
+          171
+        ]
+      },
+      "NodeID": 132
+    },
+    "162": {
+      "UID": "27f1576e-0ce0-49d6-bd10-dd6968907ac9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 162
+    },
+    "163": {
+      "action": {
+        "actionIds": [
+          162
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 163,
+      "UID": "55bb51cc-28bd-468f-ac49-1a799396a49a"
+    },
+    "141": {
+      "UID": "03fdd781-0fcd-43d1-8bef-6a8750a19d69",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 1
+      },
+      "NodeID": 141
+    }
+  },
+  "BPName": "ability_11740002",
+  "NodeID": 74,
+  "UID": "e288e1ce-770d-4c41-8015-93958840f5e1",
+  "eventIds": [
+    132,
+    136,
+    139,
+    167,
+    170,
+    144,
+    163,
+    142,
+    153,
+    173,
+    175,
+    178,
+    157,
+    72
+  ],
+  "layer": "Base",
+  "length": 0.8
+}

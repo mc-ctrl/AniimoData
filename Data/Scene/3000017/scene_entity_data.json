@@ -1,0 +1,48 @@
+{
+  "72797979": {
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "attachId": 0,
+    "attachToSpawnerId": 0,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "chestSpawnerStaticId": 0,
+    "enableFixedScale": false,
+    "enable_elite_rate": false,
+    "isDynamicVehicle": true,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 22,
+    "isAuto": false,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "largeAreaId": 20900,
+    "levelAreaConfigId": 30901,
+    "overrideLvType": 6,
+    "position": [
+      -995.37,
+      72.95,
+      1757.67
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0.37,
+      0.03,
+      0.93
+    ],
+    "routeId": 0,
+    "sandboxId": 72553252,
+    "sizeCoefficient": 1,
+    "spawnerId": 72797980,
+    "staticId": 72797979,
+    "stick": true,
+    "subType": "Bonfire",
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 43.12,
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.PageItems.VehicleConfig",
+    "routeRefs": {},
+    "type": "Vehicle"
+  }
+}

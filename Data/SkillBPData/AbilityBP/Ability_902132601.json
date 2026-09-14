@@ -1,0 +1,45 @@
+{
+  "BPName": "ability_902132601",
+  "NodeID": 1,
+  "UID": "8e3c3b93-6299-4253-8dc7-01b469c2329a",
+  "abilityParamId": 49225010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 902132601001,
+      "name": "setCombatActionTimeline",
+      "UID": "7559cb89-4e15-496c-8e86-1ecff00f4fe7",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Red_JxLoop"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Attack_01",
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Attack_02",
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Xparticle_01",
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Explode",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Start",
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_End",
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Xparticle_02",
+    "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Xparticle_03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 60,
+  "searchTargetRangeUp": 20,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 20,
+  "refBones": [
+    "Bip001 R Hand"
+  ]
+}

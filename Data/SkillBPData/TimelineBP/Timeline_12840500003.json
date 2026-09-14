@@ -1,0 +1,208 @@
+{
+  "nodeMap": {
+    "74": {
+      "calcResultNodeId": 72,
+      "name": "actOnTargets",
+      "UID": "f71441b1-00c4-4111-8334-32173221dff0",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 3,
+      "needEcs": true,
+      "actionIds": [
+        72
+      ],
+      "impulseId": 5004,
+      "NodeID": 74
+    },
+    "75": {
+      "eventType": "NotifyState",
+      "endTime": 1,
+      "NodeID": 75,
+      "UID": "8d357def-9f2c-4166-9141-1a78ba41e5b6",
+      "onUpdate": {
+        "actionIds": [
+          74
+        ]
+      },
+      "startTime": 0.3,
+      "tickInterval": 0.1
+    },
+    "53": {
+      "UID": "0a932b2a-c4a1-46d4-bb99-1d2d7d66c257",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          51,
+          57
+        ]
+      },
+      "NodeID": 53
+    },
+    "63": {
+      "UID": "94fdf361-8d51-42e4-9d93-a956f2e0b012",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 63
+    },
+    "81": {
+      "UID": "d1033a7e-a4e5-4ea3-aae5-5e98fa4542c0",
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 81
+    },
+    "72": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 5004,
+        "hitCameraShakeId": -1
+      },
+      "UID": "ba9536af-f7cc-4663-a05f-2d94aa23ba1c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 72
+    },
+    "57": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "2a3420a2-b2f4-4518-9335-3c2f85929ef6",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "65": {
+      "action": {
+        "actionIds": [
+          63
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 65,
+      "UID": "0d8d9895-b359-4dad-93a7-75fbc4bf0c56"
+    },
+    "84": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8621cf0d-80b7-41a7-bdef-412fad6a9102",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Burrow_Smash",
+      "NodeID": 84
+    },
+    "66": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "eed468d6-c3fa-45b5-b9e7-a4d0d705b4ff",
+      "target": "OWNER",
+      "NodeID": 66,
+      "animId": "Skill_Burrow_DashAttack"
+    },
+    "59": {
+      "UID": "0af64c11-467e-46e9-8883-5c642e95b30f",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 59
+    },
+    "85": {
+      "action": {
+        "actionIds": [
+          84
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 85,
+      "UID": "4d350799-6297-4a5a-b510-882d89a545c3"
+    },
+    "61": {
+      "UID": "a0bcce58-654b-42a8-b495-d888fabb382e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          59,
+          69
+        ]
+      },
+      "NodeID": 61
+    },
+    "68": {
+      "UID": "7ac29442-92e1-4598-8b7f-b91a7f667c9d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          66
+        ]
+      },
+      "NodeID": 68
+    },
+    "51": {
+      "UID": "5f932706-1ada-4dcf-a9db-9a32118466b8",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 51
+    },
+    "69": {
+      "name": "stopEffectStr",
+      "UID": "a5a58aa1-6f80-484e-ae05-a60bc2813a94",
+      "effectId": "Eff_Parmon_10173_Skil_Wall_01",
+      "target": "OWNER",
+      "NodeID": 69
+    }
+  },
+  "BPName": "ability_12840500",
+  "NodeID": 55,
+  "UID": "6340c36f-612c-4106-b370-bdc9e1fc56ab",
+  "eventIds": [
+    53,
+    61,
+    65,
+    68,
+    81,
+    75,
+    85
+  ],
+  "layer": "Base",
+  "length": 2.617
+}

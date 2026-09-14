@@ -1,0 +1,64 @@
+{
+  "67086718": {
+    "id": 67086718,
+    "logics": {},
+    "pointType": 2,
+    "name": "任务用对话点位_67086718",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        0.25,
+        100.82,
+        6.33
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      0.25,
+      100.82,
+      6.33
+    ],
+    "sandboxId": 67086709
+  },
+  "67086717": {
+    "id": 67086717,
+    "logics": {},
+    "pointType": 2,
+    "name": "寻路点位_67086717",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -0.02,
+        105.64,
+        77.49
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -0.02,
+      105.64,
+      77.49
+    ],
+    "sandboxId": 67086709
+  }
+}

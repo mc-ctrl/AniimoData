@@ -1,0 +1,109 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6004014",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    9
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "NodeID": 3,
+      "UID": "a0c0243f-afa3-452e-b307-bf3574564c6d",
+      "min": 3,
+      "max": 6,
+      "name": "random"
+    },
+    "4": {
+      "convertType": 0,
+      "name": "toInt",
+      "UID": "47a62c89-8cf0-4f2d-b5dd-a3ef67072ade",
+      "val": {
+        "NodeID": 3,
+        "UID": "a0c0243f-afa3-452e-b307-bf3574564c6d",
+        "min": 3,
+        "max": 6,
+        "name": "random"
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "buffId": 6004014,
+      "name": "removeBuff",
+      "UID": "08dc3094-ca59-47de-a5a8-ff994d493db4",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "62e9bf58-022a-42e9-bf1d-961451a9df84",
+      "name": "buffStopThink",
+      "NodeID": 10
+    },
+    "8": {
+      "actionIds": [
+        5,
+        14
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "9442ae59-14e9-445d-a6c8-abd44715bc32",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e9894c9c-d5b0-4a8f-ba52-6f674d2abb9b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Egg_Aura_RookeySprint",
+      "NodeID": 9
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6004014,
+      "NodeID": 13,
+      "UID": "9499a197-bd3b-4d4b-99fe-7385a7072c0e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "delay": 0,
+      "interval": {
+        "convertType": 0,
+        "name": "toInt",
+        "UID": "47a62c89-8cf0-4f2d-b5dd-a3ef67072ade",
+        "val": {
+          "NodeID": 3,
+          "UID": "a0c0243f-afa3-452e-b307-bf3574564c6d",
+          "min": 3,
+          "max": 6,
+          "name": "random"
+        },
+        "NodeID": 4
+      },
+      "UID": "f6a4005a-7597-4bef-af27-c2ce9c0748d5",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "3f120a17-bc5a-4c81-bfc1-067eeb0773dc",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        10,
+        13
+      ],
+      "NodeID": 12
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    12,
+    8
+  ]
+}

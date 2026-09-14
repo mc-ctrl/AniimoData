@@ -1,0 +1,167 @@
+{
+  "42834374": {
+    "sightLevel": 128,
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019872,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 42837917,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "3DAY_系统"
+    ],
+    "routes": [
+      42891244
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_其他关卡_拍照教学",
+    "sightLevelType": 128,
+    "spawners": [
+      42891240
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      20.59,
+      6,
+      -139
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8011/Sandbox_42834374_GraphRef.asset",
+    "poiType": 1003,
+    "owner": "路司机",
+    "id": 42834374,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "42837950": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          -13,
+          6,
+          -139
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42837950,
+        "siblingIndex": 2,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42837950_43015735"
+          }
+        },
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -13,
+            6,
+            -139
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42837932": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点",
+        "position": [
+          11.01,
+          5.67,
+          -139
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42837932,
+        "siblingIndex": 0,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42837932_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            11.01,
+            5.67,
+            -139
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "43425531": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "拍照完成",
+        "position": [
+          6.56,
+          6,
+          -139.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43425531,
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

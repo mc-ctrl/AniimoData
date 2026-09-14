@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_13310301",
+  "NodeID": 1,
+  "UID": "ebf3f0e1-0645-415f-8961-4cc9bab8e2c8",
+  "abilityParamId": 10241001,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 13310301001,
+      "name": "setCombatActionTimeline",
+      "UID": "0be97c41-cbd4-4005-a7c7-9de74a5fe0b3",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 6,
+  "preloadAnims": [
+    "Skill_Absorb",
+    "Behav_Angry"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10241_Skill_Absorb_01",
+    "Eff_Parmon_10241_Skill_Absorb_02"
+  ],
+  "searchRelation": 2,
+  "name": "照明1",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 4.5,
+  "searchTargetRangeDown": 3
+}

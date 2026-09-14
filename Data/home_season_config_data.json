@@ -1,0 +1,13 @@
+{
+  "SeasonCelebrationTargetPoint": [
+    550,
+    91333984
+  ],
+  "SeasonPlantChannelCd": 600,
+  "SeasonPlantFriendCd": 600,
+  "SeasonPlantHelpCardCd": 86400,
+  "SeasonShopType": 51,
+  "homeSeasonChestDailyRewardCount": 5,
+  "homeSeasonPreQuest": 6522001,
+  "homeSeasonTaskRewardMailId": 98
+}

@@ -1,0 +1,204 @@
+{
+  "50241784": {
+    "graphId": 50241784,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 6,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Out",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 2,
+        "sourcePortName": "isOn",
+        "targetNode": 3,
+        "targetPortName": "Condition"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "True",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "True",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 6,
+        "sourcePortName": "isOn",
+        "targetNode": 7,
+        "targetPortName": "Condition"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "Out",
+        "targetNode": 7,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 7,
+        "sourcePortName": "True",
+        "targetNode": 8,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 8,
+        "sourcePortName": "True",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 9,
+        "sourcePortName": "isOn",
+        "targetNode": 8,
+        "targetPortName": "Condition"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 10,
+        "sourcePortName": "isOn",
+        "targetNode": 4,
+        "targetPortName": "Condition"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "b537cf9e8396a4710f259a47adaf2796",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchBoolNode",
+        "uid": "69ecf332-8d64-43bc-8e62-a0694028aa1f"
+      },
+      "4": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchBoolNode",
+        "uid": "ffcaf0ae-4594-423a-9ea6-d5811b815b1e"
+      },
+      "6": {
+        "_inputPortValues": {
+          "LevelItemId": 66084885,
+          "DoOnce": true,
+          "fieldName": "isOn",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "isOn"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "1b0d3ee0-d471-4fe8-b64b-a34dfa236aed"
+      },
+      "10": {
+        "_inputPortValues": {
+          "LevelItemId": 66084885,
+          "fieldName": "isOn"
+        },
+        "_outputPortValues": [
+          "isOn"
+        ],
+        "className": "GetLevelItemFieldNode",
+        "uid": "da8817ab-59c5-4f4d-a72c-d08b987431cb"
+      },
+      "7": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchBoolNode",
+        "uid": "49d1b6c6-06cd-4675-95a6-d27dba990102"
+      },
+      "8": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchBoolNode",
+        "uid": "b13099cf-3229-4dd5-9a7f-25a39d30e1e1"
+      },
+      "9": {
+        "_inputPortValues": {
+          "LevelItemId": 50861922,
+          "fieldName": "isOn"
+        },
+        "_outputPortValues": [
+          "isOn"
+        ],
+        "className": "GetLevelItemFieldNode",
+        "uid": "4083a6b4-aa64-4dc8-916f-2bbc7865154c"
+      },
+      "5": {
+        "_inputPortValues": {
+          "Success": true
+        },
+        "_outputPortValues": {},
+        "className": "GraphEndNode",
+        "uid": "561bd81f-da2c-4d48-a50a-9201242b8367"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "e63a0d8d-b60d-4bd2-85f6-50a5cda93ca4"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "a1304126-d005-4385-aeb0-fd42a65958a1",
+        "portCount": 5
+      },
+      "2": {
+        "_inputPortValues": {
+          "LevelItemId": 50861922,
+          "DoOnce": true,
+          "fieldName": "isOn",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "isOn"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "73203bda-77b8-44b7-b32a-8dec870d8aeb"
+      }
+    }
+  },
+  "73121584": {
+    "graphId": 73121584,
+    "blackboard": {},
+    "connections": {},
+    "isSandbox": true,
+    "md5": "ef71d8459e039af66305c79baf4e021f",
+    "nodes": {}
+  }
+}

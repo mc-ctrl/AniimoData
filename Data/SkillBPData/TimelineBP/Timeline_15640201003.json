@@ -1,0 +1,418 @@
+{
+  "nodeMap": {
+    "112": {
+      "action": {
+        "actionIds": [
+          110
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.69,
+      "NodeID": 112,
+      "UID": "b76d6cb2-8d61-4690-b61f-278dbbb0b9ab"
+    },
+    "81": {
+      "UID": "ff7fbcc4-d047-4850-9c6f-f40fb687e8b7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0
+      },
+      "NodeID": 81
+    },
+    "168": {
+      "actionIds": [
+        169
+      ],
+      "conditionActionIds": [
+        167
+      ],
+      "UID": "ac24b56f-04fa-429f-b4ad-ef18ff69581c",
+      "name": "doActionsByConditions",
+      "NodeID": 168
+    },
+    "169": {
+      "pos": "HIT",
+      "target": "TARGET",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "40c1f3db-6412-4d5a-a98f-9f1dc650c6f9",
+      "effectId": "Eff_Parmon_10564_Skill_Sword_Hit_liuli",
+      "offsetRotation": [
+        0,
+        -80,
+        0
+      ],
+      "NodeID": 169
+    },
+    "170": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "29f4bd53-a981-4ed1-b28b-514eda184c11",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 170
+    },
+    "83": {
+      "UID": "db002b00-9b17-46f3-8f89-28559f5daad7",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          81,
+          110,
+          179
+        ]
+      },
+      "NodeID": 83
+    },
+    "158": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 15640201,
+        "instant_dmg_rate_v": "param3",
+        "type": 2
+      },
+      "UID": "24cb1e1a-0933-474e-9c09-0319051c4413",
+      "target": "TARGET",
+      "NodeID": 158,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30303,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": {},
+        "elementType": 6,
+        "impulseId": 3001
+      }
+    },
+    "171": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "cdecea08-344a-4246-9d72-49d0262f2380",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 171
+    },
+    "167": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "6f231884-b183-4e91-ab63-ee904f8b8b24",
+      "NodeID": 167,
+      "lValue": {
+        "key": "Bullet2",
+        "name": "getCacheVal",
+        "UID": "78b9cbc8-98c9-457e-82bd-7ab22cdf5328",
+        "target": "OWNER",
+        "NodeID": 166
+      }
+    },
+    "165": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "d23b3657-9843-4bd9-b4ca-285782d547df",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 165
+    },
+    "161": {
+      "action": {
+        "actionIds": [
+          160
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.64,
+      "NodeID": 161,
+      "UID": "501b755d-4550-4557-b93c-87317ef39291"
+    },
+    "160": {
+      "calcResultNodeId": 158,
+      "name": "actOnTargets",
+      "UID": "cac0d9cd-0fad-48a9-bfe0-be3cfcd4d318",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.8,
+            1.8,
+            4,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        158,
+        168,
+        165
+      ],
+      "impulseId": 3001,
+      "NodeID": 160
+    },
+    "151": {
+      "action": {
+        "actionIds": [
+          150
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.63,
+      "NodeID": 151,
+      "UID": "4bead29d-af9a-43e9-964b-42035fdf31af"
+    },
+    "179": {
+      "key": "BladeColor1",
+      "name": "setServerCacheVal",
+      "UID": "262c9e55-d7d8-4e62-a9df-7eca84bc15bd",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 179
+    },
+    "137": {
+      "UID": "5f1aa1ad-9fe0-4526-b2ba-26dbd0c00980",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          136
+        ]
+      },
+      "NodeID": 137
+    },
+    "148": {
+      "name": "calcResult",
+      "NodeID": 148,
+      "calcInfoByLuaConfig": {
+        "id": 15640201,
+        "instant_dmg_rate_v": "param3",
+        "type": 2
+      },
+      "UID": "fb160768-ed8c-4076-a941-65b0aa042498",
+      "target": "TARGET",
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30303,
+        "hitFrameFreezeId": 10014,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10564_Skill_Sword_Hit_liuli",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 3001
+      }
+    },
+    "139": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "24180793-75c2-4eee-b1af-e80704244183",
+      "effectId": "Eff_Parmon_10564_Skill_Sword_Red_liuli",
+      "speed": 1,
+      "NodeID": 139
+    },
+    "121": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "02d9642d-101a-4598-9b0a-1b07e5ebc44f",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_End_liuli",
+      "speed": 1,
+      "NodeID": 121
+    },
+    "74": {
+      "UID": "42315ae9-88dd-42b6-a815-e0c8c52e03e1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          72,
+          79,
+          139,
+          171
+        ]
+      },
+      "NodeID": 74
+    },
+    "122": {
+      "action": {
+        "actionIds": [
+          121
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.64,
+      "NodeID": 122,
+      "UID": "97331523-7fd7-4ef3-9f70-8db3e540f52b"
+    },
+    "72": {
+      "UID": "d4a083bc-9726-47ad-8da7-c857fa38eb19",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 72
+    },
+    "150": {
+      "calcResultNodeId": 148,
+      "name": "actOnTargets",
+      "UID": "34335241-6088-429f-81d3-0f1aeee32a05",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.4,
+            0.4,
+            3,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        148,
+        170
+      ],
+      "impulseId": 3001,
+      "NodeID": 150
+    },
+    "76": {
+      "UID": "58b7938f-ecee-4d76-9db1-b7ead4eaec40",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 76
+    },
+    "94": {
+      "action": {
+        "actionIds": [
+          93
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.64,
+      "NodeID": 94,
+      "UID": "833660d5-8620-4979-9161-533a78925e7b"
+    },
+    "136": {
+      "name": "setSkillHitDistance",
+      "UID": "5753d123-15af-481d-9d5b-9da2b6fa8cf0",
+      "skillHitDisplacementId": 1000,
+      "target": "OWNER",
+      "NodeID": 136
+    },
+    "32": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 32,
+      "UID": "6685ca6b-6f28-4873-a40b-c24b1ae7f4c7",
+      "target": "OWNER",
+      "disableMotion": false,
+      "animId": "Skill_SkyRuptureSlash_Pursuit03"
+    },
+    "93": {
+      "cameraShakeId": 30105,
+      "NodeID": 93,
+      "UID": "b2006294-013d-4165-8284-aa5e977fc114",
+      "target": "OWNER",
+      "name": "playCameraImpulseById",
+      "ignoreShakeCD": true
+    },
+    "110": {
+      "name": "stopEffectStr",
+      "UID": "db333724-adcb-45b8-8a95-b60e640b9fa8",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_liuli",
+      "target": "OWNER",
+      "NodeID": 110
+    },
+    "79": {
+      "UID": "d56800e2-c8c2-4c95-8bba-29b7aa5d91e2",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 79
+    },
+    "34": {
+      "UID": "ce9e5bc8-88e1-4a7c-a939-a053b3879d96",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "NodeID": 34
+    },
+    "77": {
+      "action": {
+        "actionIds": [
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.95,
+      "NodeID": 77,
+      "UID": "1c53eb40-dcba-4fed-90b8-ea012e2232b8"
+    }
+  },
+  "BPName": "ability_15640201",
+  "NodeID": 36,
+  "UID": "5d96a450-c24e-465c-8edd-57f5a97c408c",
+  "eventIds": [
+    74,
+    83,
+    77,
+    34,
+    151,
+    94,
+    112,
+    122,
+    137,
+    161
+  ],
+  "layer": "Base",
+  "length": 2.37
+}

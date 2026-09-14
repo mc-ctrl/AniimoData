@@ -1,0 +1,51 @@
+{
+  "BPName": "ability_15129900",
+  "NodeID": 1,
+  "UID": "707cd5c0-714f-4a12-9efa-7ac14a5a1b33",
+  "abilityParamId": 10500570,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15129900001,
+      "name": "setCombatActionTimeline",
+      "UID": "7f041c8b-36be-435e-9578-7865f5863062",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10512_OutEx_Scene02",
+    "Eff_Parmon_10512_OutEx_Scene00",
+    "Eff_Parmon_10512_OutEx_Scene02_01",
+    "Eff_Parmon_10512_OutEx_Scene02_02",
+    "Eff_Parmon_10512_OutEx_Scene08",
+    "Eff_Parmon_10512_OutEx_Scene08_01",
+    "Eff_Parmon_10512_OutEx_Scene09",
+    "Eff_Parmon_10512_OutEx_Scene09_01",
+    "Eff_Parmon_10512_OutEx_Hit01",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "澡叶蛙必杀技",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "preloadCutScenes": [
+    "$Parmon_10512_Skill_Ex_Timeline02.prefab",
+    "$Parmon_10512_Skill_Ex_Timeline01.prefab",
+    "$Parmon_10512_Skill_Ex_Timeline.prefab"
+  ],
+  "onlyHasActOnTargets": true,
+  "desc": "",
+  "cutSceneDuration": 1.9167
+}

@@ -1,0 +1,51 @@
+{
+  "cutSceneDuration": 2.2,
+  "preloadCutScenes": [
+    "$Parmon_10207_Skill_Ex_Timeline.prefab"
+  ],
+  "UID": "71eeed9b-f8e3-4347-acf3-a6c901c58bca",
+  "abilityParamId": 10600260,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12079900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2fc7fe5-f2ed-49ff-84a8-30877442f08d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 6,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10207_Skill_EX_1",
+    "Eff_Parmon_10207_Skill_Ex01_Roar",
+    "Eff_Parmon_10207_Skill_Ex02_1",
+    "Eff_Parmon_10207_Skill_Ex02_2",
+    "Eff_Parmon_10207_Skill_Ex02_3",
+    "Eff_Parmon_10207_Skill_Ex02_4",
+    "Eff_Parmon_10207_Skill_Ex03_Roar",
+    "Eff_Parmon_10207_Skill_Ex03_Start",
+    "Eff_Parmon_10207_Skill_Ex02_5",
+    "Eff_Parmon_10207_Skill_EX_Disappear_All",
+    "Eff_Parmon_10207_Skill_Ex03_SmallRoar"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 1.5,
+  "onlyHasActOnTargets": true,
+  "BPName": "ability_12079900",
+  "NodeID": 1
+}

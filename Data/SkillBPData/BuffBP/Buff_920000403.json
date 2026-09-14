@@ -1,0 +1,66 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920000403",
+  "NodeID": 1,
+  "UID": "ebdd7016-b79d-49db-b0d4-cb4d2f57a0e2",
+  "desc": "",
+  "onBuffRefreshIds": [
+    9
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "taken_phy_dmg_dec_rate_v": 0.55
+      },
+      "isClearOld": true,
+      "UID": "8ea33bfe-1359-4f56-9b82-526f6e668d66",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 5
+    },
+    "9": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "fb451dd4-067e-423d-9fd0-772019f281fc",
+      "effectId": "Eff_Buff_Physical_Defense_Up",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "8": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "da8204ff-273b-4a38-8626-9f1976b7027d",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "7": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "853057ff-f049-421e-884a-25dd4219b9ad",
+      "effectId": "Eff_Buff_Physical_Defense_Up",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "16f252ab-1f99-420d-996c-b10d87c65b1e",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "TARGET",
+      "NodeID": 2
+    }
+  },
+  "name": "",
+  "onBuffDestroyIds": [
+    2
+  ],
+  "onBuffStartIds": [
+    7,
+    8,
+    5
+  ]
+}

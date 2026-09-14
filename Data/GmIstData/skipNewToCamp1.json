@@ -1,0 +1,203 @@
+{
+  "steps": [
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "PETENTRY"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁宠物管理"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "PETRESEARCH"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁研究手册"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "PLAYERENHANCEMENT"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁角色管理"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 2602001,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "2602"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 2602112,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "2602"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 2602114,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "2602"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 3707004,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "3707"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 1,
+        "uid": 0,
+        "eventName": "forceChangeCombatPet",
+        "eventParam": "{0}"
+      },
+      "mid": "doEventByData",
+      "name": "显示队列"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "setCurPetVisible",
+        "eventParam": "{1}"
+      },
+      "mid": "doEventByData",
+      "name": "宠物显示"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "learnSkill",
+        "eventParam": "{10000,1}"
+      },
+      "mid": "doEventByData",
+      "name": "解锁双子合体"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "skillState",
+        "eventParam": "{{'Q','E','R','T'},1}"
+      },
+      "mid": "doEventByData",
+      "name": "解锁技能"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "teleportScenePosition",
+        "eventParam": "{3000,52418043,1}"
+      },
+      "mid": "doEventByData",
+      "name": "传送营地"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "uid": 0,
+        "index": 2
+      },
+      "mid": "initTwinPetChoice",
+      "name": "选择双子"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "skipReport": 0,
+        "uid": "26051000101230",
+        "templateId": 1005100,
+        "allSkill": 0,
+        "isRareFeature": 0,
+        "petLabel": 0,
+        "petLevel": 1,
+        "shinyStyle": 0
+      },
+      "mid": "addPet",
+      "name": "往玩家新增一个宠物"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "skipReport": 0,
+        "uid": "26051000101230",
+        "templateId": 1001100,
+        "allSkill": 0,
+        "isRareFeature": 0,
+        "petLabel": 0,
+        "petLevel": 1,
+        "shinyStyle": 0
+      },
+      "mid": "addPet",
+      "name": "往玩家新增一个宠物"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "skipReport": 0,
+        "uid": "26051000101230",
+        "templateId": 1020100,
+        "allSkill": 0,
+        "isRareFeature": 0,
+        "petLabel": 0,
+        "petLevel": 1,
+        "shinyStyle": 0
+      },
+      "mid": "addPet",
+      "name": "往玩家新增一个宠物"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "skipReport": 0,
+        "uid": "26051000101230",
+        "templateId": 1004100,
+        "allSkill": 0,
+        "isRareFeature": 0,
+        "petLabel": 0,
+        "petLevel": 1,
+        "shinyStyle": 0
+      },
+      "mid": "addPet",
+      "name": "往玩家新增一个宠物"
+    }
+  ],
+  "name": "跳过新手到营地-月辉狐"
+}

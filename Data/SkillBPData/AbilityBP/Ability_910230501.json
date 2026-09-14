@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_910230501",
+  "NodeID": 1,
+  "UID": "bf950733-0c13-4a37-ad38-52c6af1cf15a",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 910230501001,
+      "name": "setCombatActionTimeline",
+      "UID": "06ffd96c-506c-4fec-b55d-fe55bbc93b3a",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_IronClaw"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Parmon_10023_Skill_IronClaw_Hand_juqi",
+    "Eff_Parmon_10023_Skill_IronClaw",
+    "Eff_Parmon_10023_Skill_IronClaw_Hand_Boss",
+    "Eff_Monster_10023_Mon_Attack_IronClaw_jianqi",
+    "Eff_Hit_Wind_Blunt"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 10700221,
+  "name": ""
+}

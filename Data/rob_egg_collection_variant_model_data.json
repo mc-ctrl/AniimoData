@@ -1,0 +1,34 @@
+[
+  {
+    "model": "$P_Item_Props_DiamondEgg_Blue.prefab",
+    "icon": "$ui_item_Grabegg_DiamondEgg_Blue.png"
+  },
+  {
+    "model": "$P_Item_Props_DiamondEgg_Pink.prefab",
+    "icon": "$ui_item_Grabegg_DiamondEgg_Pink.png"
+  },
+  {
+    "model": "$P_Item_Props_DiamondEgg_Red.prefab",
+    "icon": "$ui_item_Grabegg_DiamondEgg_Red.png"
+  },
+  {
+    "model": "$P_Item_Props_RainbowPrismCore_Black.prefab",
+    "icon": "$ui_item_Grabegg_RainbowPrismCore_Black.png"
+  },
+  {
+    "model": "$P_Item_Props_RainbowPrismCore_Moon.prefab",
+    "icon": "$ui_item_Grabegg_RainbowPrismCore_Moon.png"
+  },
+  {
+    "model": "$P_Item_Props_RainbowPrismCore_Sun.prefab",
+    "icon": "$ui_item_Grabegg_RainbowPrismCore_Sun.png"
+  },
+  {
+    "model": "$P_Item_Props_FlamesBreathHorn_Red.prefab",
+    "icon": "$ui_item_Grabegg_FlamesBreathHorn_Red.png"
+  },
+  {
+    "model": "$P_Item_Props_DreamMemoryAmber_FireAmber.prefab",
+    "icon": "$ui_item_Grabegg_DreamMemoryAmber_FireAmber.png"
+  }
+]

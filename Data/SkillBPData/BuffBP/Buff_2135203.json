@@ -1,0 +1,158 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135203",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "icon": "",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "adb2b09b-0541-4052-a923-79107de14f56",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_Buff",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "14": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2135203,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "83c2a7ec-749f-4712-aa8d-cfd3ef14412c",
+      "target": "TARGET",
+      "NodeID": 14,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "isPlayRadialBlur": true,
+        "impulseId": 2001
+      }
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 14,
+      "NodeID": 7,
+      "UID": "75920563-be02-4b41-9a11-ca8ec227023b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            1,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        14,
+        16,
+        19
+      ]
+    },
+    "16": {
+      "target": "TARGET",
+      "duration": 30,
+      "buffId": 2135203,
+      "NodeID": 16,
+      "UID": "65372060-421b-405f-af62-ce9c4ae0e0fb",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "32dc6206-d6b2-42be-b224-c23328090ccd",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_Bomb",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "actionIds": [
+        7,
+        17
+      ],
+      "name": "registerDeadEvent",
+      "UID": "39d563fb-b492-4b99-8686-ca74e4674577",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "9965102c-5d31-4048-86f8-98830d05c4cc",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_Bomb_02",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5c962a9a-59d4-4da6-a06c-dab9b8cc2c2f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10352_Skill_Fragrance_Bomb",
+      "NodeID": 19
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "81cc652d-38ef-436e-bcb8-19d14ab3e05e",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_Bomb_02",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "2": {
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "283f9835-1358-477f-802e-df06c8ccd7e9",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_Buff",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    4,
+    21
+  ],
+  "onBuffStartIds": [
+    9,
+    2,
+    20
+  ]
+}

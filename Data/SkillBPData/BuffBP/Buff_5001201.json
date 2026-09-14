@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5001201",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 5001201,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "31ee4037-1530-4d98-ac2e-3235865d5eee",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "008be5f4-d58c-4f1e-903e-2ce6f24a4d3d",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "3787b93b-09ee-456b-94f2-e22d7ced5b4d",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "calcId": 5001201,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "31ee4037-1530-4d98-ac2e-3235865d5eee",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "bed01525-efc9-4482-b18f-6a0cbbcab509",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Start",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "1a2111c9-86ce-4111-a2c7-4c2cb7878758",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Loop",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "19": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "UID": "be46028a-e5af-4f7b-9e4e-00c8c7d63cee",
+          "target": "OWNER",
+          "name": "getShieldPoint",
+          "NodeID": 17
+        }
+      },
+      "name": "calcResult",
+      "UID": "7cb36d17-0b64-46fb-b0dc-11f94040eeb1",
+      "target": "TARGET",
+      "NodeID": 19
+    },
+    "20": {
+      "UID": "85dea7a0-2988-4ec2-9444-22fa00760a9f",
+      "name": "doPetsActions",
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "key": "50012",
+      "name": "setCacheVal",
+      "UID": "0e67eb41-b111-4988-856a-2c37a8cdaf55",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 21
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    20,
+    9,
+    14,
+    21
+  ]
+}

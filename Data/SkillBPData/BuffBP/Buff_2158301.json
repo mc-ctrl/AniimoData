@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2158301",
+  "calcInfoByLuaConfig": {
+    "id": 2158301,
+    "heal_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

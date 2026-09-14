@@ -1,0 +1,134 @@
+{
+  "17270431": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 188.93,
+    "markPosition": [
+      122.49,
+      144.81,
+      7.59
+    ]
+  },
+  "17270099": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 7.87,
+    "markPosition": [
+      70.75,
+      48.15,
+      101.24
+    ]
+  },
+  "17270470": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 223.83,
+    "markPosition": [
+      97.45,
+      164.72,
+      4.05
+    ]
+  },
+  "17270190": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 35.36,
+    "markPosition": [
+      107.59,
+      65.22,
+      97.85
+    ]
+  },
+  "17270508": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 265.78,
+    "markPosition": [
+      66.64,
+      184.78,
+      11.71
+    ]
+  },
+  "16831190": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": false,
+    "yaw": 0.89,
+    "markPosition": [
+      -0.03,
+      0.02,
+      -2.68
+    ]
+  },
+  "17270558": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 305.54,
+    "markPosition": [
+      42.09,
+      204.79,
+      27.48
+    ]
+  },
+  "17270357": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 100.51,
+    "markPosition": [
+      143.34,
+      104.39,
+      51.08
+    ]
+  },
+  "17267912": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 342.07,
+    "markPosition": [
+      10.7,
+      11.89,
+      49.82
+    ]
+  },
+  "17270316": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 74,
+    "markPosition": [
+      131.52,
+      81.63,
+      78.75
+    ]
+  },
+  "17270397": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 146.47,
+    "markPosition": [
+      141.69,
+      124.82,
+      20.7
+    ]
+  },
+  "17270049": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 345.58,
+    "markPosition": [
+      34.06,
+      34.37,
+      84.62
+    ]
+  }
+}

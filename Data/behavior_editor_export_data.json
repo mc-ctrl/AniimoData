@@ -1,0 +1,180 @@
+{
+  "test1": {
+    "createTime": 6.3829153118239e+17,
+    "tags": {},
+    "behaviorStateKey": {
+      "templateKey": "ST_STP_CustomLoopAnimation",
+      "behaviorTreeTemplateParameters": [
+        {
+          "type": "float",
+          "value": "0",
+          "name": "tWaitTime"
+        },
+        {
+          "type": "string",
+          "value": "Emoji_Test_Doubt_Interrupt",
+          "name": "tEmojiBubbleKey"
+        },
+        {
+          "type": "float",
+          "value": "5",
+          "name": "tEmojiBubbleTimeout"
+        },
+        {
+          "type": "string",
+          "value": "aaaaa",
+          "name": "tAnimationStartKey"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationLoopKey"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationEndKey"
+        },
+        {
+          "type": "float",
+          "value": "5",
+          "name": "tAnimationTimeout"
+        },
+        {
+          "type": "bool",
+          "value": "true",
+          "name": "tHideSelf"
+        },
+        {
+          "type": "float",
+          "value": "10",
+          "name": "tHideTimeout"
+        }
+      ]
+    },
+    "name": "测试数据6"
+  },
+  "test2": {
+    "createTime": 6.3829153102021e+17,
+    "tags": {},
+    "behaviorStateKey": {
+      "templateKey": "ST_STP_Dance",
+      "behaviorTreeTemplateParameters": {}
+    },
+    "name": "测试数据2"
+  },
+  "testCopy": {
+    "createTime": 6.3829153118239e+17,
+    "tags": {},
+    "behaviorStateKey": {
+      "templateKey": "ST_STP_CustomLoopAnimation",
+      "behaviorTreeTemplateParameters": [
+        {
+          "type": "float",
+          "value": "0",
+          "name": "tWaitTime"
+        },
+        {
+          "type": "string",
+          "value": "Emoji_Test_Doubt_Interrupt",
+          "name": "tEmojiBubbleKey"
+        },
+        {
+          "type": "float",
+          "value": "5",
+          "name": "tEmojiBubbleTimeout"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationStartKey"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationLoopKey"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationEndKey"
+        },
+        {
+          "type": "float",
+          "value": "5",
+          "name": "tAnimationTimeout"
+        },
+        {
+          "type": "bool",
+          "value": "true",
+          "name": "tHideSelf"
+        },
+        {
+          "type": "float",
+          "value": "10",
+          "name": "tHideTimeout"
+        }
+      ]
+    },
+    "name": "测试数据copy"
+  },
+  "test6": {
+    "createTime": 6.3829153118239e+17,
+    "tags": [
+      "aaa",
+      "cccc",
+      "bbb"
+    ],
+    "behaviorStateKey": {
+      "templateKey": "ST_STP_CustomLoopAnimation",
+      "behaviorTreeTemplateParameters": [
+        {
+          "type": "float",
+          "value": "15",
+          "name": "tWaitTime"
+        },
+        {
+          "type": "string",
+          "value": "Emoji_Test_Doubt_Interrupt",
+          "name": "tEmojiBubbleKey"
+        },
+        {
+          "type": "float",
+          "value": "5",
+          "name": "tEmojiBubbleTimeout"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationStartKey"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationLoopKey"
+        },
+        {
+          "type": "string",
+          "value": "",
+          "name": "tAnimationEndKey"
+        },
+        {
+          "type": "float",
+          "value": "5",
+          "name": "tAnimationTimeout"
+        },
+        {
+          "type": "bool",
+          "value": "false",
+          "name": "tHideSelf"
+        },
+        {
+          "type": "float",
+          "value": "10",
+          "name": "tHideTimeout"
+        }
+      ]
+    },
+    "name": "测试数据1"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "sp_regen_p": -1,
+    "sp_inc_rate_v": -1
+  },
+  "calcInfoByLuaConfig": {
+    "id": 21222011,
+    "type": 1,
+    "ep_cost_reduce_fix": "param1"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "5762e207-84a9-48b8-b648-1c8b6640433c",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7363dc0b-1957-4f53-8559-45ee89c14eed",
+      "effectId": "Eff_Parmon_10072_ChargeFur_Biu",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "24": {
+      "value": {
+        "calcId": 21222011,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 23,
+        "UID": "487d169a-4f38-42f2-b561-db756727b17c",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "ae6f3787-6584-49ed-8a08-8d10615ba273",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "b06b1ebb-8c14-4635-8214-3b9f21b9a570",
+      "name": "isCalcResultCritical",
+      "NodeID": 14
+    },
+    "15": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "e8f151a9-476b-4b91-bca0-03ecbf219132",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "7": {
+      "switchTag": "Spark",
+      "name": "setModelSwitchTag",
+      "UID": "cceebc88-4586-4822-8c90-06b6f5489d09",
+      "NodeID": 7,
+      "groupKey": 0
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "91a2f9a7-5f82-49d4-8f1d-6d26d1bbcdf5",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "17": {
+      "UID": "24c93245-3be3-4f41-9b7a-5c800ffdf228",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17
+    },
+    "9": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "deaffe3c-3226-4754-8772-5db1cb3e45b3",
+      "NodeID": 9,
+      "groupKey": 0
+    },
+    "18": {
+      "UID": "184435a4-fad5-4114-97be-ff81275ce2c3",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 18
+    },
+    "23": {
+      "calcId": 21222011,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 23,
+      "UID": "487d169a-4f38-42f2-b561-db756727b17c",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "720ccace-ad75-4525-894a-e450b9f5c9bc",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "22": {
+      "UID": "6653799c-e1f8-4dcb-b30d-57baf873d0c0",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body_Spark",
+      "NodeID": 22
+    },
+    "21": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 21,
+      "UID": "54bcd695-6803-4c50-af9a-d7cb383299bc",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body_Spark",
+      "name": "playPreset"
+    }
+  },
+  "BPName": "buff_21222011",
+  "onBuffDestroyIds": [
+    5,
+    9,
+    22
+  ],
+  "onBuffStartIds": [
+    13,
+    11,
+    7,
+    17,
+    21
+  ]
+}

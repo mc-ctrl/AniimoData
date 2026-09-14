@@ -1,0 +1,68 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1007610076",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "eventName": "onReceiveBeAttacked",
+      "name": "getEventCombatContextTarget",
+      "UID": "6e102c6e-371b-4b82-b923-1fcbf35c543e",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "9a21c0d0-2da3-4b3b-8e66-eddd31df6be5",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        2,
+        9
+      ],
+      "NodeID": 4
+    },
+    "9": {
+      "buffId": 10074,
+      "name": "removeBuff",
+      "UID": "0ecbd0a6-d0f7-4d20-873b-86daac228f9d",
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "6e102c6e-371b-4b82-b923-1fcbf35c543e",
+        "target": "CASTER",
+        "NodeID": 8
+      },
+      "NodeID": 9
+    },
+    "6": {
+      "buffId": 10064,
+      "name": "removeBuff",
+      "UID": "8491e658-c274-439b-97d8-04c0ff09ddd9",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "7": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "f448543a-970a-49a1-a23f-b24e85f6cf43",
+      "name": "buffStartThink",
+      "NodeID": 7
+    },
+    "2": {
+      "buffId": 10076,
+      "name": "removeBuff",
+      "UID": "b2186e6c-702b-4414-8024-fbeac8a8bb7e",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    7
+  ]
+}

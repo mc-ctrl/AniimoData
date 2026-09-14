@@ -1,0 +1,186 @@
+{
+  "duration": 6,
+  "BPName": "timeline_2700005",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Money_Drop_Fly",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "nodeMap": {
+    "23": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "96b297e0-84c1-4bbf-a244-3cbab4dcab6b",
+      "NodeID": 23,
+      "lValue": {
+        "key": "touzi",
+        "name": "getCacheVal",
+        "UID": "9daa5c36-0cd6-40ee-a873-2734ea02ac25",
+        "target": "MASTER",
+        "NodeID": 22
+      }
+    },
+    "24": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "81a83de7-f2a7-4e7d-a949-41d09b1c6b51",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        34
+      ],
+      "NodeID": 24
+    },
+    "34": {
+      "name": "addRogueCoin",
+      "UID": "dc6a1029-98e6-41d2-ada4-5d9346f5721f",
+      "count": 200,
+      "target": {
+        "UID": "f5e6683f-1cd6-4ffa-bbaf-dbb38e6245b6",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 33
+      },
+      "NodeID": 34
+    },
+    "27": {
+      "UID": "f91209dd-74db-4ef2-abf9-399c16a7149b",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 27
+    },
+    "30": {
+      "name": "addRogueCoin",
+      "UID": "57cee399-c064-489c-9e25-c33e0a5e4593",
+      "count": 100,
+      "target": {
+        "UID": "fcbfebc7-360a-4195-bd0e-4ec0fb8cf406",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 29
+      },
+      "NodeID": 30
+    },
+    "31": {
+      "UID": "e7e3dd7c-7030-4fed-9d01-b144087a46f9",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 31
+    },
+    "16": {
+      "UID": "66f2e637-4a6c-4a26-a4e3-48f3076719f2",
+      "actorId": {
+        "UID": "95506ad9-9f48-41ad-be65-766585ca01bb",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 15
+      },
+      "name": "destroyEntity",
+      "NodeID": 16
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "c913c3c2-0422-4e80-8ef8-3e55f725b616",
+      "effectId": "Eff_Buff_Rogue_Money_Drop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "28": {
+      "scale": 1,
+      "target": {
+        "UID": "f91209dd-74db-4ef2-abf9-399c16a7149b",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 27
+      },
+      "name": "playEffectStr",
+      "UID": "0359d47e-ad46-41e0-89c6-a4780f478745",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "fcbfebc7-360a-4195-bd0e-4ec0fb8cf406",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 29
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "39173a6a-4d99-412e-942c-a84f8e10655a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Pickup",
+      "NodeID": 18
+    },
+    "32": {
+      "name": "addRogueCoin",
+      "UID": "5a4c027f-718f-4c69-965f-a9b9dbcbc40d",
+      "count": 150,
+      "target": {
+        "UID": "e7e3dd7c-7030-4fed-9d01-b144087a46f9",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 31
+      },
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "f5e6683f-1cd6-4ffa-bbaf-dbb38e6245b6",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 33
+    },
+    "20": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "0602322e-9a26-4468-a766-d6704c66c674",
+      "NodeID": 20,
+      "lValue": {
+        "key": "touzi",
+        "name": "getCacheVal",
+        "UID": "8494ce74-5a29-4337-bc04-71772a0e1f9a",
+        "target": "MASTER",
+        "NodeID": 19
+      }
+    },
+    "21": {
+      "actionIds": [
+        30
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "814ed23e-de27-4b98-94b4-6883a32cb25d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 21
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    28,
+    21,
+    8,
+    18,
+    16
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 10
+}

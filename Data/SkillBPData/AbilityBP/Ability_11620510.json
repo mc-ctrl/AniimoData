@@ -1,0 +1,114 @@
+{
+  "BPName": "ability_11620510",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "83": {
+      "name": "stopEffectStr",
+      "UID": "30d01a47-aade-42aa-96fd-640df4fe1bcf",
+      "effectId": "Eff_Parmon_10162_Skill_MovingSweep_01_R",
+      "target": "OWNER",
+      "NodeID": 83
+    },
+    "172": {
+      "name": "stopSoundStr",
+      "UID": "0bcffbad-66a6-4860-9a08-f4aeb687017e",
+      "soundId": "parmon_10162_skill_movingSweep_prepare",
+      "target": "OWNER",
+      "NodeID": 172
+    },
+    "8": {
+      "timelineId": 11620510001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "133": {
+      "name": "stopEffectStr",
+      "UID": "57f6dc83-f92f-47f2-8007-8b0449a3433c",
+      "effectId": "Eff_Parmon_10162_Skill_MovingSweep_01_L_01",
+      "target": "OWNER",
+      "NodeID": 133
+    },
+    "85": {
+      "name": "stopEffectStr",
+      "UID": "dba6cc68-3699-430f-986a-cb619788eb2b",
+      "effectId": "Eff_Parmon_10162_Skill_MovingSweep_01_L",
+      "target": "OWNER",
+      "NodeID": 85
+    },
+    "134": {
+      "name": "stopEffectStr",
+      "UID": "ac17eda9-b071-402a-b761-ce819f97859b",
+      "effectId": "Eff_Parmon_10162_Skill_MovingSweep_01_R_01",
+      "target": "OWNER",
+      "NodeID": 134
+    },
+    "173": {
+      "name": "stopSoundStr",
+      "UID": "a560c857-e205-461e-82ed-a3b4d13ffa2a",
+      "soundId": "parmon_10162_skill_movingSweep_charge",
+      "target": "OWNER",
+      "NodeID": 173
+    },
+    "131": {
+      "name": "stopEffectStr",
+      "UID": "986f1952-a6ba-4486-890d-1915621211f3",
+      "effectId": "Eff_Parmon_10162_Skill_MovingSweep_01_L_02",
+      "target": "OWNER",
+      "NodeID": 131
+    },
+    "132": {
+      "name": "stopEffectStr",
+      "UID": "65dc2733-158d-4d41-8f0b-9fc10a655a3e",
+      "effectId": "Eff_Parmon_10162_Skill_MovingSweep_01_R_02",
+      "target": "OWNER",
+      "NodeID": 132
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MovingSweep_Charge",
+    "Skill_MovingSweep_Charge_Hold",
+    "Skill_MovingSweep_Charge_Attack"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10162_Skill_MovingSweep_Flare_L",
+    "Eff_Parmon_10162_Skill_MovingSweep_Flare_R",
+    "Eff_Parmon_10162_Skill_MovingSweep",
+    "Eff_Parmon_10162_Skill_MovingSweep_01_L",
+    "Eff_Parmon_10162_Skill_MovingSweep_01_R",
+    "Eff_Hit_Rock_Blunt_Big",
+    "Eff_Parmon_10162_Skill_MovingSweep_01_L_02",
+    "Eff_Parmon_10162_Skill_MovingSweep_01_R_02",
+    "Eff_Parmon_10162_Skill_MovingSweep_01_L_01",
+    "Eff_Parmon_10162_Skill_MovingSweep_01_R_01",
+    "Eff_Parmon_10162_Skill_MovingSweep_02",
+    "Eff_Parmon_10162_Skill_MovingSweep_01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "onAbilityEndIds": [
+    131,
+    132,
+    133,
+    134,
+    83,
+    85,
+    172,
+    173
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10800051
+}

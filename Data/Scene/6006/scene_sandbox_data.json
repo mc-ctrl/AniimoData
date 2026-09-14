@@ -1,0 +1,644 @@
+{
+  "91068405": {
+    "owner": "刘丰槊",
+    "autoSave": true,
+    "chunk": 992250,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91068453,
+    "levelItems": {
+      "91068406": {
+        "majorCompId": 0,
+        "owner": "qiao.he",
+        "EditorName": "玩家附身魔弗灵的特殊特效播放信号",
+        "position": [
+          -1686.96,
+          27.55,
+          1518.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068406,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068407": {
+        "majorCompId": 0,
+        "owner": "唐邹韬",
+        "EditorName": "交互物雕像占位",
+        "position": [
+          -1680.87,
+          28.44,
+          1528.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068407,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_LevelItem_MorphlingStatue_NoFunction.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_LevelItem_MorphlingStatue_NoFunction.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91068408": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "魔弗灵区域BGM",
+        "position": [
+          -1693.49,
+          27.71,
+          1523.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068408,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_MorphlingInGame_BGM.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_MorphlingInGame_BGM.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068409": {
+        "majorCompId": 0,
+        "owner": "唐邹韬",
+        "EditorName": "玩法开启",
+        "position": [
+          -1683.01,
+          28.53,
+          1515.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068409,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068410": {
+        "majorCompId": 0,
+        "owner": "唐邹韬",
+        "EditorName": "玩法完成",
+        "position": [
+          -1686.27,
+          28,
+          1511.69
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068410,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068411": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "开场引导镜头",
+        "position": [
+          -1681.45,
+          28.35,
+          1526.29
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068411,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 91095058,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068412": {
+        "majorCompId": 0,
+        "owner": "唐邹韬",
+        "EditorName": "非首次进入玩法",
+        "position": [
+          -1692.46,
+          27.62,
+          1518.76
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068412,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068413": {
+        "majorCompId": 75060209,
+        "owner": "贺桥",
+        "EditorName": "面具宝箱",
+        "position": [
+          -1671.84,
+          28,
+          1523.41
+        ],
+        "rotation": [
+          0,
+          302.72,
+          0
+        ],
+        "id": 91068413,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91068438,
+            "duration": 2.5,
+            "syncChestPosition": false
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068414": {
+        "majorCompId": 0,
+        "owner": "唐邹韬",
+        "EditorName": "开场剧情结束",
+        "position": [
+          -1682.56,
+          28.46,
+          1512.19
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068414,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068415": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "玩法完成-任务界面",
+        "position": [
+          -1679.01,
+          28.17,
+          1526.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068415,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 77293592,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068416": {
+        "majorCompId": 0,
+        "owner": "dayu.zhao",
+        "EditorName": "反打魔弗灵",
+        "position": [
+          -1684.71,
+          29.22,
+          1525.03
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068416,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068417": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "宝箱特效播完了",
+        "position": [
+          -1685.39,
+          28.8,
+          1514.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068417,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068418": {
+        "majorCompId": 73871347,
+        "owner": "唐邹韬",
+        "EditorName": "开场剧情",
+        "position": [
+          -1675.25,
+          27.68,
+          1526.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068418,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 91095030,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068419": {
+        "majorCompId": 0,
+        "owner": "唐邹韬",
+        "EditorName": "玩法曾失败过",
+        "position": [
+          -1686.96,
+          27.55,
+          1518.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068419,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068420": {
+        "majorCompId": 73871347,
+        "owner": "唐邹韬",
+        "EditorName": "玩法完成后剧情",
+        "position": [
+          -1679.01,
+          28.17,
+          1526.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068420,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 76761261
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068421": {
+        "majorCompId": 0,
+        "owner": "唐邹韬",
+        "EditorName": "计数",
+        "position": [
+          -1679.92,
+          28.5,
+          1512.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068421,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068422": {
+        "majorCompId": 73429185,
+        "owner": "贺桥",
+        "EditorName": "玩家进入场景后的初始位置",
+        "position": [
+          -1671.55,
+          28.11,
+          1528.31
+        ],
+        "rotation": [
+          0,
+          244.08,
+          0
+        ],
+        "id": 91068422,
+        "componentsInfo": {
+          "73429185": {
+            "positions": [
+              [
+                -1671.55,
+                28.11,
+                1528.31
+              ]
+            ],
+            "rotations": [
+              [
+                0,
+                0.85,
+                0,
+                -0.53
+              ]
+            ]
+          }
+        },
+        "configId": 430,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068423": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "找到对的了",
+        "position": [
+          -1685.39,
+          28.8,
+          1514.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068423,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068424": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "找错了",
+        "position": [
+          -1685.39,
+          28.8,
+          1514.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068424,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91068425": {
+        "majorCompId": 73429185,
+        "owner": "贺桥",
+        "EditorName": "P_Item_MeetingPlace (1)",
+        "position": [
+          -1681.07,
+          28.96,
+          1518.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068425,
+        "componentsInfo": {
+          "73429185": {
+            "positions": [
+              [
+                -1681.07,
+                28.96,
+                1518.61
+              ]
+            ],
+            "rotations": [
+              [
+                0,
+                -1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 430,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "全局_其他关卡_百变怪羞羞獭",
+    "spawners": [
+      91068437,
+      91068439,
+      91068445,
+      91068452,
+      91101651
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/6006/Sandbox_91068405_GraphRef.asset",
+    "sightLevel": 512,
+    "position": [
+      -1692.63,
+      28.8,
+      1523.55
+    ],
+    "id": 91068405,
+    "enableFinishMark": false
+  }
+}

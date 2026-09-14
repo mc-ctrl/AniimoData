@@ -1,0 +1,53 @@
+{
+  "duration": 5,
+  "BPName": "ability_912120142",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Small",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "55": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 9121201,
+      "name": "createEntity",
+      "UID": "e218945f-394b-49fa-9d86-45304acb6ff7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 55,
+      "pos": {
+        "UID": "a4512aa8-8a04-4cd2-8abe-7e71e29f61c7",
+        "name": "getProjectilePos",
+        "NodeID": 54
+      }
+    }
+  },
+  "maxMoveSpeed": 22,
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    55
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 2,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 25
+}

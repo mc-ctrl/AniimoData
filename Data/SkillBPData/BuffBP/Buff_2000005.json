@@ -1,0 +1,50 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2000005",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 2000005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "4c026027-da90-405f-8179-58cd022840c0",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "value": {
+        "calcId": 2000005,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "4c026027-da90-405f-8179-58cd022840c0",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "ab88578e-2063-4f12-b384-683a6e23670b",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "5": {
+      "key": "buff_20000055",
+      "duration": 0.2,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "291dfeac-00ee-4b1f-a92a-2cc6091d45bc",
+      "name": "addEntityTimer"
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2000005,
+    "ep_max_fix": "param0",
+    "type": 1
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

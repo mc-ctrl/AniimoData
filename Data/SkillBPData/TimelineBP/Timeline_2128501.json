@@ -1,0 +1,136 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "timelineId": 2128501202,
+      "name": "jumpToNextTimeline",
+      "UID": "edb4ad33-acfa-431a-ac99-0198be756ca4",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "4": {
+      "UID": "e5bfbdb0-e74d-43ba-a4f4-7f6d3df19330",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          15,
+          38
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "7cfdff5d-f888-474b-a54f-c1c068728fa9",
+      "effectId": "Eff_Parmon_10285_Attack03",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "6": {
+      "UID": "d6330811-c566-4fd1-bac5-80a42f10dad1",
+      "name": "destroyEntity",
+      "NodeID": 6
+    },
+    "46": {
+      "key": "2",
+      "duration": 0.8,
+      "actionIds": [
+        45
+      ],
+      "NodeID": 46,
+      "UID": "a1f18f44-89ec-469f-a9db-20106a45b3ae",
+      "name": "addTimer"
+    },
+    "15": {
+      "eventName": "gesila01",
+      "NodeID": 15,
+      "UID": "20574fe8-628a-498c-9a26-50edabdf1d4e",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        14
+      ]
+    },
+    "7": {
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 7,
+      "UID": "57a29db2-5c26-4abc-9316-822deea0cd9c"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          28,
+          24,
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 26,
+      "UID": "cdbe5443-8711-4fdf-b100-5402e0cc697c"
+    },
+    "27": {
+      "UID": "71fc4dd1-6de7-4007-af2a-fccabf2f515b",
+      "eventType": "Notify",
+      "time": 4.2,
+      "NodeID": 27
+    },
+    "28": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "d0577f6f-02f6-427a-b437-9373de2a542a",
+      "effectId": "Eff_Parmon_10285_Attack03_End",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "45": {
+      "UID": "286c9972-24a3-4109-9d74-696cb8e08d3e",
+      "name": "destroyEntity",
+      "NodeID": 45
+    },
+    "38": {
+      "eventName": "gesila10",
+      "NodeID": 38,
+      "UID": "5ff5a65b-e15a-48aa-8298-efc378359f81",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        37
+      ]
+    },
+    "14": {
+      "timelineId": 2128501201,
+      "name": "jumpToNextTimeline",
+      "UID": "8e1d106a-1a0c-4583-abc3-7f362645a5f9",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7badcd31-24cf-46e8-82fa-59915a50485f",
+      "effectId": "Eff_Parmon_10285_Attack03",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2128501",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    4,
+    26,
+    27,
+    7
+  ],
+  "layer": "Base",
+  "length": 6
+}

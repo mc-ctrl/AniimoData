@@ -1,0 +1,63 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "48": {
+      "eventName": "huiyin",
+      "name": "notifyCustomEvent",
+      "UID": "9bc2a7c0-d479-46a4-921d-4e8800749b7b",
+      "target": "MASTER",
+      "NodeID": 48
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "b714392e-3ccd-4f6e-b936-2e5148815a5a",
+      "effectId": "Eff_Parmon_10285_Attack03",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5bfd299b-efaa-4558-8d0b-36383124ad9f",
+      "effectId": "Eff_Parmon_10285_Attack03_End02",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "34": {
+      "UID": "8192b871-a41d-488a-a952-4e2e7e6eef7e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          48,
+          32,
+          40,
+          44
+        ]
+      },
+      "NodeID": 34
+    },
+    "43": {
+      "UID": "4801beb6-625a-4320-8c51-dcc76903fc20",
+      "name": "destroyEntity",
+      "NodeID": 43
+    },
+    "44": {
+      "key": "2",
+      "duration": 0.8,
+      "actionIds": [
+        43
+      ],
+      "NodeID": 44,
+      "UID": "fb5bc19b-e1c2-49e5-b081-525bc60af101",
+      "name": "addTimer"
+    }
+  },
+  "BPName": "timeline_2128501",
+  "NodeID": 36,
+  "UID": "c12cc97c-7a91-4762-8675-e0fa37c44c5c",
+  "eventIds": [
+    34
+  ],
+  "layer": "Base",
+  "length": 5
+}

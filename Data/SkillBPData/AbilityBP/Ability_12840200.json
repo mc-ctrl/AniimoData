@@ -1,0 +1,34 @@
+{
+  "BPName": "ability_12840200",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10800140,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "21": {
+      "timelineId": 12840200002,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 21
+    }
+  },
+  "onAbilityCastIds": [
+    21
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3.5,
+  "preloadAnims": [
+    "Skill_Talus",
+    "Skill_Burrow_Attack"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

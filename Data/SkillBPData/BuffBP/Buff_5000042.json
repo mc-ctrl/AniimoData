@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000042",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "5f138e50-55f6-4fd0-a7dd-9cad03545d85",
+      "name": "isCalcResultCritical",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        10,
+        8
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "9c522a91-7138-4ef4-898a-f1227ddedfe5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11,
+        6
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5000043,
+      "NodeID": 6,
+      "UID": "1cdfb565-e23f-4834-bba3-97ac839d19c1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "buffId": 5000043,
+      "name": "removeBuff",
+      "UID": "8b2ce8b9-12f2-4ed5-9db5-51c609421485",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5000044,
+      "NodeID": 8,
+      "UID": "f33fbd65-d49c-486c-a63f-d72662d779ee",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "buffId": 5000044,
+      "name": "removeBuff",
+      "UID": "112ae428-c807-4f26-a78c-cf37df400d3e",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "11": {
+      "buffId": 5000044,
+      "name": "removeBuff",
+      "UID": "0d66239e-485e-4e50-93c6-d6586ced0319",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "627c23e3-8046-46f3-892c-d3ceff39a3af",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "buffId": 5000043,
+      "name": "removeBuff",
+      "UID": "21a864d5-bee7-4e00-86ef-2f30453016ae",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    12,
+    14
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

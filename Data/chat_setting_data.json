@@ -1,0 +1,107 @@
+[
+  {
+    "tab": "word",
+    "widgetDefaultValue": 1,
+    "name": 1967447561,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetType": 1,
+    "optionType": 1
+  },
+  {
+    "tab": "bullet",
+    "widgetTxt": [
+      42,
+      38,
+      39,
+      40
+    ],
+    "widgetDefaultValue": [
+      38,
+      39,
+      40
+    ],
+    "widgetType": 6,
+    "optionType": 2
+  },
+  {
+    "tab": "bulletSet",
+    "widgetParam": [
+      1,
+      10
+    ],
+    "widgetDefaultValue": 5,
+    "widgetType": 2,
+    "name": 1384826061
+  },
+  {
+    "tab": "bulletSet",
+    "widgetParam": [
+      1,
+      10
+    ],
+    "widgetDefaultValue": 5,
+    "widgetType": 2,
+    "name": 1692453504
+  },
+  {
+    "tab": "messageInform",
+    "widgetTxt": [
+      42,
+      36,
+      95,
+      96,
+      37,
+      38,
+      39,
+      40,
+      46,
+      41
+    ],
+    "widgetDefaultValue": [
+      36,
+      95,
+      96,
+      37,
+      38,
+      39,
+      40,
+      46,
+      41
+    ],
+    "widgetType": 6,
+    "optionType": 2
+  },
+  {
+    "tab": "audioplay",
+    "widgetDefaultValue": [
+      39,
+      46,
+      41
+    ],
+    "name": 1440553830,
+    "widgetTxt": [
+      42,
+      36,
+      95,
+      96,
+      37,
+      38,
+      39,
+      40,
+      46,
+      41
+    ],
+    "widgetType": 6,
+    "optionType": 2
+  },
+  {
+    "tab": "chatBubble",
+    "buttonFunc": [
+      "openChatBubblePanel"
+    ],
+    "widgetType": 7
+  }
+]

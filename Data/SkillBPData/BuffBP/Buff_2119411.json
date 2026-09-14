@@ -1,0 +1,28 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119411",
+  "NodeID": 1,
+  "UID": "f10bb700-0b18-471e-a1bc-9a2e140e2469",
+  "onBuffRefreshIds": [
+    3
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a33ede7a-a835-4d50-99a7-b02b9a84dd51",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_GreatSword_Loop",
+      "speed": 1,
+      "NodeID": 3
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

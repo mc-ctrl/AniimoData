@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_12850111",
+  "NodeID": 1,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "17": {
+      "timelineId": 12850111002,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 17
+    }
+  },
+  "onAbilityCastIds": [
+    17
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Bullet_2",
+    "Skill_Earthquake_BurrowState"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Parmon_10285_Skill_Bullet_Iron",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10285_Skill_Bullet_Iron_Hit",
+    "Eff_Parmon_10285_Skill_Bullet_Iron_Start"
+  ],
+  "searchRelation": 2,
+  "name": "火花",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10700371
+}

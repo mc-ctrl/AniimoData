@@ -1,0 +1,111 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117104",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "9b96fe9d-5c3c-455d-bb09-84fb61b32ab5",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "actionIds": [
+        2,
+        10,
+        17,
+        20
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "ac0f6250-412b-4913-bb03-6618a1989ca3",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "8db74382-b949-49e3-883e-ae741b85187d",
+      "target": {
+        "UID": "e376d646-6fc2-4306-889b-8d3662b0f471",
+        "name": "getLockedTarget",
+        "NodeID": 13
+      },
+      "name": "checkGenderDifference",
+      "NodeID": 14
+    },
+    "10": {
+      "duration": 20,
+      "actionIds": [
+        8,
+        18,
+        19
+      ],
+      "NodeID": 10,
+      "UID": "f586e95d-d8a0-485e-b12e-0a3f19954506",
+      "name": "addTimer"
+    },
+    "15": {
+      "delay": 0,
+      "interval": 0.2,
+      "UID": "9024947c-a86f-4dff-9c50-aadcec6ca292",
+      "name": "buffStartThink",
+      "NodeID": 15
+    },
+    "8": {
+      "NodeID": 8,
+      "UID": "eccbf72f-a3e7-4f2b-b7de-6e8321b5ab9c",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": false
+    },
+    "17": {
+      "target": "OWNER",
+      "duration": 20,
+      "buffId": 2117103,
+      "NodeID": 17,
+      "UID": "a4f9cf6e-0091-4d83-9298-c24221bef693",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "buffId": 2117103,
+      "name": "removeBuff",
+      "UID": "82f71b4e-5673-402f-b612-b0f5f850d567",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "buffId": 2117104,
+      "name": "removeBuff",
+      "UID": "d0fef5e4-fa47-4185-a10d-a66cb3372c71",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "20": {
+      "UID": "89edeff4-a13d-4552-8be7-0a996231bfef",
+      "name": "buffStopThink",
+      "buffTemplateId": 2117104,
+      "NodeID": 20
+    },
+    "2": {
+      "NodeID": 2,
+      "UID": "d0062ff7-0e19-485d-83ce-9f95812a76aa",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": true
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    15
+  ]
+}

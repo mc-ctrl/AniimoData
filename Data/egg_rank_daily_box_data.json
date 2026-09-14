@@ -1,0 +1,366 @@
+{
+  "5": {
+    "addWeight_hard_1": 0.6,
+    "addWeight_hard_2": 0.9,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.3,
+    "unlockSpeed": 14400,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Gold.png",
+    "reward": [
+      5100105
+    ],
+    "quality": 5,
+    "name": 1478068789
+  },
+  "23": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 180,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Green.png",
+    "reward": [
+      5100108
+    ],
+    "quality": 2,
+    "name": 1837438001
+  },
+  "35": {
+    "addWeight_hard_1": 0.6,
+    "addWeight_hard_2": 0.9,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.3,
+    "unlockSpeed": 900,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Gold.png",
+    "reward": [
+      5100120
+    ],
+    "quality": 5,
+    "name": 1319556418
+  },
+  "22": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 60,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Green.png",
+    "reward": [
+      5100107
+    ],
+    "quality": 2,
+    "name": 1873303676
+  },
+  "2": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 180,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Green.png",
+    "reward": [
+      5100102
+    ],
+    "quality": 2,
+    "name": 1491885142
+  },
+  "31": {
+    "addWeight_hard_1": 0.8,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.2,
+    "unlockSpeed": 600,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Purple.png",
+    "reward": [
+      5100116
+    ],
+    "quality": 4,
+    "name": 1410487467
+  },
+  "13": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 28800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Rainbow.png",
+    "reward": [
+      5100124
+    ],
+    "quality": 5,
+    "name": 1422721039
+  },
+  "12": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 28800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Rainbow.png",
+    "reward": [
+      5100123
+    ],
+    "quality": 5,
+    "name": 1942485881
+  },
+  "26": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 240,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Blue.png",
+    "reward": [
+      5100111
+    ],
+    "quality": 3,
+    "name": 1610321202
+  },
+  "11": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 28800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Rainbow.png",
+    "reward": [
+      5100122
+    ],
+    "quality": 5,
+    "name": 1955614199
+  },
+  "1": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 10,
+    "icon": "$ui_item_GrabEgg_TreasureChest_White.png",
+    "reward": [
+      5100101
+    ],
+    "quality": 1,
+    "name": 1418156003
+  },
+  "21": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 15,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Green.png",
+    "reward": [
+      5100106
+    ],
+    "quality": 2,
+    "name": 1177634053
+  },
+  "3": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 300,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Blue.png",
+    "reward": [
+      5100103
+    ],
+    "quality": 3,
+    "name": 1538690611
+  },
+  "4": {
+    "addWeight_hard_1": 0.8,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.2,
+    "unlockSpeed": 1800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Purple.png",
+    "reward": [
+      5100104
+    ],
+    "quality": 4,
+    "name": 2039272366
+  },
+  "24": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 120,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Blue.png",
+    "reward": [
+      5100109
+    ],
+    "quality": 3,
+    "name": 2140090066
+  },
+  "14": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 28800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Rainbow.png",
+    "reward": [
+      5100125
+    ],
+    "quality": 5,
+    "name": 1636272243
+  },
+  "28": {
+    "addWeight_hard_1": 0.8,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.2,
+    "unlockSpeed": 300,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Purple.png",
+    "reward": [
+      5100113
+    ],
+    "quality": 4,
+    "name": 1786473894
+  },
+  "15": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 28800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Rainbow.png",
+    "reward": [
+      5100126
+    ],
+    "quality": 5,
+    "name": 1716654051
+  },
+  "25": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 180,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Blue.png",
+    "reward": [
+      5100110
+    ],
+    "quality": 3,
+    "name": 1562250255
+  },
+  "16": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 28800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Rainbow.png",
+    "reward": [
+      5100127
+    ],
+    "quality": 5,
+    "name": 2106158702
+  },
+  "27": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 300,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Blue.png",
+    "reward": [
+      5100112
+    ],
+    "quality": 3,
+    "name": 1783953412
+  },
+  "17": {
+    "addWeight_hard_1": 1,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1,
+    "addWeight_hard_4": 1,
+    "unlockSpeed": 28800,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Rainbow.png",
+    "reward": [
+      5100128
+    ],
+    "quality": 5,
+    "name": 1209349894
+  },
+  "29": {
+    "addWeight_hard_1": 0.8,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.2,
+    "unlockSpeed": 600,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Purple.png",
+    "reward": [
+      5100114
+    ],
+    "quality": 4,
+    "name": 1108866827
+  },
+  "30": {
+    "addWeight_hard_1": 0.8,
+    "addWeight_hard_2": 1,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.2,
+    "unlockSpeed": 300,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Purple.png",
+    "reward": [
+      5100115
+    ],
+    "quality": 4,
+    "name": 1200495980
+  },
+  "32": {
+    "addWeight_hard_1": 0.6,
+    "addWeight_hard_2": 0.9,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.3,
+    "unlockSpeed": 450,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Gold.png",
+    "reward": [
+      5100117
+    ],
+    "quality": 5,
+    "name": 1588258120
+  },
+  "33": {
+    "addWeight_hard_1": 0.6,
+    "addWeight_hard_2": 0.9,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.3,
+    "unlockSpeed": 900,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Gold.png",
+    "reward": [
+      5100118
+    ],
+    "quality": 5,
+    "name": 1435540827
+  },
+  "34": {
+    "addWeight_hard_1": 0.6,
+    "addWeight_hard_2": 0.9,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.3,
+    "unlockSpeed": 450,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Gold.png",
+    "reward": [
+      5100119
+    ],
+    "quality": 5,
+    "name": 1454689616
+  },
+  "36": {
+    "addWeight_hard_1": 0.6,
+    "addWeight_hard_2": 0.9,
+    "addWeight_hard_3": 1.1,
+    "addWeight_hard_4": 1.3,
+    "unlockSpeed": 900,
+    "icon": "$ui_item_GrabEgg_TreasureChest_Gold.png",
+    "reward": [
+      5100121
+    ],
+    "quality": 5,
+    "name": 1204597990
+  }
+}

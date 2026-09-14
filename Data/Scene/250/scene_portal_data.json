@@ -1,0 +1,24 @@
+{
+  "25000001": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 359.64,
+    "markPosition": [
+      0,
+      6.5,
+      0
+    ]
+  },
+  "25000000": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      0,
+      20,
+      0
+    ]
+  }
+}

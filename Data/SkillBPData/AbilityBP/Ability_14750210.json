@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_14750210",
+  "NodeID": 1,
+  "UID": "a3792e0d-ec41-428e-9242-f962b077057c",
+  "abilityParamId": 10200380,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14750210001,
+      "name": "setCombatActionTimeline",
+      "UID": "2535def1-0039-4782-b1b2-34bdd5e526ec",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 2.5,
+  "preloadAnims": [
+    "Skill_AnxiousBeat"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10475_Skill_AnxiousBeat_01_Ice",
+    "Eff_Parmon_10475_Skill_AnxiousBeat_02_Ice",
+    "Eff_Parmon_10475_Skill_AnxiousBeat_03_Ice"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

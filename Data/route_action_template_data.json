@@ -1,0 +1,315 @@
+{
+  "actions": {
+    "Alert": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 3,
+          "animName": "Behav_Alert",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 6,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        }
+      ],
+      "templateKey": "Alert",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Angry": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 4,
+          "bubbleName": "angry",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        },
+        {
+          "actionType": 3,
+          "animName": "Behav_Angry",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        },
+        {
+          "actionType": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        }
+      ],
+      "templateKey": "Angry",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Chat Bubble": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 4,
+          "bubbleName": "chat",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 3,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        },
+        {
+          "actionType": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        }
+      ],
+      "templateKey": "Chat Bubble",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Doubt": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 4,
+          "bubbleName": "doubt",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 5,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        },
+        {
+          "actionType": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        }
+      ],
+      "templateKey": "Doubt",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Eat": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 4,
+          "bubbleName": "eat",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        },
+        {
+          "actionType": 8,
+          "animGroupTime": 4,
+          "animGroupName": "Eat",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnimGroup"
+        },
+        {
+          "actionType": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        }
+      ],
+      "templateKey": "Eat",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Fly Idle": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 3,
+          "animName": "Idle",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 2,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        }
+      ],
+      "templateKey": "Fly Idle",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Happy": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 4,
+          "bubbleName": "happy",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        },
+        {
+          "actionType": 3,
+          "animName": "Behav_Happy",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 5,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        },
+        {
+          "actionType": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        }
+      ],
+      "templateKey": "Happy",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Idlespecial": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 3,
+          "animName": "IdleSpecial",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 6,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        }
+      ],
+      "templateKey": "Idlespecial",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Sleep forever": {
+      "actionType": 1,
+      "actions": [
+        {
+          "enterAction": {
+            "actionType": 1,
+            "actions": [
+              {
+                "actionType": 4,
+                "bubbleName": "sleep",
+                "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+              },
+              {
+                "actionType": 8,
+                "animGroupTime": 99999,
+                "animGroupName": "Sleep",
+                "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnimGroup"
+              }
+            ],
+            "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpSequence"
+          },
+          "actionType": 5,
+          "state": 4,
+          "exitAction": {
+            "actionType": 1,
+            "actions": [
+              {
+                "actionType": 4,
+                "bubbleName": "",
+                "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+              }
+            ],
+            "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpSequence"
+          },
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpState"
+        }
+      ],
+      "templateKey": "Sleep forever",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Sleep": {
+      "actionType": 1,
+      "actions": [
+        {
+          "enterAction": {
+            "actionType": 1,
+            "actions": [
+              {
+                "actionType": 4,
+                "bubbleName": "sleep",
+                "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+              },
+              {
+                "actionType": 8,
+                "animGroupTime": 10,
+                "animGroupName": "Sleep",
+                "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnimGroup"
+              }
+            ],
+            "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpSequence"
+          },
+          "actionType": 5,
+          "state": 4,
+          "exitAction": {
+            "actionType": 1,
+            "actions": [
+              {
+                "actionType": 4,
+                "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+              }
+            ],
+            "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpSequence"
+          },
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpState"
+        }
+      ],
+      "templateKey": "Sleep",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Idle": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 3,
+          "animName": "Idle",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        }
+      ],
+      "templateKey": "Idle",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "Dash": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 3,
+          "animName": "DashStart",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 0.42,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        },
+        {
+          "actionType": 3,
+          "animName": "DashStop",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpPlayAnim"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 1.5,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        }
+      ],
+      "templateKey": "Dash",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    },
+    "HeartBreak Bubble": {
+      "actionType": 1,
+      "actions": [
+        {
+          "actionType": 4,
+          "bubbleName": "heartbreak",
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        },
+        {
+          "actionType": 0,
+          "waitTime": 5,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpWait"
+        },
+        {
+          "actionType": 4,
+          "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpShowBubble"
+        }
+      ],
+      "templateKey": "HeartBreak Bubble",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplate"
+    }
+  }
+}

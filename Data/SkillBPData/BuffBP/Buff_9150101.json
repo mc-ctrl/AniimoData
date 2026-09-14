@@ -1,0 +1,121 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9150101",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    12
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 915010301,
+      "NodeID": 3,
+      "UID": "40e168f8-ea49-4ceb-9890-945c869a351b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "0b1bf5aa-e39f-4fe7-980d-0a4050086056",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "15": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "d5658941-34b7-4a35-b3d2-75bf5a7a2e96",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "6d5b7e7a-1f25-4a6b-8820-c0766a53b482",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "07c8cc36-b8dc-4998-b491-515d0f97b7d9",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "calcId": 9150101,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "da717d1e-98ed-4d25-b995-af8ab3a120c7",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "UID": "46081d55-048c-4c4b-bfa3-72a7a72eeaa2",
+      "name": "buffStopThink",
+      "NodeID": 17
+    },
+    "11": {
+      "UID": "19ce677d-3a1e-4bf5-8f15-473f558b9bd7",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "hp_cur": {
+          "rValue": {
+            "name": "getAttribute",
+            "UID": "4af0c472-d65d-402d-86b4-56c55d3267a2",
+            "target": "OWNER",
+            "NodeID": 14,
+            "attributeName": "hp_max_cur"
+          },
+          "name": "multiply",
+          "UID": "82a5284f-c14c-4124-8642-6b13425fe6b5",
+          "NodeID": 9,
+          "lValue": {
+            "calcId": 9150101,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 8,
+            "UID": "da717d1e-98ed-4d25-b995-af8ab3a120c7",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "NodeID": 11
+    },
+    "5": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "5b550cdf-6b78-4bd4-be1d-37f43b1ff9d0",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "a22ee037-e0ad-4f24-9f3b-c753ba06adba",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17
+      ],
+      "NodeID": 12
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7
+  ]
+}

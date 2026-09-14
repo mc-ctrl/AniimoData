@@ -1,0 +1,61 @@
+{
+  "duration": 1,
+  "BPName": "ability_11940511",
+  "NodeID": 60,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Boss_Chop06",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "moveSpeed": 10,
+  "onProjectileHitIds": [
+    72
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.5,
+  "sweepShape": 0,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "nodeMap": {
+    "72": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Slash_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 3000
+      },
+      "UID": "d1aeae27-f2e2-449e-9785-6ce53ba54c1a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 72
+    }
+  },
+  "UID": "851ec997-b98e-40f4-95d0-c1b423d387a2",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 72,
+  "impulseId": 3000,
+  "acceleration": -10
+}

@@ -1,0 +1,138 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 27,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10011_Skill_Gliding_Bullet_Ice",
+  "onProjectileGroundedIds": [
+    107
+  ],
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    19,
+    12,
+    123
+  ],
+  "nodeMap": {
+    "27": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10120340,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "cb6d6aac-1239-46ad-a0d1-962d7f88ffcd",
+      "target": "TARGET",
+      "NodeID": 27,
+      "attackData": {
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Ice_Blunt",
+        "hitSoundStr": "parmon_starly_attack_hit",
+        "hitCameraShakeId": 10103
+      }
+    },
+    "125": {
+      "value": {
+        "calcId": 10120340,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 124,
+        "UID": "a8a9352f-adf3-4581-b8bc-ad4dee5804a1",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "9149754a-383a-42ca-bfa8-34f693e74729",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 125
+    },
+    "124": {
+      "calcId": 10120340,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 124,
+      "UID": "a8a9352f-adf3-4581-b8bc-ad4dee5804a1",
+      "name": "getParamByLuaConfig"
+    },
+    "123": {
+      "cameraShakeId": 10103,
+      "name": "playCameraImpulseById",
+      "UID": "c9673fc7-1fd6-456f-8f6b-0229535afc79",
+      "target": "OWNER",
+      "NodeID": 123
+    },
+    "19": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 27,
+      "NodeID": 19,
+      "UID": "b145a9f2-ae00-4ae1-87ca-273ac736bd6c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        27,
+        125
+      ]
+    },
+    "107": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1af9bec4-f326-4053-9dca-dc4e5b9448a9",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_glid_boom_Ice",
+      "NodeID": 107
+    },
+    "12": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4411993a-ccb2-4c20-813f-0084b95b926b",
+      "effectId": "Eff_Parmon_10011_Skill_Gliding_Hit_Ice",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "BPName": "ability_10120340",
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Ice_Blunt",
+  "NodeID": 0,
+  "impulseId": 2000,
+  "acceleration": 0
+}

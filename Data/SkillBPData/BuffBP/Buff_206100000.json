@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "target": {
+        "eventName": "onReceiveDamage",
+        "name": "getEventCombatContextTarget",
+        "UID": "aee6fb39-9a5f-4467-9d31-757e4fc0ddd7",
+        "target": "CASTER",
+        "NodeID": 2
+      },
+      "duration": 1,
+      "buffId": 206100001,
+      "NodeID": 3,
+      "UID": "5d6a30e9-a87c-4d03-a4c2-fa8c668d6184",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "UID": "febc991d-db67-477f-8ad3-c1701bf6ed5a",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f13a90c6-bda6-47f0-8343-2a9e01ac3be6",
+      "NodeID": 5
+    },
+    "2": {
+      "eventName": "onReceiveDamage",
+      "name": "getEventCombatContextTarget",
+      "UID": "aee6fb39-9a5f-4467-9d31-757e4fc0ddd7",
+      "target": "CASTER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_206100000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

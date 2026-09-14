@@ -1,0 +1,83 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126305",
+  "NodeID": 1,
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "18533c96-582a-43ef-a490-906a6dd94db4",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "d918819c-2d07-4580-95a8-b913f632b4d8",
+      "conditionIds": [
+        3,
+        7
+      ],
+      "name": "conditionOr",
+      "NodeID": 4
+    },
+    "9": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2126303,
+      "NodeID": 9,
+      "UID": "1c4d5ebe-c558-4638-ab52-39869aa9ab0d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "duration": 0.99,
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "95d90853-994b-4bd0-ae96-81842b17f10d",
+      "name": "addTimer"
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2126302,
+      "NodeID": 8,
+      "UID": "b807c05e-29f9-4b7a-a208-f1c3d40329ac",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "2e48bcc0-9223-42b6-afbd-df789b376b45",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "8b409218-e4e7-4f4a-bf22-a258d161c3dd",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

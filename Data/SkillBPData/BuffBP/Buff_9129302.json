@@ -1,0 +1,25 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "63": {
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 1,
+      "spEnergyInitV": 0,
+      "UID": "669307e8-733d-4e28-a83a-6d945a158f84",
+      "superBoosted": true,
+      "spEnergyMaxV": 30,
+      "name": "registerPassiveEnergyInfo",
+      "NodeID": 63,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 0
+    }
+  },
+  "BPName": "buff_9129302",
+  "dynamicRPCStates": {},
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    63
+  ]
+}

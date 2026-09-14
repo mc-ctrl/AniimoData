@@ -1,0 +1,94 @@
+[
+  [
+    {
+      "subTypeName": 1290044435,
+      "resPath": "$UI_Node_Personal_Badge_Box0.prefab",
+      "subType": 1,
+      "bigBadgeId": 10100,
+      "groupIds": [
+        10102,
+        10103,
+        10104,
+        10105,
+        10106,
+        10107,
+        10108,
+        10109,
+        10110,
+        10111,
+        10112,
+        10113,
+        10114,
+        10115
+      ]
+    }
+  ],
+  [
+    {
+      "resPath": "$UI_Node_Personal_Badge_Box3.prefab",
+      "subType": 1,
+      "subTypeName": 1788596617,
+      "groupIds": [
+        20101,
+        20102,
+        20103,
+        20104,
+        20105,
+        20106,
+        20107
+      ]
+    },
+    {
+      "resPath": "$UI_Node_Personal_Badge_Box5.prefab",
+      "subType": 2,
+      "subTypeName": 1387667371,
+      "groupIds": [
+        20201,
+        20202,
+        20301,
+        20401
+      ]
+    }
+  ],
+  [
+    {
+      "resPath": "$UI_Node_Personal_Badge_Box5.prefab",
+      "subType": 1,
+      "subTypeName": 1570185781,
+      "groupIds": [
+        30101,
+        30201,
+        30301,
+        30401
+      ]
+    }
+  ],
+  [
+    {
+      "resPath": "$UI_Node_Personal_Badge_Box7.prefab",
+      "subType": 1,
+      "subTypeName": 1172309362,
+      "groupIds": [
+        40101
+      ]
+    }
+  ],
+  [
+    {
+      "resPath": "$UI_Node_Personal_Badge_Box7.prefab",
+      "subType": 1,
+      "subTypeName": 1317238817,
+      "groupIds": [
+        50001
+      ]
+    },
+    {
+      "resPath": "$UI_Node_Personal_Badge_Box7.prefab",
+      "subType": 2,
+      "subTypeName": 1751453816,
+      "groupIds": [
+        50002
+      ]
+    }
+  ]
+]

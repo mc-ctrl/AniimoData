@@ -1,0 +1,115 @@
+{
+  "nodeMap": {
+    "147": {
+      "UID": "87687039-d96d-4f49-b0d1-77359e219355",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 147
+    },
+    "141": {
+      "UID": "aec2c4ea-b84b-4ac3-8116-392d044a3222",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          139
+        ]
+      },
+      "NodeID": 141
+    },
+    "142": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4269f61e-2811-4613-9992-658d67ec52f9",
+      "target": "OWNER",
+      "NodeID": 142,
+      "animId": "ExploreSkill_WaterBullet_End"
+    },
+    "132": {
+      "UID": "cdec4b6a-9e1c-4968-8322-925e2b902b2a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 132
+    },
+    "144": {
+      "UID": "bb6b19db-46ee-41bb-b928-ae422b7eb0c2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          142,
+          145,
+          150
+        ]
+      },
+      "NodeID": 144
+    },
+    "150": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 150,
+      "UID": "d848bf48-6a84-49d1-8502-95f9f619d2cd",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "145": {
+      "name": "stopEffectStr",
+      "UID": "4427452d-7af2-446f-a218-db03b927db0f",
+      "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Hold01",
+      "target": "OWNER",
+      "NodeID": 145
+    },
+    "149": {
+      "action": {
+        "actionIds": [
+          147
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 149,
+      "UID": "ac6fdc1c-2c41-4ca7-81b6-0aebd19395b0"
+    },
+    "139": {
+      "UID": "ebea13bd-3a0b-4aad-bef4-c6075297cb6d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 139
+    },
+    "134": {
+      "UID": "67bcd19a-7658-4f2f-9143-45c7690a40e3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          132
+        ]
+      },
+      "NodeID": 134
+    }
+  },
+  "BPName": "ability_15410900",
+  "NodeID": 136,
+  "UID": "4dfa6b43-2135-4d5c-860e-668b36a51fa0",
+  "eventIds": [
+    149,
+    134,
+    141,
+    144
+  ],
+  "layer": "Base",
+  "length": 0.9
+}

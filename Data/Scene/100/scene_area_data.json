@@ -1,0 +1,31 @@
+{
+  "66654506": {
+    "name": "区域_66654506",
+    "areaShapeType": 0,
+    "entityType": 0,
+    "entityTypeList": {},
+    "id": 66654506,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ShortHole"
+          ]
+        ]
+      }
+    ],
+    "height": 4,
+    "radius": 5,
+    "sandboxId": 62283974,
+    "position": [
+      -210,
+      4.9,
+      224
+    ],
+    "pointType": 1
+  }
+}

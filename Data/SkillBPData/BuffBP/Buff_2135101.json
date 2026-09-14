@@ -1,0 +1,73 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135101",
+  "NodeID": 1,
+  "UID": "cb79fbbb-0c96-41c7-92fa-dd74651b0067",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2135101,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 5,
+        "UID": "f33d0b67-0936-4d8a-975d-ad019f0f6460",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "86fbd954-6edb-4670-a9ae-c3d342b1f57c",
+      "NodeID": 3,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "f604ee0e-0ef4-460d-8448-42919b086116",
+        "target": "OWNER",
+        "NodeID": 2,
+        "attributeName": "hp_max_cur"
+      }
+    },
+    "isGeneral": true,
+    "isTeamShare": false
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10352_Skill_FlyStrike_Poison_05"
+    }
+  ],
+  "nodeMap": {
+    "5": {
+      "calcId": 2135101,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 5,
+      "UID": "f33d0b67-0936-4d8a-975d-ad019f0f6460",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "name": "stopSoundStr",
+      "UID": "85b39185-c6a5-40f6-842f-ed8d442203ce",
+      "soundId": "SFX_Combat_10352_Skill_WakeUp_Buff",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e9c9c238-b6c7-464e-b6f5-3ce20c154d7b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10352_Skill_WakeUp_Buff",
+      "NodeID": 6
+    }
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

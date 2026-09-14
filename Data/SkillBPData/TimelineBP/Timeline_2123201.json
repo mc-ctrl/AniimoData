@@ -1,0 +1,256 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "key": "shadow_fly",
+      "duration": 0.3,
+      "actionIds": [
+        36
+      ],
+      "NodeID": 37,
+      "UID": "b5909c0c-bda8-4c28-8e27-04cb387d10a9",
+      "name": "addTimer"
+    },
+    "38": {
+      "value": 20,
+      "name": "recoverEp",
+      "UID": "766d89e5-9192-4b2f-ba4f-8f3ac8bb4f72",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_03",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "5f7ddb9b-27e8-4de1-aba1-19076c29017e",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_07",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "8": {
+      "UID": "86f12066-4196-4a80-bd70-d97a39e9d2f6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          6,
+          17,
+          20,
+          34,
+          35
+        ]
+      },
+      "NodeID": 8
+    },
+    "11": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 10
+      },
+      "name": "destroyEntity",
+      "NodeID": 11
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "94e2b0e1-2243-453d-aad9-69a31ef23e87",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10232_Skill_ShadowCure_02",
+      "NodeID": 20
+    },
+    "21": {
+      "name": "isActorType",
+      "UID": "59a4cad7-95fa-47de-ad00-c57e7d7ff5e6",
+      "target": "TrapTarget",
+      "NodeID": 21,
+      "actorType": 2
+    },
+    "13": {
+      "actionIds": [
+        18,
+        11,
+        38
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "505c7c64-3b56-486b-81ab-65fd4303ce67",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "24": {
+      "target": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "ed228524-62ce-4e39-9e5c-99822de4a956",
+        "target": "MASTER",
+        "NodeID": 23
+      },
+      "name": "followTarget",
+      "UID": "72415ea3-9791-4a3b-850b-1be06b70a6b6",
+      "stopDistance": 0,
+      "NodeID": 24,
+      "followSpeed": 3.5
+    },
+    "14": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 14,
+      "relation": 1,
+      "enterTrapActionIds": [
+        13
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        0.5
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "a7d895ff-7470-4ddd-927f-cebdeb06c432"
+    },
+    "16": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          32,
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bfb10cee-e2e3-4e8c-8d21-439c59e2aa35",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_03_1",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "33": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "d9751ff9-0565-4f0e-a9e1-47bf6d4f3ecc",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_07",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24,
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 26,
+      "UID": "e4a26fb9-308a-4588-a3fa-c29c58781969"
+    },
+    "27": {
+      "lockTarget": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "ed228524-62ce-4e39-9e5c-99822de4a956",
+        "target": "MASTER",
+        "NodeID": 23
+      },
+      "name": "lockTarget",
+      "UID": "9a7e3819-c5b7-4346-aaa2-383be512d16f",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 28,
+      "UID": "6cfc1c7b-0210-47b7-af33-578914673fac",
+      "onUpdate": {
+        "actionIds": [
+          27
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          27
+        ]
+      }
+    },
+    "18": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "155c2486-5869-4b77-a013-2e112df6a6e0",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_05",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ea460499-d931-4742-a7ea-fbcb5676118a",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_06",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "32": {
+      "key": "shadow_loop",
+      "duration": 0.14,
+      "actionIds": [
+        30,
+        33
+      ],
+      "NodeID": 32,
+      "UID": "0dd75518-d052-436c-a90e-c0ad4ae9aeae",
+      "name": "addTimer"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1a1f48d4-9b64-4867-b6dd-d3cc793c6d02",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_02",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "34": {
+      "name": "stopEffectStr",
+      "UID": "75e5b504-d0a0-4f1e-ab72-8d417b1896c3",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_06",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "3b74078b-2406-4dcc-9853-22e8499ef08c",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_07",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2123201",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    16,
+    26,
+    8,
+    28
+  ],
+  "layer": "Base",
+  "length": 99999
+}

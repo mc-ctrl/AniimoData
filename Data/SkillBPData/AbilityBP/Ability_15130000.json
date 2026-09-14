@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_15130000",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 16400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 15130000001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10513_Attack01_Right",
+    "Eff_Parmon_10513_Attack01_Left"
+  ],
+  "searchRelation": 2,
+  "name": "火普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    15130001,
+    15130002,
+    15130003,
+    15130010
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

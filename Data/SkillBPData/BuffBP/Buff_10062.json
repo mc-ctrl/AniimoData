@@ -1,0 +1,116 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10062",
+  "NodeID": 1,
+  "UID": "7b863a99-e402-4d70-92da-e8b60add2433",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "dc9e97ff-c02c-459a-ba0e-3fb82042849c",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "7237332c-6372-454e-8495-88de90a8c3f4",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "14": {
+      "target": "CURPET",
+      "speed": 1,
+      "NodeID": 14,
+      "UID": "515452a2-b109-42a2-a98c-8e26cdf84db6",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "388873c9-3795-4045-b855-645fdb8e851f",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 15
+    },
+    "7": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 1
+      },
+      "name": "calcResult",
+      "UID": "1e553dfc-2ec0-4c6b-8adf-23fd3029e39c",
+      "target": "TARGET",
+      "NodeID": 7
+    },
+    "16": {
+      "applyOnAllPets": true,
+      "hpRate": 1,
+      "onlyApplyOnDeadEnt": true,
+      "NodeID": 16,
+      "UID": "ee4aad87-7040-407a-bda9-0ad3e05c7cf6",
+      "target": "OWNER",
+      "name": "revive"
+    },
+    "8": {
+      "UID": "56e2de68-83e3-4682-869f-35f629d6b123",
+      "name": "doPetsActions",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "084f9985-a9ce-4d0e-9ff2-4a35f13fdede",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "720a7da4-2bcd-4afa-a5b8-78e2abfe3d77",
+      "isAbilityEndRemove": false,
+      "soundId": "avatar_girl_skill_firstaid",
+      "NodeID": 11
+    },
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        8,
+        16,
+        11,
+        3,
+        13
+      ],
+      "name": "registerGroupEvent",
+      "UID": "bc081d84-e166-4738-9d6d-70241b93d757",
+      "NodeID": 5
+    },
+    "12": {
+      "name": "isActorType",
+      "UID": "a74b3224-f2b1-49b7-a70c-ff8c22d1d19a",
+      "target": "OWNER",
+      "NodeID": 12,
+      "actorType": 1
+    }
+  },
+  "onBuffDestroyIds": [
+    9,
+    15
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

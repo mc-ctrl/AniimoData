@@ -1,0 +1,104 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "193f7fd5-415d-4227-ba96-a95498c06b41",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "f4b83303-55ff-45fa-8d4e-3db4984fc730",
+      "name": "registerAttackHpZero",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "9": {
+      "endNum": 2,
+      "actionIds": [
+        12,
+        7
+      ],
+      "NodeID": 9,
+      "UID": "a525671d-855b-4631-9f2d-e8c9f484e6b5",
+      "stepNum": 1,
+      "startNum": 0,
+      "name": "forEach"
+    },
+    "12": {
+      "targetPos": {
+        "UID": "dbc9ecf5-516c-4b96-9c10-be9d68c06aa1",
+        "name": "getEventData",
+        "eventName": "onAttackHpZero",
+        "NodeID": 11
+      },
+      "innerRadius": 4,
+      "name": "randomPoint",
+      "UID": "211df524-1bd4-4d0b-9f67-5bf02bcf5cba",
+      "radius": 5,
+      "NodeID": 12
+    },
+    "10": {
+      "UID": "83cca422-f621-4ab7-b9da-52a0d781198a",
+      "name": "callClientAction",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "a993ca4f-cb71-44ef-8ddd-084fa506fbe1",
+      "NodeID": 5
+    },
+    "7": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 206100001101,
+      "name": "createProjectile",
+      "UID": "ae10cb08-517a-4d03-94d6-5fe891a1bb76",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": {
+        "UID": "dbc9ecf5-516c-4b96-9c10-be9d68c06aa1",
+        "name": "getEventData",
+        "eventName": "onAttackHpZero",
+        "NodeID": 11
+      },
+      "projectileType": "Parabola3d",
+      "NodeID": 7,
+      "targetPos": "RANDOM_POINT"
+    },
+    "2": {
+      "UID": "a259d995-4fe3-446e-9826-c61be0f5945f",
+      "randomPercent": 100,
+      "name": "isRandom",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_206100001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

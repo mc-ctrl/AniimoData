@@ -1,0 +1,29 @@
+{
+  "27617276": {
+    "id": 27617276,
+    "height": 10,
+    "position": [
+      -1586.97,
+      24.42,
+      1365.82
+    ],
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 7,
+    "radius": 5
+  },
+  "91119015": {
+    "id": 91119015,
+    "radius": 2.89,
+    "height": 10,
+    "position": [
+      -413.85,
+      64.46,
+      762.98
+    ],
+    "shapeType": 1,
+    "petInControl": false,
+    "targetType": 3,
+    "sandboxId": 91070002
+  }
+}

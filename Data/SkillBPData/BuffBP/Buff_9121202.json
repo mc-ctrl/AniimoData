@@ -1,0 +1,202 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9121202",
+  "name": "花舞鸢尾舞力值特性buff(普通特性)",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "草地上每次造成技能伤害积累1点舞力值，续满后下一次释放技能时不消耗能量",
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "df9617bd-ee14-4890-8c82-7df07a727313",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "4be51a1d-47c9-484e-8067-e8e0a631f548",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "36": {
+      "name": "hasEntityTag",
+      "UID": "ddf503c7-0160-4268-9ce2-41c2290654b7",
+      "target": "TrapTarget",
+      "NodeID": 36,
+      "entityTag": "TE_Cre_Grass"
+    },
+    "38": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "71eb6571-9908-428f-bc7c-69fae01d08a4",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 38
+    },
+    "41": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "2febfc81-2d60-4b5b-8a59-8c7b538f4c5d",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "34047427-8c22-47e7-904d-81bb308793b1",
+        "NodeID": 40,
+        "lValue": {
+          "key": "seed",
+          "name": "getCacheVal",
+          "UID": "bb826971-a978-46e7-9292-b0ace1ba257b",
+          "target": "OWNER",
+          "NodeID": 39
+        }
+      },
+      "NodeID": 41
+    },
+    "37": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 37,
+      "UID": "4a6c0fa7-3e34-408d-970f-21a2900e6420",
+      "enterTrapActionIds": [
+        41
+      ],
+      "relation": 4,
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        43
+      ],
+      "shapeArgs": [
+        0
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "prefFilterActionIds": [
+        36
+      ],
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "43": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "c1a3487b-4ae7-4a3d-bb6e-d843a1f40a25",
+      "target": "OWNER",
+      "val": {
+        "rValue": -1,
+        "name": "add",
+        "UID": "1c2bc4a7-3c78-4be9-96be-75240623612c",
+        "NodeID": 42,
+        "lValue": {
+          "key": "seed",
+          "name": "getCacheVal",
+          "UID": "bb826971-a978-46e7-9292-b0ace1ba257b",
+          "target": "OWNER",
+          "NodeID": 39
+        }
+      },
+      "NodeID": 43
+    },
+    "26": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 912120201,
+      "NodeID": 26,
+      "UID": "05280f73-5f27-4278-8b9d-e828acc7ae73",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "27": {
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "dbd55286-06c3-4ab4-b665-aecca1b8ffd9",
+      "name": "doActionsByConditions",
+      "NodeID": 27,
+      "elseActionIds": [
+        26
+      ]
+    },
+    "31": {
+      "duration": 5,
+      "actionIds": [
+        29,
+        33
+      ],
+      "NodeID": 31,
+      "UID": "06850f8b-077e-4072-8c47-a19c6f14841b",
+      "name": "addTimer"
+    },
+    "29": {
+      "buffId": 912120101,
+      "name": "removeBuff",
+      "UID": "2cd21dec-d30d-44a9-885f-b71547791523",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "28": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        27
+      ],
+      "voxelTag": "normalGrass",
+      "radius": 1,
+      "UID": "e9e6201a-e0f6-438c-9c1e-60551322c3fe",
+      "target": "OWNER",
+      "NodeID": 28,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "32": {
+      "actionIds": [
+        31
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "709cb5bb-966c-4072-ae7f-bc5fd66a55e4",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "buffId": 912120102,
+      "name": "removeBuff",
+      "UID": "ca036520-0812-48bf-9118-194132643e0b",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "buffId": 912120102,
+      "name": "hasBuff",
+      "UID": "3b03eb2f-0637-48f6-ba6f-10250897daac",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "2": {
+      "UID": "b1baa881-bb6b-4ee3-a492-12d617d4df52",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    38,
+    37,
+    4,
+    32
+  ]
+}

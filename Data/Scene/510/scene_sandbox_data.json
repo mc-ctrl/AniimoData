@@ -1,0 +1,355 @@
+{
+  "64682798": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1018857,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_捕捉球店人宠情景",
+    "sightLevelType": 256,
+    "spawners": [
+      64682832,
+      64682836,
+      64682962,
+      64860571,
+      64860575,
+      64860596
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -14.59,
+      40.14,
+      428.34
+    ],
+    "id": 64682798,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "64683094": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1018857,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_占卜店人宠情景",
+    "sightLevelType": 256,
+    "spawners": [
+      64683131,
+      64683141,
+      64683790
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -12.7,
+      39.18,
+      394.16
+    ],
+    "id": 64683094,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "64691741": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1018857,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_保龄球人宠情景",
+    "sightLevelType": 256,
+    "spawners": [
+      64691806,
+      64691839
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -0.16,
+      33.41,
+      402.68
+    ],
+    "id": 64691741,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "64692033": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1019882,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_载具店人宠情景",
+    "sightLevelType": 256,
+    "spawners": [
+      64692150,
+      64692191
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      4.56,
+      27.17,
+      454.84
+    ],
+    "id": 64692033,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "64692456": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1020905,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_宠物idol人宠情景",
+    "sightLevelType": 256,
+    "spawners": [
+      64692472
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      111.2,
+      38.75,
+      430.1
+    ],
+    "id": 64692456,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "64692635": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1019882,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_道路施工人宠情景",
+    "sightLevelType": 256,
+    "spawners": [
+      64692642,
+      64692645
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      44.9,
+      43.53,
+      467.44
+    ],
+    "id": 64692635,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "64692986": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1018857,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_中餐厅人宠情景",
+    "sightLevelType": 256,
+    "spawners": [
+      64693011,
+      64693030,
+      64693062,
+      64693078
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -30.29,
+      39.18,
+      388.68
+    ],
+    "id": 64692986,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "69606241": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1020909,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_学院传送点",
+    "sightLevelType": 256,
+    "spawners": [
+      69606270,
+      69606311,
+      69611693,
+      69615192,
+      69615279,
+      69615294
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      72.07,
+      41.44,
+      688.68
+    ],
+    "id": 69606241,
+    "levelItems": {},
+    "areaType": 999
+  },
+  "64687432": {
+    "owner": "刘飘扬",
+    "autoSave": true,
+    "chunk": 1018856,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 202,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_X博士",
+    "sightLevelType": 256,
+    "spawners": [
+      64687440,
+      64687537,
+      64687553
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -63.35,
+      69.94,
+      381.34
+    ],
+    "id": 64687432,
+    "levelItems": {},
+    "areaType": 999
+  }
+}

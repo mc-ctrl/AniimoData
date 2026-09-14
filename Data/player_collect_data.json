@@ -1,0 +1,23 @@
+[
+  {
+    "res": "$UI_Img_Gather_ImoValueIcon.png",
+    "variable": "caughtNum",
+    "name": 1424937581
+  },
+  {
+    "variable": "shinyCaughtNum",
+    "res": "$UI_Img_Gather_ShinyImoIcon.png",
+    "isRare": 1,
+    "name": 1443767424
+  },
+  {
+    "res": "$UI_Img_Gather_FashionIcon.png",
+    "variable": "fashionScore",
+    "name": 1499398886
+  },
+  {
+    "res": "$UI_Img_Gather_RainbowImoIcon.png",
+    "variable": "rainbowCaughtNum",
+    "name": 1835588724
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9147406",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9147407,
+      "NodeID": 3,
+      "UID": "1eaf399e-4e56-47ed-9ab9-ccb42dec8c3f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "048466b4-c81b-408a-9ec9-9ee6fa6b862e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "7": {
+      "UID": "383ad2ba-28b3-4773-b133-9630138e1780",
+      "target": "OWNER",
+      "name": "isTargetActiveForBattle",
+      "NodeID": 7
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9147402,
+      "NodeID": 6,
+      "UID": "d3695c25-f20b-4e25-8a00-f77c7226ccb5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": {}
+}

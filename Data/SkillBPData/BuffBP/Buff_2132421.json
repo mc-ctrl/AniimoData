@@ -1,0 +1,184 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132421",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "a1fc9e5f-0719-45e1-b990-83e4fc0168b1",
+      "name": "isCalcResultCritical",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "6ac1fcd5-e744-423f-ab2e-e7ac63dd9fd7",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "446cb9ba-dd12-4b39-bef8-6396e04e2061",
+      "name": "checkAbilityElementType",
+      "elementType": 6,
+      "NodeID": 24
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "db4fb39c-98ba-40bd-9552-d3ee9afaf3e2",
+      "name": "registerGroupEvent",
+      "isReceiveCreationEvent": true
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "9f9619ad-5969-4c97-b0f7-9675ffd71800",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsBless_02",
+      "target": "CURPET",
+      "NodeID": 23
+    },
+    "22": {
+      "calcId": 2132421,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 22,
+      "UID": "69965bb7-2fae-40ec-a0e5-232529628587",
+      "name": "getParamByLuaConfig"
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "f962ffc8-f243-41fc-9425-398852212669",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsBless_02",
+      "target": "CURPET",
+      "NodeID": 21
+    },
+    "5": {
+      "UID": "01c34215-3e5b-4ca3-a9aa-9ff01724d9d7",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "14": {
+      "UID": "a4510e34-01e8-406e-8bc7-1f676d69b3ec",
+      "name": "callClientAction",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7d0c9b65-99d1-4b6a-a077-a3005524dc1b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_ThornsField_03",
+      "NodeID": 17
+    },
+    "9": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2132421,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "e72be5bd-f3d9-45de-a821-441ea4376a10",
+      "target": {
+        "UID": "c7061c86-fba1-4be2-9ad5-29455016fe65",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 8
+      },
+      "NodeID": 9,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "impulseId": 1000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30102
+      }
+    },
+    "18": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "dc211647-5a2f-4055-8d44-f0e89cde071a",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsBless_02",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "13": {
+      "pos": {
+        "UID": "c7061c86-fba1-4be2-9ad5-29455016fe65",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 8
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "823f3edb-abf3-480e-a083-ffea65bf9cfc",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsField_03",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "11": {
+      "actionIds": [
+        17,
+        14,
+        9
+      ],
+      "NodeID": 11,
+      "UID": "75eb5007-2ba9-4898-8787-992646541735",
+      "cd": {
+        "calcId": 2132421,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 22,
+        "UID": "69965bb7-2fae-40ec-a0e5-232529628587",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "20": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "329b1d9a-0ccb-4e34-a693-e2bce492f28f",
+      "oldPetActionIds": [
+        21
+      ],
+      "NodeID": 20,
+      "newPetActionIds": [
+        18
+      ]
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "c5db333c-1cfb-406f-8023-55586e5fb1b4",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    23
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    20,
+    18
+  ]
+}

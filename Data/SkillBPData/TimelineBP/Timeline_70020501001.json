@@ -1,0 +1,519 @@
+{
+  "nodeMap": {
+    "37": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ff6e99a9-d343-4f9c-9920-646c18fce8cc",
+      "target": "OWNER",
+      "NodeID": 37,
+      "animId": "Cannon_Skill_Shoot_Upwards_End"
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.5,
+      "NodeID": 38,
+      "UID": "c1a2e3d2-921e-4fdf-8189-ac5b514cc9b3"
+    },
+    "53": {
+      "key": "creation",
+      "name": "setAbilityCacheVal",
+      "UID": "605c5b29-df5a-4dae-ac95-117651cec380",
+      "value": {
+        "offsetXYZ": [
+          0,
+          0,
+          8
+        ],
+        "templateId": 107117,
+        "name": "createEntity",
+        "UID": "61705e25-978c-474d-a124-fdd399a1f5f5",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "stick": 1,
+        "entityName": "Creation",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "pos": "OWNER",
+        "NodeID": 52
+      },
+      "NodeID": 53
+    },
+    "41": {
+      "playTime": 0.5,
+      "stayTime": 0.5,
+      "name": "playIndicatorEff",
+      "UID": "53095141-0221-4d8c-b764-071b018f7708",
+      "target": {
+        "offsetXYZ": [
+          8,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          4.5,
+          2,
+          2.5
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 41
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          41,
+          70,
+          73,
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 43,
+      "UID": "e74bb488-16e6-4d7e-b9ef-ceb13d304236"
+    },
+    "3": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "cdedd007-3233-40d2-b610-82541300a8af",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "70": {
+      "playTime": 0.5,
+      "stayTime": 0.5,
+      "name": "playIndicatorEff",
+      "UID": "89d649be-9a05-4083-917d-1793f35faf78",
+      "target": {
+        "offsetXYZ": [
+          -8,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          4.5,
+          2,
+          2.5
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 70
+    },
+    "73": {
+      "playTime": 0.5,
+      "stayTime": 0.5,
+      "name": "playIndicatorEff",
+      "UID": "8152647a-61cf-4167-9708-3c36a7f8979c",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          8
+        ],
+        "shapeArgs": [
+          4.5,
+          2,
+          2.5
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 73
+    },
+    "5": {
+      "UID": "53430cfb-ed46-4796-96f2-bc5b4debb3a4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          45,
+          20
+        ]
+      },
+      "NodeID": 5
+    },
+    "76": {
+      "playTime": 0.5,
+      "stayTime": 0.5,
+      "name": "playIndicatorEff",
+      "UID": "0eb93313-19d6-4761-b756-49fef40480c9",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          -8
+        ],
+        "shapeArgs": [
+          4.5,
+          2,
+          2.5
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 76
+    },
+    "35": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0d7b036b-c3e9-4bc4-86c0-e01edb7eb7b2",
+      "target": "OWNER",
+      "NodeID": 35,
+      "animId": "Cannon_Skill_Shoot_Upwards_Loop"
+    },
+    "31": {
+      "UID": "f9b7e7d3-2d4e-4cc8-8b61-1f4252bfa040",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 31
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 34,
+      "UID": "2deb28c5-c953-400a-a9cc-741fe865cdd7"
+    },
+    "45": {
+      "key": "target",
+      "name": "setCacheVal",
+      "UID": "34c1ac64-ef26-4aa7-8396-698a906b52f8",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "26": {
+      "UID": "9cf63c96-47d1-4c64-9933-b2fd64b16457",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 26
+    },
+    "11": {
+      "UID": "d361d8d0-de59-4040-b1c8-5af499add5bb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "64e55864-5cdf-4908-9a14-96da57e19093",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "208bc52a-24b1-4ba5-be4f-e33f63929117",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 12
+    },
+    "22": {
+      "UID": "0cff73fc-80fc-437a-abd6-bf9051786633",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 22
+    },
+    "47": {
+      "UID": "f7a48234-6662-4622-9cca-cf67d6839b03",
+      "actorId": {
+        "UID": "90158fc9-158b-462c-aaa4-81941683d300",
+        "name": "getAbilityCacheVal",
+        "key": "creation",
+        "NodeID": 46
+      },
+      "name": "destroyEntity",
+      "NodeID": 47
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          53,
+          57,
+          59,
+          61
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 55,
+      "UID": "68debd36-cd1e-4e4b-99fa-3202b592d38c"
+    },
+    "14": {
+      "actionIds": [
+        12,
+        16
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "f05f5501-a936-4d13-a0fd-5d3f7f6a44ac",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4b58685a-be7d-41ed-b3a3-ed139136aabd",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Cannon_Skill_Shoot_Upwards_Start"
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 15,
+      "UID": "c0a7aaf7-112a-437f-973d-a675c1986b42"
+    },
+    "57": {
+      "key": "creation1",
+      "name": "setAbilityCacheVal",
+      "UID": "656f992e-5aa1-4743-aa04-8feed2f4a4a9",
+      "value": {
+        "offsetXYZ": [
+          0,
+          0,
+          -8
+        ],
+        "templateId": 107117,
+        "name": "createEntity",
+        "UID": "68c5f55c-af67-4f3d-a7d4-b53d427599e5",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "stick": 1,
+        "entityName": "Creation",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "pos": "OWNER",
+        "NodeID": 56
+      },
+      "NodeID": 57
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "389e9730-ba1a-4f18-8237-f6fe24214c0a",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.5,
+      "NodeID": 27,
+      "UID": "143f5654-6457-488e-afec-b99dc51f9ca0"
+    },
+    "17": {
+      "name": "isActorType",
+      "UID": "16cad0ef-67e9-4e80-863c-e6b4e5f0da5f",
+      "target": "OWNER",
+      "NodeID": 17,
+      "actorType": 3
+    },
+    "59": {
+      "key": "creation2",
+      "name": "setAbilityCacheVal",
+      "UID": "05b9d8f1-108d-4c9f-bcb7-eb516f7963d5",
+      "value": {
+        "offsetXYZ": [
+          8,
+          0,
+          0
+        ],
+        "templateId": 107117,
+        "name": "createEntity",
+        "UID": "3936de53-6baa-4fec-9962-7458cbfa8e71",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "stick": 1,
+        "entityName": "Creation",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "pos": "OWNER",
+        "NodeID": 58
+      },
+      "NodeID": 59
+    },
+    "30": {
+      "action": {
+        "actionIds": {}
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 30,
+      "UID": "e84e8bc4-b177-4797-b00f-5e62fe16446e"
+    },
+    "24": {
+      "UID": "e834dc5a-5941-41dc-a56b-60a7b78bfdd0",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          22,
+          47
+        ]
+      },
+      "NodeID": 24
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c0386678-1fad-4646-9fc0-e8e5e17a4924",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Charge_",
+        "name": "constString",
+        "UID": "38b90326-2f0d-4cfe-9945-4cfeb0ad0f2a",
+        "NodeID": 32,
+        "concatenateNumber": {
+          "UID": "f9b7e7d3-2d4e-4cc8-8b61-1f4252bfa040",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 31
+        }
+      },
+      "speed": 0.45,
+      "NodeID": 33
+    },
+    "61": {
+      "key": "creation3",
+      "name": "setAbilityCacheVal",
+      "UID": "1fe2d127-a222-47b3-9b81-cae6a928bc60",
+      "value": {
+        "offsetXYZ": [
+          -8,
+          0,
+          0
+        ],
+        "templateId": 107117,
+        "name": "createEntity",
+        "UID": "aefdf26e-e706-4054-8b20-a4b84b397497",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "stick": 1,
+        "entityName": "Creation",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "pos": "OWNER",
+        "NodeID": 60
+      },
+      "NodeID": 61
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 36,
+      "UID": "a35afe98-5b25-4b6f-936c-0b2cbb730ee4"
+    }
+  },
+  "BPName": "ability_70020501",
+  "NodeID": 7,
+  "UID": "35dc910d-ebec-471f-9d45-3c69fc83c0f1",
+  "eventIds": [
+    5,
+    27,
+    24,
+    15,
+    11,
+    36,
+    38,
+    30,
+    34,
+    43,
+    55
+  ],
+  "layer": "Base",
+  "length": 7.5
+}

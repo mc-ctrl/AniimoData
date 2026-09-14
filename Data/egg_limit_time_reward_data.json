@@ -1,0 +1,50 @@
+[
+  {
+    "RewardContent": {
+      "2009": [
+        1
+      ]
+    },
+    "KillNum": 6
+  },
+  {
+    "RewardContent": {
+      "2009": [
+        2
+      ]
+    },
+    "KillNum": 15
+  },
+  {
+    "RewardContent": {
+      "2009": [
+        3
+      ]
+    },
+    "KillNum": 30
+  },
+  {
+    "RewardContent": {
+      "2010": [
+        1
+      ]
+    },
+    "KillNum": 60
+  },
+  {
+    "RewardContent": {
+      "2010": [
+        2
+      ]
+    },
+    "KillNum": 90
+  },
+  {
+    "RewardContent": {
+      "2010": [
+        3
+      ]
+    },
+    "KillNum": 120
+  }
+]

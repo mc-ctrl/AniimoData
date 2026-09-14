@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_10710100",
+  "NodeID": 1,
+  "UID": "51ad2801-7d20-4ec1-a635-a712b4b97529",
+  "isExploreFly": true,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10710100001,
+      "name": "setCombatActionTimeline",
+      "UID": "a224d7c8-aca0-4ed5-ae57-8f1e90a6988b",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Dance"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10072_Skill_Hit",
+    "Eff_Parmon_10072_Appear_Dance_3",
+    "Eff_Parmon_10072_ChargeFur",
+    "Eff_Parmon_10072_ChargeFur_Biu",
+    "Eff_Parmon_10072_Appear_Dance_2"
+  ],
+  "searchRelation": 2,
+  "name": "静电起飞",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 10400040
+}

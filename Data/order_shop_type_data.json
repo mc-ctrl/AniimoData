@@ -1,0 +1,34 @@
+[
+  {
+    "name": 2051367799,
+    "icon": "$UI_Img_HomeOrder_BG_Coffee.png"
+  },
+  {
+    "name": 1161648697,
+    "icon": "$UI_Img_HomeOrder_BG_BrownRestaurant.png"
+  },
+  {
+    "name": 1952037093,
+    "icon": "$UI_Img_HomeOrder_BG_ToyStore.png"
+  },
+  {
+    "name": 1566084444,
+    "icon": "$UI_Img_HomeOrder_BG_PurpleGiftShop.png"
+  },
+  {
+    "name": 2088286774,
+    "icon": "$UI_Img_HomeOrder_BG_PetShop.png"
+  },
+  {
+    "name": 1788618930,
+    "icon": "$UI_Img_HomeOrder_BG_Gray.png"
+  },
+  {
+    "name": 1265331408,
+    "icon": "$UI_Img_HomeOrder_BG_FashionStore.png"
+  },
+  {
+    "name": 1717777749,
+    "icon": "$UI_Img_HomeOrder_BG_TrendyStore.png"
+  }
+]

@@ -1,0 +1,333 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "6": {
+      "key": "EquipAttr",
+      "calcInfo": {
+        "instant_crit_dmg_v": {
+          "rValue": {
+            "rValue": {
+              "calcId": 2061002,
+              "calcType": 1,
+              "paramName": "param1",
+              "NodeID": 27,
+              "UID": "7b4bcaa2-9fa0-497e-bb6b-8bca36a33ac0",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "f08a68c7-e618-48c0-a705-254ec9716b48",
+            "NodeID": 14,
+            "lValue": {
+              "convertType": 1,
+              "name": "toInt",
+              "UID": "fdee2f05-a4fc-4c4a-8477-3bee3b8ba780",
+              "val": {
+                "rValue": {
+                  "calcId": 2061002,
+                  "calcType": 1,
+                  "paramName": "param0",
+                  "NodeID": 24,
+                  "UID": "12344c0d-3f3c-43c5-bcff-c713523fac5b",
+                  "name": "getParamByLuaConfig"
+                },
+                "name": "div",
+                "UID": "1bad3c77-0346-446c-9234-5f620b62c2df",
+                "NodeID": 12,
+                "lValue": {
+                  "rValue": {
+                    "UID": "0b22d1ea-9209-4375-8592-a7334bd71ea8",
+                    "name": "getRoguePersistData",
+                    "key": "CoinNum",
+                    "NodeID": 10
+                  },
+                  "name": "sub",
+                  "UID": "412193cf-4ced-4d59-8bcc-fccde41672af",
+                  "NodeID": 11,
+                  "lValue": {
+                    "UID": "6dc10593-76dd-4f36-9231-ff252516dc1d",
+                    "name": "getRoguePersistData",
+                    "key": "rogueAccumulatedCoin",
+                    "NodeID": 16
+                  }
+                }
+              },
+              "NodeID": 13
+            }
+          },
+          "name": "add",
+          "UID": "afc3745e-4e4c-45f3-9185-5f206c213ebe",
+          "NodeID": 4,
+          "lValue": {
+            "key": "EquipAttr",
+            "attributeName": "instant_crit_dmg_v",
+            "UID": "20cea46d-dd27-433b-8298-68213cc477f3",
+            "name": "getRogueProp",
+            "NodeID": 3
+          }
+        }
+      },
+      "NodeID": 6,
+      "UID": "2c5e6b97-41de-4e19-a764-26498aa9c603",
+      "name": "setRogueProp"
+    },
+    "9": {
+      "UID": "9ebcafd8-bef3-4b6f-9bb5-6bc6950e7f35",
+      "name": "registerRogueCoinChange",
+      "actionIds": [
+        6,
+        21
+      ],
+      "NodeID": 9
+    },
+    "21": {
+      "key": "CoinNum",
+      "name": "setRoguePersistData",
+      "UID": "6c8347b7-909d-471d-a07a-f685b7e34cd4",
+      "value": {
+        "rValue": {
+          "calcId": 2061002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 26,
+          "UID": "2bd9b73d-e9b0-4651-aa48-d111a9f29c18",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "21972a77-a0d9-45a5-877c-be2795da2522",
+        "NodeID": 20,
+        "lValue": {
+          "convertType": 1,
+          "name": "toInt",
+          "UID": "89716a12-661c-49df-a246-d121891e3c0f",
+          "val": {
+            "rValue": {
+              "calcId": 2061002,
+              "calcType": 1,
+              "paramName": "param0",
+              "NodeID": 25,
+              "UID": "b83ac5d5-1298-4bb8-ad49-00ca760cfbcb",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "div",
+            "UID": "aaf95e91-7506-427c-9a6e-c1730f1a4ae7",
+            "NodeID": 18,
+            "lValue": {
+              "UID": "d170b548-9b2d-4d81-9151-12734cbbd191",
+              "name": "getRoguePersistData",
+              "key": "rogueAccumulatedCoin",
+              "NodeID": 17
+            }
+          },
+          "NodeID": 19
+        }
+      },
+      "NodeID": 21
+    },
+    "3": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_dmg_v",
+      "UID": "20cea46d-dd27-433b-8298-68213cc477f3",
+      "name": "getRogueProp",
+      "NodeID": 3
+    },
+    "13": {
+      "convertType": 1,
+      "name": "toInt",
+      "UID": "fdee2f05-a4fc-4c4a-8477-3bee3b8ba780",
+      "val": {
+        "rValue": {
+          "calcId": 2061002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 24,
+          "UID": "12344c0d-3f3c-43c5-bcff-c713523fac5b",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "div",
+        "UID": "1bad3c77-0346-446c-9234-5f620b62c2df",
+        "NodeID": 12,
+        "lValue": {
+          "rValue": {
+            "UID": "0b22d1ea-9209-4375-8592-a7334bd71ea8",
+            "name": "getRoguePersistData",
+            "key": "CoinNum",
+            "NodeID": 10
+          },
+          "name": "sub",
+          "UID": "412193cf-4ced-4d59-8bcc-fccde41672af",
+          "NodeID": 11,
+          "lValue": {
+            "UID": "6dc10593-76dd-4f36-9231-ff252516dc1d",
+            "name": "getRoguePersistData",
+            "key": "rogueAccumulatedCoin",
+            "NodeID": 16
+          }
+        }
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "calcId": 2061002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 24,
+      "UID": "12344c0d-3f3c-43c5-bcff-c713523fac5b",
+      "name": "getParamByLuaConfig"
+    },
+    "10": {
+      "UID": "0b22d1ea-9209-4375-8592-a7334bd71ea8",
+      "name": "getRoguePersistData",
+      "key": "CoinNum",
+      "NodeID": 10
+    },
+    "30": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 20600000,
+      "NodeID": 30,
+      "UID": "cfea4ed2-1941-441a-abbe-1e194a36fdce",
+      "layer": 0,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "25": {
+      "calcId": 2061002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 25,
+      "UID": "b83ac5d5-1298-4bb8-ad49-00ca760cfbcb",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "UID": "6dc10593-76dd-4f36-9231-ff252516dc1d",
+      "name": "getRoguePersistData",
+      "key": "rogueAccumulatedCoin",
+      "NodeID": 16
+    },
+    "27": {
+      "calcId": 2061002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 27,
+      "UID": "7b4bcaa2-9fa0-497e-bb6b-8bca36a33ac0",
+      "name": "getParamByLuaConfig"
+    },
+    "28": {
+      "buffId": 20600000,
+      "name": "hasBuff",
+      "UID": "92c79161-ce59-4865-bc8e-6864b0584de2",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "ee77ee91-424a-4759-be98-12e44064e602",
+      "name": "doActionsByConditions",
+      "NodeID": 29,
+      "elseActionIds": [
+        30
+      ]
+    },
+    "18": {
+      "rValue": {
+        "calcId": 2061002,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 25,
+        "UID": "b83ac5d5-1298-4bb8-ad49-00ca760cfbcb",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "div",
+      "UID": "aaf95e91-7506-427c-9a6e-c1730f1a4ae7",
+      "NodeID": 18,
+      "lValue": {
+        "UID": "d170b548-9b2d-4d81-9151-12734cbbd191",
+        "name": "getRoguePersistData",
+        "key": "rogueAccumulatedCoin",
+        "NodeID": 17
+      }
+    },
+    "12": {
+      "rValue": {
+        "calcId": 2061002,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 24,
+        "UID": "12344c0d-3f3c-43c5-bcff-c713523fac5b",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "div",
+      "UID": "1bad3c77-0346-446c-9234-5f620b62c2df",
+      "NodeID": 12,
+      "lValue": {
+        "rValue": {
+          "UID": "0b22d1ea-9209-4375-8592-a7334bd71ea8",
+          "name": "getRoguePersistData",
+          "key": "CoinNum",
+          "NodeID": 10
+        },
+        "name": "sub",
+        "UID": "412193cf-4ced-4d59-8bcc-fccde41672af",
+        "NodeID": 11,
+        "lValue": {
+          "UID": "6dc10593-76dd-4f36-9231-ff252516dc1d",
+          "name": "getRoguePersistData",
+          "key": "rogueAccumulatedCoin",
+          "NodeID": 16
+        }
+      }
+    },
+    "19": {
+      "convertType": 1,
+      "name": "toInt",
+      "UID": "89716a12-661c-49df-a246-d121891e3c0f",
+      "val": {
+        "rValue": {
+          "calcId": 2061002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 25,
+          "UID": "b83ac5d5-1298-4bb8-ad49-00ca760cfbcb",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "div",
+        "UID": "aaf95e91-7506-427c-9a6e-c1730f1a4ae7",
+        "NodeID": 18,
+        "lValue": {
+          "UID": "d170b548-9b2d-4d81-9151-12734cbbd191",
+          "name": "getRoguePersistData",
+          "key": "rogueAccumulatedCoin",
+          "NodeID": 17
+        }
+      },
+      "NodeID": 19
+    },
+    "26": {
+      "calcId": 2061002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 26,
+      "UID": "2bd9b73d-e9b0-4651-aa48-d111a9f29c18",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "UID": "d170b548-9b2d-4d81-9151-12734cbbd191",
+      "name": "getRoguePersistData",
+      "key": "rogueAccumulatedCoin",
+      "NodeID": 17
+    }
+  },
+  "BPName": "buff_2061002",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    21,
+    9,
+    29
+  ]
+}

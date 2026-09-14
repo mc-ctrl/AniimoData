@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10078",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c65dae9c-d210-4d44-a957-255aab75c640",
+      "effectId": "Eff_Monster_90207_LightOn",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "d122f993-9e92-4043-b324-7287061fc73c",
+      "effectId": "Eff_Monster_90207_LightOn",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    2
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

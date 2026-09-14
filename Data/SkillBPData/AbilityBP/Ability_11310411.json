@@ -1,0 +1,78 @@
+{
+  "BPName": "ability_11310411",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10200063,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11310411001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "4cc202b4-b620-415a-b652-bcc9e7aa91a7",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "50": {
+      "UID": "21ad778d-e3d0-4c92-8a5d-6c7d047226aa",
+      "conditionIds": [
+        49,
+        53
+      ],
+      "name": "conditionAnd",
+      "NodeID": 50
+    },
+    "53": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "6e956d28-47ad-45be-af51-96db553be80a",
+      "NodeID": 53,
+      "lValue": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "1a115bc8-e2ad-454f-ba2c-2292b1fd2d36",
+        "target": "OWNER",
+        "NodeID": 52
+      }
+    },
+    "49": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "bd0951a6-4610-4838-94b6-bbf3031fdd55",
+      "NodeID": 49,
+      "lValue": {
+        "key": "skillPos",
+        "name": "getCacheVal",
+        "UID": "1fa0b8bb-221c-4965-adf8-0fe29e7d565c",
+        "target": "OWNER",
+        "NodeID": 48
+      }
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10133_Skill_Throw_Ice02_small",
+    "Eff_Hit_Ice_Slash_Big"
+  ],
+  "searchRelation": 2,
+  "name": "砸地",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 3,
+  "notTurnToTarget": true,
+  "searchTargetRangeDown": 3
+}

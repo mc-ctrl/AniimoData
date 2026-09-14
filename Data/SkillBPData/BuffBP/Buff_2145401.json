@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "speed_ratio_run_v": {
+      "rValue": -1,
+      "name": "multiply",
+      "UID": "cfa7b7f6-9510-43a9-9ab9-783025a15bc9",
+      "NodeID": 9,
+      "lValue": {
+        "calcId": 2145401,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 8,
+        "UID": "aa60d9fb-29ed-4c46-83ad-01a96cba82cd",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "speed_ratio_sprint_v": {
+      "rValue": -1,
+      "name": "multiply",
+      "UID": "cfa7b7f6-9510-43a9-9ab9-783025a15bc9",
+      "NodeID": 9,
+      "lValue": {
+        "calcId": 2145401,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 8,
+        "UID": "aa60d9fb-29ed-4c46-83ad-01a96cba82cd",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "dmg_rock_dec_ratio": {
+      "rValue": -1,
+      "name": "multiply",
+      "UID": "f4457654-3049-4b36-bab4-695ee88c44b9",
+      "NodeID": 6,
+      "lValue": {
+        "calcId": 2145401,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 5,
+        "UID": "7d555463-23e1-4533-84b9-3a5862b6cc72",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "speed_ratio_dash_v": {
+      "rValue": -1,
+      "name": "multiply",
+      "UID": "cfa7b7f6-9510-43a9-9ab9-783025a15bc9",
+      "NodeID": 9,
+      "lValue": {
+        "calcId": 2145401,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 8,
+        "UID": "aa60d9fb-29ed-4c46-83ad-01a96cba82cd",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "speed_ratio_walk_v": {
+      "rValue": -1,
+      "name": "multiply",
+      "UID": "cfa7b7f6-9510-43a9-9ab9-783025a15bc9",
+      "NodeID": 9,
+      "lValue": {
+        "calcId": 2145401,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 8,
+        "UID": "aa60d9fb-29ed-4c46-83ad-01a96cba82cd",
+        "name": "getParamByLuaConfig"
+      }
+    }
+  },
+  "BPName": "buff_2145401",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10454_Skill_ClayBall_Muddy"
+    }
+  ]
+}

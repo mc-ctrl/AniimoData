@@ -1,0 +1,141 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_215630101",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcId": 215630101,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 5,
+      "UID": "84126c15-74ad-4b90-9c22-e83fec17c3ba",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "calcInfo": {
+        "hp_cur": {
+          "rValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "151a89b0-1194-4dd3-a052-7ff7d30593dd",
+            "NodeID": 15,
+            "lValue": {
+              "calcId": 215630101,
+              "calcType": 1,
+              "paramName": "param2",
+              "NodeID": 14,
+              "UID": "d04157b3-4587-49f3-be78-e57a8bc55f6e",
+              "name": "getParamByLuaConfig"
+            }
+          },
+          "name": "multiply",
+          "UID": "b85e9535-85da-4cb1-90a4-6661e33dab30",
+          "NodeID": 7,
+          "lValue": {
+            "rValue": {
+              "name": "getAttribute",
+              "UID": "0dcfcd74-40a2-4eae-9883-9c7ddd4a638a",
+              "target": "OWNER",
+              "NodeID": 12,
+              "attributeName": "hp_max_cur"
+            },
+            "name": "multiply",
+            "UID": "c40ee1df-385b-4457-8c06-32f1f34f533c",
+            "NodeID": 6,
+            "lValue": {
+              "calcId": 215630101,
+              "calcType": 1,
+              "paramName": "param1",
+              "NodeID": 5,
+              "UID": "84126c15-74ad-4b90-9c22-e83fec17c3ba",
+              "name": "getParamByLuaConfig"
+            }
+          }
+        },
+        "ep_cur": {
+          "rValue": {
+            "calcId": 215630101,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 19,
+            "UID": "8525cce5-49d1-4b11-ab2d-9e6e4b2adf81",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "898e957e-7be8-41af-94ea-50275772d0de",
+          "NodeID": 18,
+          "lValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "d3340de1-93b9-4ea6-83b4-828be13d3c3d",
+            "NodeID": 17,
+            "lValue": {
+              "calcId": 215630101,
+              "calcType": 1,
+              "paramName": "param2",
+              "NodeID": 16,
+              "UID": "058ee62d-9143-4168-8f32-d9b149b41cbe",
+              "name": "getParamByLuaConfig"
+            }
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "ee7342be-1b7c-4c7c-91cc-49418cd4e219",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "14": {
+      "calcId": 215630101,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 14,
+      "UID": "d04157b3-4587-49f3-be78-e57a8bc55f6e",
+      "name": "getParamByLuaConfig"
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "39286728-babb-4630-91bb-b9d8400ecc74",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "19": {
+      "calcId": 215630101,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 19,
+      "UID": "8525cce5-49d1-4b11-ab2d-9e6e4b2adf81",
+      "name": "getParamByLuaConfig"
+    },
+    "20": {
+      "name": "checkElementType",
+      "UID": "ea8e3da3-c8d0-4bdb-ad1f-6918646566f4",
+      "target": "OWNER",
+      "NodeID": 20,
+      "elementType": 6
+    },
+    "16": {
+      "calcId": 215630101,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 16,
+      "UID": "058ee62d-9143-4168-8f32-d9b149b41cbe",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91464011",
+  "name": "【鼓舞】",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "onBuffLayerChangeIds": [
+    15,
+    8,
+    12
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "fa64a1d6-4870-4614-ae9b-7bcc6775e945",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage03",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "f2f66721-2b41-4875-a151-5ec717e6a600",
+      "NodeID": 7,
+      "lValue": {
+        "templateId": 91464011,
+        "name": "getBuffLayer",
+        "UID": "ee8977ab-1667-430e-9d7a-e96667703e67",
+        "target": "OWNER",
+        "NodeID": 6
+      }
+    },
+    "8": {
+      "actionIds": [
+        21,
+        26,
+        16
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "9f9a3cdb-b0a7-4fac-bde6-f4152ba77187",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "31": {
+      "NodeID": 31,
+      "UID": "4731602b-6c0f-4109-8493-c0cf0d97f0d5",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "11": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "34240356-352e-4869-b4a5-6852f931dfa9",
+      "NodeID": 11,
+      "lValue": {
+        "templateId": 91464011,
+        "name": "getBuffLayer",
+        "UID": "39b8e774-73e8-412a-869f-8f8a5714df8a",
+        "target": "OWNER",
+        "NodeID": 10
+      }
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "aa91e7d8-a2db-4a23-b87c-93d117ce42ee",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "091577e0-32fa-4377-8df2-bc170074ac6b",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage02",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "abfa5e19-a6c8-4621-afe0-1112a74cee13",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "5076805f-f899-4414-b3d0-258457cdc966",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "12": {
+      "actionIds": [
+        22,
+        27,
+        18,
+        23
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "2137dacb-ac59-4dec-be7c-e82af1d84da7",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "30": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 30,
+      "UID": "c7139d0b-7c7f-45dd-aaf9-bb8ea1c53879",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "15": {
+      "actionIds": [
+        13,
+        30,
+        33
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "50a2e02e-ed83-40e5-930b-37e6679c1e04",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        31
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "0c41989f-d851-4087-89ca-fd20d818b437",
+      "NodeID": 25,
+      "lValue": {
+        "templateId": 91464011,
+        "name": "getBuffLayer",
+        "UID": "38af4e18-fef8-4043-b7b3-212cf739f641",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "60d8bf9c-f756-48fc-8e27-1ebdf6d2addd",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage03",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "0daab347-3037-4a82-b39d-c07e12166dc4",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage02",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e6e92d43-fd45-4020-89f1-3d29d128f75b",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 29,
+      "UID": "7e765032-f04d-4758-93be-8a588e0d7910",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage01",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "18": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7e2b5423-d596-4a70-b27c-f3fc45ce1221",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage03",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "32": {
+      "NodeID": 32,
+      "UID": "8f25fc65-1326-4120-9535-1dec67814131",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "33": {
+      "NodeID": 33,
+      "UID": "2a1d1f74-4847-44f2-a928-36f3b0e3fc46",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "37c5b062-5374-4269-89a9-79c707af5ef7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Healing01",
+      "NodeID": 23
+    },
+    "16": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4ad1e360-a554-46fd-97ec-7192f642f765",
+      "effectId": "Eff_Parmon_10464_Skill_Buff_Encourage02",
+      "speed": 1,
+      "NodeID": 16
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    3,
+    5,
+    28,
+    29,
+    32
+  ],
+  "onBuffStartIds": [
+    15,
+    8,
+    12
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_10320511",
+  "NodeID": 1,
+  "UID": "457f5d41-b817-440c-a10d-23128cf3b2ae",
+  "abilityParamId": 11200314,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10320511001,
+      "name": "setCombatActionTimeline",
+      "UID": "a914e8c8-d714-41e4-84ca-01cc14fdea35",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FuryCutter02_Start",
+    "Skill_FuryCutter02",
+    "Skill_FuryCutter03"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Slash",
+    "Eff_Parmon_10032_Skill_ShadowCutter_02_2",
+    "Eff_Parmon_10032_Skill_ShadowCutter_02",
+    "Eff_Parmon_10032_Skill_ShadowCutter_03",
+    "Eff_Skill_Common_Warning_10032Boss"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

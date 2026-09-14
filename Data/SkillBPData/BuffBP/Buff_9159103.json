@@ -1,0 +1,208 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9159103",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        14
+      ],
+      "name": "actOnTargets",
+      "UID": "a3d97923-4ede-48f9-a44e-1bbbc0af60ed",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            10,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CURPET",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 5
+    },
+    "13": {
+      "listId": "Icecream",
+      "name": "addDynamicListItem",
+      "UID": "caf8f027-b3a0-4a4b-84c1-4a57e1a486fc",
+      "target": "OWNER",
+      "value": {
+        "UID": "b0dea0d7-f840-4713-8261-c6d1cc4e642f",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 19
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "name": "isActorType",
+      "UID": "425dc251-652a-408a-afd1-371260b3a453",
+      "target": {
+        "eventName": "onCastAbility",
+        "name": "getEventCombatContextTarget",
+        "UID": "47cc4703-3296-4cd7-8b12-89c792df5fc7",
+        "target": "OWNER",
+        "NodeID": 23
+      },
+      "NodeID": 24,
+      "actorType": 2
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "91ec98cd-780a-4c31-892f-fc0305d78067",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "23": {
+      "eventName": "onCastAbility",
+      "name": "getEventCombatContextTarget",
+      "UID": "47cc4703-3296-4cd7-8b12-89c792df5fc7",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "15": {
+      "listId": "Icecream",
+      "NodeID": 15,
+      "UID": "a09e9142-4e1e-498c-a1a2-b6a4b9f0bc97",
+      "target": "OWNER",
+      "name": "getDynamicListItem",
+      "index": {
+        "UID": "d2b33ac8-fb8f-4d14-80b3-d2cf9d9b9583",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 20
+      }
+    },
+    "7": {
+      "actionIds": [
+        5,
+        16,
+        17
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "eb7ceb31-0d5a-4770-80dc-05f1ec998272",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "eventName": "91591",
+      "name": "notifyCustomEvent",
+      "UID": "3a2f61e4-1d0b-40f4-8e57-a362af0bd098",
+      "target": {
+        "listId": "Icecream",
+        "NodeID": 15,
+        "UID": "a09e9142-4e1e-498c-a1a2-b6a4b9f0bc97",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "UID": "d2b33ac8-fb8f-4d14-80b3-d2cf9d9b9583",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 20
+        }
+      },
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "e741241c-9400-4cf2-96c3-42279dbeae2f",
+      "target": "CURPET",
+      "NodeID": 8
+    },
+    "17": {
+      "listId": "Icecream",
+      "NodeID": 17,
+      "UID": "5eb38a48-8db1-4e3f-9396-f3d318591283",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": false
+    },
+    "9": {
+      "unsummonValid": false,
+      "actionIds": [
+        8
+      ],
+      "name": "registerGroupEvent",
+      "UID": "e35dac36-7e63-46f3-85a1-891b003f4243",
+      "NodeID": 9
+    },
+    "18": {
+      "templateId": 159101,
+      "name": "checkTargetTemplateId",
+      "UID": "1d156146-c1eb-410e-a499-7664bbf8acf0",
+      "target": "TARGET",
+      "NodeID": 18
+    },
+    "22": {
+      "UID": "2c4af9ab-0567-442f-aff4-94016d826002",
+      "conditionIds": [
+        24,
+        21
+      ],
+      "name": "conditionAnd",
+      "NodeID": 22
+    },
+    "11": {
+      "eventName": "10593",
+      "NodeID": 11,
+      "UID": "29b54985-49e3-4086-b710-6f3c4dc948f0",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        5,
+        16,
+        17
+      ]
+    },
+    "21": {
+      "UID": "c05d4bac-8463-4526-b40d-514f618563fb",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 21
+    },
+    "12": {
+      "listId": "Icecream",
+      "NodeID": 12,
+      "UID": "1d6e1d9c-a2ee-4f88-9ce9-c6608903433b",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    12,
+    9,
+    11
+  ]
+}

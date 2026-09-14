@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_902131600",
+  "NodeID": 1,
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "desc": "二连重击",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902131600001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Rclj"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Attack_ChargedAttack",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+    "Eff_Monster_90213_Mon_Attack_Water001",
+    "Eff_Monster_90213_Mon_Attack_Water005",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 10,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 10,
+  "abilityParamId": 49215010
+}

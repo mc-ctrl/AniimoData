@@ -1,0 +1,120 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50012",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5001201,
+      "NodeID": 3,
+      "UID": "b456d34d-fa20-44a3-999f-a3d8fadb8828",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "98f45cdd-9afd-4af3-82e3-f333093614c3",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "rValue": 7,
+      "name": "greater",
+      "UID": "1ecda838-d09a-4a2a-b2e7-7e98d04ad776",
+      "NodeID": 14,
+      "lValue": {
+        "key": "50012",
+        "name": "getCacheVal",
+        "UID": "a9218136-c3e2-4c1d-a30b-9855f8c15b63",
+        "target": "OWNER",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "buffId": 5001201,
+      "name": "removeBuff",
+      "UID": "11a2813e-3049-4d3e-b834-e789adbe9eb9",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "8": {
+      "key": "50012",
+      "name": "setCacheVal",
+      "UID": "28109401-09d3-42be-b280-aa0e7463a67d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 8
+    },
+    "6": {
+      "UID": "f14f8c9d-cf77-4ff4-84f7-e10bee6dca9b",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        11,
+        4
+      ],
+      "NodeID": 6
+    },
+    "11": {
+      "key": "50012",
+      "name": "setCacheVal",
+      "UID": "f75917ed-40a0-4096-ab72-c89c0f7c6f19",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "250ec612-e845-4054-93c9-95f81fd086b4",
+        "NodeID": 10,
+        "lValue": {
+          "key": "50012",
+          "name": "getCacheVal",
+          "UID": "a9218136-c3e2-4c1d-a30b-9855f8c15b63",
+          "target": "OWNER",
+          "NodeID": 9
+        }
+      },
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "0edd3f75-bcb4-4ea5-8bf6-0f420a89c45f",
+      "conditionIds": [
+        12,
+        14
+      ],
+      "name": "conditionOr",
+      "NodeID": 13
+    },
+    "12": {
+      "rValue": 7,
+      "name": "equal",
+      "UID": "55e86eef-ad92-4d6c-bd09-bae47e51bc19",
+      "NodeID": 12,
+      "lValue": {
+        "key": "50012",
+        "name": "getCacheVal",
+        "UID": "a9218136-c3e2-4c1d-a30b-9855f8c15b63",
+        "target": "OWNER",
+        "NodeID": 9
+      }
+    }
+  },
+  "onBuffDestroyIds": [
+    15
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    6
+  ]
+}

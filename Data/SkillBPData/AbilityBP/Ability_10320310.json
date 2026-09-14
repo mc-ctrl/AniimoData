@@ -1,0 +1,65 @@
+{
+  "BPName": "ability_10320310",
+  "NodeID": 1,
+  "UID": "9e77d25c-26dc-4eff-bec3-528952807bd7",
+  "abilityIndicator": 1,
+  "abilityParamId": 11200021,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10320310001,
+      "name": "setCombatActionTimeline",
+      "UID": "7391c4ec-6d24-4bd1-8fd2-85fd9400cfc5",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 8,
+  "preloadAnims": [
+    "Skill_DashAttack"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10032_Skill_Dash_Hit",
+    "Eff_Parmon_10032_Skill_Dash_Shadow",
+    "Eff_Parmon_10032_Skill_Dash_Enhance_L",
+    "Eff_Parmon_10032_Skill_Dash_Enhance_R",
+    "Eff_Parmon_10032_Skill_Dash_Enhance_Red_L",
+    "Eff_Parmon_10032_Skill_Dash_Enhance_Red_R"
+  ],
+  "searchRelation": 2,
+  "name": "高速突袭",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      1,
+      1,
+      6,
+      2,
+      2
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

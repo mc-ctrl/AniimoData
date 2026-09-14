@@ -1,0 +1,65 @@
+{
+  "duration": 5,
+  "BPName": "buff_2061000",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Money_Drop_Fly",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "49": {
+      "calcId": 2061000,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 49,
+      "UID": "0c92b7d7-5a84-4bb5-8024-42580c687c2f",
+      "name": "getParamByLuaConfig"
+    },
+    "50": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": {
+        "calcId": 2061000,
+        "calcType": 1,
+        "paramName": "param2",
+        "NodeID": 49,
+        "UID": "0c92b7d7-5a84-4bb5-8024-42580c687c2f",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "createEntity",
+      "UID": "a594dedb-129b-4b03-9082-2c9af475e849",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 50,
+      "pos": "PROJECTILE"
+    }
+  },
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    50
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

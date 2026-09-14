@@ -1,0 +1,160 @@
+{
+  "1021300": {
+    "$Eff_Parmon_Suit_10213_Wing_05_C_Set_Trail.prefab": {
+      "steateList": [
+        "DASH",
+        "FALL",
+        "FLYMOVE",
+        "FLYRISE",
+        "FLYSPRINT",
+        "GLIDEMOVE",
+        "FLYDASH",
+        "RUN",
+        "SPRINT",
+        "WALK",
+        "DASHSTART",
+        "JUMP"
+      ],
+      "suitColorBones": [
+        [
+          "C_01",
+          "Bone L Wing 05 A 04"
+        ],
+        [
+          "C_01",
+          "Bone R Wing 05 A 04"
+        ],
+        [
+          "C_02",
+          "Bone L Wing 05 A 04"
+        ],
+        [
+          "C_02",
+          "Bone R Wing 05 A 04"
+        ],
+        [
+          "C_03",
+          "Bone L Wing 05 A 04"
+        ],
+        [
+          "C_03",
+          "Bone R Wing 05 A 04"
+        ],
+        [
+          "C_04",
+          "Bone L Wing 05 A 04"
+        ],
+        [
+          "C_04",
+          "Bone R Wing 05 A 04"
+        ],
+        [
+          "C_05",
+          "Bone L Wing 05 A 04"
+        ],
+        [
+          "C_05",
+          "Bone R Wing 05 A 04"
+        ]
+      ],
+      "resources": "Wing_05"
+    },
+    "$Eff_Parmon_Suit_10213_Body_Set_Trail.prefab": {
+      "steateList": [
+        "DASH",
+        "FALL",
+        "FLYMOVE",
+        "FLYRISE",
+        "FLYSPRINT",
+        "GLIDEMOVE",
+        "FLYDASH",
+        "RUN",
+        "SPRINT",
+        "WALK",
+        "DASHSTART",
+        "JUMP"
+      ],
+      "suitColorBones": [
+        [
+          "C_01",
+          "Bip001 Spine3"
+        ],
+        [
+          "C_02",
+          "Bip001 Spine3"
+        ],
+        [
+          "C_03",
+          "Bip001 Spine3"
+        ],
+        [
+          "C_04",
+          "Bip001 Spine3"
+        ],
+        [
+          "C_05",
+          "Bip001 Spine3"
+        ]
+      ]
+    },
+    "$Eff_Parmon_Suit_10213_Wing_04_C_Set_Trail.prefab": {
+      "steateList": [
+        "DASH",
+        "FALL",
+        "FLYMOVE",
+        "FLYRISE",
+        "FLYSPRINT",
+        "GLIDEMOVE",
+        "FLYDASH",
+        "RUN",
+        "SPRINT",
+        "WALK",
+        "DASHSTART",
+        "JUMP"
+      ],
+      "suitColorBones": [
+        [
+          "C_01",
+          "Bone L Wing 04 B 05"
+        ],
+        [
+          "C_01",
+          "Bone R Wing 04 B 05"
+        ],
+        [
+          "C_02",
+          "Bone L Wing 04 B 05"
+        ],
+        [
+          "C_02",
+          "Bone R Wing 04 B 05"
+        ],
+        [
+          "C_03",
+          "Bone L Wing 04 B 05"
+        ],
+        [
+          "C_03",
+          "Bone R Wing 04 B 05"
+        ],
+        [
+          "C_04",
+          "Bone L Wing 04 B 05"
+        ],
+        [
+          "C_04",
+          "Bone R Wing 04 B 05"
+        ],
+        [
+          "C_05",
+          "Bone L Wing 04 B 05"
+        ],
+        [
+          "C_05",
+          "Bone R Wing 04 B 05"
+        ]
+      ],
+      "resources": "Wing_04"
+    }
+  }
+}

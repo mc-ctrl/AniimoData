@@ -1,0 +1,580 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "a3648a97-1180-4250-9529-77565593aff4",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          66,
+          35,
+          49,
+          68,
+          71
+        ]
+      },
+      "NodeID": 37
+    },
+    "38": {
+      "NodeID": 38,
+      "UID": "2b9e2969-9337-4059-95e1-f5b61364866f",
+      "isCenter": 1,
+      "shakeAmplitude": 0.15,
+      "shakeDir": [
+        0,
+        1,
+        0
+      ],
+      "shakeDissipationDistance": 100,
+      "shakeFrequency": 10,
+      "shakeKeepTime": 0.8,
+      "shakeRadius": 70,
+      "shakeTime": 0.3,
+      "target": "OWNER",
+      "checkCasterIsPlayer": false,
+      "name": "playCameraImpulse"
+    },
+    "53": {
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.7,
+      "NodeID": 53,
+      "UID": "b931d7f4-a1fd-4e44-8615-6819a067abf8"
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          56,
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.9,
+      "NodeID": 40,
+      "UID": "8e8a8ad6-cf7a-482a-88ae-106640cda408"
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "801ec7c4-cf20-4f65-824d-ce6537fde912",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_flylongbreath_longrelease",
+      "NodeID": 41
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.05,
+      "NodeID": 42,
+      "UID": "599b12ef-84fd-4bb5-9355-0fbadf525a80"
+    },
+    "35": {
+      "UID": "d694ea34-6b24-4cb4-9906-f7b7dc9dbb93",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 35
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.4,
+      "NodeID": 44,
+      "UID": "a15bea7d-0bdf-4d84-aab5-4d7b30b6b4d0"
+    },
+    "66": {
+      "UID": "28c5ef82-a728-4b21-b721-ae79f10ccb0b",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 66
+    },
+    "67": {
+      "UID": "d143a438-118b-4ec8-83a3-132367794b17",
+      "value": true,
+      "name": "forceUngrounded",
+      "NodeID": 67
+    },
+    "68": {
+      "UID": "45be84a4-ce19-43a1-a4af-97a6599d7b25",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 68
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b69166e5-7d10-48f5-aec5-b2f7c3840228",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Monster_Flylongbreath_Start"
+    },
+    "4": {
+      "UID": "25f687c2-6361-4996-a017-c5b37c22490e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "71": {
+      "UID": "138794a5-c541-4944-83c1-930937036c11",
+      "name": "ignoreVelocityProjection",
+      "enable": false,
+      "NodeID": 71
+    },
+    "72": {
+      "key": "Boss_10222_break",
+      "name": "setCacheVal",
+      "UID": "9b6f2fa6-3341-48f6-baca-1e64e75734be",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 72
+    },
+    "58": {
+      "NodeID": 58,
+      "name": "getTargetOffsetPos",
+      "UID": "56047562-8c14-4cfe-be00-6f678bd906ec",
+      "target": "OWNER",
+      "offset": [
+        0,
+        -6,
+        7.3
+      ],
+      "rotType": "OWNER"
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          69
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.45,
+      "NodeID": 70,
+      "UID": "15484e63-19a4-427d-9fa0-675f4dd86c10"
+    },
+    "69": {
+      "UID": "23685fe3-03bb-43b4-9955-a26e8c536227",
+      "name": "ignoreVelocityProjection",
+      "enable": true,
+      "NodeID": 69
+    },
+    "64": {
+      "UID": "e49f5e84-6405-44dc-a322-aeb1a5ca520d",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 64
+    },
+    "62": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 102306,
+      "name": "createEntity",
+      "UID": "16dda161-eb18-48c4-b9fd-f0eb24285b3e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "CASTER",
+      "NodeID": 62,
+      "pos": {
+        "data": {
+          "key": {
+            "UID": "824c910f-a10d-47c7-9d00-cdbd180894df",
+            "str": "onClientDataPrepared",
+            "name": "constString",
+            "NodeID": 59
+          },
+          "name": "getCacheVal",
+          "UID": "98a2d318-7c71-4440-bf92-9a7cbba7fc73",
+          "target": "OWNER",
+          "NodeID": 60
+        },
+        "propertyName": "1",
+        "name": "getProperty",
+        "UID": "893bf70c-f566-4482-a526-11e55c3717cb",
+        "NodeID": 61
+      }
+    },
+    "56": {
+      "name": "prepareDataForServerActions",
+      "UID": "48e40893-4756-4426-88d0-daaa2e6bc5f2",
+      "serverActionsIds": [
+        62
+      ],
+      "NodeID": 56,
+      "dataActions": [
+        {
+          "name": "getGroundPosByDirection",
+          "UID": "bca25403-b7fd-4522-9494-590668a51295",
+          "toPos": {
+            "NodeID": 58,
+            "name": "getTargetOffsetPos",
+            "UID": "56047562-8c14-4cfe-be00-6f678bd906ec",
+            "target": "OWNER",
+            "offset": [
+              0,
+              -6,
+              7.3
+            ],
+            "rotType": "OWNER"
+          },
+          "NodeID": 55,
+          "fromPos": {
+            "isRootDir": false,
+            "NodeID": 54,
+            "UID": "cad93c64-de45-4fc9-b924-bee3026c076f",
+            "target": "OWNER",
+            "name": "getBonePosition",
+            "boneName": "Bone M Tongue 02"
+          }
+        }
+      ]
+    },
+    "55": {
+      "name": "getGroundPosByDirection",
+      "UID": "bca25403-b7fd-4522-9494-590668a51295",
+      "toPos": {
+        "NodeID": 58,
+        "name": "getTargetOffsetPos",
+        "UID": "56047562-8c14-4cfe-be00-6f678bd906ec",
+        "target": "OWNER",
+        "offset": [
+          0,
+          -6,
+          7.3
+        ],
+        "rotType": "OWNER"
+      },
+      "NodeID": 55,
+      "fromPos": {
+        "isRootDir": false,
+        "NodeID": 54,
+        "UID": "cad93c64-de45-4fc9-b924-bee3026c076f",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone M Tongue 02"
+      }
+    },
+    "54": {
+      "isRootDir": false,
+      "NodeID": 54,
+      "UID": "cad93c64-de45-4fc9-b924-bee3026c076f",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "31": {
+      "rotationOffset": [
+        -15,
+        -90,
+        0
+      ],
+      "name": "getBoneRotation",
+      "UID": "16b4a6dc-8a2e-41da-942b-444505dcb281",
+      "target": "OWNER",
+      "NodeID": 31,
+      "boneName": "Bone M Tongue 02"
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4eb58ce6-c034-46df-88d1-8573b740ec2c",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Monster_Flylongbreath_Loop"
+    },
+    "43": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1759a897-b79d-46c5-991d-eb59a9dc4952",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_flylongbreath_loop",
+      "NodeID": 43
+    },
+    "34": {
+      "UID": "9ec068db-786a-4ae5-9b77-abf9596c7b9a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          64,
+          32,
+          67,
+          72
+        ]
+      },
+      "NodeID": 34
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.28,
+      "NodeID": 11,
+      "UID": "3a658aad-826b-4de8-b9d0-4cc5600c23a1"
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 20,
+      "UID": "2e51c7d8-8aec-478f-b071-0845723bc2f6"
+    },
+    "12": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a4fe1aba-cd4d-4674-9020-62d7b34be695",
+      "target": "OWNER",
+      "NodeID": 12,
+      "animId": "Skill_Monster_Flylongbreath_End"
+    },
+    "22": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.5,
+        "instant_dmg_rate_v": 0.5
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 3002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dragon_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_helgon_attack06",
+        "hitCameraShakeId": 10001
+      },
+      "UID": "95757cd6-4cf6-4a48-a55e-d036dbfd3e2a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 22
+    },
+    "32": {
+      "UID": "fad05a28-5288-4b79-b63e-3e574b02a20e",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 32
+    },
+    "24": {
+      "sweepDistance": 14,
+      "startPosNodeId": 29,
+      "boxExtends": [
+        3,
+        3,
+        3
+      ],
+      "NodeID": 24,
+      "hitBoxMaxHitEntityCnt": 2,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "rotationNodeId": 31,
+      "hitBoxId": "702",
+      "hitBoxMaxHitCnt": 2,
+      "relation": 2,
+      "name": "actOnSweepTargets",
+      "needEcs": true,
+      "actionIds": [
+        22
+      ],
+      "calcResultNodeId": 22,
+      "impulseId": 3002,
+      "UID": "e9c2893a-0d17-44a3-a538-e003e85a94dc"
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          12,
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.5,
+      "NodeID": 14,
+      "UID": "da377c8a-7a59-45df-98f9-511b5e378b6b"
+    },
+    "46": {
+      "UID": "3cba0900-6225-4db5-952c-202b049ec8a3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 46
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "33154556-d098-441d-85b3-4084781c4e9e",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flylongbreath_Fire",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "tickInterval": 0.05,
+      "eventType": "NotifyState",
+      "endTime": 4.7,
+      "NodeID": 25,
+      "UID": "40b221f7-6dc7-4419-add0-74773635c0e6",
+      "onUpdate": {
+        "actionIds": [
+          24
+        ]
+      },
+      "startTime": 3.4,
+      "onEnter": {
+        "actionIds": [
+          24
+        ]
+      }
+    },
+    "29": {
+      "isRootDir": false,
+      "NodeID": 29,
+      "UID": "5db45b91-f437-4a51-a83d-0e1bfbefa4f6",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "48": {
+      "name": "stopEffectStr",
+      "UID": "64d70111-c862-40c5-9101-bd842af8c549",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flylongbreath_Fire",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.1,
+      "NodeID": 17,
+      "UID": "ff7870ca-6141-41d2-ba9b-45d7f26fa7ed"
+    },
+    "49": {
+      "name": "stopEffectStr",
+      "UID": "259bd3fc-4bac-4b77-9637-8917cefe1a82",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flylongbreath_Fire",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "18": {
+      "time": 0.8,
+      "rotateSpeed": 120,
+      "name": "rotateTo",
+      "UID": "433bb24e-9af2-489d-a66c-637ff36cbc08",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 18
+    },
+    "50": {
+      "layerId": 11,
+      "rumbleName": "CommonLoopLight",
+      "name": "playRumble",
+      "UID": "d7e88ca3-540b-4f04-a281-9af3d8f6312c",
+      "target": "TARGET",
+      "NodeID": 50
+    },
+    "47": {
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.8,
+      "NodeID": 47,
+      "UID": "75b74e8d-df77-410d-a4e5-08daade00889"
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.4,
+      "NodeID": 51,
+      "UID": "e248a76c-9985-4024-9974-62be6cd53f79"
+    },
+    "52": {
+      "layerId": 11,
+      "name": "stopRumble",
+      "UID": "a48c2d3f-59c0-4dc2-a63e-5aa40c33ca98",
+      "target": "TARGET",
+      "NodeID": 52
+    }
+  },
+  "BPName": "ability_800230702",
+  "NodeID": 6,
+  "UID": "e0df99a3-0aa0-417e-bbb4-950407a75567",
+  "eventIds": [
+    34,
+    37,
+    4,
+    42,
+    14,
+    11,
+    44,
+    17,
+    20,
+    25,
+    47,
+    70,
+    40,
+    51,
+    53
+  ],
+  "layer": "Base",
+  "length": 6
+}

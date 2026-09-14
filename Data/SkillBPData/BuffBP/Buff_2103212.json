@@ -1,0 +1,213 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103212",
+  "NodeID": 1,
+  "UID": "9fc6e081-19b0-45e8-a20a-350f05dd609e",
+  "tags": [
+    3,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "7": {
+      "name": "playHitEffect",
+      "UID": "2cc5cab9-5d10-4891-a554-d4794913f5b3",
+      "target": "OWNER",
+      "NodeID": 7,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "35a585d4-e32a-48dd-a9a7-7e718f3c989c",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_sfx_parmon_break",
+      "NodeID": 9
+    },
+    "11": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "ddfffd90-e10b-4d4f-90f4-2b9ea0fda025",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "5d71cab5-78b0-4dcb-bb8b-b90064bc2cb4",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "edcfc47a-cb9c-40e3-b24a-e142e4c34995",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "13": {
+      "key": "remove",
+      "duration": 3,
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13,
+      "UID": "449c3d2b-9df6-486d-8cd5-010c2a775b56",
+      "name": "addTimer"
+    },
+    "24": {
+      "buffId": 2103212,
+      "name": "removeBuff",
+      "UID": "c97058f0-1c7f-47d7-9228-bb8aceb2df9a",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "b3bb35e8-c852-4494-8754-506c826f774e",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 14
+    },
+    "10": {
+      "duration": 6,
+      "name": "playStartLoopEndAni",
+      "NodeID": 10,
+      "UID": "73f2109a-21ac-48bc-8128-ca9469f87122",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "15": {
+      "autoRecover": true,
+      "moveImpulse": 0,
+      "NodeID": 15,
+      "UID": "6105ee38-c3a6-4372-be07-87ee469d3c88",
+      "name": "setMoveImpulse"
+    },
+    "25": {
+      "buffId": 21032120,
+      "name": "hasBuff",
+      "UID": "fd44e51d-4e47-41e5-b412-205137bcdcea",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5c2c0241-2ac5-4771-b909-3b46d2c342e6",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "27": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2103212,
+        "add_cur_bp_fix": "param0",
+        "type": 1
+      },
+      "UID": "b5676149-cfba-48bc-af89-91631f917526",
+      "target": "OWNER",
+      "NodeID": 27,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 5,
+        "dmgWordUITypes": [
+          "DOT"
+        ],
+        "disableShowJumpWord": true
+      }
+    },
+    "12": {
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "c081c70e-4cb2-42a0-a97b-fd19df4878e4",
+      "name": "doActionsByConditions",
+      "NodeID": 12,
+      "elseActionIds": [
+        24
+      ]
+    },
+    "18": {
+      "calcInfo": {
+        "add_cur_bp_fix": 0.1
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 5,
+        "dmgWordUITypes": [
+          "DOT"
+        ],
+        "disableShowJumpWord": true
+      },
+      "UID": "fc7ddd65-80b6-4509-9d53-331d23055155",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 18
+    },
+    "4": {
+      "duration": 0.6,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 4,
+      "UID": "c0075d6e-dfa9-4680-b4dd-b320c9aa41dc",
+      "name": "playRadialBlur"
+    },
+    "19": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "7aaedcc8-0258-496f-8a80-2bac6e7ac66e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "2": {
+      "keepTime": 0.2,
+      "target": "OWNER",
+      "outTime": 0.1,
+      "NodeID": 2,
+      "UID": "1b87676b-ec55-4b08-8fbc-ce5cbb0054d8",
+      "inTime": 0.1,
+      "name": "globalFreeze",
+      "freezeScale": 0.2
+    },
+    "23": {
+      "key": "1",
+      "duration": 5,
+      "actionIds": [
+        22
+      ],
+      "NodeID": 23,
+      "UID": "50ef6623-fce2-431f-ad62-95e5122bdd86",
+      "name": "addTimer"
+    }
+  },
+  "onBuffDestroyIds": [
+    21
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10,
+    2,
+    4,
+    23,
+    9,
+    7,
+    14,
+    15,
+    16,
+    19,
+    13
+  ]
+}

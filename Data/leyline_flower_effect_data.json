@@ -1,0 +1,74 @@
+{
+  "FRUIT_IDLE": {
+    "resId": "Eff_Env_SceneObject_LeaderFlower_FruitIdle",
+    "trans": {
+      "pos": [
+        -0.433,
+        0.056,
+        0.007
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    },
+    "flowerStateGroup": [
+      4
+    ],
+    "growingRatio": 1
+  },
+  "GATHER_SPOTS": {
+    "resId": "Eff_Env_SceneObject_LeaderFlower_GatherSpots",
+    "trans": {
+      "pos": [
+        -0.52,
+        0.05,
+        0.02
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "flowerStateGroup": [
+      1
+    ],
+    "growingRatio": -1
+  },
+  "GROW_FRUIT": {
+    "resId": "Eff_Env_SceneObject_LeaderFlower_GrowFruit",
+    "trans": {
+      "pos": [
+        -0.433,
+        0.056,
+        0.007
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    },
+    "flowerStateGroup": [
+      3
+    ],
+    "growingRatio": 1
+  }
+}

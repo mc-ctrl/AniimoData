@@ -1,0 +1,34 @@
+{
+  "duration": 0.8,
+  "BPName": "ability_104100001",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10041_Attack04_Bullet",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 6,
+  "kind": "Tracking",
+  "maxHitNum": 1,
+  "moveSpeed": 5,
+  "onProjectileFinishIds": [
+    2
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e8d127df-6c83-4528-a743-91da082192b6",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_laricander_attack_hit",
+      "NodeID": 2
+    }
+  },
+  "acceleration": 0
+}

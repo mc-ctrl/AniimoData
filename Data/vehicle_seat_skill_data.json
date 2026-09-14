@@ -1,0 +1,27 @@
+[
+  {
+    "vehicleSkillName": 1105325246,
+    "vehicleSkillIcon": "$UI_Icon_HudMoblie_Skill_Run.png"
+  },
+  {
+    "vehicleSkillName": 1365150479,
+    "vehicleSkillIcon": "$UI_Icon_HudMoblie_Skill_Squat.png"
+  },
+  {
+    "vehicleSkill": 2006,
+    "vehicleSkillIcon": "$UI_Icon_HudMoblie_Skill_Squat.png",
+    "vehicleSkillName": 1648664009
+  },
+  {
+    "vehicleSkillName": 1328655707,
+    "vehicleSkillIcon": "$UI_SkillIcon_Dizi.png"
+  },
+  {
+    "vehicleSkillName": 1717373778,
+    "vehicleSkillIcon": "$UI_SkillIcon_Avatar_9000004.png"
+  },
+  {
+    "vehicleSkillName": 1483929798,
+    "vehicleSkillIcon": "$UI_Icon_ExploreSkill_Exit.png"
+  }
+]

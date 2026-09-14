@@ -1,0 +1,116 @@
+{
+  "nodeMap": {
+    "128": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "38dc9839-9658-47fa-8528-f2538deb88d9",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 128
+    },
+    "129": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "248ee627-bd14-4c73-bfc4-f6aaa7b05f85",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 129
+    },
+    "126": {
+      "actionIds": [
+        128
+      ],
+      "conditionActionIds": [
+        125
+      ],
+      "UID": "0044543c-243b-4c1a-a901-fae37a2e5b68",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        129
+      ],
+      "NodeID": 126
+    },
+    "56": {
+      "timelineId": 12850100003,
+      "name": "jumpToNextTimeline",
+      "UID": "d057a619-38ed-425c-8f36-09d89c43155f",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "8": {
+      "timelineId": 12850100001,
+      "name": "jumpToNextTimeline",
+      "UID": "250fdfa9-910e-4048-bbb1-f185e8484041",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        56
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "15eb0b55-a4ed-4e8a-a1dc-8d67fc9f2045",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "50": {
+      "name": "isInBurrow",
+      "UID": "d0413ff9-7d4b-4f5b-b919-daa32d588c12",
+      "target": "CASTER",
+      "NodeID": 50,
+      "not": false
+    },
+    "10": {
+      "UID": "841f1236-429c-481d-80c7-c25a5faae178",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "127": {
+      "action": {
+        "actionIds": [
+          126
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 127,
+      "UID": "714ee0b8-e412-44e5-9edb-a42e1f2f252c"
+    },
+    "125": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "a6bc739f-0a3c-43ac-ac85-deadc394d8cd",
+      "target": "OWNER",
+      "NodeID": 125
+    }
+  },
+  "BPName": "ability_12850100",
+  "NodeID": 12,
+  "UID": "1e388159-fd9a-4696-9726-1c1a6bccde2a",
+  "eventIds": [
+    10,
+    127
+  ],
+  "layer": "Base",
+  "length": 1
+}

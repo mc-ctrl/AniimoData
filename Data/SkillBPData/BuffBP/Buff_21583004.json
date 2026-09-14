@@ -1,0 +1,193 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21583004",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    1
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 21583004,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 28,
+        "UID": "8887e461-d940-495d-a54a-5e94a9cf7c9e",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "acefbc5c-e46a-400e-b7cc-4ddfba818ca3",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "2822c7ea-f348-46c7-b24d-931dcaab93e8",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "UID": "3f68b9ef-1332-4ed1-a3cd-cd3e8cc5c70e",
+      "destroyReason": "armorVanish",
+      "name": "buffDestroyReason",
+      "NodeID": 6
+    },
+    "7": {
+      "actionIds": [
+        14,
+        16,
+        15,
+        10,
+        17,
+        27
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "a1b6426e-5175-4334-878b-d9064fcb96f3",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "interval": 0.1,
+      "UID": "1f08c3ff-a8a1-49d1-8850-4594438ce720",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "d3568421-172e-4513-ada4-0db00194b2bd",
+      "name": "immuneDamage",
+      "NodeID": 21
+    },
+    "23": {
+      "UID": "d9e45840-b4c9-4987-b239-787b4215c541",
+      "name": "reflectProjectile",
+      "NodeID": 23
+    },
+    "24": {
+      "UID": "ce85998a-f58c-4e25-ad79-df8e97468276",
+      "name": "showDialog",
+      "dialogId": 71000000,
+      "NodeID": 24
+    },
+    "14": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "0a3091a5-8d33-4419-b8ac-3cdde09c127d",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "calcInfo": {
+        "add_cur_bp_max_p": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "hitSoundType": "s",
+        "impulseId": 5002,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101
+      },
+      "UID": "aeb38c35-3603-428d-8902-26fa7acb0820",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": 5.1,
+      "buffId": 10013,
+      "NodeID": 15,
+      "UID": "4a6d3b09-98ee-408e-ad76-2f8fab5dcbd7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "NodeID": 25,
+      "UID": "e4d7ef74-a973-4a32-8c9d-5c14de4d7235",
+      "cd": 5,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "26": {
+      "UID": "9871765a-0651-44e9-8a0a-5cd78fa56be5",
+      "name": "hideBattleDialog",
+      "dialogId": 71000000,
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "acd3f29f-b5b7-4ab0-96d3-7527db1cf4c4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glameep_Skill_Gather_Break",
+      "NodeID": 27
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "3043b788-c796-442d-846a-609b48f2d1aa",
+      "effectId": "Eff_Parmon_10583_Skill_Gather_Start",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "UID": "b44fbb74-6f5f-4f19-bea7-be6e11740732",
+      "name": "checkReceiveProjectileAttack",
+      "NodeID": 18
+    },
+    "19": {
+      "actionIds": [
+        21,
+        23,
+        25
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "67620954-5c4c-4714-aad3-3a4c6a32a5a1",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "28": {
+      "calcId": 21583004,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 28,
+      "UID": "8887e461-d940-495d-a54a-5e94a9cf7c9e",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "id": 2039,
+      "hasCountDown": true,
+      "NodeID": 16,
+      "UID": "e064a832-7cda-444a-9511-9b22d9bcd9c2",
+      "name": "hideBossMechanismTip"
+    }
+  },
+  "onBuffDestroyIds": [
+    7,
+    26
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    20
+  ]
+}

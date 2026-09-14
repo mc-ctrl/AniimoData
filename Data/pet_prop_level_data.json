@@ -1,0 +1,704 @@
+[
+  {
+    "5": {
+      "basePropNum": 5,
+      "cpRate": 2,
+      "cpValue": 30
+    },
+    "6": {
+      "basePropNum": 6,
+      "cpRate": 2,
+      "cpValue": 36
+    },
+    "7": {
+      "basePropNum": 7,
+      "cpRate": 2,
+      "cpValue": 42
+    },
+    "8": {
+      "basePropNum": 8,
+      "cpRate": 2,
+      "cpValue": 48
+    },
+    "9": {
+      "basePropNum": 9,
+      "cpRate": 2,
+      "cpValue": 54
+    },
+    "11": {
+      "needPetLv": 40,
+      "basePropNum": 11,
+      "cpRate": 2,
+      "cpValue": 66
+    },
+    "1": {
+      "basePropNum": 1,
+      "cpRate": 2,
+      "cpValue": 6
+    },
+    "12": {
+      "needPetLv": 40,
+      "basePropNum": 12,
+      "cpRate": 2,
+      "cpValue": 72
+    },
+    "3": {
+      "basePropNum": 3,
+      "cpRate": 2,
+      "cpValue": 18
+    },
+    "4": {
+      "basePropNum": 4,
+      "cpRate": 2,
+      "cpValue": 24
+    },
+    "14": {
+      "needPetLv": 50,
+      "basePropNum": 14,
+      "cpRate": 2,
+      "cpValue": 84
+    },
+    "10": {
+      "basePropNum": 10,
+      "cpRate": 2,
+      "cpValue": 60
+    },
+    "15": {
+      "needPetLv": 50,
+      "basePropNum": 15,
+      "cpRate": 2,
+      "cpValue": 90
+    },
+    "16": {
+      "needPetLv": 55,
+      "basePropNum": 16,
+      "cpRate": 2,
+      "cpValue": 96
+    },
+    "17": {
+      "needPetLv": 55,
+      "basePropNum": 17,
+      "cpRate": 2,
+      "cpValue": 102
+    },
+    "20": {
+      "needPetLv": 60,
+      "basePropNum": 20,
+      "cpRate": 2,
+      "cpValue": 120
+    },
+    "18": {
+      "needPetLv": 55,
+      "basePropNum": 18,
+      "cpRate": 2,
+      "cpValue": 108
+    },
+    "2": {
+      "basePropNum": 2,
+      "cpRate": 2,
+      "cpValue": 12
+    },
+    "19": {
+      "needPetLv": 55,
+      "basePropNum": 19,
+      "cpRate": 2,
+      "cpValue": 114
+    },
+    "0": {
+      "basePropNum": 0,
+      "cpRate": 2,
+      "cpValue": 0
+    },
+    "13": {
+      "needPetLv": 50,
+      "basePropNum": 13,
+      "cpRate": 2,
+      "cpValue": 78
+    }
+  },
+  {
+    "5": {
+      "basePropNum": 5,
+      "cpRate": 2,
+      "cpValue": 30
+    },
+    "6": {
+      "basePropNum": 6,
+      "cpRate": 2,
+      "cpValue": 36
+    },
+    "7": {
+      "basePropNum": 7,
+      "cpRate": 2,
+      "cpValue": 42
+    },
+    "8": {
+      "basePropNum": 8,
+      "cpRate": 2,
+      "cpValue": 48
+    },
+    "9": {
+      "basePropNum": 9,
+      "cpRate": 2,
+      "cpValue": 54
+    },
+    "11": {
+      "needPetLv": 40,
+      "basePropNum": 11,
+      "cpRate": 2,
+      "cpValue": 66
+    },
+    "1": {
+      "basePropNum": 1,
+      "cpRate": 2,
+      "cpValue": 6
+    },
+    "12": {
+      "needPetLv": 40,
+      "basePropNum": 12,
+      "cpRate": 2,
+      "cpValue": 72
+    },
+    "3": {
+      "basePropNum": 3,
+      "cpRate": 2,
+      "cpValue": 18
+    },
+    "4": {
+      "basePropNum": 4,
+      "cpRate": 2,
+      "cpValue": 24
+    },
+    "14": {
+      "needPetLv": 50,
+      "basePropNum": 14,
+      "cpRate": 2,
+      "cpValue": 84
+    },
+    "10": {
+      "basePropNum": 10,
+      "cpRate": 2,
+      "cpValue": 60
+    },
+    "15": {
+      "needPetLv": 50,
+      "basePropNum": 15,
+      "cpRate": 2,
+      "cpValue": 90
+    },
+    "16": {
+      "needPetLv": 55,
+      "basePropNum": 16,
+      "cpRate": 2,
+      "cpValue": 96
+    },
+    "17": {
+      "needPetLv": 55,
+      "basePropNum": 17,
+      "cpRate": 2,
+      "cpValue": 102
+    },
+    "20": {
+      "needPetLv": 60,
+      "basePropNum": 20,
+      "cpRate": 2,
+      "cpValue": 120
+    },
+    "18": {
+      "needPetLv": 55,
+      "basePropNum": 18,
+      "cpRate": 2,
+      "cpValue": 108
+    },
+    "2": {
+      "basePropNum": 2,
+      "cpRate": 2,
+      "cpValue": 12
+    },
+    "19": {
+      "needPetLv": 55,
+      "basePropNum": 19,
+      "cpRate": 2,
+      "cpValue": 114
+    },
+    "0": {
+      "basePropNum": 0,
+      "cpRate": 2,
+      "cpValue": 0
+    },
+    "13": {
+      "needPetLv": 50,
+      "basePropNum": 13,
+      "cpRate": 2,
+      "cpValue": 78
+    }
+  },
+  {
+    "5": {
+      "basePropNum": 5,
+      "cpRate": 2,
+      "cpValue": 30
+    },
+    "6": {
+      "basePropNum": 6,
+      "cpRate": 2,
+      "cpValue": 36
+    },
+    "7": {
+      "basePropNum": 7,
+      "cpRate": 2,
+      "cpValue": 42
+    },
+    "8": {
+      "basePropNum": 8,
+      "cpRate": 2,
+      "cpValue": 48
+    },
+    "9": {
+      "basePropNum": 9,
+      "cpRate": 2,
+      "cpValue": 54
+    },
+    "11": {
+      "needPetLv": 40,
+      "basePropNum": 11,
+      "cpRate": 2,
+      "cpValue": 66
+    },
+    "1": {
+      "basePropNum": 1,
+      "cpRate": 2,
+      "cpValue": 6
+    },
+    "12": {
+      "needPetLv": 40,
+      "basePropNum": 12,
+      "cpRate": 2,
+      "cpValue": 72
+    },
+    "3": {
+      "basePropNum": 3,
+      "cpRate": 2,
+      "cpValue": 18
+    },
+    "4": {
+      "basePropNum": 4,
+      "cpRate": 2,
+      "cpValue": 24
+    },
+    "14": {
+      "needPetLv": 50,
+      "basePropNum": 14,
+      "cpRate": 2,
+      "cpValue": 84
+    },
+    "10": {
+      "basePropNum": 10,
+      "cpRate": 2,
+      "cpValue": 60
+    },
+    "15": {
+      "needPetLv": 50,
+      "basePropNum": 15,
+      "cpRate": 2,
+      "cpValue": 90
+    },
+    "16": {
+      "needPetLv": 55,
+      "basePropNum": 16,
+      "cpRate": 2,
+      "cpValue": 96
+    },
+    "17": {
+      "needPetLv": 55,
+      "basePropNum": 17,
+      "cpRate": 2,
+      "cpValue": 102
+    },
+    "20": {
+      "needPetLv": 60,
+      "basePropNum": 20,
+      "cpRate": 2,
+      "cpValue": 120
+    },
+    "18": {
+      "needPetLv": 55,
+      "basePropNum": 18,
+      "cpRate": 2,
+      "cpValue": 108
+    },
+    "2": {
+      "basePropNum": 2,
+      "cpRate": 2,
+      "cpValue": 12
+    },
+    "19": {
+      "needPetLv": 55,
+      "basePropNum": 19,
+      "cpRate": 2,
+      "cpValue": 114
+    },
+    "0": {
+      "basePropNum": 0,
+      "cpRate": 2,
+      "cpValue": 0
+    },
+    "13": {
+      "needPetLv": 50,
+      "basePropNum": 13,
+      "cpRate": 2,
+      "cpValue": 78
+    }
+  },
+  {
+    "5": {
+      "basePropNum": 5,
+      "cpRate": 2,
+      "cpValue": 30
+    },
+    "6": {
+      "basePropNum": 6,
+      "cpRate": 2,
+      "cpValue": 36
+    },
+    "7": {
+      "basePropNum": 7,
+      "cpRate": 2,
+      "cpValue": 42
+    },
+    "8": {
+      "basePropNum": 8,
+      "cpRate": 2,
+      "cpValue": 48
+    },
+    "9": {
+      "basePropNum": 9,
+      "cpRate": 2,
+      "cpValue": 54
+    },
+    "11": {
+      "needPetLv": 40,
+      "basePropNum": 11,
+      "cpRate": 2,
+      "cpValue": 66
+    },
+    "1": {
+      "basePropNum": 1,
+      "cpRate": 2,
+      "cpValue": 6
+    },
+    "12": {
+      "needPetLv": 40,
+      "basePropNum": 12,
+      "cpRate": 2,
+      "cpValue": 72
+    },
+    "3": {
+      "basePropNum": 3,
+      "cpRate": 2,
+      "cpValue": 18
+    },
+    "4": {
+      "basePropNum": 4,
+      "cpRate": 2,
+      "cpValue": 24
+    },
+    "14": {
+      "needPetLv": 50,
+      "basePropNum": 14,
+      "cpRate": 2,
+      "cpValue": 84
+    },
+    "10": {
+      "basePropNum": 10,
+      "cpRate": 2,
+      "cpValue": 60
+    },
+    "15": {
+      "needPetLv": 50,
+      "basePropNum": 15,
+      "cpRate": 2,
+      "cpValue": 90
+    },
+    "16": {
+      "needPetLv": 55,
+      "basePropNum": 16,
+      "cpRate": 2,
+      "cpValue": 96
+    },
+    "17": {
+      "needPetLv": 55,
+      "basePropNum": 17,
+      "cpRate": 2,
+      "cpValue": 102
+    },
+    "20": {
+      "needPetLv": 60,
+      "basePropNum": 20,
+      "cpRate": 2,
+      "cpValue": 120
+    },
+    "18": {
+      "needPetLv": 55,
+      "basePropNum": 18,
+      "cpRate": 2,
+      "cpValue": 108
+    },
+    "2": {
+      "basePropNum": 2,
+      "cpRate": 2,
+      "cpValue": 12
+    },
+    "19": {
+      "needPetLv": 55,
+      "basePropNum": 19,
+      "cpRate": 2,
+      "cpValue": 114
+    },
+    "0": {
+      "basePropNum": 0,
+      "cpRate": 2,
+      "cpValue": 0
+    },
+    "13": {
+      "needPetLv": 50,
+      "basePropNum": 13,
+      "cpRate": 2,
+      "cpValue": 78
+    }
+  },
+  {
+    "5": {
+      "basePropNum": 5,
+      "cpRate": 2,
+      "cpValue": 30
+    },
+    "6": {
+      "basePropNum": 6,
+      "cpRate": 2,
+      "cpValue": 36
+    },
+    "7": {
+      "basePropNum": 7,
+      "cpRate": 2,
+      "cpValue": 42
+    },
+    "8": {
+      "basePropNum": 8,
+      "cpRate": 2,
+      "cpValue": 48
+    },
+    "9": {
+      "basePropNum": 9,
+      "cpRate": 2,
+      "cpValue": 54
+    },
+    "11": {
+      "needPetLv": 40,
+      "basePropNum": 11,
+      "cpRate": 2,
+      "cpValue": 66
+    },
+    "1": {
+      "basePropNum": 1,
+      "cpRate": 2,
+      "cpValue": 6
+    },
+    "12": {
+      "needPetLv": 40,
+      "basePropNum": 12,
+      "cpRate": 2,
+      "cpValue": 72
+    },
+    "3": {
+      "basePropNum": 3,
+      "cpRate": 2,
+      "cpValue": 18
+    },
+    "4": {
+      "basePropNum": 4,
+      "cpRate": 2,
+      "cpValue": 24
+    },
+    "14": {
+      "needPetLv": 50,
+      "basePropNum": 14,
+      "cpRate": 2,
+      "cpValue": 84
+    },
+    "10": {
+      "basePropNum": 10,
+      "cpRate": 2,
+      "cpValue": 60
+    },
+    "15": {
+      "needPetLv": 50,
+      "basePropNum": 15,
+      "cpRate": 2,
+      "cpValue": 90
+    },
+    "16": {
+      "needPetLv": 55,
+      "basePropNum": 16,
+      "cpRate": 2,
+      "cpValue": 96
+    },
+    "17": {
+      "needPetLv": 55,
+      "basePropNum": 17,
+      "cpRate": 2,
+      "cpValue": 102
+    },
+    "20": {
+      "needPetLv": 60,
+      "basePropNum": 20,
+      "cpRate": 2,
+      "cpValue": 120
+    },
+    "18": {
+      "needPetLv": 55,
+      "basePropNum": 18,
+      "cpRate": 2,
+      "cpValue": 108
+    },
+    "2": {
+      "basePropNum": 2,
+      "cpRate": 2,
+      "cpValue": 12
+    },
+    "19": {
+      "needPetLv": 55,
+      "basePropNum": 19,
+      "cpRate": 2,
+      "cpValue": 114
+    },
+    "0": {
+      "basePropNum": 0,
+      "cpRate": 2,
+      "cpValue": 0
+    },
+    "13": {
+      "needPetLv": 50,
+      "basePropNum": 13,
+      "cpRate": 2,
+      "cpValue": 78
+    }
+  },
+  {
+    "5": {
+      "basePropNum": 5,
+      "cpRate": 2,
+      "cpValue": 30
+    },
+    "6": {
+      "basePropNum": 6,
+      "cpRate": 2,
+      "cpValue": 36
+    },
+    "7": {
+      "basePropNum": 7,
+      "cpRate": 2,
+      "cpValue": 42
+    },
+    "8": {
+      "basePropNum": 8,
+      "cpRate": 2,
+      "cpValue": 48
+    },
+    "9": {
+      "basePropNum": 9,
+      "cpRate": 2,
+      "cpValue": 54
+    },
+    "11": {
+      "needPetLv": 40,
+      "basePropNum": 11,
+      "cpRate": 2,
+      "cpValue": 66
+    },
+    "1": {
+      "basePropNum": 1,
+      "cpRate": 2,
+      "cpValue": 6
+    },
+    "12": {
+      "needPetLv": 40,
+      "basePropNum": 12,
+      "cpRate": 2,
+      "cpValue": 72
+    },
+    "3": {
+      "basePropNum": 3,
+      "cpRate": 2,
+      "cpValue": 18
+    },
+    "4": {
+      "basePropNum": 4,
+      "cpRate": 2,
+      "cpValue": 24
+    },
+    "14": {
+      "needPetLv": 50,
+      "basePropNum": 14,
+      "cpRate": 2,
+      "cpValue": 84
+    },
+    "10": {
+      "basePropNum": 10,
+      "cpRate": 2,
+      "cpValue": 60
+    },
+    "15": {
+      "needPetLv": 50,
+      "basePropNum": 15,
+      "cpRate": 2,
+      "cpValue": 90
+    },
+    "16": {
+      "needPetLv": 55,
+      "basePropNum": 16,
+      "cpRate": 2,
+      "cpValue": 96
+    },
+    "17": {
+      "needPetLv": 55,
+      "basePropNum": 17,
+      "cpRate": 2,
+      "cpValue": 102
+    },
+    "20": {
+      "needPetLv": 60,
+      "basePropNum": 20,
+      "cpRate": 2,
+      "cpValue": 120
+    },
+    "18": {
+      "needPetLv": 55,
+      "basePropNum": 18,
+      "cpRate": 2,
+      "cpValue": 108
+    },
+    "2": {
+      "basePropNum": 2,
+      "cpRate": 2,
+      "cpValue": 12
+    },
+    "19": {
+      "needPetLv": 55,
+      "basePropNum": 19,
+      "cpRate": 2,
+      "cpValue": 114
+    },
+    "0": {
+      "basePropNum": 0,
+      "cpRate": 2,
+      "cpValue": 0
+    },
+    "13": {
+      "needPetLv": 50,
+      "basePropNum": 13,
+      "cpRate": 2,
+      "cpValue": 78
+    }
+  }
+]

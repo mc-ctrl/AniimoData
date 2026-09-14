@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_13339901",
+  "NodeID": 1,
+  "UID": "707cd5c0-714f-4a12-9efa-7ac14a5a1b33",
+  "desc": "",
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 13339901001,
+      "name": "setCombatActionTimeline",
+      "UID": "7f041c8b-36be-435e-9578-7865f5863062",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10333_Ex_02",
+    "Eff_Parmon_10333_Ex_05",
+    "Eff_Parmon_10333_Ex_04_Rogue"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10500401,
+  "name": "螳螂必杀技"
+}

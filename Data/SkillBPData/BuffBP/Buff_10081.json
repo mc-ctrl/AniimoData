@@ -1,0 +1,113 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10081",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "onBuffRefreshIds": [
+    4,
+    13,
+    9,
+    11,
+    12,
+    6
+  ],
+  "tags": [
+    3,
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "name": "changeControlState",
+      "UID": "ae1fc1ff-d283-4a3f-aa01-ee5df417cc0a",
+      "target": "OWNER",
+      "controlState": "LOCOMOTION",
+      "NodeID": 13
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5b819b00-dc02-4b71-8d21-0085a2858e48",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10045_Skill_Vine_02",
+      "NodeID": 6
+    },
+    "7": {
+      "name": "stopSoundStr",
+      "UID": "b9dc10b9-d852-4f73-bf22-1f0016da7dfe",
+      "soundId": "SFX_Combat_10045_Skill_Vine_02",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "tag": "TE_Wild_Stun",
+      "name": "removeEntityTag",
+      "UID": "67c57761-ec53-4314-ab8e-c93aaf349c30",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "9": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 9,
+      "UID": "9f187b27-780a-4044-bebc-324955828761",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "7f7571ca-23ee-4ebd-800e-04f52c912e61",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "080b822a-f959-42e3-b304-dee1e4060302",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_Vine_02",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "748c8832-1b1a-4926-b7a0-4b73f16d81b0",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "4": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 4,
+      "UID": "0b61b04d-0aad-462c-9a17-70a3ec565116",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_Vine_02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "12": {
+      "tag": "TE_Wild_Stun",
+      "name": "addEntityTag",
+      "UID": "c26fdea8-e161-4af0-a2af-7df24cd90262",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffThinkIds": [
+    7
+  ],
+  "onBuffDestroyIds": [
+    2,
+    14,
+    16
+  ],
+  "onBuffStartIds": [
+    4,
+    13,
+    9,
+    11,
+    12,
+    6
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11152",
+  "NodeID": 1,
+  "UID": "1071c4a3-fee6-4a06-a40f-99a798e523b1",
+  "desc": "催眠花交互cd",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "278aef5f-8642-40dc-b97a-e930f29469d1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10351_CatchHoney",
+      "NodeID": 4
+    },
+    "2": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "8b18c05f-3474-496f-88e0-6910671231f3",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Collect",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "name": "催眠花交互cd",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    4
+  ]
+}

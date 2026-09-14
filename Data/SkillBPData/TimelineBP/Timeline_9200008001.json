@@ -1,0 +1,779 @@
+{
+  "nodeMap": {
+    "187": {
+      "name": "stopSoundStr",
+      "UID": "2ba7dcb9-af70-4854-9ad5-ddd85f58e84f",
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyLoop",
+      "target": "OWNER",
+      "NodeID": 187
+    },
+    "184": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "81a638e1-710c-43b4-9421-680030fc3f48",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyEnd01",
+      "NodeID": 184
+    },
+    "183": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "de5bb27a-fe5a-41af-b832-7db6b0720999",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyEnd02",
+      "NodeID": 183
+    },
+    "168": {
+      "key": "dollDestroy",
+      "name": "setCacheVal",
+      "UID": "e35b0d7d-ac11-45d8-9085-eb9c5526f84f",
+      "val": 0,
+      "NodeID": 168
+    },
+    "41": {
+      "timelineId": 9200008002,
+      "name": "jumpToNextTimeline",
+      "UID": "902a6c68-e106-42bc-ac99-9088fae4ac60",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "116": {
+      "UID": "510287d2-a032-4f03-b5c2-d5d3f2fde577",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 116
+    },
+    "83": {
+      "duration": 7,
+      "name": "playFovCameraAnim",
+      "UID": "4146f214-6321-45d4-ba3e-f14c43b1872a",
+      "blendInTime": 0.7,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "FOV_9200008",
+      "target": "OWNER",
+      "blendOutTime": 0.3,
+      "NodeID": 83
+    },
+    "182": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "77102961-5ecb-4787-b7ed-943896fee269",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyEnd01",
+      "NodeID": 182
+    },
+    "84": {
+      "UID": "4a877775-c85c-4bcf-bdc2-0fbb774968bc",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          83
+        ]
+      },
+      "NodeID": 84
+    },
+    "91": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 21134,
+        "hitFrameFreezeId": 10013,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Avatar_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 5005
+      },
+      "UID": "9444e557-97be-4679-b11e-697eb74b4c06",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 91
+    },
+    "25": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 5.7,
+      "NodeID": 25,
+      "UID": "7685a2fd-30bb-414b-8ce1-582c4bd2ba4c",
+      "onUpdate": {
+        "actionIds": [
+          23
+        ]
+      },
+      "startTime": 0.7,
+      "onEnter": {
+        "actionIds": [
+          23
+        ]
+      }
+    },
+    "85": {
+      "UID": "1e9652a6-e621-4e8f-8972-f422bb53466c",
+      "target": "OWNER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 85
+    },
+    "118": {
+      "UID": "d3211d26-229c-4e64-8bcc-bf16f6373cd4",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          116
+        ]
+      },
+      "NodeID": 118
+    },
+    "68": {
+      "canRotate": true,
+      "velocity": 1,
+      "NodeID": 68,
+      "UID": "ece4b900-c2e1-4ced-8100-b754a109578c",
+      "target": "OWNER",
+      "name": "registerMoveByInput",
+      "angleVelocity": 0
+    },
+    "159": {
+      "effectKey": "Eff_Avatar_Female_Skill_Doll",
+      "name": "setEffectMaterialPropertyVector",
+      "UID": "dcf107c1-44c6-48c4-aa35-546f3646ec2a",
+      "value": [
+        0.261,
+        1,
+        0,
+        1
+      ],
+      "propertyId": 868,
+      "NodeID": 159
+    },
+    "69": {
+      "UID": "7d80d112-878c-44c8-a2ce-c5c9db4ccb1b",
+      "target": "OWNER",
+      "name": "stopMoveByInput",
+      "NodeID": 69
+    },
+    "3": {
+      "UID": "b3213193-c7a4-4a59-a167-9a8b850ebc70",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "172": {
+      "target": "TARGET",
+      "duration": 1,
+      "speed": 1,
+      "NodeID": 172,
+      "UID": "f5ea4f40-f0ae-485e-86c2-62e95aa671a1",
+      "displacementDir": "OUT",
+      "displacementTarget": "OWNER",
+      "name": "forceDisplacement"
+    },
+    "162": {
+      "effectKey": "Eff_Avatar_Female_Skill_Doll",
+      "name": "setEffectMaterialPropertyInt",
+      "UID": "d0776942-86c8-4ec8-b2a8-1bd5208324ff",
+      "value": 1,
+      "propertyId": 6195,
+      "NodeID": 162
+    },
+    "95": {
+      "action": {
+        "actionIds": [
+          107,
+          141,
+          93,
+          97,
+          139,
+          158,
+          187
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.85,
+      "NodeID": 95,
+      "UID": "72b17e6f-349c-463b-b8ba-f79c13e3a449"
+    },
+    "122": {
+      "UID": "02c68bea-33df-4e70-ad47-5f59ff1fe8c6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          123,
+          120
+        ]
+      },
+      "NodeID": 122
+    },
+    "171": {
+      "key": "dollDestroy",
+      "name": "setCacheVal",
+      "UID": "6a2baddd-7e6a-415c-a7fd-f559506c63b1",
+      "val": 1,
+      "NodeID": 171
+    },
+    "123": {
+      "UID": "a029c971-67fb-4337-9c1f-9b79e71e1d4d",
+      "target": "OWNER",
+      "name": "stopMoveByInput",
+      "NodeID": 123
+    },
+    "163": {
+      "effectKey": "Eff_Avatar_Female_Skill_Doll",
+      "duration": 1,
+      "propertyName": "_VFXFresnelPluginModel_FresnelColor",
+      "NodeID": 163,
+      "UID": "e30f8bbc-60c3-4471-9cb9-912e91946b6c",
+      "name": "tweenEffectMaterialProperty",
+      "fromColor": [
+        15.76737,
+        2.75185,
+        6.51538,
+        1
+      ],
+      "toColor": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "161": {
+      "effectKey": "Eff_Avatar_Female_Skill_Doll",
+      "name": "setEffectMaterialPropertyInt",
+      "UID": "b0f99fa0-10a5-4444-9d39-16e539be0e3e",
+      "value": 2,
+      "propertyId": 871,
+      "NodeID": 161
+    },
+    "160": {
+      "effectKey": "Eff_Avatar_Female_Skill_Doll",
+      "name": "setEffectMaterialPropertyInt",
+      "UID": "80a61adc-c487-44b0-97d9-55ddbbe8d84f",
+      "value": 1,
+      "propertyId": 866,
+      "NodeID": 160
+    },
+    "179": {
+      "calcInfo": {
+        "tp_temp_max": 999,
+        "tp_temp_cur": 999
+      },
+      "name": "addDynamicAttribute",
+      "UID": "da7e3a9c-f5e5-4bd5-af0c-c40b6e956f2b",
+      "target": "OWNER",
+      "NodeID": 179
+    },
+    "93": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 91,
+      "NodeID": 93,
+      "UID": "e26b7d94-e399-4faa-96b5-7baa8eadda5f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            1.5
+          ],
+          "shapeArgs": [
+            2.3,
+            2.3,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        91
+      ]
+    },
+    "180": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "005b9651-f71e-488b-a088-4f6bd4fcf0ac",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyStart",
+      "NodeID": 180
+    },
+    "26": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "79eb4207-5554-497e-a57a-173b072d205b",
+      "target": "OWNER",
+      "NodeID": 26,
+      "animId": "Skill_Crush_DestroyLoop"
+    },
+    "181": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9982d96a-af2c-4f8b-93a4-aa5b608e09b6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyLoop",
+      "NodeID": 181
+    },
+    "141": {
+      "offsetXYZ": [
+        -0.133,
+        0,
+        1
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1d126dce-5b4f-43e4-81d4-86c16fd9339f",
+      "effectId": "Eff_Avatar_Female_Skill_Doll_Floor",
+      "speed": 1,
+      "NodeID": 141
+    },
+    "5": {
+      "UID": "752ac213-4416-411c-9958-0c8deda85614",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          45,
+          168,
+          179
+        ]
+      },
+      "NodeID": 5
+    },
+    "127": {
+      "triggerName": "Start",
+      "name": "setEffectAnimTrigger",
+      "UID": "3fb4ec1d-bca1-40d7-9ab2-32d8362733a7",
+      "effectId": "Eff_Avatar_Female_Skill_Doll",
+      "target": "OWNER",
+      "NodeID": 127
+    },
+    "129": {
+      "triggerName": "End",
+      "name": "setEffectAnimTrigger",
+      "UID": "8ce13acf-9a40-4e59-97ff-65caf9085b2f",
+      "effectId": "Eff_Avatar_Female_Skill_Doll",
+      "target": "OWNER",
+      "NodeID": 129
+    },
+    "97": {
+      "cameraShakeId": 21134,
+      "name": "playCameraImpulseById",
+      "UID": "60f1233a-6ed0-44c0-901f-2462961c980c",
+      "target": "OWNER",
+      "NodeID": 97
+    },
+    "139": {
+      "key": "doll",
+      "duration": 1.25,
+      "actionIds": [
+        143,
+        137,
+        171,
+        183
+      ],
+      "NodeID": 139,
+      "UID": "37263857-6cf0-476f-a52f-6579fd2814cc",
+      "name": "addTimer"
+    },
+    "137": {
+      "name": "stopEffectStr",
+      "UID": "23b799e6-f602-4d4f-b9ca-4a87eca5693f",
+      "effectId": "Eff_Avatar_Female_Skill_Doll",
+      "target": "OWNER",
+      "NodeID": 137
+    },
+    "136": {
+      "name": "stopEffectStr",
+      "UID": "da6bb527-8ae0-4e35-aa7c-7d30f788656f",
+      "effectId": "Eff_Avatar_Female_Skill_Crush_DestroyLoop",
+      "target": "OWNER",
+      "NodeID": 136
+    },
+    "133": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3d3ce12b-d06f-4991-89a8-7d8ea77e848d",
+      "effectId": "Eff_Avatar_Female_Skill_Crush_DestroyLoop",
+      "speed": 1,
+      "NodeID": 133
+    },
+    "143": {
+      "offsetXYZ": [
+        -0.133,
+        0.4,
+        1
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f1392f9b-683e-47c3-a3e9-2e4ab875f4ef",
+      "effectId": "Eff_Avatar_Female_Skill_Doll_Disappear",
+      "speed": 1,
+      "NodeID": 143
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29,
+          69,
+          182,
+          129
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 31,
+      "UID": "fed8d37c-9b24-4543-b660-c2c5d003fc04"
+    },
+    "128": {
+      "triggerName": "Loop",
+      "name": "setEffectAnimTrigger",
+      "UID": "eea2023e-6370-44df-bad4-658f7cfd4036",
+      "effectId": "Eff_Avatar_Female_Skill_Doll",
+      "target": "OWNER",
+      "NodeID": 128
+    },
+    "124": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c31172cb-4502-405d-b321-e5690f253659",
+      "effectId": "Eff_Avatar_Female_Skill_Doll",
+      "speed": 1,
+      "NodeID": 124
+    },
+    "16": {
+      "UID": "780664f3-73a6-4c79-b03d-c6d21c7c1565",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          180,
+          124,
+          127
+        ]
+      },
+      "NodeID": 16
+    },
+    "11": {
+      "UID": "8808ee2c-f1f0-44a7-8faf-fdad07290bc8",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "135": {
+      "action": {
+        "actionIds": [
+          133,
+          181
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 135,
+      "UID": "98c9150a-7b95-4379-b4b0-0979ace05097"
+    },
+    "21": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Avatar_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000
+      },
+      "UID": "bb65f281-394a-42af-803a-2b60b4a0d59b",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 21
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8,
+      "NodeID": 13,
+      "UID": "51c217d5-dcbc-4c46-bbf0-2435c08d6cf3"
+    },
+    "23": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 21,
+      "NodeID": 23,
+      "UID": "c2f784c6-eab4-4116-a263-bf9a86a65ffc",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        21,
+        172
+      ]
+    },
+    "45": {
+      "UID": "eabec639-ba8c-4079-b1c1-de969a9fae74",
+      "name": "registerStopChargeEvent",
+      "chargeTimeActions": [
+        {
+          "actionIds": [
+            85,
+            184,
+            41
+          ],
+          "chargeTime": 0
+        },
+        {
+          "actionIds": [
+            85
+          ],
+          "chargeTime": 6
+        }
+      ],
+      "NodeID": 45
+    },
+    "14": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "462fa19e-0aea-471e-8bab-41f60a9b76e4",
+      "target": "OWNER",
+      "NodeID": 14,
+      "animId": "Skill_Crush_DestroyStart"
+    },
+    "156": {
+      "effectKey": "Eff_Avatar_Female_Skill_Doll",
+      "name": "setEffectMaterialPropertyInt",
+      "UID": "81c6ea56-9dfc-4f78-bb15-88cd49955c2d",
+      "value": 1,
+      "propertyId": 6194,
+      "NodeID": 156
+    },
+    "120": {
+      "UID": "350d8609-eba8-4242-8812-a1d5a6485491",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 120
+    },
+    "107": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "42e3c74d-93f6-43fb-acf0-39d9effac703",
+      "target": "OWNER",
+      "NodeID": 107
+    },
+    "76": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Avatar_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 3000
+      },
+      "UID": "7dff07c4-9dcf-445b-ad8a-41c460ac7677",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 76
+    },
+    "108": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "fd69e2d8-00aa-4b4e-9f8f-104a083dd888",
+      "target": "OWNER",
+      "NodeID": 108
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26,
+          68,
+          128
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 28,
+      "UID": "bcd7b36c-c348-4cc5-a366-80507efd9056"
+    },
+    "29": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "8ff86e57-d8ac-42dc-8f42-7727546cf77e",
+      "target": "OWNER",
+      "NodeID": 29,
+      "animId": "Skill_Crush_DestroyEnd"
+    },
+    "78": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 76,
+      "NodeID": 78,
+      "UID": "3303342e-bcfa-43f7-a0b1-a6ce4484e9e8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.3
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            2.3,
+            2,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        76
+      ]
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5b088c94-b399-4512-af48-75c6bd0e9458",
+      "effectId": "Eff_Avatar_Female_Skill_Crush_DestroyLoop_Disappear",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "158": {
+      "key": "DollRimLight",
+      "duration": 0.05,
+      "actionIds": [
+        163,
+        156,
+        159,
+        160,
+        161,
+        162
+      ],
+      "NodeID": 158,
+      "UID": "6088edee-df3a-42b9-96c9-afd151add9df",
+      "name": "addTimer"
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          32,
+          136
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.283,
+      "NodeID": 34,
+      "UID": "f79bf2f1-2196-4d2f-9f4e-2f646f1e8c0b"
+    },
+    "80": {
+      "action": {
+        "actionIds": [
+          108,
+          78
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.1,
+      "NodeID": 80,
+      "UID": "886be0de-36c9-4dd7-b84c-0b96fb7d679c"
+    }
+  },
+  "BPName": "ability_9200008",
+  "NodeID": 7,
+  "UID": "4d7d1b71-e52c-418b-b13b-5050d548eee2",
+  "eventIds": [
+    5,
+    16,
+    135,
+    13,
+    28,
+    31,
+    25,
+    122,
+    118,
+    80,
+    84,
+    34,
+    95
+  ],
+  "layer": "Base",
+  "length": 10
+}

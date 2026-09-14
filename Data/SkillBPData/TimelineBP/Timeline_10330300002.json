@@ -1,0 +1,275 @@
+{
+  "nodeMap": {
+    "37": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 37,
+      "UID": "bc2d9ccc-95f1-420a-8a17-4d44bad94c93",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          45,
+          37,
+          46,
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 39,
+      "UID": "907533d1-1f0e-4fbf-b8f3-d62480fddd69"
+    },
+    "63": {
+      "offsetXYZ": [
+        0,
+        1,
+        0.5
+      ],
+      "templateId": 10330300002,
+      "name": "createProjectile",
+      "UID": "d52733ae-29cb-457c-bffb-375346963fd8",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 63,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "65": {
+      "action": {
+        "actionIds": [
+          63,
+          74
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 65,
+      "UID": "e08f93f6-1b5e-4d89-8ab8-5f4473e52ce3"
+    },
+    "84": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "e78dbb3b-1e2c-40a7-9fc8-365b3075196d",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.1,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 84
+    },
+    "85": {
+      "UID": "12650669-c7f7-4a1a-9d24-25cebee9e160",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          84
+        ]
+      },
+      "NodeID": 85
+    },
+    "12": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "de143a7b-5d15-4423-bf4e-a895fc754842",
+      "target": "OWNER",
+      "NodeID": 12,
+      "animId": "Skill_FlyBlade_Fire"
+    },
+    "73": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "42f379d8-b521-4186-bf97-55135f283a1e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10033_Skill_FlyBlade",
+      "NodeID": 73
+    },
+    "74": {
+      "target": "PROJECTILE",
+      "name": "playSoundStr",
+      "UID": "a90aa16b-53e0-4e56-8328-0c0cd0b5dad0",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10033_Skill_FlyBlade_Bullet",
+      "NodeID": 74
+    },
+    "45": {
+      "renderNameFilter": [
+        "M_Parmon_10033_Body1"
+      ],
+      "duration": 0.783,
+      "disableWhenFinished": false,
+      "NodeID": 45,
+      "UID": "2e2c6213-438d-4c84-91a1-d7b05fa1cfcf",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10033_Skill_FlyBlade_End",
+      "name": "playPreset"
+    },
+    "14": {
+      "UID": "84886af9-7a15-422b-b9ca-b67510475df8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          53,
+          73
+        ]
+      },
+      "NodeID": 14
+    },
+    "46": {
+      "UID": "afdaf9d2-931c-4af3-bc91-b58cb5f43056",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10033_Skill_FlyBlade_Start",
+      "NodeID": 46
+    },
+    "75": {
+      "target": "PROJECTILE",
+      "name": "playSoundStr",
+      "UID": "16f86d54-2d05-4da6-b5ea-8065621d1c94",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10033_Skill_FlyBlade_Bullet",
+      "NodeID": 75
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "95b4cd49-980f-4e84-8054-0da558aa6f9a",
+      "effectId": "Eff_Parmon_10033_Skill_FlyBlade_Start",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "26": {
+      "UID": "6ad7c94d-ff48-4945-9448-b42fadabbcc3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "fcdb9480-cbd0-41e1-91a9-4f511a768188",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 27
+    },
+    "32": {
+      "UID": "345f5fed-8931-44a3-99cd-e00bf97baef5",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 32
+    },
+    "49": {
+      "UID": "04f12dc1-c7a2-4a25-b97d-171e7acd3a4b",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10033_Skill_FlyBlade_Start",
+      "NodeID": 49
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 30,
+      "UID": "1bab91d2-8631-4390-85d8-ed89dfb7f283"
+    },
+    "60": {
+      "offsetXYZ": [
+        0,
+        1,
+        0.5
+      ],
+      "templateId": 10330300001,
+      "name": "createProjectile",
+      "UID": "ff732c4c-4833-479a-bf0e-ed0083f15963",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 60,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "29": {
+      "UID": "66c57be0-58d5-4521-8674-379aae29670e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 29
+    },
+    "34": {
+      "UID": "813b361b-a538-42a9-8c30-8372748d9a51",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "NodeID": 34
+    },
+    "62": {
+      "action": {
+        "actionIds": [
+          60,
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 62,
+      "UID": "706dabc3-6921-4437-bf1d-f0183765c0ba"
+    }
+  },
+  "BPName": "ability_10330300",
+  "NodeID": 16,
+  "UID": "c933ec8b-1fcb-44f7-89a1-831084f7d8ed",
+  "eventIds": [
+    14,
+    65,
+    62,
+    39,
+    85,
+    27,
+    30,
+    34
+  ],
+  "layer": "Base",
+  "length": 10
+}

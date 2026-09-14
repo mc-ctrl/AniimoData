@@ -1,0 +1,485 @@
+{
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104509,
+      "name": "createEntity",
+      "UID": "d083f587-17a6-4f85-869d-2fe3705a4418",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 37,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "6fa9c779-5d8e-43f3-a9c4-e5d518ef0eb1",
+          "to": "TARGET",
+          "NodeID": 35,
+          "from": "CASTER"
+        },
+        "radius": 12,
+        "NodeID": 36,
+        "UID": "f9efc83c-4f7c-4284-9d12-a78899668eff",
+        "angle": -60,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "38": {
+      "name": "getRotationFromTo",
+      "UID": "b67c528e-9b16-4433-8d95-3c8acd0e8270",
+      "to": "TARGET",
+      "NodeID": 38,
+      "from": "CASTER"
+    },
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          14,
+          44
+        ]
+      },
+      "NodeID": 6
+    },
+    "41": {
+      "name": "getRotationFromTo",
+      "UID": "753eefdd-0e96-4afb-b154-8bdad61a7c02",
+      "to": "TARGET",
+      "NodeID": 41,
+      "from": "CASTER"
+    },
+    "35": {
+      "name": "getRotationFromTo",
+      "UID": "6fa9c779-5d8e-43f3-a9c4-e5d518ef0eb1",
+      "to": "TARGET",
+      "NodeID": 35,
+      "from": "CASTER"
+    },
+    "44": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "404c85b4-203b-4740-a927-371dd36d66f8",
+      "target": "OWNER",
+      "NodeID": 44,
+      "animId": "Skill_WaterHeal"
+    },
+    "31": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104504,
+      "name": "createEntity",
+      "UID": "16b28e96-a0db-4d66-b7fa-1179ebec6aee",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 31,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "70f590b3-3fb5-4b5e-8556-17ce77d17e7d",
+          "to": "TARGET",
+          "NodeID": 29,
+          "from": "CASTER"
+        },
+        "radius": 8.5,
+        "NodeID": 30,
+        "UID": "a7ddde28-a596-43f9-927d-8b9d2d183241",
+        "angle": 166.5,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "40": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104509,
+      "name": "createEntity",
+      "UID": "e516f99a-be71-483b-a173-99033994401c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 40,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "b67c528e-9b16-4433-8d95-3c8acd0e8270",
+          "to": "TARGET",
+          "NodeID": 38,
+          "from": "CASTER"
+        },
+        "radius": 8.5,
+        "NodeID": 39,
+        "UID": "1ecb3a7f-dabd-4ffa-910a-9a8aa4f48e11",
+        "angle": -73.5,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "11": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "name": "getRotationFromTo",
+      "UID": "22115f4d-e5ae-482c-b232-53c42f71aa68",
+      "to": "TARGET",
+      "NodeID": 20,
+      "from": "CASTER"
+    },
+    "43": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104509,
+      "name": "createEntity",
+      "UID": "297b6459-e68b-422d-9ac6-afa6d43c79e7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 43,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "753eefdd-0e96-4afb-b154-8bdad61a7c02",
+          "to": "TARGET",
+          "NodeID": 41,
+          "from": "CASTER"
+        },
+        "radius": 8.5,
+        "NodeID": 42,
+        "UID": "0e8c36ca-5d12-430a-8952-f8fba59152ce",
+        "angle": -46.5,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "22": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104510,
+      "name": "createEntity",
+      "UID": "744120b9-c21f-4b96-a5eb-e7c7dca61c49",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 22,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "22115f4d-e5ae-482c-b232-53c42f71aa68",
+          "to": "TARGET",
+          "NodeID": 20,
+          "from": "CASTER"
+        },
+        "radius": 8.5,
+        "NodeID": 21,
+        "UID": "6b2b63a5-9a71-48cf-92a3-503a3ec63a9c",
+        "angle": 73.5,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 13,
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043"
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "32be2560-af1a-4274-abc2-010af28d2ab6",
+      "effectId": "Eff_Parmon_10211_Skill_SunBeam_Body01",
+      "speed": 1,
+      "NodeID": 45
+    },
+    "14": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "b4bf86dc-e814-4835-beb6-880d8df53e29",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "46": {
+      "UID": "adf30cc1-d4a2-46b6-a6fc-eb1a3b6790ec",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "NodeID": 46
+    },
+    "15": {
+      "name": "getRotationFromTo",
+      "UID": "d4c6008c-2c3a-4181-8d50-1caa6413921b",
+      "to": "TARGET",
+      "NodeID": 15,
+      "from": "CASTER"
+    },
+    "25": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104510,
+      "name": "createEntity",
+      "UID": "51686e16-ac16-47d1-8dae-c78366c69d76",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 1,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "CASTER",
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "773d0948-95c6-4e81-9059-7ca5d6ef343c",
+          "to": "TARGET",
+          "NodeID": 23,
+          "from": "CASTER"
+        },
+        "radius": 8.5,
+        "NodeID": 24,
+        "UID": "ea5c0394-8a52-44ae-ac2c-365ff3f75d57",
+        "angle": 46.5,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      },
+      "NodeID": 25
+    },
+    "26": {
+      "name": "getRotationFromTo",
+      "UID": "84765a33-47e1-4ffe-9c4a-155fb8b1be5e",
+      "to": "TARGET",
+      "NodeID": 26,
+      "from": "CASTER"
+    },
+    "17": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104510,
+      "name": "createEntity",
+      "UID": "58026555-d331-4556-b82a-c341a24d6844",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 17,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "d4c6008c-2c3a-4181-8d50-1caa6413921b",
+          "to": "TARGET",
+          "NodeID": 15,
+          "from": "CASTER"
+        },
+        "radius": 12,
+        "NodeID": 16,
+        "UID": "baf2e1fe-2de8-48bb-88f4-09f47fac2c54",
+        "angle": 60,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "28": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104504,
+      "name": "createEntity",
+      "UID": "ef2aba9f-3a6d-4ae2-bc32-153367003e94",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 1,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "CASTER",
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "84765a33-47e1-4ffe-9c4a-155fb8b1be5e",
+          "to": "TARGET",
+          "NodeID": 26,
+          "from": "CASTER"
+        },
+        "radius": 12,
+        "NodeID": 27,
+        "UID": "53773082-9896-4eb7-9f50-4910eb1a72a6",
+        "angle": 180,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "name": "getRotationFromTo",
+      "UID": "70f590b3-3fb5-4b5e-8556-17ce77d17e7d",
+      "to": "TARGET",
+      "NodeID": 29,
+      "from": "CASTER"
+    },
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 4
+    },
+    "32": {
+      "name": "getRotationFromTo",
+      "UID": "be053611-a2bb-4fd4-9e45-4e39293d1840",
+      "to": "TARGET",
+      "NodeID": 32,
+      "from": "CASTER"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17,
+          22,
+          25,
+          28,
+          31,
+          34,
+          37,
+          40,
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 19,
+      "UID": "2a4ba90f-6a8c-4902-a281-3c8f9bc10859"
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104504,
+      "name": "createEntity",
+      "UID": "9d229d3e-2397-4ebd-8b47-e5bad23e31c8",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 34,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "be053611-a2bb-4fd4-9e45-4e39293d1840",
+          "to": "TARGET",
+          "NodeID": 32,
+          "from": "CASTER"
+        },
+        "radius": 8.5,
+        "NodeID": 33,
+        "UID": "7db341d5-33e2-42c3-8967-a77576a102ab",
+        "angle": -166.5,
+        "center": "CASTER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "23": {
+      "name": "getRotationFromTo",
+      "UID": "773d0948-95c6-4e81-9059-7ca5d6ef343c",
+      "to": "TARGET",
+      "NodeID": 23,
+      "from": "CASTER"
+    }
+  },
+  "BPName": "ability_10450409",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    13,
+    46,
+    19
+  ],
+  "layer": "Base",
+  "length": 1.8
+}

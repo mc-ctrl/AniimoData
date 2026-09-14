@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11138",
+  "calcInfoByLuaConfig": {
+    "id": 11138,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 111381,
+      "NodeID": 10,
+      "UID": "00ea0466-beb2-4c08-8b45-de956ec4010f",
+      "layer": 1,
+      "name": "addGroupBuff",
+      "level": 1
+    },
+    "4": {
+      "key": "breakRatioPlayerMultiplierVal",
+      "name": "setServerCacheVal",
+      "UID": "7a624b11-20f4-4854-af0b-6b449482f9dc",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 4
+    },
+    "6": {
+      "key": "breakRatioPlayerMultiplierVal",
+      "name": "setServerCacheVal",
+      "UID": "a2a15d69-f0ff-4d2a-b77f-dcbe6993634b",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    4,
+    10
+  ]
+}

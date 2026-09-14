@@ -1,0 +1,189 @@
+{
+  "nodeMap": {
+    "6": {
+      "UID": "99ca260b-7688-4b00-82ed-b920f961516d",
+      "target": "OWNER",
+      "name": "playHitSound",
+      "NodeID": 6
+    },
+    "7": {
+      "UID": "589ac99f-ecd6-406c-a300-12aff25c0330",
+      "target": "OWNER",
+      "name": "applyHitModelShake",
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "118a8362-1f55-4cdc-a4a8-b64ccb10d369",
+      "target": "OWNER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "d5e3c0d4-86e5-42b5-ab5a-6d4a09690859",
+      "target": "CASTER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 9
+    },
+    "11": {
+      "lockTarget": "CASTER",
+      "name": "lockTarget",
+      "UID": "1de4e842-d182-4ed7-98ba-4fec0995a0b9",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "animId": "Hit_L",
+      "name": "playHitAnimation",
+      "UID": "e01dc010-2ac1-49f8-9788-db2b8ae7a2fd",
+      "target": "OWNER",
+      "NodeID": 20,
+      "rootMotionScale": 0.6
+    },
+    "21": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "94eccd55-1339-451d-b57c-0df11d18ca3c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "22": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "3e708bdc-1414-4882-91b6-957a98167f38",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21
+      ],
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "8748ac37-14ea-4630-a53a-3ac5eed19ba1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          22,
+          19
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "e16180e7-348f-4065-95c7-2f35adab6402",
+      "name": "isPlayerInCarryEggState",
+      "carryEggState": 1,
+      "NodeID": 24
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 14,
+      "UID": "b09f93f0-bcb2-47bd-be2c-43b3a69f77c7"
+    },
+    "10": {
+      "UID": "7be5f981-c679-4e3e-b7f3-052f208efb50",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 10
+    },
+    "25": {
+      "UID": "46b6f444-d5d2-45a0-8005-a0eac537cb2a",
+      "name": "isPlayerInCarryEggState",
+      "carryEggState": 2,
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "e32d9a6c-4434-45d1-aad5-f2c519d69cb1",
+      "name": "setMask",
+      "mask": {
+        "inHitBackswing": 0,
+        "inHit": 0
+      },
+      "NodeID": 16
+    },
+    "17": {
+      "UID": "577eef5f-cd66-464f-9ab6-0e064edc2772",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 17
+    },
+    "26": {
+      "animId": "HEgg_Hit_L",
+      "name": "playHitAnimation",
+      "UID": "f7ee94b7-0699-4d1e-b8ba-e1231de17880",
+      "target": "OWNER",
+      "NodeID": 26,
+      "rootMotionScale": 0.6
+    },
+    "23": {
+      "animId": "BEgg_Hit_L",
+      "name": "playHitAnimation",
+      "UID": "5b5e2030-563c-4928-abbc-f68131a04390",
+      "target": "OWNER",
+      "NodeID": 23,
+      "rootMotionScale": 0.6
+    },
+    "19": {
+      "UID": "a9dadaf3-c572-469a-8293-71f20ca694fe",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 1,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 19
+    },
+    "2": {
+      "UID": "0fb83825-fb6b-4785-a97b-130443a44ddc",
+      "target": "OWNER",
+      "name": "playHitEffect",
+      "NodeID": 2
+    },
+    "13": {
+      "UID": "5b33654c-ad16-4f43-b520-3b452c1d2320",
+      "name": "setMask",
+      "mask": {
+        "inHitBackswing": 1
+      },
+      "NodeID": 13
+    }
+  },
+  "BPName": "timeline_102",
+  "NodeID": 1,
+  "UID": "065a51b0-2958-498b-9262-4d6932b58d34",
+  "eventIds": [
+    4,
+    14,
+    17
+  ],
+  "layer": "Base",
+  "length": 1
+}

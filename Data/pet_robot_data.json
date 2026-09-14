@@ -1,0 +1,3874 @@
+{
+  "11103240000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151004",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1771405714,
+    "petID": 1032400
+  },
+  "11103520000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151003",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 2080274743,
+    "petID": 1035200
+  },
+  "11104830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1762452290,
+    "petID": 1048300
+  },
+  "20100110000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1001100
+  },
+  "20100120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1001200
+  },
+  "20100120001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100120001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1001200
+  },
+  "20100230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002300
+  },
+  "20100230001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100230001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002300
+  },
+  "20100230100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002301
+  },
+  "20100240000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002400
+  },
+  "20100250000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002500
+  },
+  "20100250300": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002503
+  },
+  "20100260000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002600
+  },
+  "20100260100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002601
+  },
+  "20100260300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002603
+  },
+  "20100270000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002700
+  },
+  "20100270001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100270000",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002700
+  },
+  "20100270002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100270002",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002700
+  },
+  "20100310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003100
+  },
+  "20100310100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003101
+  },
+  "20100310101": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003101
+  },
+  "20100310300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003103
+  },
+  "20100320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003200
+  },
+  "20100320100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003201
+  },
+  "20100320200": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003202
+  },
+  "20100320300": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003203
+  },
+  "20100330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003300
+  },
+  "20100330500": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003305
+  },
+  "20100330501": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_155047DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003305
+  },
+  "20100410000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004100
+  },
+  "20100410200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004102
+  },
+  "20100420000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004200
+  },
+  "20100430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004300
+  },
+  "20100430001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100430001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004300
+  },
+  "20100430100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004301
+  },
+  "20100430101": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100430001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004301
+  },
+  "20100430200": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004302
+  },
+  "20100430300": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004303
+  },
+  "20100450000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004500
+  },
+  "20100450001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_GrassEnergy",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004500
+  },
+  "10100120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151003",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1002,
+    "pvpGroupAllID": 1002,
+    "petNickName": 1917084829,
+    "petID": 1001200
+  },
+  "20100520000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005200
+  },
+  "20100530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005300
+  },
+  "20100530001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100530001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005300
+  },
+  "20100530100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005301
+  },
+  "20100530200": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005302
+  },
+  "20100530300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005303
+  },
+  "20100550000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005500
+  },
+  "20100550300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005503
+  },
+  "20101220000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1012200
+  },
+  "20101220001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101220001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1012200
+  },
+  "20101310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013100
+  },
+  "20101320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013200
+  },
+  "20101320200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013202
+  },
+  "20101330000": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013300
+  },
+  "20101330100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013301
+  },
+  "20101330200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013302
+  },
+  "20101430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014300
+  },
+  "20101430001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_155047SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014300
+  },
+  "20101430100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014301
+  },
+  "20101430200": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014302
+  },
+  "20101610000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016100
+  },
+  "20101610001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101610000",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016100
+  },
+  "20101610300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016103
+  },
+  "20101620000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016200
+  },
+  "20101620001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101620000",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016200
+  },
+  "20101620002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101620001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016200
+  },
+  "20101620100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016201
+  },
+  "20101620200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016202
+  },
+  "20101630000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016300
+  },
+  "20101630001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101630001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016300
+  },
+  "20101630002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101630002",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016300
+  },
+  "20101710000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017100
+  },
+  "20101710001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017100
+  },
+  "20101710400": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017104
+  },
+  "20101720100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017201
+  },
+  "20101730000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017300
+  },
+  "20101730100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017301
+  },
+  "20101740000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017400
+  },
+  "20101740001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101740001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017400
+  },
+  "20101740002": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017400
+  },
+  "20101740100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017401
+  },
+  "20101740200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017402
+  },
+  "20101740201": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017402
+  },
+  "20101810000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018100
+  },
+  "20101810100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018101
+  },
+  "20101840000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018400
+  },
+  "20101840001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018400
+  },
+  "20101840300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018403
+  },
+  "20101840301": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101840300",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018403
+  },
+  "20101850000": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018500
+  },
+  "20101850001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101850001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018500
+  },
+  "20101850100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018501
+  },
+  "20101850101": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101850101",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018501
+  },
+  "20101850200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018502
+  },
+  "20101850300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018503
+  },
+  "20101850301": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101850300",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018503
+  },
+  "20101870000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018700
+  },
+  "20101870001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018704
+  },
+  "20101870100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018701
+  },
+  "20101910000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019100
+  },
+  "20101940000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019400
+  },
+  "20101940100": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019401
+  },
+  "20101940200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019402
+  },
+  "20102010000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020100
+  },
+  "20102030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102030000",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020300
+  },
+  "20102030100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGT",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020301
+  },
+  "20102030101": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_GrassEnergy",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020301
+  },
+  "20102070000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020700
+  },
+  "20102070001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020702
+  },
+  "20102070002": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102070002",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020700
+  },
+  "20102070100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020701
+  },
+  "20102070101": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102070002",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020701
+  },
+  "20102110000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021100
+  },
+  "20102120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021200
+  },
+  "20102120001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102120001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021200
+  },
+  "20102120300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021203
+  },
+  "20102120400": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021204
+  },
+  "20102120500": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021205
+  },
+  "20102210000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1022100
+  },
+  "20102220000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1022200
+  },
+  "20102220100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1022201
+  },
+  "20102310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023100
+  },
+  "20102310200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023102
+  },
+  "20102320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023200
+  },
+  "20102320001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102320000",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023200
+  },
+  "20102320100": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023201
+  },
+  "20102320101": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102320100",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023201
+  },
+  "20102320200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023202
+  },
+  "20102320300": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023203
+  },
+  "20102320301": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102320300",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023203
+  },
+  "20102610000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026100
+  },
+  "20102610001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102610001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026100
+  },
+  "20102620000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026200
+  },
+  "20102620001": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026200
+  },
+  "20102620100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026201
+  },
+  "20102620101": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026201
+  },
+  "20102620400": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026204
+  },
+  "20102630000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026300
+  },
+  "20102630001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102630001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026300
+  },
+  "20102820000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028200
+  },
+  "20102830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028300
+  },
+  "30105120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1051200
+  },
+  "30105030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1050300
+  },
+  "30104830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1048300
+  },
+  "30104750000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1047500
+  },
+  "30104740000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1047400
+  },
+  "30104540000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1045400
+  },
+  "21104540001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104540000",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045400
+  },
+  "21104540002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104540002",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045400
+  },
+  "21104540100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045401
+  },
+  "21104540101": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104540101",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045401
+  },
+  "21104710000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047100
+  },
+  "21104740000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047400
+  },
+  "21104740001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_155047SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047400
+  },
+  "21104740002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104740002",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047400
+  },
+  "21104750000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047500
+  },
+  "21104750100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047501
+  },
+  "21104750101": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047501
+  },
+  "21104750200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047502
+  },
+  "21104750300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047503
+  },
+  "21104830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1048300
+  },
+  "21105010000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050100
+  },
+  "21105030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050300
+  },
+  "21105030001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20105030001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050300
+  },
+  "21105030100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050301
+  },
+  "30100120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1001200
+  },
+  "30100230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1002300
+  },
+  "30100250000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1002500
+  },
+  "30100260000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1002600
+  },
+  "30100270000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1002700
+  },
+  "30100320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1003200
+  },
+  "30100330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1003300
+  },
+  "30100430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_HEAL",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1004300
+  },
+  "30100450000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1004500
+  },
+  "30100530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1005300
+  },
+  "30100550000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1005500
+  },
+  "21100450000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004500
+  },
+  "21100450001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_GrassEnergy",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004500
+  },
+  "21100510000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005100
+  },
+  "21100520000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005200
+  },
+  "21100530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005300
+  },
+  "21100530001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100530001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005300
+  },
+  "21100530100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005301
+  },
+  "21100530200": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005302
+  },
+  "21100530300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005303
+  },
+  "21100550000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005500
+  },
+  "21100550300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005503
+  },
+  "21101220000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1012200
+  },
+  "21101220001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101220001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1012200
+  },
+  "21101310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013100
+  },
+  "21101320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013200
+  },
+  "21101320200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013202
+  },
+  "21101330000": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013300
+  },
+  "21101330100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013301
+  },
+  "21101330200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1013302
+  },
+  "21101430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014300
+  },
+  "21101430001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_155047SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014300
+  },
+  "21101430100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014301
+  },
+  "21101430200": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1014302
+  },
+  "21101610000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016100
+  },
+  "21101610001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101610000",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016100
+  },
+  "21101610300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016103
+  },
+  "21101620000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016200
+  },
+  "21101620001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101620000",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016200
+  },
+  "21101620002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101620001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016200
+  },
+  "21101620100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016201
+  },
+  "21101620200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016202
+  },
+  "21101630000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016300
+  },
+  "21101630001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101630001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016300
+  },
+  "21101630002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101630002",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1016300
+  },
+  "21101710000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017100
+  },
+  "21101710001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017100
+  },
+  "21101710400": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017104
+  },
+  "21101720100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017201
+  },
+  "21101730000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017300
+  },
+  "21101730100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017301
+  },
+  "21101740000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017400
+  },
+  "21101740001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101740001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017400
+  },
+  "21101740002": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017400
+  },
+  "21101740100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017401
+  },
+  "21101740200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017402
+  },
+  "21101740201": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1017402
+  },
+  "21101810000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018100
+  },
+  "21101810100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018101
+  },
+  "21101840000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018400
+  },
+  "21101840001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018400
+  },
+  "21101840300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018403
+  },
+  "21101840301": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101840300",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018403
+  },
+  "21101850000": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018500
+  },
+  "21101850001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101850001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018500
+  },
+  "21101850100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018501
+  },
+  "21101850101": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101850101",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018501
+  },
+  "21101850200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018502
+  },
+  "21101850300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018503
+  },
+  "21101850301": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20101850300",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018503
+  },
+  "21101870000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018700
+  },
+  "21101870001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018704
+  },
+  "21101870100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1018701
+  },
+  "21101910000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019100
+  },
+  "21101940000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019400
+  },
+  "21101940100": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019401
+  },
+  "21101940200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1019402
+  },
+  "20102830001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028304
+  },
+  "20102830002": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028300
+  },
+  "20102830100": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028301
+  },
+  "20102840000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028400
+  },
+  "20102850000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028500
+  },
+  "20102850001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102850001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028500
+  },
+  "21102070002": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102070002",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020700
+  },
+  "20102910000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029100
+  },
+  "20102930000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029300
+  },
+  "20102930001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102930001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029300
+  },
+  "21102120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021200
+  },
+  "20102930100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029301
+  },
+  "20103210000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032100
+  },
+  "20103230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032302
+  },
+  "20103230001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20103230001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032300
+  },
+  "21102210000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1022100
+  },
+  "20103230100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032301
+  },
+  "20103230200": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032302
+  },
+  "20103230300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032303
+  },
+  "20103240000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032400
+  },
+  "20103240001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20103240001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032400
+  },
+  "21102320001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102320000",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023200
+  },
+  "20103240200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032402
+  },
+  "20103310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1033100
+  },
+  "20103330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1033300
+  },
+  "20103330300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1033303
+  },
+  "20103510000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1035100
+  },
+  "20103520000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1035200
+  },
+  "20104310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1043100
+  },
+  "20104330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1043300
+  },
+  "20104330001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104330001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1043300
+  },
+  "21102620100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026201
+  },
+  "20104410000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1044100
+  },
+  "20104430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1044300
+  },
+  "20104510000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045100
+  },
+  "20104530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045300
+  },
+  "20104530001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104530001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045300
+  },
+  "21102830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028300
+  },
+  "20104530002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104530002",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045300
+  },
+  "21102830002": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028300
+  },
+  "20104540000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045400
+  },
+  "20104540001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104540000",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045400
+  },
+  "21102850000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028500
+  },
+  "20104540002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104540002",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045400
+  },
+  "21102910000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029100
+  },
+  "20104540100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045401
+  },
+  "20104540101": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104540101",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045401
+  },
+  "21102930100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029301
+  },
+  "20104710000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047100
+  },
+  "20104740000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047400
+  },
+  "20104740001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_155047SUP",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047400
+  },
+  "21103230100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032301
+  },
+  "21103230200": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032302
+  },
+  "21103230300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032303
+  },
+  "21103240000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032400
+  },
+  "21103240001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20103240001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032400
+  },
+  "21103240200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032402
+  },
+  "20104740002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104740002",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047400
+  },
+  "21103330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1033300
+  },
+  "20104750000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047500
+  },
+  "20104750100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047501
+  },
+  "20104750101": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047501
+  },
+  "20104750200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047502
+  },
+  "20104750300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1047503
+  },
+  "20104830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1048300
+  },
+  "20105010000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050100
+  },
+  "20105030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050300
+  },
+  "20105030001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20105030001",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050300
+  },
+  "21104530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045300
+  },
+  "20105030100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1050301
+  },
+  "21100110000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1001100
+  },
+  "21100120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1001200
+  },
+  "21100120001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100120001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1001200
+  },
+  "21100230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002300
+  },
+  "21100230001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100230001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002300
+  },
+  "21100230100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002301
+  },
+  "21100240000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002400
+  },
+  "21100250000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002500
+  },
+  "21100250300": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002503
+  },
+  "21100260000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002600
+  },
+  "21100260100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002601
+  },
+  "21100260300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002603
+  },
+  "21100270000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002700
+  },
+  "21100270001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100270000",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002700
+  },
+  "21100270002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100270002",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1002700
+  },
+  "21100310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003100
+  },
+  "21100310100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003101
+  },
+  "21100310101": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003101
+  },
+  "21100310300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003103
+  },
+  "21100320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003200
+  },
+  "21100320100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003201
+  },
+  "21100320200": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003202
+  },
+  "21100320300": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003203
+  },
+  "21100330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003300
+  },
+  "21100330500": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003305
+  },
+  "21100330501": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_155047DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1003305
+  },
+  "21100410000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004100
+  },
+  "21100410200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004102
+  },
+  "21100420000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004200
+  },
+  "21100430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004300
+  },
+  "21100430001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100430001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004300
+  },
+  "21100430100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004301
+  },
+  "21100430101": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20100430001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004301
+  },
+  "21100430200": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004302
+  },
+  "21100430300": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004303
+  },
+  "30101330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1013300
+  },
+  "30101430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1014300
+  },
+  "30101220000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1012200
+  },
+  "30101620000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1016200
+  },
+  "30101630000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1016300
+  },
+  "30101730000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1017300
+  },
+  "30101740000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1017400
+  },
+  "30101840000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1018400
+  },
+  "30101850000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1018500
+  },
+  "30101870000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1018700
+  },
+  "30101940000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1019400
+  },
+  "30102030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1020300
+  },
+  "30102070000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1020700
+  },
+  "30102120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1021200
+  },
+  "30102130000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1021300
+  },
+  "30102220000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1022200
+  },
+  "30102320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_HEAL",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1023200
+  },
+  "30102330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1023300
+  },
+  "30102620000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1026200
+  },
+  "30102630000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1026300
+  },
+  "30102830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1028300
+  },
+  "30102850000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_BREAK",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1028500
+  },
+  "30102930000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1029300
+  },
+  "30103230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1032300
+  },
+  "30103240000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1032400
+  },
+  "30103330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_ENERGY",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1033300
+  },
+  "30103520000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1035200
+  },
+  "30103610000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1036100
+  },
+  "30103710000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1037100
+  },
+  "30104330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1043300
+  },
+  "30104430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_SUP",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1044300
+  },
+  "30104530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_Assist_DPS",
+    "pvpGroupAllID": 3,
+    "pvpGroupID": 1,
+    "behavGroupId": "BG_Npc_NpcAssist",
+    "petID": 1045300
+  },
+  "21104540000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045400
+  },
+  "21104530002": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104530002",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045300
+  },
+  "21104530001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104530001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045300
+  },
+  "21104510000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1045100
+  },
+  "21104430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1044300
+  },
+  "21104410000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1044100
+  },
+  "21104330001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20104330001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1043300
+  },
+  "21104330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1043300
+  },
+  "21104310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1043100
+  },
+  "21103520000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1035200
+  },
+  "21103510000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1035100
+  },
+  "21103330300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1033303
+  },
+  "21103310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1033100
+  },
+  "21103230001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20103230001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032300
+  },
+  "21103230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032302
+  },
+  "21103210000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1032100
+  },
+  "21102930001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102930001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029300
+  },
+  "21102930000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1029300
+  },
+  "21102850001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102850001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028500
+  },
+  "21102840000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028400
+  },
+  "21102830100": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028301
+  },
+  "21102830001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028304
+  },
+  "21102820000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028200
+  },
+  "21102630001": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102630001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026300
+  },
+  "21102630000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026300
+  },
+  "21102620400": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026204
+  },
+  "21102620101": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026201
+  },
+  "21102620001": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026200
+  },
+  "21102620000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026200
+  },
+  "21102610001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102610001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026100
+  },
+  "21102610000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1026100
+  },
+  "21102320301": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102320300",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023203
+  },
+  "21102320300": {
+    "skillGroupID": 3,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023203
+  },
+  "10100120200": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151007_STELLARYS",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 2066297769,
+    "petID": 1001202
+  },
+  "21102320200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023202
+  },
+  "10100430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1300947584,
+    "petID": 1004300
+  },
+  "21102320101": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102320100",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023201
+  },
+  "10100430300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 1324659628,
+    "petID": 1004303
+  },
+  "21102320100": {
+    "skillGroupID": 4,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023201
+  },
+  "10100450000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151001",
+    "pvpGroupAllID": 1002,
+    "pvpGroupID": 1002,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004500
+  },
+  "21102320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023200
+  },
+  "10100450001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151004",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1589658477,
+    "petID": 1004500
+  },
+  "21102310200": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023102
+  },
+  "10100530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151002",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1002,
+    "pvpGroupAllID": 1002,
+    "petNickName": 1815234472,
+    "petID": 1005300
+  },
+  "21102310000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023100
+  },
+  "10101330100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151007_GLYNSERA",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 1802515808,
+    "petID": 1013301
+  },
+  "21102220100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1022201
+  },
+  "10101730000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1341260735,
+    "petID": 1017300
+  },
+  "21102220000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1022200
+  },
+  "10101810000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151005",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1673143723,
+    "petID": 1018103
+  },
+  "21102120500": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021205
+  },
+  "10101840000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1591094577,
+    "petID": 1018403
+  },
+  "21102120400": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021204
+  },
+  "10101850000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151005",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1470033210,
+    "petID": 1018503
+  },
+  "21102120300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021203
+  },
+  "10101870000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 2063194116,
+    "petID": 1018703
+  },
+  "21102120001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102120001",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021200
+  },
+  "10101940000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1823666928,
+    "petID": 1019400
+  },
+  "21102110000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1021100
+  },
+  "10101940200": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151007_SHERRO",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 1534702976,
+    "petID": 1019402
+  },
+  "21102070101": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102070002",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020701
+  },
+  "10102030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151003",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1002,
+    "pvpGroupAllID": 1002,
+    "petNickName": 2137694736,
+    "petID": 1020300
+  },
+  "21102070100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020701
+  },
+  "10102120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1002,
+    "pvpGroupAllID": 1002,
+    "petNickName": 2027524520,
+    "petID": 1021205
+  },
+  "21102070001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020702
+  },
+  "10102320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL_151001",
+    "pvpGroupAllID": 1002,
+    "pvpGroupID": 1002,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023200
+  },
+  "21102070000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020700
+  },
+  "10102330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151002",
+    "pvpGroupAllID": 1002,
+    "pvpGroupID": 1002,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023300
+  },
+  "21102030101": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_GrassEnergy",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020301
+  },
+  "10102830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1002,
+    "pvpGroupID": 1002,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028300
+  },
+  "10103230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151004",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1859058754,
+    "petID": 1032300
+  },
+  "21102030100": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGT",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020301
+  },
+  "10103240000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151004",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 2101963379,
+    "petID": 1032400
+  },
+  "21102030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "ST_Monster_AutoCombat_NpcChallenge_20102030000",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020300
+  },
+  "10103520000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151003",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1002,
+    "pvpGroupAllID": 1002,
+    "petNickName": 1832805459,
+    "petID": 1035200
+  },
+  "21102010000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1005,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1020100
+  },
+  "10104830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 1004,
+    "petNickName": 1934809103,
+    "petID": 1048300
+  },
+  "20100510000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "pvpGroupAllID": 1003,
+    "pvpGroupID": 1003,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1005100
+  },
+  "11100120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151003",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1778687902,
+    "petID": 1001200
+  },
+  "11100120200": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151007_STELLARYS",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 1655782704,
+    "petID": 1001202
+  },
+  "11100430000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 2141157770,
+    "petID": 1004300
+  },
+  "11100430300": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 2027493812,
+    "petID": 1004303
+  },
+  "11100450000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151001",
+    "pvpGroupAllID": 1001,
+    "pvpGroupID": 1001,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1004500
+  },
+  "11100450001": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151004",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1224577342,
+    "petID": 1004500
+  },
+  "11100530000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151002",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 2127583652,
+    "petID": 1005300
+  },
+  "11101330100": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151007_GLYNSERA",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 1791574935,
+    "petID": 1013301
+  },
+  "11101730000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1292006791,
+    "petID": 1017300
+  },
+  "11101810000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP_151005",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1387359240,
+    "petID": 1018103
+  },
+  "11101840000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_SUP",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1442550091,
+    "petID": 1018403
+  },
+  "11101850000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151005",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1140236587,
+    "petID": 1018503
+  },
+  "11101870000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1758396361,
+    "petID": 1018703
+  },
+  "11101940000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151006",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1886118379,
+    "petID": 1019400
+  },
+  "11101940200": {
+    "skillGroupID": 2,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151007_SHERRO",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1004,
+    "pvpGroupAllID": 10031,
+    "petNickName": 1178576689,
+    "petID": 1019402
+  },
+  "11102030000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151003",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1495013838,
+    "petID": 1020300
+  },
+  "11102120000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 1755634814,
+    "petID": 1021205
+  },
+  "11102320000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_HEAL_151001",
+    "pvpGroupAllID": 1001,
+    "pvpGroupID": 1001,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023200
+  },
+  "11102330000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_ENERGY_151002",
+    "pvpGroupAllID": 1001,
+    "pvpGroupID": 1001,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1023300
+  },
+  "11102830000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_BREAK",
+    "pvpGroupAllID": 1001,
+    "pvpGroupID": 1001,
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "petID": 1028300
+  },
+  "11103230000": {
+    "skillGroupID": 1,
+    "Param_ST_Pet_AutoCombat": "PBT_BotPet_AutoCombat_DPS_151004",
+    "behavGroupId": "BG_Npc_NpcDuel",
+    "pvpGroupID": 1001,
+    "pvpGroupAllID": 1001,
+    "petNickName": 2045642630,
+    "petID": 1032300
+  }
+}

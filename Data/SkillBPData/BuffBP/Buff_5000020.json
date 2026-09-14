@@ -1,0 +1,87 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000020",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "4bf1ede1-c393-4315-96f0-222e91afb8d1",
+      "target": "OWNER",
+      "name": "getLevel",
+      "NodeID": 3
+    },
+    "9": {
+      "calcId": 5000020,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "25d2ebbb-a147-4f72-9d0c-bc78cceb0326",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "attributeName": "level",
+      "UID": "f6b3e274-b086-46d4-be6f-3a23cba15dc3",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 7
+    },
+    "6": {
+      "calcInfo": {
+        "def_v": {
+          "rValue": {
+            "calcId": 5000020,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 9,
+            "UID": "25d2ebbb-a147-4f72-9d0c-bc78cceb0326",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "53ee322a-7d2e-4b2f-86ca-b526f6e98492",
+          "NodeID": 4,
+          "lValue": {
+            "UID": "4bf1ede1-c393-4315-96f0-222e91afb8d1",
+            "target": "OWNER",
+            "name": "getLevel",
+            "NodeID": 3
+          }
+        },
+        "def_mag_v": {
+          "rValue": {
+            "calcId": 5000020,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 9,
+            "UID": "25d2ebbb-a147-4f72-9d0c-bc78cceb0326",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "53ee322a-7d2e-4b2f-86ca-b526f6e98492",
+          "NodeID": 4,
+          "lValue": {
+            "UID": "4bf1ede1-c393-4315-96f0-222e91afb8d1",
+            "target": "OWNER",
+            "name": "getLevel",
+            "NodeID": 3
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "4f53fb53-a298-420c-9ae3-21532c22eb91",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 6
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    7
+  ]
+}

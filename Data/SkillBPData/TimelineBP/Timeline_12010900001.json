@@ -1,0 +1,82 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "duration": 60,
+      "switchToAbilityId": 12010905,
+      "NodeID": 14,
+      "UID": "f066d371-c624-4010-8fb8-6a69dfcfdd0a",
+      "name": "enableTakeRootState",
+      "enable": true,
+      "exitCastAbilityId": 12010905
+    },
+    "10": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "17": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2120106,
+      "NodeID": 17,
+      "UID": "624862d1-9ce1-4c36-afda-187e81fea0e0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          17
+        ]
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_12010900",
+  "NodeID": 6,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    4,
+    11,
+    16
+  ],
+  "layer": "Base",
+  "length": 1.667
+}

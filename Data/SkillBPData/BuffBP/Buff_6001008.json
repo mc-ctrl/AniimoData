@@ -1,0 +1,42 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6001008",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a00cfcc9-8cd7-4bd1-9fdf-25f686bbe98d",
+      "effectId": "Eff_Buff_Movement_Arrow_Up",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "aaa1458f-d1a3-47cd-9a3d-440f588a7be1",
+      "effectId": "Eff_Buff_Movement_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 6001008,
+    "speed_ratio_sprint_v": "param1",
+    "stamina_cost_ratio_sprint_v": "param3",
+    "type": 1,
+    "speed_ratio_run_v": "param0",
+    "stamina_cost_ratio_dash_v": "param2"
+  },
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

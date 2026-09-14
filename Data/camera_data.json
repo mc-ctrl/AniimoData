@@ -1,0 +1,90 @@
+{
+  "lockOnExtendCamera": {
+    "deadZonePosDamp": 0.15,
+    "deadZoneX": 0.3,
+    "deadZoneXLockOnDamp": 0.1,
+    "initPosDamp": 0.3,
+    "initXLockOnDamp": 0.8,
+    "inputViewRatio": 0.9,
+    "leaveDeadZoneMaxTime": 99999,
+    "lockFollowFixAngle": 45,
+    "lockFollowFixDamp": 1.8,
+    "posDampDamp": 0.5,
+    "xLockOnDampDamp": 1.5,
+    "fieldOfView": 46
+  },
+  "magnesisCamera": {
+    "minPitch": -45,
+    "fieldOfView": 46,
+    "maxPitch": 45
+  },
+  "npcInteractCamera": {
+    "minPitch": -60,
+    "fieldOfView": 46,
+    "maxPitch": 60
+  },
+  "playerCamera": {
+    "defaultIndex": 12,
+    "indexNum": 20,
+    "minIndexInMove": 6,
+    "pitchSpeed": 0.75,
+    "pitchSpeedTable": [
+      0.45,
+      0.6,
+      0.75,
+      1.05,
+      1.65
+    ],
+    "recenterTarget": 6,
+    "yawSpeed": 2.5,
+    "yawSpeedTable": [
+      1.5,
+      2,
+      2.5,
+      3.5,
+      5.5
+    ],
+    "zoomDamp": 0.3,
+    "fieldOfView": 46,
+    "blendWaitTime": 1,
+    "dampTime": 2
+  },
+  "thirdPersonLockOnCamera": {
+    "shoulderX": 0.7,
+    "minPitch": -15,
+    "targetArmLength": 2.25,
+    "fieldOfView": 46,
+    "maxPitch": 15
+  },
+  "aimCamera": {
+    "enterTime": 0.2,
+    "pivotOffsetYRate": 0.8,
+    "shoulderX": 0.6,
+    "minPitch": -40,
+    "targetArmLength": 1.5,
+    "fieldOfView": 46,
+    "leaveTime": 0.5,
+    "maxPitch": 40
+  },
+  "baseCamera": {
+    "baseDistance": 5,
+    "fieldOfView": 46,
+    "minDistance": 1
+  },
+  "catchCamera": {
+    "pitchSpeedTable": [
+      0.9,
+      1.2,
+      1.5,
+      2.1,
+      3.3
+    ],
+    "yawSpeedTable": [
+      1.5,
+      2,
+      2.5,
+      3.5,
+      5.5
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102307",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "对敌人造成新的减益状态时（刷新不算），回复2EP",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "13088276-eae5-4812-a9ec-042e22ccd805",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "target": {
+        "UID": "c9b0e97e-71b3-4d48-8db9-dc239c2fe162",
+        "name": "getEventAttackTarget",
+        "NodeID": 3
+      },
+      "duration": 0,
+      "buffId": 910230701,
+      "NodeID": 4,
+      "UID": "fa23e594-4cd8-4f32-9a3b-2a68d3b90c34",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

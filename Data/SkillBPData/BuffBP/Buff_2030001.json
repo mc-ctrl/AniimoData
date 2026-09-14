@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "calcId": 2030001,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 3,
+      "UID": "11c9bfe3-73f0-4357-a65b-3cecf5df1a95",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "actionIds": [
+        8
+      ],
+      "NodeID": 4,
+      "UID": "a62f4a74-7af5-4a09-b747-1bd85ffd5882",
+      "cd": {
+        "calcId": 2030001,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 3,
+        "UID": "11c9bfe3-73f0-4357-a65b-3cecf5df1a95",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "25e244ed-e8e3-4e61-93c8-fdb34318655c",
+      "NodeID": 6
+    },
+    "8": {
+      "value": {
+        "calcId": 2030001,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "e6b48d5a-ea28-4c14-b3d7-b3cb70863843",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "c68a518d-bbfc-4725-80ca-8ab946852a55",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "7": {
+      "calcId": 2030001,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "e6b48d5a-ea28-4c14-b3d7-b3cb70863843",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "UID": "a6e3928b-43dc-4872-9e2d-97e91820765b",
+      "name": "registerHealEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    }
+  },
+  "BPName": "buff_2030001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 37,
+      "UID": "ce33b0ae-2fb1-4f30-9da2-7539f24bc600"
+    },
+    "28": {
+      "UID": "d4e3b20b-ae3d-43c1-9918-c87b2dbbcedc",
+      "eventType": "EventEnter",
+      "NodeID": 28
+    },
+    "35": {
+      "UID": "2b3fbae6-d9a2-4ec5-ac4b-47ed8c28a372",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 35
+    }
+  },
+  "BPName": "ability_902130400",
+  "NodeID": 30,
+  "UID": "ad6bd2d4-ca40-4459-b333-00f572e9477c",
+  "eventIds": [
+    28,
+    37
+  ],
+  "layer": "Base",
+  "length": 10
+}

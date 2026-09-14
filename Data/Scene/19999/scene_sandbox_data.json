@@ -1,0 +1,38 @@
+{
+  "91010438": {
+    "areaType": 999,
+    "chunk": 1019874,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_城市抢蛋入口NPC",
+    "spawners": [
+      91010445,
+      91010447,
+      91010449
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 91010438,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "position": [
+      2.86,
+      -0.01,
+      -3.08
+    ],
+    "difficultyLevel": 0,
+    "autoEndType": 0,
+    "owner": "蔡龙辉"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "3": {
+    "reward": 3001,
+    "UpWeight": 10000,
+    "nextLevel": 4,
+    "unlockWeight": 90,
+    "icon": "$ui_item_Bag_01.png"
+  },
+  "4": {
+    "reward": 3002,
+    "UpWeight": 1000,
+    "nextLevel": 5,
+    "unlockWeight": 9,
+    "icon": "$ui_item_Bag_02.png"
+  },
+  "5": {
+    "reward": 3003,
+    "UpWeight": 200,
+    "nextLevel": 6,
+    "unlockWeight": 1,
+    "icon": "$ui_item_Bag_11.png"
+  },
+  "6": {
+    "reward": 3004,
+    "icon": "$ui_item_Bag_13.png",
+    "UpWeight": 2,
+    "unlockWeight": 0
+  }
+}

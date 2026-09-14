@@ -1,0 +1,2879 @@
+{
+  "49477131": {
+    "areaType": 999,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 49568935,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1001,
+    "publishTags": [
+      "3DAY_神庙"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "全局_箱庭关卡_Temple_01",
+    "sightLevelType": 512,
+    "spawners": [
+      56738607,
+      56738691,
+      56738756,
+      59918916
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 512,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/421/Sandbox_49477131_GraphRef.asset",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "徐一乘",
+    "forceSync": true,
+    "id": 49477131,
+    "levelItems": {
+      "50604159": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_17",
+        "position": [
+          -3,
+          30,
+          166
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 4,
+        "serializeVersion": 3,
+        "id": 50604159,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604160": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_18",
+        "position": [
+          -9,
+          30,
+          166
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 50604160,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604161": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_19",
+        "position": [
+          3,
+          30,
+          166
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 7,
+        "serializeVersion": 3,
+        "id": 50604161,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604162": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_20",
+        "position": [
+          9,
+          30,
+          166
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 8,
+        "serializeVersion": 3,
+        "id": 50604162,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604490": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_21",
+        "position": [
+          -3,
+          42,
+          177.5
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 10,
+        "serializeVersion": 3,
+        "id": 50604490,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604491": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_22",
+        "position": [
+          -9,
+          42,
+          177.5
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 9,
+        "serializeVersion": 3,
+        "id": 50604491,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604492": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_23",
+        "position": [
+          3,
+          42,
+          177.5
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 12,
+        "serializeVersion": 3,
+        "id": 50604492,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604493": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_24",
+        "position": [
+          9,
+          42,
+          177.5
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 13,
+        "serializeVersion": 3,
+        "id": 50604493,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56738922": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -3,
+          36,
+          23
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 15,
+        "id": 56738922,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          44,
+          12,
+          12
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56739232": {
+        "majorCompId": 42742113,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          -56,
+          3,
+          129
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 21,
+        "serializeVersion": 3,
+        "id": 56739232,
+        "scale": [
+          200,
+          12,
+          220
+        ],
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "expressionKey": "56739232_42742113",
+            "blackScreenId": 2000,
+            "playerReviveType": 1,
+            "playerRevivePos": [
+              0,
+              30,
+              27
+            ]
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56739738": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB (1)",
+        "position": [
+          -3,
+          40,
+          96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 16,
+        "serializeVersion": 3,
+        "id": 56739738,
+        "scale": [
+          44,
+          12,
+          16
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56740354": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB (2)",
+        "position": [
+          -3,
+          64,
+          200
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 17,
+        "serializeVersion": 3,
+        "id": 56740354,
+        "scale": [
+          44,
+          16,
+          16
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56740554": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB (3)",
+        "position": [
+          -70,
+          73,
+          203
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 18,
+        "serializeVersion": 3,
+        "id": 56740554,
+        "scale": [
+          20,
+          16,
+          24
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56744486": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB (4)",
+        "position": [
+          -81,
+          66,
+          165
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 19,
+        "serializeVersion": 3,
+        "id": 56744486,
+        "scale": [
+          40,
+          16,
+          24
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56744582": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB (5)",
+        "position": [
+          -68,
+          79,
+          81
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 20,
+        "serializeVersion": 3,
+        "id": 56744582,
+        "scale": [
+          40,
+          16,
+          24
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56745385": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_EndingMachine_SinglePlayer",
+        "position": [
+          -68,
+          71,
+          65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 23,
+        "id": 56745385,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56815692": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB",
+        "position": [
+          -70,
+          47.4,
+          146
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 24,
+        "serializeVersion": 3,
+        "id": 56815692,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56817375": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (1)",
+        "position": [
+          -66,
+          47.4,
+          146
+        ],
+        "siblingIndex": 25,
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56817375,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56817404": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (2)",
+        "position": [
+          -66,
+          47.4,
+          142
+        ],
+        "siblingIndex": 26,
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56817404,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56817406": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (3)",
+        "position": [
+          -70,
+          47.4,
+          142
+        ],
+        "siblingIndex": 27,
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56817406,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56817421": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (4)",
+        "position": [
+          -70,
+          56.9,
+          106
+        ],
+        "siblingIndex": 28,
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56817421,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56817512": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (5)",
+        "position": [
+          -66,
+          56.9,
+          106
+        ],
+        "siblingIndex": 29,
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56817512,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56817911": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (6)",
+        "position": [
+          -66,
+          56.9,
+          102
+        ],
+        "siblingIndex": 30,
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56817911,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56817913": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Fan_SB (7)",
+        "position": [
+          -70,
+          56.9,
+          102
+        ],
+        "siblingIndex": 31,
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56817913,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56920340": {
+        "majorCompId": 42742113,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_DeathBox_SB (1)",
+        "position": [
+          -74,
+          45,
+          63
+        ],
+        "siblingIndex": 22,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          84,
+          12,
+          68
+        ],
+        "id": 56920340,
+        "path": "",
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "expressionKey": "56920340_42742113",
+            "blackScreenId": 2000,
+            "playerReviveType": 1,
+            "playerRevivePos": [
+              0,
+              30,
+              27
+            ]
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "60362513": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          0,
+          33,
+          -37
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 32,
+        "id": 60362513,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          36,
+          12,
+          4
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63561011": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          0,
+          26.99,
+          -60.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 34,
+        "id": 63561011,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          20,
+          8,
+          4
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63561182": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          0,
+          34.54,
+          -1.85
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 35,
+        "id": 63561182,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          30,
+          8,
+          4
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "64667797": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB (6)",
+        "position": [
+          -2,
+          21,
+          60
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 33,
+        "serializeVersion": 3,
+        "id": 64667797,
+        "scale": [
+          44,
+          12,
+          8
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68312863": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          -70,
+          47,
+          142
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 36,
+        "serializeVersion": 3,
+        "id": 68312863,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56817406
+            ],
+            "initPosition": [
+              -70,
+              47,
+              142
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68312898": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (1)",
+        "position": [
+          -66,
+          47,
+          142
+        ],
+        "siblingIndex": 37,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "id": 68312898,
+        "path": "",
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56817404
+            ],
+            "initPosition": [
+              -66,
+              47,
+              142
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68312902": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (2)",
+        "position": [
+          -66,
+          47,
+          146
+        ],
+        "siblingIndex": 38,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "id": 68312902,
+        "path": "",
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56817375
+            ],
+            "initPosition": [
+              -66,
+              47,
+              146
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68312905": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (3)",
+        "position": [
+          -70,
+          47,
+          146
+        ],
+        "siblingIndex": 39,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "id": 68312905,
+        "path": "",
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56815692
+            ],
+            "initPosition": [
+              -70,
+              47,
+              146
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68313044": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          -70,
+          56.5,
+          106
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 40,
+        "serializeVersion": 3,
+        "id": 68313044,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56817421
+            ],
+            "initPosition": [
+              -70,
+              56.5,
+              106
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68313066": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (4)",
+        "position": [
+          -70,
+          56.5,
+          102
+        ],
+        "siblingIndex": 41,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "id": 68313066,
+        "path": "",
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56817913
+            ],
+            "initPosition": [
+              -70,
+              56.5,
+              102
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68313068": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (5)",
+        "position": [
+          -66,
+          56.5,
+          102
+        ],
+        "siblingIndex": 42,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "id": 68313068,
+        "path": "",
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56817911
+            ],
+            "initPosition": [
+              -66,
+              56.5,
+              102
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50603647": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_02",
+        "position": [
+          -3,
+          16,
+          72.5
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 6,
+        "serializeVersion": 3,
+        "id": 50603647,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              10,
+              0
+            ],
+            "size": [
+              4,
+              28,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                23,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                21,
+                0
+              ]
+            },
+            "power": 800
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "70800837": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleMachine_Statue (1)",
+        "position": [
+          0,
+          27.85,
+          -25.58
+        ],
+        "siblingIndex": 14,
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 70800837,
+        "path": "",
+        "componentsInfo": {
+          "53631173": {
+            "tempPetTemplateId": 100110001,
+            "noticeKey": "STATUEGUIDE_TEMPLE_01",
+            "guideId": 103200,
+            "realCharacters": "PLATFORM"
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "tempPetTemplateId": 100110001,
+          "noticeKey": "STATUEGUIDE_TEMPLE_01",
+          "guideId": 103200,
+          "realCharacters": "PLATFORM"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50603681": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_03",
+        "position": [
+          3,
+          16,
+          72.5
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 50603681,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              10,
+              0
+            ],
+            "size": [
+              4,
+              28,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                23,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                21,
+                0
+              ]
+            },
+            "power": 800
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72252775": {
+        "majorCompId": 72193952,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_RevivalPoint",
+        "position": [
+          0.05,
+          34.99,
+          93.58
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 44,
+        "id": 72252775,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              0,
+              2.06,
+              -0.53
+            ],
+            "localScale": [
+              22.55,
+              5.84,
+              5.54
+            ]
+          },
+          "72193952": {
+            "savePointId": 56739737
+          }
+        },
+        "configId": 395,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50603981": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_13",
+        "position": [
+          -3,
+          18,
+          155
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 11,
+        "serializeVersion": 3,
+        "id": 50603981,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604131": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_14",
+        "position": [
+          -9,
+          18,
+          155
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 5,
+        "serializeVersion": 3,
+        "id": 50604131,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604133": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_15",
+        "position": [
+          3,
+          18,
+          155
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 50604133,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "50604137": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Fan_SB_16",
+        "position": [
+          9,
+          18,
+          155
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 50604137,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "center": [
+              0,
+              6,
+              0
+            ],
+            "size": [
+              4,
+              20,
+              4
+            ]
+          },
+          "42662676": {
+            "constraintPower": 10,
+            "power": 120
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                15,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            },
+            "power": 750
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72252875": {
+        "majorCompId": 72193952,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_RevivalPoint",
+        "position": [
+          -67.84,
+          66.99,
+          203.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 45,
+        "id": 72252875,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              0,
+              0.41,
+              0
+            ],
+            "localScale": [
+              5.89,
+              9.33,
+              24.85
+            ]
+          },
+          "72193952": {
+            "savePointId": 56740651
+          }
+        },
+        "configId": 395,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "68313070": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (6)",
+        "position": [
+          -66,
+          56.5,
+          106
+        ],
+        "siblingIndex": 43,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "id": 68313070,
+        "path": "",
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                12
+              ]
+            ]
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              56817512
+            ],
+            "initPosition": [
+              -66,
+              56.5,
+              106
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

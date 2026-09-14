@@ -1,0 +1,108 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "765e2a0f-cd93-4f2c-b7ec-4f54ccaf977d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 5
+    },
+    "4": {
+      "actionIds": [
+        24,
+        2
+      ],
+      "NodeID": 4,
+      "UID": "e8bdd1a7-706e-43e0-b77b-0aef1cb4f271",
+      "name": "registerReceiveBeAttackedEvent",
+      "includeAbilities": {
+        "10450514": true,
+        "10450504": true
+      },
+      "interval": 1
+    },
+    "24": {
+      "NodeID": 24,
+      "UID": "4b597727-9629-41be-8a44-09c0ccd1a5a9",
+      "effectId": "Eff_Parmon_10045_Lotus_02_End2",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "14": {
+      "UID": "ae515197-b648-4489-bbe1-6c17c7b3c659",
+      "name": "destroyEntity",
+      "NodeID": 14
+    },
+    "16": {
+      "key": "timeline_210450516",
+      "duration": 10,
+      "actionIds": [
+        33,
+        14
+      ],
+      "NodeID": 16,
+      "UID": "0fa30884-3115-462e-8c27-8690699001f0",
+      "name": "addEntityTimer"
+    },
+    "18": {
+      "actionIds": [
+        16
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "940a9856-43ff-46a7-8c3b-fa499d1fb24c",
+      "target": "MASTER",
+      "NodeID": 18
+    },
+    "38": {
+      "UID": "d660a7a8-7096-48e4-ad55-cd7ff17531ee",
+      "eventType": "EventEnter",
+      "NodeID": 38
+    },
+    "33": {
+      "NodeID": 33,
+      "UID": "c62be34e-66d2-4ee2-bb9d-ed2b7576b9d7",
+      "effectId": "Eff_Parmon_10045_Lotus_02_End1",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "20": {
+      "UID": "e1bcaa31-e99e-4434-b850-27ce9ad82e62",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "2": {
+      "UID": "fb8b91b8-517d-4334-9d35-809765226d5c",
+      "name": "destroyEntity",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2104505",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    5,
+    38,
+    20
+  ],
+  "layer": "Base",
+  "length": 3600
+}

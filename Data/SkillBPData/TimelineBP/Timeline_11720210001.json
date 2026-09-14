@@ -1,0 +1,226 @@
+{
+  "nodeMap": {
+    "37": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "d4dba97c-e120-4e17-9d11-57b15b95766a",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.83,
+      "NodeID": 39,
+      "UID": "b272602b-8b70-4c65-b0f9-ffd182f2908e"
+    },
+    "6": {
+      "UID": "a8b5a2c0-438a-4258-87ce-cdb96ad0bd14",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          42
+        ]
+      },
+      "NodeID": 6
+    },
+    "42": {
+      "name": "setSubModelVisible",
+      "UID": "6a092b9c-d55f-49bf-94d8-ebc6da3a165d",
+      "NodeID": 42,
+      "subModelName": "M_Parmon_10172_Body01",
+      "visible": false
+    },
+    "35": {
+      "name": "setSubModelVisible",
+      "UID": "fc7f45a3-3750-4da0-9f2d-0aa15fdbf80b",
+      "NodeID": 35,
+      "subModelName": "M_Parmon_10172_Body01",
+      "visible": false
+    },
+    "20": {
+      "UID": "edf605a4-c1c2-4cf8-bf4e-73669e592084",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2117202,
+      "NodeID": 21,
+      "UID": "f975de61-43dd-492d-b20f-8d62afb4eb79",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.78,
+      "NodeID": 22,
+      "UID": "41e3363a-15dc-47f1-bd28-d9fa9072d1f6"
+    },
+    "4": {
+      "UID": "455c4421-f6f0-4f96-96fe-1d361e726ab9",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "UID": "b1112998-fb62-4cc7-8bdc-e88085ed597b",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 0
+      },
+      "NodeID": 45
+    },
+    "14": {
+      "UID": "fec0b6c3-bb17-4fbe-b562-9e9c4ecbaf99",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          43
+        ]
+      },
+      "NodeID": 14
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 46,
+      "UID": "7d9e0907-16e1-48d8-8608-d75277019b0b"
+    },
+    "43": {
+      "name": "setSubModelVisible",
+      "UID": "c129fae3-6ce4-4428-8f59-7d2a1bfbe5f1",
+      "NodeID": 43,
+      "subModelName": "M_Parmon_10172_Body01",
+      "visible": false
+    },
+    "16": {
+      "UID": "eaaf30dd-b75e-483d-9351-240a7ebcfdcb",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "12": {
+      "UID": "d7bcf6e0-9231-4d1c-9745-6df2b2d276bc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "28": {
+      "name": "setSubModelVisible",
+      "UID": "99f658c8-bb2e-4cfe-9c02-a1f4949234db",
+      "NodeID": 28,
+      "subModelName": "M_Parmon_10172_Body01",
+      "visible": true
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.23,
+      "NodeID": 29,
+      "UID": "b8054584-da6b-43ff-a51e-faeb2d209bf4"
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d1f2ea5f-f46e-4a78-ba84-4e05c81c6d1d",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_Shield"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 17,
+      "UID": "7033c3e6-6607-4984-af93-086f9d1b2780"
+    },
+    "33": {
+      "UID": "ecdc8f65-3e59-4731-9a70-2850937d4214",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 33
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 34,
+      "UID": "80adbfb6-fae1-4e6a-b5d1-438c2e57f234"
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.88,
+      "NodeID": 36,
+      "UID": "4259e117-f2bd-47c3-9da1-c451847fdf32"
+    }
+  },
+  "BPName": "ability_11720210",
+  "NodeID": 8,
+  "UID": "bb518666-618c-4c9e-a380-0ffb86d7dcbc",
+  "eventIds": [
+    6,
+    14,
+    22,
+    17,
+    34,
+    20,
+    29,
+    36,
+    46,
+    39
+  ],
+  "layer": "Base",
+  "length": 2.6
+}

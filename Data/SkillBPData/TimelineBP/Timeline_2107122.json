@@ -1,0 +1,186 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5886706e-1f2c-41a1-ab7d-a00d84028377",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_Loop",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "caca6ed4-2b2a-4031-8871-2dfac0fc0b03",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "269afcbb-78dc-4238-90c0-44e0d9103f13",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_Sprinkle_loop",
+      "NodeID": 6
+    },
+    "7": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 9,
+      "NodeID": 7,
+      "UID": "c4b6e963-f699-4467-a14d-498ace944662",
+      "onUpdate": {
+        "actionIds": [
+          6
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          6
+        ]
+      }
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "12f6716f-fdd7-4b88-bb31-574644882686",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_SFX_Combat_10231_Skill_Sprinkle_loop",
+      "NodeID": 16
+    },
+    "22": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 9.5,
+      "NodeID": 22,
+      "UID": "bec7fcd2-afad-4afb-bdfd-ae61ec5d1f41",
+      "onUpdate": {
+        "actionIds": [
+          21
+        ]
+      },
+      "startTime": 0.25,
+      "onEnter": {
+        "actionIds": [
+          21
+        ]
+      }
+    },
+    "13": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 4,
+        "id": 2107122
+      },
+      "UID": "bd675b15-f13f-4439-a7ee-c90793211929",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 13
+    },
+    "9": {
+      "actionIds": [
+        13
+      ],
+      "name": "actOnTargets",
+      "UID": "be49381f-1fab-46a5-a1d1-fd794f8f203a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 9
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          19,
+          20,
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.5,
+      "NodeID": 18,
+      "UID": "03fdd115-d95d-4c4f-81d8-b5a8ff1dc542"
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "22847ebc-1b84-43a9-91a9-58d12cb72985",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_Loop",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 9,
+      "NodeID": 11,
+      "UID": "acba33ff-413e-450d-8e76-2dbd895dde02",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          9
+        ]
+      }
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e1dac7f6-f2ff-46e8-8b72-6eb9a5adf935",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_End",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "21": {
+      "name": "stopSoundStr",
+      "UID": "03627f6f-14e7-4074-8f5f-f479ca1e1e5e",
+      "soundId": "SFX_Combat_10231_Skill_Sprinkle_loop",
+      "target": "OWNER",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2107122",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    18,
+    7,
+    22,
+    4,
+    11
+  ],
+  "layer": "Base",
+  "length": 9999
+}

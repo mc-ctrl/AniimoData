@@ -1,0 +1,176 @@
+{
+  "allowHitCaster": true,
+  "angularIncreaseDuration": 1.5,
+  "BPName": "timeline_2164301",
+  "NodeID": 0,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10643_Skill_Note_Bullet01",
+  "nodeMap": {
+    "66": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 4,
+        "id": 2164301
+      },
+      "UID": "6c6f83c3-c7d2-45ab-a3a3-f7cb741b3b51",
+      "target": "TARGET",
+      "NodeID": 66,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_starmage_skill_charm_hit_Psychic",
+        "disableShowJumpWord": true,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10643_Skill_Note_Hit01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "hitCameraShakeId": 21104
+      }
+    },
+    "38": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2164301206,
+      "name": "createProjectile",
+      "UID": "bc3e790b-f8ea-4149-ad4b-8515ca131e94",
+      "rotation": "Direct",
+      "pos": "PROJECTILE",
+      "projectileType": "Tracking",
+      "targetRotation": {
+        "name": "getRotationFromTo",
+        "UID": "0252b698-43ab-47b9-a341-f50d7e7876b4",
+        "to": {
+          "relation": 2,
+          "heightDown": 5,
+          "heightUp": 5,
+          "UID": "5d5768f2-2d70-4dcb-87e1-1531bc78602e",
+          "radius": 15,
+          "name": "searchEntity",
+          "NodeID": 45
+        },
+        "NodeID": 47,
+        "from": "PROJECTILE"
+      },
+      "targetPos": {
+        "relation": 2,
+        "heightDown": 5,
+        "heightUp": 5,
+        "UID": "5d5768f2-2d70-4dcb-87e1-1531bc78602e",
+        "radius": 15,
+        "name": "searchEntity",
+        "NodeID": 45
+      },
+      "NodeID": 38,
+      "offsetRotation": [
+        80,
+        20,
+        20
+      ]
+    },
+    "39": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        46
+      ],
+      "UID": "0793e091-bf75-49f0-b56f-4e180142ba28",
+      "name": "doActionsByConditions",
+      "NodeID": 39
+    },
+    "47": {
+      "name": "getRotationFromTo",
+      "UID": "0252b698-43ab-47b9-a341-f50d7e7876b4",
+      "to": {
+        "relation": 2,
+        "heightDown": 5,
+        "heightUp": 5,
+        "UID": "5d5768f2-2d70-4dcb-87e1-1531bc78602e",
+        "radius": 15,
+        "name": "searchEntity",
+        "NodeID": 45
+      },
+      "NodeID": 47,
+      "from": "PROJECTILE"
+    },
+    "46": {
+      "UID": "f8a451a6-5325-43f0-b240-901b62803e7e",
+      "target": {
+        "relation": 2,
+        "heightDown": 5,
+        "heightUp": 5,
+        "UID": "5d5768f2-2d70-4dcb-87e1-1531bc78602e",
+        "radius": 15,
+        "name": "searchEntity",
+        "NodeID": 45
+      },
+      "name": "hasTarget",
+      "NodeID": 46
+    },
+    "33": {
+      "buffId": 916430101,
+      "name": "hasBuff",
+      "UID": "2fb0f0c6-36ec-4e64-83f0-d318564f9a15",
+      "target": "MASTER",
+      "NodeID": 33
+    },
+    "34": {
+      "actionIds": [
+        39
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "a6084e11-ea63-4b3c-ad38-abfbcd5bd4dd",
+      "name": "doActionsByConditions",
+      "NodeID": 34
+    },
+    "45": {
+      "relation": 2,
+      "heightDown": 5,
+      "heightUp": 5,
+      "UID": "5d5768f2-2d70-4dcb-87e1-1531bc78602e",
+      "radius": 15,
+      "name": "searchEntity",
+      "NodeID": 45
+    }
+  },
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxAngularOffset": 1000,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 15,
+  "minAngularOffset": 30,
+  "moveSpeed": 6,
+  "onProjectileFinishIds": [
+    34
+  ],
+  "onProjectileHitIds": [
+    66
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.2,
+  "calcResultNodeId": 66,
+  "startSleepTime": 0,
+  "duration": 15,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 2
+}

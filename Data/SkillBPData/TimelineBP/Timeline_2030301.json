@@ -1,0 +1,757 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        80
+      ],
+      "UID": "1d060282-1242-4ff9-89f3-481f1387b522",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        84
+      ],
+      "NodeID": 37
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "8798e385-8217-48b4-a48c-8ef457abfadc",
+      "effectId": "Eff_SkillIndicator_Comm",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "63": {
+      "name": "hideModel",
+      "UID": "abc247d3-2b0e-46f6-839b-25ce2fb5f644",
+      "target": "OWNER",
+      "NodeID": 63,
+      "maxHideTime": 12
+    },
+    "41": {
+      "actionIds": [
+        39,
+        68,
+        69,
+        75
+      ],
+      "conditionActionIds": [
+        95
+      ],
+      "UID": "91255367-d77c-4e6f-8e3e-54f72a1fd078",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        62,
+        67,
+        65,
+        63,
+        44,
+        48
+      ],
+      "NodeID": 41
+    },
+    "64": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "238df5df-2bb7-452f-b72f-f70929555601",
+      "effectId": "Eff_Parmon_Common_BossRush_KeyItem_BombAppear",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "scale": 3,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 64
+    },
+    "44": {
+      "calcResultNodeId": 51,
+      "actionIds": [
+        51,
+        88
+      ],
+      "NodeID": 44,
+      "UID": "4e1daf33-9ae9-4469-9286-4b5a01ded390",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            0,
+            180,
+            0.8,
+            0
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargetsSpreadAnnularSector",
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 40,
+      "needEcs": true,
+      "needUpdateCenter": true,
+      "speed": 25,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "84": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2030301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "2cf7e738-60be-429d-9784-bcd73e3dcd37",
+      "target": "TARGET",
+      "NodeID": 84,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30405,
+        "hitFrameFreezeId": 10033,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 5,
+        "impulseId": 5005
+      }
+    },
+    "69": {
+      "UID": "57857fa8-8409-444d-92a4-81a45621dbaf",
+      "name": "callClientAction",
+      "actionIds": [
+        68
+      ],
+      "NodeID": 69
+    },
+    "76": {
+      "scale": 3,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "946c805c-c5b0-4613-bc44-b5dcc42ee9d3",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "speed": 1,
+      "NodeID": 76
+    },
+    "67": {
+      "UID": "f16faa5c-3bd1-4950-9410-30197760c0b3",
+      "name": "callClientAction",
+      "actionIds": [
+        79,
+        65
+      ],
+      "NodeID": 67
+    },
+    "78": {
+      "scale": 2,
+      "name": "playEffectOnPosRot",
+      "UID": "ac0ef37c-63c9-4c4b-9755-33552b92e279",
+      "effectId": "Eff_Parmon_Common_BossRush_KeyItem_BombBoom2",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 78
+    },
+    "68": {
+      "name": "stopEffectStr",
+      "UID": "e26ca99e-4b85-46c5-ae7f-29424e888f2a",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "90": {
+      "key": "feverlevelserver",
+      "name": "setServerCacheVal",
+      "UID": "3d29c6ae-beca-452e-b325-ee92b7bc74e4",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 90
+    },
+    "2": {
+      "tag": "TE_Cre_DuckBait",
+      "name": "addEntityTag",
+      "UID": "18d2abab-4dfd-4083-9e85-5373792a5176",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "87": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3b615c6e-8db5-40ed-b7c9-794e0387b25e",
+      "target": "TARGET",
+      "NodeID": 87,
+      "animId": "Hit_L"
+    },
+    "4": {
+      "UID": "5774ab36-3afb-440c-908d-0a69a7a84287",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          2,
+          89,
+          30
+        ]
+      },
+      "NodeID": 4
+    },
+    "88": {
+      "UID": "ae7bc6ad-f64c-43bd-b06a-9b8e21048a8c",
+      "name": "callClientAction",
+      "actionIds": [
+        87
+      ],
+      "NodeID": 88
+    },
+    "89": {
+      "key": "feverlevelserver",
+      "name": "setServerCacheVal",
+      "UID": "b7e569c0-96e9-4c0f-8e1f-04db2740a807",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 89
+    },
+    "86": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "78e8ecbb-794c-4e0e-92a0-1bbf67d07e3f",
+      "target": "TARGET",
+      "NodeID": 86,
+      "animId": "Hit_L"
+    },
+    "72": {
+      "UID": "dfa08c14-db49-41b8-80e9-fc6654a62406",
+      "name": "callClientAction",
+      "actionIds": [
+        70,
+        73
+      ],
+      "NodeID": 72
+    },
+    "80": {
+      "name": "isActorType",
+      "UID": "04f2f27e-308c-4b18-9e84-ff9847bfb04f",
+      "target": "TARGET",
+      "NodeID": 80,
+      "actorType": 3
+    },
+    "73": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b2fade8a-1093-4d98-8c07-2e76712a50f7",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Dancing01",
+      "speed": 1,
+      "NodeID": 73
+    },
+    "13": {
+      "name": "playEffectOnPosRot",
+      "UID": "9dd776ff-1634-4e32-b479-1f9717c5fe40",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_MockAppear",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 13,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "92": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "994b00ab-2709-41e7-879d-988fd01f1cbf",
+      "NodeID": 92,
+      "lValue": {
+        "key": "feverlevelserver",
+        "name": "getServerCacheVal",
+        "UID": "1ae99366-c24e-4721-a1cd-cffd8f10519f",
+        "target": "OWNER",
+        "NodeID": 91
+      }
+    },
+    "77": {
+      "scale": 2,
+      "name": "playEffectOnPosRot",
+      "UID": "5aeae185-9f19-44ce-b838-eb5983f6b018",
+      "effectId": "Eff_Parmon_Common_BossRush_KeyItem_BombBoom1",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 77
+    },
+    "93": {
+      "key": "feverlevelserver",
+      "name": "setServerCacheVal",
+      "UID": "bc77907c-2b65-42eb-bd65-a3a11b73e0e9",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 93
+    },
+    "27": {
+      "calcResultNodeId": 84,
+      "name": "actOnTargets",
+      "UID": "033c27e7-8b0c-4cf5-9b05-61c2e5ae0285",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            8,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 4,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 5
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        37,
+        55,
+        93,
+        53
+      ],
+      "ignoreOwner": true,
+      "impulseId": 5005,
+      "NodeID": 27
+    },
+    "74": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cbc44a1e-54b0-418b-b16a-39ff2497aa52",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Dancing",
+      "speed": 1,
+      "NodeID": 74
+    },
+    "70": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a7aea5d4-331e-4725-b6e7-37ad1545a70a",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Dancing",
+      "speed": 1,
+      "NodeID": 70
+    },
+    "95": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "46d4feee-c607-482c-a443-3a7cb61c4613",
+      "NodeID": 95,
+      "lValue": {
+        "key": "feverlevelserver",
+        "name": "getServerCacheVal",
+        "UID": "5d27babf-6111-4394-b148-1672225eb08d",
+        "target": "OWNER",
+        "NodeID": 94
+      }
+    },
+    "65": {
+      "name": "stopEffectStr",
+      "UID": "c8334139-4f94-43b3-a8b5-67d300aed02b",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "62": {
+      "UID": "2af4a261-fd80-4819-a4d7-f448f40803cd",
+      "name": "callClientAction",
+      "actionIds": [
+        78,
+        60
+      ],
+      "NodeID": 62
+    },
+    "60": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1032d38f-c9f0-4edd-ae3e-f9244496b6b1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossRush_Skill_BombWave",
+      "NodeID": 60
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "70156e17-4d94-4432-91e6-106935406305",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "59": {
+      "UID": "e6aee415-7c54-4d05-8565-62a3d8c503b5",
+      "name": "callClientAction",
+      "actionIds": [
+        58
+      ],
+      "NodeID": 59
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0d860314-77c3-47dd-a4dd-77dbba707d75",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossRush_Skill_BombBoom",
+      "NodeID": 58
+    },
+    "7": {
+      "UID": "e295b1f5-9d99-4224-bf9b-a64c7c74a55b",
+      "name": "callClientAction",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "55": {
+      "UID": "82a48fb1-a498-4c9c-9aee-04483187ee17",
+      "name": "callClientAction",
+      "actionIds": [
+        77,
+        86,
+        53
+      ],
+      "NodeID": 55
+    },
+    "39": {
+      "UID": "4f302d80-68ab-46c6-afe2-dc1ff3b93714",
+      "actorId": "OWNER",
+      "name": "destroyEntity",
+      "NodeID": 39
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10,
+      "NodeID": 31,
+      "UID": "a495adf8-f27a-4c49-aee3-e9ed7a1e6621"
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          7,
+          6
+        ]
+      },
+      "eventType": "Notify",
+      "time": 30,
+      "NodeID": 9,
+      "UID": "0a5adb93-f0be-47d9-af99-b2fe903d0f84"
+    },
+    "21": {
+      "tickInterval": 0.75,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 21,
+      "UID": "dfd0fbb4-b354-48fd-8999-1870f6a29efe",
+      "onUpdate": {
+        "actionIds": [
+          20
+        ]
+      },
+      "startTime": 2,
+      "onEnter": {
+        "actionIds": [
+          72
+        ]
+      }
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 29.5,
+      "NodeID": 25,
+      "UID": "4e010510-6fe4-42ce-9050-cc9590492ff7"
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "c8b4cebd-e442-4e3a-bd80-fb7c79b22682",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Dancing",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "20": {
+      "UID": "73d01270-9781-483f-aee3-e034bacb734e",
+      "name": "callClientAction",
+      "actionIds": [
+        18,
+        74
+      ],
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "24e6f384-3d81-43ea-b0a9-37929ee40e42",
+      "name": "callClientAction",
+      "actionIds": [
+        64,
+        76,
+        10,
+        13,
+        32
+      ],
+      "NodeID": 12
+    },
+    "22": {
+      "effectKey": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 22,
+      "UID": "bf30afe1-9d57-4a3d-a694-5e242faf5e14",
+      "target": "OWNER",
+      "presetName": "DuckTransform",
+      "name": "playPreset"
+    },
+    "23": {
+      "effectKey": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "duration": 1,
+      "disableWhenFinished": false,
+      "NodeID": 23,
+      "UID": "1eb8ee5a-e8ec-414f-aa2e-f356b703cfcc",
+      "target": "OWNER",
+      "presetName": "DuckAppear",
+      "name": "playPreset"
+    },
+    "24": {
+      "UID": "b9c77a33-820a-4d21-888d-2140077b0191",
+      "name": "callClientAction",
+      "actionIds": [
+        23
+      ],
+      "NodeID": 24
+    },
+    "14": {
+      "offsetXYZ": [
+        0.1,
+        0.3,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "2094137d-0b6e-4c73-8b8e-a01a96d39ed1",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock01",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "triggerName": "Dance",
+      "name": "setEffectAnimTrigger",
+      "UID": "1ec5a145-4a50-430d-87db-c945afd64119",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "75": {
+      "name": "hideModel",
+      "UID": "29720d89-cb87-4a6b-88f6-63a6e4adc005",
+      "target": "OWNER",
+      "NodeID": 75,
+      "maxHideTime": 12
+    },
+    "47": {
+      "UID": "913daa2b-d714-4579-8bb3-3931fa082e63",
+      "actorId": "OWNER",
+      "name": "destroyEntity",
+      "NodeID": 47
+    },
+    "16": {
+      "UID": "21d7bffd-5ced-4454-a073-c67c663d3a6a",
+      "name": "callClientAction",
+      "actionIds": [
+        14,
+        22
+      ],
+      "NodeID": 16
+    },
+    "48": {
+      "key": "duck06",
+      "duration": 6,
+      "actionIds": [
+        47
+      ],
+      "NodeID": 48,
+      "UID": "1963be8e-9e68-49b1-be8f-f1a7b0488215",
+      "name": "addEntityTimer"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 17,
+      "UID": "f47a768a-53b2-4b90-85f2-4edd3667db36"
+    },
+    "29": {
+      "actionIds": [
+        90,
+        27,
+        59,
+        41
+      ],
+      "conditionActionIds": [
+        92
+      ],
+      "UID": "04a346fe-4fa0-4979-8237-94b426b5f387",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "6108ad96-98aa-4aaf-a631-ba3500b2c92d",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        29
+      ],
+      "NodeID": 30
+    },
+    "32": {
+      "playTime": 10,
+      "stayTime": 1,
+      "name": "playIndicatorEff",
+      "UID": "aa1d17df-e49d-4cc0-af4c-2e93ac824413",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          8,
+          3,
+          1
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 4,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 5
+      },
+      "NodeID": 32
+    },
+    "79": {
+      "scale": 2,
+      "name": "playEffectOnPosRot",
+      "UID": "d97da39c-1263-41aa-8ee3-6edd38603234",
+      "effectId": "Eff_Parmon_Common_BossRush_KeyItem_BombBoom2wave",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 79
+    },
+    "51": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2030301,
+        "instant_dmg_rate_v": "param2",
+        "type": 4
+      },
+      "UID": "2e228933-d7a1-49ce-a2a6-acdbb6c725f2",
+      "target": "TARGET",
+      "NodeID": 51,
+      "attackData": {
+        "hitFrameFreezeId": 10033,
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 5,
+        "impulseId": 5005,
+        "hitCameraShakeId": 30405
+      }
+    },
+    "36": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2030301,
+        "add_cur_bp_max_p": "param1",
+        "type": 4
+      },
+      "UID": "51679893-7427-4d8a-8a04-2cf4f5677dc1",
+      "target": "TARGET",
+      "NodeID": 36,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30405,
+        "hitFrameFreezeId": 10033,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 5,
+        "impulseId": 5005
+      }
+    }
+  },
+  "BPName": "timeline_2030301",
+  "NodeID": 1,
+  "UID": "4f1d01a1-2a47-40ac-8135-397299048e9d",
+  "eventIds": [
+    21,
+    4,
+    17,
+    31,
+    25,
+    9
+  ],
+  "layer": "Base",
+  "length": 999
+}

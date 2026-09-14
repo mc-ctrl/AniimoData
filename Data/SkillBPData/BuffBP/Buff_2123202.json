@@ -1,0 +1,46 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123202",
+  "NodeID": 1,
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "a76cefd9-18a1-4591-a1a7-edd7b1c3ac72",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3
+    },
+    "6": {
+      "UID": "361ab049-00b8-4ece-a587-fd7cf971bf14",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "5": {
+      "name": "stopSoundStr",
+      "UID": "e8f34b3a-9893-4bec-89f9-180b7d6ee467",
+      "soundId": "SFX_3C_10231_Movement_Run_Loop",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6e8bee9d-ebfd-4391-af28-fbe98a596742",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_3C_10231_Movement_Run_Loop",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6
+  ]
+}

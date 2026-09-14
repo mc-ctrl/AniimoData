@@ -1,0 +1,256 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2147103",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "eventName": "qtePartPerfect",
+      "NodeID": 5,
+      "UID": "8bf47bca-5376-4350-aa4c-eff67c8a6c11",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        13,
+        8,
+        3,
+        7,
+        24,
+        20
+      ]
+    },
+    "7": {
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c13fb8ac-3bbf-4d02-a628-12ba63a00a28",
+      "effectId": "Eff_Parmon_10475_Skill_RhythmCombo_01_02",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 3,
+      "buffId": 2147106,
+      "NodeID": 8,
+      "UID": "aa3fc157-c795-4146-87e4-a4cd4c759d94",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "abilityTarget": "TARGET",
+      "forceCast": true,
+      "NodeID": 9,
+      "UID": "15a18e61-7a3e-4a76-8279-ee62e3820fa4",
+      "name": "castAbility",
+      "abilityId": 14710102
+    },
+    "33": {
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "notShowCountDown": false,
+      "NodeID": 33,
+      "UID": "dbc185ef-9139-4738-9229-bc33dd574629",
+      "to": 14750100,
+      "isAutoRecoverByDuration": true,
+      "from": 14750100
+    },
+    "23": {
+      "name": "isInCombat",
+      "UID": "7f110d32-21d6-4628-8608-cd178cc138cb",
+      "target": "OWNER",
+      "NodeID": 23,
+      "not": false
+    },
+    "30": {
+      "name": "stopQteTimeline",
+      "UID": "3b32dea0-7ab4-4c5f-9af1-d2d14f1d0d81",
+      "target": "OWNER",
+      "NodeID": 30,
+      "qteGroupId": "QTE_10471_Combo"
+    },
+    "20": {
+      "buffId": 2147103,
+      "name": "removeBuff",
+      "UID": "679778b9-fb55-406b-8295-eb788e06a0cc",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "2": {
+      "abilityTarget": "TARGET",
+      "forceCast": true,
+      "NodeID": 2,
+      "UID": "8d694a5e-b497-4878-b8f5-f288e358bc06",
+      "name": "castAbility",
+      "abilityId": 14710102
+    },
+    "3": {
+      "key": "147401001qteskill",
+      "duration": 0.02,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "4d69f700-be3e-4f49-98a6-38a186c81bbe",
+      "name": "addEntityTimer"
+    },
+    "13": {
+      "duration": 0.8,
+      "disableWhenFinished": true,
+      "NodeID": 13,
+      "UID": "df6d3777-6d23-43fa-824d-63fe2a0c73c6",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10471_Skill_RhythmCombo_01",
+      "name": "playPreset"
+    },
+    "24": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "f252b398-4468-4741-947f-155ac0680dc1",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "14": {
+      "buffId": 2147103,
+      "name": "removeBuff",
+      "UID": "1d1ec3f0-29d5-4183-89aa-49ca016bcdce",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "key": "147401001qteskill",
+      "duration": 0.02,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "96b5babc-6597-4e7c-84d2-f03b22e02312",
+      "name": "addEntityTimer"
+    },
+    "26": {
+      "target": "OWNER",
+      "duration": 15,
+      "buffId": 91471020,
+      "NodeID": 26,
+      "UID": "4519ec3a-c004-4d85-abaa-36009f07b509",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "25": {
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "notShowCountDown": false,
+      "NodeID": 25,
+      "UID": "fdaf3667-b535-4f66-b2a3-12c97a91ddea",
+      "to": 14710100,
+      "isAutoRecoverByDuration": true,
+      "from": 14710100
+    },
+    "16": {
+      "key": "147401002qte1",
+      "duration": 0.15,
+      "actionIds": [
+        14,
+        25
+      ],
+      "NodeID": 16,
+      "UID": "de1470b7-cf29-4a22-a355-a48c770eb7d0",
+      "name": "addTimer"
+    },
+    "27": {
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "b111829c-40f0-4e60-b0b2-e18245a2cb75",
+      "name": "doActionsByConditions",
+      "NodeID": 27,
+      "elseActionIds": [
+        26
+      ]
+    },
+    "17": {
+      "eventName": "qtePartMiss",
+      "NodeID": 17,
+      "UID": "918a3735-6fed-4134-b5c4-3507d7eb7b1d",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        16
+      ]
+    },
+    "29": {
+      "rValue": 6,
+      "name": "equal",
+      "UID": "d45f2915-f2c1-44b1-bf20-f790dd33a4cc",
+      "NodeID": 29,
+      "lValue": {
+        "templateId": 91471020,
+        "name": "getBuffLayer",
+        "UID": "038efcca-81ff-46d9-bddc-b2bd970dbeb9",
+        "target": "OWNER",
+        "NodeID": 28
+      }
+    },
+    "18": {
+      "key": "147401002qte2",
+      "duration": 0.15,
+      "actionIds": [
+        14,
+        25
+      ],
+      "NodeID": 18,
+      "UID": "7d3a7365-6765-40fb-8260-9b5de3e59caa",
+      "name": "addTimer"
+    },
+    "32": {
+      "UID": "17bdfe41-3993-439d-9c48-950a00f7d9c9",
+      "oldPetActionIds": [
+        30,
+        33
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 32
+    },
+    "19": {
+      "eventName": "qtePartFail",
+      "NodeID": 19,
+      "UID": "4bb68ea4-7221-4c31-ad25-c7b895d345c5",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        18
+      ]
+    },
+    "12": {
+      "eventName": "qtePartGood",
+      "NodeID": 12,
+      "UID": "4edaf62c-6d1d-48c1-9021-dce89bbe61db",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        10,
+        22
+      ]
+    },
+    "22": {
+      "buffId": 2147103,
+      "name": "removeBuff",
+      "UID": "9bb9cd38-5053-479a-9f2d-212e46651e9e",
+      "target": "OWNER",
+      "NodeID": 22
+    }
+  },
+  "name": "",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    12,
+    17,
+    19,
+    32
+  ]
+}

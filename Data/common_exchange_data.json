@@ -1,0 +1,148 @@
+{
+  "302": {
+    "failDialogue": 91281922,
+    "propsItemCounts": 1,
+    "successKey": "ARK_PROPSHOP_CONSUME",
+    "propsitem": 7000123,
+    "guaranteedDelay": 50,
+    "dropRewardList": [
+      [
+        80013,
+        2
+      ],
+      [
+        80014,
+        10
+      ],
+      [
+        80015,
+        26
+      ],
+      [
+        80016,
+        30
+      ],
+      [
+        80017,
+        16
+      ],
+      [
+        80018,
+        12
+      ],
+      [
+        80019,
+        4
+      ]
+    ]
+  },
+  "303": {
+    "failDialogue": 91281922,
+    "propsItemCounts": 1,
+    "successKey": "ARK_PROPSHOP_CONSUME",
+    "propsitem": 7000123,
+    "guaranteedDelay": 50,
+    "dropRewardList": [
+      [
+        80013,
+        0
+      ],
+      [
+        80014,
+        6
+      ],
+      [
+        80015,
+        24
+      ],
+      [
+        80016,
+        30
+      ],
+      [
+        80017,
+        20
+      ],
+      [
+        80018,
+        15
+      ],
+      [
+        80019,
+        5
+      ]
+    ]
+  },
+  "2": {
+    "guaranteedDelay": 4.8,
+    "propsItemCounts": 1,
+    "failToast": 11010,
+    "propsitem": 1601003,
+    "dropRewardList": [
+      [
+        5030805,
+        25
+      ],
+      [
+        5030804,
+        75
+      ]
+    ]
+  },
+  "1": {
+    "guaranteedDelay": 10,
+    "propsItemCounts": 5,
+    "propsitem": 700034,
+    "dropRewardList": [
+      [
+        80008,
+        1
+      ],
+      [
+        80009,
+        1
+      ],
+      [
+        80010,
+        1
+      ]
+    ]
+  },
+  "301": {
+    "failDialogue": 91281922,
+    "propsItemCounts": 1,
+    "successKey": "ARK_PROPSHOP_CONSUME",
+    "propsitem": 7000123,
+    "guaranteedDelay": 50,
+    "dropRewardList": [
+      [
+        80013,
+        5
+      ],
+      [
+        80014,
+        12
+      ],
+      [
+        80015,
+        28
+      ],
+      [
+        80016,
+        30
+      ],
+      [
+        80017,
+        12
+      ],
+      [
+        80018,
+        10
+      ],
+      [
+        80019,
+        3
+      ]
+    ]
+  }
+}

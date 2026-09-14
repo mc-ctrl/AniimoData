@@ -1,0 +1,42 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145108",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 2,
+      "target": "OWNER",
+      "NodeID": 3,
+      "UID": "d397c8d1-787e-4ff7-8947-bc0f9a7efcfb",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_ShufuDis",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "841a53d8-0b5e-4ed5-b6af-7054b95d6718",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_Shufu",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2f543e7f-b07b-4e9a-b43d-78b12e08e6c3",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_Shufu",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5,
+    3
+  ],
+  "onBuffStartIds": [
+    2
+  ]
+}

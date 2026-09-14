@@ -1,0 +1,459 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.2,
+      "NodeID": 37,
+      "UID": "718e0105-fe33-4124-a353-683c83e34c0a"
+    },
+    "39": {
+      "isRootDir": true,
+      "NodeID": 39,
+      "UID": "7c466c3f-a85d-45a0-80a3-d9c026402477",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "35": {
+      "UID": "ed225270-a12f-4e25-a2a0-4c0080d8483d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "NodeID": 35
+    },
+    "67": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 800230501003,
+      "name": "createProjectile",
+      "UID": "bd9f5e8c-86d6-416e-ac5e-43e44e17dfdc",
+      "rotation": "ToTarget",
+      "pos": {
+        "isRootDir": true,
+        "NodeID": 78,
+        "UID": "0a96ad77-cfda-4e5d-9a58-a9b564b8927f",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone M Tongue 02"
+      },
+      "projectileType": "Free3d",
+      "targetPos": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "d61cc073-1b83-4549-a317-53d4c5960a01",
+        "target": "OWNER",
+        "NodeID": 85
+      },
+      "NodeID": 67,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "69": {
+      "action": {
+        "actionIds": [
+          67
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.22,
+      "NodeID": 69,
+      "UID": "1618ee32-1cfd-4492-a3d7-4a2836e90f6f"
+    },
+    "88": {
+      "UID": "52259392-9f50-4e1e-b1ac-0f41c49b32a6",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 88
+    },
+    "89": {
+      "UID": "54686c09-3232-4acf-97d0-650ca44f741f",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 89
+    },
+    "101": {
+      "actionIds": [
+        100
+      ],
+      "conditionActionIds": [
+        107
+      ],
+      "UID": "1573d811-0dd1-4f17-8b23-43de97ccd57a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        106
+      ],
+      "NodeID": 101
+    },
+    "99": {
+      "UID": "b502e788-7f9d-45b0-aecc-024b299d6ad9",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 99
+    },
+    "97": {
+      "UID": "81af7d4a-c1c0-4686-b297-83ccdecefb91",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 97
+    },
+    "98": {
+      "action": {
+        "actionIds": [
+          97
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8.9,
+      "NodeID": 98,
+      "UID": "a133e15e-75d6-4fbd-911f-56bee8c2de63"
+    },
+    "7": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 800230501001,
+      "name": "createProjectile",
+      "UID": "85b65007-0ba0-4235-be7e-112b33a6b066",
+      "rotation": "ToTarget",
+      "pos": {
+        "isRootDir": true,
+        "NodeID": 39,
+        "UID": "7c466c3f-a85d-45a0-80a3-d9c026402477",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone M Tongue 02"
+      },
+      "projectileType": "Free3d",
+      "targetPos": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "9853acc2-5471-46e3-bf21-6526e89fd049",
+        "target": "OWNER",
+        "NodeID": 87
+      },
+      "NodeID": 7,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "107": {
+      "UID": "4136169d-ea50-4d7e-8f28-4b3eea63a3f8",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 107
+    },
+    "100": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "c1e0434d-113a-4f2a-95d4-e811b856fd08",
+      "target": "OWNER",
+      "val": {
+        "UID": "b502e788-7f9d-45b0-aecc-024b299d6ad9",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 99
+      },
+      "NodeID": 100
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.15,
+      "NodeID": 9,
+      "UID": "5297968f-dc63-44e0-a044-cd200aa1b23e"
+    },
+    "33": {
+      "UID": "eb4cd78d-26d2-483b-9a15-b93b3591aaac",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "NodeID": 33
+    },
+    "102": {
+      "action": {
+        "actionIds": [
+          101
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 102,
+      "UID": "67ab8b80-125c-4529-94ad-6b6acdcd0b9f"
+    },
+    "105": {
+      "name": "getTargetOffsetPos",
+      "UID": "907f9b07-9e1f-4ca7-b52b-3fbad2d62c92",
+      "target": "OWNER",
+      "offset": [
+        0,
+        -6,
+        6
+      ],
+      "NodeID": 105
+    },
+    "103": {
+      "action": {
+        "actionIds": [
+          101
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.9,
+      "NodeID": 103,
+      "UID": "b4d985f6-a5d0-41d9-83b6-f6bf168c6698"
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.3,
+      "NodeID": 21,
+      "UID": "0fe52cdd-10b2-45c8-bc9e-fe9e07ef127c"
+    },
+    "104": {
+      "action": {
+        "actionIds": [
+          101
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7,
+      "NodeID": 104,
+      "UID": "7bf6eda2-2690-40eb-b59d-84e7165e94dc"
+    },
+    "31": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7a96d05d-6f2e-4741-9862-a7969ac1e279",
+      "target": "OWNER",
+      "NodeID": 31,
+      "animId": "Skill_Fireball_Combo"
+    },
+    "24": {
+      "UID": "cc359573-2677-4e16-a40e-b4462368210b",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 24
+    },
+    "34": {
+      "time": 0.8,
+      "rotateSpeed": 180,
+      "name": "rotateTo",
+      "UID": "03ac34bc-ac21-45c6-92a7-9962ad61469c",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 34
+    },
+    "106": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "ef1c0d25-8dd1-47c9-8331-f0bf7ee2f358",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "907f9b07-9e1f-4ca7-b52b-3fbad2d62c92",
+        "target": "OWNER",
+        "offset": [
+          0,
+          -6,
+          6
+        ],
+        "NodeID": 105
+      },
+      "NodeID": 106
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "29ccf5c2-aa17-4253-a60a-86ca73657260",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_fireball_release",
+      "NodeID": 18
+    },
+    "57": {
+      "isRootDir": true,
+      "NodeID": 57,
+      "UID": "86eb2772-4a51-4525-bdc0-bac36d88c96f",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "26": {
+      "UID": "65916c54-2f54-4378-bab5-e9c5ae6d6bb6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24,
+          88
+        ]
+      },
+      "NodeID": 26
+    },
+    "78": {
+      "isRootDir": true,
+      "NodeID": 78,
+      "UID": "0a96ad77-cfda-4e5d-9a58-a9b564b8927f",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "28": {
+      "UID": "0b5b67a6-43ef-45a1-abd5-18ba5059cd8e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 28
+    },
+    "49": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 800230501002,
+      "name": "createProjectile",
+      "UID": "89395b8c-3646-490a-9915-8b32c56848e0",
+      "rotation": "ToTarget",
+      "pos": {
+        "isRootDir": true,
+        "NodeID": 57,
+        "UID": "86eb2772-4a51-4525-bdc0-bac36d88c96f",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone M Tongue 02"
+      },
+      "projectileType": "Free3d",
+      "targetPos": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "f6d87bdb-3ee8-45e7-9316-41d380a3c003",
+        "target": "OWNER",
+        "NodeID": 86
+      },
+      "NodeID": 49,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "30": {
+      "UID": "2532ac50-aaa8-4baf-9def-863c6e01bc01",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          28,
+          89
+        ]
+      },
+      "NodeID": 30
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.2,
+      "NodeID": 20,
+      "UID": "877237a0-d885-45a6-a5da-8e12b6be0cbb"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 19,
+      "UID": "e1f5aea4-adb4-4ead-9be0-a567fe4db427"
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.15,
+      "NodeID": 51,
+      "UID": "e264736c-fb20-4225-ad91-eea26349c748"
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.1,
+      "NodeID": 36,
+      "UID": "ed491c3a-3ee2-4f6a-8367-004429c22a18"
+    }
+  },
+  "BPName": "ability_800230501",
+  "NodeID": 11,
+  "UID": "50133a16-e2d0-410a-b84d-9096212a4ede",
+  "eventIds": [
+    26,
+    30,
+    33,
+    9,
+    19,
+    51,
+    35,
+    36,
+    37,
+    69,
+    102,
+    103,
+    104,
+    20,
+    98,
+    21
+  ],
+  "layer": "Base",
+  "length": 9.1
+}

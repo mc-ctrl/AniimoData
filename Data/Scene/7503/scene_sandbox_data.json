@@ -1,0 +1,134 @@
+{
+  "91298274": {
+    "owner": "陈智豪",
+    "position": [
+      2.56,
+      -0.44,
+      -8.16
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91298328,
+    "keepGraphOnFinished": true,
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "3号洞穴玩法内容",
+    "spawners": [
+      91298277,
+      91298280,
+      91298291,
+      91298301,
+      91298311,
+      91298313,
+      91298469,
+      91300222,
+      91300228,
+      91300237
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7503/Sandbox_91298274_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91298274,
+    "levelItems": {
+      "91342531": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否触发自言自语",
+        "position": [
+          -2.13,
+          -0.06,
+          16.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91342531,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91342535": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          7.4,
+          39.47,
+          -11.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91342535,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          34.24,
+          1,
+          32.16
+        ],
+        "isActive": true
+      },
+      "91342530": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          0.85,
+          1.47,
+          12.89
+        ],
+        "rotation": [
+          0,
+          328.72,
+          0
+        ],
+        "id": 91342530,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          18.96,
+          2.85,
+          6.66
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "chunk": 1019874
+  }
+}

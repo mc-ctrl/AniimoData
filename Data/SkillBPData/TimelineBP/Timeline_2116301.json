@@ -1,0 +1,207 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "ca1e0369-3316-47ab-bb91-a4f88bdd0f71",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19,
+          3,
+          10,
+          26
+        ]
+      },
+      "NodeID": 5
+    },
+    "7": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "12a520ec-fa10-4bcb-94cb-330cb05ce73d",
+      "effectId": "Eff_Parmon_10163_Skill_IcePrison",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "9": {
+      "UID": "178724e4-aa6e-4c5b-a16d-26d2f5571d56",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18,
+          7,
+          13,
+          27,
+          28,
+          25
+        ]
+      },
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "de8d2f53-df74-49dd-a04d-e724e42ba0e9",
+      "name": "isReceiveDamageEventElementType",
+      "elementType": 5,
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "61a2c03c-34dc-40e2-b5ab-43f521ef5389",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "f18c4aab-4342-4fe6-ad75-71e6a4808cbb",
+      "conditionIds": [
+        20,
+        29
+      ],
+      "name": "conditionOr",
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "be3005c2-12bb-442c-93fc-b5856761ffba",
+      "actorId": {
+        "UID": "04cf62c7-5c39-461f-b70c-1c663045bd64",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 2
+      },
+      "name": "destroyEntity",
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "da8b63b9-b57c-469d-b557-d9fbbfbbb4dc",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "09883d3e-a8c0-4074-a4b6-3278c6b59392",
+      "name": "showBubbleMsg",
+      "msgId": 2180,
+      "NodeID": 24
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "12694ce0-7396-45f9-9121-39cd4df11b31",
+      "effectId": "Eff_Parmon_10163_Skill_IcePrison",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 1
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "5940567c-b748-4dd4-82b5-b1d85dd1c0ed",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "3ef8d8ea-ba8b-49e9-b7c4-cbaa7ffdb184",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        24
+      ],
+      "NodeID": 25
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "aa0f5ced-20d0-49b4-a66a-f64b51349385",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 16
+    },
+    "27": {
+      "isTemp": true,
+      "NodeID": 27,
+      "UID": "6deacdb3-dc33-4e8e-adf3-7ab22b715963",
+      "name": "playerForceLock",
+      "distance": 30,
+      "lockState": true
+    },
+    "28": {
+      "UID": "6877be91-167c-4b34-8297-250e6431efc6",
+      "name": "showDialog",
+      "dialogId": 20000166,
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "97685868-7df4-4ee0-856e-1f4adda16a09",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 29
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c59383df-774c-4a8e-a874-98b3cc1b1412",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_IceSlash_Attack",
+      "NodeID": 18
+    },
+    "26": {
+      "UID": "3be77c3c-a383-4cf9-bbd7-f2ae5bbf43b5",
+      "name": "hideBubbleMsg",
+      "msgId": 2180,
+      "NodeID": 26
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3b68118d-7210-4156-8517-5423b53e5257",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_BurrowSkill_CombatExit",
+      "NodeID": 19
+    },
+    "12": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "b3057be2-bfab-4b11-aa43-6a2cee1b6705",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "23": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2116301,
+        "type": 4,
+        "instant_dmg_hp_max_p": "param0"
+      },
+      "UID": "8343b97e-f086-46ea-8371-088cc4f23906",
+      "target": "OWNER",
+      "NodeID": 23,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    }
+  },
+  "BPName": "timeline_2116301",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    9,
+    5
+  ],
+  "layer": "Base",
+  "length": 9
+}

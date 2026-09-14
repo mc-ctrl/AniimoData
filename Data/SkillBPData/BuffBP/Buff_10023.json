@@ -1,0 +1,16 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "def_p": -0.1
+  },
+  "NodeID": 1,
+  "UID": "7aa7ab6b-6a07-4a9b-a987-3d20da6e3228",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_10023"
+}

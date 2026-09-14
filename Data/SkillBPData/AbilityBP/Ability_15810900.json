@@ -1,0 +1,45 @@
+{
+  "BPName": "ability_15810900",
+  "NodeID": 1,
+  "UID": "707cd5c0-714f-4a12-9efa-7ac14a5a1b33",
+  "desc": "",
+  "abilityType": 9,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 15810900001,
+      "name": "setCombatActionTimeline",
+      "UID": "7f041c8b-36be-435e-9578-7865f5863062",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "40": {
+      "key": "sheepscare",
+      "name": "setAbilityCacheVal",
+      "UID": "cfc14283-c11b-4c8c-96fb-2ce20cd466e2",
+      "value": 0,
+      "NodeID": 40
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "ExploreSkill_BlowBubble"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10583_Skill_BlowBubble"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "notTurnToTarget": true,
+  "onAbilityEndIds": [
+    40
+  ],
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 9400142
+}

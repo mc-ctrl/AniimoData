@@ -1,0 +1,186 @@
+{
+  "nodeMap": {
+    "6": {
+      "UID": "150fa32c-1ff3-4377-8a63-8ae0b07e269d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          11
+        ]
+      },
+      "NodeID": 6
+    },
+    "31": {
+      "UID": "527c980b-469a-47d4-b78b-6395efb0bb5b",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "d7c41c09-7762-4f9c-897e-3552cc8fbcd4",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "a17d8d57-7b62-40d2-b13b-fab5f15bd57c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 20
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 22,
+      "UID": "846abe3c-26c0-4a86-afe6-a0163a134c73"
+    },
+    "13": {
+      "UID": "a4cda751-5f07-4f2f-8ea9-e9660f53f52a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d8f33496-b9e3-4cd5-a613-328acc11adf8",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_laricander_skill_heal",
+      "NodeID": 24
+    },
+    "15": {
+      "UID": "ee219cfd-40ef-44ec-b43a-71ba0cc65b9b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 25,
+      "UID": "1986d73c-a1e9-4858-8b94-24d375d4737d"
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f27ca304-8192-405d-a4d7-9e66cec0eb01",
+      "effectId": "Eff_Parmon_10141_Light",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "27": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "ab564aa1-b91e-44d1-a451-6b80ce8d69c6",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "18c92ef6-7c1d-4141-9709-3450f3ef0568",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        30
+      ],
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "793af865-54f1-4ea3-9f72-e00c43f87fa1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "5264fce8-0d84-4979-a331-97c9b4f64e52",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          26,
+          23
+        ]
+      },
+      "NodeID": 18
+    },
+    "30": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "a1e81dc3-266e-457a-9627-9fecbe52ff8f",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 30
+    },
+    "4": {
+      "UID": "2338f759-2727-4344-93f9-d2c6639b1b87",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "23": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2114103,
+      "NodeID": 23,
+      "UID": "9acf0017-e6b4-4be5-bdd4-3bc57998cbe8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5fb14ec5-a4a9-4537-a472-bad4b844a3fb",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_Halo"
+    }
+  },
+  "BPName": "ability_11410900",
+  "NodeID": 8,
+  "UID": "bc98d29a-505a-4636-9731-a0a80bb9f2c8",
+  "eventIds": [
+    6,
+    15,
+    18,
+    29,
+    25,
+    22
+  ],
+  "layer": "Base",
+  "length": 10
+}

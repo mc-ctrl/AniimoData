@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_215010101",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "buffId": 2150102,
+      "name": "removeBuff",
+      "UID": "4b34aca0-70a7-4861-b844-88379dedf651",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "3e17ff6a-4ab5-49e8-92eb-52f243de5a0a",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "9": {
+      "tag": "TE_Wild_10501_Rage",
+      "name": "removeEntityTag",
+      "UID": "741d6cc9-6fd0-4835-8b52-dbbd99e97737",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "tag": "TE_Wild_10501_ReturnSleep",
+      "name": "addEntityTag",
+      "UID": "dbfe6f32-60ef-471c-acc8-e72ddb789dd2",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "7": {
+      "tag": "TE_Wild_10501_ReturnSleep",
+      "name": "removeEntityTag",
+      "UID": "cafb9892-c0dd-49c9-810a-5a42fcfd5f7e",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "2": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9dacf7b1-4251-4676-a738-56029b85e13d",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4,
+    7
+  ],
+  "onBuffStartIds": [
+    8,
+    2,
+    6,
+    9
+  ]
+}

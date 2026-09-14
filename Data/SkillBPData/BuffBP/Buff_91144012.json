@@ -1,0 +1,24 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91144012",
+  "name": "控制帽子模型显隐",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91144011,
+      "NodeID": 3,
+      "UID": "fc5fa36e-bdf6-4503-8308-a1dac7193277",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    3
+  ]
+}

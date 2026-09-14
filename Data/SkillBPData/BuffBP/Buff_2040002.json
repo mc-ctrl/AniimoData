@@ -1,0 +1,214 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "9753452d-d02e-4a9e-8ed3-583abd44a8c5",
+      "name": "getRoguePersistData",
+      "key": "DefenceHitCnt",
+      "NodeID": 3
+    },
+    "4": {
+      "rValue": {
+        "calcId": 2040002,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 22,
+        "UID": "73c20750-9851-4b06-9bf1-2917e61ce929",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "div",
+      "UID": "63e5503d-086e-4e8d-b119-d64af972ee3a",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "9753452d-d02e-4a9e-8ed3-583abd44a8c5",
+        "name": "getRoguePersistData",
+        "key": "DefenceHitCnt",
+        "NodeID": 3
+      }
+    },
+    "14": {
+      "key": "EquipAttr",
+      "attributeName": "instant_dmg_rate_v",
+      "UID": "740d0651-a5e8-4676-8aca-8ce7129e0f36",
+      "name": "getRogueProp",
+      "NodeID": 14
+    },
+    "22": {
+      "calcId": 2040002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 22,
+      "UID": "73c20750-9851-4b06-9bf1-2917e61ce929",
+      "name": "getParamByLuaConfig"
+    },
+    "21": {
+      "calcId": 2040002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 21,
+      "UID": "ab6dbade-4b7d-407d-82bf-ac02307bd963",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "key": "EquipAttr",
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "calcId": 2040002,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 20,
+            "UID": "0446b9ff-99ae-4814-b34c-fe6a083eb8e2",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "3e85892d-375d-4676-96f6-f068194cb61a",
+          "NodeID": 15,
+          "lValue": {
+            "key": "EquipAttr",
+            "attributeName": "instant_dmg_rate_v",
+            "UID": "740d0651-a5e8-4676-8aca-8ce7129e0f36",
+            "name": "getRogueProp",
+            "NodeID": 14
+          }
+        }
+      },
+      "NodeID": 17,
+      "UID": "d6eca59f-553b-4df1-8d58-96ec3b90d771",
+      "name": "setRogueProp"
+    },
+    "9": {
+      "key": "EquipAttr",
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "rValue": {
+              "calcId": 2040002,
+              "calcType": 1,
+              "paramName": "param1",
+              "NodeID": 19,
+              "UID": "d9138e71-1f14-4e82-afb3-8a25f83c50b0",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "f99a39ce-c975-451d-a4a0-0931fa57de81",
+            "NodeID": 6,
+            "lValue": {
+              "convertType": 1,
+              "name": "toInt",
+              "UID": "b8b86a8c-5a41-4374-b6a6-a62adabfaf7f",
+              "val": {
+                "rValue": {
+                  "calcId": 2040002,
+                  "calcType": 1,
+                  "paramName": "param0",
+                  "NodeID": 22,
+                  "UID": "73c20750-9851-4b06-9bf1-2917e61ce929",
+                  "name": "getParamByLuaConfig"
+                },
+                "name": "div",
+                "UID": "63e5503d-086e-4e8d-b119-d64af972ee3a",
+                "NodeID": 4,
+                "lValue": {
+                  "UID": "9753452d-d02e-4a9e-8ed3-583abd44a8c5",
+                  "name": "getRoguePersistData",
+                  "key": "DefenceHitCnt",
+                  "NodeID": 3
+                }
+              },
+              "NodeID": 5
+            }
+          },
+          "name": "add",
+          "UID": "de96298b-e9f9-40be-9a6b-fd379d75d8fc",
+          "NodeID": 7,
+          "lValue": {
+            "key": "EquipAttr",
+            "attributeName": "instant_dmg_rate_v",
+            "UID": "66bf9411-0d1c-4f59-b519-cc8ec4f329bd",
+            "name": "getRogueProp",
+            "NodeID": 12
+          }
+        }
+      },
+      "NodeID": 9,
+      "UID": "3c0de62a-6aac-4365-ba03-b5af97132a6f",
+      "name": "setRogueProp"
+    },
+    "18": {
+      "key": "DefenceHitCnt",
+      "cumulativeCountActionIds": [
+        17
+      ],
+      "NodeID": 18,
+      "UID": "4f0f3515-ad4e-4db7-8ebe-8645a6dd7e1a",
+      "name": "registerRoguePersistDataChange",
+      "cumulativeCount": {
+        "calcId": 2040002,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 21,
+        "UID": "ab6dbade-4b7d-407d-82bf-ac02307bd963",
+        "name": "getParamByLuaConfig"
+      },
+      "responseNegative": false
+    },
+    "5": {
+      "convertType": 1,
+      "name": "toInt",
+      "UID": "b8b86a8c-5a41-4374-b6a6-a62adabfaf7f",
+      "val": {
+        "rValue": {
+          "calcId": 2040002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 22,
+          "UID": "73c20750-9851-4b06-9bf1-2917e61ce929",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "div",
+        "UID": "63e5503d-086e-4e8d-b119-d64af972ee3a",
+        "NodeID": 4,
+        "lValue": {
+          "UID": "9753452d-d02e-4a9e-8ed3-583abd44a8c5",
+          "name": "getRoguePersistData",
+          "key": "DefenceHitCnt",
+          "NodeID": 3
+        }
+      },
+      "NodeID": 5
+    },
+    "19": {
+      "calcId": 2040002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 19,
+      "UID": "d9138e71-1f14-4e82-afb3-8a25f83c50b0",
+      "name": "getParamByLuaConfig"
+    },
+    "20": {
+      "calcId": 2040002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 20,
+      "UID": "0446b9ff-99ae-4814-b34c-fe6a083eb8e2",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "key": "EquipAttr",
+      "attributeName": "instant_dmg_rate_v",
+      "UID": "66bf9411-0d1c-4f59-b519-cc8ec4f329bd",
+      "name": "getRogueProp",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2040002",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    18
+  ]
+}

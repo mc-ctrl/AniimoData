@@ -1,0 +1,177 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b642e1f2-7423-4a9f-b271-e36dacbdbb60",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_03",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "15": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "714ff321-885c-466d-a8b6-151e1d3afdab",
+      "NodeID": 15,
+      "lValue": {
+        "voxelTag": "waterPool",
+        "radius": 1,
+        "UID": "f7023b81-ae88-4713-94c7-5e6de88b7a69",
+        "NodeID": 14,
+        "name": "getVoxelNum"
+      }
+    },
+    "33": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "2e24b843-1256-4d5c-b3cf-185aba02a779",
+      "NodeID": 33,
+      "lValue": {
+        "key": "waterPool",
+        "name": "getCacheVal",
+        "UID": "e7351ce9-7dcd-4d84-b287-da9badf2326a",
+        "target": "OWNER",
+        "NodeID": 32
+      }
+    },
+    "16": {
+      "UID": "1c133161-9633-427c-9410-4a638e4d713d",
+      "conditionIds": [
+        15,
+        33
+      ],
+      "name": "conditionOr",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "17": {
+      "actionIds": [
+        20,
+        31
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "678fcc56-669f-4ea6-9525-a9c067a810ac",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 17
+    },
+    "31": {
+      "petTarget": "OWNER",
+      "triggerId": 20002061,
+      "name": "onEntityTrigger",
+      "UID": "c3b688c8-056f-4dc9-b9fb-94adfd45f8aa",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "23": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.02
+      },
+      "name": "calcResult",
+      "UID": "f1baec2d-f231-4352-9aef-a56237dfcada",
+      "target": "TARGET",
+      "NodeID": 23
+    },
+    "13": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 20,
+      "NodeID": 13,
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886",
+      "onUpdate": {
+        "actionIds": [
+          11
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          11
+        ]
+      }
+    },
+    "11": {
+      "actionIds": [
+        17
+      ],
+      "name": "actOnTargets",
+      "UID": "d8549f80-6715-4b70-8fbf-b62d96a71f01",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 11
+    },
+    "20": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.024
+      },
+      "name": "calcResult",
+      "UID": "652875c1-dd96-478a-8b5b-e7249c5bf3d2",
+      "target": "TARGET",
+      "NodeID": 20
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Grass",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2104503",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    13,
+    8,
+    4
+  ],
+  "layer": "Base",
+  "length": 9999
+}

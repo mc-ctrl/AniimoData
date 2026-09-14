@@ -1,0 +1,127 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "13": {
+      "UID": "7ab38dfb-3eb9-4bff-bc81-23c9c5f6efdc",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "a61c2a7b-ad56-44d7-9ad4-05df317d54c9",
+      "tag": 0,
+      "name": "isAbilityEffectTag",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "ed7b1eab-9c65-43ea-99c9-f74e39788bb5",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "4f354b1a-0173-4ac0-93dd-b9da7f64705e",
+      "name": "removeEvent",
+      "eventName": "onAttack",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "c3facbac-cc3f-483f-857f-16be821be327",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "21": {
+      "key": "CastAttackSkill",
+      "duration": 10,
+      "actionIds": [
+        19
+      ],
+      "NodeID": 21,
+      "UID": "7488242b-a18b-4cd9-8785-0969773c32fb",
+      "name": "addTimer"
+    },
+    "17": {
+      "target": "CURPET",
+      "duration": 15,
+      "buffId": 2117101,
+      "NodeID": 17,
+      "UID": "382c5600-0254-4e9b-b8a7-caa40e64de78",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "9": {
+      "unsummonValid": false,
+      "actionIds": [
+        7,
+        13
+      ],
+      "name": "registerGroupEvent",
+      "UID": "45482a17-4a59-4056-a81d-987fd64fac1b",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "583e72fb-9d2d-4bae-b624-b3cf95bfee92",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18
+    },
+    "2": {
+      "UID": "f0bbb3d9-9ee7-4bc6-bceb-b1eb182839f1",
+      "name": "removeTimer",
+      "key": "CastAttackSkill",
+      "NodeID": 2
+    },
+    "19": {
+      "unsummonValid": false,
+      "actionIds": [
+        18
+      ],
+      "name": "registerGroupEvent",
+      "UID": "2f17a6eb-620a-4855-bff3-1408e2ac992d",
+      "NodeID": 19
+    },
+    "6": {
+      "actionIds": [
+        2,
+        21
+      ],
+      "conditionActionIds": [
+        10,
+        14
+      ],
+      "UID": "7ce69151-2d51-4b5a-9b1f-7a81a2e7f1e7",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "12": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        10,
+        14
+      ],
+      "UID": "5f75b198-e548-4184-86fb-f7c40440a4f8",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2071003",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    2,
+    21
+  ]
+}

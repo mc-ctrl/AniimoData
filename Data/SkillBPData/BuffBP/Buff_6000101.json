@@ -1,0 +1,72 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6000101",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "7a37d3f5-0d77-4cfd-b62d-5b0282b66b23",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "07c10d46-7560-4270-bfc6-11572c86cc2d",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "21d812db-1cc2-4301-80f8-9ee57b99768a",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "bd71d57f-75b8-47e6-8827-2fdede5ea569",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "5": {
+      "buffId": 6000101,
+      "name": "removeBuff",
+      "UID": "0b368351-6f28-4621-918e-60d0750a3aee",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "8": {
+      "name": "calcResult",
+      "UID": "618f4b63-09fc-473a-a14d-478c87811b2d",
+      "target": "OWNER",
+      "NodeID": 8,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 6000101
+      }
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffDestroyIds": [
+    10
+  ],
+  "onBuffStartIds": [
+    3,
+    6,
+    9
+  ]
+}

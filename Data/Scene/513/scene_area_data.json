@@ -1,0 +1,398 @@
+{
+  "69525352": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -89.67,
+      -39.87,
+      -89.6,
+      -59.49,
+      -69.8,
+      -59.33,
+      -69.76,
+      -39.71
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 69525352,
+    "logics": {},
+    "height": 10,
+    "sandboxId": 69524816,
+    "position": [
+      -82.22,
+      -0.44,
+      -29.49
+    ],
+    "pointType": 1,
+    "name": "区域_69525352",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "70392235": {
+    "name": "1F",
+    "areaPoints": [
+      -19.22,
+      -50.34,
+      -19.27,
+      -38.06,
+      -7.45,
+      -38.13,
+      -7.31,
+      -50.34
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 70392235,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              -1,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {}
+      }
+    ],
+    "height": 5,
+    "sandboxId": 69524816,
+    "position": [
+      -19.66,
+      3,
+      -50.33
+    ],
+    "pointType": 1
+  },
+  "70392362": {
+    "name": "2FA1",
+    "areaPoints": [
+      -19.83,
+      -37.62,
+      -30.95,
+      -38.13,
+      -30.97,
+      -49.04,
+      -19.67,
+      -49.09
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 70392362,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              -2,
+              1
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {}
+      }
+    ],
+    "height": 5,
+    "sandboxId": 69524816,
+    "position": [
+      -22.05,
+      8,
+      -35.74
+    ],
+    "pointType": 1
+  },
+  "70392466": {
+    "name": "2FA2",
+    "areaPoints": [
+      -30.98,
+      -49.7,
+      -19.53,
+      -49.65,
+      -19.58,
+      -61.27,
+      -30.99,
+      -60.98
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 70392466,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              -2,
+              2
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {}
+      }
+    ],
+    "height": 5,
+    "targetPositionData": {
+      "position": [
+        -31.56,
+        8,
+        -55.11
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "qixuan.he"
+    },
+    "sandboxId": 69524816,
+    "position": [
+      -31.56,
+      8,
+      -55.11
+    ],
+    "pointType": 1
+  },
+  "70392548": {
+    "name": "3F",
+    "areaPoints": [
+      -18.9,
+      -61.25,
+      -19.21,
+      -49.62,
+      -8.32,
+      -49.51,
+      -8.37,
+      -61.19
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 70392548,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              -3,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {}
+      }
+    ],
+    "height": 5,
+    "sandboxId": 69524816,
+    "position": [
+      -12.6,
+      13,
+      -64.66
+    ],
+    "pointType": 1
+  },
+  "69525019": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaPoints": [
+      -59.44,
+      -10.3,
+      -59.41,
+      -30.12,
+      -39.59,
+      -30.1,
+      -39.76,
+      -10.26
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 69525019,
+    "logics": {},
+    "height": 10,
+    "sandboxId": 69524816,
+    "position": [
+      -53.37,
+      0.5,
+      -13.79
+    ],
+    "pointType": 1,
+    "name": "区域_69525019",
+    "AreaLoadTypeNoNormal": 2
+  },
+  "70392765": {
+    "name": "地面",
+    "areaPoints": [
+      0.23,
+      -31.79,
+      -36.97,
+      -32.06,
+      -36.87,
+      -65.61,
+      0.21,
+      -65.4
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 70392765,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {}
+      }
+    ],
+    "height": 2.5,
+    "sandboxId": 69524816,
+    "position": [
+      -7.06,
+      0.5,
+      -51.59
+    ],
+    "pointType": 1
+  },
+  "69525147": {
+    "airWallAssetUrl": "$P_Item_SceneObject_Beginning_Airwall.prefab",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaPoints": [
+      -29.79,
+      -10.41,
+      -29.8,
+      -29.85,
+      -10,
+      -29.98,
+      -10.04,
+      -10.21
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 69525147,
+    "logics": {},
+    "height": 3,
+    "sandboxId": 69524816,
+    "position": [
+      -19.61,
+      -1.8,
+      -17.72
+    ],
+    "pointType": 1,
+    "name": "区域_69525147",
+    "AreaLoadTypeNoNormal": 2
+  },
+  "69524825": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaPoints": [
+      -89.85,
+      -10.34,
+      -89.85,
+      -29.52,
+      -70.11,
+      -29.59,
+      -70.03,
+      -10.07
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 69524825,
+    "logics": {},
+    "height": 10.31,
+    "sandboxId": 69524816,
+    "position": [
+      -83.41,
+      0.5,
+      -13.28
+    ],
+    "pointType": 1,
+    "name": "区域_69524825",
+    "AreaLoadTypeNoNormal": 2
+  }
+}

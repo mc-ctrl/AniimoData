@@ -1,0 +1,111 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "13": {
+      "UID": "7ab38dfb-3eb9-4bff-bc81-23c9c5f6efdc",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "a61c2a7b-ad56-44d7-9ad4-05df317d54c9",
+      "tag": 0,
+      "name": "isAbilityEffectTag",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "ed7b1eab-9c65-43ea-99c9-f74e39788bb5",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 10
+    },
+    "15": {
+      "target": "CURPET",
+      "duration": -1,
+      "buffId": 1000002011,
+      "NodeID": 15,
+      "UID": "6f615565-d753-493a-bb0e-3ad5d49ed778",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "UID": "c3facbac-cc3f-483f-857f-16be821be327",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "key": "CastAttackSkill",
+      "duration": 10,
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16,
+      "UID": "7488242b-a18b-4cd9-8785-0969773c32fb",
+      "name": "addTimer"
+    },
+    "17": {
+      "buffId": 1000002011,
+      "name": "removeBuff",
+      "UID": "6a482e05-15fe-4a49-90e3-92617b44b9d5",
+      "target": "CURPET",
+      "NodeID": 17
+    },
+    "9": {
+      "unsummonValid": false,
+      "actionIds": [
+        7,
+        13
+      ],
+      "name": "registerGroupEvent",
+      "UID": "45482a17-4a59-4056-a81d-987fd64fac1b",
+      "NodeID": 9
+    },
+    "2": {
+      "UID": "f0bbb3d9-9ee7-4bc6-bceb-b1eb182839f1",
+      "name": "removeTimer",
+      "key": "CastAttackSkill",
+      "NodeID": 2
+    },
+    "6": {
+      "actionIds": [
+        2,
+        16
+      ],
+      "conditionActionIds": [
+        10,
+        14
+      ],
+      "UID": "7ce69151-2d51-4b5a-9b1f-7a81a2e7f1e7",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "12": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        10,
+        14
+      ],
+      "UID": "5f75b198-e548-4184-86fb-f7c40440a4f8",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2072001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    2,
+    16
+  ]
+}

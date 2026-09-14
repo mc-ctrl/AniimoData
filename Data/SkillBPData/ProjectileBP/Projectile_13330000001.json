@@ -1,0 +1,100 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_13330000",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10331_Attack01_Bullet",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "duration": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "defaultHitSoundType": "s",
+  "onProjectileHitIds": [
+    121
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "125": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a57e5d88-6481-4046-be2e-aa0ef19adf1f",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1.01,
+      "NodeID": 125
+    },
+    "119": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13330000,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "15415306-a1c2-44ab-a8d2-d66012c9ebc0",
+      "target": "TARGET",
+      "NodeID": 119,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt"
+      }
+    },
+    "121": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 119,
+      "NodeID": 121,
+      "UID": "04454e2d-01c4-41ab-b79f-4aa10f8d04d8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        119,
+        125
+      ]
+    }
+  },
+  "tickInterval": 0.01,
+  "calcResultNodeId": 119,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

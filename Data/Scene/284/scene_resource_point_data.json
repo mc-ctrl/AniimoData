@@ -1,0 +1,44 @@
+{
+  "64006654": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -243.24,
+      0.1,
+      5.9
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 63976941,
+    "id": 64006654,
+    "yaw": 0,
+    "templateId": 56651994,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "64168335": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -257.18,
+      0.1,
+      7.68
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 63976941,
+    "id": 64168335,
+    "yaw": 0,
+    "templateId": 58289414,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  }
+}

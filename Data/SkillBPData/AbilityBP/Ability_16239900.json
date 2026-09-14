@@ -1,0 +1,47 @@
+{
+  "cutSceneDuration": 1.6,
+  "NodeID": 1,
+  "UID": "67fcaffd-ea61-4085-8e42-c89fb077516a",
+  "abilityParamId": 10301340,
+  "abilityType": 4,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 16239900001,
+      "name": "setCombatActionTimeline",
+      "UID": "771250d3-08b2-4642-896f-9c97571d5ee1",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10623_Skill_OutEx_Penshe001",
+    "Eff_Parmon_10623_Skill_OutEx_Bubble_j001",
+    "Eff_Parmon_10623_Skill_Prize_01",
+    "Eff_Parmon_10623_Skill_OutEx_BigBoom001",
+    "Eff_Parmon_10623_Skill_OutEx_dandao02",
+    "Eff_Parmon_10623_Skill_OutEx_Boom001_j01",
+    "Eff_Parmon_10623_Skill_OutEx_Boom001_j02",
+    "Eff_Parmon_10623_Skill_OutEx_Boom001_j03",
+    "Eff_Parmon_10623_Skill_OutEx_Boom001_j04",
+    "Eff_Parmon_10623_Skill_OutEx_Boom001_j05"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "BPName": "ability_16239900",
+  "preloadCutScenes": [
+    "$Parmon_10623_Skill_Ex_Timeline.prefab"
+  ]
+}

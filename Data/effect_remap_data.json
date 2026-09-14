@@ -1,0 +1,10 @@
+{
+  "Common_Eff_Skill_Headbutt": {
+    "1002": {
+      "EffDataId": "Eff_Parmon_10051_Skill_Headbutt"
+    },
+    "4001": {
+      "EffDataId": "Eff_Parmon_10023_Skill_Headbutt"
+    }
+  }
+}

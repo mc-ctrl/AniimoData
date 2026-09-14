@@ -1,0 +1,495 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4002030",
+  "calcInfoByLuaConfig": {
+    "id": 4002030,
+    "type": 1,
+    "final_taken_dmg_inc_rate_v": "param0"
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "isDeathKeep": true,
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "name": "calcResult",
+      "UID": "e34fee8e-f7d1-4ca5-9c07-a4ba094ea0e4",
+      "target": "TARGET",
+      "NodeID": 37,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param2",
+        "type": 1,
+        "id": 4002030
+      }
+    },
+    "39": {
+      "buffId": 4002030,
+      "name": "removeBuff",
+      "UID": "5ca07cea-0ac3-4f26-9595-2973679246ec",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "actionIds": [
+        39
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "f3ed2617-a693-4649-9f5b-65251989bc69",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "86798548-5364-4108-a99e-4e89f7f606d6",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Dance",
+      "speed": 1,
+      "NodeID": 41
+    },
+    "42": {
+      "UID": "f919370d-47c8-497d-bbf9-741487efd3cb",
+      "name": "callClientAction",
+      "actionIds": [
+        41
+      ],
+      "NodeID": 42
+    },
+    "43": {
+      "calcId": 4002030,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 43,
+      "UID": "af4b0d83-e33d-42f9-bfa3-c2accb7a7640",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 4002031,
+      "NodeID": 4,
+      "UID": "d359cfbb-df6e-4b0b-947f-ba316ab3f463",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "64": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "6603a56f-642b-404b-bf2f-1f84a2036883",
+        "target": "TARGET",
+        "NodeID": 63,
+        "attributeName": "hp_max_cur"
+      },
+      "name": "div",
+      "UID": "3b03e996-ab21-4774-96ab-7f43f4d5af16",
+      "NodeID": 64,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "cf320d71-8303-45fb-a915-2db9caad6a4e",
+        "target": "TARGET",
+        "NodeID": 65,
+        "attributeName": "hp_cur"
+      }
+    },
+    "61": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "b336ed3d-2955-4fcf-b5d6-eacf6281a22d",
+      "NodeID": 61,
+      "lValue": {
+        "key": "fengxian",
+        "name": "getServerCacheVal",
+        "UID": "4d795e88-470d-4665-bd19-9869e82c9135",
+        "target": "OWNER",
+        "NodeID": 60
+      }
+    },
+    "5": {
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "3ea4bbea-39b9-46c9-885f-bdc586c86e55",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        4
+      ]
+    },
+    "59": {
+      "key": "fengxian",
+      "name": "setServerCacheVal",
+      "UID": "5b94deb3-330d-441c-9936-fb727ef13d97",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 59
+    },
+    "12": {
+      "actionIds": [
+        59
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "a9d026f0-71a0-44e2-9835-b768469f800e",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "doPetsActions",
+      "UID": "7d4a1916-4a47-4859-8a97-1cf09c11cd16",
+      "target": "TARGET",
+      "NodeID": 6
+    },
+    "56": {
+      "name": "stopEffectStr",
+      "UID": "43e9ded1-a696-4fe2-9486-341385dd38b5",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5949917b-346d-46b6-90b9-8326a69dec1a",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 55
+    },
+    "7": {
+      "UID": "db105164-3514-4dc9-beb3-1a53fedd65b5",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "53": {
+      "calcId": 4002030,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 53,
+      "UID": "30c2a4f7-d636-4d92-a5e8-4a0dcff1ecb7",
+      "name": "getParamByLuaConfig"
+    },
+    "52": {
+      "rValue": {
+        "rValue": -1,
+        "name": "multiply",
+        "UID": "d1537fc8-8f89-4068-93de-c3178c1f0c4e",
+        "NodeID": 54,
+        "lValue": {
+          "calcId": 4002030,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 53,
+          "UID": "30c2a4f7-d636-4d92-a5e8-4a0dcff1ecb7",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "greater",
+      "UID": "f7e14158-95d4-442c-bda4-4db594d7ea3b",
+      "NodeID": 52,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "aaa642a5-34bd-49ea-a3fa-8184150ec027",
+          "target": "TARGET",
+          "NodeID": 50,
+          "attributeName": "hp_max_cur"
+        },
+        "name": "div",
+        "UID": "3abb2c79-ee75-4738-a835-3b88c0cfcc62",
+        "NodeID": 51,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "f53e5c58-0364-4fa3-aa11-5b1a5bcf40e7",
+          "target": "TARGET",
+          "NodeID": 62,
+          "attributeName": "hp_cur"
+        }
+      }
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "fbb524c1-4be2-4822-b875-bc41bff639f0",
+      "effectId": "Eff_Parmon_Common_BossRush_FightStart_01",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "51": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "aaa642a5-34bd-49ea-a3fa-8184150ec027",
+        "target": "TARGET",
+        "NodeID": 50,
+        "attributeName": "hp_max_cur"
+      },
+      "name": "div",
+      "UID": "3abb2c79-ee75-4738-a835-3b88c0cfcc62",
+      "NodeID": 51,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "f53e5c58-0364-4fa3-aa11-5b1a5bcf40e7",
+        "target": "TARGET",
+        "NodeID": 62,
+        "attributeName": "hp_cur"
+      }
+    },
+    "16": {
+      "UID": "62a04542-1f25-4390-b9be-05e60bcb54e4",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 16
+    },
+    "10": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "0ce8cc92-fcfd-4528-a580-2d06312551cd",
+      "NodeID": 10,
+      "lValue": {
+        "UID": "0617735e-687e-4ea9-ad91-f7d460bf609c",
+        "target": "TARGET",
+        "name": "getHpRatio",
+        "NodeID": 9
+      }
+    },
+    "11": {
+      "UID": "5659058a-d5fb-445e-b4ee-99b3a6a7d7cb",
+      "conditionIds": [
+        10,
+        52
+      ],
+      "name": "conditionAnd",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "2c4fcd98-5262-44b0-9f00-b2b8edc8e7e4",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "buffId": 4002030,
+      "name": "hasBuff",
+      "UID": "8c3fa330-d057-479e-b056-c3ad70feccad",
+      "target": "TARGET",
+      "NodeID": 21
+    },
+    "22": {
+      "actionIds": [
+        42,
+        37
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "75664048-6271-463b-9c02-e41886e25726",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        46
+      ],
+      "NodeID": 22
+    },
+    "23": {
+      "actionIds": [
+        22
+      ],
+      "name": "doPetsActions",
+      "UID": "821a2513-0467-4642-b28b-f071c6c0a899",
+      "target": "TARGET",
+      "NodeID": 23
+    },
+    "45": {
+      "rValue": {
+        "rValue": -1,
+        "name": "multiply",
+        "UID": "138e2c41-9dc9-40a3-824e-4ddc45603417",
+        "NodeID": 44,
+        "lValue": {
+          "calcId": 4002030,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 43,
+          "UID": "af4b0d83-e33d-42f9-bfa3-c2accb7a7640",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "greater",
+      "UID": "0665b2de-7de6-4c6b-9bb7-b983ff5791d8",
+      "NodeID": 45,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "6603a56f-642b-404b-bf2f-1f84a2036883",
+          "target": "TARGET",
+          "NodeID": 63,
+          "attributeName": "hp_max_cur"
+        },
+        "name": "div",
+        "UID": "3b03e996-ab21-4774-96ab-7f43f4d5af16",
+        "NodeID": 64,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "cf320d71-8303-45fb-a915-2db9caad6a4e",
+          "target": "TARGET",
+          "NodeID": 65,
+          "attributeName": "hp_cur"
+        }
+      }
+    },
+    "14": {
+      "actionIds": [
+        12
+      ],
+      "name": "doPetsActions",
+      "UID": "53f99015-d581-4f51-91eb-cd052ed46086",
+      "target": "TARGET",
+      "NodeID": 14
+    },
+    "46": {
+      "actionIds": [
+        49
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "54a52c1c-c9ff-4907-8403-9e9fadf6d324",
+      "name": "doActionsByConditions",
+      "NodeID": 46
+    },
+    "19": {
+      "actionIds": [
+        57,
+        16,
+        26
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "34f8369d-e5bf-49db-886e-e7c688331269",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "57": {
+      "key": "fengxian",
+      "name": "setServerCacheVal",
+      "UID": "01376701-1be2-4956-8aea-482bd19eff73",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 57
+    },
+    "26": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "e95be5b9-5e22-4ff3-ab09-7756eba5f276",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "27": {
+      "buffId": 4002030,
+      "name": "hasBuff",
+      "UID": "0b76470e-0e94-4049-9834-5f82d8b843b0",
+      "target": "TARGET",
+      "NodeID": 27
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f17a57f0-beff-4fbc-8c72-7dcc563aafbf",
+      "effectId": "Eff_Parmon_Common_BossRush_FightStart_01",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "49": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": {
+          "rValue": -1,
+          "name": "multiply",
+          "UID": "138e2c41-9dc9-40a3-824e-4ddc45603417",
+          "NodeID": 44,
+          "lValue": {
+            "calcId": 4002030,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 43,
+            "UID": "af4b0d83-e33d-42f9-bfa3-c2accb7a7640",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "89eeacb1-1541-439e-8b01-45ddcf146f81",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 49
+    },
+    "30": {
+      "UID": "0c48a73e-ff28-4aa1-a3d2-ac61001a6ba8",
+      "name": "callClientAction",
+      "actionIds": [
+        28,
+        55
+      ],
+      "NodeID": 30
+    },
+    "35": {
+      "UID": "611a54ed-e2fc-4fb8-b8b4-dcc9a8f4731e",
+      "name": "isGoingBeKilled",
+      "NodeID": 35
+    },
+    "33": {
+      "UID": "e63f382c-1f2a-40b4-b478-8a5a68366555",
+      "name": "callClientAction",
+      "actionIds": [
+        31,
+        56,
+        34
+      ],
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "95a16c0b-b35d-4f52-bdfc-0763598e1639",
+      "effectId": "Eff_Parmon_Common_BossRush_FightEnd_01",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "24": {
+      "UID": "b2842769-a554-42cc-9825-f7bc8dbecd62",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        23
+      ],
+      "NodeID": 24
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    33
+  ],
+  "onBuffStartIds": [
+    40,
+    7,
+    20,
+    30
+  ]
+}

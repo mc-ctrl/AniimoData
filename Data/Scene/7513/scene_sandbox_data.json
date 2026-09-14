@@ -1,0 +1,595 @@
+{
+  "91332582": {
+    "owner": "陈智豪",
+    "chunk": 1019874,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91332607,
+    "levelItems": {
+      "91336742": {
+        "majorCompId": 75060209,
+        "owner": "陈智豪",
+        "EditorName": "2号宝箱出现",
+        "position": [
+          -0.6,
+          -0.7,
+          -1.72
+        ],
+        "rotation": [
+          0,
+          144.16,
+          0
+        ],
+        "id": 91336742,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91336721,
+            "flyToPlayer": false
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91336744": {
+        "majorCompId": 75060209,
+        "owner": "陈智豪",
+        "EditorName": "3号宝箱出现",
+        "position": [
+          10.23,
+          -0.3,
+          -14.87
+        ],
+        "rotation": [
+          0,
+          144.16,
+          0
+        ],
+        "id": 91336744,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91336723,
+            "flyToPlayer": false
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91332585": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "LevelOfViolencE",
+        "position": [
+          11.96,
+          0.59,
+          -20.71
+        ],
+        "rotation": [
+          0,
+          255.01,
+          0
+        ],
+        "id": 91332585,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91335998": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "二号房子检测特效",
+        "position": [
+          0.75,
+          1.02,
+          -3.01
+        ],
+        "rotation": [
+          0,
+          325.2,
+          0
+        ],
+        "id": 91335998,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "91335998_52068346",
+            "detectType": 1073741827
+          },
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          2.8,
+          2.72,
+          3
+        ],
+        "isActive": true
+      },
+      "91336120": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          0.38,
+          -0.7,
+          2.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91336120,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336130": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Prefab_Container (1)",
+        "position": [
+          0.38,
+          -0.68,
+          2.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91336130,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336134": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Prefab_Container (4)",
+        "position": [
+          7.54,
+          2.32,
+          0.05
+        ],
+        "rotation": [
+          0,
+          62.13,
+          0
+        ],
+        "id": 91336134,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336135": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "------2号房子特效分割线-----",
+        "position": [
+          -5.35,
+          1.82,
+          -6.65
+        ],
+        "rotation": [
+          0,
+          244.16,
+          0
+        ],
+        "id": 91336135,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336155": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否创建2号房子",
+        "position": [
+          9.19,
+          -0.41,
+          -5.29
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91336155,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91336574": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "三号房子检测特效",
+        "position": [
+          9.37,
+          1.02,
+          -13.81
+        ],
+        "rotation": [
+          0,
+          325.2,
+          0
+        ],
+        "id": 91336574,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "91336574_52068346",
+            "detectType": 1073741827
+          },
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          2.8,
+          2.72,
+          3
+        ],
+        "isActive": true
+      },
+      "91336597": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Prefab_Container (5)",
+        "position": [
+          16.58,
+          2.85,
+          -10.13
+        ],
+        "rotation": [
+          0,
+          62.13,
+          0
+        ],
+        "id": 91336597,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336598": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Prefab_Container (3)",
+        "position": [
+          9.42,
+          -0.15,
+          -7.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91336598,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336599": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Prefab_Container (2)",
+        "position": [
+          9.42,
+          -0.17,
+          -7.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91336599,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336600": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "------3号房子特效分割线----- (1)",
+        "position": [
+          3.69,
+          2.35,
+          -16.83
+        ],
+        "rotation": [
+          0,
+          244.16,
+          0
+        ],
+        "id": 91336600,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Item_Temple_TempleEntrance_ShowUp_01.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91336632": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否创建3号房子 ",
+        "position": [
+          9.19,
+          -0.41,
+          -5.29
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91336632,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91336736": {
+        "majorCompId": 75060209,
+        "owner": "陈智豪",
+        "EditorName": "1号宝箱出现",
+        "position": [
+          11.1,
+          -0.25,
+          3.39
+        ],
+        "rotation": [
+          0,
+          50.08,
+          0
+        ],
+        "id": 91336736,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91336717,
+            "flyToPlayer": false
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91342515": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          6.38,
+          39.97,
+          -12.14
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91342515,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          33.18,
+          1,
+          34.91
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "13号洞穴玩法",
+    "spawners": [
+      91332601,
+      91332605,
+      91334660,
+      91334944,
+      91334948,
+      91335460,
+      91336012,
+      91336169,
+      91336192,
+      91336471,
+      91336480,
+      91336578,
+      91336579,
+      91336584,
+      91336594,
+      91336662,
+      91336718,
+      91336845,
+      91336949,
+      91336968,
+      91336992,
+      91350097
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7513/Sandbox_91332582_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91332582,
+    "markIconSpawnerId": 0,
+    "position": [
+      10.14,
+      12.32,
+      -16.24
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e900ab44-ca45-437a-aca9-c51bf1f50482",
+      "effectId": "Eff_Parmon_10211_Skill_MagicFlower_Body",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "10": {
+      "timelineTag": "",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_MagicFlower"
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13,
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.54,
+      "NodeID": 15,
+      "UID": "cd060f9e-9680-46be-b220-914abce85d33"
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e75e63b4-0a2b-4845-b4c9-819b5b747c0f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10211_Skill_MagicFlower",
+      "NodeID": 16
+    },
+    "26": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": 0.005,
+          "name": "multiply",
+          "UID": "6eb219b9-5ac3-4ebe-a498-5d64ddf2f0c9",
+          "NodeID": 24,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "683d7f7a-9d08-483b-9b5b-bca893159d77",
+            "target": {
+              "UID": "d4a01b9d-8147-4b78-90bf-7c55db8598d5",
+              "target": "MASTER",
+              "name": "getTargetId",
+              "NodeID": 22
+            },
+            "NodeID": 23,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "d4290bb0-cbf7-4bc7-af3e-346a68f38cdd",
+      "target": "MASTER",
+      "NodeID": 26
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a814c213-6b0a-421c-82e5-e804d7aa005c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10045_Skill_FlowerCircle_Cure01",
+      "NodeID": 18
+    },
+    "21": {
+      "offsetXYZ": [
+        0,
+        0.3,
+        0
+      ],
+      "target": "MASTER",
+      "name": "playEffectStr",
+      "UID": "182a211d-3594-41d3-8098-4c7be539e018",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_05",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 5,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          26,
+          21,
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.83,
+      "NodeID": 20,
+      "UID": "ba743554-c6f6-4d62-be74-e8173a3ab014"
+    },
+    "12": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12110300",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    12,
+    15,
+    20
+  ],
+  "layer": "Base",
+  "length": 3.69
+}

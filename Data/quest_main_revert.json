@@ -1,0 +1,1329 @@
+{
+  "4702003": {
+    "catalogId": 301,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 122001
+  },
+  "4702120": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4702121": {
+    "catalogId": 401,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 122001
+  },
+  "4702123": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4702124": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4702127": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4702129": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704029": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704033": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704034": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704035": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704036": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704039": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704040": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704041": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704042": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704043": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704044": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704050": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4704051": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4706010": {
+    "catalogId": 301,
+    "chapterId": 7,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 107001
+  },
+  "4706067": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4706076": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4706077": {
+    "catalogId": 401,
+    "chapterId": 7,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 107001
+  },
+  "4706080": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4707020": {
+    "catalogId": 301,
+    "chapterId": 12,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 112001
+  },
+  "4707032": {
+    "catalogId": 401,
+    "chapterId": 12,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 112001
+  },
+  "4709001": {
+    "catalogId": 301,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 116001
+  },
+  "4709017": {
+    "catalogId": 301,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 116002
+  },
+  "4709032": {
+    "catalogId": 301,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 116003
+  },
+  "4709079": {
+    "catalogId": 301,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 116004
+  },
+  "4709081": {
+    "catalogId": 401,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 116001
+  },
+  "4709082": {
+    "catalogId": 401,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 116003
+  },
+  "4709085": {
+    "catalogId": 401,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 116002
+  },
+  "4709093": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4709094": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "4709100": {
+    "catalogId": 401,
+    "chapterId": 16,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 116004
+  },
+  "4710001": {
+    "catalogId": 301,
+    "chapterId": 11,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111001
+  },
+  "4710016": {
+    "catalogId": 401,
+    "chapterId": 11,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111001
+  },
+  "4710018": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111002
+  },
+  "4710020": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111002
+  },
+  "4710021": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111003
+  },
+  "4710024": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111003
+  },
+  "4710025": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111004
+  },
+  "4710028": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111004
+  },
+  "4710029": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111005
+  },
+  "4710032": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111005
+  },
+  "4710033": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111006
+  },
+  "4710036": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111006
+  },
+  "4710037": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111007
+  },
+  "4710040": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111007
+  },
+  "4710041": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111008
+  },
+  "4710044": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111008
+  },
+  "4710045": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111009
+  },
+  "4710048": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111009
+  },
+  "4710049": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111010
+  },
+  "4710052": {
+    "catalogId": 301,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 111011
+  },
+  "4710055": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111010
+  },
+  "4710056": {
+    "catalogId": 401,
+    "chapterId": 27,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 111011
+  },
+  "5101004": {
+    "catalogId": 301,
+    "chapterId": 9,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 109001
+  },
+  "5101103": {
+    "catalogId": 401,
+    "chapterId": 9,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 109001
+  },
+  "5103001": {
+    "catalogId": 301,
+    "chapterId": 9,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 109002
+  },
+  "5103008": {
+    "catalogId": 401,
+    "chapterId": 9,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 109002
+  },
+  "5502001": {
+    "catalogId": 301,
+    "chapterId": 127,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1270001
+  },
+  "5503001": {
+    "catalogId": 301,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1290001
+  },
+  "5503013": {
+    "catalogId": 301,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1290002
+  },
+  "5503014": {
+    "catalogId": 301,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1290003
+  },
+  "5503015": {
+    "catalogId": 301,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1290004
+  },
+  "5503028": {
+    "catalogId": 401,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 1290001
+  },
+  "5503029": {
+    "catalogId": 401,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 1290002
+  },
+  "5503030": {
+    "catalogId": 401,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 1290003
+  },
+  "5503031": {
+    "catalogId": 401,
+    "chapterId": 129,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 1290004
+  },
+  "5608001": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150003
+  },
+  "5701082": {
+    "catalogId": 101,
+    "chapterId": 3,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102006
+  },
+  "5701132": {
+    "catalogId": 101,
+    "chapterId": 3,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102008
+  },
+  "5701134": {
+    "catalogId": 101,
+    "chapterId": 120,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102009
+  },
+  "5701140": {
+    "catalogId": 101,
+    "chapterId": 3,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102007
+  },
+  "6201001": {
+    "catalogId": 101,
+    "chapterId": 121,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102012
+  },
+  "6202001": {
+    "catalogId": 101,
+    "chapterId": 121,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102022
+  },
+  "6505002": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120001
+  },
+  "6510001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120020
+  },
+  "6510009": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120003
+  },
+  "6511001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120021
+  },
+  "6511019": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120005
+  },
+  "6512002": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120006
+  },
+  "6512011": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120007
+  },
+  "6512037": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120023
+  },
+  "6512038": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120024
+  },
+  "6513001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120008
+  },
+  "6513038": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120009
+  },
+  "6513081": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120030
+  },
+  "6513082": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120031
+  },
+  "6514001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120010
+  },
+  "6514021": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120011
+  },
+  "6514033": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120025
+  },
+  "6514034": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120026
+  },
+  "6515001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120012
+  },
+  "6515010": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120033
+  },
+  "6517001": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150002
+  },
+  "6518001": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150004
+  },
+  "6519001": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330001
+  },
+  "6519028": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330002
+  },
+  "6519030": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330003
+  },
+  "6519031": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330004
+  },
+  "6519032": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330005
+  },
+  "6519033": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330006
+  },
+  "6519044": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330007
+  },
+  "6519045": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330008
+  },
+  "6519046": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330009
+  },
+  "7706001": {
+    "catalogId": 301,
+    "chapterId": 132,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1320001
+  },
+  "7705002": {
+    "catalogId": 301,
+    "chapterId": 131,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1310001
+  },
+  "7704002": {
+    "catalogId": 301,
+    "chapterId": 130,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1300001
+  },
+  "7703001": {
+    "catalogId": 301,
+    "chapterId": 128,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1280001
+  },
+  "7702002": {
+    "catalogId": 301,
+    "chapterId": 119,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1190001
+  },
+  "7701001": {
+    "catalogId": 301,
+    "chapterId": 118,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1180001
+  },
+  "6802001": {
+    "catalogId": 301,
+    "chapterId": 114,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 1140001
+  },
+  "6711011": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150008
+  },
+  "6711001": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150007
+  },
+  "6710001": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150006
+  },
+  "6523015": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120032
+  },
+  "6523001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120017
+  },
+  "6522009": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120029
+  },
+  "6522001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120016
+  },
+  "6521020": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120028
+  },
+  "6521019": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120027
+  },
+  "6521002": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120015
+  },
+  "6521001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120014
+  },
+  "1908007": {
+    "catalogId": 301,
+    "chapterId": 13,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 104003
+  },
+  "2602001": {
+    "catalogId": 101,
+    "chapterId": 1,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 101001
+  },
+  "2602112": {
+    "catalogId": 101,
+    "chapterId": 1,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 101002
+  },
+  "2602114": {
+    "catalogId": 101,
+    "chapterId": 1,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 101003
+  },
+  "2607001": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150001
+  },
+  "2608001": {
+    "catalogId": 102,
+    "chapterId": 115,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 1150005
+  },
+  "2620003": {
+    "catalogId": 102,
+    "chapterId": 200,
+    "chapterType": 2,
+    "mainType": 1,
+    "sectionId": 200001
+  },
+  "3002030": {
+    "catalogId": 301,
+    "chapterId": 17,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 117001
+  },
+  "3002037": {
+    "catalogId": 401,
+    "chapterId": 17,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 117001
+  },
+  "3502001": {
+    "catalogId": 101,
+    "chapterId": 2,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 101005
+  },
+  "3502110": {
+    "catalogId": 101,
+    "chapterId": 2,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102001
+  },
+  "3701030": {
+    "catalogId": 301,
+    "chapterId": 5,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 105001
+  },
+  "3701106": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3701115": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3701116": {
+    "catalogId": 401,
+    "chapterId": 5,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 105001
+  },
+  "3705001": {
+    "catalogId": 301,
+    "chapterId": 6,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 115001
+  },
+  "3705048": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3705050": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3705095": {
+    "catalogId": 401,
+    "chapterId": 6,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 115001
+  },
+  "3707004": {
+    "catalogId": 101,
+    "chapterId": 1,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 101004
+  },
+  "3708001": {
+    "catalogId": 301,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 120001
+  },
+  "3708017": {
+    "catalogId": 301,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 120002
+  },
+  "3708035": {
+    "catalogId": 301,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 120004
+  },
+  "3708068": {
+    "catalogId": 301,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 120003
+  },
+  "3708087": {
+    "catalogId": 401,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 120001
+  },
+  "3708088": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3708094": {
+    "catalogId": 401,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 120004
+  },
+  "3708099": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3708103": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3708104": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3708128": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3708129": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3708155": {
+    "catalogId": 401,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 120002
+  },
+  "3708158": {
+    "catalogId": 401,
+    "chapterId": 20,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 120003
+  },
+  "3708165": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3709001": {
+    "catalogId": 301,
+    "chapterId": 21,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 121001
+  },
+  "3709031": {
+    "catalogId": 301,
+    "chapterId": 21,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 121003
+  },
+  "3709043": {
+    "catalogId": 401,
+    "chapterId": 21,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 121001
+  },
+  "3709044": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3709045": {
+    "catalogId": 401,
+    "chapterId": 21,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 121003
+  },
+  "3710001": {
+    "catalogId": 301,
+    "chapterId": 23,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 123001
+  },
+  "3710043": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3710045": {
+    "catalogId": 401,
+    "chapterId": 23,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 123001
+  },
+  "3711001": {
+    "catalogId": 301,
+    "chapterId": 24,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 124001
+  },
+  "3711003": {
+    "catalogId": 301,
+    "chapterId": 24,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 124002
+  },
+  "3711030": {
+    "catalogId": 401,
+    "chapterId": 24,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 124001
+  },
+  "3711031": {
+    "catalogId": 401,
+    "chapterId": 24,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 124002
+  },
+  "6520005": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120022
+  },
+  "6520001": {
+    "catalogId": 203,
+    "chapterId": 112,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1120013
+  },
+  "6519059": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330013
+  },
+  "6519049": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 1330012
+  },
+  "6519048": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 13300011
+  },
+  "6519047": {
+    "catalogId": 203,
+    "chapterId": 133,
+    "chapterType": 3,
+    "mainType": 2,
+    "sectionId": 13300010
+  },
+  "3711037": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3712001": {
+    "catalogId": 301,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 122002
+  },
+  "3712002": {
+    "catalogId": 301,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 122003
+  },
+  "3712003": {
+    "catalogId": 301,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 122004
+  },
+  "3712043": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3712044": {
+    "catalogId": 401,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 122002
+  },
+  "3712046": {
+    "catalogId": 401,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 122004
+  },
+  "3712047": {
+    "catalogId": 401,
+    "chapterId": 22,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 122003
+  },
+  "3712048": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3713001": {
+    "catalogId": 301,
+    "chapterId": 25,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 125001
+  },
+  "3713003": {
+    "catalogId": 301,
+    "chapterId": 25,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 125002
+  },
+  "3713057": {
+    "catalogId": 401,
+    "chapterId": 25,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 125001
+  },
+  "3713058": {
+    "catalogId": 401,
+    "chapterId": 25,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 125002
+  },
+  "3713063": {
+    "catalogId": 401,
+    "chapterType": 1,
+    "mainType": 4
+  },
+  "3901001": {
+    "catalogId": 301,
+    "chapterId": 6,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 106003
+  },
+  "3901016": {
+    "catalogId": 301,
+    "chapterId": 6,
+    "chapterType": 1,
+    "mainType": 3,
+    "sectionId": 106002
+  },
+  "3901027": {
+    "catalogId": 401,
+    "chapterId": 6,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 106002
+  },
+  "3901028": {
+    "catalogId": 401,
+    "chapterId": 6,
+    "chapterType": 1,
+    "mainType": 4,
+    "sectionId": 106003
+  },
+  "3906001": {
+    "catalogId": 101,
+    "chapterId": 120,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102010
+  },
+  "3906022": {
+    "catalogId": 101,
+    "chapterId": 120,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102011
+  },
+  "3907001": {
+    "catalogId": 101,
+    "chapterId": 121,
+    "chapterType": 1,
+    "mainType": 1,
+    "sectionId": 102013
+  }
+}

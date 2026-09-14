@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_402002001",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 402002001,
+    "type": 1,
+    "final_taken_dmg_inc_rate_v": "param0"
+  },
+  "onBuffThinkIds": [
+    7,
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4c7a9bbe-0dcf-4484-9b82-4a6b1f8d2917",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "4281a73b-56b2-48e2-8ed0-e193c175e611",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "delay": 0,
+      "interval": 2,
+      "UID": "2adadf8a-2c30-49dd-9593-b2e816a7623e",
+      "name": "buffStartThink",
+      "NodeID": 8
+    }
+  },
+  "isDeathKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

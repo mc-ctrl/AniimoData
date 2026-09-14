@@ -1,0 +1,58 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000220",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "3587cf15-c8c7-4fcc-b358-4fe73d283366",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "4": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5000223,
+      "NodeID": 4,
+      "UID": "ee8bf49d-d5e0-4a29-a669-73f39c91c651",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        4
+      ],
+      "voxelTag": "waterPool",
+      "radius": 1,
+      "UID": "8e77b551-41db-44e5-a18d-77baa2129dd6",
+      "target": "OWNER",
+      "NodeID": 5,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "6": {
+      "buffId": 5000223,
+      "name": "removeBuff",
+      "UID": "130871a5-62ae-4974-98ec-f8288f0bb653",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

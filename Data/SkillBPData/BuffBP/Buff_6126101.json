@@ -1,0 +1,117 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6126101",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    22
+  ],
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "actionIds": [
+        23,
+        25
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "09ff0e51-0319-47c3-b17c-4a82f74e33f0",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "23": {
+      "targetPos": "OWNER",
+      "radius": 20,
+      "UID": "6e27702a-b686-4cf9-94cf-dd65e8e9ed7f",
+      "NodeID": 23,
+      "name": "randomPoint"
+    },
+    "27": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 126106,
+      "name": "createEntity",
+      "UID": "8cb1074c-502e-4c38-9a97-febb5f70f580",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "RANDOM_POINT",
+      "NodeID": 27
+    },
+    "26": {
+      "targetPos": "OWNER",
+      "radius": 20,
+      "UID": "9a870b73-8f17-49ae-80d1-b28494a96e6f",
+      "NodeID": 26,
+      "name": "randomPoint"
+    },
+    "25": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 126106,
+      "name": "createEntity",
+      "UID": "13df3b1d-e401-4af3-a9c1-cb63cbe001a5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "RANDOM_POINT",
+      "NodeID": 25
+    },
+    "2": {
+      "delay": 1,
+      "NodeID": 2,
+      "UID": "b532fcf0-b3f3-4720-9688-a2863a580998",
+      "name": "buffStartThink",
+      "interval": 5,
+      "buffTemplateId": 6126101
+    },
+    "20": {
+      "name": "getCreatedEntityCount",
+      "UID": "2630b070-cff2-47ec-b7c3-aafd56af15b7",
+      "target": "OWNER",
+      "checkCreation": true,
+      "NodeID": 20
+    },
+    "21": {
+      "rValue": {
+        "name": "getCreatedEntityCount",
+        "UID": "2630b070-cff2-47ec-b7c3-aafd56af15b7",
+        "target": "OWNER",
+        "checkCreation": true,
+        "NodeID": 20
+      },
+      "name": "greater",
+      "UID": "89ca6ef3-a238-425b-b756-72f94b102532",
+      "NodeID": 21,
+      "lValue": 10
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    26,
+    27,
+    2
+  ]
+}

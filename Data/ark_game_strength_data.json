@@ -1,0 +1,92 @@
+[
+  {
+    "finishSFX": [
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess"
+    ],
+    "refId": 301,
+    "finishDialogueGraph": [
+      91402856,
+      91402869,
+      91402872,
+      91402874,
+      91402875,
+      91402877,
+      91402878
+    ],
+    "finishEffect": [
+      "$Eff_SceneObject_Ark_Propshop_01.prefab",
+      "$Eff_SceneObject_Ark_Propshop_02.prefab",
+      "$Eff_SceneObject_Ark_Propshop_03.prefab",
+      "$Eff_SceneObject_Ark_Propshop_04.prefab",
+      "$Eff_SceneObject_Ark_Propshop_05.prefab",
+      "$Eff_SceneObject_Ark_Propshop_06.prefab",
+      "$Eff_SceneObject_Ark_Propshop_07.prefab"
+    ]
+  },
+  {
+    "finishSFX": [
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess"
+    ],
+    "refId": 302,
+    "finishDialogueGraph": [
+      91402856,
+      91402869,
+      91402872,
+      91402874,
+      91402875,
+      91402877,
+      91402878
+    ],
+    "finishEffect": [
+      "$Eff_SceneObject_Ark_Propshop_01.prefab",
+      "$Eff_SceneObject_Ark_Propshop_02.prefab",
+      "$Eff_SceneObject_Ark_Propshop_03.prefab",
+      "$Eff_SceneObject_Ark_Propshop_04.prefab",
+      "$Eff_SceneObject_Ark_Propshop_05.prefab",
+      "$Eff_SceneObject_Ark_Propshop_06.prefab",
+      "$Eff_SceneObject_Ark_Propshop_07.prefab"
+    ]
+  },
+  {
+    "finishSFX": [
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess",
+      "$SFX_SceneObject_Ventilator_ProductionSuccess"
+    ],
+    "refId": 303,
+    "finishDialogueGraph": [
+      91402856,
+      91402869,
+      91402872,
+      91402874,
+      91402875,
+      91402877,
+      91402878
+    ],
+    "finishEffect": [
+      "$Eff_SceneObject_Ark_Propshop_01.prefab",
+      "$Eff_SceneObject_Ark_Propshop_02.prefab",
+      "$Eff_SceneObject_Ark_Propshop_03.prefab",
+      "$Eff_SceneObject_Ark_Propshop_04.prefab",
+      "$Eff_SceneObject_Ark_Propshop_05.prefab",
+      "$Eff_SceneObject_Ark_Propshop_06.prefab",
+      "$Eff_SceneObject_Ark_Propshop_07.prefab"
+    ]
+  }
+]

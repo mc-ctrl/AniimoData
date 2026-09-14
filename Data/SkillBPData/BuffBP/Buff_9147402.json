@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9147402",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 9147402,
+      "name": "removeBuff",
+      "UID": "490a2014-c7bd-44ab-b606-5dfc339bf5cb",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "22009e1d-4e58-4f97-a262-55f37136a17c",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "7": {
+      "UID": "230625af-7509-4ab9-9aa4-560c95138afb",
+      "count": 1,
+      "name": "setCastSkillFreeEpCnt",
+      "NodeID": 7
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9147406,
+      "NodeID": 6,
+      "UID": "b35207ad-1758-4817-91ac-bb0a8d90ffc7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    7,
+    4
+  ]
+}

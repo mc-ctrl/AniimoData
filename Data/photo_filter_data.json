@@ -1,0 +1,146 @@
+{
+  "802304": {
+    "id": 802304,
+    "res": "$T_PostProcess_Photohoustone_LUT.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photostudio_LUT_1.png",
+    "initialClaim": 1
+  },
+  "802316": {
+    "id": 802316,
+    "initialClaim": 1,
+    "name": 1686273191,
+    "type": 4,
+    "icon": "$UI_Icon_Photostudio_LUT_10.png",
+    "res": "$T_PostProcess_Photoatramento_LUT.png"
+  },
+  "802305": {
+    "id": 802305,
+    "res": "$T_PostProcess_Photomontis_LUT.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photostudio_LUT_6.png",
+    "initialClaim": 1
+  },
+  "802317": {
+    "id": 802317,
+    "res": "$T_PostProcess_Photocelsius_LUT.png",
+    "type": 4,
+    "icon": "$UI_Icon_Photostudio_LUT_11.png",
+    "initialClaim": 1
+  },
+  "802306": {
+    "id": 802306,
+    "initialClaim": 1,
+    "name": 1953686256,
+    "type": 2,
+    "icon": "$UI_Icon_Photostudio_LUT_20.png",
+    "res": "$T_PostProcess_Photoalauda_LUT.png"
+  },
+  "802318": {
+    "id": 802318,
+    "res": "$T_PostProcess_Photocream_LUT.png",
+    "type": 4,
+    "icon": "$UI_Icon_Photostudio_LUT_12.png",
+    "initialClaim": 1
+  },
+  "802308": {
+    "id": 802308,
+    "res": "$T_PostProcess_Photojudge_LUT.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photostudio_LUT_2.png",
+    "initialClaim": 1
+  },
+  "802319": {
+    "id": 802319,
+    "res": "$T_PostProcess_Photonostalgia_LUT.png",
+    "type": 4,
+    "icon": "$UI_Icon_Photostudio_LUT_13.png",
+    "initialClaim": 1
+  },
+  "802309": {
+    "id": 802309,
+    "res": "$T_PostProcess_Photolincoln_LUT.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photostudio_LUT_8.png",
+    "initialClaim": 1
+  },
+  "802320": {
+    "id": 802320,
+    "res": "$T_PostProcess_Photooren_LUT.png",
+    "type": 4,
+    "icon": "$UI_Icon_Photostudio_LUT_14.png",
+    "initialClaim": 1
+  },
+  "802310": {
+    "id": 802310,
+    "res": "$T_PostProcess_Photopanem_LUT.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photostudio_LUT_4.png",
+    "initialClaim": 1
+  },
+  "802311": {
+    "id": 802311,
+    "initialClaim": 1,
+    "name": 1530835751,
+    "type": 3,
+    "icon": "$UI_Icon_Photostudio_LUT_17.png",
+    "res": "$T_PostProcess_Photofermentum_LUT.png"
+  },
+  "802312": {
+    "id": 802312,
+    "res": "$T_PostProcess_Photoglamour_LUT.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photostudio_LUT_7.png",
+    "initialClaim": 1
+  },
+  "802301": {
+    "id": 802301,
+    "initialClaim": 1,
+    "name": 2029490387,
+    "type": 1,
+    "icon": "$UI_Icon_Photostudio_LUT_19.png",
+    "res": "$T_PostProcess_Photocloud_LUT.png"
+  },
+  "802313": {
+    "id": 802313,
+    "res": "$T_PostProcess_Phototokyo_LUT.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photostudio_LUT_15.png",
+    "initialClaim": 1
+  },
+  "802302": {
+    "id": 802302,
+    "res": "$T_PostProcess_Photoexcelsior_LUT.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photostudio_LUT_18.png",
+    "initialClaim": 1
+  },
+  "802314": {
+    "id": 802314,
+    "res": "$T_PostProcess_Photovitae_LUT.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photostudio_LUT_16.png",
+    "initialClaim": 1
+  },
+  "802307": {
+    "id": 802307,
+    "res": "$T_PostProcess_Photoclare_LUT.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photostudio_LUT_5.png",
+    "initialClaim": 1
+  },
+  "802303": {
+    "id": 802303,
+    "res": "$T_PostProcess_Photohifi_LUT.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photostudio_LUT_3.png",
+    "initialClaim": 1
+  },
+  "802315": {
+    "id": 802315,
+    "res": "$T_PostProcess_Photowalter_LUT.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photostudio_LUT_9.png",
+    "initialClaim": 1
+  }
+}

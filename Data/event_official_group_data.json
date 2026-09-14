@@ -1,0 +1,519 @@
+[
+  {
+    "languageShow": [
+      0
+    ],
+    "sort": 5,
+    "societyIcon": "$UI_Event_Weibo.png",
+    "follewType": 1,
+    "linkAdress": "https://weibo.com/u/7989647088",
+    "societyName": 1973783018,
+    "societyReward": 100031,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_Bilibili.png",
+    "follewType": 1,
+    "linkAdress": "https://space.bilibili.com/3546868241926891?spm_id_from=333.337.0.0",
+    "societyName": 1242173764,
+    "societyReward": 100031,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "sort": 9,
+    "societyIcon": "$UI_Event_Xiaohongshu.png",
+    "follewType": 1,
+    "linkAdress": "https://www.xiaohongshu.com/user/profile/672de8dd000000001100a69b?xsec_token=ABziLsmxrZx8-RpfPNJM9ov_muPQnIivMCk6k9ThlsiDw%3D&xsec_source=pc_search",
+    "societyName": 1515240566,
+    "societyReward": 100031,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "sort": 7,
+    "societyIcon": "$UI_Event_Douyin.png",
+    "follewType": 1,
+    "linkAdress": "https://v.douyin.com/slTq9V7swBE/",
+    "societyName": 2069266190,
+    "societyReward": 100031,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "sort": 6,
+    "societyIcon": "$UI_Event_Kuaishou.png",
+    "follewType": 1,
+    "linkAdress": "https://www.kuaishou.com/profile/3xbvxrvzq38im9y",
+    "societyName": 1444648106,
+    "societyReward": 100031,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "societyIcon": "$UI_Event_WeChat.png",
+    "follewType": 2,
+    "societyName": 2027514012,
+    "societyReward": 100031,
+    "qrcodeDesc": 1573475142,
+    "qrcodeIcon": "$UI_Icon_QRCode_WeChat.png",
+    "sort": 1,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "societyIcon": "$UI_Event_QQ.png",
+    "follewType": 2,
+    "societyName": 1801025974,
+    "societyReward": 100031,
+    "qrcodeDesc": 1609937553,
+    "qrcodeIcon": "$UI_Icon_QRCode_QQ.png",
+    "sort": 4,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "sort": 8,
+    "societyIcon": "$UI_Event_taptap.png",
+    "follewType": 1,
+    "linkAdress": "https://l.taptap.cn/1puBYuha?channel=rep-rep_apse0uovbkg",
+    "societyName": 1768160428,
+    "societyReward": 100031,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "sort": 2,
+    "societyIcon": "$UI_Event_OfficialWebsite.png",
+    "follewType": 1,
+    "linkAdress": "www.yimoo.com",
+    "societyName": 1086656475,
+    "societyReward": 100031,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0,
+      2,
+      12,
+      11,
+      5
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_X.png",
+    "follewType": 1,
+    "linkAdress": "https://x.com/Aniimo_EN",
+    "societyName": 1755824149,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      2,
+      4,
+      1,
+      3,
+      7,
+      8,
+      10,
+      9,
+      6,
+      12,
+      11,
+      5
+    ],
+    "sort": 2,
+    "societyIcon": "$UI_Event_Discord.png",
+    "follewType": 1,
+    "linkAdress": "https://discord.com/invite/aniimo",
+    "societyName": 1326425761,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      2,
+      7,
+      8,
+      10,
+      9,
+      6,
+      12,
+      11,
+      5
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_YouTube.png",
+    "follewType": 1,
+    "linkAdress": "https://www.youtube.com/@Aniimo_EN",
+    "societyName": 1532604170,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      2,
+      7,
+      8,
+      10,
+      9,
+      12,
+      11,
+      5
+    ],
+    "sort": 4,
+    "societyIcon": "$UI_Event_Douyin.png",
+    "follewType": 1,
+    "linkAdress": "https://www.tiktok.com/@aniimo_na",
+    "societyName": 1148526577,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      2,
+      4,
+      12,
+      11,
+      5
+    ],
+    "sort": 5,
+    "societyIcon": "$UI_Event_Facebook.png",
+    "follewType": 1,
+    "linkAdress": "https://www.facebook.com/AniimoGL/",
+    "societyName": 1533415058,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      2,
+      7,
+      8,
+      10,
+      9,
+      12,
+      11,
+      5
+    ],
+    "sort": 6,
+    "societyIcon": "$UI_Event_Instagram.png",
+    "follewType": 1,
+    "linkAdress": "https://www.instagram.com/aniimo_en",
+    "societyName": 2070154298,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      4
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_X.png",
+    "follewType": 1,
+    "linkAdress": "https://x.com/Aniimo_JP",
+    "societyName": 1743462205,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      4
+    ],
+    "sort": 2,
+    "societyIcon": "$UI_Event_YouTube.png",
+    "follewType": 1,
+    "linkAdress": "https://www.youtube.com/@Aniimo_JP",
+    "societyName": 1528545421,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      4
+    ],
+    "societyIcon": "$UI_Event_line.png",
+    "follewType": 2,
+    "societyName": 1861546543,
+    "societyReward": 100031,
+    "qrcodeDesc": 1100750479,
+    "qrcodeIcon": "$UI_Icon_QRCode_Line.png",
+    "sort": 4,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      4
+    ],
+    "sort": 5,
+    "societyIcon": "$UI_Event_Douyin.png",
+    "follewType": 1,
+    "linkAdress": "https://www.tiktok.com/@aniimo_jp",
+    "societyName": 2036284365,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      4
+    ],
+    "sort": 6,
+    "societyIcon": "$UI_Event_Instagram.png",
+    "follewType": 1,
+    "linkAdress": "https://www.instagram.com/aniimo_jp_/",
+    "societyName": 1614567735,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      1
+    ],
+    "sort": 2,
+    "societyIcon": "$UI_Event_YouTube.png",
+    "follewType": 1,
+    "linkAdress": "https://www.youtube.com/@Aniimo_HMT",
+    "societyName": 1726683870,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      1
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_Facebook.png",
+    "follewType": 1,
+    "linkAdress": "https://www.facebook.com/profile.php?id=61566235636229",
+    "societyName": 1216868762,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      1
+    ],
+    "sort": 4,
+    "societyIcon": "$UI_Event_Instagram.png",
+    "follewType": 1,
+    "linkAdress": "https://www.instagram.com/hmt_aniimo/",
+    "societyName": 1192364998,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      1
+    ],
+    "sort": 5,
+    "societyIcon": "$UI_Event_Threads.png",
+    "follewType": 1,
+    "linkAdress": "https://www.threads.com/@hmt_aniimo",
+    "societyName": 1905186878,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      1
+    ],
+    "sort": 6,
+    "societyIcon": "$UI_Event_OfficialWebsite.png",
+    "follewType": 1,
+    "linkAdress": "https://www.aniimo.com/zh-tw",
+    "societyName": 1426516572,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      3
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_Naver.png",
+    "follewType": 1,
+    "linkAdress": "https://game.naver.com/lounge/Aniimo/home",
+    "societyName": 1845497972,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      3
+    ],
+    "sort": 2,
+    "societyIcon": "$UI_Event_YouTube.png",
+    "follewType": 1,
+    "linkAdress": "https://www.youtube.com/@Aniimo_KR",
+    "societyName": 1942625682,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      3
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_X.png",
+    "follewType": 1,
+    "linkAdress": "https://x.com/Aniimo_KR",
+    "societyName": 1630116597,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      3
+    ],
+    "sort": 4,
+    "societyIcon": "$UI_Event_OfficialWebsite1.png",
+    "follewType": 1,
+    "linkAdress": "https://www.aniimo.com/ko",
+    "societyName": 1241753114,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      7
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_X.png",
+    "follewType": 1,
+    "linkAdress": "https://x.com/Aniimo_DE",
+    "societyName": 1404683958,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      7
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_Facebook.png",
+    "follewType": 1,
+    "linkAdress": "https://www.facebook.com/profile.php?id=61589327195648#",
+    "societyName": 1717040314,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      8
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_X.png",
+    "follewType": 1,
+    "linkAdress": "https://x.com/Aniimo_FR",
+    "societyName": 1877893197,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      8
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_Facebook.png",
+    "follewType": 1,
+    "linkAdress": "https://www.facebook.com/profile.php?id=61589130464117#",
+    "societyName": 1131852642,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      10
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_X.png",
+    "follewType": 1,
+    "linkAdress": "https://x.com/AniimoBR",
+    "societyName": 2104298415,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      10
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_Facebook.png",
+    "follewType": 1,
+    "linkAdress": "https://www.facebook.com/profile.php?id=61593335645960#",
+    "societyName": 2085505446,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      9
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_X.png",
+    "follewType": 1,
+    "linkAdress": "https://x.com/Aniimo_ES",
+    "societyName": 1123541338,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      9
+    ],
+    "sort": 3,
+    "societyIcon": "$UI_Event_Facebook.png",
+    "follewType": 1,
+    "linkAdress": "https://www.facebook.com/profile.php?id=61593174434252#",
+    "societyName": 1163298497,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      6
+    ],
+    "sort": 1,
+    "societyIcon": "$UI_Event_VK.png",
+    "follewType": 1,
+    "linkAdress": "https://vk.ru/official_aniimo_ru",
+    "societyName": 1869297530,
+    "societyReward": 100031,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      6
+    ],
+    "sort": 2,
+    "societyIcon": "$UI_Event_Telegram.png",
+    "follewType": 1,
+    "linkAdress": "https://t.me/official_aniimo_ru",
+    "societyName": 1932125992,
+    "societyReward": 100031,
+    "isOverseas": 2
+  }
+]

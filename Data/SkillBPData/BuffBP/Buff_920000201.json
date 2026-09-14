@@ -1,0 +1,14 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "stamina_regen_p": -0.6
+  },
+  "name": "体力恢复降低",
+  "UID": "608beafb-ce26-42d2-ae0f-dd19d0b9c799",
+  "desc": "体力恢复降低",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_920000201",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

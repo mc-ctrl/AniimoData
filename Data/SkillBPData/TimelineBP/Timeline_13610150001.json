@@ -1,0 +1,211 @@
+{
+  "nodeMap": {
+    "35": {
+      "UID": "41460a36-5004-48d2-ba39-1e977d9507d3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "NodeID": 35
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29,
+          32,
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.83,
+      "NodeID": 31,
+      "UID": "9b8b2487-b6c9-4a6f-bd67-5416fbb3a2eb"
+    },
+    "9": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "cb601873-f732-4b8c-8d22-a32c755b1966",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "20": {
+      "UID": "cf4a8799-564c-4cac-bd83-69b391aea228",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 20
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "394233c5-cb8b-4511-b5dd-2478a1804188",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_RoarAttack"
+    },
+    "4": {
+      "UID": "d6df0a80-d5de-4be0-a9e1-ee69299f4347",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18,
+          2,
+          9
+        ]
+      },
+      "NodeID": 4
+    },
+    "23": {
+      "UID": "c3101e64-6a9a-4fe0-87ad-3ddba4c100cd",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 23
+    },
+    "15": {
+      "UID": "842ce38a-8ebc-473f-bcbe-859b73d9626d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "c6187065-9a4d-42cc-b1b7-ecd3f751a6b1",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          23,
+          36
+        ]
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.65,
+      "NodeID": 16,
+      "UID": "58eee36b-cc62-4315-a718-3556c0f61781"
+    },
+    "27": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.5
+      },
+      "name": "calcResult",
+      "UID": "8afb37c0-66b0-4003-b9f1-5863a0aad59d",
+      "target": "TARGET",
+      "NodeID": 27
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.35,
+      "NodeID": 21,
+      "UID": "08eb7561-fb5e-4e83-9af6-09026a0d53d2"
+    },
+    "29": {
+      "actionIds": [
+        27
+      ],
+      "name": "actOnTargets",
+      "UID": "4a17f9f0-5094-4db2-9db1-185911e62396",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            30,
+            3,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "d32e98d0-ce94-4077-bf6b-3a0784136acf",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "a6485901-11df-4476-abed-733ba7052030",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_05",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1bbbad03-1c2c-46dc-98c8-fedcf274afe6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10045_Skill_FlowerCircle_Cure01",
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f8a32086-0b24-4b87-8992-365f12e0fa2a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10045_Skill_FlowerCircle_Charge",
+      "NodeID": 34
+    },
+    "36": {
+      "name": "stopSoundStr",
+      "UID": "471ae5b2-4084-486d-9635-82778eb18070",
+      "soundId": "SFX_Combat_10045_Skill_FlowerCircle_Cure01",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_13610150",
+  "NodeID": 6,
+  "UID": "779fb967-9053-4ef9-a94b-80cccdbfd63e",
+  "eventIds": [
+    4,
+    25,
+    16,
+    21,
+    35,
+    31
+  ],
+  "layer": "Base",
+  "length": 3.217
+}

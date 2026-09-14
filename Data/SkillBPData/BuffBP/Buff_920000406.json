@@ -1,0 +1,138 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920000406",
+  "NodeID": 1,
+  "UID": "79a055dd-190c-4fad-b3d8-d4b05ef280f4",
+  "desc": "",
+  "onBuffRefreshIds": [
+    17
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "1795310f-1a90-45ab-853a-8b2f59323803",
+      "effectId": "Eff_Buff_Charge_Arrow_Up",
+      "target": "TARGET",
+      "NodeID": 5
+    },
+    "13": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "10063714-8294-4d5b-9ad9-9435c89aa1f9",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "14": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "ed5bb0e5-44fb-47b8-bc5b-1575f9492d25",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "2ee8aaf8-aac5-4f34-aa70-e9005c0cc29a",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "TARGET",
+      "NodeID": 10
+    },
+    "15": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "e42689f9-6f4d-44e1-b55a-af60a0429573",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "541a2549-9d85-47b5-91b8-0c780b343509",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "728edcf0-52ef-4c2e-bb3b-f985a504a70d",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "de6c53d4-3e14-4c36-8b5f-a0f9e0522c3b",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "TARGET",
+      "NodeID": 8
+    },
+    "17": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "a7b04c2b-b038-45bc-8347-56f0c0d0c57a",
+      "effectId": "Eff_Buff_Star_AllBuff",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "8ce88de1-5e64-4cf7-8044-46cf512137cc",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "TARGET",
+      "NodeID": 9
+    },
+    "21": {
+      "calcInfo": {
+        "taken_phy_dmg_dec_rate_v": 0.12,
+        "combat_ep_regen_p": 0.23,
+        "taken_mag_dmg_dec_rate_v": 0.12,
+        "taken_mag_dmg_inc_rate_v": 0.12,
+        "taken_phy_dmg_inc_rate_v": 0.12
+      },
+      "isClearOld": true,
+      "UID": "d4fc3f04-a6fc-40b3-91c9-438968c64ecc",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 21
+    },
+    "20": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "04a7d10d-5d48-4a92-a662-fdd23603c929",
+      "effectId": "Eff_Buff_Star_AllBuff",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "12": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "b5e1343c-d1a1-4a20-9f68-87c6cfd44e68",
+      "effectId": "Eff_Buff_Charge_Arrow_Up",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "name": "",
+  "onBuffDestroyIds": [
+    10,
+    9,
+    8,
+    7,
+    5
+  ],
+  "onBuffStartIds": [
+    16,
+    12,
+    13,
+    15,
+    14,
+    21,
+    20
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "a856b571-65b3-497a-a094-fdf3771734de",
+      "name": "replaceHitEffect",
+      "effect": "Eff_NPC_Morphling_Hit",
+      "NodeID": 3
+    },
+    "6": {
+      "rValue": {
+        "UID": "335fe351-e9f5-47c4-84ff-630ac7126952",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 5
+      },
+      "name": "greater",
+      "UID": "10e78904-8c1c-4b97-827b-fdbffceadd90",
+      "NodeID": 6,
+      "lValue": 0.01
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7879a177-b275-444d-971a-881e3a7a6ada",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "11": {
+      "key": "BulblyDeath",
+      "name": "setServerCacheVal",
+      "UID": "000cce52-ef22-4d24-b9df-a88153fb8cc7",
+      "target": "MASTER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "dd1a4e67-7e4f-463c-af56-18582f14edea",
+        "NodeID": 10,
+        "lValue": {
+          "key": "BulblyDeath",
+          "name": "getServerCacheVal",
+          "UID": "7e4fc6d2-b429-4cf5-ad05-01acea6b6841",
+          "target": "MASTER",
+          "NodeID": 9
+        }
+      },
+      "NodeID": 11
+    },
+    "7": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "ce98b273-5756-4c87-b0d2-3811fcb292eb",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "f01b1989-2734-469a-8f89-9565a03195a2",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    }
+  },
+  "BPName": "buff_2114305",
+  "dynamicRPCStates": {},
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    8,
+    20
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "1004300": {
+    "visionArea": [
+      109016,
+      218016,
+      304516,
+      404516
+    ],
+    "visionTargetGroup": 1,
+    "findThreshold": 120,
+    "interactiveID": 10001,
+    "perceiveSTPRadius": 20,
+    "startShowUIValue": 120,
+    "threshold1": 5,
+    "threshold2": 80,
+    "threshold3": 120,
+    "visionHeight": [
+      -3,
+      3
+    ],
+    "valueMax": 160,
+    "attenuation": -8
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50022",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0.2,
+      "interval": 1,
+      "UID": "23b02277-0c13-486e-b9d4-a224ad808ca2",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "16": {
+      "buffId": 5002201,
+      "name": "removeBuff",
+      "UID": "e0a51162-3a4e-4920-ac97-7052906b8b2d",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "db2ac4f5-6d6a-487f-adfe-d6406b7cf80f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 6
+    },
+    "8": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "eb55c7bf-85d1-46c8-a3be-3fbb7f66dc3e",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "15": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "6732aa7d-946b-4247-9354-b5977f5b0411",
+      "NodeID": 15,
+      "lValue": {
+        "key": "waterPool",
+        "name": "getCacheVal",
+        "UID": "5522a205-d313-4d15-9aeb-598645300f6b",
+        "target": "OWNER",
+        "NodeID": 14
+      }
+    },
+    "5": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5002201,
+      "NodeID": 5,
+      "UID": "467bb858-494f-4e0d-a44a-a57703869028",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "5b2b7082-c6f5-4ff3-9481-c8d49a2d1761",
+      "NodeID": 12,
+      "lValue": {
+        "voxelTag": "waterPool",
+        "radius": 0.8,
+        "UID": "ff6ce6db-a661-49b3-9870-95271f0224bd",
+        "NodeID": 11,
+        "name": "getVoxelNum"
+      }
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffDestroyIds": [
+    16
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2142305",
+  "name": "",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "958e6cec-d88d-47b6-b1ac-d260cbc01c82",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 3
+    },
+    "8": {
+      "calcInfo": {
+        "passive_energy_cur": -24
+      },
+      "name": "calcResult",
+      "UID": "55fb0955-d789-46f8-9f64-196a4f5cbedd",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "UID": "496535b9-bdee-4bb5-bda4-5eaf0b8e0239",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5,
+    8
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

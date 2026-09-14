@@ -1,0 +1,44 @@
+{
+  "40500007": {
+    "displayTabs": 5,
+    "placeFurnitureDistance": 5,
+    "name": 2045236182,
+    "sortId": 3,
+    "worldRecycleDist": 15
+  },
+  "40600039": {
+    "displayTabs": 5,
+    "placeFurnitureDistance": 5,
+    "name": 1680254274,
+    "sortId": 4,
+    "worldRecycleDist": 15
+  },
+  "40900013": {
+    "displayTabs": 5,
+    "placeFurnitureDistance": 2,
+    "name": 2004267254,
+    "sortId": 7,
+    "worldRecycleDist": 15
+  },
+  "40900022": {
+    "displayTabs": 5,
+    "placeFurnitureDistance": 2,
+    "name": 1318040707,
+    "sortId": 5,
+    "worldRecycleDist": 15
+  },
+  "40900023": {
+    "displayTabs": 5,
+    "placeFurnitureDistance": 2,
+    "name": 1994896801,
+    "sortId": 6,
+    "worldRecycleDist": 15
+  },
+  "41000003": {
+    "displayTabs": 5,
+    "placeFurnitureDistance": 5,
+    "name": 1591783870,
+    "sortId": 2,
+    "worldRecycleDist": 15
+  }
+}

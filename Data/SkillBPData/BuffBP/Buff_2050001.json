@@ -1,0 +1,155 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "2409e20e-26c6-4f7f-9215-b157034d277d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 0.75,
+      "name": "greater",
+      "UID": "d3100265-f19e-465d-b1e6-14f41d4dfaf3",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "c406c1cd-ebb7-42bb-b093-01caa682efe1",
+        "target": "CURPET",
+        "name": "getLossHpRatio",
+        "NodeID": 3
+      }
+    },
+    "6": {
+      "name": "registerAttributeChange",
+      "actionIds": [
+        5
+      ],
+      "attributeName": "hp_cur",
+      "UID": "5f4eaf23-88fa-46aa-9403-509ecdeb16a5",
+      "target": "OWNER",
+      "targetType": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "unsummonValid": false,
+      "actionIds": [
+        9
+      ],
+      "name": "registerGroupEvent",
+      "UID": "9956c7c3-214f-4aab-a577-dda3a4177216",
+      "NodeID": 10
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "e8612a60-36e0-4a96-a636-99636b2401c1",
+      "NodeID": 7
+    },
+    "9": {
+      "UID": "9274d6d0-975e-44c1-9aa9-846c9d3b5acd",
+      "newPetActionIds": [
+        5
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 9
+    },
+    "18": {
+      "calcInfo": {
+        "shield_add_ratio": {
+          "rValue": {
+            "rValue": 0.75,
+            "name": "multiply",
+            "UID": "5f9d8257-ed4a-45c0-943a-0b85019d6b96",
+            "NodeID": 15,
+            "lValue": {
+              "calcId": 2050001,
+              "calcType": 1,
+              "paramName": "param0",
+              "NodeID": 14,
+              "UID": "e6760e4b-ed6a-4939-ab7f-d79e2ab260a8",
+              "name": "getParamByLuaConfig"
+            }
+          },
+          "name": "add",
+          "UID": "2dbe2b0e-7adf-4f2b-aaad-73d27a0c8c6e",
+          "NodeID": 16,
+          "lValue": {
+            "calcId": 2050001,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 19,
+            "UID": "bbf05e9b-f6ed-46a4-9a44-cfee0218a01e",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "c3e7ce37-f4a8-47a5-8752-7b91a512df4c",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 18
+    },
+    "19": {
+      "calcId": 2050001,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 19,
+      "UID": "bbf05e9b-f6ed-46a4-9a44-cfee0218a01e",
+      "name": "getParamByLuaConfig"
+    },
+    "13": {
+      "calcInfo": {
+        "shield_add_ratio": {
+          "rValue": {
+            "calcId": 2050001,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 14,
+            "UID": "e6760e4b-ed6a-4939-ab7f-d79e2ab260a8",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "cb9731b5-d2f0-4d50-afc9-342b92bb374b",
+          "NodeID": 11,
+          "lValue": {
+            "UID": "c406c1cd-ebb7-42bb-b093-01caa682efe1",
+            "target": "CURPET",
+            "name": "getLossHpRatio",
+            "NodeID": 3
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "3e366aba-bbcc-4a4e-aeb3-c2150d2af2fd",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 13
+    },
+    "14": {
+      "calcId": 2050001,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 14,
+      "UID": "e6760e4b-ed6a-4939-ab7f-d79e2ab260a8",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_2050001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    10
+  ]
+}

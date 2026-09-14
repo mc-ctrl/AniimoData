@@ -1,0 +1,85 @@
+{
+  "BPName": "ability_10320111",
+  "NodeID": 1,
+  "UID": "a3792e0d-ec41-428e-9242-f962b077057c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10320111001,
+      "name": "setCombatActionTimeline",
+      "UID": "2535def1-0039-4782-b1b2-34bdd5e526ec",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        73
+      ],
+      "UID": "23efd84e-ce46-43ae-9e7e-47975f75fae6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        81
+      ],
+      "NodeID": 9
+    },
+    "74": {
+      "buffId": 2103217,
+      "name": "hasBuff",
+      "UID": "7997985c-2e55-484c-906a-abd8426bbee4",
+      "target": "OWNER",
+      "NodeID": 74
+    },
+    "72": {
+      "buffId": 2103216,
+      "name": "hasBuff",
+      "UID": "7351f3e4-943e-4b69-b149-b2970c165ff3",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "81": {
+      "timelineId": 10320111002,
+      "name": "setCombatActionTimeline",
+      "UID": "b9eb3fa7-cf5b-48fe-8e3b-86e6662a1d3e",
+      "target": "CASTER",
+      "NodeID": 81
+    },
+    "73": {
+      "UID": "82e65ecf-9a1a-41ca-a613-8c5a5c0f8fd8",
+      "conditionIds": [
+        72,
+        74
+      ],
+      "name": "conditionOr",
+      "NodeID": 73
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_RotateAttack",
+    "Hit_H"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Slash",
+    "Eff_Parmon_10032_Skill_RotateAttack_Dark",
+    "Eff_Hit_Dark_Blunt_Big",
+    "Eff_Parmon_10032_Skill_ShadowCutter_BlockSuc",
+    "Eff_Parmon_10032_Skill_ShadowCutter_Block",
+    "Eff_Skill_Common_Warning_10032Boss"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 11200312
+}

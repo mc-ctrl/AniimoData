@@ -1,0 +1,105 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126301",
+  "name": "花舞鸢尾舞力值特性buff",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "草地上每次造成技能伤害积累1点舞力值，续满后下一次释放技能时提高100%魔攻持续2s",
+  "tags": [
+    11
+  ],
+  "onBuffLayerChangeIds": [
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        8,
+        12,
+        13
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "8e1d5d35-c499-4e3a-97af-923a4f7d3bdd",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "97781ff5-0989-4b99-a038-6f3f73522827",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "c6202935-3c30-45c2-b1b3-012c60058808",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 3
+      }
+    },
+    "6": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "b38ac75f-7c9e-401a-b5aa-24f31d1a619f",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "37dc2182-72ae-4827-a5a2-a9bbdb78d024",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "e86ac7bd-b999-4f16-b8af-9d92c69d3fe9",
+      "conditionIds": [
+        6,
+        10
+      ],
+      "name": "conditionOr",
+      "NodeID": 7
+    },
+    "8": {
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "f9cb3222-413a-4987-892c-6711270d666e",
+      "name": "doActionsByConditions",
+      "NodeID": 8,
+      "elseActionIds": [
+        11
+      ]
+    },
+    "11": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2126302,
+      "NodeID": 11,
+      "UID": "1d11934a-a23e-4889-a179-371b26943b35",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2126304,
+      "NodeID": 13,
+      "UID": "4c6c7ac4-736d-42a0-b153-482dfe8abf49",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "buffId": 2126301,
+      "name": "removeBuff",
+      "UID": "dc2a3e58-9ee3-493f-a21f-7ad3be3bdf5a",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

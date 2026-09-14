@@ -1,0 +1,106 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9126302",
+  "name": "仅标记用特性buff",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "scale": 1.5,
+      "speed": 1,
+      "NodeID": 3,
+      "UID": "25d3858c-9624-4374-9a00-4da4871c86dc",
+      "effectId": "Eff_Parmon_10263_Skill_Ability_01",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "9": {
+      "NodeID": 9,
+      "UID": "4e57369f-0e01-4c5b-b49b-1ea546da572f",
+      "applyAbilityIds": [
+        12630200,
+        12630300,
+        12630301,
+        12630302,
+        12630303
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": -1,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "fb97a4ad-1223-430e-aef1-23e06f43e691",
+      "effectId": "Eff_Parmon_10263_Skill_Ability_01",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "NodeID": 10,
+      "UID": "7c5cff73-7f27-428e-b127-c436960a6cb9",
+      "applyAbilityIds": [
+        12630200,
+        12630300,
+        12630301,
+        12630302,
+        12630303
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "11": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9126305,
+      "NodeID": 11,
+      "UID": "6707bd06-43c1-4e8f-85b8-26612d804ac8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "duration": 0.5,
+      "disableWhenFinished": true,
+      "NodeID": 5,
+      "UID": "6ef2096e-91fc-435f-adff-0de6362e278b",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10263_Skill_Ability_01",
+      "name": "playPreset"
+    },
+    "8": {
+      "UID": "2cd9477c-cac9-40ac-ad43-52709d76b37b",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10263_Skill_Ability_01",
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    8,
+    10,
+    11
+  ],
+  "onBuffStartIds": [
+    3,
+    5,
+    9
+  ]
+}

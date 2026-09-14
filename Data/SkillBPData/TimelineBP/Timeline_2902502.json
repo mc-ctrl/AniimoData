@@ -1,0 +1,260 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "actionIds": [
+        4
+      ],
+      "attributeName": "hp_cur",
+      "UID": "0b29c37c-c602-4ae4-aa2b-5313a26f56bb",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 5
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7e61f31f-28e3-40af-866c-dc9ab666b868",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_80023_Skill_Monster_Flyshortbreath_StableFireSparBreak",
+      "NodeID": 38
+    },
+    "40": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "c06e707c-a378-4cae-a87b-c29e79ccd294",
+      "NodeID": 40,
+      "lValue": {
+        "UID": "604c412d-2871-4a64-a409-a2e43913bd62",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 39
+      }
+    },
+    "35": {
+      "name": "playCameraImpulseById",
+      "cameraShakeId": 30404,
+      "checkCasterIsPlayer": false,
+      "UID": "c0acac0f-af37-4731-86d9-9361454ef2bb",
+      "target": {
+        "key": "target",
+        "name": "getCacheVal",
+        "UID": "4b70bc06-7b83-4d10-b873-0068b6978035",
+        "target": "MASTER",
+        "NodeID": 34
+      },
+      "ignoreShakeCD": true,
+      "NodeID": 35
+    },
+    "11": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2902502,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "0c9cb0cb-fab9-41b9-b132-ed599f0bef7f",
+      "target": "TARGET",
+      "NodeID": 11,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitCameraShakeId": -1,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 5,
+        "impulseId": 3002
+      }
+    },
+    "2": {
+      "scale": 1.8,
+      "name": "playEffectOnPosRot",
+      "UID": "660f0930-284e-458f-a4e5-ececf7fd35ab",
+      "effectId": "Eff_Monster_80023_Mon_Skill_StableFireSpar_Crash",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 2
+    },
+    "22": {
+      "pos": "OWNER",
+      "scale": 1.8,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "d6515c16-ed62-4f10-966b-a6015b7bab56",
+      "effectId": "Eff_Monster_80023_Mon_Skill_StableFireSpar_Explode",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "4": {
+      "actionIds": [
+        2,
+        33,
+        38
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "c9ba7637-1931-4a52-a04f-4ec8b11ba3c4",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d2ef5a12-f6fc-4ad4-bc1f-0bc59ad8ed7c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_80023_Skill_Monster_Flyshortbreath_StableFireSparExplode",
+      "NodeID": 37
+    },
+    "15": {
+      "key": "Timer1",
+      "duration": 2,
+      "actionIds": [
+        13,
+        26,
+        37,
+        35
+      ],
+      "NodeID": 15,
+      "UID": "71c74e18-96ae-4beb-a575-f49434578d26",
+      "name": "addTimer"
+    },
+    "25": {
+      "UID": "eaf15fe4-683f-46f2-80aa-a3eb2cdb9af0",
+      "name": "destroyEntity",
+      "NodeID": 25
+    },
+    "26": {
+      "key": "1",
+      "duration": 0.8,
+      "actionIds": [
+        25
+      ],
+      "NodeID": 26,
+      "UID": "50758201-10eb-4653-807a-d9955020d9b1",
+      "name": "addTimer"
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "10ef3eda-f3fe-46bf-a15a-4e6f16db201b",
+      "effectId": "Eff_Monster_80023_Mon_Skill_StableFireSpar",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "key": "delay1",
+      "duration": 0.2,
+      "actionIds": [
+        27
+      ],
+      "NodeID": 28,
+      "UID": "6e521f7a-085f-43b6-8a50-92def2ad0bdb",
+      "name": "addTimer"
+    },
+    "7": {
+      "UID": "2649dc0c-6023-4715-9f72-f3537c656a11",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5,
+          19,
+          17
+        ]
+      },
+      "NodeID": 7
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 11,
+      "NodeID": 13,
+      "UID": "e4cad771-5105-4a8f-9884-93b7a0787fa4",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            8,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        11
+      ]
+    },
+    "19": {
+      "pos": "OWNER",
+      "scale": 1.8,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a5fb0389-f5b3-4cdd-b970-607b18729f59",
+      "effectId": "Eff_Monster_80023_Mon_Skill_StableFireSpar",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "78f41798-9b67-4305-8243-1442074ef8a3",
+      "effectId": "Eff_Monster_80023_Mon_Skill_StableFireSpar",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "17": {
+      "eventName": "Explode",
+      "NodeID": 17,
+      "UID": "de436cec-4aba-4cdc-9c97-fb36d65921c5",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        22,
+        36,
+        28,
+        15
+      ]
+    },
+    "36": {
+      "pos": "OWNER",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "466f18a2-c82b-414a-8fd5-8bba01158470",
+      "effectId": "Eff_Monster_80023_Mon_Skill_StableFireSpar_Explode_Kuosan",
+      "speed": 1,
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2902502",
+  "NodeID": 1,
+  "UID": "c5f957ab-050f-4b6c-95dc-869abfcaf882",
+  "eventIds": [
+    7
+  ],
+  "layer": "Base",
+  "length": 20
+}

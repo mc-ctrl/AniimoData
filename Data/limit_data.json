@@ -1,0 +1,258 @@
+{
+  "37": {
+    "countLimit": 400,
+    "type": 2
+  },
+  "38": {
+    "countLimit": 300,
+    "type": 2
+  },
+  "39": {
+    "countLimit": 180,
+    "type": 2
+  },
+  "40": {
+    "countLimit": 300,
+    "type": 2
+  },
+  "41": {
+    "countLimit": 600,
+    "type": 2
+  },
+  "42": {
+    "countLimit": 600,
+    "type": 2
+  },
+  "35": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "44": {
+    "countLimit": 50,
+    "type": 2
+  },
+  "200": {
+    "countLimit": 5,
+    "type": 1
+  },
+  "61": {
+    "toast": "今日采集数量已达上限，让它们再生长生长吧",
+    "countLimit": 288,
+    "type": 1
+  },
+  "100": {
+    "countLimit": 3,
+    "type": 1
+  },
+  "64": {
+    "toast": "今日采集数量已达上限，让它们再生长生长吧",
+    "countLimit": 2000,
+    "type": 1
+  },
+  "1": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "2": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "3": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "4": {
+    "countLimit": 2000,
+    "type": 1
+  },
+  "63": {
+    "toast": "今日采集数量已达上限，让它们再生长生长吧",
+    "countLimit": 72,
+    "type": 1
+  },
+  "62": {
+    "toast": "今日采集数量已达上限，让它们再生长生长吧",
+    "countLimit": 216,
+    "type": 1
+  },
+  "101": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "60": {
+    "toast": "今日采集数量已达上限，让它们再生长生长吧",
+    "countLimit": 2000,
+    "type": 1
+  },
+  "59": {
+    "type": 2,
+    "countLimit": 3,
+    "showToastTimes": 0
+  },
+  "53": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "57": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "56": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "55": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "54": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "58": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "52": {
+    "countLimit": 1000,
+    "type": 2
+  },
+  "51": {
+    "type": 2,
+    "countLimit": 10,
+    "showToastTimes": 0
+  },
+  "49": {
+    "countLimit": 3,
+    "type": 2
+  },
+  "5": {
+    "countLimit": 10,
+    "type": 2
+  },
+  "48": {
+    "countLimit": 3,
+    "type": 2
+  },
+  "47": {
+    "countLimit": 3,
+    "type": 2
+  },
+  "6": {
+    "countLimit": 50,
+    "type": 2
+  },
+  "46": {
+    "countLimit": 3,
+    "type": 2
+  },
+  "45": {
+    "countLimit": 200,
+    "type": 2
+  },
+  "7": {
+    "countLimit": 1,
+    "type": 3
+  },
+  "43": {
+    "countLimit": 300,
+    "type": 2
+  },
+  "8": {
+    "countLimit": 1,
+    "type": 3
+  },
+  "31": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "9": {
+    "countLimit": 1,
+    "type": 3
+  },
+  "23": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "12": {
+    "countLimit": 10,
+    "type": 1
+  },
+  "11": {
+    "countLimit": 3,
+    "type": 3
+  },
+  "20": {
+    "countLimit": 1,
+    "type": 2
+  },
+  "21": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "22": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "13": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "24": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "14": {
+    "countLimit": 50,
+    "type": 1
+  },
+  "10": {
+    "countLimit": 7,
+    "type": 2
+  },
+  "15": {
+    "countLimit": 1,
+    "type": 1
+  },
+  "25": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "26": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "27": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "28": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "29": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "30": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "32": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "33": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "34": {
+    "countLimit": 9,
+    "type": 1
+  },
+  "36": {
+    "toast": "本周获取数量已达上限",
+    "countLimit": 1000,
+    "type": 2
+  }
+}

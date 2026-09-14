@@ -1,0 +1,35 @@
+[
+  {
+    "icon": "$UI_Img_FavoriteTag_Collection.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Diamond.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Love.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Position_Auxiliary.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Position_Break.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Position_Energy.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Position_Output.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Position_Tank.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Position_Treatment.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_Rare.png"
+  },
+  {
+    "icon": "$UI_Img_FavoriteTag_ShiningStar.png"
+  }
+]

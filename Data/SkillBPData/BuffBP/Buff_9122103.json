@@ -1,0 +1,248 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "sp_regen_p": -1,
+    "sp_inc_rate_v": -1
+  },
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_9122103",
+  "tags": [
+    10
+  ],
+  "onBuffThinkIds": [
+    48
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 9122103,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 18,
+        "UID": "7f9a25fd-0a9d-4212-ae26-6dbb34dabe27",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "163ed60e-aea7-4e13-b9ce-2cde1a2b8440",
+      "NodeID": 16,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "6f55ccd0-b682-4dec-9547-193f187f4ff0",
+        "target": "OWNER",
+        "NodeID": 15,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "38": {
+      "UID": "aec73f41-907c-4835-8206-284a33e0ace2",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        42,
+        43,
+        36
+      ],
+      "NodeID": 38
+    },
+    "39": {
+      "NodeID": 39,
+      "UID": "11eb3ccd-9c9d-42ca-b20a-4e555bb78b84",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "40": {
+      "calcId": 9122103,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 40,
+      "UID": "bbeb8474-de10-42f6-90c7-368fbde56373",
+      "name": "getParamByLuaConfig"
+    },
+    "42": {
+      "epCost": 20,
+      "epCostAddFix": {
+        "rValue": {
+          "calcId": 9122103,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 40,
+          "UID": "bbeb8474-de10-42f6-90c7-368fbde56373",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "623a380a-51f5-4914-92a8-4d01eb141961",
+        "NodeID": 41,
+        "lValue": -1
+      },
+      "NodeID": 42,
+      "UID": "e8bc3d48-5640-4fb7-9e84-4e25778e7121",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": 0,
+      "abilityId": 12210110
+    },
+    "43": {
+      "epCost": 20,
+      "epCostAddFix": {
+        "rValue": {
+          "calcId": 9122103,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 40,
+          "UID": "bbeb8474-de10-42f6-90c7-368fbde56373",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "623a380a-51f5-4914-92a8-4d01eb141961",
+        "NodeID": 41,
+        "lValue": -1
+      },
+      "NodeID": 43,
+      "UID": "253d3406-5cd4-4e72-8032-984c29a86cfa",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": 0,
+      "abilityId": 12210300
+    },
+    "44": {
+      "epCostAddFix": 0,
+      "epCostAddRatio": 0,
+      "UID": "903c680c-8179-450b-bf8a-566f5ae37867",
+      "name": "setOverrideAbilityEpCost",
+      "NodeID": 44
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "b641d0cc-2977-482d-aaf1-5f9cb986059b",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount02",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7dfdb769-d1f5-4999-828c-72a5cffc5ba8",
+      "effectId": "Eff_Parmon_10221_Skill_ElectroShield",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "b6bec037-88e4-4e66-9719-acd485e8a33c",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "45": {
+      "UID": "e8e47bcf-c147-4946-9f0d-aa05cdcf178a",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 45
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "e70a724d-83de-4c2e-b359-1e79767323f7",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount03",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "c93e563a-3f10-4dd5-8f1b-adca72427d6b",
+      "effectId": "Eff_Parmon_10221_Skill_ElectroShield",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "48": {
+      "calcInfo": {
+        "passive_energy_cur": -1
+      },
+      "name": "calcResult",
+      "UID": "b7d9795f-7c31-403c-8545-04f44cf67279",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "49": {
+      "UID": "20a36d3b-d70b-4d72-8cfa-8ce11837dce1",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 49
+    },
+    "18": {
+      "calcId": 9122103,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 18,
+      "UID": "7f9a25fd-0a9d-4212-ae26-6dbb34dabe27",
+      "name": "getParamByLuaConfig"
+    },
+    "46": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "a83259be-16a1-49a5-ac71-a86db1997dc7",
+      "name": "buffStartThink",
+      "NodeID": 46
+    },
+    "33": {
+      "name": "isInCombat",
+      "UID": "e6952f59-d5eb-4705-af3e-e970b86a1285",
+      "target": "OWNER",
+      "NodeID": 33,
+      "not": false
+    },
+    "34": {
+      "actionIds": [
+        42,
+        43,
+        36
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "c8053f9d-d35a-4fed-a822-7f068cd6b5b6",
+      "name": "doActionsByConditions",
+      "NodeID": 34
+    },
+    "36": {
+      "NodeID": 36,
+      "UID": "6e1d5d5f-812c-485a-9bcd-e3d5eb95ee29",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 2,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    13,
+    12,
+    14,
+    39,
+    44,
+    49
+  ],
+  "onBuffStartIds": [
+    3,
+    34,
+    38,
+    45,
+    46
+  ]
+}

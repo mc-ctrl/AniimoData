@@ -1,0 +1,89 @@
+{
+  "stopBurrowActOnTgtNodeId": 69,
+  "stopBurrowTimelineId": 12850905002,
+  "BPName": "ability_12850905",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 12850905001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "51": {
+      "timelineId": 12850905002,
+      "name": "setCombatActionTimeline",
+      "UID": "256eb7e4-344f-4a63-87f1-2b8eb26a76fb",
+      "target": "CASTER",
+      "NodeID": 51
+    },
+    "10": {
+      "actionIds": [
+        51
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "c4a2eff6-a105-46b3-93fa-5356a2363e48",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        44
+      ],
+      "UID": "36d0cf06-b715-4ba1-9e51-0f037f784c8e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        51
+      ],
+      "NodeID": 11
+    },
+    "43": {
+      "targetA": "TARGET",
+      "targetB": "OWNER",
+      "name": "checkDistanceLess",
+      "UID": "3575b361-5d99-4b9d-be93-a1b63c13c343",
+      "distance": 2,
+      "NodeID": 43
+    },
+    "44": {
+      "targetA": "TARGET",
+      "targetB": "OWNER",
+      "name": "checkDistanceLess",
+      "UID": "0a0110b2-a1d8-4764-bc42-ac63cd7bbdda",
+      "distance": 10,
+      "NodeID": 44
+    }
+  },
+  "onAbilityCastIds": [
+    11
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BurrowSkill_CombatExit"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10800011
+}

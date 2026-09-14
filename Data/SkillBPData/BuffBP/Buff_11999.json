@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "ep_cost_reduce_ratio": 1,
+    "ep_regen_v": 12,
+    "ep_regen_force_fix": 9999
+  },
+  "NodeID": 1,
+  "UID": "99a029ff-617b-4623-8aea-94ff84e7dd25",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_11999"
+}

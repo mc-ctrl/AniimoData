@@ -1,0 +1,68 @@
+{
+  "BPName": "ability_912120203",
+  "NodeID": 1,
+  "isAim": true,
+  "desc": "直线冲击波",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "95": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "17978ecc-3df7-48a3-b14f-906e191ef5ca",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Body_Rogue",
+      "target": "OWNER",
+      "NodeID": 95
+    },
+    "72": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "7c849854-55ab-4f34-bc2e-12a1d1635c05",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Up_Body",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "9": {
+      "timelineId": 912120203001,
+      "name": "setCombatActionTimeline",
+      "UID": "d9d131cc-bf6d-4ac2-8da4-e62426c5af0f",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "74": {
+      "name": "stopSoundStr",
+      "UID": "4da78d3c-1f06-408f-990d-316e8ff82cd5",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 74
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_SunBeam_Start",
+    "Skill_SunBeam_End",
+    "Skill_SunBeam_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_SunBeam_Up_Body_XuLi",
+    "Eff_Parmon_10212_Skill_SunBeam_Body_Rogue"
+  ],
+  "searchRelation": 2,
+  "name": "日光束加强版",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "onAbilityEndIds": [
+    95,
+    72,
+    74
+  ],
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 10600515,
+  "UID": "fe6f8bbb-c141-4785-b0da-fd5be6dde2b6"
+}

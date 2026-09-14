@@ -1,0 +1,383 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.76,
+      "NodeID": 37,
+      "UID": "622c16ee-cf7d-4b86-823e-90111fc5d65d"
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "07168e3e-f292-4a63-a8a1-a551cdfe123b",
+      "effectId": "Eff_Parmon_10454_Skill_RockCollision_Bdoy_03_liuli",
+      "speed": 1,
+      "NodeID": 38
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "03db3a82-7228-49db-8215-b18af099ca7a",
+      "effectId": "Eff_Parmon_10454_Skill_RockCollision_Down_01_liuli",
+      "speed": 1,
+      "NodeID": 39
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 40,
+      "UID": "ac4d463c-dabb-4c39-8e6e-fb18e90fc8b6"
+    },
+    "41": {
+      "offsetXYZ": [
+        1.5,
+        3,
+        5
+      ],
+      "templateId": 145401,
+      "name": "createEntity",
+      "UID": "c7c74e5e-9623-4c0e-afda-fd09eb2e5898",
+      "offsetRotation": [
+        0,
+        10,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 41,
+      "pos": "OWNER"
+    },
+    "42": {
+      "offsetXYZ": [
+        -1.5,
+        3,
+        5
+      ],
+      "templateId": 145401,
+      "name": "createEntity",
+      "UID": "7e817a54-13b3-4907-815b-4d85d7e345b5",
+      "offsetRotation": [
+        0,
+        -10,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 42,
+      "pos": "OWNER"
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          33,
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 35,
+      "UID": "45df9763-7691-4c57-8771-856eacbf6316"
+    },
+    "44": {
+      "offsetXYZ": [
+        -2.8,
+        3,
+        2.5
+      ],
+      "templateId": 145401,
+      "name": "createEntity",
+      "UID": "0c31d9dc-68c9-494f-bdb9-5ee3ebf70c3f",
+      "offsetRotation": [
+        0,
+        -80,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 44,
+      "pos": "OWNER"
+    },
+    "9": {
+      "name": "setNextComboAbilityId",
+      "UID": "c01f7070-bd31-4c54-9cf1-d118168f919f",
+      "target": "OWNER",
+      "NodeID": 9,
+      "abilityId": 0
+    },
+    "11": {
+      "UID": "507665a6-1528-47d7-8251-bc4aea054e51",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          21,
+          9
+        ]
+      },
+      "NodeID": 11
+    },
+    "21": {
+      "UID": "c38d460e-5eb7-410f-b750-4d4d7c740ae2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0
+      },
+      "NodeID": 21
+    },
+    "12": {
+      "name": "playAnimation",
+      "UID": "c9504d59-aa76-4b3b-b1ad-e37de0386cf4",
+      "target": "OWNER",
+      "motionWarpingTarget": "TARGET",
+      "motionWarpingXZMaxLen": 10,
+      "motionWarpingXZMinLen": 0,
+      "offsetTime": 0,
+      "animId": "Skill_RockCollision",
+      "warpEndTime": 0.6,
+      "warpStartTime": 0.3,
+      "disableMotion": false,
+      "NodeID": 12
+    },
+    "4": {
+      "UID": "147d7e8d-84af-4bfe-b9ec-5713e39c04ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          19
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "02bdde6e-6543-4517-94f4-b6056308349c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RockCollision",
+      "NodeID": 45
+    },
+    "14": {
+      "UID": "530e10cc-5fbb-49b3-a8f0-190eee42d991",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          45
+        ]
+      },
+      "NodeID": 14
+    },
+    "46": {
+      "calcId": 14540102,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 46,
+      "UID": "af38e32d-ed72-4e89-947e-97e78ee3fe81",
+      "name": "getParamByLuaConfig"
+    },
+    "43": {
+      "offsetXYZ": [
+        2.8,
+        3,
+        2.5
+      ],
+      "templateId": 145401,
+      "name": "createEntity",
+      "UID": "d71ab13c-08e6-488a-a13c-61fc53d8ab39",
+      "offsetRotation": [
+        0,
+        80,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 43,
+      "pos": "OWNER"
+    },
+    "47": {
+      "target": "TARGET",
+      "duration": {
+        "calcId": 14540102,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 46,
+        "UID": "af38e32d-ed72-4e89-947e-97e78ee3fe81",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 10072,
+      "NodeID": 47,
+      "UID": "d8d33594-a019-43cd-83b6-a8366caca3d7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "UID": "38803913-205b-4ea4-a06b-b60e03880f87",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 16
+    },
+    "2": {
+      "UID": "5bb34d5f-07d8-4b6d-818d-58d71f120bd7",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 2
+    },
+    "28": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 26,
+      "NodeID": 28,
+      "UID": "bcdfa63e-4d4a-4d49-8027-1df8fa3008fc",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5000,
+      "actionIds": [
+        26,
+        47
+      ]
+    },
+    "19": {
+      "UID": "6180cfc4-a19f-4304-8e77-c039b312fed6",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 19
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28,
+          41,
+          42,
+          43,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 30,
+      "UID": "63b86ba5-2848-44cf-a646-b11cc6473e63"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 17,
+      "UID": "0e233a76-6638-453a-a288-ffee053ae1e7"
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "54d7a8c4-ca07-491e-8045-ef3fbd0ba12a",
+      "effectId": "Eff_Parmon_10454_Skill_RockCollision_Bdoy_01_liuli",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "26": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14540102,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "6ad1329b-3660-4d79-8837-a198675be799",
+      "target": "TARGET",
+      "NodeID": 26,
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 8,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101
+      }
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5e974bf7-d279-4e22-b66e-7e076d5c1d16",
+      "effectId": "Eff_Parmon_10454_Skill_RockCollision_Bdoy_02_liuli",
+      "speed": 1,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_14540102",
+  "NodeID": 6,
+  "UID": "f8d925ef-bcfa-4a35-b359-89445eb7b576",
+  "eventIds": [
+    4,
+    11,
+    17,
+    14,
+    35,
+    37,
+    40,
+    30
+  ],
+  "layer": "Base",
+  "length": 2.37
+}

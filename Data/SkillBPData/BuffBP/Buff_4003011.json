@@ -1,0 +1,56 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003011",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e7aa8593-e9f8-45a5-919c-ea47613eac17",
+      "effectId": "Eff_Buff_Defense_Arrow_Down",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "77dc749d-e92a-4c3d-ba7e-9594af34d0cf",
+      "effectId": "Eff_Buff_Defense_Arrow_Down",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "7": {
+      "buffId": 4003011,
+      "name": "removeBuff",
+      "UID": "74d8ce93-1619-43fb-8dbd-7a29929ba092",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "33a19885-627c-4f84-8162-2b38aad8f730",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 4003011,
+    "taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    8,
+    5
+  ]
+}

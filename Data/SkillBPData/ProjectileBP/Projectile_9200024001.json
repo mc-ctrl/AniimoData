@@ -1,0 +1,76 @@
+{
+  "duration": 1,
+  "BPName": "ability_9200024",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Avatar_Female_Skill_MagicCap_Bullet",
+  "gravityRatio": 0.1,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 0,
+  "moveSpeed": 3,
+  "onProjectileFinishIds": [
+    29,
+    30,
+    13,
+    18
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "30": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c6a0820c-d2cf-48cb-aeb9-21828faf13b0",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_Disappear",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "13": {
+      "checkGroundLayer": true,
+      "faceToTarget": "OWNER",
+      "performer": "CURPET",
+      "UID": "7d5f83c6-48e5-4f42-80bc-24772b591829",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": "OWNER",
+      "name": "teleport",
+      "offsetXYZ": [
+        0,
+        0,
+        3
+      ],
+      "NodeID": 13
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "482a3379-8883-46d8-9c43-83762f89436e",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_01",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "name": "enablePetProtectState",
+      "NodeID": 18,
+      "absorbEffPosOffsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "UID": "10ce7c32-2db8-4c50-8ce9-e5ca2fc4bbbb",
+      "dissolveEffectDuration": 0,
+      "enable": false,
+      "appearEffectDuration": 0.7
+    }
+  },
+  "acceleration": 0
+}

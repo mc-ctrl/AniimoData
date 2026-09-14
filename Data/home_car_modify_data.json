@@ -1,0 +1,41 @@
+[
+  [
+    {
+      "partId": 1,
+      "icon": "$UI_Img_CampCar_Color_Pink.png",
+      "partValue": 10001
+    },
+    {
+      "partId": 1,
+      "icon": "$UI_Img_CampCar_Color_Yellow.png",
+      "partValue": 10002
+    },
+    {
+      "partId": 1,
+      "icon": "$UI_Img_CampCar_Color_Blue.png",
+      "partValue": 10003
+    },
+    {
+      "partId": 1,
+      "icon": "$UI_Img_CampCar_Color_Green.png",
+      "partValue": 10004
+    }
+  ],
+  [
+    {
+      "partId": 2,
+      "icon": "$UI_Img_CampCar_Material_BambooWeaving.png",
+      "partValue": 20001
+    },
+    {
+      "partId": 2,
+      "icon": "$UI_Img_CampCar_Material_Linen.png",
+      "partValue": 20002
+    },
+    {
+      "partId": 2,
+      "icon": "$UI_Img_CampCar_Material_BlueCoralFleece.png",
+      "partValue": 20003
+    }
+  ]
+]

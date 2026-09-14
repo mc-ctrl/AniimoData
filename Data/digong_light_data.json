@@ -1,0 +1,98 @@
+{
+  "Nightmare": {
+    "fogFadePowerAfter": 2.5,
+    "pepsiPos": 16,
+    "pepsiPosAfter": 16,
+    "fogFadePower": 2.5,
+    "difficultyremark": "噩梦",
+    "ViewLimitNearFog": 7,
+    "AfterViewLimitFarFog": 9,
+    "AfterViewLimitNearFog": 5,
+    "RGB": [
+      0.036,
+      0.042,
+      0.06
+    ],
+    "RGBafter": [
+      0.044,
+      0.036,
+      0.06
+    ],
+    "ViewLimitFarFog": 12,
+    "L0": 0.3,
+    "L1": 0.4,
+    "L2": 0.3
+  },
+  "Normal": {
+    "fogFadePowerAfter": 2.5,
+    "pepsiPos": 16,
+    "pepsiPosAfter": 16,
+    "fogFadePower": 2.5,
+    "difficultyremark": "普通",
+    "ViewLimitNearFog": 12,
+    "AfterViewLimitFarFog": 15,
+    "AfterViewLimitNearFog": 10,
+    "RGB": [
+      0.036,
+      0.042,
+      0.06
+    ],
+    "RGBafter": [
+      0.044,
+      0.036,
+      0.06
+    ],
+    "ViewLimitFarFog": 18,
+    "L0": 0.8,
+    "L1": 0.2,
+    "L2": 0
+  },
+  "Chaos": {
+    "fogFadePowerAfter": 5.5,
+    "pepsiPos": 16,
+    "pepsiPosAfter": 10,
+    "fogFadePower": 2.5,
+    "difficultyremark": "混沌",
+    "ViewLimitNearFog": 7,
+    "AfterViewLimitFarFog": 9,
+    "AfterViewLimitNearFog": 5,
+    "RGB": [
+      0.06,
+      0.036,
+      0.06
+    ],
+    "RGBafter": [
+      0.06,
+      0.023,
+      0.0369
+    ],
+    "ViewLimitFarFog": 12,
+    "L0": 0.2,
+    "L1": 0.4,
+    "L2": 0.4
+  },
+  "Hard": {
+    "fogFadePowerAfter": 2.5,
+    "pepsiPos": 16,
+    "pepsiPosAfter": 16,
+    "fogFadePower": 2.5,
+    "difficultyremark": "困难",
+    "ViewLimitNearFog": 10,
+    "AfterViewLimitFarFog": 12,
+    "AfterViewLimitNearFog": 7,
+    "RGB": [
+      0.036,
+      0.042,
+      0.06
+    ],
+    "RGBafter": [
+      0.044,
+      0.036,
+      0.06
+    ],
+    "ViewLimitFarFog": 15,
+    "L0": 0.4,
+    "L1": 0.4,
+    "L2": 0.2
+  }
+}

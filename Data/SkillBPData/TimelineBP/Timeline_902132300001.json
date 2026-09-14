@@ -1,0 +1,185 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "8f377c88-bb7e-44f1-a2b2-c2de6d76f2c5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          14,
+          17,
+          28
+        ]
+      },
+      "NodeID": 5
+    },
+    "31": {
+      "UID": "14b8215f-ef22-4df3-b2a2-7afdaec28fff",
+      "name": "hideBubbleMsg",
+      "msgId": 2242,
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "7576462b-1566-42ce-a5e6-ac81c5d4d922",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "f17ee754-c4fe-436f-a961-59185c05b792",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.7,
+      "NodeID": 21,
+      "UID": "9f34c77e-a29d-4c1c-9b40-55587e2ee3e5"
+    },
+    "3": {
+      "UID": "fa5e8a2c-328b-44a4-aaf8-e5ec63e1b46c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "337bc2e0-5473-47ba-81e4-334b7fea1f7d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          15,
+          16,
+          18,
+          26
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "89b6a348-0106-4176-af79-ca95f96957bc",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25,
+          22,
+          27,
+          31,
+          30
+        ]
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 10011,
+      "NodeID": 14,
+      "UID": "3e468c0f-be69-47d6-b9b9-670d4a3ec0ba",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "fef17ef6-4923-48cf-9e37-60ea9d7bd275",
+      "target": "CASTER",
+      "NodeID": 15
+    },
+    "25": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "1aee9878-6e15-4b08-86fc-0ee8c30de30d",
+      "effectId": "Eff_Yuanwei_SleepBall_BattleIdle",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "f045b223-a1d3-46ed-ba36-a5d3b53eeb9e",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "EnterCombat",
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2f3a6460-2fea-4de8-94f9-498206efc15f",
+      "effectId": "Eff_Yuanwei_SleepBall_BattleIdle_San",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "acb9c8ae-a63f-4c3e-829e-11f6f8bcbe47",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 17
+    },
+    "29": {
+      "UID": "dbfaa724-9671-4616-b6c5-599b5b848339",
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "3134e1dd-40a6-49c8-bf91-29f359322cd7",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 18
+    },
+    "30": {
+      "buffId": 1145107,
+      "name": "removeBuff",
+      "UID": "f0b8c2ed-cf49-4fd7-b5af-7b27fea7267c",
+      "target": "CASTER",
+      "NodeID": 30
+    },
+    "28": {
+      "UID": "7d52d60c-7528-4d06-95e3-01333720b710",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "LuoDi",
+      "NodeID": 28
+    },
+    "22": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ae2ee513-97a6-4785-9637-45df74613d63",
+      "target": "OWNER",
+      "NodeID": 22,
+      "animId": "Combat_Start"
+    },
+    "16": {
+      "UID": "a001e2f6-a0db-47ad-87f7-edde0df7942f",
+      "name": "restoreAllUI",
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_902132300",
+  "NodeID": 7,
+  "UID": "83b252ed-d240-4b18-a943-38a70708dd83",
+  "eventIds": [
+    5,
+    13,
+    24,
+    21,
+    29
+  ],
+  "layer": "Base",
+  "length": 3.22
+}

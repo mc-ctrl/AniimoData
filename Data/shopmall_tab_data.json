@@ -1,0 +1,70 @@
+[
+  {
+    "currency": [
+      1,
+      3
+    ],
+    "name": 1573013751,
+    "commonSwitchKey": "ShopMall_Rcommend",
+    "defaultSelect": 1,
+    "sort": 1
+  },
+  {
+    "sort": 2,
+    "name": 1303599745,
+    "commonSwitchKey": "ShopMall_MonthlyCard",
+    "bgType": 3,
+    "defaultSelect": 1
+  },
+  {
+    "currency": [
+      1,
+      3
+    ],
+    "name": 1538867123,
+    "commonSwitchKey": "ShopMall_GiftPack",
+    "bgType": 3,
+    "sort": 3
+  },
+  {
+    "currency": [
+      1,
+      3
+    ],
+    "showSearch": 1,
+    "name": 1590825438,
+    "commonSwitchKey": "ShopMall_Avater",
+    "sort": 4
+  },
+  {
+    "currency": [
+      1,
+      3
+    ],
+    "showSearch": 1,
+    "name": 1158482540,
+    "commonSwitchKey": "ShopMall_Item",
+    "sort": 5
+  },
+  {
+    "currency": [
+      1,
+      3,
+      700034
+    ],
+    "name": 1568562115,
+    "commonSwitchKey": "ShopMall_Exchange",
+    "bgType": 3,
+    "sort": 6
+  },
+  {
+    "currency": [
+      1,
+      3
+    ],
+    "name": 2119692942,
+    "commonSwitchKey": "ShopMall_Recharge",
+    "bgType": 3,
+    "sort": 7
+  }
+]

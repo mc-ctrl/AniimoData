@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004070",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "75c0eb2b-0b5e-4314-aad5-6aa45a5d898a",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "12": {
+      "UID": "53dc29af-f8a3-4986-b1e2-62fbf2cf6b4c",
+      "name": "buffStopThink",
+      "buffTemplateId": 4004070,
+      "NodeID": 12
+    },
+    "9": {
+      "rValue": 9,
+      "name": "greater",
+      "UID": "7768c09e-330e-42e1-ac91-db0ab8729142",
+      "NodeID": 9,
+      "lValue": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "5191af04-af14-450b-9b17-cdf65d916713",
+        "target": "OWNER",
+        "NodeID": 8
+      }
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "5887c151-1c4b-45cb-9a81-f0ab8d89f2ed",
+      "target": "OWNER",
+      "buffId": 4004071,
+      "isListenDestroy": true,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": false,
+      "isListenStart": false,
+      "name": "registerBuffLifeEvent"
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 4004071,
+      "NodeID": 10,
+      "UID": "6848d9de-3b5f-4b06-a02b-796f593cee11",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "4dca0176-6e43-4f26-a6d2-2d97c10db5df",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "7": {
+      "actionIds": [
+        10,
+        12
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "1dcdfa61-0ec2-4b43-88e6-dfef0b338f39",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        5
+      ],
+      "NodeID": 7
+    },
+    "2": {
+      "buffId": 4004070,
+      "name": "removeBuff",
+      "UID": "d6fb6744-5942-4609-9c25-19f15e75734e",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5,
+    6
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50014",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    12
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "5b65674e-697f-4fdd-b6b4-25a31c0391fb",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "c23a886f-0901-4f95-aa67-adceccba66f5",
+      "effectId": "Eff_Parmon_10143_Skill_Field_Loop_Follow",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "9": {
+      "actionIds": [
+        7,
+        22
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "2b355137-ee87-49be-a658-cc654f1c77b7",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "21": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c38028f3-4322-4b93-8c0d-e5ad671e0f91",
+      "effectId": "Eff_Parmon_10143_Skill_Field_Loop_Follow",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "16": {
+      "calcInfo": {
+        "instant_dmg_fix": {
+          "rValue": 0.005,
+          "name": "multiply",
+          "UID": "e2357062-e36b-4bd2-b713-2007f38d65e4",
+          "NodeID": 14,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "0492d711-3a85-46d1-b65e-e5df50348bfe",
+            "target": "OWNER",
+            "NodeID": 13,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "rotAngle": 0,
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "weaponSoundType": "blunt",
+        "elementType": 4
+      },
+      "UID": "d0bd89ad-dbe4-4291-aa40-b1d97dcaf3f4",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 16
+    },
+    "5": {
+      "UID": "31f8ac04-e6d4-4b3b-9380-f41a1aafd3c2",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        3,
+        21
+      ],
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "4e024999-b253-4835-9551-b25d40305363",
+      "name": "buffStopThink",
+      "NodeID": 7
+    },
+    "12": {
+      "needEcs": true,
+      "calcResultNodeId": 16,
+      "NodeID": 12,
+      "UID": "17bd8bc6-5fe6-4a07-b5b2-f94334f99da9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        16
+      ]
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffDestroyIds": [
+    22
+  ],
+  "onBuffStartIds": [
+    5,
+    9
+  ]
+}

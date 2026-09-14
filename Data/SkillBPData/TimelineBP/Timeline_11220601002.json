@@ -1,0 +1,202 @@
+{
+  "nodeMap": {
+    "52": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 52,
+      "UID": "917c5c73-0cfb-4e93-9a8b-710d8b6f42d4"
+    },
+    "53": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "71648af3-ece1-43ea-ba5b-3f10a0e711b0",
+      "target": "OWNER",
+      "NodeID": 53,
+      "animId": "Skill_MomentEnergy_Success"
+    },
+    "65": {
+      "calcInfo": {
+        "add_cur_ep_fix": {
+          "rValue": {
+            "calcId": 11220601,
+            "calcType": 2,
+            "paramName": "param1",
+            "NodeID": 66,
+            "UID": "4bc28f60-9e92-4f07-8f45-64b99b64e0e5",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "3d6fa1e2-bb76-4e79-900e-20f92c6b6f9e",
+          "NodeID": 63,
+          "lValue": {
+            "calcId": 11220601,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 62,
+            "UID": "2f3456d1-4dd3-4c3a-8495-6e2c3321394f",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "d0170af3-cb39-4b6d-bf70-c3ae31299d99",
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "66": {
+      "calcId": 11220601,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 66,
+      "UID": "4bc28f60-9e92-4f07-8f45-64b99b64e0e5",
+      "name": "getParamByLuaConfig"
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6aed89d4-0a62-4a12-b2c5-d8cbba1d8b86",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10122_Skill_MomentEnergy",
+      "NodeID": 67
+    },
+    "55": {
+      "UID": "4af9e7ba-bf89-4b73-9ac2-0a88de9c33cd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          53
+        ]
+      },
+      "NodeID": 55
+    },
+    "46": {
+      "UID": "5690dcb2-8719-4339-8617-482688b47d05",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 46
+    },
+    "34": {
+      "UID": "1a11aed7-42f4-40fe-a6c9-93ea1496e5f0",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 34
+    },
+    "62": {
+      "calcId": 11220601,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 62,
+      "UID": "2f3456d1-4dd3-4c3a-8495-6e2c3321394f",
+      "name": "getParamByLuaConfig"
+    },
+    "76": {
+      "UID": "42662c12-ef0a-454f-8907-3f88da1f46f5",
+      "name": "triggerAbilityDelayEnterCd",
+      "NodeID": 76
+    },
+    "58": {
+      "action": {
+        "actionIds": [
+          56,
+          67
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.06,
+      "NodeID": 58,
+      "UID": "65269ee6-0169-44aa-ad99-74d1395fc7ae"
+    },
+    "48": {
+      "UID": "a9cf8d43-e278-4eee-abb4-c259e59d4ad6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "NodeID": 48
+    },
+    "59": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2112206,
+      "NodeID": 59,
+      "UID": "8d1081e9-25ff-4a6b-adee-6ab17bb15994",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1fb98671-66af-40be-a548-9df2c979b387",
+      "effectId": "Eff_Parmon_10122_Skill_MomentEnergy_Hand_liuli",
+      "speed": 1,
+      "NodeID": 56
+    },
+    "50": {
+      "UID": "58213fc4-4cf4-454b-be03-bc66838f4857",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 50
+    },
+    "44": {
+      "UID": "da41a865-17b2-44e9-8b3f-53234686ef23",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 44
+    },
+    "61": {
+      "action": {
+        "actionIds": [
+          65,
+          59,
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.07,
+      "NodeID": 61,
+      "UID": "059ce2d3-3957-4641-a7dc-0045fd464605"
+    },
+    "36": {
+      "UID": "22bc4aea-959c-4210-9d91-9fc9f6145393",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34,
+          44
+        ]
+      },
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11220601",
+  "NodeID": 38,
+  "UID": "93388427-fac6-4a61-a3ca-3a2f4fec9986",
+  "eventIds": [
+    36,
+    48,
+    52,
+    55,
+    58,
+    61
+  ],
+  "layer": "Base",
+  "length": 1.267
+}

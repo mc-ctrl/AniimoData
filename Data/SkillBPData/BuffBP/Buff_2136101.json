@@ -1,0 +1,202 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2136101",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "UID": "26873ec9-26a8-4f99-aa2a-906d10593ad0",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 6
+    },
+    "7": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "bcd57927-7142-4ee7-b367-effa322fd138",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "fc2c400d-a05f-4b2d-a4ba-d00e8d4afddb",
+      "effectId": "Eff_Parmon_10363_Character",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "11": {
+      "name": "checkPetPrototypeId",
+      "UID": "d071d5cf-e1c4-48aa-b3ce-a2d87be602b6",
+      "target": "OWNER",
+      "petPrototypeId": 1036100,
+      "NodeID": 11
+    },
+    "20": {
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "f2850a42-500c-4fa6-b09c-f907bfaaf9f4",
+      "name": "doActionsByConditions",
+      "NodeID": 20,
+      "elseActionIds": [
+        22
+      ]
+    },
+    "21": {
+      "buffId": 2136101,
+      "name": "removeBuff",
+      "UID": "0c31459c-c332-422c-a367-f693385edb20",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e39e5363-2a67-40ad-8c6d-091b15bfcf84",
+      "effectId": "Eff_Parmon_10363_Character",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "16308381-71e0-4a38-abaf-231d7ec3dbba",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "14": {
+      "key": "Sun_Num",
+      "name": "setCacheVal",
+      "UID": "fb78ca6e-0562-44c9-8973-4c5d6137657c",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 14
+    },
+    "15": {
+      "buffId": 2136103,
+      "name": "hasBuff",
+      "UID": "600ba657-9305-4aa5-9c8f-0dc8123917c1",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "16": {
+      "NodeID": 16,
+      "UID": "f23c85e0-5a48-427f-ab06-142cdbaee9b3",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "17": {
+      "NodeID": 17,
+      "UID": "4e6ba0e2-bbbd-4191-bdf1-fce3ded20877",
+      "applyAbilityIds": [
+        13610300,
+        13630310
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 3,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 13,
+      "name": "setIntensitySkillStyle"
+    },
+    "23": {
+      "actionIds": [
+        22
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "1f8ca56f-bb24-4e07-930a-f02d28a73484",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "18": {
+      "NodeID": 18,
+      "UID": "d7f59a3b-225f-49ef-ae5b-230987a18da2",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "22": {
+      "key": "buff_213610122",
+      "duration": 3,
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "e2179aa4-5170-4434-9fd6-7d0d9d575662",
+      "name": "addEntityTimer"
+    },
+    "19": {
+      "name": "isInCombat",
+      "UID": "7bb132f8-17d4-4162-9dd5-9a1ddd0a6a61",
+      "target": "OWNER",
+      "NodeID": 19,
+      "not": false
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3d2f1d0b-6b49-498f-a87e-764f2dfb2062",
+      "effectId": "Eff_Parmon_10361_Character",
+      "speed": 1,
+      "NodeID": 12
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "80e8d062-06af-4357-8bfb-03d312b1d94d",
+      "effectId": "Eff_Parmon_10361_Character",
+      "target": "OWNER",
+      "NodeID": 13
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8,
+    13,
+    14,
+    18
+  ],
+  "onBuffStartIds": [
+    4,
+    16,
+    17,
+    6,
+    20,
+    23
+  ]
+}

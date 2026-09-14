@@ -1,0 +1,64 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114309",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        10,
+        7,
+        9
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "7ab0d5bc-9369-4e45-bbeb-4682ce51658f",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "b47fbf70-ae07-4fae-b91d-3f689951206e",
+      "NodeID": 4,
+      "lValue": {
+        "templateId": 2114309,
+        "name": "getBuffLayer",
+        "UID": "7121edd7-11eb-43da-85c7-6e03072a646d",
+        "target": "OWNER",
+        "NodeID": 3
+      }
+    },
+    "9": {
+      "buffId": 2114309,
+      "name": "removeBuff",
+      "UID": "e26c2f0b-b42a-4137-a1c3-1aad08c22e2f",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cd4d099f-3946-4951-967c-4b4cf83b03a8",
+      "effectId": "Eff_Buff_Disperse",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "7": {
+      "tag": 11,
+      "name": "removeBuffByTag",
+      "UID": "43319ed2-a106-4f0b-8eb0-4d9fb5c8b642",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    5
+  ]
+}

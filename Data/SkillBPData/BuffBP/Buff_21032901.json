@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "8": {
+      "timelineId": 21032901101,
+      "name": "setCombatActionTimeline",
+      "UID": "58d5e773-dfd4-49a9-9680-3a54c2a0f256",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "BPName": "buff_21032901",
+  "dynamicRPCStates": {},
+  "UID": "e462a2b0-3b5a-4cb9-ae84-643738f75092",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

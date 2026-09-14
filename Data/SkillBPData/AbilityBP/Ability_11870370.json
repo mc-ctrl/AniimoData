@@ -1,0 +1,58 @@
+{
+  "BPName": "ability_11870370",
+  "NodeID": 1,
+  "UID": "56cf8e36-23fb-4edf-8411-f2494fef8e20",
+  "abilityIndicator": 1,
+  "abilityParamId": 10300220,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11870370001,
+      "name": "setCombatActionTimeline",
+      "UID": "91855ad9-53ed-41f4-9144-2f980ceb64f1",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Whirlwind"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Boss_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 3,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      6.5,
+      2,
+      0.5
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "POS_OR_TARGET",
+    "maxNum": 0
+  },
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

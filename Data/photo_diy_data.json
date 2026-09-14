@@ -1,0 +1,131 @@
+{
+  "802008": {
+    "id": 802008,
+    "res": "$UI_Icon_Photograph_Sticker8.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photograph_Sticker8.png",
+    "initialClaim": 1
+  },
+  "802009": {
+    "id": 802009,
+    "res": "$UI_Icon_Photograph_Sticker9.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photograph_Sticker9.png",
+    "initialClaim": 1
+  },
+  "802010": {
+    "id": 802010,
+    "res": "$UI_Icon_Photograph_Sticker10.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photograph_Sticker10.png",
+    "initialClaim": 1
+  },
+  "802011": {
+    "id": 802011,
+    "initialClaim": 1,
+    "name": 1089847554,
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker11.png",
+    "res": "$UI_Icon_Photograph_Sticker11.png"
+  },
+  "802012": {
+    "id": 802012,
+    "res": "$UI_Icon_Photograph_Sticker12.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker12.png",
+    "initialClaim": 1
+  },
+  "802013": {
+    "id": 802013,
+    "res": "$UI_Icon_Photograph_Sticker13.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker13.png",
+    "initialClaim": 1
+  },
+  "802016": {
+    "id": 802016,
+    "res": "$UI_Icon_Photograph_Sticker16.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker16.png",
+    "initialClaim": 1
+  },
+  "802017": {
+    "id": 802017,
+    "res": "$UI_Icon_Photograph_Sticker17.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker17.png",
+    "initialClaim": 1
+  },
+  "802018": {
+    "id": 802018,
+    "res": "$UI_Icon_Photograph_Sticker18.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker18.png",
+    "initialClaim": 1
+  },
+  "802001": {
+    "id": 802001,
+    "initialClaim": 1,
+    "name": 1277693345,
+    "type": 1,
+    "icon": "$UI_Icon_Photograph_Sticker1.png",
+    "res": "$UI_Icon_Photograph_Sticker1.png"
+  },
+  "802002": {
+    "id": 802002,
+    "res": "$UI_Icon_Photograph_Sticker2.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photograph_Sticker2.png",
+    "initialClaim": 1
+  },
+  "802003": {
+    "id": 802003,
+    "res": "$UI_Icon_Photograph_Sticker3.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photograph_Sticker3.png",
+    "initialClaim": 1
+  },
+  "802004": {
+    "id": 802004,
+    "res": "$UI_Icon_Photograph_Sticker4.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photograph_Sticker4.png",
+    "initialClaim": 1
+  },
+  "802005": {
+    "id": 802005,
+    "res": "$UI_Icon_Photograph_Sticker5.png",
+    "type": 1,
+    "icon": "$UI_Icon_Photograph_Sticker5.png",
+    "initialClaim": 1
+  },
+  "802006": {
+    "id": 802006,
+    "initialClaim": 1,
+    "name": 1635376091,
+    "type": 2,
+    "icon": "$UI_Icon_Photograph_Sticker6.png",
+    "res": "$UI_Icon_Photograph_Sticker6.png"
+  },
+  "802020": {
+    "id": 802020,
+    "res": "$UI_Icon_Photograph_Sticker20.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker20.png",
+    "initialClaim": 1
+  },
+  "802007": {
+    "id": 802007,
+    "res": "$UI_Icon_Photograph_Sticker7.png",
+    "type": 2,
+    "icon": "$UI_Icon_Photograph_Sticker7.png",
+    "initialClaim": 1
+  },
+  "802019": {
+    "id": 802019,
+    "res": "$UI_Icon_Photograph_Sticker19.png",
+    "type": 3,
+    "icon": "$UI_Icon_Photograph_Sticker19.png",
+    "initialClaim": 1
+  }
+}

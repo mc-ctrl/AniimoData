@@ -1,0 +1,136 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118707",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "d47a7c80-2d74-45ce-9508-b5fa65dbe3b9",
+        "NodeID": 8,
+        "lValue": {
+          "rValue": 0.1,
+          "name": "multiply",
+          "UID": "420721d4-09b9-4229-9342-026a427dfb5b",
+          "NodeID": 7,
+          "lValue": {
+            "key": "10187Times",
+            "name": "getCacheVal",
+            "UID": "9e1e3846-e555-4288-97fc-d3d37b011056",
+            "target": "OWNER",
+            "NodeID": 6
+          }
+        }
+      },
+      "name": "multiply",
+      "UID": "86c8dba3-c6f7-436f-8a39-f35a0ab5fd8c",
+      "NodeID": 4,
+      "lValue": {
+        "rValue": {
+          "calcId": 2118707,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 9,
+          "UID": "76eda2c2-1670-4e96-9cb4-a646ca40edec",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "d8a2e461-f124-4ae3-a259-e576fc1c70ff",
+        "NodeID": 3,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "91e05c4d-2d6d-4bde-ba55-5138bdff6549",
+          "target": "OWNER",
+          "NodeID": 2,
+          "attributeName": "hp_max_cur"
+        }
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Shield_Wind"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14
+  ],
+  "nodeMap": {
+    "13": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 2118707,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 17,
+            "UID": "faca6708-9c4c-4de7-aa9f-16f067b5821c",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "0bdef8ca-cf72-4ce9-8d3d-f1bd7e82c3b4",
+          "NodeID": 11,
+          "lValue": {
+            "UID": "0d7d68c3-c43a-4501-9f5f-8d600339b8d0",
+            "name": "getBuffShieldPoint",
+            "NodeID": 10
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "864d7df1-a1db-44df-89bb-68014c2903d4",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "9": {
+      "calcId": 2118707,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "76eda2c2-1670-4e96-9cb4-a646ca40edec",
+      "name": "getParamByLuaConfig"
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "2272e732-4e20-4ee2-99d6-809c29d097a8",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "0d7d68c3-c43a-4501-9f5f-8d600339b8d0",
+      "name": "getBuffShieldPoint",
+      "NodeID": 10
+    },
+    "17": {
+      "calcId": 2118707,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 17,
+      "UID": "faca6708-9c4c-4de7-aa9f-16f067b5821c",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "UID": "534c6547-fbb7-403d-b071-a792015da64f",
+      "destroyReason": "timeout",
+      "name": "buffDestroyReason",
+      "NodeID": 16
+    }
+  }
+}

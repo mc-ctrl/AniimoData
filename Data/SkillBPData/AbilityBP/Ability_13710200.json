@@ -1,0 +1,64 @@
+{
+  "BPName": "ability_13710200",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        89
+      ],
+      "UID": "25e90d52-a38a-4101-b72a-fc5afc34cd30",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        96
+      ],
+      "NodeID": 10
+    },
+    "96": {
+      "timelineId": 13710200002,
+      "name": "setCombatActionTimeline",
+      "UID": "660afbc4-fce7-4f9d-897b-886943808e89",
+      "target": "CASTER",
+      "NodeID": 96
+    },
+    "9": {
+      "timelineId": 13710200001,
+      "name": "setCombatActionTimeline",
+      "UID": "e27f2878-866c-4a76-aff2-0b0d49af5fa7",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "89": {
+      "UID": "a734affe-2bf0-4586-bc3f-e86b916b6f2a",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 89
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 12,
+  "preloadAnims": [
+    "Skill_Sweep_Tail"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10371_Skill_Tail_Light_Release",
+    "Eff_Parmon_10371_Skill_Tail_Light"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 11300070
+}

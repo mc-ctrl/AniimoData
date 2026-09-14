@@ -1,0 +1,510 @@
+{
+  "BossRush_1018701": {
+    "recommendPetRef": [
+      601,
+      901
+    ],
+    "element": [
+      "Electric",
+      "Holy"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1019401": {
+    "recommendPetRef": [
+      601,
+      201,
+      701
+    ],
+    "element": [
+      "Electric",
+      "Grass",
+      "Ice"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1020701": {
+    "recommendPetRef": [
+      101,
+      501,
+      401
+    ],
+    "element": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1021201": {
+    "recommendPetRef": [
+      101,
+      501,
+      401
+    ],
+    "element": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1022201": {
+    "recommendPetRef": [
+      701,
+      401
+    ],
+    "element": [
+      "Ice",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1026201": {
+    "recommendPetRef": [
+      601,
+      901
+    ],
+    "element": [
+      "Electric",
+      "Holy"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1028301": {
+    "recommendPetRef": [
+      301,
+      501,
+      401
+    ],
+    "element": [
+      "Water",
+      "Wind",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1028501": {
+    "recommendPetRef": [
+      301,
+      201
+    ],
+    "element": [
+      "Water",
+      "Grass"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1045401": {
+    "recommendPetRef": [
+      301,
+      201
+    ],
+    "element": [
+      "Water",
+      "Grass"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1050301": {
+    "recommendPetRef": [
+      301,
+      201
+    ],
+    "element": [
+      "Water",
+      "Grass"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_1": {
+    "recommendPetRef": [
+      1,
+      5,
+      4
+    ],
+    "element": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_10": {
+    "recommendPetRef": [
+      1,
+      5,
+      4
+    ],
+    "element": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_11": {
+    "recommendPetRef": [
+      2,
+      6,
+      7
+    ],
+    "element": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_12": {
+    "recommendPetRef": [
+      3,
+      8
+    ],
+    "element": [
+      "Water",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_2": {
+    "recommendPetRef": [
+      1,
+      5,
+      4
+    ],
+    "element": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_3": {
+    "recommendPetRef": [
+      1,
+      5,
+      4
+    ],
+    "element": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_4": {
+    "recommendPetRef": [
+      2,
+      6,
+      7
+    ],
+    "element": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_5": {
+    "recommendPetRef": [
+      2,
+      6,
+      7
+    ],
+    "element": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_6": {
+    "recommendPetRef": [
+      2,
+      6,
+      7
+    ],
+    "element": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_7": {
+    "recommendPetRef": [
+      3,
+      8
+    ],
+    "element": [
+      "Water",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_9": {
+    "recommendPetRef": [
+      3,
+      8
+    ],
+    "element": [
+      "Water",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "Rogue_8": {
+    "recommendPetRef": [
+      3,
+      8
+    ],
+    "element": [
+      "Water",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1001201": {
+    "recommendPetRef": [
+      501,
+      901
+    ],
+    "element": [
+      "Wind",
+      "Holy"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1002501": {
+    "recommendPetRef": [
+      301,
+      801
+    ],
+    "element": [
+      "Water",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1002701": {
+    "recommendPetRef": [
+      501,
+      901
+    ],
+    "element": [
+      "Wind",
+      "Holy"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1003201": {
+    "recommendPetRef": [
+      501,
+      901
+    ],
+    "element": [
+      "Wind",
+      "Holy"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1004501": {
+    "recommendPetRef": [
+      501,
+      601,
+      701
+    ],
+    "element": [
+      "Wind",
+      "Electric",
+      "Ice"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1005301": {
+    "recommendPetRef": [
+      301,
+      801
+    ],
+    "element": [
+      "Water",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1013301": {
+    "recommendPetRef": [
+      101,
+      801
+    ],
+    "element": [
+      "Fire",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1014301": {
+    "recommendPetRef": [
+      701,
+      401
+    ],
+    "element": [
+      "Ice",
+      "Dark"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1016301": {
+    "recommendPetRef": [
+      101,
+      801
+    ],
+    "element": [
+      "Fire",
+      "Rock"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  },
+  "BossRush_1017401": {
+    "recommendPetRef": [
+      601,
+      201,
+      701
+    ],
+    "element": [
+      "Electric",
+      "Grass",
+      "Ice"
+    ],
+    "commonPetRef": "Default",
+    "orderTier": [
+      "FUNCTION_ID",
+      "CP"
+    ]
+  }
+}

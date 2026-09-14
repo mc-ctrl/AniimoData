@@ -1,0 +1,232 @@
+{
+  "nodeMap": {
+    "96": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "4ea3580d-474f-458a-9458-d22a0e127884",
+      "target": "OWNER",
+      "NodeID": 96
+    },
+    "97": {
+      "actionIds": [
+        99
+      ],
+      "conditionActionIds": [
+        96
+      ],
+      "UID": "1bcc26c1-d03c-4183-b9f2-4771e4df1de0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        100
+      ],
+      "NodeID": 97
+    },
+    "82": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e54a9375-0e00-491e-b708-2d2a49f964d9",
+      "target": "OWNER",
+      "NodeID": 82,
+      "animId": "Skill_MudBowling_Start"
+    },
+    "98": {
+      "action": {
+        "actionIds": [
+          97
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 98,
+      "UID": "593390a5-cafe-49d0-a4a2-843cc2d24633"
+    },
+    "7": {
+      "timelineId": 14310100001,
+      "name": "jumpToNextTimeline",
+      "UID": "f1124232-311e-4e3e-9ec7-f647329bf3b4",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 44,
+      "UID": "dc06121c-02ad-423a-b546-89a7a7213377"
+    },
+    "100": {
+      "duration": 0.45,
+      "name": "puppetPreCastAction",
+      "UID": "a56fcce2-955c-46b0-9b36-87323f8cac24",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 100
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        101
+      ],
+      "UID": "4b301007-3f2d-4740-9a4e-4935f35da948",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 11
+    },
+    "12": {
+      "UID": "b0d6cfb5-6388-4e87-aba8-46eb2fd59401",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    },
+    "74": {
+      "action": {
+        "actionIds": [
+          77,
+          72
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 74,
+      "UID": "95446211-25f9-4b7d-9e05-50a9e38f3b49"
+    },
+    "10": {
+      "UID": "63f4e547-dc6d-4e2d-9a7a-04919c5e62a3",
+      "name": "registerStopChargeEvent",
+      "chargeTimeActions": [
+        {
+          "actionIds": [
+            7
+          ],
+          "chargeTime": 0
+        },
+        {
+          "actionIds": [
+            56
+          ],
+          "chargeTime": 0.2
+        }
+      ],
+      "NodeID": 10
+    },
+    "72": {
+      "startPosOffset": [
+        0,
+        0.1,
+        0
+      ],
+      "duration": 5,
+      "name": "enableSupportAimEffect",
+      "UID": "37bd5ab7-db83-4e82-bbfa-da3028df9daf",
+      "startNoGravityTime": 0,
+      "gravityRatio": 1,
+      "rotationOffset": [
+        20,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 72,
+      "enable": true,
+      "moveSpeed": 20
+    },
+    "47": {
+      "UID": "c7202435-be5f-4825-b318-855107efa902",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 47
+    },
+    "77": {
+      "UID": "d807ac0c-2bd3-4370-92d3-9545edaa2b7e",
+      "name": "enableSkillThrowState",
+      "enable": true,
+      "NodeID": 77
+    },
+    "49": {
+      "UID": "849b8512-d94b-4674-90cd-f5a0376f57c1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          47,
+          82
+        ]
+      },
+      "NodeID": 49
+    },
+    "101": {
+      "name": "checkInControl",
+      "NodeID": 101
+    },
+    "99": {
+      "duration": 0.2,
+      "name": "puppetPreCastAction",
+      "UID": "30dbb8e8-fe0f-43c4-8d3c-78064aad91cb",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 99
+    },
+    "56": {
+      "timelineId": 14310100003,
+      "name": "jumpToNextTimeline",
+      "UID": "49a1ab29-905e-40da-ae9d-0c15ad18aa20",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "42": {
+      "NodeID": 42,
+      "UID": "9771e320-e0ce-4257-be7c-f8322e52cff7",
+      "blendTime": 0.6,
+      "cameraPitchOffset": 0,
+      "cameraYawOffset": -5,
+      "maxPitch": 25,
+      "shoulderX": 0.8,
+      "shoulderY": 0,
+      "shoulderZ": -0.3,
+      "name": "setIsInAim",
+      "aimAnim": "Skill_MudBowling_Loop",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "minPitch": -35,
+      "showAimUI": false,
+      "val": true
+    }
+  },
+  "BPName": "ability_14310100",
+  "NodeID": 14,
+  "UID": "7c0a90df-c3cb-40c4-b57d-332730182290",
+  "eventIds": [
+    49,
+    44,
+    12,
+    74,
+    98
+  ],
+  "layer": "Base",
+  "length": 99
+}

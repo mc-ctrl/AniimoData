@@ -1,0 +1,79 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91403010",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "onBuffRefreshIds": [
+    4
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "rValue": 7,
+      "name": "greater",
+      "UID": "79b9dde8-5958-405f-af80-892486bf50d7",
+      "NodeID": 3,
+      "lValue": {
+        "templateId": 91403010,
+        "name": "getBuffLayer",
+        "UID": "34de3086-09b5-49da-b440-d4baf8a87840",
+        "target": "OWNER",
+        "NodeID": 2
+      }
+    },
+    "4": {
+      "actionIds": [
+        5,
+        7,
+        8,
+        10
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "4815c022-6d1d-44aa-98b1-54f87fab1729",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "70dfeee1-6c5f-48ea-99bd-5eeec6ba072e",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 9
+    },
+    "10": {
+      "duration": 10,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "a561ff3b-cbfc-4d3c-8dbf-f54399d013ba",
+      "name": "addTimer"
+    },
+    "8": {
+      "UID": "ab4a7870-be35-4d15-b068-2817421b2b32",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 8
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91403011,
+      "NodeID": 7,
+      "UID": "ce262e92-7568-45b0-80e9-c35c5a2e49d7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "buffId": 91403010,
+      "name": "removeBuff",
+      "UID": "e0eb9fc0-c6cb-495c-9bab-8459483b2cc1",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {}
+}

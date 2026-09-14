@@ -1,0 +1,405 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "templateId": 2101301101,
+      "name": "createProjectile",
+      "UID": "c184393a-363c-4d0e-abfd-fb8d1b084a16",
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ],
+      "pos": {
+        "name": "getTargetOffsetPos",
+        "UID": "80b10173-0898-4f70-8999-d92a9fce736f",
+        "target": "OWNER",
+        "offset": {
+          "NodeID": 19,
+          "name": "constVector3",
+          "UID": "6d31ead0-57c1-4ef6-b000-c68698d0443e",
+          "x": 0,
+          "y": {
+            "key": "Height10013",
+            "name": "getCacheVal",
+            "UID": "ae2ae133-9d33-431e-bbc1-7fed3893622d",
+            "target": "OWNER",
+            "NodeID": 18
+          },
+          "z": 0
+        },
+        "NodeID": 20
+      },
+      "projectileType": "Free3d",
+      "NodeID": 5,
+      "rotation": "ToTarget",
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "ad5fe519-ce19-41dc-a5a0-3f66a69574ee",
+        "target": "OWNER",
+        "offset": {
+          "NodeID": 13,
+          "name": "constVector3",
+          "UID": "80b57beb-65b6-4e55-bced-46013e9b139f",
+          "x": {
+            "rValue": {
+              "rValue": {
+                "UID": "d29a0e78-682c-40f4-80f8-5bab01c2bcab",
+                "number": 0.2,
+                "name": "constNumber",
+                "NodeID": 17
+              },
+              "name": "div",
+              "UID": "e722f31f-a1e1-43e4-9450-600926b9727a",
+              "NodeID": 16,
+              "lValue": {
+                "UID": "fa10c194-f4b0-4349-b878-94831bb9bab1",
+                "target": "OWNER",
+                "name": "getBodySize",
+                "NodeID": 15
+              }
+            },
+            "name": "multiply",
+            "UID": "91820b77-e77a-4616-8f72-9f93cac83bce",
+            "NodeID": 12,
+            "lValue": {
+              "NodeID": 11,
+              "UID": "375ba252-bbca-4602-b534-33d732329be5",
+              "min": 3,
+              "max": 3.5,
+              "name": "random"
+            }
+          },
+          "y": 0,
+          "z": 0
+        },
+        "NodeID": 14
+      }
+    },
+    "38": {
+      "rValue": 1,
+      "name": "greater",
+      "UID": "b78ec455-dd30-431b-9d77-7279b3563566",
+      "NodeID": 38,
+      "lValue": {
+        "NodeID": 37,
+        "UID": "9b31612e-19cc-415e-87c9-c7a209a99cef",
+        "min": 0,
+        "max": 2,
+        "name": "random"
+      }
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "c77c1d73-bd64-4a3f-a6a7-f117eac17161",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 6
+    },
+    "7": {
+      "key": "buff_21013017",
+      "duration": 0.55,
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "3cfb0876-dd6b-4b48-b526-102c18f66a33",
+      "name": "addEntityTimer"
+    },
+    "31": {
+      "UID": "9ec36a22-dd77-41c4-86dd-5a78293e49a3",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 31
+    },
+    "11": {
+      "NodeID": 11,
+      "UID": "375ba252-bbca-4602-b534-33d732329be5",
+      "min": 3,
+      "max": 3.5,
+      "name": "random"
+    },
+    "20": {
+      "name": "getTargetOffsetPos",
+      "UID": "80b10173-0898-4f70-8999-d92a9fce736f",
+      "target": "OWNER",
+      "offset": {
+        "NodeID": 19,
+        "name": "constVector3",
+        "UID": "6d31ead0-57c1-4ef6-b000-c68698d0443e",
+        "x": 0,
+        "y": {
+          "key": "Height10013",
+          "name": "getCacheVal",
+          "UID": "ae2ae133-9d33-431e-bbc1-7fed3893622d",
+          "target": "OWNER",
+          "NodeID": 18
+        },
+        "z": 0
+      },
+      "NodeID": 20
+    },
+    "24": {
+      "templateId": 2101301102,
+      "name": "createProjectile",
+      "UID": "ca064817-a83b-416f-ace6-6722d9a76be3",
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ],
+      "pos": {
+        "name": "getTargetOffsetPos",
+        "UID": "eeafb37a-68c7-4554-9989-c2afb36937b2",
+        "target": "OWNER",
+        "offset": {
+          "NodeID": 35,
+          "name": "constVector3",
+          "UID": "fedf168f-4f53-4790-87df-dac9dd687040",
+          "x": 0,
+          "y": {
+            "key": "Height10013",
+            "name": "getCacheVal",
+            "UID": "3765a0c3-4d63-451a-83c4-d71d6513b4e5",
+            "target": "OWNER",
+            "NodeID": 34
+          },
+          "z": 0
+        },
+        "NodeID": 36
+      },
+      "projectileType": "Free3d",
+      "NodeID": 24,
+      "rotation": "ToTarget",
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "9b8d1a13-1b0e-434d-b849-7be5fc5a0e8f",
+        "target": "OWNER",
+        "offset": {
+          "NodeID": 29,
+          "name": "constVector3",
+          "UID": "dd580de6-6bfa-40c8-95de-48fe553ac5c9",
+          "x": {
+            "rValue": {
+              "rValue": {
+                "UID": "6f86537d-fc1b-48ea-b8ad-21ca5213573b",
+                "number": 0.2,
+                "name": "constNumber",
+                "NodeID": 33
+              },
+              "name": "div",
+              "UID": "987a9a58-d307-46a6-90f4-e42095ced44e",
+              "NodeID": 32,
+              "lValue": {
+                "UID": "9ec36a22-dd77-41c4-86dd-5a78293e49a3",
+                "target": "OWNER",
+                "name": "getBodySize",
+                "NodeID": 31
+              }
+            },
+            "name": "multiply",
+            "UID": "7719db2a-2e28-4e66-b05b-7797ddfc6426",
+            "NodeID": 28,
+            "lValue": {
+              "NodeID": 27,
+              "UID": "9401320e-3ca7-4281-b538-c21fd725d720",
+              "min": -3.5,
+              "max": -3,
+              "name": "random"
+            }
+          },
+          "y": 0,
+          "z": 0
+        },
+        "NodeID": 30
+      }
+    },
+    "14": {
+      "name": "getTargetOffsetPos",
+      "UID": "ad5fe519-ce19-41dc-a5a0-3f66a69574ee",
+      "target": "OWNER",
+      "offset": {
+        "NodeID": 13,
+        "name": "constVector3",
+        "UID": "80b57beb-65b6-4e55-bced-46013e9b139f",
+        "x": {
+          "rValue": {
+            "rValue": {
+              "UID": "d29a0e78-682c-40f4-80f8-5bab01c2bcab",
+              "number": 0.2,
+              "name": "constNumber",
+              "NodeID": 17
+            },
+            "name": "div",
+            "UID": "e722f31f-a1e1-43e4-9450-600926b9727a",
+            "NodeID": 16,
+            "lValue": {
+              "UID": "fa10c194-f4b0-4349-b878-94831bb9bab1",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 15
+            }
+          },
+          "name": "multiply",
+          "UID": "91820b77-e77a-4616-8f72-9f93cac83bce",
+          "NodeID": 12,
+          "lValue": {
+            "NodeID": 11,
+            "UID": "375ba252-bbca-4602-b534-33d732329be5",
+            "min": 3,
+            "max": 3.5,
+            "name": "random"
+          }
+        },
+        "y": 0,
+        "z": 0
+      },
+      "NodeID": 14
+    },
+    "15": {
+      "UID": "fa10c194-f4b0-4349-b878-94831bb9bab1",
+      "target": "OWNER",
+      "name": "getBodySize",
+      "NodeID": 15
+    },
+    "16": {
+      "rValue": {
+        "UID": "d29a0e78-682c-40f4-80f8-5bab01c2bcab",
+        "number": 0.2,
+        "name": "constNumber",
+        "NodeID": 17
+      },
+      "name": "div",
+      "UID": "e722f31f-a1e1-43e4-9450-600926b9727a",
+      "NodeID": 16,
+      "lValue": {
+        "UID": "fa10c194-f4b0-4349-b878-94831bb9bab1",
+        "target": "OWNER",
+        "name": "getBodySize",
+        "NodeID": 15
+      }
+    },
+    "27": {
+      "NodeID": 27,
+      "UID": "9401320e-3ca7-4281-b538-c21fd725d720",
+      "min": -3.5,
+      "max": -3,
+      "name": "random"
+    },
+    "30": {
+      "name": "getTargetOffsetPos",
+      "UID": "9b8d1a13-1b0e-434d-b849-7be5fc5a0e8f",
+      "target": "OWNER",
+      "offset": {
+        "NodeID": 29,
+        "name": "constVector3",
+        "UID": "dd580de6-6bfa-40c8-95de-48fe553ac5c9",
+        "x": {
+          "rValue": {
+            "rValue": {
+              "UID": "6f86537d-fc1b-48ea-b8ad-21ca5213573b",
+              "number": 0.2,
+              "name": "constNumber",
+              "NodeID": 33
+            },
+            "name": "div",
+            "UID": "987a9a58-d307-46a6-90f4-e42095ced44e",
+            "NodeID": 32,
+            "lValue": {
+              "UID": "9ec36a22-dd77-41c4-86dd-5a78293e49a3",
+              "target": "OWNER",
+              "name": "getBodySize",
+              "NodeID": 31
+            }
+          },
+          "name": "multiply",
+          "UID": "7719db2a-2e28-4e66-b05b-7797ddfc6426",
+          "NodeID": 28,
+          "lValue": {
+            "NodeID": 27,
+            "UID": "9401320e-3ca7-4281-b538-c21fd725d720",
+            "min": -3.5,
+            "max": -3,
+            "name": "random"
+          }
+        },
+        "y": 0,
+        "z": 0
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "rValue": {
+        "UID": "6f86537d-fc1b-48ea-b8ad-21ca5213573b",
+        "number": 0.2,
+        "name": "constNumber",
+        "NodeID": 33
+      },
+      "name": "div",
+      "UID": "987a9a58-d307-46a6-90f4-e42095ced44e",
+      "NodeID": 32,
+      "lValue": {
+        "UID": "9ec36a22-dd77-41c4-86dd-5a78293e49a3",
+        "target": "OWNER",
+        "name": "getBodySize",
+        "NodeID": 31
+      }
+    },
+    "40": {
+      "key": "10013ID",
+      "name": "setCacheVal",
+      "UID": "57e14d13-ab10-4e7d-b06c-d92b75065656",
+      "target": "OWNER",
+      "val": {
+        "UID": "672261a7-0f67-4218-8608-407a2ecfa035",
+        "target": "SRC",
+        "name": "getTargetId",
+        "NodeID": 39
+      },
+      "NodeID": 40
+    },
+    "37": {
+      "NodeID": 37,
+      "UID": "9b31612e-19cc-415e-87c9-c7a209a99cef",
+      "min": 0,
+      "max": 2,
+      "name": "random"
+    },
+    "36": {
+      "name": "getTargetOffsetPos",
+      "UID": "eeafb37a-68c7-4554-9989-c2afb36937b2",
+      "target": "OWNER",
+      "offset": {
+        "NodeID": 35,
+        "name": "constVector3",
+        "UID": "fedf168f-4f53-4790-87df-dac9dd687040",
+        "x": 0,
+        "y": {
+          "key": "Height10013",
+          "name": "getCacheVal",
+          "UID": "3765a0c3-4d63-451a-83c4-d71d6513b4e5",
+          "target": "OWNER",
+          "NodeID": 34
+        },
+        "z": 0
+      },
+      "NodeID": 36
+    }
+  },
+  "BPName": "buff_2101301",
+  "dynamicRPCStates": {},
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    40
+  ]
+}

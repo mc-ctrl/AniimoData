@@ -1,0 +1,194 @@
+{
+  "$P_Parmon_10051.prefab": {
+    "aabbExtent": [
+      1,
+      0.475,
+      1
+    ]
+  },
+  "$P_Parmon_10152.prefab": {},
+  "$P_Parmon_10153.prefab": {},
+  "$P_Parmon_10161.prefab": {
+    "aabbExtent": [
+      1,
+      0.5,
+      1
+    ]
+  },
+  "$P_Parmon_10031.prefab": {
+    "aabbExtent": [
+      1,
+      0.49,
+      1
+    ]
+  },
+  "$P_Parmon_10053.prefab": {
+    "aabbExtent": [
+      1,
+      0.975,
+      1
+    ]
+  },
+  "$P_Avatar_Girl.prefab": {},
+  "$P_Parmon_10011.prefab": {
+    "aabbCenter": [
+      0,
+      0,
+      0
+    ],
+    "aabbExtent": [
+      1,
+      0.48,
+      1
+    ]
+  },
+  "$P_Parmon_10162.prefab": {
+    "aabbExtent": [
+      1,
+      0.7,
+      1
+    ]
+  },
+  "$P_Parmon_10032.prefab": {
+    "aabbExtent": [
+      1,
+      0.875,
+      1
+    ]
+  },
+  "$P_Parmon_10191.prefab": {
+    "aabbExtent": [
+      1,
+      0.4,
+      1
+    ]
+  },
+  "$P_Parmon_10221.prefab": {},
+  "$P_Parmon_10071.prefab": {},
+  "$P_Parmon_10072.prefab": {},
+  "$P_Parmon_10081.prefab": {},
+  "$P_Parmon_10171.prefab": {
+    "aabbExtent": [
+      1,
+      0.445,
+      1
+    ]
+  },
+  "$P_Parmon_10083.prefab": {},
+  "$P_Parmon_10151.prefab": {},
+  "$P_Parmon_10131.prefab": {
+    "aabbExtent": [
+      1,
+      0.55,
+      1
+    ]
+  },
+  "$P_Parmon_10201.prefab": {},
+  "$P_Parmon_10194.prefab": {},
+  "$P_Parmon_10041.prefab": {},
+  "$P_Parmon_10192.prefab": {
+    "aabbExtent": [
+      1,
+      0.69,
+      1
+    ]
+  },
+  "$P_Parmon_10132.prefab": {
+    "aabbExtent": [
+      1,
+      0.8,
+      1
+    ]
+  },
+  "$P_Parmon_10022.prefab": {
+    "aabbExtent": [
+      1,
+      0.975,
+      1
+    ]
+  },
+  "$P_Parmon_10187.prefab": {
+    "aabbExtent": [
+      1,
+      0.765,
+      1
+    ]
+  },
+  "$P_Parmon_10173.prefab": {},
+  "$P_Parmon_10133.prefab": {
+    "aabbExtent": [
+      1,
+      0.75,
+      1
+    ]
+  },
+  "$P_Parmon_10023.prefab": {
+    "aabbExtent": [
+      1,
+      0.975,
+      1
+    ]
+  },
+  "$P_Parmon_10042.prefab": {
+    "aabbExtent": [
+      1,
+      0.55,
+      1
+    ]
+  },
+  "$P_Parmon_10185.prefab": {
+    "aabbExtent": [
+      1,
+      0.635,
+      1
+    ]
+  },
+  "$P_Parmon_10174.prefab": {
+    "aabbExtent": [
+      1,
+      0.68,
+      1
+    ]
+  },
+  "$P_Parmon_10082.prefab": {},
+  "$P_Parmon_10141.prefab": {},
+  "$P_Parmon_10172.prefab": {
+    "aabbExtent": [
+      1,
+      0.625,
+      1
+    ]
+  },
+  "$P_Parmon_10012.prefab": {
+    "aabbExtent": [
+      1,
+      0.675,
+      1
+    ]
+  },
+  "$P_Parmon_10043.prefab": {
+    "aabbExtent": [
+      1,
+      0.975,
+      1
+    ]
+  },
+  "$P_Parmon_10142.prefab": {},
+  "$P_Parmon_10181.prefab": {
+    "aabbExtent": [
+      1,
+      0.4,
+      1
+    ]
+  },
+  "$P_Parmon_10122.prefab": {},
+  "$P_Parmon_10143.prefab": {},
+  "$P_Parmon_10021.prefab": {},
+  "$P_Parmon_10052.prefab": {
+    "aabbExtent": [
+      1,
+      0.725,
+      1
+    ]
+  }
+}

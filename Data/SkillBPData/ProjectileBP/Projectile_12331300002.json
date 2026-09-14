@@ -1,0 +1,63 @@
+{
+  "duration": 2.5,
+  "BPName": "ability_12331300",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10233_Mon_Skill_WingScales02",
+  "onProjectileGroundedIds": [
+    22,
+    25
+  ],
+  "gravityRatio": 1,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "22": {
+      "offsetXYZ": [
+        0,
+        0.1,
+        0
+      ],
+      "templateId": 22331301,
+      "NodeID": 22,
+      "UID": "738e2974-8fb6-4423-bec8-f3cd2d070fb0",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Creation",
+      "rot": "PROJECTILE",
+      "pos": "PROJECTILE",
+      "name": "createEntity"
+    },
+    "25": {
+      "UID": "e3ae6ae5-91b6-472d-b622-8fcdc17d6640",
+      "projInstanceId": {
+        "UID": "59f56a02-2cd0-4219-b7b1-5733d5b3d78a",
+        "name": "getProjectileInstanceId",
+        "NodeID": 24
+      },
+      "name": "destroyProjectile",
+      "NodeID": 25
+    }
+  },
+  "moveSpeed": 12,
+  "waterDestroy": false,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.2,
+  "bounciness": 1,
+  "maxHitNum": 999,
+  "acceleration": 0
+}

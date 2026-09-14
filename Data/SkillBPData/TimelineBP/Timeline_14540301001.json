@@ -1,0 +1,313 @@
+{
+  "nodeMap": {
+    "37": {
+      "name": "stopEffectStr",
+      "UID": "3ba568c3-d7ce-4637-b941-aa0602482bfd",
+      "effectId": "Eff_Parmon_10454_Skill_ClyBall_Throw",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "91f7b5a4-0bc1-4317-91f3-6aac548762ab",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 38
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d4022831-601f-4467-83a1-4e3ebe49416d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_ClayBall_Start",
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "cec3ea76-a382-4d3f-8d3b-f95300bf2130",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_ClayBall_Loop",
+      "NodeID": 40
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          36,
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 35,
+      "UID": "95b5462d-c2aa-4d7f-8e07-ef24eb65e712"
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 52,
+      "UID": "01db0dfe-a450-41d1-ad96-d3606605060f"
+    },
+    "31": {
+      "offsetXYZ": [
+        0.5,
+        1,
+        0
+      ],
+      "templateId": 14540301002,
+      "name": "createProjectile",
+      "UID": "67d28331-7b95-4358-bc6d-2915251a85b5",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": [
+        -0.1,
+        1,
+        999
+      ],
+      "NodeID": 31,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c9504d59-aa76-4b3b-b1ad-e37de0386cf4",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_ClayBall"
+    },
+    "13": {
+      "UID": "38803913-205b-4ea4-a06b-b60e03880f87",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 13
+    },
+    "48": {
+      "name": "isActorType",
+      "UID": "a0374b0d-d54c-4e82-b889-a7d9a6e25209",
+      "target": "OWNER",
+      "NodeID": 48,
+      "actorType": 3
+    },
+    "11": {
+      "UID": "530e10cc-5fbb-49b3-a8f0-190eee42d991",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          39
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "507665a6-1528-47d7-8251-bc4aea054e51",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          18,
+          37
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "09e82788-86d8-4f0a-8823-24670a1f622f",
+      "effectId": "Eff_Parmon_10454_Skill_ClyBall_Throw",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 22,
+      "UID": "a7524bc4-40b2-4478-a3ec-990da34d4622"
+    },
+    "4": {
+      "UID": "147d7e8d-84af-4bfe-b9ec-5713e39c04ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          16
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "actionIds": [
+        43,
+        47
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "49a47827-0ce6-4cca-b851-241c8ed3c0c5",
+      "name": "doActionsByConditions",
+      "NodeID": 45
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 14,
+      "UID": "0e233a76-6638-453a-a288-ffee053ae1e7"
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 46,
+      "UID": "881247cc-352b-46b1-ac26-f14fc9a89567"
+    },
+    "43": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "a2f83470-bba5-4fb6-9f18-ebd4ab887066",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 43
+    },
+    "47": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "dad81638-359b-48a5-aa6a-6ed0c30691de",
+      "effectId": "Eff_Skill_Common_Warning_10454BossR",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "16": {
+      "UID": "6180cfc4-a19f-4304-8e77-c039b312fed6",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "offsetXYZ": [
+        0.5,
+        1,
+        0
+      ],
+      "templateId": 14540301001,
+      "name": "createProjectile",
+      "UID": "241585ba-6b6c-40aa-8e89-f8c0e031c47c",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "TARGET",
+      "NodeID": 27,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "50f9d8c6-a15f-446f-94eb-fe52e35c35e6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        31
+      ],
+      "NodeID": 28
+    },
+    "18": {
+      "UID": "c38d460e-5eb7-410f-b750-4d4d7c740ae2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 18
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 30,
+      "UID": "45ae3d11-92ed-41aa-bdf8-71482f04fbc9"
+    },
+    "2": {
+      "UID": "5bb34d5f-07d8-4b6d-818d-58d71f120bd7",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 2
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "95e12919-d4f0-4ce9-9d60-40d37bdfcd07",
+      "effectId": "Eff_Parmon_10454_Skill_ClyBall_Throw02",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "51": {
+      "offsetTime": 1,
+      "name": "playAnimation",
+      "UID": "24821125-2cb4-4de3-9dba-fd02c67cd175",
+      "target": "OWNER",
+      "NodeID": 51,
+      "animId": "Attack02"
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "f1d9ea64-57fb-4c0c-841a-fb4066899c5a",
+      "effectId": "Eff_Parmon_10454_Skill_ClyBall_Throw",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_14540301",
+  "NodeID": 6,
+  "UID": "f8d925ef-bcfa-4a35-b359-89445eb7b576",
+  "eventIds": [
+    4,
+    20,
+    14,
+    11,
+    22,
+    35,
+    30,
+    46,
+    52
+  ],
+  "layer": "Base",
+  "length": 2.11
+}

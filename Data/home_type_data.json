@@ -1,0 +1,98 @@
+{
+  "3": {
+    "sortId": 4,
+    "hideInHomeland": 1,
+    "showInCar": 1,
+    "name": 1540090419
+  },
+  "4": {
+    "sortId": 5,
+    "homelandAreaIds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "showInCar": 1,
+    "name": 1988395507
+  },
+  "101": {
+    "homelandAreaIds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "name": 1963976834,
+    "disableFav": 1,
+    "hideInStore": 1,
+    "showInCar": 1,
+    "sortId": 101
+  },
+  "7": {
+    "sortId": 2,
+    "homelandAreaIds": [
+      1
+    ],
+    "name": 1744595812
+  },
+  "99": {
+    "sortId": 99,
+    "homelandAreaIds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "showInCar": 1,
+    "name": 2034302472
+  },
+  "100": {
+    "homelandAreaIds": [
+      0,
+      1,
+      2
+    ],
+    "name": 1695881546,
+    "disableFav": 1,
+    "hideInStore": 1,
+    "sortId": 100
+  },
+  "102": {
+    "homelandAreaIds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "name": 1686778387,
+    "disableFav": 1,
+    "hideInStore": 1,
+    "showInCar": 1,
+    "sortId": 102
+  },
+  "5": {
+    "sortId": 6,
+    "homelandAreaIds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "name": 1256811919
+  },
+  "1": {
+    "sortId": 1,
+    "homelandAreaIds": [
+      0
+    ],
+    "name": 2099642534
+  },
+  "2": {
+    "sortId": 3,
+    "homelandAreaIds": [
+      1
+    ],
+    "name": 1739664130
+  }
+}

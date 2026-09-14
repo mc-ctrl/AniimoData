@@ -1,0 +1,3486 @@
+{
+  "66500965": {
+    "spawnType": 2,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -41.53,
+      1.87,
+      17.87
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 66500965,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          66500961
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "65961156": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      40.54,
+      28.26,
+      33.09
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 65961156,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65961154,
+          65980770,
+          65962084
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "65961117": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      39.04,
+      27.05,
+      33.05
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 65961117,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65961113,
+          65961138
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "65960752": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      44.7,
+      30.05,
+      40.88
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 65960752,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65960749,
+          65960773
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "65960647": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      40.48,
+      31.67,
+      24.96
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 65960647,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65960645,
+          65979288
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "65960477": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      40.53,
+      31.84,
+      33.69
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 65960477,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65960475,
+          65960567,
+          65960569,
+          65960572,
+          65961090
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "65960350": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      33.85,
+      31.84,
+      40.77
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 65960350,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65960348,
+          65960378,
+          65960382
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "65730411": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -41.53,
+      2.35,
+      17.87
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 65730411,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65730410
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64694748": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      86.44,
+      27.57,
+      19.01
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 64694748,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64694745
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "60621617": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      98.88,
+      20.74,
+      -27.65
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 60621617,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60621613,
+          60621672
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "60349866": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      -8.3,
+      1.8,
+      33.19
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 60349866,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60349846,
+          65982403,
+          65982407
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59949302": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      57.34,
+      17.88,
+      17.85
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 59949302,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59949299,
+          65805384
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59934304": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      40.54,
+      26.75,
+      15.09
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 59934304,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59934300,
+          65984596
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59930814": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      -32.85,
+      5.1,
+      18.64
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 59930814,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65732134,
+          65732227,
+          65716394
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59930649": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      44.51,
+      31.57,
+      33.75
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 59930649,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59930679,
+          65960608,
+          65960626,
+          65960628,
+          65960699
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59930547": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      29.84,
+      26.05,
+      40.81
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 59930547,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59930562,
+          65716979
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59916720": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      -94.42,
+      -9.85,
+      25.86
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 59916720,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59916719
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56909984": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      44.4,
+      18.79,
+      -46.12
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 56909984,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56909982,
+          56909985
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56909976": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      41.83,
+      22.99,
+      -46.13
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 56909976,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56909975,
+          56909989
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56909900": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      44.21,
+      18.37,
+      -38.45
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 56909900,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56909899
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56818444": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      -41.51,
+      1.87,
+      17.99
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 56818444,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56818443
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56754019": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      -21.75,
+      10.29,
+      36.93
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 56754019,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56754018
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56753993": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      51.46,
+      26.99,
+      12.8
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 56753993,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56753992
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56753814": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      51.61,
+      19.67,
+      17.87
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 56753814,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56753811
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56753697": {
+    "spawnType": 4,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      49.34,
+      20.54,
+      34.73
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 56753697,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56753696
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56734234": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      41.27,
+      25.63,
+      -48.11
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 56734234,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56734233
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56733669": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      57.24,
+      15.34,
+      13.61
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 56733669,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56733655
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56733482": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      36.75,
+      26.38,
+      15.11
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 56733482,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56733481
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "55091552": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      69.25,
+      24.45,
+      15.16
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 55091552,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64683482
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "55091226": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      69.21,
+      24.45,
+      13.57
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 55091226,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          55091225
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "55090605": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      59.75,
+      26.2,
+      10.03
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 55090605,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64683257,
+          64695135,
+          64695534,
+          64682839,
+          64695110
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "55090266": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      65.72,
+      22.78,
+      29.47
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 55090266,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          55090265,
+          64766808,
+          64766873
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54406471": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      37.07,
+      18.4,
+      -9.12
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 54406471,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54406465
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54406331": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      48.47,
+      18.42,
+      -9.39
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 54406331,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54406327
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54402827": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      92.98,
+      27.31,
+      10.35
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 54402827,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54402824,
+          64771548,
+          66408716,
+          66408721,
+          64771711,
+          66408736,
+          64775052,
+          66408901,
+          64775977,
+          64694991,
+          64768109,
+          64768141,
+          55091224
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54233347": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      17.19,
+      2.51,
+      35.54
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 54233347,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54233346,
+          54233390
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54232981": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      -25.52,
+      10.47,
+      40.88
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 54232981,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54233025
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54232864": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.49,
+      8.49,
+      37.07
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 54232864,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54232861,
+          56754161
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54231941": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -37.99,
+      5.76,
+      20.75
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 54231941,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54231970,
+          54231971,
+          65730412,
+          65715535,
+          65715258,
+          65715413
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "53866209": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -8.98,
+      7.82,
+      23.79
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 53866209,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          53866207
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "52571959": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      87.5,
+      27.79,
+      26.79
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 52571959,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64687990,
+          64694351,
+          64694352,
+          65723130,
+          64694416,
+          64694350
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "52064645": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      44.17,
+      18.95,
+      -38.45
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 52064645,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          52064643
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "52054379": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      38.33,
+      26.47,
+      -48.07
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 52054379,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          52054377
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51989033": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -50.92,
+      -9.77,
+      25.86
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51989033,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51989030
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51981927": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      47.24,
+      19.95,
+      9.72
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51981927,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51981925
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51981877": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      47.36,
+      21.49,
+      9.73
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51981877,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51981874,
+          51981898
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51812026": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -26.27,
+      2.17,
+      10.3
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51812026,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51812024,
+          51812039,
+          65730326
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51813807": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -26.28,
+      1.87,
+      18.74
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51813807,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51813840,
+          54232212
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51813952": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      -25.52,
+      2.13,
+      40.87
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51813952,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51813951
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51814286": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.72,
+      1.8,
+      35.87
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51814286,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814284,
+          65976705
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51814313": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.41,
+      8.34,
+      36.84
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51814313,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814315
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51814379": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -21.45,
+      10.26,
+      37.07
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51814379,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814396
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51814452": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.72,
+      1.81,
+      24.15
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51814452,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814453,
+          51814471,
+          51814454
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51814500": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.64,
+      1.82,
+      31.62
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51814500,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814497
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51814657": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -9.08,
+      1.79,
+      35.09
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51814657,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814658,
+          51814659,
+          60349910
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51814691": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -9.1,
+      11.25,
+      40.77
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51814691,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814703,
+          51814716,
+          51814721,
+          65809756,
+          51814689,
+          51814688
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51819848": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      61.13,
+      19.67,
+      15.89
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51819848,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          52757172,
+          52757181
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51876905": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      83.34,
+      24.6,
+      -2.1
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51876905,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51876998,
+          51877005,
+          51876971,
+          64772973,
+          64773136,
+          64773417,
+          64773185,
+          64773242,
+          64773305,
+          64776988,
+          64773328,
+          64773380,
+          66408917,
+          51876997,
+          51877009,
+          51876999,
+          51877006,
+          51876982,
+          51877000,
+          51877007,
+          51876984,
+          51877001,
+          51877010,
+          51876987,
+          51877002,
+          51877008,
+          51876990,
+          51877003,
+          51877011,
+          51877041,
+          51877044
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51877607": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      48.53,
+      18.11,
+      -3.1
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51877607,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51877632
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51877782": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      39.91,
+      18.4,
+      -9.18
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51877782,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51877781
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51877799": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      39.81,
+      18.4,
+      -9.13
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51877799,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51877797
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51878109": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      45.13,
+      18.37,
+      -9.24
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51878109,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51878108,
+          51878110
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51878221": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      41.33,
+      19.4,
+      -48.69
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51878221,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51878219,
+          52574443
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51878720": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      44.39,
+      18.4,
+      -40.69
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51878720,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51878727,
+          51878730
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51878859": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -66.33,
+      47.25,
+      -15.38
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51878859,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51878909,
+          51878910,
+          51878911,
+          51878914,
+          51878916,
+          51878917,
+          51878918,
+          51878919
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51878921": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -47.85,
+      47.5,
+      -7.41
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51878921,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51878920,
+          51878922,
+          51878925,
+          51878926,
+          51878929,
+          51878930,
+          51878931,
+          51878932,
+          51878933,
+          51878934,
+          51878937,
+          51878939,
+          51878941,
+          51878943,
+          51878950,
+          51878952
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51879016": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.15,
+      47.52,
+      -3.56
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51879016,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51879015,
+          51879017,
+          51879018,
+          51879019,
+          65988154,
+          65988160,
+          65988165,
+          66062463
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51879074": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -3.25,
+      35.17,
+      -3.55
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51879074,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51879077,
+          65988173,
+          51879080,
+          51879095,
+          51879096,
+          51879097,
+          51879136
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50597766": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -21.8,
+      1.82,
+      20.75
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50597766,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50941292,
+          65959791
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50597769": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.66,
+      1.82,
+      34.77
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50597769,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51814246
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50597773": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      7.66,
+      1.8,
+      34.68
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50597773,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50941148,
+          50839777,
+          50839775,
+          50839773,
+          56741631,
+          56741633,
+          50839753,
+          50839705
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50597818": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -36.05,
+      6.61,
+      15
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50597818,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50597809,
+          65730325,
+          50775073
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50752847": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      -17.02,
+      11.88,
+      12.8
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50752847,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50752845
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50753021": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      -19.51,
+      10.56,
+      34.32
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50753021,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50753019
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50774405": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      -25.64,
+      4.46,
+      40.88
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50774405,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50774403,
+          51813931,
+          59927043
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50839796": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      9.78,
+      1.78,
+      37.44
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50839796,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50839794,
+          50839803
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50839825": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      17.17,
+      5.1,
+      35.51
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50839825,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50839826,
+          50839824
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50855171": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      42.53,
+      27.59,
+      14.94
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50855171,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50855168
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50941435": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -17.71,
+      3.77,
+      40.86
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50941435,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50941461,
+          50941465
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "50941516": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      9.8,
+      24.54,
+      40.82
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 50941516,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          50941536,
+          50941539,
+          50941541,
+          50941546,
+          50941552,
+          50941559,
+          50941567,
+          65982363,
+          65982367,
+          50941514,
+          65809625,
+          50941512
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51202401": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      71.59,
+      20.73,
+      15.34
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51202401,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51205472
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51205273": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      78.3,
+      19.72,
+      -40.48
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51205273,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51205270,
+          51205269,
+          51205268,
+          51205267,
+          51205266,
+          51205265,
+          51205264,
+          51205263,
+          51205262,
+          51205261,
+          51205260,
+          51205259,
+          51205258
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51205310": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      83.48,
+      21.69,
+      -27.5
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51205310,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51205308,
+          51205307,
+          51205305,
+          51205304,
+          51205303,
+          51205300,
+          51205299,
+          51205296
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51205326": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      79.03,
+      19.67,
+      -13.07
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51205326,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51205323,
+          51205322,
+          51205321,
+          51205320,
+          51205319,
+          51205318,
+          51205317,
+          51205315,
+          51205314,
+          51205313,
+          51205311
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51205347": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      106.33,
+      19.67,
+      -27.8
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51205347,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51205346,
+          51205349,
+          51205351
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51205517": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      54.32,
+      25.2,
+      9.75
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51205517,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          52655381,
+          64683312,
+          64695189,
+          51206593
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51206840": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      53.59,
+      27.25,
+      13.38
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51206840,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51206837
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51212088": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      56.86,
+      18.14,
+      17.85
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51212088,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51212132,
+          72155270,
+          65805353
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51272167": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      48.61,
+      18.42,
+      -3.87
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51272167,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51272166,
+          51272176
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51288986": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      37.08,
+      18.74,
+      -3.58
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51288986,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51288982,
+          51289278
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51289223": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      26.81,
+      23.5,
+      -3.48
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51289223,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51289215,
+          51289214,
+          51289213,
+          51289212,
+          51289210,
+          51289209,
+          51289208
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51289486": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      6.15,
+      28.51,
+      -3.48
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51289486,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51289487,
+          51289489,
+          51289490,
+          51289491,
+          51289492,
+          51289493,
+          51289495,
+          51289496
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51289499": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      18.88,
+      24.01,
+      -3.58
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51289499,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51289503,
+          51289498
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51289532": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      19.15,
+      23.5,
+      -3.51
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51289532,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51289545
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51289555": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -2.97,
+      28.57,
+      -3.55
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51289555,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51289554
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51291697": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      37.32,
+      18.44,
+      -4.37
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51291697,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51291696,
+          51291713
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373190": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      108.89,
+      23.72,
+      -27.61
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373190,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373196
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373288": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      109,
+      19.75,
+      -27.59
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373288,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373287
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373313": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      108.98,
+      19.75,
+      -22.48
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373313,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373314
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373316": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      108.97,
+      19.72,
+      -32.69
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373316,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373315
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373340": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      105.4,
+      19.67,
+      -13.38
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373340,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373338,
+          51373337,
+          51373335
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373341": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      104.08,
+      19.69,
+      -40.77
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373341,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373342,
+          51373344,
+          51373345,
+          51373346
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373358": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      109.02,
+      19.7,
+      -15.63
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373358,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373357,
+          60621521,
+          51373377
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373381": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      108.96,
+      19.66,
+      -34.67
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373381,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          52568739,
+          51373379
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373412": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      108.93,
+      23.66,
+      -22.47
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373412,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373409
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51373413": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      108.9,
+      23.63,
+      -32.66
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 51190315,
+    "id": 51373413,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51373414
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51388575": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      51.68,
+      19.7,
+      18.02
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51388575,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51388581
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51388734": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      66.36,
+      23.9,
+      32.73
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51388734,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51388733,
+          51388925,
+          51388927,
+          51388934,
+          51388937,
+          64769753,
+          64683879,
+          64687930,
+          51389083,
+          64686983,
+          64686986,
+          64683931,
+          64683953,
+          64686440,
+          64768057,
+          64683958,
+          64686441,
+          64686448,
+          64683747
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51388745": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      44.43,
+      24.42,
+      40.89
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51388745,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          52572502
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51444537": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      99.74,
+      27.26,
+      11.9
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51444537,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51444532,
+          65725565,
+          66062228,
+          65725575,
+          66398163,
+          65725587,
+          65725605,
+          65725611,
+          66335866,
+          65725622,
+          64771796,
+          64771494,
+          64771531,
+          51444585,
+          51444601,
+          51444603,
+          64687861,
+          64686547,
+          64686550,
+          51444604,
+          64687863,
+          51444602,
+          51444598,
+          51444599
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51445345": {
+    "spawnType": 4,
+    "sandboxType": 2,
+    "position": [
+      51.62,
+      20.16,
+      17.84
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51445345,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51445343
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51445598": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      69.15,
+      24.35,
+      35.18
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51445598,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51445595,
+          64686977
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51445605": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      77.38,
+      22.14,
+      26.45
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51445605,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51445599,
+          73390715
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51448765": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      102.76,
+      24.39,
+      1.68
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51448765,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51448816,
+          51448826,
+          51448835,
+          51980162
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51459715": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -27.48,
+      47.22,
+      -3.55
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 51190315,
+    "id": 51459715,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51459713
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51470106": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -24.42,
+      1.83,
+      20.55
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51470106,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51470102
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51470112": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -21.81,
+      1.82,
+      20.63
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51470112,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51470109
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51810450": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -50.76,
+      -9.78,
+      24.46
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51810450,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          65714936,
+          65714968
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51811993": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -33.31,
+      6.6,
+      9.03
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51811993,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51811991,
+          51812002,
+          51812004
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51882412": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 2,
+    "position": [
+      83.6,
+      23.08,
+      19.11
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 50597751,
+    "id": 51882412,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51882411,
+          54404608,
+          52655529,
+          52655530,
+          51882418
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

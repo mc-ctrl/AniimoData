@@ -1,0 +1,287 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2143401",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9e5fec17-78e3-4660-a183-7ce4df59b747",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Bombing04",
+      "NodeID": 37
+    },
+    "38": {
+      "name": "stopSoundStr",
+      "UID": "4cb478a7-233e-4a2c-8491-28199c4abc65",
+      "soundId": "SFX_Combat_10434_Skill_Bombing03",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "7": {
+      "name": "calcResult",
+      "overrideCaster": "SRC",
+      "calcInfoByLuaConfig": {
+        "id": 2143401,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 1
+      },
+      "UID": "fecfaec1-eb57-4cd5-b401-febcfd7c0592",
+      "target": "TARGET",
+      "NodeID": 7,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 8,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Rock_Blunt"
+      }
+    },
+    "31": {
+      "UID": "e3feab32-79f8-46b5-ae06-050a1c2b4a8f",
+      "name": "refreshBuffDuration",
+      "NodeID": 31
+    },
+    "9": {
+      "calcResultNodeId": 7,
+      "name": "actOnTargets",
+      "UID": "b81ea878-e43b-4551-bde4-3857850fb3ed",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 7
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        7
+      ],
+      "isScaleWithModel": true,
+      "impulseId": 3000,
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        15,
+        9,
+        35
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "691810ab-a163-4b2b-aac3-7275805c4cb1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        26,
+        22,
+        36
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "name": "calcResult",
+      "overrideCaster": "SRC",
+      "calcInfoByLuaConfig": {
+        "id": 2143401,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 1
+      },
+      "UID": "92d2f462-6545-4d5c-929f-a1611ee0c104",
+      "target": "TARGET",
+      "NodeID": 20,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 8,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Rock_Blunt"
+      }
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6e5e8999-229d-4e9a-b47d-cbfae847527f",
+      "effectId": "Eff_Parmon_10434_Skill_Bombing_Buff",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "339d390c-096a-4beb-ac57-e0d11f5a1ea0",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Bombing03",
+      "NodeID": 16
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "00e13b2b-fe0d-4dbf-878c-e641c19cb065",
+      "effectId": "Eff_Parmon_10434_Skill_Bombing_Buff",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8a078f9b-b3c5-4adc-8b96-cdcfd0475557",
+      "effectId": "Eff_Parmon_10434_Skill_Bombing_04",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "17": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "cc132b9f-ef22-4aef-a7b3-dc4ad728e106",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "aeaaadbf-c6d8-4531-802d-f19f8b6d7db7",
+      "effectId": "Eff_Parmon_10434_Skill_Bombing_04",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5480c768-2e33-4125-9dfe-40eac023df62",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_AerialAce_After_Explosion",
+      "NodeID": 27
+    },
+    "28": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "811227d7-5678-4aa3-8a34-bcca3a1463b6",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "22": {
+      "calcResultNodeId": 20,
+      "name": "actOnTargets",
+      "UID": "88149513-02a9-4bc3-8fa4-63d24b188414",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        20,
+        27
+      ],
+      "isScaleWithModel": false,
+      "impulseId": 3000,
+      "NodeID": 22
+    },
+    "18": {
+      "UID": "0f60b3fa-c65f-4f2c-830a-37e7c644b157",
+      "conditionIds": [
+        17,
+        28
+      ],
+      "name": "conditionOr",
+      "NodeID": 18
+    },
+    "32": {
+      "key": "refresh",
+      "duration": 0.1,
+      "actionIds": [
+        31
+      ],
+      "NodeID": 32,
+      "UID": "32543303-b471-4f5c-9cf6-448f7c80fb48",
+      "name": "addTimer"
+    },
+    "33": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "60152c3f-7290-4b73-ab11-93827ba17010",
+      "name": "doActionsByConditions",
+      "NodeID": 33
+    },
+    "34": {
+      "UID": "91e541ba-7936-4883-9aad-08cf1ab12463",
+      "randomPercent": 50,
+      "name": "isRandom",
+      "NodeID": 34
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "be2da1c6-8f8e-410d-a3e9-f99fe6f55bdb",
+      "effectId": "Eff_Parmon_10434_Skill_Bombing_Buff",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    11,
+    37,
+    38
+  ],
+  "onBuffStartIds": [
+    3,
+    16,
+    33
+  ]
+}

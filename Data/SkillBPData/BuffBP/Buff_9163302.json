@@ -1,0 +1,174 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9163302",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 9163302,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "be293885-b05b-4be7-bc5d-52a240869c49",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "value": {
+        "calcId": 9163302,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "be293885-b05b-4be7-bc5d-52a240869c49",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "4f424c26-b8c8-4ee0-ad31-b6a2e3d455fd",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "eventName": "targetDead",
+      "NodeID": 6,
+      "UID": "c6624bc4-51c1-4c6c-8e79-d2cb31d74175",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        4,
+        16,
+        19,
+        15,
+        7
+      ]
+    },
+    "10": {
+      "name": "isInCombat",
+      "UID": "e5360228-6247-4159-879e-78333fb76cfc",
+      "target": "OWNER",
+      "NodeID": 10,
+      "not": false
+    },
+    "15": {
+      "UID": "4a3cf479-69c8-4891-9563-bba2c2744a5f",
+      "name": "callClientAction",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 15
+    },
+    "7": {
+      "buffId": 9163302,
+      "name": "removeBuff",
+      "UID": "e23b942d-a1bc-4492-bcce-7980bdd3aa47",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "1a3cb3c8-e6a7-4836-8782-7b26dc8dca40",
+      "effectId": "Eff_Common_Buff_EnergyRegen",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9163303,
+      "NodeID": 8,
+      "UID": "9bfbd151-9d7a-4089-a462-f9a3cf042d9a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "93fe8e1e-3c30-4896-88c3-3a9766953fc2",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "61e8bc5e-d21f-4701-8e57-4b050254f4cb",
+      "target": {
+        "key": "DeathPos",
+        "name": "getServerCacheVal",
+        "UID": "64a4e9d3-a118-4358-9e33-809323c41425",
+        "target": "MASTER",
+        "NodeID": 17
+      },
+      "name": "getTargetPosition",
+      "NodeID": 18
+    },
+    "19": {
+      "targetPos": {
+        "UID": "61e8bc5e-d21f-4701-8e57-4b050254f4cb",
+        "target": {
+          "key": "DeathPos",
+          "name": "getServerCacheVal",
+          "UID": "64a4e9d3-a118-4358-9e33-809323c41425",
+          "target": "MASTER",
+          "NodeID": 17
+        },
+        "name": "getTargetPosition",
+        "NodeID": 18
+      },
+      "name": "playSoundAtPos",
+      "UID": "81416fde-2807-4df1-ad94-3672eab6614c",
+      "soundId": "SFX_Combat_10633_Skill_ThrowMoney_Explode",
+      "NodeID": 19
+    },
+    "13": {
+      "pos": {
+        "UID": "d5d033fb-b066-49d9-be88-40cd958a4637",
+        "target": {
+          "key": "DeathPos",
+          "name": "getServerCacheVal",
+          "UID": "d5d5ae65-f5b7-4fc3-b2ff-7538e1936449",
+          "target": "MASTER",
+          "NodeID": 11
+        },
+        "name": "getTargetPosition",
+        "NodeID": 12
+      },
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "7c8c16e3-1421-4248-b784-f3c7a3202aa4",
+      "effectId": "Eff_Parmon_10633_Skill_ThrowMoney_Recover",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "d5d033fb-b066-49d9-be88-40cd958a4637",
+      "target": {
+        "key": "DeathPos",
+        "name": "getServerCacheVal",
+        "UID": "d5d5ae65-f5b7-4fc3-b2ff-7538e1936449",
+        "target": "MASTER",
+        "NodeID": 11
+      },
+      "name": "getTargetPosition",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

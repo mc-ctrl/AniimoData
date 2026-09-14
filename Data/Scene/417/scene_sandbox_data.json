@@ -1,0 +1,168 @@
+{
+  "64669373": {
+    "owner": "曹一宁",
+    "autoSave": true,
+    "chunk": 1011713,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "publishTags": [
+      "3DAY_高地"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_神兽巢穴_海岛二",
+    "sightLevelType": 128,
+    "spawners": [
+      64669375,
+      64669377,
+      64669383,
+      64669385,
+      64669387,
+      64669392,
+      64669394,
+      64669396,
+      64669398,
+      64669402,
+      64669407,
+      64669410,
+      64669412,
+      64669414
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      -470.14,
+      51.31,
+      1981.03
+    ],
+    "id": 64669373,
+    "levelItems": {
+      "64236820": {
+        "majorCompId": 0,
+        "owner": "曹一宁",
+        "EditorName": "外场风",
+        "position": [
+          -490.25,
+          24.05,
+          1984.91
+        ],
+        "rotation": [
+          270,
+          358.56,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 64236820,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "49544975": {
+            "size": [
+              4,
+              80,
+              4
+            ]
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                40,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                35,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 234,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "64236941": {
+        "majorCompId": 0,
+        "owner": "曹一宁",
+        "EditorName": "内场风",
+        "position": [
+          -471.74,
+          23.84,
+          1984.38
+        ],
+        "siblingIndex": 1,
+        "rotation": [
+          270,
+          298.56,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 64236941,
+        "path": "",
+        "componentsInfo": {
+          "49544975": {
+            "size": [
+              4,
+              35,
+              4
+            ]
+          },
+          "42662676": {
+            "power": 64
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                17.5,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                17,
+                0
+              ]
+            },
+            "power": 200
+          }
+        },
+        "configId": 234,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "areaType": 104
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "temporary_num": 10,
+  "transmog_exp": [
+    0,
+    150,
+    400,
+    750,
+    1200
+  ],
+  "transmog_hit_exp": 100,
+  "transmog_hit_probability": 0.01,
+  "transmog_points_get": 0,
+  "transmog_points_id": 1301,
+  "transmog_shop_id": 28,
+  "transmog_shop_open": 0,
+  "transmog_single_exp": 10,
+  "Default_Model_Dict": [
+    "B_01",
+    "Wing_02",
+    "Body_02",
+    "Hat_02"
+  ],
+  "Effect_Mingguang": "Eff_Parmon_Suit_{0}_{1}_{2}_{3}",
+  "Effect_Root": {
+    "60": "",
+    "61": "Bone Wing",
+    "11": ""
+  },
+  "Model_Splice_Path_Config": "E_P_Parmon_Suit_{0}_{1}_{2}",
+  "UGC_num": 2,
+  "cost_lock": {
+    "3": 8,
+    "0": 1,
+    "1": 2,
+    "2": 4
+  },
+  "cost_normal": 1,
+  "golden_need": [
+    62,
+    47,
+    34,
+    23
+  ],
+  "golden_probability_reduce": 0.5,
+  "lock_max_num": 3,
+  "need_item_id": 1601006,
+  "need_item_id_shopmall": 30030,
+  "slot_quality_value": {
+    "3": 100,
+    "4": 300,
+    "5": 500
+  },
+  "slotsuit_quality_value": {
+    "3": 100,
+    "4": 500,
+    "5": 1000
+  },
+  "special_item_id": 1601007,
+  "special_slotsuit_id": 3
+}

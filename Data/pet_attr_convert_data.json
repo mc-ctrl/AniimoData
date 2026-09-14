@@ -1,0 +1,74 @@
+{
+  "pet_individual_point_bp_atk": {
+    "id": 6,
+    "addprops": [
+      [
+        4,
+        "bp_atk_p",
+        0.04,
+        1331995521,
+        1
+      ]
+    ]
+  },
+  "pet_individual_point_def": {
+    "id": 3,
+    "addprops": [
+      [
+        4,
+        "def_p",
+        0.04,
+        1453517740,
+        1
+      ]
+    ]
+  },
+  "pet_individual_point_def_mag": {
+    "id": 5,
+    "addprops": [
+      [
+        4,
+        "def_mag_p",
+        0.04,
+        1621502776,
+        1
+      ]
+    ]
+  },
+  "pet_individual_point_ep_regen_force": {
+    "id": 4,
+    "addprops": [
+      [
+        4,
+        "ep_regen_force_p",
+        0.04,
+        1809277956,
+        1
+      ]
+    ]
+  },
+  "pet_individual_point_hp": {
+    "id": 1,
+    "addprops": [
+      [
+        4,
+        "hp_max_p",
+        0.04,
+        2043998241,
+        1
+      ]
+    ]
+  },
+  "pet_individual_point_atk": {
+    "id": 2,
+    "addprops": [
+      [
+        4,
+        "atk_p",
+        0.04,
+        1226600536,
+        1
+      ]
+    ]
+  }
+}

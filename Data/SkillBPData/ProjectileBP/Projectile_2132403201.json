@@ -1,0 +1,131 @@
+{
+  "trackingNoOffsetRotationRange": 5,
+  "angularIncreaseDuration": 0.6,
+  "BPName": "timeline_2132403",
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "effectId": "Eff_Parmon_10324_Skill_RoseBurst_03",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "onProjectileStartIds": [
+    65
+  ],
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    24,
+    43,
+    67
+  ],
+  "calcResultNodeId": 22,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 0.3,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "22": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_crit_rate_v": 1,
+        "instant_dmg_rate_v": 0
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30302
+      },
+      "UID": "1e226ff9-ab91-4a29-95e6-8011bafaa5b2",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 2132403,
+        "instant_dmg_rate_v": "param0",
+        "type": 4,
+        "instant_crit_rate_v": "param1"
+      },
+      "NodeID": 22
+    },
+    "24": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 22,
+      "NodeID": 24,
+      "UID": "46c80af2-3763-4d75-80ce-b88a5c5d56c3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.6,
+            0.6,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        22
+      ]
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f49a106e-a866-4996-8550-07dde8d12e63",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_RoseBurst_04",
+      "NodeID": 67
+    },
+    "43": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "ef3608d8-45be-4607-bcf9-3309419844e3",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_04",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "65": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6dde0147-e2c3-4bee-863d-1151271fd7fd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_RoseBurst_03",
+      "NodeID": 65
+    }
+  },
+  "tickInterval": 0.05,
+  "duration": 3,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

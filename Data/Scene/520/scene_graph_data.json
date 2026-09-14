@@ -1,0 +1,34 @@
+{
+  "80709090": {
+    "graphId": 80709090,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "56ef24b7f95c799fa196cbec975ac348",
+    "nodes": {
+      "1": {
+        "_inputPortValues": {
+          "Msg": "Follow",
+          "StaticId": 80449114
+        },
+        "_outputPortValues": {},
+        "className": "SendAIMessageNode",
+        "uid": "44033f47-8448-4d21-a2ee-627209a5bc16"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "00e04c88-1d53-4ae2-8ff0-ad2ae0a9dbb2"
+      }
+    }
+  }
+}

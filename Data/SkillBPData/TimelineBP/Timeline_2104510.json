@@ -1,0 +1,248 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104512,
+      "name": "createEntity",
+      "UID": "b4e47453-52c9-48a1-96b5-67b1ac6148ec",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 37,
+      "pos": "OWNER"
+    },
+    "38": {
+      "key": "timeline_210451038",
+      "duration": 1,
+      "actionIds": [
+        37
+      ],
+      "NodeID": 38,
+      "UID": "3bb05695-9fe1-4907-8ae2-88ec61b3bde1",
+      "name": "addEntityTimer"
+    },
+    "40": {
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "2001c9cc-17ab-42fc-86c1-0dc3c74c1118",
+      "name": "doActionsByConditions",
+      "NodeID": 40,
+      "elseActionIds": [
+        74,
+        38
+      ]
+    },
+    "41": {
+      "name": "prepareDataForServerActions",
+      "UID": "d55299c1-9c5f-4e99-bf77-6a69425575f4",
+      "serverActionsIds": [
+        40
+      ],
+      "NodeID": 41,
+      "dataActions": [
+        {
+          "needEcs": true,
+          "actionIds": [
+            54
+          ],
+          "ignoreOwner": true,
+          "UID": "e0762df6-4b75-4fe6-a729-ce4238f24b8a",
+          "target": [
+            {
+              "offsetXYZ": [
+                0,
+                0,
+                0
+              ],
+              "shapeArgs": [
+                2.6,
+                2,
+                2
+              ],
+              "shapeKind": "Circle3D",
+              "relation": 1,
+              "offsetRotation": [
+                0,
+                0,
+                0
+              ],
+              "center": "CASTER",
+              "maxNum": 0
+            }
+          ],
+          "name": "actOnTargets",
+          "NodeID": 52
+        }
+      ]
+    },
+    "42": {
+      "UID": "36328c40-7851-4c0a-98cd-8e69aef2baad",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "NodeID": 42
+    },
+    "44": {
+      "UID": "6e9bae84-fda8-465a-9e0a-40febf355217",
+      "name": "destroyEntity",
+      "NodeID": 44
+    },
+    "68": {
+      "UID": "6294720c-1ec8-48b1-aa1a-50d5e867f668",
+      "name": "destroyEntity",
+      "NodeID": 68
+    },
+    "69": {
+      "actionIds": [
+        68
+      ],
+      "name": "registerDeadEvent",
+      "UID": "19bb5531-87e3-44d8-9520-a8e537f85cf5",
+      "target": "MASTER",
+      "NodeID": 69
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.6,
+      "NodeID": 45,
+      "UID": "f1389d1e-9fab-4811-8099-f58776c0139d"
+    },
+    "71": {
+      "UID": "359f2a43-a176-4f23-8a28-2d790dce2ad3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          69,
+          72
+        ]
+      },
+      "NodeID": 71
+    },
+    "56": {
+      "UID": "c22d2a99-aee8-4714-afd9-6474a366c94b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          55
+        ]
+      },
+      "NodeID": 56
+    },
+    "72": {
+      "actionIds": [
+        68
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "5b664a5c-6064-4607-b762-101ef3993600",
+      "target": "MASTER",
+      "NodeID": 72
+    },
+    "74": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 74,
+      "UID": "0721429b-e164-4566-ae0b-d2be26ccda13",
+      "effectId": "Eff_Parmon_10045_Lotus_02",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    },
+    "50": {
+      "UID": "a70db72b-8e14-4810-8497-3a97a88c7cae",
+      "target": {
+        "key": "target",
+        "name": "getCacheVal",
+        "UID": "be8a502b-2f88-479d-99c0-06795ed9291b",
+        "target": "CASTER",
+        "NodeID": 49
+      },
+      "name": "hasTarget",
+      "NodeID": 50
+    },
+    "54": {
+      "key": "target",
+      "name": "setCacheVal",
+      "UID": "52de9ea0-b46d-43b9-80d6-81137c46b3d0",
+      "target": "CASTER",
+      "val": {
+        "UID": "c6e92812-d456-46ff-b6e2-c2107b72cdd4",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 53
+      },
+      "NodeID": 54
+    },
+    "55": {
+      "key": "target",
+      "name": "setCacheVal",
+      "UID": "da413f91-d14a-4460-a906-1213c68ccff2",
+      "target": "CASTER",
+      "val": 0,
+      "NodeID": 55
+    },
+    "52": {
+      "needEcs": true,
+      "actionIds": [
+        54
+      ],
+      "ignoreOwner": true,
+      "UID": "e0762df6-4b75-4fe6-a729-ce4238f24b8a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.6,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "NodeID": 52
+    }
+  },
+  "BPName": "timeline_2104510",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    42,
+    45,
+    56,
+    71
+  ],
+  "layer": "Base",
+  "length": 9999
+}

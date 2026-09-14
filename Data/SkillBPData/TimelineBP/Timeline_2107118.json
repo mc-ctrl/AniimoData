@@ -1,0 +1,244 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "action": {
+        "actionIds": [
+          2,
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 4,
+      "UID": "a3c95562-ee2a-4954-8c68-d6382287ea1f"
+    },
+    "40": {
+      "calcId": 2107118,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 40,
+      "UID": "1c06227c-56f7-48b2-b7f9-ad24969cf752",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "115a1314-6c40-445f-98db-5a55a8b2f37f",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_Indicator",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "9571f1c1-30b5-44b7-b6c7-6be7dd0ad845",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind01_0.5",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "31": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "274c77ce-9f4c-476c-9250-fb0b5f0b839b",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e4e7e8ba-cb21-4188-b503-060cf1e155ee",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_loop",
+      "NodeID": 21
+    },
+    "16": {
+      "eventType": "NotifyState",
+      "endTime": 2.7,
+      "NodeID": 16,
+      "UID": "916864e1-c46a-4fc9-bd33-f984987b7d87",
+      "onUpdate": {
+        "actionIds": [
+          14
+        ]
+      },
+      "startTime": 0.5,
+      "tickInterval": 0.05
+    },
+    "8": {
+      "UID": "e224d6fc-e7ba-4b62-bf77-c35c9fce1e3a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "28": {
+      "duration": 3,
+      "name": "moveByDirection",
+      "UID": "c9893910-7336-497d-ba2d-55080c2c3fff",
+      "collisionTestDistance": 0,
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "targetPos": "MASTER",
+      "velocity": [
+        0,
+        0,
+        -15
+      ],
+      "NodeID": 28
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          32,
+          21,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 23,
+      "UID": "9580efbc-1aa5-4d3d-8e8d-7b591dd5220c"
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 30,
+      "UID": "eba9abe1-637a-40cd-a7f1-46042bd48e6b"
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "5aed665c-0698-4d08-9c52-ba823269bf43",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_Indicator",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "14": {
+      "calcResultNodeId": 12,
+      "name": "actOnTargets",
+      "UID": "a7776e2a-0760-4a7f-bdad-8be7d729d0a3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            3,
+            5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "Enemy",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        12
+      ],
+      "impulseId": 3002,
+      "NodeID": 14
+    },
+    "20": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "dcc2197e-ce09-457a-9513-7e337d57badd",
+      "val": {
+        "UID": "e950f676-d08b-4190-acb4-7552962f2603",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 19
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_fix": {
+          "rValue": {
+            "calcId": 2107118,
+            "calcType": 4,
+            "paramName": "param0",
+            "NodeID": 40,
+            "UID": "1c06227c-56f7-48b2-b7f9-ad24969cf752",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "1da5a065-822f-4401-b1f9-9fe56ba9ca8b",
+          "NodeID": 37,
+          "lValue": {
+            "rValue": {
+              "name": "getAttribute",
+              "UID": "2d8badff-e033-4810-b3c7-9a11b5b51cb0",
+              "target": "MASTER",
+              "NodeID": 39,
+              "attributeName": "def_mag_cur"
+            },
+            "name": "add",
+            "UID": "0fbf4739-3483-4ab4-94e1-86d197c64ef4",
+            "NodeID": 36,
+            "lValue": {
+              "name": "getAttribute",
+              "UID": "5b79414b-e39e-45a5-9680-751d1fbc96a9",
+              "target": "MASTER",
+              "NodeID": 35,
+              "attributeName": "def_cur"
+            }
+          }
+        }
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "impulseId": 3002,
+        "elementType": 1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "c1f9207b-735e-4576-8163-6db572930e70",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2107118",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    8,
+    16,
+    30,
+    23,
+    4
+  ],
+  "layer": "Base",
+  "length": 3
+}

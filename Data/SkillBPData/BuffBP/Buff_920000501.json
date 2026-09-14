@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920000501",
+  "NodeID": 1,
+  "UID": "3d2d885c-ad36-4544-a672-dadb14f358ce",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    4
+  ],
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Heal"
+    }
+  ],
+  "nodeMap": {
+    "5": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "d9e60769-755e-43df-8b94-9f2e2d7090d6",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "4": {
+      "calcInfo": {
+        "add_cur_hp_fix": 50,
+        "add_cur_hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "955547f6-6be1-424e-be72-7f83e2ad1173",
+      "target": "CURPET",
+      "NodeID": 4
+    },
+    "7": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "1a4e2362-ca1f-4557-8fdb-4690c8426450",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_HealDestroy",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e386342a-7982-41bc-a9b5-0fac0249229c",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Heal",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "onBuffStartIds": [
+    8,
+    5
+  ]
+}

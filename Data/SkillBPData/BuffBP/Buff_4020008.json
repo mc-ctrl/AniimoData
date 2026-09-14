@@ -1,0 +1,100 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020008",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "3dd1afdf-1e6a-495d-b97f-5cbd262e2392",
+      "target": "OWNER",
+      "buffId": 2126302,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": true,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    },
+    "13": {
+      "target": "MASTER",
+      "duration": 5,
+      "buffId": 402000801,
+      "NodeID": 13,
+      "UID": "82ec1ae3-7548-4695-a98d-2f77a618e45f",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "9": {
+      "UID": "8cb62a69-d872-4e60-9bda-bf014171c60b",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "6": {
+      "target": "MASTER",
+      "duration": 5,
+      "buffId": 402000801,
+      "NodeID": 6,
+      "UID": "caf81a14-b171-4544-b3a9-ab09cb8457a7",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "15": {
+      "UID": "94dd6162-af28-4e5a-974a-6c635e27e6b5",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "11": {
+      "unsummonValid": false,
+      "actionIds": [
+        9,
+        15
+      ],
+      "name": "registerGroupEvent",
+      "UID": "3b662e81-ac29-4871-b554-8e9c468de9b2",
+      "NodeID": 11
+    },
+    "7": {
+      "duration": 0.1,
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "99016752-10cc-465e-9840-cc9aedc2603a",
+      "name": "addTimer"
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14,
+      "UID": "8aacef34-a8ac-479e-afa7-ec1c32b20014",
+      "target": "OWNER",
+      "buffId": 21233051,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": true,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

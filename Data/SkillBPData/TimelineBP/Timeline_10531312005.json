@@ -1,0 +1,74 @@
+{
+  "nodeMap": {
+    "162": {
+      "target": "TARGET",
+      "duration": 3,
+      "buffId": 2105320,
+      "NodeID": 162,
+      "UID": "9b429bd9-c44f-4aca-bc93-16cd0ddab2e9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "163": {
+      "actionIds": [
+        162
+      ],
+      "name": "actOnTargets",
+      "UID": "7d7d3684-f774-46d4-8189-4921b6fb2089",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            2,
+            0.5,
+            0.2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 163
+    },
+    "164": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 20,
+      "NodeID": 164,
+      "UID": "c9e2a896-4343-40bc-8308-5965dd36d378",
+      "onUpdate": {
+        "actionIds": [
+          163
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          163
+        ]
+      }
+    }
+  },
+  "BPName": "ability_10531312",
+  "NodeID": 165,
+  "UID": "f28453ec-775f-4b4e-85d6-232ece560415",
+  "eventIds": [
+    164
+  ],
+  "layer": "Base",
+  "length": 20
+}

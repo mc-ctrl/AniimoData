@@ -1,0 +1,90 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12630001",
+  "defaultHitSoundType": "s",
+  "effectId": "Eff_Parmon_10263_Attack01_01",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0.1,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    18
+  ],
+  "onProjectileHitIds": [
+    24,
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "27": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.5
+      },
+      "name": "calcResult",
+      "UID": "b1bdfde3-58bb-4a87-856f-7e1006d6e099",
+      "target": "CASTER",
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "f41a2df5-ae94-4268-9303-4c9bada6d231",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "24": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12630001,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "bb0d56c4-133a-48a6-a2cf-93bdd95d51fc",
+      "target": "TARGET",
+      "NodeID": 24,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100
+      }
+    },
+    "18": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "353169a8-4a1c-4d85-9ace-d507dc112f6d",
+      "effectId": "Eff_Parmon_10263_Attack01_02",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "29": {
+      "UID": "880a48c2-4796-4806-a528-21c18343e9c2",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 29
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 2,
+  "calcResultNodeId": 24,
+  "impulseId": 2000,
+  "acceleration": 0
+}

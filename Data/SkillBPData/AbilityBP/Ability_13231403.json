@@ -1,0 +1,62 @@
+{
+  "BPName": "ability_13231403",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityIndicator": 1,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 13231403001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 7,
+  "preloadAnims": [
+    "Skill_SwordDance_03"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Parmon_10323_Skill_SwordDance_03_Mirror_Stab",
+    "Eff_Parmon_10323_Skill_Block_End"
+  ],
+  "searchRelation": 2,
+  "name": "无敌剑舞",
+  "searchTargetRangeRadius": 7,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      1,
+      1,
+      7.5,
+      1.5,
+      0.5
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 40600040
+}

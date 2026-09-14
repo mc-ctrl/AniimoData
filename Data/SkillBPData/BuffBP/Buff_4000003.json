@@ -1,0 +1,111 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "bp_reduce_rate_v": {
+      "calcId": 4000003,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 2,
+      "UID": "4190dd02-7176-4326-b98b-ec1853bc74ba",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_4000003",
+  "NodeID": 1,
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "icon": "",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "duration": 1,
+      "disableWhenFinished": false,
+      "NodeID": 8,
+      "UID": "711591fc-82ca-4110-b5a6-ccffdf7f0f33",
+      "target": "OWNER",
+      "renderNameFilter": [
+        "M_Parmon_10212_Eye",
+        "M_Parmon_10187_Eye",
+        "M_Parmon_10454_Eye",
+        "M_Parmon_10053_Eye",
+        "M_Parmon_10285_Eye",
+        "M_Parmon_10143_Eye_Default",
+        "M_Parmon_10143_Eye01_Default",
+        "M_Parmon_10143_Eye02_Default",
+        "M_Parmon_10143_Eye03_Default",
+        "M_Parmon_10143_Eye04_Default",
+        "M_Parmon_10143_Eye05_Default",
+        "M_Parmon_10143_Eye06_Default",
+        "M_Parmon_10143_Eye07_Default",
+        "M_Parmon_10143_Eye08_Default",
+        "M_Parmon_10027_Eye",
+        "M_Parmon_10194_Eye",
+        "M_Parmon_10194_Eye01",
+        "M_Parmon_10194_Eye02",
+        "M_Parmon_10194_Eye03",
+        "M_Parmon_10194_Eye04",
+        "M_Parmon_10194_Eye05",
+        "M_Parmon_10222_Eye"
+      ],
+      "presetName": "BossRush_RedEyes_Frenel",
+      "loopCount": 1,
+      "name": "playPreset"
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cd4b6322-37c6-48d4-873b-ba9177b783a3",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Loop_QXXZ",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "de2e5376-42db-4d0a-ac97-acd0661bc60f",
+      "name": "stopPreset",
+      "presetName": "BossRush_RedEyes_Frenel",
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "4fbe9839-4ec5-4bb6-99f0-b714a1d9dbee",
+      "name": "callClientAction",
+      "actionIds": [
+        4,
+        8
+      ],
+      "NodeID": 6
+    },
+    "11": {
+      "UID": "773e53bb-08af-4275-b6cb-39fd28a2adc4",
+      "name": "callClientAction",
+      "actionIds": [
+        9,
+        12,
+        13
+      ],
+      "NodeID": 11
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "d8f26f84-eda3-422d-bd8f-41bf28c76ed8",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Loop_QXXZ",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "afae7473-10eb-4749-a336-1cfad4c8b659",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Start_QXXZ",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    11
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50003",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "9380900a-41f7-40f0-82ba-8a4ce6bc5841",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "7f3e6c9a-97df-4c70-8e3e-50d7df8734bd",
+      "target": "OWNER",
+      "name": "getLevel",
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "0cfbaae1-bc51-40b9-95e0-88a23656e3ff",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 9
+    },
+    "7": {
+      "calcInfo": {
+        "ep_regen_force_v": {
+          "rValue": {
+            "calcId": 50003,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 8,
+            "UID": "020eb23d-b318-48d8-af33-c5f99f40f599",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "23564e11-e591-4f88-b02a-3d1d4943c1af",
+          "NodeID": 5,
+          "lValue": {
+            "UID": "7f3e6c9a-97df-4c70-8e3e-50d7df8734bd",
+            "target": "OWNER",
+            "name": "getLevel",
+            "NodeID": 4
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "bb32e9d8-4ada-414b-b928-9ed75bd1b8ba",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 7
+    },
+    "8": {
+      "calcId": 50003,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "020eb23d-b318-48d8-af33-c5f99f40f599",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffDestroyIds": [
+    9
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

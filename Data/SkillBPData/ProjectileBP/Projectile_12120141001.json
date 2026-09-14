@@ -1,0 +1,165 @@
+{
+  "trackingNoOffsetRotationRange": 0.5,
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12120141",
+  "NodeID": 0,
+  "duration": 5,
+  "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Boss",
+  "onProjectileTickIds": [
+    36
+  ],
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 6,
+  "minAngularOffset": 0,
+  "moveSpeed": 5,
+  "defaultHitSoundType": "h",
+  "onProjectileHitIds": [
+    31,
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "28": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12120141,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "51c1a12f-4aa8-4baf-b8b5-c3117619c724",
+      "target": "TARGET",
+      "NodeID": 28,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Parmon_10212_Skill_Ex_Bullet_Hit"
+      }
+    },
+    "45": {
+      "targetPos": {
+        "key": "target",
+        "name": "getCacheVal",
+        "UID": "c0d55b20-f0c6-42ee-a312-313bc97e9cae",
+        "target": "OWNER",
+        "NodeID": 44
+      },
+      "radius": 2,
+      "UID": "d5a24141-0c80-444e-a05e-f1f43870b552",
+      "NodeID": 45,
+      "name": "randomPoint"
+    },
+    "31": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "c773c4a9-d787-48cf-9403-599a05b4c8d0",
+      "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Hit",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 12120141002,
+      "name": "createProjectile",
+      "UID": "d323da6f-5fa8-4259-ac22-8b3e12082ce1",
+      "rotation": "Direct",
+      "pos": "PROJECTILE",
+      "projectileType": "Tracking",
+      "targetRotation": {
+        "UID": "f397be29-9653-43fe-9b73-35eee5afea70",
+        "name": "getProjectileRotation",
+        "NodeID": 43
+      },
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "d191ae66-b8bf-4fce-aae6-3a8d4020c261",
+        "target": "OWNER",
+        "NodeID": 63
+      },
+      "NodeID": 34,
+      "offsetRotation": {
+        "rValue": {
+          "rValue": {
+            "NodeID": 42,
+            "name": "constVector3",
+            "UID": "5e25fd1c-acea-42e8-9127-05b386a0614d",
+            "x": 0,
+            "y": 72,
+            "z": 0
+          },
+          "name": "multiply",
+          "UID": "a91309c2-4eda-4532-850f-6d6a159817f1",
+          "NodeID": 41,
+          "lValue": {
+            "UID": "50151f3f-ef86-4c66-8d80-34d767cb2013",
+            "name": "getIterNumber",
+            "NodeID": 40
+          }
+        },
+        "name": "add",
+        "UID": "1d7ca7c7-5f02-4b63-adc7-b2293b109989",
+        "NodeID": 39,
+        "lValue": {
+          "rValue": {
+            "NodeID": 37,
+            "name": "constVector3",
+            "UID": "9323fa83-e666-4d9e-9587-5397afb25dde",
+            "x": 90,
+            "y": 0,
+            "z": 0
+          },
+          "name": "add",
+          "UID": "94aeb030-25e6-495c-90dc-77cb40b24055",
+          "NodeID": 38,
+          "lValue": {
+            "UID": "f397be29-9653-43fe-9b73-35eee5afea70",
+            "name": "getProjectileRotation",
+            "NodeID": 43
+          }
+        }
+      }
+    },
+    "36": {
+      "endNum": 5,
+      "actionIds": [
+        45,
+        34
+      ],
+      "NodeID": 36,
+      "UID": "1dbb4566-efa6-489b-8046-57fbf39b0e87",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    }
+  },
+  "tickInterval": 2,
+  "calcResultNodeId": 28,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Parmon_10212_Skill_Ex_Bullet_Hit",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0.5
+}

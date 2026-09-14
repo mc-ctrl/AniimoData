@@ -1,0 +1,497 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "6bc499cb-06d7-4ef9-aa22-92c18c9f9939",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 37
+    },
+    "38": {
+      "key": "enemyPos",
+      "name": "setCacheVal",
+      "UID": "f26b0434-b94f-47ba-aa28-4c866074ba52",
+      "target": "OWNER",
+      "val": {
+        "UID": "6bc499cb-06d7-4ef9-aa22-92c18c9f9939",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 37
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "607000fc-f305-4505-b8e9-e0af4b70523f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "NodeID": 39
+    },
+    "54": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 53,
+      "NodeID": 54,
+      "UID": "1358d87f-de8f-43b5-97f1-a0ec7deef5c6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            4,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "rotation": {
+              "name": "getRotationFromTo",
+              "UID": "2e7d6835-5b1e-4620-8522-93d866eef19d",
+              "to": "TARGET",
+              "NodeID": 65,
+              "from": "OWNER"
+            },
+            "radius": 4,
+            "NodeID": 62,
+            "UID": "9b5cfebf-bc21-473d-af53-f9acb0319071",
+            "angle": -90,
+            "center": {
+              "key": "enemyPos",
+              "name": "getCacheVal",
+              "UID": "dcd00f02-9881-40ce-92a1-68572765728b",
+              "target": "OWNER",
+              "NodeID": 61
+            },
+            "name": "getRotatedPoint"
+          },
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5000,
+      "actionIds": [
+        53
+      ]
+    },
+    "42": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.375,
+        "reduce_cur_tp_rate": 0.375
+      },
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "d760d7cc-627f-4fd6-8836-824ea58bbbb1",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 42
+    },
+    "35": {
+      "NodeID": 35,
+      "UID": "4ced4cd6-4e65-44cc-bbaf-266be38c7ea7",
+      "effectId": "Eff_Parmon_10212_Skill_Fountain",
+      "global": true,
+      "pos": {
+        "rValue": {
+          "NodeID": 40,
+          "name": "constVector3",
+          "UID": "1764ef47-dab9-4eaf-a473-75cbada304e1",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "name": "add",
+        "UID": "2f3cd6d8-2f9e-40fa-bf0f-36f3e613b30c",
+        "NodeID": 33,
+        "lValue": {
+          "key": "enemyPos",
+          "name": "getCacheVal",
+          "UID": "f5d8126d-8622-488d-a95e-629629f285a8",
+          "target": "OWNER",
+          "NodeID": 32
+        }
+      },
+      "target": "TARGET",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "65": {
+      "name": "getRotationFromTo",
+      "UID": "2e7d6835-5b1e-4620-8522-93d866eef19d",
+      "to": "TARGET",
+      "NodeID": 65,
+      "from": "OWNER"
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.05,
+      "NodeID": 12,
+      "UID": "9d59150d-f0f2-45fc-ad49-acdd5cdda129"
+    },
+    "22": {
+      "time": 1.4,
+      "rotateSpeed": 360,
+      "name": "rotateTo",
+      "UID": "dca32e7d-6650-4174-a5d9-7bb6686eb520",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "5f5bbf15-c0ca-4194-beaf-5f9b48a73e2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          22
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.375,
+        "reduce_cur_tp_rate": 0.375
+      },
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "2be6741b-ca8c-492a-99dc-59ee3fff6a0f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 24
+    },
+    "64": {
+      "NodeID": 64,
+      "UID": "ecb8cafa-f8d0-47df-a276-6c28493128a5",
+      "effectId": "Eff_Parmon_10212_Skill_Fountain",
+      "global": true,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "2e7d6835-5b1e-4620-8522-93d866eef19d",
+          "to": "TARGET",
+          "NodeID": 65,
+          "from": "OWNER"
+        },
+        "radius": 4,
+        "NodeID": 62,
+        "UID": "9b5cfebf-bc21-473d-af53-f9acb0319071",
+        "angle": -90,
+        "center": {
+          "key": "enemyPos",
+          "name": "getCacheVal",
+          "UID": "dcd00f02-9881-40ce-92a1-68572765728b",
+          "target": "OWNER",
+          "NodeID": 61
+        },
+        "name": "getRotatedPoint"
+      },
+      "target": "TARGET",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "10": {
+      "UID": "6c0f0645-963d-4427-85b6-8b6d09e6ce3c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "763b015e-47ab-4ab1-bd2a-ed9f81e55528",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 24,
+      "NodeID": 25,
+      "UID": "2d7e3509-733e-4886-88bf-6ea302352ba3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            4,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "rValue": {
+              "NodeID": 40,
+              "name": "constVector3",
+              "UID": "1764ef47-dab9-4eaf-a473-75cbada304e1",
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "name": "add",
+            "UID": "2f3cd6d8-2f9e-40fa-bf0f-36f3e613b30c",
+            "NodeID": 33,
+            "lValue": {
+              "key": "enemyPos",
+              "name": "getCacheVal",
+              "UID": "f5d8126d-8622-488d-a95e-629629f285a8",
+              "target": "OWNER",
+              "NodeID": 32
+            }
+          },
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5000,
+      "actionIds": [
+        24
+      ]
+    },
+    "60": {
+      "name": "getRotationFromTo",
+      "UID": "78bd29ea-8929-4886-8ecc-ad5600ad8b08",
+      "to": "TARGET",
+      "NodeID": 60,
+      "from": "OWNER"
+    },
+    "53": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.375,
+        "reduce_cur_tp_rate": 0.375
+      },
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "f3727831-3b1c-4512-b0d2-f19efb9dc86c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 53
+    },
+    "17": {
+      "UID": "783a3f6d-4d06-4675-8045-340a03ca319e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "79323a3d-3b88-4173-98ff-f52f54f83fbc",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Fountain"
+    },
+    "43": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 42,
+      "NodeID": 43,
+      "UID": "9526f2c3-f263-4680-872b-6ad8076ec462",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            4,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "rotation": {
+              "name": "getRotationFromTo",
+              "UID": "78bd29ea-8929-4886-8ecc-ad5600ad8b08",
+              "to": "TARGET",
+              "NodeID": 60,
+              "from": "OWNER"
+            },
+            "radius": 4,
+            "NodeID": 49,
+            "UID": "a9138286-1c6c-4edf-8e9a-4f0fc0c1de28",
+            "angle": 90,
+            "center": {
+              "key": "enemyPos",
+              "name": "getCacheVal",
+              "UID": "b43eebc1-ec4b-40f1-a331-9b6c82c7ab59",
+              "target": "OWNER",
+              "NodeID": 48
+            },
+            "name": "getRotatedPoint"
+          },
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5000,
+      "actionIds": [
+        42
+      ]
+    },
+    "21": {
+      "UID": "a4b920dc-7e46-4fb3-9ff8-251e7b694c90",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    },
+    "19": {
+      "UID": "295b41d5-25be-4134-b032-9922898bb142",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 19
+    },
+    "51": {
+      "NodeID": 51,
+      "UID": "2cfdac48-98f4-4b9d-9072-79e84dca7c9a",
+      "effectId": "Eff_Parmon_10212_Skill_Fountain",
+      "global": true,
+      "pos": {
+        "rotation": {
+          "name": "getRotationFromTo",
+          "UID": "78bd29ea-8929-4886-8ecc-ad5600ad8b08",
+          "to": "TARGET",
+          "NodeID": 60,
+          "from": "OWNER"
+        },
+        "radius": 4,
+        "NodeID": 49,
+        "UID": "a9138286-1c6c-4edf-8e9a-4f0fc0c1de28",
+        "angle": 90,
+        "center": {
+          "key": "enemyPos",
+          "name": "getCacheVal",
+          "UID": "b43eebc1-ec4b-40f1-a331-9b6c82c7ab59",
+          "target": "OWNER",
+          "NodeID": 48
+        },
+        "name": "getRotatedPoint"
+      },
+      "target": "TARGET",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          25,
+          35,
+          43,
+          51,
+          54,
+          64
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 28,
+      "UID": "7ec9416e-3b09-4404-ba5a-cb5cb38d03dc"
+    }
+  },
+  "BPName": "ability_902130600",
+  "NodeID": 6,
+  "UID": "26bc3730-850c-44a2-96ab-c127e885acb4",
+  "eventIds": [
+    17,
+    21,
+    4,
+    12,
+    39,
+    28
+  ],
+  "layer": "Base",
+  "length": 5
+}

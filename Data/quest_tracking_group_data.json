@@ -1,0 +1,461 @@
+{
+  "100201": {
+    "goToPriority": 1,
+    "questId": 3708001,
+    "trackGroupId": 1002,
+    "buttonTxt": 1397125199,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          120001
+        ]
+      ]
+    ]
+  },
+  "100202": {
+    "goToPriority": 2,
+    "questId": 3708087,
+    "trackGroupId": 1002,
+    "buttonTxt": 1190266206,
+    "event": [
+      "forceTracedQuest",
+      [
+        3708087
+      ]
+    ]
+  },
+  "370903101": {
+    "goToPriority": 1,
+    "questId": 3709001,
+    "trackGroupId": 3709031,
+    "buttonTxt": 1685105111,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          121001
+        ]
+      ]
+    ]
+  },
+  "370903102": {
+    "goToPriority": 2,
+    "questId": 3709043,
+    "trackGroupId": 3709031,
+    "buttonTxt": 1928181619,
+    "event": [
+      "forceTracedQuest",
+      [
+        3709043
+      ]
+    ]
+  },
+  "371100101": {
+    "goToPriority": 1,
+    "questId": 3711001,
+    "trackGroupId": 3711001,
+    "buttonTxt": 1390533895,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          124001
+        ]
+      ]
+    ]
+  },
+  "371100102": {
+    "goToPriority": 2,
+    "questId": 3711030,
+    "trackGroupId": 3711001,
+    "buttonTxt": 1714412256,
+    "event": [
+      "forceTracedQuest",
+      [
+        3711030
+      ]
+    ]
+  },
+  "371203501": {
+    "goToPriority": 1,
+    "questId": 4702003,
+    "trackGroupId": 3712035,
+    "buttonTxt": 1885838062,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          122001
+        ]
+      ]
+    ]
+  },
+  "371203502": {
+    "goToPriority": 2,
+    "questId": 4702121,
+    "trackGroupId": 3712035,
+    "buttonTxt": 1484048435,
+    "event": [
+      "forceTracedQuest",
+      [
+        4702121
+      ]
+    ]
+  },
+  "371300101": {
+    "goToPriority": 1,
+    "questId": 3713001,
+    "trackGroupId": 3713001,
+    "buttonTxt": 1924691076,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          125001
+        ]
+      ]
+    ]
+  },
+  "371300102": {
+    "goToPriority": 2,
+    "questId": 3713057,
+    "trackGroupId": 3713001,
+    "buttonTxt": 1573060395,
+    "event": [
+      "forceTracedQuest",
+      [
+        3713057
+      ]
+    ]
+  },
+  "390101901": {
+    "goToPriority": 1,
+    "questId": 3901001,
+    "trackGroupId": 3901019,
+    "buttonTxt": 1361110738,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          106003
+        ]
+      ]
+    ]
+  },
+  "390101902": {
+    "goToPriority": 2,
+    "questId": 3901028,
+    "trackGroupId": 3901019,
+    "buttonTxt": 1331907235,
+    "event": [
+      "forceTracedQuest",
+      [
+        3901028
+      ]
+    ]
+  },
+  "470904701": {
+    "goToPriority": 1,
+    "questId": 4709017,
+    "trackGroupId": 4709047,
+    "buttonTxt": 1952309950,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          116002
+        ]
+      ]
+    ]
+  },
+  "470904702": {
+    "goToPriority": 2,
+    "questId": 4709085,
+    "trackGroupId": 4709047,
+    "buttonTxt": 1866847681,
+    "event": [
+      "forceTracedQuest",
+      [
+        4709085
+      ]
+    ]
+  },
+  "471001701": {
+    "goToPriority": 1,
+    "questId": 3710001,
+    "trackGroupId": 4710017,
+    "buttonTxt": 1876416236,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          123001
+        ]
+      ]
+    ]
+  },
+  "471001702": {
+    "goToPriority": 2,
+    "questId": 3710045,
+    "trackGroupId": 4710017,
+    "buttonTxt": 1322909372,
+    "event": [
+      "forceTracedQuest",
+      [
+        3710045
+      ]
+    ]
+  },
+  "471002201": {
+    "goToPriority": 1,
+    "questId": 3709031,
+    "trackGroupId": 4710022,
+    "buttonTxt": 2094332307,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          121003
+        ]
+      ]
+    ]
+  },
+  "471002202": {
+    "goToPriority": 2,
+    "questId": 3709045,
+    "trackGroupId": 4710022,
+    "buttonTxt": 1251534982,
+    "event": [
+      "forceTracedQuest",
+      [
+        3709045
+      ]
+    ]
+  },
+  "471002601": {
+    "goToPriority": 1,
+    "questId": 3708035,
+    "trackGroupId": 4710026,
+    "buttonTxt": 1808462138,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          120004
+        ]
+      ]
+    ]
+  },
+  "471002602": {
+    "goToPriority": 2,
+    "questId": 3708094,
+    "trackGroupId": 4710026,
+    "buttonTxt": 1498495165,
+    "event": [
+      "forceTracedQuest",
+      [
+        3708094
+      ]
+    ]
+  },
+  "471003001": {
+    "goToPriority": 1,
+    "questId": 3901016,
+    "trackGroupId": 4710030,
+    "buttonTxt": 1929997472,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          106002
+        ]
+      ]
+    ]
+  },
+  "471003002": {
+    "goToPriority": 2,
+    "questId": 3901027,
+    "trackGroupId": 4710030,
+    "buttonTxt": 1368512853,
+    "event": [
+      "forceTracedQuest",
+      [
+        3901027
+      ]
+    ]
+  },
+  "471003301": {
+    "goToPriority": 1,
+    "questId": 3712003,
+    "trackGroupId": 4710034,
+    "buttonTxt": 1797939189,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          122004
+        ]
+      ]
+    ]
+  },
+  "471003302": {
+    "goToPriority": 2,
+    "questId": 3712046,
+    "trackGroupId": 4710034,
+    "buttonTxt": 2100110356,
+    "event": [
+      "forceTracedQuest",
+      [
+        3712046
+      ]
+    ]
+  },
+  "471003801": {
+    "goToPriority": 1,
+    "questId": 3713003,
+    "trackGroupId": 4710038,
+    "buttonTxt": 2040767777,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          125002
+        ]
+      ]
+    ]
+  },
+  "471003802": {
+    "goToPriority": 2,
+    "questId": 3713058,
+    "trackGroupId": 4710038,
+    "buttonTxt": 1937820478,
+    "event": [
+      "forceTracedQuest",
+      [
+        3713058
+      ]
+    ]
+  },
+  "471004201": {
+    "goToPriority": 1,
+    "questId": 3701030,
+    "trackGroupId": 4710042,
+    "buttonTxt": 1739752660,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          105001
+        ]
+      ]
+    ]
+  },
+  "471004202": {
+    "goToPriority": 2,
+    "questId": 3701116,
+    "trackGroupId": 4710042,
+    "buttonTxt": 1991215153,
+    "event": [
+      "forceTracedQuest",
+      [
+        3701116
+      ]
+    ]
+  },
+  "471004601": {
+    "goToPriority": 1,
+    "questId": 3711003,
+    "trackGroupId": 4710046,
+    "buttonTxt": 1976828484,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          124002
+        ]
+      ]
+    ]
+  },
+  "471004602": {
+    "goToPriority": 2,
+    "questId": 3711031,
+    "trackGroupId": 4710046,
+    "buttonTxt": 1992165004,
+    "event": [
+      "forceTracedQuest",
+      [
+        3711031
+      ]
+    ]
+  },
+  "471005001": {
+    "goToPriority": 1,
+    "questId": 4709032,
+    "trackGroupId": 4710050,
+    "buttonTxt": 1497770864,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          116003
+        ]
+      ]
+    ]
+  },
+  "471005002": {
+    "goToPriority": 2,
+    "questId": 4709082,
+    "trackGroupId": 4710050,
+    "buttonTxt": 1186957035,
+    "event": [
+      "forceTracedQuest",
+      [
+        4709082
+      ]
+    ]
+  },
+  "471005301": {
+    "goToPriority": 1,
+    "questId": 3002030,
+    "trackGroupId": 4710053,
+    "buttonTxt": 1083530368,
+    "event": [
+      "questManualJump",
+      [
+        "1",
+        [
+          117001
+        ]
+      ]
+    ]
+  },
+  "471005302": {
+    "goToPriority": 2,
+    "questId": 3002037,
+    "trackGroupId": 4710053,
+    "buttonTxt": 1181062773,
+    "event": [
+      "forceTracedQuest",
+      [
+        3002037
+      ]
+    ]
+  }
+}

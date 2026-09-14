@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_902071202",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10600452,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902071202001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_RightPunch"
+  ],
+  "preloadEffs": [
+    "Eff_SkillObj_90207_SoilShield_Break",
+    "Eff_Monster_90207_Punch_Attack01_Prepare01",
+    "Eff_Parmon_10201_Skill_SpikeAttack",
+    "Eff_Parmon_10201_Skill_DashAttack"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5
+}

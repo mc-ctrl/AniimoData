@@ -1,0 +1,85 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12620013",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10261_Skill_Attack04",
+  "enableMaxAngleTime": 1,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 10,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "22": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a9dd9301-1212-4a18-ae92-0f284ffc70f3",
+      "effectId": "Eff_Parmon_10261_Skill_Throw_Bomb",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "33": {
+      "pos": {
+        "UID": "3e7b0a62-475c-43ae-a518-e0ec86e890ba",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "20f5cc06-696d-4382-9517-b49c96c1df22",
+          "name": "getProjectilePos",
+          "NodeID": 31
+        },
+        "NodeID": 32
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "cbfe61f7-248b-4a42-9f7b-0b91585dbb18",
+      "effectId": "Eff_Parmon_10261_Skill_Throw_Bomb",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12620013,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "1668ecc9-38e4-4451-b624-9f01415fc619",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3001,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 9,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10001
+      }
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    22
+  ],
+  "onProjectileHitIds": [
+    29,
+    33
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "calcResultNodeId": 29,
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "duration": 2,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3001,
+  "acceleration": 0
+}

@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_12120141",
+  "NodeID": 1,
+  "UID": "c22f0d63-e552-436b-b6df-6d24743b950b",
+  "desc": "不断飞出花瓣追踪攻击玩家",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12120141001,
+      "name": "setCombatActionTimeline",
+      "UID": "617d5dbc-42e7-4574-8062-2ec80f799e0a",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicFlower",
+    "Skill_MagicFlower_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_Ex_Flower",
+    "Eff_Parmon_10212_Skill_Ex_Bullet_Boss",
+    "Eff_Parmon_10212_Skill_Ex_Bullet_Hit",
+    "Eff_Parmon_10212_Skill_Ex_Hit",
+    "Eff_Parmon_10212_Skill_Ex_Bullet_Small_Boss",
+    "Eff_Parmon_10212_Skill_MagicFlower_Body_BOSS",
+    "Eff_Parmon_10212_Skill_Ex_Atmosphere",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600914,
+  "name": "红莲旋刃舞"
+}

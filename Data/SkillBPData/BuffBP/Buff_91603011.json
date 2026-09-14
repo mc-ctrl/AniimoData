@@ -1,0 +1,170 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "dmg_grass_add_ratio": 0
+  },
+  "BPName": "buff_91603011",
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffInheritIds": [
+    19
+  ],
+  "onBuffLayerChangeIds": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "c9f516fd-0bbb-41b5-9b10-888f05324e56",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a9b3caee-a4e3-4831-bd9b-4eff913ba21a",
+      "effectId": "Eff_Parmon_10603_Skill_Wood_Buff",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "24": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "bc76c453-5dcb-4525-a9b4-3d5be680b9a9",
+      "NodeID": 24,
+      "lValue": {
+        "templateId": 91603011,
+        "name": "getBuffLayer",
+        "UID": "268f324f-9875-4b98-83a8-1f08cce1bd9e",
+        "target": "OWNER",
+        "NodeID": 23
+      }
+    },
+    "10": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "b87654b7-a8b3-45f3-afe5-a69ebe4762f7",
+      "NodeID": 10,
+      "lValue": {
+        "templateId": 91603011,
+        "name": "getBuffLayer",
+        "UID": "9e5b4ae7-5ddb-42df-9576-e83a671c7f1b",
+        "target": "OWNER",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "140ba7ff-d16a-4cfc-832f-cf56fa3f0f51",
+      "effectId": "Eff_Parmon_10603_Skill_Wood_Buff",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "967a0c78-298b-4f0d-883c-63d7a945b329",
+      "effectId": "Eff_Parmon_10603_Skill_Wood_Buff",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "dd3cb7e8-4363-4be3-b698-231194f9c88f",
+      "effectId": "Eff_Parmon_10603_Skill_OutEx_buff",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "da1bbfca-5cf6-40f8-90d5-644a2491f5b8",
+      "effectId": "Eff_Parmon_10603_Skill_OutEx_buff",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8183a6af-e02f-44b3-9511-065c0a51bb0a",
+      "effectId": "Eff_Parmon_10603_Skill_Wood_Buff",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "18": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "94d58d48-039d-4ab5-b526-ead0f28151cc",
+      "NodeID": 18,
+      "lValue": {
+        "templateId": 91603011,
+        "name": "getBuffLayer",
+        "UID": "04bd6b44-eaca-4b29-b736-5d7a248b01fd",
+        "target": "OWNER",
+        "NodeID": 17
+      }
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "26593909-ab13-4f03-bae5-2878b1e08a78",
+      "effectId": "Eff_Parmon_10603_Skill_OutEx_buff",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "11": {
+      "actionIds": [
+        13,
+        15
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "b29b83d8-80e7-4d76-99cb-ade79817c0b7",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "19": {
+      "actionIds": [
+        21
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "2325c413-79ed-4206-a978-01097b0898a2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 19
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1c14d223-af7e-4245-9d42-cb53c1fd19ab",
+      "effectId": "Eff_Parmon_10603_Skill_OutEx_buff",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    7,
+    16
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

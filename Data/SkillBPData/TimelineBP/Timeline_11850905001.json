@@ -1,0 +1,28 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "818c228c-e62b-41d7-bb51-ab85952fe051",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "97bac530-88bc-465e-87b4-e755eea6cf30",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    }
+  },
+  "BPName": "ability_11850905",
+  "NodeID": 5,
+  "UID": "48dc7e00-c0b5-4102-8566-efccdc7766d4",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 0.2
+}

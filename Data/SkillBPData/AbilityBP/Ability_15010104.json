@@ -1,0 +1,84 @@
+{
+  "BPName": "ability_15010104",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800340,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "24f603b6-6f81-4303-860a-20b2c99a4395",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        47
+      ],
+      "NodeID": 8
+    },
+    "49": {
+      "UID": "433b03b0-6c5a-40d9-abe6-5cf8973555d1",
+      "conditionIds": [
+        48,
+        50
+      ],
+      "name": "conditionOr",
+      "NodeID": 49
+    },
+    "50": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "2e4d5972-a362-49ad-9055-e85c1dcf6571",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "47": {
+      "timelineId": 15010100001,
+      "name": "setCombatActionTimeline",
+      "UID": "0187b540-ea31-44da-8620-80c8da4045fd",
+      "target": "CASTER",
+      "NodeID": 47
+    },
+    "7": {
+      "timelineId": 15010104001,
+      "name": "setCombatActionTimeline",
+      "UID": "c3514779-f3b5-4d08-aaa4-eaee54f58990",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "48": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "96fa5542-1892-477b-88ff-a48cc3a9c8e1",
+      "target": "OWNER",
+      "NodeID": 48
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrazyClaw01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10501_Rampage_Skill_CrazyClaw1_R",
+    "Eff_Parmon_10501_Rampage_Skill_CrazyClaw1_L",
+    "Eff_Hit_Rock_Slash",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint1",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint2",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint1",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint2"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

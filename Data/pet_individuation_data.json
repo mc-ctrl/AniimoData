@@ -1,0 +1,134 @@
+{
+  "1111016101": {
+    "weight": 0,
+    "animState": 1,
+    "name": "螃蟹头顶花或草 已开",
+    "pet": 1016100,
+    "icon": "flower",
+    "type": 1111
+  },
+  "1010001107": {
+    "weight": 100,
+    "colour1": "BD00FF",
+    "name": "紫色系(标准)",
+    "pet": 1001100,
+    "icon": "yellow",
+    "colourStyle": 7,
+    "type": 1010
+  },
+  "1010001108": {
+    "weight": 1,
+    "type": 1010,
+    "colour1": "E1E1E1",
+    "isRare": 1,
+    "pet": 1001100,
+    "icon": "green",
+    "colourStyle": 8,
+    "name": "白色系"
+  },
+  "1010001104": {
+    "weight": 100,
+    "name": "绿色系",
+    "pet": 1001100,
+    "icon": "green",
+    "colour1": "A9DEA7",
+    "colour2": "5CF059",
+    "colour3": "2DB62A",
+    "colour4": "276426",
+    "colourStyle": 4,
+    "type": 1010
+  },
+  "1010001106": {
+    "weight": 100,
+    "colour1": "0019FF",
+    "name": "蓝色系",
+    "pet": 1001100,
+    "icon": "orange",
+    "colourStyle": 6,
+    "type": 1010
+  },
+  "1010001109": {
+    "weight": 1,
+    "type": 1010,
+    "colour1": "252525",
+    "isRare": 1,
+    "pet": 1001100,
+    "icon": "red",
+    "colourStyle": 9,
+    "name": "黑色系"
+  },
+  "1010016101": {
+    "weight": 100,
+    "type": 1010,
+    "colour1": "FF3A3A",
+    "colour2": "FE9E9E",
+    "pet": 1016100,
+    "icon": "orange",
+    "colourStyle": 1,
+    "name": "红色系"
+  },
+  "1010016102": {
+    "weight": 100,
+    "colour1": "FF7E07",
+    "name": "橙色系",
+    "pet": 1016100,
+    "icon": "yellow",
+    "colourStyle": 2,
+    "type": 1010
+  },
+  "1010001101": {
+    "weight": 100,
+    "type": 1010,
+    "colour1": "FF3A3A",
+    "colour2": "FE9E9E",
+    "pet": 1001100,
+    "icon": "red",
+    "colourStyle": 1,
+    "name": "红色系"
+  },
+  "1010001105": {
+    "weight": 100,
+    "colour1": "32FFF3",
+    "name": "青色系",
+    "pet": 1001100,
+    "icon": "red",
+    "colourStyle": 5,
+    "type": 1010
+  },
+  "1010016103": {
+    "weight": 100,
+    "type": 1010,
+    "colour1": "FCFF61",
+    "isRare": 1,
+    "pet": 1016100,
+    "icon": "green",
+    "colourStyle": 3,
+    "name": "黄色系"
+  },
+  "1111016100": {
+    "weight": 100,
+    "animState": 0,
+    "name": "螃蟹头顶花或草 未开",
+    "pet": 1016100,
+    "icon": "empty",
+    "type": 1111
+  },
+  "1010001102": {
+    "weight": 100,
+    "colour1": "FF7E07",
+    "name": "橙色系",
+    "pet": 1001100,
+    "icon": "orange",
+    "colourStyle": 2,
+    "type": 1010
+  },
+  "1010001103": {
+    "weight": 100,
+    "colour1": "FCFF61",
+    "name": "黄色系",
+    "pet": 1001100,
+    "icon": "yellow",
+    "colourStyle": 3,
+    "type": 1010
+  }
+}

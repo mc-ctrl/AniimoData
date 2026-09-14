@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91173101",
+  "calcInfoByLuaConfig": {
+    "dmg_water_add_ratio": "param0",
+    "type": 1,
+    "id": 91173101
+  },
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "isDeathKeep": true
+}

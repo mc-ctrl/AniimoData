@@ -1,0 +1,50 @@
+{
+  "1021300": {
+    "5": {
+      "quality": 5,
+      "pic": "$UI_Img_PetBaptize_Sun.png",
+      "suitEff": [
+        [
+          "$Eff_Parmon_Suit_10213_05_C_01_All_A.prefab",
+          "VFXpoint_10213_a"
+        ],
+        [
+          "$Eff_Parmon_Suit_10213_05_C_01_All_B.prefab",
+          "VFXpoint_10213_b"
+        ]
+      ],
+      "name": 1264903028
+    },
+    "4": {
+      "quality": 5,
+      "pic": "$UI_Img_PetBaptize_Moon.png",
+      "suitEff": [
+        [
+          "$Eff_Parmon_Suit_10213_04_C_02_All_A.prefab",
+          "VFXpoint_10213_a"
+        ],
+        [
+          "$Eff_Parmon_Suit_10213_04_C_02_All_B.prefab",
+          "VFXpoint_10213_b"
+        ]
+      ],
+      "name": 1875554504
+    },
+    "0": {
+      "quality": 2,
+      "isHide": 1,
+      "pic": "$UI_PetHead_10213.png",
+      "name": 2099317932
+    },
+    "1": {
+      "pic": "$UI_Img_PetBaptize_Flower.png",
+      "quality": 4,
+      "name": 1179435449
+    },
+    "2": {
+      "pic": "$UI_Img_PetBaptize_Dark.png",
+      "quality": 4,
+      "name": 1114374550
+    }
+  }
+}

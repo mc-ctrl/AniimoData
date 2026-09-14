@@ -1,0 +1,187 @@
+{
+  "nodeMap": {
+    "22": {
+      "duration": 0.2,
+      "name": "moveByDirection",
+      "UID": "9007a334-5bc5-4173-a8db-7af19ea1e7c4",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "velocity": [
+        0,
+        20,
+        0
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "42f097f6-ef0a-48a3-89d6-53b55f8737b5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "fa192bdf-6686-4cc7-b5b4-ddc51960ee7d",
+      "value": true,
+      "name": "forceUngrounded",
+      "NodeID": 24
+    },
+    "14": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 12,
+      "NodeID": 14,
+      "UID": "18c3ecd2-7754-46ae-abcb-575acba1527f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.8,
+            0.8,
+            1,
+            2.5,
+            0
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 11100,
+      "actionIds": [
+        12
+      ]
+    },
+    "25": {
+      "UID": "37f33e48-2a35-430e-9bd1-8fb9b920a148",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 16,
+      "UID": "6302fd43-f227-4b63-bf4e-78d6c581229f"
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 27,
+      "UID": "020d88de-d7e7-47aa-a98d-513cc635089b"
+    },
+    "26": {
+      "UID": "3b97b5e3-f49a-4c14-8c94-0be3de08171a",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 26
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 23,
+      "UID": "ae12d86f-000c-4a03-a171-0d467ea9f8b9"
+    },
+    "12": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14010003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "f7a84b03-1e60-48f8-a139-8b92eab12974",
+      "target": "TARGET",
+      "NodeID": 12,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30103,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 11100
+      }
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "88cdc874-5861-4d7d-a107-be91c20284c9",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Attack03"
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5e8da663-8d00-443b-8aae-cdaa57bea998",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10401_Skill_03_Attack",
+      "NodeID": 20
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 21,
+      "UID": "5305ecd9-b3a6-4380-9113-8c5055527bb6"
+    }
+  },
+  "BPName": "ability_14010003",
+  "NodeID": 6,
+  "UID": "21be6298-bbe0-4968-bda3-1d421b521002",
+  "eventIds": [
+    25,
+    4,
+    23,
+    16,
+    21,
+    27
+  ],
+  "layer": "Base",
+  "length": 2.3
+}

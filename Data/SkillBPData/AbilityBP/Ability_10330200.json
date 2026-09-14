@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_10330200",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10400330,
+  "abilityType": 2,
+  "aiSelectWeight": 33,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10330200001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BladeDance_Loop",
+    "Skill_BladeDance_Start",
+    "Skill_BladeDance_End"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10033_Skill_BladeDance_End",
+    "Eff_Parmon_10222_Skill_Cross_Bullet_Hit",
+    "Eff_Hit_Electric_Slash_Y_Big",
+    "Eff_Parmon_10033_Skill_BladeDance_Start",
+    "Eff_Parmon_10033_Skill_BladeDance_Up"
+  ],
+  "searchRelation": 2,
+  "name": "电普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

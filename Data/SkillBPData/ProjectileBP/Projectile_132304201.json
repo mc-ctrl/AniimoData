@@ -1,0 +1,116 @@
+{
+  "duration": 2,
+  "BPName": "timeline_132304",
+  "NodeID": 53,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10323_Skill_RoseWind_Water",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "moveSpeed": 20,
+  "onProjectileHitIds": [
+    46
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 2.5,
+  "sweepShape": 0,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "nodeMap": {
+    "46": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 44,
+      "NodeID": 46,
+      "UID": "3784f5f3-dc5c-4886-ab87-86a5026557d2",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2.7,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5000,
+      "actionIds": [
+        44,
+        104
+      ]
+    },
+    "104": {
+      "target": "TARGET",
+      "duration": {
+        "calcId": 132304,
+        "calcType": 4,
+        "paramName": "param2",
+        "NodeID": 103,
+        "UID": "18d37f2f-2cdf-4174-b1d5-51e771122539",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 10117,
+      "NodeID": 104,
+      "UID": "e62f892a-ba08-40db-82a5-031bf45bbf7f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "103": {
+      "calcId": 132304,
+      "calcType": 4,
+      "paramName": "param2",
+      "NodeID": 103,
+      "UID": "18d37f2f-2cdf-4174-b1d5-51e771122539",
+      "name": "getParamByLuaConfig"
+    },
+    "44": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 132304,
+        "instant_dmg_rate_v": "param1",
+        "type": 4
+      },
+      "UID": "2c408076-1191-4269-a0c8-3c0c67b08cc2",
+      "target": "TARGET",
+      "NodeID": 44,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 5000,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10512
+      }
+    }
+  },
+  "UID": "b32480e6-9615-4709-9edb-d6434b0d3430",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 44,
+  "impulseId": 5000,
+  "acceleration": 0
+}

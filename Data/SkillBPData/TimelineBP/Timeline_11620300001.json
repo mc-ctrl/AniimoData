@@ -1,0 +1,273 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          32,
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "actionIds": [
+        43
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "4256ea20-e237-4b5e-beae-0c154d7a6996",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        37
+      ],
+      "NodeID": 38
+    },
+    "40": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "NodeID": 40
+    },
+    "41": {
+      "UID": "ec7d912b-3505-4fd5-8b32-246369c61475",
+      "target": "OWNER",
+      "name": "isInBurrow",
+      "NodeID": 41
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 35,
+      "UID": "d627b621-9fc3-4771-8514-89bf42115115"
+    },
+    "44": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "8e5fce86-794c-4ba5-a9c1-c550ce17b17e",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "65d159f1-ea27-4dfb-b7cd-a87c086f5559",
+      "isAbilityEndRemove": false,
+      "soundId": "Ani_Parmon_10161_Skill_MagicLeaf_loop",
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 20,
+      "animId": "Skill_MagicLeaf"
+    },
+    "48": {
+      "duration": 0.45,
+      "name": "puppetPreCastAction",
+      "UID": "ca655147-952c-470b-bf0c-2ef30a9dd875",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 48
+    },
+    "3": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 13,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "45": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        44
+      ],
+      "UID": "f759d465-25f9-4724-9811-1a716d57da43",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        48
+      ],
+      "NodeID": 45
+    },
+    "47": {
+      "duration": 0.2,
+      "name": "puppetPreCastAction",
+      "UID": "f664284c-07dc-477a-9302-485240e4d9b3",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 47
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 46,
+      "UID": "ee29f3a1-2608-4126-a266-444cf23db3e7"
+    },
+    "43": {
+      "UID": "c2769a03-4ce7-4e32-9fbb-395f03ab9fd5",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 43
+    },
+    "25": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2116102,
+      "NodeID": 25,
+      "UID": "43beab8d-dd7a-410c-a5ec-82baea1e89f2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "37": {
+      "UID": "82cff1a9-db92-4da4-9205-0ecb3dbfc1d8",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 37
+    },
+    "27": {
+      "UID": "97022228-81a9-400b-ba25-468d34ac51e0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25,
+          31,
+          33
+        ]
+      },
+      "NodeID": 27
+    },
+    "28": {
+      "UID": "ee1a32a3-0dea-4ea8-9362-166e182d97ff",
+      "target": "OWNER",
+      "name": "isInBurrow",
+      "NodeID": 28
+    },
+    "29": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c1cf2683-b52f-4c18-94bb-18bb1f1e66f1",
+      "target": "OWNER",
+      "NodeID": 29,
+      "animId": "Skill_MagicLeaf_BurrowState"
+    },
+    "23": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 23
+    },
+    "32": {
+      "name": "stopSoundStr",
+      "UID": "457abc73-a633-4d96-b720-0b19bb25b06b",
+      "soundId": "parmon_10162_skill_burrowskill_magicleaf",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "657215b9-1c56-429c-98a2-56c12836d808",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10162_skill_burrowskill_magicleaf",
+      "NodeID": 33
+    },
+    "34": {
+      "cameraShakeId": 21124,
+      "name": "playCameraImpulseById",
+      "UID": "b5a571c4-916b-4840-b463-1c223af5f22b",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "22": {
+      "actionIds": [
+        29
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "edbbcc22-1a4d-4823-af7f-86aec3d0ef0c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 22
+    }
+  },
+  "BPName": "ability_11620300",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    40,
+    5,
+    23,
+    13,
+    27,
+    35,
+    46
+  ],
+  "layer": "Base",
+  "length": 1.75
+}

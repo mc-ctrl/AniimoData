@@ -1,0 +1,246 @@
+{
+  "200027": [
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff1.png",
+      "buffDesc": 2037697520,
+      "buffTips": 1526783703,
+      "buffTitleDesc": 1706824330,
+      "gearLevel": 0,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1388991471,
+      "buffTips": 1371085126,
+      "buffTitleDesc": 1336097131,
+      "gearLevel": 0,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Icon_Map_LeylinesTree_Cultivate.png",
+      "buffDesc": 1288498112,
+      "buffTips": 1970007768,
+      "buffTitleDesc": 2010255347,
+      "gearLevel": 1,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1649747666,
+      "buffTips": 1526573895,
+      "buffTitleDesc": 1660297667,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1328234567,
+      "buffTips": 1800816648,
+      "buffTitleDesc": 1517477952,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Icon_Map_LeylinesTree_Weather.png",
+      "buffDesc": 1789848310,
+      "buffTips": 2113528886,
+      "buffTitleDesc": 1423969300,
+      "gearLevel": 1,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1083047166,
+      "buffTips": 1100034516,
+      "buffTitleDesc": 1374548282,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1526721508,
+      "buffTips": 1105434360,
+      "buffTitleDesc": 1328367559,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff5.png",
+      "buffDesc": 2012047697,
+      "buffTips": 1937233754,
+      "buffTitleDesc": 2125565903,
+      "gearLevel": 2,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1100146394,
+      "buffTips": 1529951325,
+      "buffTitleDesc": 2060663766,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1249612285,
+      "buffTips": 2138224068,
+      "buffTitleDesc": 1750541211,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff4.png",
+      "buffDesc": 1491079406,
+      "buffTips": 1274163842,
+      "buffTitleDesc": 1662256975,
+      "gearLevel": 2,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1742949533,
+      "buffTips": 1855487499,
+      "buffTitleDesc": 1773113840,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 2053470150,
+      "buffTips": 1872407147,
+      "buffTitleDesc": 1478504405,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff7.png",
+      "buffDesc": 1773197018,
+      "buffTips": 1550207341,
+      "buffTitleDesc": 1458815681,
+      "gearLevel": 3,
+      "isLargeBuff": 1
+    }
+  ],
+  "200011": [
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff1.png",
+      "buffDesc": 1164739032,
+      "buffTips": 1693466509,
+      "buffTitleDesc": 1920899825,
+      "gearLevel": 0,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1609011773,
+      "buffTips": 1738793473,
+      "buffTitleDesc": 1118656443,
+      "gearLevel": 0,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Icon_Map_LeylinesTree_Cultivate.png",
+      "buffDesc": 1763841002,
+      "buffTips": 2128850445,
+      "buffTitleDesc": 1099554482,
+      "gearLevel": 1,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1918669219,
+      "buffTips": 1923051889,
+      "buffTitleDesc": 1453031603,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1233602987,
+      "buffTips": 1766887356,
+      "buffTitleDesc": 2095867743,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Icon_Map_LeylinesTree_Weather.png",
+      "buffDesc": 1125091495,
+      "buffTips": 2085592391,
+      "buffTitleDesc": 1857285571,
+      "gearLevel": 2,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1151189104,
+      "buffTips": 1824384813,
+      "buffTitleDesc": 1625714490,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1636075302,
+      "buffTips": 2121211265,
+      "buffTitleDesc": 1537002915,
+      "gearLevel": 1,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff5.png",
+      "buffDesc": 1342032873,
+      "buffTips": 1920539445,
+      "buffTitleDesc": 1501289428,
+      "gearLevel": 1,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1091039605,
+      "buffTips": 1991234829,
+      "buffTitleDesc": 1995743310,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1969780937,
+      "buffTips": 1164285130,
+      "buffTitleDesc": 1222540997,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff4.png",
+      "buffDesc": 1115447952,
+      "buffTips": 1725653992,
+      "buffTitleDesc": 1108360621,
+      "gearLevel": 2,
+      "isLargeBuff": 1
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1266896223,
+      "buffTips": 2083287177,
+      "buffTitleDesc": 2127089565,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff2.png",
+      "buffDesc": 1839789522,
+      "buffTips": 1353923698,
+      "buffTitleDesc": 1445541671,
+      "gearLevel": 2,
+      "isLargeBuff": 0
+    },
+    {
+      "buffIcon": "$UI_Img_Map_LeylinesTree_Buff7.png",
+      "buffDesc": 1100062815,
+      "buffTips": 1175749141,
+      "buffTitleDesc": 1343746230,
+      "gearLevel": 3,
+      "isLargeBuff": 1
+    }
+  ]
+}

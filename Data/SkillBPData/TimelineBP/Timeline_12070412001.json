@@ -1,0 +1,165 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "dfe26088-8774-45b1-a76e-55b89adf6e45",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Attack_02",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.66,
+      "NodeID": 23,
+      "UID": "e741aeae-bf33-4c2e-bdec-d1324b02a021"
+    },
+    "15": {
+      "UID": "5f8009f4-1c4a-4210-80c5-111d77099dd9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.66,
+      "NodeID": 25,
+      "UID": "9a8c81ef-37cd-4f39-90b2-8cdb2b84c619"
+    },
+    "26": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2120704,
+      "NodeID": 26,
+      "UID": "7b1ec215-b627-4a32-ba3a-9d6503d23913",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.66,
+      "NodeID": 28,
+      "UID": "ebaaaf2d-aa7f-430f-acdc-af9b4f07d521"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.55,
+      "NodeID": 17,
+      "UID": "d7f087b4-7c89-4c10-854c-a24ecad9437a"
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "80f668a9-9b2b-4800-9c41-9c63c8814aec",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10207_skill_takeroot_aggressive",
+      "NodeID": 29
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fb7b819f-061e-4f99-b54a-ab7b44bab759",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Start",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "5": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "19": {
+      "duration": 10,
+      "switchToAbilityId": 12070411,
+      "NodeID": 19,
+      "UID": "36043ccd-1641-4b9c-8d10-5c9b20506679",
+      "name": "enableTakeRootState",
+      "enable": true,
+      "exitCastAbilityId": 12070411
+    },
+    "11": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 11
+    },
+    "21": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          29
+        ]
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_12070412",
+  "NodeID": 7,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    5,
+    13,
+    17,
+    21,
+    23,
+    25,
+    28
+  ],
+  "layer": "Base",
+  "length": 1.8
+}

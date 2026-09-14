@@ -1,0 +1,260 @@
+[
+  {
+    "sort": 1,
+    "type": 1,
+    "showType": 1,
+    "probability": 10,
+    "number": 1,
+    "awardPool": 101,
+    "decompose": 11011,
+    "isHide": 1,
+    "isRepeated": 1,
+    "isSuit": 1,
+    "itemId": 711035,
+    "posRot": [
+      0,
+      0,
+      0
+    ],
+    "1": [
+      0,
+      -90,
+      0
+    ],
+    "2": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "sort": 2,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 715035,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 3,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 1103500,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 4,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 840004,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 5,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 815027,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 6,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 813012,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 7,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 813013,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 8,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 816062,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 9,
+    "isHide": 1,
+    "type": 1,
+    "number": 1,
+    "itemId": 811079,
+    "showType": 1,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 10,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 1000000,
+    "itemId": 2,
+    "showType": 2,
+    "probability": 10,
+    "awardPool": 101
+  },
+  {
+    "sort": 1,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 10000,
+    "itemId": 2,
+    "showType": 2,
+    "probability": 25,
+    "awardPool": 102
+  },
+  {
+    "sort": 2,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 1000,
+    "itemId": 2,
+    "showType": 2,
+    "probability": 25,
+    "awardPool": 102
+  },
+  {
+    "sort": 3,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 500,
+    "itemId": 2,
+    "showType": 2,
+    "probability": 25,
+    "awardPool": 102
+  },
+  {
+    "sort": 4,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 100,
+    "itemId": 2,
+    "showType": 2,
+    "probability": 25,
+    "awardPool": 102
+  },
+  {
+    "sort": 5,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 10,
+    "itemId": 400009,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 103
+  },
+  {
+    "sort": 11,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 1,
+    "itemId": 400009,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 103
+  },
+  {
+    "sort": 12,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 5,
+    "itemId": 400010,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 103
+  },
+  {
+    "sort": 13,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 2,
+    "itemId": 400016,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 103
+  },
+  {
+    "sort": 14,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 20,
+    "itemId": 400016,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 103
+  },
+  {
+    "sort": 15,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 5,
+    "itemId": 400010,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 104
+  },
+  {
+    "sort": 16,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 10,
+    "itemId": 400010,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 104
+  },
+  {
+    "sort": 17,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 15,
+    "itemId": 400010,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 104
+  },
+  {
+    "sort": 18,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 20,
+    "itemId": 400010,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 104
+  },
+  {
+    "sort": 19,
+    "isHide": 1,
+    "isRepeated": 1,
+    "number": 25,
+    "itemId": 400010,
+    "showType": 2,
+    "probability": 20,
+    "awardPool": 104
+  }
+]

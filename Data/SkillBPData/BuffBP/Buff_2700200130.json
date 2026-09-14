@@ -1,0 +1,116 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": 0,
+    "speed_ratio_sprint_v": 0,
+    "speed_ratio_walk_v": 0,
+    "speed_ratio_dash_v": 0
+  },
+  "NodeID": 1,
+  "UID": "766ec944-932c-4930-9d5f-fd03a1b73f88",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    18
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 2700200130,
+    "speed_ratio_sprint_v": "param1",
+    "speed_ratio_dash_v": "param1",
+    "type": 1,
+    "speed_ratio_run_v": "param1",
+    "speed_ratio_walk_v": "param1"
+  },
+  "BPName": "buff_2700200130",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "calcInfo": {
+        "instant_dmg_fix": {
+          "rValue": {
+            "calcId": 2700200130,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 11,
+            "UID": "7d96c097-d7e2-4946-82cc-18d9bfe6da73",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "dff9c856-7af1-4b0a-9ca4-67af728e4333",
+          "NodeID": 6,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "629da824-6e3d-4d3c-8f24-266c0a8bcb79",
+            "target": "OWNER",
+            "NodeID": 5,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "c249a540-0680-4cd1-aff4-6ff8e3670700",
+      "checkValidTarget": false,
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b953028b-df8f-43b5-a0c5-d21b7f0fd722",
+      "effectId": "Eff_Parmon_10133_Debuff_Deceleration",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "9": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "d3a66a58-1cb0-4e62-8c88-2264035ce271",
+      "name": "buffStartThink",
+      "NodeID": 9
+    },
+    "18": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "e7838f49-d6d6-48af-9fd9-8a5ed9991495",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    },
+    "11": {
+      "calcId": 2700200130,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 11,
+      "UID": "7d96c097-d7e2-4946-82cc-18d9bfe6da73",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "name": "isInCombat",
+      "UID": "57d37f05-276e-40de-aed7-375e611cf62b",
+      "target": "OWNER",
+      "NodeID": 17,
+      "not": false
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "efd8f2b8-ccce-49d9-9373-04fad4f066e8",
+      "effectId": "Eff_Parmon_10133_Debuff_Deceleration",
+      "target": "OWNER",
+      "NodeID": 15
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    15
+  ],
+  "onBuffStartIds": [
+    9,
+    13
+  ]
+}

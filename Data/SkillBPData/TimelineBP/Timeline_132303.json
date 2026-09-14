@@ -1,0 +1,387 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "8efe9510-e344-4f4c-98a8-ef0b88d2c259",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "NodeID": 52
+    },
+    "39": {
+      "UID": "da5156fb-a164-4a1a-93ea-90eb7054a15b",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10323_Skill_Block_01",
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "13f51d44-205d-4ea0-9374-78adeac70072",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10323_Skill_Block_01",
+      "NodeID": 40
+    },
+    "54": {
+      "UID": "dd64a9ba-bc1f-4a75-ba2e-9362341ab565",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          53
+        ]
+      },
+      "NodeID": 54
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          40,
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 42,
+      "UID": "b15e879c-dd7f-46f4-8b51-ac6a65042f54"
+    },
+    "43": {
+      "UID": "e5a4ca7d-130a-4fa0-a8e4-5fe0ede331fd",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10323_Skill_Block_01",
+      "NodeID": 43
+    },
+    "3": {
+      "UID": "c56407db-21ee-4056-9fb5-f4154af1fd5f",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "5": {
+      "UID": "0cd489d1-9182-4f05-9887-57ebf46acee3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          55,
+          7,
+          9,
+          34,
+          36,
+          33
+        ]
+      },
+      "NodeID": 5
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a3b81d8b-d3f3-4d39-88d1-4992b3ab4926",
+      "effectId": "Eff_Parmon_10323_Skill_Block_End01_Water",
+      "speed": 1,
+      "NodeID": 55
+    },
+    "7": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "b3806107-bff7-4c97-84bf-2866683418b7",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "53": {
+      "name": "dropEffectStr",
+      "UID": "7694836f-7af8-43e9-85ea-08595ef66d4f",
+      "effectId": "Eff_Parmon_10323_Skill_Block_Normal_Water",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "37": {
+      "UID": "af2f426b-64d9-4ea6-b7c1-25bb7c31f7c9",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10323_Skill_Block_01",
+      "NodeID": 37
+    },
+    "34": {
+      "duration": 10,
+      "disableWhenFinished": false,
+      "NodeID": 34,
+      "UID": "86ae2f71-80ad-424d-8413-8c9db876b835",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10323_Skill_Block_01",
+      "name": "playPreset"
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ffe6368d-0f5c-4442-ae42-0ed725bab360",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Block_End"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.016,
+      "NodeID": 19,
+      "UID": "e80aa234-4486-425f-ad45-50213fce4299"
+    },
+    "25": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 132303,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "9f70b9e2-4556-4fa5-afa0-2da748e12939",
+      "target": "TARGET",
+      "NodeID": 25,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 3000
+      }
+    },
+    "11": {
+      "UID": "e807aa9e-ac87-4727-a440-3064bbc2a935",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "9c99c215-9c85-475d-9b84-9596f07f5ab0",
+      "effectId": "Eff_Parmon_10323_Skill_Block_Start_Water",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.03,
+      "NodeID": 21,
+      "UID": "948ae469-0ae5-4999-9ec6-9d6a1c7c7769"
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0726b337-85f2-42bd-beea-30aa9317ac0a",
+      "effectId": "Eff_Parmon_10323_Skill_Block_Normal_Water",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "13": {
+      "UID": "4c044010-a4d4-4473-9066-cbb30fb38893",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          14,
+          37,
+          39,
+          45
+        ]
+      },
+      "NodeID": 13
+    },
+    "45": {
+      "buffId": 213230202,
+      "name": "removeBuff",
+      "UID": "c80e0b51-525e-4c5f-911c-29a31fb2280c",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "14": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "98f8b9d1-45f6-4a75-b0c8-60503eaf4136",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "46": {
+      "UID": "97172869-b974-4eac-a343-e4ca52a04972",
+      "name": "triggerAbilityDelayEnterCd",
+      "NodeID": 46
+    },
+    "29": {
+      "eventType": "NotifyState",
+      "endTime": 0.3,
+      "NodeID": 29,
+      "onExit": {
+        "actionIds": [
+          30
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          27
+        ]
+      },
+      "startTime": 0.12,
+      "tickInterval": 0.01,
+      "onEnter": {
+        "actionIds": [
+          27
+        ]
+      },
+      "UID": "72ccb217-6c43-4825-8bc0-fe31e84f2a70"
+    },
+    "47": {
+      "UID": "699a648d-96b8-4151-a150-3f1863fd9d69",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "NodeID": 47
+    },
+    "16": {
+      "UID": "739134a8-0340-4746-93c9-875037b4437a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "calcResultNodeId": 25,
+      "name": "actOnTargets",
+      "UID": "3abc7e7d-80ac-4632-9a4d-f11de1d3300d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            2.5,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        25
+      ],
+      "impulseId": 3000,
+      "NodeID": 27
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 17,
+      "UID": "96456c49-5f46-47ac-ad1a-f3661e5658b4"
+    },
+    "49": {
+      "calcInfo": {
+        "tp_temp_max": 999,
+        "tp_temp_cur": 999
+      },
+      "name": "addDynamicAttribute",
+      "UID": "efbb1bf1-724d-4d55-b7f4-577d993affbe",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "30": {
+      "UID": "6b7d5454-58d5-41c6-81f5-5e41aa39f64f",
+      "name": "clearHitBox",
+      "hitBoxId": "2",
+      "NodeID": 30
+    },
+    "50": {
+      "UID": "96086d7e-887c-4833-bcef-4ceda8d39a4c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "NodeID": 50
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "222a3430-1a7a-4384-b72e-f7b3530f9f56",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10323_Block_03_Water",
+      "NodeID": 33
+    },
+    "51": {
+      "UID": "37c50691-2ccd-451f-8db4-810f33a61897",
+      "target": "OWNER",
+      "name": "clearDynamicAttribute",
+      "NodeID": 51
+    },
+    "36": {
+      "duration": 10,
+      "disableWhenFinished": false,
+      "NodeID": 36,
+      "UID": "c39b9a56-73f2-42f5-bc81-e4116bb3cf2d",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10323_Skill_Block_01",
+      "name": "playPreset"
+    }
+  },
+  "BPName": "timeline_132303",
+  "NodeID": 1,
+  "UID": "7ee874a3-713e-46f1-9201-9d2904643e27",
+  "eventIds": [
+    5,
+    29,
+    13,
+    17,
+    42,
+    19,
+    50,
+    47,
+    52,
+    54,
+    21
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

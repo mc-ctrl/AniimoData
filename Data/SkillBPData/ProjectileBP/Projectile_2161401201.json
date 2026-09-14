@@ -1,0 +1,136 @@
+{
+  "allowHitCaster": false,
+  "duration": 10,
+  "BPName": "timeline_2161401",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10614_Skill_BeeBomb",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxHitNum": 0,
+  "moveSpeed": 0,
+  "waterDestroy": true,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "nodeMap": {
+    "22": {
+      "UID": "401e9c3c-352a-4a99-9404-afdde5de3ccc",
+      "actorId": {
+        "UID": "edb5ca96-568c-4037-82dc-55872dec76cb",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 21
+      },
+      "name": "destroyEntity",
+      "NodeID": 22
+    },
+    "28": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2161401,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "84fd62ba-6d56-44c6-8807-3cbd9f74e6af",
+      "target": "TARGET",
+      "NodeID": 28,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20103,
+        "hitFrameFreezeId": 10013,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 9,
+        "impulseId": 3000
+      }
+    },
+    "24": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b9946519-e6a2-492a-b3b0-544faa0863b4",
+      "effectId": "Eff_Parmon_10614_Skill_BeeBomb_Bomb",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "30": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 28,
+      "NodeID": 30,
+      "UID": "6b06ecb0-f06d-4254-bae1-9dbd387f6cdb",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            2,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        28,
+        39
+      ]
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "3e5de87c-f9f0-434b-8acb-b546b6fd7469",
+      "effectId": "Eff_Parmon_10614_Skill_BeeBombFly_Loop_02",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "39": {
+      "target": "TARGET",
+      "duration": 1.5,
+      "buffId": 10072,
+      "NodeID": 39,
+      "UID": "003416f8-93b5-4d87-81f5-bfb5473f3b37",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "tickInterval": 0,
+  "onProjectileGroundedIds": [
+    24,
+    30,
+    40,
+    22
+  ],
+  "startSleepTime": 0,
+  "calcResultNodeId": 28,
+  "defaultHitSoundType": "h",
+  "impulseId": 3000,
+  "acceleration": 9.8
+}

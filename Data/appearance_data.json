@@ -1,0 +1,8543 @@
+{
+  "836004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10004_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836004.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10005_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836005.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10006_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836006.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10007_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836007.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10008_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836008.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10009_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836009.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10010_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836010.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836011": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10011_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836011.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836012": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10012_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836012.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836013": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10013_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836013.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836014": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10014_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836014.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "836015": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10015_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836015.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "837001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10001_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837001.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10002_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837002.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10003_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837003.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10004_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837004.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10005_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837005.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10006_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837006.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10007_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837007.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10008_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837008.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10009_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837009.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10010_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837010.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837012": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10012_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837012.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837013": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10013_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837013.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837014": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10014_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837014.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837015": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10015_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837015.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837016": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10016_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837016.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837017": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10017_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837017.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837018": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10018_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837018.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837019": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10019_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837019.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837020": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10020_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837020.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "837021": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_MouthMakeup_F10021_CA.tga",
+    "translateDesc": "唇妆",
+    "type": 4,
+    "icon": "$ui_item_837021.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "838001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Body_G10001_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838001.png",
+    "initialClaim": 1,
+    "body": [
+      10
+    ]
+  },
+  "838002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Body_G10002_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838002.png",
+    "initialClaim": 1,
+    "body": [
+      10
+    ]
+  },
+  "838004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Body_G10004_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838004.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "838005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Body_G10005_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838005.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "838006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Body_G10006_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838006.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "839001": {
+    "points": [
+      21
+    ],
+    "res": "$T_CH_EyeFlipBook_01_CA.tga",
+    "translateDesc": "动态瞳孔",
+    "type": 4,
+    "icon": "$ui_item_839001.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "839002": {
+    "points": [
+      21
+    ],
+    "res": "$T_CH_EyeFlipBook_02_CA.tga",
+    "translateDesc": "动态瞳孔",
+    "type": 4,
+    "icon": "$ui_item_839002.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "839003": {
+    "points": [
+      21
+    ],
+    "res": "$T_CH_EyeFlipBook_03_CA.tga",
+    "translateDesc": "动态瞳孔",
+    "type": 4,
+    "icon": "$ui_item_839003.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "839004": {
+    "points": [
+      21
+    ],
+    "res": "$T_CH_EyeFlipBook_04_CA.tga",
+    "translateDesc": "动态瞳孔",
+    "type": 4,
+    "icon": "$ui_item_839004.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "839005": {
+    "points": [
+      21
+    ],
+    "res": "$T_CH_EyeFlipBook_05_CA.tga",
+    "translateDesc": "动态瞳孔",
+    "type": 4,
+    "icon": "$ui_item_839005.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "839006": {
+    "points": [
+      21
+    ],
+    "res": "$T_CH_EyeFlipBook_06_CA.tga",
+    "translateDesc": "动态瞳孔",
+    "type": 4,
+    "icon": "$ui_item_839006.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "842001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10001_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842001.png",
+    "initialClaim": 1,
+    "body": [
+      20
+    ]
+  },
+  "842002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10002_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842002.png",
+    "initialClaim": 1,
+    "body": [
+      20
+    ]
+  },
+  "842003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10003_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842003.png",
+    "initialClaim": 1,
+    "body": [
+      20
+    ]
+  },
+  "842004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10004_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842004.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "842005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10005_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842005.png",
+    "initialClaim": 1,
+    "body": [
+      20
+    ]
+  },
+  "842006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10006_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842006.png",
+    "initialClaim": 1,
+    "body": [
+      20
+    ]
+  },
+  "842007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10007_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842007.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "842008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10008_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842008.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "842009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyelash_B10009_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_842009.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10002_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843002.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10003_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843003.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10004_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843004.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10005_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843005.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10006_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843006.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10007_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843007.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10008_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843008.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10009_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843009.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10010_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843010.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843011": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10011_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843011.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843014": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10014_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843014.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843015": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10015_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843015.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843016": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10016_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843016.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843017": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10017_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843017.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843018": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10018_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843018.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843019": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10019_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843019.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843020": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10020_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843020.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843021": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10021_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843021.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843022": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10022_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843022.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843023": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10023_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843023.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "843024": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Eyebrow_B10024_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_843024.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "845401": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup01_F10001_CA.tga",
+    "translateDesc": "双眼皮",
+    "type": 4,
+    "icon": "$ui_item_845401.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "845402": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup01_F10002_CA.tga",
+    "translateDesc": "双眼皮",
+    "type": 4,
+    "icon": "$ui_item_845402.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "845403": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup01_F10003_CA.tga",
+    "translateDesc": "双眼皮",
+    "type": 4,
+    "icon": "$ui_item_845403.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "832011": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10011_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832011.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "833002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10002_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833002.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "833003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10003_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833003.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "833004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10004_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833004.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "833005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10005_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833005.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811015": {
+    "res": "$E_P_Avatar_Acc_Head_H10015.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10006_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833006.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811017": {
+    "res": "$E_P_Avatar_Acc_Head_H10017.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10008_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833008.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811024": {
+    "res": "$E_P_Avatar_Acc_Head_H10024.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10009_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833009.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811026": {
+    "res": "$E_P_Avatar_Acc_Head_H10026.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10010_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833010.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811031": {
+    "res": "$E_P_Avatar_Acc_Head_H10031.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833014": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10014_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833014.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811036": {
+    "res": "$E_P_Avatar_Acc_Head_H10036.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833015": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10015_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833015.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811038": {
+    "res": "$E_P_Avatar_Acc_Head_H10038.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833016": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10016_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833016.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811040": {
+    "res": "$E_P_Avatar_Acc_Head_H10040.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833017": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10017_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833017.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811052": {
+    "res": "$E_P_Avatar_Acc_Head_H10052.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833018": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10018_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833018.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811055": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10055.prefab",
+    "suit": 710049,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 60,
+    "body": [
+      11
+    ]
+  },
+  "833019": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10019_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833019.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811068": {
+    "res": "$E_P_Avatar_Acc_Head_H10068.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "833020": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10020_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833020.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811075": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10075.prefab",
+    "suit": 710011,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "833021": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10021_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833021.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811090": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10090.prefab",
+    "suit": 720049,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 60,
+    "body": [
+      21
+    ]
+  },
+  "833022": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10022_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833022.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811098": {
+    "res": "$E_P_Avatar_Acc_Head_H10098.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833023": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10023_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833023.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "811101": {
+    "res": "$E_P_Avatar_Acc_Head_H10101.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "833024": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyebrow_G10024_CA.tga",
+    "translateDesc": "眉毛",
+    "type": 4,
+    "icon": "$ui_item_833024.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "812005": {
+    "res": "$E_P_Avatar_Acc_Face_F10005.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10001_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834001.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "812007": {
+    "res": "$E_P_Avatar_Acc_Face_F10007.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10002_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834002.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "812009": {
+    "res": "$E_P_Avatar_Acc_Face_F10009.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10003_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834003.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "812024": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Face_F10024.prefab",
+    "suit": 720039,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "834004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10004_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834004.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "813001": {
+    "res": "$E_P_Avatar_Acc_Ear_E10001_L.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10005_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834005.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "813008": {
+    "res": "$E_P_Avatar_Acc_Ear_E10007_R.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "834006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10006_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834006.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "813015": {
+    "res": "$E_P_Avatar_Acc_Ear_E10014_R.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "834007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10007_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834007.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "813017": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Ear_E10016_R.prefab",
+    "suit": 710039,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "834008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10008_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834008.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "814002": {
+    "res": "$E_P_Avatar_Acc_Neck_N10002.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10009_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834009.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "814007": {
+    "res": "$E_P_Avatar_Acc_Neck_N10007.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10010_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834010.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "814009": {
+    "res": "$E_P_Avatar_Acc_Neck_N10009.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834011": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10011_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834011.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815002": {
+    "res": "$E_P_Avatar_Acc_Back_B10002.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834012": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10012_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834012.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815005": {
+    "res": "$E_P_Avatar_Acc_Back_B10005.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834013": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10013_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834013.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "714049": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 710049,
+    "showStatus": 1,
+    "num": "10078",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Sock_G10049.prefab",
+    "fashion": 30
+  },
+  "834014": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10014_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834014.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "714053": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 710053,
+    "showStatus": 1,
+    "num": "10078",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Sock_G10053.prefab",
+    "fashion": 20
+  },
+  "834015": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10015_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834015.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "714056": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 710056,
+    "showStatus": 1,
+    "num": "10078",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Sock_G10056.prefab",
+    "fashion": 20
+  },
+  "834016": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10016_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834016.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "714069": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 710069,
+    "showStatus": 1,
+    "num": "10062",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Sock_G10069.prefab",
+    "fashion": 10
+  },
+  "834017": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10017_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834017.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715004": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710004,
+    "showStatus": 1,
+    "num": "10083",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10004.prefab",
+    "fashion": 40
+  },
+  "834018": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10018_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834018.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816006": {
+    "res": "$E_P_Avatar_Acc_Misc_M10006.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834019": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10019_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834019.png",
+    "initialClaim": 1,
+    "body": [
+      10
+    ]
+  },
+  "816012": {
+    "res": "$E_P_Avatar_Acc_Misc_M10012.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "834020": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Eyeball_F10020_CA.tga",
+    "translateDesc": "瞳孔",
+    "type": 4,
+    "icon": "$ui_item_834020.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715011": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710011,
+    "showStatus": 1,
+    "num": "10043",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10011.prefab",
+    "fashion": 40
+  },
+  "835001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10001_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835001.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816017": {
+    "res": "$E_P_Avatar_Acc_Misc_M10017.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10002_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835002.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "816020": {
+    "res": "$E_P_Avatar_Acc_Misc_M10020.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 30,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10003_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835003.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "715021": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710021,
+    "showStatus": 1,
+    "num": "10067",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10021.prefab",
+    "fashion": 40
+  },
+  "835004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10004_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835004.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "816024": {
+    "res": "$E_P_Avatar_Acc_Misc_M10024.prefab",
+    "suit": 710020,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10005_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835005.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "816027": {
+    "res": "$E_P_Avatar_Acc_Misc_M10027.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816029": {
+    "res": "$E_P_Avatar_Acc_Misc_M10029.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715025": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710025,
+    "showStatus": 1,
+    "num": "10070",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10025.prefab",
+    "fashion": 20
+  },
+  "816031": {
+    "res": "$E_P_Avatar_Acc_Misc_M10031.prefab",
+    "suit": 710004,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816035": {
+    "res": "$E_P_Avatar_Acc_Misc_M10035.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715026": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710026,
+    "showStatus": 1,
+    "num": "10075",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10026.prefab",
+    "fashion": 20
+  },
+  "816037": {
+    "res": "$E_P_Avatar_Acc_Misc_M10037.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816038": {
+    "res": "$E_P_Avatar_Acc_Misc_M10038.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715039": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710039,
+    "showStatus": 1,
+    "num": "10063",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10039.prefab",
+    "fashion": 40
+  },
+  "816042": {
+    "res": "$E_P_Avatar_Acc_Misc_M10042.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715048": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710048,
+    "showStatus": 1,
+    "num": "10083",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10048.prefab",
+    "fashion": 40
+  },
+  "816045": {
+    "res": "$E_P_Avatar_Acc_Misc_M10045.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "715049": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710049,
+    "showStatus": 1,
+    "num": "10079",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10049.prefab",
+    "fashion": 60
+  },
+  "816051": {
+    "res": "$E_P_Avatar_Acc_Misc_M10051.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816056": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Misc_M10056.prefab",
+    "suit": 720039,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "715052": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710052,
+    "showStatus": 1,
+    "num": "10083",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10052.prefab",
+    "fashion": 20
+  },
+  "816086": {
+    "res": "$E_P_Avatar_Acc_Misc_M10086.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715053": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710053,
+    "showStatus": 1,
+    "num": "10083",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10053.prefab",
+    "fashion": 40
+  },
+  "817001": {
+    "res": "$E_P_Avatar_Acc_Badge_B10001.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715055": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710055,
+    "showStatus": 1,
+    "num": "10083",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10055.prefab",
+    "fashion": 40
+  },
+  "715056": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710056,
+    "showStatus": 1,
+    "num": "10083",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10056.prefab",
+    "fashion": 40
+  },
+  "715069": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710069,
+    "showStatus": 1,
+    "num": "10063",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10069.prefab",
+    "fashion": 20
+  },
+  "721004": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720004,
+    "showStatus": 1,
+    "num": "10090",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10004.prefab",
+    "fashion": 60
+  },
+  "831006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10006_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831006.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "721010": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 720010,
+    "showStatus": 1,
+    "num": "10094",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Set_B10010.prefab",
+    "fashion": 60
+  },
+  "831007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10007_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831007.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721011": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720011,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10011.prefab",
+    "fashion": 60
+  },
+  "831009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10009_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831009.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721020": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720020,
+    "showStatus": 1,
+    "num": "10103",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10020.prefab",
+    "fashion": 30
+  },
+  "831010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10010_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831010.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721021": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720021,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10021.prefab",
+    "fashion": 60
+  },
+  "721022": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 720022,
+    "showStatus": 1,
+    "num": "10108",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Set_B10022.prefab",
+    "fashion": 120
+  },
+  "831015": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10015_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831015.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721025": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720025,
+    "showStatus": 1,
+    "num": "10114",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10025.prefab",
+    "fashion": 30
+  },
+  "831017": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10017_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831017.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721026": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720026,
+    "showStatus": 1,
+    "num": "10118",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10026.prefab",
+    "fashion": 30
+  },
+  "831021": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10021_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831021.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721039": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720039,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10039.prefab",
+    "fashion": 60
+  },
+  "831022": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10022_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831022.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721048": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720048,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10048.prefab",
+    "fashion": 60
+  },
+  "835033": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10033_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835033.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721049": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720049,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10049.prefab",
+    "fashion": 90
+  },
+  "835034": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10034_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835034.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721054": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720054,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10054.prefab",
+    "fashion": 60
+  },
+  "835035": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10035_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835035.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721055": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720055,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10055.prefab",
+    "fashion": 60
+  },
+  "835036": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10036_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835036.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721056": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720056,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10056.prefab",
+    "fashion": 30
+  },
+  "835037": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10037_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835037.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721069": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720069,
+    "showStatus": 1,
+    "num": "10103",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B10069.prefab",
+    "fashion": 30
+  },
+  "835038": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10038_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835038.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "721092": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 720092,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Coat_B20004.prefab",
+    "fashion": 60
+  },
+  "835039": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10039_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835039.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "722004": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720004,
+    "showStatus": 1,
+    "num": "10091",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10004.prefab",
+    "fashion": 60
+  },
+  "835040": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10040_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835040.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "722011": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720011,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10011.prefab",
+    "fashion": 60
+  },
+  "835042": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10042_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835042.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "722020": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720020,
+    "showStatus": 1,
+    "num": "10104",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10020.prefab",
+    "fashion": 30
+  },
+  "835043": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10043_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835043.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "722021": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720021,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10021.prefab",
+    "fashion": 60
+  },
+  "722025": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720025,
+    "showStatus": 1,
+    "num": "10115",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10025.prefab",
+    "fashion": 30
+  },
+  "835046": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10046_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835046.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "722026": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720026,
+    "showStatus": 1,
+    "num": "10119",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10026.prefab",
+    "fashion": 30
+  },
+  "835047": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10047_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835047.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "722039": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720039,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10039.prefab",
+    "fashion": 60
+  },
+  "722048": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720048,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10048.prefab",
+    "fashion": 60
+  },
+  "722049": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720049,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10049.prefab",
+    "fashion": 90
+  },
+  "722054": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720054,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10054.prefab",
+    "fashion": 60
+  },
+  "722055": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720055,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10055.prefab",
+    "fashion": 60
+  },
+  "722056": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720056,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10056.prefab",
+    "fashion": 30
+  },
+  "722069": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720069,
+    "showStatus": 1,
+    "num": "10104",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B10069.prefab",
+    "fashion": 30
+  },
+  "722092": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 720092,
+    "showStatus": 1,
+    "num": "10127",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Trousers_B20004.prefab",
+    "fashion": 60
+  },
+  "723004": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720004,
+    "showStatus": 1,
+    "num": "10092",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10004.prefab",
+    "fashion": 20
+  },
+  "723010": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720010,
+    "showStatus": 1,
+    "num": "10095",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10010.prefab",
+    "fashion": 10
+  },
+  "723011": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720011,
+    "showStatus": 1,
+    "num": "10128",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10011.prefab",
+    "fashion": 20
+  },
+  "723020": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720020,
+    "showStatus": 1,
+    "num": "10105",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10020.prefab",
+    "fashion": 10
+  },
+  "723021": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720021,
+    "showStatus": 1,
+    "num": "10128",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10021.prefab",
+    "fashion": 20
+  },
+  "723025": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720025,
+    "showStatus": 1,
+    "num": "10116",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10025.prefab",
+    "fashion": 10
+  },
+  "723026": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720026,
+    "showStatus": 1,
+    "num": "10120",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10026.prefab",
+    "fashion": 10
+  },
+  "723039": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720039,
+    "showStatus": 1,
+    "num": "10128",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10039.prefab",
+    "fashion": 20
+  },
+  "723049": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720049,
+    "showStatus": 1,
+    "num": "10128",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10049.prefab",
+    "fashion": 30
+  },
+  "723055": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720055,
+    "showStatus": 1,
+    "num": "10128",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10055.prefab",
+    "fashion": 20
+  },
+  "723069": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 720069,
+    "showStatus": 1,
+    "num": "10105",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Gloves_B10069.prefab",
+    "fashion": 10
+  },
+  "724020": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 720020,
+    "showStatus": 1,
+    "num": "10106",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Sock_B10020.prefab",
+    "fashion": 10
+  },
+  "724039": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 720039,
+    "showStatus": 1,
+    "num": "10129",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Sock_B10039.prefab",
+    "fashion": 20
+  },
+  "724054": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 720054,
+    "showStatus": 1,
+    "num": "10129",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Sock_B10054.prefab",
+    "fashion": 20
+  },
+  "724069": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 720069,
+    "showStatus": 1,
+    "num": "10106",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Sock_B10069.prefab",
+    "fashion": 10
+  },
+  "724092": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 720092,
+    "showStatus": 1,
+    "num": "10129",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Sock_B20004.prefab",
+    "fashion": 20
+  },
+  "725004": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720004,
+    "showStatus": 1,
+    "num": "10093",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10004.prefab",
+    "fashion": 40
+  },
+  "725010": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720010,
+    "showStatus": 1,
+    "num": "10096",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10010.prefab",
+    "fashion": 20
+  },
+  "725011": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720011,
+    "showStatus": 1,
+    "num": "10129",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10011.prefab",
+    "fashion": 40
+  },
+  "725020": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720020,
+    "showStatus": 1,
+    "num": "10107",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10020.prefab",
+    "fashion": 20
+  },
+  "831023": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10023_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831023.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "725021": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720021,
+    "showStatus": 1,
+    "num": "10129",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10021.prefab",
+    "fashion": 40
+  },
+  "831025": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10025_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831025.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "725022": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720022,
+    "showStatus": 1,
+    "num": "10109",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10022.prefab",
+    "fashion": 40
+  },
+  "831027": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10027_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831027.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831028": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10028_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831028.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831029": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10029_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831029.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "725026": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720026,
+    "showStatus": 1,
+    "num": "10121",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10026.prefab",
+    "fashion": 20
+  },
+  "831030": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10030_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831030.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831031": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10031_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831031.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831032": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10032_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831032.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "725048": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720048,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10048.prefab",
+    "fashion": 60
+  },
+  "848001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Body_B10001_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838001.png",
+    "initialClaim": 1,
+    "body": [
+      20
+    ]
+  },
+  "848002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Body_B10001_01a_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838002.png",
+    "initialClaim": 1,
+    "body": [
+      20
+    ]
+  },
+  "848004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Body_B10004_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838004.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "848005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Body_B10005_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838005.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "848006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Boy_Body_B10006_C.tga",
+    "translateDesc": "皮肤",
+    "type": 4,
+    "icon": "$ui_item_838006.png",
+    "initialClaim": 1,
+    "body": [
+      21
+    ]
+  },
+  "1100111": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Body01.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1100121": {
+    "partId": 20,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Fringe01.prefab",
+    "points": [
+      20
+    ],
+    "fashion": 0
+  },
+  "1100122": {
+    "partId": 20,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Fringe02.prefab",
+    "points": [
+      20
+    ],
+    "fashion": 0
+  },
+  "1100123": {
+    "partId": 20,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Fringe03.prefab",
+    "points": [
+      20
+    ],
+    "fashion": 0
+  },
+  "1100131": {
+    "partId": 24,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Plait01.prefab",
+    "points": [
+      24
+    ],
+    "fashion": 0
+  },
+  "1100132": {
+    "partId": 24,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Plait02.prefab",
+    "points": [
+      24
+    ],
+    "fashion": 0
+  },
+  "1100133": {
+    "partId": 24,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Plait03.prefab",
+    "points": [
+      24
+    ],
+    "fashion": 0
+  },
+  "1100141": {
+    "partId": 21,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Temples01.prefab",
+    "points": [
+      21
+    ],
+    "fashion": 0
+  },
+  "1100142": {
+    "partId": 21,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Temples02.prefab",
+    "points": [
+      21
+    ],
+    "fashion": 0
+  },
+  "1100143": {
+    "partId": 21,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      11
+    ],
+    "hairId": 1100100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10001_Temples03.prefab",
+    "points": [
+      21
+    ],
+    "fashion": 0
+  },
+  "1100411": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710004,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1100400,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_Hat_G10004.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1100611": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1100600,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10006.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1100711": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1100700,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10007.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1100811": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1100800,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10008.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1101111": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710011,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1101100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_Hat_G10011.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1101112": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710011,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1101100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10011.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1101811": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1101800,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10018.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1102011": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710020,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1102000,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10020.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1102111": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710021,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1102100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_Hat_G10021.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1102112": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710021,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1102100,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10021.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1102211": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710022,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1102200,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10022.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1102611": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710026,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1102600,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10026.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1103911": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 710039,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1103900,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10039.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1107211": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1107200,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10071.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1107311": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1107300,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10072.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1107411": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      11
+    ],
+    "hairId": 1107400,
+    "type": 3,
+    "res": "$E_P_Avatar_Girl_Hair_G10073.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1200111": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Body.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1200121": {
+    "partId": 20,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Fringe01.prefab",
+    "points": [
+      20
+    ],
+    "fashion": 0
+  },
+  "1200122": {
+    "partId": 20,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Fringe02.prefab",
+    "points": [
+      20
+    ],
+    "fashion": 0
+  },
+  "831050": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10050_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831050.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "1200132": {
+    "partId": 24,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Plait02.prefab",
+    "points": [
+      24
+    ],
+    "fashion": 0
+  },
+  "831051": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10051_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831051.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "1200142": {
+    "partId": 21,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Temples02.prefab",
+    "points": [
+      21
+    ],
+    "fashion": 0
+  },
+  "831052": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10052_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831052.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "1200151": {
+    "partId": 22,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Tail.prefab",
+    "points": [
+      22
+    ],
+    "fashion": 0
+  },
+  "831053": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10053_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831053.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "1200511": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1200500,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10005.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "831054": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10054_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831054.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "1201111": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720011,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1201100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_Hat_B10011.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "831055": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10055_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831055.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "1201811": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1201800,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10018.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "831056": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10056_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831056.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "1202111": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720021,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1202100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_Hat_B10021.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "832002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10002_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832002.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "1202211": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720022,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1202200,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10022.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "832003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10003_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832003.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "1202611": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720026,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1202600,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10026.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "832004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10004_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832004.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "1207111": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1207100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10071.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "832005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10005_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832005.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "1207311": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1207300,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10073.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "832006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10006_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832006.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "832007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10007_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832007.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "832008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10008_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832008.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "832009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10009_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832009.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "832010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Girl_Eyelash_G10010_CA.tga",
+    "translateDesc": "睫毛",
+    "type": 4,
+    "icon": "$ui_item_832010.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "1207411": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1207400,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10074.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1207211": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1207200,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10072.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1203911": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720039,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1203900,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10039.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1202511": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1202500,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10025.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1202112": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720021,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1202100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10021.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1202011": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720020,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1202000,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10020.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1201112": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720011,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1201100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10011.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1200611": {
+    "partId": 23,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1200600,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10006.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 20
+  },
+  "1200411": {
+    "partId": 23,
+    "initialClaim": 0,
+    "suit": 720004,
+    "showStatus": 1,
+    "body": [
+      21
+    ],
+    "hairId": 1200400,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10004.prefab",
+    "points": [
+      23
+    ],
+    "fashion": 40
+  },
+  "1200143": {
+    "partId": 21,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Temples03.prefab",
+    "points": [
+      21
+    ],
+    "fashion": 0
+  },
+  "1200141": {
+    "partId": 21,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Temples01.prefab",
+    "points": [
+      21
+    ],
+    "fashion": 0
+  },
+  "1200131": {
+    "partId": 24,
+    "initialClaim": 1,
+    "showStatus": 2,
+    "body": [
+      21
+    ],
+    "hairId": 1200100,
+    "type": 3,
+    "res": "$E_P_Avatar_Boy_Hair_B10001_Plait01.prefab",
+    "points": [
+      24
+    ],
+    "fashion": 0
+  },
+  "816026": {
+    "res": "$E_P_Avatar_Acc_Misc_M10026.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "816023": {
+    "res": "$E_P_Avatar_Acc_Misc_M10023.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816022": {
+    "res": "$E_P_Avatar_Acc_Misc_M10022.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816021": {
+    "res": "$E_P_Avatar_Acc_Misc_M10021.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816018": {
+    "res": "$E_P_Avatar_Acc_Misc_M10018.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816016": {
+    "res": "$E_P_Avatar_Acc_Misc_M10016.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816015": {
+    "res": "$E_P_Avatar_Acc_Misc_M10015.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816013": {
+    "res": "$E_P_Avatar_Acc_Misc_M10013.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816011": {
+    "res": "$E_P_Avatar_Acc_Misc_M10011.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816005": {
+    "res": "$E_P_Avatar_Acc_Misc_M10005.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816004": {
+    "res": "$E_P_Avatar_Acc_Misc_M10004.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816003": {
+    "res": "$E_P_Avatar_Acc_Misc_M10003.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815039": {
+    "res": "$E_P_Avatar_Acc_Back_B10039.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815028": {
+    "res": "$E_P_Avatar_Acc_Back_B10028.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815016": {
+    "res": "$E_P_Avatar_Acc_Back_B10016.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815015": {
+    "res": "$E_P_Avatar_Acc_Back_B10015.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815014": {
+    "res": "$E_P_Avatar_Acc_Back_B10014.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815013": {
+    "res": "$E_P_Avatar_Acc_Back_B10013.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815007": {
+    "res": "$E_P_Avatar_Acc_Back_B10007.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815006": {
+    "res": "$E_P_Avatar_Acc_Back_B10006.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815004": {
+    "res": "$E_P_Avatar_Acc_Back_B10004.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "815001": {
+    "res": "$E_P_Avatar_Acc_Back_B10001.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "814008": {
+    "res": "$E_P_Avatar_Acc_Neck_N10008.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "814006": {
+    "res": "$E_P_Avatar_Acc_Neck_N10006.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "813019": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Ear_E10019.prefab",
+    "suit": 710021,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "813016": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Ear_E10016_L.prefab",
+    "suit": 710039,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "813014": {
+    "res": "$E_P_Avatar_Acc_Ear_E10014_L.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "813007": {
+    "res": "$E_P_Avatar_Acc_Ear_E10007_L.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "812030": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Face_F10030.prefab",
+    "suit": 720021,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "812018": {
+    "res": "$E_P_Avatar_Acc_Face_F10018.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "812008": {
+    "res": "$E_P_Avatar_Acc_Face_F10008.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "812006": {
+    "res": "$E_P_Avatar_Acc_Face_F10006.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811116": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10116.prefab",
+    "suit": 710021,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "811099": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10099.prefab",
+    "suit": 710039,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "811094": {
+    "res": "$E_P_Avatar_Acc_Head_H10094.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811089": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10089.prefab",
+    "suit": 720011,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "811073": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10073.prefab",
+    "suit": 710022,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "811059": {
+    "res": "$E_P_Avatar_Acc_Head_H10059.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11
+    ]
+  },
+  "811053": {
+    "res": "$E_P_Avatar_Acc_Head_H10053.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811047": {
+    "res": "$E_P_Avatar_Acc_Head_H10047.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811039": {
+    "res": "$E_P_Avatar_Acc_Head_H10039.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811037": {
+    "res": "$E_P_Avatar_Acc_Head_H10037.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811032": {
+    "res": "$E_P_Avatar_Acc_Head_H10032.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811030": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10030.prefab",
+    "suit": 720022,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      21
+    ]
+  },
+  "835018": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10018_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835018.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "811025": {
+    "res": "$E_P_Avatar_Acc_Head_H10025.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835016": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10016_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835016.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "811018": {
+    "res": "$E_P_Avatar_Acc_Head_H10018.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835014": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10014_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835014.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811016": {
+    "res": "$E_P_Avatar_Acc_Head_H10016.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835011": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10011_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835011.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "811007": {
+    "res": "$E_P_Avatar_Acc_Head_H10007.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10008_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835008.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "835303": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10003_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835303.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831034": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10034_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831034.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835048": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10048_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835048.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831044": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10044_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831044.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713039": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710039,
+    "showStatus": 1,
+    "num": "10061",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10039.prefab",
+    "fashion": 20
+  },
+  "831042": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10042_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831042.png",
+    "initialClaim": 1,
+    "body": [
+      10
+    ]
+  },
+  "835041": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10041_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835041.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715022": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710022,
+    "showStatus": 1,
+    "num": "10086",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10022.prefab",
+    "fashion": 40
+  },
+  "713049": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710049,
+    "showStatus": 1,
+    "num": "10077",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10049.prefab",
+    "fashion": 30
+  },
+  "831011": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10011_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831011.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835030": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10030_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835030.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831004": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10004_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831004.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835028": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10028_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835028.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811005": {
+    "res": "$E_P_Avatar_Acc_Head_H10005.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 30,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816088": {
+    "res": "$E_P_Avatar_Acc_Misc_M10088.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835024": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10024_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835024.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "816044": {
+    "res": "$E_P_Avatar_Acc_Misc_M10044.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11
+    ]
+  },
+  "831039": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10039_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831039.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711004": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710004,
+    "showStatus": 1,
+    "num": "10080",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10004.prefab",
+    "fashion": 60
+  },
+  "816036": {
+    "res": "$E_P_Avatar_Acc_Misc_M10036.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711010": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 710010,
+    "showStatus": 1,
+    "num": "10038",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Set_G10010.prefab",
+    "fashion": 60
+  },
+  "835022": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10022_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835022.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831037": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10037_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831037.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711011": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 710011,
+    "showStatus": 1,
+    "num": "10041",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Set_G10011.prefab",
+    "fashion": 120
+  },
+  "816065": {
+    "res": "$E_P_Avatar_Acc_Misc_M10065.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835020": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10020_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835020.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "711020": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710020,
+    "showStatus": 1,
+    "num": "10059",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10020.prefab",
+    "fashion": 30
+  },
+  "725039": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720039,
+    "showStatus": 1,
+    "num": "10130",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10039.prefab",
+    "fashion": 40
+  },
+  "714048": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 710048,
+    "showStatus": 1,
+    "num": "10078",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Sock_G10048.prefab",
+    "fashion": 20
+  },
+  "711021": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710021,
+    "showStatus": 1,
+    "num": "10064",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10021.prefab",
+    "fashion": 60
+  },
+  "714026": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 710026,
+    "showStatus": 1,
+    "num": "10074",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Sock_G10026.prefab",
+    "fashion": 10
+  },
+  "711022": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 710022,
+    "showStatus": 1,
+    "num": "10085",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Set_G10022.prefab",
+    "fashion": 120
+  },
+  "725025": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720025,
+    "showStatus": 1,
+    "num": "10117",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10025.prefab",
+    "fashion": 20
+  },
+  "816041": {
+    "res": "$E_P_Avatar_Acc_Misc_M10041.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711025": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 710025,
+    "showStatus": 1,
+    "num": "10068",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Set_G10025.prefab",
+    "fashion": 30
+  },
+  "831003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10003_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831003.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831014": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10014_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831014.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711026": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710026,
+    "showStatus": 1,
+    "num": "10071",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10026.prefab",
+    "fashion": 30
+  },
+  "831008": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10008_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831008.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "816030": {
+    "res": "$E_P_Avatar_Acc_Misc_M10030.prefab",
+    "suit": 710022,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 40,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711039": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 710039,
+    "showStatus": 1,
+    "num": "10059",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Set_G10039.prefab",
+    "fashion": 120
+  },
+  "715010": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710010,
+    "showStatus": 1,
+    "num": "10040",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10010.prefab",
+    "fashion": 20
+  },
+  "711048": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710048,
+    "showStatus": 1,
+    "num": "10080",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10048.prefab",
+    "fashion": 60
+  },
+  "816050": {
+    "res": "$E_P_Avatar_Acc_Misc_M10050.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 3,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711049": {
+    "partId": 11,
+    "points": [
+      11,
+      12
+    ],
+    "suit": 710049,
+    "showStatus": 1,
+    "num": "10076",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Set_G10049.prefab",
+    "fashion": 180
+  },
+  "831001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10001_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831001.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "715020": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 710020,
+    "showStatus": 1,
+    "num": "10063",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Shoes_G10020.prefab",
+    "fashion": 20
+  },
+  "711052": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710052,
+    "showStatus": 1,
+    "num": "10080",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10052.prefab",
+    "fashion": 30
+  },
+  "831005": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10005_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831005.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711053": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710053,
+    "showStatus": 1,
+    "num": "10080",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10053.prefab",
+    "fashion": 60
+  },
+  "831018": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10018_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831018.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711055": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710055,
+    "showStatus": 1,
+    "num": "10080",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10055.prefab",
+    "fashion": 60
+  },
+  "831041": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10041_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831041.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711056": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710056,
+    "showStatus": 1,
+    "num": "10080",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10056.prefab",
+    "fashion": 60
+  },
+  "831043": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10043_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831043.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "711069": {
+    "partId": 11,
+    "points": [
+      11
+    ],
+    "suit": 710069,
+    "showStatus": 1,
+    "num": "10059",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Coat_G10069.prefab",
+    "fashion": 30
+  },
+  "831036": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10036_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831036.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712004": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710004,
+    "showStatus": 1,
+    "num": "10081",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10004.prefab",
+    "fashion": 60
+  },
+  "835006": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10006_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835006.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "835007": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10007_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835007.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712020": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710020,
+    "showStatus": 1,
+    "num": "10060",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10020.prefab",
+    "fashion": 30
+  },
+  "835009": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10009_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835009.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "835010": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10010_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835010.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "712021": {
+    "partId": 12,
+    "points": [
+      12,
+      14
+    ],
+    "suit": 710021,
+    "showStatus": 1,
+    "num": "10065",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10021.prefab",
+    "fashion": 60
+  },
+  "835012": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10012_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835012.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "835013": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10013_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835013.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712026": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710026,
+    "showStatus": 1,
+    "num": "10072",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10026.prefab",
+    "fashion": 30
+  },
+  "835015": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10015_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835015.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712048": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710048,
+    "showStatus": 1,
+    "num": "10081",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10048.prefab",
+    "fashion": 60
+  },
+  "835017": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10017_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835017.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712052": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710052,
+    "showStatus": 1,
+    "num": "10081",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10052.prefab",
+    "fashion": 30
+  },
+  "835019": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10019_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835019.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712053": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710053,
+    "showStatus": 1,
+    "num": "10081",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10053.prefab",
+    "fashion": 60
+  },
+  "835021": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10021_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835021.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "712055": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710055,
+    "showStatus": 1,
+    "num": "10081",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10055.prefab",
+    "fashion": 60
+  },
+  "835023": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10023_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835023.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712056": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710056,
+    "showStatus": 1,
+    "num": "10081",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10056.prefab",
+    "fashion": 60
+  },
+  "835027": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10027_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835027.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "712069": {
+    "partId": 12,
+    "points": [
+      12
+    ],
+    "suit": 710069,
+    "showStatus": 1,
+    "num": "10060",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Trousers_G10069.prefab",
+    "fashion": 30
+  },
+  "835029": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10029_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835029.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713004": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710004,
+    "showStatus": 1,
+    "num": "10082",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10004.prefab",
+    "fashion": 20
+  },
+  "835031": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10031_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835031.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835032": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10032_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835032.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713010": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710010,
+    "showStatus": 1,
+    "num": "10039",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10010.prefab",
+    "fashion": 10
+  },
+  "835044": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10044_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835044.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "835045": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup_F10045_CA.tga",
+    "translateDesc": "眼妆",
+    "type": 4,
+    "icon": "$ui_item_835045.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "713011": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710011,
+    "showStatus": 1,
+    "num": "10042",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10011.prefab",
+    "fashion": 20
+  },
+  "835301": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10001_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835301.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835302": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10002_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835302.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713020": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710020,
+    "showStatus": 1,
+    "num": "10061",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10020.prefab",
+    "fashion": 10
+  },
+  "835304": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10004_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835304.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831038": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10038_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831038.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713021": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710021,
+    "showStatus": 1,
+    "num": "10066",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10021.prefab",
+    "fashion": 20
+  },
+  "831047": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10047_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831047.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811013": {
+    "res": "$E_P_Avatar_Acc_Head_H10013.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713025": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710025,
+    "showStatus": 1,
+    "num": "10069",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10025.prefab",
+    "fashion": 10
+  },
+  "831040": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10040_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831040.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835305": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10005_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835305.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "713026": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710026,
+    "showStatus": 1,
+    "num": "10073",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10026.prefab",
+    "fashion": 10
+  },
+  "835306": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10006_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835306.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831049": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10049_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831049.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835307": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10007_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835307.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831045": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10045_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831045.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835308": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10008_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835308.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811009": {
+    "res": "$E_P_Avatar_Acc_Head_H10009.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835309": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10009_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835309.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713055": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710055,
+    "showStatus": 1,
+    "num": "10082",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10055.prefab",
+    "fashion": 20
+  },
+  "835310": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10010_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835310.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "713069": {
+    "partId": 13,
+    "points": [
+      13
+    ],
+    "suit": 710069,
+    "showStatus": 1,
+    "num": "10061",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Gloves_G10069.prefab",
+    "fashion": 10
+  },
+  "835311": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10011_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835311.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "714020": {
+    "partId": 14,
+    "points": [
+      14
+    ],
+    "suit": 710020,
+    "showStatus": 1,
+    "num": "10062",
+    "type": 2,
+    "body": [
+      11
+    ],
+    "res": "$E_P_Avatar_Girl_Sock_G10020.prefab",
+    "fashion": 10
+  },
+  "835312": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10012_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835312.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831035": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10035_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831035.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835313": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10013_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835313.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "831033": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10033_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831033.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835314": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10014_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835314.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "831048": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10048_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831048.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835315": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10015_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835315.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "831046": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_Decal_F10046_CA.tga",
+    "translateDesc": "面纹",
+    "type": 4,
+    "icon": "$ui_item_831046.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835316": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10016_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835316.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811014": {
+    "res": "$E_P_Avatar_Acc_Head_H10014.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 2,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835317": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10017_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835317.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811011": {
+    "res": "$E_P_Avatar_Acc_Head_H10011.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835318": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10018_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835318.png",
+    "initialClaim": 1,
+    "body": [
+      10,
+      20
+    ]
+  },
+  "811008": {
+    "translateDesc": "角色饰品",
+    "res": "$E_P_Avatar_Acc_Head_H10008.prefab",
+    "suit": 710010,
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835319": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10019_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835319.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811006": {
+    "res": "$E_P_Avatar_Acc_Head_H10006.prefab",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835320": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10020_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835320.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811002": {
+    "res": "$E_P_Avatar_Acc_Head_H10002.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 20,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835321": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10021_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835321.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "811001": {
+    "res": "$E_P_Avatar_Acc_Head_H10001.prefab",
+    "translateDesc": "角色饰品",
+    "optionalPoints": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "type": 1,
+    "showStatus": 1,
+    "fashion": 10,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "835322": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup02_F10022_CA.tga",
+    "translateDesc": "眼线",
+    "type": 4,
+    "icon": "$ui_item_835322.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "725092": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720092,
+    "showStatus": 1,
+    "num": "10130",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B20004.prefab",
+    "fashion": 60
+  },
+  "835401": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup01_F10004_CA.tga",
+    "translateDesc": "双眼皮",
+    "type": 4,
+    "icon": "$ui_item_835401.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "725069": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720069,
+    "showStatus": 1,
+    "num": "10107",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10069.prefab",
+    "fashion": 20
+  },
+  "835402": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup01_F10005_CA.tga",
+    "translateDesc": "双眼皮",
+    "type": 4,
+    "icon": "$ui_item_835402.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "725056": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720056,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10056.prefab",
+    "fashion": 20
+  },
+  "835403": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_EyeMakeup01_F10006_CA.tga",
+    "translateDesc": "双眼皮",
+    "type": 4,
+    "icon": "$ui_item_835403.png",
+    "initialClaim": 1,
+    "body": [
+      11
+    ]
+  },
+  "725055": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720055,
+    "showStatus": 1,
+    "num": "10129",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10055.prefab",
+    "fashion": 40
+  },
+  "836001": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10001_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836001.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "725054": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720054,
+    "showStatus": 1,
+    "num": "10126",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10054.prefab",
+    "fashion": 60
+  },
+  "836002": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10002_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836002.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "725049": {
+    "partId": 15,
+    "points": [
+      15
+    ],
+    "suit": 720049,
+    "showStatus": 1,
+    "num": "10129",
+    "type": 2,
+    "body": [
+      21
+    ],
+    "res": "$E_P_Avatar_Boy_Shoes_B10049.prefab",
+    "fashion": 60
+  },
+  "836003": {
+    "points": [
+      21
+    ],
+    "res": "$T_Avatar_Female_FaceMakeup_F10003_CA.tga",
+    "translateDesc": "腮红",
+    "type": 4,
+    "icon": "$ui_item_836003.png",
+    "initialClaim": 1,
+    "body": [
+      11,
+      21
+    ]
+  }
+}

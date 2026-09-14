@@ -1,0 +1,87 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20510030",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": true,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 20510030,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 40,
+        "UID": "4e3c567d-917a-4ac1-b7b0-118c6e4ce176",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "d6fe3b4d-9101-4345-bab1-7856d804b817",
+      "NodeID": 31,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "37390311-b64b-427a-b11c-1a3bb7fd75b5",
+        "target": "CURPET",
+        "NodeID": 30,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "39": {
+      "name": "stopEffectStr",
+      "UID": "bb95fd66-a4ba-4f29-bcdd-66a45d7cab50",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 39
+    },
+    "40": {
+      "calcId": 20510030,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 40,
+      "UID": "4e3c567d-917a-4ac1-b7b0-118c6e4ce176",
+      "name": "getParamByLuaConfig"
+    },
+    "33": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "f6eea489-1ea6-4708-9317-ebb772d3b9d4",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "35": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "f2adce1b-4468-4e1d-92cf-6a89a62e7930",
+      "oldPetActionIds": [
+        39
+      ],
+      "NodeID": 35,
+      "newPetActionIds": [
+        33
+      ]
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "f246c7c2-59f9-48db-8a61-e657dd08230f",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    36
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    35,
+    33
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "default_action_woman": {
+    "number": "Idle"
+  },
+  "direct_purchase_cashback_percentage": {
+    "number": "10%"
+  },
+  "direct_purchase_web1": {
+    "number": "https://worldx-store-master-api.kingsgroupgames.com"
+  },
+  "direct_purchase_web2": {
+    "number": "https://store-master.funplus.com/aniimo/payment"
+  },
+  "direct_purchase_web3": {
+    "number": "https://store-master-backup.funplus.com/aniimo/payment"
+  },
+  "direct_purchase_web4": {
+    "number": "https://worldx-store-coin.kingsgroupgames.com"
+  },
+  "direct_purchase_web5": {
+    "number": "https://worldx-store-coin-backup.kingsgroupgames.com"
+  },
+  "direct_purchase_web6": {
+    "number": "https://store.aniimo.com/aniimo/payment"
+  },
+  "direct_purchase_web7": {
+    "number": "https://store-back.aniimo.com/aniimo/payment"
+  },
+  "earring": {
+    "number": "3006"
+  },
+  "face": {
+    "number": "3004"
+  },
+  "girl_icon": {
+    "number": "$UI_Icon_Sizer_Girl.png"
+  },
+  "head": {
+    "number": "3003"
+  },
+  "hide_icon": {
+    "number": "$UI_Icon_Sizer_eye.png"
+  },
+  "jewelry_type": {
+    "number": "3008"
+  },
+  "necklace": {
+    "number": "3007"
+  },
+  "Avatar": {
+    "number": "3002"
+  },
+  "search_all": {
+    "number": "SHOP_SEARCH_ALL"
+  },
+  "search_back": {
+    "number": "SHOP_SEARCH_BACK"
+  },
+  "search_color": {
+    "number": "SHOP_SEARCH_COLOR"
+  },
+  "search_earring": {
+    "number": "SHOP_SEARCH_EARRING"
+  },
+  "search_face": {
+    "number": "SHOP_SEARCH_FACE"
+  },
+  "search_head": {
+    "number": "SHOP_SEARCH_HEAD"
+  },
+  "search_limit": {
+    "number": "10"
+  },
+  "search_necklace": {
+    "number": "SHOP_SEARCH_NECKLACE"
+  },
+  "search_price": {
+    "number": "SHOP_SEARCH_PRICE"
+  },
+  "search_quality": {
+    "number": "SHOP_SEARCH_QUALITY"
+  },
+  "search_time": {
+    "number": "SHOP_SEARCH_TIME"
+  },
+  "search_word": {
+    "number": "SHOP_SEARCH_WORD"
+  },
+  "third_party_address_test_ru": {
+    "number": "https://worldx-global-store-release.kingsgroup.cn/aniimo/store"
+  },
+  "third_party_address_test_global": {
+    "number": "https://worldx-global-store-release.kingsgroup.cn"
+  },
+  "third_party_address_test": {
+    "number": "https://store-release.funplus.com.cn/yimoo"
+  },
+  "third_party_address_ru": {
+    "number": "https://funversegameslimited.com/aniimo/store"
+  },
+  "third_party_address_jp_fund": {
+    "number": "https://www.aniimo.com/ja/notice/fund"
+  },
+  "third_party_address_jp_about": {
+    "number": "https://www.aniimo.com/ja/notice/about"
+  },
+  "third_party_address_global": {
+    "number": "https://www.aniimo.com/store"
+  },
+  "third_party_address": {
+    "number": "https://www.yimoo.com/store"
+  },
+  "template_preset_woman": {
+    "number": "110007"
+  },
+  "template_preset_man": {
+    "number": "210007"
+  },
+  "switch_template_icon": {
+    "number": "$UI_Icon_Sizer_eye.png"
+  },
+  "special_paytest_website": {
+    "number": "https://www.aniimo.com/"
+  },
+  "sendword": {
+    "number": "SHOP_GIFT_WORD"
+  },
+  "send_limit": {
+    "number": "50"
+  },
+  "need_friend": {
+    "number": "3"
+  },
+  "Banner_change_time": {
+    "number": "5"
+  },
+  "Hair": {
+    "number": "3001"
+  },
+  "Intera_1": {
+    "number": "$UI_Img_ProductInformation_Icon_4.png"
+  },
+  "Intera_2": {
+    "number": "$UI_Img_ProductInformation_Icon_1.png"
+  },
+  "Intera_3": {
+    "number": "$UI_Img_ProductInformation_Icon_2.png"
+  },
+  "Intera_4": {
+    "number": "$UI_Img_ProductInformation_Icon_3.png"
+  },
+  "Suit": {
+    "number": "3000"
+  },
+  "back": {
+    "number": "3005"
+  },
+  "background": {
+    "number": "3"
+  },
+  "boy_icon": {
+    "number": "$UI_Icon_Sizer_Boy.png"
+  },
+  "defBackground": {
+    "number": "$T_LVUIMall_BackGround_TongYong_CA.png"
+  },
+  "default_action_man": {
+    "number": "Idle"
+  }
+}

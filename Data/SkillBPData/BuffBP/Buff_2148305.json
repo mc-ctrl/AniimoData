@@ -1,0 +1,93 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2148305",
+  "NodeID": 1,
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "NodeID": 5,
+      "from": 14830300,
+      "to": 14830300,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 1,
+      "recoverOnExit": true,
+      "name": "switchSkill",
+      "UID": "e4cdf6b2-f96d-47ae-90ac-ab3212afed55",
+      "notShowCountDown": false
+    },
+    "4": {
+      "abilityTarget": "OWNER",
+      "NodeID": 4,
+      "UID": "3c4abd2a-9b6a-42ee-8893-0eda728cc579",
+      "name": "castAbility",
+      "abilityId": 14830301
+    },
+    "9": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "51c1a11f-b2b9-4ff6-b844-5795cd7f99e1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12,
+        10
+      ],
+      "NodeID": 9
+    },
+    "12": {
+      "UID": "70d118f1-2c59-4877-8118-e4eb8cbb981a",
+      "name": "buffStopThink",
+      "NodeID": 12
+    },
+    "10": {
+      "pos": "OWNER",
+      "timelineId": 2148309,
+      "rot": "OWNER",
+      "NodeID": 10,
+      "UID": "d110402e-e0fd-4ad5-9162-ede29a9108e6",
+      "maxCount": 1,
+      "destroyOnMasterDead": true,
+      "name": "createSpellField"
+    },
+    "8": {
+      "UID": "1ad196b2-4280-40bf-ae98-6716178505b0",
+      "target": "SRC",
+      "name": "isTargetActiveForBattle",
+      "NodeID": 8
+    },
+    "7": {
+      "delay": 15,
+      "interval": 1,
+      "UID": "9f12389f-d611-4060-848e-fe48e0a48960",
+      "name": "buffStartThink",
+      "NodeID": 7
+    },
+    "2": {
+      "NodeID": 2,
+      "from": 14830300,
+      "to": 14830301,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 15,
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "UID": "2c496287-ac18-4ae0-9fb8-a1c46d951da1",
+      "notShowCountDown": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    2,
+    7
+  ]
+}

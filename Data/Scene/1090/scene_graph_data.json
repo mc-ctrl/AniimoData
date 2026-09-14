@@ -1,0 +1,235 @@
+{
+  "78415915": {
+    "graphId": 78415915,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Out",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "TimeOut",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 5,
+        "sourcePortName": "Out",
+        "targetNode": 6,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "Out",
+        "targetNode": 7,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 7,
+        "sourcePortName": "2",
+        "targetNode": 8,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 7,
+        "sourcePortName": "1",
+        "targetNode": 9,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 9,
+        "sourcePortName": "Out",
+        "targetNode": 10,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 10,
+        "sourcePortName": "Out",
+        "targetNode": 11,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "b210214cb2955621c126ea526082acf6",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {
+          "SpawnerId": 78412296
+        },
+        "_outputPortValues": {},
+        "className": "DestroySpawnerNode",
+        "uid": "1d3662fc-77af-4f8e-a564-f58266f56711"
+      },
+      "4": {
+        "_inputPortValues": {
+          "TimeOutSecond": 1.5
+        },
+        "_outputPortValues": {},
+        "className": "WaitNode",
+        "uid": "899c3012-52ca-4e4c-b900-f570f27b8388"
+      },
+      "6": {
+        "_inputPortValues": {
+          "DoOnce": true,
+          "TimeOutSecond": 0,
+          "EventName": "rogueStartBattle"
+        },
+        "_outputPortValues": {},
+        "className": "DungeonNode",
+        "eventParams": {},
+        "uid": "a979f4e6-a13a-4c06-8632-035b01d33171",
+        "postActions": [
+          {
+            "eventName": "fbCreateSpawner",
+            "eventParams": [
+              78326035
+            ]
+          }
+        ],
+        "preActions": {}
+      },
+      "10": {
+        "_inputPortValues": {
+          "EventName": "delTarget"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "7ff96461-d3b2-4f80-9881-77400b5f030e",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            700001
+          ]
+        }
+      },
+      "7": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "fb6fbfb2-da47-47f0-821b-756d90656da9",
+        "portCount": 2
+      },
+      "8": {
+        "_inputPortValues": {
+          "EventName": "showTarget"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "f9ffe627-f467-49ba-8cb6-7c9a496e9e95",
+        "playType": 0,
+        "actionData": {
+          "eventParams": [
+            700001
+          ]
+        }
+      },
+      "9": {
+        "_inputPortValues": {
+          "DoOnce": true,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "DungeonNode",
+        "eventParams": {
+          "spawnerId": 78326035
+        },
+        "uid": "ffc708d7-1ba0-4393-b4e4-a7d65642a036",
+        "postActions": [
+          {
+            "eventName": "fbShowChallengeSuccess",
+            "eventParams": [
+              1
+            ]
+          }
+        ],
+        "preActions": {}
+      },
+      "11": {
+        "_inputPortValues": {
+          "RewardPosition": [
+            0,
+            0,
+            0
+          ],
+          "Success": true
+        },
+        "_outputPortValues": {},
+        "className": "FinishDungeonNode",
+        "uid": "ab2def1a-29be-46d4-b0ff-ef1ca74442d6"
+      },
+      "5": {
+        "_inputPortValues": {
+          "SpawnerId": 78412296,
+          "Pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "fc652507-6c3e-4ea6-aa4a-4351297105d1"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "1840415f-203d-4026-8d57-a2dde350851f"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "64af23e2-4b28-413e-a168-2abec8cda676",
+        "portCount": 2
+      },
+      "2": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "interactNpcEvent"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "staticId": 78412295,
+          "index": 1
+        },
+        "uid": "0fd4b4e4-2d61-4690-8002-0052c7f8b263"
+      }
+    }
+  }
+}

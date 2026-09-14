@@ -1,0 +1,9458 @@
+{
+  "76795162": {
+    "owner": "lin.xu",
+    "chunk": 992237,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 85417616,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 17,
+    "name": "全局_任务POI_主线_序章_甬道new",
+    "spawners": [
+      76795171,
+      77096071,
+      77096096,
+      77317979,
+      77317981,
+      77384165,
+      77693590,
+      77693592,
+      77693595,
+      77693597,
+      79379147,
+      79379150,
+      82161091,
+      90946519
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_76795162_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 76795162,
+    "markIconSpawnerId": 0,
+    "position": [
+      -1706.87,
+      98.38,
+      644.96
+    ]
+  },
+  "55680217": {
+    "owner": "yixingliang",
+    "position": [
+      -1698.77,
+      94.37,
+      773.99
+    ],
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "initState": 0,
+      "inactiveDesc": "这是关键生态点，具体描述自助修改",
+      "mapAreaId": 45329648,
+      "markConfigId": 10405,
+      "markContent1": 55680217,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 20400,
+      "SloganPlayOnce": false,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "title": "关键生态点",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "关键生态点",
+      "markType": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "arriveType": 1,
+      "affiliatedCamp": {},
+      "arriveParam": {},
+      "desc": "这是关键生态点，具体描述自助修改",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 55680426,
+    "levelItems": {
+      "91194346": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "树干睡眠星乐蒂比尼提示触发 (2)",
+        "position": [
+          -1786,
+          104.5,
+          762.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91194346,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 7
+          },
+          "52068349": {
+            "detectType": 1
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72463398": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "进入莲顶鱼区域 战斗销毁注视",
+        "position": [
+          -1692.23,
+          92.73,
+          752.16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72463398,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          30,
+          30,
+          30
+        ],
+        "isActive": true
+      },
+      "91227944": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "睡眠捕捉提示记录",
+        "position": [
+          -1784.61,
+          105.38,
+          763.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91227944,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72463465": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "进入走调草区域 战斗销毁注视 ",
+        "position": [
+          -1691.28,
+          93.64,
+          781.25
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72463465,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          30,
+          30,
+          30
+        ],
+        "isActive": true
+      },
+      "91409429": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "一线天Timeline触发",
+        "position": [
+          -1660.26,
+          94.74,
+          798.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91409429,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72761218": {
+        "majorCompId": 0,
+        "owner": "hanchi xu",
+        "EditorName": "进入场景触发4-走调草消失",
+        "position": [
+          -1661.67,
+          94.02,
+          794.32
+        ],
+        "rotation": [
+          0,
+          53.6,
+          0
+        ],
+        "id": 72761218,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          15,
+          1,
+          3
+        ],
+        "isActive": true
+      },
+      "55680396": {
+        "majorCompId": 0,
+        "scale": [
+          6,
+          1,
+          3
+        ],
+        "EditorName": "进入场景触发3",
+        "position": [
+          -1658.01,
+          94.73,
+          796.8
+        ],
+        "rotation": [
+          0,
+          46.74,
+          0
+        ],
+        "id": 55680396,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "isActive": true
+      },
+      "72761220": {
+        "majorCompId": 0,
+        "owner": "hanchi xu",
+        "EditorName": "播放器yu",
+        "position": [
+          -1668.28,
+          93.01,
+          785.54
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72761220,
+        "componentsInfo": {
+          "64095373": {
+            "resId": "$P_TL_Level_XinShou_Yu.prefab"
+          }
+        },
+        "configId": 344,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "55690809": {
+        "majorCompId": 0,
+        "scale": [
+          10,
+          1,
+          5
+        ],
+        "EditorName": "滑翔老鼠待机平台",
+        "position": [
+          -1742.87,
+          114.64,
+          798.89
+        ],
+        "rotation": [
+          0,
+          343.22,
+          0
+        ],
+        "id": 55690809,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Level_Transparent_Block.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Level_Transparent_Block.prefab"
+        },
+        "isActive": true
+      },
+      "72761810": {
+        "majorCompId": 0,
+        "owner": "hanchi xu",
+        "EditorName": "播放器cao",
+        "position": [
+          -1668.28,
+          93.01,
+          785.54
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72761810,
+        "componentsInfo": {
+          "64095373": {
+            "resId": "$P_TL_Level_XinShou_Cao.prefab"
+          }
+        },
+        "configId": 344,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56827849": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "看向走调草",
+        "position": [
+          -1691.49,
+          94.39,
+          776.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56827849,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56827917": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "看向星路莉1",
+        "position": [
+          -1740.67,
+          106.67,
+          789.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56827917,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72761811": {
+        "majorCompId": 0,
+        "owner": "hanchi xu",
+        "EditorName": "播放器shu",
+        "position": [
+          -1668.28,
+          93.01,
+          785.54
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72761811,
+        "componentsInfo": {
+          "64095373": {
+            "resId": "$P_TL_Level_XinShou_Shu.prefab"
+          }
+        },
+        "configId": 344,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "56828928": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "看向星路莉2",
+        "position": [
+          -1736.01,
+          103.21,
+          783.16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56828928,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72843724": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "进入场景触发5-莲顶鱼消失",
+        "position": [
+          -1671.65,
+          94.02,
+          781.2
+        ],
+        "rotation": [
+          0,
+          330.8,
+          0
+        ],
+        "id": 72843724,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          18,
+          1,
+          4
+        ],
+        "isActive": true
+      },
+      "58123712": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "入口滑翔老鼠销毁监听",
+        "position": [
+          -1682.39,
+          97.33,
+          779
+        ],
+        "rotation": [
+          0,
+          310.16,
+          0
+        ],
+        "id": 58123712,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "72843725": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "进入场景触发6-星乐蒂消失",
+        "position": [
+          -1673.06,
+          94.02,
+          786.75
+        ],
+        "rotation": [
+          0,
+          52.1,
+          0
+        ],
+        "id": 72843725,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          15,
+          1,
+          4
+        ],
+        "isActive": true
+      },
+      "58123775": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "一线天滑翔表演老鼠创建监听",
+        "position": [
+          -1651.72,
+          93.76,
+          801.96
+        ],
+        "rotation": [
+          0,
+          311.1,
+          0
+        ],
+        "id": 58123775,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          2,
+          1,
+          2
+        ],
+        "isActive": true
+      },
+      "72875964": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "远处星露丽注视表演监听 ",
+        "position": [
+          -1776.39,
+          108.31,
+          774.97
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72875964,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "58124764": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "一线天表演消失 (1)",
+        "position": [
+          -1682.39,
+          97.33,
+          779
+        ],
+        "rotation": [
+          0,
+          310.16,
+          0
+        ],
+        "id": 58124764,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73008807": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "滑翔老鼠待机平台 (3)",
+        "position": [
+          -1744.05,
+          127.3,
+          772.24
+        ],
+        "rotation": [
+          0,
+          5.44,
+          0
+        ],
+        "id": 73008807,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Level_Transparent_Block.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Level_Transparent_Block.prefab"
+        },
+        "path": "",
+        "scale": [
+          10,
+          1,
+          5
+        ],
+        "isActive": true
+      },
+      "58199995": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "滑翔老鼠待机平台",
+        "position": [
+          -1754.48,
+          121.63,
+          780.45
+        ],
+        "rotation": [
+          0,
+          315.24,
+          0
+        ],
+        "id": 58199995,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Level_Transparent_Block.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Level_Transparent_Block.prefab"
+        },
+        "path": "",
+        "scale": [
+          3,
+          3,
+          3
+        ],
+        "isActive": true
+      },
+      "58199996": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "滑翔老鼠待机平台",
+        "position": [
+          -1740.15,
+          115.27,
+          799.26
+        ],
+        "rotation": [
+          0,
+          185.88,
+          0
+        ],
+        "id": 58199996,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Level_Transparent_Block.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Level_Transparent_Block.prefab"
+        },
+        "path": "",
+        "scale": [
+          3,
+          1,
+          3
+        ],
+        "isActive": true
+      },
+      "58464117": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "一线天表演星露莉出现",
+        "position": [
+          -1651.75,
+          94.28,
+          801.57
+        ],
+        "rotation": [
+          0,
+          318.38,
+          0
+        ],
+        "id": 58464117,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          5
+        ],
+        "isActive": true
+      },
+      "73016396": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "销毁滑翔老鼠 (1)",
+        "position": [
+          -1755.78,
+          102.32,
+          760.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73016396,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "58545934": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "进入场景触发1",
+        "position": [
+          -1653.54,
+          94.72,
+          800.4
+        ],
+        "rotation": [
+          0,
+          40.75,
+          0
+        ],
+        "id": 58545934,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          6,
+          2.3,
+          2
+        ],
+        "isActive": true
+      },
+      "73016397": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "销毁滑翔老鼠 (2)",
+        "position": [
+          -1783.41,
+          102.09,
+          767.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73016397,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60279205": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "音效播放",
+        "position": [
+          -1657.02,
+          94.66,
+          797.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60279205,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73016398": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "销毁滑翔老鼠 (3)",
+        "position": [
+          -1786.39,
+          102.09,
+          772.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73016398,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60521035": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "sandbox关卡结束监听",
+        "position": [
+          -1647.33,
+          107.51,
+          676.41
+        ],
+        "rotation": [
+          0,
+          287.22,
+          0
+        ],
+        "id": 60521035,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          20,
+          20,
+          20
+        ],
+        "isActive": true
+      },
+      "73016399": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "销毁滑翔老鼠 (4)",
+        "position": [
+          -1789.06,
+          103.76,
+          758.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73016399,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61922547": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "莲顶鱼介绍引导1",
+        "position": [
+          -1685.15,
+          92.56,
+          757.96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61922547,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "scale": [
+          15,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73016400": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "销毁滑翔老鼠 (5)",
+        "position": [
+          -1787.93,
+          103.76,
+          747.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73016400,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61922564": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "莲顶鱼介绍引导2",
+        "position": [
+          -1706.43,
+          92.56,
+          759.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61922564,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          15,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "81194445": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_AssistWind_SB",
+        "position": [
+          -1805.63,
+          113.94,
+          761.67
+        ],
+        "rotation": [
+          0,
+          107.05,
+          11.04
+        ],
+        "id": 81194445,
+        "componentsInfo": {
+          "42658053": {
+            "detectType": 1024
+          },
+          "42658052": {
+            "power": 25
+          },
+          "72109026": {
+            "size": [
+              4,
+              10,
+              4
+            ]
+          },
+          "42662676": {
+            "power": 25
+          }
+        },
+        "configId": 108,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62802314": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "星露丽吃果子触发",
+        "position": [
+          -1750.11,
+          103.27,
+          778.92
+        ],
+        "rotation": [
+          0,
+          74.11,
+          0
+        ],
+        "id": 62802314,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              34.64,
+              14.94,
+              33.16
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73012097": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "销毁滑翔老鼠",
+        "position": [
+          -1748.12,
+          102.35,
+          760.15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73012097,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          },
+          "52068346": {
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62803487": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "星露丽吃果子监听",
+        "position": [
+          -1735.3,
+          95.16,
+          788
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62803487,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "81194766": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "星乐蒂捕捉监听1 (1)",
+        "position": [
+          -1798.02,
+          113.68,
+          762.67
+        ],
+        "rotation": [
+          7.34,
+          20.19,
+          0
+        ],
+        "id": 81194766,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1.5,
+              1.5
+            ]
+          },
+          "52068346": {
+            "expressionKey": "81194766_52068346",
+            "detectType": 16
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62950462": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "播放器",
+        "position": [
+          -1657.64,
+          96.19,
+          798.07
+        ],
+        "rotation": [
+          357.6,
+          221.1,
+          0
+        ],
+        "id": 62950462,
+        "componentsInfo": {
+          "64095373": {
+            "resId": "$P_TL_Level_Tutorial_DebutPerformance.prefab"
+          }
+        },
+        "configId": 344,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "81194758": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "星乐蒂捕捉监听1",
+        "position": [
+          -1798.7,
+          113.93,
+          760.81
+        ],
+        "rotation": [
+          7.34,
+          20.19,
+          0
+        ],
+        "id": 81194758,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1.5,
+              1.5
+            ]
+          },
+          "52068346": {
+            "expressionKey": "81194758_52068346",
+            "detectType": 16
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "81194772": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_AssistWind_SB (1)",
+        "position": [
+          -1804.44,
+          113.15,
+          765.57
+        ],
+        "rotation": [
+          0,
+          107.05,
+          11.04
+        ],
+        "id": 81194772,
+        "componentsInfo": {
+          "42658053": {
+            "detectType": 1024
+          },
+          "42658052": {
+            "power": 25
+          },
+          "72109026": {
+            "size": [
+              4,
+              10,
+              4
+            ]
+          },
+          "42662676": {
+            "power": 25
+          }
+        },
+        "configId": 108,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "82787995": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "星皮果掉落监听",
+        "position": [
+          -1793.3,
+          105.34,
+          759.54
+        ],
+        "rotation": [
+          0,
+          282.1,
+          0
+        ],
+        "id": 82787995,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              6,
+              2,
+              6
+            ]
+          },
+          "52068346": {
+            "expressionKey": "82787995_52068346",
+            "detectType": 1024
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62968636": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -1698.77,
+          94.37,
+          773.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62968636,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "63490454": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "进入场景触发2",
+        "position": [
+          -1655.6,
+          94.72,
+          797.78
+        ],
+        "rotation": [
+          0,
+          40.75,
+          0
+        ],
+        "id": 63490454,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          6,
+          2.3,
+          2
+        ],
+        "isActive": true
+      },
+      "90825521": {
+        "majorCompId": 74305865,
+        "owner": "唐睿尚",
+        "EditorName": "星皮果吸附 (1)",
+        "position": [
+          -1791.95,
+          104.93,
+          760.34
+        ],
+        "rotation": [
+          291.62,
+          287.22,
+          214.49
+        ],
+        "id": 90825521,
+        "componentsInfo": {
+          "64146362": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "74305865": {
+            "applyRotation": false
+          },
+          "52068266": {
+            "detectType": 1024
+          }
+        },
+        "configId": 350,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72212474": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "走调草注视表演监听",
+        "position": [
+          -1689.02,
+          94,
+          776.93
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72212474,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90825540": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "吸附关闭监听",
+        "position": [
+          -1794,
+          104.3,
+          761.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90825540,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72253720": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "莲顶鱼注视表演监听",
+        "position": [
+          -1696.07,
+          93.68,
+          753.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72253720,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90879682": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "快速捕捉监听状态机",
+        "position": [
+          -1737.54,
+          101.19,
+          780.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90879682,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72263144": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "星露丽注视表演监听",
+        "position": [
+          -1739.85,
+          101.73,
+          781.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72263144,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90954895": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "入口走调草刷新控制",
+        "position": [
+          -1662.48,
+          92.93,
+          791.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90954895,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72284115": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "注视启动监听",
+        "position": [
+          -1661.9,
+          94,
+          793.24
+        ],
+        "rotation": [
+          0,
+          226.48,
+          0
+        ],
+        "id": 72284115,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "90981296": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "山谷一线天后瀑布timeline",
+        "position": [
+          -1661.12,
+          93.76,
+          793.85
+        ],
+        "rotation": [
+          0,
+          311.1,
+          0
+        ],
+        "id": 90981296,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          2,
+          2,
+          15
+        ],
+        "isActive": true
+      },
+      "72404600": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "星露丽滑翔触发",
+        "position": [
+          -1729.97,
+          107.81,
+          784.3
+        ],
+        "rotation": [
+          0,
+          339.69,
+          0
+        ],
+        "id": 72404600,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              40,
+              40,
+              40
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91089192": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "Timeline播放计次",
+        "position": [
+          -1663.44,
+          93.84,
+          799.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91089192,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72405237": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "滑翔老鼠待机平台 (2)",
+        "position": [
+          -1727.74,
+          117.77,
+          740.13
+        ],
+        "rotation": [
+          0,
+          313.08,
+          0
+        ],
+        "id": 72405237,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Level_Transparent_Block.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Level_Transparent_Block.prefab"
+        },
+        "path": "",
+        "scale": [
+          10,
+          1,
+          5
+        ],
+        "isActive": true
+      },
+      "91089200": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "Timeline播放计次 (1)",
+        "position": [
+          -1663.44,
+          93.84,
+          799.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91089200,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72461996": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "进入星乐蒂区域战斗销毁注视",
+        "position": [
+          -1738.22,
+          101.83,
+          783.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72461996,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "scale": [
+          35,
+          35,
+          35
+        ],
+        "isActive": true
+      },
+      "91089201": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "Timeline播放计次 (2)",
+        "position": [
+          -1663.44,
+          93.84,
+          799.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91089201,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72462003": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "进入星乐蒂区域监听",
+        "position": [
+          -1739.85,
+          101.73,
+          781.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72462003,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 24,
+    "name": "板块1草原_关键生态点_新手生态4.0",
+    "spawners": [
+      54828429,
+      54828815,
+      55680241,
+      55689643,
+      55690507,
+      55690514,
+      55691400,
+      55698410,
+      56197427,
+      56667256,
+      56717212,
+      56821401,
+      56824967,
+      60994108,
+      60994222,
+      62283546,
+      62285540,
+      62368675,
+      62421591,
+      62519563,
+      62519769,
+      62520605,
+      62541520,
+      62727250,
+      62729240,
+      62729769,
+      62862540,
+      62862565,
+      63498255,
+      71580183,
+      72212926,
+      72253476,
+      72254567,
+      72257142,
+      72259694,
+      72337983,
+      72405508,
+      72405763,
+      72405765,
+      72405772,
+      72462616,
+      72462861,
+      72597149,
+      72597154,
+      72600087,
+      73752677,
+      73752880,
+      81151352,
+      82786354,
+      86708965,
+      87919224,
+      91067584,
+      91099798,
+      91216867
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_55680217_GraphRef.asset",
+    "sightLevel": 256,
+    "enableFinishMark": false,
+    "areaIds": [
+      90876677,
+      91067533
+    ],
+    "id": 55680217,
+    "chunk": 992239
+  },
+  "53873774": {
+    "owner": "lin.xu",
+    "position": [
+      -1640.12,
+      92.98,
+      806.34
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 55193566,
+    "levelItems": {
+      "72821013": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "靠近小炭犬反馈移除",
+        "position": [
+          -1643.3,
+          92.81,
+          807.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72821013,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          11,
+          11,
+          11
+        ],
+        "isActive": true
+      },
+      "90990734": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "烧藤蔓前对话图",
+        "position": [
+          -1645.54,
+          92.74,
+          805.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90990734,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 50326997,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72887886": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "监听玩家按z键",
+        "position": [
+          -1641.73,
+          92.73,
+          806.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72887886,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91028433": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "看小炭犬对话图",
+        "position": [
+          -1634.54,
+          92.85,
+          797.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91028433,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 72035942
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73932924": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "跟上妮可监听",
+        "position": [
+          -1647.41,
+          88.96,
+          807.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73932924,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91029087": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "小炭犬刷出计数器",
+        "position": [
+          -1643.7,
+          92.6,
+          805.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91029087,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "74309693": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "靠近小炭犬反馈2",
+        "position": [
+          -1643.3,
+          92.81,
+          807.2
+        ],
+        "rotation": [
+          0,
+          318.5,
+          0
+        ],
+        "id": 74309693,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          25,
+          10,
+          9
+        ],
+        "isActive": true
+      },
+      "91040401": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "小炭犬vlog对话图",
+        "position": [
+          -1641.64,
+          93.02,
+          808.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91040401,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 56228260
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91407996": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "靠近小炭犬反馈对话图",
+        "position": [
+          -1641.25,
+          92.56,
+          804.17
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91407996,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 72695666,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56479679": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "玩家靠近藤蔓触发",
+        "position": [
+          -1649.28,
+          95.12,
+          803.79
+        ],
+        "rotation": [
+          0,
+          318.9,
+          0
+        ],
+        "id": 56479679,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          5.12,
+          5,
+          6.4
+        ],
+        "isActive": true
+      },
+      "60712739": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "sandbox销毁触发",
+        "position": [
+          -1666.3,
+          92.28,
+          789.08
+        ],
+        "rotation": [
+          0,
+          311.63,
+          0
+        ],
+        "id": 60712739,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              -13.74,
+              5.08,
+              1.7
+            ],
+            "size": [
+              46.25,
+              11.17,
+              43.32
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60712843": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "sandbox销毁监听",
+        "position": [
+          -1659.3,
+          92.88,
+          794.15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60712843,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61764647": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "P_Item_钻缝_SB",
+        "position": [
+          -1653.16,
+          94.43,
+          800.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61764647,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62810888": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "P_Item_焦点_SB",
+        "position": [
+          -1643.3,
+          92.81,
+          807.2
+        ],
+        "rotation": [
+          0,
+          287.86,
+          0
+        ],
+        "id": 62810888,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62943007": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "玩家捕捉引导完成监听",
+        "position": [
+          -1647.41,
+          88.96,
+          807.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62943007,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62957342": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "小炭犬特写触发",
+        "position": [
+          -1642.59,
+          95.43,
+          805.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62957342,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 8.23
+          }
+        },
+        "configId": 33,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72039752": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "主动注视监听",
+        "position": [
+          -1647.41,
+          88.96,
+          807.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72039752,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72072591": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "捕捉球数量监听",
+        "position": [
+          -1651.91,
+          94.02,
+          802.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72072591,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72695623": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "靠近小炭犬反馈",
+        "position": [
+          -1643.3,
+          92.81,
+          807.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72695623,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          11,
+          11,
+          11
+        ],
+        "isActive": true
+      },
+      "72293429": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "跟上你可",
+        "position": [
+          -1635.92,
+          93.34,
+          800.43
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72293429,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "scale": [
+          3.99,
+          3.99,
+          3.99
+        ],
+        "isActive": true
+      },
+      "90743623": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "掉线监听小炭犬重刷",
+        "position": [
+          -1642.87,
+          92.68,
+          807.58
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90743623,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "90743623_47735904",
+            "detectType": 4
+          },
+          "61746411": {
+            "radius": 0.5
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 17,
+    "name": "板块1全局_任务POI_主线_序章_序幕00",
+    "spawners": [
+      55870346,
+      60288691,
+      62283026,
+      62854753,
+      69185472,
+      72811218,
+      91192690,
+      91192694
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_53873774_GraphRef.asset",
+    "sightLevel": 128,
+    "enableFinishMark": false,
+    "areaIds": [
+      56390111,
+      62943133,
+      90876662
+    ],
+    "id": 53873774,
+    "chunk": 993263
+  },
+  "76958764": {
+    "owner": "唐睿尚",
+    "position": [
+      -1704.08,
+      98.49,
+      651.9
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 83023900,
+    "levelItems": {
+      "83822287": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "监听XY出现",
+        "position": [
+          -1746.89,
+          94.61,
+          631.16
+        ],
+        "rotation": [
+          0,
+          302.78,
+          0
+        ],
+        "id": 83822287,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          },
+          "52068349": {
+            "expressionKey": "83822287_52068349",
+            "detectType": 4
+          }
+        },
+        "configId": 33,
+        "scale": [
+          3,
+          3,
+          3
+        ],
+        "isActive": true
+      },
+      "83022347": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "LionLight",
+        "position": [
+          -1745.71,
+          98.44,
+          626.83
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 83022347,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Novice_LionLight.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Novice_LionLight.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91122777": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "防回头路对话图状态机",
+        "position": [
+          -1652.03,
+          103.85,
+          675.84
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91122777,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "83022609": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "FoxLight",
+        "position": [
+          -1750.85,
+          98.41,
+          633.17
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 83022609,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Novice_FoxLight.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Novice_FoxLight.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "83024045": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "XY离开壁画",
+        "position": [
+          -1666.94,
+          104.28,
+          669.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 83024045,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "83025346": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "FoxDecal",
+        "position": [
+          -1751.74,
+          97.93,
+          632.62
+        ],
+        "rotation": [
+          357.87,
+          243.51,
+          0
+        ],
+        "id": 83025346,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Novice_FoxDecal.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Novice_FoxDecal.prefab"
+        },
+        "scale": [
+          2.95,
+          2.93,
+          3
+        ],
+        "isActive": true
+      },
+      "91122779": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -1652.21,
+          107.15,
+          675.61
+        ],
+        "rotation": [
+          0,
+          325.4,
+          0
+        ],
+        "id": 91122779,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              4,
+              10,
+              6
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "76958766": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -1714,
+          91.27,
+          581.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 76958766,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Level_Novice_Cave.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Level_Novice_Cave.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "83025783": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "LionDecal",
+        "position": [
+          -1748.48,
+          98.01,
+          625.75
+        ],
+        "rotation": [
+          0,
+          243.51,
+          0
+        ],
+        "id": 83025783,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Novice_LionDecal.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Novice_LionDecal.prefab"
+        },
+        "scale": [
+          3.17,
+          3.15,
+          3.15
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 24,
+    "name": "全局_其他关卡_洞穴prefab",
+    "spawners": [
+      91062521,
+      91062527
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_76958764_GraphRef.asset",
+    "sightLevel": 128,
+    "enableFinishMark": false,
+    "areaIds": [
+      82737571,
+      82737572,
+      90876698,
+      91002869,
+      91002870,
+      91002871
+    ],
+    "id": 76958764,
+    "chunk": 992237
+  },
+  "76754614": {
+    "owner": "唐睿尚",
+    "chunk": 992239,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 76867014,
+    "levelItems": {
+      "82738426": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "烧毁藤蔓比尼提示触发",
+        "position": [
+          -1668.56,
+          93.89,
+          764.69
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82738426,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 9
+          },
+          "52068349": {
+            "detectType": 1
+          }
+        },
+        "configId": 33,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "82761970": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "荷叶睡眠莲顶鱼比尼提示触发 (1)",
+        "position": [
+          -1703.84,
+          92.24,
+          760.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82761970,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 9
+          },
+          "52068349": {
+            "detectType": 1
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "76868161": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Fan_SB_NoPerform",
+        "position": [
+          -1755.39,
+          101.49,
+          727.91
+        ],
+        "rotation": [
+          24.13,
+          333.16,
+          85.68
+        ],
+        "id": 76868161,
+        "componentsInfo": {
+          "42658053": {
+            "detectType": 1024
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                5,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                4.9,
+                0
+              ]
+            },
+            "power": 20
+          },
+          "42662676": {
+            "power": 20
+          }
+        },
+        "configId": 337,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "86685927": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -1764.44,
+          92.8,
+          737.91
+        ],
+        "rotation": [
+          0,
+          326.68,
+          0
+        ],
+        "id": 86685927,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068346": {
+            "expressionKey": "86685927_52068346",
+            "detectType": 4
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "76868242": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -1758.21,
+          97.29,
+          733.76
+        ],
+        "rotation": [
+          21.62,
+          333.86,
+          357.1
+        ],
+        "id": 76868242,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1.7,
+              1,
+              1.7
+            ]
+          },
+          "52068346": {
+            "expressionKey": "76868242_52068346",
+            "detectType": 16
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91227932": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "藤蔓燃烧记录",
+        "position": [
+          -1670.93,
+          93.53,
+          764.23
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91227932,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "77285403": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "星乐蒂销毁",
+        "position": [
+          -1760.74,
+          92.91,
+          731.31
+        ],
+        "rotation": [
+          0,
+          287.99,
+          0
+        ],
+        "id": 77285403,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91227933": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "莲顶鱼睡眠记录",
+        "position": [
+          -1670.93,
+          93.53,
+          764.23
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91227933,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80998281": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_AssistWind_SB",
+        "position": [
+          -1667.43,
+          95.92,
+          764.17
+        ],
+        "rotation": [
+          6.57,
+          288.23,
+          0
+        ],
+        "id": 80998281,
+        "componentsInfo": {
+          "42658053": {
+            "detectType": 1024
+          },
+          "42658052": {
+            "power": 20
+          },
+          "72109026": {
+            "size": [
+              4,
+              10,
+              4
+            ]
+          },
+          "42662676": {
+            "power": 20
+          }
+        },
+        "configId": 108,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "81002467": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "鸟巢烧毁监听",
+        "position": [
+          -1671.66,
+          92.63,
+          762.31
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 81002467,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 17,
+    "name": "全局_其他关卡_新手山谷-ECS生态",
+    "spawners": [
+      76754618,
+      76754621,
+      76868153,
+      76868156,
+      77212370,
+      77212501,
+      77237457,
+      86681169,
+      90825212,
+      90825215
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_76754614_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 76754614,
+    "markIconSpawnerId": 0,
+    "position": [
+      -1673.67,
+      92.96,
+      778.52
+    ]
+  },
+  "49394857": {
+    "owner": "lin.xu",
+    "position": [
+      -1705.3,
+      91.24,
+      741.6
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 49492973,
+    "levelItems": {
+      "72842804": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (6)",
+        "position": [
+          -1747.58,
+          113.7,
+          707.03
+        ],
+        "rotation": [
+          0,
+          301.62,
+          0
+        ],
+        "id": 72842804,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          8.44
+        ],
+        "isActive": true
+      },
+      "72842937": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (7)",
+        "position": [
+          -1740.04,
+          113.7,
+          704.28
+        ],
+        "rotation": [
+          0,
+          278.37,
+          0
+        ],
+        "id": 72842937,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          8.44
+        ],
+        "isActive": true
+      },
+      "72843185": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (8)",
+        "position": [
+          -1748.99,
+          105.41,
+          756.4
+        ],
+        "rotation": [
+          0,
+          5.11,
+          0
+        ],
+        "id": 72843185,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          5,
+          4.03
+        ],
+        "isActive": true
+      },
+      "72843203": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (9)",
+        "position": [
+          -1749.02,
+          106.96,
+          750.52
+        ],
+        "rotation": [
+          0,
+          355.34,
+          0
+        ],
+        "id": 72843203,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          9.28
+        ],
+        "isActive": true
+      },
+      "72843309": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (10)",
+        "position": [
+          -1747.47,
+          111.35,
+          742.52
+        ],
+        "rotation": [
+          0,
+          46.35,
+          0
+        ],
+        "id": 72843309,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          6
+        ],
+        "isActive": true
+      },
+      "72843379": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (11)",
+        "position": [
+          -1751.07,
+          111.35,
+          738.71
+        ],
+        "rotation": [
+          0,
+          33.71,
+          0
+        ],
+        "id": 72843379,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          5.14
+        ],
+        "isActive": true
+      },
+      "72843501": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (12)",
+        "position": [
+          -1751.24,
+          111.35,
+          727.95
+        ],
+        "rotation": [
+          0,
+          352.63,
+          0
+        ],
+        "id": 72843501,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          18.23
+        ],
+        "isActive": true
+      },
+      "91375979": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (50)",
+        "position": [
+          -1795.2,
+          107.19,
+          773.22
+        ],
+        "rotation": [
+          335.32,
+          343.41,
+          358.32
+        ],
+        "id": 91375979,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          9,
+          1
+        ],
+        "isActive": true
+      },
+      "72844444": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (13)",
+        "position": [
+          -1770.6,
+          88.79,
+          720.93
+        ],
+        "rotation": [
+          0,
+          343.89,
+          0
+        ],
+        "id": 72844444,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          8.44
+        ],
+        "isActive": true
+      },
+      "77642123": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "二十面体监听",
+        "position": [
+          -1753.84,
+          117.68,
+          740.62
+        ],
+        "rotation": [
+          315.34,
+          358.39,
+          301.02
+        ],
+        "id": 77642123,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          12,
+          12,
+          12
+        ],
+        "isActive": true
+      },
+      "72844458": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (15)",
+        "position": [
+          -1777.49,
+          111.64,
+          691.12
+        ],
+        "rotation": [
+          0,
+          59.19,
+          0
+        ],
+        "id": 72844458,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          20,
+          20
+        ],
+        "isActive": true
+      },
+      "78989148": {
+        "majorCompId": 73871347,
+        "owner": "lin.xu",
+        "EditorName": "一线天蓝图监听",
+        "position": [
+          -1632.72,
+          92.3,
+          799.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 78989148,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 52754291
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72844527": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (16)",
+        "position": [
+          -1766.35,
+          111.64,
+          700.95
+        ],
+        "rotation": [
+          0,
+          29.86,
+          0
+        ],
+        "id": 72844527,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          20,
+          11.69
+        ],
+        "isActive": true
+      },
+      "80076016": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "玩家脚下空气地面",
+        "position": [
+          -1738.45,
+          111.11,
+          750.61
+        ],
+        "rotation": [
+          0,
+          47.79,
+          0
+        ],
+        "id": 80076016,
+        "configId": 274,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          0.5,
+          1,
+          0.5
+        ],
+        "isActive": true
+      },
+      "72844531": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (17)",
+        "position": [
+          -1765.67,
+          111.64,
+          710.58
+        ],
+        "rotation": [
+          0,
+          338.2,
+          0
+        ],
+        "id": 72844531,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          20,
+          11.69
+        ],
+        "isActive": true
+      },
+      "80076214": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "妮可脚下空气地面",
+        "position": [
+          -1738.81,
+          111.24,
+          751.07
+        ],
+        "rotation": [
+          0,
+          49.81,
+          0
+        ],
+        "id": 80076214,
+        "configId": 274,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          0.5,
+          1,
+          0.5
+        ],
+        "isActive": true
+      },
+      "72844532": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (18)",
+        "position": [
+          -1765.67,
+          91.64,
+          710.58
+        ],
+        "rotation": [
+          0,
+          338.2,
+          0
+        ],
+        "id": 72844532,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          20,
+          11.69
+        ],
+        "isActive": true
+      },
+      "80078912": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "20面体演出空气墙1",
+        "position": [
+          -1741.9,
+          113.12,
+          753.27
+        ],
+        "rotation": [
+          0,
+          351.01,
+          0
+        ],
+        "id": 80078912,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          0.5,
+          6,
+          6
+        ],
+        "isActive": false
+      },
+      "72844534": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (20)",
+        "position": [
+          -1769.57,
+          91.64,
+          721.61
+        ],
+        "rotation": [
+          0,
+          338.2,
+          0
+        ],
+        "id": 72844534,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          3.55,
+          20,
+          11.69
+        ],
+        "isActive": true
+      },
+      "80079073": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "20面体演出空气墙2",
+        "position": [
+          -1737.38,
+          113.12,
+          751.38
+        ],
+        "rotation": [
+          0,
+          351.01,
+          0
+        ],
+        "id": 80079073,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          0.5,
+          6,
+          6
+        ],
+        "isActive": false
+      },
+      "72859121": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "二十面体注视表演监听",
+        "position": [
+          -1753.84,
+          117.68,
+          740.62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72859121,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80079074": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "20面体演出空气墙3",
+        "position": [
+          -1740.1,
+          113.12,
+          753.47
+        ],
+        "rotation": [
+          0,
+          252.86,
+          0
+        ],
+        "id": 80079074,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          0.5,
+          6,
+          6
+        ],
+        "isActive": false
+      },
+      "72879804": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "远景2注视表演监听",
+        "position": [
+          -1776.93,
+          109.05,
+          771.44
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72879804,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80079076": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "20面体演出空气墙4",
+        "position": [
+          -1739.04,
+          113.12,
+          748.27
+        ],
+        "rotation": [
+          0,
+          252.86,
+          0
+        ],
+        "id": 80079076,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          0.5,
+          6,
+          6
+        ],
+        "isActive": false
+      },
+      "72879926": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "跟上你可",
+        "position": [
+          -1669.8,
+          92.84,
+          782.78
+        ],
+        "rotation": [
+          0,
+          198.96,
+          0
+        ],
+        "id": 72879926,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "80104055": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "空气墙显隐控制器",
+        "position": [
+          -1738.72,
+          111.34,
+          747.89
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80104055,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72911328": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "瀑布焦点",
+        "position": [
+          -1677.82,
+          97.7,
+          757.14
+        ],
+        "rotation": [
+          0,
+          257.57,
+          0
+        ],
+        "id": 72911328,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "84372406": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (35)",
+        "position": [
+          -1745.11,
+          111.35,
+          744.6
+        ],
+        "rotation": [
+          0,
+          53.3,
+          0
+        ],
+        "id": 84372406,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          3
+        ],
+        "isActive": true
+      },
+      "73023928": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (21)",
+        "position": [
+          -1775.09,
+          91.64,
+          731.2
+        ],
+        "rotation": [
+          0,
+          321.88,
+          0
+        ],
+        "id": 73023928,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          3.55,
+          20,
+          11.69
+        ],
+        "isActive": true
+      },
+      "84372410": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (36)",
+        "position": [
+          -1742.65,
+          111.35,
+          745.84
+        ],
+        "rotation": [
+          0,
+          68.83,
+          0
+        ],
+        "id": 84372410,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          4
+        ],
+        "isActive": true
+      },
+      "73042093": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (147)",
+        "position": [
+          -1649.02,
+          96.85,
+          818.83
+        ],
+        "rotation": [
+          0,
+          336.31,
+          0
+        ],
+        "id": 73042093,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "84372414": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (37)",
+        "position": [
+          -1743.53,
+          111.35,
+          749.15
+        ],
+        "rotation": [
+          0,
+          68.45,
+          0
+        ],
+        "id": 84372414,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          4
+        ],
+        "isActive": true
+      },
+      "73042094": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (148)",
+        "position": [
+          -1642.01,
+          90.32,
+          821.47
+        ],
+        "rotation": [
+          0,
+          345.3,
+          0
+        ],
+        "id": 73042094,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          5.2,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "84372685": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (38)",
+        "position": [
+          -1747.15,
+          111.35,
+          747.29
+        ],
+        "rotation": [
+          0,
+          59.3,
+          0
+        ],
+        "id": 84372685,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          5
+        ],
+        "isActive": true
+      },
+      "73042095": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (149)",
+        "position": [
+          -1656.81,
+          105.1,
+          813.25
+        ],
+        "rotation": [
+          0,
+          312.49,
+          0
+        ],
+        "id": 73042095,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90811912": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (39)",
+        "position": [
+          -1656.29,
+          112.84,
+          768.78
+        ],
+        "rotation": [
+          0,
+          11.9,
+          0
+        ],
+        "id": 90811912,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          20,
+          20
+        ],
+        "isActive": true
+      },
+      "73042096": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (150)",
+        "position": [
+          -1642.01,
+          115.1,
+          821.47
+        ],
+        "rotation": [
+          0,
+          345.3,
+          0
+        ],
+        "id": 73042096,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          5.2,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90811960": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (40)",
+        "position": [
+          -1657.01,
+          103.17,
+          733.12
+        ],
+        "rotation": [
+          0,
+          126.42,
+          0
+        ],
+        "id": 90811960,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          20,
+          20
+        ],
+        "isActive": true
+      },
+      "73042097": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (151)",
+        "position": [
+          -1634.91,
+          105.1,
+          820.44
+        ],
+        "rotation": [
+          0,
+          20.32,
+          0
+        ],
+        "id": 73042097,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90812054": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (192)",
+        "position": [
+          -1621.75,
+          116.53,
+          770.71
+        ],
+        "rotation": [
+          0,
+          183.78,
+          0
+        ],
+        "id": 90812054,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73042098": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (152)",
+        "position": [
+          -1656.81,
+          98.45,
+          813.25
+        ],
+        "rotation": [
+          0,
+          312.49,
+          0
+        ],
+        "id": 73042098,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90812055": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (191)",
+        "position": [
+          -1621.75,
+          106.53,
+          770.71
+        ],
+        "rotation": [
+          0,
+          183.78,
+          0
+        ],
+        "id": 90812055,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73042099": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (153)",
+        "position": [
+          -1626.13,
+          115.1,
+          816.02
+        ],
+        "rotation": [
+          0,
+          44.56,
+          0
+        ],
+        "id": 73042099,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90812101": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (41)",
+        "position": [
+          -1788.58,
+          105.25,
+          776.34
+        ],
+        "rotation": [
+          334.02,
+          23.26,
+          358.75
+        ],
+        "id": 90812101,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          9,
+          1
+        ],
+        "isActive": true
+      },
+      "73042100": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (154)",
+        "position": [
+          -1609.07,
+          104.94,
+          806.31
+        ],
+        "rotation": [
+          0,
+          27.21,
+          0
+        ],
+        "id": 73042100,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90812108": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (42)",
+        "position": [
+          -1787.71,
+          104.6,
+          773.39
+        ],
+        "rotation": [
+          335.11,
+          16.98,
+          8.33
+        ],
+        "id": 90812108,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          0.7,
+          6,
+          0.6
+        ],
+        "isActive": true
+      },
+      "73042101": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (155)",
+        "position": [
+          -1609.46,
+          109.02,
+          794.92
+        ],
+        "rotation": [
+          0,
+          109.63,
+          0
+        ],
+        "id": 73042101,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90880078": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (43)",
+        "position": [
+          -1740.51,
+          112.91,
+          741
+        ],
+        "rotation": [
+          0,
+          170.95,
+          0
+        ],
+        "id": 90880078,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          12
+        ],
+        "isActive": true
+      },
+      "73042102": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (156)",
+        "position": [
+          -1609.45,
+          116.53,
+          780.46
+        ],
+        "rotation": [
+          0,
+          101.24,
+          0
+        ],
+        "id": 73042102,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90880079": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (44)",
+        "position": [
+          -1733.86,
+          113.87,
+          742.91
+        ],
+        "rotation": [
+          0,
+          162.99,
+          0
+        ],
+        "id": 90880079,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          8
+        ],
+        "isActive": true
+      },
+      "73042103": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (157)",
+        "position": [
+          -1614.1,
+          116.53,
+          773.96
+        ],
+        "rotation": [
+          0,
+          140.29,
+          0
+        ],
+        "id": 73042103,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90880089": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (45)",
+        "position": [
+          -1736.71,
+          113.87,
+          752.42
+        ],
+        "rotation": [
+          0,
+          165.94,
+          0
+        ],
+        "id": 90880089,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          12
+        ],
+        "isActive": true
+      },
+      "73042104": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (158)",
+        "position": [
+          -1628.9,
+          116.53,
+          769.71
+        ],
+        "rotation": [
+          0,
+          150.22,
+          0
+        ],
+        "id": 73042104,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          5.63,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90880090": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (46)",
+        "position": [
+          -1737.43,
+          110.83,
+          760.42
+        ],
+        "rotation": [
+          0,
+          197.78,
+          0
+        ],
+        "id": 90880090,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          5
+        ],
+        "isActive": true
+      },
+      "73042105": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (159)",
+        "position": [
+          -1634.51,
+          116.53,
+          766.48
+        ],
+        "rotation": [
+          0,
+          150,
+          0
+        ],
+        "id": 73042105,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          7.32,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90880101": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (47)",
+        "position": [
+          -1742.97,
+          113.82,
+          751.93
+        ],
+        "rotation": [
+          0,
+          158.88,
+          0
+        ],
+        "id": 90880101,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          6
+        ],
+        "isActive": true
+      },
+      "73042106": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (160)",
+        "position": [
+          -1639.91,
+          116.53,
+          766.96
+        ],
+        "rotation": [
+          0,
+          235.73,
+          0
+        ],
+        "id": 73042106,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          7.32,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90881941": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "跟上妮可销毁监听",
+        "position": [
+          -1670.5,
+          93,
+          783.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90881941,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042107": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (161)",
+        "position": [
+          -1642.99,
+          116.53,
+          775.09
+        ],
+        "rotation": [
+          0,
+          259.21,
+          0
+        ],
+        "id": 73042107,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "91010465": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "妮可空气地面-地下",
+        "position": [
+          -1748.72,
+          92.38,
+          768.18
+        ],
+        "rotation": [
+          0,
+          355.72,
+          0
+        ],
+        "id": 91010465,
+        "configId": 274,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          4,
+          1,
+          4
+        ],
+        "isActive": true
+      },
+      "73042108": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (162)",
+        "position": [
+          -1648.25,
+          116.53,
+          793.98
+        ],
+        "rotation": [
+          0,
+          239.75,
+          0
+        ],
+        "id": 73042108,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "91095844": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB",
+        "position": [
+          -1740.54,
+          114.18,
+          755.45
+        ],
+        "rotation": [
+          0,
+          254.51,
+          0
+        ],
+        "id": 91095844,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              10,
+              6
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042109": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (163)",
+        "position": [
+          -1648.25,
+          106.53,
+          793.98
+        ],
+        "rotation": [
+          0,
+          239.75,
+          0
+        ],
+        "id": 73042109,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "91117092": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (49)",
+        "position": [
+          -1666.05,
+          107.67,
+          726.75
+        ],
+        "rotation": [
+          0,
+          11.9,
+          281.06
+        ],
+        "id": 91117092,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          20,
+          25
+        ],
+        "isActive": true
+      },
+      "73042110": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (164)",
+        "position": [
+          -1653.78,
+          116.53,
+          802.22
+        ],
+        "rotation": [
+          0,
+          232.52,
+          0
+        ],
+        "id": 73042110,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "91114834": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (48)",
+        "position": [
+          -1649.35,
+          106.62,
+          792.7
+        ],
+        "rotation": [
+          0,
+          4.35,
+          0
+        ],
+        "id": 91114834,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          2,
+          5,
+          5
+        ],
+        "isActive": true
+      },
+      "73042111": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (165)",
+        "position": [
+          -1642.01,
+          100.32,
+          821.47
+        ],
+        "rotation": [
+          0,
+          345.3,
+          0
+        ],
+        "id": 73042111,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          5.2,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "77640433": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "二十面体",
+        "position": [
+          -1753.84,
+          117.68,
+          740.62
+        ],
+        "rotation": [
+          315.34,
+          358.39,
+          301.02
+        ],
+        "id": 77640433,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_WB_Icosahedron.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_WB_Icosahedron.prefab"
+        },
+        "path": "",
+        "scale": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "isActive": false
+      },
+      "73042112": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (166)",
+        "position": [
+          -1606.1,
+          109.02,
+          804.34
+        ],
+        "rotation": [
+          0,
+          109.63,
+          0
+        ],
+        "id": 73042112,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "74432141": {
+        "majorCompId": 0,
+        "owner": "guangling",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (34)",
+        "position": [
+          -1746.43,
+          100.08,
+          757.23
+        ],
+        "rotation": [
+          0,
+          105.62,
+          0
+        ],
+        "id": 74432141,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          11.25,
+          4.03
+        ],
+        "isActive": true
+      },
+      "73042113": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (167)",
+        "position": [
+          -1608.19,
+          109.02,
+          786.7
+        ],
+        "rotation": [
+          0,
+          52.83,
+          0
+        ],
+        "id": 73042113,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "74432139": {
+        "majorCompId": 0,
+        "owner": "guangling",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (33)",
+        "position": [
+          -1753.77,
+          104.99,
+          757.46
+        ],
+        "rotation": [
+          0,
+          10.7,
+          0
+        ],
+        "id": 74432139,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          5,
+          1.84
+        ],
+        "isActive": true
+      },
+      "73042114": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (168)",
+        "position": [
+          -1608.79,
+          117.91,
+          782.96
+        ],
+        "rotation": [
+          0,
+          198.58,
+          0
+        ],
+        "id": 73042114,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          6.45,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73640462": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "跟上你可00",
+        "position": [
+          -1669.75,
+          93.4,
+          784.27
+        ],
+        "rotation": [
+          0,
+          45.5,
+          0
+        ],
+        "id": 73640462,
+        "configId": 3,
+        "scale": [
+          30,
+          2,
+          5
+        ],
+        "isActive": true
+      },
+      "73042115": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (169)",
+        "position": [
+          -1644.86,
+          116.53,
+          784.91
+        ],
+        "rotation": [
+          0,
+          259.21,
+          0
+        ],
+        "id": 73042115,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73098019": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (32)",
+        "position": [
+          -1762.46,
+          109.95,
+          702.78
+        ],
+        "rotation": [
+          0,
+          73.27,
+          0
+        ],
+        "id": 73098019,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042116": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (170)",
+        "position": [
+          -1653.78,
+          106.53,
+          802.22
+        ],
+        "rotation": [
+          0,
+          232.52,
+          0
+        ],
+        "id": 73042116,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73098017": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (31)",
+        "position": [
+          -1755.91,
+          109.95,
+          708.42
+        ],
+        "rotation": [
+          0,
+          25.22,
+          0
+        ],
+        "id": 73098017,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042117": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (171)",
+        "position": [
+          -1659.87,
+          116.53,
+          810.15
+        ],
+        "rotation": [
+          0,
+          232.52,
+          0
+        ],
+        "id": 73042117,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73096732": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (30)",
+        "position": [
+          -1750.47,
+          114.87,
+          709.87
+        ],
+        "rotation": [
+          0,
+          315.66,
+          0
+        ],
+        "id": 73096732,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042118": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (172)",
+        "position": [
+          -1659.87,
+          106.53,
+          810.15
+        ],
+        "rotation": [
+          0,
+          232.52,
+          0
+        ],
+        "id": 73042118,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73096730": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (29)",
+        "position": [
+          -1742.38,
+          114.87,
+          705.95
+        ],
+        "rotation": [
+          0,
+          276.03,
+          0
+        ],
+        "id": 73096730,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042119": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (173)",
+        "position": [
+          -1644.86,
+          106.53,
+          784.91
+        ],
+        "rotation": [
+          0,
+          259.21,
+          0
+        ],
+        "id": 73042119,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "55460129": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Item_Empty_SB2",
+        "position": [
+          -1754.19,
+          112.61,
+          725.14
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 55460129,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042120": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (174)",
+        "position": [
+          -1609.45,
+          106.53,
+          780.46
+        ],
+        "rotation": [
+          0,
+          101.24,
+          0
+        ],
+        "id": 73042120,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "60708561": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "新手sandbox关闭监听",
+        "position": [
+          -1711.55,
+          81.8,
+          727.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60708561,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042121": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (175)",
+        "position": [
+          -1642.01,
+          105.1,
+          821.47
+        ],
+        "rotation": [
+          0,
+          345.3,
+          0
+        ],
+        "id": 73042121,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          5.2,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "60711003": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "生态区sandbox结束触发",
+        "position": [
+          -1699.51,
+          79.42,
+          746.91
+        ],
+        "rotation": [
+          0,
+          311.63,
+          0
+        ],
+        "id": 60711003,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              -2.96,
+              3.35,
+              -0.57
+            ],
+            "size": [
+              10.7,
+              7.7,
+              11.25
+            ]
+          },
+          "52068346": {
+            "detectType": 1
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042122": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (176)",
+        "position": [
+          -1649.02,
+          105.1,
+          818.83
+        ],
+        "rotation": [
+          0,
+          336.31,
+          0
+        ],
+        "id": 73042122,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73096705": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (28)",
+        "position": [
+          -1734.33,
+          114.87,
+          708.76
+        ],
+        "rotation": [
+          0,
+          225.42,
+          0
+        ],
+        "id": 73096705,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042123": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (177)",
+        "position": [
+          -1634.91,
+          101.4,
+          820.44
+        ],
+        "rotation": [
+          0,
+          20.32,
+          0
+        ],
+        "id": 73042123,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094607": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (27)",
+        "position": [
+          -1714.2,
+          109.98,
+          736.91
+        ],
+        "rotation": [
+          0,
+          310.95,
+          0
+        ],
+        "id": 73094607,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042124": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (178)",
+        "position": [
+          -1626.13,
+          100.62,
+          816.02
+        ],
+        "rotation": [
+          0,
+          44.56,
+          0
+        ],
+        "id": 73042124,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094460": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (26)",
+        "position": [
+          -1660.17,
+          109.98,
+          759.45
+        ],
+        "rotation": [
+          0,
+          233.23,
+          0
+        ],
+        "id": 73094460,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042125": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (179)",
+        "position": [
+          -1626.13,
+          105.1,
+          816.02
+        ],
+        "rotation": [
+          0,
+          44.56,
+          0
+        ],
+        "id": 73042125,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094314": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (25)",
+        "position": [
+          -1667.04,
+          109.98,
+          752.58
+        ],
+        "rotation": [
+          0,
+          216.71,
+          0
+        ],
+        "id": 73094314,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042126": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (180)",
+        "position": [
+          -1618.35,
+          95.1,
+          810.17
+        ],
+        "rotation": [
+          0,
+          17.85,
+          0
+        ],
+        "id": 73042126,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094313": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (24)",
+        "position": [
+          -1672.17,
+          109.98,
+          744.17
+        ],
+        "rotation": [
+          0,
+          206.1,
+          0
+        ],
+        "id": 73094313,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042127": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (181)",
+        "position": [
+          -1608.79,
+          107.91,
+          782.96
+        ],
+        "rotation": [
+          0,
+          198.58,
+          0
+        ],
+        "id": 73042127,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          6.45,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094312": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (23)",
+        "position": [
+          -1678.64,
+          109.98,
+          740.9
+        ],
+        "rotation": [
+          0,
+          280.3,
+          0
+        ],
+        "id": 73094312,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042128": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (182)",
+        "position": [
+          -1642.99,
+          106.53,
+          775.09
+        ],
+        "rotation": [
+          0,
+          259.21,
+          0
+        ],
+        "id": 73042128,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094310": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (22)",
+        "position": [
+          -1687.82,
+          109.98,
+          739.89
+        ],
+        "rotation": [
+          0,
+          247.05,
+          0
+        ],
+        "id": 73094310,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042129": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (183)",
+        "position": [
+          -1614.1,
+          106.53,
+          773.96
+        ],
+        "rotation": [
+          0,
+          140.29,
+          0
+        ],
+        "id": 73042129,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094022": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (19)",
+        "position": [
+          -1696.77,
+          109.98,
+          735.58
+        ],
+        "rotation": [
+          0,
+          241.61,
+          0
+        ],
+        "id": 73094022,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042130": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (184)",
+        "position": [
+          -1627,
+          106.53,
+          768.7
+        ],
+        "rotation": [
+          0,
+          106,
+          0
+        ],
+        "id": 73042130,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          5.63,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73094020": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (14)",
+        "position": [
+          -1705.84,
+          109.98,
+          733.55
+        ],
+        "rotation": [
+          0,
+          273.1,
+          0
+        ],
+        "id": 73094020,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          10
+        ],
+        "isActive": true
+      },
+      "73042131": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (185)",
+        "position": [
+          -1609.07,
+          113.97,
+          806.31
+        ],
+        "rotation": [
+          0,
+          27.21,
+          0
+        ],
+        "id": 73042131,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "55447286": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -1751.1,
+          103.61,
+          761.85
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 55447286,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042133": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (186)",
+        "position": [
+          -1618.35,
+          105.1,
+          810.17
+        ],
+        "rotation": [
+          0,
+          17.85,
+          0
+        ],
+        "id": 73042133,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "60713055": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "缝隙空气墙触发",
+        "position": [
+          -1659.49,
+          92.73,
+          793.86
+        ],
+        "rotation": [
+          0,
+          40.82,
+          0
+        ],
+        "id": 60713055,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              -1.76,
+              6.17,
+              -0.91
+            ],
+            "size": [
+              21.95,
+              13.33,
+              7.18
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042134": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (187)",
+        "position": [
+          -1618.35,
+          115.1,
+          810.17
+        ],
+        "rotation": [
+          0,
+          17.85,
+          0
+        ],
+        "id": 73042134,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "71150360": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -1722.96,
+          112.65,
+          758.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 71150360,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_SceneObject_BeginningAirWall.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_SceneObject_BeginningAirWall.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042135": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (188)",
+        "position": [
+          -1634.91,
+          115.1,
+          820.44
+        ],
+        "rotation": [
+          0,
+          20.32,
+          0
+        ],
+        "id": 73042135,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "72123594": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "妮可踮脚",
+        "position": [
+          -1738.77,
+          101.34,
+          767.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72123594,
+        "configId": 274,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042136": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (189)",
+        "position": [
+          -1649.02,
+          115.1,
+          818.83
+        ],
+        "rotation": [
+          0,
+          336.31,
+          0
+        ],
+        "id": 73042136,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "72744427": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "一线天焦点",
+        "position": [
+          -1665.59,
+          97.24,
+          791.08
+        ],
+        "rotation": [
+          0,
+          287.86,
+          0
+        ],
+        "id": 72744427,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73042137": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "P_Item_SceneObject_Tutorial_AirWall (190)",
+        "position": [
+          -1656.81,
+          115.1,
+          813.25
+        ],
+        "rotation": [
+          0,
+          312.49,
+          0
+        ],
+        "id": 73042137,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "72842710": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB",
+        "position": [
+          -1753.74,
+          106.96,
+          753.23
+        ],
+        "rotation": [
+          0,
+          356.91,
+          0
+        ],
+        "id": 72842710,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1.21,
+          5,
+          6.94
+        ],
+        "isActive": true
+      },
+      "72842723": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (1)",
+        "position": [
+          -1754.02,
+          109.72,
+          746.51
+        ],
+        "rotation": [
+          0,
+          7.77,
+          0
+        ],
+        "id": 72842723,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          6.94
+        ],
+        "isActive": true
+      },
+      "72842724": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (2)",
+        "position": [
+          -1755.38,
+          113.7,
+          740
+        ],
+        "rotation": [
+          0,
+          15.27,
+          0
+        ],
+        "id": 72842724,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          6.94
+        ],
+        "isActive": true
+      },
+      "72842725": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (3)",
+        "position": [
+          -1756.73,
+          113.7,
+          733.12
+        ],
+        "rotation": [
+          0,
+          6.99,
+          0
+        ],
+        "id": 72842725,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          6.94
+        ],
+        "isActive": true
+      },
+      "72842727": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (4)",
+        "position": [
+          -1756.29,
+          113.7,
+          722.84
+        ],
+        "rotation": [
+          0,
+          352.91,
+          0
+        ],
+        "id": 72842727,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          14.04
+        ],
+        "isActive": true
+      },
+      "72842728": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB (5)",
+        "position": [
+          -1753.26,
+          113.7,
+          712.6
+        ],
+        "rotation": [
+          0,
+          327.4,
+          0
+        ],
+        "id": 72842728,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.21,
+          10,
+          8.44
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 27,
+    "name": "板块1全局_任务POI_主线_序章_新手",
+    "spawners": [
+      62106227,
+      72108653,
+      72859144,
+      72875908,
+      80707509,
+      80984977,
+      82090670
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_49394857_GraphRef.asset",
+    "sightLevel": 128,
+    "enableFinishMark": false,
+    "areaIds": [
+      72664533,
+      72665800
+    ],
+    "id": 49394857,
+    "chunk": 992238
+  },
+  "53904009": {
+    "owner": "lin.xu",
+    "position": [
+      -1722.83,
+      95.66,
+      582.85
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 54328477,
+    "levelItems": {
+      "90990756": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_DialoguePlayer击败炎铠龙",
+        "position": [
+          -1706.3,
+          90.76,
+          557.88
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90990756,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 60284214,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158686": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (4)",
+        "position": [
+          -1701.8,
+          139.46,
+          497.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158686,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "91135598": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "银盔龙boss创生",
+        "position": [
+          -1715.25,
+          90.87,
+          560.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91135598,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158702": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (5)",
+        "position": [
+          -1711.8,
+          139.46,
+          487.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158702,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "91302946": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "空气墙",
+        "position": [
+          -1709.88,
+          91.05,
+          543.43
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91302946,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_AirWall_02.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_AirWall_02.prefab"
+        },
+        "scale": [
+          5,
+          6,
+          5
+        ],
+        "isActive": false
+      },
+      "61158703": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (6)",
+        "position": [
+          -1701.8,
+          139.46,
+          487.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158703,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158704": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (7)",
+        "position": [
+          -1711.8,
+          139.46,
+          477.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158704,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158705": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (8)",
+        "position": [
+          -1701.8,
+          139.46,
+          477.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158705,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158719": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (9)",
+        "position": [
+          -1711.8,
+          139.46,
+          467.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158719,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158720": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (10)",
+        "position": [
+          -1701.8,
+          139.46,
+          467.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158720,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158774": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (11)",
+        "position": [
+          -1691.8,
+          139.46,
+          467.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158774,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158912": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (29)",
+        "position": [
+          -1682.06,
+          114.96,
+          468.44
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158912,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158913": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (30)",
+        "position": [
+          -1672.57,
+          114.96,
+          471.6
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158913,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158908": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (25)",
+        "position": [
+          -1701.03,
+          114.96,
+          462.12
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158908,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158914": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (31)",
+        "position": [
+          -1682.06,
+          104.96,
+          468.44
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158914,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158909": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (26)",
+        "position": [
+          -1701.03,
+          104.96,
+          462.12
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158909,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90880729": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "妮可起身触发",
+        "position": [
+          -1722.13,
+          91.41,
+          589.48
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90880729,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 5
+          },
+          "52068349": {
+            "detectType": 1
+          }
+        },
+        "configId": 33,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158910": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (27)",
+        "position": [
+          -1691.54,
+          114.96,
+          465.28
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158910,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90878467": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Cube_SB",
+        "position": [
+          -1699.99,
+          149.28,
+          543.86
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90878467,
+        "componentsInfo": {
+          "72226655": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 10,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          10,
+          1,
+          10
+        ],
+        "isActive": true
+      },
+      "61158911": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (28)",
+        "position": [
+          -1691.54,
+          104.96,
+          465.28
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158911,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90876704": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "一阶段入战监听解封技能",
+        "position": [
+          -1690.32,
+          90.74,
+          552.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90876704,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158790": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (12)",
+        "position": [
+          -1681.8,
+          139.46,
+          467.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158790,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90834787": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "炎铠龙boss创生",
+        "position": [
+          -1715.25,
+          90.87,
+          560.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90834787,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158806": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (13)",
+        "position": [
+          -1710.52,
+          134.96,
+          458.96
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158806,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "89153473": {
+        "majorCompId": 0,
+        "owner": "贺桥",
+        "EditorName": "总攻喊话记录",
+        "position": [
+          -1715.25,
+          90.87,
+          560.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 89153473,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158807": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (14)",
+        "position": [
+          -1701.03,
+          134.96,
+          462.12
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158807,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "73812253": {
+        "majorCompId": 0,
+        "owner": "xinglinag.yi",
+        "EditorName": "转阶段解放冲刺监听",
+        "position": [
+          -1716.33,
+          90.73,
+          567.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73812253,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158808": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (15)",
+        "position": [
+          -1691.54,
+          134.96,
+          465.28
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158808,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61498239": {
+        "majorCompId": 0,
+        "owner": "zhouderu",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -1711.11,
+          90.72,
+          549.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61498239,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158809": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (16)",
+        "position": [
+          -1682.06,
+          134.96,
+          468.44
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158809,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61159253": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (38)",
+        "position": [
+          -1711.8,
+          139.46,
+          462.82
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61159253,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158837": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (17)",
+        "position": [
+          -1710.52,
+          124.96,
+          458.96
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158837,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61159252": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (37)",
+        "position": [
+          -1701.8,
+          139.46,
+          464.56
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61159252,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158838": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (18)",
+        "position": [
+          -1701.03,
+          124.96,
+          462.12
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158838,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158922": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (36)",
+        "position": [
+          -1663.08,
+          104.96,
+          474.76
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158922,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158839": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (19)",
+        "position": [
+          -1691.54,
+          124.96,
+          465.28
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158839,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158921": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (35)",
+        "position": [
+          -1663.08,
+          124.96,
+          474.76
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158921,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158840": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (20)",
+        "position": [
+          -1682.06,
+          124.96,
+          468.44
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158840,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158920": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (34)",
+        "position": [
+          -1663.08,
+          114.96,
+          474.76
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158920,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158904": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (21)",
+        "position": [
+          -1672.57,
+          134.96,
+          471.6
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158904,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158919": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (33)",
+        "position": [
+          -1663.08,
+          134.96,
+          474.76
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158919,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "61158905": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (22)",
+        "position": [
+          -1672.57,
+          124.96,
+          471.6
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158905,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "56377900": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "转阶段状态记录",
+        "position": [
+          -1715.25,
+          90.87,
+          560.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56377900,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158906": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (23)",
+        "position": [
+          -1710.52,
+          114.96,
+          458.96
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158906,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "56378029": {
+        "majorCompId": 0,
+        "owner": "lin.xu",
+        "EditorName": "转阶段状态记录2",
+        "position": [
+          -1715.25,
+          90.87,
+          560.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56378029,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158907": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (24)",
+        "position": [
+          -1710.52,
+          104.96,
+          458.96
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158907,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "59939751": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "Boss战发光草",
+        "position": [
+          -1717.75,
+          97.4,
+          573.28
+        ],
+        "rotation": [
+          1.65,
+          163.65,
+          0.03
+        ],
+        "id": 59939751,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_SceneObject_BossSceneSensorPlantLight.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_SceneObject_BossSceneSensorPlantLight.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "61158915": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (32)",
+        "position": [
+          -1672.57,
+          104.96,
+          471.6
+        ],
+        "rotation": [
+          0,
+          341.57,
+          0
+        ],
+        "id": 61158915,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "60371620": {
+        "majorCompId": 0,
+        "owner": "zhouderu",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -1711.11,
+          90.72,
+          549.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60371620,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60447748": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -1724.63,
+          90.88,
+          563.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60447748,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60715855": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -1703.58,
+          108.86,
+          520.4
+        ],
+        "rotation": [
+          0,
+          77.84,
+          0
+        ],
+        "id": 60715855,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_WB_Icosahedron.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_WB_Icosahedron.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "61127571": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "sandbox销毁监听",
+        "position": [
+          -1714.94,
+          90.73,
+          553.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61127571,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158682": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall",
+        "position": [
+          -1711.8,
+          139.46,
+          517.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158682,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90883006": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "防脱战空气墙状态机",
+        "position": [
+          -1706.41,
+          90.96,
+          565.43
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90883006,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158683": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (1)",
+        "position": [
+          -1711.8,
+          139.46,
+          507.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158683,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90990754": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_DialoguePlayer银盔龙登场",
+        "position": [
+          -1706.32,
+          90.76,
+          557.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90990754,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 57009681,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158684": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (2)",
+        "position": [
+          -1701.8,
+          139.46,
+          507.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158684,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      },
+      "90990755": {
+        "majorCompId": 73871347,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_DialoguePlayer炎铠龙登场",
+        "position": [
+          -1706.3,
+          90.76,
+          557.88
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 90990755,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 56753444,
+            "graphParam": {}
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61158685": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Item_SceneObject_Beginning_AirWall (3)",
+        "position": [
+          -1711.8,
+          139.46,
+          497.49
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "id": 61158685,
+        "configId": 91,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 17,
+    "name": "板块1全局_任务POI_主线_序章_序幕_boss",
+    "spawners": [
+      54475360,
+      55023851,
+      56377114,
+      63554496,
+      72045690,
+      78196751,
+      81993130,
+      83814660,
+      83814662
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_53904009_GraphRef.asset",
+    "sightLevel": 150,
+    "enableFinishMark": false,
+    "areaIds": [
+      59672249,
+      60634036,
+      84510948,
+      90876688
+    ],
+    "id": 53904009,
+    "chunk": 992236
+  },
+  "56634608": {
+    "activeParams": [
+      2602016,
+      0
+    ],
+    "owner": "yixingliang",
+    "autoSave": true,
+    "chunk": 992238,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "areaIds": [
+      56748991,
+      56924812
+    ],
+    "graphId": 56642644,
+    "levelItems": {
+      "60696516": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "boss战藤蔓监听",
+        "position": [
+          -1748.46,
+          95.62,
+          645.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60696516,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56664443": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "房间掉落物触发",
+        "position": [
+          -1751.32,
+          94.47,
+          652.81
+        ],
+        "rotation": [
+          0,
+          334.74,
+          0
+        ],
+        "id": 56664443,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              -0.23,
+              4.23,
+              0.04
+            ],
+            "size": [
+              4.21,
+              9.46,
+              1.5
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61164461": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -1762.24,
+          94.91,
+          634.49
+        ],
+        "rotation": [
+          8.48,
+          350.44,
+          0
+        ],
+        "id": 61164461,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_SceneObject_Stone_BreakableWall.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_SceneObject_Stone_BreakableWall.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56664548": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "房间掉落物监听",
+        "position": [
+          -1748.46,
+          95.62,
+          645.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56664548,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61165903": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Prefab_Container (1)",
+        "position": [
+          -1762.22,
+          98.2,
+          634.39
+        ],
+        "rotation": [
+          356.89,
+          350.44,
+          0
+        ],
+        "id": 61165903,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_SceneObject_Stone_BreakableWall.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_SceneObject_Stone_BreakableWall.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60696355": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "boss战藤蔓触发",
+        "position": [
+          -1719.74,
+          91.07,
+          581.62
+        ],
+        "rotation": [
+          0,
+          339.67,
+          0
+        ],
+        "id": 60696355,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              0.16,
+              2.23,
+              0.12
+            ],
+            "size": [
+              9.93,
+              5.45,
+              8.61
+            ]
+          },
+          "52068346": {
+            "expressionKey": "60696355_52068346",
+            "detectType": 1
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61165917": {
+        "majorCompId": 0,
+        "owner": "yixingliang",
+        "EditorName": "P_Prefab_Container (2)",
+        "position": [
+          -1763.9,
+          100.36,
+          633.99
+        ],
+        "rotation": [
+          356.89,
+          350.44,
+          0
+        ],
+        "id": 61165917,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_SceneObject_Stone_BreakableWall.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_SceneObject_Stone_BreakableWall.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 21,
+    "name": "板块1全局_主线关卡_新手地下洞穴交互物",
+    "spawners": [
+      56198017,
+      56198073,
+      56198118,
+      56198133,
+      56719198,
+      56719236,
+      56719334,
+      61664776
+    ],
+    "activeOnInit": 2,
+    "questActiveType": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3002/Sandbox_56634608_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 370,
+    "position": [
+      -1705.06,
+      81.82,
+      736.28
+    ],
+    "envobjs": {},
+    "id": 56634608
+  }
+}

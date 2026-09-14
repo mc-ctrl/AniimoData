@@ -1,0 +1,43 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "name": "registerCharacterBuff",
+      "NodeID": 5,
+      "calcInfoByLuaConfig": {
+        "def_mag_p": "param0",
+        "type": 1,
+        "def_p": "param0",
+        "id": 2020000
+      },
+      "UID": "a793c239-3675-44f1-91c1-c6707703b0fb",
+      "conditionType": 32,
+      "conditions": [
+        {
+          "UID": "227722ae-20ae-4c11-a8b1-fe5a58713678",
+          "target": "CURPET",
+          "name": "hasShield",
+          "NodeID": 4
+        }
+      ],
+      "characterBuffType": 1
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "a1fb7334-2f53-47fa-b2df-66f86962af19",
+      "NodeID": 6
+    }
+  },
+  "BPName": "buff_2020000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "perwindowResult": 6,
+    "propsitemCounts": 100,
+    "arkRewardList": [
+      10001,
+      10002,
+      10003
+    ],
+    "meshEnumList": [
+      "$UI_Icon_PetPose_10011.png",
+      "$UI_Icon_PetPose_10021.png",
+      "$UI_Icon_PetPose_10041.png",
+      "$UI_Icon_PetPose_10061.png",
+      "$UI_Icon_PetPose_10201.png"
+    ],
+    "npcId": 1412412,
+    "propsitem": 700034,
+    "pityCount": 40,
+    "windows": 3
+  }
+]

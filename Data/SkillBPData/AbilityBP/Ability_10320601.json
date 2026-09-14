@@ -1,0 +1,86 @@
+{
+  "BPName": "ability_10320601",
+  "NodeID": 1,
+  "UID": "1d8671d5-a882-4ffd-91f6-8a8a99fe33f1",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10320601001,
+      "name": "setCombatActionTimeline",
+      "UID": "ed2823da-1a6f-44ee-9e79-d57a0c944b64",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "109": {
+      "buffId": 2103216,
+      "name": "hasBuff",
+      "UID": "00d4d380-28ee-43f6-9c7c-24074e60fde4",
+      "target": "OWNER",
+      "NodeID": 109
+    },
+    "110": {
+      "UID": "d8d62f31-4c9e-4c26-9036-39159e7f52a5",
+      "conditionIds": [
+        109,
+        111
+      ],
+      "name": "conditionOr",
+      "NodeID": 110
+    },
+    "55": {
+      "timelineId": 10320601002,
+      "name": "setCombatActionTimeline",
+      "UID": "f238024b-fcb8-492e-aecb-cd5a64032db8",
+      "target": "CASTER",
+      "NodeID": 55
+    },
+    "111": {
+      "buffId": 2103217,
+      "name": "hasBuff",
+      "UID": "39062ef0-9a56-4bb1-8f8b-15c10c312944",
+      "target": "OWNER",
+      "NodeID": 111
+    },
+    "9": {
+      "actionIds": [
+        55
+      ],
+      "conditionActionIds": [
+        110
+      ],
+      "UID": "63344b4c-3664-4c88-a057-f94a17d813e7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FuryCutter03",
+    "Skill_FuryCutter03_End",
+    "Hit_H"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Blunt_Big",
+    "Eff_Parmon_10032_Skill_Boss_ShadowCutter_03X3",
+    "Eff_Parmon_10032_Skill_ShadowCutter_Start1",
+    "Eff_Parmon_10222_Skill_Backstab_Disappear1",
+    "Eff_Parmon_10032_Skill_ShadowCutter_Block_Loop",
+    "Eff_Parmon_10032_Skill_ShadowCutter_BlockSuc"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 60,
+  "searchTargetRangeUp": 5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 11200316
+}

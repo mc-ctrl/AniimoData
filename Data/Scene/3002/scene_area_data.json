@@ -1,0 +1,1238 @@
+{
+  "59672249": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 59672249,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "CallFriend"
+          ],
+          [
+            "DisableModule",
+            "PetList"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST2"
+          ],
+          [
+            "ConflictState",
+            "GLIDE_DISABLE_ST"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST"
+          ],
+          [
+            "DisableModule",
+            "BallAndItem"
+          ]
+        ],
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            3
+          ]
+        ]
+      }
+    ],
+    "height": 26.49,
+    "radius": 80,
+    "sandboxId": 53904009,
+    "position": [
+      -1722.36,
+      88.6,
+      538.59
+    ],
+    "pointType": 1,
+    "name": "封禁呼朋引伴、宠物列表、攀爬、滑翔"
+  },
+  "60634036": {
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 60634036,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Dash"
+          ]
+        ],
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            3
+          ],
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            4
+          ]
+        ]
+      }
+    ],
+    "height": 29.95,
+    "radius": 80,
+    "sandboxId": 53904009,
+    "position": [
+      -1722.36,
+      88.6,
+      538.59
+    ],
+    "pointType": 1,
+    "name": "封禁冲刺"
+  },
+  "62943133": {
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "id": 62943133,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "CallFriend"
+          ],
+          [
+            "ConflictState",
+            "INFO_DISABLE_ST"
+          ],
+          [
+            "DisableModule",
+            "Dash"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST"
+          ],
+          [
+            "DisableModule",
+            "PetLink"
+          ],
+          [
+            "ConflictState",
+            "GLIDE_DISABLE_ST"
+          ]
+        ],
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            1
+          ]
+        ]
+      }
+    ],
+    "height": 30,
+    "radius": 50,
+    "sandboxId": 53873774,
+    "position": [
+      -1634.7,
+      87.46,
+      787.6
+    ],
+    "pointType": 1,
+    "name": "封禁呼朋引伴、冲刺、联结和攀爬、滑翔"
+  },
+  "72664533": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": {},
+    "areaShapeType": 2,
+    "entityType": 0,
+    "entityTypeList": {},
+    "id": 72664533,
+    "logics": {},
+    "height": 30,
+    "sandboxId": 49394857,
+    "position": [
+      -1699.18,
+      95.26,
+      784.32
+    ],
+    "pointType": 1,
+    "name": "封禁",
+    "AreaLoadTypeNoNormal": 0
+  },
+  "72665800": {
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "id": 72665800,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "CallFriend"
+          ],
+          [
+            "ConflictState",
+            "INFO_DISABLE_ST"
+          ],
+          [
+            "DisableModule",
+            "Dash"
+          ],
+          [
+            "ConflictState",
+            "CROUCH_DISABLE_ST"
+          ],
+          [
+            "DisableModule",
+            "PetLink"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST"
+          ],
+          [
+            "ConflictState",
+            "GLIDE_DISABLE_ST"
+          ]
+        ],
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            2
+          ]
+        ]
+      }
+    ],
+    "height": 90,
+    "radius": 150,
+    "sandboxId": 49394857,
+    "position": [
+      -1724.9,
+      65.94,
+      744.9
+    ],
+    "pointType": 1,
+    "name": "封禁呼朋引伴、冲刺、联结、攀爬、滑翔"
+  },
+  "82737571": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 82737571,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            3
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Dash"
+          ],
+          [
+            "DisableModule",
+            "PetLink"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 29.95,
+    "radius": 60,
+    "sandboxId": 76958764,
+    "position": [
+      -1630.98,
+      88.6,
+      661.8
+    ],
+    "pointType": 1,
+    "name": "封禁冲刺"
+  },
+  "82737572": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 82737572,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            3
+          ],
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            2
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "CallFriend"
+          ],
+          [
+            "DisableModule",
+            "PetList"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST2"
+          ],
+          [
+            "ConflictState",
+            "GLIDE_DISABLE_ST"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 26.49,
+    "radius": 60,
+    "sandboxId": 76958764,
+    "position": [
+      -1630.98,
+      88.6,
+      661.8
+    ],
+    "pointType": 1,
+    "name": "封禁呼朋引伴、宠物列表、攀爬、滑翔"
+  },
+  "84510948": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "sandboxId": 53904009,
+    "areaShapeType": 0,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 84510948,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            3
+          ],
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "PetLink"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 29.95,
+    "radius": 80,
+    "position": [
+      -1722.36,
+      88.6,
+      538.59
+    ],
+    "pointType": 1,
+    "name": "封禁联结",
+    "AreaLoadTypeNoNormal": 0
+  },
+  "90876662": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90876662,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "radius": 60,
+    "sandboxId": 53873774,
+    "position": [
+      -1639.12,
+      87.46,
+      788.04
+    ],
+    "pointType": 1,
+    "name": "封禁技能"
+  },
+  "90876677": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90876677,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "radius": 100,
+    "sandboxId": 55680217,
+    "position": [
+      -1737.27,
+      87.46,
+      739.99
+    ],
+    "pointType": 1,
+    "name": "封禁技能"
+  },
+  "90876688": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90876688,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "radius": 80,
+    "sandboxId": 53904009,
+    "position": [
+      -1722.36,
+      88.6,
+      538.59
+    ],
+    "pointType": 1,
+    "name": "封禁技能"
+  },
+  "90876698": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 90876698,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "radius": 60,
+    "sandboxId": 76958764,
+    "position": [
+      -1630.98,
+      88.6,
+      661.8
+    ],
+    "pointType": 1,
+    "name": "封禁普攻和技能"
+  },
+  "91002869": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 91002869,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            3
+          ],
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            2
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "CallFriend"
+          ],
+          [
+            "DisableModule",
+            "PetList"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST2"
+          ],
+          [
+            "ConflictState",
+            "GLIDE_DISABLE_ST"
+          ],
+          [
+            "ConflictState",
+            "CLIMB_DISABLE_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 26.49,
+    "radius": 60,
+    "sandboxId": 76958764,
+    "position": [
+      -1724.88,
+      88.6,
+      644.3
+    ],
+    "pointType": 1,
+    "name": "封禁呼朋引伴、宠物列表、攀爬、滑翔"
+  },
+  "91002870": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 91002870,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            3
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Dash"
+          ],
+          [
+            "DisableModule",
+            "PetLink"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 29.95,
+    "radius": 60,
+    "sandboxId": 76958764,
+    "position": [
+      -1724.88,
+      88.6,
+      644.3
+    ],
+    "pointType": 1,
+    "name": "封禁冲刺"
+  },
+  "56390111": {
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "id": 56390111,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "NormalAttack"
+          ],
+          [
+            "DisableModule",
+            "Skill"
+          ]
+        ],
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            2
+          ]
+        ]
+      }
+    ],
+    "height": 30,
+    "radius": 50,
+    "sandboxId": 53873774,
+    "position": [
+      -1634.7,
+      87.46,
+      787.6
+    ],
+    "pointType": 1,
+    "name": "封禁普攻和技能"
+  },
+  "91067533": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 91067533,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "radius": 60,
+    "sandboxId": 55680217,
+    "position": [
+      -1632.59,
+      90.59,
+      820.43
+    ],
+    "pointType": 1,
+    "name": "封禁技能"
+  },
+  "56748991": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -1740.78,
+      609.49,
+      -1751.13,
+      606.18,
+      -1773.34,
+      615.9,
+      -1767.8,
+      637.76,
+      -1764.02,
+      715.27,
+      -1735.71,
+      661.41,
+      -1715.89,
+      621.27,
+      -1712.98,
+      592.08
+    ],
+    "areaShapeType": 2,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 56748991,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "AuxEnvState",
+            "Wishytar_Boss_Cave"
+          ],
+          [
+            "ConflictState",
+            "INFO_DISABLE_ST"
+          ]
+        ],
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            3
+          ],
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ]
+        ]
+      }
+    ],
+    "height": 21.81,
+    "sandboxId": 56634608,
+    "position": [
+      -1745.82,
+      84.25,
+      642.07
+    ],
+    "pointType": 1,
+    "name": "区域_56748991"
+  },
+  "91002871": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 91002871,
+    "logics": [
+      {
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            1
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "radius": 60,
+    "sandboxId": 76958764,
+    "position": [
+      -1724.88,
+      88.6,
+      644.3
+    ],
+    "pointType": 1,
+    "name": "封禁普攻和技能"
+  },
+  "56924812": {
+    "name": "区域_56924812",
+    "areaPoints": [
+      -1777.05,
+      705.81,
+      -1740.51,
+      729.54,
+      -1730.01,
+      692.71
+    ],
+    "areaShapeType": 2,
+    "entityType": 31,
+    "entityTypeList": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "id": 56924812,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "AuxEnvState",
+            "Wishytar_Boss_Cave"
+          ],
+          [
+            "ConflictState",
+            "INFO_DISABLE_ST"
+          ]
+        ],
+        "condition": [
+          "Or",
+          [
+            "CheckActorType",
+            4
+          ],
+          [
+            "CheckActorType",
+            10
+          ],
+          [
+            "CheckActorType",
+            1
+          ],
+          [
+            "CheckActorType",
+            2
+          ],
+          [
+            "CheckActorType",
+            3
+          ]
+        ]
+      }
+    ],
+    "height": 13.91,
+    "sandboxId": 56634608,
+    "position": [
+      -1737.61,
+      79.8,
+      715.8
+    ],
+    "pointType": 1
+  }
+}

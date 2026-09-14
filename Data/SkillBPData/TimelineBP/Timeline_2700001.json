@@ -1,0 +1,216 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.05
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 5000,
+        "useCasterMainElement": true
+      },
+      "UID": "da80f0e1-00fe-4e3a-8f9b-31cbf5501d1f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "74e744d4-bece-48e2-b81e-ec982287a444",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "04606e2a-206b-4f7f-9cd4-0128131f8174",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_SelfDestruct_02_",
+        "name": "constString",
+        "UID": "66a5b734-1c72-40c8-b443-5b109ec2247b",
+        "NodeID": 23,
+        "concatenateNumber": {
+          "UID": "921db011-1628-4723-81a1-79fcf684fce3",
+          "target": "MASTER",
+          "name": "getMainElementName",
+          "NodeID": 22
+        }
+      },
+      "speed": 1,
+      "NodeID": 24
+    },
+    "6": {
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 6,
+      "UID": "19b44955-5f80-439a-b78b-e39104090cdc"
+    },
+    "15": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.33
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 5000,
+        "useCasterMainElement": true
+      },
+      "UID": "4b4a3ba4-fb0d-459c-8b94-f9f66eabb9b4",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.15,
+      "NodeID": 25,
+      "UID": "bd5ec5a6-7ff7-40f1-8e51-777e5867da94"
+    },
+    "26": {
+      "UID": "35c55c61-552d-4abc-90de-1b61f5b3f6cf",
+      "target": "MASTER",
+      "name": "getMainElementName",
+      "NodeID": 26
+    },
+    "28": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba71b60b-e910-475a-b347-20d96cdc83cd",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_SelfDestruct_03_",
+        "name": "constString",
+        "UID": "93d61ee0-14c1-4c84-be09-a5ae877e564e",
+        "NodeID": 27,
+        "concatenateNumber": {
+          "UID": "35c55c61-552d-4abc-90de-1b61f5b3f6cf",
+          "target": "MASTER",
+          "name": "getMainElementName",
+          "NodeID": 26
+        }
+      },
+      "speed": 1,
+      "NodeID": 28
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.15,
+      "NodeID": 30,
+      "UID": "d769563a-8e66-4b59-a0cd-92dbca4d971e"
+    },
+    "31": {
+      "cameraShakeId": 21134,
+      "name": "playCameraImpulseById",
+      "UID": "4ba78b9a-8d81-4c97-a77a-a18a97781a27",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "5": {
+      "calcResultNodeId": 3,
+      "name": "actOnTargets",
+      "UID": "d4b9d0d5-4f4b-4d44-ada2-a966eba456bf",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            2,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 4,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        4
+      ],
+      "isScaleWithModel": false,
+      "impulseId": 5000,
+      "NodeID": 5
+    },
+    "13": {
+      "name": "isActorType",
+      "UID": "041224d0-ed4a-45c5-b43a-88adc4c11e0d",
+      "target": "TARGET",
+      "NodeID": 13,
+      "actorType": 2
+    },
+    "22": {
+      "UID": "921db011-1628-4723-81a1-79fcf684fce3",
+      "target": "MASTER",
+      "name": "getMainElementName",
+      "NodeID": 22
+    }
+  },
+  "BPName": "timeline_2700001",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    6,
+    25,
+    30
+  ],
+  "layer": "Base",
+  "length": 5
+}

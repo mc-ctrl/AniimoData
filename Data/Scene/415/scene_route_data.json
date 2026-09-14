@@ -1,0 +1,553 @@
+{
+  "81536162": {
+    "id": 81536162,
+    "wayPoints": [
+      {
+        "yaw": 328.86,
+        "position": [
+          -310.54,
+          0.1,
+          17.23
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_JumpToGlide",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 0.2,
+                  "name": "jumpTime"
+                },
+                {
+                  "realValue": 0.3,
+                  "name": "glideStartTime"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 340.29,
+        "ignoreRotation": true,
+        "position": [
+          -311.68,
+          0.1,
+          19.17
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_Node_Com_WaitUntilReachHeight",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 4,
+                  "name": "tHeight"
+                }
+              ]
+            }
+          ]
+        },
+        "ignoreRotation": true,
+        "position": [
+          -312.38,
+          0.1,
+          21.67
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_StopGliding"
+            }
+          ]
+        },
+        "ignoreRotation": true,
+        "position": [
+          -308.68,
+          0.1,
+          27.28
+        ]
+      }
+    ],
+    "pos": [
+      -310.54,
+      0.1,
+      17.23
+    ],
+    "quaternion": [
+      0,
+      -0.25,
+      0,
+      0.97
+    ],
+    "sandboxId": 77194683
+  },
+  "76706065": {
+    "id": 76706065,
+    "wayPoints": [
+      {
+        "useOnlinePathFinding": true,
+        "position": [
+          -269.25,
+          0.1,
+          17.84
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "useOnlinePathFinding": true,
+        "position": [
+          -257.06,
+          0.1,
+          17.06
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "useOnlinePathFinding": true,
+        "position": [
+          -257.06,
+          0.1,
+          27.51
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "useOnlinePathFinding": true,
+        "position": [
+          -269.13,
+          0.1,
+          27.51
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -269.26,
+      0.1,
+      17.82
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76700580
+  },
+  "76706066": {
+    "id": 76706066,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -269.29,
+          0.1,
+          15.33
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -257.06,
+          0.1,
+          16.56
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -257.06,
+          0.1,
+          27.56
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -269.19,
+          0.1,
+          27.56
+        ]
+      }
+    ],
+    "pos": [
+      -269.26,
+      0.1,
+      15.33
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76700580
+  },
+  "76779111": {
+    "id": 76779111,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310000,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310001,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310002,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310003,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_CustomLoopAnimation",
+              "_loopStateName": "Behav_Happy",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": "Behav_HappyStart",
+                  "name": "tAnimationStartKey"
+                },
+                {
+                  "realValue": "Behav_HappyLoop",
+                  "name": "tAnimationLoopKey"
+                },
+                {
+                  "realValue": "Behav_HappyEnd",
+                  "name": "tAnimationEndKey"
+                },
+                {
+                  "realValue": true,
+                  "name": "tAnimationPlayOnce"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 90,
+        "position": [
+          -291.85,
+          0.1,
+          21.76
+        ]
+      }
+    ],
+    "pos": [
+      -291.85,
+      0.1,
+      21.76
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76778205
+  },
+  "76954306": {
+    "id": 76954306,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310000,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310001,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_CustomLoopAnimation",
+              "_loopStateName": "Behav_Doubt",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Think",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": "Behav_DoubtStart",
+                  "name": "tAnimationStartKey"
+                },
+                {
+                  "realValue": "Behav_DoubtLoop",
+                  "name": "tAnimationLoopKey"
+                },
+                {
+                  "realValue": "Behav_DoubtEnd",
+                  "name": "tAnimationEndKey"
+                },
+                {
+                  "realValue": true,
+                  "name": "tAnimationPlayOnce"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310001,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_CustomLoopAnimation",
+              "_loopStateName": "Behav_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Cry",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": "Behav_CryStart",
+                  "name": "tAnimationStartKey"
+                },
+                {
+                  "realValue": "Behav_CryLoop",
+                  "name": "tAnimationLoopKey"
+                },
+                {
+                  "realValue": "Behav_CryEnd",
+                  "name": "tAnimationEndKey"
+                },
+                {
+                  "realValue": true,
+                  "name": "tAnimationPlayOnce"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 90,
+        "position": [
+          -291.85,
+          0.1,
+          18.45
+        ]
+      }
+    ],
+    "pos": [
+      -291.85,
+      0.1,
+      18.45
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76778205
+  },
+  "76954307": {
+    "id": 76954307,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310000,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 14310003,
+                  "name": "tSkillId"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "AI_IdleSpecial01",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Proud",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": true,
+                  "name": "tAnimationPlayOnce"
+                },
+                {
+                  "realValue": true,
+                  "name": "tEmojiBubbleMustPlayFull"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 90,
+        "position": [
+          -291.85,
+          0.1,
+          25.3
+        ]
+      }
+    ],
+    "pos": [
+      -291.85,
+      0.1,
+      25.3
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76778205
+  },
+  "77352760": {
+    "id": 77352760,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_JumpToGlide",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 0.2,
+                  "name": "jumpTime"
+                },
+                {
+                  "realValue": 0.3,
+                  "name": "glideStartTime"
+                },
+                {
+                  "realValue": true,
+                  "name": "IsVerticalJump"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 31.26,
+        "position": [
+          -312.81,
+          0.1,
+          21.89
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_Node_Com_WaitUntilReachHeight",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 5,
+                  "name": "tHeight"
+                }
+              ]
+            }
+          ]
+        },
+        "ignoreRotation": true,
+        "position": [
+          -312.81,
+          4.85,
+          21.89
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_StopGliding"
+            }
+          ]
+        },
+        "inexecutionAction": true,
+        "ignoreRotation": true,
+        "position": [
+          -312.81,
+          0,
+          46.93
+        ]
+      }
+    ],
+    "pos": [
+      -312.81,
+      0.1,
+      21.89
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 77194683
+  }
+}

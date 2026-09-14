@@ -1,0 +1,103 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50023",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "name": "calcResult",
+      "UID": "c1566b9d-72ce-42b3-8bdb-603346df9f7a",
+      "target": "OWNER",
+      "NodeID": 4,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 50023
+      }
+    },
+    "6": {
+      "actionIds": [
+        13,
+        15,
+        4
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "7ca5a9a9-2c27-41da-8da3-fa004e9ed739",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "15": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15,
+      "UID": "e6edc4f1-4447-4883-bbea-a2085e4412e5",
+      "name": "addTimer"
+    },
+    "7": {
+      "thresholdActionIds": [
+        6
+      ],
+      "failedActionIds": [
+        16
+      ],
+      "threshold": 1,
+      "UID": "02f360e4-bb8d-49ea-94a2-d78a7830a2c1",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "normalGrass",
+      "NodeID": 7,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "d75a4160-12af-4f46-a372-3440e3b949b3",
+      "effectId": "Eff_Parmon_10043_Heal_Arrow",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "18": {
+      "UID": "eee37e86-8aad-4152-9181-236b323adaa1",
+      "target": "OWNER",
+      "name": "isTargetActiveForBattle",
+      "NodeID": 18
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "62cd95a9-07ab-4e7e-af82-b8fc2afd11e5",
+      "effectId": "Eff_Parmon_10043_Heal_Arrow",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "b4526686-60a8-47e7-8189-9a907f94ffdf",
+      "effectId": "Eff_Parmon_10043_Heal_Arrow",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "12": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "507e6785-b717-42d6-920e-d1251ae1b61a",
+      "name": "buffStartThink",
+      "NodeID": 12
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    12
+  ]
+}

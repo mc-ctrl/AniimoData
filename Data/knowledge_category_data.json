@@ -1,0 +1,162 @@
+{
+  "5005": {
+    "listGroupId": [
+      1005
+    ],
+    "mainTypeId": 3,
+    "subTypeName": 1995594657,
+    "sort": 5
+  },
+  "5006": {
+    "listGroupId": [
+      1006
+    ],
+    "mainTypeId": 3,
+    "subTypeName": 1453289077,
+    "sort": 6
+  },
+  "5007": {
+    "listGroupId": [
+      1007
+    ],
+    "mainTypeId": 3,
+    "subTypeName": 1286086980,
+    "sort": 7
+  },
+  "5008": {
+    "listGroupId": [
+      1008
+    ],
+    "mainTypeId": 3,
+    "subTypeName": 1123056394,
+    "sort": 8
+  },
+  "5009": {
+    "listGroupId": [
+      1009
+    ],
+    "mainTypeId": 3,
+    "subTypeName": 1492565855,
+    "sort": 9
+  },
+  "5010": {
+    "listGroupId": [
+      1010
+    ],
+    "mainTypeId": 3,
+    "subTypeName": 1810968937,
+    "sort": 10
+  },
+  "5014": {
+    "listGroupId": [
+      1014
+    ],
+    "mainTypeId": 2,
+    "subTypeName": 1494830842,
+    "sort": 14
+  },
+  "5003": {
+    "listGroupId": [
+      1003
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 1693038518,
+    "sort": 3
+  },
+  "5004": {
+    "listGroupId": [
+      1004
+    ],
+    "mainTypeId": 3,
+    "subTypeName": 1376008158,
+    "sort": 4
+  },
+  "5017": {
+    "listGroupId": [
+      1017
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 1287962023,
+    "sort": 17
+  },
+  "5012": {
+    "listGroupId": [
+      1012
+    ],
+    "mainTypeId": 2,
+    "subTypeName": 2053662463,
+    "sort": 12
+  },
+  "5018": {
+    "listGroupId": [
+      1018
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 1711380113,
+    "sort": 18
+  },
+  "5011": {
+    "listGroupId": [
+      1011
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 2083768043,
+    "sort": 11
+  },
+  "5020": {
+    "listGroupId": [
+      1020
+    ],
+    "mainTypeId": 2,
+    "subTypeName": 1509768599,
+    "sort": 20
+  },
+  "5021": {
+    "listGroupId": [
+      1021
+    ],
+    "mainTypeId": 2,
+    "subTypeName": 2082661198,
+    "sort": 21
+  },
+  "5019": {
+    "listGroupId": [
+      1019
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 1927532129,
+    "sort": 19
+  },
+  "5002": {
+    "listGroupId": [
+      1002
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 1114985528,
+    "sort": 2
+  },
+  "5016": {
+    "listGroupId": [
+      1016
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 1949226822,
+    "sort": 16
+  },
+  "5015": {
+    "listGroupId": [
+      1015
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 2082090205,
+    "sort": 15
+  },
+  "5013": {
+    "listGroupId": [
+      1013
+    ],
+    "mainTypeId": 1,
+    "subTypeName": 1320863134,
+    "sort": 13
+  }
+}

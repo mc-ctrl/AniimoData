@@ -1,0 +1,84 @@
+{
+  "BPName": "ability_10320311",
+  "NodeID": 1,
+  "UID": "9e77d25c-26dc-4eff-bec3-528952807bd7",
+  "abilityParamId": 11200311,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10320311001,
+      "name": "setCombatActionTimeline",
+      "UID": "7391c4ec-6d24-4bd1-8fd2-85fd9400cfc5",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "aeb6c114-aeac-4970-a247-5fc6d9e1f3fc",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        55
+      ],
+      "NodeID": 9
+    },
+    "46": {
+      "buffId": 2103216,
+      "name": "hasBuff",
+      "UID": "c8da2bb8-7b2b-4437-8fb4-f3efb89819b7",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "55": {
+      "timelineId": 10320311002,
+      "name": "setCombatActionTimeline",
+      "UID": "4b99db64-5c0c-4252-880b-250980c9071b",
+      "target": "CASTER",
+      "NodeID": 55
+    },
+    "47": {
+      "UID": "33e471db-76f6-4345-a8d9-2d9e98137882",
+      "conditionIds": [
+        46,
+        48
+      ],
+      "name": "conditionOr",
+      "NodeID": 47
+    },
+    "48": {
+      "buffId": 2103217,
+      "name": "hasBuff",
+      "UID": "b0c35169-955f-441e-bc28-3c8cd63aa8ae",
+      "target": "OWNER",
+      "NodeID": 48
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Dash",
+    "Hit_H"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10032_Skill_Dash_Hit",
+    "Eff_Parmon_10032_Skill_Dash_Shadow",
+    "Eff_Parmon_10032_Skill_ShadowCutter_BlockSuc",
+    "Eff_Parmon_10032_Skill_ShadowCutter_Block_Loop",
+    "Eff_Skill_Common_Warning_10032Boss"
+  ],
+  "searchRelation": 2,
+  "name": "高速突袭",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

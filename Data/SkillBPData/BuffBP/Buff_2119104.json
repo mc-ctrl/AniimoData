@@ -1,0 +1,85 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119104",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "4bea96fb-a488-4642-aa35-85626c91b82d",
+      "name": "destroyEntity",
+      "forceDeleteNotCombatEntity": true,
+      "NodeID": 8
+    },
+    "4": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cf410420-8e87-4e32-b1e1-0a69bd6200ad",
+      "target": "OWNER",
+      "NodeID": 4,
+      "animId": "StunLoop"
+    },
+    "13": {
+      "buffId": 2119104,
+      "name": "removeBuff",
+      "UID": "6577fdf0-0907-4349-8cff-eec1311beef6",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "key": "playanimation",
+      "duration": 1.17,
+      "actionIds": [
+        4,
+        7
+      ],
+      "NodeID": 6,
+      "UID": "abbaf55f-fc2e-4b72-95bf-ac0df60fd78d",
+      "name": "addTimer"
+    },
+    "10": {
+      "key": "destroy2119104",
+      "duration": 1,
+      "actionIds": [
+        8,
+        13
+      ],
+      "NodeID": 10,
+      "UID": "b2d875c4-077f-4748-8748-baaf211f0463",
+      "name": "addTimer"
+    },
+    "11": {
+      "UID": "051b1d19-ed52-45aa-9f86-a6272c0297f5",
+      "name": "stopAnimation",
+      "anim": "Skill_Roll_Loop",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9c0e2c03-5b0d-4116-92d7-a94625f1e4f9",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0b52f8a1-79c5-443f-8bfa-2fa18cbe3dd7",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "StunStart"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    2,
+    6,
+    10
+  ]
+}

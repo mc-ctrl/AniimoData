@@ -1,0 +1,278 @@
+{
+  "8001": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        1,
+        280
+      ],
+      [
+        1103,
+        8
+      ],
+      [
+        700034,
+        300
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift13_Large.png",
+    "giftPackName": 1452232293,
+    "giftPackType": 1
+  },
+  "8002": {
+    "selectItems": [
+      [
+        [
+          1,
+          300
+        ],
+        [
+          151004,
+          10
+        ],
+        [
+          111002,
+          6
+        ],
+        [
+          2,
+          600000
+        ]
+      ],
+      [
+        [
+          1,
+          300
+        ],
+        [
+          151004,
+          10
+        ],
+        [
+          110003,
+          2
+        ],
+        [
+          1103,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          300
+        ],
+        [
+          151003,
+          2
+        ],
+        [
+          510102,
+          2
+        ],
+        [
+          110908,
+          300
+        ]
+      ]
+    ],
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        110006,
+        1
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift12_Large.png",
+    "giftPackName": 1167741118,
+    "giftPackType": 2
+  },
+  "8014": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        1601006,
+        10
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift23_Large.png",
+    "giftPackName": 1242449791,
+    "giftPackType": 1
+  },
+  "8013": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        1601006,
+        1
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift11_Large.png",
+    "giftPackName": 1473419776,
+    "giftPackType": 1
+  },
+  "8003": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        510102,
+        10
+      ],
+      [
+        151000,
+        1
+      ],
+      [
+        510002,
+        10
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift14_Large.png",
+    "giftPackName": 2126442184,
+    "giftPackType": 1
+  },
+  "8012": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        1601006,
+        1
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift23_Large.png",
+    "giftPackName": 1596714408,
+    "giftPackType": 1
+  },
+  "8011": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        1103,
+        10
+      ],
+      [
+        111002,
+        20
+      ],
+      [
+        2,
+        150000
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift19_Large.png",
+    "giftPackName": 1905985968,
+    "giftPackType": 1
+  },
+  "8004": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        110006,
+        3
+      ],
+      [
+        110003,
+        5
+      ],
+      [
+        700034,
+        400
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift15_Large.png",
+    "giftPackName": 1849379488,
+    "giftPackType": 1
+  },
+  "8008": {
+    "limitType": 1,
+    "limitItems": [
+      140023
+    ],
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        140023,
+        1
+      ],
+      [
+        590010,
+        1
+      ],
+      [
+        110006,
+        2
+      ],
+      [
+        990005,
+        2
+      ],
+      [
+        151000,
+        1
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift10_Large.png",
+    "giftPackName": 1925727309,
+    "giftPackType": 1
+  },
+  "8009": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        1,
+        120
+      ],
+      [
+        700034,
+        120
+      ],
+      [
+        1103,
+        2
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift22_Large.png",
+    "giftPackName": 1455796842,
+    "giftPackType": 1
+  },
+  "8010": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        990005,
+        1
+      ],
+      [
+        110908,
+        200
+      ],
+      [
+        2,
+        300000
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift18_Large.png",
+    "giftPackName": 1514931782,
+    "giftPackType": 1
+  },
+  "8005": {
+    "giftQuality": 3,
+    "FixItems": [
+      [
+        590010,
+        1
+      ],
+      [
+        152100,
+        1
+      ],
+      [
+        510102,
+        10
+      ]
+    ],
+    "giftPackIcon": "$UI_Icon_GiftPack_Gift16_Large.png",
+    "giftPackName": 1740675052,
+    "giftPackType": 1
+  }
+}

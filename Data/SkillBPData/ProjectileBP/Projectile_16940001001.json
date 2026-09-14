@@ -1,0 +1,65 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_16940001",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10694_Attack_Bullet",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "34": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 16940001,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "2514a5f6-3c7c-4bff-b014-0fa0d9065b45",
+      "target": "TARGET",
+      "NodeID": 34,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      }
+    },
+    "28": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4ccbb752-8970-450e-9edc-e40c0f707fbb",
+      "effectId": "Eff_Hit_Water_Blunt_Big",
+      "speed": 1,
+      "NodeID": 28
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 40,
+  "onProjectileFinishIds": [
+    28
+  ],
+  "onProjectileHitIds": [
+    34
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "calcResultNodeId": 34,
+  "tickInterval": 0,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "duration": 1,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

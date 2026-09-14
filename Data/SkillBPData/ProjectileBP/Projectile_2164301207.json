@@ -1,0 +1,63 @@
+{
+  "allowHitCaster": false,
+  "angularIncreaseDuration": 1.5,
+  "BPName": "timeline_2164301",
+  "NodeID": 0,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10643_Skill_Note_Bullet01",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxAngularOffset": 1000,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 15,
+  "minAngularOffset": 30,
+  "moveSpeed": 11,
+  "nodeMap": {
+    "56": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2164301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "6989a286-177c-4339-bab6-004009caab3d",
+      "target": "TARGET",
+      "NodeID": 56,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 21104,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10643_Skill_Note_Hit01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2000
+      }
+    }
+  },
+  "onProjectileHitIds": [
+    56
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.2,
+  "calcResultNodeId": 56,
+  "startSleepTime": 0,
+  "duration": 15,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 2
+}

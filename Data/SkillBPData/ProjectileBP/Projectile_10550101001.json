@@ -1,0 +1,183 @@
+{
+  "allowHitCaster": true,
+  "duration": 2,
+  "BPName": "ability_10550101",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Bullet_Liuli",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "62": {
+      "key": "2105510",
+      "name": "setCacheVal",
+      "UID": "a042b344-804e-4bc8-a0cd-3690d4be7371",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 62
+    },
+    "38": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 36,
+      "NodeID": 38,
+      "UID": "1e1992aa-4289-43ea-b588-9fe38f69a5a7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.7,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        36,
+        48
+      ]
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c4a47b12-28f7-4f7e-908e-1cf837ef4af6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost03",
+      "NodeID": 55
+    },
+    "63": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "ba752949-25ee-4a9d-8a39-015d8bbd2798",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Explode01_Liuli",
+      "speed": 1,
+      "NodeID": 63
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3b2cb81e-5144-4712-97f5-fbba4b5e1c5b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost02",
+      "NodeID": 56
+    },
+    "47": {
+      "calcId": 10550101,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 47,
+      "UID": "8a75bb76-8924-4c7e-a62b-6e36c9e9f265",
+      "name": "getParamByLuaConfig"
+    },
+    "48": {
+      "target": "TARGET",
+      "duration": {
+        "calcId": 10550101,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 47,
+        "UID": "8a75bb76-8924-4c7e-a62b-6e36c9e9f265",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 2105501,
+      "NodeID": 48,
+      "UID": "a01c8a2c-03b6-4288-9e22-738146b3ef47",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "60": {
+      "name": "stopSoundStr",
+      "UID": "aa9615ca-709a-4f04-bae7-f015d5186666",
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost02",
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "36": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10550101,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "ae7e6a45-ad6f-4d13-9566-48ba503862be",
+      "target": "TARGET",
+      "NodeID": 36,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2001,
+        "attackRotateMode": "CasterPos",
+        "elementType": 12,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102
+      }
+    }
+  },
+  "reboundData": {
+    "isReboundSelf": true,
+    "prioritizeLockTarget": true,
+    "reboundRelation": 2,
+    "maxCount": {
+      "rValue": 6,
+      "name": "add",
+      "UID": "98a29949-2c08-492b-88e6-4d8cf9e95103",
+      "NodeID": 87,
+      "lValue": {
+        "rValue": 2,
+        "name": "multiply",
+        "UID": "7dd8b03a-7308-4a49-9983-980a4da49b08",
+        "NodeID": 86,
+        "lValue": {
+          "key": "2105510",
+          "name": "getCacheVal",
+          "UID": "18d0c319-b3cb-4320-8159-13b46e3c723e",
+          "target": "OWNER",
+          "NodeID": 85
+        }
+      }
+    },
+    "searchRadius": 10
+  },
+  "moveSpeed": 14,
+  "onProjectileFinishIds": [
+    60,
+    62
+  ],
+  "onProjectileHitIds": [
+    38,
+    55,
+    63
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "calcResultNodeId": 36,
+  "tickInterval": 0.5,
+  "onProjectileStartIds": [
+    56
+  ],
+  "startSleepTime": 0,
+  "maxHitNum": 999,
+  "defaultHitSoundType": "h",
+  "impulseId": 2001,
+  "acceleration": 0
+}

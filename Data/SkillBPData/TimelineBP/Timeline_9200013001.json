@@ -1,0 +1,129 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "9a8fcf5d-61ab-419d-9e4e-1bfa55880cd8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.42,
+      "NodeID": 10,
+      "UID": "5df61877-c864-4a50-bc28-79ba8b78b215"
+    },
+    "15": {
+      "UID": "071575ee-007c-4210-8afc-2adf9dbebf73",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "16": {
+      "UID": "b35abe05-9b0d-4254-a942-56f9c3e82766",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "eventName": "Msg_EnemyBreak_Exit",
+      "name": "sendAIMsg",
+      "UID": "b85cb4b3-20ef-4363-bb4c-2ed6be03fc4e",
+      "target": "CURPET",
+      "NodeID": 27
+    },
+    "9": {
+      "UID": "7ce0014a-02a5-4963-8ec4-12a6f67f4acc",
+      "name": "setMask",
+      "mask": {
+        "inCast": 0
+      },
+      "NodeID": 9
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          27,
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.22,
+      "NodeID": 23,
+      "UID": "8c3f6ffa-99f7-4f31-9321-abe795b550ae"
+    },
+    "21": {
+      "rotation": "ToTarget",
+      "offsetXYZ": [
+        0,
+        1.2,
+        0.1
+      ],
+      "templateId": 9200013001,
+      "name": "createProjectile",
+      "UID": "c968aaaa-399b-45d0-937d-781d5ad62dbd",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 21
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "15c01350-4e87-4a33-b9c3-5dfd4541d461",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Attack01"
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 13,
+      "UID": "e8ed3add-286b-43db-9848-7dab6b9258e0"
+    },
+    "12": {
+      "UID": "b6356b08-9927-4696-a834-794bd755d7e5",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_9200013",
+  "NodeID": 6,
+  "UID": "720b4bda-a46c-4272-9dc4-75429e5b53fc",
+  "eventIds": [
+    4,
+    10,
+    13,
+    23,
+    16
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

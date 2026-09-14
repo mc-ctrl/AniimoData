@@ -1,0 +1,23 @@
+{
+  "steps": [
+    {
+      "delay": 0,
+      "params": {
+        "excludeFuncTypes": "{10410}",
+        "uid": 0
+      },
+      "mid": "unlockAllMapData",
+      "name": "解锁当前地图浓雾+薄雾，解锁所有标记(永"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "superHandbook": 1,
+        "uid": 0
+      },
+      "mid": "superPlayer",
+      "name": "设定顶配玩家"
+    }
+  ],
+  "name": "顶级玩家解锁地图系统"
+}

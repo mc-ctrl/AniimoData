@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_11870000",
+  "NodeID": 1,
+  "UID": "73fa7522-2017-4a7a-baeb-5ab32b013db6",
+  "abilityParamId": 19700000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11870000001,
+      "name": "setCombatActionTimeline",
+      "UID": "7dd3efe0-86b9-4f89-a63b-64ae0532e691",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10187_Attack01",
+    "Eff_Hit_Wind_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "subAbilityIds": [
+    11870001,
+    11870002
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 3
+}

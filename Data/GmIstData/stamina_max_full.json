@@ -1,0 +1,37 @@
+{
+  "steps": [
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000006
+      },
+      "mid": "addGmEntry",
+      "name": "添加2000006词条"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000007
+      },
+      "mid": "addGmEntry",
+      "name": "添加2000007词条"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000008
+      },
+      "mid": "addGmEntry",
+      "name": "添加2000008词条"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000003
+      },
+      "mid": "addGmEntry",
+      "name": "添加2000003词条"
+    }
+  ],
+  "name": "体力上限拉满"
+}

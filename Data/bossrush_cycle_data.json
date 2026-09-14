@@ -1,0 +1,436 @@
+{
+  "1000": {
+    "begDayTime": {
+      "3": 1769673600,
+      "4": 1769630400,
+      "1": 1769630400,
+      "2": 1769659200
+    },
+    "endDayTime": {
+      "3": 1770278399,
+      "4": 1770235199,
+      "1": 1770235199,
+      "2": 1770263999
+    },
+    "generalBuffRef": [
+      204,
+      201,
+      202,
+      203
+    ],
+    "specialBuffRef": [
+      101,
+      102,
+      104,
+      105
+    ],
+    "bossLeft": 1016301,
+    "bossLv": 60,
+    "bossMid": 1028501,
+    "bossRight": 1018701,
+    "envBuffRefLeft": 401,
+    "envBuffRefMid": 405,
+    "envBuffRefRight": 403,
+    "interactBuffRefLeft": 302,
+    "interactBuffRefMid": 303,
+    "interactBuffRefRight": 301,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 1,
+    "recommendPet": 1021300
+  },
+  "1002": {
+    "begDayTime": {
+      "3": 1770624000,
+      "4": 1770580800,
+      "1": 1770580800,
+      "2": 1770609600
+    },
+    "endDayTime": {
+      "3": 1775375999,
+      "4": 1775332799,
+      "1": 1775332799,
+      "2": 1775361599
+    },
+    "generalBuffRef": [
+      204,
+      201,
+      202,
+      203
+    ],
+    "specialBuffRef": [
+      101,
+      102,
+      104,
+      105
+    ],
+    "bossLeft": 1016301,
+    "recommendPet": 1021300,
+    "bossMid": 1028501,
+    "bossRight": 1018701,
+    "envBuffRefMid": 405,
+    "interactBuffRefLeft": 302,
+    "interactBuffRefMid": 303,
+    "interactBuffRefRight": 301,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 1,
+    "bossLv": 60
+  },
+  "3001": {
+    "begDayTime": {
+      "3": 1790841600,
+      "4": 1790798400,
+      "1": 1790798400,
+      "2": 1790827200
+    },
+    "endDayTime": {
+      "3": 1791187199,
+      "4": 1791143999,
+      "1": 1791143999,
+      "2": 1791172799
+    },
+    "specialBuffRef": [
+      109,
+      110,
+      111,
+      201,
+      203,
+      205
+    ],
+    "bossLeft": 1005301,
+    "bossLv": 60,
+    "bossMid": 1028501,
+    "bossRight": 1014301,
+    "cycleName": 2,
+    "envBuffRefLeft": 411,
+    "envBuffRefMid": 408,
+    "envBuffRefRight": 412,
+    "interactBuffRefLeft": 305,
+    "interactBuffRefMid": 304,
+    "interactBuffRefRight": 302,
+    "isRank": 1,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 3,
+    "recommendPet": 1021300
+  },
+  "3000": {
+    "begDayTime": {
+      "3": 1790236800,
+      "4": 1790193600,
+      "1": 1790193600,
+      "2": 1790222400
+    },
+    "endDayTime": {
+      "3": 1790582399,
+      "4": 1790539199,
+      "1": 1790539199,
+      "2": 1790567999
+    },
+    "specialBuffRef": [
+      109,
+      110,
+      111,
+      201,
+      203,
+      205
+    ],
+    "bossLeft": 1021202,
+    "bossLv": 60,
+    "bossMid": 1018703,
+    "bossRight": 1045401,
+    "cycleName": 1,
+    "envBuffRefLeft": 407,
+    "envBuffRefMid": 409,
+    "envBuffRefRight": 408,
+    "interactBuffRefLeft": 305,
+    "interactBuffRefMid": 304,
+    "interactBuffRefRight": 302,
+    "isRank": 1,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 3,
+    "recommendPet": 1003300
+  },
+  "2001": {
+    "begDayTime": {
+      "3": 1784793600,
+      "4": 1784750400,
+      "1": 1784145600,
+      "2": 1784779200
+    },
+    "endDayTime": {
+      "3": 1785139199,
+      "4": 1785095999,
+      "1": 1784491199,
+      "2": 1785124799
+    },
+    "specialBuffRef": [
+      109,
+      110,
+      111,
+      201,
+      203,
+      205
+    ],
+    "bossLeft": 1005301,
+    "bossLv": 60,
+    "bossMid": 1028501,
+    "bossRight": 1017401,
+    "cycleName": 2,
+    "envBuffRefLeft": 410,
+    "envBuffRefMid": 408,
+    "envBuffRefRight": 409,
+    "interactBuffRefLeft": 301,
+    "interactBuffRefMid": 305,
+    "interactBuffRefRight": 304,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 2,
+    "recommendPet": 1021300
+  },
+  "1003": {
+    "begDayTime": {
+      "3": 1775376000,
+      "4": 1775332800,
+      "1": 1775332800,
+      "2": 1775361600
+    },
+    "endDayTime": {
+      "3": 1782806399,
+      "4": 1782763199,
+      "1": 1782763199,
+      "2": 1782791999
+    },
+    "generalBuffRef": [
+      203,
+      201,
+      205,
+      206
+    ],
+    "specialBuffRef": [
+      108,
+      109,
+      110,
+      111
+    ],
+    "bossLeft": 1021202,
+    "bossLv": 60,
+    "bossMid": 1018703,
+    "bossRight": 1045401,
+    "envBuffRefLeft": 407,
+    "envBuffRefMid": 409,
+    "envBuffRefRight": 408,
+    "interactBuffRefLeft": 304,
+    "interactBuffRefMid": 305,
+    "interactBuffRefRight": 302,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 1,
+    "recommendPet": 1003300
+  },
+  "2000": {
+    "begDayTime": {
+      "3": 1784188800,
+      "4": 1784145600,
+      "1": 1783540800,
+      "2": 1784174400
+    },
+    "endDayTime": {
+      "3": 1784534399,
+      "4": 1784491199,
+      "1": 1783886399,
+      "2": 1784519999
+    },
+    "specialBuffRef": [
+      109,
+      110,
+      111,
+      201,
+      203,
+      205
+    ],
+    "bossLeft": 1021202,
+    "bossLv": 60,
+    "bossMid": 1018703,
+    "bossRight": 1045401,
+    "cycleName": 1,
+    "envBuffRefLeft": 407,
+    "envBuffRefMid": 409,
+    "envBuffRefRight": 408,
+    "interactBuffRefLeft": 304,
+    "interactBuffRefMid": 305,
+    "interactBuffRefRight": 302,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 2,
+    "recommendPet": 1003300
+  },
+  "1001": {
+    "begDayTime": {
+      "3": 1770278400,
+      "4": 1770235200,
+      "1": 1770235200,
+      "2": 1770264000
+    },
+    "endDayTime": {
+      "3": 1770623999,
+      "4": 1770580799,
+      "1": 1770580799,
+      "2": 1770609599
+    },
+    "generalBuffRef": [
+      204,
+      201,
+      202,
+      203
+    ],
+    "specialBuffRef": [
+      101,
+      104,
+      107
+    ],
+    "bossLeft": 1005301,
+    "bossLv": 60,
+    "bossMid": 1028501,
+    "bossRight": 1018702,
+    "envBuffRefLeft": 406,
+    "envBuffRefMid": 405,
+    "envBuffRefRight": 402,
+    "interactBuffRefLeft": 302,
+    "interactBuffRefMid": 303,
+    "interactBuffRefRight": 301,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 1,
+    "recommendPet": 1021300
+  },
+  "2002": {
+    "begDayTime": {
+      "3": 1785398400,
+      "4": 1785355200,
+      "1": 1784750400,
+      "2": 1785384000
+    },
+    "endDayTime": {
+      "3": 1785743999,
+      "4": 1785700799,
+      "1": 1785700799,
+      "2": 1785729599
+    },
+    "specialBuffRef": [
+      109,
+      110,
+      111,
+      201,
+      203,
+      205
+    ],
+    "bossLeft": 1021202,
+    "bossLv": 60,
+    "bossMid": 1018703,
+    "bossRight": 1045401,
+    "cycleName": 3,
+    "envBuffRefLeft": 407,
+    "envBuffRefMid": 409,
+    "envBuffRefRight": 408,
+    "interactBuffRefLeft": 304,
+    "interactBuffRefMid": 305,
+    "interactBuffRefRight": 302,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 2,
+    "recommendPet": 1003300
+  },
+  "1": {
+    "begDayTime": {
+      "3": 1760688000,
+      "4": 1760644800,
+      "1": 1760644800,
+      "2": 1760673600
+    },
+    "endDayTime": {
+      "3": 1769155199,
+      "4": 1769111999,
+      "1": 1769111999,
+      "2": 1769140799
+    },
+    "generalBuffRef": [
+      204,
+      201,
+      202,
+      203
+    ],
+    "specialBuffRef": [
+      101,
+      102,
+      104,
+      105
+    ],
+    "bossLeft": 1016301,
+    "bossLv": 60,
+    "bossMid": 1028501,
+    "bossRight": 1018701,
+    "envBuffRefLeft": 401,
+    "envBuffRefMid": 405,
+    "envBuffRefRight": 403,
+    "interactBuffRefLeft": 302,
+    "interactBuffRefMid": 303,
+    "interactBuffRefRight": 301,
+    "miniGameBuffRef": [
+      501,
+      502
+    ],
+    "miniGameLeft": 10011,
+    "miniGameRight": 10012,
+    "recommendPetAward": 10700001,
+    "seasonId": 1,
+    "recommendPet": 1021300
+  }
+}

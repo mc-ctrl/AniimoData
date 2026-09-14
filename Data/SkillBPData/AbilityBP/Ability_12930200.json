@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_12930200",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10400360,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12930200001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_LightningField"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10293_Skill_Shapeshifting_Start",
+    "Eff_Parmon_10293_Skill_Shapeshifting_Loop_L",
+    "Eff_Parmon_10293_Skill_Shapeshifting_End_L",
+    "Eff_Parmon_10293_Skill_Shapeshifting_Loop_R",
+    "Eff_Parmon_10293_Skill_Shapeshifting_End_R",
+    "Eff_Parmon_10291_Skill_Wing",
+    "Eff_Parmon_10291_Skill_Wing_End",
+    "Eff_Parmon_10293_Skill_Shapeshifting_Start_03",
+    "Eff_Parmon_10293_Skill_Shapeshifting_Loop_L_03",
+    "Eff_Parmon_10293_Skill_Shapeshifting_Loop_R_03",
+    "Eff_Parmon_10293_Skill_Shapeshifting_End_L_03",
+    "Eff_Parmon_10293_Skill_Shapeshifting_End_R_03",
+    "Eff_Parmon_10293_Skill_LightningField_Start",
+    "Eff_Parmon_10293_Skill_LightningField_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "searchTargetRangeDown": 0.5
+}

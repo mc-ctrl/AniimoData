@@ -1,0 +1,73 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9114301",
+  "NodeID": 1,
+  "UID": "3968bd98-3f1e-4a34-9800-891767903f6d",
+  "desc": "",
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10143_Skill_HaloMax_Huan"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "buffTemplateIds": [
+        2114307,
+        2114306,
+        2114308
+      ],
+      "onlyCheckNewBuff": false,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "032c0e20-288e-4421-b84a-45d7377ffe35",
+      "name": "registerAddBuffOnTargetEvent"
+    },
+    "7": {
+      "target": {
+        "data": {
+          "UID": "1d60b49d-92d6-419b-b236-c2a632351ba7",
+          "name": "getEventData",
+          "eventName": "onAddBuffOnTarget",
+          "NodeID": 10
+        },
+        "propertyName": "targetActorId",
+        "name": "getProperty",
+        "UID": "08ac5957-16e2-444a-adf9-c488c1c08bbc",
+        "NodeID": 11
+      },
+      "duration": {
+        "calcId": 9114301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 6,
+        "UID": "58d1c528-9d4e-4ef3-a4c4-b011603ecdd2",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 91143011,
+      "NodeID": 7,
+      "UID": "44e330fc-152a-43f4-a658-ba3d5ec2bbb7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "calcId": 9114301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "58d1c528-9d4e-4ef3-a4c4-b011603ecdd2",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

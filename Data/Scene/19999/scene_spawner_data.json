@@ -1,0 +1,110 @@
+{
+  "91010445": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      7.19,
+      -0.01,
+      0.38
+    ],
+    "sandboxId": 91010438,
+    "sandboxType": 3,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "avoidRepeatGroupCount": 0,
+    "id": 91010445,
+    "SpawnState": 0,
+    "owner": "蔡龙辉",
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91010443
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91010447": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -7.59,
+      -0.31,
+      0.34
+    ],
+    "sandboxId": 91010438,
+    "sandboxType": 3,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "avoidRepeatGroupCount": 0,
+    "id": 91010447,
+    "SpawnState": 0,
+    "owner": "蔡龙辉",
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91010446
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91010449": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -0.11,
+      0.12,
+      1
+    ],
+    "sandboxId": 91010438,
+    "sandboxType": 3,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "avoidRepeatGroupCount": 0,
+    "id": 91010449,
+    "SpawnState": 0,
+    "owner": "蔡龙辉",
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91010448
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

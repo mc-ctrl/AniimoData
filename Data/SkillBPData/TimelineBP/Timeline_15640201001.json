@@ -1,0 +1,654 @@
+{
+  "nodeMap": {
+    "37": {
+      "timelineId": 15640201003,
+      "name": "jumpToNextTimeline",
+      "UID": "9a8c96d5-df67-47c3-ae2d-f2e28a76dfa5",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "38": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        190
+      ],
+      "UID": "53057e6c-b9b1-4959-9b44-899664960726",
+      "name": "doActionsByConditions",
+      "NodeID": 38
+    },
+    "113": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "09ce4226-a43a-466e-8f8c-59909a468817",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_liuli",
+      "speed": 1,
+      "NodeID": 113
+    },
+    "126": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "7b39b506-7083-4802-90f0-da01203861dc",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 126
+    },
+    "114": {
+      "actionIds": [
+        113
+      ],
+      "conditionActionIds": [
+        195
+      ],
+      "UID": "0090137d-27ed-45e3-8fa9-bbf2996b1b4b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        117
+      ],
+      "NodeID": 114
+    },
+    "42": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 15640201,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "02879db0-3f35-4a41-a70d-0fdb068d591f",
+      "target": "TARGET",
+      "NodeID": 42,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30303,
+        "hitFrameFreezeId": 10014,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10564_Skill_Sword_Hit_liuli",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 3000
+      }
+    },
+    "44": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 42,
+      "NodeID": 44,
+      "UID": "6c794b7a-57fc-485c-8987-30cfe68886b9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.8,
+            1.8,
+            4,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        42
+      ]
+    },
+    "116": {
+      "action": {
+        "actionIds": [
+          114
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 116,
+      "UID": "5c7fa0ae-29f2-40fb-a6fe-f1de8875c150"
+    },
+    "117": {
+      "actionIds": [
+        118
+      ],
+      "conditionActionIds": [
+        197
+      ],
+      "UID": "e2ccffba-8ae0-467b-acc9-d6fcd8848602",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        113
+      ],
+      "NodeID": 117
+    },
+    "118": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d325cc63-0e00-4e49-bbec-eec5548e36b5",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_Red_liuli",
+      "speed": 1,
+      "NodeID": 118
+    },
+    "203": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "d77c5b02-fc8a-4f78-a0c8-1b64ed72471c",
+      "NodeID": 203,
+      "lValue": {
+        "key": "CloneCount1",
+        "name": "getServerCacheVal",
+        "UID": "fa1d5cbe-0e98-4340-8b67-6fdb92108c53",
+        "target": "OWNER",
+        "NodeID": 202
+      }
+    },
+    "2": {
+      "UID": "5bb34d5f-07d8-4b6d-818d-58d71f120bd7",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 2
+    },
+    "181": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "9a22cdb5-3d95-49ab-a967-265174caad83",
+      "NodeID": 181,
+      "lValue": {
+        "key": "BladeColor1",
+        "name": "getServerCacheVal",
+        "UID": "d7a92d8d-cb0b-4bd8-b77b-588650f95431",
+        "target": "OWNER",
+        "NodeID": 180
+      }
+    },
+    "4": {
+      "UID": "147d7e8d-84af-4bfe-b9ec-5713e39c04ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          19,
+          133,
+          186
+        ]
+      },
+      "NodeID": 4
+    },
+    "183": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "614788e9-dd2f-4c5b-86c8-6a49177c0cdd",
+      "NodeID": 183,
+      "lValue": {
+        "key": "BladeColor1",
+        "name": "getServerCacheVal",
+        "UID": "268ffd25-9dd0-4ea2-a036-70005045cc12",
+        "target": "OWNER",
+        "NodeID": 182
+      }
+    },
+    "184": {
+      "key": "CloneCount1",
+      "name": "setServerCacheVal",
+      "UID": "7a276eb2-6de4-467b-a782-54860d20c317",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 184
+    },
+    "101": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d56e13af-17bc-4585-8f21-f5639bd8529e",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_liuli",
+      "speed": 1,
+      "NodeID": 101
+    },
+    "186": {
+      "key": "CloneCount1",
+      "name": "setServerCacheVal",
+      "UID": "e9b604aa-c0d5-4c9b-9165-e39681692f5a",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 186
+    },
+    "123": {
+      "name": "dropEffectStr",
+      "UID": "375fd7cd-55cf-4c25-9b08-e68428a55c8f",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_liuli",
+      "target": "OWNER",
+      "NodeID": 123
+    },
+    "188": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "ae7f709f-788c-4d6a-9cc8-a54920c4e64a",
+      "NodeID": 188,
+      "lValue": {
+        "key": "CloneCount1",
+        "name": "getServerCacheVal",
+        "UID": "5f719de5-3337-4049-9c48-f628ef75b27d",
+        "target": "OWNER",
+        "NodeID": 187
+      }
+    },
+    "190": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "c006a265-18a5-4583-9abb-72c5f69386ee",
+      "NodeID": 190,
+      "lValue": {
+        "key": "CloneCount1",
+        "name": "getServerCacheVal",
+        "UID": "26b64ed1-1c56-49f2-a325-28cd90f4acb8",
+        "target": "OWNER",
+        "NodeID": 189
+      }
+    },
+    "125": {
+      "name": "dropEffectStr",
+      "UID": "3436ce3a-83fc-408f-9865-70912c5031c6",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_Red_liuli",
+      "target": "OWNER",
+      "NodeID": 125
+    },
+    "208": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "25c3d5dd-a5cf-4d55-8c00-bb207f6be174",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10564_Skill_SkyRuptureSlash01_Mid",
+      "NodeID": 208
+    },
+    "127": {
+      "name": "stopEffectStr",
+      "UID": "a07187ae-c6a3-4b20-81af-720c4b93cd06",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Green_liuli",
+      "target": "OWNER",
+      "NodeID": 127
+    },
+    "95": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "33732e9a-f6b5-4ebf-9248-0de68b406055",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Green_liuli",
+      "speed": 1,
+      "NodeID": 95
+    },
+    "197": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "67a00a40-79d3-468b-aa66-54be1eba32fb",
+      "NodeID": 197,
+      "lValue": {
+        "key": "CloneCount1",
+        "name": "getServerCacheVal",
+        "UID": "f859d09d-4c24-4526-8730-e6f18d6648f2",
+        "target": "OWNER",
+        "NodeID": 196
+      }
+    },
+    "198": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c001e9dd-5bef-4b0c-b963-9a567bd3ee63",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_Red01_liuli",
+      "speed": 1,
+      "NodeID": 198
+    },
+    "129": {
+      "conditionActionIds": [
+        131
+      ],
+      "UID": "6b1e0ba7-1257-4a34-8335-c7da2157fca7",
+      "name": "doActionsByConditions",
+      "NodeID": 129,
+      "elseActionIds": [
+        127,
+        132
+      ]
+    },
+    "97": {
+      "UID": "c0046fb6-a292-42ae-8662-2698d14e20e8",
+      "name": "callClientAction",
+      "actionIds": [
+        100,
+        95,
+        207
+      ],
+      "NodeID": 97
+    },
+    "207": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "beb4fe3b-30f1-4ac8-a032-46b4a20a532f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10564_Skill_SkyRuptureSlash01_Weak",
+      "NodeID": 207
+    },
+    "206": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "67030a18-a198-47f5-ae92-d3694223cd19",
+      "NodeID": 206,
+      "lValue": {
+        "key": "CloneCount1",
+        "name": "getServerCacheVal",
+        "UID": "7edbfefe-1dfd-4c84-95b9-dc125be78ab5",
+        "target": "OWNER",
+        "NodeID": 205
+      }
+    },
+    "131": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "50e51c16-6afd-4127-8db8-28aa996ac1f9",
+      "NodeID": 131,
+      "lValue": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "1419cfe2-9cbf-49b8-b431-f2ee0ded84b6",
+        "target": "OWNER",
+        "NodeID": 130
+      }
+    },
+    "99": {
+      "actionIds": [
+        97,
+        184
+      ],
+      "conditionActionIds": [
+        181
+      ],
+      "UID": "da1c1314-2ec1-400e-8b66-18dcb2ccffca",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        105
+      ],
+      "NodeID": 99
+    },
+    "132": {
+      "name": "stopEffectStr",
+      "UID": "a164c04e-60df-4d2e-9871-a7f38408f986",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_liuli",
+      "target": "OWNER",
+      "NodeID": 132
+    },
+    "100": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f0cd875d-3edb-47a1-9dc7-f8df0762ef84",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Green_Start_liuli",
+      "speed": 1,
+      "NodeID": 100
+    },
+    "9": {
+      "name": "setNextComboAbilityId",
+      "UID": "c01f7070-bd31-4c54-9cf1-d118168f919f",
+      "target": "OWNER",
+      "NodeID": 9,
+      "abilityId": 0
+    },
+    "204": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a9930004-68ab-43ed-b12f-fec78b7d163a",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash01_liuli",
+      "speed": 1,
+      "NodeID": 204
+    },
+    "201": {
+      "action": {
+        "actionIds": [
+          200
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.46,
+      "NodeID": 201,
+      "UID": "dd7f91ca-4e33-45ff-a01f-3c98f57181b7"
+    },
+    "11": {
+      "UID": "507665a6-1528-47d7-8251-bc4aea054e51",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          21,
+          9,
+          123,
+          125,
+          129
+        ]
+      },
+      "NodeID": 11
+    },
+    "103": {
+      "UID": "98b0f232-b815-4e2a-bf83-42c3c4f32741",
+      "name": "callClientAction",
+      "actionIds": [
+        106,
+        101,
+        208
+      ],
+      "NodeID": 103
+    },
+    "21": {
+      "UID": "c38d460e-5eb7-410f-b750-4d4d7c740ae2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0
+      },
+      "NodeID": 21
+    },
+    "200": {
+      "actionIds": [
+        204
+      ],
+      "conditionActionIds": [
+        206
+      ],
+      "UID": "a449a9f4-03c5-47af-9e1d-451050c4ea8f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        199
+      ],
+      "NodeID": 200
+    },
+    "199": {
+      "actionIds": [
+        198
+      ],
+      "conditionActionIds": [
+        203
+      ],
+      "UID": "afbf4d71-1987-4610-a005-7e66c9bf0080",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        204
+      ],
+      "NodeID": 199
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.48,
+      "NodeID": 45,
+      "UID": "8638c4ac-5a11-4853-8212-d99d1720a030"
+    },
+    "14": {
+      "UID": "530e10cc-5fbb-49b3-a8f0-190eee42d991",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          99
+        ]
+      },
+      "NodeID": 14
+    },
+    "106": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7c9047a3-27e2-40d4-9786-37d6a555c075",
+      "effectId": "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_Start_liuli",
+      "speed": 1,
+      "NodeID": 106
+    },
+    "195": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "60bc6bf1-5e55-48ac-8d62-6475194dfa23",
+      "NodeID": 195,
+      "lValue": {
+        "key": "CloneCount1",
+        "name": "getServerCacheVal",
+        "UID": "15b5f529-3343-4c65-b11b-e2295be6d4e4",
+        "target": "OWNER",
+        "NodeID": 194
+      }
+    },
+    "185": {
+      "key": "CloneCount1",
+      "name": "setServerCacheVal",
+      "UID": "c1173436-7261-4816-9b3d-1387e434655e",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 185
+    },
+    "16": {
+      "UID": "38803913-205b-4ea4-a06b-b60e03880f87",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 16
+    },
+    "133": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "2d0828f7-8871-4e8a-beb2-1942aa02b2d0",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 133
+    },
+    "28": {
+      "timelineId": 15640201002,
+      "name": "jumpToNextTimeline",
+      "UID": "2ee5c3e9-effe-43e6-a1ff-2c003abd0209",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        188
+      ],
+      "UID": "24afc9f6-bf38-43ef-a625-617b3566f997",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        38
+      ],
+      "NodeID": 29
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 17,
+      "UID": "0e233a76-6638-453a-a288-ffee053ae1e7"
+    },
+    "12": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 12,
+      "UID": "c9504d59-aa76-4b3b-b1ad-e37de0386cf4",
+      "target": "OWNER",
+      "disableMotion": false,
+      "animId": "Skill_SkyRuptureSlash"
+    },
+    "19": {
+      "UID": "6180cfc4-a19f-4304-8e77-c039b312fed6",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 19
+    },
+    "105": {
+      "actionIds": [
+        103,
+        185
+      ],
+      "conditionActionIds": [
+        183
+      ],
+      "UID": "16ef9552-33e1-4151-bab8-e7981ee8233e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        207
+      ],
+      "NodeID": 105
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          126,
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 31,
+      "UID": "7f065895-dabc-4a35-ac59-c758374c81f7"
+    }
+  },
+  "BPName": "ability_15640201",
+  "NodeID": 6,
+  "UID": "f8d925ef-bcfa-4a35-b359-89445eb7b576",
+  "eventIds": [
+    4,
+    11,
+    17,
+    14,
+    31,
+    45,
+    116,
+    201
+  ],
+  "layer": "Base",
+  "length": 2.37
+}

@@ -1,0 +1,210 @@
+{
+  "1000": {
+    "colliderOffsetMax": 1,
+    "colliderOffsetMin": 0.2,
+    "maxDisplacement": 2.5,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1023": {
+    "colliderOffsetMax": 2,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 5,
+    "notBack": 1,
+    "duration": 0.5
+  },
+  "1012": {
+    "colliderOffsetMax": 0.7,
+    "colliderOffsetMin": 0.3,
+    "maxDisplacement": 2.5,
+    "notBack": 1,
+    "duration": 0.1
+  },
+  "1013": {
+    "colliderOffsetMax": 1.5,
+    "colliderOffsetMin": 0.8,
+    "maxDisplacement": 15,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1014": {
+    "colliderOffsetMax": 3,
+    "colliderOffsetMin": 1,
+    "maxDisplacement": 5,
+    "notBack": 1,
+    "duration": 0.5
+  },
+  "1016": {
+    "colliderOffsetMax": 0.5,
+    "colliderOffsetMin": 0.2,
+    "maxDisplacement": 1,
+    "notBack": 1,
+    "duration": 0.1
+  },
+  "1015": {
+    "colliderOffsetMax": 2,
+    "colliderOffsetMin": 1,
+    "maxDisplacement": 5,
+    "notBack": 1,
+    "duration": 0.5
+  },
+  "3001": {
+    "colliderOffsetMax": 3,
+    "colliderOffsetMin": 2.9,
+    "maxDisplacement": 1.2,
+    "notBack": 1,
+    "duration": 0.5
+  },
+  "3000": {
+    "colliderOffsetMax": 1,
+    "colliderOffsetMin": 0.7,
+    "maxDisplacement": 3,
+    "notBack": 1,
+    "duration": 0.37
+  },
+  "1020": {
+    "colliderOffsetMax": 1,
+    "colliderOffsetMin": 0.8,
+    "maxDisplacement": 6,
+    "notBack": 1,
+    "duration": 0.05
+  },
+  "1027": {
+    "colliderOffsetMax": 1.5,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 3,
+    "notBack": 1,
+    "duration": 0.2
+  },
+  "1001": {
+    "colliderOffsetMax": 1,
+    "colliderOffsetMin": 0.2,
+    "maxDisplacement": 8,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1026": {
+    "colliderOffsetMax": 0.7,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 2,
+    "duration": 0.1
+  },
+  "1022": {
+    "colliderOffsetMax": 1.6,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 1,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1003": {
+    "colliderOffsetMax": 0.5,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 5,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1004": {
+    "colliderOffsetMax": 1.5,
+    "colliderOffsetMin": 1,
+    "maxDisplacement": 4,
+    "notBack": 1,
+    "duration": 0.27
+  },
+  "1002": {
+    "colliderOffsetMax": 2,
+    "colliderOffsetMin": 0.8,
+    "maxDisplacement": 1.5,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1025": {
+    "colliderOffsetMax": 0.7,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 1.5,
+    "duration": 0.2
+  },
+  "1006": {
+    "colliderOffsetMax": 1.5,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 2,
+    "notBack": 1,
+    "duration": 0.1
+  },
+  "1021": {
+    "colliderOffsetMax": 1.5,
+    "colliderOffsetMin": 0.8,
+    "maxDisplacement": 6,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1007": {
+    "colliderOffsetMax": 1,
+    "colliderOffsetMin": 0.35,
+    "maxDisplacement": 4,
+    "notBack": 1,
+    "duration": 0.25
+  },
+  "2000": {
+    "colliderOffsetMax": 2,
+    "colliderOffsetMin": 0.8,
+    "maxDisplacement": 1.5,
+    "notForward": 1,
+    "duration": 0.15
+  },
+  "1008": {
+    "colliderOffsetMax": 1,
+    "colliderOffsetMin": 0.7,
+    "maxDisplacement": 7,
+    "notBack": 1,
+    "duration": 0.4
+  },
+  "1005": {
+    "colliderOffsetMax": 1,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 3,
+    "notBack": 1,
+    "duration": 0.3
+  },
+  "1011": {
+    "colliderOffsetMax": 0.7,
+    "colliderOffsetMin": 0.3,
+    "maxDisplacement": 3,
+    "notBack": 1,
+    "duration": 0.1
+  },
+  "1017": {
+    "colliderOffsetMax": 0.2,
+    "colliderOffsetMin": 0.2,
+    "maxDisplacement": 4,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1018": {
+    "colliderOffsetMax": 0.2,
+    "colliderOffsetMin": 0.2,
+    "maxDisplacement": 10,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1019": {
+    "colliderOffsetMax": 0.7,
+    "colliderOffsetMin": 0.5,
+    "maxDisplacement": 2,
+    "notBack": 1,
+    "duration": 0.15
+  },
+  "1009": {
+    "colliderOffsetMax": 0.5,
+    "colliderOffsetMin": 0.2,
+    "maxDisplacement": 1.5,
+    "notBack": 1,
+    "duration": 0.16
+  },
+  "1010": {
+    "colliderOffsetMax": 0.5,
+    "colliderOffsetMin": 0.2,
+    "maxDisplacement": 3,
+    "notBack": 1,
+    "duration": 0.15
+  }
+}

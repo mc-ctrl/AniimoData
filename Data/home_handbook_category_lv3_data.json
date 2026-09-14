@@ -1,0 +1,461 @@
+{
+  "5003004": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectItemOutput.png",
+    "secondType": 5003,
+    "name": 1270085190
+  },
+  "5003005": {
+    "sortId": 5,
+    "icon": "$UI_Home_CollectParmon.png",
+    "secondType": 5003,
+    "name": 2079543163
+  },
+  "5003006": {
+    "sortId": 6,
+    "icon": "$UI_Home_CollectElementals.png",
+    "secondType": 5003,
+    "name": 1775855651
+  },
+  "5003007": {
+    "sortId": 7,
+    "icon": "$UI_Home_CollectPetProduce.png",
+    "secondType": 5003,
+    "name": 1732579613
+  },
+  "2001002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectWall.png",
+    "secondType": 2001,
+    "name": 1709627054
+  },
+  "2001005": {
+    "sortId": 5,
+    "icon": "$UI_Home_CollectRoof.png",
+    "secondType": 2001,
+    "name": 1277132815
+  },
+  "2002001": {
+    "sortId": 3,
+    "icon": "$UI_Home_CollectDoor.png",
+    "secondType": 2002,
+    "name": 1322286481
+  },
+  "5001004": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectBed.png",
+    "secondType": 5001,
+    "name": 1468035982
+  },
+  "4001001": {
+    "sortId": 1,
+    "name": 1241713740,
+    "secondType": 4001
+  },
+  "4001002": {
+    "sortId": 2,
+    "name": 1612896697,
+    "secondType": 4001
+  },
+  "4001003": {
+    "sortId": 3,
+    "name": 1147500285,
+    "secondType": 4001
+  },
+  "4001004": {
+    "sortId": 4,
+    "name": 1657533316,
+    "secondType": 4001
+  },
+  "4001005": {
+    "sortId": 7,
+    "name": 1722536557,
+    "secondType": 4001
+  },
+  "5001003": {
+    "sortId": 3,
+    "icon": "$UI_Home_CollectChair.png",
+    "secondType": 5001,
+    "name": 1879072997
+  },
+  "5002006": {
+    "sortId": 6,
+    "icon": "$UI_Home_CollectOutdoorDecor.png",
+    "secondType": 5002,
+    "name": 1562324744
+  },
+  "1001001": {
+    "sortId": 1,
+    "icon": "$UI_Icon_HomePlot_10100001.png",
+    "secondType": 1001,
+    "name": 1114271934
+  },
+  "1002007": {
+    "sortId": 7,
+    "icon": "$UI_Icon_HomePlot_10200011.png",
+    "secondType": 1002,
+    "name": 1491724826
+  },
+  "1004001": {
+    "sortId": 1,
+    "icon": "$UI_Home_CollectWood.png",
+    "secondType": 1004,
+    "name": 1773637443
+  },
+  "1001002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectField.png",
+    "secondType": 1001,
+    "name": 1099561540
+  },
+  "5002008": {
+    "sortId": 8,
+    "icon": "$UI_Home_CollectGarden.png",
+    "secondType": 5002,
+    "name": 2095033417
+  },
+  "5002002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectRoad.png",
+    "secondType": 5002,
+    "name": 1464777038
+  },
+  "5002003": {
+    "sortId": 3,
+    "icon": "$UI_Home_CollectOutGround.png",
+    "secondType": 5002,
+    "name": 1115521153
+  },
+  "5002004": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectOutPlant.png",
+    "secondType": 5002,
+    "name": 1323684788
+  },
+  "5002005": {
+    "sortId": 5,
+    "icon": "$UI_Home_CollectPlantS.png",
+    "secondType": 5002,
+    "name": 1237728053
+  },
+  "5002007": {
+    "sortId": 7,
+    "icon": "$UI_Home_CollectSmallOrnamentS.png",
+    "secondType": 5002,
+    "name": 1355720768
+  },
+  "5003001": {
+    "sortId": 1,
+    "icon": "$UI_Home_CollectRawMaterials.png",
+    "secondType": 5003,
+    "name": 1962708763
+  },
+  "1001004": {
+    "sortId": 5,
+    "icon": "$UI_Home_CollectPetPlay.png",
+    "secondType": 1001,
+    "name": 1908608222
+  },
+  "2002002": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectWindow.png",
+    "secondType": 2002,
+    "name": 1557821170
+  },
+  "4004002": {
+    "sortId": 15,
+    "name": 2138774750,
+    "secondType": 4004
+  },
+  "1001003": {
+    "sortId": 3,
+    "icon": "$UI_Home_CollectMine.png",
+    "secondType": 1001,
+    "name": 1310550784
+  },
+  "1002008": {
+    "sortId": 8,
+    "icon": "$UI_Home_CollectBoil.png",
+    "secondType": 1002,
+    "name": 1220098818
+  },
+  "2001001": {
+    "sortId": 1,
+    "icon": "$UI_Home_CollectFloor.png",
+    "secondType": 2001,
+    "name": 1251411337
+  },
+  "1002006": {
+    "sortId": 6,
+    "icon": "$UI_Home_CollectDrink.png",
+    "secondType": 1002,
+    "name": 1585115069
+  },
+  "1002005": {
+    "sortId": 5,
+    "icon": "$UI_Home_CollectHandwork.png",
+    "secondType": 1002,
+    "name": 1843911775
+  },
+  "1002004": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectDry.png",
+    "secondType": 1002,
+    "name": 1316433643
+  },
+  "1002003": {
+    "sortId": 3,
+    "icon": "$UI_Home_CollectSpinning.png",
+    "secondType": 1002,
+    "name": 1896542211
+  },
+  "1002002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectCook.png",
+    "secondType": 1002,
+    "name": 1744298248
+  },
+  "1002001": {
+    "sortId": 1,
+    "icon": "$UI_Home_CollectGrind.png",
+    "secondType": 1002,
+    "name": 1529896113
+  },
+  "1001005": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectWell.png",
+    "secondType": 1001,
+    "name": 1898020348
+  },
+  "1003002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectFruit.png",
+    "secondType": 1003,
+    "name": 1932828344
+  },
+  "1003003": {
+    "sortId": 3,
+    "icon": "$UI_Home_CollectFlower.png",
+    "secondType": 1003,
+    "name": 1302143385
+  },
+  "1003004": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectTree.png",
+    "secondType": 1003,
+    "name": 1861485359
+  },
+  "1003005": {
+    "sortId": 4,
+    "icon": "$UI_Home_CollectMagicCrops.png",
+    "secondType": 1003,
+    "name": 1635153494
+  },
+  "5001001": {
+    "sortId": 1,
+    "icon": "$UI_Home_CollectInSuit.png",
+    "secondType": 5001,
+    "name": 2073171659
+  },
+  "1004002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectSmelter.png",
+    "secondType": 1004,
+    "name": 1345157864
+  },
+  "2001007": {
+    "sortId": 7,
+    "icon": "$UI_Home_CollectStair.png",
+    "secondType": 2001,
+    "name": 1839054878
+  },
+  "2001008": {
+    "sortId": 8,
+    "icon": "$UI_Home_CollectPillar.png",
+    "secondType": 2001,
+    "name": 1440896741
+  },
+  "5002001": {
+    "sortId": 1,
+    "icon": "$UI_Home_CollectOutSuit.png",
+    "secondType": 5002,
+    "name": 1680116248
+  },
+  "2002003": {
+    "sortId": 6,
+    "icon": "$UI_Home_CollectFence.png",
+    "secondType": 2002,
+    "name": 1152949372
+  },
+  "4002001": {
+    "sortId": 5,
+    "name": 1420406517,
+    "secondType": 4002
+  },
+  "4002002": {
+    "sortId": 6,
+    "name": 1233856067,
+    "secondType": 4002
+  },
+  "4002003": {
+    "sortId": 8,
+    "name": 1856547967,
+    "secondType": 4002
+  },
+  "4002004": {
+    "sortId": 12,
+    "name": 1867484329,
+    "secondType": 4002
+  },
+  "4002005": {
+    "sortId": 13,
+    "name": 1148220324,
+    "secondType": 4002
+  },
+  "4003001": {
+    "sortId": 9,
+    "name": 1245500217,
+    "secondType": 4003
+  },
+  "4003002": {
+    "sortId": 10,
+    "name": 1459292265,
+    "secondType": 4003
+  },
+  "4003003": {
+    "sortId": 11,
+    "name": 1147251967,
+    "secondType": 4003
+  },
+  "4004001": {
+    "sortId": 14,
+    "name": 2142438629,
+    "secondType": 4004
+  },
+  "5001002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectStorage.png",
+    "secondType": 5001,
+    "name": 1489081687
+  },
+  "5001005": {
+    "sortId": 5,
+    "icon": "$UI_Home_CollectKitchen.png",
+    "secondType": 5001,
+    "name": 1813414243
+  },
+  "5001006": {
+    "sortId": 6,
+    "icon": "$UI_Home_CollectAppliance.png",
+    "secondType": 5001,
+    "name": 2095706546
+  },
+  "5001007": {
+    "sortId": 7,
+    "icon": "$UI_Home_CollectBath.png",
+    "secondType": 5001,
+    "name": 1341561084
+  },
+  "5001008": {
+    "sortId": 8,
+    "icon": "$UI_Home_CollectCurtain.png",
+    "secondType": 5001,
+    "name": 2044806194
+  },
+  "5001009": {
+    "sortId": 9,
+    "icon": "$UI_Home_CollectLamp.png",
+    "secondType": 5001,
+    "name": 1082976776
+  },
+  "5001010": {
+    "sortId": 10,
+    "icon": "$UI_Home_CollectPetFurniture.png",
+    "secondType": 5001,
+    "name": 1816015966
+  },
+  "5001011": {
+    "sortId": 11,
+    "icon": "$UI_Home_CollectLivingItem.png",
+    "secondType": 5001,
+    "name": 1080523865
+  },
+  "5001012": {
+    "sortId": 12,
+    "icon": "$UI_Home_CollectTextile.png",
+    "secondType": 5001,
+    "name": 1102611698
+  },
+  "5001013": {
+    "sortId": 13,
+    "icon": "$UI_Home_CollectInPlant.png",
+    "secondType": 5001,
+    "name": 1724033523
+  },
+  "5001014": {
+    "sortId": 14,
+    "icon": "$UI_Home_CollectDecor.png",
+    "secondType": 5001,
+    "name": 1605284227
+  },
+  "5001015": {
+    "sortId": 15,
+    "icon": "$UI_Home_CollectDiver.png",
+    "secondType": 5001,
+    "name": 1780086550
+  },
+  "1002009": {
+    "sortId": 9,
+    "icon": "$UI_Icon_HomePlot_10200021.png",
+    "secondType": 1002,
+    "name": 1538670320
+  },
+  "1002010": {
+    "sortId": 10,
+    "icon": "$UI_Home_CollectCure.png",
+    "secondType": 1002,
+    "name": 1913576775
+  },
+  "1003001": {
+    "sortId": 1,
+    "icon": "$UI_Home_CollectCrops.png",
+    "secondType": 1003,
+    "name": 1265069702
+  },
+  "5002009": {
+    "sortId": 9,
+    "icon": "$UI_Home_CollectBricks.png",
+    "secondType": 5002,
+    "name": 1763802091
+  },
+  "5002010": {
+    "sortId": 10,
+    "icon": "$UI_Home_CollectChair.png",
+    "secondType": 5002,
+    "name": 2125976467
+  },
+  "5002011": {
+    "sortId": 11,
+    "icon": "$UI_Home_CollectInteractiveFurniture.png",
+    "secondType": 5002,
+    "name": 1446192007
+  },
+  "5002012": {
+    "sortId": 12,
+    "icon": "$UI_Home_CollectLamp.png",
+    "secondType": 5002,
+    "name": 1188859364
+  },
+  "5003002": {
+    "sortId": 2,
+    "icon": "$UI_Home_CollectMaterialProcessing.png",
+    "secondType": 5003,
+    "name": 1556902827
+  },
+  "5003003": {
+    "sortId": 3,
+    "icon": "$UI_Home_CollectEnvironmentFacilities.png",
+    "secondType": 5003,
+    "name": 2102696438
+  }
+}

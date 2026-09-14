@@ -1,0 +1,2034 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "6ab6cea2-064e-4f92-8eb9-b22585b9f992",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          161,
+          11,
+          250,
+          253
+        ]
+      },
+      "NodeID": 5
+    },
+    "127": {
+      "name": "stopEffectStr",
+      "UID": "68ffccb0-f2cc-4c83-9ef7-82cdfe5fe483",
+      "effectId": "Eff_Monster_90207_Skill_Smash_FistPopout",
+      "target": "OWNER",
+      "NodeID": 127
+    },
+    "245": {
+      "UID": "2ba66cb9-cb25-4957-ae1f-2b9e7831fe36",
+      "target": "TARGET",
+      "name": "cancelTargetAbility",
+      "NodeID": 245
+    },
+    "246": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "46e3b3e8-ce75-4159-8595-613527675270",
+      "effectId": "Eff_SkillObj_90207_Fence",
+      "speed": 1,
+      "NodeID": 246
+    },
+    "11": {
+      "triggerName": "Smash_Prepare",
+      "name": "setEffectAnimTrigger",
+      "UID": "88503e4c-3ce3-49fa-8afe-75ab21e7e2b7",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "248": {
+      "key": "stunDelay",
+      "duration": 0.3,
+      "actionIds": [
+        249,
+        246
+      ],
+      "NodeID": 248,
+      "UID": "f934ab00-d58c-4ac0-9f36-4a1cdf3413ae",
+      "name": "addTimer"
+    },
+    "13": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d0d94897-fd5b-4700-868d-01f2b3e3390f",
+      "target": "OWNER",
+      "NodeID": 13,
+      "animId": "Skill_Smash_Loop"
+    },
+    "155": {
+      "actionIds": [
+        153
+      ],
+      "NodeID": 155,
+      "UID": "05a7783a-80fe-456a-b29b-bc016437d637",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            0.2,
+            180,
+            0.3,
+            0.3
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "key": "HammerAttackPos",
+            "name": "getCacheVal",
+            "UID": "56a53b47-0284-42f5-a342-4c91e2297002",
+            "target": "OWNER",
+            "NodeID": 206
+          },
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 153,
+      "hitBoxId": "4",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 15,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 5,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13,
+          17,
+          88
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 15,
+      "UID": "61d8e558-9190-4ec4-946b-bae469f9650e"
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          13,
+          17,
+          88
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.5,
+      "NodeID": 16,
+      "UID": "539863b7-fbb1-43af-b205-e17913398b71"
+    },
+    "77": {
+      "UID": "af185e56-87c0-4c15-ad0c-f4726b85d161",
+      "name": "enableVineChainTraceTarget",
+      "enable": true,
+      "NodeID": 77
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2f9cadc6-759f-4d88-b9d6-66dfbbc821f8",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_Smash_Attack"
+    },
+    "81": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902070232,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      },
+      "UID": "551304ae-9998-4ecf-a757-a346fe6ea29f",
+      "target": "TARGET",
+      "NodeID": 81,
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5004,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 8,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "184": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ddfbbe0a-5f2d-46c5-87eb-950463fccdd2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_QuickAttack_Whoosh",
+      "NodeID": 184
+    },
+    "83": {
+      "actionIds": [
+        81
+      ],
+      "NodeID": 83,
+      "UID": "aeb109be-393b-4a93-97d5-74e4dcfdea5a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            0.2,
+            180,
+            0.3,
+            0.3
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "key": "HammerAttackPos",
+            "name": "getCacheVal",
+            "UID": "ddf6eb91-0c0e-41e5-a4f4-77d08c5da4a2",
+            "target": "OWNER",
+            "NodeID": 192
+          },
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 81,
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 15,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 5,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "145": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2945042b-484c-47a0-9771-8c3d0c098401",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_Attack",
+      "NodeID": 145
+    },
+    "146": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a345e3fb-8778-4840-b4bc-75c6a1f26d9c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_PullBack",
+      "NodeID": 146
+    },
+    "85": {
+      "action": {
+        "actionIds": [
+          83,
+          191,
+          194,
+          144,
+          263
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 85,
+      "UID": "11d7e9d3-0d2c-4228-9d71-3fe2769d8481"
+    },
+    "153": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902070232,
+        "instant_dmg_rate_v": "param2",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      },
+      "UID": "c2f31eda-c425-445b-b0b1-0218f952e78d",
+      "target": "TARGET",
+      "NodeID": 153,
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5004,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 8,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "203": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "8cecb0f6-dad9-47db-8e2a-99a6ea232f8b",
+        "target": "OWNER",
+        "NodeID": 202
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "f2ea8e63-3218-456c-ae47-d69e7e05344c",
+      "effectId": "Eff_Monster_90207_Skill_Smash_GroundWave",
+      "speed": 1,
+      "NodeID": 203
+    },
+    "88": {
+      "UID": "3f0265fe-977d-4c3b-b351-016e44346387",
+      "name": "enableVineChainTraceTarget",
+      "enable": true,
+      "NodeID": 88
+    },
+    "162": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "49ed6b22-a5e1-486f-b438-53b59fa6283b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_Prepare_HammerAppear01",
+      "NodeID": 162
+    },
+    "213": {
+      "key": "HammerAttackPos",
+      "name": "setCacheVal",
+      "UID": "90fb5d5d-1ada-4bab-bedf-63fc2db18f30",
+      "target": "OWNER",
+      "val": {
+        "UID": "908bd20e-569f-41f3-8678-893e14fcae88",
+        "name": "getGroundPosFromRefClientPos",
+        "refPos": {
+          "target": "OWNER",
+          "NodeID": 211,
+          "UID": "74f05468-1304-434d-8734-335a008c6460",
+          "effectId": "Eff_SkillObj_90207_Vine",
+          "childName": "Bone Hand Position",
+          "name": "getEntityEffectPosition"
+        },
+        "NodeID": 212
+      },
+      "NodeID": 213
+    },
+    "185": {
+      "action": {
+        "actionIds": [
+          184
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7,
+      "NodeID": 185,
+      "UID": "2bd1891c-586b-422b-bfd1-b147c92e4cd0"
+    },
+    "216": {
+      "key": "HammerAttackPos",
+      "name": "setCacheVal",
+      "UID": "182e89e1-c4b9-42a1-aa84-8cdc5d9784b3",
+      "target": "OWNER",
+      "val": {
+        "UID": "8be044bb-7512-44bc-90dd-adf6b1abb8e0",
+        "name": "getGroundPosFromRefClientPos",
+        "refPos": {
+          "target": "OWNER",
+          "NodeID": 214,
+          "UID": "0f587238-b43f-4087-b16c-6dfb06614f91",
+          "effectId": "Eff_SkillObj_90207_Vine",
+          "childName": "Bone Hand Position",
+          "name": "getEntityEffectPosition"
+        },
+        "NodeID": 215
+      },
+      "NodeID": 216
+    },
+    "186": {
+      "action": {
+        "actionIds": [
+          184
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 186,
+      "UID": "b7cbc058-2940-42dd-9493-fe8f19df4b30"
+    },
+    "253": {
+      "actionIds": [
+        252
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "b74280e0-8e6e-411d-8126-49ff4097df0d",
+      "target": "OWNER",
+      "NodeID": 253
+    },
+    "218": {
+      "UID": "303fa1ce-bfe2-4204-b756-f692e38b44e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 218
+    },
+    "255": {
+      "action": {
+        "actionIds": [
+          254
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10.3,
+      "NodeID": 255,
+      "UID": "7a7283ec-9f57-4ce0-9b22-7d111bb1fad3"
+    },
+    "220": {
+      "UID": "6b242134-3ec8-4c1b-8962-82f55da4b28a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          218
+        ]
+      },
+      "NodeID": 220
+    },
+    "198": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "576c4193-f2cb-44b8-a2ae-a4ccc63a3130",
+        "target": "OWNER",
+        "NodeID": 197
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "557d41ba-75d6-406a-adf0-3f9101dfc9b8",
+      "effectId": "Eff_Monster_90207_Skill_PullBack_Loop",
+      "speed": 1,
+      "NodeID": 198
+    },
+    "102": {
+      "name": "stopEffectStr",
+      "UID": "c8b3c32b-7fed-40b1-b301-7655fed9aa20",
+      "effectId": "Eff_Monster_90207_Skill_Smash_Indicator_1",
+      "target": "OWNER",
+      "NodeID": 102
+    },
+    "258": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ac10840e-d14c-4ead-9a2a-86d12c5f7647",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat_Whoosh02",
+      "NodeID": 258
+    },
+    "223": {
+      "UID": "bb2a8161-a4c0-43c4-817b-df43e9affc28",
+      "name": "getClientPreparedData",
+      "index": "1",
+      "NodeID": 223
+    },
+    "259": {
+      "action": {
+        "actionIds": [
+          258
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10.8,
+      "NodeID": 259,
+      "UID": "24d8afcd-6c0e-4004-b6ec-0cf6490c68f0"
+    },
+    "224": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "af38d4f1-120d-42d4-b734-294b11d3fd5f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat",
+      "NodeID": 224
+    },
+    "260": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "acc7093a-9054-4c3a-944b-6e73174232fe",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat_Whoosh03",
+      "NodeID": 260
+    },
+    "225": {
+      "action": {
+        "actionIds": [
+          224
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.4,
+      "NodeID": 225,
+      "UID": "1386ac0e-8ba8-45be-b2d5-77f80118691c"
+    },
+    "209": {
+      "name": "stopEffectStr",
+      "UID": "a9cffc81-9147-412a-b96e-0076ea4d1df2",
+      "effectId": "Eff_SkillObj_90207_Fence",
+      "target": "OWNER",
+      "NodeID": 209
+    },
+    "106": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        2.5,
+        0,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "72ae3ece-a5d5-429f-9863-1beab40b7a97",
+      "effectId": "Eff_Monster_90207_Skill_WallPopout",
+      "offsetRotation": [
+        0,
+        45,
+        0
+      ],
+      "NodeID": 106
+    },
+    "210": {
+      "action": {
+        "actionIds": [
+          209
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.3,
+      "NodeID": 210,
+      "UID": "c4c3a77a-917d-4252-98ac-f4c5a38bddde"
+    },
+    "227": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 10000
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "disableShowJumpWord": true,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 5002,
+        "hitCameraShakeId": 20100
+      },
+      "UID": "aee12703-d039-45b4-a724-e5005c2d3750",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 227
+    },
+    "263": {
+      "UID": "8a5f24f3-2e6f-4a7c-b5d0-5b0866783070",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "lightGrassOn",
+      "NodeID": 263
+    },
+    "108": {
+      "action": {
+        "actionIds": [
+          160,
+          106,
+          110
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 108,
+      "UID": "ce8d9ad6-c01b-4a46-94c0-17046d9c64a7"
+    },
+    "229": {
+      "calcResultNodeId": 227,
+      "name": "actOnTargets",
+      "UID": "a8b57ef0-499f-431e-83d6-062a4f7debf6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            21,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "stunCnt",
+      "hitBoxMaxHitCnt": 2,
+      "needEcs": true,
+      "actionIds": [
+        227,
+        242,
+        248,
+        244
+      ],
+      "impulseId": 5002,
+      "NodeID": 229
+    },
+    "49": {
+      "UID": "c520ce8a-2313-438b-87ac-030294afb5d9",
+      "actorId": {
+        "key": "90207_Hammer",
+        "name": "getServerCacheVal",
+        "UID": "4e21bd44-8095-4c60-8d68-a8a866749ae2",
+        "target": "OWNER",
+        "NodeID": 48
+      },
+      "name": "destroyEntity",
+      "NodeID": 49
+    },
+    "231": {
+      "action": {
+        "actionIds": [
+          229,
+          245
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 231,
+      "UID": "806c4d6a-0e8f-438c-a6e4-ea9c2f3904dd"
+    },
+    "161": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "52b34c89-6331-4ddd-b225-ff9841c91700",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_Prepare_Wall",
+      "NodeID": 161
+    },
+    "267": {
+      "NodeID": 267,
+      "UID": "323586f9-5a7a-47a4-9b3f-460dadd6ab75",
+      "targetOffsetY": 4.3,
+      "trackVelocityConstraint": 20,
+      "trackTarget": "TARGET",
+      "vineTargetAnimator": {
+        "UID": "36eb8508-6ec7-4561-85ce-726dafc0232d",
+        "effectId": "Eff_SkillObj_90207_Vine",
+        "name": "getEffectAnimator",
+        "NodeID": 266
+      },
+      "vineTipTarget": "Bone Hand Position",
+      "vineTraceRadiusMax": 30,
+      "vineTraceRadiusMin": 5,
+      "name": "enableVineChainIK",
+      "enable": true,
+      "vineTarget": "Bone Weapon A"
+    },
+    "51": {
+      "name": "stopEffectStr",
+      "UID": "b9d51566-5f2b-4231-902a-cc67cbacd3e1",
+      "effectId": "Eff_Monster_90207_Skill_Smash_Indicator",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "164": {
+      "action": {
+        "actionIds": [
+          163
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.2,
+      "NodeID": 164,
+      "UID": "d2270e42-abb4-4fd6-9331-947fb1477145"
+    },
+    "269": {
+      "action": {
+        "actionIds": [
+          268
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.55,
+      "NodeID": 269,
+      "UID": "d6e9d102-b925-48f0-bd6f-71cb9fadfdf9"
+    },
+    "242": {
+      "duration": 0.3,
+      "name": "forceDisplacement",
+      "UID": "7394d195-5631-466b-ac41-d0632b00605a",
+      "target": "TARGET",
+      "speed": 22,
+      "ignoreKnockST": true,
+      "displacementTarget": "OWNER",
+      "displacementDir": "OUT",
+      "ignoreYAxis": true,
+      "NodeID": 242
+    },
+    "113": {
+      "name": "stopEffectStr",
+      "UID": "772de67e-d62a-4357-af6e-699170d7985c",
+      "effectId": "Eff_Monster_90207_Skill_WallPopout",
+      "target": "OWNER",
+      "NodeID": 113
+    },
+    "244": {
+      "target": "TARGET",
+      "duration": 3,
+      "buffId": 29020702,
+      "NodeID": 244,
+      "UID": "97dd54b7-48a8-4f46-9a56-e2c4462a13fb",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "169": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 22.2,
+      "NodeID": 169,
+      "UID": "93600032-5d75-43d4-b8ad-9b77fa52320f",
+      "onUpdate": {
+        "actionIds": [
+          167
+        ]
+      },
+      "startTime": 12.2,
+      "onEnter": {
+        "actionIds": [
+          167
+        ]
+      }
+    },
+    "238": {
+      "action": {
+        "actionIds": [
+          236,
+          243
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.55,
+      "NodeID": 238,
+      "UID": "6d8bb8f8-7e70-4d6e-8ce2-ae98d6280367"
+    },
+    "282": {
+      "UID": "3c2cf9a4-da0b-49ac-8555-58cc50491534",
+      "name": "hideBattleDialog",
+      "dialogId": 20000168,
+      "NodeID": 282
+    },
+    "243": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "156b30a9-aa5b-4ffa-a296-128437f13793",
+      "effectId": "Eff_Monster_90207_Skill_RoarAttack",
+      "speed": 1,
+      "NodeID": 243
+    },
+    "117": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        2.5,
+        0,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "637c8d4f-3fab-4667-910f-8acf0050e2ad",
+      "effectId": "Eff_Monster_90207_Skill_WallDisappear",
+      "offsetRotation": [
+        0,
+        45,
+        0
+      ],
+      "NodeID": 117
+    },
+    "285": {
+      "relation": 2,
+      "heightDown": 2,
+      "heightUp": 5,
+      "UID": "3606ef94-fb89-4dc1-9123-8109eb02c6b7",
+      "radius": 30,
+      "name": "searchEntity",
+      "NodeID": 285
+    },
+    "119": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -2.5,
+        0,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "fee2bc36-2c35-45c7-85d6-ee1f37a3767f",
+      "effectId": "Eff_Monster_90207_Skill_WallDisappear",
+      "offsetRotation": [
+        0,
+        -45,
+        0
+      ],
+      "NodeID": 119
+    },
+    "137": {
+      "action": {
+        "actionIds": [
+          135,
+          200,
+          203,
+          147
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8,
+      "NodeID": 137,
+      "UID": "129c4d4e-ad28-46bd-8d58-0527d4177e65"
+    },
+    "287": {
+      "relation": 2,
+      "heightDown": 2,
+      "heightUp": 5,
+      "UID": "20294b5d-804e-4ddd-a6d6-e5c92c7a6b30",
+      "radius": 60,
+      "name": "searchEntity",
+      "NodeID": 287
+    },
+    "60": {
+      "triggerName": "Smash_PullBack_Attack",
+      "name": "setEffectAnimTrigger",
+      "UID": "c296c5df-15c2-44cd-bc1f-133798d023a1",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "288": {
+      "dialogId": 20000168,
+      "name": "showDialog",
+      "UID": "7a06d3f2-5f1f-4e65-9434-dcd78f8c2d59",
+      "target": {
+        "relation": 2,
+        "heightDown": 2,
+        "heightUp": 5,
+        "UID": "20294b5d-804e-4ddd-a6d6-e5c92c7a6b30",
+        "radius": 60,
+        "name": "searchEntity",
+        "NodeID": 287
+      },
+      "NodeID": 288
+    },
+    "251": {
+      "name": "stopEffectStr",
+      "UID": "385bef5b-4ec4-45b9-a689-dc1048d72fb0",
+      "effectId": "Eff_Monster_90207_Skill_Smash_FistPopout",
+      "target": "OWNER",
+      "NodeID": 251
+    },
+    "122": {
+      "name": "stopEffectStr",
+      "UID": "2292a809-f02e-4483-b7c6-e9745a8ef3f7",
+      "effectId": "Eff_Monster_90207_Skill_PullBack_Loop",
+      "target": "OWNER",
+      "NodeID": 122
+    },
+    "126": {
+      "action": {
+        "actionIds": [
+          124,
+          162,
+          262
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.4,
+      "NodeID": 126,
+      "UID": "0c921de7-79f1-477d-b84c-eec7810e027b"
+    },
+    "200": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "f803c9f4-8ad4-4ee2-a2b7-0b011ffc9064",
+        "target": "OWNER",
+        "NodeID": 199
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "ff0d740a-7e57-4d52-aed2-bae9e9a66b6d",
+      "effectId": "Eff_Monster_90207_Skill_Smash_Explosion",
+      "speed": 1,
+      "NodeID": 200
+    },
+    "110": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -2.5,
+        0,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "9984d20e-c573-47fa-9e5b-700282e7a400",
+      "effectId": "Eff_Monster_90207_Skill_WallPopout",
+      "offsetRotation": [
+        0,
+        -45,
+        0
+      ],
+      "NodeID": 110
+    },
+    "133": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902070232,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      },
+      "UID": "87b2ae47-3fda-4805-94bc-4efead218b2b",
+      "target": "TARGET",
+      "NodeID": 133,
+      "attackData": {
+        "weaponSoundType": "blunt",
+        "hitSoundType": "s",
+        "impulseId": 5004,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 8,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "31": {
+      "triggerName": "Smash_PullBack_End",
+      "name": "setEffectAnimTrigger",
+      "UID": "069da398-00e8-4865-81e6-049501cee22b",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "114": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 29020715,
+      "NodeID": 114,
+      "UID": "637c2478-c570-4371-9e75-37ac7baf2636",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "286": {
+      "dialogId": 20000169,
+      "name": "showDialog",
+      "UID": "addd2e18-a441-4314-9b22-e9af1d62e09b",
+      "target": {
+        "relation": 2,
+        "heightDown": 2,
+        "heightUp": 5,
+        "UID": "3606ef94-fb89-4dc1-9123-8109eb02c6b7",
+        "radius": 30,
+        "name": "searchEntity",
+        "NodeID": 285
+      },
+      "NodeID": 286
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18,
+          21,
+          50,
+          149,
+          216
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10.15,
+      "NodeID": 20,
+      "UID": "580bd3d1-b466-4329-b96c-bcc3e2d38bf1"
+    },
+    "21": {
+      "triggerName": "Smash_Attack",
+      "name": "setEffectAnimTrigger",
+      "UID": "6e411f59-d2db-4015-a30d-d250b05b8e55",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "22": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7b6447c9-0995-4411-a975-45ef03ae8fb8",
+      "target": "OWNER",
+      "NodeID": 22,
+      "animId": "Skill_PullBack_Start"
+    },
+    "144": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "40bddaa9-c020-46b2-a36c-60a53bce9ed0",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_QuickAttack",
+      "NodeID": 144
+    },
+    "149": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ea0b3f4e-aaea-436f-a29b-87ebd98c360d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_Attack_Whoosh",
+      "NodeID": 149
+    },
+    "284": {
+      "id": 2034,
+      "hasCountDown": true,
+      "NodeID": 284,
+      "UID": "7942dd48-1303-4652-b45d-bc0cfe621f25",
+      "name": "hideBossMechanismTip"
+    },
+    "222": {
+      "UID": "f89271ca-33e6-4a8d-a513-8cdc8a71fd42",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 222
+    },
+    "281": {
+      "buffId": 90207001,
+      "name": "removeBuff",
+      "UID": "4d23dadd-cb12-4b9b-b757-ca5b083e2b02",
+      "target": "OWNER",
+      "NodeID": 281
+    },
+    "25": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7a29b362-d879-4345-b4b2-8e11bbb5f3f6",
+      "target": "OWNER",
+      "NodeID": 25,
+      "animId": "Skill_PullBack_Loop"
+    },
+    "280": {
+      "templateId": 1009207,
+      "name": "checkTargetTemplateId",
+      "UID": "36ba76a4-fa77-4130-8b2f-9565325e4100",
+      "target": "OWNER",
+      "NodeID": 280
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          32,
+          198,
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 12.5,
+      "NodeID": 27,
+      "UID": "420ac3d7-b77e-41e2-a516-8f9e6f85c34a"
+    },
+    "28": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3421760c-5679-490a-b934-cea86521a1d0",
+      "target": "OWNER",
+      "NodeID": 28,
+      "animId": "Skill_PullBack_End"
+    },
+    "59": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902070232,
+        "type": 2,
+        "instant_dmg_hp_max_p": "param3"
+      },
+      "UID": "04374c92-cbb7-4752-b5c8-cb47026e11ee",
+      "target": "OWNER",
+      "NodeID": 59,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28,
+          31,
+          196,
+          34,
+          49,
+          146
+        ]
+      },
+      "eventType": "Notify",
+      "time": 22.5,
+      "NodeID": 30,
+      "UID": "e2b8b660-b136-4c77-8add-4eea6f352079"
+    },
+    "32": {
+      "triggerName": "Smash_PullBack_Loop",
+      "name": "setEffectAnimTrigger",
+      "UID": "cb7d74b6-e08c-403b-896b-68b6d1977e7a",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "triggerName": "Smash_PullBack_Start",
+      "name": "setEffectAnimTrigger",
+      "UID": "f8d47a18-2cdf-4881-ad53-38bfec0fe52a",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "name": "stopEffectStr",
+      "UID": "ce61abc2-cd40-43a2-923c-5359a09806a2",
+      "effectId": "Eff_Monster_90207_Skill_PullBack_Loop",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "271": {
+      "offsetXYZ": [
+        0,
+        0,
+        6
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "909844bd-8909-4113-bf93-0ca18b217f4e",
+      "effectId": "Eff_Monster_90207_Skill_Smash_FistPopout_01",
+      "speed": 1,
+      "NodeID": 271
+    },
+    "62": {
+      "UID": "35649f05-ec13-4d46-b20f-33c36ac21b7c",
+      "name": "callClientAction",
+      "actionIds": [
+        60,
+        63,
+        166,
+        286
+      ],
+      "NodeID": 62
+    },
+    "38": {
+      "UID": "a2788dd8-7376-4146-8474-f65732e0381e",
+      "name": "enableVineChainTraceTarget",
+      "enable": true,
+      "NodeID": 38
+    },
+    "268": {
+      "noiseRotSeeds": [
+        0,
+        0,
+        0
+      ],
+      "affectCameraAnim": true,
+      "NodeID": 268,
+      "UID": "575706e5-77d0-47b7-abc0-17e24fd60024",
+      "target": "TARGET",
+      "checkCasterIsPlayer": false,
+      "name": "playCameraPerlinNoiseImpulse",
+      "shakeDissipationDistance": 28,
+      "shakeFrequency": 25,
+      "shakeKeepTime": 0.2,
+      "shakeRadius": 2,
+      "shakeTime": 0.15,
+      "noisePosAmplitudes": [
+        0.15,
+        0.6,
+        0.15
+      ],
+      "noisePosSeeds": [
+        0,
+        1,
+        0
+      ],
+      "noiseRotAmplitudes": [
+        0,
+        0,
+        0
+      ]
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          267,
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.65,
+      "NodeID": 40,
+      "UID": "f0434875-3cd2-4110-a04e-70a385568f11"
+    },
+    "41": {
+      "target": "OWNER",
+      "duration": 15,
+      "buffId": 10066,
+      "NodeID": 41,
+      "UID": "6fd34e9b-8fb0-4eb2-a898-b1d1390b9581",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "266": {
+      "UID": "36eb8508-6ec7-4561-85ce-726dafc0232d",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "name": "getEffectAnimator",
+      "NodeID": 266
+    },
+    "43": {
+      "actionIds": [
+        47,
+        57,
+        282,
+        284,
+        59,
+        62,
+        114,
+        170,
+        251,
+        41
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "bd4b5ea1-11ea-4f3a-ba08-a856b628af86",
+      "name": "doActionsByConditions",
+      "NodeID": 43
+    },
+    "65": {
+      "followTransform": {
+        "NodeID": 64,
+        "UID": "2c134861-bc66-49e0-a16d-0761f5da2308",
+        "effectId": "Eff_SkillObj_90207_Vine",
+        "childName": "Bone Hand Position",
+        "name": "getEffectTransform"
+      },
+      "target": "OWNER",
+      "postFollowType": 1,
+      "NodeID": 65,
+      "UID": "8d1882d1-7d17-4b1c-bd09-14dc8f71b5bc",
+      "effectId": "Eff_Monster_90207_Skill_Smash_Indicator_1",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "170": {
+      "key": "90207HammerCurHp",
+      "name": "setCacheVal",
+      "UID": "e9f4af2a-d43a-4b90-b40c-e8200863e184",
+      "target": "OWNER",
+      "val": -1,
+      "NodeID": 170
+    },
+    "66": {
+      "action": {
+        "actionIds": [
+          65
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 66,
+      "UID": "8076cf98-776c-490a-9b2e-c8abd322d0a4"
+    },
+    "265": {
+      "UID": "79a86b4a-3b0a-4f12-96c4-e6249357b8cc",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "lightGrassOn",
+      "NodeID": 265
+    },
+    "67": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f2a94401-06f5-4749-bad3-995032a6d29e",
+      "target": "OWNER",
+      "NodeID": 67,
+      "animId": "Skill_Smash_QuickAttack"
+    },
+    "262": {
+      "UID": "9607ce24-cf37-4f18-b0b8-ebd1092c4456",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "lightGrassOn",
+      "NodeID": 262
+    },
+    "261": {
+      "action": {
+        "actionIds": [
+          260
+        ]
+      },
+      "eventType": "Notify",
+      "time": 11.3,
+      "NodeID": 261,
+      "UID": "5cfb457e-bb01-422f-962a-6e85c414c26a"
+    },
+    "257": {
+      "action": {
+        "actionIds": [
+          254
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.3,
+      "NodeID": 257,
+      "UID": "989d6e92-9dcc-45f8-ae0e-7320457bd8d8"
+    },
+    "69": {
+      "action": {
+        "actionIds": [
+          67,
+          71,
+          72,
+          148,
+          213
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 69,
+      "UID": "16200b38-afc2-4067-a35d-6289ef0f577c"
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cf32a87c-fcd1-4a34-8990-f248664d1654",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Skill_Smash_Prepare"
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          67,
+          71,
+          72,
+          148,
+          213
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7,
+      "NodeID": 70,
+      "UID": "459d1b52-d4a9-4f92-941a-e35923fbc054"
+    },
+    "256": {
+      "action": {
+        "actionIds": [
+          254
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.3,
+      "NodeID": 256,
+      "UID": "3b4b4d64-081f-44cc-bbb5-07ef1e98b6c1"
+    },
+    "71": {
+      "triggerName": "Smash_QuickAttack",
+      "name": "setEffectAnimTrigger",
+      "UID": "fb8d6a17-c62e-479f-963b-609eb3441cc7",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 71
+    },
+    "254": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6f4f8a20-d9a5-407d-8f8a-18876515fbf7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat_Whoosh01",
+      "NodeID": 254
+    },
+    "72": {
+      "UID": "85b02909-d03d-44db-bc43-e59e56cd26bc",
+      "name": "enableVineChainTraceTarget",
+      "enable": false,
+      "NodeID": 72
+    },
+    "252": {
+      "triggerName": "LeaveCombat",
+      "name": "setEffectAnimTrigger",
+      "UID": "bbaf8068-dd54-42e9-a8ef-f37c094e7c30",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 252
+    },
+    "73": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f8c67471-9772-4666-8d6e-d34064088817",
+      "target": "OWNER",
+      "NodeID": 73,
+      "animId": "Skill_Smash_Loop"
+    },
+    "250": {
+      "time": 1.5,
+      "rotateSpeed": 120,
+      "name": "rotateTo",
+      "UID": "87f24277-6d9d-4c9e-ad17-4eb45152e600",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 250
+    },
+    "249": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 10075,
+      "NodeID": 249,
+      "UID": "32ef4b18-f452-45c1-b350-da08f0d43f8d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "50": {
+      "UID": "73d035e7-8346-469d-8300-1524199b35bd",
+      "name": "enableVineChainTraceTarget",
+      "enable": false,
+      "NodeID": 50
+    },
+    "46": {
+      "buffId": 10064,
+      "name": "removeBuff",
+      "UID": "ec59843c-0d49-4e8e-8f2b-4687539ba545",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "47": {
+      "actionIds": [
+        281
+      ],
+      "conditionActionIds": [
+        280
+      ],
+      "UID": "2f70bad2-b6ca-42c7-8442-82e94912887e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        46
+      ],
+      "NodeID": 47
+    },
+    "45": {
+      "tickInterval": 0.01,
+      "eventType": "NotifyState",
+      "endTime": 22.7,
+      "NodeID": 45,
+      "UID": "989e217b-0381-4dae-8981-39beebcab674",
+      "onUpdate": {
+        "actionIds": [
+          43
+        ]
+      },
+      "startTime": 12,
+      "onEnter": {
+        "actionIds": [
+          43
+        ]
+      }
+    },
+    "104": {
+      "action": {
+        "actionIds": [
+          288,
+          188,
+          143,
+          102
+        ]
+      },
+      "eventType": "Notify",
+      "time": 12,
+      "NodeID": 104,
+      "UID": "f90f045a-fac5-493a-9723-9f5641c3785a"
+    },
+    "17": {
+      "triggerName": "Smash_Loop",
+      "name": "setEffectAnimTrigger",
+      "UID": "15b09b4d-0cc1-4a39-b806-4c43999baea0",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "183": {
+      "duration": 0.3,
+      "NodeID": 183,
+      "UID": "e9b2c1af-1564-48c2-8617-018ed73e7136",
+      "target": "TARGET",
+      "speed": 11,
+      "name": "forceDisplacement",
+      "ignoreCollision": true,
+      "displacementTarget": "OWNER",
+      "displacementDir": "OUT",
+      "ignoreYAxis": true,
+      "ignoreKnockST": true
+    },
+    "63": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "871e9112-5518-47ba-8474-b023198d7846",
+      "effectId": "Eff_Monster_90207_Hit",
+      "speed": 1,
+      "NodeID": 63
+    },
+    "188": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "9b3c17b1-cba6-48d5-8adf-a39ec5e08347",
+        "target": "OWNER",
+        "NodeID": 187
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "54ed8067-d832-45a5-b2f2-2c1ff5eb66b3",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Smash_End",
+      "speed": 1,
+      "NodeID": 188
+    },
+    "124": {
+      "offsetXYZ": [
+        0,
+        0,
+        6
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4f0446f4-a61a-463d-9e94-a74bd4f59945",
+      "effectId": "Eff_Monster_90207_Skill_Smash_FistPopout",
+      "speed": 1,
+      "NodeID": 124
+    },
+    "189": {
+      "key": "HammerAttackPos",
+      "name": "getCacheVal",
+      "UID": "f4bc3fcc-35bf-4dde-a1df-c9be172d07e7",
+      "target": "OWNER",
+      "NodeID": 189
+    },
+    "157": {
+      "action": {
+        "actionIds": [
+          205,
+          155,
+          265
+        ]
+      },
+      "eventType": "Notify",
+      "time": 12,
+      "NodeID": 157,
+      "UID": "311416ac-da72-41f5-9060-b310d24aec82"
+    },
+    "142": {
+      "key": "90207_Hammer",
+      "name": "setServerCacheVal",
+      "UID": "0f115034-b792-40e3-b501-da1213ccb7e0",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 9020704,
+        "name": "createEntity",
+        "UID": "d1e17753-abbd-4d1f-a707-0748957ed18b",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": {
+          "key": "90207HammerCurHp",
+          "name": "getCacheVal",
+          "UID": "12d57521-3e84-49c9-b021-b0e46a925218",
+          "target": "OWNER",
+          "NodeID": 140
+        },
+        "entityName": "Creation",
+        "stick": 0,
+        "NodeID": 141,
+        "pos": {
+          "UID": "bb2a8161-a4c0-43c4-817b-df43e9affc28",
+          "name": "getClientPreparedData",
+          "index": "1",
+          "NodeID": 223
+        }
+      },
+      "NodeID": 142
+    },
+    "135": {
+      "actionIds": [
+        133
+      ],
+      "NodeID": 135,
+      "UID": "55146272-61a2-48c8-8c26-d9e20c1715a1",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            0.2,
+            180,
+            0.3,
+            0.3
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "key": "HammerAttackPos",
+            "name": "getCacheVal",
+            "UID": "bbc07eae-266e-4249-a85d-6c6cb225b852",
+            "target": "OWNER",
+            "NodeID": 201
+          },
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 133,
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 15,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 5,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "143": {
+      "name": "prepareDataForServerActions",
+      "UID": "ce290355-5d80-432e-aa6f-9c1067351e80",
+      "serverActionsIds": [
+        142
+      ],
+      "NodeID": 143,
+      "dataActions": [
+        {
+          "key": "HammerAttackPos",
+          "name": "getCacheVal",
+          "UID": "f4bc3fcc-35bf-4dde-a1df-c9be172d07e7",
+          "target": "OWNER",
+          "NodeID": 189
+        }
+      ]
+    },
+    "191": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "294589d8-0f2a-4334-8994-036bfaedee89",
+        "target": "OWNER",
+        "NodeID": 190
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "871479af-55bf-4158-bbe4-131cba7feb00",
+      "effectId": "Eff_Monster_90207_Skill_Smash_Explosion",
+      "speed": 1,
+      "NodeID": 191
+    },
+    "205": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "2c77846f-b8b5-4502-ba5a-cfeac2b49712",
+        "target": "OWNER",
+        "NodeID": 204
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "ca73bfad-ddbf-4e8c-bea7-99c10334c2ce",
+      "effectId": "Eff_Monster_90207_Skill_Smash_GroundWave",
+      "speed": 1,
+      "NodeID": 205
+    },
+    "160": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "22b2dedf-0d84-454c-8d9e-cd0502878b52",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_Prepare_Wall01",
+      "NodeID": 160
+    },
+    "194": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "0c0ff7ab-aa2a-458b-8db4-8e1a2f46daf5",
+        "target": "OWNER",
+        "NodeID": 193
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "10c57da0-433a-4f23-bda7-22ae6b7c1633",
+      "effectId": "Eff_Monster_90207_Skill_Smash_GroundWave",
+      "speed": 1,
+      "NodeID": 194
+    },
+    "163": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9926e2b2-6fe4-434d-baaf-187226093a86",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_Prepare_HammerAppear",
+      "NodeID": 163
+    },
+    "165": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ab33b525-0705-4808-97a6-040ca7417fcb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_PullBack_Attack",
+      "NodeID": 165
+    },
+    "166": {
+      "key": "pullBackFalse",
+      "duration": 1,
+      "actionIds": [
+        165
+      ],
+      "NodeID": 166,
+      "UID": "fe687a11-d1d1-463b-b5bc-e8a2a8204410",
+      "name": "addEntityTimer"
+    },
+    "196": {
+      "pos": {
+        "key": "HammerAttackPos",
+        "name": "getCacheVal",
+        "UID": "c4470e56-46b8-4c53-aae5-b940a70a68ed",
+        "target": "OWNER",
+        "NodeID": 195
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "45182916-3db8-4860-b347-7ee96aa035b6",
+      "effectId": "Eff_Monster_90207_Skill_Smash_PullBack",
+      "speed": 1,
+      "NodeID": 196
+    },
+    "167": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "51d62215-86fa-4ba0-9841-eff844643d39",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_PullBack",
+      "NodeID": 167
+    },
+    "172": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 10000
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "disableShowJumpWord": true,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 5002,
+        "hitCameraShakeId": 20100
+      },
+      "UID": "1b4c2475-5795-443c-ab8e-157d3c1f5bb4",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 172
+    },
+    "176": {
+      "tickInterval": 0.05,
+      "eventType": "NotifyState",
+      "endTime": 3.8,
+      "NodeID": 176,
+      "UID": "62f5a45e-7d1a-4164-9231-f007dec2d66b",
+      "onUpdate": {
+        "actionIds": [
+          174
+        ]
+      },
+      "startTime": 3.4,
+      "onEnter": {
+        "actionIds": [
+          174
+        ]
+      }
+    },
+    "148": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0134b929-85dc-4098-823b-367afeefc2c2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_QuickAttack_Whoosh",
+      "NodeID": 148
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "d976b767-5cd2-440a-ab0a-5dbb49356f9a",
+      "effectId": "Eff_Monster_90207_Skill_Smash_PullBack",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "37": {
+      "UID": "d8e80216-6cbb-4b58-938d-268afce4c36b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          222,
+          122,
+          127,
+          35,
+          113,
+          117,
+          119,
+          271
+        ]
+      },
+      "NodeID": 37
+    },
+    "147": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7e35e0a1-e994-457d-8111-9dbb159657ba",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_Smash_QuickAttack",
+      "NodeID": 147
+    },
+    "76": {
+      "triggerName": "Smash_Loop",
+      "name": "setEffectAnimTrigger",
+      "UID": "d317a005-ed60-4967-8c6c-3dc18da685e4",
+      "effectId": "Eff_SkillObj_90207_Vine",
+      "target": "OWNER",
+      "NodeID": 76
+    },
+    "57": {
+      "key": "90207VineBreakS",
+      "name": "setServerCacheVal",
+      "UID": "d913a5b2-bac9-463c-bc4c-e4cc53fca575",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 57
+    },
+    "75": {
+      "action": {
+        "actionIds": [
+          73,
+          76,
+          77
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.2,
+      "NodeID": 75,
+      "UID": "1c001f52-25a7-4e2a-bf79-a23199dd9102"
+    },
+    "56": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "0a82ddf8-5fa4-4f0e-a814-c912b0869f2b",
+      "NodeID": 56,
+      "lValue": {
+        "key": "90207VineBreakS",
+        "name": "getServerCacheVal",
+        "UID": "d581d1d0-6cb1-438c-869f-edf32ee3f0c6",
+        "target": "OWNER",
+        "NodeID": 55
+      }
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22,
+          33,
+          145
+        ]
+      },
+      "eventType": "Notify",
+      "time": 12.2,
+      "NodeID": 24,
+      "UID": "d88241ad-ef65-4d65-ac49-6e110b7e9fc7"
+    },
+    "232": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 1,
+      "NodeID": 232,
+      "UID": "14d04f1c-c4d0-4cf2-a299-03a68bc11857",
+      "onUpdate": {
+        "actionIds": [
+          229,
+          245
+        ]
+      },
+      "startTime": 0.7,
+      "onEnter": {
+        "actionIds": [
+          229,
+          245
+        ]
+      }
+    },
+    "236": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7be7aee4-6682-47fd-a194-18c46c2308ca",
+      "effectId": "Eff_Monster_90207_Skill_RoarAttack02",
+      "speed": 1,
+      "NodeID": 236
+    },
+    "174": {
+      "actionIds": [
+        172,
+        183
+      ],
+      "NodeID": 174,
+      "UID": "c4b14e73-a549-458e-aba1-d43fb9cb5f3d",
+      "ignoreAbilityElement": true,
+      "hitBoxId": "9020702311",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            8,
+            5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "impulseId": 5002,
+      "calcResultNodeId": 172
+    }
+  },
+  "BPName": "ability_902070232",
+  "NodeID": 7,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    220,
+    37,
+    5,
+    104,
+    66,
+    15,
+    126,
+    40,
+    20,
+    45,
+    24,
+    210,
+    30,
+    108,
+    238,
+    231,
+    232,
+    164,
+    27,
+    69,
+    269,
+    85,
+    16,
+    70,
+    137,
+    75,
+    157,
+    169,
+    176,
+    186,
+    185,
+    256,
+    257,
+    255,
+    259,
+    261,
+    225
+  ],
+  "layer": "Base",
+  "length": 24.8
+}

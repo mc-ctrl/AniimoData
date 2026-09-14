@@ -1,0 +1,291 @@
+{
+  "91331344": {
+    "owner": "路司机",
+    "position": [
+      10.14,
+      12.32,
+      -16.24
+    ],
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 0,
+      "autoSetContent1": true,
+      "initState": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 91331344,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "SloganPlayOnce": false,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "关键生态点",
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "markType": 0,
+      "affiliatedCamp": {},
+      "arriveParam": {},
+      "arriveType": 1,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91331365,
+    "levelItems": {
+      "91331346": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "LevelOfViolencE",
+        "position": [
+          11.96,
+          0.59,
+          -20.71
+        ],
+        "rotation": [
+          0,
+          255.01,
+          0
+        ],
+        "id": 91331346,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91331347": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_Trigger_Sphere_SB",
+        "position": [
+          9.32,
+          1.06,
+          -14.08
+        ],
+        "rotation": [
+          0,
+          255.01,
+          0
+        ],
+        "id": 91331347,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "scale": [
+          12.22,
+          9.54,
+          9.54
+        ],
+        "isActive": true
+      },
+      "91342408": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          6.58,
+          39.39,
+          -13.35
+        ],
+        "rotation": [
+          0,
+          347.45,
+          0
+        ],
+        "id": 91342408,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          36.73,
+          1,
+          35.15
+        ],
+        "isActive": true
+      },
+      "91349070": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          6.41,
+          0.99,
+          -4.26
+        ],
+        "rotation": [
+          0,
+          343.6,
+          0
+        ],
+        "id": 91349070,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          24.29,
+          2.42,
+          19.55
+        ],
+        "isActive": true
+      },
+      "91349084": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否自言自语",
+        "position": [
+          11.96,
+          12.59,
+          -20.71
+        ],
+        "rotation": [
+          0,
+          255.01,
+          0
+        ],
+        "id": 91349084,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91349253": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否不再创建走调草",
+        "position": [
+          11.96,
+          12.59,
+          -20.71
+        ],
+        "rotation": [
+          0,
+          255.01,
+          0
+        ],
+        "id": 91349253,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91331345": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "是否检测到玩家",
+        "position": [
+          11.96,
+          12.59,
+          -20.71
+        ],
+        "rotation": [
+          0,
+          255.01,
+          0
+        ],
+        "id": 91331345,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "7号洞穴内容",
+    "spawners": [
+      91331358,
+      91331360,
+      91331364,
+      91331946,
+      91332303,
+      91339890
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7507/Sandbox_91331344_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91331344,
+    "markIconSpawnerId": 0,
+    "chunk": 1019874
+  }
+}

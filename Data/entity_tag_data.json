@@ -1,0 +1,540 @@
+{
+  "TE_Cre_Bubble": {
+    "value": 120
+  },
+  "TE_Cre_Dark": {
+    "value": 59
+  },
+  "TE_Cre_DuckBait": {
+    "value": 26
+  },
+  "TE_Cre_Elec": {
+    "value": 61
+  },
+  "TE_Cre_Fire": {
+    "value": 60
+  },
+  "TE_Cre_Grass": {
+    "value": 62
+  },
+  "TE_Cre_Holy": {
+    "value": 63
+  },
+  "TE_Cre_Ice": {
+    "value": 64
+  },
+  "TE_Cre_Light": {
+    "value": 91
+  },
+  "TE_Cre_Rock": {
+    "value": 65
+  },
+  "TE_Cre_Water": {
+    "value": 58
+  },
+  "TE_Cre_Wind": {
+    "value": 66
+  },
+  "TE_DragonCry": {
+    "value": 80
+  },
+  "TE_DragonFinish": {
+    "value": 76
+  },
+  "TE_DragonHappy": {
+    "value": 82
+  },
+  "TE_DragonOpenChest": {
+    "value": 75
+  },
+  "TE_DragonSleep": {
+    "value": 83
+  },
+  "TE_Env_10021_KickStone": {
+    "value": 22
+  },
+  "TE_Env_10023_Attraction": {
+    "value": 35
+  },
+  "TE_Env_10023_KickStone": {
+    "value": 52
+  },
+  "TE_Env_10024_KickStone": {
+    "value": 99
+  },
+  "TE_Env_10051_FireShrub": {
+    "value": 23
+  },
+  "TE_Env_10141Morphling": {
+    "value": 156
+  },
+  "TE_Env_10291_SnowBall": {
+    "value": 143
+  },
+  "TE_Env_10381_eat": {
+    "value": 144
+  },
+  "TE_Env_10381_fight": {
+    "value": 147
+  },
+  "TE_Env_10581_eat": {
+    "value": 145
+  },
+  "TE_Env_Attaching": {
+    "value": 124
+  },
+  "TE_Env_Bait": {
+    "value": 20
+  },
+  "TE_Env_Ball": {
+    "value": 25
+  },
+  "TE_Env_BeUsed": {
+    "value": 73
+  },
+  "TE_Env_BeeNest": {
+    "value": 161
+  },
+  "TE_Env_BeeNestPlatform": {
+    "value": 162
+  },
+  "TE_Env_BlastTree": {
+    "value": 123
+  },
+  "TE_Env_BounceFurrClose": {
+    "value": 137
+  },
+  "TE_Env_BreakableStone": {
+    "value": 50
+  },
+  "TE_Env_CE_Budclaw_A": {
+    "value": 8
+  },
+  "TE_Env_CE_Budclaw_B": {
+    "value": 9
+  },
+  "TE_Env_CE_Budclaw_C": {
+    "value": 10
+  },
+  "TE_Env_CE_Budclaw_D": {
+    "value": 11
+  },
+  "TE_Env_DewyNest": {
+    "value": 71
+  },
+  "TE_Env_DewyNestPlatform": {
+    "value": 72
+  },
+  "TE_Env_DigShells": {
+    "value": 36
+  },
+  "TE_Env_Empty": {
+    "value": 24
+  },
+  "TE_Env_EndMark": {
+    "value": 14
+  },
+  "TE_Env_FallenLeaves": {
+    "value": 77
+  },
+  "TE_Env_Food": {
+    "value": 1
+  },
+  "TE_Env_GoldSheepFur": {
+    "value": 37
+  },
+  "TE_Env_Heal": {
+    "value": 18
+  },
+  "TE_Env_InflameState": {
+    "value": 132
+  },
+  "TE_Env_IsMechanismBall": {
+    "value": 28
+  },
+  "TE_Env_Leave_Maku1_1": {
+    "value": 3
+  },
+  "TE_Env_Leave_Maku1_2": {
+    "value": 4
+  },
+  "TE_Env_Light": {
+    "value": 90
+  },
+  "TE_Env_Metal": {
+    "value": 31
+  },
+  "TE_Env_MoveTest": {
+    "value": 2
+  },
+  "TE_Env_Move_Quest_1": {
+    "value": 6
+  },
+  "TE_Env_Move_Quest_2": {
+    "value": 7
+  },
+  "TE_Env_Mud": {
+    "value": 154
+  },
+  "TE_Env_Nest": {
+    "value": 5
+  },
+  "TE_Env_NightFlower": {
+    "value": 160
+  },
+  "TE_Env_QuestNpc_MovePoint": {
+    "value": 15
+  },
+  "TE_Env_QuestWolf_Chest": {
+    "value": 12
+  },
+  "TE_Env_SadCloud": {
+    "value": 133
+  },
+  "TE_Env_SheepStick": {
+    "value": 27
+  },
+  "TE_Env_SleepFruit": {
+    "value": 121
+  },
+  "TE_Env_Starise": {
+    "value": 84
+  },
+  "TE_Wild_SadCloud_01": {
+    "value": 138
+  },
+  "TE_Wild_Velouria_Die": {
+    "value": 172
+  },
+  "TE_Env_StartMark": {
+    "value": 13
+  },
+  "TE_Env_Stone": {
+    "value": 57
+  },
+  "TE_Env_UniversalMark_A": {
+    "value": 40
+  },
+  "TE_Env_UniversalMark_B": {
+    "value": 41
+  },
+  "TE_Env_UniversalMark_C": {
+    "value": 42
+  },
+  "TE_Env_UniversalMark_D": {
+    "value": 43
+  },
+  "TE_Env_WayfindingPoint_A": {
+    "value": 44
+  },
+  "TE_Par_Affinity": {
+    "value": 167
+  },
+  "TE_Par_Alert": {
+    "value": 107
+  },
+  "TE_Par_Baited": {
+    "value": 146,
+    "clearOnClientInit": 1
+  },
+  "TE_Par_Chat": {
+    "value": 104
+  },
+  "TE_Par_Drunk": {
+    "value": 109
+  },
+  "TE_Par_10621_Fight": {
+    "value": 157
+  },
+  "TE_Par_AFK_NeedNoEffect": {
+    "value": 139
+  },
+  "TE_Par_Bellicose": {
+    "value": 129
+  },
+  "TE_Par_Dragon": {
+    "value": 16
+  },
+  "TE_Chest_10021": {
+    "value": 88
+  },
+  "TE_Chest_BacillusMycoidesRuber": {
+    "value": 39
+  },
+  "TE_Chest_ChargeTarget": {
+    "value": 51
+  },
+  "TE_Chest_Collectible": {
+    "value": 48
+  },
+  "TE_Chest_Collectible_Starise": {
+    "value": 100
+  },
+  "TE_Chest_Metal": {
+    "value": 33
+  },
+  "TE_Chest_SpiceFlower": {
+    "value": 68
+  },
+  "TE_Chest_StarFruit": {
+    "value": 56
+  },
+  "TE_Par_Whistle": {
+    "value": 17
+  },
+  "TE_Puppet_10021Run": {
+    "value": 81
+  },
+  "TE_Puppet_Alert10021AlertLine": {
+    "value": 86
+  },
+  "TE_Puppet_Alert10021Behav": {
+    "value": 74
+  },
+  "TE_Puppet_Alert10021Hide": {
+    "value": 87
+  },
+  "TE_Wild_10231_GetClose": {
+    "value": 116
+  },
+  "TE_Wild_10481_IsMimicry": {
+    "value": 118
+  },
+  "TE_Wild_10481_Stun": {
+    "value": 128
+  },
+  "TE_Wild_10501_Rage": {
+    "value": 122,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_10501_ReturnSleep": {
+    "value": 114
+  },
+  "TE_Wild_10501_Snore": {
+    "value": 131
+  },
+  "TE_Wild_90213_Blue": {
+    "value": 142
+  },
+  "TE_Wild_90213_Green": {
+    "value": 141
+  },
+  "TE_Wild_90213_Red": {
+    "value": 140
+  },
+  "TE_Wild_Assist_Robot": {
+    "value": 170
+  },
+  "TE_Wild_BattleState_1": {
+    "value": 163,
+    "clearOnClientInit": 1
+  },
+  "TE_Wild_BattleState_2": {
+    "value": 164,
+    "clearOnClientInit": 1
+  },
+  "TE_Wild_BattleState_3": {
+    "value": 165,
+    "clearOnClientInit": 1
+  },
+  "TE_Wild_BeChasedSheep": {
+    "value": 155
+  },
+  "TE_Wild_BeeHasHoney": {
+    "value": 158
+  },
+  "TE_Wild_BeeInNest": {
+    "value": 159,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_Berserk": {
+    "value": 153,
+    "clearOnClientInit": 1
+  },
+  "TE_Wild_Birds": {
+    "value": 53
+  },
+  "TE_Wild_Boss_Hard": {
+    "value": 67
+  },
+  "TE_Wild_CanBeFollowed": {
+    "value": 134
+  },
+  "TE_Wild_CatchFailure_1": {
+    "value": 125
+  },
+  "TE_Wild_CatchFailure_2": {
+    "value": 126
+  },
+  "TE_Wild_CatchFailure_3": {
+    "value": 127
+  },
+  "TE_Wild_CreatePlenty": {
+    "value": 110
+  },
+  "TE_Wild_Crystal": {
+    "value": 95
+  },
+  "TE_Wild_DewyHasHoney": {
+    "value": 78
+  },
+  "TE_Wild_DynamicInterruptPatrol": {
+    "value": 166
+  },
+  "TE_Wild_HelmonBeChased_10022": {
+    "value": 29
+  },
+  "TE_Wild_IsGrabbed": {
+    "value": 135,
+    "clearOnClientInit": 1
+  },
+  "TE_Wild_IsGrabbing": {
+    "value": 136,
+    "clearOnClientInit": 1
+  },
+  "TE_Par_ProtectChest": {
+    "value": 49
+  },
+  "TE_Par_Sleep": {
+    "value": 106,
+    "bindAnimList": [
+      "Behav_SleepLoop",
+      "Behav_SleepLoop02"
+    ]
+  },
+  "TE_Par_Stare": {
+    "value": 108
+  },
+  "TE_Wild_10471_MimicryLeave": {
+    "value": 115,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_CatchToturialAngry": {
+    "value": 101,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_Demonic": {
+    "value": 130,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_DewyInNest": {
+    "value": 79,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_GUIDE": {
+    "value": 102,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_GamePlay": {
+    "value": 70,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_GiantUnits": {
+    "value": 97,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_HasOwner": {
+    "value": 69,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_Hypnosis": {
+    "value": 98
+  },
+  "TE_Wild_OneTime": {
+    "value": 85,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_SceneDecorate": {
+    "value": 89,
+    "ignoreCatchAbsorbAndDump": true
+  },
+  "TE_Wild_Stun": {
+    "value": 94
+  },
+  "TE_Wild_Route_5": {
+    "bindRoute": 1,
+    "value": 152
+  },
+  "TE_Wild_Route_4": {
+    "bindRoute": 1,
+    "value": 151
+  },
+  "TE_Wild_Route_3": {
+    "bindRoute": 1,
+    "value": 150
+  },
+  "TE_Wild_Route_2": {
+    "bindRoute": 1,
+    "value": 149
+  },
+  "TE_Wild_Route_1": {
+    "bindRoute": 1,
+    "value": 148
+  },
+  "TE_Wild_Robot": {
+    "value": 30
+  },
+  "TE_Wild_PetMark": {
+    "value": 55
+  },
+  "TE_Wild_Mustelidae": {
+    "value": 54
+  },
+  "TE_Wild_Metal": {
+    "value": 32
+  },
+  "TE_Wild_LittlePirateCrab": {
+    "value": 168
+  },
+  "TE_Wild_Light": {
+    "value": 92
+  },
+  "TE_Wild_Leader": {
+    "value": 96
+  },
+  "TE_PLOT_ST": {
+    "value": 38
+  },
+  "TE_MantisGuard": {
+    "value": 113
+  },
+  "TE_Env_WayfindingPoint_D": {
+    "value": 47
+  },
+  "TE_Env_WayfindingPoint_C": {
+    "value": 46
+  },
+  "TE_Env_WayfindingPoint_B": {
+    "value": 45
+  },
+  "TE_Par_Eat": {
+    "value": 105
+  },
+  "TE_Par_Fly": {
+    "value": 19
+  },
+  "TE_Par_FollowEntity": {
+    "value": 34
+  },
+  "TE_Par_GroupCombat_TokenHolder": {
+    "value": 119
+  },
+  "TE_Par_IsInCombat": {
+    "value": 117
+  },
+  "TE_Par_IsInFog": {
+    "value": 21
+  },
+  "TE_Par_Leave": {
+    "value": 103
+  },
+  "TE_Par_Light": {
+    "value": 93
+  },
+  "TE_Par_ThreatPool1": {
+    "value": 111
+  },
+  "TE_Par_ThreatPool2": {
+    "value": 112
+  }
+}

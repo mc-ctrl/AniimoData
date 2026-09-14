@@ -1,0 +1,430 @@
+{
+  "26020204": {
+    "behavName": "ActivateAIRoute",
+    "priority": 55
+  },
+  "26020205": {
+    "priority": 60,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      54926223
+    ]
+  },
+  "26020831": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      72292685
+    ]
+  },
+  "26020832": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      72478172
+    ]
+  },
+  "26020833": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      72690110
+    ]
+  },
+  "26020202": {
+    "priority": 40,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      54925691
+    ]
+  },
+  "26020835": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      72874660
+    ]
+  },
+  "26020836": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      72876251
+    ]
+  },
+  "26020837": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      73403026,
+      1
+    ]
+  },
+  "26020838": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      78404058
+    ]
+  },
+  "26020839": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      82158070
+    ]
+  },
+  "26040001": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      52569724
+    ]
+  },
+  "35020001": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      88261458
+    ]
+  },
+  "3707006": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      77980026
+    ]
+  },
+  "1": {
+    "priority": 10,
+    "behavName": "ActivateLoopState",
+    "behavParams": [
+      "Idle",
+      ""
+    ]
+  },
+  "2": {
+    "priority": 10,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      50789484
+    ]
+  },
+  "3": {
+    "priority": 20,
+    "behavName": "ActivateGroupBehavior",
+    "behavParams": {}
+  },
+  "4": {
+    "priority": 20,
+    "behavName": "ActivateLookAt",
+    "behavParams": {}
+  },
+  "1002": {
+    "priority": 10,
+    "behavName": "ActivateLoopState",
+    "behavParams": [
+      "Story_Discuss_Loop_02",
+      ""
+    ]
+  },
+  "35030101": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      66656972
+    ]
+  },
+  "35030102": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      66656975
+    ]
+  },
+  "35030103": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      66656973
+    ]
+  },
+  "35030104": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      66656974
+    ]
+  },
+  "37070001": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      77239111
+    ]
+  },
+  "37070002": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      77920383
+    ]
+  },
+  "37070003": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      77920426
+    ]
+  },
+  "37070004": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      77920817
+    ]
+  },
+  "37070005": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      77652767
+    ]
+  },
+  "37070007": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      78767933
+    ]
+  },
+  "37070008": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      84042557
+    ]
+  },
+  "40006001": {
+    "priority": 10,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      50789484
+    ]
+  },
+  "40006004": {
+    "behavType": "additive",
+    "behavName": "ActivateGroupBehavior",
+    "priority": 20
+  },
+  "5": {
+    "priority": 110,
+    "behavName": "ActivateFollowEntity",
+    "behavParams": {}
+  },
+  "40006011": {
+    "priority": 50,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      50843411
+    ]
+  },
+  "40006012": {
+    "priority": 50,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      51963587
+    ]
+  },
+  "65050001": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      90425907
+    ]
+  },
+  "90880035": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      90880035
+    ]
+  },
+  "90880397": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      90880397
+    ]
+  },
+  "370500101": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      91050735
+    ]
+  },
+  "370500102": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      91050733
+    ]
+  },
+  "370500103": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      91050724
+    ]
+  },
+  "370506401": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      91052271
+    ]
+  },
+  "370506402": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      91052269
+    ]
+  },
+  "1001": {
+    "priority": 10,
+    "behavName": "ActivateLoopState",
+    "behavParams": [
+      "Story_Discuss_Loop",
+      ""
+    ]
+  },
+  "35020191": {
+    "priority": 100,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      56714392
+    ]
+  },
+  "35020104": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      72688719,
+      1
+    ]
+  },
+  "35020103": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      64771219
+    ]
+  },
+  "35020102": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      64771267
+    ]
+  },
+  "35020101": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      64771048
+    ]
+  },
+  "35020002": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      90850123
+    ]
+  },
+  "26020834": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      72856739
+    ]
+  },
+  "26010102": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      62967516
+    ]
+  },
+  "26020111": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      52687286
+    ]
+  },
+  "3707008": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      78927718
+    ]
+  },
+  "26010101": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      62967516
+    ]
+  },
+  "26050101": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      58470929
+    ]
+  },
+  "26050102": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      58470974
+    ]
+  },
+  "26020112": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      52687650
+    ]
+  },
+  "26020113": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      60534802
+    ]
+  },
+  "26020114": {
+    "priority": 20,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      60550539
+    ]
+  },
+  "26020201": {
+    "priority": 30,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      54924978
+    ]
+  },
+  "26020203": {
+    "priority": 50,
+    "behavName": "ActivateAIRoute",
+    "behavParams": [
+      54925830
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": 0.5,
+    "speed_ratio_sprint_v": 0.5,
+    "runspeed_cur": 0.5,
+    "sidewalkspeed_cur": 0.5,
+    "walkbackspeed_cur": 0.5,
+    "walkspeed_cur": 0.5,
+    "speed_ratio_glide_v": 10,
+    "speed_ratio_walk_v": 0.5
+  },
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_1029"
+}

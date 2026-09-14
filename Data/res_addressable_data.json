@@ -1,0 +1,185 @@
+{
+  "Prefab_Claymore": {
+    "assetPath": "Prefab/Equip/Equip_Avatar/Claymore/Claymore_Model.prefab"
+  },
+  "Prefab_Damage_Number_Panel": {
+    "assetPath": "GUI/prefabs/damage_number_panel/damage_number_panel.prefab"
+  },
+  "Prefab_Destruction_Fractured": {
+    "assetPath": "DestructionTest/untitled_Fractured.prefab"
+  },
+  "Prefab_Destruction_Sphere": {
+    "assetPath": "DestructionTest/Sphere.prefab"
+  },
+  "Prefab_Dn_Player_Crit": {
+    "assetPath": "GUI/prefabs/damage_number_panel/dn_player_crit.prefab"
+  },
+  "Prefab_HUD_Panel": {
+    "assetPath": "GUI/prefabs/player_hud_panel/player_hud_panel.prefab"
+  },
+  "Prefab_Item_713009": {
+    "assetPath": "item/713009/prefabs/713009.prefab"
+  },
+  "Prefab_Login_Panel": {
+    "assetPath": "GUI/prefabs/login_panel/login_panel.prefab"
+  },
+  "SGUI_UI_Config": {
+    "assetPath": "SGUI/Config/UIConfig.asset"
+  },
+  "TTF_Default": {
+    "assetPath": "GUI/fonts/default.ttf"
+  },
+  "Text_Map_EN": {
+    "assetPath": "Adapter/I18N/TextMap_en.json"
+  },
+  "Text_Map_ZHCN": {
+    "assetPath": "Adapter/I18N/TextMap_zh_CN.json"
+  },
+  "Animal_Boar": {
+    "assetPath": "Prefab/Character/Animal/Animal_Boar/Animal_Boar.prefab"
+  },
+  "Animal_Boar_Ctrl": {
+    "assetPath": "Prefab/Character/Animal/Animal_Boar/Animal_Boar_Ctrl.controller"
+  },
+  "Animal_Chick": {
+    "assetPath": "Prefab/Character/Animal/Animal_Chick/Animal_Chick.prefab"
+  },
+  "Animal_Chick_Ctrl": {
+    "assetPath": "Prefab/Character/Animal/Animal_Chick/Animal_Chick_Ctrl.controller"
+  },
+  "Animal_Cock": {
+    "assetPath": "Prefab/Character/Animal/Animal_Cock/Animal_Cock.prefab"
+  },
+  "Animal_Cock_Ctrl": {
+    "assetPath": "Prefab/Character/Animal/Animal_Cock/Animal_Cock_Ctrl.controller"
+  },
+  "Animal_Sheep": {
+    "assetPath": "Prefab/Character/Animal/Animal_Sheep/Animal_Sheep.prefab"
+  },
+  "Animal_Sheep_Ctrl": {
+    "assetPath": "Prefab/Character/Animal/Animal_Sheep/Animal_Sheep_Ctrl.controller"
+  },
+  "Asset_PxAnimCurveData_Leizhenzi": {
+    "assetPath": "Adapter/ScriptableObject/EntityPxAniCurveData_lei.asset"
+  },
+  "Avatar_Boy": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Boy/Avatar_Boy.prefab"
+  },
+  "Avatar_Boy_Climb_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Boy/Avatar_Boy_Climb_Ctrl.controller"
+  },
+  "Avatar_Boy_Combat_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Boy/Avatar_Boy_Combat_Ctrl.controller"
+  },
+  "Avatar_Boy_Locomotion_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Boy/Avatar_Boy_Locomotion_Ctrl.controller"
+  },
+  "Avatar_Girl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Girl/Avatar_Girl.prefab"
+  },
+  "Avatar_Girl_Bow_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Girl/Avatar_Girl_Bow_Ctrl.controller"
+  },
+  "Avatar_Girl_Climb_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Girl/Avatar_Girl_Climb_Ctrl.controller"
+  },
+  "Avatar_Girl_Combat_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Girl/Avatar_Girl_Combat_Ctrl.controller"
+  },
+  "Avatar_Girl_Locomotion_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Girl/Avatar_Girl_Locomotion_Ctrl.controller"
+  },
+  "Avatar_Male_Claymore_Vulcan": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Male_Claymore_Vulcan/Avatar_Male_Claymore_Vulcan.prefab"
+  },
+  "Avatar_Male_Claymore_Vulcan_Locomotion_Ctrl": {
+    "assetPath": "Prefab/Character/Avatar/Avatar_Male_Claymore_Vulcan/Avatar_Male_Claymore_Vulcan_Locomotion_Ctrl.controller"
+  },
+  "BlastByte_Destruction_Fractrured": {
+    "assetPath": "DestructionTest/Fractured/untitled_Fractured_Fractured.blast.bytes"
+  },
+  "Eff_Avatar_Bow_Cold_ArrowFly": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Cold_ArrowFly.prefab"
+  },
+  "Eff_Avatar_Bow_Cold_FullLoop": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Cold_FullLoop.prefab"
+  },
+  "Eff_Avatar_Bow_Cold_FullStart": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Cold_FullStart.prefab"
+  },
+  "Eff_Avatar_Bow_Cold_Shoot": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Cold_Shoot.prefab"
+  },
+  "Eff_Avatar_Bow_Electric_ArrowFly": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Electric_ArrowFly.prefab"
+  },
+  "Eff_Avatar_Bow_Electric_FullLoop": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Electric_FullLoop.prefab"
+  },
+  "Eff_Avatar_Bow_Electric_FullStart": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Electric_FullStart.prefab"
+  },
+  "Eff_Avatar_Bow_Electric_Shoot": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Electric_Shoot.prefab"
+  },
+  "Eff_Avatar_Bow_Fire_ArrowFly": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Fire_ArrowFly.prefab"
+  },
+  "Eff_Avatar_Bow_Fire_FullLoop": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Fire_FullLoop.prefab"
+  },
+  "Eff_Avatar_Bow_Fire_FullStart": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Fire_FullStart.prefab"
+  },
+  "Eff_Avatar_Bow_Fire_Shoot": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Fire_Shoot.prefab"
+  },
+  "Eff_Avatar_Bow_None_ArrowFly": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_None_ArrowFly.prefab"
+  },
+  "Eff_Avatar_Bow_None_FullLoop": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_None_FullLoop.prefab"
+  },
+  "Eff_Avatar_Bow_None_FullStart": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_None_FullStart.prefab"
+  },
+  "Eff_Avatar_Bow_None_Shoot": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_None_Shoot.prefab"
+  },
+  "Eff_Avatar_Bow_Water_ArrowFly": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Water_ArrowFly.prefab"
+  },
+  "Eff_Avatar_Bow_Water_FullLoop": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Water_FullLoop.prefab"
+  },
+  "Eff_Avatar_Bow_Water_FullStart": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Water_FullStart.prefab"
+  },
+  "Eff_Avatar_Bow_Water_Shoot": {
+    "assetPath": "Prefab/Effect/Skill/Avatar/Avatar_Common/Eff_Avatar_Bow_Water_Shoot.prefab"
+  },
+  "EntityProfileData_Girl": {
+    "assetPath": "Adapter/ScriptableObject/EntityProfileData_Girl.asset"
+  },
+  "Monster_BeetleFighter": {
+    "assetPath": "Prefab/Character/Monster/Monster_BeetleFighter/Monster_BeetleFighter.prefab"
+  },
+  "Monster_BeetleFighter_Ctrl": {
+    "assetPath": "Prefab/Character/Monster/Monster_BeetleFighter/Monster_BeetleFighter_Ctrl.controller"
+  },
+  "Monster_Cyclops": {
+    "assetPath": "Prefab/Character/Monster/Monster_Cyclops/Monster_Cyclops.prefab"
+  },
+  "Monster_Cyclops_Ctrl": {
+    "assetPath": "Prefab/Character/Monster/Monster_Cyclops/Monster_Cyclops_Ctrl.controller"
+  },
+  "Monster_SmallWolf": {
+    "assetPath": "Prefab/Character/Monster/Monster_SmallWolf/Monster_SmallWolf.prefab"
+  },
+  "Monster_WhiteWolf": {
+    "assetPath": "Character/Monster/Monster_WhiteWolf/prefabs/38012_skeleton.prefab"
+  },
+  "Prefab_Bow": {
+    "assetPath": "Prefab/Equip/Equip_Avatar/Bow/Bow_Model.prefab"
+  }
+}

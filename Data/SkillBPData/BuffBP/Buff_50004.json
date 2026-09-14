@@ -1,0 +1,84 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50004",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "a29f8d78-327d-4c3a-82e1-7553b99a5286",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "e6bd4cb7-2e57-4dec-8bb5-d0f33a4048b0",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "eeb87237-38e1-4436-8e4d-b9f71918473b",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "6": {
+      "actionIds": [
+        12,
+        4
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "40c58650-59b4-4ab3-8c03-5e04f594919b",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "70e51b18-cd93-4452-8c58-25f89c482522",
+      "randomPercent": 20,
+      "name": "isRandom",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "720d5ce2-e1be-420f-80d7-79315af34ca6",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 11
+    },
+    "8": {
+      "isClearOld": true,
+      "UID": "6cc0714e-1c6c-46a9-933a-fe489db7bfd9",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 8,
+      "calcInfoByLuaConfig": {
+        "id": 50004,
+        "type": 1,
+        "taken_normal_attack_dmg_inc_rate_v": "param0"
+      }
+    },
+    "12": {
+      "UID": "8b6ff29a-eb87-4a8a-8d56-77f557ee805d",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

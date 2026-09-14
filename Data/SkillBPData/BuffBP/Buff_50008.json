@@ -1,0 +1,91 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50008",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "c6cf2c0d-4129-4c10-9e6e-737f8c1067c5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 8
+    },
+    "13": {
+      "UID": "6a0cc96f-3e5c-4a95-85ce-7158deedbfed",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 13
+    },
+    "6": {
+      "calcId": 50008,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 6,
+      "UID": "7985d9a8-80e2-426d-bf18-7487cbd42260",
+      "name": "getParamByLuaConfig"
+    },
+    "10": {
+      "UID": "0fa08f03-9bb7-4cda-841a-0521e3933eff",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        13,
+        8
+      ],
+      "NodeID": 10
+    },
+    "7": {
+      "rValue": {
+        "UID": "1befa719-5b50-4c87-b864-06aeeb9e2ddb",
+        "target": {
+          "UID": "e0b41aae-6121-4f83-a0a8-c9d1519f75f4",
+          "name": "getEventAttackTarget",
+          "NodeID": 14
+        },
+        "name": "getHpRatio",
+        "NodeID": 15
+      },
+      "name": "greater",
+      "UID": "ef374ca1-8cbf-4dea-b95a-da7cbe975a8d",
+      "NodeID": 7,
+      "lValue": {
+        "calcId": 50008,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 6,
+        "UID": "7985d9a8-80e2-426d-bf18-7487cbd42260",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "12": {
+      "isClearOld": true,
+      "UID": "bbda7baf-64a2-49a8-b3f6-b7b20d27130d",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 12,
+      "calcInfoByLuaConfig": {
+        "id": 50008,
+        "taken_dmg_inc_rate_v": "param2",
+        "type": 1
+      }
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 50008,
+    "type": 1,
+    "common_def_penetration_rate_v": "param0"
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10
+  ]
+}

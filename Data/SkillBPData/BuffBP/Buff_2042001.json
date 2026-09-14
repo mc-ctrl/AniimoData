@@ -1,0 +1,171 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2042001",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "21": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "135fb7ef-b3f5-4245-a88b-9d73cd46db45",
+      "name": "buffStartThink",
+      "NodeID": 21
+    },
+    "4": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 9,
+      "NodeID": 4,
+      "UID": "fff8eab8-a111-4d3d-b0b6-0999dab9e803",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CURPET",
+          "rotFrom": "CURPET"
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        9
+      ]
+    },
+    "9": {
+      "overrideCaster": "CURPET",
+      "calcInfo": {
+        "instant_mag_def_to_fix_dmg_ratio": 0.7,
+        "instant_def_to_fix_dmg_ratio": 0.7
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "weaponSoundType": "blunt",
+        "impulseId": 2000,
+        "elementType": 5
+      },
+      "UID": "d0de8e31-3c06-4a80-839a-c2f7a3063bd5",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 9
+    },
+    "6": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "3ebaed94-064c-454c-ba5c-ca075a3e6380",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 20410030,
+      "name": "hasBuff",
+      "UID": "ebfd4e9f-a15e-4101-a813-673b36376bf6",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 16,
+      "NodeID": 13,
+      "UID": "c32e5e31-37a8-462e-a323-bad3a99684e0",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CURPET",
+          "rotFrom": "CURPET"
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        16
+      ]
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "57a1e4bd-7e03-4f46-8398-7940bfb49f46",
+      "NodeID": 7
+    },
+    "16": {
+      "overrideCaster": "CURPET",
+      "calcInfo": {
+        "instant_mag_def_to_fix_dmg_ratio": 0.35,
+        "instant_def_to_fix_dmg_ratio": 0.35
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "weaponSoundType": "blunt",
+        "impulseId": 2000,
+        "elementType": 5
+      },
+      "UID": "1723a51e-7442-4d87-b136-831cdfbfebe9",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 16
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    21
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "displayProp": "hp_max_cur",
+    "displayIndex": 1,
+    "speciesProp": "species_hp_max_v",
+    "finalProp": "hp_max_v"
+  },
+  {
+    "displayProp": "atk_cur",
+    "displayIndex": 2,
+    "speciesProp": "species_atk_v",
+    "finalProp": "atk_v"
+  },
+  {
+    "displayProp": "def_cur",
+    "displayIndex": 3,
+    "speciesProp": "species_def_v",
+    "finalProp": "def_v"
+  },
+  {
+    "displayProp": "ep_regen_force_cur",
+    "displayIndex": 4,
+    "speciesProp": "species_ep_regen_force_v",
+    "finalProp": "ep_regen_force_v"
+  },
+  {
+    "displayProp": "def_mag_cur",
+    "displayIndex": 5,
+    "speciesProp": "species_def_mag_v",
+    "finalProp": "def_mag_v"
+  },
+  {
+    "displayProp": "bp_atk_cur",
+    "displayIndex": 6,
+    "speciesProp": "species_bp_atk_v",
+    "finalProp": "bp_atk_v"
+  }
+]

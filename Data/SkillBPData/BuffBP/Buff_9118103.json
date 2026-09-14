@@ -1,0 +1,95 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9118103",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6,
+    13
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "buffId": 2118102,
+      "name": "hasBuff",
+      "UID": "f1417e48-9e30-4c98-9b7a-3ef2980512ae",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        19,
+        16
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "e7362c03-793c-4084-a520-583b20a05d1b",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "16": {
+      "petTarget": "OWNER",
+      "triggerId": 20002014,
+      "name": "onEntityTrigger",
+      "UID": "8ee56611-eb85-4316-ae6e-ef0d37ff9654",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "9": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "52632189-2354-48a1-ac06-5fe85a51d94b",
+      "name": "buffStartThink",
+      "NodeID": 9
+    },
+    "11": {
+      "buffId": 2118702,
+      "name": "hasBuff",
+      "UID": "5b16017a-8901-4b09-b18d-f6255f9d90a5",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "14": {
+      "petTarget": "OWNER",
+      "triggerId": 20002014,
+      "name": "onEntityTrigger",
+      "UID": "697004e2-6dc3-4ad6-a8b1-f057f9151630",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "19": {
+      "value": 2.5,
+      "name": "recoverEp",
+      "UID": "cba9ab39-c5ce-4fc3-a4d5-9de8469a79c6",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "20": {
+      "value": 2.5,
+      "name": "recoverEp",
+      "UID": "0663855c-3be1-47f7-93f9-547cfc1f9932",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "13": {
+      "actionIds": [
+        20,
+        14
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "38f87e09-11dd-4fab-87a3-8f01e4063331",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    }
+  },
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9
+  ]
+}

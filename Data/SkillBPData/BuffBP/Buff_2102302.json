@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102302",
+  "name": "疾风反击",
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10352_Skill_Ex_Buff_Loop"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "calcInfoByLuaConfig": {
+    "id": 2102302,
+    "bp_add_ratio": "param0",
+    "type": 1
+  }
+}

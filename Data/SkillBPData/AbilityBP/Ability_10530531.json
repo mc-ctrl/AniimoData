@@ -1,0 +1,50 @@
+{
+  "BPName": "ability_10530531",
+  "NodeID": 1,
+  "UID": "e63399e0-6ef2-49a0-8a53-5c88d80e1b39",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10530531001,
+      "name": "setCombatActionTimeline",
+      "UID": "43c732e9-736d-443f-a099-0154a9bb15b9",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ChargePunch_Charge_Star",
+    "Skill_ChargePunch01",
+    "Skill_ChargePunch_Charge_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10053_Skill_ChargePunch_Charge_01",
+    "Eff_Parmon_10053_Skill_ChargePunch_Charge_02",
+    "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03",
+    "Eff_Hit_Fire_Blunt_Mid_01",
+    "Eff_Hit_Fire_Blunt_Big_01",
+    "Eff_WindOmniEmitter",
+    "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Buff",
+    "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Warning",
+    "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Small",
+    "Eff_Parmon_10053_Skill_ChargePunch_01",
+    "Eff_Hit_Fire_Blunt_Big",
+    "Eff_Parmon_10051_Fireball_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1,
+  "abilityParamId": 10500105
+}

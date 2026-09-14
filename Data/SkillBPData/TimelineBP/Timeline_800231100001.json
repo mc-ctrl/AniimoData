@@ -1,0 +1,145 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "5f5bbf15-c0ca-4194-beaf-5f9b48a73e2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23,
+          20
+        ]
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "783a3f6d-4d06-4675-8045-340a03ca319e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "15": {
+      "UID": "295b41d5-25be-4134-b032-9922898bb142",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 15
+    },
+    "31": {
+      "UID": "53376d9d-2e5e-4937-87f2-45c6484fb62a",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 31
+    },
+    "23": {
+      "time": 0.2,
+      "rotateSpeed": 3600,
+      "name": "rotateTo",
+      "UID": "b122640c-e307-43b7-9d67-00b6f7188ddb",
+      "referenceOffsetRotY": 0,
+      "target": {
+        "UID": "937a9a34-afd4-4f7b-8d5e-54fdd078f2f9",
+        "name": "getBornPos",
+        "NodeID": 19
+      },
+      "NodeID": 23
+    },
+    "27": {
+      "UID": "4cb0fb10-4a8c-408d-a4c0-97a276d10073",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "a4b920dc-7e46-4fb3-9ff8-251e7b694c90",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          30,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 29,
+      "UID": "65029751-4021-44ac-b5a6-1fbedb741abb"
+    },
+    "30": {
+      "buffId": 9802301,
+      "name": "removeBuff",
+      "UID": "f896f70a-c725-4b71-90bd-12a20c514c8e",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "4": {
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 4,
+      "UID": "9d8e236f-294d-4248-94d5-846406c3998c"
+    },
+    "11": {
+      "UID": "763b015e-47ab-4ab1-bd2a-ed9f81e55528",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "notAvoidOverlap": true,
+      "motionWarpingTargetHead": true,
+      "NodeID": 20,
+      "UID": "79323a3d-3b88-4173-98ff-f52f54f83fbc",
+      "target": "OWNER",
+      "motionWarpingTarget": {
+        "UID": "937a9a34-afd4-4f7b-8d5e-54fdd078f2f9",
+        "name": "getBornPos",
+        "NodeID": 19
+      },
+      "motionWarpingXZMaxLen": 100,
+      "offsetTime": 0,
+      "animId": "Skill_Monster_Flyspeed",
+      "name": "playAnimation"
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3d3f2ff9-4455-4c52-88d7-f20edad0bba9",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_flystrike",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_800231100",
+  "NodeID": 6,
+  "UID": "26bc3730-850c-44a2-96ab-c127e885acb4",
+  "eventIds": [
+    13,
+    17,
+    22,
+    4,
+    29
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

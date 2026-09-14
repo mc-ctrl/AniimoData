@@ -1,0 +1,559 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9145301",
+  "NodeID": 1,
+  "UID": "918535db-c555-46bb-a8e0-cbd28c1dac0b",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "55742f79-a6c7-4367-ba41-302f67e3de8b",
+      "NodeID": 37,
+      "lValue": {
+        "key": "914530101",
+        "name": "getCacheVal",
+        "UID": "0da59670-61f2-4934-9c36-e2b3c5e08554",
+        "target": "OWNER",
+        "NodeID": 36
+      }
+    },
+    "38": {
+      "actionIds": [
+        50
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "c0e3dab4-d359-4c8a-aa73-e1b9f70f7f28",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        40
+      ],
+      "NodeID": 38
+    },
+    "81": {
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 1,
+      "spEnergyInitV": 0,
+      "UID": "722c5a9c-843f-41fe-a9ef-470639313b93",
+      "superBoosted": true,
+      "spEnergyMaxV": 12,
+      "name": "registerPassiveEnergyInfo",
+      "NodeID": 81,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 0
+    },
+    "40": {
+      "UID": "f94b30ee-c72a-4cb6-8e70-bad6abc994a7",
+      "value": "else",
+      "name": "print",
+      "NodeID": 40
+    },
+    "83": {
+      "calcInfo": {
+        "passive_energy_cur": -12
+      },
+      "name": "calcResult",
+      "UID": "fe89d2fd-cc98-40aa-9449-3ed3fe571893",
+      "target": "OWNER",
+      "NodeID": 83
+    },
+    "65": {
+      "key": "914530101",
+      "name": "setCacheVal",
+      "UID": "3e9e1054-5454-4d37-8fb0-85d35f9b66a0",
+      "target": "OWNER",
+      "val": {
+        "rValue": 4,
+        "name": "add",
+        "UID": "adc57a1c-0e90-4a14-aeea-83e4204562c9",
+        "NodeID": 64,
+        "lValue": {
+          "key": "914530101",
+          "name": "getCacheVal",
+          "UID": "6bb5a381-f8d9-40fe-b314-c569ad9b3dc8",
+          "target": "OWNER",
+          "NodeID": 63
+        }
+      },
+      "NodeID": 65
+    },
+    "85": {
+      "calcInfo": {
+        "passive_energy_cur": 4
+      },
+      "name": "calcResult",
+      "UID": "8de3952c-5ecb-427f-a4fc-5bc146bd52ad",
+      "target": "OWNER",
+      "NodeID": 85
+    },
+    "87": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "2188235e-dc04-4f9b-b443-1c1565a078f7",
+      "target": "OWNER",
+      "NodeID": 87
+    },
+    "3": {
+      "key": "914530101",
+      "name": "setCacheVal",
+      "UID": "e30c88f7-19ca-4da5-923f-8f6864a232cf",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 3
+    },
+    "71": {
+      "UID": "2e2d083c-788e-411a-a709-b6b3b404502f",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 71
+    },
+    "101": {
+      "UID": "d7bc26eb-13eb-4724-ab41-cbdfe544fe08",
+      "value": 14530302,
+      "name": "constDouble",
+      "NodeID": 101
+    },
+    "72": {
+      "name": "isInCombat",
+      "UID": "c3bf3421-9b05-4d60-a99d-3fabf40c8f44",
+      "target": "OWNER",
+      "NodeID": 72,
+      "not": false
+    },
+    "73": {
+      "name": "isInCombat",
+      "UID": "8c7dd588-9346-4eaf-bbf0-3c46d1730edb",
+      "target": "OWNER",
+      "NodeID": 73,
+      "not": false
+    },
+    "92": {
+      "UID": "8794fd8b-9b91-4f9f-a6ee-ac0ecdd08b01",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 92
+    },
+    "104": {
+      "UID": "326074b0-676c-4fd0-8970-c03da0ad18a1",
+      "value": "wochufalema",
+      "name": "print",
+      "NodeID": 104
+    },
+    "17": {
+      "key": "914530101",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17,
+      "UID": "f4ca9795-99cc-4770-959b-d66c98221649",
+      "name": "registerCacheValChange"
+    },
+    "48": {
+      "rValue": 12,
+      "name": "equal",
+      "UID": "1061407b-ed58-487f-ab98-3a93b300c04c",
+      "NodeID": 48,
+      "lValue": {
+        "key": "914530101",
+        "name": "getCacheVal",
+        "UID": "e6aae305-a6ab-47a1-b44d-4e48c5e8c920",
+        "target": "OWNER",
+        "NodeID": 47
+      }
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "name": "registerPawnMovedDistanceReachThresholdEvent",
+      "UID": "2c5e1e8a-8aac-4f90-8da6-db110f4f6508",
+      "threshold": 5,
+      "onlyConsiderXZ": false,
+      "NodeID": 13
+    },
+    "95": {
+      "calcInfo": {
+        "passive_energy_cur": -12
+      },
+      "name": "calcResult",
+      "UID": "02180ac8-4ece-4e6c-bc33-f11f995fdf01",
+      "target": "OWNER",
+      "NodeID": 95
+    },
+    "59": {
+      "actionIds": [
+        58
+      ],
+      "conditionActionIds": [
+        73
+      ],
+      "UID": "90a2b4db-6cfa-4dfa-838d-e49bd4c414d4",
+      "name": "doActionsByConditions",
+      "NodeID": 59
+    },
+    "96": {
+      "NodeID": 96,
+      "UID": "72642ce7-9610-4dfa-b013-d3fc4a794d1b",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "90": {
+      "key": "914530101",
+      "name": "setCacheVal",
+      "UID": "9f39ec72-c82b-4a7e-a40e-6a25e46abe58",
+      "target": "OWNER",
+      "val": 12,
+      "NodeID": 90
+    },
+    "97": {
+      "UID": "0f2acba8-10cd-40a7-91dc-f598db1a4d39",
+      "name": "getCombatContextAbilityId",
+      "eventName": "onAbilityDisableReturn",
+      "NodeID": 97
+    },
+    "91": {
+      "UID": "402db7b1-df04-440d-8cbf-f10ac84ee667",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 91
+    },
+    "98": {
+      "rValue": {
+        "UID": "cf92daea-9b8d-4634-bbd5-d21af4831a59",
+        "value": 14530303,
+        "name": "constDouble",
+        "NodeID": 102
+      },
+      "name": "equal",
+      "UID": "193d0810-17c6-4ce1-8818-e539b389b02d",
+      "NodeID": 98,
+      "lValue": {
+        "UID": "0f2acba8-10cd-40a7-91dc-f598db1a4d39",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onAbilityDisableReturn",
+        "NodeID": 97
+      }
+    },
+    "89": {
+      "calcInfo": {
+        "passive_energy_cur": -12
+      },
+      "name": "calcResult",
+      "UID": "e80dde5f-4d9e-4ee5-ba3a-20283f780738",
+      "target": "OWNER",
+      "NodeID": 89
+    },
+    "99": {
+      "UID": "88e8ea21-100e-4ddf-be1a-9c963db87d22",
+      "conditionIds": [
+        98,
+        100
+      ],
+      "name": "conditionOr",
+      "NodeID": 99
+    },
+    "28": {
+      "rValue": 4,
+      "name": "equal",
+      "UID": "1e692cad-cde4-4ed1-8431-c338a905e8e8",
+      "NodeID": 28,
+      "lValue": {
+        "key": "914530101",
+        "name": "getCacheVal",
+        "UID": "ec28952a-48b3-4eb4-910f-eb9309116b48",
+        "target": "OWNER",
+        "NodeID": 27
+      }
+    },
+    "100": {
+      "rValue": {
+        "UID": "d7bc26eb-13eb-4724-ab41-cbdfe544fe08",
+        "value": 14530302,
+        "name": "constDouble",
+        "NodeID": 101
+      },
+      "name": "equal",
+      "UID": "7207759e-3cb3-49d1-a087-289c85ac6cb5",
+      "NodeID": 100,
+      "lValue": {
+        "UID": "0f2acba8-10cd-40a7-91dc-f598db1a4d39",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onAbilityDisableReturn",
+        "NodeID": 97
+      }
+    },
+    "9": {
+      "key": "914530101",
+      "name": "setCacheVal",
+      "UID": "f7d59dd9-fab7-483f-abf5-ca50d2dfdebe",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "94e960d6-0613-4865-abab-832d9f87ee3d",
+        "NodeID": 8,
+        "lValue": {
+          "key": "914530101",
+          "name": "getCacheVal",
+          "UID": "d72535e5-8381-4954-90e1-f8454eb1ee3f",
+          "target": "OWNER",
+          "NodeID": 7
+        }
+      },
+      "NodeID": 9
+    },
+    "29": {
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "41aadaef-99ba-4968-8ebc-2e3c01a7eaf3",
+      "name": "doActionsByConditions",
+      "NodeID": 29,
+      "elseActionIds": [
+        38
+      ]
+    },
+    "102": {
+      "UID": "cf92daea-9b8d-4634-bbd5-d21af4831a59",
+      "value": 14530303,
+      "name": "constDouble",
+      "NodeID": 102
+    },
+    "11": {
+      "actionIds": [
+        49
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "4b61e0bf-7087-4108-8e46-b94627c5650a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9,
+        87
+      ],
+      "NodeID": 11
+    },
+    "103": {
+      "actionIds": [
+        59
+      ],
+      "name": "registerAbilityDisableReturnEvent",
+      "UID": "9d62b5b0-5dc6-47b8-a8f7-52b29c277484",
+      "target": "OWNER",
+      "NodeID": 103
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        72
+      ],
+      "UID": "cd0d23ea-6a82-4248-8603-0fe95727c4cb",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "22": {
+      "rValue": 8,
+      "name": "equal",
+      "UID": "b6177323-ad04-47a1-b158-c31dd777d8a3",
+      "NodeID": 22,
+      "lValue": {
+        "key": "914530101",
+        "name": "getCacheVal",
+        "UID": "f4429999-764f-41c2-80d2-804aad884ecb",
+        "target": "OWNER",
+        "NodeID": 21
+      }
+    },
+    "23": {
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "7f708256-fab6-4efb-9f0f-262416c4564c",
+      "name": "doActionsByConditions",
+      "NodeID": 23,
+      "elseActionIds": [
+        29
+      ]
+    },
+    "55": {
+      "rValue": 12,
+      "name": "equal",
+      "UID": "6204a14c-f027-424e-93bd-8220d0c7e162",
+      "NodeID": 55,
+      "lValue": {
+        "key": "914530101",
+        "name": "getCacheVal",
+        "UID": "8341d043-7937-4885-a459-5625a61dcf80",
+        "target": "OWNER",
+        "NodeID": 54
+      }
+    },
+    "74": {
+      "key": "914530101",
+      "name": "setCacheVal",
+      "UID": "6d746b51-58bc-43b8-86ef-bf1e3aa0f858",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 74
+    },
+    "56": {
+      "actionIds": [
+        77,
+        95,
+        92,
+        96,
+        61
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "86bbb07d-f208-4c0a-873a-34c34f9c93e7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        65,
+        85
+      ],
+      "NodeID": 56
+    },
+    "15": {
+      "rValue": 11,
+      "name": "greater",
+      "UID": "e03a8611-90ab-44de-b05c-bc3d718052d7",
+      "NodeID": 15,
+      "lValue": {
+        "key": "914530101",
+        "name": "getCacheVal",
+        "UID": "d38f8f90-e172-427e-9618-ef6e6ae4c508",
+        "target": "OWNER",
+        "NodeID": 14
+      }
+    },
+    "57": {
+      "conditionActionIds": [
+        99
+      ],
+      "UID": "8eaf52c7-4f85-4feb-8c5c-09e0513aa2b5",
+      "name": "doActionsByConditions",
+      "NodeID": 57,
+      "elseActionIds": [
+        56
+      ]
+    },
+    "76": {
+      "actionIds": [
+        74,
+        89
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "c1edb5ee-9a7f-45d6-b694-6d11032d8d6d",
+      "target": "OWNER",
+      "NodeID": 76
+    },
+    "58": {
+      "actionIds": [
+        57
+      ],
+      "conditionActionIds": [
+        71
+      ],
+      "UID": "44bca55c-2243-4f27-be1e-ae35cef83954",
+      "name": "doActionsByConditions",
+      "NodeID": 58
+    },
+    "77": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 9145302,
+      "NodeID": 77,
+      "UID": "e2ecb270-0c26-4f2b-9e57-cca4bb6cb9ea",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "49": {
+      "UID": "c3f46e0e-3459-4029-9426-35bc95e71435",
+      "value": "alreadymax",
+      "name": "print",
+      "NodeID": 49
+    },
+    "78": {
+      "NodeID": 78,
+      "UID": "375a708e-2466-48a4-8b58-3ca53043fc8e",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "50": {
+      "UID": "36895dc5-ed89-4cc4-a5cf-7ccb35457ca9",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 50
+    },
+    "16": {
+      "actionIds": [
+        90,
+        78,
+        91,
+        104
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "ee511153-577b-470f-bf67-d6a7a035a295",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        80,
+        23
+      ],
+      "NodeID": 16
+    },
+    "61": {
+      "UID": "20fdd385-90bb-4f13-a6d3-22af26f8fa7f",
+      "value": "alreadymax",
+      "name": "print",
+      "NodeID": 61
+    },
+    "80": {
+      "NodeID": 80,
+      "UID": "89fdff7a-076f-4bfc-9eae-4c1eb2016421",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    81,
+    3,
+    83,
+    13,
+    103,
+    17,
+    76
+  ]
+}

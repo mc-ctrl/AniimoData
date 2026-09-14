@@ -1,0 +1,451 @@
+{
+  "72102246": {
+    "activeParams": [
+      2602113,
+      0
+    ],
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019892,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 72374502,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 2001,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": [
+      73831630
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_任务POI_主线新手-序章-第二幕",
+    "sightLevelType": 128,
+    "spawners": [
+      72033184,
+      72102273,
+      72102275,
+      72339224,
+      72666586,
+      72811000,
+      72813844,
+      72861294
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 2,
+    "questActiveType": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/5010001/Sandbox_72102246_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      46.15,
+      124.7,
+      1150.78
+    ],
+    "owner": "lin.xu",
+    "id": 72102246,
+    "levelItems": {
+      "72376570": {
+        "majorCompId": 0,
+        "owner": "陈瑾瑜",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          48.79,
+          125.89,
+          1143.49
+        ],
+        "rotation": [
+          0,
+          95,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72376570,
+        "scale": [
+          0.26,
+          0.26,
+          0.26
+        ],
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_SkillOBj_Icosahedron.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_SkillOBj_Icosahedron.prefab"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72376569": {
+        "majorCompId": 0,
+        "owner": "陈瑾瑜",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          47.09,
+          125,
+          1142.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 72376569,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73270368": {
+    "areaType": 999,
+    "chunk": 1019892,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_多人城市_校长办公室椅子",
+    "spawners": [
+      73270370
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 73270368,
+    "spawnerId": 0,
+    "owner": "陈瑾瑜",
+    "position": [
+      48.58,
+      125.01,
+      1141.23
+    ]
+  },
+  "66656971": {
+    "areaType": 999,
+    "autoSave": false,
+    "chunk": 1019892,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 66657024,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 2001,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": [
+      66656972,
+      66656973,
+      66656974,
+      66656975
+    ],
+    "spawnerId": 0,
+    "sandboxType": 6,
+    "name": "全局_任务POI_第二幕-返回Ark-校长室",
+    "sightLevelType": 128,
+    "spawners": [
+      66656977,
+      66656979,
+      66656981,
+      66656983,
+      66656985,
+      66656987,
+      66656989,
+      66656991,
+      66656993,
+      66656995,
+      66656997,
+      66656999,
+      66657001,
+      66657003,
+      66657005,
+      66657007,
+      66657009,
+      66657011,
+      66657013,
+      66657015
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/5010001/Sandbox_66656971_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      44.29,
+      124.71,
+      1149
+    ],
+    "owner": "徐麟",
+    "id": 66656971,
+    "levelItems": {
+      "64667305": {
+        "majorCompId": 0,
+        "owner": "徐麟",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          45.39,
+          132.28,
+          1155.19
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 64667305,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "64687359": {
+        "majorCompId": 0,
+        "owner": "徐麟",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          44.49,
+          125.45,
+          1159.72
+        ],
+        "rotation": [
+          0,
+          325.84,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 64687359,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              20,
+              10,
+              1
+            ]
+          },
+          "52068346": {
+            "detectType": 1
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "66656967": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019892,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "地脉晶簇涌现的位置，联结者可以通过地脉晶簇快速旅行",
+      "autoSetContent1": true,
+      "compassShowDistance": 100,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 0,
+      "markConfigId": 10406,
+      "markContent1": 66656967,
+      "nearState": 1,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": true,
+      "scale1": 1,
+      "scale2": 1,
+      "compassTxt": "传送点",
+      "showUI": true,
+      "positionParam": [
+        0,
+        0
+      ],
+      "image": "$UI_Icon_MarkPoint_Transmit.png",
+      "SloganPlayOnce": true,
+      "POIDesc": "这是地脉晶簇，具体描述自助修改",
+      "POIIcon": "$UI_POI_Icon4_TransportPoint.png",
+      "POIOrNot": true,
+      "yaw": 0,
+      "title": "地脉晶簇",
+      "showPortalOffset": false,
+      "showActiveDistance": true,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "scale3": 1,
+      "activeShapes": {},
+      "arriveParam": {},
+      "inactiveImage": "$UI_Icon_MarkPoint_Transmit.png",
+      "arriveType": 1,
+      "inactiveDesc": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+      "circleRadius": 0,
+      "markType": 200,
+      "inactiveTitle": "地脉晶簇：待激活"
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 406,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_城市_传送功能",
+    "sightLevelType": 128,
+    "spawners": [
+      66656969
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      49.06,
+      124.68,
+      1151.44
+    ],
+    "owner": "胡鹏",
+    "id": 66656967,
+    "levelItems": {},
+    "disposable": true
+  },
+  "77406716": {
+    "areaType": 999,
+    "position": [
+      39.88,
+      124.29,
+      1164.77
+    ],
+    "markConfig": {
+      "hideToplogoMark": false,
+      "autoSetContent1": true,
+      "compassShowDistance": 0,
+      "initState": 0,
+      "mapAreaId": 0,
+      "markConfigId": 108,
+      "markContent1": 77406716,
+      "nearState": 0,
+      "poiStaticIdType": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": false,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "positionParam": [
+        0,
+        0
+      ],
+      "SloganPlayOnce": false,
+      "POIBoundStaticId": 0,
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "markType": 80,
+      "activeDisplayType": 1,
+      "activeDistance": 0,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "openMapState": 0,
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "arriveParam": {},
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 3001,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_地图区域划分_区域寻路",
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 77406716,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "keepGraphOnFinished": false,
+    "owner": "何琦轩",
+    "chunk": 1019893
+  }
+}

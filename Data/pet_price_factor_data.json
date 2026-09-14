@@ -1,0 +1,12 @@
+[
+  {
+    "label": 1,
+    "priceFactor": 1,
+    "isPerfect": 1
+  },
+  {
+    "label": 4,
+    "priceFactor": 0.3,
+    "isPerfect": 1
+  }
+]

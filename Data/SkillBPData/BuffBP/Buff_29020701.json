@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_29020701",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "aed987c3-ed14-4919-9cc2-1a0ae44d267a",
+      "effectId": "Eff_Monster_90207_MedSlowDown",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a796f7ae-18d8-469f-9e00-96f2c30a8c42",
+      "effectId": "Eff_Monster_90207_MedSlowDown",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "calcInfo": {
+    "speed_ratio_run_v": -0.5,
+    "speed_ratio_sprint_v": -0.5
+  },
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    2
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2136102",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "15e5e276-5dd1-418e-8bd8-a51c4231ceb0",
+      "effectId": "Eff_Parmon_10361_Character",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bbc9f93b-23d3-4af1-8122-279b0db8bb22",
+      "effectId": "Eff_Parmon_10361_Character",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "14": {
+      "buffId": 2136102,
+      "name": "removeBuff",
+      "UID": "8b980cf8-7c85-4bc7-81a1-d68fb9c61ad9",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "isInCombat",
+      "UID": "dd03efe3-8d44-4e1d-ad71-a58b0146c268",
+      "target": "OWNER",
+      "NodeID": 10,
+      "not": false
+    },
+    "15": {
+      "UID": "03e40db5-1928-43db-af46-c948ce89c675",
+      "name": "removeMaterialEffect",
+      "key": "10361_BianShen_New",
+      "NodeID": 15
+    },
+    "8": {
+      "name": "isInCombat",
+      "UID": "37aaaa48-f462-43c0-a41d-0be6746ed0d6",
+      "target": "OWNER",
+      "NodeID": 8,
+      "not": false
+    },
+    "9": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "e41e4c72-4e7d-41ba-8b97-85b9843a03dc",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 9
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "39827b16-3b85-4560-bb8c-8063a55a709a",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "11": {
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "c4dbc5a2-dd95-4458-b185-fcf49be4a0c2",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        14
+      ]
+    },
+    "2": {
+      "key": "10361_BianShen_New",
+      "name": "applyMaterialEffect",
+      "NodeID": 2
+    },
+    "12": {
+      "key": "1",
+      "duration": 15,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12,
+      "UID": "221fc474-6eee-43cb-8314-03edd383b649",
+      "name": "addTimer"
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2136102,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    15,
+    5
+  ],
+  "onBuffStartIds": [
+    2,
+    4,
+    9
+  ]
+}

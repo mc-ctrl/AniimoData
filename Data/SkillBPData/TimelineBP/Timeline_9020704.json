@@ -1,0 +1,204 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "fb2e2c8f-e519-4d8c-a8dc-d7c8e9950bc6",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "178724e4-aa6e-4c5b-a16d-26d2f5571d56",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5,
+          22,
+          19,
+          23,
+          15,
+          24,
+          25
+        ]
+      },
+      "NodeID": 7
+    },
+    "9": {
+      "name": "playEffectOnPosRot",
+      "UID": "381bf81b-27fe-4dbc-b749-2838652ee23f",
+      "effectId": "Eff_Parmon_10012_Skill_Swift_Hit",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 9,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "11": {
+      "key": "90207VineBreakS",
+      "name": "setServerCacheVal",
+      "UID": "96393163-664f-4d8a-a99b-3c8b4b84874b",
+      "target": "MASTER",
+      "val": 1,
+      "NodeID": 11
+    },
+    "21": {
+      "UID": "c474f78b-f8d8-4a2e-8d2c-faf596368702",
+      "actorId": {
+        "UID": "85abe4fa-538a-40c2-8bdc-4ebb08411fa7",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 20
+      },
+      "name": "destroyEntity",
+      "NodeID": 21
+    },
+    "3": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "3c9ee474-5c65-4abb-bbb5-b32ea725acb4",
+      "NodeID": 3,
+      "lValue": {
+        "UID": "f78caeed-18b7-4eb4-b7cc-9949fc3f5461",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 2
+      }
+    },
+    "4": {
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "83b5bf1d-549d-45f1-8b24-08133227af62",
+      "name": "doActionsByConditions",
+      "NodeID": 4,
+      "elseActionIds": [
+        11,
+        9
+      ]
+    },
+    "24": {
+      "heightOffset": 0.2,
+      "maxLockTime": 1.5,
+      "NodeID": 24,
+      "UID": "45eb1a47-42fd-4697-93f2-610e4c563695",
+      "target": "OWNER",
+      "name": "cameraFaceTo"
+    },
+    "14": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "5e992864-f57d-4440-9be6-bc87841ce64b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        16
+      ],
+      "NodeID": 14
+    },
+    "15": {
+      "UID": "3f22552a-4310-4cde-b1c8-eda120012de1",
+      "name": "registerPostReceiveDamageEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "id": 2034,
+      "duration": 10,
+      "NodeID": 25,
+      "UID": "c3a0a0e4-2a82-4f02-a9a8-643442b9df93",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "16": {
+      "key": "90207HammerCurHp",
+      "name": "setCacheVal",
+      "UID": "d4c7f5d1-d004-49d9-9c65-04fa362617e4",
+      "target": "MASTER",
+      "val": -1,
+      "NodeID": 16
+    },
+    "28": {
+      "UID": "cabdc063-9cff-46b8-8f91-c83e7a2f5273",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 28
+    },
+    "26": {
+      "id": 2034,
+      "hasCountDown": true,
+      "NodeID": 26,
+      "UID": "6c5c5fc9-b03e-45e5-b4f6-e1ee83ca36db",
+      "name": "hideBossMechanismTip"
+    },
+    "18": {
+      "key": "90207HammerCurHp",
+      "name": "setCacheVal",
+      "UID": "e31c82d4-5322-4e37-9f48-0cc3708461ab",
+      "target": "MASTER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "6f53a321-3e29-42cf-8bab-118a68e10ccb",
+        "target": "OWNER",
+        "NodeID": 17,
+        "attributeName": "hp_cur"
+      },
+      "NodeID": 18
+    },
+    "13": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "f0f0b3be-9bd9-4422-9b43-10415494bae0",
+      "NodeID": 13,
+      "lValue": {
+        "UID": "0c118bb1-07bf-45f1-a507-afe92c8f4eb9",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 12
+      }
+    },
+    "19": {
+      "isTemp": true,
+      "NodeID": 19,
+      "UID": "3c4c524d-149f-4894-a44f-88c95939b15a",
+      "name": "playerForceLock",
+      "distance": 60,
+      "lockState": true
+    },
+    "22": {
+      "actionIds": [
+        21
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "e3970bfc-4694-4578-99ab-4dd7d14f3cfc",
+      "target": "MASTER",
+      "NodeID": 22
+    },
+    "23": {
+      "UID": "06cf92c4-c699-4032-99ef-c967385cd0af",
+      "target": "OWNER",
+      "name": "setPetLockedActorId",
+      "NodeID": 23
+    }
+  },
+  "BPName": "timeline_9020704",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    7,
+    28
+  ],
+  "layer": "Base",
+  "length": 10
+}

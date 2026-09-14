@@ -1,0 +1,122 @@
+[
+  {
+    "needQuality": [
+      3,
+      4,
+      5
+    ],
+    "enhanceRatio": 0.05,
+    "needExp": 100
+  },
+  {
+    "needQuality": [
+      3,
+      4,
+      5
+    ],
+    "enhanceRatio": 0.1,
+    "needExp": 150
+  },
+  {
+    "needQuality": [
+      3,
+      4,
+      5
+    ],
+    "enhanceRatio": 0.15,
+    "needExp": 200
+  },
+  {
+    "needQuality": [
+      3,
+      4,
+      5
+    ],
+    "enhanceRatio": 0.2,
+    "needExp": 250
+  },
+  {
+    "needQuality": [
+      3,
+      4,
+      5
+    ],
+    "enhanceRatio": 0.25,
+    "needExp": 300
+  },
+  {
+    "needQuality": [
+      4,
+      5
+    ],
+    "enhanceRatio": 0.3,
+    "needExp": 350
+  },
+  {
+    "needQuality": [
+      4,
+      5
+    ],
+    "enhanceRatio": 0.35,
+    "needExp": 400
+  },
+  {
+    "needQuality": [
+      4,
+      5
+    ],
+    "enhanceRatio": 0.4,
+    "needExp": 450
+  },
+  {
+    "needQuality": [
+      4,
+      5
+    ],
+    "enhanceRatio": 0.45,
+    "needExp": 500
+  },
+  {
+    "needQuality": [
+      4,
+      5
+    ],
+    "enhanceRatio": 0.5,
+    "needExp": 550
+  },
+  {
+    "needQuality": [
+      5
+    ],
+    "enhanceRatio": 0.6,
+    "needExp": 600
+  },
+  {
+    "needQuality": [
+      5
+    ],
+    "enhanceRatio": 0.7,
+    "needExp": 650
+  },
+  {
+    "needQuality": [
+      5
+    ],
+    "enhanceRatio": 0.8,
+    "needExp": 700
+  },
+  {
+    "needQuality": [
+      5
+    ],
+    "enhanceRatio": 0.9,
+    "needExp": 750
+  },
+  {
+    "needQuality": [
+      5
+    ],
+    "enhanceRatio": 1,
+    "needExp": 800
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "698b0a5f-672a-46b1-b1c5-ddb33b5f4c20",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          6,
+          8,
+          9,
+          10,
+          13,
+          15
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "161b7b2e-81ba-4a78-867c-1d42ae30a9a0",
+      "target": "OWNER",
+      "name": "playHitSound",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "72e8ff5c-db44-4479-a8d9-e3327991839a",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "c2e70dfb-74bf-482f-ad63-c408089e9e96",
+      "target": "OWNER",
+      "name": "playHitPartAnimation",
+      "NodeID": 15
+    },
+    "19": {
+      "name": "playHitAnimation",
+      "UID": "541c6a3f-4b61-4c4b-a276-2158861e3fd1",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "HEgg_Hit_Shake"
+    },
+    "16": {
+      "name": "playHitAnimation",
+      "UID": "4c42c968-eaee-4632-bece-f5aa3cb96315",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "BEgg_Hit_Shake"
+    },
+    "8": {
+      "UID": "7907b36b-70ea-470c-8f46-6c82f70bd503",
+      "target": "OWNER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "33ab8906-98e1-446c-9bd1-8a1c0b7ca1b4",
+      "name": "isPlayerInCarryEggState",
+      "carryEggState": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "52a933b5-d028-4d46-b1f2-12a0f19d9659",
+      "target": "CASTER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "adc82e88-9cdb-4442-a5ba-d1e51c24e949",
+      "name": "isPlayerInCarryEggState",
+      "carryEggState": 2,
+      "NodeID": 18
+    },
+    "13": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "83e46fe5-bf09-480c-b7db-35dbb588ad32",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "11": {
+      "name": "playHitAnimation",
+      "UID": "314b931d-7c8e-4159-8870-335c6a2409d3",
+      "target": "OWNER",
+      "NodeID": 11,
+      "animId": "Hit_Shake"
+    },
+    "2": {
+      "UID": "e3f35c25-8347-432d-9aed-664d5f71256f",
+      "target": "OWNER",
+      "name": "playHitEffect",
+      "NodeID": 2
+    },
+    "12": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "bb8c93a1-8b9b-4023-8ce9-8ba3f2b33d10",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_101",
+  "NodeID": 1,
+  "UID": "3bbe6316-786b-4efb-8b5b-e8d65dd1ee1f",
+  "eventIds": [
+    4
+  ],
+  "layer": "Additive",
+  "length": 1
+}

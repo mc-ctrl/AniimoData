@@ -1,0 +1,125 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e261fd2c-0f1b-4bda-aabf-c770e0e2f352",
+      "effectId": "Eff_Parmon_10433_SmokeGrenade_5m",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "7734cd47-9a15-44bc-9317-8c3c57eb9ff1",
+      "name": "resetCameraDistanceScale",
+      "NodeID": 13
+    },
+    "14": {
+      "duration": 3,
+      "to": 1,
+      "NodeID": 14,
+      "UID": "79180263-2482-490c-98d2-c0e4259516df",
+      "effectId": "Eff_Parmon_10433_SmokeGrenade_5m",
+      "name": "tweenEffectLocalEnvWeight",
+      "from": 0
+    },
+    "10": {
+      "UID": "91b30008-736f-4ed9-ab4d-8f13535c7e0e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          8,
+          16
+        ]
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "scale": 1.6,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9443da2a-2e55-4857-a9a7-18656b91c909",
+      "effectId": "Eff_Item_SceneObject_Fruit_Gravity_KeyItem_MagicField01",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "effectKey": "Eff_Parmon_10433_SmokeGrenade_5m",
+      "duration": 3,
+      "propertyName": "_MeshCloudAlpha",
+      "NodeID": 7,
+      "UID": "9df8f5f0-360b-491b-905c-07befc594ccb",
+      "toValue": 1,
+      "name": "tweenEffectMaterialProperty",
+      "fromValue": 0
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "152e5c8b-5f15-4d9c-ad0b-533a00dcb659",
+      "effectId": "Eff_Parmon_10433_SmokeGrenade_5m",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "af5846a7-04a1-4b46-9497-bebf684ff3fe",
+      "effectId": "Eff_Item_SceneObject_Fruit_Gravity_KeyItem_MagicField01",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "11": {
+      "maxTime": 20,
+      "UID": "da009393-c5d6-40f6-9c7a-e65bd9b4f085",
+      "name": "setCameraDistanceScale",
+      "distanceScale": 0.5,
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "f8807402-67cb-4e34-908c-ad225a57d8f8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          3,
+          12,
+          7,
+          14
+        ]
+      },
+      "NodeID": 5
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 12,
+      "UID": "874fd0dc-d028-47da-98d4-75ef9724b509",
+      "enterTrapActionIds": [
+        11
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        13
+      ],
+      "shapeArgs": [
+        6
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 0,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    }
+  },
+  "BPName": "timeline_6143101",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    5,
+    10
+  ],
+  "layer": "Base",
+  "length": 10
+}

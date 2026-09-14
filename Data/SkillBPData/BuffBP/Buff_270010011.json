@@ -1,0 +1,325 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010011",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "tags": [
+    16
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "checkCanLock": false,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "09ac6a72-3050-42ca-bde3-eb857d3f5683",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "rotFrom": "OWNER",
+          "shapeArgs": [
+            50,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "center": "OWNER",
+          "rotTo": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "name": "actOnTargets"
+    },
+    "38": {
+      "UID": "167c0b53-3aed-41b8-bf91-d91be0818635",
+      "name": "callClientAction",
+      "actionIds": [
+        36,
+        40
+      ],
+      "NodeID": 38
+    },
+    "40": {
+      "id": 2015,
+      "hasCountDown": true,
+      "NodeID": 40,
+      "UID": "cf9ba05c-fc99-40c4-bc4b-17d927efaff4",
+      "name": "hideBossMechanismTip"
+    },
+    "41": {
+      "UID": "42cf02a3-7ad4-4991-84f1-6e5054eb6ab7",
+      "name": "showBubbleMsg",
+      "msgId": 12050,
+      "NodeID": 41
+    },
+    "7": {
+      "UID": "27c3b1b2-2d3c-4884-b9da-ed3346062643",
+      "name": "isGoingBeKilled",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "fd4bf9d4-47e8-401b-93cf-c63819c8bf5e",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "f09e4c9a-73a8-4e47-a60d-4377819e0ca6",
+      "conditionIds": [
+        30,
+        34
+      ],
+      "name": "conditionAnd",
+      "NodeID": 31
+    },
+    "9": {
+      "UID": "33f1300a-8c80-4d0e-9460-c270a3e1779b",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "43": {
+      "UID": "3cadcd76-eebf-497b-9788-b29f47c727a4",
+      "name": "callClientAction",
+      "actionIds": [
+        41
+      ],
+      "NodeID": 43
+    },
+    "21": {
+      "checkCanLock": false,
+      "actionIds": [
+        24
+      ],
+      "NodeID": 21,
+      "UID": "9fc84e41-a6c0-4a74-97d1-690acf0f74d0",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "rotFrom": "OWNER",
+          "shapeArgs": [
+            50,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "center": "OWNER",
+          "rotTo": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "name": "actOnTargets"
+    },
+    "3": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 3,
+      "UID": "b7ef7ac4-d463-41cb-b05c-f8d74f9aba41",
+      "effectId": "Eff_Monster_Robot_Link",
+      "name": "playEffectStr",
+      "endTarget": "TARGET"
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "1d6526de-1474-44c5-800d-0266596d1c50",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "24": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "6213a50e-29a9-4148-82df-c767a47e34a2",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "48957f14-f6ec-4fe4-b24a-67aa716d2ac3",
+      "name": "isNot",
+      "action": {
+        "name": "hasBuffTag",
+        "UID": "a5e149be-e6ad-413b-8896-2e323dbc0bfc",
+        "target": "TARGET",
+        "NodeID": 13,
+        "buffTag": 3
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 15,
+      "buffId": 270010040,
+      "NodeID": 10,
+      "UID": "2ba0c122-92f7-4a9c-b30b-0d5a470fbe9f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "UID": "598ec32f-890f-4731-b8ff-1d85f45a4d9e",
+      "conditionIds": [
+        18,
+        14
+      ],
+      "name": "conditionAnd",
+      "NodeID": 15
+    },
+    "23": {
+      "buffId": 270010011,
+      "name": "hasBuff",
+      "UID": "dcd0a99f-2eed-4353-9af6-75fbd6e6d9ae",
+      "target": "TARGET",
+      "NodeID": 23
+    },
+    "16": {
+      "relation": 1,
+      "radius": 50,
+      "heightDown": 2,
+      "NodeID": 16,
+      "UID": "a56dc00f-ccab-4432-9e5a-1033af185ce8",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 15
+    },
+    "22": {
+      "UID": "39664b10-c999-471c-97f1-e90e8621ce53",
+      "name": "callClientAction",
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22
+    },
+    "17": {
+      "UID": "7180b783-3226-47e8-bf3b-4d453ff96098",
+      "target": {
+        "relation": 1,
+        "radius": 50,
+        "heightDown": 2,
+        "NodeID": 16,
+        "UID": "a56dc00f-ccab-4432-9e5a-1033af185ce8",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 15
+      },
+      "name": "hasTarget",
+      "NodeID": 17
+    },
+    "30": {
+      "buffId": 270010011,
+      "name": "hasBuff",
+      "UID": "83eb53d9-62ee-4545-865b-707556eb618a",
+      "target": "TARGET",
+      "NodeID": 30
+    },
+    "18": {
+      "buffId": 270010011,
+      "name": "hasBuff",
+      "UID": "66baeb3a-c7d4-4d7c-9250-ba4ff908f7fe",
+      "target": "TARGET",
+      "NodeID": 18
+    },
+    "26": {
+      "UID": "d7135168-199e-460a-9a9d-7e479eee7fdb",
+      "actorId": {
+        "UID": "5c0da8cd-6d1f-4355-9634-e87be14bd67d",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 25
+      },
+      "name": "destroyEntity",
+      "NodeID": 26
+    },
+    "12": {
+      "actionIds": [
+        43,
+        10
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "63cd1f7c-8575-4a3e-8633-e2ebebee4181",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 12
+    },
+    "34": {
+      "UID": "ce3e2879-4f81-43bd-92a1-27e74da8dd65",
+      "name": "isNot",
+      "action": {
+        "rValue": {
+          "UID": "1a635238-1970-471b-8bbb-b93d323f3a93",
+          "target": "OWNER",
+          "name": "getTargetId",
+          "NodeID": 32
+        },
+        "name": "equal",
+        "UID": "6821f710-79ae-4364-9814-95c8ea97be60",
+        "NodeID": 33,
+        "lValue": {
+          "UID": "5014038d-c2b1-4d92-b3da-2b1e0676427c",
+          "target": "TARGET",
+          "name": "getTargetId",
+          "NodeID": 35
+        }
+      },
+      "NodeID": 34
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "5b75faa9-fb63-4d17-84f4-f3178fbe237a",
+      "effectId": "Eff_Monster_Robot_Link",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    38
+  ],
+  "onBuffStartIds": [
+    9,
+    5
+  ]
+}

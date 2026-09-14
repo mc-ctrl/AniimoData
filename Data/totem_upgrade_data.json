@@ -1,0 +1,90 @@
+{
+  "1002": [
+    {
+      "itemId": 540202,
+      "count": 2,
+      "reward": 101001100
+    },
+    {
+      "itemId": 540202,
+      "count": 4,
+      "reward": 101001100
+    },
+    {
+      "itemId": 540202,
+      "count": 6,
+      "reward": 101001100
+    },
+    {
+      "itemId": 540202,
+      "count": 8,
+      "reward": 101001100
+    },
+    {
+      "itemId": 540202,
+      "count": 10,
+      "reward": 101001100
+    },
+    {
+      "itemId": 540202,
+      "count": 12,
+      "reward": 101001100
+    }
+  ],
+  "1001": [
+    {
+      "reward": 47001,
+      "itemId": 540500,
+      "count": 2,
+      "abilityDesc1": "20点",
+      "abilityDesc2": "体力上限",
+      "abilityIcon": "$UI_PassiveSkillIcon_Avatar_50102.png",
+      "abilityVirtualItemId": 990020
+    },
+    {
+      "reward": 47002,
+      "itemId": 540500,
+      "count": 4,
+      "abilityDesc1": "20点",
+      "abilityDesc2": "体力上限",
+      "abilityIcon": "$UI_PassiveSkillIcon_Avatar_50102.png",
+      "abilityVirtualItemId": 990020
+    },
+    {
+      "reward": 47003,
+      "itemId": 540500,
+      "count": 6,
+      "abilityDesc1": "20点",
+      "abilityDesc2": "体力上限",
+      "abilityIcon": "$UI_PassiveSkillIcon_Avatar_50102.png",
+      "abilityVirtualItemId": 990020
+    },
+    {
+      "reward": 47004,
+      "itemId": 540500,
+      "count": 8,
+      "abilityDesc1": "20点",
+      "abilityDesc2": "体力上限",
+      "abilityIcon": "$UI_PassiveSkillIcon_Avatar_50102.png",
+      "abilityVirtualItemId": 990020
+    },
+    {
+      "reward": 47005,
+      "itemId": 540500,
+      "count": 10,
+      "abilityDesc1": "20点",
+      "abilityDesc2": "体力上限",
+      "abilityIcon": "$UI_PassiveSkillIcon_Avatar_50102.png",
+      "abilityVirtualItemId": 990020
+    },
+    {
+      "reward": 47006,
+      "itemId": 540500,
+      "count": 12,
+      "abilityDesc1": "20点",
+      "abilityDesc2": "体力上限",
+      "abilityIcon": "$UI_PassiveSkillIcon_Avatar_50102.png",
+      "abilityVirtualItemId": 990020
+    }
+  ]
+}

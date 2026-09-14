@@ -1,0 +1,27 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5001902",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5001901,
+      "NodeID": 8,
+      "UID": "06c94caf-4fa5-49ef-b4f8-424de2843aca",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    8
+  ]
+}

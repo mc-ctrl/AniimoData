@@ -1,0 +1,140 @@
+{
+  "30009": {
+    "triggeredAction": "ST_MB_Happy",
+    "conditionIDList": [
+      "Distance_0_20",
+      "CheckNearbyShell"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 1000
+  },
+  "30001": {
+    "triggeredAction": "ST_MB_JumpTwice",
+    "conditionIDList": [
+      "VisionValue_T1"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 300,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 10
+  },
+  "30002": {
+    "triggeredAction": "ST_MB_JumpTwice",
+    "conditionIDList": [
+      "CheckNearbyShellMeat"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 100,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 50,
+    "priority": 10
+  },
+  "30003": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "CheckNearbyShellMeat"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "30004": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "ChemStateIsElectrice",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "30005": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "ChemStateIsAflame",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "30006": {
+    "triggeredAction": "ST_MB_Eat",
+    "conditionIDList": [
+      "Distance_0_20",
+      "CheckNearbyIronBox"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "30007": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "ChemStateIsFrozen",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "30008": {
+    "triggeredAction": "ST_MB_EatBait",
+    "conditionIDList": [
+      "Distance_0_30",
+      "CheckNearbyShellMeat"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 1000
+  }
+}

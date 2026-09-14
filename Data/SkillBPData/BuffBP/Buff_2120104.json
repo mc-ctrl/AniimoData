@@ -1,0 +1,33 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "7": {
+      "UID": "dee70b9c-e4a3-4abb-baf0-1167aa237614",
+      "actorId": {
+        "UID": "b8c846db-8c59-4d6e-b55e-37d44397fc23",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 6
+      },
+      "name": "destroyEntity",
+      "NodeID": 7
+    },
+    "8": {
+      "duration": 5,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "7c379263-6cf1-476a-b055-4087e0151e0b",
+      "name": "addTimer"
+    }
+  },
+  "BPName": "buff_2120104",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

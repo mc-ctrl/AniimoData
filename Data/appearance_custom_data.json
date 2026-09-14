@@ -1,0 +1,66 @@
+[
+  {
+    "clothesCostNum": 0,
+    "clothesCostType": 2,
+    "costNum": 0,
+    "costType": 2,
+    "hairCostNum": 0,
+    "hairCostType": 2,
+    "makeUpCostNum": 0,
+    "makeUpCostType": 2,
+    "petJewelryCostNum": 0,
+    "petJewelryCostType": 2
+  },
+  {
+    "clothesCostNum": 100,
+    "clothesCostType": 700034,
+    "costNum": 0,
+    "costType": 2,
+    "hairCostNum": 100,
+    "hairCostType": 700034,
+    "makeUpCostNum": 100,
+    "makeUpCostType": 700034,
+    "petJewelryCostNum": 100,
+    "petJewelryCostType": 700034
+  },
+  {
+    "clothesCostNum": 200,
+    "clothesCostType": 700034,
+    "costNum": 10,
+    "costType": 700034,
+    "hairCostNum": 200,
+    "hairCostType": 700034,
+    "makeUpCostNum": 200,
+    "makeUpCostType": 700034,
+    "petJewelryCostNum": 200,
+    "petJewelryCostType": 700034
+  },
+  {
+    "costNum": 20,
+    "costType": 700034,
+    "hairCostNum": 300,
+    "hairCostType": 700034
+  },
+  {
+    "costNum": 30,
+    "costType": 700034,
+    "hairCostNum": 400,
+    "hairCostType": 700034
+  },
+  {
+    "costNum": 30,
+    "costType": 700034
+  },
+  {
+    "costNum": 50,
+    "costType": 700034
+  },
+  {
+    "costNum": 50,
+    "costType": 700034
+  },
+  {
+    "costNum": 50,
+    "costType": 700034
+  }
+]

@@ -1,0 +1,380 @@
+{
+  "6011": {
+    "Bufflevel": 1,
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1623188267,
+    "buffType": "General",
+    "desc": 2077874467,
+    "selfBuff": 4006010
+  },
+  "6012": {
+    "Bufflevel": 2,
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1274607868,
+    "buffType": "General",
+    "desc": 1845980274,
+    "selfBuff": 4006010
+  },
+  "6013": {
+    "Bufflevel": 3,
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1864268975,
+    "buffType": "General",
+    "desc": 1307325641,
+    "selfBuff": 4006010
+  },
+  "6014": {
+    "Bufflevel": 4,
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1793018003,
+    "buffType": "General",
+    "desc": 2099292353,
+    "selfBuff": 4006010
+  },
+  "6015": {
+    "Bufflevel": 5,
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1173725549,
+    "buffType": "General",
+    "desc": 1457129527,
+    "selfBuff": 4006010
+  },
+  "6016": {
+    "Bufflevel": 6,
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1577673489,
+    "buffType": "General",
+    "desc": 1364335750,
+    "selfBuff": 4006010
+  },
+  "6017": {
+    "Bufflevel": 7,
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 2000246754,
+    "buffType": "General",
+    "desc": 1853533988,
+    "selfBuff": 4006010
+  },
+  "6021": {
+    "Bufflevel": 1,
+    "buffIcon": "$UI_Icon_BossRush_Affix_403.png",
+    "buffName": 1248890338,
+    "buffType": "General",
+    "desc": 1481432948,
+    "selfBuff": 4006020
+  },
+  "6022": {
+    "Bufflevel": 2,
+    "buffIcon": "$UI_Icon_BossRush_Affix_403.png",
+    "buffName": 1455120423,
+    "buffType": "General",
+    "desc": 1482070266,
+    "selfBuff": 4006020
+  },
+  "206": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_104.png",
+    "buffName": 1379362158,
+    "buffType": "Special",
+    "desc": 1731880529,
+    "selfBuff": 4002070
+  },
+  "403": {
+    "descShort": 1547748163,
+    "enemyBuff": 4004030,
+    "buffIcon": "$UI_Icon_GameModBoss_icon_environment2.png",
+    "buffName": 1972429857,
+    "buffType": "Env",
+    "desc": 1459420234
+  },
+  "203": {
+    "buffName": 1130879739,
+    "buffType": "Special",
+    "desc": 1151493926,
+    "buffIcon": "$UI_Icon_BossRush_Affix_203.png"
+  },
+  "6026": {
+    "Bufflevel": 6,
+    "buffIcon": "$UI_Icon_BossRush_Affix_403.png",
+    "buffName": 1611431330,
+    "buffType": "General",
+    "desc": 1165779935,
+    "selfBuff": 4006020
+  },
+  "6027": {
+    "Bufflevel": 7,
+    "buffIcon": "$UI_Icon_BossRush_Affix_403.png",
+    "buffName": 1362517655,
+    "buffType": "General",
+    "desc": 1198315247,
+    "selfBuff": 4006020
+  },
+  "501": {
+    "buffName": 1559607299,
+    "buffType": "Assist",
+    "desc": 1694972073,
+    "buffIcon": "$ui_img_skill_icon_buff_Fire.png"
+  },
+  "101": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_101.png",
+    "buffName": 1264344495,
+    "buffType": "Special",
+    "desc": 2147245164,
+    "selfBuff": 4001010
+  },
+  "201": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_201.png",
+    "buffName": 1306608059,
+    "buffType": "Special",
+    "desc": 1237712563,
+    "selfBuff": 4002010
+  },
+  "202": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_202.png",
+    "buffName": 1425747269,
+    "buffType": "Special",
+    "desc": 2034181115,
+    "selfBuff": 4002020
+  },
+  "301": {
+    "descShort": 2009893669,
+    "enemyBuff": 4003010,
+    "buffIcon": "$UI_Icon_BossRush_Env_301.png",
+    "buffName": 1475993506,
+    "buffType": "Interact",
+    "desc": 1770304765
+  },
+  "401": {
+    "descShort": 1664051524,
+    "enemyBuff": 4004010,
+    "buffIcon": "$UI_Icon_GameModBoss_icon_environment2.png",
+    "buffName": 1194838858,
+    "buffType": "Env",
+    "desc": 1975525646
+  },
+  "6025": {
+    "Bufflevel": 5,
+    "buffIcon": "$UI_Icon_BossRush_Affix_403.png",
+    "buffName": 1617351858,
+    "buffType": "General",
+    "desc": 1177770986,
+    "selfBuff": 4006020
+  },
+  "6024": {
+    "Bufflevel": 4,
+    "buffIcon": "$UI_Icon_BossRush_Affix_403.png",
+    "buffName": 1258981266,
+    "buffType": "General",
+    "desc": 1375439281,
+    "selfBuff": 4006020
+  },
+  "6023": {
+    "Bufflevel": 3,
+    "buffIcon": "$UI_Icon_BossRush_Affix_403.png",
+    "buffName": 1485264029,
+    "buffType": "General",
+    "desc": 1692911114,
+    "selfBuff": 4006020
+  },
+  "110": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_105.png",
+    "buffName": 1977242297,
+    "buffType": "Special",
+    "desc": 1827711272,
+    "selfBuff": 4001100
+  },
+  "502": {
+    "buffName": 1241938695,
+    "buffType": "Assist",
+    "desc": 1568903186,
+    "buffIcon": "$ui_img_skill_icon_buff_03.png"
+  },
+  "412": {
+    "descShort": 1411852293,
+    "buffIcon": "$UI_Icon_BossRush_Env_412.png",
+    "buffName": 1375594766,
+    "buffType": "Env",
+    "desc": 1820724083,
+    "selfBuff": 4004120
+  },
+  "411": {
+    "descShort": 2028344504,
+    "enemyBuff": 4004110,
+    "buffIcon": "$UI_Icon_BossRush_Env_411.png",
+    "buffName": 2034924524,
+    "buffType": "Env",
+    "desc": 1329416481
+  },
+  "204": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1356816825,
+    "buffType": "Special",
+    "desc": 2130883346,
+    "selfBuff": 4002040
+  },
+  "205": {
+    "enemyBuff": 4002050,
+    "buffIcon": "$UI_Icon_BossRush_Affix_102.png",
+    "buffName": 1357521167,
+    "buffType": "Special",
+    "desc": 1962056455
+  },
+  "303": {
+    "descShort": 1768811857,
+    "enemyBuff": 4003030,
+    "buffIcon": "$UI_Icon_BossRush_Env_304.png",
+    "buffName": 1525083960,
+    "buffType": "Interact",
+    "desc": 1632849289
+  },
+  "102": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_102.png",
+    "buffName": 2129275876,
+    "buffType": "Special",
+    "desc": 2006503875,
+    "selfBuff": 4001020
+  },
+  "111": {
+    "enemyBuff": 4001110,
+    "buffIcon": "$UI_Icon_BossRush_Affix_301.png",
+    "buffName": 1529352948,
+    "buffType": "Special",
+    "desc": 1978538843
+  },
+  "103": {
+    "buffIcon": "$UI_Skillicon_Dark_BreakSlash.png",
+    "buffName": 1596279738,
+    "buffType": "Special",
+    "desc": 1610320608,
+    "selfBuff": 4001030
+  },
+  "405": {
+    "descShort": 1970151943,
+    "buffIcon": "$UI_Icon_GameModBoss_icon_environment2.png",
+    "buffName": 2143435187,
+    "buffType": "Env",
+    "desc": 2032122412,
+    "selfBuff": 4004050
+  },
+  "104": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_104.png",
+    "buffName": 1777641197,
+    "buffType": "Special",
+    "desc": 2041032980,
+    "selfBuff": 4001040
+  },
+  "302": {
+    "descShort": 1155138633,
+    "enemyBuff": 4003020,
+    "buffIcon": "$UI_Icon_BossRush_Env_302.png",
+    "buffName": 1086271533,
+    "buffType": "Interact",
+    "desc": 1695560376
+  },
+  "105": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_105.png",
+    "buffName": 1798482700,
+    "buffType": "Special",
+    "desc": 1515472568,
+    "selfBuff": 4001050
+  },
+  "404": {
+    "descShort": 1685143240,
+    "enemyBuff": 4004040,
+    "buffIcon": "$UI_Icon_GameModBoss_icon_environment2.png",
+    "buffName": 2032688388,
+    "buffType": "Env",
+    "desc": 1847668949
+  },
+  "106": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_106.png",
+    "buffName": 2106882766,
+    "buffType": "Special",
+    "desc": 1925993473,
+    "selfBuff": 4001060
+  },
+  "304": {
+    "descShort": 1387210606,
+    "enemyBuff": 4003031,
+    "buffIcon": "$UI_Icon_BossRush_Env_304.png",
+    "buffName": 1305098563,
+    "buffType": "Interact",
+    "desc": 1106704986
+  },
+  "107": {
+    "buffIcon": "$UI_SkillIcon_Common_Tackle.png",
+    "buffName": 1995495226,
+    "buffType": "Special",
+    "desc": 1537511978,
+    "selfBuff": 4001060
+  },
+  "108": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_204.png",
+    "buffName": 1771792566,
+    "buffType": "Special",
+    "desc": 1649919296,
+    "selfBuff": 4001080
+  },
+  "410": {
+    "descShort": 1773829495,
+    "buffIcon": "$UI_Icon_BossRush_Env_410.png",
+    "buffName": 1620329960,
+    "buffType": "Env",
+    "desc": 1688987808,
+    "selfBuff": 4004100
+  },
+  "305": {
+    "descShort": 1531610851,
+    "enemyBuff": 4003040,
+    "buffIcon": "$UI_Icon_BossRush_Env_305.png",
+    "buffName": 1911306140,
+    "buffType": "Interact",
+    "desc": 1572177038
+  },
+  "109": {
+    "buffIcon": "$UI_Icon_BossRush_Affix_202.png",
+    "buffName": 1324691042,
+    "buffType": "Special",
+    "desc": 1612207081,
+    "selfBuff": 4001090
+  },
+  "402": {
+    "descShort": 1160525544,
+    "buffIcon": "$UI_Icon_GameModBoss_icon_environment2.png",
+    "buffName": 1435838326,
+    "buffType": "Env",
+    "desc": 1546701083,
+    "selfBuff": 4004020
+  },
+  "406": {
+    "descShort": 1974393526,
+    "buffIcon": "$UI_Icon_GameModBoss_icon_environment2.png",
+    "buffName": 1637724424,
+    "buffType": "Env",
+    "desc": 1558239358,
+    "selfBuff": 4004060
+  },
+  "407": {
+    "descShort": 2109763276,
+    "enemyBuff": 4004070,
+    "buffIcon": "$UI_Icon_BossRush_Env_407.png",
+    "buffName": 2067444735,
+    "buffType": "Env",
+    "desc": 1772387140
+  },
+  "408": {
+    "descShort": 1461847197,
+    "buffIcon": "$UI_Icon_BossRush_Env_408.png",
+    "buffName": 1939684370,
+    "buffType": "Env",
+    "desc": 1089377548,
+    "selfBuff": 4004080
+  },
+  "409": {
+    "descShort": 2145296952,
+    "buffIcon": "$UI_Icon_BossRush_Env_409.png",
+    "buffName": 1733426805,
+    "buffType": "Env",
+    "desc": 1860441515,
+    "selfBuff": 4004090
+  }
+}

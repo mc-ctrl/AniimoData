@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126304",
+  "calcInfoByLuaConfig": {
+    "dmg_dark_dec_ratio": "param0",
+    "type": 1,
+    "id": 2126304
+  },
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "tags": [
+    11
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Defense_Arrow_Down"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920002201",
+  "NodeID": 1,
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "isOnControlRemove": true,
+  "onBuffRefreshIds": [
+    6,
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d48c5751-1f5b-463b-8e3e-3eb7df3241b7",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_Icon",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "6799be96-029e-4476-9644-82aaaf4543d0",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_Icon",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ea4a540f-7df8-4c11-a8a9-e67aac72c6f2",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_Icon",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "15": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "4a2fd25e-55ee-4f69-9853-51793c2e99f1",
+      "to": 9200024,
+      "NodeID": 15,
+      "from": 9200022
+    },
+    "16": {
+      "key": "920002201",
+      "name": "setCacheVal",
+      "UID": "fcfdeb05-aea6-4e54-8b4c-6e05f62fc8a7",
+      "val": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "19ec0de7-d818-4e95-ada0-b2a19f1c21dc",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_01",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "target": "OWNER",
+      "name": "teleport",
+      "UID": "2e72ea8f-e659-4558-908e-44ea9c76497f",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "CURPET",
+      "NodeID": 9
+    },
+    "18": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "0b178ced-5c14-4329-9bfa-c19e8d98ebee",
+      "NodeID": 18,
+      "lValue": {
+        "UID": "a1b69ac8-54ea-44f3-a53a-9679347d8973",
+        "name": "getCacheVal",
+        "key": "920002201",
+        "NodeID": 17
+      }
+    },
+    "11": {
+      "actionIds": [
+        9,
+        14,
+        13
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "8d3ad5b8-d3cf-41f4-bfc4-97be174d809e",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "74637fdd-f9f3-4740-9797-985855b48341",
+      "effectId": "Eff_Avatar_Female_Skill_MagicCap_01",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "14": {
+      "name": "enablePetProtectState",
+      "NodeID": 14,
+      "absorbEffPosOffsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "UID": "d11dcd62-4500-4d9f-95e3-0d7dce30e67d",
+      "dissolveEffectDuration": 0,
+      "enable": false,
+      "appearEffectDuration": 0
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    11
+  ],
+  "onBuffStartIds": [
+    3,
+    5,
+    15,
+    16
+  ]
+}

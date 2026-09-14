@@ -1,0 +1,37 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104315",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_Loop"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.12573
+      },
+      "name": "calcResult",
+      "UID": "42c8adf6-32fa-4bd4-a13f-9e82a94f428e",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "2": {
+      "delay": 0.5,
+      "interval": 1,
+      "UID": "ff5b527d-4743-467f-bc7b-618d7245865d",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "UID": "04ac01b9-7830-43c6-873f-d2424e32121c",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

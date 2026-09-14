@@ -1,0 +1,1606 @@
+{
+  "52": {
+    "name": 1901128597,
+    "cate": "mainVol",
+    "widgetType": 1,
+    "funcType": "autoMute",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "showlogin": 1,
+    "tab": "audio",
+    "platform": [
+      2
+    ]
+  },
+  "53": {
+    "name": 1716921043,
+    "cate": "accountRealName",
+    "widgetType": 5,
+    "funcType": "isVietnamRealName",
+    "buttonFunc": [
+      "openFunTapCall"
+    ],
+    "widgetTxt": [
+      73
+    ],
+    "platform": [
+      1
+    ],
+    "tab": "account",
+    "widgetParam": [
+      1
+    ]
+  },
+  "54": {
+    "name": 1274388945,
+    "cate": "function",
+    "desc": 2105587205,
+    "widgetType": 1,
+    "widgetTxt": [
+      74,
+      75
+    ],
+    "tab": "game",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "platform": [
+      1
+    ],
+    "order": 0,
+    "widgetDefaultValue": 0,
+    "showlogin": 1,
+    "funcType": "mobileGamepadLayout"
+  },
+  "60": {
+    "name": 1205025321,
+    "cate": "other",
+    "desc": 1408291828,
+    "tab": "account",
+    "buttonFunc": [
+      "openUUNetwork"
+    ],
+    "platform": [
+      2
+    ],
+    "widgetType": 5,
+    "widgetTxt": [
+      78
+    ],
+    "showlogin": 1,
+    "funcType": "uuNetwork"
+  },
+  "5": {
+    "tab": "audio",
+    "funcType": "musicVol",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1463925565,
+    "cate": "volBalance",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "showlogin": 1
+  },
+  "6": {
+    "tab": "audio",
+    "funcType": "soundVol",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1727982605,
+    "cate": "volBalance",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "showlogin": 1
+  },
+  "7": {
+    "tab": "audio",
+    "funcType": "voiceVol",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1582403381,
+    "cate": "volBalance",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "showlogin": 1
+  },
+  "8": {
+    "tab": "audio",
+    "funcType": "teamVol",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1555704748,
+    "cate": "volBalance",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "showlogin": 1
+  },
+  "31": {
+    "tab": "game",
+    "funcType": "reportProcessStuckDebug",
+    "buttonFunc": [
+      "reportProcessStuckDebug"
+    ],
+    "name": 1921723916,
+    "cate": "function",
+    "widgetTxt": [
+      21
+    ],
+    "widgetType": 5,
+    "order": 160
+  },
+  "9": {
+    "name": 1182603946,
+    "cate": "null",
+    "widgetType": 1,
+    "funcType": "language",
+    "widgetParam": [
+      "zh_CN",
+      "en",
+      "ja_JP",
+      "ko_KR",
+      "zh_TW",
+      "de_DE",
+      "fr_FR",
+      "es_ES",
+      "pt_PT",
+      "ru_RU",
+      "id_ID",
+      "th_TH",
+      "vi_VN"
+    ],
+    "widgetTxt": [
+      5,
+      6,
+      35,
+      34,
+      33,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "showlogin": 1,
+    "tab": "language",
+    "widgetDefaultValue": "zh_CN"
+  },
+  "57": {
+    "name": 1480860408,
+    "cate": "video",
+    "widgetType": 1,
+    "funcType": "targetFramerate",
+    "widgetParam": [
+      30,
+      45,
+      60
+    ],
+    "widgetDefaultValue": 30,
+    "showlogin": 1,
+    "tab": "video",
+    "platform": [
+      1
+    ]
+  },
+  "58": {
+    "tab": "operate",
+    "funcType": "gamepadCursorSpeed",
+    "widgetParam": [
+      1,
+      5
+    ],
+    "platform": [
+      2,
+      4
+    ],
+    "cate": "input",
+    "widgetDefaultValue": 3,
+    "widgetType": 2,
+    "name": 1415879578
+  },
+  "59": {
+    "name": 1786533482,
+    "cate": "function",
+    "widgetType": 1,
+    "funcType": "mobileJoystickMode",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 1,
+    "order": 260,
+    "widgetTxt": [
+      76,
+      77
+    ],
+    "platform": [
+      1
+    ],
+    "tab": "game"
+  },
+  "61": {
+    "name": 1286539897,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "tab": "account",
+    "funcParam": [
+      "mobile"
+    ],
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "order": 1,
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "funcType": "mobileAccountBind",
+    "channels": [
+      "douyin-cloud-game.official.Aw6vf9",
+      "harmony.official.Ahclx6",
+      "douyinmodel1.official.Ahlzau",
+      "dy-cloud.official.Ay24n1",
+      "bilibili.official.A6skit",
+      "PCBilibili.official.Anur8t"
+    ]
+  },
+  "62": {
+    "name": 1354546125,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "emailAccountBind",
+    "funcParam": [
+      "email"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 2,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "63": {
+    "name": 1557219075,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "google"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 3,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "64": {
+    "name": 2098848950,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "facebook"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 4,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "65": {
+    "name": 1381161807,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "apple"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 5,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "66": {
+    "name": 1679836613,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "discord"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 6,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "67": {
+    "name": 2067013371,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "tiktok"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 7,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "68": {
+    "name": 1226598336,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "vk"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 8,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "69": {
+    "name": 1160482792,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "line"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 9,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "16": {
+    "name": 1131022950,
+    "cate": "video",
+    "widgetType": 1,
+    "funcType": "antialiasing",
+    "widgetParam": [
+      "DeepLearningSuperSampling",
+      "FidelityFXSuperResolution",
+      "TAAU",
+      "TemporalAntialiasing",
+      "None"
+    ],
+    "widgetDefaultValue": "TemporalAntialiasing",
+    "order": 4,
+    "widgetTxt": [
+      11,
+      13,
+      53,
+      12,
+      10
+    ],
+    "showlogin": 1,
+    "tab": "video"
+  },
+  "27": {
+    "funcType": "micVol",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1222342184,
+    "cate": "volBalance",
+    "widgetDefaultValue": 80,
+    "widgetType": 2,
+    "tab": "audio"
+  },
+  "17": {
+    "name": 1770682497,
+    "cate": "video",
+    "widgetType": 1,
+    "funcType": "vSync",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "showlogin": 1,
+    "tab": "video",
+    "platform": [
+      2
+    ]
+  },
+  "29": {
+    "name": 1964637490,
+    "cate": "function",
+    "desc": 1724867951,
+    "widgetType": 1,
+    "funcType": "isEnableManualClickForceLockEnemy",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 1,
+    "order": 140,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "platform": [
+      1
+    ],
+    "tab": "game"
+  },
+  "18": {
+    "funcType": "puppetCountLimit",
+    "widgetParam": [
+      10,
+      100
+    ],
+    "name": 1837821132,
+    "cate": "other",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "tab": "video"
+  },
+  "32": {
+    "name": 1325437866,
+    "cate": "function",
+    "desc": 1097724242,
+    "funcType": "catchAbsorbSpeed_mouseKeyBoard",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "widgetDefaultValue": 3,
+    "order": 170,
+    "widgetType": 2,
+    "platform": [
+      2
+    ],
+    "tab": "game"
+  },
+  "33": {
+    "name": 1680778813,
+    "cate": "function",
+    "desc": 1966176773,
+    "funcType": "catchDampingRate_mouseKeyBoard",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "widgetDefaultValue": 0,
+    "order": 180,
+    "widgetType": 2,
+    "platform": [
+      2
+    ],
+    "tab": "game"
+  },
+  "34": {
+    "name": 1559400094,
+    "cate": "function",
+    "desc": 1188309618,
+    "funcType": "catchAbsorbSpeed_gamePad",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "widgetDefaultValue": 3,
+    "order": 190,
+    "widgetType": 2,
+    "platform": [
+      4
+    ],
+    "tab": "game"
+  },
+  "36": {
+    "name": 1709004739,
+    "cate": "function",
+    "desc": 1171167714,
+    "funcType": "catchAbsorbSpeed_mobile",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "widgetDefaultValue": 3,
+    "order": 210,
+    "widgetType": 2,
+    "platform": [
+      1
+    ],
+    "tab": "game"
+  },
+  "37": {
+    "name": 1499993647,
+    "cate": "function",
+    "desc": 1853396042,
+    "funcType": "catchDampingRate_mobile",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "widgetDefaultValue": 0,
+    "order": 220,
+    "widgetType": 2,
+    "platform": [
+      1
+    ],
+    "tab": "game"
+  },
+  "38": {
+    "name": 1840893054,
+    "cate": "video",
+    "widgetType": 1,
+    "funcType": "targetFramerate",
+    "widgetParam": [
+      -1,
+      60,
+      120
+    ],
+    "widgetDefaultValue": -1,
+    "widgetTxt": [
+      14
+    ],
+    "showlogin": 1,
+    "tab": "video",
+    "platform": [
+      2
+    ]
+  },
+  "82": {
+    "funcType": "worldCameraSaturation",
+    "widgetParam": [
+      -100,
+      100
+    ],
+    "name": 2011415147,
+    "cate": "other",
+    "widgetDefaultValue": 0,
+    "widgetType": 2,
+    "tab": "video"
+  },
+  "40": {
+    "name": 1142381347,
+    "cate": "downloadSetting",
+    "widgetType": 1,
+    "funcType": "resourceQuality",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      31,
+      32
+    ],
+    "showlogin": 1,
+    "tab": "resource",
+    "widgetDefaultValue": 0
+  },
+  "41": {
+    "name": 1352101575,
+    "cate": "video",
+    "desc": 1329848979,
+    "widgetType": 1,
+    "funcType": "frameGeneration",
+    "widgetParam": [
+      "None",
+      "One",
+      "Two",
+      "Three",
+      "Four",
+      "Five",
+      "Dynamic"
+    ],
+    "widgetDefaultValue": "None",
+    "widgetTxt": [
+      14,
+      43,
+      44,
+      45,
+      70,
+      71,
+      72
+    ],
+    "platform": [
+      2
+    ],
+    "showlogin": 1,
+    "tab": "video"
+  },
+  "85": {
+    "widgetDefaultValue": 0,
+    "funcType": "invertHorizontalLook",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "name": 2076191378,
+    "cate": "input",
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetType": 1,
+    "tab": "operate"
+  },
+  "35": {
+    "name": 1810491818,
+    "cate": "function",
+    "desc": 1379090186,
+    "funcType": "catchDampingRate_gamePad",
+    "widgetParam": [
+      0,
+      5
+    ],
+    "widgetDefaultValue": 3,
+    "order": 200,
+    "widgetType": 2,
+    "platform": [
+      4
+    ],
+    "tab": "game"
+  },
+  "44": {
+    "tab": "game",
+    "funcType": "cameraRotateRate",
+    "widgetParam": [
+      1,
+      5
+    ],
+    "name": 2078010682,
+    "cate": "function",
+    "widgetDefaultValue": 3,
+    "widgetType": 2,
+    "order": 240
+  },
+  "88": {
+    "funcType": "gamepadRightStickDeadzone",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1617090985,
+    "cate": "input",
+    "widgetDefaultValue": 20,
+    "widgetType": 2,
+    "tab": "operate"
+  },
+  "89": {
+    "name": 1762075551,
+    "cate": "function",
+    "widgetType": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "funcType": "autoCameraWhenNoLock",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "order": 120,
+    "platform": [
+      2,
+      4
+    ],
+    "showlogin": 1,
+    "tab": "game"
+  },
+  "91": {
+    "name": 1839779357,
+    "cate": "input",
+    "widgetType": 1,
+    "funcType": "invertHorizontalLookMouse",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "tab": "operate",
+    "widgetDefaultValue": 0,
+    "platform": [
+      2
+    ]
+  },
+  "92": {
+    "name": 1364420372,
+    "cate": "input",
+    "widgetType": 1,
+    "funcType": "invertVerticalLookMouse",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "tab": "operate",
+    "widgetDefaultValue": 0,
+    "platform": [
+      2
+    ]
+  },
+  "93": {
+    "name": 1911981827,
+    "cate": "function",
+    "widgetType": 1,
+    "funcType": "invertHorizontalLookMouse",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "tab": "game",
+    "widgetDefaultValue": 0,
+    "platform": [
+      1
+    ]
+  },
+  "1": {
+    "name": 2120560676,
+    "cate": "ui",
+    "desc": 2055325660,
+    "widgetType": 1,
+    "funcType": "showUI",
+    "funcParam": [
+      "help"
+    ],
+    "widgetDefaultValue": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetParam": [
+      0,
+      1
+    ],
+    "platform": [
+      2,
+      4
+    ],
+    "tab": "game"
+  },
+  "2": {
+    "name": 1471736697,
+    "cate": "function",
+    "desc": 1536180125,
+    "widgetType": 1,
+    "funcType": "attackForceLock",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "order": 100,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "showlogin": 1,
+    "tab": "game"
+  },
+  "3": {
+    "tab": "video",
+    "showlogin": 1,
+    "buttonFunc": [
+      "setLightLv"
+    ],
+    "name": 1570900774,
+    "cate": "video",
+    "widgetTxt": [
+      1
+    ],
+    "widgetType": 2,
+    "hide": 1
+  },
+  "4": {
+    "tab": "audio",
+    "funcType": "mainVol",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1978018981,
+    "cate": "mainVol",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "showlogin": 1
+  },
+  "97": {
+    "tab": "game",
+    "funcType": "catchCameraPitchRotateRate",
+    "widgetParam": [
+      1,
+      5
+    ],
+    "name": 1267399182,
+    "cate": "function",
+    "widgetDefaultValue": 3,
+    "widgetType": 2,
+    "order": 242
+  },
+  "96": {
+    "tab": "game",
+    "funcType": "catchCameraYawRotateRate",
+    "widgetParam": [
+      1,
+      5
+    ],
+    "name": 1288680289,
+    "cate": "function",
+    "widgetDefaultValue": 3,
+    "widgetType": 2,
+    "order": 241
+  },
+  "94": {
+    "name": 1285411922,
+    "cate": "function",
+    "widgetType": 1,
+    "funcType": "invertVerticalLookMouse",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "tab": "game",
+    "widgetDefaultValue": 0,
+    "platform": [
+      1
+    ]
+  },
+  "87": {
+    "funcType": "gamepadLeftStickDeadzone",
+    "widgetParam": [
+      0,
+      100
+    ],
+    "name": 1209132501,
+    "cate": "input",
+    "widgetDefaultValue": 20,
+    "widgetType": 2,
+    "tab": "operate"
+  },
+  "86": {
+    "widgetDefaultValue": 0,
+    "funcType": "invertVerticalLook",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "name": 1879720158,
+    "cate": "input",
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetType": 1,
+    "tab": "operate"
+  },
+  "84": {
+    "funcType": "worldCameraContrast",
+    "widgetParam": [
+      -100,
+      100
+    ],
+    "name": 1719176256,
+    "cate": "other",
+    "widgetDefaultValue": 0,
+    "widgetType": 2,
+    "tab": "video"
+  },
+  "83": {
+    "funcType": "worldCameraBrightness",
+    "widgetParam": [
+      -100,
+      100
+    ],
+    "name": 1693740407,
+    "cate": "other",
+    "widgetDefaultValue": 0,
+    "widgetType": 2,
+    "tab": "video"
+  },
+  "81": {
+    "name": 2147323980,
+    "cate": "function",
+    "desc": 1322757642,
+    "widgetType": 1,
+    "funcType": "holdToEnterCatchMode",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "order": 310,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "platform": [
+      4
+    ],
+    "tab": "game"
+  },
+  "80": {
+    "name": 1333162742,
+    "cate": "function",
+    "desc": 1160965630,
+    "funcType": "autoAcceptSpaceFollowInvite",
+    "widgetParam": [
+      0,
+      1,
+      2
+    ],
+    "widgetDefaultValue": 0,
+    "order": 300,
+    "widgetType": 1,
+    "widgetTxt": [
+      92,
+      93,
+      94
+    ],
+    "tab": "game"
+  },
+  "79": {
+    "name": 1372177148,
+    "cate": "function",
+    "desc": 1436710435,
+    "funcType": "autoAcceptSpaceFollowRequire",
+    "widgetParam": [
+      0,
+      1,
+      2
+    ],
+    "widgetDefaultValue": 0,
+    "order": 290,
+    "widgetType": 1,
+    "widgetTxt": [
+      92,
+      93,
+      94
+    ],
+    "tab": "game"
+  },
+  "78": {
+    "name": 1388816615,
+    "cate": "photoStorage",
+    "widgetType": 1,
+    "funcType": "photoStorageMode",
+    "widgetParam": [
+      0,
+      1,
+      2
+    ],
+    "widgetTxt": [
+      89,
+      90,
+      91
+    ],
+    "order": 1,
+    "tab": "storage",
+    "widgetDefaultValue": 2
+  },
+  "77": {
+    "name": 1296429250,
+    "cate": "function",
+    "desc": 1935637480,
+    "widgetType": 1,
+    "funcType": "focusTargetLineOpen",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "order": 280,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "showlogin": 1,
+    "tab": "game"
+  },
+  "76": {
+    "name": 1199596523,
+    "cate": "video",
+    "desc": 1909113604,
+    "widgetType": 1,
+    "funcType": "vrs",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "platform": [
+      1,
+      2
+    ],
+    "showlogin": 1,
+    "tab": "video"
+  },
+  "75": {
+    "name": 1344271917,
+    "cate": "function",
+    "desc": 1901566211,
+    "funcType": "bloodType",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "order": 270,
+    "widgetType": 1,
+    "widgetTxt": [
+      87,
+      88
+    ],
+    "tab": "game"
+  },
+  "74": {
+    "funcType": "infoStampStrangerCount",
+    "widgetParam": [
+      0,
+      30
+    ],
+    "name": 1863309689,
+    "cate": "infoStamp",
+    "widgetDefaultValue": 10,
+    "widgetType": 2,
+    "tab": "game"
+  },
+  "73": {
+    "funcType": "infoStampFriendCount",
+    "widgetParam": [
+      0,
+      60
+    ],
+    "name": 2054472081,
+    "cate": "infoStamp",
+    "widgetDefaultValue": 60,
+    "widgetType": 2,
+    "tab": "game"
+  },
+  "72": {
+    "funcType": "infoStampSystemVisible",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "name": 1773744547,
+    "cate": "infoStamp",
+    "widgetTxt": [
+      82,
+      86
+    ],
+    "widgetType": 1,
+    "tab": "game"
+  },
+  "71": {
+    "funcType": "infoStampOwnVisibility",
+    "widgetParam": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "name": 1561354406,
+    "cate": "infoStamp",
+    "widgetTxt": [
+      82,
+      83,
+      84,
+      85
+    ],
+    "widgetType": 1,
+    "tab": "game"
+  },
+  "70": {
+    "name": 1714924053,
+    "cate": "personaInfo",
+    "widgetType": 10,
+    "funcType": "socialAccountBind",
+    "funcParam": [
+      "kakao"
+    ],
+    "widgetTxt": [
+      79,
+      80,
+      81
+    ],
+    "order": 10,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "tab": "account"
+  },
+  "19": {
+    "funcType": "petCountLimit",
+    "widgetParam": [
+      5,
+      100
+    ],
+    "name": 1129238280,
+    "cate": "other",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "tab": "video"
+  },
+  "30": {
+    "name": 1314375008,
+    "cate": "function",
+    "widgetType": 1,
+    "funcType": "aiHelperStrength",
+    "widgetParam": [
+      0,
+      1,
+      2
+    ],
+    "widgetDefaultValue": 2,
+    "order": 150,
+    "widgetTxt": [
+      22,
+      23,
+      24
+    ],
+    "showlogin": 1,
+    "tab": "game"
+  },
+  "28": {
+    "name": 2119856597,
+    "cate": "volSet",
+    "widgetType": 1,
+    "funcType": "teamSpeechSpeakType",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      20,
+      17
+    ],
+    "tab": "audio",
+    "widgetDefaultValue": 0,
+    "platform": [
+      1
+    ]
+  },
+  "26": {
+    "name": 2058855563,
+    "cate": "volSet",
+    "widgetType": 1,
+    "funcType": "teamSpeechSpeakType",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetTxt": [
+      16,
+      17
+    ],
+    "tab": "audio",
+    "widgetDefaultValue": 0,
+    "platform": [
+      2,
+      4
+    ]
+  },
+  "25": {
+    "widgetDefaultValue": 1,
+    "funcType": "autoEnterTeamSpeech",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "name": 1561074387,
+    "cate": "volSet",
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "widgetType": 1,
+    "tab": "audio"
+  },
+  "15": {
+    "name": 1495740962,
+    "cate": "video",
+    "widgetType": 1,
+    "funcType": "setResolution",
+    "widgetParam": [
+      "2560x1440",
+      "1920x1080",
+      "1440x1080",
+      "1280x960"
+    ],
+    "widgetDefaultValue": "2560x1440",
+    "order": 3,
+    "platform": [
+      2,
+      4
+    ],
+    "showlogin": 1,
+    "tab": "video"
+  },
+  "10": {
+    "name": 1837559922,
+    "cate": "escape",
+    "desc": 1829373214,
+    "showlogin": 1,
+    "buttonFunc": [
+      "escape"
+    ],
+    "widgetTxt": [
+      7
+    ],
+    "order": 0,
+    "widgetType": 5,
+    "tab": "game"
+  },
+  "14": {
+    "name": 1394794895,
+    "cate": "video",
+    "widgetType": 1,
+    "widgetTxt": [
+      8,
+      9
+    ],
+    "funcType": "setScreenMode",
+    "widgetParam": [
+      "FullScreenWindow",
+      "Windowed"
+    ],
+    "widgetDefaultValue": "FullScreenWindow",
+    "order": 2,
+    "platform": [
+      2,
+      4
+    ],
+    "showlogin": 1,
+    "tab": "video"
+  },
+  "24": {
+    "name": 2015514050,
+    "cate": "function",
+    "desc": 1712756038,
+    "funcType": "autoCast",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "order": 130,
+    "widgetType": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "tab": "game"
+  },
+  "45": {
+    "name": 2132901174,
+    "cate": "function",
+    "desc": 1413405726,
+    "funcType": "isShowResist",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 1,
+    "order": 250,
+    "widgetType": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "tab": "game"
+  },
+  "23": {
+    "name": 1321020821,
+    "cate": "function",
+    "widgetType": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "funcType": "autoCameraWhenNoLock",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 1,
+    "order": 120,
+    "platform": [
+      1
+    ],
+    "showlogin": 1,
+    "tab": "game"
+  },
+  "46": {
+    "name": 1763240959,
+    "cate": "accountSetting",
+    "desc": 1420918499,
+    "widgetType": 1,
+    "funcType": "crossPlatform",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 1,
+    "widgetTxt": [
+      14,
+      15
+    ],
+    "platform": [
+      4
+    ],
+    "showlogin": 1,
+    "tab": "account"
+  },
+  "22": {
+    "name": 1209132730,
+    "cate": "function",
+    "desc": 2092785381,
+    "widgetType": 1,
+    "funcType": "useExtendLockCamera",
+    "widgetParam": [
+      0,
+      1,
+      2
+    ],
+    "widgetDefaultValue": 1,
+    "order": 110,
+    "widgetTxt": [
+      14,
+      19,
+      18
+    ],
+    "showlogin": 1,
+    "tab": "game"
+  },
+  "47": {
+    "name": 1766572106,
+    "cate": "accountSetting",
+    "desc": 1916667458,
+    "tab": "account",
+    "buttonFunc": [
+      "openPrivacyPolicy"
+    ],
+    "platform": [
+      4
+    ],
+    "widgetType": 5,
+    "widgetTxt": [
+      54
+    ],
+    "showlogin": 1,
+    "funcType": "privacyPolicy"
+  },
+  "21": {
+    "funcType": "envObjCountLimit",
+    "widgetParam": [
+      50,
+      200
+    ],
+    "name": 1385603349,
+    "cate": "other",
+    "widgetDefaultValue": 200,
+    "widgetType": 2,
+    "tab": "video"
+  },
+  "48": {
+    "name": 1144539990,
+    "cate": "accountSetting",
+    "desc": 1230656431,
+    "tab": "account",
+    "buttonFunc": [
+      "opentermsofService"
+    ],
+    "platform": [
+      4
+    ],
+    "widgetType": 5,
+    "widgetTxt": [
+      55
+    ],
+    "showlogin": 1,
+    "funcType": "termsofService"
+  },
+  "20": {
+    "funcType": "playerCountLimit",
+    "widgetParam": [
+      5,
+      100
+    ],
+    "name": 1828728562,
+    "cate": "other",
+    "widgetDefaultValue": 100,
+    "widgetType": 2,
+    "tab": "video"
+  },
+  "11": {
+    "cate": "input",
+    "tab": "operate",
+    "widgetType": 4,
+    "name": 1085770458
+  },
+  "13": {
+    "tab": "operate",
+    "funcType": "gyroscopeRatio",
+    "widgetParam": [
+      0,
+      4
+    ],
+    "platform": [
+      1,
+      2
+    ],
+    "cate": "input",
+    "widgetDefaultValue": 2,
+    "widgetType": 2,
+    "name": 2082918396
+  },
+  "50": {
+    "name": 1675189037,
+    "cate": "video",
+    "widgetType": 1,
+    "widgetTxt": [
+      64,
+      65
+    ],
+    "funcType": "preset",
+    "widgetParam": [
+      0,
+      1
+    ],
+    "widgetDefaultValue": 0,
+    "order": 1,
+    "platform": [
+      4
+    ],
+    "showlogin": 1,
+    "tab": "video"
+  },
+  "12": {
+    "funcType": "rumbleRatio",
+    "widgetParam": [
+      0,
+      4
+    ],
+    "name": 1530761764,
+    "cate": "input",
+    "widgetDefaultValue": 2,
+    "widgetType": 2,
+    "tab": "operate"
+  },
+  "51": {
+    "name": 1283093499,
+    "cate": "null",
+    "desc": 1331562911,
+    "funcType": "audioLanguage",
+    "widgetParam": [
+      "zh_CN",
+      "en",
+      "ja",
+      "ko"
+    ],
+    "widgetDefaultValue": "zh_CN",
+    "widgetType": 1,
+    "widgetTxt": [
+      66,
+      67,
+      68,
+      69
+    ],
+    "showlogin": 1,
+    "tab": "language"
+  },
+  "43": {
+    "widgetType": 5,
+    "funcType": "openExchangeCodeUI",
+    "buttonFunc": [
+      "openExchangeCodeUI"
+    ],
+    "name": 1335932963,
+    "cate": "accountSetting",
+    "widgetTxt": [
+      52
+    ],
+    "desc": 1661153229,
+    "tab": "account"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_12840100",
+  "NodeID": 1,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "13": {
+      "timelineId": 12840100002,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 13
+    }
+  },
+  "onAbilityCastIds": [
+    13
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 12,
+  "preloadAnims": [
+    "Skill_Bullet",
+    "Skill_Burrow_Attack"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10285_Skill_Bullet_Soil_Hit",
+    "Eff_Parmon_10285_Skill_Bullet_Soil",
+    "Eff_Hit_Rock_Blunt_Big",
+    "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02"
+  ],
+  "searchRelation": 2,
+  "name": "火花",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10800150
+}

@@ -1,0 +1,171 @@
+[
+  {
+    "cardName": 2089999405,
+    "res": "$UI_Img_PlayerInfoCard_NameCardBackground.png",
+    "sourceDec": 1380202480,
+    "defaultUnlock": 1,
+    "showStatus": 1,
+    "item": 140001
+  },
+  {
+    "cardName": 1857326398,
+    "item": 140003,
+    "sourceDec": 1289868576,
+    "res": "$UI_Img_Card_Box.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1768704640,
+    "item": 140004,
+    "sourceDec": 2127665122,
+    "res": "$UI_Img_Card_XiaoHongShu.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1503396335,
+    "item": 140005,
+    "sourceDec": 1784059261,
+    "res": "$UI_Img_Card_Egg2.png",
+    "showStatus": 1
+  },
+  {
+    "cardName": 1682640134,
+    "item": 140006,
+    "sourceDec": 1733953333,
+    "res": "$UI_Img_Card_Egg3.png",
+    "showStatus": 1
+  },
+  {
+    "cardName": 1249821585,
+    "item": 140007,
+    "sourceDec": 1561570845,
+    "res": "$UI_Img_Card_Home.png",
+    "showStatus": 1
+  },
+  {
+    "cardName": 1401841363,
+    "item": 140008,
+    "sourceDec": 1629662907,
+    "res": "$UI_Img_Card_NBB.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 2053267235,
+    "item": 140009,
+    "sourceDec": 1703612912,
+    "res": "$UI_Img_Card_TikTok.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1572614797,
+    "item": 140010,
+    "sourceDec": 1978226289,
+    "res": "$UI_Img_Card_Pet.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1822417030,
+    "item": 140011,
+    "sourceDec": 1353965695,
+    "res": "$UI_Img_Card_Pet_Super.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1144987516,
+    "item": 140012,
+    "sourceDec": 1767213201,
+    "res": "$UI_Img_Card_BiliBili.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1540852227,
+    "item": 140013,
+    "sourceDec": 2099969521,
+    "res": "$UI_Img_Card_4399.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1529276862,
+    "item": 140014,
+    "sourceDec": 1250555205,
+    "res": "$UI_Img_Card_WeGame.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1471684963,
+    "item": 140015,
+    "sourceDec": 1725578229,
+    "res": "$UI_Img_Card_HongMeng.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1453760382,
+    "item": 140016,
+    "sourceDec": 1953015905,
+    "res": "$UI_Img_Card_DouYin.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1491772199,
+    "item": 140017,
+    "sourceDec": 1817803249,
+    "res": "$UI_Img_Card_Imo.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1843543802,
+    "item": 140018,
+    "sourceDec": 1113723947,
+    "res": "$UI_Img_Card_Ru.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1683262475,
+    "item": 140019,
+    "sourceDec": 1782629716,
+    "res": "$UI_Img_Card_Kuaibao.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1206593252,
+    "item": 140020,
+    "sourceDec": 2117763230,
+    "res": "$UI_Img_Card_Google.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1915984323,
+    "item": 140021,
+    "sourceDec": 1186175620,
+    "res": "$UI_Img_Card_Apple.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1433285135,
+    "item": 140022,
+    "sourceDec": 1583674863,
+    "res": "$UI_Img_Card_Points.png",
+    "showStatus": 1
+  },
+  {
+    "cardName": 1572878754,
+    "item": 140023,
+    "sourceDec": 1394867883,
+    "res": "$UI_Img_Card_NewSeason.png",
+    "showStatus": 1
+  },
+  {
+    "cardName": 1391389849,
+    "item": 140024,
+    "sourceDec": 1289726198,
+    "res": "$UI_Img_Card_Epic.png",
+    "showStatus": 3
+  },
+  {
+    "cardName": 1725920115,
+    "item": 140025,
+    "sourceDec": 1884381224,
+    "res": "$UI_Img_Card_TapTap.png",
+    "showStatus": 3
+  }
+]

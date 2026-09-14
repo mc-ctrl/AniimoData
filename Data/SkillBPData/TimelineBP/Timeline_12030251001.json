@@ -1,0 +1,184 @@
+{
+  "nodeMap": {
+    "13": {
+      "UID": "cc196b58-4b2d-4889-8f01-24af7a6523d4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "c2681379-689a-46fc-9f43-69173ceff848",
+      "name": "stopAnimation",
+      "anim": "Attack03",
+      "NodeID": 24
+    },
+    "15": {
+      "name": "getTargetOffsetPos",
+      "UID": "fe5de4c6-e87d-4b7a-9249-4215f4b0c9d0",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        4
+      ],
+      "NodeID": 15
+    },
+    "28": {
+      "calcInfo": {
+        "tp_temp_max": 999,
+        "tp_temp_cur": 999
+      },
+      "name": "addDynamicAttribute",
+      "UID": "7a9bc8a8-dcec-4ce7-9345-97c77b0fd801",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "16": {
+      "pos": {
+        "name": "getTargetOffsetPos",
+        "UID": "fe5de4c6-e87d-4b7a-9249-4215f4b0c9d0",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          4
+        ],
+        "NodeID": 15
+      },
+      "outputTargetActorId": false,
+      "name": "getTargetPosOrCustomPos",
+      "UID": "da0102ab-558e-4cc0-be80-26cc9a8096ba",
+      "useHitPos": false,
+      "distance": 500,
+      "NodeID": 16
+    },
+    "26": {
+      "UID": "303fa1ce-bfe2-4204-b756-f692e38b44e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 26
+    },
+    "17": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 120304,
+      "name": "createEntity",
+      "UID": "58a5b699-3058-41c7-8e41-e3c87c71da10",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 17,
+      "pos": {
+        "pos": {
+          "name": "getTargetOffsetPos",
+          "UID": "fe5de4c6-e87d-4b7a-9249-4215f4b0c9d0",
+          "target": "OWNER",
+          "offset": [
+            0,
+            0,
+            4
+          ],
+          "NodeID": 15
+        },
+        "outputTargetActorId": false,
+        "name": "getTargetPosOrCustomPos",
+        "UID": "da0102ab-558e-4cc0-be80-26cc9a8096ba",
+        "useHitPos": false,
+        "distance": 500,
+        "NodeID": 16
+      }
+    },
+    "23": {
+      "UID": "d8e80216-6cbb-4b58-938d-268afce4c36b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          21,
+          24
+        ]
+      },
+      "NodeID": 23
+    },
+    "21": {
+      "UID": "f89271ca-33e6-4a8d-a513-8cdc8a71fd42",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 21
+    },
+    "12": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "1683540e-01f6-4d4c-9da1-7d9bf718576a",
+      "target": "OWNER",
+      "NodeID": 12,
+      "animId": "Attack03"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 19,
+      "UID": "2289b28e-4278-4747-8f25-14479dcd84e0"
+    },
+    "4": {
+      "UID": "6b242134-3ec8-4c1b-8962-82f55da4b28a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          26,
+          28
+        ]
+      },
+      "NodeID": 4
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "aca54ad7-2e61-4d13-b10b-3483c2a07b78",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_12030251",
+  "NodeID": 6,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    4,
+    23,
+    19,
+    13
+  ],
+  "layer": "Base",
+  "length": 1.3
+}

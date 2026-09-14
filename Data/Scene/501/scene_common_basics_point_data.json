@@ -1,0 +1,4545 @@
+{
+  "91305687": {
+    "pointGroupId": 308,
+    "name": "308",
+    "rotation": [
+      0,
+      107.75,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305687,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      9.85,
+      25.81,
+      424.7
+    ]
+  },
+  "69690757": {
+    "id": 69690757,
+    "logics": {},
+    "pointType": 2,
+    "name": "冠军宝箱点_69690757",
+    "position": [
+      -77.87,
+      40.1,
+      386.08
+    ],
+    "rotation": [
+      0,
+      324.58,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55786632
+  },
+  "69690879": {
+    "name": "地理宝箱点位_69690879",
+    "rotation": [
+      0,
+      233.12,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55786632,
+    "id": 69690879,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        -52.78,
+        40.63,
+        415.92
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -52.78,
+      40.63,
+      415.92
+    ]
+  },
+  "71169924": {
+    "id": 71169924,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_71169924",
+    "position": [
+      -7,
+      25.43,
+      444.1
+    ],
+    "rotation": [
+      0,
+      89.57,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 59064381
+  },
+  "71170002": {
+    "id": 71170002,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_71170002",
+    "position": [
+      -31.45,
+      48.63,
+      406.39
+    ],
+    "rotation": [
+      0,
+      350.83,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 57150114
+  },
+  "71408608": {
+    "id": 71408608,
+    "logics": {},
+    "pointType": 2,
+    "name": "乐队宝箱点位_71408608",
+    "position": [
+      15.47,
+      25,
+      443.45
+    ],
+    "rotation": [
+      0,
+      212.58,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55786632
+  },
+  "59499229": {
+    "id": 59499229,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_59499229",
+    "targetPositionData": {
+      "scene": 501,
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        6
+      ],
+      "position": [
+        43.62,
+        124.67,
+        1145.18
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      43.62,
+      124.67,
+      1145.18
+    ],
+    "sandboxId": 59498942
+  },
+  "91307253": {
+    "pointGroupId": 409,
+    "name": "409",
+    "rotation": [
+      0,
+      331.52,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307253,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      3.74,
+      27.63,
+      362.76
+    ]
+  },
+  "62732955": {
+    "id": 62732955,
+    "logics": {},
+    "pointType": 2,
+    "name": "商店NPC_62732955",
+    "targetPositionData": {
+      "entity": 38052942,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4.5
+      ],
+      "position": [
+        -7.45,
+        41.92,
+        427.64
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -7.45,
+      41.92,
+      427.64
+    ],
+    "sandboxId": 62732404
+  },
+  "91307929": {
+    "pointGroupId": 101,
+    "name": "101竞技场通道",
+    "rotation": [
+      0,
+      24.77,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91307929,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -89.39,
+      40.87,
+      354.95
+    ]
+  },
+  "72861946": {
+    "name": "基础点位_72861946",
+    "rotation": [
+      0,
+      314.74,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539,
+    "id": 72861946,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -5.82,
+      33.06,
+      396.57
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "91307267": {
+    "pointGroupId": 508,
+    "name": "508",
+    "rotation": [
+      0,
+      259.38,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307267,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -100.78,
+      39.87,
+      304.34
+    ]
+  },
+  "69676735": {
+    "id": 69676735,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_69676735",
+    "position": [
+      58.61,
+      25.93,
+      401.47
+    ],
+    "rotation": [
+      0,
+      205.37,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539
+  },
+  "91307315": {
+    "pointGroupId": 604,
+    "name": "604",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307315,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -24.81,
+      39.41,
+      522.63
+    ]
+  },
+  "69676871": {
+    "id": 69676871,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_69676871",
+    "position": [
+      36.2,
+      40.36,
+      502.47
+    ],
+    "rotation": [
+      0,
+      173.03,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539
+  },
+  "91307904": {
+    "pointGroupId": 690,
+    "name": "690",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307904,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -40.36,
+      37.39,
+      514.31
+    ]
+  },
+  "73266647": {
+    "name": "任务中莉特点位_73266647",
+    "rotation": [
+      0,
+      90.81,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72671018,
+    "id": 73266647,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        6.99,
+        62.03,
+        1078.66
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "worldx_ch"
+    },
+    "position": [
+      6.99,
+      62.03,
+      1078.66
+    ]
+  },
+  "69677268": {
+    "id": 69677268,
+    "logics": {},
+    "pointType": 2,
+    "name": "咖啡宝箱点位_69677268",
+    "position": [
+      19.53,
+      25.82,
+      419.52
+    ],
+    "rotation": [
+      0,
+      181.36,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55786632
+  },
+  "73266809": {
+    "name": "任务中玻尔点位_73266809",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72671018,
+    "id": 73266809,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        81.33,
+        61.89,
+        1101.22
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "worldx_ch"
+    },
+    "position": [
+      81.33,
+      61.89,
+      1101.22
+    ]
+  },
+  "91307903": {
+    "pointGroupId": 603,
+    "name": "603",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307903,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -33.67,
+      37.39,
+      516.08
+    ]
+  },
+  "73267163": {
+    "name": "任务中校长点位_73267163",
+    "rotation": [
+      0,
+      173.13,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72671018,
+    "id": 73267163,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        45.77,
+        60.35,
+        1085.96
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "worldx_ch"
+    },
+    "position": [
+      45.77,
+      60.35,
+      1085.96
+    ]
+  },
+  "91307428": {
+    "id": 91307428,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_91307428",
+    "position": [
+      -95.67,
+      39.85,
+      360.7
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539
+  },
+  "73267164": {
+    "name": "任务中利威尔点位_73267164",
+    "rotation": [
+      0,
+      173.13,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72671018,
+    "id": 73267164,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "name": "",
+      "position": [
+        44.64,
+        60.35,
+        1085.7
+      ],
+      "author": "worldx_ch"
+    },
+    "position": [
+      44.64,
+      60.35,
+      1085.7
+    ]
+  },
+  "91305689": {
+    "pointGroupId": 308,
+    "name": "308",
+    "rotation": [
+      0,
+      107.75,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305689,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      7.55,
+      27.53,
+      422.4
+    ]
+  },
+  "73267165": {
+    "name": "任务中传送点位_73267165",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72671018,
+    "id": 73267165,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        49.25,
+        58.35,
+        1075.18
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "worldx_ch"
+    },
+    "position": [
+      49.25,
+      58.35,
+      1075.18
+    ]
+  },
+  "91305691": {
+    "pointGroupId": 390,
+    "name": "390",
+    "rotation": [
+      0,
+      107.75,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305691,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      5.03,
+      29.62,
+      419.96
+    ]
+  },
+  "73928978": {
+    "name": "学院区域到达检测",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72422356,
+    "id": 73928978,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        270
+      ],
+      "position": [
+        48.98,
+        56.68,
+        1055.9
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      48.98,
+      56.68,
+      1055.9
+    ]
+  },
+  "91305934": {
+    "pointGroupId": 490,
+    "name": "490",
+    "rotation": [
+      0,
+      350.29,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305934,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -65.44,
+      40.7,
+      423.45
+    ]
+  },
+  "74026115": {
+    "name": "校长室到达检测",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72422356,
+    "id": 74026115,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        27
+      ],
+      "position": [
+        44.98,
+        124.81,
+        1153.08
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      44.98,
+      124.81,
+      1153.08
+    ]
+  },
+  "91305936": {
+    "pointGroupId": 401,
+    "name": "401",
+    "rotation": [
+      0,
+      350.29,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305936,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -64.8,
+      41.42,
+      425.55
+    ]
+  },
+  "76952704": {
+    "id": 76952704,
+    "logics": {},
+    "pointType": 2,
+    "name": "逛街导航点_76952704",
+    "position": [
+      -19.33,
+      40.05,
+      444.37
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 69432383
+  },
+  "91305952": {
+    "pointGroupId": 402,
+    "name": "402",
+    "rotation": [
+      0,
+      264.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305952,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -45.5,
+      39.88,
+      425.47
+    ]
+  },
+  "78110078": {
+    "id": 78110078,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_78110078",
+    "position": [
+      67.74,
+      43.56,
+      483.06
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 78110074
+  },
+  "91305954": {
+    "pointGroupId": 402,
+    "name": "402",
+    "rotation": [
+      0,
+      264.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305954,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -44.59,
+      41.98,
+      422.37
+    ]
+  },
+  "78110937": {
+    "id": 78110937,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_78110937",
+    "position": [
+      64.97,
+      43.56,
+      488.56
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 78110936
+  },
+  "91305956": {
+    "pointGroupId": 490,
+    "name": "490",
+    "rotation": [
+      0,
+      264.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305956,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -44.8,
+      43.79,
+      418.82
+    ]
+  },
+  "88190323": {
+    "name": "基础点位_88190323",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539,
+    "id": 88190323,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -12.38,
+      38.24,
+      451.36
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "91306016": {
+    "pointGroupId": 406,
+    "name": "406",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306016,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -1.01,
+      32.95,
+      397.41
+    ]
+  },
+  "88195776": {
+    "name": "基础点位_88195776",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539,
+    "id": 88195776,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      113.6,
+      38.38,
+      458.7
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "91306018": {
+    "pointGroupId": 406,
+    "name": "406",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306018,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      2.53,
+      32.88,
+      393.88
+    ]
+  },
+  "90496642": {
+    "id": 90496642,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_90496642",
+    "position": [
+      -5,
+      25,
+      467.56
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539
+  },
+  "91306021": {
+    "pointGroupId": 407,
+    "name": "407",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306021,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -9.87,
+      39.15,
+      376.3
+    ]
+  },
+  "90502863": {
+    "name": "基础点位_90502863",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539,
+    "id": 90502863,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      38.9,
+      31,
+      560.7
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "91306023": {
+    "pointGroupId": 407,
+    "name": "407",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306023,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -9.87,
+      40.95,
+      376.3
+    ]
+  },
+  "90637981": {
+    "name": "基础点位_90637981",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539,
+    "id": 90637981,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      93.86,
+      28.11,
+      434.89
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "91306160": {
+    "pointGroupId": 490,
+    "name": "490",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306160,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -9.87,
+      41.85,
+      376.3
+    ]
+  },
+  "90817599": {
+    "name": "基础点位_90817599",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539,
+    "id": 90817599,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      129.62,
+      37.9,
+      504.61
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "91306330": {
+    "pointGroupId": 502,
+    "name": "502",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306330,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -26.85,
+      38.21,
+      310.34
+    ]
+  },
+  "90825682": {
+    "name": "基础点位_90825682",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539,
+    "id": 90825682,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -53.72,
+      39.7,
+      496.97
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "91306332": {
+    "pointGroupId": 590,
+    "name": "590",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306332,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -26.59,
+      38.71,
+      302.68
+    ]
+  },
+  "90828941": {
+    "id": 90828941,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_90828941",
+    "position": [
+      -70.88,
+      39.89,
+      419.64
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539
+  },
+  "91306347": {
+    "pointGroupId": 503,
+    "name": "503",
+    "rotation": [
+      0,
+      46.72,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306347,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -137.5,
+      35.99,
+      267.49
+    ]
+  },
+  "91051929": {
+    "name": "基础点位_91051929",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 83720864,
+    "id": 91051929,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -6.03,
+        33.69,
+        433.15
+      ],
+      "circleRadius": 10,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -6.03,
+      33.69,
+      433.15
+    ]
+  },
+  "91306349": {
+    "pointGroupId": 503,
+    "name": "503",
+    "rotation": [
+      0,
+      46.72,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306349,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -139.88,
+      37.32,
+      265.19
+    ]
+  },
+  "91051932": {
+    "name": "基础点位_91051932",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 83720864,
+    "id": 91051932,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -77.39,
+        39.8,
+        435.22
+      ],
+      "circleRadius": 10,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -77.39,
+      39.8,
+      435.22
+    ]
+  },
+  "91307242": {
+    "pointGroupId": 408,
+    "name": "408",
+    "rotation": [
+      0,
+      310.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307242,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      24.6,
+      24.43,
+      378.33
+    ]
+  },
+  "91051944": {
+    "name": "基础点位_91051944",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 83720864,
+    "id": 91051944,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -47.65,
+        39.8,
+        519.65
+      ],
+      "circleRadius": 10,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -47.65,
+      39.8,
+      519.65
+    ]
+  },
+  "91307244": {
+    "pointGroupId": 408,
+    "name": "408",
+    "rotation": [
+      0,
+      310.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307244,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      28.47,
+      24.43,
+      386.43
+    ]
+  },
+  "91058995": {
+    "name": "基础点位_91058995",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91052589,
+    "id": 91058995,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        -63.88,
+        39.8,
+        435.24
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "name": "摄影师支线（一）",
+      "circleRadius": 5,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": false,
+    "position": [
+      -63.88,
+      39.8,
+      435.24
+    ]
+  },
+  "91307246": {
+    "pointGroupId": 408,
+    "name": "408",
+    "rotation": [
+      0,
+      310.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307246,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      28.09,
+      24.43,
+      379.7
+    ]
+  },
+  "91307249": {
+    "pointGroupId": 409,
+    "name": "409",
+    "rotation": [
+      0,
+      331.52,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307249,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      5,
+      26.84,
+      364.02
+    ]
+  },
+  "91074349": {
+    "name": "基础点位_91074349",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91052589,
+    "id": 91074349,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        89.53,
+        40.01,
+        470.48
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "name": "摄影师支线（二）",
+      "circleRadius": 5,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": true,
+    "position": [
+      89.53,
+      40.01,
+      470.48
+    ]
+  },
+  "91307251": {
+    "pointGroupId": 409,
+    "name": "409",
+    "rotation": [
+      0,
+      331.52,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307251,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      6.08,
+      26.13,
+      365.05
+    ]
+  },
+  "91307252": {
+    "pointGroupId": 409,
+    "name": "409",
+    "rotation": [
+      0,
+      331.52,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307252,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      3.03,
+      28.37,
+      361.96
+    ]
+  },
+  "91074367": {
+    "name": "基础点位_91074367",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91052589,
+    "id": 91074367,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        77.97,
+        38,
+        576.99
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "name": "摄影师支线（三）",
+      "circleRadius": 5,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": true,
+    "position": [
+      77.97,
+      38,
+      576.99
+    ]
+  },
+  "91307265": {
+    "pointGroupId": 508,
+    "name": "508",
+    "rotation": [
+      0,
+      259.38,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307265,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -97.64,
+      39.87,
+      307.53
+    ]
+  },
+  "91307266": {
+    "pointGroupId": 508,
+    "name": "508",
+    "rotation": [
+      0,
+      259.38,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307266,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -99.24,
+      39.87,
+      305.83
+    ]
+  },
+  "91074373": {
+    "name": "基础点位_91074373",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91052589,
+    "id": 91074373,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        -70.31,
+        39.8,
+        408.23
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "name": "摄影师支线（四）",
+      "circleRadius": 5,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": true,
+    "position": [
+      -70.31,
+      39.8,
+      408.23
+    ]
+  },
+  "91307268": {
+    "pointGroupId": 590,
+    "name": "590",
+    "rotation": [
+      0,
+      259.38,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307268,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -102.5,
+      39.87,
+      302.73
+    ]
+  },
+  "91307314": {
+    "pointGroupId": 690,
+    "name": "690",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307314,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -26.24,
+      39.8,
+      522.69
+    ]
+  },
+  "91074378": {
+    "name": "基础点位_91074378",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91052589,
+    "id": 91074378,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        16.96,
+        25,
+        377.25
+      ],
+      "name": "摄影师支线（五）",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": true,
+    "position": [
+      16.96,
+      25,
+      377.25
+    ]
+  },
+  "91307316": {
+    "pointGroupId": 604,
+    "name": "604",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307316,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -23.6,
+      38.81,
+      522.55
+    ]
+  },
+  "91307319": {
+    "pointGroupId": 604,
+    "name": "604",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307319,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -22.17,
+      38.1,
+      522.47
+    ]
+  },
+  "91105796": {
+    "name": "基础点位_91105796",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91103077,
+    "id": 91105796,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        15
+      ],
+      "position": [
+        18.47,
+        26.11,
+        414.08
+      ],
+      "circleRadius": 15,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": true,
+    "position": [
+      18.47,
+      26.11,
+      414.08
+    ]
+  },
+  "91307901": {
+    "pointGroupId": 603,
+    "name": "603",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307901,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -36.96,
+      37.39,
+      515.61
+    ]
+  },
+  "91110859": {
+    "pointGroupId": 101,
+    "name": "101传送阵",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110859,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      52,
+      40.17,
+      475
+    ]
+  },
+  "91307449": {
+    "id": 91307449,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_91307449",
+    "position": [
+      -70.08,
+      39.65,
+      322.27
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53693539
+  },
+  "91110898": {
+    "pointGroupId": 101,
+    "name": "101服装店",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110898,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      121.94,
+      38,
+      456.88
+    ]
+  },
+  "91307902": {
+    "pointGroupId": 603,
+    "name": "603",
+    "rotation": [
+      0,
+      295.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307902,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -30.3,
+      37.39,
+      516.16
+    ]
+  },
+  "91110900": {
+    "pointGroupId": 101,
+    "name": "101传送阵",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110900,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      52,
+      41.12,
+      475
+    ]
+  },
+  "91110901": {
+    "pointGroupId": 101,
+    "name": "101钢琴",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110901,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -7.59,
+      36.57,
+      437.89
+    ]
+  },
+  "91307922": {
+    "pointGroupId": 101,
+    "name": "101竞技场通道",
+    "rotation": [
+      0,
+      24.77,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91307922,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -91.5,
+      40.87,
+      354.08
+    ]
+  },
+  "91110911": {
+    "pointGroupId": 101,
+    "name": "101捕捉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110911,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -20.6,
+      38.2,
+      437.15
+    ]
+  },
+  "91307927": {
+    "pointGroupId": 101,
+    "name": "101竞技场通道",
+    "rotation": [
+      0,
+      24.77,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91307927,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -90.09,
+      40.83,
+      353.43
+    ]
+  },
+  "91110912": {
+    "pointGroupId": 101,
+    "name": "101拳击",
+    "rotation": [
+      0,
+      333.83,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110912,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -29.21,
+      38.04,
+      461.62
+    ]
+  },
+  "91321665": {
+    "pointGroupId": 503,
+    "name": "503",
+    "rotation": [
+      0,
+      46.72,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91321665,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -140.95,
+      37.92,
+      264.13
+    ]
+  },
+  "91110914": {
+    "pointGroupId": 101,
+    "name": "101饰品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110914,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -76.72,
+      39.8,
+      435.19
+    ]
+  },
+  "91307250": {
+    "pointGroupId": 409,
+    "name": "409",
+    "rotation": [
+      0,
+      331.52,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307250,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      6.96,
+      25.83,
+      365.96
+    ]
+  },
+  "91110961": {
+    "pointGroupId": 901,
+    "name": "901传送阵",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110961,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      52,
+      43.22,
+      475
+    ]
+  },
+  "91307245": {
+    "pointGroupId": 408,
+    "name": "408",
+    "rotation": [
+      0,
+      310.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307245,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      29.49,
+      24.43,
+      383.21
+    ]
+  },
+  "91110992": {
+    "pointGroupId": 101,
+    "name": "101拳击",
+    "rotation": [
+      0,
+      333.83,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110992,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -28.81,
+      38.04,
+      460.51
+    ]
+  },
+  "91110994": {
+    "pointGroupId": 101,
+    "name": "101饰品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110994,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -74.03,
+      39.8,
+      433.6
+    ]
+  },
+  "91110997": {
+    "pointGroupId": 101,
+    "name": "101拳击",
+    "rotation": [
+      0,
+      333.83,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110997,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -28.26,
+      38.04,
+      459.47
+    ]
+  },
+  "91110998": {
+    "pointGroupId": 101,
+    "name": "101捕捉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110998,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -20.87,
+      38.4,
+      435.58
+    ]
+  },
+  "91110999": {
+    "pointGroupId": 101,
+    "name": "101捕捉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91110999,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -20.77,
+      38.4,
+      434.12
+    ]
+  },
+  "91111005": {
+    "pointGroupId": 101,
+    "name": "101饰品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111005,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -75.65,
+      39.8,
+      434.74
+    ]
+  },
+  "91111006": {
+    "pointGroupId": 101,
+    "name": "101扭蛋店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111006,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -69.26,
+      41.32,
+      384.99
+    ]
+  },
+  "91307243": {
+    "pointGroupId": 408,
+    "name": "408",
+    "rotation": [
+      0,
+      310.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91307243,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      21.53,
+      24.43,
+      379.5
+    ]
+  },
+  "91111007": {
+    "pointGroupId": 101,
+    "name": "101扭蛋店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111007,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -69.26,
+      42.32,
+      384.99
+    ]
+  },
+  "91111009": {
+    "pointGroupId": 101,
+    "name": "101扭蛋店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111009,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -69.26,
+      43.32,
+      384.99
+    ]
+  },
+  "91111013": {
+    "pointGroupId": 901,
+    "name": "901捕捉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111013,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -20.7,
+      38.4,
+      432.69
+    ]
+  },
+  "91306351": {
+    "pointGroupId": 590,
+    "name": "590",
+    "rotation": [
+      0,
+      46.72,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306351,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -141.7,
+      38.76,
+      263.42
+    ]
+  },
+  "91111014": {
+    "pointGroupId": 901,
+    "name": "901饰品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111014,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -77.84,
+      39.82,
+      435.69
+    ]
+  },
+  "91306348": {
+    "pointGroupId": 503,
+    "name": "503",
+    "rotation": [
+      0,
+      46.72,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306348,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -138.8,
+      36.74,
+      266.21
+    ]
+  },
+  "91111018": {
+    "pointGroupId": 901,
+    "name": "901拳击",
+    "rotation": [
+      0,
+      333.83,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111018,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -29.79,
+      38.06,
+      463.06
+    ]
+  },
+  "91306333": {
+    "pointGroupId": 502,
+    "name": "502",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306333,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -25.53,
+      38.38,
+      308.11
+    ]
+  },
+  "91111036": {
+    "pointGroupId": 101,
+    "name": "101老虎机",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111036,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -39.72,
+      39.71,
+      368.95
+    ]
+  },
+  "91306331": {
+    "pointGroupId": 502,
+    "name": "502",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306331,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -25.32,
+      38.61,
+      305.23
+    ]
+  },
+  "91111037": {
+    "pointGroupId": 101,
+    "name": "101老虎机",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111037,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -39.72,
+      38.71,
+      368.95
+    ]
+  },
+  "91111044": {
+    "pointGroupId": 101,
+    "name": "101咖啡店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111044,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      20.73,
+      25.28,
+      418.07
+    ]
+  },
+  "91306329": {
+    "pointGroupId": 502,
+    "name": "502",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306329,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -28.43,
+      37.91,
+      313.06
+    ]
+  },
+  "91111045": {
+    "pointGroupId": 101,
+    "name": "101咖啡店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111045,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      21.72,
+      25.1,
+      419.36
+    ]
+  },
+  "91111050": {
+    "pointGroupId": 101,
+    "name": "101咖啡店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111050,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      19.75,
+      25.11,
+      416.92
+    ]
+  },
+  "91111052": {
+    "pointGroupId": 101,
+    "name": "101老虎机",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111052,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -39.72,
+      40.71,
+      368.95
+    ]
+  },
+  "91111053": {
+    "pointGroupId": 101,
+    "name": "101服装店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111053,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      123.69,
+      38.03,
+      456.04
+    ]
+  },
+  "91111054": {
+    "pointGroupId": 101,
+    "name": "101服装店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111054,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      124.91,
+      38.03,
+      455.79
+    ]
+  },
+  "91111055": {
+    "pointGroupId": 101,
+    "name": "101钢琴",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111055,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -2.86,
+      29.9,
+      424.22
+    ]
+  },
+  "91111056": {
+    "pointGroupId": 101,
+    "name": "101钢琴",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111056,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -6.64,
+      35.22,
+      435.15
+    ]
+  },
+  "91111057": {
+    "pointGroupId": 101,
+    "name": "101钢琴",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111057,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -3.69,
+      31.16,
+      426.91
+    ]
+  },
+  "91111058": {
+    "pointGroupId": 101,
+    "name": "101钢琴",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111058,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -4.7,
+      32.55,
+      429.73
+    ]
+  },
+  "91111059": {
+    "pointGroupId": 101,
+    "name": "101钢琴",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111059,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -5.62,
+      33.82,
+      432.3
+    ]
+  },
+  "91111061": {
+    "pointGroupId": 901,
+    "name": "901钢琴",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111061,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -8.78,
+      37.86,
+      440.55
+    ]
+  },
+  "91306158": {
+    "pointGroupId": 490,
+    "name": "490",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306158,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      4.92,
+      33.69,
+      391.76
+    ]
+  },
+  "91111063": {
+    "pointGroupId": 901,
+    "name": "901服装店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91111063,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      127.05,
+      38.4,
+      455.43
+    ]
+  },
+  "91306022": {
+    "pointGroupId": 407,
+    "name": "407",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306022,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -9.87,
+      40.05,
+      376.3
+    ]
+  },
+  "91111748": {
+    "name": "基础点位_91111748",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91091663,
+    "id": 91111748,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        74.06,
+        40.01,
+        454.81
+      ],
+      "circleRadius": 5,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": true,
+    "position": [
+      74.06,
+      40.01,
+      454.81
+    ]
+  },
+  "91306020": {
+    "pointGroupId": 407,
+    "name": "407",
+    "rotation": [
+      0,
+      44.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306020,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -9.87,
+      38.25,
+      376.3
+    ]
+  },
+  "91261110": {
+    "pointGroupId": 201,
+    "name": "201",
+    "rotation": [
+      0,
+      140.65,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91261110,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      82.34,
+      41.59,
+      492.51
+    ]
+  },
+  "91261118": {
+    "pointGroupId": 201,
+    "name": "201",
+    "rotation": [
+      0,
+      140.65,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91261118,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      82.35,
+      42.59,
+      492.5
+    ]
+  },
+  "91261120": {
+    "pointGroupId": 201,
+    "name": "201",
+    "rotation": [
+      0,
+      140.65,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91261120,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      82.35,
+      43.59,
+      492.5
+    ]
+  },
+  "91261121": {
+    "pointGroupId": 201,
+    "name": "201",
+    "rotation": [
+      0,
+      140.65,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91261121,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      82.35,
+      40.64,
+      492.5
+    ]
+  },
+  "91287965": {
+    "name": "基础点位_91287965",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91155977,
+    "id": 91287965,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        5.7,
+        38,
+        534.34
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      5.7,
+      38,
+      534.34
+    ]
+  },
+  "91306017": {
+    "pointGroupId": 406,
+    "name": "406",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306017,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      0.76,
+      32.92,
+      395.64
+    ]
+  },
+  "91292335": {
+    "name": "基础点位_91292335",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91292172,
+    "id": 91292335,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        40
+      ],
+      "position": [
+        -130.56,
+        36.03,
+        274.73
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -130.56,
+      36.03,
+      274.73
+    ]
+  },
+  "91306015": {
+    "pointGroupId": 406,
+    "name": "406",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91306015,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -2.92,
+      33.39,
+      399.5
+    ]
+  },
+  "91299205": {
+    "pointGroupId": 101,
+    "name": "101传送阵",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299205,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      52,
+      42.07,
+      475
+    ]
+  },
+  "91299208": {
+    "pointGroupId": 101,
+    "name": "101孵蛋器",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299208,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      41.38,
+      41.29,
+      504.67
+    ]
+  },
+  "91305955": {
+    "pointGroupId": 402,
+    "name": "402",
+    "rotation": [
+      0,
+      264.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305955,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -44.57,
+      42.75,
+      421.05
+    ]
+  },
+  "91299209": {
+    "pointGroupId": 901,
+    "name": "901孵蛋器",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299209,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      41.38,
+      43.79,
+      504.67
+    ]
+  },
+  "91305953": {
+    "pointGroupId": 402,
+    "name": "402",
+    "rotation": [
+      0,
+      267.91,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305953,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -45.08,
+      41.24,
+      424.23
+    ]
+  },
+  "91299210": {
+    "pointGroupId": 101,
+    "name": "101孵蛋器",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299210,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      41.38,
+      40.09,
+      504.67
+    ]
+  },
+  "91299211": {
+    "pointGroupId": 101,
+    "name": "101孵蛋器",
+    "rotation": [
+      0,
+      45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299211,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      41.38,
+      42.49,
+      504.67
+    ]
+  },
+  "91299250": {
+    "pointGroupId": 901,
+    "name": "901咖啡厅",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299250,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      18.67,
+      25.11,
+      415.61
+    ]
+  },
+  "91305937": {
+    "pointGroupId": 401,
+    "name": "401",
+    "rotation": [
+      0,
+      350.29,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305937,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -64.16,
+      41.51,
+      427.12
+    ]
+  },
+  "91299688": {
+    "pointGroupId": 901,
+    "name": "901扭蛋店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299688,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -69.26,
+      44.52,
+      384.99
+    ]
+  },
+  "91305935": {
+    "pointGroupId": 401,
+    "name": "401",
+    "rotation": [
+      0,
+      350.29,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305935,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -63.3,
+      40.94,
+      428.94
+    ]
+  },
+  "91299697": {
+    "pointGroupId": 901,
+    "name": "901老虎机",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299697,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -39.72,
+      41.91,
+      368.95
+    ]
+  },
+  "91305933": {
+    "pointGroupId": 401,
+    "name": "401",
+    "rotation": [
+      0,
+      350.29,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305933,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -61.92,
+      40.57,
+      431.1
+    ]
+  },
+  "91299705": {
+    "pointGroupId": 101,
+    "name": "101生态公园",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299705,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -35.18,
+      38.99,
+      323.86
+    ]
+  },
+  "91305690": {
+    "pointGroupId": 308,
+    "name": "308",
+    "rotation": [
+      0,
+      107.75,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305690,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      6.22,
+      28.56,
+      421.12
+    ]
+  },
+  "91299706": {
+    "pointGroupId": 901,
+    "name": "901生态公园",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299706,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -35.18,
+      41.19,
+      323.86
+    ]
+  },
+  "91305688": {
+    "pointGroupId": 308,
+    "name": "308",
+    "rotation": [
+      0,
+      107.75,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305688,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      8.7,
+      26.66,
+      423.61
+    ]
+  },
+  "91299707": {
+    "pointGroupId": 101,
+    "name": "101生态公园",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299707,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -35.18,
+      39.99,
+      323.86
+    ]
+  },
+  "91299708": {
+    "pointGroupId": 101,
+    "name": "101生态公园",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299708,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -35.18,
+      37.99,
+      323.86
+    ]
+  },
+  "91299738": {
+    "pointGroupId": 101,
+    "name": "101玩具店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299738,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -12.87,
+      25.1,
+      468.88
+    ]
+  },
+  "72037718": {
+    "name": "任务上身点位_72037718",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55786632,
+    "id": 72037718,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        12
+      ],
+      "position": [
+        38.52,
+        40,
+        472.97
+      ],
+      "arriveType": 1,
+      "author": "peng.hu"
+    },
+    "position": [
+      38.52,
+      40,
+      472.97
+    ]
+  },
+  "91299741": {
+    "pointGroupId": 101,
+    "name": "101玩具店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299741,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -14.82,
+      25.1,
+      468.44
+    ]
+  },
+  "91299742": {
+    "pointGroupId": 101,
+    "name": "101玩具店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299742,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -15.94,
+      25.1,
+      467.97
+    ]
+  },
+  "91299743": {
+    "pointGroupId": 901,
+    "name": "901玩具店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299743,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -17.31,
+      25.22,
+      467.29
+    ]
+  },
+  "72040064": {
+    "name": "寻路点位_72040064",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55786632,
+    "id": 72040064,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        0
+      ],
+      "circleRadius": 50,
+      "position": [
+        -25.91,
+        38,
+        433.67
+      ],
+      "author": "peng.hu"
+    },
+    "position": [
+      -25.91,
+      38,
+      433.67
+    ]
+  },
+  "91299750": {
+    "pointGroupId": 101,
+    "name": "101烤肉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299750,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -52.71,
+      39.8,
+      520.43
+    ]
+  },
+  "69677385": {
+    "name": "基础点位_69677385",
+    "rotation": [
+      0,
+      70.31,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 56210974,
+    "id": 69677385,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -46.67,
+      38.55,
+      366.2
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "91299755": {
+    "pointGroupId": 101,
+    "name": "101烤肉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299755,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -52.58,
+      39.8,
+      522.42
+    ]
+  },
+  "91299757": {
+    "pointGroupId": 101,
+    "name": "101烤肉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299757,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -52.72,
+      39.8,
+      523.62
+    ]
+  },
+  "91299758": {
+    "pointGroupId": 901,
+    "name": "901烤肉店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299758,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -53.25,
+      39.94,
+      524.75
+    ]
+  },
+  "73134778": {
+    "id": 73134778,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_73134778",
+    "position": [
+      63.9,
+      38.49,
+      583
+    ],
+    "rotation": [
+      0,
+      220.4,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72457622
+  },
+  "91299761": {
+    "pointGroupId": 901,
+    "name": "901礼品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299761,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -22.81,
+      38.1,
+      377.03
+    ]
+  },
+  "73134779": {
+    "id": 73134779,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_73134779",
+    "position": [
+      -23.9,
+      46.75,
+      425.65
+    ],
+    "rotation": [
+      0,
+      109.46,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72457622
+  },
+  "91299762": {
+    "pointGroupId": 101,
+    "name": "101礼品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299762,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -23.57,
+      38,
+      378.13
+    ]
+  },
+  "62733488": {
+    "name": "利威尔的通知_62733488",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 62732404,
+    "id": 62733488,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        -13.9,
+        40.68,
+        439.7
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -13.9,
+      40.68,
+      439.7
+    ]
+  },
+  "91299765": {
+    "pointGroupId": 101,
+    "name": "101礼品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299765,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -24.4,
+      38,
+      379.02
+    ]
+  },
+  "91299768": {
+    "pointGroupId": 101,
+    "name": "101礼品店",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91110858,
+    "id": 91299768,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -25.49,
+      38,
+      380.67
+    ]
+  },
+  "91304084": {
+    "pointGroupId": 202,
+    "name": "202",
+    "rotation": [
+      0,
+      159.13,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304084,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      86.76,
+      40.51,
+      484.43
+    ]
+  },
+  "91304085": {
+    "pointGroupId": 202,
+    "name": "202",
+    "rotation": [
+      0,
+      159.13,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304085,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      86.76,
+      41.46,
+      484.43
+    ]
+  },
+  "91304086": {
+    "pointGroupId": 202,
+    "name": "202",
+    "rotation": [
+      0,
+      159.13,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304086,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      86.75,
+      42.46,
+      484.43
+    ]
+  },
+  "91304091": {
+    "pointGroupId": 202,
+    "name": "202",
+    "rotation": [
+      0,
+      159.13,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304091,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      86.76,
+      43.48,
+      484.43
+    ]
+  },
+  "91304092": {
+    "pointGroupId": 203,
+    "name": "203",
+    "rotation": [
+      0,
+      176.78,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304092,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      89.03,
+      41.7,
+      475.51
+    ]
+  },
+  "91304093": {
+    "pointGroupId": 203,
+    "name": "203",
+    "rotation": [
+      0,
+      176.78,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304093,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      89.03,
+      40.75,
+      475.51
+    ]
+  },
+  "91304094": {
+    "pointGroupId": 203,
+    "name": "203",
+    "rotation": [
+      0,
+      176.78,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304094,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      89.03,
+      42.7,
+      475.51
+    ]
+  },
+  "91304095": {
+    "pointGroupId": 203,
+    "name": "203",
+    "rotation": [
+      0,
+      176.78,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91304095,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      89.03,
+      43.71,
+      475.51
+    ]
+  },
+  "91305088": {
+    "pointGroupId": 204,
+    "name": "204",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305088,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.97,
+      42.99,
+      471.46
+    ]
+  },
+  "91305122": {
+    "pointGroupId": 204,
+    "name": "204",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305122,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.97,
+      43.05,
+      470.05
+    ]
+  },
+  "91305125": {
+    "pointGroupId": 204,
+    "name": "204",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305125,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.94,
+      43.12,
+      468.69
+    ]
+  },
+  "91305126": {
+    "pointGroupId": 290,
+    "name": "290广场",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305126,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      17.02,
+      44.87,
+      466.85
+    ]
+  },
+  "69677186": {
+    "id": 69677186,
+    "logics": {},
+    "pointType": 2,
+    "name": "宠家宝箱点",
+    "position": [
+      -12.06,
+      38.5,
+      381.45
+    ],
+    "rotation": [
+      0,
+      13.81,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55786632
+  },
+  "91305147": {
+    "pointGroupId": 290,
+    "name": "290广场",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305147,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      20.6,
+      44.64,
+      458.17
+    ]
+  },
+  "91305148": {
+    "pointGroupId": 290,
+    "name": "290广场",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305148,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      26.06,
+      44.75,
+      457.32
+    ]
+  },
+  "91305150": {
+    "pointGroupId": 205,
+    "name": "205",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305150,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      21.2,
+      43.84,
+      457.06
+    ]
+  },
+  "91305156": {
+    "pointGroupId": 205,
+    "name": "205",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305156,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      22.83,
+      44.56,
+      456.95
+    ]
+  },
+  "91305157": {
+    "pointGroupId": 205,
+    "name": "205",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305157,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      25.63,
+      43.88,
+      456.56
+    ]
+  },
+  "91305163": {
+    "pointGroupId": 205,
+    "name": "205",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305163,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      24.39,
+      44.61,
+      456.73
+    ]
+  },
+  "91305450": {
+    "pointGroupId": 204,
+    "name": "204",
+    "rotation": [
+      0,
+      30.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305450,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.98,
+      43.89,
+      467.76
+    ]
+  },
+  "91305489": {
+    "pointGroupId": 301,
+    "name": "301",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305489,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      26.97,
+      25.97,
+      406.05
+    ]
+  },
+  "91305490": {
+    "pointGroupId": 301,
+    "name": "301",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305490,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      26.97,
+      26.97,
+      406.05
+    ]
+  },
+  "91305491": {
+    "pointGroupId": 301,
+    "name": "301",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305491,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      26.97,
+      27.97,
+      406.05
+    ]
+  },
+  "91305492": {
+    "pointGroupId": 301,
+    "name": "301",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305492,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      26.97,
+      28.97,
+      406.05
+    ]
+  },
+  "91305510": {
+    "pointGroupId": 302,
+    "name": "302",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305510,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      24.27,
+      25.97,
+      400.55
+    ]
+  },
+  "91305511": {
+    "pointGroupId": 302,
+    "name": "302",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305511,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      24.27,
+      26.97,
+      400.55
+    ]
+  },
+  "91305512": {
+    "pointGroupId": 302,
+    "name": "302",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305512,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      24.27,
+      27.97,
+      400.55
+    ]
+  },
+  "91305513": {
+    "pointGroupId": 302,
+    "name": "302",
+    "rotation": [
+      0,
+      26.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305513,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      24.27,
+      28.97,
+      400.55
+    ]
+  },
+  "91305514": {
+    "pointGroupId": 303,
+    "name": "303",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305514,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.89,
+      25.97,
+      394.34
+    ]
+  },
+  "91305515": {
+    "pointGroupId": 303,
+    "name": "303",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305515,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.89,
+      26.97,
+      394.34
+    ]
+  },
+  "91305516": {
+    "pointGroupId": 303,
+    "name": "303",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305516,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.89,
+      27.97,
+      394.34
+    ]
+  },
+  "91305517": {
+    "pointGroupId": 303,
+    "name": "303",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305517,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.89,
+      28.97,
+      394.34
+    ]
+  },
+  "91305521": {
+    "pointGroupId": 304,
+    "name": "304",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305521,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      13.27,
+      25.97,
+      390.74
+    ]
+  },
+  "91305522": {
+    "pointGroupId": 304,
+    "name": "304",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305522,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      13.27,
+      26.97,
+      390.74
+    ]
+  },
+  "91305523": {
+    "pointGroupId": 304,
+    "name": "304",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305523,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      13.27,
+      27.97,
+      390.74
+    ]
+  },
+  "91305524": {
+    "pointGroupId": 304,
+    "name": "304",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305524,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      13.27,
+      28.97,
+      390.74
+    ]
+  },
+  "91305556": {
+    "pointGroupId": 305,
+    "name": "305",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305556,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      8.36,
+      25.11,
+      402.37
+    ]
+  },
+  "91305562": {
+    "pointGroupId": 305,
+    "name": "305",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305562,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      7.76,
+      26,
+      403.24
+    ]
+  },
+  "91305569": {
+    "pointGroupId": 305,
+    "name": "305",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305569,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      6.8,
+      26,
+      404.54
+    ]
+  },
+  "91305571": {
+    "pointGroupId": 305,
+    "name": "305",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305571,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      6.09,
+      25.11,
+      405.44
+    ]
+  },
+  "91305591": {
+    "pointGroupId": 306,
+    "name": "306",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305591,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      3.35,
+      25.72,
+      396.25
+    ]
+  },
+  "91305594": {
+    "pointGroupId": 306,
+    "name": "306",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305594,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      2.15,
+      26.17,
+      396.48
+    ]
+  },
+  "91305596": {
+    "pointGroupId": 306,
+    "name": "306",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305596,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      1.1,
+      26.62,
+      397.02
+    ]
+  },
+  "91305597": {
+    "pointGroupId": 306,
+    "name": "306",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305597,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      0.21,
+      27.07,
+      397.77
+    ]
+  },
+  "91305607": {
+    "pointGroupId": 390,
+    "name": "390",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305607,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -0.35,
+      27.53,
+      398.81
+    ]
+  },
+  "91305608": {
+    "pointGroupId": 390,
+    "name": "390",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305608,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      7.24,
+      26.3,
+      403.87
+    ]
+  },
+  "91305657": {
+    "pointGroupId": 307,
+    "name": "307",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305657,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -25,
+      25.44,
+      485.7
+    ]
+  },
+  "91305658": {
+    "pointGroupId": 307,
+    "name": "307",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305658,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -26.97,
+      27.09,
+      485.04
+    ]
+  },
+  "91305659": {
+    "pointGroupId": 307,
+    "name": "307",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305659,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -27.73,
+      27.87,
+      484.78
+    ]
+  },
+  "91305660": {
+    "pointGroupId": 307,
+    "name": "307",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305660,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -26.33,
+      26.4,
+      485.26
+    ]
+  },
+  "91305677": {
+    "pointGroupId": 390,
+    "name": "390",
+    "rotation": [
+      0,
+      45.15,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91261226,
+    "id": 91305677,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -28.68,
+      28.64,
+      484.43
+    ]
+  }
+}

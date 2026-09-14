@@ -1,0 +1,288 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "8f377c88-bb7e-44f1-a2b2-c2de6d76f2c5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          14
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9ee53af0-8abf-428a-8169-3978cf751103",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Dwpy_02",
+      "NodeID": 38
+    },
+    "39": {
+      "time": 0.5,
+      "rotateSpeed": 360,
+      "name": "rotateTo",
+      "UID": "1358303e-21f4-4cc1-b33c-c889028104e6",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 39
+    },
+    "40": {
+      "isTemp": true,
+      "NodeID": 40,
+      "UID": "d5517617-4ef8-4965-8c4f-71f45b027188",
+      "distance": 60,
+      "name": "playerForceLock"
+    },
+    "41": {
+      "UID": "b6a9be06-9c95-4cf5-8327-3402c932f811",
+      "target": "OWNER",
+      "name": "setPetLockedActorId",
+      "NodeID": 41
+    },
+    "35": {
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 35,
+      "UID": "707497e1-951d-48b9-b871-8bb05018be89",
+      "target": "OWNER",
+      "presetName": "Eff_Monster_90213_Mon_Attack_Teleport_End_Ripple",
+      "name": "playPreset"
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e33adbac-f305-41ee-8bb6-b212602a866a",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Teleport_Absorb",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "dcd325c1-2c2b-4f52-9b52-9f682a72cc0b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Dwpy_01",
+      "NodeID": 37
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          40,
+          38,
+          21,
+          34,
+          35,
+          39,
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 23,
+      "UID": "d05d16b8-968a-43b7-9246-3a080061b753"
+    },
+    "11": {
+      "UID": "7576462b-1566-42ce-a5e6-ac81c5d4d922",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 20,
+      "UID": "ca6cf04c-cb47-4115-8762-c09d3a520320"
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b4a49c51-c1fc-4108-9856-01aacbe631cc",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Skill_DwpyEnd"
+    },
+    "3": {
+      "UID": "fa5e8a2c-328b-44a4-aaf8-e5ec63e1b46c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "337bc2e0-5473-47ba-81e4-334b7fea1f7d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          15,
+          36
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ae2ee513-97a6-4785-9637-45df74613d63",
+      "target": "OWNER",
+      "NodeID": 24,
+      "animId": "Skill_DwpyStart"
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 10011,
+      "NodeID": 14,
+      "UID": "3e468c0f-be69-47d6-b9b9-670d4a3ec0ba",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "UID": "f17ee754-c4fe-436f-a961-59185c05b792",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 17
+    },
+    "15": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "fef17ef6-4923-48cf-9e37-60ea9d7bd275",
+      "target": "CASTER",
+      "NodeID": 15
+    },
+    "33": {
+      "UID": "44085ed6-297e-43b3-82db-6e7f10ce2533",
+      "eventType": "Notify",
+      "time": 0.71667,
+      "NodeID": 33
+    },
+    "26": {
+      "UID": "89b6a348-0106-4176-af79-ca95f96957bc",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37,
+          24,
+          31,
+          32
+        ]
+      },
+      "NodeID": 26
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.3,
+      "NodeID": 30,
+      "UID": "31af5482-298f-4887-999c-4e29268b63dc"
+    },
+    "28": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "UID": "4b8d9220-5174-4d52-8e3a-f29fba0bbf57",
+        "name": "getBornPos",
+        "NodeID": 27
+      },
+      "name": "teleport",
+      "UID": "d77b1372-905a-4f2c-8542-0075d03f9fcf",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "1a35938f-860f-4765-a4a5-e12ff2dd8002",
+      "name": "callClientAction",
+      "actionIds": [
+        28
+      ],
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 18,
+      "UID": "9f34c77e-a29d-4c1c-9b40-55587e2ee3e5"
+    },
+    "32": {
+      "duration": 1.8,
+      "disableWhenFinished": true,
+      "NodeID": 32,
+      "UID": "0daa1929-f09f-4a83-b0bb-df55af3b48a8",
+      "target": "OWNER",
+      "presetName": "Eff_Monster_90213_Mon_Attack_Teleport_Ripple",
+      "name": "playPreset"
+    },
+    "19": {
+      "name": "hideModel",
+      "UID": "822cdcb3-79aa-41cf-af73-c056e28c19bc",
+      "target": "OWNER",
+      "NodeID": 19,
+      "maxHideTime": 1.1
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b0c8fa89-b7ed-4670-b0f2-5bf4971921eb",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Teleport_End",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "36": {
+      "name": "setNextComboAbilityId",
+      "UID": "3837988d-7790-4e93-9560-9f70ed8d3b0b",
+      "target": "OWNER",
+      "NodeID": 36,
+      "abilityId": 0
+    }
+  },
+  "BPName": "ability_902132403",
+  "NodeID": 7,
+  "UID": "83b252ed-d240-4b18-a943-38a70708dd83",
+  "eventIds": [
+    5,
+    13,
+    18,
+    33,
+    26,
+    20,
+    23,
+    30
+  ],
+  "layer": "Base",
+  "length": 4.3
+}

@@ -1,0 +1,89 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2146104",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28efae2a-95aa-4467-a2e9-55e3613fe4a4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10461_Skill_SmashGround_ShieldLoop",
+      "NodeID": 3
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "66676f1f-f805-46b7-a425-f605e1960856",
+      "effectId": "Eff_Parmon_10461_Skill_Bubble_SmashGroundBuff_Start_01",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "10": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "05d66f50-dd49-4ddd-b924-79528a55fffe",
+      "name": "buffStartThink",
+      "NodeID": 10
+    },
+    "11": {
+      "duration": 1.2,
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11,
+      "UID": "2ea7a837-478d-4427-87eb-a6c0d30bbdfa",
+      "name": "addTimer"
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10461_Skill_SmashGround_ShieldEnd",
+      "NodeID": 5
+    },
+    "12": {
+      "name": "stopSoundStr",
+      "UID": "f4a85363-442e-4e08-9176-2fcec242c165",
+      "soundId": "SFX_Combat_10461_Skill_SmashGround_ShieldLoop",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.4,
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 8,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "OWNER",
+        "NodeID": 7,
+        "attributeName": "hp_max_cur"
+      }
+    },
+    "isGeneral": true,
+    "isTeamShare": false
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10461_Skill_Bubble_SmashGroundBuff_Start_01"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    12,
+    13,
+    5
+  ],
+  "onBuffStartIds": [
+    3,
+    11
+  ]
+}

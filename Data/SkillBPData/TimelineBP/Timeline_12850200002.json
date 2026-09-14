@@ -1,0 +1,116 @@
+{
+  "nodeMap": {
+    "96": {
+      "actionIds": [
+        98
+      ],
+      "conditionActionIds": [
+        95
+      ],
+      "UID": "23e39eac-378e-4789-a6d8-b1f9dd32d5e2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        99
+      ],
+      "NodeID": 96
+    },
+    "97": {
+      "action": {
+        "actionIds": [
+          96
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 97,
+      "UID": "8c99297b-466d-463a-ab0a-490ea57cc368"
+    },
+    "10": {
+      "UID": "1a2586c1-4c10-4131-a3dd-9a890608ff3a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "98": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "0c23fec7-e81c-4d64-b780-abad92eb1550",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 98
+    },
+    "99": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "683d07e1-e9dc-4506-becf-e0e28eacab42",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 99
+    },
+    "8": {
+      "timelineId": 12850200001,
+      "name": "jumpToNextTimeline",
+      "UID": "fa20933e-bf5c-41ca-a18a-3ec63eecc6ca",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        58
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "98a07dbc-957d-4905-a1f5-a4a085ded1b7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "58": {
+      "timelineId": 12850200003,
+      "name": "jumpToNextTimeline",
+      "UID": "413552b6-3aae-4f3e-a423-48fa484045f7",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "51": {
+      "name": "isInBurrow",
+      "UID": "2aed4172-8743-4345-abc6-7ad0845ca9f8",
+      "target": "OWNER",
+      "NodeID": 51,
+      "not": false
+    },
+    "95": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "58dd9a13-726f-43ca-8416-382e9be22503",
+      "target": "OWNER",
+      "NodeID": 95
+    }
+  },
+  "BPName": "ability_12850200",
+  "NodeID": 12,
+  "UID": "b58db0cf-bd6f-49a0-9ce9-d7f817fedcbb",
+  "eventIds": [
+    10,
+    97
+  ],
+  "layer": "Base",
+  "length": 1
+}

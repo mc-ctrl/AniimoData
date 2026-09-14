@@ -1,0 +1,93 @@
+{
+  "angularIncreaseDuration": 0.15,
+  "calcResultNodeId": 64,
+  "NodeID": 119,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10371_Skill_Tail_Light",
+  "effectTimeInitOffset": 0,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 1200,
+  "maxHitNum": 1,
+  "BPName": "ability_13710220",
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "nodeMap": {
+    "64": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13710220,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "214bb5ee-45a9-4300-9570-de8eec28ba61",
+      "target": "TARGET",
+      "NodeID": 64,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 1000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "236": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "661d1307-ebd7-4e88-92b4-b6eba9260f8f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Fox_Skill_Hit",
+      "NodeID": 236
+    },
+    "210": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2137105,
+      "NodeID": 210,
+      "UID": "f6c47c16-a6d4-47d3-88ec-498500cfdd61",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onProjectileHitIds": [
+    64,
+    210,
+    236
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 5,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "targetPos": {
+    "listId": "ability_13710220116",
+    "NodeID": 118,
+    "UID": "4533f5c9-bfa1-4e1b-a681-b20083a272af",
+    "target": "OWNER",
+    "name": "getDynamicListItem",
+    "index": {
+      "rValue": 1,
+      "name": "add",
+      "UID": "7c2e042f-e824-4175-8e8f-84a568a2ebf1",
+      "NodeID": 122,
+      "lValue": {
+        "UID": "40c25f76-22e1-4dec-8b05-dcf3b73b7bfa",
+        "name": "getIterNumber",
+        "NodeID": 121
+      }
+    }
+  },
+  "tickInterval": 0,
+  "UID": "9a453dcd-5326-4d71-95e7-a60189d4f547",
+  "duration": 3,
+  "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

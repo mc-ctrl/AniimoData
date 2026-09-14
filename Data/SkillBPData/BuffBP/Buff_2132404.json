@@ -1,0 +1,86 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132404",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "df6fc29f-31a9-4ded-a3c1-1974eb9cbc02",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "16": {
+      "UID": "cb2c74c9-5efc-4356-a5d6-d63070f3fc84",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "15": {
+      "UID": "ca2b516b-0933-4a6b-a1c4-1463febda951",
+      "target": "OWNER",
+      "name": "clearDynamicAttribute",
+      "NodeID": 15
+    },
+    "6": {
+      "name": "addDynamicAttribute",
+      "UID": "ccc3b386-a366-4c07-943b-111d0ec25f40",
+      "target": "OWNER",
+      "NodeID": 6,
+      "calcInfoByLuaConfig": {
+        "id": 2132404,
+        "type": 1,
+        "crit_dmg_v": "param0"
+      }
+    },
+    "14": {
+      "UID": "76e8d5a7-207d-4c07-8feb-9e178db2d298",
+      "name": "checkAbilityElementType",
+      "elementType": 6,
+      "NodeID": 14
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "502a12b9-0bee-4bbd-9e4e-172e397b30d0",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "6b60fc38-34d4-45d1-be36-17e2669e9f50",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "568c0f69-fa73-42d2-bd37-d7b0687ca5bf",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    8,
+    16
+  ]
+}

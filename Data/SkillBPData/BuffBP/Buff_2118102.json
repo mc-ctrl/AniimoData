@@ -1,0 +1,588 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118102",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "transferGroup": 1,
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffRefreshIds": [
+    25,
+    66,
+    111,
+    86,
+    85,
+    92,
+    41,
+    45
+  ],
+  "onBuffThinkIds": [
+    37,
+    46
+  ],
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    34,
+    7
+  ],
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "10e9b71a-c903-4159-b300-caa1b0b6f875",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        55
+      ],
+      "NodeID": 37
+    },
+    "53": {
+      "buffId": 2118702,
+      "name": "hasBuff",
+      "UID": "02c2455e-58f2-4de2-bb2c-f479a38997e2",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "63": {
+      "name": "stopEffectStr",
+      "UID": "65f2a14d-8884-4923-9568-ea2513fa5538",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "target": "OWNER",
+      "NodeID": 63
+    },
+    "41": {
+      "key": "10185Num",
+      "name": "setCacheVal",
+      "UID": "a75895fd-7ad9-4f9e-b854-f60144832b2d",
+      "target": "MASTER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "d88495ef-9e10-484d-98b1-8af6634e8b2e",
+        "NodeID": 40,
+        "lValue": {
+          "key": "10185Num",
+          "name": "getCacheVal",
+          "UID": "e0dae8bb-de22-41ef-a21b-5b8384f98830",
+          "target": "MASTER",
+          "NodeID": 39
+        }
+      },
+      "NodeID": 41
+    },
+    "44": {
+      "key": "10185Num",
+      "name": "setCacheVal",
+      "UID": "70d9af62-1d08-4ecf-bc0b-c19a9a7a6130",
+      "target": "MASTER",
+      "val": {
+        "rValue": -1,
+        "name": "add",
+        "UID": "c8c90999-6362-47bb-8511-5040314812fc",
+        "NodeID": 43,
+        "lValue": {
+          "key": "10185Num",
+          "name": "getCacheVal",
+          "UID": "fce48c42-beeb-4217-aa1d-6cd7bcb95017",
+          "target": "MASTER",
+          "NodeID": 42
+        }
+      },
+      "NodeID": 44
+    },
+    "112": {
+      "eventName": "refresh7",
+      "name": "notifyCustomEvent",
+      "UID": "018e5c43-7e42-4ae0-a8bf-4f4be83a6a0b",
+      "target": "OWNER",
+      "NodeID": 112
+    },
+    "66": {
+      "eventName": "refresh4",
+      "name": "notifyCustomEvent",
+      "UID": "c7abafbf-72ff-48d6-b4a0-eca97b006e3b",
+      "target": "OWNER",
+      "NodeID": 66
+    },
+    "111": {
+      "eventName": "refresh7",
+      "name": "notifyCustomEvent",
+      "UID": "7e59e8f3-9b34-4982-b792-0fbeda4a5ab2",
+      "target": "OWNER",
+      "NodeID": 111
+    },
+    "85": {
+      "buffId": 2118702,
+      "name": "refreshBuffDuration",
+      "UID": "e38a52b6-eaee-461f-8f55-56a3011cd1d0",
+      "useCustomMode": true,
+      "NodeID": 85
+    },
+    "110": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 110,
+      "UID": "42d43046-ed79-4e71-b916-643862285978",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "enable": false,
+      "childTransformName": "Eff_Parmon_Whisbird_10181_Skill_Conjure"
+    },
+    "86": {
+      "buffId": 2118402,
+      "name": "refreshBuffDuration",
+      "UID": "aee3ee4b-e3a1-4674-b518-b81c424bf5ab",
+      "useCustomMode": true,
+      "NodeID": 86
+    },
+    "109": {
+      "buffId": 2118702,
+      "name": "hasBuff",
+      "UID": "ff5525b9-6b82-45a6-b2a4-7388ca4dd5ff",
+      "target": "OWNER",
+      "NodeID": 109
+    },
+    "69": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "077925dc-9ce1-4053-9692-62c04f95db91",
+      "target": "OWNER",
+      "NodeID": 69
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "dcaf42c4-d5df-415f-9ed9-6d04b1302057",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "88": {
+      "eventName": "refresh4",
+      "name": "notifyCustomEvent",
+      "UID": "3d6b76a3-21f8-481b-8103-edb35e7c8301",
+      "target": "OWNER",
+      "NodeID": 88
+    },
+    "108": {
+      "UID": "083709ad-4004-4d32-a9f6-0b8c0ad1ad1c",
+      "conditionIds": [
+        107,
+        109
+      ],
+      "name": "conditionOr",
+      "NodeID": 108
+    },
+    "71": {
+      "buffId": 2118702,
+      "name": "hasBuff",
+      "UID": "7887bf80-1761-4bad-8fae-ad55ef92de6b",
+      "target": "OWNER",
+      "NodeID": 71
+    },
+    "101": {
+      "name": "stopEffectStr",
+      "UID": "584b68e7-ff8f-41ad-a390-eeb932e8205a",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "target": "OWNER",
+      "NodeID": 101
+    },
+    "72": {
+      "conditionActionIds": [
+        73
+      ],
+      "UID": "6fefa3e7-0eb1-45a1-b2f9-f20a028a0ee1",
+      "name": "doActionsByConditions",
+      "NodeID": 72,
+      "elseActionIds": [
+        3
+      ]
+    },
+    "107": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "c80f2772-07d0-4601-bcf9-921e36f649da",
+      "target": "OWNER",
+      "NodeID": 107
+    },
+    "73": {
+      "UID": "6360be77-31c3-4ab7-b0ee-038c18a2d725",
+      "conditionIds": [
+        69,
+        71
+      ],
+      "name": "conditionOr",
+      "NodeID": 73
+    },
+    "106": {
+      "conditionActionIds": [
+        108
+      ],
+      "UID": "7966cb43-ad60-4ffb-a67d-0c6596f55fcf",
+      "name": "doActionsByConditions",
+      "NodeID": 106,
+      "elseActionIds": [
+        93
+      ]
+    },
+    "92": {
+      "actionIds": [
+        101,
+        98,
+        100
+      ],
+      "conditionActionIds": [
+        96
+      ],
+      "UID": "a1eee955-aa01-446b-9872-4897f8bbb11c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        103,
+        106,
+        90
+      ],
+      "NodeID": 92
+    },
+    "52": {
+      "UID": "cfffad74-ff7d-4c60-8671-48c5f9019e46",
+      "conditionIds": [
+        51,
+        53
+      ],
+      "name": "conditionAnd",
+      "NodeID": 52
+    },
+    "93": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e94210fb-92ec-46f1-a6db-418c926c6695",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "speed": 1,
+      "NodeID": 93
+    },
+    "25": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "3a792ae3-1355-41b2-a79b-0046a3b594d1",
+      "name": "buffStartThink",
+      "NodeID": 25
+    },
+    "79": {
+      "buffId": 2118702,
+      "name": "hasBuff",
+      "UID": "6beb8dfa-d688-4d92-9715-6749d6f976e4",
+      "target": "OWNER",
+      "NodeID": 79
+    },
+    "81": {
+      "actionIds": [
+        61,
+        80,
+        19,
+        23,
+        32
+      ],
+      "conditionActionIds": [
+        82
+      ],
+      "UID": "7327050f-9622-4bc0-910b-33569ceb0ce1",
+      "name": "doActionsByConditions",
+      "NodeID": 81
+    },
+    "95": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "2f069e12-24c8-42f5-903a-d2a8c3335a08",
+      "target": "OWNER",
+      "NodeID": 95
+    },
+    "90": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 90,
+      "UID": "40f67a39-5acc-4431-bbba-1c9a4a6456e7",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "enable": true,
+      "childTransformName": "Eff_Parmon_Whisbird_10181_Skill_Conjure"
+    },
+    "96": {
+      "UID": "8e2bcc4c-7941-4f80-9d95-99a8784d05d3",
+      "conditionIds": [
+        95,
+        97
+      ],
+      "name": "conditionAnd",
+      "NodeID": 96
+    },
+    "82": {
+      "UID": "20253d6f-9e72-4f21-88c4-1850682687e5",
+      "conditionIds": [
+        78,
+        79
+      ],
+      "name": "conditionAnd",
+      "NodeID": 82
+    },
+    "97": {
+      "buffId": 2118702,
+      "name": "hasBuff",
+      "UID": "e9881db0-b45b-41cc-805e-63779f2312b3",
+      "target": "OWNER",
+      "NodeID": 97
+    },
+    "80": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c45f56b8-33bd-4286-b2ae-c8e8cfeb5f78",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "speed": 1,
+      "NodeID": 80
+    },
+    "98": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "942eba90-5f36-4251-8f40-38d20c472a7b",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "speed": 1,
+      "NodeID": 98
+    },
+    "7": {
+      "key": "buff_21181027",
+      "duration": 0.1,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 7,
+      "UID": "86661291-ae63-4f50-86df-0935f6b6303e",
+      "name": "addEntityTimer"
+    },
+    "46": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e859e4fb-3e2d-425a-99b4-19081fa1ad0e",
+      "effectId": "Eff_Common_Buff_Healing",
+      "speed": 1,
+      "NodeID": 46
+    },
+    "75": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "c917da3c-fb0f-47e6-93ba-d4d2c6ef919a",
+      "target": "OWNER",
+      "NodeID": 75
+    },
+    "100": {
+      "name": "stopEffectStr",
+      "UID": "1bddc869-4632-4eb6-b81d-84d9575796a1",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "target": "OWNER",
+      "NodeID": 100
+    },
+    "9": {
+      "actionIds": [
+        63,
+        59,
+        62
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "d327396e-33c7-4496-a145-52169e7bfb74",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        65,
+        74,
+        12
+      ],
+      "NodeID": 9
+    },
+    "65": {
+      "name": "stopEffectStr",
+      "UID": "96084bb8-8057-48b9-81e8-5263e6b0795e",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "34": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "8b104ad6-821c-466d-bd2e-be4290c4f71d",
+      "name": "buffStartThink",
+      "NodeID": 34
+    },
+    "62": {
+      "name": "stopEffectStr",
+      "UID": "180a3c09-113a-4ae8-8585-b6ebb54db2d3",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "103": {
+      "name": "stopEffectStr",
+      "UID": "2b26a0b7-4859-4105-9ff0-1d2d03c02b7a",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "target": "OWNER",
+      "NodeID": 103
+    },
+    "12": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 12,
+      "UID": "a5015764-80e6-4f60-9c6f-5872b4a763c5",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "enable": true,
+      "childTransformName": "Eff_Parmon_Whisbird_10181_Skill_Conjure"
+    },
+    "51": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "c4d8b8f7-01c7-4d64-85eb-2de56af0664a",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "23": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 23,
+      "UID": "977ab60c-90bd-4064-b110-2562bdda646f",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "enable": true,
+      "childTransformName": "Eff_Parmon_Whisbird_10187_Skill_Conjure"
+    },
+    "45": {
+      "eventName": "10185Remove",
+      "name": "notifyCustomEvent",
+      "UID": "d86a0e6e-7e88-4acc-ae64-11d8597f90d2",
+      "target": "MASTER",
+      "NodeID": 45
+    },
+    "74": {
+      "conditionActionIds": [
+        75
+      ],
+      "UID": "fe4b0adf-a69b-42e9-8bda-956f5e42230e",
+      "name": "doActionsByConditions",
+      "NodeID": 74,
+      "elseActionIds": [
+        16
+      ]
+    },
+    "56": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "562be8f7-b925-4ed3-af8a-d1c936ce06f2",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "15": {
+      "UID": "34ca97c4-1dce-41cb-9a97-121d9cfbd314",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 15
+    },
+    "57": {
+      "UID": "3fd502de-ab40-4f6b-9d05-5680081df733",
+      "conditionIds": [
+        56,
+        58
+      ],
+      "name": "conditionAnd",
+      "NodeID": 57
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3e9004b6-defc-43c8-82fd-7d7e291b8f54",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "58": {
+      "buffId": 2118702,
+      "name": "hasBuff",
+      "UID": "9c7b8316-9eb0-445c-96c4-ba3f61ddcaf7",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "55": {
+      "name": "calcResult",
+      "UID": "85ca1b18-2e80-4a90-9ef6-62b108bd6e53",
+      "target": "CURPET",
+      "NodeID": 55,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 2118102
+      }
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "39fa700d-16ab-4a91-9ffa-4ee331cad558",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "speed": 1,
+      "NodeID": 59
+    },
+    "78": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "47b4d953-677a-4ac6-8f5d-a7fcb2a4a5ad",
+      "target": "OWNER",
+      "NodeID": 78
+    },
+    "32": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 32,
+      "UID": "87476b59-817c-43a0-a1c5-a17bdfc1de11",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "enable": true,
+      "childTransformName": "Eff_Parmon_Whisbird_10184_Skill_Conjure"
+    },
+    "19": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 19,
+      "UID": "9c10ca9c-261e-4ef2-af17-606a9d639bb0",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure00",
+      "enable": false,
+      "childTransformName": "Eff_Parmon_Whisbird_10181_Skill_Conjure"
+    },
+    "61": {
+      "name": "stopEffectStr",
+      "UID": "55126add-1aa9-4c39-a21d-2d33d263434c",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "target": "OWNER",
+      "NodeID": 61
+    },
+    "36": {
+      "name": "calcResult",
+      "UID": "5539a79c-eaa4-4ff4-8943-a923338ed187",
+      "target": "CURPET",
+      "NodeID": 36,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 1,
+        "id": 2118102
+      }
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    45,
+    44,
+    15,
+    88,
+    112,
+    110,
+    72,
+    81
+  ],
+  "onBuffStartIds": [
+    25,
+    66,
+    111,
+    86,
+    85,
+    92,
+    41,
+    45
+  ]
+}

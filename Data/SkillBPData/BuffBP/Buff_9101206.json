@@ -1,0 +1,116 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9101206",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "普攻命中减益状态的敌人时，恢复能量",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "46c03b81-164d-4141-b49f-dfb9ef15e8da",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 3
+    },
+    "6": {
+      "UID": "13088276-eae5-4812-a9ec-042e22ccd805",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "45939997-eca2-4460-b3c6-8267962c379c",
+      "effectId": "Eff_Parmon_10012_Buff",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "053baa18-8d18-4a64-8e12-a9a17d4b4da9",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "9": {
+      "name": "hasBuffTag",
+      "UID": "e92e5752-30d6-4fc8-ab82-42f46cee0431",
+      "target": {
+        "UID": "ed775177-1a98-48d5-b1be-c1b3f6396cc1",
+        "name": "getEventAttackTarget",
+        "NodeID": 8
+      },
+      "NodeID": 9,
+      "buffTag": 11
+    },
+    "18": {
+      "calcId": 9101206,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 18,
+      "UID": "cec7515c-57e4-441d-bfaf-8cec39ffa590",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "value": {
+        "calcId": 9101206,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 18,
+        "UID": "cec7515c-57e4-441d-bfaf-8cec39ffa590",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "feae2789-32f3-4dd7-89a9-5eda82c4fa57",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11,
+      "UID": "df8e9fdf-c7f5-4ce9-b058-658b8ceba4f1",
+      "cd": 0.1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "5": {
+      "actionIds": [
+        19,
+        11
+      ],
+      "conditionActionIds": [
+        3,
+        9
+      ],
+      "UID": "ac026bf7-ae2d-44ac-98ec-5f8d6710556a",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "14": {
+      "UID": "7512dcd3-362f-43f7-bf1b-7f2e2481baf4",
+      "actorId": {
+        "key": "11001201",
+        "name": "getCacheVal",
+        "UID": "9530f06f-63d7-42f9-b5e6-c1610bffbef5",
+        "target": "OWNER",
+        "NodeID": 13
+      },
+      "name": "destroyEntity",
+      "NodeID": 14
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    15
+  ]
+}

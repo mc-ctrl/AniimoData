@@ -1,0 +1,603 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "action": {
+        "actionIds": [
+          3,
+          14,
+          20,
+          26,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 18.05,
+      "NodeID": 5,
+      "UID": "05de6af0-5385-48a3-8e7a-e566208c3793"
+    },
+    "38": {
+      "name": "getTargetOffsetPos",
+      "UID": "328af4ca-17a3-4915-a8ff-9257ef64906d",
+      "target": "OWNER",
+      "offset": [
+        0,
+        10,
+        0
+      ],
+      "NodeID": 38
+    },
+    "39": {
+      "maxTime": 35,
+      "UID": "987eb31a-1e20-44b6-a234-707c3f146277",
+      "name": "setCameraDistanceScale",
+      "distanceScale": 5,
+      "NodeID": 39
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 14.7,
+      "NodeID": 16,
+      "UID": "2c03c621-ec44-4836-95a1-463a2dcc9375"
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          39,
+          45,
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 13.3,
+      "NodeID": 41,
+      "UID": "a9ca2db8-4711-4e82-a535-aed22f5519f5"
+    },
+    "42": {
+      "UID": "e82a6bc6-7d62-47db-ac3a-a9b85f97a402",
+      "name": "resetCameraDistanceScale",
+      "NodeID": 42
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 26.6,
+      "NodeID": 35,
+      "UID": "5b221fdd-8293-4a68-ab21-c7f46baecdc3"
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          42,
+          46,
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 38.8,
+      "NodeID": 44,
+      "UID": "b7cdfb13-20e1-4427-92dd-aefb3dd2d210"
+    },
+    "8": {
+      "action": {
+        "actionIds": [
+          3,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 13.3,
+      "NodeID": 8,
+      "UID": "1988e48a-dcee-4534-8e2a-55821cd2b079"
+    },
+    "31": {
+      "duration": 0.7,
+      "NodeID": 31,
+      "sleepTime": 4.55,
+      "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+      "hitActionIds": [
+        30
+      ],
+      "radius": 1,
+      "velocity": [
+        0,
+        -15,
+        0
+      ],
+      "name": "free3dProjectile",
+      "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+    },
+    "9": {
+      "NodeID": 9,
+      "UID": "7c1a23b8-ffdb-494d-95f9-bb0ee4043048",
+      "tickInterval": 0,
+      "radiusSpeed": 0,
+      "generateCount": 1,
+      "rotateSpeed": 0,
+      "radius": 7,
+      "name": "createSpiralProjectiles",
+      "count": 20,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 2
+      },
+      "projectile": {
+        "duration": 0.7,
+        "NodeID": 31,
+        "sleepTime": 4.55,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 1,
+        "velocity": [
+          0,
+          -15,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+      }
+    },
+    "47": {
+      "id": 2024,
+      "duration": 30,
+      "NodeID": 47,
+      "UID": "4d534d6d-9985-41e0-bec1-1dd8c34ecf6a",
+      "name": "showBossMechanismTip"
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 16.1,
+      "NodeID": 22,
+      "UID": "66e70307-12b5-4b61-9b56-cbfd8ab1b69a"
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          9,
+          17,
+          23,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 19.775,
+      "NodeID": 11,
+      "UID": "e2d5bfa4-0c00-4839-a7a6-a28ae63dc4c7"
+    },
+    "20": {
+      "NodeID": 20,
+      "UID": "41261cc8-b6dc-4c2c-b03e-e4683b89e06e",
+      "tickInterval": 0,
+      "radiusSpeed": 0,
+      "generateCount": 1,
+      "rotateSpeed": 0,
+      "radius": 19,
+      "name": "createSpiralProjectiles",
+      "count": 50,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 2
+      },
+      "projectile": {
+        "duration": 0.7,
+        "NodeID": 31,
+        "sleepTime": 4.55,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 1,
+        "velocity": [
+          0,
+          -15,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+      }
+    },
+    "2": {
+      "name": "getTargetOffsetPos",
+      "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+      "target": "OWNER",
+      "offset": [
+        0,
+        10,
+        0
+      ],
+      "NodeID": 2
+    },
+    "3": {
+      "NodeID": 3,
+      "UID": "46a50cef-29ed-4dfd-a667-f43213a469aa",
+      "tickInterval": 0,
+      "radiusSpeed": 0,
+      "generateCount": 1,
+      "rotateSpeed": 0,
+      "radius": 3,
+      "name": "createSpiralProjectiles",
+      "count": 10,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 2
+      },
+      "projectile": {
+        "duration": 0.7,
+        "NodeID": 31,
+        "sleepTime": 4.55,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 1,
+        "velocity": [
+          0,
+          -15,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+      }
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          9,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 14,
+      "NodeID": 13,
+      "UID": "1ddb7cb8-ea65-4eef-b6ea-eb6ed1a0f109"
+    },
+    "45": {
+      "keepTime": 35,
+      "NodeID": 45,
+      "UID": "61699f4f-b685-4ae5-ac0d-2a6ff9cbc8cc",
+      "name": "lockOnCameraSetExtraYAngle",
+      "extraAngle": 30
+    },
+    "14": {
+      "NodeID": 14,
+      "UID": "fbb04578-f225-4bdc-94d0-e6f1de9127bb",
+      "tickInterval": 0,
+      "radiusSpeed": 0,
+      "generateCount": 1,
+      "rotateSpeed": 0,
+      "radius": 11,
+      "name": "createSpiralProjectiles",
+      "count": 30,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 2
+      },
+      "projectile": {
+        "duration": 0.7,
+        "NodeID": 31,
+        "sleepTime": 4.55,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 1,
+        "velocity": [
+          0,
+          -15,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+      }
+    },
+    "46": {
+      "UID": "a3b6ed28-5e38-494e-bedb-83b11ce0682a",
+      "name": "resetLockOnCameraExtraYAngle",
+      "NodeID": 46
+    },
+    "33": {
+      "NodeID": 33,
+      "UID": "6470f5a6-4edc-4271-9968-cdf17e56bb4c",
+      "tickInterval": 0.175,
+      "radiusSpeed": 7,
+      "generateCount": 25,
+      "rotateSpeed": 10,
+      "radius": 2,
+      "name": "createSpiralProjectiles",
+      "count": 20,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "328af4ca-17a3-4915-a8ff-9257ef64906d",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 38
+      },
+      "projectile": {
+        "duration": 1,
+        "NodeID": 32,
+        "sleepTime": 7.7,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 0.75,
+        "velocity": [
+          0,
+          -10,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "8bd54bbb-cb8f-4624-88e8-8bcdd246af07"
+      }
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 16.8,
+      "NodeID": 25,
+      "UID": "58faa19e-f1e1-4082-91ea-fec9d5e6c2b7"
+    },
+    "26": {
+      "NodeID": 26,
+      "UID": "3c40bb49-0cab-4114-8bb8-d664865dc046",
+      "tickInterval": 0,
+      "radiusSpeed": 0,
+      "generateCount": 1,
+      "rotateSpeed": 0,
+      "radius": 27,
+      "name": "createSpiralProjectiles",
+      "count": 70,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 2
+      },
+      "projectile": {
+        "duration": 0.7,
+        "NodeID": 31,
+        "sleepTime": 4.55,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 1,
+        "velocity": [
+          0,
+          -15,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+      }
+    },
+    "48": {
+      "UID": "0e62f5fa-2e59-4dc5-afbd-e626be5d72d0",
+      "name": "hideBossMechanismTip",
+      "id": 2024,
+      "NodeID": 48
+    },
+    "17": {
+      "NodeID": 17,
+      "UID": "af622331-d532-4985-9eb4-edc674861d5d",
+      "tickInterval": 0,
+      "radiusSpeed": 0,
+      "generateCount": 1,
+      "rotateSpeed": 0,
+      "radius": 15,
+      "name": "createSpiralProjectiles",
+      "count": 40,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 2
+      },
+      "projectile": {
+        "duration": 0.7,
+        "NodeID": 31,
+        "sleepTime": 4.55,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 1,
+        "velocity": [
+          0,
+          -15,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+      }
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 17.5,
+      "NodeID": 28,
+      "UID": "2587521e-b5a3-47b9-b5c6-bb4d389d214e"
+    },
+    "30": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 9021302,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "f5e0c12c-f0f8-4597-888b-65e28a91a685",
+      "target": "TARGET",
+      "NodeID": 30,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1,
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big"
+      }
+    },
+    "32": {
+      "duration": 1,
+      "NodeID": 32,
+      "sleepTime": 7.7,
+      "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+      "hitActionIds": [
+        30
+      ],
+      "radius": 0.75,
+      "velocity": [
+        0,
+        -10,
+        0
+      ],
+      "name": "free3dProjectile",
+      "UID": "8bd54bbb-cb8f-4624-88e8-8bcdd246af07"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 15.4,
+      "NodeID": 19,
+      "UID": "e82765dc-8f4e-487f-9635-57635a4c4e24"
+    },
+    "23": {
+      "NodeID": 23,
+      "UID": "dba0febf-d5e6-494e-92c5-b673cbf824a0",
+      "tickInterval": 0,
+      "radiusSpeed": 0,
+      "generateCount": 1,
+      "rotateSpeed": 0,
+      "radius": 23,
+      "name": "createSpiralProjectiles",
+      "count": 60,
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "748eab49-2588-4d87-bf9d-4dc3c526cc88",
+        "target": "OWNER",
+        "offset": [
+          0,
+          10,
+          0
+        ],
+        "NodeID": 2
+      },
+      "projectile": {
+        "duration": 0.7,
+        "NodeID": 31,
+        "sleepTime": 4.55,
+        "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Bullet",
+        "hitActionIds": [
+          30
+        ],
+        "radius": 1,
+        "velocity": [
+          0,
+          -15,
+          0
+        ],
+        "name": "free3dProjectile",
+        "UID": "ae88d8c5-06aa-44db-963c-083afd216d60"
+      }
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "42e3d038-a9e2-45ee-a3da-24a194b93c70",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Mjdm_4",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_9021302",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    8,
+    13,
+    16,
+    19,
+    22,
+    25,
+    28,
+    11,
+    5,
+    35,
+    41,
+    44
+  ],
+  "layer": "Base",
+  "length": 63.8
+}

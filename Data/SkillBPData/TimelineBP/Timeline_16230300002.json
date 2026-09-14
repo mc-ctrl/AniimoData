@@ -1,0 +1,59 @@
+{
+  "nodeMap": {
+    "14": {
+      "action": {
+        "actionIds": [
+          12,
+          82
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 14,
+      "UID": "a71188b8-781b-47f5-bce6-2e8451902950"
+    },
+    "32": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bc466f4a-825c-4d8a-873d-6309a17ef364",
+      "target": "OWNER",
+      "NodeID": 32,
+      "animId": "Skill_Burst_Attack_End"
+    },
+    "82": {
+      "UID": "b6b89c8c-d4df-4082-8877-c5be68f15567",
+      "name": "enableFourWayMove",
+      "enable": false,
+      "NodeID": 82
+    },
+    "34": {
+      "UID": "b28e6914-7d8a-43ea-821d-7271728b74c9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "NodeID": 34
+    },
+    "12": {
+      "UID": "99901c2c-49fd-4564-9bfd-f7364ee076d1",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_16230300",
+  "NodeID": 16,
+  "UID": "d414c5b4-e594-4dce-a27a-298b3cde2772",
+  "eventIds": [
+    34,
+    14
+  ],
+  "layer": "Base",
+  "length": 1
+}

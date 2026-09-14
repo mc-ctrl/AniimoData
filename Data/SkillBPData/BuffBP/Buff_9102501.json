@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102501",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "技能命中燃烧的敌人时，会积累火焰之力，最多叠加4层。每层火焰之力会提高火焰吐息10%的伤害。",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "34": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "722b0a45-35d5-4b0a-bf36-03a985e325cf",
+      "name": "doActionsByConditions",
+      "NodeID": 34
+    },
+    "31": {
+      "calcId": 9102501,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 31,
+      "UID": "a44cc827-e9a2-4272-b9aa-dba9db8f6d8b",
+      "name": "getParamByLuaConfig"
+    },
+    "45": {
+      "UID": "b57def46-ca04-4400-8175-4745e3ece0d7",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        44
+      ],
+      "NodeID": 45
+    },
+    "40": {
+      "eventName": "onAttack",
+      "name": "getEventCombatContextTarget",
+      "UID": "58a4a6a7-c4f2-4633-a3ba-f22505cf4566",
+      "target": "TARGET",
+      "NodeID": 40
+    },
+    "42": {
+      "rValue": 5,
+      "name": "greater",
+      "UID": "5acf5e39-9496-48f4-916c-ae15c513e054",
+      "NodeID": 42,
+      "lValue": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "57542f66-ae42-42ba-8719-4746a04a8023",
+        "target": {
+          "eventName": "onAttack",
+          "name": "getEventCombatContextTarget",
+          "UID": "58a4a6a7-c4f2-4633-a3ba-f22505cf4566",
+          "target": "TARGET",
+          "NodeID": 40
+        },
+        "NodeID": 41
+      }
+    },
+    "33": {
+      "UID": "6ceba6f1-e533-4155-93f7-e022a81e12b6",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": {
+          "calcId": 9102501,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 31,
+          "UID": "a44cc827-e9a2-4272-b9aa-dba9db8f6d8b",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "NodeID": 33
+    },
+    "35": {
+      "UID": "1779e5d7-03ec-46b0-b398-d520cbb7d137",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        34
+      ],
+      "NodeID": 35
+    },
+    "44": {
+      "UID": "5e490768-3fd8-489b-8505-8290cd2e6ad2",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 44
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    35,
+    45
+  ]
+}

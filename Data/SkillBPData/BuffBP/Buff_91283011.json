@@ -1,0 +1,102 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91283011",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    17
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "delay": 0,
+      "interval": 2,
+      "UID": "9f3b970f-2ae1-4eae-a640-8c26458f5f88",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "17": {
+      "actionIds": [
+        22
+      ],
+      "name": "actOnTargets",
+      "UID": "9bf299a3-0a5c-4969-bc05-e6f605e0de54",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 17
+    },
+    "9": {
+      "renderNameFilter": [
+        "MI_Parmon_10283_Body_03a"
+      ],
+      "duration": 10,
+      "disableWhenFinished": false,
+      "NodeID": 9,
+      "UID": "688c9d53-4ffd-4786-9344-f687b95c01ad",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10283_Rock",
+      "name": "playPreset"
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "077022b4-3362-414c-928b-cf1dd33bd23f",
+      "effectId": "Eff_Parmon_10283_Skill_Active",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "24": {
+      "UID": "437655a0-d340-4177-a697-4e1e1ae2d2bc",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10283_Rock",
+      "NodeID": 24
+    },
+    "22": {
+      "value": 100,
+      "name": "applyECSElement",
+      "UID": "2cfd640f-b5d4-4404-a0fb-946b47cfe768",
+      "element": 0,
+      "target": "TARGET",
+      "NodeID": 22
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "899f9faa-5832-44c4-b014-0243d3e70605",
+      "effectId": "Eff_Parmon_10283_Skill_Active",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "onBuffDestroyIds": [
+    6,
+    24
+  ],
+  "onBuffStartIds": [
+    2,
+    9,
+    5
+  ]
+}

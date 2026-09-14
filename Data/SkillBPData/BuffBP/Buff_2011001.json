@@ -1,0 +1,58 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "ffc2800b-c0f6-415e-9795-4c3b4f9f71cc",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "ca755881-fba6-4e25-aa98-cb3a997f0a9d",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f19c890e-5694-43e1-800c-73dc4cd3f03d",
+      "NodeID": 6
+    },
+    "13": {
+      "name": "calcResult",
+      "UID": "e6525be2-3824-4fa2-85cb-d581092a3cd8",
+      "target": "CURPET",
+      "NodeID": 13,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 2011001
+      }
+    },
+    "5": {
+      "UID": "254d4762-84f1-45d9-a997-7760cd181a24",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    }
+  },
+  "BPName": "buff_2011001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

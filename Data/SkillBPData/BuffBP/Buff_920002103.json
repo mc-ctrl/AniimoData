@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "atk_p": -0.01
+  },
+  "name": "百变怪标记（预研）",
+  "UID": "3ff84013-be31-4c5c-a5f4-b4cda494fb94",
+  "desc": "百变怪标记（预研）",
+  "tags": [
+    11
+  ],
+  "BPName": "buff_920002103",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

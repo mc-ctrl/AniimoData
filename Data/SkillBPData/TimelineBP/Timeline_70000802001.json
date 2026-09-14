@@ -1,0 +1,352 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "fc3d3d95-6cb6-4b78-9c3e-2ffd58d6fe6f",
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "8b1c0b47-1ccf-42fa-a99a-1e4aca4073b3",
+      "eventType": "EventEnter",
+      "NodeID": 38
+    },
+    "39": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba246325-695e-490f-ba10-e22ee710762f",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Split",
+      "speed": 1,
+      "NodeID": 39
+    },
+    "40": {
+      "name": "hideModel",
+      "UID": "61372095-eb22-4946-baf7-300353f22031",
+      "target": "OWNER",
+      "NodeID": 40,
+      "maxHideTime": 6
+    },
+    "41": {
+      "name": "getTargetOffsetPos",
+      "UID": "2a544cd2-1842-4a0e-b509-1b0571e64ec3",
+      "target": "OWNER",
+      "offset": [
+        1.2,
+        0,
+        1.2
+      ],
+      "NodeID": 41
+    },
+    "43": {
+      "name": "getTargetOffsetPos",
+      "UID": "fcb14770-0e73-46a7-b1a5-c5cd0f75322a",
+      "target": "OWNER",
+      "offset": [
+        -1.2,
+        0,
+        1.2
+      ],
+      "NodeID": 43
+    },
+    "31": {
+      "offsetXYZ": [
+        0.2,
+        1.5,
+        1
+      ],
+      "templateId": 70000802001,
+      "name": "createProjectile",
+      "UID": "c0ee15c6-23a2-40be-9231-2ccda58e9c5b",
+      "offsetRotation": [
+        75,
+        0,
+        0
+      ],
+      "pos": "CASTER",
+      "projectileType": "Parabola3d",
+      "NodeID": 31,
+      "targetPos": {
+        "UID": "1f04cefc-afbd-463b-a254-c03393c741cf",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "2a544cd2-1842-4a0e-b509-1b0571e64ec3",
+          "target": "OWNER",
+          "offset": [
+            1.2,
+            0,
+            1.2
+          ],
+          "NodeID": 41
+        },
+        "NodeID": 42
+      }
+    },
+    "51": {
+      "offsetXYZ": [
+        1.5,
+        0,
+        1.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "51e4baaa-121e-460b-bde9-9c7c7f054add",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New02",
+      "speed": 1,
+      "NodeID": 51
+    },
+    "23": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "991157b8-0a3a-48d2-8ac7-f5f43f0652cd",
+      "target": "OWNER",
+      "NodeID": 23,
+      "animId": "Gauntlet_Skill_Summon_End"
+    },
+    "11": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "9655900e-fd83-4dcf-965a-50a07c8e363a",
+      "eventType": "EventEnter",
+      "NodeID": 20
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5f2f0b0b-e013-4b81-a918-6ff605f9bf12",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Gauntlet_Skill_Summon_Loop"
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 22,
+      "UID": "c1cba58b-1f27-4f54-9a90-60d0b4996dd2"
+    },
+    "4": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          11
+        ]
+      },
+      "NodeID": 4
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7,
+      "NodeID": 14,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "46": {
+      "time": 0.1,
+      "rotateSpeed": 7200,
+      "name": "rotateTo",
+      "UID": "363badcd-eec5-42c5-8c64-2b80fadc9f41",
+      "referenceOffsetRotY": 0,
+      "target": {
+        "NodeID": 45,
+        "name": "constVector3",
+        "UID": "b29be5a7-a364-4391-a6bf-37684e29e4be",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "NodeID": 46
+    },
+    "47": {
+      "UID": "2b5891bc-2122-4248-8e74-35220ad423ae",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "NodeID": 47
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23,
+          39,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 25,
+      "UID": "3daf3dcd-5d83-4f11-b898-0d50ab08b011"
+    },
+    "13": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 13
+    },
+    "48": {
+      "offsetXYZ": [
+        -1.5,
+        0,
+        1.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5601e83a-9771-4cfa-a52f-ea7f966964fd",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New02",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "19": {
+      "UID": "bbe6df62-85a7-4b26-b372-52eb6327c8af",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 19
+    },
+    "29": {
+      "UID": "76d3d904-438e-4445-bca6-c1c60887a9d3",
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 29
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "fa7cab9d-f27b-4fc9-b680-80336fb71bdb",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Gauntlet_Skill_Summon_Start"
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          48,
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 50,
+      "UID": "eaafab5f-e20f-40b9-9f2b-85a6349e9838"
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          31,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 33,
+      "UID": "28abe469-3fcd-4333-8eb5-ec963a6a01db"
+    },
+    "34": {
+      "UID": "fca5aeb8-a41e-4ec0-93d9-77ad7e6f7bd1",
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 34
+    },
+    "36": {
+      "offsetXYZ": [
+        0.2,
+        1.5,
+        1
+      ],
+      "templateId": 70000802002,
+      "name": "createProjectile",
+      "UID": "ada09781-32b3-4761-bb9e-dd89ebc88a43",
+      "offsetRotation": [
+        75,
+        0,
+        0
+      ],
+      "pos": "CASTER",
+      "projectileType": "Parabola3d",
+      "NodeID": 36,
+      "targetPos": {
+        "UID": "367d595b-8794-4b03-9f21-d4ebc090a804",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "fcb14770-0e73-46a7-b1a5-c5cd0f75322a",
+          "target": "OWNER",
+          "offset": [
+            -1.2,
+            0,
+            1.2
+          ],
+          "NodeID": 43
+        },
+        "NodeID": 44
+      }
+    }
+  },
+  "BPName": "ability_70000802",
+  "NodeID": 6,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    4,
+    47,
+    50,
+    22,
+    14,
+    19,
+    20,
+    38,
+    25,
+    33,
+    29,
+    34,
+    37
+  ],
+  "layer": "Base",
+  "length": 7.5
+}

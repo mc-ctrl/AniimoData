@@ -1,0 +1,175 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "f8b3588c-87b1-4939-8d88-79976b0d26a8",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_02",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "24": {
+      "rValue": 0.3,
+      "name": "greater",
+      "UID": "434137cc-acb7-4bd0-8707-214e53776915",
+      "NodeID": 24,
+      "lValue": {
+        "UID": "38ac76e6-1a60-43bf-b9a9-0f9cd98f65d5",
+        "target": "CURPET",
+        "name": "getHpRatio",
+        "NodeID": 23
+      }
+    },
+    "14": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 13
+      },
+      "name": "destroyEntity",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_03",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "54cdc307-89e0-447d-bd9a-b2fe9baffc37",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10232_Skill_ShadowCure_02",
+      "NodeID": 26
+    },
+    "7": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b3b8886a-f57d-48aa-bc90-3cb9b82663c9",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_03",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "16": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 16,
+      "relation": 1,
+      "enterTrapActionIds": [
+        25,
+        14,
+        19
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        0.5
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "a7d895ff-7470-4ddd-927f-cebdeb06c432"
+    },
+    "8": {
+      "key": "shadow_loop",
+      "duration": 0.14,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "0dd75518-d052-436c-a90e-c0ad4ae9aeae",
+      "name": "addTimer"
+    },
+    "25": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "c9a27c5e-e4a3-4f3e-b021-eeba33e071f6",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_05",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "22": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3
+      },
+      "name": "calcResult",
+      "UID": "0722c98a-1dfe-4b19-93ab-df4029534de5",
+      "target": "CURPET",
+      "NodeID": 22
+    },
+    "18": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.6
+      },
+      "name": "calcResult",
+      "UID": "11295a9a-b941-4d15-a877-07314530f735",
+      "target": "CURPET",
+      "NodeID": 18
+    },
+    "5": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          8,
+          16
+        ]
+      },
+      "NodeID": 5
+    },
+    "19": {
+      "actionIds": [
+        22
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "4a2c21b4-63d2-41f9-a8aa-7b0a274a99c4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bfb10cee-e2e3-4e8c-8d21-439c59e2aa35",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_03_1",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "86f12066-4196-4a80-bd70-d97a39e9d2f6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          10,
+          20,
+          26
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2123202",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    5,
+    12
+  ],
+  "layer": "Base",
+  "length": 99999
+}

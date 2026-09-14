@@ -1,0 +1,84 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9139305",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 9139302,
+      "name": "removeBuff",
+      "UID": "02bbf45b-e44c-49da-83c2-d6f3aff4d07f",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "57f5edc2-3d7c-49fa-9d46-d1934024a113",
+      "to": 13910110,
+      "NodeID": 9,
+      "from": 13910100
+    },
+    "6": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "07426be4-24b6-43e5-8ecc-f5454cd3d23e",
+      "to": 13930110,
+      "NodeID": 6,
+      "from": 13930100
+    },
+    "10": {
+      "name": "checkPetPrototypeId",
+      "UID": "fb162d1f-0d34-4576-b047-9d1ac49a20a7",
+      "target": "OWNER",
+      "petPrototypeId": 1039300,
+      "NodeID": 10
+    },
+    "11": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "8726b754-af27-439e-acf9-3d14add6abfb",
+      "to": 13930130,
+      "NodeID": 11,
+      "from": 13930120
+    },
+    "5": {
+      "eventName": "91393",
+      "name": "notifyCustomEvent",
+      "UID": "fe039c91-18a1-4db7-aa2e-b26c182e09d1",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "8": {
+      "actionIds": [
+        6,
+        11
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "7c00f647-3146-48c0-81cc-45a7fd63b626",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    5,
+    3
+  ],
+  "onBuffStartIds": [
+    8
+  ]
+}

@@ -1,0 +1,843 @@
+{
+  "5": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1018500
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002300,
+          1018700
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1018400,
+          1026200,
+          1044300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1023200
+        ]
+      ]
+    ],
+    "elementType": 9
+  },
+  "6": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1003300,
+          1029300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1022200
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1014300,
+          1047400
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1012200
+        ]
+      ]
+    ],
+    "elementType": 4
+  },
+  "602": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1003300,
+          1029300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1022200
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1014300,
+          1047400
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1012200
+        ]
+      ]
+    ],
+    "elementType": 4
+  },
+  "801": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1045300,
+          1050300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016200,
+          1028500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1043300,
+          1045400
+        ]
+      ]
+    ],
+    "elementType": 8
+  },
+  "7": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1013300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016300
+        ]
+      ]
+    ],
+    "elementType": 2
+  },
+  "901": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1036100
+        ]
+      ]
+    ],
+    "elementType": 13
+  },
+  "8": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1045300,
+          1050300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016200,
+          1028500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1043300,
+          1045400
+        ]
+      ]
+    ],
+    "elementType": 8
+  },
+  "10163010": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1005300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002500,
+          1028300
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1033300
+        ]
+      ]
+    ],
+    "elementType": 5
+  },
+  "10163011": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1001200,
+          1002600,
+          1003200
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002700,
+          1005500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1026300,
+          1035200
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1020300
+        ]
+      ]
+    ],
+    "elementType": 12
+  },
+  "502": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1018500
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002300,
+          1018700
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1018400,
+          1026200,
+          1044300
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1023300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1023200
+        ]
+      ]
+    ],
+    "elementType": 9
+  },
+  "1": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1005300,
+          1002500
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1028300,
+          1051200
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1033300
+        ]
+      ]
+    ],
+    "elementType": 5
+  },
+  "2": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1021200,
+          1021300,
+          1032300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1020700,
+          1047500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1023300,
+          1032400
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1004500
+        ]
+      ]
+    ],
+    "elementType": 6
+  },
+  "3": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1019400
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1017400
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1017300
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1048300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1004300
+        ]
+      ]
+    ],
+    "elementType": 3
+  },
+  "4": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1001200,
+          1002600,
+          1003200
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002700,
+          1005500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1026300,
+          1035200
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1020300
+        ]
+      ]
+    ],
+    "elementType": 12
+  },
+  "501": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1018500
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002300,
+          1018700
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1018400,
+          1026200,
+          1044300
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1023300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1023200
+        ]
+      ]
+    ],
+    "elementType": 9
+  },
+  "302": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1019400
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1017400
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1017300
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1048300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1004300
+        ]
+      ]
+    ],
+    "elementType": 3
+  },
+  "101": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1005300,
+          1002500
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1028300,
+          1051200
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1033300
+        ]
+      ],
+      [
+        "SUP",
+        [
+          6999300
+        ]
+      ]
+    ],
+    "elementType": 5
+  },
+  "201": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1032300,
+          1021200,
+          1021300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016200,
+          1047500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1032400
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1004500,
+          1020300,
+          1023300
+        ]
+      ]
+    ],
+    "elementType": 6
+  },
+  "202": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1032300,
+          1021200,
+          1021300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016200,
+          1047500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1032400
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1004500,
+          1020300,
+          1023300
+        ]
+      ]
+    ],
+    "elementType": 6
+  },
+  "301": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1019400
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1017400
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1017300
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1048300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1004300
+        ]
+      ]
+    ],
+    "elementType": 3
+  },
+  "401": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1002600,
+          1003200,
+          1001200
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002700,
+          1005500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1026300,
+          1035200
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1020300
+        ]
+      ]
+    ],
+    "elementType": 12
+  },
+  "902": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1037100
+        ]
+      ]
+    ],
+    "elementType": 13
+  },
+  "701": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1013300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1004300
+        ]
+      ]
+    ],
+    "elementType": 2
+  },
+  "402": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1002600,
+          1003200,
+          1001200
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1002700,
+          1005500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1026300,
+          1035200
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1020300
+        ]
+      ]
+    ],
+    "elementType": 12
+  },
+  "802": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1045300,
+          1050300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016200,
+          1028500
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1043300,
+          1045400
+        ]
+      ]
+    ],
+    "elementType": 8
+  },
+  "102": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1005300,
+          1002500
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1028300,
+          1051200
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1033300
+        ]
+      ],
+      [
+        "SUP",
+        [
+          6999300
+        ]
+      ]
+    ],
+    "elementType": 5
+  },
+  "702": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1013300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1016300
+        ]
+      ],
+      [
+        "HEAL",
+        [
+          1004300
+        ]
+      ]
+    ],
+    "elementType": 2
+  },
+  "601": {
+    "commonPetGroupId": "Default",
+    "petSet": [
+      [
+        "DPS",
+        [
+          1003300,
+          1029300
+        ]
+      ],
+      [
+        "BREAK",
+        [
+          1022200
+        ]
+      ],
+      [
+        "SUP",
+        [
+          1014300,
+          1047400
+        ]
+      ],
+      [
+        "ENERGY",
+        [
+          1012200
+        ]
+      ]
+    ],
+    "elementType": 4
+  }
+}

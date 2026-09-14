@@ -1,0 +1,160 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9104308",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0.2,
+      "interval": 1,
+      "UID": "3017f01e-c790-4698-82d0-8e0f83dd8a36",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "13": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "45c2c8a8-b6eb-47f8-b42f-91e4819563ff",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        16,
+        14,
+        20
+      ],
+      "NodeID": 13
+    },
+    "6": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "9f8cfd4f-bcde-40c6-a9d2-2659595db814",
+      "NodeID": 6,
+      "lValue": {
+        "voxelTag": "waterPool",
+        "radius": 0.8,
+        "UID": "7e2417ea-62b3-458f-ba2f-920c8f8136f2",
+        "NodeID": 5,
+        "name": "getVoxelNum"
+      }
+    },
+    "25": {
+      "calcInfo": {
+        "ep_cost_reduce_ratio": {
+          "calcId": 9104308,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 23,
+          "UID": "e9ebace0-a95c-447b-b0a5-468f2572e4a2",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "a76e4523-2070-49f9-876f-526594278a37",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 25
+    },
+    "16": {
+      "buffId": 10048,
+      "name": "removeBuff",
+      "UID": "44ec3539-5b8b-421a-8f6a-175f7f3b7e94",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "b52eef17-63a8-4f61-89f7-7e3c997683c8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "key": "waterep",
+      "name": "setCacheVal",
+      "UID": "2d4cd588-7e12-4f01-81b4-02cc911f6184",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 17
+    },
+    "23": {
+      "calcId": 9104308,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 23,
+      "UID": "e9ebace0-a95c-447b-b0a5-468f2572e4a2",
+      "name": "getParamByLuaConfig"
+    },
+    "22": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "6e0bf09b-be92-4b41-ae3b-262fb191afe2",
+      "NodeID": 22,
+      "lValue": {
+        "key": "waterep",
+        "name": "getCacheVal",
+        "UID": "73276c44-fb50-4770-9816-bb6cacd354bb",
+        "target": "OWNER",
+        "NodeID": 21
+      }
+    },
+    "14": {
+      "UID": "15e0e572-2b7f-4f36-9bb7-6b3b523337c6",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 14
+    },
+    "19": {
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "af2a3f55-89ea-4596-982c-4e96266dde76",
+      "name": "doActionsByConditions",
+      "NodeID": 19,
+      "elseActionIds": [
+        25,
+        17
+      ]
+    },
+    "20": {
+      "key": "waterep",
+      "name": "setCacheVal",
+      "UID": "f0259a1f-97f0-4d43-99d6-5a6476687110",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 20
+    },
+    "12": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "09590506-9cc0-43d4-af4f-004b8bdf4b8e",
+      "NodeID": 12,
+      "lValue": {
+        "key": "waterPool",
+        "name": "getCacheVal",
+        "UID": "5ed76f66-311c-435b-b462-f8be4950c041",
+        "target": "OWNER",
+        "NodeID": 11
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

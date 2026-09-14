@@ -1,0 +1,767 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62132302",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": {},
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    21,
+    28
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "52": {
+      "UID": "f0ca8f7c-12ff-4a43-9e2a-d44dea9b4bcb",
+      "name": "isNot",
+      "action": {
+        "name": "voxelRaycast",
+        "UID": "f483bb2f-19b1-4f75-bac7-58d28832f088",
+        "toPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "1ffcd40f-3da1-4b09-a52c-e9a0c1dc14d7",
+          "target": "SRC",
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "NodeID": 53
+        },
+        "NodeID": 51,
+        "fromPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "1709b9fc-7080-4768-bd87-3f2ca90eb742",
+          "target": "OWNER",
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "NodeID": 50
+        }
+      },
+      "NodeID": 52
+    },
+    "39": {
+      "key": "mutouren",
+      "name": "setServerCacheVal",
+      "UID": "2848989d-2612-45a6-9ce8-900de0152b06",
+      "target": "SRC",
+      "val": {
+        "rValue": 1,
+        "name": "sub",
+        "UID": "b16de02e-0089-4b59-8baa-ae82b0cee8c7",
+        "NodeID": 38,
+        "lValue": {
+          "key": "mutouren",
+          "name": "getServerCacheVal",
+          "UID": "b3cccc49-e1c4-4c85-bb69-ce6eb9d1dfd9",
+          "target": "SRC",
+          "NodeID": 37
+        }
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "actionIds": [
+        39
+      ],
+      "conditionActionIds": [
+        72
+      ],
+      "UID": "50fcd9f0-01b8-4570-aaf9-30cefff13eca",
+      "name": "doActionsByConditions",
+      "NodeID": 40
+    },
+    "41": {
+      "name": "getTargetOffsetPos",
+      "UID": "21137386-83a3-4eb3-b650-4dab2631cea0",
+      "target": "OWNER",
+      "offset": [
+        0,
+        2,
+        0
+      ],
+      "NodeID": 41
+    },
+    "42": {
+      "name": "voxelRaycast",
+      "UID": "0d144bc7-4a2e-4d6b-8591-3d83c612bc9a",
+      "toPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "86deadef-7c42-41a5-9a00-e399fe5e87ca",
+        "target": "SRC",
+        "offset": [
+          0,
+          2,
+          0
+        ],
+        "NodeID": 44
+      },
+      "NodeID": 42,
+      "fromPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "21137386-83a3-4eb3-b650-4dab2631cea0",
+        "target": "OWNER",
+        "offset": [
+          0,
+          2,
+          0
+        ],
+        "NodeID": 41
+      }
+    },
+    "43": {
+      "UID": "78ef9562-4769-47fa-820b-dbe786df0300",
+      "name": "isNot",
+      "action": {
+        "name": "voxelRaycast",
+        "UID": "0d144bc7-4a2e-4d6b-8591-3d83c612bc9a",
+        "toPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "86deadef-7c42-41a5-9a00-e399fe5e87ca",
+          "target": "SRC",
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "NodeID": 44
+        },
+        "NodeID": 42,
+        "fromPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "21137386-83a3-4eb3-b650-4dab2631cea0",
+          "target": "OWNER",
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "NodeID": 41
+        }
+      },
+      "NodeID": 43
+    },
+    "44": {
+      "name": "getTargetOffsetPos",
+      "UID": "86deadef-7c42-41a5-9a00-e399fe5e87ca",
+      "target": "SRC",
+      "offset": [
+        0,
+        2,
+        0
+      ],
+      "NodeID": 44
+    },
+    "84": {
+      "UID": "a8b0b842-f54f-48c0-af8a-6e37aea13266",
+      "name": "isNot",
+      "action": {
+        "UID": "a69bb6f6-d005-4022-a5f7-3e782292d71d",
+        "target": "MASTER",
+        "name": "checkPlayerEggMode",
+        "NodeID": 83
+      },
+      "NodeID": 84
+    },
+    "67": {
+      "key": "mutouren",
+      "name": "setServerCacheVal",
+      "UID": "2b470e5f-fb98-45ba-9f83-b77be972b019",
+      "target": "SRC",
+      "val": {
+        "rValue": 1,
+        "name": "sub",
+        "UID": "1056cf99-38bd-4370-8557-603f0dec010e",
+        "NodeID": 66,
+        "lValue": {
+          "key": "mutouren",
+          "name": "getServerCacheVal",
+          "UID": "c0c665e9-7fa9-4ce0-9086-4541cb986451",
+          "target": "SRC",
+          "NodeID": 65
+        }
+      },
+      "NodeID": 67
+    },
+    "68": {
+      "actionIds": [
+        67
+      ],
+      "conditionActionIds": [
+        70
+      ],
+      "UID": "192e2e1c-1d5f-4254-9fa0-b5de93e2ca29",
+      "name": "doActionsByConditions",
+      "NodeID": 68
+    },
+    "87": {
+      "UID": "99ef3ceb-6e99-411d-86b7-0800cb8f2b38",
+      "name": "isNot",
+      "action": {
+        "UID": "0f40b0cd-4a7a-4ba2-871d-a14430441e05",
+        "target": "OWNER",
+        "name": "checkPlayerEggMode",
+        "NodeID": 86
+      },
+      "NodeID": 87
+    },
+    "3": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "fa4566e0-d7a2-4121-8f4e-bd0bcd7e1e66",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "70": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "bb7193e5-2bef-4357-9e9c-d6a7b6cc0a16",
+      "NodeID": 70,
+      "lValue": {
+        "key": "mutouren",
+        "name": "getServerCacheVal",
+        "UID": "adaef016-e45d-4ff9-ba39-227ce838ed15",
+        "target": "SRC",
+        "NodeID": 69
+      }
+    },
+    "86": {
+      "UID": "0f40b0cd-4a7a-4ba2-871d-a14430441e05",
+      "target": "OWNER",
+      "name": "checkPlayerEggMode",
+      "NodeID": 86
+    },
+    "72": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "bbc2ea95-d327-4170-a1aa-03649951c3dd",
+      "NodeID": 72,
+      "lValue": {
+        "key": "mutouren",
+        "name": "getServerCacheVal",
+        "UID": "094027f8-1fe5-4d51-9487-d58b26aaee93",
+        "target": "SRC",
+        "NodeID": 71
+      }
+    },
+    "85": {
+      "UID": "5ff5e060-850c-4af9-a8e4-ca9ee4718db3",
+      "conditionIds": [
+        84,
+        87
+      ],
+      "name": "conditionAnd",
+      "NodeID": 85
+    },
+    "83": {
+      "UID": "a69bb6f6-d005-4022-a5f7-3e782292d71d",
+      "target": "MASTER",
+      "name": "checkPlayerEggMode",
+      "NodeID": 83
+    },
+    "82": {
+      "buffId": 62132305,
+      "name": "removeBuff",
+      "UID": "5cd0e192-2e3e-4205-b2e9-b7b716062c1e",
+      "target": "OWNER",
+      "NodeID": 82
+    },
+    "81": {
+      "UID": "8ed23430-3e66-49f1-a801-57f3e345c83c",
+      "name": "registerPetEnterControlEvent",
+      "actionIds": [
+        80
+      ],
+      "NodeID": 81
+    },
+    "80": {
+      "buffId": 62132302,
+      "name": "removeBuff",
+      "UID": "97ef47e5-ecfa-4923-87fc-0f74e3155749",
+      "target": "MASTER",
+      "NodeID": 80
+    },
+    "79": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "a39a98ec-ea49-48b1-b6c6-392f76f4e997",
+      "NodeID": 79,
+      "lValue": {
+        "key": "mutouren",
+        "name": "getServerCacheVal",
+        "UID": "3d6a9d8f-c921-4388-af32-a27847c7ccc4",
+        "target": "SRC",
+        "NodeID": 78
+      }
+    },
+    "76": {
+      "actionIds": [
+        75
+      ],
+      "conditionActionIds": [
+        79
+      ],
+      "UID": "9f56a313-c342-4a2a-8ba9-f4e1a781e0da",
+      "name": "doActionsByConditions",
+      "NodeID": 76
+    },
+    "18": {
+      "rValue": {
+        "rotationANodeID": 16,
+        "name": "getAngle",
+        "UID": "8239e86e-6c95-4947-b126-e209c9068d37",
+        "rotationBNodeID": 23,
+        "NodeID": 17
+      },
+      "name": "greater",
+      "UID": "8d04f97b-82e9-4e0e-bed3-839f0ffe8175",
+      "NodeID": 18,
+      "lValue": 90
+    },
+    "64": {
+      "key": "mutouren",
+      "name": "setServerCacheVal",
+      "UID": "17fc00ae-58ff-458d-8fe8-64a971dcd4f3",
+      "target": "SRC",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "3508ce87-9a94-480f-b246-315e426a462e",
+        "NodeID": 63,
+        "lValue": {
+          "key": "mutouren",
+          "name": "getServerCacheVal",
+          "UID": "9a7decd8-7cb9-4b25-ad85-497e9856f80d",
+          "target": "SRC",
+          "NodeID": 62
+        }
+      },
+      "NodeID": 64
+    },
+    "61": {
+      "actionIds": [
+        64
+      ],
+      "conditionActionIds": [
+        60
+      ],
+      "UID": "94642bc9-3c99-4486-b72b-ced2e2590ec1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        68
+      ],
+      "NodeID": 61
+    },
+    "5": {
+      "UID": "e231f50b-c16c-40ab-8e96-f9aed987d165",
+      "target": "OWNER",
+      "name": "getTargetRotation",
+      "NodeID": 5
+    },
+    "60": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "0cb828f5-ecbd-4038-96fa-9304feb30508",
+      "NodeID": 60,
+      "lValue": {
+        "key": "lookat2",
+        "name": "getServerCacheVal",
+        "UID": "7e9d515d-1495-463d-b93f-5f30faf850aa",
+        "target": "OWNER",
+        "NodeID": 57
+      }
+    },
+    "58": {
+      "key": "lookat1",
+      "name": "setServerCacheVal",
+      "UID": "00d321af-c1d9-486e-841b-bed9b19b84e8",
+      "target": "OWNER",
+      "val": {
+        "key": "lookat2",
+        "name": "getServerCacheVal",
+        "UID": "7e9d515d-1495-463d-b93f-5f30faf850aa",
+        "target": "OWNER",
+        "NodeID": 57
+      },
+      "NodeID": 58
+    },
+    "6": {
+      "rotationANodeID": 5,
+      "name": "getAngle",
+      "UID": "1c978244-c886-475a-9ea4-acbbed1fa306",
+      "rotationBNodeID": 10,
+      "NodeID": 6
+    },
+    "56": {
+      "actionIds": [
+        64
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "5d863dbc-ca07-429e-80be-369e71b17d9a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        58,
+        61
+      ],
+      "NodeID": 56
+    },
+    "55": {
+      "rValue": {
+        "key": "lookat2",
+        "name": "getServerCacheVal",
+        "UID": "7e9d515d-1495-463d-b93f-5f30faf850aa",
+        "target": "OWNER",
+        "NodeID": 57
+      },
+      "name": "equal",
+      "UID": "6ae8bbaa-8067-4d23-903a-6e6a5c829ff5",
+      "NodeID": 55,
+      "lValue": {
+        "key": "lookat1",
+        "name": "getServerCacheVal",
+        "UID": "05d52c52-c93b-4e78-8c15-fde1720c66d2",
+        "target": "OWNER",
+        "NodeID": 54
+      }
+    },
+    "7": {
+      "rValue": {
+        "rotationANodeID": 5,
+        "name": "getAngle",
+        "UID": "1c978244-c886-475a-9ea4-acbbed1fa306",
+        "rotationBNodeID": 10,
+        "NodeID": 6
+      },
+      "name": "greater",
+      "UID": "8febdb9e-772e-4dc2-8721-e0619c545a70",
+      "NodeID": 7,
+      "lValue": 90
+    },
+    "53": {
+      "name": "getTargetOffsetPos",
+      "UID": "1ffcd40f-3da1-4b09-a52c-e9a0c1dc14d7",
+      "target": "SRC",
+      "offset": [
+        0,
+        2,
+        0
+      ],
+      "NodeID": 53
+    },
+    "8": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "b49afc05-0036-459c-9604-8e46ea10975a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        49
+      ],
+      "NodeID": 8
+    },
+    "25": {
+      "key": "lookat2",
+      "name": "setServerCacheVal",
+      "UID": "bff1f8bc-86e9-4a38-b246-87dfcac65a52",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 25
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "c46107d3-7ac5-4c47-a9ce-98b01f00bee2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        49
+      ],
+      "NodeID": 9
+    },
+    "50": {
+      "name": "getTargetOffsetPos",
+      "UID": "1709b9fc-7080-4768-bd87-3f2ca90eb742",
+      "target": "OWNER",
+      "offset": [
+        0,
+        2,
+        0
+      ],
+      "NodeID": 50
+    },
+    "12": {
+      "key": "lookat2",
+      "name": "setServerCacheVal",
+      "UID": "470fcd83-b577-46ec-add6-fe55291a869b",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 12
+    },
+    "28": {
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "b928c62d-39f9-4ec1-9413-cc1070b78632",
+      "name": "doActionsByConditions",
+      "NodeID": 28,
+      "elseActionIds": [
+        30,
+        33
+      ]
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "ccd32c1e-5184-4529-9be8-9e609a8261ae",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        85
+      ],
+      "UID": "f45f3733-5d96-4683-b788-3e39bf8c8210",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 21
+    },
+    "19": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "190db27c-a2b8-4149-9e0f-d442788984eb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 19
+    },
+    "23": {
+      "name": "getRotationFromTo",
+      "considerYAxis": false,
+      "UID": "ee64eb87-13f8-4556-bcb6-30ebdce88ae5",
+      "to": "SRC",
+      "NodeID": 23,
+      "from": "OWNER"
+    },
+    "24": {
+      "key": "lookat2",
+      "name": "setServerCacheVal",
+      "UID": "792d97c7-9c7e-435b-868a-cd7df6665f69",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 24
+    },
+    "27": {
+      "rValue": {
+        "key": "lookat2",
+        "name": "getServerCacheVal",
+        "UID": "1f899348-6d1e-4b9d-baaf-4cc05d26ea4a",
+        "target": "OWNER",
+        "NodeID": 29
+      },
+      "name": "equal",
+      "UID": "437b5f39-75b3-446f-acc0-e4a34a0e77cb",
+      "NodeID": 27,
+      "lValue": {
+        "key": "lookat1",
+        "name": "getServerCacheVal",
+        "UID": "e2107b8f-4268-4e3e-b194-fb154542e1ec",
+        "target": "OWNER",
+        "NodeID": 26
+      }
+    },
+    "10": {
+      "name": "getRotationFromTo",
+      "considerYAxis": false,
+      "UID": "1e3f6a8f-3c07-4c19-b877-4bd431133e98",
+      "to": "SRC",
+      "NodeID": 10,
+      "from": "OWNER"
+    },
+    "75": {
+      "key": "mutouren",
+      "name": "setServerCacheVal",
+      "UID": "4c37052c-bf22-44d9-8f71-ef1b6582bd0d",
+      "target": "SRC",
+      "val": {
+        "rValue": 1,
+        "name": "sub",
+        "UID": "779ff95a-403d-477f-acad-2c701bde6139",
+        "NodeID": 74,
+        "lValue": {
+          "key": "mutouren",
+          "name": "getServerCacheVal",
+          "UID": "67cd7ae7-e12a-48ab-9b12-8e0363dada28",
+          "target": "SRC",
+          "NodeID": 73
+        }
+      },
+      "NodeID": 75
+    },
+    "47": {
+      "key": "lookat1",
+      "name": "setServerCacheVal",
+      "UID": "6b4e91c4-d82c-452a-be20-aa4a08f6e188",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 47
+    },
+    "16": {
+      "UID": "f6f9698b-5b26-4bf1-a953-595931112421",
+      "target": "OWNER",
+      "name": "getTargetRotation",
+      "NodeID": 16
+    },
+    "48": {
+      "key": "lookat2",
+      "name": "setServerCacheVal",
+      "UID": "ef4ccc7f-b2da-493e-adfa-9c9d48b07ec0",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 48
+    },
+    "17": {
+      "rotationANodeID": 16,
+      "name": "getAngle",
+      "UID": "8239e86e-6c95-4947-b126-e209c9068d37",
+      "rotationBNodeID": 23,
+      "NodeID": 17
+    },
+    "49": {
+      "key": "lookat2",
+      "name": "setServerCacheVal",
+      "UID": "2afe909e-195e-476a-903e-515904def559",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 49
+    },
+    "30": {
+      "key": "lookat1",
+      "name": "setServerCacheVal",
+      "UID": "4c659cc2-7bf5-439e-86ae-e407c2c23475",
+      "target": "OWNER",
+      "val": {
+        "key": "lookat2",
+        "name": "getServerCacheVal",
+        "UID": "1f899348-6d1e-4b9d-baaf-4cc05d26ea4a",
+        "target": "OWNER",
+        "NodeID": 29
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "0ca298d5-3abe-4163-b82b-16b187809f09",
+      "NodeID": 32,
+      "lValue": {
+        "key": "lookat2",
+        "name": "getServerCacheVal",
+        "UID": "1f899348-6d1e-4b9d-baaf-4cc05d26ea4a",
+        "target": "OWNER",
+        "NodeID": 29
+      }
+    },
+    "33": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "52722397-bfce-4d96-8242-a5fea03fec75",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        40
+      ],
+      "NodeID": 33
+    },
+    "51": {
+      "name": "voxelRaycast",
+      "UID": "f483bb2f-19b1-4f75-bac7-58d28832f088",
+      "toPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "1ffcd40f-3da1-4b09-a52c-e9a0c1dc14d7",
+        "target": "SRC",
+        "offset": [
+          0,
+          2,
+          0
+        ],
+        "NodeID": 53
+      },
+      "NodeID": 51,
+      "fromPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "1709b9fc-7080-4768-bd87-3f2ca90eb742",
+        "target": "OWNER",
+        "offset": [
+          0,
+          2,
+          0
+        ],
+        "NodeID": 50
+      }
+    },
+    "36": {
+      "key": "mutouren",
+      "name": "setServerCacheVal",
+      "UID": "1f561259-b787-44a9-b390-a2a8e6e62111",
+      "target": "SRC",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "edb24484-a1d8-4e99-9920-1e659f5d3763",
+        "NodeID": 35,
+        "lValue": {
+          "key": "mutouren",
+          "name": "getServerCacheVal",
+          "UID": "a38d0f36-0a52-4ecb-8ada-45a8739b5708",
+          "target": "SRC",
+          "NodeID": 34
+        }
+      },
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    76,
+    82
+  ],
+  "onBuffStartIds": [
+    47,
+    48,
+    9,
+    56,
+    3,
+    81
+  ]
+}

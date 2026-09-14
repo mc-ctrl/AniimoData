@@ -1,0 +1,28 @@
+[
+  {
+    "imageFront": "$UI_Img_Quest_AbandonedTrain_Chapter0_1.png",
+    "resType": 1
+  },
+  {
+    "resType": 2,
+    "font": 1,
+    "paperPrefab": "$book.prefab",
+    "txt": -129088499
+  },
+  {
+    "model": "$bottle.prefab",
+    "rotationZLimit": [
+      -10,
+      30
+    ],
+    "resType": 3,
+    "rotationXLimit": [
+      0,
+      0
+    ]
+  },
+  {
+    "imageFront": "$UI_Img_Quest_AbandonedTrain_Chapter0_1.png",
+    "resType": 1
+  }
+]

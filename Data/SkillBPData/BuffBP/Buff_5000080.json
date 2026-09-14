@@ -1,0 +1,355 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000080",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "key": "5000080",
+      "name": "setCacheVal",
+      "UID": "72e5a758-41e6-4516-8438-57b30f0823bc",
+      "target": "OWNER",
+      "val": {
+        "NodeID": 4,
+        "UID": "940212a7-0c73-48c2-8c7b-06dd3900a669",
+        "min": {
+          "calcId": 5000080,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 3,
+          "UID": "9298871b-3ce8-4ab9-adb0-1a9061d6fae7",
+          "name": "getParamByLuaConfig"
+        },
+        "max": {
+          "calcId": 5000080,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 11,
+          "UID": "0db6603d-ebb1-48b2-aef8-adab3d03063c",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "random"
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "actionIds": [
+        36,
+        40
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "332bc584-5e68-4af3-8f16-3a45941e95ea",
+      "name": "doActionsByConditions",
+      "NodeID": 38
+    },
+    "39": {
+      "buffId": 5000082,
+      "name": "hasBuff",
+      "UID": "e7148d6b-4d80-44e0-ba87-d494edc80c18",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "6": {
+      "actionIds": [
+        13,
+        26
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "d96fb63a-ef29-4c3f-9f84-ed68d2588a66",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "41": {
+      "key": "5000082",
+      "name": "setCacheVal",
+      "UID": "622706f5-8d79-4235-85ee-9a1cfe47a1ac",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 41
+    },
+    "7": {
+      "actionIds": [
+        38,
+        33
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "9487aa32-88a8-4602-be9b-6aac10734f53",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "31": {
+      "rValue": {
+        "calcId": 5000080,
+        "calcType": 1,
+        "paramName": "param2",
+        "NodeID": 32,
+        "UID": "bc5ac09b-4091-4305-8714-e8289dac4652",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "equal",
+      "UID": "8f3b3110-04a4-4030-9c0b-252d631b84fe",
+      "NodeID": 31,
+      "lValue": {
+        "key": "5000082",
+        "name": "getCacheVal",
+        "UID": "47e0563c-3d5d-4576-aa3d-eb17c54d4fbd",
+        "target": "OWNER",
+        "NodeID": 30
+      }
+    },
+    "9": {
+      "UID": "2db64c56-0a86-4947-8317-560668903294",
+      "name": "registerModifyDamage",
+      "actionIds": [
+        7,
+        20,
+        16,
+        29
+      ],
+      "NodeID": 9
+    },
+    "40": {
+      "key": "5000081",
+      "name": "setCacheVal",
+      "UID": "8bdddb4d-678f-4450-871d-ef2dc773da4d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 40
+    },
+    "11": {
+      "calcId": 5000080,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 11,
+      "UID": "0db6603d-ebb1-48b2-aef8-adab3d03063c",
+      "name": "getParamByLuaConfig"
+    },
+    "20": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "02b3646a-b9cc-4f46-abfa-cbf8e64dc43a",
+      "name": "doActionsByConditions",
+      "NodeID": 20
+    },
+    "12": {
+      "NodeID": 12,
+      "UID": "c5c5dd07-997e-41d5-bafc-6ed93ef6c5fa",
+      "min": 1,
+      "max": {
+        "calcId": 5000080,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 11,
+        "UID": "0db6603d-ebb1-48b2-aef8-adab3d03063c",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "random"
+    },
+    "3": {
+      "calcId": 5000080,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "9298871b-3ce8-4ab9-adb0-1a9061d6fae7",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "NodeID": 4,
+      "UID": "940212a7-0c73-48c2-8c7b-06dd3900a669",
+      "min": {
+        "calcId": 5000080,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "9298871b-3ce8-4ab9-adb0-1a9061d6fae7",
+        "name": "getParamByLuaConfig"
+      },
+      "max": {
+        "calcId": 5000080,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 11,
+        "UID": "0db6603d-ebb1-48b2-aef8-adab3d03063c",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "random"
+    },
+    "23": {
+      "key": "5000081",
+      "name": "setCacheVal",
+      "UID": "95df795b-fb39-442d-922c-e8d7e2a6d2d0",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 23
+    },
+    "35": {
+      "calcId": 5000080,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 35,
+      "UID": "21eedf0e-1ac9-4ac4-b5fa-8c62edeb4647",
+      "name": "getParamByLuaConfig"
+    },
+    "33": {
+      "key": "5000082",
+      "name": "setCacheVal",
+      "UID": "668d5415-f874-4be5-b484-ec0b81966a7b",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 33
+    },
+    "15": {
+      "key": "5000080",
+      "name": "getCacheVal",
+      "UID": "d59e80be-e032-4137-896b-50a077e66768",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "638bf901-cd25-40d5-ac9c-d90612062412",
+      "NodeID": 25,
+      "lValue": {
+        "key": "5000081",
+        "name": "getCacheVal",
+        "UID": "277dfaf9-c254-41d4-bc65-d82d56641d17",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "16": {
+      "UID": "c24ddaad-0dd8-431b-9dfe-89e9e466bb74",
+      "name": "modifyDamage",
+      "modifyRatioNodeID": 15,
+      "NodeID": 16
+    },
+    "13": {
+      "key": "5000080",
+      "name": "setCacheVal",
+      "UID": "0f2cecb9-5433-4f1f-9b03-692d29bde9bc",
+      "target": "OWNER",
+      "val": {
+        "NodeID": 12,
+        "UID": "c5c5dd07-997e-41d5-bafc-6ed93ef6c5fa",
+        "min": 1,
+        "max": {
+          "calcId": 5000080,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 11,
+          "UID": "0db6603d-ebb1-48b2-aef8-adab3d03063c",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "random"
+      },
+      "NodeID": 13
+    },
+    "26": {
+      "key": "5000081",
+      "name": "setCacheVal",
+      "UID": "0ca054bd-a58f-453f-a882-376139c1d3d3",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 26
+    },
+    "29": {
+      "key": "5000082",
+      "name": "setCacheVal",
+      "UID": "d9574c6d-3df5-44ac-ae19-f1d6ed62797f",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "c491952e-3d95-48e5-a9b6-33d6ef9b7147",
+        "NodeID": 28,
+        "lValue": {
+          "key": "5000082",
+          "name": "getCacheVal",
+          "UID": "01282b11-e67f-453d-89d7-165a04375a20",
+          "target": "OWNER",
+          "NodeID": 27
+        }
+      },
+      "NodeID": 29
+    },
+    "18": {
+      "buffId": 5000081,
+      "name": "hasBuff",
+      "UID": "cc65e441-bb6d-4362-bade-8e2317ed3c9a",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "32": {
+      "calcId": 5000080,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 32,
+      "UID": "bc5ac09b-4091-4305-8714-e8289dac4652",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "UID": "de981201-8018-4f12-bf6c-ea9fe67ce636",
+      "conditionIds": [
+        18,
+        22
+      ],
+      "name": "conditionAnd",
+      "NodeID": 19
+    },
+    "22": {
+      "rValue": {
+        "key": "5000080",
+        "name": "getCacheVal",
+        "UID": "0f0bf8ca-7693-4c4c-924b-57ed9bf78db4",
+        "target": "OWNER",
+        "NodeID": 21
+      },
+      "name": "greater",
+      "UID": "a49eecdf-b3d6-4cee-9032-4e1f7367a3e1",
+      "NodeID": 22,
+      "lValue": 1
+    },
+    "36": {
+      "key": "5000080",
+      "name": "setCacheVal",
+      "UID": "6ef69d0b-5a7b-434f-9743-293e4053f7b4",
+      "target": "OWNER",
+      "val": {
+        "calcId": 5000080,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 35,
+        "UID": "21eedf0e-1ac9-4ac4-b5fa-8c62edeb4647",
+        "name": "getParamByLuaConfig"
+      },
+      "NodeID": 36
+    }
+  },
+  "calcInfo": {},
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    41,
+    9
+  ]
+}

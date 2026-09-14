@@ -1,0 +1,226 @@
+{
+  "200027": {
+    "3": {
+      "name": 1595709886,
+      "levelReward": 40040,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 30
+    },
+    "4": {
+      "name": 1075533851,
+      "levelReward": 40041,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 40
+    },
+    "14": {
+      "name": 1644808596,
+      "levelReward": 40051,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 140
+    },
+    "6": {
+      "name": 1556642096,
+      "levelReward": 40043,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 60
+    },
+    "10": {
+      "name": 1643940201,
+      "levelReward": 40047,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 100
+    },
+    "15": {
+      "name": 1984068776,
+      "levelReward": 40052,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 150
+    },
+    "7": {
+      "name": 1693575906,
+      "levelReward": 40044,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 70
+    },
+    "13": {
+      "name": 2022467393,
+      "levelReward": 40050,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 130
+    },
+    "8": {
+      "name": 1885602422,
+      "levelReward": 40045,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 80
+    },
+    "12": {
+      "name": 1719270951,
+      "levelReward": 40049,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 120
+    },
+    "9": {
+      "name": 1342817800,
+      "levelReward": 40046,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 90
+    },
+    "11": {
+      "name": 1962757814,
+      "levelReward": 40048,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 110
+    },
+    "5": {
+      "name": 1125446812,
+      "levelReward": 40042,
+      "refreshFix": 0.2,
+      "stoneId": 540501,
+      "point": 50
+    },
+    "0": {
+      "name": 1238346477,
+      "stoneId": 540501,
+      "point": 0
+    },
+    "1": {
+      "name": 1819196265,
+      "levelReward": 40038,
+      "refreshFix": 0.75,
+      "stoneId": 540501,
+      "point": 10
+    },
+    "2": {
+      "name": 2050912324,
+      "levelReward": 40039,
+      "refreshFix": 0.5,
+      "stoneId": 540501,
+      "point": 20
+    }
+  },
+  "200011": {
+    "3": {
+      "name": 1819193682,
+      "levelReward": 40040,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 30
+    },
+    "4": {
+      "name": 1298399654,
+      "levelReward": 40041,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 40
+    },
+    "14": {
+      "name": 1484461656,
+      "levelReward": 40051,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 140
+    },
+    "6": {
+      "name": 1486473655,
+      "levelReward": 40043,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 60
+    },
+    "10": {
+      "name": 1257121503,
+      "levelReward": 40047,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 100
+    },
+    "15": {
+      "name": 1505811836,
+      "levelReward": 40052,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 150
+    },
+    "7": {
+      "name": 1358508664,
+      "levelReward": 40044,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 70
+    },
+    "13": {
+      "name": 1822974532,
+      "levelReward": 40050,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 130
+    },
+    "8": {
+      "name": 1175051015,
+      "levelReward": 40045,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 80
+    },
+    "12": {
+      "name": 1142156619,
+      "levelReward": 40049,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 120
+    },
+    "9": {
+      "name": 1233125269,
+      "levelReward": 40046,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 90
+    },
+    "11": {
+      "name": 2063765552,
+      "levelReward": 40048,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 110
+    },
+    "5": {
+      "name": 1695266536,
+      "levelReward": 40042,
+      "refreshFix": 0.2,
+      "stoneId": 540500,
+      "point": 50
+    },
+    "0": {
+      "name": 1930054698,
+      "stoneId": 540500,
+      "point": 0
+    },
+    "1": {
+      "name": 1771093929,
+      "levelReward": 40038,
+      "refreshFix": 0.75,
+      "stoneId": 540500,
+      "point": 10
+    },
+    "2": {
+      "name": 1990863520,
+      "levelReward": 40039,
+      "refreshFix": 0.5,
+      "stoneId": 540500,
+      "point": 20
+    }
+  }
+}

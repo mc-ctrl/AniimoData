@@ -1,0 +1,193 @@
+{
+  "210": {
+    "sort": 5,
+    "guidancePlayerTemplateId": 205,
+    "condition": [
+      2002
+    ],
+    "title": 2054745173,
+    "reward": 43006,
+    "pic": "$UI_Img_Guide_8016_001.png",
+    "grade": 2,
+    "sence": 8016,
+    "typeName": 1478855372,
+    "type": 2
+  },
+  "305": {
+    "sort": 4,
+    "guidancePlayerTemplateId": 305,
+    "condition": [
+      2001
+    ],
+    "title": 1783982566,
+    "reward": 43015,
+    "pic": "$UI_Img_Guide_8012_001.png",
+    "grade": 2,
+    "sence": 8007,
+    "typeName": 1533834143,
+    "type": 2
+  },
+  "302": {
+    "sort": 6,
+    "guidancePlayerTemplateId": 302,
+    "condition": [
+      2005
+    ],
+    "title": 1979115880,
+    "reward": 43012,
+    "pic": "$UI_Img_Guide_8003_001.png",
+    "grade": 3,
+    "sence": 8003,
+    "typeName": 1180196956,
+    "type": 3
+  },
+  "303": {
+    "sort": 1,
+    "guidancePlayerTemplateId": 303,
+    "condition": [
+      2003
+    ],
+    "title": 1292358024,
+    "reward": 43007,
+    "pic": "$UI_Img_Guide_8009_001.png",
+    "grade": 3,
+    "sence": 8009,
+    "typeName": 1824034968,
+    "type": 2
+  },
+  "207": {
+    "sort": 2,
+    "guidancePlayerTemplateId": 207,
+    "condition": [
+      2004
+    ],
+    "title": 1139579456,
+    "reward": 43008,
+    "pic": "$UI_Img_Guide_8008_001.png",
+    "grade": 3,
+    "sence": 8008,
+    "typeName": 1314063109,
+    "type": 2
+  },
+  "202": {
+    "sort": 4,
+    "guidancePlayerTemplateId": 202,
+    "title": 1272520313,
+    "reward": 43009,
+    "pic": "$UI_Img_Guide_8011_001.png",
+    "typeName": 1905913051,
+    "grade": 3,
+    "sence": 8011,
+    "type": 4,
+    "quest": 2102028
+  },
+  "1040": {
+    "sort": 3,
+    "guidancePlayerTemplateId": 1040,
+    "title": 2031520460,
+    "reward": 43005,
+    "pic": "$UI_Img_Guide_8007_001.png",
+    "type": 1,
+    "sence": 1040,
+    "typeName": 1472389223,
+    "grade": 1
+  },
+  "304": {
+    "sort": 3,
+    "guidancePlayerTemplateId": 304,
+    "condition": [
+      2000
+    ],
+    "title": 1086007343,
+    "reward": 43014,
+    "pic": "$UI_Img_Guide_8006_001.png",
+    "grade": 2,
+    "sence": 8006,
+    "typeName": 1395301908,
+    "type": 2
+  },
+  "204": {
+    "sort": 5,
+    "guidancePlayerTemplateId": 204,
+    "condition": [
+      2007
+    ],
+    "title": 1205286245,
+    "reward": 43013,
+    "pic": "$UI_Img_Guide_8104_001.png",
+    "grade": 1,
+    "sence": 8104,
+    "typeName": 1076330354,
+    "type": 1
+  },
+  "205": {
+    "sort": 1,
+    "guidancePlayerTemplateId": 205,
+    "title": 1694155508,
+    "reward": 43004,
+    "pic": "$UI_Img_Guide_8004_001.png",
+    "type": 2,
+    "sence": 8004,
+    "typeName": 1660629685,
+    "grade": 2
+  },
+  "206": {
+    "sort": 2,
+    "guidancePlayerTemplateId": 206,
+    "title": 1306224934,
+    "reward": 43010,
+    "pic": "$UI_Img_Guide_8005_001.png",
+    "type": 2,
+    "sence": 8005,
+    "typeName": 2125057112,
+    "grade": 2
+  },
+  "102": {
+    "sort": 2,
+    "guidancePlayerTemplateId": 102,
+    "title": 1995559194,
+    "reward": 43001,
+    "pic": "$UI_Img_Guide_8001_001.png",
+    "type": 4,
+    "sence": 8001,
+    "typeName": 1677309742,
+    "grade": 1
+  },
+  "203": {
+    "sort": 4,
+    "guidancePlayerTemplateId": 203,
+    "condition": [
+      2006
+    ],
+    "title": 1152194530,
+    "reward": 43003,
+    "pic": "$UI_Img_Guide_8103_001.png",
+    "grade": 1,
+    "sence": 8103,
+    "typeName": 1391097085,
+    "type": 1
+  },
+  "103": {
+    "sort": 1,
+    "guidancePlayerTemplateId": 103,
+    "title": 2127888128,
+    "reward": 43002,
+    "pic": "$UI_Img_Guide_8002_001.png",
+    "type": 3,
+    "sence": 8002,
+    "typeName": 1966184684,
+    "grade": 1
+  },
+  "8511": {
+    "sort": 99,
+    "guidancePlayerTemplateId": 8511,
+    "title": 1154331203,
+    "reward": 80001,
+    "pic": "$UI_Img_Guide_8003_001.png",
+    "typeName": 1125852133,
+    "grade": 99,
+    "sence": 511,
+    "type": 3,
+    "quest": 2102011
+  }
+}

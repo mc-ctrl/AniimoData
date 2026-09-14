@@ -1,0 +1,212 @@
+{
+  "nodeMap": {
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "757c5a67-31fb-4027-b3de-bdd227227a9f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        22,
+        9
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "3a3176be-be5b-4fd6-a217-0a84446b1a21",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "20": {
+      "offsetXYZ": [
+        -5,
+        0,
+        0
+      ],
+      "templateId": 70030040,
+      "name": "createEntity",
+      "UID": "ddb93dda-7734-4bfb-8a23-e8d204f98b56",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 1,
+      "setLevel": true,
+      "NodeID": 20
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 21,
+      "UID": "e25ddcfb-148b-4cb2-8ea4-010b8d6e6914"
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "31e4e35c-0c86-4c37-8980-9cde011fce85",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_Entrance_Start",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "1ec5dd85-e9f1-4055-b40e-0207ca76bbd1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "NodeID": 24
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 12,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "25": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "59d4adb1-8d64-4f79-8bed-eeab119ece76",
+      "target": "OWNER",
+      "NodeID": 25,
+      "animId": "Gauntlet_Skill_Summon_Loop"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 26,
+      "UID": "6f18a80b-0153-4780-b622-d75d2683ddfc"
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "303b8bbe-f426-4080-9b6c-c3e33baf8776",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "Gauntlet_Skill_Summon_End"
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 28,
+      "UID": "f8021ec9-cc74-48ac-a209-465dbbde880e"
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "18": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 18
+    },
+    "13": {
+      "name": "isActorType",
+      "UID": "73622733-8ce8-4585-a3c3-0151e61164bc",
+      "target": "OWNER",
+      "NodeID": 13,
+      "actorType": 3
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.75,
+      "NodeID": 19,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "16": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "23": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "26c21a24-35f5-4d3a-bbda-7ec99de06778",
+      "target": "OWNER",
+      "NodeID": 23,
+      "animId": "Gauntlet_Skill_Summon_Start"
+    }
+  },
+  "BPName": "ability_70020710",
+  "NodeID": 6,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    4,
+    19,
+    12,
+    24,
+    26,
+    28,
+    21
+  ],
+  "layer": "Base",
+  "length": 2
+}

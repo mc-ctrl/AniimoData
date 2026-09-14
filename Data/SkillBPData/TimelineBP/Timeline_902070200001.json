@@ -1,0 +1,593 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1cf4fe8f-db70-47e5-a608-9bce12cfda42",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_03",
+      "NodeID": 37
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 38,
+      "UID": "dc7b671f-301d-4124-9873-91ced0d05f54"
+    },
+    "53": {
+      "action": {
+        "actionIds": [
+          51,
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 53,
+      "UID": "73b8451a-56ff-44f9-b0e1-a73963c978b4"
+    },
+    "54": {
+      "name": "dropEffectStr",
+      "UID": "97f17e7a-4f09-45a9-8655-2b3ab1ddffe0",
+      "effectId": "Eff_Parmon_10201_Skill_DashAttack",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "42": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.7,
+        2
+      ],
+      "templateId": 902070200001,
+      "name": "createProjectile",
+      "UID": "c770b404-729e-4538-928b-14e49e2a5ae4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 42
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ceadba89-e108-4dba-9ef7-d5947219fc61",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_02",
+      "NodeID": 35
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          55,
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 44,
+      "UID": "f90f045a-fac5-493a-9723-9f5641c3785a"
+    },
+    "66": {
+      "name": "stopEffectStr",
+      "UID": "21a77243-fb10-44c4-bfd4-19c0f6828359",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Appear",
+      "target": "OWNER",
+      "NodeID": 66
+    },
+    "68": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0,
+        2.7
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "2cf56fb8-81d9-41b2-bde0-a9987dcfcff4",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Shadow",
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "NodeID": 68
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cf32a87c-fcd1-4a34-8990-f248664d1654",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_RightPunch"
+    },
+    "4": {
+      "UID": "6ab6cea2-064e-4f92-8eb9-b22585b9f992",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          13
+        ]
+      },
+      "NodeID": 4
+    },
+    "71": {
+      "action": {
+        "actionIds": [
+          70
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4666,
+      "NodeID": 71,
+      "UID": "0050759f-c841-4c9a-b043-eababe2ee4ce"
+    },
+    "73": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        2.5,
+        0,
+        2.7
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "f404d9ca-55cf-4f63-a7b8-035b55ba32df",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Shadow",
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "NodeID": 73
+    },
+    "81": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 90207001,
+      "NodeID": 81,
+      "UID": "0fd995b4-f34a-44eb-88f5-eeb098b53fd8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "80": {
+      "templateId": 1009207,
+      "name": "checkTargetTemplateId",
+      "UID": "ea8176d0-4c5e-4d4e-aad1-86b2543906ce",
+      "target": "OWNER",
+      "NodeID": 80
+    },
+    "78": {
+      "action": {
+        "actionIds": [
+          77
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.933,
+      "NodeID": 78,
+      "UID": "7166d2f6-f576-47cd-af05-caa0eb1c9e50"
+    },
+    "77": {
+      "offsetXYZ": [
+        2.5,
+        0,
+        2.7
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d2a182aa-9dd6-4651-a2f5-2eb3674b56c3",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Smoke",
+      "speed": 1,
+      "NodeID": 77
+    },
+    "76": {
+      "action": {
+        "actionIds": [
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5166,
+      "NodeID": 76,
+      "UID": "39906353-171b-420e-b273-e0fbb755d8bd"
+    },
+    "75": {
+      "offsetXYZ": [
+        2.5,
+        0,
+        2.7
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "410ae2c2-b22e-439b-a154-bf8e21348d8b",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Appear",
+      "speed": 1,
+      "NodeID": 75
+    },
+    "74": {
+      "offsetXYZ": [
+        2.5,
+        0,
+        2.7
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6098d0ef-f488-4c14-875a-722291ee9b41",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Sprint",
+      "speed": 1,
+      "NodeID": 74
+    },
+    "70": {
+      "offsetXYZ": [
+        0,
+        0,
+        2.7
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a3f41e56-3041-4de3-a07d-3df4455dfcd7",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Appear",
+      "speed": 1,
+      "NodeID": 70
+    },
+    "69": {
+      "offsetXYZ": [
+        0,
+        0,
+        2.7
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2535545f-f74c-4bc3-a616-bd85af0e4a8c",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Sprint",
+      "speed": 1,
+      "NodeID": 69
+    },
+    "65": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -2.5,
+        0,
+        2.7
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "7ffae1b4-b9dd-4f51-a246-66ec01a2ff8d",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Shadow",
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "NodeID": 65
+    },
+    "64": {
+      "action": {
+        "actionIds": [
+          66,
+          62,
+          69,
+          74,
+          65,
+          68,
+          73
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.966,
+      "NodeID": 64,
+      "UID": "9215b61d-93b7-4754-abc6-f1548178ebaf"
+    },
+    "62": {
+      "offsetXYZ": [
+        -2.5,
+        0,
+        2.7
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fdfbc587-45d4-4a55-95b3-5eb6bec8984a",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Sprint",
+      "speed": 1,
+      "NodeID": 62
+    },
+    "61": {
+      "action": {
+        "actionIds": [
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9833,
+      "NodeID": 61,
+      "UID": "7a3c61cf-d4d7-4b63-ba92-6870299f5535"
+    },
+    "60": {
+      "offsetXYZ": [
+        -2.5,
+        0,
+        2.7
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e602bb2c-22da-47a2-8371-8f9d665caf70",
+      "effectId": "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Appear",
+      "speed": 1,
+      "NodeID": 60
+    },
+    "57": {
+      "UID": "5c4c181b-38cf-413a-a091-233de2a40bfb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "NodeID": 57
+    },
+    "56": {
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 56,
+      "UID": "b6fb0d91-5653-4374-98c9-f39c380e8d59",
+      "target": "OWNER",
+      "presetName": "Eff_Monster_90207_Skill_Punch_RightArm_SpecialFresnel",
+      "name": "playPreset"
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b9b7b2cf-758f-4e01-8f8f-2ae091223ec3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_01",
+      "NodeID": 31
+    },
+    "13": {
+      "time": 1,
+      "rotateSpeed": 180,
+      "name": "rotateTo",
+      "UID": "29d28a05-ef28-44fc-9092-2ab270c75a6d",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 13
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 34,
+      "UID": "ae63257e-04c0-4339-8e82-a7f09b2b17b8"
+    },
+    "19": {
+      "UID": "303fa1ce-bfe2-4204-b756-f692e38b44e3",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 19
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.1,
+      "NodeID": 11,
+      "UID": "a73cf0d5-dbe6-446d-8f66-99b08b0b2f22"
+    },
+    "24": {
+      "name": "dropEffectStr",
+      "UID": "1ff161ea-9802-4a80-8249-0bebd6e2d55c",
+      "effectId": "Eff_Monster_90207_Skill_DirtVinePopOut_right_New_s",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "21": {
+      "UID": "f89271ca-33e6-4a8d-a513-8cdc8a71fd42",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 21
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 28,
+      "UID": "930a813a-d860-412c-b40f-a1eb033aabd9"
+    },
+    "23": {
+      "UID": "d8e80216-6cbb-4b58-938d-268afce4c36b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          21,
+          24
+        ]
+      },
+      "NodeID": 23
+    },
+    "55": {
+      "UID": "755ff958-d01b-4940-b209-91b6ec296e6b",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "lightGrassOn",
+      "NodeID": 55
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 10064,
+      "NodeID": 14,
+      "UID": "f8d1ed7f-1463-4ab6-b41e-23f35ca35455",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "UID": "aa251544-b12a-4410-9060-801e465b1095",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        81
+      ],
+      "conditionActionIds": [
+        80
+      ],
+      "UID": "1087464f-4306-4ca4-8207-f26de3743915",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "926a4a58-8213-4561-8f0a-ba97f1c1e127",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_RightPunch01",
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "580bd3d1-b466-4329-b96c-bcc3e2d38bf1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b590d5cd-9d4d-4f2e-9661-7075d187b383",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_RightPunch",
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "6b242134-3ec8-4c1b-8962-82f55da4b28a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5acde3d1-a626-4ae8-a8b2-c44ebc9ff573",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_RightPunch02",
+      "NodeID": 29
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.3,
+      "NodeID": 30,
+      "UID": "5e4beafc-d4d5-4b56-91d6-9cd0681ed6bb"
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 32,
+      "UID": "72982323-c55a-47c1-b95d-a7802bb9fd85"
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "16eb9b07-665e-4bae-bf45-57c035572c1a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Drumbeat1_04",
+      "NodeID": 33
+    },
+    "51": {
+      "time": 0.3,
+      "rotateSpeed": 60,
+      "name": "rotateTo",
+      "UID": "b4a42679-0c1b-4c27-9923-79c9b19f69b8",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 51
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 36,
+      "UID": "7b7748e5-5bde-4fe2-8d91-4b7070d819c3"
+    }
+  },
+  "BPName": "ability_902070200",
+  "NodeID": 6,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    17,
+    11,
+    23,
+    4,
+    53,
+    26,
+    28,
+    30,
+    32,
+    36,
+    38,
+    34,
+    57,
+    71,
+    61,
+    76,
+    78,
+    64,
+    44
+  ],
+  "layer": "Base",
+  "length": 3.5
+}

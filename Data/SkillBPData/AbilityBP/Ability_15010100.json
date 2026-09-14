@@ -1,0 +1,99 @@
+{
+  "BPName": "ability_15010100",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800340,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        43
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "37bdfee4-ef8d-49be-982a-027c216ba7f8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "45": {
+      "UID": "c02d57fb-94bb-4ac8-be7f-4e4807060b2b",
+      "conditionIds": [
+        44,
+        46,
+        50
+      ],
+      "name": "conditionOr",
+      "NodeID": 45
+    },
+    "50": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "58a91ec9-79cd-4d98-99f0-617658e298ab",
+      "NodeID": 50,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "480b37cd-7d46-46c7-b3c3-6cd7b1614929",
+        "target": "OWNER",
+        "NodeID": 49
+      }
+    },
+    "46": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "fc4244d8-28d3-4b1a-b906-5f6b514d2a2a",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "7": {
+      "timelineId": 15010100001,
+      "name": "setCombatActionTimeline",
+      "UID": "ba974acf-001f-447e-aa3f-cae182578672",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "43": {
+      "timelineId": 15010104001,
+      "name": "setCombatActionTimeline",
+      "UID": "06403a18-68b8-4580-b02e-467865101b4f",
+      "target": "CASTER",
+      "NodeID": 43
+    },
+    "44": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "f6dba913-9f61-413a-9a59-7aad1a483fa3",
+      "target": "OWNER",
+      "NodeID": 44
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrazyClaw01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10501_Skill_CrazyClaw1_R",
+    "Eff_Parmon_10501_Skill_CrazyClaw1_L",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    15010101,
+    15010102,
+    15010103
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

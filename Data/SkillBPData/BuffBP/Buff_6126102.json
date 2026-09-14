@@ -1,0 +1,181 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6126102",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6126103,
+      "NodeID": 6,
+      "UID": "35a26538-800f-44a5-8fee-f24d5ddbf094",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "7df01c26-782d-47e2-85ae-74e66d8bd4b2",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        6
+      ]
+    },
+    "8": {
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "a9e59876-1839-4841-9eb8-baf9db2f9f6e",
+      "name": "doActionsByConditions",
+      "NodeID": 8,
+      "elseActionIds": [
+        7
+      ]
+    },
+    "31": {
+      "actionIds": [
+        29,
+        32,
+        33
+      ],
+      "name": "registerDeadEvent",
+      "UID": "19163488-ce04-4cde-adc9-f9eb7f6ddb10",
+      "target": "SRC",
+      "NodeID": 31
+    },
+    "20": {
+      "name": "checkPetPrototypeId",
+      "UID": "249d5b89-6b78-490a-a86d-8193808368bc",
+      "target": "OWNER",
+      "petPrototypeId": 1029100,
+      "NodeID": 20
+    },
+    "21": {
+      "name": "checkPetPrototypeId",
+      "UID": "0585201c-7df0-48f3-92c0-255eaf21152a",
+      "target": "OWNER",
+      "petPrototypeId": 1029301,
+      "NodeID": 21
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "eb3cd871-8dfb-4a78-8fcc-101b025ac43c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10261_Buff_SadCloud01_Loop",
+      "NodeID": 22
+    },
+    "4": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "f6d9daad-b333-4b4b-b347-b496381b988e",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "10": {
+      "buffId": 6126104,
+      "name": "hasBuff",
+      "UID": "9b4b9eac-04d7-4d0a-8b18-a1a9a240652b",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "25": {
+      "name": "isActorType",
+      "UID": "68f6d519-948d-45f8-9c81-1fad4c39c3ba",
+      "target": "OWNER",
+      "NodeID": 25,
+      "actorType": 1
+    },
+    "26": {
+      "UID": "dd9beef2-f4bb-4f73-a966-dd8d0a02bedf",
+      "conditionIds": [
+        25,
+        27
+      ],
+      "name": "conditionOr",
+      "NodeID": 26
+    },
+    "27": {
+      "name": "isActorType",
+      "UID": "6d9edfaa-9334-4922-ab40-c23198522738",
+      "target": "OWNER",
+      "NodeID": 27,
+      "actorType": 2
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e14bb43a-a301-4115-bd78-a35bbb6fbc19",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Gather",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "29": {
+      "buffId": 6126102,
+      "name": "removeBuff",
+      "UID": "dd1f6dbd-1e9c-44c0-88cf-a7219cededc2",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "name": "checkPetPrototypeId",
+      "UID": "9ba05e30-e90e-4762-942e-0cc20969512c",
+      "target": "OWNER",
+      "petPrototypeId": 1029300,
+      "NodeID": 18
+    },
+    "32": {
+      "buffId": 6126103,
+      "name": "removeBuff",
+      "UID": "51008f25-58de-4117-93a0-7a4336dfcd0b",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "UID": "c0d9fbf3-db5d-4964-9e16-382c3efc2c7d",
+      "conditionIds": [
+        18,
+        20,
+        21
+      ],
+      "name": "conditionOr",
+      "NodeID": 19
+    },
+    "33": {
+      "buffId": 6126104,
+      "name": "removeBuff",
+      "UID": "c808ec54-81c1-40b0-9cbb-681f49456ff8",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "23": {
+      "actionIds": [
+        22
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "f5c762de-e187-4b9e-a746-c75b651a8e50",
+      "name": "doActionsByConditions",
+      "NodeID": 23
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    17,
+    23,
+    31
+  ]
+}

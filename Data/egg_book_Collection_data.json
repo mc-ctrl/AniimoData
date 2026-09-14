@@ -1,0 +1,107 @@
+{
+  "100102": {
+    "sort": 2,
+    "name": 1972954820,
+    "location": "100102",
+    "listImage": "$ui_item_GrabEgg_Collection_Icon_ThornStrike.png",
+    "lockModel": "$P_Avatar_Acc_Misc_M10058_Unlock.prefab",
+    "maxZoom": 1.5,
+    "minZoom": 0.7,
+    "itemId": [
+      5900503,
+      5900507
+    ],
+    "collectGroup": 1001,
+    "point": 20
+  },
+  "100103": {
+    "sort": 3,
+    "name": 1292162869,
+    "location": "100103",
+    "listImage": "$ui_item_GrabEgg_Collection_Icon_SilkenFoam.png",
+    "lockModel": "$P_Avatar_Acc_Misc_M10057_Unlock.prefab",
+    "maxZoom": 1.5,
+    "minZoom": 0.7,
+    "itemId": [
+      5900502,
+      5900506
+    ],
+    "collectGroup": 1001,
+    "point": 20
+  },
+  "100104": {
+    "sort": 4,
+    "name": 1796169314,
+    "location": "100104",
+    "listImage": "$ui_item_GrabEgg_Collection_Icon_CacophonicRhapsody.png",
+    "lockModel": "$P_Avatar_Acc_Misc_M10059_Unlock.prefab",
+    "maxZoom": 1.5,
+    "minZoom": 0.7,
+    "itemId": [
+      5900501,
+      5900505
+    ],
+    "collectGroup": 1001,
+    "point": 20
+  },
+  "100105": {
+    "sort": 5,
+    "name": 1886649830,
+    "location": "100105",
+    "listImage": "$ui_item_GrabEgg_Collection_Icon_ASoulLantern.png",
+    "lockModel": "$P_Item_Props_SoulReturningGemBottle_Unlock.prefab",
+    "maxZoom": 1.5,
+    "minZoom": 0.7,
+    "itemId": [
+      5901325,
+      5900511
+    ],
+    "collectGroup": 1001,
+    "point": 10
+  },
+  "100106": {
+    "sort": 6,
+    "name": 1613344129,
+    "location": "100106",
+    "listImage": "$ui_item_GrabEgg_Collection_Icon_SleepWellStayWell.png",
+    "lockModel": "$P_Avatar_Acc_Head_H10076_Unlock.prefab",
+    "maxZoom": 1.5,
+    "minZoom": 0.7,
+    "itemId": [
+      5900504,
+      5900508
+    ],
+    "collectGroup": 1001,
+    "point": 10
+  },
+  "100107": {
+    "sort": 7,
+    "name": 1675812051,
+    "location": "100107",
+    "listImage": "$ui_item_GrabEgg_Collection_Icon_AHorn.png",
+    "lockModel": "$P_Item_Props_FlamesBreathHorn_Unlock.prefab",
+    "maxZoom": 1.5,
+    "minZoom": 0.7,
+    "itemId": [
+      5901313,
+      5900510
+    ],
+    "collectGroup": 1001,
+    "point": 10
+  },
+  "100101": {
+    "sort": 1,
+    "name": 1183541336,
+    "location": "100101",
+    "listImage": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "lockModel": "$P_Item_Props_DiamondEgg_Unlock.prefab",
+    "maxZoom": 1.5,
+    "minZoom": 0.7,
+    "itemId": [
+      5901301,
+      5900509
+    ],
+    "collectGroup": 1001,
+    "point": 30
+  }
+}

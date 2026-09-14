@@ -1,0 +1,44 @@
+[
+  {
+    "seasonCoinId": 1013,
+    "name": "S1-1",
+    "seasonTagNo": "$UI_Img_MonthlyCard_Label_definitive_icon.png",
+    "startDayTime": {
+      "3": 1789502400,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789502400
+    },
+    "endDayTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "seasonTagText": 1398019289,
+    "seasonId": 1,
+    "stageId": 1,
+    "seasonTagImg": "$Ul_Img_MonthlyCard_Label_definitive_item.png"
+  },
+  {
+    "seasonCoinId": 2002,
+    "name": "S1-2",
+    "seasonTagNo": "$UI_Img_MonthlyCard_Label_definitive_icon.png",
+    "startDayTime": {
+      "3": 1793239200,
+      "4": 1793239200,
+      "1": 1793239200,
+      "2": 1793239200
+    },
+    "endDayTime": {
+      "3": 1796860799,
+      "4": 1796860799,
+      "1": 1796860799,
+      "2": 1796860799
+    },
+    "seasonTagText": 1527579022,
+    "seasonId": 1,
+    "stageId": 2,
+    "seasonTagImg": "$Ul_Img_MonthlyCard_Label_definitive_item.png"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "2": {
+      "duration": 0,
+      "buffId": 30330020,
+      "NodeID": 2,
+      "UID": "b3cb1438-86c2-4a52-8cb1-58d72bdcfda7",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_3033002",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

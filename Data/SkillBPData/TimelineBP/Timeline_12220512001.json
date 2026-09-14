@@ -1,0 +1,400 @@
+{
+  "nodeMap": {
+    "62": {
+      "action": {
+        "actionIds": [
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 62,
+      "UID": "855f202e-9abb-4e1e-a2fd-92dbe0883e97"
+    },
+    "38": {
+      "UID": "7d7083bb-6da7-42c0-ac8e-ee7a44f94d2a",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 38
+    },
+    "39": {
+      "actionIds": [
+        57
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "28e20bcf-35f1-44c5-8aa2-8c33f4694309",
+      "name": "doActionsByConditions",
+      "NodeID": 39
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          39,
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 41,
+      "UID": "3eee0dc2-9419-40ce-ac86-014c61038f1f"
+    },
+    "42": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "4df3dd6b-deed-4e42-a237-3de77c93c3a2",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 43,
+      "UID": "566b13e1-b6a5-4b0c-a28e-278d233670f7"
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1f861bcf-04b3-41aa-8225-d70cb079a709",
+      "effectId": "Eff_Parmon_10222_Skill_Backstab_Start",
+      "speed": 1,
+      "NodeID": 44
+    },
+    "66": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "813516dd-de94-47a9-b66b-f264cfa1f43a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Backstab_Attack",
+      "NodeID": 66
+    },
+    "67": {
+      "action": {
+        "actionIds": [
+          66
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 67,
+      "UID": "1d4c8629-d1a8-4117-adf6-94bb184a15e4"
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "31": {
+      "UID": "8b585bb6-604d-4856-9f06-4bc908ade253",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "NodeID": 31
+    },
+    "26": {
+      "target": "OWNER",
+      "NodeID": 26,
+      "animId": "Skill_Backstab",
+      "backOffset": 0,
+      "fadeTime": 0,
+      "motionWarpingTarget": "TARGET",
+      "motionWarpingXZMaxLen": 0,
+      "motionWarpingXZMinLen": 0,
+      "offsetTime": 0,
+      "timelineTag": "",
+      "warpEndTime": 0,
+      "warpStartTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169"
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 18,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6c87506d-7c0f-413e-8f2e-51f7150735c6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Backstab_Appear",
+      "NodeID": 32
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.32,
+      "NodeID": 46,
+      "UID": "0c6ef57e-ef45-4e9f-b2d4-df91627ce670"
+    },
+    "49": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "de624a8d-6127-422c-9710-21dda7c62208",
+      "effectId": "Eff_Parmon_10222_Skill_Backstab_Appear",
+      "speed": 1,
+      "NodeID": 49
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c2782e84-71b3-49d6-810f-b276074185aa",
+      "effectId": "Eff_Parmon_10222_Skill_Backstab_Disappear",
+      "speed": 1,
+      "NodeID": 45
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "56": {
+      "action": {
+        "actionIds": {}
+      },
+      "eventType": "Notify",
+      "time": 0.59,
+      "NodeID": 56,
+      "UID": "a9b3fb94-5128-4c81-9d09-2a6c6e594035"
+    },
+    "47": {
+      "name": "hideModel",
+      "UID": "feb969db-65df-4771-9c7c-78ef907fc3a3",
+      "target": "OWNER",
+      "NodeID": 47,
+      "maxHideTime": 0.4
+    },
+    "57": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        -1
+      ],
+      "target": "TARGET",
+      "name": "teleport",
+      "UID": "b92dabc5-d1be-47d8-895b-05690ff31874",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "OWNER",
+      "NodeID": 57
+    },
+    "16": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 48,
+      "UID": "ed25d835-83aa-4602-973d-700284491d4e"
+    },
+    "28": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26,
+          44
+        ]
+      },
+      "NodeID": 28
+    },
+    "59": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 4,
+        "isPlayRadialBlur": true,
+        "impulseId": 5003
+      },
+      "UID": "5616ada8-aa35-40ac-9f43-5ddeef3e8382",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 59
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "cf4cbd98-849c-4363-bf9d-9201406da9cb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Backstab_Disapper",
+      "NodeID": 30
+    },
+    "60": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 59,
+      "NodeID": 60,
+      "UID": "3100dbf0-833a-48da-b6c5-2735b2373f45",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.35,
+            60,
+            1.8,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5003,
+      "actionIds": [
+        59
+      ]
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 33,
+      "UID": "e2fabb5b-fbe1-4001-b5bf-d51831500a89"
+    },
+    "50": {
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "c39f66de-d5f9-4bc0-ad54-7ecbb6914993",
+      "effectId": "Eff_Parmon_10222_Skill_Backstab_Attack",
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "NodeID": 50
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 52,
+      "UID": "d7de5afb-def0-47a5-9f7c-6a0063f62cec"
+    }
+  },
+  "BPName": "ability_12220512",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    28,
+    56,
+    18,
+    41,
+    43,
+    52,
+    62,
+    48,
+    46,
+    31,
+    33,
+    67
+  ],
+  "layer": "Base",
+  "length": 2.733
+}

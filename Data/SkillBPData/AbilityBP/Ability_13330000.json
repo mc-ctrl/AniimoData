@@ -1,0 +1,67 @@
+{
+  "BPName": "ability_13330000",
+  "NodeID": 1,
+  "UID": "aee8257f-20d0-4cde-9360-2771d0518f80",
+  "abilityParamId": 14100000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "96": {
+      "timelineId": 13330000002,
+      "name": "setCombatActionTimeline",
+      "UID": "184f0771-cff4-47b2-841d-b4a895725ee9",
+      "target": "CASTER",
+      "NodeID": 96
+    },
+    "11": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        90
+      ],
+      "UID": "99ad65e8-daf5-4f05-824a-4ac01b2d9e4b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        96
+      ],
+      "NodeID": 11
+    },
+    "9": {
+      "timelineId": 13330000001,
+      "name": "setCombatActionTimeline",
+      "UID": "5bb9d130-9f10-4908-aa52-c9478d6d4d26",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "90": {
+      "UID": "296e5675-6359-4b64-95d8-32c6f46bb6aa",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 90
+    }
+  },
+  "onAbilityCastIds": [
+    11
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10333_Attack01",
+    "Eff_Parmon_10331_Attack01_Bullet",
+    "Eff_Parmon_10051_Fireball_Hit",
+    "Eff_Parmon_10331_Attack01"
+  ],
+  "searchRelation": 2,
+  "name": "念力远程攻击",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "subAbilityIds": [
+    13330001,
+    13330002
+  ],
+  "searchTargetRangeDown": 3
+}

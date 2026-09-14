@@ -1,0 +1,233 @@
+{
+  "10104": {
+    "sort": 3,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10115": {
+    "sort": 14,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "50001": {
+    "sort": 1,
+    "suite": 501,
+    "mainType": 5,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20105": {
+    "sort": 5,
+    "suite": 201,
+    "mainType": 2,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20301": {
+    "sort": 3,
+    "suite": 202,
+    "mainType": 2,
+    "subType": 2,
+    "positionType": 1
+  },
+  "20107": {
+    "sort": 7,
+    "suite": 201,
+    "mainType": 2,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10107": {
+    "sort": 6,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10109": {
+    "sort": 8,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20201": {
+    "sort": 1,
+    "suite": 202,
+    "mainType": 2,
+    "subType": 2,
+    "positionType": 1
+  },
+  "20202": {
+    "sort": 2,
+    "suite": 202,
+    "mainType": 2,
+    "subType": 2,
+    "positionType": 1
+  },
+  "10112": {
+    "sort": 11,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10100": {
+    "sort": 1,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 2
+  },
+  "10103": {
+    "sort": 2,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10102": {
+    "sort": 1,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "30101": {
+    "sort": 1,
+    "suite": 301,
+    "mainType": 3,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10113": {
+    "sort": 12,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10108": {
+    "sort": 7,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20102": {
+    "sort": 2,
+    "suite": 201,
+    "mainType": 2,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20103": {
+    "sort": 3,
+    "suite": 201,
+    "mainType": 2,
+    "subType": 1,
+    "positionType": 1
+  },
+  "50002": {
+    "sort": 1,
+    "suite": 502,
+    "mainType": 5,
+    "subType": 2,
+    "positionType": 1
+  },
+  "30201": {
+    "sort": 2,
+    "suite": 301,
+    "mainType": 3,
+    "subType": 1,
+    "positionType": 1
+  },
+  "40101": {
+    "sort": 1,
+    "suite": 401,
+    "mainType": 4,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10111": {
+    "sort": 10,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10110": {
+    "sort": 9,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20401": {
+    "sort": 4,
+    "suite": 202,
+    "mainType": 2,
+    "subType": 2,
+    "positionType": 1
+  },
+  "30301": {
+    "sort": 3,
+    "suite": 301,
+    "mainType": 3,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10105": {
+    "sort": 4,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "30401": {
+    "sort": 4,
+    "suite": 301,
+    "mainType": 3,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10114": {
+    "sort": 13,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20104": {
+    "sort": 4,
+    "suite": 201,
+    "mainType": 2,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20106": {
+    "sort": 6,
+    "suite": 201,
+    "mainType": 2,
+    "subType": 1,
+    "positionType": 1
+  },
+  "10106": {
+    "sort": 5,
+    "suite": 101,
+    "mainType": 1,
+    "subType": 1,
+    "positionType": 1
+  },
+  "20101": {
+    "sort": 1,
+    "suite": 201,
+    "mainType": 2,
+    "subType": 1,
+    "positionType": 1
+  }
+}

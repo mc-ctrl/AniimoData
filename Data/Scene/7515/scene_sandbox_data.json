@@ -1,0 +1,145 @@
+{
+  "91300660": {
+    "owner": "陈智豪",
+    "position": [
+      8.59,
+      -0.38,
+      -8.16
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91300713,
+    "keepGraphOnFinished": true,
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "全局_新洞穴入口_15号洞穴玩法内容",
+    "spawners": [
+      91300662,
+      91300665,
+      91300698,
+      91300744,
+      91300754,
+      91315790,
+      91315830,
+      91315858,
+      91315865
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7515/Sandbox_91300660_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91300660,
+    "levelItems": {
+      "91315920": {
+        "majorCompId": 54408025,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Chest_Shield_With_Marker_01 (1)",
+        "position": [
+          4.11,
+          -0.48,
+          -20.41
+        ],
+        "rotation": [
+          0,
+          58.74,
+          0
+        ],
+        "id": 91315920,
+        "componentsInfo": {
+          "54408025": {
+            "chestId": 91315921,
+            "customId2State": {},
+            "id2State": {
+              "55714232": 1
+            }
+          }
+        },
+        "configId": 273,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91309168": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          7.71,
+          32.33,
+          -8.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91309168,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          34.37,
+          1,
+          41.45
+        ],
+        "isActive": true
+      },
+      "91315781": {
+        "majorCompId": 54408025,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Chest_Shield_With_Marker_01",
+        "position": [
+          1.47,
+          -0.48,
+          -15.4
+        ],
+        "rotation": [
+          0,
+          62.12,
+          0
+        ],
+        "id": 91315781,
+        "componentsInfo": {
+          "54408025": {
+            "chestId": 91315789,
+            "customId2State": {},
+            "id2State": {
+              "55714232": 1
+            }
+          }
+        },
+        "configId": 273,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "chunk": 1019874
+  }
+}

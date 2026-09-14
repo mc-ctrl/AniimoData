@@ -1,0 +1,37 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4005030",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "d685550a-d48f-4baf-a323-02ee2da16a9e",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "buffId": 4005030,
+      "name": "removeBuff",
+      "UID": "1c0b0d50-6740-4bbb-91fc-352b28a7ff9d",
+      "target": "OWNER",
+      "NodeID": 4
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 4005030,
+    "sp_cur": "param0",
+    "type": 1
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

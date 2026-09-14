@@ -1,0 +1,436 @@
+{
+  "5030802": {
+    "type": 13,
+    "prop": {
+      "stamina_regen_p": 0.12
+    },
+    "effectDesc": 1282047391
+  },
+  "5030803": {
+    "type": 13,
+    "prop": {
+      "stamina_regen_p": 0.15
+    },
+    "effectDesc": 1365620271
+  },
+  "5930303": {
+    "effectName": 1689866992,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_01.png",
+    "type": 3,
+    "effectDesc": 1803467135,
+    "skillId": 30100010
+  },
+  "5930304": {
+    "effectName": 1611486723,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_03.png",
+    "type": 3,
+    "effectDesc": 1963591220,
+    "skillId": 30100020
+  },
+  "5930305": {
+    "effectName": 1761510227,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_03.png",
+    "type": 3,
+    "effectDesc": 1282437743,
+    "skillId": 30100020
+  },
+  "5930306": {
+    "effectName": 1193840698,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_03.png",
+    "type": 3,
+    "effectDesc": 1880468183,
+    "skillId": 30100020
+  },
+  "5930402": {
+    "type": 1,
+    "prop": {
+      "pvp_taken_dmg_inc_rate_v": 0.1
+    },
+    "effectDesc": 2071368785
+  },
+  "5930403": {
+    "type": 1,
+    "prop": {
+      "pvp_taken_dmg_inc_rate_v": 0.15
+    },
+    "effectDesc": 1904189142
+  },
+  "5930404": {
+    "type": 1,
+    "prop": {
+      "rob_egg_atk": 1000
+    },
+    "effectDesc": 1492974000
+  },
+  "5930501": {
+    "type": 2,
+    "prop": {
+      "weight": 2
+    },
+    "effectDesc": 1809993947
+  },
+  "5930502": {
+    "type": 2,
+    "prop": {
+      "weight": 3
+    },
+    "effectDesc": 1780538887
+  },
+  "5930503": {
+    "type": 2,
+    "prop": {
+      "weight": 4
+    },
+    "effectDesc": 1961183557
+  },
+  "5930803": {
+    "type": 13,
+    "prop": {
+      "stamina_regen_p": 0.15
+    },
+    "effectDesc": 1365620271
+  },
+  "5930802": {
+    "type": 13,
+    "prop": {
+      "stamina_regen_p": 0.12
+    },
+    "effectDesc": 1282047391
+  },
+  "5930801": {
+    "type": 13,
+    "prop": {
+      "stamina_regen_p": 0.09
+    },
+    "effectDesc": 1803124198
+  },
+  "5930703": {
+    "type": 12,
+    "prop": {
+      "weight": 4
+    },
+    "effectDesc": 1669161980
+  },
+  "5930702": {
+    "type": 12,
+    "prop": {
+      "weight": 3
+    },
+    "effectDesc": 1711419726
+  },
+  "5930701": {
+    "type": 12,
+    "prop": {
+      "weight": 2
+    },
+    "effectDesc": 1644761837
+  },
+  "5930603": {
+    "type": 11,
+    "prop": {
+      "pvp_taken_dmg_dec_rate_v": 0.15
+    },
+    "effectDesc": 1562866933
+  },
+  "5930602": {
+    "type": 11,
+    "prop": {
+      "pvp_taken_dmg_dec_rate_v": 0.1
+    },
+    "effectDesc": 1850012383
+  },
+  "5930601": {
+    "type": 11,
+    "prop": {
+      "pvp_taken_dmg_dec_rate_v": 0.05
+    },
+    "effectDesc": 2037744396
+  },
+  "5930401": {
+    "type": 1,
+    "prop": {
+      "pvp_taken_dmg_inc_rate_v": 0.05
+    },
+    "effectDesc": 1357630078
+  },
+  "5930315": {
+    "effectName": 1192623165,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_05.png",
+    "type": 3,
+    "effectDesc": 1141218689,
+    "skillId": 30100050
+  },
+  "5930314": {
+    "effectName": 1475256666,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_05.png",
+    "type": 3,
+    "effectDesc": 2101571028,
+    "skillId": 30100050
+  },
+  "5930313": {
+    "effectName": 1226671666,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_05.png",
+    "type": 3,
+    "effectDesc": 1524099450,
+    "skillId": 30100050
+  },
+  "5930312": {
+    "effectName": 1814911738,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_04.png",
+    "type": 3,
+    "effectDesc": 1579848324,
+    "skillId": 30100040
+  },
+  "5930311": {
+    "effectName": 1187817597,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_04.png",
+    "type": 3,
+    "effectDesc": 1681839042,
+    "skillId": 30100040
+  },
+  "5930310": {
+    "effectName": 1615446852,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_04.png",
+    "type": 3,
+    "effectDesc": 1138564683,
+    "skillId": 30100040
+  },
+  "5930309": {
+    "effectName": 1125197916,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_02.png",
+    "type": 3,
+    "effectDesc": 1923050764,
+    "skillId": 30100030
+  },
+  "5930308": {
+    "effectName": 1743416769,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_02.png",
+    "type": 3,
+    "effectDesc": 1948455822,
+    "skillId": 30100030
+  },
+  "5930307": {
+    "effectName": 1646357476,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_02.png",
+    "type": 3,
+    "effectDesc": 1594919147,
+    "skillId": 30100030
+  },
+  "5930302": {
+    "effectName": 1548059971,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_01.png",
+    "type": 3,
+    "effectDesc": 1984641712,
+    "skillId": 30100010
+  },
+  "5930301": {
+    "effectName": 1084759687,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_01.png",
+    "type": 3,
+    "effectDesc": 1866935196,
+    "skillId": 30100010
+  },
+  "5030301": {
+    "effectName": 1084759687,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_01.png",
+    "type": 3,
+    "effectDesc": 1866935196,
+    "skillId": 30100010
+  },
+  "5030302": {
+    "effectName": 1548059971,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_01.png",
+    "type": 3,
+    "effectDesc": 1984641712,
+    "skillId": 30100010
+  },
+  "5030303": {
+    "effectName": 1689866992,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_01.png",
+    "type": 3,
+    "effectDesc": 1803467135,
+    "skillId": 30100010
+  },
+  "5030304": {
+    "effectName": 1611486723,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_03.png",
+    "type": 3,
+    "effectDesc": 1963591220,
+    "skillId": 30100020
+  },
+  "5030305": {
+    "effectName": 1761510227,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_03.png",
+    "type": 3,
+    "effectDesc": 1282437743,
+    "skillId": 30100020
+  },
+  "5030306": {
+    "effectName": 1193840698,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_03.png",
+    "type": 3,
+    "effectDesc": 1880468183,
+    "skillId": 30100020
+  },
+  "5030307": {
+    "effectName": 1646357476,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_02.png",
+    "type": 3,
+    "effectDesc": 1594919147,
+    "skillId": 30100030
+  },
+  "5030308": {
+    "effectName": 1743416769,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_02.png",
+    "type": 3,
+    "effectDesc": 1948455822,
+    "skillId": 30100030
+  },
+  "5030309": {
+    "effectName": 1125197916,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_02.png",
+    "type": 3,
+    "effectDesc": 1923050764,
+    "skillId": 30100030
+  },
+  "5030310": {
+    "effectName": 1615446852,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_04.png",
+    "type": 3,
+    "effectDesc": 1138564683,
+    "skillId": 30100040
+  },
+  "5030311": {
+    "effectName": 1187817597,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_04.png",
+    "type": 3,
+    "effectDesc": 1681839042,
+    "skillId": 30100040
+  },
+  "5030312": {
+    "effectName": 1814911738,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_04.png",
+    "type": 3,
+    "effectDesc": 1579848324,
+    "skillId": 30100040
+  },
+  "5030313": {
+    "effectName": 1226671666,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_05.png",
+    "type": 3,
+    "effectDesc": 1524099450,
+    "skillId": 30100050
+  },
+  "5030314": {
+    "effectName": 1475256666,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_05.png",
+    "type": 3,
+    "effectDesc": 2101571028,
+    "skillId": 30100050
+  },
+  "5030315": {
+    "effectName": 1192623165,
+    "skillIcon": "$UI_Img_GrabEggs_Robot_Skill_Smp_05.png",
+    "type": 3,
+    "effectDesc": 1141218689,
+    "skillId": 30100050
+  },
+  "5030401": {
+    "type": 1,
+    "prop": {
+      "pvp_taken_dmg_inc_rate_v": 0.05
+    },
+    "effectDesc": 1357630078
+  },
+  "5030402": {
+    "type": 1,
+    "prop": {
+      "pvp_taken_dmg_inc_rate_v": 0.1
+    },
+    "effectDesc": 2071368785
+  },
+  "5030403": {
+    "type": 1,
+    "prop": {
+      "pvp_taken_dmg_inc_rate_v": 0.15
+    },
+    "effectDesc": 1904189142
+  },
+  "5030404": {
+    "type": 1,
+    "prop": {
+      "rob_egg_atk": 1000
+    },
+    "effectDesc": 1492974000
+  },
+  "5030501": {
+    "type": 2,
+    "prop": {
+      "weight": 2
+    },
+    "effectDesc": 1809993947
+  },
+  "5030502": {
+    "type": 2,
+    "prop": {
+      "weight": 3
+    },
+    "effectDesc": 1780538887
+  },
+  "5030503": {
+    "type": 2,
+    "prop": {
+      "weight": 4
+    },
+    "effectDesc": 1961183557
+  },
+  "5030601": {
+    "type": 11,
+    "prop": {
+      "pvp_taken_dmg_dec_rate_v": 0.05
+    },
+    "effectDesc": 2037744396
+  },
+  "5030602": {
+    "type": 11,
+    "prop": {
+      "pvp_taken_dmg_dec_rate_v": 0.1
+    },
+    "effectDesc": 1850012383
+  },
+  "5030603": {
+    "type": 11,
+    "prop": {
+      "pvp_taken_dmg_dec_rate_v": 0.15
+    },
+    "effectDesc": 1562866933
+  },
+  "5030701": {
+    "type": 12,
+    "prop": {
+      "weight": 2
+    },
+    "effectDesc": 1644761837
+  },
+  "5030702": {
+    "type": 12,
+    "prop": {
+      "weight": 3
+    },
+    "effectDesc": 1711419726
+  },
+  "5030703": {
+    "type": 12,
+    "prop": {
+      "weight": 4
+    },
+    "effectDesc": 1669161980
+  },
+  "5030801": {
+    "type": 13,
+    "prop": {
+      "stamina_regen_p": 0.09
+    },
+    "effectDesc": 1803124198
+  }
+}

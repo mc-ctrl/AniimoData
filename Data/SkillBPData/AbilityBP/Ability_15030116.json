@@ -1,0 +1,81 @@
+{
+  "BPName": "ability_15030116",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800530,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "f4a13a20-2b97-4df9-bc52-63f772c03d81",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        50
+      ],
+      "NodeID": 8
+    },
+    "53": {
+      "buffId": 2150303,
+      "name": "hasBuff",
+      "UID": "56cd727e-979b-4162-80a6-08401244632c",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "50": {
+      "timelineId": 15030112001,
+      "name": "setCombatActionTimeline",
+      "UID": "a0001f12-adf0-4a69-bc0d-1c9e5826bfd7",
+      "target": "CASTER",
+      "NodeID": 50
+    },
+    "52": {
+      "UID": "def61b1b-66ba-4b16-b386-93e488c4378e",
+      "conditionIds": [
+        51,
+        53
+      ],
+      "name": "conditionOr",
+      "NodeID": 52
+    },
+    "51": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "17206b6b-60bd-4d5e-b82d-9194f6ad53ba",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "7": {
+      "timelineId": 15030116001,
+      "name": "setCombatActionTimeline",
+      "UID": "34aa28d7-6376-4c2b-9e80-5dd9b8adc219",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Boss_Skill_CrazyClaw03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw3_L",
+    "Eff_Hit_Rock_Slash",
+    "Eff_Parmon_10503_Rampage_Skill_CrazyClaw3_R"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

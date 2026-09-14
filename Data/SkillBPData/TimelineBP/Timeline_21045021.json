@@ -1,0 +1,117 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b642e1f2-7423-4a9f-b271-e36dacbdbb60",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_02_liuli",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "actOnTag": "grassGrowFlower",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 10,
+      "UID": "d8549f80-6715-4b70-8fbf-b62d96a71f01",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            8,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "name": "actOnTargets"
+    },
+    "13": {
+      "target": "TARGET",
+      "duration": 4,
+      "buffId": 21045022,
+      "NodeID": 13,
+      "UID": "4e04b7a0-0526-4104-a232-b48a4b7a83ee",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "eventType": "NotifyState",
+      "endTime": 12,
+      "NodeID": 12,
+      "onExit": {
+        "actionIds": [
+          10
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          10
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1,
+      "onEnter": {
+        "actionIds": [
+          10
+        ]
+      },
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886"
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_02_liuli",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_21045021",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    12,
+    8,
+    4
+  ],
+  "layer": "Base",
+  "length": 9999
+}

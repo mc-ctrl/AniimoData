@@ -1,0 +1,9940 @@
+{
+  "SUBMITED_EGG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 334,
+    "displayName": "队伍里有人提交过伊莫蛋",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "队伍里有人提交过伊莫蛋",
+    "statsType": 1
+  },
+  "TAKE_PHOTO": {
+    "paramName": [
+      "拍照ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 93,
+    "displayName": "完成拍照",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成指定拍照行为次数",
+    "statsType": 0
+  },
+  "TAKE_PHOTO_BY_POS_AND_OBJECT": {
+    "paramName": [
+      "",
+      "{场景id,场景坐标,判定范围,对象(主角=1,宠物=2,好友=4,NPC=8)(掩码加值int,多个需要都在场)}",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 438,
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "displayName": "在特定坐标对指定目标进行N次拍照",
+    "statsType": 0
+  },
+  "TAKE_PHOTO_BY_SUBJECT_AREA_COUNT": {
+    "paramName": [
+      "",
+      "{{对象（主角=1,宠物=2,好友=4,NPC=8)(掩码加值int,多个需要都在场)},{场景（小区块ID,elua,多个为或,可不填)}}",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 395,
+    "displayName": "指定对象在指定关卡拍照次数",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "指定对象在指定场景内拍照X次",
+    "statsType": 0
+  },
+  "TAKE_PHOTO_BY_SUBJECT_STUDIO_COUNT": {
+    "paramName": [
+      "",
+      "{对象(主角=1,宠物=2,好友=4,NPC=8)(掩码加值int,多个需要都在场)},{摄影棚模板ID(avartar资产配置表-拍照独立场景ID(elua,多个为或,可不填)}",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 396,
+    "displayName": "指定对象在指定摄影棚拍照次数",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "指定对象在指定摄影棚内拍照X次",
+    "statsType": 0
+  },
+  "TARGET_LEVELITEM_STATE": {
+    "trigger": 115,
+    "paramName": [
+      "SandboxID",
+      "{ItemID,状态名}",
+      "运算符",
+      "状态值"
+    ],
+    "displayName": "检查指定LevelItem状态",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "索引指定LevelItem，检查其状态",
+    "statsType": 1
+  },
+  "TARGET_MINUS_TEAM_AVG_LEVEL": {
+    "paramName": [
+      "",
+      "战斗目标稀有标签",
+      "运算符",
+      "等级差值"
+    ],
+    "trigger": 178,
+    "displayName": "平均等级小于目标等级",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "出战队伍平均等级小于目标等级",
+    "statsType": 1
+  },
+  "TARGET_UNHIT_COUNT": {
+    "paramName": [
+      "技能tag",
+      "",
+      "运算符",
+      "连续没有命中的次数"
+    ],
+    "trigger": 189,
+    "displayName": "战斗目标连续没有命中的次数（且范围内有其它可攻击目标）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "战斗目标连续没有命中的次数",
+    "statsType": 0
+  },
+  "TASK_SPEIC_TASKS_FINED": {
+    "paramName": [
+      "活动Id",
+      "任务Id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 361,
+    "displayName": "完成活动x的指定y个任务",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "完成活动x的指定y个任务",
+    "statsType": 1
+  },
+  "TASK_SPEIC_TASKS_RECVED": {
+    "paramName": [
+      "活动Id",
+      "任务Id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 363,
+    "displayName": "手动领取了活动x的指定y个任务的奖励",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "手动领取了活动x的指定y个任务的奖励",
+    "statsType": 1
+  },
+  "TELEPORT_COUNT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 134,
+    "displayName": "激活传送点数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "激活传送点数量",
+    "statsType": 1
+  },
+  "THROW_PUPPET": {
+    "trigger": 102,
+    "paramName": [
+      "Puppet模板ID（填0则不限）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "向目标（模板）丢捕捉球",
+    "refData": [
+      [
+        "Data.puppet_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "向目标丢捕捉球",
+    "statsType": 0
+  },
+  "THROW_PUPPET_TYPELIMIT": {
+    "paramName": [
+      "稀有标签",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 351,
+    "displayName": "对目标进行捕捉行为",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "对符合稀有标签的目标尝试了X次捕捉行为",
+    "statsType": 0
+  },
+  "TIMEOUT_POI": {
+    "paramName": [
+      "关卡ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 71,
+    "displayName": "关卡超时（次数）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "某个关卡超时次数",
+    "statsType": 0
+  },
+  "TIME_HAS_SWITCHED": {
+    "paramName": [
+      "时间切换类型",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 431,
+    "displayName": "发生过时间切换",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "发生过时间切换",
+    "statsType": 0
+  },
+  "TIME_STATE": {
+    "trigger": 114,
+    "paramName": [
+      "",
+      "昼夜区间段",
+      "运算符",
+      "验证结果"
+    ],
+    "displayName": "昼夜状态判断",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "判断昼夜状态是否在特定时段内",
+    "statsType": 1
+  },
+  "TOTAL_RESEARCH_LEVEL": {
+    "paramName": [
+      "板块id",
+      "",
+      "运算符",
+      "手册等级"
+    ],
+    "trigger": 18,
+    "displayName": "伊莫研究手册等级",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "伊莫研究手册等级",
+    "statsType": 1
+  },
+  "TOTEM_LEVEL": {
+    "paramName": [
+      "图腾柱ID",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 136,
+    "displayName": "指定图腾柱等级达到X级",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定图腾柱等级达到X级",
+    "statsType": 1
+  },
+  "TRANSMITTER_PROTECT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 267,
+    "displayName": "保护传送器",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "保护传送器",
+    "statsType": 0
+  },
+  "TRIGGER_ACT_ADDED_WEBCOM": {
+    "paramName": [
+      "活动ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 273,
+    "displayName": "添加企业微信",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "添加企业微信",
+    "statsType": 0
+  },
+  "TRIGGER_ACT_ARKCARN_PHOTE_PET": {
+    "paramName": [
+      "活动ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 271,
+    "displayName": "ARK嘉年华活动投票宠物合照",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "ARK嘉年华活动投票宠物合照",
+    "statsType": 0
+  },
+  "TRIGGER_ACT_ARKCARN_PHOTO_STAGE": {
+    "paramName": [
+      "活动ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 274,
+    "displayName": "ARK嘉年华活动舞台演出宠物合照",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "ARK嘉年华活动舞台演出宠物合照",
+    "statsType": 0
+  },
+  "TRIGGER_ACT_COMPLETE_VOTED": {
+    "paramName": [
+      "活动ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 272,
+    "displayName": "活动中完成投票",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "活动中完成投票",
+    "statsType": 0
+  },
+  "TRIGGER_ACT_FIREWORKS": {
+    "paramName": [
+      "活动ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 276,
+    "displayName": "活动中放烟花",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "活动中放烟花",
+    "statsType": 0
+  },
+  "TRIGGER_ACT_LOGIN": {
+    "paramName": [
+      "活动ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 278,
+    "displayName": "x活动y阶段中登录 y不填就是活动中登录",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "x活动y阶段中登录  y不填就是活动中登录",
+    "statsType": 0
+  },
+  "TRIGGER_ACT_LOGIN_CONTINUE": {
+    "paramName": [
+      "活动id",
+      "阶段id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 364,
+    "displayName": "x活动y阶段中连续登录",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "x活动y阶段中连续登录",
+    "statsType": 1
+  },
+  "TRIGGER_ACT_STAGE_OPEN": {
+    "paramName": [
+      "活动ID",
+      "阶段ID",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 275,
+    "displayName": "x活动y阶段生效",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "x活动y阶段生效",
+    "statsType": 1
+  },
+  "TRIGGER_ACT_TASK_ALLGROUPS_FINED": {
+    "paramName": [
+      "运营活动id",
+      "任务组id",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 290,
+    "displayName": "运营活动：完成活动x指定多个任务组y",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "运营活动：完成活动x指定多个任务组y",
+    "statsType": 1
+  },
+  "TRIGGER_ACT_TASK_ONEGROUP_FINED": {
+    "paramName": [
+      "运营活动id",
+      "任务组id",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 289,
+    "displayName": "运营活动：完成活动x任一项任务组y",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "运营活动：完成活动x任一项任务组y",
+    "statsType": 1
+  },
+  "TRIGGER_AREA_INTERNAL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 277,
+    "displayName": "国内还是海外",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "国内还是海外",
+    "statsType": 1
+  },
+  "TRIGGER_EVOLVE_PET": {
+    "paramName": [
+      "进化前宠物id",
+      "进化后宠物id",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 288,
+    "displayName": "将x伊莫进化成y伊莫",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "将x伊莫进化成y伊莫",
+    "statsType": 0
+  },
+  "TRIGGER_FRIEND_EXCHANGE_PET": {
+    "paramName": [
+      "宠物ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 291,
+    "displayName": "与好友交换活动指定宠物x次",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "与好友交换活动指定宠物x次",
+    "statsType": 0
+  },
+  "TRIGGER_IN_TIME_WEATHER_BLOCK": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 285,
+    "displayName": "检测时间天气区域",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检测时间天气区域",
+    "statsType": 1
+  },
+  "TRIGGER_PET_USED_POTENT_POINT_SUM": {
+    "paramName": [
+      "宠物ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 292,
+    "displayName": "指定宠物消耗x潜能点数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定宠物消耗x潜能点数（生态溯源专用）",
+    "statsType": 0
+  },
+  "TRIGGER_ROBEGG_ACTIVATE_DG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 281,
+    "displayName": "激活地宫",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋大作战-激活地宫",
+    "statsType": 1
+  },
+  "TRIGGER_ROBEGG_ENTER_DG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 279,
+    "displayName": "进入地宫",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋大作战-进入地宫",
+    "statsType": 1
+  },
+  "TRIGGER_ROBEGG_EXIT_DG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 282,
+    "displayName": "传送门从地宫回到岛屿",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋大作战-传送门从地宫回到岛屿",
+    "statsType": 1
+  },
+  "TRIGGER_ROBEGG_OPEN_EGG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 280,
+    "displayName": "挖出蛋",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋大作战-挖出蛋",
+    "statsType": 1
+  },
+  "TRIGGER_ROBEGG_RETREAT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 284,
+    "displayName": "成功撤离",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋大作战-当日是否成功撤离过",
+    "statsType": 1
+  },
+  "TRIGGER_ROBEGG_TRANS_EGG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 283,
+    "displayName": "提交伊莫蛋",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋大作战-提交伊莫蛋",
+    "statsType": 1
+  },
+  "TRIGGER_SANDBOX_SUCCESS": {
+    "trigger": 113,
+    "paramName": [
+      "SandboxID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "检查sandbox完成次数",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定sandbox进入graph为true时达成目标",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_ACCUMULATE_FINISH_DUNGEON": {
+    "paramName": [
+      "",
+      "0都计数/副本类型Type",
+      "运算符",
+      "完成数量"
+    ],
+    "trigger": 440,
+    "displayName": "历史累计通关X类副本N次",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "根据副本ID记录，即同一副本多次通关不计数",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_ACT_SOCRE": {
+    "paramName": [
+      "活动id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 370,
+    "displayName": "x(arg)活动获取活动积分",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "x(arg)活动获取活动积分",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_BOSSRUSH_KILL_BOSS": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "击杀BOSS数量"
+    ],
+    "trigger": 439,
+    "displayName": "在一次全息训练中击杀N个BOSS",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "每一次玩家击杀BOSS时会去判断，如果运算符个BOSS数就会判定满足条件",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_BP_Gear": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "档位"
+    ],
+    "trigger": 381,
+    "displayName": "目前BP档位",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "目前BP档位",
+    "statsType": 1
+  },
+  "DUNGEON_PASS": {
+    "trigger": 149,
+    "paramName": [
+      "副本ID(不可选)",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "检查副本通关次数",
+    "refData": [
+      [
+        "Data.level_data",
+        [
+          "$L#dungeonId"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检查玩家已通关副本次数",
+    "statsType": 1
+  },
+  "DUNGEON_PASS_CNT": {
+    "trigger": 150,
+    "paramName": [
+      "副本ID(不可选)",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "监听副本通关次数",
+    "refData": [
+      [
+        "Data.level_data",
+        [
+          "$L#dungeonId"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "等待玩家通关指定次数副本",
+    "statsType": 0
+  },
+  "Dr_Glass_SET_BUFF": {
+    "trigger": 286,
+    "paramName": [
+      "BUFF_ID",
+      "目标EntityID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "格拉斯玩法buff监听",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "为目标添加buff-玩法计数",
+    "statsType": 1
+  },
+  "EGG_ATTR_COUNT": {
+    "paramName": [
+      "",
+      "词条数,0全部词条/指定词条稀有度",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 131,
+    "displayName": "繁育获得词条的宠物蛋数量",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "繁育获得词条的宠物蛋数量",
+    "statsType": 0
+  },
+  "EGG_EVACUATE": {
+    "paramName": [
+      "撤离结果（0失败，1成功）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 301,
+    "displayName": "抢蛋撤离次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋撤离次数(1失败，0成功)",
+    "statsType": 0
+  },
+  "EMOTE_DONE_COUNT": {
+    "paramName": [
+      "",
+      "复杂参数:{动作id/0不限制},{动作类型（elua)0单人1人宠2多人-1不限制}",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 344,
+    "displayName": "完成特定动作X次",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "完成符合条件的动作X次",
+    "statsType": 1
+  },
+  "EMOTE_FLUET_MEET_FRIENDS": {
+    "paramName": [
+      "偶遇类型id/0不限制",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 345,
+    "displayName": "使用偶遇类型次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用偶遇类型匹配到其他玩家的次数",
+    "statsType": 1
+  },
+  "EMOTE_TRIGGER_TIMES": {
+    "paramName": [
+      "偶遇类型id/0不限制",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 350,
+    "displayName": "使用偶遇类型次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用偶遇类型次数",
+    "statsType": 1
+  },
+  "ENTER_LEADER_SPACE": {
+    "paramName": [
+      "场景ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 211,
+    "displayName": "进入队长世界计数类",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "穿越到队长世界的场景和最少人数",
+    "statsType": 0
+  },
+  "ENTER_LINE_PHASE": {
+    "trigger": 210,
+    "paramName": [
+      "场景ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "进入位面副本计数类",
+    "refData": [
+      [
+        "Data.map_line_config_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "进入多人位面次数和当前位面人数",
+    "statsType": 0
+  },
+  "ENTER_SCENE": {
+    "trigger": 111,
+    "paramName": [
+      "目标场景",
+      "是否篝火场景(1是/0否)",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "玩家完成传送",
+    "refData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "检查玩家到达某场景（Loading结束触发）",
+    "statsType": 0
+  },
+  "ETHNICGROUP_JUDGMENT": {
+    "trigger": 105,
+    "paramName": [
+      "伊莫族群ID",
+      "",
+      "运算符",
+      "验证结果（0不匹配、1匹配）"
+    ],
+    "displayName": "判断玩家是否是指定族群",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断玩家是否是指定族群",
+    "statsType": 2
+  },
+  "EXCHANGE_PETS_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 194,
+    "displayName": "累计交换宠物次数",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "交换宠物次数",
+    "statsType": 1
+  },
+  "EXPLORE_MAP_COVER": {
+    "paramName": [
+      "",
+      "地图小区块ID(Int/0不限制,探索度百分比(0.0x)",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 312,
+    "displayName": "到达探索度要求的区域",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "到达探索度要求的区域数到达X个",
+    "statsType": 1
+  },
+  "FAIL_POI": {
+    "paramName": [
+      "关卡ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 70,
+    "displayName": "关卡失败（次数）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "某个关卡失败次数",
+    "statsType": 0
+  },
+  "FAIL_RESTRAINED": {
+    "trigger": 75,
+    "displayName": "战斗时宠物被击败",
+    "desc": "战斗时宠物被击败",
+    "statsType": 0
+  },
+  "FINISH_ALL_SPECIAL_TRAIN_TASK": {
+    "trigger": 121,
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "1/0"
+    ],
+    "displayName": "完成全部特训任务",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成全部特训任务",
+    "statsType": 1
+  },
+  "FINISH_BATCH_DIALOGUEID": {
+    "paramName": [
+      "添加对话图事件id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 261,
+    "displayName": "完成批量播放对画图的事件",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断NPC身上随机or顺序播放对画图是否已完成的事件",
+    "statsType": 1
+  },
+  "FINISH_BEHAVIOR": {
+    "trigger": 86,
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "desc": "完成某个交互行为次数",
+    "displayName": "和特定宠物进行交互",
+    "statsType": 1
+  },
+  "FINISH_GUIDE": {
+    "trigger": 100,
+    "paramName": [
+      "引导ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "玩家完成引导",
+    "refData": [
+      [
+        "Data.guide_data",
+        [
+          "$L#id"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定ID引导播放完成",
+    "statsType": 1
+  },
+  "FINISH_SPECIAL_TRAIN_TYPE_TASK": {
+    "trigger": 119,
+    "paramName": [
+      "类别ID",
+      "",
+      "运算符",
+      "完成任务数"
+    ],
+    "displayName": "特训某类目完成数量",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "特训某类目完成数量",
+    "statsType": 1
+  },
+  "FIRST_CHARGE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未完成/1完成首充"
+    ],
+    "trigger": 452,
+    "displayName": "玩家是否完成首充",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家是否完成首充",
+    "statsType": 1
+  },
+  "FOLLOW_CATCH_AMBER": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 410,
+    "displayName": "同游模式下获得琥珀（包括他人共享的）",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "同游模式下获得琥珀（包括他人共享的）",
+    "statsType": 0
+  },
+  "FOLLOW_CATCH_PET": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 409,
+    "displayName": "同游模式下捕捉宠物",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "同游模式下捕捉宠物",
+    "statsType": 0
+  },
+  "FREE_PET": {
+    "trigger": 22,
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "放生伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "放生伊莫（只）",
+    "statsType": 0
+  },
+  "FRIENDS_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 193,
+    "displayName": "拥有好友数",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有好友数",
+    "statsType": 1
+  },
+  "FRIEND_INTIMACY": {
+    "paramName": [
+      "亲密度等级",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 219,
+    "displayName": "达到一定亲密度的好友数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "达到一定亲密度的好友数量",
+    "statsType": 1
+  },
+  "FRIEND_PVP_COUNT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 138,
+    "displayName": "与好友进行X次切磋",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "与好友进行X次切磋",
+    "statsType": 0
+  },
+  "FUNCTION_UNLOCK": {
+    "paramName": [
+      "",
+      "功能名",
+      "运算符",
+      "状态（0 锁定 1解锁）"
+    ],
+    "trigger": 174,
+    "displayName": "判断功能解锁状态",
+    "paramType": [
+      "",
+      "S",
+      "S",
+      "I"
+    ],
+    "desc": "判断功能解锁状态",
+    "statsType": 1
+  },
+  "GAIN_SPECIAL_TRAIN_BADGE": {
+    "trigger": 120,
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "获得徽章数"
+    ],
+    "displayName": "特训计划获得",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "特训计划获得",
+    "statsType": 1
+  },
+  "GETITEM_BY_STYPE": {
+    "trigger": 52,
+    "paramName": [
+      "使用子类型（sType）",
+      "渠道ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "获得道具（类型）",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "获得特定sType的道具",
+    "statsType": 0
+  },
+  "GET_EGG_TOTAL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 385,
+    "displayName": "历史累计获得X个蛋",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "历史累计获得蛋的数量(sType=12)",
+    "statsType": 1
+  },
+  "GET_ITEMS": {
+    "trigger": 17,
+    "paramName": [
+      "道具ID（填0则不限）",
+      "渠道ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "获得道具",
+    "refData": [
+      [
+        "Data.item_data",
+        [
+          "$L#itemName"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "获得道具（个）",
+    "statsType": 0
+  },
+  "GET_ITEMS_BYCONDITION": {
+    "paramName": [
+      "道具id",
+      "{条件ids}",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 404,
+    "displayName": "特定条件下获得道具",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "特定条件下获得道具",
+    "statsType": 0
+  },
+  "GET_MONEY_HOME_TOTAL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 386,
+    "displayName": "历史累计获得x家园币",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "历史累计获得家园币数量（itemId=1010）",
+    "statsType": 1
+  },
+  "GET_PET_TEMPLATE": {
+    "trigger": 7,
+    "paramName": [
+      "伊莫基础原型ID",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "获得伊莫（基础原型）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "得到指定基础原型伊莫（只）（捕捉，进化等）",
+    "statsType": 0
+  },
+  "GET_PET_TEMPLATE_FROM_BEHIND": {
+    "trigger": 32,
+    "paramName": [
+      "伊莫基础原型ID",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "从背后捕捉伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "从背后捕捉得到指定模板伊莫（只）",
+    "statsType": 0
+  },
+  "GET_PET_TEMPLATE_IN_BREAK": {
+    "trigger": 33,
+    "paramName": [
+      "伊莫基础原型ID",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "从break状态捕捉伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "从break状态中捕捉得到指定模板伊莫（只）",
+    "statsType": 0
+  },
+  "GET_PET_TEMPLATE_SPECIFIC": {
+    "trigger": 204,
+    "paramName": [
+      "伊莫具体原型ID",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "获得具体伊莫",
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "得到指定模板伊莫（只）（捕捉，进化等）",
+    "statsType": 0
+  },
+  "CATCH_RAINBOW_PET": {
+    "paramName": [
+      "0不限/伊莫原型id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 358,
+    "displayName": "累计捕捉获得虹光形态宠物数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计捕捉成功获得虹光形态宠物X只",
+    "statsType": 1
+  },
+  "CATCH_RAINBOW_PET_COUNT": {
+    "paramName": [
+      "0不限/伊莫原型id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 446,
+    "displayName": "捕捉获得虹光形态宠物数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "捕捉成功获得虹光形态宠物X只",
+    "statsType": 0
+  },
+  "CHAIN_ATTACK": {
+    "paramName": [
+      "终结连携段数",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 36,
+    "displayName": "达成终结连携",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "达成终结连携",
+    "statsType": 0
+  },
+  "CHECK_CLIENT_CUSTOM_VARIABLE": {
+    "trigger": 112,
+    "paramName": [
+      "变量ID",
+      "",
+      "运算符",
+      "变量值"
+    ],
+    "displayName": "检查客户端自定义变量",
+    "refData": [
+      [
+        "Common.Data.custom_variable_data",
+        [
+          "name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检查客户端自定义变量，不存盘",
+    "statsType": 1
+  },
+  "CHECK_CUSTOM_VARIABLE": {
+    "trigger": 4,
+    "paramName": [
+      "变量ID",
+      "",
+      "运算符",
+      "变量值"
+    ],
+    "displayName": "检查自定义变量",
+    "refData": [
+      [
+        "Common.Data.custom_variable_data",
+        [
+          "name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检查自定义变量",
+    "statsType": 1
+  },
+  "CHECK_NPC_BEHAVIOR_STATE": {
+    "trigger": 110,
+    "paramName": [
+      "StaticID",
+      "行为ID",
+      "运算符",
+      "状态(0None1Run2Finish3Abort)"
+    ],
+    "displayName": "检查NPC行为状态",
+    "refData": [
+      {},
+      [
+        "Data.npc_behavior_status_data",
+        [
+          "$L#Id"
+        ]
+      ],
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "检查指定NPC某个行为是否处于状态",
+    "statsType": 1
+  },
+  "CHECK_TARGET": {
+    "paramName": [
+      "玩法目标id",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 256,
+    "displayName": "检查玩法目标完成状态",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检查玩法目标完成状态",
+    "statsType": 1
+  },
+  "CHEST_DISTANCE": {
+    "paramName": [
+      "",
+      "宝箱id，玩家距离",
+      "运算符",
+      "等级差值"
+    ],
+    "trigger": 182,
+    "displayName": "附近有某种宝箱",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "附近有某种宝箱",
+    "statsType": 1
+  },
+  "CHEST_REACH_IMPULSE_THRESHOLD": {
+    "trigger": 155,
+    "paramName": [
+      "伊莫基础原型ID",
+      "技能参数ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "宝箱受到冲量",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "宝箱受到冲量从地下挖掘",
+    "statsType": 0
+  },
+  "CLASS_OPEN_DAY": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "分班天数"
+    ],
+    "trigger": 412,
+    "displayName": "当前分班天数（开服自然天）",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "当前分班天数（开服自然天）",
+    "statsType": 1
+  },
+  "CLEAN_MONSTER_CAMP": {
+    "paramName": [
+      "营地ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 26,
+    "displayName": "净化怪物营地",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "净化怪物营地（个）",
+    "statsType": 1
+  },
+  "CLIENT_BIND": {
+    "paramName": [
+      "场景ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 293,
+    "displayName": "客户端绑定",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "客户端绑定",
+    "statsType": 0
+  },
+  "CLOSE_INTERFACE": {
+    "trigger": 268,
+    "paramName": [
+      "界面配置表ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "关闭界面",
+    "refData": [
+      [
+        "Data.ui_panel_const_data",
+        [
+          "$L#module"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "关闭界面",
+    "statsType": 0
+  },
+  "COLLECT_BADGE_STATE": {
+    "paramName": [
+      "",
+      "",
+      "",
+      "1=解锁阶段，2=开奖阶段"
+    ],
+    "trigger": 332,
+    "displayName": "殊途同归状态判断",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "殊途同归状态判断，只判断是解锁阶段，还是开奖阶段",
+    "statsType": 1
+  },
+  "COLLECT_ONLY_PET_NUM": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 447,
+    "displayName": "捕捉伊莫N只",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "仅收集伊莫数量（种）",
+    "statsType": 1
+  },
+  "COLLECT_PET_AVATAR": {
+    "trigger": 35,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "{稀有标签,板块id}",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "收集解锁伊莫形态",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "收集解锁的伊莫形态条目（种）",
+    "statsType": 1
+  },
+  "COLLECT_PET_NUM": {
+    "trigger": 11,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "{稀有标签,板块id}",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "收集点亮伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "收集点亮伊莫数量（种）",
+    "statsType": 1
+  },
+  "COMBAT_ACTION_TRIGGER": {
+    "trigger": 140,
+    "paramName": [
+      "宠物ID",
+      "{节点编号，生命周期,次数}",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "技能节点",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "使用技能达成技能特殊效果与特性，检测相应消息",
+    "statsType": 1
+  },
+  "COMBAT_ACTION_TRIGGER_BASE": {
+    "trigger": 254,
+    "paramName": [
+      "宠物原型id",
+      "{节点编号，生命周期,次数}",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "技能节点",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "使用技能达成技能特殊效果与特性，检测相应消息",
+    "statsType": 1
+  },
+  "COMBAT_COOPERATE": {
+    "trigger": 85,
+    "displayName": "X状态下进入战斗时某宠物在场",
+    "desc": "X状态下进入战斗时某宠物在场",
+    "statsType": 0
+  },
+  "COMPLETE_ARK_PUZZLE": {
+    "paramName": [
+      "拼图id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 203,
+    "displayName": "玩家完成ARK上的拼图玩法（拼图Id）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成ARK拼图ID（次）",
+    "statsType": 0
+  },
+  "COMPLETE_COMBAT_SIM": {
+    "paramName": [
+      "难度ID/0不限难度",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 154,
+    "displayName": "完成X次爬塔",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成X次爬塔",
+    "statsType": 1
+  },
+  "COMPLETE_COMBAT_SIM_COUNT": {
+    "paramName": [
+      "难度ID/0不限难度",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 303,
+    "displayName": "全息训练通关次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "全息训练通关次数",
+    "statsType": 0
+  },
+  "COMPLETE_COMBAT_SIM_DIFFICULTY_COUNT": {
+    "paramName": [
+      "关卡等级",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 362,
+    "displayName": "通关全息训练指定难度x次",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "通关全息训练指定难度x次",
+    "statsType": 0
+  },
+  "COMPLETE_COURSE": {
+    "trigger": 116,
+    "paramName": [
+      "",
+      "教学课程ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "通关指定教学课程",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "通关指定教学课程",
+    "statsType": 1
+  },
+  "COMPLETE_POI_NUM": {
+    "trigger": 96,
+    "paramName": [
+      "POI的ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "完成POI",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成某种POI达到N次",
+    "statsType": 1
+  },
+  "COMPLETE_QUESTGROUP_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 66,
+    "displayName": "完成任务组数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成任务组的数量",
+    "statsType": 0
+  },
+  "COMPLETE_QUEST_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 65,
+    "displayName": "完成任务数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成任务的数量",
+    "statsType": 0
+  },
+  "NEAR_PET": {
+    "trigger": 79,
+    "paramName": [
+      "伊莫基础原型ID",
+      "标签",
+      "运算符",
+      "距离"
+    ],
+    "displayName": "靠近伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "靠近伊莫",
+    "statsType": 1
+  },
+  "NPC_DUEL_CLEAR": {
+    "paramName": [
+      "0不限/NPC对决id",
+      "{0不限/NPC对决变体id, 0不限/NPC对决tagid, 通关次数}",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 390,
+    "displayName": "通关指定NPC对决玩法",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "历史通关过指定NPC对决玩法",
+    "statsType": 1
+  },
+  "NPC_DUEL_CLEAR_SHOWCOUNT_TOTAL": {
+    "paramName": [
+      "0不限/NPC对决id",
+      "0不限/NPC对决变体id,0不限/NPC对决tagid, ",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 403,
+    "displayName": "NPC对决玩法历史通关-可以在判断值取到数量",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "NPC对决玩法历史通关-可以在判断值取到数量",
+    "statsType": 1
+  },
+  "OBTAIN_EGG_ITEMS": {
+    "paramName": [
+      "抢蛋模式ID/0不限模式",
+      "复杂参数",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 339,
+    "displayName": "从抢蛋玩法中获取符合条件的数量（局内，不带出）",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "从抢蛋中获取指定道具X个（局内，不带出）",
+    "statsType": 1
+  },
+  "OBTAIN_REWARD_TOTAL": {
+    "paramName": [
+      "奖励id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 320,
+    "displayName": "领取奖励",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "总计领取过X奖励X次",
+    "statsType": 1
+  },
+  "OFFLINE_TIME": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "天数"
+    ],
+    "trigger": 72,
+    "displayName": "离线X天",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "离线X天",
+    "statsType": 0
+  },
+  "OPENING_INTERFACE": {
+    "trigger": 331,
+    "paramName": [
+      "界面配置表ID",
+      "",
+      "运算符",
+      "状态"
+    ],
+    "displayName": "检查界面是否已开启",
+    "refData": [
+      [
+        "Data.ui_panel_const_data",
+        [
+          "$L#module"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检查界面是否已开启，状态类触发",
+    "statsType": 1
+  },
+  "OPEN_CHEST_BY_STATICID": {
+    "trigger": 64,
+    "paramName": [
+      "static ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "开启宝箱数量（staticId）",
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "开启特定static宝箱数量（个）",
+    "statsType": 1
+  },
+  "OPEN_CHEST_BY_TEMPLATEID": {
+    "trigger": 202,
+    "paramName": [
+      "template ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "开启宝箱数量（templateId）",
+    "refData": [
+      [
+        "Data.chest_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "开启特定template宝箱数量（个）",
+    "statsType": 0
+  },
+  "OPEN_INTERFACE": {
+    "trigger": 24,
+    "paramName": [
+      "界面配置表ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "打开界面",
+    "refData": [
+      [
+        "Data.ui_panel_const_data",
+        [
+          "$L#module"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "打开界面",
+    "statsType": 0
+  },
+  "OUTFIT_COUNT_TOTAL": {
+    "paramName": [
+      "",
+      "套装id，套装id/0不限制",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 343,
+    "displayName": "获取主角套装数量",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "累计符合条件的套装X个",
+    "statsType": 1
+  },
+  "OWN_CORE_CARRY_COUNT": {
+    "paramName": [
+      "",
+      "携带物品质id/0不限制，携带物等级",
+      "运算符",
+      "等級"
+    ],
+    "trigger": 337,
+    "displayName": "拥有符合条件携带物数量",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "拥有X个符合条件的携带物",
+    "statsType": 1
+  },
+  "PETBALL_CHANGEPET": {
+    "trigger": 50,
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "伊莫数量（宠乐球）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "宠乐球中放入伊莫（只）",
+    "statsType": 0
+  },
+  "PET_AI_MSG": {
+    "trigger": 122,
+    "paramName": [
+      "伊莫原型ID（填0则不限）",
+      "消息ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "收到AI消息，原型id版",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "判断某原型id宠物是否收到AI消息",
+    "statsType": 0
+  },
+  "PET_AI_MSG_BASE": {
+    "trigger": 235,
+    "paramName": [
+      "伊莫基础ID（填0则不限）",
+      "消息ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "收到AI消息，基础id版",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "判断某基础id宠物是否收到AI消息",
+    "statsType": 0
+  },
+  "PET_AI_MSG_SPECIAL": {
+    "paramName": [
+      "条目主体base id",
+      "另一个对象的标签信息（不填则不限）",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 425,
+    "displayName": "触发器接收AI消息",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "结合BC节点一起使用（基本上研究手册用）\nhttps://funplus.feishu.cn/wiki/K0mOweEyoiW9fTkZwNTct9H5neh#share-HLI0dQJ3koQhmQx7hzHcJAwCnhb",
+    "statsType": 0
+  },
+  "PET_ATTR_COUNT": {
+    "paramName": [
+      "",
+      "词条数,0全部词条/指定词条稀有度",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 133,
+    "displayName": "拥有对应词条数量的宠物数量",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "拥有对应词条数量的宠物数量",
+    "statsType": 1
+  },
+  "PET_BASE_PROPERTY_LIST": {
+    "trigger": 1007,
+    "paramName": [
+      "宠物原型ID",
+      "六维属性列表",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "宠物六维属性（个体值）",
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "E",
+      "S",
+      "I"
+    ],
+    "desc": "检测宠物属性是否达到目标",
+    "statsType": 0
+  },
+  "PET_BATTLE_TAG": {
+    "paramName": [
+      "",
+      "是否当前宠1/0，战斗定位名",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 209,
+    "displayName": "出战宠符合X战斗定位的数量",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "出战宠符合X战斗定位的数量",
+    "statsType": 1
+  },
+  "PET_CHARACTER_SPECIAL": {
+    "paramName": [
+      "0不限/伊莫模版ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 139,
+    "displayName": "解锁稀有伊莫特性数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有X只伊莫的稀有特性",
+    "statsType": 1
+  },
+  "PET_CHECK_MBTI": {
+    "trigger": 1006,
+    "paramName": [
+      "",
+      "性格列表",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "检查宠物性格",
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "E",
+      "S",
+      "I"
+    ],
+    "desc": "检查宠物性格",
+    "statsType": 1
+  },
+  "PET_CHECK_SCORE_STAGE": {
+    "paramName": [
+      "宠物原型id",
+      "阶段值",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1011,
+    "displayName": "宠物评价",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "宠物评价达到或高于某个阶段",
+    "statsType": 1
+  },
+  "PET_CHEMICAL_REACTIONS": {
+    "trigger": 160,
+    "paramName": [
+      "当前出战伊莫基础原型ID（填0则不限）",
+      "元素反应类型",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "某宠物触发化学反应",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "某宠物触发化学反应",
+    "statsType": 0
+  },
+  "PET_COMBAT_ACTION_TRIGGER": {
+    "paramName": [
+      "宠物ID",
+      "{节点编号，生命周期,次数}",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1010,
+    "displayName": "宠物技能节点",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "使用技能达成技能特殊效果与特性，检测相应消息",
+    "statsType": 1
+  },
+  "PET_CONSUME": {
+    "trigger": 95,
+    "displayName": "提交宠物",
+    "paramName": [
+      "NPC模板ID或staticID",
+      "宠物ID",
+      "运算符",
+      "数量"
+    ],
+    "refData": [
+      {},
+      [
+        "Data.pet_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "paramTooltip": [
+      "用于校验交互的 NPC 是否正确，提交对象必须为该 NPC模板ID或staticID 才能成功提交",
+      "要提交的伊莫的 ID（可多个，用英文逗号分隔，并用大括号包住全部分隔的参数）",
+      "",
+      "要提交的道具数量"
+    ],
+    "desc": "提交宠物",
+    "statsType": 0
+  },
+  "PET_COUNT_LEVELUP": {
+    "paramName": [
+      "等级",
+      "伊莫基础原型ID（填0则不限）",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 445,
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "displayName": "升级N只伊莫（种）至X级",
+    "statsType": 0
+  },
+  "PET_DIE_COUNT_IN_STATE": {
+    "paramName": [
+      "状态（任意0、战斗1、脱战2）",
+      "",
+      "",
+      "死宠数量"
+    ],
+    "trigger": 171,
+    "displayName": "判断特定状态时是否有特定数量的死宠物",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断特定状态时是否有特定数量的死宠物",
+    "statsType": 1
+  },
+  "PET_EDIT_NAME": {
+    "paramName": [
+      "宠物ID",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 1004,
+    "displayName": "交换后首次给宠物改名",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "交换后首次给宠物改名",
+    "statsType": 0
+  },
+  "PET_EVOLUTION": {
+    "trigger": 1005,
+    "paramName": [
+      "进化前谜灵原型ID（填0则不限）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "交换后宠物进化",
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "交换后宠物进化",
+    "statsType": 0
+  },
+  "PET_EVOLVE": {
+    "trigger": 168,
+    "paramName": [
+      "进化前伊莫基础原型ID（填0则不限）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "伊莫进化",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "伊莫进化",
+    "statsType": 0
+  },
+  "PET_FEATURE_UNLOCK": {
+    "trigger": 81,
+    "paramName": [
+      "伊莫基础原型ID",
+      "特性ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "解锁伊莫特性",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "解锁伊莫特性",
+    "statsType": 1
+  },
+  "PET_HATCH_COUNT": {
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 130,
+    "displayName": "孵化获得宠物数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "孵化获得宠物数量",
+    "statsType": 0
+  },
+  "IS_IN_HOME": {
+    "paramName": [
+      "",
+      "",
+      "=",
+      "0不在/1在"
+    ],
+    "trigger": 241,
+    "displayName": "玩家是否在家园中",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家是否在家园中",
+    "statsType": 1
+  },
+  "ITEM_CONSUME": {
+    "trigger": 94,
+    "displayName": "提交道具",
+    "paramName": [
+      "NPC模板ID或staticID",
+      "道具ID",
+      "运算符",
+      "数量"
+    ],
+    "refData": [
+      {},
+      [
+        "Data.item_data",
+        [
+          "$L#itemName"
+        ]
+      ],
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "paramTooltip": [
+      "用于校验交互的 NPC 是否正确，提交对象必须为该NPC模板ID或staticID 才能成功提交",
+      "要提交的道具的 ID（仅可提交一个ID）",
+      "",
+      "要提交的道具数量"
+    ],
+    "desc": "提交道具",
+    "statsType": 0
+  },
+  "JOINED_VOICE_CHANNEL": {
+    "trigger": 165,
+    "displayName": "已加入语音频道",
+    "desc": "已加入语音频道",
+    "statsType": 1
+  },
+  "JOIN_IN_ACTIVITY": {
+    "trigger": 108,
+    "paramName": [
+      "活动ID",
+      "",
+      "运算符",
+      "验证结果（0未参与、1已参与）"
+    ],
+    "displayName": "玩家活动状态判断",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "判断玩家当前是否已参与某个活动",
+    "statsType": 1
+  },
+  "KILL_CREATION": {
+    "trigger": 141,
+    "paramName": [
+      "创生物ID",
+      [
+        "NPC表ID",
+        "元素类型String"
+      ],
+      "运算符",
+      "类型"
+    ],
+    "displayName": "击破召唤物",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "击破召唤物，并分析最终伤害来源",
+    "statsType": 0
+  },
+  "KILL_MONSTER_BY_STATICID": {
+    "trigger": 28,
+    "displayName": "击败怪物（staticId）",
+    "desc": "按staticId击败列表中的全部怪物",
+    "statsType": 0
+  },
+  "KILL_PET_TEMPLATE": {
+    "trigger": 9,
+    "paramName": [
+      "伊莫基础原型ID/0不限",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "击败怪物（基础原型）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "击败指定基础原型的怪物（只）",
+    "statsType": 0
+  },
+  "KILL_PET_TEMPLATEID": {
+    "trigger": 371,
+    "paramName": [
+      "NPC配置表TemplateID/0不限",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "击败怪物（基础原型）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "击败指定基础原型的怪物（只）",
+    "statsType": 0
+  },
+  "KILL_PET_TEMPLATE_BY_ELEMENTAL_RELATION": {
+    "paramName": [
+      "",
+      "{{pet模板ID(可不填elua)}，{puppet模板ID(可不填elua)},puppet稀有标签（掩码（闪光1、头目4）)}",
+      "运算符",
+      "只数"
+    ],
+    "trigger": 397,
+    "displayName": "使用克制元素伊莫击败伊莫",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "使用伊莫击败指定伊莫，使用的伊莫和被击败的伊莫之间拥有的元素存在克制关系",
+    "statsType": 0
+  },
+  "KILL_PET_TEMPLATE_SPECIFIC": {
+    "trigger": 205,
+    "paramName": [
+      "伊莫具体原型ID/0不限",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "击败具体伊莫",
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "击败指定模板的伊莫（只）",
+    "statsType": 0
+  },
+  "KILL_PUPPET_BY_ELEMENT": {
+    "trigger": 159,
+    "paramName": [
+      "目标怪物伊莫基础原型ID（填0则不限）",
+      "技能元素ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "使用特定元素的技能击败特定的怪",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "使用特定元素的技能击败特定的怪",
+    "statsType": 0
+  },
+  "KILL_PUPPET_BY_PET_COMBAT": {
+    "trigger": 39,
+    "paramName": [
+      "Puppet模板ID（填0则不限）",
+      "伊莫基础原型ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "击败怪物（模板）时特定伊莫在场",
+    "refData": [
+      [
+        "Data.puppet_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "击败怪物时某种伊莫在场",
+    "statsType": 0
+  },
+  "KNOWLEDGE_UNLOCK": {
+    "paramName": [
+      "见闻条目ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 427,
+    "displayName": "见闻是否解锁",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定ID见闻是否解锁",
+    "statsType": 1
+  },
+  "KNOWN_PET_NUM": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 166,
+    "displayName": "接触知晓伊莫",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "接触知晓伊莫数量（种）",
+    "statsType": 1
+  },
+  "LARGE_NUMBER_CATCH": {
+    "trigger": 21,
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "大量发生中捕捉",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "大量发生中捕捉（只）",
+    "statsType": 0
+  },
+  "LARGE_NUMBER_CHECK": {
+    "paramName": [
+      "次数类型",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 407,
+    "displayName": "检查滋养次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检查滋养次数",
+    "statsType": 1
+  },
+  "LEARN_SKILL_BY_HAND": {
+    "trigger": 19,
+    "paramName": [
+      "角色技能ID（填0则不限）",
+      "",
+      "运算符",
+      "技能等级"
+    ],
+    "displayName": "手动学习技能",
+    "refData": [
+      [
+        "Data.player_skill_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "手动学习技能（技能树）",
+    "statsType": 1
+  },
+  "LEYLINETREE_ACTIVE": {
+    "trigger": 117,
+    "paramName": [
+      "地脉树ID",
+      "",
+      "运算符",
+      "状态(0未激活,1激活)"
+    ],
+    "displayName": "地脉树激活",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "是否激活地脉树",
+    "statsType": 1
+  },
+  "LEYLINETREE_CAN_LEVELUP": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 181,
+    "displayName": "地脉树是否能升级",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家解锁的地脉树点位足够升级触发",
+    "statsType": 0
+  },
+  "LEYLINETREE_LEVEL": {
+    "paramName": [
+      "地脉树ID",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 135,
+    "displayName": "指定地脉树等级达到",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定地脉树等级达到",
+    "statsType": 1
+  },
+  "LEYLINETREE_NOURISH_NUM": {
+    "paramName": [
+      "地脉树id/0不限",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 225,
+    "displayName": "历史累计大量发生次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "历史大量发生次数",
+    "statsType": 1
+  },
+  "LEYLINETREE_NOURISH_NUM_COUNT": {
+    "paramName": [
+      "地脉树id（0不限制）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 299,
+    "displayName": "大量发生次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "大量发生次数",
+    "statsType": 0
+  },
+  "LEYLINETREE_POINT": {
+    "paramName": [
+      "地脉树ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 147,
+    "displayName": "指定地脉树历史总提交印记数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定地脉树历史总提交印记数量",
+    "statsType": 1
+  },
+  "LOGIN_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 252,
+    "displayName": "玩家登陆",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "玩家登陆",
+    "statsType": 1
+  },
+  "MATCH_GAINS": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 262,
+    "displayName": "本局收获价值",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "本局收获价值",
+    "statsType": 0
+  },
+  "MATCH_GAINS_STATE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 335,
+    "displayName": "本局收获价值",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "本局收获价值",
+    "statsType": 1
+  },
+  "MATCH_GRABEGG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 263,
+    "displayName": "队伍带出伊莫蛋数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "队伍带出伊莫蛋数量",
+    "statsType": 0
+  },
+  "MATCH_GRABEGG_PERSONAL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 477,
+    "displayName": "抢蛋个人累计提交伊莫蛋数量（包括队伍共享）",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋个人累计提交伊莫蛋数量（包括队伍共享）",
+    "statsType": 0
+  },
+  "MAX_MINUS_TEAM_AVG_LEVEL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "等级差值"
+    ],
+    "trigger": 177,
+    "displayName": "出战队伍平均等级小于培养等级上限",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "等级上限减去出战队伍平均等级的差值",
+    "statsType": 1
+  },
+  "MEET_PET": {
+    "trigger": 88,
+    "paramName": [
+      "伊莫基础原型ID",
+      "时间",
+      "运算符",
+      "距离"
+    ],
+    "displayName": "指定时间段靠近伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "靠近伊莫",
+    "statsType": 1
+  },
+  "METEOROLOGY": {
+    "paramName": [
+      "区块id",
+      "天象类型",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 201,
+    "displayName": "指定区域开始某种天象",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "指定区域开始某种天象",
+    "statsType": 0
+  },
+  "METEOROLOGY_EXPERIENCE": {
+    "paramName": [
+      "区块id",
+      "天象类型",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 326,
+    "displayName": "经历某种天象",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "玩家在指定区域经历某种天象X次（别人的也算）",
+    "statsType": 0
+  },
+  "MOBILITY_PET_STATE": {
+    "paramName": [
+      "",
+      "1攀爬宠，2滑翔宠，3游泳宠",
+      "运算符",
+      "0未装配/1已装配"
+    ],
+    "trigger": 430,
+    "displayName": "探索宠物栏位上阵状态",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "玩家探索宠物栏位的上阵情况，判断是否装配上阵宠物",
+    "statsType": 1
+  },
+  "MYSTERY_EGG_CAPTURE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 266,
+    "displayName": "捕捉迷之蛋",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "捕捉迷之蛋",
+    "statsType": 0
+  },
+  "MYSTERY_EGG_ESCAPE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 264,
+    "displayName": "迷之蛋逃离",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "迷之蛋逃离",
+    "statsType": 0
+  },
+  "PET_TMPL_NUM_LEVEL": {
+    "paramName": [
+      "",
+      "等级要求",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 47,
+    "displayName": "伊莫种类（等级）",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "达到特定等级的伊莫种类（种）",
+    "statsType": 1
+  },
+  "PET_TMPL_SKILL_NUM": {
+    "trigger": 46,
+    "paramName": [
+      "伊莫基础原型ID",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "伊莫种类（技能数量）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "学会特定技能数量的伊莫（只）",
+    "statsType": 1
+  },
+  "PET_TRAIT_UNLOCK": {
+    "trigger": 97,
+    "paramName": [
+      "伊莫基础原型ID",
+      "特征ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "解锁伊莫特征",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "解锁伊莫特征",
+    "statsType": 1
+  },
+  "PET_TRIGGER_TARGET_CP_VALUE": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "cp值",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 1021,
+    "displayName": "CP值是否达到x",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "CP值是否达到x",
+    "statsType": 1
+  },
+  "PET_TRIGGER_TARGET_HAS_ELEMENT": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "元素类型id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 1018,
+    "displayName": "是否有x元素类型",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "是否有x元素类型",
+    "statsType": 1
+  },
+  "PET_TRIGGER_TARGET_HAS_EXPLORE": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "{探索能力}",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 1020,
+    "displayName": "是否有x探索能力",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "是否有x探索能力",
+    "statsType": 1
+  },
+  "PET_TRIGGER_TARGET_IS_FORM": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "形态id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 1019,
+    "displayName": "是否x形态",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "是否x形态",
+    "statsType": 1
+  },
+  "PET_TRIGGER_TARGET_LAB": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "标签值",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 1022,
+    "displayName": "指定x宠物lab达到y",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "指定x宠物lab达到y",
+    "statsType": 1
+  },
+  "PET_UPGRADE_STAR": {
+    "paramName": [
+      "",
+      "伊莫原型id/0不限,突破阶数",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 319,
+    "displayName": "伊莫突破至X星级",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "突破至X星级的伊莫数量X个",
+    "statsType": 1
+  },
+  "PHOTO_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 223,
+    "displayName": "拍照数量（特训专用 状态类）",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "拍照数量",
+    "statsType": 1
+  },
+  "PLAYER_BEHAVIOR": {
+    "trigger": 98,
+    "paramName": [
+      "",
+      "行为名",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "玩家完成特定行为",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "S",
+      "S",
+      "I"
+    ],
+    "desc": "进行特定动作次数",
+    "statsType": 0
+  },
+  "PLAYER_BODY_TYPE": {
+    "trigger": 143,
+    "paramName": [
+      "性别(1女2男)",
+      "体型(1少2成)",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "判断玩家体型",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "体型标识，分别判断性别和体型，填0任意",
+    "statsType": 1
+  },
+  "PLAYER_HP_PERCENT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "血量值百分比(0-100)"
+    ],
+    "trigger": 172,
+    "displayName": "判断玩家血量百分比",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断玩家血量百分比",
+    "statsType": 1
+  },
+  "PLAYER_IN_BEHAVIOR": {
+    "trigger": 99,
+    "paramName": [
+      "",
+      "行为名",
+      "运算符",
+      "验证结果（0不匹配、1匹配）"
+    ],
+    "displayName": "玩家处于特定行为",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "S",
+      "S",
+      "I"
+    ],
+    "desc": "检查玩家是否处于指定行为",
+    "statsType": 2
+  },
+  "PLAYER_IS_CONTROL_PET": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "人形态/附身状态"
+    ],
+    "trigger": 195,
+    "displayName": "玩家是附身状态还是人形态",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家是附身状态还是人形态(1代表附身，0代表分离)",
+    "statsType": 1
+  },
+  "PLAYER_LEVEL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 14,
+    "displayName": "玩家等级",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家等级",
+    "statsType": 1
+  },
+  "PLAYER_RESPAWN_BONFIRE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 220,
+    "displayName": "玩家在篝火复活",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家在篝火复活",
+    "statsType": 0
+  },
+  "PLAYER_RESPAWN_CAMP": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 192,
+    "displayName": "玩家在营地复活判断",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家在营地复活判断",
+    "statsType": 0
+  },
+  "PLAYER_STATE": {
+    "trigger": 83,
+    "paramName": [
+      "",
+      "状态名",
+      "运算符",
+      "验证结果（0不匹配、1匹配）"
+    ],
+    "displayName": "角色状态冲突判断",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "S",
+      "S",
+      "I"
+    ],
+    "desc": "角色状态冲突判断",
+    "statsType": 1
+  },
+  "PLAYER_TITLE_UP": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 196,
+    "displayName": "玩家晋升头衔",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家晋升头衔",
+    "statsType": 0
+  },
+  "PLAY_BOSS_RUSH": {
+    "paramName": [
+      "BOSS ID/0不限",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 321,
+    "displayName": "挑战全息协战",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "挑战X次全息协战",
+    "statsType": 0
+  },
+  "POSSESSION_KILL_MONSTER": {
+    "trigger": 16,
+    "paramName": [
+      "目标伊莫基础原型ID（填0则不限）",
+      "我的伊莫基础原型ID（填0则不限）",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "附身状态击败怪物",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "附身状态下击败怪物",
+    "statsType": 0
+  },
+  "POS_SPHERE": {
+    "trigger": 5,
+    "displayName": "球形区域",
+    "desc": "球形区域",
+    "statsType": 2
+  },
+  "PUPPET_HP_LE_PERCENT": {
+    "paramName": [
+      "puppetId",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 424,
+    "displayName": "怪物被砍掉血量百分比",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "怪物被砍掉血量百分比",
+    "statsType": 1
+  },
+  "PVP_COUNT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 137,
+    "displayName": "完成X次竞技场战斗",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成X次竞技场战斗",
+    "statsType": 0
+  },
+  "QUEST_ACCEPTED_DAY": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 265,
+    "displayName": "任务接取天数",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "任务接取天数",
+    "statsType": 0
+  },
+  "QUEST_CLUE_ACCEPT_CHECK_BY_CHAPTER": {
+    "paramName": [
+      "章ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 444,
+    "displayName": "本章有任务已接取或有线索被接取且揭示",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "按章打组，本章已有父任务被接取或线索被接取且揭示，则判定通过",
+    "statsType": 1
+  },
+  "QUEST_STATE": {
+    "trigger": 61,
+    "paramName": [
+      "目标（任务）ID",
+      "",
+      "运算符",
+      "状态(1可领 2已领 3未交 4已交 5失败 "
+    ],
+    "displayName": "任务状态",
+    "refData": [
+      [
+        "Data.quest.quest_base",
+        [
+          "$L#title"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "L",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "任务的状态",
+    "statsType": 1
+  },
+  "SIMULATION_TRAIN_LEVEL": {
+    "paramName": [
+      "0不限/肉鸽关卡副本编号id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 217,
+    "displayName": "通过某个爬塔关卡",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "通过某个爬塔关卡",
+    "statsType": 1
+  },
+  "SIMULATION_TRAIN_PASS": {
+    "paramName": [
+      "",
+      "关卡组id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 323,
+    "displayName": "通关爬塔关卡",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "通关{多个关卡id内任一关卡}X次",
+    "statsType": 1
+  },
+  "SIMULATION_TRAIN_PLAY": {
+    "paramName": [
+      "",
+      "关卡组id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 324,
+    "displayName": "挑战爬塔关卡",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "挑战{多个关卡id内任一关卡}X次",
+    "statsType": 1
+  },
+  "SIMULATION_TRAIN_UNLOCKED_MERITS": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 340,
+    "displayName": "在爬塔玩法中解锁X个训练精通节点",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "在爬塔玩法中解锁X个训练精通节点",
+    "statsType": 1
+  },
+  "SKILL_HIT_ENEMY": {
+    "trigger": 126,
+    "paramName": [
+      "伊莫基础原型ID",
+      "{技能ID，命中目标状态，攻击位置}",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "技能命中敌人",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "使用技能命中敌人",
+    "statsType": 0
+  },
+  "SKILL_LEARN_COUNT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 127,
+    "displayName": "已学习技能数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "已学习技能数量",
+    "statsType": 1
+  },
+  "SPACE_TYPE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "当前SPACE_TYPE"
+    ],
+    "trigger": 245,
+    "displayName": "判断SPACE_TYPE",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断SPACE_TYPE",
+    "statsType": 1
+  },
+  "SPAWNER_DEATH": {
+    "trigger": 29,
+    "displayName": "static死亡",
+    "paramName": [
+      "StaticID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "preRefData": [
+      [
+        "Data.scene_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "实体死亡(是staticID！不是spawner！）",
+    "statsType": 0
+  },
+  "SPAWNER_DONE": {
+    "trigger": 247,
+    "paramName": [
+      "SpawnerID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "真·spawner死亡",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "实体死亡",
+    "statsType": 0
+  },
+  "SPECIAL_PET_TYPE": {
+    "paramName": [
+      "",
+      "特殊伊莫类型1闪耀2高阶",
+      "运算符",
+      "1/0"
+    ],
+    "trigger": 191,
+    "displayName": "玩家携带特殊伊莫类型",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "玩家携带特殊伊莫类型",
+    "statsType": 1
+  },
+  "SPECIAL_TRAIN_FINISH": {
+    "paramName": [
+      "特训任务组id",
+      "任务阶段",
+      "=",
+      "1已完成/2未完成"
+    ],
+    "trigger": 226,
+    "displayName": "特定特训计划任务完成判断",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "特定特训计划任务完成判断",
+    "statsType": 1
+  },
+  "SPECIAL_TRAIN_REPORT_TIMES": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 231,
+    "displayName": "累计汇报次数（特训专用）",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计汇报次数（特训专用）",
+    "statsType": 1
+  },
+  "SPECIAL_TRAIN_REQUIRED_TASK": {
+    "paramName": [
+      "章节id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 348,
+    "displayName": "完成特训章节必修任务数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成特训特定章节必修任务数X个",
+    "statsType": 1
+  },
+  "SP_POWER_FULL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "秒数"
+    ],
+    "trigger": 228,
+    "displayName": "SP能量值满达到X秒",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检测SP能量满达到X秒",
+    "statsType": 1
+  },
+  "STATE_COMBAT": {
+    "paramName": [
+      "0不限 1单人 2go模式 3附身态",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 77,
+    "displayName": "X模式下进入战斗",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "X状态下进入战斗",
+    "statsType": 0
+  },
+  "STUN_ON_COLLISION": {
+    "trigger": 153,
+    "paramName": [
+      "伊莫基础原型ID",
+      "单位阵营",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "触发撞墙机制",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用某个宠物触发撞击墙壁机制",
+    "statsType": 0
+  },
+  "USE_PET_SKILL": {
+    "trigger": 38,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "伊莫技能ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "使用伊莫技能",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Common.Data.SkillBPData.ability_BP",
+        [
+          "$L#name",
+          "$L#desc"
+        ]
+      ],
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "使用伊莫技能",
+    "statsType": 0
+  },
+  "USE_PET_SPECIAL_SKILL": {
+    "trigger": 169,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "使用伊莫稀有技能",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用伊莫稀有技能",
+    "statsType": 0
+  },
+  "USE_PLAYER_SKILL": {
+    "trigger": 42,
+    "paramName": [
+      "角色技能ID（填0则不限）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "使用角色技能",
+    "refData": [
+      [
+        "Data.player_skill_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用角色技能（蓝图id）",
+    "statsType": 0
+  },
+  "USE_PLAYER_SKILL_TREE": {
+    "trigger": 62,
+    "paramName": [
+      "角色技能树节点ID（填0则不限）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "使用角色技能（技能树）",
+    "refData": [
+      [
+        "Data.player_skill_tree_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用角色技能（技能树节点id）",
+    "statsType": 0
+  },
+  "USE_SKILLPOINT": {
+    "paramName": [
+      "系编号",
+      "技能点ID",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 56,
+    "displayName": "主角技能树某系已使用点数",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "主角技能树某系已使用点数",
+    "statsType": 1
+  },
+  "VEHICLE_INTERACTION": {
+    "trigger": 188,
+    "displayName": "载具蒲公英骑乘状态",
+    "desc": "载具蒲公英骑乘状态",
+    "statsType": 1
+  },
+  "WAITUNTIL": {
+    "trigger": 31,
+    "displayName": "等待条件满足",
+    "desc": "等待condition为true",
+    "statsType": 0
+  },
+  "WEATHER": {
+    "paramName": [
+      "区块id",
+      "天气类型",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 200,
+    "displayName": "指定区域开始某种天气",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "指定区域开始某种天气",
+    "statsType": 0
+  },
+  "WIN_BOSS_RUSH": {
+    "paramName": [
+      "BOSS ID/0不限",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 322,
+    "displayName": "完成全息协战",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "在全息协战中胜利X次",
+    "statsType": 0
+  },
+  "homeCampAddOnGainSeconds": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 417,
+    "displayName": "累计在驿站露台载具上交互X秒",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计在驿站露台载具上交互X秒",
+    "statsType": 0
+  },
+  "OPEN_CHEST": {
+    "paramName": [
+      "宝箱标记（0则不限，不超过2位）",
+      "品质",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 12,
+    "displayName": "开启宝箱数量",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "开启宝箱数量（个）",
+    "statsType": 1
+  },
+  "USE_PET_EXPLORE_SKILL": {
+    "trigger": 84,
+    "displayName": "伊莫探索能力",
+    "desc": "使用特定伊莫的行动能力",
+    "statsType": 1
+  },
+  "USE_ITEM_TOTAL": {
+    "trigger": 357,
+    "paramName": [
+      "道具ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "使用道具",
+    "refData": [
+      [
+        "Data.item_data",
+        [
+          "$L#itemName"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用道具（除分解外的消耗都算）",
+    "statsType": 1
+  },
+  "USE_ITEM_BY_STYPE": {
+    "paramName": [
+      "使用子类型（sType）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 34,
+    "displayName": "使用道具（类型）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用指定使用子类型（sType）的道具（个）",
+    "statsType": 0
+  },
+  "USE_ITEM": {
+    "trigger": 3,
+    "paramName": [
+      "道具ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "使用道具",
+    "refData": [
+      [
+        "Data.item_data",
+        [
+          "$L#itemName"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用道具（除分解外的消耗都算）",
+    "statsType": 0
+  },
+  "USE_EXPLORE_SKILL": {
+    "paramName": [
+      "1攀爬 2滑翔 3游泳",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 37,
+    "displayName": "使用探索技能",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用探索技能",
+    "statsType": 0
+  },
+  "USE_CHAIN_SKILL_KILL_PUPPET": {
+    "trigger": 41,
+    "paramName": [
+      "伊莫基础原型ID",
+      "连携数",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "击败怪物（连携技）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "使用连携技击败怪物",
+    "statsType": 0
+  },
+  "UPGRADE_CORE_QUALITY_COUNT": {
+    "paramName": [
+      "品质id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 315,
+    "displayName": "强化特定品质携带物",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "强化特定品质携带物次数",
+    "statsType": 1
+  },
+  "UNLOCK_DIALOGUE_GRAPH": {
+    "trigger": 104,
+    "displayName": "完成对话图",
+    "paramName": [
+      "对话图ID",
+      "结束分支(默认0)",
+      "运算符",
+      "数量"
+    ],
+    "refData": [
+      [
+        "Editor.Data.dialogue_graph_editor_data",
+        [
+          "$L#desc"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "paramTooltip": [
+      "",
+      "注意对话图中的完成节点，节点上配置的值等于该值时，当前目标才会将对话图计作完成了一次",
+      "",
+      "对话图要完成的次数"
+    ],
+    "desc": "完成某个对话图ID",
+    "statsType": 0
+  },
+  "UNLOCK_DIALOGUEIDPRO": {
+    "trigger": 69,
+    "paramName": [
+      "脚本动画ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "达成dialoguePro工具输出的脚本动画",
+    "refData": [
+      [
+        "Data.dialogue_data",
+        [
+          "$L#desc"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "达成dialoguePro工具输出的脚本动画",
+    "statsType": 0
+  },
+  "UNLOCK_DIALOGUEID": {
+    "trigger": 44,
+    "paramName": [
+      "对白ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "达成对白",
+    "refData": [
+      [
+        "Data.npc_dialogue_data",
+        {}
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "达成对白",
+    "statsType": 0
+  },
+  "UNLOCKED_MAP_MARK": {
+    "trigger": 54,
+    "paramName": [
+      "标记默认信息配置表ID（填0则不限）",
+      "地图ID（填0则不限）",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "激活地图标记数量",
+    "refData": [
+      [
+        "Data.default_map_mark_data",
+        {}
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "激活的地图标记（个）",
+    "statsType": 1
+  },
+  "UNDERGROUND": {
+    "trigger": 125,
+    "paramName": [
+      "目标属性（0自己，1友方，2敌人）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "处于遁地状态",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "宠物处于遁地状态",
+    "statsType": 1
+  },
+  "TWIN_PET_CHOICE": {
+    "trigger": 118,
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "选择(0无/1X/2Y)"
+    ],
+    "displayName": "判断双子宠物选择分支",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断玩家宠物选择分支",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_USE_PET_ULTIMATE_SKILL": {
+    "paramName": [
+      "宠物ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 287,
+    "displayName": "使用宠物必杀技能",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "简单条件参数：伊莫原型ID（填0则不限）",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_TIME_TOKEN": {
+    "paramName": [
+      "时间令牌表ID",
+      "",
+      "运算符",
+      "0未触发/1触发"
+    ],
+    "trigger": 437,
+    "displayName": "限时时间令牌触发",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "时间令牌表对应ID是否触发",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_TAKE_PHOTO_PET": {
+    "paramName": [
+      "0不限/伊莫原型id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 365,
+    "displayName": "完成拍照包含任意伊莫的照片",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成x次拍照包含任意伊莫的照片",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_SPENDING": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "累计付费金额"
+    ],
+    "trigger": 458,
+    "displayName": "玩家累计付费金额",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家累计付费金额",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_SHOP_BUYITEM": {
+    "paramName": [
+      "商店ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 368,
+    "displayName": "任意商店购买x次道具",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "任意商店购买x次道具",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_SERVER": {
+    "paramName": [
+      "",
+      "服务器ID",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 457,
+    "displayName": "玩家所在服务器",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "玩家所在服务器",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_SANDBOX_PHASE": {
+    "trigger": 101,
+    "paramName": [
+      "沙盒ID",
+      "阶段ID",
+      "运算符",
+      "阶段值"
+    ],
+    "displayName": "玩家完成沙盒阶段",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "玩家完成沙盒阶段",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_ROGUE_PASS_LEVEL_SEPCBAT": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "关卡id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 373,
+    "displayName": "指定宠物出战的情况下, 通关x次全息训练指定关卡",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "指定宠物出战的情况下, 通关x次全息训练指定关卡",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_ROGUE_EXCHANGE_BOX_COUNT": {
+    "paramName": [
+      "爬塔关卡id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 378,
+    "displayName": "爬塔体力兑换次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "爬塔体力兑换次数",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_ROB_EGG_LEVEL": {
+    "paramName": [
+      "段位id/0不限",
+      "段位等级",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 392,
+    "displayName": "抢蛋段位",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "抢蛋玩法达到指定段位",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_ROBEGG_TALENT_UNLOCK": {
+    "paramName": [
+      "抢蛋天赋id",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 411,
+    "displayName": "解锁指定抢蛋天赋",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "解锁指定抢蛋天赋",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_ROBEGG_RANK_STAR": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 453,
+    "displayName": "指定抢蛋段位到达x星",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "指定抢蛋段位到达x星",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_ROBEGG_RAINBOW_ITEM_COUNT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 429,
+    "displayName": "局内带出琉璃品质道具数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "局内带出琉璃品质道具数量",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_ROBEGG_PLUND": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 366,
+    "displayName": "参加抢蛋大作战并搜刮x次物资",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "参加抢蛋大作战并搜刮x次物资",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_RESIDENCE_COUNTRY": {
+    "paramName": [
+      "",
+      "国家ID",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 456,
+    "displayName": "玩家当前所在国家",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "玩家当前所在国家",
+    "statsType": 1
+  },
+  "ACTIVATE_CORE_CARRY_EFFECT": {
+    "paramName": [
+      "",
+      "激活能量阶数",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 338,
+    "displayName": "拥有X个激活阶段效果的携帶物",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "拥有X个激活某阶效果的携带物",
+    "statsType": 1
+  },
+  "ACTIVATE_SPECIFIC_MAP_MARKER": {
+    "paramName": [
+      "地图标记staticid",
+      "",
+      "=",
+      "0未激活/1已激活"
+    ],
+    "trigger": 232,
+    "displayName": "激活特定地图标记",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "激活特定地图标记",
+    "statsType": 1
+  },
+  "ACTIVITY_PHASE": {
+    "trigger": 107,
+    "paramName": [
+      "活动ID",
+      "阶段ID",
+      "运算符",
+      "验证结果（0关闭、1开启）"
+    ],
+    "displayName": "活动阶段判断",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "判断服务器当前是否处于某个活动阶段",
+    "statsType": 1
+  },
+  "ACTIVITY_QUEST_STATE": {
+    "paramName": [
+      "目标（任务）ID",
+      "",
+      "运算符",
+      "状态（1未完成 2完成可领取 3完成已领取 4完成已邮件发奖励）"
+    ],
+    "trigger": 442,
+    "paramType": [
+      "L",
+      "",
+      "S",
+      "I"
+    ],
+    "displayName": "活动任务状态",
+    "statsType": 1
+  },
+  "ADD_BUFF": {
+    "trigger": 142,
+    "paramName": [
+      "伊莫基础原型ID",
+      "{目标属性（0自己，1友方，2敌人），技能ID，状态ID}",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "为目标添加buff",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "为目标添加buff",
+    "statsType": 0
+  },
+  "ADD_RUNE_COUNT": {
+    "paramName": [
+      "符文id/0不限制",
+      "符文道具品质(elua,0不限)",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 313,
+    "displayName": "添加符文",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "给携带物添加X个符文",
+    "statsType": 0
+  },
+  "ADMISSION_DAY": {
+    "trigger": 255,
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "天数"
+    ],
+    "displayName": "加入学院天数",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "头衔0升1的时间为准(第一次穿过4点算满一天)，日刷新时间点同开服天数",
+    "statsType": 1
+  },
+  "ANGLE_OF_VIEW": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "角度"
+    ],
+    "trigger": 78,
+    "displayName": "检测视线",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检测视线变动",
+    "statsType": 1
+  },
+  "APPEARANCE_SHOW_CHANGE_PLAYER": {
+    "paramName": [
+      "外观类型（0不限,1=饰品,2=服装,3=发型,4=妆容)",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 383,
+    "displayName": "主角进行X次换装",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "主角进行X次换装",
+    "statsType": 0
+  },
+  "APPEARNCE_COUNT": {
+    "paramName": [
+      "0全部/1主角时装/2伊莫时装",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 128,
+    "displayName": "新增外观数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "新增外观数量",
+    "statsType": 0
+  },
+  "APPEARNCE_COUNT_TOTAL": {
+    "paramName": [
+      "0全部/1主角时装/2伊莫时装",
+      "外观类型（0不限,1=饰品,2=服装,3=发型,4=妆容)",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 311,
+    "displayName": "获取外观数量",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "累计获取外观X个",
+    "statsType": 1
+  },
+  "AREA_CHECK": {
+    "paramName": [
+      "区域id",
+      "",
+      "运算符",
+      "验证结果（0不符合、1符合）"
+    ],
+    "trigger": 402,
+    "displayName": "区域检测",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "区域检测",
+    "statsType": 1
+  },
+  "ARRIVE_HOME_CAR_POSITION": {
+    "paramName": [
+      "",
+      "点位类型,判断半径",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 297,
+    "displayName": "抵达房车营地位置",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "抵达房车营地位置",
+    "statsType": 1
+  },
+  "ATTACK_PET_DRILLING": {
+    "paramName": [
+      "0不限/宠物id",
+      "标签",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 222,
+    "displayName": "把特定宠物从钻地状态震出",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "把特定宠物从钻地状态震出",
+    "statsType": 0
+  },
+  "ATTRIBUTE_COMPARE": {
+    "paramName": [
+      "",
+      "我方携带宠属性ID,敌方属性ID,百分比",
+      "运算符",
+      "1/0"
+    ],
+    "trigger": 208,
+    "displayName": "我方携带宠X属性<敌方Y属性的百分比",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "我方携带宠X属性的值<敌方Y属性的值的百分比",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_REPORT_CATCH_TOTAL_COUNT": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 374,
+    "displayName": "累计汇报宠物数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计汇报宠物数量",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_REGISTRATION_COUNTRY": {
+    "paramName": [
+      "",
+      "国家ID",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 455,
+    "displayName": "玩家注册国家",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "玩家注册国家",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_PKG_CHANNEL": {
+    "paramName": [
+      "",
+      "渠道号pkg channel",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 426,
+    "displayName": "玩家渠道判断",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "玩家渠道判断",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_PET_UPGRADE_STAR_COUNT": {
+    "paramName": [
+      "0不限/伊莫原型id",
+      "突破阶数",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 379,
+    "displayName": "将指定宠物突破至x星次数",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "将指定宠物突破至x星次数",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_NPC_DUEL_FINISH_COUNT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 416,
+    "displayName": "累计完成x次NPC对决",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计完成x次NPC对决",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_NOT_PKG_CHANNEL": {
+    "paramName": [
+      "",
+      "渠道号pkg channel",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 451,
+    "displayName": "判断玩家不是指定某些渠道",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "判断玩家不是指定某些渠道",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_MONTHCARD_ACTIVATED": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "状态"
+    ],
+    "trigger": 389,
+    "displayName": "月卡是否激活",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检测是否为月卡用户",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_LEYLINETREE_UP_MAPBLOCK": {
+    "paramName": [
+      "活动id",
+      "地块id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 398,
+    "displayName": "进行x次指定y区域的滋养生态",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "进行x次指定y区域的滋养生态",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_LEYLINETREE_UP_CAPTURE": {
+    "paramName": [
+      "活动id",
+      "地块id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 399,
+    "displayName": "在指定x区域地脉花开启滋养生态后，捕捉y只宠物",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "在指定x区域地脉花开启滋养生态后，捕捉y只宠物",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_KILL_LAB_PET_SEPCBAT": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 372,
+    "displayName": "指定宠物出战的情况下，进行x次挑战某lab并获胜",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "指定宠物出战的情况下，进行x次挑战某lab并获胜",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_INTERACT_NPC": {
+    "paramName": [
+      "NPCid",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 436,
+    "displayName": "和id=X的NPC互动次数（仅活动用！！）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "和id=X的NPC互动次数（仅活动用！！）",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_HOME_SEASON_MUTATION_COLLECT_NUM": {
+    "paramName": [
+      "家园赛季id",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 467,
+    "displayName": "家园赛季点亮N个变异植物图鉴",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园赛季点亮N个变异植物图鉴",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_HOME_PLACE_FURNITURE_COUNT": {
+    "paramName": [
+      "家具ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 375,
+    "displayName": "在家园中进行x次家具摆放",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "在家园中进行x次家具摆放",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_HOME_PALCE_PET_COUNT": {
+    "paramName": [
+      "宠物ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 376,
+    "displayName": "在家园中进行x次放置宠物",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "在家园中进行x次放置宠物",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_HOME_GREET": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 422,
+    "displayName": "和伊莫打招呼",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "和伊莫打招呼",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_HOME_DEMO_MINE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 423,
+    "displayName": "自己或伊莫去采矿",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "自己或伊莫去采矿",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_HOME_COMFORT_VALUE": {
+    "paramName": [
+      "区域ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 428,
+    "displayName": "家园区域舒适度",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园指定区域舒适度达到X",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_HOME_CHAT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 421,
+    "displayName": "和伊莫聊聊天",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "和伊莫聊聊天",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_GROUP_TOUR_ACTIVATE_TIMES_COUNT": {
+    "trigger": 377,
+    "desc": "开启同游次数",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "displayName": "开启同游次数",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_GLOBAL_ACTIVITY_PROGRESS": {
+    "paramName": [
+      "活动id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 435,
+    "displayName": "XX活动全局进度达到N",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "XX活动全局进度达到N",
+    "statsType": 1
+  },
+  "TRIGGER_TARGET_GAIN_BADGE_MEDAL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 414,
+    "displayName": "当前获取的赛季奖章数量（会统计超过周上限获取的数量）",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "当前获取的赛季奖章数量（会统计超过周上限获取的数量）",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_EARTHTREE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 369,
+    "displayName": "地脉树注入x次琥珀",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "地脉树注入x次琥珀",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_COLLECT_ITEM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 367,
+    "displayName": "收集采集物",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "收集x个采集物",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_CATCH_PETGROUP_COUNT": {
+    "paramName": [
+      "",
+      "宠物id组",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 294,
+    "displayName": "捉到指定模板宠物组（只）",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "捉到指定模板宠物组（只）",
+    "statsType": 0
+  },
+  "TRIGGER_TARGET_BP_Level": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 382,
+    "displayName": "目前BP等级",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "目前BP等级",
+    "statsType": 1
+  },
+  "SPECIAL_TRAIN_CHAPTER_FINISH": {
+    "paramName": [
+      "章节id",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 298,
+    "displayName": "完成并领奖特训计划章节奖励",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成并领奖特训计划章节奖励",
+    "statsType": 1
+  },
+  "SHOP_BUY": {
+    "paramName": [
+      "货币ID",
+      "商店ID",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 129,
+    "displayName": "在指定商店消费的金币数量",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "在指定商店消费的金币数量",
+    "statsType": 0
+  },
+  "SERVER_OPEN_DAY": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "开服天数（首日算0）"
+    ],
+    "trigger": 206,
+    "displayName": "当前开服天数（开服首日算0）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "当前开服天数（开服首日算0）",
+    "statsType": 1
+  },
+  "SEPARATE_KILL_MONSTER": {
+    "trigger": 15,
+    "paramName": [
+      "目标伊莫基础原型ID（填0则不限）",
+      "我的伊莫基础原型ID（填0则不限）",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "分离状态击败怪物",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "分离状态下击败怪物",
+    "statsType": 0
+  },
+  "SEASON_COIN_NUM_SUM": {
+    "paramName": [
+      "0不限制",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 462,
+    "displayName": "获得N个赛季代币（所有赛季均计入）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "获得N个赛季代币（所有赛季均计入）",
+    "statsType": 0
+  },
+  "SCENE_ID": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "当前场景ID"
+    ],
+    "trigger": 173,
+    "displayName": "判断场景ID",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断场景ID",
+    "statsType": 1
+  },
+  "SANDBOX_SIGNAL_ID": {
+    "trigger": 156,
+    "paramName": [
+      "伊莫基础原型ID",
+      "消息ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "收到sandbox信号",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "收到sandbox信号",
+    "statsType": 0
+  },
+  "SANDBOX_QUEST_EVENT": {
+    "paramName": [
+      "sandboxId",
+      "eventId",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 360,
+    "displayName": "完成任务事件",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "完成任务事件",
+    "statsType": 1
+  },
+  "SANDBOX_IN": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "切换次数"
+    ],
+    "trigger": 186,
+    "displayName": "进入指定sandbox玩法",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "进入指定sandbox玩法",
+    "statsType": 0
+  },
+  "ROGUE_TALENT_TREE_NODE": {
+    "paramName": [
+      "解锁等级",
+      "",
+      "=",
+      "天赋结点状态1解锁 0未解锁"
+    ],
+    "trigger": 227,
+    "displayName": "爬塔天赋树节点解锁",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "爬塔天赋树节点解锁",
+    "statsType": 1
+  },
+  "ROGUE_EXCHANGE_BOX": {
+    "paramName": [
+      "爬塔关卡id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 325,
+    "displayName": "完成爬塔体力兑换",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成X次爬塔体力兑换",
+    "statsType": 1
+  },
+  "ROGUE_EXCHANGE": {
+    "paramName": [
+      "爬塔关卡id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 242,
+    "displayName": "完成X次指定爬塔关卡体力兑换",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成X次指定爬塔关卡体力兑换",
+    "statsType": 1
+  },
+  "ROBEGG_RETREAT_COUNT": {
+    "paramName": [
+      "抢蛋副本ID/0不限",
+      "难度等级",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 328,
+    "displayName": "在抢蛋玩法中撤离",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "在抢蛋大作战玩法中撤离X次",
+    "statsType": 1
+  },
+  "ROBEGG_PLAY_COUNT": {
+    "paramName": [
+      "地图ID/0不限",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 329,
+    "displayName": "参与抢蛋大作战",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "参与抢蛋大作战中的X地图玩法X次",
+    "statsType": 1
+  },
+  "ROBEGG_COLLECT_ITEM_POINT_SUM": {
+    "paramName": [
+      "图鉴组id",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 468,
+    "displayName": "图鉴组X的藏品积分达到N",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "图鉴组X的藏品积分达到N",
+    "statsType": 1
+  },
+  "RIFT_REWARD_CHECK": {
+    "paramName": [
+      "NPCid",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 420,
+    "displayName": "裂隙玩法是否可以领奖",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "裂隙玩法是否可以领奖",
+    "statsType": 1
+  },
+  "RESEARCH_PROGRESS_PET": {
+    "trigger": 10,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "研究等级",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "伊莫种类（研究等级）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "伊莫达到研究等级的数量（种）",
+    "statsType": 1
+  },
+  "REPORT_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 229,
+    "displayName": "待汇报的宠物数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "待汇报的宠物数量达到X只",
+    "statsType": 1
+  },
+  "REPORT_EXP_LEVELUP": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "状态"
+    ],
+    "trigger": 230,
+    "displayName": "待汇报可获得的经验足够升级",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "待汇报可获得的经验足够升级",
+    "statsType": 1
+  },
+  "REPORT_COLLECT_SCORE": {
+    "paramName": [
+      "板块ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 170,
+    "displayName": "本国待汇报的点数+已有点数超过一定的值",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "本国待汇报的点数+已有点数超过一定的值",
+    "statsType": 1
+  },
+  "REPORT_CATCH_RESULTS_TOTAL": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 355,
+    "displayName": "累计汇报伊莫数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计汇报伊莫数量（只）",
+    "statsType": 1
+  },
+  "REPORT_CATCH_RESULTS": {
+    "trigger": 23,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "汇报捕捉成果",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "汇报捕捉成果（只）",
+    "statsType": 0
+  },
+  "REDUCE_MONEY_TOTAL": {
+    "paramName": [
+      "货币ID（invId参数为0且commonMoney参数为1的道具）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 356,
+    "displayName": "历史累计消耗货币",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "历史累计消耗货币",
+    "statsType": 1
+  },
+  "REDUCE_MONEY": {
+    "paramName": [
+      "货币ID（invId参数为0且commonMoney参数为1的道具）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 55,
+    "displayName": "消耗货币",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "消耗货币",
+    "statsType": 0
+  },
+  "REDUCE_ENERGY_TOTAL": {
+    "paramName": [
+      "源能id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 317,
+    "displayName": "消耗体力",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计消耗体力X点",
+    "statsType": 1
+  },
+  "REDUCE_ENERGY": {
+    "paramName": [
+      "源能id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 318,
+    "displayName": "消耗体力",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "消耗体力数量",
+    "statsType": 0
+  },
+  "RECOVER_CASTER_NUM": {
+    "paramName": [
+      "捕捉球id/0不限",
+      "标签",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 224,
+    "displayName": "回收捕捉球数量（特训专用 状态类）",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "回收捕捉球数量",
+    "statsType": 1
+  },
+  "RECEIVE_REWARD": {
+    "paramName": [
+      "奖励ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 76,
+    "displayName": "领取奖励",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "领取固定奖励",
+    "statsType": 0
+  },
+  "READ_CONTENT": {
+    "trigger": 109,
+    "paramName": [
+      "可查看内容ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "阅读可查看内容",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "判断玩家查看某个可查看内容的次数",
+    "statsType": 0
+  },
+  "QUIZCOMPLETE": {
+    "trigger": 253,
+    "paramName": [
+      "答题配置id",
+      "",
+      "运算符",
+      "状态(1完成/0未完成)"
+    ],
+    "displayName": "检查某个答题是否已完成",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检查某个答题是否已完成",
+    "statsType": 1
+  },
+  "QUEST_TYPE_DONE": {
+    "paramName": [
+      "任务目录配置表类型id",
+      "复杂参数：{任务目录配置表类型id/0不限制elua},{父任务id/0不限制elua}",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 346,
+    "displayName": "完成特定任务类型的父任务",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "完成特定任务目录配置表类型的父任务X个",
+    "statsType": 1
+  },
+  "PET_LEVEL": {
+    "trigger": 1000,
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "desc": "帕蒙等级。用于挂接到帕蒙上进行监控",
+    "displayName": "帕蒙等级",
+    "statsType": 1
+  },
+  "PET_TMPL_LEVELUP": {
+    "trigger": 51,
+    "paramName": [
+      "伊莫基础原型ID",
+      "渠道ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "伊莫升级",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "伊莫升级",
+    "statsType": 0
+  },
+  "PET_TEMPLATE_INDIVIDUAL_LVEVL_UP_COUNT": {
+    "paramName": [
+      "伊莫基础模板ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 393,
+    "displayName": "伊莫潜能提升次数",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定伊莫模板潜能提升X次",
+    "statsType": 0
+  },
+  "PET_TEMPLATE_INDIVIDUAL_LEVELS_REACH": {
+    "paramName": [
+      "伊莫基础模板ID（0则不限）",
+      "{{属性ID，值},{属性ID，值}……属性可置空}",
+      "",
+      "达成伊莫数量"
+    ],
+    "trigger": 394,
+    "displayName": "伊莫潜能激发到指定值",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "指定宠物模板的唯一实例伊莫，指定潜能条目激活到指定值;属性ID是代码枚举；",
+    "statsType": 1
+  },
+  "PET_TEAM_SKILL_TYPE": {
+    "paramName": [
+      "技能tag",
+      "是否可用",
+      "运算符",
+      "1成功/0失败"
+    ],
+    "trigger": 187,
+    "displayName": "出战队伍中是否有满足指定条件的宠物技能",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "出战队伍中是否有满足指定条件的宠物技能",
+    "statsType": 1
+  },
+  "PET_TARGET_CHARACTER": {
+    "paramName": [
+      "宠物ID",
+      "特性id",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1012,
+    "displayName": "宠物特性",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "宠物特性",
+    "statsType": 1
+  },
+  "PET_SWITCH_TIME": {
+    "paramName": [
+      "时间切换类型",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1015,
+    "displayName": "时间切换",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "时间切换",
+    "statsType": 0
+  },
+  "PET_SKILL_UNLOCK": {
+    "trigger": 82,
+    "paramName": [
+      "伊莫基础原型ID",
+      "技能稀有标签（0普通、1稀有）",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "解锁伊莫技能",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "解锁伊莫技能",
+    "statsType": 1
+  },
+  "PET_SEND_AI_MSG_FORM": {
+    "paramName": [
+      "宠物基础形态ID",
+      "消息id",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1017,
+    "displayName": "宠物发送AI消息_form",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "宠物发送AI消息_form",
+    "statsType": 0
+  },
+  "PET_SEND_AI_MSG": {
+    "paramName": [
+      "宠物原型id",
+      "消息id",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1016,
+    "displayName": "宠物发送AI消息",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "宠物发送AI消息",
+    "statsType": 0
+  },
+  "PET_SCORE_COUNT": {
+    "paramName": [
+      "评级等级",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 132,
+    "displayName": "拥有对应评价的宠物数量",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "拥有对应评价的宠物数量",
+    "statsType": 1
+  },
+  "PET_REMAINDER_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 257,
+    "displayName": "宠物管理剩余未上锁的数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "宠物盒子剩余X个未上锁的空间",
+    "statsType": 1
+  },
+  "PET_RARE_SKILL_COUNT": {
+    "trigger": 151,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "稀有技能数量",
+      "运算符",
+      "个数"
+    ],
+    "displayName": "获得带特定数量稀有技能的伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "获得带特定数量稀有技能的伊莫",
+    "statsType": 0
+  },
+  "PET_RANKUP_TIMES": {
+    "paramName": [
+      "伊莫基础原型ID/0不限制",
+      "哪种属性",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 310,
+    "displayName": "累计宠物升星",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "累计对宠物进行升星X次",
+    "statsType": 1
+  },
+  "PET_RANKUP_COUNT": {
+    "paramName": [
+      "伊莫基础原型ID/0不限制",
+      "升星次数",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 309,
+    "displayName": "宠物升星",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "对宠物进行升星X次",
+    "statsType": 0
+  },
+  "PET_PROP_STRENGTHENPOINT": {
+    "trigger": 49,
+    "paramName": [
+      "伊莫基础原型ID",
+      "哪种属性",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "伊莫努力值总值",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "伊莫的努力值总值要求(只)",
+    "statsType": 1
+  },
+  "PET_PROP_CP": {
+    "trigger": 48,
+    "paramName": [
+      "伊莫基础原型ID",
+      "哪种属性",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "伊莫CP",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "伊莫的CP要求(只)",
+    "statsType": 1
+  },
+  "PET_POWER_FULL": {
+    "trigger": 73,
+    "displayName": "队伍中有宠物必杀能量满",
+    "desc": "宠物必杀能量满",
+    "statsType": 0
+  },
+  "PET_NUM_LEVEL": {
+    "paramName": [
+      "0全部/宠物原型id",
+      "等级要求",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 233,
+    "displayName": "达到特定等级的伊莫数量（只）（特训专用）",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "达到特定等级的伊莫数量（只）（特训专用）",
+    "statsType": 1
+  },
+  "PET_LEVEL_UP": {
+    "trigger": 1001,
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "desc": "帕蒙升级。用于挂接到帕蒙上进行监控",
+    "displayName": "帕蒙升级",
+    "statsType": 0
+  },
+  "PET_LEVEL_TEMPLATE_HISTORY": {
+    "trigger": 67,
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "displayName": "伊莫最高等级",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "指定模板伊莫等级曾经最高达到（等级）",
+    "statsType": 1
+  },
+  "PET_LEVEL_TEMPLATE": {
+    "trigger": 8,
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "displayName": "伊莫（基础原型）等级达到",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "当前拥有的指定基础原型伊莫等级达到（最高等级）",
+    "statsType": 1
+  },
+  "PET_LEVEL_MAX": {
+    "paramName": [
+      "宠物ID",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 1003,
+    "displayName": "交换后宠物升满级",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "交换后宠物升满级",
+    "statsType": 0
+  },
+  "PLAYER_TITLE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "头衔"
+    ],
+    "trigger": 197,
+    "displayName": "玩家头衔",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家头衔",
+    "statsType": 1
+  },
+  "PET_KILL_WITH_TEAM_FORM": {
+    "trigger": 1009,
+    "paramName": [
+      "怪物基础形态ID",
+      "阵容信息",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "以固定阵容击杀怪物FromId",
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "E",
+      "S",
+      "I"
+    ],
+    "desc": "以固定阵容击杀怪物FromId",
+    "statsType": 0
+  },
+  "PET_KILL_WITH_TEAM": {
+    "trigger": 1008,
+    "paramName": [
+      "怪物原型id",
+      "阵容信息",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "以固定阵容击杀怪物",
+    "refData": [
+      [
+        "Data.pet_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "E",
+      "S",
+      "I"
+    ],
+    "desc": "以固定阵容击杀怪物",
+    "statsType": 0
+  },
+  "PET_KILL_STREAK_FORM": {
+    "paramName": [
+      "宠物基础形态ID",
+      "{宠物原型ID,击杀数量}",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1014,
+    "displayName": "连续击杀_formId",
+    "paramType": [
+      "I",
+      "E",
+      "S",
+      "I"
+    ],
+    "desc": "宠物连续击杀_form",
+    "statsType": 0
+  },
+  "PET_KILL_STREAK": {
+    "paramName": [
+      "宠物ID",
+      "{宠物原型ID,击杀数量}",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 1013,
+    "displayName": "连续击杀",
+    "paramType": [
+      "I",
+      "E",
+      "S",
+      "I"
+    ],
+    "desc": "宠物连续击杀",
+    "statsType": 0
+  },
+  "PET_KILL_PET_OR_PUPPET": {
+    "paramName": [
+      "伊莫基础原型ID",
+      "伊莫基础原型ID",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 176,
+    "displayName": "宠物击杀宠物或野怪",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "宠物击杀宠物或野怪",
+    "statsType": 0
+  },
+  "PET_KILL_ELEMENT": {
+    "trigger": 158,
+    "paramName": [
+      "当前出战伊莫基础原型ID（填0则不限）",
+      "puppet元素ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "某宠物击败特定元素的怪",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "某宠物击败特定元素的怪",
+    "statsType": 0
+  },
+  "PET_JEWELRY_CHANGE": {
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "饰品ID（elua可不填）",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 384,
+    "displayName": "给指定宠物佩戴饰品",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "给指定宠物佩戴饰品",
+    "statsType": 0
+  },
+  "PET_HP_PERCENT_TIME": {
+    "paramName": [
+      "",
+      "{血量百分比，持续秒数，宠物类型0任意/1当前)}",
+      "运算符",
+      "1/0"
+    ],
+    "trigger": 179,
+    "displayName": "宠物血量小于等于百分比持续秒数",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "宠物血量小于等于百分比持续秒数",
+    "statsType": 1
+  },
+  "PET_HP_PERCENT": {
+    "paramName": [
+      "",
+      "血量百分比，宠物类型0任意/1当前",
+      "运算符",
+      "1/0"
+    ],
+    "trigger": 190,
+    "displayName": "宠物血量小于等于百分比",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "宠物血量小于等于百分比",
+    "statsType": 1
+  },
+  "PET_HP_LE_PERCENT": {
+    "paramName": [
+      "",
+      "血量百分比，宠物类型0任意/1当前",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 198,
+    "displayName": "宠物血量降低到指定百分比",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "宠物血量降低到指定百分比",
+    "statsType": 0
+  },
+  "PET_HP_GE_PERCENT": {
+    "paramName": [
+      "",
+      "血量百分比，宠物类型0任意/1当前",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 199,
+    "displayName": "宠物血量增加到指定百分比",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "宠物血量增加到指定百分比",
+    "statsType": 0
+  },
+  "PET_HIT_ELEMENT_BY_ELEMENT": {
+    "trigger": 157,
+    "paramName": [
+      "当前出战伊莫基础原型ID（填0则不限）",
+      [
+        "puppet元素ID",
+        "技能元素ID"
+      ],
+      "运算符",
+      "次数"
+    ],
+    "displayName": "某宠物使用特定元素的技能命中特定元素的怪",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "某宠物使用特定元素的技能命中特定元素的怪",
+    "statsType": 0
+  },
+  "ATTRIBUTE_KILL_PUPPET": {
+    "trigger": 90,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "元素ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "使用特定属性击败宠物",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "使用特定属性击败宠物",
+    "statsType": 0
+  },
+  "BACKSTAGE_TYPE_ADVANTAGE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "1/0"
+    ],
+    "trigger": 185,
+    "displayName": "站场宠物不占优势，且后台有血量健康的属性优势宠物",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "站场宠物属性克制不占优势，且后台有血量健康的属性优势宠物",
+    "statsType": 1
+  },
+  "BOSS_FINISH_CHECK": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 269,
+    "displayName": "全息协战 Boss挑战触发器",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "全息协战 不同Boss挑战后触发",
+    "statsType": 1
+  },
+  "BOSS_REWARD_RECEIVE_COUNT": {
+    "paramName": [
+      "",
+      "{头目sandboxID（elua、不填则不限、关卡信息索引表levelId）}",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 415,
+    "displayName": "领取头目捕捉奖励次数",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "消耗源能领取头目捕捉奖励次数",
+    "statsType": 0
+  },
+  "BOSS_RUSH_RANKS": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 347,
+    "displayName": "在全息协战中获得X颗星",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "在全息协战中获得X颗星",
+    "statsType": 1
+  },
+  "BOSS_RUSH_STARS_ACC": {
+    "paramName": [
+      "赛季id",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 466,
+    "displayName": "全息协战X赛季累计获得N颗星星",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "全息协战X赛季累计获得N颗星星",
+    "statsType": 1
+  },
+  "BOSS_SCORE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 302,
+    "displayName": "全息协战积分达标",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "全息协战积分达标，积分周清",
+    "statsType": 1
+  },
+  "BREAK_PET_TEMPLATE": {
+    "paramName": [
+      "伊莫基础模板ID",
+      "",
+      "运算符",
+      "只数"
+    ],
+    "trigger": 401,
+    "displayName": "击破指定模板伊莫",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "击破指定模板伊莫，同一只伊莫实例击破多次只计次一次；",
+    "statsType": 0
+  },
+  "BREAK_STATE": {
+    "trigger": 74,
+    "displayName": "进入BREAK",
+    "desc": "进入BREAK",
+    "statsType": 0
+  },
+  "CALL_FRIEND": {
+    "trigger": 103,
+    "paramName": [
+      "Puppet模板ID（填0则不限）",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "对目标（模板）使用呼朋引伴",
+    "refData": [
+      [
+        "Data.puppet_data",
+        [
+          "$L#name"
+        ]
+      ],
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "对目标使用呼朋引伴",
+    "statsType": 0
+  },
+  "CAMOU_DETECTED": {
+    "trigger": 144,
+    "paramName": [
+      "目标伊莫基础原型ID",
+      "单位阵营",
+      "运算符",
+      "个数"
+    ],
+    "displayName": "探测隐身单位",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "使用探测技能探测到隐身状态的单位",
+    "statsType": 0
+  },
+  "CAMP_PLACE_FURNITURE": {
+    "paramName": [
+      "家具id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 304,
+    "displayName": "营地摆放X个家具",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "营地摆放X个家具",
+    "statsType": 1
+  },
+  "CATCH_BY_CASTERID": {
+    "trigger": 43,
+    "paramName": [
+      "伊莫基础原型ID",
+      "投掷物ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "使用特定球捕捉",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "使用特定球捕捉",
+    "statsType": 0
+  },
+  "CATCH_COUNT": {
+    "trigger": 13,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "捕捉伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "捉到指定模板伊莫（只）",
+    "statsType": 0
+  },
+  "CATCH_COUNT_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 167,
+    "displayName": "获得宠物总数",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "曾经获得过的宠物数量(只增不减，未限定获得方式)",
+    "statsType": 1
+  },
+  "CATCH_COUNT_ONCE": {
+    "trigger": 27,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "单次捕捉数量",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "单次捕捉数量（只）",
+    "statsType": 1
+  },
+  "CATCH_FAIL": {
+    "paramName": [
+      "捕捉的伊莫基础原型ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 175,
+    "displayName": "捕捉宠物失败",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家捕捉宠物失败",
+    "statsType": 0
+  },
+  "CATCH_FAIL_BY_BALL_LEVEL": {
+    "paramName": [
+      "",
+      "被克制的几率",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 246,
+    "displayName": "因球等级不足而捕捉失败",
+    "paramType": [
+      "",
+      "F",
+      "S",
+      "I"
+    ],
+    "desc": "因球等级不足而捕捉失败",
+    "statsType": 0
+  },
+  "CATCH_GENDER": {
+    "trigger": 87,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "性别",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "拥有伊莫（性别）",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "拥有指定模板伊莫（只）",
+    "statsType": 1
+  },
+  "CATCH_PET_BUFF": {
+    "trigger": 163,
+    "paramName": [
+      "捕捉的伊莫基础原型ID（填0则不限）",
+      "buffID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "捕捉成功特定buff状态下的宠物",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "捕捉成功特定buff状态下的宠物",
+    "statsType": 0
+  },
+  "CATCH_PET_BY_STATICID": {
+    "paramName": [
+      "static ID",
+      "宠物ID，稀有标签",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 207,
+    "displayName": "捕捉宠物数量（staticId）",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "捕捉特定static宠物数量（个）",
+    "statsType": 0
+  },
+  "CATCH_PET_ELEMENT": {
+    "paramName": [
+      "元素ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 40,
+    "displayName": "捕捉伊莫（元素）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "捕捉指定元素的伊莫",
+    "statsType": 0
+  },
+  "CATCH_PET_LEVELGAP": {
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "等级差距"
+    ],
+    "trigger": 408,
+    "displayName": "捕捉目标和角色的等级差距",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "捕捉目标和角色的等级差距",
+    "statsType": 1
+  },
+  "CATCH_PET_SCORE_COUNT": {
+    "trigger": 152,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "评价等级",
+      "运算符",
+      "个数"
+    ],
+    "displayName": "获得特定评价等级的某种伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "获得特定评价等级的某种伊莫",
+    "statsType": 0
+  },
+  "CATCH_PET_STATE": {
+    "trigger": 162,
+    "paramName": [
+      "捕捉的伊莫基础原型ID（填0则不限）",
+      [
+        "状态名"
+      ],
+      "运算符",
+      "数量"
+    ],
+    "displayName": "捕捉成功特定生态状态下的宠物",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "捕捉成功特定生态状态下的宠物",
+    "statsType": 0
+  },
+  "GET_PET_TMPL_BY_EVOLVE": {
+    "trigger": 45,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "进化获得伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "进化获得伊莫原型",
+    "statsType": 0
+  },
+  "GET_PET_WEIGHT": {
+    "trigger": 161,
+    "paramName": [
+      "获得的伊莫基础原型ID（填0则不限）",
+      [
+        "重量最小值(kg)",
+        "重量最大值(kg)"
+      ],
+      "运算符",
+      "数量"
+    ],
+    "displayName": "获得特定重量区间的宠物",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "F",
+      "S",
+      "I"
+    ],
+    "desc": "获得特定重量区间的宠物",
+    "statsType": 0
+  },
+  "GOTO_POSITION": {
+    "paramName": [
+      "目标位置表ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "refSelectData": [
+      [
+        "$Key",
+        "=",
+        "$B#SceneId"
+      ]
+    ],
+    "statsType": 1,
+    "trigger": 30,
+    "desc": "抵达指定坐标范围（由目标位置表配置范围检测参数确定）",
+    "paramTooltip": [
+      "注意设置该ID对应的对象“是否目标位置点”为是，并设置到达类型、到达检测参数",
+      "",
+      "",
+      ""
+    ],
+    "displayName": "到达目标位置",
+    "refData": [
+      [
+        "Common.Data.Scene.scene_target_position_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ]
+  },
+  "GROUP_TOUR_ACTIVATE_TIMES": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 341,
+    "displayName": "开启同游次数",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "开启同游X次",
+    "statsType": 1
+  },
+  "GROUP_TOUR_GIFT_TIMES": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 342,
+    "displayName": "在同游状态下赠送伊莫",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "在同游状态下赠送伊莫X只",
+    "statsType": 1
+  },
+  "GUIDE_COURSE": {
+    "paramName": [
+      "等级ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 92,
+    "displayName": "完成教学课程",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成几年级的多少关卡数量",
+    "statsType": 1
+  },
+  "HAS_BADGE": {
+    "paramName": [
+      "徽章id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 387,
+    "displayName": "拥有徽章",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "检测是否拥有某个徽章",
+    "statsType": 1
+  },
+  "HAS_BADGES": {
+    "paramName": [
+      "",
+      "徽章ID(eua)",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 400,
+    "displayName": "拥有指定多个徽章",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "拥有指定多个徽章中的一些，配置多个时，拥有满足数量的组内徽章即为通过；",
+    "statsType": 1
+  },
+  "HAS_BADGE_BY_TYPE": {
+    "paramName": [
+      "",
+      "{大类,小类(0则不限),套内类型（0则不限）,品质(elua,0则不限)}",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 388,
+    "displayName": "拥有某类徽章的数量",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "检测拥有某类徽章的数量",
+    "statsType": 1
+  },
+  "HAS_CORE_QUALITY_NUM": {
+    "paramName": [
+      "品质id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 314,
+    "displayName": "拥有特定品质携带物",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有特定品质携带物的数量",
+    "statsType": 1
+  },
+  "HAS_ITEMS": {
+    "trigger": 63,
+    "paramName": [
+      "道具ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "拥有道具（数量）",
+    "refData": [
+      [
+        "Data.item_data",
+        [
+          "$L#itemName"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有某种道具（个）",
+    "statsType": 1
+  },
+  "HAS_ITEM_TMPL": {
+    "trigger": 53,
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "拥有道具（id）",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有不同id的道具",
+    "statsType": 1
+  },
+  "HAS_PET_ID": {
+    "trigger": 330,
+    "paramName": [
+      "宠物原型ID",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "displayName": "拥有特定id的宠物",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家拥有特定原型id的宠物",
+    "statsType": 1
+  },
+  "HAS_PET_RACE": {
+    "trigger": 258,
+    "paramName": [
+      "宠物原型ID",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "displayName": "拥有属于宠物原型ID（含基础形态）的伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有属于某个基础形态（含基础形态）的伊莫",
+    "statsType": 1
+  },
+  "HAS_PET_UPDATE_SKILL_BY_SINGLE": {
+    "paramName": [
+      "伊莫baseform/refID（0不限）",
+      "{升级后的技能ID(elua，可置空)}",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 406,
+    "displayName": "拥有琉璃石升级过伊莫技能的伊莫个个体",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "拥有琉璃石升级过伊莫技能的伊莫个个体（包里最少有一只实体才算）",
+    "statsType": 1
+  },
+  "HAS_PLAYER_NAME": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 391,
+    "displayName": "起名成功",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "起名成功",
+    "statsType": 1
+  },
+  "HAS_RUNE_QUALITY_NUM": {
+    "paramName": [
+      "品质id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 316,
+    "displayName": "拥有特定品质符文的数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有特定品质符文的数量",
+    "statsType": 1
+  },
+  "HATCH_EGG": {
+    "paramName": [
+      "0不限/1正在孵化/2已孵化",
+      "品质等级",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 218,
+    "displayName": "历史累计孵化过X个某品质蛋",
+    "paramType": [
+      "I",
+      "elua",
+      "S",
+      "I"
+    ],
+    "desc": "历史累计孵化过X个某品质蛋",
+    "statsType": 1
+  },
+  "HAVE_BUFF": {
+    "trigger": 145,
+    "paramName": [
+      "BUFF_ID",
+      "伊莫基础原型ID",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "处于特定BUFF",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "角色处于特定BUFF",
+    "statsType": 1
+  },
+  "HAVE_RAINBOW_PET": {
+    "paramName": [
+      "0不限/伊莫原型id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 215,
+    "displayName": "拥有虹光形态宠物数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "拥有虹光形态宠物数量",
+    "statsType": 1
+  },
+  "HAVE_SPECIAL_TRAIN_BADGE_REWARD": {
+    "trigger": 123,
+    "paramName": [
+      "阶段ID",
+      "",
+      "运算符",
+      "1/0"
+    ],
+    "displayName": "是否领取特训计划徽章奖励",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "是否领取特训计划徽章奖励",
+    "statsType": 1
+  },
+  "HOME_ADD_FEED": {
+    "paramName": [
+      "饲料id/0不限难度",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 306,
+    "displayName": "家园食盆添加X个饲料",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园食盆添加X个饲料",
+    "statsType": 0
+  },
+  "HOME_CAR_COMP_LEVEL": {
+    "paramName": [
+      "组件id",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 296,
+    "displayName": "家园房车组件等级",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园房车组件等级达到X级",
+    "statsType": 1
+  },
+  "HOME_CAR_LEVEL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 295,
+    "displayName": "家园房车等级",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园房车等级达到X级",
+    "statsType": 1
+  },
+  "HOME_CLEAN_SUNDRIES_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 234,
+    "displayName": "家园清理杂物数量",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园清理杂物数量",
+    "statsType": 1
+  },
+  "HOME_CURRENT_ITEM_NUM": {
+    "paramName": [
+      "0不限/道具id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 419,
+    "displayName": "家园当前仓库和背包内道具数量总和",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园当前仓库和背包内道具数量总和",
+    "statsType": 1
+  },
+  "HOME_FACILITY_OUTPUT": {
+    "paramName": [
+      "家具id",
+      "0不限/道具id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 240,
+    "displayName": "设施是否产出X个道具",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "设施是否产出X个道具",
+    "statsType": 0
+  },
+  "HOME_FACILITY_PROGRESS": {
+    "paramName": [
+      "家具id",
+      "流程id",
+      "=",
+      "1"
+    ],
+    "trigger": 239,
+    "displayName": "设施是否在指定流程",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "设施是否在指定流程",
+    "statsType": 1
+  },
+  "HOME_FACILITY_SET_FORMULA": {
+    "paramName": [
+      "家具id",
+      "0不限/配方id",
+      "=",
+      "0未设置/1已设置"
+    ],
+    "trigger": 238,
+    "displayName": "设施是否设置指定配方",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "设施是否设置指定配方",
+    "statsType": 1
+  },
+  "HOME_FACILITY_WORK": {
+    "paramName": [
+      "家具id",
+      "流程id",
+      "=",
+      "0/1"
+    ],
+    "trigger": 244,
+    "displayName": "是否进行配方中的操作",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "是否进行配方中的操作",
+    "statsType": 1
+  },
+  "HOME_FORMULA_UNLOCK": {
+    "paramName": [
+      "配方id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 450,
+    "displayName": "家园生产配方解锁",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园生产配方解锁",
+    "statsType": 1
+  },
+  "HOME_GROUND_UNLOCK": {
+    "paramName": [
+      "0不限/地块id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 216,
+    "displayName": "解锁家园地块的数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "解锁家园地块的数量",
+    "statsType": 1
+  },
+  "IS_EXCHANGE_PETS": {
+    "paramName": [
+      "宠物ID",
+      "",
+      "运算符",
+      "等级"
+    ],
+    "trigger": 1002,
+    "displayName": "是否是交换过的宠物",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "是否是交换过的宠物",
+    "statsType": 1
+  },
+  "IN_TEAM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "1是/0否"
+    ],
+    "trigger": 221,
+    "displayName": "是否队伍中",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "是否队伍中",
+    "statsType": 1
+  },
+  "IN_COMBAT": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "1/0"
+    ],
+    "trigger": 180,
+    "displayName": "是否在战斗中",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "是否在战斗中",
+    "statsType": 1
+  },
+  "IN_CAMOU": {
+    "trigger": 146,
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "处于隐身状态",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "处于隐身状态",
+    "statsType": 1
+  },
+  "IN_AREA_TIME": {
+    "paramName": [
+      "",
+      "时间",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 454,
+    "displayName": "在指定区域时间内",
+    "paramType": [
+      "1",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "在指定区域时间内",
+    "statsType": 1
+  },
+  "INTERACT": {
+    "trigger": 91,
+    "paramName": [
+      "交互条目ID",
+      "交互对象staticID（填0则不限）",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "交互条目被执行",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "交互条目被执行",
+    "statsType": 0
+  },
+  "HOME_UNLOCK": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未解锁/1解锁"
+    ],
+    "trigger": 212,
+    "displayName": "家园是否解锁",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园房车真正解锁（完成起名等初始化工作，真正可用）",
+    "statsType": 1
+  },
+  "HOME_SWITCH_TO_POWER_MODE": {
+    "paramName": [
+      "设施id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 308,
+    "displayName": "设施切换至电力模式",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "设施切换至电力模式",
+    "statsType": 0
+  },
+  "HOME_STORE_SELL_ITEM": {
+    "paramName": [
+      "道具id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 461,
+    "displayName": "谜立方回购屋出售道具",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "谜立方回购屋出售道具",
+    "statsType": 0
+  },
+  "HOME_STOREHOUSE_ITEM_NUM": {
+    "paramName": [
+      "0不限/道具id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 236,
+    "displayName": "家园仓库内道具数量",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园仓库内道具数量",
+    "statsType": 1
+  },
+  "HOME_START_DISPATCH_SUCCESS": {
+    "paramName": [
+      "营地id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 448,
+    "displayName": "在营地完成X次伊莫出游",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "在营地完成X次伊莫出游",
+    "statsType": 0
+  },
+  "DISTANCE_PLAYER_NPC_CALLFRIEND": {
+    "trigger": 106,
+    "paramName": [
+      "目标Puppet的StaticID",
+      "呼朋引伴Puppet的StaticID",
+      "运算符",
+      "距离"
+    ],
+    "displayName": "判断玩家携带某个特定NPC时与另一个NPC的距离",
+    "refData": [
+      {},
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "判断玩家携带某个特定NPC时与另一个NPC的距离",
+    "statsType": 1
+  },
+  "C_SCENE_ID": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "当前场景ID"
+    ],
+    "trigger": 352,
+    "displayName": "判断场景ID",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "判断场景ID",
+    "statsType": 2
+  },
+  "CUSTOM_ACTION": {
+    "trigger": 1,
+    "displayName": "条件达成",
+    "desc": "判断某个条件配置是否被设为达成",
+    "statsType": 0
+  },
+  "CUR_BALL_USE_OUT_SWITCH": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "切换次数"
+    ],
+    "trigger": 184,
+    "displayName": "当前使用的捕捉球数量为零切换其他捕捉球",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "当前使用的捕捉球数量为零切换其他捕捉球",
+    "statsType": 0
+  },
+  "CUR_BALL_NUM_LESS_EQUAL": {
+    "paramName": [
+      "",
+      "捕捉球id",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 183,
+    "displayName": "当前使用的捕捉球数量小于等于指定值",
+    "paramType": [
+      "",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "当前使用的捕捉球数量小于等于指定值",
+    "statsType": 0
+  },
+  "CREAT_TEAM_VOICE_CHANNEL": {
+    "trigger": 164,
+    "displayName": "队伍语音频道建立",
+    "desc": "队伍语音频道建立",
+    "statsType": 1
+  },
+  "CORE_CARRY_NUM": {
+    "paramName": [
+      "0不限/携带物id",
+      "道具品质",
+      "",
+      "数量"
+    ],
+    "trigger": 243,
+    "displayName": "当前穿戴核心携带物数量",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "当前穿戴核心携带物数量",
+    "statsType": 1
+  },
+  "CONTROL_PET_TYPE": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "伊莫基础原型ID"
+    ],
+    "trigger": 68,
+    "displayName": "附身伊莫（种类）",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家的附身宠的种类ID",
+    "statsType": 1
+  },
+  "CONTROL_PET_TMPL": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 59,
+    "displayName": "附身伊莫（种类数量）",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "附身的伊莫种类",
+    "statsType": 1
+  },
+  "CONTROL_PET_STAGE": {
+    "paramName": [
+      "进化阶段ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 249,
+    "displayName": "玩家当前联结宠物的进化阶段",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家当前联结宠物的进化阶段",
+    "statsType": 1
+  },
+  "CONTROL_PET_RACE_POSITION": {
+    "trigger": 260,
+    "paramName": [
+      "目标位置表ID",
+      "宠物原型ID",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "联结宠物原型ID的伊莫（含基础形态）到达指定区域",
+    "refData": [
+      {},
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "联结宠物原型ID的伊莫（含基础形态）到达指定区域",
+    "statsType": 1
+  },
+  "CONTROL_PET_RACE": {
+    "trigger": 259,
+    "paramName": [
+      "宠物原型ID",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "displayName": "联结为属于某个宠物原型ID（含基础形态）的伊莫",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      {},
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "联结为属于某个基础形态（含基础形态）的伊莫",
+    "statsType": 1
+  },
+  "CONTROL_PET_LABEL": {
+    "paramName": [
+      "稀有标签ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 250,
+    "displayName": "玩家当前联结宠物是否为稀有",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家当前联结宠物是否为稀有",
+    "statsType": 1
+  },
+  "CONTROL_PET_GROPU": {
+    "paramName": [
+      "",
+      "伊莫家族ID(elua)",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 251,
+    "displayName": "玩家当前联结宠物的种族",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "玩家当前联结宠物的种族",
+    "statsType": 1
+  },
+  "CONTROL_PET_FIRST": {
+    "paramName": [
+      "伊莫基础原型ID",
+      "",
+      "运算符",
+      "验证结果（0附身过、1没附身过）"
+    ],
+    "trigger": 58,
+    "displayName": "首次附身伊莫",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "首次附身伊莫",
+    "statsType": 1
+  },
+  "CONTROL_PET_CAN_FLY_GE": {
+    "paramName": [
+      "最小 canFly 值",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 413,
+    "displayName": "当前控制宠物 canFly 字段是否 >= arg",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "当前控制宠物 canFly 字段是否 >= arg（arg 缺省为 1）",
+    "statsType": 1
+  },
+  "CONTROL_PET": {
+    "paramName": [
+      "",
+      "伊莫基础形态ID,联结模式(0不限2跟随)",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 380,
+    "displayName": "玩家当前携带伊莫",
+    "paramType": [
+      "",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "玩家当前携带伊莫",
+    "statsType": 1
+  },
+  "CONTROL_GOTO_POSITION_PET": {
+    "paramName": [
+      "目标位置表ID",
+      "联结模式，伊莫基础形态ID",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 270,
+    "displayName": "指定类型宠物到达目标位置",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "玩家携带/联结指定类型宠物到达目标位置",
+    "statsType": 1
+  },
+  "CONTROL_GOTO_POSITION": {
+    "paramName": [
+      "目标位置表ID",
+      "伊莫家族ID",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 248,
+    "displayName": "联结指定种族的伊莫到达目标位置",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "联结指定种族的伊莫到达目标位置",
+    "statsType": 1
+  },
+  "CONTROL_EGG": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "0未达成/1达成"
+    ],
+    "trigger": 333,
+    "displayName": "在地宫找到伊莫蛋",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "队伍里有人联结伊莫蛋",
+    "statsType": 1
+  },
+  "CONTROL_BEHAVIOR": {
+    "trigger": 89,
+    "paramName": [
+      "伊莫基础原型ID（填0则不限）",
+      "行为名",
+      "运算符",
+      "次数"
+    ],
+    "displayName": "附身指定宠物进行特定行为",
+    "refData": [
+      [
+        "Data.pet_base_prototype_data",
+        [
+          "$L#name"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "S",
+      "S",
+      "I"
+    ],
+    "desc": "附身指定宠物进行特定动作次数",
+    "statsType": 0
+  },
+  "HOME_START_DISPATCH_HISTORY": {
+    "paramName": [
+      "营地id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 469,
+    "displayName": "营地开始X次派遣(历史计数）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "营地开始X次派遣(历史计数）",
+    "statsType": 1
+  },
+  "HOME_START_DISPATCH": {
+    "paramName": [
+      "营地id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 307,
+    "displayName": "营地开始X次派遣",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "营地开始X次派遣",
+    "statsType": 0
+  },
+  "HOME_SEASON_PARTY_NUM": {
+    "paramName": [
+      "赛季id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 460,
+    "displayName": "玩家参与赛季集会玩法X次",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家参与赛季集会玩法X次",
+    "statsType": 0
+  },
+  "HOME_SEASON_ORDER_FINISHED_NUM": {
+    "paramName": [
+      "赛季id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 474,
+    "displayName": "家园订单完成数量（包括赛季订单）",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园订单完成数量（包括赛季订单）",
+    "statsType": 0
+  },
+  "HOME_SEASON_CLEAN_SUNDRIES_NUM": {
+    "paramName": [
+      "赛季id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 432,
+    "displayName": "清理赛季地块杂物",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "清理赛季地块杂物",
+    "statsType": 0
+  },
+  "HOME_RANDOM_PRODUCE": {
+    "paramName": [
+      "",
+      "",
+      "",
+      "0/1"
+    ],
+    "trigger": 359,
+    "displayName": "家园仓库中有变异植物",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园仓库中有变异植物",
+    "statsType": 1
+  },
+  "HOME_PLACE_FURNITURE": {
+    "paramName": [
+      "0不限/家具id",
+      "0不限/区域id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 213,
+    "displayName": "家园中摆放X个家具",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "家园摆放X个家具",
+    "statsType": 1
+  },
+  "HOME_PLACE_FACILITY_TYPE": {
+    "paramName": [
+      "设施类型ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 336,
+    "displayName": "家园摆放X个某类设施",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园摆放X个某类设施",
+    "statsType": 1
+  },
+  "HOME_PLACE_COMPOSE": {
+    "paramName": [
+      "0不限/组合id",
+      "0不限/区域id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 433,
+    "displayName": "家园中摆放X个组合",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "家园摆放X个组合",
+    "statsType": 1
+  },
+  "HOME_PALCE_PET": {
+    "paramName": [
+      "0不限/宠物id",
+      "0不限/区域id",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 214,
+    "displayName": "家园中摆放X个宠物",
+    "paramType": [
+      "I",
+      "I",
+      "S",
+      "I"
+    ],
+    "desc": "家园摆放X个宠物",
+    "statsType": 1
+  },
+  "HOME_ORDERS_DONE": {
+    "paramName": [
+      "订单品质/0不限制",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 349,
+    "displayName": "完成家园订单",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "完成符合条件的家园订单X个",
+    "statsType": 1
+  },
+  "HOME_ORDER": {
+    "paramName": [
+      "订单品质（0不限制）",
+      "订单类型list（{0}不限制）",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 300,
+    "displayName": "家园订单完成个数",
+    "paramType": [
+      "I",
+      "Elua",
+      "S",
+      "I"
+    ],
+    "desc": "指定品质指定类型的家园订单完成个数",
+    "statsType": 0
+  },
+  "HOME_LOOSEN_SOIL_NUM": {
+    "paramName": [
+      "",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 459,
+    "displayName": "玩家松土次数",
+    "paramType": [
+      "",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "玩家松土次数",
+    "statsType": 0
+  },
+  "HOME_ITEM_NUM": {
+    "paramName": [
+      "0不限/道具id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 418,
+    "displayName": "家园历史仓库和背包内道具数量总和",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园历史仓库和背包内道具数量总和",
+    "statsType": 1
+  },
+  "HOME_IS_IN_SEASON": {
+    "paramName": [
+      "0或不填任意赛季/赛季id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 434,
+    "displayName": "是否在家园赛季时间段内",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "是否在家园赛季时间段内",
+    "statsType": 1
+  },
+  "HOME_INCUBATOR_PLACE_EGG": {
+    "paramName": [
+      "蛋id/0不限制",
+      "",
+      "运算符",
+      "次数"
+    ],
+    "trigger": 305,
+    "displayName": "家园中的孵化器放入X个蛋",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "家园中的孵化器放入X个蛋",
+    "statsType": 0
+  },
+  "HOME_HAVE_FURNITURE": {
+    "paramName": [
+      "0不限/家具id",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "trigger": 237,
+    "displayName": "是否拥有X个家具",
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "是否拥有X个家具",
+    "statsType": 1
+  }
+}

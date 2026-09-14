@@ -1,0 +1,82 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "fea376e2-5b44-4f1f-8400-6972a4e05cc0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          15
+        ]
+      },
+      "NodeID": 4
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 211430301,
+      "NodeID": 15,
+      "UID": "ef78ab77-b03f-4c99-9a60-0c10205c4007",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "UID": "111fd70f-1d64-46db-9736-08f5bec9153f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "b62a4558-a417-4440-b72e-905ae4f876e1",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "b60287c3-caca-485b-b373-b38a39ee53cd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "f3671d7d-9486-4ff7-89b2-853fb5cc93d3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 211430302,
+      "NodeID": 2,
+      "UID": "ac6dc860-16af-4556-95e7-e13a895490c6",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "ability_11430104",
+  "NodeID": 6,
+  "UID": "22f92f98-e7f2-49e9-91fe-1ca4570c3217",
+  "eventIds": [
+    4,
+    11,
+    14
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

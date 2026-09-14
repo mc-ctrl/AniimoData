@@ -1,0 +1,113 @@
+{
+  "duration": 6,
+  "calcResultNodeId": 60,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil",
+  "nodeMap": {
+    "60": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000
+      },
+      "UID": "ae881342-0ddb-43d3-bc48-9f47e4804cad",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 60
+    },
+    "69": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "5d65ccbd-ab5a-4e4d-81af-d1196ec18b99",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Hit",
+      "speed": 1,
+      "NodeID": 69
+    },
+    "62": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 60,
+      "NodeID": 62,
+      "UID": "b8817942-ab7c-4f3a-bb20-b8b7c40c714d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1.2,
+            0.2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        60
+      ]
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d90d110f-ef4a-467f-9b86-64dc0835acce",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil_Hit",
+      "NodeID": 67
+    }
+  },
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 2400,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 35,
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "defaultHitSoundType": "h",
+  "onProjectileHitIds": [
+    62,
+    67,
+    69
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 2400,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "onProjectileGroundedIds": [
+    62,
+    67,
+    69
+  ],
+  "tickInterval": 0.01,
+  "BPName": "ability_12850102",
+  "startSleepTime": 0,
+  "angularIncreaseDuration": 6,
+  "groundSweepRadius": 0.2,
+  "impulseId": 2000,
+  "acceleration": 5
+}

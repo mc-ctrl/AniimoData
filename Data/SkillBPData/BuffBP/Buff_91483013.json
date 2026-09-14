@@ -1,0 +1,28 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91483013",
+  "name": "泡沫buff",
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91483012,
+      "NodeID": 4,
+      "UID": "1ecc0923-dc28-4585-a894-e3771e425394",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "NodeID": 1
+}

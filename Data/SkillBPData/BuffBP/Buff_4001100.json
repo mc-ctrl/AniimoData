@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4001100",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 4001100,
+      "name": "removeBuff",
+      "UID": "1c0b0d50-6740-4bbb-91fc-352b28a7ff9d",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "buffId": 4001101,
+      "name": "removeBuff",
+      "UID": "7d2fec48-b49c-4ba5-910e-a5589968eeee",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "5": {
+      "actionIds": [
+        3,
+        9
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "d685550a-d48f-4baf-a323-02ee2da16a9e",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 4001101,
+      "NodeID": 7,
+      "UID": "2cf1c251-d814-47e4-8a3c-9b7f48437f19",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "8": {
+      "key": "Zhongjieji",
+      "duration": 0.5,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "9aa9e45f-92e9-4a55-a9b3-f9833551ecac",
+      "name": "addEntityTimer"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    8
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Command_Go"
+  ],
+  "searchTargetRangeRadius": 20,
+  "BPName": "ability_9200012",
+  "name": "队长技能",
+  "UID": "736d9b36-3c40-4ce7-97df-312536837d47",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 9200012,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 2,
+  "checkExistBurrow": false,
+  "searchRelation": 1,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200012001,
+      "name": "setCombatActionTimeline",
+      "UID": "3693c471-8f5f-467e-b796-79ab948773a5",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

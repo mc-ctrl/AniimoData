@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_12220101",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "冲！",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12220101001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Smash"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10222_Skill_Smash_01",
+    "Eff_Parmon_10222_Skill_Smash_02",
+    "Eff_Hit_None_Blunt",
+    "Eff_Hit_Electric_Slash_Y"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1,
+  "abilityParamId": 10100180
+}

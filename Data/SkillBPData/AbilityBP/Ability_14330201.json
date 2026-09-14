@@ -1,0 +1,63 @@
+{
+  "BPName": "ability_14330201",
+  "NodeID": 1,
+  "UID": "50bd1152-720c-4b29-8350-e149f4b65750",
+  "abilityParamId": 10800361,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "32": {
+      "startPosOffset": [
+        0,
+        0,
+        0
+      ],
+      "duration": 0,
+      "name": "enableSupportAimEffect",
+      "UID": "a7fd79ac-8ed0-4cc8-b113-c30891676904",
+      "startNoGravityTime": 0,
+      "gravityRatio": 0,
+      "rotationOffset": [
+        0,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 32,
+      "enable": false,
+      "moveSpeed": 0
+    },
+    "7": {
+      "timelineId": 14330201001,
+      "name": "setCombatActionTimeline",
+      "UID": "6c333053-b6a0-4d75-9d04-e973f5ce84a5",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "34": {
+      "UID": "6a54a43f-d883-49a9-bea4-34c00861bad6",
+      "name": "enableSkillThrowState",
+      "enable": false,
+      "NodeID": 34
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Smoke"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10433_Skill_Smoke01"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 200,
+  "searchTargetRangeUp": 3,
+  "onAbilityEndIds": [
+    34,
+    32
+  ]
+}

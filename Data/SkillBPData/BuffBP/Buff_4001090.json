@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4001090",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 4001090,
+      "name": "removeBuff",
+      "UID": "1d195e70-67f1-48f0-ad4b-4913d003513f",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "b925f252-f1b2-4ca3-a188-6a907a645efc",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "7": {
+      "target": "CURPET",
+      "duration": -1,
+      "buffId": 4001091,
+      "NodeID": 7,
+      "UID": "553424a2-040b-484a-b0c9-5acbc8441986",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "eventName": "removerevive",
+      "NodeID": 6,
+      "UID": "afd09f40-d626-466c-81c7-cdaea90fec53",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        3
+      ]
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    4,
+    6
+  ]
+}

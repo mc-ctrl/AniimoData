@@ -1,0 +1,163 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145125",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "transferGroup": 1,
+  "onBuffThinkIds": [
+    20
+  ],
+  "tags": [
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.08,
+      "name": "multiply",
+      "UID": "d8a2e461-f124-4ae3-a259-e576fc1c70ff",
+      "NodeID": 3,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "91e05c4d-2d6d-4bde-ba55-5138bdff6549",
+        "target": "OWNER",
+        "NodeID": 2,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "89db4b5f-ffb4-441e-b4fc-7fca6e003642",
+      "destroyReason": "armorVanish",
+      "name": "buffDestroyReason",
+      "NodeID": 5
+    },
+    "6": {
+      "actionIds": [
+        8,
+        10,
+        11,
+        16,
+        15,
+        17,
+        22,
+        21
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "f2e15c37-ac3f-4552-9b14-b701b75684d5",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 10003,
+      "NodeID": 10,
+      "UID": "eafb6f44-627b-4aff-ba2d-e7b5a6aa5d0c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4317c1cd-c9c0-4d43-b12e-1dcb68bfdbd5",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Tree_Out",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "16": {
+      "effectKey": "Eff_Monster_90213_Mon_Skill_Green_Tree_Proxy",
+      "duration": 5,
+      "disableWhenFinished": true,
+      "NodeID": 16,
+      "UID": "471f2785-653f-4201-97f7-ac6b74fffe3d",
+      "target": "OWNER",
+      "presetName": "Eff_Monster_90213_Mon_Skill_Green_Tree_Dis_Invet",
+      "name": "playPreset"
+    },
+    "8": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "954501ec-c3b4-45b3-b101-1dbc39140dac",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "47cdd104-78b7-4edb-aefd-21e90daebb05",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Tree_In",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "81d868fc-2bc9-4a8f-aabd-b00192d01435",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_QtAoe_07",
+      "NodeID": 22
+    },
+    "18": {
+      "id": 2023,
+      "duration": 15,
+      "NodeID": 18,
+      "UID": "d3635e54-ef49-4fe4-ba32-ddaf3ad54aeb",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "21": {
+      "name": "stopSoundStr",
+      "UID": "04e0ba22-52ba-42ea-ad37-d34c7f9242d0",
+      "soundId": "SFX_Combat_90213_Skill_QtAoe_05",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "11": {
+      "id": 2023,
+      "hasCountDown": true,
+      "NodeID": 11,
+      "UID": "9909078f-47d3-4a4e-b298-c0301cb037ec",
+      "name": "hideBossMechanismTip"
+    },
+    "20": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 1145125
+      },
+      "UID": "7967842b-b564-4744-aebf-72f81ea30c19",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 20
+    },
+    "12": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "cc915bf4-46ff-4e9b-ba1f-49e6b562d4d7",
+      "name": "buffStartThink",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    12,
+    18,
+    20
+  ]
+}

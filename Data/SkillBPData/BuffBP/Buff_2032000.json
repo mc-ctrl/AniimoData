@@ -1,0 +1,1360 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2032000",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "165": {
+      "UID": "649758c1-63ab-43e6-94b9-d9428a86e019",
+      "name": "getHealPoint",
+      "NodeID": 165
+    },
+    "166": {
+      "rValue": {
+        "UID": "649758c1-63ab-43e6-94b9-d9428a86e019",
+        "name": "getHealPoint",
+        "NodeID": 165
+      },
+      "name": "add",
+      "UID": "4917839e-84b3-4fa2-96d4-67c74ea41da1",
+      "NodeID": 166,
+      "lValue": {
+        "UID": "f2f297d5-aa62-4f54-8a77-f49dc25c1d06",
+        "name": "getOverHealPoint",
+        "NodeID": 167
+      }
+    },
+    "113": {
+      "UID": "7e9392bf-a7a1-450f-9181-d9917a72ed7a",
+      "name": "getHealPoint",
+      "NodeID": 113
+    },
+    "168": {
+      "buffId": 2031002,
+      "name": "hasBuff",
+      "UID": "6ec698e6-2691-489a-b36f-b8dcfd4486e5",
+      "target": "OWNER",
+      "NodeID": 168
+    },
+    "114": {
+      "rValue": {
+        "UID": "7e9392bf-a7a1-450f-9181-d9917a72ed7a",
+        "name": "getHealPoint",
+        "NodeID": 113
+      },
+      "name": "add",
+      "UID": "f6475bf8-9644-42a7-a3f5-9d2582b3dc86",
+      "NodeID": 114,
+      "lValue": {
+        "UID": "a589b48a-aa54-4efe-926c-68102c563beb",
+        "name": "getOverHealPoint",
+        "NodeID": 120
+      }
+    },
+    "170": {
+      "key": "HealCnt",
+      "name": "setRoguePersistData",
+      "UID": "5600ec00-ae61-457a-b7aa-ffd899f6f456",
+      "value": {
+        "UID": "f6c75207-bbc2-49cd-83c8-eb4dfcc60b27",
+        "name": "getBuffSeriesCnt",
+        "buffSeries": 3,
+        "NodeID": 169
+      },
+      "NodeID": 170
+    },
+    "171": {
+      "actionIds": [
+        170
+      ],
+      "conditionActionIds": [
+        187
+      ],
+      "UID": "61863cde-ac34-4d72-a3a6-ba4fee962028",
+      "name": "doActionsByConditions",
+      "NodeID": 171
+    },
+    "172": {
+      "actionIds": [
+        171
+      ],
+      "NodeID": 172,
+      "UID": "661c3539-e6b4-443f-9ba0-6d888f69e679",
+      "name": "registerBuffSeriesCntChangeEvent",
+      "buffSeries": 3
+    },
+    "130": {
+      "endNum": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param2",
+        "NodeID": 316,
+        "UID": "23d5a58a-f221-472d-ba65-a717ac6bb12f",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        129
+      ],
+      "NodeID": 130,
+      "UID": "44db7c66-62bf-4d6a-9020-344c36c90c3d",
+      "stepNum": {
+        "UID": "c6574fda-fae6-4cba-98ed-4d30970fa915",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 315
+      },
+      "startNum": {
+        "UID": "c6574fda-fae6-4cba-98ed-4d30970fa915",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 315
+      },
+      "name": "forEach"
+    },
+    "117": {
+      "UID": "2abe91bd-9947-4448-a7f9-59cd3130e7ff",
+      "idxAction": {
+        "UID": "2a5fbd36-33d1-49d8-bc2c-652f5995341e",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 116
+      },
+      "name": "getClosuresDataByIdx",
+      "NodeID": 117
+    },
+    "320": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 320,
+      "UID": "b91a52e5-549f-4043-903c-2a4ed1e0c460",
+      "name": "getParamByLuaConfig"
+    },
+    "118": {
+      "key": "healDmg",
+      "name": "setProjectileCacheVal",
+      "UID": "5e531c78-3ba2-451a-becb-71970bee1cde",
+      "val": {
+        "UID": "2abe91bd-9947-4448-a7f9-59cd3130e7ff",
+        "idxAction": {
+          "UID": "2a5fbd36-33d1-49d8-bc2c-652f5995341e",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 116
+        },
+        "name": "getClosuresDataByIdx",
+        "NodeID": 117
+      },
+      "projectileId": 119,
+      "NodeID": 118
+    },
+    "119": {
+      "UID": "ad74a866-bab2-47a2-b145-06fa05187164",
+      "idxAction": {
+        "UID": "2a5fbd36-33d1-49d8-bc2c-652f5995341e",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 116
+      },
+      "name": "getCallClientDataByIdx",
+      "NodeID": 119
+    },
+    "121": {
+      "buffId": 2031002,
+      "name": "hasBuff",
+      "UID": "44042a51-fe07-4407-9aa1-2216351db6b4",
+      "target": "OWNER",
+      "NodeID": 121
+    },
+    "122": {
+      "buffId": 2031002,
+      "name": "hasBuff",
+      "UID": "712a421d-6ee1-451e-b102-09257b792b9d",
+      "target": "OWNER",
+      "NodeID": 122
+    },
+    "187": {
+      "buffId": 2030003,
+      "name": "hasBuff",
+      "UID": "6d393b04-9ed8-497a-829d-9048df338673",
+      "target": "OWNER",
+      "NodeID": 187
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        330
+      ],
+      "UID": "055c696d-ed16-43c8-b886-722a147dbbbd",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "129": {
+      "key": {
+        "str": "timer",
+        "name": "constString",
+        "UID": "742ab544-589d-4c63-8eaf-7c17b00087bc",
+        "NodeID": 132,
+        "concatenateNumber": {
+          "UID": "5957adb5-8292-4811-80a4-a04a3565e0b5",
+          "name": "getIterNumber",
+          "NodeID": 131
+        }
+      },
+      "duration": {
+        "rValue": 0.2,
+        "name": "multiply",
+        "UID": "66751fbe-0b37-414c-9bb5-8c8346241783",
+        "NodeID": 128,
+        "lValue": {
+          "UID": "ecafce9b-6be4-4868-a842-3f7848928583",
+          "name": "getIterNumber",
+          "NodeID": 127
+        }
+      },
+      "actionIds": [
+        137
+      ],
+      "NodeID": 129,
+      "UID": "1671a28e-f957-4870-85b0-4bad3da6cb0f",
+      "name": "addTimer"
+    },
+    "6": {
+      "UID": "7fdd99d0-ceeb-4e09-b183-56a78018c12c",
+      "name": "registerHealEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        30,
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f997632f-5ec1-4e21-aa15-08b12ded18bd",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "cb420e66-a813-475e-842e-917bc9d514b9",
+      "name": "getHealPoint",
+      "NodeID": 31
+    },
+    "133": {
+      "name": "isActorType",
+      "UID": "844c741a-4bc8-4c9b-9ef9-22cd4c81ad33",
+      "target": "TARGET",
+      "NodeID": 133,
+      "actorType": 3
+    },
+    "134": {
+      "relation": 2,
+      "radius": 20,
+      "heightDown": 2,
+      "NodeID": 134,
+      "UID": "46355ed2-9805-4d94-bf22-092c957d3340",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 133
+    },
+    "11": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "d1fec781-1ec5-4cf8-9d89-e781555accb4",
+      "NodeID": 11,
+      "lValue": {
+        "UID": "afc0cd2c-8110-45d1-be59-9758301dd252",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 10
+      }
+    },
+    "135": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2032000105,
+      "name": "createProjectile",
+      "UID": "b1e701b9-ce52-4689-888a-a4da0d065a38",
+      "rotation": "ToTarget",
+      "pos": "CURPET",
+      "projectileType": "Tracking",
+      "NodeID": 135,
+      "targetPos": {
+        "relation": 2,
+        "radius": 20,
+        "heightDown": 2,
+        "NodeID": 134,
+        "UID": "46355ed2-9805-4d94-bf22-092c957d3340",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 133
+      }
+    },
+    "12": {
+      "actionIds": [
+        50
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "7de73ecb-63b5-4616-88d9-ae9f98fa283d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        77
+      ],
+      "NodeID": 12
+    },
+    "23": {
+      "name": "isActorType",
+      "UID": "489f6af0-b235-400d-9bf7-eaf87683839a",
+      "target": "TARGET",
+      "NodeID": 23,
+      "actorType": 3
+    },
+    "55": {
+      "name": "isActorType",
+      "UID": "5d3b1b07-c0d1-4bc4-acfe-60d7b7b3d39c",
+      "target": "TARGET",
+      "NodeID": 55,
+      "actorType": 3
+    },
+    "74": {
+      "key": {
+        "str": "timer",
+        "name": "constString",
+        "UID": "6954b4f3-2063-4493-8a49-a97d532a0969",
+        "NodeID": 90,
+        "concatenateNumber": {
+          "UID": "8902e318-d940-4d84-b8d9-dfb9b7344dd4",
+          "name": "getIterNumber",
+          "NodeID": 89
+        }
+      },
+      "duration": {
+        "rValue": 0.3,
+        "name": "multiply",
+        "UID": "c17d6512-b1cc-4a02-a50d-0f82ce551fe9",
+        "NodeID": 88,
+        "lValue": {
+          "UID": "9606c5b0-84b9-4f3c-b4ea-0a2c91c04179",
+          "name": "getIterNumber",
+          "NodeID": 87
+        }
+      },
+      "actionIds": [
+        72
+      ],
+      "NodeID": 74,
+      "UID": "980f4237-346f-4ed9-88d2-5146a3dc0fef",
+      "name": "addTimer"
+    },
+    "56": {
+      "relation": 2,
+      "radius": 20,
+      "heightDown": 2,
+      "NodeID": 56,
+      "UID": "38cde6b1-478c-4d45-97be-80fd46c8831d",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 55
+    },
+    "75": {
+      "endNum": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param3",
+        "NodeID": 318,
+        "UID": "68e74796-267c-4fdd-a1a0-80bba3f93983",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        74
+      ],
+      "NodeID": 75,
+      "UID": "4fbb6b33-c7ce-4ceb-8aca-6ab25af16df3",
+      "stepNum": {
+        "UID": "6b9a3745-757c-4af4-9e43-ab88d573dfb7",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 317
+      },
+      "startNum": {
+        "UID": "6b9a3745-757c-4af4-9e43-ab88d573dfb7",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 317
+      },
+      "name": "forEach"
+    },
+    "25": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2032000101,
+      "name": "createProjectile",
+      "UID": "5ed82b93-864a-4045-9044-ec6e665ff519",
+      "rotation": "ToTarget",
+      "pos": "CURPET",
+      "projectileType": "Tracking",
+      "NodeID": 25,
+      "targetPos": {
+        "relation": 2,
+        "radius": 20,
+        "heightDown": 2,
+        "NodeID": 24,
+        "UID": "e8ae1540-62a3-42ac-90c2-313040c40357",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 23
+      }
+    },
+    "26": {
+      "UID": "bbc772ea-27ee-4953-8585-92314edfe97d",
+      "name": "getProjectileId",
+      "projectileAction": 25,
+      "NodeID": 26
+    },
+    "27": {
+      "closureDataActionIds": [
+        32
+      ],
+      "NodeID": 27,
+      "UID": "dd01fd1d-c0df-4936-b587-e26f3e0b53b0",
+      "name": "callClientAction",
+      "callbackActionIds": [
+        36
+      ],
+      "clientDataActionIds": [
+        26
+      ]
+    },
+    "77": {
+      "actionIds": [
+        154
+      ],
+      "conditionActionIds": [
+        168
+      ],
+      "UID": "57b3f84e-0c46-46f8-ab15-8d789a4498d8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        75
+      ],
+      "NodeID": 77
+    },
+    "59": {
+      "closureDataActionIds": [
+        93
+      ],
+      "NodeID": 59,
+      "UID": "1b7a088c-3f1b-4445-a12b-2ec794f1e5d2",
+      "name": "callClientAction",
+      "callbackActionIds": [
+        65
+      ],
+      "clientDataActionIds": [
+        58
+      ]
+    },
+    "18": {
+      "endNum": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 310,
+        "UID": "ceacee84-4cad-401d-a30f-b38f48de162a",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18,
+      "UID": "ee5eacbf-3b91-480f-9ba1-16d917289a83",
+      "stepNum": {
+        "UID": "fb566a98-fd06-47b5-b18b-c654c857ce40",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 309
+      },
+      "startNum": {
+        "UID": "fb566a98-fd06-47b5-b18b-c654c857ce40",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 309
+      },
+      "name": "forEach"
+    },
+    "32": {
+      "rValue": {
+        "UID": "cb420e66-a813-475e-842e-917bc9d514b9",
+        "name": "getHealPoint",
+        "NodeID": 31
+      },
+      "name": "add",
+      "UID": "aa112756-14e4-49b9-b797-9e9bc5b0fbaa",
+      "NodeID": 32,
+      "lValue": {
+        "UID": "95618c6b-08cc-4da2-aa71-51f1e9e42d43",
+        "name": "getOverHealPoint",
+        "NodeID": 91
+      }
+    },
+    "19": {
+      "actionIds": [
+        103
+      ],
+      "conditionActionIds": [
+        121
+      ],
+      "UID": "cfe992ab-97cb-4ca7-a871-f738f7852b60",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "36": {
+      "key": "healDmg",
+      "name": "setProjectileCacheVal",
+      "UID": "2b048018-a369-4ccb-ba3d-8dbdf3f86f7c",
+      "val": {
+        "UID": "c8186bb4-98c1-4296-b807-ed4137668736",
+        "idxAction": {
+          "UID": "b54af7c0-f1ba-4664-bdec-39f86ad42500",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 34
+        },
+        "name": "getClosuresDataByIdx",
+        "NodeID": 35
+      },
+      "projectileId": 37,
+      "NodeID": 36
+    },
+    "37": {
+      "UID": "d1de6483-1bed-4b0d-94f3-0649db958d65",
+      "idxAction": {
+        "UID": "b54af7c0-f1ba-4664-bdec-39f86ad42500",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 34
+      },
+      "name": "getCallClientDataByIdx",
+      "NodeID": 37
+    },
+    "64": {
+      "UID": "d1e8979e-2876-4e57-83d9-721d79bea0ea",
+      "idxAction": {
+        "UID": "a21031ac-0b8c-4bdc-9f5e-64706cf89f6c",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 63
+      },
+      "name": "getClosuresDataByIdx",
+      "NodeID": 64
+    },
+    "35": {
+      "UID": "c8186bb4-98c1-4296-b807-ed4137668736",
+      "idxAction": {
+        "UID": "b54af7c0-f1ba-4664-bdec-39f86ad42500",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 34
+      },
+      "name": "getClosuresDataByIdx",
+      "NodeID": 35
+    },
+    "65": {
+      "key": "healDmg",
+      "name": "setProjectileCacheVal",
+      "UID": "d8d060e2-e945-4705-a092-dffdd947811b",
+      "val": {
+        "UID": "d1e8979e-2876-4e57-83d9-721d79bea0ea",
+        "idxAction": {
+          "UID": "a21031ac-0b8c-4bdc-9f5e-64706cf89f6c",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 63
+        },
+        "name": "getClosuresDataByIdx",
+        "NodeID": 64
+      },
+      "projectileId": 66,
+      "NodeID": 65
+    },
+    "84": {
+      "UID": "3fde22bf-2015-4014-a234-2c07afe26707",
+      "idxAction": {
+        "UID": "4119dacc-8de3-44b4-82ba-0db3cc3791b8",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 83
+      },
+      "name": "getClosuresDataByIdx",
+      "NodeID": 84
+    },
+    "66": {
+      "UID": "b806281f-0d3b-4721-a7d9-e65e154828db",
+      "idxAction": {
+        "UID": "a21031ac-0b8c-4bdc-9f5e-64706cf89f6c",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 63
+      },
+      "name": "getCallClientDataByIdx",
+      "NodeID": 66
+    },
+    "85": {
+      "key": "healDmg",
+      "name": "setProjectileCacheVal",
+      "UID": "793be672-11f0-43e4-8f1a-513c77853cbf",
+      "val": {
+        "UID": "3fde22bf-2015-4014-a234-2c07afe26707",
+        "idxAction": {
+          "UID": "4119dacc-8de3-44b4-82ba-0db3cc3791b8",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 83
+        },
+        "name": "getClosuresDataByIdx",
+        "NodeID": 84
+      },
+      "projectileId": 86,
+      "NodeID": 85
+    },
+    "330": {
+      "name": "isInCombat",
+      "UID": "5c9add18-ef6b-4a97-84f7-4608441e24d1",
+      "target": "CURPET",
+      "NodeID": 330,
+      "not": false
+    },
+    "68": {
+      "name": "isActorType",
+      "UID": "ad6d5eca-4fa9-41b7-b069-32fc5bd39f4c",
+      "target": "TARGET",
+      "NodeID": 68,
+      "actorType": 3
+    },
+    "318": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 318,
+      "UID": "68e74796-267c-4fdd-a1a0-80bba3f93983",
+      "name": "getParamByLuaConfig"
+    },
+    "69": {
+      "relation": 2,
+      "radius": 20,
+      "heightDown": 2,
+      "NodeID": 69,
+      "UID": "1473b5ef-92ab-4f06-be1d-39994097354b",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 68
+    },
+    "3": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "eaec8709-a4eb-4ee4-bb43-7a9867126d44",
+      "NodeID": 3,
+      "lValue": {
+        "UID": "11de557a-df8d-4e10-b712-8bcc936f8d21",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 2
+      }
+    },
+    "70": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2032000103,
+      "name": "createProjectile",
+      "UID": "ac7f3716-8b49-42fd-aa60-7b3953ba3fa5",
+      "rotation": "ToTarget",
+      "pos": "CURPET",
+      "projectileType": "Tracking",
+      "NodeID": 70,
+      "targetPos": {
+        "relation": 2,
+        "radius": 20,
+        "heightDown": 2,
+        "NodeID": 69,
+        "UID": "1473b5ef-92ab-4f06-be1d-39994097354b",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 68
+      }
+    },
+    "316": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 316,
+      "UID": "23d5a58a-f221-472d-ba65-a717ac6bb12f",
+      "name": "getParamByLuaConfig"
+    },
+    "71": {
+      "UID": "b669192d-a547-4971-9908-9af920b8388d",
+      "name": "getProjectileId",
+      "projectileAction": 70,
+      "NodeID": 71
+    },
+    "314": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 314,
+      "UID": "67bc62e1-223a-43ea-a57d-5edfe3cbc580",
+      "name": "getParamByLuaConfig"
+    },
+    "72": {
+      "closureDataActionIds": [
+        96
+      ],
+      "NodeID": 72,
+      "UID": "0db88c2b-4785-4ab4-9470-c1ad03b5f242",
+      "name": "callClientAction",
+      "callbackActionIds": [
+        85
+      ],
+      "clientDataActionIds": [
+        71
+      ]
+    },
+    "24": {
+      "relation": 2,
+      "radius": 20,
+      "heightDown": 2,
+      "NodeID": 24,
+      "UID": "e8ae1540-62a3-42ac-90c2-313040c40357",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 23
+    },
+    "137": {
+      "closureDataActionIds": [
+        145
+      ],
+      "NodeID": 137,
+      "UID": "54b0e7ef-35a8-4204-8fc3-b7c3beaa3604",
+      "name": "callClientAction",
+      "callbackActionIds": [
+        142
+      ],
+      "clientDataActionIds": [
+        136
+      ]
+    },
+    "173": {
+      "unsummonValid": false,
+      "actionIds": [
+        172
+      ],
+      "name": "registerGroupEvent",
+      "UID": "c595c743-9509-48de-af72-feca995ffe47",
+      "NodeID": 173
+    },
+    "92": {
+      "UID": "92d66fe6-b632-4abd-9163-85c48d8da9f7",
+      "name": "getHealPoint",
+      "NodeID": 92
+    },
+    "169": {
+      "UID": "f6c75207-bbc2-49cd-83c8-eb4dfcc60b27",
+      "name": "getBuffSeriesCnt",
+      "buffSeries": 3,
+      "NodeID": 169
+    },
+    "93": {
+      "rValue": {
+        "UID": "92d66fe6-b632-4abd-9163-85c48d8da9f7",
+        "name": "getHealPoint",
+        "NodeID": 92
+      },
+      "name": "add",
+      "UID": "b67a02a1-f05b-4837-aca3-6de12333cf45",
+      "NodeID": 93,
+      "lValue": {
+        "UID": "c896a73b-54bc-4613-9b46-e567f84eb643",
+        "name": "getOverHealPoint",
+        "NodeID": 94
+      }
+    },
+    "48": {
+      "key": {
+        "str": "timer",
+        "name": "constString",
+        "UID": "5cde8071-86ef-41f6-82cf-ed6bd894b808",
+        "NodeID": 54,
+        "concatenateNumber": {
+          "UID": "b93edb1b-6f0b-4394-85f6-720a92df58df",
+          "name": "getIterNumber",
+          "NodeID": 53
+        }
+      },
+      "duration": {
+        "rValue": 0.2,
+        "name": "multiply",
+        "UID": "483d5e1b-8d15-4c10-98a5-54dad6ac7695",
+        "NodeID": 47,
+        "lValue": {
+          "UID": "42808c5e-8b75-45bd-b6ed-4bb2eaf71a45",
+          "name": "getIterNumber",
+          "NodeID": 46
+        }
+      },
+      "actionIds": [
+        59
+      ],
+      "NodeID": 48,
+      "UID": "1f953324-8373-4d0d-a096-8a432f1ea345",
+      "name": "addTimer"
+    },
+    "159": {
+      "key": "healDmg",
+      "name": "setProjectileCacheVal",
+      "UID": "fd2a6d00-55be-42a3-91f7-9ea68a013ff7",
+      "val": {
+        "UID": "ad461897-81b5-452b-8d24-071b26d695a1",
+        "idxAction": {
+          "UID": "74a3516a-0429-43a9-aabb-b6e7a76ff2cb",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 157
+        },
+        "name": "getClosuresDataByIdx",
+        "NodeID": 158
+      },
+      "projectileId": 160,
+      "NodeID": 159
+    },
+    "158": {
+      "UID": "ad461897-81b5-452b-8d24-071b26d695a1",
+      "idxAction": {
+        "UID": "74a3516a-0429-43a9-aabb-b6e7a76ff2cb",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 157
+      },
+      "name": "getClosuresDataByIdx",
+      "NodeID": 158
+    },
+    "95": {
+      "UID": "568b7ed0-08a8-4d9b-a429-ea30d6ad8636",
+      "name": "getHealPoint",
+      "NodeID": 95
+    },
+    "154": {
+      "endNum": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param3",
+        "NodeID": 320,
+        "UID": "b91a52e5-549f-4043-903c-2a4ed1e0c460",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        153
+      ],
+      "NodeID": 154,
+      "UID": "cf69885c-be03-4f6e-af43-c6b4494f4068",
+      "stepNum": {
+        "UID": "9406e186-870e-4bd4-982f-a94b3ac8693e",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 319
+      },
+      "startNum": {
+        "UID": "9406e186-870e-4bd4-982f-a94b3ac8693e",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 319
+      },
+      "name": "forEach"
+    },
+    "96": {
+      "rValue": {
+        "UID": "568b7ed0-08a8-4d9b-a429-ea30d6ad8636",
+        "name": "getHealPoint",
+        "NodeID": 95
+      },
+      "name": "add",
+      "UID": "0a07dc19-2f9a-4449-8e3c-d5b35fa288dc",
+      "NodeID": 96,
+      "lValue": {
+        "UID": "69b0e38d-b523-436d-bb4a-4dd6a3153d59",
+        "name": "getOverHealPoint",
+        "NodeID": 97
+      }
+    },
+    "153": {
+      "key": {
+        "str": "timer",
+        "name": "constString",
+        "UID": "d8076d9d-8451-49b7-a921-980799608f4e",
+        "NodeID": 164,
+        "concatenateNumber": {
+          "UID": "1ff60e11-3283-42f7-97a0-13d76c09a67a",
+          "name": "getIterNumber",
+          "NodeID": 163
+        }
+      },
+      "duration": {
+        "rValue": 0.3,
+        "name": "multiply",
+        "UID": "71973ca7-93c7-4641-9d8b-3367f1e40b67",
+        "NodeID": 162,
+        "lValue": {
+          "UID": "2594ba4c-be56-4455-be07-556faad22813",
+          "name": "getIterNumber",
+          "NodeID": 161
+        }
+      },
+      "actionIds": [
+        151
+      ],
+      "NodeID": 153,
+      "UID": "e3721329-13d0-4f6b-9bca-ef152f1e53f4",
+      "name": "addTimer"
+    },
+    "151": {
+      "closureDataActionIds": [
+        166
+      ],
+      "NodeID": 151,
+      "UID": "7328487d-9e4f-4229-9efd-7c24e607a311",
+      "name": "callClientAction",
+      "callbackActionIds": [
+        159
+      ],
+      "clientDataActionIds": [
+        150
+      ]
+    },
+    "150": {
+      "UID": "040c3450-b302-4ee6-b43e-cf0559bd55a4",
+      "name": "getProjectileId",
+      "projectileAction": 149,
+      "NodeID": 150
+    },
+    "149": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2032000106,
+      "name": "createProjectile",
+      "UID": "779392a8-ac61-4b52-a4c6-0d9b7541b110",
+      "rotation": "ToTarget",
+      "pos": "CURPET",
+      "projectileType": "Tracking",
+      "NodeID": 149,
+      "targetPos": {
+        "relation": 2,
+        "radius": 20,
+        "heightDown": 2,
+        "NodeID": 148,
+        "UID": "9072c031-630a-4a20-9eff-6a8029354958",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 147
+      }
+    },
+    "142": {
+      "key": "healDmg",
+      "name": "setProjectileCacheVal",
+      "UID": "b58332d6-40ac-4d90-8002-7377044624b4",
+      "val": {
+        "UID": "6650e240-6cac-4349-a704-68abd09edad7",
+        "idxAction": {
+          "UID": "c5a17879-7378-4a86-af86-5feb0c781946",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 140
+        },
+        "name": "getClosuresDataByIdx",
+        "NodeID": 141
+      },
+      "projectileId": 143,
+      "NodeID": 142
+    },
+    "50": {
+      "actionIds": [
+        130
+      ],
+      "conditionActionIds": [
+        122
+      ],
+      "UID": "efd892aa-5a0c-4321-a139-151f5069f289",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        49
+      ],
+      "NodeID": 50
+    },
+    "143": {
+      "UID": "cdc0884b-5969-49e4-99d2-9a33d867db26",
+      "idxAction": {
+        "UID": "c5a17879-7378-4a86-af86-5feb0c781946",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 140
+      },
+      "name": "getCallClientDataByIdx",
+      "NodeID": 143
+    },
+    "136": {
+      "UID": "f2baeae3-65c3-45b0-ace1-e809f9683715",
+      "name": "getProjectileId",
+      "projectileAction": 135,
+      "NodeID": 136
+    },
+    "144": {
+      "UID": "6bee57b1-c064-42a1-bc8e-2ad65becf083",
+      "name": "getHealPoint",
+      "NodeID": 144
+    },
+    "145": {
+      "rValue": {
+        "UID": "6bee57b1-c064-42a1-bc8e-2ad65becf083",
+        "name": "getHealPoint",
+        "NodeID": 144
+      },
+      "name": "add",
+      "UID": "85ecb340-998d-4611-bdd3-c3dd5ceb890b",
+      "NodeID": 145,
+      "lValue": {
+        "UID": "419f2845-d964-4520-bbeb-211dfe3221d9",
+        "name": "getOverHealPoint",
+        "NodeID": 146
+      }
+    },
+    "102": {
+      "key": {
+        "str": "timer",
+        "name": "constString",
+        "UID": "0dd71b50-78bc-46c1-83c3-9b1aba13d2e4",
+        "NodeID": 105,
+        "concatenateNumber": {
+          "UID": "bd423aff-021a-4c96-91b0-928698fb5238",
+          "name": "getIterNumber",
+          "NodeID": 104
+        }
+      },
+      "duration": {
+        "rValue": 0.2,
+        "name": "multiply",
+        "UID": "dae76c55-8ef8-4075-a98f-b104b73aafee",
+        "NodeID": 101,
+        "lValue": {
+          "UID": "0d788627-6bf5-43fa-b14d-8542c8badadf",
+          "name": "getIterNumber",
+          "NodeID": 100
+        }
+      },
+      "actionIds": [
+        110
+      ],
+      "NodeID": 102,
+      "UID": "1b2834f3-c97b-417a-8c3f-9c565cda0319",
+      "name": "addTimer"
+    },
+    "141": {
+      "UID": "6650e240-6cac-4349-a704-68abd09edad7",
+      "idxAction": {
+        "UID": "c5a17879-7378-4a86-af86-5feb0c781946",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 140
+      },
+      "name": "getClosuresDataByIdx",
+      "NodeID": 141
+    },
+    "103": {
+      "endNum": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 312,
+        "UID": "9be5d552-e699-4f51-82bc-fa4de3536f18",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        102
+      ],
+      "NodeID": 103,
+      "UID": "90fff597-2fe1-41b6-b772-053d950254cb",
+      "stepNum": {
+        "UID": "c732de7d-fcc2-421d-bc37-d4e531f8dec1",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 311
+      },
+      "startNum": {
+        "UID": "c732de7d-fcc2-421d-bc37-d4e531f8dec1",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 311
+      },
+      "name": "forEach"
+    },
+    "310": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 310,
+      "UID": "ceacee84-4cad-401d-a30f-b38f48de162a",
+      "name": "getParamByLuaConfig"
+    },
+    "147": {
+      "name": "isActorType",
+      "UID": "bd2bb51c-ff67-4770-a20d-0d9c6b706976",
+      "target": "TARGET",
+      "NodeID": 147,
+      "actorType": 3
+    },
+    "312": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 312,
+      "UID": "9be5d552-e699-4f51-82bc-fa4de3536f18",
+      "name": "getParamByLuaConfig"
+    },
+    "148": {
+      "relation": 2,
+      "radius": 20,
+      "heightDown": 2,
+      "NodeID": 148,
+      "UID": "9072c031-630a-4a20-9eff-6a8029354958",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 147
+    },
+    "30": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 20320001,
+      "NodeID": 30,
+      "UID": "f1711e9f-b55e-4d2e-b1db-07ce72be7280",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "106": {
+      "name": "isActorType",
+      "UID": "08e9ae83-4bde-43c4-96c7-2e72b35c1f33",
+      "target": "TARGET",
+      "NodeID": 106,
+      "actorType": 3
+    },
+    "17": {
+      "key": {
+        "str": "timer",
+        "name": "constString",
+        "UID": "8c1268b2-5040-413b-bfa3-7cab7fb7e6db",
+        "NodeID": 22,
+        "concatenateNumber": {
+          "UID": "36bbbbb5-064b-471e-a79a-922c3e2c22eb",
+          "name": "getIterNumber",
+          "NodeID": 21
+        }
+      },
+      "duration": {
+        "rValue": 0.2,
+        "name": "multiply",
+        "UID": "545226a9-4ce1-4559-80c7-371520754d8c",
+        "NodeID": 16,
+        "lValue": {
+          "UID": "5d5b28eb-4bda-49eb-a3c7-006ddc5bb19c",
+          "name": "getIterNumber",
+          "NodeID": 15
+        }
+      },
+      "actionIds": [
+        27
+      ],
+      "NodeID": 17,
+      "UID": "32184682-627a-464a-80d2-cff2f415b99d",
+      "name": "addTimer"
+    },
+    "107": {
+      "relation": 2,
+      "radius": 20,
+      "heightDown": 2,
+      "NodeID": 107,
+      "UID": "afbe4017-6659-4f7e-adf2-21a33febdb57",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 106
+    },
+    "58": {
+      "UID": "11955809-2b69-49ba-84c1-9a9ca33d1d23",
+      "name": "getProjectileId",
+      "projectileAction": 57,
+      "NodeID": 58
+    },
+    "108": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2032000104,
+      "name": "createProjectile",
+      "UID": "9141eb03-48c6-43ea-af44-5109d05df3b5",
+      "rotation": "ToTarget",
+      "pos": "CURPET",
+      "projectileType": "Tracking",
+      "NodeID": 108,
+      "targetPos": {
+        "relation": 2,
+        "radius": 20,
+        "heightDown": 2,
+        "NodeID": 107,
+        "UID": "afbe4017-6659-4f7e-adf2-21a33febdb57",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 106
+      }
+    },
+    "57": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2032000102,
+      "name": "createProjectile",
+      "UID": "95d8832e-fefc-44bb-a8b5-b63e71d2aee7",
+      "rotation": "ToTarget",
+      "pos": "CURPET",
+      "projectileType": "Tracking",
+      "NodeID": 57,
+      "targetPos": {
+        "relation": 2,
+        "radius": 20,
+        "heightDown": 2,
+        "NodeID": 56,
+        "UID": "38cde6b1-478c-4d45-97be-80fd46c8831d",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 55
+      }
+    },
+    "109": {
+      "UID": "49103003-552e-4afb-8608-bf117a6b8c80",
+      "name": "getProjectileId",
+      "projectileAction": 108,
+      "NodeID": 109
+    },
+    "160": {
+      "UID": "2b17cf16-4c1e-47d2-a76c-7466b7b75c5d",
+      "idxAction": {
+        "UID": "74a3516a-0429-43a9-aabb-b6e7a76ff2cb",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 157
+      },
+      "name": "getCallClientDataByIdx",
+      "NodeID": 160
+    },
+    "110": {
+      "closureDataActionIds": [
+        114
+      ],
+      "NodeID": 110,
+      "UID": "2f4c86c2-e810-4009-9bab-43107f90dfe0",
+      "name": "callClientAction",
+      "callbackActionIds": [
+        118
+      ],
+      "clientDataActionIds": [
+        109
+      ]
+    },
+    "49": {
+      "endNum": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param2",
+        "NodeID": 314,
+        "UID": "67bc62e1-223a-43ea-a57d-5edfe3cbc580",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        48
+      ],
+      "NodeID": 49,
+      "UID": "82425682-b70a-45f7-9698-4c42dbdb860c",
+      "stepNum": {
+        "UID": "81177245-ab7b-4995-bb8d-b8e52c38bcb7",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 313
+      },
+      "startNum": {
+        "UID": "81177245-ab7b-4995-bb8d-b8e52c38bcb7",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 313
+      },
+      "name": "forEach"
+    },
+    "86": {
+      "UID": "2fdc045c-5aa9-4756-a5de-3b6e506e8b8e",
+      "idxAction": {
+        "UID": "4119dacc-8de3-44b4-82ba-0db3cc3791b8",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 83
+      },
+      "name": "getCallClientDataByIdx",
+      "NodeID": 86
+    },
+    "4": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "d3198366-8b8f-4b05-b6e9-9daae6826e96",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 4
+    }
+  },
+  "onBuffLayerChangeIds": [
+    8,
+    171,
+    173
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    171,
+    173
+  ]
+}

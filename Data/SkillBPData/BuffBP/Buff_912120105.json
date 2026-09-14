@@ -1,0 +1,339 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912120105",
+  "name": "舞力值积满提升攻击力buff",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "112": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "elementType": 0,
+        "impulseId": 2000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "20594914-5b7b-4b2f-b84e-7fbe385d92b3",
+      "target": "OWNER",
+      "calcInfoByLuaConfig": {
+        "id": 912120105,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 112
+    },
+    "82": {
+      "key": "RogueSkillBossNum",
+      "name": "setCacheVal",
+      "UID": "d83a9dad-db89-4f8d-8a50-272362c06e94",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "14f96f0c-46a4-4588-b51a-46e4785a9cb5",
+        "NodeID": 81,
+        "lValue": {
+          "key": "RogueSkillBossNum",
+          "name": "getCacheVal",
+          "UID": "7e945c9b-4bb7-4c80-a66e-71c445cf6c93",
+          "target": "OWNER",
+          "NodeID": 80
+        }
+      },
+      "NodeID": 82
+    },
+    "98": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "4d3f647b-d9fe-4220-9ba1-25394f25be4a",
+      "NodeID": 98,
+      "lValue": {
+        "key": "RogueSkillBossNum",
+        "name": "getCacheVal",
+        "UID": "3f9b9820-02ca-45cf-a5ce-f6c671d4a4c8",
+        "target": "OWNER",
+        "NodeID": 97
+      }
+    },
+    "83": {
+      "actionIds": [
+        99,
+        115
+      ],
+      "conditionActionIds": [
+        98
+      ],
+      "UID": "10bacbb9-43b5-4da3-8a53-05ea0edf2079",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        82
+      ],
+      "NodeID": 83
+    },
+    "99": {
+      "key": "RogueSkillBossNum",
+      "name": "setCacheVal",
+      "UID": "28217562-ee73-4568-8cd8-1b2b9fdf594d",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 99
+    },
+    "84": {
+      "key": "RogueSkillBossNum",
+      "name": "setCacheVal",
+      "UID": "5082fb2e-9ccc-40b9-b966-97df006f4da9",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 84
+    },
+    "115": {
+      "eventName": "912120105Trigger",
+      "name": "notifyCustomEvent",
+      "UID": "f007163c-f765-43ba-86df-2a5250b775ef",
+      "target": {
+        "eventName": "onReceiveDamage",
+        "name": "getEventCombatContextTarget",
+        "UID": "4ed7f46b-e5da-4fa0-a14c-f5dbd6805924",
+        "target": "CASTER",
+        "NodeID": 114
+      },
+      "NodeID": 115
+    },
+    "114": {
+      "eventName": "onReceiveDamage",
+      "name": "getEventCombatContextTarget",
+      "UID": "4ed7f46b-e5da-4fa0-a14c-f5dbd6805924",
+      "target": "CASTER",
+      "NodeID": 114
+    },
+    "86": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "fbafd080-91a0-4316-b3a2-ed72ec52b509",
+      "NodeID": 86,
+      "lValue": {
+        "key": "RogueSkillBossNum",
+        "name": "getCacheVal",
+        "UID": "6e265ab5-da26-4e2a-8f0f-28975ad889ad",
+        "target": "OWNER",
+        "NodeID": 85
+      }
+    },
+    "103": {
+      "name": "stopEffectStr",
+      "UID": "fc95c23a-e34f-484b-82df-5737acf6b286",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "target": "OWNER",
+      "NodeID": 103
+    },
+    "87": {
+      "actionIds": [
+        93,
+        106
+      ],
+      "conditionActionIds": [
+        86
+      ],
+      "UID": "f05a99df-046f-493c-bd68-a71cb91b7bc2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        90
+      ],
+      "NodeID": 87
+    },
+    "104": {
+      "name": "stopEffectStr",
+      "UID": "9a4c1caf-b99f-4803-b2f8-3c0f558b9106",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "target": "OWNER",
+      "NodeID": 104
+    },
+    "88": {
+      "key": "RogueSkillBossNum",
+      "actionIds": [
+        87
+      ],
+      "NodeID": 88,
+      "UID": "7571089a-7a74-4b40-8402-fb73198cb842",
+      "name": "registerCacheValChange"
+    },
+    "106": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "c0c37b56-475b-44aa-997b-e05f362ca2ee",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "scale": 1,
+      "NodeID": 106
+    },
+    "89": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "45d0e1dc-9fb5-4029-a74b-5665c887cc3b",
+      "NodeID": 89,
+      "lValue": {
+        "key": "RogueSkillBossNum",
+        "name": "getCacheVal",
+        "UID": "6e265ab5-da26-4e2a-8f0f-28975ad889ad",
+        "target": "OWNER",
+        "NodeID": 85
+      }
+    },
+    "101": {
+      "name": "stopEffectStr",
+      "UID": "865496bb-917f-487c-8551-745d4e876b14",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "target": "OWNER",
+      "NodeID": 101
+    },
+    "90": {
+      "actionIds": [
+        91,
+        107
+      ],
+      "conditionActionIds": [
+        89
+      ],
+      "UID": "9ccd8ac7-4d57-400a-a9f7-dbdeba94350f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        95,
+        108,
+        110,
+        112
+      ],
+      "NodeID": 90
+    },
+    "107": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "2b3da0be-bc98-490b-9ec7-bb925a6703ce",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "scale": 1,
+      "NodeID": 107
+    },
+    "76": {
+      "UID": "a68dab5b-f2cc-47ef-a9ee-f0dbf5f4ab53",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 76
+    },
+    "108": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "0a28bd81-e03e-4c9f-bcc8-edb43a0b5680",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "scale": 1,
+      "NodeID": 108
+    },
+    "77": {
+      "actionIds": [
+        83
+      ],
+      "conditionActionIds": [
+        76
+      ],
+      "UID": "970f267b-616e-4c40-93b5-99027125e097",
+      "name": "doActionsByConditions",
+      "NodeID": 77
+    },
+    "109": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "3a59affd-1bc7-449a-8a89-f45fc69f5d47",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "scale": 1,
+      "NodeID": 109
+    },
+    "78": {
+      "UID": "b73cd712-ab3f-497f-bfd4-9252cad34cae",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        77
+      ],
+      "NodeID": 78
+    },
+    "110": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9a68038d-67c2-447b-8790-d10c6e7ef4f8",
+      "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Hit",
+      "speed": 1,
+      "NodeID": 110
+    },
+    "91": {
+      "name": "stopEffectStr",
+      "UID": "03cf4725-b371-40df-bae7-4df5f56767e4",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "target": "OWNER",
+      "NodeID": 91
+    },
+    "93": {
+      "name": "stopEffectStr",
+      "UID": "5e4702d6-fd32-46d4-ac25-0062f4b90f34",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "target": "OWNER",
+      "NodeID": 93
+    },
+    "95": {
+      "name": "stopEffectStr",
+      "UID": "a570fc4d-a860-4355-a52f-3b000f356e94",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "target": "OWNER",
+      "NodeID": 95
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    104,
+    103,
+    101
+  ],
+  "onBuffStartIds": [
+    84,
+    109,
+    78,
+    88
+  ]
+}

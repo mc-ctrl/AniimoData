@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_12850703",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "burrowDuration": 30,
+  "burrowEnterBuffIds": [
+    2116101
+  ],
+  "burrowExitCastAbilityId": 12850713,
+  "burrowSwitchToAbilityId": 12850713,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12850703001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10201_Bejav_JumpInGround_RunStop"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10800238,
+  "abilityType": 2,
+  "desc": "",
+  "canCastByCallFriends": false,
+  "aiSelectWeight": 1
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "typeName": 2107250206,
+    "isUnlock": 1,
+    "isHomepage": 1
+  },
+  {
+    "chapterImg": "$UI_Img_Traning_Card_Elective_2.png",
+    "infoImgMaterial": "$VX_Mat_TraningCard_ElectiveStoryMask02.mat",
+    "bannerImg": "$UI_Img_Train_Elective_Ttile_2.png",
+    "infoImg": "$UI_Img_Traning_CardPic_Elective_2.png",
+    "typeName": 1720143106,
+    "matchRoadType": 1,
+    "isUnlock": 1,
+    "des": 1502325437
+  },
+  {
+    "chapterImg": "$UI_Img_Traning_Card_Elective_1.png",
+    "infoImgMaterial": "$VX_Mat_TraningCard_ElectiveStoryMask01.mat",
+    "bannerImg": "$UI_Img_Train_Elective_Ttile.png",
+    "infoImg": "$UI_Img_Traning_CardPic_Elective_1.png",
+    "typeName": 2063397852,
+    "matchRoadType": 3,
+    "isUnlock": 1,
+    "des": 1343804715
+  },
+  {
+    "chapterImg": "$UI_Img_Traning_Card_Elective_4.png",
+    "infoImgMaterial": "$VX_Mat_TraningCard_ElectiveStoryMask04.mat",
+    "bannerImg": "$UI_Img_Train_Elective_Ttile_4.png",
+    "infoImg": "$UI_Img_Traning_CardPic_Elective_4.png",
+    "typeName": 2139059013,
+    "matchRoadType": 2,
+    "isUnlock": 1,
+    "des": 1765387050
+  },
+  {
+    "chapterImg": "$UI_Img_Traning_Card_Elective_3.png",
+    "infoImgMaterial": "$VX_Mat_TraningCard_ElectiveStoryMask03.mat",
+    "bannerImg": "$UI_Img_Train_Elective_Ttile_3.png",
+    "infoImg": "$UI_Img_Traning_CardPic_Elective_3.png",
+    "typeName": 1954794315,
+    "matchRoadType": 4,
+    "isUnlock": 1,
+    "des": 1326752388
+  }
+]

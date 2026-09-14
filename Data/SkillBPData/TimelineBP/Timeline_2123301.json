@@ -1,0 +1,194 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "action": {
+        "actionIds": [
+          2,
+          6
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.1,
+      "NodeID": 4,
+      "UID": "187d9c3f-7f77-4c6d-98ea-61c5bc865588"
+    },
+    "6": {
+      "UID": "680f862e-8085-4f57-8b17-db324d7ae322",
+      "name": "destroyEntity",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "e19faf2d-bfb1-4624-8e05-d24ae81c7f37",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          12,
+          8
+        ]
+      },
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "fdc626da-fed1-40c6-ac5a-54f9b734a125",
+      "name": "absorbProj",
+      "absorbEffect": "Eff_Buff_Star_AllBuff",
+      "NodeID": 7
+    },
+    "16": {
+      "actionIds": [
+        20
+      ],
+      "name": "actOnTargets",
+      "UID": "e857b73b-e8ee-49ca-af35-80f93297bb8e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0.5,
+            2.5
+          ],
+          "shapeArgs": [
+            1.8,
+            1.8,
+            1,
+            3,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 4,
+          "offsetRotation": [
+            90,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 16
+    },
+    "8": {
+      "collider": [
+        {
+          "centerOffsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6,
+            1,
+            5
+          ],
+          "shapeKind": "Box"
+        }
+      ],
+      "interactDuration": 1.7,
+      "name": "playInteractableEffect",
+      "UID": "1df21a5e-c6ba-4344-b686-f03dd1a00d4e",
+      "effectId": "Eff_Parmon_10233_Skill_Wave02",
+      "target": "OWNER",
+      "interactActionIds": [
+        7
+      ],
+      "speed": 1,
+      "interactType": "Absorb_Proj",
+      "NodeID": 8
+    },
+    "21": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2123311,
+      "NodeID": 21,
+      "UID": "8aaeebbe-29dd-4fa6-afb7-5a1919b06b08",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "454259b9-bf74-489e-90bf-82d85053812c",
+      "effectId": "Eff_Parmon_10233_Skill_Wave02",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "18": {
+      "eventType": "NotifyState",
+      "endTime": 0.7,
+      "NodeID": 18,
+      "onExit": {
+        "actionIds": [
+          16
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          16
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.2,
+      "onEnter": {
+        "actionIds": [
+          16
+        ]
+      },
+      "UID": "d07b47c7-835c-49f8-941b-75609240bd53"
+    },
+    "19": {
+      "relation": 1,
+      "name": "checkRelationWithReferenceTarget",
+      "UID": "274f50ae-b74b-4752-a167-31d0b0b364b6",
+      "target": "TARGET",
+      "referenceTarget": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "duration": 1.7,
+      "name": "moveByDirection",
+      "UID": "b03848a0-a320-43c8-baeb-e0e18f781ac2",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "velocity": [
+        0,
+        0,
+        10
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        21
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "f62bc878-6df4-4218-b9bc-7332e8c46b76",
+      "name": "doActionsByConditions",
+      "NodeID": 20
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4c866d56-8e2d-4734-be19-d2203b62a3e8",
+      "effectId": "Eff_Parmon_10233_Attack01_ground",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2123301",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    10,
+    18,
+    4
+  ],
+  "layer": "Base",
+  "length": 1.2
+}

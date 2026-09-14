@@ -1,0 +1,819 @@
+[
+  {
+    "iconImage": "$UI_Img_CampingCar_Levelup_Car1_Nml.png",
+    "isBig": 1,
+    "levelDes": 1498220713,
+    "reward": 110001,
+    "carModelLevel": 1,
+    "functionUnlockDes": 2096340649,
+    "homeVoucherCollectlim": 270
+  },
+  {
+    "carModelLevel": 2,
+    "functionUnlockDes": 2049119776,
+    "homeVoucherCollectlim": 270,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Car2_Nml.png",
+    "iconImageMini": "$UI_Img_CampingCar_Levelup_Tag_Pet.png",
+    "isBig": 1,
+    "levelDes": 1866470738,
+    "source2": 102038,
+    "unlockItem": [
+      [
+        4001064,
+        3
+      ]
+    ],
+    "upgradeConditions1": 306117,
+    "upgradeConditions2": 306105,
+    "upgradeConditionsDes1": 2011905818,
+    "unlockCost": [
+      1010,
+      140
+    ],
+    "reward": 110002,
+    "upgradeTime": 30,
+    "upgradeConditionsDes2": 1587856000,
+    "source1": 811,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          8
+        ]
+      ],
+      [
+        "setFunctionUnlock",
+        [
+          "HOMELAND_PET",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "carModelLevel": 2,
+    "functionUnlockDes": 1583262881,
+    "homeVoucherCollectlim": 270,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Manage_Nml.png",
+    "source1": 811,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          3
+        ]
+      ]
+    ],
+    "levelDes": 1461122167,
+    "source2": 811,
+    "source3": 102039,
+    "unlockItem": [
+      [
+        4001064,
+        25
+      ]
+    ],
+    "upgradeConditions1": 306118,
+    "upgradeConditions2": 306136,
+    "upgradeConditions3": 306106,
+    "upgradeConditionsDes1": 1353145373,
+    "unlockCost": [
+      1010,
+      800
+    ],
+    "upgradeConditionsDes3": 2032962445,
+    "reward": 110003,
+    "upgradeTime": 300,
+    "upgradeConditionsDes2": 1362304259
+  },
+  {
+    "carModelLevel": 2,
+    "functionUnlockDes": 1814767041,
+    "homeVoucherCollectlim": 270,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "source1": 811,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          3
+        ]
+      ]
+    ],
+    "levelDes": 1698975461,
+    "source2": 811,
+    "source3": 811,
+    "source4": 102040,
+    "unlockItem": [
+      [
+        4001064,
+        100
+      ],
+      [
+        4001065,
+        120
+      ]
+    ],
+    "upgradeConditions1": 306119,
+    "upgradeConditions2": 306137,
+    "upgradeConditions3": 306165,
+    "upgradeConditions4": 306107,
+    "upgradeConditionsDes1": 1221309614,
+    "unlockCost": [
+      1010,
+      2900
+    ],
+    "upgradeConditionsDes3": 1574407997,
+    "upgradeConditionsDes4": 1618928900,
+    "reward": 110004,
+    "upgradeTime": 900,
+    "upgradeConditionsDes2": 1298534259
+  },
+  {
+    "carModelLevel": 2,
+    "functionUnlockDes": 1405410718,
+    "homeVoucherCollectlim": 270,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "source1": 811,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          3
+        ]
+      ]
+    ],
+    "levelDes": 1641189962,
+    "source2": 811,
+    "source3": 811,
+    "source4": 102041,
+    "unlockItem": [
+      [
+        4001064,
+        550
+      ],
+      [
+        4001065,
+        250
+      ]
+    ],
+    "upgradeConditions1": 306120,
+    "upgradeConditions2": 306138,
+    "upgradeConditions3": 306174,
+    "upgradeConditions4": 306108,
+    "upgradeConditionsDes1": 1296619470,
+    "unlockCost": [
+      1010,
+      7300
+    ],
+    "upgradeConditionsDes3": 1880461672,
+    "upgradeConditionsDes4": 1445066868,
+    "reward": 110005,
+    "upgradeTime": 2700,
+    "upgradeConditionsDes2": 1372038998
+  },
+  {
+    "carModelLevel": 3,
+    "functionUnlockDes": 1719441013,
+    "homeVoucherCollectlim": 540,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Car6_Nml.png",
+    "source1": 811,
+    "isBig": 1,
+    "levelDes": 1142887423,
+    "source2": 811,
+    "source3": 811,
+    "source4": 102042,
+    "unlockItem": [
+      [
+        4001064,
+        1300
+      ],
+      [
+        4001065,
+        700
+      ]
+    ],
+    "upgradeConditions1": 306121,
+    "upgradeConditions2": 306139,
+    "upgradeConditions3": 306166,
+    "upgradeConditions4": 306109,
+    "upgradeConditionsDes1": 1485767104,
+    "unlockCost": [
+      1010,
+      32000
+    ],
+    "upgradeConditionsDes3": 1494204551,
+    "upgradeConditionsDes4": 1812288040,
+    "reward": 110006,
+    "upgradeTime": 5400,
+    "upgradeConditionsDes2": 1373405698,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          3
+        ]
+      ]
+    ],
+    "iconImageMini": "$UI_Img_CampingCar_Levelup_Tag_Delegation.png"
+  },
+  {
+    "carModelLevel": 3,
+    "functionUnlockDes": 1758044908,
+    "homeVoucherCollectlim": 810,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Thermometer_Nml.png",
+    "source1": 707,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1667341252,
+    "source2": 811,
+    "source3": 815,
+    "source4": 102043,
+    "unlockItem": [
+      [
+        4010169,
+        290
+      ],
+      [
+        4010174,
+        360
+      ]
+    ],
+    "upgradeConditions1": 62014,
+    "upgradeConditions2": 306122,
+    "upgradeConditions3": 306140,
+    "upgradeConditions4": 306110,
+    "upgradeConditionsDes1": 1426092425,
+    "unlockCost": [
+      1010,
+      69000
+    ],
+    "upgradeConditionsDes3": 1622215976,
+    "upgradeConditionsDes4": 1818358633,
+    "reward": 110007,
+    "upgradeTime": 7200,
+    "upgradeConditionsDes2": 1998375868
+  },
+  {
+    "carModelLevel": 3,
+    "functionUnlockDes": 1695920311,
+    "homeVoucherCollectlim": 1080,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Home_Nml.png",
+    "source1": 811,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 2006779720,
+    "source2": 811,
+    "source3": 811,
+    "source4": 102044,
+    "unlockItem": [
+      [
+        4010169,
+        1100
+      ],
+      [
+        4010174,
+        640
+      ]
+    ],
+    "upgradeConditions1": 306123,
+    "upgradeConditions2": 306141,
+    "upgradeConditions3": 306167,
+    "upgradeConditions4": 306111,
+    "upgradeConditionsDes1": 1523143197,
+    "unlockCost": [
+      1010,
+      180000
+    ],
+    "upgradeConditionsDes3": 1327836728,
+    "upgradeConditionsDes4": 1233800916,
+    "reward": 110008,
+    "upgradeTime": 9000,
+    "upgradeConditionsDes2": 1670043662
+  },
+  {
+    "carModelLevel": 3,
+    "functionUnlockDes": 1695541791,
+    "homeVoucherCollectlim": 1350,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "source1": 811,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1965817327,
+    "source2": 811,
+    "source3": 811,
+    "unlockItem": [
+      [
+        4010169,
+        1520
+      ],
+      [
+        4010174,
+        800
+      ]
+    ],
+    "upgradeConditions1": 306124,
+    "upgradeConditions2": 306142,
+    "upgradeConditions3": 306175,
+    "upgradeConditionsDes1": 1808564814,
+    "unlockCost": [
+      1010,
+      260000
+    ],
+    "upgradeConditionsDes3": 1548312799,
+    "reward": 110009,
+    "upgradeTime": 10800,
+    "upgradeConditionsDes2": 1955847506
+  },
+  {
+    "carModelLevel": 3,
+    "functionUnlockDes": 1239592145,
+    "homeVoucherCollectlim": 1620,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Event_Nml.png",
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1361806387,
+    "source2": 811,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010169,
+        2000
+      ],
+      [
+        4010174,
+        2400
+      ]
+    ],
+    "upgradeConditions1": 306154,
+    "upgradeConditions2": 306125,
+    "upgradeConditions3": 306143,
+    "upgradeConditions4": 306168,
+    "upgradeConditionsDes1": 1850738042,
+    "unlockCost": [
+      1010,
+      510000
+    ],
+    "upgradeConditionsDes3": 1323542830,
+    "upgradeConditionsDes4": 1448496207,
+    "reward": 110011,
+    "source5": 102045,
+    "upgradeConditions5": 306112,
+    "upgradeConditionsDes5": 1267387379,
+    "upgradeTime": 12600,
+    "upgradeConditionsDes2": 1427958260
+  },
+  {
+    "carModelLevel": 3,
+    "functionUnlockDes": 1886206855,
+    "homeVoucherCollectlim": 1890,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "source1": 707,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1857681271,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010170,
+        320
+      ],
+      [
+        4010175,
+        350
+      ]
+    ],
+    "upgradeConditions1": 62015,
+    "upgradeConditions2": 306155,
+    "upgradeConditions3": 306126,
+    "upgradeConditions4": 306144,
+    "upgradeConditionsDes1": 1401818453,
+    "unlockCost": [
+      1010,
+      680000
+    ],
+    "upgradeConditionsDes3": 1871494679,
+    "upgradeConditionsDes4": 1548685043,
+    "reward": 110012,
+    "source5": 102046,
+    "upgradeConditions5": 306113,
+    "upgradeConditionsDes5": 1440014692,
+    "upgradeTime": 14400,
+    "upgradeConditionsDes2": 1347525004
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1780521974,
+    "homeVoucherCollectlim": 2160,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Car12_Nml.png",
+    "iconImageMini": "$UI_Img_CampingCar_Levelup_Tag_Electric.png",
+    "isBig": 1,
+    "levelDes": 1896076461,
+    "source2": 811,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010170,
+        910
+      ],
+      [
+        4010175,
+        480
+      ]
+    ],
+    "upgradeConditions1": 306156,
+    "upgradeConditions2": 306127,
+    "upgradeConditions3": 306145,
+    "upgradeConditions4": 306169,
+    "upgradeConditionsDes1": 2046760029,
+    "unlockCost": [
+      1010,
+      1060000
+    ],
+    "upgradeConditionsDes3": 1233175693,
+    "upgradeConditionsDes4": 2135214007,
+    "reward": 110013,
+    "source5": 102047,
+    "upgradeConditions5": 306114,
+    "upgradeConditionsDes5": 1112351617,
+    "upgradeTime": 16200,
+    "upgradeConditionsDes2": 1793165193,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1259649096,
+    "homeVoucherCollectlim": 2430,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1597001877,
+    "source2": 811,
+    "source3": 811,
+    "unlockItem": [
+      [
+        4010170,
+        1230
+      ],
+      [
+        4010175,
+        760
+      ]
+    ],
+    "upgradeConditions1": 306157,
+    "upgradeConditions2": 306128,
+    "upgradeConditions3": 306146,
+    "upgradeConditionsDes1": 1934006245,
+    "upgradeConditionsDes2": 1621399564,
+    "upgradeConditionsDes3": 1431035275,
+    "reward": 110014,
+    "upgradeTime": 18000,
+    "unlockCost": [
+      1010,
+      1930000
+    ]
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1692637615,
+    "homeVoucherCollectlim": 2700,
+    "iconImage": "$UI_Img_CampingCar_Levelup_EggMachine_Nml.png",
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1429107678,
+    "source2": 811,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010170,
+        1590
+      ],
+      [
+        4010175,
+        1060
+      ]
+    ],
+    "upgradeConditions1": 306158,
+    "upgradeConditions2": 306129,
+    "upgradeConditions3": 306147,
+    "upgradeConditions4": 306170,
+    "upgradeConditionsDes1": 2036714727,
+    "unlockCost": [
+      1010,
+      2620000
+    ],
+    "upgradeConditionsDes3": 1914211968,
+    "upgradeConditionsDes4": 1170192048,
+    "reward": 110015,
+    "source5": 102048,
+    "upgradeConditions5": 306115,
+    "upgradeConditionsDes5": 1894133337,
+    "upgradeTime": 21600,
+    "upgradeConditionsDes2": 1099656423
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1195462081,
+    "homeVoucherCollectlim": 2970,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "source1": 707,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 2101703995,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010171,
+        390
+      ],
+      [
+        4010176,
+        150
+      ]
+    ],
+    "upgradeConditions1": 62016,
+    "upgradeConditions2": 306159,
+    "upgradeConditions3": 306130,
+    "upgradeConditions4": 306148,
+    "upgradeConditionsDes1": 2001569693,
+    "unlockCost": [
+      1010,
+      3760000
+    ],
+    "upgradeConditionsDes3": 1770653403,
+    "upgradeConditionsDes4": 1178261450,
+    "reward": 110016,
+    "upgradeTime": 25200,
+    "upgradeConditionsDes2": 1830960526
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1102026589,
+    "homeVoucherCollectlim": 3240,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1098938454,
+    "source2": 811,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010171,
+        480
+      ],
+      [
+        4010176,
+        310
+      ]
+    ],
+    "upgradeConditions1": 306160,
+    "upgradeConditions2": 306131,
+    "upgradeConditions3": 306149,
+    "upgradeConditions4": 306171,
+    "upgradeConditionsDes1": 1827786039,
+    "unlockCost": [
+      1010,
+      4900000
+    ],
+    "upgradeConditionsDes3": 2136791162,
+    "upgradeConditionsDes4": 2129094062,
+    "reward": 110017,
+    "upgradeTime": 28800,
+    "upgradeConditionsDes2": 1194579910
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1599236418,
+    "homeVoucherCollectlim": 3510,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          2
+        ]
+      ]
+    ],
+    "levelDes": 1508251863,
+    "source2": 811,
+    "source3": 811,
+    "unlockItem": [
+      [
+        4010171,
+        630
+      ],
+      [
+        4010176,
+        380
+      ]
+    ],
+    "upgradeConditions1": 306161,
+    "upgradeConditions2": 306132,
+    "upgradeConditions3": 306150,
+    "upgradeConditionsDes1": 1081145795,
+    "upgradeConditionsDes2": 1960515013,
+    "upgradeConditionsDes3": 1817855007,
+    "reward": 110018,
+    "upgradeTime": 32400,
+    "unlockCost": [
+      1010,
+      8630000
+    ]
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1436317930,
+    "homeVoucherCollectlim": 3780,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          1
+        ]
+      ]
+    ],
+    "levelDes": 1699384614,
+    "source2": 811,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010171,
+        800
+      ],
+      [
+        4010176,
+        520
+      ]
+    ],
+    "upgradeConditions1": 306162,
+    "upgradeConditions2": 306133,
+    "upgradeConditions3": 306151,
+    "upgradeConditions4": 306172,
+    "upgradeConditionsDes1": 1305340107,
+    "unlockCost": [
+      1010,
+      11600000
+    ],
+    "upgradeConditionsDes3": 1084177957,
+    "upgradeConditionsDes4": 1166174842,
+    "reward": 110019,
+    "upgradeTime": 36000,
+    "upgradeConditionsDes2": 1570854413
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1728588290,
+    "homeVoucherCollectlim": 4050,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "source1": 707,
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          1
+        ]
+      ]
+    ],
+    "levelDes": 1718764060,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010172,
+        400
+      ],
+      [
+        4010177,
+        220
+      ]
+    ],
+    "upgradeConditions1": 62017,
+    "upgradeConditions2": 306163,
+    "upgradeConditions3": 306134,
+    "upgradeConditions4": 306152,
+    "upgradeConditionsDes1": 2040948389,
+    "unlockCost": [
+      1010,
+      17100000
+    ],
+    "upgradeConditionsDes3": 2098517902,
+    "upgradeConditionsDes4": 2075980962,
+    "reward": 110020,
+    "upgradeTime": 39600,
+    "upgradeConditionsDes2": 1127655544
+  },
+  {
+    "carModelLevel": 5,
+    "functionUnlockDes": 1610312675,
+    "homeVoucherCollectlim": 4320,
+    "iconImage": "$UI_Img_CampingCar_Levelup_Screw_Nml.png",
+    "events": [
+      [
+        "addHomePetNumLimit",
+        [
+          1
+        ]
+      ]
+    ],
+    "levelDes": 2120936584,
+    "source2": 811,
+    "source3": 811,
+    "source4": 811,
+    "unlockItem": [
+      [
+        4010172,
+        490
+      ],
+      [
+        4010177,
+        270
+      ]
+    ],
+    "upgradeConditions1": 306164,
+    "upgradeConditions2": 306135,
+    "upgradeConditions3": 306153,
+    "upgradeConditions4": 306173,
+    "upgradeConditionsDes1": 1478204355,
+    "unlockCost": [
+      1010,
+      20800000
+    ],
+    "upgradeConditionsDes3": 2091160985,
+    "upgradeConditionsDes4": 1755056903,
+    "reward": 110021,
+    "source5": 102049,
+    "upgradeConditions5": 306116,
+    "upgradeConditionsDes5": 1248718416,
+    "upgradeTime": 43200,
+    "upgradeConditionsDes2": 1374027824
+  }
+]

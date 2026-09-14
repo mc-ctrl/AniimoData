@@ -1,0 +1,96 @@
+[
+  [
+    {
+      "reward": 21002,
+      "pic": "$UI_Img_BadgeStory_002.png",
+      "author": "guili.sun",
+      "num": 1
+    },
+    {
+      "reward": 21003,
+      "author": "guili.sun",
+      "num": 2
+    },
+    {
+      "reward": 22001,
+      "author": "guili.sun",
+      "num": 3
+    },
+    {
+      "reward": 22002,
+      "author": "guili.sun",
+      "num": 4
+    },
+    {
+      "reward": 21002,
+      "author": "guili.sun",
+      "num": 5
+    }
+  ],
+  [
+    {
+      "reward": 21003,
+      "pic": "$UI_Img_BadgeStory_003.png",
+      "num": 2,
+      "condition": 1201,
+      "author": "guili.sun"
+    },
+    {
+      "reward": 22001,
+      "num": 4,
+      "author": "guili.sun",
+      "condition": 1201
+    },
+    {
+      "reward": 22002,
+      "num": 5,
+      "author": "guili.sun",
+      "condition": 1201
+    },
+    {
+      "reward": 21002,
+      "num": 6,
+      "author": "guili.sun",
+      "condition": 1201
+    },
+    {
+      "reward": 21003,
+      "num": 7,
+      "author": "guili.sun",
+      "condition": 1201
+    }
+  ],
+  [
+    {
+      "reward": 22001,
+      "pic": "$UI_Img_BadgeStory_004.png",
+      "num": 2,
+      "condition": 1202,
+      "author": "guili.sun"
+    },
+    {
+      "reward": 22002,
+      "num": 3,
+      "author": "guili.sun",
+      "condition": 1202
+    },
+    {
+      "reward": 21002,
+      "num": 4,
+      "author": "guili.sun",
+      "condition": 1202
+    },
+    {
+      "reward": 21003,
+      "num": 5,
+      "author": "guili.sun",
+      "condition": 1202
+    },
+    {
+      "reward": 22001,
+      "num": 6,
+      "author": "guili.sun",
+      "condition": 1202
+    }
+  ]
+]

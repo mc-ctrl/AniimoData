@@ -1,0 +1,368 @@
+{
+  "nodeMap": {
+    "37": {
+      "totalDamage": 750,
+      "name": "pureDamageByQTEHit",
+      "eventName": "qtePartMiss",
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_wolferno_attack_hit_h",
+        "hitCameraShakeId": -1,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Avatar_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000
+      },
+      "UID": "beb63643-76cd-4898-94d5-25e00dca6d7e",
+      "target": "TARGET",
+      "NodeID": 37,
+      "maxHitCount": 15
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.5,
+      "NodeID": 60,
+      "UID": "401d68e2-4edd-43ca-9594-05fd3d843042"
+    },
+    "39": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 42,
+      "NodeID": 39,
+      "UID": "b50a4217-1ed7-47e0-8470-07272ff21ba2",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        42,
+        37
+      ]
+    },
+    "12": {
+      "UID": "32ad2996-1d2c-4c3b-a597-33b03fc126d5",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 12
+    },
+    "41": {
+      "eventName": "qtePartHit",
+      "NodeID": 41,
+      "UID": "04005f97-b106-44ba-aaeb-29e933160b25",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        39
+      ]
+    },
+    "42": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0,
+        "reduce_cur_tp_rate": 0
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_wolferno_attack_hit_h",
+        "hitCameraShakeId": -1,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Avatar_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000
+      },
+      "UID": "dac140c5-3696-4f51-9feb-442d7310229c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 42
+    },
+    "56": {
+      "UID": "49628200-9456-4105-9dab-7f30694255bf",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "NodeID": 56
+    },
+    "54": {
+      "UID": "fee98ab7-cc7e-4b40-b8c9-0fb71caceae8",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 54
+    },
+    "8": {
+      "name": "startQteTimeline",
+      "UID": "d1371e81-6061-4af0-9ebe-af6531893b07",
+      "target": "OWNER",
+      "NodeID": 8,
+      "qteGroupId": "QTE_Continous_Button"
+    },
+    "31": {
+      "cameraShakeId": 21121,
+      "name": "playCameraImpulseById",
+      "UID": "38372796-75c1-44f1-9f8a-24b5a7265c59",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "52": {
+      "name": "stopEffectStr",
+      "UID": "05334f91-ecf1-4640-8305-9ea158501baa",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_L",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "23": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "971bac24-93c4-4901-8366-7b6e1353a0e5",
+      "target": "OWNER",
+      "NodeID": 23,
+      "animId": "Skill_ShieldWave_Idle"
+    },
+    "46": {
+      "name": "stopEffectStr",
+      "UID": "65e5e157-2336-4f47-941c-08e9db51b10f",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_Appear",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "11bf2faa-2a3b-4688-b953-4eaa1011a19b",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_ShieldWave_Ready"
+    },
+    "20": {
+      "UID": "7199c3e6-e728-4a31-8a7b-c26c28e2dbad",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16,
+          46,
+          51,
+          52
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d9ac3bc7-0aff-484b-8a01-440776f315f2",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_L",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "da2cda29-0326-44eb-bd03-bb4537d77de9",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_R",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "3cc96644-2a91-42f7-9bf1-319e16820858",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          15,
+          21,
+          22
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "56426f48-d169-4bb8-b338-259cc9958470",
+      "target": "OWNER",
+      "NodeID": 24,
+      "animId": "Skill_ShieldWave_End"
+    },
+    "14": {
+      "UID": "2b2f691d-eaa8-46db-98a6-1f1caa61eda2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          23,
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 10,
+      "UID": "7fe2b8a2-a9fe-40db-8aa4-dce37ba40805"
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f1bc7a69-94f4-4791-85b8-af560e79f31c",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_Appear",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "d15dd322-d340-484a-ac09-4471f6ee8727",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_R",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "16": {
+      "name": "stopQteTimeline",
+      "UID": "ea70cd19-4950-4aaa-9f39-89e53c81531a",
+      "target": "OWNER",
+      "NodeID": 16,
+      "qteGroupId": "QTE_Continous_Button"
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "746e2af4-439d-41e3-a5f1-9adbed9d3bb1",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_Finalwave",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "a2c30175-f5ba-4570-aff2-1fc871e0d5ab",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_Appear",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "25b12222-9d4e-4f13-8773-c3fdc290479a",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_L",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          27,
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.5,
+      "NodeID": 18,
+      "UID": "720802f6-8d8d-4977-86de-a6c7bf4cd0e1"
+    },
+    "58": {
+      "UID": "cea38352-6fe6-4730-b8cc-dda753ae5a3d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 58
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          41,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 33,
+      "UID": "fdfebd3f-22cd-4054-8d00-a5a97d45bc4b"
+    },
+    "51": {
+      "name": "stopEffectStr",
+      "UID": "30ac93e9-8a50-4e40-8d6a-10194a75e353",
+      "effectId": "Eff_Avatar_Female_Skill_ShieldWave_StcikAppear_R",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24,
+          29,
+          30,
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 26,
+      "UID": "15cabf1e-a204-40bf-ad4b-4a6c2f7c17f4"
+    }
+  },
+  "BPName": "ability_9200010",
+  "NodeID": 6,
+  "UID": "9b20e0a4-d102-44f8-ad9c-18899e79e983",
+  "eventIds": [
+    14,
+    4,
+    10,
+    33,
+    18,
+    20,
+    60,
+    26,
+    56
+  ],
+  "layer": "Base",
+  "length": 6.2
+}

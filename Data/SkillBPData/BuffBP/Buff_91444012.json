@@ -1,0 +1,36 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91444012",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "c2aec51d-990d-4a34-bd4c-727d30e6a801",
+      "name": "callClientAction",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "NodeID": 4,
+      "from": 14440000,
+      "to": 14440102,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 10,
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "UID": "604fa16f-1f81-4102-8ed7-6249f952120d",
+      "notShowCountDown": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

@@ -1,0 +1,2635 @@
+{
+  "4030016": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation3.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.52,
+      0,
+      5,
+      0,
+      -829571230,
+      0.22,
+      0.08,
+      0.35,
+      1
+    ]
+  },
+  "4030017": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.65,
+      0,
+      5,
+      0,
+      -829571230,
+      0.23,
+      0.12,
+      0.34,
+      1
+    ]
+  },
+  "4030018": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation1.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.65,
+      0,
+      5,
+      0,
+      -829571230,
+      0.23,
+      0.12,
+      0.34,
+      1
+    ]
+  },
+  "4030019": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation2.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.65,
+      0,
+      5,
+      0,
+      -829571230,
+      0.23,
+      0.12,
+      0.34,
+      1
+    ]
+  },
+  "4030020": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation3.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.65,
+      0,
+      5,
+      0,
+      -829571230,
+      0.23,
+      0.12,
+      0.34,
+      1
+    ]
+  },
+  "4030021": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation1.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.35,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.22,
+      0.12,
+      0.35,
+      1
+    ]
+  },
+  "4030022": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation2.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.35,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.22,
+      0.12,
+      0.35,
+      1
+    ]
+  },
+  "5000221": {
+    "res": "$P_Item_GrabEgg_Relic_51.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4010017": {
+    "useDefault": 1,
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.41,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.36,
+      1
+    ]
+  },
+  "4030024": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.45,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.16,
+      0.03,
+      0.36,
+      1
+    ]
+  },
+  "4030025": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.45,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.16,
+      0.03,
+      0.36,
+      1
+    ]
+  },
+  "5000501": {
+    "res": "$P_Item_Props_CacophonicRhapsody.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030027": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.45,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.16,
+      0.03,
+      0.36,
+      1
+    ]
+  },
+  "4030028": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation1.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.43,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.05,
+      0.32,
+      1
+    ]
+  },
+  "4001007": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "5000502": {
+    "res": "$P_Item_Props_SilkenFoam.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4001009": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.44,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "4030003": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation.prefab",
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.62,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.33,
+      1
+    ]
+  },
+  "4001013": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      7,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "5000503": {
+    "res": "$P_Item_Props_ThornStrike.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030032": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.49,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.11,
+      0.32,
+      1
+    ]
+  },
+  "4030033": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.49,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.11,
+      0.32,
+      1
+    ]
+  },
+  "4030034": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.49,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.11,
+      0.32,
+      1
+    ]
+  },
+  "5000504": {
+    "res": "$P_Item_Props_SleepWellStayWell.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030036": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation2.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      9,
+      -30,
+      0,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "5000505": {
+    "res": "$P_Item_Props_CacophonicRhapsody_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030011": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation1.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.79,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.3,
+      1
+    ]
+  },
+  "4030038": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -12,
+      131,
+      11,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "4030039": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -12,
+      131,
+      11,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "5000506": {
+    "res": "$P_Item_Props_SilkenFoam_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030041": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -12,
+      131,
+      11,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "4030015": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation2.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.52,
+      0,
+      5,
+      0,
+      -829571230,
+      0.22,
+      0.08,
+      0.35,
+      1
+    ]
+  },
+  "5000507": {
+    "res": "$P_Item_Props_ThornStrike_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030044": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation3.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.44,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "5900502": {
+    "res": "$P_Item_Props_SilkenFoam.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5000508": {
+    "res": "$P_Item_Props_SleepWellStayWell_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030046": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.42,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030047": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.42,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030048": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.42,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "5000509": {
+    "res": "$P_Item_Props_DiamondEgg_Pink.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900508": {
+    "res": "$P_Item_Props_SleepWellStayWell_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030050": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation2.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "5900510": {
+    "res": "$P_Item_Props_FlamesBreathHorn_Red.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5000510": {
+    "res": "$P_Item_Props_FlamesBreathHorn_Red.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901301": {
+    "res": "$P_Item_Props_DiamondEgg.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030052": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.78,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030053": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.78,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "5000511": {
+    "res": "$P_Item_Props_SoulReturningGemBottle_Red.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030055": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.78,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030056": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation1.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      7,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030057": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation2.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      7,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030058": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation3.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      7,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4001062": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit.prefab",
+    "scale": 0.25,
+    "itemParameter": [
+      0.01,
+      0.1,
+      0.42,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.04,
+      0.34,
+      1
+    ]
+  },
+  "4030059": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -6,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030060": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -6,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030061": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -6,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030062": {
+    "res": "$P_Home_Produce_Crops_Agave_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -6,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030063": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation1.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.49,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030064": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation2.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.49,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030065": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation3.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.49,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030066": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.55,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030067": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.55,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030068": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.55,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030069": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.55,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030070": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit1.prefab",
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.32,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "4030071": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit2.prefab",
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.32,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "4030072": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit3.prefab",
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.32,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "4030073": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit.prefab",
+    "scale": 1.5,
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.41,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.28,
+      1
+    ]
+  },
+  "4030074": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit1.prefab",
+    "scale": 1.5,
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.41,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.28,
+      1
+    ]
+  },
+  "4030075": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit2.prefab",
+    "scale": 1.5,
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.41,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.28,
+      1
+    ]
+  },
+  "4030076": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit3.prefab",
+    "scale": 1.5,
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.41,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.28,
+      1
+    ]
+  },
+  "4030077": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation1.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.35,
+      0.46,
+      14,
+      1,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "5001301": {
+    "res": "$P_Item_Props_DiamondEgg.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030078": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation2.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.35,
+      0.46,
+      14,
+      1,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "4030079": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation3.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.35,
+      0.46,
+      14,
+      1,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "5001305": {
+    "res": "$P_Item_Props_RainbowPrismCore.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030080": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.87,
+      0.72,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.08,
+      0.32,
+      1
+    ]
+  },
+  "4030081": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation1.prefab",
+    "itemParameter": [
+      0.03,
+      0.87,
+      0.72,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.08,
+      0.32,
+      1
+    ]
+  },
+  "4030082": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.87,
+      0.72,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.08,
+      0.32,
+      1
+    ]
+  },
+  "4030083": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation3.prefab",
+    "itemParameter": [
+      0.03,
+      0.87,
+      0.72,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.08,
+      0.32,
+      1
+    ]
+  },
+  "4030084": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit1.prefab",
+    "scale": 0.25,
+    "itemParameter": [
+      0.01,
+      0.1,
+      0.42,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.04,
+      0.34,
+      1
+    ]
+  },
+  "5001309": {
+    "res": "$P_Item_Props_DreamMemoryAmber.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030085": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit2.prefab",
+    "scale": 0.25,
+    "itemParameter": [
+      0.01,
+      0.1,
+      0.42,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.04,
+      0.34,
+      1
+    ]
+  },
+  "4030086": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit3.prefab",
+    "scale": 0.25,
+    "itemParameter": [
+      0.01,
+      0.1,
+      0.42,
+      -6,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.04,
+      0.34,
+      1
+    ]
+  },
+  "4030087": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit.prefab",
+    "itemParameter": [
+      0.01,
+      0.1,
+      0.73,
+      7,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.04,
+      0.34,
+      1
+    ]
+  },
+  "5001313": {
+    "res": "$P_Item_Props_FlamesBreathHorn.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030089": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit2.prefab",
+    "itemParameter": [
+      0.01,
+      0.1,
+      0.73,
+      7,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.04,
+      0.34,
+      1
+    ]
+  },
+  "4030090": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit3.prefab",
+    "itemParameter": [
+      0.06,
+      0.13,
+      0.79,
+      0,
+      93,
+      21,
+      -829571230,
+      0.22,
+      0.04,
+      0.32,
+      1
+    ]
+  },
+  "4030091": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Variation3.prefab",
+    "scale": 0.7,
+    "itemParameter": [
+      0.06,
+      0.13,
+      0.79,
+      0,
+      93,
+      21,
+      -829571230,
+      0.22,
+      0.04,
+      0.32,
+      1
+    ]
+  },
+  "5900218": {
+    "res": "$P_Item_GrabEgg_Relic_42.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5001317": {
+    "res": "$P_Item_Props_RootofLifeScepter.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901305": {
+    "res": "$P_Item_Props_RainbowPrismCore.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901309": {
+    "res": "$P_Item_Props_DreamMemoryAmber.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5001321": {
+    "res": "$P_Item_Props_GoldenShield.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901321": {
+    "res": "$P_Item_Props_GoldenShield.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901329": {
+    "res": "$P_Item_Props_EternalVowMusicBox.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5001325": {
+    "res": "$P_Item_Props_SoulReturningGemBottle.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5001329": {
+    "res": "$P_Item_Props_EternalVowMusicBox.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5001333": {
+    "res": "$P_Item_Props_BurningHeartVulcan.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4001010": {
+    "res": "$P_Home_Produce_Crops_Grape_Fruit.prefab",
+    "itemParameter": [
+      0.03,
+      0.12,
+      0.32,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "4001000": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.48,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.31,
+      1
+    ]
+  },
+  "5901333": {
+    "res": "$P_Item_Props_BurningHeartVulcan.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901325": {
+    "res": "$P_Item_Props_SoulReturningGemBottle.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901317": {
+    "res": "$P_Item_Props_RootofLifeScepter.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5901313": {
+    "res": "$P_Item_Props_FlamesBreathHorn.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900511": {
+    "res": "$P_Item_Props_SoulReturningGemBottle_Red.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900509": {
+    "res": "$P_Item_Props_DiamondEgg_Pink.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900507": {
+    "res": "$P_Item_Props_ThornStrike_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900506": {
+    "res": "$P_Item_Props_SilkenFoam_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900505": {
+    "res": "$P_Item_Props_CacophonicRhapsody_Treasure.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900504": {
+    "res": "$P_Item_Props_SleepWellStayWell.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900503": {
+    "res": "$P_Item_Props_ThornStrike.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900501": {
+    "res": "$P_Item_Props_CacophonicRhapsody.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "5900221": {
+    "res": "$P_Item_GrabEgg_Relic_51.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030012": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation2.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.79,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.3,
+      1
+    ]
+  },
+  "4030042": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation1.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.44,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "4030037": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation3.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      9,
+      -30,
+      0,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030030": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation3.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.43,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.05,
+      0.32,
+      1
+    ]
+  },
+  "4030004": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation1.prefab",
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.62,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.33,
+      1
+    ]
+  },
+  "4001002": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.49,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.31,
+      1
+    ]
+  },
+  "4030000": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation1.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.48,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.31,
+      1
+    ]
+  },
+  "4030054": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.78,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030001": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation2.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.48,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.31,
+      1
+    ]
+  },
+  "4030051": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation3.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4001005": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      9,
+      -30,
+      0,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4010019": {
+    "useDefault": 1,
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.41,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.36,
+      1
+    ]
+  },
+  "4030049": {
+    "res": "$P_Home_Produce_Crops_Lavender_Variation1.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      1,
+      18,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030045": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.42,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4001001": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.52,
+      0,
+      5,
+      0,
+      -829571230,
+      0.22,
+      0.08,
+      0.35,
+      1
+    ]
+  },
+  "4010016": {
+    "useDefault": 1,
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.41,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.36,
+      1
+    ]
+  },
+  "4030043": {
+    "res": "$P_Home_Produce_Crops_Soybean_Variation2.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.44,
+      1,
+      87,
+      -5,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "4001003": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.35,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.22,
+      0.12,
+      0.35,
+      1
+    ]
+  },
+  "4030014": {
+    "res": "$P_Home_Produce_Crops_SugarCane_Variation1.prefab",
+    "scale": 0.5,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.52,
+      0,
+      5,
+      0,
+      -829571230,
+      0.22,
+      0.08,
+      0.35,
+      1
+    ]
+  },
+  "4030013": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation3.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.79,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.3,
+      1
+    ]
+  },
+  "4030010": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation.prefab",
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.79,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.3,
+      1
+    ]
+  },
+  "4030009": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation3.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.49,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.31,
+      1
+    ]
+  },
+  "4010018": {
+    "useDefault": 1,
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.41,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.36,
+      1
+    ]
+  },
+  "4030008": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation2.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.49,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.31,
+      1
+    ]
+  },
+  "4001016": {
+    "res": "$P_Home_Produce_Crops_Ginseng_Variation.prefab",
+    "scale": 0.4,
+    "itemParameter": [
+      0.03,
+      0.35,
+      0.46,
+      14,
+      1,
+      2,
+      -829571230,
+      0.17,
+      0.08,
+      0.29,
+      1
+    ]
+  },
+  "4030006": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation3.prefab",
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.62,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.33,
+      1
+    ]
+  },
+  "4001014": {
+    "res": "$P_Home_Produce_Crops_Rose_Variation.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.49,
+      -19,
+      -179,
+      2,
+      -829571230,
+      0.22,
+      0,
+      0.32,
+      1
+    ]
+  },
+  "4030002": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation3.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.48,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.31,
+      1
+    ]
+  },
+  "4030026": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.45,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.16,
+      0.03,
+      0.36,
+      1
+    ]
+  },
+  "4030023": {
+    "res": "$P_Home_Produce_Crops_Rice_Variation3.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.35,
+      -5,
+      1,
+      0,
+      -829571230,
+      0.22,
+      0.12,
+      0.35,
+      1
+    ]
+  },
+  "4030005": {
+    "res": "$P_Home_Produce_Crops_Wheat_Variation2.prefab",
+    "itemParameter": [
+      0.04,
+      0.04,
+      0.62,
+      0,
+      5,
+      0,
+      -829571230,
+      0.19,
+      0.23,
+      0.33,
+      1
+    ]
+  },
+  "4030007": {
+    "res": "$P_Home_Produce_Crops_Potato_Variation1.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      -0.02,
+      0.17,
+      0.49,
+      0,
+      5,
+      0,
+      -829571230,
+      0.3,
+      0.03,
+      0.31,
+      1
+    ]
+  },
+  "4001004": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.43,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.05,
+      0.32,
+      1
+    ]
+  },
+  "4030029": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation2.prefab",
+    "scale": 0.3,
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.43,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.05,
+      0.32,
+      1
+    ]
+  },
+  "4030031": {
+    "res": "$P_Home_Produce_Crops_Cotton_Variation.prefab",
+    "itemParameter": [
+      0.03,
+      0.17,
+      0.49,
+      -29,
+      22,
+      0,
+      -829571230,
+      0.22,
+      0.11,
+      0.32,
+      1
+    ]
+  },
+  "4030035": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation1.prefab",
+    "scale": 0.66,
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.56,
+      9,
+      -30,
+      0,
+      -829571230,
+      0.22,
+      0,
+      0.31,
+      1
+    ]
+  },
+  "4030040": {
+    "res": "$P_Home_Produce_Crops_Strawberry_Variation2.prefab",
+    "itemParameter": [
+      0.03,
+      0.01,
+      0.54,
+      -12,
+      131,
+      11,
+      -829571230,
+      0.22,
+      0,
+      0.3,
+      1
+    ]
+  },
+  "5000218": {
+    "res": "$P_Item_GrabEgg_Relic_42.prefab",
+    "showoffaction": [
+      "GrabEgg_ShowUp_Loop"
+    ],
+    "itemParameter": [
+      -0.02,
+      0.13,
+      0.35,
+      1,
+      -6,
+      -2,
+      -829571230,
+      0.14,
+      0.04,
+      0.35,
+      1
+    ]
+  },
+  "4030088": {
+    "res": "$P_Home_Produce_Crops_Pumpkin_Fruit1.prefab",
+    "itemParameter": [
+      0.01,
+      0.1,
+      0.73,
+      7,
+      1,
+      2,
+      -829571230,
+      0.22,
+      0.04,
+      0.34,
+      1
+    ]
+  }
+}

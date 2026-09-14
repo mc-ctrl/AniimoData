@@ -1,0 +1,102 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "key": "delay1",
+      "duration": 0.01,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "0f5fbdab-5623-4c91-acd9-9855aec71f8b",
+      "name": "addEntityTimer"
+    },
+    "4": {
+      "actionIds": [
+        2,
+        11,
+        16
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "3551e98e-f756-4104-835d-0500026a4e15",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "325a6dbb-c1fd-4a1d-bc22-762d2abc907b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_LotusLeafEssence_Start",
+      "NodeID": 16
+    },
+    "6": {
+      "UID": "b0ced10e-965c-4a35-ab12-8d21a89c3800",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "13": {
+      "UID": "5a541ba8-b70c-487d-a80a-5fc619ff0c8d",
+      "target": "MASTER",
+      "name": "isTargetAlive",
+      "NodeID": 13
+    },
+    "11": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 10451601,
+      "NodeID": 11,
+      "UID": "5fb0fb60-cb7f-4df6-8cc3-49e4d9fb89c9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Creation",
+      "stick": 0,
+      "pos": "OWNER",
+      "name": "createEntity"
+    },
+    "8": {
+      "UID": "57968cea-3478-475e-8df2-45ff291d3410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "2": {
+      "NodeID": 2,
+      "UID": "506b127d-98de-4220-b897-8d0132195f1a",
+      "effectId": "Eff_Parmon_10045_Lotus_02_End2",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    }
+  },
+  "BPName": "timeline_210451401",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    8
+  ],
+  "layer": "Base",
+  "length": 9999
+}

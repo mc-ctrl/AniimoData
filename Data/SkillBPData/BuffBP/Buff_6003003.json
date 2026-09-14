@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003003",
+  "calcInfoByLuaConfig": {
+    "id": 6003003,
+    "pvp_taken_dmg_dec_rate_v": "param1",
+    "type": 1,
+    "taken_dmg_dec_rate_v": "param0"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

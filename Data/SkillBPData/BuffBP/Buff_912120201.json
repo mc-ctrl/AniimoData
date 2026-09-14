@@ -1,0 +1,543 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912120201",
+  "name": "舞力值积满提升攻击力buff",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "onBuffLayerChangeIds": [
+    9,
+    16
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        60,
+        62,
+        63
+      ],
+      "conditionActionIds": [
+        64
+      ],
+      "UID": "a12cb110-db76-4cd2-93a5-84c3bc956469",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        35,
+        45,
+        46
+      ],
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "abdf59e5-a174-4cce-a66b-fc4a26c13fe3",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        37
+      ],
+      "NodeID": 38
+    },
+    "39": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 39,
+      "UID": "63435160-ed38-4c8b-8617-8863ae6f086f",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "63": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 63,
+      "UID": "cb7e0754-15bd-42b4-b71f-5d8414ce487a",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "41": {
+      "actionIds": [
+        55,
+        57,
+        58
+      ],
+      "conditionActionIds": [
+        59
+      ],
+      "UID": "f92ea9c8-c7f8-4f65-9295-6b6a6fe88b30",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        39,
+        43,
+        44
+      ],
+      "NodeID": 41
+    },
+    "42": {
+      "UID": "d577de20-175e-4374-85eb-ca2a043ff20b",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        41
+      ],
+      "NodeID": 42
+    },
+    "35": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 35,
+      "UID": "239f9c99-0b10-4b46-b989-cab36c0a0305",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "44": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 44,
+      "UID": "82206749-9a33-43a5-bdca-1a17da7c6c9e",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower03",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "66": {
+      "name": "stopEffectStr",
+      "UID": "d13a9e71-ad27-4886-9c44-bb45d223a5da",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower",
+      "target": "OWNER",
+      "NodeID": 66
+    },
+    "68": {
+      "name": "stopEffectStr",
+      "UID": "8bba0705-93fb-4597-890a-5dfeff3a576c",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower02",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "fc2c400d-a05f-4b2d-a4ba-d00e8d4afddb",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "4": {
+      "actionIds": [
+        2,
+        31,
+        32
+      ],
+      "conditionActionIds": [
+        65
+      ],
+      "UID": "c479d8e0-69ca-4946-9d6e-cd85f263e40a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        66,
+        68,
+        69
+      ],
+      "NodeID": 4
+    },
+    "71": {
+      "name": "stopEffectStr",
+      "UID": "7c1f5726-f196-4ab8-93dd-2aed9c2cb3de",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "target": "OWNER",
+      "NodeID": 71
+    },
+    "72": {
+      "name": "checkPetPrototypeId",
+      "UID": "7ee59c37-abaa-4bd4-b924-405e47465ea7",
+      "target": "OWNER",
+      "petPrototypeId": 1021100,
+      "NodeID": 72
+    },
+    "75": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "df9d9140-dd36-4fc5-aa1d-91ad489362e2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Healing01",
+      "NodeID": 75
+    },
+    "73": {
+      "name": "stopEffectStr",
+      "UID": "cadc4fee-65ad-41d5-ab7c-9af6b447d4d0",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "target": "OWNER",
+      "NodeID": 73
+    },
+    "19": {
+      "actionIds": [
+        17,
+        27
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "9f714ee5-8318-4232-a835-529d6e4f6590",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "70": {
+      "name": "stopEffectStr",
+      "UID": "afed9235-715a-4bf9-a248-2743518da7bb",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "69": {
+      "name": "stopEffectStr",
+      "UID": "e745f912-13e7-4618-8531-af2d99bc09c3",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower03",
+      "target": "OWNER",
+      "NodeID": 69
+    },
+    "65": {
+      "name": "checkPetPrototypeId",
+      "UID": "ec3a6906-c062-48ac-8214-f3cd324e8fff",
+      "target": "OWNER",
+      "petPrototypeId": 1021100,
+      "NodeID": 65
+    },
+    "64": {
+      "name": "checkPetPrototypeId",
+      "UID": "c19d104f-fca9-4c2e-87f5-798811f5ef4b",
+      "target": "OWNER",
+      "petPrototypeId": 1021100,
+      "NodeID": 64
+    },
+    "62": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 62,
+      "UID": "9c47b200-61f8-497a-8917-53e73153e666",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "60": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 60,
+      "UID": "4589a917-f239-4558-ae46-aae84edefb97",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "59": {
+      "name": "checkPetPrototypeId",
+      "UID": "81973fa9-3aad-4cc1-b992-99604026c5fb",
+      "target": "OWNER",
+      "petPrototypeId": 1021100,
+      "NodeID": 59
+    },
+    "58": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 58,
+      "UID": "5be853a0-68de-4d83-8aca-8e1d685e3a4f",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "57": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 57,
+      "UID": "62316f1f-e9f0-43c7-9e52-1e43ef8f38f3",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "55": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 55,
+      "UID": "94231cf4-880b-4916-a6c1-798db0293361",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "enable": true,
+      "childTransformName": "All"
+    },
+    "53": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ae40842c-1420-42e0-8f56-80cd631e3f8e",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "speed": 1,
+      "NodeID": 53
+    },
+    "52": {
+      "name": "checkPetPrototypeId",
+      "UID": "df5d5d80-aa57-4f0c-8232-ef0bd14d6892",
+      "target": "OWNER",
+      "petPrototypeId": 1021100,
+      "NodeID": 52
+    },
+    "50": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e0ec9cab-0fa0-44c0-9118-2b1ab084c52c",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "speed": 1,
+      "NodeID": 50
+    },
+    "49": {
+      "name": "checkPetPrototypeId",
+      "UID": "c761b36d-809c-41d7-98e4-5626618290c7",
+      "target": "OWNER",
+      "petPrototypeId": 1021100,
+      "NodeID": 49
+    },
+    "48": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ce966cbf-9a9f-4d61-811d-199f2aea4ced",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "8": {
+      "rValue": 12,
+      "name": "equal",
+      "UID": "6246fdd9-9c0d-4455-98f0-ee75a90ee435",
+      "NodeID": 8,
+      "lValue": {
+        "UID": "de5b4f6f-cfd7-4f4d-99f7-a35ef4176d11",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 7
+      }
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "5675b2ea-3669-4847-b863-6e1ece090d4b",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower02",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "550665f1-b063-4c85-85db-62cdb1f71b59",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "47": {
+      "name": "checkPetPrototypeId",
+      "UID": "f9d8141a-4aa7-48e7-b42d-4423e1dbb3c4",
+      "target": "OWNER",
+      "petPrototypeId": 1021100,
+      "NodeID": 47
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "a8aaa627-9e91-4fa0-a8f4-882df18ad98f",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower02",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "d9a60a7f-3d3e-44ec-a1ba-06fb020e2154",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "55b88496-1ecb-41e4-a4e8-6797438911bd",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "76a3c937-c9a9-46a4-90c0-e02e7475b7d8",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower03",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "22": {
+      "UID": "ef77e94f-5e36-49ca-aaac-c509f107fac2",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 22
+    },
+    "13": {
+      "actionIds": [
+        70,
+        50
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "f5c578b6-8804-47b9-af41-e2bc3c3fdb53",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11,
+        33
+      ],
+      "NodeID": 13
+    },
+    "45": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 45,
+      "UID": "887ee2c1-c7ee-47fd-9dba-5cc0e2578c02",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower02",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "74": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 912120104,
+      "NodeID": 74,
+      "UID": "5580585d-18b1-49af-96c9-b3b233ed3233",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "46": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 46,
+      "UID": "84b645d0-593b-4854-9f69-42a498a0a72c",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower03",
+      "enable": false,
+      "childTransformName": "All"
+    },
+    "15": {
+      "rValue": 24,
+      "name": "equal",
+      "UID": "3ee121f6-8671-42c6-8191-c1eadb1034d5",
+      "NodeID": 15,
+      "lValue": {
+        "UID": "2cc8fc65-fecd-4d16-a5c0-1f042796adb4",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 14
+      }
+    },
+    "25": {
+      "actionIds": [
+        71,
+        53
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "1fe1dcbd-198d-4758-a040-f54fd3feed4d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23,
+        34
+      ],
+      "NodeID": 25
+    },
+    "16": {
+      "actionIds": [
+        75,
+        25,
+        20,
+        74
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "f0e43e34-1849-4805-8254-0217f39350f6",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "27": {
+      "actionIds": [
+        73
+      ],
+      "conditionActionIds": [
+        72
+      ],
+      "UID": "e04c87b1-022e-4249-a225-8c408867be6f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        26
+      ],
+      "NodeID": 27
+    },
+    "17": {
+      "target": "OWNER",
+      "duration": 2,
+      "buffId": 912120202,
+      "NodeID": 17,
+      "UID": "b21712c8-b216-474a-bbe8-e2a322508609",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "29": {
+      "actionIds": [
+        48
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "0a761c02-233c-4697-91b9-27138ebdbe56",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 29
+    },
+    "28": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ff345670-acfb-49b5-9687-131199613338",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "1500efd8-e2d5-4463-b212-e6d46bc63e74",
+      "effectId": "Eff_Parmon_10211_Buff_DancePower03",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "93c56c3b-2195-42f5-8637-33c3dc3bb510",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower02",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "34": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6d26c783-ee63-42f0-93ef-43a15c4a8f65",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower03",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "43": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 43,
+      "UID": "0bbf2f9e-cc74-4f07-ae16-01b0ac986122",
+      "effectId": "Eff_Parmon_10212_Buff_DancePower02",
+      "enable": true,
+      "childTransformName": "All"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    29,
+    42,
+    38
+  ]
+}

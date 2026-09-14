@@ -1,0 +1,687 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126201",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    1,
+    20
+  ],
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10261_Skill_CloudShield"
+    }
+  ],
+  "nodeMap": {
+    "37": {
+      "UID": "185097c1-3213-4acd-8725-663b5d119c60",
+      "actorId": {
+        "key": "Bulbly_01",
+        "name": "getServerCacheVal",
+        "UID": "2f54ed72-54e4-4419-9abb-5aec2a729107",
+        "target": "OWNER",
+        "NodeID": 36
+      },
+      "name": "destroyEntity",
+      "NodeID": 37
+    },
+    "49": {
+      "UID": "efbf002e-8f6e-4e6c-b0c0-383b9f5348dc",
+      "name": "detachAll",
+      "NodeID": 49
+    },
+    "39": {
+      "key": "AIMsg",
+      "duration": 0.5,
+      "actionIds": [
+        37,
+        45,
+        43,
+        41
+      ],
+      "NodeID": 39,
+      "UID": "79ca381b-6e7e-444b-acba-78a358dfcabd",
+      "name": "addEntityTimer"
+    },
+    "51": {
+      "buffId": 100014,
+      "name": "removeBuff",
+      "UID": "60352f0c-9b21-4c6f-b595-061f0a8ab24c",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "41": {
+      "UID": "27c8d160-bc8b-4203-8487-beff3a1a5e70",
+      "actorId": {
+        "key": "Bulbly_04",
+        "name": "getServerCacheVal",
+        "UID": "b017b54c-6b5b-4cab-9d9c-7a87d97d87fc",
+        "target": "OWNER",
+        "NodeID": 40
+      },
+      "name": "destroyEntity",
+      "NodeID": 41
+    },
+    "64": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "46962cd5-8579-46c1-b8a9-45d90e5e9d9a",
+      "target": {
+        "key": "Bulbly_04",
+        "name": "getServerCacheVal",
+        "UID": "ac804230-e8b1-4fe3-b54c-053a90359d2f",
+        "target": "OWNER",
+        "NodeID": 63
+      },
+      "NodeID": 64
+    },
+    "43": {
+      "UID": "6d9eac8d-554b-414e-bdf2-5af78cead2cd",
+      "actorId": {
+        "key": "Bulbly_03",
+        "name": "getServerCacheVal",
+        "UID": "1d9a4a33-f7e6-4946-8d1a-fe68eaed9026",
+        "target": "OWNER",
+        "NodeID": 42
+      },
+      "name": "destroyEntity",
+      "NodeID": 43
+    },
+    "97": {
+      "UID": "d6f4b068-a39e-430a-941c-4613252704ee",
+      "name": "showBubbleMsg",
+      "msgId": 2245,
+      "NodeID": 97
+    },
+    "84": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "a751aa1a-eec2-481b-a234-57487c40f5b6",
+      "target": {
+        "key": "Bulbly_04",
+        "name": "getServerCacheVal",
+        "UID": "e2550355-9cef-4d65-94f1-b08cff8bd6cd",
+        "target": "OWNER",
+        "NodeID": 83
+      },
+      "NodeID": 84
+    },
+    "66": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "8a9957c6-2207-4401-8469-80c7752e8b51",
+      "target": {
+        "key": "Bulbly_03",
+        "name": "getServerCacheVal",
+        "UID": "d2dba612-14f5-471d-a1af-86a67036b48a",
+        "target": "OWNER",
+        "NodeID": 65
+      },
+      "NodeID": 66
+    },
+    "55": {
+      "buffId": 2126202,
+      "name": "removeBuff",
+      "UID": "6b23468a-1f57-4bc9-a311-825dc84a4f20",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "56": {
+      "buffId": 2126202,
+      "name": "removeBuff",
+      "UID": "bf91e7b4-0178-4e2f-963e-c6c2775ee6d6",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "59": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "4ef43f88-fe7e-492a-8c45-d20e9591eb4d",
+      "target": {
+        "key": "Bulbly_01",
+        "name": "getServerCacheVal",
+        "UID": "f9249472-36a5-4a82-a939-b54308157313",
+        "target": "OWNER",
+        "NodeID": 58
+      },
+      "NodeID": 59
+    },
+    "68": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "eb915d57-fe1f-4b6c-8986-17ae49ff4f72",
+      "target": {
+        "key": "Bulbly_02",
+        "name": "getServerCacheVal",
+        "UID": "55d62775-4c34-45a5-8178-afccc46405a6",
+        "target": "OWNER",
+        "NodeID": 67
+      },
+      "NodeID": 68
+    },
+    "76": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "8a6c2805-6438-4260-aad3-7b0d5bdf9a05",
+      "target": {
+        "key": "Bulbly_03",
+        "name": "getServerCacheVal",
+        "UID": "e017d62d-b681-49af-bfaf-90d58d933c78",
+        "target": "OWNER",
+        "NodeID": 75
+      },
+      "NodeID": 76
+    },
+    "35": {
+      "UID": "f1141c23-f705-4400-b610-7c6e9985ab91",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 35
+    },
+    "3": {
+      "rValue": {
+        "key": "10262Boss_StickNum",
+        "name": "getCacheVal",
+        "UID": "43bafc08-0a96-485c-92f9-c04513ec6cb5",
+        "target": "OWNER",
+        "NodeID": 2
+      },
+      "name": "add",
+      "UID": "399d7de1-4310-4cb3-a212-ebbce1f953aa",
+      "NodeID": 3,
+      "lValue": {
+        "valueName": "CounterInt_1",
+        "name": "getAIBlackBoardValue",
+        "UID": "c8302ed4-4928-4226-8835-dabbc6e155fc",
+        "target": "OWNER",
+        "NodeID": 12
+      }
+    },
+    "4": {
+      "name": "prepareDataForServerActions",
+      "UID": "7f940c16-8ccc-490d-90bf-0f87bdfb193f",
+      "serverActionsIds": [
+        11
+      ],
+      "NodeID": 4,
+      "dataActions": [
+        {
+          "rValue": {
+            "key": "10262Boss_StickNum",
+            "name": "getCacheVal",
+            "UID": "43bafc08-0a96-485c-92f9-c04513ec6cb5",
+            "target": "OWNER",
+            "NodeID": 2
+          },
+          "name": "add",
+          "UID": "399d7de1-4310-4cb3-a212-ebbce1f953aa",
+          "NodeID": 3,
+          "lValue": {
+            "valueName": "CounterInt_1",
+            "name": "getAIBlackBoardValue",
+            "UID": "c8302ed4-4928-4226-8835-dabbc6e155fc",
+            "target": "OWNER",
+            "NodeID": 12
+          }
+        }
+      ]
+    },
+    "88": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "7184c2b2-bae2-4c34-8dad-745adea374e8",
+      "target": {
+        "key": "Bulbly_02",
+        "name": "getServerCacheVal",
+        "UID": "10a67e8a-a84e-4962-a3f4-491645312e2e",
+        "target": "OWNER",
+        "NodeID": 87
+      },
+      "NodeID": 88
+    },
+    "89": {
+      "id": 2002,
+      "hasCountDown": true,
+      "NodeID": 89,
+      "UID": "92c0b5c6-b443-4750-94db-012408c80036",
+      "name": "hideBossMechanismTip"
+    },
+    "86": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "12a4f875-bfb3-4c3c-b76c-202abdd7a62a",
+      "target": {
+        "key": "Bulbly_03",
+        "name": "getServerCacheVal",
+        "UID": "43446bda-52b3-4bb7-b7a9-5dda2f3ee61b",
+        "target": "OWNER",
+        "NodeID": 85
+      },
+      "NodeID": 86
+    },
+    "72": {
+      "key": "AIMsg",
+      "duration": 0.2,
+      "actionIds": [
+        70,
+        78,
+        76,
+        74
+      ],
+      "NodeID": 72,
+      "UID": "72ed521a-54bb-4923-a1d5-253ffda4181a",
+      "name": "addEntityTimer"
+    },
+    "82": {
+      "key": "AIMsg",
+      "duration": 0.1,
+      "actionIds": [
+        80,
+        88,
+        86,
+        84
+      ],
+      "NodeID": 82,
+      "UID": "2be58f5b-e67b-4440-8f9f-c2d8fa0c0e1c",
+      "name": "addEntityTimer"
+    },
+    "91": {
+      "UID": "aa30a067-aadf-407e-b019-d851993c127f",
+      "name": "showBossMechanismTip",
+      "id": 2004,
+      "NodeID": 91
+    },
+    "78": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "dbf3a9ca-3e2c-47fc-b25f-977bfffdec1d",
+      "target": {
+        "key": "Bulbly_02",
+        "name": "getServerCacheVal",
+        "UID": "99425b78-7ba8-4f34-8ccf-c26d193898f0",
+        "target": "OWNER",
+        "NodeID": 77
+      },
+      "NodeID": 78
+    },
+    "92": {
+      "id": 2002,
+      "hasCountDown": true,
+      "NodeID": 92,
+      "UID": "3fca1b6a-0847-48cc-b7f3-bc59441f2781",
+      "name": "hideBossMechanismTip"
+    },
+    "74": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "3872a730-676e-4685-b7bf-18587c4fd9e3",
+      "target": {
+        "key": "Bulbly_04",
+        "name": "getServerCacheVal",
+        "UID": "70f5f85a-7d84-4467-9190-b636ecbc5cd4",
+        "target": "OWNER",
+        "NodeID": 73
+      },
+      "NodeID": 74
+    },
+    "70": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "20714f98-2255-4880-9a27-4798b05d36fe",
+      "target": {
+        "key": "Bulbly_01",
+        "name": "getServerCacheVal",
+        "UID": "8c82950c-1f25-4efe-87b8-900372f2bac0",
+        "target": "OWNER",
+        "NodeID": 69
+      },
+      "NodeID": 70
+    },
+    "61": {
+      "key": "AIMsg",
+      "duration": 0.5,
+      "actionIds": [
+        59,
+        68,
+        66,
+        64
+      ],
+      "NodeID": 61,
+      "UID": "523ceac1-5841-4974-82d9-c95d9a1da6fa",
+      "name": "addEntityTimer"
+    },
+    "94": {
+      "UID": "27ee3c1d-60bf-4c09-a0bf-759f5129f55b",
+      "name": "showBossMechanismTip",
+      "id": 2003,
+      "NodeID": 94
+    },
+    "57": {
+      "buffId": 2126202,
+      "name": "removeBuff",
+      "UID": "3cbb1404-6117-4901-8d44-d37c2d9291f2",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "95": {
+      "id": 2002,
+      "hasCountDown": true,
+      "NodeID": 95,
+      "UID": "84d1588b-1357-4d33-ac74-5ac6cb4b427b",
+      "name": "hideBossMechanismTip"
+    },
+    "5": {
+      "actionIds": [
+        25,
+        29,
+        92,
+        94,
+        17,
+        19,
+        82,
+        47,
+        55,
+        20,
+        99
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "e55c0902-4a9f-4e40-a154-55a1a049940e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "96": {
+      "id": 2002,
+      "hasCountDown": true,
+      "NodeID": 96,
+      "UID": "ac00e7bb-2146-4a7f-9565-2a4f06b713d6",
+      "name": "hideBossMechanismTip"
+    },
+    "53": {
+      "UID": "9ee0476b-b512-427e-bce3-9f6e8a2e14cd",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 53
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "16e0b9cb-8bfa-4efd-8c7c-48489d3fd098",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        49,
+        51,
+        53,
+        61,
+        95,
+        57,
+        52
+      ],
+      "NodeID": 6
+    },
+    "52": {
+      "buffId": 2126201,
+      "name": "removeBuff",
+      "UID": "7d52b41b-eaac-4ee7-a670-a88ff36e181e",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "98": {
+      "UID": "a3d0aecf-541e-4a55-943f-5eab7058edba",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        97
+      ],
+      "NodeID": 98
+    },
+    "7": {
+      "UID": "b440c6df-b506-47d1-8b68-3896412c19bd",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "99": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 10003,
+      "NodeID": 99,
+      "UID": "8bfe1851-502d-42ed-bfa0-d9e40cc26712",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "UID": "cf0319f4-079e-4e63-bbf5-8e686075d025",
+      "name": "detachAll",
+      "NodeID": 17
+    },
+    "23": {
+      "rValue": 1,
+      "name": "greater",
+      "UID": "620cc1ba-5112-49f0-b249-a88d211c1fc0",
+      "NodeID": 23,
+      "lValue": {
+        "data": {
+          "key": "onClientDataPrepared",
+          "name": "getCacheVal",
+          "UID": "9c2352be-97bf-48b6-b6a3-295817d83ca0",
+          "target": "OWNER",
+          "NodeID": 21
+        },
+        "propertyName": "1",
+        "name": "getProperty",
+        "UID": "d4b92969-8459-4dde-b350-51ee2ee2d611",
+        "NodeID": 22
+      }
+    },
+    "9": {
+      "UID": "59a44b47-b17b-483e-9daf-b1dcd29999a8",
+      "name": "detachAll",
+      "NodeID": 9
+    },
+    "24": {
+      "target": "OWNER",
+      "duration": 20,
+      "buffId": 10020,
+      "NodeID": 24,
+      "UID": "efe8b221-f5b4-4ccf-b7fc-0d91fc0d9886",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "19": {
+      "buffId": 100014,
+      "name": "removeBuff",
+      "UID": "74542716-63fd-4ec6-ac79-2eade3b40c93",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "actionIds": [
+        24,
+        13,
+        9,
+        46,
+        28,
+        56,
+        14
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "f19a2615-66cb-4600-b2c8-29af057177a1",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "20": {
+      "buffId": 2126201,
+      "name": "removeBuff",
+      "UID": "675a0278-0776-4491-9036-d81c31a1804e",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "valueName": "CounterInt_1",
+      "name": "getAIBlackBoardValue",
+      "UID": "c8302ed4-4928-4226-8835-dabbc6e155fc",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "25": {
+      "key": "entityState",
+      "name": "setCacheVal",
+      "UID": "59fa3a42-c46d-421c-8f7a-aff77160965d",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 25
+    },
+    "13": {
+      "buffId": 100014,
+      "name": "removeBuff",
+      "UID": "4ff11773-3a95-45e6-b537-a816570d367c",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "45": {
+      "UID": "c9c5f3a4-8140-4808-9508-42f4cb69bbda",
+      "actorId": {
+        "key": "Bulbly_02",
+        "name": "getServerCacheVal",
+        "UID": "2296aa7f-b40d-4563-9ced-13719c9954cb",
+        "target": "OWNER",
+        "NodeID": 44
+      },
+      "name": "destroyEntity",
+      "NodeID": 45
+    },
+    "14": {
+      "buffId": 2126201,
+      "name": "removeBuff",
+      "UID": "01d43202-7665-44b7-89cc-ad43691514f7",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "46": {
+      "key": "AI_BossStage",
+      "name": "setServerCacheVal",
+      "UID": "fde1e2bb-6f07-44a1-9740-e5e26513d8fc",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 46
+    },
+    "16": {
+      "rValue": 1,
+      "name": "greater",
+      "UID": "97c4c55c-8333-40df-beae-53a7bacba4d2",
+      "NodeID": 16,
+      "lValue": {
+        "key": "10262Boss_StickNum",
+        "name": "getCacheVal",
+        "UID": "00eb8e8e-ea4a-4feb-8cb0-cc8653d4e55b",
+        "target": "OWNER",
+        "NodeID": 15
+      }
+    },
+    "47": {
+      "key": "AI_BossStage",
+      "name": "setServerCacheVal",
+      "UID": "b4cfd52d-2099-49af-84dd-518241417648",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 47
+    },
+    "26": {
+      "UID": "108b3894-4724-44f7-84b3-3b3605b247f7",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 26
+    },
+    "48": {
+      "buffId": 2126202,
+      "name": "hasBuff",
+      "UID": "ed592c39-8bfd-41ea-8cee-b89916e26134",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "28": {
+      "UID": "9ef8a4df-418c-4c6e-a005-093ee1b55f3d",
+      "name": "callClientAction",
+      "actionIds": [
+        26,
+        72,
+        89,
+        91
+      ],
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "d61ae3d4-d63e-47cb-a1f6-7d91263c3165",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "c5a61551-48da-444e-9dc9-af79617558ef",
+      "name": "detachAll",
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        30,
+        33,
+        35,
+        39,
+        96,
+        34
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "28bcb216-1d67-4dab-b589-60190718d4d3",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "buffId": 100014,
+      "name": "removeBuff",
+      "UID": "757fd487-e18c-4eb1-98de-5644ab4b7bae",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "buffId": 2126201,
+      "name": "removeBuff",
+      "UID": "d16213bb-734b-47c5-b537-7678c45141da",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "80": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "2e620d26-9f78-43a9-a25c-a41097db27e4",
+      "target": {
+        "key": "Bulbly_01",
+        "name": "getServerCacheVal",
+        "UID": "7061ad6b-8b60-4a42-a519-528457ca57c3",
+        "target": "OWNER",
+        "NodeID": 79
+      },
+      "NodeID": 80
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    32,
+    98
+  ]
+}

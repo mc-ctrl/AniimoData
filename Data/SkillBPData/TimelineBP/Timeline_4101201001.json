@@ -1,0 +1,415 @@
+{
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "de8e249d-0d1d-435d-be8a-31eecc9fa887",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+      "speed": 1,
+      "NodeID": 37
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          37,
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 39,
+      "UID": "a936df7b-8152-4d13-bea0-feabcf88b494"
+    },
+    "40": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 10003,
+      "NodeID": 40,
+      "UID": "5744e2e7-2df4-4b24-8e20-cbaf08adf882",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "41": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "9e400c82-4372-4590-8782-2871aef39c78",
+      "target": "OWNER",
+      "NodeID": 41,
+      "animId": "Skill_MagicField"
+    },
+    "42": {
+      "UID": "df4a83ca-3544-493e-9de0-79008fa9e3a0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 35,
+      "UID": "a0bcf8cc-e6a8-46d2-969f-46885287d368"
+    },
+    "3": {
+      "offsetXYZ": [
+        5.2,
+        0,
+        3
+      ],
+      "templateId": 101201,
+      "name": "createEntity",
+      "UID": "ef656280-9fca-48a4-80f1-b9f3ef473839",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 3,
+      "pos": "CASTER"
+    },
+    "58": {
+      "UID": "60b21342-0cb5-40d2-8f91-5ed6bb76d96b",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 58
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          3,
+          11,
+          13,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 5,
+      "UID": "6ee1ff9f-33a0-4900-8fbe-dd16168ab07d"
+    },
+    "56": {
+      "UID": "829127fb-6ed3-4854-a2df-a1fd1e9b97da",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 56
+    },
+    "54": {
+      "UID": "d92a618e-7d2f-4089-949b-7ac9e9d4e51a",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 54
+    },
+    "52": {
+      "UID": "7c985cb3-f62a-45c7-bdc2-e886e411261c",
+      "target": "OWNER",
+      "name": "stopActionTimeline",
+      "NodeID": 52
+    },
+    "29": {
+      "key": "cloneNumber",
+      "name": "setServerCacheVal",
+      "UID": "63a7640a-d075-44ef-96bd-5c00b35190e7",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 29
+    },
+    "31": {
+      "UID": "f7f4a2fc-d852-40cd-9943-ae13dd4a547e",
+      "name": "showBubbleMsg",
+      "msgId": 2053,
+      "NodeID": 31
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        0,
+        -6
+      ],
+      "templateId": 101201,
+      "name": "createEntity",
+      "UID": "f7af5b74-5ddd-4870-b11a-cf640232382b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 13,
+      "pos": "CASTER"
+    },
+    "19": {
+      "actionIds": [
+        47,
+        23,
+        51,
+        29,
+        40,
+        52
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "c44dbe82-a672-4c06-8a7e-0d71199818d3",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "25": {
+      "UID": "8df42389-4383-4724-98c7-110ed3eb4ee8",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 25
+    },
+    "11": {
+      "offsetXYZ": [
+        -5.2,
+        0,
+        3
+      ],
+      "templateId": 101201,
+      "name": "createEntity",
+      "UID": "4a75e505-994d-4e5a-8d5c-b1cd555373fe",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 11,
+      "pos": "CASTER"
+    },
+    "20": {
+      "tickInterval": 0.05,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 20,
+      "UID": "e915a12d-5fcb-491b-aae1-c75af8ffd025",
+      "onUpdate": {
+        "actionIds": [
+          19
+        ]
+      },
+      "startTime": 1.4,
+      "onEnter": {
+        "actionIds": [
+          19
+        ]
+      }
+    },
+    "30": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "445a7059-49aa-4ad2-a371-541899d24642",
+      "target": "OWNER",
+      "NodeID": 30,
+      "animId": "Skill_DropBackReturn"
+    },
+    "22": {
+      "UID": "5bc6430b-c11b-49d2-9044-81a65c815ce3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          58,
+          19
+        ]
+      },
+      "NodeID": 22
+    },
+    "23": {
+      "UID": "4bcb1fea-1069-4e3e-8560-78408a14c251",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 23
+    },
+    "45": {
+      "UID": "349d5897-7f86-4aff-8ec0-8152661bbd3d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          54,
+          43,
+          46
+        ]
+      },
+      "NodeID": 45
+    },
+    "14": {
+      "name": "hideModel",
+      "UID": "eae678dd-1a7c-43a9-958f-9deba5262756",
+      "target": "CASTER",
+      "NodeID": 14,
+      "maxHideTime": 9.5
+    },
+    "46": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 10012,
+      "NodeID": 46,
+      "UID": "c6e4a9f2-a7b1-4253-a545-61ddc9515b5e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          50,
+          48,
+          28,
+          30,
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10.5,
+      "NodeID": 27,
+      "UID": "dcffd56d-fcdd-468d-b1ab-0997172c22b8"
+    },
+    "47": {
+      "buffId": 10012,
+      "name": "removeBuff",
+      "UID": "2e0a7160-a1bf-495d-a295-3ce1cab272d0",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.39,
+      "NodeID": 16,
+      "UID": "03ac7f36-0c19-46ab-bcaa-d9a6dc50f607"
+    },
+    "48": {
+      "buffId": 10012,
+      "name": "removeBuff",
+      "UID": "4fa9c9fe-6598-41a3-a619-c86b00fda9a4",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "28": {
+      "key": "cloneNumber",
+      "name": "setServerCacheVal",
+      "UID": "3318f197-95e5-4f4e-9c1f-4acfb1e42054",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 28
+    },
+    "49": {
+      "UID": "02e03969-3ecd-44f2-ab0a-e76ea501a74c",
+      "value": true,
+      "name": "setIsTransparent",
+      "NodeID": 49
+    },
+    "18": {
+      "rValue": 2,
+      "name": "greater",
+      "UID": "84e6a6c4-a27b-44c9-bfb8-02281a2357d9",
+      "NodeID": 18,
+      "lValue": {
+        "key": "cloneNumber",
+        "name": "getServerCacheVal",
+        "UID": "3792b5d5-f1b5-4828-bd00-e1e8db30f57f",
+        "target": "OWNER",
+        "NodeID": 17
+      }
+    },
+    "50": {
+      "UID": "09276618-9aac-4883-9829-6053bece4651",
+      "value": false,
+      "name": "setIsTransparent",
+      "NodeID": 50
+    },
+    "33": {
+      "offsetXYZ": [
+        0,
+        1.8,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e9cbc67b-363c-4ae7-a9c0-dd4021e98a77",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "51": {
+      "UID": "685c74e1-0f6f-4d4e-99e9-c75eb36c276b",
+      "value": false,
+      "name": "setIsTransparent",
+      "NodeID": 51
+    },
+    "43": {
+      "key": "cloneNumber",
+      "name": "setServerCacheVal",
+      "UID": "5e138912-028a-41d6-ac33-0b352d14e55e",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 43
+    }
+  },
+  "BPName": "ability_4101201",
+  "NodeID": 7,
+  "UID": "ab3dae24-4a4b-4eae-ac97-8513c52d4aac",
+  "eventIds": [
+    45,
+    20,
+    22,
+    42,
+    39,
+    35,
+    5,
+    27,
+    16
+  ],
+  "layer": "Base",
+  "length": 12
+}

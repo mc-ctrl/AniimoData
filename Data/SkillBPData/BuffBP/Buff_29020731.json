@@ -1,0 +1,24 @@
+{
+  "stackRule": 0,
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_29020731",
+  "dynamicRPCStates": {},
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "nodeMap": {
+    "3": {
+      "UID": "1706c40b-18b0-4577-b045-f29405ab76e6",
+      "actorId": {
+        "UID": "a1e7be36-ce44-4c09-b080-210ee0b810c8",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 2
+      },
+      "name": "destroyEntity",
+      "NodeID": 3
+    }
+  },
+  "onBuffDestroyIds": [
+    3
+  ],
+  "NodeID": 1
+}

@@ -1,0 +1,107 @@
+{
+  "nodeMap": {
+    "66": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 65,
+      "NodeID": 66,
+      "UID": "5085a6ff-41a3-413a-9414-cd6bcce185a8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        65
+      ]
+    },
+    "67": {
+      "UID": "119ec8ad-f33d-457d-b67c-f7ba384fa1c9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          66
+        ]
+      },
+      "NodeID": 67
+    },
+    "78": {
+      "UID": "74bc4320-0b62-440e-8cff-4f4795b3c8e5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          79,
+          76
+        ]
+      },
+      "NodeID": 78
+    },
+    "79": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ac3f1926-872d-4cb0-b794-4c430e484256",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10185_Skill_WindCannon_Explosion",
+      "NodeID": 79
+    },
+    "65": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11850710,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "cc07987a-47ec-4eab-98e1-b28d64cb2530",
+      "target": "TARGET",
+      "NodeID": 65,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 9,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Wind_Blunt"
+      }
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "01b68ca6-605b-4008-a4d5-cdf58d7c3cb4",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Burst_liuli",
+      "speed": 1,
+      "NodeID": 76
+    }
+  },
+  "BPName": "ability_11850710",
+  "NodeID": 69,
+  "UID": "f58b3589-7232-403e-98c5-541d622fd700",
+  "eventIds": [
+    78,
+    67
+  ],
+  "layer": "Base",
+  "length": 0.5
+}

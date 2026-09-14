@@ -1,0 +1,22 @@
+{
+  "73522143": {
+    "owner": "蔡颖",
+    "sandboxType": 3,
+    "chunk": 1017851,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 73522143,
+    "markIconSpawnerId": 0,
+    "spawners": [
+      73522175
+    ],
+    "sandBoxLevel": 0,
+    "position": [
+      -92.35,
+      198.84,
+      1576.18
+    ],
+    "poiType": 503,
+    "name": "板块3高地_其他关卡_焰铠龙篝火元件"
+  }
+}

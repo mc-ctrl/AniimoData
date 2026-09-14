@@ -1,0 +1,778 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2143301",
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "onBuffRefreshIds": [
+    13
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "time": 1,
+      "rotateSpeed": 360,
+      "name": "followPhantomRotateTo",
+      "UID": "0f8dc547-5d25-4586-aab1-8e1e8cc18893",
+      "target": {
+        "key": "14330300",
+        "name": "getCacheVal",
+        "UID": "a6f3e324-461c-43f6-8bbe-e594f975f6f1",
+        "target": "OWNER",
+        "NodeID": 36
+      },
+      "NodeID": 37,
+      "boneName": "Bone L Hand 00"
+    },
+    "39": {
+      "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+      "name": "getFollowPhantom",
+      "NodeID": 39
+    },
+    "40": {
+      "offsetXYZ": [
+        -0.62,
+        0,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "c4761a7f-a6c2-4f02-b944-83913d7c0650",
+      "effectId": "Eff_Parmon_10433_Skill_ChimneySentry_Loop",
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 39
+      },
+      "NodeID": 40,
+      "speed": 1,
+      "offsetRotation": [
+        -180,
+        0,
+        0
+      ],
+      "scale": 1
+    },
+    "54": {
+      "UID": "72eba3c6-b06f-4ec3-86e9-99223d1d5e62",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        53
+      ],
+      "NodeID": 54
+    },
+    "42": {
+      "checkOwner": true,
+      "actionIds": [
+        45,
+        43,
+        44,
+        40
+      ],
+      "NodeID": 42,
+      "UID": "1e0750d1-a74e-4011-97e3-252b28bed1e9",
+      "name": "followPhantomEventAction",
+      "eventName": "Start"
+    },
+    "43": {
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 39
+      },
+      "name": "playSoundStr",
+      "UID": "88a7741c-f2bd-4d37-9000-2a69c880c922",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10433_Skill_ChimneySentry_Start",
+      "NodeID": 43
+    },
+    "44": {
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 39
+      },
+      "name": "playSoundStr",
+      "UID": "b7622e7f-b668-4e7d-8a13-8c3287d1430d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10433_Skill_ChimneySentry_Loop",
+      "NodeID": 44
+    },
+    "66": {
+      "key": "14330300",
+      "name": "setCacheVal",
+      "UID": "c10445c4-1ff8-4875-bbeb-381ec89bd4d8",
+      "target": "OWNER",
+      "val": {
+        "relation": 2,
+        "radius": 12,
+        "heightDown": 2,
+        "NodeID": 65,
+        "UID": "ff87b9bf-5416-4ebf-99ed-f1e49c9498e3",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 64
+      },
+      "NodeID": 66
+    },
+    "67": {
+      "actionIds": [
+        73
+      ],
+      "conditionActionIds": [
+        71
+      ],
+      "UID": "afd6554a-5f78-4c87-91e1-61c47a9f560a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        66
+      ],
+      "NodeID": 67
+    },
+    "68": {
+      "UID": "57efb7a1-3b3b-4e84-ba4c-d26b2c2df5b6",
+      "target": {
+        "relation": 2,
+        "radius": 12,
+        "heightDown": 2,
+        "NodeID": 65,
+        "UID": "ff87b9bf-5416-4ebf-99ed-f1e49c9498e3",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 64
+      },
+      "name": "hasTarget",
+      "NodeID": 68
+    },
+    "69": {
+      "name": "isActorType",
+      "UID": "ae0c3135-9561-4a7e-b39a-fece0c521d45",
+      "target": "TARGET",
+      "NodeID": 69,
+      "actorType": 2
+    },
+    "4": {
+      "scale": 1,
+      "actionIds": [
+        10
+      ],
+      "name": "createFollowingPhantom",
+      "eventMaps": {
+        "Attack": 29,
+        "SkillHit": 17,
+        "TurretIn": 60,
+        "Start": 42,
+        "TurretOut": 62
+      },
+      "idleState": "Skill_ChimneySentry_Loop",
+      "ignoreCombat": true,
+      "moveState": "Skill_ChimneySentry_Loop",
+      "offsetBack": 0,
+      "offsetHeight": 0,
+      "offsetHorizontal": -0.6,
+      "templateList": [
+        0
+      ],
+      "UID": "a237da3b-f9a7-4225-b323-c49d17f091b3",
+      "skillState": "",
+      "NodeID": 4
+    },
+    "71": {
+      "UID": "6b410132-1227-4440-97a2-1964bc4c1ab4",
+      "target": {
+        "UID": "2fffb20e-c6fe-4e26-832e-ba1a27953e1f",
+        "name": "getLockedTarget",
+        "NodeID": 70
+      },
+      "name": "hasTarget",
+      "NodeID": 71
+    },
+    "73": {
+      "key": "14330300",
+      "name": "setCacheVal",
+      "UID": "874f4e59-58d3-4ba2-963b-5c8e82ac26af",
+      "target": "OWNER",
+      "val": {
+        "UID": "e6407ce1-86b8-497c-ac4d-c318087b8a9c",
+        "target": {
+          "UID": "2fffb20e-c6fe-4e26-832e-ba1a27953e1f",
+          "name": "getLockedTarget",
+          "NodeID": 70
+        },
+        "name": "getTargetId",
+        "NodeID": 72
+      },
+      "NodeID": 73
+    },
+    "74": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "f9c3d1ef-c80c-41d0-9be8-cb3ce5e4db20",
+      "target": "OWNER",
+      "NodeID": 74
+    },
+    "65": {
+      "relation": 2,
+      "radius": 12,
+      "heightDown": 2,
+      "NodeID": 65,
+      "UID": "ff87b9bf-5416-4ebf-99ed-f1e49c9498e3",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 64
+    },
+    "64": {
+      "UID": "b9d5f409-385f-4072-87d7-266565755e91",
+      "conditionIds": [
+        69,
+        63
+      ],
+      "name": "conditionOr",
+      "NodeID": 64
+    },
+    "63": {
+      "name": "isActorType",
+      "UID": "a5457aef-862b-4bc5-8cde-5ee57d0548c5",
+      "target": "TARGET",
+      "NodeID": 63,
+      "actorType": 3
+    },
+    "62": {
+      "eventName": "TurretOut",
+      "NodeID": 62,
+      "UID": "e370121e-16d2-4567-8498-4719965dd294",
+      "name": "followPhantomEventAction",
+      "actionIds": [
+        61
+      ]
+    },
+    "61": {
+      "UID": "dc084e5a-3c7f-4a11-a633-89f8cfdbf5c0",
+      "name": "clearPhantomOverrideOffset",
+      "NodeID": 61
+    },
+    "5": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        74
+      ],
+      "UID": "4e467952-8cf5-433a-a1a1-fab4a3616cd4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "60": {
+      "eventName": "TurretIn",
+      "NodeID": 60,
+      "UID": "baadd060-34c8-41c6-8e8f-81830cc86bd0",
+      "name": "followPhantomEventAction",
+      "actionIds": [
+        59
+      ]
+    },
+    "59": {
+      "UID": "e798727b-2cd5-41de-b3c6-d7823ef862dd",
+      "name": "setPhantomOverrideOffset",
+      "offset": [
+        -1.2,
+        -1,
+        0.5
+      ],
+      "NodeID": 59
+    },
+    "18": {
+      "key": "2",
+      "duration": 0.2,
+      "actionIds": [
+        15
+      ],
+      "NodeID": 18,
+      "UID": "922df0a4-72db-459f-bd37-0280d7f0e3a2",
+      "name": "addTimer"
+    },
+    "57": {
+      "UID": "c8d02993-6a87-4e47-ac45-55fe165e9d8a",
+      "name": "getFollowPhantom",
+      "NodeID": 57
+    },
+    "55": {
+      "petTarget": "OWNER",
+      "triggerId": 1043301,
+      "name": "onEntityTrigger",
+      "UID": "fe968971-8013-4b52-80df-e9c4be9e3dc2",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "7": {
+      "UID": "7f859e34-8207-4adb-910a-7da33852b701",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "SkillHit",
+      "NodeID": 7
+    },
+    "53": {
+      "actionIds": [
+        55
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "4b0d56a1-6dfb-4077-aee5-f2789778a205",
+      "name": "doActionsByConditions",
+      "NodeID": 53
+    },
+    "52": {
+      "rValue": 2143301,
+      "name": "equal",
+      "UID": "402c7003-3d65-47f6-80a6-c97bdb48a6ef",
+      "NodeID": 52,
+      "lValue": {
+        "data": {
+          "UID": "26f1e63c-660b-4860-ab59-b51f917adf67",
+          "name": "getEventData",
+          "eventName": "onKill",
+          "NodeID": 50
+        },
+        "propertyName": "buffTemplateId",
+        "name": "getProperty",
+        "UID": "49307240-c55b-4094-b0f6-26a2f1524b5f",
+        "NodeID": 51
+      }
+    },
+    "31": {
+      "isRootDir": false,
+      "NodeID": 31,
+      "UID": "29980d75-154b-469f-bdd5-36e3b5347508",
+      "target": {
+        "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+        "name": "getFollowPhantom",
+        "NodeID": 24
+      },
+      "name": "getBonePosition",
+      "boneName": "Bone L Hand 00"
+    },
+    "9": {
+      "actionIds": [
+        67,
+        7,
+        20
+      ],
+      "NodeID": 9,
+      "UID": "e006442a-7d7b-4d75-9ab5-28df5b179ecb",
+      "cd": 0.3,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "23": {
+      "offsetXYZ": [
+        -0.6,
+        1.5,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "a8fe6e1b-2d68-4550-850f-ba07f61d1510",
+      "effectId": "Eff_Parmon_Die",
+      "pos": {
+        "UID": "9146b0ad-ad45-4f2e-9365-af68d4bee757",
+        "target": {
+          "UID": "88795c58-8dd2-4e28-8129-d32f2498c32c",
+          "name": "getFollowPhantom",
+          "NodeID": 21
+        },
+        "name": "getTargetPosition",
+        "NodeID": 22
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 23,
+      "scale": 0.5
+    },
+    "12": {
+      "scale": 1,
+      "actionIds": [
+        10
+      ],
+      "name": "createFollowingPhantom",
+      "eventMaps": {
+        "Attack": 29,
+        "SkillHit": 17,
+        "TurretIn": 60,
+        "Start": 42,
+        "TurretOut": 62
+      },
+      "idleState": "Skill_ChimneySentry_Loop",
+      "ignoreCombat": true,
+      "moveState": "Skill_ChimneySentry_Loop",
+      "offsetBack": 0,
+      "offsetHeight": 0,
+      "offsetHorizontal": -0.6,
+      "prefabResId": "$E_P_Parmon_10433_Shadow_Umbral.prefab",
+      "templateList": [
+        0
+      ],
+      "UID": "2bea9267-460d-4648-854c-c7ce922e8591",
+      "skillState": "",
+      "NodeID": 12
+    },
+    "19": {
+      "UID": "c2090fe6-e678-4a93-986b-30c4abe4a3c0",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "Attack",
+      "NodeID": 19
+    },
+    "20": {
+      "key": "1",
+      "duration": 0.1,
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20,
+      "UID": "c4fed7dd-2b99-4ae8-bcc9-cff2e5268f4f",
+      "name": "addTimer"
+    },
+    "21": {
+      "UID": "88795c58-8dd2-4e28-8129-d32f2498c32c",
+      "name": "getFollowPhantom",
+      "NodeID": 21
+    },
+    "22": {
+      "UID": "9146b0ad-ad45-4f2e-9365-af68d4bee757",
+      "target": {
+        "UID": "88795c58-8dd2-4e28-8129-d32f2498c32c",
+        "name": "getFollowPhantom",
+        "NodeID": 21
+      },
+      "name": "getTargetPosition",
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "b00005ad-fb92-4581-bb6e-10de74621c09",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "Start",
+      "NodeID": 13
+    },
+    "45": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "1b5ff28d-ab60-4499-872c-82e1a64e0849",
+      "target": {
+        "UID": "d4f9893f-a17e-485d-bc28-486d25588e80",
+        "name": "getFollowPhantom",
+        "NodeID": 39
+      },
+      "NodeID": 45,
+      "animId": "Skill_ChimneySentry_Start01"
+    },
+    "14": {
+      "UID": "97656f54-70ca-4cc4-bcb8-8427eb57e7e8",
+      "name": "getFollowPhantom",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        68
+      ],
+      "UID": "511c18d5-409d-4970-a8e9-f57955ed7abe",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "05be0360-a931-4c6b-a884-492c3fbb8dbe",
+      "target": {
+        "UID": "97656f54-70ca-4cc4-bcb8-8427eb57e7e8",
+        "name": "getFollowPhantom",
+        "NodeID": 14
+      },
+      "NodeID": 15,
+      "animId": "Skill_ChimneySentry_Fire"
+    },
+    "25": {
+      "name": "playEffectOnPosRot",
+      "UID": "9e5949b8-d56b-471c-8f15-09710a4aafa8",
+      "effectId": "Eff_Parmon_10433_Skill_ChimneySentry_fire",
+      "pos": {
+        "NodeID": 32,
+        "name": "getTargetOffsetPos",
+        "UID": "746594b0-4570-4707-975c-512f6a4b9d5b",
+        "target": {
+          "isRootDir": false,
+          "NodeID": 31,
+          "UID": "29980d75-154b-469f-bdd5-36e3b5347508",
+          "target": {
+            "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+            "name": "getFollowPhantom",
+            "NodeID": 24
+          },
+          "name": "getBonePosition",
+          "boneName": "Bone L Hand 00"
+        },
+        "offset": [
+          0,
+          0.3,
+          0.2
+        ],
+        "rotType": {
+          "name": "getRotationFromTo",
+          "considerYAxis": true,
+          "UID": "a701d160-8c90-4c52-8887-9e4fc622189e",
+          "to": {
+            "key": "14330300",
+            "name": "getCacheVal",
+            "UID": "b35b3fd1-c477-425b-b858-aa44e6adf57f",
+            "target": "OWNER",
+            "NodeID": 35
+          },
+          "NodeID": 34,
+          "from": {
+            "isRootDir": false,
+            "NodeID": 31,
+            "UID": "29980d75-154b-469f-bdd5-36e3b5347508",
+            "target": {
+              "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+              "name": "getFollowPhantom",
+              "NodeID": 24
+            },
+            "name": "getBonePosition",
+            "boneName": "Bone L Hand 00"
+          }
+        }
+      },
+      "target": {
+        "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+        "name": "getFollowPhantom",
+        "NodeID": 24
+      },
+      "NodeID": 25,
+      "speed": 1,
+      "offsetRotation": [
+        3,
+        0,
+        0
+      ],
+      "rot": {
+        "name": "getRotationFromTo",
+        "considerYAxis": true,
+        "UID": "a701d160-8c90-4c52-8887-9e4fc622189e",
+        "to": {
+          "key": "14330300",
+          "name": "getCacheVal",
+          "UID": "b35b3fd1-c477-425b-b858-aa44e6adf57f",
+          "target": "OWNER",
+          "NodeID": 35
+        },
+        "NodeID": 34,
+        "from": {
+          "isRootDir": false,
+          "NodeID": 31,
+          "UID": "29980d75-154b-469f-bdd5-36e3b5347508",
+          "target": {
+            "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+            "name": "getFollowPhantom",
+            "NodeID": 24
+          },
+          "name": "getBonePosition",
+          "boneName": "Bone L Hand 00"
+        }
+      }
+    },
+    "29": {
+      "checkOwner": true,
+      "actionIds": [
+        58,
+        25,
+        33,
+        30
+      ],
+      "NodeID": 29,
+      "UID": "5175007c-360f-4357-9aff-13a5428b8f03",
+      "name": "followPhantomEventAction",
+      "eventName": "Attack"
+    },
+    "58": {
+      "target": {
+        "UID": "c8d02993-6a87-4e47-ac45-55fe165e9d8a",
+        "name": "getFollowPhantom",
+        "NodeID": 57
+      },
+      "name": "playSoundStr",
+      "UID": "cdcf1f2e-8e5c-4b9c-981c-6e91e62edf21",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10433_Skill_ChimneySentry_Fire",
+      "NodeID": 58
+    },
+    "17": {
+      "checkOwner": true,
+      "actionIds": [
+        37,
+        15,
+        18
+      ],
+      "NodeID": 17,
+      "UID": "bbb1c7e2-d5d8-42ed-a26c-f5e4c9fb9dfb",
+      "name": "followPhantomEventAction",
+      "eventName": "SkillHit"
+    },
+    "49": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.266
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "aca8a0ff-9556-40dc-bc82-2b932f92f7c8",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 2143301,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 49
+    },
+    "30": {
+      "key": "3",
+      "duration": 0.2,
+      "actionIds": [
+        58,
+        25,
+        33
+      ],
+      "NodeID": 30,
+      "UID": "2c362663-2a53-4aa0-97c8-28f71a2d763d",
+      "name": "addTimer"
+    },
+    "32": {
+      "NodeID": 32,
+      "name": "getTargetOffsetPos",
+      "UID": "746594b0-4570-4707-975c-512f6a4b9d5b",
+      "target": {
+        "isRootDir": false,
+        "NodeID": 31,
+        "UID": "29980d75-154b-469f-bdd5-36e3b5347508",
+        "target": {
+          "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+          "name": "getFollowPhantom",
+          "NodeID": 24
+        },
+        "name": "getBonePosition",
+        "boneName": "Bone L Hand 00"
+      },
+      "offset": [
+        0,
+        0.3,
+        0.2
+      ],
+      "rotType": {
+        "name": "getRotationFromTo",
+        "considerYAxis": true,
+        "UID": "a701d160-8c90-4c52-8887-9e4fc622189e",
+        "to": {
+          "key": "14330300",
+          "name": "getCacheVal",
+          "UID": "b35b3fd1-c477-425b-b858-aa44e6adf57f",
+          "target": "OWNER",
+          "NodeID": 35
+        },
+        "NodeID": 34,
+        "from": {
+          "isRootDir": false,
+          "NodeID": 31,
+          "UID": "29980d75-154b-469f-bdd5-36e3b5347508",
+          "target": {
+            "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+            "name": "getFollowPhantom",
+            "NodeID": 24
+          },
+          "name": "getBonePosition",
+          "boneName": "Bone L Hand 00"
+        }
+      }
+    },
+    "33": {
+      "boxExtends": [
+        0.5,
+        0.6,
+        0.2
+      ],
+      "name": "actOnSweepTargets",
+      "UID": "89d7400d-31ac-4436-9678-c3fd9b76a8df",
+      "offsetRotation": [
+        3,
+        0,
+        0
+      ],
+      "rotationNodeId": 34,
+      "startPosNodeId": 32,
+      "sweepDistance": 12,
+      "relation": 2,
+      "needEcs": true,
+      "actionIds": [
+        49
+      ],
+      "calcResultNodeId": 49,
+      "impulseId": 2000,
+      "NodeID": 33
+    },
+    "34": {
+      "name": "getRotationFromTo",
+      "considerYAxis": true,
+      "UID": "a701d160-8c90-4c52-8887-9e4fc622189e",
+      "to": {
+        "key": "14330300",
+        "name": "getCacheVal",
+        "UID": "b35b3fd1-c477-425b-b858-aa44e6adf57f",
+        "target": "OWNER",
+        "NodeID": 35
+      },
+      "NodeID": 34,
+      "from": {
+        "isRootDir": false,
+        "NodeID": 31,
+        "UID": "29980d75-154b-469f-bdd5-36e3b5347508",
+        "target": {
+          "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+          "name": "getFollowPhantom",
+          "NodeID": 24
+        },
+        "name": "getBonePosition",
+        "boneName": "Bone L Hand 00"
+      }
+    },
+    "24": {
+      "UID": "ebb1b004-c8ac-4c3f-bd54-ee5f8dc63877",
+      "name": "getFollowPhantom",
+      "NodeID": 24
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    23
+  ],
+  "onBuffStartIds": [
+    54,
+    5,
+    13
+  ]
+}

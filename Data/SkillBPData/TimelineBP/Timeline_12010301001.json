@@ -1,0 +1,29 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "31c2614a-e075-4afb-983e-d9a5e1386d8b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "2": {
+      "buffId": 31020110,
+      "name": "removeBuff",
+      "UID": "5dc2c2f0-d108-46a2-b718-4207e83b003a",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_12010301",
+  "NodeID": 5,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    3
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

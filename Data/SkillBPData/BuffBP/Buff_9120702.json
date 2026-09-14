@@ -1,0 +1,501 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9120702",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "key": "91207",
+      "name": "setServerCacheVal",
+      "UID": "a06e652b-4f6e-4cb5-a622-52f28c2fc523",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 37
+    },
+    "39": {
+      "UID": "7e84c07e-a35b-4ed6-98eb-003129d4c56f",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        37,
+        47
+      ],
+      "NodeID": 39
+    },
+    "41": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "cdb67aaf-dbcf-45cd-8793-243c4c00c859",
+      "NodeID": 41,
+      "lValue": {
+        "key": "91207",
+        "name": "getServerCacheVal",
+        "UID": "e6761a3d-e2da-435c-a9dc-3002af1af23f",
+        "target": "OWNER",
+        "NodeID": 40
+      }
+    },
+    "42": {
+      "UID": "0ec892f4-08fc-4611-92cc-ed0294790b5a",
+      "name": "buffStopThink",
+      "NodeID": 42
+    },
+    "44": {
+      "UID": "8d58de2b-6287-408b-a7ef-514060d94139",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        42,
+        45,
+        56
+      ],
+      "NodeID": 44
+    },
+    "3": {
+      "eventName": "UnSummon",
+      "name": "notifyCustomEvent",
+      "UID": "479157da-9358-4f69-b8c7-ed35af779257",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "57": {
+      "listId": "Hp",
+      "NodeID": 57,
+      "UID": "ac219cf3-180c-4a14-bb79-98d0516ede5b",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": false
+    },
+    "56": {
+      "eventName": "UnSummon",
+      "name": "notifyCustomEvent",
+      "UID": "5482e6eb-23bf-42e2-8f7a-9fee4f1301f1",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "55": {
+      "rValue": {
+        "templateId": 9120703,
+        "name": "getBuffLayer",
+        "UID": "bafe3a8d-c068-48cd-9c4d-085342826450",
+        "target": "OWNER",
+        "NodeID": 54
+      },
+      "name": "greater",
+      "UID": "c6e3a424-6932-488b-83d2-9a1caf5256df",
+      "NodeID": 55,
+      "lValue": 3
+    },
+    "53": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "e22073d9-b0c5-4ad9-b258-6d517be21cff",
+      "name": "doActionsByConditions",
+      "NodeID": 53
+    },
+    "52": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9120703,
+      "NodeID": 52,
+      "UID": "ae3ed1af-374c-41c5-9628-a34701ac2e76",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "51": {
+      "eventName": "Summon",
+      "name": "notifyCustomEvent",
+      "UID": "c94b9a58-68fc-4c19-aaa4-d6f7e739ab27",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "49": {
+      "delay": {
+        "calcId": 9120702,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 48,
+        "UID": "34670bfa-ca28-4d0a-99f1-5bd19ca9cc0a",
+        "name": "getParamByLuaConfig"
+      },
+      "interval": {
+        "calcId": 9120702,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 48,
+        "UID": "34670bfa-ca28-4d0a-99f1-5bd19ca9cc0a",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "b369d78b-2ba9-42a1-b846-ccfb1f48e2e6",
+      "name": "buffStartThink",
+      "NodeID": 49
+    },
+    "5": {
+      "offsetXYZ": [
+        0,
+        0.4,
+        2.4
+      ],
+      "templateId": 80000089,
+      "name": "createEntity",
+      "UID": "10ebd2e1-6ff7-4a41-af53-a8a751380994",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "bornHp": 0,
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 5
+    },
+    "48": {
+      "calcId": 9120702,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 48,
+      "UID": "34670bfa-ca28-4d0a-99f1-5bd19ca9cc0a",
+      "name": "getParamByLuaConfig"
+    },
+    "47": {
+      "actionIds": [
+        49,
+        51
+      ],
+      "conditionActionIds": [
+        46
+      ],
+      "UID": "62bc79eb-c281-4ea6-bedb-118daf563005",
+      "name": "doActionsByConditions",
+      "NodeID": 47
+    },
+    "6": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "16c26bdd-a6e1-4b6c-93d3-a7e647b06d84",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "46": {
+      "name": "isInCombat",
+      "UID": "4629cecd-e9a2-4adb-b408-dc7d6da024e5",
+      "target": "OWNER",
+      "NodeID": 46,
+      "not": false
+    },
+    "45": {
+      "key": "91207",
+      "name": "setServerCacheVal",
+      "UID": "f11b9a01-bdfc-480a-a47a-c5c60b5f0cee",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 45
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "0f8e828b-ac69-4ba1-9864-7af8ee37199c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        53
+      ],
+      "NodeID": 7
+    },
+    "12": {
+      "checkPuppet": true,
+      "NodeID": 12,
+      "UID": "92be0865-7beb-4cf0-9320-924dc1674f1f",
+      "target": "OWNER",
+      "name": "getCreatedEntityCount",
+      "filterCondition": 11
+    },
+    "13": {
+      "rValue": {
+        "checkPuppet": true,
+        "NodeID": 12,
+        "UID": "92be0865-7beb-4cf0-9320-924dc1674f1f",
+        "target": "OWNER",
+        "name": "getCreatedEntityCount",
+        "filterCondition": 11
+      },
+      "name": "greater",
+      "UID": "a20548c1-c069-4bff-a440-14782de7d89a",
+      "NodeID": 13,
+      "lValue": 3
+    },
+    "31": {
+      "UID": "7720e0ab-5681-44ef-a3b0-fd7a0d9b0867",
+      "name": "buffStopThink",
+      "NodeID": 31
+    },
+    "9": {
+      "actionIds": [
+        7,
+        20
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "d9f5f224-e454-4557-94de-63898c762c73",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 9
+    },
+    "19": {
+      "UID": "1178dd5c-6186-4c82-980e-62ad96743fd5",
+      "conditionIds": [
+        18,
+        26
+      ],
+      "name": "conditionOr",
+      "NodeID": 19
+    },
+    "16": {
+      "templateId": 80000089,
+      "name": "checkTargetTemplateId",
+      "UID": "6d02dcb6-25ae-466d-a2cc-6d7ad8d8b037",
+      "target": "TARGET",
+      "NodeID": 16
+    },
+    "11": {
+      "templateId": 80000094,
+      "name": "checkTargetTemplateId",
+      "UID": "90a488f1-3e2c-476a-a8e1-3782bf630887",
+      "target": "TARGET",
+      "NodeID": 11
+    },
+    "20": {
+      "petTarget": "OWNER",
+      "triggerId": 1020701,
+      "name": "onEntityTrigger",
+      "UID": "5d4a77bd-468e-4ffe-a959-9820b4167a29",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "templateId": 80000089,
+      "name": "checkTargetTemplateId",
+      "UID": "56fc194d-859e-4e8b-954e-ea4ac8b43a2d",
+      "target": "TARGET",
+      "NodeID": 21
+    },
+    "22": {
+      "checkPuppet": true,
+      "NodeID": 22,
+      "UID": "ef2d5573-5bae-4be2-ad72-82924f69955f",
+      "target": "OWNER",
+      "name": "getCreatedEntityCount",
+      "filterCondition": 21
+    },
+    "23": {
+      "rValue": {
+        "checkPuppet": true,
+        "NodeID": 22,
+        "UID": "ef2d5573-5bae-4be2-ad72-82924f69955f",
+        "target": "OWNER",
+        "name": "getCreatedEntityCount",
+        "filterCondition": 21
+      },
+      "name": "greater",
+      "UID": "756d9233-28c3-4fcd-9bcf-92a704408c79",
+      "NodeID": 23,
+      "lValue": 3
+    },
+    "24": {
+      "templateId": 80000094,
+      "name": "checkTargetTemplateId",
+      "UID": "0b784180-6113-447f-9453-9dbd7f1153c1",
+      "target": "TARGET",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "2dbcb18e-856f-4445-a773-1a0e57cfe20c",
+      "conditionIds": [
+        23,
+        13
+      ],
+      "name": "conditionAnd",
+      "NodeID": 14
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0.4,
+        2.4
+      ],
+      "templateId": 80000094,
+      "name": "createEntity",
+      "UID": "16f6fe6b-c4ce-479b-a23b-52b71dc6abe7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "bornHp": 0,
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 3,
+      "setLevel": true,
+      "NodeID": 10
+    },
+    "15": {
+      "name": "checkPetPrototypeId",
+      "UID": "a9fd3362-3518-44e5-8056-af970a61c590",
+      "target": "OWNER",
+      "petPrototypeId": 1020701,
+      "NodeID": 15
+    },
+    "25": {
+      "checkPuppet": true,
+      "NodeID": 25,
+      "UID": "e0a96e07-d9eb-422b-8c5c-4c619e50cb22",
+      "target": "OWNER",
+      "name": "getCreatedEntityCount",
+      "filterCondition": 24
+    },
+    "26": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "129b4839-ddb4-4f26-aed0-7370abc06161",
+      "NodeID": 26,
+      "lValue": {
+        "checkPuppet": true,
+        "NodeID": 25,
+        "UID": "e0a96e07-d9eb-422b-8c5c-4c619e50cb22",
+        "target": "OWNER",
+        "name": "getCreatedEntityCount",
+        "filterCondition": 24
+      }
+    },
+    "27": {
+      "buffId": 9120703,
+      "name": "removeBuff",
+      "UID": "f96af1fd-1b1f-41c8-b0d1-a22c013930af",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "checkPuppet": true,
+      "NodeID": 17,
+      "UID": "b6784e32-a92f-466f-84c9-6d2d2d6a35f2",
+      "target": "OWNER",
+      "name": "getCreatedEntityCount",
+      "filterCondition": 16
+    },
+    "29": {
+      "actionIds": [
+        27,
+        31
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "766a4852-2598-485e-bebe-bf871092708b",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "d5b101d2-46b4-4336-afc7-e70261de4b33",
+      "NodeID": 18,
+      "lValue": {
+        "checkPuppet": true,
+        "NodeID": 17,
+        "UID": "b6784e32-a92f-466f-84c9-6d2d2d6a35f2",
+        "target": "OWNER",
+        "name": "getCreatedEntityCount",
+        "filterCondition": 16
+      }
+    },
+    "32": {
+      "calcId": 9120702,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 32,
+      "UID": "28d208cd-d4d2-4326-85e4-a91879b9c220",
+      "name": "getParamByLuaConfig"
+    },
+    "33": {
+      "delay": {
+        "calcId": 9120702,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 32,
+        "UID": "28d208cd-d4d2-4326-85e4-a91879b9c220",
+        "name": "getParamByLuaConfig"
+      },
+      "interval": {
+        "calcId": 9120702,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 32,
+        "UID": "28d208cd-d4d2-4326-85e4-a91879b9c220",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "0e3e7055-2308-4018-adb3-926cfa138d44",
+      "name": "buffStartThink",
+      "NodeID": 33
+    },
+    "34": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "b15a6792-fb14-4b75-8f3b-176a585eb3d5",
+      "name": "doActionsByConditions",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "6e2f25f0-0604-4111-9a12-c8f6108be0af",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        34,
+        57
+      ],
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    3
+  ],
+  "onBuffStartIds": [
+    39,
+    44,
+    36,
+    29
+  ]
+}

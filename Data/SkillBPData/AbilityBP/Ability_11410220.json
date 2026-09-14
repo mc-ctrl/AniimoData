@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_11410220",
+  "NodeID": 1,
+  "UID": "f9b223be-67fc-41cf-873a-f177296a914f",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11410220001,
+      "name": "setCombatActionTimeline",
+      "UID": "c0fbc302-c33f-4b46-a857-d1f93e7ab939",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Wave_Start",
+    "Skill_Wave_Loop",
+    "Skill_Wave_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10143_Skill_ElectricBreath",
+    "Eff_Parmon_10143_Skill_ElectricBreath_Hit_Loop"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "isAim": true,
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 10400111,
+  "refBones": [
+    "Root"
+  ]
+}

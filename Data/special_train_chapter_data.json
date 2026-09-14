@@ -1,0 +1,340 @@
+[
+  {
+    "sideTaskId": [
+      2001,
+      2051,
+      2061,
+      2071,
+      2080,
+      3000,
+      3010,
+      3020,
+      3030,
+      3101,
+      4002,
+      4010,
+      4012,
+      4013,
+      5000,
+      5007,
+      5023,
+      5024,
+      5025
+    ],
+    "rewardId": 60501,
+    "bannerImg": "$UI_Img_Train_Required_Ttile_1.png",
+    "isUnlock": 1,
+    "challengeMainTaskId": [
+      1006,
+      1007
+    ],
+    "chapterBadgeImg": "$UI_Icon_Personal_Badge_101073.png",
+    "chapterDes": 1256393602,
+    "chapterDesUpstar": 1547045410,
+    "chapterGoTo": 1312,
+    "chapterImg": "$UI_Img_Traning_Card_1.png",
+    "chapterName": 1340900064,
+    "chapterTitleDes": 1286927384,
+    "infoImg": "$UI_Img_Traning_CardPic_1.png",
+    "mainTaskId": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ],
+    "mustTaskNum": 4,
+    "requestTaskId": 8101017,
+    "requiredTitleId": 3
+  },
+  {
+    "sideTaskId": [
+      2002,
+      2010,
+      2020,
+      2101,
+      2120,
+      3001,
+      3011,
+      3021,
+      3040,
+      3061,
+      3102,
+      4003,
+      4101,
+      5001,
+      5003,
+      5005,
+      5012,
+      5040,
+      5051
+    ],
+    "rewardId": 60502,
+    "taskConditions": [
+      1111113
+    ],
+    "bannerImg": "$UI_Img_Train_Required_Ttile_2.png",
+    "challengeMainTaskId": [
+      1016,
+      1017
+    ],
+    "chapterBadgeImg": "$UI_Icon_Personal_Badge_101083.png",
+    "chapterDes": 1353966674,
+    "chapterDesUpstar": 1164308330,
+    "chapterGoTo": 1312,
+    "chapterImg": "$UI_Img_Traning_Card_2.png",
+    "chapterName": 1281728885,
+    "chapterTitleDes": 1311657549,
+    "infoImg": "$UI_Img_Traning_CardPic_2.png",
+    "mainTaskId": [
+      1011,
+      1012,
+      1013,
+      1014,
+      1015
+    ],
+    "mustTaskNum": 4,
+    "requestTaskId": 8101018,
+    "requiredTitleId": 4
+  },
+  {
+    "sideTaskId": [
+      2003,
+      2011,
+      2012,
+      2072,
+      2102,
+      2121,
+      3002,
+      3012,
+      3023,
+      3031,
+      3041,
+      3062,
+      3103,
+      4004,
+      4102,
+      5011,
+      5013,
+      5030,
+      5041
+    ],
+    "rewardId": 60503,
+    "taskConditions": [
+      1111114
+    ],
+    "bannerImg": "$UI_Img_Train_Required_Ttile_3.png",
+    "challengeMainTaskId": [
+      1026,
+      1027
+    ],
+    "chapterBadgeImg": "$UI_Icon_Personal_Badge_101093.png",
+    "chapterDes": 1322370467,
+    "chapterDesUpstar": 1533027735,
+    "chapterGoTo": 1312,
+    "chapterImg": "$UI_Img_Traning_Card_3.png",
+    "chapterName": 1414491959,
+    "chapterTitleDes": 1105953453,
+    "infoImg": "$UI_Img_Traning_CardPic_3.png",
+    "mainTaskId": [
+      1021,
+      1022,
+      1023,
+      1024,
+      1025
+    ],
+    "mustTaskNum": 4,
+    "requestTaskId": 8101019,
+    "requiredTitleId": 5
+  },
+  {
+    "sideTaskId": [
+      2004,
+      2021,
+      2023,
+      2103,
+      2122,
+      3003,
+      3024,
+      4030,
+      3042,
+      3063,
+      3070,
+      3104,
+      4005,
+      4032,
+      4103,
+      5020,
+      5026,
+      5027,
+      5042,
+      5052,
+      5060
+    ],
+    "rewardId": 60504,
+    "taskConditions": [
+      1111115
+    ],
+    "bannerImg": "$UI_Img_Train_Required_Ttile_4.png",
+    "challengeMainTaskId": [
+      1036,
+      1037
+    ],
+    "chapterBadgeImg": "$UI_Icon_Personal_Badge_101113.png",
+    "chapterDes": 1854090712,
+    "chapterDesUpstar": 1450614533,
+    "chapterGoTo": 1312,
+    "chapterImg": "$UI_Img_Traning_Card_4.png",
+    "chapterName": 1982756443,
+    "chapterTitleDes": 2014520443,
+    "infoImg": "$UI_Img_Traning_CardPic_4.png",
+    "mainTaskId": [
+      1031,
+      1032,
+      1033,
+      1034,
+      1035
+    ],
+    "mustTaskNum": 4,
+    "requestTaskId": 8101020,
+    "requiredTitleId": 6
+  },
+  {
+    "sideTaskId": [
+      2005,
+      2030,
+      2073,
+      2104,
+      2123,
+      3004,
+      3025,
+      4031,
+      3032,
+      3043,
+      3050,
+      3065,
+      3105,
+      4023,
+      4104,
+      5021,
+      5022,
+      5031,
+      5043
+    ],
+    "rewardId": 60505,
+    "taskConditions": [
+      1111116
+    ],
+    "bannerImg": "$UI_Img_Train_Required_Ttile_5.png",
+    "challengeMainTaskId": [
+      1046,
+      1047
+    ],
+    "chapterBadgeImg": "$UI_Icon_Personal_Badge_101143.png",
+    "chapterDes": 1846260021,
+    "chapterDesUpstar": 2142048838,
+    "chapterGoTo": 1312,
+    "chapterImg": "$UI_Img_Traning_Card_5.png",
+    "chapterName": 1966342276,
+    "chapterTitleDes": 1885069781,
+    "infoImg": "$UI_Img_Traning_CardPic_5.png",
+    "mainTaskId": [
+      1041,
+      1042,
+      1043,
+      1044,
+      1045
+    ],
+    "mustTaskNum": 4,
+    "requestTaskId": 8101021,
+    "requiredTitleId": 7
+  },
+  {
+    "sideTaskId": [
+      2006,
+      2007,
+      2022,
+      2032,
+      2062,
+      2105,
+      2124,
+      3106,
+      4024,
+      4040,
+      4042,
+      4050,
+      4105,
+      5044,
+      5053
+    ],
+    "rewardId": 60506,
+    "taskConditions": [
+      1111117
+    ],
+    "bannerImg": "$UI_Img_Train_Required_Ttile_6.png",
+    "challengeMainTaskId": [
+      1056,
+      1057
+    ],
+    "chapterBadgeImg": "$UI_Icon_Personal_Badge_101153.png",
+    "chapterDes": 1413000470,
+    "chapterDesUpstar": 1741964113,
+    "chapterGoTo": 1312,
+    "chapterImg": "$UI_Img_Traning_Card_6.png",
+    "chapterName": 1676193788,
+    "chapterTitleDes": 1658188092,
+    "infoImg": "$UI_Img_Traning_CardPic_6.png",
+    "mainTaskId": [
+      1051,
+      1052,
+      1053,
+      1054,
+      1055
+    ],
+    "mustTaskNum": 4,
+    "requestTaskId": 8101022,
+    "requiredTitleId": 8
+  },
+  {
+    "sideTaskId": [
+      2008,
+      2063,
+      2106,
+      4025,
+      4033,
+      4034,
+      4055,
+      4056,
+      4106,
+      5032,
+      5045
+    ],
+    "rewardId": 60507,
+    "taskConditions": [
+      1111118
+    ],
+    "bannerImg": "$UI_Img_Train_Required_Ttile_7.png",
+    "challengeMainTaskId": [
+      1066,
+      1067
+    ],
+    "chapterBadgeImg": "$UI_Icon_Personal_Badge_101103.png",
+    "chapterDes": 1491368983,
+    "chapterDesUpstar": 1229490056,
+    "chapterGoTo": 1312,
+    "chapterImg": "$UI_Img_Traning_Card_7.png",
+    "chapterName": 1400169309,
+    "chapterTitleDes": 1121445219,
+    "infoImg": "$UI_Img_Traning_CardPic_7.png",
+    "mainTaskId": [
+      1061,
+      1062,
+      1063,
+      1064,
+      1065
+    ],
+    "mustTaskNum": 4,
+    "requestTaskId": 8101023,
+    "requiredTitleId": 9
+  }
+]

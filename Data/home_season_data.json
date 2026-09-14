@@ -1,0 +1,33 @@
+[
+  {
+    "desc": 1963302491,
+    "dailyOrderCount": 2,
+    "endDayTimeRefId": 11002,
+    "exchangeShopId": 52,
+    "funcRefIds": [
+      101,
+      103,
+      106,
+      107
+    ],
+    "homePlantShopId": 51,
+    "progressRefId": 105,
+    "seasonDes": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "seasonMoneyId": 4040033,
+    "seasonUnlock": 306205,
+    "seasonUnlockDes": 1449249949,
+    "seasonalPlotsEnable": 1,
+    "seasonalPlotsUnlockCon": 306104,
+    "seasonalPlotsUnlockDes": 1088988882,
+    "shopRefId": 108,
+    "startDayTimeRefId": 11001,
+    "name": 2050371506
+  }
+]

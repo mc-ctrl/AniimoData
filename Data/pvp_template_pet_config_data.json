@@ -1,0 +1,8636 @@
+{
+  "1003": {
+    "1062100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002500": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002600": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1003300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1004500": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1005500": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1014100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1014200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1014300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1016300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1018400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1018500": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "taken_dmg_inc_rate_v": -0.25
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1018700": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "bp_add_ratio": 0.1,
+        "final_taken_dmg_dec_rate_v": -0.2,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1019200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1019400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "taken_dmg_inc_rate_v": 0.25,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1020100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1020300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1020700": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1021100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1021200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1021300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1022100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1022200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1023100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1023200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1023300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "bp_add_ratio": 0.5,
+        "final_taken_dmg_dec_rate_v": 0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "bp_add_ratio": 0.4,
+        "speed_ratio_walk_v": 0.3
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1029100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1029300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1032100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1032300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 35
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1032400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "taken_dmg_inc_rate_v": 0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1033100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1033300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1012200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1018100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "hp_max_p": 0.3
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1019100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1042100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1042300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028500": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1043300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1044100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1046100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1046300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1047100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1047400": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1047500": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1048100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1048300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1050100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1050300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1051100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1051200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1058300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1062300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002700": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "dmg_break_add_ratio": -0.25,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "taken_dmg_inc_rate_v": 0.5,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "6999300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1005100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1044300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1043100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1038300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1058100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1037100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1036100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1035200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "enhancedSkill": 1,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1035100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1003100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1004100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1038100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1004300": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1004200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1001200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_inc_rate_v": -0.1
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1003200": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "enhancedSkill": 1,
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1001100": {
+      "nature": 901,
+      "propid": 1003,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "enhancedSkill": 1,
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    }
+  },
+  "1001": {
+    "1062100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1002400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002500": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002600": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1003300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1004500": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1005500": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1014100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1014200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1014300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1016300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1017400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1018400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "hp_max_p": 0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1018500": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "hp_max_p": 0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1018700": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "bp_add_ratio": 0.1,
+        "final_taken_dmg_dec_rate_v": -0.2,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1019200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1019400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "taken_dmg_inc_rate_v": 0.3,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1020100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "def_mag_p": 0.1,
+        "def_p": 0.1,
+        "speed_ratio_walk_v": 0.3,
+        "hp_max_p": 0.25,
+        "speed_ratio_dash_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1020300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.25
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1020700": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1021100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1021200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.35,
+        "bp_add_ratio": 0.05,
+        "bp_max_p": -0.1
+      },
+      "extraSpecies": {
+        "species_hp_max_v": 20
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1021300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1022100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1022200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1023100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1023200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1023300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "bp_add_ratio": 0.5,
+        "final_taken_dmg_dec_rate_v": 0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1026100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1026200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "bp_add_ratio": 0.4,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1029100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1029300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1032100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1032300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "final_taken_dmg_dec_rate_v": 0.2,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 25
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1032400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "hp_max_p": 0.5,
+        "taken_dmg_inc_rate_v": 0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1033100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1033300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1012200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1018100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "hp_max_p": 0.3
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1019100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1042100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1042300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028500": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1043300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1044100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1028200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1046100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1046300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1047100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1047400": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1047500": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1048100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1048300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "taken_dmg_inc_rate_v": 0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1050100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1050300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1051100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1051200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1058300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1062300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002700": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "dmg_break_add_ratio": -0.25,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "taken_dmg_inc_rate_v": 0.1,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "6999300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1005100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1044300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1043100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1038300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1058100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1037100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1036100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1035200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "hp_max_p": 0.1
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1035100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1003100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1004100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1002300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1038100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1004300": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "hp_max_p": -0.15
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1004200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1001200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "dmg_break_add_ratio": -0.3,
+        "hp_max_p": 0.1,
+        "final_taken_dmg_inc_rate_v": -0.5
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1003200": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1001100": {
+      "nature": 901,
+      "propid": 1001,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    }
+  },
+  "1": {
+    "1062100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002500": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002600": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1003300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1004500": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1005500": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        16,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1013200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1013300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1014100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1014200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1014300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        16,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1016300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        16,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1017300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        16,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1018400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1018500": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1018700": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        16,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1019200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1019400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1020100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1020300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1020700": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1021100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1021200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1021300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.3,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 60,
+      "isCarrryCoreItem": 1
+    },
+    "1022100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1022200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        16,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1023100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1023200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1023300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        8,
+        16,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        8,
+        16,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1029100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1029300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1032100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1032300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1032400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        8,
+        8,
+        16
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1033100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1033300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1012200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        16,
+        8,
+        16
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1017100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1018100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1019100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1042100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1042300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028500": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1043300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        8,
+        8,
+        16
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1044100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1045100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1045300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1046100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1046300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        16,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1047100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1047400": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        8,
+        8,
+        16
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1047500": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        16,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1048100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1048300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1050100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1050300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1051100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1051200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1058300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1062300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002700": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        16,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "6999300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        16,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1005100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1044300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1043100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1038300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        16,
+        8,
+        16
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1058100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1037100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1036100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1035200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        8,
+        8,
+        16
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1035100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1003100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1004100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        8,
+        16,
+        8,
+        8,
+        16
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1038100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1004300": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "level": 60,
+      "talentPointMap": [
+        16,
+        8,
+        8,
+        8,
+        16,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1004200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1001200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.1
+      },
+      "level": 60,
+      "isCarrryCoreItem": 1
+    },
+    "1003200": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 2,
+      "resonanceStage": 5,
+      "talentPointMap": [
+        8,
+        16,
+        8,
+        16,
+        8,
+        8
+      ],
+      "level": 60,
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1001100": {
+      "nature": 901,
+      "propid": 1,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 60,
+      "talentPointMap": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "isCarrryCoreItem": 1
+    }
+  },
+  "1002": {
+    "1062100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1002400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002500": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002600": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1003300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1004500": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1005500": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1013300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1014100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1014200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1014300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1016300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1018400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1018500": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "taken_dmg_inc_rate_v": -0.25
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1018700": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "bp_add_ratio": 0.1,
+        "final_taken_dmg_dec_rate_v": -0.2,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1019200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1019400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "taken_dmg_inc_rate_v": 0.25,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1020100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1020300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1020700": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1021100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1021200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1021300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1022100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1022200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1023100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1023200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1023300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "bp_add_ratio": 0.5,
+        "final_taken_dmg_dec_rate_v": 0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1026100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1026200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1026300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1028100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "bp_add_ratio": 0.4,
+        "speed_ratio_walk_v": 0.3
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1028400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1029100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1029300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1032100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1032300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 35
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1032400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "taken_dmg_inc_rate_v": 0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1033100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1033300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1012200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1016100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1017100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1018100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "hp_max_p": 0.3
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1019100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1042100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1042300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1028500": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1043300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1044100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1028200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1045400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1046100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1046300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1047100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1047400": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1047500": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1048100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1048300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1050100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1050300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1051100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1051200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1058300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1062300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1002700": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "dmg_break_add_ratio": -0.25,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "taken_dmg_inc_rate_v": 0.5,
+        "speed_ratio_walk_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1002100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "6999300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1005100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1044300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1043100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1038300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1058100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1037100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1036100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1035200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "isCarrryCoreItem": 1
+    },
+    "1035100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1003100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1004100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1002300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1005200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_dash_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1038100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1004300": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1004200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1001200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.25
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    },
+    "1003200": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "level": 1,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "speed_ratio_run_v": 0.3,
+        "speed_ratio_sprint_v": 0.3,
+        "speed_ratio_walk_v": 0.3,
+        "speed_ratio_dash_v": 0.3
+      },
+      "extraSpecies": {
+        "species_def_mag_v": 15,
+        "species_def_v": 15,
+        "species_hp_max_v": 15
+      },
+      "isCarrryCoreItem": 1
+    },
+    "1001100": {
+      "nature": 901,
+      "propid": 1002,
+      "resonanceLevel": 0,
+      "resonanceStage": 0,
+      "talentPointMap": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraProps": {
+        "final_taken_dmg_dec_rate_v": -0.1,
+        "final_taken_dmg_inc_rate_v": -0.2
+      },
+      "level": 1,
+      "isCarrryCoreItem": 1
+    }
+  }
+}

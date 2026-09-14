@@ -1,0 +1,48 @@
+{
+  "72766312": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "position": [
+      831.47,
+      16.2,
+      2.12
+    ],
+    "sandboxId": 72766274,
+    "sandboxType": 0,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": false,
+    "isAuto": false,
+    "id": 72766312,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "manualInit": false,
+    "targetPositionData": {
+      "entity": 72766311,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        831.47,
+        16.2,
+        2.12
+      ],
+      "author": "worldx_ch"
+    },
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72766311
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

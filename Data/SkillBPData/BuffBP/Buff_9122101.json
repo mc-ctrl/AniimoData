@@ -1,0 +1,41 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9122101",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "registerCharacterBuff",
+      "NodeID": 3,
+      "calcInfoByLuaConfig": {
+        "id": 9122101,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "d0b14f8b-e84e-4807-a2c7-49c049e1cc84",
+      "conditionType": 4,
+      "conditions": [
+        {
+          "target": "TARGET",
+          "name": "checkAttributeValue",
+          "isRatio": true,
+          "attributeName": "hp_cur",
+          "UID": "c512f923-ea03-4ff5-92ea-7b8932b4f815",
+          "maxValue": 0.5,
+          "NodeID": 2,
+          "abilityType": 0
+        }
+      ],
+      "characterBuffType": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

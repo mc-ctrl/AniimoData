@@ -1,0 +1,88 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10810000",
+  "defaultHitSoundType": "s",
+  "effectId": "Eff_Parmon_10083_Attack01",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    27
+  ],
+  "onProjectileHitIds": [
+    18,
+    24
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "27": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "72073a32-19b3-4838-88fe-e768561a32c7",
+      "effectId": "Eff_Parmon_10083_Attack04_Hit",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "23": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.4
+      },
+      "name": "calcResult",
+      "UID": "481c2f2f-80a5-4c9f-a345-349ac2f50476",
+      "target": "CASTER",
+      "NodeID": 23
+    },
+    "24": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "30dbc411-d4ef-4e91-be4b-c74f743c7ca9",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "18": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.4
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "163353cd-50d4-4fd7-9a7d-706e3cb8ef68",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 18
+    },
+    "26": {
+      "UID": "340678ea-6e52-4037-9c87-f48e24b3180d",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 26
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 2,
+  "calcResultNodeId": 18,
+  "impulseId": 2000,
+  "acceleration": 0
+}

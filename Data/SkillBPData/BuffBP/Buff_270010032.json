@@ -1,0 +1,87 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010032",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": true,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 270010032,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 12,
+        "UID": "e7f78f3b-4a32-45fb-b2ba-6440d765a52e",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "e6ea5670-bdf2-4dd1-8e4e-ba89f326fb1e",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "01cf86dd-945d-4baf-81c2-852e8df44f50",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "51447a6c-fc40-402b-ba07-53057d97f084",
+      "oldPetActionIds": [
+        11
+      ],
+      "NodeID": 8,
+      "newPetActionIds": [
+        6
+      ]
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "d6759868-3e8d-4b41-a954-eab970953411",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4de1833e-b31b-4a27-95e9-96dcdf12ed39",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "f2238627-f143-4bc2-b96a-d4370be9ddb3",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 11
+    },
+    "12": {
+      "calcId": 270010032,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "e7f78f3b-4a32-45fb-b2ba-6440d765a52e",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "onBuffDestroyIds": [
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    6
+  ]
+}

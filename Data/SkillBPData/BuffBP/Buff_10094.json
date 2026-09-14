@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10094",
+  "calcInfoByLuaConfig": {
+    "dmg_fire_add_ratio": "param0",
+    "dmg_fire_dec_ratio": "param0",
+    "type": 1,
+    "id": 10094
+  },
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

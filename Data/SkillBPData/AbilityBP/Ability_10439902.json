@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_10439902",
+  "NodeID": 1,
+  "UID": "c3356da6-2a12-40d4-a916-23cbdb1ae912",
+  "abilityParamId": 10300051,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10439902001,
+      "name": "setCombatActionTimeline",
+      "UID": "369ae6d6-8880-454d-b1e2-df20df7cdfa8",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_Skill_Ex_Field02",
+    "Eff_Parmon_10043_Skill_Ex01"
+  ],
+  "searchRelation": 2,
+  "name": "水龙大招 范围回血",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 0.5
+}

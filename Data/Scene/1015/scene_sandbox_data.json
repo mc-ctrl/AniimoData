@@ -1,0 +1,4354 @@
+{
+  "73816927": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73816935,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_隐藏菜单_第8层_2",
+    "sightLevelType": 64,
+    "spawners": [
+      73816930,
+      73816932
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73816927_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73816927,
+    "levelItems": {
+      "73816928": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "templateId": 0,
+        "siblingIndex": 0,
+        "id": 73816928,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 4,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73816936": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73816944,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_勇往直前_第8层_3",
+    "sightLevelType": 64,
+    "spawners": [
+      73816939,
+      73816941
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73816936_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73816936,
+    "levelItems": {
+      "73816937": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "templateId": 0,
+        "siblingIndex": 0,
+        "id": 73816937,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 4,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110590": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110591,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "高难战斗1_第7层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110573,
+      73110580,
+      73110582,
+      73110589,
+      73131308
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110590_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110590,
+    "levelItems": {
+      "73110567": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73110567,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110568": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110568,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110569": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110569,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73816964": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73816981,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_装备批发_第6层_4",
+    "sightLevelType": 64,
+    "spawners": [
+      73816970,
+      73816972,
+      73816974,
+      73816976,
+      73816978,
+      73881735
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73816964_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73816964,
+    "levelItems": {
+      "73816966": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73816966,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816967": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73816967,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816968": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73816968,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816965": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73816965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110616": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110617,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "高难战斗2_第7层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110596,
+      73110603,
+      73110605,
+      73110612,
+      73131885
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110616_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110616,
+    "levelItems": {
+      "73110595": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73110595,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110593": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110593,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110594": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110594,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73816982": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73816993,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_幸运收获_第11层_4",
+    "sightLevelType": 64,
+    "spawners": [
+      73816990,
+      73882438
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73816982_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "陈前",
+    "id": 73816982,
+    "levelItems": {
+      "73816983": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73816983,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816984": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          -4.41,
+          17.99,
+          -6.51
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73816984,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816985": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -0.66,
+          17.99,
+          -2.57
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73816985,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816986": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_6",
+        "position": [
+          -0.66,
+          17.99,
+          -2.57
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73816986,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816987": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 4,
+        "serializeVersion": 3,
+        "id": 73816987,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816988": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_5",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 5,
+        "serializeVersion": 3,
+        "id": 73816988,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110732": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110742,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "休息_第15层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110735,
+      73110737,
+      73110739
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110732_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110732,
+    "levelItems": {
+      "73110733": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110733,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647298": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647311,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "头目_第4层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647302,
+      72647304,
+      72647306,
+      72647308,
+      73573375
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647298_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647298,
+    "levelItems": {
+      "72647300": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647300,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647299": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647299,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110757": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110777,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "高难战斗_第12层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110761,
+      73110770,
+      73110772,
+      73110774
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110757_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110757,
+    "levelItems": {
+      "73110758": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110758,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110759": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110759,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73816994": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73817007,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_成长的代价_第6层_2",
+    "sightLevelType": 64,
+    "spawners": [
+      73817000,
+      73817002,
+      73817004,
+      73881623
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73816994_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73816994,
+    "levelItems": {
+      "73816998": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73816998,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816995": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73816995,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816996": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73816996,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73816997": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73816997,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110778": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110788,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "休息_第10层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110781,
+      73110783,
+      73110785
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110778_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110778,
+    "levelItems": {
+      "73110779": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110779,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110789": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110807,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_第12层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110793,
+      73110795,
+      73110802,
+      73110804
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110789_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110789,
+    "levelItems": {
+      "73110791": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110791,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110790": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110790,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73817008": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73817021,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_投资高手_第8层_4",
+    "sightLevelType": 64,
+    "spawners": [
+      73817014,
+      73817016,
+      73817018
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73817008_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73817008,
+    "levelItems": {
+      "73817010": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73817010,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73817011": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73817011,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73817012": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73817012,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73817009": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73817009,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110808": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110847,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_生存_第11层_1",
+    "sightLevelType": 64,
+    "spawners": [
+      73110820,
+      73110826,
+      73110832,
+      73110834,
+      73110840,
+      73110842,
+      73110844
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110808_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110808,
+    "levelItems": {
+      "73110812": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -0.66,
+          17.99,
+          -2.57
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73110812,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110809": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73110809,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110810": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          -4.41,
+          17.99,
+          -6.51
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110810,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110811": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          -4.41,
+          17.99,
+          -6.51
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110811,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647398": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647411,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "头目_第9层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647402,
+      72647404,
+      72647406,
+      72647408,
+      73573428
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647398_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647398,
+    "levelItems": {
+      "72647400": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647400,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647399": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647399,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110848": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110857,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "头目_第16层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110852,
+      73110854,
+      73573054,
+      74437502
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110848_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110848,
+    "levelItems": {
+      "73110850": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110850,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110849": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110849,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73880022": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73880023,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_勇往直前_第11层_3",
+    "sightLevelType": 64,
+    "spawners": [
+      73880016,
+      73880018,
+      73881896
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73880022_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73880022,
+    "levelItems": {
+      "73880015": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "templateId": 0,
+        "siblingIndex": 0,
+        "id": 73880015,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 4,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647412": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647430,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_第1层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647421,
+      72647423,
+      72647425,
+      72647427
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647412_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647412,
+    "levelItems": {
+      "72647414": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647414,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647413": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647413,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110881": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110892,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件（胖胖獭头目）_第14层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110885,
+      73110887,
+      73110889
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110881_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110881,
+    "levelItems": {
+      "73110883": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110883,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110882": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110882,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647431": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647449,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_第2层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647435,
+      72647442,
+      72647444,
+      72647446
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647431_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647431,
+    "levelItems": {
+      "72647433": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647433,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647432": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647432,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73880049": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73880050,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_成长的代价_第13层_3",
+    "sightLevelType": 64,
+    "spawners": [
+      73880044,
+      73880046,
+      73880048
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73880049_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73880049,
+    "levelItems": {
+      "73880039": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73880039,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73880040": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73880040,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73880037": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73880037,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73880038": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73880038,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73116526": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73116527,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "高难战斗_第8层",
+    "sightLevelType": 64,
+    "spawners": [
+      73116521,
+      73116522,
+      73116524,
+      73116525
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73116526_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73116526,
+    "levelItems": {
+      "73116515": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73116515,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73116516": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 73116516,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73116517": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73116517,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647450": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647473,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "高难战斗_第3层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647459,
+      72647461,
+      72647468,
+      72647470
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647450_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647450,
+    "levelItems": {
+      "72647451": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647451,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647452": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 72647452,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647453": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647453,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73117425": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73117426,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "高难战斗_第13层",
+    "sightLevelType": 64,
+    "spawners": [
+      73117419,
+      73117421,
+      73117422,
+      73117424
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73117425_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73117425,
+    "levelItems": {
+      "73117415": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73117415,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73117414": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73117414,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647543": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647559,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "普通战斗1_第7层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647547,
+      72647549,
+      72647556,
+      73131253
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647543_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647543,
+    "levelItems": {
+      "72647544": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647544,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647545": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647545,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73880035": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73880036,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_隐藏菜单_第11层_2",
+    "sightLevelType": 64,
+    "spawners": [
+      73880032,
+      73880034,
+      73881772
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73880035_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73880035,
+    "levelItems": {
+      "73880028": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "templateId": 0,
+        "siblingIndex": 0,
+        "id": 73880028,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 4,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73880013": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73880014,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_勇往直前_第6层_3",
+    "sightLevelType": 64,
+    "spawners": [
+      73880010,
+      73880012,
+      73881730
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73880013_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 73880013,
+    "levelItems": {
+      "73880006": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "templateId": 0,
+        "siblingIndex": 0,
+        "id": 73880006,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 4,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73632225": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73632299,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_怪海(异变)_第13层_2",
+    "sightLevelType": 64,
+    "spawners": [
+      73632247,
+      73632249,
+      73632251,
+      73632264,
+      73632279,
+      73632296
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73632225_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73632225,
+    "levelItems": {
+      "74183956": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 74183956,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73632226": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73632226,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73632227": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73632227,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73632228": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73632228,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647602": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647617,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_战斗_第8层_1",
+    "sightLevelType": 64,
+    "spawners": [
+      72647606,
+      72647608,
+      72647612,
+      72647614
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647602_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647602,
+    "levelItems": {
+      "72647603": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647603,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647604": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647604,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647313": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647337,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "高难战斗_第2层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647317,
+      72647319,
+      72647326,
+      72647328,
+      72647334
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647313_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647313,
+    "levelItems": {
+      "72647315": {
+        "majorCompId": 0,
+        "owner": "陈前",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647315,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647314": {
+        "majorCompId": 0,
+        "owner": "陈前",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647314,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110564": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110565,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_战斗_第6层_1",
+    "sightLevelType": 64,
+    "spawners": [
+      73110552,
+      73110554,
+      73110561,
+      73110563
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110564_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110564,
+    "levelItems": {
+      "73110548": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110548,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110547": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110547,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647361": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647377,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "普通战斗2_第7层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647365,
+      72647367,
+      72647374,
+      73131650
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647361_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647361,
+    "levelItems": {
+      "72647363": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647363,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647362": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647362,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647618": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72647630,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "休息_第5层",
+    "sightLevelType": 64,
+    "spawners": [
+      72647621,
+      72647625,
+      72647627
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647618_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647618,
+    "levelItems": {
+      "72647619": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647619,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73632300": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73632374,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "事件_怪海_第13层_1",
+    "sightLevelType": 64,
+    "spawners": [
+      73632316,
+      73632318,
+      73632320,
+      73632335,
+      73632352,
+      73632371
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73632300_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73632300,
+    "levelItems": {
+      "73632302": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73632302,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73632303": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 73632303,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "74184370": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 74184370,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73632301": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73632301,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "72647378": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "0层",
+    "envobjs": {},
+    "graphId": 72647385,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "0层_模板",
+    "sightLevelType": 64,
+    "spawners": [
+      72647382
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_72647378_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 72647378,
+    "levelItems": {
+      "72647380": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 72647380,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72647379": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 72647379,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "73110544": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 73110545,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_第3层",
+    "sightLevelType": 64,
+    "spawners": [
+      73110534,
+      73110541,
+      73110543
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 64,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1015/Sandbox_73110544_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "王明昊",
+    "id": 73110544,
+    "levelItems": {
+      "73110528": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 73110528,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73110527": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 73110527,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

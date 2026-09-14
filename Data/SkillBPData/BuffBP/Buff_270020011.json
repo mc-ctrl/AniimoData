@@ -1,0 +1,31 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "15": {
+      "UID": "7f783cfc-d0c0-4139-97dc-75e49b5c5b33",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2700200110,
+      "NodeID": 14,
+      "UID": "b667e314-0a37-490f-b73e-d0b27265034c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_270020011",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    15
+  ]
+}

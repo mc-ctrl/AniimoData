@@ -1,0 +1,289 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2113102",
+  "NodeID": 1,
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    12,
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "7": {
+      "rValue": 10,
+      "name": "greater",
+      "UID": "067859cf-6f6b-48ff-bf90-e1f0d5971032",
+      "NodeID": 7,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "c5621400-f025-475b-8f73-c8fa0ef62fcf",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "ep_cur"
+      }
+    },
+    "57": {
+      "key": "skillPos",
+      "name": "setCacheVal",
+      "UID": "5334d6c2-ff5b-49e7-b705-57d7b7e96159",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 57
+    },
+    "8": {
+      "UID": "7c48d84c-842a-458d-bbae-dafc0e92b7b8",
+      "conditionIds": [
+        7,
+        11
+      ],
+      "name": "conditionOr",
+      "NodeID": 8
+    },
+    "26": {
+      "actionIds": [
+        57,
+        51,
+        34,
+        56
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "f017a1c5-f767-42f6-8b2e-665a4b46eb54",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "9": {
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "c693dc7f-62b3-46e3-96fe-8f772b04a88b",
+      "name": "doActionsByConditions",
+      "NodeID": 9,
+      "elseActionIds": [
+        13
+      ]
+    },
+    "51": {
+      "eventName": "11330410",
+      "name": "notifyCustomEvent",
+      "UID": "8bd23998-9c7c-4d4c-85b4-3fa2bad83350",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "2": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "bfd07edb-ae6c-42cd-a24f-4b8356bb8f11",
+      "to": 11310411,
+      "NodeID": 2,
+      "from": 11310410
+    },
+    "11": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "3ada12f1-58c1-478a-841f-314d82ae58fb",
+      "NodeID": 11,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "c5621400-f025-475b-8f73-c8fa0ef62fcf",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "ep_cur"
+      }
+    },
+    "20": {
+      "eventName": "StartThink",
+      "NodeID": 20,
+      "UID": "61716933-f4da-4cd0-baa1-2b0bbc860865",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        19
+      ]
+    },
+    "21": {
+      "UID": "45258725-8c00-45b6-9057-3d9ea125a47f",
+      "name": "isInControlState",
+      "controlState": 2,
+      "NodeID": 21
+    },
+    "22": {
+      "eventName": "11330410",
+      "name": "notifyCustomEvent",
+      "UID": "dfc3a478-c603-41ad-9c62-9c1d1fa9f2cc",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "4": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "7ab27d5b-5d5f-4737-96c4-9f052c923d5f",
+      "to": 11310410,
+      "NodeID": 4,
+      "from": 11310410
+    },
+    "24": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "256d081d-82d8-4036-8aff-f6ad89bdcac4",
+      "NodeID": 24,
+      "lValue": {
+        "key": "skillPos",
+        "name": "getCacheVal",
+        "UID": "d37a4f03-3945-423b-89f3-0696de620dc2",
+        "target": "OWNER",
+        "NodeID": 23
+      }
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "7f35b860-bdff-407b-b056-f8756c02f244",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "56": {
+      "eventName": "StopThink",
+      "name": "notifyCustomEvent",
+      "UID": "8caa7356-6676-4e83-b037-11fd225e11f9",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "15": {
+      "key": "FollowDelay",
+      "duration": 3,
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15,
+      "UID": "2a1faa8b-cb9c-476b-944f-abe2b2b94a60",
+      "name": "addTimer"
+    },
+    "25": {
+      "UID": "052d89d4-74fc-4214-a82b-8b97e8f70636",
+      "conditionIds": [
+        24,
+        29
+      ],
+      "name": "conditionAnd",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "918eb6b8-bcef-4824-a338-8573898673a1",
+      "name": "buffStopThink",
+      "NodeID": 16
+    },
+    "27": {
+      "actionIds": [
+        26
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "64d0206a-3b6a-49df-bf80-edd0caa8f620",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "eventName": "StopThink",
+      "NodeID": 17,
+      "UID": "5a62526e-d59d-4bd3-ae95-4481e84fcdbe",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        16
+      ]
+    },
+    "29": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "70012a9a-29c7-46a0-8a6f-79aa7073af5a",
+      "NodeID": 29,
+      "lValue": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "59fb6be5-205f-4d4d-af16-22ff093dc4b6",
+        "target": "OWNER",
+        "NodeID": 28
+      }
+    },
+    "18": {
+      "key": "skillPos",
+      "name": "setCacheVal",
+      "UID": "9f1df114-1761-419d-9616-eed509ff21d1",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 18
+    },
+    "12": {
+      "value": 10,
+      "epCostReason": 1,
+      "name": "costEp",
+      "UID": "93df631d-3954-439d-8f42-6f6afc1de750",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "19": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "dc7f8399-785b-4de5-ade5-e4b9b5aab3ad",
+      "name": "buffStartThink",
+      "NodeID": 19
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2113102101,
+      "name": "createProjectile",
+      "UID": "c272912f-aadd-43e5-ad2b-9d36638eeb96",
+      "rotation": "Direct",
+      "pos": {
+        "key": "11330410pos",
+        "name": "getCacheVal",
+        "UID": "6efebfd7-d31c-4384-9644-d28ea7b84060",
+        "target": "OWNER",
+        "NodeID": 49
+      },
+      "projectileType": "Tracking",
+      "targetRotation": {
+        "key": "11330410rot",
+        "name": "getCacheVal",
+        "UID": "383d679e-7b3f-42aa-9d33-e5bb3fc88fc6",
+        "target": "OWNER",
+        "NodeID": 50
+      },
+      "NodeID": 34,
+      "targetPos": "CASTER"
+    },
+    "13": {
+      "abilityTarget": "OWNER",
+      "forceCast": true,
+      "NodeID": 13,
+      "UID": "ee08dd14-c116-4548-a4ab-5fe523b07aa4",
+      "name": "castAbility",
+      "abilityId": 11310411
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4,
+    18,
+    22
+  ],
+  "onBuffStartIds": [
+    2,
+    20,
+    17,
+    15,
+    27
+  ]
+}

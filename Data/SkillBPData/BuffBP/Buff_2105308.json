@@ -1,0 +1,103 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "add_cur_hp_by_dmg_ratio_v": {
+      "calcId": 2105308,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "f4c0a005-e5e5-4b6e-8067-2080c4f67f35",
+      "name": "getParamByLuaConfig"
+    },
+    "instant_dmg_rate_v": {
+      "NodeID": 0
+    },
+    "taken_dmg_inc_rate_v": {
+      "calcId": 2105308,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 14,
+      "UID": "05c20902-7e1d-4126-b6ca-0b3574f76ec1",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "NodeID": 1,
+  "UID": "cb79fbbb-0c96-41c7-92fa-dd74651b0067",
+  "icon": "icon_buff_attack_up",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "3287df08-9971-42a8-9b21-17e2566ee32c",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3
+    },
+    "8": {
+      "calcId": 2105308,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "b1098f79-7c6c-4678-b5f1-e752bae1fd18",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 6,
+      "UID": "e118a650-a303-4286-9892-eb0be80c36d6",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10053_Fire",
+      "name": "playPreset"
+    },
+    "10": {
+      "calcInfo": {
+        "add_cur_hp_by_dmg": {
+          "calcId": 2105308,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 8,
+          "UID": "b1098f79-7c6c-4678-b5f1-e752bae1fd18",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "calcResult",
+      "UID": "9971edf9-7a82-46bf-a1c4-3a72383d277d",
+      "target": "CURPET",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "6ee06adf-3d54-4552-a809-3ca008008bd4",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "7": {
+      "UID": "50ed9952-42db-4ec7-a57c-116ad07725bc",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10053_Fire",
+      "NodeID": 7
+    },
+    "2": {
+      "UID": "aa22812b-63b6-42a2-9125-5dc838159f41",
+      "name": "refreshBuffDuration",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2105308",
+  "onBuffDestroyIds": [
+    7
+  ],
+  "onBuffStartIds": [
+    3,
+    11,
+    6
+  ]
+}

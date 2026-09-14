@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "pet_individual_point_hp": 0
+  },
+  "calcInfoByLuaConfig": {
+    "id": 5000181,
+    "type": 1,
+    "pet_individual_point_hp": "param0"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_5000181",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

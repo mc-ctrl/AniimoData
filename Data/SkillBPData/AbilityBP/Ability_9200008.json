@@ -1,0 +1,128 @@
+{
+  "BPName": "ability_9200008",
+  "NodeID": 1,
+  "UID": "8cb723b5-b2a8-488b-99c0-15c4740cd6bb",
+  "abilityParamId": 9200008,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "165": {
+      "offsetXYZ": [
+        -0.133,
+        0.4,
+        1
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6e964451-6383-4f76-8827-5f9b71df198f",
+      "effectId": "Eff_Avatar_Female_Skill_Doll_Disappear",
+      "speed": 1,
+      "NodeID": 165
+    },
+    "166": {
+      "conditionActionIds": [
+        170
+      ],
+      "UID": "1f21c592-615f-4316-a558-70b599ebf387",
+      "name": "doActionsByConditions",
+      "NodeID": 166,
+      "elseActionIds": [
+        165
+      ]
+    },
+    "167": {
+      "name": "stopEffectStr",
+      "UID": "486c7b1d-2e3e-4df8-abf9-666d697ae6a6",
+      "effectId": "Eff_Avatar_Female_Skill_Crush_DestroyLoop",
+      "target": "OWNER",
+      "NodeID": 167
+    },
+    "170": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "f9d23c36-6a10-4ac3-a4c4-ebfc1672a5ce",
+      "NodeID": 170,
+      "lValue": {
+        "UID": "bead11bb-dd25-4ce8-9249-33c419865c8f",
+        "name": "getCacheVal",
+        "key": "dollDestroy",
+        "NodeID": 169
+      }
+    },
+    "8": {
+      "timelineId": 9200008001,
+      "name": "setCombatActionTimeline",
+      "UID": "4f2fa203-34ef-4c54-8cbd-0807ffec1773",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "190": {
+      "name": "stopSoundStr",
+      "UID": "56702437-c42f-4ac4-ace6-afe4c3832342",
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyStart",
+      "target": "OWNER",
+      "NodeID": 190
+    },
+    "125": {
+      "name": "stopEffectStr",
+      "UID": "4be46608-1f8a-4799-a6c2-d708cc6bc4c8",
+      "effectId": "Eff_Avatar_Female_Skill_Doll",
+      "target": "OWNER",
+      "NodeID": 125
+    },
+    "192": {
+      "name": "stopSoundStr",
+      "UID": "e4d04c0f-3a21-492e-bbb6-b4c99e884c98",
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyEnd01",
+      "target": "OWNER",
+      "NodeID": 192
+    },
+    "191": {
+      "name": "stopSoundStr",
+      "UID": "ecff2a4c-d3f0-484f-905c-b902dbb2306f",
+      "soundId": "SFX_Avatar_Female_Skill_Crush_DestroyLoop",
+      "target": "OWNER",
+      "NodeID": 191
+    },
+    "173": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "88bccb8e-9d6a-47a9-b6d8-1ecbf57b3020",
+      "target": "OWNER",
+      "NodeID": 173
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Crush_DestroyStart",
+    "Skill_Crush_DestroyLoop",
+    "Skill_Crush_DestroyEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Avatar_Blunt",
+    "Eff_Avatar_Female_Skill_Crush_DestroyLoop_Disappear",
+    "Eff_Avatar_Female_Skill_Doll",
+    "Eff_Avatar_Female_Skill_Doll_Floor",
+    "Eff_Avatar_Female_Skill_Crush_DestroyLoop",
+    "Eff_Avatar_Female_Skill_Doll_Disappear"
+  ],
+  "searchRelation": 1,
+  "searchTargetRangeDown": 0,
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "onAbilityEndIds": [
+    125,
+    190,
+    166,
+    191,
+    167,
+    173,
+    192
+  ],
+  "onlyHasActOnTargets": true
+}

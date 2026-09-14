@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10016",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "onBuffRefreshIds": [
+    6,
+    4
+  ],
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "UID": "08f18bf5-a121-48f2-b3ea-23e920d211f6",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "speed_ratio_run_v": -0.8,
+        "speed_ratio_sprint_v": -0.8,
+        "speed_ratio_crouch_v": -0.8,
+        "speed_ratio_dash_v": -0.8,
+        "speed_ratio_swim_v": -0.8,
+        "speed_ratio_walk_v": -0.8
+      },
+      "NodeID": 4
+    },
+    "13": {
+      "UID": "5f28caa5-bae8-4af4-add0-7dd59f023fe3",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 13
+    },
+    "6": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "5edbdbd3-17c3-4d9e-b3ad-9c43fe7132be",
+      "name": "buffStartThink",
+      "NodeID": 6
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    13
+  ],
+  "onBuffStartIds": [
+    6,
+    4
+  ]
+}

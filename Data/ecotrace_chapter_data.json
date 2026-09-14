@@ -1,0 +1,28 @@
+[
+  {
+    "1003": {
+      "tabName": 1198999572,
+      "taskType": 3,
+      "iconResId": "$UI_Event_Icon_Cultivationtab.png",
+      "petId": 1047400,
+      "chapterIcon": "$UI_Event_Icon_Cultivation.png",
+      "taskId": 450015
+    },
+    "1001": {
+      "tabName": 1909182686,
+      "taskType": 1,
+      "iconResId": "$UI_Event_Icon_Capturetab.png",
+      "petId": 1047400,
+      "chapterIcon": "$UI_Event_Icon_Capture.png",
+      "taskId": 450013
+    },
+    "1002": {
+      "tabName": 2147303253,
+      "taskType": 2,
+      "iconResId": "$UI_Event_Icon_Experiencetab.png",
+      "petId": 1047400,
+      "chapterIcon": "$UI_Event_Icon_Experience.png",
+      "taskId": 450014
+    }
+  }
+]

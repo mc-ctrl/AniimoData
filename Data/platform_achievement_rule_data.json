@@ -1,0 +1,912 @@
+{
+  "0017": {
+    "steamid": "NEW_ACHIEVEMENT_17",
+    "paramsJson": "{\"targetValue\":1,\"fallbackTitleId\":8}",
+    "eventId": "player_title_by_name",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 17,
+    "displayDesc": "角色头衔达到Ⅰ级探索者",
+    "displayName": "Ⅰ级探索者",
+    "epicid": "achievement_17"
+  },
+  "0018": {
+    "steamid": "NEW_ACHIEVEMENT_18",
+    "paramsJson": "{\"targetValue\":1,\"fallbackTitleId\":5}",
+    "eventId": "player_title_by_name",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 18,
+    "displayDesc": "角色头衔达到初级冒险家",
+    "displayName": "初级冒险家",
+    "epicid": "achievement_18"
+  },
+  "0019": {
+    "steamid": "NEW_ACHIEVEMENT_19",
+    "paramsJson": "{\"targetValue\":60,\"trigger\":14,\"arg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 19,
+    "displayDesc": "提升角色等级至60级",
+    "displayName": "学院前辈",
+    "epicid": "achievement_19"
+  },
+  "0020": {
+    "steamid": "NEW_ACHIEVEMENT_20",
+    "paramsJson": "{\"targetValue\":20,\"trigger\":388,\"extraArg\":[1,0,1,[1,2,3,4]]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 20,
+    "displayDesc": "获得20个徽章",
+    "displayName": "徽章满盒",
+    "epicid": "achievement_20"
+  },
+  "0021": {
+    "steamid": "NEW_ACHIEVEMENT_21",
+    "paramsJson": "{\"targetValue\":10,\"trigger\":11,\"arg\":0,\"extraArg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 21,
+    "displayDesc": "伊莫图鉴收录数量达到10种",
+    "displayName": "图鉴入门",
+    "epicid": "achievement_21"
+  },
+  "0022": {
+    "steamid": "NEW_ACHIEVEMENT_22",
+    "paramsJson": "{\"targetValue\":40,\"trigger\":11,\"arg\":0,\"extraArg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 22,
+    "displayDesc": "伊莫图鉴收录数量达到40种",
+    "displayName": "图鉴能手",
+    "epicid": "achievement_22"
+  },
+  "0023": {
+    "steamid": "NEW_ACHIEVEMENT_23",
+    "paramsJson": "{\"targetValue\":80,\"trigger\":11,\"arg\":0,\"extraArg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 23,
+    "displayDesc": "伊莫图鉴收录数量达到80种",
+    "displayName": "图鉴达人",
+    "epicid": "achievement_23"
+  },
+  "0024": {
+    "steamid": "NEW_ACHIEVEMENT_24",
+    "paramsJson": "{\"targetValue\":10,\"arg\":1223022,\"extraArg\":1}",
+    "eventId": "custom_trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 24,
+    "displayDesc": "孵化10个伊莫蛋",
+    "displayName": "生命初鸣",
+    "epicid": "achievement_24"
+  },
+  "0025": {
+    "steamid": "NEW_ACHIEVEMENT_25",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":11,\"arg\":0,\"extraArg\":4}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 25,
+    "displayDesc": "拥有1只头目级伊莫",
+    "displayName": "好大一只",
+    "epicid": "achievement_25"
+  },
+  "0026": {
+    "steamid": "NEW_ACHIEVEMENT_26",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":11,\"arg\":0,\"extraArg\":1}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 26,
+    "displayDesc": "拥有1只闪耀伊莫",
+    "displayName": "一闪一闪亮晶晶",
+    "epicid": "achievement_26"
+  },
+  "0027": {
+    "steamid": "NEW_ACHIEVEMENT_27",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":215,\"arg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 27,
+    "displayDesc": "拥有1只虹光伊莫",
+    "displayName": "五彩斑斓",
+    "epicid": "achievement_27"
+  },
+  "0028": {
+    "steamid": "NEW_ACHIEVEMENT_28",
+    "paramsJson": "{\"targetValue\":5,\"trigger\":132,\"arg\":4}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 28,
+    "displayDesc": "拥有5只闪亮之星评价的伊莫",
+    "displayName": "闪亮之星",
+    "epicid": "achievement_28"
+  },
+  "0029": {
+    "googleid": "CgkIpse55dQCEAIQBg",
+    "paramsJson": "{\"targetValue\":1,\"triggerGroup\":[{\"trigger\":215,\"arg\":0,\"targetValue\":1},{\"trigger\":11,\"arg\":0,\"extraArg\":1,\"targetValue\":1}],\"logic\":\"AND\"}",
+    "eventId": "trigger_value",
+    "steamid": "NEW_ACHIEVEMENT_29",
+    "achievementId": 29,
+    "displayDesc": "拥有1只闪耀的虹光伊莫",
+    "displayName": "闪耀之虹",
+    "epicid": "achievement_29"
+  },
+  "0030": {
+    "steamid": "NEW_ACHIEVEMENT_30",
+    "paramsJson": "{\"targetValue\":10,\"trigger\":215,\"arg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 30,
+    "displayDesc": "拥有10只虹光伊莫",
+    "displayName": "虹光家族",
+    "epicid": "achievement_30"
+  },
+  "0031": {
+    "steamid": "NEW_ACHIEVEMENT_31",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":337,\"extraArg\":[0,10]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 31,
+    "displayDesc": "任意一个携带物升到10级",
+    "displayName": "强力宝物",
+    "epicid": "achievement_31"
+  },
+  "0032": {
+    "steamid": "NEW_ACHIEVEMENT_32",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":319,\"arg\":0,\"extraArg\":[0,6]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 32,
+    "displayDesc": "将1只伊莫升星突破至6阶",
+    "displayName": "六星傲视",
+    "epicid": "achievement_32"
+  },
+  "0033": {
+    "steamid": "NEW_ACHIEVEMENT_33",
+    "paramsJson": "{\"targetValue\":50,\"countryId\":300001}",
+    "eventId": "country_collect_rate_percent",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 33,
+    "displayDesc": "获得风吻平原收集度铜徽章",
+    "displayName": "逐风越野·铜",
+    "epicid": "achievement_33"
+  },
+  "0034": {
+    "steamid": "NEW_ACHIEVEMENT_34",
+    "paramsJson": "{\"targetValue\":60,\"countryId\":300001}",
+    "eventId": "country_collect_rate_percent",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 34,
+    "displayDesc": "获得风吻平原收集度银徽章",
+    "displayName": "逐风越野·银",
+    "epicid": "achievement_34"
+  },
+  "0035": {
+    "steamid": "NEW_ACHIEVEMENT_35",
+    "paramsJson": "{\"targetValue\":100,\"countryId\":300001}",
+    "eventId": "country_collect_rate_percent",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 35,
+    "displayDesc": "获得风吻平原收集度金徽章",
+    "displayName": "逐风越野·金",
+    "epicid": "achievement_35"
+  },
+  "0036": {
+    "steamid": "NEW_ACHIEVEMENT_36",
+    "paramsJson": "{\"targetValue\":9,\"countryId\":300001}",
+    "eventId": "country_total_research_level",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 36,
+    "displayDesc": "研究手册-风吻平原提升至9级",
+    "displayName": "伊莫研究专家",
+    "epicid": "achievement_36"
+  },
+  "0037": {
+    "googleid": "CgkIpse55dQCEAIQBQ",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":11,\"arg\":1021300,\"extraArg\":0}",
+    "eventId": "trigger_value",
+    "steamid": "NEW_ACHIEVEMENT_37",
+    "achievementId": 37,
+    "displayDesc": "拥有1只彩虹鸢尾",
+    "displayName": "地上的彩虹",
+    "epicid": "achievement_37"
+  },
+  "0038": {
+    "steamid": "NEW_ACHIEVEMENT_38",
+    "paramsJson": "{\"targetValue\":5,\"arg\":1223021,\"extraArg\":1}",
+    "eventId": "custom_trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 38,
+    "displayDesc": "击败5个头目",
+    "displayName": "头目克星",
+    "epicid": "achievement_38"
+  },
+  "0039": {
+    "steamid": "NEW_ACHIEVEMENT_39",
+    "paramsJson": "{\"targetValue\":20,\"arg\":1223021,\"extraArg\":1}",
+    "eventId": "custom_trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 39,
+    "displayDesc": "击败20个头目",
+    "displayName": "头目猎人",
+    "epicid": "achievement_39"
+  },
+  "0040": {
+    "steamid": "NEW_ACHIEVEMENT_40",
+    "paramsJson": "{\"targetValue\":10,\"trigger\":403,\"arg\":0,\"extraArg\":[0]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 40,
+    "displayDesc": "累计完成10次冒险家挑战",
+    "displayName": "挑战新星",
+    "epicid": "achievement_40"
+  },
+  "0041": {
+    "googleid": "CgkIpse55dQCEAIQCA",
+    "paramsJson": "{\"targetValue\":50,\"trigger\":403,\"arg\":0,\"extraArg\":[0]}",
+    "eventId": "trigger_value",
+    "steamid": "NEW_ACHIEVEMENT_41",
+    "achievementId": 41,
+    "displayDesc": "累计完成50次冒险家挑战",
+    "displayName": "挑战达人",
+    "epicid": "achievement_41"
+  },
+  "0042": {
+    "steamid": "NEW_ACHIEVEMENT_42",
+    "paramsJson": "{\"targetValue\":1}",
+    "eventId": "simulation_train_pass_total",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 42,
+    "displayDesc": "通关简单难度任意全息训练关卡",
+    "displayName": "全息训练生",
+    "epicid": "achievement_42"
+  },
+  "0043": {
+    "steamid": "NEW_ACHIEVEMENT_43",
+    "paramsJson": "{\"targetValue\":1,\"levelIds\":[10,11,12]}",
+    "eventId": "simulation_train_pass_set",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 43,
+    "displayDesc": "通关最高难度的草之训练、水之训练和火之训练",
+    "displayName": "全息实力派",
+    "epicid": "achievement_43"
+  },
+  "0044": {
+    "steamid": "NEW_ACHIEVEMENT_44",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":328,\"arg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 44,
+    "displayDesc": "在抢蛋玩法中成功撤离一次",
+    "displayName": "蛋定撤离",
+    "epicid": "achievement_44"
+  },
+  "0045": {
+    "steamid": "NEW_ACHIEVEMENT_45",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":328,\"arg\":3005,\"extraArg\":5}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 45,
+    "displayDesc": "小队摸蛋噩梦难度完成撤离",
+    "displayName": "全身而退",
+    "epicid": "achievement_45"
+  },
+  "0046": {
+    "steamid": "NEW_ACHIEVEMENT_46",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":392,\"arg\":2,\"extraArg\":1}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 46,
+    "displayDesc": "抢蛋大作战段位达到探蛋新秀",
+    "displayName": "探蛋新秀",
+    "epicid": "achievement_46"
+  },
+  "0047": {
+    "googleid": "CgkIpse55dQCEAIQBw",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":392,\"arg\":5,\"extraArg\":1}",
+    "eventId": "trigger_value",
+    "steamid": "NEW_ACHIEVEMENT_47",
+    "achievementId": 47,
+    "displayDesc": "抢蛋大作战段位达到夺蛋专家",
+    "displayName": "夺蛋专家",
+    "epicid": "achievement_47"
+  },
+  "0048": {
+    "steamid": "NEW_ACHIEVEMENT_48",
+    "paramsJson": "{\"targetValue\":5,\"trigger\":339,\"arg\":0,\"extraArg\":[[5000021,5000121,5000218,5000221,5000318,5000319,5000320,5000321,5000409,5000410],6,3]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 48,
+    "displayDesc": "在抢蛋大作战中获得5个虹光品质藏品",
+    "displayName": "虹光宝藏",
+    "epicid": "achievement_48"
+  },
+  "0049": {
+    "steamid": "NEW_ACHIEVEMENT_49",
+    "paramsJson": "{\"targetValue\":50,\"trigger\":347,\"arg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 49,
+    "displayDesc": "在全息协战中累计获取50星",
+    "displayName": "协战之星",
+    "epicid": "achievement_49"
+  },
+  "0050": {
+    "steamid": "NEW_ACHIEVEMENT_50",
+    "paramsJson": "{\"targetValue\":6,\"trigger\":400,\"extraArg\":[201010,201020,201030,201040,201050,201060]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 50,
+    "displayDesc": "挑战精英冒险家，获得6枚胜利徽章",
+    "displayName": "胜利徽章",
+    "epicid": "achievement_50"
+  },
+  "0051": {
+    "googleid": "CgkIpse55dQCEAIQCg",
+    "paramsJson": "{\"targetValue\":1,\"eventKey\":\"human_pet_photo\"}",
+    "eventId": "module_event_counter",
+    "steamid": "NEW_ACHIEVEMENT_51",
+    "achievementId": 51,
+    "displayDesc": "进行一次人宠合拍",
+    "displayName": "同框瞬间",
+    "epicid": "achievement_51"
+  },
+  "0052": {
+    "steamid": "NEW_ACHIEVEMENT_52",
+    "paramsJson": "{\"targetValue\":1,\"eventKey\":\"hug_pet\"}",
+    "eventId": "module_event_counter",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 52,
+    "displayDesc": "拥抱一次伊莫",
+    "displayName": "拥抱是最好的治愈",
+    "epicid": "achievement_52"
+  },
+  "0053": {
+    "steamid": "NEW_ACHIEVEMENT_53",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":212}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 53,
+    "displayDesc": "拥有自己的房车家园",
+    "displayName": "有车有房",
+    "epicid": "achievement_53"
+  },
+  "0054": {
+    "steamid": "NEW_ACHIEVEMENT_54",
+    "paramsJson": "{\"targetValue\":5,\"arg\":1223023,\"extraArg\":1}",
+    "eventId": "custom_trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 54,
+    "displayDesc": "在营地完成5次伊莫出游",
+    "displayName": "伊莫寻宝团",
+    "epicid": "achievement_54"
+  },
+  "0055": {
+    "steamid": "NEW_ACHIEVEMENT_55",
+    "paramsJson": "{\"targetValue\":80,\"trigger\":349,\"arg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 55,
+    "displayDesc": "在房车家园完成80个订单",
+    "displayName": "王牌供应商",
+    "epicid": "achievement_55"
+  },
+  "0056": {
+    "steamid": "NEW_ACHIEVEMENT_56",
+    "paramsJson": "{\"targetValue\":8,\"trigger\":295}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 56,
+    "displayDesc": "房车等级到达8级",
+    "displayName": "欢迎回家",
+    "epicid": "achievement_56"
+  },
+  "0057": {
+    "steamid": "NEW_ACHIEVEMENT_57",
+    "paramsJson": "{\"targetValue\":500000,\"trigger\":356,\"arg\":2}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 57,
+    "displayDesc": "累计消耗50万信用积分",
+    "displayName": "能赚能花",
+    "epicid": "achievement_57"
+  },
+  "0058": {
+    "steamid": "NEW_ACHIEVEMENT_58",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":345,\"arg\":2}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 58,
+    "displayDesc": "吹响笛子，邂逅1位冒险家",
+    "displayName": "天涯知音",
+    "epicid": "achievement_58"
+  },
+  "0059": {
+    "steamid": "NEW_ACHIEVEMENT_59",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":219,\"arg\":5}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 59,
+    "displayDesc": "和1个好友的亲密度达到5级",
+    "displayName": "心意相通",
+    "epicid": "achievement_59"
+  },
+  "0060": {
+    "steamid": "NEW_ACHIEVEMENT_60",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":342}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 60,
+    "displayDesc": "同游模式下赠送好友1只伊莫",
+    "displayName": "赠宠之礼",
+    "epicid": "achievement_60"
+  },
+  "0061": {
+    "steamid": "NEW_ACHIEVEMENT_61",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":194}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 61,
+    "displayDesc": "和好友交换1次伊莫",
+    "displayName": "互赠所爱",
+    "epicid": "achievement_61"
+  },
+  "0062": {
+    "steamid": "NEW_ACHIEVEMENT_62",
+    "paramsJson": "{\"targetValue\":1,\"eventKey\":\"studio_friend_photo\"}",
+    "eventId": "module_event_counter",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 62,
+    "displayDesc": "在摄影棚进行一次好友合拍",
+    "displayName": "友谊定格",
+    "epicid": "achievement_62"
+  },
+  "0063": {
+    "googleid": "CgkIpse55dQCEAIQCQ",
+    "paramsJson": "{\"targetValue\":5,\"trigger\":343,\"arg\":0,\"extraArg\":[0]}",
+    "eventId": "trigger_value",
+    "steamid": "NEW_ACHIEVEMENT_63",
+    "achievementId": 63,
+    "displayDesc": "累计解锁5套时装",
+    "displayName": "人靠衣装",
+    "epicid": "achievement_63"
+  },
+  "0064": {
+    "steamid": "NEW_ACHIEVEMENT_64",
+    "paramsJson": "{\"targetValue\":1,\"eventKey\":\"costume_dye\"}",
+    "eventId": "module_event_counter",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 64,
+    "displayDesc": "进行一次时装染色",
+    "displayName": "时尚本色",
+    "epicid": "achievement_64"
+  },
+  "0001": {
+    "googleid": "CgkIpse55dQCEAIQAQ",
+    "paramsJson": "{\"targetValue\":1,\"questIds\":[3707004]}",
+    "eventId": "quest_set",
+    "steamid": "NEW_ACHIEVEMENT_1",
+    "achievementId": 1,
+    "displayDesc": "登录艾德尔大陆",
+    "displayName": "新世界的第一步",
+    "epicid": "achievement_1"
+  },
+  "0002": {
+    "steamid": "NEW_ACHIEVEMENT_2",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":118}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 2,
+    "displayDesc": "获得日耀狮或月辉狐",
+    "displayName": "伊始之伴",
+    "epicid": "achievement_2"
+  },
+  "0003": {
+    "googleid": "CgkIpse55dQCEAIQAg",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":387,\"arg\":500010}",
+    "eventId": "trigger_value",
+    "steamid": "NEW_ACHIEVEMENT_3",
+    "achievementId": 3,
+    "displayDesc": "拥有限量徽章：星之征途",
+    "displayName": "星之征途",
+    "epicid": "achievement_3"
+  },
+  "0004": {
+    "steamid": "NEW_ACHIEVEMENT_4",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":117,\"arg\":200011}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 4,
+    "displayDesc": "激活风吻平原的地脉树",
+    "displayName": "地脉回响",
+    "epicid": "achievement_4"
+  },
+  "0005": {
+    "steamid": "NEW_ACHIEVEMENT_5",
+    "paramsJson": "{\"targetValue\":1,\"trigger\":388,\"extraArg\":[1,0,1,[1,2,3,4]]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 5,
+    "displayDesc": "获得第1枚收集度徽章",
+    "displayName": "集章，开始！",
+    "epicid": "achievement_5"
+  },
+  "0006": {
+    "steamid": "NEW_ACHIEVEMENT_6",
+    "paramsJson": "{\"targetValue\":10,\"treeIds\":[]}",
+    "eventId": "leyline_active_point_count",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 6,
+    "displayDesc": "激活10个地脉晶簇",
+    "displayName": "光芒所指",
+    "epicid": "achievement_6"
+  },
+  "0007": {
+    "steamid": "NEW_ACHIEVEMENT_7",
+    "paramsJson": "{\"targetValue\":14,\"trigger\":388,\"extraArg\":[1,1,1,[3]]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 7,
+    "displayDesc": "走遍风吻平原的每一个区域",
+    "displayName": "足迹遍野",
+    "epicid": "achievement_7"
+  },
+  "0008": {
+    "googleid": "CgkIpse55dQCEAIQBA",
+    "paramsJson": "{\"targetValue\":6,\"trigger\":135,\"arg\":200011}",
+    "eventId": "trigger_value",
+    "steamid": "NEW_ACHIEVEMENT_8",
+    "achievementId": 8,
+    "displayDesc": "风吻平原的地脉树升至天象之祈",
+    "displayName": "天象祈福",
+    "epicid": "achievement_8"
+  },
+  "0009": {
+    "steamid": "NEW_ACHIEVEMENT_9",
+    "paramsJson": "{\"targetValue\":15,\"trigger\":135,\"arg\":200011}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 9,
+    "displayDesc": "风吻平原的地脉树升至遨游之力",
+    "displayName": "遨游之力",
+    "epicid": "achievement_9"
+  },
+  "0010": {
+    "steamid": "NEW_ACHIEVEMENT_10",
+    "paramsJson": "{\"targetValue\":1,\"eventKey\":\"rainbow_meteorology\"}",
+    "eventId": "module_event_counter",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 10,
+    "displayDesc": "见证一次虹光天象",
+    "displayName": "绚烂如虹",
+    "epicid": "achievement_10"
+  },
+  "0011": {
+    "steamid": "NEW_ACHIEVEMENT_11",
+    "paramsJson": "{\"targetValue\":3,\"questIds\":[3701030,3705001,4702003]}",
+    "eventId": "quest_set",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 11,
+    "displayDesc": "完成旅途任务约定之誓、星星与骑士、勇士",
+    "displayName": "逐风之旅",
+    "epicid": "achievement_11"
+  },
+  "0012": {
+    "steamid": "NEW_ACHIEVEMENT_12",
+    "paramsJson": "{\"targetValue\":1,\"questIds\":[6202007]}",
+    "eventId": "quest_set",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 12,
+    "displayDesc": "完成风吻平原的主线故事（某一环任务）",
+    "displayName": "斑斓之彩",
+    "epicid": "achievement_12"
+  },
+  "0013": {
+    "steamid": "NEW_ACHIEVEMENT_13",
+    "paramsJson": "{\"targetValue\":10,\"trigger\":346,\"extraArg\":[[301],[0]]}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 13,
+    "displayDesc": "完成风吻平原所有的旅途任务",
+    "displayName": "风之终章",
+    "epicid": "achievement_13"
+  },
+  "0014": {
+    "steamid": "NEW_ACHIEVEMENT_14",
+    "paramsJson": "{\"targetValue\":200,\"trigger\":12,\"arg\":1,\"extraArg\":0}",
+    "eventId": "trigger_value",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 14,
+    "displayDesc": "累计打开200个大世界宝箱",
+    "displayName": "寻宝猎人",
+    "epicid": "achievement_14"
+  },
+  "0015": {
+    "googleid": "CgkIpse55dQCEAIQAw",
+    "paramsJson": "{\"targetValue\":1,\"isTemple\":1,\"excludedDungeonIds\":[200003,200004]}",
+    "eventId": "dungeon_pass_total",
+    "steamid": "NEW_ACHIEVEMENT_15",
+    "achievementId": 15,
+    "displayDesc": "通关1座地宫",
+    "displayName": "地宫初探",
+    "epicid": "achievement_15"
+  },
+  "0016": {
+    "steamid": "NEW_ACHIEVEMENT_16",
+    "paramsJson": "{\"targetValue\":10,\"isTemple\":1,\"excludedDungeonIds\":[200003,200004]}",
+    "eventId": "dungeon_pass_total",
+    "platform": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "achievementId": 16,
+    "displayDesc": "累计通关10座地宫",
+    "displayName": "地宫常客",
+    "epicid": "achievement_16"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_12110900",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "abilityParamId": 9400139,
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12110900001,
+      "name": "setCombatActionTimeline",
+      "UID": "5ff8efdd-4cbf-4587-acb5-c2ccfea700f4",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "EnvBehav_Bloom"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_MagicFlower_Body_003"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "delayStartCd": true,
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

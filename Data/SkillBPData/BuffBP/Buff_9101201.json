@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "stamina_cost_ratio_dash_v": -0.3,
+    "stamina_cost_ratio_glide_v": -0.3,
+    "stamina_cost_ratio_sprint_v": -0.3
+  },
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_9101201"
+}

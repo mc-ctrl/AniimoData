@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020004",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    7
+  ],
+  "nodeMap": {
+    "4": {
+      "target": "CURPET",
+      "duration": 3,
+      "buffId": 402000401,
+      "NodeID": 4,
+      "UID": "492c243d-3cbb-4f0e-9890-965eb81fd0bd",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "1ba60b00-bc8a-4f10-a1b0-8095b1700629",
+      "NodeID": 7
+    },
+    "6": {
+      "UID": "71b1898c-ddc0-43ae-8aed-34fc90937ea5",
+      "name": "registerWaterAbsorbEvent",
+      "levelActions": [
+        {
+          "actionIds": [
+            4
+          ],
+          "count": 1
+        }
+      ],
+      "NodeID": 6
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91464017",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    9,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "06c5c077-80dd-4641-a28f-66b0823fafe0",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        13,
+        3
+      ]
+    },
+    "6": {
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "12fe3d14-d60d-4c04-b1df-f7ee77491995",
+      "name": "doActionsByConditions",
+      "NodeID": 6,
+      "elseActionIds": [
+        5
+      ]
+    },
+    "7": {
+      "UID": "c62f6d12-4bfd-4c9f-923a-8765ad479ce2",
+      "scale": 1,
+      "name": "setAnimFreezeScale",
+      "NodeID": 7
+    },
+    "8": {
+      "key": "wait",
+      "duration": 0.1,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "b3d83f17-ab4d-4343-b4e7-32fa3c860726",
+      "name": "addEntityTimer"
+    },
+    "11": {
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "69292eb0-03d8-47c7-9ee2-a380c4f50761",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "20": {
+      "name": "calcResult",
+      "NodeID": 20,
+      "calcInfoByLuaConfig": {
+        "id": 91464017,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "51cbcd25-9a40-420b-9f6f-997f6b22a0a1",
+      "target": "OWNER",
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "SFX_Combat_10543_Skill_Hit01",
+        "hitCameraShakeId": 10512,
+        "hitFrameFreezeId": 10022,
+        "elementType": 2,
+        "impulseId": 5003,
+        "defaultHitEffect": "SFX_Combat_10543_Skill_Hit01"
+      }
+    },
+    "3": {
+      "UID": "3f76f03d-9cad-43e1-b18d-bbb5e8222e0b",
+      "scale": 0,
+      "name": "setAnimFreezeScale",
+      "NodeID": 3
+    },
+    "13": {
+      "name": "setShaderFrozen",
+      "NodeID": 13,
+      "UID": "e9267757-f8e8-47c2-9dae-6edae89267d3",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": true
+    },
+    "24": {
+      "pos": {
+        "UID": "2a256cfd-7694-4fd3-9ef8-7c401b659405",
+        "target": "OWNER",
+        "name": "getTargetHitPosition",
+        "NodeID": 23
+      },
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "31680618-e1c7-4587-86ed-e31b76cee70e",
+      "effectId": "Eff_ChemistryElement_Ice_Break",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "14": {
+      "name": "setShaderFrozen",
+      "NodeID": 14,
+      "UID": "fdeeb3df-efa4-4f59-ad07-260a744cdfed",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": false
+    },
+    "10": {
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "54e06855-f654-488b-ad9f-7ef3e34894db",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        14,
+        8
+      ]
+    },
+    "15": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "4ae35e6c-183a-4cef-a065-29af1e536110",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "16": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "9d10341a-6d54-4c22-a1aa-950e7fc13c07",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "458c30a6-c6e8-48cf-a4b2-ccc49e54f0a8",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "a07e35fd-6775-4719-8534-3f101a40bde5",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "22": {
+      "buffId": 91464016,
+      "name": "removeBuff",
+      "UID": "a3df3344-321e-4f39-9f58-0b379815b2e7",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "23": {
+      "UID": "2a256cfd-7694-4fd3-9ef8-7c401b659405",
+      "target": "OWNER",
+      "name": "getTargetHitPosition",
+      "NodeID": 23
+    }
+  },
+  "onBuffDestroyIds": [
+    11,
+    20,
+    22,
+    24
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

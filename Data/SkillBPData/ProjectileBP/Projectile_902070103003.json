@@ -1,0 +1,142 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 44,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Monster_90207_MedBlast_Attack",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 0,
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    46,
+    89,
+    54,
+    94,
+    102
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "102": {
+      "pos": {
+        "UID": "333d1039-e9c0-4842-90b2-d79400702c52",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "c73df552-22da-4dd5-a2a2-2a3bad71bc89",
+          "name": "getProjectilePos",
+          "NodeID": 100
+        },
+        "NodeID": 101
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "4daf1364-4cdf-4494-8191-be28297585fe",
+      "effectId": "Eff_Monster_90207_Skill_MedBlast_creation1s",
+      "rot": {
+        "refPos": {
+          "UID": "c73df552-22da-4dd5-a2a2-2a3bad71bc89",
+          "name": "getProjectilePos",
+          "NodeID": 100
+        },
+        "name": "getGroundTangentRotation",
+        "UID": "d3786a70-7aee-4414-ae9f-f31068401bf4",
+        "simpleTest": false,
+        "refYawRot": "PROJECTILE",
+        "NodeID": 103
+      },
+      "NodeID": 102
+    },
+    "89": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8c80daed-d68a-48e5-bee8-fa06dc8380d7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_MedBlast_Explosion",
+      "NodeID": 89
+    },
+    "46": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 44,
+      "NodeID": 46,
+      "UID": "f9020ef5-b34d-4fe9-9c8f-9c9bc9c42a8d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.5,
+            1.5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        44
+      ]
+    },
+    "94": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "c93a3b71-5ec0-40d9-b267-1ecfbbea9912",
+      "effectId": "Eff_Monster_90207_Skill_MedBlast_Explosion1s",
+      "speed": 1,
+      "NodeID": 94
+    },
+    "54": {
+      "cameraShakeId": 21123,
+      "name": "playCameraImpulseById",
+      "UID": "267469ab-f874-418d-8b5f-d18cb9e811e0",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "44": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "e0cb64db-0f4d-446d-ab5b-74c2d5f174d5",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 44
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_902070103",
+  "defaultHitSoundType": "h",
+  "impulseId": 2000,
+  "acceleration": 0
+}

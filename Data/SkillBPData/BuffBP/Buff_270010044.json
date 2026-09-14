@@ -1,0 +1,109 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010044",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    11,
+    3,
+    6
+  ],
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "scale": 0.8125,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "343be3cb-9d55-464f-b5cf-fb96f06e5dea",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_Loop",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "name": "calcResult",
+      "UID": "b1b92c38-1dfb-4678-a7dc-fbdba5a005a5",
+      "target": "TARGET",
+      "NodeID": 13,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 1,
+        "id": 270010044
+      }
+    },
+    "6": {
+      "duration": 1,
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "ada879ce-9ea5-4f6f-a2f3-7db3ef72681a",
+      "name": "addTimer"
+    },
+    "8": {
+      "delay": 0,
+      "interval": {
+        "calcId": 270010044,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "94bfc851-6920-41aa-bf7d-56a108036e15",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "f11c37ae-2b6f-45c8-965e-15c9f5bc88d4",
+      "name": "buffStartThink",
+      "NodeID": 8
+    },
+    "11": {
+      "actionIds": [
+        13
+      ],
+      "name": "actOnTargets",
+      "UID": "20db2705-5526-47a6-b387-86ae55ac75a8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6.5,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 11
+    },
+    "7": {
+      "calcId": 270010044,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "94bfc851-6920-41aa-bf7d-56a108036e15",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "32c37fa9-689e-4cd6-8c33-aefae561c806",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_Heal_Aoe_Loop",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "210032001": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "FOV_Right"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 100,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 10
+  },
+  "210043001": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "IsJumped",
+      "FOV_Forward",
+      "FOV_Right",
+      "FOV_Left"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "coolDown": 100,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 10
+  },
+  "210043002": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "FOV_Forward"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 100,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 10
+  },
+  "20001": {
+    "triggeredAction": "ST_MB_Roar",
+    "conditionIDList": [
+      "FOV_Forward",
+      "Distance_0_10",
+      "HeightGreaterThan_2m"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "20002": {
+    "triggeredAction": "ST_MB_NormalAttack",
+    "conditionIDList": [
+      "IsHit",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "20003": {
+    "triggeredAction": "ST_MB_Jump",
+    "conditionIDList": [
+      "IsJumped",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210051001": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210051002": {
+    "triggeredAction": "ST_MB_Angry",
+    "conditionIDList": [
+      "Distance_0_20",
+      "HeightLowerThan_1dot7m"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210051003": {
+    "triggeredAction": "ST_MB_Die",
+    "conditionIDList": [
+      "Distance_0_20",
+      "HeightGreaterThan_1dot7m"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "210051004": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "Distance_0_20",
+      "HeightLowerThan_1dot7m"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210051005": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "Distance_0_20",
+      "HeightGreaterThan_1dot7m"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "210053001": {
+    "triggeredAction": "ST_MB_UseSkillIcicle",
+    "conditionIDList": [
+      "IsUseSkill10530100",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210071001": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "Distance_0_20",
+      "FOV_Forward",
+      "TargetPetIsDizzill",
+      "TargetPetIsDizzalos",
+      "IsFollowPet"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3,
+      3,
+      4
+    ],
+    "coolDown": 100,
+    "interruptable": 1,
+    "triggerFailedCD": 20,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "210083001": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "AsWingenie",
+      "Distance_0_20",
+      "IsJumped",
+      "IsDash"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "2100110001": {
+    "triggeredAction": "ST_MB_JumpTwice",
+    "conditionIDList": [
+      "VisionValue_T1",
+      "Personality_Outgoing"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 100,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 50,
+    "priority": 10
+  },
+  "2100410001": {
+    "triggeredAction": "ST_MB_JumpTwice",
+    "conditionIDList": [
+      "VisionValue_T1"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 300,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 10
+  },
+  "210043003": {
+    "triggeredAction": "ST_MB_UseSkillIcicle",
+    "conditionIDList": [
+      "IsAsLaricander",
+      "Distance_0_20",
+      "IsUseSkillbingzhu"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  }
+}

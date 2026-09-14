@@ -1,0 +1,50 @@
+{
+  "BPName": "ability_15640201",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10600711,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15640201001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 4,
+  "preloadAnims": [
+    "Skill_SkyRuptureSlash",
+    "Skill_SkyRuptureSlash_Pursuit01",
+    "Skill_SkyRuptureSlash_Pursuit03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10564_Skill_Sword_Hit_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Green_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Green_Start_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_Start_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_Red_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Green_End_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_SwordBreaK_Red_End_liuli",
+    "Eff_Parmon_10564_Skill_Sword_Green_liuli",
+    "Eff_Parmon_10564_Skill_Sword_Red_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash_Red01_liuli",
+    "Eff_Parmon_10564_Skill_SkyRuptureSlash01_liuli"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

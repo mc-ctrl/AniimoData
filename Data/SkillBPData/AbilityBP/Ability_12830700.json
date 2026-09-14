@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_12830700",
+  "NodeID": 1,
+  "UID": "6b2c8053-71c6-4d50-a9f2-aab290286336",
+  "abilityParamId": 10100141,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 12830700001,
+      "name": "setCombatActionTimeline",
+      "UID": "a33b4f58-6784-4a88-99a7-d727cd451817",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Tail_NoMotion"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10045_Skill_CommonTail",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "0",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2
+}

@@ -1,0 +1,35 @@
+{
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10163_Skill_Ex_01",
+    "Eff_Parmon_10163_Skill_Ex_01_1",
+    "Eff_Parmon_10163_Skill_Ex_02",
+    "Eff_Skill_10163_Ex_Warning"
+  ],
+  "BPName": "ability_11631200",
+  "NodeID": 1,
+  "UID": "70f6ee68-2ff5-45b9-83fc-bb0a3e44994b",
+  "searchTargetRangeUp": 10,
+  "abilityParamId": 10200200,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeRadius": 30,
+  "checkExistBurrow": false,
+  "searchTargetRangeDown": 10,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11631200001,
+      "name": "setCombatActionTimeline",
+      "UID": "54101fa9-9e49-4f12-a7a6-d487bdaa64b6",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2
+}

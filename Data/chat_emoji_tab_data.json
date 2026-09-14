@@ -1,0 +1,18 @@
+[
+  {
+    "tabRes2": "$UI_Icon_Emoji_Static_FingerTab.png",
+    "tabRes": "$UI_Icon_Emoji_Static_FingerTab.png"
+  },
+  {
+    "tabRes2": "$UI_Icon_Emoji_Static_Male1.png",
+    "tabRes": "$UI_Icon_Emoji_Static_Female1.png"
+  },
+  {
+    "tabRes2": "$UI_Icon_Emoji_Static_FingerHeart.png",
+    "tabRes": "$UI_Icon_Emoji_Static_FingerHeart.png"
+  },
+  {
+    "tabRes2": "$UI_Icon_Emoji_Static_Linkage.png",
+    "tabRes": "$UI_Icon_Emoji_Static_Linkage.png"
+  }
+]

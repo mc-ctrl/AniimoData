@@ -1,0 +1,12 @@
+{
+  "101": {
+    "refreshType": 1,
+    "reward": 30001
+  },
+  "102": {
+    "reward": 30002,
+    "refreshType": 1,
+    "desc": 1867247631,
+    "condition": 500301
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_13610120",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "abilityParamId": 11300040,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "timelineId": 13610120001,
+      "name": "setCombatActionTimeline",
+      "UID": "73b15c2b-52f2-4b8f-9f9b-ce97570e26d9",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_Pounce"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10363_Skill_HighJump_StrikeGround_holy",
+    "Eff_Parmon_10363_Skill_HighJump_Strikeblade_holy"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

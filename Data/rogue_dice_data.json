@@ -1,0 +1,343 @@
+[
+  [
+    {
+      "coinReward": 200,
+      "coinRewardRatio": 1,
+      "endPoint": 5,
+      "startPoint": 1,
+      "maxPoint": 18,
+      "showRewardId": 73000,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 300,
+      "coinRewardRatio": 1,
+      "endPoint": 9,
+      "startPoint": 6,
+      "maxPoint": 18,
+      "showRewardId": 73001,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 500,
+      "coinRewardRatio": 1,
+      "endPoint": 12,
+      "startPoint": 10,
+      "maxPoint": 18,
+      "showRewardId": 73002,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 800,
+      "coinRewardRatio": 1,
+      "endPoint": 15,
+      "startPoint": 13,
+      "maxPoint": 18,
+      "showRewardId": 73003,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 1000,
+      "coinRewardRatio": 1,
+      "endPoint": 17,
+      "startPoint": 16,
+      "maxPoint": 18,
+      "showRewardId": 73004,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 3000,
+      "coinRewardRatio": 1,
+      "endPoint": 18,
+      "startPoint": 18,
+      "maxPoint": 18,
+      "showRewardId": 73005,
+      "buffReward": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ],
+      "buffRewardRatio": 1
+    }
+  ],
+  [
+    {
+      "coinReward": 200,
+      "coinRewardRatio": 1,
+      "endPoint": 5,
+      "startPoint": 1,
+      "maxPoint": 18,
+      "showRewardId": 73010,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 300,
+      "coinRewardRatio": 1,
+      "endPoint": 9,
+      "startPoint": 6,
+      "maxPoint": 18,
+      "showRewardId": 73011,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 500,
+      "coinRewardRatio": 1,
+      "endPoint": 12,
+      "startPoint": 10,
+      "maxPoint": 18,
+      "showRewardId": 73012,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 200,
+      "coinRewardRatio": 1,
+      "endPoint": 15,
+      "startPoint": 13,
+      "maxPoint": 18,
+      "showRewardId": 73013,
+      "buffReward": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ],
+      "buffRewardRatio": 1
+    },
+    {
+      "coinReward": 200,
+      "coinRewardRatio": 1,
+      "endPoint": 17,
+      "startPoint": 16,
+      "maxPoint": 18,
+      "showRewardId": 73014,
+      "buffReward": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ],
+      "buffRewardRatio": 1
+    },
+    {
+      "coinReward": 800,
+      "coinRewardRatio": 1,
+      "endPoint": 18,
+      "startPoint": 18,
+      "maxPoint": 18,
+      "showRewardId": 73015,
+      "buffReward": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            2
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            2
+          ],
+          1
+        ]
+      ],
+      "buffRewardRatio": 1
+    }
+  ],
+  [
+    {
+      "coinReward": 100,
+      "coinRewardRatio": 1,
+      "endPoint": 5,
+      "startPoint": 1,
+      "maxPoint": 18,
+      "showRewardId": 73020,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 200,
+      "coinRewardRatio": 1,
+      "endPoint": 9,
+      "startPoint": 6,
+      "maxPoint": 18,
+      "showRewardId": 73021,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 300,
+      "coinRewardRatio": 1,
+      "endPoint": 12,
+      "startPoint": 10,
+      "maxPoint": 18,
+      "showRewardId": 73022,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 500,
+      "coinRewardRatio": 1,
+      "endPoint": 15,
+      "startPoint": 13,
+      "maxPoint": 18,
+      "showRewardId": 73023,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 1000,
+      "coinRewardRatio": 1,
+      "endPoint": 17,
+      "startPoint": 16,
+      "maxPoint": 18,
+      "showRewardId": 73024,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 1500,
+      "coinRewardRatio": 1,
+      "endPoint": 18,
+      "startPoint": 18,
+      "maxPoint": 18,
+      "showRewardId": 73025,
+      "buffRewardRatio": 0
+    }
+  ],
+  [
+    {
+      "coinReward": 100,
+      "coinRewardRatio": 1,
+      "endPoint": 5,
+      "startPoint": 1,
+      "maxPoint": 18,
+      "showRewardId": 73030,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 200,
+      "coinRewardRatio": 1,
+      "endPoint": 9,
+      "startPoint": 6,
+      "maxPoint": 18,
+      "showRewardId": 73031,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 300,
+      "coinRewardRatio": 1,
+      "endPoint": 12,
+      "startPoint": 10,
+      "maxPoint": 18,
+      "showRewardId": 73032,
+      "buffRewardRatio": 0
+    },
+    {
+      "coinReward": 0,
+      "coinRewardRatio": 0,
+      "endPoint": 15,
+      "startPoint": 13,
+      "maxPoint": 18,
+      "showRewardId": 73033,
+      "buffReward": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0
+          ],
+          1
+        ]
+      ],
+      "buffRewardRatio": 1
+    },
+    {
+      "coinReward": 0,
+      "coinRewardRatio": 0,
+      "endPoint": 17,
+      "startPoint": 16,
+      "maxPoint": 18,
+      "showRewardId": 73034,
+      "buffReward": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            1
+          ],
+          1
+        ]
+      ],
+      "buffRewardRatio": 1
+    },
+    {
+      "coinReward": 1500,
+      "coinRewardRatio": 1,
+      "endPoint": 18,
+      "startPoint": 18,
+      "maxPoint": 18,
+      "showRewardId": 73035,
+      "buffRewardRatio": 0
+    }
+  ]
+]

@@ -1,0 +1,1927 @@
+{
+  "Parmon_10081": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10082": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10083": {
+    "shapeType": 2,
+    "height": 1.3,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10122": {
+    "shapeType": 2,
+    "height": 1.3,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10131": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10132": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10133": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10141": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.25,
+    "layer": 23
+  },
+  "Parmon_10142": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.25,
+    "layer": 23
+  },
+  "Parmon_10143": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10144": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10693": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10694": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10723": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_69993": {
+    "shapeType": 2,
+    "height": 0.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_90025": {
+    "shapeType": 2,
+    "height": 6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 2.1,
+    "layer": 23
+  },
+  "Parmon_90207": {
+    "shapeType": 2,
+    "height": 5.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 1.7,
+    "layer": 23
+  },
+  "Parmon_90213": {
+    "shapeType": 2,
+    "height": 5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_90213_Red": {
+    "shapeType": 2,
+    "height": 15,
+    "catch_radius_scale": 0,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 7.5,
+    "layer": 23
+  },
+  "Parmon_AI": {
+    "radius": 0.1,
+    "shapeType": 2,
+    "height": 0.2,
+    "catch_radius_scale": 0,
+    "is_controller": 1,
+    "bounciness": 0,
+    "trigger": 1,
+    "layer": 23
+  },
+  "Parmon_HelgonBoss": {
+    "shapeType": 2,
+    "height": 5,
+    "catch_radius_scale": 1.7,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 1.7,
+    "layer": 23
+  },
+  "Pet_HumanLike": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.2,
+    "layer": 23
+  },
+  "Pet_HumanLike1": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.2,
+    "layer": 23
+  },
+  "RB_Common_Mini": {
+    "height": 0.002,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 22,
+    "radius": 0.001,
+    "bounciness": 0
+  },
+  "RB_NPC_Common": {
+    "height": 1,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 23,
+    "radius": 0.15,
+    "bounciness": 0
+  },
+  "Parmon_10151": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10152": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10153": {
+    "shapeType": 2,
+    "height": 2.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10161": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10162": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10163": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10171": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10172": {
+    "shapeType": 2,
+    "height": 1.25,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10173": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.43,
+    "layer": 23
+  },
+  "Parmon_10174": {
+    "shapeType": 2,
+    "height": 1.35,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.43,
+    "layer": 23
+  },
+  "Parmon_10181": {
+    "shapeType": 2,
+    "height": 1.3,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.35,
+    "layer": 23
+  },
+  "Parmon_10184": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10185": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10187": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10191": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10192": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10193": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10194": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10195": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10201": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10203": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10207": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10211": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10212": {
+    "shapeType": 2,
+    "height": 1.3,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.25,
+    "layer": 23
+  },
+  "Parmon_10213": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10213_Clone": {
+    "radius": 0.1,
+    "shapeType": 2,
+    "height": 0.2,
+    "catch_radius_scale": 0.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "trigger": 1,
+    "layer": 23
+  },
+  "Parmon_10221": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10221_Climb": {
+    "shapeType": 2,
+    "radius": 0.3,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "layer": 23
+  },
+  "Parmon_10222": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10222_Climb": {
+    "shapeType": 2,
+    "radius": 0.4,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "layer": 23
+  },
+  "Parmon_10223": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10223_Climb": {
+    "shapeType": 2,
+    "radius": 0.4,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "layer": 23
+  },
+  "Parmon_10231": {
+    "shapeType": 2,
+    "height": 1.1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10232": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10233": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10241": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.2,
+    "layer": 23
+  },
+  "Parmon_10252": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10261": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10262": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10263": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10271": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10272": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10273": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10274": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10281": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10282": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10283": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10284": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10285": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10291": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10293": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.65,
+    "layer": 23
+  },
+  "Parmon_10301": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10302": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10303": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10311": {
+    "shapeType": 2,
+    "height": 1.1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10313": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10314": {
+    "shapeType": 2,
+    "height": 2.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10321": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10323": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10324": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10691": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.35,
+    "layer": 23
+  },
+  "Parmon_10683": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.7,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10681": {
+    "shapeType": 2,
+    "height": 1.1,
+    "catch_radius_scale": 1.6,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10674": {
+    "shapeType": 2,
+    "height": 1.1,
+    "catch_radius_scale": 1.6,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10664": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10663": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10661": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10653": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10651": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10644": {
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.8
+  },
+  "Parmon_10643": {
+    "height": 1.6,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.8
+  },
+  "Parmon_10641": {
+    "height": 1,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.5
+  },
+  "Parmon_10633": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10631": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10623": {
+    "height": 1.3,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.35
+  },
+  "Parmon_10621": {
+    "height": 1,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.3
+  },
+  "Parmon_10614": {
+    "height": 1.8,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.5
+  },
+  "Parmon_10613": {
+    "height": 1.6,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.8
+  },
+  "Parmon_10611": {
+    "height": 1.2,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.5
+  },
+  "Parmon_10604": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10603": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Avatar_Girl": {
+    "height": 1.4,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 22,
+    "radius": 0.3,
+    "bounciness": 0
+  },
+  "Avatar_Boy": {
+    "height": 1.5,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 22,
+    "radius": 0.3,
+    "bounciness": 0
+  },
+  "Parmon_10331": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10333": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10351": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10352": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10361": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10363": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.75,
+    "layer": 23
+  },
+  "Parmon_10371": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10373": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.65,
+    "layer": 23
+  },
+  "Parmon_10381": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10383": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10391": {
+    "shapeType": 2,
+    "height": 1.1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10393": {
+    "shapeType": 2,
+    "height": 1.45,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10401": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.6,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10403": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10421": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10423": {
+    "shapeType": 2,
+    "height": 1.7,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10431": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.2,
+    "layer": 23
+  },
+  "Parmon_10433": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10434": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10441": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10443": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10444": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10451": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10453": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10454": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10461": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.6,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10463": {
+    "shapeType": 2,
+    "height": 1.65,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10464": {
+    "shapeType": 2,
+    "height": 1.65,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10471": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10474": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10475": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10481": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.37,
+    "layer": 23
+  },
+  "Parmon_10483": {
+    "shapeType": 2,
+    "height": 1.6,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.35,
+    "layer": 23
+  },
+  "Parmon_10491": {
+    "shapeType": 2,
+    "height": 1.15,
+    "catch_radius_scale": 1.7,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10493": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10501": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10503": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10511": {
+    "shapeType": 2,
+    "height": 0.7,
+    "catch_radius_scale": 2.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.25,
+    "layer": 23
+  },
+  "Parmon_10511_Climb": {
+    "shapeType": 2,
+    "radius": 0.25,
+    "height": 0.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "layer": 23
+  },
+  "Parmon_10512": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10512_Climb": {
+    "shapeType": 2,
+    "radius": 0.3,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "layer": 23
+  },
+  "Parmon_10513": {
+    "shapeType": 2,
+    "height": 1.75,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10541": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10543": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10544": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.6,
+    "layer": 23
+  },
+  "Parmon_10561": {
+    "shapeType": 2,
+    "height": 0.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10563": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10564": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10565": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10581": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10583": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10591": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.4,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10593": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10594": {
+    "shapeType": 2,
+    "height": 1.65,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10601": {
+    "shapeType": 2,
+    "height": 0.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.35,
+    "layer": 23
+  },
+  "Avatar": {
+    "height": 1.65,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 22,
+    "radius": 0.3,
+    "bounciness": 0
+  },
+  "Avatar_Female": {
+    "height": 1.6,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 22,
+    "radius": 0.3,
+    "bounciness": 0
+  },
+  "Avatar_Girl_Nicole": {
+    "height": 1.4,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 22,
+    "radius": 0.15,
+    "bounciness": 0
+  },
+  "Avatar_Male": {
+    "height": 1.75,
+    "catch_radius_scale": 2,
+    "shapeType": 2,
+    "layer": 22,
+    "radius": 0.3,
+    "bounciness": 0
+  },
+  "Explore_Firefly": {
+    "shapeType": 1,
+    "height": 0.1,
+    "catch_radius_scale": 15,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.1,
+    "layer": 23
+  },
+  "FB_DogLike": {
+    "height": 1,
+    "catch_radius_scale": 2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "shapeType": 2,
+    "radius": 0.2
+  },
+  "FB_HumanLike": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.2,
+    "layer": 16
+  },
+  "Flower": {
+    "shapeType": 2,
+    "height": 2.5,
+    "catch_radius_scale": 0,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "GrabEGG_Collect": {
+    "shapeType": 2,
+    "height": 0.2,
+    "catch_radius_scale": 0,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.1,
+    "layer": 23
+  },
+  "GrabEGG_Egg": {
+    "shapeType": 2,
+    "height": 0.423941,
+    "catch_radius_scale": 0,
+    "radius": 0.1586175,
+    "bounciness": 0,
+    "center": [
+      0,
+      0.2143,
+      0
+    ],
+    "layer": 22
+  },
+  "Monster_90213": {
+    "shapeType": 2,
+    "radius": 1,
+    "height": 2,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "layer": 23
+  },
+  "Monster_BluePillar": {
+    "height": 2,
+    "catch_radius_scale": 0,
+    "shapeType": 2,
+    "layer": 10,
+    "radius": 0.6,
+    "bounciness": 0
+  },
+  "Monster_GreenPillar": {
+    "height": 2,
+    "catch_radius_scale": 0,
+    "shapeType": 2,
+    "layer": 10,
+    "radius": 0.6,
+    "bounciness": 0
+  },
+  "Monster_RedPillar": {
+    "height": 1.5,
+    "catch_radius_scale": 0,
+    "shapeType": 2,
+    "layer": 10,
+    "radius": 0.6,
+    "bounciness": 0
+  },
+  "Monster_Robot": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Monster_Robot_Normal_Atk": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.1,
+    "layer": 23
+  },
+  "Monster_Robot_Normal_Bal": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.1,
+    "layer": 23
+  },
+  "Monster_Robot_Normal_Def": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.1,
+    "layer": 23
+  },
+  "P_Skill_Carrier": {
+    "shapeType": 2,
+    "height": 0.61,
+    "catch_radius_scale": 2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10011": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10011_Climb": {
+    "shapeType": 2,
+    "radius": 0.3,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0.084,
+      0
+    ],
+    "layer": 23
+  },
+  "Parmon_10012": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10013": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.8,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10013_Climb": {
+    "shapeType": 2,
+    "radius": 0.3,
+    "height": 0.9,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "center": [
+      0,
+      0.084,
+      0
+    ],
+    "layer": 23
+  },
+  "Parmon_10021": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.4,
+    "layer": 23
+  },
+  "Parmon_10022": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10023": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10023_Fly": {
+    "shapeType": 2,
+    "height": 2.25,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 1.1,
+    "layer": 23
+  },
+  "Parmon_10024": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10025": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10026": {
+    "shapeType": 2,
+    "height": 1.4,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10027": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10031": {
+    "shapeType": 2,
+    "height": 0.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.3,
+    "layer": 23
+  },
+  "Parmon_10032": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10033": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10041": {
+    "shapeType": 2,
+    "height": 0.9,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10042": {
+    "shapeType": 2,
+    "height": 1.1,
+    "catch_radius_scale": 1.2,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.55,
+    "layer": 23
+  },
+  "Parmon_10043": {
+    "shapeType": 2,
+    "height": 1.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_10043_special": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.7,
+    "layer": 23
+  },
+  "Parmon_10045": {
+    "shapeType": 2,
+    "height": 1.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.8,
+    "layer": 23
+  },
+  "Parmon_100450001": {
+    "shapeType": 2,
+    "height": 1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.5,
+    "layer": 23
+  },
+  "Parmon_10051": {
+    "shapeType": 2,
+    "height": 0.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.35,
+    "layer": 23
+  },
+  "Parmon_10052": {
+    "shapeType": 2,
+    "height": 1.5,
+    "catch_radius_scale": 1.1,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.65,
+    "layer": 23
+  },
+  "Parmon_10053": {
+    "shapeType": 2,
+    "height": 1.7,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.55,
+    "layer": 23
+  },
+  "Parmon_10055": {
+    "shapeType": 2,
+    "height": 1.8,
+    "catch_radius_scale": 1.3,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.9,
+    "layer": 23
+  },
+  "Parmon_10071": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10072": {
+    "shapeType": 2,
+    "height": 1.2,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.45,
+    "layer": 23
+  },
+  "Parmon_10073": {
+    "shapeType": 1,
+    "height": 0.1,
+    "catch_radius_scale": 1.5,
+    "is_controller": 1,
+    "bounciness": 0,
+    "radius": 0.1,
+    "layer": 23
+  }
+}

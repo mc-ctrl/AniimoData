@@ -1,0 +1,201 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_10583_Skill_BigBombBubble_start_Boss",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "14": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_v": 0
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_10043_waterbreath_hit",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 0
+      },
+      "UID": "5b794136-c872-4aa2-8d2d-8350fcf06779",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 2258301,
+        "instant_dmg_v": "param0",
+        "type": 4
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8,
+          19,
+          25
+        ]
+      },
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "86f12066-4196-4a80-bd70-d97a39e9d2f6",
+      "eventType": "EventExit",
+      "NodeID": 7
+    },
+    "16": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 14,
+      "NodeID": 16,
+      "UID": "29859dd3-6774-489d-b35b-06797f92542f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            7.5,
+            5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        14,
+        20
+      ]
+    },
+    "8": {
+      "duration": 10,
+      "NodeID": 8,
+      "UID": "478cc79a-9d35-4c1e-908d-b129db301cd8",
+      "effectId": "Eff_Parmon_10583_Skill_GatherBubble_Bigpaopao_Boss",
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "speed": 1,
+      "offsetXYZ": [
+        0,
+        1.5,
+        0
+      ],
+      "scale": 2
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "57ae948e-a6a6-4b6c-96e5-f872c27b932c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glameep_Skill_BigPopo_Boom",
+      "NodeID": 26
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f39f9bde-91b9-40fa-9326-b957a137af0e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glameep_Skill_BigPopo",
+      "NodeID": 25
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          3,
+          16,
+          21,
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10,
+      "NodeID": 5,
+      "UID": "cbbe768b-3e99-4592-ad8f-3c38ee923e24"
+    },
+    "19": {
+      "playTime": 10,
+      "stayTime": 0.1,
+      "name": "playIndicatorEff",
+      "UID": "e5f104b3-2460-4e06-8d3e-8981590d8bfc",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          7.5,
+          5,
+          1
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 19
+    },
+    "20": {
+      "target": "TARGET",
+      "duration": 30,
+      "buffId": 21583001,
+      "NodeID": 20,
+      "UID": "df1c27d0-cf55-41dc-812c-beb7a9de5634",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "21": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "1cdfca50-0322-474a-af87-e4244ad57a67",
+      "effectId": "Eff_Parmon_10583_Mon_Skill_Big_Popo_Explosion",
+      "scale": 1.5,
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2258301",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    10,
+    5,
+    7
+  ],
+  "layer": "Base",
+  "length": 10.5
+}

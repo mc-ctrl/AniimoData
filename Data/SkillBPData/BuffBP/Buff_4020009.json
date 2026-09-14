@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020009",
+  "calcInfoByLuaConfig": {
+    "id": 4020009,
+    "type": 1,
+    "bp_add_ratio": "param0",
+    "taken_dmg_inc_rate_v": "param2"
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    7
+  ],
+  "nodeMap": {
+    "7": {
+      "actionIds": [
+        12
+      ],
+      "name": "registerEnemyBreak",
+      "UID": "d9383fca-83f6-41d4-8cab-22f0976bf16d",
+      "target": "TARGET",
+      "NodeID": 7
+    },
+    "12": {
+      "target": "MASTER",
+      "duration": 8,
+      "buffId": 402000901,
+      "NodeID": 12,
+      "UID": "78523a87-10d8-4f93-9c14-3f401fc63f0c",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

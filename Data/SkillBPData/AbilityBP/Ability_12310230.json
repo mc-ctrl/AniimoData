@@ -1,0 +1,78 @@
+{
+  "BPName": "ability_12310230",
+  "NodeID": 1,
+  "UID": "cc09a6b4-771c-4977-b797-44e980976a67",
+  "abilityParamId": 10800450,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12310230001,
+      "name": "setCombatActionTimeline",
+      "UID": "aad6f3ee-733f-400b-a9a6-1e165c188a50",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "45": {
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "79ea323b-1d8b-4d8d-9f9d-f5b173318336",
+      "name": "doActionsByConditions",
+      "NodeID": 45,
+      "elseActionIds": [
+        43,
+        44
+      ]
+    },
+    "42": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "5564ebeb-f2cf-4e20-95f1-4d71ad472ed8",
+      "NodeID": 42,
+      "lValue": {
+        "UID": "cf1cd7a3-61ab-4c22-9694-e105a8185713",
+        "name": "getAbilityCacheVal",
+        "key": "effect",
+        "NodeID": 41
+      }
+    },
+    "43": {
+      "name": "stopSoundStr",
+      "UID": "15adaee3-4db9-4130-8a97-79968ade3931",
+      "soundId": "SFX_Combat_10231_Skill_Sprinkle",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "44": {
+      "name": "stopEffectStr",
+      "UID": "db895165-90f2-464c-9f6c-57bd5f9f7250",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Sprinkle01_01_Rock",
+      "target": "OWNER",
+      "NodeID": 44
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Sprinkle"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Futternym_10231_Skill_Sprinkle01_02_Rock",
+    "Eff_Parmon_Futternym_10231_Skill_Sprinkle02_Rock",
+    "Eff_Parmon_Futternym_10231_Skill_Sprinkle01_01_Rock"
+  ],
+  "searchRelation": 2,
+  "name": "荧粉蝶幻蝶领域",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "notTurnToTarget": true,
+  "onAbilityEndIds": [
+    45
+  ],
+  "searchTargetRangeDown": 0.5
+}

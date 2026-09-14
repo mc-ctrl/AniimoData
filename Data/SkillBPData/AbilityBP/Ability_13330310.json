@@ -1,0 +1,58 @@
+{
+  "BPName": "ability_13330310",
+  "NodeID": 1,
+  "UID": "ebf3f0e1-0645-415f-8961-4cc9bab8e2c8",
+  "abilityIndicator": 1,
+  "abilityParamId": 10500360,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 13330310001,
+      "name": "setCombatActionTimeline",
+      "UID": "0be97c41-cbd4-4005-a7c7-9de74a5fe0b3",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 4,
+  "preloadAnims": [
+    "Skill_Burn"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10333_Skill_Burn",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "照明1",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 4.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      8,
+      2,
+      2
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "notTurnToTarget": true,
+  "searchTargetRangeDown": 3
+}

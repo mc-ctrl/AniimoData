@@ -1,0 +1,71 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4001110",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 4001110,
+      "name": "removeBuff",
+      "UID": "8b43ed0e-517c-4917-8c6f-e3a2e9c4fc8d",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "cc0892b2-c0b7-4bdb-a7da-bc446f6d1436",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "9": {
+      "key": "break",
+      "duration": 0.5,
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "b6808d06-48f5-4b1e-b9ed-3dba06b5455a",
+      "name": "addEntityTimer"
+    },
+    "6": {
+      "calcId": 4001110,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "87695707-cb3e-494c-ab38-3aff6a46146a",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "calcInfo": {
+        "add_cur_bp_max_p": {
+          "calcId": 4001110,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 6,
+          "UID": "87695707-cb3e-494c-ab38-3aff6a46146a",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "220fcdef-9e45-46d7-975e-b79c0d411b10",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 8
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    9
+  ]
+}

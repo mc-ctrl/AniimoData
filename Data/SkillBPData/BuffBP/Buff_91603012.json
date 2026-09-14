@@ -1,0 +1,96 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91603012",
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": [
+    "RUN",
+    "SPRINT",
+    "DASH",
+    "WALK",
+    "JUMP"
+  ],
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91603013,
+      "NodeID": 3,
+      "UID": "f5385965-ab59-4b4b-a830-b6feb5a3f08e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "1c5cf26e-5bc3-4108-a3d8-7a582d2135e0",
+      "name": "doActionsByConditions",
+      "NodeID": 4,
+      "elseActionIds": [
+        3
+      ]
+    },
+    "9": {
+      "isNot": false,
+      "stateName": "DASH",
+      "name": "isInCharacterState",
+      "UID": "efbc7efa-6ce6-46a1-be08-d4032be1c669",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "isNot": false,
+      "stateName": "RUN",
+      "name": "isInCharacterState",
+      "UID": "a161de7a-ef9d-40d7-9291-887248407232",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "isNot": false,
+      "stateName": "WALK",
+      "name": "isInCharacterState",
+      "UID": "7a04c4fd-a36b-438c-8bfc-d68bf5199d71",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "isNot": false,
+      "stateName": "JUMP",
+      "name": "isInCharacterState",
+      "UID": "614734bd-e758-4b56-8b66-5402e53ab0c1",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "UID": "ff540a01-6d60-41a0-8e13-89bf0ddc4db4",
+      "conditionIds": [
+        6,
+        10,
+        9,
+        8,
+        11
+      ],
+      "name": "conditionOr",
+      "NodeID": 7
+    },
+    "8": {
+      "isNot": false,
+      "stateName": "SPRINT",
+      "name": "isInCharacterState",
+      "UID": "d43ec602-93f3-4068-ab5b-3f24bae07261",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    4
+  ]
+}

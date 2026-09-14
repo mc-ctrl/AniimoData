@@ -1,0 +1,216 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91027020",
+  "calcInfoByLuaConfig": {
+    "id": 91027020,
+    "taken_dmg_dec_rate_v": "param0",
+    "combat_ep_regen_v": "param1",
+    "type": 1
+  },
+  "UID": "b618e1a3-c3b0-4a87-a696-337b5fb1193e",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffThinkIds": [
+    16
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "actionIds": [
+        26,
+        11
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "2886c270-a908-498c-a4fa-4d9d33e209f5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4,
+        27,
+        8
+      ],
+      "NodeID": 6
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7cb85866-a8fa-4506-9d02-623875cf6763",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "fda1bc9f-668c-443a-8ef5-e00545b78284",
+      "blendShapeName": "M_Parmon_10027_Body_Final",
+      "name": "getSMRBlendShapeWeight",
+      "NodeID": 9
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6b211f3b-35f7-4715-bb2c-be5d5dc79b43",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "b56c10c0-2a77-4370-b325-7c53a8534651",
+      "name": "doActionsByConditions",
+      "NodeID": 20,
+      "elseActionIds": [
+        19
+      ]
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "80729446-ceb4-4a35-a1ce-dfdebd34e742",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "4": {
+      "blendShapeName": "BS_10027_Harden",
+      "fromWeight": 0,
+      "NodeID": 4,
+      "UID": "3296a291-c8a3-47a9-8925-8c49fde23139",
+      "transitionDuration": 1,
+      "targetWeight": 100,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "24": {
+      "UID": "5d915d8d-b2fc-409f-80d6-e2afc498ee5a",
+      "blendShapeName": "M_Parmon_10027_Body_Final",
+      "name": "getSMRBlendShapeWeight",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "926f5918-b67b-4474-b955-73b5b6b429ca",
+      "blendShapeName": "M_Parmon_10027_Body_Final",
+      "name": "getSMRBlendShapeWeight",
+      "NodeID": 14
+    },
+    "10": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "913018ba-7777-4133-866f-cc028799c8f8",
+      "NodeID": 10,
+      "lValue": {
+        "UID": "fda1bc9f-668c-443a-8ef5-e00545b78284",
+        "blendShapeName": "M_Parmon_10027_Body_Final",
+        "name": "getSMRBlendShapeWeight",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "440c2f7c-9fd7-4d74-9ad1-32b628df0d6d",
+      "NodeID": 15,
+      "lValue": {
+        "UID": "926f5918-b67b-4474-b955-73b5b6b429ca",
+        "blendShapeName": "M_Parmon_10027_Body_Final",
+        "name": "getSMRBlendShapeWeight",
+        "NodeID": 14
+      }
+    },
+    "25": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "8cbbf1a9-ee24-482b-b0aa-ab40963c27f4",
+      "NodeID": 25,
+      "lValue": {
+        "UID": "5d915d8d-b2fc-409f-80d6-e2afc498ee5a",
+        "blendShapeName": "M_Parmon_10027_Body_Final",
+        "name": "getSMRBlendShapeWeight",
+        "NodeID": 24
+      }
+    },
+    "16": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "89ef29b5-493e-4c13-9d6e-aa562798f0f8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 16
+    },
+    "27": {
+      "key": "10027_Yinghua",
+      "name": "applyMaterialEffect",
+      "NodeID": 27
+    },
+    "17": {
+      "weight": 0,
+      "blendShapeName": "BS_10027_Harden",
+      "name": "setSMRBlendShapeWeight",
+      "UID": "36017dad-5752-401c-9e62-23cf0dd2e2a4",
+      "NodeID": 17
+    },
+    "28": {
+      "UID": "b0b50c3e-e1b4-4403-ada5-a28c419374b2",
+      "name": "removeMaterialEffect",
+      "key": "10027_Yinghua",
+      "NodeID": 28
+    },
+    "18": {
+      "weight": 100,
+      "blendShapeName": "BS_10027_Harden",
+      "name": "setSMRBlendShapeWeight",
+      "UID": "a944e0cd-0c24-4ded-b4c6-8a9d59292f9f",
+      "NodeID": 18
+    },
+    "26": {
+      "key": "10027_Yinghua",
+      "name": "applyMaterialEffect",
+      "NodeID": 26
+    },
+    "19": {
+      "blendShapeName": "BS_10027_Harden",
+      "fromWeight": 100,
+      "NodeID": 19,
+      "UID": "8efb39da-8d14-4b64-abd5-6d076d06effd",
+      "transitionDuration": 1,
+      "targetWeight": 0,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "13": {
+      "delay": 1,
+      "interval": 0.1,
+      "UID": "540b6b2c-d979-49aa-985c-43eaf7a4a4d4",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "23": {
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 23,
+      "UID": "7601b801-c149-44cd-b338-4f93d08fe2d5",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10027_Harden",
+      "name": "playPreset"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    20,
+    28,
+    22,
+    23
+  ],
+  "onBuffStartIds": [
+    6,
+    13
+  ]
+}

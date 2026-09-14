@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104516",
+  "NodeID": 1,
+  "UID": "d1822160-e693-4771-9952-029877be62f5",
+  "tags": [
+    1
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "2fce1a27-87e2-45e9-8e14-3f2e753ba73c",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": true,
+      "NodeID": 3
+    },
+    "5": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5cded111-7c0b-42b0-af77-561d2d595136",
+      "target": "OWNER",
+      "NodeID": 5,
+      "animId": "Behav_SleepLoop"
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

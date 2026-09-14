@@ -1,0 +1,51 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91471021",
+  "calcInfoByLuaConfig": {
+    "id": 91471021,
+    "crit_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "calcInfo": {
+        "passive_energy_cur": -15
+      },
+      "name": "calcResult",
+      "UID": "e2155edb-ff40-4360-87b1-066ff3d886b1",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "buffId": 91471020,
+      "name": "removeBuff",
+      "UID": "8658add5-7abe-4eac-ba74-d89e5d8b7668",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "956a31f6-2a89-4584-b8bd-f6fe7c143320",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4,
+    6,
+    8
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Attack_Arrow_Up"
+    }
+  ]
+}

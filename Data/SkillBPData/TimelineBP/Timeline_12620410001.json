@@ -1,0 +1,261 @@
+{
+  "nodeMap": {
+    "31": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "d48e64c8-b576-4d7f-80d6-f6a39c98b1e0",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4e8b4831-8f06-4357-9ea3-6c576f63394c",
+      "effectId": "Eff_Parmon_10261_Skill_Inhale",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          9,
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.31,
+      "NodeID": 11,
+      "UID": "1e86d9bd-1fac-4c1b-8c51-61c938bdc5bd"
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6ac7fd42-090e-47b7-8238-d10ea18b805d",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Inhale"
+    },
+    "23": {
+      "UID": "cfa3260b-50cf-4190-8918-0f4c12aa7928",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 23
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.88,
+      "NodeID": 24,
+      "UID": "129f4ed0-14b1-465d-a6ef-89c8b914def9"
+    },
+    "15": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 13,
+      "NodeID": 15,
+      "UID": "a64599dd-f0e7-44d6-8453-78e69049c02a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            22.5,
+            0.8,
+            0.5
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        13,
+        25
+      ]
+    },
+    "25": {
+      "target": "TARGET",
+      "duration": 0.2,
+      "speed": 8,
+      "NodeID": 25,
+      "UID": "0cca46f2-c255-4960-8850-821ac96d2831",
+      "displacementDir": "IN",
+      "displacementTarget": "CASTER",
+      "name": "forceDisplacement"
+    },
+    "16": {
+      "tickInterval": 0.15,
+      "eventType": "NotifyState",
+      "endTime": 1.16,
+      "NodeID": 16,
+      "UID": "517d5178-1d76-4844-a88a-05490db4231d",
+      "onUpdate": {
+        "actionIds": [
+          15
+        ]
+      },
+      "startTime": 0.31,
+      "onEnter": {
+        "actionIds": [
+          15
+        ]
+      }
+    },
+    "26": {
+      "duration": 0.8,
+      "name": "puppetPreCastAction",
+      "UID": "d879cf3b-d765-4684-b043-6e2cb90f3056",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.1,
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.9,
+        0.5
+      ],
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 26
+    },
+    "13": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 9,
+        "hitSoundStr": "parmon_helgon_attack06",
+        "hitCameraShakeId": 0
+      },
+      "UID": "b2cb6ba7-ecd9-4661-b7ea-11a4e9ce9bd4",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 13
+    },
+    "29": {
+      "playTime": 0.8,
+      "stayTime": 0.1,
+      "name": "playIndicatorEff",
+      "UID": "0454475b-0de1-4df9-9bcf-ef03eae7bda7",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          5,
+          22.5,
+          0.8,
+          0
+        ],
+        "shapeKind": "Sector3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 29
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 30,
+      "UID": "9440d5c6-13a4-4065-92d7-39965cfd4130"
+    },
+    "32": {
+      "UID": "c3c88ad9-05c6-4caa-8d25-f127b57bff07",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7162c4c7-c201-433d-8e71-1b241520b154",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10261_Skill_Inhale",
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c08ab932-640e-4338-a924-a19165c5a035",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Boss_10262_Skill_Inhale",
+      "NodeID": 34
+    },
+    "4": {
+      "action": {
+        "actionIds": [
+          26,
+          2,
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 4,
+      "UID": "44cca957-780d-4025-b3e2-61d379f31c29"
+    }
+  },
+  "BPName": "ability_12620410",
+  "NodeID": 6,
+  "UID": "7cff6ccf-2fc2-477e-8e74-873cfee89559",
+  "eventIds": [
+    32,
+    30,
+    4,
+    11,
+    16,
+    24
+  ],
+  "layer": "Base",
+  "length": 3.74
+}

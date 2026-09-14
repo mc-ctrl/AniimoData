@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_14330310",
+  "NodeID": 1,
+  "UID": "9fea0257-a909-458e-8074-da7c10429097",
+  "abilityParamId": 10800381,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14330310001,
+      "name": "setCombatActionTimeline",
+      "UID": "d53cb538-9417-4af7-892a-a3290fdd3ead",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ChimneySentry_Start",
+    "Skill_ChimneySentry_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Die",
+    "Eff_Parmon_10433_Skill_ChimneySentry_fire_liuli",
+    "Eff_Parmon_10433_Skill_ChimneySentry_Loop",
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10433_Hit_01_liuli",
+    "Eff_Parmon_10433_Skill_ChimneySentry_Release_liuli"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "name": ""
+}

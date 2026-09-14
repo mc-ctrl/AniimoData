@@ -1,0 +1,23 @@
+{
+  "72586828": {
+    "owner": "蔡颖",
+    "sandboxType": 3,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 72586828,
+    "spawners": [
+      72800193
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -490.64,
+      69.74,
+      1599.77
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 503,
+    "name": "板块1高地_其他关卡_盔卫兵头目篝火元件"
+  }
+}

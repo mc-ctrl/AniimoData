@@ -1,0 +1,150 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123203",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "transferGroup": 1,
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "tag": 11,
+      "name": "removeBuffByTag",
+      "UID": "6a0f787d-e459-4915-975e-5136983f16d3",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 21231021,
+      "NodeID": 13,
+      "UID": "94b7727d-a592-4cab-a913-c2a10e8452c3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4e1e7fc2-31b4-4d89-8f0d-c8bb9bec0c90",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_dance",
+      "NodeID": 14
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b1a77d2d-7207-4b9d-95ba-826254224447",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Dance_Dark",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "name": "hasBuffTag",
+      "UID": "6adb96af-6de9-42a3-b753-b6852701ad72",
+      "target": "OWNER",
+      "NodeID": 7,
+      "buffTag": 11
+    },
+    "16": {
+      "offsetXYZ": [
+        1.5,
+        0,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c8fa4b00-4f53-4141-aac3-792117cc65ee",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadow",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "6f9a6e1a-20b6-4c7d-97ee-56a57479c2be",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "17": {
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "2b9606b2-3d23-464a-bd3f-8f302cb31662",
+      "name": "doActionsByConditions",
+      "NodeID": 17,
+      "elseActionIds": [
+        16
+      ]
+    },
+    "9": {
+      "key": "2123203",
+      "name": "setCacheVal",
+      "UID": "8d78ed21-11f9-4f21-9928-058b6b903385",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 9
+    },
+    "19": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "191d601e-29ac-4da8-851d-a26cb63b797e",
+      "NodeID": 19,
+      "lValue": {
+        "key": "12320310",
+        "name": "getCacheVal",
+        "UID": "90eae8f2-0fff-42dc-bab5-608bccb474b5",
+        "target": "OWNER",
+        "NodeID": 18
+      }
+    },
+    "11": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "b31bd5eb-022f-409e-9762-369423eb8e43",
+      "NodeID": 11,
+      "lValue": {
+        "key": "2123203",
+        "name": "getCacheVal",
+        "UID": "8555e17e-516c-448c-b4ad-a13f7c1e4f2b",
+        "target": "OWNER",
+        "NodeID": 10
+      }
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "e01439a7-159f-41f8-815c-e9925ffdf679",
+      "effectId": "Eff_Buff_Charge_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "12": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "ab41f438-3e72-4c40-8ab1-99fdebf9f8c4",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    2,
+    12
+  ],
+  "onBuffStartIds": [
+    15,
+    14,
+    8,
+    5,
+    17
+  ]
+}

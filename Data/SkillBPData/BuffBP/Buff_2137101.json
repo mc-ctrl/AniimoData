@@ -1,0 +1,98 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2137101",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "key": "10371_BianShen_New",
+      "name": "applyMaterialEffect",
+      "NodeID": 4
+    },
+    "6": {
+      "name": "isInCombat",
+      "UID": "298a3f1e-a65b-474d-aca4-d6963f1bbe80",
+      "target": "OWNER",
+      "NodeID": 6,
+      "not": false
+    },
+    "10": {
+      "key": "1",
+      "duration": 15,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "a3c4d0c9-4487-4bc4-a862-a748b474aa6b",
+      "name": "addTimer"
+    },
+    "7": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "221d7127-af03-4008-b2b3-8977ad0d3afa",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 7
+    },
+    "8": {
+      "name": "isInCombat",
+      "UID": "62bc245e-4e4e-42ae-a5cf-a5c4cb9677d3",
+      "target": "OWNER",
+      "NodeID": 8,
+      "not": false
+    },
+    "9": {
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "e187a1ca-3624-4ed8-8adb-4efa824e898a",
+      "name": "doActionsByConditions",
+      "NodeID": 9,
+      "elseActionIds": [
+        12
+      ]
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "13067ba2-53c3-48e4-b368-7d9b0ecf4657",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "5f8369be-633d-4bdb-a4bf-8f117775cf55",
+      "name": "removeMaterialEffect",
+      "key": "10371_BianShen_New",
+      "NodeID": 13
+    },
+    "12": {
+      "buffId": 2137101,
+      "name": "removeBuff",
+      "UID": "9f6c411f-a4da-47e9-9126-6e98af900150",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2137101,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    13
+  ],
+  "onBuffStartIds": [
+    4,
+    7
+  ]
+}

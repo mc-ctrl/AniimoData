@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10520300",
+  "NodeID": 1,
+  "UID": "c49e780c-d376-4a7b-a410-0c810aa2e4d0",
+  "desc": "化作圆月迅速的攻击前方的敌人，将敌人聚集在面前，再释放火焰力量攻击敌人。",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10520300001,
+      "name": "setCombatActionTimeline",
+      "UID": "bd8ba245-ba73-413a-8094-4c781615387e",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Moon"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Hit_Fire_Blunt_Big",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10052_Skill_Moon"
+  ],
+  "searchRelation": 2,
+  "name": "焰月闪击",
+  "searchTargetRangeRadius": 4,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10500090
+}

@@ -1,0 +1,61 @@
+{
+  "BPName": "ability_11870430",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "abilityIndicator": 1,
+  "abilityParamId": 10900540,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11870430001,
+      "name": "setCombatActionTimeline",
+      "UID": "3dc91cb4-0974-48cf-bc37-9b8a2d0f06a7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 8,
+  "preloadAnims": [
+    "Skill_StormRazor"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10187_Skill_PauseWhirlwind_03",
+    "Eff_Parmon_10187_Skill_PauseWhirlwind_02",
+    "Eff_Hit_Wind_Blunt_Big",
+    "Eff_Parmon_10187_Skill_PauseWhirlwind_01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      7
+    ],
+    "shapeArgs": [
+      4,
+      2,
+      1
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "POS_OR_TARGET",
+    "maxNum": 0
+  },
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

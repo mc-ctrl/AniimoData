@@ -1,0 +1,34 @@
+{
+  "BPName": "ability_902132305",
+  "NodeID": 1,
+  "UID": "21d347c4-1fee-4def-b06d-c94f129c8234",
+  "abilityParamId": 49223015,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902132305001,
+      "name": "setCombatActionTimeline",
+      "UID": "f2fc1c0d-808a-4104-859f-0c8eee497b0b",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Combat_Struggle"
+  ],
+  "preloadEffs": [
+    "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_Shufu",
+    "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_ShufuDis"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

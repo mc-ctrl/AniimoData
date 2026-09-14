@@ -1,0 +1,3246 @@
+{
+  "40401": [
+    {
+      "videoM": "$Boy_Skill_Cure.mp4",
+      "videoF": "$Girl_Skill_Cure.mp4",
+      "needTitle": 2,
+      "name": 1942255613,
+      "levelUpDesc": 1395118753,
+      "learnAbilityId": 9200001,
+      "desc": 1917522948,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40402": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1206075549,
+      "name": 1297316952,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200009,
+      "desc": 1155211972,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40403": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1366051869,
+      "name": 1378836736,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200005,
+      "desc": 1330238540,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40404": [
+    {
+      "needTitle": 0,
+      "videoF": "$Girl_Skill_Mushroom.mp4",
+      "name": 1579577423,
+      "levelUpDesc": 1767885031,
+      "learnAbilityId": 9200021,
+      "desc": 2008014581,
+      "videoM": "$Boy_Skill_Mushroom.mp4"
+    }
+  ],
+  "40405": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1966416655,
+      "name": 1558672284,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200022,
+      "desc": 2146589872,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40406": [
+    {
+      "name": 1764215501,
+      "needTitle": 4,
+      "desc": 2044289650,
+      "needItem": {
+        "1000": 1
+      },
+      "customTriggerId": [
+        623
+      ],
+      "customTriggerConditionNum": [
+        2
+      ],
+      "levelUpDesc": 1929719541,
+      "learnAbilityId": 9200008,
+      "videoF": "$Girl_Skill_Doll.mp4",
+      "videoM": "$Boy_Skill_Doll.mp4"
+    }
+  ],
+  "40407": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1142256682,
+      "name": 1207598770,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200004,
+      "desc": 1343631872,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40408": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1168828050,
+      "name": 1336683678,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200010,
+      "desc": 1125757632,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40409": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1525328736,
+      "name": 1830237539,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200011,
+      "desc": 1122712938,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40410": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1564170257,
+      "name": 1158410230,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200012,
+      "desc": 2027044973,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40411": [
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1986622385,
+      "name": 2123858606,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 9200013,
+      "desc": 1930154887,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40412": [
+    {
+      "video": "$Skill_Flute.mp4",
+      "needTitle": 99,
+      "name": 1737617412,
+      "levelUpDesc": 1651381671,
+      "learnAbilityId": 9200014,
+      "desc": 1792712400,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "40413": [
+    {
+      "needTitle": 3,
+      "needItem": {
+        "1000": 2
+      },
+      "levelUpDesc": 1952833994,
+      "name": 2075863875,
+      "customTriggerId": [
+        623
+      ],
+      "learnAbilityId": 9200015,
+      "desc": 1350211996,
+      "customTriggerConditionNum": [
+        2
+      ]
+    }
+  ],
+  "40414": [
+    {
+      "name": 2050679655,
+      "needTitle": 6,
+      "desc": 1454189534,
+      "needItem": {
+        "1000": 3
+      },
+      "customTriggerId": [
+        625
+      ],
+      "customTriggerConditionNum": [
+        5
+      ],
+      "levelUpDesc": 1692886913,
+      "learnAbilityId": 9200020,
+      "videoF": "$Girl_Skill_BubbleMachine.mp4",
+      "videoM": "$Boy_Skill_BubbleMachine.mp4"
+    }
+  ],
+  "40416": [
+    {
+      "name": 1884514943,
+      "needTitle": 6,
+      "desc": 1531705223,
+      "needItem": {
+        "1000": 2
+      },
+      "customTriggerId": [
+        625
+      ],
+      "customTriggerConditionNum": [
+        5
+      ],
+      "levelUpDesc": 2015920457,
+      "learnAbilityId": 9200025,
+      "videoF": "$Girl_Skill_Hook.mp4",
+      "videoM": "$Boy_Skill_Hook.mp4"
+    }
+  ],
+  "110106": [
+    {
+      "needTitle": 0,
+      "name": 1990509001,
+      "levelUpDesc": 1351701170,
+      "funcInfos": [
+        [
+          3,
+          [
+            10080101
+          ]
+        ]
+      ],
+      "desc": 1389761004,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110118": [
+    {
+      "needTitle": 5,
+      "name": 1214435958,
+      "levelUpDesc": 1986269494,
+      "funcInfos": [
+        [
+          3,
+          [
+            10080102
+          ]
+        ]
+      ],
+      "desc": 1725203481,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110120": [
+    {
+      "needTitle": 1,
+      "name": 1899492149,
+      "levelUpDesc": 1722052974,
+      "funcInfos": [
+        [
+          3,
+          [
+            5080101
+          ]
+        ]
+      ],
+      "desc": 1302477494,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110121": [
+    {
+      "needTitle": 3,
+      "name": 1872175721,
+      "levelUpDesc": 1249347351,
+      "funcInfos": [
+        [
+          3,
+          [
+            5080102
+          ]
+        ]
+      ],
+      "desc": 1576684729,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110122": [
+    {
+      "needTitle": 0,
+      "name": 2066617135,
+      "levelUpDesc": 1477573638,
+      "funcInfos": [
+        [
+          3,
+          [
+            10190101
+          ]
+        ]
+      ],
+      "desc": 2014806995,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110123": [
+    {
+      "needTitle": 1,
+      "name": 1306590742,
+      "levelUpDesc": 1216688767,
+      "funcInfos": [
+        [
+          3,
+          [
+            10200101
+          ]
+        ]
+      ],
+      "desc": 1519218520,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110124": [
+    {
+      "needTitle": 2,
+      "name": 1269546430,
+      "levelUpDesc": 1194667478,
+      "funcInfos": [
+        [
+          3,
+          [
+            10210101
+          ]
+        ]
+      ],
+      "desc": 1077936457,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110125": [
+    {
+      "needTitle": 3,
+      "name": 1518064522,
+      "levelUpDesc": 1947655319,
+      "funcInfos": [
+        [
+          3,
+          [
+            10220101
+          ]
+        ]
+      ],
+      "desc": 1283586910,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110126": [
+    {
+      "needTitle": 4,
+      "name": 1712008135,
+      "levelUpDesc": 2122657208,
+      "funcInfos": [
+        [
+          3,
+          [
+            10230101
+          ]
+        ]
+      ],
+      "desc": 1517766597,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110127": [
+    {
+      "needTitle": 2,
+      "name": 1666277789,
+      "levelUpDesc": 1582028651,
+      "funcInfos": [
+        [
+          3,
+          [
+            10140101
+          ]
+        ]
+      ],
+      "desc": 2104804096,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110128": [
+    {
+      "needTitle": 4,
+      "name": 1133652253,
+      "levelUpDesc": 2076057597,
+      "funcInfos": [
+        [
+          3,
+          [
+            10140102
+          ]
+        ]
+      ],
+      "desc": 1781875498,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110129": [
+    {
+      "diffName1": 1244895606,
+      "needTitle": 2,
+      "diffValueBefore1": 1753180852,
+      "funcInfos": [
+        [
+          3,
+          [
+            10150101
+          ]
+        ]
+      ],
+      "levelUpDesc": 1595792825,
+      "name": 1949318197,
+      "desc": 1435082632,
+      "needItem": {
+        "1000": 1
+      }
+    },
+    {
+      "diffName1": 1547691425,
+      "needTitle": 2,
+      "diffValueBefore1": 1158349660,
+      "funcInfos": [
+        [
+          3,
+          [
+            10150102
+          ]
+        ]
+      ],
+      "levelUpDesc": 1127770878,
+      "name": 1780290317,
+      "desc": 1139043091,
+      "needItem": {
+        "1000": 1
+      }
+    },
+    {
+      "needTitle": 2,
+      "name": 1459066810,
+      "levelUpDesc": 1333504181,
+      "funcInfos": [
+        [
+          3,
+          [
+            10150103
+          ]
+        ]
+      ],
+      "desc": 1885260947,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110130": [
+    {
+      "diffName1": 1272797647,
+      "needTitle": 4,
+      "diffValueBefore1": 1455540927,
+      "funcInfos": [
+        [
+          3,
+          [
+            10160101
+          ]
+        ]
+      ],
+      "levelUpDesc": 1395592943,
+      "name": 2030643637,
+      "desc": 2066098208,
+      "needItem": {
+        "1000": 1
+      }
+    },
+    {
+      "diffName1": 1085728865,
+      "needTitle": 4,
+      "diffValueBefore1": 1322527895,
+      "funcInfos": [
+        [
+          3,
+          [
+            10160102
+          ]
+        ]
+      ],
+      "levelUpDesc": 1745102394,
+      "name": 2050745060,
+      "desc": 1895624199,
+      "needItem": {
+        "1000": 1
+      }
+    },
+    {
+      "needTitle": 4,
+      "name": 1313707433,
+      "levelUpDesc": 1264970041,
+      "funcInfos": [
+        [
+          3,
+          [
+            10160103
+          ]
+        ]
+      ],
+      "desc": 1282197043,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110131": [
+    {
+      "needTitle": 1,
+      "name": 1234574014,
+      "levelUpDesc": 1933407652,
+      "funcInfos": [
+        [
+          3,
+          [
+            6030101
+          ]
+        ]
+      ],
+      "desc": 1737754308,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110132": [
+    {
+      "needTitle": 2,
+      "name": 1302052166,
+      "levelUpDesc": 1456773247,
+      "funcInfos": [
+        [
+          3,
+          [
+            6030102
+          ]
+        ]
+      ],
+      "desc": 1882258484,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110133": [
+    {
+      "needTitle": 3,
+      "name": 1673534861,
+      "levelUpDesc": 1424894290,
+      "funcInfos": [
+        [
+          3,
+          [
+            6030103
+          ]
+        ]
+      ],
+      "desc": 1743163836,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110134": [
+    {
+      "needTitle": 5,
+      "name": 1583918625,
+      "levelUpDesc": 1961128636,
+      "funcInfos": [
+        [
+          3,
+          {}
+        ]
+      ],
+      "desc": 1844549213,
+      "needItem": {
+        "1000": 1
+      }
+    },
+    {
+      "diffName1": 1416694873,
+      "needTitle": 5,
+      "funcInfos": [
+        [
+          3,
+          {}
+        ]
+      ],
+      "levelUpDesc": 1084032439,
+      "name": 1706944129,
+      "desc": 2124245134,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110135": [
+    {
+      "diffValueBefore2": "15",
+      "name": 1703757147,
+      "needTitle": 0,
+      "desc": 1310772512,
+      "diffName1": 1385955554,
+      "diffValueAfter1": 1346036537,
+      "diffValueBefore1": 1273989827,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010101,
+            9010101
+          ]
+        ]
+      ],
+      "levelUpDesc": 1622940561,
+      "diffName2": 1962729055,
+      "diffValueAfter2": "25"
+    }
+  ],
+  "110136": [
+    {
+      "diffValueBefore2": "25",
+      "name": 1185062583,
+      "needTitle": 2,
+      "desc": 1172600494,
+      "diffName1": 1512612829,
+      "diffValueAfter1": 1890659700,
+      "diffValueBefore1": 1678292886,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010102,
+            9010102
+          ]
+        ]
+      ],
+      "levelUpDesc": 1120370438,
+      "diffName2": 1262619362,
+      "diffValueAfter2": "35"
+    }
+  ],
+  "110137": [
+    {
+      "diffValueBefore2": "35",
+      "name": 2045329553,
+      "needTitle": 3,
+      "desc": 2136064305,
+      "diffName1": 1376457209,
+      "diffValueAfter1": 1235632186,
+      "diffValueBefore1": 1100629862,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010103,
+            9010103
+          ]
+        ]
+      ],
+      "levelUpDesc": 1164060532,
+      "diffName2": 1657750911,
+      "diffValueAfter2": "40"
+    }
+  ],
+  "110138": [
+    {
+      "diffValueBefore2": "40",
+      "name": 1246275541,
+      "needTitle": 4,
+      "desc": 2129130430,
+      "diffName1": 1701428925,
+      "diffValueAfter1": 1929848330,
+      "diffValueBefore1": 1942632274,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010104,
+            9010104
+          ]
+        ]
+      ],
+      "levelUpDesc": 1152651673,
+      "diffName2": 1910396282,
+      "diffValueAfter2": "45"
+    }
+  ],
+  "40201": [
+    {
+      "name": 1913284980,
+      "needTitle": 5,
+      "desc": 1156093624,
+      "needItem": {
+        "1000": 2
+      },
+      "customTriggerId": [
+        624
+      ],
+      "customTriggerConditionNum": [
+        3
+      ],
+      "levelUpDesc": 1216868430,
+      "learnAbilityId": 9200002,
+      "videoF": "$Girl_Skill_Revive.mp4",
+      "videoM": "$Boy_Skill_Revive.mp4"
+    }
+  ],
+  "40203": [
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 2
+      },
+      "name": 1524581847,
+      "customTriggerId": [
+        627
+      ],
+      "levelUpDesc": 2038925539,
+      "desc": 1460053272,
+      "customTriggerConditionNum": [
+        9
+      ]
+    }
+  ],
+  "40204": [
+    {
+      "needTitle": 99,
+      "name": 2114930907,
+      "customTriggerId": [
+        210
+      ],
+      "levelUpDesc": 1649322878,
+      "desc": 1682149997,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "10104": [
+    {
+      "name": 1564961982,
+      "needTitle": 3,
+      "desc": 1119838235,
+      "needItem": {
+        "1000": 1
+      },
+      "customTriggerId": [
+        622
+      ],
+      "customTriggerConditionNum": [
+        1
+      ],
+      "levelUpDesc": 1840870223,
+      "learnAbilityId": 9220020,
+      "videoF": "$Girl_Skill_Gravitation.mp4",
+      "videoM": "$Boy_Skill_Gravitation.mp4"
+    }
+  ],
+  "40206": [
+    {
+      "needTitle": 6,
+      "needItem": {
+        "1000": 1
+      },
+      "name": 1151717076,
+      "customTriggerId": [
+        625
+      ],
+      "levelUpDesc": 1707755740,
+      "desc": 1706362870,
+      "customTriggerConditionNum": [
+        5
+      ]
+    }
+  ],
+  "4201003": [
+    {
+      "desc": 1305790772,
+      "name": 1247469030
+    }
+  ],
+  "4202003": [
+    {
+      "desc": 1881240046,
+      "name": 2124686029
+    }
+  ],
+  "4202005": [
+    {
+      "desc": 1421814850,
+      "name": 1292979726
+    }
+  ],
+  "4203003": [
+    {
+      "desc": 1484751221,
+      "name": 1281281019
+    }
+  ],
+  "4203005": [
+    {
+      "desc": 1631518570,
+      "name": 1398338130
+    }
+  ],
+  "4204003": [
+    {
+      "desc": 1821545510,
+      "name": 1675038380
+    }
+  ],
+  "4204005": [
+    {
+      "desc": 1171455927,
+      "name": 1914620566
+    }
+  ],
+  "4205003": [
+    {
+      "desc": 1831828242,
+      "name": 1544731502
+    }
+  ],
+  "4205005": [
+    {
+      "desc": 2039850893,
+      "name": 1532895340
+    }
+  ],
+  "4206003": [
+    {
+      "desc": 1836274006,
+      "name": 1812044403
+    }
+  ],
+  "4206005": [
+    {
+      "desc": 1234632076,
+      "name": 1177892470
+    }
+  ],
+  "4207003": [
+    {
+      "desc": 1114505465,
+      "name": 1683144165
+    }
+  ],
+  "4207005": [
+    {
+      "desc": 1384673559,
+      "name": 1537855482
+    }
+  ],
+  "4208003": [
+    {
+      "desc": 1123936263,
+      "name": 1198133792
+    }
+  ],
+  "4208005": [
+    {
+      "desc": 1911963454,
+      "name": 1322683079
+    }
+  ],
+  "4209003": [
+    {
+      "desc": 1823785100,
+      "name": 1134051981
+    }
+  ],
+  "4209005": [
+    {
+      "desc": 1124727206,
+      "name": 2095590269
+    }
+  ],
+  "4210003": [
+    {
+      "desc": 1104688815,
+      "name": 1596904112
+    }
+  ],
+  "4210005": [
+    {
+      "desc": 1223815709,
+      "name": 2034241678
+    }
+  ],
+  "4211003": [
+    {
+      "desc": 1444415167,
+      "name": 2096380092
+    }
+  ],
+  "4211005": [
+    {
+      "desc": 1365089384,
+      "name": 1776319240
+    }
+  ],
+  "4212003": [
+    {
+      "desc": 1157496558,
+      "name": 1864064400
+    }
+  ],
+  "4212005": [
+    {
+      "desc": 1883471383,
+      "name": 1206921979
+    }
+  ],
+  "4213003": [
+    {
+      "desc": 1799868352,
+      "name": 1767700771
+    }
+  ],
+  "4213005": [
+    {
+      "desc": 1086995326,
+      "name": 1630187606
+    }
+  ],
+  "4214003": [
+    {
+      "desc": 1691493383,
+      "name": 1821201002
+    }
+  ],
+  "4214005": [
+    {
+      "desc": 1250051065,
+      "name": 2095604459
+    }
+  ],
+  "4215003": [
+    {
+      "desc": 1796298787,
+      "name": 1886501105
+    }
+  ],
+  "4215005": [
+    {
+      "desc": 1551426721,
+      "name": 1684149465
+    }
+  ],
+  "4216003": [
+    {
+      "desc": 1329302639,
+      "name": 1688453569
+    }
+  ],
+  "4216005": [
+    {
+      "desc": 1885398615,
+      "name": 1313918791
+    }
+  ],
+  "20101": [
+    {
+      "name": 1639150361,
+      "needTitle": 99,
+      "desc": 1348081781,
+      "needItem": {
+        "1000": 1
+      },
+      "diffName1": 2035511714,
+      "diffValueAfter1": 1802980997,
+      "diffValueBefore1": 1494969954,
+      "levelUpDesc": 2087128525,
+      "learnAbilityId": 92110011
+    },
+    {
+      "needTitle": 99,
+      "name": 1677030576,
+      "levelUpDesc": 1574937527,
+      "learnAbilityId": 92110012,
+      "desc": 1674536151,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "4217003": [
+    {
+      "desc": 1440120580,
+      "name": 1456530202
+    }
+  ],
+  "4217004": [
+    {
+      "name": 1235419481,
+      "desc": 1275916293,
+      "funcInfos": [
+        [
+          3,
+          [
+            4217004
+          ]
+        ]
+      ]
+    }
+  ],
+  "120007": [
+    {
+      "name": 1887729584,
+      "needTitle": 2,
+      "desc": 2101869709,
+      "needItem": {
+        "1000": 1
+      },
+      "diffName1": 1902249998,
+      "diffValueAfter1": 1195212826,
+      "diffValueBefore1": 2011811651,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200071
+          ]
+        ]
+      ],
+      "levelUpDesc": 1670063463
+    },
+    {
+      "name": 2041351027,
+      "needTitle": 3,
+      "desc": 2120916158,
+      "needItem": {
+        "1000": 2
+      },
+      "diffName1": 1284954670,
+      "diffValueAfter1": 1965526044,
+      "diffValueBefore1": 1376356977,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200072
+          ]
+        ]
+      ],
+      "levelUpDesc": 1624679534
+    },
+    {
+      "name": 1992228081,
+      "needTitle": 5,
+      "desc": 1136374784,
+      "customTriggerConditionNum": [
+        16
+      ],
+      "diffName1": 1315918536,
+      "diffValueAfter1": 2111912236,
+      "diffValueBefore1": 1766101715,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200073
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        634
+      ],
+      "needItem": {
+        "1000": 2
+      },
+      "levelUpDesc": 1209960022
+    },
+    {
+      "name": 1842886825,
+      "needTitle": 7,
+      "desc": 1772772678,
+      "customTriggerConditionNum": [
+        40
+      ],
+      "diffName1": 1619468497,
+      "diffValueAfter1": 1451841066,
+      "diffValueBefore1": 1166252148,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200074
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        636
+      ],
+      "needItem": {
+        "1000": 3
+      },
+      "levelUpDesc": 1140101105
+    },
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1515811411,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200075
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        637
+      ],
+      "levelUpDesc": 2079706193,
+      "desc": 1278812251,
+      "customTriggerConditionNum": [
+        56
+      ]
+    }
+  ],
+  "4217006": [
+    {
+      "name": 1193969881,
+      "desc": 1709022806,
+      "funcInfos": [
+        [
+          3,
+          [
+            4217006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4217007": [
+    {
+      "name": 1191926002,
+      "desc": 1448950234,
+      "funcInfos": [
+        [
+          3,
+          [
+            4217007
+          ]
+        ]
+      ]
+    }
+  ],
+  "10000": [
+    {
+      "needTitle": 0,
+      "name": 1926928005,
+      "desc": 1902870040,
+      "funcInfos": [
+        [
+          4,
+          [
+            1036100
+          ]
+        ],
+        [
+          4,
+          [
+            1037100
+          ]
+        ]
+      ]
+    }
+  ],
+  "120002": [
+    {
+      "name": 1263075189,
+      "needTitle": 4,
+      "desc": 1338148165,
+      "customTriggerConditionNum": [
+        8
+      ],
+      "diffName1": 1368214819,
+      "diffValueAfter1": 1894896272,
+      "diffValueBefore1": 1373818049,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200021
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        633
+      ],
+      "needItem": {
+        "1000": 2
+      },
+      "levelUpDesc": 1162317006
+    },
+    {
+      "name": 2097284072,
+      "needTitle": 5,
+      "desc": 2021076929,
+      "customTriggerConditionNum": [
+        16
+      ],
+      "diffName1": 1968373364,
+      "diffValueAfter1": 1433450948,
+      "diffValueBefore1": 2112956770,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200022
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        634
+      ],
+      "needItem": {
+        "1000": 2
+      },
+      "levelUpDesc": 2020572581
+    },
+    {
+      "name": 1219314137,
+      "needTitle": 6,
+      "desc": 1874340037,
+      "customTriggerConditionNum": [
+        24
+      ],
+      "diffName1": 1498440847,
+      "diffValueAfter1": 1935943682,
+      "diffValueBefore1": 1303656314,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200023
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        635
+      ],
+      "needItem": {
+        "1000": 3
+      },
+      "levelUpDesc": 1249270124
+    },
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1317383168,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200024
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        637
+      ],
+      "levelUpDesc": 1157646279,
+      "desc": 1668213617,
+      "customTriggerConditionNum": [
+        56
+      ]
+    }
+  ],
+  "120003": [
+    {
+      "needTitle": 3,
+      "name": 1328080078,
+      "levelUpDesc": 1747100549,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200031
+          ]
+        ]
+      ],
+      "desc": 1617590487,
+      "needItem": {
+        "1000": 2
+      }
+    }
+  ],
+  "120004": [
+    {
+      "needTitle": 6,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1960349897,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200041
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        635
+      ],
+      "levelUpDesc": 1081725810,
+      "desc": 1245636735,
+      "customTriggerConditionNum": [
+        24
+      ]
+    }
+  ],
+  "120005": [
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 2035868308,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200051
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        637
+      ],
+      "levelUpDesc": 1503673887,
+      "desc": 1180927975,
+      "customTriggerConditionNum": [
+        56
+      ]
+    }
+  ],
+  "120006": [
+    {
+      "needTitle": 7,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1563933568,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200061
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        636
+      ],
+      "levelUpDesc": 1878423047,
+      "desc": 2021970002,
+      "customTriggerConditionNum": [
+        40
+      ]
+    }
+  ],
+  "120008": [
+    {
+      "needTitle": 2,
+      "name": 1879819725,
+      "levelUpDesc": 2101197154,
+      "funcInfos": [
+        [
+          3,
+          [
+            2000012
+          ]
+        ]
+      ],
+      "desc": 1664144744,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "120009": [
+    {
+      "needTitle": 3,
+      "name": 1277388946,
+      "levelUpDesc": 1238202158,
+      "funcInfos": [
+        [
+          3,
+          [
+            2000013
+          ]
+        ]
+      ],
+      "desc": 1093529656,
+      "needItem": {
+        "1000": 2
+      }
+    }
+  ],
+  "130001": [
+    {
+      "name": 1619736325,
+      "needTitle": 2,
+      "desc": 1963392600,
+      "needItem": {
+        "1000": 1
+      },
+      "diffName1": 1590590362,
+      "diffValueAfter1": 1921412203,
+      "diffValueBefore1": 1080324893,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300011
+          ]
+        ]
+      ],
+      "levelUpDesc": 1445661950
+    },
+    {
+      "name": 2028738193,
+      "needTitle": 4,
+      "desc": 2140176381,
+      "customTriggerConditionNum": [
+        8
+      ],
+      "diffName1": 1825208914,
+      "diffValueAfter1": 1099801895,
+      "diffValueBefore1": 1293712683,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300012
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        633
+      ],
+      "needItem": {
+        "1000": 2
+      },
+      "levelUpDesc": 1532497517
+    },
+    {
+      "name": 1967344378,
+      "needTitle": 6,
+      "desc": 1956708187,
+      "customTriggerConditionNum": [
+        24
+      ],
+      "diffName1": 1279476627,
+      "diffValueAfter1": 1784682395,
+      "diffValueBefore1": 1224852393,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300013
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        635
+      ],
+      "needItem": {
+        "1000": 3
+      },
+      "levelUpDesc": 1427066444
+    },
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 2131115961,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300014
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        637
+      ],
+      "levelUpDesc": 1432720272,
+      "desc": 1310719811,
+      "customTriggerConditionNum": [
+        56
+      ]
+    }
+  ],
+  "130002": [
+    {
+      "name": 1768072459,
+      "levelUpDesc": 2121430886,
+      "needTitle": 2,
+      "desc": 1613275449,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "130003": [
+    {
+      "needTitle": 4,
+      "needItem": {
+        "1000": 2
+      },
+      "name": 1492446251,
+      "customTriggerId": [
+        633
+      ],
+      "levelUpDesc": 1988412971,
+      "desc": 2143420926,
+      "customTriggerConditionNum": [
+        8
+      ]
+    }
+  ],
+  "130004": [
+    {
+      "name": 1276493635,
+      "needTitle": 5,
+      "desc": 2044605358,
+      "customTriggerConditionNum": [
+        24
+      ],
+      "diffName1": 1768039662,
+      "diffValueAfter1": 1322877384,
+      "diffValueBefore1": 1785610897,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300041
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        635
+      ],
+      "needItem": {
+        "1000": 1
+      },
+      "levelUpDesc": 1462253363
+    },
+    {
+      "needTitle": 6,
+      "name": 1220405876,
+      "levelUpDesc": 1119513341,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300042
+          ]
+        ]
+      ],
+      "desc": 1312183183,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "130005": [
+    {
+      "needTitle": 7,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 2026746427,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300051
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        636
+      ],
+      "levelUpDesc": 2122444292,
+      "desc": 1397286996,
+      "customTriggerConditionNum": [
+        40
+      ]
+    }
+  ],
+  "130006": [
+    {
+      "name": 1809788777,
+      "needTitle": 5,
+      "desc": 1155964533,
+      "customTriggerConditionNum": [
+        16
+      ],
+      "diffName1": 1482548741,
+      "diffValueAfter1": 1271587737,
+      "diffValueBefore1": 1647340297,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300061
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        634
+      ],
+      "needItem": {
+        "1000": 2
+      },
+      "levelUpDesc": 1529290840
+    },
+    {
+      "name": 1772424321,
+      "needTitle": 6,
+      "desc": 2025518643,
+      "customTriggerConditionNum": [
+        24
+      ],
+      "diffName1": 1910021400,
+      "diffValueAfter1": 1698210734,
+      "diffValueBefore1": 2099999008,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300062
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        635
+      ],
+      "needItem": {
+        "1000": 3
+      },
+      "levelUpDesc": 1700346014
+    },
+    {
+      "name": 1634424669,
+      "needTitle": 7,
+      "desc": 2063754620,
+      "customTriggerConditionNum": [
+        40
+      ],
+      "diffName1": 1782879056,
+      "diffValueAfter1": 1130401019,
+      "diffValueBefore1": 1244870751,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300063
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        636
+      ],
+      "needItem": {
+        "1000": 3
+      },
+      "levelUpDesc": 1364370309
+    },
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1882353903,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300064
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        637
+      ],
+      "levelUpDesc": 1245692074,
+      "desc": 1781655945,
+      "customTriggerConditionNum": [
+        56
+      ]
+    }
+  ],
+  "130007": [
+    {
+      "needTitle": 99,
+      "needItem": {
+        "1000": 1
+      },
+      "name": 1637939561,
+      "customTriggerId": [
+        633
+      ],
+      "levelUpDesc": 1204899407,
+      "desc": 1523766333,
+      "customTriggerConditionNum": [
+        8
+      ]
+    }
+  ],
+  "130008": [
+    {
+      "needTitle": 3,
+      "needItem": {
+        "1000": 2
+      },
+      "name": 1592009076,
+      "funcInfos": [
+        [
+          3,
+          [
+            1300081
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        633
+      ],
+      "levelUpDesc": 1682959275,
+      "desc": 1378183894,
+      "customTriggerConditionNum": [
+        8
+      ]
+    }
+  ],
+  "50101": [
+    {
+      "needTitle": 0,
+      "name": 1385034775,
+      "levelUpDesc": 1948133431,
+      "funcInfos": [
+        [
+          3,
+          [
+            5010101
+          ]
+        ]
+      ],
+      "desc": 1633996558,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "50102": [
+    {
+      "needTitle": 1,
+      "name": 2142052299,
+      "levelUpDesc": 1164875155,
+      "funcInfos": [
+        [
+          3,
+          [
+            5010102
+          ]
+        ]
+      ],
+      "desc": 1368601345,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "50103": [
+    {
+      "needTitle": 2,
+      "name": 1601492745,
+      "levelUpDesc": 1088092241,
+      "funcInfos": [
+        [
+          3,
+          [
+            5010103
+          ]
+        ]
+      ],
+      "desc": 2105235068,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "50104": [
+    {
+      "needTitle": 3,
+      "name": 1639754605,
+      "levelUpDesc": 1298218740,
+      "funcInfos": [
+        [
+          3,
+          [
+            5010104
+          ]
+        ]
+      ],
+      "desc": 1530767163,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "50105": [
+    {
+      "needTitle": 4,
+      "name": 1230249759,
+      "levelUpDesc": 1175057113,
+      "funcInfos": [
+        [
+          3,
+          [
+            5010105
+          ]
+        ]
+      ],
+      "desc": 1371599008,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "50106": [
+    {
+      "needTitle": 5,
+      "name": 2006766910,
+      "levelUpDesc": 1945257811,
+      "funcInfos": [
+        [
+          3,
+          [
+            5010106
+          ]
+        ]
+      ],
+      "desc": 1538838926,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "50107": [
+    {
+      "name": 1432156704,
+      "levelUpDesc": 2095118350,
+      "needTitle": 0,
+      "desc": 1409423496,
+      "funcInfos": [
+        [
+          3,
+          [
+            5010107
+          ]
+        ]
+      ]
+    }
+  ],
+  "150002": [
+    {
+      "levelUpDesc": 2016402663,
+      "needTitle": 99,
+      "desc": 1694513602,
+      "name": 1442944331
+    }
+  ],
+  "10101": [
+    {
+      "name": 1995920217,
+      "levelUpDesc": 1337991105,
+      "learnAbilityId": 9100001,
+      "desc": 1980405609,
+      "needTitle": 0
+    }
+  ],
+  "10102": [
+    {
+      "name": 1121485224,
+      "needTitle": 3,
+      "desc": 1268062870,
+      "needItem": {
+        "1000": 1
+      },
+      "customTriggerId": [
+        622
+      ],
+      "customTriggerConditionNum": [
+        1
+      ],
+      "levelUpDesc": 1362763221,
+      "learnAbilityId": 9200007,
+      "videoF": "$Girl_Skill_Crush.mp4",
+      "videoM": "$Boy_Skill_Crush.mp4"
+    }
+  ],
+  "40202": [
+    {
+      "name": 1626542819,
+      "needTitle": 7,
+      "desc": 1995628898,
+      "needItem": {
+        "1000": 2
+      },
+      "customTriggerId": [
+        626
+      ],
+      "customTriggerConditionNum": [
+        7
+      ],
+      "levelUpDesc": 1267820739,
+      "learnAbilityId": 92000231,
+      "videoF": "$Girl_Skill_Duck_Up.mp4",
+      "videoM": "$Boy_Skill_Duck_Up.mp4"
+    }
+  ],
+  "40415": [
+    {
+      "name": 1074569439,
+      "needTitle": 4,
+      "desc": 1264297603,
+      "needItem": {
+        "1000": 1
+      },
+      "customTriggerId": [
+        623
+      ],
+      "customTriggerConditionNum": [
+        2
+      ],
+      "levelUpDesc": 1315054958,
+      "learnAbilityId": 9200023,
+      "videoF": "$Girl_Skill_Duck.mp4",
+      "videoM": "$Boy_Skill_Duck.mp4"
+    }
+  ],
+  "140001": [
+    {
+      "needTitle": 4,
+      "needItem": {
+        "1000": 2
+      },
+      "name": 2123685890,
+      "customTriggerId": [
+        633
+      ],
+      "levelUpDesc": 1545160142,
+      "desc": 1437453964,
+      "customTriggerConditionNum": [
+        8
+      ]
+    }
+  ],
+  "4201001": [
+    {
+      "name": 1827795842,
+      "desc": 1105719947,
+      "funcInfos": [
+        [
+          3,
+          [
+            4201001,
+            4201002
+          ]
+        ]
+      ]
+    }
+  ],
+  "140003": [
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1330134318,
+      "customTriggerId": [
+        637
+      ],
+      "levelUpDesc": 1780472417,
+      "desc": 1426586347,
+      "customTriggerConditionNum": [
+        56
+      ]
+    }
+  ],
+  "4202001": [
+    {
+      "name": 1892611775,
+      "desc": 1696648881,
+      "funcInfos": [
+        [
+          3,
+          [
+            4202001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4202004": [
+    {
+      "name": 2077683325,
+      "desc": 1543342417,
+      "funcInfos": [
+        [
+          3,
+          [
+            4202004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4202006": [
+    {
+      "name": 2042308171,
+      "desc": 1866158197,
+      "funcInfos": [
+        [
+          3,
+          [
+            4202006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4202007": [
+    {
+      "name": 1818167431,
+      "desc": 2045170715,
+      "funcInfos": [
+        [
+          3,
+          [
+            4202007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4203001": [
+    {
+      "name": 1745766022,
+      "desc": 1479428934,
+      "funcInfos": [
+        [
+          3,
+          [
+            4203001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4203004": [
+    {
+      "name": 1220278331,
+      "desc": 1803666152,
+      "funcInfos": [
+        [
+          3,
+          [
+            4203004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4203006": [
+    {
+      "name": 2011331672,
+      "desc": 1398606972,
+      "funcInfos": [
+        [
+          3,
+          [
+            4203006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4203007": [
+    {
+      "name": 1370604299,
+      "desc": 2140136184,
+      "funcInfos": [
+        [
+          3,
+          [
+            4203007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4204001": [
+    {
+      "name": 1819317800,
+      "desc": 2040721841,
+      "funcInfos": [
+        [
+          3,
+          [
+            4204001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4204004": [
+    {
+      "name": 1869544861,
+      "desc": 2028376127,
+      "funcInfos": [
+        [
+          3,
+          [
+            4204004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4204006": [
+    {
+      "name": 1610116064,
+      "desc": 2075689523,
+      "funcInfos": [
+        [
+          3,
+          [
+            4204006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4204007": [
+    {
+      "name": 1867960133,
+      "desc": 1327201789,
+      "funcInfos": [
+        [
+          3,
+          [
+            4204007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4205001": [
+    {
+      "name": 1561115449,
+      "desc": 1267131948,
+      "funcInfos": [
+        [
+          3,
+          [
+            4205001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4205004": [
+    {
+      "name": 1357342549,
+      "desc": 1947961893,
+      "funcInfos": [
+        [
+          3,
+          [
+            4205004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4205006": [
+    {
+      "name": 1645822272,
+      "desc": 1970903141,
+      "funcInfos": [
+        [
+          3,
+          [
+            4205006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4205007": [
+    {
+      "name": 1671023692,
+      "desc": 1133105593,
+      "funcInfos": [
+        [
+          3,
+          [
+            4205007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4206001": [
+    {
+      "name": 2112601716,
+      "desc": 1635034922,
+      "funcInfos": [
+        [
+          3,
+          [
+            4206001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4206004": [
+    {
+      "name": 2102323733,
+      "desc": 1202452514,
+      "funcInfos": [
+        [
+          3,
+          [
+            4206004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4206006": [
+    {
+      "name": 1585082389,
+      "desc": 1285590943,
+      "funcInfos": [
+        [
+          3,
+          [
+            4206006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4206007": [
+    {
+      "name": 1631504002,
+      "desc": 1646151070,
+      "funcInfos": [
+        [
+          3,
+          [
+            4206007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4207001": [
+    {
+      "name": 1217926192,
+      "desc": 1355827633,
+      "funcInfos": [
+        [
+          3,
+          [
+            4207001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4207004": [
+    {
+      "name": 1129760716,
+      "desc": 1579466812,
+      "funcInfos": [
+        [
+          3,
+          [
+            4207004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4207006": [
+    {
+      "name": 1426407478,
+      "desc": 1453297434,
+      "funcInfos": [
+        [
+          3,
+          [
+            4207006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4207007": [
+    {
+      "name": 1335714454,
+      "desc": 1126475251,
+      "funcInfos": [
+        [
+          3,
+          [
+            4207007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4208001": [
+    {
+      "name": 1781709560,
+      "desc": 1357765884,
+      "funcInfos": [
+        [
+          3,
+          [
+            4208001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4208004": [
+    {
+      "name": 1453503151,
+      "desc": 1521119299,
+      "funcInfos": [
+        [
+          3,
+          [
+            4208004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4208006": [
+    {
+      "name": 1282386859,
+      "desc": 1167169894,
+      "funcInfos": [
+        [
+          3,
+          [
+            4208006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4208007": [
+    {
+      "name": 1474273905,
+      "desc": 1529438936,
+      "funcInfos": [
+        [
+          3,
+          [
+            4208007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4209001": [
+    {
+      "name": 1301042043,
+      "desc": 1981436395,
+      "funcInfos": [
+        [
+          3,
+          [
+            4209001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4209004": [
+    {
+      "name": 1486271154,
+      "desc": 1183950952,
+      "funcInfos": [
+        [
+          3,
+          [
+            4209004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4209006": [
+    {
+      "name": 1351669265,
+      "desc": 1873156482,
+      "funcInfos": [
+        [
+          3,
+          [
+            4209006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4209007": [
+    {
+      "name": 1482613511,
+      "desc": 1736800650,
+      "funcInfos": [
+        [
+          3,
+          [
+            4209007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4210001": [
+    {
+      "name": 1386186278,
+      "desc": 1947224805,
+      "funcInfos": [
+        [
+          3,
+          [
+            4210001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4210004": [
+    {
+      "name": 1881269158,
+      "desc": 1931337080,
+      "funcInfos": [
+        [
+          3,
+          [
+            4210004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4210006": [
+    {
+      "name": 2087840609,
+      "desc": 1489564786,
+      "funcInfos": [
+        [
+          3,
+          [
+            4210006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4210007": [
+    {
+      "name": 1923531498,
+      "desc": 1741948148,
+      "funcInfos": [
+        [
+          3,
+          [
+            4210007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4211001": [
+    {
+      "name": 2054591560,
+      "desc": 2141910179,
+      "funcInfos": [
+        [
+          3,
+          [
+            4211001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4211004": [
+    {
+      "name": 1915408956,
+      "desc": 1637036420,
+      "funcInfos": [
+        [
+          3,
+          [
+            4211004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4211006": [
+    {
+      "name": 1105058135,
+      "desc": 1137906234,
+      "funcInfos": [
+        [
+          3,
+          [
+            4211006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4211007": [
+    {
+      "name": 2035514200,
+      "desc": 1762241421,
+      "funcInfos": [
+        [
+          3,
+          [
+            4211007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4212001": [
+    {
+      "name": 1393484529,
+      "desc": 1336771153,
+      "funcInfos": [
+        [
+          3,
+          [
+            4212001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4212004": [
+    {
+      "name": 1874280631,
+      "desc": 1507456795,
+      "funcInfos": [
+        [
+          3,
+          [
+            4212004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4212006": [
+    {
+      "name": 1164075020,
+      "desc": 1822677848,
+      "funcInfos": [
+        [
+          3,
+          [
+            4212006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4212007": [
+    {
+      "name": 1750367734,
+      "desc": 1730175283,
+      "funcInfos": [
+        [
+          3,
+          [
+            4212007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4213001": [
+    {
+      "name": 1558010017,
+      "desc": 1823270267,
+      "funcInfos": [
+        [
+          3,
+          [
+            4213001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4213004": [
+    {
+      "name": 1385579930,
+      "desc": 1219591966,
+      "funcInfos": [
+        [
+          3,
+          [
+            4213004
+          ]
+        ]
+      ]
+    }
+  ],
+  "110101": [
+    {
+      "needTitle": 4,
+      "needItem": {
+        "1000": 2
+      },
+      "name": 1957394279,
+      "funcInfos": [
+        [
+          3,
+          [
+            10180101
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        633
+      ],
+      "levelUpDesc": 1353064921,
+      "desc": 1486210942,
+      "customTriggerConditionNum": [
+        8
+      ]
+    }
+  ],
+  "4213007": [
+    {
+      "name": 1973799998,
+      "desc": 1483298590,
+      "funcInfos": [
+        [
+          3,
+          [
+            4213007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4214001": [
+    {
+      "name": 2111526362,
+      "desc": 1761566169,
+      "funcInfos": [
+        [
+          3,
+          [
+            4214001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4214004": [
+    {
+      "name": 2091759847,
+      "desc": 1585668751,
+      "funcInfos": [
+        [
+          3,
+          [
+            4214004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4214006": [
+    {
+      "name": 2003054550,
+      "desc": 1262259236,
+      "funcInfos": [
+        [
+          3,
+          [
+            4214006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4214007": [
+    {
+      "name": 1575141337,
+      "desc": 1757140336,
+      "funcInfos": [
+        [
+          3,
+          [
+            4214007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4215001": [
+    {
+      "name": 1971729735,
+      "desc": 1236993746,
+      "funcInfos": [
+        [
+          3,
+          [
+            4215001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4215004": [
+    {
+      "name": 1170884311,
+      "desc": 1467609287,
+      "funcInfos": [
+        [
+          3,
+          [
+            4215004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4215006": [
+    {
+      "name": 1127103421,
+      "desc": 1945866324,
+      "funcInfos": [
+        [
+          3,
+          [
+            4215006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4215007": [
+    {
+      "name": 1582363335,
+      "desc": 1297128632,
+      "funcInfos": [
+        [
+          3,
+          [
+            4215007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4216001": [
+    {
+      "name": 1704067870,
+      "desc": 1183366590,
+      "funcInfos": [
+        [
+          3,
+          [
+            4216001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4216004": [
+    {
+      "name": 1885627016,
+      "desc": 1805013454,
+      "funcInfos": [
+        [
+          3,
+          [
+            4216004
+          ]
+        ]
+      ]
+    }
+  ],
+  "4216006": [
+    {
+      "name": 1861850346,
+      "desc": 1422643500,
+      "funcInfos": [
+        [
+          3,
+          [
+            4216006
+          ]
+        ]
+      ]
+    }
+  ],
+  "4216007": [
+    {
+      "name": 1102394891,
+      "desc": 1491114233,
+      "funcInfos": [
+        [
+          3,
+          [
+            4216007
+          ]
+        ]
+      ]
+    }
+  ],
+  "4217005": [
+    {
+      "desc": 1399112423,
+      "name": 1394510796
+    }
+  ],
+  "4217001": [
+    {
+      "name": 1515531233,
+      "desc": 1142630048,
+      "funcInfos": [
+        [
+          3,
+          [
+            4217001
+          ]
+        ]
+      ]
+    }
+  ],
+  "4213006": [
+    {
+      "name": 1379243118,
+      "desc": 1656045110,
+      "funcInfos": [
+        [
+          3,
+          [
+            4213006
+          ]
+        ]
+      ]
+    }
+  ],
+  "120001": [
+    {
+      "name": 1228903006,
+      "needTitle": 2,
+      "desc": 1329369677,
+      "needItem": {
+        "1000": 1
+      },
+      "diffName1": 1431191000,
+      "diffValueAfter1": 1217741255,
+      "diffValueBefore1": 1537440738,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200011
+          ]
+        ]
+      ],
+      "levelUpDesc": 2120924559
+    },
+    {
+      "name": 1730091453,
+      "needTitle": 4,
+      "desc": 1634584625,
+      "customTriggerConditionNum": [
+        8
+      ],
+      "diffName1": 1841823787,
+      "diffValueAfter1": 1593272975,
+      "diffValueBefore1": 1736589738,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200012
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        633
+      ],
+      "needItem": {
+        "1000": 2
+      },
+      "levelUpDesc": 1442208941
+    },
+    {
+      "name": 1264659000,
+      "needTitle": 6,
+      "desc": 1860849971,
+      "customTriggerConditionNum": [
+        24
+      ],
+      "diffName1": 1401161735,
+      "diffValueAfter1": 1535861510,
+      "diffValueBefore1": 1499332765,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200013
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        635
+      ],
+      "needItem": {
+        "1000": 3
+      },
+      "levelUpDesc": 1326003707
+    },
+    {
+      "needTitle": 8,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1436159961,
+      "funcInfos": [
+        [
+          3,
+          [
+            1200014
+          ]
+        ]
+      ],
+      "customTriggerId": [
+        637
+      ],
+      "levelUpDesc": 1821399006,
+      "desc": 1729527462,
+      "customTriggerConditionNum": [
+        56
+      ]
+    }
+  ],
+  "40205": [
+    {
+      "needTitle": 99,
+      "name": 1346909515,
+      "customTriggerId": [
+        210
+      ],
+      "levelUpDesc": 1159713619,
+      "desc": 2051969068,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "10103": [
+    {
+      "videoM": "$Boy_Skill_Skate.mp4",
+      "videoF": "$Girl_Skill_Skate.mp4",
+      "needTitle": 2,
+      "name": 1955444651,
+      "levelUpDesc": 1760446065,
+      "learnAbilityId": 9200006,
+      "desc": 1078668781,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "20201": [
+    {
+      "needTitle": 99,
+      "needItem": {
+        "1000": 1,
+        "1008": 1
+      },
+      "levelUpDesc": 1966066476,
+      "name": 1785084588,
+      "customTriggerId": [
+        605,
+        608,
+        618
+      ],
+      "learnAbilityId": 92120011,
+      "desc": 2120980638,
+      "customTriggerConditionNum": [
+        1,
+        0,
+        5
+      ]
+    },
+    {
+      "needTitle": 99,
+      "levelUpDesc": 1809936952,
+      "name": 1623013042,
+      "customTriggerId": [
+        210
+      ],
+      "learnAbilityId": 92120012,
+      "desc": 1756420181,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110139": [
+    {
+      "diffValueBefore2": "45",
+      "name": 1626746051,
+      "needTitle": 5,
+      "desc": 2136867842,
+      "diffName1": 2092234493,
+      "diffValueAfter1": 1134642695,
+      "diffValueBefore1": 2118766527,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010105,
+            9010105
+          ]
+        ]
+      ],
+      "levelUpDesc": 1859706599,
+      "diffName2": 1929605162,
+      "diffValueAfter2": "50"
+    }
+  ],
+  "110140": [
+    {
+      "needTitle": 5,
+      "name": 1424498720,
+      "levelUpDesc": 1858860393,
+      "funcInfos": [
+        [
+          3,
+          [
+            10140103
+          ]
+        ]
+      ],
+      "desc": 1114090681,
+      "needItem": {
+        "1000": 1
+      }
+    }
+  ],
+  "110141": [
+    {
+      "diffValueBefore2": "50",
+      "name": 2115560358,
+      "needTitle": 6,
+      "desc": 1627480033,
+      "diffName1": 1251436799,
+      "diffValueAfter1": 1465461478,
+      "diffValueBefore1": 1604706534,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010106,
+            9010106
+          ]
+        ]
+      ],
+      "levelUpDesc": 2070003925,
+      "diffName2": 1220069183,
+      "diffValueAfter2": "55"
+    }
+  ],
+  "110142": [
+    {
+      "diffValueBefore2": "55",
+      "name": 1148105024,
+      "needTitle": 7,
+      "desc": 1265200486,
+      "diffName1": 1380212164,
+      "diffValueAfter1": 1949839679,
+      "diffValueBefore1": 1737143683,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010107,
+            9010107
+          ]
+        ]
+      ],
+      "levelUpDesc": 1712389246,
+      "diffName2": 2105583337,
+      "diffValueAfter2": "60"
+    }
+  ],
+  "110143": [
+    {
+      "name": 1860519168,
+      "levelUpDesc": 1097997018,
+      "needTitle": 8,
+      "desc": 1980235585,
+      "funcInfos": [
+        [
+          3,
+          [
+            8010108,
+            9010108
+          ]
+        ]
+      ]
+    }
+  ],
+  "140002": [
+    {
+      "name": 2140990256,
+      "levelUpDesc": 1909844357,
+      "needTitle": 3,
+      "desc": 1716696813,
+      "needItem": {
+        "1000": 2
+      }
+    }
+  ],
+  "140004": [
+    {
+      "needTitle": 6,
+      "needItem": {
+        "1000": 3
+      },
+      "name": 1937291235,
+      "customTriggerId": [
+        635
+      ],
+      "levelUpDesc": 1763778694,
+      "desc": 1686060909,
+      "customTriggerConditionNum": [
+        24
+      ]
+    }
+  ],
+  "150001": [
+    {
+      "levelUpDesc": 1262215245,
+      "needTitle": 99,
+      "desc": 1830614685,
+      "name": 1520945964
+    }
+  ]
+}

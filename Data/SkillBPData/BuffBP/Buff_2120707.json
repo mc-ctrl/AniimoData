@@ -1,0 +1,66 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120707",
+  "calcInfoByLuaConfig": {
+    "id": 2120707,
+    "taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffThinkIds": [
+    8
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_DefenseUp"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "calcResult",
+      "UID": "6ba9c1dc-f579-43e9-be7e-1f08c1ce5b78",
+      "target": "OWNER",
+      "NodeID": 8,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 1,
+        "id": 2120707
+      }
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "67c79375-c3fd-4972-a6b1-e88d3bbd5a2b",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "9": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "0870e621-7793-4c38-ae81-df0debfd5e81",
+      "name": "buffStartThink",
+      "NodeID": 9
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "0878464a-7406-42b0-bc94-46c7f449dd7b",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    4,
+    9
+  ]
+}

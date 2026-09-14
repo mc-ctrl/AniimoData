@@ -1,0 +1,291 @@
+{
+  "1": {
+    "sort": 1,
+    "res": "$UI_PetHead_10051.png",
+    "name": 1111381102,
+    "defaultUnlock": 1,
+    "desc": 1242094882
+  },
+  "2": {
+    "sort": 2,
+    "res": "$UI_PetHead_10361.png",
+    "name": 1368384745,
+    "unlockavatar_txt": 1632377221,
+    "defaultUnlock": 0,
+    "desc": 1966283095,
+    "showStatus": 3
+  },
+  "3": {
+    "sort": 3,
+    "res": "$UI_PetHead_10371.png",
+    "name": 2114760611,
+    "unlockavatar_txt": 1166361665,
+    "defaultUnlock": 0,
+    "desc": 2072675393,
+    "showStatus": 3
+  },
+  "4": {
+    "sort": 4,
+    "res": "$UI_PetHead_1005303.png",
+    "name": 2051231853,
+    "defaultUnlock": 0,
+    "desc": 1391205141,
+    "unlockavatar_txt": 1748875944
+  },
+  "101": {
+    "sort": 1002,
+    "res": "$UI_PlayerHead_GrassPlate.png",
+    "name": 2144768925,
+    "defaultUnlock": 0,
+    "desc": 1908355396,
+    "unlockavatar_txt": 1936592890
+  },
+  "99": {
+    "sort": 1000,
+    "res": "$UI_PlayerHead_Homeland.png",
+    "name": 1746192548,
+    "defaultUnlock": 0,
+    "desc": 1327899613,
+    "unlockavatar_txt": 2022280269
+  },
+  "5": {
+    "sort": 5,
+    "res": "$UI_PetHead_1005503.png",
+    "name": 1741713366,
+    "defaultUnlock": 0,
+    "desc": 1231255571,
+    "unlockavatar_txt": 2054308972
+  },
+  "6": {
+    "sort": 6,
+    "res": "$UI_PetHead_1001202.png",
+    "name": 1644758312,
+    "defaultUnlock": 0,
+    "desc": 1101290919,
+    "unlockavatar_txt": 1435426107
+  },
+  "107": {
+    "sort": 1008,
+    "res": "$UI_PlayerHead_TikTok.png",
+    "name": 1684721567,
+    "defaultUnlock": 0,
+    "desc": 1727190388,
+    "unlockavatar_txt": 2035001020
+  },
+  "98": {
+    "sort": 30,
+    "res": "$UI_PetHead_1003305.png",
+    "name": 2078523593,
+    "defaultUnlock": 0,
+    "desc": 1411637036,
+    "unlockavatar_txt": 1956465540
+  },
+  "7": {
+    "sort": 7,
+    "res": "$UI_PetHead_1017402.png",
+    "name": 2091997299,
+    "defaultUnlock": 0,
+    "desc": 1734878153,
+    "unlockavatar_txt": 1697929036
+  },
+  "106": {
+    "sort": 1007,
+    "res": "$UI_PlayerHead_Home.png",
+    "name": 2091133121,
+    "defaultUnlock": 0,
+    "desc": 1193052116,
+    "unlockavatar_txt": 1551371107
+  },
+  "8": {
+    "sort": 8,
+    "res": "$UI_PetHead_1018502.png",
+    "name": 1237878020,
+    "defaultUnlock": 0,
+    "desc": 2033631936,
+    "unlockavatar_txt": 1493460031
+  },
+  "100": {
+    "sort": 1001,
+    "res": "$UI_PlayerHead_HolographicTraining.png",
+    "name": 1856252686,
+    "defaultUnlock": 0,
+    "desc": 1209780665,
+    "unlockavatar_txt": 1445913401
+  },
+  "9": {
+    "sort": 9,
+    "res": "$UI_PetHead_1019402.png",
+    "name": 1923709449,
+    "defaultUnlock": 0,
+    "desc": 1219047923,
+    "unlockavatar_txt": 1991185958
+  },
+  "105": {
+    "sort": 1006,
+    "res": "$UI_PlayerHead_Points.png",
+    "name": 1336995819,
+    "defaultUnlock": 0,
+    "desc": 1529939811,
+    "unlockavatar_txt": 1617952627
+  },
+  "13": {
+    "sort": 13,
+    "res": "$UI_PetHead_1013301.png",
+    "name": 1134585454,
+    "defaultUnlock": 0,
+    "desc": 1614828840,
+    "unlockavatar_txt": 1304888535
+  },
+  "11": {
+    "sort": 11,
+    "res": "$UI_PetHead_1002503.png",
+    "name": 1635832641,
+    "defaultUnlock": 0,
+    "desc": 1177961731,
+    "unlockavatar_txt": 2105004408
+  },
+  "20": {
+    "sort": 19,
+    "res": "$UI_PetHead_1020302.png",
+    "name": 1628003672,
+    "defaultUnlock": 0,
+    "desc": 1829833208,
+    "unlockavatar_txt": 1851944594
+  },
+  "21": {
+    "sort": 20,
+    "res": "$UI_PetHead_1022201.png",
+    "name": 1601100534,
+    "defaultUnlock": 0,
+    "desc": 1201060549,
+    "unlockavatar_txt": 1186941837
+  },
+  "22": {
+    "sort": 21,
+    "res": "$UI_PetHead_10233.png",
+    "name": 2087538907,
+    "defaultUnlock": 0,
+    "desc": 1144360817,
+    "unlockavatar_txt": 2109489527
+  },
+  "23": {
+    "sort": 22,
+    "res": "$UI_PetHead_1026204.png",
+    "name": 1981470990,
+    "defaultUnlock": 0,
+    "desc": 1562023857,
+    "unlockavatar_txt": 1583845779
+  },
+  "24": {
+    "sort": 23,
+    "res": "$UI_PetHead_1028301.png",
+    "name": 1398224340,
+    "defaultUnlock": 0,
+    "desc": 1354089423,
+    "unlockavatar_txt": 1153973788
+  },
+  "14": {
+    "sort": 14,
+    "res": "$UI_PetHead_1003202.png",
+    "name": 1273586611,
+    "defaultUnlock": 0,
+    "desc": 1245688434,
+    "unlockavatar_txt": 1284941040
+  },
+  "10": {
+    "sort": 10,
+    "res": "$UI_PetHead_1002603.png",
+    "name": 1394744195,
+    "defaultUnlock": 0,
+    "desc": 1969858179,
+    "unlockavatar_txt": 1261719738
+  },
+  "17": {
+    "sort": 16,
+    "res": "$UI_PetHead_1021104.png",
+    "name": 1292061090,
+    "defaultUnlock": 0,
+    "desc": 1409799158,
+    "unlockavatar_txt": 1590295804
+  },
+  "25": {
+    "sort": 24,
+    "res": "$UI_PetHead_1029301.png",
+    "name": 1308523051,
+    "defaultUnlock": 0,
+    "desc": 1206572818,
+    "unlockavatar_txt": 1908063600
+  },
+  "26": {
+    "sort": 25,
+    "res": "$UI_PetHead_1032302.png",
+    "name": 1453047353,
+    "defaultUnlock": 0,
+    "desc": 1260825266,
+    "unlockavatar_txt": 1545634927
+  },
+  "27": {
+    "sort": 26,
+    "res": "$UI_PetHead_1032402.png",
+    "name": 1580573058,
+    "defaultUnlock": 0,
+    "desc": 1192627516,
+    "unlockavatar_txt": 1083052697
+  },
+  "28": {
+    "sort": 27,
+    "res": "$UI_PetHead_1045302.png",
+    "name": 1774773209,
+    "defaultUnlock": 0,
+    "desc": 1698403340,
+    "unlockavatar_txt": 1341556407
+  },
+  "29": {
+    "sort": 28,
+    "res": "$UI_PetHead_1050301.png",
+    "name": 1706813348,
+    "defaultUnlock": 0,
+    "desc": 1844498891,
+    "unlockavatar_txt": 1698288311
+  },
+  "30": {
+    "sort": 29,
+    "res": "$UI_PetHead_6999301.png",
+    "name": 1543382947,
+    "defaultUnlock": 0,
+    "desc": 1838986870,
+    "unlockavatar_txt": 1394020893
+  },
+  "18": {
+    "sort": 17,
+    "res": "$UI_PetHead_1021204.png",
+    "name": 2129209458,
+    "defaultUnlock": 0,
+    "desc": 2016026732,
+    "unlockavatar_txt": 1500928496
+  },
+  "19": {
+    "sort": 18,
+    "res": "$UI_PetHead_10213.png",
+    "name": 1981260689,
+    "defaultUnlock": 0,
+    "desc": 1392740215,
+    "unlockavatar_txt": 1351932570
+  },
+  "16": {
+    "sort": 15,
+    "res": "$UI_PetHead_1014302.png",
+    "name": 1077063019,
+    "defaultUnlock": 0,
+    "desc": 1577842073,
+    "unlockavatar_txt": 1530364635
+  },
+  "12": {
+    "sort": 12,
+    "res": "$UI_PetHead_1004303.png",
+    "name": 1773917118,
+    "defaultUnlock": 0,
+    "desc": 1370694412,
+    "unlockavatar_txt": 1814841375
+  }
+}

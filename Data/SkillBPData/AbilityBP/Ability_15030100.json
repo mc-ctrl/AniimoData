@@ -1,0 +1,103 @@
+{
+  "BPName": "ability_15030100",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800340,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "850c7902-5ac5-4d5c-8bdb-c28c4a007147",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "28": {
+      "UID": "d3e2fe83-87f4-4999-9abf-f90a5aabde28",
+      "conditionIds": [
+        27,
+        29,
+        33
+      ],
+      "name": "conditionOr",
+      "NodeID": 28
+    },
+    "29": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "cb6fb5ac-d1d0-4e27-ad5e-064da45c47bb",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "27": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "c78350db-1bd9-46d9-a62f-42f141db56bf",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "33": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "91365979-38f7-4c0a-b08f-ed5ba7237835",
+      "NodeID": 33,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "6e71582f-bf9b-4e92-abaf-b02effd3ca6f",
+        "target": "OWNER",
+        "NodeID": 32
+      }
+    },
+    "7": {
+      "timelineId": 15030100001,
+      "name": "setCombatActionTimeline",
+      "UID": "b61e5f0f-640e-46ba-ab27-a28c45acaa0f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "26": {
+      "timelineId": 15030104001,
+      "name": "setCombatActionTimeline",
+      "UID": "f6ce9c65-3880-45e9-95ee-0786034fb7a9",
+      "target": "CASTER",
+      "NodeID": 26
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrazyClaw01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Skill_CrazyClaw2_R",
+    "Eff_Hit_Rock_Slash",
+    "Eff_Parmon_10503_Skill_CrazyClaw2_L"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    15030101,
+    15030102,
+    15030103,
+    15030104,
+    15030105,
+    15030106,
+    15030107
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

@@ -1,0 +1,54 @@
+{
+  "BPName": "ability_10430310",
+  "NodeID": 1,
+  "UID": "6e2020e3-dce2-43c2-b46a-8dc3969581e8",
+  "abilityParamId": 10300020,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10430310001,
+      "name": "setCombatActionTimeline",
+      "UID": "51fde7c8-b480-44d3-93b3-174f00d9d637",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "70": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5c7a7821-67d0-45ff-977f-6c527d7c1b47",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10043_skill_longbreath_water_loop",
+      "NodeID": 70
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 8,
+  "preloadAnims": [
+    "Skill_ShortBreath",
+    "Skill_LongBreath_Loop",
+    "Skill_LongBreath_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_AttackSpecial_length",
+    "Eff_Hit_Water_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "searchTargetRangeDown": 2,
+  "onAbilityEndIds": [
+    70
+  ],
+  "onlyHasActOnTargets": true,
+  "isAim": true,
+  "refBones": [
+    "Root"
+  ]
+}

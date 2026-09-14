@@ -1,0 +1,98 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "44acdba6-ceb4-4573-84c9-3a93ab315e13",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 22
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 23,
+      "UID": "e832d2bb-4b62-4484-9e3e-58a1aae23cf9"
+    },
+    "24": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "8585d1f5-b9b8-448d-aeac-43e4a07966e0",
+      "effectId": "Eff_Avatar_Girl_Skill_FirstAid",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "6": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.5
+      },
+      "name": "calcResult",
+      "UID": "6ca6c2c6-3292-4a4b-8e01-038c07fcd042",
+      "target": "CURPET",
+      "NodeID": 6
+    },
+    "8": {
+      "action": {
+        "actionIds": [
+          6,
+          24,
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.67,
+      "NodeID": 8,
+      "UID": "626948d5-ce78-494e-997f-8f8f9d7c5fd2"
+    },
+    "17": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "827db7ec-b091-4ff7-918e-3eb4b3179c70",
+      "target": "OWNER",
+      "NodeID": 17,
+      "animId": "Skill_FirstAid"
+    },
+    "19": {
+      "UID": "2b2f691d-eaa8-46db-98a6-1f1caa61eda2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20,
+          17
+        ]
+      },
+      "NodeID": 19
+    },
+    "20": {
+      "lockTarget": "CURPET",
+      "name": "lockTarget",
+      "UID": "ebf4ac98-f969-4105-93f2-2771a96ecdb8",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "28": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "c5ce69b4-0516-4052-9e43-7d2ef9164385",
+      "isAbilityEndRemove": false,
+      "soundId": "avatar_girl_skill_firstaid",
+      "NodeID": 28
+    }
+  },
+  "BPName": "ability_9200003",
+  "NodeID": 10,
+  "UID": "9b20e0a4-d102-44f8-ad9c-18899e79e983",
+  "eventIds": [
+    19,
+    8,
+    23
+  ],
+  "layer": "Base",
+  "length": 1.667
+}

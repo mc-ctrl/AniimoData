@@ -1,0 +1,22 @@
+{
+  "steps": [
+    {
+      "delay": 0,
+      "params": {
+        "excludeFuncTypes": "{10410}",
+        "uid": 0
+      },
+      "mid": "unlockAllMapData",
+      "name": "解锁当前地图浓雾+薄雾，解锁所有标记(永久)"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "uid": 0
+      },
+      "mid": "lowLevelPlayer",
+      "name": "设定初级玩家"
+    }
+  ],
+  "name": "初级玩家解锁地图和系统"
+}

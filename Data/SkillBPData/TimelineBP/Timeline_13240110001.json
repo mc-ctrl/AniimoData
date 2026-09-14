@@ -1,0 +1,131 @@
+{
+  "nodeMap": {
+    "22": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 2132421,
+      "NodeID": 22,
+      "UID": "b61a684f-6644-4412-97be-c15c2b5ed2eb",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "offsetTime": 0.1,
+      "name": "playAnimation",
+      "UID": "c9537920-e2c5-497f-910f-560abe02ed67",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_ThornsField"
+    },
+    "16": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "23": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6a4cb3a2-e184-42ac-9ba9-4496ee1c18b3",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsBless_01_liuli",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "13": {
+      "UID": "1ef0c407-9f75-4507-a9fe-80aa704d3e0a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "18": {
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "36ab9fc9-f701-4492-a5fa-ae5952574f55",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_ThornsField_01",
+      "NodeID": 19
+    },
+    "11": {
+      "UID": "b27c743e-86b0-4ddd-a437-8b89bb2ac495",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 14,
+      "UID": "1df632f8-626a-4fa6-817b-4c4da36f0386"
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          22,
+          19,
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 21,
+      "UID": "966c0da1-f0c7-4019-9d11-8aac43f9e4ee"
+    }
+  },
+  "BPName": "ability_13240110",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    11,
+    14,
+    18,
+    21
+  ],
+  "layer": "Base",
+  "length": 3.29
+}

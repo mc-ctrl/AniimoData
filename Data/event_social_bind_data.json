@@ -1,0 +1,176 @@
+[
+  {
+    "languageShow": [
+      0
+    ],
+    "societyDesc": 1932733063,
+    "societyIcon": "$UI_Icon_GameBind_WeCom.png",
+    "typeName": "WeCom",
+    "bindAward": 100234,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0
+    ],
+    "societyDesc": 1800777600,
+    "societyIcon": "$UI_Icon_GameBind_WxMini.png",
+    "typeName": "MiniProgram",
+    "bindAward": 100235,
+    "isOverseas": 1
+  },
+  {
+    "languageShow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "societyDesc": 2128116017,
+    "societyIcon": "$UI_Icon_GameBind_Email.png",
+    "typeName": "email",
+    "bindAward": 100236,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "societyDesc": 1720596410,
+    "societyIcon": "$UI_Icon_GameBind_Google.png",
+    "typeName": "google",
+    "bindAward": 100237,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "societyDesc": 1575988008,
+    "societyIcon": "$UI_Icon_GameBind_Facebook.png",
+    "typeName": "facebook",
+    "bindAward": 100237,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "societyDesc": 1250004755,
+    "societyIcon": "$UI_Icon_GameBind_Discord.png",
+    "typeName": "discord",
+    "bindAward": 100237,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "societyDesc": 1678190815,
+    "societyIcon": "$UI_Icon_GameBind_TikTok.png",
+    "typeName": "tiktok",
+    "bindAward": 100237,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "societyDesc": 1928106355,
+    "societyIcon": "$UI_Icon_GameBind_VK.png",
+    "typeName": "vk",
+    "bindAward": 100237,
+    "isOverseas": 2
+  },
+  {
+    "languageShow": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "societyDesc": 1721610553,
+    "societyIcon": "$UI_Icon_GameBind_LINE.png",
+    "typeName": "line",
+    "bindAward": 100237,
+    "isOverseas": 2
+  }
+]

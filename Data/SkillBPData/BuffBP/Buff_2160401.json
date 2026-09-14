@@ -1,0 +1,96 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2160401",
+  "calcInfoByLuaConfig": {
+    "id": 2160401,
+    "taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffThinkIds": [
+    7
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "14": {
+      "name": "stopSoundStr",
+      "UID": "f20a29ea-c990-4775-84a7-6ae62c6576c8",
+      "soundId": "SFX_Combat_10604_Skill_Stump_Loop",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "4": {
+      "delay": 0.7,
+      "interval": 1,
+      "UID": "8d5660da-6746-4c82-96ae-7c48b866773a",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3412468c-c8fa-42e5-8269-55f1b3939d1d",
+      "effectId": "Eff_Parmon_10604_Skill_Stump_Loop",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91604011,
+      "NodeID": 6,
+      "UID": "df91a193-731c-4b78-8bbf-50fea12fb727",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "545358cc-b2cb-48ec-9eeb-48ea43f8a218",
+      "effectId": "Eff_Parmon_10604_Skill_Stump_Loop",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b3f242e1-59a5-4197-9700-38a0cd451515",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10604_Skill_Stump_Loop",
+      "NodeID": 13
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "8d3b157f-0000-474b-afb5-c93fba706994",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "12": {
+      "name": "isInCombat",
+      "UID": "9eb50bed-e10b-41b0-ad8e-c18b6dcc6184",
+      "target": "OWNER",
+      "NodeID": 12,
+      "not": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    14
+  ],
+  "onBuffStartIds": [
+    4,
+    9,
+    13
+  ]
+}

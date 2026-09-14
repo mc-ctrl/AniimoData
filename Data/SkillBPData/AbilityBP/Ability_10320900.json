@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_10320900",
+  "NodeID": 1,
+  "UID": "786b95d2-2189-4e65-bbc1-6a1be001a84a",
+  "abilityParamId": 9400062,
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10320900001,
+      "name": "setCombatActionTimeline",
+      "UID": "895b702d-566c-408a-8574-96fd6b4dbeef",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ShadowBuff"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10032_Skill_ShadowHide",
+    "Eff_Parmon_10032_GhostFlame"
+  ],
+  "searchRelation": 2,
+  "name": "火狩猎时刻",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "subAbilityIds": {},
+  "searchTargetRangeDown": 0
+}

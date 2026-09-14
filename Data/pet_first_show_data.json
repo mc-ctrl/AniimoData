@@ -1,0 +1,2633 @@
+{
+  "1005503": {
+    "featureDescription": 1099687792,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1013102": {
+    "featureDescription": 1098832410,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1013202": {
+    "featureDescription": 1802341754,
+    "scaleFT": 0.92,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1013301": {
+    "featureDescription": 2047476700,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1013302": {
+    "featureDescription": 1823077701,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1014301": {
+    "featureDescription": 2044820152,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1014302": {
+    "featureDescription": 1454495506,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1016202": {
+    "featureDescription": 1161479447,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1016203": {
+    "featureDescription": 1973270255,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017201": {
+    "featureDescription": 1463040697,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017301": {
+    "featureDescription": 1658628163,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017401": {
+    "featureDescription": 1654436681,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018101": {
+    "featureDescription": 1266537937,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.45,
+      0
+    ]
+  },
+  "1018103": {
+    "featureDescription": 1667466413,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.45,
+      0
+    ]
+  },
+  "1018401": {
+    "featureDescription": 1217849824,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018403": {
+    "featureDescription": 1689186421,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018501": {
+    "featureDescription": 1166719818,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.4,
+      0
+    ]
+  },
+  "1018502": {
+    "featureDescription": 1852446631,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.4,
+      0
+    ]
+  },
+  "1018503": {
+    "featureDescription": 1555281969,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.4,
+      0
+    ]
+  },
+  "1018701": {
+    "featureDescription": 2027179584,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018703": {
+    "featureDescription": 1715562034,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1035100": {
+    "featureDescription": 1877809298,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.45,
+      0
+    ]
+  },
+  "1035200": {
+    "featureDescription": 1302196989,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1014100": {
+    "featureDescription": 1597804795,
+    "scaleFT": 1.3,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.3,
+      0
+    ]
+  },
+  "1013100": {
+    "featureDescription": 1771199812,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1013200": {
+    "featureDescription": 1711459129,
+    "scaleFT": 0.92,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1013300": {
+    "featureDescription": 1216395050,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1020101": {
+    "featureDescription": 1389302974,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1020301": {
+    "featureDescription": 1532978248,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1020302": {
+    "featureDescription": 1248934304,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1020701": {
+    "featureDescription": 1157437912,
+    "scaleFT": 0.8,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004300": {
+    "featureDescription": 1535523953,
+    "scaleFT": 0.83,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1021102": {
+    "featureDescription": 2000819261,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0.08,
+      0
+    ]
+  },
+  "1021103": {
+    "featureDescription": 1966733781,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0.08,
+      0
+    ]
+  },
+  "1021104": {
+    "featureDescription": 2020205710,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0.08,
+      0
+    ]
+  },
+  "1021105": {
+    "featureDescription": 1660924556,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0.08,
+      0
+    ]
+  },
+  "1021106": {
+    "featureDescription": 1316037630,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0.08,
+      0
+    ]
+  },
+  "1021201": {
+    "featureDescription": 1775439364,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1021202": {
+    "featureDescription": 1421644033,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1021203": {
+    "featureDescription": 1644475324,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1021204": {
+    "featureDescription": 1399906741,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1021205": {
+    "featureDescription": 1215046653,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1021206": {
+    "featureDescription": 1265322590,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1016200": {
+    "featureDescription": 1717081901,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1022102": {
+    "featureDescription": 1815193351,
+    "scaleFT": 1.16,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1028100": {
+    "featureDescription": 1745420326,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1022201": {
+    "featureDescription": 1557493756,
+    "scaleFT": 0.82,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1022202": {
+    "featureDescription": 1969291940,
+    "scaleFT": 0.82,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018100": {
+    "featureDescription": 1395994239,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.45,
+      0
+    ]
+  },
+  "1045302": {
+    "featureDescription": 1852655927,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018400": {
+    "featureDescription": 1834122249,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018500": {
+    "featureDescription": 1444322599,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.4,
+      0
+    ]
+  },
+  "1023103": {
+    "featureDescription": 1549766380,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.36,
+      0
+    ]
+  },
+  "1005500": {
+    "featureDescription": 1109693451,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1023202": {
+    "featureDescription": 1125579345,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.25,
+      0
+    ]
+  },
+  "1023203": {
+    "featureDescription": 2044650163,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.25,
+      0
+    ]
+  },
+  "1051200": {
+    "featureDescription": 1124638806,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026101": {
+    "featureDescription": 1547995579,
+    "scaleFT": 1.25,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026200": {
+    "featureDescription": 1351039684,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1047103": {
+    "featureDescription": 1967804720,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1020700": {
+    "featureDescription": 1381745028,
+    "scaleFT": 0.8,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1020100": {
+    "featureDescription": 1666030941,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026201": {
+    "featureDescription": 1736078514,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1002700": {
+    "featureDescription": 1108404195,
+    "scaleFT": 0.88,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047503": {
+    "featureDescription": 1159526444,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026204": {
+    "featureDescription": 1586188193,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1002200": {
+    "featureDescription": 2129474747,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "element": 6,
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002400": {
+    "featureDescription": 1791196743,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004101": {
+    "featureDescription": 1447190327,
+    "scaleFT": 1.16,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017100": {
+    "featureDescription": 1294608122,
+    "scaleFT": 1.15,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1045400": {
+    "featureDescription": 1153769386,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005200": {
+    "featureDescription": 1159377723,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017101": {
+    "featureDescription": 1155247454,
+    "scaleFT": 1.15,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1016102": {
+    "featureDescription": 1911119798,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1044100": {
+    "featureDescription": 1549185269,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002100": {
+    "featureDescription": 1661208131,
+    "scaleFT": 1.05,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004301": {
+    "featureDescription": 1417893553,
+    "scaleFT": 0.83,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1023100": {
+    "featureDescription": 1559628843,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.36,
+      0
+    ]
+  },
+  "1017300": {
+    "featureDescription": 1111955937,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1019100": {
+    "featureDescription": 1764233089,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.1,
+      0
+    ]
+  },
+  "1020300": {
+    "featureDescription": 1078362870,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1019400": {
+    "featureDescription": 1100797487,
+    "scaleFT": 0.96,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1032402": {
+    "featureDescription": 1894115642,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1036300": {
+    "featureDescription": 1157166102,
+    "scaleFT": 0.64,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1021100": {
+    "featureDescription": 1829867441,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0.08,
+      0
+    ]
+  },
+  "1033102": {
+    "featureDescription": 1496568284,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1033103": {
+    "featureDescription": 1754260961,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1021200": {
+    "featureDescription": 1651011157,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1021300": {
+    "featureDescription": 1218393702,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1004500": {
+    "featureDescription": 1588586899,
+    "scaleFT": 0.88,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017400": {
+    "featureDescription": 1274115010,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017200": {
+    "featureDescription": 1941568579,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1017402": {
+    "featureDescription": 1618015238,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1018700": {
+    "featureDescription": 1999894561,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "6999301": {
+    "featureDescription": 1284822895,
+    "scaleFT": 0.5,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1032300": {
+    "featureDescription": 1711621163,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "6999300": {
+    "featureDescription": 1355633292,
+    "scaleFT": 0.5,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1048100": {
+    "featureDescription": 2035150699,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1048300": {
+    "featureDescription": 1681344766,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1050100": {
+    "featureDescription": 2108922397,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1050300": {
+    "featureDescription": 1467082566,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1051100": {
+    "featureDescription": 1861900320,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1050301": {
+    "featureDescription": 2139166297,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047502": {
+    "featureDescription": 1641682694,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047501": {
+    "featureDescription": 1248947678,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047500": {
+    "featureDescription": 2042770318,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1044300": {
+    "featureDescription": 1288390487,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047102": {
+    "featureDescription": 1529418581,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047101": {
+    "featureDescription": 1884639252,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047100": {
+    "featureDescription": 1330606102,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1045401": {
+    "featureDescription": 1074983754,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1045301": {
+    "featureDescription": 2019790472,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1045300": {
+    "featureDescription": 1183921746,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1045101": {
+    "featureDescription": 1924838569,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1045100": {
+    "featureDescription": 1863811844,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1022100": {
+    "featureDescription": 1383762318,
+    "scaleFT": 1.16,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1022200": {
+    "featureDescription": 1205756627,
+    "scaleFT": 0.82,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1047400": {
+    "featureDescription": 1891765621,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1023300": {
+    "featureDescription": 1677242617,
+    "scaleFT": 0.86,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026205": {
+    "featureDescription": 1694783416,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1037300": {
+    "featureDescription": 1815359430,
+    "scaleFT": 0.74,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1033303": {
+    "featureDescription": 1966439318,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1033302": {
+    "featureDescription": 1132694001,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1033301": {
+    "featureDescription": 1714405039,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1033300": {
+    "featureDescription": 1670210939,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1033101": {
+    "featureDescription": 1852053791,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1033100": {
+    "featureDescription": 1309468383,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1032400": {
+    "featureDescription": 1295779709,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1012200": {
+    "featureDescription": 1743331618,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1032303": {
+    "featureDescription": 1408610765,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1032302": {
+    "featureDescription": 1902210193,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1032301": {
+    "featureDescription": 1885098310,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1032103": {
+    "featureDescription": 2032269951,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1032100": {
+    "featureDescription": 2106859792,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1029301": {
+    "featureDescription": 1522574513,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1016100": {
+    "featureDescription": 1316535169,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1029100": {
+    "featureDescription": 1145386178,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1028500": {
+    "featureDescription": 1474605021,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1028400": {
+    "featureDescription": 1478503296,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1028301": {
+    "featureDescription": 1932247552,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1028300": {
+    "featureDescription": 1374727004,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1028200": {
+    "featureDescription": 2145057384,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026300": {
+    "featureDescription": 1488508224,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1043100": {
+    "featureDescription": 1969408296,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026202": {
+    "featureDescription": 1163155084,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1026105": {
+    "featureDescription": 1943582470,
+    "scaleFT": 1.25,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026102": {
+    "featureDescription": 1773901276,
+    "scaleFT": 1.25,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1026100": {
+    "featureDescription": 1965986085,
+    "scaleFT": 1.25,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1043300": {
+    "featureDescription": 1674570575,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1023201": {
+    "featureDescription": 1775148366,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.25,
+      0
+    ]
+  },
+  "1023200": {
+    "featureDescription": 1628893044,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.25,
+      0
+    ]
+  },
+  "1023102": {
+    "featureDescription": 1576054639,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.36,
+      0
+    ]
+  },
+  "1023101": {
+    "featureDescription": 1818680739,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.36,
+      0
+    ]
+  },
+  "1016300": {
+    "featureDescription": 2099459339,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0.2,
+      0.2
+    ]
+  },
+  "1001100": {
+    "featureDescription": 1927745546,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "element": 6,
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004100": {
+    "featureDescription": 1771393843,
+    "scaleFT": 1.16,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1001200": {
+    "featureDescription": 1255229400,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002600": {
+    "featureDescription": 1153241376,
+    "scaleFT": 0.96,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002500": {
+    "featureDescription": 1487430538,
+    "scaleFT": 0.83,
+    "animation": [
+      "IdleSpecial"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003100": {
+    "featureDescription": 1844097969,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003200": {
+    "featureDescription": 2076091435,
+    "scaleFT": 0.81,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003300": {
+    "featureDescription": 1519295483,
+    "scaleFT": 0.81,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1029300": {
+    "featureDescription": 1705305160,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1001201": {
+    "featureDescription": 1649321040,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1001202": {
+    "featureDescription": 1396476653,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1014200": {
+    "featureDescription": 1947981245,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002101": {
+    "featureDescription": 1343604876,
+    "scaleFT": 1.05,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002102": {
+    "featureDescription": 2047040988,
+    "scaleFT": 1.05,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1019401": {
+    "featureDescription": 1337334805,
+    "scaleFT": 0.96,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1002201": {
+    "featureDescription": 1086840049,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "element": 6,
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1016101": {
+    "featureDescription": 1384056169,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1016103": {
+    "featureDescription": 1627936479,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1016201": {
+    "featureDescription": 1666734526,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002300": {
+    "featureDescription": 1495054220,
+    "scaleFT": 0.86,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002301": {
+    "featureDescription": 2053918667,
+    "scaleFT": 0.86,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002401": {
+    "featureDescription": 1764117137,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002503": {
+    "featureDescription": 2119558610,
+    "scaleFT": 0.83,
+    "animation": [
+      "IdleSpecial"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1019402": {
+    "featureDescription": 2072011624,
+    "scaleFT": 0.96,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1004102": {
+    "featureDescription": 1144260464,
+    "scaleFT": 1.16,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005300": {
+    "featureDescription": 2063130304,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002601": {
+    "featureDescription": 1863918046,
+    "scaleFT": 0.96,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002602": {
+    "featureDescription": 1882533745,
+    "scaleFT": 0.96,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002603": {
+    "featureDescription": 1366219943,
+    "scaleFT": 0.96,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002701": {
+    "featureDescription": 2123075587,
+    "scaleFT": 0.88,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1002702": {
+    "featureDescription": 1775093447,
+    "scaleFT": 0.88,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004200": {
+    "featureDescription": 1312847284,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003101": {
+    "featureDescription": 1870766444,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003103": {
+    "featureDescription": 1717579739,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005100": {
+    "featureDescription": 1713130942,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003201": {
+    "featureDescription": 1266969571,
+    "scaleFT": 0.81,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003202": {
+    "featureDescription": 1837244068,
+    "scaleFT": 0.81,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003203": {
+    "featureDescription": 1230854293,
+    "scaleFT": 0.81,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1014300": {
+    "featureDescription": 1248672681,
+    "scaleFT": 0.95,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  "1019200": {
+    "featureDescription": 1640639722,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1003305": {
+    "featureDescription": 1607722782,
+    "scaleFT": 0.81,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004201": {
+    "featureDescription": 1468531837,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004202": {
+    "featureDescription": 2096677907,
+    "scaleFT": 1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004302": {
+    "featureDescription": 1077620345,
+    "scaleFT": 0.83,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1004303": {
+    "featureDescription": 1321311917,
+    "scaleFT": 0.83,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005101": {
+    "featureDescription": 1537303772,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005104": {
+    "featureDescription": 1424856070,
+    "scaleFT": 1.1,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005201": {
+    "featureDescription": 1076005995,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005204": {
+    "featureDescription": 2110245470,
+    "scaleFT": 0.9,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005301": {
+    "featureDescription": 1154129669,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005302": {
+    "featureDescription": 1935568246,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005303": {
+    "featureDescription": 2126927237,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1005304": {
+    "featureDescription": 2142686519,
+    "scaleFT": 0.93,
+    "animation": [
+      "Behav_Happy"
+    ],
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1021101": {
+    "featureDescription": 2139307617,
+    "scaleFT": 1.2,
+    "animation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "offset": [
+      0,
+      0.08,
+      0
+    ]
+  }
+}

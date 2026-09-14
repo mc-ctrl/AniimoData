@@ -1,0 +1,116 @@
+{
+  "nodeMap": {
+    "53": {
+      "timelineId": 12851000003,
+      "name": "jumpToNextTimeline",
+      "UID": "2ec94869-c856-4909-8185-7c7dc2048f0b",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "46": {
+      "name": "isInBurrow",
+      "UID": "3bcdc180-4f2b-4340-b60b-16627e4c4432",
+      "target": "OWNER",
+      "NodeID": 46,
+      "not": false
+    },
+    "8": {
+      "timelineId": 12851000001,
+      "name": "jumpToNextTimeline",
+      "UID": "894fe0f2-20a8-4d8a-9b4b-98b807438f0d",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "77": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "c0c37bf2-0941-4963-a397-1f4bb375171c",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        46
+      ],
+      "UID": "9d55a562-2fb6-441c-be05-52f20028171a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        53
+      ],
+      "NodeID": 9
+    },
+    "78": {
+      "actionIds": [
+        80
+      ],
+      "conditionActionIds": [
+        77
+      ],
+      "UID": "289da90d-2738-46d8-8107-fde0281e66f3",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        81
+      ],
+      "NodeID": 78
+    },
+    "81": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "bcdcd035-2d1b-4af2-8079-b3ddb88a668e",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 81
+    },
+    "79": {
+      "action": {
+        "actionIds": [
+          78
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 79,
+      "UID": "c5db14b4-1ae7-4bce-945e-da101f2d3594"
+    },
+    "10": {
+      "UID": "56f547f2-2bf8-4089-8367-b43dab6c8516",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "80": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "74884040-36a8-4e79-b30f-bfdd9828d6b6",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_12851000",
+  "NodeID": 12,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    10,
+    79
+  ],
+  "layer": "Base",
+  "length": 2.117
+}

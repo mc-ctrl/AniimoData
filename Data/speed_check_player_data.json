@@ -1,0 +1,82 @@
+{
+  "NORMALATTACK": {
+    "speedLimit": 30
+  },
+  "PATHFINDING": {
+    "speedLimit": 12
+  },
+  "RUN": {
+    "speedRatioAttrs": [
+      "speed_ratio_run_v"
+    ],
+    "speedLimit": 8
+  },
+  "RUNSTOP": {
+    "speedRatioAttrs": [
+      "speed_ratio_run_v"
+    ],
+    "speedLimit": 8
+  },
+  "SKATEBOARD": {
+    "speedLimit": 12
+  },
+  "SKILL": {
+    "speedLimit": 30
+  },
+  "SKILLMOTION": {
+    "speedLimit": 30
+  },
+  "SPRINT": {
+    "speedRatioAttrs": [
+      "speed_ratio_sprint_v"
+    ],
+    "speedLimit": 12
+  },
+  "SPRINTSTOP": {
+    "speedRatioAttrs": [
+      "speed_ratio_sprint_v"
+    ],
+    "speedLimit": 12
+  },
+  "SPRINTTURN": {
+    "speedRatioAttrs": [
+      "speed_ratio_sprint_v"
+    ],
+    "speedLimit": 12
+  },
+  "WALKINGATTACK": {
+    "speedLimit": 8
+  },
+  "AIRING": {
+    "speedRatioAttrs": [
+      "speed_ratio_run_v",
+      "speed_ratio_sprint_v"
+    ],
+    "speedLimit": 12
+  },
+  "DASH": {
+    "speedLimit": 30
+  },
+  "DASHSTOP": {
+    "speedLimit": 12
+  },
+  "DEFAULT": {
+    "speedLimit": 9
+  },
+  "GLIDING": {
+    "speedLimit": 12
+  },
+  "IDLE": {
+    "speedLimit": 12
+  },
+  "LAND": {
+    "speedRatioAttrs": [
+      "speed_ratio_run_v",
+      "speed_ratio_sprint_v"
+    ],
+    "speedLimit": 12
+  },
+  "MOUNTING": {
+    "speedLimit": 30
+  }
+}

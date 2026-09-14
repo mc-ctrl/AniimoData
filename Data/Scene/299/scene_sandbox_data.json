@@ -1,0 +1,52 @@
+{
+  "90948183": {
+    "sightLevel": 128,
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019876,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "全局_[副本] 副本关卡_所有机制怪测试",
+    "sightLevelType": 128,
+    "spawners": [
+      90948192,
+      90948194,
+      90948196,
+      90948198,
+      90948200,
+      90948204,
+      90948206,
+      90948208,
+      90948211
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      25.9,
+      0.05,
+      84.79
+    ],
+    "poiType": 1002,
+    "owner": "蔡龙辉",
+    "forceSync": false,
+    "id": 90948183,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  }
+}

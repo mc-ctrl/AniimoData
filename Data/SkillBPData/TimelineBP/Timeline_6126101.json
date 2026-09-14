@@ -1,0 +1,100 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "speed": 0.25,
+      "name": "playEffectStr",
+      "UID": "04ffac92-381f-47fb-b904-482be6076456",
+      "effectId": "Eff_Parmon_10261_Skill_Throw",
+      "scale": 2.5,
+      "NodeID": 3
+    },
+    "14": {
+      "relation": 2,
+      "name": "addAOITrap",
+      "UID": "75823e8d-267b-4cf9-908d-8ffc089999f6",
+      "radius": 2,
+      "NodeID": 14,
+      "enterActionIds": [
+        18,
+        17,
+        11
+      ]
+    },
+    "10": {
+      "UID": "3ca68594-fc5c-4015-8357-55df71dc71f1",
+      "name": "destroyEntity",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "74d16cdf-a6aa-4079-9faf-0704803bab1e",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        17,
+        11
+      ],
+      "NodeID": 15
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "2ffba78b-d906-4d6a-9bde-d683805c7fff",
+      "effectId": "Eff_Parmon_10261_Skill_Throw",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "UID": "ef07e016-845a-41d2-8da3-42bd920ede78",
+      "name": "callClientAction",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17
+    },
+    "18": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 6126103,
+      "NodeID": 18,
+      "UID": "913b2658-95dc-4123-a162-7fd1ee38e835",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "11": {
+      "key": "1",
+      "duration": 0.1,
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11,
+      "UID": "0bb459a8-3bdb-4987-a358-6e7cfe0367dc",
+      "name": "addTimer"
+    },
+    "5": {
+      "UID": "f8807402-67cb-4e34-908c-ad225a57d8f8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          14,
+          15
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "timeline_6126101",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 60
+}

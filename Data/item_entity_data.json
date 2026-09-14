@@ -1,0 +1,53 @@
+{
+  "130003": {
+    "prefabResID": "Item_Catch_Ball_2",
+    "itemName": "蜜瓜",
+    "ttl": 30,
+    "entityType": 13,
+    "bait": 3
+  },
+  "130002": {
+    "prefabResID": "Item_Catch_Ball_2",
+    "itemName": "柠檬",
+    "ttl": 30,
+    "entityType": 13,
+    "bait": 2
+  },
+  "120001": {
+    "environmentMatch": [
+      0
+    ],
+    "trap": 1,
+    "itemName": "陷阱球•红",
+    "ttl": 30,
+    "entityType": 12,
+    "prefabResID": "Item_Catch_Ball_3 Variant"
+  },
+  "120002": {
+    "environmentMatch": [
+      0.001
+    ],
+    "trap": 1,
+    "itemName": "陷阱球•绿",
+    "ttl": 30,
+    "entityType": 12,
+    "prefabResID": "Item_Catch_Ball_3 Variant_green"
+  },
+  "120003": {
+    "environmentMatch": {
+      "2": 0.001
+    },
+    "trap": 1,
+    "itemName": "陷阱球•蓝",
+    "ttl": 30,
+    "entityType": 12,
+    "prefabResID": "Item_Catch_Ball_3 Variant_blue"
+  },
+  "130001": {
+    "prefabResID": "Item_Catch_Ball_2",
+    "itemName": "苹果",
+    "ttl": 30,
+    "entityType": 13,
+    "bait": 1
+  }
+}

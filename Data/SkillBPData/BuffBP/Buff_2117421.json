@@ -1,0 +1,190 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117421",
+  "NodeID": 1,
+  "UID": "ec2dc841-88d7-4996-ad4c-75336db66765",
+  "onBuffRefreshIds": [
+    26,
+    23,
+    10,
+    3
+  ],
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2117421,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 12,
+        "UID": "b48e4798-eef4-4275-9d14-db5db24dbd86",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "ba005546-8a00-42c0-8810-d44211b41881",
+      "NodeID": 7,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "d9b9319e-e8ca-4355-96ce-8ca88d40779b",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "189a66fe-1ead-4dfb-81d2-1b86e5a214a1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_SmashGround_ShieldEnd",
+      "NodeID": 3
+    },
+    "23": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "d29e588a-d149-4616-a79a-8dee7fe16ddf",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water_break",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "10": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "6f7f117a-3a3c-4e12-b0f5-cce0f2062066",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "25": {
+      "UID": "941205f6-043e-442c-96e1-bef4611f2bea",
+      "target": {
+        "UID": "ee14acf5-45fd-40d2-b6c3-5d1307a54f6c",
+        "name": "getEventAttackTarget",
+        "NodeID": 24
+      },
+      "name": "hasTarget",
+      "NodeID": 25
+    },
+    "16": {
+      "name": "calcResult",
+      "overrideCaster": "SRC",
+      "calcInfoByLuaConfig": {
+        "id": 2117421,
+        "instant_dmg_rate_v": "param1",
+        "type": 1
+      },
+      "UID": "aa1d9294-deb2-4305-a70f-936c39d5125c",
+      "target": {
+        "UID": "ee14acf5-45fd-40d2-b6c3-5d1307a54f6c",
+        "name": "getEventAttackTarget",
+        "NodeID": 24
+      },
+      "NodeID": 16,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 0,
+        "airImpulseId": 0
+      }
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "65ab469c-e993-4794-bb42-bd9200dd13df",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "80dfb4cf-9dd5-4951-9054-c11fab7874a3",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "a67d00ba-bdc7-49ed-a560-a3f40bf07b5f",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "key": "1",
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18,
+      "UID": "445b2498-b19b-4118-a052-02f832555e83",
+      "cd": 0.4,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "22": {
+      "UID": "5f4b6404-b4f1-4a9d-b26c-b84fac4631e5",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 22
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "674cf88f-8d9c-455a-bb10-2fa820d3e6d9",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "20": {
+      "UID": "b992e04b-80c5-460e-a931-6f54ad9fcd84",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "12": {
+      "calcId": 2117421,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "b48e4798-eef4-4275-9d14-db5db24dbd86",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    9,
+    3,
+    23
+  ],
+  "onBuffStartIds": [
+    20,
+    10
+  ]
+}

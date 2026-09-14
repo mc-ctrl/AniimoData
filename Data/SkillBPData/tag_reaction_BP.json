@@ -1,0 +1,51 @@
+{
+  "ignite": {
+    "seed": {
+      "actionIds": [
+        3
+      ],
+      "nodeMap": {
+        "3": {
+          "UID": "628a08fd-3ae9-4350-9eb0-87a182d85c74",
+          "actorId": {
+            "UID": "d8870816-b60e-4df7-8995-48457f2cbea3",
+            "target": "TARGET",
+            "name": "getTargetId",
+            "NodeID": 2
+          },
+          "name": "destroyEntity",
+          "NodeID": 3
+        }
+      }
+    }
+  },
+  "growUp": {
+    "seed": {
+      "actionIds": [
+        7,
+        3
+      ],
+      "nodeMap": {
+        "3": {
+          "offsetXYZ": [
+            0,
+            0.1,
+            0
+          ],
+          "target": "TARGET",
+          "name": "playEffectStr",
+          "UID": "d7fb4608-bf72-48da-b624-b029e981f487",
+          "effectId": "Eff_Parmon_10083_Skill_Seed_Growth_New",
+          "speed": 1,
+          "NodeID": 3
+        },
+        "7": {
+          "UID": "8ca03166-d651-4f96-8e1f-071e233c4338",
+          "target": "TARGET",
+          "name": "resetEntityDuration",
+          "NodeID": 7
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "8": {
+      "UID": "b1145451-6bf8-48c0-9106-a3fe86d6a43d",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 8
+    },
+    "4": {
+      "calcId": 9118702,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "b06afa4c-8110-484a-9090-fad97f5ef8a2",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "addActionIds": [
+        6
+      ],
+      "name": "registerShieldChangeEvent",
+      "UID": "6fb498d9-dfa7-4bf6-9041-d5d7b1bd7870",
+      "removeActionIds": [
+        8
+      ],
+      "NodeID": 7
+    },
+    "6": {
+      "calcInfo": {
+        "bp_add_ratio": {
+          "calcId": 9118702,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 4,
+          "UID": "b06afa4c-8110-484a-9090-fad97f5ef8a2",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "02a91729-10a0-4a6c-8a2c-3ee48cc30398",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 6
+    }
+  },
+  "BPName": "buff_9118702",
+  "dynamicRPCStates": {},
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

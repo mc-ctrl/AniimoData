@@ -1,0 +1,589 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "4fcfdd95-eced-4826-a60f-fe73c4787c37",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 37
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 38,
+      "UID": "fe31a9b4-cb31-4977-9528-dd7f1cfe62f7"
+    },
+    "63": {
+      "rotation": "ToAim",
+      "offsetXYZ": [
+        0.2,
+        1.15,
+        -0.2
+      ],
+      "templateId": 92000231004,
+      "name": "createProjectile",
+      "UID": "78f544e5-cb19-4cfc-88c2-2e3840067ff7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 63
+    },
+    "82": {
+      "name": "stopEffectStr",
+      "UID": "050c7068-2c69-4ee4-9158-ae52defeed61",
+      "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet",
+      "target": "OWNER",
+      "NodeID": 82
+    },
+    "64": {
+      "actionIds": [
+        63
+      ],
+      "conditionActionIds": [
+        133
+      ],
+      "UID": "f897cb2c-4f00-4429-ba3c-2364aec0d72c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        65
+      ],
+      "NodeID": 64
+    },
+    "43": {
+      "UID": "b3649956-2577-4499-96d6-1fba26fa3e03",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 43
+    },
+    "65": {
+      "rotation": "ToAim",
+      "offsetXYZ": [
+        0.25,
+        1.25,
+        0.2
+      ],
+      "templateId": 92000231005,
+      "name": "createProjectile",
+      "UID": "b3cda083-a73a-4f5d-85dc-cf58d674f762",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 65
+    },
+    "117": {
+      "NodeID": 117,
+      "name": "getTargetOffsetPos",
+      "UID": "a749da79-9253-492d-96f7-eb2453d13c2d",
+      "target": "OWNER",
+      "offset": {
+        "NodeID": 116,
+        "name": "constVector3",
+        "UID": "25c52004-3979-41d3-8712-84a93c2f352d",
+        "x": 0,
+        "y": 0,
+        "z": {
+          "rValue": {
+            "targetA": "OWNER",
+            "targetB": "TARGET",
+            "name": "getDistanceBetweenTarget",
+            "UID": "5d9ae618-1cb2-465e-90f7-a57e6b9bfdb5",
+            "NodeID": 114,
+            "onlyXZ": false
+          },
+          "name": "add",
+          "UID": "4cdddfbc-5db3-4492-87c1-e797c473b6ad",
+          "NodeID": 115,
+          "lValue": 2.5
+        }
+      },
+      "rotType": "OWNER"
+    },
+    "68": {
+      "UID": "3b2a4a05-0d94-4690-95b5-73a889be4cdc",
+      "name": "enableSkillThrowState",
+      "enable": false,
+      "NodeID": 68
+    },
+    "119": {
+      "targetA": "OWNER",
+      "targetB": "TARGET",
+      "name": "getDistanceBetweenTarget",
+      "UID": "77401379-d4fa-4969-bf66-e2f7bec4085a",
+      "NodeID": 119,
+      "onlyXZ": false
+    },
+    "87": {
+      "name": "stopEffectStr",
+      "UID": "da7bbe54-ef16-402c-8d3f-163c578e0d9f",
+      "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet02",
+      "target": "OWNER",
+      "NodeID": 87
+    },
+    "70": {
+      "UID": "a9d7904f-18d8-41ea-9fa0-23b85581b3d0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          76,
+          68,
+          73,
+          87,
+          104
+        ]
+      },
+      "NodeID": 70
+    },
+    "89": {
+      "UID": "dfa5a0dc-becb-48bd-8b88-d420c46c9b77",
+      "name": "isInAimCameraMode",
+      "NodeID": 89
+    },
+    "122": {
+      "NodeID": 122,
+      "name": "getTargetOffsetPos",
+      "UID": "9f0560d0-d66a-4233-9f83-1862ac74caf1",
+      "target": "OWNER",
+      "offset": {
+        "NodeID": 121,
+        "name": "constVector3",
+        "UID": "406b049d-8832-414e-ab0e-6c13531adc9d",
+        "x": 0,
+        "y": 0,
+        "z": {
+          "rValue": {
+            "targetA": "OWNER",
+            "targetB": "TARGET",
+            "name": "getDistanceBetweenTarget",
+            "UID": "77401379-d4fa-4969-bf66-e2f7bec4085a",
+            "NodeID": 119,
+            "onlyXZ": false
+          },
+          "name": "add",
+          "UID": "69bf52e5-5a30-49d2-a854-d0e921648676",
+          "NodeID": 120,
+          "lValue": 2.5
+        }
+      },
+      "rotType": "OWNER"
+    },
+    "73": {
+      "startPosOffset": [
+        0,
+        0,
+        0
+      ],
+      "duration": 0,
+      "name": "enableSupportAimEffect",
+      "UID": "1aa1a476-d765-4368-9634-46cf5a56bba7",
+      "startNoGravityTime": 0,
+      "gravityRatio": 0,
+      "rotationOffset": [
+        0,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 73,
+      "enable": false,
+      "moveSpeed": 0
+    },
+    "58": {
+      "actionIds": [
+        61
+      ],
+      "conditionActionIds": [
+        108
+      ],
+      "UID": "8f39c3ac-4f8b-4aad-977b-eaca3affeb7e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        57
+      ],
+      "NodeID": 58
+    },
+    "133": {
+      "gender": 2,
+      "name": "isActorGender",
+      "UID": "ff6297c1-85a6-4bb2-9e53-8c31e46241aa",
+      "target": "OWNER",
+      "NodeID": 133
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 31,
+      "UID": "5f84048d-91ec-4d18-8b49-d97579e3c681"
+    },
+    "108": {
+      "UID": "4db630d9-5331-433b-a810-93f5f911eede",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 108
+    },
+    "107": {
+      "UID": "c0490633-5667-4fa4-823c-9f5572284cb1",
+      "rotation": "OWNER",
+      "name": "getForwardDir",
+      "NodeID": 107
+    },
+    "114": {
+      "targetA": "OWNER",
+      "targetB": "TARGET",
+      "name": "getDistanceBetweenTarget",
+      "UID": "5d9ae618-1cb2-465e-90f7-a57e6b9bfdb5",
+      "NodeID": 114,
+      "onlyXZ": false
+    },
+    "112": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "aed15a6a-37e7-46bd-9997-5eb7c1b57389",
+      "NodeID": 112,
+      "lValue": {
+        "UID": "c581b068-ca84-47d3-a1ba-d9385fa5f8f1",
+        "name": "getAbilityCacheVal",
+        "key": "angle",
+        "NodeID": 111
+      }
+    },
+    "103": {
+      "key": "angle",
+      "name": "setAbilityCacheVal",
+      "UID": "9a4c85d5-2eb8-417f-9cac-c0251824fb3a",
+      "value": 1,
+      "NodeID": 103
+    },
+    "62": {
+      "offsetXYZ": [
+        0,
+        1.85,
+        1.52
+      ],
+      "templateId": 92000231003,
+      "name": "createProjectile",
+      "UID": "8c237743-cbb7-41d7-a08e-41142c886f1b",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Parabola3d",
+      "targetPos": {
+        "UID": "58b2e475-2bbb-41c3-a3ad-01137d530f6c",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "NodeID": 117,
+          "name": "getTargetOffsetPos",
+          "UID": "a749da79-9253-492d-96f7-eb2453d13c2d",
+          "target": "OWNER",
+          "offset": {
+            "NodeID": 116,
+            "name": "constVector3",
+            "UID": "25c52004-3979-41d3-8712-84a93c2f352d",
+            "x": 0,
+            "y": 0,
+            "z": {
+              "rValue": {
+                "targetA": "OWNER",
+                "targetB": "TARGET",
+                "name": "getDistanceBetweenTarget",
+                "UID": "5d9ae618-1cb2-465e-90f7-a57e6b9bfdb5",
+                "NodeID": 114,
+                "onlyXZ": false
+              },
+              "name": "add",
+              "UID": "4cdddfbc-5db3-4492-87c1-e797c473b6ad",
+              "NodeID": 115,
+              "lValue": 2.5
+            }
+          },
+          "rotType": "OWNER"
+        },
+        "NodeID": 118
+      },
+      "NodeID": 62,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "104": {
+      "actionIds": [
+        103
+      ],
+      "conditionActionIds": [
+        106
+      ],
+      "UID": "946a6c05-0905-47e0-be59-7e48afce2c12",
+      "name": "doActionsByConditions",
+      "NodeID": 104
+    },
+    "91": {
+      "name": "stopEffectStr",
+      "UID": "30fc684b-d3fc-4a47-9d4f-def4772be6a1",
+      "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet03",
+      "target": "OWNER",
+      "NodeID": 91
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          59,
+          82,
+          43,
+          91
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 45,
+      "UID": "6390d364-7c50-4079-be56-44ef9ccc475b"
+    },
+    "59": {
+      "actionIds": [
+        64
+      ],
+      "conditionActionIds": [
+        100
+      ],
+      "UID": "bcf58e17-5d52-49e1-ac04-3cc796447351",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        58
+      ],
+      "NodeID": 59
+    },
+    "106": {
+      "rightAngle": 90,
+      "name": "checkDirInAngleRange",
+      "NodeID": 106,
+      "UID": "8d82107f-ce98-409c-b03f-654d4d5265c6",
+      "dir": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "df1c2817-612e-403f-bd0d-733a22db8baf",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 105
+      },
+      "leftAngle": 90,
+      "refDir": {
+        "UID": "c0490633-5667-4fa4-823c-9f5572284cb1",
+        "rotation": "OWNER",
+        "name": "getForwardDir",
+        "NodeID": 107
+      }
+    },
+    "75": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "44dd35bd-9ee4-4388-9fb8-a50c249d28a3",
+      "target": "OWNER",
+      "NodeID": 75,
+      "animId": "Skill_DuckBomb_End"
+    },
+    "57": {
+      "offsetXYZ": [
+        0,
+        1.85,
+        1.52
+      ],
+      "templateId": 92000231001,
+      "name": "createProjectile",
+      "UID": "2eed935e-f719-476c-ad5b-db82596a3760",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": [
+        0,
+        0,
+        30
+      ],
+      "NodeID": 57,
+      "offsetRotation": [
+        45,
+        0,
+        0
+      ]
+    },
+    "76": {
+      "actionIds": [
+        75
+      ],
+      "conditionActionIds": [
+        89
+      ],
+      "UID": "2b5dd452-f4b4-42e4-818f-46aaedc38501",
+      "name": "doActionsByConditions",
+      "NodeID": 76
+    },
+    "48": {
+      "UID": "1016acfe-afcc-4da8-bcd4-e6ba5f4e1e6b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "NodeID": 48
+    },
+    "47": {
+      "actionIds": [
+        46
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "f57c5879-cd38-4ee4-866e-61edf61f7502",
+      "name": "doActionsByConditions",
+      "NodeID": 47
+    },
+    "49": {
+      "UID": "4b362753-3efc-4a1c-9d90-c8d63f1642a7",
+      "name": "checkIsInAutoAim",
+      "NodeID": 49
+    },
+    "30": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 30,
+      "UID": "3f0a1eb8-1ef9-473d-ba07-3e4b0048e518",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "46": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 46,
+      "UID": "e59f7ba4-8d61-4dcf-9f31-7767f1e10f86",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "60": {
+      "offsetXYZ": [
+        0,
+        1.85,
+        1.52
+      ],
+      "templateId": 92000231002,
+      "name": "createProjectile",
+      "UID": "fa14af75-345a-43d9-9e8c-c00038da93a2",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Parabola3d",
+      "targetPos": {
+        "UID": "72f8aafe-890b-4b0c-975e-c445f6eac33b",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "NodeID": 122,
+          "name": "getTargetOffsetPos",
+          "UID": "9f0560d0-d66a-4233-9f83-1862ac74caf1",
+          "target": "OWNER",
+          "offset": {
+            "NodeID": 121,
+            "name": "constVector3",
+            "UID": "406b049d-8832-414e-ab0e-6c13531adc9d",
+            "x": 0,
+            "y": 0,
+            "z": {
+              "rValue": {
+                "targetA": "OWNER",
+                "targetB": "TARGET",
+                "name": "getDistanceBetweenTarget",
+                "UID": "77401379-d4fa-4969-bf66-e2f7bec4085a",
+                "NodeID": 119,
+                "onlyXZ": false
+              },
+              "name": "add",
+              "UID": "69bf52e5-5a30-49d2-a854-d0e921648676",
+              "NodeID": 120,
+              "lValue": 2.5
+            }
+          },
+          "rotType": "OWNER"
+        },
+        "NodeID": 123
+      },
+      "NodeID": 60,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "61": {
+      "actionIds": [
+        62
+      ],
+      "conditionActionIds": [
+        112
+      ],
+      "UID": "e37279d4-5016-4bb8-8385-866f2bf52ac0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        60
+      ],
+      "NodeID": 61
+    },
+    "100": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "f7036c82-4978-4fa7-85ab-4c45f4e2206c",
+      "NodeID": 100,
+      "lValue": {
+        "key": "Aim",
+        "name": "getCacheVal",
+        "UID": "abec6ed3-d5c3-45b1-a569-995082a8330d",
+        "target": "OWNER",
+        "NodeID": 99
+      }
+    }
+  },
+  "BPName": "ability_92000231",
+  "NodeID": 33,
+  "UID": "3c8124ba-c649-477e-9d9a-c1ba5dcb730e",
+  "eventIds": [
+    45,
+    70,
+    38,
+    31,
+    48
+  ],
+  "layer": "Base",
+  "length": 5
+}

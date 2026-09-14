@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10120101",
+  "NodeID": 1,
+  "UID": "6307894c-3f07-45d6-a9f2-a3d787119773",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10120101001,
+      "name": "setCombatActionTimeline",
+      "UID": "34722444-043e-4062-8d70-59538e9c6377",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicField"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10011_Skill_Charm_Prepare_01",
+    "Eff_Parmon_10011_Skill_Charm_Bullet_01",
+    "Eff_Parmon_10011_Attack_Hit",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "abilityParamId": 11100050,
+  "name": "念力减抗法术场"
+}

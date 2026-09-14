@@ -1,0 +1,302 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2137104",
+  "calcInfoByLuaConfig": {
+    "id": 2137104,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": [
+    "SpeedBurst"
+  ],
+  "nodeMap": {
+    "37": {
+      "UID": "0898ccf5-fe6b-424d-8394-7b5aa78f1482",
+      "target": "OWNER",
+      "name": "cancelShapeShift",
+      "NodeID": 37
+    },
+    "38": {
+      "name": "isInCombat",
+      "UID": "a795dda2-aa25-4879-b34b-69207b6173c3",
+      "target": "OWNER",
+      "NodeID": 38,
+      "not": false
+    },
+    "39": {
+      "offsetTime": 0.197,
+      "name": "playAnimation",
+      "UID": "8243aee0-456b-4a44-9c9e-b9ce83a80eee",
+      "target": "OWNER",
+      "NodeID": 39,
+      "animId": "Skill_Ex"
+    },
+    "40": {
+      "afterModelRefreshedActionIds": [
+        39
+      ],
+      "relearnSkill": false,
+      "name": "shapeShift",
+      "second": 9999,
+      "target": "OWNER",
+      "petPrototypeId": 1037300,
+      "useConfigData": false,
+      "NodeID": 40,
+      "reverseShift": false,
+      "UID": "989a4601-a29a-4f6d-9fc7-f71da0c42962"
+    },
+    "41": {
+      "isNot": false,
+      "stateName": "SpeedBurst",
+      "isParentState": false,
+      "NodeID": 41,
+      "UID": "d40a5b31-5193-4445-94b8-7a3990c364d6",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "177a9575-b19e-4f8a-b05a-677381347e6a",
+      "effectId": "Eff_Parmon_10373_Skill_Transfrom",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "35": {
+      "UID": "10892f64-dc92-414b-b121-25349a7f661e",
+      "name": "isInAbility",
+      "abilityType": 8,
+      "NodeID": 35
+    },
+    "44": {
+      "buffId": 2137302,
+      "name": "removeBuff",
+      "UID": "b3753cc9-992d-42d7-84ce-88fca0dc4369",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "31": {
+      "UID": "25a6d211-5f38-4be9-bc83-7dc69f2d856d",
+      "conditionIds": [
+        30,
+        33,
+        34,
+        35,
+        41
+      ],
+      "name": "conditionOr",
+      "NodeID": 31
+    },
+    "51": {
+      "cdTime": 10,
+      "name": "forceSetSkillCD",
+      "NodeID": 51,
+      "UID": "1530a3ce-916d-4761-b8ef-9957fa690652",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 13739900
+    },
+    "50": {
+      "buffId": 2137106,
+      "name": "removeBuff",
+      "UID": "bbef4767-b6f7-46c5-a215-2910a819f260",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "21": {
+      "UID": "4c0dba0e-25dd-4736-9dde-ec6d29f7281b",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "48": {
+      "calcId": 2137104,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 48,
+      "UID": "7cf8c532-5003-4e29-86d1-7d4e2c47ae27",
+      "name": "getParamByLuaConfig"
+    },
+    "20": {
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "c119cede-7ec3-4f0c-9b42-3e7bcadcf058",
+      "name": "doActionsByConditions",
+      "NodeID": 20,
+      "elseActionIds": [
+        19
+      ]
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1057ec6e-0711-4582-8fb6-73f225354813",
+      "effectId": "Eff_Parmon_10373_Skill_Transfrom",
+      "speed": 1,
+      "NodeID": 12
+    },
+    "43": {
+      "UID": "bd6bd9fd-1693-4cc6-a3b5-003c83580b83",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 43
+    },
+    "23": {
+      "actionIds": [
+        21,
+        45
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "70b14276-6d8c-41c6-9bda-a2c217f5bfee",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27,
+        46
+      ],
+      "NodeID": 23
+    },
+    "24": {
+      "key": "1",
+      "duration": {
+        "calcId": 2137104,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 48,
+        "UID": "7cf8c532-5003-4e29-86d1-7d4e2c47ae27",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        23
+      ],
+      "NodeID": 24,
+      "UID": "d295f7b7-272c-49a5-8ee9-5064a98afeef",
+      "name": "addTimer"
+    },
+    "45": {
+      "UID": "eb186f94-1c37-4e44-b4ab-6101a04e0218",
+      "value": "@hyj wait abilityEnd",
+      "name": "print",
+      "NodeID": 45
+    },
+    "46": {
+      "UID": "d36c4893-ec5d-47b9-8aae-b4a949d04c1b",
+      "value": "@hyj kill immediately",
+      "name": "print",
+      "NodeID": 46
+    },
+    "19": {
+      "buffId": 2137104,
+      "name": "removeBuff",
+      "UID": "8cb0bd26-77b4-4be8-b4cb-bfee94fa5fad",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "ab61311d-fbdf-4a8c-ac08-18c50a7c2281",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "2e7c9e04-d4d4-41f3-affb-fe1d981832ba",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 26
+    },
+    "27": {
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "8ab31610-c75d-477f-a637-f499241f59fa",
+      "name": "doActionsByConditions",
+      "NodeID": 27,
+      "elseActionIds": [
+        19
+      ]
+    },
+    "17": {
+      "cameraShakeId": 30402,
+      "name": "playCameraImpulseById",
+      "UID": "79c267d7-9a32-498a-8d52-a10fb31f54fe",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "49": {
+      "buffId": 2137102,
+      "name": "removeBuff",
+      "UID": "f9112349-61f6-446b-820f-d842e73533c6",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "30": {
+      "UID": "7eff5138-badc-4189-bb01-4c616d97cfbe",
+      "name": "isInAbility",
+      "abilityType": 2,
+      "NodeID": 30
+    },
+    "32": {
+      "name": "isInCombat",
+      "UID": "7bb81ce2-3dad-4600-8075-c562f5bf4fee",
+      "target": "OWNER",
+      "NodeID": 32,
+      "not": false
+    },
+    "33": {
+      "UID": "dff8dde1-c5ac-4259-a399-44b025c3b8f4",
+      "name": "isInAbility",
+      "abilityType": 1,
+      "NodeID": 33
+    },
+    "34": {
+      "UID": "baa31f5c-1001-42ff-990f-4ccdf1600082",
+      "name": "isInAbility",
+      "abilityType": 4,
+      "NodeID": 34
+    },
+    "36": {
+      "name": "isInCombat",
+      "UID": "11c24aba-570f-4f7d-80eb-c8768b5c67e8",
+      "target": "OWNER",
+      "NodeID": 36,
+      "not": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    42,
+    17,
+    37,
+    43,
+    44,
+    49,
+    50
+  ],
+  "onBuffStartIds": [
+    12,
+    40,
+    26,
+    51
+  ]
+}

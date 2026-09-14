@@ -1,0 +1,135 @@
+{
+  "302": {
+    "currency": [
+      2,
+      3
+    ],
+    "tabName": 1673949832,
+    "tabId": 3,
+    "sort": 3,
+    "bgType": 3,
+    "shopType": 2,
+    "tabIcon": "$UI_Img_Setting_TabIcon_Gift1.png"
+  },
+  "303": {
+    "currency": [
+      2,
+      3
+    ],
+    "tabName": 1409877946,
+    "tabId": 3,
+    "sort": 2,
+    "bgType": 3,
+    "shopType": 2,
+    "tabIcon": "$UI_Img_Setting_TabIcon_Gift3.png"
+  },
+  "202": {
+    "shopType": 1,
+    "tabName": 1840339233,
+    "tabId": 5,
+    "currency": [
+      2,
+      3
+    ],
+    "backGround": 3,
+    "bgType": 3,
+    "sort": 2,
+    "tabIcon": "$UI_Icon_CashShop_Tab_Huishi.png"
+  },
+  "301": {
+    "shopType": 2,
+    "tabName": 1955925824,
+    "tabId": 3,
+    "currency": [
+      2,
+      3
+    ],
+    "backGround": 3,
+    "bgType": 3,
+    "sort": 1,
+    "tabIcon": "$UI_Img_Setting_TabIcon_Gift2.png"
+  },
+  "401": {
+    "currency": [
+      2,
+      3
+    ],
+    "tabName": 1985692122,
+    "tabId": 2,
+    "shopType": 1,
+    "sort": 1,
+    "bgType": 3,
+    "searchListId": [
+      401,
+      402
+    ],
+    "tabIcon": "$UI_Icon_CashShop_Tab_MonthlyCard.png"
+  },
+  "402": {
+    "tabId": 2,
+    "tabName": 1797235754,
+    "uiBack": "T_LVUIBP_BackGroud_03_CA.png",
+    "currency": [
+      1020
+    ],
+    "shopType": 2,
+    "sort": 2,
+    "backGround": 4,
+    "bgType": 2,
+    "searchListId": [
+      401,
+      402
+    ],
+    "tabIcon": "$UI_Icon_CashShop_Tab_BP.png"
+  },
+  "602": {
+    "shopType": 2,
+    "tabName": 2115312148,
+    "tabId": 6,
+    "bgType": 3,
+    "sort": 2,
+    "tabIcon": "$UI_Img_Random_TabIcon_2.png"
+  },
+  "203": {
+    "shopType": 2,
+    "tabName": 1972228755,
+    "tabId": 5,
+    "currency": [
+      2,
+      3
+    ],
+    "backGround": 3,
+    "bgType": 3,
+    "sort": 1,
+    "tabIcon": "$UI_Img_Inventory_TabIcon_2.png"
+  },
+  "601": {
+    "currency": [
+      700034
+    ],
+    "tabName": 2025275162,
+    "uiBack": "T_LVUIMall_BackGround_Random_CA.png",
+    "tabId": 6,
+    "sort": 1,
+    "bgType": 2,
+    "shopType": 1,
+    "tabIcon": "$UI_Img_Random_TabIcon_1.png"
+  },
+  "101": {
+    "tabId": 4,
+    "tabName": 1454119872,
+    "currency": [
+      2,
+      3
+    ],
+    "shopType": 1,
+    "sort": 1,
+    "backGround": 1,
+    "bgType": 2,
+    "searchListId": [
+      101,
+      201
+    ],
+    "tabIcon": "$UI_Icon_CashShop_Tab_Fashion.png"
+  }
+}

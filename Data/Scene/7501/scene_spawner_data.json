@@ -1,0 +1,428 @@
+{
+  "91297434": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      9.26,
+      8.76,
+      -9.61
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91297434,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91297433,
+          91297450,
+          91297443,
+          91297452,
+          91297453,
+          91297451,
+          91297456,
+          91297457
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91302871": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      22.96,
+      0.93,
+      -12.22
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91302871,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91302870,
+          91302872
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91302880": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -1.61,
+      0.26,
+      -16.57
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91302880,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91302879,
+          91302881,
+          91302875
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91294692": {
+    "minimumTimeFormTable": true,
+    "overrideDiedRefreshInterval": true,
+    "diedRefreshInterval": 200,
+    "position": [
+      -24.51,
+      1.95,
+      34.81
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "spawnerTemplateTypeId": 10001,
+    "weatherRefreshType": 0,
+    "sandboxType": 35,
+    "spawnType": 4,
+    "refresTimeType": 0,
+    "owner": "陈智豪",
+    "manualInit": false,
+    "id": 91294692,
+    "isAuto": false,
+    "SpawnState": 0,
+    "exclude": true,
+    "enableMinimumTime": true,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91294691
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91294709": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      9.17,
+      9.5,
+      -9.86
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91294709,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91294708
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91294991": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      9.92,
+      1.2,
+      -9.69
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91294991,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91294990,
+          91302863,
+          91294994,
+          91294995,
+          91294996,
+          91295000,
+          91294998,
+          91295004,
+          91295005,
+          91295002,
+          91295006,
+          91295008,
+          91295007,
+          91295009,
+          91295003,
+          91295001,
+          91294999
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91295021": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      8.96,
+      3.27,
+      -9.8
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91295021,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91295020,
+          91295023,
+          91295024,
+          91295027,
+          91295025,
+          91295026,
+          91295033,
+          91295031,
+          91295032
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91295035": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      8.96,
+      5.38,
+      -9.8
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91295035,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91295036,
+          91295037,
+          91295038,
+          91295039,
+          91295040,
+          91295041,
+          91295042,
+          91295043,
+          91295044
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91295056": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      8.96,
+      7.49,
+      -9.8
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91295056,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91295057,
+          91295058,
+          91295059,
+          91295060,
+          91295061,
+          91295062,
+          91295063,
+          91295064,
+          91295065
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "91295110": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      7.77,
+      -0.37,
+      -10.03
+    ],
+    "sandboxId": 91295288,
+    "autoInitial": false,
+    "sandboxType": 35,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "owner": "陈智豪",
+    "avoidRepeatGroupCount": 0,
+    "isAuto": false,
+    "SpawnState": 0,
+    "id": 91295110,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          91295109,
+          91295113,
+          91295115
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

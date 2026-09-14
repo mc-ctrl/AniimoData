@@ -1,0 +1,113 @@
+[
+  {
+    "rewardLose": [
+      30112
+    ],
+    "rewardWin": [
+      30111
+    ],
+    "scoreInit": [
+      2000,
+      0
+    ],
+    "showTime": 8,
+    "unitGroup": [
+      1
+    ],
+    "endTime": 3,
+    "name": "链接模式 1V1",
+    "playerNum": [
+      1,
+      1
+    ],
+    "battleTime": 300,
+    "beginTime": 10,
+    "fightMode": 1,
+    "fighterNum": [
+      1,
+      4
+    ],
+    "haveUnit": 1,
+    "hidePetsNum": 2,
+    "petsNum": [
+      1,
+      6
+    ],
+    "prepareArea": [
+      [
+        100001,
+        [
+          0,
+          4.55,
+          15.9,
+          0
+        ]
+      ],
+      [
+        100001,
+        [
+          0,
+          4.55,
+          -15.9,
+          0
+        ]
+      ]
+    ],
+    "prepareTime": 60,
+    "resultTime": 999
+  },
+  {
+    "rewardLose": [
+      30112
+    ],
+    "rewardWin": [
+      30111
+    ],
+    "scoreInit": [
+      2000,
+      0
+    ],
+    "showTime": 8,
+    "endTime": 3,
+    "name": "训练家模式 1V1",
+    "playerNum": [
+      1,
+      1
+    ],
+    "battleTime": 300,
+    "beginTime": 10,
+    "fightMode": 1,
+    "fighterNum": [
+      1,
+      4
+    ],
+    "haveUnit": 1,
+    "hidePetsNum": 2,
+    "petsNum": [
+      1,
+      6
+    ],
+    "prepareArea": [
+      [
+        100001,
+        [
+          0,
+          4.55,
+          15.9,
+          0
+        ]
+      ],
+      [
+        100001,
+        [
+          0,
+          4.55,
+          -15.9,
+          0
+        ]
+      ]
+    ],
+    "prepareTime": 60,
+    "resultTime": 999
+  }
+]

@@ -1,0 +1,257 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "f9a1e5ca-2f62-4d48-adfb-97ab475fb759",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 37
+    },
+    "39": {
+      "UID": "29e90fef-7b34-41f3-8f84-34965930ba1e",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 39
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 41,
+      "UID": "4f298bdf-9169-478c-9470-6472148ea858"
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6b0250e1-fd0e-4b96-9aef-a33ec31cfaa8",
+      "effectId": "Eff_Parmon_10194_Skill_GreatSword_Cround",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "9": {
+      "name": "setNextComboAbilityId",
+      "UID": "3481d31e-2635-4517-b162-e268b903962e",
+      "target": "OWNER",
+      "NodeID": 9,
+      "abilityId": 0
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9507babe-5285-43a7-bd9f-4a56c6090149",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "13": {
+      "name": "setSkillHitDistance",
+      "UID": "5b210bb5-5a17-41cb-a2cf-88443e13b0d3",
+      "skillHitDisplacementId": 1005,
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "name": "setNextComboAbilityId",
+      "UID": "a3dc0eb6-1863-4fbf-80f0-bb2af4e31ee2",
+      "target": "OWNER",
+      "NodeID": 14,
+      "abilityId": 0
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0755ca2f-e8e9-4c56-a9cf-40f2342eb7f4",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Attack07"
+    },
+    "15": {
+      "UID": "b35e4247-6a90-4a0c-b733-79845feff873",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 15
+    },
+    "23": {
+      "calcInfo": {
+        "add_cur_ep_rate": 4.2
+      },
+      "name": "calcResult",
+      "UID": "435f5627-1f33-4473-b543-72d21285e156",
+      "target": "CASTER",
+      "NodeID": 23
+    },
+    "12": {
+      "UID": "a4311e3d-76d3-49be-92f7-8f4f4bc1ba30",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10,
+          13
+        ]
+      },
+      "NodeID": 12
+    },
+    "4": {
+      "UID": "6f37e654-1903-424e-a39f-492567bb0e9e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          37,
+          9
+        ]
+      },
+      "NodeID": 4
+    },
+    "17": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 4.2
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 5000
+      },
+      "UID": "37cf7fb0-e0a0-4b61-a863-1bc093e91d47",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 17
+    },
+    "19": {
+      "calcResultNodeId": 17,
+      "name": "actOnTargets",
+      "UID": "7c024782-11df-4e3e-90ba-d4769911136c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            -1
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            6,
+            2,
+            0
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            2
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        17,
+        23
+      ],
+      "impulseId": 5000,
+      "NodeID": 19
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "84c3f1fa-3216-4190-82b1-9843a9488fd7",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_greatsword_attack03",
+      "NodeID": 30
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 32,
+      "UID": "391a0bc5-9030-4179-826e-928b2a178baf"
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "85512e61-7114-4e90-b8f7-6ac44daa8eb7",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_GreatSword_Attack03",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.25,
+      "NodeID": 34,
+      "UID": "5e33c752-d197-4b9c-9264-a9fd87c18ed2"
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          19,
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.35,
+      "NodeID": 21,
+      "UID": "b3c3c84f-ccc3-46e8-9833-16da23e3a54a"
+    }
+  },
+  "BPName": "ability_11940006",
+  "NodeID": 6,
+  "UID": "20ae81e4-d315-4a5e-9d2d-eeed63d43f3b",
+  "eventIds": [
+    4,
+    15,
+    12,
+    32,
+    34,
+    21,
+    41
+  ],
+  "layer": "Base",
+  "length": 20
+}

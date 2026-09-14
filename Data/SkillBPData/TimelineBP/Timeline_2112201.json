@@ -1,0 +1,139 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "target": "TARGET",
+      "duration": 10,
+      "buffId": 10037,
+      "NodeID": 22,
+      "UID": "61ff1487-66a6-4e00-85e3-03aaf4ced8db",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 16,
+      "NodeID": 4,
+      "UID": "2e7d12c7-dd05-4e13-93a3-3c69ae152773",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1.5,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        16,
+        21,
+        22
+      ]
+    },
+    "6": {
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 6,
+      "UID": "9f20243d-f168-4acc-b254-53d747188bae"
+    },
+    "16": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1,
+        "instant_dmg_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "impulseId": 3002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Blunt_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "9ab62efe-3da3-4b21-8e74-343d5bdce319",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 16
+    },
+    "8": {
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 8,
+      "UID": "559fa9db-9a3d-495b-bd10-b80423e661b2"
+    },
+    "9": {
+      "UID": "4b4f6454-4df4-44aa-af9d-9f7c775c6072",
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 9
+    },
+    "12": {
+      "UID": "397442f4-bf67-499d-9260-431e2527e6e9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 12
+    },
+    "20": {
+      "UID": "9d45f033-4825-4ae7-8092-2cf4ae69d0b1",
+      "eventType": "EventEnter",
+      "NodeID": 20
+    },
+    "21": {
+      "target": "TARGET",
+      "duration": 10,
+      "buffId": 10035,
+      "NodeID": 21,
+      "UID": "e5fc2a17-f0ad-4fcb-a7ab-2d1048349782",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "timeline_2112201",
+  "NodeID": 1,
+  "UID": "c2573a1f-3a06-4362-8944-016085298456",
+  "eventIds": [
+    12,
+    6,
+    8,
+    9,
+    20
+  ],
+  "layer": "Base",
+  "length": 3
+}

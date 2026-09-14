@@ -1,0 +1,60 @@
+{
+  "BPName": "ability_10330300",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 10400340,
+  "abilityType": 2,
+  "aiSelectWeight": 33,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "10": {
+      "timelineId": 10330300001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 10
+    },
+    "35": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 35,
+      "UID": "89fb7799-30d1-4bb3-a393-60548d6d5bf8",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FlyBlade_Fire",
+    "Skill_FlyBlade_Start"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10033_Skill_FlyBlade_Start",
+    "Eff_Hit_Electric_Slash_Y_Big",
+    "Eff_Parmon_10033_Skill_FlyBlade_Bullet02",
+    "Eff_Parmon_10033_Skill_FlyBlade_Bullet01",
+    "Eff_Parmon_10474_Skill_Skill_Smash_02"
+  ],
+  "searchRelation": 2,
+  "name": "电普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onAbilityEndIds": [
+    35
+  ],
+  "searchTargetRangeDown": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de"
+}

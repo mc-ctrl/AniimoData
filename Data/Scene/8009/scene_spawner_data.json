@@ -1,0 +1,753 @@
+{
+  "42485373": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -5.55,
+      1.5,
+      -31.06
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42485373,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42485374
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42485403": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -6.07,
+      2.99,
+      -30.53
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42485403,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42485401
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42485464": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      5.95,
+      3.97,
+      -30.6
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42485464,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42485460
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42740811": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 0,
+    "position": [
+      3.04,
+      0.97,
+      -60.31
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        3.04,
+        0.97,
+        -60.31
+      ],
+      "author": "worldx_ch"
+    },
+    "sandboxId": 42382369,
+    "id": 42740811,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42740803
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42740818": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      2.9,
+      2.34,
+      -61.87
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42740818,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42740814,
+          42742286
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42741198": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      2.86,
+      2.44,
+      -55.56
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42741198,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42741197
+        ],
+        "deadTime": 0,
+        "desc": ""
+      }
+    ]
+  },
+  "42742696": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -3.32,
+      2.01,
+      -61.05
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42382369,
+    "id": 42742696,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42742694,
+          42742732,
+          42742741,
+          42742751,
+          42742809,
+          42742830
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42382481": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      3.98,
+      1.98,
+      -30.64
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42382481,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42382480
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42382483": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      4.4,
+      3.41,
+      -31.07
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42382483,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42382482
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42382485": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -1.51,
+      3.52,
+      -31.08
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42382485,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42382484
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42382489": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      1.97,
+      1.98,
+      -30.64
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42382489,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42382488
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417322": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      3.41,
+      3.41,
+      -31.07
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417322,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417321
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417324": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      1.97,
+      3.92,
+      -30.64
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417324,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417323
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417376": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      3.92,
+      3.48,
+      -30.06
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417376,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417375,
+          57001094
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417378": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -0.01,
+      3.86,
+      -30.62
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417378,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417377
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417381": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -2,
+      1.98,
+      -30.64
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417381,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417380
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417383": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -3.96,
+      2,
+      -30.58
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417383,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417382
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417385": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -2.52,
+      3.52,
+      -31.08
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417385,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417384
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417386": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -2.52,
+      3.52,
+      -30.07
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417386,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417387
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417389": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -1.5,
+      3.52,
+      -30.04
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417389,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417388
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417390": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -0.02,
+      2,
+      -30.58
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417390,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417391
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42417392": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -3.96,
+      4.03,
+      -30.58
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42417392,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42417393
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42485285": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      6,
+      2,
+      -30.56
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42485285,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42485283
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42485325": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -5.54,
+      1.5,
+      -30.08
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42485325,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42485323
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42485347": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -6.63,
+      1.5,
+      -30.08
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42485347,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42485348
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42485366": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -6.63,
+      1.5,
+      -31.06
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42382369,
+    "id": 42485366,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42485365
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

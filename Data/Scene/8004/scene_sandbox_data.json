@@ -1,0 +1,719 @@
+{
+  "41619341": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018849,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 41619377,
+    "levelItems": {
+      "43532474": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点4-箭头指引3",
+        "position": [
+          -75,
+          10.98,
+          -98
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "siblingIndex": 15,
+        "id": 43532474,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43532518": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点5-箭头指引2",
+        "position": [
+          -84.15,
+          10.98,
+          -121
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 5,
+        "id": 43532518,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42483805": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点1-箭头指引",
+        "position": [
+          -10.25,
+          4.95,
+          -127
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42483805,
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42483865": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点1",
+        "position": [
+          -10.25,
+          4.67,
+          -106
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42483865,
+        "siblingIndex": 7,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42483865_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -10.25,
+            4.67,
+            -106
+          ],
+          "arriveType": 1,
+          "author": ""
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42483984": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3-箭头指引1",
+        "position": [
+          -30,
+          4.98,
+          -98
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "siblingIndex": 9,
+        "id": 42483984,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42483985": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3",
+        "position": [
+          -50.36,
+          4.71,
+          -98
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 10,
+        "id": 42483985,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42483985_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -50.36,
+            4.71,
+            -98
+          ],
+          "arriveType": 1,
+          "author": ""
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42484019": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点4-箭头指引1",
+        "position": [
+          -56,
+          8.75,
+          -98
+        ],
+        "rotation": [
+          270,
+          270,
+          0
+        ],
+        "siblingIndex": 11,
+        "id": 42484019,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42484020": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点4",
+        "position": [
+          -84,
+          10.66,
+          -101.48
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 16,
+        "id": 42484020,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42484020_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -84,
+            10.66,
+            -101.48
+          ],
+          "arriveType": 1,
+          "author": ""
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42484105": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点4-箭头指引2",
+        "position": [
+          -61,
+          10.98,
+          -98
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "siblingIndex": 14,
+        "id": 42484105,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42484106": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点5",
+        "position": [
+          -84.15,
+          10.68,
+          -130.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 13,
+        "id": 42484106,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42484106_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -84.15,
+            10.68,
+            -130.3
+          ],
+          "arriveType": 1,
+          "author": ""
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42484594": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点5-箭头指引1",
+        "position": [
+          -84.15,
+          10.98,
+          -112
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 4,
+        "id": 42484594,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42484605": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          -84.15,
+          17.07,
+          -144
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42484605,
+        "siblingIndex": 12,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42484605_43015735"
+          }
+        },
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -84.15,
+            17.07,
+            -144
+          ],
+          "arriveType": 1,
+          "author": ""
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43523600": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门-箭头指引",
+        "position": [
+          -84.15,
+          14.32,
+          -137.5
+        ],
+        "rotation": [
+          270,
+          180,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 43523600,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "74934259": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockIgnoreMagnesis_SB",
+        "position": [
+          -56.5,
+          5.57,
+          -98.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 17,
+        "id": 74934259,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          10,
+          10
+        ],
+        "configId": 406,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "43529126": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点2",
+        "position": [
+          -28.07,
+          4.67,
+          -98
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 6,
+        "id": 43529126,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "43529126_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -28.07,
+            4.67,
+            -98
+          ],
+          "arriveType": 1,
+          "author": ""
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43533072": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点1-箭头指引 (1)",
+        "position": [
+          -10.25,
+          4.95,
+          -116
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 43533072,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "43529297": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点2-箭头指引",
+        "position": [
+          -14.02,
+          4.95,
+          -98
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 43529297,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43532558": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3-箭头指引2",
+        "position": [
+          -39,
+          4.98,
+          -98
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "siblingIndex": 8,
+        "id": 43532558,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "sightLevel": 512,
+    "sightLevelType": 512,
+    "spawners": [
+      41621210,
+      41623714,
+      41706915,
+      41707978,
+      41707984,
+      41708023,
+      73259826
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8004/Sandbox_41619341_GraphRef.asset",
+    "owner": "路司机",
+    "position": [
+      -13.96,
+      6.37,
+      -114.74
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 41619341,
+    "autoEndType": 0,
+    "name": "火教学"
+  },
+  "41614485": {
+    "areaType": 0,
+    "chunk": 1018848,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 41614485,
+    "owner": "路司机",
+    "position": [
+      -10,
+      6,
+      -134
+    ],
+    "markIconSpawnerId": 0
+  }
+}

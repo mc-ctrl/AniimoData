@@ -1,0 +1,149 @@
+[
+  {
+    "5": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_B3"
+    },
+    "6": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_B4"
+    },
+    "7": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_C2"
+    },
+    "8": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_C3"
+    },
+    "9": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_C4"
+    },
+    "11": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_D2"
+    },
+    "1": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_A2"
+    },
+    "12": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_D3"
+    },
+    "3": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_A4"
+    },
+    "4": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_B2"
+    },
+    "14": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_E2"
+    },
+    "10": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_C5"
+    },
+    "15": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_E3"
+    },
+    "22": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_G4"
+    },
+    "16": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_E4"
+    },
+    "21": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_G3"
+    },
+    "17": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_F2"
+    },
+    "20": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_G2"
+    },
+    "18": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_F3"
+    },
+    "2": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_A3"
+    },
+    "19": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_F4"
+    },
+    "0": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_Silence"
+    },
+    "13": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_01_D4"
+    }
+  },
+  {
+    "5": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_B3"
+    },
+    "6": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_B4"
+    },
+    "7": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_C2"
+    },
+    "8": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_C3"
+    },
+    "9": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_C4"
+    },
+    "11": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_D2"
+    },
+    "1": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_A2"
+    },
+    "12": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_D3"
+    },
+    "3": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_A4"
+    },
+    "4": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_B2"
+    },
+    "14": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_E2"
+    },
+    "10": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_C5"
+    },
+    "15": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_E3"
+    },
+    "22": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_G4"
+    },
+    "16": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_E4"
+    },
+    "21": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_G3"
+    },
+    "17": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_F2"
+    },
+    "20": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_G2"
+    },
+    "18": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_F3"
+    },
+    "2": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_A3"
+    },
+    "19": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_F4"
+    },
+    "0": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_Silence"
+    },
+    "13": {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_02_D4"
+    }
+  },
+  [
+    {
+      "pianoNoteRes": "SFX_SceneObject_ARK_PianoStair_PlanB"
+    }
+  ]
+]

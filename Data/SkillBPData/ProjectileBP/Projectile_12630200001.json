@@ -1,0 +1,76 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12630200",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10263_Skill_Throw_01",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0.1,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "nodeMap": {
+    "42": {
+      "UID": "25d95937-4896-483b-a87f-4c3be6f06b7e",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 42
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e656ca4a-5a77-4487-ae83-a418e3859774",
+      "isAbilityEndRemove": false,
+      "soundId": "battle_projectilehit_dark_h",
+      "NodeID": 33
+    },
+    "34": {
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "d93133df-5abc-465d-9cd8-ddddb629aa86",
+      "name": "doActionsByConditions",
+      "NodeID": 34,
+      "elseActionIds": [
+        33
+      ]
+    },
+    "36": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 126301,
+      "name": "createEntity",
+      "UID": "3b5e241c-bcf0-4f6f-ad09-fc19f8bccc17",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 36,
+      "pos": "PROJECTILE"
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    36,
+    34
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "duration": 2,
+  "acceleration": 0
+}

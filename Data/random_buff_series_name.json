@@ -1,0 +1,101 @@
+{
+  "3": {
+    "bossPoster1": "$UI_GameMod_Tower_img_2.png",
+    "bossPoster2": "$UI_GameMod_Tower_img_2_1.png",
+    "bossPoster3": "$UI_GameMod_Tower_img_2_2.png",
+    "buffSeriesIcon": "$UI_Img_Tower_Icon5.png",
+    "buffSeriesIntro": 2083026523,
+    "buffSeriesName": 1336688893,
+    "coreBuffIcon": "$UI_Rogue_Heal_Equip_Large.png",
+    "coreBuffIconTip": 734,
+    "coreBuffName": 1967742097,
+    "initLock": 0,
+    "preselectionName": 2134921952
+  },
+  "4": {
+    "bossPoster1": "$UI_GameMod_Tower_img_5.png",
+    "bossPoster2": "$UI_GameMod_Tower_img_5_1.png",
+    "bossPoster3": "$UI_GameMod_Tower_img_5_2.png",
+    "buffSeriesIcon": "$UI_Img_Tower_Icon7.png",
+    "buffSeriesIntro": 1667068365,
+    "buffSeriesName": 1701073843,
+    "coreBuffIcon": "$UI_Rogue_Defense_Equip_Large.png",
+    "coreBuffIconTip": 736,
+    "coreBuffName": 2096034864,
+    "initLock": 0,
+    "preselectionName": 1606573362
+  },
+  "7": {
+    "coreBuffName": 1773339977,
+    "initLock": 1,
+    "preselectionName": 2068901294,
+    "buffSeriesIcon": "$UI_Img_Tower_Icon9.png",
+    "buffSeriesName": 1324694114,
+    "coreBuffIcon": "$UI_Rogue_Chaos_Equip_Large.png"
+  },
+  "6": {
+    "bossPoster1": "$UI_GameMod_Tower_img_1.png",
+    "bossPoster2": "$UI_GameMod_Tower_img_1_1.png",
+    "bossPoster3": "$UI_GameMod_Tower_img_1_2.png",
+    "buffSeriesIcon": "$UI_Img_Tower_Icon3.png",
+    "buffSeriesIntro": 1079367696,
+    "buffSeriesName": 1784778100,
+    "coreBuffIcon": "$UI_Rogue_Money_Equip_Large.png",
+    "coreBuffIconTip": 740,
+    "coreBuffName": 1374507434,
+    "initLock": 0,
+    "preselectionName": 1702733405
+  },
+  "5": {
+    "bossPoster1": "$UI_GameMod_Tower_img_4.png",
+    "bossPoster2": "$UI_GameMod_Tower_img_4_1.png",
+    "bossPoster3": "$UI_GameMod_Tower_img_4_2.png",
+    "buffSeriesIcon": "$UI_Img_Tower_Icon6.png",
+    "buffSeriesIntro": 1561721120,
+    "buffSeriesName": 1125125224,
+    "coreBuffIcon": "$UI_Rogue_Berserker_Equip_Large.png",
+    "coreBuffIconTip": 738,
+    "coreBuffName": 1446709737,
+    "initLock": 0,
+    "preselectionName": 1268988436
+  },
+  "0": {
+    "bossPoster1": "$UI_GameMod_Tower_img_7.png",
+    "bossPoster2": "$UI_GameMod_Tower_img_7_1.png",
+    "bossPoster3": "$UI_GameMod_Tower_img_7_2.png",
+    "buffSeriesIcon": "$UI_Img_Tower_Icon8.png",
+    "buffSeriesIntro": 1679209277,
+    "buffSeriesName": 1869289875,
+    "coreBuffIcon": "$UI_Rogue_Skill_Equip_Large.png",
+    "coreBuffIconTip": 728,
+    "coreBuffName": 1917967539,
+    "initLock": 0,
+    "preselectionName": 1727645183
+  },
+  "1": {
+    "bossPoster1": "$UI_GameMod_Tower_img_6.png",
+    "bossPoster2": "$UI_GameMod_Tower_img_6_1.png",
+    "bossPoster3": "$UI_GameMod_Tower_img_6_2.png",
+    "buffSeriesIcon": "$UI_Img_Tower_Icon2.png",
+    "buffSeriesIntro": 1402107433,
+    "buffSeriesName": 1605129000,
+    "coreBuffIcon": "$UI_Rogue_Ultimate_Equip_Large.png",
+    "coreBuffIconTip": 730,
+    "coreBuffName": 1349652995,
+    "initLock": 0,
+    "preselectionName": 1333863510
+  },
+  "2": {
+    "bossPoster1": "$UI_GameMod_Tower_img_3.png",
+    "bossPoster2": "$UI_GameMod_Tower_img_3_1.png",
+    "bossPoster3": "$UI_GameMod_Tower_img_3_2.png",
+    "buffSeriesIcon": "$UI_Img_Tower_Icon4.png",
+    "buffSeriesIntro": 1314057922,
+    "buffSeriesName": 1296282286,
+    "coreBuffIcon": "$UI_Rogue_Shield_Equip_Large.png",
+    "coreBuffIconTip": 732,
+    "coreBuffName": 1944344369,
+    "initLock": 0,
+    "preselectionName": 1081628223
+  }
+}

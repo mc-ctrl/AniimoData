@@ -1,0 +1,177 @@
+{
+  "5": {
+    "cateType": 1,
+    "tab": "video",
+    "cate": "video",
+    "icon": "$UI_Img_Setting_TabIcon_Display.png",
+    "tabName": 1290235127,
+    "cateName": 1595592254
+  },
+  "6": {
+    "cateType": 1,
+    "tab": "video",
+    "cate": "other",
+    "icon": "$UI_Img_Setting_TabIcon_Display.png",
+    "tabName": 1716132359,
+    "cateName": 1088048301
+  },
+  "7": {
+    "cateType": 1,
+    "tab": "audio",
+    "cate": "mainVol",
+    "icon": "$UI_Img_Setting_TabIcon_Voice.png",
+    "tabName": 1799794721,
+    "cateName": 1950709021
+  },
+  "8": {
+    "cateType": 1,
+    "tab": "audio",
+    "cate": "volBalance",
+    "icon": "$UI_Img_Setting_TabIcon_Voice.png",
+    "tabName": 1180078129,
+    "cateName": 1935671204
+  },
+  "9": {
+    "cateType": 1,
+    "tab": "audio",
+    "cate": "volSet",
+    "icon": "$UI_Img_Setting_TabIcon_Voice.png",
+    "tabName": 2062531749,
+    "cateName": 1758999860
+  },
+  "0": {
+    "cateType": 1,
+    "tab": "game",
+    "cate": "escape",
+    "icon": "$UI_Img_Setting_TabIcon_Game.png",
+    "tabName": 1590934546,
+    "cateName": 1653595754
+  },
+  "1": {
+    "cateType": 1,
+    "tab": "game",
+    "cate": "ui",
+    "icon": "$UI_Img_Setting_TabIcon_Game.png",
+    "tabName": 1969392743,
+    "cateName": 1215647932
+  },
+  "12": {
+    "cate": "message",
+    "tab": "word",
+    "tabName": 1145111672,
+    "cateType": 1
+  },
+  "3": {
+    "cateType": 1,
+    "tab": "game",
+    "cate": "infoStamp",
+    "icon": "$UI_Img_Setting_TabIcon_Game.png",
+    "tabName": 1349403675,
+    "cateName": 2023147937
+  },
+  "4": {
+    "cateType": 1,
+    "tab": "operate",
+    "platform": [
+      2,
+      4
+    ],
+    "cate": "input",
+    "icon": "$UI_Img_Setting_TabIcon_Keyboard.png",
+    "tabName": 1315221428,
+    "cateName": 2036220467
+  },
+  "24": {
+    "cateType": 1,
+    "tab": "storage",
+    "cate": "photoStorage",
+    "icon": "$UI_Img_PetManual_TabIcon_Pic.png",
+    "tabName": 1748202360,
+    "cateName": 2136018742
+  },
+  "14": {
+    "cate": "message",
+    "tab": "audioplay",
+    "tabName": 1628739203,
+    "cateType": 0
+  },
+  "10": {
+    "cateType": 1,
+    "tab": "language",
+    "cate": "null",
+    "icon": "$UI_Img_Setting_TabIcon_Language.png",
+    "tabName": 1629784685
+  },
+  "15": {
+    "cate": "message",
+    "tab": "bullet",
+    "tabName": 1325876195,
+    "cateType": 0
+  },
+  "16": {
+    "cate": "message",
+    "tab": "bulletSet",
+    "tabName": 1508647180,
+    "cateType": 1
+  },
+  "22": {
+    "cate": "messagePerform",
+    "tab": "chatBubble",
+    "tabName": 1948867469,
+    "cateType": 0
+  },
+  "17": {
+    "cate": "messageInform",
+    "tab": "messageInform",
+    "tabName": 1991363202,
+    "cateType": 0
+  },
+  "21": {
+    "cateType": 0,
+    "tab": "account",
+    "cate": "personaInfo",
+    "tabName": 1958658244,
+    "cateName": 1461686174
+  },
+  "18": {
+    "cateType": 1,
+    "tab": "account",
+    "cate": "accountSetting",
+    "icon": "$UI_Img_Install_TabIcon_Cutover.png",
+    "tabName": 2095473793,
+    "cateName": 1408760256
+  },
+  "20": {
+    "cateType": 1,
+    "tab": "account",
+    "cate": "other",
+    "icon": "$UI_Img_Install_TabIcon_Cutover.png",
+    "tabName": 2146119316,
+    "cateName": 1251831574
+  },
+  "19": {
+    "cateType": 1,
+    "tab": "account",
+    "platform": [
+      1
+    ],
+    "cate": "accountRealName",
+    "icon": "$UI_Img_Install_TabIcon_Cutover.png",
+    "tabName": 1636490522,
+    "cateName": 1636721966
+  },
+  "2": {
+    "cateType": 1,
+    "tab": "game",
+    "cate": "function",
+    "icon": "$UI_Img_Setting_TabIcon_Game.png",
+    "tabName": 1204152732,
+    "cateName": 1907091477
+  },
+  "13": {
+    "cate": "message",
+    "tab": "audio",
+    "tabName": 1563918349,
+    "cateType": 1
+  }
+}

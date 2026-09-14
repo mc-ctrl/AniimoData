@@ -1,0 +1,268 @@
+{
+  "nodeMap": {
+    "52": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "8d924450-553b-463c-99ef-a3bdce2b46d0",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 52
+    },
+    "53": {
+      "UID": "c79ffb72-d0ec-463f-ab06-16069b1d6000",
+      "targetPos": "POS_OR_TARGET",
+      "name": "checkTargetPos",
+      "NodeID": 53
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ac89ba73-2740-4b6c-b118-9cbad7d1012d",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore01",
+      "speed": 1,
+      "NodeID": 35
+    },
+    "31": {
+      "UID": "8fe3552f-77e0-48d1-bd44-3f9639aa8ab7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "NodeID": 31
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        53
+      ],
+      "UID": "913780be-458f-4392-8071-0bababd994e5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21
+      ],
+      "NodeID": 20
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "cb601873-f732-4b8c-8d22-a32c755b1966",
+      "target": "CASTER",
+      "NodeID": 2
+    },
+    "51": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "643182e2-9d69-4d7b-91f4-aae35d32a739",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 51
+    },
+    "4": {
+      "UID": "3748ce35-b610-42c8-a14a-6d1501550677",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34,
+          2,
+          35
+        ]
+      },
+      "NodeID": 4
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 50,
+      "UID": "949876d6-5bef-427d-b7ef-9020c0cfe7a3"
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          23,
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.33,
+      "NodeID": 18,
+      "UID": "fc23aba6-23c8-41f1-befb-a95d1b89266f"
+    },
+    "48": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "45335477-e326-43dc-b7db-a6ea36cfa7a2",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        1.7,
+        0
+      ],
+      "templateId": 12330500001,
+      "name": "createProjectile",
+      "UID": "ea8b8b16-5fa3-4026-8b14-276f00747f41",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "targetPos": "TARGET",
+      "NodeID": 15,
+      "offsetRotation": [
+        45,
+        0,
+        0
+      ]
+    },
+    "21": {
+      "offsetXYZ": [
+        0,
+        1.7,
+        0
+      ],
+      "templateId": 12330500003,
+      "name": "createProjectile",
+      "UID": "44694b7d-6ca2-4859-8dfe-47ce6bbe3eaf",
+      "offsetRotation": [
+        45,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 21,
+      "targetPos": [
+        0,
+        0,
+        12
+      ]
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "e8d09809-c027-4fc6-b276-47a7b7fff714",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 16
+    },
+    "27": {
+      "UID": "cf4a8799-564c-4cac-bd83-69b391aea228",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 27
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 28,
+      "UID": "08eb7561-fb5e-4e83-9af6-09026a0d53d2"
+    },
+    "49": {
+      "actionIds": [
+        51
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "a64b55b2-cc9b-4456-9418-6d0cec6196bb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        52
+      ],
+      "NodeID": 49
+    },
+    "30": {
+      "UID": "58876905-6ee0-4388-8406-946bd1410d4d",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "UID": "b0ec95bb-f74f-4f16-b1a4-cd3cd0873049",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 32
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        1.7,
+        0
+      ],
+      "templateId": 12330500002,
+      "name": "createProjectile",
+      "UID": "93a8494a-6611-44cf-a1da-0dc20bcbd54c",
+      "offsetRotation": [
+        45,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 19,
+      "targetPos": "POS_OR_TARGET"
+    },
+    "34": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f31261a5-a47c-4cb3-bd70-cfd4e1a94a99",
+      "target": "OWNER",
+      "NodeID": 34,
+      "animId": "Skill_Hypnospore"
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2d8cffb8-59ff-469f-be7f-7f2131c9303d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10233_SleepSpore",
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_12330500",
+  "NodeID": 6,
+  "UID": "779fb967-9053-4ef9-a94b-80cccdbfd63e",
+  "eventIds": [
+    4,
+    31,
+    18,
+    50,
+    28
+  ],
+  "layer": "Base",
+  "length": 2.84
+}

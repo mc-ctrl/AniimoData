@@ -1,0 +1,4583 @@
+{
+  "1005503": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1210998287,
+      "ability": 3000041,
+      "reward": 51
+    }
+  },
+  "1013102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000321,
+      "reward": 51
+    }
+  },
+  "1013202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000331,
+      "reward": 51
+    }
+  },
+  "1013301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1629268673,
+      "ability": 3000341,
+      "reward": 51
+    }
+  },
+  "1013302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1739089332,
+      "ability": 3000342,
+      "reward": 51
+    }
+  },
+  "1014301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1452113502,
+      "ability": 3000401,
+      "reward": 51
+    }
+  },
+  "1014302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1235785505,
+      "ability": 3000402,
+      "reward": 51
+    }
+  },
+  "1016202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1086192247,
+      "ability": 3000082,
+      "reward": 51
+    }
+  },
+  "1016203": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1181326033,
+      "ability": 3000083,
+      "reward": 51
+    }
+  },
+  "1017201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1406598364,
+      "ability": 3000111,
+      "reward": 51
+    }
+  },
+  "1017301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1923669268,
+      "ability": 3000121,
+      "reward": 51
+    }
+  },
+  "1017401": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1917095291,
+      "ability": 3000131,
+      "reward": 51
+    }
+  },
+  "1018101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1651636950,
+      "ability": 3000141,
+      "reward": 51
+    }
+  },
+  "1018103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1170121509,
+      "ability": 3000142,
+      "reward": 51
+    }
+  },
+  "1018401": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1904804654,
+      "ability": 3000151,
+      "reward": 51
+    }
+  },
+  "1018403": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1510895965,
+      "ability": 3000152,
+      "reward": 51
+    }
+  },
+  "1018501": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1578676451,
+      "ability": 3000161,
+      "reward": 51
+    }
+  },
+  "1018502": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1728900686,
+      "ability": 3000162,
+      "reward": 51
+    }
+  },
+  "1018503": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1387332359,
+      "ability": 3000163,
+      "reward": 51
+    }
+  },
+  "1018701": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1650267193,
+      "ability": 3000171,
+      "reward": 51
+    }
+  },
+  "1018703": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1936901454,
+      "ability": 3000172,
+      "reward": 51
+    }
+  },
+  "1035100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1035200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1014100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1013100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000251
+      ]
+    }
+  },
+  "1013200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000261
+      ]
+    }
+  },
+  "1013300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000271,
+        3000272
+      ]
+    }
+  },
+  "1020101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1355748682,
+      "ability": 3000441,
+      "reward": 50
+    }
+  },
+  "1020301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1787549594,
+      "ability": 3000451,
+      "reward": 51
+    }
+  },
+  "1020302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1277655492,
+      "ability": 3000452,
+      "reward": 51
+    }
+  },
+  "1020701": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1472017456,
+      "ability": 3000461,
+      "reward": 51
+    }
+  },
+  "1004300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000241,
+        3000242,
+        3000243
+      ]
+    }
+  },
+  "1021102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1107088209,
+      "ability": 3000412,
+      "reward": 51
+    }
+  },
+  "1021103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1775985604,
+      "ability": 3000413,
+      "reward": 51
+    }
+  },
+  "1021104": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1837608389,
+      "ability": 3000414,
+      "reward": 51
+    }
+  },
+  "1021105": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1933166867,
+      "ability": 3000415,
+      "reward": 51
+    }
+  },
+  "1021106": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1166000018,
+      "ability": 3000416,
+      "reward": 51
+    }
+  },
+  "1021201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1534607150,
+      "ability": 3000421,
+      "reward": 51
+    }
+  },
+  "1021202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2011535815,
+      "ability": 3000422,
+      "reward": 51
+    }
+  },
+  "1021203": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1649740812,
+      "ability": 3000423,
+      "reward": 51
+    }
+  },
+  "1021204": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1085310447,
+      "ability": 3000424,
+      "reward": 51
+    }
+  },
+  "1021205": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1995353946,
+      "ability": 3000425,
+      "reward": 51
+    }
+  },
+  "1021206": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1365883277,
+      "ability": 3000426,
+      "reward": 51
+    }
+  },
+  "1016200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000061,
+        3000062,
+        3000063
+      ]
+    }
+  },
+  "1022102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1739780392,
+      "ability": 3000471,
+      "reward": 51
+    }
+  },
+  "1028100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1022201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1577578219,
+      "ability": 3000481,
+      "reward": 51
+    }
+  },
+  "1022202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1479647171,
+      "ability": 3000482,
+      "reward": 51
+    }
+  },
+  "1018100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000111,
+        3000112
+      ]
+    }
+  },
+  "1045302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000792,
+      "reward": 51
+    }
+  },
+  "1018400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000121,
+        3000122
+      ]
+    }
+  },
+  "1018500": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000131,
+        3000132,
+        3000133,
+        3000134
+      ]
+    }
+  },
+  "1023103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1588777442,
+      "ability": 3000493,
+      "reward": 51
+    }
+  },
+  "1005500": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1023202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1597985503,
+      "ability": 3000502,
+      "reward": 51
+    }
+  },
+  "1023203": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2138899925,
+      "ability": 3000503,
+      "reward": 51
+    }
+  },
+  "1051200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1026101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1797831085,
+      "ability": 3000521,
+      "reward": 51
+    }
+  },
+  "1026200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000411,
+        3000412,
+        3000413,
+        3000414,
+        3000415
+      ]
+    }
+  },
+  "1047103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000833,
+      "reward": 51
+    }
+  },
+  "1020700": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000351
+      ]
+    }
+  },
+  "1020100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 100,
+      "collectEntryList": [
+        3000331
+      ]
+    }
+  },
+  "1026201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1765900230,
+      "ability": 3000531,
+      "reward": 51
+    }
+  },
+  "1002700": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000181,
+        3000182
+      ]
+    }
+  },
+  "1047503": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000853,
+      "reward": 51
+    }
+  },
+  "1026204": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1562635070,
+      "ability": 3000533,
+      "reward": 51
+    }
+  },
+  "1002200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000201
+      ]
+    }
+  },
+  "1002400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000191
+      ]
+    }
+  },
+  "1004101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2084921565,
+      "ability": 3000281,
+      "reward": 51
+    }
+  },
+  "1017100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000071
+      ]
+    }
+  },
+  "1045400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000491
+      ]
+    }
+  },
+  "1005200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000021,
+        3000022
+      ]
+    }
+  },
+  "1017101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1311388648,
+      "ability": 3000101,
+      "reward": 51
+    }
+  },
+  "1016102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2113067034,
+      "ability": 3000072,
+      "reward": 51
+    }
+  },
+  "1044100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1002100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000161,
+        3000162
+      ]
+    }
+  },
+  "1004301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2107171407,
+      "ability": 3000301,
+      "reward": 51
+    }
+  },
+  "1023100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000381,
+        3000382,
+        3000383
+      ]
+    }
+  },
+  "1017300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000091
+      ]
+    }
+  },
+  "1019100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1020300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000341,
+        3000342,
+        3000343
+      ]
+    }
+  },
+  "1019400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000151,
+        3000152,
+        3000153
+      ]
+    }
+  },
+  "1032402": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1699755184,
+      "ability": 3000651,
+      "reward": 51
+    }
+  },
+  "1036300": {
+    "0": {
+      "reward": 0
+    }
+  },
+  "1021100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000311,
+        3000312,
+        3000313,
+        3000314,
+        3000315,
+        3000316
+      ]
+    }
+  },
+  "1033102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1690306941,
+      "ability": 3000662,
+      "reward": 51
+    }
+  },
+  "1033103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1900982921,
+      "ability": 3000663,
+      "reward": 51
+    }
+  },
+  "1021200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000321,
+        3000322,
+        3000323,
+        3000324,
+        3000325,
+        3000326
+      ]
+    }
+  },
+  "1021300": {
+    "0": {
+      "reward": 101
+    }
+  },
+  "1004500": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1017400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000101,
+        3000102
+      ]
+    }
+  },
+  "1017200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000081
+      ]
+    }
+  },
+  "1017402": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1098665794,
+      "ability": 3000132,
+      "reward": 51
+    }
+  },
+  "6999301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1842513275,
+      "ability": 3000961,
+      "reward": 51
+    }
+  },
+  "1018700": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000141,
+        3000142
+      ]
+    }
+  },
+  "6999300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1051100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1032300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000451,
+        3000452,
+        3000453,
+        3000454
+      ]
+    }
+  },
+  "1050301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000891,
+      "reward": 51
+    }
+  },
+  "1048100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1048300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1050100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1050300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000521
+      ]
+    }
+  },
+  "1047502": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000852,
+      "reward": 51
+    }
+  },
+  "1047501": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000851,
+      "reward": 51
+    }
+  },
+  "1047500": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000511,
+        3000512,
+        3000513
+      ]
+    }
+  },
+  "1026205": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1341665809,
+      "ability": 3000534,
+      "reward": 51
+    }
+  },
+  "1047102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000832,
+      "reward": 51
+    }
+  },
+  "1047101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000831,
+      "reward": 51
+    }
+  },
+  "1047100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000501,
+        3000502,
+        3000503
+      ]
+    }
+  },
+  "1045401": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000801,
+      "reward": 51
+    }
+  },
+  "1045301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000791,
+      "reward": 51
+    }
+  },
+  "1045300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000481
+      ]
+    }
+  },
+  "1045101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000781,
+      "reward": 51
+    }
+  },
+  "1045100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000471
+      ]
+    }
+  },
+  "1044300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1023300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1022100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000361
+      ]
+    }
+  },
+  "1022200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000371,
+        3000372,
+        3000373
+      ]
+    }
+  },
+  "1047400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1037300": {
+    "0": {
+      "reward": 0
+    }
+  },
+  "1037100": {
+    "0": {
+      "reward": 0
+    }
+  },
+  "1036100": {
+    "0": {
+      "reward": 0
+    }
+  },
+  "1033303": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1447167914,
+      "ability": 3000673,
+      "reward": 51
+    }
+  },
+  "1033302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1937904442,
+      "ability": 3000672,
+      "reward": 51
+    }
+  },
+  "1033301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1747630599,
+      "ability": 3000671,
+      "reward": 51
+    }
+  },
+  "1033300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000541,
+        3000542,
+        3000543
+      ]
+    }
+  },
+  "1033101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1655030022,
+      "ability": 3000661,
+      "reward": 51
+    }
+  },
+  "1033100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000531,
+        3000532,
+        3000533
+      ]
+    }
+  },
+  "1032400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1012200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1032303": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1218455034,
+      "ability": 3000643,
+      "reward": 51
+    }
+  },
+  "1032302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1670748187,
+      "ability": 3000642,
+      "reward": 51
+    }
+  },
+  "1032301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1187247424,
+      "ability": 3000641,
+      "reward": 51
+    }
+  },
+  "1032103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2054905522,
+      "ability": 3000631,
+      "reward": 51
+    }
+  },
+  "1032100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000441
+      ]
+    }
+  },
+  "1029301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000611,
+      "reward": 51
+    }
+  },
+  "1016100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000051,
+        3000052,
+        3000053
+      ]
+    }
+  },
+  "1029100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1028500": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1028400": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1028301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000571,
+      "reward": 51
+    }
+  },
+  "1028300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000421,
+        3000422
+      ]
+    }
+  },
+  "1028200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1026300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1043100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1026202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1894172562,
+      "ability": 3000532,
+      "reward": 51
+    }
+  },
+  "1026105": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1866812927,
+      "ability": 3000523,
+      "reward": 51
+    }
+  },
+  "1026102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2037959192,
+      "ability": 3000522,
+      "reward": 51
+    }
+  },
+  "1026100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000401,
+        3000402,
+        3000403
+      ]
+    }
+  },
+  "1043300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1023201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1918512954,
+      "ability": 3000501,
+      "reward": 51
+    }
+  },
+  "1023200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000391,
+        3000392,
+        3000393
+      ]
+    }
+  },
+  "1023102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1142376152,
+      "ability": 3000492,
+      "reward": 51
+    }
+  },
+  "1023101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1116062390,
+      "ability": 3000491,
+      "reward": 51
+    }
+  },
+  "1016300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1001100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 100
+    }
+  },
+  "1004100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 100,
+      "collectEntryList": [
+        3000221,
+        3000222
+      ]
+    }
+  },
+  "1001200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000041,
+        3000042,
+        3000043
+      ]
+    }
+  },
+  "1002600": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000171,
+        3000172,
+        3000173,
+        3000174
+      ]
+    }
+  },
+  "1002500": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1003100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000281,
+        3000282
+      ]
+    }
+  },
+  "1003200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000291,
+        3000292,
+        3000293,
+        3000294
+      ]
+    }
+  },
+  "1003300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1029300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000431
+      ]
+    }
+  },
+  "1001201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1580534504,
+      "ability": 3000061,
+      "reward": 51
+    }
+  },
+  "1001202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1631177297,
+      "ability": 3000062,
+      "reward": 51
+    }
+  },
+  "1014200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1002101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1866232196,
+      "ability": 3000211,
+      "reward": 51
+    }
+  },
+  "1002102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1414729395,
+      "ability": 3000212,
+      "reward": 51
+    }
+  },
+  "1019401": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1766345094,
+      "ability": 3000201,
+      "reward": 51
+    }
+  },
+  "1002201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1405041682,
+      "ability": 3000251,
+      "reward": 51
+    }
+  },
+  "1016101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1657782689,
+      "ability": 3000071,
+      "reward": 51
+    }
+  },
+  "1016103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1851932814,
+      "ability": 3000073,
+      "reward": 51
+    }
+  },
+  "1016201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1530597148,
+      "ability": 3000081,
+      "reward": 51
+    }
+  },
+  "1002300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000211
+      ]
+    }
+  },
+  "1002301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1900112575,
+      "ability": 3000261,
+      "reward": 51
+    }
+  },
+  "1002401": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1621233229,
+      "ability": 3000241,
+      "reward": 51
+    }
+  },
+  "1002503": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1322532808,
+      "ability": 3000271,
+      "reward": 51
+    }
+  },
+  "1019402": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1632609017,
+      "ability": 3000202,
+      "reward": 51
+    }
+  },
+  "1004102": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1779588707,
+      "ability": 3000282,
+      "reward": 51
+    }
+  },
+  "1005300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000031,
+        3000032,
+        3000033,
+        3000034,
+        3000035
+      ]
+    }
+  },
+  "1002601": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1335668702,
+      "ability": 3000221,
+      "reward": 51
+    }
+  },
+  "1002602": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1855270143,
+      "ability": 3000222,
+      "reward": 51
+    }
+  },
+  "1002603": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "ability": 3000223,
+      "reward": 51
+    }
+  },
+  "1002701": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1398630746,
+      "ability": 3000231,
+      "reward": 51
+    }
+  },
+  "1002702": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1595360377,
+      "ability": 3000232,
+      "reward": 51
+    }
+  },
+  "1004200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000231,
+        3000232
+      ]
+    }
+  },
+  "1003101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1837795371,
+      "ability": 3000351,
+      "reward": 51
+    }
+  },
+  "1003103": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1459442783,
+      "ability": 3000352,
+      "reward": 51
+    }
+  },
+  "1005100": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 100,
+      "collectEntryList": [
+        3000011,
+        3000012
+      ]
+    }
+  },
+  "1003201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1223495988,
+      "ability": 3000361,
+      "reward": 51
+    }
+  },
+  "1003202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1107351580,
+      "ability": 3000362,
+      "reward": 51
+    }
+  },
+  "1003203": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1144527135,
+      "ability": 3000363,
+      "reward": 51
+    }
+  },
+  "1014300": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101,
+      "collectEntryList": [
+        3000301,
+        3000302,
+        3000303
+      ]
+    }
+  },
+  "1019200": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "reward": 101
+    }
+  },
+  "1003305": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2098424765,
+      "ability": 3000371,
+      "reward": 51
+    }
+  },
+  "1004201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1208044170,
+      "ability": 3000291,
+      "reward": 51
+    }
+  },
+  "1004202": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1693231132,
+      "ability": 3000292,
+      "reward": 51
+    }
+  },
+  "1004302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1441551026,
+      "ability": 3000302,
+      "reward": 51
+    }
+  },
+  "1004303": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1561180150,
+      "ability": 3000303,
+      "reward": 51
+    }
+  },
+  "1005101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1416891900,
+      "ability": 3000011,
+      "reward": 51
+    }
+  },
+  "1005104": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1368070698,
+      "ability": 3000012,
+      "reward": 51
+    }
+  },
+  "1005201": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1281089089,
+      "ability": 3000021,
+      "reward": 51
+    }
+  },
+  "1005204": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1553118159,
+      "ability": 3000022,
+      "reward": 51
+    }
+  },
+  "1005301": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1228937711,
+      "ability": 3000031,
+      "reward": 51
+    }
+  },
+  "1005302": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 2146070818,
+      "ability": 3000032,
+      "reward": 51
+    }
+  },
+  "1005303": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1433822566,
+      "ability": 3000033,
+      "reward": 51
+    }
+  },
+  "1005304": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1350367273,
+      "ability": 3000034,
+      "reward": 51
+    }
+  },
+  "1021101": {
+    "1": {
+      "shinyStyle1": 1,
+      "shinyStyle10": 10,
+      "shinyStyle11": 11,
+      "shinyStyle12": 12,
+      "shinyStyle2": 2,
+      "shinyStyle3": 3,
+      "reward": 50,
+      "shinyStyle5": 5,
+      "shinyStyle6": 6,
+      "shinyStyle7": 7,
+      "shinyStyle8": 8,
+      "shinyStyle9": 9,
+      "shinyStyle4": 4
+    },
+    "0": {
+      "clue": 1137255227,
+      "ability": 3000411,
+      "reward": 51
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116104",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "registerCharacterBuff",
+      "calcInfo": {
+        "taken_dmg_dec_rate_v": 0.15
+      },
+      "NodeID": 3,
+      "UID": "ac0f73d2-4b6e-4da9-aa11-26b0eac7bb8d",
+      "conditionType": 8,
+      "conditions": [
+        {
+          "name": "hasBuffTag",
+          "NodeID": 2,
+          "UID": "29509ffa-430a-4fce-9c17-cbafb6ca41c3",
+          "target": "TARGET",
+          "abilityType": 0,
+          "buffTag": 19
+        }
+      ],
+      "characterBuffType": 1
+    },
+    "13": {
+      "name": "hasBuffTag",
+      "UID": "9e9ddcc8-80e6-4eb8-af85-4612f52649aa",
+      "target": {
+        "UID": "07a5effe-9eed-4642-86d3-fd5504df5cd0",
+        "name": "getEventAttackTarget",
+        "NodeID": 12
+      },
+      "NodeID": 13,
+      "buffTag": 19
+    },
+    "14": {
+      "target": {
+        "UID": "07a5effe-9eed-4642-86d3-fd5504df5cd0",
+        "name": "getEventAttackTarget",
+        "NodeID": 12
+      },
+      "duration": 6,
+      "buffId": 2116306,
+      "NodeID": 14,
+      "UID": "a9090537-19c7-4e11-8084-f30488cec0c8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        8,
+        13
+      ],
+      "UID": "6526a5b3-35e9-4930-84db-49a0557d0c85",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "333b9509-c8c6-4215-9dd3-9ef1b59b83bc",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "8": {
+      "UID": "ef9a3042-72cd-4d43-908d-8667a770cba4",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    11
+  ]
+}

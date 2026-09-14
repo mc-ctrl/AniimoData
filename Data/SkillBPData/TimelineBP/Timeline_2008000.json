@@ -1,0 +1,169 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "overrideCaster": "CURPET",
+      "calcInfo": {
+        "instant_dmg_fix": {
+          "rValue": 1,
+          "name": "multiply",
+          "UID": "e77e7b9a-d76c-4045-93c2-ceefa785353c",
+          "NodeID": 19,
+          "lValue": {
+            "key": "OverDamage",
+            "name": "getCacheVal",
+            "UID": "9520d618-1f5e-455c-8e7b-2e4513378a0e",
+            "target": "MASTER",
+            "NodeID": 18
+          }
+        }
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10007,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 5,
+        "hitCameraShakeId": 10003
+      },
+      "UID": "d8d8b3a2-4590-4010-9e90-295c1a2d9400",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 5
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "4474352a-417a-4485-945f-7b5e971dba5c",
+      "effectId": "Eff_Parmon_10052_Fireball_Rogue",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "c76750a1-ffb9-437d-b28d-7168f4e6c577",
+      "effectId": "Eff_Parmon_10052_Fireball_Rogue",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "duration": 2,
+      "actionIds": [
+        17,
+        7,
+        13,
+        16
+      ],
+      "NodeID": 10,
+      "UID": "a7149864-6484-4b7e-8f4b-448cf045507a",
+      "name": "addTimer"
+    },
+    "15": {
+      "UID": "6e1c0633-c802-43dd-9fb3-dc8acf223d67",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        5
+      ],
+      "NodeID": 7,
+      "UID": "eec95b84-f27b-4d56-b2e7-55d386e8ef7e",
+      "target": [
+        {
+          "offsetXYZ": [
+            -1.8,
+            0,
+            -0.7
+          ],
+          "shapeArgs": [
+            0,
+            0,
+            180,
+            0.1,
+            0
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 5,
+      "hitBoxId": "3",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 9.5,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 6.25,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "16": {
+      "offsetXYZ": [
+        0,
+        0.81,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "e035f46d-3d33-4333-bd2a-dea65b96e740",
+      "effectId": "Eff_Parmon_10023_Mon_Skill_Fireball_03",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "61c140bc-96ca-4db6-88b7-7e486ad46f67",
+      "effectId": "Eff_Parmon_Test_Firewave",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "11": {
+      "UID": "b2a38081-71d2-46d7-aeb9-0c40cd39146a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    }
+  },
+  "BPName": "timeline_2008000",
+  "NodeID": 1,
+  "UID": "daaeb583-63ce-4c1a-9c9d-ad41a423f8c8",
+  "eventIds": [
+    15,
+    11
+  ],
+  "layer": "Base",
+  "length": 5
+}

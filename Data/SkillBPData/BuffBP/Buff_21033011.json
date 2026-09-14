@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "skill_crit_inc_rate_v": 0
+  },
+  "calcInfoByLuaConfig": {
+    "id": 21033011,
+    "skill_crit_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_21033011",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

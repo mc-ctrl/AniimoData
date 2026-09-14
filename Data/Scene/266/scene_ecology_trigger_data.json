@@ -1,0 +1,77 @@
+{
+  "36169186": {
+    "name": "大大大大大",
+    "shapeType": 1,
+    "length": 8.17,
+    "id": 36169186,
+    "height": 10,
+    "width": 8.64,
+    "position": [
+      18.14,
+      0.1,
+      -3.1
+    ],
+    "petInControl": false,
+    "targetType": 3,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "36169125": {
+    "id": 36169125,
+    "radius": 5.81,
+    "height": 10,
+    "name": "大大大",
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 3,
+    "position": [
+      0.2,
+      0.1,
+      7.32
+    ]
+  },
+  "36169215": {
+    "id": 36169215,
+    "points": [
+      [
+        15.96,
+        0,
+        0.49
+      ],
+      [
+        4.27,
+        0,
+        4.16
+      ],
+      [
+        10.1,
+        0,
+        9.95
+      ],
+      [
+        19.89,
+        0,
+        7.75
+      ],
+      [
+        27.52,
+        0,
+        3.98
+      ]
+    ],
+    "height": 10,
+    "name": "大大大大大大大",
+    "shapeType": 2,
+    "petInControl": false,
+    "targetType": 3,
+    "position": [
+      8.99,
+      0.1,
+      8.32
+    ]
+  }
+}

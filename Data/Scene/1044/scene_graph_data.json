@@ -1,0 +1,104 @@
+{
+  "61644265": {
+    "graphId": 61644265,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "Out",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 1,
+        "sourcePortName": "state",
+        "targetNode": 2,
+        "targetPortName": "Value"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "1",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "1",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "2",
+        "targetNode": 5,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "a59167e1995644942d5667966d4fe602",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "efa08941-3219-4c92-b9e9-f40767949ab6",
+        "portCount": 12
+      },
+      "4": {
+        "_inputPortValues": {
+          "SpawnerId": 61644261
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "8a9186ac-9634-49af-9404-8bef0c44c060"
+      },
+      "5": {
+        "_inputPortValues": {
+          "SpawnerId": 61644263
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "926b8893-941b-4fb4-bf2b-51496f5adee6"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "c474e2a6-c3a8-4817-b17a-938c8ea5f1ba"
+      },
+      "1": {
+        "_inputPortValues": {
+          "LevelItemId": 61598166,
+          "DoOnce": false,
+          "fieldName": "state",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "state"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "7efbe66e-7f4e-420f-8689-739c219d00fa"
+      },
+      "2": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchIntNode",
+        "startInt": 0,
+        "uid": "a4686f93-cf32-47df-a39b-1a8fae0b7231",
+        "endInt": 1
+      }
+    }
+  }
+}

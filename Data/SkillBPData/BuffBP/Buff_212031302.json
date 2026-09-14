@@ -1,0 +1,305 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_212031302",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "tags": [
+    3
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "94364a6c-700e-4929-b155-1b01e5e92dfc",
+      "name": "createList",
+      "list": [
+        {
+          "dialogId": 20000237,
+          "name": "showDialog",
+          "UID": "e4dbeb93-1034-476d-a062-0e34a0bed900",
+          "target": "OWNER",
+          "NodeID": 4
+        },
+        {
+          "dialogId": 20000238,
+          "name": "showDialog",
+          "UID": "de13ac97-c6b7-4dfd-adf7-30d3652e8e47",
+          "target": "OWNER",
+          "NodeID": 12
+        },
+        {
+          "dialogId": 20000239,
+          "name": "showDialog",
+          "UID": "b054b21b-fabd-4e33-a991-7e023b8bbaf1",
+          "target": "OWNER",
+          "NodeID": 13
+        },
+        {
+          "dialogId": 20000241,
+          "name": "showDialog",
+          "UID": "81548060-efad-41dc-a7e5-f8d16b2f5965",
+          "target": "OWNER",
+          "NodeID": 34
+        },
+        {
+          "dialogId": 20000242,
+          "name": "showDialog",
+          "UID": "3e806298-cecc-451d-9f8f-12ce71492111",
+          "target": "OWNER",
+          "NodeID": 33
+        }
+      ],
+      "NodeID": 5
+    },
+    "38": {
+      "UID": "b05c2552-ff40-4783-90b7-7a7c8c592644",
+      "conditionIds": [
+        37,
+        39,
+        40
+      ],
+      "name": "conditionOr",
+      "NodeID": 38
+    },
+    "39": {
+      "buffId": 212031301,
+      "name": "hasBuff",
+      "UID": "da40504c-fa6d-4146-89a8-dd147f7153cb",
+      "target": "TARGET",
+      "NodeID": 39
+    },
+    "6": {
+      "NodeID": 6,
+      "UID": "d6c7512d-4ac8-48ff-b369-848490db9aba",
+      "name": "doActionByIndex",
+      "actionsListId": 5,
+      "index": {
+        "key": "lalala",
+        "name": "getRandomValueForAsyncActions",
+        "UID": "76c4fb41-7456-422e-84f5-4433de72e7fb",
+        "valueList": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "NodeID": 32
+      }
+    },
+    "7": {
+      "eventName": "lalalaEvent",
+      "NodeID": 7,
+      "UID": "bd075400-0433-448c-b7dd-dbda25e4686c",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        6
+      ]
+    },
+    "31": {
+      "key": "lalala",
+      "triggerEventName": "lalalaEvent",
+      "randomMinVal": 1,
+      "NodeID": 31,
+      "UID": "f81f5228-cf3f-451e-a373-4a765569955d",
+      "name": "genRandomIntForAsyncActions",
+      "forbidSameAsPrev": true,
+      "randomMaxVal": 3
+    },
+    "40": {
+      "buffId": 212031302,
+      "name": "hasBuff",
+      "UID": "ee7d29a5-c6ac-4742-a608-3e1680fd1cd9",
+      "target": "TARGET",
+      "NodeID": 40
+    },
+    "21": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "590200ba-0f83-4296-b278-df12f95c477e",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 21
+    },
+    "37": {
+      "buffId": 2120313,
+      "name": "hasBuff",
+      "UID": "00381eb4-2553-4fb9-a125-c5f3c1c71bdc",
+      "target": "TARGET",
+      "NodeID": 37
+    },
+    "4": {
+      "dialogId": 20000237,
+      "name": "showDialog",
+      "UID": "e4dbeb93-1034-476d-a062-0e34a0bed900",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "17": {
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "8d5a1ec9-9a65-4436-bd9a-db8d3560f028",
+      "name": "doActionsByConditions",
+      "NodeID": 17,
+      "elseActionIds": [
+        16
+      ]
+    },
+    "26": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ff699b64-b460-49ce-8c54-cdb5bea206fb",
+      "target": "OWNER",
+      "NodeID": 26,
+      "animId": "Skill_Scream_End"
+    },
+    "10": {
+      "key": "1",
+      "duration": 1.1,
+      "actionIds": [
+        36,
+        25,
+        15,
+        31,
+        7
+      ],
+      "NodeID": 10,
+      "UID": "60a2a890-59b8-440e-a4f9-160840767717",
+      "name": "addTimer"
+    },
+    "15": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 21,
+      "NodeID": 15,
+      "UID": "590836e4-f315-437c-81c7-44afa59d2969",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            45,
+            2.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 4,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "ignoreOwner": true,
+      "actionIds": [
+        21,
+        28,
+        17
+      ]
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a8d0e4be-9e9e-485a-b7ec-cd66e16fa6df",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10203_Skill_NoseWave",
+      "NodeID": 25
+    },
+    "16": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2120313,
+      "NodeID": 16,
+      "UID": "63bf3458-c25f-45dc-b178-9a2edff9d70f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "27": {
+      "key": "2",
+      "duration": 1.66,
+      "actionIds": [
+        26
+      ],
+      "NodeID": 27,
+      "UID": "c68f9daf-a927-4372-9ece-7511522e4bab",
+      "name": "addTimer"
+    },
+    "28": {
+      "UID": "13bcb873-97a7-466c-b9b1-a2739a8c5c66",
+      "state": 2,
+      "name": "setPetControlState",
+      "NodeID": 28
+    },
+    "33": {
+      "dialogId": 20000242,
+      "name": "showDialog",
+      "UID": "3e806298-cecc-451d-9f8f-12ce71492111",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "12": {
+      "dialogId": 20000238,
+      "name": "showDialog",
+      "UID": "de13ac97-c6b7-4dfd-adf7-30d3652e8e47",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "13": {
+      "dialogId": 20000239,
+      "name": "showDialog",
+      "UID": "b054b21b-fabd-4e33-a991-7e023b8bbaf1",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b784e5fc-d387-48da-ab8c-a8c94ff8d0dc",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_Scream_Start"
+    },
+    "34": {
+      "dialogId": 20000241,
+      "name": "showDialog",
+      "UID": "81548060-efad-41dc-a7e5-f8d16b2f5965",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "36": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.6,
+        0.2
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "14b88f82-14a6-4155-be00-d0f54d5bf86b",
+      "effectId": "Eff_Parmon_10203_Skill_Scream_02",
+      "scale": 0.5,
+      "NodeID": 36
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    19,
+    10,
+    27
+  ]
+}

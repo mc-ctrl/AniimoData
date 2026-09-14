@@ -1,0 +1,36 @@
+[
+  {
+    "rayCastingSwitch": 1,
+    "tallGrassSwitch": 1,
+    "visionType": 1,
+    "invisibleSwitch": 1,
+    "playerCrounch": {
+      "GRASS": 0,
+      "WATER": 1,
+      "NONE": 0.5
+    },
+    "playerIdle": {},
+    "playerRun": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 1.2
+    },
+    "playerSprint": {
+      "GRASS": 1,
+      "WATER": 1,
+      "NONE": 2
+    }
+  },
+  {
+    "rayCastingSwitch": 0,
+    "tallGrassSwitch": 0,
+    "visionType": 2,
+    "invisibleSwitch": 0,
+    "playerCrounch": {},
+    "playerIdle": {
+      "NONE": 0.1
+    },
+    "playerRun": {},
+    "playerSprint": {}
+  }
+]

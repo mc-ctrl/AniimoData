@@ -1,0 +1,337 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21293041",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    25,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "name": "isActorType",
+      "UID": "7e67a446-0e75-41a4-85a2-5e43249b3d91",
+      "target": "OWNER",
+      "NodeID": 37,
+      "actorType": 2
+    },
+    "38": {
+      "name": "isActorType",
+      "UID": "965a3c32-ed82-4300-9beb-bcf59e0f6458",
+      "target": "OWNER",
+      "NodeID": 38,
+      "actorType": 1
+    },
+    "39": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "ee16193b-a405-4be5-b294-b4f8df9872d0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        53
+      ],
+      "NodeID": 39
+    },
+    "54": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "67169355-ac22-4047-8dd8-ea1579c19c12",
+      "target": "OWNER",
+      "val": 6,
+      "NodeID": 54
+    },
+    "35": {
+      "name": "isActorType",
+      "UID": "6da04144-b485-407e-ad84-7ccd102d3e64",
+      "target": "OWNER",
+      "NodeID": 35,
+      "actorType": 1
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "845d4525-6fdb-49d4-a693-40c5fa4848b8",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Start",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4478c7f8-1fce-4715-a759-7f26189bcf07",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_01",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "56": {
+      "UID": "b7c1eca2-5ec0-4872-8e55-a8f8d0bcd67d",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 56
+    },
+    "55": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "f10090f0-aa14-4b18-b248-b4810e34caae",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 55
+    },
+    "53": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "43a79047-ab7c-4725-b44b-f3c2f7e09ace",
+      "target": "OWNER",
+      "NodeID": 53,
+      "animId": "Behav_CryLoop"
+    },
+    "8": {
+      "key": "start1",
+      "duration": 0.2,
+      "actionIds": [
+        6,
+        48
+      ],
+      "NodeID": 8,
+      "UID": "699d2364-8b1c-42de-a243-48bc52b5cbe5",
+      "name": "addTimer"
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8ca0b91f-0b0f-4cdf-add9-9cf96db9d848",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_Start",
+      "NodeID": 31
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d37ec369-e9a4-42ff-ac37-40323f9f08b1",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Disappear_02",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "52": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e66b1281-127f-4465-88b0-80d5f653e69e",
+      "target": "OWNER",
+      "NodeID": 52,
+      "animId": "Emotion_Pain_Loop"
+    },
+    "43": {
+      "UID": "ef793302-5df6-41b9-b6ea-2301005d1f92",
+      "name": "stopAnimation",
+      "anim": "Emotion_Pain_Loop",
+      "NodeID": 43
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "657358d9-41cc-456d-9ecf-05d2ab55bddd",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "ac8ebc16-97ec-4efe-8a78-e0b97db4058a",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 1200150,
+        "name": "createEntity",
+        "UID": "b066ce9f-a786-471f-8599-bafdac0d0a3d",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "EnvObject",
+        "stick": 0,
+        "pos": "OWNER",
+        "NodeID": 19,
+        "isAttachToMaster": true
+      },
+      "NodeID": 20
+    },
+    "16": {
+      "buffId": 21293041,
+      "name": "removeBuff",
+      "UID": "5b149d3a-378d-4dc3-8b53-07249bcb2bd2",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "22": {
+      "UID": "fed980d7-e66b-49ca-85ce-96b36adf6838",
+      "actorId": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "4355d06f-2aac-4a48-9d52-175037236f5e",
+        "target": "OWNER",
+        "NodeID": 21
+      },
+      "name": "destroyEntity",
+      "NodeID": 22
+    },
+    "23": {
+      "name": "stopQteTimeline",
+      "UID": "949d0315-0ab2-4fbc-a216-72e89ac4f0b3",
+      "target": "OWNER",
+      "NodeID": 23,
+      "qteGroupId": "QTE_Combo"
+    },
+    "24": {
+      "name": "stopSoundStr",
+      "UID": "9a0b964c-94ac-4c99-afbb-b6a0d63d9728",
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_Loop",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f0f9de6d-7f33-48b7-9f2c-4f19282d23b2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_Loop",
+      "NodeID": 27
+    },
+    "46": {
+      "UID": "fc48e0f0-10e3-4673-994c-baa7f0b522de",
+      "name": "stopAnimation",
+      "anim": "Behav_CryLoop",
+      "NodeID": 46
+    },
+    "15": {
+      "name": "startQteTimeline",
+      "UID": "7eb0578a-e173-492e-b711-c988751f0471",
+      "target": "OWNER",
+      "NodeID": 15,
+      "qteGroupId": "QTE_Combo"
+    },
+    "29": {
+      "actionIds": [
+        31,
+        27
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "477fe545-aa76-473a-b876-92e8615da018",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "26": {
+      "actionIds": [
+        24,
+        30
+      ],
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "00f8dfee-4ee0-450e-b522-b0cfca5f1876",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "48": {
+      "target": "OWNER",
+      "postFollowType": -1,
+      "name": "playEffectStr",
+      "UID": "713a4ab4-422b-4ee8-ab1b-d0b689a09e87",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "17": {
+      "eventName": "qtePartGood",
+      "NodeID": 17,
+      "UID": "d534d3fb-5254-400d-a9ea-18196928bb14",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        16
+      ]
+    },
+    "49": {
+      "name": "stopEffectStr",
+      "UID": "687f0f25-d640-4ddc-9077-f723502729ca",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_01",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "92c08539-3e33-4f49-b722-5292b089bb85",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_End",
+      "NodeID": 30
+    },
+    "32": {
+      "name": "isActorType",
+      "UID": "694a1f6a-89be-4796-a823-34a60136fc08",
+      "target": "OWNER",
+      "NodeID": 32,
+      "actorType": 1
+    },
+    "33": {
+      "UID": "a3f804b9-cfc7-4eb7-b241-37a4cff84123",
+      "conditionIds": [
+        32,
+        34
+      ],
+      "name": "conditionOr",
+      "NodeID": 33
+    },
+    "34": {
+      "name": "isActorType",
+      "UID": "5f32342f-29fd-4518-80a7-b9fbb41bfa08",
+      "target": "OWNER",
+      "NodeID": 34,
+      "actorType": 2
+    },
+    "36": {
+      "UID": "08f2abd2-7e01-4fc0-858d-1012acde631a",
+      "conditionIds": [
+        35,
+        37
+      ],
+      "name": "conditionOr",
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    9,
+    49,
+    11,
+    43,
+    46,
+    22,
+    23,
+    26,
+    55
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    8,
+    39,
+    15,
+    17,
+    20,
+    29,
+    54,
+    56
+  ]
+}

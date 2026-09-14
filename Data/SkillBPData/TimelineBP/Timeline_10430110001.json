@@ -1,0 +1,214 @@
+{
+  "nodeMap": {
+    "38": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": 0.12573,
+          "name": "multiply",
+          "UID": "2a1656f0-0030-4bd4-ae7e-d2bf4b270325",
+          "NodeID": 36,
+          "lValue": {
+            "key": "hp10043",
+            "name": "getCacheVal",
+            "UID": "2f983e06-652f-403d-9177-c14ef7162b0b",
+            "target": "SRC",
+            "NodeID": 35
+          }
+        },
+        "hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "6c241422-0767-4e3f-9b99-c0375bf2bba6",
+      "target": "TARGET",
+      "NodeID": 38
+    },
+    "39": {
+      "target": "TARGET",
+      "duration": 5,
+      "buffId": 2104301,
+      "NodeID": 39,
+      "UID": "d43fa343-c849-4301-983d-a3a2c0d36f5b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "UID": "691c3d10-865a-4e38-b63b-12991beeb46f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          11
+        ]
+      },
+      "NodeID": 6
+    },
+    "31": {
+      "cameraShakeId": 21104,
+      "name": "playCameraImpulseById",
+      "UID": "6ff280cb-1d47-4bc3-b9cc-2f0b6fcbf7d9",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "e4fc9391-ef67-43f4-9e55-b4a724f49a14",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 11
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 20,
+      "UID": "4f8dae56-fd6c-44d4-bab1-aaa989b7eb8b"
+    },
+    "22": {
+      "UID": "211b732b-a271-4d2d-8af3-4ad2181db6dc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "5089882e-0029-4947-a3e8-3c00847feb70",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 24,
+      "UID": "32266746-871a-4640-a90a-fdee4b60a579"
+    },
+    "15": {
+      "UID": "2405f7d0-e57b-483a-8f5d-fd64e6cad603",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "91c8f29a-d8e2-47ff-a691-d57d428a4499",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_WaterHeal"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "503b35b0-1b9a-4a29-8d81-36048e86dd03",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_waterheal_release",
+      "NodeID": 19
+    },
+    "28": {
+      "UID": "9d488407-55d7-4dd3-ab7a-7bb95d48fe88",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 29,
+      "UID": "ed77cfeb-c1b9-4369-a6c3-ccfcf09a06c0"
+    },
+    "18": {
+      "UID": "899bb5d3-efc1-4224-bd8a-416ad86bc43c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          26
+        ]
+      },
+      "NodeID": 18
+    },
+    "4": {
+      "UID": "83b20aad-b823-4f65-8d73-a96c4705e1c4",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          39,
+          31,
+          34,
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 33,
+      "UID": "d6f4b2f9-c0de-4e2a-9b9d-34bfe7a51d7c"
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c5939d1a-6c4f-43f4-98cc-fc16518dafa9",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "26": {
+      "key": "hp10043",
+      "name": "setCacheVal",
+      "UID": "bb2c56af-84d0-4217-b6ab-f6707744692a",
+      "target": "CASTER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "b31eebe0-db35-417c-82d3-6d93daf012e7",
+        "target": "CASTER",
+        "NodeID": 25,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 26
+    }
+  },
+  "BPName": "ability_10430110",
+  "NodeID": 8,
+  "UID": "dbe226bd-29b5-4cd2-9045-53230942546f",
+  "eventIds": [
+    6,
+    15,
+    18,
+    33,
+    20,
+    29,
+    24
+  ],
+  "layer": "Base",
+  "length": 1.17
+}

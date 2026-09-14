@@ -1,0 +1,31 @@
+{
+  "searchTargetRangeRadius": 3,
+  "preloadEffs": [
+    "Eff_Parmon_10011_Attack_Hit",
+    "Eff_Parmon_10011_Attack"
+  ],
+  "BPName": "ability_902130200",
+  "name": "",
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 11100920,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902130200001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

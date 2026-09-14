@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "atk_p": {
+      "calcId": 4000002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 2,
+      "UID": "6e3f2d52-c3a2-4f6e-b671-06f47a9056d5",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_4000002",
+  "NodeID": 1,
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "icon": "",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {}
+}

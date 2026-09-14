@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2112207",
+  "NodeID": 1,
+  "UID": "7d604ff5-b369-4075-9544-28f25464cf0d",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    6
+  ],
+  "onBuffInheritIds": [
+    3,
+    7
+  ],
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "8967d82d-06ae-4f3e-87c1-53a5711f0c65",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "576a9289-1e0b-47d2-886b-69f9f5cce593",
+      "effectId": "Eff_Parmon_10122_Skill_MomentEnergy_Loop_liuli",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "916e1447-b6bd-4892-b72a-b0ca67e62161",
+      "effectId": "Eff_Parmon_10122_Skill_MomentEnergy_Loop_liuli",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "6": {
+      "name": "calcResult",
+      "UID": "88a66b2e-ff09-4c3f-a989-6d38e38e659f",
+      "target": "OWNER",
+      "NodeID": 6,
+      "calcInfoByLuaConfig": {
+        "id": 2112207,
+        "type": 1,
+        "add_cur_ep_fix": "param0"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    3,
+    7
+  ]
+}

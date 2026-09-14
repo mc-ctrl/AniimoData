@@ -1,0 +1,48 @@
+{
+  "BPName": "ability_12120231",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10600924,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12120231001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 8,
+  "preloadAnims": [
+    "Skill_SunBeam_Start",
+    "Skill_SunBeam_Loop",
+    "Skill_SunBeam_End"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Parmon_10211_Skill_SunBeam_Body_XuLi_liuli",
+    "Eff_Hit_Grass_Blunt_Big",
+    "Eff_Parmon_10212_Skill_SunBeam_Up_Body_XuLi_liuli",
+    "Eff_Parmon_10212_Skill_SunBeam_Body01_liuli",
+    "Eff_Parmon_10212_Skill_SunBeam_Up_Body_liuli",
+    "Eff_Parmon_10212_Skill_SunBeam_Up_Body_End_liuli"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "onlyHasActOnTargets": true,
+  "desc": "冲！",
+  "refBones": [
+    "Root"
+  ]
+}

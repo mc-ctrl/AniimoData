@@ -1,0 +1,14 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102313",
+  "NodeID": 1,
+  "UID": "a2592e5f-4de6-4774-bfce-754ad562290f",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "calcInfo": {
+    "def_fix": 200,
+    "def_mag_fix": 200
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": {}
+}

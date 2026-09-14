@@ -1,0 +1,253 @@
+{
+  "duration": 0.2,
+  "calcResultNodeId": 39,
+  "NodeID": 0,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10213_Skill_Doppelganger_Bullet001",
+  "nodeMap": {
+    "62": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "81e0668a-3a24-48de-b556-ba10bcbd4d89",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Summon_Born01",
+      "NodeID": 62
+    },
+    "70": {
+      "name": "getRotationFromTo",
+      "considerYAxis": false,
+      "UID": "c3570bc0-7572-4083-bcf6-c23bc84c18c9",
+      "to": "OWNER",
+      "NodeID": 70,
+      "from": "PROJECTILE"
+    },
+    "39": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12130300,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "dd6c278f-caf5-4b1e-822b-3e5710a51535",
+      "target": "TARGET",
+      "NodeID": 39,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 1000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "71": {
+      "NodeID": 71,
+      "name": "getTargetOffsetPos",
+      "UID": "8b2d7e25-ba6f-4221-a724-6d414d262e2a",
+      "target": "PROJECTILE",
+      "offset": [
+        0,
+        0,
+        0.5
+      ],
+      "rotType": {
+        "name": "getRotationFromTo",
+        "considerYAxis": false,
+        "UID": "c3570bc0-7572-4083-bcf6-c23bc84c18c9",
+        "to": "OWNER",
+        "NodeID": 70,
+        "from": "PROJECTILE"
+      }
+    },
+    "65": {
+      "eventName": "10213_shootsp",
+      "name": "notifyCustomEvent",
+      "UID": "23931ab0-c5c9-4d4b-836f-8e0f2133f5da",
+      "target": {
+        "UID": "92b7d626-44d3-4dcb-a4d3-2fb09dbd101d",
+        "target": {
+          "key": "10213_Clone",
+          "name": "getCacheVal",
+          "UID": "5cd40bd6-d277-4a8a-9810-5e9db96f4c77",
+          "target": "OWNER",
+          "NodeID": 63
+        },
+        "name": "getTargetId",
+        "NodeID": 64
+      },
+      "NodeID": 65
+    },
+    "80": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b0659bca-c5d9-4ac6-9cb6-51b8d763df2f",
+      "effectId": "Eff_Parmon_10213_Skill_Hit",
+      "speed": 1,
+      "NodeID": 80
+    },
+    "28": {
+      "name": "getRotationFromTo",
+      "UID": "81dcec60-0876-4ae4-b24e-deee19b0a505",
+      "to": "OWNER",
+      "NodeID": 28,
+      "from": "PROJECTILE"
+    },
+    "69": {
+      "key": "target",
+      "name": "setCacheVal",
+      "UID": "29da2b54-ba68-4ba4-b97b-aa1b0b88d7ac",
+      "target": "TARGET",
+      "val": {
+        "UID": "49e6c27d-6d45-426b-9df0-adecc8fd46a3",
+        "name": "getLockedTarget",
+        "NodeID": 68
+      },
+      "NodeID": 69
+    },
+    "30": {
+      "key": "10213_Clone",
+      "name": "setCacheVal",
+      "UID": "a6240b8e-50e9-4d84-91a7-7ea731457170",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 1102130001,
+        "name": "createSummonedEntity",
+        "notifyMasterAbilityEvent": true,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "f05fe7b3-2fbf-45ea-98fb-64807251f217",
+          "name": "getGroundPosFromRefPos",
+          "refPos": {
+            "NodeID": 71,
+            "name": "getTargetOffsetPos",
+            "UID": "8b2d7e25-ba6f-4221-a724-6d414d262e2a",
+            "target": "PROJECTILE",
+            "offset": [
+              0,
+              0,
+              0.5
+            ],
+            "rotType": {
+              "name": "getRotationFromTo",
+              "considerYAxis": false,
+              "UID": "c3570bc0-7572-4083-bcf6-c23bc84c18c9",
+              "to": "OWNER",
+              "NodeID": 70,
+              "from": "PROJECTILE"
+            }
+          },
+          "NodeID": 72
+        },
+        "rot": {
+          "name": "getRotationFromTo",
+          "UID": "81dcec60-0876-4ae4-b24e-deee19b0a505",
+          "to": "OWNER",
+          "NodeID": 28,
+          "from": "PROJECTILE"
+        },
+        "campWithHost": true,
+        "deadWithHost": false,
+        "lifeTime": 30,
+        "NodeID": 29,
+        "UID": "021c432e-7e36-43e7-aaa4-197acd81e1e2"
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "pos": "PROJECTILE",
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 12130300001,
+      "name": "createProjectile",
+      "UID": "f1d85adb-9f53-483d-8ffd-9fee5fbeeaba",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 32
+    },
+    "33": {
+      "key": "entity",
+      "actionIds": [
+        32
+      ],
+      "NodeID": 33,
+      "UID": "8fb38398-0519-4a8c-a797-d2f6af27501d",
+      "cd": 0.8,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "67": {
+      "key": "1",
+      "duration": 0.7,
+      "actionIds": [
+        69,
+        65
+      ],
+      "NodeID": 67,
+      "UID": "faac026b-e23e-4fc9-8330-c5a1263bd35e",
+      "name": "addEntityTimer"
+    },
+    "36": {
+      "key": "entity",
+      "actionIds": [
+        30,
+        67,
+        62
+      ],
+      "NodeID": 36,
+      "UID": "8b65e20f-1846-4083-a92c-b990071263ee",
+      "cd": 0.8,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    }
+  },
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "stickGravity": 5,
+  "maxHitNum": 999,
+  "maxHeightOffset": 1.1,
+  "stickPitchMaxOffset": 45,
+  "moveSpeed": 50,
+  "onProjectileFinishIds": [
+    80,
+    36
+  ],
+  "onProjectileHitIds": [
+    80,
+    39,
+    33
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 9999,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "BPName": "ability_12130300",
+  "tickInterval": 0.005,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "heightAboveGround": 1,
+  "groundSweepRadius": 0.15,
+  "impulseId": 1000,
+  "acceleration": 0
+}

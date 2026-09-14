@@ -1,0 +1,214 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 6,
+      "NodeID": 22,
+      "UID": "f406ee70-c725-43d8-be53-e476a96c6d7a",
+      "onUpdate": {
+        "actionIds": [
+          20,
+          28
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          20,
+          28
+        ]
+      }
+    },
+    "4": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 14,
+      "UID": "73a8239a-38ac-4177-bd5b-2725bc19a5d8",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Dark_End_Rogue",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    },
+    "10": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 6,
+      "NodeID": 10,
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886",
+      "onUpdate": {
+        "actionIds": [
+          8
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          8
+        ]
+      }
+    },
+    "15": {
+      "target": "TARGET",
+      "duration": 0.3,
+      "buffId": 2120307,
+      "NodeID": 15,
+      "UID": "90d9558b-d03b-47b1-9f92-effa55621fb9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "actionIds": [
+        15
+      ],
+      "name": "actOnTargets",
+      "UID": "590c627e-18d1-4080-94ef-b370f9b2c56b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4.5,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 8
+    },
+    "28": {
+      "notBlockInput": true,
+      "duration": 0.3,
+      "NodeID": 28,
+      "UID": "f8e6b880-bdc8-4ef3-91a6-6271fc5a3698",
+      "target": "TARGET",
+      "name": "forceDisplacement",
+      "speed": 7,
+      "displacementTarget": "OWNER",
+      "displacementDir": "IN"
+    },
+    "18": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.001,
+        "instant_dmg_rate_v": 0.65,
+        "reduce_cur_tp_rate": 0.65
+      },
+      "attackData": {
+        "impulseId": 2000,
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 12,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "d08d8761-85ae-4f53-8ab5-65f96b548a46",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 18
+    },
+    "13": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "11": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a8d5cd45-608b-42f4-9143-92e438407422",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Dark_Rogue",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 18,
+      "NodeID": 20,
+      "UID": "1b6b4168-7fc9-4425-9351-63550c3d6aee",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4.5,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        18
+      ]
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Dark_Rogue",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2120305",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    10,
+    13,
+    4,
+    22
+  ],
+  "layer": "Base",
+  "length": 6
+}

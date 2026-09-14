@@ -1,0 +1,56 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9165301",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "name": "水元素增伤buff",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "c15c1441-d314-45a8-8a88-9ffea962b63a",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "4": {
+      "calcId": 9165301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "829b2fa8-1589-4c7c-ae1a-d032d795384a",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "value": {
+        "calcId": 9165301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 4,
+        "UID": "829b2fa8-1589-4c7c-ae1a-d032d795384a",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "13179770-2bcf-4953-8600-863d2c994daf",
+      "element": 1,
+      "target": "TARGET",
+      "NodeID": 5
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "doPetsActions",
+      "UID": "090f9660-c5d3-4718-b875-8aa735dbbc8f",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

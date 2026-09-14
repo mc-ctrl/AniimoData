@@ -1,0 +1,107 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 13,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_03",
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "10": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 13,
+      "NodeID": 10,
+      "UID": "3846c114-5755-4cc4-a7b4-5d848a8c60cb",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.2,
+            1.5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "key": "10313Pos",
+            "name": "getCacheVal",
+            "UID": "343b158e-5e6a-4c0d-844f-adb8f03215a7",
+            "target": "OWNER",
+            "NodeID": 22
+          },
+          "maxNum": 999
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        13
+      ]
+    },
+    "13": {
+      "name": "calcResult",
+      "NodeID": 13,
+      "overrideCaster": "OWNER",
+      "calcInfoByLuaConfig": {
+        "id": 2131308,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "b99c4a2d-b003-4c12-94ba-d601dd45243d",
+      "target": "TARGET",
+      "overridePower": 1,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 3000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102
+      }
+    },
+    "21": {
+      "target": {
+        "key": "10313Pos",
+        "name": "getCacheVal",
+        "UID": "fa2ef765-077c-4e0c-b25a-11630b189155",
+        "target": "OWNER",
+        "NodeID": 20
+      },
+      "name": "playEffectOnPosRot",
+      "UID": "0f6838c3-bb08-45d3-9e98-50a6b350f9f8",
+      "effectId": "Eff_Parmon_10313_Skil_WaterFall_04_04",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    21,
+    10
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "BPName": "buff_2131308",
+  "tickInterval": 0,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "defaultHitSoundType": "s",
+  "maxHitNum": 1,
+  "impulseId": 3000,
+  "acceleration": 0
+}

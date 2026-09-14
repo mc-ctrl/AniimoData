@@ -1,0 +1,224 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003010",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    11
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "templateId": 2030101,
+      "name": "checkTargetTemplateId",
+      "UID": "cc43031f-6f3d-4f46-94bb-2408963b2e5d",
+      "target": "TARGET",
+      "NodeID": 6
+    },
+    "7": {
+      "name": "getCreatedEntityCount",
+      "NodeID": 7,
+      "UID": "f2fe6f5b-8239-4051-89ff-1e34548baaaf",
+      "target": "OWNER",
+      "checkCreation": true,
+      "filterCondition": 6
+    },
+    "8": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "27c409b7-998a-424d-b913-e6cf985866fb",
+      "NodeID": 8,
+      "lValue": {
+        "name": "getCreatedEntityCount",
+        "NodeID": 7,
+        "UID": "f2fe6f5b-8239-4051-89ff-1e34548baaaf",
+        "target": "OWNER",
+        "checkCreation": true,
+        "filterCondition": 6
+      }
+    },
+    "9": {
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "58948966-473e-48ba-a46e-149e37c5b740",
+      "name": "doActionsByConditions",
+      "NodeID": 9,
+      "elseActionIds": [
+        13,
+        26
+      ]
+    },
+    "11": {
+      "actionIds": [
+        15,
+        23
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "a4498735-9a87-4f60-ba4e-fd2a0fa77ba5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "21": {
+      "buffId": 4003010,
+      "name": "removeBuff",
+      "UID": "6673d3e6-fc6c-4943-95fe-b8d5331dae0b",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "3": {
+      "delay": 5,
+      "interval": 1,
+      "UID": "6ef4ce03-bc41-445e-8c88-c11470e9237b",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "b3a02025-a71d-4552-bbe0-81ace3cb3830",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "10": {
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "1cea6311-3333-48ce-81d6-fc3679250bf7",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        9
+      ]
+    },
+    "15": {
+      "templateId": 2030101,
+      "name": "destroyCreatedEntity",
+      "UID": "63aead4b-f07b-4774-a96a-ac2913cbe213",
+      "target": "OWNER",
+      "entityType": "Creation",
+      "NodeID": 15
+    },
+    "25": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "6dbedfdb-b92a-4c7b-93dc-ef5ba811d4af",
+      "NodeID": 25,
+      "lValue": {
+        "key": "CrystalTimeServer",
+        "name": "getServerCacheVal",
+        "UID": "eabad21d-f54b-4d35-aa6c-35b6fbf390c4",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "26": {
+      "key": "CrystalTimeServer",
+      "name": "setServerCacheVal",
+      "UID": "76ad9827-872b-450a-99dc-d93426c8c8e7",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 26
+    },
+    "18": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "a8dac854-3794-4b16-b696-0810bc3f1414",
+        "target": "OWNER",
+        "NodeID": 20,
+        "attributeName": "bp_max_cur"
+      },
+      "name": "div",
+      "UID": "1888c5d5-e65d-419d-99d2-56b78a8aca99",
+      "NodeID": 18,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "51184c08-109a-48f1-9330-0f42fedf835a",
+        "target": "OWNER",
+        "NodeID": 17,
+        "attributeName": "bp_cur"
+      }
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "templateId": 2030101,
+      "name": "createEntity",
+      "UID": "f8d6c1eb-916a-4c06-9d13-1714a1498c27",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "stick": 0,
+      "pos": {
+        "UID": "4b462316-79a8-4527-8da0-84ec9a0a8e13",
+        "name": "getBornPos",
+        "NodeID": 12
+      },
+      "NodeID": 13
+    },
+    "19": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "3a7e16ce-30d6-476c-a3e1-b8161cc6fa31",
+      "NodeID": 19,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "a8dac854-3794-4b16-b696-0810bc3f1414",
+          "target": "OWNER",
+          "NodeID": 20,
+          "attributeName": "bp_max_cur"
+        },
+        "name": "div",
+        "UID": "1888c5d5-e65d-419d-99d2-56b78a8aca99",
+        "NodeID": 18,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "51184c08-109a-48f1-9330-0f42fedf835a",
+          "target": "OWNER",
+          "NodeID": 17,
+          "attributeName": "bp_cur"
+        }
+      }
+    },
+    "22": {
+      "actionIds": [
+        21
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "737fc37d-e6d1-4d78-ad41-9d27868dd036",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "23": {
+      "key": "CrystalTimeServer",
+      "name": "setServerCacheVal",
+      "UID": "b1e65c40-221f-478e-a844-3d4f96d16017",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 23
+    }
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    22,
+    4
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "80343685": {
+    "name": "基础点位_80343685",
+    "rotation": [
+      0.21,
+      13.27,
+      359.98
+    ],
+    "entityType": 0,
+    "sandboxId": 80343680,
+    "id": 80343685,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -65.14,
+      2.23,
+      194.22
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343600": {
+    "name": "咖啡宝箱点位_80343600",
+    "rotation": [
+      0,
+      10.24,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343538,
+    "id": 80343600,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -118.76,
+      13.01,
+      320.27
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343719": {
+    "name": "基础点位_80343719",
+    "rotation": [
+      0,
+      234.5,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343686,
+    "id": 80343719,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -55.89,
+      1.86,
+      36.22
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343601": {
+    "name": "冠军宝箱点_80343601",
+    "rotation": [
+      0,
+      7.11,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343538,
+    "id": 80343601,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -143.24,
+      13.01,
+      248.95
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343720": {
+    "name": "基础点位_80343720",
+    "rotation": [
+      0,
+      206.44,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343686,
+    "id": 80343720,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -9.59,
+      12.43,
+      110.81
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343602": {
+    "name": "地理宝箱点位_80343602",
+    "rotation": [
+      0,
+      233.26,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343538,
+    "id": 80343602,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        -116.34,
+        13.44,
+        281.01
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -116.34,
+      13.44,
+      281.01
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343721": {
+    "name": "基础点位_80343721",
+    "rotation": [
+      0,
+      288.75,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343686,
+    "id": 80343721,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      2.58,
+      12.48,
+      167.55
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343603": {
+    "name": "乐队宝箱点位_80343603",
+    "rotation": [
+      0,
+      212.72,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343538,
+    "id": 80343603,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -48.02,
+      -2.19,
+      308.37
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343722": {
+    "name": "基础点位_80343722",
+    "rotation": [
+      0,
+      6.05,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343686,
+    "id": 80343722,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      16.75,
+      15.99,
+      82.44
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343604": {
+    "name": "任务上身点位_80343604",
+    "rotation": [
+      0,
+      0.14,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343538,
+    "id": 80343604,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        12
+      ],
+      "position": [
+        -24.9,
+        12.81,
+        337.84
+      ],
+      "arriveType": 1,
+      "author": "peng.hu"
+    },
+    "position": [
+      -24.9,
+      12.81,
+      337.84
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343728": {
+    "name": "基础点位_80343728",
+    "rotation": [
+      0,
+      30.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343723,
+    "id": 80343728,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -66.94,
+      2.33,
+      164.37
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343605": {
+    "name": "寻路点位_80343605",
+    "rotation": [
+      0,
+      0.14,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343538,
+    "id": 80343605,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        0
+      ],
+      "circleRadius": 50,
+      "position": [
+        -89.43,
+        10.81,
+        298.69
+      ],
+      "author": "peng.hu"
+    },
+    "position": [
+      -89.43,
+      10.81,
+      298.69
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343679": {
+    "name": "基础点位_80343679",
+    "rotation": [
+      0,
+      305.76,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343658,
+    "id": 80343679,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -66.65,
+      2.78,
+      -72.69
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "80343599": {
+    "name": "宠家宝箱点",
+    "rotation": [
+      0,
+      14.73,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 80343538,
+    "id": 80343599,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -135.58,
+      13.2,
+      281.53
+    ],
+    "AreaLoadTypeNoNormal": 0
+  }
+}

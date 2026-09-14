@@ -1,0 +1,58 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_402000602",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "a7c6f843-8131-460a-a204-49b0692ee8fc",
+      "target": "OWNER",
+      "buffId": 10080,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": true,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    },
+    "10": {
+      "unsummonValid": false,
+      "actionIds": [
+        9
+      ],
+      "name": "registerGroupEvent",
+      "UID": "8be482d3-27b2-4274-89df-6bc4032d449a",
+      "NodeID": 10
+    },
+    "7": {
+      "target": "MASTER",
+      "duration": 5,
+      "buffId": 402000601,
+      "NodeID": 7,
+      "UID": "60e0d8b3-9a19-4966-b9d1-080e11a315b5",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "9": {
+      "UID": "35ce4044-07f6-4903-aeed-2041c3032bb4",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10
+  ]
+}

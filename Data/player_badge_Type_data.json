@@ -1,0 +1,105 @@
+[
+  {
+    "1": {
+      "sort": 1,
+      "initState": 0,
+      "subTypeName": 1290044435,
+      "boxResource": "$UI_Node_Personal_Badge_Box0.prefab",
+      "subTypeArkName": "Wind kisses"
+    },
+    "0": {
+      "sort": 1,
+      "mainTypeIconChoose": "$UI_Img_Personal_EntryMaster.png",
+      "mainTypeIconHomepage": "$UI_Img_Personal_EntryMaster2.png",
+      "mainTypeIconOther": "$UI_Img_Personal_EntryMaster1.png",
+      "subTypeArkName": "Connect Road",
+      "mainTypeName": 1321933298
+    }
+  },
+  {
+    "0": {
+      "sort": 2,
+      "mainTypeIconChoose": "$UI_Img_Personal_EntryChampion.png",
+      "mainTypeIconHomepage": "$UI_Img_Personal_EntryChampion2.png",
+      "mainTypeIconOther": "$UI_Img_Personal_EntryChampion1.png",
+      "subTypeArkName": "Victory Road",
+      "mainTypeName": 1282728968
+    },
+    "1": {
+      "sort": 1,
+      "initState": 0,
+      "subTypeName": 1788596617,
+      "boxResource": "$UI_Node_Personal_Badge_Box3.prefab",
+      "subTypeArkName": "OpenAir Challenge"
+    },
+    "2": {
+      "sort": 2,
+      "initState": 0,
+      "subTypeName": 1387667371,
+      "boxResource": "$UI_Node_Personal_Badge_Box5.prefab",
+      "subTypeArkName": "Battle Challenge"
+    }
+  },
+  {
+    "1": {
+      "sort": 1,
+      "initState": 0,
+      "subTypeName": 1570185781,
+      "boxResource": "$UI_Node_Personal_Badge_Box5.prefab",
+      "subTypeArkName": "Wind kisses"
+    },
+    "0": {
+      "sort": 3,
+      "mainTypeIconChoose": "$UI_Img_Personal_EntryExplore.png",
+      "mainTypeIconHomepage": "$UI_Img_Personal_EntryExplore2.png",
+      "mainTypeIconOther": "$UI_Img_Personal_EntryExplore1.png",
+      "subTypeArkName": "Explorer Road",
+      "mainTypeName": 1879757083
+    }
+  },
+  {
+    "1": {
+      "sort": 1,
+      "initState": 0,
+      "subTypeName": 1172309362,
+      "boxResource": "$UI_Node_Personal_Badge_Box7.prefab",
+      "subTypeArkName": "Homeland"
+    },
+    "0": {
+      "sort": 4,
+      "mainTypeIconChoose": "$UI_Img_Personal_EntryElegant.png",
+      "mainTypeIconHomepage": "$UI_Img_Personal_EntryElegant2.png",
+      "mainTypeIconOther": "$UI_Img_Personal_EntryElegant1.png",
+      "subTypeArkName": "Brilliant Road",
+      "mainTypeName": 1083720633
+    }
+  },
+  {
+    "0": {
+      "sort": 5,
+      "mainTypeIconChoose": "$UI_Img_Personal_EntryCollection.png",
+      "mainTypeIconHomepage": "$UI_Img_Personal_EntryCollection2.png",
+      "mainTypeIconOther": "$UI_Img_Personal_EntryCollection1.png",
+      "subTypeArkName": "Collection",
+      "mainTypeName": 1572261791
+    },
+    "1": {
+      "sort": 1,
+      "initState": 1,
+      "subTypeName": 1317238817,
+      "boxResource": "$UI_Node_Personal_Badge_Box7.prefab",
+      "subTypeArkName": "Initial"
+    },
+    "2": {
+      "sort": 2,
+      "initState": 1,
+      "subTypeName": 1751453816,
+      "subTypeArkName": "S1 Collection",
+      "boxResource": "$UI_Node_Personal_Badge_Box7.prefab",
+      "seasonBadgeBox": [
+        1,
+        1
+      ]
+    }
+  }
+]

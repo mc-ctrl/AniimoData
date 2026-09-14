@@ -1,0 +1,195 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003022",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    11
+  ],
+  "onBuffThinkIds": [
+    4
+  ],
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    9,
+    14,
+    5
+  ],
+  "nodeMap": {
+    "5": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "8ff5b993-500b-4bfe-aae9-a872f2aebb7d",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "4": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 4003022,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "3fe93d9b-b1c9-449b-85ca-a76791a26116",
+      "target": "CURPET",
+      "NodeID": 4,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    },
+    "26": {
+      "name": "checkTargetLifeState",
+      "UID": "b288abf2-34f9-457a-9c06-1281c717feb8",
+      "target": "OWNER",
+      "NodeID": 26,
+      "life": 2
+    },
+    "14": {
+      "actionIds": [
+        18,
+        10,
+        23
+      ],
+      "name": "registerDeadEvent",
+      "UID": "76b49936-dd09-445c-9902-85636f5a037a",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "4226e79c-af57-49ff-a45b-e0b354f780b2",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain",
+      "target": "MASTER",
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        18,
+        10,
+        23
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "f562748a-43a5-4b47-9d22-07347851fc08",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "25": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "4a0e200d-7d89-43cd-be4d-2329969cf20b",
+      "NodeID": 25,
+      "lValue": {
+        "UID": "fbc212b7-b110-4acf-bc67-c04e87c2f612",
+        "target": "CURPET",
+        "name": "getHpRatio",
+        "NodeID": 24
+      }
+    },
+    "16": {
+      "actionIds": [
+        18,
+        10,
+        23
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "26261cd8-a852-482b-8dda-fd039d4a43c4",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "8": {
+      "buffId": 4003022,
+      "name": "removeBuff",
+      "UID": "32665801-fb3f-4921-9c8b-902bd83c122b",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "23": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "7fd4ec86-df2d-428a-99cd-a2f8804c2b00",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain",
+      "target": "MASTER",
+      "NodeID": 23
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "201bd98a-8712-4495-85ae-cc066eaeb6fa",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "eb7d93b8-0d88-4b3c-8aca-32e34d8758f5",
+      "name": "callClientAction",
+      "actionIds": [
+        10,
+        23
+      ],
+      "NodeID": 18
+    },
+    "22": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "dbdd8a9d-9e19-4726-9217-b04909af2e11",
+      "NodeID": 22,
+      "lValue": {
+        "UID": "eb52dfaa-c3d9-4fdc-90fe-ceb0c6a36823",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 21
+      }
+    },
+    "19": {
+      "name": "checkTargetLifeState",
+      "UID": "60c1443c-5e62-4c93-b0a1-7d4b5eede33c",
+      "target": "OWNER",
+      "NodeID": 19,
+      "life": 3
+    },
+    "20": {
+      "UID": "335c4d3f-7296-4bad-a404-fe6220f17235",
+      "conditionIds": [
+        26,
+        19
+      ],
+      "name": "conditionOr",
+      "NodeID": 20
+    },
+    "13": {
+      "actionIds": [
+        18,
+        10,
+        23
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "d3383892-8334-45df-8a09-7b24da56989c",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    18,
+    10,
+    23,
+    13,
+    15,
+    16
+  ],
+  "onBuffStartIds": [
+    9,
+    14,
+    5
+  ]
+}

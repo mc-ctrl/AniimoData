@@ -1,0 +1,492 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91144011",
+  "name": "控制帽子模型显隐",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    49,
+    6
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "52": {
+      "actionIds": [
+        50,
+        53
+      ],
+      "conditionActionIds": [
+        65
+      ],
+      "UID": "da1e56d8-9e44-44d3-b33c-3f18dc32d85c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        56
+      ],
+      "NodeID": 52
+    },
+    "38": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 91144011,
+        "instant_dmg_v": "param0",
+        "type": 1
+      },
+      "UID": "8cda3e49-1833-417b-bc3f-84229c9b5e59",
+      "target": "TARGET",
+      "NodeID": 38,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30305,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "isPlayRadialBlur": true,
+        "impulseId": 5003
+      }
+    },
+    "53": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3b60fdcc-a569-4249-b91f-05c2b7b157fc",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_02",
+      "speed": 1,
+      "NodeID": 53
+    },
+    "40": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 38,
+      "NodeID": 40,
+      "UID": "6569f7dd-ae53-4641-87ed-f20407da2e35",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            5,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5003,
+      "actionIds": [
+        38,
+        46
+      ]
+    },
+    "54": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "334c5fa9-0f28-4160-8576-e225cdac1a2a",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_03",
+      "speed": 1,
+      "NodeID": 54
+    },
+    "43": {
+      "buffId": 91144011,
+      "name": "removeBuff",
+      "UID": "25b61b03-5dc1-42d6-bfb5-c9639a9d1248",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "44": {
+      "key": "delay3",
+      "duration": 0.5,
+      "actionIds": [
+        43
+      ],
+      "NodeID": 44,
+      "UID": "21244e53-8f5c-4557-bc24-e05893d646e0",
+      "name": "addTimer"
+    },
+    "67": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "1c5adc79-9cef-4d36-aa77-37b6b3a4176b",
+      "NodeID": 67,
+      "lValue": {
+        "templateId": 91144011,
+        "name": "getBuffLayer",
+        "UID": "0f455721-46b9-4ab8-945d-1a5f88e745e7",
+        "target": "OWNER",
+        "NodeID": 66
+      }
+    },
+    "4": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "1e0a9470-9f85-48b7-ac8d-f0bedfcbfcef",
+      "NodeID": 4,
+      "lValue": {
+        "templateId": 91144011,
+        "name": "getBuffLayer",
+        "UID": "e74190c8-993c-4814-a18c-70f475ff5aba",
+        "target": "OWNER",
+        "NodeID": 3
+      }
+    },
+    "5": {
+      "actionIds": [
+        14,
+        27,
+        31
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "464a1e62-66f2-41b4-931b-afceecf1f906",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "eventName": "DARKBOMB",
+      "NodeID": 6,
+      "UID": "f0dfb66a-7f89-434f-ab30-029a3f60f7c9",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        5
+      ]
+    },
+    "65": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "e62e9210-5342-4961-891d-97159be102fa",
+      "NodeID": 65,
+      "lValue": {
+        "templateId": 91144011,
+        "name": "getBuffLayer",
+        "UID": "1131109f-8ac7-466e-997c-f40846f91d50",
+        "target": "OWNER",
+        "NodeID": 64
+      }
+    },
+    "31": {
+      "buffId": 91144011,
+      "name": "removeBuff",
+      "UID": "885ad4e2-878c-4416-963a-1bcb313e94f2",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "56fff6a9-a717-4f40-8ddc-176a5792a350",
+      "NodeID": 9,
+      "lValue": {
+        "templateId": 91144011,
+        "name": "getBuffLayer",
+        "UID": "263e7f23-19ee-4da9-b108-71caa1d7989b",
+        "target": "OWNER",
+        "NodeID": 8
+      }
+    },
+    "63": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "bbe2f1c8-bb65-48bc-9cfc-6af3f5474b5b",
+      "NodeID": 63,
+      "lValue": {
+        "templateId": 91144011,
+        "name": "getBuffLayer",
+        "UID": "f8e91687-eca5-40b6-ada9-e3c9a84bcff4",
+        "target": "OWNER",
+        "NodeID": 62
+      }
+    },
+    "32": {
+      "scale": 4,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "75d8669d-a025-42cb-8b9b-706d43713095",
+      "effectId": "Eff_Parmon_10144_Attack_GhostFire_AOE",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "34": {
+      "key": "delay2",
+      "duration": 1,
+      "actionIds": [
+        32,
+        40,
+        44
+      ],
+      "NodeID": 34,
+      "UID": "80c12b4b-5ab0-4b4c-9691-dd45f40586b3",
+      "name": "addTimer"
+    },
+    "20": {
+      "key": "delay",
+      "duration": 0.5,
+      "actionIds": [
+        14,
+        27,
+        31
+      ],
+      "NodeID": 20,
+      "UID": "3a152cf2-efa0-4234-8084-8e6e02e0a4fd",
+      "name": "addTimer"
+    },
+    "21": {
+      "key": "delay1",
+      "duration": 0.5,
+      "actionIds": [
+        14,
+        27
+      ],
+      "NodeID": 21,
+      "UID": "621809ec-204d-414e-9f64-475ae68cf99e",
+      "name": "addTimer"
+    },
+    "12": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "a955798f-5bbb-4f43-913a-6503941e7c6a",
+      "NodeID": 12,
+      "lValue": {
+        "templateId": 91144011,
+        "name": "getBuffLayer",
+        "UID": "d1cd2422-1901-4626-8fa9-d43fb47445d4",
+        "target": "OWNER",
+        "NodeID": 11
+      }
+    },
+    "13": {
+      "actionIds": [
+        14,
+        27,
+        21,
+        34
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "5e9396a7-1557-45c4-b5de-3dae520547ab",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "45": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 91144013,
+      "NodeID": 45,
+      "UID": "7bad962b-45a1-43e2-8f2b-cf582f5a987f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "scale": 4,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ab3f9964-325a-4c5a-b411-d7fb788112d0",
+      "effectId": "Eff_Parmon_10144_Attack_GhostFire_AOE",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "56": {
+      "actionIds": [
+        57,
+        54
+      ],
+      "conditionActionIds": [
+        67
+      ],
+      "UID": "2edc4458-2820-4a70-904c-63fc20e6bb66",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        58,
+        60,
+        61
+      ],
+      "NodeID": 56
+    },
+    "46": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 91144013,
+      "NodeID": 46,
+      "UID": "e8a3ab14-0e0a-49ab-8613-ed5a99258c20",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "57": {
+      "name": "stopEffectStr",
+      "UID": "f5f20372-d84a-4df6-840e-37273007cb22",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_02",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b31ff068-958d-456a-8cba-ff25e6ff66ee",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_01",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "58": {
+      "name": "stopEffectStr",
+      "UID": "d1c69134-e84b-4cf1-b3a4-15f8a61f79fe",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_01",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "27": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 25,
+      "NodeID": 27,
+      "UID": "b7fbfd00-1e27-47c6-90e2-79991056a15c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            5,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5003,
+      "actionIds": [
+        25,
+        45
+      ]
+    },
+    "49": {
+      "actionIds": [
+        48
+      ],
+      "conditionActionIds": [
+        63
+      ],
+      "UID": "d2a940a3-3fd3-4593-8275-28f0e79f49e6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        52
+      ],
+      "NodeID": 49
+    },
+    "25": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 91144011,
+        "instant_dmg_v": "param0",
+        "type": 1
+      },
+      "UID": "c0fa9333-8f6a-451e-ba41-e59a2bada594",
+      "target": "TARGET",
+      "NodeID": 25,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30305,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "isPlayRadialBlur": true,
+        "impulseId": 5003
+      }
+    },
+    "60": {
+      "name": "stopEffectStr",
+      "UID": "7c71260e-c8e7-46a8-956b-325f18096bce",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_02",
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "50": {
+      "name": "stopEffectStr",
+      "UID": "4b4271a9-f2d3-4a53-99c5-d0b8522754f2",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_01",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "61": {
+      "name": "stopEffectStr",
+      "UID": "a1449e22-3040-40de-ac89-2e141c4d843c",
+      "effectId": "Eff_Parmon_10144_Skill_GhostFire_03",
+      "target": "OWNER",
+      "NodeID": 61
+    },
+    "10": {
+      "actionIds": [
+        14,
+        27,
+        20
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "ef28b98c-544b-4357-afc5-ff74e2a508a9",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 10
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    49,
+    6
+  ],
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    58,
+    60,
+    61
+  ],
+  "onBuffStartIds": [
+    49,
+    6
+  ]
+}

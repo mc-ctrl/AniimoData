@@ -1,0 +1,66 @@
+{
+  "BPName": "ability_10550300",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityIndicator": 1,
+  "abilityParamId": 10500470,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10550300001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrossFire"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Blunt",
+    "Eff_Parmon_10055_Skill_CrossFire_Start",
+    "Eff_Parmon_10055_Skill_CrossFire_Ray01",
+    "Eff_Parmon_10055_Skill_CrossFire_Ray04",
+    "Eff_Parmon_10055_Skill_CrossFire_Ray03",
+    "Eff_Parmon_10055_Skill_CrossFire_Ray02"
+  ],
+  "searchRelation": 2,
+  "name": "电普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      0.65,
+      0.65,
+      11,
+      2,
+      2
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1,
+  "refBones": [
+    "Root"
+  ]
+}

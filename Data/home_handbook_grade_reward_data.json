@@ -1,0 +1,296 @@
+[
+  {
+    "grade": 500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200600,
+    "title": 1322780861
+  },
+  {
+    "grade": 1000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200601,
+    "title": 1099440334
+  },
+  {
+    "grade": 1500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200602,
+    "title": 1873553938
+  },
+  {
+    "grade": 2000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200603,
+    "title": 1230203392
+  },
+  {
+    "grade": 2500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200604,
+    "title": 1675504011
+  },
+  {
+    "grade": 3000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200605,
+    "title": 1878823437
+  },
+  {
+    "grade": 3500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200606,
+    "title": 1714220940
+  },
+  {
+    "grade": 4000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200607,
+    "title": 2075047857
+  },
+  {
+    "grade": 4500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv1.png",
+    "reward": 200608,
+    "title": 1649903815
+  },
+  {
+    "grade": 5000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200609,
+    "title": 1363690333
+  },
+  {
+    "grade": 5500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200610,
+    "title": 1540959315
+  },
+  {
+    "grade": 6000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200611,
+    "title": 1380320901
+  },
+  {
+    "grade": 6500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200612,
+    "title": 1206015393
+  },
+  {
+    "grade": 7000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200613,
+    "title": 1804251000
+  },
+  {
+    "grade": 7500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200614,
+    "title": 1318446912
+  },
+  {
+    "grade": 8000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200615,
+    "title": 1552714482
+  },
+  {
+    "grade": 8500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200616,
+    "title": 1970112510
+  },
+  {
+    "grade": 9000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200617,
+    "title": 1190822231
+  },
+  {
+    "grade": 9500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv2.png",
+    "reward": 200618,
+    "title": 1843183578
+  },
+  {
+    "grade": 10000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200619,
+    "title": 1256508101
+  },
+  {
+    "grade": 10500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200620,
+    "title": 1849673386
+  },
+  {
+    "grade": 11000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200621,
+    "title": 1349868419
+  },
+  {
+    "grade": 11500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200622,
+    "title": 2004569637
+  },
+  {
+    "grade": 12000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200623,
+    "title": 2037624368
+  },
+  {
+    "grade": 12500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200624,
+    "title": 1350026856
+  },
+  {
+    "grade": 13000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200625,
+    "title": 1298142199
+  },
+  {
+    "grade": 13500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200626,
+    "title": 1476632279
+  },
+  {
+    "grade": 14000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200627,
+    "title": 1149357867
+  },
+  {
+    "grade": 14500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv3.png",
+    "reward": 200628,
+    "title": 1677690324
+  },
+  {
+    "grade": 15000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200629,
+    "title": 2054874788
+  },
+  {
+    "grade": 15500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200630,
+    "title": 1866267028
+  },
+  {
+    "grade": 16000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200631,
+    "title": 1571345208
+  },
+  {
+    "grade": 16500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200632,
+    "title": 1687166429
+  },
+  {
+    "grade": 17000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200633,
+    "title": 1882618054
+  },
+  {
+    "grade": 17500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200634,
+    "title": 1323296346
+  },
+  {
+    "grade": 18000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200635,
+    "title": 1207532121
+  },
+  {
+    "grade": 18500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200636,
+    "title": 2047685263
+  },
+  {
+    "grade": 19000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200637,
+    "title": 2028021490
+  },
+  {
+    "grade": 19500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv4.png",
+    "reward": 200638,
+    "title": 1148640236
+  },
+  {
+    "grade": 20000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200639,
+    "title": 2096870601
+  },
+  {
+    "grade": 20500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200640,
+    "title": 1329472626
+  },
+  {
+    "grade": 21000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200641,
+    "title": 1848196222
+  },
+  {
+    "grade": 21500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200642,
+    "title": 1875672128
+  },
+  {
+    "grade": 22000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200643,
+    "title": 1314858747
+  },
+  {
+    "grade": 22500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200644,
+    "title": 1891014572
+  },
+  {
+    "grade": 23000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200645,
+    "title": 1127021357
+  },
+  {
+    "grade": 23500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200646,
+    "title": 1464576966
+  },
+  {
+    "grade": 24000,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200647,
+    "title": 1842378083
+  },
+  {
+    "grade": 24500,
+    "gradeIcon": "$UI_Home_Collect_Medal_Lv5.png",
+    "reward": 200684,
+    "title": 1473422646
+  }
+]

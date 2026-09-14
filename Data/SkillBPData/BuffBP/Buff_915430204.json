@@ -1,0 +1,59 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": 0.1,
+    "speed_ratio_sprint_v": 0.1,
+    "speed_ratio_swim_v": 0.1,
+    "speed_ratio_swim_fast_v": 0.1
+  },
+  "name": "移速提高",
+  "UID": "37549b6e-8cff-4f95-9138-27f746f81a06",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "BPName": "buff_915430204",
+  "onBuffThinkIds": [
+    6
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "buffId": 10086,
+      "name": "hasBuff",
+      "UID": "576a4906-c24b-4f4d-9f3b-4dc77b85fcfb",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "ae4a4026-8f52-4619-80a6-6e35da4c8291",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "7": {
+      "buffId": 915430204,
+      "name": "removeBuff",
+      "UID": "969d757d-0fea-4d03-870d-73a0ef28635c",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "6": {
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "b8165a5b-4f0a-41c4-b67c-23750a91780e",
+      "name": "doActionsByConditions",
+      "NodeID": 6,
+      "elseActionIds": [
+        7
+      ]
+    }
+  },
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "100301": {
+    "ConditionValue": [
+      1
+    ],
+    "ConditionName": "petSkillLearned"
+  },
+  "100201": {
+    "ConditionValue": [
+      1
+    ],
+    "ConditionName": "petLevelUp"
+  },
+  "100403": {
+    "ConditionValue": [
+      3
+    ],
+    "ConditionName": "petSTP3"
+  },
+  "100401": {
+    "ConditionValue": [
+      1
+    ],
+    "ConditionName": "petSTP1"
+  },
+  "100402": {
+    "ConditionValue": [
+      2
+    ],
+    "ConditionName": "petSTP2"
+  }
+}

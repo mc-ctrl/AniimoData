@@ -1,0 +1,83 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.02,
+        "instant_dmg_rate_v": 3,
+        "reduce_cur_tp_rate": 0.5
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 10001
+      },
+      "UID": "6521d97e-6aa0-47e4-bfbf-ae0cc1a75aa1",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 5
+    },
+    "7": {
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "0bc15c2d-e153-47c7-8ff2-f0a7a836c480",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0.5,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        5
+      ]
+    },
+    "8": {
+      "eventType": "NotifyState",
+      "endTime": 99999,
+      "NodeID": 8,
+      "UID": "af642aa7-fde3-406c-9f4f-a19df282201c",
+      "onUpdate": {
+        "actionIds": [
+          7
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.5
+    }
+  },
+  "BPName": "timeline_50000",
+  "NodeID": 1,
+  "UID": "d22f6883-41fb-4fc7-b4cf-e09f8137c04d",
+  "eventIds": [
+    8
+  ],
+  "layer": "Base",
+  "length": 99999
+}

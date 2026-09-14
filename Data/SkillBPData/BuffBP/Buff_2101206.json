@@ -1,0 +1,206 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2101206",
+  "NodeID": 1,
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "tags": [
+    2,
+    27
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    7,
+    15,
+    18
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "8433e3e6-98bb-4fa2-971b-0d4fece6ff20",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": 1,
+      "buffId": 910120801,
+      "NodeID": 6,
+      "UID": "28dfaea6-6e28-4e94-898a-0b08914f09a6",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "3823eef5-9de7-45dd-a883-9ebdeca56d6d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 7
+    },
+    "11": {
+      "buffId": 910120801,
+      "name": "removeBuff",
+      "UID": "6c04b698-2f04-49a4-bf9f-6341a4684201",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "templateId": 1100120001,
+      "name": "destroyCreatedEntity",
+      "UID": "60bc390c-89f6-4c44-bda0-364c866e6d3f",
+      "target": "MASTER",
+      "entityType": "Puppet",
+      "NodeID": 20
+    },
+    "21": {
+      "templateId": 1100120001,
+      "name": "destroyCreatedEntity",
+      "UID": "da887273-94dd-4666-b004-64d49952b9c6",
+      "target": "MASTER",
+      "entityType": "Puppet",
+      "NodeID": 21
+    },
+    "22": {
+      "templateId": 1001200,
+      "name": "checkTargetTemplateId",
+      "UID": "7c97e56c-aab2-40b6-ab0f-c5677dc7fe54",
+      "target": "MASTER",
+      "NodeID": 22
+    },
+    "4": {
+      "key": "Parmon_10012_FenShen",
+      "name": "applyMaterialEffect",
+      "NodeID": 4,
+      "isFullBodyReplaceMaterial": true
+    },
+    "24": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "5bc517b1-2331-4609-b886-9ebc433a9c74",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        26
+      ],
+      "NodeID": 24
+    },
+    "14": {
+      "rValue": {
+        "UID": "0180e0dd-1deb-4aa3-b43d-d0db499d8409",
+        "target": "MASTER",
+        "name": "getTargetId",
+        "NodeID": 16
+      },
+      "name": "equal",
+      "UID": "1aecccfd-f9b3-485f-b3c8-0db9071a924e",
+      "NodeID": 14,
+      "lValue": {
+        "UID": "5a0d80f6-632e-4c3d-ab63-d15ec079f55b",
+        "target": "CURPET",
+        "name": "getTargetId",
+        "NodeID": 13
+      }
+    },
+    "10": {
+      "buffId": 910120801,
+      "name": "hasBuff",
+      "UID": "1e4c8ba1-312a-446c-9001-0ec86717e6a5",
+      "target": {
+        "UID": "c36bcbfc-649e-4de6-950c-f0fc57ad67fd",
+        "target": "MASTER",
+        "name": "getTargetId",
+        "NodeID": 9
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "4135f908-f8b8-4d2a-b915-8d32d622eee5",
+      "name": "doActionsByConditions",
+      "NodeID": 15,
+      "elseActionIds": [
+        21
+      ]
+    },
+    "25": {
+      "templateId": 1001201,
+      "name": "checkTargetTemplateId",
+      "UID": "4334f3d1-08c4-4aaf-b939-b2f37bbacb18",
+      "target": "MASTER",
+      "NodeID": 25
+    },
+    "26": {
+      "key": "Parmon_1001202_FenShen",
+      "name": "applyMaterialEffect",
+      "NodeID": 26,
+      "isFullBodyReplaceMaterial": true
+    },
+    "17": {
+      "targetA": "OWNER",
+      "targetB": "MASTER",
+      "name": "checkDistanceLess",
+      "UID": "109239ae-ffcd-42ec-b484-0a96739f9f23",
+      "distance": 20,
+      "NodeID": 17
+    },
+    "18": {
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "28707dec-ff7d-4822-87cc-58b948b7837f",
+      "name": "doActionsByConditions",
+      "NodeID": 18,
+      "elseActionIds": [
+        20
+      ]
+    },
+    "19": {
+      "UID": "eeffff77-08f2-420d-8337-93cd18f13037",
+      "name": "removeMaterialEffect",
+      "key": "10012_Fenshen",
+      "NodeID": 19
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "81266a5b-d853-463b-b54e-ff39eca7a67a",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "23": {
+      "key": "Parmon_1001201_FenShen",
+      "name": "applyMaterialEffect",
+      "NodeID": 23,
+      "isFullBodyReplaceMaterial": true
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    19
+  ],
+  "onBuffStartIds": [
+    2,
+    5
+  ]
+}

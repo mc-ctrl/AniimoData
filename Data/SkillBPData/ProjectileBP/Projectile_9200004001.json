@@ -1,0 +1,77 @@
+{
+  "duration": 0.8,
+  "BPName": "ability_9200004",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Avatar_Female_Skill_DestinyRoll_Bullet",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0.1,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxHitNum": 0,
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    20,
+    27
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "20": {
+      "getBuffIdAction": {
+        "key": "dice",
+        "name": "getRandomValueForAsyncActions",
+        "UID": "f68f8166-1c4b-4ac0-8195-fbf95a72fd8c",
+        "valueList": [
+          920000401,
+          920000402,
+          920000403,
+          920000404,
+          920000405,
+          920000406
+        ],
+        "NodeID": 19
+      },
+      "duration": 10,
+      "target": "CURPET",
+      "NodeID": 20,
+      "UID": "ee98e6db-1f2c-445d-9dae-9d139a0bc6cf",
+      "layer": 1,
+      "name": "addBuffRandomAsync",
+      "level": 1
+    },
+    "27": {
+      "target": "CURPET",
+      "offsetXYZ": [
+        0,
+        0,
+        -5.5
+      ],
+      "speed": 1,
+      "NodeID": 27,
+      "UID": "06145a21-5a80-4e6c-8240-0f0ed90506e6",
+      "effectId": {
+        "UID": "2320cad7-b03d-49cf-969c-df3580ed3a8b",
+        "valueList": [
+          "Eff_Avatar_Female_Skill_DestinyRoll01_Disappear",
+          "Eff_Avatar_Female_Skill_DestinyRoll01_Disappear",
+          "Eff_Avatar_Female_Skill_DestinyRoll01_Disappear",
+          "Eff_Avatar_Female_Skill_DestinyRoll01_Disappear",
+          "Eff_Avatar_Female_Skill_DestinyRoll01_Disappear",
+          "Eff_Avatar_Female_Skill_DestinyRoll06_SurpriseDis"
+        ],
+        "name": "getRandomValueForAsyncActions",
+        "NodeID": 26
+      },
+      "name": "playEffectStrRandomAsync",
+      "isAbilityEndRemove": true
+    }
+  },
+  "acceleration": 0
+}

@@ -1,0 +1,70 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000221",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 5000221,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "2b3fd1bb-32ed-4d5b-9e43-a967a0e5013b",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "thresholdActionIds": [
+        5
+      ],
+      "failedActionIds": [
+        7
+      ],
+      "threshold": 1,
+      "UID": "26e9bd1e-9e99-41d6-a208-c24bb70ea3ff",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "waterPool",
+      "NodeID": 6,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "8": {
+      "delay": 0,
+      "interval": 0.2,
+      "UID": "8de2b34a-60dd-468f-9be0-04a8e8d3be50",
+      "name": "buffStartThink",
+      "NodeID": 8
+    },
+    "7": {
+      "UID": "316de230-0dac-4ea3-8460-e57d385a6cd9",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 7
+    },
+    "5": {
+      "calcInfo": {
+        "dmg_water_add_ratio": {
+          "calcId": 5000221,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 3,
+          "UID": "2b3fd1bb-32ed-4d5b-9e43-a967a0e5013b",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "38544946-5374-4cd1-a968-b789e6240757",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 5
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

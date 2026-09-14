@@ -1,0 +1,119 @@
+{
+  "nodeMap": {
+    "22": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 2104101,
+      "NodeID": 22,
+      "UID": "7a2f4d12-b2ff-4d10-ae87-3f3736d13736",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "UID": "d38e250b-f206-4468-932c-b723da56cb31",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "49bec75d-acaf-4f44-b284-8eee8f2c8c97",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          11
+        ]
+      },
+      "NodeID": 6
+    },
+    "15": {
+      "UID": "7ffdaca6-d733-466f-baad-f585225ca7f5",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "17": {
+      "UID": "88fbd263-e57f-465f-84df-eded8c4cd27d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 17
+    },
+    "23": {
+      "UID": "e8a98555-b8b6-467e-a336-f888fd426fb1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 23
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 18,
+      "UID": "f251a336-cf9b-4a2a-849f-7303c755af38"
+    },
+    "11": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "242edff5-ddc0-418f-b87a-70b4887aa491",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0b53e0b2-6a46-4a62-9932-9a8304668e95",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_Shield"
+    },
+    "4": {
+      "UID": "7f39a2a7-01e6-43a4-92b6-3a0eb8c80ff0",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "21": {
+      "UID": "e4014080-d795-463a-979d-70bbf063a258",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_10410400",
+  "NodeID": 8,
+  "UID": "7417569f-4397-4ccf-ba47-fb3ef72f118e",
+  "eventIds": [
+    6,
+    15,
+    23,
+    18,
+    21
+  ],
+  "layer": "Base",
+  "length": 3
+}

@@ -1,0 +1,118 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "calcResultNodeId": 11,
+      "name": "actOnTargets",
+      "UID": "71043202-9470-428e-bfd0-00c215a799c5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "12620500",
+      "needEcs": true,
+      "actionIds": [
+        11
+      ],
+      "impulseId": 3001,
+      "NodeID": 5
+    },
+    "13": {
+      "UID": "dad43eaa-ab78-468b-9df1-3fdf87b22799",
+      "name": "clearHitBox",
+      "hitBoxId": "12620500",
+      "NodeID": 13
+    },
+    "6": {
+      "tickInterval": 0.05,
+      "eventType": "NotifyState",
+      "endTime": 0.3,
+      "NodeID": 6,
+      "UID": "b30e3a2e-c457-4597-a8c0-bbf4c081782d",
+      "onUpdate": {
+        "actionIds": [
+          5
+        ]
+      },
+      "startTime": 0.15,
+      "onExit": {
+        "actionIds": [
+          13
+        ]
+      }
+    },
+    "11": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2126211,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "59a8d5c4-d1f0-4156-b06e-eb6d790a3bfc",
+      "target": "TARGET",
+      "NodeID": 11,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10261_Attack_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 9,
+        "impulseId": 3001
+      }
+    },
+    "17": {
+      "UID": "f8807402-67cb-4e34-908c-ad225a57d8f8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "53b6443b-66e6-4bbd-835d-051374cf1645",
+      "effectId": "Eff_Parmon_1026204_Skill_Blast_01_Explosion",
+      "speed": 1,
+      "NodeID": 15
+    }
+  },
+  "BPName": "timeline_2126211",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    17,
+    6
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

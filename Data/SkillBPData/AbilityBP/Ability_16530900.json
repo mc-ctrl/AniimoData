@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_16530900",
+  "NodeID": 1,
+  "UID": "707cd5c0-714f-4a12-9efa-7ac14a5a1b33",
+  "desc": "",
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "7": {
+      "timelineId": 16530900001,
+      "name": "setCombatActionTimeline",
+      "UID": "7f041c8b-36be-435e-9578-7865f5863062",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "ExploreSkill_ContinuousWaterStart",
+    "ExploreSkill_ContinuousWaterLoop",
+    "ExploreSkill_ContinuousWaterEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_Attack01_Hit",
+    "Eff_Parmon_10653_Skill_ContinuousWaterSpray_Loop",
+    "Eff_Parmon_Common_Skill_Water_Bullet_Bomb"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 9400145,
+  "isAim": true
+}

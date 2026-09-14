@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_11430010",
+  "NodeID": 1,
+  "UID": "ebf3f0e1-0645-415f-8961-4cc9bab8e2c8",
+  "abilityParamId": 11700001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11430010001,
+      "name": "setCombatActionTimeline",
+      "UID": "e27870f5-4575-4ecc-962f-bcb7a0471b3e",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10143_Attack_Boss",
+    "Eff_Parmon_10072_Skill_Hit",
+    "Eff_Parmon_10143_Boss_Warning",
+    "Eff_Parmon_10143_Skill_HaloMax_Boss01",
+    "Eff_Parmon_10143_Skill_HaloMax_Boss02",
+    "Eff_Parmon_10143_Skill_HaloMax_Boss03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 4.5,
+  "subAbilityIds": [
+    11430011,
+    11430012
+  ],
+  "searchTargetRangeDown": 3
+}

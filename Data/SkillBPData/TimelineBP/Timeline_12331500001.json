@@ -1,0 +1,203 @@
+{
+  "nodeMap": {
+    "38": {
+      "duration": 0.8,
+      "name": "puppetPreCastAction",
+      "UID": "8d924450-553b-463c-99ef-a3bdce2b46d0",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 38
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          38,
+          41,
+          45,
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 40,
+      "UID": "949876d6-5bef-427d-b7ef-9020c0cfe7a3"
+    },
+    "41": {
+      "target": "TARGET",
+      "isSwitchPetInherit": true,
+      "speed": 1,
+      "NodeID": 41,
+      "UID": "53ba8655-efa0-45cd-b2d6-ec550d41a824",
+      "effectId": "Eff_Range_Indicator_Circle1",
+      "scale": 3,
+      "name": "playEffectStr"
+    },
+    "42": {
+      "reclaim": true,
+      "name": "dropEffectStr",
+      "UID": "500e933e-1eed-4fe0-bc66-3dd9fa2afb7b",
+      "effectId": "Eff_Range_Indicator_Circle1",
+      "target": "TARGET",
+      "NodeID": 42
+    },
+    "44": {
+      "UID": "87f59037-5907-4be3-8944-771322dc58ed",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 44
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "cb601873-f732-4b8c-8d22-a32c755b1966",
+      "target": "CASTER",
+      "NodeID": 2
+    },
+    "22": {
+      "UID": "cf4a8799-564c-4cac-bd83-69b391aea228",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "3748ce35-b610-42c8-a14a-6d1501550677",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          2,
+          28
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "key": "targetPos",
+      "name": "setCacheVal",
+      "UID": "8f9899e3-9ad2-491f-be18-96ae9d292558",
+      "target": "OWNER",
+      "val": {
+        "UID": "87f59037-5907-4be3-8944-771322dc58ed",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 44
+      },
+      "NodeID": 45
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        1.7,
+        0
+      ],
+      "templateId": 12331500001,
+      "name": "createProjectile",
+      "UID": "ea8b8b16-5fa3-4026-8b14-276f00747f41",
+      "offsetRotation": [
+        45,
+        0,
+        0
+      ],
+      "pos": {
+        "key": "targetPos",
+        "name": "getCacheVal",
+        "UID": "3346e7c4-160e-403c-99e2-7e9a1dc1b4de",
+        "target": "OWNER",
+        "NodeID": 47
+      },
+      "projectileType": "Parabola3d",
+      "NodeID": 15,
+      "targetPos": {
+        "key": "targetPos",
+        "name": "getCacheVal",
+        "UID": "97c54705-483f-42c5-ab2b-9b20d7c0d3f2",
+        "target": "OWNER",
+        "NodeID": 46
+      }
+    },
+    "25": {
+      "UID": "58876905-6ee0-4388-8406-946bd1410d4d",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "8fe3552f-77e0-48d1-bd44-3f9639aa8ab7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f31261a5-a47c-4cb3-bd70-cfd4e1a94a99",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "Skill_Hypnospore"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 17,
+      "UID": "fc23aba6-23c8-41f1-befb-a95d1b89266f"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2d8cffb8-59ff-469f-be7f-7f2131c9303d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10233_SleepSpore",
+      "NodeID": 19
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 23,
+      "UID": "08eb7561-fb5e-4e83-9af6-09026a0d53d2"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ac89ba73-2740-4b6c-b118-9cbad7d1012d",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore01",
+      "speed": 1,
+      "NodeID": 28
+    }
+  },
+  "BPName": "ability_12331500",
+  "NodeID": 6,
+  "UID": "779fb967-9053-4ef9-a94b-80cccdbfd63e",
+  "eventIds": [
+    4,
+    26,
+    17,
+    40,
+    23
+  ],
+  "layer": "Base",
+  "length": 2.1
+}

@@ -1,0 +1,283 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103214",
+  "calcInfoByLuaConfig": {
+    "id": 2103214,
+    "type": 1,
+    "taken_normal_attack_dmg_inc_rate_v": "param0"
+  },
+  "UID": "321e5799-376b-476f-8b77-496e3dd488b3",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        17,
+        19,
+        37
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "18eb946a-80c8-4a89-af1e-2fab65476b1f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3,
+        7,
+        35,
+        23
+      ],
+      "NodeID": 5
+    },
+    "38": {
+      "UID": "24994da6-9379-4bac-befc-50f8370cef1d",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10032_BladeBuff_Super_R",
+      "NodeID": 38
+    },
+    "39": {
+      "duration": 10,
+      "disableWhenFinished": true,
+      "NodeID": 39,
+      "UID": "90448638-93fb-472f-b08f-8e182e3b8051",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10032_BladeBuff_Super_R",
+      "name": "playPreset"
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a26ffd07-83b9-4f4e-98b9-af3047a95564",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_R",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "37": {
+      "duration": 10,
+      "disableWhenFinished": true,
+      "NodeID": 37,
+      "UID": "2dbdcb47-d2b9-4f84-9320-edb73d5e3b8a",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10032_BladeBuff_Super_R",
+      "name": "playPreset"
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "402fc0fd-12f9-474c-bdef-8ee4fc1a8054",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_L",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "31": {
+      "key": "feverLevel",
+      "name": "setCacheVal",
+      "UID": "5552ffa5-5566-48c2-b2ce-3fa36637879f",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 31
+    },
+    "23": {
+      "UID": "b6ca7433-99ba-444c-8c4c-9094b1858a01",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        22
+      ],
+      "NodeID": 23
+    },
+    "35": {
+      "duration": 10,
+      "disableWhenFinished": true,
+      "NodeID": 35,
+      "UID": "f5f6fd59-2806-4afd-b403-8d5a117db1db",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10032_BladeBuff_Super_L",
+      "name": "playPreset"
+    },
+    "22": {
+      "actionIds": [
+        20,
+        24,
+        25,
+        26,
+        31,
+        39
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "6bbdf2cb-c092-4eec-ac1b-4b74ea7d19c5",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "28": {
+      "UID": "51479425-cdfe-4e4b-bc86-d6dfd34756cc",
+      "conditionIds": [
+        27,
+        30
+      ],
+      "name": "conditionOr",
+      "NodeID": 28
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "764eb6e2-9e73-475f-ae99-f76653641b33",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_L",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "2ffc7193-79d0-4e6c-887e-430436575021",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_L",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f2cdfd3d-2181-42fe-a165-996f159d55e2",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_L",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "bc39d6aa-d642-4852-a024-9f401fef0bdf",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_R",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "b16ebd8b-b78e-4fba-9cbb-0d7a11a15843",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_R",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "buffId": 9103204,
+      "name": "hasBuff",
+      "UID": "db24dbca-48b2-433d-a36a-c5c4d66478ea",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "34543ba8-e3b6-4022-914e-c4bd0b99c816",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_R",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "7ae5b397-6a70-4470-b98c-09068ed90559",
+      "conditionIds": [
+        14,
+        16
+      ],
+      "name": "conditionOr",
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d2f8c8bf-61c9-4d7a-8018-c53b32b71dc0",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_L",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "buffId": 9103205,
+      "name": "hasBuff",
+      "UID": "34e39984-1c68-467d-b2bd-e861514dc37b",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "buffId": 9103204,
+      "name": "hasBuff",
+      "UID": "80ec3d6e-68d9-4963-b03e-bba098b11be9",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "594e94ea-26e2-4be0-baa9-906ab92dfab6",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_L",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "29": {
+      "UID": "9dd8a2de-6139-4a6a-bde4-565229e26a77",
+      "conditionIds": [
+        28,
+        34
+      ],
+      "name": "conditionAnd",
+      "NodeID": 29
+    },
+    "30": {
+      "buffId": 9103205,
+      "name": "hasBuff",
+      "UID": "98b1f63d-3db9-45d5-bfcf-8094e710486a",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b34b556f-b504-475a-a1cf-4a76a1aae8e9",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_R",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7b3eecfa-eb47-46cb-a8b7-baf2ff9767f5",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_Red_R",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "9991fe9f-1379-4bff-859c-df36a7996a76",
+      "name": "isNot",
+      "action": {
+        "rValue": 1,
+        "name": "equal",
+        "UID": "05731ab7-da3d-4683-a6a9-48df820d02c6",
+        "NodeID": 33,
+        "lValue": {
+          "key": "feverLevel",
+          "name": "getCacheVal",
+          "UID": "e3a134aa-f159-4690-a964-01f57e84892d",
+          "target": "OWNER",
+          "NodeID": 32
+        }
+      },
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "9681d820-94c8-49dc-8f9f-e3c281f5c89e",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10032_BladeBuff_Super_L",
+      "NodeID": 36
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    8,
+    10,
+    12,
+    13,
+    36,
+    38
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

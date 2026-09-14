@@ -1,0 +1,32 @@
+{
+  "83981881": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 83981881,
+    "logics": {},
+    "height": 80,
+    "radius": 55,
+    "sandboxId": 83980508,
+    "position": [
+      77.84,
+      105.14,
+      682.92
+    ],
+    "pointType": 1,
+    "name": "区域_草原房车营地"
+  }
+}

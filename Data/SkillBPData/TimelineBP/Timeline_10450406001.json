@@ -1,0 +1,124 @@
+{
+  "nodeMap": {
+    "36": {
+      "offsetXYZ": [
+        -2,
+        0,
+        8.43
+      ],
+      "templateId": 104504,
+      "name": "createEntity",
+      "UID": "0bea8ff2-3957-4703-af89-b8a3bd384411",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 36,
+      "pos": "CASTER"
+    },
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 4
+    },
+    "35": {
+      "offsetXYZ": [
+        2,
+        0,
+        8.43
+      ],
+      "templateId": 104504,
+      "name": "createEntity",
+      "UID": "3c8656f3-30da-48c9-a1fd-0ffb68d50421",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 35,
+      "pos": "CASTER"
+    },
+    "14": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 14
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        0,
+        12
+      ],
+      "templateId": 104504,
+      "name": "createEntity",
+      "UID": "ee60b144-25a7-4b2e-8c50-43e6948aee73",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 32,
+      "pos": "CASTER"
+    },
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "34": {
+      "UID": "2a4ba90f-6a8c-4902-a281-3c8f9bc10859",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32,
+          35,
+          36
+        ]
+      },
+      "NodeID": 34
+    },
+    "16": {
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_10450406",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    16,
+    34
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

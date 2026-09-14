@@ -1,0 +1,276 @@
+{
+  "nodeMap": {
+    "112": {
+      "UID": "bc2408e6-71f5-4a80-b822-2621c3e43f50",
+      "searchRadius": 18,
+      "name": "lockTargetBySearchRadius",
+      "NodeID": 112
+    },
+    "140": {
+      "action": {
+        "actionIds": [
+          139
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.93,
+      "NodeID": 140,
+      "UID": "aa3ee43b-984f-452c-a7c7-901e14b3edcd"
+    },
+    "126": {
+      "action": {
+        "actionIds": [
+          125
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.93,
+      "NodeID": 126,
+      "UID": "9d81a5af-fc81-41b5-939c-72711dadeefb"
+    },
+    "132": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30103,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10027_Skill_Slingshot_Hit_DefMode_Metal",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 6000
+      },
+      "UID": "6b664ec8-2cfa-4f79-8706-83d9aab1909a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 132
+    },
+    "100": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cae827e6-5e73-45c6-a915-0bb2ddc0ece4",
+      "target": "OWNER",
+      "NodeID": 100,
+      "animId": "Skill_Slingshot_Charge"
+    },
+    "133": {
+      "calcResultNodeId": 132,
+      "name": "actOnTargets",
+      "UID": "a59c4fc1-59a0-4266-b66f-eb511ee15804",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            1.7
+          ],
+          "shapeArgs": [
+            2,
+            180,
+            1.5,
+            0.3
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        132
+      ],
+      "impulseId": 6000,
+      "NodeID": 133
+    },
+    "102": {
+      "actionIds": [
+        107,
+        109
+      ],
+      "conditionActionIds": [
+        106
+      ],
+      "UID": "19102a25-4446-44d9-99f6-ade6b6d1aeac",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        100,
+        110
+      ],
+      "NodeID": 102
+    },
+    "103": {
+      "action": {
+        "actionIds": [
+          102
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 103,
+      "UID": "8bf823f6-037f-4549-8a94-e749a947b222"
+    },
+    "104": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "447f5e8e-92fd-46e7-b5ae-6f63348d69d8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10027_Skill_Slingshot_Charge",
+      "NodeID": 104
+    },
+    "105": {
+      "UID": "1031f91e-ee6a-4801-942f-5a60a468959e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          104
+        ]
+      },
+      "NodeID": 105
+    },
+    "106": {
+      "UID": "dec895ae-75fd-48f4-8698-5412945e80cb",
+      "target": "OWNER",
+      "name": "isInSpecialDefenseST",
+      "NodeID": 106
+    },
+    "139": {
+      "UID": "9747743f-3f84-4c1f-a604-8239d28ed14a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 139
+    },
+    "107": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0ff665ff-115e-4aee-905c-97628a9e7419",
+      "target": "OWNER",
+      "NodeID": 107,
+      "animId": "Skill_Slingshot_Charge_DefMode"
+    },
+    "134": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 1.33,
+      "NodeID": 134,
+      "UID": "c08de772-1c60-41f1-8309-4bb236fea8b4",
+      "onUpdate": {
+        "actionIds": [
+          133
+        ]
+      },
+      "startTime": 0.72,
+      "onEnter": {
+        "actionIds": [
+          133
+        ]
+      }
+    },
+    "128": {
+      "action": {
+        "actionIds": [
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.33,
+      "NodeID": 128,
+      "UID": "04a93e15-5327-47a1-ac08-9679427dc242"
+    },
+    "111": {
+      "time": 0.01,
+      "rotateSpeed": 9999,
+      "name": "rotateTo",
+      "UID": "9a6d602f-97a4-48b8-ac4f-2aeaf55060ea",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 111
+    },
+    "125": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3a85a01a-cb73-41b4-8edb-37447c8d4436",
+      "effectId": "Eff_Parmon_10027_Skill_Slingshot_End_Metal_liuli",
+      "speed": 1,
+      "NodeID": 125
+    },
+    "93": {
+      "UID": "28ee7323-a9ba-42de-8fd0-b8c8125a6f88",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 93
+    },
+    "110": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "01fedf83-9814-4402-9950-92a8e7576683",
+      "effectId": "Eff_Parmon_10027_Skill_Slingshot_Charge_Metal_liuli",
+      "speed": 1,
+      "NodeID": 110
+    },
+    "109": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3f10ce2b-7720-48af-a659-1ec7cc296acd",
+      "effectId": "Eff_Parmon_10027_Skill_Slingshot_Charge_DefMode_Metal_liuli",
+      "speed": 1,
+      "NodeID": 109
+    },
+    "127": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "dcc4efaf-b32a-4a72-bb7a-2791e38df6bd",
+      "target": "OWNER",
+      "NodeID": 127,
+      "animId": "Skill_Slingshot_End"
+    },
+    "95": {
+      "UID": "151a0cdd-2ae6-426e-a2f6-f83ae1f8c9bb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          93,
+          111,
+          112
+        ]
+      },
+      "NodeID": 95
+    }
+  },
+  "BPName": "ability_10270321",
+  "NodeID": 97,
+  "UID": "b7371bfc-bd8e-4f07-ad44-fb22541f232a",
+  "eventIds": [
+    95,
+    140,
+    103,
+    105,
+    128,
+    126,
+    134
+  ],
+  "layer": "Base",
+  "length": 2
+}

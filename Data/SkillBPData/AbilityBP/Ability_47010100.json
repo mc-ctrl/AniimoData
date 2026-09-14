@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_47010100",
+  "NodeID": 1,
+  "UID": "5186a9d2-4715-4484-aba7-ad961b1c0d20",
+  "abilityParamId": 47010010,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 47010100001,
+      "name": "setCombatActionTimeline",
+      "UID": "4be6d300-b0e2-493e-b8d1-0195930185c3",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 7,
+  "preloadAnims": [
+    "Skill_Dash",
+    "Skill_DashEnd",
+    "Hit_L"
+  ],
+  "preloadEffs": [
+    "Eff_EggMan_Skill_Sprint_01",
+    "Eff_Hit_Dark_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

@@ -1,0 +1,154 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "UID": "f88e9302-4da2-407f-a39d-1c9ac4f3b776",
+      "name": "stopAnimation",
+      "anim": "Skill_BreathLoop",
+      "NodeID": 37
+    },
+    "38": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "1ae6b84f-764a-49c0-b589-82c04ecb830e",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "74": {
+      "name": "stopSoundStr",
+      "UID": "3bf81ac4-dc87-40d4-b347-7e2f86144bd4",
+      "soundId": "SFX_Combat_10283_Skill_Breath_Loop",
+      "target": "OWNER",
+      "NodeID": 74
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bdccf4ff-1b2d-4f92-aff4-21c25024e443",
+      "effectId": "Eff_Parmon_10283_Skill_Breath_End",
+      "speed": 1,
+      "NodeID": 56
+    },
+    "52": {
+      "name": "stopEffectStr",
+      "UID": "7d03f986-337f-40e1-8ad9-900dfcf2066b",
+      "effectId": "Eff_Parmon_10283_Skill_Breath_Loop",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "35": {
+      "UID": "0a40dc1f-f6a5-4d77-84e8-eb080a438085",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "NodeID": 35
+    },
+    "73": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "57eeb942-4745-4c1a-976a-5eceeec5beac",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10283_Skill_Breath_End",
+      "NodeID": 73
+    },
+    "27": {
+      "UID": "7a3269f6-e776-4f85-98a3-d73c5e05a6cd",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "95f89221-b36d-4126-849b-0d2642d5a320",
+      "target": "OWNER",
+      "NodeID": 17,
+      "animId": "Skill_BreathEnd"
+    },
+    "29": {
+      "UID": "bc48a850-6cf3-4d37-a081-7b87f7371640",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          36,
+          38,
+          74,
+          73
+        ]
+      },
+      "NodeID": 29
+    },
+    "31": {
+      "UID": "666d215e-2115-4c6a-9fa0-7745bea15736",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 31
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 32,
+      "UID": "94118556-2344-448f-9640-28b106e3d5a0"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          37,
+          17,
+          52,
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.03,
+      "NodeID": 19,
+      "UID": "cc9eb872-a892-4a05-aedc-3b45af497569"
+    },
+    "34": {
+      "UID": "7b51431d-3fd5-493f-a8c7-9699dce706be",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "4b6cf9d4-4f03-4487-a0b4-089c46e83a38",
+      "target": "OWNER",
+      "name": "stopMoveByInput",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_12830100",
+  "NodeID": 21,
+  "UID": "367fa1c8-964c-4c85-96d6-788f3a7cc6d1",
+  "eventIds": [
+    19,
+    32,
+    35,
+    29
+  ],
+  "layer": "Base",
+  "length": 4.4
+}

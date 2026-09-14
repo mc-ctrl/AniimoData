@@ -1,0 +1,72 @@
+{
+  "3": {
+    "Name": 1900932332,
+    "buttonIcon": "$UI_Img_Share_QQ.png",
+    "socialType": "qq"
+  },
+  "4": {
+    "Name": 1132806466,
+    "buttonIcon": "$UI_Img_Share_QZone.png",
+    "socialType": "qzone"
+  },
+  "6": {
+    "Name": 1617042789,
+    "buttonIcon": "$UI_Img_Share_Douyin.png",
+    "socialType": "douyin"
+  },
+  "101": {
+    "Name": 1545689750,
+    "socialType": "discord"
+  },
+  "108": {
+    "Name": 1313378922,
+    "socialType": "vk"
+  },
+  "7": {
+    "Name": 1401172315,
+    "buttonIcon": "$UI_Img_Share_Weibo.png",
+    "socialType": "weibo"
+  },
+  "107": {
+    "Name": 1692662981,
+    "socialType": "youtube"
+  },
+  "106": {
+    "Name": 1940093743,
+    "socialType": "reddit"
+  },
+  "5": {
+    "Name": 2072384465,
+    "buttonIcon": "$UI_Img_Share_LittleRedBook.png",
+    "socialType": "xhs"
+  },
+  "103": {
+    "Name": 2117350985,
+    "buttonIcon": "$UI_Img_Share_Instagram.png",
+    "socialType": "ins"
+  },
+  "104": {
+    "Name": 2037809738,
+    "buttonIcon": "$UI_Img_Share_Facebook.png",
+    "socialType": "facebook"
+  },
+  "105": {
+    "Name": 1834755918,
+    "socialType": "tiktok"
+  },
+  "102": {
+    "Name": 1280730085,
+    "buttonIcon": "$UI_Img_Share_Twitter.png",
+    "socialType": "twitter"
+  },
+  "1": {
+    "Name": 2007032321,
+    "buttonIcon": "$UI_Img_Share_WeChat.png",
+    "socialType": "wechat"
+  },
+  "2": {
+    "Name": 2078466107,
+    "buttonIcon": "$UI_Img_Share_Moments.png",
+    "socialType": "wechattimeline"
+  }
+}

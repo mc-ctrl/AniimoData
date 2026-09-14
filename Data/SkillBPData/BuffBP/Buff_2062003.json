@@ -1,0 +1,265 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2062003",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "calcInfoByLuaConfig": {
+    "id": 2062003,
+    "type": 1,
+    "rogue_coin_add_p": "param1"
+  },
+  "onBuffThinkIds": [
+    105
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "41": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "8aff7f81-14ff-46ca-b70e-f52d09c6608c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Generate",
+      "NodeID": 41
+    },
+    "7": {
+      "UID": "34638e9e-d402-4cd6-acd8-62e5ae77097b",
+      "number": 0.1,
+      "name": "constNumber",
+      "NodeID": 7
+    },
+    "8": {
+      "NodeID": 8,
+      "UID": "620719d5-b358-498c-b547-b64d69617726",
+      "name": "setProjAroundSelfData",
+      "isRoundSelf": false,
+      "rotateSpeed": 15,
+      "radius": 2,
+      "launchIntervalActionId": 7,
+      "maxCountActionId": 90,
+      "projectileActionId": 10,
+      "triggerCountActionId": 89
+    },
+    "117": {
+      "UID": "413a4c9c-9407-45af-b849-f3420dac66de",
+      "number": 20,
+      "name": "constNumber",
+      "NodeID": 117
+    },
+    "121": {
+      "relation": 2,
+      "name": "checkRelationWithReferenceTarget",
+      "UID": "67624897-fa1f-4de0-8e1d-968a5207a5c0",
+      "target": {
+        "UID": "af5e5e43-3e92-431b-b2dd-59bc08ca7809",
+        "name": "getEventAttackTarget",
+        "NodeID": 120
+      },
+      "referenceTarget": "OWNER",
+      "NodeID": 121
+    },
+    "11": {
+      "launchCountActionId": 117,
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11,
+      "UID": "a8ed005e-0b1f-4560-ac8e-9233c71dda6a",
+      "name": "launchProjAroundSelf"
+    },
+    "103": {
+      "UID": "34a20941-b9e5-47ff-8aed-47826a4ed92b",
+      "name": "getRoguePersistData",
+      "key": "CoinBulletCD",
+      "NodeID": 103
+    },
+    "2": {
+      "UID": "fc7f2575-73b1-411d-ba74-7a9ef05b4f87",
+      "name": "getRoguePersistData",
+      "key": "rogueAccumulatedCoin",
+      "NodeID": 2
+    },
+    "3": {
+      "UID": "f8297653-1ae2-4410-b5bb-bc71133528ca",
+      "triggerCountActionId": 2,
+      "name": "addProjAroundSelf",
+      "NodeID": 3
+    },
+    "13": {
+      "conditionActionIds": [
+        119
+      ],
+      "UID": "78ee1d44-36d7-4e41-ac99-1883740d4809",
+      "name": "doActionsByConditions",
+      "NodeID": 13,
+      "elseActionIds": [
+        12
+      ]
+    },
+    "105": {
+      "key": "CoinBulletCD",
+      "name": "setRoguePersistData",
+      "UID": "64f390aa-82cb-4ec8-b38e-c59705f772ed",
+      "value": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "f09e4a07-4cd0-4f75-b63d-10cd18cf8e9e",
+        "NodeID": 104,
+        "lValue": {
+          "UID": "34a20941-b9e5-47ff-8aed-47826a4ed92b",
+          "name": "getRoguePersistData",
+          "key": "CoinBulletCD",
+          "NodeID": 103
+        }
+      },
+      "NodeID": 105
+    },
+    "14": {
+      "UID": "520506c3-cad6-4ebd-9d48-be380c1c9d14",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0.2
+      ],
+      "templateId": 2062003101,
+      "name": "createProjectile",
+      "UID": "1481ded8-8e09-4a82-b2cb-b533d9ec5116",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "UID": "5f0a0afb-bc32-417e-b7ac-f5df1e0cc4fc",
+        "name": "getEventAttackTarget",
+        "NodeID": 9
+      },
+      "NodeID": 10,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "15": {
+      "unsummonValid": false,
+      "actionIds": [
+        14
+      ],
+      "name": "registerGroupEvent",
+      "UID": "44418f5f-51d4-4a0e-a864-e9944e1c99e2",
+      "NodeID": 15
+    },
+    "119": {
+      "rValue": {
+        "UID": "af5e5e43-3e92-431b-b2dd-59bc08ca7809",
+        "name": "getEventAttackTarget",
+        "NodeID": 120
+      },
+      "name": "equal",
+      "UID": "245fcb1c-8ce1-43b7-98b0-091cf6c2050b",
+      "NodeID": 119,
+      "lValue": {
+        "UID": "99b6207a-f51b-4e5a-8a44-f562d088f5c3",
+        "target": "CURPET",
+        "name": "getTargetId",
+        "NodeID": 118
+      }
+    },
+    "116": {
+      "calcId": 2062003,
+      "calcType": 1,
+      "paramName": "param9",
+      "NodeID": 116,
+      "UID": "c37b2b7f-b175-41ab-afed-e1935f60464b",
+      "name": "getParamByLuaConfig"
+    },
+    "108": {
+      "key": "CoinBulletCD",
+      "cumulativeCountActionIds": [
+        111,
+        109,
+        106
+      ],
+      "NodeID": 108,
+      "UID": "bd9a0beb-59fd-46f2-bbef-9c7bb9f920a3",
+      "name": "registerRoguePersistDataChange",
+      "cumulativeCount": {
+        "calcId": 2062003,
+        "calcType": 1,
+        "paramName": "param9",
+        "NodeID": 116,
+        "UID": "c37b2b7f-b175-41ab-afed-e1935f60464b",
+        "name": "getParamByLuaConfig"
+      },
+      "responseNegative": false
+    },
+    "90": {
+      "calcId": 2062003,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 90,
+      "UID": "2f8c0d43-0f1f-4533-9686-c666fba11ab1",
+      "name": "getParamByLuaConfig"
+    },
+    "109": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "37a827d7-fb2c-4ee2-99f9-eb355c2f2956",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Generate",
+      "NodeID": 109
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        121
+      ],
+      "UID": "a78c11b7-42d8-4b18-a5cf-927d860ca72e",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "110": {
+      "UID": "cceabfb5-26f9-4003-8f34-13a011af9e0a",
+      "name": "getRoguePersistData",
+      "key": "rogueAccumulatedCoin",
+      "NodeID": 110
+    },
+    "89": {
+      "calcId": 2062003,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 89,
+      "UID": "d7a29210-2c85-42c7-a57d-565dabedcbf1",
+      "name": "getParamByLuaConfig"
+    },
+    "111": {
+      "UID": "ff886cbb-4248-49ab-b6a6-0d3b1eacd5f6",
+      "triggerCountActionId": 110,
+      "name": "addProjAroundSelf",
+      "NodeID": 111
+    },
+    "106": {
+      "UID": "28d49b91-e890-4344-8433-9845e7a10dc3",
+      "name": "buffStopThink",
+      "NodeID": 106
+    }
+  },
+  "calcInfo": {
+    "rogue_coin_add_p": 0.33
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    3,
+    41,
+    15,
+    108
+  ]
+}

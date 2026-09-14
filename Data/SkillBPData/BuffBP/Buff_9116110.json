@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116110",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "isInBurrow",
+      "UID": "e855216c-eec6-4ac3-919e-85087f2de3d2",
+      "target": "OWNER",
+      "NodeID": 3,
+      "not": false
+    },
+    "4": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "a909fd14-dd80-482a-8bb6-74eca38eb086",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "10": {
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "69a6fb83-8683-4008-8501-c583fb0b7896",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        12
+      ]
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9116111,
+      "NodeID": 7,
+      "UID": "3616bf96-8ae3-45bf-bb0b-899cf5d1a3ef",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "4d6b5b70-1d6a-4bd4-9d86-4830112d7693",
+      "cd": 0.9,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "9": {
+      "name": "isInBurrow",
+      "UID": "4559e0b4-9768-449e-acb8-0035d78ce2f2",
+      "target": "OWNER",
+      "NodeID": 9,
+      "not": false
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerCharacterStateChangeEvent",
+      "UID": "db0138ed-ab3c-4535-a0a3-4bf90cfa44c3",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "f304dc17-fed8-4708-82b1-0bcbced5e970",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "buffId": 9116111,
+      "name": "removeBuff",
+      "UID": "9937fb3b-212d-486f-aecb-50cfa49476d9",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    11
+  ]
+}

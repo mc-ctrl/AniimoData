@@ -1,0 +1,330 @@
+{
+  "angularIncreaseDuration": 0.3,
+  "BPName": "buff_2032000",
+  "NodeID": 0,
+  "trackingNoOffsetRotationRange": 5,
+  "effectId": "Eff_Buff_Rogue_Heal_Equip_Link_Fly",
+  "nodeMap": {
+    "333": {
+      "actionIds": [
+        334
+      ],
+      "conditionActionIds": [
+        332
+      ],
+      "UID": "16163901-7eb3-48bb-88a6-52ec7c6cf2d4",
+      "name": "doActionsByConditions",
+      "NodeID": 333
+    },
+    "267": {
+      "UID": "f8899b9a-d8d3-48d4-8cec-7efc5527f2cf",
+      "name": "getRoguePersistData",
+      "key": "HealBulletCnt",
+      "NodeID": 267
+    },
+    "269": {
+      "key": "HealBulletCnt",
+      "name": "setRoguePersistData",
+      "UID": "035e4df1-9138-4eae-abfc-38942b0e902f",
+      "value": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "f4c21e9f-156c-4d9f-8c10-6fa2a9b2c491",
+        "NodeID": 268,
+        "lValue": {
+          "UID": "f8899b9a-d8d3-48d4-8cec-7efc5527f2cf",
+          "name": "getRoguePersistData",
+          "key": "HealBulletCnt",
+          "NodeID": 267
+        }
+      },
+      "NodeID": 269
+    },
+    "340": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param12",
+      "NodeID": 340,
+      "UID": "106293a7-abed-45ef-a870-638b991db619",
+      "name": "getParamByLuaConfig"
+    },
+    "240": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "6f7dda22-64e2-421d-811b-5240cf0eb9bc",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Heal_Link_Hit",
+      "NodeID": 240
+    },
+    "283": {
+      "key": "EquipAttr",
+      "attributeName": "instant_dmg_rate_v",
+      "UID": "808b6219-7c56-49be-b0ff-ffa3ccbb2ae3",
+      "name": "getRogueProp",
+      "NodeID": 283
+    },
+    "182": {
+      "overrideCaster": "CURPET",
+      "calcInfo": {
+        "instant_crit_rate_v": {
+          "key": "EquipAttr",
+          "attributeName": "instant_crit_rate_v",
+          "UID": "33485ca4-db06-4db9-8f2a-7163155b8c04",
+          "name": "getRogueProp",
+          "NodeID": 248
+        },
+        "instant_addition_dmg": {
+          "rValue": {
+            "rValue": {
+              "rValue": {
+                "calcId": 2032000,
+                "calcType": 1,
+                "paramName": "param12",
+                "NodeID": 340,
+                "UID": "106293a7-abed-45ef-a870-638b991db619",
+                "name": "getParamByLuaConfig"
+              },
+              "name": "multiply",
+              "UID": "48d3f893-df01-47f7-88cb-4d400317d8fc",
+              "NodeID": 339,
+              "lValue": {
+                "name": "getAttribute",
+                "UID": "49817f4b-3b8c-4eef-a3c4-5472a6b5e9b7",
+                "target": "CURPET",
+                "NodeID": 338,
+                "attributeName": "hp_max_cur"
+              }
+            },
+            "name": "add",
+            "UID": "6f116a74-ba13-4f31-aaaa-30698fd3414c",
+            "NodeID": 179,
+            "lValue": {
+              "rValue": {
+                "calcId": 2032000,
+                "calcType": 1,
+                "paramName": "param4",
+                "NodeID": 304,
+                "UID": "fc972262-9cd9-4887-82c9-9dbd42e1279a",
+                "name": "getParamByLuaConfig"
+              },
+              "name": "multiply",
+              "UID": "a025191d-97a8-4741-bfa0-236bbfe37463",
+              "NodeID": 178,
+              "lValue": {
+                "UID": "51b1b98b-a034-4412-8239-6e1ae6d14d25",
+                "name": "getProjectileCacheVal",
+                "key": "healDmg",
+                "NodeID": 177
+              }
+            }
+          },
+          "name": "multiply",
+          "UID": "ce2d0cba-27ea-4afe-8a56-a0e52020b183",
+          "NodeID": 180,
+          "lValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "527bd787-b1ff-4078-bb03-7281341c3e0a",
+            "NodeID": 186,
+            "lValue": {
+              "rValue": {
+                "calcId": 2032000,
+                "calcType": 1,
+                "paramName": "param0",
+                "NodeID": 289,
+                "UID": "37382e15-048a-4efe-a4b9-b045ffba15e4",
+                "name": "getParamByLuaConfig"
+              },
+              "name": "multiply",
+              "UID": "d9198fdf-215f-4780-b815-42f095ce6e06",
+              "NodeID": 185,
+              "lValue": {
+                "UID": "3affb9e7-2cfd-4513-86f1-e8ddbe3d91dc",
+                "name": "getRoguePersistData",
+                "key": "HealCnt",
+                "NodeID": 184
+              }
+            }
+          }
+        },
+        "instant_dmg_rate_v": {
+          "key": "EquipAttr",
+          "attributeName": "instant_dmg_rate_v",
+          "UID": "808b6219-7c56-49be-b0ff-ffa3ccbb2ae3",
+          "name": "getRogueProp",
+          "NodeID": 283
+        },
+        "instant_crit_dmg_v": {
+          "key": "EquipAttr",
+          "attributeName": "instant_crit_dmg_v",
+          "UID": "c1a43cc9-c240-41d6-95e2-f9464e6bb17b",
+          "name": "getRogueProp",
+          "NodeID": 247
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "SFX_Combat_Rogue_Heal_Link_Hit",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 1000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "db7f497a-6804-45bf-acd4-163653d3e699",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 182
+    },
+    "184": {
+      "UID": "3affb9e7-2cfd-4513-86f1-e8ddbe3d91dc",
+      "name": "getRoguePersistData",
+      "key": "HealCnt",
+      "NodeID": 184
+    },
+    "304": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param4",
+      "NodeID": 304,
+      "UID": "fc972262-9cd9-4887-82c9-9dbd42e1279a",
+      "name": "getParamByLuaConfig"
+    },
+    "294": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param10",
+      "NodeID": 294,
+      "UID": "340734a9-07d6-44ba-bbb2-48b918bd33a2",
+      "name": "getParamByLuaConfig"
+    },
+    "229": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "9d95859b-857d-4bb3-9b6e-80cbea076b5f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Heal_Link",
+      "NodeID": 229
+    },
+    "323": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param7",
+      "NodeID": 323,
+      "UID": "5b983a44-d4f2-4dbf-b63f-3d0447433ac3",
+      "name": "getParamByLuaConfig"
+    },
+    "247": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_dmg_v",
+      "UID": "c1a43cc9-c240-41d6-95e2-f9464e6bb17b",
+      "name": "getRogueProp",
+      "NodeID": 247
+    },
+    "248": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_rate_v",
+      "UID": "33485ca4-db06-4db9-8f2a-7163155b8c04",
+      "name": "getRogueProp",
+      "NodeID": 248
+    },
+    "332": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "b80ef858-f749-436f-99fc-dcbdc4ac18ec",
+      "NodeID": 332,
+      "lValue": {
+        "templateId": 2042000,
+        "name": "getBuffLayer",
+        "UID": "42ee9935-dca2-4ccc-aa22-6c5d193a4412",
+        "target": "OWNER",
+        "NodeID": 331
+      }
+    },
+    "289": {
+      "calcId": 2032000,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 289,
+      "UID": "37382e15-048a-4efe-a4b9-b045ffba15e4",
+      "name": "getParamByLuaConfig"
+    },
+    "334": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 20420020,
+      "NodeID": 334,
+      "UID": "a66b39b0-4ca0-4198-89ca-cc0669ead5cb",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 300,
+  "maxHitNum": 1,
+  "reboundData": {
+    "reboundRelation": 2,
+    "maxCount": {
+      "rValue": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param10",
+        "NodeID": 294,
+        "UID": "340734a9-07d6-44ba-bbb2-48b918bd33a2",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "add",
+      "UID": "58395663-0667-4809-a63c-3b19a920d877",
+      "NodeID": 295,
+      "lValue": {
+        "calcId": 2032000,
+        "calcType": 1,
+        "paramName": "param7",
+        "NodeID": 323,
+        "UID": "5b983a44-d4f2-4dbf-b63f-3d0447433ac3",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "isReboundSelf": true,
+    "searchRadius": 10
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "calcResultNodeId": 182,
+  "onProjectileHitIds": [
+    182,
+    240,
+    269,
+    333
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 300,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "onProjectileStartIds": [
+    229
+  ],
+  "tickInterval": 0,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 6,
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

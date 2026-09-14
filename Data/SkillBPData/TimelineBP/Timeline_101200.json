@@ -1,0 +1,202 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "lockTarget": "MASTER",
+      "name": "lockTarget",
+      "UID": "e09e685a-1458-4602-b13c-95f30b6d5b12",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "db1f6156-0fa2-466c-a74a-48d6a7fd96eb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5,
+          15
+        ]
+      },
+      "NodeID": 7
+    },
+    "9": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.08
+      },
+      "name": "calcResult",
+      "UID": "4965db0d-56d1-4e18-ac00-019d43bf15cc",
+      "target": "MASTER",
+      "NodeID": 9
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          9,
+          27,
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.1,
+      "NodeID": 11,
+      "UID": "44c79dc3-8ed1-416c-b760-3edfd6d6e23c"
+    },
+    "20": {
+      "key": "cloneNumber",
+      "name": "setServerCacheVal",
+      "UID": "f1a45136-b5aa-4c52-aa94-068d4ef53936",
+      "target": "MASTER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "8251c21e-cac6-4963-8387-3cf011c6ad35",
+        "NodeID": 19,
+        "lValue": {
+          "key": "cloneNumber",
+          "name": "getServerCacheVal",
+          "UID": "9e6d0611-0096-470d-bcb2-95a8ed909420",
+          "target": "MASTER",
+          "NodeID": 18
+        }
+      },
+      "NodeID": 20
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "aeef7ee3-3eba-485c-8934-c74c3075fe3b",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Taught01"
+    },
+    "3": {
+      "UID": "1bd7f730-535e-46d6-a907-4051a275d04b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "name": "hideModel",
+      "UID": "0856d3fd-db0f-4d29-9778-4d9a327c5493",
+      "target": "OWNER",
+      "NodeID": 23,
+      "maxHideTime": 10
+    },
+    "24": {
+      "UID": "02dda9ee-b47f-4496-b0c7-68604cf10d48",
+      "name": "removeEvent",
+      "eventName": "onDead",
+      "NodeID": 24
+    },
+    "14": {
+      "actionIds": [
+        20,
+        26,
+        12,
+        28
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "73083111-42c4-4841-ab18-93abf54bf410",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "15": {
+      "UID": "a312cef4-9b51-480e-a7fd-24ab9f3102ba",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9,
+      "NodeID": 25,
+      "UID": "57df29d8-3428-4abe-a33a-8e8fbcac64d8"
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "97548630-a684-4fd8-b3a0-07f462c003fe",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_DropBackReturn"
+    },
+    "27": {
+      "UID": "e9eb32f9-cb0c-4300-a933-89e421e0173c",
+      "name": "removeEvent",
+      "eventName": "onDead",
+      "NodeID": 27
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 17,
+      "UID": "fa3f8ad1-9c0d-4b17-ad89-4d187b751c5c"
+    },
+    "28": {
+      "UID": "4712f940-a50c-44d7-a204-a28bf121d0c9",
+      "target": "OWNER",
+      "name": "stopActionTimeline",
+      "NodeID": 28
+    },
+    "26": {
+      "name": "playEffectOnPosRot",
+      "UID": "66014082-fc2f-4ea2-92a9-f5e97572c98e",
+      "effectId": "Eff_Parmon_10012_Skill_Swift_Hit",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 26,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "12": {
+      "name": "hideModel",
+      "UID": "c5375900-74fa-459b-812b-dcedbec90322",
+      "target": "OWNER",
+      "NodeID": 12,
+      "maxHideTime": 10
+    },
+    "22": {
+      "rValue": {
+        "UID": "7c8a9e64-939b-4c73-93a7-18b6b21ec744",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 21
+      },
+      "name": "greater",
+      "UID": "f6fb38d6-6e6d-4cc5-8a50-240b33c9d5b1",
+      "NodeID": 22,
+      "lValue": 0.01
+    }
+  },
+  "BPName": "timeline_101200",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    7,
+    17,
+    3,
+    25,
+    11
+  ],
+  "layer": "Base",
+  "length": 10
+}

@@ -1,0 +1,134 @@
+{
+  "nodeMap": {
+    "37": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3dae766e-c9bf-40a8-b143-3263daae466b",
+      "target": "OWNER",
+      "NodeID": 37,
+      "animId": "AttackSpecial_End"
+    },
+    "39": {
+      "UID": "6604f3e8-0957-451c-8773-0054ca00ed8b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37,
+          46,
+          72,
+          48
+        ]
+      },
+      "NodeID": 39
+    },
+    "54": {
+      "UID": "71bce4b2-2b52-46f7-9df4-986e736c9ee9",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          53
+        ]
+      },
+      "NodeID": 54
+    },
+    "72": {
+      "name": "stopEffectStr",
+      "UID": "a1cb3b65-91d5-437f-abe2-f5ef5df377c9",
+      "effectId": "Eff_Parmon_10041_Skill_BubbleBreath_Loop",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "48": {
+      "UID": "ed59dc0a-e085-462b-9e0a-cb59d8cacb6d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 48
+    },
+    "61": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5c0525b3-822f-4eb8-b295-af675362625e",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_longbreath_water_end",
+      "NodeID": 61
+    },
+    "60": {
+      "UID": "0fc26460-88b0-42cd-bdfc-62645e7c9d99",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          58,
+          61
+        ]
+      },
+      "NodeID": 60
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5a19e963-ccf2-47f3-8cfc-c2e046b2a160",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10043_skill_longbreath_water_loop",
+      "NodeID": 58
+    },
+    "50": {
+      "UID": "264175b7-4652-42ff-80b9-2ef6dccc7c00",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 50
+    },
+    "46": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 46,
+      "UID": "587800ec-e0bf-4781-bdb9-36241e909583",
+      "blendTime": 0.5,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "aimOffsetMaxPitch": 0,
+      "name": "setIsInAim"
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 51,
+      "UID": "22964ae1-f318-4af3-adbe-0674a43aa44d"
+    },
+    "53": {
+      "UID": "81f361a1-90f6-43d5-ad5a-e2bad4af94e6",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 53
+    }
+  },
+  "BPName": "ability_10410310",
+  "NodeID": 41,
+  "UID": "495506d5-ddb2-4380-a7d6-0065bca0f826",
+  "eventIds": [
+    39,
+    51,
+    54,
+    60
+  ],
+  "layer": "Base",
+  "length": 1.783
+}

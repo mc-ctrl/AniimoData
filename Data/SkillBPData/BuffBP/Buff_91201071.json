@@ -1,0 +1,73 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91201071",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "NodeID": 3,
+      "UID": "36959614-65c2-40b1-9320-5edb81721974",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "4": {
+      "NodeID": 4,
+      "UID": "e4b6177b-bef7-43f1-97b2-62bce3354ad8",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "6": {
+      "name": "isInCombat",
+      "UID": "c2b21fc8-ce51-4f02-97cb-c0be53cb8c59",
+      "target": "OWNER",
+      "NodeID": 6,
+      "not": false
+    },
+    "7": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "af99f1df-bb79-4ad5-95d3-d391a903adde",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91201073,
+      "NodeID": 8,
+      "UID": "d2026ba6-23e9-4b55-a1c6-ef703913b425",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4,
+    7
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

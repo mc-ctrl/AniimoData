@@ -1,0 +1,79 @@
+{
+  "nodeMap": {
+    "22": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2133101201,
+      "name": "createProjectile",
+      "UID": "fc1e777a-d667-40e4-8b60-6e3155a8c9c2",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "c97ced41-a98c-4d3d-bb73-901fbc0b79cb",
+        "target": "MASTER",
+        "NodeID": 29
+      },
+      "NodeID": 22,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "13": {
+      "UID": "83f2957c-d05e-422e-8b09-96f4422f8135",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          22
+        ]
+      },
+      "NodeID": 13
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "1b448bf6-b576-46bb-aa29-3192951733be",
+      "effectId": "Eff_Parmon_10331_Fireball",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 28,
+      "UID": "63ab6858-a370-4687-8a5b-d80d65263fce"
+    },
+    "27": {
+      "UID": "9447d08a-6c74-4540-b52a-d161668de924",
+      "actorId": {
+        "UID": "58eb7196-c0ca-40b2-991b-763e98396aa5",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 26
+      },
+      "name": "destroyEntity",
+      "NodeID": 27
+    }
+  },
+  "BPName": "timeline_2133101",
+  "NodeID": 15,
+  "UID": "684dbed0-c715-46b7-b673-f80b42c00ff7",
+  "eventIds": [
+    13,
+    28
+  ],
+  "layer": "Base",
+  "length": 3
+}

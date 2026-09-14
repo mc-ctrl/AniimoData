@@ -1,0 +1,300 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91141011",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.0224,
+        0.0036,
+        -0.005
+      ],
+      "speed": 1,
+      "NodeID": 37,
+      "UID": "cf9026f7-b452-4b19-8f42-30865c60ba87",
+      "bone": "Bone M Hair C 01",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop"
+    },
+    "39": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.0224,
+        0.0036,
+        -0.005
+      ],
+      "speed": 1,
+      "NodeID": 39,
+      "UID": "f13554dc-3820-400c-9a4a-2d5f5fb370f6",
+      "bone": "Bone M Hair C 01",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart"
+    },
+    "41": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.085,
+        -0.005,
+        -0.002
+      ],
+      "speed": 1,
+      "NodeID": 41,
+      "UID": "7494078a-33a5-4344-920a-1b4ec772c5f4",
+      "bone": "Bone M TopHatRoot B 01",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop"
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a4e3c543-a095-46e6-bd77-cc458874a847",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop",
+      "speed": 1,
+      "NodeID": 35
+    },
+    "44": {
+      "name": "checkPetPrototypeId",
+      "UID": "6a4a95b7-f2be-4ff1-a3f7-b3eef23cdaf1",
+      "target": "OWNER",
+      "petPrototypeId": 1014301,
+      "NodeID": 44
+    },
+    "31": {
+      "name": "checkPetPrototypeId",
+      "UID": "43179b07-7d7e-48d5-b363-8b6408993c5c",
+      "target": "OWNER",
+      "petPrototypeId": 1014200,
+      "NodeID": 31
+    },
+    "50": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.044,
+        0.006,
+        0.017
+      ],
+      "speed": 1,
+      "NodeID": 50,
+      "UID": "b2837fe3-7406-42df-8ae9-583e7b0221cc",
+      "bone": "Bone L Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "853c971d-b81e-46b4-a4cc-397005cd16b8",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "54": {
+      "name": "stopEffectStr",
+      "UID": "d5ef9a58-58b5-44b0-80e1-c20ae370d632",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "92544409-4f75-413f-9251-dbedb0188b22",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "23": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91141012,
+      "NodeID": 23,
+      "UID": "8e55cfe5-8f41-46ff-a1bc-a77cd0eb474b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "24": {
+      "UID": "7e02d7d8-4e41-45e6-bacf-dca443c2ab4b",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 24
+    },
+    "52": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.016,
+        0.016,
+        0.013
+      ],
+      "speed": 1,
+      "NodeID": 52,
+      "UID": "fe030285-bbf6-4cb6-8830-76a36b242d2e",
+      "bone": "Bone R Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    },
+    "56": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 91141011,
+        "add_cur_sp_fix": "param0",
+        "type": 1
+      },
+      "UID": "fb0793df-58fd-4ba0-aa95-75b354f7a248",
+      "target": "OWNER",
+      "NodeID": 56,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    },
+    "43": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.085,
+        -0.005,
+        -0.002
+      ],
+      "speed": 1,
+      "NodeID": 43,
+      "UID": "28e0569c-fed5-46c0-9bb0-c5757dbf383e",
+      "bone": "Bone M TopHatRoot B 01",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart"
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "790eacf1-97b7-405a-a999-35b12371d13f",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "45": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.012,
+        -0.012,
+        -0.003
+      ],
+      "speed": 1,
+      "NodeID": 45,
+      "UID": "8d4282b4-2da2-452a-aeab-18b0039c35e8",
+      "bone": "Bone L Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    },
+    "48": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.045,
+        0.007,
+        0.017
+      ],
+      "speed": 1,
+      "NodeID": 48,
+      "UID": "15994a3b-2b91-4208-a033-95a8c7cb5851",
+      "bone": "Bone R Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "28": {
+      "name": "checkPetPrototypeId",
+      "UID": "b6a93273-17d5-4f11-9a0f-11b14b1981a5",
+      "target": "OWNER",
+      "petPrototypeId": 1014100,
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        39,
+        37
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "7b734b81-6cf9-4379-bdf5-f3a45efc7b7e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        32
+      ],
+      "NodeID": 29
+    },
+    "30": {
+      "actionIds": [
+        45,
+        52,
+        50,
+        48
+      ],
+      "conditionActionIds": [
+        44
+      ],
+      "UID": "b45005c3-40b0-4970-8044-f7ec8dd0fdd3",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        43,
+        41
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "0f5843c7-3817-4607-a92f-a973e58d82a8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        33,
+        35
+      ],
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0568ed56-8572-4c72-8647-09f24332d207",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "17": {
+      "buffId": 91141011,
+      "name": "removeBuff",
+      "UID": "1742362d-2999-40bc-8335-30201ab18a60",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "19": {
+      "actionIds": [
+        56,
+        23,
+        17
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "5018ba88-346c-4fdd-9836-eccc7580017b",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    }
+  },
+  "onBuffDestroyIds": [
+    25,
+    53,
+    54
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    30,
+    20
+  ]
+}

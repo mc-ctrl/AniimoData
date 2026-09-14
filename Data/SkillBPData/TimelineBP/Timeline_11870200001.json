@@ -1,0 +1,258 @@
+{
+  "nodeMap": {
+    "37": {
+      "duration": 0.516,
+      "disableWhenFinished": true,
+      "NodeID": 37,
+      "UID": "ac51dc1f-a019-4104-b509-e50f6a065a59",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10184_Fresnel_01",
+      "name": "playPreset"
+    },
+    "38": {
+      "duration": 0.516,
+      "disableWhenFinished": true,
+      "NodeID": 38,
+      "UID": "5d4b9860-8ab0-4491-8793-de59df545e5b",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10184_Fresnel_01",
+      "name": "playPreset"
+    },
+    "39": {
+      "duration": 0.516,
+      "disableWhenFinished": true,
+      "NodeID": 39,
+      "UID": "6b2d55c2-b55b-4b46-837e-832dab2f978c",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10184_Fresnel_01",
+      "name": "playPreset"
+    },
+    "40": {
+      "duration": 0.516,
+      "disableWhenFinished": true,
+      "NodeID": 40,
+      "UID": "e36aca45-6828-40ab-890e-67bb822a2743",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10184_Fresnel_01",
+      "name": "playPreset"
+    },
+    "35": {
+      "buffId": 2118102,
+      "name": "removeBuff",
+      "UID": "b3c131e3-f34c-4aea-8934-b97b297f0b4a",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "23": {
+      "UID": "e8e28630-cdc9-4f21-bbd8-49d1170c53c5",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 23
+    },
+    "11": {
+      "actionIds": [
+        33,
+        39,
+        38,
+        35,
+        36
+      ],
+      "conditionActionIds": [
+        30,
+        32
+      ],
+      "UID": "afdb8506-11bb-4314-9ee5-795011d60308",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "e370798b-6417-4d4f-8446-8af99ce2963a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bc0c9171-9c2c-4353-b968-297282c0d651",
+      "effectId": "Eff_Parmon_10187_Skill_Conjure_Release",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "33": {
+      "target": "OWNER",
+      "duration": 20,
+      "buffId": 2118104,
+      "NodeID": 33,
+      "UID": "7e61f28a-632b-497f-9368-00fe0e118ed1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "UID": "d9be6ef3-fff8-4fb1-b308-db9fff780d1d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          14,
+          21
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "551d73fe-5ada-4db3-a0bb-d6df97eaa86f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7b66f3f0-ba2c-4984-8a11-f311adf1ef96",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_horngull_skill_conjure",
+      "NodeID": 14
+    },
+    "10": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 2118702,
+      "NodeID": 10,
+      "UID": "78bf6e3b-ee96-4caf-9978-dee9e0cea9fc",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 13,
+      "UID": "28b45caa-4989-46f0-8149-4e873dcd6d16"
+    },
+    "25": {
+      "target": "OWNER",
+      "duration": 20,
+      "buffId": 2118104,
+      "NodeID": 25,
+      "UID": "5490578b-d245-4363-8fd8-3edd4a677c82",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "UID": "d5ab32ba-ccec-4d79-8d64-d21b27768f39",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 16
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "58f5f0b2-1e8a-4855-a938-fac87fec9c31",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Conjure"
+    },
+    "28": {
+      "buffId": 2118104,
+      "name": "hasBuff",
+      "UID": "3fd2c482-69ec-47a9-98e4-30452937084c",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "12": {
+      "actionIds": [
+        25,
+        40,
+        37
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "2a0b871b-a5b4-4086-a6c1-d173cfcd0959",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 12
+    },
+    "30": {
+      "buffId": 2118102,
+      "name": "hasBuff",
+      "UID": "48b449ae-1611-4678-95c8-27c9f65bc060",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "buffId": 2118402,
+      "name": "hasBuff",
+      "UID": "26dc8f5f-4bcc-413f-ba41-1230263773a3",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "UID": "5be06d45-0eb1-4041-9247-0d82482ec461",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 19
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 17,
+      "UID": "5b91b476-f44c-4cdb-a1fa-8794df943f50"
+    },
+    "36": {
+      "buffId": 2118402,
+      "name": "removeBuff",
+      "UID": "20cd197b-8ca0-488b-9334-24fca33bbb4b",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11870200",
+  "NodeID": 6,
+  "UID": "2f177381-ed2b-448e-a52c-fc9496151615",
+  "eventIds": [
+    20,
+    4,
+    17,
+    24,
+    13
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

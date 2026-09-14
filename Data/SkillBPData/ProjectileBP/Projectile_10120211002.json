@@ -1,0 +1,118 @@
+{
+  "angularIncreaseDuration": 0.6,
+  "BPName": "ability_10120211",
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 0.6,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 0,
+  "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_02",
+  "minAngularOffset": 0,
+  "moveSpeed": 40,
+  "onProjectileFinishIds": [
+    24,
+    16,
+    47
+  ],
+  "calcResultNodeId": 29,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10120211,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "acfe062f-f4de-4772-b9fd-112a9d2f04da",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 5003,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002
+      }
+    },
+    "47": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "02e197a3-2a25-4cd4-82ac-f512993c599f",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "24": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 29,
+      "NodeID": 24,
+      "UID": "53a1bcb4-cfe0-49d6-ae85-a2ec7146ca5c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.7,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5003,
+      "actionIds": [
+        29,
+        25
+      ]
+    },
+    "25": {
+      "target": "TARGET",
+      "duration": 2,
+      "buffId": 1100101,
+      "NodeID": 25,
+      "UID": "53f0db23-f905-4848-b732-55d4390ff790",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "19b273a3-d668-49c2-8b62-756876b221c1",
+      "effectId": "Eff_Parmon_10011_Skill_Charm_Creation",
+      "speed": 1,
+      "NodeID": 16
+    }
+  },
+  "tickInterval": 0.05,
+  "duration": 1.2,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 5003,
+  "acceleration": 0
+}

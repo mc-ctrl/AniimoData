@@ -1,0 +1,25 @@
+{
+  "87699964": {
+    "owner": "曾楠",
+    "sandboxType": 3,
+    "chunk": 1029114,
+    "spawners": [
+      87741373
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "id": 87699964,
+    "sandBoxLevel": 0,
+    "markIconSpawnerId": 0,
+    "lastModifiedBy": "",
+    "position": [
+      605.72,
+      -79.12,
+      1525.61
+    ],
+    "name": "板块1高地东部_其他关卡_熔岩暴龙头目篝火",
+    "poiType": 503,
+    "enableFinishMark": false
+  }
+}

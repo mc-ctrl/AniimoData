@@ -1,0 +1,62 @@
+[
+  [
+    {
+      "reportFactor": 0.24
+    },
+    {
+      "reportFactor": 0.24
+    },
+    {
+      "reportFactor": 0.32
+    },
+    {
+      "reportFactor": 0.32
+    },
+    {
+      "reportFactor": 0.4
+    },
+    {
+      "reportFactor": 0.4
+    }
+  ],
+  [
+    {
+      "reportFactor": 0.15
+    },
+    {
+      "reportFactor": 0.15
+    },
+    {
+      "reportFactor": 0.2
+    },
+    {
+      "reportFactor": 0.2
+    },
+    {
+      "reportFactor": 0.25
+    },
+    {
+      "reportFactor": 0.25
+    }
+  ],
+  [
+    {
+      "reportFactor": 0.12
+    },
+    {
+      "reportFactor": 0.12
+    },
+    {
+      "reportFactor": 0.16
+    },
+    {
+      "reportFactor": 0.16
+    },
+    {
+      "reportFactor": 0.2
+    },
+    {
+      "reportFactor": 0.2
+    }
+  ]
+]

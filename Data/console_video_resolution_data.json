@@ -1,0 +1,22 @@
+[
+  {
+    "quality_mode_resolution": "1920x1080",
+    "deviceName": "XboxSeriesS",
+    "performance_mode_resolution": "1920x1080"
+  },
+  {
+    "quality_mode_resolution": "3840x2160",
+    "deviceName": "XboxSeriesX",
+    "performance_mode_resolution": "3840x2160"
+  },
+  {
+    "quality_mode_resolution": "3840x2160",
+    "deviceName": "PS5Base",
+    "performance_mode_resolution": "3840x2160"
+  },
+  {
+    "quality_mode_resolution": "3840x2160",
+    "deviceName": "PS5Pro",
+    "performance_mode_resolution": "3840x2160"
+  }
+]

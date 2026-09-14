@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_902131800",
+  "NodeID": 1,
+  "UID": "c53f99fa-141c-47e1-bf36-268b2221712a",
+  "desc": "冲！",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "72": {
+      "timelineId": 902131800001,
+      "name": "setCombatActionTimeline",
+      "UID": "ac8cca5d-d087-4417-bdee-4f88063e53bc",
+      "target": "CASTER",
+      "NodeID": 72
+    }
+  },
+  "onAbilityCastIds": [
+    72
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_QgsxStart",
+    "Skill_QgsxEnd",
+    "Skill_QgsxLoop",
+    "Skill_DwpyStart"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Attack_Laser_Abosrd",
+    "Eff_Monster_90213_Mon_Attack_Laser",
+    "Eff_Monster_90213_Mon_Attack_Laser_End",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+    "Eff_Monster_90213_Mon_Attack_Teleport_Absorb"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 49216010
+}

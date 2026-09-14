@@ -1,0 +1,90 @@
+{
+  "BPName": "ability_11331300",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11331300001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "32aea782-b65d-46c2-9860-c1e8a53dcbb8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        52
+      ],
+      "NodeID": 9
+    },
+    "93": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "66f61a27-20e7-4818-be9e-4cc010146864",
+      "target": "OWNER",
+      "NodeID": 93
+    },
+    "42": {
+      "targetA": "OWNER",
+      "targetB": "TARGET",
+      "name": "getDistanceBetweenTarget",
+      "UID": "4905b245-71ae-4da7-b9a9-204fa4fe778a",
+      "NodeID": 42,
+      "onlyXZ": true
+    },
+    "43": {
+      "rValue": 15,
+      "name": "greater",
+      "UID": "a5dec4c3-2c3f-4226-a631-2157e45500e0",
+      "NodeID": 43,
+      "lValue": {
+        "targetA": "OWNER",
+        "targetB": "TARGET",
+        "name": "getDistanceBetweenTarget",
+        "UID": "4905b245-71ae-4da7-b9a9-204fa4fe778a",
+        "NodeID": 42,
+        "onlyXZ": true
+      }
+    },
+    "52": {
+      "timelineId": 11331300002,
+      "name": "setCombatActionTimeline",
+      "UID": "6844a9b4-31db-487b-98a0-05720b098ce6",
+      "target": "CASTER",
+      "NodeID": 52
+    }
+  },
+  "onAbilityCastIds": [
+    93,
+    9
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_BladeRealm",
+    "JumpBack"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_10133_Mon_Skill_BladeRealm_Cast",
+    "Eff_Skill_Common_Warning_NoFrame",
+    "Eff_Monster_10133_Mon_Skill_BladeRealm_FrostBlade_02",
+    "Eff_Hit_Ice_Slash_Big"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 40,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10211335
+}

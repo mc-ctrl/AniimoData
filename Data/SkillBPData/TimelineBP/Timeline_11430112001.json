@@ -1,0 +1,200 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "e46cfde3-d8dc-4d78-b5b8-60016fb8b1fe",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          24
+        ]
+      },
+      "NodeID": 5
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 31,
+      "UID": "50cf042c-39c0-4b85-ab69-372f18ae5804"
+    },
+    "11": {
+      "UID": "43bcadd4-594a-44c6-9366-6bb28f10784c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "dcb66428-12ae-4ca0-9540-d55d5ea98e1e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18,
+          21,
+          25
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9cedbd04-e0d5-4c1e-910a-98a49c389d29",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_realse",
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "3466a3d0-79f8-413a-9c7d-a70fe985253e",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.25,
+      "NodeID": 13,
+      "UID": "13abb48a-7c42-4701-9a68-1ec82037f628"
+    },
+    "24": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "1c3f5069-9cd2-4c3d-bdc2-50b2f39d023e",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "15": {
+      "UID": "6601f556-06f8-4570-9d2b-d6fd5ef3615f",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "05900080-9637-43fb-985f-f55c8b22e3d3",
+      "effectId": "Eff_Parmon_10143_Skill_RunAway_Trail",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "27": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "3be03199-9a88-48a2-a1b6-697b58d1ba3d",
+      "target": "OWNER",
+      "val": {
+        "UID": "387502cd-c00a-46de-a533-7a877b7cd2a8",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 26
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "ed8926c4-b7fc-4c53-8c08-b0cf7e02b325",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "UID": "ab00173a-77ef-4e07-9d36-5691aa8acb9c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "NodeID": 29
+    },
+    "30": {
+      "overridePos": "TARGET",
+      "duration": 0.6,
+      "name": "puppetPreCastAction",
+      "UID": "3f976b8f-e90e-4b4a-8eb0-d8822e50154f",
+      "effectId": "Eff_Parmon_10143_Boss_Warning",
+      "timeScale": 0.1,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": true,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 30
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d21e353b-4892-4e50-a9f8-e612ab7c41ec",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_RunAway"
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 23,
+      "UID": "5590e3d6-de96-47b0-a136-a2bddbc75a04"
+    },
+    "22": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 114104,
+      "name": "createEntity",
+      "UID": "352c933d-1c2c-4844-997b-3285b4c01a6b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 22,
+      "pos": "CASTER"
+    }
+  },
+  "BPName": "ability_11430112",
+  "NodeID": 7,
+  "UID": "6c4dc30a-35ad-4d23-98dc-63aee617f3c8",
+  "eventIds": [
+    5,
+    17,
+    13,
+    20,
+    31,
+    29,
+    23
+  ],
+  "layer": "Base",
+  "length": 3
+}

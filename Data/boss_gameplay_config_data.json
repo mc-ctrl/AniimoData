@@ -1,0 +1,17 @@
+[
+  {
+    "dungeonNum": 3,
+    "flashParam": 1,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "BuffList": {},
+    "dungeonList": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006
+    ]
+  }
+]

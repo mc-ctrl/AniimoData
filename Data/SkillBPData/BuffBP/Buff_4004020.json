@@ -1,0 +1,78 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004020",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 4004022,
+      "name": "hasBuff",
+      "UID": "cf0b8b65-812f-4503-b7b2-286e6213e316",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "ae83b59c-e5b8-4d1f-ae4a-0b7048cf4f53",
+      "name": "doActionsByConditions",
+      "NodeID": 4,
+      "elseActionIds": [
+        8
+      ]
+    },
+    "9": {
+      "buffId": 4004020,
+      "name": "removeBuff",
+      "UID": "2913e447-9e48-49b1-9691-9a2b452f1cbc",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "873511f3-b6a9-422a-82a7-1b0a5ea5116d",
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "fb09d709-3610-45f0-a7b4-e4cb110c168f",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 4004021,
+      "NodeID": 8,
+      "UID": "aa0f510b-0fa7-4efa-b5b4-da989907c11f",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "5": {
+      "UID": "6560b9fd-fd5c-4381-8d66-d5db93315933",
+      "name": "registerCostEpEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10,
+    6
+  ]
+}

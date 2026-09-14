@@ -1,0 +1,50 @@
+{
+  "30001": {
+    "triggeredAction": "ST_MB_AttractFollow",
+    "conditionIDList": [
+      "ChemStateIsFlame",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 30,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "30002": {
+    "triggeredAction": "ST_MB_UseSkillIcicle",
+    "conditionIDList": [
+      "ChemStateIsFrozen",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 30,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "30003": {
+    "triggeredAction": "ST_MB_Dance",
+    "conditionIDList": [
+      "ElementWater",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 30,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  }
+}

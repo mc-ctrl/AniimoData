@@ -1,0 +1,32 @@
+{
+  "preloadAnims": [
+    "StunStart",
+    "StunLoop",
+    "StunEnd"
+  ],
+  "searchTargetRangeRadius": 3,
+  "BPName": "ability_902070500",
+  "name": "",
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600230,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 0.5,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902070500001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

@@ -1,0 +1,81 @@
+{
+  "91336365": {
+    "id": 91336365,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "speed": 1.5,
+        "position": [
+          12.87,
+          -0.35,
+          -13.29
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dialogue",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1070210,
+                  "name": "tDialogueId"
+                }
+              ]
+            }
+          ]
+        },
+        "speed": 1.5,
+        "ignoreRotation": true,
+        "position": [
+          11.41,
+          -0.33,
+          -9.04
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "speed": 1.5,
+        "position": [
+          4.59,
+          -0.55,
+          -8.47
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dialogue",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1070211,
+                  "name": "tDialogueId"
+                }
+              ]
+            }
+          ]
+        },
+        "speed": 1.5,
+        "ignoreRotation": true,
+        "position": [
+          2.87,
+          -0.52,
+          -11.64
+        ]
+      }
+    ],
+    "pos": [
+      12.87,
+      -0.41,
+      -12.59
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91299668
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 8,
+      "NodeID": 5,
+      "UID": "e65d4df7-a526-4510-9241-d718e674675f",
+      "onUpdate": {
+        "actionIds": [
+          4
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          4
+        ]
+      }
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "name": "actOnTargets",
+      "UID": "04119515-9b64-4f5a-b7a8-0dd8b76f7730",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 4
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "70b00a22-3690-4ecd-8758-7d42fe8a916d",
+      "effectId": "Eff_Parmon_10011_Skill_BuffField_s",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "afc83340-f57b-43eb-abe4-97dd584d38fe",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_swift_attack",
+      "NodeID": 14
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.65,
+      "NodeID": 10,
+      "UID": "16220b44-52fd-4b14-9d6a-d9e69180db67"
+    },
+    "11": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "387f1857-61a1-4f62-9b08-add4fb316fb0",
+      "effectId": "Eff_Parmon_10011_Skill_BuffField_s",
+      "rot": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 2101204,
+      "NodeID": 7,
+      "UID": "e9b47a5e-ffc2-4540-8a69-c6473d48f134",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "UID": "ee8b7a7a-c09a-4f23-9280-d678460932d3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          14
+        ]
+      },
+      "NodeID": 13
+    }
+  },
+  "BPName": "timeline_2101203",
+  "NodeID": 1,
+  "UID": "3d69aaa3-7f08-4f74-8fc7-b1f40be0f9d7",
+  "eventIds": [
+    10,
+    13,
+    5
+  ],
+  "layer": "Base",
+  "length": 10
+}

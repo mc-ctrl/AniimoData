@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_10320513",
+  "NodeID": 1,
+  "UID": "2c28cd62-08a6-45d1-8b3b-9e5c5f9e509a",
+  "abilityParamId": 11200323,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10320513001,
+      "name": "setCombatActionTimeline",
+      "UID": "a232f2a9-5e9c-4f18-ae36-afe98d80aba2",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 13,
+  "preloadAnims": [
+    "JumpBack",
+    "Skill_Sickle"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10203_Skill_MagicZone_Flash",
+    "Eff_Parmon_10032_Skill_Sickle02",
+    "Eff_Hit_Dark_Slash_Big",
+    "Eff_Parmon_10032_Skill_Sickle01",
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10032_Skill_Sickle_Xuli01",
+    "Eff_Parmon_10032_Skill_Sickle_Xuli02",
+    "Eff_Parmon_10032_Skill_Sickle_Xuli03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5
+}

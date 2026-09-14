@@ -1,0 +1,104 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91021050",
+  "calcInfoByLuaConfig": {
+    "id": 91021050,
+    "taken_dmg_dec_rate_v": "param0",
+    "combat_ep_regen_v": "param1",
+    "type": 1
+  },
+  "UID": "b618e1a3-c3b0-4a87-a696-337b5fb1193e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "blendShapeName": "BS_10021_Harden",
+      "fromWeight": 0,
+      "NodeID": 3,
+      "UID": "ee2da51a-cc44-4b2d-90f4-064439ec8b49",
+      "transitionDuration": 1,
+      "targetWeight": 100,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "13": {
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 13,
+      "UID": "a76ecf63-599f-40ed-973e-fe69ccf9e6ad",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10027_Harden",
+      "name": "playPreset"
+    },
+    "14": {
+      "key": "10021_Yinghua",
+      "name": "applyMaterialEffect",
+      "NodeID": 14
+    },
+    "10": {
+      "blendShapeName": "BS_10021_Hand_Harden",
+      "fromWeight": 0,
+      "NodeID": 10,
+      "UID": "6947defe-c133-445d-ba4c-20c706b10e25",
+      "transitionDuration": 1,
+      "targetWeight": 100,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "15": {
+      "UID": "4e94fb92-16b3-4ac2-81da-8026973b8ffa",
+      "name": "removeMaterialEffect",
+      "key": "10021_Yinghua",
+      "NodeID": 15
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ff4926ac-78da-48e5-bcc9-bd17686459a1",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "b4ddfa9a-8c7e-4ca3-9f66-d8dcbb34e428",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "blendShapeName": "BS_10021_Harden",
+      "fromWeight": 100,
+      "NodeID": 5,
+      "UID": "c124d0c1-a128-4ea5-a83d-33b2efc61586",
+      "transitionDuration": 1,
+      "targetWeight": 0,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "12": {
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 12,
+      "UID": "c8d4d381-f1aa-4645-acfb-669ca59ef549",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10027_Harden",
+      "name": "playPreset"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5,
+    15,
+    8,
+    12
+  ],
+  "onBuffStartIds": [
+    3,
+    10,
+    14,
+    7,
+    13
+  ]
+}

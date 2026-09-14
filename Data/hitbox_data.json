@@ -1,0 +1,5827 @@
+{
+  "HitBox_P_Monster_HelgonBoss": {
+    "maxBodyRadius": 7.62,
+    "minBoneWeight": 0.4,
+    "shaderPartMaxCnt": 15,
+    "hitBoxNodes": [
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0.2
+        ],
+        "boxSize": [
+          1.96,
+          2.37,
+          2.11
+        ],
+        "nodeIndex": 1,
+        "part": 7,
+        "shaderPartIndex": 10,
+        "boneName": "Bip001"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          0
+        ],
+        "boxSize": [
+          0,
+          0,
+          0
+        ],
+        "nodeIndex": 2,
+        "part": 7,
+        "shaderPartIndex": 10,
+        "boneName": "Bip001 Pelvis"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.75,
+          0.04,
+          -0.03
+        ],
+        "boxSize": [
+          1.92,
+          1.24,
+          1.13
+        ],
+        "nodeIndex": 3,
+        "part": 4,
+        "shaderPartIndex": 3,
+        "boneName": "Bip001 L Thigh"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.39,
+          0.08,
+          0.05
+        ],
+        "boxSize": [
+          1.35,
+          0.8,
+          0.8
+        ],
+        "nodeIndex": 4,
+        "part": 4,
+        "shaderPartIndex": 4,
+        "boneName": "Bip001 L Calf"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.13,
+          -0.13,
+          -0.01
+        ],
+        "boxSize": [
+          0.87,
+          0.91,
+          0.67
+        ],
+        "nodeIndex": 5,
+        "part": 4,
+        "shaderPartIndex": 4,
+        "boneName": "Bip001 L HorseLink"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.05,
+          0.16,
+          0.05
+        ],
+        "boxSize": [
+          0.51,
+          0.73,
+          0.69
+        ],
+        "nodeIndex": 6,
+        "part": 4,
+        "shaderPartIndex": 4,
+        "boneName": "Bip001 L Foot"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.42,
+          0.16,
+          0
+        ],
+        "boxSize": [
+          1.08,
+          0.45,
+          1.12
+        ],
+        "nodeIndex": 7,
+        "part": 4,
+        "shaderPartIndex": 4,
+        "boneName": "Bip001 L Toe0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.75,
+          0.04,
+          0.03
+        ],
+        "boxSize": [
+          1.92,
+          1.24,
+          1.13
+        ],
+        "nodeIndex": 8,
+        "part": 5,
+        "shaderPartIndex": 5,
+        "boneName": "Bip001 R Thigh"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.39,
+          0.08,
+          -0.05
+        ],
+        "boxSize": [
+          1.27,
+          0.97,
+          0.8
+        ],
+        "nodeIndex": 9,
+        "part": 5,
+        "shaderPartIndex": 6,
+        "boneName": "Bip001 R Calf"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.13,
+          -0.13,
+          0.01
+        ],
+        "boxSize": [
+          0.87,
+          0.91,
+          0.67
+        ],
+        "nodeIndex": 10,
+        "part": 5,
+        "shaderPartIndex": 6,
+        "boneName": "Bip001 R HorseLink"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.05,
+          0.16,
+          -0.05
+        ],
+        "boxSize": [
+          0.51,
+          0.73,
+          0.69
+        ],
+        "nodeIndex": 11,
+        "part": 5,
+        "shaderPartIndex": 6,
+        "boneName": "Bip001 R Foot"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.42,
+          0.16,
+          0
+        ],
+        "boxSize": [
+          1.08,
+          0.45,
+          1.12
+        ],
+        "nodeIndex": 12,
+        "part": 5,
+        "shaderPartIndex": 6,
+        "boneName": "Bip001 R Toe0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.38,
+          -0.06,
+          -0.01
+        ],
+        "boxSize": [
+          0.78,
+          1.59,
+          1.6
+        ],
+        "nodeIndex": 13,
+        "part": 7,
+        "shaderPartIndex": 10,
+        "boneName": "Bip001 Spine"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.63,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          1.39,
+          1.99,
+          1.61
+        ],
+        "nodeIndex": 14,
+        "part": 7,
+        "shaderPartIndex": 10,
+        "boneName": "Bip001 Spine1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.16,
+          0.11,
+          0
+        ],
+        "boxSize": [
+          0.51,
+          1.45,
+          0.99
+        ],
+        "nodeIndex": 15,
+        "part": 7,
+        "shaderPartIndex": 10,
+        "boneName": "Bip001 Neck"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.38,
+          0.03,
+          0.03
+        ],
+        "boxSize": [
+          0.76,
+          1.19,
+          0.95
+        ],
+        "nodeIndex": 16,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.23,
+          0.02,
+          0.19
+        ],
+        "boxSize": [
+          1.43,
+          0.9,
+          1.06
+        ],
+        "nodeIndex": 17,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.27,
+          -0.04,
+          0.01
+        ],
+        "boxSize": [
+          1.04,
+          0.44,
+          0.44
+        ],
+        "nodeIndex": 18,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.23,
+          -0.04,
+          -0.04
+        ],
+        "boxSize": [
+          0.5,
+          0.4,
+          0.58
+        ],
+        "nodeIndex": 19,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.12,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.23,
+          0.21,
+          0.16
+        ],
+        "nodeIndex": 20,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.22,
+          -0.07,
+          0
+        ],
+        "boxSize": [
+          0.73,
+          0.23,
+          0.19
+        ],
+        "nodeIndex": 21,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          -0.02,
+          -0.04
+        ],
+        "boxSize": [
+          0.21,
+          0.16,
+          0.18
+        ],
+        "nodeIndex": 22,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.24,
+          -0.02,
+          -0.04
+        ],
+        "boxSize": [
+          0.92,
+          0.34,
+          0.25
+        ],
+        "nodeIndex": 23,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger11"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.03,
+          -0.05
+        ],
+        "boxSize": [
+          0.2,
+          0.29,
+          0.17
+        ],
+        "nodeIndex": 24,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          0.02,
+          -0.05
+        ],
+        "boxSize": [
+          0.69,
+          0.26,
+          0.18
+        ],
+        "nodeIndex": 25,
+        "part": 2,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger21"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.19,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.4,
+          1.07,
+          0.75
+        ],
+        "nodeIndex": 26,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Neck1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.21,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.44,
+          0.9,
+          0.73
+        ],
+        "nodeIndex": 27,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Neck2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.64,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          1.33,
+          2.39,
+          1.64
+        ],
+        "nodeIndex": 28,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Head"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.37,
+          0.04,
+          0
+        ],
+        "boxSize": [
+          0.74,
+          0.28,
+          0.55
+        ],
+        "nodeIndex": 29,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bone M ArmorJaw"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          0
+        ],
+        "boxSize": [
+          0,
+          0,
+          0
+        ],
+        "nodeIndex": 30,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bone M LowJaw"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.31,
+          0.09,
+          0.26
+        ],
+        "nodeIndex": 31,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bone M Tongue"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.13,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.25,
+          0.07,
+          0.19
+        ],
+        "nodeIndex": 32,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bone M Tongue 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.14,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.29,
+          0.05,
+          0.14
+        ],
+        "nodeIndex": 33,
+        "part": 1,
+        "shaderPartIndex": 0,
+        "boneName": "Bone M Tongue 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.4,
+          0.03,
+          -0.03
+        ],
+        "boxSize": [
+          0.8,
+          1.19,
+          0.95
+        ],
+        "nodeIndex": 34,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.23,
+          0.02,
+          -0.19
+        ],
+        "boxSize": [
+          1.44,
+          0.9,
+          1.06
+        ],
+        "nodeIndex": 35,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.28,
+          -0.05,
+          -0.01
+        ],
+        "boxSize": [
+          1.03,
+          0.43,
+          0.44
+        ],
+        "nodeIndex": 36,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.23,
+          -0.04,
+          0.04
+        ],
+        "boxSize": [
+          0.49,
+          0.4,
+          0.58
+        ],
+        "nodeIndex": 37,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.12,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.24,
+          0.21,
+          0.16
+        ],
+        "nodeIndex": 38,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Finger0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.23,
+          -0.07,
+          -0.01
+        ],
+        "boxSize": [
+          0.73,
+          0.23,
+          0.19
+        ],
+        "nodeIndex": 39,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Finger01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          -0.02,
+          0.04
+        ],
+        "boxSize": [
+          0.22,
+          0.16,
+          0.18
+        ],
+        "nodeIndex": 40,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Finger1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.25,
+          -0.02,
+          0.04
+        ],
+        "boxSize": [
+          0.92,
+          0.34,
+          0.25
+        ],
+        "nodeIndex": 41,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Finger11"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.03,
+          0.06
+        ],
+        "boxSize": [
+          0.2,
+          0.29,
+          0.17
+        ],
+        "nodeIndex": 42,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Finger2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.16,
+          0.02,
+          0.06
+        ],
+        "boxSize": [
+          0.69,
+          0.26,
+          0.18
+        ],
+        "nodeIndex": 43,
+        "part": 3,
+        "shaderPartIndex": 2,
+        "boneName": "Bip001 R Finger21"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.67,
+          -0.22,
+          -0.06
+        ],
+        "boxSize": [
+          1.33,
+          1.04,
+          0.52
+        ],
+        "nodeIndex": 44,
+        "part": 8,
+        "shaderPartIndex": 11,
+        "boneName": "Bone L Wing A"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -1.32,
+          0.38,
+          0.11
+        ],
+        "boxSize": [
+          2.63,
+          1.67,
+          0.58
+        ],
+        "nodeIndex": 45,
+        "part": 8,
+        "shaderPartIndex": 11,
+        "boneName": "Bone L Wing A 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.37,
+          -0.09,
+          -0.05
+        ],
+        "boxSize": [
+          0.73,
+          0.17,
+          0.09
+        ],
+        "nodeIndex": 46,
+        "part": 8,
+        "shaderPartIndex": 11,
+        "boneName": "Bone L Wing A 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -1.12,
+          -0.04,
+          0
+        ],
+        "boxSize": [
+          2.23,
+          0.71,
+          0.36
+        ],
+        "nodeIndex": 47,
+        "part": 8,
+        "shaderPartIndex": 11,
+        "boneName": "Bone L Wing B"
+      },
+      {
+        "subPart": 2,
+        "boxCenter": [
+          -1.66,
+          -0.4,
+          0.07
+        ],
+        "boxSize": [
+          3.89,
+          1.38,
+          0.63
+        ],
+        "nodeIndex": 48,
+        "part": 8,
+        "shaderPartIndex": 12,
+        "boneName": "Bone L Wing B 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -1,
+          -0.12,
+          -0.03
+        ],
+        "boxSize": [
+          2,
+          0.99,
+          0.18
+        ],
+        "nodeIndex": 49,
+        "part": 8,
+        "shaderPartIndex": 11,
+        "boneName": "Bone L Wing C"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.27,
+          0.1
+        ],
+        "boxSize": [
+          2.56,
+          2.1,
+          0.4
+        ],
+        "nodeIndex": 50,
+        "part": 8,
+        "shaderPartIndex": 11,
+        "boneName": "Bone L Wing C 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.67,
+          0.22,
+          -0.06
+        ],
+        "boxSize": [
+          1.33,
+          1.04,
+          0.52
+        ],
+        "nodeIndex": 51,
+        "part": 9,
+        "shaderPartIndex": 13,
+        "boneName": "Bone R Wing A"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -1.32,
+          -0.38,
+          0.11
+        ],
+        "boxSize": [
+          2.63,
+          1.67,
+          0.58
+        ],
+        "nodeIndex": 52,
+        "part": 9,
+        "shaderPartIndex": 13,
+        "boneName": "Bone R Wing A 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.37,
+          0.09,
+          -0.05
+        ],
+        "boxSize": [
+          0.73,
+          0.17,
+          0.09
+        ],
+        "nodeIndex": 53,
+        "part": 9,
+        "shaderPartIndex": 13,
+        "boneName": "Bone R Wing A 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -1.12,
+          0.04,
+          0
+        ],
+        "boxSize": [
+          2.23,
+          0.71,
+          0.36
+        ],
+        "nodeIndex": 54,
+        "part": 9,
+        "shaderPartIndex": 13,
+        "boneName": "Bone R Wing B"
+      },
+      {
+        "subPart": 2,
+        "boxCenter": [
+          -1.66,
+          0.4,
+          0.07
+        ],
+        "boxSize": [
+          3.89,
+          1.38,
+          0.63
+        ],
+        "nodeIndex": 55,
+        "part": 9,
+        "shaderPartIndex": 14,
+        "boneName": "Bone R Wing B 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -1,
+          0.12,
+          -0.03
+        ],
+        "boxSize": [
+          2,
+          0.99,
+          0.18
+        ],
+        "nodeIndex": 56,
+        "part": 9,
+        "shaderPartIndex": 13,
+        "boneName": "Bone R Wing C"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          -0.2,
+          0.08
+        ],
+        "boxSize": [
+          2.56,
+          1.97,
+          0.4
+        ],
+        "nodeIndex": 57,
+        "part": 9,
+        "shaderPartIndex": 13,
+        "boneName": "Bone R Wing C 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.77,
+          -0.08,
+          0
+        ],
+        "boxSize": [
+          1.96,
+          1.32,
+          1.45
+        ],
+        "nodeIndex": 58,
+        "part": 6,
+        "shaderPartIndex": 7,
+        "boneName": "Bip001 Tail"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.65,
+          0.05,
+          0
+        ],
+        "boxSize": [
+          1.3,
+          0.92,
+          0.97
+        ],
+        "nodeIndex": 59,
+        "part": 6,
+        "shaderPartIndex": 7,
+        "boneName": "Bip001 Tail1"
+      },
+      {
+        "subPart": 2,
+        "boxCenter": [
+          -0.5,
+          0.08,
+          0
+        ],
+        "boxSize": [
+          1.56,
+          0.63,
+          0.83
+        ],
+        "nodeIndex": 60,
+        "part": 6,
+        "shaderPartIndex": 8,
+        "boneName": "Bip001 Tail2"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.69,
+          0.09,
+          0
+        ],
+        "boxSize": [
+          1.43,
+          0.42,
+          0.52
+        ],
+        "nodeIndex": 61,
+        "part": 6,
+        "shaderPartIndex": 9,
+        "boneName": "Bip001 Tail3"
+      },
+      {
+        "subPart": 3,
+        "boxCenter": [
+          -0.62,
+          0.09,
+          0
+        ],
+        "boxSize": [
+          1.37,
+          0.22,
+          0.29
+        ],
+        "nodeIndex": 62,
+        "part": 6,
+        "shaderPartIndex": 9,
+        "boneName": "Bip001 Tail4"
+      }
+    ]
+  },
+  "HitBox_P_Parmon_10023": {
+    "maxBodyRadius": 2.18,
+    "minBoneWeight": 0.4,
+    "shaderPartMaxCnt": 2,
+    "hitBoxNodes": [
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.08,
+          -0.11,
+          0
+        ],
+        "boxSize": [
+          0.64,
+          0.73,
+          0.74
+        ],
+        "nodeIndex": 1,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Pelvis"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.62,
+          0.37,
+          0.27
+        ],
+        "nodeIndex": 2,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Thigh"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.39,
+          0.2,
+          0.2
+        ],
+        "nodeIndex": 3,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Calf"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0.05,
+          -0.01
+        ],
+        "boxSize": [
+          0.18,
+          0.33,
+          0.17
+        ],
+        "nodeIndex": 4,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Foot"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.12,
+          0.05,
+          0
+        ],
+        "boxSize": [
+          0.3,
+          0.21,
+          0.25
+        ],
+        "nodeIndex": 5,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Toe0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.62,
+          0.37,
+          0.27
+        ],
+        "nodeIndex": 6,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Thigh"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.39,
+          0.2,
+          0.2
+        ],
+        "nodeIndex": 7,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Calf"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0.05,
+          0.01
+        ],
+        "boxSize": [
+          0.18,
+          0.33,
+          0.17
+        ],
+        "nodeIndex": 8,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Foot"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.12,
+          0.05,
+          0
+        ],
+        "boxSize": [
+          0.3,
+          0.21,
+          0.25
+        ],
+        "nodeIndex": 9,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Toe0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          -0.03,
+          0
+        ],
+        "boxSize": [
+          0.19,
+          0.54,
+          0.42
+        ],
+        "nodeIndex": 10,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Spine"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.17,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.39,
+          0.5,
+          0.43
+        ],
+        "nodeIndex": 11,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Spine1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.32,
+          0.28
+        ],
+        "nodeIndex": 12,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Neck"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.22,
+          0.3,
+          0.21
+        ],
+        "nodeIndex": 13,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.44,
+          0.22,
+          0.22
+        ],
+        "nodeIndex": 14,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.1,
+          0.09
+        ],
+        "nodeIndex": 15,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.17,
+          0.09,
+          0.18
+        ],
+        "nodeIndex": 16,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.07,
+          0.06,
+          0.06
+        ],
+        "nodeIndex": 17,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.12,
+          0.06,
+          0.07
+        ],
+        "nodeIndex": 18,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.11,
+          0.07,
+          0.07
+        ],
+        "nodeIndex": 19,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.08,
+          0.08
+        ],
+        "nodeIndex": 20,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger11"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.07,
+          0.06,
+          0.06
+        ],
+        "nodeIndex": 21,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.14,
+          0.07,
+          0.07
+        ],
+        "nodeIndex": 22,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 L Finger21"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.29,
+          0.26,
+          0.22
+        ],
+        "nodeIndex": 23,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 Neck1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.04,
+          0.01
+        ],
+        "boxSize": [
+          0.23,
+          0.28,
+          0.41
+        ],
+        "nodeIndex": 24,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 Neck2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.56,
+          0.66,
+          0.49
+        ],
+        "nodeIndex": 25,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Head"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.2,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.39,
+          0.13,
+          0.31
+        ],
+        "nodeIndex": 26,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M ArmorJaw"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.14,
+          0.1,
+          0.09
+        ],
+        "nodeIndex": 27,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M Hair"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.18,
+          0.19
+        ],
+        "nodeIndex": 28,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M Hair 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          -0.05,
+          0
+        ],
+        "boxSize": [
+          0.3,
+          0.26,
+          0.25
+        ],
+        "nodeIndex": 29,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M Hair 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          -0.03,
+          0
+        ],
+        "boxSize": [
+          0.33,
+          0.16,
+          0.26
+        ],
+        "nodeIndex": 30,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M LowJaw"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.1,
+          0.04,
+          0.12
+        ],
+        "nodeIndex": 31,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M Tongue"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.09,
+          0.03,
+          0.1
+        ],
+        "nodeIndex": 32,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M Tongue 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.1,
+          0.03,
+          0.07
+        ],
+        "nodeIndex": 33,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone M Tongue 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.22,
+          0.3,
+          0.21
+        ],
+        "nodeIndex": 34,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.44,
+          0.22,
+          0.22
+        ],
+        "nodeIndex": 35,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.1,
+          0.09
+        ],
+        "nodeIndex": 36,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.17,
+          0.09,
+          0.18
+        ],
+        "nodeIndex": 37,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.07,
+          0.06,
+          0.06
+        ],
+        "nodeIndex": 38,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Finger0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.12,
+          0.06,
+          0.07
+        ],
+        "nodeIndex": 39,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Finger01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.11,
+          0.07,
+          0.07
+        ],
+        "nodeIndex": 40,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Finger1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.08,
+          0.08
+        ],
+        "nodeIndex": 41,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Finger11"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.07,
+          0.06,
+          0.06
+        ],
+        "nodeIndex": 42,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Finger2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.14,
+          0.07,
+          0.07
+        ],
+        "nodeIndex": 43,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 R Finger21"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          -0.03,
+          0
+        ],
+        "boxSize": [
+          0.3,
+          0.17,
+          0.08
+        ],
+        "nodeIndex": 44,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone L Wing A"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.44,
+          0.09,
+          0.01
+        ],
+        "boxSize": [
+          0.9,
+          0.4,
+          0.11
+        ],
+        "nodeIndex": 45,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone L Wing A 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.3,
+          0.33,
+          0.04
+        ],
+        "nodeIndex": 46,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone L Wing A 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.19,
+          0.05,
+          0.01
+        ],
+        "boxSize": [
+          1.06,
+          0.26,
+          0.13
+        ],
+        "nodeIndex": 47,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone L Wing B"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.33,
+          -0.1,
+          -0.03
+        ],
+        "boxSize": [
+          0.82,
+          0.26,
+          0.13
+        ],
+        "nodeIndex": 48,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone L Wing B 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.26,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          0.51,
+          0.39,
+          0.05
+        ],
+        "nodeIndex": 49,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone L Wing C"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.3,
+          0.08,
+          -0.01
+        ],
+        "boxSize": [
+          0.63,
+          0.64,
+          0.11
+        ],
+        "nodeIndex": 50,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone L Wing C 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.3,
+          0.17,
+          0.08
+        ],
+        "nodeIndex": 51,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone R Wing A"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.44,
+          -0.09,
+          0.01
+        ],
+        "boxSize": [
+          0.9,
+          0.4,
+          0.11
+        ],
+        "nodeIndex": 52,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone R Wing A 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          -0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.3,
+          0.33,
+          0.04
+        ],
+        "nodeIndex": 53,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone R Wing A 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.19,
+          -0.05,
+          0.01
+        ],
+        "boxSize": [
+          1.06,
+          0.26,
+          0.13
+        ],
+        "nodeIndex": 54,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone R Wing B"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.33,
+          0.1,
+          -0.03
+        ],
+        "boxSize": [
+          0.82,
+          0.26,
+          0.13
+        ],
+        "nodeIndex": 55,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone R Wing B 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.26,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.51,
+          0.39,
+          0.05
+        ],
+        "nodeIndex": 56,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone R Wing C"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.3,
+          -0.08,
+          -0.01
+        ],
+        "boxSize": [
+          0.63,
+          0.64,
+          0.11
+        ],
+        "nodeIndex": 57,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bone R Wing C 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.21,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.43,
+          0.41,
+          0.37
+        ],
+        "nodeIndex": 58,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Tail"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.18,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.42,
+          0.38,
+          0.32
+        ],
+        "nodeIndex": 59,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Tail1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.44,
+          0.3,
+          0.26
+        ],
+        "nodeIndex": 60,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 Tail2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.29,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.83,
+          0.24,
+          0.21
+        ],
+        "nodeIndex": 61,
+        "part": 0,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Tail3"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.24,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.67,
+          0.15,
+          0.12
+        ],
+        "nodeIndex": 62,
+        "part": 7,
+        "shaderPartIndex": 1,
+        "boneName": "Bip001 Tail4"
+      }
+    ]
+  },
+  "HitBox_P_Parmon_10583": {
+    "maxBodyRadius": 1.82,
+    "minBoneWeight": 0.1,
+    "shaderPartMaxCnt": 1,
+    "hitBoxNodes": [
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.51,
+          0.41,
+          0.4
+        ],
+        "nodeIndex": 1,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Pelvis"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.16,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.41,
+          0.37,
+          0.17
+        ],
+        "nodeIndex": 2,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Thigh"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.36,
+          0.19,
+          0.14
+        ],
+        "nodeIndex": 3,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Calf"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.12,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.34,
+          0.13,
+          0.1
+        ],
+        "nodeIndex": 4,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L HorseLink"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0.04,
+          -0.01
+        ],
+        "boxSize": [
+          0.2,
+          0.16,
+          0.11
+        ],
+        "nodeIndex": 5,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Foot"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.16,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.41,
+          0.37,
+          0.17
+        ],
+        "nodeIndex": 6,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Thigh"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.36,
+          0.19,
+          0.14
+        ],
+        "nodeIndex": 7,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Calf"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.12,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.34,
+          0.13,
+          0.1
+        ],
+        "nodeIndex": 8,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R HorseLink"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0.04,
+          0.01
+        ],
+        "boxSize": [
+          0.2,
+          0.16,
+          0.11
+        ],
+        "nodeIndex": 9,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Foot"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.48,
+          0.5,
+          0.49
+        ],
+        "nodeIndex": 10,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Spine"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.03,
+          0.02
+        ],
+        "boxSize": [
+          0.42,
+          0.47,
+          0.43
+        ],
+        "nodeIndex": 11,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Spine1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          0.06,
+          -0.04
+        ],
+        "boxSize": [
+          0.6,
+          0.58,
+          0.47
+        ],
+        "nodeIndex": 12,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Spine2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.13,
+          0.03,
+          0.04
+        ],
+        "boxSize": [
+          0.35,
+          0.17,
+          0.36
+        ],
+        "nodeIndex": 13,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          0,
+          0.02
+        ],
+        "boxSize": [
+          0.43,
+          0.28,
+          0.19
+        ],
+        "nodeIndex": 14,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.29,
+          0.13,
+          0.08
+        ],
+        "nodeIndex": 15,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.12,
+          0.09
+        ],
+        "nodeIndex": 16,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.19,
+          0.14,
+          0.11
+        ],
+        "nodeIndex": 17,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 L Finger0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.48,
+          0.42,
+          0.47
+        ],
+        "nodeIndex": 18,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Neck"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0.03,
+          -0.01
+        ],
+        "boxSize": [
+          0.41,
+          0.33,
+          0.41
+        ],
+        "nodeIndex": 19,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Neck1"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.3,
+          0.34,
+          0.32
+        ],
+        "nodeIndex": 20,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Neck2"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0.07,
+          0.01
+        ],
+        "boxSize": [
+          0.46,
+          0.41,
+          0.35
+        ],
+        "nodeIndex": 21,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 Head"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.07,
+          0.03,
+          0.06
+        ],
+        "nodeIndex": 22,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair A 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.08,
+          0.03,
+          0.06
+        ],
+        "nodeIndex": 23,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair A 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.05,
+          0.02,
+          0.05
+        ],
+        "nodeIndex": 24,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair A 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.08,
+          0.03,
+          0.06
+        ],
+        "nodeIndex": 25,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair B 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.09,
+          0.04,
+          0.07
+        ],
+        "nodeIndex": 26,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair B 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.07,
+          0.03,
+          0.07
+        ],
+        "nodeIndex": 27,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair B 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.03,
+          0
+        ],
+        "boxSize": [
+          0.15,
+          0.1,
+          0.2
+        ],
+        "nodeIndex": 28,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Jaw"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.04,
+          0.02,
+          0.04
+        ],
+        "nodeIndex": 29,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Tongue 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.05,
+          0.03,
+          0.04
+        ],
+        "nodeIndex": 30,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Tongue 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.18,
+          0.14,
+          0.13
+        ],
+        "nodeIndex": 31,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Ear 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.01,
+          0.02
+        ],
+        "boxSize": [
+          0.24,
+          0.14,
+          0.13
+        ],
+        "nodeIndex": 32,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Ear 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          0.19,
+          0.1,
+          0.09
+        ],
+        "nodeIndex": 33,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Ear 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.15,
+          0.08,
+          0.07
+        ],
+        "nodeIndex": 34,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Ear 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.14,
+          0.1,
+          0.04
+        ],
+        "nodeIndex": 35,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Eyelid Dn"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.13,
+          0.11,
+          0.08
+        ],
+        "nodeIndex": 36,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Eyelid Up"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.17,
+          0.14,
+          0.07
+        ],
+        "nodeIndex": 37,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair A 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.23,
+          0.14,
+          0.08
+        ],
+        "nodeIndex": 38,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair A 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.19,
+          0.14,
+          0.07
+        ],
+        "nodeIndex": 39,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair A 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.14,
+          0.06
+        ],
+        "nodeIndex": 40,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair A 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.15,
+          0.12,
+          0.04
+        ],
+        "nodeIndex": 41,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair B 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.16,
+          0.12,
+          0.04
+        ],
+        "nodeIndex": 42,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair B 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.12,
+          0.05
+        ],
+        "nodeIndex": 43,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair B 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.12,
+          0.07,
+          0.05
+        ],
+        "nodeIndex": 44,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair B 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.08,
+          0.03,
+          0.07
+        ],
+        "nodeIndex": 45,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair C 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.1,
+          0.03,
+          0.07
+        ],
+        "nodeIndex": 46,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair C 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.18,
+          0.1,
+          0.05
+        ],
+        "nodeIndex": 47,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair D 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.19,
+          0.1,
+          0.05
+        ],
+        "nodeIndex": 48,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair D 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.16,
+          0.1,
+          0.04
+        ],
+        "nodeIndex": 49,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hair D 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.18,
+          0.14,
+          0.13
+        ],
+        "nodeIndex": 50,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Ear 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.01,
+          -0.02
+        ],
+        "boxSize": [
+          0.24,
+          0.14,
+          0.13
+        ],
+        "nodeIndex": 51,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Ear 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.1,
+          0.09
+        ],
+        "nodeIndex": 52,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Ear 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.15,
+          0.08,
+          0.07
+        ],
+        "nodeIndex": 53,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Ear 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.13,
+          0.1,
+          0.04
+        ],
+        "nodeIndex": 54,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Eyelid Dn"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.13,
+          0.11,
+          0.06
+        ],
+        "nodeIndex": 55,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Eyelid Up"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.18,
+          0.14,
+          0.06
+        ],
+        "nodeIndex": 56,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair A 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.27,
+          0.14,
+          0.08
+        ],
+        "nodeIndex": 57,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair A 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.24,
+          0.15,
+          0.08
+        ],
+        "nodeIndex": 58,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair A 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.16,
+          0.14,
+          0.06
+        ],
+        "nodeIndex": 59,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair A 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.15,
+          0.15,
+          0.05
+        ],
+        "nodeIndex": 60,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair B 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.13,
+          0.13,
+          0.04
+        ],
+        "nodeIndex": 61,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair B 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.03,
+          0
+        ],
+        "boxSize": [
+          0.13,
+          0.11,
+          0.06
+        ],
+        "nodeIndex": 62,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair B 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          -0.03,
+          0.02
+        ],
+        "boxSize": [
+          0.08,
+          0.05,
+          0.05
+        ],
+        "nodeIndex": 63,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair B 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.1,
+          0.04,
+          0.07
+        ],
+        "nodeIndex": 64,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair C 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.09,
+          0.03,
+          0.06
+        ],
+        "nodeIndex": 65,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair C 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.15,
+          0.04
+        ],
+        "nodeIndex": 66,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair D 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.2,
+          0.16,
+          0.06
+        ],
+        "nodeIndex": 67,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair D 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.2,
+          0.16,
+          0.04
+        ],
+        "nodeIndex": 68,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hair D 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.22,
+          0.32,
+          0.28
+        ],
+        "nodeIndex": 69,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Neck Add"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.08,
+          0.04,
+          0.24
+        ],
+        "nodeIndex": 70,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Necklace 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.04,
+          0.04,
+          0.15
+        ],
+        "nodeIndex": 71,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Necklace 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.05,
+          0.06,
+          0.06
+        ],
+        "nodeIndex": 72,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Necklace 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.15,
+          0.02,
+          -0.04
+        ],
+        "boxSize": [
+          0.31,
+          0.19,
+          0.36
+        ],
+        "nodeIndex": 73,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.43,
+          0.29,
+          0.19
+        ],
+        "nodeIndex": 74,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.29,
+          0.13,
+          0.08
+        ],
+        "nodeIndex": 75,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.12,
+          0.09
+        ],
+        "nodeIndex": 76,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.19,
+          0.14,
+          0.11
+        ],
+        "nodeIndex": 77,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bip001 R Finger0"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.07,
+          0.06,
+          0.12
+        ],
+        "nodeIndex": 78,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.17,
+          0.07,
+          0.13
+        ],
+        "nodeIndex": 79,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.01,
+          0.02
+        ],
+        "boxSize": [
+          0.1,
+          0.06,
+          0.08
+        ],
+        "nodeIndex": 80,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.14,
+          0.06,
+          0.15
+        ],
+        "nodeIndex": 81,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.15,
+          0.06,
+          0.16
+        ],
+        "nodeIndex": 82,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 05"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          -0.01,
+          -0.03
+        ],
+        "boxSize": [
+          0.13,
+          0.04,
+          0.14
+        ],
+        "nodeIndex": 83,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 06"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.21,
+          0.05,
+          0.13
+        ],
+        "nodeIndex": 84,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 07"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.17,
+          0.05,
+          0.12
+        ],
+        "nodeIndex": 85,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 08"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.09,
+          0.04,
+          0.06
+        ],
+        "nodeIndex": 86,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 09"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.12,
+          0.07,
+          0.21
+        ],
+        "nodeIndex": 87,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 10"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.22,
+          0.07,
+          0.21
+        ],
+        "nodeIndex": 88,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 11"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.19,
+          0.07,
+          0.18
+        ],
+        "nodeIndex": 89,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 12"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          0.19,
+          0.05,
+          0.18
+        ],
+        "nodeIndex": 90,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 13"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          0.11,
+          0.04,
+          0.12
+        ],
+        "nodeIndex": 91,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 14"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.26,
+          0.04,
+          0.18
+        ],
+        "nodeIndex": 92,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 15"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.22,
+          0.06,
+          0.2
+        ],
+        "nodeIndex": 93,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 16"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.17,
+          0.04,
+          0.18
+        ],
+        "nodeIndex": 94,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 17"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.22,
+          0.12,
+          0.2
+        ],
+        "nodeIndex": 95,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 18"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.24,
+          0.06,
+          0.19
+        ],
+        "nodeIndex": 96,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 19"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.19,
+          0.06,
+          0.18
+        ],
+        "nodeIndex": 97,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 20"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.19,
+          0.09,
+          0.14
+        ],
+        "nodeIndex": 98,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 21"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.17,
+          0.09,
+          0.15
+        ],
+        "nodeIndex": 99,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 22"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.2,
+          0.1,
+          0.24
+        ],
+        "nodeIndex": 100,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 23"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.21,
+          0.07,
+          0.16
+        ],
+        "nodeIndex": 101,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 24"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          -0.03,
+          0
+        ],
+        "boxSize": [
+          0.19,
+          0.07,
+          0.18
+        ],
+        "nodeIndex": 102,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 25"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.22,
+          0.06,
+          0.17
+        ],
+        "nodeIndex": 103,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 26"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.05,
+          0.17
+        ],
+        "nodeIndex": 104,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 27"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          -0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.22,
+          0.04,
+          0.19
+        ],
+        "nodeIndex": 105,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 28"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.2,
+          0.07,
+          0.2
+        ],
+        "nodeIndex": 106,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 29"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.14,
+          0.04,
+          0.16
+        ],
+        "nodeIndex": 107,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 30"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.31,
+          0.09,
+          0.2
+        ],
+        "nodeIndex": 108,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 31"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.17,
+          0.12,
+          0.18
+        ],
+        "nodeIndex": 109,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 32"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.03,
+          -0.01
+        ],
+        "boxSize": [
+          0.13,
+          0.11,
+          0.13
+        ],
+        "nodeIndex": 110,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 33"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0.01,
+          0.03
+        ],
+        "boxSize": [
+          0.05,
+          0.03,
+          0.05
+        ],
+        "nodeIndex": 111,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 34"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.17,
+          0.06,
+          0.18
+        ],
+        "nodeIndex": 112,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 35"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.11,
+          0.03,
+          0.12
+        ],
+        "nodeIndex": 113,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 36"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.14,
+          0.05,
+          0.11
+        ],
+        "nodeIndex": 114,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 37"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.15,
+          0.06,
+          0.11
+        ],
+        "nodeIndex": 115,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 38"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.11,
+          0.08,
+          0.09
+        ],
+        "nodeIndex": 116,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 39"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.02,
+          -0.02
+        ],
+        "boxSize": [
+          0.17,
+          0.09,
+          0.19
+        ],
+        "nodeIndex": 117,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 42"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.06,
+          0.15
+        ],
+        "nodeIndex": 118,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 43"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.21,
+          0.05,
+          0.16
+        ],
+        "nodeIndex": 119,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 44"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.12,
+          0.04,
+          0.14
+        ],
+        "nodeIndex": 120,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Spine2 45"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.33,
+          0.18,
+          0.25
+        ],
+        "nodeIndex": 121,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.29,
+          0.18,
+          0.22
+        ],
+        "nodeIndex": 122,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.36,
+          0.18,
+          0.19
+        ],
+        "nodeIndex": 123,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.32,
+          0.18,
+          0.13
+        ],
+        "nodeIndex": 124,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.32,
+          0.15,
+          0.12
+        ],
+        "nodeIndex": 125,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 05"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.33,
+          0.16,
+          0.11
+        ],
+        "nodeIndex": 126,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 06"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.35,
+          0.15,
+          0.1
+        ],
+        "nodeIndex": 127,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 07"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.32,
+          0.15,
+          0.09
+        ],
+        "nodeIndex": 128,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 08"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.32,
+          0.11,
+          0.09
+        ],
+        "nodeIndex": 129,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 09"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.13,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.33,
+          0.13,
+          0.13
+        ],
+        "nodeIndex": 130,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 10"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.02,
+          -0.01
+        ],
+        "boxSize": [
+          0.44,
+          0.23,
+          0.2
+        ],
+        "nodeIndex": 131,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 11"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.39,
+          0.26,
+          0.21
+        ],
+        "nodeIndex": 132,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 12"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.47,
+          0.25,
+          0.21
+        ],
+        "nodeIndex": 133,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 13"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.4,
+          0.34,
+          0.21
+        ],
+        "nodeIndex": 134,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 14"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.25,
+          0.12,
+          0.09
+        ],
+        "nodeIndex": 135,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 15"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.1,
+          0.06
+        ],
+        "nodeIndex": 136,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 16"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.14,
+          0.08,
+          0.06
+        ],
+        "nodeIndex": 137,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 17"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.08,
+          0.09,
+          0.06
+        ],
+        "nodeIndex": 138,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Tail 18"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.24,
+          0.09,
+          0.21
+        ],
+        "nodeIndex": 139,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.04,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.19,
+          0.08,
+          0.21
+        ],
+        "nodeIndex": 140,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.16,
+          0.07,
+          0.18
+        ],
+        "nodeIndex": 141,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          -0.03,
+          -0.01
+        ],
+        "boxSize": [
+          0.14,
+          0.06,
+          0.14
+        ],
+        "nodeIndex": 142,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.03,
+          -0.01
+        ],
+        "boxSize": [
+          0.16,
+          0.06,
+          0.14
+        ],
+        "nodeIndex": 143,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 05"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.22,
+          0.1,
+          0.2
+        ],
+        "nodeIndex": 144,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 06"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.2,
+          0.07,
+          0.19
+        ],
+        "nodeIndex": 145,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 07"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.22,
+          0.06,
+          0.19
+        ],
+        "nodeIndex": 146,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 08"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          0.27,
+          0.1,
+          0.2
+        ],
+        "nodeIndex": 147,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 09"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.17,
+          0.1,
+          0.2
+        ],
+        "nodeIndex": 148,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 10"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0,
+          -0.01
+        ],
+        "boxSize": [
+          0.14,
+          0.06,
+          0.13
+        ],
+        "nodeIndex": 149,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 11"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0.03,
+          -0.01
+        ],
+        "boxSize": [
+          0.28,
+          0.1,
+          0.26
+        ],
+        "nodeIndex": 150,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 12"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.07,
+          0.04,
+          0.14
+        ],
+        "nodeIndex": 151,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 14"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.14,
+          0.03,
+          0.12
+        ],
+        "nodeIndex": 152,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 15"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.1,
+          0.04,
+          0.08
+        ],
+        "nodeIndex": 153,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 16"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.22,
+          0.1,
+          0.14
+        ],
+        "nodeIndex": 154,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 17"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.21,
+          0.1,
+          0.15
+        ],
+        "nodeIndex": 155,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 18"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.15,
+          0.07,
+          0.12
+        ],
+        "nodeIndex": 156,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 19"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.2,
+          0.08,
+          0.19
+        ],
+        "nodeIndex": 157,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 20"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0.02,
+          0
+        ],
+        "boxSize": [
+          0.2,
+          0.1,
+          0.2
+        ],
+        "nodeIndex": 158,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 21"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.01,
+          0.01
+        ],
+        "boxSize": [
+          0.12,
+          0.04,
+          0.13
+        ],
+        "nodeIndex": 159,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 22"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.01,
+          0.04
+        ],
+        "boxSize": [
+          0.16,
+          0.07,
+          0.18
+        ],
+        "nodeIndex": 160,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 23"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          -0.01,
+          0.03
+        ],
+        "boxSize": [
+          0.1,
+          0.03,
+          0.12
+        ],
+        "nodeIndex": 161,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 24"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.02,
+          0
+        ],
+        "boxSize": [
+          0.27,
+          0.09,
+          0.18
+        ],
+        "nodeIndex": 162,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 25"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.09,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.19,
+          0.08,
+          0.17
+        ],
+        "nodeIndex": 163,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 26"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.11,
+          0.05,
+          0.1
+        ],
+        "nodeIndex": 164,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 27"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          -0.05,
+          -0.01
+        ],
+        "boxSize": [
+          0.21,
+          0.12,
+          0.24
+        ],
+        "nodeIndex": 165,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 28"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          -0.04,
+          0.01
+        ],
+        "boxSize": [
+          0.21,
+          0.1,
+          0.24
+        ],
+        "nodeIndex": 166,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 29"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.06,
+          -0.04,
+          -0.01
+        ],
+        "boxSize": [
+          0.13,
+          0.07,
+          0.2
+        ],
+        "nodeIndex": 167,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 30"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.01,
+          -0.01
+        ],
+        "boxSize": [
+          0.17,
+          0.07,
+          0.13
+        ],
+        "nodeIndex": 168,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Hair Pelvis 31"
+      }
+    ]
+  },
+  "HitBox_P_Monster_90207": {
+    "maxBodyRadius": 5.7,
+    "minBoneWeight": 0.4,
+    "shaderPartMaxCnt": 1,
+    "hitBoxNodes": [
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.77,
+          -0.07,
+          0
+        ],
+        "boxSize": [
+          1.69,
+          2.18,
+          2.28
+        ],
+        "nodeIndex": 1,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone Head"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.37,
+          0.01,
+          0
+        ],
+        "boxSize": [
+          0.79,
+          0.42,
+          0.44
+        ],
+        "nodeIndex": 2,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Jaw"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.04,
+          -0.05,
+          0
+        ],
+        "boxSize": [
+          0.15,
+          0.14,
+          0.07
+        ],
+        "nodeIndex": 3,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Mouth B"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.08,
+          -0.01,
+          0
+        ],
+        "boxSize": [
+          0.18,
+          0.06,
+          0.31
+        ],
+        "nodeIndex": 4,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Tongue"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.15,
+          0.07,
+          0.28
+        ],
+        "nodeIndex": 5,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Tongue 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0,
+          0
+        ],
+        "boxSize": [
+          0.13,
+          0.07,
+          0.23
+        ],
+        "nodeIndex": 6,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Tongue 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.05,
+          0,
+          -0.03
+        ],
+        "boxSize": [
+          0.11,
+          0.03,
+          0.07
+        ],
+        "nodeIndex": 7,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Mouth B"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.05,
+          0,
+          -0.03
+        ],
+        "boxSize": [
+          0.11,
+          0.03,
+          0.07
+        ],
+        "nodeIndex": 8,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Mouth B"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.02,
+          0.03,
+          0
+        ],
+        "boxSize": [
+          0.08,
+          0.12,
+          0.12
+        ],
+        "nodeIndex": 9,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone C Mouth A"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.01,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.06,
+          0.13,
+          0.29
+        ],
+        "nodeIndex": 10,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Eyelid Dn"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          -0.03,
+          0.03
+        ],
+        "boxSize": [
+          0.05,
+          0.06,
+          0.07
+        ],
+        "nodeIndex": 11,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Eyelid In"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.07,
+          0.1,
+          0.1
+        ],
+        "nodeIndex": 12,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Eyelid Out"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.03,
+          0.06,
+          0.01
+        ],
+        "boxSize": [
+          0.09,
+          0.17,
+          0.33
+        ],
+        "nodeIndex": 13,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Eyelid Up"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.04,
+          0,
+          -0.05
+        ],
+        "boxSize": [
+          0.13,
+          0.18,
+          0.18
+        ],
+        "nodeIndex": 14,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Mouth"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.04,
+          0.04,
+          0.05
+        ],
+        "nodeIndex": 15,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Mouth A"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.04,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.08,
+          0.05,
+          0.04
+        ],
+        "nodeIndex": 16,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Mouth Teeth"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          -0.03
+        ],
+        "boxSize": [
+          0.08,
+          0.13,
+          0.29
+        ],
+        "nodeIndex": 17,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Eyelid Dn"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          0.03,
+          0.04
+        ],
+        "boxSize": [
+          0.05,
+          0.06,
+          0.08
+        ],
+        "nodeIndex": 18,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Eyelid In"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.07,
+          0.1,
+          0.09
+        ],
+        "nodeIndex": 19,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Eyelid Out"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.03,
+          -0.06,
+          0.01
+        ],
+        "boxSize": [
+          0.09,
+          0.18,
+          0.33
+        ],
+        "nodeIndex": 20,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Eyelid Up"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.04,
+          0,
+          -0.04
+        ],
+        "boxSize": [
+          0.13,
+          0.19,
+          0.2
+        ],
+        "nodeIndex": 21,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Mouth"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          0.01
+        ],
+        "boxSize": [
+          0.04,
+          0.03,
+          0.05
+        ],
+        "nodeIndex": 22,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Mouth A"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.26,
+          0.13,
+          0.06
+        ],
+        "boxSize": [
+          0.7,
+          0.66,
+          1.65
+        ],
+        "nodeIndex": 23,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.02,
+          0.02,
+          0.06
+        ],
+        "boxSize": [
+          0.73,
+          0.84,
+          1.34
+        ],
+        "nodeIndex": 24,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0.17,
+          0
+        ],
+        "boxSize": [
+          0.23,
+          0.34,
+          0.74
+        ],
+        "nodeIndex": 25,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L UpArmTwist"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.25,
+          0.05,
+          0.1
+        ],
+        "boxSize": [
+          0.62,
+          0.61,
+          1.01
+        ],
+        "nodeIndex": 26,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.22,
+          0.03,
+          0.06
+        ],
+        "boxSize": [
+          0.49,
+          0.43,
+          0.76
+        ],
+        "nodeIndex": 27,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L ForeTwist"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.13,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.32,
+          0.26,
+          0.48
+        ],
+        "nodeIndex": 28,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.31,
+          -0.13,
+          0.05
+        ],
+        "boxSize": [
+          0.62,
+          0.66,
+          1.64
+        ],
+        "nodeIndex": 29,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Clavicle"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.03,
+          -0.03,
+          0.06
+        ],
+        "boxSize": [
+          0.74,
+          0.84,
+          1.34
+        ],
+        "nodeIndex": 30,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R UpperArm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.1,
+          -0.17,
+          -0.07
+        ],
+        "boxSize": [
+          0.21,
+          0.34,
+          0.42
+        ],
+        "nodeIndex": 31,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R UpArmTwist"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.26,
+          -0.05,
+          0.1
+        ],
+        "boxSize": [
+          0.62,
+          0.62,
+          1.01
+        ],
+        "nodeIndex": 32,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Forearm"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.22,
+          -0.03,
+          0.06
+        ],
+        "boxSize": [
+          0.47,
+          0.42,
+          0.76
+        ],
+        "nodeIndex": 33,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R ForeTwist"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.13,
+          0,
+          -0.02
+        ],
+        "boxSize": [
+          0.31,
+          0.26,
+          0.48
+        ],
+        "nodeIndex": 34,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Hand"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.69,
+          -0.06,
+          0
+        ],
+        "boxSize": [
+          1.38,
+          1.74,
+          2.83
+        ],
+        "nodeIndex": 35,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone B Back"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.78,
+          0.17,
+          -0.03
+        ],
+        "boxSize": [
+          1.55,
+          2.11,
+          2.59
+        ],
+        "nodeIndex": 36,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone Belly"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.91,
+          -0.04,
+          0.15
+        ],
+        "boxSize": [
+          1.81,
+          1.55,
+          2.71
+        ],
+        "nodeIndex": 37,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Belly"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.86,
+          0.1,
+          0.12
+        ],
+        "boxSize": [
+          1.72,
+          1.53,
+          2.78
+        ],
+        "nodeIndex": 38,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Belly"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0,
+          0,
+          0
+        ],
+        "boxSize": [
+          0,
+          0,
+          0
+        ],
+        "nodeIndex": 39,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone Spine 01"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.32,
+          0.09,
+          0
+        ],
+        "boxSize": [
+          0.65,
+          2.33,
+          1.07
+        ],
+        "nodeIndex": 40,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone Hip"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.39,
+          -0.08,
+          0.25
+        ],
+        "boxSize": [
+          0.77,
+          1.65,
+          1.48
+        ],
+        "nodeIndex": 41,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Leg"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.14,
+          -0.12,
+          0.21
+        ],
+        "boxSize": [
+          0.28,
+          0.89,
+          0.57
+        ],
+        "nodeIndex": 42,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Leg 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.13,
+          0.02,
+          0.01
+        ],
+        "boxSize": [
+          0.26,
+          1.04,
+          0.97
+        ],
+        "nodeIndex": 43,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Leg 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.07,
+          -0.13,
+          0.01
+        ],
+        "boxSize": [
+          0.99,
+          0.52,
+          0.94
+        ],
+        "nodeIndex": 44,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone L Leg 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.4,
+          0.06,
+          0.18
+        ],
+        "boxSize": [
+          0.8,
+          1.64,
+          1.35
+        ],
+        "nodeIndex": 45,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Leg"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.13,
+          0.1,
+          0.23
+        ],
+        "boxSize": [
+          0.26,
+          0.84,
+          0.54
+        ],
+        "nodeIndex": 46,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Leg 02"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.11,
+          0.01,
+          0.03
+        ],
+        "boxSize": [
+          0.21,
+          0.97,
+          0.93
+        ],
+        "nodeIndex": 47,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Leg 03"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          -0.05,
+          0.13,
+          0.02
+        ],
+        "boxSize": [
+          0.93,
+          0.5,
+          0.93
+        ],
+        "nodeIndex": 48,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone R Leg 04"
+      },
+      {
+        "subPart": 1,
+        "boxCenter": [
+          0.12,
+          -0.02,
+          0.14
+        ],
+        "boxSize": [
+          2.17,
+          4.02,
+          3.16
+        ],
+        "nodeIndex": 49,
+        "part": 7,
+        "shaderPartIndex": 0,
+        "boneName": "Bone Spine 02"
+      }
+    ]
+  }
+}

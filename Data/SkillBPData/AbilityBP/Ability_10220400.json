@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_10220400",
+  "NodeID": 1,
+  "UID": "0c307893-d359-40dd-a5ee-86e7ac9d387d",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10220400001,
+      "name": "setCombatActionTimeline",
+      "UID": "2895becc-c0ef-4025-b27e-1d79d7efbbf1",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Breath"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10023_Fly_LightBreath_Bullet"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 1,
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "selectPos": 1,
+  "abilityParamId": 10900030,
+  "name": ""
+}

@@ -1,0 +1,504 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2129301",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    76
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "62": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "42fdc4ed-1ab9-47ad-9049-c65eab5f6d87",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_End_R_03",
+      "speed": 1,
+      "NodeID": 62
+    },
+    "81": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bfc4abca-10f5-4790-ad7e-390f67424206",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10293_Skill_Shapeshifting_Start",
+      "NodeID": 81
+    },
+    "40": {
+      "name": "checkPetPrototypeId",
+      "UID": "ba870a8e-5d5d-4bdc-b89a-7505b4bd06b3",
+      "target": "OWNER",
+      "petPrototypeId": 1029300,
+      "NodeID": 40
+    },
+    "41": {
+      "name": "checkPetPrototypeId",
+      "UID": "fa517908-49c2-44f4-84d9-ab73aaf865d9",
+      "target": "OWNER",
+      "petPrototypeId": 1029301,
+      "NodeID": 41
+    },
+    "42": {
+      "actionIds": [
+        43,
+        47,
+        48,
+        49,
+        51,
+        82
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "4cf27e83-4486-4599-bb49-9b52d43453fe",
+      "name": "doActionsByConditions",
+      "NodeID": 42
+    },
+    "43": {
+      "switchTag": "Wings",
+      "name": "setModelSwitchTag",
+      "UID": "cd9d3d94-852f-45d3-914e-6b6e36e0c8ca",
+      "NodeID": 43,
+      "groupKey": 0
+    },
+    "84": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2e270796-159b-4abd-ac00-50159497470d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10293_Skill_Shapeshifting_End",
+      "NodeID": 84
+    },
+    "66": {
+      "renderNameFilter": [
+        "M_Parmon_1029301_Body01_wings"
+      ],
+      "duration": 0.6,
+      "disableWhenFinished": true,
+      "NodeID": 66,
+      "UID": "8d687785-ab8a-41b1-8ac1-243d1a76a406",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10293_Skill_Shapeshifting_End_03_Dissovle",
+      "name": "playPreset"
+    },
+    "85": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "24a47309-4100-44a0-b815-a29f03d909e9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10293_Skill_Shapeshifting_End",
+      "NodeID": 85
+    },
+    "86": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "aecfb927-374a-49b2-b965-357a2f54b9df",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10291_Skill_Shapeshifting_End",
+      "NodeID": 86
+    },
+    "69": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "b840e412-11d1-4b35-8914-353a8fc92924",
+      "NodeID": 69,
+      "groupKey": 0
+    },
+    "3": {
+      "switchTag": "Wings",
+      "name": "setModelSwitchTag",
+      "UID": "9d12e61a-5083-408c-92ab-0975ff7228e6",
+      "NodeID": 3,
+      "groupKey": 0
+    },
+    "70": {
+      "key": "EntityTimer1",
+      "duration": 0.8,
+      "actionIds": [
+        69
+      ],
+      "NodeID": 70,
+      "UID": "dd07815d-b605-48ee-99c2-fbd74aabdf2c",
+      "name": "addEntityTimer"
+    },
+    "71": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "01859585-7a31-4310-8c46-0fff6d30788f",
+      "NodeID": 71,
+      "groupKey": 0
+    },
+    "73": {
+      "key": "EntityTimer1",
+      "duration": 0.5,
+      "actionIds": [
+        71
+      ],
+      "NodeID": 73,
+      "UID": "d8d73fe6-4886-4198-8d2e-8d58a70545b5",
+      "name": "addEntityTimer"
+    },
+    "83": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "093ca3e8-cbf3-4f37-aa0c-936b05e05dac",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10291_Skill_Shapeshifting_Start",
+      "NodeID": 83
+    },
+    "82": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "241c686d-5d34-4a75-9b6d-e213c75c02f9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10293_Skill_Shapeshifting_Start",
+      "NodeID": 82
+    },
+    "54": {
+      "name": "checkPetPrototypeId",
+      "UID": "87ed8e70-b6c9-438f-8de2-7294b50de0cc",
+      "target": "OWNER",
+      "petPrototypeId": 1029300,
+      "NodeID": 54
+    },
+    "79": {
+      "UID": "f3bb0da4-045f-48d5-8d60-903b5f5248ff",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 79
+    },
+    "78": {
+      "calcInfo": {
+        "passive_energy_cur": -30
+      },
+      "name": "calcResult",
+      "UID": "653b2dc9-3b1d-4ea6-869c-f677b8738163",
+      "target": "OWNER",
+      "NodeID": 78
+    },
+    "5": {
+      "actionIds": [
+        3,
+        9,
+        15,
+        17,
+        21,
+        81
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "13eb334f-d177-4a50-9e3d-a27c276ddf28",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "76": {
+      "calcInfo": {
+        "passive_energy_cur": -1.2
+      },
+      "name": "calcResult",
+      "UID": "eb2f164d-e265-43fa-b020-3dfcccf87c14",
+      "target": "OWNER",
+      "NodeID": 76
+    },
+    "25": {
+      "renderNameFilter": [
+        "M_Parmon_10293_Body01_wings"
+      ],
+      "duration": 0.8,
+      "disableWhenFinished": true,
+      "NodeID": 25,
+      "UID": "b32f5d07-02bd-4fbe-93e7-68e0894bafde",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10293_Skill_Shapeshifting_End_Dissovle",
+      "name": "playPreset"
+    },
+    "61": {
+      "name": "stopEffectStr",
+      "UID": "c1220019-9083-4b68-b2a1-1246a6739503",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_R_03",
+      "target": "OWNER",
+      "NodeID": 61
+    },
+    "60": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a2a49a84-6068-40df-96e9-79aed7da9bf7",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_End_L_03",
+      "speed": 1,
+      "NodeID": 60
+    },
+    "57": {
+      "name": "stopEffectStr",
+      "UID": "167db916-480e-4a02-9bbb-143841f61e13",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_L_03",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9f9e694a-a088-4ed5-8df6-e50b26eab569",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_End_L",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "078dbc99-e3fd-40c6-9e99-a1d007b4f1a0",
+      "effectId": "Eff_Parmon_10291_Skill_Wing_End",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "13": {
+      "actionIds": [
+        70,
+        10,
+        18,
+        16,
+        19,
+        25,
+        23,
+        24,
+        84
+      ],
+      "conditionActionIds": [
+        54
+      ],
+      "UID": "af9fa5a0-5a9e-4722-b1e2-383d95a19320",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "31": {
+      "actionIds": [
+        32,
+        34,
+        86
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "37e27479-1be2-447e-a010-697d8ebd65ae",
+      "name": "doActionsByConditions",
+      "NodeID": 31
+    },
+    "9": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "83196503-8aae-4b34-b863-51ac333c7073",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Start",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "24": {
+      "renderNameFilter": [
+        "M_Parmon_10293_Body01_wings"
+      ],
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 24,
+      "UID": "1aed3899-a218-42df-9b1d-69ce8e375060",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10293_Skill_Shapeshifting_End_Fresnel",
+      "name": "playPreset"
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "07b340b1-5143-4b4b-a6b5-b4b0139cbaa2",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_R",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "123b6b98-0c0d-456b-8358-ca3d780b1177",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_L",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bfd81fe3-e304-406c-bc6e-886eabfff92c",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_R",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "21": {
+      "renderNameFilter": [
+        "M_Parmon_10293_Body01_wings"
+      ],
+      "duration": 0.6,
+      "disableWhenFinished": true,
+      "NodeID": 21,
+      "UID": "f78f1c72-5aba-468c-bc97-c4afa96c7c1b",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10293_Skill_Shapeshifting_Start_Dissovle",
+      "name": "playPreset"
+    },
+    "27": {
+      "actionIds": [
+        28,
+        83
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "55233cce-b7ed-4fe7-8904-2d8c51ff1299",
+      "name": "doActionsByConditions",
+      "NodeID": 27
+    },
+    "23": {
+      "renderNameFilter": [
+        "M_Parmon_10293_Body01_wings"
+      ],
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 23,
+      "UID": "3a27ece7-88bb-4f3f-806d-66dcf561e7ca",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10293_Skill_Shapeshifting_End_Fresnel",
+      "name": "playPreset"
+    },
+    "55": {
+      "name": "checkPetPrototypeId",
+      "UID": "a8406f5b-5fa1-4964-aff5-68ccdda7ce90",
+      "target": "OWNER",
+      "petPrototypeId": 1029301,
+      "NodeID": 55
+    },
+    "74": {
+      "delay": 0,
+      "NodeID": 74,
+      "UID": "23732647-c449-4f0f-a49d-c37c2a84ea8d",
+      "name": "buffStartThink",
+      "interval": 0.4,
+      "buffTemplateId": 2129301
+    },
+    "56": {
+      "actionIds": [
+        73,
+        57,
+        61,
+        60,
+        62,
+        66,
+        85
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "93c4accb-8002-4eaa-bc5e-72101fe66866",
+      "name": "doActionsByConditions",
+      "NodeID": 56
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a6ecb4cc-c87a-427f-a379-856d2f34d494",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_L",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "47": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "677419c3-f2fe-4d73-b53b-487da9f1c224",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Start_03",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "26": {
+      "name": "checkPetPrototypeId",
+      "UID": "74f24652-1cd8-44d0-9a00-376ae8e3c83e",
+      "target": "OWNER",
+      "petPrototypeId": 1029100,
+      "NodeID": 26
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "51967ba8-7853-4835-a723-45c3d9fbb541",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_L_03",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "de28602e-de6c-4d91-a23a-7b82994456cb",
+      "effectId": "Eff_Parmon_10291_Skill_Wing",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "49": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a362ff42-be86-4c7f-81c3-59b09d592af7",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_Loop_R_03",
+      "speed": 1,
+      "NodeID": 49
+    },
+    "30": {
+      "name": "checkPetPrototypeId",
+      "UID": "96f3d6e5-28ab-4a65-a8ad-f47819e3def0",
+      "target": "OWNER",
+      "petPrototypeId": 1029100,
+      "NodeID": 30
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "0fb22be8-fa78-41d1-bee2-2713bc326022",
+      "effectId": "Eff_Parmon_10291_Skill_Wing",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ef5cb1a8-ff31-4087-b768-0ac090967c04",
+      "effectId": "Eff_Parmon_10293_Skill_Shapeshifting_End_R",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "51": {
+      "renderNameFilter": [
+        "M_Parmon_1029301_Body01_wings"
+      ],
+      "duration": 0.6,
+      "disableWhenFinished": true,
+      "NodeID": 51,
+      "UID": "2e7c108e-da8e-4edd-9cc5-5871a87b31e9",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10293_Skill_Shapeshifting_Start_03_Dissovle",
+      "name": "playPreset"
+    },
+    "80": {
+      "UID": "fea68f19-8557-4534-8858-755f09ac9f77",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 80
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "onBuffDestroyIds": [
+    13,
+    56,
+    78,
+    80,
+    31
+  ],
+  "onBuffStartIds": [
+    5,
+    42,
+    27,
+    74,
+    79
+  ]
+}

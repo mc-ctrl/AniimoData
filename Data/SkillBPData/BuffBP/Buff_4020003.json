@@ -1,0 +1,50 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020003",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "e5d522fa-994c-4e30-a331-bca2791809fe",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4a937faf-6bd3-4e69-ad95-479e274d859c",
+      "effectId": "Eff_Skill_Common_Warning_Red",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "17f49965-a38c-48f1-b64c-7237737382b0",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 7
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "6c16b4d2-bdf6-4508-af10-190cce5ace58",
+      "target": "OWNER",
+      "NodeID": 9
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9
+  ]
+}

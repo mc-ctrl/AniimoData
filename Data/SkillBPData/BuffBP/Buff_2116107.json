@@ -1,0 +1,83 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "interval": 1,
+      "UID": "6595ba34-e829-4b2e-97d5-9f4659352b52",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 3
+    },
+    "13": {
+      "key": "1",
+      "duration": 15,
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13,
+      "UID": "dcedcd57-542e-41d4-a17d-a69a386b22c0",
+      "name": "addTimer"
+    },
+    "12": {
+      "velocity": 0,
+      "duration": 0,
+      "enableTurnInstant": false,
+      "NodeID": 12,
+      "UID": "fee074b8-86e3-4837-a8cc-8aa1e0783a9b",
+      "name": "burrow",
+      "switchToAbilityId": -9999,
+      "exitCastAbilityId": -9999
+    },
+    "6": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "028c92ad-4cb6-498a-af18-6186e5110583",
+      "effectId": "Eff_Parmon_Die",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "18d44dca-8c15-4add-9e04-5d31654ed802",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        13,
+        8
+      ],
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "0cc4791b-88c5-43c9-937c-3a6bbf35e2d7",
+      "name": "destroyEntity",
+      "NodeID": 11
+    },
+    "8": {
+      "key": "1",
+      "duration": 16,
+      "actionIds": [
+        6,
+        11
+      ],
+      "NodeID": 8,
+      "UID": "c89e788c-bed3-4f73-a70a-fbb1b997d01e",
+      "name": "addTimer"
+    },
+    "2": {
+      "UID": "608d7414-15f3-4b74-a1de-6ac2e2e62231",
+      "target": "OWNER",
+      "name": "dropReward",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2116107",
+  "dynamicRPCStates": {},
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    10
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "nodeMap": {
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          22
+        ]
+      },
+      "NodeID": 6
+    },
+    "11": {
+      "UID": "b27c743e-86b0-4ddd-a437-8b89bb2ac495",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "21": {
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "36ab9fc9-f701-4492-a5fa-ae5952574f55",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10045_Skill_FlowerCircle_Charge",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "e498e61b-f57e-4b25-b2c3-e003f01f9332",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 24
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 14,
+      "UID": "1df632f8-626a-4fa6-817b-4c4da36f0386"
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c9537920-e2c5-497f-910f-560abe02ed67",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_FlowerCircle"
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104502,
+      "name": "createEntity",
+      "UID": "93ffa426-d908-40c9-8288-c89210b9d515",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 15,
+      "pos": "OWNER"
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "75b38e27-ba3a-44c6-a13e-f187cdca445a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "ca79532c-ed3c-42c7-adba-7b4401d150ec",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "f3d73e64-57f3-4743-b123-ca1c83af0952",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 27
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 17,
+      "UID": "966c0da1-f0c7-4019-9d11-8aac43f9e4ee"
+    },
+    "28": {
+      "UID": "439a8de4-d5b1-43f3-9056-077ccc0e0550",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 28
+    },
+    "19": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 19
+    },
+    "13": {
+      "UID": "1ef0c407-9f75-4507-a9fe-80aa704d3e0a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0c9d6952-8783-4d33-9c60-3d9c40c1005c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10045_Skill_FlowerCircle_Cure02",
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_10450410",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    11,
+    14,
+    21,
+    17,
+    26
+  ],
+  "layer": "Base",
+  "length": 1.15
+}

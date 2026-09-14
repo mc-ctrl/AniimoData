@@ -1,0 +1,48 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145120",
+  "NodeID": 1,
+  "UID": "8965596f-ebce-4871-8c67-6c48bfc692c8",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "ff98b931-6231-48ef-843e-9dbbec4b7f89",
+      "effectId": "Eff_Buff_Swim_Acc_Geyser",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "49eeb80f-c577-4522-a343-415a1ab07ff9",
+      "effectId": "Eff_Buff_Swim_Acc_Geyser",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "df11175f-9e5a-4711-9a82-a2b0cf2f4fa8",
+      "effectId": "Eff_Buff_Swim_Acc_Geyser",
+      "target": "CURPET",
+      "NodeID": 7
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7d852081-8c81-4d1a-b3cb-5ced55cd5a2e",
+      "effectId": "Eff_Buff_Swim_Acc_Geyser",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    5,
+    7
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    4
+  ]
+}

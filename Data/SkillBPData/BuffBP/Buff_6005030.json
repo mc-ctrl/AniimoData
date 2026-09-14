@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6005030",
+  "calcInfoByLuaConfig": {
+    "id": 6005030,
+    "pvp_taken_dmg_dec_rate_v": "param3",
+    "pvp_taken_dmg_inc_rate_v": "param2",
+    "type": 1,
+    "rob_egg_def": "param1",
+    "rob_egg_atk": "param0"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

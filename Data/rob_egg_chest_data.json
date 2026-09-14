@@ -1,0 +1,1846 @@
+{
+  "1000": {
+    "openingTime": 0.9,
+    "destroySound": "SFX_SceneObject_BrokenJar_Small",
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 5,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101004
+      ],
+      [
+        15101204
+      ],
+      [
+        15101204
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "destroyEffect": "Eff_VAT_KeyItem_Pot_001_A_Broke",
+    "editorDisplayPriority": 999,
+    "editorName": "朴素陶土罐子",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 2,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_Jar01",
+    "model": "$P_Item_SceneObject_Chest_Pot_001_A.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 1773052312
+  },
+  "100002": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101004
+      ],
+      [
+        15101204
+      ],
+      [
+        15101304
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "巡逻队掉落【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 3,
+    "name": 2104816249,
+    "actionPrototypeId": 389
+  },
+  "100003": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101105
+      ],
+      [
+        15101105
+      ],
+      [
+        15101105
+      ],
+      [
+        15101005
+      ],
+      [
+        15101205
+      ],
+      [
+        15101305
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101111
+      ],
+      [
+        15101111
+      ],
+      [
+        15101111
+      ],
+      [
+        15101012
+      ],
+      [
+        15101217
+      ],
+      [
+        15101311
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "黑曜守卫掉落【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 4,
+    "name": 1306267550,
+    "actionPrototypeId": 389
+  },
+  "100004": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101105
+      ],
+      [
+        15101105
+      ],
+      [
+        15101105
+      ],
+      [
+        15101005
+      ],
+      [
+        15101205
+      ],
+      [
+        15101305
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101111
+      ],
+      [
+        15101111
+      ],
+      [
+        15101111
+      ],
+      [
+        15101012
+      ],
+      [
+        15101217
+      ],
+      [
+        15101311
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "黑曜巡逻队掉落【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 5,
+    "name": 1915564829,
+    "actionPrototypeId": 389
+  },
+  "100005": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101106
+      ],
+      [
+        15101106
+      ],
+      [
+        15101106
+      ],
+      [
+        15101006
+      ],
+      [
+        15101206
+      ],
+      [
+        15101306
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101114
+      ],
+      [
+        15101114
+      ],
+      [
+        15101114
+      ],
+      [
+        15101015
+      ],
+      [
+        15101216
+      ],
+      [
+        15101216
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "地宫宝藏蟹【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 5,
+    "name": 1457834129,
+    "actionPrototypeId": 389
+  },
+  "100006": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101107
+      ],
+      [
+        15101107
+      ],
+      [
+        15101107
+      ],
+      [
+        15101007
+      ],
+      [
+        15101207
+      ],
+      [
+        15101307
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101113
+      ],
+      [
+        15101113
+      ],
+      [
+        15101113
+      ],
+      [
+        15101014
+      ],
+      [
+        15101215
+      ],
+      [
+        15101313
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "地宫BOSS【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 5,
+    "name": 1380664161,
+    "actionPrototypeId": 389
+  },
+  "2008": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "open",
+    "rewardGroup": [
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101001
+      ],
+      [
+        15101201
+      ],
+      [
+        15101301
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "isDestroy": 0,
+    "editorName": "普通遗迹箱",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 998,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_SceneObject_Chest_Low_Ancient.prefab",
+    "quality": 3,
+    "actionPrototypeId": 389,
+    "name": 1803016377
+  },
+  "100007": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101106
+      ],
+      [
+        15101106
+      ],
+      [
+        15101106
+      ],
+      [
+        15101006
+      ],
+      [
+        15101206
+      ],
+      [
+        15101306
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101112
+      ],
+      [
+        15101112
+      ],
+      [
+        15101112
+      ],
+      [
+        15101013
+      ],
+      [
+        15101214
+      ],
+      [
+        15101312
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "地宫+1装等精英怪【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 5,
+    "name": 1264683638,
+    "actionPrototypeId": 389
+  },
+  "5020001": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 3,
+    "rewardGroup": {},
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "初始背包",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 1,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Bag_01.prefab",
+    "quality": 0,
+    "name": 1172228138,
+    "actionPrototypeId": 389
+  },
+  "100016": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101119
+      ],
+      [
+        15101119
+      ],
+      [
+        15101119
+      ],
+      [
+        15101020
+      ],
+      [
+        15101221
+      ],
+      [
+        15101221
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101210
+      ],
+      [
+        15101210
+      ],
+      [
+        15101210
+      ],
+      [
+        15101210
+      ],
+      [
+        15101210
+      ],
+      [
+        15101210
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "地宫BOSS【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 5,
+    "name": 1565933278,
+    "actionPrototypeId": 389
+  },
+  "5020002": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 3,
+    "rewardGroup": {},
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "简易背包",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 1,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Bag_02.prefab",
+    "quality": 0,
+    "name": 1317831738,
+    "actionPrototypeId": 389
+  },
+  "100103": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101105
+      ],
+      [
+        15101105
+      ],
+      [
+        15101105
+      ],
+      [
+        15101005
+      ],
+      [
+        15101205
+      ],
+      [
+        15101305
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101111
+      ],
+      [
+        15101111
+      ],
+      [
+        15101111
+      ],
+      [
+        15101012
+      ],
+      [
+        15101217
+      ],
+      [
+        15101311
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "黑曜守卫掉落【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 4,
+    "name": 1106851006,
+    "actionPrototypeId": 389
+  },
+  "1002": {
+    "openingTime": 0.9,
+    "destroySound": "SFX_SceneObject_BrokenJar_Large",
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 5,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101004
+      ],
+      [
+        15101204
+      ],
+      [
+        15101204
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "destroyEffect": "Eff_VAT_KeyItem_Pot_001_C_Broke",
+    "editorDisplayPriority": 999,
+    "editorName": "华丽陶土缸",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_Jar03",
+    "model": "$P_Item_SceneObject_Chest_Pot_001_C.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 1917469328
+  },
+  "5020004": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 3,
+    "rewardGroup": {},
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "探险背包",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 1,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Bag_12.prefab",
+    "quality": 0,
+    "name": 1132974966,
+    "actionPrototypeId": 389
+  },
+  "100107": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101106
+      ],
+      [
+        15101106
+      ],
+      [
+        15101106
+      ],
+      [
+        15101006
+      ],
+      [
+        15101206
+      ],
+      [
+        15101306
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101112
+      ],
+      [
+        15101112
+      ],
+      [
+        15101112
+      ],
+      [
+        15101013
+      ],
+      [
+        15101214
+      ],
+      [
+        15101312
+      ]
+    ],
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "地宫+1装等精英怪【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 5,
+    "name": 1738574170,
+    "actionPrototypeId": 389
+  },
+  "2001": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101001
+      ],
+      [
+        15101201
+      ],
+      [
+        15101301
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "isDestroy": 0,
+    "editorName": "陈旧木箱",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_WoodenBox_002",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 998,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_SceneObject_Chest_WoodenBox_002.prefab",
+    "quality": 3,
+    "actionPrototypeId": 389,
+    "name": 1086382757
+  },
+  "2002": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101010
+      ],
+      [
+        15101218
+      ],
+      [
+        15101309
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "isDestroy": 0,
+    "editorName": "华丽木箱",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_WoodenBox_001",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 998,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_SceneObject_Chest_WoodenBox_001.prefab",
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "name": 1110066940
+  },
+  "2003": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101010
+      ],
+      [
+        15101218
+      ],
+      [
+        15101309
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "isDestroy": 0,
+    "editorName": "朴素铁箱",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_IronBox_001",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 998,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_SceneObject_Chest_IronBox_001.prefab",
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "name": 1370468445
+  },
+  "2004": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101103
+      ],
+      [
+        15101103
+      ],
+      [
+        15101103
+      ],
+      [
+        15101003
+      ],
+      [
+        15101203
+      ],
+      [
+        15101303
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101110
+      ],
+      [
+        15101110
+      ],
+      [
+        15101110
+      ],
+      [
+        15101011
+      ],
+      [
+        15101212
+      ],
+      [
+        15101310
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "markConfigId": 1013,
+    "isDestroy": 0,
+    "editorName": "华丽铁箱",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_IronBox_002",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "quality": 5,
+    "SightLevel": 2,
+    "editorDisplayPriority": 998,
+    "model": "$P_Item_SceneObject_Chest_IronBox_002.prefab",
+    "nonKinematic": 1,
+    "actionPrototypeId": 389,
+    "name": 2062674485
+  },
+  "2005": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101010
+      ],
+      [
+        15101218
+      ],
+      [
+        15101309
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "isDestroy": 0,
+    "editorName": "圆盘箱子",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_Chest_005",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 998,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_SceneObject_StoneDisk_001.prefab",
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "name": 1258723057
+  },
+  "2006": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101010
+      ],
+      [
+        15101218
+      ],
+      [
+        15101309
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "isDestroy": 0,
+    "editorName": "朴素石棺",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_Sarcophagus_001",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 998,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_SceneObject_Chest_Sarcophagus_001.prefab",
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "name": 1727177185
+  },
+  "3004": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "volume": 20,
+    "editorDisplayPriority": 997,
+    "editorName": "矿石簇",
+    "unlockSound": "GrabEgg_Rock_CrystalCave",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_KeyItem_Nature04",
+    "model": "$P_Item_Rock_CrystalCave_Mix.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 1185931697
+  },
+  "2007": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101103
+      ],
+      [
+        15101103
+      ],
+      [
+        15101103
+      ],
+      [
+        15101003
+      ],
+      [
+        15101203
+      ],
+      [
+        15101303
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101110
+      ],
+      [
+        15101110
+      ],
+      [
+        15101110
+      ],
+      [
+        15101011
+      ],
+      [
+        15101212
+      ],
+      [
+        15101310
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "markConfigId": 1013,
+    "isDestroy": 0,
+    "editorName": "华丽石棺",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_Sarcophagus_002",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "quality": 5,
+    "SightLevel": 2,
+    "editorDisplayPriority": 998,
+    "model": "$P_Item_SceneObject_Chest_Sarcophagus_002.prefab",
+    "nonKinematic": 1,
+    "actionPrototypeId": 389,
+    "name": 2122889451
+  },
+  "5020005": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 3,
+    "rewardGroup": {},
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "重装背包",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 1,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Bag_13.prefab",
+    "quality": 0,
+    "name": 2132694356,
+    "actionPrototypeId": 389
+  },
+  "5020003": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 3,
+    "rewardGroup": {},
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "轻便背包",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 1,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Bag_11.prefab",
+    "quality": 0,
+    "name": 1318789383,
+    "actionPrototypeId": 389
+  },
+  "3005": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "volume": 20,
+    "editorDisplayPriority": 997,
+    "editorName": "化石堆",
+    "unlockSound": "GrabEgg_Props_Bone",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_KeyItem_Nature05",
+    "model": "$P_Item_Props_Bone_001_Mix.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 1179080447
+  },
+  "10": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": 1,
+    "lootboxType": 4,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        5002001
+      ],
+      [
+        5002001
+      ],
+      [
+        5002001
+      ],
+      [
+        5002002
+      ],
+      [
+        5002003
+      ],
+      [
+        5002005
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "markConfigId": 1014,
+    "editorDisplayPriority": 1000,
+    "editorName": "蛋巢-掉蛋",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "destroyEffect": "Eff_Env_Avatar_GrabEgg_SBreakNest",
+    "actionPrototypeId": 10010,
+    "SightLevel": 2,
+    "model": "$P_Item_Props_EggNest.prefab",
+    "quality": 5,
+    "isDestroy": 0,
+    "name": 1200189318
+  },
+  "2009": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "open",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101109
+      ],
+      [
+        15101010
+      ],
+      [
+        15101218
+      ],
+      [
+        15101309
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "isDestroy": 0,
+    "editorName": "精致遗迹箱",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 998,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_SceneObject_Chest_Middle_Ancient.prefab",
+    "quality": 4,
+    "actionPrototypeId": 389,
+    "name": 2026412237
+  },
+  "2010": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "open",
+    "rewardGroup": [
+      [
+        15101103
+      ],
+      [
+        15101103
+      ],
+      [
+        15101103
+      ],
+      [
+        15101003
+      ],
+      [
+        15101203
+      ],
+      [
+        15101303
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101110
+      ],
+      [
+        15101110
+      ],
+      [
+        15101110
+      ],
+      [
+        15101011
+      ],
+      [
+        15101212
+      ],
+      [
+        15101310
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "markConfigId": 1013,
+    "isDestroy": 0,
+    "editorName": "豪华遗迹箱",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "quality": 5,
+    "SightLevel": 2,
+    "editorDisplayPriority": 998,
+    "model": "$P_Item_SceneObject_Chest_Magnificent_Ancient.prefab",
+    "nonKinematic": 1,
+    "actionPrototypeId": 389,
+    "name": 1440591616
+  },
+  "3002": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101001
+      ],
+      [
+        15101201
+      ],
+      [
+        15101301
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "volume": 20,
+    "editorDisplayPriority": 997,
+    "editorName": "野外隐匿点",
+    "unlockSound": "GrabEgg_Props_Mound",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 3,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_KeyItem_Nature02",
+    "model": "$P_Item_Props_Mound_001_Mix.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 2006045257
+  },
+  "2011": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101108
+      ],
+      [
+        15101108
+      ],
+      [
+        15101108
+      ],
+      [
+        15101008
+      ],
+      [
+        15101208
+      ],
+      [
+        15101308
+      ]
+    ],
+    "rewardGroup2": [
+      [
+        15101108
+      ],
+      [
+        15101108
+      ],
+      [
+        15101108
+      ],
+      [
+        15101008
+      ],
+      [
+        15101208
+      ],
+      [
+        15101314
+      ]
+    ],
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "markConfigId": 1013,
+    "isDestroy": 0,
+    "editorName": "金色石棺",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "unlockSound": "GrabEgg_Props_Sarcophagus_001",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "quality": 5,
+    "SightLevel": 2,
+    "editorDisplayPriority": 998,
+    "model": "$P_Item_SceneObject_Chest_LootBox_01.prefab",
+    "nonKinematic": 1,
+    "actionPrototypeId": 389,
+    "name": 2028430476
+  },
+  "1001": {
+    "openingTime": 0.9,
+    "destroySound": "SFX_SceneObject_BrokenJar_Medium",
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 5,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101004
+      ],
+      [
+        15101204
+      ],
+      [
+        15101204
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "destroyEffect": "Eff_VAT_KeyItem_Pot_001_B_Broke",
+    "editorDisplayPriority": 999,
+    "editorName": "华丽陶土罐子",
+    "volume": 20,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 3,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_Jar02",
+    "model": "$P_Item_SceneObject_Chest_Pot_001_B.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 2000431750
+  },
+  "3003": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101302
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "volume": 20,
+    "editorDisplayPriority": 997,
+    "editorName": "空树桩",
+    "unlockSound": "GrabEgg_Props_Stump",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 3,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_Nature03",
+    "model": "$P_Item_Props_Stump_001_Mix.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 1542605950
+  },
+  "3001": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 1,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101101
+      ],
+      [
+        15101001
+      ],
+      [
+        15101201
+      ],
+      [
+        15101301
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "lootDelayTime": 0.5,
+    "volume": 20,
+    "editorDisplayPriority": 997,
+    "editorName": "杂物堆",
+    "unlockSound": "GrabEgg_Props_Debris",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 0.8,
+    "responseTime": 0,
+    "quality": 3,
+    "actionPrototypeId": 389,
+    "SightLevel": 2,
+    "effect": "Eff_GrabEgg_Cont_KeyItem_Nature01",
+    "model": "$P_Item_Props_Debris_001_Mix.prefab",
+    "nonKinematic": 1,
+    "isDestroy": 0,
+    "name": 1377235534
+  },
+  "12": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": 1,
+    "lootboxType": 4,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        5002004
+      ],
+      [
+        5002004
+      ],
+      [
+        5002004
+      ],
+      [
+        5002004
+      ],
+      [
+        5002004
+      ],
+      [
+        5002004
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "markConfigId": 1014,
+    "editorDisplayPriority": 1000,
+    "editorName": "PVP专用蛋巢",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "destroyEffect": "Eff_Env_Avatar_GrabEgg_SBreakNest",
+    "actionPrototypeId": 10010,
+    "SightLevel": 2,
+    "model": "$P_Item_Props_EggNest.prefab",
+    "quality": 5,
+    "isDestroy": 0,
+    "name": 1398848814
+  },
+  "11": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": 1,
+    "lootboxType": 4,
+    "performRecorderPresetName": "Archive_2",
+    "rewardGroup": [
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101102
+      ],
+      [
+        15101002
+      ],
+      [
+        15101202
+      ],
+      [
+        15101202
+      ]
+    ],
+    "rewardGroup2": [
+      {},
+      {},
+      {},
+      [
+        15101010
+      ],
+      [
+        15101211
+      ],
+      [
+        15101211
+      ]
+    ],
+    "summon": {},
+    "markConfigId": 1014,
+    "editorDisplayPriority": 1000,
+    "editorName": "小土堆-不掉蛋",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "destroyEffect": "Eff_Env_Avatar_GrabEgg_SBreakNest",
+    "actionPrototypeId": 10010,
+    "SightLevel": 2,
+    "model": "$P_Item_Props_EggNest.prefab",
+    "quality": 5,
+    "isDestroy": 0,
+    "name": 1635356860
+  },
+  "100001": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": [
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101104
+      ],
+      [
+        15101004
+      ],
+      [
+        15101204
+      ],
+      [
+        15101304
+      ]
+    ],
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "氛围怪掉落【别用】",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 3,
+    "name": 1760009273,
+    "actionPrototypeId": 389
+  },
+  "100000": {
+    "openingTime": 0.9,
+    "destroyTime": 0,
+    "interactCount": -1,
+    "lootboxType": 2,
+    "rewardGroup": {},
+    "rewardGroup2": {},
+    "summon": {},
+    "isDestroy": 0,
+    "editorName": "无主的箱子",
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "volume": 20,
+    "responseTime": 0,
+    "topLogoHeight": 0.8,
+    "editorDisplayPriority": 2,
+    "SightLevel": 2,
+    "nonKinematic": 1,
+    "model": "$P_Item_GrabEgg_Relic_11.prefab",
+    "quality": 0,
+    "name": 1997888628,
+    "actionPrototypeId": 389
+  }
+}

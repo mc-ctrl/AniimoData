@@ -1,0 +1,88 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2040005",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    4
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "78ad7846-eed1-48f3-87f3-c64a47186f0a",
+      "name": "buffStopThink",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 20400050,
+      "NodeID": 4,
+      "UID": "1aa2afda-de9f-42a0-b736-4ca9a9271fb2",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "9": {
+      "unsummonValid": false,
+      "actionIds": [
+        13,
+        7
+      ],
+      "name": "registerGroupEvent",
+      "UID": "f19c890e-5694-43e1-800c-73dc4cd3f03d",
+      "NodeID": 9
+    },
+    "13": {
+      "UID": "1f763d86-1ed0-44f9-b9f2-ef62d6300acd",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "10": {
+      "buffId": 20400050,
+      "name": "removeBuff",
+      "UID": "6375160f-52cc-4ba2-b130-32a184a15924",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "calcId": 2040005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 11,
+      "UID": "2af69c25-0d51-4c95-b9c4-96fabd4ce337",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "actionIds": [
+        5,
+        10
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "248b6465-400e-4313-8ce1-e1f137c3c1c1",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "12": {
+      "delay": 0,
+      "interval": {
+        "calcId": 2040005,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 11,
+        "UID": "2af69c25-0d51-4c95-b9c4-96fabd4ce337",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "f5304142-1083-447c-b624-9a25d5979a89",
+      "name": "buffStartThink",
+      "NodeID": 12
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9
+  ]
+}

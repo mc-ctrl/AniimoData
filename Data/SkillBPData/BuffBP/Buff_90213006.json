@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_90213006",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cb73e35e-a2af-4b2e-868a-9db48a34ce99",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Waterwave",
+      "speed": 1,
+      "NodeID": 3
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

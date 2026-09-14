@@ -1,0 +1,89 @@
+{
+  "300001": {
+    "5": {
+      "collectNum": 46,
+      "reward": 22105
+    },
+    "6": {
+      "collectNum": 56,
+      "reward": 22106
+    },
+    "7": {
+      "collectNum": 65,
+      "reward": 22107
+    },
+    "8": {
+      "collectNum": 74,
+      "reward": 22108
+    },
+    "9": {
+      "collectNum": 84,
+      "reward": 22109
+    },
+    "11": {
+      "collectNum": 102,
+      "reward": 22111
+    },
+    "1": {
+      "collectNum": 9,
+      "reward": 22101
+    },
+    "12": {
+      "collectNum": 112,
+      "reward": 22112
+    },
+    "3": {
+      "collectNum": 28,
+      "reward": 22103
+    },
+    "4": {
+      "collectNum": 37,
+      "reward": 22104
+    },
+    "14": {
+      "collectNum": 130,
+      "reward": 22114
+    },
+    "10": {
+      "collectNum": 93,
+      "reward": 22110
+    },
+    "15": {
+      "collectNum": 140,
+      "reward": 22115
+    },
+    "16": {
+      "collectNum": 149,
+      "reward": 22116
+    },
+    "21": {
+      "collectNum": 195,
+      "reward": 22121
+    },
+    "17": {
+      "collectNum": 158,
+      "reward": 22117
+    },
+    "20": {
+      "collectNum": 186,
+      "reward": 22120
+    },
+    "18": {
+      "collectNum": 168,
+      "reward": 22118
+    },
+    "2": {
+      "collectNum": 18,
+      "reward": 22102
+    },
+    "19": {
+      "collectNum": 177,
+      "reward": 22119
+    },
+    "0": {},
+    "13": {
+      "collectNum": 121,
+      "reward": 22113
+    }
+  }
+}

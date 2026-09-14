@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_10250000",
+  "NodeID": 1,
+  "UID": "b97e9b2b-f26d-4f74-a821-bb9706e0499e",
+  "abilityParamId": 11800000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10250000001,
+      "name": "setCombatActionTimeline",
+      "UID": "10dfd149-d96d-4f7a-a9a4-9c0bba07ae63",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10025_Skill_Attack01"
+  ],
+  "searchRelation": 2,
+  "name": "火近战普攻",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    10250001,
+    10250002,
+    10250005,
+    10250003
+  ],
+  "onlyHasActOnTargets": true,
+  "switchSkillByState": {
+    "FLYRISE": 10250005,
+    "FLYHOVER": 10250005,
+    "FLYMOVE": 10250005,
+    "FLYING": 10250005
+  },
+  "searchTargetRangeDown": 0.5
+}

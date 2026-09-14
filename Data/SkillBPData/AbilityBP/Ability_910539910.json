@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_910539910",
+  "NodeID": 1,
+  "UID": "71eeed9b-f8e3-4347-acf3-a6c901c58bca",
+  "desc": "起跳后连续七次空翔踢,最后砸拳收尾",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 910539910001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2fc7fe5-f2ed-49ff-84a8-30877442f08d",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Moon"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10053_Skill_Moon_Daoguang_01",
+    "Eff_Parmon_10053_Skill_Moon_Trail",
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10053_Skill_Moon_Prepare",
+    "Eff_Parmon_10053_Skill_Moon_Release",
+    "Eff_Parmon_10053_Skill_Moon_Daoguang_02"
+  ],
+  "searchRelation": 2,
+  "name": "无限炼狱",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火狼头目大招",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1.5,
+  "abilityParamId": 10500123
+}

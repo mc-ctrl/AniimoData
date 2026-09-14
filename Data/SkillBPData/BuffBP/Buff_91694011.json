@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91694011",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "1fdc1623-1ab9-4119-a0ef-a34a03bfebaf",
+      "tag": 10,
+      "name": "isEventBuffHasTag",
+      "NodeID": 5
+    },
+    "6": {
+      "actionIds": [
+        11,
+        16
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "b2852994-18ba-493e-96f1-bb69ba4e0cac",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "calcId": 91694011,
+      "calcType": 1,
+      "paramName": "param",
+      "NodeID": 10,
+      "UID": "c87cb9b6-8180-4f98-9ea3-8e4d0f93c657",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "value": {
+        "calcId": 91694011,
+        "calcType": 1,
+        "paramName": "param",
+        "NodeID": 10,
+        "UID": "c87cb9b6-8180-4f98-9ea3-8e4d0f93c657",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "65c67134-c581-4e3d-a28f-e5d7a9f80e34",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "UID": "cf943567-1e5b-47c0-b5e3-7212083c4581",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2069401,
+      "NodeID": 16,
+      "UID": "04e33d40-1dc3-4c8f-bdf0-f809969cad60",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

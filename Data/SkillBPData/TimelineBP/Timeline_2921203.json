@@ -1,0 +1,37 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "16": {
+      "UID": "a4e134eb-d766-4052-b885-8594235e2704",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "14": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "speed": 1,
+      "NodeID": 14,
+      "UID": "b4353353-a31a-448a-adc8-a654ec2a2c0f",
+      "effectId": "Eff_Parmon_10212_Skill_Fountain",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    }
+  },
+  "BPName": "timeline_2921203",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    16
+  ],
+  "layer": "Base",
+  "length": 11
+}

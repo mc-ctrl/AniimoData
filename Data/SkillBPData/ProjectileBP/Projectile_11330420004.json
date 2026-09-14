@@ -1,0 +1,126 @@
+{
+  "duration": 8,
+  "calcResultNodeId": 75,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10133_Skill_Throw_Ice",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 0,
+  "onProjectileStartIds": [
+    92
+  ],
+  "onProjectileTickIds": [
+    77
+  ],
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    102,
+    114
+  ],
+  "destroyOnHit": false,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.2,
+  "sweepShape": 0,
+  "relation": 2,
+  "tickInterval": 0.3,
+  "nodeMap": {
+    "77": {
+      "calcResultNodeId": 75,
+      "name": "actOnTargets",
+      "UID": "0f8fd314-bd9e-4721-9d48-f2260f2dad23",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "4",
+      "hitBoxMaxHitCnt": 30,
+      "needEcs": true,
+      "actionIds": [
+        75
+      ],
+      "impulseId": 1000,
+      "NodeID": 77
+    },
+    "102": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "788a914a-5c00-45f0-bef9-d9590c8637b7",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10133_skill_throw_ice_loop",
+      "NodeID": 102
+    },
+    "75": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.02
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 1000
+      },
+      "UID": "08b5f63b-3804-4b22-b71b-ccdc3e9ea921",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 75
+    },
+    "114": {
+      "name": "stopSoundStr",
+      "UID": "06cbfb8c-7e1e-412b-bf74-09b0f551638c",
+      "soundId": "parmon_10133_skill_throw_ice_loop",
+      "target": "OWNER",
+      "NodeID": 114
+    },
+    "92": {
+      "key": "darts",
+      "name": "setAbilityCacheVal",
+      "UID": "9ffce806-e7f4-4a1a-91f9-9cbf56b88900",
+      "value": {
+        "UID": "26304a6a-7990-493d-8386-9e1d0009ba71",
+        "name": "getProjectileInstanceId",
+        "NodeID": 91
+      },
+      "NodeID": 92
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_11330420",
+  "NodeID": 0,
+  "impulseId": 1000,
+  "acceleration": 0
+}

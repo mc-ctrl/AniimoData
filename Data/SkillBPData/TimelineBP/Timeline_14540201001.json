@@ -1,0 +1,1111 @@
+{
+  "nodeMap": {
+    "52": {
+      "timelineId": 14540201002,
+      "name": "jumpToNextTimeline",
+      "UID": "181c287b-d24c-44d8-80f1-e91afd65f460",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "113": {
+      "calcResultNodeId": 116,
+      "name": "actOnTargets",
+      "UID": "d7adaedb-fd4c-4e25-8485-c97dcd79ef4a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.5
+          ],
+          "shapeArgs": [
+            5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "",
+      "needEcs": true,
+      "actionIds": [
+        116
+      ],
+      "impulseId": 2000,
+      "NodeID": 113
+    },
+    "168": {
+      "name": "checkInControl",
+      "NodeID": 168
+    },
+    "54": {
+      "UID": "c25c1688-2d10-4b54-80e9-369d66128684",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          97,
+          89,
+          81,
+          155,
+          154,
+          90,
+          102,
+          52
+        ]
+      },
+      "NodeID": 54
+    },
+    "170": {
+      "NodeID": 170,
+      "from": 14540201,
+      "to": 14540204,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 14,
+      "recoverOnExit": true,
+      "name": "switchSkill",
+      "UID": "c0f2679e-a401-4322-88a0-b8f69e5e006e",
+      "notShowCountDown": false
+    },
+    "172": {
+      "UID": "29e68aad-a26b-4c1f-b291-d474881891ae",
+      "abilityIds": [
+        14540204
+      ],
+      "name": "registerAbilityBackswingForAbilityIds",
+      "NodeID": 172
+    },
+    "130": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "e574ff10-bd42-476e-bc56-c5856a018499",
+      "NodeID": 130,
+      "lValue": {
+        "key": "10187Times",
+        "name": "getCacheVal",
+        "UID": "7e2263bf-bcea-40cb-82bc-a73484389866",
+        "target": "OWNER",
+        "NodeID": 129
+      }
+    },
+    "174": {
+      "calcInfo": {
+        "tp_temp_max": 999,
+        "tp_temp_cur": 999
+      },
+      "name": "addDynamicAttribute",
+      "UID": "381a343f-7a60-4a00-9730-7417cecf4a8f",
+      "target": "OWNER",
+      "NodeID": 174
+    },
+    "118": {
+      "keepTime": 0.1,
+      "target": "OWNER",
+      "outTime": 0.1,
+      "NodeID": 118,
+      "UID": "fe75e7f9-36bb-4a08-96c5-ee39abc1d618",
+      "inTime": 0,
+      "name": "globalFreeze",
+      "freezeScale": 0.8
+    },
+    "120": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "70497528-9652-4b86-8444-8492937d230c",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Down_02",
+      "speed": 1,
+      "NodeID": 120
+    },
+    "121": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "732427cc-b41b-4fa6-bbf5-31e64c2b0498",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move",
+      "speed": 1,
+      "NodeID": 121
+    },
+    "141": {
+      "pos": {
+        "UID": "f8533629-7bfe-4bcf-a567-dd304720f577",
+        "name": "getSkillMoveBlockedHitPos",
+        "NodeID": 140
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0cf91b65-7a3b-475f-83c2-5a242d2fa5fd",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_Hit",
+      "speed": 1,
+      "NodeID": 141
+    },
+    "123": {
+      "action": {
+        "actionIds": [
+          121,
+          143
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.34,
+      "NodeID": 123,
+      "UID": "40da7e72-d427-4328-9529-a5f19a4d94e2"
+    },
+    "125": {
+      "name": "stopEffectStr",
+      "UID": "3a5b45fa-4e90-420e-9455-516420bae6fd",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move",
+      "target": "OWNER",
+      "NodeID": 125
+    },
+    "127": {
+      "UID": "cf3b1ae8-fb17-4040-9706-ec6ded3a2baa",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          125,
+          139,
+          144,
+          145
+        ]
+      },
+      "NodeID": 127
+    },
+    "128": {
+      "key": "10187Times",
+      "name": "setCacheVal",
+      "UID": "35daa014-b99e-4990-bfe2-79166d40831f",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 128
+    },
+    "131": {
+      "key": "10187Times",
+      "name": "setCacheVal",
+      "UID": "a8a62c10-b905-4367-adc5-7a3e4ed0088f",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 131
+    },
+    "132": {
+      "key": "SkillCD",
+      "duration": 0.25,
+      "actionIds": [
+        131
+      ],
+      "NodeID": 132,
+      "UID": "880d8e00-a576-4256-b145-069145dc8273",
+      "name": "addTimer"
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ad8d9c89-7125-4ba3-a836-829360eb0cb6",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_Dramotter_skill_roll_jump",
+      "NodeID": 31
+    },
+    "133": {
+      "key": "10187Times",
+      "name": "setCacheVal",
+      "UID": "447dca5c-8605-4a16-9527-791bda2fadc6",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 133
+    },
+    "134": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f2958c3a-cbdd-4c32-8e83-011f27680c98",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Down_Snow_GatherLoop",
+      "speed": 1,
+      "NodeID": 134
+    },
+    "11": {
+      "UID": "17e867d7-c264-42a6-8e43-6b122afed8dc",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "name": "calcResult",
+      "NodeID": 20,
+      "calcInfoByLuaConfig": {
+        "id": 14540201,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "d32f5243-9bc5-41b5-b95b-10c56693cb80",
+      "target": "TARGET",
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 5004
+      }
+    },
+    "152": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "241f313d-19ce-444c-8dc9-6d8a35527a94",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RollingBall_Snow_JumpSeismicWave",
+      "NodeID": 152
+    },
+    "22": {
+      "calcResultNodeId": 20,
+      "name": "actOnTargets",
+      "UID": "a811c09e-d58c-4c26-9fdc-11652f7d9746",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.2,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "needEcs": true,
+      "actionIds": [
+        20
+      ],
+      "impulseId": 5004,
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "268fe13f-6626-41bd-9a50-ec13bd5be0fd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          128,
+          174,
+          172
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "moveAnimId": "Skill_RollingBall_Loop",
+      "NodeID": 24,
+      "UID": "5fcf6cc9-110d-48d5-9710-cc9ef6f9e20c",
+      "fallLoopAnimId": "Skill_RollingBall_Loop",
+      "name": "enableSkillMotionAnimState",
+      "jumpCd": 5,
+      "fallToGroundAnimId": "FallToGroundLToSprint",
+      "fallToGroundEnterActionIds": [
+        22,
+        29
+      ],
+      "fallToGroundExitActionIds": [
+        27,
+        147
+      ],
+      "abilityEndExit": true,
+      "jumpEnterActionIds": [
+        31,
+        134,
+        137,
+        146,
+        152
+      ],
+      "enable": true,
+      "jumpAnimId": "Skill_RollingBall_Jump"
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9ab8f51a-5d14-49f6-ac87-4bc4ff7de015",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_Down_01",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "56": {
+      "target": "MASTER",
+      "actionIds": [
+        55
+      ],
+      "attributeName": "stamina_cur",
+      "UID": "125b60d2-4679-4419-9f8a-726c15a43837",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 56
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.42,
+      "NodeID": 15,
+      "UID": "0a488e3b-c52a-45a0-8c61-362dcc98f188"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.25,
+      "NodeID": 26,
+      "UID": "ce264bf9-ed46-4c42-9432-84b3c4477a49"
+    },
+    "27": {
+      "UID": "dab315c3-cef5-4b3f-8d2d-2dc02b02391f",
+      "name": "clearHitBox",
+      "hitBoxId": "2",
+      "NodeID": 27
+    },
+    "156": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5c895160-1f7d-4ae3-b3fc-582348a55ab4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RollingBall_Snow_Loop",
+      "NodeID": 156
+    },
+    "29": {
+      "scale": 1.2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "de33bbc2-e2c5-4aa0-8766-39f2856af193",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_Down_03",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "30": {
+      "duration": 15.5,
+      "name": "playFovCameraAnim",
+      "UID": "00f59ffb-bca8-41be-af85-244559751b83",
+      "blendInTime": 0.35,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CommonFOV_Far",
+      "target": "CASTER",
+      "blendOutTime": 0.3,
+      "NodeID": 30
+    },
+    "60": {
+      "key": "pet2",
+      "actionIds": [
+        59
+      ],
+      "NodeID": 60,
+      "UID": "5eb80f3b-2b7a-48bb-8ea7-c022988786c2",
+      "cd": 3,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "158": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "30fd7a53-8df1-4fb3-b3b2-3c51e3995239",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RollingBall_Snow_ReboundSeismicWave",
+      "NodeID": 158
+    },
+    "61": {
+      "actionIds": [
+        165
+      ],
+      "conditionActionIds": [
+        164
+      ],
+      "UID": "434a197b-9f38-47d6-9d45-f75539fda27e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        60
+      ],
+      "NodeID": 61
+    },
+    "159": {
+      "petTarget": "OWNER",
+      "triggerId": 1045402,
+      "name": "onEntityTrigger",
+      "UID": "3a2034dd-6ca6-43eb-ac0f-b21770eebdf1",
+      "target": "OWNER",
+      "NodeID": 159
+    },
+    "62": {
+      "conditionActionIds": [
+        168
+      ],
+      "UID": "86d6b831-cf2c-4b9a-bc40-26290aea5cec",
+      "name": "doActionsByConditions",
+      "NodeID": 62,
+      "elseActionIds": [
+        61
+      ]
+    },
+    "38": {
+      "name": "calcResult",
+      "NodeID": 38,
+      "calcInfoByLuaConfig": {
+        "id": 14540201,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "82d19f95-6bfa-4b60-a77e-a75990e27e8d",
+      "target": "TARGET",
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 5004
+      }
+    },
+    "39": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        91
+      ],
+      "UID": "96853dcf-b85e-4d92-bf48-6e7dda282cde",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        95
+      ],
+      "NodeID": 39
+    },
+    "63": {
+      "actionIds": [
+        62
+      ],
+      "conditionActionIds": [
+        161
+      ],
+      "UID": "88808032-ba10-4689-a409-aff728fccdb1",
+      "name": "doActionsByConditions",
+      "NodeID": 63
+    },
+    "41": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 95,
+      "NodeID": 41,
+      "UID": "0543e9cc-8ee5-4a28-a020-0ac5b8c05ec0",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.5
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5004,
+      "actionIds": [
+        39,
+        159
+      ]
+    },
+    "64": {
+      "eventType": "NotifyState",
+      "endTime": 15,
+      "NodeID": 64,
+      "onExit": {
+        "actionIds": [
+          97,
+          89,
+          81,
+          155,
+          154,
+          90,
+          102,
+          52
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          63
+        ]
+      },
+      "startTime": 0.33,
+      "tickInterval": 0.57,
+      "onEnter": {
+        "actionIds": [
+          63
+        ]
+      },
+      "UID": "bb447e8a-7e22-436e-b6aa-c2b17a2b06f7"
+    },
+    "43": {
+      "duration": 14.25,
+      "actionIds": [
+        41
+      ],
+      "NodeID": 43,
+      "angleVelocity": 200,
+      "enableScrollCamera": false,
+      "hitTriggerCD": 1,
+      "hitTriggerSelfActionCD": 0,
+      "refCameraDir": true,
+      "velocity": 0.2,
+      "radius": 1,
+      "name": "scrollWithInput",
+      "UID": "57b3a17a-5faf-4c02-a723-471e9f63ccf3"
+    },
+    "84": {
+      "actionIds": [
+        82,
+        86
+      ],
+      "conditionActionIds": [
+        87
+      ],
+      "UID": "5457a49b-524a-44e3-8bb9-54fc510caa36",
+      "name": "doActionsByConditions",
+      "NodeID": 84
+    },
+    "85": {
+      "action": {
+        "actionIds": [
+          84
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 85,
+      "UID": "bbe6a3cd-0279-4a75-8667-6e5c762e0049"
+    },
+    "86": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1d750dcf-d5b6-4721-8ce6-0a33edb8bf45",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 86
+    },
+    "87": {
+      "name": "isActorType",
+      "UID": "c88c95cd-2e62-4ba3-bae7-6a8f3bc030dd",
+      "target": "OWNER",
+      "NodeID": 87,
+      "actorType": 3
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3d79101b-ccbd-4c5c-bedb-b193ea064699",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Skill_RollingBall_Start"
+    },
+    "89": {
+      "name": "dropEffectStr",
+      "UID": "539bfc92-4056-45e0-985f-2a74195efdbe",
+      "effectId": "Eff_Parmon_10174_Skill_Roll",
+      "target": "OWNER",
+      "NodeID": 89
+    },
+    "101": {
+      "UID": "659fe081-7502-4794-8e48-ea56abad77a5",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 101
+    },
+    "90": {
+      "buffId": 10012,
+      "name": "removeBuff",
+      "UID": "afbb4775-a74f-418f-aa9c-e9e6c7dc36f3",
+      "target": "CASTER",
+      "NodeID": 90
+    },
+    "91": {
+      "UID": "830c2463-e868-49db-9032-cc2f4bcbddaf",
+      "target": "OWNER",
+      "name": "hasShield",
+      "NodeID": 91
+    },
+    "167": {
+      "name": "isActorType",
+      "UID": "bc565f3a-7d67-4691-bfbf-57ba43de5377",
+      "target": "OWNER",
+      "NodeID": 167,
+      "actorType": 2
+    },
+    "165": {
+      "time": 2,
+      "rotateSpeed": 100,
+      "name": "rotateTo",
+      "UID": "8723c30e-c2b0-4ba8-b503-2328af9f3efb",
+      "referenceOffsetRotY": 0,
+      "target": {
+        "relation": 2,
+        "heightDown": 2,
+        "heightUp": 3,
+        "UID": "ff437790-4457-4dbb-9f4a-ae2264fa9be8",
+        "radius": 10,
+        "name": "searchEntity",
+        "NodeID": 163
+      },
+      "NodeID": 165
+    },
+    "137": {
+      "key": "delayCD",
+      "duration": 5,
+      "actionIds": [
+        135,
+        138
+      ],
+      "NodeID": 137,
+      "UID": "a22a3fa9-2856-46db-98fe-31de339a5d31",
+      "name": "addEntityTimer"
+    },
+    "116": {
+      "name": "calcResult",
+      "NodeID": 116,
+      "calcInfoByLuaConfig": {
+        "id": 14540201,
+        "instant_dmg_rate_v": "param2",
+        "type": 2
+      },
+      "UID": "e0e5c2b3-91b6-426d-bfc3-2d16c552bbbf",
+      "target": "TARGET",
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000
+      }
+    },
+    "163": {
+      "relation": 2,
+      "heightDown": 2,
+      "heightUp": 3,
+      "UID": "ff437790-4457-4dbb-9f4a-ae2264fa9be8",
+      "radius": 10,
+      "name": "searchEntity",
+      "NodeID": 163
+    },
+    "138": {
+      "UID": "7ce3b53c-546c-46cb-ab3e-a409bdcf8f97",
+      "value": "wotiaoyueCDhaole",
+      "name": "print",
+      "NodeID": 138
+    },
+    "95": {
+      "name": "calcResult",
+      "NodeID": 95,
+      "calcInfoByLuaConfig": {
+        "id": 14540201,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "9a1de477-88cf-47e6-9691-6020f8155a0b",
+      "target": "TARGET",
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 5004
+      }
+    },
+    "139": {
+      "UID": "31a73499-9400-4761-8318-964416fb9b8a",
+      "name": "removeEntityTimer",
+      "key": "delayCD",
+      "NodeID": 139
+    },
+    "96": {
+      "target": "OWNER",
+      "duration": 14.25,
+      "buffId": 2117406,
+      "NodeID": 96,
+      "UID": "9fd7b711-aee3-4393-94bc-e9534d951c1e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "140": {
+      "UID": "f8533629-7bfe-4bcf-a567-dd304720f577",
+      "name": "getSkillMoveBlockedHitPos",
+      "NodeID": 140
+    },
+    "97": {
+      "buffId": 2117406,
+      "name": "removeBuff",
+      "UID": "b270ce6c-0b8c-49c3-b2a3-e367273a887a",
+      "target": "OWNER",
+      "NodeID": 97
+    },
+    "161": {
+      "UID": "e5abd339-4a28-4151-a720-4d09f0ab535a",
+      "conditionIds": [
+        160,
+        167
+      ],
+      "name": "conditionOr",
+      "NodeID": 161
+    },
+    "98": {
+      "UID": "67e377f2-8f01-4f6f-8e70-f4fb0499ce3e",
+      "reflectTurnTime": 0,
+      "name": "reflectOnSkillMoveBlocked",
+      "NodeID": 98
+    },
+    "81": {
+      "UID": "cab0b30d-661f-42ec-a662-baa70d3b391a",
+      "target": "CASTER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 81
+    },
+    "157": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1716eaa4-0538-4207-ab97-49bd44c07454",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RollingBall_Snow_Rebound",
+      "NodeID": 157
+    },
+    "143": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 143,
+      "UID": "2e870903-948c-4c5e-a286-1aaa5dfa81e2",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move_02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "100": {
+      "actionIds": [
+        98,
+        157,
+        110
+      ],
+      "name": "registerSkillMoveBlocked",
+      "UID": "a4f9eff5-3ff9-4542-a966-79ab52626f17",
+      "target": "OWNER",
+      "NodeID": 100
+    },
+    "144": {
+      "name": "stopEffectStr",
+      "UID": "93058f21-0a30-44ad-bc6c-3edf0d6db034",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Down_Snow_GatherLoop",
+      "target": "OWNER",
+      "NodeID": 144
+    },
+    "155": {
+      "name": "stopSoundStr",
+      "UID": "b888a681-d65b-451e-a3e8-f67cb672aff8",
+      "soundId": "SFX_Combat_10454_Skill_RollingBall_Snow_Loop",
+      "target": "OWNER",
+      "NodeID": 155
+    },
+    "102": {
+      "UID": "0c2ead61-5269-442f-9cc2-b038c1996140",
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 102
+    },
+    "154": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "43286197-5bff-4f44-b625-607b54221e43",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RollingBall_Snow_End",
+      "NodeID": 154
+    },
+    "146": {
+      "name": "stopEffectStr",
+      "UID": "633128a2-8085-430c-b113-e9b66c5727e7",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move_02",
+      "target": "OWNER",
+      "NodeID": 146
+    },
+    "153": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b121a6ee-66ed-4f6f-928d-e850c2cefaa8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RollingBall_Snow_Start",
+      "NodeID": 153
+    },
+    "147": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 147,
+      "UID": "ca88c675-42f8-49d1-b454-c7beb71ca3f1",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move_02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "145": {
+      "name": "stopEffectStr",
+      "UID": "f5a08f58-a38e-4e76-b35b-7d66250d4566",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move_02",
+      "target": "OWNER",
+      "NodeID": 145
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          96,
+          43,
+          100,
+          101,
+          170,
+          156
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.25,
+      "NodeID": 45,
+      "UID": "ed41bbc7-199f-433b-9867-fa141e34ce88"
+    },
+    "135": {
+      "name": "stopEffectStr",
+      "UID": "e7a469a8-d936-4188-9dfb-49c379bc6f43",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Down_Snow_GatherLoop",
+      "target": "OWNER",
+      "NodeID": 135
+    },
+    "106": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "cf8b648a-59df-4f92-86ac-c2294290204c",
+        "target": "MASTER",
+        "NodeID": 105,
+        "attributeName": "stamina_cur"
+      },
+      "name": "greater",
+      "UID": "44568373-ea8b-4c30-bf2a-bf3a35629cb5",
+      "NodeID": 106,
+      "lValue": 2
+    },
+    "82": {
+      "duration": 0.8,
+      "name": "frameFreeze",
+      "UID": "ecca6d7e-0019-494d-a289-3b97c1ae2e73",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 82
+    },
+    "107": {
+      "UID": "9c4a219e-e6e5-4092-8132-ce39ba81ffb4",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 107
+    },
+    "59": {
+      "key": "pet2",
+      "duration": 2.3,
+      "actionIds": [
+        97,
+        89,
+        81,
+        155,
+        154,
+        90,
+        102,
+        52
+      ],
+      "NodeID": 59,
+      "UID": "2c99a0fa-839f-4840-98e2-58236309ba31",
+      "name": "addTimer"
+    },
+    "108": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "53750623-c222-43b5-811e-abaa76c4a8aa",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_Diffuse",
+      "speed": 1,
+      "NodeID": 108
+    },
+    "55": {
+      "actionIds": [
+        97,
+        89,
+        81,
+        155,
+        154,
+        90,
+        102,
+        52
+      ],
+      "conditionActionIds": [
+        106
+      ],
+      "UID": "061cc629-0ec4-4e67-8672-45ea2eaeba25",
+      "name": "doActionsByConditions",
+      "NodeID": 55
+    },
+    "58": {
+      "actionIds": [
+        56
+      ],
+      "conditionActionIds": [
+        107
+      ],
+      "UID": "9ff0d3ad-410a-4b59-860d-844794c50e56",
+      "name": "doActionsByConditions",
+      "NodeID": 58
+    },
+    "160": {
+      "name": "isActorType",
+      "UID": "3547f8ad-5d28-496e-b54e-e974c9c512c0",
+      "target": "OWNER",
+      "NodeID": 160,
+      "actorType": 3
+    },
+    "110": {
+      "actionIds": [
+        133,
+        132,
+        108,
+        111,
+        113,
+        118,
+        158,
+        141
+      ],
+      "conditionActionIds": [
+        130
+      ],
+      "UID": "db28a18c-8da2-4bff-bb15-3067b783d2b0",
+      "name": "doActionsByConditions",
+      "NodeID": 110
+    },
+    "5": {
+      "UID": "5442265e-a155-4bc2-ae40-1bfab10dca1f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          30,
+          58,
+          120,
+          153
+        ]
+      },
+      "NodeID": 5
+    },
+    "111": {
+      "cameraShakeId": 30204,
+      "NodeID": 111,
+      "UID": "bcc59e1a-f106-49eb-b9a3-266526b30cf2",
+      "target": "OWNER",
+      "name": "playCameraImpulseById",
+      "ignoreShakeCD": true
+    },
+    "164": {
+      "UID": "5a878c25-2f8b-491a-9c0d-9e00cf69bae5",
+      "target": {
+        "relation": 2,
+        "heightDown": 2,
+        "heightUp": 3,
+        "UID": "ff437790-4457-4dbb-9f4a-ae2264fa9be8",
+        "radius": 10,
+        "name": "searchEntity",
+        "NodeID": 163
+      },
+      "name": "hasTarget",
+      "NodeID": 164
+    }
+  },
+  "BPName": "ability_14540201",
+  "NodeID": 7,
+  "UID": "f8d925ef-bcfa-4a35-b359-89445eb7b576",
+  "eventIds": [
+    13,
+    15,
+    26,
+    5,
+    54,
+    45,
+    123,
+    127,
+    85,
+    64
+  ],
+  "layer": "Base",
+  "length": 15.5
+}

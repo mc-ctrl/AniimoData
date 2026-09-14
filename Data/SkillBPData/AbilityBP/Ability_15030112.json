@@ -1,0 +1,96 @@
+{
+  "BPName": "ability_15030112",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 12800021,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        46
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "1de5a886-7edd-4c1f-beb6-abc3a2f36484",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "49": {
+      "buffId": 2150303,
+      "name": "hasBuff",
+      "UID": "ea9c716f-8d0c-4488-bf5f-e16442e64176",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "55": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "1b92d5c3-2fe4-45f9-83ce-fd85b0081962",
+      "NodeID": 55,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "b4530070-b980-4dff-b133-13e5f565ffde",
+        "target": "OWNER",
+        "NodeID": 54
+      }
+    },
+    "46": {
+      "timelineId": 15030116001,
+      "name": "setCombatActionTimeline",
+      "UID": "ebd7c7c4-cf0a-43b2-8f1a-df422e41061b",
+      "target": "CASTER",
+      "NodeID": 46
+    },
+    "48": {
+      "UID": "894320ab-2d16-46bd-a380-6e941c03978e",
+      "conditionIds": [
+        47,
+        49,
+        55
+      ],
+      "name": "conditionOr",
+      "NodeID": 48
+    },
+    "47": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "7dbf7546-f61d-4ae8-87b2-0770438cec14",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "7": {
+      "timelineId": 15030112001,
+      "name": "setCombatActionTimeline",
+      "UID": "ef35aacd-fe9e-44a7-97d7-dade7dbf5fb0",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Boss_Skill_CrazyClaw03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Skill_CrazyClaw3_L",
+    "Eff_Hit_Rock_Slash",
+    "Eff_Parmon_10503_Skill_CrazyClaw3_R",
+    "Eff_Parmon_10503_Skill_CrazyClaw3_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

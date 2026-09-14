@@ -1,0 +1,7501 @@
+{
+  "91343993": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91344011,
+    "levelItems": {
+      "91343996": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343996,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343994": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343994,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343995": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343995,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "近套娃1-火",
+    "spawners": [
+      91343998,
+      91344000,
+      91344002,
+      91344008
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343993_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343993,
+    "chunk": 1019875
+  },
+  "75294843": {
+    "owner": "汪玉笠",
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75294860,
+    "levelItems": {
+      "75294845": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75294845,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91026369": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91026369,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75294844": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75294844,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_模板",
+    "spawners": [
+      75294851,
+      75294853,
+      75294855,
+      75294857
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75294843_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "id": 75294843,
+    "enableFinishMark": false
+  },
+  "91343002": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343020,
+    "levelItems": {
+      "91343003": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343003,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343004": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343004,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343005": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343005,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91368666": {
+        "majorCompId": 0,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91368666,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远近套娃3-水",
+    "spawners": [
+      91343007,
+      91343009,
+      91343011,
+      91343017,
+      91351046
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343002_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343002,
+    "chunk": 1019875
+  },
+  "75319027": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75319040,
+    "levelItems": {
+      "75319031": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319031,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274300": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274300,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75319028": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319028,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75319029": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319029,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75319030": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319030,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_投资高手_模板",
+    "spawners": [
+      75319033,
+      75319035,
+      75319037
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75319027_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75319027,
+    "chunk": 1019875
+  },
+  "80298952": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 80298953,
+    "levelItems": {
+      "80298941": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80298941,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80298942": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80298942,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274308": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274308,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80298939": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80298939,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80298940": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80298940,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_装备盲盒",
+    "spawners": [
+      80298947,
+      80298949,
+      80298951
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_80298952_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 80298952,
+    "chunk": 1019875
+  },
+  "91350844": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91350868,
+    "levelItems": {
+      "91350845": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350845,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91350846": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350846,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91350847": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350847,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91350848": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350848,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91350849": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350849,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "新版两波的普通战斗_模板",
+    "spawners": [
+      91350854,
+      91350856,
+      91350861,
+      91350863,
+      91350865
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91350844_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91350844,
+    "chunk": 1019875
+  },
+  "75294861": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "0层",
+    "envobjs": {},
+    "graphId": 75294868,
+    "levelItems": {
+      "75294863": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75294863,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75294862": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75294862,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "0层_模板_水塔",
+    "spawners": [
+      75294865
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75294861_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75294861,
+    "chunk": 1019875
+  },
+  "91343046": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343064,
+    "levelItems": {
+      "91343048": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343048,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343049": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343049,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91368669": {
+        "majorCompId": 0,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91368669,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343047": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343047,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远近套娃3-火",
+    "spawners": [
+      91343051,
+      91343053,
+      91343055,
+      91343061,
+      91351061
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343046_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343046,
+    "chunk": 1019875
+  },
+  "75329017": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75329030,
+    "levelItems": {
+      "75329021": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_6",
+        "position": [
+          -0.66,
+          17.99,
+          -2.57
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75329021,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75329022": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -0.66,
+          17.99,
+          -2.57
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75329022,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75329023": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          -4.41,
+          17.99,
+          -6.51
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75329023,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274303": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274303,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75329018": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75329018,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75329019": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_5",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75329019,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75329020": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75329020,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_暖心包裹",
+    "spawners": [
+      75329025
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75329017_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75329017,
+    "chunk": 1019875
+  },
+  "75295536": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75295557,
+    "levelItems": {
+      "75295539": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75295539,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75295540": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75295540,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91026566": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91026566,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75295537": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75295537,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75295538": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75295538,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "高难战斗_模板",
+    "spawners": [
+      75295545,
+      75295547,
+      75295552,
+      75295554,
+      75296094
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75295536_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75295536,
+    "chunk": 1019875
+  },
+  "80378745": {
+    "owner": "汪玉笠",
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 80378746,
+    "levelItems": {
+      "80378730": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80378730,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80378729": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80378729,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 0,
+    "sandboxType": 2,
+    "name": "事件_莹冰龙_模板",
+    "spawners": [
+      80378734,
+      80378736,
+      80378738,
+      80378744
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_80378745_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "id": 80378745
+  },
+  "91350925": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91350943,
+    "levelItems": {
+      "91350926": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350926,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91350927": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350927,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91350928": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91350928,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "只有一波战斗的高难关",
+    "spawners": [
+      91350934,
+      91350936,
+      91350938,
+      91350940
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91350925_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91350925,
+    "chunk": 1019875
+  },
+  "91343171": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343189,
+    "levelItems": {
+      "91343174": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343174,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343172": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343172,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343173": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343173,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远套娃3-火",
+    "spawners": [
+      91343176,
+      91343178,
+      91343180,
+      91343186
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343171_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343171,
+    "chunk": 1019875
+  },
+  "81979005": {
+    "owner": "汪玉笠",
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 81979006,
+    "levelItems": {
+      "81978989": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 81978989,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "81978990": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 81978990,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_自爆机器人_模板",
+    "spawners": [
+      81978998,
+      81979000,
+      81979002,
+      81979004
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_81979005_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "id": 81979005,
+    "enableFinishMark": false
+  },
+  "75312840": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75312855,
+    "levelItems": {
+      "91027071": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91027071,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75312841": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75312841,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75312842": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75312842,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "中间头目_模板",
+    "spawners": [
+      75312844,
+      75312846,
+      75312848,
+      75312850,
+      75312852
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75312840_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75312840,
+    "chunk": 1019875
+  },
+  "76005423": {
+    "owner": "陈前",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 76005433,
+    "levelItems": {
+      "76005424": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 76005424,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "休息_第5层",
+    "spawners": [
+      76005426,
+      76005428,
+      76005430,
+      80514448
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_76005423_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 76005423,
+    "chunk": 1019875
+  },
+  "91343190": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343208,
+    "levelItems": {
+      "91343191": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343191,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343192": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343192,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343193": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343193,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远套娃3-水",
+    "spawners": [
+      91343195,
+      91343197,
+      91343199,
+      91343205
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343190_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343190,
+    "chunk": 1019875
+  },
+  "85723838": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 85723839,
+    "levelItems": {
+      "85723821": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 85723821,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "85723822": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 85723822,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "85723823": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 85723823,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "85723824": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 85723824,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274312": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274312,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_回路盲盒批发",
+    "spawners": [
+      85723827,
+      85723833,
+      85723835
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_85723838_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 85723838,
+    "chunk": 1019875
+  },
+  "78825701": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 78825702,
+    "levelItems": {
+      "78825685": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 78825685,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "78825686": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 78825686,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 64,
+    "sightLevelType": 64,
+    "spawners": [
+      78825690,
+      78825692,
+      78825694,
+      78825700
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_78825701_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 78825701,
+    "autoEndType": 0,
+    "name": "测试_模板"
+  },
+  "90812620": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "0层",
+    "envobjs": {},
+    "graphId": 90812621,
+    "levelItems": {
+      "90812615": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 90812615,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "90812614": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 90812614,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 64,
+    "sightLevelType": 64,
+    "spawners": [
+      90812619
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_90812620_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90812620,
+    "autoEndType": 0,
+    "name": "0层_低难_草塔"
+  },
+  "75313917": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75313934,
+    "levelItems": {
+      "75313918": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75313918,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75313919": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75313919,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91027078": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91027078,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "最终头目_模板",
+    "spawners": [
+      75313921,
+      75313927,
+      75313929,
+      75313931
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75313917_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75313917,
+    "chunk": 1019875
+  },
+  "91390042": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91390060,
+    "levelItems": {
+      "91390045": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91390045,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91390043": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91390043,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91390044": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91390044,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_模板_草塔",
+    "spawners": [
+      91390051,
+      91390053,
+      91390055,
+      91390057
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91390042_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91390042,
+    "chunk": 1019875
+  },
+  "91343209": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343227,
+    "levelItems": {
+      "91343212": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343212,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343210": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343210,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343211": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343211,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远套娃3-草",
+    "spawners": [
+      91343214,
+      91343216,
+      91343218,
+      91343224
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343209_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343209,
+    "chunk": 1019875
+  },
+  "78927643": {
+    "owner": "汪玉笠",
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 78927644,
+    "levelItems": {
+      "78927632": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 78927632,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "78927631": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 78927631,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "测试_怪海_模板",
+    "spawners": [
+      78927636,
+      78927638,
+      78927640,
+      78927642,
+      78928546,
+      78930412
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_78927643_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "id": 78927643,
+    "enableFinishMark": false
+  },
+  "90812630": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "0层",
+    "envobjs": {},
+    "graphId": 90812631,
+    "levelItems": {
+      "90812624": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 90812624,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "90812625": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 90812625,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 64,
+    "sightLevelType": 64,
+    "spawners": [
+      90812629
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_90812630_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90812630,
+    "autoEndType": 0,
+    "name": "0层_低难_火塔"
+  },
+  "86221083": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 86221084,
+    "levelItems": {
+      "86221070": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86221070,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86221071": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86221071,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86221072": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86221072,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86221073": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86221073,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274313": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_KEKONG",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274313,
+        "configId": 862,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_稳定强化",
+    "spawners": [
+      86221077,
+      86221079,
+      86221082
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_86221083_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 86221083,
+    "chunk": 1019875
+  },
+  "75315080": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75315096,
+    "levelItems": {
+      "75315081": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 75315081,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "75315082": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 75315082,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 64,
+    "sightLevelType": 64,
+    "spawners": [
+      75315087,
+      75315091,
+      75315093,
+      75315118,
+      75315130
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75315080_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 75315080,
+    "autoEndType": 0,
+    "name": "保护莲冠龙_模板"
+  },
+  "91390016": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91390034,
+    "levelItems": {
+      "91390017": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91390017,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91390018": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91390018,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91390019": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91390019,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_模板_火塔",
+    "spawners": [
+      91390025,
+      91390027,
+      91390029,
+      91390031
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91390016_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91390016,
+    "chunk": 1019875
+  },
+  "78977388": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 78977389,
+    "levelItems": {
+      "78977372": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 78977372,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "78977373": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 78977373,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91192112": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91192112,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "测试_分裂_模板",
+    "spawners": [
+      78977377,
+      78977379,
+      78977381,
+      78977387
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_78977388_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 78977388,
+    "chunk": 1019875
+  },
+  "91317117": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91317132,
+    "levelItems": {
+      "91317122": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91317122,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91360144": {
+        "majorCompId": 76595557,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_KEKONG",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91360144,
+        "configId": 862,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91317118": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91317118,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91317119": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91317119,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91317120": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91317120,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_小怪、精英、全打",
+    "spawners": [
+      91317124,
+      91317126,
+      91317129
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91317117_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91317117,
+    "chunk": 1019875
+  },
+  "91389987": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91390005,
+    "levelItems": {
+      "91389990": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91389990,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91389988": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91389988,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91389989": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91389989,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "普通战斗_模板_水塔",
+    "spawners": [
+      91389996,
+      91389998,
+      91390000,
+      91390002
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91389987_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91389987,
+    "chunk": 1019875
+  },
+  "75315143": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75315156,
+    "levelItems": {
+      "75315145": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 75315145,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "75315144": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 75315144,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 64,
+    "sightLevelType": 64,
+    "spawners": [
+      75315149,
+      75315151,
+      75315153,
+      75318403
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75315143_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 75315143,
+    "autoEndType": 0,
+    "name": "埋埋精英_模板"
+  },
+  "91360557": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91360572,
+    "levelItems": {
+      "91360560": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91360560,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91360562": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91360562,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91366445": {
+        "majorCompId": 76595557,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_KEKONG",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91366445,
+        "configId": 862,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91360558": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91360558,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91360559": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91360559,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_意外之财_模板_迁移",
+    "spawners": [
+      91360564,
+      91360566,
+      91360569
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91360557_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91360557,
+    "chunk": 1019875
+  },
+  "86225123": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 86225124,
+    "levelItems": {
+      "86225119": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86225119,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86225120": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86225120,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86225121": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86225121,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86225122": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86225122,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274314": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274314,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_不稳定强化",
+    "spawners": [
+      86225110,
+      86225113,
+      86225115
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_86225123_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 86225123,
+    "chunk": 1019875
+  },
+  "79702940": {
+    "owner": "王明昊",
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 79703004,
+    "levelItems": {
+      "91027230": {
+        "majorCompId": 0,
+        "owner": "",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91027230,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79702942": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 79702942,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79702943": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 79702943,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_塔防_第8层_1_迁移",
+    "spawners": [
+      79702945,
+      79702947,
+      79702949,
+      79702956,
+      79702963,
+      79702971,
+      79702979,
+      79702990,
+      79703001,
+      79716274
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_79702940_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "id": 79702940,
+    "enableFinishMark": false
+  },
+  "80357117": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 80357136,
+    "levelItems": {
+      "80357120": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80357120,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80357121": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80357121,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91360963": {
+        "majorCompId": 76595557,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_KEKONG",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91360963,
+        "configId": 862,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80357118": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80357118,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80357119": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80357119,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_装备批发_模板",
+    "spawners": [
+      80357123,
+      80357125,
+      80357129,
+      80357131,
+      80357133
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_80357117_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 80357117,
+    "chunk": 1019875
+  },
+  "75318433": {
+    "owner": "汪玉笠",
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75318447,
+    "levelItems": {
+      "75318434": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75318434,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75318435": {
+        "majorCompId": 0,
+        "owner": "minghao.wang1",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75318435,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "双晶壳蟹_模板",
+    "spawners": [
+      75318437,
+      75318439,
+      75318442,
+      75318459
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75318433_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "id": 75318433
+  },
+  "91318822": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91318837,
+    "levelItems": {
+      "91318827": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318827,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91333346": {
+        "majorCompId": 76595557,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91333346,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91318823": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318823,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91318824": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318824,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91318825": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318825,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_红色按钮",
+    "spawners": [
+      91318829,
+      91318831,
+      91318834
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91318822_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91318822,
+    "chunk": 1019875
+  },
+  "90812524": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "0层",
+    "envobjs": {},
+    "graphId": 90812525,
+    "levelItems": {
+      "90812518": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 90812518,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "90812519": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 90812519,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 3,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 64,
+    "sightLevelType": 64,
+    "spawners": [
+      90812523
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_90812524_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90812524,
+    "autoEndType": 0,
+    "name": "0层_低难_水塔"
+  },
+  "91343340": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343358,
+    "levelItems": {
+      "91343341": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343341,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343342": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343342,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343343": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343343,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远近套娃1-草",
+    "spawners": [
+      91343345,
+      91343347,
+      91343349,
+      91343355
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343340_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343340,
+    "chunk": 1019875
+  },
+  "79719072": {
+    "owner": "王明昊",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 79719142,
+    "levelItems": {
+      "79719073": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 79719073,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79719074": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 79719074,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79719075": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 79719075,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79719076": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 79719076,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_怪海_第13层_1_迁移",
+    "spawners": [
+      79719083,
+      79719085,
+      79719087,
+      79719097,
+      79719113,
+      79719139,
+      79719239
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_79719072_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 79719072,
+    "chunk": 1019875
+  },
+  "75318973": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75322019,
+    "levelItems": {
+      "91360865": {
+        "majorCompId": 76595557,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91360865,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75318974": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75318974,
+        "configId": 4,
+        "templateId": 0,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_隐藏菜单_模板",
+    "spawners": [
+      75318976,
+      75318978
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75318973_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75318973,
+    "chunk": 1019875
+  },
+  "91343321": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343339,
+    "levelItems": {
+      "91343324": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343324,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343322": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343322,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343323": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343323,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远近套娃1-水",
+    "spawners": [
+      91343326,
+      91343328,
+      91343330,
+      91343336
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343321_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343321,
+    "chunk": 1019875
+  },
+  "91343302": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343320,
+    "levelItems": {
+      "91343303": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343303,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343304": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343304,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343305": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343305,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远近套娃1-火",
+    "spawners": [
+      91343307,
+      91343309,
+      91343311,
+      91343317
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343302_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343302,
+    "chunk": 1019875
+  },
+  "91342889": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91342907,
+    "levelItems": {
+      "91368539": {
+        "majorCompId": 0,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91368539,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91342890": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91342890,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91342891": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91342891,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91342892": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91342892,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "远近套娃3-草",
+    "spawners": [
+      91342894,
+      91342896,
+      91342898,
+      91342904,
+      91350974
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91342889_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91342889,
+    "chunk": 1019875
+  },
+  "91318966": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91318981,
+    "levelItems": {
+      "91318971": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318971,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91333355": {
+        "majorCompId": 76595557,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91333355,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91318967": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318967,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91318968": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318968,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91318969": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91318969,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_判定",
+    "spawners": [
+      91318973,
+      91318975,
+      91318978
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91318966_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91318966,
+    "chunk": 1019875
+  },
+  "91343955": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343973,
+    "levelItems": {
+      "91343958": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343958,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343956": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343956,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343957": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343957,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "近套娃1-草",
+    "spawners": [
+      91343960,
+      91343962,
+      91343964,
+      91343970
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343955_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343955,
+    "chunk": 1019875
+  },
+  "75318982": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75318990,
+    "levelItems": {
+      "91369679": {
+        "majorCompId": 76595557,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_CAIFU",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91369679,
+        "configId": 860,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75318983": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75318983,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_勇往直前_模板",
+    "spawners": [
+      75318985,
+      75318987
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75318982_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75318982,
+    "chunk": 1019875
+  },
+  "88047790": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 88047791,
+    "levelItems": {
+      "88047779": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 88047779,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "88047780": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 88047780,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274316": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274316,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "88047777": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 88047777,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "88047778": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 88047778,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_成长的代价_水草火塔",
+    "spawners": [
+      88047785,
+      88047787,
+      88047789,
+      88079155,
+      88079157
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_88047790_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 88047790,
+    "chunk": 1019875
+  },
+  "86836179": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "0层",
+    "envobjs": {},
+    "graphId": 86836180,
+    "levelItems": {
+      "86836174": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86836174,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86836173": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86836173,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "0层_模板_草塔",
+    "spawners": [
+      86836178
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_86836179_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 86836179,
+    "chunk": 1019875
+  },
+  "87441855": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 87441856,
+    "levelItems": {
+      "87441843": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 87441843,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "87441842": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 87441842,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_幻翼蝶（复苏之风版）",
+    "spawners": [
+      87441847,
+      87441849,
+      87441851,
+      87441854
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_87441855_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 87441855,
+    "chunk": 1019875
+  },
+  "80296076": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 80296077,
+    "levelItems": {
+      "80296073": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296073,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80296074": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296074,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80296075": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296075,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274305": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_CAIFU",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274305,
+        "configId": 860,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80296072": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296072,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_意外之财_模板",
+    "spawners": [
+      80296063,
+      80296065,
+      80296067
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_80296076_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 80296076,
+    "chunk": 1019875
+  },
+  "91343974": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91343992,
+    "levelItems": {
+      "91343975": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343975,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343976": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343976,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91343977": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91343977,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "近套娃1-水",
+    "spawners": [
+      91343979,
+      91343981,
+      91343983,
+      91343989
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_91343974_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 91343974,
+    "chunk": 1019875
+  },
+  "75319011": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 75319026,
+    "levelItems": {
+      "75319015": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319015,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274259": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274259,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75319012": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319012,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75319013": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319013,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "75319014": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 75319014,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_成长的代价_模板",
+    "spawners": [
+      75319019,
+      75319021,
+      75319023
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_75319011_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 75319011,
+    "chunk": 1019875
+  },
+  "86836188": {
+    "owner": "汪玉笠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "0层",
+    "envobjs": {},
+    "graphId": 86836189,
+    "levelItems": {
+      "86836186": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86836186,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86836187": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          0,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86836187,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "0层_模板_火塔",
+    "spawners": [
+      86836182
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_86836188_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 86836188,
+    "chunk": 1019875
+  },
+  "80296456": {
+    "owner": "汪玉笠",
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 80296457,
+    "levelItems": {
+      "80296444": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296444,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80296445": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296445,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80296446": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296446,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80296443": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 80296443,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_回路合成_模板",
+    "spawners": [
+      80296451,
+      80296453,
+      80296455
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_80296456_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "id": 80296456
+  },
+  "86236793": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 86236794,
+    "levelItems": {
+      "86236780": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86236780,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86236781": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86236781,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86236782": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86236782,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "86236783": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 86236783,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91274315": {
+        "majorCompId": 76595557,
+        "owner": "张浩熠",
+        "EditorName": "P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91274315,
+        "configId": 861,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_回路盲盒批发2",
+    "spawners": [
+      86236788,
+      86236790,
+      86236792
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_86236793_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 86236793,
+    "chunk": 1019875
+  },
+  "87415912": {
+    "owner": "张浩熠",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 87415913,
+    "levelItems": {
+      "87415897": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 87415897,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91404962": {
+        "majorCompId": 0,
+        "owner": "haoyi.zhang",
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 91404962,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "87415896": {
+        "majorCompId": 0,
+        "owner": "张浩熠",
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          4.4,
+          17.8,
+          10.72
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 87415896,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "事件_莹冰龙（反射盾版）",
+    "spawners": [
+      87415905,
+      87415907,
+      87415909,
+      87415911
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1016/Sandbox_87415912_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 64,
+    "enableFinishMark": false,
+    "id": 87415912,
+    "chunk": 1019875
+  }
+}

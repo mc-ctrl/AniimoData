@@ -1,0 +1,154 @@
+{
+  "TE_Par_Eat": {
+    "catchDisplayText": 1966716326
+  },
+  "TE_Par_Leave": {
+    "catchDisplayText": 1618572428
+  },
+  "hasOwner": {
+    "catchDisplayText": 1792338859
+  },
+  "hpRatioFuncBuff": {
+    "catchDisplayText": 1356261688,
+    "MaxBuffTypeThreshold": 2
+  },
+  "hpRatioFuncDebuff": {
+    "catchDisplayText": 1223242363
+  },
+  "inLowGravityandFlying": {
+    "catchDisplayText": 1281756240
+  },
+  "inMimicry": {
+    "catchDisplayText": 1886604815
+  },
+  "inMimicryType1": {
+    "catchDisplayText": 1213427186
+  },
+  "inMimicryType2": {
+    "catchDisplayText": 1974882475
+  },
+  "inSneak": {
+    "catchDisplayText": 1610518092
+  },
+  "isBoss": {
+    "catchDisplayText": 2104650290
+  },
+  "isElite": {
+    "catchDisplayText": 1694875825
+  },
+  "isPet": {
+    "catchDisplayText": 1238100647
+  },
+  "lackEmptySlot": {
+    "catchDisplayText": 1717314110
+  },
+  "levelRatioFuncDebuff": {
+    "catchDisplayText": 1184274205
+  },
+  "levelRatioFuncDebuffMax": {
+    "catchDisplayText": 1273658076,
+    "MinBuffTypeThreshold": 0.1
+  },
+  "onlyOwnerCanCatch": {
+    "catchDisplayText": 1807476161
+  },
+  "fromBehindRadio": {
+    "catchDisplayText": 1777075342
+  },
+  "catchSuccessBuff": {
+    "catchDisplayText": 1310729152
+  },
+  "breakRatio": {
+    "catchDisplayText": 1586835090
+  },
+  "BUFF_TAG_STUN": {
+    "catchDisplayText": 1140685654
+  },
+  "TE_Par_Chat": {
+    "catchDisplayText": 1136929180
+  },
+  "TE_Par_Baited": {
+    "catchDisplayText": 1352395623
+  },
+  "TE_Par_Alert": {
+    "catchDisplayText": 1117353387
+  },
+  "TE_Par_Affinity": {
+    "catchDisplayText": 1547698452
+  },
+  "TA_Stun": {
+    "catchDisplayText": 1605165306
+  },
+  "BUFF_VAL_6": {
+    "catchDisplayText": 1502956604
+  },
+  "BUFF_VAL_5": {
+    "catchDisplayText": 1856074325
+  },
+  "BUFF_VAL_4": {
+    "catchDisplayText": 1160962004
+  },
+  "BUFF_VAL_3": {
+    "catchDisplayText": 1569080461
+  },
+  "BUFF_VAL_2150101": {
+    "catchDisplayText": 1353855272
+  },
+  "BUFF_VAL_2": {
+    "catchDisplayText": 1544675214
+  },
+  "BUFF_VAL_1": {
+    "catchDisplayText": 1449721473
+  },
+  "TE_Par_ProtectChest": {
+    "catchDisplayText": 1670601275
+  },
+  "TE_Par_Sleep": {
+    "catchDisplayText": 1141567807
+  },
+  "TE_Par_Stare": {
+    "catchDisplayText": 1709512451
+  },
+  "TE_Wild_10471_MimicryLeave": {
+    "catchDisplayText": 1157259037
+  },
+  "TE_Wild_CatchToturialAngry": {
+    "catchDisplayText": 1282341615
+  },
+  "TE_Wild_Demonic": {
+    "catchDisplayText": 1796357729
+  },
+  "TE_Wild_DewyInNest": {
+    "catchDisplayText": 1925313068
+  },
+  "TE_Wild_GUIDE": {
+    "catchDisplayText": 1230718025
+  },
+  "TE_Wild_GamePlay": {
+    "catchDisplayText": 1214161420
+  },
+  "TE_Wild_GiantUnits": {
+    "catchDisplayText": 1660452468
+  },
+  "TE_Wild_HasOwner": {
+    "catchDisplayText": 1525956159
+  },
+  "TE_Wild_Hypnosis": {
+    "catchDisplayText": 2071032869
+  },
+  "TE_Wild_OneTime": {
+    "catchDisplayText": 1093571698
+  },
+  "TE_Wild_SceneDecorate": {
+    "catchDisplayText": 1919315508
+  },
+  "TE_Wild_Stun": {
+    "catchDisplayText": 1600250025
+  },
+  "ballProbZero": {
+    "catchDisplayText": 2092183411
+  },
+  "TE_Par_Drunk": {
+    "catchDisplayText": 2116410557
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9143403",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "be1ffb55-cb60-469a-8039-0cba076958f0",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "778f0ecb-5ba6-4872-a27b-1551a96bdc4d",
+      "conditionIds": [
+        3,
+        25
+      ],
+      "name": "conditionAnd",
+      "NodeID": 4
+    },
+    "24": {
+      "targetPos": "OWNER",
+      "innerRadius": 4,
+      "name": "randomPoint",
+      "UID": "274944af-ca52-4a1d-84c3-b0fb0c099e3c",
+      "radius": 5,
+      "NodeID": 24
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "d8d13343-479b-4cb9-b82f-f8be43201b39",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "be775076-adb0-49c9-b798-93eefa935ae1",
+      "effectId": "Eff_Parmon_10434_Attack_04_left",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "15": {
+      "endNum": 2,
+      "actionIds": [
+        24,
+        11,
+        20
+      ],
+      "NodeID": 15,
+      "UID": "ad347cc4-a0d1-413f-9251-2b0cc6648123",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "25": {
+      "name": "isInCombat",
+      "UID": "81e5ce1f-65c6-44d2-b601-de38e993f25d",
+      "target": "OWNER",
+      "NodeID": 25,
+      "not": false
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c903824b-8e02-485f-a28d-36d2f2330d2f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Passive01",
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "dc86d366-763c-446f-8b0d-330440224d99",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Passive01",
+      "NodeID": 27
+    },
+    "14": {
+      "eventName": "ready",
+      "NodeID": 14,
+      "UID": "6a1ce46c-227c-40ee-b335-22d8e1a03a83",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        24,
+        11,
+        20
+      ]
+    },
+    "9": {
+      "offsetXYZ": {
+        "NodeID": 16,
+        "name": "constVector3",
+        "UID": "99519fc6-b4e7-4948-8673-9ae622ab274a",
+        "x": -0.2,
+        "y": 1.6,
+        "z": 0
+      },
+      "templateId": 9143403101,
+      "name": "createProjectile",
+      "UID": "63550b94-b0c1-49d3-bb8f-2525a936a09f",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 9,
+      "targetPos": "RANDOM_POINT"
+    },
+    "18": {
+      "offsetXYZ": {
+        "NodeID": 17,
+        "name": "constVector3",
+        "UID": "b5a77d8d-76d7-4a06-9946-f8f8e4d25625",
+        "x": 0.2,
+        "y": 1.6,
+        "z": 0
+      },
+      "templateId": 9143403102,
+      "name": "createProjectile",
+      "UID": "2842fe73-d9fb-42de-9538-96105909e0e7",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 18,
+      "targetPos": "RANDOM_POINT"
+    },
+    "5": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "03a029a8-17a1-4eb4-8b25-93d2a72729cf",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "11": {
+      "actionIds": [
+        9,
+        22,
+        26
+      ],
+      "NodeID": 11,
+      "UID": "84ce7289-d9a0-46e9-bec9-52e44c12a9e5",
+      "count": 2,
+      "name": "doCounterAction"
+    },
+    "20": {
+      "actionIds": [
+        18,
+        21,
+        27
+      ],
+      "NodeID": 20,
+      "UID": "48ec9873-e599-4870-9a32-0efb2953b054",
+      "count": 2,
+      "name": "doCounterAction"
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d1d58c6d-80fb-4bf0-84a8-7d5fc70e4a68",
+      "effectId": "Eff_Parmon_10434_Attack_04_right",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    14,
+    11
+  ]
+}

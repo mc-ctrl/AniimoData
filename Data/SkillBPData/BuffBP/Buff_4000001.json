@@ -1,0 +1,50 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4000001",
+  "NodeID": 1,
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "2b2bf2dc-0f35-418b-a682-1e1d8c552b5d",
+      "name": "showBossMechanismTip",
+      "id": 2048,
+      "NodeID": 3
+    },
+    "8": {
+      "duration": 5,
+      "name": "playStartLoopEndAni",
+      "NodeID": 8,
+      "UID": "2d019190-4cff-4f49-8d1e-acbb438454d2",
+      "endAni": "Behav_AngryEnd",
+      "loopAni": "Behav_AngryLoop",
+      "startAni": "Behav_AngryStart"
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a598d192-2226-4464-9b31-0c55825dd469",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Start_QXXZ",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "5": {
+      "UID": "adc3e10f-74d4-4347-8990-449654c6977d",
+      "name": "callClientAction",
+      "actionIds": [
+        3,
+        8,
+        7
+      ],
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

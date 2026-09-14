@@ -1,0 +1,81 @@
+{
+  "duration": 5,
+  "BPName": "ability_12620140",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10261_Skill_Throw",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "91": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 126213,
+      "name": "createEntity",
+      "UID": "f547771a-f6c1-4955-ac86-cb8120b52b0b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 91,
+      "pos": {
+        "UID": "4471fc81-008c-4002-b4d3-03802c643d83",
+        "name": "getProjectilePos",
+        "NodeID": 90
+      }
+    },
+    "81": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e656ca4a-5a77-4487-ae83-a418e3859774",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10261_Attack01",
+      "NodeID": 81
+    },
+    "74": {
+      "pos": {
+        "UID": "3e4b3885-d472-44e0-9e40-58a5e0267335",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "bc397a25-cf17-43ef-9fbc-242ae193673a",
+          "name": "getProjectilePos",
+          "NodeID": 72
+        },
+        "NodeID": 73
+      },
+      "scale": 0.8,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "3fc086df-f60b-49d0-bcad-aad0724fedb2",
+      "effectId": "Eff_Parmon_10261_Skill_Throw_Bomb",
+      "speed": 1,
+      "NodeID": 74
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    74,
+    81,
+    91
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 1
+}

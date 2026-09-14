@@ -1,0 +1,48 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91171031",
+  "calcInfoByLuaConfig": {
+    "id": 91171031,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "2a552ba2-f5de-4ee0-9f17-f1ec5e29ee4b",
+  "icon": "icon_buff_attack_down",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "NodeID": 3,
+      "UID": "70d81ece-64ec-4032-adca-0b4401c8e992",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": true
+    },
+    "5": {
+      "NodeID": 5,
+      "UID": "8f093b3f-a53d-4b2c-a74f-194f6c856552",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": false
+    },
+    "6": {
+      "petTarget": "OWNER",
+      "triggerId": 1017402,
+      "name": "onEntityTrigger",
+      "UID": "2d803f84-78ab-451a-8f3a-95b06f41d677",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    3,
+    6
+  ]
+}

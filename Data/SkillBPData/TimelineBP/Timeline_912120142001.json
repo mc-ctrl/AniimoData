@@ -1,0 +1,530 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "f5a30c53-c3a0-48b4-87c2-31935f18356f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10,
+          12,
+          17,
+          44,
+          46,
+          49
+        ]
+      },
+      "NodeID": 5
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          69
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 70,
+      "UID": "a0618026-6da5-4da6-91ec-7a6d4fe5c9f8"
+    },
+    "39": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 912120142002,
+      "name": "createProjectile",
+      "UID": "bd1f7633-db68-4f6a-85ed-6ea617172070",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Free3d",
+      "NodeID": 39,
+      "targetPos": {
+        "rValue": {
+          "NodeID": 51,
+          "name": "constVector3",
+          "UID": "e1be542d-3407-4399-bda0-a85d463c5d98",
+          "x": 0,
+          "y": -4,
+          "z": 0
+        },
+        "name": "add",
+        "UID": "d34f8ca1-7659-4dd5-b753-e676404a8b79",
+        "NodeID": 38,
+        "lValue": {
+          "target": {
+            "rotation": "Null",
+            "radius": 20,
+            "NodeID": 32,
+            "UID": "a388a731-bb0c-4724-8550-dcac96d48927",
+            "angle": {
+              "rValue": {
+                "UID": "fde27e77-fedd-415f-abe0-dbd5811c3c12",
+                "val": 60,
+                "name": "getConstVal",
+                "NodeID": 43
+              },
+              "name": "multiply",
+              "UID": "2d9f48ba-7d57-4efe-8741-9b126a788ed4",
+              "NodeID": 31,
+              "lValue": {
+                "UID": "3a693fcb-de34-418e-a59e-2b73eeb08c15",
+                "name": "getIterNumber",
+                "NodeID": 30
+              }
+            },
+            "center": {
+              "UID": "18fa89ab-8aec-4fc5-95ce-6672a64b2c30",
+              "target": "OWNER",
+              "name": "getTargetPosition",
+              "NodeID": 50
+            },
+            "name": "getRotatedPoint"
+          },
+          "rangeMax": 8,
+          "name": "getRandomPosAlongLineToTarget",
+          "UID": "7de22711-a243-4be8-a43f-0f932b726290",
+          "rangeMin": 5,
+          "NodeID": 37,
+          "basedOnTarget": false
+        }
+      }
+    },
+    "69": {
+      "UID": "5b700fb7-6702-421f-b0ac-9fa6b5f47fd7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 69
+    },
+    "17": {
+      "timelineTag": "",
+      "animId": "Skill_MagicFlower_Boss_Start",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "8e3b6365-b54c-4c85-9e1d-daf4f3c05130",
+      "target": "OWNER",
+      "NodeID": 17,
+      "rootMotionScale": 0.5
+    },
+    "42": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 912120142003,
+      "name": "createProjectile",
+      "UID": "21b55997-30e6-4569-8c10-195fd061e81c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Free3d",
+      "NodeID": 42,
+      "targetPos": {
+        "rValue": {
+          "NodeID": 51,
+          "name": "constVector3",
+          "UID": "e1be542d-3407-4399-bda0-a85d463c5d98",
+          "x": 0,
+          "y": -4,
+          "z": 0
+        },
+        "name": "add",
+        "UID": "d27f8eae-d345-4551-8cb6-17f1efb235c1",
+        "NodeID": 41,
+        "lValue": {
+          "target": {
+            "rotation": "Null",
+            "radius": 20,
+            "NodeID": 32,
+            "UID": "a388a731-bb0c-4724-8550-dcac96d48927",
+            "angle": {
+              "rValue": {
+                "UID": "fde27e77-fedd-415f-abe0-dbd5811c3c12",
+                "val": 60,
+                "name": "getConstVal",
+                "NodeID": 43
+              },
+              "name": "multiply",
+              "UID": "2d9f48ba-7d57-4efe-8741-9b126a788ed4",
+              "NodeID": 31,
+              "lValue": {
+                "UID": "3a693fcb-de34-418e-a59e-2b73eeb08c15",
+                "name": "getIterNumber",
+                "NodeID": 30
+              }
+            },
+            "center": {
+              "UID": "18fa89ab-8aec-4fc5-95ce-6672a64b2c30",
+              "target": "OWNER",
+              "name": "getTargetPosition",
+              "NodeID": 50
+            },
+            "name": "getRotatedPoint"
+          },
+          "rangeMax": 11,
+          "name": "getRandomPosAlongLineToTarget",
+          "UID": "c6197ec4-f4de-4f72-84bb-0a18992cce02",
+          "rangeMin": 8,
+          "NodeID": 40,
+          "basedOnTarget": false
+        }
+      }
+    },
+    "35": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 912120142001,
+      "name": "createProjectile",
+      "UID": "79a72c6e-923c-40ad-a874-939f0a177e6e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Free3d",
+      "NodeID": 35,
+      "targetPos": {
+        "rValue": {
+          "NodeID": 51,
+          "name": "constVector3",
+          "UID": "e1be542d-3407-4399-bda0-a85d463c5d98",
+          "x": 0,
+          "y": -4,
+          "z": 0
+        },
+        "name": "add",
+        "UID": "152586d0-25ca-4e07-9e90-b4afa9685538",
+        "NodeID": 34,
+        "lValue": {
+          "target": {
+            "rotation": "Null",
+            "radius": 20,
+            "NodeID": 32,
+            "UID": "a388a731-bb0c-4724-8550-dcac96d48927",
+            "angle": {
+              "rValue": {
+                "UID": "fde27e77-fedd-415f-abe0-dbd5811c3c12",
+                "val": 60,
+                "name": "getConstVal",
+                "NodeID": 43
+              },
+              "name": "multiply",
+              "UID": "2d9f48ba-7d57-4efe-8741-9b126a788ed4",
+              "NodeID": 31,
+              "lValue": {
+                "UID": "3a693fcb-de34-418e-a59e-2b73eeb08c15",
+                "name": "getIterNumber",
+                "NodeID": 30
+              }
+            },
+            "center": {
+              "UID": "18fa89ab-8aec-4fc5-95ce-6672a64b2c30",
+              "target": "OWNER",
+              "name": "getTargetPosition",
+              "NodeID": 50
+            },
+            "name": "getRotatedPoint"
+          },
+          "rangeMax": 5,
+          "name": "getRandomPosAlongLineToTarget",
+          "UID": "a1789392-107b-413a-9c85-04361bac1f4e",
+          "rangeMin": 2,
+          "NodeID": 33,
+          "basedOnTarget": false
+        }
+      }
+    },
+    "44": {
+      "UID": "fd9280e9-9e78-4fad-aa30-61f996eed78f",
+      "value": true,
+      "name": "forceUngrounded",
+      "NodeID": 44
+    },
+    "65": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "2e9d59d1-32da-495b-90dd-4a0d87c083cb",
+      "effectId": "Eff_Boss_10212_Skill_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 65
+    },
+    "66": {
+      "action": {
+        "actionIds": [
+          65
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 66,
+      "UID": "7eaa8a59-6431-433f-a9ff-de7f1bf3c824"
+    },
+    "46": {
+      "duration": 1,
+      "name": "puppetPreCastAction",
+      "UID": "e268cbfe-1f5d-4a91-b2b1-0d873f9836cd",
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": false,
+      "timeScale": 0.2,
+      "enableFrameFreeze": true,
+      "NodeID": 46
+    },
+    "58": {
+      "eventName": "Creation1",
+      "name": "notifyCustomEvent",
+      "UID": "06c942e2-264b-4e94-81e3-335274849651",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "45": {
+      "UID": "816046ae-b1fd-4f5c-810c-d2f4926ae731",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 45
+    },
+    "49": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "a7cbc0c1-c934-4145-92d1-e4e0c5067f02",
+      "target": "OWNER",
+      "val": {
+        "UID": "202e753e-1d94-47f6-977f-c20fc1626bcf",
+        "target": "OWNER",
+        "name": "getTargetPosition",
+        "NodeID": 48
+      },
+      "NodeID": 49
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18,
+          21,
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 20,
+      "UID": "7e54a695-0f08-4eb0-b68a-392c8e1d6813"
+    },
+    "21": {
+      "timelineTag": "",
+      "animId": "Skill_MagicFlower_Boss_Loop",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2d5e67ea-055f-40d6-883b-e8cfa116fbd4",
+      "target": "OWNER",
+      "NodeID": 21,
+      "rootMotionScale": 0.5
+    },
+    "3": {
+      "UID": "8b463b9c-158f-48ae-b8e6-eebef3898d68",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 60,
+      "UID": "5e55b65c-7a9f-4eef-ab11-d6c3cb22fbea"
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22,
+          45,
+          25,
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 24,
+      "UID": "c0817f83-74c0-4d6e-b741-82c2a5432784"
+    },
+    "14": {
+      "UID": "d528cabc-a857-40e6-ad02-2d64bfbc9f9c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "7f10910f-9e7f-4369-923a-bab301f4e3ac",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "47": {
+      "duration": 1,
+      "name": "puppetPreCastAction",
+      "UID": "d278ce26-7a88-45ae-abb3-05d7d1e7ea06",
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": false,
+      "timeScale": 0.5,
+      "enableFrameFreeze": true,
+      "NodeID": 47
+    },
+    "25": {
+      "animId": "Skill_MagicFlower_Boss_End",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "825cfdf8-abf0-424e-8842-64c979f3604d",
+      "target": "OWNER",
+      "NodeID": 25,
+      "rootMotionScale": 0.5
+    },
+    "16": {
+      "UID": "9a74c3c6-79a7-48cc-b232-6302961e92fe",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "48": {
+      "UID": "202e753e-1d94-47f6-977f-c20fc1626bcf",
+      "target": "OWNER",
+      "name": "getTargetPosition",
+      "NodeID": 48
+    },
+    "28": {
+      "key": {
+        "UID": "da95974c-7ef5-4963-9fd0-3c2d296c979c",
+        "name": "getIterNumber",
+        "NodeID": 26
+      },
+      "duration": {
+        "rValue": 0,
+        "name": "multiply",
+        "UID": "c56b2025-acc1-47df-a24a-dfca2336f791",
+        "NodeID": 27,
+        "lValue": {
+          "UID": "da95974c-7ef5-4963-9fd0-3c2d296c979c",
+          "name": "getIterNumber",
+          "NodeID": 26
+        }
+      },
+      "actionIds": [
+        35,
+        39,
+        61,
+        42
+      ],
+      "NodeID": 28,
+      "UID": "5953527e-3a2f-4d31-9ab5-d61f5d3d3fba",
+      "name": "addTimer"
+    },
+    "29": {
+      "endNum": 5,
+      "actionIds": [
+        28
+      ],
+      "NodeID": 29,
+      "UID": "4cbbc66a-6a18-44c1-b325-e9c98710ca61",
+      "stepNum": 1,
+      "startNum": 0,
+      "name": "forEach"
+    },
+    "18": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        -0.5,
+        0
+      ],
+      "speed": 0.7,
+      "name": "playEffectStr",
+      "UID": "e321a4d4-3567-4657-9e09-328bed4834e3",
+      "effectId": "Eff_Parmon_10212_Skill_MagicFlower_Body_1",
+      "scale": 2,
+      "NodeID": 18
+    },
+    "50": {
+      "UID": "18fa89ab-8aec-4fc5-95ce-6672a64b2c30",
+      "target": "OWNER",
+      "name": "getTargetPosition",
+      "NodeID": 50
+    },
+    "12": {
+      "key": "target",
+      "name": "setCacheVal",
+      "UID": "5ad0fa88-eddd-461b-abfe-96d192e0b616",
+      "target": "OWNER",
+      "val": {
+        "UID": "8c620137-147b-40ba-8c97-cd4ba3ffbd0b",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 11
+      },
+      "NodeID": 12
+    },
+    "61": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "437c9385-c1d3-47ab-b582-a383aa6502c5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10212_Skill_Ex_02",
+      "NodeID": 61
+    },
+    "22": {
+      "UID": "0c959de5-234e-443e-91ea-d11bbc8ec5f5",
+      "name": "stopAnimation",
+      "anim": "Skill_MagicFlower_Loop",
+      "NodeID": 22
+    }
+  },
+  "BPName": "ability_912120142",
+  "NodeID": 7,
+  "UID": "b288e6e4-d8df-4992-8913-bd460278a844",
+  "eventIds": [
+    5,
+    16,
+    24,
+    20,
+    60,
+    66,
+    70
+  ],
+  "layer": "Base",
+  "length": 6
+}

@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "NodeID": 2,
+      "UID": "e9f1318b-54bc-4ea9-b05c-8130f80eb562",
+      "layer": 2000,
+      "name": "clearElement",
+      "elementType": 0
+    }
+  },
+  "BPName": "buff_91283115",
+  "dynamicRPCStates": {},
+  "UID": "3fafcb1c-301e-46d6-9f40-ebc04bb0fe0a",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

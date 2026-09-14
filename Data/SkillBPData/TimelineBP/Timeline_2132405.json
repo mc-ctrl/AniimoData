@@ -1,0 +1,513 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": [
+        -1.52,
+        1.09,
+        0
+      ],
+      "templateId": 2132405205,
+      "name": "createProjectile",
+      "UID": "5ad8a239-ebe6-41c2-9ed7-982bd67a9d88",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "d0abec62-6c5f-4689-9aad-b743de6bd806",
+        "target": "MASTER",
+        "NodeID": 56
+      },
+      "NodeID": 37,
+      "offsetRotation": [
+        0,
+        -30,
+        0
+      ]
+    },
+    "38": {
+      "key": "6",
+      "duration": 0.15,
+      "actionIds": [
+        37
+      ],
+      "NodeID": 38,
+      "UID": "35cbb0d3-2a59-4023-8c3f-28a4c94e93a3",
+      "name": "addTimer"
+    },
+    "53": {
+      "key": "2",
+      "duration": 0.45,
+      "actionIds": [
+        51,
+        55
+      ],
+      "NodeID": 53,
+      "UID": "18cf8e7b-7324-4563-ac2a-4230c5889eaa",
+      "name": "addTimer"
+    },
+    "54": {
+      "offsetXYZ": [
+        -1.52,
+        1.09,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "c41d2943-053d-4d31-8e99-719cce74d9d2",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 54
+    },
+    "44": {
+      "offsetXYZ": [
+        0,
+        2.6,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "34ff9f25-10fb-4bee-bdc3-189236b0195a",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 44
+    },
+    "2": {
+      "UID": "843d0ba9-bd09-41ec-ab88-1c0c68c70018",
+      "eventType": "EventExit",
+      "NodeID": 2
+    },
+    "4": {
+      "offsetXYZ": [
+        0,
+        2.6,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "23f3fd1d-5a2a-4074-97b2-96e61e69a373",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_01_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "bf75ce91-7543-4133-9fc4-b50140dbee30",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          57
+        ]
+      },
+      "NodeID": 6
+    },
+    "61": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e58c4d2b-4040-4b4e-8a56-585e574b928a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_RoseBurst_02",
+      "NodeID": 61
+    },
+    "7": {
+      "offsetXYZ": [
+        1.07,
+        2.067,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "93ff813d-5cc3-466f-94ac-d079b087e276",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_01_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 7
+    },
+    "60": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8e6fc324-0f74-4f60-8926-047c91971d3f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_RoseBurst_02",
+      "NodeID": 60
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3db3056d-9160-4a0d-a880-9185dc4b46b8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_RoseBurst_02",
+      "NodeID": 59
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29,
+          32,
+          53,
+          44,
+          48,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.55,
+      "NodeID": 31,
+      "UID": "93080283-c8bf-435a-94a3-3fbeb45510fa"
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          7,
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 9,
+      "UID": "0ec9cb64-0753-46a9-aa51-e0152e5bf674"
+    },
+    "48": {
+      "key": "1",
+      "duration": 0.15,
+      "actionIds": [
+        46,
+        50
+      ],
+      "NodeID": 48,
+      "UID": "b849e17a-3170-4ff8-b522-c6caad0afd6d",
+      "name": "addTimer"
+    },
+    "34": {
+      "offsetXYZ": [
+        1.52,
+        1.09,
+        0
+      ],
+      "templateId": 2132405204,
+      "name": "createProjectile",
+      "UID": "a78e17ae-e263-48ad-aca6-7853c6f92026",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "d0abec62-6c5f-4689-9aad-b743de6bd806",
+        "target": "MASTER",
+        "NodeID": 56
+      },
+      "NodeID": 34,
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ]
+    },
+    "10": {
+      "offsetXYZ": [
+        -1.07,
+        2.067,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "e6fb6cc6-365d-419c-8860-fa2278569ac7",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_01_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 10
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        2.6,
+        0
+      ],
+      "templateId": 2132405202,
+      "name": "createProjectile",
+      "UID": "d8edfdb4-8058-4a0d-8fb9-d596e2cb557a",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "d0abec62-6c5f-4689-9aad-b743de6bd806",
+        "target": "MASTER",
+        "NodeID": 56
+      },
+      "NodeID": 32,
+      "offsetRotation": [
+        15,
+        0,
+        0
+      ]
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          10,
+          59
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 12,
+      "UID": "94597db1-e438-4aa0-8c45-bd37c122be69"
+    },
+    "26": {
+      "offsetXYZ": [
+        -1.07,
+        2.067,
+        0
+      ],
+      "templateId": 2132405201,
+      "name": "createProjectile",
+      "UID": "dce035b5-a75b-4faf-9d7c-5b684036f2d4",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "d0abec62-6c5f-4689-9aad-b743de6bd806",
+        "target": "MASTER",
+        "NodeID": 56
+      },
+      "NodeID": 26,
+      "offsetRotation": [
+        15,
+        -30,
+        0
+      ]
+    },
+    "13": {
+      "offsetXYZ": [
+        1.52,
+        1.09,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "db76813d-ebdc-4a9a-b4b1-05270fdfca8b",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_01_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 13
+    },
+    "55": {
+      "key": "8",
+      "duration": 0.15,
+      "actionIds": [
+        54
+      ],
+      "NodeID": 55,
+      "UID": "288e60ca-d5af-464c-824d-2a8926b5083b",
+      "name": "addTimer"
+    },
+    "29": {
+      "key": "3",
+      "duration": 0.15,
+      "actionIds": [
+        33,
+        27
+      ],
+      "NodeID": 29,
+      "UID": "a80ad0b3-f878-40cc-950b-e3bf2e9d78e6",
+      "name": "addTimer"
+    },
+    "46": {
+      "offsetXYZ": [
+        1.07,
+        2.067,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "8250a211-263d-4df8-afb0-e8ada980d42b",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 46
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13,
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 15,
+      "UID": "d54fa0bb-4494-45e7-ae5e-73aaf5e06480"
+    },
+    "57": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "fad20212-a524-492e-8a2f-604ceea2aedb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_RoseBurst_02",
+      "NodeID": 57
+    },
+    "16": {
+      "offsetXYZ": [
+        -1.52,
+        1.09,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "014b0db5-f6b9-4750-b66e-02c09dd72bdf",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_01_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 16
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "12404f5d-15ff-4276-b8ce-9e66616a7f53",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_RoseBurst_02",
+      "NodeID": 58
+    },
+    "27": {
+      "key": "5",
+      "duration": 0.15,
+      "actionIds": [
+        26
+      ],
+      "NodeID": 27,
+      "UID": "290a0c97-b389-4c88-91fa-6ffc40c4057c",
+      "name": "addTimer"
+    },
+    "49": {
+      "offsetXYZ": [
+        -1.07,
+        2.067,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "498275cb-623a-4e38-8f5e-23437edc50ea",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 49
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16,
+          61
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 18,
+      "UID": "98d31c8c-990b-4508-951e-4794ad75513d"
+    },
+    "50": {
+      "key": "7",
+      "duration": 0.15,
+      "actionIds": [
+        49
+      ],
+      "NodeID": 50,
+      "UID": "0949da9c-4519-4a4a-8f8b-310a147e10b5",
+      "name": "addTimer"
+    },
+    "33": {
+      "offsetXYZ": [
+        1.07,
+        2.067,
+        0
+      ],
+      "templateId": 2132405203,
+      "name": "createProjectile",
+      "UID": "91ba2a56-446b-4371-89a1-eed099390a4d",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "d0abec62-6c5f-4689-9aad-b743de6bd806",
+        "target": "MASTER",
+        "NodeID": 56
+      },
+      "NodeID": 33,
+      "offsetRotation": [
+        15,
+        30,
+        0
+      ]
+    },
+    "51": {
+      "offsetXYZ": [
+        1.52,
+        1.09,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "e35a7a46-e9c0-47c1-a042-4cd3d11b2637",
+      "effectId": "Eff_Parmon_10324_Skill_RoseBurst_02_Light",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 51
+    },
+    "36": {
+      "key": "4",
+      "duration": 0.45,
+      "actionIds": [
+        34,
+        38
+      ],
+      "NodeID": 36,
+      "UID": "68dd4bd3-d1d6-40e9-99f2-5939f8a0d1ac",
+      "name": "addTimer"
+    }
+  },
+  "BPName": "timeline_2132405",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    6,
+    9,
+    12,
+    15,
+    18,
+    31,
+    2
+  ],
+  "layer": "Base",
+  "length": 2
+}

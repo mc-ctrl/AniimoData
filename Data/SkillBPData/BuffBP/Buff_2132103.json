@@ -1,0 +1,234 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132103",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    11
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 2132104,
+      "NodeID": 5,
+      "UID": "f9b9cfbd-d1a0-4e11-8dc1-73491d54412f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "f0e537a8-fec5-4479-b00c-d0fcf64241c1",
+      "name": "buffStartThink",
+      "NodeID": 6
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9e34c2c1-3d2a-4059-83cf-e4db50c8f4b5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10321_Buff_Crying",
+      "NodeID": 7
+    },
+    "8": {
+      "key": "StealEp",
+      "name": "setServerCacheVal",
+      "UID": "c6f2ecab-98d6-4b04-a776-5c25a2b31b4a",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 8
+    },
+    "11": {
+      "actionIds": [
+        14,
+        12
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "290082e8-4578-491f-ae87-cbb3c039b4e2",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "21": {
+      "actionIds": [
+        19,
+        26
+      ],
+      "interval": 0.5,
+      "UID": "c94b5fdd-9652-409d-a36a-6175e19f762a",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 21
+    },
+    "3": {
+      "leaveActionIds": [
+        2
+      ],
+      "relation": 2,
+      "NodeID": 3,
+      "UID": "18e9350c-9db5-450c-beee-90160e7cd751",
+      "radius": 8,
+      "name": "addAOITrap",
+      "enterActionIds": [
+        5
+      ]
+    },
+    "23": {
+      "actionIds": [
+        22
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "804c666c-7e45-41c9-acf3-11677213a10d",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "24": {
+      "UID": "2a6b5c32-e823-4b71-86df-df1c1f58f99a",
+      "name": "destroyEntity",
+      "NodeID": 24
+    },
+    "14": {
+      "key": "StealEp",
+      "name": "setServerCacheVal",
+      "UID": "2752904e-8c62-4907-8a72-ae1aab74add3",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 14
+    },
+    "10": {
+      "rValue": 9,
+      "name": "greater",
+      "UID": "eea1e24d-9952-4d7a-8031-38b14d28b819",
+      "NodeID": 10,
+      "lValue": {
+        "key": "StealEp",
+        "name": "getServerCacheVal",
+        "UID": "1fcaef4a-f9fb-4e5b-adee-f4c53f9b5cbe",
+        "target": "OWNER",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2132106,
+      "NodeID": 15,
+      "UID": "c28f0a02-d707-4939-875a-076807c26b42",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "UID": "be3a0d4f-d924-4102-8aef-1ff55af5979b",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "26": {
+      "actionIds": [
+        30,
+        24
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "f319eedc-8e71-454f-816b-f9d4556c7c21",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "28": {
+      "rValue": 4,
+      "name": "greater",
+      "UID": "0406f432-2013-42ba-ae86-ec20dcecf04a",
+      "NodeID": 28,
+      "lValue": {
+        "key": "CryHitTimes",
+        "name": "getCacheVal",
+        "UID": "c6d2ce29-1107-4460-a1ad-27260f64ba19",
+        "target": "OWNER",
+        "NodeID": 27
+      }
+    },
+    "29": {
+      "eventName": "onReceiveBeAttacked",
+      "name": "getEventCombatContextTarget",
+      "UID": "af54b0a8-8415-4dfa-9095-e55a93940e9b",
+      "target": "CASTER",
+      "NodeID": 29
+    },
+    "30": {
+      "value": 60,
+      "name": "recoverEp",
+      "UID": "5d3003b0-2194-441e-96ea-87e00aae5a07",
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "af54b0a8-8415-4dfa-9095-e55a93940e9b",
+        "target": "CASTER",
+        "NodeID": 29
+      },
+      "NodeID": 30
+    },
+    "2": {
+      "buffId": 2132104,
+      "name": "removeBuff",
+      "UID": "37c3c4b5-8734-431f-a108-a3e535488892",
+      "target": "TrapTarget",
+      "NodeID": 2
+    },
+    "19": {
+      "key": "CryHitTimes",
+      "name": "setCacheVal",
+      "UID": "a0632d47-f394-4ae6-8d65-25ac95721194",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "e9f6372c-919c-4674-a14b-0e8cfb271caf",
+        "NodeID": 18,
+        "lValue": {
+          "key": "CryHitTimes",
+          "name": "getCacheVal",
+          "UID": "76cbeed7-acc9-4a46-bfa2-f3172922fe4a",
+          "target": "OWNER",
+          "NodeID": 17
+        }
+      },
+      "NodeID": 19
+    },
+    "12": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2132106,
+      "NodeID": 12,
+      "UID": "96f63072-f53f-473b-baa8-a5e84e859f2c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "22": {
+      "key": "CryHitTimes",
+      "name": "setCacheVal",
+      "UID": "552f1944-1793-4038-b6c4-7da52d2b11cb",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 22
+    }
+  },
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6,
+    21,
+    7,
+    23,
+    8,
+    16
+  ]
+}

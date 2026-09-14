@@ -1,0 +1,77 @@
+{
+  "duration": 0.3,
+  "BPName": "ability_14630002",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10463_Attack_03_01",
+  "heightAboveGround": 0.4,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "43": {
+      "key": "4539901",
+      "name": "setCacheVal",
+      "UID": "a96ac609-1a13-475f-afcf-ec8a0cc4b605",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 43
+    },
+    "39": {
+      "pos": "PROJECTILE",
+      "offsetXYZ": {
+        "NodeID": 69,
+        "name": "constVector3",
+        "UID": "0b4bf208-310c-4da0-827a-5dc420334ac1",
+        "x": 0,
+        "y": {
+          "rValue": 0.5,
+          "name": "multiply",
+          "UID": "130900cf-697c-4ad8-97e3-8cd6180a69cb",
+          "NodeID": 68,
+          "lValue": {
+            "UID": "b82faf37-10d4-42db-9481-9a8f13a26ab1",
+            "name": "getBodySize",
+            "NodeID": 67
+          }
+        },
+        "z": 0
+      },
+      "templateId": 14630002002,
+      "name": "createProjectile",
+      "UID": "ef28cf21-586f-478a-8c34-01d7d2a67b3d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 39
+    },
+    "67": {
+      "UID": "b82faf37-10d4-42db-9481-9a8f13a26ab1",
+      "name": "getBodySize",
+      "NodeID": 67
+    }
+  },
+  "maxHeightOffset": 5,
+  "moveSpeed": 30,
+  "stickPitchMaxOffset": 40,
+  "onProjectileHitIds": [
+    43,
+    39
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 9999,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "stickGravity": 0.5,
+  "tickInterval": 0.1,
+  "gravityRatio": 0,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

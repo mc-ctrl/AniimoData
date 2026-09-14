@@ -1,0 +1,135 @@
+{
+  "61644243": {
+    "owner": "汪玉笠",
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 61644265,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 128,
+    "sightLevelType": 128,
+    "spawners": [
+      61644261,
+      61644263
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1044/Sandbox_61644243_GraphRef.asset",
+    "spawnerId": 0,
+    "position": [
+      -29.46,
+      1390.9,
+      17.61
+    ],
+    "id": 61644243,
+    "levelItems": {
+      "61598166": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -7.24,
+          1428.1,
+          3.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 0,
+        "siblingIndex": 1,
+        "id": 61598166,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "61598228": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Virtual_Puppet_Container (1)",
+        "position": [
+          -7.24,
+          1428.1,
+          3.74
+        ],
+        "templateId": 0,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 61598228,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "61597967": {
+        "majorCompId": 44987560,
+        "owner": "汪玉笠",
+        "EditorName": "P_Item_DungeonDemo_Start",
+        "position": [
+          -25.49,
+          1407.38,
+          2.71
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 61597967,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 87,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "areaType": 0
+  }
+}

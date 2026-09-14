@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_70020501",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10101234,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 70020501001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Cannon_Skill_Shoot_Upwards_Start",
+    "Cannon_Skill_Shoot_Upwards_Loop",
+    "Cannon_Skill_Shoot_Upwards_End"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "ParadoxNotion.Serialization.LUASerializer+constStringActionNodeInfo"
+  ],
+  "searchRelation": 2,
+  "name": "暗普通攻击",
+  "searchTargetRangeRadius": 999,
+  "searchTargetRangeUp": 999,
+  "searchTargetRangeDown": 999
+}

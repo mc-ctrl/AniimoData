@@ -1,0 +1,128 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1034",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        6,
+        19,
+        21
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "653237fe-9c17-4b9c-995b-67a37437ae3f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        15,
+        20,
+        22
+      ],
+      "NodeID": 8
+    },
+    "22": {
+      "name": "playHitAnimation",
+      "UID": "35e3b870-3d80-4531-b6bc-c1584fb768e7",
+      "target": "CURPET",
+      "NodeID": 22,
+      "animId": "Hit_Shake"
+    },
+    "21": {
+      "name": "playHitAnimation",
+      "UID": "d45fd3f1-f78c-4c7f-91a1-fcdb5e06cfee",
+      "target": "CURPET",
+      "NodeID": 21,
+      "animId": "Hit_Shake"
+    },
+    "6": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_addition_dmg": 100
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitCameraShakeId": 30202,
+        "hitFrameFreezeId": 10022,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Metal_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 6000
+      },
+      "UID": "4a3b1ea6-91a0-4f3d-960e-d05c86b071c7",
+      "target": "CURPET",
+      "calcInfoByLuaConfig": {
+        "id": 1034,
+        "instant_addition_dmg": "param0",
+        "type": 1
+      },
+      "NodeID": 6
+    },
+    "19": {
+      "tag": 10,
+      "name": "removeBuffByTag",
+      "UID": "b1d683ef-52a9-4fd3-bc90-3466f0cd708e",
+      "target": "CURPET",
+      "NodeID": 19
+    },
+    "15": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_addition_dmg": 100
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitCameraShakeId": 30202,
+        "hitFrameFreezeId": 10022,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Metal_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 6000
+      },
+      "UID": "69a4defa-ed88-475b-9f4f-9619c4069294",
+      "target": "OWNER",
+      "calcInfoByLuaConfig": {
+        "id": 1034,
+        "instant_addition_dmg": "param0",
+        "type": 1
+      },
+      "NodeID": 15
+    },
+    "20": {
+      "tag": 10,
+      "name": "removeBuffByTag",
+      "UID": "94c9dd79-d76c-4954-a9cf-026258c94aef",
+      "target": "CURPET",
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "8fe2a3c6-9fe1-4626-9826-d3eca4e30b4f",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

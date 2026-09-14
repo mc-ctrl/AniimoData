@@ -1,0 +1,83 @@
+{
+  "67089760": {
+    "owner": "徐一乘",
+    "position": [
+      0,
+      98,
+      32
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "sizeCoefficient": 1,
+    "attachId": 0,
+    "staticId": 67089760,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 0,
+    "subType": "Chest",
+    "enable_elite_rate": false,
+    "stick": true,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 21021,
+    "isAuto": false,
+    "spawnerId": 67089761,
+    "sandboxId": 67089757,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "routeId": 0,
+    "enableVirtualChest": false,
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig"
+  },
+  "67089762": {
+    "owner": "徐一乘",
+    "subType": "Puppet",
+    "position": [
+      0,
+      100,
+      -4.5
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "sizeCoefficient": 0,
+    "spawnerBornState": "LOCOMOTION",
+    "attachId": 0,
+    "staticId": 67089762,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 0,
+    "stick": true,
+    "enable_Morphling_Detail": false,
+    "enable_elite_rate": false,
+    "spawnerId": 67089763,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 200020,
+    "isAuto": false,
+    "isCancelBubble": false,
+    "isCancelDialogue": false,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "sandboxId": 67089757,
+    "routeId": 0,
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig"
+  }
+}

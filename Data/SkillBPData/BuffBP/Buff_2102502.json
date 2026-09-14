@@ -1,0 +1,78 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102502",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "炎铠龙-点燃",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": false,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2102502,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "a06bfd8a-3b67-418f-882c-920d7872fdf9",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "15a5ed22-7774-4744-9202-ee99727cc7d3",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "a88a3c6e-45dd-4100-80a0-87e2cc6d0a18",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 2102502,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "a06bfd8a-3b67-418f-882c-920d7872fdf9",
+      "name": "getParamByLuaConfig"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8c341a24-e255-4a36-a38f-ff3aac3d5032",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Fire_End",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b1d145aa-a2fa-40b7-a2fc-2502506f2d25",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Fire_01",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "c973d5e3-70f4-4ede-b380-18513e653829",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Fire_01",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    8,
+    10
+  ],
+  "onBuffStartIds": [
+    7
+  ]
+}

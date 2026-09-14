@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "shopId": 46,
+      "bgm": "BGM_Normal_Combat01",
+      "buttonImage1": "$UI_Img_Event_Season_Icon5.png",
+      "order": 1429012280,
+      "buttonSource1": 7002,
+      "buttonSource2": 7002,
+      "buttonStartTime1": {
+        "3": 1789502400,
+        "4": 1789502400,
+        "1": 1789502400,
+        "2": 1789502400
+      },
+      "buttonStartTime2": {
+        "3": 1790323200,
+        "4": 1790280000,
+        "1": 1790280000,
+        "2": 1790308800
+      },
+      "buttonText1": 1336766776,
+      "buttonText2": 1879177475,
+      "calendarImage1": "$UI_Img_Event_Season_Overview_Btn_Boss.png",
+      "calendarImage2": "$UI_Img_Event_Season_Overview_Btn_Boss2.png",
+      "enterSound": "SFX_UI_Activity_SeasonLobby_Enter",
+      "popDesc1": 1875900487,
+      "popDesc2": 2044684849,
+      "shopEntryImage": [
+        "$ui_item_815028.png",
+        "$ui_item_590013.png",
+        "$ui_item_152100.png"
+      ],
+      "subPopDesc": 1441569541,
+      "buttonImage2": "$UI_Img_Event_Season_Icon4.png",
+      "name": 1109318653
+    },
+    {
+      "subPopDesc": 2135116343,
+      "name": 1801921578,
+      "order": 1126412055,
+      "popDesc1": 1934340906,
+      "popDesc2": 1220020608
+    }
+  ]
+]

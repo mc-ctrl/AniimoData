@@ -1,0 +1,173 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_910120003",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10012_Attack04_Bullet",
+  "enableMaxAngleTime": 1,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 10,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "70": {
+      "name": "isActorType",
+      "UID": "a7ea8131-5266-406c-a6d4-4078c0eb6770",
+      "target": "OWNER",
+      "NodeID": 70,
+      "actorType": 3
+    },
+    "72": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.105,
+        "instant_dmg_rate_v": 0.105
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "battle_projectilehit_dark_s",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "elementType": 0,
+        "impulseId": 3001,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "96d17284-4ec7-4b22-9aaf-37a265e0d5c3",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 72
+    },
+    "35": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.4
+      },
+      "name": "calcResult",
+      "UID": "228007ae-5bbe-4f8b-a010-56da01ed0697",
+      "target": "CASTER",
+      "NodeID": 35
+    },
+    "29": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1.75,
+        "instant_dmg_rate_v": 1.75
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "battle_projectilehit_dark_s",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "elementType": 0,
+        "impulseId": 3001,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "1668ecc9-38e4-4451-b624-9f01415fc619",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 29
+    },
+    "30": {
+      "actionIds": [
+        72
+      ],
+      "conditionActionIds": [
+        70
+      ],
+      "UID": "36105050-008b-49d4-8aad-ee140a2fdaf2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 30
+    },
+    "32": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 29,
+      "NodeID": 32,
+      "UID": "95f74105-e60e-44ff-bd07-eab91f650d51",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3001,
+      "actionIds": [
+        30,
+        36
+      ]
+    },
+    "21": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a93f9c9f-16c9-462a-b60b-bf44d4ea49d2",
+      "effectId": "Eff_Parmon_10012_Attack04_Hit",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "38": {
+      "UID": "38708b00-c5e2-4d5d-bee8-7de0640feb1d",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 38
+    },
+    "36": {
+      "actionIds": [
+        35
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "6b83711e-2f43-4165-b380-63c6b9a84279",
+      "name": "doActionsByConditions",
+      "NodeID": 36
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    21
+  ],
+  "onProjectileHitIds": [
+    32
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "calcResultNodeId": 29,
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "duration": 0.8,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3001,
+  "acceleration": 0
+}

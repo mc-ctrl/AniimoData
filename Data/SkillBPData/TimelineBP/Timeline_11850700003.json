@@ -1,0 +1,107 @@
+{
+  "nodeMap": {
+    "81": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ac3f1926-872d-4cb0-b794-4c430e484256",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10185_Skill_WindCannon_Explosion",
+      "NodeID": 81
+    },
+    "78": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "01b68ca6-605b-4008-a4d5-cdf58d7c3cb4",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Burst",
+      "speed": 1,
+      "NodeID": 78
+    },
+    "80": {
+      "UID": "74bc4320-0b62-440e-8cff-4f4795b3c8e5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          81,
+          78
+        ]
+      },
+      "NodeID": 80
+    },
+    "68": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 67,
+      "NodeID": 68,
+      "UID": "5085a6ff-41a3-413a-9414-cd6bcce185a8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        67
+      ]
+    },
+    "67": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11850700,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "cc07987a-47ec-4eab-98e1-b28d64cb2530",
+      "target": "TARGET",
+      "NodeID": 67,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 9,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Wind_Blunt"
+      }
+    },
+    "69": {
+      "UID": "119ec8ad-f33d-457d-b67c-f7ba384fa1c9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          68
+        ]
+      },
+      "NodeID": 69
+    }
+  },
+  "BPName": "ability_11850700",
+  "NodeID": 71,
+  "UID": "f58b3589-7232-403e-98c5-541d622fd700",
+  "eventIds": [
+    80,
+    69
+  ],
+  "layer": "Base",
+  "length": 0.5
+}

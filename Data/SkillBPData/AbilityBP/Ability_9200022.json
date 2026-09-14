@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_9200022",
+  "NodeID": 1,
+  "UID": "736d9b36-3c40-4ce7-97df-312536837d47",
+  "abilityParamId": 9200022,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200022001,
+      "name": "setCombatActionTimeline",
+      "UID": "3693c471-8f5f-467e-b796-79ab948773a5",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicCap_Start",
+    "Skill_MagicCap_Wear"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Female_Skill_MagicCap_01",
+    "Eff_Avatar_Female_Skill_MagicCap",
+    "Eff_Avatar_Female_Skill_MagicCap_Absorb",
+    "Eff_Avatar_Female_Skill_MagicCap_Icon"
+  ],
+  "searchRelation": 1,
+  "name": "迷灵巨大化",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    9200024
+  ],
+  "searchTargetRangeDown": 2
+}

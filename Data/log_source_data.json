@@ -1,0 +1,829 @@
+{
+  "1012": {
+    "desc": 1289781778,
+    "logName": "ITEM_SOURCE_TOTEM_LVUP"
+  },
+  "1013": {
+    "desc": 2104737736,
+    "logName": "ITEM_SOURCE_SKILL_TREE_COST"
+  },
+  "1014": {
+    "desc": 1353649363,
+    "logName": "ITEM_SOURCE_MULTI_CHOOSE_CHEST"
+  },
+  "5001": {
+    "desc": 1783020610,
+    "logName": "ITEM_SOURCE_FASHION_REWARD"
+  },
+  "5005": {
+    "desc": 1957536121,
+    "logName": "ITEM_SOURCE_UNLOCK_MAKEUP_CUSTOM"
+  },
+  "2001": {
+    "desc": 1814410131,
+    "logName": "ITEM_SOURCE_ENV_OBJECT"
+  },
+  "5007": {
+    "desc": 1180143355,
+    "logName": "ITEM_SOURCE_UNLOCK_PET_APPEARANCE_POINT"
+  },
+  "5008": {
+    "desc": 1232870355,
+    "logName": "ITEM_SOURCE_UNLOCK_PET_APPEARANCE_CUSTOM"
+  },
+  "5009": {
+    "desc": 1759710353,
+    "logName": "ITEM_SOURCE_DESIGN_CLOTHES"
+  },
+  "2002": {
+    "desc": 1723166079,
+    "logName": "ITEM_SOURCE_MAIL"
+  },
+  "2003": {
+    "desc": 1168015729,
+    "logName": "ITEM_SOURCE_PLAYER_LEVEL"
+  },
+  "2004": {
+    "desc": 1336518192,
+    "logName": "ITEM_SOURCE_PLAYER_TARGET"
+  },
+  "6001": {
+    "desc": 1450911788,
+    "logName": "ITEM_SOURCE_PRODUCE_SYNTHESIS"
+  },
+  "2005": {
+    "desc": 1686123015,
+    "logName": "ITEM_SOURCE_PET_HANDBOOK_AUTO"
+  },
+  "2006": {
+    "desc": 1413160951,
+    "logName": "ITEM_SOURCE_PET_HANDBOOK_MANUAL"
+  },
+  "2007": {
+    "desc": 1885215744,
+    "logName": "ITEM_SOURCE_OPEN_CHEST"
+  },
+  "2008": {
+    "desc": 2054446598,
+    "logName": "ITEM_SOURCE_CATCH_REPORT"
+  },
+  "10008": {
+    "desc": 1625302861,
+    "logName": "ITEM_SOURCE_SLOT_MACHINE"
+  },
+  "2009": {
+    "desc": 1380423441,
+    "logName": "ITEM_SOURCE_QUEST_AUTO"
+  },
+  "2010": {
+    "desc": 1940116061,
+    "logName": "ITEM_SOURCE_DROP_KILL"
+  },
+  "2011": {
+    "desc": 1394539333,
+    "logName": "ITEM_SOURCE_DROP_CAPTURE"
+  },
+  "2015": {
+    "desc": 2100079025,
+    "logName": "ITEM_SOURCE_BATTLE_FIELD"
+  },
+  "2016": {
+    "desc": 1170210515,
+    "logName": "ITEM_SOURCE_OPEN_CHEST_FULL_SCREEN"
+  },
+  "2017": {
+    "desc": 1098831466,
+    "logName": "ITEM_SOURCE_PLAYER_LEVEL_AUTO"
+  },
+  "2018": {
+    "desc": 1931435200,
+    "logName": "ITEM_SOURCE_PVP_ARENA"
+  },
+  "2019": {
+    "desc": 2126065535,
+    "logName": "ITEM_SOURCE_PET_COMPETITION"
+  },
+  "2020": {
+    "desc": 1839636889,
+    "logName": "ITEM_SOURCE_POI"
+  },
+  "2021": {
+    "desc": 1836020402,
+    "logName": "ITEM_SOURCE_COURSE"
+  },
+  "20000": {
+    "desc": 1176758672,
+    "logName": "ITEM_SOURCE_SHOPMALL_BUY"
+  },
+  "20018": {
+    "desc": 1936249727,
+    "logName": "ITEM_SOURCE_ACTIVITY_GROWTH_GIFT"
+  },
+  "20019": {
+    "desc": 1953156123,
+    "logName": "ITEM_SOURCE_SHOPMALL_RECHARGE_GET"
+  },
+  "20020": {
+    "desc": 2020926564,
+    "logName": "ITEM_CONSUME_ROB_EGG_UNLOCK_TALENT"
+  },
+  "20021": {
+    "desc": 1334861604,
+    "logName": "ITEM_SOURCE_AREA_PREBOOK"
+  },
+  "20023": {
+    "desc": 1987967918,
+    "logName": "ITEM_SOURCE_BATTLEPASS_EXPERIENCE"
+  },
+  "20024": {
+    "desc": 1440422161,
+    "logName": "ITEM_SOURCE_FISHING_FAIL_REWARD"
+  },
+  "20025": {
+    "showDelay": 1.1,
+    "desc": 1300629558,
+    "logName": "ITEM_SOURCE_HOMELAND_TILL"
+  },
+  "10004": {
+    "desc": 1635801294,
+    "logName": "ITEM_CONSUME_HATCH"
+  },
+  "1000": {
+    "desc": 1458238154,
+    "logName": "ITEM_SOURCE_PETBALL"
+  },
+  "20028": {
+    "desc": 1828175684,
+    "logName": "ITEM_SOURCE_GRABEGG_COLLECTION_RETURN"
+  },
+  "20029": {
+    "desc": 1415425396,
+    "logName": "ITEM_SOURCE_GRABEGG_COLLECTION_REWARD"
+  },
+  "20030": {
+    "logName": "ITEM_SOURCE_PAY_COIN",
+    "desc": 1706346429,
+    "hide": 1
+  },
+  "2033": {
+    "desc": 1104621361,
+    "logName": "ITEM_SOURCE_FLOWER_FRUITING"
+  },
+  "5104": {
+    "desc": 1797922749,
+    "logName": "ITEM_SOURCE_LEYLINETREE_NOURISH"
+  },
+  "10029": {
+    "desc": 1603554593,
+    "logName": "ITEM_SOURCE_EVENT_BOSSRUSH_STAR"
+  },
+  "10036": {
+    "logName": "ITEM_SOURCE_ROGUELIKE_EXCHANGE_REWARD",
+    "desc": 2127007741,
+    "hide": 1
+  },
+  "5102": {
+    "desc": 1760200034,
+    "logName": "ITEM_SOURCE_LEYLINETREE_CREATEPLENTY"
+  },
+  "5103": {
+    "desc": 1293340415,
+    "logName": "ITEM_SOURCE_LEYLINETREE_CHANGEMETEOROLOGY"
+  },
+  "10053": {
+    "desc": 1424499163,
+    "logName": "ITEM_SOURCE_SOCIAL_PARTY_REWARD"
+  },
+  "20017": {
+    "desc": 1221250420,
+    "logName": "ITEM_SOURCE_GRABEGG_RANK_DAILY_TREASURE"
+  },
+  "5105": {
+    "desc": 1984111120,
+    "logName": "ITEM_SOURCE_LEYLINEFLOWER_NOURISH"
+  },
+  "10001": {
+    "desc": 2113803925,
+    "logName": "ITEM_CONSUME_CLIENT_USE"
+  },
+  "20022": {
+    "desc": 1922517391,
+    "logName": "ITEM_SOURCE_BOSS_CATCH"
+  },
+  "20040": {
+    "desc": 1680734438,
+    "logName": "ITEM_SOURCE_FC_WEEK_DUNGEON"
+  },
+  "10011": {
+    "desc": 1293104330,
+    "logName": "ITEM_SOURCE_QUESTION"
+  },
+  "10012": {
+    "desc": 1222654617,
+    "logName": "ITEM_SOURCE_EXCHANGE_PET"
+  },
+  "10013": {
+    "desc": 2115576989,
+    "logName": "ITEM_CONSUME_EXCHANGE_PET"
+  },
+  "20055": {
+    "desc": 1592491941,
+    "logName": "ITEM_SOURCE_CATCH_LUCKY_BIGWHITEBALL"
+  },
+  "5101": {
+    "desc": 1520548031,
+    "logName": "ITEM_SOURCE_LEYLINETREE_REWARD"
+  },
+  "20054": {
+    "desc": 1794603446,
+    "logName": "ITEM_SOURCE_RANDOM_SHOP_BUY"
+  },
+  "20053": {
+    "desc": 2026294047,
+    "logName": "ITEM_SOURCE_PAYTEST"
+  },
+  "20051": {
+    "desc": 1101578680,
+    "logName": "ITEM_SOURCE_SHINY_PAY_CHANGE_COST"
+  },
+  "20050": {
+    "desc": 2059016234,
+    "logName": "ITEM_SOURCE_SHINY_CHANGE_COST"
+  },
+  "20049": {
+    "desc": 1974785034,
+    "logName": "ITEM_SOURCE_HOME_PETTING"
+  },
+  "20048": {
+    "desc": 1766276519,
+    "logName": "ITEM_SOURCE_GRABEGG_COLLECTION_COST"
+  },
+  "20047": {
+    "desc": 1933605998,
+    "logName": "ITEM_SOURCE_DIRECT_PURCHASE_CASHBACK"
+  },
+  "10000": {
+    "desc": 1081053989,
+    "logName": "ITEM_CONSUME_COMMON"
+  },
+  "20046": {
+    "desc": 2028375283,
+    "logName": "ITEM_SOURCE_HOME_LOTTERY"
+  },
+  "20045": {
+    "desc": 2080656474,
+    "logName": "ITEM_CONSUME_HOME_LOTTERY"
+  },
+  "4000": {
+    "desc": 1293765434,
+    "logName": "ITEM_SOURCE_SEND_GIFT"
+  },
+  "20044": {
+    "desc": 1686994062,
+    "logName": "ITEM_SOURCE_HOMESEASON_TASK_REWARD"
+  },
+  "10061": {
+    "desc": 1744768883,
+    "logName": "ITEM_CONSUME_HOME_ENTRY_CODEX_COLLECT"
+  },
+  "20001": {
+    "desc": 2066177615,
+    "logName": "ITEM_CONSUME_SHOPMALL_BUY"
+  },
+  "20041": {
+    "desc": 1368861112,
+    "logName": "ITEM_SOURCE_FC_CUBE_COST"
+  },
+  "20002": {
+    "desc": 1964522523,
+    "logName": "ITEM_CONSUME_FISHING_TICKET"
+  },
+  "20038": {
+    "desc": 1508278298,
+    "logName": "ITEM_CONSUME_EQUIPMENT_BIND"
+  },
+  "20037": {
+    "desc": 1981682138,
+    "logName": "ITEM_SOURCE_BOSS_CATCH_QUEST"
+  },
+  "20036": {
+    "desc": 1484943749,
+    "logName": "ITEM_SOURCE_HATCH_CUBE_COST"
+  },
+  "20035": {
+    "desc": 1847853755,
+    "logName": "ITEM_SOURCE_HOMELAND_SEASON_COLLECT"
+  },
+  "20003": {
+    "showDelay": 3,
+    "desc": 1530597123,
+    "logName": "ITEM_SOURCE_FISHING_BATTLE"
+  },
+  "20004": {
+    "desc": 1334957750,
+    "logName": "ITEM_SOURCE_FISHING_LEVEL"
+  },
+  "20005": {
+    "desc": 1283171975,
+    "logName": "ITEM_SOURCE_FISHING_CAPTURE"
+  },
+  "5004": {
+    "desc": 1145306536,
+    "logName": "ITEM_SOURCE_UNLOCK_HAIR_CUSTOM"
+  },
+  "10038": {
+    "desc": 1491958817,
+    "logName": "ITEM_CONSUME_CAR_UPGRADE"
+  },
+  "20026": {
+    "desc": 1909354148,
+    "logName": "ITEM_SOURCE_BP_ACTIVE"
+  },
+  "20016": {
+    "desc": 1158283566,
+    "logName": "ITEM_SOURCE_PET_TRANSMOG"
+  },
+  "10041": {
+    "desc": 1215271262,
+    "logName": "ITEM_CONSUME_HOME_MUTATION_PLANTS_COLLECT"
+  },
+  "20015": {
+    "desc": 1928894526,
+    "logName": "ITEM_CONSUME_PET_TRANSMOG"
+  },
+  "20014": {
+    "desc": 2016294271,
+    "logName": "ITEM_CONSUME_PROP_INHERIT"
+  },
+  "10059": {
+    "desc": 1812670934,
+    "logName": "ITEM_SOURCE_GRABEGG_INGAME_BUY"
+  },
+  "20013": {
+    "showDelay": 3,
+    "desc": 1435163244,
+    "logName": "ITEM_SOURCE_NPCDUEL_CLEAR_REPEAT"
+  },
+  "20012": {
+    "showDelay": 3,
+    "desc": 1248378438,
+    "logName": "ITEM_SOURCE_NPCDUEL_CLEAR_FIRST"
+  },
+  "10064": {
+    "desc": 2026486646,
+    "logName": "ITEM_CONSUME_TRADE_STALL_FEE"
+  },
+  "20011": {
+    "desc": 1413674857,
+    "logName": "ITEM_SOURCE_MONTH_CARD_REWARD_STORAGE"
+  },
+  "20010": {
+    "desc": 1522335731,
+    "logName": "ITEM_SOURCE_MONTH_CARD_REWARD_CONTINUE"
+  },
+  "20009": {
+    "desc": 2024609639,
+    "logName": "ITEM_SOURCE_MONTH_CARD_REWARD_DAILY"
+  },
+  "20008": {
+    "desc": 1212839493,
+    "logName": "ITEM_SOURCE_MONTH_CARD_REWARD_NOW"
+  },
+  "10068": {
+    "desc": 1629268405,
+    "logName": "ITEM_SOURCE_TRADE_BUY"
+  },
+  "20007": {
+    "desc": 1533948048,
+    "logName": "ITEM_SOURCE_BP_BACK"
+  },
+  "20031": {
+    "logName": "ITEM_SOURCE_PAY_MONTH_CARD",
+    "desc": 1858770335,
+    "hide": 1
+  },
+  "20032": {
+    "desc": 2124873055,
+    "logName": "ITEM_SOURCE_CATCH_LUCKY"
+  },
+  "20033": {
+    "desc": 1826931481,
+    "logName": "ITEM_SOURCE_GRABEGG_PVE_CHAOS_TICKET_COST"
+  },
+  "20034": {
+    "desc": 1514637438,
+    "logName": "ITEM_SOURCE_GRABEGG_PVP_TICKET_COST"
+  },
+  "10006": {
+    "desc": 1541738677,
+    "logName": "ITEM_SOURCE_SPECIAL_TRAIN_REWARD"
+  },
+  "10005": {
+    "desc": 1568129060,
+    "logName": "ITEM_SOURCE_RUNE_COST"
+  },
+  "10021": {
+    "desc": 1480192901,
+    "logName": "ITEM_SOURCE_ABILITY_NODE"
+  },
+  "10007": {
+    "desc": 1305020083,
+    "logName": "ITEM_CONSUME_ROGUELIKE_RESET"
+  },
+  "20039": {
+    "desc": 1175102061,
+    "logName": "ITEM_SOURCE_ROB_EGG_ACCESSORY"
+  },
+  "10014": {
+    "desc": 1745859344,
+    "logName": "ITEM_CONSUME_PET_CARRY"
+  },
+  "20042": {
+    "showDelay": 2.83,
+    "desc": 1753036070,
+    "logName": "ITEM_SOURCE_FC_CUBE_GET"
+  },
+  "20043": {
+    "desc": 2077602643,
+    "logName": "ITEM_SOURCE_HOMESEASON_PROGRESS_REWARD"
+  },
+  "10015": {
+    "desc": 1567843750,
+    "logName": "ITEM_SOURCE_HOME_EVENT"
+  },
+  "10016": {
+    "desc": 1985246746,
+    "logName": "ITEM_SOURCE_ROGUE_DICE"
+  },
+  "10017": {
+    "desc": 1905776331,
+    "logName": "ITEM_SOURCE_PROP_ENHANCE_ADJUST"
+  },
+  "10018": {
+    "desc": 1287223922,
+    "logName": "ITEM_SOURCE_SPECIAL_TRAIN_REWARD_HUD"
+  },
+  "10022": {
+    "desc": 1252644047,
+    "logName": "ITEM_SOURCE_OPEN_COLLECT_ITEM"
+  },
+  "10023": {
+    "desc": 2126299951,
+    "logName": "ITEM_CONSUME_PATA_TIME"
+  },
+  "10024": {
+    "desc": 1492958398,
+    "logName": "ITEM_CONSUME_PATA_LIFE"
+  },
+  "10025": {
+    "desc": 1881354339,
+    "logName": "ITEM_SOURCE_EVENT_PATA_SINGLE"
+  },
+  "10026": {
+    "desc": 1219834162,
+    "logName": "ITEM_SOURCE_EVENT_PATA_FINAL"
+  },
+  "10027": {
+    "desc": 1971619480,
+    "logName": "ITEM_SOURCE_ROGUE_START_STYLE"
+  },
+  "10028": {
+    "desc": 1452084306,
+    "logName": "ITEM_SOURCE_SURVEY_TASK"
+  },
+  "10030": {
+    "desc": 1977654871,
+    "logName": "ITEM_SOURCE_GRAB_EGG_BECOME_EGG"
+  },
+  "10031": {
+    "desc": 1562703230,
+    "logName": "ITEM_CONSUME_HOMELAND_HATCH"
+  },
+  "10032": {
+    "desc": 1081758318,
+    "logName": "ITEM_SOURCE_PET_DISPATCH"
+  },
+  "10033": {
+    "desc": 1314030202,
+    "logName": "ITEM_SOURCE_UPGRADE_GEM_UESD"
+  },
+  "5000": {
+    "desc": 1249207665,
+    "logName": "ITEM_SOURCE_SHOP_BUY"
+  },
+  "10035": {
+    "desc": 1189759480,
+    "logName": "ITEM_SOURCE_ACTIVITY_COLLECT_BADGE"
+  },
+  "20006": {
+    "desc": 1961205797,
+    "logName": "ITEM_CONSUME_BPLEVEL_BUY"
+  },
+  "10044": {
+    "desc": 1500553071,
+    "logName": "ITEM_SOURCE_ECOLOGICAL_SEARCH"
+  },
+  "10045": {
+    "desc": 1338602142,
+    "logName": "ITEM_SOURCE_GRABEGG_PICK"
+  },
+  "10046": {
+    "desc": 1950802957,
+    "logName": "ITEM_SOURCE_GRABEGG_CONVERSION_EXTERNAL"
+  },
+  "5011": {
+    "desc": 1083217702,
+    "logName": "ITEM_SOURCE_UPDATE_HAIR"
+  },
+  "10048": {
+    "desc": 2110417087,
+    "logName": "ITEM_SOURCE_GRABEGG_LOOT"
+  },
+  "10049": {
+    "desc": 1957587382,
+    "logName": "ITEM_SOURCE_ROGUE_SWEEP"
+  },
+  "10050": {
+    "logName": "ITEM_SOURCE_DISPATCH",
+    "desc": 1077025335,
+    "hide": 1
+  },
+  "10052": {
+    "desc": 2136955478,
+    "logName": "ITEM_SOURCE_ROGUE_DAILY_REWARD"
+  },
+  "10054": {
+    "desc": 1575787007,
+    "logName": "ITEM_SOURCE_SOCIAL_PARTY_PET_REWARD"
+  },
+  "10055": {
+    "desc": 1518902232,
+    "logName": "ITEM_SOURCE_SPECIAL_TRAIN_CHAPTER_REWARD"
+  },
+  "10056": {
+    "desc": 2065507643,
+    "logName": "ITEM_SOURCE_SPECIAL_TRAIN_BADGE_REWARD"
+  },
+  "10057": {
+    "desc": 1989737288,
+    "logName": "ITEM_CONSUME_SHOP_BUY"
+  },
+  "10058": {
+    "desc": 1260189593,
+    "logName": "ITEM_SOURCE_QUEST_CHAPTER_PROGRESS_REWARD"
+  },
+  "10066": {
+    "desc": 2097106785,
+    "logName": "ITEM_SOURCE_TRADE_LIST_BACK"
+  },
+  "10065": {
+    "desc": 1255861586,
+    "logName": "ITEM_CONSUME_TRADE_LIST"
+  },
+  "2022": {
+    "desc": 1232704604,
+    "logName": "ITEM_SOURCE_PET_HANDBOOK_LEVEL_AUTO"
+  },
+  "2023": {
+    "desc": 1414920335,
+    "logName": "ITEM_SOURCE_PET_HANDBOOK_LEVEL_MANUAL"
+  },
+  "10039": {
+    "desc": 1309816606,
+    "logName": "ITEM_CONSUME_CAR_COMP_UPGRADE"
+  },
+  "2025": {
+    "desc": 1951703092,
+    "logName": "ITEM_SOURCE_ACTIVITY_COST"
+  },
+  "2026": {
+    "desc": 1514163297,
+    "logName": "ITEM_SOURCE_ACTIVITY_REWARD"
+  },
+  "10042": {
+    "desc": 1233768046,
+    "logName": "ITEM_SOURCE_HOME_CAR_UPGRADE_REWARD"
+  },
+  "2028": {
+    "desc": 2087517388,
+    "logName": "ITEM_SOURCE_PET_COLLECT_REWARD"
+  },
+  "2029": {
+    "desc": 1553313251,
+    "logName": "ITEM_SOURCE_COMMUNITY_GUIDE"
+  },
+  "2030": {
+    "desc": 1661044866,
+    "logName": "ITEM_SOURCE_QUIZ_SINGLE"
+  },
+  "2031": {
+    "desc": 1841710227,
+    "logName": "ITEM_SOURCE_QUIZ_SINGLE_COMPLETE"
+  },
+  "2032": {
+    "desc": 1998093772,
+    "logName": "ITEM_SOURCE_BADGE_TASK"
+  },
+  "2034": {
+    "desc": 1250451671,
+    "logName": "ITEM_SOURCE_CAMP_PRIVATE_LINE_DISSOLVE"
+  },
+  "10063": {
+    "desc": 1458143759,
+    "logName": "ITEM_CONSUME_EXPIRED"
+  },
+  "1006": {
+    "desc": 1791702965,
+    "logName": "ITEM_SOURCE_CANCEL_EQUIP"
+  },
+  "10069": {
+    "desc": 1924301264,
+    "logName": "ITEM_SOURCE_TRADE_SELL"
+  },
+  "10060": {
+    "desc": 1096812286,
+    "logName": "ITEM_CONSUME_HOME_MASTER_CODEX_COLLECT"
+  },
+  "1002": {
+    "desc": 1965789490,
+    "logName": "ITEM_SOURCE_RECYCLE_BALL"
+  },
+  "10051": {
+    "desc": 1364682353,
+    "logName": "ITEM_SOURCE_ROGUE_SWEEP_REWARD"
+  },
+  "10047": {
+    "desc": 2136694894,
+    "logName": "ITEM_SOURCE_GRABEGG_CONVERSION_INTERNAL"
+  },
+  "5010": {
+    "desc": 1201948005,
+    "logName": "ITEM_SOURCE_UNLOCK_JEWELRY_INFO"
+  },
+  "5002": {
+    "desc": 1753851619,
+    "logName": "ITEM_SOURCE_UNLOCK_APPEARANCE_CUSTOM"
+  },
+  "5003": {
+    "desc": 1948709699,
+    "logName": "ITEM_SOURCE_UNLOCK_APPEARANCE_POINT"
+  },
+  "10034": {
+    "desc": 1590444624,
+    "logName": "ITEM_SOURCE_UPGRADE_GEM_GET"
+  },
+  "5012": {
+    "desc": 1360574468,
+    "logName": "ITEM_SOURCE_UPDATE_AVATAR"
+  },
+  "1009": {
+    "logName": "ITEM_SOURCE_USEITEM_PETMOOD"
+  },
+  "2024": {
+    "desc": 1558764949,
+    "logName": "ITEM_SOURCE_QUEST_MANUAL"
+  },
+  "1008": {
+    "logName": "ITEM_SOURCE_USEITEM_PETEXP"
+  },
+  "1007": {
+    "desc": 1887941133,
+    "logName": "ITEM_SOURCE_SKILL_TREE_RESET"
+  },
+  "6000": {
+    "desc": 1331167233,
+    "logName": "ITEM_SOURCE_PRODUCE_PET_SKILL_BOOK"
+  },
+  "10062": {
+    "desc": 1993180066,
+    "logName": "ITEM_SOURCE_GRABEGG_RANK_REWARD"
+  },
+  "9005": {
+    "desc": 1501585387,
+    "logName": "ITEM_SOURCE_SANDBOX_WORLD"
+  },
+  "1005": {
+    "desc": 1914769804,
+    "logName": "ITEM_SOURCE_USEITEM"
+  },
+  "1004": {
+    "desc": 2006562795,
+    "logName": "ITEM_SOURCE_RECYCLE_PET"
+  },
+  "1003": {
+    "desc": 1304334589,
+    "logName": "ITEM_SOURCE_RECYCLE_TRAPBALL"
+  },
+  "6002": {
+    "desc": 1220103575,
+    "logName": "ITEM_SOURCE_PARMON_COMPETITION"
+  },
+  "9000": {
+    "desc": 1292208620,
+    "logName": "ITEM_SOURCE_COMMON"
+  },
+  "10019": {
+    "desc": 1365178908,
+    "logName": "ITEM_SOURCE_EVENT_RESEARCH"
+  },
+  "10009": {
+    "desc": 1472138043,
+    "logName": "ITEM_CONSUME_PROP_LEVEL"
+  },
+  "10010": {
+    "desc": 1427009000,
+    "logName": "ITEM_CONSUME_PROP_RESET"
+  },
+  "10020": {
+    "desc": 1519088687,
+    "logName": "ITEM_SOURCE_HOME_SHOP_SELL"
+  },
+  "9008": {
+    "desc": 1209544751,
+    "logName": "ITEM_SOURCE_SANDBOX_ROGUELIKE"
+  },
+  "2027": {
+    "desc": 1163950375,
+    "logName": "ITEM_SOURCE_OPERATING_PLATFORM"
+  },
+  "5006": {
+    "desc": 1205076710,
+    "logName": "ITEM_SOURCE_UNLOCK_CLOTHES_DESIGN"
+  },
+  "1001": {
+    "desc": 1325317323,
+    "logName": "ITEM_SOURCE_DECOMPOSE"
+  },
+  "10002": {
+    "desc": 1569774955,
+    "logName": "ITEM_CONSUME_DECOMPOSE"
+  },
+  "10003": {
+    "desc": 1816537781,
+    "logName": "ITEM_CONSUME_COMPOUND"
+  },
+  "9001": {
+    "desc": 1359678064,
+    "logName": "ITEM_SOURCE_GM_CODE"
+  },
+  "9002": {
+    "desc": 1942908483,
+    "logName": "ITEM_SOURCE_EVENT"
+  },
+  "9003": {
+    "desc": 1173496394,
+    "logName": "ITEM_SOURCE_PLAYER_INIT"
+  },
+  "9004": {
+    "desc": 1662913515,
+    "logName": "ITEM_SOURCE_EVENT_FULL_SCREEN"
+  },
+  "10040": {
+    "desc": 2102139585,
+    "logName": "ITEM_CONSUME_HOME_ORDER"
+  },
+  "9006": {
+    "desc": 1193968178,
+    "logName": "ITEM_SOURCE_SANDBOX_BOX"
+  },
+  "9007": {
+    "desc": 1725471501,
+    "logName": "ITEM_SOURCE_SANDBOX_ARK"
+  },
+  "10043": {
+    "desc": 1125566269,
+    "logName": "ITEM_SOURCE_ROGUE_BOSS_WEEKLY_REWARD"
+  },
+  "9009": {
+    "desc": 1405743512,
+    "logName": "ITEM_SOURCE_PROP_RESET"
+  },
+  "9010": {
+    "desc": 1377649580,
+    "logName": "ITEM_SOURCE_SANDBOX_GRAPH"
+  },
+  "9011": {
+    "desc": 1363996538,
+    "logName": "ITEM_SOURCE_DITTO_DUNGEON"
+  },
+  "9012": {
+    "desc": 1699196609,
+    "logName": "ITEM_SOURCE_ARK_ARCADE_REWARD"
+  },
+  "1010": {
+    "desc": 1543553313,
+    "logName": "ITEM_SOURCE_CHANGE_NAME"
+  },
+  "10067": {
+    "desc": 1174818077,
+    "logName": "ITEM_CONSUME_TRADE_BUY"
+  },
+  "1011": {
+    "desc": 1251321394,
+    "logName": "ITEM_SOURCE_REVIVE"
+  },
+  "2000": {
+    "desc": 1349011083,
+    "logName": "ITEM_SOURCE_FLOWCANVAS"
+  }
+}

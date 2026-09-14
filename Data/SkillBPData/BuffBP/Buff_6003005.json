@@ -1,0 +1,227 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003005",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "9d3d2dc9-28d7-44b9-a3ce-7c94e801bc4d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        16
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 3,
+      "name": "greater",
+      "UID": "4f1a5c6f-9f62-4362-8fca-adff91fac5bb",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "75e63233-502a-4c71-9e1a-9b673c45c7f9",
+        "name": "getEventData",
+        "eventName": "onRobEggBagItemChange",
+        "NodeID": 3
+      }
+    },
+    "24": {
+      "calcInfo": {
+        "stamina_regen_p": {
+          "rValue": {
+            "calcId": 6003005,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 21,
+            "UID": "a4d99733-197a-4fe3-9a63-c3ac2e9dbbad",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "b8390a82-fa45-4303-ac72-47049a3146e4",
+          "NodeID": 22,
+          "lValue": 4
+        }
+      },
+      "isClearOld": true,
+      "UID": "c598d1d2-51ce-4ba4-b379-17d541feff97",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 24
+    },
+    "6": {
+      "UID": "5dff62ca-9bd1-4b8e-9e50-da6c008650de",
+      "name": "registerPlayerRobEggBagItemChangeEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "13": {
+      "calcId": 6003005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "85d6084d-f65a-435b-bb1b-5b83acf5ce84",
+      "name": "getParamByLuaConfig"
+    },
+    "21": {
+      "calcId": 6003005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 21,
+      "UID": "a4d99733-197a-4fe3-9a63-c3ac2e9dbbad",
+      "name": "getParamByLuaConfig"
+    },
+    "25": {
+      "calcId": 6003005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 25,
+      "UID": "c37a1d58-8db9-43fe-aeac-41a60a956a16",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "calcInfo": {
+        "stamina_regen_p": {
+          "rValue": {
+            "calcId": 6003005,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 13,
+            "UID": "85d6084d-f65a-435b-bb1b-5b83acf5ce84",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "250ebff6-d8f3-45ee-b4bd-dd81b4d46180",
+          "NodeID": 14,
+          "lValue": {
+            "UID": "3e39594a-192f-4984-8727-2f6c4e158e90",
+            "name": "getEventData",
+            "eventName": "onRobEggBagItemChange",
+            "NodeID": 17
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "2ad32f30-77e9-4527-9c1f-71098f885268",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 16
+    },
+    "8": {
+      "calcId": 6003005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "ae0465b6-cf40-4d3d-b455-ff93d80dc71b",
+      "name": "getParamByLuaConfig"
+    },
+    "28": {
+      "calcInfo": {
+        "stamina_regen_p": {
+          "rValue": {
+            "calcId": 6003005,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 25,
+            "UID": "c37a1d58-8db9-43fe-aeac-41a60a956a16",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "db973347-0ffa-4f93-a7c2-7d970f35f43e",
+          "NodeID": 26,
+          "lValue": {
+            "UID": "d0564871-61b7-423b-8e19-6d61c834be96",
+            "target": "OWNER",
+            "name": "getPlayerRobEggBagItemCount",
+            "NodeID": 29
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "ac92b2ae-48c3-4a73-8392-528b917ec813",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "d0564871-61b7-423b-8e19-6d61c834be96",
+      "target": "OWNER",
+      "name": "getPlayerRobEggBagItemCount",
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "ae138a14-2914-4949-a08c-68e8558c3683",
+      "target": "OWNER",
+      "name": "getPlayerRobEggBagItemCount",
+      "NodeID": 18
+    },
+    "19": {
+      "rValue": 3,
+      "name": "greater",
+      "UID": "8fe25fcf-869e-4c66-ac5e-cfade03ad093",
+      "NodeID": 19,
+      "lValue": {
+        "UID": "ae138a14-2914-4949-a08c-68e8558c3683",
+        "target": "OWNER",
+        "name": "getPlayerRobEggBagItemCount",
+        "NodeID": 18
+      }
+    },
+    "11": {
+      "calcInfo": {
+        "stamina_regen_p": {
+          "rValue": {
+            "calcId": 6003005,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 8,
+            "UID": "ae0465b6-cf40-4d3d-b455-ff93d80dc71b",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "aeded42e-88ec-4f26-91c6-ff3faf974e47",
+          "NodeID": 9,
+          "lValue": 4
+        }
+      },
+      "isClearOld": true,
+      "UID": "5471b329-17cb-40e0-a558-3e87e69b8d03",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "32d318b7-7cde-4852-922d-78bc4febb7c0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "ad79ad40-7cf8-4632-b6a0-c2375c2aeb28",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    20,
+    6
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "BPName": "ability_10450000",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 14200000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        68
+      ],
+      "UID": "a0a4f981-88fe-41d6-a832-087633c1b4dd",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        74
+      ],
+      "NodeID": 9
+    },
+    "68": {
+      "UID": "c43fc6ae-d204-49cd-a23d-a19fec454d1a",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 68
+    },
+    "7": {
+      "timelineId": 10450000001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "74": {
+      "timelineId": 10450000002,
+      "name": "setCombatActionTimeline",
+      "UID": "8e57b547-cf89-43db-8867-92c139df3209",
+      "target": "CASTER",
+      "NodeID": 74
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10045_Attack_Prepare",
+    "Eff_Parmon_10045_Attack01_02",
+    "Eff_Parmon_10045_Attack01_01",
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Parmon_common_Skill_Grass_Bullet_Fly_NoAnimation",
+    "Eff_Parmon_Common_Skill_Grass_Bullet_Bomb"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    10450001,
+    10450002,
+    10450003
+  ],
+  "searchTargetRangeDown": 0.5
+}

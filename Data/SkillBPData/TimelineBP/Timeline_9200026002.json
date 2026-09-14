@@ -1,0 +1,100 @@
+{
+  "nodeMap": {
+    "52": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 52,
+      "UID": "3692c27a-1150-405e-a5f6-3b97cf408305",
+      "target": "OWNER",
+      "fadeTime": 0.5,
+      "animId": "Skill_FireThrow_End"
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "23c82c39-d7fd-439f-a9b3-6219aaed811c",
+      "effectId": "Eff_Env_Sceneobject_BossCatch_KeyItem_Buff_Disappear",
+      "speed": 1,
+      "NodeID": 38
+    },
+    "14": {
+      "UID": "2392122b-363e-4c8c-99f2-1d3a155ab6ba",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          40,
+          38,
+          52,
+          76,
+          69,
+          77
+        ]
+      },
+      "NodeID": 14
+    },
+    "26": {
+      "UID": "ece6ba6c-6583-433e-bcfa-9b1cb1591e3a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "40a4450c-8bbb-4ab9-816b-c6a46d7fa500",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 27
+    },
+    "77": {
+      "name": "stopSoundStr",
+      "UID": "ac2de1c7-78a9-429f-a224-45474ab12182",
+      "soundId": "SFX_Combat_BossCatch_FireThrow_Loop",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1b9b2d62-4806-4288-ae22-f29d9c07f68e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossCatch_FireThrow_End",
+      "NodeID": 76
+    },
+    "12": {
+      "UID": "f1aa7223-14a2-4b18-b40e-62626597b252",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 12
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "f089c4ee-f4b5-4826-973a-0cb45bc282b8",
+      "effectId": "Eff_Env_Sceneobject_BossCatch_KeyItem_Buff_Loop",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "69": {
+      "UID": "9c0d769d-fdeb-4bb0-98c1-f4cbbefa8b39",
+      "name": "enableFishingCaptureState",
+      "enable": false,
+      "NodeID": 69
+    }
+  },
+  "BPName": "ability_9200026",
+  "NodeID": 16,
+  "UID": "f5654731-5e90-4614-a2d8-2b4c2ce75186",
+  "eventIds": [
+    14,
+    27
+  ],
+  "layer": "Base",
+  "length": 0.6
+}

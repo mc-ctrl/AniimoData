@@ -1,0 +1,88 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10820003",
+  "defaultHitSoundType": "h",
+  "effectId": "Eff_Parmon_10083_Attack04_Bullet",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    11
+  ],
+  "onProjectileHitIds": [
+    17,
+    21
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "17": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1.55
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "497bcbb4-68b8-4670-9ebb-89b59bf97bfb",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 17
+    },
+    "23": {
+      "UID": "eda37003-1691-464e-aacf-0554da6becf2",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 23
+    },
+    "11": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "3cfc5c7f-732f-4f72-820b-ad919e45d7d8",
+      "effectId": "Eff_Parmon_10083_Attack04_Creation",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.55
+      },
+      "name": "calcResult",
+      "UID": "eefd9493-043b-4049-ad1f-319be9649169",
+      "target": "CASTER",
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "0f99a90f-061a-4c12-ba49-b3facce59e05",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 1,
+  "calcResultNodeId": 17,
+  "impulseId": 2000,
+  "acceleration": 0
+}

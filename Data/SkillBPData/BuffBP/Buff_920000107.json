@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "stamina_regen_p": 0.05
+  },
+  "name": "体力恢复速度",
+  "UID": "37549b6e-8cff-4f95-9138-27f746f81a06",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_920000107",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

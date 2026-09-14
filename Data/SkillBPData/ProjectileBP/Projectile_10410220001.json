@@ -1,0 +1,200 @@
+{
+  "duration": 4,
+  "calcResultNodeId": 24,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 0,
+  "maxHitNum": 1,
+  "moveSpeed": 8,
+  "onProjectileFinishIds": [
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "effectId": "Eff_Parmon_10041_Skill_Bubble_Large",
+  "tickInterval": 0,
+  "nodeMap": {
+    "55": {
+      "UID": "803a0238-e619-4749-b6f4-2a0928276f62",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 55
+    },
+    "40": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104302,
+      "name": "createEntity",
+      "UID": "fdc12270-f43c-4149-92d7-5e92c8eedf9d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 40,
+      "pos": "TARGET"
+    },
+    "41": {
+      "pos": "TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "dac9bb35-9b9f-4b0a-8d32-8106cc5cb2c0",
+      "effectId": "Eff_Parmon_10041_Skill_Bubble_Creation",
+      "speed": 1,
+      "NodeID": 41
+    },
+    "57": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104302,
+      "name": "createEntity",
+      "UID": "fa591f6a-a1f1-49e7-91c9-1bfa8df2678a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 57,
+      "pos": "PROJECTILE"
+    },
+    "26": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 24,
+      "NodeID": 26,
+      "UID": "e4e348f6-559f-4859-a0a8-88237b203561",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        24
+      ]
+    },
+    "58": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "9fa68304-b5c0-410c-ba28-20d4d4534844",
+      "effectId": "Eff_Parmon_10041_Skill_Bubble_Creation",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "28": {
+      "actionIds": [
+        40,
+        41,
+        26
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "37c6936e-130f-4bf6-ae3e-5bea29c16aa6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        57,
+        58,
+        33
+      ],
+      "NodeID": 28
+    },
+    "33": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 24,
+      "NodeID": 33,
+      "UID": "8b8883da-85b7-4f47-9f40-10c81666cee6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        24
+      ]
+    },
+    "24": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": 10005
+      },
+      "UID": "08b1ad01-99b6-4537-888f-13d607138e9c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 24
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_10410220",
+  "defaultHitSoundType": "h",
+  "impulseId": 2000,
+  "acceleration": 0
+}

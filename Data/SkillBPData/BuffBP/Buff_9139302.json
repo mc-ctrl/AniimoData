@@ -1,0 +1,193 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9139302",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "24697f0b-aa22-4b70-adfb-bf5292930e5b",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        9
+      ]
+    },
+    "8": {
+      "rValue": 26,
+      "name": "equal",
+      "UID": "5e070195-3b5b-4650-b1ab-ddd9b28050c2",
+      "NodeID": 8,
+      "lValue": {
+        "UID": "518499ac-0afa-419a-bc16-fa3beecb1494",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 7
+      }
+    },
+    "9": {
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "d6ce25bf-4622-46e8-aeee-4abc3516e89a",
+      "name": "doActionsByConditions",
+      "NodeID": 9,
+      "elseActionIds": [
+        12
+      ]
+    },
+    "11": {
+      "rValue": 40,
+      "name": "equal",
+      "UID": "622a81ec-5d77-4e43-abe3-fcd67536faf2",
+      "NodeID": 11,
+      "lValue": {
+        "UID": "f6e8b01c-ee36-422f-a68a-3f57727dd84e",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 10
+      }
+    },
+    "12": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "a9bfd85c-ec18-444b-bda4-b90ffe5cfe0a",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "4": {
+      "rValue": 13,
+      "name": "equal",
+      "UID": "1ddb9d20-71fe-4048-8249-eca15cc33517",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "1c1284ca-7a45-4e57-8621-a2d3556aa772",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 3
+      }
+    },
+    "24": {
+      "UID": "9c7ff7c9-1571-4471-9773-75dd7c8cc0b6",
+      "name": "stopPreset",
+      "presetName": "PM_Eff_parmon_10393_Buff",
+      "NodeID": 24
+    },
+    "15": {
+      "actionIds": [
+        13,
+        30
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "3de9b8e3-5a8c-4947-ad15-f9adacbe07e0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17,
+        25
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9139303,
+      "NodeID": 25,
+      "UID": "df142ebb-c4dd-474f-b50a-bb7dc053b30a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "name": "checkPetPrototypeId",
+      "UID": "8d48a9b2-3d5a-4497-a1f2-f118937bdde0",
+      "target": "OWNER",
+      "petPrototypeId": 1039100,
+      "NodeID": 16
+    },
+    "27": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "7fec9d4c-1254-47b3-8d2c-2db8d80c20f6",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0031efba-a32b-40c1-a9a0-ec8d9d4fb341",
+      "effectId": "Eff_Parmon_10393_Skill_Dash_01",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "29": {
+      "calcInfo": {
+        "passive_energy_cur": -40
+      },
+      "name": "calcResult",
+      "UID": "7ee1ce00-e8bc-42bb-881f-ccf17fed1e52",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9139303,
+      "NodeID": 30,
+      "UID": "1d7fbe03-49f6-4d38-9a10-d33a472917c2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "bc5df4c7-add9-4329-bdf7-b65fa903985f",
+      "effectId": "Eff_Parmon_10393_Skill_Dash_01",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "13": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d4de3034-8d50-40e0-9168-4b680deba525",
+      "effectId": "Eff_Parmon_10393_Skill_Dash_01",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "23": {
+      "UID": "00539b17-70f2-4c2b-a963-3b726d50e133",
+      "name": "stopPreset",
+      "presetName": "PM_Eff_parmon_10391_Buff",
+      "NodeID": 23
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    27,
+    5
+  ],
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    19,
+    23,
+    24,
+    29
+  ],
+  "onBuffStartIds": [
+    27
+  ]
+}

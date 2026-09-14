@@ -1,0 +1,33 @@
+{
+  "BPName": "ability_10450100",
+  "NodeID": 1,
+  "UID": "5f7c282c-2ff6-4eb0-a771-c580949539a1",
+  "abilityParamId": 10300040,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10450100001,
+      "name": "setCombatActionTimeline",
+      "UID": "ef3716da-afe0-4978-bc72-ceb2f1c96554",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_WaterHeal"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_Skill_WaterHeal"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 0,
+  "searchTargetRangeDown": 0
+}

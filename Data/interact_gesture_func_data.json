@@ -1,0 +1,1003 @@
+{
+  "3": {
+    "label": {
+      "name": 1589664492
+    },
+    "actions": {
+      "801118": {
+        "interactAction": 3,
+        "name": 1757246012,
+        "icon": "$UI_Icon_Action_GroupDance.png",
+        "index": 801118,
+        "res1": [
+          "Show_Dance02"
+        ],
+        "itemId": 160003,
+        "actionSound": "SFX_Act_Player_dance_effect",
+        "animParams": [
+          [
+            2,
+            1.5,
+            2.3
+          ],
+          [
+            -0.8,
+            -0.7,
+            0
+          ],
+          [
+            0.8,
+            -0.7,
+            0
+          ],
+          [
+            -1.6,
+            -1.4,
+            0
+          ],
+          [
+            1.6,
+            -1.4,
+            0
+          ]
+        ],
+        "interactOrder": 301
+      },
+      "801901": {
+        "initialClaim": 1,
+        "interactAction": 3,
+        "interactOrder": 302,
+        "itemId": 160028,
+        "icon": "$UI_Icon_Action_Spark.png",
+        "name": 1722015402,
+        "index": 801901
+      }
+    }
+  },
+  "4": {
+    "label": {
+      "name": 1427100728
+    },
+    "actions": {
+      "901007": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 407,
+        "itemId": 160024,
+        "icon": "$UI_Icon_Expression_SmileEvil.png",
+        "name": 1976385770,
+        "index": 901007
+      },
+      "901001": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 401,
+        "itemId": 160018,
+        "icon": "$UI_Icon_Expression_SmileMock.png",
+        "name": 1943401794,
+        "index": 901001
+      },
+      "901008": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 408,
+        "itemId": 160025,
+        "icon": "$UI_Icon_Expression_Dizzy.png",
+        "name": 2000781673,
+        "index": 901008
+      },
+      "901003": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 403,
+        "itemId": 160020,
+        "icon": "$UI_Icon_Expression_HeartBreak.png",
+        "name": 1750240138,
+        "index": 901003
+      },
+      "901002": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 402,
+        "itemId": 160019,
+        "icon": "$UI_Icon_Expression_Confused.png",
+        "name": 1332564985,
+        "index": 901002
+      },
+      "901006": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 406,
+        "itemId": 160023,
+        "icon": "$UI_Icon_Expression_Shy.png",
+        "name": 1528256908,
+        "index": 901006
+      },
+      "901004": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 404,
+        "itemId": 160021,
+        "icon": "$UI_Icon_Expression_Love.png",
+        "name": 1875917195,
+        "index": 901004
+      },
+      "901005": {
+        "initialClaim": 1,
+        "interactAction": 4,
+        "interactOrder": 405,
+        "itemId": 160022,
+        "icon": "$UI_Icon_Expression_CryHard.png",
+        "name": 1208030181,
+        "index": 901005
+      }
+    }
+  },
+  "7": {
+    "label": {
+      "name": 1514817748
+    },
+    "actions": {
+      "801907": {
+        "initialClaim": 1,
+        "interactAction": 7,
+        "interactOrder": 703,
+        "pet": [
+          1014200
+        ],
+        "icon": "$UI_Icon_Action_Suit_Pet.png",
+        "index": 801907,
+        "res2": [
+          "Set_B10014_Pose_Show"
+        ],
+        "animParams": [
+          [
+            2,
+            1.5,
+            2,
+            11
+          ],
+          [
+            -0.06,
+            0.6,
+            180
+          ]
+        ],
+        "res1": [
+          "Set_B10014_IdleSpecial"
+        ],
+        "objectType": 1,
+        "name": 1581644618
+      },
+      "801905": {
+        "initialClaim": 1,
+        "interactAction": 7,
+        "interactOrder": 701,
+        "pet": [
+          1003200,
+          1003201,
+          1003202,
+          1003203,
+          1003300,
+          1003305
+        ],
+        "icon": "$UI_Icon_Action_Suit_Pet.png",
+        "index": 801905,
+        "res2": [
+          "Set_B10022_Pose_Show"
+        ],
+        "animParams": [
+          [
+            2,
+            1.5,
+            2,
+            11
+          ],
+          [
+            0.72,
+            1.12,
+            0
+          ]
+        ],
+        "res1": [
+          "Set_B10022_Pose"
+        ],
+        "objectType": 1,
+        "name": 1681448166
+      },
+      "801906": {
+        "initialClaim": 1,
+        "interactAction": 7,
+        "interactOrder": 702,
+        "pet": [
+          1014200
+        ],
+        "icon": "$UI_Icon_Action_Suit_Pet.png",
+        "index": 801906,
+        "res2": [
+          "Set_G10014_Pose_Show"
+        ],
+        "animParams": [
+          [
+            2,
+            1.5,
+            2,
+            11
+          ],
+          [
+            -0.06,
+            0.6,
+            180
+          ]
+        ],
+        "res1": [
+          "Set_G10014_IdleSpecial"
+        ],
+        "objectType": 1,
+        "name": 1548063276
+      }
+    }
+  },
+  "5": {
+    "label": {
+      "name": 1164366721
+    },
+    "actions": {
+      "40500007": {
+        "initialClaim": 1,
+        "interactAction": 5,
+        "name": 2045236182,
+        "sortId": 3,
+        "icon": "$ui_item_40500007.png",
+        "index": 40500007,
+        "eventName": "placeWorldFurniture",
+        "itemId": 40500007,
+        "playType": 3,
+        "placeFurnitureDistance": 5,
+        "homeTemplateId": 40500007
+      },
+      "40900022": {
+        "initialClaim": 1,
+        "interactAction": 5,
+        "name": 1318040707,
+        "sortId": 5,
+        "icon": "$ui_item_40900022.png",
+        "index": 40900022,
+        "eventName": "placeWorldFurniture",
+        "itemId": 40900022,
+        "playType": 3,
+        "placeFurnitureDistance": 2,
+        "homeTemplateId": 40900022
+      },
+      "40900023": {
+        "initialClaim": 1,
+        "interactAction": 5,
+        "name": 1994896801,
+        "sortId": 6,
+        "icon": "$ui_item_40900023.png",
+        "index": 40900023,
+        "eventName": "placeWorldFurniture",
+        "itemId": 40900023,
+        "playType": 3,
+        "placeFurnitureDistance": 2,
+        "homeTemplateId": 40900023
+      },
+      "40600039": {
+        "initialClaim": 1,
+        "interactAction": 5,
+        "name": 1680254274,
+        "sortId": 4,
+        "icon": "$ui_item_40600039.png",
+        "index": 40600039,
+        "eventName": "placeWorldFurniture",
+        "itemId": 40600039,
+        "playType": 3,
+        "placeFurnitureDistance": 5,
+        "homeTemplateId": 40600039
+      },
+      "41000003": {
+        "initialClaim": 1,
+        "interactAction": 5,
+        "name": 1591783870,
+        "sortId": 2,
+        "icon": "$ui_item_41000003.png",
+        "index": 41000003,
+        "eventName": "placeWorldFurniture",
+        "itemId": 41000003,
+        "playType": 3,
+        "placeFurnitureDistance": 5,
+        "homeTemplateId": 41000003
+      },
+      "40900013": {
+        "initialClaim": 1,
+        "interactAction": 5,
+        "name": 2004267254,
+        "sortId": 7,
+        "icon": "$ui_item_40900013.png",
+        "index": 40900013,
+        "eventName": "placeWorldFurniture",
+        "itemId": 40900013,
+        "playType": 3,
+        "placeFurnitureDistance": 2,
+        "homeTemplateId": 40900013
+      }
+    }
+  },
+  "1": {
+    "label": {
+      "name": 1139452730
+    },
+    "actions": {
+      "801101": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1963211420,
+        "icon": "$UI_Icon_Action_Greet.png",
+        "index": 801101,
+        "itemId": 160004,
+        "actionSound": "SFX_Act_Player_Hello_effect",
+        "res1": [
+          "Daily_Hello"
+        ],
+        "interactOrder": 999
+      },
+      "801117": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1354031960,
+        "icon": "$UI_Icon_Action_LieDown.png",
+        "index": 801117,
+        "itemId": 160017,
+        "actionSound": "SFX_Act_Player_Lying_effect",
+        "res1": [
+          "Lying_Start",
+          "Lying_Loop",
+          "Lying_End"
+        ],
+        "interactOrder": 101
+      },
+      "801102": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1328116371,
+        "icon": "$UI_Icon_Action_CheerUp.png",
+        "index": 801102,
+        "res1": [
+          "Daily_Fighting"
+        ],
+        "itemId": 160005,
+        "actionSound": "SFX_Act_Player_Buff_effect",
+        "playType": 2,
+        "interactOrder": 104
+      },
+      "801116": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1529538151,
+        "icon": "$UI_Icon_Action_Disappointed.png",
+        "index": 801116,
+        "itemId": 160016,
+        "actionSound": "SFX_Act_Player_Orz_effect",
+        "res1": [
+          "Social_Orz_Start",
+          "Social_Orz_Loop",
+          "Social_Orz_End"
+        ],
+        "interactOrder": 102
+      },
+      "801113": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1271201200,
+        "icon": "$UI_Icon_Action_WaveHand.png",
+        "index": 801113,
+        "itemId": 160014,
+        "actionSound": "SFX_Act_Player_bye_effect",
+        "res1": [
+          "Story_Greet02"
+        ],
+        "interactOrder": 997
+      },
+      "801103": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1118491928,
+        "icon": "$UI_Icon_Action_ThumbUp.png",
+        "index": 801103,
+        "itemId": 160006,
+        "actionSound": "SFX_Act_Player_Thank_effect",
+        "res1": [
+          "Daily_Thanks"
+        ],
+        "interactOrder": 996
+      },
+      "801114": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1365676458,
+        "icon": "$UI_Icon_Action_Bow.png",
+        "index": 801114,
+        "itemId": 160015,
+        "actionSound": "SFX_Act_Player_bow_effect",
+        "res1": [
+          "Social_Bow"
+        ],
+        "interactOrder": 998
+      },
+      "801107": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1483803831,
+        "icon": "$UI_Icon_Action_HugImo.png",
+        "index": 801107,
+        "eventName": "openHugPetSelectPanel",
+        "itemId": 160008,
+        "playType": 3,
+        "interactOrder": 995
+      },
+      "801104": {
+        "initialClaim": 1,
+        "interactAction": 1,
+        "name": 1197335302,
+        "icon": "$UI_Avatar_Preview_Show_Dizi.png",
+        "index": 801104,
+        "eventName": "playFlute",
+        "itemId": 160007,
+        "res1": [
+          "Flute_Skill_Cure_Start",
+          "Flute_Skill_Cure_StandLoop",
+          "Flute_Skill_Cure_StandEnd"
+        ],
+        "playType": 3,
+        "interactOrder": 1000
+      },
+      "801115": {
+        "res1": [
+          "Social_Beg_Start",
+          "Social_Beg_Loop",
+          "Social_Beg_End"
+        ],
+        "name": 2049355958,
+        "interactAction": 1,
+        "interactOrder": 103,
+        "itemId": 160001,
+        "actionSound": "SFX_Act_Player_Beg_effect",
+        "icon": "$UI_Icon_Action_Plead.png",
+        "index": 801115
+      }
+    }
+  },
+  "2": {
+    "label": {
+      "name": 1787740534
+    },
+    "actions": {
+      "801120": {
+        "costItemId": [
+          160027,
+          1
+        ],
+        "initialClaim": 1,
+        "interactAction": 2,
+        "interactOrder": 208,
+        "icon": "$UI_Icon_Action_Cheers.png",
+        "index": 801120,
+        "res2": [
+          "Social_CheersRight"
+        ],
+        "res1": [
+          "Social_CheersLeft"
+        ],
+        "playType": 2,
+        "needTargetAgree": 1,
+        "itemId": 160026,
+        "actionSound": "SFX_Act_Player_cheers_effect",
+        "animParams": [
+          [
+            [
+              2,
+              2.9,
+              1.5,
+              11
+            ],
+            [
+              1.1,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              1.5,
+              12
+            ],
+            [
+              1.24,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              1.5,
+              21
+            ],
+            [
+              1.1,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              3.3,
+              1.5,
+              22
+            ],
+            [
+              1.26,
+              0,
+              0
+            ]
+          ]
+        ],
+        "name": 1708124997
+      },
+      "801108": {
+        "initialClaim": 1,
+        "interactAction": 2,
+        "interactOrder": 203,
+        "icon": "$UI_Icon_Action_FirstMeet.png",
+        "index": 801108,
+        "res2": [
+          "Social_LookShyRight_Start",
+          "Social_LookShyRight_Loop",
+          "Social_LookShyRight_End"
+        ],
+        "res1": [
+          "Social_LookShyLeft_Start",
+          "Social_LookShyLeft_Loop",
+          "Social_LookShyLeft_End"
+        ],
+        "playType": 2,
+        "needTargetAgree": 1,
+        "itemId": 160009,
+        "friendshipLevel": 1,
+        "animParams": [
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              11
+            ],
+            [
+              0.33,
+              0.12,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              12
+            ],
+            [
+              0.45,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              21
+            ],
+            [
+              0.4,
+              0.05,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              22
+            ],
+            [
+              0.5,
+              0,
+              0
+            ]
+          ]
+        ],
+        "name": 1865446923
+      },
+      "801112": {
+        "initialClaim": 1,
+        "interactAction": 2,
+        "interactOrder": 207,
+        "icon": "$UI_Icon_Action_HeartHand.png",
+        "index": 801112,
+        "res2": [
+          "Social_HeartSignRight_Start",
+          "Social_HeartSignRight_Loop",
+          "Social_HeartSignRight_End"
+        ],
+        "res1": [
+          "Social_HeartSignLeft_Start",
+          "Social_HeartSignLeft_Loop",
+          "Social_HeartSignLeft_End"
+        ],
+        "playType": 2,
+        "needTargetAgree": 1,
+        "itemId": 160013,
+        "friendshipLevel": 5,
+        "animParams": [
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              11
+            ],
+            [
+              0.4,
+              0.16,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              12
+            ],
+            [
+              0.52,
+              0.16,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              21
+            ],
+            [
+              0.52,
+              0.16,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.8,
+              1.5,
+              22
+            ],
+            [
+              0.64,
+              0,
+              0
+            ]
+          ]
+        ],
+        "name": 1149789601
+      },
+      "801109": {
+        "initialClaim": 1,
+        "interactAction": 2,
+        "interactOrder": 204,
+        "icon": "$UI_Icon_Action_PeaceHand.png",
+        "index": 801109,
+        "res2": [
+          "Social_YeahRight_Start",
+          "Social_YeahRight_Loop",
+          "Social_YeahRight_End"
+        ],
+        "res1": [
+          "Social_YeahLeft_Start",
+          "Social_YeahLeft_Loop",
+          "Social_YeahLeft_End"
+        ],
+        "playType": 2,
+        "needTargetAgree": 1,
+        "itemId": 160010,
+        "friendshipLevel": 2,
+        "animParams": [
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              11
+            ],
+            [
+              0.31,
+              0.02,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              12
+            ],
+            [
+              0.63,
+              0.15,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              21
+            ],
+            [
+              0.4,
+              0.25,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              22
+            ],
+            [
+              0.7,
+              0.2,
+              0
+            ]
+          ]
+        ],
+        "name": 1264714415
+      },
+      "801119": {
+        "interactAction": 2,
+        "name": 1646476114,
+        "icon": "$UI_Icon_Action_HeadPat.png",
+        "index": 801119,
+        "res2": [
+          "Social_Patreceive"
+        ],
+        "res1": [
+          "Social_Pat"
+        ],
+        "needTargetAgree": 1,
+        "itemId": 160002,
+        "actionSound": "SFX_Act_Player_pat_effect",
+        "animParams": [
+          [
+            [
+              2,
+              1.5,
+              2,
+              11
+            ],
+            [
+              -0.06,
+              0.6,
+              180
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              2,
+              12
+            ],
+            [
+              0.01,
+              0.5,
+              180
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              2,
+              21
+            ],
+            [
+              -0.04,
+              0.6,
+              180
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              2,
+              22
+            ],
+            [
+              0.03,
+              0.6,
+              180
+            ]
+          ]
+        ],
+        "interactOrder": 202
+      },
+      "801110": {
+        "initialClaim": 1,
+        "interactAction": 2,
+        "interactOrder": 205,
+        "icon": "$UI_Icon_Action_Tacit.png",
+        "index": 801110,
+        "res2": [
+          "Social_HeartRight_Start",
+          "Social_HeartRight_Loop",
+          "Social_HeartRight_End"
+        ],
+        "res1": [
+          "Social_HeartLeft_Start",
+          "Social_HeartLeft_Loop",
+          "Social_HeartLeft_End"
+        ],
+        "playType": 2,
+        "needTargetAgree": 1,
+        "itemId": 160011,
+        "friendshipLevel": 3,
+        "animParams": [
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              11
+            ],
+            [
+              0.48,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              12
+            ],
+            [
+              0.55,
+              0.07,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              21
+            ],
+            [
+              0.35,
+              0.07,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              22
+            ],
+            [
+              0.5,
+              0.07,
+              0
+            ]
+          ]
+        ],
+        "name": 1771659196
+      },
+      "801111": {
+        "initialClaim": 1,
+        "interactAction": 2,
+        "interactOrder": 206,
+        "icon": "$UI_Icon_Action_CupFace.png",
+        "index": 801111,
+        "res2": [
+          "Social_HoldFaceRight_Start",
+          "Social_HoldFaceRight_Loop",
+          "Social_HoldFaceRight_End"
+        ],
+        "res1": [
+          "Social_HoldFaceLeft_Start",
+          "Social_HoldFaceLeft_Loop",
+          "Social_HoldFaceLeft_End"
+        ],
+        "playType": 2,
+        "needTargetAgree": 1,
+        "itemId": 160012,
+        "friendshipLevel": 4,
+        "animParams": [
+          [
+            [
+              2,
+              1.5,
+              1.5,
+              11
+            ],
+            [
+              0.52,
+              0.15,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              1.5,
+              1.8,
+              12
+            ],
+            [
+              0.52,
+              0.55,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              2,
+              1.5,
+              21
+            ],
+            [
+              0.4,
+              0.35,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              2,
+              1.5,
+              22
+            ],
+            [
+              0.4,
+              0.68,
+              0
+            ]
+          ]
+        ],
+        "name": 1321981737
+      }
+    }
+  }
+}

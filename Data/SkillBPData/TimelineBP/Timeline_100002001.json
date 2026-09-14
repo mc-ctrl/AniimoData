@@ -1,0 +1,209 @@
+{
+  "nodeMap": {
+    "6": {
+      "UID": "b0accbc8-1bd6-49c9-b0ab-368277dbe61f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "31": {
+      "UID": "e9e989ed-ce19-42e0-8299-fe1a9317ca8b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "NodeID": 31
+    },
+    "20": {
+      "UID": "17d4d457-681a-4e27-b4c6-a13f04aaccf3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "474a2714-f892-410e-88f1-3deef77397f0",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "4": {
+      "UID": "76706642-aaff-4136-ab12-de55b60d169f",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0764e70e-189c-4686-b77c-722f5319a64f",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_icecolumn_prepare",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "39168584-046e-40e9-8510-fae74e49aff6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.44,
+      "NodeID": 17,
+      "UID": "f929407b-50be-4b6a-b0f5-bb6836bd92c1"
+    },
+    "23": {
+      "UID": "5335e920-da3e-4171-a7cb-a629fac52847",
+      "eventType": "Notify",
+      "time": 0.84,
+      "NodeID": 23
+    },
+    "25": {
+      "UID": "45af4790-354e-4dcb-8e1f-409e1b4a2102",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "NodeID": 25
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2764ef5f-f2d1-4368-91cf-113515e2d9fc",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_icecolumn_release",
+      "NodeID": 26
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 27,
+      "UID": "4f2195b2-8740-4462-9778-5fd4d813f46a"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5126ef96-d514-4429-90d6-b03aeb356d91",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_icecolumn_end",
+      "NodeID": 28
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 29,
+      "UID": "d89f12e2-a31b-4cd4-b06f-cbe96bb92640"
+    },
+    "30": {
+      "pitchCurveName": "CommonPitch_10angle",
+      "duration": 1,
+      "NodeID": 30,
+      "UID": "2b1dfa70-b2ef-4eab-a0ba-ae9e70cf0d56",
+      "blendInTime": 0.3,
+      "target": "OWNER",
+      "name": "playPitchYawCameraAnim"
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        -5,
+        0
+      ],
+      "templateId": 104306,
+      "name": "createEntity",
+      "UID": "2d8ab792-25be-45ac-87d0-0e5e815847f1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 32,
+      "pos": "OWNER"
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2e64fb43-fc28-40af-9d72-a3a582eed460",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Taught01"
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.84,
+      "NodeID": 34,
+      "UID": "a110965e-48e5-42e3-80d1-2177bf15f3ef"
+    },
+    "16": {
+      "UID": "b577a014-42ce-4f25-9b6b-7a6134258dc0",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_100002",
+  "NodeID": 8,
+  "UID": "a2a1bf5c-05ce-48e9-a982-9c180f703a56",
+  "eventIds": [
+    6,
+    14,
+    34,
+    23,
+    17,
+    25,
+    27,
+    20,
+    29,
+    31
+  ],
+  "layer": "Base",
+  "length": 4.33
+}

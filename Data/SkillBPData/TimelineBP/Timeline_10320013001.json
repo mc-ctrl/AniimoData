@@ -1,0 +1,246 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "69bd6e68-3379-4c23-be42-e85a330b8590",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 37
+    },
+    "39": {
+      "UID": "532e8ea6-5865-42b3-9cf8-0fdabbc9fe29",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 40,
+      "UID": "8d8d4141-9106-412c-98dd-8bc4bddb8ba5"
+    },
+    "35": {
+      "UID": "d116b24e-c847-4c19-8acc-540bfc645c69",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 35
+    },
+    "31": {
+      "UID": "fd636126-7d18-4577-b9dc-e11648b28ec4",
+      "eventType": "Notify",
+      "time": 0.42,
+      "NodeID": 31
+    },
+    "9": {
+      "name": "setNextComboAbilityId",
+      "UID": "b3e974fe-add5-478a-97ca-59a809790b6b",
+      "target": "OWNER",
+      "NodeID": 9,
+      "abilityId": 0
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "1ae38e9b-b11b-4cd2-9f3b-72f10dd2706e",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "4": {
+      "UID": "a43fa044-7851-4ec9-b5d7-1fc80de079a7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          35,
+          9,
+          32
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "name": "setSkillHitDistance",
+      "UID": "1fe474ad-ce00-48b9-ac70-f5922052b7e4",
+      "skillHitDisplacementId": 10320001,
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "10": {
+      "name": "setNextComboAbilityId",
+      "UID": "bad5f620-107c-4892-80a2-d7a9fbf94d73",
+      "target": "OWNER",
+      "NodeID": 10,
+      "abilityId": 0
+    },
+    "15": {
+      "UID": "91b754f1-33c9-428b-afa1-48fe886f3bf0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.46,
+      "NodeID": 26,
+      "UID": "824c42dd-0932-46a2-aaac-bb0d7cd43042"
+    },
+    "27": {
+      "UID": "d167b91b-7449-4930-9ad4-2529b82a6e7e",
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 27
+    },
+    "17": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.8
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10023,
+        "hitSoundType": "h",
+        "impulseId": 5001,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10004
+      },
+      "UID": "ac5c84bc-8813-466d-bc93-b89af02b6744",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 17
+    },
+    "12": {
+      "UID": "b0db03c7-18e2-4056-9c91-a55af368c33a",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          37,
+          10
+        ]
+      },
+      "NodeID": 12
+    },
+    "13": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a88f9106-1e5d-47fb-ad37-d5012becf5ad",
+      "target": "OWNER",
+      "NodeID": 13,
+      "animId": "Attack04"
+    },
+    "32": {
+      "name": "setSkillHitDistance",
+      "UID": "d82e2ab0-1577-427c-a17a-30a7bd5f53bd",
+      "skillHitDisplacementId": 1000,
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 17,
+      "NodeID": 19,
+      "UID": "cada6846-b8d6-43ce-8b5a-4fa958107c89",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            1.5,
+            -1
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            4,
+            1.8,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5001,
+      "actionIds": [
+        17,
+        23
+      ]
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.59,
+      "NodeID": 21,
+      "UID": "d8fa0f12-a38b-4e68-8e8b-7103237e2e79"
+    },
+    "23": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.8
+      },
+      "name": "calcResult",
+      "UID": "a8403c54-d969-4ad5-a035-fb561ec54ea1",
+      "target": "CASTER",
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_10320013",
+  "NodeID": 6,
+  "UID": "c89cfd7e-8ee4-413c-a88f-7d305dea03a5",
+  "eventIds": [
+    4,
+    12,
+    15,
+    26,
+    27,
+    21,
+    31,
+    40
+  ],
+  "layer": "Base",
+  "length": 1.55
+}

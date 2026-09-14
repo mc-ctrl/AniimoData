@@ -1,0 +1,66 @@
+{
+  "33909825": {
+    "createType": 1,
+    "templateId": 24,
+    "staticId": 33909825,
+    "rotation": [
+      0,
+      0.05,
+      0,
+      1
+    ],
+    "position": [
+      -23.45,
+      28.8,
+      -66.8
+    ]
+  },
+  "33910276": {
+    "createType": 1,
+    "templateId": 24,
+    "staticId": 33910276,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      -1.95,
+      37.56,
+      -69.53
+    ]
+  },
+  "33318563": {
+    "createType": 1,
+    "templateId": 51,
+    "staticId": 33318563,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      -81.75,
+      0,
+      32.32
+    ]
+  },
+  "33907909": {
+    "createType": 1,
+    "templateId": 24,
+    "staticId": 33907909,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      -27.65,
+      22.52,
+      -89.83
+    ]
+  }
+}

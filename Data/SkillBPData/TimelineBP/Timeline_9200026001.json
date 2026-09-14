@@ -1,0 +1,350 @@
+{
+  "loop": true,
+  "nodeMap": {
+    "37": {
+      "UID": "b4429dc0-87b5-4dab-a792-2ffee3ffb488",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "NodeID": 37
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "86314576-f520-425a-b054-5355fe181982",
+      "effectId": "Eff_Env_Sceneobject_BossCatch_KeyItem_Buff_Loop",
+      "speed": 1,
+      "NodeID": 39
+    },
+    "82": {
+      "eventName": "FISHING_CAPTURE_SKILL_SHOT_END",
+      "name": "notifySystemEvent",
+      "UID": "cfcca8af-da7a-4398-b453-5c8a2219c7f3",
+      "target": "OWNER",
+      "NodeID": 82
+    },
+    "64": {
+      "relation": 2,
+      "checkValidLock": false,
+      "heightDown": 0.5,
+      "NodeID": 64,
+      "UID": "f39d42fa-658c-47c2-a264-0db8d473c15c",
+      "radius": 20,
+      "name": "searchEntity",
+      "heightUp": 1.5
+    },
+    "35": {
+      "cdTime": 3,
+      "name": "forceSetSkillCD",
+      "NodeID": 35,
+      "UID": "ae9869ec-2d21-4bcf-9df7-e6c72fa0286a",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 9200026
+    },
+    "44": {
+      "name": "createCatchBallProjectile",
+      "arcHeight": 0.3,
+      "bounceDuration": 0,
+      "bounceSpeed": 6,
+      "flyDuration": 0.4,
+      "pos": {
+        "isRootDir": false,
+        "NodeID": 43,
+        "UID": "643eae78-bf86-4d30-8139-c8dbaa46bd3c",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone Hold Ball"
+      },
+      "projectile": {
+        "sleepTime": 0,
+        "hitActionIds": [
+          47,
+          74
+        ],
+        "NodeID": 49,
+        "UID": "ff326a27-8fab-4fef-bff2-6d74409c822d",
+        "effectId": "EffD_Catch_CatchBall_BossCatchBalll_TrailSuccess",
+        "radius": 0.5,
+        "name": "catchBallProjectile"
+      },
+      "target": {
+        "relation": 2,
+        "checkValidLock": false,
+        "heightDown": 0.5,
+        "NodeID": 70,
+        "UID": "16a592cf-872c-446d-8a08-bf3fb814fee7",
+        "radius": 20,
+        "name": "searchEntity",
+        "heightUp": 1.5
+      },
+      "rotation": "OWNER",
+      "UID": "32d1c7fb-0070-48ac-8cdc-4492e969d8b8",
+      "accuracy": 0.2,
+      "NodeID": 44
+    },
+    "81": {
+      "UID": "a4570ac8-ef57-4024-9aa5-4a9e7dda6b14",
+      "name": "hideCatchBall",
+      "NodeID": 81
+    },
+    "66": {
+      "UID": "33c27246-8151-438f-9b4e-124ece2de4c4",
+      "name": "enableFishingCaptureState",
+      "enable": true,
+      "NodeID": 66
+    },
+    "46": {
+      "tickInterval": 0.2,
+      "eventType": "NotifyState",
+      "endTime": 60,
+      "NodeID": 46,
+      "UID": "75d94623-6652-4c57-b00c-854028a74299",
+      "onUpdate": {
+        "actionIds": [
+          44,
+          78
+        ]
+      },
+      "startTime": 0.4,
+      "onEnter": {
+        "actionIds": [
+          44,
+          78
+        ]
+      }
+    },
+    "43": {
+      "isRootDir": false,
+      "NodeID": 43,
+      "UID": "643eae78-bf86-4d30-8139-c8dbaa46bd3c",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone Hold Ball"
+    },
+    "70": {
+      "relation": 2,
+      "checkValidLock": false,
+      "heightDown": 0.5,
+      "NodeID": 70,
+      "UID": "16a592cf-872c-446d-8a08-bf3fb814fee7",
+      "radius": 20,
+      "name": "searchEntity",
+      "heightUp": 1.5
+    },
+    "68": {
+      "action": {
+        "actionIds": [
+          66
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 68,
+      "UID": "fec94cc3-03aa-43a6-9668-6054254b85a5"
+    },
+    "65": {
+      "lockTarget": {
+        "relation": 2,
+        "checkValidLock": false,
+        "heightDown": 0.5,
+        "NodeID": 64,
+        "UID": "f39d42fa-658c-47c2-a264-0db8d473c15c",
+        "radius": 20,
+        "name": "searchEntity",
+        "heightUp": 1.5
+      },
+      "name": "lockTarget",
+      "UID": "033ddf4a-a38a-4f7f-bba0-2292d1aa89fb",
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "2": {
+      "UID": "5d8a4c96-e3f2-42c6-8fde-05c759ab8c94",
+      "name": "showSkillCountDown",
+      "NodeID": 2
+    },
+    "22": {
+      "UID": "dd741d7f-8dee-4a10-86eb-addf8ee3703b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "cfa82d73-ebaa-44ba-a85c-ef9c8c6ab0e4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          62,
+          10,
+          65,
+          2,
+          39,
+          50,
+          72,
+          73,
+          81
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "8503332d-4e3d-4297-9cb4-6048c9489171",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          82,
+          80,
+          17
+        ]
+      },
+      "NodeID": 24
+    },
+    "74": {
+      "targetPos": "PROJECTILE",
+      "name": "playSoundAtPos",
+      "UID": "1daa1616-1850-45d1-8f9e-079fa70f655b",
+      "soundId": "SFX_Combat_BossCatch_FireThrow_Hit",
+      "NodeID": 74
+    },
+    "10": {
+      "UID": "e6dde422-4a94-41f1-aadd-5f6eb5450cf7",
+      "name": "setMask",
+      "mask": {
+        "canMove": 1,
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "72": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "830f51cc-faf4-4da1-9ea5-4b29eca8b323",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossCatch_FireThrow_Start",
+      "NodeID": 72
+    },
+    "47": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0d20b5ac-7e13-43c6-b82a-ef82a44016db",
+      "effectId": "Eff_Catch_MagicCube_BossCatchBall_H",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "73": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8e21a747-863c-45a8-9003-7603a5ecf2ec",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossCatch_FireThrow_Loop",
+      "NodeID": 73
+    },
+    "62": {
+      "key": "target",
+      "name": "setCacheVal",
+      "UID": "b281a901-005f-45f2-842d-426f8ea93e6e",
+      "target": "OWNER",
+      "val": {
+        "relation": 2,
+        "checkValidLock": false,
+        "heightDown": 0.5,
+        "NodeID": 61,
+        "UID": "5a32548b-06fe-4bdf-80c7-4b5156f5cc9d",
+        "radius": 20,
+        "name": "searchEntity",
+        "heightUp": 1.5
+      },
+      "NodeID": 62
+    },
+    "17": {
+      "timelineId": 9200026002,
+      "name": "jumpToNextTimeline",
+      "UID": "6b4fa1c9-0e2e-4fd3-b89d-dbb19fe7ae12",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "49": {
+      "sleepTime": 0,
+      "hitActionIds": [
+        47,
+        74
+      ],
+      "NodeID": 49,
+      "UID": "ff326a27-8fab-4fef-bff2-6d74409c822d",
+      "effectId": "EffD_Catch_CatchBall_BossCatchBalll_TrailSuccess",
+      "radius": 0.5,
+      "name": "catchBallProjectile"
+    },
+    "78": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2964d979-8d5c-46f7-94dd-37a3e81bb40c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossCatch_FireThrow_Shot",
+      "NodeID": 78
+    },
+    "50": {
+      "target": "OWNER",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "432c3790-1c29-4092-91dc-48324056b569",
+      "speed": 1,
+      "NodeID": 50,
+      "animId": "Skill_FireThrow_Start"
+    },
+    "21": {
+      "chargeTimeActions": [
+        {
+          "actionIds": [
+            82,
+            80,
+            17
+          ],
+          "chargeTime": 0
+        }
+      ],
+      "minChargeTime": 0.4,
+      "NodeID": 21,
+      "UID": "85239ed2-a226-4d64-84ab-742e55753b02",
+      "name": "registerStopChargeEvent"
+    },
+    "61": {
+      "relation": 2,
+      "checkValidLock": false,
+      "heightDown": 0.5,
+      "NodeID": 61,
+      "UID": "5a32548b-06fe-4bdf-80c7-4b5156f5cc9d",
+      "radius": 20,
+      "name": "searchEntity",
+      "heightUp": 1.5
+    },
+    "80": {
+      "UID": "bd989124-c2f7-479f-9d34-bd5ccd05536c",
+      "name": "hideCatchBall",
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_9200026",
+  "NodeID": 6,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    4,
+    37,
+    68,
+    46,
+    22,
+    24
+  ],
+  "layer": "Base",
+  "length": 60
+}

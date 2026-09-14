@@ -1,0 +1,157 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120703",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10,
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    6,
+    9,
+    23
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "calcInfo": {
+        "ep_cost_reduce_ratio": 0
+      },
+      "calcInfoByLuaConfig": {
+        "ep_cost_reduce_ratio": "param1",
+        "type": 1,
+        "id": 2120703
+      },
+      "UID": "1b8ec00c-a684-4787-90bb-271adcd31d91",
+      "name": "addBuffDynamicAttribute",
+      "isClearOld": true,
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "3c8e2751-9418-42bf-916c-3e4a729af841",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 13
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "580ad48a-39de-45c1-8c64-d08a2acd1a5f",
+      "effectId": "Eff_Hit_Heal",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "duration": 15,
+      "disableWhenFinished": true,
+      "NodeID": 10,
+      "UID": "81a7e94f-5dfd-4486-a0ae-0167c281737d",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "name": "playPreset"
+    },
+    "15": {
+      "UID": "504b34f3-62b5-4014-86e4-ad99f37a8e13",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 15
+    },
+    "25": {
+      "calcInfo": {
+        "ep_cost_reduce_ratio": 0
+      },
+      "isClearOld": true,
+      "UID": "d18254ac-75b7-49c4-a96c-0303e90da120",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 25
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "d6c4da5d-13bc-4599-a1e1-2a7531e83a8c",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Start",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "23": {
+      "thresholdActionIds": [
+        22
+      ],
+      "failedActionIds": [
+        25
+      ],
+      "threshold": 1,
+      "UID": "1a5723df-7105-412f-afd6-976cba557fe6",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "normalGrass",
+      "NodeID": 23,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "9": {
+      "name": "calcResult",
+      "UID": "98686256-652c-4158-9de3-bc49fc4388f1",
+      "target": "OWNER",
+      "NodeID": 9,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param2",
+        "type": 1,
+        "id": 2120703
+      }
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "ad259cf5-2fa3-4347-90c4-fd929f0f20eb",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Attack_02",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "94c44fc8-e533-405c-92cd-e8209add3d45",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "19": {
+      "UID": "dbbdcf9c-7ece-4708-96ad-83474c094297",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": true,
+      "NodeID": 19
+    },
+    "20": {
+      "UID": "687ed171-62dd-4555-a894-66d35f3590da",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": false,
+      "NodeID": 20
+    },
+    "12": {
+      "duration": 15,
+      "disableWhenFinished": true,
+      "NodeID": 12,
+      "UID": "fdfa4e28-13b9-4888-883e-95f683b6ef3d",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "name": "playPreset"
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2120703,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    13,
+    15,
+    16,
+    18,
+    20
+  ],
+  "onBuffStartIds": [
+    2,
+    10,
+    12,
+    19
+  ]
+}

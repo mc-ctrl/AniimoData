@@ -1,0 +1,195 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_11810400",
+  "NodeID": 0,
+  "duration": 0.75,
+  "effectId": "Eff_Parmon_10181_Skill_MetalPerformance01",
+  "onProjectileStartIds": [
+    86
+  ],
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "defaultHitSoundType": "s",
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    76,
+    79
+  ],
+  "onProjectileHitIds": [
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "74": {
+      "UID": "6e9f9a72-2759-4333-a563-7bab2ec9ad22",
+      "value": "ball",
+      "name": "print",
+      "NodeID": 74
+    },
+    "46": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11810400,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "eb004df1-af24-4ee1-88cf-afe856658460",
+      "target": "TARGET",
+      "NodeID": 46,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "isPlayRadialBlur": true,
+        "impulseId": 13001,
+        "defaultHitEffect": "Eff_Hit_Wind_Blunt"
+      }
+    },
+    "47": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "6389513e-3527-4efa-abe8-21b7735072ce",
+      "effectId": "Eff_Hit_Wind_Blunt_Big",
+      "speed": 1.01,
+      "NodeID": 47
+    },
+    "76": {
+      "offsetXYZ": [
+        0,
+        -0.5,
+        0
+      ],
+      "templateId": 101311,
+      "name": "createEntity",
+      "UID": "919761b6-f83a-455a-8bf5-1a879a03b587",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": {
+        "UID": "489cedaa-90a4-4412-aa6b-1eb3f40be213",
+        "name": "getProjectileCacheVal",
+        "key": "Rotate",
+        "NodeID": 87
+      },
+      "NodeID": 76,
+      "pos": {
+        "UID": "0339e17a-fe9b-4c6b-8e10-43b03e0ea65e",
+        "name": "getProjectilePos",
+        "NodeID": 75
+      }
+    },
+    "28": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 46,
+      "NodeID": 28,
+      "UID": "00069a97-6512-4572-834c-aede82e8b18c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 13001,
+      "actionIds": [
+        46,
+        47,
+        74,
+        26
+      ]
+    },
+    "86": {
+      "key": "Rotate",
+      "name": "setProjectileCacheVal",
+      "UID": "99d9c9f5-9cc4-4fa9-b774-d3b6f90c25cf",
+      "val": {
+        "UID": "778d2238-69ee-4243-b087-6cc6a7668897",
+        "target": "OWNER",
+        "name": "getTargetRotation",
+        "NodeID": 85
+      },
+      "NodeID": 86
+    },
+    "44": {
+      "UID": "ff292ded-2168-4d4a-a0bf-82de53c92b71",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 44
+    },
+    "79": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "6ee45c21-c26c-4970-84cd-31e220d27913",
+      "target": "OWNER",
+      "val": {
+        "UID": "68754dbe-ef55-4d69-a830-56e74dd7df29",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 78
+      },
+      "NodeID": 79
+    },
+    "25": {
+      "calcInfo": {},
+      "name": "calcResult",
+      "UID": "e17ee39a-9601-499a-9b37-785339728c67",
+      "target": "CASTER",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        44
+      ],
+      "UID": "10569c43-8c48-4c52-84cb-9b4d661a39d5",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    }
+  },
+  "tickInterval": 0.01,
+  "calcResultNodeId": 46,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Wind_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 13001,
+  "acceleration": 0
+}

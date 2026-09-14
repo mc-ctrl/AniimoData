@@ -1,0 +1,254 @@
+{
+  "nodeMap": {
+    "197": {
+      "name": "stopEffectStr",
+      "UID": "428035d1-f2b8-46ce-95ea-c9488aa7235e",
+      "effectId": "Eff_Parmon_10053_Skill_ChargePunch_Charge_01",
+      "target": "OWNER",
+      "NodeID": 197
+    },
+    "199": {
+      "action": {
+        "actionIds": [
+          197,
+          212,
+          201,
+          213,
+          285
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.22,
+      "NodeID": 199,
+      "UID": "2f64f8c1-322e-4f06-9761-75d04f78f2a4"
+    },
+    "212": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 210,
+      "NodeID": 212,
+      "UID": "89c32f6c-051a-4ba6-ac8f-a0abba0a7b92",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            1,
+            2,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        210
+      ]
+    },
+    "221": {
+      "name": "stopSoundStr",
+      "UID": "e20e1f8c-8de7-40db-84df-42436b799d6e",
+      "soundId": "parmon_wolferno_skill_charge_punch01",
+      "target": "OWNER",
+      "NodeID": 221
+    },
+    "220": {
+      "name": "stopSoundStr",
+      "UID": "86d7a1b6-6c85-4ba4-8481-358a8fd22348",
+      "soundId": "parmon_wolferno_skill_charge_punch02",
+      "target": "OWNER",
+      "NodeID": 220
+    },
+    "205": {
+      "action": {
+        "actionIds": [
+          203
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 205,
+      "UID": "441ccbe5-a4f2-4c23-a44a-79f4bfa2e44c"
+    },
+    "203": {
+      "UID": "2d9af993-7454-4b7f-a2ff-0ea50e14909e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 203
+    },
+    "285": {
+      "name": "stopEffectStr",
+      "UID": "752f43f7-198d-4a71-84b1-75655905ca39",
+      "effectId": "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Warning",
+      "target": "OWNER",
+      "NodeID": 285
+    },
+    "219": {
+      "name": "stopSoundStr",
+      "UID": "a748fcc3-6fd4-4f24-a991-4d0f9ec620bb",
+      "soundId": "parmon_wolferno_skill_charge_punch01_fire",
+      "target": "OWNER",
+      "NodeID": 219
+    },
+    "182": {
+      "UID": "0f57f297-4348-4e65-9f60-b775bb8ae674",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 182
+    },
+    "184": {
+      "UID": "4b23758b-cedf-4b62-998f-e5888e970304",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          182
+        ]
+      },
+      "NodeID": 184
+    },
+    "201": {
+      "UID": "607f9a3e-c7e7-4777-a8d0-1233d09e7107",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 201
+    },
+    "217": {
+      "name": "stopSoundStr",
+      "UID": "774583a4-7ab5-4deb-962b-6492041f6360",
+      "soundId": "parmon_wolferno_skill_charge_punch03",
+      "target": "OWNER",
+      "NodeID": 217
+    },
+    "189": {
+      "UID": "1849d2a5-dae2-4464-b45a-2d375f72c8ed",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 189
+    },
+    "196": {
+      "action": {
+        "actionIds": [
+          195
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 196,
+      "UID": "943db2c7-18e2-4a50-bead-d130d55b384d"
+    },
+    "191": {
+      "UID": "578a9b41-ca72-4275-a701-0940cecd475b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          189,
+          217,
+          219,
+          220,
+          221
+        ]
+      },
+      "NodeID": 191
+    },
+    "192": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "295c6290-5b71-46bd-9391-89b8101e4e0f",
+      "target": "OWNER",
+      "NodeID": 192,
+      "animId": "Skill_ChargePunch01"
+    },
+    "213": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4059246d-80ba-4782-a803-2fabc4800083",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_charge_punch01",
+      "NodeID": 213
+    },
+    "194": {
+      "UID": "63deb62d-261c-43ea-993a-d82dcbef96f9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          192
+        ]
+      },
+      "NodeID": 194
+    },
+    "195": {
+      "offsetXYZ": [
+        0,
+        0,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3bc7626b-cbdd-4d79-90b0-363534ddcc3f",
+      "effectId": "Eff_Parmon_10053_Skill_ChargePunch_01",
+      "speed": 1.5,
+      "NodeID": 195
+    },
+    "210": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10530531,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "1a00fcbc-e231-4c1d-97d1-06e93fe2f874",
+      "target": "TARGET",
+      "NodeID": 210,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000
+      }
+    }
+  },
+  "BPName": "ability_10530531",
+  "NodeID": 186,
+  "UID": "1b905fde-beeb-4187-99e1-11a479eb53d4",
+  "eventIds": [
+    184,
+    191,
+    194,
+    199,
+    205,
+    196
+  ],
+  "layer": "Base",
+  "length": 0.9
+}

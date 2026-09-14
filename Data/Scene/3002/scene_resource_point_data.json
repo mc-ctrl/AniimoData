@@ -1,0 +1,163 @@
+{
+  "55766421": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -1677.31,
+      92.57,
+      743.92
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 55680217,
+    "id": 55766421,
+    "yaw": 0,
+    "templateId": 55422930,
+    "activeRangeOverride": 0,
+    "routeIds": [
+      55766435
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "56217489": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "name": "",
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 55709708,
+    "sandboxId": 53873774,
+    "id": 56217489,
+    "yaw": 301.15,
+    "templateId": 55422930,
+    "routeIds": {},
+    "activeRangeOverride": 0,
+    "position": [
+      -1644.54,
+      92.97,
+      808.86
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "56477595": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": [
+      {
+        "interactDirDescs": {},
+        "portPosition": [
+          7.15,
+          4.07,
+          53.31
+        ]
+      }
+    ],
+    "position": [
+      -1765.25,
+      121.08,
+      739.77
+    ],
+    "usePointOverride": true,
+    "usePortOverride": false,
+    "routeId": 55691044,
+    "sandboxId": 55680217,
+    "id": 56477595,
+    "yaw": 242.75,
+    "templateId": 55422930,
+    "activeRangeOverride": 3,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "56481337": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -1750.69,
+      117.82,
+      778.53
+    ],
+    "usePointOverride": true,
+    "usePortOverride": false,
+    "routeId": 56480947,
+    "sandboxId": 55680217,
+    "id": 56481337,
+    "yaw": 208.84,
+    "templateId": 55422930,
+    "activeRangeOverride": 3,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "56481639": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -1744.19,
+      113.48,
+      800.72
+    ],
+    "usePointOverride": true,
+    "usePortOverride": false,
+    "routeId": 56480948,
+    "sandboxId": 55680217,
+    "id": 56481639,
+    "yaw": 215.4,
+    "templateId": 55422930,
+    "activeRangeOverride": 3,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "73764914": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -1685.74,
+      92.62,
+      755.6
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 73764905,
+    "sandboxId": 55680217,
+    "id": 73764914,
+    "yaw": 282.13,
+    "templateId": 55422930,
+    "activeRangeOverride": 0,
+    "routeIds": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "55689794": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "position": [
+      -1691.48,
+      95.43,
+      785.8
+    ],
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 55680217,
+    "id": 55689794,
+    "yaw": 0,
+    "templateId": 55422930,
+    "activeRangeOverride": 0,
+    "routeIds": [
+      55690080
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  }
+}

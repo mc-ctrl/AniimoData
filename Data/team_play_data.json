@@ -1,0 +1,42 @@
+[
+  {
+    "3": {
+      "pic_small": "$UI_Img_Team_Banner3.png",
+      "difficultyID": 4,
+      "fbId": 3005
+    },
+    "4": {
+      "pic_small": "$UI_Img_Team_Banner3.png",
+      "difficultyID": 5,
+      "fbId": 3005
+    },
+    "2": {
+      "pic_small": "$UI_Img_Team_Banner3.png",
+      "name": 1645566569,
+      "difficultyID": 3,
+      "fbId": 3005
+    }
+  },
+  [
+    {
+      "pic_small": "$UI_Img_Team_Banner4.png",
+      "fbId": 2002,
+      "name": 1871673431
+    },
+    {
+      "pic_small": "$UI_Img_Team_Banner4.png",
+      "fbId": 2005
+    },
+    {
+      "pic_small": "$UI_Img_Team_Banner4.png",
+      "fbId": 2029
+    }
+  ],
+  {
+    "0": {
+      "pic_small": "$UI_Img_Team_Banner1.png",
+      "fbId": 1070,
+      "name": 1530703834
+    }
+  }
+]

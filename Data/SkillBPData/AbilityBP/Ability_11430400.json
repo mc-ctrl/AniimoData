@@ -1,0 +1,73 @@
+{
+  "BPName": "ability_11430400",
+  "NodeID": 1,
+  "UID": "ebf3f0e1-0645-415f-8961-4cc9bab8e2c8",
+  "abilityParamId": 10400140,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "37": {
+      "name": "stopSoundStr",
+      "UID": "b2d1fc51-a544-402b-9b79-ec6da94e28da",
+      "soundId": "SFX_Combat_Parmon_10143_Skill_Field_Loop",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4ab9be78-5bbd-4acf-99d4-a3eac98839d4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10143_Skill_Field_End",
+      "NodeID": 38
+    },
+    "9": {
+      "timelineId": 11430400001,
+      "name": "setCombatActionTimeline",
+      "UID": "0be97c41-cbd4-4005-a7c7-9de74a5fe0b3",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "0ee3a0ce-d891-4898-8318-c659d605f2e9",
+      "effectId": "Eff_Parmon_10143_Skill_Field_Loop",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "34": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        32,
+        37,
+        38
+      ],
+      "NodeID": 34,
+      "UID": "7b06c27e-e542-4f4a-bad2-b49d62a5eba9",
+      "name": "addTimer"
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Field"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10143_Skill_Field_Ball",
+    "Eff_Parmon_10143_Skill_Field_Boom",
+    "Eff_Buff_Attack_Arrow_Up"
+  ],
+  "searchRelation": 2,
+  "name": "治愈光晕",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 4.5,
+  "onAbilityEndIds": [
+    34
+  ],
+  "searchTargetRangeDown": 3
+}

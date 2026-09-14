@@ -1,0 +1,101 @@
+{
+  "BPName": "ability_10320010",
+  "NodeID": 1,
+  "UID": "95e84b4d-264f-4d3b-8e4a-c85f1b1fca78",
+  "abilityParamId": 10500000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "58": {
+      "UID": "84b7802f-c761-4910-b41d-9075c32490fa",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 58
+    },
+    "24": {
+      "timelineId": 10320010002,
+      "name": "setCombatActionTimeline",
+      "UID": "c75dbdda-2e16-4a0f-99bf-d15c282088c3",
+      "target": "CASTER",
+      "NodeID": 24
+    },
+    "59": {
+      "targetA": "OWNER",
+      "targetB": "TARGET",
+      "name": "checkDistanceLess",
+      "UID": "7a160d57-52dc-4e03-bf74-a51c67e18517",
+      "distance": 12,
+      "NodeID": 59
+    },
+    "56": {
+      "UID": "9d94ff09-d411-45ba-8d0a-95619e6eabfa",
+      "name": "isNot",
+      "action": {
+        "targetA": "OWNER",
+        "targetB": "TARGET",
+        "name": "checkDistanceLess",
+        "UID": "ac56f67e-a7ed-4be7-a9b2-a5388e45151d",
+        "distance": 6,
+        "NodeID": 55
+      },
+      "NodeID": 56
+    },
+    "75": {
+      "name": "isActorType",
+      "UID": "0d7a5199-1c13-46f1-ba20-3d0889735a78",
+      "target": "OWNER",
+      "NodeID": 75,
+      "actorType": 2
+    },
+    "7": {
+      "timelineId": 10320010001,
+      "name": "setCombatActionTimeline",
+      "UID": "23811b43-7a01-4224-8d41-bc12142916f5",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "9": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        56,
+        58,
+        59,
+        75
+      ],
+      "UID": "075f041c-a7cf-4eec-92e4-7d2f564c0803",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10032_Attack04",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "暗普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    10320001,
+    10320002,
+    10320003,
+    10320011,
+    10320012,
+    10320013
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

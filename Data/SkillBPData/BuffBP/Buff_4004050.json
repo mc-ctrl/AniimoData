@@ -1,0 +1,57 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004050",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "abilityOverrideVoxelState": "normalGrass",
+      "name": "setEntityAbilityOverrideVoxelState",
+      "UID": "784079dd-2b18-40f2-bfcf-89e78cc96e51",
+      "target": "CURPET",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "3597ab10-05b5-4e5b-813b-e9f67d76e275",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "0bf3f304-c6aa-4641-b863-279d5e2415cb",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "7": {
+      "buffId": 4004050,
+      "name": "removeBuff",
+      "UID": "909e39f7-383d-4d25-9e9e-4d03b241a6e2",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "8bae2b36-e5a9-44cf-8958-23e33099dd1b",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    5
+  ]
+}

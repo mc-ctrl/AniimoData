@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_12620410",
+  "NodeID": 1,
+  "UID": "34c7b4a7-ba2f-4bb0-9af5-3f3d084970b1",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12620410001,
+      "name": "setCombatActionTimeline",
+      "UID": "da757e96-5c4c-4855-89dd-236f12edb6f1",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Inhale"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10261_Skill_Inhale",
+    "Eff_Hit_Wind_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "selectPos": 1,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1,
+  "abilityParamId": 10900350
+}

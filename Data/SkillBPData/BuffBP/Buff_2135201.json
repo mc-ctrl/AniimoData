@@ -1,0 +1,33 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135201",
+  "calcInfoByLuaConfig": {
+    "id": 2135201,
+    "type": 1,
+    "dmg_dark_add_ratio": "param0"
+  },
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "26d3f368-054b-4c2f-9c1f-66defa401c17",
+      "effectId": "Eff_Parmon_10352_Skill_Ex_Buff_Loop",
+      "target": "OWNER",
+      "NodeID": 3
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    3
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10352_Skill_Ex_Buff_Loop"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "855c68d0-77e5-4115-8a92-f4a28fd1ac5a",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "90207_appear",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "2b8083e8-4de3-485a-9d26-9b2ee3c0a84b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    }
+  },
+  "BPName": "ability_902070900",
+  "NodeID": 6,
+  "UID": "d07aaba8-2c00-49b6-8298-43e9ab24b9fd",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

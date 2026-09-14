@@ -1,0 +1,93 @@
+{
+  "stopBurrowActOnTgtNodeId": 49,
+  "stopBurrowTimelineId": 12840700001,
+  "BPName": "ability_12840700",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "burrowDuration": 6,
+  "burrowEnterBuffIds": [
+    2116101
+  ],
+  "burrowExitCastAbilityId": 12840710,
+  "burrowSwitchToAbilityId": 12840710,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12840700001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "66": {
+      "UID": "aa9f39a6-1f05-4e98-a4ed-752f65a02b07",
+      "name": "stopBurrow",
+      "NodeID": 66
+    },
+    "71": {
+      "name": "isActorType",
+      "UID": "d6945c1e-ce15-4fd3-ab18-00a5928c9f07",
+      "target": "OWNER",
+      "NodeID": 71,
+      "actorType": 3
+    },
+    "68": {
+      "actionIds": [
+        66
+      ],
+      "conditionActionIds": [
+        72
+      ],
+      "UID": "2284518b-d7c4-41b0-b8f5-a968f81c8baa",
+      "name": "doActionsByConditions",
+      "NodeID": 68
+    },
+    "72": {
+      "UID": "6afdcf2a-cbfd-4664-8a7a-9b14439c00fc",
+      "name": "isInControlState",
+      "controlState": 2,
+      "NodeID": 72
+    },
+    "70": {
+      "actionIds": [
+        66
+      ],
+      "conditionActionIds": [
+        71
+      ],
+      "UID": "d13a3d8f-0791-48e7-b015-5c30f337c340",
+      "name": "doActionsByConditions",
+      "NodeID": 70
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BurrowSkill_CombatExit"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Rock_Blunt_Big",
+    "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit",
+    "Eff_Parmon_10201_Bejav_JumpInGround_RunStop"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "desc": "",
+  "searchTargetRangeDown": 0.5,
+  "subAbilityIds": [
+    12840710
+  ],
+  "abilityType": 2,
+  "abilityParamId": 10800010,
+  "onAbilityEndIds": [
+    68,
+    70
+  ],
+  "onlyHasActOnTargets": true,
+  "canCastByCallFriends": false,
+  "aiSelectWeight": 1
+}

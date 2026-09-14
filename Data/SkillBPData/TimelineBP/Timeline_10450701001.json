@@ -1,0 +1,422 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "a323f3db-b521-4cff-9523-012179659450",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "NodeID": 52
+    },
+    "53": {
+      "target": "OWNER",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "10721c7a-f584-488e-a621-851213b4656d",
+      "speed": 1,
+      "NodeID": 53,
+      "animId": "Skill_Ex"
+    },
+    "41": {
+      "actionIds": [
+        39
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "dff82ec1-34a6-4e46-9621-ee955d63f962",
+      "name": "doActionsByConditions",
+      "NodeID": 41
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9f4f3ba6-a631-4ab0-a71d-40d863717924",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterCannonShell_End",
+      "NodeID": 42
+    },
+    "35": {
+      "actionIds": [
+        41
+      ],
+      "name": "actOnTargets",
+      "UID": "f91dee95-a9f0-4966-9702-d05bb893bbc4",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            50,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "rotFrom": "OWNER"
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 35
+    },
+    "44": {
+      "scale": 6,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f321f80f-311b-475c-95dc-f64c7476b271",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_02",
+      "speed": 1,
+      "NodeID": 44
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10,
+          56,
+          58
+        ]
+      },
+      "NodeID": 5
+    },
+    "58": {
+      "key": "LeafyLotus",
+      "name": "setCacheVal",
+      "UID": "4d3ed42c-44d5-4261-8656-54aa2cdf54a9",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 58
+    },
+    "57": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "74d9d462-4392-4022-8eb2-5ec6193726b6",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "56": {
+      "target": "OWNER",
+      "duration": 4,
+      "buffId": 10011,
+      "NodeID": 56,
+      "UID": "156d2eb7-6345-41db-a498-88264e915d78",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6abde585-9876-42a0-981f-74f111462547",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterCannonShell_End",
+      "NodeID": 28
+    },
+    "31": {
+      "target": "TARGET",
+      "offsetXYZ": [
+        0,
+        -1,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "72c7cbe0-f101-47b1-8c01-409e882e6e9e",
+      "effectId": "Eff_Parmon_Common_Skill_Grass_Bullet_Bomb",
+      "scale": 1,
+      "NodeID": 31
+    },
+    "43": {
+      "templateId": 104516,
+      "name": "checkTargetTemplateId",
+      "UID": "9059173e-a02b-4312-8513-726502e6b338",
+      "target": "TARGET",
+      "NodeID": 43
+    },
+    "37": {
+      "action": {
+        "actionIds": [
+          35,
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.75,
+      "NodeID": 37,
+      "UID": "6bfac770-59bb-4267-8c90-6a9fd017b5ac"
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "30": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "8defe3a9-83b3-4b0f-9edd-7d105da56bb0",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "29": {
+      "templateId": 104516,
+      "name": "checkTargetTemplateId",
+      "UID": "e23d9d00-f9dd-4d95-b17d-f4c86f029db1",
+      "target": "TARGET",
+      "NodeID": 29
+    },
+    "21": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          53,
+          19,
+          22
+        ]
+      },
+      "NodeID": 21
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4e0a2eaf-bd28-49b3-9368-70c4e3d6c533",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterCannonShell_Start",
+      "NodeID": 22
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.95,
+      "NodeID": 27,
+      "UID": "b471ed29-e246-45f3-9b7d-47ce0701c32c"
+    },
+    "55": {
+      "key": "LeafyLotus",
+      "name": "setCacheVal",
+      "UID": "f45b2d96-fc42-477d-990d-3300becf17ba",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 55
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          18,
+          55,
+          57
+        ]
+      },
+      "NodeID": 14
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 46,
+      "UID": "9209cd12-e948-4d87-96a0-598601b72db9"
+    },
+    "25": {
+      "actionIds": [
+        30
+      ],
+      "name": "actOnTargets",
+      "UID": "5e65eca2-cd8e-43fb-9ae8-55658c69e54c",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            50,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "rotFrom": "OWNER"
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 25
+    },
+    "47": {
+      "name": "stopEffectStr",
+      "UID": "86732540-e221-4a6a-a2e6-a272a0b52db6",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_02",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "16": {
+      "UID": "afbdc6c2-1c03-44b6-8720-91ce5d9b2a08",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 48,
+      "UID": "fdb0bdd9-3597-4337-b220-3120cc0891e5"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 17,
+      "UID": "1dc70c5b-53ff-4f4c-81b5-ffb212980a44"
+    },
+    "49": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 2104517,
+      "NodeID": 49,
+      "UID": "47a06544-7b70-410c-8430-93e4a58b1777",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "bac3dc10-fa8a-4091-ab32-8f2445c6b0de",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_State",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 50,
+      "UID": "88b814f7-3d5c-49d7-89de-bcd2f97d0386"
+    },
+    "19": {
+      "duration": 1,
+      "name": "puppetPreCastAction",
+      "UID": "7d8641e7-c05f-4818-81e1-80fc92ce64c2",
+      "effectId": "",
+      "timeScale": 0.25,
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.9,
+        0.5
+      ],
+      "scale": 1.1,
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 19
+    },
+    "51": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d5a837ef-760d-4cd8-aee3-25c44f76f4d6",
+      "effectId": "Eff_Parmon_10045_EX_04",
+      "speed": 1,
+      "NodeID": 51
+    },
+    "39": {
+      "UID": "06c5da3d-8f26-4d3f-a7ed-212394e65565",
+      "actorId": {
+        "UID": "ceaa595c-7307-42a3-8240-c7611b6c77aa",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 38
+      },
+      "name": "destroyEntity",
+      "NodeID": 39
+    }
+  },
+  "BPName": "ability_10450701",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    21,
+    17,
+    50,
+    46,
+    48,
+    27,
+    52,
+    37
+  ],
+  "layer": "Base",
+  "length": 4.1
+}

@@ -1,0 +1,51 @@
+{
+  "72766311": {
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "attachId": 0,
+    "attachToSpawnerId": 0,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "chestSpawnerStaticId": 0,
+    "enableFixedScale": false,
+    "enable_Morphling_Detail": false,
+    "enable_elite_rate": false,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 880511,
+    "isAuto": false,
+    "isCancelBubble": false,
+    "isCancelDialogue": false,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "unknowDialogue": false,
+    "owner": "唐睿尚",
+    "persistEntityInfoFlag": false,
+    "position": [
+      831.47,
+      16.2,
+      2.12
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "routeId": 0,
+    "sandboxId": 72766274,
+    "sizeCoefficient": 0,
+    "spawnerBornState": "LOCOMOTION",
+    "spawnerId": 72766312,
+    "staticId": 72766311,
+    "stick": true,
+    "subType": "Puppet",
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 0,
+    "spawnerIdleMotionState": "LOCOMOTION",
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig",
+    "routeRefs": {}
+  }
+}

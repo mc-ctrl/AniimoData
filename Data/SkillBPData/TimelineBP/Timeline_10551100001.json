@@ -1,0 +1,382 @@
+{
+  "nodeMap": {
+    "112": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 10551100004,
+      "name": "createProjectile",
+      "UID": "44fe9b11-6c27-4d5c-861b-ae63233dc1ed",
+      "offsetRotation": [
+        0,
+        -15,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 112
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 38,
+      "UID": "22feedbd-51e1-47d1-b787-eee5652ac8f2"
+    },
+    "81": {
+      "actionIds": [
+        83
+      ],
+      "conditionActionIds": [
+        80
+      ],
+      "UID": "c12dab61-d3d9-48d7-bbfe-5d30ca4e44b5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        84
+      ],
+      "NodeID": 81
+    },
+    "148": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 10551100006,
+      "name": "createProjectile",
+      "UID": "1bcb2995-754c-4de9-b05a-18407e1cab58",
+      "offsetRotation": [
+        0,
+        -15,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 148
+    },
+    "82": {
+      "action": {
+        "actionIds": [
+          81
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 82,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "42": {
+      "UID": "fad6715f-2ab9-4207-9d81-d3be568c2e26",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 42
+    },
+    "83": {
+      "duration": 0.3,
+      "name": "puppetPreCastAction",
+      "UID": "d39a0615-dc61-4832-890d-9727d0fbdd4d",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 83
+    },
+    "130": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 10551100005,
+      "name": "createProjectile",
+      "UID": "6e33eab6-b01b-4c2e-9b75-1e0cf6bc3b1b",
+      "offsetRotation": [
+        0,
+        15,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 130
+    },
+    "84": {
+      "duration": 0.6,
+      "name": "puppetPreCastAction",
+      "UID": "c53dd365-ce0e-495b-b0a5-1bcc494fa498",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 84
+    },
+    "94": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 10551100003,
+      "name": "createProjectile",
+      "UID": "efd53957-b34d-4cb1-abde-6b19ccd81ccb",
+      "offsetRotation": [
+        0,
+        15,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 94
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a5cd0f6f-c4f6-4bfd-a8ed-f659dcc36499",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Boss_Skill_WolfGhost"
+    },
+    "67": {
+      "buffId": 2105512,
+      "name": "hasBuff",
+      "UID": "85004fb7-9924-436a-a68d-c8b510a420d4",
+      "target": "OWNER",
+      "NodeID": 67
+    },
+    "86": {
+      "calcInfo": {
+        "passive_energy_cur": -8
+      },
+      "name": "calcResult",
+      "UID": "7aeb9f74-199c-4bd1-9958-2dac9d0ca685",
+      "target": "OWNER",
+      "NodeID": 86
+    },
+    "11": {
+      "UID": "40c4a539-17d0-4318-b351-8234d0e5815c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          72
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 20,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "22": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          22
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "27a15d24-d886-4370-a8f5-2de7c092e8e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 24
+    },
+    "71": {
+      "buffId": 2105511,
+      "name": "removeBuff",
+      "UID": "f17eb1fb-5ffa-4b87-8674-7f0eb27ad0fb",
+      "target": "OWNER",
+      "NodeID": 71
+    },
+    "80": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "4493a59b-4776-49b1-a822-3870d37ace64",
+      "target": "OWNER",
+      "NodeID": 80
+    },
+    "72": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9f9eaea1-318e-463c-8bc3-a0f18f146ff1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost01",
+      "NodeID": 72
+    },
+    "57": {
+      "action": {
+        "actionIds": [
+          55
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 57,
+      "UID": "fb633daf-efbe-47b0-8b27-01d30969e256"
+    },
+    "26": {
+      "UID": "d8b239da-f6be-4c58-8a77-ef753a972845",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          24,
+          68,
+          79
+        ]
+      },
+      "NodeID": 26
+    },
+    "79": {
+      "name": "dropEffectStr",
+      "UID": "dbced86d-745e-4c09-abf0-4a51fc32b45b",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost",
+      "target": "OWNER",
+      "NodeID": 79
+    },
+    "69": {
+      "buffId": 2105512,
+      "name": "removeBuff",
+      "UID": "20d11aff-10a1-48a5-98c9-378ee0bb662a",
+      "target": "OWNER",
+      "NodeID": 69
+    },
+    "68": {
+      "actionIds": [
+        69,
+        71,
+        86
+      ],
+      "conditionActionIds": [
+        67
+      ],
+      "UID": "0dc9d41f-be61-42d4-a20f-77124abd579d",
+      "name": "doActionsByConditions",
+      "NodeID": 68
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3371ba4b-f082-4872-b3d8-fc2cf80e2ec9",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost",
+      "speed": 1,
+      "NodeID": 55
+    },
+    "50": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 10551100002,
+      "name": "createProjectile",
+      "UID": "a3681304-aa63-427d-a9ba-802f1c7def4e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 50
+    },
+    "19": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 19
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 10551100001,
+      "name": "createProjectile",
+      "UID": "2311d6b0-b255-41c5-a600-1969a8e3dfbd",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 34
+    },
+    "36": {
+      "actionIds": [
+        34,
+        94,
+        112
+      ],
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "488f091c-2f61-4f29-b9a0-20f25585c59a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        50,
+        130,
+        148
+      ],
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_10551100",
+  "NodeID": 6,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    4,
+    26,
+    11,
+    82,
+    20,
+    38,
+    57
+  ],
+  "layer": "Base",
+  "length": 1.7
+}

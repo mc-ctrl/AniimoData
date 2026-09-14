@@ -1,0 +1,127 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "UID": "642b57d9-3bc0-4ece-8070-26837d7b1d94",
+      "name": "registerCostEpEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "key": "9128301",
+      "name": "setCacheVal",
+      "UID": "2dc58593-d0b8-4a90-aff6-75fe06e445d1",
+      "target": "OWNER",
+      "val": {
+        "rValue": {
+          "key": "9128301",
+          "name": "getCacheVal",
+          "UID": "66328c9d-86fc-4936-8dca-248a82f67236",
+          "target": "OWNER",
+          "NodeID": 12
+        },
+        "name": "add",
+        "UID": "c69cf78d-ceeb-4679-983c-0977c95d1980",
+        "NodeID": 3,
+        "lValue": {
+          "UID": "5289fff2-638b-42fd-a3a0-257b76a01cc0",
+          "name": "getCostEpValue",
+          "NodeID": 2
+        }
+      },
+      "NodeID": 4
+    },
+    "15": {
+      "rValue": {
+        "calcId": 9128301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 17,
+        "UID": "2b4b0e6f-ac59-442e-947d-26d68c42d0ee",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "greater",
+      "UID": "7bf6f2a5-8879-43bc-b1f6-d3a3789ab5dd",
+      "NodeID": 15,
+      "lValue": {
+        "key": "9128301",
+        "name": "getCacheVal",
+        "UID": "cf4f1217-4c2f-41ff-b54f-fc836cf229c0",
+        "target": "OWNER",
+        "NodeID": 14
+      }
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 91283011,
+      "NodeID": 7,
+      "UID": "0cadb836-f362-41f6-bc4b-1c29789fa44b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "key": "9128301",
+      "name": "setCacheVal",
+      "UID": "c35383cc-38f4-4eac-8cb8-d971132ffa86",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 16
+    },
+    "17": {
+      "calcId": 9128301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 17,
+      "UID": "2b4b0e6f-ac59-442e-947d-26d68c42d0ee",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "actionIds": [
+        7,
+        16
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "0716be87-2dae-43c8-9ebb-6cacfc492275",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "11": {
+      "key": "9128301",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 11,
+      "UID": "5639a1a3-d85d-484c-9157-82fe325f5194",
+      "name": "registerCacheValChange"
+    },
+    "13": {
+      "key": "9128301",
+      "name": "setCacheVal",
+      "UID": "d0c0f0fc-e26f-4409-a005-258b84494b12",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 13
+    },
+    "2": {
+      "UID": "5289fff2-638b-42fd-a3a0-257b76a01cc0",
+      "name": "getCostEpValue",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_9128301",
+  "dynamicRPCStates": {},
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13,
+    5,
+    11
+  ]
+}

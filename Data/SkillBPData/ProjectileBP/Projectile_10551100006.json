@@ -1,0 +1,142 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 144,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Bullet",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "156": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1abc1eaf-c437-4127-a67c-772bd57f915c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost03",
+      "NodeID": 156
+    },
+    "144": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10551100,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "45e9c490-0afb-4da2-8c1f-e8ef432e3a02",
+      "target": "TARGET",
+      "NodeID": 144,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2001,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10055_Skill_WolfGhost_Explode01",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 12,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103
+      }
+    },
+    "157": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1353c8f6-1558-4446-a193-450cdee77b09",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost02",
+      "NodeID": 157
+    },
+    "158": {
+      "name": "stopSoundStr",
+      "UID": "fb2084a0-081a-4be8-bf6a-4e6cc176f4f2",
+      "soundId": "SFX_Combat_10055_Skill_WolfGhost02",
+      "target": "OWNER",
+      "NodeID": 158
+    },
+    "146": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 144,
+      "NodeID": 146,
+      "UID": "693b818b-25d4-472f-b49b-010544a0c094",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        144
+      ]
+    }
+  },
+  "reboundData": {
+    "reboundRelation": 2,
+    "maxCount": {
+      "rValue": 5,
+      "name": "add",
+      "UID": "4fc6c72a-dd4a-443a-ba9a-3d117643fa78",
+      "NodeID": 154,
+      "lValue": {
+        "rValue": 2,
+        "name": "multiply",
+        "UID": "1ae20942-a3bb-4798-84d2-b4495f47437f",
+        "NodeID": 153,
+        "lValue": {
+          "templateId": 2105512,
+          "name": "getBuffLayer",
+          "UID": "347dadd3-9444-496d-b787-4667daa6c1cc",
+          "target": "OWNER",
+          "NodeID": 152
+        }
+      }
+    },
+    "isReboundSelf": true,
+    "searchRadius": 10
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    158
+  ],
+  "onProjectileHitIds": [
+    146,
+    156
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "BPName": "ability_10551100",
+  "tickInterval": 0.5,
+  "onProjectileStartIds": [
+    157
+  ],
+  "startSleepTime": 0,
+  "maxHitNum": 999,
+  "defaultHitSoundType": "h",
+  "impulseId": 2001,
+  "acceleration": 0
+}

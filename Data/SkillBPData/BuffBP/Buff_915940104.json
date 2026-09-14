@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915940104",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "onBuffRefreshIds": [
+    2
+  ],
+  "isUnSummonKeep": true,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3cadb582-5867-4389-b192-577ece0347e2",
+      "effectId": "Eff_Parmon_10594_Skill_Healing_Buff",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

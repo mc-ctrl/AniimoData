@@ -1,0 +1,116 @@
+{
+  "nodeMap": {
+    "88": {
+      "action": {
+        "actionIds": [
+          87
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 88,
+      "UID": "fd277a08-46d6-41a2-a21f-471cc6953a4c"
+    },
+    "89": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "ade53092-b9fd-47af-8aa5-b3dade9982b6",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 89
+    },
+    "10": {
+      "UID": "e69a8195-4ce6-4aea-bdda-e859131c2925",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "90": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "eb0cdd0f-91b3-4ded-ac1d-48cfce893cb5",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 90
+    },
+    "8": {
+      "timelineId": 12840500001,
+      "name": "jumpToNextTimeline",
+      "UID": "f46c2db5-ff06-4c33-bbfb-e89ea6918910",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "49": {
+      "name": "isInBurrow",
+      "UID": "08e86637-3e3d-496c-a6bc-60a159f9e742",
+      "target": "OWNER",
+      "NodeID": 49,
+      "not": false
+    },
+    "9": {
+      "actionIds": [
+        56
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "06011589-61ed-4d21-b3e8-d3206fd07306",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "86": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "af51537a-b02e-49b9-8274-62c079926f1e",
+      "target": "OWNER",
+      "NodeID": 86
+    },
+    "56": {
+      "timelineId": 12840500003,
+      "name": "jumpToNextTimeline",
+      "UID": "684e8692-3d58-466f-9765-0153f5af823e",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "87": {
+      "actionIds": [
+        89
+      ],
+      "conditionActionIds": [
+        86
+      ],
+      "UID": "b7810598-80d9-42c4-8011-13c3a010c5bd",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        90
+      ],
+      "NodeID": 87
+    }
+  },
+  "BPName": "ability_12840500",
+  "NodeID": 12,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    88,
+    10
+  ],
+  "layer": "Base",
+  "length": 2.617
+}

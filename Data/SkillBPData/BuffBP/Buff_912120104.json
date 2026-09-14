@@ -1,0 +1,155 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912120104",
+  "name": "下一次释放技能不消耗能量",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": {},
+  "onBuffRefreshIds": [
+    9,
+    16,
+    19,
+    22
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "UID": "b58f0ebc-1283-4493-ba48-f35a283d781a",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 22
+    },
+    "13": {
+      "buffId": 912120104,
+      "name": "removeBuff",
+      "UID": "2a027f6d-4a22-4c67-b66e-8fa4b80e9a8c",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "26": {
+      "templateId": 912120101,
+      "name": "removeBuffLayer",
+      "UID": "a293fb11-3dc0-497f-8bc4-a875e919bde7",
+      "layer": 24,
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "15": {
+      "actionIds": [
+        21,
+        25,
+        23,
+        26,
+        13
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "13210638-2f22-4089-a86a-a92ce7c3b22f",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "25": {
+      "calcInfo": {
+        "passive_energy_cur": -24
+      },
+      "name": "calcResult",
+      "UID": "2c4205b0-188e-464d-8524-49940625a32d",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "e7300b17-f8c3-4641-962d-be796d8b8d8e",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "23": {
+      "UID": "33b08d63-ceab-42f6-adb9-bc04506c01fd",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 23
+    },
+    "17": {
+      "UID": "2eb4dace-719b-47b9-aa09-17e6b3005c9a",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 17
+    },
+    "9": {
+      "epCost": 0,
+      "epCostAddFix": 0,
+      "NodeID": 9,
+      "UID": "51f6aee0-6e2d-4641-995c-449c4c2961be",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": -1
+    },
+    "18": {
+      "buffId": 912120201,
+      "name": "removeBuff",
+      "UID": "2bb47cab-d307-4dae-b058-a2d08e36e7a4",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "068e4d89-c77e-4be1-be08-e036c4086e51",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 11
+    },
+    "19": {
+      "NodeID": 19,
+      "UID": "921b086a-c686-43ff-a495-f974a16035a0",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 2,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "20": {
+      "NodeID": 20,
+      "UID": "a96ee4a9-023e-45c7-9b70-af56f55e5666",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "21": {
+      "NodeID": 21,
+      "UID": "bc235d97-6b01-4d48-89cb-a60f104924b9",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    11,
+    18,
+    20
+  ],
+  "onBuffStartIds": [
+    9,
+    16,
+    19,
+    22
+  ]
+}

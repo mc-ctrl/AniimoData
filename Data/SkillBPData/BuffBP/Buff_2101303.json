@@ -1,0 +1,126 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "overrideCaster": "OWNER",
+      "calcInfo": {
+        "instant_dmg_fix": {
+          "rValue": {
+            "key": "TransferDamage",
+            "name": "getCacheVal",
+            "UID": "8edbcc7a-991b-405f-a350-b989645ab407",
+            "target": "OWNER",
+            "NodeID": 10
+          },
+          "name": "multiply",
+          "UID": "3725b65b-79b7-43ba-b8bc-2b286aff1d68",
+          "NodeID": 8,
+          "lValue": {
+            "UID": "b4ab2870-22f3-4ac6-9ab3-79adff860f20",
+            "name": "getEventPostAttackDamage",
+            "NodeID": 7
+          }
+        },
+        "add_cur_bp_fix": {
+          "key": "TransferBreak",
+          "name": "getCacheVal",
+          "UID": "5ee852f7-1aa0-4c43-b5f7-bec906107c93",
+          "target": "OWNER",
+          "NodeID": 17
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "impulseId": 2000,
+        "elementType": 1
+      },
+      "UID": "eafb2eda-be86-443f-a73e-0f3ce25a57a1",
+      "target": {
+        "key": "10013MasterId",
+        "name": "getCacheVal",
+        "UID": "73864306-0c79-42d9-bbb0-4fd9679dd8be",
+        "target": "OWNER",
+        "NodeID": 2
+      },
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "a711dae6-1f58-4831-9f14-5de2667eb9fe",
+      "target": {
+        "key": "10013MasterId",
+        "name": "getCacheVal",
+        "UID": "4e9dadf5-d2c0-4fa9-804b-0ee34d2d0ba8",
+        "target": "OWNER",
+        "NodeID": 12
+      },
+      "name": "getTargetHitPosition",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "65dec651-da7f-46dc-9a5b-90850945251c",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "5": {
+      "blockEvent": "onPostAttack",
+      "actionIds": [
+        3,
+        14,
+        16
+      ],
+      "NodeID": 5,
+      "UID": "153542ef-bb7b-470f-97a9-7dd1e411b6d0",
+      "name": "doBlockEventActions"
+    },
+    "14": {
+      "pos": {
+        "UID": "a711dae6-1f58-4831-9f14-5de2667eb9fe",
+        "target": {
+          "key": "10013MasterId",
+          "name": "getCacheVal",
+          "UID": "4e9dadf5-d2c0-4fa9-804b-0ee34d2d0ba8",
+          "target": "OWNER",
+          "NodeID": 12
+        },
+        "name": "getTargetHitPosition",
+        "NodeID": 13
+      },
+      "target": {
+        "key": "10013MasterId",
+        "name": "getCacheVal",
+        "UID": "e9f30fc6-5267-42dc-a231-648cd847b58d",
+        "target": "OWNER",
+        "NodeID": 15
+      },
+      "name": "playEffectOnPosRot",
+      "UID": "5c5c8593-78fa-4616-af3a-f9d3a91ad228",
+      "effectId": "Eff_Parmon_10013_Skill_Hit",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "7": {
+      "UID": "b4ab2870-22f3-4ac6-9ab3-79adff860f20",
+      "name": "getEventPostAttackDamage",
+      "NodeID": 7
+    },
+    "16": {
+      "buffId": 2101303,
+      "name": "removeBuff",
+      "UID": "012b340d-2472-4041-ad0d-3d1e2f521de8",
+      "target": "OWNER",
+      "NodeID": 16
+    }
+  },
+  "BPName": "buff_2101303",
+  "dynamicRPCStates": {},
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

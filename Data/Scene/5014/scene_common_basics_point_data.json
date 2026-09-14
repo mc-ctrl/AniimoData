@@ -1,0 +1,35 @@
+{
+  "72108169": {
+    "name": "基础点位_72108169",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72107730,
+    "id": 72108169,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        0
+      ],
+      "position": [
+        -0.04,
+        -0.15,
+        -12.85
+      ],
+      "circleRadius": 15,
+      "name": "",
+      "author": "worldx_ch"
+    },
+    "position": [
+      -0.04,
+      -0.15,
+      -12.85
+    ]
+  }
+}

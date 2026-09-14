@@ -1,0 +1,4556 @@
+{
+  "5090005": {
+    "editorDisplayPriority": 499,
+    "name": 1428959515,
+    "icon": "$ui_item_boss_10045.png",
+    "topLogoHeight": 1,
+    "reward": 5090005,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "莲冠龙遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090006": {
+    "editorDisplayPriority": 499,
+    "name": 1350770712,
+    "icon": "$ui_item_boss_10221.png",
+    "topLogoHeight": 1,
+    "reward": 5090006,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "闪电貂遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000201": {
+    "editorDisplayPriority": 500,
+    "name": 1812271533,
+    "icon": "$ui_item_Relic_01.png",
+    "topLogoHeight": 1,
+    "reward": 5000201,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_01.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-木珠串",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000202": {
+    "editorDisplayPriority": 500,
+    "name": 2145715436,
+    "icon": "$ui_item_Relic_02.png",
+    "topLogoHeight": 1,
+    "reward": 5000202,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_02.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-石珠串",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000211": {
+    "editorDisplayPriority": 500,
+    "name": 1833711097,
+    "icon": "$ui_item_Relic_23.png",
+    "topLogoHeight": 1,
+    "reward": 5000211,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_23.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-青铜碗碟",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000212": {
+    "editorDisplayPriority": 500,
+    "name": 1716300165,
+    "icon": "$ui_item_Relic_24.png",
+    "topLogoHeight": 1,
+    "reward": 5000212,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_24.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-陶瓷碗碟",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000001": {
+    "editorDisplayPriority": 500,
+    "name": 1628541363,
+    "icon": "$ui_item_Mushroom_01.png",
+    "topLogoHeight": 1,
+    "reward": 5000001,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_01.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-小白菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000002": {
+    "editorDisplayPriority": 500,
+    "name": 2024750550,
+    "icon": "$ui_item_Mushroom_02.png",
+    "topLogoHeight": 1,
+    "reward": 5000002,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_02.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-小蓝菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000010": {
+    "editorDisplayPriority": 500,
+    "name": 1073839356,
+    "icon": "$ui_item_Mushroom_22.png",
+    "topLogoHeight": 1,
+    "reward": 5000010,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_22.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-红树莓",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000011": {
+    "editorDisplayPriority": 500,
+    "name": 1856474814,
+    "icon": "$ui_item_Mushroom_23.png",
+    "topLogoHeight": 1,
+    "reward": 5000011,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_23.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-烛芯草",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000012": {
+    "editorDisplayPriority": 500,
+    "name": 1798883924,
+    "icon": "$ui_item_Mushroom_24.png",
+    "topLogoHeight": 1,
+    "reward": 5000012,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_24.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-灯笼草",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000020": {
+    "editorDisplayPriority": 500,
+    "name": 1795089457,
+    "icon": "$ui_item_Mushroom_44.png",
+    "topLogoHeight": 1,
+    "reward": 5000020,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_44.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-琉璃蔷薇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000021": {
+    "editorDisplayPriority": 500,
+    "name": 1644942075,
+    "icon": "$ui_item_Mushroom_51.png",
+    "topLogoHeight": 1,
+    "reward": 5000021,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_51.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹光幽兰",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090011": {
+    "editorDisplayPriority": 499,
+    "name": 1289326010,
+    "icon": "$ui_item_boss_10285.png",
+    "topLogoHeight": 1,
+    "reward": 5090011,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "簇晶脊龙遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090012": {
+    "editorDisplayPriority": 499,
+    "name": 1762836659,
+    "icon": "$ui_item_boss_10027.png",
+    "topLogoHeight": 1,
+    "reward": 5090012,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "盔卫士遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090013": {
+    "editorDisplayPriority": 499,
+    "name": 1791996127,
+    "icon": "$ui_item_boss_10032.png",
+    "topLogoHeight": 1,
+    "reward": 5090013,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "淬刃螳螂遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090014": {
+    "editorDisplayPriority": 499,
+    "name": 2021084622,
+    "icon": "$ui_item_boss_10212.png",
+    "topLogoHeight": 1,
+    "reward": 5090014,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "花舞兰遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000101": {
+    "editorDisplayPriority": 500,
+    "name": 1148281295,
+    "icon": "$ui_item_Fruit_01.png",
+    "topLogoHeight": 1,
+    "reward": 5000101,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_01.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-蓝棘果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000102": {
+    "editorDisplayPriority": 500,
+    "name": 1782824369,
+    "icon": "$ui_item_Fruit_02.png",
+    "topLogoHeight": 1,
+    "reward": 5000102,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_02.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-黄棘果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000110": {
+    "editorDisplayPriority": 500,
+    "name": 1453606999,
+    "icon": "$ui_item_Fruit_22.png",
+    "topLogoHeight": 1,
+    "reward": 5000110,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_22.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-霜穗花",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000112": {
+    "editorDisplayPriority": 500,
+    "name": 2144120138,
+    "icon": "$ui_item_Fruit_24.png",
+    "topLogoHeight": 1,
+    "reward": 5000112,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_24.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-夜娟草",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000121": {
+    "editorDisplayPriority": 500,
+    "name": 1427469737,
+    "icon": "$ui_item_Fruit_51.png",
+    "topLogoHeight": 1,
+    "reward": 5000121,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_51.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹光海铃",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090017": {
+    "editorDisplayPriority": 499,
+    "name": 1563878557,
+    "icon": "$ui_item_boss_10454.png",
+    "topLogoHeight": 1,
+    "reward": 5090017,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "岩球郎遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090018": {
+    "editorDisplayPriority": 499,
+    "name": 1082757957,
+    "icon": "$ui_item_boss_10207.png",
+    "topLogoHeight": 1,
+    "reward": 5090018,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "埋埋遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090019": {
+    "editorDisplayPriority": 499,
+    "name": 1627085033,
+    "icon": "$ui_item_boss_10025.png",
+    "topLogoHeight": 1,
+    "reward": 5090019,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "炎铠龙遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090020": {
+    "editorDisplayPriority": 499,
+    "name": 1466727552,
+    "icon": "$ui_item_boss_10194.png",
+    "topLogoHeight": 1,
+    "reward": 5090020,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "星骑士遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090021": {
+    "editorDisplayPriority": 499,
+    "name": 1945163518,
+    "icon": "$ui_item_boss_10583.png",
+    "topLogoHeight": 1,
+    "reward": 5090021,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "丽芙羊遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000203": {
+    "editorDisplayPriority": 500,
+    "name": 1382053548,
+    "icon": "$ui_item_Relic_03.png",
+    "topLogoHeight": 1,
+    "reward": 5000203,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_03.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-骨珠串",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000204": {
+    "editorDisplayPriority": 500,
+    "name": 1114176393,
+    "icon": "$ui_item_Relic_04.png",
+    "topLogoHeight": 1,
+    "reward": 5000204,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_04.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-铁珠串",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000210": {
+    "editorDisplayPriority": 500,
+    "name": 1858255762,
+    "icon": "$ui_item_Relic_22.png",
+    "topLogoHeight": 1,
+    "reward": 5000210,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_22.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-陶瓷花瓶",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000221": {
+    "editorDisplayPriority": 500,
+    "name": 1498756567,
+    "icon": "$ui_item_Relic_51.png",
+    "topLogoHeight": 1,
+    "reward": 5000221,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_51.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹光圣冠",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000501": {
+    "editorDisplayPriority": 499,
+    "name": 1933762796,
+    "icon": "$ui_item_816037.png",
+    "topLogoHeight": 1,
+    "reward": 5000501,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_CacophonicRhapsody.prefab",
+    "quality": 6,
+    "editorName": "灵魂震音",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000502": {
+    "editorDisplayPriority": 499,
+    "name": 1948091513,
+    "icon": "$ui_item_816041.png",
+    "topLogoHeight": 1,
+    "reward": 5000502,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_SilkenFoam.prefab",
+    "quality": 6,
+    "editorName": "沐羽浮光",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000503": {
+    "editorDisplayPriority": 499,
+    "name": 1859513223,
+    "icon": "$ui_item_816042.png",
+    "topLogoHeight": 1,
+    "reward": 5000503,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_ThornStrike.prefab",
+    "quality": 6,
+    "editorName": "蔷薇棘剑",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000306": {
+    "editorDisplayPriority": 500,
+    "name": 1950696518,
+    "icon": "$ui_item_Ore_12.png",
+    "topLogoHeight": 1,
+    "reward": 5000306,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_12.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-粗铅矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000505": {
+    "editorDisplayPriority": 499,
+    "name": 2073749166,
+    "icon": "$ui_item_Grabegg_CacophonicRhapsody_Treasure.png",
+    "topLogoHeight": 1,
+    "reward": 5000505,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_CacophonicRhapsody_Treasure.prefab",
+    "quality": 6,
+    "editorName": "珍藏·灵魂震音",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000506": {
+    "editorDisplayPriority": 499,
+    "name": 1691145952,
+    "icon": "$ui_item_Grabegg_SilkenFoam_Treasure.png",
+    "topLogoHeight": 1,
+    "reward": 5000506,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_SilkenFoam_Treasure.prefab",
+    "quality": 6,
+    "editorName": "珍藏·沐羽浮光",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000309": {
+    "editorDisplayPriority": 500,
+    "name": 1089536626,
+    "icon": "$ui_item_Ore_21.png",
+    "topLogoHeight": 1,
+    "reward": 5000309,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_21.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-精铁矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000508": {
+    "editorDisplayPriority": 499,
+    "name": 2135277462,
+    "icon": "$ui_item_Grabegg_SleepWellStayWell_Treasure.png",
+    "topLogoHeight": 1,
+    "reward": 5000508,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_SleepWellStayWell_Treasure.prefab",
+    "quality": 6,
+    "editorName": "珍藏·云绒眠梦",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000311": {
+    "editorDisplayPriority": 500,
+    "name": 1074015313,
+    "icon": "$ui_item_Ore_23.png",
+    "topLogoHeight": 1,
+    "reward": 5000311,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_23.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-精铜矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000312": {
+    "editorDisplayPriority": 500,
+    "name": 1877061746,
+    "icon": "$ui_item_Ore_24.png",
+    "topLogoHeight": 1,
+    "reward": 5000312,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_24.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-精锡矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000313": {
+    "editorDisplayPriority": 500,
+    "name": 1776429112,
+    "icon": "$ui_item_Ore_31.png",
+    "topLogoHeight": 1,
+    "reward": 5000313,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_31.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-磁铁矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000314": {
+    "editorDisplayPriority": 500,
+    "name": 1610023523,
+    "icon": "$ui_item_Ore_32.png",
+    "topLogoHeight": 1,
+    "reward": 5000314,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_32.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-钒铅矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001002": {
+    "editorDisplayPriority": 499,
+    "editorName": "抢蛋专用-金魂",
+    "icon": "$ui_item_MonDrop_Gold.png",
+    "topLogoHeight": 1,
+    "rigidbody": "GrabEGG_Collect",
+    "reward": 5001002,
+    "name": 1153075339,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Indication_MonDrop_Gold.prefab",
+    "quality": 5,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ],
+    "modelScale": 1.2
+  },
+  "5000315": {
+    "editorDisplayPriority": 500,
+    "name": 1239920996,
+    "icon": "$ui_item_Ore_33.png",
+    "topLogoHeight": 1,
+    "reward": 5000315,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_33.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-辉铜矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001003": {
+    "editorDisplayPriority": 499,
+    "editorName": "抢蛋专用-蓝魂",
+    "icon": "$ui_item_MonDrop_Blud.png",
+    "topLogoHeight": 1,
+    "rigidbody": "GrabEGG_Collect",
+    "reward": 5001003,
+    "name": 1458206566,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Indication_MonDrop_Blue.prefab",
+    "quality": 3,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ],
+    "modelScale": 1.2
+  },
+  "5000316": {
+    "editorDisplayPriority": 500,
+    "name": 2060801381,
+    "icon": "$ui_item_Ore_34.png",
+    "topLogoHeight": 1,
+    "reward": 5000316,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_34.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-木锡矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001004": {
+    "editorDisplayPriority": 499,
+    "name": 1984329380,
+    "icon": "$ui_item_Grabegg_StarFruit.png",
+    "topLogoHeight": 1,
+    "reward": 5001004,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectFruit_2_Kinematic.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-蜜光星皮果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000317": {
+    "editorDisplayPriority": 500,
+    "name": 1391818711,
+    "icon": "$ui_item_Ore_41.png",
+    "topLogoHeight": 1,
+    "reward": 5000317,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_41.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-陨铁矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000318": {
+    "editorDisplayPriority": 500,
+    "name": 1254092427,
+    "icon": "$ui_item_Ore_42.png",
+    "topLogoHeight": 1,
+    "reward": 5000318,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_42.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-秘银矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001103": {
+    "editorDisplayPriority": 499,
+    "name": 2137131856,
+    "icon": "$ui_item_Key_03.png",
+    "topLogoHeight": 1,
+    "reward": 5001103,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Key_03.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-鎏金钥匙",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000320": {
+    "editorDisplayPriority": 500,
+    "name": 1303669790,
+    "icon": "$ui_item_Ore_44.png",
+    "topLogoHeight": 1,
+    "reward": 5000320,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_44.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-铂金矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001202": {
+    "editorDisplayPriority": 499,
+    "name": 1620620541,
+    "icon": "$ui_item_Grabegg_DummyTalisman.png",
+    "topLogoHeight": 1,
+    "reward": 5001202,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-简易木铲",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000321": {
+    "editorDisplayPriority": 500,
+    "name": 1370390214,
+    "icon": "$ui_item_Ore_51.png",
+    "topLogoHeight": 1,
+    "reward": 5000321,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_51.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹光欧泊",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001301": {
+    "editorDisplayPriority": 500,
+    "name": 1752812624,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001301,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DiamondEgg.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-不朽晶钻蛋",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001302": {
+    "editorDisplayPriority": 500,
+    "name": 1854305674,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001302,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DiamondEgg.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-不朽晶钻蛋",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001303": {
+    "editorDisplayPriority": 500,
+    "name": 1327695189,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001303,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DiamondEgg.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-不朽晶钻蛋",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001304": {
+    "editorDisplayPriority": 500,
+    "name": 1076303295,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001304,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DiamondEgg.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-不朽晶钻蛋",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001305": {
+    "editorDisplayPriority": 500,
+    "name": 1146158746,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001305,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_RainbowPrismCore.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹彩琉璃鸢尾",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000402": {
+    "editorDisplayPriority": 500,
+    "name": 2018112279,
+    "icon": "$ui_item_Gem_02.png",
+    "topLogoHeight": 1,
+    "reward": 5000402,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_02.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-辰砂石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001307": {
+    "editorDisplayPriority": 500,
+    "name": 2011888940,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001307,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_RainbowPrismCore.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹彩琉璃鸢尾",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001308": {
+    "editorDisplayPriority": 500,
+    "name": 2044993498,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001308,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_RainbowPrismCore.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹彩琉璃鸢尾",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001309": {
+    "editorDisplayPriority": 500,
+    "name": 1835387336,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001309,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DreamMemoryAmber.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-蝶梦凝珀",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000403": {
+    "editorDisplayPriority": 500,
+    "name": 1835712560,
+    "icon": "$ui_item_Gem_03.png",
+    "topLogoHeight": 1,
+    "reward": 5000403,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_03.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-磷叶石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001310": {
+    "editorDisplayPriority": 500,
+    "name": 2105826052,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001310,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DreamMemoryAmber.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-蝶梦凝珀",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001311": {
+    "editorDisplayPriority": 500,
+    "name": 1270444089,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001311,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DreamMemoryAmber.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-蝶梦凝珀",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000404": {
+    "editorDisplayPriority": 500,
+    "name": 1388153482,
+    "icon": "$ui_item_Gem_04.png",
+    "topLogoHeight": 1,
+    "reward": 5000404,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_04.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-碧猫眼",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001313": {
+    "editorDisplayPriority": 500,
+    "name": 1302220235,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001313,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_FlamesBreathHorn.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-龙焰号角",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001314": {
+    "editorDisplayPriority": 500,
+    "name": 1102063108,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001314,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_FlamesBreathHorn.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-龙焰号角",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001315": {
+    "editorDisplayPriority": 500,
+    "name": 1730383975,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001315,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_FlamesBreathHorn.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-龙焰号角",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001316": {
+    "editorDisplayPriority": 500,
+    "name": 1489374423,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001316,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_FlamesBreathHorn.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-龙焰号角",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001317": {
+    "editorDisplayPriority": 500,
+    "name": 2061863908,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001317,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_RootofLifeScepter.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-古木王杖",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000406": {
+    "editorDisplayPriority": 500,
+    "name": 1809019290,
+    "icon": "$ui_item_Gem_06.png",
+    "topLogoHeight": 1,
+    "reward": 5000406,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_06.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-祖母绿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001321": {
+    "editorDisplayPriority": 500,
+    "name": 1739103430,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001321,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GoldenShield.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-曜金守护之盾",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000407": {
+    "editorDisplayPriority": 500,
+    "name": 1997534995,
+    "icon": "$ui_item_Gem_11.png",
+    "topLogoHeight": 1,
+    "reward": 5000407,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_11.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-帝王绿翡",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001325": {
+    "editorDisplayPriority": 500,
+    "name": 1856824183,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001325,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_SoulReturningGemBottle.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-狼魂幽灯",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001329": {
+    "editorDisplayPriority": 500,
+    "name": 2142699215,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001329,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_EternalVowMusicBox.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-黯棘蔷薇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001333": {
+    "editorDisplayPriority": 500,
+    "name": 1295697569,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001333,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_BurningHeartVulcan.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-不灭炽心",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000409": {
+    "editorDisplayPriority": 500,
+    "name": 1990983839,
+    "icon": "$ui_item_Gem_21.png",
+    "topLogoHeight": 1,
+    "reward": 5000409,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_21.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹光玉髓",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010010": {
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-遗迹伊莫蛋",
+    "icon": "$ui_item_Grabegg_All_SLowEgg.png",
+    "topLogoHeight": 1,
+    "rigidbody": "GrabEGG_Collect",
+    "reward": 5010010,
+    "name": 1278729735,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 4,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ],
+    "modelScale": 1.5
+  },
+  "5000410": {
+    "editorDisplayPriority": 500,
+    "name": 1551124586,
+    "icon": "$ui_item_Gem_22.png",
+    "topLogoHeight": 1,
+    "reward": 5000410,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_22.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹光宝钻",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010110": {
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-卓越遗迹伊莫蛋",
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "topLogoHeight": 1.2,
+    "rigidbody": "GrabEGG_Collect",
+    "reward": 5010110,
+    "name": 1916814604,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ],
+    "modelScale": 2
+  },
+  "5000411": {
+    "editorDisplayPriority": 500,
+    "name": 1224647535,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5000411,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_10.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-蛋帽礼盒",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010111": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气遗迹伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5010111,
+    "name": 1212563808,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Curry",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010112": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气遗迹伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5010112,
+    "name": 1231208613,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Flower",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010113": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气遗迹伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5010113,
+    "name": 1662652389,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Fruity",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010114": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气遗迹伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5010114,
+    "name": 1440379697,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Gress",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010115": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气遗迹伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5010115,
+    "name": 1563391283,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Ocean",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010116": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气遗迹伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5010116,
+    "name": 1878018050,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Smelly",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010117": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气遗迹伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5010117,
+    "name": 1857996012,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Wood",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5010999": {
+    "editorDisplayPriority": 498,
+    "editorName": "幽黯伊莫蛋",
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "topLogoHeight": 1.2,
+    "rigidbody": "GrabEGG_Collect",
+    "reward": 5010999,
+    "name": 2085883627,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ],
+    "modelScale": 2
+  },
+  "5011000": {
+    "editorDisplayPriority": 498,
+    "editorName": "大幽黯伊莫蛋",
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "topLogoHeight": 1.2,
+    "rigidbody": "GrabEGG_Collect",
+    "reward": 5011000,
+    "name": 1425130381,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ],
+    "modelScale": 2
+  },
+  "5011001": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气幽黯伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5011001,
+    "name": 2080975502,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Curry",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011002": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气幽黯伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5011002,
+    "name": 1268734804,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Flower",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011003": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气幽黯伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5011003,
+    "name": 1922434664,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Fruity",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011004": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气幽黯伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5011004,
+    "name": 1707805030,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Gress",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011005": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气幽黯伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5011005,
+    "name": 1808384060,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Ocean",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011006": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气幽黯伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5011006,
+    "name": 1828980177,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Smelly",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011007": {
+    "editorDisplayPriority": 498,
+    "editorName": "香气幽黯伊莫蛋",
+    "topLogoHeight": 1.2,
+    "icon": "$ui_item_Grabegg_All_BLowEgg.png",
+    "rigidbody": "GrabEGG_Collect",
+    "modelScale": 2,
+    "reward": 5011007,
+    "name": 2023985128,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 5,
+    "effect": "Eff_Env_GrabEgg_SmellEgg_Wood",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011201": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-神秘虹光蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1872982032,
+    "modelScale": 2,
+    "reward": 5011201,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000005": {
+    "editorDisplayPriority": 500,
+    "name": 2089877079,
+    "icon": "$ui_item_Mushroom_11.png",
+    "topLogoHeight": 1,
+    "reward": 5000005,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_11.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-白茸菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011202": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光星魔师蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 2106678141,
+    "modelScale": 2,
+    "reward": 5011202,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000006": {
+    "editorDisplayPriority": 500,
+    "name": 1895276842,
+    "icon": "$ui_item_Mushroom_12.png",
+    "topLogoHeight": 1,
+    "reward": 5000006,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_12.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-蓝茸菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011203": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光盔勇士蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1761646235,
+    "modelScale": 2,
+    "reward": 5011203,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011204": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光淬刃螳螂蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1247918116,
+    "modelScale": 2,
+    "reward": 5011204,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000007": {
+    "editorDisplayPriority": 500,
+    "name": 1817266920,
+    "icon": "$ui_item_Mushroom_13.png",
+    "topLogoHeight": 1,
+    "reward": 5000007,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_13.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-黄茸菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011205": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光狼斗士蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1374249107,
+    "modelScale": 2,
+    "reward": 5011205,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011206": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光吊灯水母蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1503403932,
+    "modelScale": 2,
+    "reward": 5011206,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000008": {
+    "editorDisplayPriority": 500,
+    "name": 1531427558,
+    "icon": "$ui_item_Mushroom_14.png",
+    "topLogoHeight": 1,
+    "reward": 5000008,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_14.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-红茸菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011207": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光小号鸥蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1827636384,
+    "modelScale": 2,
+    "reward": 5011207,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011208": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光星骑士蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1661787818,
+    "modelScale": 2,
+    "reward": 5011208,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000009": {
+    "editorDisplayPriority": 500,
+    "name": 1842576882,
+    "icon": "$ui_item_Mushroom_21.png",
+    "topLogoHeight": 1,
+    "reward": 5000009,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_21.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-青树莓",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011209": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光巫帽草蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1323942839,
+    "modelScale": 2,
+    "reward": 5011209,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011210": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光霜锋狼蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1284138617,
+    "modelScale": 4,
+    "reward": 5011210,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000013": {
+    "editorDisplayPriority": 500,
+    "name": 1483767859,
+    "icon": "$ui_item_Mushroom_31.png",
+    "topLogoHeight": 1,
+    "reward": 5000013,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_31.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-月荧伞菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000014": {
+    "editorDisplayPriority": 500,
+    "name": 1203673826,
+    "icon": "$ui_item_Mushroom_32.png",
+    "topLogoHeight": 1,
+    "reward": 5000014,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_32.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-日辉伞菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000015": {
+    "editorDisplayPriority": 500,
+    "name": 1155897949,
+    "icon": "$ui_item_Mushroom_33.png",
+    "topLogoHeight": 1,
+    "reward": 5000015,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_33.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-冰心百合",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000016": {
+    "editorDisplayPriority": 500,
+    "name": 1697297300,
+    "icon": "$ui_item_400004.png",
+    "topLogoHeight": 1,
+    "reward": 5000016,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_34.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-忘忧百合",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000017": {
+    "editorDisplayPriority": 500,
+    "name": 1224443284,
+    "icon": "$ui_item_Mushroom_41.png",
+    "topLogoHeight": 1,
+    "reward": 5000017,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_41.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-古玉灵芝",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000018": {
+    "editorDisplayPriority": 500,
+    "name": 1724058180,
+    "icon": "$ui_item_Mushroom_42.png",
+    "topLogoHeight": 1,
+    "reward": 5000018,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_42.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-银纹凤蕨",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000019": {
+    "editorDisplayPriority": 500,
+    "name": 1136382510,
+    "icon": "$ui_item_Mushroom_43.png",
+    "topLogoHeight": 1,
+    "reward": 5000019,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_43.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-月光松露",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000103": {
+    "editorDisplayPriority": 500,
+    "name": 1449783036,
+    "icon": "$ui_item_Fruit_03.png",
+    "topLogoHeight": 1,
+    "reward": 5000103,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_03.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-红棘果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000104": {
+    "editorDisplayPriority": 500,
+    "name": 1519750623,
+    "icon": "$ui_item_Fruit_04.png",
+    "topLogoHeight": 1,
+    "reward": 5000104,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_04.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-粉棘果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000105": {
+    "editorDisplayPriority": 500,
+    "name": 1873599550,
+    "icon": "$ui_item_Fruit_11.png",
+    "topLogoHeight": 1,
+    "reward": 5000105,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_11.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-涩浆果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000106": {
+    "editorDisplayPriority": 500,
+    "name": 1198292247,
+    "icon": "$ui_item_Fruit_12.png",
+    "topLogoHeight": 1,
+    "reward": 5000106,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_12.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-酸浆果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000107": {
+    "editorDisplayPriority": 500,
+    "name": 1189902202,
+    "icon": "$ui_item_Fruit_13.png",
+    "topLogoHeight": 1,
+    "reward": 5000107,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_13.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-辣浆果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000108": {
+    "editorDisplayPriority": 500,
+    "name": 1232288782,
+    "icon": "$ui_item_Fruit_14.png",
+    "topLogoHeight": 1,
+    "reward": 5000108,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_14.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-甜浆果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000109": {
+    "editorDisplayPriority": 500,
+    "name": 1738696189,
+    "icon": "$ui_item_Fruit_21.png",
+    "topLogoHeight": 1,
+    "reward": 5000109,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_21.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-海穗花",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000113": {
+    "editorDisplayPriority": 500,
+    "name": 1954132240,
+    "icon": "$ui_item_Fruit_31.png",
+    "topLogoHeight": 1,
+    "reward": 5000113,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_31.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-金杯菊",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000114": {
+    "editorDisplayPriority": 500,
+    "name": 1790232584,
+    "icon": "$ui_item_Fruit_32.png",
+    "topLogoHeight": 1,
+    "reward": 5000114,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_32.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-冰矢菊",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000115": {
+    "editorDisplayPriority": 500,
+    "name": 1104600344,
+    "icon": "$ui_item_Fruit_33.png",
+    "topLogoHeight": 1,
+    "reward": 5000115,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_33.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-夕岚香",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000116": {
+    "editorDisplayPriority": 500,
+    "name": 1952199783,
+    "icon": "$ui_item_Fruit_34.png",
+    "topLogoHeight": 1,
+    "reward": 5000116,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_34.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-朝雾香",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000117": {
+    "editorDisplayPriority": 500,
+    "name": 1362711125,
+    "icon": "$ui_item_Fruit_41.png",
+    "topLogoHeight": 1,
+    "reward": 5000117,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_41.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-七色彩锦",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000118": {
+    "editorDisplayPriority": 500,
+    "name": 1106332919,
+    "icon": "$ui_item_Fruit_42.png",
+    "topLogoHeight": 1,
+    "reward": 5000118,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_42.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-天绣云葵",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000119": {
+    "editorDisplayPriority": 500,
+    "name": 1287295422,
+    "icon": "$ui_item_Fruit_43.png",
+    "topLogoHeight": 1,
+    "reward": 5000119,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_43.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-星络石榴",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000205": {
+    "editorDisplayPriority": 500,
+    "name": 1963937575,
+    "icon": "$ui_item_Relic_15.png",
+    "topLogoHeight": 1,
+    "reward": 5000205,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_15.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-木制小雕像",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000206": {
+    "editorDisplayPriority": 500,
+    "name": 1584626375,
+    "icon": "$ui_item_Relic_12.png",
+    "topLogoHeight": 1,
+    "reward": 5000206,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_12.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-石制小雕像",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000207": {
+    "editorDisplayPriority": 500,
+    "name": 1592270797,
+    "icon": "$ui_item_Relic_13.png",
+    "topLogoHeight": 1,
+    "reward": 5000207,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_13.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-骨制小雕像",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030106": {
+    "editorDisplayPriority": 499,
+    "name": 2141163820,
+    "icon": "$ui_item_GrabEgg_EquArmor_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030106,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Pruple.prefab",
+    "quality": 4,
+    "editorName": "巡防机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030107": {
+    "editorDisplayPriority": 499,
+    "name": 1721362742,
+    "icon": "$ui_item_GrabEgg_EquArmor_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030107,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Pruple.prefab",
+    "quality": 4,
+    "editorName": "越野机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030108": {
+    "editorDisplayPriority": 499,
+    "name": 1729426170,
+    "icon": "$ui_item_GrabEgg_EquArmor_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030108,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Gold.prefab",
+    "quality": 5,
+    "editorName": "重甲机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030109": {
+    "editorDisplayPriority": 499,
+    "name": 1289464351,
+    "icon": "$ui_item_GrabEgg_EquArmor_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030109,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Gold.prefab",
+    "quality": 5,
+    "editorName": "重载机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030110": {
+    "editorDisplayPriority": 499,
+    "name": 1680835966,
+    "icon": "$ui_item_GrabEgg_EquArmor_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030110,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Gold.prefab",
+    "quality": 5,
+    "editorName": "全能机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030200": {
+    "editorDisplayPriority": 499,
+    "name": 1559033118,
+    "icon": "$ui_item_GrabEgg_Def_RepairPack_Green.png",
+    "topLogoHeight": 1,
+    "reward": 5030200,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Def_RepairPac_Blue.prefab",
+    "quality": 2,
+    "editorName": "实验脉冲能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030201": {
+    "editorDisplayPriority": 499,
+    "name": 1798297808,
+    "icon": "$ui_item_GrabEgg_Def_RepairPack_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030201,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Def_RepairPac_Blue.prefab",
+    "quality": 3,
+    "editorName": "低级脉冲能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000213": {
+    "editorDisplayPriority": 500,
+    "name": 1667080415,
+    "icon": "$ui_item_Relic_31.png",
+    "topLogoHeight": 1,
+    "reward": 5000213,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_31.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-红宝石项链",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030202": {
+    "editorDisplayPriority": 499,
+    "name": 1845612724,
+    "icon": "$ui_item_GrabEgg_Def_RepairPackt_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030202,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Def_RepairPac_Purple.prefab",
+    "quality": 4,
+    "editorName": "中级脉冲能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000214": {
+    "editorDisplayPriority": 500,
+    "name": 1197901341,
+    "icon": "$ui_item_Relic_32.png",
+    "topLogoHeight": 1,
+    "reward": 5000214,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_32.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-绿宝石项链",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090016": {
+    "editorDisplayPriority": 499,
+    "name": 1265639138,
+    "icon": "$ui_item_boss_10503.png",
+    "topLogoHeight": 1,
+    "reward": 5090016,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "好恶熊遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030203": {
+    "editorDisplayPriority": 499,
+    "name": 1257101011,
+    "icon": "$ui_item_GrabEgg_Def_RepairPack_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030203,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Def_RepairPac_Gold.prefab",
+    "quality": 5,
+    "editorName": "高级脉冲能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090015": {
+    "editorDisplayPriority": 499,
+    "name": 1930518205,
+    "icon": "$ui_item_boss_10283.png",
+    "topLogoHeight": 1,
+    "reward": 5090015,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "熔岩暴龙遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000215": {
+    "editorDisplayPriority": 500,
+    "name": 1264796753,
+    "icon": "$ui_item_Relic_33.png",
+    "topLogoHeight": 1,
+    "reward": 5000215,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_33.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-镶金祭器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090010": {
+    "editorDisplayPriority": 499,
+    "name": 1163941029,
+    "icon": "$ui_item_boss_10133.png",
+    "topLogoHeight": 1,
+    "reward": 5090010,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "霜锋狼遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030210": {
+    "editorDisplayPriority": 499,
+    "name": 1554016858,
+    "icon": "$ui_item_GrabEgg_Atk_RepairPack_Green.png",
+    "topLogoHeight": 1,
+    "reward": 5030210,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Atk_RepairPac_Blue.prefab",
+    "quality": 2,
+    "editorName": "实验谐振能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090009": {
+    "editorDisplayPriority": 499,
+    "name": 1232174220,
+    "icon": "$ui_item_boss_10143.png",
+    "topLogoHeight": 1,
+    "reward": 5090009,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "吊灯水母遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000216": {
+    "editorDisplayPriority": 500,
+    "name": 1432678732,
+    "icon": "$ui_item_Relic_34.png",
+    "topLogoHeight": 1,
+    "reward": 5000216,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_34.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-镶玉祭器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090008": {
+    "editorDisplayPriority": 499,
+    "name": 1953230791,
+    "icon": "$ui_item_boss_10163.png",
+    "topLogoHeight": 1,
+    "reward": 5090008,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "晶壳蟹遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030211": {
+    "editorDisplayPriority": 499,
+    "name": 1665838796,
+    "icon": "$ui_item_GrabEgg_Atk_RepairPack_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030211,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Atk_RepairPac_Blue.prefab",
+    "quality": 3,
+    "editorName": "低级谐振能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090007": {
+    "editorDisplayPriority": 499,
+    "name": 1163214310,
+    "icon": "$ui_item_boss_10261.png",
+    "topLogoHeight": 1,
+    "reward": 5090007,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 4,
+    "editorName": "云朵羊遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000217": {
+    "editorDisplayPriority": 500,
+    "name": 1093603908,
+    "icon": "$ui_item_Relic_41.png",
+    "topLogoHeight": 1,
+    "reward": 5000217,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_41.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-黄金手杖",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030212": {
+    "editorDisplayPriority": 499,
+    "name": 1517414927,
+    "icon": "$ui_item_GrabEgg_Atk_RepairPackt_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030212,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Atk_RepairPac_Purple.prefab",
+    "quality": 4,
+    "editorName": "中级谐振能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000504": {
+    "editorDisplayPriority": 499,
+    "name": 2030038302,
+    "icon": "$ui_item_811052.png",
+    "topLogoHeight": 1,
+    "reward": 5000504,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_SleepWellStayWell.prefab",
+    "quality": 6,
+    "editorName": "云绒眠梦",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010132": {
+    "editorDisplayPriority": 87,
+    "name": 1084317719,
+    "icon": "$ui_item_4010132.png",
+    "reward": 4010132,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_009.prefab",
+    "quality": 5,
+    "editorName": "彩琉矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000218": {
+    "editorDisplayPriority": 500,
+    "name": 1357598796,
+    "icon": "$ui_item_Relic_42.png",
+    "topLogoHeight": 1,
+    "reward": 5000218,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_42.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-玛瑙神像",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030213": {
+    "editorDisplayPriority": 499,
+    "name": 1597262479,
+    "icon": "$ui_item_GrabEgg_Atk_RepairPack_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030213,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_GrabEgg_Atk_RepairPac_Gold.prefab",
+    "quality": 5,
+    "editorName": "高级谐振能量石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090002": {
+    "editorDisplayPriority": 499,
+    "name": 1113124020,
+    "icon": "$ui_item_boss_10012.png",
+    "topLogoHeight": 1,
+    "reward": 5090002,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Str_Gold.prefab",
+    "quality": 4,
+    "editorName": "星魔师遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000208": {
+    "editorDisplayPriority": 500,
+    "name": 1684092818,
+    "icon": "$ui_item_Relic_14.png",
+    "topLogoHeight": 1,
+    "reward": 5000208,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_14.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-金属小雕像",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000219": {
+    "editorDisplayPriority": 500,
+    "name": 1764514838,
+    "icon": "$ui_item_Relic_43.png",
+    "topLogoHeight": 1,
+    "reward": 5000219,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_43.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-星钻饰带",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030301": {
+    "editorDisplayPriority": 499,
+    "name": 1627605455,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030301,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Ski_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级闪现芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000304": {
+    "editorDisplayPriority": 500,
+    "name": 1532094988,
+    "icon": "$ui_item_Ore_04.png",
+    "topLogoHeight": 1,
+    "reward": 5000304,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_04.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-锡矿原石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000307": {
+    "editorDisplayPriority": 500,
+    "name": 1973824191,
+    "icon": "$ui_item_Ore_13.png",
+    "topLogoHeight": 1,
+    "reward": 5000307,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_13.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-粗铜矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000507": {
+    "editorDisplayPriority": 499,
+    "name": 1574418707,
+    "icon": "$ui_item_Grabegg_ThornStrike_Treasure.png",
+    "topLogoHeight": 1,
+    "reward": 5000507,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_ThornStrike_Treasure.prefab",
+    "quality": 6,
+    "editorName": "珍藏·蔷薇棘剑",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030302": {
+    "editorDisplayPriority": 499,
+    "name": 1263802280,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030302,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级闪现芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000302": {
+    "editorDisplayPriority": 500,
+    "name": 1372656619,
+    "icon": "$ui_item_Ore_02.png",
+    "topLogoHeight": 1,
+    "reward": 5000302,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_02.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-铅矿原石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000310": {
+    "editorDisplayPriority": 500,
+    "name": 1887326330,
+    "icon": "$ui_item_Ore_22.png",
+    "topLogoHeight": 1,
+    "reward": 5000310,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_22.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-精铅矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010131": {
+    "editorDisplayPriority": 87,
+    "name": 1310861029,
+    "icon": "$ui_item_4010131.png",
+    "reward": 4010131,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_011.prefab",
+    "quality": 4,
+    "editorName": "线叶星",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030303": {
+    "editorDisplayPriority": 499,
+    "name": 1281328582,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030303,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级闪现芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000301": {
+    "editorDisplayPriority": 500,
+    "name": 1730401726,
+    "icon": "$ui_item_Ore_01.png",
+    "topLogoHeight": 1,
+    "reward": 5000301,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_01.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-铁矿原石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000510": {
+    "editorDisplayPriority": 499,
+    "name": 1663408463,
+    "icon": "$ui_item_Grabegg_FlamesBreathHorn_Red.png",
+    "topLogoHeight": 1,
+    "reward": 5000510,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_FlamesBreathHorn_Red.prefab",
+    "quality": 6,
+    "editorName": "珍藏·龙焰号角",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000303": {
+    "editorDisplayPriority": 500,
+    "name": 1368527277,
+    "icon": "$ui_item_Ore_03.png",
+    "topLogoHeight": 1,
+    "reward": 5000303,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_03.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-铜矿原石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030304": {
+    "editorDisplayPriority": 499,
+    "name": 1312002828,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030304,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Ski_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级治疗芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000209": {
+    "editorDisplayPriority": 500,
+    "name": 1623727715,
+    "icon": "$ui_item_Relic_21.png",
+    "topLogoHeight": 1,
+    "reward": 5000209,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_21.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-青铜花瓶",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030305": {
+    "editorDisplayPriority": 499,
+    "name": 2110979626,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030305,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级治疗芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011213": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光熔岩暴龙蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1732711269,
+    "modelScale": 2,
+    "reward": 5011213,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030306": {
+    "editorDisplayPriority": 499,
+    "name": 1397926300,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030306,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级治疗芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011212": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光蓬蓬羊蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1589808635,
+    "modelScale": 2,
+    "reward": 5011212,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030307": {
+    "editorDisplayPriority": 499,
+    "name": 1125643229,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030307,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Ski_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级弱化芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000511": {
+    "editorDisplayPriority": 499,
+    "name": 2072111296,
+    "icon": "$ui_item_Grabegg_SoulReturningGemBottle_Treasure.png",
+    "topLogoHeight": 1,
+    "reward": 5000511,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_SoulReturningGemBottle_Red.prefab",
+    "quality": 6,
+    "editorName": "珍藏·狼魂幽灯",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030308": {
+    "editorDisplayPriority": 499,
+    "name": 2083143238,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030308,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级弱化芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001101": {
+    "editorDisplayPriority": 499,
+    "name": 1875354892,
+    "icon": "$ui_item_Key_01.png",
+    "topLogoHeight": 1,
+    "reward": 5001101,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Key_01.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-锈铁钥匙",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030309": {
+    "editorDisplayPriority": 499,
+    "name": 1274091186,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030309,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级弱化芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000401": {
+    "editorDisplayPriority": 500,
+    "name": 2054199113,
+    "icon": "$ui_item_Gem_01.png",
+    "topLogoHeight": 1,
+    "reward": 5000401,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_01.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-黑曜石",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030310": {
+    "editorDisplayPriority": 499,
+    "name": 1643490249,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030310,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Ski_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级照明芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001306": {
+    "editorDisplayPriority": 500,
+    "name": 2053223192,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001306,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_RainbowPrismCore.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-虹彩琉璃鸢尾",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030311": {
+    "editorDisplayPriority": 499,
+    "name": 1720978424,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030311,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级照明芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001312": {
+    "editorDisplayPriority": 500,
+    "name": 1378419196,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5001312,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DreamMemoryAmber.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-蝶梦凝珀",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030312": {
+    "editorDisplayPriority": 499,
+    "name": 1886959985,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030312,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级照明芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000408": {
+    "editorDisplayPriority": 500,
+    "name": 1603352206,
+    "icon": "$ui_item_Gem_12.png",
+    "topLogoHeight": 1,
+    "reward": 5000408,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_12.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-斑彩玛瑙",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030313": {
+    "editorDisplayPriority": 499,
+    "name": 2037167272,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030313,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Ski_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级加速芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000220": {
+    "editorDisplayPriority": 500,
+    "name": 1579754926,
+    "icon": "$ui_item_Relic_44.png",
+    "topLogoHeight": 1,
+    "reward": 5000220,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Relic_44.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-绿翡玺戒",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14001": {
+    "editorDisplayPriority": 87,
+    "name": 1206574887,
+    "icon": "$ui_item_400001.png",
+    "reward": 11011,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectFlower_1.prefab",
+    "quality": 1,
+    "editorName": "麦麦菊",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14002": {
+    "editorDisplayPriority": 87,
+    "name": 1396276411,
+    "icon": "$ui_item_400002.png",
+    "reward": 11012,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectFlower_2.prefab",
+    "quality": 1,
+    "editorName": "月华雏菊",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030315": {
+    "editorDisplayPriority": 499,
+    "name": 1613664977,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030315,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级加速芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14003": {
+    "editorDisplayPriority": 87,
+    "name": 2075015109,
+    "icon": "$ui_item_400003.png",
+    "reward": 11013,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectFlower_3.prefab",
+    "quality": 1,
+    "editorName": "蓝星草",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030401": {
+    "editorDisplayPriority": 499,
+    "name": 1311350588,
+    "icon": "$ui_item_GrabEgg_WeaChip_Dem_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030401,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Dem_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级伤害芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010126": {
+    "editorDisplayPriority": 87,
+    "name": 1444031068,
+    "icon": "$ui_item_4010126.png",
+    "reward": 4010126,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_010.prefab",
+    "quality": 3,
+    "editorName": "裂甲矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14004": {
+    "editorDisplayPriority": 87,
+    "name": 1320796306,
+    "icon": "$ui_item_400004.png",
+    "reward": 11014,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectMushroom_1.prefab",
+    "quality": 1,
+    "editorName": "赤蕈",
+    "entityTag": [
+      "TE_Chest_BacillusMycoidesRuber",
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14007": {
+    "editorDisplayPriority": 87,
+    "name": 1944516036,
+    "icon": "$ui_item_520000.png",
+    "reward": 11017,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectMineral_1.prefab",
+    "quality": 1,
+    "editorName": "晶岩块",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030402": {
+    "editorDisplayPriority": 499,
+    "name": 1700005749,
+    "icon": "$ui_item_GrabEgg_WeaChip_Dem_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030402,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Dem_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级伤害芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14005": {
+    "editorDisplayPriority": 87,
+    "name": 1424753131,
+    "icon": "$ui_item_400005.png",
+    "reward": 11015,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectMushroom_2.prefab",
+    "quality": 1,
+    "editorName": "橙菌",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000004": {
+    "editorDisplayPriority": 500,
+    "name": 1931123182,
+    "icon": "$ui_item_Mushroom_04.png",
+    "topLogoHeight": 1,
+    "reward": 5000004,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_04.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-小红菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14006": {
+    "editorDisplayPriority": 87,
+    "name": 1774566370,
+    "icon": "$ui_item_400006.png",
+    "reward": 11016,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectMushroom_3.prefab",
+    "quality": 1,
+    "editorName": "青茸",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030403": {
+    "editorDisplayPriority": 499,
+    "name": 1108513450,
+    "icon": "$ui_item_GrabEgg_WeaChip_Dem_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030403,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Dem_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级伤害芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010125": {
+    "editorDisplayPriority": 87,
+    "name": 1824571201,
+    "icon": "$ui_item_4010125.png",
+    "reward": 4010125,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_007.prefab",
+    "quality": 3,
+    "editorName": "尾巴草",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011211": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光雷光貂蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1369815117,
+    "modelScale": 2,
+    "reward": 5011211,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010128": {
+    "editorDisplayPriority": 87,
+    "name": 2046496633,
+    "icon": "$ui_item_4010128.png",
+    "reward": 4010128,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_002.prefab",
+    "quality": 4,
+    "editorName": "睡海莲",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030404": {
+    "editorDisplayPriority": 499,
+    "name": 2020959430,
+    "icon": "$ui_item_GrabEgg_WeaChip_Dem_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030404,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Dem_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-穿甲芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001201": {
+    "editorDisplayPriority": 499,
+    "name": 1363771750,
+    "icon": "$ui_item_Coupon_EggChip.png",
+    "topLogoHeight": 1,
+    "reward": 5001201,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Soul_03.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-简易木铲",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030501": {
+    "editorDisplayPriority": 499,
+    "name": 1196681252,
+    "icon": "$ui_item_GrabEgg_WeaChip_Pat_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030501,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Pat_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级耐性芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001102": {
+    "editorDisplayPriority": 499,
+    "name": 1163465020,
+    "icon": "$ui_item_Key_02.png",
+    "topLogoHeight": 1,
+    "reward": 5001102,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Key_02.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-镀银钥匙",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011214": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-虹光刺剑枚蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 2053771128,
+    "modelScale": 2,
+    "reward": 5011214,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010124": {
+    "editorDisplayPriority": 87,
+    "name": 1911756658,
+    "icon": "$ui_item_4010124.png",
+    "reward": 4010124,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_006.prefab",
+    "quality": 5,
+    "editorName": "彩团锦",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030502": {
+    "editorDisplayPriority": 499,
+    "name": 1433361486,
+    "icon": "$ui_item_GrabEgg_WeaChip_Pat_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030502,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Pat_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级耐性芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011216": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-神秘虹光蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1542204580,
+    "modelScale": 2,
+    "reward": 5011216,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011217": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-神秘虹光蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1484126073,
+    "modelScale": 2,
+    "reward": 5011217,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_Parmon_Shine_Small",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011300": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-金色极巨蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 2137276293,
+    "modelScale": 2,
+    "reward": 5011300,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_ParmonO_ParmonEgg_GrabEgg_BEggLight",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030503": {
+    "editorDisplayPriority": 499,
+    "name": 1682998082,
+    "icon": "$ui_item_GrabEgg_WeaChip_Pat_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030503,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Pat_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级耐性芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030001": {
+    "editorDisplayPriority": 499,
+    "name": 1391413749,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Green.png",
+    "topLogoHeight": 1,
+    "reward": 5030001,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Green.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-实验增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000305": {
+    "editorDisplayPriority": 500,
+    "name": 1222986147,
+    "icon": "$ui_item_Ore_11.png",
+    "topLogoHeight": 1,
+    "reward": 5000305,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_11.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-粗铁矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010121": {
+    "editorDisplayPriority": 87,
+    "name": 1593760291,
+    "icon": "$ui_item_4010121.png",
+    "reward": 4010121,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_001.prefab",
+    "quality": 3,
+    "editorName": "缀玉花",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030601": {
+    "editorDisplayPriority": 499,
+    "name": 1972027254,
+    "icon": "$ui_item_GrabEgg_ArmChip_Red_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030601,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Red_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级防护芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030002": {
+    "editorDisplayPriority": 499,
+    "name": 2137278639,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030002,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-战斗增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14010": {
+    "editorDisplayPriority": 90,
+    "name": 1475933649,
+    "icon": "$ui_item_CoralBranches.png",
+    "reward": 11031,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collect_CoralBranches.prefab",
+    "quality": 1,
+    "editorName": "珊瑚枝（拟态遮蔽）",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010122": {
+    "editorDisplayPriority": 87,
+    "name": 1182707825,
+    "icon": "$ui_item_4010122.png",
+    "reward": 4010122,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_003.prefab",
+    "quality": 5,
+    "editorName": "星斑玛瑙",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030602": {
+    "editorDisplayPriority": 499,
+    "name": 1191235276,
+    "icon": "$ui_item_GrabEgg_ArmChip_Red_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030602,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Red_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级防护芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030003": {
+    "editorDisplayPriority": 499,
+    "name": 1151117379,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030003,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-负重增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010123": {
+    "editorDisplayPriority": 87,
+    "name": 1227538942,
+    "icon": "$ui_item_4010123.png",
+    "reward": 4010123,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_005.prefab",
+    "quality": 4,
+    "editorName": "晨星花",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030004": {
+    "editorDisplayPriority": 499,
+    "name": 1467556928,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030004,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-策略增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030603": {
+    "editorDisplayPriority": 499,
+    "name": 2044776637,
+    "icon": "$ui_item_GrabEgg_ArmChip_Red_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030603,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Red_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级防护芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030005": {
+    "editorDisplayPriority": 499,
+    "name": 1624862947,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030005,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Pruple.prefab",
+    "quality": 4,
+    "editorName": "突击增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14009": {
+    "editorDisplayPriority": 87,
+    "name": 1821512007,
+    "icon": "$ui_item_400009.png",
+    "reward": 11019,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectMushroom_4.prefab",
+    "quality": 1,
+    "editorName": "黑松露",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5001001": {
+    "editorDisplayPriority": 499,
+    "editorName": "抢蛋专用-紫魂",
+    "icon": "$ui_item_MonDrop_Pruple.png",
+    "topLogoHeight": 1,
+    "rigidbody": "GrabEGG_Collect",
+    "reward": 5001001,
+    "name": 1161447389,
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Indication_MonDrop_Purple.prefab",
+    "quality": 4,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ],
+    "modelScale": 1.2
+  },
+  "5030701": {
+    "editorDisplayPriority": 499,
+    "name": 1778123562,
+    "icon": "$ui_item_GrabEgg_ArmChip_Pat_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030701,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Pat_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级扩载芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030006": {
+    "editorDisplayPriority": 499,
+    "name": 1581241831,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030006,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Pruple.prefab",
+    "quality": 4,
+    "editorName": "战术增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "14008": {
+    "editorDisplayPriority": 87,
+    "name": 1529808328,
+    "icon": "$ui_item_520001.png",
+    "reward": 11018,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_CollectMineral_2.prefab",
+    "quality": 1,
+    "editorName": "晶岩碎块",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030007": {
+    "editorDisplayPriority": 499,
+    "name": 1268854641,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030007,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Pruple.prefab",
+    "quality": 4,
+    "editorName": "重装增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030702": {
+    "editorDisplayPriority": 499,
+    "name": 1406213292,
+    "icon": "$ui_item_GrabEgg_ArmChip_Pat_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030702,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Pat_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级扩载芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030008": {
+    "editorDisplayPriority": 499,
+    "name": 1819289828,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030008,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Pruple.prefab",
+    "quality": 4,
+    "editorName": "机动增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000003": {
+    "editorDisplayPriority": 500,
+    "name": 1917669358,
+    "icon": "$ui_item_Mushroom_03.png",
+    "topLogoHeight": 1,
+    "reward": 5000003,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Mushroom_03.prefab",
+    "quality": 1,
+    "editorName": "抢蛋专用-小黄菇",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030009": {
+    "editorDisplayPriority": 499,
+    "name": 1145003297,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030009,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Pruple.prefab",
+    "quality": 4,
+    "editorName": "破袭增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030703": {
+    "editorDisplayPriority": 499,
+    "name": 1689632861,
+    "icon": "$ui_item_GrabEgg_ArmChip_Pat_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030703,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Pat_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级扩载芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030010": {
+    "editorDisplayPriority": 499,
+    "name": 1637265653,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030010,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Gold.prefab",
+    "quality": 5,
+    "editorName": "强攻增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000412": {
+    "editorDisplayPriority": 500,
+    "name": 1576906995,
+    "icon": "$UI_Icon_MarkPoint_Chest.png",
+    "topLogoHeight": 1,
+    "reward": 5000412,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DiamondEgg.prefab",
+    "quality": 6,
+    "editorName": "抢蛋专用-不朽晶钻蛋",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010127": {
+    "editorDisplayPriority": 87,
+    "name": 1366418678,
+    "icon": "$ui_item_4010127.png",
+    "reward": 4010127,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_012.prefab",
+    "quality": 5,
+    "editorName": "甜地果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030801": {
+    "editorDisplayPriority": 499,
+    "name": 1464013428,
+    "icon": "$ui_item_GrabEgg_ArmChip_Str_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030801,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Str_Blue.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-低级强健芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030011": {
+    "editorDisplayPriority": 499,
+    "name": 1440691698,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030011,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Gold.prefab",
+    "quality": 5,
+    "editorName": "全能增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000405": {
+    "editorDisplayPriority": 500,
+    "name": 1966234402,
+    "icon": "$ui_item_Gem_05.png",
+    "topLogoHeight": 1,
+    "reward": 5000405,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Gem_05.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-鸽血红",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030012": {
+    "editorDisplayPriority": 499,
+    "name": 1564075445,
+    "icon": "$ui_item_GrabEgg_EquWeapon_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030012,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquWeapon_Gold.prefab",
+    "quality": 5,
+    "editorName": "重载增幅器",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030802": {
+    "editorDisplayPriority": 499,
+    "name": 2134819018,
+    "icon": "$ui_item_GrabEgg_ArmChip_Str_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030802,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Str_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级强健芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030101": {
+    "editorDisplayPriority": 499,
+    "name": 1139407729,
+    "icon": "$ui_item_GrabEgg_EquArmor_Green.png",
+    "topLogoHeight": 1,
+    "reward": 5030101,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Green.prefab",
+    "quality": 2,
+    "editorName": "实验机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000319": {
+    "editorDisplayPriority": 500,
+    "name": 1858781668,
+    "icon": "$ui_item_Ore_43.png",
+    "topLogoHeight": 1,
+    "reward": 5000319,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_43.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-黄金矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010129": {
+    "editorDisplayPriority": 87,
+    "name": 1819380764,
+    "icon": "$ui_item_4010129.png",
+    "reward": 4010129,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_004.prefab",
+    "quality": 3,
+    "editorName": "穗香草",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030803": {
+    "editorDisplayPriority": 499,
+    "name": 1741622694,
+    "icon": "$ui_item_GrabEgg_ArmChip_Str_Gold.png",
+    "topLogoHeight": 1,
+    "reward": 5030803,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Str_Gold.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-高级强健芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030102": {
+    "editorDisplayPriority": 499,
+    "name": 1116393021,
+    "icon": "$ui_item_GrabEgg_EquArmor_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030102,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Blue.prefab",
+    "quality": 3,
+    "editorName": "防护机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5011215": {
+    "topLogoHeight": 1.2,
+    "editorDisplayPriority": 498,
+    "editorName": "抢蛋专用-神秘虹光蛋",
+    "rigidbody": "GrabEGG_Collect",
+    "icon": "$ui_item_Grabegg_All_HEggShine.png",
+    "name": 1705505359,
+    "modelScale": 2,
+    "reward": 5011215,
+    "PresetName": [
+      "Eff_Avatar_GrabEgg_SEggLight",
+      "Eff_Avatar_GrabEgg_SEggLight_Fresnel"
+    ],
+    "effect": "Eff_ParmonO_ParmonEgg_GrabEgg_BEggLight",
+    "collectItemType": 0,
+    "model": "$P_Item_ParmonEgg_General_Normal.prefab",
+    "quality": 6,
+    "actionPrototypeId": 101000,
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "4010130": {
+    "editorDisplayPriority": 87,
+    "name": 2140851327,
+    "icon": "$ui_item_4010130.png",
+    "reward": 4010130,
+    "topLogoHeight": 1,
+    "actionPrototypeId": 134,
+    "collectItemType": 0,
+    "model": "$P_Item_SceneObject_Collection_008.prefab",
+    "quality": 4,
+    "editorName": "溜溜果",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090001": {
+    "editorDisplayPriority": 499,
+    "name": 2120060251,
+    "icon": "$ui_item_boss_10187.png",
+    "topLogoHeight": 1,
+    "reward": 5090001,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Str_Gold.prefab",
+    "quality": 4,
+    "editorName": "大号鸥遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030103": {
+    "editorDisplayPriority": 499,
+    "name": 1102601497,
+    "icon": "$ui_item_GrabEgg_EquArmor_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030103,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Blue.prefab",
+    "quality": 3,
+    "editorName": "负重机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000509": {
+    "editorDisplayPriority": 499,
+    "name": 1989338362,
+    "icon": "$ui_item_Grabegg_DiamondEgg_Pink.png",
+    "topLogoHeight": 1,
+    "reward": 5000509,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_Props_DiamondEgg_Pink.prefab",
+    "quality": 6,
+    "editorName": "珍藏·不朽晶钻蛋",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030104": {
+    "editorDisplayPriority": 499,
+    "name": 1724879289,
+    "icon": "$ui_item_GrabEgg_EquArmor_Blue.png",
+    "topLogoHeight": 1,
+    "reward": 5030104,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Blue.prefab",
+    "quality": 3,
+    "editorName": "探索机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000308": {
+    "editorDisplayPriority": 500,
+    "name": 1883712175,
+    "icon": "$ui_item_Ore_14.png",
+    "topLogoHeight": 1,
+    "reward": 5000308,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Ore_14.prefab",
+    "quality": 2,
+    "editorName": "抢蛋专用-粗锡矿",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030105": {
+    "editorDisplayPriority": 499,
+    "name": 1577167686,
+    "icon": "$ui_item_GrabEgg_EquArmor_Pruple.png",
+    "topLogoHeight": 1,
+    "reward": 5030105,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_EquArmor_Pruple.prefab",
+    "quality": 4,
+    "editorName": "护航机体",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090003": {
+    "editorDisplayPriority": 499,
+    "name": 1104064851,
+    "icon": "$ui_item_boss_10174.png",
+    "topLogoHeight": 1,
+    "reward": 5090003,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Str_Gold.prefab",
+    "quality": 4,
+    "editorName": "胖胖獭遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000111": {
+    "editorDisplayPriority": 500,
+    "name": 1404684403,
+    "icon": "$ui_item_400003.png",
+    "topLogoHeight": 1,
+    "reward": 5000111,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_23.prefab",
+    "quality": 3,
+    "editorName": "抢蛋专用-风娟草",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5000120": {
+    "editorDisplayPriority": 500,
+    "name": 1399651009,
+    "icon": "$ui_item_Fruit_44.png",
+    "topLogoHeight": 1,
+    "reward": 5000120,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_GrabEgg_Fruit_44.prefab",
+    "quality": 5,
+    "editorName": "抢蛋专用-凝露冰花",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5090004": {
+    "editorDisplayPriority": 499,
+    "name": 1468210223,
+    "icon": "$ui_item_boss_10053.png",
+    "topLogoHeight": 1,
+    "reward": 5090004,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_ArmChip_Str_Gold.prefab",
+    "quality": 4,
+    "editorName": "狼斗士遗留物",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  },
+  "5030314": {
+    "editorDisplayPriority": 499,
+    "name": 1451792669,
+    "icon": "$ui_item_GrabEgg_WeaChip_Ski_Purple.png",
+    "topLogoHeight": 1,
+    "reward": 5030314,
+    "rigidbody": "GrabEGG_Collect",
+    "actionPrototypeId": 101000,
+    "collectItemType": 0,
+    "model": "$P_Item_NPC_GrabEgg_WeaChip_Ski_Purple.prefab",
+    "quality": 4,
+    "editorName": "抢蛋专用-中级加速芯片",
+    "entityTag": [
+      "TE_Chest_Collectible"
+    ]
+  }
+}

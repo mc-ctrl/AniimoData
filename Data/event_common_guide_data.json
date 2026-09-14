@@ -1,0 +1,179 @@
+{
+  "1003": {
+    "event1": 1807,
+    "type": 1,
+    "hideCountDown": 1,
+    "backImage": "$UI_Img_Bg_EggGrab.png",
+    "showRewardId": 100188
+  },
+  "1004": {
+    "type": 1,
+    "event1": 1176,
+    "backImage": "$UI_Img_Bg_MockBattle2.png",
+    "showRewardId": 74200
+  },
+  "1013": {
+    "btnName5": 1584105254,
+    "btnName6": 1668776389,
+    "btnName7": 1271881731,
+    "btnName8": 1522333701,
+    "btnName9": 2002681254,
+    "event2": 1887,
+    "event3": 1809,
+    "event7": 1413,
+    "event8": 1934,
+    "event9": 1935,
+    "hideCountDown": 1,
+    "soureceId1": 7009,
+    "soureceId4": 785,
+    "soureceId5": 8077,
+    "soureceId6": 822,
+    "type": 1,
+    "backImage": "$UI_Img_Event_Superstar_bg.png",
+    "btnData1": {
+      "tagName": "LEVELING_GUIDE_TIP_1",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_9.png",
+      "tagType": 0
+    },
+    "btnData2": {
+      "tagName": "LEVELING_GUIDE_TIP_1",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_7.png",
+      "tagType": 0
+    },
+    "btnData3": {
+      "tagName": "LEVELING_GUIDE_TIP_1",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_6.png",
+      "tagType": 0
+    },
+    "btnData4": {
+      "tagName": "LEVELING_GUIDE_TIP_1",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_8.png",
+      "tagType": 0
+    },
+    "btnData5": {
+      "tagName": "LEVELING_GUIDE_TIP_2",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_4.png",
+      "tagType": 1
+    },
+    "btnData6": {
+      "tagName": "LEVELING_GUIDE_TIP_2",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_1.png",
+      "tagType": 1
+    },
+    "btnData7": {
+      "tagName": "LEVELING_GUIDE_TIP_3",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_3.png",
+      "tagType": 2
+    },
+    "btnData8": {
+      "tagName": "LEVELING_GUIDE_TIP_4",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_2.png",
+      "tagType": 2
+    },
+    "btnData9": {
+      "tagName": "LEVELING_GUIDE_TIP_5",
+      "iconPic": "$UI_Img_Event_Superstar_Icon_5.png",
+      "tagType": 2
+    },
+    "btnName1": 1506134870,
+    "btnName2": 2098783351,
+    "btnName3": 1777482540,
+    "btnName4": 1484753988
+  },
+  "1018": {
+    "btnName1": 1137172195,
+    "linkAddress1": "https://tap.cn/vhbcRKlE",
+    "backImage": "$UI_Img_Bg_Guide.png",
+    "type": 1
+  },
+  "1006": {
+    "type": 1,
+    "event1": 1808,
+    "backImage": "$UI_Img_Bg_HolographicBattle.png",
+    "showRewardId": 10700076
+  },
+  "1017": {
+    "btnName1": 1723199953,
+    "linkAddress1": "https://webcast.amemv.com/magic/eco/runtime/release/6a5ede01f12af70642bc9eac?should_full_screen=1&show_back=0&hide_nav_bar=1&hide_status_bar=0&auto_play_bgm=1&web_bg_color=%23FFFBEAB7&loader_name=forest&disable_all_bounces=1&delay_preload=1&mix_container_type=annie&bdhm_bid=magic_eco&bdhm_pid=6a5ede01f12af70642bc9eac&__live_platform__=webcast&appType=webcast&magic_page_no=1&magic_source=mp_default&activity=6a5edde575b24c05824a3003&from_feed=true",
+    "backImage": "$UI_Img_Bg_TikTok_Pet.png",
+    "type": 1
+  },
+  "1007": {
+    "mapMarkStaticId": [
+      91121960
+    ],
+    "type": 3,
+    "event1": 1902,
+    "showRewardId": 7000,
+    "btnName1": 1464204758,
+    "shopId": 40,
+    "sandboxId": 91046805,
+    "centerTemplateId": 1021300
+  },
+  "1016": {
+    "hideCountDown": 1,
+    "btnName1": 1694330081,
+    "type": 1,
+    "event1": 1949,
+    "backImage": "$UI_Img_Bg_WelfareRefund.png"
+  },
+  "1008": {
+    "btnName1": 1076762918,
+    "type": 1,
+    "backImage": "$UI_Img_Bg_SpeedUplncubation.png",
+    "event1": 1868
+  },
+  "1015": {
+    "backImage": "$UI_Img_Bg_RedBook.png",
+    "type": 1
+  },
+  "1009": {
+    "event1": 1885,
+    "btnName1": 1671296368,
+    "type": 1,
+    "backImage": "$UI_Imag_Bg_XyTeaParty.png",
+    "dailyStartTime": 91145204
+  },
+  "1014": {
+    "hideCountDown": 1,
+    "btnName1": 1615927396,
+    "type": 1,
+    "event1": 1937,
+    "backImage": "$UI_Img_Bg_Steam.png"
+  },
+  "1010": {
+    "event1": 1887,
+    "shopId": 46,
+    "event2": 1888,
+    "event4": 1889,
+    "type": 1,
+    "event3": 1886,
+    "btnName1": 1819997174,
+    "btnName2": 1818439384,
+    "btnName3": 1222745011,
+    "btnName4": 2044226011
+  },
+  "1001": {
+    "event1": 1176,
+    "type": 1,
+    "hideCountDown": 1,
+    "backImage": "$UI_Img_Bg_MockBattle.png",
+    "showRewardId": 74200
+  },
+  "1011": {
+    "linkAddress1": "https://t.yimoo.com/UveakH",
+    "backImage": "$UI_Img_Bg_EnterpriseWeChat.png",
+    "btnName1": 1880863238,
+    "type": 1,
+    "hideCountDown": 1,
+    "showRewardId": 100195
+  },
+  "1012": {
+    "rewardDesc": 1358248760,
+    "hideCountDown": 1,
+    "btnName1": 1305428311,
+    "type": 1,
+    "event1": 1921,
+    "backImage": "$UI_Img_Bg_SecretStore.png"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "1a0624c5-784a-4d8b-ae3d-c71814d585f8",
+      "eventType": "Notify",
+      "time": 4.3,
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "91ba8c0d-613f-4e04-a764-0e282710d140",
+      "eventType": "EventEnter",
+      "NodeID": 38
+    },
+    "39": {
+      "lockTarget": "OWNER",
+      "name": "lockTarget",
+      "UID": "506485c6-c58a-4156-ac0b-fae104b4c41c",
+      "target": "TARGET",
+      "NodeID": 39
+    },
+    "31": {
+      "UID": "2db118de-743b-4f84-8c98-3cb81eed1a99",
+      "eventType": "EventEnter",
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "763b015e-47ab-4ab1-bd2a-ed9f81e55528",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "5f5bbf15-c0ca-4194-beaf-5f9b48a73e2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "TARGET",
+      "duration": 5,
+      "buffId": 2921301,
+      "NodeID": 21,
+      "UID": "b83f7d70-302d-4d70-af87-e16aa41697c0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "3": {
+      "UID": "6c0f0645-963d-4427-85b6-8b6d09e6ce3c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "783a3f6d-4d06-4675-8045-340a03ca319e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "15": {
+      "UID": "295b41d5-25be-4134-b032-9922898bb142",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 4.3,
+      "NodeID": 25,
+      "UID": "5fd3c5b3-1fca-40dc-a889-45fd7242c52f",
+      "onUpdate": {
+        "actionIds": [
+          23
+        ]
+      },
+      "startTime": 1.3,
+      "onEnter": {
+        "actionIds": [
+          23
+        ]
+      }
+    },
+    "17": {
+      "UID": "a4b920dc-7e46-4fb3-9ff8-251e7b694c90",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "18": {
+      "time": 6.3,
+      "rotateSpeed": 360,
+      "name": "rotateTo",
+      "UID": "dca32e7d-6650-4174-a5d9-7bb6686eb520",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 18
+    },
+    "32": {
+      "UID": "31189d4e-1215-487f-9035-e462a6c0242f",
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 32
+    },
+    "23": {
+      "actionIds": [
+        21,
+        39,
+        36
+      ],
+      "name": "actOnTargets",
+      "UID": "14d0d97a-cd79-435c-86c3-8660d926d1e8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0.8,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            40,
+            1,
+            0
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 23
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7,
+      "NodeID": 5,
+      "UID": "9d59150d-f0f2-45fc-ad49-acdd5cdda129"
+    },
+    "36": {
+      "timelineId": 902130500002,
+      "name": "jumpToNextTimeline",
+      "UID": "5a7597aa-3539-417f-ab27-12012e977bee",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_902130500",
+  "NodeID": 7,
+  "UID": "26bc3730-850c-44a2-96ab-c127e885acb4",
+  "eventIds": [
+    13,
+    17,
+    20,
+    5,
+    31,
+    25,
+    37,
+    32,
+    38
+  ],
+  "layer": "Base",
+  "length": 10
+}

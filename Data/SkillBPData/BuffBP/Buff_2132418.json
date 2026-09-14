@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "ep_cost_reduce_fix": {
+      "calcId": 2132418,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "c70f8636-b17d-462d-97f3-1627205777a4",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_2132418",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {}
+}

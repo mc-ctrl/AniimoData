@@ -1,0 +1,121 @@
+{
+  "Hard-hallway": {
+    "G-All": 5,
+    "G0": 0,
+    "G1": 10,
+    "G2": 5,
+    "G3": 0,
+    "G4": 0,
+    "G5": 0,
+    "G6": 0,
+    "roomtyperemark": "困难-过道"
+  },
+  "Hard-room": {
+    "EggCount": 1,
+    "EggProbability": 0.1,
+    "G-All": 7,
+    "G-sup": [
+      "G2",
+      "G3",
+      "G4"
+    ],
+    "G0": 0,
+    "G1": 0,
+    "G2": 6,
+    "G3": 3,
+    "G4": 2,
+    "G5": 1,
+    "G6": 0,
+    "roomtyperemark": "困难-普通房间"
+  },
+  "Nightmare-hallway": {
+    "G-All": 5,
+    "G0": 0,
+    "G1": 8,
+    "G2": 4,
+    "G3": 2,
+    "G4": 0,
+    "G5": 0,
+    "G6": 0,
+    "roomtyperemark": "噩梦-过道"
+  },
+  "Nightmare-room": {
+    "EggCount": 1,
+    "EggProbability": 0.15,
+    "G-All": 7,
+    "G-sup": [
+      "G2",
+      "G3",
+      "G4"
+    ],
+    "G0": 0,
+    "G1": 0,
+    "G2": 6,
+    "G3": 4,
+    "G4": 2,
+    "G5": 3,
+    "G6": 1,
+    "roomtyperemark": "噩梦-普通房间"
+  },
+  "Normal-hallway": {
+    "G-All": 3,
+    "G-sup": [
+      "G1",
+      "G2"
+    ],
+    "G0": 0,
+    "G1": 8,
+    "G2": 2,
+    "G3": 0,
+    "G4": 0,
+    "G5": 0,
+    "G6": 0,
+    "roomtyperemark": "普通-过道"
+  },
+  "Normal-room": {
+    "EggCount": 1,
+    "EggProbability": 0.05,
+    "G-All": 5,
+    "G-sup": [
+      "G3",
+      "G4"
+    ],
+    "G0": 0,
+    "G1": 0,
+    "G2": 5,
+    "G3": 2,
+    "G4": 1,
+    "G5": 0,
+    "G6": 0,
+    "roomtyperemark": "普通-普通房间"
+  },
+  "Chaos-hallway": {
+    "G-All": 5,
+    "G0": 0,
+    "G1": 8,
+    "G2": 4,
+    "G3": 3,
+    "G4": 0,
+    "G5": 0,
+    "G6": 0,
+    "roomtyperemark": "混沌-过道"
+  },
+  "Chaos-room": {
+    "EggCount": 1,
+    "EggProbability": 0.25,
+    "G-All": 7,
+    "G-sup": [
+      "G2",
+      "G3",
+      "G4"
+    ],
+    "G0": 0,
+    "G1": 0,
+    "G2": 6,
+    "G3": 5,
+    "G4": 3,
+    "G5": 4,
+    "G6": 2,
+    "roomtyperemark": "混沌-普通房间"
+  }
+}

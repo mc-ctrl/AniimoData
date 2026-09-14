@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10017",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    3,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "0bded94e-627e-4b3f-8863-48d53d46e9d7",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ca9b6afe-ad01-4ed1-9cf4-f8981bb92631",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_sfx_parmon_break",
+      "NodeID": 9
+    },
+    "6": {
+      "name": "playHitEffect",
+      "UID": "e2b32bb6-b962-4ae9-9a60-ca9603e6eaf2",
+      "target": "OWNER",
+      "NodeID": 6,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    },
+    "15": {
+      "calcInfo": {
+        "add_cur_bp_fix": 9999
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "dmgWordUITypes": [
+          "DOT"
+        ],
+        "disableShowJumpWord": true
+      },
+      "UID": "79d3db19-a1fa-42dd-b585-23adc8ea57a4",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 15
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "12722c22-c10f-4eef-90bb-4a56bf7ac6c9",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    13
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    15,
+    12,
+    9,
+    6
+  ]
+}

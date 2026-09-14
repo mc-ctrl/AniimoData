@@ -1,0 +1,107 @@
+{
+  "1012": {
+    "labelPool1Desc": 1566633618,
+    "labelPoolName": 1635721161,
+    "tagGroupRelation": 6
+  },
+  "1018": {
+    "labelPool1Desc": 1367284949,
+    "labelPoolName": 1434032312,
+    "tagGroupRelation": 6
+  },
+  "1013": {
+    "labelPool1Desc": 2140281026,
+    "labelPoolName": 1176550421,
+    "tagGroupRelation": 6
+  },
+  "1020": {
+    "labelPool1Desc": 1237421181,
+    "labelPoolName": 1482419168,
+    "tagGroupRelation": 6
+  },
+  "1014": {
+    "labelPool1Desc": 2059093118,
+    "labelPoolName": 2015571916,
+    "tagGroupRelation": 6
+  },
+  "1015": {
+    "labelPool1Desc": 1288011917,
+    "labelPoolName": 1158117314,
+    "tagGroupRelation": 6
+  },
+  "1016": {
+    "labelPool1Desc": 1709286445,
+    "labelPoolName": 1498451517,
+    "tagGroupRelation": 6
+  },
+  "1001": {
+    "labelPool1Desc": 2135438839,
+    "labelPoolName": 1982643352,
+    "tagGroupRelation": 1
+  },
+  "1003": {
+    "labelPool1Desc": 2022688104,
+    "labelPoolName": 1274484198,
+    "tagGroupRelation": 3
+  },
+  "1004": {
+    "labelPool1Desc": 1838113868,
+    "labelPoolName": 1448811524,
+    "tagGroupRelation": 4
+  },
+  "1002": {
+    "labelPool1Desc": 1393972540,
+    "labelPoolName": 1638516171,
+    "tagGroupRelation": 2
+  },
+  "1006": {
+    "labelPool1Desc": 1877376520,
+    "labelPoolName": 2023980177,
+    "tagGroupRelation": 3
+  },
+  "1007": {
+    "labelPool1Desc": 1822238367,
+    "labelPoolName": 1728728682,
+    "tagGroupRelation": 4
+  },
+  "1008": {
+    "labelPool1Desc": 1668076646,
+    "labelPoolName": 1386768380,
+    "tagGroupRelation": 5
+  },
+  "10000": {
+    "labelPool1Desc": 1207292699,
+    "labelPoolName": 1611596406,
+    "tagGroupRelation": 7
+  },
+  "1009": {
+    "labelPool1Desc": 1855434790,
+    "labelPoolName": 2141050057,
+    "tagGroupRelation": 6
+  },
+  "1019": {
+    "labelPool1Desc": 2109010550,
+    "labelPoolName": 1187377008,
+    "tagGroupRelation": 6
+  },
+  "1010": {
+    "labelPool1Desc": 1267950781,
+    "labelPoolName": 1436115912,
+    "tagGroupRelation": 6
+  },
+  "1017": {
+    "labelPool1Desc": 1533339905,
+    "labelPoolName": 1266074537,
+    "tagGroupRelation": 6
+  },
+  "1011": {
+    "labelPool1Desc": 1394355675,
+    "labelPoolName": 1770347243,
+    "tagGroupRelation": 4
+  },
+  "1005": {
+    "labelPool1Desc": 1296453622,
+    "labelPoolName": 1361074775,
+    "tagGroupRelation": 5
+  }
+}

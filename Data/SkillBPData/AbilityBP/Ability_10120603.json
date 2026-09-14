@@ -1,0 +1,32 @@
+{
+  "BPName": "ability_10120603",
+  "NodeID": 1,
+  "UID": "e6883caf-3647-404c-b84f-954c512d9088",
+  "abilityParamId": 12700061,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10120603001,
+      "name": "setCombatActionTimeline",
+      "UID": "e7c7ec80-9677-40b9-bfd8-2b39baf5d0b8",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10011_Skill_Debuff_5s",
+    "Eff_Boss_Debuff_Weak"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 0.5
+}

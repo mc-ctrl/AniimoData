@@ -1,0 +1,1718 @@
+[
+  {
+    "landId": 1,
+    "yaw": 15,
+    "templateId": 90100014,
+    "position": [
+      9.94,
+      0,
+      -17
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 45,
+    "templateId": 90100014,
+    "position": [
+      15.75,
+      0,
+      -23
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 240,
+    "templateId": 90100014,
+    "position": [
+      8.25,
+      0,
+      -26
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 0,
+    "templateId": 90100017,
+    "position": [
+      15.75,
+      0,
+      -20
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 0,
+    "templateId": 90100017,
+    "position": [
+      17.75,
+      0,
+      -18
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 315,
+    "templateId": 90100010,
+    "position": [
+      5.65,
+      0,
+      -18.5
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 315,
+    "templateId": 90100010,
+    "position": [
+      17.75,
+      0,
+      -20.75
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 300,
+    "templateId": 90100010,
+    "position": [
+      14.25,
+      0,
+      -20.5
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 150,
+    "templateId": 90100013,
+    "position": [
+      2.75,
+      0,
+      -27.25
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 150,
+    "templateId": 90100012,
+    "position": [
+      12.25,
+      0,
+      -22.25
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 165,
+    "templateId": 90100011,
+    "position": [
+      7.25,
+      0,
+      -21.5
+    ]
+  },
+  {
+    "landId": 2,
+    "yaw": 240,
+    "templateId": 90200004,
+    "position": [
+      -6.85,
+      0,
+      -17.96
+    ]
+  },
+  {
+    "landId": 2,
+    "yaw": 0,
+    "templateId": 90200005,
+    "position": [
+      -8.25,
+      0,
+      -25
+    ]
+  },
+  {
+    "landId": 2,
+    "yaw": 210,
+    "templateId": 90200010,
+    "position": [
+      -11.11,
+      0,
+      -20.17
+    ]
+  },
+  {
+    "landId": 2,
+    "yaw": 0,
+    "templateId": 90200012,
+    "position": [
+      -2.28,
+      0,
+      -27.88
+    ]
+  },
+  {
+    "landId": 2,
+    "yaw": 315,
+    "templateId": 90200016,
+    "position": [
+      -12.76,
+      0,
+      -16.75
+    ]
+  },
+  {
+    "landId": 2,
+    "yaw": 90,
+    "templateId": 90200001,
+    "position": [
+      -17.38,
+      0,
+      -20.75
+    ]
+  },
+  {
+    "landId": 2,
+    "yaw": 270,
+    "templateId": 90200001,
+    "position": [
+      -2.48,
+      0,
+      -18.95
+    ]
+  },
+  {
+    "landId": 4,
+    "yaw": 135,
+    "templateId": 90400014,
+    "position": [
+      -2,
+      0,
+      -9.5
+    ]
+  },
+  {
+    "landId": 4,
+    "yaw": 0,
+    "templateId": 90400014,
+    "position": [
+      -5.38,
+      0,
+      -12.85
+    ]
+  },
+  {
+    "landId": 4,
+    "yaw": 99,
+    "templateId": 90400010,
+    "position": [
+      -4.5,
+      0,
+      -5.75
+    ]
+  },
+  {
+    "landId": 4,
+    "yaw": 315,
+    "templateId": 90400008,
+    "position": [
+      -13,
+      0,
+      -6.5
+    ]
+  },
+  {
+    "landId": 4,
+    "yaw": 0,
+    "templateId": 90400016,
+    "position": [
+      -4.88,
+      0,
+      -10.6
+    ]
+  },
+  {
+    "landId": 4,
+    "yaw": 0,
+    "templateId": 90400015,
+    "position": [
+      -1.25,
+      0,
+      -6.75
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 240,
+    "templateId": 90300004,
+    "position": [
+      1.23,
+      0,
+      -13.96
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 180,
+    "templateId": 90300004,
+    "position": [
+      10,
+      0,
+      -6.25
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 15,
+    "templateId": 90300014,
+    "position": [
+      5.25,
+      0,
+      -12.98
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 0,
+    "templateId": 90300014,
+    "position": [
+      1.33,
+      0,
+      -6.81
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 45,
+    "templateId": 90300010,
+    "position": [
+      6.25,
+      0,
+      -3
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 240,
+    "templateId": 90300010,
+    "position": [
+      14,
+      0,
+      -2.25
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 315,
+    "templateId": 90300013,
+    "position": [
+      6.15,
+      0,
+      -9.54
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 0,
+    "templateId": 90300012,
+    "position": [
+      1.51,
+      0,
+      -4.25
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 225,
+    "templateId": 90300011,
+    "position": [
+      11.25,
+      0,
+      -9.25
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 30,
+    "templateId": 90700002,
+    "position": [
+      -1.6,
+      0,
+      5.6
+    ]
+  },
+  {
+    "landId": 8,
+    "yaw": 354,
+    "templateId": 90800002,
+    "position": [
+      4.94,
+      0,
+      2.39
+    ]
+  },
+  {
+    "landId": 1,
+    "yaw": 229,
+    "templateId": 90100002,
+    "position": [
+      1.51,
+      0,
+      -17.71
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 180,
+    "templateId": 90300015,
+    "position": [
+      13.73,
+      0,
+      -13.3
+    ]
+  },
+  {
+    "landId": 3,
+    "yaw": 270,
+    "templateId": 90300001,
+    "position": [
+      17.01,
+      0,
+      -7.64
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 0,
+    "templateId": 90600003,
+    "position": [
+      21.84,
+      0,
+      -4.46
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 120,
+    "templateId": 90600005,
+    "position": [
+      35,
+      0,
+      -6.5
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 45,
+    "templateId": 90600014,
+    "position": [
+      32.52,
+      0,
+      -12.25
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 330,
+    "templateId": 90600010,
+    "position": [
+      26.42,
+      0,
+      -4.71
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 0,
+    "templateId": 90600016,
+    "position": [
+      29.75,
+      0,
+      -7.5
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 270,
+    "templateId": 90600002,
+    "position": [
+      37.35,
+      0,
+      -12.03
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 180,
+    "templateId": 90600002,
+    "position": [
+      29.99,
+      0,
+      -2.33
+    ]
+  },
+  {
+    "landId": 6,
+    "yaw": 0,
+    "templateId": 90600001,
+    "position": [
+      25.11,
+      0,
+      -11.72
+    ]
+  },
+  {
+    "landId": 5,
+    "yaw": 60,
+    "templateId": 90500004,
+    "position": [
+      29.5,
+      0,
+      -25.75
+    ]
+  },
+  {
+    "landId": 5,
+    "yaw": 0,
+    "templateId": 90500014,
+    "position": [
+      26,
+      0,
+      -24.25
+    ]
+  },
+  {
+    "landId": 5,
+    "yaw": 60,
+    "templateId": 90500007,
+    "position": [
+      33,
+      0,
+      -24.25
+    ]
+  },
+  {
+    "landId": 5,
+    "yaw": 210,
+    "templateId": 90500011,
+    "position": [
+      23.01,
+      0,
+      -27.54
+    ]
+  },
+  {
+    "landId": 5,
+    "yaw": 0,
+    "templateId": 90500016,
+    "position": [
+      36.6,
+      0,
+      -17.4
+    ]
+  },
+  {
+    "landId": 5,
+    "yaw": 180,
+    "templateId": 90500001,
+    "position": [
+      24.33,
+      0,
+      -17.72
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 150,
+    "templateId": 90700006,
+    "position": [
+      -14.65,
+      0,
+      2.68
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 0,
+    "templateId": 90700016,
+    "position": [
+      -12.22,
+      0,
+      12.41
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 315,
+    "templateId": 90700014,
+    "position": [
+      -10.5,
+      0,
+      9.75
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 225,
+    "templateId": 90700014,
+    "position": [
+      -5.34,
+      0,
+      1.72
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 0,
+    "templateId": 90700017,
+    "position": [
+      -18.63,
+      0,
+      1.37
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 45,
+    "templateId": 90700010,
+    "position": [
+      -10,
+      0,
+      2
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 0,
+    "templateId": 90700010,
+    "position": [
+      -6.15,
+      0,
+      8.01
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 315,
+    "templateId": 90700013,
+    "position": [
+      -3.5,
+      0,
+      12.75
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 0,
+    "templateId": 90700011,
+    "position": [
+      -9.5,
+      0,
+      5.75
+    ]
+  },
+  {
+    "landId": 7,
+    "yaw": 0,
+    "templateId": 90700015,
+    "position": [
+      -2,
+      0,
+      10.25
+    ]
+  },
+  {
+    "landId": 8,
+    "yaw": 345,
+    "templateId": 90800010,
+    "position": [
+      3,
+      0,
+      12
+    ]
+  },
+  {
+    "landId": 8,
+    "yaw": 0,
+    "templateId": 90800003,
+    "position": [
+      1.89,
+      0,
+      3.94
+    ]
+  },
+  {
+    "landId": 8,
+    "yaw": 225,
+    "templateId": 90800006,
+    "position": [
+      17.83,
+      0,
+      12
+    ]
+  },
+  {
+    "landId": 8,
+    "yaw": 135,
+    "templateId": 90800010,
+    "position": [
+      17.86,
+      0,
+      2.54
+    ]
+  },
+  {
+    "landId": 8,
+    "yaw": 0,
+    "templateId": 90800009,
+    "position": [
+      11.58,
+      0,
+      5.48
+    ]
+  },
+  {
+    "landId": 8,
+    "yaw": 91,
+    "templateId": 90800016,
+    "position": [
+      13.24,
+      0,
+      1.46
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 270,
+    "templateId": 90900003,
+    "position": [
+      30.72,
+      0,
+      1.57
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 180,
+    "templateId": 90900004,
+    "position": [
+      33.25,
+      0,
+      6.25
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 0,
+    "templateId": 90900014,
+    "position": [
+      36.25,
+      0,
+      4.5
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 285,
+    "templateId": 90900014,
+    "position": [
+      21.8,
+      0,
+      2.08
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 255,
+    "templateId": 90900010,
+    "position": [
+      36.75,
+      0,
+      11.5
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 90,
+    "templateId": 90900007,
+    "position": [
+      26,
+      0,
+      7
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 0,
+    "templateId": 90900016,
+    "position": [
+      21.53,
+      0,
+      8.56
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 0,
+    "templateId": 90900016,
+    "position": [
+      25.5,
+      0,
+      2.25
+    ]
+  },
+  {
+    "landId": 9,
+    "yaw": 195,
+    "templateId": 90900002,
+    "position": [
+      21.41,
+      0,
+      13
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 150,
+    "templateId": 91000003,
+    "position": [
+      -25.14,
+      0,
+      -17.66
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 180,
+    "templateId": 91000003,
+    "position": [
+      -21.93,
+      0,
+      -18.86
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 0,
+    "templateId": 91000004,
+    "position": [
+      -24.36,
+      0,
+      -24.78
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 285,
+    "templateId": 91000006,
+    "position": [
+      -37.91,
+      0,
+      -20
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 0,
+    "templateId": 91000014,
+    "position": [
+      -37.5,
+      0,
+      -27.37
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 0,
+    "templateId": 91000014,
+    "position": [
+      -22,
+      0,
+      -27.75
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 0,
+    "templateId": 91000017,
+    "position": [
+      -35.25,
+      0,
+      -16.75
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 330,
+    "templateId": 91000007,
+    "position": [
+      -30,
+      0,
+      -23.25
+    ]
+  },
+  {
+    "landId": 10,
+    "yaw": 120,
+    "templateId": 91000011,
+    "position": [
+      -26.19,
+      0,
+      -26.98
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 0,
+    "templateId": 91100004,
+    "position": [
+      -35.71,
+      0,
+      -8
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 285,
+    "templateId": 91100014,
+    "position": [
+      -21.94,
+      0,
+      -6.5
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 0,
+    "templateId": 91100014,
+    "position": [
+      -33.81,
+      0,
+      -2.08
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 300,
+    "templateId": 91100010,
+    "position": [
+      -37.62,
+      0,
+      -11
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 300,
+    "templateId": 91100013,
+    "position": [
+      -30.94,
+      0,
+      -5.27
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 135,
+    "templateId": 91100016,
+    "position": [
+      -30.16,
+      0,
+      -1.61
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 180,
+    "templateId": 91100002,
+    "position": [
+      -21.72,
+      0,
+      -1.49
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 180,
+    "templateId": 91100015,
+    "position": [
+      -32.27,
+      0,
+      -13.3
+    ]
+  },
+  {
+    "landId": 11,
+    "yaw": 0,
+    "templateId": 91100001,
+    "position": [
+      -25.5,
+      0,
+      -11.8
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 282,
+    "templateId": 91200003,
+    "position": [
+      -27.25,
+      0,
+      13.74
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 330,
+    "templateId": 91200006,
+    "position": [
+      -27.71,
+      0,
+      10
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 0,
+    "templateId": 91200008,
+    "position": [
+      -33.8,
+      0,
+      7.26
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 285,
+    "templateId": 91200014,
+    "position": [
+      -22.16,
+      0,
+      5.52
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 315,
+    "templateId": 91200010,
+    "position": [
+      -25.75,
+      0,
+      4.5
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 135,
+    "templateId": 91200016,
+    "position": [
+      -24.5,
+      0,
+      8.01
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 105,
+    "templateId": 91200002,
+    "position": [
+      -23.2,
+      0,
+      1.89
+    ]
+  },
+  {
+    "landId": 12,
+    "yaw": 0,
+    "templateId": 91200002,
+    "position": [
+      -22.66,
+      0,
+      12.24
+    ]
+  },
+  {
+    "landId": 13,
+    "yaw": 135,
+    "templateId": 91300016,
+    "position": [
+      -27.44,
+      0,
+      22.6
+    ]
+  },
+  {
+    "landId": 13,
+    "yaw": 0,
+    "templateId": 91300016,
+    "position": [
+      -26.93,
+      0,
+      27.75
+    ]
+  },
+  {
+    "landId": 13,
+    "yaw": 300,
+    "templateId": 91300012,
+    "position": [
+      -21.71,
+      0,
+      22.55
+    ]
+  },
+  {
+    "landId": 13,
+    "yaw": 315,
+    "templateId": 91300013,
+    "position": [
+      -36,
+      0,
+      18.75
+    ]
+  },
+  {
+    "landId": 13,
+    "yaw": 30,
+    "templateId": 91300010,
+    "position": [
+      -22.8,
+      0,
+      27.55
+    ]
+  },
+  {
+    "landId": 13,
+    "yaw": 0,
+    "templateId": 91300005,
+    "position": [
+      -33.95,
+      0,
+      24.16
+    ]
+  },
+  {
+    "landId": 13,
+    "yaw": 0,
+    "templateId": 91300001,
+    "position": [
+      -27.84,
+      0,
+      17.65
+    ]
+  },
+  {
+    "landId": 14,
+    "yaw": 60,
+    "templateId": 91400004,
+    "position": [
+      -2.11,
+      0,
+      18.37
+    ]
+  },
+  {
+    "landId": 14,
+    "yaw": 45,
+    "templateId": 91400010,
+    "position": [
+      -3,
+      0,
+      27
+    ]
+  },
+  {
+    "landId": 14,
+    "yaw": 30,
+    "templateId": 91400010,
+    "position": [
+      -17.05,
+      0,
+      25.8
+    ]
+  },
+  {
+    "landId": 14,
+    "yaw": 0,
+    "templateId": 91400017,
+    "position": [
+      -12,
+      -0.5,
+      28
+    ]
+  },
+  {
+    "landId": 14,
+    "yaw": 285,
+    "templateId": 91400014,
+    "position": [
+      -18.12,
+      0,
+      22.8
+    ]
+  },
+  {
+    "landId": 14,
+    "yaw": 0,
+    "templateId": 91400007,
+    "position": [
+      -8.75,
+      0,
+      19.8
+    ]
+  },
+  {
+    "landId": 14,
+    "yaw": 0,
+    "templateId": 91400017,
+    "position": [
+      -9.5,
+      0,
+      28.58
+    ]
+  },
+  {
+    "landId": 15,
+    "yaw": 0,
+    "templateId": 91500016,
+    "position": [
+      5.75,
+      0,
+      21
+    ]
+  },
+  {
+    "landId": 15,
+    "yaw": 195,
+    "templateId": 91500011,
+    "position": [
+      12.5,
+      0,
+      16.25
+    ]
+  },
+  {
+    "landId": 15,
+    "yaw": 338,
+    "templateId": 91500013,
+    "position": [
+      2.3,
+      0,
+      22.5
+    ]
+  },
+  {
+    "landId": 15,
+    "yaw": 45,
+    "templateId": 91500010,
+    "position": [
+      4.5,
+      0,
+      26.5
+    ]
+  },
+  {
+    "landId": 15,
+    "yaw": 45,
+    "templateId": 91500005,
+    "position": [
+      13.87,
+      0,
+      24.36
+    ]
+  },
+  {
+    "landId": 15,
+    "yaw": 285,
+    "templateId": 91500014,
+    "position": [
+      7.68,
+      0,
+      16.79
+    ]
+  },
+  {
+    "landId": 15,
+    "yaw": 271,
+    "templateId": 91500001,
+    "position": [
+      17.74,
+      0,
+      18.06
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 180,
+    "templateId": 91600004,
+    "position": [
+      37,
+      0,
+      18
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 0,
+    "templateId": 91600016,
+    "position": [
+      37.25,
+      0,
+      24.75
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 15,
+    "templateId": 91600010,
+    "position": [
+      33.66,
+      0,
+      16.42
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 45,
+    "templateId": 91600010,
+    "position": [
+      21.75,
+      0,
+      21.75
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 0,
+    "templateId": 91600006,
+    "position": [
+      23.5,
+      0,
+      27.25
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 225,
+    "templateId": 91600014,
+    "position": [
+      28,
+      0,
+      16.59
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 0,
+    "templateId": 91600008,
+    "position": [
+      31,
+      0,
+      24
+    ]
+  },
+  {
+    "landId": 16,
+    "yaw": 90,
+    "templateId": 91600002,
+    "position": [
+      22.56,
+      0,
+      17.88
+    ]
+  },
+  {
+    "yaw": 135,
+    "templateId": 91700014,
+    "position": [
+      -2,
+      0,
+      -9.5
+    ],
+    "landId": 33,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700014,
+    "position": [
+      -5.38,
+      0,
+      -12.85
+    ],
+    "landId": 33,
+    "seasonId": 1
+  },
+  {
+    "yaw": 99,
+    "templateId": 91700010,
+    "position": [
+      -4.5,
+      0,
+      -5.75
+    ],
+    "landId": 33,
+    "seasonId": 1
+  },
+  {
+    "yaw": 315,
+    "templateId": 91700008,
+    "position": [
+      -13,
+      0,
+      -6.5
+    ],
+    "landId": 33,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700016,
+    "position": [
+      -4.88,
+      0,
+      -10.6
+    ],
+    "landId": 33,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700015,
+    "position": [
+      -1.25,
+      0,
+      -6.75
+    ],
+    "landId": 33,
+    "seasonId": 1
+  },
+  {
+    "yaw": 240,
+    "templateId": 91700004,
+    "position": [
+      1.23,
+      0,
+      -13.96
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 180,
+    "templateId": 91700004,
+    "position": [
+      10,
+      0,
+      -6.25
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 15,
+    "templateId": 91700014,
+    "position": [
+      5.25,
+      0,
+      -12.98
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700014,
+    "position": [
+      1.33,
+      0,
+      -6.81
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 45,
+    "templateId": 91700010,
+    "position": [
+      6.25,
+      0,
+      -3
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 240,
+    "templateId": 91700010,
+    "position": [
+      14,
+      0,
+      -2.25
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 315,
+    "templateId": 91700013,
+    "position": [
+      6.15,
+      0,
+      -9.54
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700012,
+    "position": [
+      1.51,
+      0,
+      -4.25
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 225,
+    "templateId": 91700011,
+    "position": [
+      11.25,
+      0,
+      -9.25
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 180,
+    "templateId": 91700015,
+    "position": [
+      13.73,
+      0,
+      -13.3
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 270,
+    "templateId": 91700001,
+    "position": [
+      17.01,
+      0,
+      -7.64
+    ],
+    "landId": 34,
+    "seasonId": 1
+  },
+  {
+    "yaw": 150,
+    "templateId": 91700006,
+    "position": [
+      -14.65,
+      0,
+      2.68
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700016,
+    "position": [
+      -12.22,
+      0,
+      12.41
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 315,
+    "templateId": 91700014,
+    "position": [
+      -10.5,
+      0,
+      9.75
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 225,
+    "templateId": 91700014,
+    "position": [
+      -5.34,
+      0,
+      1.72
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700017,
+    "position": [
+      -18.63,
+      0,
+      1.37
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 45,
+    "templateId": 91700010,
+    "position": [
+      -10,
+      0,
+      2
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700010,
+    "position": [
+      -6.15,
+      0,
+      8.01
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 315,
+    "templateId": 91700013,
+    "position": [
+      -3.5,
+      0,
+      12.75
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700011,
+    "position": [
+      -9.5,
+      0,
+      5.75
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700015,
+    "position": [
+      -2,
+      0,
+      10.25
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 30,
+    "templateId": 91700002,
+    "position": [
+      -1.6,
+      0,
+      5.6
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700003,
+    "position": [
+      -15.7,
+      0,
+      8.53
+    ],
+    "landId": 35,
+    "seasonId": 1
+  },
+  {
+    "yaw": 345,
+    "templateId": 91700010,
+    "position": [
+      3,
+      0,
+      12
+    ],
+    "landId": 36,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700003,
+    "position": [
+      1.89,
+      0,
+      3.94
+    ],
+    "landId": 36,
+    "seasonId": 1
+  },
+  {
+    "yaw": 225,
+    "templateId": 91700006,
+    "position": [
+      17.83,
+      0,
+      12
+    ],
+    "landId": 36,
+    "seasonId": 1
+  },
+  {
+    "yaw": 135,
+    "templateId": 91700010,
+    "position": [
+      17.86,
+      0,
+      2.54
+    ],
+    "landId": 36,
+    "seasonId": 1
+  },
+  {
+    "yaw": 0,
+    "templateId": 91700009,
+    "position": [
+      11.58,
+      0,
+      5.48
+    ],
+    "landId": 36,
+    "seasonId": 1
+  },
+  {
+    "yaw": 91,
+    "templateId": 91700016,
+    "position": [
+      13.24,
+      0,
+      1.46
+    ],
+    "landId": 36,
+    "seasonId": 1
+  },
+  {
+    "yaw": 354,
+    "templateId": 91700002,
+    "position": [
+      4.94,
+      0,
+      2.39
+    ],
+    "landId": 36,
+    "seasonId": 1
+  }
+]

@@ -1,0 +1,358 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "609e4c75-a425-401e-9984-4c5bb8393b03",
+      "name": "stopAnimation",
+      "anim": "Behav_Angry",
+      "NodeID": 37
+    },
+    "35": {
+      "name": "playEffectOnPosRot",
+      "UID": "c3323333-beac-4034-9fca-672f61d2d3ab",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_Start",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 35,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "31": {
+      "name": "getRotationFromTo",
+      "UID": "29af6514-085b-4ec7-aa4b-7dc49e0db92c",
+      "to": "OWNER",
+      "NodeID": 31,
+      "from": {
+        "rotation": "Null",
+        "radius": 8,
+        "NodeID": 29,
+        "UID": "d1ccb595-f3df-4821-8264-7f4d4daddcb9",
+        "angle": -45,
+        "center": "OWNER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "9": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "d88dfb80-00e7-46b3-a079-1eeaa68f56a0",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 3,
+      "buffId": 10011,
+      "NodeID": 2,
+      "UID": "d6b3d77b-8fb3-46f7-b656-7f7445b8fa55",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "UID": "57260265-bc68-4ac8-890a-39cabc4ad7dd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          61,
+          2,
+          33,
+          35
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "endNum": 3,
+      "actionIds": [
+        23
+      ],
+      "NodeID": 24,
+      "UID": "04fe5213-70b3-454a-a870-5c77e7b34be2",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "14": {
+      "UID": "185ba982-a762-4d10-85c1-8f98ec6505da",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 15,
+      "NodeID": 10,
+      "UID": "c8ae34c7-5e97-4b9f-b653-34f100b0c7e4"
+    },
+    "61": {
+      "eventName": "BeAttacked",
+      "NodeID": 61,
+      "UID": "dad254c3-e40c-4eef-a0dc-8abf7578c9d8",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        60
+      ]
+    },
+    "12": {
+      "UID": "f2c34d48-314b-4d0e-af3f-e830f9b33a7e",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 15,
+      "NodeID": 16,
+      "UID": "b064a7e3-838e-466a-afd6-fe469d19ec85"
+    },
+    "21": {
+      "name": "getRotationFromTo",
+      "UID": "d1dc6067-812e-4c40-b048-0edc8e546e96",
+      "to": "OWNER",
+      "NodeID": 21,
+      "from": {
+        "rotation": "Null",
+        "radius": 8,
+        "NodeID": 20,
+        "UID": "9de79f35-e1db-41c6-b6cf-56fd0241ef85",
+        "angle": {
+          "rValue": 45,
+          "name": "sub",
+          "UID": "783c7683-e568-4c26-a726-406f5c12e1aa",
+          "NodeID": 19,
+          "lValue": {
+            "rValue": 90,
+            "name": "multiply",
+            "UID": "a3cecac6-3179-48cc-a2ea-8ca71f5defa1",
+            "NodeID": 18,
+            "lValue": {
+              "UID": "1d3b575a-5185-42d2-958c-16a23a90490d",
+              "name": "getIterNumber",
+              "NodeID": 17
+            }
+          }
+        },
+        "center": "OWNER",
+        "name": "getRotatedPoint"
+      }
+    },
+    "23": {
+      "key": {
+        "str": "PuppetId",
+        "name": "constString",
+        "UID": "9eb4f1dd-e799-4898-a9ea-03361bc1cb7d",
+        "NodeID": 27,
+        "concatenateNumber": {
+          "UID": "1d3b575a-5185-42d2-958c-16a23a90490d",
+          "name": "getIterNumber",
+          "NodeID": 17
+        }
+      },
+      "name": "setServerCacheVal",
+      "UID": "faf28506-285c-4c6f-b633-82362b161a6d",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 80000076,
+        "name": "createSummonedEntity",
+        "UID": "739c1388-2c73-4d90-9b88-9cfee5d60add",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "rotation": "Null",
+          "radius": 8,
+          "NodeID": 20,
+          "UID": "9de79f35-e1db-41c6-b6cf-56fd0241ef85",
+          "angle": {
+            "rValue": 45,
+            "name": "sub",
+            "UID": "783c7683-e568-4c26-a726-406f5c12e1aa",
+            "NodeID": 19,
+            "lValue": {
+              "rValue": 90,
+              "name": "multiply",
+              "UID": "a3cecac6-3179-48cc-a2ea-8ca71f5defa1",
+              "NodeID": 18,
+              "lValue": {
+                "UID": "1d3b575a-5185-42d2-958c-16a23a90490d",
+                "name": "getIterNumber",
+                "NodeID": 17
+              }
+            }
+          },
+          "center": "OWNER",
+          "name": "getRotatedPoint"
+        },
+        "campWithHost": true,
+        "deadWithHost": true,
+        "lifeTime": -1,
+        "rot": {
+          "name": "getRotationFromTo",
+          "UID": "d1dc6067-812e-4c40-b048-0edc8e546e96",
+          "to": "OWNER",
+          "NodeID": 21,
+          "from": {
+            "rotation": "Null",
+            "radius": 8,
+            "NodeID": 20,
+            "UID": "9de79f35-e1db-41c6-b6cf-56fd0241ef85",
+            "angle": {
+              "rValue": 45,
+              "name": "sub",
+              "UID": "783c7683-e568-4c26-a726-406f5c12e1aa",
+              "NodeID": 19,
+              "lValue": {
+                "rValue": 90,
+                "name": "multiply",
+                "UID": "a3cecac6-3179-48cc-a2ea-8ca71f5defa1",
+                "NodeID": 18,
+                "lValue": {
+                  "UID": "1d3b575a-5185-42d2-958c-16a23a90490d",
+                  "name": "getIterNumber",
+                  "NodeID": 17
+                }
+              }
+            },
+            "center": "OWNER",
+            "name": "getRotatedPoint"
+          }
+        },
+        "NodeID": 22
+      },
+      "NodeID": 23
+    },
+    "59": {
+      "timelineId": 10120701002,
+      "name": "jumpToNextTimeline",
+      "UID": "9ec92948-91b8-441e-bef9-e1206b5ec01a",
+      "target": "OWNER",
+      "NodeID": 59
+    },
+    "30": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 80000077,
+      "name": "createSummonedEntity",
+      "UID": "ed580d09-c181-441f-8415-2f68a3b0b055",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": {
+        "rotation": "Null",
+        "radius": 8,
+        "NodeID": 29,
+        "UID": "d1ccb595-f3df-4821-8264-7f4d4daddcb9",
+        "angle": -45,
+        "center": "OWNER",
+        "name": "getRotatedPoint"
+      },
+      "campWithHost": true,
+      "deadWithHost": true,
+      "lifeTime": -1,
+      "rot": {
+        "name": "getRotationFromTo",
+        "UID": "29af6514-085b-4ec7-aa4b-7dc49e0db92c",
+        "to": "OWNER",
+        "NodeID": 31,
+        "from": {
+          "rotation": "Null",
+          "radius": 8,
+          "NodeID": 29,
+          "UID": "d1ccb595-f3df-4821-8264-7f4d4daddcb9",
+          "angle": -45,
+          "center": "OWNER",
+          "name": "getRotatedPoint"
+        }
+      },
+      "NodeID": 30
+    },
+    "60": {
+      "key": "ability_1012070160",
+      "duration": 0.2,
+      "actionIds": [
+        59
+      ],
+      "NodeID": 60,
+      "UID": "c6b85eb1-6534-46db-a510-23d8e7c35168",
+      "name": "addEntityTimer"
+    },
+    "33": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4b56b91f-4a24-452e-bd96-41a4f6674174",
+      "target": "OWNER",
+      "NodeID": 33,
+      "animId": "Behav_Angry"
+    },
+    "51": {
+      "name": "hideModel",
+      "UID": "02c600a4-316b-4f55-8716-48da2e694e70",
+      "target": "CASTER",
+      "NodeID": 51,
+      "maxHideTime": 18
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          30,
+          24,
+          37,
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 26,
+      "UID": "09fe4baa-08f4-4f11-8a81-fd39e8e1b6ea"
+    }
+  },
+  "BPName": "ability_10120701",
+  "NodeID": 6,
+  "UID": "fcc8693d-760c-4300-a6d4-a272ef69dbd9",
+  "eventIds": [
+    4,
+    16,
+    10,
+    26
+  ],
+  "layer": "Base",
+  "length": 20
+}

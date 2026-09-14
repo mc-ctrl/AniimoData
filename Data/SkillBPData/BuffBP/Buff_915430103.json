@@ -1,0 +1,128 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915430103",
+  "NodeID": 1,
+  "UID": "8c9497fb-57e7-46ee-9dfc-f6eea6990fa9",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "epCostAddFix": 0,
+      "epCostAddRatio": -0.4,
+      "UID": "4f83ba74-af85-4ecf-87f6-d0923c0d6bec",
+      "name": "setOverrideAbilityEpCost",
+      "NodeID": 3
+    },
+    "13": {
+      "buffId": 915430102,
+      "name": "removeBuff",
+      "UID": "6625db41-a531-40d7-a852-40ac256e8aa9",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f5ed0031-3ede-48d6-9cd1-79f86eca578b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Healing01",
+      "NodeID": 14
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "2f976ded-15e3-4225-ac60-feba7b79bbb3",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "renderNameFilter": [
+        "M_Parmon_10543_Body"
+      ],
+      "duration": -1,
+      "disableWhenFinished": true,
+      "NodeID": 16,
+      "UID": "5c7ede1d-d9a3-419a-9c8c-2f41acd88709",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10543_Skill_buff_Start",
+      "name": "playPreset"
+    },
+    "8": {
+      "UID": "e76b5e71-7f07-4af2-a8e4-6a26d2afe9e3",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "16998f2c-875b-4858-9748-f8e862d4c3e2",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10543_Skill_buff_Start",
+      "NodeID": 17
+    },
+    "6": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "3f929d39-1ec1-46e7-bf1d-82b49ac70b2e",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "19": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        17,
+        21
+      ],
+      "NodeID": 19,
+      "UID": "8e5758a1-38ca-4e61-9c47-19ee4ecde3b1",
+      "name": "addEntityTimer"
+    },
+    "11": {
+      "UID": "07519716-73ce-4c8b-a2b2-7458f6e7cc62",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 915430103,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "638d25cd-3c09-43f2-9b3d-22231f1c9ece",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 5
+    },
+    "21": {
+      "renderNameFilter": [
+        "M_Parmon_10543_Body"
+      ],
+      "duration": 1.5,
+      "disableWhenFinished": true,
+      "NodeID": 21,
+      "UID": "bed8088c-aa90-44c6-951e-203e9113feff",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10543_Skill_buff_End",
+      "name": "playPreset"
+    }
+  },
+  "onBuffDestroyIds": [
+    13,
+    8,
+    19
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7,
+    16,
+    14
+  ]
+}

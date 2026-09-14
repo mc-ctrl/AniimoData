@@ -1,0 +1,262 @@
+{
+  "3": {
+    "301": {
+      "iconId": "$UI_Home_TabElementals.png",
+      "sortId": 301,
+      "name": 1523164432
+    }
+  },
+  "4": {
+    "404": {
+      "iconId": "$UI_Home_TabSmallPlants.png",
+      "sortId": 404,
+      "name": 1437246846
+    },
+    "405": {
+      "iconId": "$UI_Home_TabOutdoorDecor.png",
+      "sortId": 405,
+      "name": 1905812431
+    },
+    "403": {
+      "iconId": "$UI_Home_TabPlants.png",
+      "sortId": 403,
+      "name": 1546162738
+    },
+    "401": {
+      "iconId": "$UI_Home_TabRoad.png",
+      "sortId": 401,
+      "name": 1883712348
+    },
+    "410": {
+      "iconId": "$UI_Home_TabInteractiveFurniture.png",
+      "sortId": 410,
+      "name": 1959842347
+    },
+    "411": {
+      "iconId": "$UI_Home_TabLights.png",
+      "sortId": 411,
+      "name": 1655760873
+    },
+    "402": {
+      "iconId": "$UI_Home_TabFence.png",
+      "sortId": 402,
+      "name": 1933352905
+    },
+    "406": {
+      "iconId": "$UI_Home_TabSmallOrnaments.png",
+      "sortId": 406,
+      "name": 2054047698
+    },
+    "407": {
+      "iconId": "$UI_Home_TabGarden.png",
+      "sortId": 407,
+      "name": 1653879054
+    },
+    "408": {
+      "iconId": "$UI_Home_TabBricks.png",
+      "sortId": 408,
+      "name": 1851119250
+    },
+    "409": {
+      "iconId": "$UI_Home_TabTables.png",
+      "sortId": 409,
+      "name": 1305437174
+    }
+  },
+  "101": {
+    "1011": {
+      "iconId": "$UI_Home_TabPlants.png",
+      "sortId": 1011,
+      "name": 1990274576
+    }
+  },
+  "7": {
+    "701": {
+      "iconId": "$UI_Home_TabPetProduce.png",
+      "sortId": 701,
+      "name": 1534126974
+    }
+  },
+  "99": {
+    "991": {
+      "iconId": "$UI_Home_TabCollect.png",
+      "sortId": 991,
+      "name": 1383403123
+    }
+  },
+  "100": {
+    "1001": {
+      "iconId": "$UI_Home_TabAniimo.png",
+      "sortId": 1001,
+      "name": 1859543620
+    }
+  },
+  "102": {
+    "1021": {
+      "iconId": "$UI_Home_TabMyGroup.png",
+      "sortId": 1021,
+      "name": 1477349348
+    },
+    "1022": {
+      "iconId": "$UI_Home_TabSystemGroup.png",
+      "sortId": 1022,
+      "name": 1193620148
+    },
+    "1023": {
+      "iconId": "$UI_Home_TabShareGroup.png",
+      "sortId": 1023,
+      "name": 1943306109
+    }
+  },
+  "5": {
+    "503": {
+      "iconId": "$UI_Home_TabBed.png",
+      "sortId": 503,
+      "name": 1791104296
+    },
+    "508": {
+      "iconId": "$UI_Home_TabLights.png",
+      "sortId": 508,
+      "name": 1603797358
+    },
+    "504": {
+      "iconId": "$UI_Home_Tabkitchen.png",
+      "sortId": 504,
+      "name": 1759555220
+    },
+    "505": {
+      "iconId": "$UI_Home_TabAppliance.png",
+      "sortId": 505,
+      "name": 1083140099
+    },
+    "506": {
+      "iconId": "$UI_Home_TabBath.png",
+      "sortId": 506,
+      "name": 1229081758
+    },
+    "507": {
+      "iconId": "$UI_Home_TabCurtain.png",
+      "sortId": 507,
+      "name": 1085531930
+    },
+    "509": {
+      "iconId": "$UI_Home_TabPet.png",
+      "sortId": 509,
+      "name": 2126741112
+    },
+    "510": {
+      "iconId": "$UI_Home_TabLivingItem.png",
+      "sortId": 510,
+      "name": 1611384400
+    },
+    "511": {
+      "iconId": "$UI_Home_TabTextile.png",
+      "sortId": 511,
+      "name": 1188656393
+    },
+    "512": {
+      "iconId": "$UI_Home_TabPlant.png",
+      "sortId": 512,
+      "name": 1474328461
+    },
+    "514": {
+      "iconId": "$UI_Home_TabDivider.png",
+      "sortId": 514,
+      "name": 1431164701
+    },
+    "502": {
+      "iconId": "$UI_Home_TabTables.png",
+      "sortId": 502,
+      "name": 1266240364
+    },
+    "515": {
+      "iconId": "$UI_Home_TabOther.png",
+      "sortId": 515,
+      "name": 2073493422
+    },
+    "513": {
+      "iconId": "$UI_Home_TabDecor.png",
+      "sortId": 513,
+      "name": 1772502728
+    },
+    "501": {
+      "iconId": "$UI_Home_TabStorage.png",
+      "sortId": 501,
+      "name": 1672536822
+    }
+  },
+  "1": {
+    "104": {
+      "iconId": "$UI_Home_TabItemOutput.png",
+      "sortId": 104,
+      "name": 1630786312
+    },
+    "105": {
+      "iconId": "$UI_Home_TabParmon.png",
+      "sortId": 105,
+      "name": 1253882205
+    },
+    "101": {
+      "iconId": "$UI_Home_TabRawMaterials.png",
+      "sortId": 101,
+      "name": 1449398898
+    },
+    "103": {
+      "iconId": "$UI_Home_TabEnvironmentFacilities.png",
+      "sortId": 103,
+      "name": 1566213294
+    },
+    "102": {
+      "iconId": "$UI_Home_TabMaterialProcessing.png",
+      "sortId": 102,
+      "name": 1495515559
+    }
+  },
+  "2": {
+    "209": {
+      "iconId": "$UI_Home_TabBuild_Pillar.png",
+      "sortId": 208,
+      "name": 1090562561
+    },
+    "208": {
+      "iconId": "$UI_Home_TabBuild_Stair.png",
+      "sortId": 207,
+      "name": 1285735274
+    },
+    "204": {
+      "iconId": "$UI_Home_TabBuild_Door.png",
+      "sortId": 203,
+      "name": 1319969080
+    },
+    "205": {
+      "iconId": "$UI_Home_TabBuild_Window.png",
+      "sortId": 204,
+      "name": 1637729747
+    },
+    "206": {
+      "iconId": "$UI_Home_TabBuild_Roof.png",
+      "sortId": 205,
+      "name": 1976302735
+    },
+    "210": {
+      "iconId": "$UI_Home_TabBuild_Other.png",
+      "sortId": 209,
+      "name": 1315117141
+    },
+    "203": {
+      "iconId": "$UI_Home_TabBuild_Wall.png",
+      "sortId": 202,
+      "name": 1918843491
+    },
+    "201": {
+      "iconId": "$UI_Home_TabBuild_Floor.png",
+      "sortId": 201,
+      "name": 1858618955
+    },
+    "207": {
+      "iconId": "$UI_Home_TabBuild_Handrail.png",
+      "sortId": 206,
+      "name": 1915317972
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "nodeMap": {
+    "52": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10250501,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "3b0d09f7-3b0f-44f0-a8d7-5ba5b842ed8e",
+      "target": "TARGET",
+      "NodeID": 52,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000,
+        "airImpulseId": 10031
+      }
+    },
+    "54": {
+      "UID": "5efda91d-e609-4f30-ae67-54eb1145d3a9",
+      "name": "removeEvent",
+      "eventName": "onEndCharge",
+      "NodeID": 54
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 35,
+      "UID": "cedda3ab-40cb-413e-8221-3ef8c829d3f3"
+    },
+    "31": {
+      "name": "playSoundStr",
+      "UID": "1ac2e55b-67a5-4fce-b3c6-360f732a3324",
+      "soundId": "SFX_Combat_10025_Skill_Breath_Start",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 55,
+      "UID": "df6cd69b-37d4-4729-a013-5c9fc8b8cf4a"
+    },
+    "11": {
+      "UID": "a1dfe9ba-ce16-4382-9a53-6d009492e3f8",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 11
+    },
+    "48": {
+      "buffId": 9102501,
+      "name": "hasBuff",
+      "UID": "eb7ca553-8c9c-423c-ade5-7a8b2f44b8a3",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "2": {
+      "target": "OWNER",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6ac7fd42-090e-47b7-8238-d10ea18b805d",
+      "speed": 1,
+      "NodeID": 2,
+      "animId": "Skill_Breath"
+    },
+    "19": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 19,
+      "UID": "aacabd16-b590-41ef-81d8-13277bac03e6",
+      "effectId": "Eff_Parmon_10025_Skill_Breath_Charge_liuli",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "13": {
+      "UID": "48c8971f-2f2e-4a80-8fe0-43ad49f76a28",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "c9bb6daf-7e9b-4617-890a-d5cd9d4e9411",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        52
+      ],
+      "NodeID": 24
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 14,
+      "UID": "095d548f-8d99-40ae-bc74-83e0699aed8b"
+    },
+    "46": {
+      "rValue": 4,
+      "name": "greater",
+      "UID": "bd8f2502-0098-448f-a84c-881e2f907eb1",
+      "NodeID": 46,
+      "lValue": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "818a67c2-231a-4acc-a35f-d940367a50c3",
+        "target": "TARGET",
+        "NodeID": 45
+      }
+    },
+    "15": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 15,
+      "UID": "9e49f48b-2bb4-46a1-a95c-82e852f22f6d",
+      "effectId": "Eff_Parmon_10025_Skill_Breath_Strong_liuli",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "47": {
+      "UID": "64b0fb62-f480-41e1-add8-e6882ec27c7c",
+      "conditionIds": [
+        46,
+        48
+      ],
+      "name": "conditionAnd",
+      "NodeID": 47
+    },
+    "26": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 52,
+      "NodeID": 26,
+      "UID": "263c32ac-b9ab-49cb-afde-d2214f225fa6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.2
+          ],
+          "shapeArgs": [
+            8,
+            20,
+            2.5,
+            0
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        24,
+        30
+      ]
+    },
+    "27": {
+      "tickInterval": 0.2,
+      "eventType": "NotifyState",
+      "endTime": 1.5,
+      "NodeID": 27,
+      "UID": "3bbdf71a-cee8-4382-878a-dc3a4f1b746c",
+      "onUpdate": {
+        "actionIds": [
+          26
+        ]
+      },
+      "startTime": 0.5,
+      "onEnter": {
+        "actionIds": [
+          26
+        ]
+      }
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          32,
+          15,
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 17,
+      "UID": "ce870c9f-81e5-43cd-a23f-baacbebb472c"
+    },
+    "4": {
+      "UID": "6d62505d-6f33-4a27-bc5d-1a6dcc112cb3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          2,
+          19,
+          31
+        ]
+      },
+      "NodeID": 4
+    },
+    "30": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 10079,
+      "NodeID": 30,
+      "UID": "2cb1371e-3ca3-41f9-8b70-5fa830306274",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "32": {
+      "name": "playSoundStr",
+      "UID": "3afe33d5-f454-4bb2-b66a-ba75c1406092",
+      "soundId": "SFX_Combat_10025_Skill_Breath02",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "name": "playSoundStr",
+      "UID": "07122145-7582-447c-b8cf-40ad0898f261",
+      "soundId": "SFX_Combat_10025_Skill_Breath_ChargeLoop",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "name": "stopSoundStr",
+      "UID": "486c7751-fce7-4253-9c4a-8434472d3ef1",
+      "soundId": "SFX_Combat_10025_Skill_Breath_ChargeLoop",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "23": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10250501,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "45f78b2d-6a7a-4dab-8bbf-a82620fdf904",
+      "target": "TARGET",
+      "NodeID": 23,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000,
+        "airImpulseId": 10031
+      }
+    }
+  },
+  "BPName": "ability_10250501",
+  "NodeID": 6,
+  "UID": "9d675fe1-93ae-46cb-89b1-53cde1365c86",
+  "eventIds": [
+    4,
+    35,
+    55,
+    17,
+    27,
+    14
+  ],
+  "layer": "Base",
+  "length": 5
+}

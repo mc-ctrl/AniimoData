@@ -1,0 +1,44 @@
+{
+  "802203": {
+    "id": 802203,
+    "icon": "$UI_Img_Photograph_Light3.png",
+    "res": "3",
+    "initialClaim": 1
+  },
+  "802204": {
+    "id": 802204,
+    "icon": "$UI_Img_Photograph_Light4.png",
+    "res": "4",
+    "initialClaim": 1
+  },
+  "802207": {
+    "id": 802207,
+    "icon": "$UI_Img_Photograph_Light7.png",
+    "res": "7",
+    "initialClaim": 1
+  },
+  "802205": {
+    "id": 802205,
+    "icon": "$UI_Img_Photograph_Light5.png",
+    "res": "5",
+    "initialClaim": 1
+  },
+  "802201": {
+    "id": 802201,
+    "icon": "$UI_Img_Photograph_Light1.png",
+    "res": "1",
+    "initialClaim": 1
+  },
+  "802202": {
+    "id": 802202,
+    "icon": "$UI_Img_Photograph_Light2.png",
+    "res": "2",
+    "initialClaim": 1
+  },
+  "802206": {
+    "id": 802206,
+    "icon": "$UI_Img_Photograph_Light6.png",
+    "res": "6",
+    "initialClaim": 1
+  }
+}

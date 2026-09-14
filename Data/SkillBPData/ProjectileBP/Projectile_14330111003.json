@@ -1,0 +1,115 @@
+{
+  "duration": 1.6,
+  "calcResultNodeId": 67,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10433_Skill_TurretForm_03",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "74": {
+      "targetPos": {
+        "UID": "2ff969a3-a9bb-47ab-ae71-84fcbbb4d0be",
+        "name": "getProjectilePos",
+        "NodeID": 72
+      },
+      "name": "playSoundAtPos",
+      "UID": "92e43df4-400d-4e63-883d-9a374adf7ea8",
+      "soundId": "SFX_Combat_10433_Skill_TurretForm_Explode",
+      "NodeID": 74
+    },
+    "68": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 67,
+      "NodeID": 68,
+      "UID": "a2ab3052-4495-4ed7-8b3c-798129c28fea",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        67
+      ]
+    },
+    "73": {
+      "pos": {
+        "UID": "2ff969a3-a9bb-47ab-ae71-84fcbbb4d0be",
+        "name": "getProjectilePos",
+        "NodeID": 72
+      },
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "f295bb66-d9c7-459f-973d-cf717ab0740e",
+      "effectId": "Eff_Parmon_10433_Skill_TurretForm_02",
+      "speed": 1,
+      "NodeID": 73
+    },
+    "67": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14330111,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "59ceaf4f-613f-40fd-8c5e-4485315696c0",
+      "target": "TARGET",
+      "NodeID": 67,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      }
+    }
+  },
+  "maxHitNum": 1,
+  "maxHeightOffset": 5,
+  "stickGravity": 0.5,
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    68,
+    73,
+    74
+  ],
+  "stickPitchMaxOffset": 40,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "BPName": "ability_14330111",
+  "tickInterval": 0.05,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3002,
+  "acceleration": 0
+}

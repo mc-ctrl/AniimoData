@@ -1,0 +1,1477 @@
+{
+  "90960510": {
+    "targetGroupIds": [
+      90960523,
+      90960524,
+      90960525,
+      90960526,
+      90960527,
+      90960528,
+      90960529,
+      90960530,
+      90960531
+    ],
+    "targetGroups": {
+      "90960531": {
+        "id": 90960531,
+        "name": "TargetGroup_1号位上半身&2&3号位全身",
+        "rotationMode": 0,
+        "position": [
+          -649.96,
+          104.84,
+          1203.45
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          -0.4,
+          0,
+          -0.92
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960514,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960519,
+            "weight": 0.3,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960518,
+            "weight": 0.1,
+            "radius": 0
+          },
+          {
+            "virtualTargetId": 90960522,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960521,
+            "weight": 0.1,
+            "radius": 0
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960523": {
+        "id": 90960523,
+        "name": "TargetGroup_三人全身",
+        "rotationMode": 0,
+        "position": [
+          -649.96,
+          104.89,
+          1203.17
+        ],
+        "positionMode": 0,
+        "rotation": [
+          -0.03,
+          -0.38,
+          -0.03,
+          -0.92
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960514,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960519,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960522,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960516,
+            "weight": 0.2,
+            "radius": 0
+          },
+          {
+            "virtualTargetId": 90960518,
+            "weight": 0.2,
+            "radius": 0
+          },
+          {
+            "virtualTargetId": 90960521,
+            "weight": 0.2,
+            "radius": 0
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960524": {
+        "id": 90960524,
+        "name": "TargetGroup_三人上半身",
+        "rotationMode": 0,
+        "position": [
+          -649.96,
+          104.97,
+          1203.17
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0.01,
+          -0.39,
+          -0.01,
+          -0.92
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960514,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960519,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960522,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960515,
+            "weight": 0.2,
+            "radius": 0
+          },
+          {
+            "virtualTargetId": 90960517,
+            "weight": 0.2,
+            "radius": 0
+          },
+          {
+            "virtualTargetId": 90960520,
+            "weight": 0.2,
+            "radius": 0
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960525": {
+        "id": 90960525,
+        "name": "TargetGroup_1号位上半身",
+        "rotationMode": 0,
+        "position": [
+          -649.26,
+          104.74,
+          1203.75
+        ],
+        "positionMode": 0,
+        "rotation": [
+          -0.38,
+          -0.07,
+          -0.16,
+          -0.91
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960514,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960515,
+            "weight": 0.2,
+            "radius": 0
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960526": {
+        "id": 90960526,
+        "name": "TargetGroup_2号位上半身",
+        "rotationMode": 0,
+        "position": [
+          -649.96,
+          105.2,
+          1202.59
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0.14,
+          -0.61,
+          -0.25,
+          -0.74
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960519,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960517,
+            "weight": 0.2,
+            "radius": 0
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960527": {
+        "id": 90960527,
+        "name": "TargetGroup_3号位上半身",
+        "rotationMode": 0,
+        "position": [
+          -650.66,
+          104.94,
+          1203.15
+        ],
+        "positionMode": 0,
+        "rotation": [
+          -0.15,
+          -0.14,
+          0.38,
+          -0.9
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960522,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960520,
+            "weight": 0.2,
+            "radius": 0
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960528": {
+        "id": 90960528,
+        "name": "TargetGroup_2&3号位上半身",
+        "rotationMode": 0,
+        "position": [
+          -650.31,
+          105.07,
+          1202.87
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          -0.4,
+          0,
+          -0.92
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960519,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960517,
+            "weight": 0.2,
+            "radius": 0
+          },
+          {
+            "virtualTargetId": 90960522,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960520,
+            "weight": 0.2,
+            "radius": 0
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960529": {
+        "id": 90960529,
+        "name": "TargetGroup_3号位头&1&2号位上半身",
+        "rotationMode": 0,
+        "position": [
+          -649.79,
+          104.82,
+          1203.43
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          -0.4,
+          0,
+          -0.92
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960514,
+            "weight": 0.9,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960515,
+            "weight": 0.1,
+            "radius": 0
+          },
+          {
+            "virtualTargetId": 90960519,
+            "weight": 0.4,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960522,
+            "weight": 0.6,
+            "radius": 0.2
+          }
+        ],
+        "updateMethod": 2
+      },
+      "90960530": {
+        "id": 90960530,
+        "name": "TargetGroup_1号位全身&2&3号位头",
+        "rotationMode": 0,
+        "position": [
+          -649.66,
+          104.8,
+          1203.43
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          -0.4,
+          0,
+          -0.92
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 90960514,
+            "weight": 0.9,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960516,
+            "weight": 0.1,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960519,
+            "weight": 0.4,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960517,
+            "weight": 0.1,
+            "radius": 0.1
+          },
+          {
+            "virtualTargetId": 90960522,
+            "weight": 0.4,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 90960520,
+            "weight": 0.1,
+            "radius": 0.1
+          }
+        ],
+        "updateMethod": 2
+      }
+    },
+    "virtualTargets": {
+      "90960514": {
+        "name": "VT_Slot_1_Model_HeadInfo_0",
+        "rotation": [
+          -0.66,
+          0.66,
+          -0.26,
+          0.26
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "head",
+        "bindingMode": 0,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 90960511,
+        "subPartIndex": 0,
+        "id": 90960514,
+        "position": [
+          -649.26,
+          104.74,
+          1203.75
+        ]
+      },
+      "90960515": {
+        "name": "VT_Slot_1_Model_Spine_0",
+        "rotation": [
+          -0.63,
+          0.69,
+          -0.25,
+          0.27
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 0,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 90960511,
+        "subPartIndex": 2,
+        "id": 90960515,
+        "position": [
+          -649.28,
+          104.43,
+          1203.73
+        ]
+      },
+      "90960516": {
+        "name": "VT_Slot_1_Bone_Root",
+        "rotation": [
+          0,
+          -0.92,
+          0,
+          0.4
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 4,
+        "partIndex": 0,
+        "slotId": 90960511,
+        "subPartIndex": 0,
+        "id": 90960516,
+        "position": [
+          -649.27,
+          103.49,
+          1203.74
+        ]
+      },
+      "90960517": {
+        "name": "VT_Slot_2_Model_Spine_0",
+        "rotation": [
+          -0.4,
+          0.44,
+          0.54,
+          -0.59
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 0,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 90960512,
+        "subPartIndex": 2,
+        "id": 90960517,
+        "position": [
+          -649.96,
+          104.78,
+          1202.6
+        ]
+      },
+      "90960518": {
+        "name": "VT_Slot_2_Bone_Root",
+        "rotation": [
+          0,
+          0.15,
+          0,
+          0.99
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 4,
+        "partIndex": 0,
+        "slotId": 90960512,
+        "subPartIndex": 0,
+        "id": 90960518,
+        "position": [
+          -649.96,
+          103.57,
+          1202.6
+        ]
+      },
+      "90960519": {
+        "name": "VT_Slot_2_Model_HeadInfo_0",
+        "rotation": [
+          -0.42,
+          0.42,
+          0.57,
+          -0.57
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "head",
+        "bindingMode": 0,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 90960512,
+        "subPartIndex": 0,
+        "id": 90960519,
+        "position": [
+          -649.96,
+          105.2,
+          1202.59
+        ]
+      },
+      "90960520": {
+        "name": "VT_Slot_3_Model_Spine_0",
+        "rotation": [
+          0.08,
+          -0.08,
+          -0.67,
+          0.73
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 0,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 90960513,
+        "subPartIndex": 2,
+        "id": 90960520,
+        "position": [
+          -650.64,
+          104.63,
+          1203.15
+        ]
+      },
+      "90960521": {
+        "name": "VT_Slot_3_Bone_Root",
+        "rotation": [
+          0,
+          -0.62,
+          0,
+          -0.78
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 4,
+        "partIndex": 0,
+        "slotId": 90960513,
+        "subPartIndex": 0,
+        "id": 90960521,
+        "position": [
+          -650.65,
+          103.69,
+          1203.15
+        ]
+      },
+      "90960522": {
+        "name": "VT_Slot_3_Model_HeadInfo_0",
+        "rotation": [
+          0.08,
+          -0.08,
+          -0.7,
+          0.7
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "head",
+        "bindingMode": 0,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 90960513,
+        "subPartIndex": 0,
+        "id": 90960522,
+        "position": [
+          -650.66,
+          104.94,
+          1203.15
+        ]
+      }
+    },
+    "position": [
+      -649.69,
+      103.54,
+      1204.17
+    ],
+    "rotation": [
+      0,
+      -0.92,
+      0,
+      0.4
+    ],
+    "sandboxId": 90948869,
+    "id": 90960510,
+    "name": "Dialogset_3_1v2_90960510",
+    "cameraIds": [
+      90960532,
+      90960533,
+      90960534,
+      90960535,
+      90960536,
+      90960537,
+      90960538,
+      90960539,
+      90960540,
+      90960541,
+      90960542,
+      90960543
+    ],
+    "cameras": {
+      "90960535": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.1,
+            0.04,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.67
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.01,
+          -0.77,
+          -0.01,
+          0.64
+        ],
+        "position": [
+          -647.29,
+          104.96,
+          1203.74
+        ],
+        "id": 90960535,
+        "name": "Camera_右_三人_人文_135_平_AtoB1&B2",
+        "editorPosition": [
+          -648.01,
+          104.96,
+          1203.62
+        ],
+        "editorRotation": [
+          -0.01,
+          -0.77,
+          -0.01,
+          0.64
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -148,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.07,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960536": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.05,
+            0.03,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 1
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.02,
+          0.92,
+          -0.06,
+          -0.4
+        ],
+        "position": [
+          -648.1,
+          105.43,
+          1204.79
+        ],
+        "id": 90960536,
+        "name": "Camera_中_三人_人文_180_平_AtoB1&B2",
+        "editorPosition": [
+          -648.45,
+          105.36,
+          1204.48
+        ],
+        "editorRotation": [
+          -0.02,
+          0.92,
+          -0.06,
+          -0.4
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -176,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.47,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960537": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.04,
+            -0.22,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.64
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0,
+          1,
+          -0.04,
+          -0.03
+        ],
+        "position": [
+          -649.6,
+          104.96,
+          1206.17
+        ],
+        "id": 90960537,
+        "name": "Camera_左_三人_人文_135_平_AtoB1&B2",
+        "editorPosition": [
+          -649.67,
+          104.96,
+          1205.22
+        ],
+        "editorRotation": [
+          0,
+          1,
+          -0.04,
+          -0.03
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 158,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0.53,
+            0.07,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960538": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.01,
+            -0.27,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.62
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.01,
+          0.99,
+          -0.11,
+          0.09
+        ],
+        "position": [
+          -650.32,
+          105.34,
+          1206.07
+        ],
+        "id": 90960538,
+        "name": "Camera_左_三人_人文_135_俯_AtoB1&B2",
+        "editorPosition": [
+          -650.17,
+          105.21,
+          1205.16
+        ],
+        "editorRotation": [
+          0.01,
+          0.99,
+          -0.11,
+          0.09
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 129,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.32,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960543": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.08,
+            -0.51,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.41
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.05,
+          0.91,
+          -0.12,
+          -0.4
+        ],
+        "position": [
+          -646.9,
+          105.68,
+          1205.77
+        ],
+        "id": 90960543,
+        "name": "Camera_中_三人_人文_180_俯_AtoB1&B2",
+        "editorPosition": [
+          -648.43,
+          105.38,
+          1204.46
+        ],
+        "editorRotation": [
+          -0.05,
+          0.91,
+          -0.12,
+          -0.4
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -175,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.49,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960542": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.18,
+            -0.24,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.61
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.07,
+          -0.71,
+          0.07,
+          0.7
+        ],
+        "position": [
+          -647.15,
+          105.31,
+          1203.21
+        ],
+        "id": 90960542,
+        "name": "Camera_右_三人_人文_135_俯_AtoB1&B2",
+        "editorPosition": [
+          -647.96,
+          105.21,
+          1203.24
+        ],
+        "editorRotation": [
+          0.07,
+          -0.71,
+          0.07,
+          0.7
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -137,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.32,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960541": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.03,
+            -0.35,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.41
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.15,
+          -0.01,
+          0,
+          0.99
+        ],
+        "position": [
+          -650.07,
+          105.62,
+          1199.71
+        ],
+        "id": 90960541,
+        "name": "Camera_右_三人_人文_45_俯_B2toA&B1",
+        "editorPosition": [
+          -650.07,
+          105.3,
+          1201.17
+        ],
+        "editorRotation": [
+          0.15,
+          -0.01,
+          0,
+          0.99
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -42,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.01,
+            0.41,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960540": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.06,
+            -0.3,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.52
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.12,
+          0.4,
+          -0.05,
+          0.91
+        ],
+        "position": [
+          -652.18,
+          105.38,
+          1201.22
+        ],
+        "id": 90960540,
+        "name": "Camera_中_三人_人文_0_俯_B1&B2toA",
+        "editorPosition": [
+          -651.47,
+          105.21,
+          1201.86
+        ],
+        "editorRotation": [
+          0.12,
+          0.4,
+          -0.05,
+          0.91
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 4,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.32,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960534": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.14,
+            0.03,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.6
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.02,
+          -0.11,
+          0,
+          0.99
+        ],
+        "position": [
+          -649.16,
+          105.02,
+          1199.86
+        ],
+        "id": 90960534,
+        "name": "Camera_右_三人_人文_45_平_B2toA&B1",
+        "editorPosition": [
+          -649.46,
+          104.94,
+          1201.13
+        ],
+        "editorRotation": [
+          0.02,
+          -0.11,
+          0,
+          0.99
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -41,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0.64,
+            0.05,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960532": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.11,
+            -0.04,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.57
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.01,
+          0.72,
+          -0.02,
+          0.69
+        ],
+        "position": [
+          -652.94,
+          104.97,
+          1203.28
+        ],
+        "id": 90960532,
+        "name": "Camera_左_三人_人文_45_平_B1toA&B2",
+        "editorPosition": [
+          -652.04,
+          104.94,
+          1203.22
+        ],
+        "editorRotation": [
+          0.01,
+          0.72,
+          -0.02,
+          0.69
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 34,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.45,
+            0.05,
+            -2.03
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960533": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            -0.06,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.96
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.06,
+          0.43,
+          -0.03,
+          0.9
+        ],
+        "position": [
+          -651.71,
+          105.1,
+          1201.79
+        ],
+        "id": 90960533,
+        "name": "Camera_中_三人_人文_0_平_B1&B2toA",
+        "editorPosition": [
+          -651.55,
+          105.07,
+          1201.92
+        ],
+        "editorRotation": [
+          0.06,
+          0.43,
+          -0.03,
+          0.9
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -1,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.28,
+            0.18,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      },
+      "90960539": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.21,
+            -0.29,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.44
+        },
+        "lookAtTargetID": 90960523,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.1,
+          0.73,
+          -0.12,
+          0.66
+        ],
+        "position": [
+          -653.03,
+          105.53,
+          1203.52
+        ],
+        "id": 90960539,
+        "name": "Camera_左_三人_人文_45_俯_B1toA&B2",
+        "editorPosition": [
+          -651.95,
+          105.3,
+          1203.38
+        ],
+        "editorRotation": [
+          0.1,
+          0.73,
+          -0.12,
+          0.66
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 51,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.41,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 90960523,
+        "followTargetType": 2
+      }
+    },
+    "slotIds": [
+      90960511,
+      90960512,
+      90960513
+    ],
+    "slots": {
+      "90960511": {
+        "id": 90960511,
+        "type": 1,
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          -0.92,
+          0,
+          0.4
+        ],
+        "position": [
+          -649.27,
+          103.49,
+          1203.74
+        ],
+        "entityId": 0
+      },
+      "90960512": {
+        "id": 90960512,
+        "type": 3,
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          0.15,
+          0,
+          0.99
+        ],
+        "position": [
+          -649.96,
+          103.57,
+          1202.6
+        ],
+        "entityId": 90949941
+      },
+      "90960513": {
+        "id": 90960513,
+        "type": 3,
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          -0.62,
+          0,
+          -0.78
+        ],
+        "position": [
+          -650.65,
+          103.69,
+          1203.15
+        ],
+        "entityId": 90949939
+      }
+    }
+  }
+}

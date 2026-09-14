@@ -1,0 +1,183 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000203",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    27,
+    19
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "calcId": 5000203,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 22,
+      "UID": "98f9e2db-5715-45d4-8301-c12a70873522",
+      "name": "getParamByLuaConfig"
+    },
+    "23": {
+      "UID": "c40b885f-2afb-43bb-bdf1-8755cc096bc6",
+      "name": "getBuffShieldPoint",
+      "NodeID": 23
+    },
+    "38": {
+      "UID": "d65989f9-4d66-47c5-a064-0288ccb60307",
+      "destroyReason": "timeout",
+      "name": "buffDestroyReason",
+      "NodeID": 38
+    },
+    "37": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "1306dc4b-906a-4673-bfe2-128249e3ea08",
+      "NodeID": 37,
+      "lValue": {
+        "UID": "172ecddd-3876-4544-b5a6-78e891c94b20",
+        "name": "getBuffShieldPoint",
+        "NodeID": 36
+      }
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "703e390e-dd4b-458f-aeae-712269fe7f66",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Loop",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "35": {
+      "UID": "1dd83c2c-9da6-4851-a8aa-5eaa1fd77e6b",
+      "name": "registerShieldChangeEvent",
+      "actionIds": [
+        34
+      ],
+      "NodeID": 35
+    },
+    "25": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "UID": "c40b885f-2afb-43bb-bdf1-8755cc096bc6",
+          "name": "getBuffShieldPoint",
+          "NodeID": 23
+        }
+      },
+      "name": "calcResult",
+      "UID": "e19b1949-dcfd-4c27-aa83-ad0b938e9cce",
+      "target": "TARGET",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "name": "doPetsActions",
+      "UID": "8c135b07-8dce-4e85-8f5e-c10038acafac",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "4c2bb4f2-d74b-4bb7-900d-00871a7a83c3",
+      "name": "doActionsByConditions",
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "b87b109f-09ac-42d1-9f4a-c2c5a97e7f46",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "33": {
+      "UID": "7a813a6c-c2a8-4587-8965-68f5c80a3c15",
+      "name": "removeBuff",
+      "buffId": 5000204,
+      "NodeID": 33
+    },
+    "30": {
+      "buffId": 5000202,
+      "name": "hasBuff",
+      "UID": "1ce0dd49-85ce-4e12-bd5c-87ed9e1ee0b2",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "a10e8c2a-0f00-4ab4-ae02-9ab8ac7874f6",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Loop",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "UID": "095ff975-c4ff-44be-a352-791ac83cb0f1",
+      "name": "addShieldData",
+      "shieldData": {
+        "absorbRate": 1,
+        "isGeneral": true,
+        "isTeamShare": false,
+        "elementType": 0,
+        "shieldPoint": {
+          "rValue": {
+            "calcId": 5000203,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 22,
+            "UID": "98f9e2db-5715-45d4-8301-c12a70873522",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "c55f720e-6674-44df-9b3a-6a14dff5681b",
+          "NodeID": 17,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "4ab1d2df-1042-4cb6-b6a8-01fee83b7e63",
+            "target": "OWNER",
+            "NodeID": 16,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "NodeID": 19
+    },
+    "34": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "e19c505b-ae6c-4dd7-9c48-f5a552b18cab",
+      "name": "doActionsByConditions",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "172ecddd-3876-4544-b5a6-78e891c94b20",
+      "name": "getBuffShieldPoint",
+      "NodeID": 36
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    28,
+    32
+  ],
+  "onBuffStartIds": [
+    31,
+    19,
+    35
+  ]
+}

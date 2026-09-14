@@ -1,0 +1,191 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "76069a9c-999e-4cc7-b0f6-ccd3832ae733",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          20
+        ]
+      },
+      "NodeID": 5
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "doPetsActions",
+      "UID": "954176df-f03d-4bb9-84cf-c8fda061504b",
+      "target": "TARGET",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "bcecb33a-013d-4a69-ba36-2c1873274907",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0828031d-6f06-4629-8bd8-bfe11435ad71",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Dance",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "06838641-0d6e-4ae6-b03b-4cd355067aea",
+      "target": "CASTER",
+      "NodeID": 3,
+      "animId": "Skill_Dance"
+    },
+    "23": {
+      "UID": "c90c9c74-6021-48b5-8dee-8d826efd6e7f",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "canMove": 0
+      },
+      "NodeID": 23
+    },
+    "24": {
+      "UID": "3c601383-1fa0-4b51-9ae1-d471336c5410",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          21,
+          15,
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 14,
+      "UID": "a8ff78ab-5772-4228-8efd-e3d135e44e55"
+    },
+    "10": {
+      "target": "TARGET",
+      "duration": 0.5,
+      "buffId": 2123101,
+      "NodeID": 10,
+      "UID": "b11cb1d2-4319-4554-abc2-def753398999",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b87186e0-79fe-4a09-9efa-0c66993a074e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_dance",
+      "NodeID": 15
+    },
+    "25": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "6a940347-c0bb-4181-b558-3dbc57b22f6d",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "d8079a98-bc42-49d0-993a-660c2f26c658",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "52eeb139-b8f1-4c97-9267-0b077c684c93",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "80a27c7e-7fcc-41b7-8b56-93d7fd19ee34",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "UID": "6146fc2c-7187-4562-86e4-e15c337b717a",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 18,
+      "UID": "8c0dbdbb-4618-41fa-8081-a7be64de5667"
+    },
+    "28": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "9e1b9c4d-49e0-4d5f-9491-ed983130e718",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 28
+    },
+    "12": {
+      "UID": "f79fd5a3-8707-4fc1-abd3-3a5e6daead16",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12320300",
+  "NodeID": 7,
+  "UID": "565084b5-9852-411f-8059-eb08aec2712d",
+  "eventIds": [
+    14,
+    18,
+    5,
+    24,
+    27
+  ],
+  "layer": "Base",
+  "length": 2.39
+}

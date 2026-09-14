@@ -1,0 +1,83 @@
+{
+  "duration": 5,
+  "BPName": "ability_10450702",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Fly",
+  "gravityRatio": 1.3,
+  "groundDestroy": false,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        40
+      ],
+      "name": "actOnTargets",
+      "UID": "0dd7196c-5e00-4a6c-9bae-d61733914991",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "rotFrom": "OWNER"
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 37
+    },
+    "50": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a705b622-13e2-429c-a2b5-5b17564cc316",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterCannonShell_End",
+      "NodeID": 50
+    },
+    "40": {
+      "UID": "a7ff89d7-497a-4b77-8a02-bd2a1a5883b7",
+      "actorId": {
+        "UID": "b224209c-1f74-49e5-aae5-c50ca619cf5a",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 39
+      },
+      "name": "destroyEntity",
+      "NodeID": 40
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    37,
+    50
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "relation": 2,
+  "startSleepTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "groundSweepRadius": 0.2,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

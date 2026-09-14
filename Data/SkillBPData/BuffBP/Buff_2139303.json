@@ -1,0 +1,108 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2139303",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4ef5b0e2-725d-4271-adc8-a221c0b90605",
+      "effectId": "Eff_Parmon_10393_Skill_Tear_Buff_01",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "calcId": 2139303,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 13,
+      "UID": "73199b59-4d2f-413e-bc9f-a6ed55710242",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "actionIds": [
+        7,
+        12,
+        14
+      ],
+      "NodeID": 9,
+      "UID": "37166c61-c53d-41de-a9b6-03c6d01ef7a8",
+      "cd": {
+        "calcId": 2139303,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 13,
+        "UID": "73199b59-4d2f-413e-bc9f-a6ed55710242",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0ef58099-39ea-461c-a2b0-be9dbdf74bc9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10393_Skill_Tear_explode",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "registerPawnMovedDistanceReachThresholdEvent",
+      "UID": "1cb45a3c-5b0e-4704-870f-7dc5e67a27a1",
+      "threshold": 5,
+      "onlyConsiderXZ": true,
+      "NodeID": 10
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "b8858528-01c0-4b07-8216-359b94633cbe",
+      "effectId": "Eff_Parmon_10393_Skill_Tear_Buff_01",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "name": "calcResult",
+      "overrideCaster": "SRC",
+      "calcInfoByLuaConfig": {
+        "id": 2139303,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "b8e03ba6-2f9f-48f5-bc51-58ce0912ad8c",
+      "target": "OWNER",
+      "NodeID": 7,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "elementType": 3
+      }
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4e6291c4-2b8d-4a7f-ba4c-5eab12cfa6a0",
+      "effectId": "Eff_Parmon_10393_Skill_Tear_Buff_02",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    3,
+    10
+  ]
+}

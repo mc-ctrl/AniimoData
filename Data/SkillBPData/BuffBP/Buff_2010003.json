@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "d96d4874-0c0e-4ca2-8c06-2b30632e375e",
+      "name": "registerBuffSeriesCntChangeEvent",
+      "buffSeries": 1
+    },
+    "4": {
+      "UID": "3beb9146-d570-4ad9-a3e9-d448f1a67e9d",
+      "name": "updateBuffSeriesCntAttribute",
+      "buffSeries": 1,
+      "NodeID": 4
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        10,
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "3b5e5275-34ea-48b0-b4d5-b5dd9cc646f4",
+      "NodeID": 7
+    },
+    "10": {
+      "calcInfoByLuaConfig": {
+        "id": 2010003,
+        "taken_ultimate_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "c63c26b7-1fb7-4b91-ba13-d1a67ae137d6",
+      "name": "addBuffSeriesCntAttribute",
+      "NodeID": 10,
+      "buffSeries": 1
+    }
+  },
+  "BPName": "buff_2010003",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

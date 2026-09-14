@@ -1,0 +1,3052 @@
+{
+  "801015": {
+    "res1": [
+      "Show_Cool_Loop"
+    ],
+    "initialClaim": 1,
+    "previewIcon": "$UI_Icon_Action_CoolGirl.png",
+    "name": 2009872833,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_CoolGirl.png",
+    "preview": 1,
+    "body": [
+      11
+    ]
+  },
+  "801016": {
+    "res1": [
+      "Show_Sunny_Loop"
+    ],
+    "initialClaim": 1,
+    "previewIcon": "$UI_Icon_Action_CheerfulGirl.png",
+    "name": 1115733547,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_CheerfulGirl.png",
+    "preview": 1,
+    "body": [
+      11
+    ]
+  },
+  "801901": {
+    "enableCreatorMove": 1,
+    "forceControlPetPrototypeIds": [
+      6999301,
+      6999300
+    ],
+    "interactAction": 3,
+    "interactOrder": 302,
+    "icon": "$UI_Icon_Action_Spark.png",
+    "itemid": 160028,
+    "name": 1722015402,
+    "ownerPetAction": [
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Love"
+      ],
+      [
+        "Love2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Shy"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Surprise2"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "personNum": [
+      1,
+      10
+    ],
+    "initialClaim": 1,
+    "interactId": 474,
+    "interactToast": 1163593689
+  },
+  "801051": {
+    "res1": [
+      "Show_Elegant_Loop"
+    ],
+    "initialClaim": 1,
+    "previewIcon": "$UI_Icon_Action_ElegantBoy.png",
+    "name": 1207458734,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_ElegantBoy.png",
+    "preview": 1,
+    "body": [
+      21
+    ]
+  },
+  "801905": {
+    "initialClaim": 1,
+    "interactAction": 7,
+    "interactOrder": 701,
+    "pet": [
+      1003200,
+      1003201,
+      1003202,
+      1003203,
+      1003300,
+      1003305
+    ],
+    "icon": "$UI_Icon_Action_Suit_Pet.png",
+    "res2": [
+      "Set_B10022_Pose_Show"
+    ],
+    "res1": [
+      "Set_B10022_Pose"
+    ],
+    "animParams": [
+      [
+        2,
+        1.5,
+        2,
+        11
+      ],
+      [
+        0.72,
+        1.12,
+        0
+      ]
+    ],
+    "name": 1681448166,
+    "personNum": [
+      1,
+      1
+    ],
+    "posRot": [
+      [
+        [
+          0.248,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          -0.18,
+          -0.09,
+          -2.922
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    ],
+    "objectType": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801052": {
+    "res1": [
+      "Show_Cool_Loop"
+    ],
+    "initialClaim": 1,
+    "previewIcon": "$UI_Icon_Action_CoolBoy.png",
+    "name": 2083629729,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_CoolBoy.png",
+    "preview": 1,
+    "body": [
+      21
+    ]
+  },
+  "801906": {
+    "initialClaim": 1,
+    "interactAction": 7,
+    "interactOrder": 702,
+    "pet": [
+      1014200
+    ],
+    "icon": "$UI_Icon_Action_Suit_Pet.png",
+    "res2": [
+      "Set_G10014_Pose_Show"
+    ],
+    "animParams": [
+      [
+        2,
+        1.5,
+        2,
+        11
+      ],
+      [
+        -0.06,
+        0.6,
+        180
+      ]
+    ],
+    "name": 1548063276,
+    "personNum": [
+      1,
+      1
+    ],
+    "res1": [
+      "Set_G10014_IdleSpecial"
+    ],
+    "objectType": 1,
+    "body": [
+      11
+    ]
+  },
+  "801053": {
+    "res1": [
+      "Show_Sunny_Loop"
+    ],
+    "initialClaim": 1,
+    "previewIcon": "$UI_Icon_Action_CheerfulBoy.png",
+    "name": 1487391747,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_CheerfulBoy.png",
+    "preview": 1,
+    "body": [
+      21
+    ]
+  },
+  "901001": {
+    "initialClaim": 1,
+    "interactAction": 4,
+    "name": 1943401794,
+    "icon": "$UI_Icon_Expression_SmileMock.png",
+    "itemid": 160018,
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Laugh"
+      ],
+      [
+        "Laugh2"
+      ],
+      [
+        "Happy2"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ],
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Fear"
+      ],
+      [
+        "Surprise2"
+      ],
+      [
+        "Doubt"
+      ],
+      [
+        "Indifferent"
+      ],
+      [
+        "Sigh"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "duration": 10,
+    "emojPrefab": "$UI_Emoji_Laugh2.prefab",
+    "interactOrder": 401
+  },
+  "801054": {
+    "initialClaim": 1,
+    "name": 1873478742,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_Stand.png",
+    "res1": [
+      "Show_Common"
+    ],
+    "body": [
+      21
+    ]
+  },
+  "801055": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose02_Loop"
+    ],
+    "name": 1952310670,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_Link.png",
+    "preview": 0,
+    "body": [
+      21
+    ]
+  },
+  "901002": {
+    "initialClaim": 1,
+    "interactAction": 4,
+    "name": 1332564985,
+    "icon": "$UI_Icon_Expression_Confused.png",
+    "itemid": 160019,
+    "ownerPetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Think"
+      ],
+      [
+        "Think2"
+      ],
+      [
+        "Doubt"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Idea"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Think"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "duration": 10,
+    "emojPrefab": "$UI_Emoji_Think.prefab",
+    "interactOrder": 402
+  },
+  "801056": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose03_Loop"
+    ],
+    "name": 1987339792,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_Surprise.png",
+    "preview": 0,
+    "body": [
+      21
+    ]
+  },
+  "801057": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose04_Loop"
+    ],
+    "name": 1331405029,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_Salute.png",
+    "preview": 0,
+    "body": [
+      21
+    ]
+  },
+  "801058": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose05_Loop"
+    ],
+    "name": 1867426167,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_PointForward.png",
+    "preview": 0,
+    "body": [
+      21
+    ]
+  },
+  "801101": {
+    "teamUp": 1,
+    "initialClaim": 1,
+    "interactAction": 1,
+    "name": 1963211420,
+    "previewIcon": "$UI_Icon_Action_Greet.png",
+    "icon": "$UI_Icon_Action_Greet.png",
+    "itemid": 160004,
+    "res1": [
+      "Daily_Hello"
+    ],
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Hello"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "InvitePlay"
+      ],
+      [
+        "Cheer"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "InvitePlay"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "actionSound": "SFX_Act_Player_Hello_effect",
+    "interactOrder": 999,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801105": {
+    "initialClaim": 1,
+    "res1": [
+      "Daily_Horn_Start",
+      "Daily_Horn_Loop",
+      "Daily_Horn_End"
+    ],
+    "name": 1621603705,
+    "photo": 0,
+    "icon": "$UI_Img_Pose_Praise.png",
+    "preview": 0,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801106": {
+    "initialClaim": 1,
+    "name": 1088274364,
+    "icon": "$UI_Avatar_Preview_Show_Dizi.png",
+    "playType": 3,
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Happy2"
+      ],
+      [
+        "InvitePlay"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Cheer"
+      ]
+    ],
+    "eventName": "playFlute",
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Alert"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "preview": 0,
+    "res1": [
+      "Sit_Flute_Start",
+      "Sit_Flute_Loop",
+      "Sit_Flute_End"
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ]
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801107": {
+    "initialClaim": 1,
+    "interactAction": 1,
+    "name": 1483803831,
+    "icon": "$UI_Icon_Action_HugImo.png",
+    "itemid": 160008,
+    "eventName": "openHugPetSelectPanel",
+    "preview": 0,
+    "personNum": [
+      1,
+      1
+    ],
+    "playType": 3,
+    "interactOrder": 995,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801108": {
+    "playType": 2,
+    "inviteText": 1537381673,
+    "animParams": [
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          11
+        ],
+        [
+          0.33,
+          0.12,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          12
+        ],
+        [
+          0.45,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          21
+        ],
+        [
+          0.4,
+          0.05,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          22
+        ],
+        [
+          0.5,
+          0,
+          0
+        ]
+      ]
+    ],
+    "res1": [
+      "Social_LookShyLeft_Start",
+      "Social_LookShyLeft_Loop",
+      "Social_LookShyLeft_End"
+    ],
+    "interactOrder": 203,
+    "initialClaim": 1,
+    "interactAction": 2,
+    "name": 1865446923,
+    "inviteDist": 5,
+    "icon": "$UI_Icon_Action_FirstMeet.png",
+    "itemid": 160009,
+    "needTargetAgree": 1,
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Happy"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Hello"
+      ],
+      [
+        "Love2"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ],
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Alert"
+      ],
+      [
+        "Doubt"
+      ],
+      [
+        "Surprise2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "friendshipLevel": 1,
+    "res2": [
+      "Social_LookShyRight_Start",
+      "Social_LookShyRight_Loop",
+      "Social_LookShyRight_End"
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801103": {
+    "teamUp": 1,
+    "initialClaim": 1,
+    "interactAction": 1,
+    "name": 1118491928,
+    "previewIcon": "$UI_Icon_Action_ThumbUp.png",
+    "icon": "$UI_Icon_Action_ThumbUp.png",
+    "itemid": 160006,
+    "res1": [
+      "Daily_Thanks"
+    ],
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Like"
+      ],
+      [
+        "Proud"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Celebrate"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "actionSound": "SFX_Act_Player_Thank_effect",
+    "interactOrder": 996,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801109": {
+    "playType": 2,
+    "inviteText": 1196090702,
+    "animParams": [
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          11
+        ],
+        [
+          0.31,
+          0.02,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          12
+        ],
+        [
+          0.63,
+          0.15,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          21
+        ],
+        [
+          0.4,
+          0.25,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          22
+        ],
+        [
+          0.7,
+          0.2,
+          0
+        ]
+      ]
+    ],
+    "res1": [
+      "Social_YeahLeft_Start",
+      "Social_YeahLeft_Loop",
+      "Social_YeahLeft_End"
+    ],
+    "interactOrder": 204,
+    "initialClaim": 1,
+    "interactAction": 2,
+    "name": 1264714415,
+    "inviteDist": 5,
+    "icon": "$UI_Icon_Action_PeaceHand.png",
+    "itemid": 160010,
+    "needTargetAgree": 1,
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Happy2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Like"
+      ],
+      [
+        "Celebrate"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Happy2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Smirk"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "friendshipLevel": 2,
+    "res2": [
+      "Social_YeahRight_Start",
+      "Social_YeahRight_Loop",
+      "Social_YeahRight_End"
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801110": {
+    "playType": 2,
+    "inviteText": 2147274159,
+    "animParams": [
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          11
+        ],
+        [
+          0.48,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          12
+        ],
+        [
+          0.55,
+          0.07,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          21
+        ],
+        [
+          0.35,
+          0.07,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          22
+        ],
+        [
+          0.5,
+          0.07,
+          0
+        ]
+      ]
+    ],
+    "res1": [
+      "Social_HeartLeft_Start",
+      "Social_HeartLeft_Loop",
+      "Social_HeartLeft_End"
+    ],
+    "interactOrder": 205,
+    "initialClaim": 1,
+    "interactAction": 2,
+    "name": 1771659196,
+    "inviteDist": 5,
+    "icon": "$UI_Icon_Action_Tacit.png",
+    "itemid": 160011,
+    "needTargetAgree": 1,
+    "ownerPetAction": [
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ],
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_EatStart",
+        "Behav_EatLoop",
+        "Behav_EatEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Laugh"
+      ],
+      [
+        "Laugh2"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Think"
+      ],
+      [
+        "Think2"
+      ],
+      [
+        "Awkward2"
+      ],
+      [
+        "Dizzy"
+      ],
+      [
+        "Sigh"
+      ],
+      [
+        "Indifferent"
+      ],
+      [
+        "Bored"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ],
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_EatStart",
+        "Behav_EatLoop",
+        "Behav_EatEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Laugh"
+      ],
+      [
+        "Laugh2"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Think"
+      ],
+      [
+        "Think2"
+      ],
+      [
+        "Awkward2"
+      ],
+      [
+        "Dizzy"
+      ],
+      [
+        "Sigh"
+      ],
+      [
+        "Indifferent"
+      ],
+      [
+        "Bored"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "friendshipLevel": 3,
+    "res2": [
+      "Social_HeartRight_Start",
+      "Social_HeartRight_Loop",
+      "Social_HeartRight_End"
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "901005": {
+    "interactId": 469,
+    "initialClaim": 1,
+    "interactAction": 4,
+    "interactOrder": 405,
+    "icon": "$UI_Icon_Expression_CryHard.png",
+    "emojPrefab": "$UI_Emoji_Cry.prefab",
+    "name": 1208030181,
+    "ownerPetAction": [
+      [
+        "Behav_CryStart",
+        "Behav_CryLoop",
+        "Behav_CryEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Sad"
+      ],
+      [
+        "Heartbroken"
+      ],
+      [
+        "Worry"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Cute"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Indifferent"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "itemid": 160022,
+    "duration": 20,
+    "interactToast": 1712658707
+  },
+  "801111": {
+    "playType": 2,
+    "inviteText": 1571432483,
+    "animParams": [
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          11
+        ],
+        [
+          0.52,
+          0.15,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.8,
+          12
+        ],
+        [
+          0.52,
+          0.55,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          2,
+          1.5,
+          21
+        ],
+        [
+          0.4,
+          0.35,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          2,
+          1.5,
+          22
+        ],
+        [
+          0.4,
+          0.68,
+          0
+        ]
+      ]
+    ],
+    "res1": [
+      "Social_HoldFaceLeft_Start",
+      "Social_HoldFaceLeft_Loop",
+      "Social_HoldFaceLeft_End"
+    ],
+    "interactOrder": 206,
+    "initialClaim": 1,
+    "interactAction": 2,
+    "name": 1321981737,
+    "inviteDist": 5,
+    "icon": "$UI_Icon_Action_CupFace.png",
+    "itemid": 160012,
+    "needTargetAgree": 1,
+    "ownerPetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Think"
+      ],
+      [
+        "Think2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Idea"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Think"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "friendshipLevel": 4,
+    "res2": [
+      "Social_HoldFaceRight_Start",
+      "Social_HoldFaceRight_Loop",
+      "Social_HoldFaceRight_End"
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801112": {
+    "playType": 2,
+    "inviteText": 1274182584,
+    "animParams": [
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          11
+        ],
+        [
+          0.4,
+          0.16,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          12
+        ],
+        [
+          0.52,
+          0.16,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          1.5,
+          21
+        ],
+        [
+          0.52,
+          0.16,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1.8,
+          1.5,
+          22
+        ],
+        [
+          0.64,
+          0,
+          0
+        ]
+      ]
+    ],
+    "res1": [
+      "Social_HeartSignLeft_Start",
+      "Social_HeartSignLeft_Loop",
+      "Social_HeartSignLeft_End"
+    ],
+    "interactOrder": 207,
+    "initialClaim": 1,
+    "interactAction": 2,
+    "name": 1149789601,
+    "inviteDist": 5,
+    "icon": "$UI_Icon_Action_HeartHand.png",
+    "itemid": 160013,
+    "needTargetAgree": 1,
+    "ownerPetAction": [
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Love"
+      ],
+      [
+        "Love2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Shy"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Surprise2"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "friendshipLevel": 5,
+    "res2": [
+      "Social_HeartSignRight_Start",
+      "Social_HeartSignRight_Loop",
+      "Social_HeartSignRight_End"
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "901003": {
+    "interactId": 469,
+    "initialClaim": 1,
+    "interactAction": 4,
+    "interactOrder": 403,
+    "icon": "$UI_Icon_Expression_HeartBreak.png",
+    "emojPrefab": "$UI_Emoji_Heartbroken.prefab",
+    "name": 1750240138,
+    "ownerPetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_CryStart",
+        "Behav_CryLoop",
+        "Behav_CryEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Heartbroken"
+      ],
+      [
+        "Sad"
+      ],
+      [
+        "Worry2"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Cute"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Look"
+      ],
+      [
+        "Relaxed"
+      ],
+      [
+        "Indifferent"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Cute"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "itemid": 160020,
+    "duration": 10,
+    "interactToast": 1758874679
+  },
+  "801113": {
+    "initialClaim": 1,
+    "interactAction": 1,
+    "name": 1271201200,
+    "photo": 2,
+    "icon": "$UI_Icon_Action_WaveHand.png",
+    "itemid": 160014,
+    "res1": [
+      "Story_Greet02"
+    ],
+    "ownerPetAction": [
+      [
+        "Behav_CryStart",
+        "Behav_CryLoop",
+        "Behav_CryEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Sad"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Worry2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Sigh"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Relaxed"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Indifferent"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "actionSound": "SFX_Act_Player_bye_effect",
+    "interactOrder": 997,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "901006": {
+    "initialClaim": 1,
+    "interactAction": 4,
+    "name": 1528256908,
+    "icon": "$UI_Icon_Expression_Shy.png",
+    "itemid": 160023,
+    "ownerPetAction": [
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Shy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy2"
+      ],
+      [
+        "Love2"
+      ],
+      [
+        "Awkward2"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Naughty"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "duration": 10,
+    "emojPrefab": "$UI_Emoji_Shy.prefab",
+    "interactOrder": 406
+  },
+  "901007": {
+    "initialClaim": 1,
+    "interactAction": 4,
+    "name": 1976385770,
+    "icon": "$UI_Icon_Expression_SmileEvil.png",
+    "itemid": 160024,
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_AngryStart",
+        "Behav_AngryLoop",
+        "Behav_AngryEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Smirk"
+      ],
+      [
+        "Naughty"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Cool"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_AngryStart",
+        "Behav_AngryLoop",
+        "Behav_AngryEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Naughty"
+      ],
+      [
+        "Smirk"
+      ],
+      [
+        "Indifferent"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "duration": 10,
+    "emojPrefab": "$UI_Emoji_Smirk.prefab",
+    "interactOrder": 407
+  },
+  "901008": {
+    "interactId": 470,
+    "initialClaim": 1,
+    "interactAction": 4,
+    "interactOrder": 408,
+    "icon": "$UI_Icon_Expression_Dizzy.png",
+    "emojPrefab": "$UI_Emoji_Dizzy.prefab",
+    "name": 2000781673,
+    "ownerPetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Think"
+      ],
+      [
+        "Think2"
+      ],
+      [
+        "Doubt"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Idea"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Think"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "itemid": 160025,
+    "duration": 10,
+    "interactToast": 1473055538
+  },
+  "801114": {
+    "initialClaim": 1,
+    "interactAction": 1,
+    "name": 1365676458,
+    "icon": "$UI_Icon_Action_Bow.png",
+    "itemid": 160015,
+    "res1": [
+      "Social_Bow"
+    ],
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Shy"
+      ],
+      [
+        "Proud"
+      ],
+      [
+        "Love"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Happy"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "actionSound": "SFX_Act_Player_bow_effect",
+    "interactOrder": 998,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "901004": {
+    "initialClaim": 1,
+    "interactAction": 4,
+    "name": 1875917195,
+    "icon": "$UI_Icon_Expression_Love.png",
+    "itemid": 160021,
+    "ownerPetAction": [
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Love"
+      ],
+      [
+        "Love2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Shy"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Surprise2"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "duration": 10,
+    "emojPrefab": "$UI_Emoji_Love.prefab",
+    "interactOrder": 404
+  },
+  "902001": {
+    "enableCreatorMove": 1,
+    "initialClaim": 1,
+    "name": 1154695202,
+    "res1": [
+      "Home_SitRelax01_Loop"
+    ],
+    "playType": 1
+  },
+  "801115": {
+    "res1": [
+      "Social_Beg_Start",
+      "Social_Beg_Loop",
+      "Social_Beg_End"
+    ],
+    "fashion": 5,
+    "interactAction": 1,
+    "isMoveStop": 1,
+    "photo": 2,
+    "icon": "$UI_Icon_Action_Plead.png",
+    "itemid": 160001,
+    "name": 2049355958,
+    "ownerPetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Cute"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Awkward2"
+      ],
+      [
+        "Worry"
+      ],
+      [
+        "Happy"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_AngryStart",
+        "Behav_AngryLoop",
+        "Behav_AngryEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Surprise"
+      ],
+      [
+        "Surprise2"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Relaxed"
+      ],
+      [
+        "Indifferent"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "actionSound": "SFX_Act_Player_Beg_effect",
+    "interactOrder": 103,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801001": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose01_Loop"
+    ],
+    "name": 1321659917,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_Shrug.png",
+    "preview": 0,
+    "body": [
+      11
+    ]
+  },
+  "801907": {
+    "initialClaim": 1,
+    "interactAction": 7,
+    "interactOrder": 703,
+    "pet": [
+      1014200
+    ],
+    "icon": "$UI_Icon_Action_Suit_Pet.png",
+    "res2": [
+      "Set_B10014_Pose_Show"
+    ],
+    "animParams": [
+      [
+        2,
+        1.5,
+        2,
+        11
+      ],
+      [
+        -0.06,
+        0.6,
+        180
+      ]
+    ],
+    "name": 1581644618,
+    "personNum": [
+      1,
+      1
+    ],
+    "res1": [
+      "Set_B10014_IdleSpecial"
+    ],
+    "objectType": 1,
+    "body": [
+      21
+    ]
+  },
+  "801002": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose02_Loop"
+    ],
+    "name": 1949344973,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_ScissorHand.png",
+    "preview": 0,
+    "body": [
+      11
+    ]
+  },
+  "801116": {
+    "initialClaim": 1,
+    "interactAction": 1,
+    "interactOrder": 102,
+    "res1": [
+      "Social_Orz_Start",
+      "Social_Orz_Loop",
+      "Social_Orz_End"
+    ],
+    "icon": "$UI_Icon_Action_Disappointed.png",
+    "itemid": 160016,
+    "name": 1529538151,
+    "ownerPetAction": [
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ],
+      [
+        "Behav_CryStart",
+        "Behav_CryLoop",
+        "Behav_CryEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Sad"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Worry"
+      ],
+      [
+        "Heartbroken"
+      ],
+      [
+        "Cute"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Indifferent"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "actionSound": "SFX_Act_Player_Orz_effect",
+    "isMoveStop": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801003": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose03_Loop"
+    ],
+    "name": 1830454641,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_Stand.png",
+    "preview": 0,
+    "body": [
+      11
+    ]
+  },
+  "801120": {
+    "playType": 2,
+    "inviteText": 1843227958,
+    "name": 1708124997,
+    "actionSound": "SFX_Act_Player_cheers_effect",
+    "animParams": [
+      [
+        [
+          2,
+          2.9,
+          1.5,
+          11
+        ],
+        [
+          1.1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          3,
+          1.5,
+          12
+        ],
+        [
+          1.24,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          3,
+          1.5,
+          21
+        ],
+        [
+          1.1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          3.3,
+          1.5,
+          22
+        ],
+        [
+          1.26,
+          0,
+          0
+        ]
+      ]
+    ],
+    "buffIds": [
+      920000103,
+      920000104,
+      920000105,
+      920000106,
+      920000107
+    ],
+    "costItemId": [
+      160027,
+      1
+    ],
+    "initialClaim": 1,
+    "interactAction": 2,
+    "interactOrder": 208,
+    "inviteDist": 5,
+    "icon": "$UI_Icon_Action_Cheers.png",
+    "itemid": 160026,
+    "needTargetAgree": 1,
+    "ownerPetAction": [
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Love"
+      ],
+      [
+        "Love2"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Shy"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Surprise2"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "res1": [
+      "Social_CheersLeft"
+    ],
+    "res2": [
+      "Social_CheersRight"
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801004": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose04_Loop"
+    ],
+    "name": 2014110055,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_LeftShrug.png",
+    "preview": 0,
+    "body": [
+      11
+    ]
+  },
+  "801117": {
+    "initialClaim": 1,
+    "interactAction": 1,
+    "interactOrder": 101,
+    "res1": [
+      "Lying_Start",
+      "Lying_Loop",
+      "Lying_End"
+    ],
+    "icon": "$UI_Icon_Action_LieDown.png",
+    "itemid": 160017,
+    "name": 1354031960,
+    "ownerPetAction": [
+      [
+        "Behav_SleepStart",
+        "Behav_SleepLoop",
+        "Behav_SleepEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Relaxed"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Bored"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_SleepStart",
+        "Behav_SleepLoop",
+        "Behav_SleepEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Bored"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Indifferent"
+      ]
+    ],
+    "personNum": [
+      1,
+      2
+    ],
+    "actionSound": "SFX_Act_Player_Lying_effect",
+    "isMoveStop": 1,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801005": {
+    "initialClaim": 1,
+    "res1": [
+      "Show_Pose05_Loop"
+    ],
+    "name": 1156148488,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_Horn.png",
+    "preview": 0,
+    "body": [
+      11
+    ]
+  },
+  "801102": {
+    "playType": 2,
+    "teamUp": 1,
+    "previewIcon": "$UI_Icon_Action_CheerUp.png",
+    "actionSound": "SFX_Act_Player_Buff_effect",
+    "buffIds": [
+      920000103,
+      920000104,
+      920000105,
+      920000106,
+      920000107
+    ],
+    "initialClaim": 1,
+    "interactAction": 1,
+    "interactOrder": 104,
+    "icon": "$UI_Icon_Action_CheerUp.png",
+    "itemid": 160005,
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Cheer"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Proud"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Celebrate"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Surprise"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "res1": [
+      "Daily_Fighting"
+    ],
+    "name": 1328116371,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801006": {
+    "initialClaim": 1,
+    "previewIcon": "$UI_Icon_Action_IdleSpecial.png",
+    "name": 1406278205,
+    "photo": 0,
+    "res1": [
+      "IdleSpecial"
+    ],
+    "preview": 0,
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801118": {
+    "interactId": 468,
+    "interactToast": 1083668191,
+    "actionSound": "SFX_Act_Player_dance_effect",
+    "animParams": [
+      [
+        2,
+        1.5,
+        2.3
+      ],
+      [
+        -0.8,
+        -0.7,
+        0
+      ],
+      [
+        0.8,
+        -0.7,
+        0
+      ],
+      [
+        -1.6,
+        -1.4,
+        0
+      ],
+      [
+        1.6,
+        -1.4,
+        0
+      ]
+    ],
+    "interactAction": 3,
+    "interactOrder": 301,
+    "icon": "$UI_Icon_Action_GroupDance.png",
+    "itemid": 160003,
+    "body": [
+      11,
+      21
+    ],
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Happy"
+      ],
+      [
+        "Happy2"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Celebrate"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Cool"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      5
+    ],
+    "res1": [
+      "Show_Dance02"
+    ],
+    "name": 1757246012,
+    "fashion": 5
+  },
+  "801007": {
+    "initialClaim": 1,
+    "preview": 0,
+    "previewIcon": "$UI_Icon_Action_DanceOne.png",
+    "icon": "$UI_Icon_Action_DanceOne.png",
+    "photo": 2,
+    "name": 1078408491,
+    "res1": [
+      "Show_Dance01"
+    ],
+    "petBehavior": [
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        10
+      ]
+    ],
+    "body": [
+      11,
+      21
+    ]
+  },
+  "801119": {
+    "actionSound": "SFX_Act_Player_pat_effect",
+    "animParams": [
+      [
+        [
+          2,
+          1.5,
+          2,
+          11
+        ],
+        [
+          -0.06,
+          0.6,
+          180
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          2,
+          12
+        ],
+        [
+          0.01,
+          0.5,
+          180
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          2,
+          21
+        ],
+        [
+          -0.04,
+          0.6,
+          180
+        ]
+      ],
+      [
+        [
+          2,
+          1.5,
+          2,
+          22
+        ],
+        [
+          0.03,
+          0.6,
+          180
+        ]
+      ]
+    ],
+    "icon": "$UI_Icon_Action_HeadPat.png",
+    "interactOrder": 202,
+    "body": [
+      11,
+      21
+    ],
+    "interactAction": 2,
+    "name": 1646476114,
+    "inviteDist": 5,
+    "inviteText": 1231739363,
+    "itemid": 160002,
+    "needTargetAgree": 1,
+    "ownerPetAction": [
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Cute"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Happy"
+      ],
+      [
+        "Shy"
+      ],
+      [
+        "Look"
+      ]
+    ],
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ]
+    ],
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Shy"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Happy"
+      ]
+    ],
+    "personNum": [
+      2,
+      2
+    ],
+    "res1": [
+      "Social_Pat"
+    ],
+    "res2": [
+      "Social_Patreceive"
+    ],
+    "fashion": 5
+  },
+  "801014": {
+    "res1": [
+      "Show_Elegant_Loop"
+    ],
+    "initialClaim": 1,
+    "previewIcon": "$UI_Icon_Action_ElegantGirl.png",
+    "name": 2005177230,
+    "photo": 1,
+    "icon": "$UI_Icon_Action_ElegantGirl.png",
+    "preview": 1,
+    "body": [
+      11
+    ]
+  },
+  "801104": {
+    "playType": 3,
+    "preview": 0,
+    "photo": 0,
+    "initialClaim": 1,
+    "interactAction": 1,
+    "name": 1197335302,
+    "icon": "$UI_Avatar_Preview_Show_Dizi.png",
+    "itemid": 160007,
+    "passerbypetAction": [
+      [
+        "Behav_DoubtStart",
+        "Behav_DoubtLoop",
+        "Behav_DoubtEnd"
+      ],
+      [
+        "Behav_AlertStart",
+        "Behav_AlertLoop",
+        "Behav_AlertEnd"
+      ]
+    ],
+    "ownerPetAction": [
+      [
+        "Behav_HappyStart",
+        "Behav_HappyLoop",
+        "Behav_HappyEnd"
+      ],
+      [
+        "Behav_LoveStart",
+        "Behav_LoveLoop",
+        "Behav_LoveEnd"
+      ]
+    ],
+    "ownerpetEmoji": [
+      [
+        "Happy2"
+      ],
+      [
+        "InvitePlay"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Love"
+      ],
+      [
+        "Cheer"
+      ]
+    ],
+    "eventName": "playFlute",
+    "passerbypetEmoji": [
+      [
+        "Doubt"
+      ],
+      [
+        "Alert"
+      ],
+      [
+        "Cute"
+      ],
+      [
+        "Look"
+      ],
+      [
+        "Surprise"
+      ]
+    ],
+    "personNum": [
+      1,
+      1
+    ],
+    "res1": [
+      "Flute_Skill_Cure_Start",
+      "Flute_Skill_Cure_StandLoop",
+      "Flute_Skill_Cure_StandEnd"
+    ],
+    "interactOrder": 1000,
+    "body": [
+      11,
+      21
+    ]
+  }
+}

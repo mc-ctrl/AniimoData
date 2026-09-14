@@ -1,0 +1,232 @@
+{
+  "90817655": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME5",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90817656": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME4",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90817657": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME2",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90817658": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME3",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90858500": {
+    "Status1": [
+      [
+        3,
+        [
+          0
+        ]
+      ]
+    ],
+    "Status1ExtraInfo": [
+      "$Img_Map_Mark_GrabEgg_HugeEgg_Hatching.png"
+    ],
+    "Status2": [
+      [
+        3,
+        [
+          1,
+          "server"
+        ]
+      ]
+    ],
+    "Status2ExtraInfo": [
+      "$Img_Map_Mark_GrabEgg_HugeEgg_Hatching.png"
+    ],
+    "Status3": [
+      [
+        3,
+        [
+          2
+        ]
+      ]
+    ],
+    "Status3ExtraInfo": [
+      "$Img_Map_Mark_GrabEgg_HugeEgg_Hatching.png"
+    ]
+  },
+  "90877508": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME2",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90877510": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME6",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90877512": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME3",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90877514": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME4",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90877516": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME5",
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "90790527": {
+    "Status1": [
+      [
+        2,
+        [
+          "山中神庙",
+          0,
+          0
+        ]
+      ]
+    ],
+    "Status4": [
+      [
+        2,
+        [
+          "山中神庙",
+          1,
+          1
+        ]
+      ]
+    ],
+    "Status2": [
+      [
+        2,
+        [
+          "山中神庙",
+          0,
+          1
+        ]
+      ]
+    ],
+    "Status3": [
+      [
+        2,
+        [
+          "山中神庙",
+          1,
+          0
+        ]
+      ]
+    ]
+  },
+  "90817651": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME1",
+          1,
+          2
+        ]
+      ]
+    ],
+    "Status2": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME1",
+          1,
+          2
+        ]
+      ]
+    ],
+    "Status4": [
+      [
+        2,
+        [
+          "荒古禁地",
+          1,
+          1
+        ]
+      ]
+    ]
+  },
+  "90817654": {
+    "Status1": [
+      [
+        2,
+        [
+          "GRAB_EGG_AREANAME6",
+          1,
+          2
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2016754a-0555-48b3-8b18-48e5fb9450a6",
+      "effectId": "Eff_Parmon_10331_Fireball",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "17": {
+      "eventName": "Fire",
+      "NodeID": 17,
+      "UID": "ea2fd335-289e-4b02-924f-30c555500f0e",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        16
+      ]
+    },
+    "9": {
+      "lockTarget": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "6920a6c1-2ea8-4635-9f4c-a722f4b2a70e",
+        "target": "MASTER",
+        "NodeID": 7
+      },
+      "name": "lockTarget",
+      "UID": "201be1ac-2272-4215-b006-c4692a6a71ca",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "10": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 10,
+      "UID": "a804c36b-570d-4e13-ae78-2853997a6655",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          9
+        ]
+      }
+    },
+    "8": {
+      "target": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "6920a6c1-2ea8-4635-9f4c-a722f4b2a70e",
+        "target": "MASTER",
+        "NodeID": 7
+      },
+      "name": "followTarget",
+      "UID": "a77306d0-1287-46d1-94c2-fe5b9bdccdcd",
+      "stopDistance": 1,
+      "NodeID": 8,
+      "followSpeed": 3.5
+    },
+    "5": {
+      "UID": "7c50ad91-6e9d-4067-8723-36355fa17c9b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          17,
+          8
+        ]
+      },
+      "NodeID": 5
+    },
+    "16": {
+      "timelineId": 2133101201,
+      "name": "jumpToNextTimeline",
+      "UID": "9598bd5a-48d7-485f-8f48-674b87d14462",
+      "target": "OWNER",
+      "NodeID": 16
+    }
+  },
+  "BPName": "timeline_2133101",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    5,
+    10
+  ],
+  "layer": "Base",
+  "length": 999
+}

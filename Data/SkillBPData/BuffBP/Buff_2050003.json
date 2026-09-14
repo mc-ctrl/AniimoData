@@ -1,0 +1,79 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "13": {
+      "actionIds": [
+        18
+      ],
+      "NodeID": 13,
+      "UID": "0f8ea860-73a8-4aae-94ae-f2fef8a6f612",
+      "cd": {
+        "calcId": 2050003,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 12,
+        "UID": "6893068c-194c-4125-aed2-45ac064d7c44",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "name": "registerReceiveDamageEvent",
+      "UID": "c682e2b7-21d7-4bb0-ad4a-7352abf9b586",
+      "targetType": 1,
+      "NodeID": 14
+    },
+    "18": {
+      "value": {
+        "calcId": 2050003,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 17,
+        "UID": "97f64430-00da-434f-8dbe-88a57a81284c",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "60880fc7-1f2f-4b80-b62f-47e6dfd70d60",
+      "target": "CURPET",
+      "NodeID": 18,
+      "applyIncRatio": true
+    },
+    "15": {
+      "unsummonValid": false,
+      "actionIds": [
+        14
+      ],
+      "name": "registerGroupEvent",
+      "UID": "cd065e36-455b-4774-a184-86de4a10fa68",
+      "NodeID": 15
+    },
+    "17": {
+      "calcId": 2050003,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 17,
+      "UID": "97f64430-00da-434f-8dbe-88a57a81284c",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "calcId": 2050003,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 12,
+      "UID": "6893068c-194c-4125-aed2-45ac064d7c44",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_2050003",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    15
+  ]
+}

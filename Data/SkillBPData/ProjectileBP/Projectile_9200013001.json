@@ -1,0 +1,60 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 19,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10051_Fireball",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 10,
+  "nodeMap": {
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "06213641-2de8-4fa3-93b1-ae36c6fe6279",
+      "isAbilityEndRemove": false,
+      "soundId": "avatar_girl_attack_common_hit_01",
+      "NodeID": 26
+    },
+    "19": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 9999
+      },
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "impulseId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10051_Fireball_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0
+      },
+      "UID": "4b2d7888-ae97-4544-8e53-4f87345a4d92",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 19
+    }
+  },
+  "moveSpeed": 20,
+  "onProjectileHitIds": [
+    19,
+    26
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 3,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "BPName": "ability_9200013",
+  "impulseId": 0,
+  "acceleration": 0
+}

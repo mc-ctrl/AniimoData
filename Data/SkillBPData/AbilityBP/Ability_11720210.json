@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_Shield"
+  ],
+  "searchTargetRangeRadius": 0,
+  "BPName": "ability_11720210",
+  "name": "",
+  "UID": "f30de826-1d3d-4ecc-9b3b-5957349cc19c",
+  "searchTargetRangeUp": 0,
+  "abilityParamId": 10800040,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "searchTargetRangeDown": 0,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11720210001,
+      "name": "setCombatActionTimeline",
+      "UID": "d4d73658-7292-4e30-a55a-0b7b51b12558",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

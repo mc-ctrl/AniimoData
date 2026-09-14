@@ -1,0 +1,24 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9117403",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "18": {
+      "epCostAddFix": 0,
+      "NodeID": 18,
+      "UID": "167b8c73-4eb8-497a-9f6b-00bb5c84b6dd",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": -0.5,
+      "abilityId": 11740400
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    18
+  ]
+}

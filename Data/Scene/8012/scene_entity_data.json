@@ -1,0 +1,85 @@
+{
+  "65877243": {
+    "owner": "路司机",
+    "subType": "Chest",
+    "enableVirtualChest": false,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "showActiveDistance": false,
+      "SloganPlayOnce": false,
+      "scale3": 0,
+      "scale2": 0,
+      "autoSetContent1": true,
+      "compassShowDistance": 30,
+      "initState": 0,
+      "scale1": 1,
+      "mapAreaId": 0,
+      "markConfigId": 10505,
+      "POIOrNot": false,
+      "markType": 5,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "markContent1": 65877243,
+      "nearState": 2,
+      "arriveType": 1,
+      "positionParam": {},
+      "hudShowDistance": [
+        1,
+        30
+      ],
+      "enableHudShow": 1,
+      "circleRadius": 0
+    },
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "sizeCoefficient": 1,
+    "voxelConstraints": 0,
+    "attachId": 0,
+    "attachToSpawnerId": 0,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "chestSpawnerStaticId": 0,
+    "yaw": 0,
+    "stick": true,
+    "staticId": 65877243,
+    "enable_elite_rate": false,
+    "spawnerId": 65877245,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 11048,
+    "isAuto": false,
+    "sandboxId": 65049255,
+    "routeId": 0,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "resourcePointInfos": {},
+    "position": [
+      -14.25,
+      -10.65,
+      -14.2
+    ],
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig"
+  }
+}

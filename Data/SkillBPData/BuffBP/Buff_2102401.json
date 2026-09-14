@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102401",
+  "calcInfoByLuaConfig": {
+    "def_mag_p": "param1",
+    "type": 1,
+    "def_p": "param0",
+    "id": 2102401
+  },
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "防御提升",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

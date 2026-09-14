@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_16210200",
+  "NodeID": 1,
+  "UID": "67fcaffd-ea61-4085-8e42-c89fb077516a",
+  "abilityParamId": 10301190,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 16210200001,
+      "name": "setCombatActionTimeline",
+      "UID": "771250d3-08b2-4642-896f-9c97571d5ee1",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Burst_AttackLoop",
+    "Skill_Burst_AttackEnd"
+  ],
+  "preloadEffs": [
+    "ParadoxNotion.Serialization.LUASerializer+constStringActionNodeInfo",
+    "Eff_Parmon_10623_Skill_Burst_Start",
+    "Eff_Parmon_10621_Skill_Burst_Loop"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2
+}

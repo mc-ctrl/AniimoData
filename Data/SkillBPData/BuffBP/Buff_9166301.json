@@ -1,0 +1,93 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "4": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 916630101,
+      "NodeID": 4,
+      "UID": "bc148baa-0855-4ab6-866c-f1830b11b790",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "ed360250-87f0-4cc5-ae8b-310964b899ce",
+      "name": "doActionsByConditions",
+      "NodeID": 6,
+      "elseActionIds": [
+        4,
+        18
+      ]
+    },
+    "7": {
+      "sameActionIds": [
+        11
+      ],
+      "name": "registerCastFatherAbilityChange",
+      "UID": "450e334b-496b-4a18-a0cb-03c8823add4c",
+      "target": "OWNER",
+      "NodeID": 7,
+      "diffActionIds": [
+        6
+      ]
+    },
+    "17": {
+      "UID": "5e8f5a8e-aedf-422d-ad96-fdac1ba144e0",
+      "value": "xiangtongjineng",
+      "name": "print",
+      "NodeID": 17
+    },
+    "9": {
+      "templateId": 916630101,
+      "name": "removeBuffLayer",
+      "UID": "4757adbe-e3a9-4fa5-94b4-43ffba058074",
+      "layer": 1,
+      "target": "CURPET",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "b20e065d-1502-4bce-b28d-7b95a9caf347",
+      "value": "butongjineng",
+      "name": "print",
+      "NodeID": 18
+    },
+    "19": {
+      "buffId": 2166301,
+      "name": "hasBuff",
+      "UID": "96f2c0f6-304e-4b68-bc60-efb32c83083a",
+      "target": "CURPET",
+      "NodeID": 19
+    },
+    "20": {
+      "buffId": 2166301,
+      "name": "hasBuff",
+      "UID": "f39694d4-8dfc-4d41-a783-35088c94df49",
+      "target": "CURPET",
+      "NodeID": 20
+    },
+    "11": {
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "6b4c150a-f7cf-4093-9054-72e7c579e836",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        9,
+        17
+      ]
+    }
+  },
+  "BPName": "buff_9166301",
+  "dynamicRPCStates": {},
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

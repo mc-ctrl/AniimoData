@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_12830004",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10500001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12830004001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10283_Skill_Wave_L",
+    "Eff_Parmon_10283_Skill_Attack01",
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "火近战普攻",
+  "searchTargetRangeRadius": 6,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    12830005,
+    12830006,
+    12830007
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,58 @@
+{
+  "BPName": "ability_12030900",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "abilityIndicator": 1,
+  "abilityParamId": 9400024,
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12030900001,
+      "name": "setCombatActionTimeline",
+      "UID": "3dc91cb4-0974-48cf-bc37-9b8a2d0f06a7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Hypnospore"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10203_Skill_Light_01",
+    "Eff_Parmon_10233_Skill_Hypnospore01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      1,
+      1,
+      0.8
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "POS_OR_TARGET",
+    "maxNum": 0
+  },
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

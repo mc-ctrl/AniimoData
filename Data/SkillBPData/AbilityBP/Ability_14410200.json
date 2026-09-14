@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_14410200",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10900510,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "14": {
+      "timelineId": 14410200001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 14
+    }
+  },
+  "onAbilityCastIds": [
+    14
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Sonar_Start",
+    "Skill_Sonar_Loop",
+    "Skill_Sonar_End"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Wind_Blunt",
+    "Eff_Parmon_10441_Skill_Strike_Start",
+    "Eff_Parmon_10441_Skill_Strike_Loop",
+    "Eff_Parmon_10441_Skill_Strike_End",
+    "Eff_Parmon_10443_Skill_Sonar_Weakness_02"
+  ],
+  "searchRelation": 2,
+  "name": "声呐攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_30330020",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "delay": 0.5,
+      "interval": 1,
+      "UID": "c85124e4-a47a-4b82-a003-2c7ab46e9c63",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "7": {
+      "UID": "39a56529-c4d3-4cf2-92f1-5eb817d3c796",
+      "name": "doPetsActions",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "6": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": 0.01,
+          "name": "multiply",
+          "UID": "151ce57a-54fa-4345-ae5e-8ad5c252a9b2",
+          "NodeID": 4,
+          "lValue": {
+            "key": "3033002",
+            "name": "getCacheVal",
+            "UID": "af5dde7e-9e42-41e3-b93c-4166504aaec7",
+            "target": "OWNER",
+            "NodeID": 3
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "debbf3df-6399-4b87-ac2a-85ae0f8ac789",
+      "target": "TARGET",
+      "NodeID": 6
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

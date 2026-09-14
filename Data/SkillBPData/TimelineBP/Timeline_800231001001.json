@@ -1,0 +1,297 @@
+{
+  "nodeMap": {
+    "38": {
+      "UID": "58213d36-8bd4-49d1-8a8e-348d0d557b2b",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.7,
+      "NodeID": 39,
+      "UID": "d3f04856-4831-4c3e-a128-17c99af92d1a"
+    },
+    "40": {
+      "layerId": 11,
+      "rumbleName": "CommonLoopHigh",
+      "name": "playRumble",
+      "UID": "c2627572-139e-468a-93ff-20054c0d1862",
+      "target": "TARGET",
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.58,
+      "NodeID": 41,
+      "UID": "e08261ab-5145-4e41-ad87-43e587639913"
+    },
+    "42": {
+      "layerId": 11,
+      "name": "stopRumble",
+      "UID": "9b347c00-6432-4857-af4f-317c77dd69ac",
+      "target": "TARGET",
+      "NodeID": 42
+    },
+    "35": {
+      "UID": "e8f214de-7139-4a25-9a65-dcb08d5507f5",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 35
+    },
+    "44": {
+      "UID": "f79470e0-6635-4bc4-8c3c-aa82a246d24b",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "shapeshifting",
+      "NodeID": 44
+    },
+    "31": {
+      "target": "OWNER",
+      "duration": 7,
+      "buffId": 9802302,
+      "NodeID": 31,
+      "UID": "de882cf3-ba9b-4319-8bf4-004c4f9ce3b0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3d3f2ff9-4455-4c52-88d7-f20edad0bba9",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_flystrike",
+      "NodeID": 9
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          21,
+          9,
+          31,
+          25,
+          28,
+          32,
+          36,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.58,
+      "NodeID": 11,
+      "UID": "9d8e236f-294d-4248-94d5-846406c3998c"
+    },
+    "20": {
+      "UID": "a4b920dc-7e46-4fb3-9ff8-251e7b694c90",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          18,
+          33,
+          35
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "duration": 9999,
+      "buffId": 9802301,
+      "NodeID": 21,
+      "UID": "7cfe9780-96e0-4711-b683-ecae91ca3777",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e5998e1e-a92e-434d-acfe-229c262cf330",
+      "effectId": "Eff_Parmon_10023_Mon_Skill_Override_Enter",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "5f5bbf15-c0ca-4194-beaf-5f9b48a73e2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "c0f36556-ef58-482f-b1c5-52694fad205a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "763b015e-47ab-4ab1-bd2a-ed9f81e55528",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 14
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.58,
+      "NodeID": 43,
+      "UID": "98adcbc4-c6d0-42c0-9004-0aeffb632a98"
+    },
+    "25": {
+      "affectCameraAnim": true,
+      "NodeID": 25,
+      "UID": "62292784-952f-41dc-8ae5-b94d95cc656d",
+      "isCenter": 1,
+      "shakeAmplitude": 0.7,
+      "shakeDir": [
+        0,
+        1,
+        0
+      ],
+      "shakeDissipationDistance": 100,
+      "shakeFrequency": 10,
+      "shakeRadius": 70,
+      "shakeTime": 0.35,
+      "target": "OWNER",
+      "checkCasterIsPlayer": false,
+      "name": "playCameraImpulse"
+    },
+    "16": {
+      "UID": "783a3f6d-4d06-4675-8045-340a03ca319e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          34
+        ]
+      },
+      "NodeID": 16
+    },
+    "26": {
+      "target": "TARGET",
+      "duration": 0.2,
+      "speed": 30,
+      "NodeID": 26,
+      "UID": "2a363b49-2ab8-418e-a6a9-59bc67425244",
+      "displacementDir": "OUT",
+      "displacementTarget": "CASTER",
+      "name": "forceDisplacement"
+    },
+    "28": {
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        26
+      ],
+      "NodeID": 28,
+      "UID": "40ef5a36-60d6-43b4-bec9-6ad7b4d53b0b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            12,
+            6,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "1000"
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "79323a3d-3b88-4173-98ff-f52f54f83fbc",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Monster_Override"
+    },
+    "18": {
+      "UID": "295b41d5-25be-4134-b032-9922898bb142",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "UID": "73d26ab5-13fd-43b6-a934-f5006d0dc2ed",
+      "name": "restoreAllUI",
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "2b0ccda6-2f20-41e3-9407-c1ae92c4a555",
+      "name": "restoreAllUI",
+      "NodeID": 33
+    },
+    "34": {
+      "UID": "2a4ed22c-9c65-4a91-a8fe-bc2ae1941b50",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "816a0168-1667-49d1-a013-b62c9b191536",
+      "name": "sendWxFlowGlobalEvent",
+      "eventName": "OverrideEvent",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_800231001",
+  "NodeID": 6,
+  "UID": "26bc3730-850c-44a2-96ab-c127e885acb4",
+  "eventIds": [
+    16,
+    20,
+    39,
+    4,
+    11,
+    24,
+    41,
+    43
+  ],
+  "layer": "Base",
+  "length": 4.9
+}

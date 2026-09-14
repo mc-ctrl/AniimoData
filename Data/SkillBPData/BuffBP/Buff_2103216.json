@@ -1,0 +1,147 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103216",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "onBuffRefreshIds": [
+    17
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "registerCharacterBuff",
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": 0
+      },
+      "NodeID": 3,
+      "UID": "42800e0c-d3b2-49b4-9136-5ebb8f9464e7",
+      "conditionType": 4,
+      "conditions": [
+        {
+          "target": "TARGET",
+          "name": "checkAttributeValue",
+          "isRatio": true,
+          "attributeName": "hp_cur",
+          "UID": "63f0b566-854a-4146-84c5-e0df4c243a7b",
+          "maxValue": 0.5,
+          "NodeID": 2,
+          "abilityType": 0
+        }
+      ],
+      "characterBuffType": 1
+    },
+    "13": {
+      "id": 2021,
+      "duration": 15,
+      "NodeID": 13,
+      "UID": "46e7fad3-0148-4b30-9fae-fead7b962299",
+      "name": "showBossMechanismTip"
+    },
+    "14": {
+      "UID": "375506cc-b03f-499f-a708-c8f3c3f36d72",
+      "name": "hideBossMechanismTip",
+      "id": 2021,
+      "NodeID": 14
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "5550132f-5627-4553-9b58-1a608e553c91",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_R_Mon",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "1fe25e3c-dcb8-46db-847d-6520f75deab5",
+      "name": "buffStartThink",
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "687f79e8-bc45-42fb-9cf2-f6c005fafc34",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "buffId": 2103216,
+      "name": "removeBuff",
+      "UID": "03be58b0-b7e8-4dde-a6e3-5c7de5797e1e",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "a41de853-9e4c-4d81-b64f-a3eba4e610f3",
+      "effectId": "Eff_Parmon_10032_Skill_Dash_Enhance_L_Mon",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "24edb92a-6cd3-4666-bf6c-1ea03f85a8eb",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "11": {
+      "buffId": 2103215,
+      "name": "removeBuff",
+      "UID": "025ae139-fc10-4f2e-a293-d6dd2f22b335",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "19": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "fe43bb4d-77c0-4f0f-b366-fa83eb991e38",
+        "target": "OWNER",
+        "NodeID": 20,
+        "attributeName": "bp_max_cur"
+      },
+      "name": "equal",
+      "UID": "2c85601d-f8d1-47a2-bac9-c8f08b8a8cbf",
+      "NodeID": 19,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "95f3347d-1411-4f3c-b30b-8e8486833a8c",
+        "target": "OWNER",
+        "NodeID": 18,
+        "attributeName": "bp_cur"
+      }
+    },
+    "6": {
+      "buffId": 2103216,
+      "name": "removeBuff",
+      "UID": "d5036197-bc78-483e-b252-f887bbe488ee",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "onBuffThinkIds": [
+    17
+  ],
+  "onBuffDestroyIds": [
+    8,
+    10,
+    11,
+    14
+  ],
+  "onBuffStartIds": [
+    3,
+    7,
+    13,
+    15
+  ]
+}

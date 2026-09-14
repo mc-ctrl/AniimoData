@@ -1,0 +1,36 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9121103",
+  "name": "提升水属性技能伤害",
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "9ef0bc1c-5b48-4f8c-a446-2e0516ae7251",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "isClearOld": true,
+      "UID": "29b1ddc5-8ff4-41c7-a23e-16775b147c47",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 4,
+      "calcInfoByLuaConfig": {
+        "id": 9121103,
+        "dmg_grass_add_ratio": "param0",
+        "type": 1
+      }
+    }
+  },
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

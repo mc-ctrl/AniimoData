@@ -1,0 +1,49 @@
+{
+  "BPName": "ability_14540201",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10200370,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14540201001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_RollingBall_Start",
+    "Skill_RollingBall_Loop",
+    "Skill_RollingBall_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10454_Skill_RollingBall_Snow_Down_01",
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10454_Skill_RollingBall_Snow_Down_03",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10454_Skill_RollingBall_Snow_Diffuse",
+    "Eff_Parmon_10454_Skill_RollingBall_Down_02",
+    "Eff_Parmon_10454_Skill_RollingBall_Snow_move",
+    "Eff_Parmon_10454_Skill_RollingBall_Down_Snow_GatherLoop",
+    "Eff_Parmon_10454_Skill_RollingBall_Snow_Hit",
+    "Eff_Parmon_10454_Skill_RollingBall_Snow_move_02",
+    "Eff_Parmon_10454_Skill_RollingBall_Snow_Down_04"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    14540204
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

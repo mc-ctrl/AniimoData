@@ -1,0 +1,115 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "24": {
+      "calcId": 2051003,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 24,
+      "UID": "141ecb16-1c7e-40fa-8ba1-4c67329f0f08",
+      "name": "getParamByLuaConfig"
+    },
+    "25": {
+      "calcId": 2051003,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 25,
+      "UID": "523aa12b-a6eb-4537-8f09-ad1684899a07",
+      "name": "getParamByLuaConfig"
+    },
+    "26": {
+      "actionIds": [
+        27
+      ],
+      "NodeID": 26,
+      "UID": "500177fb-140a-4949-85c0-4b659db462e2",
+      "cd": {
+        "calcId": 2051003,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 25,
+        "UID": "523aa12b-a6eb-4537-8f09-ad1684899a07",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "27": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 20510030,
+      "NodeID": 27,
+      "UID": "cd0be962-7e4e-4663-8aa6-0cf24a006e8b",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "17": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "4e39ecb5-bd85-4fa1-8fdb-24a7193915fe",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "18": {
+      "UID": "bb641f93-67eb-4ef2-9acb-a75d6a983893",
+      "newPetActionIds": [
+        17
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 18
+    },
+    "16": {
+      "rValue": {
+        "UID": "f988f07b-ea0c-4601-9f86-51f0d947ffac",
+        "target": "CURPET",
+        "name": "getHpRatio",
+        "NodeID": 15
+      },
+      "name": "greater",
+      "UID": "d3fc60c3-923d-42dc-9a38-caac933e4ec4",
+      "NodeID": 16,
+      "lValue": {
+        "calcId": 2051003,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 24,
+        "UID": "141ecb16-1c7e-40fa-8ba1-4c67329f0f08",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "20": {
+      "unsummonValid": false,
+      "actionIds": [
+        21,
+        18
+      ],
+      "name": "registerGroupEvent",
+      "UID": "919b241a-7513-41ab-8d75-8137992f53c1",
+      "NodeID": 20
+    },
+    "21": {
+      "name": "registerAttributeChange",
+      "actionIds": [
+        17
+      ],
+      "attributeName": "hp_cur",
+      "UID": "8f134f0e-6d5f-4d7d-861f-b2c56ebfc1c9",
+      "target": "OWNER",
+      "targetType": 1,
+      "NodeID": 21
+    }
+  },
+  "BPName": "buff_2051003",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    20
+  ]
+}

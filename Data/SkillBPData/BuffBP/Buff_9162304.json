@@ -1,0 +1,126 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9162304",
+  "calcInfoByLuaConfig": {
+    "id": 9162304,
+    "type": 1,
+    "taken_normal_attack_dmg_inc_rate_v": "param0"
+  },
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10623_Skill_Prize_Loop"
+    }
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "NodeID": 13,
+      "UID": "66ccdaa4-b12a-4edd-bbbc-5de28d432ed0",
+      "applyAbilityIds": [
+        16230200,
+        16230300
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": true,
+      "applyToNormalSkill": false,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e159edf9-a5ba-4159-a512-f17c7ff41049",
+      "effectId": "Eff_Parmon_10623_Skill_Prize_01",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c98890dd-b878-407b-8438-bb56489d5ff6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10623_WinPrize",
+      "NodeID": 10
+    },
+    "8": {
+      "duration": 10,
+      "disableWhenFinished": false,
+      "NodeID": 8,
+      "UID": "5a4e963d-8c02-4b5c-a643-a13325352607",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10623_Skill_Prize_02",
+      "name": "playPreset"
+    },
+    "9": {
+      "duration": 1.5,
+      "disableWhenFinished": false,
+      "NodeID": 9,
+      "UID": "b1e38b61-f5be-4eb1-b908-9faf9590080a",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10623_Skill_Prize_02_End",
+      "name": "playPreset"
+    },
+    "14": {
+      "NodeID": 14,
+      "UID": "74e3e589-8625-4e26-9dad-df8d09a6312d",
+      "applyAbilityIds": [
+        16230200,
+        16230300
+      ],
+      "applyToFinalSkill": true,
+      "applyToNormalAttack": true,
+      "applyToNormalSkill": false,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "11": {
+      "UID": "e05036ce-8116-4426-94af-ef7e05f5e3fe",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10623_Skill_Prize_02",
+      "NodeID": 11
+    },
+    "2": {
+      "value": false,
+      "eventName": "Won",
+      "name": "notifyOctopusEvent",
+      "UID": "973561cf-caf4-4eba-8b3e-5fe4a1788d7d",
+      "wonColor": 0,
+      "NodeID": 2
+    },
+    "12": {
+      "key": "buff_916230412",
+      "duration": 1.5,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12,
+      "UID": "662c1957-6043-4947-b099-a989e3af53ac",
+      "name": "addEntityTimer"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    2,
+    9,
+    12,
+    14
+  ],
+  "onBuffStartIds": [
+    6,
+    8,
+    10,
+    13
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "effectId": "Eff_Avatar_Girl_Skill_Bubble",
+  "duration": 2.5,
+  "BPName": "ability_9200020",
+  "NodeID": 43,
+  "destroyOnHit": true,
+  "ignoreAbilityElement": true,
+  "effectTimeInitOffset": 0,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "nodeMap": {
+    "22": {
+      "calcInfo": {},
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_wolferno_attack_hit_h",
+        "disableShowJumpWord": true,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Avatar_Girl_Skill_Bubble_End",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "81f2cb76-51eb-408d-82ef-1a3460d9c23e",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 22
+    },
+    "24": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 22,
+      "NodeID": 24,
+      "UID": "f7582f8a-a59b-43d8-9f16-2abd304a4449",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        22,
+        33,
+        42,
+        48
+      ]
+    },
+    "40": {
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "552a3d48-612b-480a-b94c-5e7163018e86",
+      "effectId": "Eff_VEG_Avatar_BubbleMachine",
+      "speed": 1,
+      "NodeID": 40
+    },
+    "42": {
+      "key": "bubbleEnd",
+      "duration": 0.3166,
+      "actionIds": [
+        40
+      ],
+      "NodeID": 42,
+      "UID": "07ae3ecc-a1a0-4c3e-8d84-85801272acee",
+      "name": "addEntityTimer"
+    },
+    "47": {
+      "UID": "1deee81a-3513-4694-b8a4-ba820e88e2e4",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 47
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "85166720-111e-4444-93ce-b184ddf14fa7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_BubbleBomb",
+      "NodeID": 44
+    },
+    "48": {
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "30ce2cfc-ccd7-4867-9fb7-893c3f23ec17",
+      "effectId": "Eff_Avatar_Girl_Skill_Bubble_End",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "33": {
+      "target": "TARGET",
+      "duration": 30,
+      "buffId": 920002001,
+      "NodeID": 33,
+      "UID": "25370075-98e8-4aba-9930-dff5a69222a2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "26": {
+      "actionIds": [
+        44,
+        24
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "7858e934-1573-4dd1-8afc-ad473111e4d1",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    }
+  },
+  "maxHitNum": 1,
+  "rotation": "ToTarget",
+  "calcResultNodeId": 22,
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    26
+  ],
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.45,
+  "sweepShape": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "tickInterval": 0,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0.7,
+  "UID": "3f5dd7b7-f664-4e87-a5d0-28b664773cc6",
+  "groundSweepRadius": 0.2,
+  "impulseId": 2000,
+  "acceleration": 0
+}

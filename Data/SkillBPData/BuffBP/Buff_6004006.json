@@ -1,0 +1,43 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6004006",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 0,
+      "templateId": 70100000,
+      "name": "playerDeformToEggMan",
+      "UID": "976db94a-bd3b-4b90-bba5-ebfb31407094",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playFovCameraAnim",
+      "forbidFovCameraOnRepeat": 0,
+      "NodeID": 5,
+      "UID": "3aca9b99-fc20-4045-8238-d865b673fb39",
+      "blendInTime": 1,
+      "blendOutTime": 1,
+      "fovCurveName": "CommonFOV_25"
+    },
+    "6": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "38bfd6d2-805c-4dd5-b342-85816a8bacf1",
+      "name": "buffStartThink",
+      "NodeID": 6
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5,
+    6
+  ]
+}

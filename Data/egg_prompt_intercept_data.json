@@ -1,0 +1,126 @@
+[
+  [
+    {
+      "Param2": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "importance": 2,
+      "interceptDesc": 1490249395,
+      "interceptType": 1,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Bini.png",
+      "title": 1338976492,
+      "Param1": 1
+    },
+    {
+      "Param2": [
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "importance": 2,
+      "interceptDesc": 1829920495,
+      "interceptType": 2,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Bini.png",
+      "title": 1171959452,
+      "Param1": 1
+    },
+    {
+      "Param2": [
+        40,
+        50,
+        50,
+        60,
+        60
+      ],
+      "importance": 2,
+      "interceptDesc": 1459403012,
+      "interceptType": 3,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Bini.png",
+      "title": 1805802770,
+      "Param1": 1
+    },
+    {
+      "Param2": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "importance": 2,
+      "interceptDesc": 1508798329,
+      "interceptType": 1,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Bini.png",
+      "title": 1481085151,
+      "Param1": 2
+    },
+    {
+      "Param2": [
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "importance": 2,
+      "interceptDesc": 1561986203,
+      "interceptType": 2,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Bini.png",
+      "title": 1601125337,
+      "Param1": 2
+    },
+    {
+      "Param2": [
+        40,
+        50,
+        50,
+        60,
+        60
+      ],
+      "importance": 2,
+      "interceptDesc": 1312276066,
+      "interceptType": 3,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Bini.png",
+      "title": 2092302592,
+      "Param1": 2
+    }
+  ],
+  [
+    {
+      "Param2": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "importance": 2,
+      "interceptDesc": 1752768822,
+      "interceptType": 4,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Backpack.png",
+      "title": 1635606721
+    }
+  ],
+  [
+    {
+      "Param2": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "importance": 2,
+      "interceptDesc": 1136254842,
+      "interceptType": 5,
+      "icon": "$UI_Img_GameMod_Dungen_Warning_Icon_Heal.png",
+      "title": 1618546862
+    }
+  ]
+]

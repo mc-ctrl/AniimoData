@@ -1,0 +1,2600 @@
+{
+  "dmg_wind_dec_ratio": {
+    "chName": 1276039264,
+    "chShortName": 1341714441,
+    "max": 1,
+    "min": -9
+  },
+  "egg_mode_taken_dmg_dec_rate_v": {
+    "chName": 1839393271,
+    "chShortName": 1943220226,
+    "max": 999999,
+    "min": 0
+  },
+  "element_resist_add_ratio": {
+    "chName": 1607502275,
+    "chShortName": 1943437522,
+    "max": 9,
+    "min": 0
+  },
+  "element_restraint_add_ratio": {
+    "chName": 1558895859,
+    "chShortName": 1136544798,
+    "max": 9,
+    "min": 0
+  },
+  "energy_max_v": {
+    "chName": 1192646205,
+    "chShortName": 2047010571,
+    "max": 999999,
+    "min": 0
+  },
+  "ep_cost_reduce_fix": {
+    "chName": 1828801537,
+    "chShortName": 2136711894,
+    "max": 100,
+    "min": -100
+  },
+  "ep_cost_reduce_ratio": {
+    "chName": 1518300441,
+    "chShortName": 1568962277,
+    "max": 1,
+    "min": -1
+  },
+  "ep_cur": {
+    "chName": 1141669062,
+    "chShortName": 1668986799,
+    "max": 100,
+    "min": 0
+  },
+  "ep_force_set": {
+    "chName": 1592151840,
+    "chShortName": 1111655834,
+    "max": 999999,
+    "min": 0
+  },
+  "ep_inc_rate_v": {
+    "chName": 1214181041,
+    "chShortName": 1324347795,
+    "max": 1,
+    "min": -1
+  },
+  "ep_max_conv": {
+    "chName": 1410115554,
+    "chShortName": 2080992640,
+    "max": 999999,
+    "min": 0
+  },
+  "ep_max_cur": {
+    "chName": 1383030182,
+    "chShortName": 1130707447,
+    "max": 100,
+    "min": 0
+  },
+  "ep_max_fix": {
+    "chName": 1413029453,
+    "chShortName": 1792583920,
+    "max": 999,
+    "min": -999
+  },
+  "ep_max_p": {
+    "chName": 2103437359,
+    "chShortName": 1719137115,
+    "max": 999,
+    "min": -1
+  },
+  "ep_max_v": {
+    "chName": 1821541333,
+    "chShortName": 1795584418,
+    "max": 100,
+    "min": 0
+  },
+  "ep_regen_force_conv": {
+    "chName": 1998590406,
+    "chShortName": 1693082415,
+    "max": 999,
+    "min": -999
+  },
+  "ep_regen_force_cur": {
+    "chName": 1116265339,
+    "chShortName": 1780153112,
+    "max": 9999,
+    "min": 0
+  },
+  "ep_regen_force_fix": {
+    "chName": 1608801905,
+    "chShortName": 1592700957,
+    "max": 999,
+    "min": -999
+  },
+  "ep_regen_force_p": {
+    "chName": 1152913523,
+    "chShortName": 2111096779,
+    "max": 999,
+    "min": -1
+  },
+  "ep_regen_force_v": {
+    "chName": 1912525735,
+    "chShortName": 2138066055,
+    "max": 9999,
+    "min": 0
+  },
+  "ep_regen_p": {
+    "chName": 2021517179,
+    "chShortName": 2019308168,
+    "max": 999,
+    "min": -1
+  },
+  "ep_regen_v": {
+    "chName": 1393790768,
+    "chShortName": 1849507627,
+    "max": 9999,
+    "min": 0
+  },
+  "ep_scale": {
+    "chName": 1903109305,
+    "chShortName": 1845932678,
+    "max": 999999,
+    "min": 0
+  },
+  "ep_temp_cur": {
+    "chName": 1702663570,
+    "chShortName": 1951555685,
+    "max": 999999,
+    "min": 0
+  },
+  "ep_temp_max": {
+    "chName": 1158140896,
+    "chShortName": 1214106855,
+    "max": 999999,
+    "min": 0
+  },
+  "explore_range": {
+    "chName": 1970135475,
+    "chShortName": 1372453475,
+    "max": 999999,
+    "min": 0
+  },
+  "fall_dmg_add_ratio": {
+    "chName": 1701889185,
+    "chShortName": 1569497742,
+    "max": 999999,
+    "min": 0
+  },
+  "fallen_hp_decay_ratio": {
+    "chName": 1641722438,
+    "chShortName": 1490475345,
+    "max": 999,
+    "min": -1
+  },
+  "final_taken_dmg_dec_rate_v": {
+    "chName": 1985608788,
+    "chShortName": 2095280396,
+    "max": 1,
+    "min": -9
+  },
+  "final_taken_dmg_inc_rate_v": {
+    "chName": 2133661914,
+    "chShortName": 1718901435,
+    "max": 9,
+    "min": -1
+  },
+  "hatch_slot_extra_count": {
+    "chName": 1191351414,
+    "chShortName": 1150865650,
+    "max": 999999,
+    "min": 0
+  },
+  "heal_add_ratio": {
+    "chName": 1603305237,
+    "chShortName": 1742151830,
+    "max": 1,
+    "min": -1
+  },
+  "heal_skill_cd_dec_rate_v": {
+    "chName": 1293049519,
+    "chShortName": 1605011774,
+    "max": 0.5,
+    "min": 0
+  },
+  "hit_ratio_v": {
+    "chName": 1491705736,
+    "chShortName": 2026635593,
+    "max": 9,
+    "min": -0.95
+  },
+  "hp_cur": {
+    "chName": 1916892803,
+    "chShortName": 1197931795,
+    "max": 999999999,
+    "min": 0
+  },
+  "hp_force_set": {
+    "chName": 1788799958,
+    "chShortName": 1401342119,
+    "max": 999999,
+    "min": 0
+  },
+  "hp_inc_rate_v": {
+    "chName": 1959772102,
+    "chShortName": 1299698576,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "hp_max_conv": {
+    "chName": 1586002351,
+    "chShortName": 1277044691,
+    "max": 999999999,
+    "min": 0
+  },
+  "hp_max_cur": {
+    "chName": 1903207750,
+    "chShortName": 1971988639,
+    "max": 999999999,
+    "min": 0
+  },
+  "hp_max_fix": {
+    "chName": 1948773614,
+    "chShortName": 1277549950,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "hp_max_p": {
+    "chName": 2071757421,
+    "chShortName": 1726528561,
+    "max": 999,
+    "min": -1
+  },
+  "hp_max_v": {
+    "chName": 1810837410,
+    "chShortName": 1311349451,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "hp_regen_p": {
+    "chName": 2099634035,
+    "chShortName": 1996978206,
+    "max": 999,
+    "min": -1
+  },
+  "hp_regen_v": {
+    "chName": 2100562476,
+    "chShortName": 1432544792,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "hp_scale": {
+    "chName": 1411316642,
+    "chShortName": 1625941475,
+    "max": 999999,
+    "min": 0
+  },
+  "hp_temp_cur": {
+    "chName": 2138284172,
+    "chShortName": 1741113469,
+    "max": 999999,
+    "min": 0
+  },
+  "hp_temp_max": {
+    "chName": 1735654079,
+    "chShortName": 1494480488,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_addition_dmg": {
+    "chName": 1924136392,
+    "chShortName": 2002833442,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_bp_add_ratio": {
+    "chName": 1878438122,
+    "chShortName": 1301689997,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_crit_dmg_v": {
+    "chName": 1459463578,
+    "chShortName": 1112313939,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_crit_rate_v": {
+    "chName": 1959704651,
+    "chShortName": 1730562544,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_def_dec_p": {
+    "chName": 1609748696,
+    "chShortName": 1129463523,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_def_dec_v": {
+    "chName": 1807132622,
+    "chShortName": 1930873171,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_def_to_fix_dmg_ratio": {
+    "chName": 1695963009,
+    "chShortName": 2094374866,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_dmg_ep_rate_v": {
+    "chName": 1074292970,
+    "chShortName": 1282332548,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_dmg_fix": {
+    "chName": 1670382374,
+    "chShortName": 2101032041,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_dmg_hp_by_cur_hp_rate": {
+    "chName": 1372370060,
+    "chShortName": 2108691703,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_dmg_hp_by_shield_ratio": {
+    "chName": 1132119401,
+    "chShortName": 1740594790,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_dmg_hp_max_p": {
+    "chName": 1451698287,
+    "chShortName": 1342423777,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_dmg_rate_v": {
+    "chName": 1123893507,
+    "chShortName": 1238062598,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_dmg_v": {
+    "chName": 1662711681,
+    "chShortName": 2117722428,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_mag_def_to_fix_dmg_ratio": {
+    "chName": 1896714783,
+    "chShortName": 1130704367,
+    "max": 999999,
+    "min": 0
+  },
+  "instant_over_crit_rate_to_crit_dmg": {
+    "chName": 1315098260,
+    "chShortName": 1931829696,
+    "max": 999999,
+    "min": 0
+  },
+  "kill_threshold_ratio": {
+    "chName": 2041552726,
+    "chShortName": 1420986589,
+    "max": 999999,
+    "min": 0
+  },
+  "link_heal_ratio": {
+    "chName": 1765193632,
+    "chShortName": 1406966803,
+    "max": 999999,
+    "min": 0
+  },
+  "mag_def_to_fix_dec_dmg_ratio": {
+    "chName": 1233958572,
+    "chShortName": 1193522325,
+    "max": 999999,
+    "min": 0
+  },
+  "max_capture_level": {
+    "chName": 1139013843,
+    "chShortName": 1292995576,
+    "max": 999999,
+    "min": 0
+  },
+  "max_control_level": {
+    "chName": 1387121750,
+    "chShortName": 1436569912,
+    "max": 999999,
+    "min": 0
+  },
+  "max_skill_catch_level": {
+    "chName": 1737102525,
+    "chShortName": 1537928306,
+    "max": 999999,
+    "min": 0
+  },
+  "max_skill_master_level": {
+    "chName": 1873794564,
+    "chShortName": 1462608076,
+    "max": 999999,
+    "min": 0
+  },
+  "miss_rate_v": {
+    "chName": 1143714382,
+    "chShortName": 1088660905,
+    "max": 1,
+    "min": 0
+  },
+  "miss_ratio_v": {
+    "chName": 1622036361,
+    "chShortName": 1599219285,
+    "max": 999999,
+    "min": 0
+  },
+  "normal_attack_bp_add_ratio": {
+    "chName": 2112314389,
+    "chShortName": 1749402721,
+    "max": 9,
+    "min": -1
+  },
+  "normal_attack_break_dmg_add_ratio": {
+    "chName": 1354975770,
+    "chShortName": 2123168487,
+    "max": 9,
+    "min": -1
+  },
+  "normal_attack_break_dmg_dec_ratio": {
+    "chName": 1776195547,
+    "chShortName": 1262497886,
+    "max": 1,
+    "min": -9
+  },
+  "normal_attack_crit_dec_rate_v": {
+    "chName": 1141105526,
+    "chShortName": 1128229535,
+    "max": 999999,
+    "min": 0
+  },
+  "normal_attack_crit_dmg_dec_rate_v": {
+    "chName": 1827323660,
+    "chShortName": 1989517585,
+    "max": 999999,
+    "min": 0
+  },
+  "normal_attack_crit_dmg_inc_rate_v": {
+    "chName": 1665794949,
+    "chShortName": 1150282340,
+    "max": 2,
+    "min": -9
+  },
+  "normal_attack_crit_inc_rate_v": {
+    "chName": 1734166582,
+    "chShortName": 1099888490,
+    "max": 1,
+    "min": -9
+  },
+  "normal_attack_dmg_break_add_ratio": {
+    "chName": 1410963949,
+    "chShortName": 2135868078,
+    "max": 999999,
+    "min": 0
+  },
+  "normal_attack_dmg_break_dec_ratio": {
+    "chName": 1228902924,
+    "chShortName": 1740783096,
+    "max": 999999,
+    "min": 0
+  },
+  "normal_attack_speed_add_ratio": {
+    "chName": 1187376369,
+    "chShortName": 1970064450,
+    "max": 9,
+    "min": -0.95
+  },
+  "nourish_max_v": {
+    "chName": 2008780118,
+    "chShortName": 1196511682,
+    "max": 999999,
+    "min": 0
+  },
+  "one_special_taken_dmg_dec_rate_v": {
+    "chName": 1202297517,
+    "chShortName": 1902542041,
+    "max": 1,
+    "min": -99
+  },
+  "one_special_taken_dmg_inc_rate_v": {
+    "chName": 1446070303,
+    "chShortName": 1389404531,
+    "max": 99,
+    "min": -1
+  },
+  "open_call_friend": {
+    "chName": 2059876094,
+    "chShortName": 1649322681,
+    "max": 999999,
+    "min": 0
+  },
+  "open_go_multi_mode": {
+    "chName": 1552383151,
+    "chShortName": 1880386369,
+    "max": 999999,
+    "min": 0
+  },
+  "passive_energy_cur": {
+    "chName": 1277826767,
+    "chShortName": 1558275866,
+    "max": 999999,
+    "min": 0
+  },
+  "passive_energy_max": {
+    "chName": 1184093521,
+    "chShortName": 1549455267,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_ball_action_speed_rate": {
+    "chName": 1486182851,
+    "chShortName": 1679459144,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_ball_slot_extra_count": {
+    "chName": 1871066259,
+    "chShortName": 1582736670,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_box_extra_count": {
+    "chName": 1781139510,
+    "chShortName": 1106633193,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_exp_add_ratio": {
+    "chName": 1381409222,
+    "chShortName": 1898469646,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_individual_point_atk": {
+    "chName": 1510435493,
+    "chShortName": 1421926712,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_individual_point_bp_atk": {
+    "chName": 1383420801,
+    "chShortName": 1230592515,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_individual_point_def": {
+    "chName": 1090861875,
+    "chShortName": 1162627944,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_individual_point_def_mag": {
+    "chName": 1624691216,
+    "chShortName": 1230135012,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_individual_point_ep_regen_force": {
+    "chName": 1565920537,
+    "chShortName": 1554453786,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_individual_point_hp": {
+    "chName": 1263571507,
+    "chShortName": 1721887893,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_init_mood_add": {
+    "chName": 1841671541,
+    "chShortName": 1088467938,
+    "max": 999999,
+    "min": 0
+  },
+  "pet_switch_cd_reduce_ratio": {
+    "chName": 1159164998,
+    "chShortName": 1533899326,
+    "max": 999999,
+    "min": 0
+  },
+  "play_taken_dmg_dec_rate_v": {
+    "chName": 1783768309,
+    "chShortName": 1332317665,
+    "max": 1,
+    "min": -99
+  },
+  "play_taken_dmg_inc_rate_v": {
+    "chName": 1232558627,
+    "chShortName": 1918174575,
+    "max": 99,
+    "min": -1
+  },
+  "primary_convert_hst": {
+    "chName": 2096975301,
+    "chShortName": 1635856434,
+    "max": 999999,
+    "min": 0
+  },
+  "primary_convert_imp": {
+    "chName": 2032976413,
+    "chShortName": 1940296442,
+    "max": 999999,
+    "min": 0
+  },
+  "primary_convert_spi": {
+    "chName": 1295791624,
+    "chShortName": 1939625428,
+    "max": 999999,
+    "min": 0
+  },
+  "primary_convert_sta": {
+    "chName": 1449915182,
+    "chShortName": 1925439369,
+    "max": 999999,
+    "min": 0
+  },
+  "primary_convert_str": {
+    "chName": 1154331805,
+    "chShortName": 1211398974,
+    "max": 999999,
+    "min": 0
+  },
+  "primary_convert_vit": {
+    "chName": 1483947834,
+    "chShortName": 2029981565,
+    "max": 999999,
+    "min": 0
+  },
+  "puppet_element_resist_add_ratio": {
+    "chName": 1474659419,
+    "chShortName": 1926886251,
+    "max": 9,
+    "min": -0.25
+  },
+  "puppet_element_restraint_add_ratio": {
+    "chName": 1630227455,
+    "chShortName": 1542024295,
+    "max": 9,
+    "min": -0.25
+  },
+  "pvp_taken_dmg_dec_rate_v": {
+    "chName": 2015268069,
+    "chShortName": 1923540975,
+    "max": 1,
+    "min": -9
+  },
+  "pvp_taken_dmg_inc_rate_v": {
+    "chName": 2011344545,
+    "chShortName": 1606755930,
+    "max": 9,
+    "min": -1
+  },
+  "quality_ratio_fix": {
+    "chName": 1785435548,
+    "chShortName": 1147774237,
+    "max": 999999,
+    "min": 0
+  },
+  "rainbow_energy_ratio_fix": {
+    "chName": 2084761050,
+    "chShortName": 1326694598,
+    "max": 999999,
+    "min": 0
+  },
+  "recoverable_hp_max_ratio": {
+    "chName": 2023480287,
+    "chShortName": 1454825204,
+    "max": 999999,
+    "min": 0
+  },
+  "reduce_cur_tp_rate": {
+    "chName": 1460225969,
+    "chShortName": 1715362741,
+    "max": 999999,
+    "min": 0
+  },
+  "reduce_hatch_time": {
+    "chName": 1551098698,
+    "chShortName": 1657481784,
+    "max": 999999,
+    "min": 0
+  },
+  "reduce_shield_ratio": {
+    "chName": 1690423386,
+    "chShortName": 2018465356,
+    "max": 999999,
+    "min": 0
+  },
+  "reflect_dmg_by_max_hp_ratio": {
+    "chName": 1447098555,
+    "chShortName": 1696022264,
+    "max": 999999,
+    "min": 0
+  },
+  "rob_egg_atk": {
+    "chName": 1529769354,
+    "chShortName": 2032851904,
+    "max": 99999,
+    "min": 0
+  },
+  "rob_egg_bring_rate": {
+    "chName": 1840519461,
+    "chShortName": 1241607754,
+    "max": 999999,
+    "min": 0
+  },
+  "rob_egg_danger_add_v": {
+    "chName": 1163446433,
+    "chShortName": 1777593403,
+    "max": 999999,
+    "min": 0
+  },
+  "rob_egg_def": {
+    "chName": 1842408889,
+    "chShortName": 1599744484,
+    "max": 99999,
+    "min": 0
+  },
+  "rob_talent_taken_dmg_dec_rate_v": {
+    "chName": 1190640527,
+    "chShortName": 1837232178,
+    "max": 999999,
+    "min": 0
+  },
+  "rob_talent_taken_dmg_inc_rate_v": {
+    "chName": 2067583598,
+    "chShortName": 1313832940,
+    "max": 999999,
+    "min": 0
+  },
+  "rogue_coin_add_p": {
+    "chName": 1163480566,
+    "chShortName": 1837747681,
+    "max": 999999,
+    "min": 0
+  },
+  "rogue_coin_add_v": {
+    "chName": 1700930149,
+    "chShortName": 1581058133,
+    "max": 999999,
+    "min": 0
+  },
+  "rogue_coin_cost_reduce_p": {
+    "chName": 1857231292,
+    "chShortName": 1140322873,
+    "max": 999999,
+    "min": 0
+  },
+  "rogue_coin_cost_reduce_v": {
+    "chName": 1111976617,
+    "chShortName": 1225369403,
+    "max": 999999,
+    "min": 0
+  },
+  "rogue_ep_cost_ratio": {
+    "chName": 1801025524,
+    "chShortName": 1931388131,
+    "max": 1,
+    "min": -1
+  },
+  "runspeed_conv": {
+    "chName": 1698586181,
+    "chShortName": 1374479697,
+    "max": 999999,
+    "min": 0
+  },
+  "runspeed_cur": {
+    "chName": 1739194313,
+    "chShortName": 2129995460,
+    "max": 254,
+    "min": 0
+  },
+  "runspeed_fix": {
+    "chName": 1988686660,
+    "chShortName": 1747276156,
+    "max": 999999,
+    "min": 0
+  },
+  "runspeed_p": {
+    "chName": 1672591847,
+    "chShortName": 1704346162,
+    "max": 999999,
+    "min": 0
+  },
+  "share_dmg_ratio": {
+    "chName": 2134783294,
+    "chShortName": 1713816475,
+    "max": 999999,
+    "min": 0
+  },
+  "shield_add_ratio": {
+    "chName": 1445921332,
+    "chShortName": 1952501334,
+    "max": 999999,
+    "min": -0.95
+  },
+  "shield_dmg_inc_rate_v": {
+    "chName": 1153503209,
+    "chShortName": 1298632761,
+    "max": 9,
+    "min": -1
+  },
+  "shield_skill_cd_dec_rate_v": {
+    "chName": 1263221717,
+    "chShortName": 2056230437,
+    "max": 0.5,
+    "min": 0
+  },
+  "shield_taken_dmg_inc_rate_v": {
+    "chName": 1437251032,
+    "chShortName": 1451696241,
+    "max": 9,
+    "min": -1
+  },
+  "shining_ep_cost_inc_ratio": {
+    "chName": 1161694590,
+    "chShortName": 2062912435,
+    "max": 999999,
+    "min": 0
+  },
+  "shining_ep_dmg_inc_ratio": {
+    "chName": 2138603938,
+    "chShortName": 1388063723,
+    "max": 999999,
+    "min": 0
+  },
+  "shiny_ratio_fix": {
+    "chName": 1170193267,
+    "chShortName": 1276234439,
+    "max": 999999,
+    "min": 0
+  },
+  "shop_purchase_level": {
+    "chName": 1325493486,
+    "chShortName": 1785095290,
+    "max": 999999,
+    "min": 0
+  },
+  "sidewalkspeed_conv": {
+    "chName": 2142232658,
+    "chShortName": 2108237813,
+    "max": 999999,
+    "min": 0
+  },
+  "sidewalkspeed_cur": {
+    "chName": 1789413204,
+    "chShortName": 2094669634,
+    "max": 254,
+    "min": 0
+  },
+  "sidewalkspeed_fix": {
+    "chName": 1370059791,
+    "chShortName": 1742308810,
+    "max": 999999,
+    "min": 0
+  },
+  "sidewalkspeed_p": {
+    "chName": 1394881245,
+    "chShortName": 1315666116,
+    "max": 999999,
+    "min": 0
+  },
+  "skill_bp_add_ratio": {
+    "chName": 1995060668,
+    "chShortName": 2025209329,
+    "max": 9,
+    "min": -1
+  },
+  "skill_crit_dec_rate_v": {
+    "chName": 1966213003,
+    "chShortName": 1688588090,
+    "max": 999999,
+    "min": 0
+  },
+  "skill_crit_dmg_dec_rate_v": {
+    "chName": 1439652238,
+    "chShortName": 1380702798,
+    "max": 2,
+    "min": -9
+  },
+  "skill_crit_dmg_v": {
+    "chName": 1679024037,
+    "chShortName": 1881407757,
+    "max": 999999,
+    "min": 0
+  },
+  "skill_crit_inc_rate_v": {
+    "chName": 1779088765,
+    "chShortName": 1743060127,
+    "max": 1,
+    "min": -9
+  },
+  "skill_dmg_break_add_ratio": {
+    "chName": 1108531870,
+    "chShortName": 1459373901,
+    "max": 9,
+    "min": -1
+  },
+  "skill_dmg_break_dec_ratio": {
+    "chName": 1208455274,
+    "chShortName": 1671742292,
+    "max": 1,
+    "min": -9
+  },
+  "sp_cur": {
+    "chName": 1779354367,
+    "chShortName": 2142789677,
+    "max": 9999,
+    "min": 0
+  },
+  "sp_force_set": {
+    "chName": 1794269544,
+    "chShortName": 1807015036,
+    "max": 999999,
+    "min": 0
+  },
+  "sp_inc_rate_v": {
+    "chName": 1344130800,
+    "chShortName": 1936137162,
+    "max": 999,
+    "min": -1
+  },
+  "sp_max_conv": {
+    "chName": 2053455345,
+    "chShortName": 1627283265,
+    "max": 999999,
+    "min": 0
+  },
+  "sp_max_cur": {
+    "chName": 1171359916,
+    "chShortName": 1518146661,
+    "max": 9999,
+    "min": 0
+  },
+  "sp_max_fix": {
+    "chName": 2094312862,
+    "chShortName": 1403102238,
+    "max": 9999,
+    "min": -9999
+  },
+  "sp_max_p": {
+    "chName": 1945200419,
+    "chShortName": 1492629182,
+    "max": 9,
+    "min": -1
+  },
+  "sp_max_v": {
+    "chName": 1783860671,
+    "chShortName": 1808549737,
+    "max": 9999,
+    "min": -9999
+  },
+  "sp_regen_p": {
+    "chName": 1393427708,
+    "chShortName": 1820758544,
+    "max": 9,
+    "min": -1
+  },
+  "sp_regen_v": {
+    "chName": 1334435560,
+    "chShortName": 1465366256,
+    "max": 9999,
+    "min": -9999
+  },
+  "sp_scale": {
+    "chName": 1616266098,
+    "chShortName": 2127657088,
+    "max": 999999,
+    "min": 0
+  },
+  "sp_temp_cur": {
+    "chName": 1944923229,
+    "chShortName": 1193076451,
+    "max": 999999,
+    "min": 0
+  },
+  "sp_temp_max": {
+    "chName": 1098840618,
+    "chShortName": 1594855932,
+    "max": 999999,
+    "min": 0
+  },
+  "speed_ratio_crouch_v": {
+    "chName": 2121198840,
+    "chShortName": 2111630779,
+    "max": 1,
+    "min": -0.7
+  },
+  "speed_ratio_dash_v": {
+    "chName": 1405589106,
+    "chShortName": 1343088891,
+    "max": 1,
+    "min": -0.7
+  },
+  "speed_ratio_egg_mode_v": {
+    "chName": 1156603077,
+    "chShortName": 1890141382,
+    "max": 999999,
+    "min": -1
+  },
+  "speed_ratio_fallen_v": {
+    "chName": 1528880244,
+    "chShortName": 2105930685,
+    "max": 999999,
+    "min": 0
+  },
+  "speed_ratio_glide_v": {
+    "chName": 1417435910,
+    "chShortName": 1788508538,
+    "max": 999999,
+    "min": 0
+  },
+  "speed_ratio_load_adjustment_v": {
+    "chName": 1754184306,
+    "chShortName": 2049351649,
+    "max": 1,
+    "min": -0.9
+  },
+  "speed_ratio_run_v": {
+    "chName": 1335774564,
+    "chShortName": 1103515532,
+    "max": 1,
+    "min": -0.7
+  },
+  "speed_ratio_sprint_v": {
+    "chName": 1133526890,
+    "chShortName": 1724567348,
+    "max": 1,
+    "min": -0.7
+  },
+  "speed_ratio_standholdball_v": {
+    "chName": 1813425965,
+    "chShortName": 1434124092,
+    "max": 1,
+    "min": -0.7
+  },
+  "speed_ratio_swim_dash_v": {
+    "chName": 1411387544,
+    "chShortName": 2125221676,
+    "max": 3,
+    "min": -0.7
+  },
+  "speed_ratio_swim_fast_v": {
+    "chName": 1643409972,
+    "chShortName": 2064780199,
+    "max": 3,
+    "min": -0.7
+  },
+  "speed_ratio_swim_normal_v": {
+    "chName": 2119615467,
+    "chShortName": 1440449933,
+    "max": 1,
+    "min": -0.7
+  },
+  "speed_ratio_swim_v": {
+    "chName": 2087141195,
+    "chShortName": 1489079958,
+    "max": 3,
+    "min": -0.7
+  },
+  "speed_ratio_walk_v": {
+    "chName": 1746431195,
+    "chShortName": 1928552144,
+    "max": 1,
+    "min": -0.7
+  },
+  "stamina_cost_ratio_climb_v": {
+    "chName": 1391392309,
+    "chShortName": 1989961603,
+    "max": 9,
+    "min": -1
+  },
+  "stamina_cost_ratio_dash_v": {
+    "chName": 1400846138,
+    "chShortName": 1142038489,
+    "max": 9,
+    "min": -1
+  },
+  "stamina_cost_ratio_glide_v": {
+    "chName": 1330120374,
+    "chShortName": 1168675417,
+    "max": 9,
+    "min": -1
+  },
+  "stamina_cost_ratio_sprint_v": {
+    "chName": 1121632993,
+    "chShortName": 1548658168,
+    "max": 9,
+    "min": -1
+  },
+  "stamina_cost_ratio_v": {
+    "chName": 1294251758,
+    "chShortName": 1341871069,
+    "max": 9,
+    "min": -1
+  },
+  "stamina_cur": {
+    "chName": 1101324669,
+    "chShortName": 1209088837,
+    "max": 9999,
+    "min": 0
+  },
+  "walkspeed_fix": {
+    "chName": 1254595711,
+    "chShortName": 2124422141,
+    "max": 999999,
+    "min": 0
+  },
+  "walkspeed_p": {
+    "chName": 1086859226,
+    "chShortName": 1081393155,
+    "max": 999999,
+    "min": 0
+  },
+  "water_cur": {
+    "chName": 2130533214,
+    "chShortName": 1539458535,
+    "max": 999999,
+    "min": 0
+  },
+  "water_max": {
+    "chName": 1399240280,
+    "chShortName": 1660415798,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_normal_add_ratio": {
+    "chName": 1126993793,
+    "chShortName": 1262236680,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_normal_dec_ratio": {
+    "chName": 1911066845,
+    "chShortName": 1557316925,
+    "max": 9,
+    "min": -1
+  },
+  "walkspeed_cur": {
+    "chName": 2095857426,
+    "chShortName": 1542576263,
+    "max": 254,
+    "min": 0
+  },
+  "walkspeed_conv": {
+    "chName": 1712733223,
+    "chShortName": 1529852854,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_null_dec_ratio": {
+    "chName": 1357073830,
+    "chShortName": 1565756978,
+    "max": 999999,
+    "min": 0
+  },
+  "walkbackspeed_p": {
+    "chName": 1482515098,
+    "chShortName": 1333452233,
+    "max": 999999,
+    "min": 0
+  },
+  "walkbackspeed_fix": {
+    "chName": 1509718122,
+    "chShortName": 1819055356,
+    "max": 999999,
+    "min": 0
+  },
+  "walkbackspeed_cur": {
+    "chName": 1838374721,
+    "chShortName": 1920475042,
+    "max": 254,
+    "min": 0
+  },
+  "walkbackspeed_conv": {
+    "chName": 1093675584,
+    "chShortName": 1354919867,
+    "max": 999999,
+    "min": 0
+  },
+  "walk_strafe_speed": {
+    "chName": 1302462323,
+    "chShortName": 1919699683,
+    "max": 999999,
+    "min": 0
+  },
+  "vision_value_change_ratio_v": {
+    "chName": 2000562542,
+    "chShortName": 1837093466,
+    "max": 1000,
+    "min": -1
+  },
+  "use_quick_pet_switch": {
+    "chName": 1226639895,
+    "chShortName": 1427309758,
+    "max": 999999,
+    "min": 0
+  },
+  "ultimate_dmg_break_dec_ratio": {
+    "chName": 2105965228,
+    "chShortName": 1097858092,
+    "max": 1,
+    "min": -9
+  },
+  "ultimate_dmg_break_add_ratio": {
+    "chName": 1440339333,
+    "chShortName": 1446113125,
+    "max": 9,
+    "min": -1
+  },
+  "ultimate_crit_inc_rate_v": {
+    "chName": 1715481275,
+    "chShortName": 1780256658,
+    "max": 1,
+    "min": -9
+  },
+  "ultimate_crit_dmg_v": {
+    "chName": 1218241473,
+    "chShortName": 2114568565,
+    "max": 2,
+    "min": -9
+  },
+  "ultimate_crit_dec_rate_v": {
+    "chName": 1704475550,
+    "chShortName": 1924537233,
+    "max": 999999,
+    "min": 0
+  },
+  "ultimate_crit_dec_dmg_v": {
+    "chName": 1267431434,
+    "chShortName": 2060175406,
+    "max": 999999,
+    "min": 0
+  },
+  "ultimate_bp_add_ratio": {
+    "chName": 1196682808,
+    "chShortName": 1176769202,
+    "max": 9,
+    "min": -1
+  },
+  "turn_speed": {
+    "chName": 1236530248,
+    "chShortName": 1863455000,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_temp_max": {
+    "chName": 1854983781,
+    "chShortName": 1607197367,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_temp_cur": {
+    "chName": 1677650505,
+    "chShortName": 2095077405,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_scale": {
+    "chName": 1765874218,
+    "chShortName": 1579628983,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_regen_v": {
+    "chName": 1971587937,
+    "chShortName": 1274708832,
+    "max": 999999,
+    "min": -999999
+  },
+  "tp_regen_p": {
+    "chName": 1253094254,
+    "chShortName": 1349510213,
+    "max": 1000,
+    "min": -1000
+  },
+  "tp_reduce_wind_rate_v": {
+    "chName": 2054311742,
+    "chShortName": 1710945791,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_water_rate_v": {
+    "chName": 1406003247,
+    "chShortName": 1108799444,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_rock_rate_v": {
+    "chName": 1223503669,
+    "chShortName": 1103228793,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_psychic_rate_v": {
+    "chName": 2072236255,
+    "chShortName": 1102019340,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_poison_rate_v": {
+    "chName": 1290887886,
+    "chShortName": 1750653937,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_null_rate_v": {
+    "chName": 2027945901,
+    "chShortName": 1870578759,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_normal_rate_v": {
+    "chName": 1952117188,
+    "chShortName": 1679943787,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_mental_rate_v": {
+    "chName": 1836114728,
+    "chShortName": 1980719358,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_ice_rate_v": {
+    "chName": 1686047056,
+    "chShortName": 2006432458,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_holy_rate_v": {
+    "chName": 1893697750,
+    "chShortName": 1936949348,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_grass_rate_v": {
+    "chName": 2065878058,
+    "chShortName": 1715690728,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_fire_rate_v": {
+    "chName": 1750748552,
+    "chShortName": 1824243083,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_electric_rate_v": {
+    "chName": 2045335116,
+    "chShortName": 1196004042,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_reduce_dark_rate_v": {
+    "chName": 2059300750,
+    "chShortName": 1140439833,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_no_dmg_recover_cd": {
+    "chName": 2087799998,
+    "chShortName": 1459364905,
+    "max": 9999,
+    "min": -9999
+  },
+  "tp_max_v": {
+    "chName": 1426216620,
+    "chShortName": 2021655265,
+    "max": 999999,
+    "min": -999999
+  },
+  "tp_max_p": {
+    "chName": 2115878291,
+    "chShortName": 1272445673,
+    "max": 1000,
+    "min": -1000
+  },
+  "tp_max_fix": {
+    "chName": 2064725154,
+    "chShortName": 1662088843,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_max_cur": {
+    "chName": 1100534094,
+    "chShortName": 1545527723,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_max_conv": {
+    "chName": 1822414345,
+    "chShortName": 1407453089,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_inc_rate_v": {
+    "chName": 2026219952,
+    "chShortName": 1111285922,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_force_set": {
+    "chName": 1391216447,
+    "chShortName": 1366742672,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_cur": {
+    "chName": 2005094217,
+    "chShortName": 1437985562,
+    "max": 999999,
+    "min": 0
+  },
+  "tp_break_recover_cd": {
+    "chName": 1721604843,
+    "chShortName": 1461782239,
+    "max": 9999,
+    "min": -9999
+  },
+  "throw_init_ball_speed_ratio_v": {
+    "chName": 1831298620,
+    "chShortName": 1354240505,
+    "max": 1,
+    "min": 0
+  },
+  "throw_ball_collision_radius_ratio_v": {
+    "chName": 1315735746,
+    "chShortName": 1271307810,
+    "max": 9,
+    "min": 0
+  },
+  "taken_ultimate_dmg_inc_rate_v": {
+    "chName": 1391343712,
+    "chShortName": 1334297951,
+    "max": 9,
+    "min": -1
+  },
+  "taken_ultimate_dmg_dec_rate_v": {
+    "chName": 1239290020,
+    "chShortName": 2053498390,
+    "max": 1,
+    "min": -9
+  },
+  "taken_skill_dmg_inc_rate_v": {
+    "chName": 1205460587,
+    "chShortName": 2144927912,
+    "max": 9,
+    "min": -1
+  },
+  "taken_skill_dmg_dec_rate_v": {
+    "chName": 1102125713,
+    "chShortName": 1532841235,
+    "max": 1,
+    "min": -9
+  },
+  "taken_phy_dmg_inc_rate_v": {
+    "chName": 1078679623,
+    "chShortName": 1485964704,
+    "max": 9,
+    "min": -1
+  },
+  "taken_phy_dmg_dec_rate_v": {
+    "chName": 1865475929,
+    "chShortName": 1496422385,
+    "max": 1,
+    "min": -9
+  },
+  "taken_normal_attack_dmg_inc_rate_v": {
+    "chName": 1739788965,
+    "chShortName": 1970587137,
+    "max": 9,
+    "min": -1
+  },
+  "taken_normal_attack_dmg_dec_rate_v": {
+    "chName": 1563135709,
+    "chShortName": 1690993347,
+    "max": 1,
+    "min": -9
+  },
+  "taken_mag_dmg_inc_rate_v": {
+    "chName": 1214320589,
+    "chShortName": 1752426386,
+    "max": 9,
+    "min": -1
+  },
+  "taken_mag_dmg_dec_rate_v": {
+    "chName": 1758959740,
+    "chShortName": 1469297304,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_sleep_add_by_max_hp_ratio": {
+    "chName": 1893518934,
+    "chShortName": 1847371734,
+    "max": 999999,
+    "min": 0
+  },
+  "taken_dmg_lv60_inc_rate_v": {
+    "chName": 2015908286,
+    "chShortName": 1662741435,
+    "max": 9,
+    "min": -1
+  },
+  "taken_dmg_lv60_dec_rate_v": {
+    "chName": 1430976688,
+    "chShortName": 2066960525,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_lv50_inc_rate_v": {
+    "chName": 1680192629,
+    "chShortName": 1819309343,
+    "max": 9,
+    "min": -1
+  },
+  "taken_dmg_lv50_dec_rate_v": {
+    "chName": 1553400299,
+    "chShortName": 1453915084,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_lv40_inc_rate_v": {
+    "chName": 2086540680,
+    "chShortName": 1538896612,
+    "max": 9,
+    "min": -1
+  },
+  "taken_dmg_lv40_dec_rate_v": {
+    "chName": 1516797085,
+    "chShortName": 1675808770,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_lv30_inc_rate_v": {
+    "chName": 1300644151,
+    "chShortName": 1242218148,
+    "max": 9,
+    "min": -1
+  },
+  "taken_dmg_lv30_dec_rate_v": {
+    "chName": 1511459265,
+    "chShortName": 2049521919,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_lv20_inc_rate_v": {
+    "chName": 2008007515,
+    "chShortName": 1170185753,
+    "max": 9,
+    "min": -1
+  },
+  "taken_dmg_lv20_dec_rate_v": {
+    "chName": 1280986297,
+    "chShortName": 1821270083,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_lv10_inc_rate_v": {
+    "chName": 1144678156,
+    "chShortName": 1374938379,
+    "max": 9,
+    "min": -1
+  },
+  "taken_dmg_lv10_dec_rate_v": {
+    "chName": 1103878152,
+    "chShortName": 1084437156,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_inc_rate_v": {
+    "chName": 2067596834,
+    "chShortName": 2056627506,
+    "max": 9,
+    "min": -1
+  },
+  "taken_dmg_dec_rate_v": {
+    "chName": 1283194876,
+    "chShortName": 1954761363,
+    "max": 1,
+    "min": -9
+  },
+  "taken_dmg_dec_fix": {
+    "chName": 2068011536,
+    "chShortName": 1502868731,
+    "max": 999999,
+    "min": 0
+  },
+  "state_positive_super_armor": {
+    "chName": 1901286337,
+    "chShortName": 1342668377,
+    "max": 1,
+    "min": 0
+  },
+  "state_positive_invincible": {
+    "chName": 1087419810,
+    "chShortName": 1331682013,
+    "max": 1,
+    "min": 0
+  },
+  "state_negtive_faint": {
+    "chName": 1111654849,
+    "chShortName": 1866737126,
+    "max": 1,
+    "min": 0
+  },
+  "stamina_temp_max": {
+    "chName": 1260666255,
+    "chShortName": 1211558467,
+    "max": 999999,
+    "min": 0
+  },
+  "stamina_temp_cur": {
+    "chName": 1105215487,
+    "chShortName": 2123973509,
+    "max": 999999,
+    "min": 0
+  },
+  "stamina_scale": {
+    "chName": 1130418879,
+    "chShortName": 1845095289,
+    "max": 999999,
+    "min": 0
+  },
+  "break_crit_dmg_v": {
+    "chName": 2144429469,
+    "chShortName": 1771132224,
+    "max": 2,
+    "min": -9
+  },
+  "break_crit_inc_rate_v": {
+    "chName": 1504562816,
+    "chShortName": 1868293057,
+    "max": 2,
+    "min": -9
+  },
+  "break_recover_time": {
+    "chName": 1772709787,
+    "chShortName": 1619065595,
+    "max": 999999,
+    "min": 0
+  },
+  "break_time": {
+    "chName": 1150633162,
+    "chShortName": 1588207293,
+    "max": 999999,
+    "min": 0
+  },
+  "breeding_double_eggs_ratio": {
+    "chName": 1950653196,
+    "chShortName": 1569619649,
+    "max": 999999,
+    "min": 0
+  },
+  "camera_open": {
+    "chName": 1900714221,
+    "chShortName": 1205983598,
+    "max": 999999,
+    "min": 0
+  },
+  "can_fallen_self_help": {
+    "chName": 1129569504,
+    "chShortName": 1916877520,
+    "max": 999999,
+    "min": 0
+  },
+  "can_not_break": {
+    "chName": 1590571913,
+    "chShortName": 1834952074,
+    "max": 999999,
+    "min": 0
+  },
+  "caster_heal_add_ratio": {
+    "chName": 1811134519,
+    "chShortName": 1796679079,
+    "max": 9,
+    "min": -0.95
+  },
+  "catch_report_money_add_ratio": {
+    "chName": 1652557932,
+    "chShortName": 1933079660,
+    "max": 999999,
+    "min": 0
+  },
+  "catchball_recycle_level": {
+    "chName": 1513127385,
+    "chShortName": 1889193585,
+    "max": 999999,
+    "min": 0
+  },
+  "close_pet": {
+    "chName": 1637764466,
+    "chShortName": 1304008201,
+    "max": 999999,
+    "min": 0
+  },
+  "combat_ep_regen_conv": {
+    "chName": 1731663453,
+    "chShortName": 1465058885,
+    "max": 999999,
+    "min": 0
+  },
+  "combat_ep_regen_cur": {
+    "chName": 1701506354,
+    "chShortName": 1883246505,
+    "max": 9999,
+    "min": 0
+  },
+  "combat_ep_regen_fix": {
+    "chName": 2064958679,
+    "chShortName": 1744488313,
+    "max": 999,
+    "min": -999
+  },
+  "combat_ep_regen_p": {
+    "chName": 2044335946,
+    "chShortName": 1389764790,
+    "max": 1,
+    "min": -1
+  },
+  "combat_ep_regen_v": {
+    "chName": 1729254129,
+    "chShortName": 1897267826,
+    "max": 9999,
+    "min": 0
+  },
+  "common_def_penetration_rate_v": {
+    "chName": 1963791023,
+    "chShortName": 1933377126,
+    "max": 999999,
+    "min": 0
+  },
+  "common_skill_cd_dec_rate_v": {
+    "chName": 1489300868,
+    "chShortName": 2101714540,
+    "max": 0.5,
+    "min": 0
+  },
+  "counter_attack_time_add_v": {
+    "chName": 2004958673,
+    "chShortName": 1690489091,
+    "max": 999999,
+    "min": 0
+  },
+  "crit_dmg_rate_dec_v": {
+    "chName": 2055503060,
+    "chShortName": 1355335690,
+    "max": 2,
+    "min": -9
+  },
+  "crit_dmg_v": {
+    "chName": 1949135464,
+    "chShortName": 1515677104,
+    "max": 2,
+    "min": -9
+  },
+  "crit_rate_dec_v": {
+    "chName": 1551109557,
+    "chShortName": 1083427870,
+    "max": 1,
+    "min": -1
+  },
+  "crit_rate_v": {
+    "chName": 1936854259,
+    "chShortName": 2056966098,
+    "max": 1,
+    "min": -9
+  },
+  "dark_ratio_fix": {
+    "chName": 1262935177,
+    "chShortName": 1691322058,
+    "max": 999999,
+    "min": 0
+  },
+  "debuff_duration_cast_add_ratio": {
+    "chName": 1805279131,
+    "chShortName": 1311402971,
+    "max": 999999,
+    "min": 0
+  },
+  "debuff_duration_reduce_ratio": {
+    "chName": 1496094647,
+    "chShortName": 1948690160,
+    "max": 999999,
+    "min": 0
+  },
+  "def_conv": {
+    "chName": 1564356987,
+    "chShortName": 1543130208,
+    "max": 999999,
+    "min": 0
+  },
+  "def_cur": {
+    "chName": 1998200499,
+    "chShortName": 1548450117,
+    "max": 999999,
+    "min": -9999
+  },
+  "def_durability_dec_ratio": {
+    "chName": 1601158138,
+    "chShortName": 1985790577,
+    "max": 0.95,
+    "min": -1
+  },
+  "add_cur_hp_max_p": {
+    "chName": 1867331897,
+    "chShortName": 1793186945,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_sp_fix": {
+    "chName": 1111635672,
+    "chShortName": 1733402846,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_sp_v": {
+    "chName": 1418027745,
+    "chShortName": 1424622770,
+    "max": 999,
+    "min": -999
+  },
+  "add_cur_stamina_max_p": {
+    "chName": 2111145672,
+    "chShortName": 1328563430,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_stamina_v": {
+    "chName": 1962501186,
+    "chShortName": 1237466319,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_tp_fix": {
+    "chName": 2140978875,
+    "chShortName": 1538950941,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_tp_max_p": {
+    "chName": 1879175890,
+    "chShortName": 1395797357,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_tp_rate": {
+    "chName": 1706272416,
+    "chShortName": 1880898504,
+    "max": 999999,
+    "min": 0
+  },
+  "all_special_taken_dmg_dec_rate_v": {
+    "chName": 1869597991,
+    "chShortName": 1604088749,
+    "max": 1,
+    "min": -99
+  },
+  "all_special_taken_dmg_inc_rate_v": {
+    "chName": 1559341869,
+    "chShortName": 1316172231,
+    "max": 99,
+    "min": -1
+  },
+  "atk_conv": {
+    "chName": 2041490174,
+    "chShortName": 1704787136,
+    "max": 999999,
+    "min": 0
+  },
+  "atk_cur": {
+    "chName": 1933980621,
+    "chShortName": 2015219273,
+    "max": 999999,
+    "min": 0
+  },
+  "atk_durability_dec_ratio": {
+    "chName": 1325819154,
+    "chShortName": 1799274436,
+    "max": 0.95,
+    "min": -1
+  },
+  "atk_fix": {
+    "chName": 1740181637,
+    "chShortName": 1500663148,
+    "max": 999999,
+    "min": 0
+  },
+  "atk_mag_conv": {
+    "chName": 1861231007,
+    "chShortName": 1235709836,
+    "max": 999999,
+    "min": 0
+  },
+  "atk_mag_cur": {
+    "chName": 1515313418,
+    "chShortName": 1674384161,
+    "max": 999999,
+    "min": 0
+  },
+  "atk_mag_fix": {
+    "chName": 1355033150,
+    "chShortName": 2115990452,
+    "max": 999999,
+    "min": 0
+  },
+  "atk_mag_p": {
+    "chName": 2041074026,
+    "chShortName": 1819634076,
+    "max": 9,
+    "min": -1
+  },
+  "atk_mag_v": {
+    "chName": 1651317783,
+    "chShortName": 1968472168,
+    "max": 999999,
+    "min": 0
+  },
+  "atk_p": {
+    "chName": 1949663746,
+    "chShortName": 1907916018,
+    "max": 9,
+    "min": -1
+  },
+  "atk_v": {
+    "chName": 1741177177,
+    "chShortName": 1304520236,
+    "max": 999999,
+    "min": 0
+  },
+  "base_catch_ratio": {
+    "chName": 2035022049,
+    "chShortName": 1880348982,
+    "max": 999999,
+    "min": 0
+  },
+  "behav_cd_dodge": {
+    "chName": 2124163392,
+    "chShortName": 1451587760,
+    "max": 999999,
+    "min": 0
+  },
+  "born_scale_rate_v": {
+    "chName": 1563357756,
+    "chShortName": 1573787533,
+    "max": 2,
+    "min": -0.95
+  },
+  "bp_add_lv10_ratio": {
+    "chName": 1784529007,
+    "chShortName": 1941690805,
+    "max": 9,
+    "min": -1
+  },
+  "bp_add_lv20_ratio": {
+    "chName": 1243471105,
+    "chShortName": 1647316039,
+    "max": 9,
+    "min": -1
+  },
+  "bp_add_lv30_ratio": {
+    "chName": 1307200143,
+    "chShortName": 1950963440,
+    "max": 9,
+    "min": -1
+  },
+  "bp_add_lv40_ratio": {
+    "chName": 2079702784,
+    "chShortName": 1899688809,
+    "max": 9,
+    "min": -1
+  },
+  "bp_add_lv50_ratio": {
+    "chName": 1739100153,
+    "chShortName": 1180777315,
+    "max": 9,
+    "min": -1
+  },
+  "bp_add_lv60_ratio": {
+    "chName": 1906521397,
+    "chShortName": 1308396590,
+    "max": 9,
+    "min": -1
+  },
+  "bp_add_ratio": {
+    "chName": 1631729415,
+    "chShortName": 1706286121,
+    "max": 9,
+    "min": -1
+  },
+  "bp_atk_conv": {
+    "chName": 1896647752,
+    "chShortName": 1579623253,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_atk_cur": {
+    "chName": 1644301675,
+    "chShortName": 1077046906,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_atk_fix": {
+    "chName": 1307247369,
+    "chShortName": 1576788089,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "bp_atk_p": {
+    "chName": 1258433215,
+    "chShortName": 1290879707,
+    "max": 999,
+    "min": -1
+  },
+  "bp_atk_v": {
+    "chName": 1266928636,
+    "chShortName": 1716958443,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "bp_cur": {
+    "chName": 1623807742,
+    "chShortName": 1354706105,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_def_conv": {
+    "chName": 1510347154,
+    "chShortName": 1630389454,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_def_cur": {
+    "chName": 1540957670,
+    "chShortName": 1386720978,
+    "max": 9999,
+    "min": -9999
+  },
+  "bp_def_fix": {
+    "chName": 1706628976,
+    "chShortName": 1349252949,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "bp_def_p": {
+    "chName": 1344203610,
+    "chShortName": 1569073706,
+    "max": 999,
+    "min": -1
+  },
+  "bp_def_v": {
+    "chName": 2117942130,
+    "chShortName": 1861428750,
+    "max": 9999,
+    "min": -9999
+  },
+  "bp_level_up": {
+    "chName": 1204180375,
+    "chShortName": 1471395064,
+    "max": 999999,
+    "min": 0
+  },
+  "bp_max": {
+    "chName": 2054883104,
+    "chShortName": 1336948828,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_max_conv": {
+    "chName": 1331430111,
+    "chShortName": 1387423535,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_max_cur": {
+    "chName": 1935488785,
+    "chShortName": 1378663386,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_max_fix": {
+    "chName": 1804368132,
+    "chShortName": 2146658348,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_max_p": {
+    "chName": 1989693708,
+    "chShortName": 1515469889,
+    "max": 9,
+    "min": 0
+  },
+  "bp_max_v": {
+    "chName": 2050770971,
+    "chShortName": 1899182234,
+    "max": 999999999,
+    "min": 0
+  },
+  "bp_reduce_lv10_rate_v": {
+    "chName": 2096438308,
+    "chShortName": 1813480317,
+    "max": 1,
+    "min": -9
+  },
+  "bp_reduce_lv20_rate_v": {
+    "chName": 1668931078,
+    "chShortName": 1272699381,
+    "max": 1,
+    "min": -9
+  },
+  "bp_reduce_lv30_rate_v": {
+    "chName": 1755799939,
+    "chShortName": 1435705771,
+    "max": 1,
+    "min": -9
+  },
+  "bp_reduce_lv40_rate_v": {
+    "chName": 1537755969,
+    "chShortName": 2128057081,
+    "max": 1,
+    "min": -9
+  },
+  "bp_reduce_lv50_rate_v": {
+    "chName": 1519569376,
+    "chShortName": 1226214600,
+    "max": 1,
+    "min": -9
+  },
+  "bp_reduce_lv60_rate_v": {
+    "chName": 1138825437,
+    "chShortName": 1569154552,
+    "max": 1,
+    "min": -9
+  },
+  "bp_reduce_rate_v": {
+    "chName": 1123556194,
+    "chShortName": 2112958262,
+    "max": 1,
+    "min": -9
+  },
+  "break_base_dmg_ratio": {
+    "chName": 1800312357,
+    "chShortName": 2102725466,
+    "max": 999999,
+    "min": 0
+  },
+  "stamina_regen_v": {
+    "chName": 1801309144,
+    "chShortName": 1078916784,
+    "max": 9999,
+    "min": -9999
+  },
+  "stamina_regen_p": {
+    "chName": 1512736464,
+    "chShortName": 1908030703,
+    "max": 999,
+    "min": -999
+  },
+  "stamina_regen_cur": {
+    "chName": 1860119364,
+    "chShortName": 1793871304,
+    "max": 9999,
+    "min": -9999
+  },
+  "stamina_p_regen_v": {
+    "chName": 1501911249,
+    "chShortName": 1999544887,
+    "max": 1,
+    "min": -1
+  },
+  "stamina_p_regen_cur": {
+    "chName": 1300608365,
+    "chShortName": 1868859548,
+    "max": 1,
+    "min": -1
+  },
+  "species_atk_v": {
+    "chName": 1162408777,
+    "chShortName": 1476715456,
+    "max": 999999,
+    "min": 0
+  },
+  "species_bp_atk_v": {
+    "chName": 1757342401,
+    "chShortName": 1333056769,
+    "max": 999999,
+    "min": 0
+  },
+  "species_def_mag_v": {
+    "chName": 1608754928,
+    "chShortName": 1917784239,
+    "max": 999999,
+    "min": 0
+  },
+  "species_def_v": {
+    "chName": 1924298457,
+    "chShortName": 1578413870,
+    "max": 999999,
+    "min": 0
+  },
+  "species_ep_regen_force_v": {
+    "chName": 1826530424,
+    "chShortName": 1617459483,
+    "max": 999999,
+    "min": 0
+  },
+  "species_hp_max_v": {
+    "chName": 2061029862,
+    "chShortName": 1704422954,
+    "max": 999999,
+    "min": 0
+  },
+  "stamina_max_v": {
+    "chName": 1850995960,
+    "chShortName": 1712301658,
+    "max": 9999,
+    "min": -9999
+  },
+  "stamina_max_p": {
+    "chName": 1765992569,
+    "chShortName": 1851736656,
+    "max": 999,
+    "min": -999
+  },
+  "stamina_max_fix": {
+    "chName": 1224598363,
+    "chShortName": 1863820740,
+    "max": 999999,
+    "min": 0
+  },
+  "stamina_max_cur": {
+    "chName": 1499991755,
+    "chShortName": 1819623408,
+    "max": 9999,
+    "min": 0
+  },
+  "stamina_max_conv": {
+    "chName": 1583628792,
+    "chShortName": 1871852296,
+    "max": 999999,
+    "min": 0
+  },
+  "stamina_inc_rate_v": {
+    "chName": 1463546076,
+    "chShortName": 1505825698,
+    "max": 999999,
+    "min": 0
+  },
+  "stamina_force_set": {
+    "chName": 1952308531,
+    "chShortName": 1564556241,
+    "max": 999999,
+    "min": 0
+  },
+  "sidewalkspeed_v": {
+    "chName": 1081535043,
+    "chShortName": 1919665565,
+    "max": 254,
+    "min": 0
+  },
+  "runspeed_v": {
+    "chName": 1377982446,
+    "chShortName": 1432669223,
+    "max": 254,
+    "min": 0
+  },
+  "walkbackspeed_v": {
+    "chName": 2055605781,
+    "chShortName": 1113073958,
+    "max": 254,
+    "min": 0
+  },
+  "dmg_null_add_ratio": {
+    "chName": 1750448504,
+    "chShortName": 1470391422,
+    "max": 999999,
+    "min": 0
+  },
+  "walkspeed_v": {
+    "chName": 2059509379,
+    "chShortName": 2137805118,
+    "max": 254,
+    "min": 0
+  },
+  "weight": {
+    "chName": 2083887429,
+    "chShortName": 1134865431,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_mental_dec_ratio": {
+    "chName": 2009913249,
+    "chShortName": 1608883062,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_mental_add_ratio": {
+    "chName": 1329156026,
+    "chShortName": 1551186605,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_ice_dec_ratio": {
+    "chName": 1815753514,
+    "chShortName": 1966739923,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_ice_add_ratio": {
+    "chName": 1851145087,
+    "chShortName": 1844458805,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_holy_dec_ratio": {
+    "chName": 1426571529,
+    "chShortName": 1950160895,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_holy_add_ratio": {
+    "chName": 1983192475,
+    "chShortName": 1738432748,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_grass_dec_ratio": {
+    "chName": 1378687911,
+    "chShortName": 1835998606,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_grass_add_ratio": {
+    "chName": 1992338440,
+    "chShortName": 1116090687,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_fire_dec_ratio": {
+    "chName": 1114196246,
+    "chShortName": 1284737578,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_fire_add_ratio": {
+    "chName": 1438079774,
+    "chShortName": 1705834465,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_elite_add_ratio": {
+    "chName": 1605949490,
+    "chShortName": 2004980928,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_electric_dec_ratio": {
+    "chName": 1639679599,
+    "chShortName": 1412744834,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_electric_add_ratio": {
+    "chName": 1850801946,
+    "chShortName": 1775760473,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_dark_dec_ratio": {
+    "chName": 1508195082,
+    "chShortName": 1639987526,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_dark_add_ratio": {
+    "chName": 1258800621,
+    "chShortName": 1721457411,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_break_dec_ratio": {
+    "chName": 1171779668,
+    "chShortName": 1875629825,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_break_add_ratio": {
+    "chName": 1632341460,
+    "chShortName": 1786852155,
+    "max": 9,
+    "min": -1
+  },
+  "def_v": {
+    "chName": 1600255459,
+    "chShortName": 1794368851,
+    "max": 999999,
+    "min": -9999
+  },
+  "def_to_fix_dec_dmg_ratio": {
+    "chName": 1554078567,
+    "chShortName": 1974659819,
+    "max": 999999,
+    "min": 0
+  },
+  "def_p": {
+    "chName": 1113524957,
+    "chShortName": 1365226487,
+    "max": 9,
+    "min": -1
+  },
+  "def_mag_v": {
+    "chName": 1575335396,
+    "chShortName": 1751484126,
+    "max": 999999,
+    "min": -9999
+  },
+  "def_mag_p": {
+    "chName": 1849519648,
+    "chShortName": 1615769623,
+    "max": 9,
+    "min": -1
+  },
+  "def_mag_fix": {
+    "chName": 1948335732,
+    "chShortName": 1798090638,
+    "max": 999999,
+    "min": -9999
+  },
+  "def_mag_cur": {
+    "chName": 1750932377,
+    "chShortName": 1942368198,
+    "max": 999999,
+    "min": -9999
+  },
+  "def_mag_conv": {
+    "chName": 1460688253,
+    "chShortName": 1276159464,
+    "max": 999999,
+    "min": 0
+  },
+  "def_fix": {
+    "chName": 2134928326,
+    "chShortName": 1729037124,
+    "max": 999999,
+    "min": -9999
+  },
+  "add_cur_bp_fix": {
+    "chName": 2063645921,
+    "chShortName": 1871375229,
+    "max": 999999999,
+    "min": -999999999
+  },
+  "add_cur_bp_max_p": {
+    "chName": 1759241624,
+    "chShortName": 1712428364,
+    "max": 1,
+    "min": -1
+  },
+  "add_cur_ep_fix": {
+    "chName": 2135835912,
+    "chShortName": 1691264015,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_ep_loss_p": {
+    "chName": 1319983071,
+    "chShortName": 1263821322,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_ep_max_p": {
+    "chName": 1975483014,
+    "chShortName": 1870580571,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_ep_rate": {
+    "chName": 1463951432,
+    "chShortName": 1242756817,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_hp_by_dmg": {
+    "chName": 1785098780,
+    "chShortName": 1774578845,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_hp_by_dmg_ratio_v": {
+    "chName": 1313080622,
+    "chShortName": 1220972284,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_hp_by_receive_dmg": {
+    "chName": 1700702619,
+    "chShortName": 1588439423,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_hp_fix": {
+    "chName": 1758432078,
+    "chShortName": 1665444146,
+    "max": 999999,
+    "min": 0
+  },
+  "add_cur_hp_loss_p": {
+    "chName": 1568108442,
+    "chShortName": 1456622336,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_poison_add_ratio": {
+    "chName": 1793248923,
+    "chShortName": 1754242566,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_poison_dec_ratio": {
+    "chName": 1244663842,
+    "chShortName": 1469015310,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_psychic_add_ratio": {
+    "chName": 1334064470,
+    "chShortName": 1387560511,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_psychic_dec_ratio": {
+    "chName": 1650423654,
+    "chShortName": 1875484979,
+    "max": 999999,
+    "min": 0
+  },
+  "dmg_rock_add_ratio": {
+    "chName": 1871421073,
+    "chShortName": 2128527927,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_rock_dec_ratio": {
+    "chName": 1795270588,
+    "chShortName": 1296344784,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_water_add_ratio": {
+    "chName": 1758757094,
+    "chShortName": 1848451149,
+    "max": 9,
+    "min": -1
+  },
+  "dmg_water_dec_ratio": {
+    "chName": 1658549279,
+    "chShortName": 1562150784,
+    "max": 1,
+    "min": -9
+  },
+  "dmg_wind_add_ratio": {
+    "chName": 1460016997,
+    "chShortName": 2096020319,
+    "max": 9,
+    "min": -1
+  },
+  "level": {
+    "chName": 2045254315,
+    "chShortName": 1142202644,
+    "max": 999999,
+    "min": 0
+  }
+}

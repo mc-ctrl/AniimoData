@@ -1,0 +1,83 @@
+{
+  "duration": 5,
+  "BPName": "ability_12030900",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10203_Skill_Light_01",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "31": {
+      "UID": "7a6863a7-678d-4d14-aa2a-c363b88c36aa",
+      "target": "PROJECTILE",
+      "name": "getTargetPosition",
+      "NodeID": 31
+    },
+    "33": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 120307,
+      "name": "createEntity",
+      "UID": "a6f7600b-bc96-4811-beac-2cef23bb768e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 33,
+      "pos": {
+        "center": {
+          "UID": "7a6863a7-678d-4d14-aa2a-c363b88c36aa",
+          "target": "PROJECTILE",
+          "name": "getTargetPosition",
+          "NodeID": 31
+        },
+        "offset": -0.5,
+        "NodeID": 32,
+        "UID": "a030be31-b4b6-42a4-92b0-41f79220a4d2",
+        "name": "getInvDirOffsetPos",
+        "ignoreYAxis": true,
+        "point": {
+          "key": "12030900",
+          "name": "getCacheVal",
+          "UID": "46e2018a-cae5-499c-b76b-fa47f4ee829a",
+          "target": "OWNER",
+          "NodeID": 34
+        }
+      }
+    },
+    "15": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "dee32fea-da7a-45b4-ae9a-fe20bfcf5f00",
+      "target": "OWNER",
+      "NodeID": 15
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    33,
+    15
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "relation": 2,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.05,
+  "hasAttackDataInOnProjectileHit": false,
+  "acceleration": 0
+}

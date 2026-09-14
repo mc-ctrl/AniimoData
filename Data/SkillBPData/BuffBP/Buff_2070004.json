@@ -1,0 +1,58 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2070004",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "8104aa1a-b77b-494a-acf8-60be5fba3f7d",
+      "name": "updateBuffSeriesCntAttribute",
+      "buffSeries": 7,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4,
+      "UID": "743bed52-c8cd-4ce8-9550-b871276d39d8",
+      "name": "registerBuffSeriesCntChangeEvent",
+      "buffSeries": 7
+    },
+    "9": {
+      "calcInfo": {
+        "bp_atk_v": 0.5
+      },
+      "NodeID": 9,
+      "UID": "d3299860-327e-49df-899f-58123ec89ba8",
+      "name": "addBuffSeriesCntAttribute",
+      "buffSeries": 7
+    },
+    "6": {
+      "UID": "d0f10fb4-6fd8-4409-8567-a8f6fe40bda4",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        9,
+        4
+      ],
+      "NodeID": 6
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "712bb138-9666-443d-9b41-2fb0c890148a",
+      "NodeID": 7
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

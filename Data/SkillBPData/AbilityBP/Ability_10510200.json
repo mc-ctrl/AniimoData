@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_10510200",
+  "NodeID": 1,
+  "UID": "3dc21a82-ae47-4d30-ac0b-7a6a0a713c76",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10510200001,
+      "name": "setCombatActionTimeline",
+      "UID": "22bc2f69-b197-4fca-90ad-3542148a926d",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Air_Strike",
+    "Skill_Air_Strike_02"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10051_Skill_FlyStrike_01",
+    "Eff_Parmon_10051_Skill_FlyStrike_04",
+    "Eff_Parmon_10051_Skill_FlyStrike_03",
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10051_Skill_FlyStrike_04_Heavy"
+  ],
+  "searchRelation": 2,
+  "name": "小碳犬空翔击",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 5,
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 5,
+  "abilityParamId": 10100030
+}

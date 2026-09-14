@@ -1,0 +1,37 @@
+[
+  {
+    "emailId": 28,
+    "rankReward": [
+      5100104,
+      5100103,
+      5100102,
+      5100101
+    ],
+    "rankSet": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        11,
+        30
+      ],
+      [
+        31,
+        100
+      ]
+    ],
+    "settlePeriod": 1,
+    "settleType": 1,
+    "specifiedTime": [
+      10,
+      0,
+      0
+    ],
+    "temporarySettle": 1
+  }
+]

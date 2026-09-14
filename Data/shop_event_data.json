@@ -1,0 +1,219 @@
+{
+  "27": [
+    {
+      "id": 7,
+      "sound": "SFX_UI_Ark_EnterTheStore",
+      "action_start": "Behav_SleepEnd"
+    },
+    {
+      "id": 8,
+      "sound": "SFX_UI_Ark_Parmon_10143_Sleep",
+      "value": 30,
+      "object": 1,
+      "action_end": "Behav_SleepEnd",
+      "action_loop": "Behav_SleepLoop",
+      "action_start": "Behav_SleepStart"
+    },
+    {
+      "id": 9,
+      "sound": "SFX_UI_Ark_Parmon_10143_Happy",
+      "object": 1,
+      "action_end": "Behav_HappyEnd",
+      "action_loop": "Behav_HappyLoop",
+      "action_start": "Behav_HappyStart"
+    },
+    {
+      "id": 10,
+      "sound": "SFX_UI_Ark_EnterTheStore"
+    },
+    {
+      "id": 11,
+      "sound": "SFX_UI_Ark_Parmon_10143_Love",
+      "itemId": 160016,
+      "object": 1,
+      "action_start": "Behav_Love"
+    }
+  ],
+  "4": [
+    {
+      "id": 1,
+      "sound": "SFX_UI_Ark_EnterTheStore",
+      "object": 1,
+      "action_start": "StunEnd"
+    },
+    {
+      "id": 2,
+      "sound": "SFX_UI_Ark_Parmon_10024_Sleep",
+      "value": 30,
+      "object": 1,
+      "action_end": "Behav_DoubtEnd",
+      "action_loop": "Behav_DoubtLoop",
+      "action_start": "Behav_DoubtStart"
+    },
+    {
+      "id": 3,
+      "sound": "SFX_UI_Ark_Parmon_10024_Happy",
+      "object": 1,
+      "action_start": "Home_Play_Jump"
+    },
+    {
+      "id": 4,
+      "sound": "SFX_UI_Ark_EnterTheStore"
+    },
+    {
+      "id": 5,
+      "sound": "SFX_UI_Ark_Parmon_10024_Love",
+      "itemId": 220003,
+      "object": 1,
+      "action_start": "Behav_Love"
+    }
+  ],
+  "38": [
+    {
+      "id": 30,
+      "sound": "SFX_UI_Ark_EnterTheStore",
+      "action_start": "Behav_SleepEnd"
+    },
+    {
+      "id": 31,
+      "sound": "SFX_UI_Ark_Parmon_10261_Sleep",
+      "value": 30,
+      "object": 1,
+      "action_end": "Behav_DoubtEnd",
+      "action_loop": "Behav_DoubtLoop",
+      "action_start": "Behav_DoubtStart"
+    },
+    {
+      "id": 32,
+      "sound": "SFX_UI_Ark_Parmon_10261_Happy",
+      "object": 1,
+      "action_start": "Behav_LoveStart"
+    },
+    {
+      "id": 33,
+      "sound": "SFX_UI_Ark_EnterTheStore"
+    }
+  ],
+  "32": [
+    {
+      "id": 20,
+      "sound": "SFX_UI_Ark_EnterTheStore",
+      "action_start": "Behav_SleepEnd"
+    },
+    {
+      "id": 21,
+      "sound": "SFX_UI_Ark_Parmon_10011_Sleep",
+      "value": 30,
+      "object": 1,
+      "action_end": "Behav_SleepEnd",
+      "action_loop": "Behav_SleepLoop",
+      "action_start": "Behav_SleepStart"
+    },
+    {
+      "id": 22,
+      "sound": "SFX_UI_Ark_Parmon_10011_Happy",
+      "object": 1,
+      "action_end": "Behav_HappyEnd",
+      "action_loop": "Behav_HappyLoop",
+      "action_start": "Behav_HappyStart"
+    },
+    {
+      "id": 23,
+      "sound": "SFX_UI_Ark_EnterTheStore"
+    },
+    {
+      "id": 24,
+      "sound": "SFX_UI_Ark_Parmon_10011_Love",
+      "itemId": 310003,
+      "object": 1,
+      "action_start": "Behav_Love"
+    }
+  ],
+  "33": [
+    {
+      "id": 25,
+      "sound": "SFX_UI_Ark_EnterTheStore",
+      "action_start": "Mimicry_End"
+    },
+    {
+      "id": 26,
+      "sound": "SFX_UI_Ark_Parmon_10201_Sleep",
+      "value": 30,
+      "object": 1,
+      "action_end": "Behav_SleepEnd",
+      "action_loop": "Behav_SleepLoop",
+      "action_start": "Behav_SleepStart"
+    },
+    {
+      "id": 27,
+      "sound": "SFX_UI_Ark_Parmon_10201_Happy",
+      "object": 1,
+      "action_start": "Home_Play_Jump"
+    },
+    {
+      "id": 28,
+      "sound": "SFX_UI_Ark_EnterTheStore"
+    },
+    {
+      "id": 29,
+      "sound": "SFX_UI_Ark_Parmon_10201_Love",
+      "itemId": 330003,
+      "object": 1,
+      "action_start": "JumpBack"
+    }
+  ],
+  "28": [
+    {
+      "id": 12,
+      "sound": "SFX_UI_Ark_EnterTheStore",
+      "action_start": "Behav_SleepEnd"
+    },
+    {
+      "id": 13,
+      "value": 30,
+      "object": 1,
+      "action_end": "Behav_SleepEnd",
+      "action_loop": "Behav_SleepLoop",
+      "action_start": "Behav_SleepStart"
+    },
+    {
+      "id": 14,
+      "object": 1,
+      "action_end": "Behav_HappyEnd",
+      "action_loop": "Behav_HappyLoop",
+      "action_start": "Behav_HappyStart"
+    },
+    {
+      "id": 15,
+      "sound": "SFX_UI_Ark_EnterTheStore"
+    }
+  ],
+  "31": [
+    {
+      "id": 16,
+      "sound": "SFX_UI_Ark_EnterTheStore",
+      "action_start": "Skill_Fire_Field"
+    },
+    {
+      "id": 17,
+      "sound": "SFX_UI_Ark_Parmon_10053_Sleep",
+      "value": 30,
+      "object": 1,
+      "action_end": "Behav_SleepEnd",
+      "action_loop": "Behav_SleepLoop",
+      "action_start": "Behav_SleepStart"
+    },
+    {
+      "id": 18,
+      "sound": "SFX_UI_Ark_Parmon_10053_Happy",
+      "object": 1,
+      "action_end": "Behav_HappyEnd",
+      "action_loop": "Behav_HappyLoop",
+      "action_start": "Behav_HappyStart"
+    },
+    {
+      "id": 19,
+      "sound": "SFX_UI_Ark_EnterTheStore"
+    }
+  ]
+}

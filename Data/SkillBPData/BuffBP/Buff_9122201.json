@@ -1,0 +1,135 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9122201",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "df9617bd-ee14-4890-8c82-7df07a727313",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "453183d7-133b-45e3-8bf3-7e6263151296",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "14": {
+      "duration": 0.01,
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14,
+      "UID": "47c1f065-9c08-43b6-a491-0be22e965cda",
+      "name": "addTimer"
+    },
+    "10": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "3f7e7683-6985-479a-ba6b-8f57ba263058",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        14,
+        16
+      ],
+      "NodeID": 10
+    },
+    "16": {
+      "key": "nuzhua",
+      "name": "setCacheVal",
+      "UID": "2e63b018-7979-4402-b0a6-9d252407f17a",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 16
+    },
+    "8": {
+      "key": "nuzhua",
+      "name": "setCacheVal",
+      "UID": "392b4b28-3967-4eb3-8891-09af88361741",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "549d8233-1ade-49d0-8422-c4a7d297e88f",
+        "NodeID": 7,
+        "lValue": {
+          "key": "nuzhua",
+          "name": "getCacheVal",
+          "UID": "5daee575-1093-41d9-8382-7f3fcea95571",
+          "target": "OWNER",
+          "NodeID": 6
+        }
+      },
+      "NodeID": 8
+    },
+    "18": {
+      "buffId": 91222011,
+      "name": "hasBuff",
+      "UID": "de690126-b4c9-4ff5-80c0-1d574f5c245f",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "2": {
+      "UID": "b1baa881-bb6b-4ee3-a492-12d617d4df52",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 2
+    },
+    "11": {
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "1ac182b8-0058-45b5-a8f1-ef09a7ad98ae",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91222011,
+      "NodeID": 13,
+      "UID": "4f930e40-406d-4aa4-ac42-c0e959d50443",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "rValue": {
+        "key": "nuzhua",
+        "name": "getCacheVal",
+        "UID": "5daee575-1093-41d9-8382-7f3fcea95571",
+        "target": "OWNER",
+        "NodeID": 6
+      },
+      "name": "greater",
+      "UID": "55378b1f-9aa3-46ce-9f14-a0e9cc4816ea",
+      "NodeID": 12,
+      "lValue": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

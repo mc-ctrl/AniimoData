@@ -1,0 +1,355 @@
+{
+  "3005": {
+    "3": {
+      "gameUINpcAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_People_01.png"
+      ],
+      "levelRestriction": 50,
+      "playingTime": 1200,
+      "condition": [
+        91201
+      ],
+      "resultUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Back_01.png"
+      ],
+      "rewardList": [
+        5910999,
+        5910010,
+        5900221,
+        5900020
+      ],
+      "describe": 1409173596,
+      "serverLevel": 7,
+      "teamsNumber": 1231839681,
+      "sandBoxMonMan": 1,
+      "timetype": 1,
+      "trapDamageRatio": [
+        0.5
+      ],
+      "hasNovProt": 1,
+      "novProtRound": [
+        0,
+        0,
+        0
+      ],
+      "novRevealMapFog": 1,
+      "randomBuff": 0,
+      "EquipmentLevel": 1508315718,
+      "KeyList": [
+        5001101
+      ],
+      "MonsterBornBuff": [
+        6005011
+      ],
+      "NPCMinLevel": 50,
+      "ReduceRestraintBuff": 6005014,
+      "atkOrDef": 50,
+      "bossMonBuff": 6005033,
+      "bossMonMax": 1,
+      "dangerLevel": 0,
+      "dangerousRangeRadius": 20,
+      "elitOrBossBuff": 50,
+      "eliteMonBuff": [
+        6005031,
+        6005032
+      ],
+      "eliteMonMax": 1,
+      "name": 1364672514,
+      "gameUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_01.png"
+      ]
+    },
+    "4": {
+      "gameUINpcAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_People_01.png"
+      ],
+      "levelRestriction": 50,
+      "playingTime": 900,
+      "condition": [
+        91201
+      ],
+      "rank": [
+        2,
+        1
+      ],
+      "resultUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Back_01.png"
+      ],
+      "rewardList": [
+        5911201,
+        5910999,
+        5901325,
+        5900504
+      ],
+      "describe": 1386842264,
+      "serverLevel": 7,
+      "teamsNumber": 1163636544,
+      "sandBoxMonMan": 1,
+      "timetype": 1,
+      "trapDamageRatio": [
+        1
+      ],
+      "hasNovProt": 1,
+      "novProtRound": [
+        0,
+        0,
+        0
+      ],
+      "novRevealMapFog": 1,
+      "randomBuff": 10,
+      "EquipmentLevel": 1373479887,
+      "KeyList": [
+        5001102
+      ],
+      "MonsterBornBuff": [
+        6005012
+      ],
+      "NPCMinLevel": 50,
+      "ReduceRestraintBuff": 6005014,
+      "atkOrDef": 50,
+      "bossMonBuff": 6005036,
+      "bossMonMax": 1,
+      "dangerLevel": 1,
+      "dangerousRangeRadius": 20,
+      "elitOrBossBuff": 50,
+      "eliteMonBuff": [
+        6005034,
+        6005035
+      ],
+      "eliteMonMax": 2,
+      "name": 1340804511,
+      "gameUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_01.png"
+      ]
+    },
+    "5": {
+      "gameUINpcAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_People_01.png"
+      ],
+      "levelRestriction": 50,
+      "playingTime": 900,
+      "condition": [
+        91201
+      ],
+      "rank": [
+        3,
+        1
+      ],
+      "resultUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Back_01.png"
+      ],
+      "rewardList": [
+        5911201,
+        5911000,
+        5901301,
+        5900503
+      ],
+      "describe": 1114452038,
+      "serverLevel": 7,
+      "teamsNumber": 1442005481,
+      "sandBoxMonMan": 1,
+      "timetype": 1,
+      "trapDamageRatio": [
+        1.5
+      ],
+      "hasNovProt": 1,
+      "novProtRound": [
+        0,
+        0,
+        0
+      ],
+      "novRevealMapFog": 1,
+      "randomBuff": 10,
+      "EquipmentLevel": 1378500078,
+      "KeyList": [
+        5001103
+      ],
+      "MonsterBornBuff": [
+        6005013
+      ],
+      "NPCMinLevel": 55,
+      "ReduceRestraintBuff": 6005014,
+      "atkOrDef": 50,
+      "bossMonBuff": 6005039,
+      "bossMonMax": 1,
+      "dangerLevel": 2,
+      "dangerousRangeRadius": 20,
+      "elitOrBossBuff": 50,
+      "eliteMonBuff": [
+        6005037,
+        6005038
+      ],
+      "eliteMonMax": 4,
+      "name": 2073259223,
+      "gameUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_01.png"
+      ]
+    },
+    "6": {
+      "gameUINpcAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_People_02.png"
+      ],
+      "levelRestriction": 50,
+      "playingTime": 900,
+      "condition": [
+        91204
+      ],
+      "rank": [
+        4,
+        1
+      ],
+      "resultUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Back_02.png"
+      ],
+      "rewardList": [
+        5911201,
+        5911000,
+        5900509,
+        5900507
+      ],
+      "describe": 1540552821,
+      "serverLevel": 7,
+      "teamsNumber": 2041120110,
+      "sandBoxMonMan": 1,
+      "timetype": 1,
+      "trapDamageRatio": [
+        2
+      ],
+      "hasNovProt": 1,
+      "novProtRound": [
+        0,
+        0,
+        0
+      ],
+      "novRevealMapFog": 1,
+      "randomBuff": 10,
+      "EquipmentLevel": 1261488468,
+      "KeyList": [
+        5001103
+      ],
+      "MonsterBornBuff": [
+        6005029
+      ],
+      "NPCMinLevel": 55,
+      "ReduceRestraintBuff": 6005014,
+      "atkOrDef": 50,
+      "bossMonBuff": 6005046,
+      "bossMonMax": 1,
+      "dangerLevel": 2,
+      "dangerousRangeRadius": 20,
+      "elitOrBossBuff": 50,
+      "eliteMonBuff": [
+        6005044,
+        6005045
+      ],
+      "eliteMonMax": 5,
+      "name": 1545794407,
+      "gameUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvE_Go_02.png"
+      ]
+    }
+  },
+  "3004": {
+    "5": {
+      "gameUINpcAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvP_Go_People_01.png"
+      ],
+      "levelRestriction": 50,
+      "playingTime": 1200,
+      "condition": [
+        91202
+      ],
+      "rank": [
+        2,
+        1
+      ],
+      "resultUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvP_Back_01.png"
+      ],
+      "rewardList": [
+        5911300,
+        5911201,
+        5911000,
+        5900509
+      ],
+      "describe": 2142633442,
+      "serverLevel": 7,
+      "teamsNumber": 1322336434,
+      "timeRanges": {
+        "3": [
+          [
+            "18:00:00",
+            "24:00:00"
+          ]
+        ],
+        "4": [
+          [
+            "18:00:00",
+            "24:00:00"
+          ]
+        ],
+        "6": [
+          [
+            "18:00:00",
+            "24:00:00"
+          ]
+        ],
+        "5": [
+          [
+            "18:00:00",
+            "24:00:00"
+          ]
+        ],
+        "0": [
+          [
+            "18:00:00",
+            "24:00:00"
+          ]
+        ],
+        "1": [
+          [
+            "18:00:00",
+            "24:00:00"
+          ]
+        ],
+        "2": [
+          [
+            "18:00:00",
+            "24:00:00"
+          ]
+        ]
+      },
+      "timetype": 1,
+      "trapDamageRatio": [
+        1.5
+      ],
+      "sandBoxMonMan": 1,
+      "randomBuff": 10,
+      "name": 2058338949,
+      "EquipmentLevel": 1595329999,
+      "KeyList": [
+        5001101
+      ],
+      "MonsterBornBuff": [
+        6005012
+      ],
+      "NPCMinLevel": 60,
+      "ReduceRestraintBuff": 6005014,
+      "atkOrDef": 50,
+      "bossMonBuff": 6005039,
+      "bossMonMax": 1,
+      "dangerLevel": 2,
+      "dangerousRangeRadius": 20,
+      "elitOrBossBuff": 50,
+      "eliteMonBuff": [
+        6005037,
+        6005038
+      ],
+      "eliteMonMax": 5,
+      "enemyLevel": 60,
+      "gameUIAsset": [
+        "$UI_GameMod_GrabEggs_Main_Bg_PvP_Go_01.png"
+      ]
+    }
+  }
+}

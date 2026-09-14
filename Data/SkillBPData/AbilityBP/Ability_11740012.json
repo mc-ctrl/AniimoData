@@ -1,0 +1,67 @@
+{
+  "BPName": "ability_11740012",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10300001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        63
+      ],
+      "UID": "7eab0034-44b2-4df7-af09-08761124d668",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        74
+      ],
+      "NodeID": 8
+    },
+    "74": {
+      "timelineId": 11740012003,
+      "name": "setCombatActionTimeline",
+      "UID": "12c42dc0-ca7c-4f53-9979-cc58767cc170",
+      "target": "CASTER",
+      "NodeID": 74
+    },
+    "7": {
+      "timelineId": 11740012001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "63": {
+      "UID": "f0fd6dd7-645b-46e2-b2cf-43587a400f3d",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 63
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03",
+    "Attack04"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10174_Attack03_1",
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_10174_Attack03_2",
+    "Eff_Parmon_10174_Attack03_Dm",
+    "Eff_Parmon_10174_Attack03_Dm2"
+  ],
+  "searchRelation": 2,
+  "name": "水近战普攻",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

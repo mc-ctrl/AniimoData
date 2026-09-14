@@ -1,0 +1,14 @@
+{
+  "91011278": {
+    "markType": 0,
+    "respawnHp": 1,
+    "yaw": 0,
+    "revivedPointState": true,
+    "randomRange": 0,
+    "markPosition": [
+      0.06,
+      -0.01,
+      11.73
+    ]
+  }
+}

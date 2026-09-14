@@ -1,0 +1,52 @@
+{
+  "duration": 0.1,
+  "BPName": "ability_10450322",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "",
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "nodeMap": {
+    "26": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104519,
+      "NodeID": 26,
+      "UID": "4d2f4969-75b1-4a7f-a469-09e70a6e9e54",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "stick": 0,
+      "pos": "PROJECTILE",
+      "name": "createEntity"
+    }
+  },
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    26
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "tickInterval": 0.1,
+  "startSleepTime": 0,
+  "maxHitNum": 9999,
+  "groundSweepRadius": 0.5,
+  "hasAttackDataInOnProjectileHit": false,
+  "acceleration": 0
+}

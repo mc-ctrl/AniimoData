@@ -1,0 +1,291 @@
+{
+  "nodeMap": {
+    "52": {
+      "action": {
+        "actionIds": [
+          50,
+          55,
+          77,
+          70
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 52,
+      "UID": "6f1a3a4a-0cec-4805-bcd8-5bb23d635d1e"
+    },
+    "96": {
+      "calcId": 911870512,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 96,
+      "UID": "6be69b6a-4637-4d8d-969d-5478eaf22c6e",
+      "name": "getParamByLuaConfig"
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "1c23f6b5-1779-42a2-9256-b9d90c0dc6fe",
+      "effectId": "Eff_Parmon_10187_Skill_DefenseStance",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4cd144c6-1411-43a7-b012-78b4abac5fd1",
+      "effectId": "Eff_Parmon_10187_Skill_DefenseStanceOnHit",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "44": {
+      "buffId": 2118714,
+      "name": "removeBuff",
+      "UID": "00c17a27-1fa4-4103-85c1-1446093991a9",
+      "target": "CASTER",
+      "NodeID": 44
+    },
+    "31": {
+      "UID": "b0574a9a-d71f-43a6-9cab-20585fcf2545",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 31
+    },
+    "67": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "296b9fb7-30ff-40af-8015-37b680568a5a",
+      "target": "OWNER",
+      "NodeID": 67
+    },
+    "69": {
+      "name": "stopEffectStr",
+      "UID": "ed52fb0f-c150-4b8b-b4f8-839fc9218dbd",
+      "effectId": "Eff_Parmon_10187_Skill_Warning_Petrifaction",
+      "target": "OWNER",
+      "NodeID": 69
+    },
+    "70": {
+      "name": "stopEffectStr",
+      "UID": "7e9730c1-2c06-44f3-b017-0bb8da83b77e",
+      "effectId": "Eff_Parmon_10187_Skill_Warning_Petrifaction",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7a4574ab-a612-459b-87c2-e6c238de05da",
+      "effectId": "Eff_Parmon_10187_Skill_Boss_WindExploision",
+      "speed": 1,
+      "NodeID": 55
+    },
+    "71": {
+      "buffId": 2118714,
+      "name": "removeBuff",
+      "UID": "da57f4e0-df9c-455e-b39e-d7c4af926eea",
+      "target": "OWNER",
+      "NodeID": 71
+    },
+    "10": {
+      "UID": "fd51c511-f3e7-47c1-9c95-6236d7d096ba",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 10
+    },
+    "72": {
+      "name": "stopEffectStr",
+      "UID": "c9bb30ee-92bc-4f3b-884b-d9885a97ce2e",
+      "effectId": "Eff_Parmon_10187_Skill_DefenseStance",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "92": {
+      "name": "stopSoundStr",
+      "UID": "8589fe33-245d-4f90-9f10-687497cf6c77",
+      "soundId": "parmon_10073_skill_wind_loop",
+      "target": "OWNER",
+      "NodeID": 92
+    },
+    "26": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e5f81f2c-09f6-4a94-9414-a16a114a1b75",
+      "target": "CASTER",
+      "NodeID": 26,
+      "animId": "Skill_DefenseStanceEnd"
+    },
+    "48": {
+      "calcInfo": {
+        "instant_dmg_v": 1,
+        "instant_dmg_fix": {
+          "rValue": {
+            "calcId": 911870512,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 96,
+            "UID": "6be69b6a-4637-4d8d-969d-5478eaf22c6e",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "b18f7ed7-3c27-482f-a407-b16511dfd568",
+          "NodeID": 80,
+          "lValue": {
+            "key": "9118714",
+            "name": "getCacheVal",
+            "UID": "03142149-6b5f-47f3-89ff-902e3c47c183",
+            "target": "OWNER",
+            "NodeID": 79
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10187_Skill_StormRazor_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 5004,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "7a767969-a32a-46b1-ba34-6396f92e9568",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 48
+    },
+    "28": {
+      "UID": "8ebf7cc2-c548-4056-a6ec-edadaf319abb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26,
+          44,
+          40,
+          42,
+          74,
+          76,
+          92
+        ]
+      },
+      "NodeID": 28
+    },
+    "77": {
+      "name": "stopEffectStr",
+      "UID": "a418739e-8e00-4690-b3b7-d667874a52dc",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind05_Boss",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "76": {
+      "name": "stopEffectStr",
+      "UID": "209f0ddf-7d77-4552-b50e-96af97cea9f5",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind05_Boss",
+      "target": "OWNER",
+      "NodeID": 76
+    },
+    "50": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 48,
+      "NodeID": 50,
+      "UID": "c08f8abd-ea97-4c3d-96f1-33a1fc1fd9c3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.3
+          ],
+          "shapeArgs": [
+            5.8,
+            2,
+            0.3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5004,
+      "actionIds": [
+        48
+      ]
+    },
+    "33": {
+      "UID": "ec8e6691-7b4d-44bf-a98c-e9c1f8e3d74c",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          31,
+          69,
+          72
+        ]
+      },
+      "NodeID": 33
+    },
+    "74": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7f265bba-6f2d-43c6-b7ae-a0c1cd673315",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_horngull_skill_defensestance_strengthen_release",
+      "NodeID": 74
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          10,
+          67,
+          71
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 12,
+      "UID": "3ef8d312-c58a-4a51-9f47-e08b99c2d94a"
+    }
+  },
+  "BPName": "ability_911870512",
+  "NodeID": 14,
+  "UID": "daf5721f-fd2d-47e6-8275-590686f9b501",
+  "eventIds": [
+    28,
+    52,
+    12,
+    33
+  ],
+  "layer": "Base",
+  "length": 2
+}

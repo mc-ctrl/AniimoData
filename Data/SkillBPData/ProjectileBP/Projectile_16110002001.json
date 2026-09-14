@@ -1,0 +1,112 @@
+{
+  "duration": 3,
+  "calcResultNodeId": 37,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10611_Attack03",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 0,
+  "nodeMap": {
+    "37": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 16110002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "6b74b3a3-748b-403e-86e4-533e25373966",
+      "target": "TARGET",
+      "NodeID": 37,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "impulseId": 2000,
+        "hitSoundStr": "",
+        "elementType": 9
+      }
+    },
+    "43": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4bb11743-1c1c-478f-8158-feefa20e2cde",
+      "effectId": "Eff_Parmon_10611_Attack03_02",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "39": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 37,
+      "NodeID": 39,
+      "UID": "adffc821-2233-42ee-ae3a-9ed27fcaf151",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        37
+      ]
+    },
+    "44": {
+      "cameraShakeId": 30401,
+      "name": "playCameraImpulseById",
+      "UID": "18589d7f-1d51-444a-86b7-60faf1757fb1",
+      "target": "OWNER",
+      "NodeID": 44
+    }
+  },
+  "moveSpeed": 40,
+  "onProjectileFinishIds": [
+    43,
+    39,
+    44
+  ],
+  "waterDestroy": true,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "BPName": "ability_16110002",
+  "tickInterval": 0,
+  "destroyOnHit": false,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "ignoreAbilityElement": true,
+  "impulseId": 2000,
+  "acceleration": 0
+}

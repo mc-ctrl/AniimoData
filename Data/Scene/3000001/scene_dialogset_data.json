@@ -1,0 +1,2271 @@
+{
+  "88215155": {
+    "targetGroupIds": [
+      88215164,
+      88215165,
+      88215166,
+      88215167,
+      88215168
+    ],
+    "targetGroups": {
+      "88215164": {
+        "id": 88215164,
+        "name": "TargetGroup_双人全身",
+        "rotationMode": 0,
+        "position": [
+          -1581.21,
+          88.89,
+          831.23
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          0.54,
+          0,
+          -0.84
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 88215158,
+            "weight": 0.4,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 88215163,
+            "weight": 0.4,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 88215160,
+            "weight": 0.1,
+            "radius": 0.3
+          },
+          {
+            "virtualTargetId": 88215162,
+            "weight": 0.1,
+            "radius": 0.3
+          }
+        ],
+        "updateMethod": 2
+      },
+      "88215165": {
+        "id": 88215165,
+        "name": "TargetGroup_BtoA",
+        "rotationMode": 0,
+        "position": [
+          -1580.92,
+          89.03,
+          831.07
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          0.54,
+          0,
+          -0.84
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 88215158,
+            "weight": 0.6,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 88215160,
+            "weight": 0.1,
+            "radius": 0.3
+          },
+          {
+            "virtualTargetId": 88215163,
+            "weight": 0.3,
+            "radius": 0.2
+          }
+        ],
+        "updateMethod": 2
+      },
+      "88215166": {
+        "id": 88215166,
+        "name": "TargetGroup_AtoB",
+        "rotationMode": 0,
+        "position": [
+          -1581.5,
+          88.84,
+          831.39
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          0.84,
+          0,
+          0.54
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 88215163,
+            "weight": 0.6,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 88215162,
+            "weight": 0.1,
+            "radius": 0.3
+          },
+          {
+            "virtualTargetId": 88215158,
+            "weight": 0.3,
+            "radius": 0.2
+          }
+        ],
+        "updateMethod": 2
+      },
+      "88215167": {
+        "id": 88215167,
+        "name": "TargetGroup_A头部",
+        "rotationMode": 0,
+        "position": [
+          -1580.52,
+          89.21,
+          830.91
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          0.54,
+          0,
+          -0.84
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 88215158,
+            "weight": 1,
+            "radius": 0.2
+          }
+        ],
+        "updateMethod": 2
+      },
+      "88215168": {
+        "id": 88215168,
+        "name": "TargetGroup_B头部",
+        "rotationMode": 0,
+        "position": [
+          -1581.9,
+          88.83,
+          831.55
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          0.54,
+          0,
+          -0.84
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 88215163,
+            "weight": 1,
+            "radius": 0.2
+          }
+        ],
+        "updateMethod": 2
+      }
+    },
+    "virtualTargets": {
+      "88215161": {
+        "name": "VirtualTarget_Slot_Player_Bip001 Spine02",
+        "rotation": [
+          -0.14,
+          0.16,
+          -0.66,
+          0.72
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Spine02",
+        "bindingMode": 0,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 88215157,
+        "subPartIndex": 2,
+        "id": 88215161,
+        "position": [
+          -1581.88,
+          88.52,
+          831.54
+        ]
+      },
+      "88215162": {
+        "name": "VirtualTarget_Slot_Player_Root",
+        "rotation": [
+          0,
+          -0.84,
+          0,
+          -0.54
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 88215157,
+        "subPartIndex": 0,
+        "id": 88215162,
+        "position": [
+          -1581.89,
+          87.58,
+          831.54
+        ]
+      },
+      "88215163": {
+        "name": "VirtualTarget_Slot_Player_Bip001 Head",
+        "rotation": [
+          -0.15,
+          0.15,
+          -0.69,
+          0.69
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 0,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 88215157,
+        "subPartIndex": 0,
+        "id": 88215163,
+        "position": [
+          -1581.9,
+          88.83,
+          831.55
+        ]
+      },
+      "88215158": {
+        "name": "VirtualTarget_Slot_NPC_Bip001 Head",
+        "rotation": [
+          0.69,
+          -0.69,
+          -0.15,
+          0.15
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 0,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 88215156,
+        "subPartIndex": 0,
+        "id": 88215158,
+        "position": [
+          -1580.52,
+          89.21,
+          830.91
+        ]
+      },
+      "88215159": {
+        "name": "VirtualTarget_Slot_NPC_Bip001 Spine02",
+        "rotation": [
+          0.66,
+          -0.72,
+          -0.14,
+          0.16
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Spine02",
+        "bindingMode": 0,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 88215156,
+        "subPartIndex": 2,
+        "id": 88215159,
+        "position": [
+          -1580.53,
+          88.79,
+          830.92
+        ]
+      },
+      "88215160": {
+        "name": "VirtualTarget_Slot_NPC_Root",
+        "rotation": [
+          0,
+          0.54,
+          0,
+          -0.84
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 88215156,
+        "subPartIndex": 0,
+        "id": 88215160,
+        "position": [
+          -1580.53,
+          87.58,
+          830.92
+        ]
+      }
+    },
+    "position": [
+      -1580.53,
+      87.58,
+      830.92
+    ],
+    "rotation": [
+      0,
+      0.54,
+      0,
+      -0.84
+    ],
+    "sandboxId": 52160363,
+    "id": 88215155,
+    "name": "Dialogset_2_1v1",
+    "cameraIds": [
+      88215169,
+      88215170,
+      88215171,
+      88215172,
+      88215173,
+      88215174,
+      88215175,
+      88215176,
+      88215177,
+      88215178,
+      88215179,
+      88215180,
+      88215181,
+      88215182,
+      88215183,
+      88215184,
+      88215185,
+      88215186,
+      88215187,
+      88215188,
+      88215189,
+      88215190,
+      88215191,
+      88215192,
+      88215193,
+      88215194,
+      88215195,
+      88215196
+    ],
+    "cameras": {
+      "88215191": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.24,
+            -0.02,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.58
+        },
+        "lookAtTargetID": 88215165,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.03,
+          0.72,
+          -0.03,
+          0.7
+        ],
+        "position": [
+          -1583.41,
+          89.22,
+          831.41
+        ],
+        "id": 88215191,
+        "name": "Camera_右_双人_人像_过肩_俯_BtoA",
+        "editorPosition": [
+          -1583.21,
+          89.21,
+          831.39
+        ],
+        "editorRotation": [
+          0.03,
+          0.72,
+          -0.03,
+          0.7
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 160,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.32,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215192": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.22,
+            -0.03,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215166,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.08,
+          -0.36,
+          0.03,
+          0.93
+        ],
+        "position": [
+          -1580.02,
+          89.16,
+          830.07
+        ],
+        "id": 88215192,
+        "name": "Camera_右_双人_人像_过肩_俯_AtoB",
+        "editorPosition": [
+          -1579.77,
+          89.22,
+          829.84
+        ],
+        "editorRotation": [
+          0.08,
+          -0.36,
+          0.03,
+          0.93
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 15,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.15,
+            0.33,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215193": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.22,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215165,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.03,
+          0.73,
+          0.03,
+          0.68
+        ],
+        "position": [
+          -1583.31,
+          88.87,
+          831.51
+        ],
+        "id": 88215193,
+        "name": "Camera_右_双人_人像_过肩_小仰_BtoA",
+        "editorPosition": [
+          -1583.2,
+          88.88,
+          831.49
+        ],
+        "editorRotation": [
+          -0.03,
+          0.73,
+          0.03,
+          0.68
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 160,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.1,
+            -0.01,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215194": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.22,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215166,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.02,
+          -0.34,
+          0.01,
+          0.94
+        ],
+        "position": [
+          -1579.87,
+          88.88,
+          829.77
+        ],
+        "id": 88215194,
+        "name": "Camera_右_双人_人像_过肩_小仰_AtoB",
+        "editorPosition": [
+          -1579.86,
+          88.88,
+          829.76
+        ],
+        "editorRotation": [
+          0.02,
+          -0.34,
+          0.01,
+          0.94
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 20,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.1,
+            -0.01,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215195": {
+        "fov": 20,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.08,
+            -0.05,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.59
+        },
+        "lookAtTargetID": 88215167,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.02,
+          0.78,
+          0.03,
+          0.63
+        ],
+        "position": [
+          -1582.19,
+          89.04,
+          831.35
+        ],
+        "id": 88215195,
+        "name": "Camera_右_单人_人像_10_小仰_A",
+        "editorPosition": [
+          -1581.49,
+          89.11,
+          831.17
+        ],
+        "editorRotation": [
+          -0.02,
+          0.78,
+          0.03,
+          0.63
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 170,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            -0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215167,
+        "followTargetType": 2
+      },
+      "88215196": {
+        "fov": 20,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.08,
+            -0.05,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.59
+        },
+        "lookAtTargetID": 88215168,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.03,
+          -0.45,
+          -0.02,
+          0.89
+        ],
+        "position": [
+          -1580.48,
+          88.66,
+          830.57
+        ],
+        "id": 88215196,
+        "name": "Camera_右_单人_人像_170_小仰_B",
+        "editorPosition": [
+          -1581.08,
+          88.73,
+          830.98
+        ],
+        "editorRotation": [
+          -0.03,
+          -0.45,
+          -0.02,
+          0.89
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 10,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            -0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215168,
+        "followTargetType": 2
+      },
+      "88215169": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.05,
+            -0.3,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.43
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.01,
+          0.98,
+          -0.16,
+          0.08
+        ],
+        "position": [
+          -1581.92,
+          89.87,
+          835.2
+        ],
+        "id": 88215169,
+        "name": "Camera_左_双人_人文_50_俯_BtoA",
+        "editorPosition": [
+          -1581.76,
+          89.62,
+          834.19
+        ],
+        "editorRotation": [
+          0.01,
+          0.98,
+          -0.16,
+          0.08
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -130,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.26,
+            0.73,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215170": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.37,
+            -0.2,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.47
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.07,
+          0.89,
+          -0.14,
+          -0.43
+        ],
+        "position": [
+          -1578.49,
+          89.75,
+          833.51
+        ],
+        "id": 88215170,
+        "name": "Camera_左_双人_人文_110_俯_AtoB",
+        "editorPosition": [
+          -1578.9,
+          89.62,
+          833.15
+        ],
+        "editorRotation": [
+          -0.07,
+          0.89,
+          -0.14,
+          -0.43
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -69,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.25,
+            0.73,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215171": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.21,
+            -0.13,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.67
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0,
+          1,
+          0.02,
+          -0.05
+        ],
+        "position": [
+          -1580.94,
+          88.72,
+          833.86
+        ],
+        "id": 88215171,
+        "name": "Camera_左_双人_人文_75_小仰_BtoA",
+        "editorPosition": [
+          -1580.89,
+          88.69,
+          834.22
+        ],
+        "editorRotation": [
+          0,
+          1,
+          0.02,
+          -0.05
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -105,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0.18,
+            -0.2,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215172": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.07,
+            -0.13,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.75
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0,
+          0.92,
+          -0.01,
+          -0.4
+        ],
+        "position": [
+          -1579.22,
+          88.8,
+          833.01
+        ],
+        "id": 88215172,
+        "name": "Camera_左_双人_人文_105_小仰_AtoB",
+        "editorPosition": [
+          -1578.96,
+          88.79,
+          833.26
+        ],
+        "editorRotation": [
+          0,
+          0.92,
+          -0.01,
+          -0.4
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -75,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.45,
+            -0.1,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215173": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.25,
+            -0.06,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215165,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0,
+          0.93,
+          0.01,
+          0.38
+        ],
+        "position": [
+          -1582.82,
+          88.97,
+          832.67
+        ],
+        "id": 88215173,
+        "name": "Camera_左_双人_人像_过肩_平_BtoA",
+        "editorPosition": [
+          -1582.71,
+          88.98,
+          832.57
+        ],
+        "editorRotation": [
+          0,
+          0.93,
+          0.01,
+          0.38
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -167,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.15,
+            0.09,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215174": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.35,
+            -0.05,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215166,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.03,
+          -0.72,
+          0.03,
+          0.69
+        ],
+        "position": [
+          -1579.32,
+          88.97,
+          831.12
+        ],
+        "id": 88215174,
+        "name": "Camera_左_双人_人像_过肩_平_AtoB",
+        "editorPosition": [
+          -1579.22,
+          88.98,
+          831.11
+        ],
+        "editorRotation": [
+          0.03,
+          -0.72,
+          0.03,
+          0.69
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -20,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0.04,
+            0.09,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215175": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.22,
+            -0.03,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215165,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.02,
+          0.93,
+          -0.04,
+          0.37
+        ],
+        "position": [
+          -1582.87,
+          89.24,
+          832.81
+        ],
+        "id": 88215175,
+        "name": "Camera_左_双人_人像_过肩_俯_BtoA",
+        "editorPosition": [
+          -1582.66,
+          89.22,
+          832.62
+        ],
+        "editorRotation": [
+          0.02,
+          0.93,
+          -0.04,
+          0.37
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -165,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.15,
+            0.33,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215176": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.24,
+            -0.02,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.58
+        },
+        "lookAtTargetID": 88215166,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.06,
+          -0.71,
+          0.06,
+          0.7
+        ],
+        "position": [
+          -1579.59,
+          89.15,
+          831.12
+        ],
+        "id": 88215176,
+        "name": "Camera_左_双人_人像_过肩_俯_AtoB",
+        "editorPosition": [
+          -1579.22,
+          89.21,
+          831.07
+        ],
+        "editorRotation": [
+          0.06,
+          -0.71,
+          0.06,
+          0.7
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -20,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.32,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215177": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.22,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215165,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.01,
+          0.94,
+          0.04,
+          0.34
+        ],
+        "position": [
+          -1582.66,
+          88.87,
+          832.8
+        ],
+        "id": 88215177,
+        "name": "Camera_左_双人_人像_过肩_小仰_BtoA",
+        "editorPosition": [
+          -1582.57,
+          88.88,
+          832.71
+        ],
+        "editorRotation": [
+          -0.01,
+          0.94,
+          0.04,
+          0.34
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -160,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.1,
+            -0.01,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215178": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.22,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215166,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.01,
+          -0.68,
+          0.01,
+          0.73
+        ],
+        "position": [
+          -1579.24,
+          88.88,
+          830.98
+        ],
+        "id": 88215178,
+        "name": "Camera_左_双人_人像_过肩_小仰_AtoB",
+        "editorPosition": [
+          -1579.23,
+          88.88,
+          830.97
+        ],
+        "editorRotation": [
+          0.01,
+          -0.68,
+          0.01,
+          0.73
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -20,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.1,
+            -0.01,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215179": {
+        "fov": 20,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.08,
+            -0.05,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.59
+        },
+        "lookAtTargetID": 88215167,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.02,
+          0.89,
+          0.03,
+          0.44
+        ],
+        "position": [
+          -1581.94,
+          89.04,
+          831.9
+        ],
+        "id": 88215179,
+        "name": "Camera_左_单人_人像_10_小仰_A",
+        "editorPosition": [
+          -1581.34,
+          89.11,
+          831.48
+        ],
+        "editorRotation": [
+          -0.02,
+          0.89,
+          0.03,
+          0.44
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -170,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            -0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215167,
+        "followTargetType": 2
+      },
+      "88215180": {
+        "fov": 20,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.08,
+            -0.05,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.59
+        },
+        "lookAtTargetID": 88215168,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.03,
+          0.63,
+          0.02,
+          -0.78
+        ],
+        "position": [
+          -1580.23,
+          88.66,
+          831.11
+        ],
+        "id": 88215180,
+        "name": "Camera_左_单人_人像_10_小仰_B",
+        "editorPosition": [
+          -1580.94,
+          88.73,
+          831.3
+        ],
+        "editorRotation": [
+          0.03,
+          0.63,
+          0.02,
+          -0.78
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -10,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            -0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215168,
+        "followTargetType": 2
+      },
+      "88215181": {
+        "fov": 16,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.05,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 1.2
+        },
+        "lookAtTargetID": 88215167,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.02,
+          0.91,
+          -0.04,
+          0.41
+        ],
+        "position": [
+          -1581.44,
+          89.33,
+          831.67
+        ],
+        "id": 88215181,
+        "name": "Camera_左_单人_特写_15_小俯_A",
+        "editorPosition": [
+          -1581.29,
+          89.31,
+          831.55
+        ],
+        "editorRotation": [
+          0.02,
+          0.91,
+          -0.04,
+          0.41
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -165,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215167,
+        "followTargetType": 2
+      },
+      "88215182": {
+        "fov": 16,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.05,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 1.2
+        },
+        "lookAtTargetID": 88215168,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.04,
+          0.66,
+          -0.03,
+          -0.75
+        ],
+        "position": [
+          -1580.73,
+          88.95,
+          831.35
+        ],
+        "id": 88215182,
+        "name": "Camera_左_单人_特写_165_小俯_B",
+        "editorPosition": [
+          -1580.92,
+          88.93,
+          831.38
+        ],
+        "editorRotation": [
+          -0.04,
+          0.66,
+          -0.03,
+          -0.75
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -15,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215168,
+        "followTargetType": 2
+      },
+      "88215183": {
+        "fov": 16,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.15,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.9
+        },
+        "lookAtTargetID": 88215167,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.01,
+          -0.99,
+          0.05,
+          -0.14
+        ],
+        "position": [
+          -1581.03,
+          89.36,
+          832.28
+        ],
+        "id": 88215183,
+        "name": "Camera_左_单人_特写_45_小俯_A",
+        "editorPosition": [
+          -1580.87,
+          89.31,
+          831.85
+        ],
+        "editorRotation": [
+          -0.01,
+          -0.99,
+          0.05,
+          -0.14
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -135,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215167,
+        "followTargetType": 2
+      },
+      "88215184": {
+        "fov": 16,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.15,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 1.2
+        },
+        "lookAtTargetID": 88215168,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.02,
+          -0.84,
+          0.04,
+          0.54
+        ],
+        "position": [
+          -1580.79,
+          88.95,
+          831.97
+        ],
+        "id": 88215184,
+        "name": "Camera_左_单人_特写_135_小俯_B",
+        "editorPosition": [
+          -1580.97,
+          88.93,
+          831.9
+        ],
+        "editorRotation": [
+          0.02,
+          -0.84,
+          0.04,
+          0.54
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": -45,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0.1,
+            -1
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215168,
+        "followTargetType": 2
+      },
+      "88215185": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.37,
+            -0.2,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.47
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.14,
+          0.42,
+          -0.07,
+          0.89
+        ],
+        "position": [
+          -1584.01,
+          89.79,
+          828.79
+        ],
+        "id": 88215185,
+        "name": "Camera_右_双人_人文_50_俯_BtoA",
+        "editorPosition": [
+          -1583.49,
+          89.62,
+          829.27
+        ],
+        "editorRotation": [
+          0.14,
+          0.42,
+          -0.07,
+          0.89
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 110,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.25,
+            0.73,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215186": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.05,
+            -0.3,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.43
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.15,
+          -0.07,
+          0.01,
+          0.99
+        ],
+        "position": [
+          -1580.55,
+          89.8,
+          827.49
+        ],
+        "id": 88215186,
+        "name": "Camera_右_双人_人文_110_俯_AtoB",
+        "editorPosition": [
+          -1580.66,
+          89.62,
+          828.27
+        ],
+        "editorRotation": [
+          0.15,
+          -0.07,
+          0.01,
+          0.99
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 50,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.26,
+            0.73,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215187": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.08,
+            -0.1,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.66
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.02,
+          0.38,
+          0.01,
+          0.93
+        ],
+        "position": [
+          -1583.11,
+          88.72,
+          829.35
+        ],
+        "id": 88215187,
+        "name": "Camera_右_双人_人文_75_小仰_BtoA",
+        "editorPosition": [
+          -1583.35,
+          88.69,
+          829.11
+        ],
+        "editorRotation": [
+          -0.02,
+          0.38,
+          0.01,
+          0.93
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 105,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.3,
+            -0.2,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215188": {
+        "fov": 32,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.25,
+            -0.13,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.68
+        },
+        "lookAtTargetID": 88215164,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.01,
+          0.03,
+          0,
+          1
+        ],
+        "position": [
+          -1581.4,
+          88.7,
+          828.36
+        ],
+        "id": 88215188,
+        "name": "Camera_右_双人_人文_105_小仰_AtoB",
+        "editorPosition": [
+          -1581.41,
+          88.69,
+          828.22
+        ],
+        "editorRotation": [
+          -0.01,
+          0.03,
+          0,
+          1
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 75,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0.3,
+            -0.2,
+            -3
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215189": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0.35,
+            -0.05,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215165,
+        "lookAtTargetType": 2,
+        "rotation": [
+          -0.01,
+          0.7,
+          0.01,
+          0.72
+        ],
+        "position": [
+          -1583.37,
+          88.97,
+          831.36
+        ],
+        "id": 88215189,
+        "name": "Camera_右_双人_人像_过肩_平_BtoA",
+        "editorPosition": [
+          -1583.21,
+          88.98,
+          831.35
+        ],
+        "editorRotation": [
+          -0.01,
+          0.7,
+          0.01,
+          0.72
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 160,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0.04,
+            0.09,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      },
+      "88215190": {
+        "fov": 27,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            -0.25,
+            -0.06,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.56
+        },
+        "lookAtTargetID": 88215166,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0.04,
+          -0.37,
+          0.02,
+          0.93
+        ],
+        "position": [
+          -1579.8,
+          88.97,
+          829.97
+        ],
+        "id": 88215190,
+        "name": "Camera_右_双人_人像_过肩_平_AtoB",
+        "editorPosition": [
+          -1579.72,
+          88.98,
+          829.89
+        ],
+        "editorRotation": [
+          0.04,
+          -0.37,
+          0.02,
+          0.93
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 13,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            -0.15,
+            0.09,
+            -2
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 88215164,
+        "followTargetType": 2
+      }
+    },
+    "slotIds": [
+      88215156,
+      88215157
+    ],
+    "slots": {
+      "88215156": {
+        "id": 88215156,
+        "type": 3,
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          0.54,
+          0,
+          -0.84
+        ],
+        "position": [
+          -1580.53,
+          87.58,
+          830.92
+        ],
+        "entityId": 52417422
+      },
+      "88215157": {
+        "id": 88215157,
+        "type": 1,
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          -0.84,
+          0,
+          -0.54
+        ],
+        "position": [
+          -1581.89,
+          87.58,
+          831.54
+        ],
+        "entityId": 0
+      }
+    }
+  }
+}

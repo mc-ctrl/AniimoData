@@ -1,0 +1,552 @@
+{
+  "42136130": {
+    "sightLevel": 512,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 42220716,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "冲量5",
+    "sightLevelType": 512,
+    "spawners": [
+      42732702,
+      42733099,
+      42734921,
+      42894423
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8008/Sandbox_42136130_GraphRef.asset",
+    "poiType": 0,
+    "owner": "路司机",
+    "id": 42136130,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "42462778": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          74,
+          -12.99,
+          24
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42462778,
+        "siblingIndex": 4,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42462778_43015735"
+          }
+        },
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            74,
+            -12.99,
+            24
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43328858": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "监听石墙破碎",
+        "position": [
+          0,
+          12.5,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43328858,
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "43534369": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点2-指引箭头 (1)",
+        "position": [
+          3.46,
+          0.96,
+          21.33
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 43534369,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43534540": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点4-指引箭头 (1)",
+        "position": [
+          42.78,
+          -15.03,
+          24
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 7,
+        "id": 43534540,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42462641": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点1-指引箭头",
+        "position": [
+          1,
+          0.96,
+          0.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42462641,
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42462657": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点1",
+        "position": [
+          1,
+          0.69,
+          13.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42462657,
+        "siblingIndex": 5,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42462657_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            1,
+            0.69,
+            13.36
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42462670": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3-指引箭头",
+        "position": [
+          21.23,
+          0.94,
+          23.85
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 42462670,
+        "siblingIndex": 11,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42462683": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3",
+        "position": [
+          26.81,
+          0.66,
+          24
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42462683,
+        "siblingIndex": 10,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42462683_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            26.81,
+            0.66,
+            24
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43896246": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点5",
+        "position": [
+          60.91,
+          -13.34,
+          24.11
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 43896246,
+        "siblingIndex": 0,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "43896246_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            60.91,
+            -13.34,
+            24.11
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42462776": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点4-指引箭头",
+        "position": [
+          48.96,
+          -15.05,
+          24
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 42462776,
+        "siblingIndex": 6,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43535258": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点3-指引箭头 (2)",
+        "position": [
+          14.95,
+          0.95,
+          23.85
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 12,
+        "id": 43535258,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42462777": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点4",
+        "position": [
+          37.28,
+          -15.31,
+          23.86
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42462777,
+        "siblingIndex": 8,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42462777_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            37.28,
+            -15.31,
+            23.86
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "43535214": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "目标点2",
+        "position": [
+          8.1,
+          0.72,
+          24
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 9,
+        "id": 43535214,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "43535214_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            8.1,
+            0.72,
+            24
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      }
+    }
+  },
+  "41614757": {
+    "owner": "路司机",
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 41614757,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "areaType": 0
+  }
+}

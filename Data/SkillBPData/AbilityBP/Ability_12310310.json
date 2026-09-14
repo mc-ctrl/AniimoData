@@ -1,0 +1,156 @@
+{
+  "BPName": "ability_12310310",
+  "NodeID": 1,
+  "UID": "b3fcd902-c03a-498b-b2dd-3f61333fc5e8",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "24": {
+      "UID": "09cafc6e-69ce-4acf-ad83-156c286042f7",
+      "name": "isNot",
+      "action": {
+        "UID": "681e8809-b999-481b-8c37-3e0eb3e5006f",
+        "name": "isAbilityInCD",
+        "abilityId": 0,
+        "NodeID": 23
+      },
+      "NodeID": 24
+    },
+    "41": {
+      "UID": "87371b97-2e87-46b6-81e9-9126484f578a",
+      "name": "isNot",
+      "action": {
+        "rValue": {
+          "UID": "21bf9076-7cdc-46da-ac1d-ed8ddb395b5f",
+          "target": "CURPET",
+          "name": "getTargetId",
+          "NodeID": 42
+        },
+        "name": "equal",
+        "UID": "657ec098-d0b8-4180-bdca-45414e9e482a",
+        "NodeID": 40,
+        "lValue": {
+          "UID": "62611285-dbe7-4a97-962e-eefddb069696",
+          "target": "OWNER",
+          "name": "getTargetId",
+          "NodeID": 39
+        }
+      },
+      "NodeID": 41
+    },
+    "31": {
+      "actionIds": [
+        30
+      ],
+      "name": "doPetsActions",
+      "UID": "8459018f-7700-49c9-9101-5aebab1c6ea6",
+      "target": "TARGET",
+      "NodeID": 31
+    },
+    "7": {
+      "timelineId": 12310310001,
+      "name": "setCombatActionTimeline",
+      "UID": "b3a1482b-106d-4ffa-9bd2-981912b9955d",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "26": {
+      "actionIds": [
+        32,
+        34,
+        36,
+        35
+      ],
+      "conditionActionIds": [
+        24,
+        29,
+        41
+      ],
+      "UID": "7de4964a-4e46-47d0-baac-d83216fed18c",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "27": {
+      "addTagGroup": "NAGATIVE",
+      "addActionIds": [
+        26
+      ],
+      "NodeID": 27,
+      "UID": "d7acea27-a387-45ce-a0e1-19880628eb6d",
+      "target": "MASTER",
+      "name": "registerBuffTagChange"
+    },
+    "28": {
+      "unsummonValid": false,
+      "actionIds": [
+        27
+      ],
+      "name": "registerGroupEvent",
+      "UID": "9b01e9d0-1a4a-4b01-8cf0-447886f67df0",
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "fe147857-92ea-40c1-8eff-afa13e6595b7",
+      "name": "checkEP",
+      "NodeID": 29
+    },
+    "30": {
+      "target": "TARGET",
+      "duration": 0.5,
+      "buffId": 2123103,
+      "NodeID": 30,
+      "UID": "ea33456f-8230-4887-b0f1-adbced2fc39c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "32": {
+      "UID": "ac28bdad-1ccb-4a80-aeaf-f3a5f18a80f8",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        31
+      ],
+      "NodeID": 32
+    },
+    "35": {
+      "UID": "fdcebed7-cfe2-42ac-93a5-8a2738cc5357",
+      "name": "startCD",
+      "NodeID": 35
+    },
+    "34": {
+      "name": "removeBuffByTagGroup",
+      "UID": "553d717a-6252-44e4-ba58-1cede6e9e531",
+      "target": "MASTER",
+      "buffTagGroup": "NAGATIVE",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "d029b169-b262-436a-9cd9-94d605d6b8d9",
+      "name": "callClientAction",
+      "NodeID": 36
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Dance"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Futternym_10231_Skill_Dance_Dark",
+    "Eff_Parmon_Futternym_10231_Skill_Shadow"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 11200270,
+  "onAbilityAddedIds": [
+    28
+  ]
+}

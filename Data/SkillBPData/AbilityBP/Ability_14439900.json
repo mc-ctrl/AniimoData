@@ -1,0 +1,46 @@
+{
+  "cutSceneDuration": 1.95,
+  "preloadCutScenes": [
+    "$Parmon_10443_Skill_Ex_Timeline.prefab"
+  ],
+  "UID": "707cd5c0-714f-4a12-9efa-7ac14a5a1b33",
+  "abilityParamId": 10900500,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14439900001,
+      "name": "setCombatActionTimeline",
+      "UID": "7f041c8b-36be-435e-9578-7865f5863062",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 10,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10443_OutEx_01",
+    "Eff_Parmon_10443_OutEx_Buff_01",
+    "Eff_Parmon_10443_OutEx_02",
+    "Eff_Parmon_10443_OutEx_Camera_01",
+    "Eff_Parmon_10443_OutEx_05",
+    "Eff_Parmon_10443_OutEx_04",
+    "Eff_Parmon_10443_OutEx_03",
+    "Eff_Parmon_10443_OutEx_06"
+  ],
+  "searchRelation": 2,
+  "name": "侦探蝠必杀技",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 10,
+  "searchTargetRangeDown": 10,
+  "desc": "",
+  "BPName": "ability_14439900",
+  "NodeID": 1
+}

@@ -1,0 +1,191 @@
+{
+  "nodeMap": {
+    "53": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "7512d987-38f5-4731-9e8b-3520ae705a91",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Body_Rogue",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "98": {
+      "cdTime": 10,
+      "name": "forceSetSkillCD",
+      "NodeID": 98,
+      "UID": "32387089-a4c7-4b82-9760-c10d41d1dfcd",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 912120203
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29,
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 31,
+      "UID": "792043f0-96f0-4a33-a48c-bbfde9a554ef"
+    },
+    "67": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "d459c3d1-6b53-494b-9f18-86a491edb469",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Body_Rogue",
+      "target": "OWNER",
+      "NodeID": 67
+    },
+    "68": {
+      "name": "stopSoundStr",
+      "UID": "2b8df2c1-29b5-49cc-8dbc-1ce197611b5f",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "60": {
+      "UID": "465516f5-2a77-4a88-8b2f-f6ecc65e4c88",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 60
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          60,
+          53,
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 55,
+      "UID": "c8700d6e-3c9e-43c9-b665-65c9198d35db"
+    },
+    "71": {
+      "UID": "f21d2270-3d26-4c69-8be0-71e7acc14a0e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          70
+        ]
+      },
+      "NodeID": 71
+    },
+    "46": {
+      "name": "stopSoundStr",
+      "UID": "7e1a7fb4-c228-4233-bc64-2778eddc271c",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "75": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 75,
+      "UID": "75855261-b8bd-44e5-8427-bde5f4f21952",
+      "val": false,
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "name": "setIsInAim",
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "blendTime": 0.5,
+      "cameraPitchOffset": 0
+    },
+    "99": {
+      "UID": "3eab3e44-be04-4f57-8156-b4ca988d0217",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          98
+        ]
+      },
+      "NodeID": 99
+    },
+    "17": {
+      "UID": "b5b77361-33e3-4664-8396-abd4a635e09f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15,
+          67,
+          68,
+          75
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "026ade3f-5e0f-4746-ae4b-dde1de77349d",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Body01",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "56": {
+      "name": "stopSoundStr",
+      "UID": "effd04e1-9e4a-4c80-a282-269a68a23c7c",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "32": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "9ffeb7c8-22bd-4b68-b069-32e60462d6e6",
+      "target": "OWNER",
+      "NodeID": 32,
+      "animId": "Skill_SunBeam_End"
+    },
+    "33": {
+      "UID": "23d6d119-0f58-44c7-b747-bc23bf42bec4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "NodeID": 33
+    },
+    "70": {
+      "UID": "950dcae9-d7f8-43e1-8959-45a8aa56897b",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 70
+    },
+    "15": {
+      "UID": "319bc608-3f4b-4216-b462-6a7d3f8631fa",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 15
+    }
+  },
+  "BPName": "ability_912120203",
+  "NodeID": 19,
+  "UID": "1385f138-371b-4ff7-905b-70ac16bda263",
+  "eventIds": [
+    55,
+    17,
+    71,
+    33,
+    31,
+    99
+  ],
+  "layer": "Base",
+  "length": 1
+}

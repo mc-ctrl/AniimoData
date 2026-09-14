@@ -1,0 +1,306 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 22331301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "8418d968-d959-4513-bee1-7ef79ccce158",
+      "target": "TARGET",
+      "NodeID": 5,
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "hitSoundType": "s",
+        "impulseId": 1000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Psychic_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0
+      }
+    },
+    "38": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "fee2d103-6dd9-47ad-a0b7-8ca4e8f05030",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_WingScalesTrap_Appear",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "ad6a0ead-d3fe-47ab-b1d7-f59d2cf1b8bf",
+      "name": "destroyEntity",
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "d8235cd4-1f4e-46b7-a3f3-a3aa96f3450f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "NodeID": 40
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "e857b73b-e8ee-49ca-af35-80f93297bb8e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        5,
+        32
+      ]
+    },
+    "31": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "88729354-6cf1-485c-9482-966f702b8cd5",
+      "NodeID": 31,
+      "lValue": {
+        "key": "ChangetoGold",
+        "name": "getCacheVal",
+        "UID": "79b17f40-d407-4362-ba5e-e4c25f2c8e63",
+        "target": "TARGET",
+        "NodeID": 30
+      }
+    },
+    "9": {
+      "eventType": "NotifyState",
+      "endTime": 30,
+      "NodeID": 9,
+      "onExit": {
+        "actionIds": [
+          18,
+          7,
+          37,
+          38
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          18,
+          7
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.5,
+      "onEnter": {
+        "actionIds": [
+          18,
+          7
+        ]
+      },
+      "UID": "d07b47c7-835c-49f8-941b-75609240bd53"
+    },
+    "12": {
+      "duration": 30,
+      "target": "OWNER",
+      "NodeID": 12,
+      "UID": "7ef6a56f-7fe5-47e4-8f30-c5367cbe2173",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_WingScalesTrap_Appear",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "22": {
+      "actionIds": [
+        19,
+        36,
+        29,
+        23
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "0f16679b-c97c-47f6-ab2e-6f6b6e328eb8",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "23": {
+      "UID": "c7df6b18-db88-48ad-9675-1a22451fad75",
+      "name": "destroyEntity",
+      "NodeID": 23
+    },
+    "24": {
+      "templateId": 22331302,
+      "name": "checkTargetTemplateId",
+      "UID": "032f90ff-ce1b-437e-9804-21e0c390dd40",
+      "target": "TARGET",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "e19faf2d-bfb1-4624-8e05-d24ae81c7f37",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          35
+        ]
+      },
+      "NodeID": 14
+    },
+    "25": {
+      "UID": "da57f88b-f0c1-489c-a3e1-041794a4e3bd",
+      "conditionIds": [
+        24,
+        34
+      ],
+      "name": "conditionOr",
+      "NodeID": 25
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "12d34cfb-a5fa-4194-b137-9870218d068a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Velouria_Skill_WingScalesTrap_End",
+      "NodeID": 37
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8b32bddc-00ef-45fa-936e-1a0aba1c8358",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Velouria_Skill_WingScalesTrap_Start",
+      "NodeID": 35
+    },
+    "28": {
+      "key": "ChangetoGold",
+      "name": "setCacheVal",
+      "UID": "a7b0f4b1-47d2-4ce6-b80d-af46aabb9de2",
+      "target": "TARGET",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "5c18a7b8-70e6-43e9-b973-193b54166a84",
+        "NodeID": 27,
+        "lValue": {
+          "key": "ChangetoGold",
+          "name": "getCacheVal",
+          "UID": "3dc3f909-b626-497d-9415-9794d53ddc39",
+          "target": "TARGET",
+          "NodeID": 26
+        }
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "01b4c74a-5ca5-423f-8099-c49d15ccb7c3",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "18": {
+      "actionIds": [
+        22
+      ],
+      "name": "actOnTargets",
+      "UID": "1283e78b-3115-4708-bf21-f84933266548",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 18
+    },
+    "32": {
+      "target": "TARGET",
+      "duration": -1,
+      "buffId": 21233001,
+      "NodeID": 32,
+      "UID": "895379b7-af1a-415d-be0c-8cdac460f818",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "19": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "6665338b-572b-4f19-bdef-0df4e0d3dddb",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_WingScalesTrap_Appear",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "34": {
+      "templateId": 22331303,
+      "name": "checkTargetTemplateId",
+      "UID": "1ce519b0-2a72-4ff1-93b6-e5b215a71aab",
+      "target": "TARGET",
+      "NodeID": 34
+    },
+    "36": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "a5e139e3-6749-4382-8286-c6879764b369",
+      "soundId": "SFX_Combat_Velouria_Skill_WingScalesTrap_End",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_22331301",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    14,
+    9,
+    40
+  ],
+  "layer": "Base",
+  "length": 31
+}

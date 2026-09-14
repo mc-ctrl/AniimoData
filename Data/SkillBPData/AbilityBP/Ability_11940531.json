@@ -1,0 +1,48 @@
+{
+  "BPName": "ability_11940531",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10301331,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11940531001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "96": {
+      "buffId": 2119408,
+      "name": "removeBuff",
+      "UID": "1200e67d-c998-4468-9e59-2bb466d2e6ad",
+      "target": "OWNER",
+      "NodeID": 96
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_WaterSlash02"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Water_Slash",
+    "Eff_Parmon_10194_Skill_FlowingWaterSword_Chop04",
+    "Eff_Parmon_10194_Skill_FlowingWaterSword_Start_02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "onAbilityEndIds": [
+    96
+  ],
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

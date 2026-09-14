@@ -1,0 +1,133 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91026010",
+  "calcInfoByLuaConfig": {
+    "id": 91026010,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "12cc6644-8bd2-46d3-845b-507a1b9d4c67",
+      "effectId": "Eff_Parmon_10026_Passive_End",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "6": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e3fe3822-6802-4eeb-a14d-4148aca1bed2",
+      "target": "OWNER",
+      "NodeID": 6,
+      "animId": "Passive_Start"
+    },
+    "10": {
+      "blendShapeName": "BS_10026_Harden",
+      "fromWeight": 0,
+      "NodeID": 10,
+      "UID": "f2a38799-bdcb-49ec-9e93-d091b375e054",
+      "transitionDuration": 1,
+      "targetWeight": 100,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "7": {
+      "key": "1",
+      "duration": 0.17,
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "8ca6b77b-4902-41e2-9cae-36f1907ae261",
+      "name": "addTimer"
+    },
+    "16": {
+      "key": "10026_Qishi",
+      "name": "applyMaterialEffect",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "15101f63-1272-4127-9b0d-1567846b6720",
+      "name": "stopAnimation",
+      "anim": "Passive_Start",
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "3bdda8a0-b112-4e05-9670-cf6b3adf3172",
+      "name": "removeMaterialEffect",
+      "key": "10026_Qishi",
+      "NodeID": 17
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5b250c77-4f34-48f9-96e5-f1474c01a051",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Passive_End"
+    },
+    "14": {
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 14,
+      "UID": "b3f1835a-2af7-4c04-bbef-06c3b4857825",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10027_Harden",
+      "name": "playPreset"
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "f213155a-42bf-4564-931d-d54c40adc046",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "29734ac2-bc9b-4b04-9e8f-f69e027191c1",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "12": {
+      "blendShapeName": "BS_10026_Harden",
+      "fromWeight": 100,
+      "NodeID": 12,
+      "UID": "31209489-fd34-4fb5-b48b-d306846226da",
+      "transitionDuration": 1,
+      "targetWeight": 0,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "dcbd3bfa-1115-40d1-9a81-32033d70adbd",
+      "effectId": "Eff_Parmon_10026_Passive_Start",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    4,
+    8,
+    12,
+    17,
+    13,
+    14
+  ],
+  "onBuffStartIds": [
+    2,
+    9,
+    7,
+    10,
+    16,
+    11
+  ]
+}

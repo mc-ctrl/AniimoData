@@ -1,0 +1,1147 @@
+{
+  "1": {
+    "300002": {
+      "10": {
+        "probability": 10
+      },
+      "0": {
+        "probability": 30
+      },
+      "50": {
+        "probability": 17
+      },
+      "11": {
+        "probability": 43
+      }
+    },
+    "300001": {
+      "10": {
+        "probability": 5
+      },
+      "0": {
+        "probability": 30
+      },
+      "50": {
+        "probability": 13
+      },
+      "11": {
+        "probability": 52
+      }
+    },
+    "240002": {
+      "0": {
+        "probability": 3000
+      },
+      "2002": {
+        "probability": 825
+      },
+      "2001": {
+        "probability": 6175
+      }
+    },
+    "210001": {
+      "0": {
+        "probability": 3000
+      },
+      "2008": {
+        "probability": 5830
+      },
+      "2006": {
+        "probability": 825
+      }
+    },
+    "210002": {
+      "2008": {
+        "probability": 8830
+      },
+      "2006": {
+        "probability": 825
+      }
+    },
+    "210003": {
+      "0": {
+        "probability": 3000
+      },
+      "2008": {
+        "probability": 6175
+      },
+      "2006": {
+        "probability": 825
+      }
+    },
+    "240001": {
+      "2001": {
+        "probability": 70
+      },
+      "0": {
+        "probability": 30
+      }
+    },
+    "200001": {
+      "2008": {
+        "probability": 70
+      },
+      "0": {
+        "probability": 30
+      }
+    },
+    "200002": {
+      "2009": {
+        "probability": 825
+      },
+      "0": {
+        "probability": 3000
+      },
+      "2008": {
+        "probability": 6175
+      }
+    },
+    "200003": {
+      "2009": {
+        "probability": 825
+      },
+      "0": {
+        "probability": 3000
+      },
+      "2008": {
+        "probability": 5830
+      }
+    },
+    "230002": {
+      "3005": {
+        "probability": 200
+      },
+      "0": {
+        "probability": 800
+      }
+    },
+    "230001": {
+      "3004": {
+        "probability": 200
+      },
+      "0": {
+        "probability": 800
+      }
+    },
+    "220001": {
+      "0": {
+        "probability": 3000
+      },
+      "2003": {
+        "probability": 825
+      },
+      "2001": {
+        "probability": 5830
+      }
+    },
+    "200004": {
+      "2009": {
+        "probability": 825
+      },
+      "2010": {
+        "probability": 345
+      },
+      "2008": {
+        "probability": 8830
+      }
+    },
+    "220003": {
+      "0": {
+        "probability": 3000
+      },
+      "2003": {
+        "probability": 825
+      },
+      "2001": {
+        "probability": 6175
+      }
+    },
+    "220002": {
+      "2003": {
+        "probability": 825
+      },
+      "2001": {
+        "probability": 8830
+      }
+    }
+  },
+  "0": {
+    "100001": {
+      "5000001": {
+        "probability": 6500
+      },
+      "5000002": {
+        "probability": 6500
+      },
+      "5000003": {
+        "probability": 6500
+      },
+      "5000004": {
+        "probability": 6500
+      },
+      "5000110": {
+        "probability": 3000
+      },
+      "5000111": {
+        "probability": 3000
+      },
+      "5000112": {
+        "probability": 3000
+      },
+      "5000113": {
+        "probability": 187
+      },
+      "5000114": {
+        "probability": 187
+      },
+      "5000115": {
+        "probability": 187
+      },
+      "5000116": {
+        "probability": 187
+      },
+      "5000117": {
+        "probability": 30
+      },
+      "5000118": {
+        "probability": 30
+      },
+      "5000119": {
+        "probability": 30
+      },
+      "5000120": {
+        "probability": 30
+      },
+      "5000016": {
+        "probability": 187
+      },
+      "5000017": {
+        "probability": 30
+      },
+      "5000018": {
+        "probability": 30
+      },
+      "5000019": {
+        "probability": 30
+      },
+      "5000020": {
+        "probability": 30
+      },
+      "5000021": {
+        "probability": 3
+      },
+      "5000121": {
+        "probability": 3
+      },
+      "5000005": {
+        "probability": 6000
+      },
+      "5000109": {
+        "probability": 3000
+      },
+      "5000015": {
+        "probability": 187
+      },
+      "5000014": {
+        "probability": 187
+      },
+      "5000013": {
+        "probability": 187
+      },
+      "5000012": {
+        "probability": 3000
+      },
+      "5000011": {
+        "probability": 3000
+      },
+      "5000008": {
+        "probability": 6000
+      },
+      "5000007": {
+        "probability": 6000
+      },
+      "5000006": {
+        "probability": 6000
+      },
+      "0": {
+        "probability": 30258
+      }
+    },
+    "101101": {
+      "5000121": {
+        "probability": 6
+      },
+      "5000120": {
+        "probability": 46
+      },
+      "5000119": {
+        "probability": 46
+      },
+      "5000118": {
+        "probability": 46
+      },
+      "5000117": {
+        "probability": 46
+      },
+      "5000116": {
+        "probability": 250
+      },
+      "5000109": {
+        "probability": 12203
+      },
+      "5000110": {
+        "probability": 12203
+      },
+      "5000111": {
+        "probability": 12203
+      },
+      "5000112": {
+        "probability": 12203
+      },
+      "5000113": {
+        "probability": 250
+      },
+      "5000009": {
+        "probability": 12202
+      },
+      "5000010": {
+        "probability": 12202
+      },
+      "5000011": {
+        "probability": 12202
+      },
+      "5000012": {
+        "probability": 12202
+      },
+      "5000013": {
+        "probability": 250
+      },
+      "5000014": {
+        "probability": 250
+      },
+      "5000015": {
+        "probability": 250
+      },
+      "5000016": {
+        "probability": 250
+      },
+      "5000017": {
+        "probability": 46
+      },
+      "5000018": {
+        "probability": 46
+      },
+      "5000019": {
+        "probability": 46
+      },
+      "5000115": {
+        "probability": 250
+      },
+      "5000020": {
+        "probability": 46
+      },
+      "5000021": {
+        "probability": 6
+      },
+      "5000114": {
+        "probability": 250
+      }
+    },
+    "102002": {
+      "5000319": {
+        "probability": 4
+      },
+      "5000320": {
+        "probability": 4
+      },
+      "5000401": {
+        "probability": 125
+      },
+      "5000402": {
+        "probability": 125
+      },
+      "5000403": {
+        "probability": 125
+      },
+      "5000404": {
+        "probability": 125
+      },
+      "5000405": {
+        "probability": 20
+      },
+      "5000406": {
+        "probability": 20
+      },
+      "5000407": {
+        "probability": 20
+      },
+      "5000003": {
+        "probability": 2250
+      },
+      "5000409": {
+        "probability": 3
+      },
+      "5000004": {
+        "probability": 2250
+      },
+      "0": {
+        "probability": 30242
+      },
+      "5000006": {
+        "probability": 2000
+      },
+      "5000007": {
+        "probability": 2000
+      },
+      "5000008": {
+        "probability": 2000
+      },
+      "5000009": {
+        "probability": 1500
+      },
+      "5000010": {
+        "probability": 1500
+      },
+      "5000011": {
+        "probability": 1500
+      },
+      "5000012": {
+        "probability": 1500
+      },
+      "5000013": {
+        "probability": 125
+      },
+      "5000014": {
+        "probability": 125
+      },
+      "5000017": {
+        "probability": 20
+      },
+      "5000018": {
+        "probability": 20
+      },
+      "5000019": {
+        "probability": 20
+      },
+      "5000001": {
+        "probability": 2250
+      },
+      "5000002": {
+        "probability": 2250
+      },
+      "5000101": {
+        "probability": 2250
+      },
+      "5000102": {
+        "probability": 2250
+      },
+      "5000103": {
+        "probability": 2250
+      },
+      "5000104": {
+        "probability": 2250
+      },
+      "5000105": {
+        "probability": 2000
+      },
+      "5000106": {
+        "probability": 2000
+      },
+      "5000107": {
+        "probability": 2000
+      },
+      "5000108": {
+        "probability": 2000
+      },
+      "5000109": {
+        "probability": 1500
+      },
+      "5000110": {
+        "probability": 1500
+      },
+      "5000111": {
+        "probability": 1500
+      },
+      "5000112": {
+        "probability": 1500
+      },
+      "5000115": {
+        "probability": 125
+      },
+      "5000116": {
+        "probability": 125
+      },
+      "5000117": {
+        "probability": 20
+      },
+      "5000118": {
+        "probability": 20
+      },
+      "5000119": {
+        "probability": 20
+      },
+      "5000120": {
+        "probability": 20
+      },
+      "5000410": {
+        "probability": 3
+      },
+      "5000408": {
+        "probability": 20
+      },
+      "5000005": {
+        "probability": 2000
+      },
+      "5000301": {
+        "probability": 2000
+      },
+      "5000302": {
+        "probability": 2000
+      },
+      "5000303": {
+        "probability": 2000
+      },
+      "5000304": {
+        "probability": 2000
+      },
+      "5000305": {
+        "probability": 2000
+      },
+      "5000306": {
+        "probability": 2000
+      },
+      "5000307": {
+        "probability": 2000
+      },
+      "5000308": {
+        "probability": 2000
+      },
+      "5000309": {
+        "probability": 1500
+      },
+      "5000310": {
+        "probability": 1500
+      },
+      "5000311": {
+        "probability": 1500
+      },
+      "5000312": {
+        "probability": 1500
+      },
+      "5000313": {
+        "probability": 125
+      },
+      "5000314": {
+        "probability": 125
+      },
+      "5000315": {
+        "probability": 125
+      },
+      "5000316": {
+        "probability": 125
+      },
+      "5000317": {
+        "probability": 20
+      },
+      "5000318": {
+        "probability": 4
+      }
+    },
+    "102101": {
+      "5000319": {
+        "probability": 7
+      },
+      "5000320": {
+        "probability": 7
+      },
+      "5000401": {
+        "probability": 200
+      },
+      "5000402": {
+        "probability": 200
+      },
+      "5000403": {
+        "probability": 200
+      },
+      "5000404": {
+        "probability": 200
+      },
+      "5000405": {
+        "probability": 68
+      },
+      "5000406": {
+        "probability": 68
+      },
+      "5000407": {
+        "probability": 68
+      },
+      "5000408": {
+        "probability": 68
+      },
+      "5000409": {
+        "probability": 6
+      },
+      "5000410": {
+        "probability": 6
+      },
+      "5000309": {
+        "probability": 24405
+      },
+      "5000310": {
+        "probability": 24405
+      },
+      "5000311": {
+        "probability": 24405
+      },
+      "5000312": {
+        "probability": 24405
+      },
+      "5000313": {
+        "probability": 300
+      },
+      "5000314": {
+        "probability": 300
+      },
+      "5000315": {
+        "probability": 300
+      },
+      "5000316": {
+        "probability": 300
+      },
+      "5000317": {
+        "probability": 75
+      },
+      "5000318": {
+        "probability": 7
+      }
+    },
+    "103001": {
+      "5000208": {
+        "probability": 6000
+      },
+      "5000209": {
+        "probability": 4500
+      },
+      "5000210": {
+        "probability": 4500
+      },
+      "5000211": {
+        "probability": 4500
+      },
+      "5000212": {
+        "probability": 4500
+      },
+      "5000213": {
+        "probability": 200
+      },
+      "5000214": {
+        "probability": 200
+      },
+      "5000215": {
+        "probability": 200
+      },
+      "5000216": {
+        "probability": 200
+      },
+      "5000217": {
+        "probability": 40
+      },
+      "5000218": {
+        "probability": 12
+      },
+      "5000219": {
+        "probability": 40
+      },
+      "5000220": {
+        "probability": 40
+      },
+      "0": {
+        "probability": 30242
+      },
+      "5000410": {
+        "probability": 3
+      },
+      "5000408": {
+        "probability": 30
+      },
+      "5000407": {
+        "probability": 30
+      },
+      "5000406": {
+        "probability": 30
+      },
+      "5000405": {
+        "probability": 30
+      },
+      "5000404": {
+        "probability": 175
+      },
+      "5000403": {
+        "probability": 175
+      },
+      "5000402": {
+        "probability": 175
+      },
+      "5000401": {
+        "probability": 175
+      },
+      "5000221": {
+        "probability": 3
+      },
+      "5000201": {
+        "probability": 6500
+      },
+      "5000202": {
+        "probability": 6500
+      },
+      "5000203": {
+        "probability": 6500
+      },
+      "5000204": {
+        "probability": 6500
+      },
+      "5000205": {
+        "probability": 6000
+      },
+      "5000206": {
+        "probability": 6000
+      },
+      "5000207": {
+        "probability": 6000
+      }
+    },
+    "102001": {
+      "5000319": {
+        "probability": 4
+      },
+      "5000320": {
+        "probability": 4
+      },
+      "5000401": {
+        "probability": 175
+      },
+      "5000402": {
+        "probability": 175
+      },
+      "5000403": {
+        "probability": 175
+      },
+      "5000404": {
+        "probability": 175
+      },
+      "5000405": {
+        "probability": 45
+      },
+      "5000406": {
+        "probability": 45
+      },
+      "5000407": {
+        "probability": 45
+      },
+      "5000408": {
+        "probability": 45
+      },
+      "5000409": {
+        "probability": 3
+      },
+      "5000410": {
+        "probability": 3
+      },
+      "0": {
+        "probability": 30242
+      },
+      "5000301": {
+        "probability": 6500
+      },
+      "5000302": {
+        "probability": 6500
+      },
+      "5000303": {
+        "probability": 6500
+      },
+      "5000304": {
+        "probability": 6500
+      },
+      "5000305": {
+        "probability": 6000
+      },
+      "5000306": {
+        "probability": 6000
+      },
+      "5000307": {
+        "probability": 6000
+      },
+      "5000308": {
+        "probability": 6000
+      },
+      "5000309": {
+        "probability": 4500
+      },
+      "5000310": {
+        "probability": 4500
+      },
+      "5000311": {
+        "probability": 4500
+      },
+      "5000312": {
+        "probability": 4500
+      },
+      "5000313": {
+        "probability": 200
+      },
+      "5000314": {
+        "probability": 200
+      },
+      "5000315": {
+        "probability": 200
+      },
+      "5000316": {
+        "probability": 200
+      },
+      "5000317": {
+        "probability": 60
+      },
+      "5000318": {
+        "probability": 4
+      }
+    },
+    "103101": {
+      "5000209": {
+        "probability": 24405
+      },
+      "5000210": {
+        "probability": 24405
+      },
+      "5000211": {
+        "probability": 24405
+      },
+      "5000212": {
+        "probability": 24405
+      },
+      "5000403": {
+        "probability": 200
+      },
+      "5000214": {
+        "probability": 300
+      },
+      "5000215": {
+        "probability": 300
+      },
+      "5000216": {
+        "probability": 300
+      },
+      "5000217": {
+        "probability": 50
+      },
+      "5000218": {
+        "probability": 20
+      },
+      "5000219": {
+        "probability": 50
+      },
+      "5000220": {
+        "probability": 50
+      },
+      "5000221": {
+        "probability": 5
+      },
+      "5000410": {
+        "probability": 5
+      },
+      "5000408": {
+        "probability": 50
+      },
+      "5000407": {
+        "probability": 50
+      },
+      "5000406": {
+        "probability": 50
+      },
+      "5000405": {
+        "probability": 50
+      },
+      "5000404": {
+        "probability": 200
+      },
+      "5000401": {
+        "probability": 200
+      },
+      "5000402": {
+        "probability": 200
+      },
+      "5000213": {
+        "probability": 300
+      }
+    },
+    "101001": {
+      "5000001": {
+        "probability": 3250
+      },
+      "5000002": {
+        "probability": 3250
+      },
+      "5000101": {
+        "probability": 3250
+      },
+      "5000102": {
+        "probability": 3250
+      },
+      "5000103": {
+        "probability": 3250
+      },
+      "5000104": {
+        "probability": 3250
+      },
+      "5000105": {
+        "probability": 3750
+      },
+      "5000106": {
+        "probability": 3750
+      },
+      "5000003": {
+        "probability": 3250
+      },
+      "5000108": {
+        "probability": 3750
+      },
+      "5000109": {
+        "probability": 2250
+      },
+      "5000110": {
+        "probability": 2250
+      },
+      "5000006": {
+        "probability": 2250
+      },
+      "5000007": {
+        "probability": 2250
+      },
+      "5000008": {
+        "probability": 2250
+      },
+      "5000009": {
+        "probability": 2250
+      },
+      "5000010": {
+        "probability": 2250
+      },
+      "5000011": {
+        "probability": 2250
+      },
+      "5000012": {
+        "probability": 2250
+      },
+      "5000013": {
+        "probability": 187
+      },
+      "5000014": {
+        "probability": 187
+      },
+      "5000015": {
+        "probability": 187
+      },
+      "5000016": {
+        "probability": 187
+      },
+      "5000017": {
+        "probability": 30
+      },
+      "5000018": {
+        "probability": 30
+      },
+      "5000019": {
+        "probability": 30
+      },
+      "5000020": {
+        "probability": 30
+      },
+      "5000021": {
+        "probability": 3
+      },
+      "5000121": {
+        "probability": 3
+      },
+      "5000120": {
+        "probability": 30
+      },
+      "5000119": {
+        "probability": 30
+      },
+      "5000118": {
+        "probability": 30
+      },
+      "5000117": {
+        "probability": 30
+      },
+      "5000116": {
+        "probability": 187
+      },
+      "5000115": {
+        "probability": 187
+      },
+      "5000114": {
+        "probability": 187
+      },
+      "5000113": {
+        "probability": 187
+      },
+      "5000112": {
+        "probability": 2250
+      },
+      "5000111": {
+        "probability": 2250
+      },
+      "5000005": {
+        "probability": 2250
+      },
+      "5000107": {
+        "probability": 3750
+      },
+      "0": {
+        "probability": 30258
+      },
+      "5000004": {
+        "probability": 3250
+      }
+    },
+    "101002": {
+      "5000001": {
+        "probability": 6500
+      },
+      "5000002": {
+        "probability": 6500
+      },
+      "5000003": {
+        "probability": 6500
+      },
+      "5000109": {
+        "probability": 4500
+      },
+      "5000110": {
+        "probability": 4500
+      },
+      "5000006": {
+        "probability": 6000
+      },
+      "5000007": {
+        "probability": 6000
+      },
+      "5000008": {
+        "probability": 6000
+      },
+      "5000115": {
+        "probability": 375
+      },
+      "5000116": {
+        "probability": 375
+      },
+      "5000013": {
+        "probability": 375
+      },
+      "5000014": {
+        "probability": 375
+      },
+      "5000112": {
+        "probability": 4500
+      },
+      "5000121": {
+        "probability": 3
+      },
+      "5000017": {
+        "probability": 120
+      },
+      "5000018": {
+        "probability": 120
+      },
+      "5000111": {
+        "probability": 4500
+      },
+      "5000005": {
+        "probability": 6000
+      },
+      "5000004": {
+        "probability": 6500
+      },
+      "5000021": {
+        "probability": 3
+      },
+      "0": {
+        "probability": 30254
+      }
+    },
+    "100101": {
+      "5000121": {
+        "probability": 6
+      },
+      "5000120": {
+        "probability": 46
+      },
+      "5000119": {
+        "probability": 46
+      },
+      "5000118": {
+        "probability": 46
+      },
+      "5000109": {
+        "probability": 16270
+      },
+      "5000110": {
+        "probability": 16270
+      },
+      "5000111": {
+        "probability": 16270
+      },
+      "5000112": {
+        "probability": 16270
+      },
+      "5000113": {
+        "probability": 250
+      },
+      "5000114": {
+        "probability": 250
+      },
+      "5000115": {
+        "probability": 250
+      },
+      "5000011": {
+        "probability": 16270
+      },
+      "5000012": {
+        "probability": 16270
+      },
+      "5000013": {
+        "probability": 250
+      },
+      "5000014": {
+        "probability": 250
+      },
+      "5000015": {
+        "probability": 250
+      },
+      "5000016": {
+        "probability": 250
+      },
+      "5000017": {
+        "probability": 46
+      },
+      "5000018": {
+        "probability": 46
+      },
+      "5000019": {
+        "probability": 46
+      },
+      "5000117": {
+        "probability": 46
+      },
+      "5000020": {
+        "probability": 46
+      },
+      "5000021": {
+        "probability": 6
+      },
+      "5000116": {
+        "probability": 250
+      }
+    }
+  }
+}

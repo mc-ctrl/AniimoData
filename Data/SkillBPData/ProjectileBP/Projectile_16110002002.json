@@ -1,0 +1,113 @@
+{
+  "duration": 3,
+  "calcResultNodeId": 51,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10611_Attack03",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 0,
+  "nodeMap": {
+    "60": {
+      "cameraShakeId": 30401,
+      "name": "playCameraImpulseById",
+      "UID": "6e73b532-2201-4413-aaa3-0baf25eec13a",
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "59": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b25f938c-6909-4b04-8cf6-da3a34f4cf6c",
+      "effectId": "Eff_Parmon_10611_Attack03_02",
+      "speed": 1,
+      "NodeID": 59
+    },
+    "51": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 16110002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "2be460c7-3aff-4573-b536-2981879947fb",
+      "target": "TARGET",
+      "NodeID": 51,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 9,
+        "impulseId": 2000
+      }
+    },
+    "53": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 51,
+      "NodeID": 53,
+      "UID": "64970680-2891-4c51-8c0a-382e3b87b98d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        51
+      ]
+    }
+  },
+  "moveSpeed": 40,
+  "onProjectileFinishIds": [
+    59,
+    53,
+    60
+  ],
+  "waterDestroy": true,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "BPName": "ability_16110002",
+  "tickInterval": 0,
+  "destroyOnHit": false,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "ignoreAbilityElement": true,
+  "impulseId": 2000,
+  "acceleration": 0
+}

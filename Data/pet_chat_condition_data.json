@@ -1,0 +1,38 @@
+{
+  "1003": {
+    "Behavior": [
+      1101,
+      1201
+    ],
+    "ConditionPriority": 3,
+    "ConditionType": 0,
+    "TriggerName": "PetSkill",
+    "conditionList": [
+      100301
+    ]
+  },
+  "1001": {
+    "Behavior": [
+      1101,
+      1201,
+      2101,
+      2301
+    ],
+    "ConditionPriority": 1,
+    "ConditionType": 0,
+    "TimerValue": 15,
+    "TriggerName": "PetIdle"
+  },
+  "1002": {
+    "Behavior": [
+      1101,
+      1201
+    ],
+    "ConditionPriority": 2,
+    "ConditionType": 0,
+    "TriggerName": "PetLevelUp",
+    "conditionList": [
+      100201
+    ]
+  }
+}

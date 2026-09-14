@@ -1,0 +1,107 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "73eb7dc7-9352-4925-ac2c-4d7fcea498c4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          6,
+          7,
+          10,
+          8,
+          11,
+          9,
+          13
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "3991aa8a-8728-4893-bc18-8d55efc7363c",
+      "target": "OWNER",
+      "name": "playHitSound",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "51659a11-6f51-42b5-bfc0-eb749f9d71d9",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "db6b97ef-b976-46e6-8836-d7a1cbfbabea",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "faeb06c8-274d-4d39-ab77-ad8ede526d95",
+      "target": "OWNER",
+      "name": "applyHitModelShake",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "4abf1a40-a421-47f4-b3ed-1b0191939167",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "438ad178-d44c-4ce4-a47c-95f579acea54",
+      "target": "CASTER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 8
+    },
+    "9": {
+      "name": "playHitAnimation",
+      "UID": "27f9f75d-f9fa-40da-95b2-00688794f79f",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Hit_Back"
+    },
+    "11": {
+      "UID": "65a4c0df-c8a0-4889-ab1c-9d0d447d8de9",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "91e5588a-2928-462e-ac0c-01a227a89b59",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 1,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 13
+    },
+    "2": {
+      "UID": "86af3498-fbf6-4d20-b10f-08de3dc15647",
+      "target": "OWNER",
+      "name": "playHitEffect",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_105",
+  "NodeID": 1,
+  "UID": "1d9abd7e-5f13-4285-a08f-ddba981fa498",
+  "eventIds": [
+    4,
+    16
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

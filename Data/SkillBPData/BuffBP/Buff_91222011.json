@@ -1,0 +1,126 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91222011",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        20,
+        8
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "c572e9f3-0db2-4ecc-b9eb-5f14dffe18b3",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "cf496c7f-703a-40fa-87d3-260458a61e8a",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "b318ca96-6b53-4c55-8a3e-3eab73403b4b",
+      "effectId": "Eff_Parmon_10222_Skill_AngryClaw_L",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "6": {
+      "buffId": 91222011,
+      "name": "removeBuff",
+      "UID": "ed2c238e-dd13-48a4-98d0-bb9c4aa1ed6a",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e39e5363-2a67-40ad-8c6d-091b15bfcf84",
+      "effectId": "Eff_Parmon_10222_Skill_AngryClaw_R",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "fc2c400d-a05f-4b2d-a4ba-d00e8d4afddb",
+      "effectId": "Eff_Parmon_10222_Skill_AngryClaw_R",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "bf408d46-4196-419f-ada5-0b2147bbbb75",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        13,
+        6
+      ],
+      "NodeID": 8
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "238bbb52-5616-4d1b-b6cd-c33507c872a3",
+      "effectId": "Eff_Parmon_10222_Skill_AngryClaw_L",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "22": {
+      "UID": "e9fcfc62-4616-4de3-9da3-3c3ec012a2a4",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body",
+      "NodeID": 22
+    },
+    "21": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 21,
+      "UID": "5d90701a-e8c8-4403-a401-a9d009507800",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body",
+      "name": "playPreset"
+    },
+    "13": {
+      "UID": "18a874d7-183f-4864-8940-b31330ba57c5",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 13
+    },
+    "20": {
+      "UID": "5ddab537-820a-4d2b-b99c-46f6e98a1cdb",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 91222011,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 20
+    },
+    "2": {
+      "UID": "645c5cd5-a83f-426c-beb6-c6b999cdaeb0",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    16,
+    22,
+    24
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    15,
+    4,
+    21,
+    23
+  ]
+}

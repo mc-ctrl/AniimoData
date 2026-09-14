@@ -1,0 +1,168 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "target": "TARGET",
+      "duration": 120,
+      "buffId": 2102308,
+      "NodeID": 22,
+      "UID": "6e086630-bcf8-4a44-b3f0-cf151e19091f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "duration": 3,
+      "name": "forceTaunt",
+      "UID": "3143e9c1-1765-4c80-9447-f1c232583d30",
+      "target": "TARGET",
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        4
+      ],
+      "name": "actOnTargets",
+      "UID": "99eec6bb-b3bf-4334-b79b-15b1f75b2230",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            20,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 6
+    },
+    "15": {
+      "UID": "23ead146-780c-4060-b94b-b4763435ca08",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 7,
+      "UID": "37051f1e-7664-437f-a481-f106bc301546",
+      "onUpdate": {
+        "actionIds": [
+          6
+        ]
+      },
+      "startTime": 0.1,
+      "onEnter": {
+        "actionIds": [
+          6
+        ]
+      }
+    },
+    "16": {
+      "name": "playEffectOnPosRot",
+      "UID": "82b29d7e-225d-4b58-9f24-996acaab8571",
+      "effectId": "Eff_Parmon_10012_Skill_Swift_Hit",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 16,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "14": {
+      "UID": "a1fd0604-65b6-4132-a2da-01629cd072b6",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "13": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "752ac971-9784-46f4-9574-fda3ec4441ea",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 13
+    },
+    "20": {
+      "actionIds": [
+        22
+      ],
+      "name": "actOnTargets",
+      "UID": "ad646e9b-170d-44d1-901d-f58cb9236a7d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            30,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 20
+    },
+    "12": {
+      "rValue": {
+        "UID": "1482b503-21fb-400b-9e1f-98fff0f0362a",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 11
+      },
+      "name": "greater",
+      "UID": "b35f8372-a64e-4315-ad08-d7abfef22384",
+      "NodeID": 12,
+      "lValue": 0.01
+    }
+  },
+  "BPName": "timeline_2102301",
+  "NodeID": 1,
+  "UID": "4f1d01a1-2a47-40ac-8135-397299048e9d",
+  "eventIds": [
+    15,
+    7
+  ],
+  "layer": "Base",
+  "length": 999
+}

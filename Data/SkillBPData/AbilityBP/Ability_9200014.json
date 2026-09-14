@@ -1,0 +1,131 @@
+{
+  "BPName": "ability_9200014",
+  "NodeID": 1,
+  "UID": "36581bd8-b4b1-4207-9d51-279eab78059e",
+  "abilityParamId": 9200014,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "dynamicRPCStates": [
+    "RUN"
+  ],
+  "nodeMap": {
+    "81": {
+      "name": "stopEffectStr",
+      "UID": "ee5d900d-1867-4e6d-b9c1-61ad220ea277",
+      "effectId": "Eff_Avatar_Girl_Flute_Skill_Cure_Hit_3",
+      "target": "CURPET",
+      "NodeID": 81
+    },
+    "82": {
+      "name": "stopEffectStr",
+      "UID": "a5d1fcf9-cd83-42cd-9375-b07deb320d46",
+      "effectId": "Eff_Avatar_Girl_CheerStick_Skill_Inspire_LinkTarget",
+      "target": "OWNER",
+      "NodeID": 82
+    },
+    "47": {
+      "idleEndAnimId": "Flute_Skill_Cure_StandEnd",
+      "moveAnimId": "Flute_Skill_Cure_WalkLoop",
+      "moveEndAnimId": "Flute_Skill_Cure_WalkEnd",
+      "UID": "07a7ce0b-f26c-43ee-b582-12ae8563db16",
+      "name": "enableSkillMotionAnimState",
+      "abilityEndExit": false,
+      "NodeID": 47,
+      "enable": false,
+      "idleAnimId": "Flute_Skill_Cure_StandLoop"
+    },
+    "8": {
+      "timelineId": 9200014001,
+      "name": "setCombatActionTimeline",
+      "UID": "a7572cd0-0cc9-428b-b58a-be19eca0443e",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "85": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "be5749cb-97f7-4dec-9bac-5a0d5a9da502",
+      "target": "OWNER",
+      "NodeID": 85
+    },
+    "84": {
+      "name": "stopEffectStr",
+      "UID": "88327207-527c-48d4-91e1-e1a92a62df32",
+      "effectId": "Eff_Avatar_Girl_Flute_Skill_Cure_sing",
+      "target": "OWNER",
+      "NodeID": 84
+    },
+    "67": {
+      "name": "stopEffectStr",
+      "UID": "92276ef0-8b0b-4928-9b4a-0b1bf1451fdc",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeIn",
+      "target": "OWNER",
+      "NodeID": 67
+    },
+    "83": {
+      "name": "stopEffectStr",
+      "UID": "a8433fe2-567d-41a9-84c4-c1d35b7ea1ef",
+      "effectId": "Eff_Avatar_Girl_CheerStick_Skill_Inspire_LinkTarget",
+      "target": "CURPET",
+      "NodeID": 83
+    },
+    "68": {
+      "name": "stopEffectStr",
+      "UID": "3b9363a3-b925-4138-ad13-e0e213ec5831",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeLoop",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "57": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "81185fc5-24da-4b88-be5b-ee64108f4aaf",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_SFX_Avatar_Female_Flute_Skill_Cure_Song",
+      "NodeID": 57
+    },
+    "69": {
+      "name": "stopEffectStr",
+      "UID": "7d6cb522-eb99-4404-97e8-f379e6c33a02",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeOut",
+      "target": "OWNER",
+      "NodeID": 69
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": true,
+  "preloadAnims": [
+    "Flute_Skill_Cure_StandLoop",
+    "Flute_Skill_Cure_WalkLoop",
+    "Flute_Skill_Cure_Start"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Girl_Flute_Skill_Cure_Hit_3",
+    "Eff_Avatar_Girl_CheerStick_Skill_Inspire_LinkTarget",
+    "Eff_Avatar_Girl_Flute_Skill_Cure_sing",
+    "Eff_Equip_Avatar_Flute_FadeIn",
+    "Eff_Equip_Avatar_Flute_FadeLoop",
+    "Eff_Equip_Avatar_Flute_FadeOut"
+  ],
+  "searchRelation": 2,
+  "name": "疗愈旋律",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 3,
+  "onAbilityEndIds": [
+    57,
+    47,
+    67,
+    68,
+    69,
+    81,
+    82,
+    83,
+    84,
+    85
+  ],
+  "searchTargetRangeDown": 1,
+  "isCharge": false
+}

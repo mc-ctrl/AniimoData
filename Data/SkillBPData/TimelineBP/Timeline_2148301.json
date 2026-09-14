@@ -1,0 +1,163 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Parmon_10483_Skill_GatherBubble_Field01_paopao_big",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "calcId": 2148301,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "14090895-774f-4ebc-8a9e-8b66bc64d1d4",
+      "name": "getParamByLuaConfig"
+    },
+    "14": {
+      "value": {
+        "calcId": 2148301,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 13,
+        "UID": "14090895-774f-4ebc-8a9e-8b66bc64d1d4",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "20cfbb51-ddfa-4846-a9de-46f0e25bd811",
+      "target": "MASTER",
+      "NodeID": 14
+    },
+    "15": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5f038cab-81d0-48ae-b03b-cbefcc254c92",
+      "effectId": "Eff_Parmon_10483_Skill_GatherBubble_Field01_paopao_big",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "scale": 0.8,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "28cdbfde-ad26-487e-9910-d05157d53b8b",
+      "effectId": "Eff_Parmon_10483_Skill_GatherBubble_Field01_paopao_big",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "ffce6a78-8e74-42f2-9bd1-a12044cf58fe",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17
+      ],
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "ed715663-ace2-4344-b998-2a7893a017ea",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        16
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "scale": 1.2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a01dd3bc-7b39-4d1c-b39d-2d015ed8ba62",
+      "effectId": "Eff_Parmon_10483_Skill_GatherBubble_Field01_paopao_big",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "NodeID": 9
+    },
+    "18": {
+      "NodeID": 18,
+      "UID": "b6def91c-3c75-4723-8e79-7db3130ddf06",
+      "min": 0,
+      "max": 100,
+      "name": "random"
+    },
+    "19": {
+      "rValue": 50,
+      "name": "greater",
+      "UID": "af876f0d-e833-4aac-acd0-2b639df0b509",
+      "NodeID": 19,
+      "lValue": {
+        "NodeID": 18,
+        "UID": "b6def91c-3c75-4723-8e79-7db3130ddf06",
+        "min": 0,
+        "max": 100,
+        "name": "random"
+      }
+    },
+    "11": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "5a530dbf-3177-4cd9-91c1-3fc24b0a1c34",
+      "NodeID": 11,
+      "lValue": {
+        "key": "2148305",
+        "name": "getCacheVal",
+        "UID": "650132c0-0425-4863-9e2e-941c941fb949",
+        "target": "OWNER",
+        "NodeID": 10
+      }
+    },
+    "5": {
+      "UID": "86f12066-4196-4a80-bd70-d97a39e9d2f6",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          3,
+          12
+        ]
+      },
+      "NodeID": 5
+    },
+    "12": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "b3423980-e73c-4f23-96c0-b57358cdd580",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2148301",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    9,
+    5
+  ],
+  "layer": "Base",
+  "length": 99999
+}

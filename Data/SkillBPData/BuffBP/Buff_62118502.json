@@ -1,0 +1,144 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62118502",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    17,
+    2
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d80b3fba-4f95-4aff-bf21-c49db2c6af1f",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_Egg",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "6": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 6,
+      "relation": 2,
+      "enterTrapActionIds": [
+        5
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        5
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "1",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "e8c0ffbf-9f0d-4644-9037-0b2319c55452"
+    },
+    "7": {
+      "notBlockInput": true,
+      "duration": 0.1,
+      "name": "forceDisplacement",
+      "UID": "7bde4abe-803e-4e9d-9557-30cbe0951c6c",
+      "target": "TrapTarget",
+      "trackTarget": true,
+      "speed": 20,
+      "NodeID": 7,
+      "displacementDir": "IN",
+      "displacementTarget": "OWNER",
+      "selfTogether": true
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2c89e023-d15f-4efa-a431-5d44d51160c5",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_loop",
+      "NodeID": 16
+    },
+    "17": {
+      "name": "stopSoundStr",
+      "UID": "52f2d243-bbb1-45d5-826a-e4ad198399d8",
+      "soundId": "parmon_10073_skill_wind_loop",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 9,
+      "relation": 2,
+      "enterTrapActionIds": [
+        11,
+        7
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        3
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "2",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "1de28f58-7454-4138-b737-17b746202059"
+    },
+    "11": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.05,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitCameraShakeId": 30202,
+        "hitFrameFreezeId": 10021,
+        "elementType": 9,
+        "impulseId": 7000,
+        "defaultHitEffect": "Eff_Hit_Wind_Slash_Big"
+      },
+      "UID": "a3b37d7c-f2f3-4704-b5b0-959738de522a",
+      "target": "TrapTarget",
+      "name": "calcResult",
+      "NodeID": 11
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "5d677dd4-3b50-46fa-b9c8-67f5addd3911",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_Egg",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "5": {
+      "duration": 1,
+      "name": "forceDisplacement",
+      "UID": "4f03ff69-aa1d-48c7-be0c-4c1a8badaf7e",
+      "target": "TrapTarget",
+      "trackTarget": true,
+      "NodeID": 5,
+      "displacementDir": "IN",
+      "speed": 5,
+      "displacementTarget": "OWNER",
+      "selfTogether": true
+    }
+  },
+  "onBuffDestroyIds": [
+    14,
+    17
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6,
+    9,
+    16
+  ]
+}

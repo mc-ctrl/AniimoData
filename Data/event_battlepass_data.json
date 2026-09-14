@@ -1,0 +1,286 @@
+[
+  {
+    "freeLoopReward": [
+      160075,
+      160075,
+      160075,
+      160075,
+      160075
+    ],
+    "limitItems2": [
+      110517,
+      825015
+    ],
+    "newbieTaskGroupId": 16200,
+    "passExperienceLimit": 1000,
+    "passPetEggId": 540316,
+    "passPetModelingId": 1003305,
+    "passPetMovementId": [
+      "Ani_Parmon_10033_Fly_Idle",
+      "Ani_Parmon_10033_Idle",
+      "Ani_Parmon_10033_Idle"
+    ],
+    "passPetName": 1312676029,
+    "passRewardMissionIcon": [
+      "$UI_Icon_CashShop_Tab_Reward.png",
+      "$UI_Icon_CashShop_Tab_Task.png"
+    ],
+    "passRule": 1616798247,
+    "popupEndDayTime": [
+      1,
+      "2024/8/17/23:59:59"
+    ],
+    "popupLevels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "popupLimitLevels": [
+      99999999
+    ],
+    "popupStartDayTime": [
+      1,
+      "2024/7/27/4:00:00"
+    ],
+    "postionIndex": [
+      [
+        0,
+        -1.4,
+        0
+      ],
+      [
+        -1.15,
+        -1.25,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "privilegeTier1": [
+      7000201,
+      7000207
+    ],
+    "privilegeTier2": [
+      7000203,
+      7000202,
+      7000208
+    ],
+    "regionLimitId": 1,
+    "rewadPopup": [
+      [
+        110006,
+        2
+      ],
+      [
+        540214,
+        1
+      ],
+      [
+        1,
+        680
+      ],
+      [
+        110908,
+        1600
+      ],
+      [
+        152100,
+        1
+      ],
+      [
+        151000,
+        1
+      ],
+      [
+        510102,
+        5
+      ],
+      [
+        151003,
+        13
+      ],
+      [
+        110003,
+        3
+      ],
+      [
+        510002,
+        8
+      ],
+      [
+        1103,
+        6
+      ],
+      [
+        111002,
+        6
+      ]
+    ],
+    "rewadPreview1": [
+      [
+        110006,
+        2
+      ],
+      [
+        540214,
+        1
+      ],
+      [
+        1,
+        680
+      ],
+      [
+        110908,
+        1600
+      ],
+      [
+        152100,
+        1
+      ],
+      [
+        151000,
+        1
+      ],
+      [
+        510102,
+        5
+      ],
+      [
+        151003,
+        13
+      ],
+      [
+        110003,
+        3
+      ],
+      [
+        510002,
+        8
+      ],
+      [
+        1103,
+        6
+      ],
+      [
+        111002,
+        6
+      ]
+    ],
+    "rewadPreview2": [
+      [
+        110006,
+        1
+      ],
+      [
+        110517,
+        1
+      ],
+      [
+        825015,
+        1
+      ],
+      [
+        620002,
+        5
+      ],
+      [
+        1,
+        200
+      ]
+    ],
+    "rotationIndex": [
+      [
+        0,
+        -8,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "scaleIndex": [
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        0.9,
+        0.9,
+        0.9
+      ]
+    ],
+    "seasonTaskGroupId": 16100,
+    "shopGroupId": 402,
+    "specialColor": "<color=#e3dab1>+{0}</color>",
+    "tierName1": 1743592334,
+    "tierName2": 2055398915,
+    "weekTaskGroupId": [
+      16001,
+      16001,
+      16001,
+      16001,
+      16001,
+      16001,
+      16001,
+      16001,
+      16001,
+      16001
+    ],
+    "levelItemId": 1019,
+    "WeeklyMissionLimits": 999999999,
+    "advancedImage": [
+      "$UI_Img_CashShop_GiveGift2.png"
+    ],
+    "advancedLoopReward": [
+      160075,
+      160075,
+      160075,
+      160075,
+      160075
+    ],
+    "awardTaskGroupId": 16300,
+    "battlePassId": 190011,
+    "battlePassTier1Id": 190009,
+    "battlePassTier2Id": 190010,
+    "collectionImage": [
+      "$UI_Img_CashShop_GiveGift1.png"
+    ],
+    "discountTier1": 1994049023,
+    "discountTier2": 1482828828,
+    "expWeekRaiseRates": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

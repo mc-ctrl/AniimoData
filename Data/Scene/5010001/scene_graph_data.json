@@ -1,0 +1,322 @@
+{
+  "72374502": {
+    "graphId": 72374502,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "Out",
+        "targetNode": 2,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "1c42cecb1a4f3dd04fc72d64bdf67120",
+    "nodes": {
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "db710029-4418-4bc6-9372-a37c9f45d926"
+      },
+      "1": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "completedQuest"
+        },
+        "_outputPortValues": [
+          "player"
+        ],
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "questId": 3503155
+        },
+        "uid": "311ba97d-2217-4bd7-a91b-685f098bb0e3"
+      },
+      "2": {
+        "_inputPortValues": {
+          "LevelItemId": 72376569,
+          "fieldValue": 1,
+          "fieldName": "state"
+        },
+        "_outputPortValues": [
+          "Value"
+        ],
+        "className": "SetLevelItemFieldNode",
+        "uid": "84ef2425-72a4-4473-85bd-e8cdc807301a"
+      }
+    }
+  },
+  "66657024": {
+    "graphId": 66657024,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "3",
+        "targetNode": 11,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Out",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "Out",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 5,
+        "sourcePortName": "0",
+        "targetNode": 6,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "1",
+        "targetNode": 7,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "2",
+        "targetNode": 8,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "3",
+        "targetNode": 9,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "4",
+        "targetNode": 10,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 11,
+        "sourcePortName": "Out",
+        "targetNode": 12,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 13,
+        "sourcePortName": "Value",
+        "targetNode": 5,
+        "targetPortName": "Value"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "f854a1bfab349f9e186aab2823a3783d",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {
+          "Value": 2
+        },
+        "_outputPortValues": [
+          "Phase"
+        ],
+        "className": "SetSandboxPhaseNode",
+        "uid": "cc5e0234-4495-4381-b655-bca002eef9bd"
+      },
+      "4": {
+        "_inputPortValues": {
+          "LevelItemId": 64667305,
+          "DoOnce": false,
+          "fieldName": "state",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "state"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "9965eb51-860d-4049-8fb2-1468bd431e11"
+      },
+      "6": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "05d0a878-4e70-4d9b-a1dc-2b73121b2e8a",
+        "portCount": 4
+      },
+      "10": {
+        "_inputPortValues": {
+          "EventName": "setNpcBehaviorStatus"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "f2559838-b3f9-4720-bbb1-eb91ec1f7c98",
+        "actionData": {
+          "eventParams": [
+            66657012,
+            35030104,
+            1
+          ]
+        }
+      },
+      "7": {
+        "_inputPortValues": {
+          "EventName": "setNpcBehaviorStatus"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "521b8052-6c4f-46c3-88c3-3dac2f415e2e",
+        "actionData": {
+          "eventParams": [
+            66656996,
+            35030101,
+            1
+          ]
+        }
+      },
+      "13": {
+        "_inputPortValues": {},
+        "SandboxId": 66656971,
+        "className": "GetSandboxPhaseNode",
+        "uid": "0abf792c-ddc8-4ad3-b1b0-c1bc25b0cfa2",
+        "_outputPortValues": [
+          "Value"
+        ]
+      },
+      "8": {
+        "_inputPortValues": {
+          "EventName": "setNpcBehaviorStatus"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "d94a0887-5a51-484a-a209-52fa04d8564d",
+        "actionData": {
+          "eventParams": [
+            66656994,
+            35030102,
+            1
+          ]
+        }
+      },
+      "12": {
+        "_inputPortValues": {
+          "Success": true
+        },
+        "_outputPortValues": {},
+        "className": "GraphEndNode",
+        "uid": "14b131c8-8750-405b-9e70-b9f8b632e2c0"
+      },
+      "9": {
+        "_inputPortValues": {
+          "EventName": "setNpcBehaviorStatus"
+        },
+        "_outputPortValues": {},
+        "className": "PlayerEventNode",
+        "uid": "1accc4bb-6c60-4639-99b7-9b48d86a6872",
+        "actionData": {
+          "eventParams": [
+            66657014,
+            35030103,
+            1
+          ]
+        }
+      },
+      "11": {
+        "_inputPortValues": {
+          "LevelItemId": 0,
+          "DoOnce": true,
+          "TimeOutSecond": 0,
+          "SandboxId": 66656971,
+          "EventName": "completedQuest"
+        },
+        "_outputPortValues": [
+          "player"
+        ],
+        "className": "ListenEventSaveStateNode",
+        "eventParams": {
+          "questId": 3503001
+        },
+        "uid": "0adfa867-839a-42bb-9739-acb9d20c0f27"
+      },
+      "5": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchIntNode",
+        "startInt": 0,
+        "uid": "bcbee621-e57b-4974-a41e-09ce4c1b3049",
+        "endInt": 1
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "3becee1f-267e-45b1-8078-736f3dc13100"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "5e6ece6e-8864-4869-b609-1109ed9458ab",
+        "portCount": 3
+      },
+      "2": {
+        "_inputPortValues": {
+          "LevelItemId": 0,
+          "DoOnce": true,
+          "TimeOutSecond": 0,
+          "SandboxId": 66656971,
+          "EventName": "completedQuest"
+        },
+        "_outputPortValues": [
+          "player"
+        ],
+        "className": "ListenEventSaveStateNode",
+        "eventParams": {
+          "questId": 3503036
+        },
+        "uid": "c4f23fe0-26a8-48dc-96a2-904af9f7d5ee"
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "key": "delay1111",
+      "duration": 0.01,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "07c1f387-dbda-46e9-b76b-167ec986f614",
+      "name": "addEntityTimer"
+    },
+    "4": {
+      "actionIds": [
+        2,
+        13,
+        37
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "a1f59583-8ab9-4015-b14e-00e8cd24cd8b",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "10": {
+      "UID": "57968cea-3478-475e-8df2-45ff291d3410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          36,
+          16,
+          8
+        ]
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "0febe82e-e8fc-477b-9120-50343e8fbb83",
+      "effectId": "Eff_Parmon_10045_Skill_LotusLeafEssence",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "1680266a-4b6d-47a9-ab0e-3fb6ef6c7de6",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "94147779-24b6-44d0-a0d4-10fd0dae1ddb",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "8": {
+      "target": "OWNER",
+      "actionIds": [
+        7
+      ],
+      "attributeName": "hp_cur",
+      "UID": "bd285c7c-27e5-4e3a-9834-6afdd5792e9c",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 8
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5e2670ce-228d-4bd2-97b1-690973343a99",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_LotusLeafEssence_End",
+      "NodeID": 37
+    },
+    "36": {
+      "actionIds": [
+        35
+      ],
+      "name": "registerDeadEvent",
+      "UID": "2c481c69-aab5-43a0-be72-701505de3eeb",
+      "target": "MASTER",
+      "NodeID": 36
+    },
+    "35": {
+      "UID": "dae472dc-f447-4257-b291-ad7439eae66b",
+      "name": "destroyEntity",
+      "NodeID": 35
+    },
+    "32": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "6339187b-4a86-4d1b-8758-7cebbd7f19e5",
+      "NodeID": 32,
+      "lValue": {
+        "UID": "78939778-5388-4d4e-ad29-73609f356a1e",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 31
+      }
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        -0.5,
+        0
+      ],
+      "templateId": 10451401,
+      "NodeID": 13,
+      "UID": "d931fc18-284f-4958-95fe-cc43931011e6",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Creation",
+      "stick": 0,
+      "pos": "OWNER",
+      "name": "createEntity"
+    },
+    "34": {
+      "UID": "7b039b69-8aa0-4ee2-ab5f-61b89bb3923d",
+      "target": "MASTER",
+      "name": "isTargetAlive",
+      "NodeID": 34
+    },
+    "2": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        -0.5,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "7b6e66ec-7348-44c9-9080-b8643a229c3e",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal",
+      "scale": 2,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_210451601",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    10
+  ],
+  "layer": "Base",
+  "length": 9999
+}

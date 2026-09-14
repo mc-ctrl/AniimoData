@@ -1,0 +1,66 @@
+[
+  {
+    "stageInfo": [
+      [
+        0.1,
+        "Eff_Env_Avatar_GrabEgg_NestBlueSamll"
+      ],
+      [
+        0.3,
+        "Eff_Env_Avatar_GrabEgg_NestPurpleSmall"
+      ]
+    ]
+  },
+  {
+    "stageInfo": [
+      [
+        0.1,
+        "Eff_Env_Avatar_GrabEgg_NestBlueSamll"
+      ],
+      [
+        0.3,
+        "Eff_Env_Avatar_GrabEgg_NestPurpleSmall"
+      ],
+      [
+        0.7,
+        "Eff_Env_Avatar_GrabEgg_NestGoldSmall"
+      ]
+    ]
+  },
+  {
+    "stageInfo": [
+      [
+        0.1,
+        "Eff_Env_Avatar_GrabEgg_NestBlueSamll"
+      ],
+      [
+        0.3,
+        "Eff_Env_Avatar_GrabEgg_NestPurpleSmall"
+      ],
+      [
+        0.5,
+        "Eff_Env_Avatar_GrabEgg_NestGoldSmall"
+      ]
+    ]
+  },
+  {
+    "stageInfo": [
+      [
+        0.1,
+        "Eff_Env_Avatar_GrabEgg_NestBlueSamll"
+      ],
+      [
+        0.3,
+        "Eff_Env_Avatar_GrabEgg_NestPurpleSmall"
+      ],
+      [
+        0.5,
+        "Eff_Env_Avatar_GrabEgg_NestGoldSmall"
+      ],
+      [
+        0.7,
+        "Eff_Env_Avatar_GrabEgg_NestHongSmall"
+      ]
+    ]
+  }
+]

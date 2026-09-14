@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010028",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    3
+  ],
+  "UID": "ec23ec84-f852-42d1-a77c-63bb70127d10",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "d6071345-fa20-4e5b-abf4-4fb147e99d79",
+      "name": "doActionsByConditions",
+      "NodeID": 3,
+      "elseActionIds": [
+        2
+      ]
+    },
+    "4": {
+      "name": "hasBuffTag",
+      "UID": "29c968c9-a096-4033-b6ef-c95e307b4440",
+      "target": "OWNER",
+      "NodeID": 4,
+      "buffTag": 4
+    },
+    "6": {
+      "delay": 5,
+      "interval": {
+        "calcId": 270010028,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 5,
+        "UID": "09cb46cb-7cd9-4151-bca5-40d50035b2a1",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "1bf461b4-cdd5-4193-82bd-89c4a1039ea4",
+      "name": "buffStartThink",
+      "NodeID": 6
+    },
+    "5": {
+      "calcId": 270010028,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 5,
+      "UID": "09cb46cb-7cd9-4151-bca5-40d50035b2a1",
+      "name": "getParamByLuaConfig"
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 270010032,
+      "NodeID": 2,
+      "UID": "d8258813-99e3-474c-853c-58410cdab817",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 25,
+  "NodeID": 0,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10454_Skill_ClayBall",
+  "nodeMap": {
+    "41": {
+      "name": "stopSoundStr",
+      "UID": "b7b801c9-79c9-4a8b-9408-c35073ffa14e",
+      "soundId": "SFX_Combat_10454_Skill_ClayBall_Loop",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "47ffa31c-6483-4091-b786-5d6f1e27debc",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_ClayBall_Hit",
+      "NodeID": 42
+    },
+    "25": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14540301,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      },
+      "UID": "d49c07d3-1746-4c28-adf4-544f52fc7e86",
+      "target": "TARGET",
+      "NodeID": 25,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10454_Skill_Shouji_01",
+            "rotAngle": 0,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 8,
+        "impulseId": 3001
+      }
+    },
+    "50": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "72f8477b-5a89-46ef-96d8-02a2a822c740",
+      "effectId": "Eff_Parmon_10454_Skill_Shouji_01",
+      "speed": 1.01,
+      "NodeID": 50
+    }
+  },
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "defaultHitSoundType": "s",
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    50
+  ],
+  "onProjectileHitIds": [
+    25,
+    41,
+    42
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "onProjectileGroundedIds": [
+    25,
+    41,
+    42
+  ],
+  "tickInterval": 0,
+  "BPName": "ability_14540301",
+  "startSleepTime": 0,
+  "angularIncreaseDuration": 1,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3001,
+  "acceleration": 0
+}

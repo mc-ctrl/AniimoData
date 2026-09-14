@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_Monster_Flyspeed"
+  ],
+  "searchTargetRangeRadius": 30,
+  "BPName": "ability_800231100",
+  "name": "",
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "searchTargetRangeUp": 5,
+  "abilityParamId": 48023020,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 10,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 800231100001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

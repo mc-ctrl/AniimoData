@@ -1,0 +1,142 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "c25eedba-1b57-46d4-9b73-d3a22dcb31c6",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 37
+    },
+    "4": {
+      "UID": "78cdc76b-05e9-4701-9852-348a13064fc7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8,
+          2,
+          40,
+          51
+        ]
+      },
+      "NodeID": 4
+    },
+    "39": {
+      "UID": "974cb7c2-602b-4c40-8e99-2d0f5d2a8f56",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          37,
+          43,
+          44
+        ]
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "14129bfd-fe7c-47e3-b6c5-270c6a8fe94a",
+      "effectId": "Eff_Avatar_Female_Skill_DestinyRoll01_Appear",
+      "speed": 1,
+      "NodeID": 40
+    },
+    "35": {
+      "UID": "0dcb371e-9c10-413a-9249-edbc8fca20b8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "NodeID": 35
+    },
+    "16": {
+      "timelineId": 9200004002,
+      "name": "jumpToNextTimeline",
+      "UID": "d601dad0-0353-4993-b8d7-3f237aa07f63",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "lockTarget": "CURPET",
+      "name": "lockTarget",
+      "UID": "b4453320-1295-4f84-90c7-175fb5c89217",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "key": "dice",
+      "eventName": "testEve",
+      "NodeID": 17,
+      "UID": "a7aefb26-9608-4445-b496-a044be95890f",
+      "randomValType": 1,
+      "name": "triggerOrRegisterAsyncEvent",
+      "actionIds": [
+        16
+      ]
+    },
+    "43": {
+      "name": "stopEffectStr",
+      "UID": "ae01e1f0-3e3f-42ca-ab14-da2cf66d1c34",
+      "effectId": "Eff_Avatar_Female_Skill_DestinyRoll_Loop",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 18,
+      "UID": "fb8d57b1-23cb-4f9a-919a-24814c207171"
+    },
+    "44": {
+      "name": "dropEffectStr",
+      "UID": "62328452-ad06-4ba9-9a1a-3f10e7d821b5",
+      "effectId": "Eff_Avatar_Female_Skill_DestinyRoll_Loop",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "33": {
+      "UID": "074ab462-0533-4d4b-b501-bdf047aa0bd6",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 33
+    },
+    "51": {
+      "key": "dice",
+      "triggerEventName": "testEve",
+      "name": "genRandomIntForAsyncActions",
+      "UID": "a73ca7f1-7c5b-4615-8e71-33ed6b8d042b",
+      "randomMinVal": 1,
+      "NodeID": 51,
+      "randomMaxVal": 6
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d6a34069-0716-41a3-87eb-e23865c3a8a7",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_DestinyRoll_Start"
+    }
+  },
+  "BPName": "ability_9200004",
+  "NodeID": 6,
+  "UID": "bed162a3-f37a-4299-a12f-bc7480d912df",
+  "eventIds": [
+    35,
+    4,
+    18,
+    39
+  ],
+  "layer": "Base",
+  "length": 3.74
+}

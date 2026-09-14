@@ -1,0 +1,39 @@
+{
+  "USE_ITEM": {
+    "trigger": 2,
+    "paramName": [
+      "道具ID",
+      "",
+      "运算符",
+      "数量"
+    ],
+    "displayName": "使用道具",
+    "refData": [
+      [
+        "Data.item_data",
+        [
+          "$L#itemName"
+        ]
+      ],
+      {},
+      [
+        "$O"
+      ],
+      {}
+    ],
+    "paramType": [
+      "I",
+      "",
+      "S",
+      "I"
+    ],
+    "desc": "使用道具（除分解外的消耗都算）",
+    "statsType": 0
+  },
+  "KILL_MONSTER": {
+    "trigger": 1,
+    "displayName": "击败怪物",
+    "desc": "击败怪物",
+    "statsType": 0
+  }
+}

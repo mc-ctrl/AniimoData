@@ -1,0 +1,608 @@
+[
+  {
+    "displayTime": 10,
+    "map": {},
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_11.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 1292096688,
+    "button": 1402596870
+  },
+  {
+    "displayTime": 10,
+    "map": {},
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_11.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 1713412633,
+    "button": 1328612026
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      501
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_6.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1601163361,
+    "button": 1863622705
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      501
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_11.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1313772313,
+    "button": 1515016020
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      501
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1854701524,
+    "button": 1432692181
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      501,
+      5010002
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 1809292956,
+    "button": 1268800582
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      501
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_6.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1284846776,
+    "button": 2062458308
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      501
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_11.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1511348127,
+    "button": 1700125207
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 2104449423,
+    "button": 1374095895
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1922688300,
+    "button": 1608223543
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1097937740,
+    "button": 1613694358
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1474232335,
+    "button": 2055177421
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1543761631,
+    "button": 1536620323
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1295728268,
+    "button": 1203337910
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      -1
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_Temple_1.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 2057902707,
+    "button": 1410266976
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      -1
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_Temple_2.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 1250894839,
+    "button": 1474729357
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3004,
+      3005,
+      20031,
+      20032,
+      20033,
+      20034,
+      20035,
+      20036,
+      20037,
+      20038,
+      20039,
+      20040,
+      20041,
+      20042,
+      20043,
+      20044,
+      20045,
+      20046,
+      20047,
+      20048,
+      20049,
+      20050,
+      20051,
+      20052,
+      20053,
+      20054,
+      20055,
+      20056,
+      20057,
+      20058,
+      20059,
+      20060,
+      20100,
+      29999
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_GrabEgg.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 1401979564,
+    "button": 1888558862
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_10.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 1800898346,
+    "button": 1223733535
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      501,
+      1040
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_6.png"
+    ],
+    "level": [
+      1,
+      99
+    ],
+    "txt": 1959042641,
+    "button": 1198405682
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3000
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_12.png"
+    ],
+    "level": [
+      10,
+      99
+    ],
+    "txt": 2025433804,
+    "button": 2120348834
+  },
+  {
+    "displayTime": 10,
+    "map": {},
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_11.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": [
+      5,
+      99
+    ],
+    "txt": 1264973682,
+    "button": 2060257791
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3002
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_11.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": {},
+    "txt": 1423795362,
+    "button": 1875222756
+  },
+  {
+    "displayTime": 10,
+    "map": [
+      3002
+    ],
+    "weight": 50,
+    "platform": [
+      1,
+      2,
+      4
+    ],
+    "image": [
+      "$UI_LoadingBg_1.png",
+      "$UI_LoadingBg_2.png",
+      "$UI_LoadingBg_3.png",
+      "$UI_LoadingBg_4.png",
+      "$UI_LoadingBg_5.png",
+      "$UI_LoadingBg_11.png",
+      "$UI_LoadingBg_7.png",
+      "$UI_LoadingBg_8.png",
+      "$UI_LoadingBg_9.png",
+      "$UI_LoadingBg_6.png",
+      "$UI_LoadingBg_13.png"
+    ],
+    "level": {},
+    "txt": 1144698079,
+    "button": 2066751330
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "39882450": {
+    "createType": 1,
+    "templateId": 10001,
+    "position": [
+      -7.97,
+      0.18,
+      0.93
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "staticId": 39882450,
+    "sandboxId": 39882429
+  },
+  "39882451": {
+    "createType": 1,
+    "templateId": 38,
+    "position": [
+      -14.12,
+      0,
+      -22.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "staticId": 39882451,
+    "sandboxId": 39882429
+  },
+  "39882448": {
+    "createType": 1,
+    "templateId": 10001,
+    "position": [
+      0.5,
+      0.23,
+      3.45
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "staticId": 39882448,
+    "sandboxId": 39882429
+  },
+  "39882449": {
+    "createType": 1,
+    "templateId": 10001,
+    "position": [
+      -6.03,
+      0.26,
+      2.85
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "staticId": 39882449,
+    "sandboxId": 39882429
+  }
+}

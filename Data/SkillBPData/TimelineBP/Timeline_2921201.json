@@ -1,0 +1,96 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "27": {
+      "targetA": "OWNER",
+      "targetB": {
+        "key": "target",
+        "name": "getCacheVal",
+        "UID": "958c73b7-bb92-443e-9c01-023cb7b596aa",
+        "target": "MASTER",
+        "NodeID": 24
+      },
+      "NodeID": 27,
+      "UID": "898b9631-06db-444d-bb90-f9a8169611aa",
+      "name": "checkDistanceLess",
+      "ignoreYAxis": true,
+      "distance": 0.5
+    },
+    "28": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 28,
+      "UID": "f8b62552-36a9-4930-88ce-d53584b9e14e",
+      "effectId": "Eff_Parmon_10191_Skill_ShellSmash_Ground_Water",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "9": {
+      "timelineId": 2921201201,
+      "name": "jumpToNextTimeline",
+      "UID": "f0bebbab-4fd9-48ca-9361-b9be0070a7fb",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "3f526cfb-8a0b-42d5-b56a-42618ac1f268",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 10
+    },
+    "11": {
+      "eventType": "NotifyState",
+      "endTime": 11,
+      "NodeID": 11,
+      "UID": "1bff6661-915f-4f38-b005-3d576b9d4ec0",
+      "onUpdate": {
+        "actionIds": [
+          10
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.3
+    },
+    "25": {
+      "target": {
+        "key": "target",
+        "name": "getCacheVal",
+        "UID": "958c73b7-bb92-443e-9c01-023cb7b596aa",
+        "target": "MASTER",
+        "NodeID": 24
+      },
+      "name": "followTarget",
+      "UID": "f99285b6-6e38-4aec-8d35-9be6045a4e40",
+      "stopDistance": 0.1,
+      "NodeID": 25,
+      "followSpeed": 15
+    },
+    "26": {
+      "UID": "327ed0e8-7e12-4815-af44-1ce720f82d41",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "NodeID": 26
+    }
+  },
+  "BPName": "timeline_2921201",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    26,
+    11
+  ],
+  "layer": "Base",
+  "length": 11
+}

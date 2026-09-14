@@ -1,0 +1,41 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912030101",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "女巫草对附带寄生效果的敌人释放技能，会附带持续6s的减草抗效果",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "8975fd00-8a6f-4934-8123-3395dab368a1",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3
+    },
+    "5": {
+      "UID": "2025b0c3-4beb-46dc-81ac-8dc84a236326",
+      "name": "registerMergeBuffEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 5
+    },
+    "2": {
+      "target": "SRC",
+      "duration": 0,
+      "buffId": 912030102,
+      "NodeID": 2,
+      "UID": "dc7fde56-50b8-4223-ab12-c8ade4b66678",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "islandName": "调查海岛",
+    "islandTaskGroupId": 4001,
+    "petResearchTime": [
+      {
+        "3": 1764576000,
+        "1": 1764532800,
+        "2": 1764561600
+      },
+      {
+        "3": 1764576000,
+        "1": 1764532800,
+        "2": 1764561600
+      },
+      {
+        "3": 1765008000,
+        "1": 1764964800,
+        "2": 1764993600
+      },
+      {
+        "3": 1765094400,
+        "1": 1765051200,
+        "2": 1765080000
+      }
+    ],
+    "petResearchImage": [
+      "$UI_Img_Event_LeftTab_RecrdManaual.png",
+      "$UI_Img_Event_LeftTab_RecrdManaual.png",
+      "$UI_Img_Event_LeftTab_RecrdManaual.png",
+      "$UI_Img_Event_LeftTab_RecrdManaual.png"
+    ],
+    "petResearchName": [
+      "吊灯水母",
+      "星露丽",
+      "星露丽",
+      "星露丽"
+    ],
+    "petResearchTaskGroupId": [
+      4002,
+      4003,
+      4004,
+      4005
+    ],
+    "event": 1556,
+    "trainTitle": "海岛伊莫大调查",
+    "trainReward": 74018,
+    "islandDesc": "完成右侧所有任务，完成吊灯水母的调查",
+    "islandStartTime": {
+      "3": 1764576000,
+      "1": 1764532800,
+      "2": 1764561600
+    },
+    "trainDesc": -1367247764,
+    "petResearchDesc": [
+      "完成右侧所有任务，完成吊灯水母的调查",
+      "完成右侧所有任务，完成星露丽的调查",
+      "完成右侧所有任务，完成星露丽的调查",
+      "完成右侧所有任务，完成星露丽的调查"
+    ],
+    "islandImage": "$UI_Img_Event_LeftTab_RecrdManaual.png"
+  }
+]

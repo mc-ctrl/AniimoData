@@ -1,0 +1,123 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "246fa402-2070-4ba2-9469-f9834ea12784",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          16
+        ]
+      },
+      "NodeID": 4
+    },
+    "16": {
+      "targetPos": {
+        "UID": "8a7f86df-375a-4077-824d-cbc253b75140",
+        "target": "OWNER",
+        "name": "getTargetPosition",
+        "NodeID": 15
+      },
+      "name": "playSoundAtPos",
+      "UID": "d5c7fff6-8a84-49ef-8530-a2b932159755",
+      "soundId": "SFX_Parmon_10213_Attack04_02",
+      "NodeID": 16
+    },
+    "12": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2121311,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "36b2b476-a52a-4c91-8dac-2ff1773a42a4",
+      "target": "TARGET",
+      "NodeID": 12,
+      "attackData": {
+        "hitFrameFreezeId": 10022,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "elementType": 2,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30202
+      }
+    },
+    "10": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 12,
+      "NodeID": 10,
+      "UID": "3131e086-c2e2-4f00-8477-bd78da004bc5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        12
+      ]
+    },
+    "15": {
+      "UID": "8a7f86df-375a-4077-824d-cbc253b75140",
+      "target": "OWNER",
+      "name": "getTargetPosition",
+      "NodeID": 15
+    },
+    "7": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 3,
+      "NodeID": 7,
+      "UID": "3c134837-3f7d-4f6e-ae49-c8b4a53dffa0",
+      "onUpdate": {
+        "actionIds": {}
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          10
+        ]
+      }
+    },
+    "2": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c7836448-e456-40d6-b37e-4e8c16d45a6e",
+      "effectId": "Eff_Parmon_10213_Skill_Release_04",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2121311",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    4,
+    7
+  ],
+  "layer": "Base",
+  "length": 3
+}

@@ -1,0 +1,217 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "final_taken_dmg_dec_rate_v": 0,
+        "final_taken_dmg_inc_rate_v": 0
+      },
+      "calcInfoByLuaConfig": {
+        "id": 4021001,
+        "type": 1,
+        "final_taken_dmg_dec_rate_v": "param1",
+        "final_taken_dmg_inc_rate_v": "param0"
+      },
+      "UID": "cbf3e455-b878-45c4-ad05-c56f8ebf828f",
+      "name": "addBuffDynamicAttribute",
+      "isClearOld": true,
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "b437903f-bb7e-4726-8e01-66618f5069a4",
+      "name": "createList",
+      "list": [
+        {
+          "calcInfo": {
+            "final_taken_dmg_dec_rate_v": 0,
+            "final_taken_dmg_inc_rate_v": 0
+          },
+          "calcInfoByLuaConfig": {
+            "id": 4021001,
+            "type": 1,
+            "final_taken_dmg_dec_rate_v": "param1",
+            "final_taken_dmg_inc_rate_v": "param0"
+          },
+          "UID": "cbf3e455-b878-45c4-ad05-c56f8ebf828f",
+          "name": "addBuffDynamicAttribute",
+          "isClearOld": true,
+          "NodeID": 3
+        },
+        {
+          "calcInfo": {
+            "final_taken_dmg_dec_rate_v": 0,
+            "final_taken_dmg_inc_rate_v": 0
+          },
+          "calcInfoByLuaConfig": {
+            "id": 4021001,
+            "type": 1,
+            "final_taken_dmg_dec_rate_v": "param3",
+            "final_taken_dmg_inc_rate_v": "param2"
+          },
+          "UID": "add6efac-1600-4930-83c8-fd06e3eacdcc",
+          "name": "addBuffDynamicAttribute",
+          "isClearOld": true,
+          "NodeID": 12
+        },
+        {
+          "calcInfo": {
+            "final_taken_dmg_dec_rate_v": 0,
+            "final_taken_dmg_inc_rate_v": 0
+          },
+          "calcInfoByLuaConfig": {
+            "id": 4021001,
+            "type": 1,
+            "final_taken_dmg_dec_rate_v": "param5",
+            "final_taken_dmg_inc_rate_v": "param4"
+          },
+          "UID": "68d7e26f-05d9-47f4-8ae5-f44bc205424c",
+          "name": "addBuffDynamicAttribute",
+          "isClearOld": true,
+          "NodeID": 14
+        },
+        {
+          "calcInfo": {
+            "final_taken_dmg_dec_rate_v": 0,
+            "final_taken_dmg_inc_rate_v": 0
+          },
+          "calcInfoByLuaConfig": {
+            "id": 4021001,
+            "type": 1,
+            "final_taken_dmg_dec_rate_v": "param7",
+            "final_taken_dmg_inc_rate_v": "param6"
+          },
+          "UID": "0bc0c212-cbb0-4e71-921e-e17ca064e5b9",
+          "name": "addBuffDynamicAttribute",
+          "isClearOld": true,
+          "NodeID": 16
+        }
+      ],
+      "NodeID": 4
+    },
+    "14": {
+      "calcInfo": {
+        "final_taken_dmg_dec_rate_v": 0,
+        "final_taken_dmg_inc_rate_v": 0
+      },
+      "calcInfoByLuaConfig": {
+        "id": 4021001,
+        "type": 1,
+        "final_taken_dmg_dec_rate_v": "param5",
+        "final_taken_dmg_inc_rate_v": "param4"
+      },
+      "UID": "68d7e26f-05d9-47f4-8ae5-f44bc205424c",
+      "name": "addBuffDynamicAttribute",
+      "isClearOld": true,
+      "NodeID": 14
+    },
+    "16": {
+      "calcInfo": {
+        "final_taken_dmg_dec_rate_v": 0,
+        "final_taken_dmg_inc_rate_v": 0
+      },
+      "calcInfoByLuaConfig": {
+        "id": 4021001,
+        "type": 1,
+        "final_taken_dmg_dec_rate_v": "param7",
+        "final_taken_dmg_inc_rate_v": "param6"
+      },
+      "UID": "0bc0c212-cbb0-4e71-921e-e17ca064e5b9",
+      "name": "addBuffDynamicAttribute",
+      "isClearOld": true,
+      "NodeID": 16
+    },
+    "8": {
+      "key": "4021001",
+      "name": "setCacheVal",
+      "UID": "e4320569-f871-4d51-8d3c-af32e5636036",
+      "target": "OWNER",
+      "val": 4,
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "2170347e-d5c5-413f-acc1-022ee78b6354",
+      "name": "getNpcDuelChallengeCount",
+      "NodeID": 17
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "76a0f909-dced-46af-bfbe-5bb6a9f02d50",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 9
+    },
+    "18": {
+      "rValue": 4,
+      "name": "greater",
+      "UID": "a6629ac8-be8b-4698-9195-778a489f0c9f",
+      "NodeID": 18,
+      "lValue": {
+        "UID": "2170347e-d5c5-413f-acc1-022ee78b6354",
+        "name": "getNpcDuelChallengeCount",
+        "NodeID": 17
+      }
+    },
+    "5": {
+      "NodeID": 5,
+      "UID": "fd5df7d8-dc70-43c1-9edb-fab6610f8acd",
+      "name": "doActionByIndex",
+      "actionsListId": 4,
+      "index": {
+        "key": "4021001",
+        "name": "getCacheVal",
+        "UID": "34eccce0-65c9-4e23-b2af-53d906b42b7d",
+        "target": "OWNER",
+        "NodeID": 10
+      }
+    },
+    "19": {
+      "UID": "8f29cca0-646e-4b7b-bf71-d0b8e8bc9955",
+      "name": "getNpcDuelChallengeCount",
+      "NodeID": 19
+    },
+    "20": {
+      "key": "4021001",
+      "name": "setCacheVal",
+      "UID": "6d3c9d24-42f9-4e45-be5a-f2ec22800e53",
+      "target": "OWNER",
+      "val": {
+        "UID": "8f29cca0-646e-4b7b-bf71-d0b8e8bc9955",
+        "name": "getNpcDuelChallengeCount",
+        "NodeID": 19
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "calcInfo": {
+        "final_taken_dmg_dec_rate_v": 0,
+        "final_taken_dmg_inc_rate_v": 0
+      },
+      "calcInfoByLuaConfig": {
+        "id": 4021001,
+        "type": 1,
+        "final_taken_dmg_dec_rate_v": "param3",
+        "final_taken_dmg_inc_rate_v": "param2"
+      },
+      "UID": "add6efac-1600-4930-83c8-fd06e3eacdcc",
+      "name": "addBuffDynamicAttribute",
+      "isClearOld": true,
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_4021001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    5
+  ]
+}

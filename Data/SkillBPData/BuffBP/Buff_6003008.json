@@ -1,0 +1,129 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003008",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 6003009,
+      "name": "removeBuff",
+      "UID": "2a564cb4-6114-4024-9d3a-442095df756b",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6003009,
+      "NodeID": 13,
+      "UID": "9c403b72-c564-460c-a5c7-9b195ce01f8f",
+      "layer": {
+        "key": "6003009",
+        "name": "getCacheVal",
+        "UID": "ea203338-d83b-4759-8033-16976c796c51",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "name": "addBuff",
+      "level": {
+        "UID": "8eee61ec-3cc7-48ae-9343-6a23df43eed9",
+        "target": "OWNER",
+        "name": "getBuffLevel",
+        "NodeID": 12
+      }
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6003009,
+      "NodeID": 6,
+      "UID": "f75eeec7-2547-43de-85bc-c21b28384582",
+      "layer": 1,
+      "name": "addBuff",
+      "level": {
+        "UID": "b7dbbcdb-e195-4962-b464-ce74427efc9b",
+        "target": "OWNER",
+        "name": "getBuffLevel",
+        "NodeID": 5
+      }
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "f0390ec4-dde6-4e18-ad35-c9baf206ae5c",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "eventName": "onKill",
+      "name": "getEventCombatContextTarget",
+      "UID": "109259d7-b168-475c-9582-f7046ff7764e",
+      "target": "TARGET",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "44e3c354-92f4-441d-bd98-f153eb295672",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "fc33988c-ad42-4878-af6a-2ded5e87f249",
+      "target": {
+        "eventName": "onKill",
+        "name": "getEventCombatContextTarget",
+        "UID": "109259d7-b168-475c-9582-f7046ff7764e",
+        "target": "TARGET",
+        "NodeID": 16
+      },
+      "NodeID": 17
+    },
+    "11": {
+      "key": "6003009",
+      "name": "setCacheVal",
+      "UID": "fda340fd-0fe1-4aa6-883b-ecaf5bf82fa0",
+      "target": "OWNER",
+      "val": {
+        "templateId": 6003009,
+        "name": "getBuffLayer",
+        "UID": "1b0cf835-7f69-484e-b586-0541852962b5",
+        "target": "OWNER",
+        "NodeID": 10
+      },
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "b7dbbcdb-e195-4962-b464-ce74427efc9b",
+      "target": "OWNER",
+      "name": "getBuffLevel",
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "8eee61ec-3cc7-48ae-9343-6a23df43eed9",
+      "target": "OWNER",
+      "name": "getBuffLevel",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    11,
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13,
+    8
+  ]
+}

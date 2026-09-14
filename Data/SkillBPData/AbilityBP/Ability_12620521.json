@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_12620521",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12620521001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Blast_Boss"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10261_Attack_Hit",
+    "Eff_Parmon_10262_Skill_Blast_02",
+    "Eff_Parmon_10262_Skill_Blast_01"
+  ],
+  "searchRelation": 2,
+  "name": "原地爆炸",
+  "searchTargetRangeRadius": 2.5,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10900360
+}

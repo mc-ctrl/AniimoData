@@ -1,0 +1,120 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2105512",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "NodeID": 5,
+      "UID": "3a68d1bc-79e7-4e72-9a9d-4d7c49486199",
+      "applyAbilityIds": [
+        10550100,
+        10550101,
+        10550200,
+        10550201,
+        10550300
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": -1,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "e887746f-7b21-427a-b6ca-81b965a9a5a2",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Debuff02",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "10": {
+      "UID": "1b252a22-83b2-40f8-88e6-13e60e547b88",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 10
+    },
+    "7": {
+      "NodeID": 7,
+      "UID": "4c5af670-2d5b-4425-b8b3-1d0c2555700e",
+      "applyAbilityIds": [
+        10550100,
+        10550101,
+        10550200,
+        10550201,
+        10550300
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "d9b84bbe-95b0-4033-bf27-128b3cff833a",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "92b6d765-9576-47e9-a510-1901eb4f33ea",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "13": {
+      "key": "2105510",
+      "name": "setCacheVal",
+      "UID": "d7933a7f-b3d4-4e34-8d13-9f451569622e",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 13
+    },
+    "11": {
+      "UID": "9ab70609-afbb-4839-92e2-c733eefaeca9",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 11
+    },
+    "12": {
+      "UID": "6c951bc6-ec9d-4a9c-8b8b-079e118f9a22",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 12
+    },
+    "2": {
+      "overrideAbilityType": -9999,
+      "name": "setEntityOverrideDamageAbilityType",
+      "UID": "1a4e940a-c9ee-464d-a546-199ba6e0148f",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    2,
+    4,
+    12
+  ],
+  "onBuffStartIds": [
+    13,
+    5,
+    9,
+    11
+  ]
+}

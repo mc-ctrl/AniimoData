@@ -1,0 +1,118 @@
+[
+  {
+    "playerNumLimit": 2,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge1.png",
+    "name": 1651859920,
+    "desc": 1762847134,
+    "color": 0,
+    "funLimit": 100,
+    "funWeight": [
+      99,
+      40
+    ]
+  },
+  {
+    "playerNumLimit": 1,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge1.png",
+    "name": 1088876785,
+    "desc": 1277896829,
+    "color": 0,
+    "funLimit": 100,
+    "funWeight": [
+      98
+    ]
+  },
+  {
+    "playerNumLimit": 2,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge5.png",
+    "name": 1866815777,
+    "desc": 1280748158,
+    "color": 1,
+    "funLimit": 200,
+    "funWeight": [
+      97,
+      39
+    ]
+  },
+  {
+    "playerNumLimit": 1,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge1.png",
+    "name": 1526645517,
+    "desc": 1478152583,
+    "color": 0,
+    "funLimit": 1,
+    "funWeight": [
+      90
+    ]
+  },
+  {
+    "playerNumLimit": 2,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge1.png",
+    "name": 1880305865,
+    "desc": 1180889105,
+    "color": 0,
+    "funLimit": 1,
+    "funWeight": [
+      50,
+      9
+    ]
+  },
+  {
+    "playerNumLimit": 4,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge8.png",
+    "name": 1147530367,
+    "desc": 2066411681,
+    "color": 3,
+    "funLimit": 1,
+    "funWeight": [
+      10,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "playerNumLimit": 1,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge6.png",
+    "name": 2074984986,
+    "desc": 2034504454,
+    "color": 2,
+    "funLimit": 1,
+    "funWeight": [
+      60
+    ]
+  },
+  {
+    "playerNumLimit": 1,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge8.png",
+    "name": 1338342078,
+    "desc": 1264653166,
+    "color": 3,
+    "funLimit": 1,
+    "funWeight": [
+      5
+    ]
+  },
+  {
+    "playerNumLimit": 1,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge9.png",
+    "name": 1088342660,
+    "desc": 1885939519,
+    "color": 4,
+    "funLimit": 0,
+    "funWeight": [
+      4
+    ]
+  },
+  {
+    "playerNumLimit": 1,
+    "titleIcon": "$UI_Icon_BossMod_ResultCard_badge9.png",
+    "name": 1335154422,
+    "desc": 1743797650,
+    "color": 4,
+    "funLimit": 1,
+    "funWeight": [
+      3
+    ]
+  }
+]

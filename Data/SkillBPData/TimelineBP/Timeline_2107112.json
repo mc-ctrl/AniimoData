@@ -1,0 +1,208 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.4,
+      "NodeID": 22,
+      "UID": "a421d480-32a3-4891-af6e-63840f27a7a3"
+    },
+    "4": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.2
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 9,
+        "impulseId": 2001
+      },
+      "UID": "0d2d1bc1-8a57-426b-b867-9ac5d6053860",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 4
+    },
+    "6": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 4,
+      "NodeID": 6,
+      "UID": "e5a610b2-70a8-4e46-a243-4c840a704270",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.4,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        4
+      ]
+    },
+    "41": {
+      "name": "stopSoundStr",
+      "UID": "403faf48-39b7-4c71-b182-f1e418a52975",
+      "soundId": "parmon_10073_skill_wind_loop",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "UID": "b06784a9-ceff-4acf-9b8b-54566594cb35",
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 42
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7,
+      "UID": "43590270-9fcc-486c-a57b-fba5181f3bf0",
+      "cd": 0.4,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "893cdc90-828f-4ce4-acef-e3dd9a821367",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_loop",
+      "NodeID": 16
+    },
+    "9": {
+      "tickInterval": 0.25,
+      "eventType": "NotifyState",
+      "endTime": 3,
+      "NodeID": 9,
+      "UID": "1ec6d47a-6e80-4f68-a014-0aae6128a4e8",
+      "onUpdate": {
+        "actionIds": [
+          36,
+          7
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          36,
+          7
+        ]
+      }
+    },
+    "18": {
+      "UID": "c89c932a-4dce-41a9-bb85-829c277936c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23,
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "23": {
+      "scale": 0.75,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "870137ae-8f3b-45b8-83b4-2f4aebf7318a",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind05",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "34": {
+      "notBlockInput": true,
+      "duration": 0.4,
+      "NodeID": 34,
+      "UID": "f3900061-a192-43fa-94e3-83f6db7b921c",
+      "target": "TARGET",
+      "name": "forceDisplacement",
+      "speed": 3,
+      "displacementTarget": "OWNER",
+      "displacementDir": "IN"
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "2cdff757-ba18-4064-9db1-16d367137ab8",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind05",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "36": {
+      "actionIds": [
+        34
+      ],
+      "name": "actOnTargets",
+      "UID": "04111a71-91e8-4bbc-9082-cf0695c42784",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.25,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2107112",
+  "NodeID": 1,
+  "UID": "fed0390b-61d5-41f0-b009-32f669367ff4",
+  "eventIds": [
+    18,
+    9,
+    42,
+    22
+  ],
+  "layer": "Base",
+  "length": 3.5
+}

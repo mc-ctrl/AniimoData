@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_12320002",
+  "NodeID": 1,
+  "UID": "c6d9d9dc-72e8-4e2a-839a-2318877d41da",
+  "abilityParamId": 14400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12320002001,
+      "name": "setCombatActionTimeline",
+      "UID": "0f453f32-5594-4e9c-bc69-5c41920f0f75",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10232_Attack03",
+    "Eff_Parmon_10231_Attack03_Bullet_End",
+    "Eff_Parmon_10232_Attack03_Bullet",
+    "Eff_Hit_Wind_Blunt",
+    "Eff_Parmon_10232_Attack03_01"
+  ],
+  "searchRelation": 2,
+  "name": "风系远程攻击",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "searchTargetRangeDown": 3
+}

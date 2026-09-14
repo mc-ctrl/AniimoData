@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120314",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "desc": "NPC对决_女巫草_攻击命中减能量",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "2112db0c-748f-4bd1-b36e-06f7eecb8f1d",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 8
+    },
+    "4": {
+      "value": 2.5,
+      "epCostReason": 1,
+      "name": "costEp",
+      "UID": "60df2377-d395-4485-9c8e-ae7e3547cc9c",
+      "target": {
+        "UID": "75893321-d4c8-4b7f-bb8a-d777b1591c84",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 3
+      },
+      "NodeID": 4
+    },
+    "7": {
+      "UID": "508ebe4c-9f51-4c80-b252-df64fcd5fc83",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "6": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "c76af33b-e2d4-453d-8a96-1945c74b9c93",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

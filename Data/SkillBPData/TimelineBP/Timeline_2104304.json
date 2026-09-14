@@ -1,0 +1,167 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "007127dc-bf5a-42b2-a583-27b563b6c583",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_laricander_skill_ultimate_loop",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "42b2d6f3-d7b8-4174-9c09-0f43c87f845f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "name": "stopSoundStr",
+      "UID": "a722bb91-b595-4b31-8aed-aec87e1ad20f",
+      "soundId": "parmon_laricander_skill_ultimate_loop",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 9104307,
+      "NodeID": 10,
+      "UID": "f34839d8-31e8-42a4-ab05-5d472a28d0db",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "buffId": 9104307,
+      "name": "removeBuff",
+      "UID": "beb4b7b4-b845-47ae-883c-c7ab22a2df73",
+      "target": "TrapTarget",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "f64aabd4-f964-4142-928a-e3cea4cfe6b1",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "name": "isActorType",
+      "UID": "3f69b34c-25f9-4b36-9402-417dd3f1e736",
+      "target": "OWNER",
+      "NodeID": 16,
+      "actorType": 2
+    },
+    "8": {
+      "name": "stopSoundStr",
+      "UID": "5acfd181-12ad-49c8-8ff8-97180657448c",
+      "soundId": "parmon_laricander_skill_ultimate_loop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "target": "TrapTarget",
+      "duration": 6,
+      "buffId": 9104307,
+      "NodeID": 17,
+      "UID": "bace0e7c-05ec-411f-a655-a0b1bea2bb3f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 9,
+      "UID": "a11dfa4d-3868-49fe-b2f8-ec5af5dacb07"
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 13,
+      "UID": "b0c51e83-023c-4111-95a7-ef1be46c597b",
+      "enterTrapActionIds": [
+        12
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        15
+      ],
+      "shapeArgs": [
+        7
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 1,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "14": {
+      "UID": "3088209d-4323-4de2-9baf-f0bd309aea0d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 14
+    },
+    "20": {
+      "key": "hp10043",
+      "name": "setCacheVal",
+      "UID": "b72ffdcc-0845-460b-b260-e0ac9852efd4",
+      "target": "TrapTarget",
+      "val": {
+        "name": "getAttribute",
+        "UID": "2d75edba-8844-4909-b8a1-393e8b830967",
+        "target": "MASTER",
+        "NodeID": 19,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "actionIds": [
+        20,
+        10
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "1e5d50d9-9d1e-467c-8aa3-f3d7c360321e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20,
+        17
+      ],
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2104304",
+  "NodeID": 1,
+  "UID": "bcb34384-36d7-4e2f-a28e-ebc64b242047",
+  "eventIds": [
+    4,
+    14,
+    7,
+    9
+  ],
+  "layer": "Base",
+  "length": 9999
+}

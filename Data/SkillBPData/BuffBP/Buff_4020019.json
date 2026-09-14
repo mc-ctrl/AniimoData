@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020019",
+  "calcInfoByLuaConfig": {
+    "id": 4020019,
+    "type": 1,
+    "taken_skill_dmg_inc_rate_v": "param1",
+    "sp_inc_rate_v": "param0"
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

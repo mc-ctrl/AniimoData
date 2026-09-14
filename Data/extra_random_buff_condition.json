@@ -1,0 +1,65 @@
+{
+  "3": {
+    "triggerNum": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "transformSkill": 9400003
+  },
+  "4": {
+    "triggerNum": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "transformSkill": 9400004
+  },
+  "6": {
+    "triggerNum": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "transformSkill": 9400006
+  },
+  "5": {
+    "triggerNum": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "transformSkill": 9400005
+  },
+  "0": {
+    "triggerNum": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "transformSkill": 9400000
+  },
+  "1": {
+    "triggerNum": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "transformSkill": 9400001
+  },
+  "2": {
+    "triggerNum": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "transformSkill": 9400002
+  }
+}

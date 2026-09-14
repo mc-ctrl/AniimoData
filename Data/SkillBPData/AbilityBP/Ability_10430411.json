@@ -1,0 +1,33 @@
+{
+  "BPName": "ability_10430411",
+  "NodeID": 1,
+  "UID": "e5218c2b-8f09-425b-9c95-1c3761a58643",
+  "abilityParamId": 10300030,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10430411001,
+      "name": "setCombatActionTimeline",
+      "UID": "cf07815c-4221-4cf3-96a8-b10d3c81a892",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Shield"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10172_Skill_Shield_Water_break"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 0,
+  "searchTargetRangeDown": 0
+}

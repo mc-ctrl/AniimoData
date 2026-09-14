@@ -1,0 +1,182 @@
+[
+  {
+    "reward": 21002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 1,
+    "title": "基础移动",
+    "grade": 1,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 21002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 1,
+    "title": "联结",
+    "grade": 1,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 21002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 2,
+    "title": "基础捕捉",
+    "grade": 1,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 21002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 4,
+    "title": "锁定教学",
+    "grade": 1,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 21002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 4,
+    "title": "主角go模式",
+    "grade": 1,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22001,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 1,
+    "title": "技能更换",
+    "grade": 2,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22001,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 4,
+    "title": "连携必杀",
+    "grade": 2,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22001,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 4,
+    "title": "元素克制",
+    "grade": 2,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22001,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 4,
+    "title": "空间克制",
+    "grade": 2,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22001,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "火元素交互",
+    "grade": 2,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22001,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "水元素交互",
+    "grade": 2,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "冲量互动",
+    "grade": 2,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "时空穿梭/果实种植",
+    "grade": 3,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 2,
+    "title": "大白球捕捉",
+    "grade": 3,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "远程抓取",
+    "grade": 3,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "冰元素交互",
+    "grade": 3,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "电元素交互",
+    "grade": 3,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  },
+  {
+    "reward": 22002,
+    "pic": "$T_PetBackGround_Pyschic.png",
+    "type": 3,
+    "title": "呼朋引伴",
+    "grade": 3,
+    "sence": 411,
+    "author": "guili.sun",
+    "quest": 2201001
+  }
+]

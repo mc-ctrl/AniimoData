@@ -1,0 +1,81 @@
+{
+  "BPName": "ability_10260901",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 9400042,
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "62": {
+      "name": "enableBoneScaleActive",
+      "NodeID": 62,
+      "UID": "cb3512cb-6616-4f48-b466-c6e834b39020",
+      "target": "OWNER",
+      "enable": false,
+      "boneName": "Bone R Weapon A"
+    },
+    "38": {
+      "NodeID": 38,
+      "UID": "0a767c96-d2c5-4e4e-bccc-78fed5914f26",
+      "blendTime": 0.4,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1.2,
+      "cameraYawOffset": 0,
+      "maxPitch": 60,
+      "shoulderX": 1.1,
+      "shoulderY": 0,
+      "shoulderZ": -1.2,
+      "name": "setIsInAim",
+      "aimAnim": "",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": true,
+      "minPitch": -60,
+      "showAimUI": true,
+      "val": false,
+      "targetAimLength": 2.5
+    },
+    "7": {
+      "timelineId": 10260901001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "rigConfig": 2,
+  "preloadEffs": [
+    "Eff_Parmon_10026_Skill_GrapplingHook_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "subAbilityIds": [
+    10260004
+  ],
+  "delayStartCd": true,
+  "rigBoneData": [
+    "Bip001 R UpperArm",
+    "Bip001 R Forearm",
+    "Bip001 R Hand",
+    "Bone R Weapon",
+    "VFXpoint_zhuaquguadian"
+  ],
+  "onAbilityEndIds": [
+    38,
+    62
+  ],
+  "desc": "",
+  "dynamicRPCStates": [
+    "HOOKFAILEND"
+  ],
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c"
+}

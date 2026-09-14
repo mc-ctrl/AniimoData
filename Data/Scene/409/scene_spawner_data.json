@@ -1,0 +1,190 @@
+{
+  "45238476": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "position": [
+      -328.29,
+      0.21,
+      -213.74
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 45238485,
+    "id": 45238476,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          45238475
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "45238484": {
+    "spawnType": 0,
+    "weatherRefreshType": 0,
+    "diedRefreshInterval": 60,
+    "position": [
+      -337.6,
+      0.21,
+      -219.84
+    ],
+    "refresTimeType": 0,
+    "refreshLogicTimes": [
+      [
+        360,
+        1080
+      ]
+    ],
+    "sandboxId": 45238485,
+    "id": 45238484,
+    "SpawnState": 0,
+    "levelRange": [
+      0,
+      100
+    ],
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "sandboxType": 0,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          45238480,
+          45238479,
+          45238478,
+          45238477
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56654521": {
+    "spawnType": 3,
+    "owner": "徐梦璇",
+    "diedRefreshInterval": 60,
+    "position": [
+      -336.61,
+      0.21,
+      -156.52
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 56654489,
+    "id": 56654521,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "sandboxType": 1,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56654520
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "56654524": {
+    "spawnType": 3,
+    "owner": "徐梦璇",
+    "diedRefreshInterval": 60,
+    "position": [
+      -336.88,
+      0.21,
+      -159.62
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 56654489,
+    "id": 56654524,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "sandboxType": 1,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          56654522
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "58027682": {
+    "spawnType": 0,
+    "owner": "徐梦璇",
+    "sandboxType": 1,
+    "position": [
+      -333.87,
+      0.21,
+      -127.46
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58027677,
+    "id": 58027682,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          58027680
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "58027685": {
+    "spawnType": 0,
+    "owner": "徐梦璇",
+    "sandboxType": 1,
+    "position": [
+      -337.17,
+      0.21,
+      -129.67
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58027677,
+    "id": 58027685,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          58027684
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

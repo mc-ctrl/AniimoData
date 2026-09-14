@@ -1,0 +1,129 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "b5af86ee-0540-4d29-8e01-fc3f25b950d7",
+      "effectId": "Eff_Parmon_10143_Skill_HaloMax_Huan",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "680f862e-8085-4f57-8b17-db324d7ae322",
+      "name": "destroyEntity",
+      "NodeID": 13
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13,
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 11.1,
+      "NodeID": 15,
+      "UID": "187d9c3f-7f77-4c6d-98ea-61c5bc865588"
+    },
+    "7": {
+      "actionIds": [
+        17,
+        26
+      ],
+      "name": "actOnTargets",
+      "UID": "e857b73b-e8ee-49ca-af35-80f93297bb8e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 7
+    },
+    "26": {
+      "value": 2,
+      "name": "recoverEp",
+      "UID": "ab9cdb46-1255-4cde-9718-a5e8ee52192b",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "17": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.01
+      },
+      "name": "calcResult",
+      "UID": "8418d968-d959-4513-bee1-7ef79ccce158",
+      "target": "TARGET",
+      "NodeID": 17
+    },
+    "9": {
+      "eventType": "NotifyState",
+      "endTime": 10,
+      "NodeID": 9,
+      "onExit": {
+        "actionIds": [
+          7
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          7
+        ]
+      },
+      "startTime": 1,
+      "tickInterval": 2,
+      "onEnter": {
+        "actionIds": [
+          7
+        ]
+      },
+      "UID": "d07b47c7-835c-49f8-941b-75609240bd53"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c0e49fa2-c333-4136-bf03-95486e076de9",
+      "effectId": "Eff_Parmon_10143_HaloMax02_Loop",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "21": {
+      "UID": "e19faf2d-bfb1-4624-8e05-d24ae81c7f37",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2114103",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    21,
+    9,
+    15
+  ],
+  "layer": "Base",
+  "length": 12
+}

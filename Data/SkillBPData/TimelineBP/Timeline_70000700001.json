@@ -1,0 +1,389 @@
+{
+  "nodeMap": {
+    "38": {
+      "action": {
+        "actionIds": [
+          36,
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 12,
+      "NodeID": 38,
+      "UID": "fca5aeb8-a41e-4ec0-93d9-77ad7e6f7bd1"
+    },
+    "39": {
+      "offsetXYZ": [
+        4,
+        0,
+        2
+      ],
+      "templateId": 70030002,
+      "name": "createEntity",
+      "UID": "d8ba39c2-1e1a-45dc-ac86-e63ecda2efca",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 39
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 15,
+      "NodeID": 40,
+      "UID": "fc3d3d95-6cb6-4b78-9c3e-2ffd58d6fe6f"
+    },
+    "41": {
+      "offsetXYZ": [
+        -4,
+        0,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0e81f956-8922-4197-bfbd-7f33f1c8866b",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New02",
+      "speed": 0.6,
+      "NodeID": 41
+    },
+    "42": {
+      "offsetXYZ": [
+        -2,
+        0,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6675a101-1b18-430d-9930-492df3431d06",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New02",
+      "speed": 0.6,
+      "NodeID": 42
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          33,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9,
+      "NodeID": 35,
+      "UID": "76d3d904-438e-4445-bca6-c1c60887a9d3"
+    },
+    "44": {
+      "offsetXYZ": [
+        2,
+        0,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3bcc9394-1e21-4940-9eea-391d6f9bd35a",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New02",
+      "speed": 0.6,
+      "NodeID": 44
+    },
+    "45": {
+      "offsetXYZ": [
+        4,
+        0,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a93784de-8080-4cf7-901c-13956f77a810",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New02",
+      "speed": 0.6,
+      "NodeID": 45
+    },
+    "11": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "fa7cab9d-f27b-4fc9-b680-80336fb71bdb",
+      "target": "OWNER",
+      "NodeID": 20,
+      "animId": "Gauntlet_Skill_Summon_Start"
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "22": {
+      "UID": "8b1c0b47-1ccf-42fa-a99a-1e4aca4073b3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20,
+          41
+        ]
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 24,
+      "UID": "9655900e-fd83-4dcf-965a-50a07c8e363a"
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 15.5,
+      "NodeID": 14,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "43": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "683a7147-590d-4c43-99e9-283b54847da5",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New02",
+      "speed": 0.6,
+      "NodeID": 43
+    },
+    "4": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          11
+        ]
+      },
+      "NodeID": 4
+    },
+    "25": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "991157b8-0a3a-48d2-8ac7-f5f43f0652cd",
+      "target": "OWNER",
+      "NodeID": 25,
+      "animId": "Gauntlet_Skill_Summon_End"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 15,
+      "NodeID": 26,
+      "UID": "c1cba58b-1f27-4f54-9a90-60d0b4996dd2"
+    },
+    "27": {
+      "offsetXYZ": [
+        -4,
+        0,
+        2
+      ],
+      "templateId": 70030002,
+      "name": "createEntity",
+      "UID": "1682b5d4-82fb-45f1-ba2b-2dbd7c75b0b2",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 27
+    },
+    "33": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "templateId": 70030002,
+      "name": "createEntity",
+      "UID": "f294346c-8901-4b27-9ca6-1b032750f15a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 33
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 29,
+      "UID": "3daf3dcd-5d83-4f11-b898-0d50ab08b011"
+    },
+    "30": {
+      "offsetXYZ": [
+        -2,
+        0,
+        2
+      ],
+      "templateId": 70030002,
+      "name": "createEntity",
+      "UID": "103fb1a6-f2fb-4eef-8856-d2b4593e0eb4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 30
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30,
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 32,
+      "UID": "28abe469-3fcd-4333-8eb5-ec963a6a01db"
+    },
+    "19": {
+      "UID": "bbe6df62-85a7-4b26-b372-52eb6327c8af",
+      "eventType": "EventEnter",
+      "NodeID": 19
+    },
+    "23": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5f2f0b0b-e013-4b81-a918-6ff605f9bf12",
+      "target": "OWNER",
+      "NodeID": 23,
+      "animId": "Gauntlet_Skill_Summon_Loop"
+    },
+    "36": {
+      "offsetXYZ": [
+        2,
+        0,
+        2
+      ],
+      "templateId": 70030002,
+      "name": "createEntity",
+      "UID": "37f80a7a-15bd-4624-b3b6-b2b437cdae8e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_70000700",
+  "NodeID": 6,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    4,
+    26,
+    14,
+    19,
+    24,
+    22,
+    29,
+    32,
+    35,
+    38,
+    40
+  ],
+  "layer": "Base",
+  "length": 15.5
+}

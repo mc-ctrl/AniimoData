@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10720420",
+  "NodeID": 1,
+  "UID": "8c646df6-df70-4482-a95a-9ae9e4796c4d",
+  "abilityParamId": 10400032,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "11": {
+      "timelineId": 10720420001,
+      "name": "setCombatActionTimeline",
+      "UID": "8d037353-0b18-429b-a55e-60a520693fe2",
+      "target": "CASTER",
+      "NodeID": 11
+    }
+  },
+  "onAbilityCastIds": [
+    11
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ChainLightening"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10072_Skill_ChainLightening_Ballistics",
+    "Eff_Parmon_10072_Skill_Hit",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "闪电链",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "parentDynamicRPCStates": [
+    "FLYING"
+  ],
+  "searchTargetRangeDown": 3
+}

@@ -1,0 +1,68 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91323021",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "835bf905-540c-4f9d-b39f-8aaaa4c63663",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "9e83f7fe-0981-4883-97a4-c0037592e5eb",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "7c9a69a9-9bba-4492-99b7-579f83ff6bd2",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "8": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "0fe03fd3-0ca5-4871-9156-644a28522d30",
+      "to": 13230000,
+      "NodeID": 8,
+      "from": 13230000
+    },
+    "7": {
+      "buffId": 91323021,
+      "name": "removeBuff",
+      "UID": "12dec8f5-7d96-4b0d-92ca-31d12c6ecdfd",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "2": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "e3aec785-fd1e-4ed6-8ba3-88e0e6b21f27",
+      "to": 13230002,
+      "NodeID": 2,
+      "from": 13230000
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    6
+  ]
+}

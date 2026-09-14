@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_12830100",
+  "NodeID": 1,
+  "isAim": true,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12830100001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BreathEnd",
+    "Skill_BreathStart",
+    "Skill_BreathLoop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10283_Skill_Breath_Loop",
+    "Eff_Parmon_10283_Skill_Breath_Start",
+    "Eff_Parmon_10283_Skill_Breath_End",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "火花",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "subAbilityIds": [
+    12830200
+  ],
+  "notTurnToTarget": true,
+  "searchTargetRangeDown": 0.5,
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 10500440,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8"
+}

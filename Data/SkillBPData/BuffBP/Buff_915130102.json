@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915130102",
+  "name": "衔接普攻最后一段",
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffStartIds": [
+    2
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "39277403-fb52-4d7d-9caf-facb119a08d2",
+      "to": 15130000,
+      "NodeID": 4,
+      "from": 15130000
+    },
+    "2": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "9372d71b-6cff-4537-a6fe-7237925bf11c",
+      "to": 15130003,
+      "NodeID": 2,
+      "from": 15130000
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "isUnSummonFreeze": false
+}

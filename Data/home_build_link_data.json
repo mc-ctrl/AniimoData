@@ -1,0 +1,2241 @@
+[
+  {
+    "buildType": 1,
+    "linkSockets": [
+      {
+        "presetType": 1,
+        "dirType": 3,
+        "position": [
+          0,
+          0.05,
+          0.5
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 4,
+        "position": [
+          0,
+          0.05,
+          -0.5
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.05,
+          0
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.05,
+          0
+        ]
+      }
+    ],
+    "name": "地板"
+  },
+  {
+    "buildType": 1,
+    "linkSockets": [
+      {
+        "presetType": 1,
+        "dirType": 3,
+        "position": [
+          0,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 4,
+        "position": [
+          0,
+          0.3,
+          -0.5
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.3,
+          0
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.3,
+          0
+        ]
+      }
+    ],
+    "name": "地基"
+  },
+  {
+    "name": "天花板"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "矮墙"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          3.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          3.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          4.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          4.5,
+          0
+        ]
+      }
+    ],
+    "name": "高墙"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.25,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.25,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          5,
+          0
+        ]
+      }
+    ],
+    "name": "窄高墙"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          5,
+          0
+        ]
+      }
+    ],
+    "name": "室内高墙"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "踢脚线墙"
+  },
+  {
+    "buildType": 9,
+    "linkSockets": [
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 91,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 90,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "拐角墙（带踢脚线"
+  },
+  {
+    "buildType": 9,
+    "linkSockets": [
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 91,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 90,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "拐角墙"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 111,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "三角墙（右"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 110,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "三角墙（左"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 111,
+        "position": [
+          1,
+          0.4,
+          0.5
+        ]
+      },
+      {
+        "presetType": 110,
+        "position": [
+          -1,
+          0.4,
+          0.5
+        ]
+      }
+    ],
+    "name": "大三角墙(屋顶"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 3,
+        "position": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "四边形墙左"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 3,
+        "position": [
+          -1,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "四边形墙右"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "三角墙（屋顶"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          -0.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -0.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1,
+          1.5,
+          0
+        ]
+      }
+    ],
+    "name": "门"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          -0.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -0.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1,
+          1.5,
+          0
+        ]
+      }
+    ],
+    "name": "窗"
+  },
+  {
+    "buildType": 6,
+    "linkSockets": [
+      {
+        "presetType": 40,
+        "position": [
+          0,
+          0.25,
+          0.35
+        ]
+      },
+      {
+        "presetType": 41,
+        "dirType": 3,
+        "position": [
+          0,
+          1.25,
+          -0.65
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.7,
+          -0.25
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.7,
+          -0.25
+        ]
+      },
+      {
+        "presetType": 43,
+        "position": [
+          0,
+          0.7,
+          -0.25
+        ]
+      }
+    ],
+    "name": "瓦片"
+  },
+  {
+    "buildType": 7,
+    "linkSockets": [
+      {
+        "presetType": 50,
+        "dirType": 3,
+        "position": [
+          0,
+          0.25,
+          0.35
+        ]
+      },
+      {
+        "presetType": 50,
+        "dirType": 4,
+        "position": [
+          0,
+          0.25,
+          -0.35
+        ]
+      },
+      {
+        "presetType": 51,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.7,
+          0
+        ]
+      },
+      {
+        "presetType": 51,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.7,
+          0
+        ]
+      }
+    ],
+    "name": "屋脊"
+  },
+  {
+    "buildType": 8,
+    "linkSockets": [
+      {
+        "presetType": 61,
+        "position": [
+          0,
+          1.25,
+          -0.15
+        ]
+      },
+      {
+        "presetType": 63,
+        "position": [
+          -0.65,
+          1.25,
+          0.5
+        ]
+      },
+      {
+        "presetType": 64,
+        "position": [
+          0.5,
+          0.7,
+          0.25
+        ]
+      }
+    ],
+    "name": "屋顶转角"
+  },
+  {
+    "name": "阁楼"
+  },
+  {
+    "buildType": 5,
+    "linkSockets": [
+      {
+        "presetType": 31,
+        "position": [
+          0,
+          0.75,
+          0.5
+        ]
+      },
+      {
+        "presetType": 32,
+        "position": [
+          0,
+          0.75,
+          -0.5
+        ]
+      },
+      {
+        "presetType": 30,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "室内扶手"
+  },
+  {
+    "buildType": 3,
+    "linkSockets": [
+      {
+        "presetType": 6,
+        "position": [
+          0,
+          0,
+          0.5
+        ]
+      },
+      {
+        "presetType": 7,
+        "position": [
+          0,
+          0.5,
+          -0.5
+        ]
+      },
+      {
+        "presetType": 5,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.25,
+          0
+        ]
+      },
+      {
+        "presetType": 5,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.25,
+          0
+        ]
+      },
+      {
+        "presetType": 9,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 8,
+        "position": [
+          0.5,
+          0.25,
+          0
+        ]
+      },
+      {
+        "presetType": 8,
+        "position": [
+          -0.5,
+          0.25,
+          0
+        ]
+      }
+    ],
+    "name": "楼梯"
+  },
+  {
+    "buildType": 4,
+    "linkSockets": [
+      {
+        "presetType": 20,
+        "position": [
+          0,
+          0.25,
+          0
+        ]
+      },
+      {
+        "presetType": 21,
+        "position": [
+          0,
+          0.75,
+          0.5
+        ]
+      },
+      {
+        "presetType": 22,
+        "position": [
+          0,
+          1.25,
+          -0.5
+        ]
+      }
+    ],
+    "name": "楼梯扶手"
+  },
+  {
+    "buildType": 9,
+    "linkSockets": [
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 91,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 90,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "转角柱"
+  },
+  {
+    "buildType": 9,
+    "linkSockets": [
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 91,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 90,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "转角柱2"
+  },
+  {
+    "name": "装饰柱"
+  },
+  {
+    "buildType": 7,
+    "linkSockets": [
+      {
+        "presetType": 50,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.2,
+          0
+        ]
+      },
+      {
+        "presetType": 50,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.2,
+          0
+        ]
+      },
+      {
+        "presetType": 51,
+        "dirType": 3,
+        "position": [
+          0,
+          0.7,
+          0.5
+        ]
+      },
+      {
+        "presetType": 51,
+        "dirType": 4,
+        "position": [
+          0,
+          0.7,
+          -0.5
+        ]
+      }
+    ],
+    "name": "圆屋脊"
+  },
+  {
+    "buildType": 9,
+    "linkSockets": [
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 91,
+        "position": [
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "presetType": 90,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          3.5,
+          0
+        ]
+      },
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          4.5,
+          0
+        ]
+      }
+    ],
+    "name": "碎石转角墙"
+  },
+  {
+    "buildType": 9,
+    "linkSockets": [
+      {
+        "presetType": 92,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 91,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 90,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "name": "碎石转角墙·一米"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.5,
+          0
+        ]
+      }
+    ],
+    "name": "小窗1*1"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -1,
+          2,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          0.5,
+          0
+        ]
+      }
+    ],
+    "name": "大窗3*2"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0.5,
+          2,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -0.5,
+          2,
+          0
+        ]
+      }
+    ],
+    "name": "窄窗1*2"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -1,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          2.5,
+          0
+        ]
+      }
+    ],
+    "name": "大窗3*3"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -1,
+          4,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          1.5,
+          3.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -1.5,
+          3.5,
+          0
+        ]
+      }
+    ],
+    "name": "大窗3*4"
+  },
+  {
+    "buildType": 1,
+    "linkSockets": [
+      {
+        "presetType": 1,
+        "dirType": 3,
+        "position": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 4,
+        "position": [
+          0,
+          0.5,
+          -0.5
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 1,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.5,
+          0
+        ]
+      }
+    ],
+    "name": "高地基"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.75,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.75,
+          0
+        ]
+      }
+    ],
+    "name": "圆窗1*1"
+  },
+  {
+    "buildType": 7,
+    "linkSockets": [
+      {
+        "presetType": 50,
+        "dirType": 3,
+        "position": [
+          0,
+          0.25,
+          0.35
+        ]
+      },
+      {
+        "presetType": 50,
+        "dirType": 4,
+        "position": [
+          0,
+          0.25,
+          -0.35
+        ]
+      },
+      {
+        "presetType": 51,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.7,
+          0
+        ]
+      }
+    ],
+    "name": "屋脊转角·左"
+  },
+  {
+    "buildType": 7,
+    "linkSockets": [
+      {
+        "presetType": 50,
+        "dirType": 3,
+        "position": [
+          0,
+          0.25,
+          0.35
+        ]
+      },
+      {
+        "presetType": 50,
+        "dirType": 4,
+        "position": [
+          0,
+          0.25,
+          -0.35
+        ]
+      },
+      {
+        "presetType": 51,
+        "dirType": 6,
+        "position": [
+          -0.5,
+          0.7,
+          0
+        ]
+      }
+    ],
+    "name": "屋脊转角·右"
+  },
+  {
+    "buildType": 6,
+    "linkSockets": [
+      {
+        "presetType": 40,
+        "position": [
+          0,
+          0.25,
+          0.35
+        ]
+      },
+      {
+        "presetType": 41,
+        "dirType": 3,
+        "position": [
+          0,
+          1.25,
+          -0.65
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 5,
+        "position": [
+          -0.5,
+          0.7,
+          -0.25
+        ]
+      },
+      {
+        "presetType": 43,
+        "position": [
+          0,
+          0.7,
+          -0.25
+        ]
+      }
+    ],
+    "name": "斜坡屋顶·左"
+  },
+  {
+    "buildType": 6,
+    "linkSockets": [
+      {
+        "presetType": 40,
+        "position": [
+          0,
+          0.25,
+          0.35
+        ]
+      },
+      {
+        "presetType": 41,
+        "dirType": 3,
+        "position": [
+          0,
+          1.25,
+          -0.65
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 6,
+        "position": [
+          0.5,
+          0.7,
+          -0.25
+        ]
+      },
+      {
+        "presetType": 43,
+        "position": [
+          0,
+          0.7,
+          -0.25
+        ]
+      }
+    ],
+    "name": "斜坡屋顶·右"
+  },
+  {
+    "buildType": 6,
+    "linkSockets": [
+      {
+        "presetType": 42,
+        "position": [
+          -0.5,
+          0.25,
+          -0.15
+        ]
+      },
+      {
+        "presetType": 42,
+        "position": [
+          0.5,
+          0.25,
+          -0.15
+        ]
+      }
+    ],
+    "name": "挑檐"
+  },
+  {
+    "buildType": 11,
+    "linkSockets": [
+      {
+        "presetType": 93,
+        "position": [
+          0,
+          0.75,
+          0
+        ]
+      }
+    ],
+    "name": "栏杆柱"
+  },
+  {
+    "buildType": 10,
+    "linkSockets": [
+      {
+        "presetType": 122,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 121,
+        "position": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 120,
+        "dirType": 6,
+        "position": [
+          0.25,
+          0.25,
+          0
+        ]
+      },
+      {
+        "presetType": 120,
+        "dirType": 5,
+        "position": [
+          -0.25,
+          0.25,
+          0
+        ]
+      },
+      {
+        "presetType": 120,
+        "dirType": 3,
+        "position": [
+          0,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "presetType": 120,
+        "dirType": 4,
+        "position": [
+          0,
+          0.25,
+          -0.25
+        ]
+      }
+    ],
+    "name": "积木"
+  },
+  {
+    "buildType": 4,
+    "linkSockets": [
+      {
+        "presetType": 20,
+        "position": [
+          0,
+          0.25,
+          0
+        ]
+      },
+      {
+        "presetType": 21,
+        "position": [
+          0,
+          0.75,
+          0.5
+        ]
+      },
+      {
+        "presetType": 22,
+        "position": [
+          0,
+          1.25,
+          -0.5
+        ]
+      }
+    ],
+    "name": "石头栏杆"
+  },
+  {
+    "buildType": 11,
+    "linkSockets": [
+      {
+        "presetType": 93,
+        "position": [
+          0,
+          0.75,
+          0
+        ]
+      }
+    ],
+    "name": "石头栏杆柱"
+  },
+  {
+    "buildType": 6,
+    "linkSockets": [
+      {
+        "presetType": 43,
+        "position": [
+          0,
+          0,
+          1.875
+        ]
+      },
+      {
+        "presetType": 41,
+        "dirType": 3,
+        "position": [
+          0,
+          1.9,
+          -2
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 5,
+        "position": [
+          -0.75,
+          1.5,
+          -0.5
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 6,
+        "position": [
+          0.75,
+          1.5,
+          -0.5
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 5,
+        "position": [
+          -0.75,
+          0.5,
+          1.4
+        ]
+      },
+      {
+        "presetType": 42,
+        "dirType": 6,
+        "position": [
+          0.75,
+          0.5,
+          1.4
+        ]
+      },
+      {
+        "presetType": 43,
+        "position": [
+          0,
+          0,
+          1.875
+        ]
+      }
+    ],
+    "name": "折角玻璃窗"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 3,
+        "position": [
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.75,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.75,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.75,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.75,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -0.75,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          0.75,
+          2.5,
+          0
+        ]
+      }
+    ],
+    "name": "长方玻璃窗"
+  },
+  {
+    "buildType": 2,
+    "linkSockets": [
+      {
+        "presetType": 4,
+        "position": [
+          0.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          -0.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          1.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 4,
+        "position": [
+          -1.5,
+          0,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -0.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          1.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -1.5,
+          3,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -2,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          2,
+          1.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -2,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          2,
+          0.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 5,
+        "position": [
+          -2,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 2,
+        "dirType": 6,
+        "position": [
+          2,
+          2.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          0.5,
+          3.5,
+          0
+        ]
+      },
+      {
+        "presetType": 3,
+        "position": [
+          -0.5,
+          3.5,
+          0
+        ]
+      }
+    ],
+    "name": "红砖大门"
+  }
+]

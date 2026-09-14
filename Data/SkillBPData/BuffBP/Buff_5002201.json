@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5002201",
+  "calcInfoByLuaConfig": {
+    "id": 5002201,
+    "combat_ep_regen_p": "param4",
+    "type": 1,
+    "speed_ratio_swim_fast_v": "param3",
+    "speed_ratio_run_v": "param0",
+    "speed_ratio_swim_v": "param2",
+    "speed_ratio_sprint_v": "param1"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

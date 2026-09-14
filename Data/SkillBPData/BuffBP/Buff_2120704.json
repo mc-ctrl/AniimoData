@@ -1,0 +1,302 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "tp_temp_max": 999,
+    "bp_add_ratio": 0,
+    "tp_temp_cur": 999
+  },
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "onBuffThinkIds": [
+    5,
+    8,
+    36
+  ],
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_DefenseUp"
+    }
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 2120704,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "580ad48a-39de-45c1-8c64-d08a2acd1a5f",
+      "effectId": "Eff_Common_Buff_Healing",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "38": {
+      "actionIds": [
+        40,
+        42
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "64831338-889d-4fc5-9ceb-3b1e181b0ae0",
+      "name": "doActionsByConditions",
+      "NodeID": 38
+    },
+    "40": {
+      "name": "calcResult",
+      "UID": "b65249ac-bbc9-4e82-98c5-3b213132e9a5",
+      "target": "TARGET",
+      "NodeID": 40,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param2",
+        "type": 1,
+        "id": 2120704
+      }
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2d954349-25a2-4b16-82bf-0baa1f168b28",
+      "effectId": "Eff_Common_Buff_Healing",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "8": {
+      "name": "calcResult",
+      "UID": "98686256-652c-4158-9de3-bc49fc4388f1",
+      "target": "OWNER",
+      "NodeID": 8,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param2",
+        "type": 1,
+        "id": 2120704
+      }
+    },
+    "31": {
+      "eventName": "UnSummon",
+      "name": "notifyCustomEvent",
+      "UID": "e3a0f72d-652b-4d9b-8ec4-a3183df6033e",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "duration": 15,
+      "disableWhenFinished": true,
+      "NodeID": 9,
+      "UID": "81a7e94f-5dfd-4486-a0ae-0167c281737d",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "name": "playPreset"
+    },
+    "11": {
+      "duration": 15,
+      "disableWhenFinished": true,
+      "NodeID": 11,
+      "UID": "fdfa4e28-13b9-4888-883e-95f683b6ef3d",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "name": "playPreset"
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "94c44fc8-e533-405c-92cd-e8209add3d45",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "22": {
+      "actionIds": [
+        25
+      ],
+      "name": "actOnTargets",
+      "UID": "8822100d-09aa-4c99-b0af-c9d6e5410a8d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 22
+    },
+    "23": {
+      "duration": 0.3,
+      "actionIds": [
+        22
+      ],
+      "NodeID": 23,
+      "UID": "cbbe7cd4-8690-44af-81a6-4c4536b6a2f0",
+      "name": "addTimer"
+    },
+    "24": {
+      "buffId": 2120105,
+      "name": "hasBuff",
+      "UID": "d91a4362-c86c-44ba-aff9-365cf20e4510",
+      "target": "TARGET",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "504b34f3-62b5-4014-86e4-ad99f37a8e13",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 14
+    },
+    "37": {
+      "buffId": 2120105,
+      "name": "hasBuff",
+      "UID": "e3081261-7568-43a8-a575-612312cf2acd",
+      "target": "TARGET",
+      "NodeID": 37
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "d6c4da5d-13bc-4599-a1e1-2a7531e83a8c",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Start",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "222dbf00-12c9-4954-840a-c5910ea5b35c",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "12": {
+      "UID": "3c8e2751-9418-42bf-916c-3e4a729af841",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 12
+    },
+    "27": {
+      "name": "calcResult",
+      "UID": "66e21104-7f8d-46da-914a-8ea7b5062b7a",
+      "target": "TARGET",
+      "NodeID": 27,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 1,
+        "id": 2120704
+      }
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "ad259cf5-2fa3-4347-90c4-fd929f0f20eb",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Attack_02",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "11217ff7-b76f-4957-95d4-44702abfc8ec",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_HealCircle",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "dbbdcf9c-7ece-4708-96ad-83474c094297",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": true,
+      "NodeID": 18
+    },
+    "33": {
+      "eventName": "Summon",
+      "name": "notifyCustomEvent",
+      "UID": "edd9ac70-dde9-4b17-ada9-3a0ef9308ddf",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "19": {
+      "UID": "687ed171-62dd-4555-a894-66d35f3590da",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": false,
+      "NodeID": 19
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3395c825-7b0a-480e-b62d-f0105293c05b",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_HealCircle",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "36": {
+      "actionIds": [
+        38
+      ],
+      "name": "actOnTargets",
+      "UID": "12190df1-7204-4256-b174-fe1e80b6e503",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 36
+    }
+  },
+  "BPName": "buff_2120704",
+  "onBuffDestroyIds": [
+    12,
+    14,
+    19,
+    15,
+    17,
+    29,
+    31,
+    33
+  ],
+  "onBuffStartIds": [
+    2,
+    9,
+    11,
+    18,
+    23,
+    28
+  ]
+}

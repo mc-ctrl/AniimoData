@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118505",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2118507,
+      "NodeID": 8,
+      "UID": "b0221f99-37c1-47d3-9bae-120065a51427",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "eventName": "10185Remove",
+      "NodeID": 10,
+      "UID": "3102e3f5-934a-48c5-b3da-8372a40940c0",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        12,
+        8
+      ]
+    },
+    "12": {
+      "buffId": 2118507,
+      "name": "removeBuff",
+      "UID": "6828eb97-6373-4da9-bf7f-46fedf8de80c",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    12,
+    8,
+    10
+  ]
+}

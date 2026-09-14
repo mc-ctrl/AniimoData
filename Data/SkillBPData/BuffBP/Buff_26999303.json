@@ -1,0 +1,25 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "shield_taken_dmg_inc_rate_v": 1
+  },
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    11
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 26999303,
+    "shield_taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_26999303",
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_DefenseDown"
+    }
+  ]
+}

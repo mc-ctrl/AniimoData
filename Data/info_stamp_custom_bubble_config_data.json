@@ -1,0 +1,14 @@
+[
+  {
+    "bubbleRes": "$UI_Img_MarkShare_Bubble_Type1.png",
+    "bubbleResMini": "$UI_Img_MarkShare_Bubble_Type1.png"
+  },
+  {
+    "bubbleRes": "$UI_Img_MarkShare_Bubble_Type2.png",
+    "bubbleResMini": "$UI_Img_MarkShare_Bubble_Type2.png"
+  },
+  {
+    "bubbleRes": "$UI_Img_MarkShare_Bubble_Type3.png",
+    "bubbleResMini": "$UI_Img_MarkShare_Bubble_Type3.png"
+  }
+]

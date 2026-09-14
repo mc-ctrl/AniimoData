@@ -1,0 +1,1385 @@
+{
+  "120101": {
+    "name": 1285991248,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1795941107,
+    "icon": "$UI_Feature_Common_10203.png"
+  },
+  "120105": {
+    "name": 1373474538,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1897152011,
+    "icon": "$UI_Feature_Common_012.png"
+  },
+  "120701": {
+    "name": 1136906035,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1328591474,
+    "icon": "$UI_Feature_Special_10207.png"
+  },
+  "103301": {
+    "name": 1204121988,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1264640549,
+    "icon": "$UI_Feature_Common_10033.png"
+  },
+  "103302": {
+    "name": 1666796325,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1378333090,
+    "icon": "$UI_Feature_Special_10033.png"
+  },
+  "121102": {
+    "name": 2114195701,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1821906675,
+    "icon": "$UI_Feature_Common_10212.png"
+  },
+  "121103": {
+    "name": 1218767697,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1153381947,
+    "icon": "$UI_Feature_Special_10212.png"
+  },
+  "121301": {
+    "name": 1216645711,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2030994140,
+    "icon": "$UI_Feature_Common_10212.png"
+  },
+  "121302": {
+    "name": 1175200749,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1932065020,
+    "icon": "$UI_Feature_Special_10212.png"
+  },
+  "122103": {
+    "name": 1083449864,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1676034860,
+    "icon": "$UI_Feature_Common_10221.png"
+  },
+  "122301": {
+    "name": 2080598670,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1276351254,
+    "icon": "$UI_Feature_Common_10212.png"
+  },
+  "122302": {
+    "name": 2091122383,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1653785233,
+    "icon": "$UI_Feature_Special_10212.png"
+  },
+  "102701": {
+    "name": 1500893990,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1508399417,
+    "icon": "$UI_Feature_Special_10027.png"
+  },
+  "132301": {
+    "name": 1750476452,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1349404352,
+    "icon": "$UI_Feature_Common_10323.png"
+  },
+  "132302": {
+    "name": 1219357322,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1972914924,
+    "icon": "$UI_Feature_Special_10323.png"
+  },
+  "133302": {
+    "name": 1255472469,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2135035767,
+    "icon": "$UI_Feature_Common_10333.png"
+  },
+  "133303": {
+    "name": 1874309588,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1432050434,
+    "icon": "$UI_Feature_Special_10333.png"
+  },
+  "133304": {
+    "name": 1229887217,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2134502613,
+    "icon": "$UI_Feature_Special_10333.png"
+  },
+  "133401": {
+    "name": 1995810766,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1132938770,
+    "icon": "$UI_Feature_Special_10333.png"
+  },
+  "138302": {
+    "name": 1373379857,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2123128943,
+    "icon": "$UI_Feature_Special_10383.png"
+  },
+  "139301": {
+    "stage": 1,
+    "name": 1562757530,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10194.png",
+    "desc": 1814256772,
+    "isUnSummonRemove": 1
+  },
+  "139302": {
+    "stage": 1,
+    "name": 1212454809,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10194.png",
+    "desc": 2051230313,
+    "isUnSummonRemove": 1
+  },
+  "140101": {
+    "name": 1714088414,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2009481204,
+    "icon": "$UI_Feature_Common_10194.png"
+  },
+  "140301": {
+    "name": 1692978513,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1338978510,
+    "icon": "$UI_Feature_Common_10194.png"
+  },
+  "142301": {
+    "name": 1722999289,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1365361202,
+    "icon": "$UI_Feature_Special_10423.png"
+  },
+  "143302": {
+    "name": 1245014809,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1220503855,
+    "icon": "$UI_Feature_Special_10433.png"
+  },
+  "143401": {
+    "name": 1971538720,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1871581353,
+    "icon": "$UI_Feature_Special_10453.png"
+  },
+  "143402": {
+    "name": 1152331762,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1984150094,
+    "icon": "$UI_Feature_Special_10453.png"
+  },
+  "144101": {
+    "name": 2086094756,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1397226828,
+    "icon": "$UI_Feature_Common_10443.png"
+  },
+  "144102": {
+    "name": 1222980430,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1430704727,
+    "icon": "$UI_Feature_Special_10443.png"
+  },
+  "10252": {
+    "stage": 1,
+    "name": 1463346459,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10025.png",
+    "desc": 1641397558,
+    "isUnSummonRemove": 1
+  },
+  "145101": {
+    "name": 1358617933,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1153464190,
+    "icon": "$UI_Feature_Special_10453.png"
+  },
+  "10261": {
+    "name": 1471648782,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1654675587,
+    "icon": "$UI_Feature_Common_014.png"
+  },
+  "10201": {
+    "name": 1445504226,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1984684642,
+    "icon": "$UI_Feature_Common_007.png"
+  },
+  "10202": {
+    "name": 1699924203,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1340202443,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "10271": {
+    "name": 1988420503,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1834018848,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "147103": {
+    "name": 2145002090,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1378464096,
+    "icon": "$UI_Feature_Special_10475.png"
+  },
+  "10272": {
+    "name": 1760064731,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1725657864,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "147402": {
+    "name": 1234284063,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1632167521,
+    "icon": "$UI_Feature_Special_10474.png"
+  },
+  "10471": {
+    "name": 1317902578,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1770250656,
+    "icon": "$UI_Feature_Common_10043.png"
+  },
+  "10281": {
+    "name": 1452870985,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1665199208,
+    "icon": "$UI_Feature_Special_10024.png"
+  },
+  "150102": {
+    "name": 1781734674,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1962702339,
+    "icon": "$UI_Feature_Special_10503.png"
+  },
+  "151201": {
+    "name": 1329779598,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1296866306,
+    "icon": "$UI_Feature_Common_10053.png"
+  },
+  "156401": {
+    "name": 1256244752,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1952844600,
+    "icon": "$UI_Feature_Common_10053.png"
+  },
+  "10401": {
+    "name": 2139446573,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1641841735,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "11801": {
+    "name": 1154240386,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1202092003,
+    "icon": "$UI_Feature_Common_013.png"
+  },
+  "160301": {
+    "name": 2092757087,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1917717097,
+    "icon": "$UI_Feature_Common_10323.png"
+  },
+  "160302": {
+    "name": 1968412156,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1628063718,
+    "icon": "$UI_Feature_Common_10323.png"
+  },
+  "160401": {
+    "name": 1774793195,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1275609234,
+    "icon": "$UI_Feature_Common_10323.png"
+  },
+  "126301": {
+    "name": 2006045801,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1970471567,
+    "icon": "$UI_Feature_Special_10263.png"
+  },
+  "163301": {
+    "name": 2125965310,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2083256861,
+    "icon": "$UI_Feature_Special_10212.png"
+  },
+  "168301": {
+    "name": 2145072652,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2083522285,
+    "icon": "$UI_Feature_Special_10443.png"
+  },
+  "105501": {
+    "name": 2093676937,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1749872747,
+    "icon": "$UI_Feature_Common_10055.png"
+  },
+  "10501": {
+    "name": 2079939890,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1125600157,
+    "icon": "$UI_Feature_Common_004.png"
+  },
+  "105502": {
+    "name": 1257328898,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1401737310,
+    "icon": "$UI_Feature_Special_10055.png"
+  },
+  "10502": {
+    "name": 1949595617,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1609442070,
+    "icon": "$UI_Feature_Special_10053.png"
+  },
+  "10503": {
+    "name": 1153860114,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1478341145,
+    "icon": "$UI_Feature_Common_10053.png"
+  },
+  "11671": {
+    "type": "possess",
+    "icon": "$UI_Feature_Common_011.png",
+    "desc": 1497100746,
+    "stage": 1
+  },
+  "11672": {
+    "name": 1422558960,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1998924966,
+    "icon": "$UI_Feature_Common_011.png"
+  },
+  "11673": {
+    "stage": 1,
+    "name": 2118639859,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10161.png",
+    "desc": 1565161030,
+    "isUnSummonRemove": 1
+  },
+  "11674": {
+    "name": 1970057593,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1455777601,
+    "icon": "$UI_Feature_Common_012.png"
+  },
+  "11675": {
+    "stage": 1,
+    "name": 1962808835,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10161.png",
+    "desc": 1694666278,
+    "isUnSummonRemove": 1
+  },
+  "11676": {
+    "name": 1880964050,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1235085833,
+    "icon": "$UI_Feature_Special_10161.png"
+  },
+  "11731": {
+    "name": 1507255862,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1397859493,
+    "icon": "$UI_Feature_Common_10173.png"
+  },
+  "11771": {
+    "name": 2105974052,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1662068031,
+    "icon": "$UI_Feature_Special_10173.png"
+  },
+  "11841": {
+    "name": 1875992990,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2085231985,
+    "icon": "$UI_Feature_Common_003.png"
+  },
+  "10371": {
+    "stage": 1,
+    "name": 1985634908,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_005.png",
+    "desc": 1817610810,
+    "isUnSummonRemove": 1
+  },
+  "11871": {
+    "name": 1804864313,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1120547336,
+    "icon": "$UI_Feature_Common_004.png"
+  },
+  "11872": {
+    "stage": 1,
+    "name": 1435182593,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_003.png",
+    "desc": 1376615383,
+    "isUnSummonRemove": 1
+  },
+  "11873": {
+    "name": 1742044903,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1157494142,
+    "icon": "$UI_Feature_Common_10187.png"
+  },
+  "132402": {
+    "name": 1102024999,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1712486208,
+    "icon": "$UI_Feature_Special_10323.png"
+  },
+  "11874": {
+    "name": 1232385654,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1648535098,
+    "icon": "$UI_Feature_Common_10185.png"
+  },
+  "11875": {
+    "name": 1657726270,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1549421243,
+    "icon": "$UI_Feature_Common_10181.png"
+  },
+  "10000": {
+    "name": 1168882437
+  },
+  "11971": {
+    "name": 2109280274,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1764725178,
+    "icon": "$UI_Feature_Common_007.png"
+  },
+  "12071": {
+    "name": 1799242832,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1302198058,
+    "icon": "$UI_Feature_Common_10012.png"
+  },
+  "12072": {
+    "name": 1552235161,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1642389687,
+    "icon": "$UI_Feature_Common_003.png"
+  },
+  "12073": {
+    "name": 1381818105,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1747281370,
+    "icon": "$UI_Feature_Common_003.png"
+  },
+  "12074": {
+    "name": 2036448849,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1430537008,
+    "icon": "$UI_Feature_Special_10203.png"
+  },
+  "138301": {
+    "name": 2114144516,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1424585601,
+    "icon": "$UI_Feature_Common_10383.png"
+  },
+  "12211": {
+    "name": 1746019849,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1094360007,
+    "icon": "$UI_Feature_Common_012.png"
+  },
+  "12212": {
+    "name": 1338764394,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1965749124,
+    "icon": "$UI_Feature_Common_012.png"
+  },
+  "12221": {
+    "name": 1685745208,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1256109080,
+    "icon": "$UI_Feature_Common_10221.png"
+  },
+  "143301": {
+    "name": 1566860786,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1719204892,
+    "icon": "$UI_Skillicon_Rock_Erosion.png"
+  },
+  "12222": {
+    "name": 1593694576,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1430212652,
+    "icon": "$UI_Feature_Special_10221.png"
+  },
+  "144401": {
+    "name": 1957580153,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1720519637,
+    "icon": "$UI_Feature_Common_10443.png"
+  },
+  "12371": {
+    "name": 1981031402,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1764774096,
+    "icon": "$UI_Feature_Common_10232.png"
+  },
+  "145401": {
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10454.png",
+    "desc": 1288442824,
+    "name": 1898256245
+  },
+  "12372": {
+    "stage": 1,
+    "name": 1295685071,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_011.png",
+    "desc": 1607954537,
+    "isUnSummonRemove": 1
+  },
+  "12373": {
+    "name": 1376565047,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1855612581,
+    "icon": "$UI_Feature_Common_012.png"
+  },
+  "12374": {
+    "name": 1877882771,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1306213978,
+    "icon": "$UI_Feature_Special_10233.png"
+  },
+  "12375": {
+    "name": 1530279223,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1561474446,
+    "icon": "$UI_Feature_Special_10232.png"
+  },
+  "12471": {
+    "name": 2067739897,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1969498094,
+    "icon": "$UI_Feature_Common_003.png"
+  },
+  "12571": {
+    "name": 1781937869,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1868823004,
+    "icon": "$UI_Feature_Common_009.png"
+  },
+  "148303": {
+    "name": 2070344993,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1643020802,
+    "icon": "$UI_Feature_Special_10483.png"
+  },
+  "151101": {
+    "name": 1923778801,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1082080042,
+    "icon": "$UI_Feature_Common_10053.png"
+  },
+  "10175": {
+    "name": 1232399994,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1490229536,
+    "icon": "$UI_Feature_Special_10012.png"
+  },
+  "10176": {
+    "name": 2001117644,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1319922765,
+    "icon": "$UI_Feature_Special_10012.png"
+  },
+  "156301": {
+    "name": 1740236384,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1984587864,
+    "icon": "$UI_Feature_Common_10053.png"
+  },
+  "10171": {
+    "name": 1887632803,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2051729521,
+    "icon": "$UI_Feature_Common_011.png"
+  },
+  "10172": {
+    "name": 1952520854,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1105090322,
+    "icon": "$UI_Feature_Common_011.png"
+  },
+  "10251": {
+    "name": 2071221576,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1451783040,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "10173": {
+    "name": 1901895177,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1372692289,
+    "icon": "$UI_Feature_Common_011.png"
+  },
+  "10174": {
+    "name": 1316688521,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1957413745,
+    "icon": "$UI_Feature_Common_10012.png"
+  },
+  "10372": {
+    "stage": 1,
+    "name": 1195721173,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10031.png",
+    "desc": 1935103097,
+    "isUnSummonRemove": 1
+  },
+  "10101": {
+    "stage": 1,
+    "name": 2034130248,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_013.png",
+    "desc": 1406202400,
+    "isUnSummonRemove": 1
+  },
+  "10102": {
+    "name": 1803006084,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1691992633,
+    "icon": "$UI_Feature_Common_013.png"
+  },
+  "10472": {
+    "name": 1991217728,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1952930096,
+    "icon": "$UI_Feature_Common_10045.png"
+  },
+  "10473": {
+    "name": 2098008696,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2128453948,
+    "icon": "$UI_Feature_Special_10045.png"
+  },
+  "6999301": {
+    "name": 1165772156,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2093086167,
+    "icon": "$UI_Feature_Special_69993.png"
+  },
+  "162302": {
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10053.png",
+    "stage": 1,
+    "name": 1076837793
+  },
+  "162301": {
+    "name": 1512920035,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1707473375,
+    "icon": "$UI_Feature_Common_10053.png"
+  },
+  "10573": {
+    "name": 1715804661,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2080802256,
+    "icon": "$UI_Feature_Special_10053.png"
+  },
+  "10771": {
+    "name": 1954353663,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2012583783,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "10871": {
+    "name": 1411845226,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1985460366,
+    "icon": "$UI_Feature_Common_007.png"
+  },
+  "11272": {
+    "name": 2078503270,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1753128812,
+    "icon": "$UI_Feature_Common_10143.png"
+  },
+  "158301": {
+    "name": 2026303163,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1757408083,
+    "icon": "$UI_Feature_Special_10212.png"
+  },
+  "156402": {
+    "name": 1919975751,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1972658485,
+    "icon": "$UI_Feature_Common_10233.png"
+  },
+  "11331": {
+    "name": 1637336442,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2034961881,
+    "icon": "$UI_Feature_Common_006.png"
+  },
+  "156302": {
+    "name": 1311858169,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1564205445,
+    "icon": "$UI_Feature_Common_10475.png"
+  },
+  "11371": {
+    "stage": 1,
+    "name": 1636934587,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10133.png",
+    "desc": 1277266094,
+    "isUnSummonRemove": 1
+  },
+  "150101": {
+    "name": 1649162152,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1908350091,
+    "icon": "$UI_Feature_Common_10503.png"
+  },
+  "11372": {
+    "stage": 1,
+    "name": 2082071906,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10133.png",
+    "desc": 1545920281,
+    "isUnSummonRemove": 1
+  },
+  "11431": {
+    "stage": 1,
+    "name": 1412674171,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10143.png",
+    "desc": 1455306750,
+    "isUnSummonRemove": 1
+  },
+  "116302": {
+    "name": 1764695519,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1519745559,
+    "icon": "$UI_Feature_Common_10163.png"
+  },
+  "11631": {
+    "name": 1472308080,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1443603846,
+    "icon": "$UI_Feature_Common_10423.png"
+  },
+  "116303": {
+    "name": 1135273914,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1117641526,
+    "icon": "$UI_Feature_Special_10163.png"
+  },
+  "10701": {
+    "name": 1769140726,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1590498669,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "10212": {
+    "stage": 1,
+    "name": 1806326150,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10261.png",
+    "desc": 1290145812,
+    "isUnSummonRemove": 1
+  },
+  "148302": {
+    "name": 1719301244,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1421606521,
+    "icon": "$UI_Feature_Common_10194.png"
+  },
+  "148301": {
+    "name": 1445971947,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1721095991,
+    "icon": "$UI_Feature_Common_10483.png"
+  },
+  "116305": {
+    "name": 1741024504,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1653416883,
+    "icon": "$UI_Feature_Common_10163.png"
+  },
+  "116306": {
+    "name": 1693396833,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2086694252,
+    "icon": "$UI_Feature_Special_10163.png"
+  },
+  "10221": {
+    "name": 1822186412,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1549623962,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "11301": {
+    "name": 1778945394,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1231352419,
+    "icon": "$UI_Feature_Common_10133.png"
+  },
+  "10222": {
+    "name": 1649272003,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1124397455,
+    "icon": "$UI_Feature_Common_10024.png"
+  },
+  "117401": {
+    "name": 1482421980,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1932854916,
+    "icon": "$UI_Feature_Special_10171.png"
+  },
+  "11601": {
+    "type": "possess",
+    "icon": "$UI_Feature_Common_010.png",
+    "desc": 1647439551,
+    "stage": 1
+  },
+  "10231": {
+    "name": 1508273213,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2081110688,
+    "icon": "$UI_Feature_Special_10026.png"
+  },
+  "117402": {
+    "name": 1122839907,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1089941075,
+    "icon": "$UI_Feature_Common_003.png"
+  },
+  "147401": {
+    "name": 1502562927,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1991119985,
+    "icon": "$UI_Feature_Common_10474.png"
+  },
+  "10232": {
+    "name": 1373750350,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1811827820,
+    "icon": "$UI_Feature_Common_10026.png"
+  },
+  "147102": {
+    "name": 2074131722,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2042174091,
+    "icon": "$UI_Feature_Common_10475.png"
+  },
+  "118701": {
+    "name": 1892900163,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1593010681,
+    "icon": "$UI_Feature_Common_10181.png"
+  },
+  "12501": {
+    "stage": 1,
+    "name": 1810689424,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10143.png",
+    "desc": 1946782391,
+    "isUnSummonRemove": 1
+  },
+  "12601": {
+    "name": 2048845601,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1513370211,
+    "icon": "$UI_Feature_Common_003.png"
+  },
+  "146302": {
+    "name": 2081216629,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1574740139,
+    "icon": "$UI_Feature_Special_10463.png"
+  },
+  "119402": {
+    "name": 1830192120,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2078526522,
+    "icon": "$UI_Feature_Common_10194.png"
+  },
+  "119403": {
+    "name": 1125625288,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1078506952,
+    "icon": "$UI_Feature_Special_10194.png"
+  },
+  "146301": {
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10463.png",
+    "desc": 1334449170,
+    "name": 1271742124
+  },
+  "145402": {
+    "name": 2105526935,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1169299788,
+    "icon": "$UI_Feature_Special_10454.png"
+  },
+  "12602": {
+    "name": 1721577250,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1607690010,
+    "icon": "$UI_Feature_Common_004.png"
+  },
+  "12603": {
+    "name": 1850597020,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1756489960,
+    "icon": "$UI_Feature_Special_10261.png"
+  },
+  "145301": {
+    "name": 1818542950,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1325964640,
+    "icon": "$UI_Feature_Special_10453.png"
+  },
+  "12811": {
+    "name": 1452290077,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1174941398,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "12812": {
+    "name": 1793514971,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1193225628,
+    "icon": "$UI_Feature_Common_10285.png"
+  },
+  "144402": {
+    "name": 1328708149,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1684768535,
+    "icon": "$UI_Feature_Special_10443.png"
+  },
+  "12813": {
+    "name": 1951507277,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1373091523,
+    "icon": "$UI_Feature_Special_10285.png"
+  },
+  "133301": {
+    "name": 1630366329,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1955268552,
+    "icon": "$UI_Feature_Common_10333.png"
+  },
+  "12931": {
+    "name": 1620203937,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1892715490,
+    "icon": "$UI_Feature_Common_10293.png"
+  },
+  "128302": {
+    "name": 1116588193,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2053914819,
+    "icon": "$UI_Feature_Common_10283.png"
+  },
+  "12932": {
+    "name": 1871138993,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1847790306,
+    "icon": "$UI_Feature_Special_10293.png"
+  },
+  "128301": {
+    "name": 1387182734,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1636909226,
+    "icon": "$UI_Feature_Special_10283.png"
+  },
+  "13521": {
+    "name": 1161425045,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1787166421,
+    "icon": "$UI_Feature_Common_10352.png"
+  },
+  "126101": {
+    "name": 1383941281,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1688415069,
+    "icon": "$UI_Feature_Common_10261.png"
+  },
+  "13522": {
+    "name": 1113978808,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1724659892,
+    "icon": "$UI_Feature_Special_10352.png"
+  },
+  "123303": {
+    "name": 2110753358,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1555045354,
+    "icon": "$UI_Feature_Common_012.png"
+  },
+  "13611": {
+    "name": 1733108889,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1713054629,
+    "icon": "$UI_Feature_Special_10361.png"
+  },
+  "102101": {
+    "name": 1460487078,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2145887103,
+    "icon": "$UI_Feature_Common_10027.png"
+  },
+  "13711": {
+    "name": 1715324645,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1859495212,
+    "icon": "$UI_Feature_Special_10371.png"
+  },
+  "102102": {
+    "name": 1940005825,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2104256282,
+    "icon": "$UI_Feature_Special_10027.png"
+  },
+  "14831": {
+    "name": 1447835087,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1417816936,
+    "icon": "$UI_Feature_Special_10285.png"
+  },
+  "14832": {
+    "name": 1832958651,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1603971823,
+    "icon": "$UI_Feature_Special_10285.png"
+  },
+  "92071": {
+    "name": 1755470636,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1716560576,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "121101": {
+    "name": 1286527120,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2016433794,
+    "icon": "$UI_Feature_Common_012.png"
+  },
+  "120702": {
+    "stage": 1,
+    "name": 1464666615,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10207.png",
+    "desc": 1908181632,
+    "isUnSummonRemove": 1
+  },
+  "116101": {
+    "stage": 1,
+    "name": 1422330158,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10161.png",
+    "desc": 1556295795,
+    "isUnSummonRemove": 1
+  },
+  "12001": {
+    "name": 1440659734,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1297032355,
+    "icon": "$UI_Feature_Common_003.png"
+  },
+  "11701": {
+    "name": 1180369053,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1685845535,
+    "icon": "$UI_Feature_Common_10171.png"
+  },
+  "10211": {
+    "name": 1693858630,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2055422330,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "114401": {
+    "name": 1790122811,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1835236460,
+    "icon": "$UI_Feature_Special_10203.png"
+  },
+  "12003": {
+    "name": 1916676869,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1202980311,
+    "icon": "$UI_Feature_Common_10203.png"
+  },
+  "116102": {
+    "stage": 1,
+    "name": 1975966649,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10161.png",
+    "desc": 2010072974,
+    "isUnSummonRemove": 1
+  },
+  "10241": {
+    "name": 1556077842,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2144671135,
+    "icon": "$UI_Feature_Common_010.png"
+  },
+  "12401": {
+    "name": 1606514363,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1200879437,
+    "icon": "$UI_Feature_Common_10173.png"
+  },
+  "117304": {
+    "stage": 1,
+    "name": 2001805593,
+    "type": "possess",
+    "icon": "$UI_Feature_Special_10173.png",
+    "desc": 1581565644,
+    "isUnSummonRemove": 1
+  },
+  "10402": {
+    "name": 1539686697,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1817831210,
+    "icon": "$UI_Feature_Special_10043.png"
+  },
+  "118104": {
+    "stage": 1,
+    "name": 1254509375,
+    "type": "possess",
+    "icon": "$UI_Feature_Common_10181.png",
+    "desc": 1694136231,
+    "isUnSummonRemove": 1
+  },
+  "118501": {
+    "name": 1280728888,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1240148303,
+    "icon": "$UI_Feature_Common_10185.png"
+  },
+  "118702": {
+    "name": 1642332631,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1357841166,
+    "icon": "$UI_Feature_Common_10181.png"
+  },
+  "119102": {
+    "name": 1593172165,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1645340113,
+    "icon": "$UI_Feature_Common_10194.png"
+  },
+  "11901": {
+    "name": 1318132148,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1287530485,
+    "icon": "$UI_Feature_Common_014.png"
+  },
+  "119103": {
+    "name": 1950076215,
+    "type": "possess",
+    "stage": 1,
+    "desc": 2026987293,
+    "icon": "$UI_Feature_Special_10194.png"
+  },
+  "10301": {
+    "name": 1815575841,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1352861434,
+    "icon": "$UI_Feature_Common_10031.png"
+  },
+  "119202": {
+    "name": 1319117337,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1682458346,
+    "icon": "$UI_Feature_Common_10194.png"
+  },
+  "119203": {
+    "name": 1347031570,
+    "type": "possess",
+    "stage": 1,
+    "desc": 1984573232,
+    "icon": "$UI_Feature_Special_10194.png"
+  }
+}

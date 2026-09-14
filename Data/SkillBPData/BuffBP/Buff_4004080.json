@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004080",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "isUnSummonKeep": true,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 4004080,
+      "name": "removeBuff",
+      "UID": "c758813b-8f70-442b-bedd-790474710853",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "target": "CURPET",
+      "duration": -1,
+      "buffId": 4004081,
+      "NodeID": 9,
+      "UID": "8c7ec301-978d-4bdd-858e-cf1a1734a840",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "actionIds": [
+        3,
+        7,
+        8
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "a2a0ad8e-3061-4e89-8c87-4645de3afdf7",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "buffId": 4004081,
+      "name": "removeBuff",
+      "UID": "39ce373e-3763-4120-8b77-4ee4f0978db7",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "buffId": 4004081,
+      "name": "removeGroupBuff",
+      "UID": "76355f6e-d196-4dd3-8ff9-64978d7544d4",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    9
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 2104517201,
+      "name": "createProjectile",
+      "UID": "fb52d8a3-637a-4f26-bd14-e26b185b002a",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Tracking",
+      "targetPos": "MASTER",
+      "NodeID": 5,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "7": {
+      "UID": "57968cea-3478-475e-8df2-45ff291d3410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 7
+    }
+  },
+  "BPName": "timeline_2104517",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    7
+  ],
+  "layer": "Base",
+  "length": 9999
+}

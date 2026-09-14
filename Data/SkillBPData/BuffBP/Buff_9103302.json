@@ -1,0 +1,95 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9103302",
+  "NodeID": 1,
+  "UID": "ec2dc841-88d7-4996-ad4c-75336db66765",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "73b136fc-0b51-4d6b-bc11-9c626665f609",
+      "conditionIds": [
+        8,
+        4
+      ],
+      "name": "conditionAnd",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "2d560f96-25f4-4a0a-89af-c323ed52d5c8",
+      "name": "isCalcResultCritical",
+      "NodeID": 4
+    },
+    "24": {
+      "value": {
+        "calcId": 9103302,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 23,
+        "UID": "807b19f0-5efb-4767-837d-06f576aefe91",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "3e95a8fa-613a-4c26-8257-fd639cfd9c96",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "6": {
+      "actionIds": [
+        24,
+        14
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "e3e8d7a6-447a-4612-8738-02208abd849f",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "7": {
+      "UID": "9239d8f0-3626-4c1f-b884-729d7de0e916",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "f1c1448b-d9c4-4bab-bce4-395d1df1646b",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 8
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a650298b-b264-45e2-b929-d972e4988fc3",
+      "effectId": "Eff_Common_Buff_EnergyRegen",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "5b23aca7-f1c5-4756-b31f-eab87a31f71f",
+      "name": "callClientAction",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "23": {
+      "calcId": 9103302,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 23,
+      "UID": "807b19f0-5efb-4767-837d-06f576aefe91",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

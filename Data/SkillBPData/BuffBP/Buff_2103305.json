@@ -1,0 +1,80 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "buffId": 2103302,
+      "name": "hasBuff",
+      "UID": "7bebf096-e0a8-466a-9718-444d8b9af237",
+      "target": {
+        "eventName": "onAttack",
+        "name": "getEventCombatContextTarget",
+        "UID": "2adc07b1-7f3a-4384-933e-37aa0d30d2ac",
+        "target": "TARGET",
+        "NodeID": 2
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "32381f0a-3824-497f-b83a-70b44e783a78",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2103305,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "b0e9c0ea-9b91-49cb-8d77-d7b297efea92",
+      "target": {
+        "eventName": "onAttack",
+        "name": "getEventCombatContextTarget",
+        "UID": "2adc07b1-7f3a-4384-933e-37aa0d30d2ac",
+        "target": "TARGET",
+        "NodeID": 2
+      },
+      "NodeID": 6,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30202,
+        "hitFrameFreezeId": 10022,
+        "elementType": 4,
+        "impulseId": 2000
+      }
+    },
+    "5": {
+      "UID": "035544e7-b332-4ed3-b729-2283b7da92d2",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "2": {
+      "eventName": "onAttack",
+      "name": "getEventCombatContextTarget",
+      "UID": "2adc07b1-7f3a-4384-933e-37aa0d30d2ac",
+      "target": "TARGET",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2103305",
+  "dynamicRPCStates": {},
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

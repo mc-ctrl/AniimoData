@@ -1,0 +1,189 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "8f377c88-bb7e-44f1-a2b2-c2de6d76f2c5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          15,
+          17,
+          25
+        ]
+      },
+      "NodeID": 5
+    },
+    "40": {
+      "heightOffset": 0.2,
+      "maxLockTime": 3.22,
+      "NodeID": 40,
+      "UID": "26468728-74f4-4e94-aabe-c797cfdb6bb9",
+      "target": "OWNER",
+      "name": "cameraFaceTo"
+    },
+    "59": {
+      "time": 2,
+      "rotateSpeed": -60,
+      "name": "rotateTo",
+      "UID": "73ff3967-75ff-48a3-b56b-64c98a9a1c67",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 59
+    },
+    "21": {
+      "UID": "89b6a348-0106-4176-af79-ca95f96957bc",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          40,
+          22,
+          19,
+          24,
+          27,
+          26,
+          59
+        ]
+      },
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "fa5e8a2c-328b-44a4-aaf8-e5ec63e1b46c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "UID": "f045b223-a1d3-46ed-ba36-a5d3b53eeb9e",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "EnterCombat",
+      "NodeID": 23
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2f3a6460-2fea-4de8-94f9-498206efc15f",
+      "effectId": "Eff_Yuanwei_SleepBall_BattleIdle_San",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "337bc2e0-5473-47ba-81e4-334b7fea1f7d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          16,
+          18,
+          23
+        ]
+      },
+      "NodeID": 14
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "93cb43da-d0d5-4445-8578-ea2d4778a15e",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Waterwave",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 10011,
+      "NodeID": 15,
+      "UID": "3e468c0f-be69-47d6-b9b9-670d4a3ec0ba",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "25": {
+      "UID": "7d52d60c-7528-4d06-95e3-01333720b710",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "LuoDi",
+      "NodeID": 25
+    },
+    "26": {
+      "buffId": 1145107,
+      "name": "removeBuff",
+      "UID": "f0b8c2ed-cf49-4fd7-b5af-7b27fea7267c",
+      "target": "CASTER",
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "14b8215f-ef22-4df3-b2a2-7afdaec28fff",
+      "name": "hideBubbleMsg",
+      "msgId": 2242,
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "acb9c8ae-a63f-4c3e-829e-11f6f8bcbe47",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 17
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 29,
+      "UID": "dbfaa724-9671-4616-b6c5-599b5b848339"
+    },
+    "18": {
+      "UID": "3134e1dd-40a6-49c8-bf91-29f359322cd7",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 18
+    },
+    "12": {
+      "UID": "7576462b-1566-42ce-a5e6-ac81c5d4d922",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 12
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ae2ee513-97a6-4785-9637-45df74613d63",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Combat_Start"
+    },
+    "22": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "1aee9878-6e15-4b08-86fc-0ee8c30de30d",
+      "effectId": "Eff_Yuanwei_SleepBall_BattleIdle",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "16": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "fef17ef6-4923-48cf-9e37-60ea9d7bd275",
+      "target": "CASTER",
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_902132301",
+  "NodeID": 7,
+  "UID": "83b252ed-d240-4b18-a943-38a70708dd83",
+  "eventIds": [
+    5,
+    14,
+    21,
+    29
+  ],
+  "layer": "Base",
+  "length": 3.21667
+}

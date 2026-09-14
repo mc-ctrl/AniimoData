@@ -1,0 +1,95 @@
+{
+  "BPName": "ability_15030502",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 11200480,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        45
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "1de5a886-7edd-4c1f-beb6-abc3a2f36484",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "45": {
+      "timelineId": 15030506001,
+      "name": "setCombatActionTimeline",
+      "UID": "ebd7c7c4-cf0a-43b2-8f1a-df422e41061b",
+      "target": "CASTER",
+      "NodeID": 45
+    },
+    "53": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "1b92d5c3-2fe4-45f9-83ce-fd85b0081962",
+      "NodeID": 53,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "b4530070-b980-4dff-b133-13e5f565ffde",
+        "target": "OWNER",
+        "NodeID": 52
+      }
+    },
+    "46": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "7dbf7546-f61d-4ae8-87b2-0770438cec14",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "48": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "ea9c716f-8d0c-4488-bf5f-e16442e64176",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "7": {
+      "timelineId": 15030502001,
+      "name": "setCombatActionTimeline",
+      "UID": "ef35aacd-fe9e-44a7-97d7-dade7dbf5fb0",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "47": {
+      "UID": "894320ab-2d16-46bd-a380-6e941c03978e",
+      "conditionIds": [
+        46,
+        48,
+        53
+      ],
+      "name": "conditionOr",
+      "NodeID": 47
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrazyClaw03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Skill_Dark_CrazyClaw3_L",
+    "Eff_Hit_Dark_Slash",
+    "Eff_Parmon_10503_Skill_Dark_CrazyClaw3_R"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

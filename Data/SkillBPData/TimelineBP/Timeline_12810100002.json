@@ -1,0 +1,116 @@
+{
+  "nodeMap": {
+    "139": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "93e6d952-83ac-4122-830a-33cda3ead05d",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 139
+    },
+    "140": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "51fc071b-0620-4bf4-a3ef-26d1c53643a2",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 140
+    },
+    "7": {
+      "timelineId": 12810100001,
+      "name": "jumpToNextTimeline",
+      "UID": "5d2195ec-d5b7-4503-816c-92696aed3ca0",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        80
+      ],
+      "conditionActionIds": [
+        135
+      ],
+      "UID": "2c83e304-0950-4dd0-9966-d15c52729a06",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "136": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "71fed329-385c-4105-8884-3dbbbc34eaeb",
+      "target": "OWNER",
+      "NodeID": 136
+    },
+    "9": {
+      "UID": "55e554d9-5660-4d6d-9c6c-7d26c47d24a6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "NodeID": 9
+    },
+    "137": {
+      "actionIds": [
+        139
+      ],
+      "conditionActionIds": [
+        136
+      ],
+      "UID": "219525a0-c46b-452f-b622-be3d31d11b24",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        140
+      ],
+      "NodeID": 137
+    },
+    "135": {
+      "name": "isInBurrow",
+      "UID": "493241ef-eded-41ac-a730-5e66295639ab",
+      "target": "CASTER",
+      "NodeID": 135,
+      "not": false
+    },
+    "138": {
+      "action": {
+        "actionIds": [
+          137
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 138,
+      "UID": "b363a9e3-2b40-4126-aaa2-2f9300b7d6fc"
+    },
+    "80": {
+      "timelineId": 12810100003,
+      "name": "jumpToNextTimeline",
+      "UID": "f137b55a-141d-408f-83da-ddfbc7adfd8f",
+      "target": "OWNER",
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_12810100",
+  "NodeID": 11,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    9,
+    138
+  ],
+  "layer": "Base",
+  "length": 1.75
+}

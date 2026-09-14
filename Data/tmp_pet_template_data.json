@@ -1,0 +1,2246 @@
+{
+  "1013301": {
+    "DefaultGen": 2,
+    "refId": 1013300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1013301,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1013301
+  },
+  "1002400": {
+    "defaultFeature": 10281,
+    "propId": 1002400,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002400,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1002500": {
+    "defaultFeature": 10252,
+    "propId": 1002500,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002500,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1002600": {
+    "defaultFeature": 10231,
+    "propId": 1002600,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002600,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1004500": {
+    "defaultFeature": 10472,
+    "propId": 1004500,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1004500,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1016202": {
+    "DefaultGen": 1,
+    "refId": 1016200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1016202,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1016202
+  },
+  "1013200": {
+    "defaultFeature": 11371,
+    "propId": 1013200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1013200,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "100110001": {
+    "templateBaseId": 100110001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Behav_Happy",
+      1.32
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100120000": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100120000,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100210001": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1002101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100210001,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100210004": {
+    "templateBaseId": 100210004,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1002104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Skill_Petrifaction_Enter",
+      0.54
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100230000": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100230000,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100230002": {
+    "templateBaseId": 100230002,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1002302,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "GlideIdle",
+      2.05
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100260001": {
+    "templateBaseId": 100260001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "IdleSpecial",
+      0
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100310002": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100310002,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1017400": {
+    "defaultFeature": 117304,
+    "propId": 1017400,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1017400,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1018401": {
+    "DefaultGen": 1,
+    "refId": 1018400,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1018401,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1018401
+  },
+  "1018500": {
+    "defaultFeature": 11874,
+    "propId": 1018500,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1018500,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1037300": {
+    "defaultFeature": 13711,
+    "propId": 1037300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1037300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1018502": {
+    "DefaultGen": 1,
+    "refId": 1018500,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1018502,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1018502
+  },
+  "1019400": {
+    "defaultFeature": 119403,
+    "propId": 1019400,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1019400,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1020100": {
+    "defaultFeature": 12074,
+    "propId": 1020100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1020100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1018701": {
+    "DefaultGen": 2,
+    "refId": 1018700,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1018701,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1018701
+  },
+  "1020700": {
+    "defaultFeature": 120701,
+    "propId": 1020700,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1020700,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1021100": {
+    "defaultFeature": 121103,
+    "propId": 1021100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1021100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1021200": {
+    "defaultFeature": 121103,
+    "propId": 1021200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1021200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "101810002": {
+    "templateBaseId": 101810002,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1018102,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Behav_Sing",
+      2.69
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1022100": {
+    "defaultFeature": 122103,
+    "propId": 1022100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1022100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1022200": {
+    "defaultFeature": 12221,
+    "propId": 1022200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1022200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1019401": {
+    "DefaultGen": 1,
+    "refId": 1019400,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1019401,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1019401
+  },
+  "1019402": {
+    "DefaultGen": 2,
+    "refId": 1019400,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1019402,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1019402
+  },
+  "1023300": {
+    "defaultFeature": 12374,
+    "propId": 1023300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1023300,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1020101": {
+    "DefaultGen": 1,
+    "refId": 1020100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1020101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1020101
+  },
+  "1002300": {
+    "defaultFeature": 10281,
+    "propId": 1002300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002300,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1003200": {
+    "defaultFeature": 10372,
+    "propId": 1003200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1003200,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1004100": {
+    "defaultFeature": 10471,
+    "propId": 1004100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1004100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1004200": {
+    "defaultFeature": 10471,
+    "propId": 1004200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1004200,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1004300": {
+    "defaultFeature": 10471,
+    "propId": 1004300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1004300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1005100": {
+    "defaultFeature": 10573,
+    "propId": 1005100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1005100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1005200": {
+    "defaultFeature": 10573,
+    "propId": 1005200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1005200,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1032100": {
+    "defaultFeature": 132302,
+    "propId": 1032100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1032100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1032300": {
+    "defaultFeature": 132302,
+    "propId": 1032300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1032300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1021201": {
+    "DefaultGen": 2,
+    "refId": 1021200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1021201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1021201
+  },
+  "1021202": {
+    "DefaultGen": 1,
+    "refId": 1021200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1021202,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1021202
+  },
+  "1021203": {
+    "DefaultGen": 2,
+    "refId": 1021200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1021203,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1021203
+  },
+  "1012200": {
+    "defaultFeature": 11271,
+    "propId": 1012200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1012200,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1016100": {
+    "defaultFeature": 11675,
+    "propId": 1016100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1016100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1017100": {
+    "defaultFeature": 117304,
+    "propId": 1017100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1017100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1037100": {
+    "defaultFeature": 13711,
+    "propId": 1037100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1037100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1019100": {
+    "defaultFeature": 119103,
+    "propId": 1019100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1019100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1022201": {
+    "DefaultGen": 2,
+    "refId": 1022200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1022201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1022201
+  },
+  "1028500": {
+    "defaultFeature": 12813,
+    "propId": 1028500,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1028500,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1045100": {
+    "defaultFeature": 145101,
+    "propId": 1045100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1045100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1045300": {
+    "defaultFeature": 145301,
+    "propId": 1045300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1045300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1023102": {
+    "DefaultGen": 2,
+    "refId": 1023100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1023102,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1023102
+  },
+  "1023201": {
+    "DefaultGen": 1,
+    "refId": 1023200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1023201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1023201
+  },
+  "1023202": {
+    "DefaultGen": 2,
+    "refId": 1023200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1023202,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1023202
+  },
+  "1026101": {
+    "DefaultGen": 1,
+    "refId": 1026100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1026101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1026101
+  },
+  "1026201": {
+    "DefaultGen": 2,
+    "refId": 1026200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1026201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1026201
+  },
+  "1002200": {
+    "defaultFeature": 10281,
+    "propId": 1002200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1017101": {
+    "DefaultGen": 2,
+    "refId": 1017100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1017101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1017101
+  },
+  "1016102": {
+    "DefaultGen": 1,
+    "refId": 1016100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1016102,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1016102
+  },
+  "1002100": {
+    "defaultFeature": 102101,
+    "propId": 1002100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1032301": {
+    "DefaultGen": 1,
+    "refId": 1032300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1032301,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1032301
+  },
+  "1032302": {
+    "DefaultGen": 2,
+    "refId": 1032300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1032302,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1032302
+  },
+  "1033101": {
+    "DefaultGen": 1,
+    "refId": 1033100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1033101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1033101
+  },
+  "1033102": {
+    "DefaultGen": 2,
+    "refId": 1033100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1033102,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1033102
+  },
+  "1033103": {
+    "DefaultGen": 1,
+    "refId": 1033100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1033103,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1033103
+  },
+  "1033301": {
+    "DefaultGen": 2,
+    "refId": 1033300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1033301,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1033301
+  },
+  "1033302": {
+    "DefaultGen": 1,
+    "refId": 1033300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1033302,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1033302
+  },
+  "1033303": {
+    "DefaultGen": 2,
+    "refId": 1033300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1033303,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1033303
+  },
+  "104710201": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 104710201,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "104310002": {
+    "templateBaseId": 104310002,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Behav_Love",
+      2.53
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "103310004": {
+    "templateBaseId": 103310004,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "IdleSpecial02",
+      0.84
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102910001": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 102910001,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102830001": {
+    "templateBaseId": 102830001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Skill_Breath",
+      1.64
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102620002": {
+    "templateBaseId": 102620002,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "DashStart",
+      0.55
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102610002": {
+    "templateBaseId": 102610002,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1026102,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "IdleSpecial",
+      1.02
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102410001": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 102410001,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102320001": {
+    "templateBaseId": 102320001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1023201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "IdleSpecial02",
+      3.6
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102220000": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 102220000,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102210001": {
+    "templateBaseId": 102210001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1022101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Skill_Spark",
+      0.47
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "102120000": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 102120000,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "101870000": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 101870000,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "101810004": {
+    "templateBaseId": 101810004,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1018102,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Behav_Sing",
+      2.69
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "101720001": {
+    "templateBaseId": 101720001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1017201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Swim_Dash",
+      1.25
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "101710003": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 101710003,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "101410002": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 101410002,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "101320001": {
+    "templateBaseId": 101320001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "IdleSpecial",
+      0.96
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100530002": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100530002,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100530000": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100530000,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100520003": {
+    "templateBaseId": 100520003,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1001,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "DashStart",
+      0.64
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100510004": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100510004,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100510001": {
+    "templateBaseId": 100510001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "IdleSpecial",
+      0.51
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100450000": {
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1005104,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 100450000,
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "100420001": {
+    "templateBaseId": 100420001,
+    "DefaultGen": 1,
+    "DefaultLevel": 5,
+    "DefaultNature": 1,
+    "defaultFeature": 10101,
+    "propId": 1004201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "sculptureConfig": [
+      "Skill_Breath",
+      0.28
+    ],
+    "strengthenPoint": 0,
+    "strengthenPointMap": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1018501": {
+    "DefaultGen": 2,
+    "refId": 1018500,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1018501,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1018501
+  },
+  "1018400": {
+    "defaultFeature": 11873,
+    "propId": 1018400,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1018400,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1014100": {
+    "defaultFeature": 12501,
+    "propId": 1014100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1014100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1017201": {
+    "DefaultGen": 1,
+    "refId": 1017200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1017201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1017201
+  },
+  "1017301": {
+    "DefaultGen": 2,
+    "refId": 1017300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1017301,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1017301
+  },
+  "1014301": {
+    "DefaultGen": 1,
+    "refId": 1014300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1014301,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1014301
+  },
+  "1016300": {
+    "defaultFeature": 116303,
+    "propId": 1016300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1016300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1014200": {
+    "defaultFeature": 12501,
+    "propId": 1014200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1014200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1018101": {
+    "DefaultGen": 2,
+    "refId": 1018100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1018101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1018101
+  },
+  "1002700": {
+    "defaultFeature": 102701,
+    "propId": 1002700,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002700,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1001200": {
+    "defaultFeature": 10174,
+    "propId": 1001200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1001200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1003100": {
+    "defaultFeature": 10301,
+    "propId": 1003100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1003100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1017300": {
+    "defaultFeature": 117304,
+    "propId": 1017300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1017300,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1001201": {
+    "DefaultGen": 1,
+    "refId": 1001200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1001201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1001201
+  },
+  "1001202": {
+    "DefaultGen": 2,
+    "refId": 1001200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1001202,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1001202
+  },
+  "1005300": {
+    "defaultFeature": 10573,
+    "propId": 1005300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1005300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1002101": {
+    "DefaultGen": 1,
+    "refId": 1002100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1002101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1002101
+  },
+  "1013100": {
+    "defaultFeature": 11371,
+    "propId": 1013100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1013100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1033300": {
+    "defaultFeature": 133302,
+    "propId": 1033300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1033300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1019200": {
+    "defaultFeature": 119203,
+    "propId": 1019200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1019200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1016101": {
+    "DefaultGen": 2,
+    "refId": 1016100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1016101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1016101
+  },
+  "1020300": {
+    "defaultFeature": 12074,
+    "propId": 1020300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1020300,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1016201": {
+    "DefaultGen": 2,
+    "refId": 1016200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1016201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1016201
+  },
+  "1020701": {
+    "DefaultGen": 1,
+    "refId": 1020700,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1020701,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1020701
+  },
+  "1020301": {
+    "DefaultGen": 2,
+    "refId": 1020300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1020301,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1020301
+  },
+  "1026200": {
+    "defaultFeature": 12603,
+    "propId": 1026200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1026200,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1021101": {
+    "DefaultGen": 1,
+    "refId": 1021100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1021101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1021101
+  },
+  "1021102": {
+    "DefaultGen": 2,
+    "refId": 1021100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1021102,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1021102
+  },
+  "1023100": {
+    "defaultFeature": 12371,
+    "propId": 1023100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1023100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1021103": {
+    "DefaultGen": 1,
+    "refId": 1021100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1021103,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1021103
+  },
+  "1002601": {
+    "DefaultGen": 2,
+    "refId": 1002600,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1002601,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1002601
+  },
+  "1023200": {
+    "defaultFeature": 12371,
+    "propId": 1023200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1023200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1026100": {
+    "defaultFeature": 12603,
+    "propId": 1026100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1026100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1002701": {
+    "DefaultGen": 1,
+    "refId": 1002700,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1002701,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1002701
+  },
+  "1028100": {
+    "defaultFeature": 12813,
+    "propId": 1028100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1028100,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1028400": {
+    "defaultFeature": 12813,
+    "propId": 1028400,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1028400,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1003101": {
+    "DefaultGen": 2,
+    "refId": 1003100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1003101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1003101
+  },
+  "1033100": {
+    "defaultFeature": 133302,
+    "propId": 1033100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1033100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1001100": {
+    "defaultFeature": 10174,
+    "propId": 1001100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1001100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1003201": {
+    "DefaultGen": 1,
+    "refId": 1003200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1003201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1003201
+  },
+  "1003202": {
+    "DefaultGen": 2,
+    "refId": 1003200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1003202,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1003202
+  },
+  "1023101": {
+    "DefaultGen": 1,
+    "refId": 1023100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1023101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1023101
+  },
+  "1014300": {
+    "defaultFeature": 12501,
+    "propId": 1014300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1014300,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1035100": {
+    "defaultFeature": 13521,
+    "propId": 1035100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1035100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1035200": {
+    "defaultFeature": 13521,
+    "propId": 1035200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1035200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1036100": {
+    "defaultFeature": 13611,
+    "propId": 1036100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1036100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1018100": {
+    "defaultFeature": 11873,
+    "propId": 1018100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1018100,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1036300": {
+    "defaultFeature": 13611,
+    "propId": 1036300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1036300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1018700": {
+    "defaultFeature": 11873,
+    "propId": 1018700,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1018700,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1005101": {
+    "DefaultGen": 1,
+    "refId": 1005100,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1005101,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1005101
+  },
+  "1017200": {
+    "defaultFeature": 117304,
+    "propId": 1017200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1017200,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1005201": {
+    "DefaultGen": 2,
+    "refId": 1005200,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1005201,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1005201
+  },
+  "1017401": {
+    "DefaultGen": 1,
+    "refId": 1017400,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1017401,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1017401
+  },
+  "1005301": {
+    "DefaultGen": 1,
+    "refId": 1005300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1005301,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1005301
+  },
+  "1005302": {
+    "DefaultGen": 2,
+    "refId": 1005300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1005302,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1005302
+  },
+  "1005303": {
+    "DefaultGen": 1,
+    "refId": 1005300,
+    "DefaultNature": 1,
+    "defaultFeature": 0,
+    "propId": 1005303,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "DefaultLevel": 50,
+    "templateBaseId": 1005303
+  },
+  "1013300": {
+    "defaultFeature": 11371,
+    "propId": 1013300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1013300,
+    "DefaultGen": 2,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  },
+  "1016200": {
+    "defaultFeature": 11675,
+    "propId": 1016200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1016200,
+    "DefaultGen": 1,
+    "DefaultLevel": 50,
+    "DefaultNature": 1
+  }
+}

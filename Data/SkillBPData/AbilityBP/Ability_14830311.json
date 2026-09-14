@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_GatherBubble_02"
+  ],
+  "searchTargetRangeRadius": 15,
+  "BPName": "ability_14830311",
+  "name": "水远程攻击",
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 10301061,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14830311001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

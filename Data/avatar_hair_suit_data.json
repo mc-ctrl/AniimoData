@@ -1,0 +1,344 @@
+{
+  "1203900": {
+    "preview": 0,
+    "assetId": 302110039,
+    "appearanceList": [
+      1203911
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1207100": {
+    "preview": 1,
+    "assetId": 302110071,
+    "appearanceList": [
+      1207111
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1207200": {
+    "preview": 1,
+    "assetId": 302110072,
+    "appearanceList": [
+      1207211
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1207300": {
+    "preview": 1,
+    "assetId": 302110073,
+    "appearanceList": [
+      1207311
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1207400": {
+    "preview": 1,
+    "assetId": 302110074,
+    "appearanceList": [
+      1207411
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1100100": {
+    "preview": 0,
+    "assetId": 301110001,
+    "appearanceList": [
+      1100132,
+      1100133,
+      1100111,
+      1100143,
+      1100141,
+      1100122,
+      1100123,
+      1100121,
+      1100131,
+      1100142
+    ],
+    "body": [
+      12
+    ]
+  },
+  "1100400": {
+    "preview": 0,
+    "assetId": 301110004,
+    "appearanceList": [
+      1100411
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1100600": {
+    "preview": 1,
+    "assetId": 301110006,
+    "appearanceList": [
+      1100611
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1100700": {
+    "preview": 1,
+    "assetId": 301110007,
+    "appearanceList": [
+      1100711
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1100800": {
+    "preview": 1,
+    "assetId": 301110008,
+    "appearanceList": [
+      1100811
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1101100": {
+    "preview": 0,
+    "source": [
+      401
+    ],
+    "assetId": 301110011,
+    "appearanceList": [
+      1101111,
+      1101112
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1101300": {
+    "preview": 0,
+    "assetId": 301110013,
+    "appearanceList": {},
+    "body": [
+      11
+    ]
+  },
+  "1101800": {
+    "preview": 1,
+    "assetId": 301110018,
+    "appearanceList": [
+      1101811
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1102000": {
+    "preview": 0,
+    "assetId": 301110020,
+    "appearanceList": [
+      1102011
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1102100": {
+    "preview": 0,
+    "assetId": 301110021,
+    "appearanceList": [
+      1102112,
+      1102111
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1102200": {
+    "preview": 0,
+    "assetId": 301110022,
+    "appearanceList": [
+      1102211
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1102600": {
+    "preview": 0,
+    "assetId": 301110026,
+    "appearanceList": [
+      1102611
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1103900": {
+    "preview": 0,
+    "assetId": 301110039,
+    "appearanceList": [
+      1103911
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1107200": {
+    "preview": 1,
+    "assetId": 301110071,
+    "appearanceList": [
+      1107211
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1107300": {
+    "preview": 1,
+    "assetId": 301110072,
+    "appearanceList": [
+      1107311
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1107400": {
+    "preview": 1,
+    "assetId": 301110073,
+    "appearanceList": [
+      1107411
+    ],
+    "body": [
+      11
+    ]
+  },
+  "1200100": {
+    "preview": 0,
+    "assetId": 302110001,
+    "appearanceList": [
+      1200111,
+      1200121,
+      1200142,
+      1200143,
+      1200151,
+      1200122,
+      1200141,
+      1200131,
+      1200132
+    ],
+    "body": [
+      22
+    ]
+  },
+  "1200400": {
+    "preview": 0,
+    "assetId": 302110004,
+    "appearanceList": [
+      1200411
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1200500": {
+    "preview": 1,
+    "assetId": 302110005,
+    "appearanceList": [
+      1200511
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1200600": {
+    "preview": 1,
+    "assetId": 302110006,
+    "appearanceList": [
+      1200611
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1201100": {
+    "preview": 0,
+    "assetId": 302110011,
+    "appearanceList": [
+      1201111,
+      1201112
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1201800": {
+    "preview": 1,
+    "assetId": 302110018,
+    "appearanceList": [
+      1201811
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1202000": {
+    "preview": 0,
+    "assetId": 302110020,
+    "appearanceList": [
+      1202011
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1202100": {
+    "preview": 0,
+    "assetId": 302110021,
+    "appearanceList": [
+      1202112,
+      1202111
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1202200": {
+    "preview": 0,
+    "assetId": 302110022,
+    "appearanceList": [
+      1202211
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1202500": {
+    "preview": 1,
+    "assetId": 302110025,
+    "appearanceList": [
+      1202511
+    ],
+    "body": [
+      21
+    ]
+  },
+  "1202600": {
+    "preview": 0,
+    "assetId": 302110026,
+    "appearanceList": [
+      1202611
+    ],
+    "body": [
+      21
+    ]
+  }
+}

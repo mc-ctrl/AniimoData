@@ -1,0 +1,95 @@
+{
+  "BPName": "ability_15030200",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800350,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "c3124094-5eac-4be1-bcfa-f1a97d549921",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "28": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "6d0a8860-d3ae-4b94-955e-2426251cdc55",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "5223f96d-750f-46ae-9bac-4e5c5dd13689",
+      "conditionIds": [
+        28,
+        30,
+        57
+      ],
+      "name": "conditionOr",
+      "NodeID": 29
+    },
+    "30": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "62064e11-105a-4bda-a5d8-6af92417a68b",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "57": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "4fb0dcda-2472-4f9f-bbbc-d858cc762f2c",
+      "NodeID": 57,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "3a0bd9d6-075e-4de5-a52b-f6629e13059a",
+        "target": "OWNER",
+        "NodeID": 56
+      }
+    },
+    "7": {
+      "timelineId": 15030200001,
+      "name": "setCombatActionTimeline",
+      "UID": "0b2f8142-cb3a-4c9e-ac0e-23977414e4f1",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "27": {
+      "timelineId": 15030201001,
+      "name": "setCombatActionTimeline",
+      "UID": "58cbf94c-3830-447a-a14b-7f9352e1135e",
+      "target": "CASTER",
+      "NodeID": 27
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_EarthShock"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Skill_Earthshock",
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Parmon_10503_Skill_Earthshock_Start"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

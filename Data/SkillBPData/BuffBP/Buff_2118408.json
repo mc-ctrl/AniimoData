@@ -1,0 +1,284 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118408",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    11
+  ],
+  "nodeMap": {
+    "6": {
+      "calcResultNodeId": 4,
+      "name": "actOnTargets",
+      "UID": "b81ea878-e43b-4551-bde4-3857850fb3ed",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        4,
+        15,
+        12
+      ],
+      "isScaleWithModel": true,
+      "impulseId": 3000,
+      "NodeID": 6
+    },
+    "8": {
+      "actionIds": [
+        11,
+        6
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "691810ab-a163-4b2b-aac3-7275805c4cb1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25,
+        21
+      ],
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "e3feab32-79f8-46b5-ae06-050a1c2b4a8f",
+      "name": "refreshBuffDuration",
+      "NodeID": 31
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8a078f9b-b3c5-4adc-8b96-cdcfd0475557",
+      "effectId": "Eff_Parmon_10184_Skill_AerialAce_After_Explosion_Scale",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "21": {
+      "calcResultNodeId": 19,
+      "name": "actOnTargets",
+      "UID": "88149513-02a9-4bc3-8fa4-63d24b188414",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        19,
+        27,
+        26
+      ],
+      "isScaleWithModel": false,
+      "impulseId": 3000,
+      "NodeID": 21
+    },
+    "4": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2118408,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 1
+      },
+      "UID": "fecfaec1-eb57-4cd5-b401-febcfd7c0592",
+      "target": "TARGET",
+      "NodeID": 4,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 9,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Wind_Blunt"
+      }
+    },
+    "26": {
+      "target": "TARGET",
+      "duration": 15,
+      "buffId": 2118409,
+      "NodeID": 26,
+      "UID": "7b026429-ab5a-401e-9454-427c07ff3693",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "33": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "60152c3f-7290-4b73-ab11-93827ba17010",
+      "name": "doActionsByConditions",
+      "NodeID": 33
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c92ac9dc-8115-40c2-9ac1-878105f8dc55",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_AerialAce_After_Explosion",
+      "NodeID": 15
+    },
+    "25": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "aeaaadbf-c6d8-4531-802d-f19f8b6d7db7",
+      "effectId": "Eff_Parmon_10184_Skill_AerialAce_After_Explosion",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "cc132b9f-ef22-4aef-a7b3-dc4ad728e106",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5480c768-2e33-4125-9dfe-40eac023df62",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_AerialAce_After_Explosion",
+      "NodeID": 27
+    },
+    "28": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "811227d7-5678-4aa3-8a34-bcca3a1463b6",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "339d390c-096a-4beb-ac57-e0d11f5a1ea0",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_AerialAce_After",
+      "NodeID": 13
+    },
+    "12": {
+      "target": "TARGET",
+      "duration": 15,
+      "buffId": 2118409,
+      "NodeID": 12,
+      "UID": "77199e9a-a1a6-4db0-9fe9-5369120664c4",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "32": {
+      "key": "refresh",
+      "duration": 0.1,
+      "actionIds": [
+        31
+      ],
+      "NodeID": 32,
+      "UID": "32543303-b471-4f5c-9cf6-448f7c80fb48",
+      "name": "addTimer"
+    },
+    "19": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2118408,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 1
+      },
+      "UID": "92d2f462-6545-4d5c-929f-a1611ee0c104",
+      "target": "TARGET",
+      "NodeID": 19,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 9,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Wind_Blunt"
+      }
+    },
+    "34": {
+      "UID": "91e541ba-7936-4883-9aad-08cf1ab12463",
+      "randomPercent": 50,
+      "name": "isRandom",
+      "NodeID": 34
+    },
+    "17": {
+      "UID": "0f60b3fa-c65f-4f2c-830a-37e7c644b157",
+      "conditionIds": [
+        16,
+        28
+      ],
+      "name": "conditionOr",
+      "NodeID": 17
+    }
+  },
+  "onBuffInheritIds": [
+    13,
+    33
+  ],
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10184_Skill_AerialAce_After"
+    }
+  ],
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    13,
+    33
+  ]
+}

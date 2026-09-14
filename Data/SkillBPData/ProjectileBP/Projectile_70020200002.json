@@ -1,0 +1,198 @@
+{
+  "duration": 0.5,
+  "calcResultNodeId": 20,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": {
+    "str": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Dmg_Fly_",
+    "name": "constString",
+    "UID": "e57c2639-1160-4cbe-a840-9f8ce5cd5bff",
+    "NodeID": 53,
+    "concatenateNumber": {
+      "UID": "b9b91bd0-522c-44d3-a5de-9293e0a46474",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 52
+    }
+  },
+  "ignoreActorCollision": true,
+  "gravityRatio": 10,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 1,
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    22,
+    64,
+    94
+  ],
+  "nodeMap": {
+    "22": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 20,
+      "NodeID": 22,
+      "UID": "5deb4784-5338-43d8-9b96-5bb99cb1c899",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.6,
+            2,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        20,
+        88
+      ]
+    },
+    "88": {
+      "offsetXYZ": [
+        0,
+        0.4,
+        0
+      ],
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "49d8d522-549e-4d26-859f-2967376ec4bb",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Hit_",
+        "name": "constString",
+        "UID": "59bdd7b6-8fad-4b8d-b065-9ac57474b60b",
+        "NodeID": 87,
+        "concatenateNumber": {
+          "UID": "c29aa4e3-bcce-46ca-94b2-9ba50d8fb934",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 86
+        }
+      },
+      "speed": 1,
+      "NodeID": 88
+    },
+    "64": {
+      "scale": 1.2,
+      "name": "playEffectOnPosRot",
+      "UID": "c10842f3-7bdf-414e-9949-137fcf9e8c5e",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Entrance_Ground_",
+        "name": "constString",
+        "UID": "6d069c37-b32a-4e0b-958a-0bb7b7b3960f",
+        "NodeID": 63,
+        "concatenateNumber": {
+          "UID": "80fe1de7-2165-42fa-8f38-b45be5b61554",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 62
+        }
+      },
+      "pos": {
+        "UID": "137aa4de-50d9-458c-aef2-05db0a5a7588",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "d84a31ab-d5ae-48f5-ad91-4dac3bea630d",
+          "name": "getProjectilePos",
+          "NodeID": 72
+        },
+        "NodeID": 73
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 64,
+      "rot": "OWNER"
+    },
+    "92": {
+      "UID": "be4e97e0-c8e7-4a30-bb6a-2766daffa076",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 92
+    },
+    "94": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "092050e8-e097-4a95-bff7-1754bc434d3a",
+      "isAbilityEndRemove": false,
+      "soundId": {
+        "str": "SFX_Combat_Monster_Robot_Skill_Entrance_End_",
+        "name": "constString",
+        "UID": "4523e301-c6c2-4a4b-8663-c9853d804e95",
+        "NodeID": 93,
+        "concatenateNumber": {
+          "UID": "be4e97e0-c8e7-4a30-bb6a-2766daffa076",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 92
+        }
+      },
+      "NodeID": 94
+    },
+    "62": {
+      "UID": "80fe1de7-2165-42fa-8f38-b45be5b61554",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 62
+    },
+    "86": {
+      "UID": "c29aa4e3-bcce-46ca-94b2-9ba50d8fb934",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 86
+    },
+    "20": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "battle_projectilehit_fire_h",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "isPlayRadialBlur": true,
+        "impulseId": 1000,
+        "useCasterMainElement": true
+      },
+      "UID": "bb50c1b7-e1d0-4ce4-a61d-9c5b357c07d2",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 20
+    },
+    "52": {
+      "UID": "b9b91bd0-522c-44d3-a5de-9293e0a46474",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 52
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.6,
+  "sweepShape": 0,
+  "BPName": "ability_70020200",
+  "tickInterval": 0.05,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

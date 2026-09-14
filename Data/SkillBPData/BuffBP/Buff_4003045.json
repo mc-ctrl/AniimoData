@@ -1,0 +1,133 @@
+{
+  "stackRule": 0,
+  "ignoreRemoveByTag": true,
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11,
+    3,
+    1,
+    15
+  ],
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_4003045",
+  "onBuffInheritIds": [
+    19,
+    5
+  ],
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fb88e4be-bee9-4971-8500-4505332d86cf",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_Shufu_QXXZ",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "6b577a22-7581-4fba-b518-492543e5e2a2",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_Shufu_QXXZ",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "duration": 1,
+      "target": "OWNER",
+      "NodeID": 14,
+      "UID": "e94addc9-d4cd-4981-ac23-9bd47751ff18",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_KeyItem_ShufuDis_QXXZ",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5a5c36a2-dc33-457e-9938-ab97e3b86403",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "StunStart"
+    },
+    "7": {
+      "UID": "888c9f39-1c6c-4964-a4bc-81c73320e23b",
+      "scale": 0,
+      "name": "setAnimFreezeScale",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "8bbeb5e5-c770-4136-833a-867559f86c77",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 16
+    },
+    "17": {
+      "UID": "bb422a4e-b682-4fb1-bd0b-ac1555a6c958",
+      "name": "stopAnimation",
+      "anim": "StunStart",
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "a230a791-7198-4385-9ccd-f4163a502d2c",
+      "scale": 1,
+      "name": "setAnimFreezeScale",
+      "NodeID": 9
+    },
+    "18": {
+      "buffId": 4003045,
+      "name": "removeBuff",
+      "UID": "42879663-7542-4305-ac81-bbde33e597e6",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "968de6fa-41f7-4471-bfc4-84165c5a643a",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a4e41a53-1bea-40f1-844c-1190c6d82b7d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossRush_Skill_ChainHit",
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "cdefddb1-bca7-4ebb-8b50-3de67a8ecbe8",
+      "name": "callClientAction",
+      "actionIds": [
+        3,
+        16,
+        15,
+        7,
+        11,
+        12
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f63b7714-7061-4b34-a160-7d0d827b5ef3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossRush_Skill_ChainRestraint",
+      "NodeID": 12
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    9,
+    13,
+    14,
+    17
+  ],
+  "onBuffStartIds": [
+    19,
+    5
+  ]
+}

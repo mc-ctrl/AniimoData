@@ -1,0 +1,268 @@
+{
+  "101": [
+    {
+      "detailSortKey": [
+        0,
+        36000,
+        39600,
+        43200,
+        46800,
+        50400,
+        54000,
+        57600,
+        61200,
+        64800,
+        68400,
+        72000,
+        75600,
+        79200,
+        82800
+      ],
+      "linkedScreen": [
+        102,
+        103,
+        104
+      ],
+      "screenType": 1,
+      "detail": {
+        "79200": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 79230
+        },
+        "82800": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 82830
+        },
+        "36000": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 36030
+        },
+        "64800": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 64830
+        },
+        "68400": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 68430
+        },
+        "39600": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 39630
+        },
+        "43200": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 43230
+        },
+        "46800": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 46830
+        },
+        "50400": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 50430
+        },
+        "54000": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 54030
+        },
+        "57600": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 57630
+        },
+        "61200": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 61230
+        },
+        "0": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 30
+        },
+        "72000": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 72030
+        },
+        "75600": {
+          "contentId": [
+            2001
+          ],
+          "playCount": 1,
+          "endTime": 75630
+        }
+      }
+    },
+    {
+      "detailSortKey": [
+        0,
+        36000,
+        39600,
+        43200,
+        46800,
+        50400,
+        54000,
+        57600,
+        61200,
+        64800,
+        68400,
+        72000,
+        75600,
+        79200,
+        82800
+      ],
+      "linkedScreen": [
+        102,
+        103,
+        104
+      ],
+      "screenType": 1,
+      "detail": {
+        "79200": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 79230
+        },
+        "82800": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 82830
+        },
+        "36000": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 36030
+        },
+        "64800": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 64830
+        },
+        "68400": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 68430
+        },
+        "39600": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 39630
+        },
+        "43200": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 43230
+        },
+        "46800": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 46830
+        },
+        "50400": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 50430
+        },
+        "54000": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 54030
+        },
+        "57600": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 57630
+        },
+        "61200": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 61230
+        },
+        "0": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 30
+        },
+        "72000": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 72030
+        },
+        "75600": {
+          "contentId": [
+            2011
+          ],
+          "playCount": 1,
+          "endTime": 75630
+        }
+      }
+    }
+  ]
+}

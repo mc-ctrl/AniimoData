@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_4004082",
+  "dynamicRPCStates": {},
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 4004081,
+      "NodeID": 2,
+      "UID": "1d995aff-4f1a-4567-9c64-aa6d6a639268",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onBuffDestroyIds": [
+    2
+  ],
+  "NodeID": 1
+}

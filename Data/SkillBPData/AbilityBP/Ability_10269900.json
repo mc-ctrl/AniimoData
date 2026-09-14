@@ -1,0 +1,56 @@
+{
+  "cutSceneDuration": 2.77,
+  "preloadCutScenes": [
+    "$Parmon_1002603_Skill_Ex_Timeline.prefab",
+    "$Parmon_1002601_Skill_Ex_Timeline.prefab",
+    "$Parmon_10026_Skill_Ex_Timeline.prefab"
+  ],
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "abilityParamId": 11200160,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10269900001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 99,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10026_Skill_Ex_New_Flash",
+    "Eff_Parmon_10026_Skill_Ex_New_Sword_02",
+    "Eff_Parmon_10026_Skill_Ex_New_Out_Kuosan_01",
+    "Eff_Parmon_10026_Skill_Ex_New_Sword_01",
+    "Eff_Parmon_10026_Skill_Ex_New_Sword_01_00_Ice",
+    "Eff_Parmon_10026_Skill_Ex_New_Buff",
+    "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01_Red",
+    "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01_Ice",
+    "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01",
+    "Eff_Parmon_10026_Skill_Ex_New_Sword_01_Ice",
+    "Eff_Parmon_10026_Skill_Ex_New_Sword_01_Red",
+    "Eff_Parmon_10026_Skill_Ex_New_Sword_01_00_Red",
+    "Eff_Parmon_10026_Skill_Ex_New_Sword_01_00"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    10269901
+  ],
+  "searchTargetRangeDown": 0.5,
+  "desc": "",
+  "BPName": "ability_10269900",
+  "NodeID": 1
+}

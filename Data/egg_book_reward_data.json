@@ -1,0 +1,32 @@
+[
+  [
+    {
+      "reward": 5006001,
+      "nodePoint": 10
+    },
+    {
+      "reward": 5006002,
+      "nodePoint": 20
+    },
+    {
+      "reward": 5006003,
+      "nodePoint": 30
+    },
+    {
+      "reward": 5006004,
+      "nodePoint": 50
+    },
+    {
+      "reward": 5006005,
+      "nodePoint": 70
+    },
+    {
+      "reward": 5006006,
+      "nodePoint": 90
+    },
+    {
+      "reward": 5006007,
+      "nodePoint": 120
+    }
+  ]
+]

@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2161301",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": false,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2161301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 4,
+        "UID": "f17db631-d9c7-488f-9c3f-0960765caba6",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "24ffb0e0-3f9e-406e-888c-104147c7bb88",
+      "NodeID": 5,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "244f3d9e-4d95-4da0-8004-d87c2e0ecb34",
+        "target": "OWNER",
+        "NodeID": 7,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ee1c49d0-22eb-424f-998f-c32e634e4491",
+      "effectId": "Eff_Parmon_10613_Skill_Smug_Loop",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "4": {
+      "calcId": 2161301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "f17db631-d9c7-488f-9c3f-0960765caba6",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "5ac40f9e-e188-4128-98a9-9d66ce04a310",
+      "effectId": "Eff_Parmon_10613_Skill_Smug_Loop",
+      "target": "OWNER",
+      "NodeID": 9
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9
+  ],
+  "onBuffStartIds": [
+    8
+  ]
+}

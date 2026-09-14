@@ -1,0 +1,53 @@
+{
+  "BPName": "ability_14750300",
+  "NodeID": 1,
+  "UID": "a3792e0d-ec41-428e-9242-f962b077057c",
+  "abilityParamId": 10600620,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14750300001,
+      "name": "setCombatActionTimeline",
+      "UID": "2535def1-0039-4782-b1b2-34bdd5e526ec",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "153": {
+      "UID": "faea207a-761d-48ed-b031-944477eaa124",
+      "name": "stopChargeQte",
+      "chargeQteId": "QTE_10475_Charge",
+      "NodeID": 153
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 2.5,
+  "preloadAnims": [
+    "Skill_FrenzyBeatStart",
+    "Skill_FrenzyBeatLoop",
+    "Skill_FrenzyBeatEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10475_Skill_FrenzyBeat_01",
+    "Eff_Parmon_10475_Skill_FrenzyBeat_04",
+    "Eff_Parmon_10475_Skill_FrenzyBeat_03",
+    "Eff_Parmon_10475_Skill_FrenzyBeat_02",
+    "Eff_Parmon_10475_Skill_FrenzyBeat_01_02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "onAbilityEndIds": [
+    153
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

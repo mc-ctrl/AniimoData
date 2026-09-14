@@ -1,0 +1,73 @@
+{
+  "nodeMap": {
+    "23": {
+      "UID": "530e10cc-5fbb-49b3-a8f0-190eee42d991",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24,
+          21
+        ]
+      },
+      "NodeID": 23
+    },
+    "9": {
+      "UID": "6180cfc4-a19f-4304-8e77-c039b312fed6",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 1,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 9
+    },
+    "24": {
+      "buffId": 2129302,
+      "name": "removeBuff",
+      "UID": "82de7f43-ffac-4096-8908-bd577a16da1c",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "19": {
+      "UID": "ee030d21-faba-432c-a84c-f53b6cf4aa62",
+      "eventType": "Notify",
+      "time": 0.49,
+      "NodeID": 19
+    },
+    "11": {
+      "UID": "147d7e8d-84af-4bfe-b9ec-5713e39c04ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 11
+    },
+    "21": {
+      "NodeID": 21,
+      "from": 12930100,
+      "to": 12930100,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 3.4,
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "UID": "d7708579-b9e1-4c50-bc74-8ea7e3338536",
+      "notShowCountDown": false
+    }
+  },
+  "BPName": "ability_12930101",
+  "NodeID": 13,
+  "UID": "f8d925ef-bcfa-4a35-b359-89445eb7b576",
+  "eventIds": [
+    11,
+    23,
+    19
+  ],
+  "layer": "Base",
+  "length": 2.37
+}

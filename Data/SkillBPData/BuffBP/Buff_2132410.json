@@ -1,0 +1,87 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132410",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Attack_Arrow_Up"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "getTargetOffsetPos",
+      "UID": "63d09b5c-469f-4d96-89ec-a206466db7ff",
+      "target": {
+        "UID": "3ee5d912-1b70-42c8-ba92-cbf8542013d5",
+        "name": "getLockedTarget",
+        "NodeID": 7
+      },
+      "offset": [
+        0,
+        0.5,
+        0
+      ],
+      "NodeID": 8
+    },
+    "4": {
+      "delay": 0,
+      "interval": 0.05,
+      "UID": "ffe2dcb7-713e-4a03-b7cd-453895ce0d2d",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "9": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "00f21284-ee06-4450-817f-6649e85a99c9",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "63d09b5c-469f-4d96-89ec-a206466db7ff",
+        "target": {
+          "UID": "3ee5d912-1b70-42c8-ba92-cbf8542013d5",
+          "name": "getLockedTarget",
+          "NodeID": 7
+        },
+        "offset": [
+          0,
+          0.5,
+          0
+        ],
+        "NodeID": 8
+      },
+      "NodeID": 9
+    },
+    "14": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "b76b72fe-56de-43c4-91dc-09e483cf2658",
+      "NodeID": 14,
+      "lValue": {
+        "UID": "2654b5cd-e245-42e0-9bba-e4c7173fe0b2",
+        "name": "getLockedTarget",
+        "NodeID": 13
+      }
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "1e429a48-5653-4cdf-bb7e-9ba0fa8ed93a",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

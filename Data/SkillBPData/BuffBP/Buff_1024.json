@@ -1,0 +1,70 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1024",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    4,
+    6,
+    7,
+    9,
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "name": "calcResult",
+      "UID": "cd9b1a9c-1532-41ad-8d03-4ad481365fcf",
+      "target": "CURPET",
+      "NodeID": 4,
+      "calcInfoByLuaConfig": {
+        "id": 1024,
+        "type": 1,
+        "add_cur_stamina_max_p": "param0"
+      }
+    },
+    "9": {
+      "name": "calcResult",
+      "UID": "1d44acf4-e24c-4583-ad32-206547893138",
+      "target": "OWNER",
+      "NodeID": 9,
+      "calcInfoByLuaConfig": {
+        "id": 1024,
+        "type": 1,
+        "add_cur_stamina_max_p": "param0"
+      }
+    },
+    "6": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "2a82cdae-4d33-4dbd-bba7-71af360efed8",
+      "effectId": "Eff_Item_LevelItem_EnergyTrigger_03",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba4a0ec2-1d4a-469e-a25c-db045268293a",
+      "effectId": "Eff_Item_LevelItem_EnergyTrigger_03",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "49b9ef45-a940-4841-8555-5eb21e73c275",
+      "name": "showStaminaAddFx",
+      "NodeID": 7
+    }
+  },
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    6,
+    7,
+    9,
+    10
+  ]
+}

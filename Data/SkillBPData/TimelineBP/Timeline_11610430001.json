@@ -1,0 +1,185 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "8a2384ed-af1d-4dc7-922f-bef58cd473b0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "31": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "e0328d32-ad4d-4902-b554-3ba6f233f36c",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "0f7d49c8-ecad-4259-8f51-baf5279ae539",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "3bc7b5c8-0f20-4987-9246-c41f165f3336",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 20
+    },
+    "3": {
+      "duration": 1,
+      "name": "moveByDirection",
+      "UID": "54a057f5-7840-4072-b611-eea74bc81bcd",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": true,
+      "velocity": [
+        1,
+        1,
+        7
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "b6cb29f5-df89-47d1-96f5-fcc000cf0cc7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          14,
+          25
+        ]
+      },
+      "NodeID": 13
+    },
+    "14": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "e1df09b4-d347-441a-b04c-4e95bc904ec0",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 22,
+      "UID": "9587f0af-04a1-4c6b-8599-a8b55af88c08"
+    },
+    "25": {
+      "actionIds": [
+        23,
+        26,
+        27
+      ],
+      "name": "registerSkillMoveBlocked",
+      "UID": "48f8fd5f-0f31-4cd9-a7bd-87a46fcab273",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "buffId": 2116105,
+      "name": "removeBuff",
+      "UID": "af01c0c1-b16c-4ad2-ae0c-450c3cb8089c",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "58eb60d0-4580-4954-a0ff-62fc6ececa2a",
+      "target": "OWNER",
+      "name": "stopMoveByDirection",
+      "NodeID": 27
+    },
+    "28": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "ee3bc62b-51a2-4478-b7e0-b3a10e456134",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "e4b3eb3d-5309-4dd5-8730-656c26aa8071",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        31
+      ],
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "dbe7a470-fecd-425f-8bcf-ecde1d57fc75",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "UID": "498f34a1-0d0b-406f-872c-c2e0afff1263",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 32
+    },
+    "18": {
+      "UID": "6eb4ecda-25df-4e07-a611-f8afecff2efb",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "16": {
+      "UID": "9ca738ec-b06c-4ba5-b859-a464cd4fd375",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 16
+    },
+    "23": {
+      "buffId": 2116101,
+      "name": "removeBuff",
+      "UID": "3c27c123-6cdc-41e8-8bd4-7dec28a54ebf",
+      "target": "OWNER",
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_11610430",
+  "NodeID": 7,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    13,
+    22,
+    18,
+    5,
+    30
+  ],
+  "layer": "Base",
+  "length": 1.2
+}

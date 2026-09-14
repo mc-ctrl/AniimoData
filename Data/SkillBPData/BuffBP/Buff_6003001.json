@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003001",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "7a38c61a-5af2-42df-815a-d362ae233478",
+      "target": "OWNER",
+      "name": "checkPlayerEggMode",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "fe3b3986-a35a-4b94-a8e3-3ace4316b883",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 4
+    },
+    "8": {
+      "UID": "6bac3613-5e9f-470e-9ec1-2e8d5bfb8ca9",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 8
+    },
+    "7": {
+      "UID": "ba6dfd29-90c0-4646-92a5-878a155da5e8",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 6003001,
+        "final_taken_dmg_dec_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 7
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerPlayerEggModeChangeEvent",
+      "UID": "a23cc7e6-bf58-4945-a6d7-b50623badf35",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

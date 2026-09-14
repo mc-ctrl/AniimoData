@@ -1,0 +1,138 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "e9c1a787-464d-475a-89e1-60926ffee0f5",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1,
+        "canMove": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "cd9b138c-38f7-405f-b73e-d5acd82e48fa",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "aee7062f-8539-402a-b224-f5587e730ea6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "NodeID": 24
+    },
+    "15": {
+      "UID": "bc864eca-3dbb-4ba7-8685-4dcc305d2616",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 16,
+      "UID": "54d159ee-58c3-4d11-a574-e566f25221b4"
+    },
+    "17": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2123204,
+      "NodeID": 17,
+      "UID": "5788ce7a-5ee5-4293-85e8-f4529cb45c51",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "23": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "81bb2459-045d-4280-b5ad-f9aeb297d46d",
+      "target": "CASTER",
+      "NodeID": 23,
+      "animId": "Skill_Dance"
+    },
+    "22": {
+      "UID": "63f8e420-cd2f-4538-ae2c-06ec87f0d42b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 22
+    },
+    "11": {
+      "UID": "9bec8949-3cd7-43c4-afaa-6eb544ad380b",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 19,
+      "UID": "d6d3e929-4c3c-49ea-a205-55db8832bfcf"
+    },
+    "20": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5ac3c414-7c42-4acd-bbea-fdc08b501e54",
+      "effectId": "Eff_Parmon_10232_ExploreSkill_Sneak_Start",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "5": {
+      "UID": "3b256fa3-860c-4ea3-9c0a-feb24f9e4cfd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "ability_12320900",
+  "NodeID": 7,
+  "UID": "43c618cb-bf1b-4e72-b639-476d9bf70f7a",
+  "eventIds": [
+    5,
+    13,
+    16,
+    22,
+    19,
+    24
+  ],
+  "layer": "Base",
+  "length": 2
+}

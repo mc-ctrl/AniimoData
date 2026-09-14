@@ -1,0 +1,127 @@
+{
+  "duration": 2,
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreActorCollision": true,
+  "heightAboveGround": 0.2,
+  "acceleration": 0,
+  "allowHitCaster": true,
+  "BPName": "timeline_2105502",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10055_OutEx_Wolves_01",
+  "calcResultNodeId": 47,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "ignoreNonCurPetCollision": true,
+  "maxHeightOffset": 5,
+  "onProjectileTickIds": [
+    49
+  ],
+  "moveSpeed": 10,
+  "stickPitchMaxOffset": 40,
+  "stickGravity": 0.5,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.1,
+  "maxHitNum": 1,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "79": {
+      "name": "stopSoundStr",
+      "UID": "fcc4d400-cf6c-4aea-995a-b6b927b75e11",
+      "soundId": "SFX_Combat_Parmon_10055_Skill_Ex02",
+      "target": "OWNER",
+      "NodeID": 79
+    },
+    "75": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6aaee3b8-4974-40d8-b336-b3417317f2ff",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10055_Skill_Ex02",
+      "NodeID": 75
+    },
+    "47": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2105502,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "29f00ae5-1775-4806-b333-84f816d343dc",
+      "target": "TARGET",
+      "NodeID": 47,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "SFX_Combat_Parmon_10055_Skill_Ex04",
+        "hitCameraShakeId": 30304,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10055_OutEx_Nboom",
+            "rotAngle": 90,
+            "posMode": "RootPos"
+          }
+        ],
+        "elementType": 12,
+        "impulseId": 3002,
+        "hitEffectByAction": {
+          "NodeID": 0
+        }
+      }
+    },
+    "49": {
+      "calcResultNodeId": 47,
+      "name": "actOnTargets",
+      "UID": "ccf424b7-1514-425f-a51c-ac88e14c1b32",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "3",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        47
+      ],
+      "impulseId": 3002,
+      "NodeID": 49
+    }
+  },
+  "onProjectileFinishIds": [
+    79
+  ],
+  "impulseId": 3002,
+  "onProjectileStartIds": [
+    75
+  ]
+}

@@ -1,0 +1,800 @@
+{
+  "nodeMap": {
+    "37": {
+      "timelineId": 11220510002,
+      "name": "jumpToNextTimeline",
+      "UID": "6e69f627-961d-470c-9db9-880218318fba",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "113": {
+      "offsetXYZ": [
+        0.8,
+        0,
+        0.8
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba93748e-54ab-4c75-9712-b39b06b51fbc",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 113
+    },
+    "40": {
+      "UID": "ba72de77-3903-4b6e-a932-45acc1b6976b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "NodeID": 40
+    },
+    "54": {
+      "action": {
+        "actionIds": [
+          52,
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 54,
+      "UID": "4de0e186-4c6a-4a35-85ad-37755b642e88"
+    },
+    "115": {
+      "offsetXYZ": [
+        -0.8,
+        0,
+        2.2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1a3b40e2-66fb-444e-a1c4-9686ab336dd0",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 115
+    },
+    "65": {
+      "key": "AttackDelay1",
+      "duration": 0.1,
+      "actionIds": [
+        63,
+        124,
+        128
+      ],
+      "NodeID": 65,
+      "UID": "9d2b6cfe-5e55-462c-82ea-c8b16445f93b",
+      "name": "addTimer"
+    },
+    "174": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "5f92eb61-7efb-49ab-a882-ed615f137765",
+      "NodeID": 174,
+      "lValue": {
+        "key": "entityState",
+        "name": "getCacheVal",
+        "UID": "5ebdc47d-eb3c-4fe4-a532-45a007704375",
+        "target": "OWNER",
+        "NodeID": 173
+      }
+    },
+    "117": {
+      "offsetXYZ": [
+        0.8,
+        0,
+        2.2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "099c17eb-0b50-4cd2-b930-e8b4d577daaf",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 117
+    },
+    "67": {
+      "action": {
+        "actionIds": [
+          97,
+          99,
+          101,
+          65,
+          147
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 67,
+      "UID": "308eb979-b457-4dea-9d00-3dc66d28b15a"
+    },
+    "177": {
+      "action": {
+        "actionIds": [
+          176
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.75,
+      "NodeID": 177,
+      "UID": "7e51c6f8-0233-4112-b57d-5cddb8b972ff"
+    },
+    "87": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11220510,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "b636550b-c3cf-42d6-9c2d-c9a1508f321e",
+      "target": "TARGET",
+      "NodeID": 87,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 3000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Blunt_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106
+      }
+    },
+    "181": {
+      "actionIds": [
+        180
+      ],
+      "conditionActionIds": [
+        184
+      ],
+      "UID": "7a4da57f-1c67-4d3c-b734-b2c216912c8a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        183
+      ],
+      "NodeID": 181
+    },
+    "4": {
+      "UID": "5e575273-97ba-441d-8f2a-b355bcff6a6f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "183": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "1dae7954-7965-4252-8caf-8b15ea67b4cc",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 183
+    },
+    "89": {
+      "calcResultNodeId": 87,
+      "name": "actOnTargets",
+      "UID": "420912ab-2bc6-41a2-ab5d-1cc713a31672",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            1.5
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            0.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "3",
+      "needEcs": true,
+      "actionIds": [
+        87
+      ],
+      "impulseId": 3000,
+      "NodeID": 89
+    },
+    "101": {
+      "offsetXYZ": [
+        1,
+        0,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b28b07c3-59d5-4f50-a2b7-41ccb4de9759",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 101
+    },
+    "90": {
+      "key": "AttackDelay2",
+      "duration": 0.1,
+      "actionIds": [
+        89
+      ],
+      "NodeID": 90,
+      "UID": "bf019eb0-68f7-445b-8501-3f7a7479b4e1",
+      "name": "addTimer"
+    },
+    "124": {
+      "needEcs": true,
+      "name": "actOnTargets",
+      "UID": "28aefa09-0d10-4238-b759-a5b36054a231",
+      "target": [
+        {
+          "offsetXYZ": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "NodeID": 124,
+      "hitBoxId": "2"
+    },
+    "184": {
+      "UID": "159170e1-cfc9-4830-b23a-654505cef57a",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 184
+    },
+    "182": {
+      "UID": "a14927ea-ebbd-44e3-9019-374bbd104887",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          181
+        ]
+      },
+      "NodeID": 182
+    },
+    "180": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "ef16c870-b88b-446d-b848-802e581a1b6f",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 180
+    },
+    "176": {
+      "key": "entityState",
+      "name": "setCacheVal",
+      "UID": "459cadb5-903e-4261-9fad-668a9bf0cd35",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 176
+    },
+    "175": {
+      "UID": "aafc1bff-510d-485a-a44d-49379558ca12",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        174
+      ],
+      "NodeID": 175
+    },
+    "171": {
+      "key": "entityState",
+      "name": "setCacheVal",
+      "UID": "e54c0228-a3f4-46e0-ba38-7470f74994e3",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 171
+    },
+    "95": {
+      "offsetXYZ": [
+        0,
+        0,
+        2.4
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8aaeaec3-d967-4097-8630-ca8d3a237978",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 95
+    },
+    "128": {
+      "needEcs": true,
+      "name": "actOnTargets",
+      "UID": "95e7d300-265f-48b2-b96e-ac524038679b",
+      "target": [
+        {
+          "offsetXYZ": [
+            1.4,
+            0,
+            1.2
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "NodeID": 128,
+      "hitBoxId": "2"
+    },
+    "39": {
+      "eventName": "qteGroupSuccessPiano",
+      "NodeID": 39,
+      "UID": "92230fcb-fbf0-4b1a-9f4f-dbdcef9cb513",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        37
+      ]
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.2,
+      "NodeID": 24,
+      "UID": "d940f558-fd65-43b8-bcb6-e8a8441b24ef"
+    },
+    "97": {
+      "offsetXYZ": [
+        0,
+        0,
+        0.8
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "025ed082-4daf-45a0-abd2-f14c053c5cca",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 97
+    },
+    "156": {
+      "key": "feverLevel",
+      "name": "setCacheVal",
+      "UID": "43764bf2-76f6-42a5-9983-ac19e3dd5525",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 156
+    },
+    "28": {
+      "offsetXYZ": [
+        0,
+        0,
+        0.8
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0dac1420-9da6-4e46-9933-693347300bf1",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "144": {
+      "name": "setSkillHitDistance",
+      "UID": "ed228f18-9181-4ce7-bd5f-e3962074019f",
+      "skillHitDisplacementId": 1000,
+      "target": "OWNER",
+      "NodeID": 144
+    },
+    "99": {
+      "offsetXYZ": [
+        -1,
+        0,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "77f6f151-45d4-47a9-bd90-1e0bc830cd96",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 99
+    },
+    "151": {
+      "key": "feverLevel",
+      "name": "setCacheVal",
+      "UID": "1423751a-ae51-44bf-9d55-c8d66d6ab298",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 151
+    },
+    "148": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a4bcf119-9a36-43d8-929b-ec791b254930",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10122_skill_piano_fail",
+      "NodeID": 148
+    },
+    "9": {
+      "UID": "4bd5ad5a-da89-4b7c-a959-c28ce228f60a",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 9
+    },
+    "147": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8d78e58d-357d-4574-ac48-bd84b432b4c0",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10122_skill_piano_pre_02",
+      "NodeID": 147
+    },
+    "145": {
+      "action": {
+        "actionIds": [
+          144
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 145,
+      "UID": "d7af1c78-64a0-4a67-8222-14c9a6d79665"
+    },
+    "11": {
+      "UID": "9275f01b-27b8-4c93-b3bc-225497492050",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          13,
+          156,
+          171
+        ]
+      },
+      "NodeID": 11
+    },
+    "146": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "debafdec-0a9a-497c-8ee7-11c6dcd0c7d6",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10122_skill_piano_pre_01",
+      "NodeID": 146
+    },
+    "152": {
+      "eventName": "qtePartFail",
+      "NodeID": 152,
+      "UID": "b0b4f860-d6a2-4314-b27f-22005ce02a5b",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        151
+      ]
+    },
+    "22": {
+      "UID": "6858abd7-517b-4f56-b69b-0b7364e04da4",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "37a32bd3-973b-4cc2-a384-da5cff278e5b",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 13
+    },
+    "45": {
+      "offsetXYZ": [
+        -0.8,
+        0,
+        0.8
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "597edcd1-d0bb-4da7-9607-2c585efe39d6",
+      "effectId": "Eff_Parmon_10122_Skill_Piano_1",
+      "speed": 1,
+      "NodeID": 45
+    },
+    "153": {
+      "UID": "d413d4f5-e340-4002-b389-1f0b6d3e7f34",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          152
+        ]
+      },
+      "NodeID": 153
+    },
+    "71": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11220510,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "55b37f6a-fb16-4871-81c1-d54100eaaac4",
+      "target": "TARGET",
+      "NodeID": 71,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Blunt_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30401
+      }
+    },
+    "15": {
+      "UID": "bb5c21d0-3c97-461b-bc31-b8cacaf0881b",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 15
+    },
+    "47": {
+      "action": {
+        "actionIds": [
+          45,
+          113,
+          115,
+          117,
+          90,
+          148
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.65,
+      "NodeID": 47,
+      "UID": "52da526d-6e83-4f3d-b025-ba88f4c8411f"
+    },
+    "63": {
+      "calcResultNodeId": 71,
+      "name": "actOnTargets",
+      "UID": "9a3279fa-48c1-417f-a235-06724f7f0cb0",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.8
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "needEcs": true,
+      "actionIds": [
+        71
+      ],
+      "impulseId": 2000,
+      "NodeID": 63
+    },
+    "58": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11220510,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "4914a4d4-d43b-487e-9973-1d0a1fecd0b4",
+      "target": "TARGET",
+      "NodeID": 58,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Blunt_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30401
+      }
+    },
+    "17": {
+      "UID": "c1272835-ad30-43be-adf2-09945a59fc52",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15,
+          175
+        ]
+      },
+      "NodeID": 17
+    },
+    "52": {
+      "calcResultNodeId": 58,
+      "name": "actOnTargets",
+      "UID": "6f69d9aa-5260-4914-8d20-38d9b5765040",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.8
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "needEcs": true,
+      "actionIds": [
+        58
+      ],
+      "impulseId": 2000,
+      "NodeID": 52
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28,
+          95,
+          146
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 30,
+      "UID": "ca74d27c-417c-417e-9920-c35b9562caec"
+    },
+    "60": {
+      "calcResultNodeId": 58,
+      "name": "actOnTargets",
+      "UID": "b96d6c0f-6352-44a2-b49f-6a3f383b7a66",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            2.4
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "needEcs": true,
+      "actionIds": [
+        58
+      ],
+      "impulseId": 2000,
+      "NodeID": 60
+    },
+    "158": {
+      "pitchCurveName": "CommonPitch_10angle",
+      "duration": 1,
+      "NodeID": 158,
+      "UID": "9c0a4a1b-fc92-49d7-a923-1731b362d3ca",
+      "blendInTime": 0.3,
+      "target": "OWNER",
+      "name": "playPitchYawCameraAnim"
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "139180b1-a8db-48ba-84cf-948c023f8d0d",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Piano"
+    },
+    "159": {
+      "UID": "e5e22b29-7b48-4f1e-a18f-bfdf2e3e3ba8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          158
+        ]
+      },
+      "NodeID": 159
+    }
+  },
+  "BPName": "ability_11220510",
+  "NodeID": 6,
+  "UID": "3c67a41e-677f-479f-b87c-e6ba55e53b9a",
+  "eventIds": [
+    11,
+    17,
+    4,
+    40,
+    145,
+    24,
+    30,
+    67,
+    177,
+    54,
+    159,
+    153,
+    47,
+    182
+  ],
+  "layer": "Base",
+  "length": 2.4
+}

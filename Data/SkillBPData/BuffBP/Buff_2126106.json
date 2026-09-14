@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126106",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "10261_BodyMist",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "bf5dd679-224b-4de1-87b5-a60d8bb1aee7",
+      "name": "registerServerCacheValChange"
+    },
+    "6": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "428b8f51-5ec8-4cbd-ad9d-f465caa2e0d2",
+      "NodeID": 6,
+      "lValue": {
+        "key": "10261_BodyMist",
+        "name": "getServerCacheVal",
+        "UID": "5246a946-a0ac-4689-aa49-7345d5d735ec",
+        "target": "CASTER",
+        "NodeID": 5
+      }
+    },
+    "10": {
+      "UID": "99388818-5f8a-4c22-b457-0063ed013a24",
+      "value": "cloud",
+      "name": "print",
+      "NodeID": 10
+    },
+    "7": {
+      "actionIds": [
+        8,
+        11,
+        12
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "3aac3551-098d-4b9a-a7a9-73506103ba22",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "8": {
+      "buffId": 2126106,
+      "name": "removeBuff",
+      "UID": "7bde0c9e-2674-405f-ad10-4e67cd8db9f0",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "14": {
+      "isClearOld": true,
+      "UID": "6171d566-cbfd-40db-b475-770a1b11ab07",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 14,
+      "calcInfoByLuaConfig": {
+        "id": 2126106,
+        "combat_ep_regen_p": "param0",
+        "type": 1
+      }
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "5cd882c6-eea0-4384-a1bb-a24c22bd64d1",
+      "effectId": "Eff_Parmon_10261_PassiveSkill_Surroundingcloud",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "b532fcf0-b3f3-4720-9688-a2863a580998",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "0e528c72-935d-4029-af2c-b9adba0e649d",
+      "effectId": "Eff_Parmon_10262_PassiveSkill_Surroundingcloud",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    14,
+    3,
+    10
+  ]
+}

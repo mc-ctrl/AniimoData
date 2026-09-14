@@ -1,0 +1,59 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123104",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1de1d45e-ec10-4841-bf59-0f70720c8603",
+      "effectId": "Eff_Parmon_10231_ExploreSkill_Sneak_End",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "4": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e40a05cd-6421-41a7-8bcc-7267c429e4fa",
+      "effectId": "Eff_Parmon_10231_ExploreSkill_Sneak_Loop",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "a88d1980-aca3-467b-9f55-6db454516e39",
+      "effectId": "Eff_Parmon_10231_ExploreSkill_Sneak_Loop",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "2": {
+      "name": "enableCamouFlage",
+      "leaveStateDamage": 1,
+      "UID": "17b622ba-8465-4220-8431-1ef6a615deea",
+      "lerpTime": 0.5,
+      "enable": true,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    7,
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    4
+  ]
+}

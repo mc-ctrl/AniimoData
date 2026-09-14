@@ -1,0 +1,67 @@
+{
+  "BPName": "ability_10260400",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "abilityIndicator": 1,
+  "abilityParamId": 11200150,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10260400001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 10,
+  "preloadAnims": [
+    "Skill_SpringHook"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10026_Skill_SpringHook_Start01_Red",
+    "Eff_Parmon_10026_Skill_SpringHook_Start02_Red",
+    "Eff_Parmon_10026_Skill_SpringHook_End_Red",
+    "Eff_Parmon_10026_Skill_SpringHook_Start03_Red",
+    "Eff_Hit_Dark_Slash",
+    "Eff_Parmon_10026_Skill_SpringHook_Start01",
+    "Eff_Parmon_10026_Skill_SpringHook_Start02",
+    "Eff_Parmon_10026_Skill_SpringHook_Start03",
+    "Eff_Parmon_10026_Skill_SpringHook_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      1.4,
+      1.4,
+      15,
+      2,
+      2
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

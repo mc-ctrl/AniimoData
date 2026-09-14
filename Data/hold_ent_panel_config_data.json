@@ -1,0 +1,45 @@
+{
+  "showOffActionTime": 5,
+  "petArrangeSkillDes": 1694122581,
+  "petArrangeSkillIcon": "$UI_SkillIcon_PetArrange.png",
+  "petHugDefaultParameter": [
+    0,
+    0.31,
+    0.77,
+    -19,
+    0,
+    0,
+    -1530106893,
+    0.23,
+    0.35,
+    0.24,
+    1
+  ],
+  "petHugDistanceExtra": 0.7,
+  "petHugHomeDistanceExtra": 0.3,
+  "petHugInteractionId": 443,
+  "petRetrieveInteractionId": 444,
+  "petRetrieveSkillDes": 1892360915,
+  "petRetrieveSkillIcon": "$UI_SkillIcon_PetRetrieve.png",
+  "petTouchDefaultParameter": [
+    3,
+    2,
+    1.5,
+    [
+      0.44,
+      0.02,
+      -69
+    ],
+    [
+      -0.98,
+      0,
+      91
+    ]
+  ],
+  "propArrangeSkillDes": 1123061803,
+  "propArrangeSkillIcon": "$UI_SkillIcon_PropArrange.png",
+  "propRetrieveSkillDes": 1609843573,
+  "propRetrieveSkillIcon": "$UI_SkillIcon_PropRetrieve.png",
+  "pullDownSkillDes": 1681006964,
+  "pullDownSkillIcon": "$UI_SkillIcon_PullDown.png"
+}

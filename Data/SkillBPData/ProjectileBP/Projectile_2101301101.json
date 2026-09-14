@@ -1,0 +1,61 @@
+{
+  "duration": 5,
+  "BPName": "buff_2101301",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10013_Skill_Draw_Fly_01",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "3": {
+      "bpDamageRate": 1,
+      "damageRate": 1,
+      "enableDummyCloneHitTimeline": false,
+      "NodeID": 3,
+      "UID": "895d59cf-b743-4a6a-83bc-a14af84a4cbe",
+      "pos": {
+        "UID": "e560a1c0-5df6-43f9-88e9-ba3e3e900868",
+        "name": "getProjectilePos",
+        "NodeID": 9
+      },
+      "templateId": 1100130001,
+      "rot": {
+        "UID": "286d05cb-6d5c-4095-9313-b2e83ddad1ba",
+        "target": "OWNER",
+        "name": "getTargetRotation",
+        "NodeID": 2
+      },
+      "duration": 20,
+      "name": "createDummyClone"
+    },
+    "10": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "cc81132e-fb0e-4a14-85d4-ac0bd69a627d",
+      "effectId": "Eff_Parmon_10013_Skill_Draw_Fly_02",
+      "speed": 1,
+      "NodeID": 10
+    }
+  },
+  "moveSpeed": 4,
+  "onProjectileFinishIds": [
+    10,
+    3
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "useModelScale": false,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

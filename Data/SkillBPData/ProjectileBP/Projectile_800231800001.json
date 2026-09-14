@@ -1,0 +1,119 @@
+{
+  "duration": 4,
+  "calcResultNodeId": 17,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Fly",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "maxHitNum": 0,
+  "maxMoveSpeed": 15,
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    48,
+    19,
+    130
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0,
+  "nodeMap": {
+    "48": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 902503,
+      "name": "createEntity",
+      "UID": "45c69002-2fb2-4833-b218-e8703d89df8e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 48,
+      "pos": {
+        "UID": "36ee1b78-65e7-4a30-9d7e-07c63631bd1f",
+        "name": "getProjectilePos",
+        "NodeID": 47
+      }
+    },
+    "19": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 17,
+      "NodeID": 19,
+      "UID": "50151fa7-2946-429c-8f12-a18eb9d83839",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2002,
+      "actionIds": [
+        17
+      ]
+    },
+    "130": {
+      "targetPos": "PROJECTILE",
+      "name": "playSoundAtPos",
+      "UID": "b53c9abe-605b-4f8e-9e0f-ab70fd4348b7",
+      "soundId": "SFX_Combat_Parmon_80023_Skill_Monster_Flyshortbreath_Rock",
+      "NodeID": 130
+    },
+    "17": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 800231800,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "e60b1721-e23f-4c9e-a358-c806c7930aa5",
+      "target": "TARGET",
+      "NodeID": 17,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 5,
+        "hitSoundStr": "battle_elementhit_none_blunt_h",
+        "hitCameraShakeId": -1
+      }
+    }
+  },
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "BPName": "ability_800231800",
+  "impulseId": 2002,
+  "acceleration": 4
+}

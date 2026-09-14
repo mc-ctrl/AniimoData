@@ -1,0 +1,230 @@
+{
+  "BPName": "ability_9200007",
+  "NodeID": 1,
+  "UID": "e63399e0-6ef2-49a0-8a53-5c88d80e1b39",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "226": {
+      "actionIds": [
+        224,
+        227,
+        323
+      ],
+      "conditionActionIds": [
+        307
+      ],
+      "UID": "bd9be208-cbb1-4264-9463-0f5f946b13b2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        310,
+        312,
+        324
+      ],
+      "NodeID": 226
+    },
+    "227": {
+      "UID": "dcc8c15d-94a1-422d-9e79-f05660d8305c",
+      "name": "stopChargeQte",
+      "chargeQteId": "QTE_Hammer",
+      "NodeID": 227
+    },
+    "8": {
+      "timelineId": 9200007001,
+      "name": "setCombatActionTimeline",
+      "UID": "43c732e9-736d-443f-a099-0154a9bb15b9",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        288
+      ],
+      "conditionActionIds": [
+        282
+      ],
+      "UID": "a451d3e9-1a90-44f4-b2bb-0339715507b4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "282": {
+      "gender": 1,
+      "name": "isActorGender",
+      "UID": "840cb560-6489-41b8-8672-65c1fcb5a1c7",
+      "target": "OWNER",
+      "NodeID": 282
+    },
+    "310": {
+      "actionIds": [
+        316
+      ],
+      "conditionActionIds": [
+        315
+      ],
+      "UID": "3bdf0555-72bc-4ba5-9215-a1fc4326da4d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        313,
+        308
+      ],
+      "NodeID": 310
+    },
+    "312": {
+      "UID": "b1998237-acbc-4b0e-9d08-a9a22e07be61",
+      "name": "stopChargeQte",
+      "chargeQteId": "QTE_Hammer",
+      "NodeID": 312
+    },
+    "313": {
+      "effectKey": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 313,
+      "UID": "7eff9f64-d48a-4c2b-a5fc-b59da9708353",
+      "target": "OWNER",
+      "presetName": "SledgeHammerDis",
+      "name": "playPreset"
+    },
+    "222": {
+      "name": "stopEffectStr",
+      "UID": "663efad4-cdc6-4471-89e7-30076acb3339",
+      "effectId": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 222
+    },
+    "315": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "9af883a0-a73c-4f24-8eed-73a44a795003",
+      "NodeID": 315,
+      "lValue": {
+        "UID": "11b9e953-26c1-4497-81ab-e3ee50d58271",
+        "name": "getCacheVal",
+        "key": "9200007HammerDis",
+        "NodeID": 314
+      }
+    },
+    "288": {
+      "timelineId": 9200007006,
+      "name": "setCombatActionTimeline",
+      "UID": "4bc749b0-296a-43c1-9e73-ec5a463e140b",
+      "target": "CASTER",
+      "NodeID": 288
+    },
+    "295": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "cd73e5d8-2664-41e9-889a-d04a7ad18a53",
+      "NodeID": 295,
+      "lValue": {
+        "UID": "cdd65599-3a89-4628-960f-719f79c4aaba",
+        "name": "getCacheVal",
+        "key": "9200007HammerDis",
+        "NodeID": 294
+      }
+    },
+    "307": {
+      "gender": 2,
+      "name": "isActorGender",
+      "UID": "920c82a8-5380-4754-a92d-31d3861d629c",
+      "target": "OWNER",
+      "NodeID": 307
+    },
+    "308": {
+      "name": "stopEffectStr",
+      "UID": "58a818a2-60d8-4d6c-a1ea-cac8c0ed8299",
+      "effectId": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 308
+    },
+    "323": {
+      "name": "stopSoundStr",
+      "UID": "568d2a7e-5154-413b-80bc-a8e68e1fd4ce",
+      "soundId": "vox_avatar_girl_combat_Crush",
+      "target": "OWNER",
+      "NodeID": 323
+    },
+    "316": {
+      "name": "stopEffectStr",
+      "UID": "f9d6b4e5-288c-47a9-aa77-7ba163451e18",
+      "effectId": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 316
+    },
+    "301": {
+      "name": "stopEffectStr",
+      "UID": "1ce226b3-ac31-4f51-9624-89dcb04aca30",
+      "effectId": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 301
+    },
+    "324": {
+      "name": "stopSoundStr",
+      "UID": "fe0f92a7-5e5c-4bfb-8610-711472b46df3",
+      "soundId": "vox_avatar_boy_combat_Crush",
+      "target": "OWNER",
+      "NodeID": 324
+    },
+    "292": {
+      "effectKey": "Eff_Avatar_Girl_Skill_ToyHammer",
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 292,
+      "UID": "27d325d2-a6c6-4a57-8d08-2e87e031cd55",
+      "target": "OWNER",
+      "presetName": "SledgeHammerDis",
+      "name": "playPreset"
+    },
+    "224": {
+      "actionIds": [
+        301
+      ],
+      "conditionActionIds": [
+        295
+      ],
+      "UID": "1a2d4449-9af5-49fe-9a0c-0f5843979d4d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        292,
+        222
+      ],
+      "NodeID": 224
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Crush_Charge1",
+    "Skill_Crush_Level2",
+    "Skill_Crush_Level1",
+    "Skill_Crush_Level3",
+    "Skill_Crush_Charge2"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Girl_Skill_ToyHammer",
+    "Eff_Hit_Avatar_Blunt",
+    "Eff_Debuff_stun"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "tags": [
+    1
+  ],
+  "onAbilityEndIds": [
+    226
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1,
+  "abilityParamId": 9200007
+}

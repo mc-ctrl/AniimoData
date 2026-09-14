@@ -1,0 +1,88 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004031",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "d85ed615-c11c-4030-8150-13b4d3201c32",
+      "name": "checkReceiveProjectileAttack",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        8,
+        10
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "70206bb5-20df-4c07-bfc9-264bb4bd6fc3",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "796bde0a-1983-4953-af7b-a380fc994107",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "c4a8c601-9abf-4a57-95af-25a263a9196e",
+      "name": "reflectProjectile",
+      "NodeID": 10
+    },
+    "8": {
+      "UID": "742a41da-df29-4a0c-b6f2-55f24dc076f1",
+      "name": "immuneDamage",
+      "NodeID": 8
+    },
+    "13": {
+      "buffId": 4004031,
+      "name": "removeBuff",
+      "UID": "b60d1893-7221-4a2a-9fd3-d1f213ced72f",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "584bfc90-816e-4ad6-a506-d39130926eaa",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "interval": 0.1,
+      "UID": "17a62c25-6119-4791-a6b3-a76c2a9eabc1",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 5
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "843319cd-25ea-483f-b959-a169d585a3ed",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    14,
+    11,
+    5
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "90882417": {
+    "defaultEnabled": 1,
+    "eventType": "clientGreatPortalTeleport",
+    "eventParam": [
+      501,
+      3,
+      0
+    ]
+  },
+  "52418043": {
+    "eventParam": [
+      3000,
+      1,
+      0
+    ],
+    "eventType": "clientGreatPortalTeleport"
+  },
+  "72183796": {
+    "defaultEnabled": 1,
+    "eventType": "clientGreatPortalTeleport",
+    "eventParam": [
+      501,
+      2,
+      0
+    ]
+  },
+  "72183801": {
+    "defaultEnabled": 1,
+    "eventType": "clientGreatPortalTeleport",
+    "eventParam": [
+      501,
+      1,
+      0
+    ]
+  }
+}

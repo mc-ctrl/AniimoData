@@ -1,0 +1,36 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4000101",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "tags": [
+    10
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "5fcdef25-0b20-4c1d-8d73-4705d4ea9f68",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "name": "calcResult",
+      "UID": "1cfb9e63-563f-462e-9ef0-84b7187ac0fd",
+      "target": "OWNER",
+      "NodeID": 4,
+      "calcInfoByLuaConfig": {
+        "id": 4000101,
+        "type": 1,
+        "add_cur_hp_by_dmg": "param0"
+      }
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

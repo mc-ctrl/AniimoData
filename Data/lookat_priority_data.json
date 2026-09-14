@@ -1,0 +1,23 @@
+{
+  "Player": {
+    "Direction": 20,
+    "Monster": 90,
+    "Npc": 50,
+    "OtherPet": 50,
+    "OtherPlayer": 50
+  },
+  "Monster": {
+    "OtherPet": 50,
+    "OtherPlayer": 50,
+    "OwnPlayer": 90,
+    "OwnPet": 90
+  },
+  "Pet": {
+    "Direction": 20,
+    "Monster": 90,
+    "Npc": 50,
+    "OtherPet": 50,
+    "OtherPlayer": 50,
+    "OwnPlayer": 10
+  }
+}

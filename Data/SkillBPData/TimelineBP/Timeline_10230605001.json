@@ -1,0 +1,661 @@
+{
+  "nodeMap": {
+    "52": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0744745b-23a9-4261-a730-334e42cdfadf",
+      "target": "OWNER",
+      "NodeID": 52,
+      "animId": "Skill_Tornado_Loop"
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          36,
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 38,
+      "UID": "7fd34e5d-6838-4274-98e9-51b762f2b5bb"
+    },
+    "39": {
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a9dd8be9-c114-4dc2-9511-773c551ab04a",
+      "effectId": "Eff_Parmon_10012_Boss_Warning",
+      "speed": 1.5,
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "be88e387-fcf9-4465-9185-a43aad3d3109",
+      "target": "TARGET",
+      "name": "sendAIDodgeMsg",
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.38,
+      "NodeID": 41,
+      "UID": "834eed9e-6008-439a-9a2a-48195528ed87"
+    },
+    "42": {
+      "name": "stopEffectStr",
+      "UID": "34c33bf7-8e27-408c-8025-5a3e8b996f3e",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_WindField",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.6,
+      "NodeID": 35,
+      "UID": "663e1705-95d5-4e69-a605-17c30d001c68"
+    },
+    "65": {
+      "action": {
+        "actionIds": [
+          61,
+          73,
+          74,
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.897,
+      "NodeID": 65,
+      "UID": "25caae1d-ea3a-4a30-b5b1-a7f2450d1066"
+    },
+    "84": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "NodeID": 83,
+        "name": "getInvDirOffsetPos",
+        "UID": "b79138f2-2279-4dfb-bf9e-5a6e25114f46",
+        "offset": 0,
+        "center": {
+          "UID": "d017c6cd-cd65-43ad-b806-dada6be5b071",
+          "name": "getBornPos",
+          "NodeID": 82
+        },
+        "point": {
+          "UID": "ef01ab95-3e77-44b9-98bb-1253e6aa4e11",
+          "target": "OWNER",
+          "name": "getTargetPosition",
+          "NodeID": 85
+        }
+      },
+      "name": "teleport",
+      "UID": "a1655874-76f9-4722-a864-da754aeb4346",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "OWNER",
+      "NodeID": 84
+    },
+    "66": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "bd72018e-40d3-45f4-a043-95f391bf2423",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 66,
+      "pos": "CASTER"
+    },
+    "85": {
+      "UID": "ef01ab95-3e77-44b9-98bb-1253e6aa4e11",
+      "target": "OWNER",
+      "name": "getTargetPosition",
+      "NodeID": 85
+    },
+    "68": {
+      "action": {
+        "actionIds": [
+          66,
+          71,
+          72,
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.48,
+      "NodeID": 68,
+      "UID": "74c9fead-a93e-4d82-8070-ad725ea9dcf8"
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "0c205ee8-02b2-4f11-a426-f252d5a5ea12",
+      "target": "CASTER",
+      "NodeID": 2
+    },
+    "4": {
+      "UID": "2011fe5f-c977-4841-b293-a949e2c925be",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          2,
+          84
+        ]
+      },
+      "NodeID": 4
+    },
+    "71": {
+      "offsetXYZ": [
+        2,
+        0,
+        0
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "1cf3735d-d8aa-4b92-a757-60b5ca81ad29",
+      "offsetRotation": [
+        0,
+        90,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 71,
+      "pos": "CASTER"
+    },
+    "72": {
+      "offsetXYZ": [
+        0,
+        0,
+        -2
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "2be1d72a-ea01-4ca9-83ef-69a0d1a669dc",
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 72,
+      "pos": "CASTER"
+    },
+    "73": {
+      "offsetXYZ": [
+        1.414,
+        0,
+        -1.414
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "d688993b-2d22-4bfe-a27f-e3de124f64c1",
+      "offsetRotation": [
+        0,
+        135,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 73,
+      "pos": "CASTER"
+    },
+    "88": {
+      "UID": "a7ea6f42-6452-486e-9b0e-76e45ae4d08e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          86
+        ]
+      },
+      "NodeID": 88
+    },
+    "86": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "614de757-4151-4224-a8ab-efc7ea6e1125",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10023_Skill_HurricaneAttack_01",
+      "NodeID": 86
+    },
+    "81": {
+      "action": {
+        "actionIds": [
+          80
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.7,
+      "NodeID": 81,
+      "UID": "398364cc-2702-4f75-a12c-155851316a04"
+    },
+    "80": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "aed1afb3-4930-4917-8805-42cd1d51188e",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_WindField",
+      "speed": 1,
+      "NodeID": 80
+    },
+    "46": {
+      "actionIds": [
+        50
+      ],
+      "name": "actOnTargets",
+      "UID": "819255e2-96f7-4c3d-a270-f7e44c3f40b5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.3
+          ],
+          "shapeArgs": [
+            20,
+            2,
+            0.3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 46
+    },
+    "75": {
+      "offsetXYZ": [
+        -2,
+        0,
+        0
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "7a30137e-6eef-43d7-9552-179f83637a9f",
+      "offsetRotation": [
+        0,
+        -90,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 75,
+      "pos": "CASTER"
+    },
+    "48": {
+      "eventType": "NotifyState",
+      "endTime": 7.834,
+      "NodeID": 48,
+      "UID": "f5d15447-561c-4bd2-bd2a-a27101bd41df",
+      "tickInterval": 0.25,
+      "startTime": 0.7,
+      "onEnter": {
+        "actionIds": [
+          46
+        ]
+      }
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          66,
+          71,
+          72,
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.627,
+      "NodeID": 70,
+      "UID": "54152c23-ae9d-4507-9e41-e80df6960157"
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ae6fb372-eb9a-430a-8d89-79afa6c38707",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10023_Skill_HurricaneAttack_02",
+      "NodeID": 8
+    },
+    "63": {
+      "action": {
+        "actionIds": [
+          61,
+          73,
+          74,
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.55,
+      "NodeID": 63,
+      "UID": "891d3a2b-f7b6-4c2a-ba78-dee4bef8a47f"
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.834,
+      "NodeID": 43,
+      "UID": "feb1cbd3-f41e-4ba9-b2ed-d77154ff2777"
+    },
+    "34": {
+      "UID": "48b790e7-b99d-442f-ba0b-837b36340bf7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 34
+    },
+    "30": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cc824e30-5a7e-41af-b778-f2fb163c2695",
+      "target": "OWNER",
+      "NodeID": 30,
+      "animId": "Skill_Tornado_Start"
+    },
+    "32": {
+      "UID": "db2f8a27-906f-40e6-9c7e-f370d29be4c1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          30,
+          58
+        ]
+      },
+      "NodeID": 32
+    },
+    "54": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d626d39e-61de-4345-9fe8-6ea71b044ab6",
+      "target": "OWNER",
+      "NodeID": 54,
+      "animId": "Skill_Tornado_End"
+    },
+    "50": {
+      "notBlockInput": true,
+      "duration": 0.5,
+      "NodeID": 50,
+      "UID": "fc05ab6f-4eba-4637-999a-009e18aabf34",
+      "target": "TARGET",
+      "name": "forceDisplacement",
+      "speed": 15,
+      "displacementTarget": "OWNER",
+      "displacementDir": "OUT"
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          13,
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 10,
+      "UID": "de9a28dc-816d-43e1-818b-acc5b3ef8261"
+    },
+    "13": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "90b98cc9-aa0f-4dc9-8d28-62a38d1182df",
+      "val": {
+        "UID": "8ab40bb4-697a-4f46-8a64-bcb9139434c1",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 12
+      },
+      "NodeID": 13
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.834,
+      "NodeID": 55,
+      "UID": "f1c7b256-fc09-4481-b05e-90849b29ab90"
+    },
+    "74": {
+      "offsetXYZ": [
+        -1.414,
+        0,
+        -1.414
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "d73a4729-cda7-447a-a599-194e61dad926",
+      "offsetRotation": [
+        0,
+        -135,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 74,
+      "pos": "CASTER"
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b27adffc-2c9b-43a2-b5bb-f7f4cc59df7d",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_WindField",
+      "speed": 1,
+      "NodeID": 56
+    },
+    "15": {
+      "UID": "d69cd523-7b46-4f81-9d8e-5c4b79213d50",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 15
+    },
+    "57": {
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 57,
+      "UID": "1e54217e-3df9-4b4a-af9b-a739d72354a3"
+    },
+    "76": {
+      "offsetXYZ": [
+        -1.414,
+        0,
+        1.414
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "31a11718-a7ae-4861-ba81-1116c4b12b58",
+      "offsetRotation": [
+        0,
+        -45,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 76,
+      "pos": "CASTER"
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d883c964-38f3-4a83-be70-c148fdb556c1",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_Angry",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "17": {
+      "UID": "3b7a896c-a433-48e9-946f-b0433c052dd0",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 17
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "daee55af-04ab-4a5c-b954-e32a42af1c8f",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_WindField",
+      "speed": 1,
+      "NodeID": 59
+    },
+    "18": {
+      "UID": "335dfa73-0543-4a49-99ba-720fc23c4d19",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 18
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          59
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.7,
+      "NodeID": 60,
+      "UID": "1480edff-1203-48ed-9391-2514968a872a"
+    },
+    "53": {
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 53,
+      "UID": "4a208bb3-0973-406d-b54d-3c428e6c5718"
+    },
+    "61": {
+      "offsetXYZ": [
+        1.414,
+        0,
+        1.414
+      ],
+      "templateId": 107109,
+      "name": "createEntity",
+      "UID": "5dfa410b-5ff7-40b3-b147-39a9e0671727",
+      "offsetRotation": [
+        0,
+        45,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 61,
+      "pos": "CASTER"
+    },
+    "36": {
+      "duration": 0.8,
+      "name": "frameFreeze",
+      "UID": "ba7e6816-fd22-43d6-8dec-20a3fadfaeab",
+      "target": "OWNER",
+      "timeScale": 0.2,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_10230605",
+  "NodeID": 6,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    4,
+    18,
+    35,
+    10,
+    43,
+    32,
+    81,
+    53,
+    38,
+    55,
+    57,
+    60,
+    88,
+    48,
+    41,
+    70,
+    63,
+    68,
+    65
+  ],
+  "layer": "Base",
+  "length": 11
+}

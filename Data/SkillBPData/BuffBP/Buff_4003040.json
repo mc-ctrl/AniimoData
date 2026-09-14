@@ -1,0 +1,801 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003040",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    80,
+    82,
+    92,
+    77,
+    14
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "UID": "0e3dc5a8-dcca-4452-a81c-bca858f36867",
+      "name": "isNot",
+      "action": {
+        "buffId": 4003042,
+        "name": "hasBuff",
+        "UID": "369ebe6f-e4b8-4c55-9180-9510cf4a836a",
+        "target": "OWNER",
+        "NodeID": 36
+      },
+      "NodeID": 37
+    },
+    "38": {
+      "key": "JiGuan03",
+      "name": "setCacheVal",
+      "UID": "e21ecdb2-e754-4ca5-ab83-1c3df06f1a04",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 38
+    },
+    "39": {
+      "key": "blue",
+      "duration": 90,
+      "actionIds": [
+        38
+      ],
+      "NodeID": 39,
+      "UID": "49c02295-1f13-44e3-a1e8-018d81f81c6c",
+      "name": "addEntityTimer"
+    },
+    "40": {
+      "key": "JiGuan02",
+      "name": "setCacheVal",
+      "UID": "dd4f048b-d39d-4cb9-b7a6-70640cabb9d1",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 40
+    },
+    "41": {
+      "key": "green",
+      "duration": 90,
+      "actionIds": [
+        40
+      ],
+      "NodeID": 41,
+      "UID": "cb1f6a94-24c6-46a8-a3c5-a38ca597787c",
+      "name": "addEntityTimer"
+    },
+    "64": {
+      "UID": "d79218ee-d950-42f7-bd13-c81302f05621",
+      "name": "callClientAction",
+      "actionIds": [
+        63
+      ],
+      "NodeID": 64
+    },
+    "43": {
+      "name": "getTargetOffsetPos",
+      "UID": "1b3b662e-5d78-4f78-81d4-536614f81bcb",
+      "target": {
+        "UID": "ef4c8aeb-450a-4f91-aeaa-c7c67375d3d1",
+        "name": "getBornPos",
+        "NodeID": 55
+      },
+      "offset": [
+        10,
+        0,
+        0
+      ],
+      "NodeID": 43
+    },
+    "44": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 1000003,
+      "NodeID": 44,
+      "UID": "16be2e2c-0619-49ef-8088-23b119719e73",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "TARGET",
+      "pos": {
+        "name": "getTargetOffsetPos",
+        "UID": "1b3b662e-5d78-4f78-81d4-536614f81bcb",
+        "target": {
+          "UID": "ef4c8aeb-450a-4f91-aeaa-c7c67375d3d1",
+          "name": "getBornPos",
+          "NodeID": 55
+        },
+        "offset": [
+          10,
+          0,
+          0
+        ],
+        "NodeID": 43
+      },
+      "name": "createEntity"
+    },
+    "84": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "de398432-de79-459d-9d68-391d9a5d3351",
+      "forceCurPet": true,
+      "target": {
+        "UID": "b7822c76-295e-4743-b22c-8a5a0dfe8ac4",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 83
+      },
+      "NodeID": 84
+    },
+    "67": {
+      "UID": "b922af17-fb8b-4ec4-9877-d0a2e486d904",
+      "name": "isNot",
+      "action": {
+        "rValue": 0,
+        "name": "equal",
+        "UID": "19cf4d1f-5d4d-44c9-ba5d-47fd21ba65c9",
+        "NodeID": 66,
+        "lValue": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "a202e58c-a7dd-4f67-b2c0-707bf289c1d3",
+          "target": "OWNER",
+          "NodeID": 65
+        }
+      },
+      "NodeID": 67
+    },
+    "68": {
+      "UID": "9ad59eac-2d6a-4219-9df5-7170e32252a8",
+      "conditionIds": [
+        67,
+        71
+      ],
+      "name": "conditionAnd",
+      "NodeID": 68
+    },
+    "2": {
+      "buffId": 4003031,
+      "name": "removeBuff",
+      "UID": "54148af2-075b-49a3-990f-bf17273dbf50",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "171fc3d7-7760-46f8-b2e3-72377982acfc",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "88": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "73ba910e-bda5-4a00-a78b-c0902ff6f3d3",
+      "forceCurPet": true,
+      "target": {
+        "UID": "aad02807-d13c-4f82-a73b-77509d789c83",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 87
+      },
+      "NodeID": 88
+    },
+    "77": {
+      "key": "SuolianTarget01",
+      "name": "setServerCacheVal",
+      "UID": "84317920-9b31-4590-a443-2fdd9d82bed1",
+      "target": "OWNER",
+      "val": {
+        "name": "searchEntity",
+        "UID": "a778573e-d816-43d1-ba5b-ff98e9e30cb3",
+        "relation": 2,
+        "radius": 50,
+        "heightDown": 5,
+        "heightUp": 10,
+        "checkValidPlayer": true,
+        "isRandom": true,
+        "NodeID": 76,
+        "filterCondition": 75
+      },
+      "NodeID": 77
+    },
+    "71": {
+      "UID": "b99ea11d-6abe-4ac0-946a-3ab515538af2",
+      "name": "isNot",
+      "action": {
+        "rValue": 0,
+        "name": "equal",
+        "UID": "b0cb3b1b-90cb-48db-a4b1-4f085bd232c9",
+        "NodeID": 70,
+        "lValue": {
+          "key": "SuolianTarget01",
+          "name": "getServerCacheVal",
+          "UID": "c428a877-fe11-4797-9ca5-00855808bef4",
+          "target": "OWNER",
+          "NodeID": 69
+        }
+      },
+      "NodeID": 71
+    },
+    "82": {
+      "key": "SuolianTarget01",
+      "name": "setServerCacheVal",
+      "UID": "4bff5618-1a57-4ecb-b43c-b712a6e08dd2",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 82
+    },
+    "90": {
+      "UID": "e47a1c2e-3b73-4339-a50c-a60172d7dc8e",
+      "name": "isNot",
+      "action": {
+        "buffId": 4003045,
+        "name": "hasBuff",
+        "UID": "40e59106-6179-43ea-9593-a4e80a225999",
+        "target": {
+          "name": "getPlayerRealControlEnt",
+          "UID": "73ba910e-bda5-4a00-a78b-c0902ff6f3d3",
+          "forceCurPet": true,
+          "target": {
+            "UID": "aad02807-d13c-4f82-a73b-77509d789c83",
+            "target": "TARGET",
+            "name": "getTargetId",
+            "NodeID": 87
+          },
+          "NodeID": 88
+        },
+        "NodeID": 89
+      },
+      "NodeID": 90
+    },
+    "86": {
+      "UID": "568b0130-e214-48a2-a07c-0199fa386aec",
+      "name": "isNot",
+      "action": {
+        "buffId": 4003045,
+        "name": "hasBuff",
+        "UID": "891c9dfe-c8c8-4aa1-b06a-9ae7d314ab77",
+        "target": {
+          "name": "getPlayerRealControlEnt",
+          "UID": "de398432-de79-459d-9d68-391d9a5d3351",
+          "forceCurPet": true,
+          "target": {
+            "UID": "b7822c76-295e-4743-b22c-8a5a0dfe8ac4",
+            "target": "TARGET",
+            "name": "getTargetId",
+            "NodeID": 83
+          },
+          "NodeID": 84
+        },
+        "NodeID": 85
+      },
+      "NodeID": 86
+    },
+    "91": {
+      "name": "searchEntity",
+      "UID": "51f28978-66b4-4f8a-997b-483adf5590cd",
+      "relation": 2,
+      "radius": 50,
+      "heightDown": 5,
+      "heightUp": 10,
+      "checkValidPlayer": true,
+      "isRandom": true,
+      "NodeID": 91,
+      "filterCondition": 90
+    },
+    "10": {
+      "UID": "d0315aaf-778d-4998-ad2e-52ad1cbf66e9",
+      "conditionIds": [
+        9,
+        31
+      ],
+      "name": "conditionAnd",
+      "NodeID": 10
+    },
+    "92": {
+      "key": "SuolianTarget",
+      "name": "setServerCacheVal",
+      "UID": "e6a28250-7c30-4643-ae36-ead68ad52e00",
+      "target": "OWNER",
+      "val": {
+        "name": "searchEntity",
+        "UID": "51f28978-66b4-4f8a-997b-483adf5590cd",
+        "relation": 2,
+        "radius": 50,
+        "heightDown": 5,
+        "heightUp": 10,
+        "checkValidPlayer": true,
+        "isRandom": true,
+        "NodeID": 91,
+        "filterCondition": 90
+      },
+      "NodeID": 92
+    },
+    "76": {
+      "name": "searchEntity",
+      "UID": "a778573e-d816-43d1-ba5b-ff98e9e30cb3",
+      "relation": 2,
+      "radius": 50,
+      "heightDown": 5,
+      "heightUp": 10,
+      "checkValidPlayer": true,
+      "isRandom": true,
+      "NodeID": 76,
+      "filterCondition": 75
+    },
+    "12": {
+      "key": "YuJing",
+      "duration": 5,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12,
+      "UID": "7024e431-a4e1-487f-9fa7-63887a03e416",
+      "name": "addEntityTimer"
+    },
+    "74": {
+      "UID": "b576f0ca-f070-4a1a-9c12-5e99fcc947db",
+      "name": "isNot",
+      "action": {
+        "rValue": {
+          "UID": "47b568e8-17b4-45ec-a65c-af5ade1a2f6a",
+          "target": "TARGET",
+          "name": "getTargetId",
+          "NodeID": 79
+        },
+        "name": "equal",
+        "UID": "a3f39d75-a51b-4c7f-bbc0-b7994acc0d52",
+        "NodeID": 73,
+        "lValue": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "6a3c7f3a-95db-4365-8396-a509aa447c91",
+          "target": "OWNER",
+          "NodeID": 72
+        }
+      },
+      "NodeID": 74
+    },
+    "63": {
+      "id": 2038,
+      "duration": 5,
+      "NodeID": 63,
+      "UID": "a33e08ac-fb69-4d3d-83f7-ef8cef5c2a66",
+      "name": "showBossMechanismTip"
+    },
+    "62": {
+      "UID": "01d89b1b-63fa-4dc3-834c-c0613aa5b524",
+      "name": "callClientAction",
+      "actionIds": [
+        61
+      ],
+      "NodeID": 62
+    },
+    "61": {
+      "id": 2037,
+      "duration": 10,
+      "NodeID": 61,
+      "UID": "c905ae71-6054-4cc4-a1b4-57bd2a903534",
+      "name": "showBossMechanismTip"
+    },
+    "5": {
+      "calcId": 4003040,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 5,
+      "UID": "d40132f6-1f01-4697-bbfa-b657e407e476",
+      "name": "getParamByLuaConfig"
+    },
+    "60": {
+      "UID": "36f1b2de-ecb4-498d-a3a0-095c2d85de53",
+      "name": "callClientAction",
+      "actionIds": [
+        59
+      ],
+      "NodeID": 60
+    },
+    "59": {
+      "id": 2037,
+      "duration": 10,
+      "NodeID": 59,
+      "UID": "f35128f8-c9ff-4212-a6f0-e3cebd3662fd",
+      "name": "showBossMechanismTip"
+    },
+    "6": {
+      "delay": {
+        "calcId": 4003040,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "7cf14d62-4492-45fa-aeed-5a7c1bd749b2",
+        "name": "getParamByLuaConfig"
+      },
+      "interval": {
+        "calcId": 4003040,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 5,
+        "UID": "d40132f6-1f01-4697-bbfa-b657e407e476",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "92f17200-c051-430d-a209-e0921092eed2",
+      "name": "buffStartThink",
+      "NodeID": 6
+    },
+    "19": {
+      "actionIds": [
+        47,
+        26,
+        41,
+        52,
+        60
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "b19be7c8-3609-4643-93e8-2529075d0980",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 19
+    },
+    "57": {
+      "id": 2037,
+      "duration": 10,
+      "NodeID": 57,
+      "UID": "48809f6d-d51e-404a-88c4-37d3ea937870",
+      "name": "showBossMechanismTip"
+    },
+    "7": {
+      "calcId": 4003040,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "7cf14d62-4492-45fa-aeed-5a7c1bd749b2",
+      "name": "getParamByLuaConfig"
+    },
+    "53": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 4003043,
+      "NodeID": 53,
+      "UID": "eb843326-c68e-4da1-8834-933989b5da6f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "52": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 4003043,
+      "NodeID": 52,
+      "UID": "2b4ce5b7-fb18-45b4-a9b1-dcb55b61c23d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "31": {
+      "UID": "213b9f93-ac14-4766-a3d5-434bd70a0e03",
+      "name": "isNot",
+      "action": {
+        "buffId": 4003042,
+        "name": "hasBuff",
+        "UID": "1cedaf45-abaa-4c3e-9401-bcadc9024e23",
+        "target": "OWNER",
+        "NodeID": 30
+      },
+      "NodeID": 31
+    },
+    "9": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "8c9be493-3404-4c82-a41d-fbfdd5b2235b",
+      "NodeID": 9,
+      "lValue": {
+        "key": "JiGuan01",
+        "name": "getCacheVal",
+        "UID": "821df3c9-72fd-4f81-b39e-c66b813726d2",
+        "target": "OWNER",
+        "NodeID": 8
+      }
+    },
+    "35": {
+      "UID": "e8abb5a2-68f7-4cb1-8ae0-5bf64d05b6d9",
+      "name": "isNot",
+      "action": {
+        "buffId": 4003043,
+        "name": "hasBuff",
+        "UID": "acc3f9ca-554e-4f39-9022-9619f0941699",
+        "target": "OWNER",
+        "NodeID": 34
+      },
+      "NodeID": 35
+    },
+    "50": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 1000005,
+      "NodeID": 50,
+      "UID": "dbfe6b3d-d1cb-4b47-8f2a-3b8c89bf8c0b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "TARGET",
+      "pos": {
+        "name": "getTargetOffsetPos",
+        "UID": "b10ded40-3e79-4373-9f3e-5ac3532e70e9",
+        "target": {
+          "UID": "11914e0c-d662-496b-9c03-68e3d5c4250d",
+          "name": "getBornPos",
+          "NodeID": 56
+        },
+        "offset": [
+          -5,
+          0,
+          8.7
+        ],
+        "NodeID": 49
+      },
+      "name": "createEntity"
+    },
+    "11": {
+      "actionIds": [
+        44,
+        24,
+        33,
+        51,
+        58
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "cc50a377-d3cf-4378-986b-f25f751b6fbf",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 11
+    },
+    "28": {
+      "key": "JiGuan03",
+      "name": "setCacheVal",
+      "UID": "0ac84b49-f267-488a-a925-4a47281caf2e",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 28
+    },
+    "21": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "21cd2498-c56d-4add-9f81-0abc1723122a",
+      "NodeID": 21,
+      "lValue": {
+        "key": "JiGuan03",
+        "name": "getCacheVal",
+        "UID": "c9b5ccff-cc3d-45dc-8b8f-2fb5c50b6b4f",
+        "target": "OWNER",
+        "NodeID": 20
+      }
+    },
+    "22": {
+      "UID": "b2a16e35-88e0-49ad-bc47-feca59d11e6b",
+      "conditionIds": [
+        21,
+        37
+      ],
+      "name": "conditionAnd",
+      "NodeID": 22
+    },
+    "23": {
+      "actionIds": [
+        50,
+        28,
+        39,
+        53,
+        62
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "35c7eeeb-0423-4a19-8248-ee8861cfc481",
+      "name": "doActionsByConditions",
+      "NodeID": 23
+    },
+    "24": {
+      "key": "JiGuan01",
+      "name": "setCacheVal",
+      "UID": "a4706fe0-4345-43cc-acd3-9cdbe8a5e20c",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 24
+    },
+    "14": {
+      "actionIds": [
+        64,
+        12
+      ],
+      "conditionActionIds": [
+        68
+      ],
+      "UID": "36f0e50c-2d35-4fd6-b9a9-de3f61cd4b19",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "46": {
+      "name": "getTargetOffsetPos",
+      "UID": "33d1c976-9f9c-422f-b474-9beecea8de9c",
+      "target": {
+        "UID": "812b557c-7587-4670-bb7a-387425a644db",
+        "name": "getBornPos",
+        "NodeID": 54
+      },
+      "offset": [
+        -5,
+        0,
+        -8.7
+      ],
+      "NodeID": 46
+    },
+    "75": {
+      "UID": "a565993f-e02d-4530-ba4a-1edd48e88a28",
+      "conditionIds": [
+        74,
+        86
+      ],
+      "name": "conditionAnd",
+      "NodeID": 75
+    },
+    "47": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 1000004,
+      "NodeID": 47,
+      "UID": "521d820e-b36b-41a9-999f-1b842cfe8bcb",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "TARGET",
+      "pos": {
+        "name": "getTargetOffsetPos",
+        "UID": "33d1c976-9f9c-422f-b474-9beecea8de9c",
+        "target": {
+          "UID": "812b557c-7587-4670-bb7a-387425a644db",
+          "name": "getBornPos",
+          "NodeID": 54
+        },
+        "offset": [
+          -5,
+          0,
+          -8.7
+        ],
+        "NodeID": 46
+      },
+      "name": "createEntity"
+    },
+    "26": {
+      "key": "JiGuan02",
+      "name": "setCacheVal",
+      "UID": "5e4e8cad-e0dd-4e87-b56b-14f01d27ace7",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 26
+    },
+    "58": {
+      "UID": "0eab1550-d958-4bf1-ba68-e44b96f3b11a",
+      "name": "callClientAction",
+      "actionIds": [
+        57
+      ],
+      "NodeID": 58
+    },
+    "17": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "5985ac3c-1bde-4f1c-b54c-649746d93971",
+      "NodeID": 17,
+      "lValue": {
+        "key": "JiGuan02",
+        "name": "getCacheVal",
+        "UID": "34130f99-0fb5-4ce7-b1af-daf270f4241a",
+        "target": "OWNER",
+        "NodeID": 16
+      }
+    },
+    "49": {
+      "name": "getTargetOffsetPos",
+      "UID": "b10ded40-3e79-4373-9f3e-5ac3532e70e9",
+      "target": {
+        "UID": "11914e0c-d662-496b-9c03-68e3d5c4250d",
+        "name": "getBornPos",
+        "NodeID": 56
+      },
+      "offset": [
+        -5,
+        0,
+        8.7
+      ],
+      "NodeID": 49
+    },
+    "18": {
+      "UID": "ca0d800e-e165-43bd-9e58-acabf8ecdb95",
+      "conditionIds": [
+        17,
+        35
+      ],
+      "name": "conditionAnd",
+      "NodeID": 18
+    },
+    "32": {
+      "key": "JiGuan01",
+      "name": "setCacheVal",
+      "UID": "e1476166-b311-4f06-9eaf-deee62bce000",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 32
+    },
+    "33": {
+      "key": "red",
+      "duration": 90,
+      "actionIds": [
+        32
+      ],
+      "NodeID": 33,
+      "UID": "f1ed396b-d21a-48d6-a225-9c32eca81a55",
+      "name": "addEntityTimer"
+    },
+    "51": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 4003042,
+      "NodeID": 51,
+      "UID": "e6011674-5aa2-4a2b-bdc1-134ed5d96706",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "80": {
+      "key": "SuolianTarget",
+      "name": "setServerCacheVal",
+      "UID": "9b7b7294-c169-4a0c-b5cc-d7d785bfcc6c",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 80
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6
+  ]
+}

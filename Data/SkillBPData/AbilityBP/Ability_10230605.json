@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_10230605",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10230605001,
+      "name": "setCombatActionTimeline",
+      "UID": "3dc91cb4-0974-48cf-bc37-9b8a2d0f06a7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Tornado_Start",
+    "Skill_Tornado_Loop",
+    "Skill_Tornado_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Boss_Warning",
+    "Eff_Monster_10023_Mon_Skill_Tornado_WindField",
+    "Eff_Monster_10023_Mon_Skill_Tornado_Angry"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 10900210,
+  "name": ""
+}

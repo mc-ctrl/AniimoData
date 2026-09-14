@@ -1,0 +1,55 @@
+{
+  "BPName": "ability_12331700",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 40900006,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12331700001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "43": {
+      "name": "stopEffectStr",
+      "UID": "0ec0cadd-df90-48c5-aad2-25d462ccc0fa",
+      "effectId": "Eff_Parmon_10233_Skill_EnergyBall03_start",
+      "target": "OWNER",
+      "NodeID": 43
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_EnergyBall_Start",
+    "Skill_EnergyBall_End",
+    "Skill_EnergyBall_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10233_Skill_EnergyBall02_start_lv3_001",
+    "Eff_Parmon_10233_Skill_EnergyBall02_lv3",
+    "Eff_Parmon_10233_Skill_EnergyBall02_end",
+    "Eff_Parmon_10233_Skill_EnergyBall01_lv3",
+    "Eff_Parmon_10233_Skill_EnergyBall02_start_lv3",
+    "Eff_Parmon_10233_Skill_EnergyBall03",
+    "Eff_Parmon_10233_Skill_EnergyBall04_end",
+    "Eff_Parmon_10233_Skill_EnergyBall04_lv3",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 2,
+  "onAbilityEndIds": [
+    43
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

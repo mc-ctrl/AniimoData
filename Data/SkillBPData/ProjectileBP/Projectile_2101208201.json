@@ -1,0 +1,132 @@
+{
+  "duration": 5,
+  "BPName": "timeline_2101208",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Money_Drop_Fly",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "38": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062003,
+      "name": "createEntity",
+      "UID": "b895ada6-6926-46ec-9dda-f69126835030",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 38,
+      "pos": "PROJECTILE"
+    },
+    "39": {
+      "UID": "29b1189c-a05f-4535-b8d6-6635e2778b2d",
+      "randomPercent": 5,
+      "name": "isRandom",
+      "NodeID": 39
+    },
+    "40": {
+      "UID": "3122d9d4-acd1-4e35-ab74-a9ee2ce8b175",
+      "randomPercent": 42,
+      "name": "isRandom",
+      "NodeID": 40
+    },
+    "41": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062001,
+      "name": "createEntity",
+      "UID": "50a2ad2d-a36e-4a4f-9a99-6bf557b68054",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 41,
+      "pos": "PROJECTILE"
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062002,
+      "name": "createEntity",
+      "UID": "ba30a2b0-f4d9-4ffb-aaba-83f267c6f338",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 34,
+      "pos": "PROJECTILE"
+    },
+    "35": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "d4b87480-3608-416e-a0a1-8bc58f3b8bfe",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        41
+      ],
+      "NodeID": 35
+    },
+    "36": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "0c0efc26-5661-402a-b3b9-32803671365d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        35
+      ],
+      "NodeID": 36
+    }
+  },
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    36
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

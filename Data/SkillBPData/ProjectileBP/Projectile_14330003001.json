@@ -1,0 +1,132 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 55,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10433_Attack_04_Bullet",
+  "gravityRatio": 5,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 1,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    38,
+    50,
+    51
+  ],
+  "nodeMap": {
+    "50": {
+      "pos": {
+        "UID": "5b4f2723-d1ef-41a4-872d-abfddd0b7c86",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "a4e6b435-00f1-4071-989b-b4a8cbc2923b",
+          "name": "getProjectilePos",
+          "NodeID": 48
+        },
+        "NodeID": 49
+      },
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4cc58adc-8489-41ed-8058-a66e51cb89bd",
+      "effectId": "Eff_Parmon_10433_Attack_04_explode",
+      "speed": 1,
+      "NodeID": 50
+    },
+    "38": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 55,
+      "NodeID": 38,
+      "UID": "be1d1f7b-2470-407a-b133-555b5a7b87df",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            180,
+            1,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        55
+      ]
+    },
+    "51": {
+      "targetPos": {
+        "UID": "5b4f2723-d1ef-41a4-872d-abfddd0b7c86",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "a4e6b435-00f1-4071-989b-b4a8cbc2923b",
+          "name": "getProjectilePos",
+          "NodeID": 48
+        },
+        "NodeID": 49
+      },
+      "name": "playSoundAtPos",
+      "UID": "34eda18f-8abf-41df-9758-5a6b4ab20ca9",
+      "soundId": "SFX_Combat_10433_Skill_TurretForm_Explode",
+      "NodeID": 51
+    },
+    "55": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.266
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "f6e1ae89-dd68-4aeb-b903-d411e529e330",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 14330003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "NodeID": 55
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "BPName": "ability_14330003",
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

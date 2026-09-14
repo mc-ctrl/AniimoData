@@ -1,0 +1,114 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103224",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "ecc03b96-90d3-491e-a61a-8f6567a9bebc",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "buffId": 2103215,
+      "name": "removeBuff",
+      "UID": "8189d69b-8939-42fc-a1f3-fbbd51a20fdf",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "ba9d464b-94eb-42f0-87c0-d7818a11c54d",
+      "conditionIds": [
+        5,
+        9
+      ],
+      "name": "conditionOr",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2103215,
+      "NodeID": 10,
+      "UID": "a520d550-67a0-493c-ab7a-0e02d4429d25",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "ddb68afc-c458-40f7-809b-16cf778f8f0b",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "8": {
+      "UID": "0456d1b8-9a0d-4123-80a3-5f988e84c97b",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "buffId": 2103217,
+      "name": "hasBuff",
+      "UID": "bb9d67d9-15dd-481a-b83d-bbd245800cc5",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "12": {
+      "UID": "74b4097d-6ba0-4cb8-9687-ad82c6918ae3",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12
+    },
+    "11": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2103215,
+      "NodeID": 11,
+      "UID": "2b0fdaf9-ef4a-4155-81f2-f19cf63103ec",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "buffId": 2103216,
+      "name": "hasBuff",
+      "UID": "31231699-3ab5-419a-87dd-fb6b180d75fc",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2103215,
+      "NodeID": 2,
+      "UID": "b0ed2b27-b7b9-45ca-b567-56e60c636a49",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onBuffDestroyIds": [
+    13
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    8,
+    12
+  ]
+}

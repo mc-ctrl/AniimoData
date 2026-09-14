@@ -1,0 +1,149 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000210",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcId": 5000210,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 5,
+      "UID": "4e8a7fb4-4b93-454d-b0b3-c79439107c6f",
+      "name": "getParamByLuaConfig"
+    },
+    "13": {
+      "actionsOnReborn": [
+        11
+      ],
+      "canBeHitWhenFakeDead": false,
+      "NodeID": 13,
+      "UID": "31042898-25c1-4b97-90b9-50f5a509688b",
+      "reviveHpRate": 0.1,
+      "rebornTime": 2,
+      "name": "petFakeDead"
+    },
+    "6": {
+      "actionIds": [
+        9
+      ],
+      "NodeID": 6,
+      "UID": "d0238aaa-1236-42a2-bc38-7b9632260385",
+      "cd": {
+        "calcId": 5000210,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 5,
+        "UID": "4e8a7fb4-4b93-454d-b0b3-c79439107c6f",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "10": {
+      "buffId": 5000212,
+      "name": "hasBuff",
+      "UID": "412c3fd8-c2bc-494b-9c93-351268762ea6",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "value": {
+        "name": "getAttribute",
+        "UID": "663f1ab8-6f30-4cc9-a615-ed4833622e1e",
+        "target": "OWNER",
+        "NodeID": 14,
+        "attributeName": "ep_max_cur"
+      },
+      "name": "recoverEp",
+      "UID": "16c053af-212d-4473-b21e-a18d463294df",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "name": "registerDeadEvent",
+      "UID": "d1f1462c-f5eb-48cb-ab71-03e997699fac",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "buffId": 5000211,
+      "name": "hasBuff",
+      "UID": "fe90ef03-c506-401d-bf0c-4f458da8ab28",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "calcId": 5000210,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 17,
+      "UID": "89e9b9ba-5e39-459d-8d91-1d6b665cf778",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "88e63efd-c69e-4061-a91a-fe787e306664",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        15,
+        19
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "33233f55-ecbd-40a7-ae10-37e6a77d78d7",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "19": {
+      "calcInfo": {
+        "sp_cur": {
+          "calcId": 5000210,
+          "calcType": 1,
+          "paramName": "param3",
+          "NodeID": 17,
+          "UID": "89e9b9ba-5e39-459d-8d91-1d6b665cf778",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "calcResult",
+      "UID": "52d13ce6-6fc7-44a3-991c-d81d8a6d7b63",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "12": {
+      "actionsOnReborn": [
+        11
+      ],
+      "canBeHitWhenFakeDead": false,
+      "NodeID": 12,
+      "UID": "c74dcff7-b333-4037-9b2e-2ff506cd920d",
+      "reviveHpRate": 0.2,
+      "rebornTime": 2,
+      "name": "petFakeDead"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

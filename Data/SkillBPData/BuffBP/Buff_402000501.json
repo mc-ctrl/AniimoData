@@ -1,0 +1,15 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_402000501",
+  "calcInfoByLuaConfig": {
+    "id": 402000501,
+    "type": 1,
+    "add_cur_ep_fix": "param0"
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_10210002",
+  "NodeID": 1,
+  "UID": "3f819eba-4cd5-475b-b05a-9ef33387ab27",
+  "abilityParamId": 16800000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10210002001,
+      "name": "setCombatActionTimeline",
+      "UID": "30bd072b-c7eb-48ad-8597-11fedf1df07f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Blunt",
+    "Eff_Parmon_10021_Attack03"
+  ],
+  "searchRelation": 2,
+  "name": "金属近战普攻",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

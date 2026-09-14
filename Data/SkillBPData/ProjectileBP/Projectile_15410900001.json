@@ -1,0 +1,124 @@
+{
+  "angularIncreaseDuration": 1,
+  "duration": 1.2,
+  "BPName": "ability_15410900",
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Bullet01",
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "165": {
+      "cameraShakeId": 20100,
+      "name": "playCameraImpulseById",
+      "UID": "5fa61b7f-746c-4d8f-8298-94ca23bcbe84",
+      "target": "OWNER",
+      "NodeID": 165
+    },
+    "113": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 115,
+      "NodeID": 113,
+      "UID": "a973b03f-bba4-472a-bc43-2120c169c0fa",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 99
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        115,
+        167
+      ]
+    },
+    "167": {
+      "value": 200,
+      "name": "applyECSElement",
+      "UID": "c3d106ff-4beb-4ce0-a1e8-c38eb858f248",
+      "element": 1,
+      "target": "TARGET",
+      "NodeID": 167
+    },
+    "115": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 15410900,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "54cc815a-19ee-432f-ab91-df8ba8543644",
+      "target": "TARGET",
+      "NodeID": 115,
+      "attackData": {
+        "hitSoundType": "s",
+        "overrideEcsPower": 100,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "soundRangeType": 2,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+        "disableShowJumpWord": true,
+        "impulseId": 2000,
+        "elementType": 3
+      }
+    },
+    "107": {
+      "pos": "PROJECTILE",
+      "scale": 2.85,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "5b729249-f604-4dba-9da7-6a1e8a23966b",
+      "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Boom01",
+      "speed": 1,
+      "NodeID": 107
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    113,
+    107,
+    165
+  ],
+  "waterDestroy": true,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.01,
+  "calcResultNodeId": 115,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

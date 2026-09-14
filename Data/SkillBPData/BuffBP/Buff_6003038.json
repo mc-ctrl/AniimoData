@@ -1,0 +1,100 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003038",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 0.3,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 3,
+      "UID": "6f746bf5-5ae5-4a08-94d9-95f475d413fa",
+      "name": "playRadialBlur"
+    },
+    "13": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7ede5bf1-f089-4a15-b835-5070284d6bfa",
+      "target": "OWNER",
+      "NodeID": 13,
+      "animId": "StunEnd"
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "7e8be8c4-56b8-4314-b54e-1aced8fbcc9a",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a4416e68-ac46-429b-90a8-e83f312c3154",
+      "effectId": "Eff_Debuff_stun_Egg",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "name": "checkTargetLifeState",
+      "UID": "449271b5-f9fa-4cc5-9e2f-40e7162a95e1",
+      "target": "OWNER",
+      "NodeID": 15,
+      "life": 1
+    },
+    "7": {
+      "name": "playHitEffect",
+      "UID": "8a544caa-76a3-4c17-8830-6befe70cd41f",
+      "target": "OWNER",
+      "NodeID": 7,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "efaae2e3-cf23-492a-82d3-83886a72a904",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_sfx_parmon_break",
+      "NodeID": 8
+    },
+    "9": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 9,
+      "UID": "29c5c8a4-c47f-4382-ad82-99df8be7d1e1",
+      "endAni": "",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "c83778d9-0dd6-4b9d-ab0c-dbf7d5ed0a38",
+      "effectId": "Eff_Debuff_stun_Egg",
+      "target": "OWNER",
+      "NodeID": 11
+    }
+  },
+  "onBuffDestroyIds": [
+    11,
+    14
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    10,
+    3,
+    8,
+    7
+  ]
+}

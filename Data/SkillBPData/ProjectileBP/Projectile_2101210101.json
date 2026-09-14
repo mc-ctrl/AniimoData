@@ -1,0 +1,203 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 6,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Skill_Swift_Bullet_x0.75",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "nodeMap": {
+    "24": {
+      "targetPos": "TARGET",
+      "innerRadius": 4,
+      "name": "randomPoint",
+      "UID": "9f15f83a-0823-4388-85a2-88265b48bac6",
+      "radius": 5,
+      "NodeID": 24
+    },
+    "6": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "calcId": 2101210,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 81,
+          "UID": "977176fc-0c4e-4403-ad85-07f6b38690db",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "elementType": 0,
+        "hitCameraShakeId": 10101,
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "parmon_starly_attack_hit",
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "cd0acc9a-989f-4f05-a685-c893b866b390",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 6
+    },
+    "84": {
+      "UID": "ddc744c3-3117-4e72-96c1-431699262bb7",
+      "randomPercent": 18,
+      "name": "isRandom",
+      "NodeID": 84
+    },
+    "83": {
+      "buffId": 3063001,
+      "name": "hasBuff",
+      "UID": "9e405946-5f30-4fd1-899b-bb3bd6ed5c7f",
+      "target": "MASTER",
+      "NodeID": 83
+    },
+    "26": {
+      "UID": "7fc6bed8-edde-49d1-b49e-f0e1310f93dc",
+      "name": "callClientAction",
+      "actionIds": [
+        24,
+        31
+      ],
+      "NodeID": 26
+    },
+    "8": {
+      "needEcs": true,
+      "calcResultNodeId": 6,
+      "NodeID": 8,
+      "UID": "69721fdf-f078-4c6c-a3fb-4dfa7d641ca5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        6,
+        18
+      ]
+    },
+    "17": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "3397fd71-8c26-400b-b9bb-628f48d2ca32",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "81": {
+      "calcId": 2101210,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 81,
+      "UID": "977176fc-0c4e-4403-ad85-07f6b38690db",
+      "name": "getParamByLuaConfig"
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        83
+      ],
+      "UID": "376a7b20-bd23-49dd-8d5e-d142972db38d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 18
+    },
+    "27": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        84
+      ],
+      "UID": "69d93eb0-ff17-4db3-a66c-cb6b5e4dbd76",
+      "name": "doActionsByConditions",
+      "NodeID": 27
+    },
+    "31": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2101210103,
+      "name": "createProjectile",
+      "UID": "87133113-4298-43ed-9cea-37556d3009da",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "TARGET",
+      "projectileType": "Parabola3d",
+      "NodeID": 31,
+      "targetPos": "RANDOM_POINT"
+    },
+    "16": {
+      "UID": "a6282753-d3aa-49ed-b56f-13a4ebb6858c",
+      "randomPercent": 27,
+      "name": "isRandom",
+      "NodeID": 16
+    },
+    "36": {
+      "name": "playEffectOnPosRot",
+      "UID": "60294e9c-25cc-4f2d-8b50-f521697fc1b6",
+      "effectId": "Eff_Parmon_10011_Skill_Swift_Hit",
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "NodeID": 36,
+      "speed": 1,
+      "rotTo": "PROJECTILE",
+      "rot": "PROJECTILE"
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    8,
+    36
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.3,
+  "sweepRadius": 1.3,
+  "sweepShape": 0,
+  "trackingNoOffsetRotationRange": 20,
+  "tickInterval": 0,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "BPName": "buff_2101210",
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

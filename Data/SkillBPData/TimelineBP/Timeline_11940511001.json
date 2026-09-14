@@ -1,0 +1,1001 @@
+{
+  "nodeMap": {
+    "112": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8de14625-1a3c-44cb-ac40-a1dc8e19c466",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Attack_01",
+      "speed": 1,
+      "NodeID": 112
+    },
+    "166": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5bb310a4-1e25-421e-8ce5-498ff7b85fb7",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatersword_attack",
+      "NodeID": 166
+    },
+    "53": {
+      "UID": "37aaf250-0cc6-42f4-8f61-f3180eea5af0",
+      "name": "callClientAction",
+      "actionIds": [
+        51,
+        59,
+        64,
+        119,
+        128,
+        137
+      ],
+      "NodeID": 53
+    },
+    "168": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "30dbf88e-de6b-4792-bae8-a6b20593fd44",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatersword_attack",
+      "NodeID": 168
+    },
+    "116": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 3000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "a7c5eb6a-5f04-49ed-b72d-ea55cf784893",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 116
+    },
+    "118": {
+      "calcResultNodeId": 116,
+      "name": "actOnTargets",
+      "UID": "13ada67e-ef12-4f21-b5b3-bf5878aec1a8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            75,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        116
+      ],
+      "impulseId": 3000,
+      "NodeID": 118
+    },
+    "119": {
+      "key": "6",
+      "duration": 1.25,
+      "actionIds": [
+        118
+      ],
+      "NodeID": 119,
+      "UID": "cfa9da28-195f-4549-9991-8ffe01e8adfd",
+      "name": "addTimer"
+    },
+    "125": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 3000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "ebf16705-85ea-455e-8099-9c2b25a83e05",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 125
+    },
+    "127": {
+      "calcResultNodeId": 125,
+      "name": "actOnTargets",
+      "UID": "f1a766d9-750d-46c8-a5e3-ed0b49962b70",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            75,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        125
+      ],
+      "impulseId": 3000,
+      "NodeID": 127
+    },
+    "128": {
+      "key": "7",
+      "duration": 2,
+      "actionIds": [
+        127
+      ],
+      "NodeID": 128,
+      "UID": "bec99720-f3f3-45ec-8c70-37d3c78d21e1",
+      "name": "addTimer"
+    },
+    "134": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 3000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "52fa488a-4098-4b36-a5cb-e5d4db4760c4",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 134
+    },
+    "20": {
+      "name": "isActorType",
+      "UID": "463c53a8-ee2e-4432-9932-a14b5e6486b7",
+      "target": "OWNER",
+      "NodeID": 20,
+      "actorType": 3
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "22": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 22,
+      "animId": "Skill_FlowingWaterSword"
+    },
+    "24": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "75": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 3000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "7aa9d663-4d47-4de0-8642-91ab4f743337",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 75
+    },
+    "57": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 11940511004,
+      "name": "createSegmentedProjectile",
+      "UID": "231db9f2-9bcd-4057-ab06-4533e1fe7a23",
+      "NodeID": 57
+    },
+    "155": {
+      "key": "5",
+      "duration": 3,
+      "actionIds": [
+        153,
+        168
+      ],
+      "NodeID": 155,
+      "UID": "1f28fe5d-40a7-42ac-b1ce-bd1e42673303",
+      "name": "addTimer"
+    },
+    "27": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 3000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "69b862e1-7f7c-4b3b-8620-7c11bf267f3d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 27
+    },
+    "77": {
+      "calcResultNodeId": 75,
+      "name": "actOnTargets",
+      "UID": "feab4cf7-d96b-4fee-ae05-45e7096b8092",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            75,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        75
+      ],
+      "impulseId": 3000,
+      "NodeID": 77
+    },
+    "29": {
+      "calcResultNodeId": 27,
+      "name": "actOnTargets",
+      "UID": "84f463e0-f4fb-4855-b2c7-767f36e83249",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            75,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        27
+      ],
+      "impulseId": 3000,
+      "NodeID": 29
+    },
+    "30": {
+      "key": "0",
+      "duration": 1.25,
+      "actionIds": [
+        29
+      ],
+      "NodeID": 30,
+      "UID": "239ed46a-196b-4ace-a987-ea2ed554017b",
+      "name": "addTimer"
+    },
+    "32": {
+      "UID": "2e85927b-ab6e-47b8-845b-f1ce1688ebf5",
+      "name": "callClientAction",
+      "actionIds": [
+        30,
+        78,
+        87,
+        145,
+        150,
+        155
+      ],
+      "NodeID": 32
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0f428329-b05d-4bb3-a762-26a132ba054b",
+      "effectId": "Eff_Parmon_10194_Boss_Warning",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "34": {
+      "delayTime": 0,
+      "duration": 0.8,
+      "NodeID": 34,
+      "UID": "250f42a7-4bbf-45e0-9f76-6c55a51864b6",
+      "radius": 30,
+      "waterPoolDissolveRange": [
+        1,
+        2
+      ],
+      "commonMount": "",
+      "levelActions": [
+        {
+          "actionIds": [
+            32
+          ],
+          "count": 0
+        },
+        {
+          "actionIds": [
+            53
+          ],
+          "count": 1
+        }
+      ],
+      "notConsumeRate": 0,
+      "waterPoolDelayTime": 0.1,
+      "maxCount": 1,
+      "waterPoolVanishDuration": 1.3,
+      "name": "waterAbsorb"
+    },
+    "62": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.4,
+        0
+      ],
+      "templateId": 11940511006,
+      "name": "createSegmentedProjectile",
+      "UID": "98dfd68c-d0bf-4635-8c08-61e56ab8d103",
+      "NodeID": 62
+    },
+    "40": {
+      "UID": "d3e81a8e-6811-4aa8-b4cd-fd95d07a7337",
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 40
+    },
+    "64": {
+      "key": "11",
+      "duration": 3,
+      "actionIds": [
+        62,
+        95
+      ],
+      "NodeID": 64,
+      "UID": "7c864a76-744f-428d-b93b-d4b3b4b6a880",
+      "name": "addTimer"
+    },
+    "35": {
+      "UID": "e00ee05d-547c-4ee9-b7a2-4487c0c221b3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "NodeID": 35
+    },
+    "65": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "f83b1ad1-627a-4af2-9797-45b5d95ae593",
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "84": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "impulseId": 3000,
+        "hitCameraShakeId": -1
+      },
+      "UID": "ecf3467a-458c-4861-b2eb-8f368ef4bd37",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 84
+    },
+    "66": {
+      "action": {
+        "actionIds": [
+          65
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.71,
+      "NodeID": 66,
+      "UID": "9f1e883e-cb49-4d32-98c8-7656e5f55ace"
+    },
+    "86": {
+      "calcResultNodeId": 84,
+      "name": "actOnTargets",
+      "UID": "855e0bc4-6e48-4e27-991d-8fd434c962bd",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            75,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "3",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        84
+      ],
+      "impulseId": 3000,
+      "NodeID": 86
+    },
+    "87": {
+      "key": "2",
+      "duration": 3,
+      "actionIds": [
+        86
+      ],
+      "NodeID": 87,
+      "UID": "b1c41cc4-a3a6-4e49-a4f2-5bcc56eaa183",
+      "name": "addTimer"
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "101": {
+      "UID": "9b7c953a-bf65-49dd-914e-121c1e1f4240",
+      "target": "TARGET",
+      "name": "sendAIDodgeMsg",
+      "NodeID": 101
+    },
+    "91": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "94fb6591-f2d0-4c39-910f-02444aac0b9c",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatersword_charge",
+      "NodeID": 91
+    },
+    "136": {
+      "calcResultNodeId": 134,
+      "name": "actOnTargets",
+      "UID": "f426bd30-3df8-4ed9-adf6-55f4679b33b7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            75,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "3",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        134
+      ],
+      "impulseId": 3000,
+      "NodeID": 136
+    },
+    "137": {
+      "key": "8",
+      "duration": 3,
+      "actionIds": [
+        136
+      ],
+      "NodeID": 137,
+      "UID": "7c657e74-45b6-4e33-b033-e1a69b3843bb",
+      "name": "addTimer"
+    },
+    "94": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3c329bd8-a0ec-4172-bb2b-5a192b8c393b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatersword_attack",
+      "NodeID": 94
+    },
+    "95": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b612957d-761e-4746-8855-4ded66529102",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatersword_attack",
+      "NodeID": 95
+    },
+    "167": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7811c080-0e9f-48b4-9c8f-1107e8fea69b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatersword_attack",
+      "NodeID": 167
+    },
+    "153": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 11940511012,
+      "name": "createSegmentedProjectile",
+      "UID": "bf8ad0f9-0b19-4030-885b-d4e63eefda02",
+      "NodeID": 153
+    },
+    "97": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "6aba6dc2-399b-4bbb-8817-d73b7b7b20e9",
+      "target": "OWNER",
+      "NodeID": 97
+    },
+    "43": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 43,
+      "UID": "6cac20d5-1167-48f3-900c-ff2f3846d0df",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Start_02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "98": {
+      "action": {
+        "actionIds": [
+          97
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.56,
+      "NodeID": 98,
+      "UID": "498400b6-827b-43f8-8128-618bb9146f93"
+    },
+    "148": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "templateId": 11940511010,
+      "name": "createSegmentedProjectile",
+      "UID": "3290e20a-3df8-4115-81cd-dc088bb89748",
+      "NodeID": 148
+    },
+    "99": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "96d7c898-5592-4e14-b8e4-9945a90f5cea",
+      "target": "OWNER",
+      "NodeID": 99
+    },
+    "143": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 11940511008,
+      "name": "createSegmentedProjectile",
+      "UID": "784dfd79-0811-4238-87cc-6e7061b9692f",
+      "NodeID": 143
+    },
+    "100": {
+      "action": {
+        "actionIds": [
+          99
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.6,
+      "NodeID": 100,
+      "UID": "2df96291-0c43-4649-86fd-d41323839055"
+    },
+    "51": {
+      "key": "9",
+      "duration": 1.15,
+      "actionIds": [
+        49,
+        93
+      ],
+      "NodeID": 51,
+      "UID": "109745a1-57ca-4f5d-b74f-c3b0330548a0",
+      "name": "addTimer"
+    },
+    "42": {
+      "UID": "3244cdf6-90d1-48d0-a818-d7706193ffc4",
+      "eventType": "Notify",
+      "time": 0.36,
+      "NodeID": 42
+    },
+    "145": {
+      "key": "3",
+      "duration": 1.15,
+      "actionIds": [
+        143,
+        166
+      ],
+      "NodeID": 145,
+      "UID": "7df09811-4391-405d-8142-dbbb52cb9ecf",
+      "name": "addTimer"
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 18,
+      "UID": "ee29f3a1-2608-4126-a266-444cf23db3e7"
+    },
+    "59": {
+      "key": "10",
+      "duration": 2,
+      "actionIds": [
+        57,
+        94
+      ],
+      "NodeID": 59,
+      "UID": "0cd81b60-b1fe-4ea6-a5e5-78191ab28ec5",
+      "name": "addTimer"
+    },
+    "17": {
+      "actionIds": [
+        15,
+        19,
+        101
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "0b877065-cd59-4f63-9b20-9943bb6cae88",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "49": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.4,
+        0
+      ],
+      "templateId": 11940511002,
+      "name": "createSegmentedProjectile",
+      "UID": "5c3d023b-90fe-495c-b72a-e61bab33d44b",
+      "NodeID": 49
+    },
+    "15": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "e927d856-7bcf-42ce-9173-8f068f429e89",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 15
+    },
+    "45": {
+      "name": "stopEffectStr",
+      "UID": "260cd631-c46b-49ce-913d-001062f19ebe",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Start_02",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.9,
+      "NodeID": 46,
+      "UID": "01e1c242-d7f7-4726-9130-c630625d77fe"
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.36,
+      "NodeID": 44,
+      "UID": "0272e08c-bde1-4a21-a828-6eadc8582a87"
+    },
+    "150": {
+      "key": "4",
+      "duration": 2,
+      "actionIds": [
+        148,
+        167
+      ],
+      "NodeID": 150,
+      "UID": "0ca36927-63d3-4e75-acf0-a5eeebbc6f56",
+      "name": "addTimer"
+    },
+    "78": {
+      "key": "1",
+      "duration": 2,
+      "actionIds": [
+        77
+      ],
+      "NodeID": 78,
+      "UID": "87be5b13-c859-4460-89fc-aa98ff07c970",
+      "name": "addTimer"
+    },
+    "108": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "036e1f74-b8e5-4bca-9e33-fecc4e6f4af4",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Attack_02",
+      "speed": 1,
+      "NodeID": 108
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "109": {
+      "action": {
+        "actionIds": [
+          108
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.76,
+      "NodeID": 109,
+      "UID": "bd0efde6-7e92-4d15-9af0-5d8cb3675449"
+    },
+    "93": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1882a12b-8a21-414b-9ea2-43e703d627b4",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatersword_attack",
+      "NodeID": 93
+    },
+    "110": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4f60fc06-1d92-403d-9e3d-d76d6c5041b2",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_End",
+      "speed": 1,
+      "NodeID": 110
+    },
+    "92": {
+      "UID": "c7785be1-a8e9-4262-8fd5-68cb7099db84",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          91
+        ]
+      },
+      "NodeID": 92
+    },
+    "111": {
+      "action": {
+        "actionIds": [
+          110
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 111,
+      "UID": "94c78260-08ce-4ae5-a516-adfccb9dab95"
+    },
+    "113": {
+      "action": {
+        "actionIds": [
+          112
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.91,
+      "NodeID": 113,
+      "UID": "ac777202-644a-465f-b8f4-41c3e307051a"
+    }
+  },
+  "BPName": "ability_11940511",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    24,
+    35,
+    66,
+    92,
+    40,
+    42,
+    44,
+    46,
+    113,
+    109,
+    18,
+    111,
+    98,
+    100
+  ],
+  "layer": "Base",
+  "length": 4
+}

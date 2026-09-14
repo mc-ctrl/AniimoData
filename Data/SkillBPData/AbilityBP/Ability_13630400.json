@@ -1,0 +1,45 @@
+{
+  "BPName": "ability_13630400",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "abilityParamId": 10500321,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "14": {
+      "timelineId": 13630400001,
+      "name": "setCombatActionTimeline",
+      "UID": "7d8cee22-643a-48db-b69d-5e440653cc6f",
+      "target": "CASTER",
+      "NodeID": 14
+    }
+  },
+  "onAbilityCastIds": [
+    14
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 8,
+  "preloadAnims": [
+    "Skill_HighJump_02",
+    "Skill_HighJump_Perfect",
+    "Skill_HighJump"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_DodgePerfect",
+    "Eff_Parmon_10053_Skill_FlyStrike_Fire_02",
+    "Eff_Parmon_10363_Skill_HighJump_StrikeGround_fire",
+    "Eff_Parmon_10053_Skill_FlyStrike_Fire_04_Heavy",
+    "Eff_Parmon_10363_Skill_HighJump_Jumpback_fire",
+    "Eff_Parmon_10363_Skill_HighJump_Strikeblade_fire",
+    "Eff_Parmon_10363_Trail_Fire"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 8,
+  "desc": ""
+}

@@ -1,0 +1,109 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2105310",
+  "calcInfoByLuaConfig": {
+    "id": 2105310,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "2a552ba2-f5de-4ee0-9f17-f1ec5e29ee4b",
+  "icon": "icon_buff_attack_down",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "c6314555-4faf-426d-b06d-d5cff0599de2",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "cc869eb9-9cb0-46ff-a029-71b8fa964b03",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10053_Fire",
+      "NodeID": 4
+    },
+    "14": {
+      "templateId": 1005301,
+      "name": "checkTargetTemplateId",
+      "UID": "34914493-7f62-4b51-be59-082fd830a2fd",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "d274bfe7-73fb-44cc-a116-4a24b7c395f8",
+      "conditionIds": [
+        9,
+        14,
+        13,
+        12,
+        11
+      ],
+      "name": "conditionOr",
+      "NodeID": 10
+    },
+    "9": {
+      "templateId": 1005300,
+      "name": "checkTargetTemplateId",
+      "UID": "5cf73bd6-b5f3-4bf3-9678-03003677f99c",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "13": {
+      "templateId": 1005302,
+      "name": "checkTargetTemplateId",
+      "UID": "1d989605-f4c1-4862-a105-34bb5eea3161",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "2": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 2,
+      "UID": "d7d00124-6b9f-446e-9120-71ce11a1ce46",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10053_Fire",
+      "name": "playPreset"
+    },
+    "11": {
+      "templateId": 1005304,
+      "name": "checkTargetTemplateId",
+      "UID": "8153ae86-b088-499d-b6a5-044ea7f202a3",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "7e04432e-47d9-4f8c-ba48-5f756509a41e",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "12": {
+      "templateId": 1005303,
+      "name": "checkTargetTemplateId",
+      "UID": "1ef9a613-2079-483c-8acc-84bff4153e01",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

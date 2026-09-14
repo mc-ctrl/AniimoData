@@ -1,0 +1,73 @@
+{
+  "60627082": {
+    "areaType": 999,
+    "chunk": 994296,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "autoSetContent1": true,
+      "compassShowDistance": 0,
+      "initState": 1,
+      "isPorfal": true,
+      "mapAreaId": 0,
+      "markConfigId": 8,
+      "markContent1": 60627082,
+      "markType": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": false,
+      "showPortalOffset": false,
+      "scale2": 1,
+      "scale3": 0,
+      "showUI": true,
+      "positionParam": [
+        0,
+        0
+      ],
+      "timeLimit": false,
+      "SloganPlayOnce": false,
+      "chest": 0,
+      "POIOrNot": false,
+      "yaw": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 0,
+      "arriveType": 1,
+      "activeShapes": {},
+      "revivedPointState": true,
+      "hudTips": false,
+      "arriveParam": {},
+      "nearState": 1,
+      "circleRadius": 0,
+      "reward": 0,
+      "scale1": 1
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 501,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_生态点_出生点标记",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 60627082,
+    "spawnerId": 0,
+    "owner": "路司机",
+    "position": [
+      -1576.51,
+      26.29,
+      1376.57
+    ]
+  }
+}

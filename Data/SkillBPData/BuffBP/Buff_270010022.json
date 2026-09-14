@@ -1,0 +1,43 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010022",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "key": "buff270010022",
+      "name": "setRoguePersistData",
+      "UID": "9854e916-3b3f-4723-b38a-cc968bef838b",
+      "value": {
+        "rValue": {
+          "UID": "e6da1e77-76b1-41b6-8f33-ac9ad46ffb89",
+          "name": "getRoguePersistData",
+          "key": "buff270010022",
+          "NodeID": 7
+        },
+        "name": "add",
+        "UID": "ee379648-eb4e-4158-9687-624daba98c61",
+        "NodeID": 4,
+        "lValue": {
+          "UID": "2c0c6fb6-4684-407b-9c22-f5b3d78f01a8",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 3
+        }
+      },
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "e6da1e77-76b1-41b6-8f33-ac9ad46ffb89",
+      "name": "getRoguePersistData",
+      "key": "buff270010022",
+      "NodeID": 7
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "nodeMap": {
+    "38": {
+      "UID": "f22b5b01-14c6-4b01-921c-fe846d59169c",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "5dca416e-b8d0-48b6-9239-4906fbe29d30",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "NodeID": 39
+    },
+    "41": {
+      "UID": "09dcdb9f-52b7-489f-ade5-9f8561a8e554",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 41
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 42,
+      "UID": "d7aeb2ec-6325-48b8-acb2-0a6d7e608e27"
+    },
+    "25": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4e544764-1d21-4c84-9cb6-ba6d35f363da",
+      "target": "OWNER",
+      "NodeID": 25,
+      "animId": "Skill_WindCannon_End"
+    },
+    "44": {
+      "UID": "ffcf090c-cedd-45ff-8d63-82213cf3c713",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 44
+    },
+    "27": {
+      "UID": "1b45bdb1-1d49-41b6-aef7-f9529fc8bb6e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          36,
+          25,
+          46
+        ]
+      },
+      "NodeID": 27
+    },
+    "46": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b855a096-f6d4-48c7-acee-c07d90e65065",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10185_Skill_WindCannon_Exit",
+      "NodeID": 46
+    },
+    "45": {
+      "UID": "adb090cf-44e6-4422-8e43-f6040add46cf",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "NodeID": 45
+    },
+    "36": {
+      "buffId": 2118504,
+      "name": "removeBuff",
+      "UID": "14bec9b9-09bf-4199-8483-ca22bf921df2",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11850700",
+  "NodeID": 29,
+  "UID": "74cf8e3b-b7df-444d-a070-087231f1ee57",
+  "eventIds": [
+    27,
+    39,
+    42,
+    45
+  ],
+  "layer": "Base",
+  "length": 0.85
+}

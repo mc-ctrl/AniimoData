@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_15630002",
+  "NodeID": 1,
+  "UID": "23900209-ec3c-4ee3-bf40-fa18ebefb947",
+  "abilityParamId": 14200000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15630002001,
+      "name": "setCombatActionTimeline",
+      "UID": "84b5eafb-db82-4a0c-b0a6-37ebd711b1e9",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Parmon_10563_Attack_Projectile3_01",
+    "Eff_Parmon_10563_Attack_Projectile3_End",
+    "Eff_Parmon_10563_Attack_Projectile3"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "searchTargetRangeDown": 0.5
+}

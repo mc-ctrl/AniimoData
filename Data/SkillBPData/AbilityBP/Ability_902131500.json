@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_902131500",
+  "NodeID": 1,
+  "UID": "8e3c3b93-6299-4253-8dc7-01b469c2329a",
+  "abilityParamId": 49214010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902131500001,
+      "name": "setCombatActionTimeline",
+      "UID": "7559cb89-4e15-496c-8e86-1ecff00f4fe7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Slj"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Attack_ComboAttack",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+    "Eff_Monster_90213_Mon_Attack_Water001",
+    "Eff_Monster_90213_Mon_Attack_Water002",
+    "Eff_Monster_90213_Mon_Attack_Water003",
+    "Eff_Monster_90213_Mon_Attack_Water004",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 60,
+  "searchTargetRangeUp": 20,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 20
+}

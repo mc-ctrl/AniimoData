@@ -1,0 +1,83 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2041001",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    26
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "ec59700d-1d15-459d-89b8-63ff928c393f",
+      "name": "buffStartThink",
+      "NodeID": 22
+    },
+    "23": {
+      "calcId": 2041001,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 23,
+      "UID": "beab2c05-be55-46eb-a6c2-e1aa17037c98",
+      "name": "getParamByLuaConfig"
+    },
+    "27": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 20410010,
+      "NodeID": 27,
+      "UID": "6e77cef7-07c5-4765-802f-aa79f2fcc5ab",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "26": {
+      "actionIds": [
+        27
+      ],
+      "name": "actOnTargets",
+      "UID": "b34c3340-691e-4d93-ab88-ed7a54040e99",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": {
+            "NodeID": 24,
+            "name": "constVector3",
+            "UID": "afdb6065-e99b-4f9a-8513-1d445ea06486",
+            "x": {
+              "calcId": 2041001,
+              "calcType": 1,
+              "paramName": "param0",
+              "NodeID": 23,
+              "UID": "beab2c05-be55-46eb-a6c2-e1aa17037c98",
+              "name": "getParamByLuaConfig"
+            },
+            "y": 3,
+            "z": 3
+          },
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 26
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    22
+  ]
+}

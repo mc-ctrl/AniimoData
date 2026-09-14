@@ -1,0 +1,51 @@
+{
+  "stopBurrowActOnTgtNodeId": 36,
+  "stopBurrowTimelineId": 11631301001,
+  "BPName": "ability_11631301",
+  "NodeID": 1,
+  "UID": "0d60a06c-3db4-4b70-8523-eec15727b526",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11631301001,
+      "name": "setCombatActionTimeline",
+      "UID": "a88dfbe4-bb3e-4000-a0d1-d5bc5d13fc87",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "20": {
+      "UID": "4ca98a34-f1df-4d12-b9fc-0a38ecb7eb9e",
+      "name": "stopBurrow",
+      "NodeID": 20
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_SpikeAttack"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10161_Skill_IceWall",
+    "Eff_Hit_Ice_Slash",
+    "Eff_parmon_10163_Boss_Indicator_IceWall",
+    "Eff_Parmon_10133_Debuff_Deceleration",
+    "Eff_Parmon_10133_Skill_Debuff_ColdScreen_Dis"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    11630110
+  ],
+  "onAbilityEndIds": [
+    20
+  ],
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10200191
+}

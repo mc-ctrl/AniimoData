@@ -1,0 +1,48 @@
+{
+  "72039835": {
+    "markType": 0,
+    "respawnHp": 0.2,
+    "yaw": 0,
+    "revivedPointState": true,
+    "randomRange": 0,
+    "markPosition": [
+      0,
+      -0.4,
+      -23.79
+    ]
+  },
+  "72039836": {
+    "markType": 0,
+    "respawnHp": 0.2,
+    "yaw": 0,
+    "revivedPointState": true,
+    "randomRange": 0,
+    "markPosition": [
+      0,
+      -0.4,
+      -29.79
+    ]
+  },
+  "72445904": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 178.76,
+    "markPosition": [
+      831.68,
+      14.22,
+      37.22
+    ]
+  },
+  "72507507": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      0,
+      -0.4,
+      -23.79
+    ]
+  }
+}

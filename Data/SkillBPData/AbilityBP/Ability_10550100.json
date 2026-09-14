@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_10550100",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 11200290,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10550100001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_WolfGhost"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10055_Skill_WolfGhost_Bullet",
+    "Eff_Parmon_10055_Skill_WolfGhost",
+    "Eff_Parmon_10055_Skill_WolfGhost_Explode01"
+  ],
+  "searchRelation": 2,
+  "name": "不灭狼魂技能",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

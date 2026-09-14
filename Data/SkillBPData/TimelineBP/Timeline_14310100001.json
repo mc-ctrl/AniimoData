@@ -1,0 +1,173 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "8d06ad3c-cdf9-4c84-b9ed-7b6ce550727e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          37,
+          20
+        ]
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "b581cd28-03e6-4b71-9438-db9b28affdaf",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          18,
+          32,
+          31,
+          33
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 45,
+      "UID": "dbbf38a9-cf25-4953-bf07-997b5cf0a601",
+      "val": false,
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "name": "setIsInAim",
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "blendTime": 0.5,
+      "cameraPitchOffset": 0
+    },
+    "37": {
+      "name": "stopEffectStr",
+      "UID": "1be36c18-5b2d-4f7e-bac0-2a59fac1094c",
+      "effectId": "Eff_Parmon_10041_Attack01_Prepare",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "35": {
+      "UID": "87cbe983-0aa8-4f25-b397-db81c5765ec7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 35
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 36,
+      "UID": "6346d8ad-4a18-44e9-a0f5-e4ad7de4a04e"
+    },
+    "27": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        2
+      ],
+      "templateId": 14310100001,
+      "name": "createProjectile",
+      "UID": "58699798-fc51-4ea3-99be-9a0b066e1d24",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "NodeID": 27,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "31": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.4,
+        1
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "59dd48e4-1adf-4228-a2f3-436336a4b8ed",
+      "effectId": "Eff_Parmon_10431_Skill_TurretForm_01",
+      "offsetRotation": [
+        0,
+        -100,
+        0
+      ],
+      "NodeID": 31
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 29,
+      "UID": "d082c1ce-7cf1-4558-994d-e9fd65800703"
+    },
+    "18": {
+      "UID": "93511ecd-859c-46fa-acfa-cf499db831a4",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2868e199-dfda-46d7-8900-95c58ae05557",
+      "target": "OWNER",
+      "NodeID": 32,
+      "animId": "Skill_MudBowling_Fire"
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "72199255-c609-49d9-bfed-5ae7a73c7a9d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10431_MudBowling_Fire",
+      "NodeID": 33
+    },
+    "20": {
+      "UID": "3c407bf8-e010-45f1-869a-a0dd4edb7be8",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 20
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "b9d2afe7-a06d-40ab-97f5-3eb957cba96f",
+      "target": "CASTER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_14310100",
+  "NodeID": 6,
+  "UID": "fd6c4ca7-eb37-4280-811b-87e16b5843cd",
+  "eventIds": [
+    4,
+    29,
+    36,
+    22
+  ],
+  "layer": "Base",
+  "length": 2.68
+}

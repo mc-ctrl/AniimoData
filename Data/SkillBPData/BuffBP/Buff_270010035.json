@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010035",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "key": "FireTower",
+      "name": "setRoguePersistData",
+      "UID": "70ed6556-2027-4f3b-83b1-3472eea06f5f",
+      "value": {
+        "UID": "edcd4854-1efe-4288-85b7-6aa467dde156",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 3
+      },
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

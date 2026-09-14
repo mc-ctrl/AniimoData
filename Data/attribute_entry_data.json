@@ -1,0 +1,2096 @@
+{
+  "2000004": {
+    "attrValue": 0.5,
+    "attrType": "shiny_ratio_fix"
+  },
+  "2000005": {
+    "attrValue": 0.1,
+    "attrType": "dmg_grass_add_ratio"
+  },
+  "2000006": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000007": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000008": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000009": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000010": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000011": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000012": {
+    "attrValue": 1,
+    "attrType": "open_go_multi_mode"
+  },
+  "2000013": {
+    "attrValue": 1,
+    "attrType": "open_call_friend"
+  },
+  "2000014": {
+    "attrValue": 0.05,
+    "attrType": "base_catch_ratio"
+  },
+  "2000015": {
+    "attrValue": 0.05,
+    "attrType": "base_catch_ratio"
+  },
+  "2000016": {
+    "attrValue": 3,
+    "attrType": "stamina_max_v"
+  },
+  "2000017": {
+    "attrValue": 3,
+    "attrType": "stamina_max_v"
+  },
+  "2000018": {
+    "attrValue": 4,
+    "attrType": "stamina_max_v"
+  },
+  "2000019": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000020": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000026": {
+    "attrValue": 10,
+    "attrType": "stamina_max_v"
+  },
+  "2000027": {
+    "attrValue": 10,
+    "attrType": "nourish_max_v"
+  },
+  "2000030": {
+    "attrValue": -0.1,
+    "area": [
+      20100,
+      20200,
+      20300,
+      20400,
+      20500,
+      20600,
+      20700,
+      20800,
+      20900,
+      21000,
+      21100,
+      21200,
+      21300,
+      21400,
+      21500
+    ],
+    "attrType": "stamina_cost_ratio_v"
+  },
+  "2000031": {
+    "attrValue": -0.1,
+    "area": [
+      20100,
+      20200,
+      20300,
+      20400,
+      20500,
+      20600,
+      20700,
+      20800,
+      20900,
+      21000,
+      21100,
+      21200,
+      21300,
+      21400,
+      21500
+    ],
+    "attrType": "stamina_cost_ratio_v"
+  },
+  "2000032": {
+    "attrValue": -0.1,
+    "area": [
+      20100,
+      20200,
+      20300,
+      20400,
+      20500,
+      20600,
+      20700,
+      20800,
+      20900,
+      21000,
+      21100,
+      21200,
+      21300,
+      21400,
+      21500
+    ],
+    "attrType": "stamina_cost_ratio_v"
+  },
+  "2000033": {
+    "attrValue": -0.1,
+    "area": [
+      20100,
+      20200,
+      20300,
+      20400,
+      20500,
+      20600,
+      20700,
+      20800,
+      20900,
+      21000,
+      21100,
+      21200,
+      21300,
+      21400,
+      21500
+    ],
+    "attrType": "stamina_cost_ratio_v"
+  },
+  "2000034": {
+    "attrValue": 0.1,
+    "area": [
+      20100,
+      20200,
+      20300,
+      20400,
+      20500,
+      20600,
+      20700,
+      20800,
+      20900,
+      21000,
+      21100,
+      21200,
+      21300,
+      21400,
+      21500
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "3000011": {
+    "attrValue": 0.01,
+    "name": 1672366369,
+    "desc": 1832200473,
+    "attrType": "atk_p"
+  },
+  "3000012": {
+    "attrValue": 0.01,
+    "name": 1769175970,
+    "desc": 1463368504,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000021": {
+    "attrValue": 0.01,
+    "name": 1261038037,
+    "desc": 1493823451,
+    "attrType": "atk_p"
+  },
+  "3000022": {
+    "attrValue": 0.01,
+    "name": 1295132099,
+    "desc": 1498469131,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000031": {
+    "attrValue": 0.01,
+    "name": 1762616938,
+    "desc": 1136027088,
+    "attrType": "atk_p"
+  },
+  "3000032": {
+    "attrValue": 0.01,
+    "name": 2061136896,
+    "desc": 1203689975,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000033": {
+    "attrValue": 0.02,
+    "name": 1481329095,
+    "desc": 2090905788,
+    "attrType": "atk_p"
+  },
+  "3000034": {
+    "attrValue": 0.01,
+    "name": 1462082720,
+    "desc": 1295289506,
+    "attrType": "atk_p"
+  },
+  "3000035": {
+    "attrValue": 0.02,
+    "name": 1156251270,
+    "desc": 1213125535,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000041": {
+    "attrValue": 0.02,
+    "name": 1206628864,
+    "desc": 1341525490,
+    "attrType": "bp_atk_p"
+  },
+  "3000061": {
+    "attrValue": 0.01,
+    "name": 1179023086,
+    "desc": 1405247530,
+    "attrType": "atk_p"
+  },
+  "3000062": {
+    "attrValue": 0.02,
+    "name": 1330645107,
+    "desc": 1591277837,
+    "attrType": "atk_p"
+  },
+  "3000063": {
+    "attrValue": 0.02,
+    "name": 1990796764,
+    "desc": 1770389228,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000071": {
+    "attrValue": 0.01,
+    "name": 1590423870,
+    "desc": 1211987807,
+    "attrType": "bp_atk_p"
+  },
+  "3000072": {
+    "attrValue": 0.01,
+    "name": 1194975766,
+    "desc": 1574858592,
+    "attrType": "def_p"
+  },
+  "3000073": {
+    "attrValue": 0.01,
+    "name": 1149014048,
+    "desc": 1444692506,
+    "attrType": "bp_atk_p"
+  },
+  "3000081": {
+    "attrValue": 0.01,
+    "name": 1625335595,
+    "desc": 2075742613,
+    "attrType": "bp_atk_p"
+  },
+  "3000082": {
+    "attrValue": 0.01,
+    "name": 1666580596,
+    "desc": 1817681135,
+    "attrType": "def_p"
+  },
+  "3000083": {
+    "attrValue": 0.01,
+    "name": 1728037922,
+    "desc": 1660165026,
+    "attrType": "bp_atk_p"
+  },
+  "3000101": {
+    "attrValue": 0.01,
+    "name": 1207356549,
+    "desc": 1608377890,
+    "attrType": "bp_atk_p"
+  },
+  "3000111": {
+    "attrValue": 0.01,
+    "name": 1298413234,
+    "desc": 1173681476,
+    "attrType": "bp_atk_p"
+  },
+  "3000121": {
+    "attrValue": 0.01,
+    "name": 1607697460,
+    "desc": 1614849133,
+    "attrType": "atk_p"
+  },
+  "3000131": {
+    "attrValue": 0.01,
+    "name": 1734519773,
+    "desc": 1985637646,
+    "attrType": "bp_atk_p"
+  },
+  "3000132": {
+    "attrValue": 0.02,
+    "name": 1654022099,
+    "desc": 1443557950,
+    "attrType": "bp_atk_p"
+  },
+  "3000141": {
+    "attrValue": 0.01,
+    "name": 1739811475,
+    "desc": 1803397637,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000142": {
+    "attrValue": 0.01,
+    "name": 1176529563,
+    "desc": 1226450410,
+    "attrType": "atk_p"
+  },
+  "3000151": {
+    "attrValue": 0.01,
+    "name": 1721639766,
+    "desc": 1598088621,
+    "attrType": "atk_p"
+  },
+  "3000152": {
+    "attrValue": 0.01,
+    "name": 1665637666,
+    "desc": 2127805428,
+    "attrType": "hp_max_p"
+  },
+  "3000161": {
+    "attrValue": 0.01,
+    "name": 1957666169,
+    "desc": 1774211602,
+    "attrType": "atk_p"
+  },
+  "3000162": {
+    "attrValue": 0.02,
+    "name": 1385651659,
+    "desc": 2085709227,
+    "attrType": "atk_p"
+  },
+  "3000163": {
+    "attrValue": 0.01,
+    "name": 1635822263,
+    "desc": 1211737877,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000164": {
+    "attrValue": 0.02,
+    "name": 1167082511,
+    "desc": 1950406547,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000171": {
+    "attrValue": 0.01,
+    "name": 1699628677,
+    "desc": 1571228270,
+    "attrType": "bp_atk_p"
+  },
+  "3000172": {
+    "attrValue": 0.01,
+    "name": 1794962824,
+    "desc": 1755185313,
+    "attrType": "def_mag_p"
+  },
+  "3000201": {
+    "attrValue": 0.01,
+    "name": 1450187453,
+    "desc": 1839440539,
+    "attrType": "atk_p"
+  },
+  "3000202": {
+    "attrValue": 0.02,
+    "name": 1747683118,
+    "desc": 1347337820,
+    "attrType": "atk_p"
+  },
+  "3000203": {
+    "attrValue": 0.02,
+    "name": 1203241816,
+    "desc": 1301041398,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000211": {
+    "attrValue": 0.01,
+    "name": 1392472039,
+    "desc": 1847454222,
+    "attrType": "atk_p"
+  },
+  "3000212": {
+    "attrValue": 0.01,
+    "name": 2144741049,
+    "desc": 1585820579,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000221": {
+    "attrValue": 0.01,
+    "name": 1266377222,
+    "desc": 1792039341,
+    "attrType": "atk_p"
+  },
+  "3000222": {
+    "attrValue": 0.01,
+    "name": 2064295097,
+    "desc": 1917779909,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000223": {
+    "attrValue": 0.02,
+    "name": 1266043403,
+    "desc": 1196606106,
+    "attrType": "atk_p"
+  },
+  "3000224": {
+    "attrValue": 0.02,
+    "name": 2146458183,
+    "desc": 1303615862,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000231": {
+    "attrValue": 0.01,
+    "name": 1469449280,
+    "desc": 1710754317,
+    "attrType": "bp_atk_p"
+  },
+  "3000232": {
+    "attrValue": 0.01,
+    "name": 1613501582,
+    "desc": 2121459039,
+    "attrType": "def_p"
+  },
+  "3000241": {
+    "attrValue": 0.01,
+    "name": 1992512794,
+    "desc": 1395850232,
+    "attrType": "bp_atk_p"
+  },
+  "3000251": {
+    "attrValue": 0.01,
+    "name": 1383688692,
+    "desc": 1621737049,
+    "attrType": "bp_atk_p"
+  },
+  "3000261": {
+    "attrValue": 0.01,
+    "name": 1950867202,
+    "desc": 1079663473,
+    "attrType": "bp_atk_p"
+  },
+  "3000271": {
+    "attrValue": 0.02,
+    "name": 1741290860,
+    "desc": 1144999881,
+    "attrType": "atk_p"
+  },
+  "3000281": {
+    "attrValue": 0.01,
+    "name": 1648417894,
+    "desc": 1783934570,
+    "attrType": "hp_max_p"
+  },
+  "3000282": {
+    "attrValue": 0.01,
+    "name": 1134941589,
+    "desc": 2055602789,
+    "attrType": "def_mag_p"
+  },
+  "3000291": {
+    "attrValue": 0.01,
+    "name": 1562491339,
+    "desc": 1888858984,
+    "attrType": "hp_max_p"
+  },
+  "3000292": {
+    "attrValue": 0.01,
+    "name": 1473987351,
+    "desc": 1818183451,
+    "attrType": "def_mag_p"
+  },
+  "3000301": {
+    "attrValue": 0.01,
+    "name": 1667781047,
+    "desc": 1392081925,
+    "attrType": "hp_max_p"
+  },
+  "3000302": {
+    "attrValue": 0.01,
+    "name": 1138269721,
+    "desc": 1840751153,
+    "attrType": "def_mag_p"
+  },
+  "3000303": {
+    "attrValue": 0.02,
+    "name": 1117676338,
+    "desc": 1685820978,
+    "attrType": "hp_max_p"
+  },
+  "3000321": {
+    "attrValue": 0.01,
+    "name": 1717390154,
+    "desc": 1430031975,
+    "attrType": "atk_p"
+  },
+  "3000331": {
+    "attrValue": 0.01,
+    "name": 1980228135,
+    "desc": 1749794307,
+    "attrType": "atk_p"
+  },
+  "3000341": {
+    "attrValue": 0.02,
+    "name": 1766389752,
+    "desc": 1182124747,
+    "attrType": "atk_p"
+  },
+  "3000342": {
+    "attrValue": 0.01,
+    "name": 1188456401,
+    "desc": 2136174285,
+    "attrType": "atk_p"
+  },
+  "3000351": {
+    "attrValue": 0.01,
+    "name": 1541723118,
+    "desc": 1182582877,
+    "attrType": "atk_p"
+  },
+  "3000352": {
+    "attrValue": 0.01,
+    "name": 1126875540,
+    "desc": 1545454053,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000361": {
+    "attrValue": 0.01,
+    "name": 1322038490,
+    "desc": 2078816119,
+    "attrType": "atk_p"
+  },
+  "3000362": {
+    "attrValue": 0.02,
+    "name": 1261001868,
+    "desc": 1559842371,
+    "attrType": "atk_p"
+  },
+  "3000363": {
+    "attrValue": 0.01,
+    "name": 1288220512,
+    "desc": 1122329691,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000364": {
+    "attrValue": 0.02,
+    "name": 1991416878,
+    "desc": 2076012487,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000371": {
+    "attrValue": 0.02,
+    "name": 2081656757,
+    "desc": 1848172878,
+    "attrType": "atk_p"
+  },
+  "3000401": {
+    "attrValue": 0.01,
+    "name": 1948261469,
+    "desc": 1147382164,
+    "attrType": "atk_p"
+  },
+  "3000402": {
+    "attrValue": 0.02,
+    "name": 1704917048,
+    "desc": 2142329638,
+    "attrType": "atk_p"
+  },
+  "3000403": {
+    "attrValue": 0.02,
+    "name": 1284929088,
+    "desc": 2090925939,
+    "attrType": "hp_max_p"
+  },
+  "3000411": {
+    "attrValue": 0.01,
+    "name": 1693233096,
+    "desc": 1289063707,
+    "attrType": "atk_p"
+  },
+  "3000412": {
+    "attrValue": 0.01,
+    "name": 1204877890,
+    "desc": 1083586035,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000413": {
+    "attrValue": 0.01,
+    "name": 1091377597,
+    "desc": 1602610056,
+    "attrType": "atk_p"
+  },
+  "3000414": {
+    "attrValue": 0.02,
+    "name": 1194078125,
+    "desc": 2003897249,
+    "attrType": "atk_p"
+  },
+  "3000415": {
+    "attrValue": 0.01,
+    "name": 2002508682,
+    "desc": 1588240216,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000416": {
+    "attrValue": 0.01,
+    "name": 2014783427,
+    "desc": 2099835645,
+    "attrType": "atk_p"
+  },
+  "3000421": {
+    "attrValue": 0.01,
+    "name": 2053425095,
+    "desc": 2040837427,
+    "attrType": "atk_p"
+  },
+  "3000422": {
+    "attrValue": 0.01,
+    "name": 1670668576,
+    "desc": 1713556423,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000423": {
+    "attrValue": 0.01,
+    "name": 1119459499,
+    "desc": 1465742783,
+    "attrType": "atk_p"
+  },
+  "3000424": {
+    "attrValue": 0.02,
+    "name": 1186665106,
+    "desc": 1634714907,
+    "attrType": "atk_p"
+  },
+  "3000425": {
+    "attrValue": 0.01,
+    "name": 2103743709,
+    "desc": 1918030424,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000426": {
+    "attrValue": 0.01,
+    "name": 1394018404,
+    "desc": 2053723159,
+    "attrType": "atk_p"
+  },
+  "3000441": {
+    "attrValue": 0.01,
+    "name": 1152281044,
+    "desc": 1937332297,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000451": {
+    "attrValue": 0.01,
+    "name": 1700691456,
+    "desc": 2045212638,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000452": {
+    "attrValue": 0.02,
+    "name": 1162493918,
+    "desc": 1593926213,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000453": {
+    "attrValue": 0.02,
+    "name": 1684046636,
+    "desc": 2141560041,
+    "attrType": "hp_max_p"
+  },
+  "3000461": {
+    "attrValue": 0.01,
+    "name": 1765301407,
+    "desc": 1782798413,
+    "attrType": "hp_max_p"
+  },
+  "3000471": {
+    "attrValue": 0.01,
+    "name": 1164938680,
+    "desc": 1902005357,
+    "attrType": "bp_atk_p"
+  },
+  "3000481": {
+    "attrValue": 0.02,
+    "name": 1902610405,
+    "desc": 1189499875,
+    "attrType": "bp_atk_p"
+  },
+  "3000482": {
+    "attrValue": 0.01,
+    "name": 1589709591,
+    "desc": 1722471598,
+    "attrType": "bp_atk_p"
+  },
+  "3000483": {
+    "attrValue": 0.02,
+    "name": 1180401717,
+    "desc": 1845173678,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000491": {
+    "attrValue": 0.01,
+    "name": 1616328405,
+    "desc": 1799753611,
+    "attrType": "hp_max_p"
+  },
+  "3000492": {
+    "attrValue": 0.01,
+    "name": 1611616276,
+    "desc": 1392560313,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000493": {
+    "attrValue": 0.01,
+    "name": 2079429786,
+    "desc": 1998830342,
+    "attrType": "hp_max_p"
+  },
+  "3000501": {
+    "attrValue": 0.01,
+    "name": 2047127025,
+    "desc": 1650473383,
+    "attrType": "hp_max_p"
+  },
+  "3000502": {
+    "attrValue": 0.01,
+    "name": 1531880558,
+    "desc": 1697092111,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000503": {
+    "attrValue": 0.01,
+    "name": 1093638041,
+    "desc": 2098750828,
+    "attrType": "hp_max_p"
+  },
+  "3000521": {
+    "attrValue": 0.01,
+    "name": 1513491416,
+    "desc": 1915449900,
+    "attrType": "atk_p"
+  },
+  "3000522": {
+    "attrValue": 0.01,
+    "name": 1536123994,
+    "desc": 2009987839,
+    "attrType": "def_mag_p"
+  },
+  "3000523": {
+    "attrValue": 0.01,
+    "name": 1113197864,
+    "desc": 1528438880,
+    "attrType": "atk_p"
+  },
+  "3000531": {
+    "attrValue": 0.01,
+    "name": 1251753786,
+    "desc": 1486065577,
+    "attrType": "atk_p"
+  },
+  "3000532": {
+    "attrValue": 0.01,
+    "name": 2031493832,
+    "desc": 1204406966,
+    "attrType": "def_mag_p"
+  },
+  "3000533": {
+    "attrValue": 0.02,
+    "name": 1227751138,
+    "desc": 1578556817,
+    "attrType": "atk_p"
+  },
+  "3000534": {
+    "attrValue": 0.01,
+    "name": 1748831194,
+    "desc": 1311282824,
+    "attrType": "atk_p"
+  },
+  "3000535": {
+    "attrValue": 0.02,
+    "name": 1444852732,
+    "desc": 1714746762,
+    "attrType": "def_mag_p"
+  },
+  "3000571": {
+    "attrValue": 0.02,
+    "name": 1602887074,
+    "desc": 1198133365,
+    "attrType": "bp_atk_p"
+  },
+  "3000572": {
+    "attrValue": 0.02,
+    "name": 1225650686,
+    "desc": 1185444703,
+    "attrType": "hp_max_p"
+  },
+  "3000611": {
+    "attrValue": 0.02,
+    "name": 1371160057,
+    "desc": 1975235534,
+    "attrType": "atk_p"
+  },
+  "3000631": {
+    "attrValue": 0.01,
+    "name": 2134983660,
+    "desc": 1822079976,
+    "attrType": "atk_p"
+  },
+  "3000641": {
+    "attrValue": 0.01,
+    "name": 1671458041,
+    "desc": 1633265462,
+    "attrType": "atk_p"
+  },
+  "3000642": {
+    "attrValue": 0.02,
+    "name": 1223798478,
+    "desc": 1808919212,
+    "attrType": "atk_p"
+  },
+  "3000643": {
+    "attrValue": 0.01,
+    "name": 1098685651,
+    "desc": 1166771365,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000644": {
+    "attrValue": 0.02,
+    "name": 1979077302,
+    "desc": 1168736590,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000651": {
+    "attrValue": 0.02,
+    "name": 1951656028,
+    "desc": 2121013997,
+    "attrType": "atk_p"
+  },
+  "3000661": {
+    "attrValue": 0.01,
+    "name": 2074807860,
+    "desc": 1105014607,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000662": {
+    "attrValue": 0.01,
+    "name": 1744233768,
+    "desc": 1192572539,
+    "attrType": "atk_p"
+  },
+  "3000663": {
+    "attrValue": 0.01,
+    "name": 1940942708,
+    "desc": 1387378894,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000671": {
+    "attrValue": 0.01,
+    "name": 1129174077,
+    "desc": 1823354361,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000672": {
+    "attrValue": 0.01,
+    "name": 1998822025,
+    "desc": 1569829020,
+    "attrType": "atk_p"
+  },
+  "3000673": {
+    "attrValue": 0.01,
+    "name": 1330519271,
+    "desc": 1314813934,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000701": {
+    "attrValue": 0.01,
+    "name": 1454707706,
+    "desc": 1391729696,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000711": {
+    "attrValue": 0.01,
+    "name": 1974511644,
+    "desc": 1202174825,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000781": {
+    "attrValue": 0.01,
+    "name": 2070262471,
+    "desc": 1402081783,
+    "attrType": "atk_p"
+  },
+  "3000791": {
+    "attrValue": 0.01,
+    "name": 2040474812,
+    "desc": 1369063190,
+    "attrType": "atk_p"
+  },
+  "3000792": {
+    "attrValue": 0.02,
+    "name": 1978667168,
+    "desc": 1453761665,
+    "attrType": "atk_p"
+  },
+  "3000801": {
+    "attrValue": 0.01,
+    "name": 1421105515,
+    "desc": 1970368164,
+    "attrType": "atk_p"
+  },
+  "3000831": {
+    "attrValue": 0.01,
+    "name": 1481230206,
+    "desc": 1618762673,
+    "attrType": "bp_atk_p"
+  },
+  "3000832": {
+    "attrValue": 0.01,
+    "name": 1369547762,
+    "desc": 1217562196,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000833": {
+    "attrValue": 0.01,
+    "name": 1318581340,
+    "desc": 1370433345,
+    "attrType": "bp_atk_p"
+  },
+  "3000851": {
+    "attrValue": 0.01,
+    "name": 1153783517,
+    "desc": 1934951173,
+    "attrType": "bp_atk_p"
+  },
+  "3000852": {
+    "attrValue": 0.01,
+    "name": 1943176788,
+    "desc": 1486945279,
+    "attrType": "ep_regen_force_p"
+  },
+  "3000853": {
+    "attrValue": 0.01,
+    "name": 1501613667,
+    "desc": 1794788243,
+    "attrType": "bp_atk_p"
+  },
+  "3000891": {
+    "attrValue": 0.02,
+    "name": 1642745672,
+    "desc": 1437494088,
+    "attrType": "atk_p"
+  },
+  "3000931": {
+    "attrValue": 0.02,
+    "name": 1469905952,
+    "desc": 1154696215,
+    "attrType": "hp_max_p"
+  },
+  "3000961": {
+    "attrValue": 0.02,
+    "name": 1140443327,
+    "desc": 1628066734,
+    "attrType": "atk_p"
+  },
+  "4201001": {
+    "attrValue": 0.5,
+    "area": [
+      20100,
+      20200,
+      20300,
+      20400,
+      20500,
+      20600,
+      20700,
+      20800,
+      20900,
+      21000,
+      21100,
+      21200,
+      21300,
+      21400,
+      21500,
+      21600
+    ],
+    "attrType": "shiny_ratio_fix"
+  },
+  "4201002": {
+    "attrValue": 0.5,
+    "area": [
+      20100,
+      20200,
+      20300,
+      20400,
+      20500,
+      20600,
+      20700,
+      20800,
+      20900,
+      21000,
+      21100,
+      21200,
+      21300,
+      21400,
+      21500,
+      21600
+    ],
+    "attrType": "dark_ratio_fix"
+  },
+  "4202001": {
+    "attrValue": 0.1,
+    "area": [
+      20200
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4202004": {
+    "area": [
+      20200
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4202006": {
+    "attrValue": 0.1,
+    "area": [
+      20200
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4202007": {
+    "area": [
+      20200
+    ],
+    "attrComplexValue": [
+      1026,
+      1004
+    ],
+    "attrType": "close_pet"
+  },
+  "4203001": {
+    "attrValue": 0.1,
+    "area": [
+      20300
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4203004": {
+    "area": [
+      20300
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4203006": {
+    "attrValue": 0.1,
+    "area": [
+      20300
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4203007": {
+    "area": [
+      20300
+    ],
+    "attrComplexValue": [
+      1020,
+      1033
+    ],
+    "attrType": "close_pet"
+  },
+  "4204001": {
+    "attrValue": 0.1,
+    "area": [
+      20400
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4204004": {
+    "area": [
+      20400
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4204006": {
+    "attrValue": 0.1,
+    "area": [
+      20400
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4204007": {
+    "area": [
+      20400
+    ],
+    "attrComplexValue": [
+      1018,
+      1016
+    ],
+    "attrType": "close_pet"
+  },
+  "4205001": {
+    "attrValue": 0.1,
+    "area": [
+      20500
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4205004": {
+    "area": [
+      20500
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4205006": {
+    "attrValue": 0.1,
+    "area": [
+      20500
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4205007": {
+    "area": [
+      20500
+    ],
+    "attrComplexValue": [
+      1022,
+      1023
+    ],
+    "attrType": "close_pet"
+  },
+  "4206001": {
+    "attrValue": 0.1,
+    "area": [
+      20600
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4206004": {
+    "area": [
+      20600
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4206006": {
+    "attrValue": 0.1,
+    "area": [
+      20600
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4206007": {
+    "area": [
+      20600
+    ],
+    "attrComplexValue": [
+      1035,
+      1021
+    ],
+    "attrType": "close_pet"
+  },
+  "4207001": {
+    "attrValue": 0.1,
+    "area": [
+      20700
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4207004": {
+    "area": [
+      20700
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4207006": {
+    "attrValue": 0.1,
+    "area": [
+      20700
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4207007": {
+    "area": [
+      20700
+    ],
+    "attrComplexValue": [
+      1048,
+      1014
+    ],
+    "attrType": "close_pet"
+  },
+  "4208001": {
+    "attrValue": 0.1,
+    "area": [
+      20800
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4208004": {
+    "area": [
+      20800
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4208006": {
+    "attrValue": 0.1,
+    "area": [
+      20800
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4208007": {
+    "area": [
+      20800
+    ],
+    "attrComplexValue": [
+      1002,
+      2002
+    ],
+    "attrType": "close_pet"
+  },
+  "4209001": {
+    "attrValue": 0.1,
+    "area": [
+      20900
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4209004": {
+    "area": [
+      20900
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4209006": {
+    "attrValue": 0.1,
+    "area": [
+      20900
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4209007": {
+    "area": [
+      20900
+    ],
+    "attrComplexValue": [
+      1045,
+      1003
+    ],
+    "attrType": "close_pet"
+  },
+  "4210001": {
+    "attrValue": 0.1,
+    "area": [
+      21000
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4210004": {
+    "area": [
+      21000
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4210006": {
+    "attrValue": 0.1,
+    "area": [
+      21000
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4210007": {
+    "area": [
+      21000
+    ],
+    "attrComplexValue": [
+      1017,
+      1019
+    ],
+    "attrType": "close_pet"
+  },
+  "4211001": {
+    "attrValue": 0.1,
+    "area": [
+      21100
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4211004": {
+    "area": [
+      21100
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4211006": {
+    "attrValue": 0.1,
+    "area": [
+      21100
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4211007": {
+    "area": [
+      21100
+    ],
+    "attrComplexValue": [
+      1005,
+      1013
+    ],
+    "attrType": "close_pet"
+  },
+  "4212001": {
+    "attrValue": 0.1,
+    "area": [
+      21200
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4212004": {
+    "area": [
+      21200
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4212006": {
+    "attrValue": 0.1,
+    "area": [
+      21200
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4212007": {
+    "area": [
+      21200
+    ],
+    "attrComplexValue": [
+      1001,
+      1044
+    ],
+    "attrType": "close_pet"
+  },
+  "4213001": {
+    "attrValue": 0.1,
+    "area": [
+      21300
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4213004": {
+    "area": [
+      21300
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4213006": {
+    "attrValue": 0.1,
+    "area": [
+      21300
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4213007": {
+    "area": [
+      21300
+    ],
+    "attrComplexValue": [
+      1029,
+      1026
+    ],
+    "attrType": "close_pet"
+  },
+  "4214001": {
+    "attrValue": 0.1,
+    "area": [
+      21400
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4214004": {
+    "area": [
+      21400
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4214006": {
+    "attrValue": 0.1,
+    "area": [
+      21400
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4214007": {
+    "area": [
+      21400
+    ],
+    "attrComplexValue": [
+      1043,
+      1028
+    ],
+    "attrType": "close_pet"
+  },
+  "4215001": {
+    "attrValue": 0.1,
+    "area": [
+      21500
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "4215004": {
+    "area": [
+      21500
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4215006": {
+    "attrValue": 0.1,
+    "area": [
+      21500
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4215007": {
+    "area": [
+      21500
+    ],
+    "attrComplexValue": [
+      1050,
+      1032
+    ],
+    "attrType": "close_pet"
+  },
+  "1200014": {
+    "attrValue": 0.1,
+    "target": [
+      2
+    ],
+    "attrType": "element_restraint_add_ratio"
+  },
+  "1200021": {
+    "attrValue": 0.02,
+    "target": [
+      2
+    ],
+    "attrType": "element_resist_add_ratio"
+  },
+  "1200022": {
+    "attrValue": 0.04,
+    "target": [
+      2
+    ],
+    "attrType": "element_resist_add_ratio"
+  },
+  "1200023": {
+    "attrValue": 0.07,
+    "target": [
+      2
+    ],
+    "attrType": "element_resist_add_ratio"
+  },
+  "1200024": {
+    "attrValue": 0.1,
+    "target": [
+      2
+    ],
+    "attrType": "element_resist_add_ratio"
+  },
+  "1200031": {
+    "attrValue": 0.05,
+    "target": [
+      2
+    ],
+    "attrType": "dmg_elite_add_ratio"
+  },
+  "1200041": {
+    "attrValue": -0.1,
+    "attrType": "stamina_cost_ratio_dash_v"
+  },
+  "1200051": {
+    "attrValue": 0.1,
+    "target": [
+      2
+    ],
+    "attrType": "sp_regen_p"
+  },
+  "1200061": {
+    "attrValue": 0.1,
+    "target": [
+      2
+    ],
+    "attrType": "dmg_break_add_ratio"
+  },
+  "1200071": {
+    "attrValue": 0.07,
+    "target": [
+      4
+    ],
+    "attrType": "taken_dmg_inc_rate_v"
+  },
+  "1200072": {
+    "attrValue": 0.1,
+    "target": [
+      4
+    ],
+    "attrType": "taken_dmg_inc_rate_v"
+  },
+  "1200073": {
+    "attrValue": 0.15,
+    "target": [
+      4
+    ],
+    "attrType": "taken_dmg_inc_rate_v"
+  },
+  "1200074": {
+    "attrValue": 0.2,
+    "target": [
+      4
+    ],
+    "attrType": "taken_dmg_inc_rate_v"
+  },
+  "1200075": {
+    "attrValue": 0.25,
+    "target": [
+      4
+    ],
+    "attrType": "taken_dmg_inc_rate_v"
+  },
+  "1300011": {
+    "attrValue": 0.1,
+    "attrType": "pet_exp_add_ratio"
+  },
+  "1300012": {
+    "attrValue": 0.15,
+    "attrType": "pet_exp_add_ratio"
+  },
+  "1300013": {
+    "attrValue": 0.2,
+    "attrType": "pet_exp_add_ratio"
+  },
+  "1300014": {
+    "attrValue": 0.3,
+    "attrType": "pet_exp_add_ratio"
+  },
+  "1300021": {},
+  "1300031": {},
+  "1300041": {
+    "attrValue": 5,
+    "attrType": "max_skill_catch_level"
+  },
+  "1300042": {
+    "attrValue": 10,
+    "attrType": "max_skill_catch_level"
+  },
+  "1300051": {
+    "attrValue": 0.3,
+    "attrType": "throw_ball_collision_radius_ratio_v"
+  },
+  "1300061": {
+    "attrValue": 0.1,
+    "attrType": "catch_report_money_add_ratio"
+  },
+  "1300062": {
+    "attrValue": 0.15,
+    "attrType": "catch_report_money_add_ratio"
+  },
+  "1300063": {
+    "attrValue": 0.2,
+    "attrType": "catch_report_money_add_ratio"
+  },
+  "1300064": {
+    "attrValue": 0.3,
+    "attrType": "catch_report_money_add_ratio"
+  },
+  "1300071": {},
+  "1300081": {
+    "attrValue": 0.1,
+    "attrType": "breeding_double_eggs_ratio"
+  },
+  "1400011": {},
+  "1400021": {},
+  "1400031": {},
+  "1400041": {},
+  "2000001": {},
+  "2000002": {
+    "attrValue": 0.1,
+    "attrType": "base_catch_ratio"
+  },
+  "2000003": {
+    "attrValue": 40,
+    "attrType": "stamina_max_v"
+  },
+  "10240101": {
+    "attrValue": 5,
+    "desc": 1559302520,
+    "attrType": "max_skill_catch_level"
+  },
+  "10230101": {
+    "attrValue": 5,
+    "desc": 1766360142,
+    "attrType": "max_skill_catch_level"
+  },
+  "10220101": {
+    "attrValue": 5,
+    "desc": 1128366937,
+    "attrType": "max_skill_catch_level"
+  },
+  "10210101": {
+    "attrValue": 5,
+    "desc": 1409196635,
+    "attrType": "max_skill_catch_level"
+  },
+  "10200101": {
+    "attrValue": 5,
+    "desc": 1431595520,
+    "attrType": "max_skill_catch_level"
+  },
+  "10190101": {
+    "attrValue": 5,
+    "desc": 1452665548,
+    "attrType": "max_skill_catch_level"
+  },
+  "10180101": {
+    "attrValue": 1,
+    "attrType": "use_quick_pet_switch"
+  },
+  "10170101": {},
+  "10160109": {
+    "attrValue": 5,
+    "attrType": "max_skill_master_level"
+  },
+  "10160108": {
+    "attrValue": 5,
+    "attrType": "max_skill_master_level"
+  },
+  "10160107": {
+    "attrValue": 5,
+    "attrType": "max_skill_master_level"
+  },
+  "10160106": {
+    "attrValue": 5,
+    "attrType": "max_skill_master_level"
+  },
+  "10160105": {
+    "attrValue": 5,
+    "attrType": "max_skill_master_level"
+  },
+  "10160104": {
+    "attrValue": 5,
+    "attrType": "max_skill_master_level"
+  },
+  "10160103": {
+    "attrValue": 0.05,
+    "target": [
+      1,
+      2
+    ],
+    "attrType": "dmg_break_add_ratio"
+  },
+  "10160102": {
+    "attrValue": 0.05,
+    "target": [
+      1,
+      2
+    ],
+    "attrType": "dmg_break_add_ratio"
+  },
+  "10160101": {
+    "attrValue": 0.05,
+    "target": [
+      1,
+      2
+    ],
+    "attrType": "dmg_break_add_ratio"
+  },
+  "10150103": {
+    "attrValue": 0.1,
+    "attrType": "bp_add_ratio"
+  },
+  "10150102": {
+    "attrValue": 0.1,
+    "attrType": "bp_add_ratio"
+  },
+  "10150101": {
+    "attrValue": 0.1,
+    "attrType": "bp_add_ratio"
+  },
+  "10140103": {
+    "attrValue": 0.1,
+    "attrType": "throw_ball_collision_radius_ratio_v"
+  },
+  "10140102": {
+    "attrValue": 0.1,
+    "attrType": "throw_ball_collision_radius_ratio_v"
+  },
+  "10140101": {
+    "attrValue": 0.1,
+    "attrType": "throw_ball_collision_radius_ratio_v"
+  },
+  "10100101": {
+    "attrValue": 1,
+    "attrType": "speed_ratio_walk_v"
+  },
+  "10090101": {
+    "attrValue": 0.2,
+    "attrType": "stamina_regen_p"
+  },
+  "10080102": {
+    "attrValue": -0.05,
+    "attrType": "vision_value_change_ratio_v"
+  },
+  "10080101": {
+    "attrValue": -0.05,
+    "attrType": "vision_value_change_ratio_v"
+  },
+  "10070101": {
+    "attrValue": 0.05,
+    "attrType": "speed_ratio_standholdball_v"
+  },
+  "10060101": {
+    "attrValue": 0.02,
+    "attrType": "speed_ratio_sprint_v"
+  },
+  "10050101": {
+    "attrValue": 0.9,
+    "attrType": "speed_ratio_crouch_v"
+  },
+  "10040101": {
+    "attrValue": 1,
+    "attrType": "hp_max_v"
+  },
+  "10030101": {
+    "attrValue": 1,
+    "attrType": "shop_purchase_level"
+  },
+  "10020101": {
+    "attrValue": 1,
+    "attrType": "shop_purchase_level"
+  },
+  "10010101": {
+    "attrValue": 1,
+    "attrType": "shop_purchase_level"
+  },
+  "9010108": {
+    "attrValue": 5,
+    "desc": 1237868005,
+    "attrType": "max_capture_level"
+  },
+  "9010107": {
+    "attrValue": 5,
+    "desc": 1807428346,
+    "attrType": "max_capture_level"
+  },
+  "9010106": {
+    "attrValue": 5,
+    "desc": 1477542224,
+    "attrType": "max_capture_level"
+  },
+  "9010105": {
+    "attrValue": 5,
+    "desc": 2005599614,
+    "attrType": "max_capture_level"
+  },
+  "9010104": {
+    "attrValue": 5,
+    "desc": 1575282726,
+    "attrType": "max_capture_level"
+  },
+  "9010103": {
+    "attrValue": 10,
+    "desc": 1091619820,
+    "attrType": "max_capture_level"
+  },
+  "9010102": {
+    "attrValue": 10,
+    "desc": 1740325193,
+    "attrType": "max_capture_level"
+  },
+  "9010101": {
+    "attrValue": 15,
+    "desc": 1354160245,
+    "attrType": "max_capture_level"
+  },
+  "8010108": {
+    "attrValue": 5,
+    "desc": 1589784435,
+    "attrType": "max_control_level"
+  },
+  "8010107": {
+    "attrValue": 5,
+    "desc": 1945176098,
+    "attrType": "max_control_level"
+  },
+  "8010106": {
+    "attrValue": 5,
+    "desc": 1555850167,
+    "attrType": "max_control_level"
+  },
+  "8010105": {
+    "attrValue": 5,
+    "desc": 1199771746,
+    "attrType": "max_control_level"
+  },
+  "8010104": {
+    "attrValue": 5,
+    "desc": 1984238213,
+    "attrType": "max_control_level"
+  },
+  "8010103": {
+    "attrValue": 10,
+    "desc": 1812062576,
+    "attrType": "max_control_level"
+  },
+  "8010102": {
+    "attrValue": 10,
+    "desc": 2121596088,
+    "attrType": "max_control_level"
+  },
+  "8010101": {
+    "attrValue": 15,
+    "desc": 1464961890,
+    "attrType": "max_control_level"
+  },
+  "7000209": {
+    "attrValue": 21,
+    "country": 1,
+    "desc": 1911179645,
+    "attrType": "cloud_game_duration"
+  },
+  "7000208": {
+    "attrValue": 42,
+    "country": 1,
+    "desc": 1536703080,
+    "attrType": "cloud_game_duration"
+  },
+  "7000207": {
+    "attrValue": 21,
+    "country": 1,
+    "desc": 1849824392,
+    "attrType": "cloud_game_duration"
+  },
+  "7000206": {
+    "attrValue": 7,
+    "country": 1,
+    "desc": 1408622772,
+    "attrType": "cloud_game_duration"
+  },
+  "7000203": {
+    "attrValue": 10,
+    "desc": 1519152348,
+    "attrType": "pet_box_extra_count"
+  },
+  "7000202": {
+    "attrValue": 10,
+    "desc": 1777413955,
+    "attrType": "BP_level_up"
+  },
+  "7000201": {
+    "attrValue": 5,
+    "desc": 1668341728,
+    "attrType": "pet_box_extra_count"
+  },
+  "7000102": {
+    "attrValue": 120,
+    "desc": 1112619681,
+    "attrType": "reduce_hatch_time"
+  },
+  "7000101": {
+    "attrValue": 200,
+    "desc": 1628156935,
+    "attrType": "energy_max_v"
+  },
+  "6030103": {
+    "attrValue": 3,
+    "desc": 1814363710,
+    "attrType": "catchball_recycle_level"
+  },
+  "6030102": {
+    "attrValue": 2,
+    "desc": 1656838616,
+    "attrType": "catchball_recycle_level"
+  },
+  "6030101": {
+    "attrValue": 1,
+    "desc": 1463683578,
+    "attrType": "catchball_recycle_level"
+  },
+  "5080102": {
+    "attrValue": -0.1,
+    "attrType": "stamina_cost_ratio_dash_v"
+  },
+  "5080101": {
+    "attrValue": -0.1,
+    "attrType": "stamina_cost_ratio_dash_v"
+  },
+  "5050102": {
+    "attrValue": 0.1,
+    "attrType": "throw_init_ball_speed_ratio_v"
+  },
+  "5050101": {
+    "attrValue": 0.05,
+    "attrType": "throw_init_ball_speed_ratio_v"
+  },
+  "5010107": {
+    "attrValue": 20,
+    "attrType": "stamina_max_v"
+  },
+  "5010106": {
+    "attrValue": 20,
+    "attrType": "stamina_max_v"
+  },
+  "5010105": {
+    "attrValue": 20,
+    "attrType": "stamina_max_v"
+  },
+  "5010104": {
+    "attrValue": 20,
+    "attrType": "stamina_max_v"
+  },
+  "5010103": {
+    "attrValue": 20,
+    "attrType": "stamina_max_v"
+  },
+  "5010102": {
+    "attrValue": 20,
+    "attrType": "stamina_max_v"
+  },
+  "5010101": {
+    "attrValue": 20,
+    "attrType": "stamina_max_v"
+  },
+  "4216007": {
+    "area": [
+      21600
+    ],
+    "attrComplexValue": [
+      1058,
+      1062
+    ],
+    "attrType": "close_pet"
+  },
+  "4216006": {
+    "attrValue": 0.1,
+    "area": [
+      21600
+    ],
+    "attrType": "rainbow_energy_ratio_fix"
+  },
+  "4216004": {
+    "area": [
+      21600
+    ],
+    "attrComplexValue": [
+      1,
+      1.2,
+      1.1,
+      1.05
+    ],
+    "attrType": "quality_ratio_fix"
+  },
+  "4216001": {
+    "attrValue": 0.1,
+    "area": [
+      21600
+    ],
+    "attrType": "base_catch_ratio"
+  },
+  "1200013": {
+    "attrValue": 0.07,
+    "target": [
+      2
+    ],
+    "attrType": "element_restraint_add_ratio"
+  },
+  "1200012": {
+    "attrValue": 0.04,
+    "target": [
+      2
+    ],
+    "attrType": "element_restraint_add_ratio"
+  },
+  "1200011": {
+    "attrValue": 0.02,
+    "target": [
+      2
+    ],
+    "attrType": "element_restraint_add_ratio"
+  }
+}

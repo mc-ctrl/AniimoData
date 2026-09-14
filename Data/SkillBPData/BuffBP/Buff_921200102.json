@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "atk_p": 0.2,
+    "atk_mag_p": 0.2
+  },
+  "name": "鼓舞曲 加攻lv2",
+  "UID": "cc5c5ec1-bc59-4a34-8f87-659741e05de1",
+  "desc": "鼓舞曲 加攻lv2",
+  "tips": "254799477",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_921200102",
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10053_Skill_ChargeFull_Buff_01"
+    }
+  ],
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "0ca2b3a8-066d-4ea5-a3ca-90cca61b5d9d",
+      "effectId": "Eff_Parmon_10053_Skill_ChargeFull_Buff_01",
+      "target": "OWNER",
+      "NodeID": 3
+    }
+  },
+  "onBuffDestroyIds": [
+    3
+  ],
+  "NodeID": 1
+}

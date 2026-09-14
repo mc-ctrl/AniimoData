@@ -1,0 +1,115 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104303",
+  "NodeID": 1,
+  "UID": "6d063fdb-666a-4d59-90a0-45ec3100d559",
+  "onBuffRefreshIds": [
+    18,
+    14
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "42a01e75-8377-4e74-9531-c559ffcfdcc6",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_Loop",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "95a08c1c-ac21-494a-868d-7ffdd184d118",
+      "name": "buffStartThink",
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f24fae2f-37cd-4269-b060-16e1ebc75356",
+      "effectId": "Eff_Parmon_10043_Heal_Arrow",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "7": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 2104303,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 16,
+            "UID": "411bf7b9-9267-49e0-92a2-6390658f2f29",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "80ad13ec-2db5-42f3-9bdd-66f1a3590665",
+          "NodeID": 5,
+          "lValue": {
+            "key": "hp10043",
+            "name": "getCacheVal",
+            "UID": "0552051b-959c-4ef6-92f3-d9dca79f870d",
+            "target": "SRC",
+            "NodeID": 4
+          }
+        },
+        "hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "7bcfea1f-a110-4fe6-ac16-30cf62083511",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "calcId": 2104303,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 16,
+      "UID": "411bf7b9-9267-49e0-92a2-6390658f2f29",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "33cd3802-7fa1-4edf-8c69-e6dafdaf1695",
+      "effectId": "Eff_Parmon_10043_Heal_Arrow",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "18": {
+      "UID": "f6d98ae4-13f6-4284-bcd0-4d0adab8ecd5",
+      "name": "buffStopThink",
+      "NodeID": 18
+    },
+    "2": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "ad0b04ee-7341-4c97-b252-7495d875cd93",
+      "name": "buffStartThink",
+      "NodeID": 2
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "66af16b9-2953-4803-969a-b8a0a11f8379",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_Loop",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "onBuffThinkIds": [
+    7
+  ],
+  "onBuffDestroyIds": [
+    8,
+    13
+  ],
+  "onBuffStartIds": [
+    2,
+    10,
+    12
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020011",
+  "calcInfoByLuaConfig": {
+    "common_skill_cd_dec_rate_v": "param1",
+    "type": 1,
+    "id": 4020011,
+    "ep_cost_reduce_ratio": "param0"
+  },
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

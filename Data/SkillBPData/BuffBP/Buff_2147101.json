@@ -1,0 +1,335 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2147101",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "38": {
+      "UID": "b08c7485-8f4a-4c36-a7b8-c237dfcb3e32",
+      "oldPetActionIds": [
+        36,
+        39
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 38
+    },
+    "39": {
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "notShowCountDown": false,
+      "NodeID": 39,
+      "UID": "5c1f9e99-e2b6-415c-b4ea-d00f981077f4",
+      "to": 14750100,
+      "isAutoRecoverByDuration": true,
+      "from": 14750100
+    },
+    "40": {
+      "buffId": 2147101,
+      "name": "removeBuff",
+      "UID": "8e0b7447-17c2-4200-a512-a7f3026d77b2",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "42": {
+      "actionIds": [
+        46,
+        40,
+        44
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "aea7c194-37d8-4f5e-b206-b7bea4635c07",
+      "name": "doActionsByConditions",
+      "NodeID": 42
+    },
+    "43": {
+      "actionIds": [
+        42
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "f4df23fe-db92-496f-a43a-2146195a145b",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "44": {
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "notShowCountDown": false,
+      "NodeID": 44,
+      "UID": "b65dcab1-92d9-47a8-bdec-48506e85242e",
+      "to": 14750100,
+      "isAutoRecoverByDuration": true,
+      "from": 14750100
+    },
+    "2": {
+      "abilityTarget": "TARGET",
+      "forceCast": true,
+      "NodeID": 2,
+      "UID": "a8c08493-0903-405a-a311-f1bfa170e9ac",
+      "name": "castAbility",
+      "abilityId": 14750102
+    },
+    "3": {
+      "key": "147401001qteskill",
+      "duration": 0.02,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "14bfc8f1-8989-4924-9af5-6ac9deb278e8",
+      "name": "addEntityTimer"
+    },
+    "6": {
+      "eventName": "qtePartPerfect",
+      "NodeID": 6,
+      "UID": "85b12f36-6fc8-47fe-8cc4-fda8cb56d92e",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        8,
+        3,
+        14,
+        26,
+        15,
+        29,
+        16
+      ]
+    },
+    "46": {
+      "name": "stopQteTimeline",
+      "UID": "a67d25a6-5a14-4af6-9b61-3cccbadd5ef3",
+      "target": "OWNER",
+      "NodeID": 46,
+      "qteGroupId": "QTE_10471_Combo"
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 3,
+      "buffId": 2147106,
+      "NodeID": 8,
+      "UID": "3283130f-e738-49a9-bc23-3fa7ed7e4bd3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "31": {
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "notShowCountDown": false,
+      "NodeID": 31,
+      "UID": "2eda9b5b-ec63-47da-811d-f72e208c68c3",
+      "to": 14750100,
+      "isAutoRecoverByDuration": true,
+      "from": 14750100
+    },
+    "9": {
+      "abilityTarget": "TARGET",
+      "forceCast": true,
+      "NodeID": 9,
+      "UID": "1fc72068-0d14-486c-b75e-d1d98f936ffa",
+      "name": "castAbility",
+      "abilityId": 14750102
+    },
+    "45": {
+      "UID": "e32c5618-fbb4-4533-adb7-19fa577aa31e",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 45
+    },
+    "35": {
+      "rValue": 6,
+      "name": "equal",
+      "UID": "4dd72605-4150-404c-9b23-42358bd5eb9b",
+      "NodeID": 35,
+      "lValue": {
+        "templateId": 91471020,
+        "name": "getBuffLayer",
+        "UID": "3e80a757-93e0-4022-841e-0c090065a735",
+        "target": "OWNER",
+        "NodeID": 34
+      }
+    },
+    "18": {
+      "buffId": 2147101,
+      "name": "removeBuff",
+      "UID": "fc8ef85c-4a0b-4bb6-b53d-2ad50bcfd669",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "20": {
+      "key": "147401001qte1",
+      "duration": 0.15,
+      "actionIds": [
+        18,
+        30
+      ],
+      "NodeID": 20,
+      "UID": "40ab064e-b29c-4b75-9879-952a0c6e82ac",
+      "name": "addTimer"
+    },
+    "21": {
+      "eventName": "qtePartMiss",
+      "NodeID": 21,
+      "UID": "08d22358-c0b8-4aea-aeb6-065c525e9475",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        20
+      ]
+    },
+    "22": {
+      "buffId": 2147101,
+      "name": "removeBuff",
+      "UID": "ab511e7c-5c7a-4a62-b04a-36404bc2a79d",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "13": {
+      "eventName": "qtePartGood",
+      "NodeID": 13,
+      "UID": "4041d7e1-ea12-47f4-9f0f-0c6e30619add",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        10,
+        27
+      ]
+    },
+    "24": {
+      "key": "147401001qte2",
+      "duration": 0.15,
+      "actionIds": [
+        22,
+        31
+      ],
+      "NodeID": 24,
+      "UID": "7dd61149-9780-4c27-96dd-6f3a670ece33",
+      "name": "addTimer"
+    },
+    "14": {
+      "duration": 0.8,
+      "disableWhenFinished": true,
+      "NodeID": 14,
+      "UID": "7ad2768e-db36-4f57-8331-9114aef1d835",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10471_Skill_RhythmCombo_01",
+      "name": "playPreset"
+    },
+    "10": {
+      "key": "147401001qteskill",
+      "duration": 0.02,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "5897129c-75ed-4f6e-a0a9-43751f5279de",
+      "name": "addEntityTimer"
+    },
+    "15": {
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7e4f507e-8279-42fd-a8a0-d405280b5a1c",
+      "effectId": "Eff_Parmon_10475_Skill_RhythmCombo_01_02",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "eventName": "qtePartFail",
+      "NodeID": 25,
+      "UID": "83d95c8b-0640-4744-9f2d-a37abd4e594a",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        24
+      ]
+    },
+    "26": {
+      "buffId": 2147101,
+      "name": "removeBuff",
+      "UID": "927039ce-cdcf-44a4-accf-0a9f0aad0db7",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "buffId": 2147101,
+      "name": "removeBuff",
+      "UID": "08d84121-7931-4b68-9047-3d3ffd9881e6",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "name": "isInCombat",
+      "UID": "2a09bc94-6836-43d1-8569-372c9909bf19",
+      "target": "OWNER",
+      "NodeID": 28,
+      "not": false
+    },
+    "29": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "bbbd2a31-561d-4312-805f-0b257fe01189",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "30": {
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "notShowCountDown": false,
+      "NodeID": 30,
+      "UID": "cb4d4cff-4b52-4739-9470-13cb18500ff6",
+      "to": 14750100,
+      "isAutoRecoverByDuration": true,
+      "from": 14750100
+    },
+    "32": {
+      "target": "OWNER",
+      "duration": 15,
+      "buffId": 91471020,
+      "NodeID": 32,
+      "UID": "62115694-aab9-4bf1-8261-620fdb53dea6",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "33": {
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "0ac089de-0e90-4ba2-b9c3-d515fb346ae3",
+      "name": "doActionsByConditions",
+      "NodeID": 33,
+      "elseActionIds": [
+        32
+      ]
+    },
+    "16": {
+      "petTarget": "OWNER",
+      "triggerId": 1047502,
+      "name": "onEntityTrigger",
+      "UID": "ca5a7ab2-141c-4f91-8ba7-a12d1cf94c92",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "36": {
+      "name": "stopQteTimeline",
+      "UID": "ad8287fb-1289-442a-8324-c0174a1ee403",
+      "target": "OWNER",
+      "NodeID": 36,
+      "qteGroupId": "QTE_10471_Combo"
+    }
+  },
+  "name": "",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    21,
+    25,
+    6,
+    13,
+    43,
+    38
+  ]
+}

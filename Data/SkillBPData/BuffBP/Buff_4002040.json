@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4002040",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "6deb71e3-be25-4a90-9e19-0c67370397a5",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 8
+    },
+    "4": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "1de9b748-5e57-4696-8de2-020c8b0b5749",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "5cff3b53-9bd4-4083-8312-113b3a972ed4",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_TrueLoop",
+      "target": "CURPET",
+      "NodeID": 10
+    },
+    "11": {
+      "buffId": 4002040,
+      "name": "removeBuff",
+      "UID": "7f481d1b-f667-42b9-889b-e207b09c505b",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "1eb45d5e-3da7-4cd7-b839-da0a59199103",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_TrueLoop",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "e65e638d-61df-44be-8405-b868305fe081",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 4002040,
+    "caster_heal_add_ratio": "param1",
+    "type": 1,
+    "taken_dmg_inc_rate_v": "param0",
+    "bp_add_ratio": "param2"
+  },
+  "onBuffDestroyIds": [
+    8,
+    10
+  ],
+  "onBuffStartIds": [
+    12,
+    4,
+    7
+  ]
+}

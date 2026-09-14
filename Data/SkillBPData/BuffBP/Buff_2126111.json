@@ -1,0 +1,57 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126111",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "b4405a2f-b363-42ff-b4f3-2c0d2c8d902f",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "name": "hasBuffTag",
+      "UID": "5bdd772d-1a37-49da-8700-5a876b77bfbb",
+      "target": "OWNER",
+      "NodeID": 4,
+      "buffTag": 4
+    },
+    "8": {
+      "value": {
+        "UID": "e048bf9f-dc19-4903-bf21-b352eed7eb7f",
+        "number": 999999,
+        "name": "constNumber",
+        "NodeID": 7
+      },
+      "name": "removeShieldPoint",
+      "UID": "c913d41a-f336-43ff-9f3c-8a54d2e0af10",
+      "notifyAttackEvent": true,
+      "NodeID": 8,
+      "applyToAll": true
+    },
+    "6": {
+      "addTagGroup": "HARMFUL",
+      "addActionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "b8d629e9-f407-4e4d-851e-02a3e7fcddbd",
+      "target": "OWNER",
+      "name": "registerBuffTagChange"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

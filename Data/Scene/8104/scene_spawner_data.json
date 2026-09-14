@@ -1,0 +1,205 @@
+{
+  "43165835": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -14.1,
+      6.2,
+      -111.05
+    ],
+    "sandboxId": 41701388,
+    "autoInitial": false,
+    "sandboxType": 4,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "id": 43165835,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "manualInit": false,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        -14.1,
+        6.2,
+        -111.05
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43165834
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "43165837": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 4,
+    "position": [
+      -14.1,
+      6.45,
+      -84
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "id": 43165837,
+    "sandboxId": 41701388,
+    "autoInitial": false,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43165836
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "43165839": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 4,
+    "position": [
+      -14.1,
+      6.45,
+      -96.11
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "id": 43165839,
+    "sandboxId": 41701388,
+    "autoInitial": false,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43165838
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "43168322": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 4,
+    "position": [
+      -14.1,
+      6.45,
+      -95
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "id": 43168322,
+    "sandboxId": 41701388,
+    "autoInitial": false,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43168321
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "43165833": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -14.1,
+      6.2,
+      -91.92
+    ],
+    "sandboxId": 41701388,
+    "autoInitial": false,
+    "sandboxType": 4,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "id": 43165833,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "manualInit": false,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        -14.1,
+        6.2,
+        -91.92
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          43165832
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

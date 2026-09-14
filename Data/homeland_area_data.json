@@ -1,0 +1,152 @@
+{
+  "3": {
+    "teleportPos": 91312647,
+    "areaCenter": [
+      -0.27,
+      100.81,
+      -58.11
+    ],
+    "areaRange": [
+      -33,
+      33,
+      -22,
+      22
+    ],
+    "areaYaw": 0,
+    "name": 2130933151,
+    "icon": "$UI_Img_Home_PlotArea_Public.png",
+    "desc": 1262564436,
+    "isUnlock": 1
+  },
+  "4": {
+    "areaCenter": [
+      -66,
+      100.12,
+      -12
+    ],
+    "areaRange": [
+      -15,
+      15,
+      -15,
+      15
+    ],
+    "areaYaw": 0,
+    "name": 1573942247,
+    "unlockConditionDes": 2122414236,
+    "desc": 1258339935,
+    "noOpen": 1
+  },
+  "5": {
+    "areaCenter": [
+      46,
+      100,
+      1
+    ],
+    "areaRange": [
+      -14,
+      14,
+      -21,
+      21
+    ],
+    "areaYaw": 0,
+    "name": 2063374053,
+    "unlockConditionDes": 1391643966,
+    "desc": 1723058725,
+    "noOpen": 1
+  },
+  "0": {
+    "loadLimit": 400000,
+    "placeNumRatio": 1,
+    "isUnlock": 1,
+    "name": 2117306940,
+    "icon": "$UI_Img_Home_PlotArea_Product.png",
+    "desc": 2008597544,
+    "areaCenter": [
+      -9,
+      100,
+      -5
+    ],
+    "areaRange": [
+      -40,
+      40,
+      -30,
+      30
+    ],
+    "areaYaw": 0,
+    "yAxisRange": [
+      0,
+      30
+    ],
+    "isBuildArea": 1,
+    "teleportPos": 91284736
+  },
+  "1": {
+    "loadLimit": 400000,
+    "placeNumRatio": 1,
+    "yAxisRange": [
+      0,
+      30
+    ],
+    "name": 1596050408,
+    "ornamentDefaultYaw": 0,
+    "icon": "$UI_Img_Home_PlotArea_Build.png",
+    "desc": 1127468177,
+    "airWallPos": [
+      -9,
+      95,
+      -85
+    ],
+    "airWallResId": "$P_HomeLand_Airwall_jianzao.prefab",
+    "areaCenter": [
+      32,
+      104,
+      -135.5
+    ],
+    "areaRange": [
+      -40,
+      40,
+      -30,
+      30
+    ],
+    "areaYaw": 0,
+    "unlockConditionDes": 1439897222,
+    "unlockCondition": 306208,
+    "isBuildArea": 1,
+    "teleportPos": 91284751
+  },
+  "2": {
+    "loadLimit": 400000,
+    "placeNumRatio": 0.4,
+    "startTimeRefId": 11001,
+    "teleportPos": 91284758,
+    "desc": 1080153542,
+    "yAxisRange": [
+      0,
+      30
+    ],
+    "name": 1338795085,
+    "icon": "$UI_Img_Home_PlotArea_Season.png",
+    "airWallPos": [
+      50,
+      91.6,
+      -57
+    ],
+    "airWallResId": "$P_HomeLand_Airwall_saiji.prefab",
+    "areaCenter": [
+      76,
+      105,
+      -36
+    ],
+    "areaRange": [
+      -20,
+      20,
+      -15,
+      15
+    ],
+    "areaYaw": 90,
+    "endTimeRefId": 11002,
+    "homeSeason": 1,
+    "isBuildArea": 1,
+    "istomorrow": 1
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "nodeMap": {
+    "34": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4ab1ad2d-c82c-4a59-b8ca-e187a771a3d0",
+      "target": "OWNER",
+      "NodeID": 34,
+      "animId": "Skill_SunBeam_End"
+    },
+    "53": {
+      "UID": "e85b0314-f25d-482e-978d-7bbad49b45a6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          56,
+          51
+        ]
+      },
+      "NodeID": 53
+    },
+    "54": {
+      "UID": "3ecb8063-b8e7-49b7-ba7c-1c35dbda8d54",
+      "name": "enableFourWayMove",
+      "enable": false,
+      "NodeID": 54
+    },
+    "46": {
+      "UID": "bf8936ae-e6e9-4f51-812b-427445ece232",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          44,
+          54
+        ]
+      },
+      "NodeID": 46
+    },
+    "84": {
+      "name": "stopSoundStr",
+      "UID": "15a493d4-4f69-489f-a1d1-0d2ff742ef89",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 84
+    },
+    "35": {
+      "UID": "5ee2dcaf-7aa8-41b5-8e15-5b1ca80ab3c2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "NodeID": 35
+    },
+    "44": {
+      "UID": "2a88d4a1-0e3f-43e2-b5c1-340b1290f49e",
+      "name": "setMask",
+      "mask": {
+        "canMove": 0,
+        "inCast": 0
+      },
+      "NodeID": 44
+    },
+    "48": {
+      "UID": "52f160dc-3a0e-492c-81fc-b1a3bd376f2c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 0
+      },
+      "NodeID": 48
+    },
+    "58": {
+      "UID": "686afcb4-6608-43b1-9209-b8dd4e20e468",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          57
+        ]
+      },
+      "NodeID": 58
+    },
+    "57": {
+      "UID": "0af68335-339f-4f13-acd2-3900e8ce4cdd",
+      "name": "stopAnimation",
+      "anim": "Skill_SunBeam_Loop",
+      "NodeID": 57
+    },
+    "56": {
+      "UID": "617c3bff-49e8-466d-9900-88f0db7598f5",
+      "name": "setMask",
+      "mask": {
+        "canMove": 1,
+        "inCast": 1
+      },
+      "NodeID": 56
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 50,
+      "UID": "391540a4-83ce-4081-9523-ea99e739b31b"
+    },
+    "86": {
+      "action": {
+        "actionIds": [
+          84,
+          87
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.01,
+      "NodeID": 86,
+      "UID": "ffcf044c-7bb0-497b-8bbf-4fe7e4403045"
+    },
+    "51": {
+      "UID": "bb4688ab-2115-4ada-a4c2-b6e00d6c5f89",
+      "name": "enableFourWayMove",
+      "enable": true,
+      "NodeID": 51
+    },
+    "87": {
+      "name": "stopEffectStr",
+      "UID": "17a8cf21-b08c-4057-89e8-69ab34f965cf",
+      "effectId": "Eff_Parmon_10162_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 87
+    }
+  },
+  "BPName": "ability_11610600",
+  "NodeID": 37,
+  "UID": "298e70ec-967f-4cfc-9357-d672433de036",
+  "eventIds": [
+    58,
+    35,
+    86,
+    53,
+    50,
+    46
+  ],
+  "layer": "Base",
+  "length": 0.8
+}

@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91181041",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    12
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91181042,
+      "NodeID": 8,
+      "UID": "9a1e1988-cd41-4eed-b408-5fa1e822ad46",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "bc9fe5bd-b945-4066-93e8-3ebf880eb9a5",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "10": {
+      "name": "isInCombat",
+      "UID": "d3d62a12-2e37-458e-9d2a-888ca58a8301",
+      "target": "OWNER",
+      "NodeID": 10,
+      "not": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    9
+  ]
+}

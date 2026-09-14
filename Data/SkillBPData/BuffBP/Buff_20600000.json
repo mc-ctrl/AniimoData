@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 20600000,
+      "NodeID": 5,
+      "UID": "d4ae2925-4953-4656-b65f-749bed8ac073",
+      "layer": {
+        "UID": "36f7b1f9-f94d-4f6b-bbde-ea4ba9b55b3a",
+        "name": "getRoguePersistData",
+        "key": "rogueAccumulatedCoin",
+        "NodeID": 4
+      },
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "4": {
+      "UID": "36f7b1f9-f94d-4f6b-bbde-ea4ba9b55b3a",
+      "name": "getRoguePersistData",
+      "key": "rogueAccumulatedCoin",
+      "NodeID": 4
+    },
+    "6": {
+      "key": "rogueAccumulatedCoin",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "b29fa4ba-bb3a-43c3-bc95-9595b9caafde",
+      "name": "registerRoguePersistDataChange",
+      "responseNegative": true
+    }
+  },
+  "BPName": "buff_20600000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    5
+  ]
+}

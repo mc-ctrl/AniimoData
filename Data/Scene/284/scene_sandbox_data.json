@@ -1,0 +1,92 @@
+{
+  "63976941": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1015778,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "autoSetContent1": true,
+      "compassShowDistance": 0,
+      "initState": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 63976941,
+      "nearState": 0,
+      "poiStaticIdType": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "compassTxt": "关键生态点",
+      "positionParam": [
+        0,
+        0
+      ],
+      "SloganPlayOnce": false,
+      "POIBoundStaticId": 0,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "scale3": 0,
+      "entityStaticIdType": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "inactiveTitle": "关键生态点",
+      "activeShapes": {},
+      "markType": 0,
+      "arriveType": 1,
+      "arriveParam": {},
+      "openMapState": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_草原",
+      "本地测试_关卡"
+    ],
+    "routes": [
+      63977413
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_岩龙资源点",
+    "sightLevelType": 128,
+    "spawners": [
+      63976955,
+      63977182,
+      63992548,
+      64168332,
+      64172058
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      -249.99,
+      2.87,
+      -0.13
+    ],
+    "owner": "徐梦璇",
+    "id": 63976941,
+    "levelItems": {},
+    "disposable": true
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "77458805": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1032163,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "80941722": {
+        "majorCompId": 80529385,
+        "owner": "guangling",
+        "EditorName": "P_Temp_Forest_Trap01",
+        "position": [
+          799.38,
+          0.5,
+          49.56
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 80941722,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 485,
+        "defaultValue": {
+          "actOnMaster": false,
+          "buffId": 21233051
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "78771589": {
+        "majorCompId": 80285155,
+        "owner": "guangling",
+        "EditorName": "P_Levelltem_RailwayTrack",
+        "position": [
+          784.2,
+          0.64,
+          53.69
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 78771589,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 462,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1003,
+    "publishTags": [
+      "CE_通用",
+      "本地测试_关卡"
+    ],
+    "routes": [
+      82137390,
+      82145910,
+      86057165,
+      86059706,
+      86059867
+    ],
+    "startVersion": "0.0",
+    "sandboxType": 4,
+    "name": "全局_其他关卡_熊",
+    "sightLevelType": 128,
+    "spawners": [
+      77458808,
+      78638847,
+      78741905,
+      78771594,
+      80287954,
+      81372207,
+      81622151,
+      82321927,
+      82329507,
+      82329510,
+      86053705,
+      86059705,
+      86324079,
+      86325946,
+      86347022,
+      86347025
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      803.19,
+      0.5,
+      59.93
+    ],
+    "owner": "guangling",
+    "id": 77458805,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  }
+}

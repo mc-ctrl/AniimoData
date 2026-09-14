@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Behav_SleepLoop"
+  ],
+  "searchTargetRangeRadius": 15,
+  "BPName": "ability_10120811",
+  "name": "",
+  "UID": "73fa7522-2017-4a7a-baeb-5ab32b013db6",
+  "searchTargetRangeUp": 4.5,
+  "abilityParamId": 12400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 3,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10120811001,
+      "name": "setCombatActionTimeline",
+      "UID": "7dd3efe0-86b9-4f89-a63b-64ae0532e691",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

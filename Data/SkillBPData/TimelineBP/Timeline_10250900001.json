@@ -1,0 +1,77 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "5dd9b723-f68a-4a63-b8cd-4d1c115ee899",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "b41eeafc-981a-4ad2-be64-edc638628ec5",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkillOnlyClient",
+      "UID": "e49f738f-be63-4b5c-9af6-796b54872b58",
+      "to": 10250910,
+      "NodeID": 14,
+      "from": 10250900
+    },
+    "10": {
+      "outlineRemainTimeCamouflage": 0,
+      "outlineRemainTimeTag": 0,
+      "name": "setGhostEyeState",
+      "UID": "eeb068fa-0bac-45f9-9803-06d5ed7d4f4e",
+      "target": "MASTER",
+      "NodeID": 10,
+      "ghostEyeState": 1
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 11,
+      "UID": "05f2bd81-a142-4939-b26f-a045107bddaf"
+    },
+    "15": {
+      "UID": "9b0f340f-9d30-4bcd-bef5-e943766226f9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 15
+    }
+  },
+  "BPName": "ability_10250900",
+  "NodeID": 7,
+  "UID": "735303ae-12ab-479a-8166-e434662d0319",
+  "eventIds": [
+    5,
+    11,
+    15
+  ],
+  "layer": "Base",
+  "length": 1.65
+}

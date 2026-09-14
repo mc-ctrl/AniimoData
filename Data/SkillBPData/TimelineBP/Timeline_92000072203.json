@@ -1,0 +1,474 @@
+{
+  "nodeMap": {
+    "113": {
+      "UID": "1689d8a8-533f-4979-a038-f16937186964",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 113
+    },
+    "187": {
+      "target": "TARGET",
+      "duration": 3,
+      "buffId": 920000703,
+      "NodeID": 187,
+      "UID": "21c2c189-053f-43d5-a530-68363e90fe99",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "115": {
+      "UID": "4202f9b7-ac86-4ce4-8800-d2ffebd5fea4",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          113
+        ]
+      },
+      "NodeID": 115
+    },
+    "243": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5f4fb685-59f2-4042-8f25-791da873b44f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_CrushDecide",
+      "NodeID": 243
+    },
+    "117": {
+      "UID": "989ad697-a37e-4b5d-9e5d-40c2e1d4def3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 117
+    },
+    "206": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "e0c65ed4-688e-415b-ac31-887868928aec",
+      "target": "TARGET",
+      "NodeID": 206
+    },
+    "119": {
+      "action": {
+        "actionIds": [
+          117
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.3,
+      "NodeID": 119,
+      "UID": "b94d3e5e-e5f2-4ad8-a3db-5198cdc909aa"
+    },
+    "249": {
+      "effectKey": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "duration": 0.85,
+      "disableWhenFinished": true,
+      "NodeID": 249,
+      "UID": "44dea576-8eee-4c75-9e34-f8c19bcfe985",
+      "target": "OWNER",
+      "presetName": "SledgeHammerGlow",
+      "name": "playPreset"
+    },
+    "235": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.1,
+        "reduce_cur_tp_rate": 0.1,
+        "add_cur_bp_fix": 0.012
+      },
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "impulseId": 0,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0
+      },
+      "UID": "eb4effce-0e38-4b3a-8424-06373b5b79b1",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 235
+    },
+    "122": {
+      "UID": "c54313c7-5b21-444d-8fd4-e1e9daee40b2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          120,
+          271,
+          123,
+          144,
+          124,
+          243,
+          134
+        ]
+      },
+      "NodeID": 122
+    },
+    "123": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "8dded2fa-1a97-4811-ba92-840bf5d15928",
+      "target": "OWNER",
+      "NodeID": 123
+    },
+    "128": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 2,
+        "reduce_cur_tp_rate": 2,
+        "add_cur_bp_fix": 0.24
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 21144,
+        "hitFrameFreezeId": 10014,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Avatar_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 1100
+      },
+      "UID": "c35dd661-f61e-493d-8c19-60ed55860b50",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 128
+    },
+    "276": {
+      "key": "9200007HammerDis",
+      "name": "setCacheVal",
+      "UID": "569dcade-3e74-4174-bc28-b88d4efcd764",
+      "val": 1,
+      "NodeID": 276
+    },
+    "233": {
+      "action": {
+        "actionIds": [
+          231
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 233,
+      "UID": "0c45f969-0f11-4201-9169-a31c0789502a"
+    },
+    "189": {
+      "conditionActionIds": [
+        206
+      ],
+      "UID": "79162f3f-59c7-4c14-b812-c22dcbddea0c",
+      "name": "doActionsByConditions",
+      "NodeID": 189,
+      "elseActionIds": [
+        188
+      ]
+    },
+    "191": {
+      "cameraShakeId": 21144,
+      "name": "playCameraImpulseById",
+      "UID": "2da98800-bda8-45a1-aac6-49e1055c4a97",
+      "target": "OWNER",
+      "NodeID": 191
+    },
+    "219": {
+      "target": "TARGET",
+      "duration": 0.1,
+      "speed": 5,
+      "NodeID": 219,
+      "UID": "9a12379e-98f3-4f6e-8cca-cf93876a35b0",
+      "displacementDir": "OUT",
+      "displacementTarget": "CASTER",
+      "name": "forceDisplacement"
+    },
+    "132": {
+      "action": {
+        "actionIds": [
+          130,
+          249,
+          191
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.153,
+      "NodeID": 132,
+      "UID": "d639351e-d1a0-4dcd-8bea-ca5d9a6d730e"
+    },
+    "256": {
+      "action": {
+        "actionIds": [
+          254,
+          260,
+          276,
+          283
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.3,
+      "NodeID": 256,
+      "UID": "50db85e7-75ca-4719-9912-9ef467b817e3"
+    },
+    "124": {
+      "name": "playSoundStr",
+      "UID": "d9e9726a-ed41-4171-afd2-df756b165861",
+      "soundId": "SFX_Avatar_Female_Skill_Crush_Level3",
+      "target": "OWNER",
+      "NodeID": 124
+    },
+    "134": {
+      "triggerName": "Level3",
+      "name": "setEffectAnimTrigger",
+      "UID": "b7468d97-4a00-444f-82cb-8c745d0ca4aa",
+      "effectId": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 134
+    },
+    "130": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 128,
+      "NodeID": 130,
+      "UID": "bab8a514-3ab4-4dd4-b59b-2f1ed57e704b",
+      "target": [
+        {
+          "offsetXYZ": [
+            -0.3,
+            0,
+            2
+          ],
+          "shapeArgs": [
+            1.4,
+            1.9,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1100,
+      "actionIds": [
+        128,
+        189
+      ]
+    },
+    "223": {
+      "action": {
+        "actionIds": [
+          221
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.46,
+      "NodeID": 223,
+      "UID": "3728268c-6f18-4465-a1d7-366fb513cb92"
+    },
+    "260": {
+      "effectKey": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 260,
+      "UID": "5072345c-7506-42e5-99a0-2bcadad5902e",
+      "target": "OWNER",
+      "presetName": "SledgeHammerDis",
+      "name": "playPreset"
+    },
+    "106": {
+      "UID": "297797ff-5c62-492f-9717-b2992e47ceca",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 106
+    },
+    "120": {
+      "name": "playAnimation",
+      "UID": "bcd36fe8-d0dc-475e-9d1e-9bf68c3b12d2",
+      "target": "OWNER",
+      "motionWarpingTarget": "TARGET",
+      "offsetTime": 0,
+      "animId": "Skill_Crush_Level3",
+      "warpEndTime": 0.6,
+      "warpStartTime": 0.3,
+      "backOffset": 2.3,
+      "NodeID": 120
+    },
+    "227": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.1,
+        "reduce_cur_tp_rate": 0.1,
+        "add_cur_bp_fix": 0.012
+      },
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "impulseId": 0,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0
+      },
+      "UID": "7df6a3d1-6ef7-4a5a-a1cb-b57443560556",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 227
+    },
+    "289": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "b04af147-1d6f-426d-963f-872be7f485a5",
+      "target": "TARGET",
+      "NodeID": 289
+    },
+    "108": {
+      "UID": "d8dadfd1-2e80-4be4-82a2-1e344f6b35eb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          106
+        ]
+      },
+      "NodeID": 108
+    },
+    "283": {
+      "name": "stopEffectStr",
+      "UID": "cb540a2c-a8f6-4844-98bc-b99de0933629",
+      "effectId": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "target": "OWNER",
+      "NodeID": 283
+    },
+    "271": {
+      "duration": 0.5,
+      "name": "playFovCameraAnim",
+      "UID": "75212c85-26a9-4a26-a4b1-f5b4eab474d3",
+      "blendInTime": 0.2,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CommonFOV_60",
+      "target": "OWNER",
+      "blendOutTime": 1,
+      "NodeID": 271
+    },
+    "231": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 235,
+      "NodeID": 231,
+      "UID": "1008893f-faa5-46cb-900f-e34e5bf8ee4f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1.9,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        235
+      ]
+    },
+    "188": {
+      "conditionActionIds": [
+        289
+      ],
+      "UID": "65c4d60e-88b0-4213-b1ea-bc184d3e8a11",
+      "name": "doActionsByConditions",
+      "NodeID": 188,
+      "elseActionIds": [
+        187
+      ]
+    },
+    "221": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 227,
+      "NodeID": 221,
+      "UID": "55eb0456-b0c8-4bbe-a364-4e68c34d7657",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.8,
+            1.9,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        227,
+        219
+      ]
+    },
+    "144": {
+      "result": 3,
+      "name": "pushChargeQteResult",
+      "UID": "ad16bf88-1ec2-45be-a2ca-5652d16550bf",
+      "NodeID": 144,
+      "chargeQteId": "QTE_Hammer"
+    },
+    "254": {
+      "name": "dropEffectStr",
+      "UID": "603848e5-34ff-40df-a9ee-34125df86d96",
+      "effectId": "Eff_Avatar_Boy_Skill_ToyHammer",
+      "target": "MASTER",
+      "NodeID": 254
+    }
+  },
+  "BPName": "timeline_92000072",
+  "NodeID": 110,
+  "UID": "48594a9e-ea9c-4bf5-852c-825847dcb43e",
+  "eventIds": [
+    108,
+    115,
+    122,
+    132,
+    119,
+    233,
+    223,
+    256
+  ],
+  "layer": "Base",
+  "length": 3
+}

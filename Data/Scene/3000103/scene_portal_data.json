@@ -1,0 +1,110 @@
+{
+  "90842485": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 349.93,
+    "revivedPointState": true,
+    "markType": 0,
+    "markPosition": [
+      -387.49,
+      165,
+      1252.42
+    ]
+  },
+  "90842491": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 306.12,
+    "revivedPointState": true,
+    "markType": 0,
+    "markPosition": [
+      -410.03,
+      164.89,
+      1238.52
+    ]
+  },
+  "90842492": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 213.5,
+    "revivedPointState": true,
+    "markType": 0,
+    "markPosition": [
+      -404.86,
+      165.17,
+      1205.29
+    ]
+  },
+  "90842493": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 170.36,
+    "revivedPointState": true,
+    "markType": 0,
+    "markPosition": [
+      -384.83,
+      164.73,
+      1198.43
+    ]
+  },
+  "90842494": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 123.95,
+    "revivedPointState": true,
+    "markType": 0,
+    "markPosition": [
+      -366.15,
+      164.84,
+      1207.47
+    ]
+  },
+  "90842495": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 83.69,
+    "revivedPointState": true,
+    "markType": 0,
+    "markPosition": [
+      -359.54,
+      165.47,
+      1227.32
+    ]
+  },
+  "90917625": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 0,
+    "revivedPointState": false,
+    "markType": 0,
+    "markPosition": [
+      -383.1,
+      165.29,
+      1214.16
+    ]
+  },
+  "91121688": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 83.69,
+    "revivedPointState": true,
+    "markType": 0,
+    "markPosition": [
+      -430.34,
+      162.83,
+      1220.77
+    ]
+  },
+  "84750989": {
+    "areaId": 84750983,
+    "randomRange": 0,
+    "yaw": 85.23,
+    "revivedPointState": true,
+    "markType": 32,
+    "markPosition": [
+      -429.13,
+      163.12,
+      1217.97
+    ]
+  }
+}

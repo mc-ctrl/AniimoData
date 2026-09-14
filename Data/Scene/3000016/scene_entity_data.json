@@ -1,0 +1,45 @@
+{
+  "81928397": {
+    "yaw": 0,
+    "voxelConstraints": 0,
+    "type": "Vehicle",
+    "position": [
+      -699.78,
+      154.68,
+      1373.06
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "sizeCoefficient": 1,
+    "subType": "Bonfire",
+    "attachId": 0,
+    "attachToSpawnerId": 0,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "chestSpawnerStaticId": 0,
+    "enableFixedScale": false,
+    "stick": true,
+    "staticId": 81928397,
+    "enable_elite_rate": false,
+    "isDynamicVehicle": true,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 22,
+    "isAuto": false,
+    "spawnerId": 81928398,
+    "sandboxId": 81925476,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "largeAreaId": 20900,
+    "levelAreaConfigId": 30903,
+    "overrideLvType": 6
+  }
+}

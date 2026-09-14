@@ -1,0 +1,701 @@
+[
+  {
+    "changeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "changeRate": 0,
+    "friendAction": "Friend_LookShy_Right",
+    "friendActionFrame": 0,
+    "friendActionLocal": [
+      -0.2,
+      0,
+      0
+    ],
+    "friendshipName": 1802194027,
+    "friendshipRange": [
+      0,
+      99
+    ],
+    "irisPower": 0.2,
+    "levelIcon": "$UI_Img_Likability_2.png",
+    "levelIconBg": "$UI_Img_Likability_Bg_2.png",
+    "levelIconOnly": "$UI_Img_PlayerInfoCard_Likability_2.png",
+    "levelUpTip": 1755268484,
+    "levelfunc": [
+      1,
+      9,
+      14
+    ],
+    "myAction": "Friend_LookShy_Left",
+    "animParams": [
+      [
+        [
+          0.15,
+          0.1,
+          0.1,
+          11
+        ],
+        [
+          -0.15,
+          0.1,
+          0.1
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          12
+        ],
+        [
+          -0.2,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          21
+        ],
+        [
+          -0.2,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          22
+        ],
+        [
+          -0.2,
+          0,
+          0
+        ]
+      ]
+    ],
+    "myActionLocal": [
+      0.2,
+      0,
+      0
+    ],
+    "notChangeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    },
+    "notChangeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "petExchangeCostRate": 1,
+    "petExchangeRewardRate": 1,
+    "myActionFrame": 0,
+    "changeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    }
+  },
+  {
+    "changeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "changeRate": 0,
+    "friendAction": "Friend_Yeah_Right",
+    "friendActionFrame": 0,
+    "friendActionLocal": [
+      -0.2,
+      0,
+      0
+    ],
+    "friendshipName": 2078165927,
+    "friendshipRange": [
+      100,
+      499
+    ],
+    "irisPower": 0.2,
+    "levelIcon": "$UI_Img_Likability_3.png",
+    "levelIconBg": "$UI_Img_Likability_Bg_3.png",
+    "levelIconOnly": "$UI_Img_PlayerInfoCard_Likability_3.png",
+    "levelUpTip": 1132396198,
+    "levelfunc": [
+      6,
+      10,
+      20
+    ],
+    "myAction": "Friend_Yeah_Left",
+    "animParams": [
+      [
+        [
+          0.2,
+          0,
+          0.1,
+          11
+        ],
+        [
+          -0.2,
+          0,
+          0.1
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          12
+        ],
+        [
+          -0.2,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          21
+        ],
+        [
+          -0.2,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          22
+        ],
+        [
+          -0.2,
+          0,
+          0
+        ]
+      ]
+    ],
+    "myActionLocal": [
+      0.2,
+      0,
+      0
+    ],
+    "notChangeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    },
+    "notChangeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "petExchangeCostRate": 1,
+    "petExchangeRewardRate": 1,
+    "myActionFrame": 0,
+    "changeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    }
+  },
+  {
+    "changeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "changeRate": 0,
+    "friendAction": "Friend_Heart_Right",
+    "friendActionFrame": 0,
+    "friendActionLocal": [
+      -0.15,
+      0,
+      0
+    ],
+    "friendshipName": 2049392932,
+    "friendshipRange": [
+      500,
+      1199
+    ],
+    "irisPower": 0.2,
+    "levelIcon": "$UI_Img_Likability_4.png",
+    "levelIconBg": "$UI_Img_Likability_Bg_4.png",
+    "levelIconOnly": "$UI_Img_PlayerInfoCard_Likability_4.png",
+    "levelUpTip": 2142665276,
+    "levelfunc": [
+      2,
+      7,
+      3
+    ],
+    "myAction": "Friend_Heart_Left",
+    "animParams": [
+      [
+        [
+          0.12,
+          0.1,
+          0.1,
+          11
+        ],
+        [
+          -0.12,
+          0.1,
+          0.1
+        ]
+      ],
+      [
+        [
+          0.15,
+          0,
+          0,
+          12
+        ],
+        [
+          -0.15,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.1,
+          0,
+          0,
+          21
+        ],
+        [
+          -0.1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.15,
+          0,
+          0,
+          22
+        ],
+        [
+          -0.15,
+          0,
+          0
+        ]
+      ]
+    ],
+    "myActionLocal": [
+      0.15,
+      0,
+      0
+    ],
+    "notChangeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    },
+    "notChangeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "petExchangeCostRate": 1,
+    "petExchangeRewardRate": 1,
+    "myActionFrame": 0,
+    "changeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    }
+  },
+  {
+    "changeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "changeRate": 0,
+    "friendAction": "Friend_HoldFace_Right",
+    "friendActionFrame": 0,
+    "friendActionLocal": [
+      -0.15,
+      0,
+      -0.1
+    ],
+    "friendshipName": 1600098340,
+    "friendshipRange": [
+      1200,
+      2499
+    ],
+    "irisPower": 0.3,
+    "levelIcon": "$UI_Img_Likability_5.png",
+    "levelIconBg": "$UI_Img_Likability_Bg_5.png",
+    "levelIconOnly": "$UI_Img_PlayerInfoCard_Likability_5.png",
+    "levelUpTip": 1229438706,
+    "levelfunc": [
+      4,
+      8,
+      15,
+      17,
+      11
+    ],
+    "myAction": "Friend_HoldFace_Left",
+    "animParams": [
+      [
+        [
+          0.18,
+          0,
+          0.1,
+          11
+        ],
+        [
+          -0.18,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.15,
+          0,
+          0.1,
+          12
+        ],
+        [
+          -0.15,
+          0,
+          -0.1
+        ]
+      ],
+      [
+        [
+          0.15,
+          0,
+          0.1,
+          21
+        ],
+        [
+          -0.15,
+          0.1,
+          -0.1
+        ]
+      ],
+      [
+        [
+          0.15,
+          0,
+          0.1,
+          22
+        ],
+        [
+          -0.15,
+          0,
+          -0.1
+        ]
+      ]
+    ],
+    "myActionLocal": [
+      0.15,
+      0,
+      0.1
+    ],
+    "notChangeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    },
+    "notChangeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "petExchangeCostRate": 1,
+    "petExchangeRewardRate": 1,
+    "myActionFrame": 0,
+    "changeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    }
+  },
+  {
+    "changeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "changeRate": 0,
+    "friendAction": "Friend_HeartSign_Right",
+    "friendActionFrame": 0,
+    "friendActionLocal": [
+      -0.1,
+      0,
+      0
+    ],
+    "friendshipName": 1244232214,
+    "friendshipRange": [
+      2500,
+      4499
+    ],
+    "irisPower": 0.3,
+    "levelIcon": "$UI_Img_Likability_6.png",
+    "levelIconBg": "$UI_Img_Likability_Bg_6.png",
+    "levelIconOnly": "$UI_Img_PlayerInfoCard_Likability_6.png",
+    "levelUpTip": 1669161962,
+    "levelfunc": [
+      5,
+      12,
+      13,
+      21
+    ],
+    "myAction": "Friend_HeartSign_Left",
+    "animParams": [
+      [
+        [
+          0,
+          0,
+          0.1,
+          11
+        ],
+        [
+          0,
+          0,
+          0.1
+        ]
+      ],
+      [
+        [
+          0.1,
+          0,
+          0,
+          12
+        ],
+        [
+          -0.1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          21
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.22,
+          0,
+          0,
+          22
+        ],
+        [
+          -0.22,
+          0,
+          0
+        ]
+      ]
+    ],
+    "myActionLocal": [
+      0.1,
+      0,
+      0
+    ],
+    "notChangeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    },
+    "notChangeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "petExchangeCostRate": 1,
+    "petExchangeRewardRate": 1,
+    "myActionFrame": 0,
+    "changeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    }
+  },
+  {
+    "changeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "changeRate": 0,
+    "friendAction": "Friend_HeartSign_Right",
+    "friendActionFrame": 0,
+    "friendActionLocal": [
+      -0.1,
+      0,
+      0
+    ],
+    "friendshipName": 1603191390,
+    "friendshipRange": [
+      4500,
+      9999
+    ],
+    "irisPower": 0.4,
+    "levelIcon": "$UI_Img_Likability_7.png",
+    "levelIconBg": "$UI_Img_Likability_Bg_7.png",
+    "levelIconOnly": "$UI_Img_PlayerInfoCard_Likability_7.png",
+    "levelUpTip": 1475425676,
+    "levelfunc": [
+      18,
+      19,
+      22
+    ],
+    "myAction": "Friend_HeartSign_Left",
+    "animParams": [
+      [
+        [
+          0,
+          0,
+          0.1,
+          11
+        ],
+        [
+          0,
+          0,
+          0.1
+        ]
+      ],
+      [
+        [
+          0.1,
+          0,
+          0,
+          12
+        ],
+        [
+          -0.1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.2,
+          0,
+          0,
+          21
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0.22,
+          0,
+          0,
+          22
+        ],
+        [
+          -0.22,
+          0,
+          0
+        ]
+      ]
+    ],
+    "myActionLocal": [
+      0.1,
+      0,
+      0
+    ],
+    "notChangeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    },
+    "notChangeAddIv": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "petExchangeCostRate": 1,
+    "petExchangeRewardRate": 1,
+    "myActionFrame": 0,
+    "changeAdd": {
+      "3": 0,
+      "0": 100,
+      "1": 0,
+      "2": 0
+    }
+  }
+]

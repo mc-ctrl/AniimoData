@@ -1,0 +1,96 @@
+{
+  "BPName": "ability_15030111",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 12800011,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "7f173c34-db0e-43e5-a44a-62d9aaf92918",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "49": {
+      "UID": "92fb706e-1575-4974-8ee8-24744a154ae5",
+      "conditionIds": [
+        48,
+        50,
+        54
+      ],
+      "name": "conditionOr",
+      "NodeID": 49
+    },
+    "54": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "462faf61-6049-454e-bd69-e9a448028a3c",
+      "NodeID": 54,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "6c5d83be-1b01-4de3-8387-bb1501200b55",
+        "target": "OWNER",
+        "NodeID": 53
+      }
+    },
+    "50": {
+      "buffId": 2150303,
+      "name": "hasBuff",
+      "UID": "e8edc46f-60fb-4eea-baa4-a3b0fe1541ff",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "47": {
+      "timelineId": 15030115001,
+      "name": "setCombatActionTimeline",
+      "UID": "913d5349-f300-45b2-9c8b-bc408bccbf96",
+      "target": "CASTER",
+      "NodeID": 47
+    },
+    "7": {
+      "timelineId": 15030111001,
+      "name": "setCombatActionTimeline",
+      "UID": "e92c3f28-ddcf-4105-a01d-ddd40f2c6c55",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "48": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "66b34ce0-1c47-4495-af06-a171e505bd41",
+      "target": "OWNER",
+      "NodeID": 48
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrazyClaw02"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Skill_CrazyClaw2_R",
+    "Eff_Hit_Rock_Slash",
+    "Eff_Parmon_10503_Skill_CrazyClaw2_L",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

@@ -1,0 +1,112 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "8c16d9d9-6d52-448e-ae4f-fc27e048270d",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "8b57bebe-ccaf-482d-bd79-541839fde124",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.2,
+      "NodeID": 14,
+      "UID": "bfcbeb09-48ca-4226-a9be-df1ad6e6562c"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 25,
+      "UID": "39638921-270b-45dd-a198-f8c30fe5b32d"
+    },
+    "16": {
+      "UID": "cd4c807c-245b-49f6-a60b-64ccbca98bae",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 1000601,
+      "NodeID": 27,
+      "UID": "75221d88-507d-49d7-b15a-6ad513d89969",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "UID": "5ede7c2e-27e4-41e3-9d73-a01bc3e6946c",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 17
+    },
+    "11": {
+      "UID": "0805bf2e-70f3-4f18-94e1-77ab5a266b07",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "f9ebf60b-fe2c-4d81-9aed-0d2d9030437b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "78b611a5-04ce-40c9-a012-49c956eb3c31",
+      "effectId": "Eff_Parmon_10011_Skill_Debuff_5s",
+      "speed": 0.8,
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_10120603",
+  "NodeID": 7,
+  "UID": "22e406af-cd81-49b4-924e-fdffd8c2e343",
+  "eventIds": [
+    5,
+    11,
+    14,
+    17,
+    25
+  ],
+  "layer": "Base",
+  "length": 7.3
+}

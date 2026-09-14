@@ -1,0 +1,589 @@
+{
+  "nodeMap": {
+    "37": {
+      "key": "AI_BossStage",
+      "name": "setServerCacheVal",
+      "UID": "dc65bf35-cce1-4a84-9c0d-e1ccbcb59dfd",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 37
+    },
+    "40": {
+      "key": "Bulbly_01",
+      "name": "setServerCacheVal",
+      "UID": "d4c6d237-1588-4b4f-91a1-fcbfbc0d0623",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          2,
+          7.5
+        ],
+        "templateId": 80000067,
+        "NodeID": 39,
+        "UID": "e3cccb69-9dce-4f3a-9170-22edc6c6eb00",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "3757f09a-8469-4d45-a45c-639fdefd02b0",
+          "target": "TARGET",
+          "name": "getTargetId",
+          "NodeID": 38
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "stick": 1,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 40
+    },
+    "54": {
+      "key": "Bulbly_04",
+      "name": "setServerCacheVal",
+      "UID": "5323eb88-9824-4c6d-922a-62f01a7fe373",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          2,
+          -7.5
+        ],
+        "templateId": 80000067,
+        "NodeID": 53,
+        "UID": "ffcd52c2-a355-4123-a64c-cc5fbe6da991",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "b29e678f-a609-4a9f-a400-281da508c2d1",
+          "target": "TARGET",
+          "name": "getTargetId",
+          "NodeID": 52
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "stick": 1,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 54
+    },
+    "64": {
+      "key": "Bulbly_04",
+      "name": "setServerCacheVal",
+      "UID": "53801152-3c08-48fb-aa5c-e8e2e0158a30",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          -7.5,
+          2,
+          0
+        ],
+        "templateId": 80000067,
+        "NodeID": 63,
+        "UID": "2c1fa0b0-a433-48cf-8155-96fdd20d50e3",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "4e939e83-76e1-4c8a-b01a-2ffdb728c808",
+          "name": "getBornPos",
+          "NodeID": 62
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "stick": 1,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 64
+    },
+    "35": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "67226e8e-ad7d-4604-b050-099cdff38699",
+      "effectId": "Eff_Parmon_10261_StickOn_Boss",
+      "speed": 1,
+      "NodeID": 35
+    },
+    "65": {
+      "UID": "b8c2cdee-56d9-4acb-854f-f79149d38c53",
+      "name": "getBornPos",
+      "NodeID": 65
+    },
+    "4": {
+      "UID": "fd51c511-f3e7-47c1-9c95-6236d7d096ba",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 4
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 5,
+      "UID": "3ef8d312-c58a-4a51-9f47-e08b99c2d94a"
+    },
+    "61": {
+      "rValue": 15,
+      "name": "greater",
+      "UID": "2bebd20e-db65-41c0-8fec-31462ea95c58",
+      "NodeID": 61,
+      "lValue": {
+        "targetA": {
+          "UID": "3aef23b8-18df-4ed6-91d3-a08ed64a989e",
+          "name": "getBornPos",
+          "NodeID": 59
+        },
+        "targetB": "TARGET",
+        "name": "getDistanceBetweenTarget",
+        "UID": "e49e3247-950c-49e3-bbc8-160cd8bdab3c",
+        "NodeID": 60
+      }
+    },
+    "43": {
+      "key": "Bulbly_03",
+      "name": "setServerCacheVal",
+      "UID": "466c007b-769f-441b-bfff-b6ee436f2c44",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          7.5,
+          2,
+          0
+        ],
+        "templateId": 80000067,
+        "NodeID": 42,
+        "UID": "cb4c7856-42fa-4a97-a601-220a7a1add27",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "5cbce4c3-d0d3-4a4e-a3b6-1dd9c298a682",
+          "target": "TARGET",
+          "name": "getTargetId",
+          "NodeID": 41
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "stick": 1,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 43
+    },
+    "34": {
+      "offsetXYZ": [
+        12,
+        0.2,
+        -9
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f618bd44-4808-4a96-9d3b-3798626a9ede",
+      "effectId": "Eff_Parmon_10261_StickOn_Boss",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "50": {
+      "key": "10262Boss_StickNum",
+      "name": "setCacheVal",
+      "UID": "41c67a30-7728-4469-8c7c-62fc4b6204b2",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 50
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30,
+          33,
+          34,
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 32,
+      "UID": "fd645bc7-9e19-4632-963c-1ed8b618ab86"
+    },
+    "9": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "259ed318-3320-4705-95fe-57601ee6c3c0",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "48": {
+      "UID": "94419556-65a3-48d1-9708-663e101c9b74",
+      "name": "showBossMechanismTip",
+      "id": 2002,
+      "NodeID": 48
+    },
+    "46": {
+      "key": "Bulbly_02",
+      "name": "setServerCacheVal",
+      "UID": "35e72a27-9504-43ae-a4ca-da727e9f8669",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          -7.5,
+          2,
+          0
+        ],
+        "templateId": 80000067,
+        "NodeID": 45,
+        "UID": "eb2e3d33-8e87-465b-957b-12919a286f23",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "38bdb37a-955a-47ad-8460-0a9a3272d755",
+          "target": "TARGET",
+          "name": "getTargetId",
+          "NodeID": 44
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "stick": 1,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 46
+    },
+    "11": {
+      "UID": "9befcbf7-cc67-4cd5-891d-9ff6f80d5d05",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          48,
+          9,
+          36,
+          55,
+          65
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "key": "Bulbly_03",
+      "name": "setServerCacheVal",
+      "UID": "4a04852a-0b09-4877-9aa7-e748b3ee1bc7",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          7.5,
+          2,
+          0
+        ],
+        "templateId": 80000067,
+        "NodeID": 19,
+        "UID": "6eed68e7-c70b-4b5e-a329-38b858b4ec33",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "a0dc6b5a-eaa0-4ddf-9db1-9401f089c59c",
+          "name": "getBornPos",
+          "NodeID": 18
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "stick": 0,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 100014,
+      "NodeID": 21,
+      "UID": "3b9456a8-2df6-4029-bdd4-bea9569d6919",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "26": {
+      "key": "Bulbly_02",
+      "name": "setServerCacheVal",
+      "UID": "f738dc64-978b-472e-b8bb-0da63a97cde3",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          2,
+          -7.5
+        ],
+        "templateId": 80000067,
+        "NodeID": 25,
+        "UID": "824378a6-0628-4a4e-b594-a6712d62d144",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "pos": {
+          "UID": "e47de3aa-22d2-4b47-8ef5-a6a8fef1f97e",
+          "name": "getBornPos",
+          "NodeID": 24
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "stick": 0,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 26
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21,
+          29,
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 23,
+      "UID": "1fc3b7cd-8e83-4d8b-ae7a-cf6b64ebd196"
+    },
+    "55": {
+      "target": "OWNER",
+      "duration": 3,
+      "buffId": 10011,
+      "NodeID": 55,
+      "UID": "a911b42f-f52c-478d-ba0c-baf5f92f0b33",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "key": "Bulbly_01",
+      "name": "setServerCacheVal",
+      "UID": "c5703263-d8e1-41ed-9d71-3cafbb9ba686",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          2,
+          7.5
+        ],
+        "templateId": 80000067,
+        "NodeID": 13,
+        "UID": "82ce7245-17ac-4dde-a542-09fb3114df95",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "stick": 0,
+        "pos": {
+          "UID": "f19c3db7-c508-41f0-93e6-e606c2cddbef",
+          "name": "getBornPos",
+          "NodeID": 12
+        },
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 14
+    },
+    "56": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "3294e026-91dc-46b5-889f-36bb979b1a03",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "27": {
+      "key": "10262Boss_StickNum",
+      "name": "setCacheVal",
+      "UID": "ebb34e2c-2a5c-465a-804b-2dd532c86a15",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 27
+    },
+    "47": {
+      "target": "OWNER",
+      "duration": 60,
+      "buffId": 2126202,
+      "NodeID": 47,
+      "UID": "cc6990cf-c1ad-4362-af30-a31d944787ec",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "actionIds": [
+        14,
+        26,
+        20,
+        64,
+        50,
+        51
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "1aac118f-feab-4220-96b4-81f240ded383",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        40,
+        46,
+        43,
+        54,
+        27,
+        37
+      ],
+      "NodeID": 16
+    },
+    "58": {
+      "UID": "6f52ca36-1251-4a1a-af9d-a53696ab5923",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "NodeID": 58
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 17,
+      "UID": "8aa76bbc-457c-4639-b2e1-999cf28e105d"
+    },
+    "29": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2126201,
+      "NodeID": 29,
+      "UID": "a63dc515-59c9-48a6-968c-b72c8dc09527",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "30": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        15
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "82ad8d58-9769-4a85-bee3-3d65da924c45",
+      "effectId": "Eff_Parmon_10261_StickOn_Boss",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "60": {
+      "targetA": {
+        "UID": "3aef23b8-18df-4ed6-91d3-a08ed64a989e",
+        "name": "getBornPos",
+        "NodeID": 59
+      },
+      "targetB": "TARGET",
+      "name": "getDistanceBetweenTarget",
+      "UID": "e49e3247-950c-49e3-bbc8-160cd8bdab3c",
+      "NodeID": 60
+    },
+    "33": {
+      "offsetXYZ": [
+        -12,
+        0.2,
+        -9
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9e727b23-53a1-4181-9dfd-9a07e3fa7f2a",
+      "effectId": "Eff_Parmon_10261_StickOn_Boss",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "51": {
+      "key": "AI_BossStage",
+      "name": "setServerCacheVal",
+      "UID": "1a200aa3-dda5-42d2-b570-4fdbc98f0c99",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 51
+    },
+    "36": {
+      "UID": "85af7d91-0bf9-4ba8-b41d-bb6133656632",
+      "name": "fly",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_12620600",
+  "NodeID": 7,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    11,
+    5,
+    58,
+    23,
+    32,
+    17
+  ],
+  "layer": "Base",
+  "length": 3.1
+}

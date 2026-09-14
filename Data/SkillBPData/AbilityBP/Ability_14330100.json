@@ -1,0 +1,43 @@
+{
+  "BPName": "ability_14330100",
+  "NodeID": 1,
+  "isAim": true,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14330100001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_TurretForm_Start",
+    "Skill_TurretForm_End",
+    "Skill_TurretForm_Fire"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10433_Skill_TurretForm_01",
+    "Eff_Parmon_10433_Skill_TurretForm_02",
+    "Eff_Parmon_10433_Skill_TurretForm_03",
+    "Eff_Hit_Rock_Blunt"
+  ],
+  "isSwitch": true,
+  "name": "火花",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "searchTargetRangeDown": 0.5,
+  "searchRelation": 2,
+  "abilityParamId": 10800370,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8"
+}

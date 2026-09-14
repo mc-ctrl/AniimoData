@@ -1,0 +1,390 @@
+{
+  "36874372": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 0,
+    "sandboxId": 40422072,
+    "id": 36874372,
+    "logics": {},
+    "height": 0,
+    "radius": 8.37,
+    "position": [
+      -37.44,
+      38,
+      434.42
+    ],
+    "pointType": 1,
+    "name": "小商业街",
+    "AreaLoadTypeNoNormal": 0
+  },
+  "91337786": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 1,
+    "areaPoints": [
+      9.42,
+      404.92,
+      8.2,
+      406.93,
+      8.55,
+      408.8,
+      10.18,
+      410.16,
+      11.76,
+      410.42,
+      12.44,
+      410.9,
+      12.38,
+      412.95,
+      13.52,
+      414.68,
+      15.28,
+      415.41,
+      17.42,
+      414.84,
+      18.91,
+      412.87,
+      18.66,
+      410.55,
+      17.74,
+      409.35,
+      16.03,
+      408.77,
+      13.68,
+      408.92,
+      13.58,
+      407.02,
+      13.06,
+      405.6,
+      11.49,
+      404.8
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "areaAABB": [
+      8.2,
+      404.8,
+      18.91,
+      415.41
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": true,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "playDialogueGraph",
+            [
+              91337132
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 4.26,
+    "sandboxId": 82623031,
+    "position": [
+      10.18,
+      25.11,
+      407.73
+    ],
+    "pointType": 1,
+    "name": "区域_91337786",
+    "id": 91337786
+  },
+  "69441575": {
+    "areaLoadType": 2,
+    "areaPoints": [
+      45.37,
+      1169.14,
+      31.35,
+      1167.15,
+      31.71,
+      1154.59,
+      35.92,
+      1143.37,
+      45.38,
+      1138.32,
+      55.13,
+      1138.49,
+      65.63,
+      1153.87
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 69441575,
+    "logics": {},
+    "height": 8.82,
+    "sandboxId": 69432383,
+    "position": [
+      49.52,
+      124.34,
+      1153.05
+    ],
+    "pointType": 1,
+    "name": "区域_69441575"
+  },
+  "91145204": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 1,
+    "areaPoints": [
+      6.82,
+      380.7,
+      18.86,
+      365.99,
+      20.53,
+      370.04,
+      24.33,
+      372.58,
+      32.63,
+      375.53,
+      34.19,
+      382.32,
+      32.67,
+      390.82,
+      40.62,
+      404.5,
+      35.12,
+      411.57,
+      18.58,
+      425.08,
+      -9.99,
+      396.4
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "areaAABB": [
+      -9.99,
+      365.99,
+      40.62,
+      425.08
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "setInSocialArea",
+            [
+              1,
+              91145204
+            ]
+          ]
+        ],
+        "exitEvents": {},
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 20,
+    "sandboxId": 82623031,
+    "position": [
+      7.84,
+      23.28,
+      378.33
+    ],
+    "pointType": 1,
+    "name": "区域_91145204",
+    "id": 91145204
+  },
+  "72461650": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaPoints": [
+      -134.32,
+      986.05,
+      -187.3,
+      1086.71,
+      -56.2,
+      1307.27,
+      119.03,
+      1366.4,
+      287.89,
+      1222.75,
+      261.73,
+      1015.71,
+      201.82,
+      543.33,
+      75.72,
+      528.87,
+      -85.5,
+      551.34,
+      -241.86,
+      752.33
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 72461650,
+    "logics": {},
+    "height": 5543.25,
+    "sandboxId": 69432383,
+    "position": [
+      49.06,
+      -18.07,
+      1075.61
+    ],
+    "pointType": 1,
+    "name": "区域_位面_学院大厅二楼72461650",
+    "AreaLoadTypeNoNormal": 0
+  },
+  "81828267": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 1,
+    "areaPoints": {},
+    "areaShapeType": 2,
+    "entityType": 0,
+    "entityTypeList": {},
+    "id": 81828267,
+    "logics": {},
+    "height": 30,
+    "sandboxId": 78639943,
+    "position": [
+      -9.49,
+      26.73,
+      446.6
+    ],
+    "pointType": 1,
+    "name": "区域_81828267",
+    "AreaLoadTypeNoNormal": 1
+  },
+  "73394884": {
+    "areaLoadType": 1,
+    "areaPoints": [
+      41.49,
+      1140.48,
+      47.54,
+      1137.47,
+      53.52,
+      1137.07,
+      59.35,
+      1142.25,
+      60.68,
+      1149.29,
+      59.56,
+      1155.8,
+      56.54,
+      1158.6,
+      50.82,
+      1162.56,
+      46.13,
+      1166.58,
+      40.84,
+      1166.83,
+      37.82,
+      1164.92,
+      34.4,
+      1160.51,
+      35.01,
+      1156.92,
+      35.25,
+      1151.73,
+      37.27,
+      1143.65
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 73394884,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 7,
+    "sandboxId": 73270368,
+    "position": [
+      45.49,
+      123.96,
+      1146.6
+    ],
+    "pointType": 1,
+    "name": "区域_73394884"
+  }
+}

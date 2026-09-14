@@ -1,0 +1,28 @@
+{
+  "1001100": [
+    [
+      {
+        "isNeedOwn": 0,
+        "quality": 5,
+        "name": 1108717264
+      },
+      {
+        "isNeedOwn": 0,
+        "quality": 4,
+        "name": 1164491253
+      }
+    ],
+    [
+      {
+        "isNeedOwn": 1,
+        "quality": 5,
+        "name": 1302684853
+      },
+      {
+        "isNeedOwn": 1,
+        "quality": 4,
+        "name": 1656564570
+      }
+    ]
+  ]
+}

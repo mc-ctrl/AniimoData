@@ -1,0 +1,486 @@
+{
+  "72269349": {
+    "areaType": 0,
+    "chunk": 1019872,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 72269349,
+    "spawnerId": 0,
+    "owner": "唐睿尚",
+    "position": [
+      20,
+      2,
+      -150
+    ]
+  },
+  "72270725": {
+    "owner": "唐睿尚",
+    "chunk": 1019873,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 72272184,
+    "levelItems": {
+      "72270975": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头4-1",
+        "position": [
+          -12,
+          1,
+          -112.99
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 72270975,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72270976": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头4-2",
+        "position": [
+          -12,
+          1,
+          -120.99
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 72270976,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72274234": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "目标点3",
+        "position": [
+          -4.99,
+          0.7,
+          -97.99
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 72274234,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -4.99,
+            0.7,
+            -97.99
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72270728": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头1-1",
+        "position": [
+          20,
+          1,
+          -148
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72270728,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72279388": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头3-1",
+        "position": [
+          6.01,
+          1,
+          -97.99
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 72279388,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72270729": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "目标点1",
+        "position": [
+          20,
+          0.7,
+          -137
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72270729,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            20,
+            0.7,
+            -137
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72270733": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头1-2",
+        "position": [
+          20,
+          1,
+          -142
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72270733,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72279389": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头3-2",
+        "position": [
+          0.01,
+          1,
+          -97.99
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 72279389,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72270744": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头2-2",
+        "position": [
+          20,
+          1,
+          -110
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72270744,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72394344": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -12.15,
+          1.01,
+          -103.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72394344,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72270745": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "箭头2-1",
+        "position": [
+          20,
+          1,
+          -116
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72270745,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72279053": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "关卡流程状态机",
+        "position": [
+          17.22,
+          1.01,
+          -140.85
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72279053,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72270746": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "目标点2",
+        "position": [
+          20,
+          0.7,
+          -105
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72270746,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            20,
+            0.7,
+            -105
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "72270863": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint",
+        "position": [
+          -12,
+          1.01,
+          -128.99
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 72270863,
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -12,
+            1.01,
+            -128.99
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "元素等级教学-副本",
+    "spawners": [
+      72270737,
+      72270749,
+      72270752
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8016/Sandbox_72270725_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 72270725,
+    "markIconSpawnerId": 0,
+    "position": [
+      20,
+      1,
+      -110
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "cd": 180,
+    "emojiKey": "Sleep",
+    "time": 180,
+    "leisureType": 2
+  },
+  {
+    "animKeys": "Behav_LoveLoop",
+    "emojiKey": "Love",
+    "eventCd": 1800,
+    "leisureType": 3,
+    "limitPetNum": 3,
+    "cd": 3600,
+    "time": 15
+  },
+  {
+    "cd": 30,
+    "time": 20,
+    "leisureType": 4
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Think",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Hello",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Awkward2",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Look",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Bored",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Cool",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Proud",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Idle",
+    "cd": 30,
+    "emojiKey": "Smirk",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "IdleSpecial",
+    "cd": 30,
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_EatLoop",
+    "cd": 30,
+    "emojiKey": "Drink",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_EatLoop",
+    "cd": 30,
+    "emojiKey": "Eat",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_HappyLoop",
+    "cd": 30,
+    "emojiKey": "Happy2",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_HappyLoop",
+    "cd": 30,
+    "emojiKey": "Laugh2",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_HappyLoop",
+    "cd": 30,
+    "emojiKey": "Laugh",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_HappyLoop",
+    "cd": 30,
+    "emojiKey": "Celebrate",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_HappyLoop",
+    "cd": 30,
+    "emojiKey": "Cheer",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_HappyLoop",
+    "cd": 30,
+    "emojiKey": "Happy",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_HappyLoop",
+    "cd": 30,
+    "emojiKey": "Naughty",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_CryLoop",
+    "cd": 30,
+    "emojiKey": "Cry",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_CryLoop",
+    "cd": 30,
+    "emojiKey": "Mistake",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_AlertLoop",
+    "cd": 30,
+    "emojiKey": "Alert",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_DoubtLoop",
+    "cd": 30,
+    "emojiKey": "Think",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_CryLoop",
+    "cd": 30,
+    "emojiKey": "Heartbroken",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_WorryLoop",
+    "cd": 30,
+    "emojiKey": "Worry2",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_WorryLoop",
+    "cd": 30,
+    "emojiKey": "Worry",
+    "leisureType": 1
+  },
+  {
+    "animKeys": "Behav_SleepLoop",
+    "cd": 30,
+    "emojiKey": "Sleep",
+    "leisureType": 1
+  }
+]

@@ -1,0 +1,148 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "final_taken_dmg_dec_rate_v": 0
+  },
+  "calcInfoByLuaConfig": {
+    "id": 90213005,
+    "final_taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "51040902-e045-4bb2-8134-cb629b22d78a",
+  "tags": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "buffId": 90213009,
+      "name": "hasBuff",
+      "UID": "fdf58eed-01f7-40d2-81ef-87e305744686",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "14": {
+      "UID": "60c79e61-30ea-40aa-9257-696d5536295a",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "CanCastUltraSkill",
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ec24432a-f6a6-4232-8aaf-4da54b8aeb85",
+      "effectId": "Eff_Parmon_10023_Boss_ScreenUV",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "c4733508-4e1f-486f-a0ab-f9bda73d3503",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "6": {
+      "name": "playHitEffect",
+      "UID": "7030ec60-18f2-4d77-ba4d-4464afb0bba7",
+      "target": "OWNER",
+      "NodeID": 6,
+      "hitEffect": [
+        {
+          "id": "Eff_Common_Battle_Break",
+          "posMode": "HitPos"
+        }
+      ]
+    },
+    "16": {
+      "UID": "e0918ba7-09bd-40c6-9a4f-956d8f8d1888",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 16
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "06f19187-e37c-4cff-9fa7-f4e9f27f7b6e",
+      "isAbilityEndRemove": false,
+      "soundId": "ui_ultimateskill_break_boss",
+      "NodeID": 8
+    },
+    "17": {
+      "isTemp": true,
+      "NodeID": 17,
+      "UID": "5a4b6e1e-3fae-4331-af4f-9d750b2984f6",
+      "name": "playerForceLock",
+      "distance": 60,
+      "lockState": true
+    },
+    "9": {
+      "key": "flyingState",
+      "name": "setServerCacheVal",
+      "UID": "78991820-beb4-4407-b5e3-b908760e7587",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 9
+    },
+    "19": {
+      "UID": "ee72884f-ee2c-49c2-9e3f-472b8b7d8365",
+      "target": "OWNER",
+      "name": "setPetLockedActorId",
+      "NodeID": 19
+    },
+    "2": {
+      "duration": 0.6,
+      "configName": "$AE_RadialBlur_Default.asset",
+      "NodeID": 2,
+      "UID": "4c747102-f48f-42fa-95c1-4156168b5b26",
+      "name": "playRadialBlur"
+    },
+    "11": {
+      "keepTime": 1,
+      "target": "OWNER",
+      "outTime": 0.1,
+      "NodeID": 11,
+      "UID": "7ab84a84-ae34-49fc-adaf-1d151a0cf9d3",
+      "inTime": 0.1,
+      "name": "globalFreeze",
+      "freezeScale": 0.05
+    },
+    "20": {
+      "UID": "5c14c929-ce6e-4f4f-b9f3-a5729f329452",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "ZaiJinFY",
+      "NodeID": 20
+    },
+    "12": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 12,
+      "UID": "26616728-c958-4736-9575-4e73ef84b28f",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    }
+  },
+  "BPName": "buff_90213005",
+  "onBuffDestroyIds": [
+    14,
+    16,
+    21
+  ],
+  "onBuffStartIds": [
+    17,
+    12,
+    2,
+    9,
+    6,
+    10,
+    11,
+    8,
+    19
+  ]
+}

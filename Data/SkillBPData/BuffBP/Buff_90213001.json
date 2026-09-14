@@ -1,0 +1,62 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_90213001",
+  "NodeID": 1,
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "tags": [
+    1,
+    20,
+    27
+  ],
+  "name": "分身出生buff",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1da7d670-ef82-4e5a-bfc4-12080da31783",
+      "effectId": "Eff_Parmon_10213_Skill_Doppelganger_Born01",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "4": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6e83c865-22c8-4fc5-be85-ff73b7e148a1",
+      "target": "OWNER",
+      "NodeID": 4,
+      "animId": "Summon_Born01"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0f431d52-7ecc-4461-b35d-f30ad36ab241",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Summon_Born01",
+      "NodeID": 6
+    },
+    "7": {
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "07c3cf24-59c8-4530-b394-3ccf4ef9d979",
+      "ignoreSelf": true,
+      "NodeID": 7
+    },
+    "2": {
+      "key": "10213_Charge",
+      "name": "applyMaterialEffect",
+      "NodeID": 2,
+      "isFullBodyReplaceMaterial": true
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    2,
+    5,
+    6,
+    7
+  ]
+}

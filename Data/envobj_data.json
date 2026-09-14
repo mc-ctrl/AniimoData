@@ -1,0 +1,6924 @@
+{
+  "1010003": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Wood_Barrel.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 102,
+    "name": 2027332733,
+    "mass": 35,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "木桶"
+  },
+  "1200215": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "centerOffset": 0.25,
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "editorDesc": "F交互不可开启贝壳宝箱-高级宝箱",
+    "name": 1795694981,
+    "isDestroy": 1,
+    "editorName": "F交互不可开启贝壳宝箱-高级宝箱",
+    "mass": 25,
+    "materialReactId": 1,
+    "actionPrototypeIds": [
+      69
+    ],
+    "responseTime": 0.6,
+    "reward": 45010,
+    "unlockFailedAnim": "SCFailed",
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_DigShells"
+    ]
+  },
+  "1010004": {
+    "editorDisplayPriority": 201,
+    "editorName": "燃烧篝火",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire.prefab",
+    "camp": 3001,
+    "name": 1119597142,
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1300002": {
+    "editorDesc": "电果实法术场（不可直接布置）",
+    "name": 1296852397,
+    "BodyHeight": 1,
+    "BodySize": 3,
+    "editorDisplay": 1,
+    "prefabResID": "$P_Item_SceneObject_Fruit_ElectricField.prefab",
+    "editorName": "电果实法术场（不可直接布置）",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010005": {
+    "editorDisplayPriority": 202,
+    "editorName": "未点燃的篝火",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Dead.prefab",
+    "camp": 3001,
+    "name": 1931435969,
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200218": {
+    "prefabResID": "$P_Item_SceneObject_Stone_Fragile.prefab",
+    "name": 1659708950,
+    "camp": 1,
+    "editorName": "可破碎石头",
+    "canDestroyByAI": 3001,
+    "envObjState": 1,
+    "BodyHeight": 1.5,
+    "BodySize": 1.5
+  },
+  "1060010": {
+    "editorDesc": "藏有盔卫士的雪球，不要混用",
+    "editorDisplayPriority": 105,
+    "editorName": "藏有盔卫士的雪球",
+    "authorAwayInvisible": true,
+    "materialReactId": 21,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_SnowBall_RookGuard.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "name": 1980873723,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010007": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_缠绕",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Twist.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 1099476664,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200219": {
+    "editorDisplayPriority": 150,
+    "editorName": "莲顶鱼的叶子",
+    "BodyHeight": 0.5,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_WaterDragon_Leaf.prefab",
+    "camp": 1,
+    "canDestroyByAI": 3001,
+    "name": 1399787519,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1060011": {
+    "editorDesc": "藏有大眼盔的雪球，不要混用",
+    "editorDisplayPriority": 105,
+    "editorName": "藏有大眼盔的雪球",
+    "authorAwayInvisible": true,
+    "materialReactId": 22,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_SnowBallBig.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "name": 1531947633,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200220": {
+    "featureConfigData": {
+      "shiningTime": -1,
+      "shiningRadius": 10,
+      "shiningImpulseThreshold": 100,
+      "shiningValue": 30
+    },
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_FogLightFruitHeavy.prefab",
+    "camp": 1,
+    "features": [
+      "LevelFruitFeature",
+      "ShiningItemFeature"
+    ],
+    "canDestroyByAI": 3001,
+    "envObjState": 1,
+    "name": 1699703867,
+    "mass": 2,
+    "editorName": "迷雾森林果实（重的）",
+    "attachId": 10008,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "nonKinematic": 1,
+    "canBeDestory": 1,
+    "entityTag": [
+      "TE_Env_Ball"
+    ]
+  },
+  "1010009": {
+    "editorDesc": "仅30day可用，后面逻辑需要解耦",
+    "editorDisplayPriority": 110,
+    "name": 1330348053,
+    "authorAwayInvisible": true,
+    "prefabResID": "$P_Item_SceneObject_SoulEggNest_001.prefab",
+    "effs": [
+      "Eff_FlowerSeaNorth_Nest"
+    ],
+    "editorName": "GDC鸟巢",
+    "actionPrototypeIds": [
+      626
+    ],
+    "envObjState": 0
+  },
+  "1200221": {
+    "prefabResID": "$P_Item_SceneObject_Tutorial_CheckPoint.prefab",
+    "camp": 1,
+    "name": 1522292201,
+    "editorName": "检查点（战斗教学关卡）",
+    "envObjState": 1
+  },
+  "1060013": {
+    "editorDesc": "仅抢蛋需求推荐使用",
+    "editorName": "抢蛋_静止小冰块",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Ice_Small_NoTransparent.prefab",
+    "camp": 3001,
+    "name": 1192278801,
+    "centerOffset": 2,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200223": {
+    "name": 1712737961,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Blue.prefab",
+    "camp": 3001,
+    "editorName": "幽幽焰专属_幽蓝篝火",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1060015": {
+    "editorDesc": "藏有天使耶的雪球",
+    "editorDisplayPriority": 105,
+    "editorName": "藏有天使耶的雪球",
+    "authorAwayInvisible": true,
+    "materialReactId": 42,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_SnowBall_Helmon.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "name": 2073969700,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010012": {
+    "editorDesc": "仅抢蛋推荐使用的滚动音效",
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_物理滚动_抢蛋",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Twist.prefab",
+    "name": 1538401167,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1060016": {
+    "editorDesc": "藏有拉拉蛋的雪球",
+    "editorDisplayPriority": 105,
+    "editorName": "藏有拉拉蛋的雪球",
+    "authorAwayInvisible": true,
+    "materialReactId": 43,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_SnowBall_Helmon.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "name": 1436183992,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010013": {
+    "editorDisplayPriority": 200,
+    "editorName": "古代木板（可漂浮）",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_Board_Ancient.prefab",
+    "name": 1324167276,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1070001": {
+    "editorDisplayPriority": 310,
+    "editorName": "大型弹跳蘑菇（3叶片）",
+    "isLockAsPuppet": 1,
+    "callFriend": 1,
+    "BodyHeight": 2,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_BouncePlantBig.prefab",
+    "camp": 3001,
+    "name": 1991041315,
+    "callFriendRange": 8,
+    "enableVoxelCheck": 1,
+    "enableRVO": 1,
+    "envObjState": 0
+  },
+  "1010014": {
+    "editorDisplayPriority": 201,
+    "editorName": "燃烧篝火_长烟",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_LongSmoke.prefab",
+    "camp": 3001,
+    "name": 1718629363,
+    "editorOffset": [
+      0,
+      0.05,
+      0
+    ],
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1070003": {
+    "editorDisplayPriority": 300,
+    "editorName": "小型弹跳蘑菇（单叶片）",
+    "isLockAsPuppet": 1,
+    "callFriend": 1,
+    "BodyHeight": 2,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_BouncePlantSmall.prefab",
+    "camp": 3001,
+    "name": 1311865966,
+    "callFriendRange": 8,
+    "enableVoxelCheck": 1,
+    "enableRVO": 1,
+    "envObjState": 0
+  },
+  "1010001": {
+    "name": 1898182043,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 101,
+    "editorName": "大木箱",
+    "authorAwayInvisible": true,
+    "materialReactId": 10,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig.prefab",
+    "mass": 70,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010002": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1529127803,
+    "mass": 30,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "小木箱"
+  },
+  "1010006": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_地面",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Ground.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 1638993512,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010008": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_墙面",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Wall.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "name": 1333176996,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010018": {
+    "mass": 30,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "editorDisplayPriority": 100,
+    "editorName": "小木箱（无奖励）",
+    "authorAwayInvisible": true,
+    "name": 1543886347,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000011": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "卓越遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910110,
+    "name": 1202005018,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010019": {
+    "mass": 70,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "editorDisplayPriority": 101,
+    "editorName": "古代木箱（大）（无奖励）",
+    "authorAwayInvisible": true,
+    "name": 1396641973,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Ancient.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1080005": {
+    "editorName": "废弃物体",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "editorDisplay": 1,
+    "prefabResID": "$P_Item_SceneObject_BubbleCage_ChangeBig.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "name": 1098858236,
+    "nonKinematic": 1,
+    "detectionMode": 3,
+    "envObjState": 0
+  },
+  "3000022": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911002,
+    "name": 1132714740,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010022": {
+    "name": 1320358047,
+    "editorDisplayPriority": 200,
+    "editorName": "古代大木板（可漂浮）",
+    "authorAwayInvisible": true,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoardBig_Ancient.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1080006": {
+    "editorDesc": "缩放0.6时，浮力性能不变",
+    "editorName": "漂浮荷叶_小（新手）",
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_Sceneobject_Physics_LotusLeafPlatform_Small.prefab",
+    "name": 1948810383,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000033": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光吊灯水母蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911206,
+    "name": 2027647261,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010023": {
+    "name": 1157024605,
+    "editorDisplayPriority": 200,
+    "editorName": "大木板（可漂浮）",
+    "authorAwayInvisible": true,
+    "editorOffset": [
+      0,
+      0.15,
+      0
+    ],
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoardBig.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000035": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光星骑士蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911208,
+    "name": 1165256440,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1080007": {
+    "name": 1095683291,
+    "editorName": "全息滚柱（短）",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_ltem_SceneObject_RollCylinder.prefab",
+    "mass": 30,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "detectionMode": 3,
+    "envObjState": 0
+  },
+  "1010025": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Wood_WoodBallSmall_Ancient.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 102,
+    "name": 1165911781,
+    "mass": 25,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代小木球"
+  },
+  "1400002": {
+    "effBeforeInteract": [
+      "Eff_Item_SceneObject_BeforeInteract"
+    ],
+    "modelScaleInHand": 0.8,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Fruit_Fire.prefab",
+    "bindingId": 1400002,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "火焰果实",
+    "editorName": "火焰果实",
+    "mass": 10,
+    "materialReactId": 33,
+    "actionPrototypeIds": [
+      91
+    ],
+    "name": 1813628372,
+    "detectionMode": 1,
+    "isLockAsPuppet": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "effAfterInteract": [
+      "Eff_Item_SceneObject_ECSFruit_Fire_Idle01"
+    ]
+  },
+  "1080008": {
+    "editorName": "漂浮荷叶",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_Sceneobject_Physics_LotusLeafPlatform.prefab",
+    "name": 1953269869,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010026": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1.5,
+    "BodySize": 0.75,
+    "prefabResID": "$P_Item_SceneObject_Wood_WoodBallMiddle_Ancient.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 102,
+    "name": 1794192030,
+    "mass": 45,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代中木球"
+  },
+  "1200003": {
+    "prefabResID": "$P_Item_SceneObject_Dune.prefab",
+    "name": 1280329521,
+    "isLockAsPuppet": 1,
+    "editorName": "沙丘",
+    "envObjState": 0
+  },
+  "1010027": {
+    "mass": 70,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "editorDisplayPriority": 102,
+    "editorName": "古代大木球",
+    "authorAwayInvisible": true,
+    "name": 1733959671,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_WoodBallBig_Ancient.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1401000": {
+    "editorDesc": "草地果树",
+    "name": 1819602368,
+    "prefabResID": "$P_Item_SceneObject_FruitPlant_Green.prefab",
+    "editorName": "草地果树_挂接用11031到33",
+    "envObjState": 0
+  },
+  "1010028": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Wood_WoodBallSmall.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 102,
+    "name": 1359215486,
+    "mass": 25,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "小木球"
+  },
+  "1401001": {
+    "editorDesc": "雪地果树",
+    "name": 2120545773,
+    "prefabResID": "$P_Item_SceneObject_FruitPlant_Snowy.prefab",
+    "editorName": "雪地果树_挂接用11031到33",
+    "envObjState": 0
+  },
+  "1010029": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1.5,
+    "BodySize": 0.75,
+    "prefabResID": "$P_Item_SceneObject_Wood_WoodBallMiddle.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 102,
+    "name": 1546701111,
+    "mass": 45,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "中木球"
+  },
+  "1990101": {
+    "featureConfigData": {
+      "shiningTime": -1,
+      "shiningRadius": 10,
+      "shiningImpulseThreshold": 100,
+      "shiningValue": 30
+    },
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_FogLightFruitHeavy.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "envObjState": 1,
+    "name": 1635217337,
+    "isLockAsPuppet": 1,
+    "editorName": "迷雾森林果实（重的）",
+    "attachId": 10008,
+    "features": [
+      "LevelFruitFeature",
+      "ShiningItemFeature"
+    ],
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "nonKinematic": 1,
+    "mass": 2,
+    "entityTag": [
+      "TE_Env_Ball"
+    ]
+  },
+  "1200026": {
+    "editorName": "新手教程_不可移动的柱状电池",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryInfiniteCylinder_Ancient.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.6,
+      0
+    ],
+    "name": 1240646337,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "envObjState": 0
+  },
+  "1200027": {
+    "editorName": "新手教程_不可移动的充电电池",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryLimitedCylinder_Ancient.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.6,
+      0
+    ],
+    "name": 1116397212,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "envObjState": 0
+  },
+  "3000001": {
+    "prefabResID": "$P_Item_ParmonEgg_540150.prefab",
+    "petHatchUISceneRotX": 210,
+    "isDestroy": 1,
+    "editorName": "传说鸢尾蛋",
+    "mass": 2,
+    "enableVoxelCheck": 1,
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "editorDisplay": 1,
+    "bindingId": 540150,
+    "name": 1774937979,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "envObjState": 0
+  },
+  "1200028": {
+    "editorName": "新手教程_不可移动的铁箱",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxBig.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "name": 1886619134,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "envObjState": 0
+  },
+  "1200029": {
+    "editorName": "新手教程_不可移动的木箱",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "name": 1609932436,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000003": {
+    "petHatchUISceneRotX": 285,
+    "editorName": "闪耀伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560321.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 560321,
+    "name": 1395915419,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200032": {
+    "editorDesc": "开启后的贝壳",
+    "editorName": "开启后的贝壳",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03_OpenIdle.prefab",
+    "nonKinematic": 1,
+    "name": 1332283777,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "centerOffset": 0.25,
+    "mass": 20,
+    "envObjState": 0
+  },
+  "1200033": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1208126061,
+    "canDestroyByAI": 1,
+    "editorName": "唱歌站立点",
+    "envObjState": 0
+  },
+  "3000006": {
+    "petHatchUISceneRotX": 285,
+    "editorName": "卓越伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560301.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 560301,
+    "name": 1432716863,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200034": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1807483080,
+    "canDestroyByAI": 1,
+    "editorName": "唱歌站立点",
+    "envObjState": 0
+  },
+  "1200035": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1507721543,
+    "canDestroyByAI": 1,
+    "editorName": "唱歌站立点",
+    "envObjState": 0
+  },
+  "1200036": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1253196174,
+    "canDestroyByAI": 1,
+    "editorName": "唱歌站立点",
+    "envObjState": 0
+  },
+  "1200037": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1723146615,
+    "canDestroyByAI": 1,
+    "editorName": "唱歌站立点",
+    "envObjState": 0
+  },
+  "1200038": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "envObjState": 0,
+    "editorDesc": "F交互可开启贝壳宝箱",
+    "actionPrototypeIds": [
+      57
+    ],
+    "isDestroy": 1,
+    "name": 1138276820,
+    "isLockAsPuppet": 1,
+    "materialReactId": 1,
+    "mass": 25,
+    "responseTime": 0.6,
+    "reward": 40011,
+    "editorName": "F交互可开启贝壳宝箱",
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_DigShells"
+    ]
+  },
+  "3000008": {
+    "petHatchUISceneRotX": 285,
+    "editorName": "迷你伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560312.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 560312,
+    "name": 1941925967,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200039": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03_WithMeat.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "centerOffset": 0.25,
+    "envObjState": 0,
+    "editorDesc": "F交互可开启贝壳诱饵",
+    "isDestroy": 1,
+    "name": 1110727077,
+    "isLockAsPuppet": 1,
+    "materialReactId": 5,
+    "responseTime": 0.6,
+    "mass": 25,
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "detectionMode": 3,
+    "actionPrototypeIds": [
+      56
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "F交互可开启贝壳诱饵"
+  },
+  "3000010": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910010,
+    "name": 1846892329,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200040": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "centerOffset": 0.25,
+    "enableRVO": 1,
+    "envObjState": 0,
+    "editorDesc": "废弃",
+    "enableNightShine": 1,
+    "isDestroy": 1,
+    "editorName": "废弃物体",
+    "isLockAsPuppet": 1,
+    "materialReactId": 4,
+    "name": 1538553617,
+    "responseTime": 0.6,
+    "editorDisplay": 1,
+    "mass": 25,
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "actionPrototypeIds": [
+      65
+    ]
+  },
+  "3000013": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910112,
+    "name": 2141016500,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000014": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910113,
+    "name": 1302382596,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200042": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "name": 1522624625,
+    "centerOffset": 0.25,
+    "enableRVO": 1,
+    "envObjState": 0,
+    "editorDesc": "废弃",
+    "enableNightShine": 1,
+    "isDestroy": 1,
+    "editorName": "废弃物体",
+    "isLockAsPuppet": 1,
+    "materialReactId": 4,
+    "mass": 25,
+    "responseTime": 0.6,
+    "editorDisplay": 1,
+    "unlockFailedAnim": "SCFailed",
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "actionPrototypeIds": [
+      69
+    ]
+  },
+  "1200043": {
+    "editorName": "废弃物体",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "editorDisplay": 1,
+    "camp": 3001,
+    "prefabResID": "$P_Item_SceneObject_BonfireLitPoint.prefab",
+    "name": 1459012011,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000017": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910116,
+    "name": 1411316528,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200044": {
+    "editorName": "废弃物体",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "editorDisplay": 1,
+    "camp": 3001,
+    "prefabResID": "$P_Item_SceneObject_BonfireLitPoint_Dead.prefab",
+    "name": 2029000957,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000019": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910999,
+    "name": 1365088411,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200045": {
+    "prefabResID": "$P_Item_Sceneobject_LevelHeartSoul.prefab",
+    "camp": 3001,
+    "editorName": "灵之心外壳",
+    "isLockAsPuppet": 1,
+    "name": 1356268161,
+    "envObjState": 0
+  },
+  "3000023": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911003,
+    "name": 1777460315,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200046": {
+    "editorDesc": "物理-仅玩法用",
+    "editorName": "谜立方（物理）",
+    "enableVoxelCheck": 1,
+    "BodyHeight": 0.2,
+    "BodySize": 0.1,
+    "prefabResID": "$P_Item_SceneObject_NormalBall_EnvObj.prefab",
+    "bindingId": 110001,
+    "name": 1475371294,
+    "detectionMode": 1,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      4
+    ],
+    "envObjState": 0
+  },
+  "3000025": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911005,
+    "name": 1612017628,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000026": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911006,
+    "name": 1864032658,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200047": {
+    "editorDesc": "物理-仅玩法用",
+    "editorName": "超级立方（物理）",
+    "enableVoxelCheck": 1,
+    "BodyHeight": 0.2,
+    "BodySize": 0.1,
+    "prefabResID": "$P_Item_SceneObject_GreatBall_EnvObj.prefab",
+    "bindingId": 110002,
+    "name": 1642915025,
+    "detectionMode": 1,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      4
+    ],
+    "envObjState": 0
+  },
+  "3000028": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "神秘虹光蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911201,
+    "name": 1607903287,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200048": {
+    "editorDesc": "废弃",
+    "editorName": "废弃物体",
+    "prefabResID": "$P_Item_SceneObject_ChampionBall_EnvObj.prefab",
+    "enableVoxelCheck": 1,
+    "BodyHeight": 0.2,
+    "BodySize": 0.1,
+    "editorDisplay": 1,
+    "bindingId": 110003,
+    "name": 2114262153,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      4
+    ],
+    "envObjState": 0
+  },
+  "3000029": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光星魔师蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911202,
+    "name": 1326210008,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200049": {
+    "editorDesc": "废弃",
+    "editorName": "废弃物体",
+    "prefabResID": "$P_Item_SceneObject_FeatherBall_EnvObj.prefab",
+    "enableVoxelCheck": 1,
+    "BodyHeight": 0.2,
+    "BodySize": 0.1,
+    "editorDisplay": 1,
+    "bindingId": 110004,
+    "name": 1107824658,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      4
+    ],
+    "envObjState": 0
+  },
+  "3000030": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光盔勇士蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911203,
+    "name": 1639197498,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200050": {
+    "editorDesc": "废弃",
+    "editorName": "废弃物体",
+    "prefabResID": "$P_Item_SceneObject_ChaseBall_EnvObj.prefab",
+    "enableVoxelCheck": 1,
+    "BodyHeight": 0.2,
+    "BodySize": 0.1,
+    "editorDisplay": 1,
+    "bindingId": 110005,
+    "name": 2111573270,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      4
+    ],
+    "envObjState": 0
+  },
+  "1200052": {
+    "prefabResID": "$P_Item_SceneObject_ChestContainer.prefab",
+    "name": 1707745731,
+    "editorName": "宝箱可破坏挂接点",
+    "envObjState": 0
+  },
+  "3000036": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光巫帽草蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911209,
+    "name": 1194192854,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020032": {
+    "editorName": "可破坏石球_Lv3_破坏计次1小",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_Lv3Ct1.prefab",
+    "camp": 3001,
+    "name": 1761383769,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200054": {
+    "editorDisplay": 1,
+    "camp": 3001,
+    "editorName": "废弃物体",
+    "isLockAsPuppet": 1,
+    "prefabResID": "$P_Item_SceneObject_Pheromone.prefab",
+    "name": 1881635932,
+    "envObjState": 0
+  },
+  "1200055": {
+    "editorName": "椰子树A",
+    "mass": 70,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Coconut_Tree_A.prefab",
+    "camp": 3001,
+    "name": 1593855014,
+    "centerOffset": 6.5,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "3000039": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光蓬蓬羊蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911212,
+    "name": 1529467064,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020034": {
+    "editorDisplayPriority": 109,
+    "editorName": "古代巨石_荆棘塔",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 3,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_RailwayTrack_Item_time.prefab",
+    "name": 1474674043,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200080": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1285568724,
+    "entityTag": [
+      "TE_Env_StartMark"
+    ],
+    "editorName": "AI标记_行为开始",
+    "envObjState": 0
+  },
+  "1200081": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 2038530637,
+    "entityTag": [
+      "TE_Env_EndMark"
+    ],
+    "editorName": "AI标记_行为结束",
+    "envObjState": 0
+  },
+  "3000042": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光莹冰龙蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911215,
+    "name": 1120268468,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200086": {
+    "featureConfigData": {
+      "shiningTime": -1,
+      "shiningRadius": 10,
+      "shiningImpulseThreshold": 100,
+      "shiningValue": 30
+    },
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_FogLightFruit.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "envObjState": 0,
+    "name": 1649679537,
+    "isLockAsPuppet": 1,
+    "editorName": "迷雾森林果实",
+    "attachId": 10008,
+    "features": [
+      "LevelFruitFeature",
+      "ShiningItemFeature"
+    ],
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "nonKinematic": 1,
+    "mass": 2,
+    "entityTag": [
+      "TE_Env_Ball"
+    ]
+  },
+  "1020036": {
+    "BodyHeight": 1,
+    "BodySize": 0.36,
+    "prefabResID": "$P_Item_SceneObject_SoilBall.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "黑色粗糙球_仅剧情使用",
+    "editorDisplayPriority": 109,
+    "editorName": "屎壳郎泥巴球（剧情用）",
+    "isLockAsPuppet": 1,
+    "name": 1687510657,
+    "mass": 30,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.4,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200059": {
+    "editorName": "椰子树C",
+    "mass": 70,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Coconut_Tree_C.prefab",
+    "camp": 3001,
+    "name": 1418117445,
+    "centerOffset": 8.5,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "1200087": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1253925807,
+    "entityTag": [
+      "TE_Env_QuestNpc_MovePoint"
+    ],
+    "editorName": "任务npc前进点",
+    "envObjState": 0
+  },
+  "1200060": {
+    "editorName": "椰子树D",
+    "mass": 70,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Coconut_Tree_D.prefab",
+    "camp": 3001,
+    "name": 1922641008,
+    "centerOffset": 7.5,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "1200088": {
+    "enableNightShine": 1,
+    "editorName": "森林回音石",
+    "callFriend": 1,
+    "BodyHeight": 1,
+    "BodySize": 3,
+    "prefabResID": "$P_Temp_EchoStone_BlockMesh.prefab",
+    "camp": 3001,
+    "name": 1843772692,
+    "callFriendRange": 8,
+    "enableRVO": 1,
+    "envObjState": 0
+  },
+  "1030001": {
+    "mass": 40,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代金属箱（小）",
+    "isLockAsPuppet": 1,
+    "name": 1265714473,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxSmall_Ancient.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.55,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200089": {
+    "prefabResID": "$P_Temp_Forest_Trap.prefab",
+    "enableNightShine": 1,
+    "editorName": "森林陷阱蘑菇",
+    "centerOffset": 0.5,
+    "name": 1470013719,
+    "envObjState": 0
+  },
+  "1200062": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1530262415,
+    "entityTag": [
+      "TE_Env_Leave_Maku1_1"
+    ],
+    "editorName": "百变怪站立点_Mark1_1",
+    "envObjState": 0
+  },
+  "1030002": {
+    "mass": 100,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代金属箱（大）",
+    "isLockAsPuppet": 1,
+    "name": 1469816675,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Metal_Boxbig_Ancient.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      1.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200090": {
+    "prefabResID": "$P_Item_SceneObject_FogForestFruit.prefab",
+    "enableNightShine": 1,
+    "camp": 3001,
+    "editorName": "森林照明果实-1.0",
+    "isLockAsPuppet": 1,
+    "name": 1705507788,
+    "enableRVO": 1,
+    "envObjState": 0
+  },
+  "1200064": {
+    "prefabResID": "$P_Item_SceneObject_Nest_Temp.prefab",
+    "editorName": "海鸥巢穴标记点",
+    "canDestroyByAI": 1,
+    "name": 1906151184,
+    "entityTag": [
+      "TE_Env_Nest"
+    ],
+    "envObjState": 0
+  },
+  "1200091": {
+    "prefabResID": "$P_Item_SceneObject_FogForestPlant.prefab",
+    "camp": 3001,
+    "editorName": "森林照明植物",
+    "isLockAsPuppet": 1,
+    "name": 1993780252,
+    "envObjState": 0
+  },
+  "1200065": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1086713938,
+    "editorName": "百变怪站立点_Mark2_1",
+    "envObjState": 0
+  },
+  "1200092": {
+    "prefabResID": "$P_Item_SceneObject_FogTree_Demo.prefab",
+    "name": 1117947825,
+    "isLockAsPuppet": 1,
+    "editorName": "照明植物2.0",
+    "envObjState": 0
+  },
+  "1200066": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1978165697,
+    "editorName": "百变怪站立点_Mark2_2",
+    "envObjState": 0
+  },
+  "1030005": {
+    "name": 1177778920,
+    "editorDisplayPriority": 103,
+    "editorName": "小型金属球",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BallSmall.prefab",
+    "mass": 40,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200093": {
+    "editorDesc": "F交互可开启拟态宝宝",
+    "enableNightShine": 1,
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "editorName": "F交互可开启拟态宝宝",
+    "isLockAsPuppet": 1,
+    "materialReactId": 11,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "responseTime": 0.6,
+    "camp": 3001,
+    "name": 1184335392,
+    "mass": 25,
+    "actionPrototypeIds": [
+      102
+    ],
+    "enableRVO": 1,
+    "envObjState": 0
+  },
+  "1200094": {
+    "editorDesc": "F交互可开启拟态闪光宝宝",
+    "enableNightShine": 1,
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "editorName": "F交互可开启拟态闪光宝宝",
+    "isLockAsPuppet": 1,
+    "materialReactId": 12,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "responseTime": 0.6,
+    "camp": 3001,
+    "name": 1629518615,
+    "mass": 25,
+    "actionPrototypeIds": [
+      103
+    ],
+    "enableRVO": 1,
+    "envObjState": 0
+  },
+  "1200095": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "enableRVO": 1,
+    "envObjState": 0,
+    "editorDesc": "F交互不可开启拟态宝宝",
+    "enableNightShine": 1,
+    "editorName": "F交互不可开启拟态宝宝",
+    "isLockAsPuppet": 1,
+    "materialReactId": 11,
+    "responseTime": 0.6,
+    "unlockFailedAnim": "SCFailed",
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "mass": 25,
+    "actionPrototypeIds": [
+      69
+    ],
+    "name": 1628846169
+  },
+  "1030007": {
+    "name": 1427652971,
+    "editorDisplayPriority": 103,
+    "editorName": "古代金属球（小）",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BallSmall_Ancient.prefab",
+    "mass": 40,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200096": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "enableRVO": 1,
+    "envObjState": 0,
+    "editorDesc": "F交互不可开启拟态闪光宝宝",
+    "enableNightShine": 1,
+    "editorName": "F交互不可开启拟态闪光宝宝",
+    "isLockAsPuppet": 1,
+    "materialReactId": 12,
+    "responseTime": 0.6,
+    "unlockFailedAnim": "SCFailed",
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "mass": 25,
+    "actionPrototypeIds": [
+      69
+    ],
+    "name": 2048407231
+  },
+  "1200097": {
+    "prefabResID": "$P_Item_SceneObject_EmptyFuse.prefab",
+    "name": 1450930235,
+    "isLockAsPuppet": 1,
+    "editorName": "燃烧引线器",
+    "envObjState": 0
+  },
+  "1200098": {
+    "prefabResID": "$P_Item_VineEnd.prefab",
+    "camp": 3001,
+    "name": 1699741295,
+    "isLockAsPuppet": 1,
+    "editorName": "迷雾森林藤蔓尖端"
+  },
+  "1200076": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1201275119,
+    "entityTag": [
+      "TE_Env_CE_Budclaw_B"
+    ],
+    "editorName": "螃蟹追逐点B",
+    "envObjState": 0
+  },
+  "1200099": {
+    "prefabResID": "$P_SkillObj_90207_Vine04_01.prefab",
+    "name": 1631983634,
+    "camp": 3001,
+    "editorName": "草王BOSS_藤蔓_01",
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1200077": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1879741288,
+    "entityTag": [
+      "TE_Env_CE_Budclaw_C"
+    ],
+    "editorName": "螃蟹追逐点C",
+    "envObjState": 0
+  },
+  "1200078": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1505257993,
+    "entityTag": [
+      "TE_Env_CE_Budclaw_D"
+    ],
+    "editorName": "螃蟹追逐点D",
+    "envObjState": 0
+  },
+  "1200101": {
+    "prefabResID": "$P_SkillObj_90207_Vine04_03.prefab",
+    "name": 1851151557,
+    "camp": 3001,
+    "editorName": "草王BOSS_藤蔓_03",
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1032004": {
+    "mass": 40,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 103,
+    "editorName": "小铁箱_Lv2",
+    "isLockAsPuppet": 1,
+    "name": 1493272911,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxSmall_Lv2.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200102": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1602765022,
+    "camp": 1002,
+    "editorName": "发光植物标记点",
+    "canDestroyByAI": 1,
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "entityTag": [
+      "TE_Env_Empty"
+    ]
+  },
+  "1033001": {
+    "mass": 40,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代金属箱（小）_Lv3",
+    "isLockAsPuppet": 1,
+    "name": 1457970591,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxSmall_Ancient_Lv3.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.55,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200103": {
+    "editorName": "机关球",
+    "isLockAsPuppet": 1,
+    "name": 1659844880,
+    "nonKinematic": 1,
+    "prefabResID": "$P_Item_LevelItem_TempleBall.prefab",
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "canBeDestory": 1,
+    "features": [
+      "MechanismBallFeature"
+    ],
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "centerOffset": 0.5,
+    "detectionMode": 1,
+    "envObjState": 0
+  },
+  "1033002": {
+    "mass": 100,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代金属箱（大）_Lv3",
+    "isLockAsPuppet": 1,
+    "name": 1206387662,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Metal_Boxbig_Ancient_Lv3.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      1.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200104": {
+    "name": 2073754064,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03_1.prefab",
+    "camp": 3001,
+    "centerOffset": 2,
+    "editorName": "草王BOSS_正式藤蔓_01",
+    "envObjState": 0
+  },
+  "1033003": {
+    "name": 1799640805,
+    "editorDisplayPriority": 104,
+    "editorName": "大铁箱_Lv3",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxBig_Lv3.prefab",
+    "mass": 100,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200105": {
+    "name": 1877333600,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03_2.prefab",
+    "camp": 3001,
+    "centerOffset": 2,
+    "editorName": "草王BOSS_正式藤蔓_02",
+    "envObjState": 0
+  },
+  "1200106": {
+    "name": 2093826195,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03_3.prefab",
+    "camp": 3001,
+    "centerOffset": 2,
+    "editorName": "草王BOSS_正式藤蔓_03",
+    "envObjState": 0
+  },
+  "1200107": {
+    "name": 1777723889,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03A_4.prefab",
+    "camp": 3001,
+    "centerOffset": 2,
+    "editorName": "草王BOSS_正式藤蔓_04",
+    "envObjState": 0
+  },
+  "1034001": {
+    "name": 2026404055,
+    "editorDisplayPriority": 109,
+    "editorName": "滑轨铁箱",
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "BodyHeight": 3,
+    "BodySize": 1.5,
+    "prefabResID": "$P_Item_SceneObject_BreakableMetalBox_Ct4.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "editorOffset": [
+      0,
+      1.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      632
+    ],
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200108": {
+    "name": 1217342213,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03A_5.prefab",
+    "camp": 3001,
+    "centerOffset": 2,
+    "editorName": "草王BOSS_正式藤蔓_05",
+    "envObjState": 0
+  },
+  "1034002": {
+    "editorDisplayPriority": 109,
+    "editorName": "滑轨铁箱-图腾",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 3,
+    "BodySize": 1.5,
+    "prefabResID": "$P_Item_SceneObject_BreakableMetalBox_Ct4_Decal.prefab",
+    "name": 2116214162,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200109": {
+    "name": 1958295369,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03A_6.prefab",
+    "camp": 3001,
+    "centerOffset": 2,
+    "editorName": "草王BOSS_正式藤蔓_06",
+    "envObjState": 0
+  },
+  "1200111": {
+    "prefabResID": "$P_Item_SceneObject_TreeSlide.prefab",
+    "name": 2116228941,
+    "editorName": "莲顶鱼滑滑梯",
+    "envObjState": 0
+  },
+  "1200110": {
+    "isDestroy": 1,
+    "editorName": "金羊毛（测试）",
+    "reward": 15200,
+    "entityTag": [
+      "TE_Env_SheepStick",
+      "TE_Env_GoldSheepFur"
+    ],
+    "BodyHeight": 0.35,
+    "BodySize": 0.35,
+    "prefabResID": "$P_Item_SceneObject_Chest_GoldenFurPhysics.prefab",
+    "name": 1220524895,
+    "isShowTopLogo": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      183
+    ],
+    "envObjState": 0
+  },
+  "1200122": {
+    "prefabResID": "$P_Item_SceneObject_CooperationPoint_Emberpup_GlassC.prefab",
+    "editorName": "格拉斯小炭犬呼朋引伴占位点C",
+    "name": 1374548142,
+    "callFriend": 1,
+    "callFriendRange": 8,
+    "envObjState": 0
+  },
+  "1034010": {
+    "prefabResID": "$P_Item_SceneObject_Metal_Fence_4x4.prefab",
+    "name": 1392321899,
+    "editorDisplayPriority": 100,
+    "editorName": "可透视铁栅栏4x4",
+    "envObjState": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1200132": {
+    "editorDesc": "星落森林星皮果堆-较多-不可交互",
+    "editorName": "星皮果（不可动）",
+    "prefabResID": "$P_Item_SceneObject_CollectFruitPile_2.prefab",
+    "centerOffset": 0.15,
+    "name": 1645104681,
+    "envObjState": 0
+  },
+  "1200112": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1120042476,
+    "entityTag": [
+      "TE_Env_UniversalMark_A"
+    ],
+    "editorName": "通用生态标记点A",
+    "envObjState": 0
+  },
+  "1034011": {
+    "prefabResID": "$P_Item_SceneObject_Metal_Fence_1x2.prefab",
+    "name": 1681064280,
+    "editorDisplayPriority": 100,
+    "editorName": "可透视铁栅栏1x2",
+    "envObjState": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1200143": {
+    "editorDesc": "灼火炭（球）无初始元素",
+    "editorName": "灼火炭（球）",
+    "isLockAsPuppet": 1,
+    "entityTag": [
+      "TE_Env_Ball"
+    ],
+    "prefabResID": "$P_Item_SceneObject_Stone_FireStelaeBallNoFire.prefab",
+    "name": 1550541961,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200113": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1461291578,
+    "entityTag": [
+      "TE_Env_UniversalMark_B"
+    ],
+    "editorName": "通用生态标记点B",
+    "envObjState": 0
+  },
+  "1034012": {
+    "prefabResID": "$P_Item_SceneObject_Metal_Fence_1x1.prefab",
+    "name": 1950807491,
+    "editorDisplayPriority": 100,
+    "editorName": "可透视铁栅栏1x1",
+    "envObjState": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1200114": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1113662083,
+    "entityTag": [
+      "TE_Env_UniversalMark_C"
+    ],
+    "editorName": "通用生态标记点C",
+    "envObjState": 0
+  },
+  "1200115": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1669339583,
+    "entityTag": [
+      "TE_Env_UniversalMark_D"
+    ],
+    "editorName": "通用生态标记点D",
+    "envObjState": 0
+  },
+  "1200116": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1627944563,
+    "entityTag": [
+      "TE_Env_WayfindingPoint_A"
+    ],
+    "editorName": "通用寻路标记点A",
+    "envObjState": 0
+  },
+  "1040002": {
+    "mass": 20,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 198,
+    "editorName": "古代永久电池（柱形）",
+    "isLockAsPuppet": 1,
+    "name": 1191925476,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryInfiniteCylinder_Ancient.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.6,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200117": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1885675154,
+    "entityTag": [
+      "TE_Env_WayfindingPoint_B"
+    ],
+    "editorName": "通用寻路标记点B",
+    "envObjState": 0
+  },
+  "1200118": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1785961783,
+    "entityTag": [
+      "TE_Env_WayfindingPoint_C"
+    ],
+    "editorName": "通用寻路标记点C",
+    "envObjState": 0
+  },
+  "1200100": {
+    "prefabResID": "$P_SkillObj_90207_Vine04_02.prefab",
+    "name": 1102173696,
+    "camp": 3001,
+    "editorName": "草王BOSS_藤蔓_02",
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1200119": {
+    "prefabResID": "$P_Item_SceneObject_SpecialMark.prefab",
+    "name": 1237341127,
+    "entityTag": [
+      "TE_Env_WayfindingPoint_D"
+    ],
+    "editorName": "通用寻路标记点D",
+    "envObjState": 0
+  },
+  "1040004": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryInfiniteSphere_Ancient.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 199,
+    "name": 1464273297,
+    "isLockAsPuppet": 1,
+    "editorName": "古代永久电池（球形）",
+    "mass": 10,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.25,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_SheepStick",
+      "TE_Env_Metal"
+    ]
+  },
+  "1200120": {
+    "prefabResID": "$P_Item_SceneObject_CooperationPoint_Emberpup_GlassA.prefab",
+    "editorName": "格拉斯小炭犬呼朋引伴占位点A",
+    "name": 1878361287,
+    "callFriend": 1,
+    "callFriendRange": 8,
+    "envObjState": 0
+  },
+  "1040005": {
+    "editorDisplayPriority": 199,
+    "editorName": "古代电线（无导电特效）",
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_LineLong_Ancient.prefab",
+    "camp": 3001,
+    "name": 1267333652,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1040007": {
+    "editorDisplayPriority": 199,
+    "editorName": "古代电线_短（无导电特效）",
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_LineShort_Ancient.prefab",
+    "camp": 3001,
+    "name": 1103720083,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200123": {
+    "prefabResID": "$P_Item_SceneObject_CooperationPoint_Emberpup_GlassD.prefab",
+    "editorName": "格拉斯小炭犬呼朋引伴占位点D",
+    "name": 2057282634,
+    "callFriend": 1,
+    "callFriendRange": 8,
+    "envObjState": 0
+  },
+  "1040008": {
+    "editorDisplayPriority": 200,
+    "editorName": "古代电池充电板_3端口",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryHolder_3Ports_Ancient.prefab",
+    "camp": 3001,
+    "name": 1196924904,
+    "envObjState": 0,
+    "centerOffset": 0.2,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200124": {
+    "editorDesc": "用于星落森林所有的提交星皮果玩法",
+    "editorName": "星皮果（可动）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_CollectFruit_1.prefab",
+    "camp": 3001,
+    "detectionMode": 1,
+    "editorOffset": [
+      0,
+      0.25,
+      0
+    ],
+    "nonKinematic": 1,
+    "name": 1594448360,
+    "envObjState": 0
+  },
+  "1040009": {
+    "editorDisplayPriority": 200,
+    "editorName": "电线端口_神庙",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 0.5,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_LinePort.prefab",
+    "camp": 3001,
+    "name": 1751098450,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200125": {
+    "editorDesc": "用于星落森林所有的提交星皮果玩法",
+    "editorName": "大星皮果（可动）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_CollectFruit_2.prefab",
+    "camp": 3001,
+    "detectionMode": 1,
+    "nonKinematic": 1,
+    "centerOffset": 0.25,
+    "name": 1094207511,
+    "envObjState": 0
+  },
+  "1040010": {
+    "editorDisplayPriority": 109,
+    "editorName": "古代可充电电池（球形）-神庙专用",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryLimitedSphere_Ancient_Temple.prefab",
+    "name": 1978496880,
+    "camp": 3001,
+    "mass": 20,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "envObjState": 0,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200126": {
+    "prefabResID": "$P_Item_Empty_SB.prefab",
+    "editorDisplayPriority": 110,
+    "editorName": "采蜜鸟鸟房子",
+    "name": 2076501144,
+    "envObjState": 0,
+    "effs": [
+      "Eff_CatchCommon_Indication_Nest"
+    ],
+    "entityTag": [
+      "TE_Env_DewyNest"
+    ]
+  },
+  "1200012": {
+    "extraType": 1,
+    "editorName": "化学_电场",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "editorDisplay": 1,
+    "features": [
+      "EnvElectricFeature"
+    ],
+    "canDestroyByAI": 1,
+    "prefabResID": "$P_Item_EnvObj_Code_Chem_Electric_Field.prefab",
+    "name": 1785180349,
+    "envObjState": 0
+  },
+  "1200013": {
+    "extraType": 2,
+    "editorName": "化学_爆炸场",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "editorDisplay": 1,
+    "features": [
+      "EnvExplosiveFeature"
+    ],
+    "canDestroyByAI": 1,
+    "prefabResID": "$P_Item_EnvObj_Code_Chem_Explosive_Field.prefab",
+    "name": 1173295638,
+    "envObjState": 0
+  },
+  "1200014": {
+    "extraType": 3,
+    "editorName": "化学_冰面",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "editorDisplay": 1,
+    "features": [
+      "EnvIceFeature"
+    ],
+    "canDestroyByAI": 1,
+    "prefabResID": "$P_Item_EnvObj_Code_EnvIceMud.prefab",
+    "name": 1387736101,
+    "envObjState": 0
+  },
+  "1200128": {
+    "editorDisplayPriority": 100,
+    "editorName": "大眼盔头盔",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_HelmonHelmet_01.prefab",
+    "envObjState": 0,
+    "name": 1205823382,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.4,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1040012": {
+    "editorDisplayPriority": 199,
+    "editorName": "古代电池充电板_1端口",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 0.5,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryHolder_1Port_Ancient.prefab",
+    "camp": 3001,
+    "name": 1673558486,
+    "envObjState": 0,
+    "centerOffset": 0.2,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200129": {
+    "name": 1458615232,
+    "editorDisplayPriority": 100,
+    "editorName": "黄金大眼盔头盔",
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_HelmonHelmet_02.prefab",
+    "isShowTopLogo": 1,
+    "extraNameControl": 1,
+    "detectionMode": 1,
+    "editorOffset": [
+      0,
+      0.4,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200031": {
+    "editorDesc": "可拾取贝壳肉",
+    "name": 2121070354,
+    "editorName": "可拾取贝壳肉",
+    "mass": 2,
+    "editorOffset": [
+      0,
+      0.35,
+      0
+    ],
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell02.prefab",
+    "bindingId": 611000,
+    "attachId": 10000,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      4
+    ],
+    "envObjState": 0
+  },
+  "1200041": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "centerOffset": 0.25,
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "editorDesc": "F交互不可开启贝壳宝箱",
+    "name": 1565517462,
+    "isDestroy": 1,
+    "editorName": "F交互不可开启贝壳宝箱",
+    "mass": 25,
+    "materialReactId": 1,
+    "actionPrototypeIds": [
+      69
+    ],
+    "responseTime": 0.6,
+    "reward": 40011,
+    "unlockFailedAnim": "SCFailed",
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_DigShells"
+    ]
+  },
+  "1200051": {
+    "prefabResID": "$P_Item_SceneObject_ObjContaier.prefab",
+    "name": 1601304301,
+    "editorName": "宝箱挂接点",
+    "envObjState": 0
+  },
+  "1200061": {
+    "editorName": "椰子树E",
+    "mass": 70,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Coconut_Tree_E.prefab",
+    "camp": 3001,
+    "name": 1386011555,
+    "centerOffset": 6.5,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "1200071": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1612843370,
+    "editorName": "百变怪撞墙MarkC",
+    "envObjState": 0
+  },
+  "1200072": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 2093338462,
+    "editorName": "百变怪中心点",
+    "envObjState": 0
+  },
+  "1200073": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1835685134,
+    "entityTag": [
+      "TE_Env_Move_Quest_1"
+    ],
+    "editorName": "任务标点1",
+    "envObjState": 0
+  },
+  "1200074": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 2094998221,
+    "entityTag": [
+      "TE_Env_Move_Quest_2"
+    ],
+    "editorName": "任务标点2",
+    "envObjState": 0
+  },
+  "1200075": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1160675537,
+    "entityTag": [
+      "TE_Env_CE_Budclaw_A"
+    ],
+    "editorName": "螃蟹追逐点A",
+    "envObjState": 0
+  },
+  "1050002": {
+    "mass": 35,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "editorDisplayPriority": 109,
+    "editorName": "古代爆炸桶",
+    "authorAwayInvisible": true,
+    "name": 1979027695,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Explosive_BombBarrel_Ancient.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200169": {
+    "editorDesc": "雪天拉拉蛋蛋（假）",
+    "editorDisplayPriority": 100,
+    "editorName": "雪天拉拉蛋蛋（假）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_11047101.prefab",
+    "nonKinematic": 1,
+    "name": 1281888911,
+    "detectionMode": 3,
+    "envObjState": 0,
+    "centerOffset": 0.45,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1050003": {
+    "mass": 35,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "editorDisplayPriority": 105,
+    "editorName": "爆炸桶",
+    "authorAwayInvisible": true,
+    "name": 2135990936,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Explosive_BombBarrel.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200170": {
+    "editorDesc": "水板块用_包裹宝箱泡泡",
+    "name": 1241770534,
+    "mass": 10,
+    "BodyHeight": 1.3,
+    "BodySize": 1.3,
+    "prefabResID": "$P_Item_SceneObject_GoldenBubble.prefab",
+    "editorName": "水板块用_包裹宝箱泡泡",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1050004": {
+    "mass": 35,
+    "editorOffset": [
+      0,
+      1.35,
+      0
+    ],
+    "editorDisplayPriority": 109,
+    "editorName": "古代爆炸球_28号地宫",
+    "authorAwayInvisible": true,
+    "name": 2077040813,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Explosive_BombBall_Ancient_Temple28.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200135": {
+    "editorDesc": "高地玩法专用",
+    "prefabResID": "$P_Item_SceneObject_Stone_MudMound_Broken.prefab",
+    "editorName": "已损坏的粪堆",
+    "name": 1105903997,
+    "envObjState": 0,
+    "BodyHeight": 1,
+    "BodySize": 3
+  },
+  "1012001": {
+    "name": 1332729182,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 101,
+    "editorName": "大木箱_Lv2",
+    "authorAwayInvisible": true,
+    "materialReactId": 10,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Lv2.prefab",
+    "mass": 70,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200136": {
+    "editorDesc": "花海专用",
+    "prefabResID": "$P_Item_SceneObject_Streetlamp.prefab",
+    "editorName": "花海野外路灯",
+    "name": 1723385701,
+    "centerOffset": 2,
+    "envObjState": 0,
+    "entityTag": [
+      "TE_Env_Light"
+    ]
+  },
+  "1052004": {
+    "name": 2139421539,
+    "editorDisplayPriority": 109,
+    "editorName": "古代爆炸桶_Lv3",
+    "authorAwayInvisible": true,
+    "canDestroyByAI": 1,
+    "BodyHeight": 1.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Explosive_BombBarrel_Ancient_Lv3.prefab",
+    "mass": 45,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      0.7,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200137": {
+    "editorDesc": "雪天大眼盔头盔（假）",
+    "editorDisplayPriority": 100,
+    "editorName": "雪天大眼盔头盔（假）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_1002101.prefab",
+    "nonKinematic": 1,
+    "name": 2080278525,
+    "detectionMode": 3,
+    "envObjState": 0,
+    "centerOffset": 0.45,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1060002": {
+    "editorDesc": "30day临时，后面要替换材质",
+    "editorName": "静止大冰块_3级",
+    "authorAwayInvisible": true,
+    "BodyHeight": 3,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Ice_FrozenCaveIceBig_Lv3.prefab",
+    "camp": 3001,
+    "name": 1745539957,
+    "centerOffset": 4.4,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200138": {
+    "editorDesc": "雪天盔卫士（假）",
+    "editorDisplayPriority": 100,
+    "editorName": "雪天盔卫士（假）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_10027.prefab",
+    "envObjState": 0,
+    "name": 1733929092,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200174": {
+    "editorDesc": "泡泡浮泡章鱼-无物理-不可交互",
+    "editorName": "泡泡浮泡章鱼（不可动）",
+    "prefabResID": "$P_Item_SceneObject_BubbleAnimo_003.prefab",
+    "centerOffset": 0.15,
+    "name": 1878892449,
+    "envObjState": 0
+  },
+  "1060003": {
+    "editorName": "静止小冰块",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 5,
+    "prefabResID": "$P_Item_SceneObject_Ice_FrozenCaveIceSmall.prefab",
+    "camp": 3001,
+    "name": 1177426980,
+    "centerOffset": 2,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200139": {
+    "editorDesc": "支线-勇气之剑",
+    "editorDisplayPriority": 100,
+    "editorName": "勇气之剑",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_10026.prefab",
+    "name": 1836945511,
+    "centerOffset": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "envObjState": 0
+  },
+  "1060005": {
+    "editorName": "水面生成浮冰（不可直接布置）",
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "editorDisplay": 1,
+    "prefabResID": "$P_Item_SceneObject_FloatIce.prefab",
+    "camp": 3001,
+    "detectionMode": 3,
+    "name": 1557718282,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200140": {
+    "editorDesc": "雪天赐福大眼盔头盔（假）",
+    "editorDisplayPriority": 100,
+    "editorName": "雪天赐福大眼盔头盔（假）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_1002101_CrystalTemp.prefab",
+    "nonKinematic": 1,
+    "name": 2067492303,
+    "detectionMode": 3,
+    "envObjState": 0,
+    "centerOffset": 0.45,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal",
+      "TE_Wild_Crystal"
+    ]
+  },
+  "1060006": {
+    "editorName": "静止小冰块（目前最小）",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 5,
+    "prefabResID": "$P_Item_SceneObject_Ice_FrozenCaveIceVerySmall.prefab",
+    "camp": 3001,
+    "name": 1760227260,
+    "centerOffset": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1060008": {
+    "editorDesc": "一般用这个雪球",
+    "editorDisplayPriority": 105,
+    "editorName": "大雪球",
+    "authorAwayInvisible": true,
+    "envObjState": 0,
+    "BodyHeight": 3,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_SnowBallBig.prefab",
+    "name": 1644266557,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_10024_KickStone"
+    ]
+  },
+  "1200184": {
+    "editorDesc": "杂物堆",
+    "name": 1414191168,
+    "mass": 10,
+    "BodyHeight": 1.3,
+    "BodySize": 1.3,
+    "prefabResID": "$P_Item_Props_Debris_001_Mix.prefab",
+    "editorName": "杂物堆",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1060009": {
+    "editorDesc": "藏有大眼盔的雪球，不要混用",
+    "editorDisplayPriority": 105,
+    "editorName": "藏有大眼盔的雪球（会逃跑）",
+    "authorAwayInvisible": true,
+    "materialReactId": 20,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_SnowBall_Helmon.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "name": 1903843835,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200185": {
+    "editorDesc": "野外隐匿点",
+    "name": 1411332125,
+    "mass": 40,
+    "BodyHeight": 1,
+    "BodySize": 1.5,
+    "prefabResID": "$P_Item_Empty_SB.prefab",
+    "editorName": "野外隐匿点",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200145": {
+    "editorDesc": "星乐蒂营地提交道具的碗",
+    "prefabResID": "$P_Item_SceneObject_PlacementTable.prefab",
+    "name": 1743410580,
+    "editorName": "星皮果小碗",
+    "envObjState": 0,
+    "enableVoxelCheck": 1,
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1200186": {
+    "editorDesc": "空树桩",
+    "name": 1346801833,
+    "prefabResID": "$P_Item_Props_Stump_001_Mix.prefab",
+    "editorName": "空树桩",
+    "envObjState": 0
+  },
+  "1200146": {
+    "editorDesc": "【迷梦崽区域】爆裂松果",
+    "editorName": "【迷梦崽区域】爆裂松果",
+    "isLockAsPuppet": 1,
+    "mass": 30,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_BlastPineSeed.prefab",
+    "name": 1705155560,
+    "camp": 3001,
+    "detectionMode": 1,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200147": {
+    "editorDesc": "【迷梦崽区域】爆裂松树",
+    "editorName": "【迷梦崽区域】爆裂松树",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_BlastPineTree.prefab",
+    "camp": 3001,
+    "name": 1165061016,
+    "canDestroyByAI": 1,
+    "mass": 40,
+    "entityTag": [
+      "TE_Env_BlastTree"
+    ],
+    "envObjState": 0
+  },
+  "1200148": {
+    "editorDesc": "【迷梦崽区域】催眠花采蜜交互",
+    "prefabResID": "$P_Item_Empty_SB.prefab",
+    "editorDisplayPriority": 110,
+    "editorName": "【迷梦崽区域】催眠花采蜜交互",
+    "name": 1460311389,
+    "envObjState": 0,
+    "actionPrototypeIds": [
+      625
+    ],
+    "effs": [
+      "Eff_FlowerSeaNorth_Flower"
+    ]
+  },
+  "1200150": {
+    "editorDesc": "忧伤debuff（不可直接布置）",
+    "editorName": "忧伤debuff（不可直接布置）",
+    "isLockAsPuppet": 1,
+    "materialReactId": 41,
+    "prefabResID": "$P_Item_SceneObject_SadCloudColider.prefab",
+    "name": 1317885333,
+    "attachId": 11029,
+    "entityTag": [
+      "TE_Env_SadCloud"
+    ],
+    "canDestroyByAI": 0,
+    "centerOffset": 0,
+    "camp": 3001,
+    "envObjState": 0
+  },
+  "1200152": {
+    "editorDesc": "迷梦香晶",
+    "editorName": "迷梦香晶",
+    "envObjState": 0,
+    "actionPrototypeIds": [
+      91
+    ],
+    "name": 1289720551,
+    "prefabResID": "$P_Item_SceneObject_SugarRock.prefab",
+    "bindingId": 1200152,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "detectionMode": 1,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_SleepFruit",
+      "TE_Env_10381_eat"
+    ]
+  },
+  "1200153": {
+    "editorDesc": "眠眠羊的毛",
+    "name": 1797721285,
+    "prefabResID": "$P_Item_SceneObject_SleepSheepCloud_001.prefab",
+    "editorName": "眠眠羊的毛",
+    "envObjState": 0
+  },
+  "1200154": {
+    "prefabResID": "$P_Item_BounceFurr_Normal.prefab",
+    "name": 1724764791,
+    "editorName": "普通毛团",
+    "envObjState": 0
+  },
+  "1200192": {
+    "editorDesc": "紫色泡泡-无物理-不可交互",
+    "editorName": "紫色泡泡（不可动）",
+    "prefabResID": "$P_Item_SceneObject_BubblePlant_Bubble_Purple.prefab",
+    "centerOffset": 0.15,
+    "name": 1103812813,
+    "envObjState": 0
+  },
+  "1200155": {
+    "editorDesc": "高地格拉斯玩法专用",
+    "name": 2017339930,
+    "prefabResID": "$P_Item_SceneObject_Balance1.prefab",
+    "editorName": "盔卫士格拉斯-关卡1",
+    "envObjState": 0
+  },
+  "1200193": {
+    "editorDesc": "红色泡泡-无物理-不可交互",
+    "editorName": "红色泡泡（不可动）",
+    "prefabResID": "$P_Item_SceneObject_BubblePlant_Bubble_Red.prefab",
+    "centerOffset": 0.15,
+    "name": 1107409825,
+    "envObjState": 0
+  },
+  "1200156": {
+    "editorDesc": "高地格拉斯玩法专用",
+    "name": 1621427576,
+    "prefabResID": "$P_Item_SceneObject_Balance2.prefab",
+    "editorName": "盔卫士格拉斯-关卡2",
+    "envObjState": 0
+  },
+  "1200194": {
+    "editorDesc": "黄色泡泡-无物理-不可交互",
+    "editorName": "黄色泡泡（不可动）",
+    "prefabResID": "$P_Item_SceneObject_BubblePlant_Bubble_Yellow.prefab",
+    "centerOffset": 0.15,
+    "name": 2054387739,
+    "envObjState": 0
+  },
+  "1200157": {
+    "editorDesc": "高地格拉斯玩法专用",
+    "name": 1922764157,
+    "prefabResID": "$P_Item_SceneObject_Balance3.prefab",
+    "editorName": "盔卫士格拉斯-关卡3",
+    "envObjState": 0
+  },
+  "1200158": {
+    "editorDesc": "高地格拉斯玩法专用",
+    "name": 1558586046,
+    "prefabResID": "$P_Item_SceneObject_Balance1_AirWall.prefab",
+    "editorName": "盔卫士格拉斯-关卡1-空气墙",
+    "envObjState": 0
+  },
+  "1200201": {
+    "prefabResID": "$P_Item_SceneObject_Block_Dimai_01.prefab",
+    "name": 1389822359,
+    "editorName": "堵路藤曼",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200159": {
+    "editorDesc": "高地格拉斯玩法专用",
+    "name": 1896284727,
+    "prefabResID": "$P_Item_SceneObject_Balance2_AirWall.prefab",
+    "editorName": "盔卫士格拉斯-关卡2-空气墙",
+    "envObjState": 0
+  },
+  "1200203": {
+    "prefabResID": "$P_Item_SceneObject_Block_Dimai_03.prefab",
+    "name": 1274653238,
+    "editorName": "堵路藤曼",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200160": {
+    "editorDesc": "高地格拉斯玩法专用",
+    "name": 1118583910,
+    "prefabResID": "$P_Item_SceneObject_Balance3_AirWall.prefab",
+    "editorName": "盔卫士格拉斯-关卡3-空气墙",
+    "envObjState": 0
+  },
+  "1200204": {
+    "prefabResID": "$P_Item_SceneObject_Block_Dimai_04.prefab",
+    "name": 1235801836,
+    "editorName": "堵路藤曼",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200161": {
+    "editorName": "ARK弹跳蘑菇（不可直接布置）",
+    "mass": 30,
+    "BodyHeight": 1,
+    "BodySize": 2,
+    "prefabResID": "$P_WB_BouncePlantSmall_Ark.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "name": 1274802546,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "3000050": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "飘飘花蛋",
+    "prefabResID": "$P_Item_FlowEgg.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 540147,
+    "name": 1733377911,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200162": {
+    "editorDesc": "魅乐薇进化材料",
+    "isDestroy": 1,
+    "editorName": "迷梦花蕊",
+    "maxLifeTime": 10,
+    "prefabResID": "$P_Item_SceneObject_WhiteRoseSeed.prefab",
+    "name": 2121663830,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "effBeforeInteract": [
+      "Eff_Level_DistanceShiningStar"
+    ],
+    "actionPrototypeIds": [
+      627
+    ],
+    "envObjState": 0
+  },
+  "3000046": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "影之闪耀蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911301,
+    "name": 1637514717,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000045": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "金色极巨蛋",
+    "prefabResID": "$E_P_Item_BigGoldEgg01.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911300,
+    "name": 1472134127,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000044": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光暴睡熊蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911217,
+    "name": 1418040314,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010032": {
+    "editorDesc": "水板块需求，我判断可以作为通用物",
+    "editorDisplayPriority": 100,
+    "editorName": "生长攀藤_10m_向上",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 0.6,
+    "prefabResID": "$P_Item_SceneObject_GrowClimbVine_10m.prefab",
+    "camp": 3001,
+    "name": 1841680982,
+    "mass": 20,
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000043": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光胖胖獭蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911216,
+    "name": 1631700438,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000041": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光刺剑枚蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911214,
+    "name": 1842706712,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000040": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光熔岩暴龙蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911213,
+    "name": 1684093219,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010033": {
+    "editorDesc": "水板块需求，我判断可以作为通用物",
+    "editorDisplayPriority": 100,
+    "editorName": "生长攀藤_10m_向下",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_GrowClimbDownVine_10m.prefab",
+    "camp": 3001,
+    "name": 1727557021,
+    "mass": 20,
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010010": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Ancient.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 101,
+    "name": 1537617270,
+    "mass": 70,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（大）"
+  },
+  "3000038": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光雷光貂蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911211,
+    "name": 1915400557,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010034": {
+    "editorDesc": "水板块需求，我判断可以作为通用物",
+    "editorDisplayPriority": 100,
+    "editorName": "生长攀藤_6m_向上",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 0.6,
+    "prefabResID": "$P_Item_SceneObject_GrowClimbVine_6m.prefab",
+    "camp": 3001,
+    "name": 1222555256,
+    "mass": 20,
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010020": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Ancient.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1988715187,
+    "mass": 30,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（小）（无奖励）"
+  },
+  "1200166": {
+    "effBeforeInteract": [
+      "Eff_CatchCommon_Indication_Nest_1"
+    ],
+    "editorDisplayPriority": 110,
+    "editorName": "采蜜鸟鸟房子玄关-主线",
+    "prefabResID": "$P_Item_Empty_SB.prefab",
+    "name": 1692948030,
+    "actionPrototypeIds": [
+      603,
+      631
+    ],
+    "envObjState": 0
+  },
+  "1010035": {
+    "editorDesc": "水板块需求，我判断可以作为通用物",
+    "editorDisplayPriority": 100,
+    "editorName": "生长攀藤_6m_向下",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_GrowClimbDownVine_6m.prefab",
+    "camp": 3001,
+    "name": 1342629045,
+    "mass": 20,
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010030": {
+    "mass": 70,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "editorDisplayPriority": 102,
+    "editorName": "大木球",
+    "authorAwayInvisible": true,
+    "name": 1530480044,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_WoodBallBig.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000037": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光霜锋狼蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911210,
+    "name": 1138167109,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010031": {
+    "editorDisplayPriority": 200,
+    "editorName": "木板（可漂浮）",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_Board.prefab",
+    "name": 1636586412,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.15,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000034": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光小号鸥蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911207,
+    "name": 1530634697,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012002": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Lv2.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1961607698,
+    "mass": 30,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "小木箱_Lv2"
+  },
+  "3000032": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光狼斗士蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911205,
+    "name": 2074989386,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000031": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "虹光淬刃螳螂蛋",
+    "prefabResID": "$E_P_Item_GrabRainBowEgg_05.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911204,
+    "name": 1470694857,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012003": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Wood_Barrel_Lv2.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 102,
+    "name": 2078595854,
+    "mass": 35,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "木桶_Lv2"
+  },
+  "3000027": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911007,
+    "name": 1975420268,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000024": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911004,
+    "name": 1511202830,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012006": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_地面_Lv2",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Ground_Lv2.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 2055511700,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000021": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911001,
+    "name": 1978845950,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000020": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "大幽黯伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEggBlack_03.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5911000,
+    "name": 2055005459,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012007": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_缠绕_Lv2",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Twist_Lv2.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 1163368186,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000018": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910117,
+    "name": 1579490909,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000016": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910115,
+    "name": 1949624787,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012008": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_墙面_Lv2",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Wall_Lv2.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "name": 1475107612,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000015": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910114,
+    "name": 2070655092,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000012": {
+    "petHatchUISceneRotX": 90,
+    "editorName": "香气遗迹伊莫蛋",
+    "prefabResID": "$E_P_Item_GrabEgg02_A.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 5910111,
+    "name": 1543597752,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012010": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Ancient_Lv2.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 101,
+    "name": 1230191798,
+    "mass": 70,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（大）_Lv2"
+  },
+  "3000009": {
+    "petHatchUISceneRotX": 285,
+    "editorName": "神秘伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560312.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 4040120,
+    "name": 1944807209,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000007": {
+    "petHatchUISceneRotX": 285,
+    "editorName": "头目伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560311.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 560311,
+    "name": 1153216084,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012011": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Ancient_Lv2.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 2028267005,
+    "mass": 30,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（小）_Lv2"
+  },
+  "3000005": {
+    "petHatchUISceneRotX": 250,
+    "editorName": "神奇伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560323.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 560323,
+    "name": 1827996666,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000004": {
+    "petHatchUISceneRotX": 285,
+    "editorName": "闪亮伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560322.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 560322,
+    "name": 1148886370,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012013": {
+    "editorDisplayPriority": 200,
+    "editorName": "古代木板（可漂浮）_Lv2",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_Board_Ancient_Lv2.prefab",
+    "name": 1472157080,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "3000002": {
+    "petHatchUISceneRotX": 285,
+    "editorName": "虹光伊莫蛋",
+    "prefabResID": "$P_Item_ParmonEgg_560331.prefab",
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "editorDisplay": 1,
+    "bindingId": 560331,
+    "name": 1540890557,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "2000002": {
+    "editorDesc": "可破坏碎石（仅抢蛋用）",
+    "name": 1871867946,
+    "mass": 75,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_Sandbox_GrabEgg_BreakableStone.prefab",
+    "editorName": "可破坏碎石（仅抢蛋用）",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012017": {
+    "name": 1248788964,
+    "editorDisplayPriority": 101,
+    "editorName": "大木箱（无奖励）_Lv2",
+    "authorAwayInvisible": true,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Lv2.prefab",
+    "mass": 70,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "2000001": {
+    "editorDesc": "石球陷阱（仅抢蛋用）",
+    "name": 1903872305,
+    "mass": 75,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_Sandbox_GrabEgg_StoneBallTrap.prefab",
+    "editorName": "石球陷阱（仅抢蛋用）",
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012018": {
+    "mass": 30,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "editorDisplayPriority": 100,
+    "editorName": "小木箱（无奖励）_Lv2",
+    "authorAwayInvisible": true,
+    "name": 1444369162,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Lv2.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1400006": {
+    "effBeforeInteract": [
+      "Eff_Item_SceneObject_BeforeInteract"
+    ],
+    "modelScaleInHand": 0.7,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Fruit_BlackFog.prefab",
+    "bindingId": 1400006,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "黑耀果实（抢蛋主用）",
+    "editorName": "黑耀果实（抢蛋主用）",
+    "mass": 10,
+    "materialReactId": 44,
+    "actionPrototypeIds": [
+      91
+    ],
+    "detectionMode": 1,
+    "name": 1254965039,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "isLockAsPuppet": 1
+  },
+  "1012019": {
+    "mass": 70,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "editorDisplayPriority": 101,
+    "editorName": "古代木箱（大）（无奖励）_Lv2",
+    "authorAwayInvisible": true,
+    "name": 1660394961,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Ancient_Lv2.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1400005": {
+    "effBeforeInteract": [
+      "Eff_Item_SceneObject_BeforeInteract"
+    ],
+    "modelScaleInHand": 0.8,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Fruit_Sleep.prefab",
+    "bindingId": 1400005,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "睡梦果实",
+    "name": 1744635800,
+    "isLockAsPuppet": 1,
+    "mass": 10,
+    "detectionMode": 1,
+    "actionPrototypeIds": [
+      91
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "睡梦果实"
+  },
+  "1012020": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Ancient_Lv2.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1453354317,
+    "mass": 30,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（小）（无奖励）_Lv2"
+  },
+  "1400004": {
+    "effBeforeInteract": [
+      "Eff_Item_SceneObject_BeforeInteract"
+    ],
+    "modelScaleInHand": 0.8,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Fruit_Wind.prefab",
+    "bindingId": 1400004,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "风果实",
+    "editorName": "风果实",
+    "mass": 10,
+    "materialReactId": 34,
+    "actionPrototypeIds": [
+      91
+    ],
+    "name": 1127847560,
+    "detectionMode": 1,
+    "isLockAsPuppet": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "effAfterInteract": [
+      "Eff_Item_SceneObject_ECSFruit_Wind_Idle01"
+    ]
+  },
+  "1012022": {
+    "editorDisplayPriority": 200,
+    "editorName": "古代大木板（可漂浮）_Lv2",
+    "authorAwayInvisible": true,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoardBig_Ancient_Lv2.prefab",
+    "name": 1142735101,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1400003": {
+    "effBeforeInteract": [
+      "Eff_Item_SceneObject_BeforeInteract"
+    ],
+    "modelScaleInHand": 0.7,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Fruit_BlackHole.prefab",
+    "bindingId": 1400003,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "黑洞果实",
+    "editorName": "黑洞果实",
+    "mass": 10,
+    "materialReactId": 30,
+    "actionPrototypeIds": [
+      91
+    ],
+    "name": 1624151064,
+    "detectionMode": 1,
+    "isLockAsPuppet": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "effAfterInteract": [
+      "Eff_Item_SceneObject_ECSFruit_Gravity_Idle01"
+    ]
+  },
+  "1400001": {
+    "effBeforeInteract": [
+      "Eff_Item_SceneObject_BeforeInteract"
+    ],
+    "modelScaleInHand": 0.8,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Fruit_Electric.prefab",
+    "bindingId": 1400001,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "电果实",
+    "editorName": "电果实",
+    "mass": 10,
+    "materialReactId": 31,
+    "actionPrototypeIds": [
+      91
+    ],
+    "name": 1244337505,
+    "detectionMode": 1,
+    "isLockAsPuppet": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "effAfterInteract": [
+      "Eff_Item_SceneObject_ECSFruit_Electric_Idle01"
+    ]
+  },
+  "1012023": {
+    "editorDisplayPriority": 200,
+    "editorName": "大木板（可漂浮）_Lv2",
+    "authorAwayInvisible": true,
+    "editorOffset": [
+      0,
+      0.15,
+      0
+    ],
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoardBig_Lv2.prefab",
+    "name": 1887638818,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1300004": {
+    "editorDesc": "黑洞果实场（不可直接布置）",
+    "prefabResID": "$P_Item_SceneObject_Fruit_BlackHoleField.prefab",
+    "name": 2120656263,
+    "editorName": "黑洞果实场（不可直接布置）",
+    "envObjState": 0,
+    "editorDisplay": 1,
+    "BodyHeight": 2,
+    "BodySize": 2
+  },
+  "1300003": {
+    "editorDesc": "风果实风场（不可直接布置）",
+    "name": 1331530046,
+    "BodyHeight": 10,
+    "BodySize": 3,
+    "editorDisplay": 1,
+    "prefabResID": "$P_Item_SceneObject_Fruit_WindField.prefab",
+    "editorName": "风果实风场（不可直接布置）",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1012024": {
+    "editorDisplayPriority": 200,
+    "editorName": "木板（可漂浮）_Lv2",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_Board_Lv2.prefab",
+    "name": 1636094529,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.15,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1300001": {
+    "editorDesc": "火焰果实法术场（不可直接布置）",
+    "name": 1282971934,
+    "BodyHeight": 1,
+    "BodySize": 3,
+    "editorDisplay": 1,
+    "prefabResID": "$P_Item_SceneObject_Fruit_FireField.prefab",
+    "editorName": "火焰果实法术场（不可直接布置）",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200228": {
+    "name": 1198310460,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Purple_Dead.prefab",
+    "camp": 3001,
+    "editorName": "幽幽焰专属_紫色篝火（未点燃）",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1013001": {
+    "name": 1887654785,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 101,
+    "editorName": "大木箱_Lv3",
+    "authorAwayInvisible": true,
+    "materialReactId": 10,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Lv3.prefab",
+    "mass": 70,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200227": {
+    "name": 1076989533,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Purple.prefab",
+    "camp": 3001,
+    "editorName": "幽幽焰专属_紫色篝火",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200226": {
+    "name": 1288679349,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Cyan_Dead.prefab",
+    "camp": 3001,
+    "editorName": "幽幽焰专属_靛青篝火（未点燃）",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1013002": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Lv3.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1895065215,
+    "mass": 30,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "小木箱_Lv3"
+  },
+  "1200225": {
+    "name": 2112063790,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Cyan.prefab",
+    "camp": 3001,
+    "editorName": "幽幽焰专属_靛青篝火",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200224": {
+    "name": 1890208413,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Blue_Dead.prefab",
+    "camp": 3001,
+    "editorName": "幽幽焰专属_幽蓝篝火（未点燃）",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1013003": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Wood_Barrel_Lv3.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 102,
+    "name": 2074523609,
+    "mass": 35,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "木桶_Lv3"
+  },
+  "1200217": {
+    "prefabResID": "$P_LC_3000_chestinsand.prefab",
+    "camp": 1,
+    "editorName": "藏宝箱沙堆_挂接用10015",
+    "canDestroyByAI": 3001,
+    "name": 1120516930,
+    "envObjState": 1
+  },
+  "1200216": {
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Chest_Shell03.prefab",
+    "camp": 3001,
+    "centerOffset": 0.25,
+    "envObjState": 0,
+    "editorDesc": "F交互不可开启贝壳宝箱-无奖励",
+    "isLockAsPuppet": 1,
+    "isDestroy": 1,
+    "editorName": "F交互不可开启贝壳宝箱-低级宝箱",
+    "mass": 25,
+    "materialReactId": 1,
+    "name": 1850427728,
+    "responseTime": 0.6,
+    "actionPrototypeIds": [
+      69
+    ],
+    "unlockFailedAnim": "SCFailed",
+    "unlockSound": "sound_sceneobject_chest_shell_open",
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_DigShells"
+    ]
+  },
+  "1013006": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_地面_Lv3",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Ground_Lv3.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 2145873550,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1052003": {
+    "name": 1136927673,
+    "editorDisplayPriority": 109,
+    "editorName": "古代爆炸桶_Lv2",
+    "authorAwayInvisible": true,
+    "canDestroyByAI": 1,
+    "BodyHeight": 1.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Explosive_BombBarrel_Ancient_Lv2.prefab",
+    "mass": 45,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      0.6,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200079": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1709778941,
+    "entityTag": [
+      "TE_Env_QuestWolf_Chest"
+    ],
+    "editorName": "火狼任务",
+    "envObjState": 0
+  },
+  "1013007": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_缠绕_Lv3",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Twist_Lv3.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 1783354033,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200212": {
+    "editorName": "ECS白盒_木头中",
+    "authorAwayInvisible": 1,
+    "mass": 30,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_WOOD_Mid.prefab",
+    "name": 1663435341,
+    "camp": 1,
+    "detectionMode": 3,
+    "canDestroyByAI": 3001,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 1
+  },
+  "1200211": {
+    "editorName": "ECS白盒_木头短",
+    "authorAwayInvisible": 1,
+    "mass": 30,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_WOOD_Small.prefab",
+    "name": 2140106651,
+    "camp": 1,
+    "detectionMode": 3,
+    "canDestroyByAI": 3001,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 1
+  },
+  "1013008": {
+    "editorDisplayPriority": 200,
+    "editorName": "可燃烧藤蔓_墙面_Lv3",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Wall_Lv3.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "name": 1148450536,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1030004": {
+    "mass": 40,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 103,
+    "editorName": "小铁箱",
+    "isLockAsPuppet": 1,
+    "name": 1881670980,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxSmall.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200067": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1501797293,
+    "editorName": "百变怪站立点_Mark2_3",
+    "envObjState": 0
+  },
+  "1200208": {
+    "editorDesc": "冒险小菇玩法专属",
+    "prefabResID": "$P_Item_SceneObject_Mushroom_Spore.prefab",
+    "editorName": "记忆孢子",
+    "name": 1841670725,
+    "extraNameControl": 2,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200207": {
+    "editorDesc": "冒险小菇玩法专属",
+    "prefabResID": "$P_Item_SceneObject_Mushroom_House_Crescent.prefab",
+    "editorName": "宁静岛蘑菇屋",
+    "name": 1190489574,
+    "extraNameControl": 2,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200206": {
+    "editorDesc": "冒险小菇玩法专属",
+    "prefabResID": "$P_Item_SceneObject_Mushroom_Signpost.prefab",
+    "editorName": "冒险小菇路牌",
+    "name": 1524850669,
+    "extraNameControl": 2,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200205": {
+    "editorDesc": "冒险小菇玩法专属",
+    "prefabResID": "$P_Item_SceneObject_Mushroom_Seed.prefab",
+    "editorName": "屋屋菇",
+    "name": 1274230269,
+    "extraNameControl": 2,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200202": {
+    "prefabResID": "$P_Item_SceneObject_Block_Dimai_02.prefab",
+    "name": 1244119019,
+    "editorName": "堵路藤曼",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200200": {
+    "prefabResID": "$P_Item_SceneObject_TowerVineBridge_Group.prefab",
+    "name": 1952307378,
+    "editorName": "堵路藤曼",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200191": {
+    "editorDesc": "蓝色泡泡-无物理-不可交互",
+    "editorName": "蓝色泡泡（不可动）",
+    "prefabResID": "$P_Item_SceneObject_BubblePlant_Bubble_Blue.prefab",
+    "centerOffset": 0.15,
+    "name": 1547717260,
+    "envObjState": 0
+  },
+  "1200190": {
+    "editorDesc": "鸟巢",
+    "name": 1675342274,
+    "prefabResID": "P_Item_SceneObject_SoulEggNest_001",
+    "editorName": "鸟巢",
+    "envObjState": 0
+  },
+  "1013017": {
+    "name": 1325266094,
+    "editorDisplayPriority": 101,
+    "editorName": "大木箱（无奖励）_Lv3",
+    "authorAwayInvisible": true,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Lv3.prefab",
+    "mass": 70,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200189": {
+    "editorDesc": "贝壳",
+    "name": 1543706205,
+    "prefabResID": "$P_Chest_Shell03_OpenIdle.prefab",
+    "editorName": "贝壳",
+    "envObjState": 0
+  },
+  "1013018": {
+    "mass": 30,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "editorDisplayPriority": 100,
+    "editorName": "小木箱（无奖励）_Lv3",
+    "authorAwayInvisible": true,
+    "name": 1812441654,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Lv3.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200188": {
+    "editorDesc": "化石堆",
+    "name": 1392346807,
+    "prefabResID": "$P_Item_Props_Bone_001_Mix.prefab",
+    "editorName": "化石堆",
+    "envObjState": 0
+  },
+  "1013019": {
+    "mass": 70,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "editorDisplayPriority": 101,
+    "editorName": "古代木箱（大）（无奖励）_Lv3",
+    "authorAwayInvisible": true,
+    "name": 1844091482,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Ancient_Lv3.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200187": {
+    "editorDesc": "矿石簇",
+    "name": 2073943702,
+    "prefabResID": "$P_Item_Rock_CrystalCave_Mix.prefab",
+    "editorName": "矿石簇",
+    "envObjState": 0
+  },
+  "1200183": {
+    "editorDesc": "华丽陶土缸",
+    "editorName": "华丽陶土缸",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1.3,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_BigWorld_ClayPot_3.prefab",
+    "camp": 3001,
+    "name": 1331096912,
+    "effs": [
+      "Eff_GrabEgg_Cont_Jar03"
+    ],
+    "envObjState": 0
+  },
+  "1013022": {
+    "name": 1428257779,
+    "editorDisplayPriority": 200,
+    "editorName": "古代大木板（可漂浮）_Lv3",
+    "authorAwayInvisible": true,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoardBig_Ancient_Lv3.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200182": {
+    "editorDesc": "华丽陶土罐子",
+    "editorName": "华丽陶土罐子",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1.3,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_BigWorld_ClayPot_2.prefab",
+    "camp": 3001,
+    "name": 1344192787,
+    "effs": [
+      "Eff_GrabEgg_Cont_Jar02"
+    ],
+    "envObjState": 0
+  },
+  "1200181": {
+    "editorDesc": "朴素陶土罐子",
+    "editorName": "朴素陶土罐子",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1.3,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_BigWorld_ClayPot_1.prefab",
+    "camp": 3001,
+    "name": 1934742694,
+    "effs": [
+      "Eff_GrabEgg_Cont_Jar01"
+    ],
+    "envObjState": 0
+  },
+  "1013023": {
+    "name": 1809144208,
+    "editorDisplayPriority": 200,
+    "editorName": "大木板（可漂浮）_Lv3",
+    "authorAwayInvisible": true,
+    "editorOffset": [
+      0,
+      0.15,
+      0
+    ],
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoardBig_Lv3.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200173": {
+    "editorDesc": "泡泡星乐蒂-无物理-不可交互",
+    "editorName": "泡泡星乐蒂（不可动）",
+    "prefabResID": "$P_Item_SceneObject_BubbleAnimo_002.prefab",
+    "centerOffset": 0.15,
+    "name": 1528876264,
+    "envObjState": 0
+  },
+  "1200172": {
+    "editorDesc": "泡泡云朵羊-无物理-不可交互",
+    "editorName": "泡泡云朵羊（不可动）",
+    "prefabResID": "$P_Item_SceneObject_BubbleAnimo_001.prefab",
+    "centerOffset": 0.15,
+    "name": 1232485411,
+    "envObjState": 0
+  },
+  "1013010": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig_Ancient_Lv3.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 101,
+    "name": 2082847876,
+    "mass": 70,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（大）_Lv3"
+  },
+  "1013011": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Ancient_Lv3.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1285044580,
+    "mass": 30,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（小）_Lv3"
+  },
+  "1013012": {
+    "editorDisplayPriority": 200,
+    "editorName": "木板（可漂浮）_Lv3",
+    "authorAwayInvisible": true,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_Board_Lv3.prefab",
+    "name": 1772555609,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.15,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1013013": {
+    "editorDisplayPriority": 200,
+    "editorName": "古代木板（可漂浮）_Lv3",
+    "authorAwayInvisible": true,
+    "isLockAsPuppet": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_Board_Ancient_Lv3.prefab",
+    "name": 2006270912,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200171": {
+    "editorDesc": "水板块用_钱灵灵盖子化石",
+    "editorName": "水板块用_钱灵灵盖子化石",
+    "mass": 40,
+    "BodyHeight": 1,
+    "BodySize": 1.5,
+    "prefabResID": "$P_Item_SceneObject_FossilShell.prefab",
+    "detectionMode": 1,
+    "name": 1807384814,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1013035": {
+    "editorDesc": "不可以用在其他地方",
+    "editorName": "新手藤蔓_1_禁止使用",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Ground_Tutorial.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 1590969015,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1013020": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Ancient_Lv3.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1782551994,
+    "mass": 30,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（小）（无奖励）_Lv3"
+  },
+  "1200168": {
+    "editorName": "龙卷风（地宫）",
+    "mass": 30,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Whirlwind.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "name": 1107616182,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "1200167": {
+    "editorDesc": "闪电之森-任务蛋",
+    "isDestroy": 1,
+    "editorName": "特殊伊莫蛋",
+    "mass": 2,
+    "enableVoxelCheck": 1,
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "prefabResID": "$E_P_Item_LightingEgg.prefab",
+    "bindingId": 540104,
+    "name": 1325930512,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.38,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      86,
+      4
+    ],
+    "envObjState": 0
+  },
+  "1013036": {
+    "editorDesc": "不可以用在其他地方",
+    "editorName": "新手藤蔓_2_禁止使用",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Twist_Tutorial.prefab",
+    "camp": 3001,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 1838193676,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200165": {
+    "editorDesc": "暮语薰-主线任务",
+    "isDestroy": 1,
+    "editorName": "暮语薰-主线任务",
+    "prefabResID": "$P_Item_SceneObject_Flower_BlueLupin_001.prefab",
+    "name": 1268575478,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "effs": [
+      "Eff_SceneObject_HoneyFlower"
+    ],
+    "actionPrototypeIds": [
+      630
+    ],
+    "envObjState": 0
+  },
+  "1200164": {
+    "editorDesc": "仅抢蛋可用",
+    "editorDisplayPriority": 202,
+    "editorName": "抢蛋专用篝火_熄灭",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_Dead_GrabEgg.prefab",
+    "camp": 3001,
+    "name": 1805342480,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1014001": {
+    "editorDisplayPriority": 200,
+    "name": 1391887059,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Shrub_Reed_GrabEggs_001A.prefab",
+    "camp": 3001,
+    "editorName": "高草丛",
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200163": {
+    "editorDesc": "仅抢蛋可用",
+    "editorDisplayPriority": 201,
+    "editorName": "抢蛋专用篝火",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_Bonfire_GrabEgg.prefab",
+    "camp": 3001,
+    "name": 1318914653,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200144": {
+    "editorDesc": "灼火炭（柱）无初始元素",
+    "prefabResID": "$P_Item_SceneObject_Stone_FireStelaeNoFire.prefab",
+    "camp": 3001,
+    "editorName": "灼火炭（柱）",
+    "isLockAsPuppet": 1,
+    "centerOffset": 1,
+    "enableVoxelCheck": 1,
+    "name": 2030047648
+  },
+  "1020001": {
+    "name": 1739246119,
+    "editorDisplayPriority": 109,
+    "editorName": "古代石块（小）",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 1,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBlocksSmall_Ancient.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200142": {
+    "editorDesc": "灼火炭（球）",
+    "editorName": "灼火炭（球）",
+    "isLockAsPuppet": 1,
+    "entityTag": [
+      "TE_Env_Ball"
+    ],
+    "prefabResID": "$P_Item_SceneObject_Stone_FireStelaeBall.prefab",
+    "name": 1153054030,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200141": {
+    "editorDesc": "灼火炭（柱）",
+    "prefabResID": "$P_Item_SceneObject_Stone_FireStelae.prefab",
+    "camp": 3001,
+    "editorName": "灼火炭（柱）",
+    "isLockAsPuppet": 1,
+    "centerOffset": 1,
+    "enableVoxelCheck": 1,
+    "name": 2106044788
+  },
+  "1020002": {
+    "editorDisplayPriority": 109,
+    "editorName": "古代石块（大）",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBlocksBig_Ancient.prefab",
+    "name": 2031613838,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200134": {
+    "editorDesc": "高地玩法专用",
+    "prefabResID": "$P_Item_SceneObject_Stone_MudMound.prefab",
+    "name": 1568664559,
+    "editorName": "可破坏的粪堆（炸毁）",
+    "envObjState": 0,
+    "centerOffset": 0.3,
+    "BodyHeight": 3,
+    "BodySize": 3
+  },
+  "1200133": {
+    "editorDesc": "星落森林星皮果堆-很多-不可交互",
+    "editorName": "星皮果（不可动）",
+    "prefabResID": "$P_Item_SceneObject_CollectFruitPile_3.prefab",
+    "centerOffset": 0.25,
+    "name": 1078221296,
+    "envObjState": 0
+  },
+  "1020003": {
+    "BodyHeight": 1,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBallSmall.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 109,
+    "name": 1813156355,
+    "isLockAsPuppet": 1,
+    "editorName": "石球（小）",
+    "mass": 30,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200131": {
+    "editorDesc": "星落森林星皮果堆-少量-不可交互",
+    "editorName": "星皮果（不可动）",
+    "prefabResID": "$P_Item_SceneObject_CollectFruitPile_1.prefab",
+    "centerOffset": 0.1,
+    "name": 1470092511,
+    "envObjState": 0
+  },
+  "1200130": {
+    "editorDesc": "仅格拉斯博士挑战玩法使用",
+    "isDestroy": 1,
+    "name": 1620825108,
+    "prefabResID": "$P_Item_SceneObject_CollectFruit_1.prefab",
+    "editorName": "挑战-星皮果（可动）",
+    "detectionMode": 1,
+    "editorOffset": [
+      0,
+      0.25,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      605
+    ],
+    "envObjState": 0
+  },
+  "1020004": {
+    "BodyHeight": 1,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBallSmall_Ancient.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 109,
+    "name": 1800782645,
+    "isLockAsPuppet": 1,
+    "editorName": "古代石球（小）",
+    "mass": 30,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200127": {
+    "prefabResID": "$P_Item_Empty_SB.prefab",
+    "name": 1495911625,
+    "editorDisplayPriority": 110,
+    "editorName": "采蜜鸟鸟房子玄关",
+    "envObjState": 0,
+    "entityTag": [
+      "TE_Env_DewyNestPlatform"
+    ],
+    "actionPrototypeIds": [
+      602,
+      603
+    ],
+    "effs": [
+      "Eff_CatchCommon_Indication_Nest"
+    ]
+  },
+  "1200121": {
+    "prefabResID": "$P_Item_SceneObject_CooperationPoint_Emberpup_GlassB.prefab",
+    "editorName": "格拉斯小炭犬呼朋引伴占位点B",
+    "name": 1305895953,
+    "callFriend": 1,
+    "callFriendRange": 8,
+    "envObjState": 0
+  },
+  "1020005": {
+    "mass": 75,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代石球（大）",
+    "isLockAsPuppet": 1,
+    "name": 2024583244,
+    "BodyHeight": 2,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBallBig_Ancient.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1032003": {
+    "name": 1628582784,
+    "editorDisplayPriority": 104,
+    "editorName": "大铁箱_Lv2",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxBig_Lv2.prefab",
+    "mass": 100,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1032002": {
+    "mass": 100,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代金属箱（大）_Lv2",
+    "isLockAsPuppet": 1,
+    "name": 1410031923,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Metal_Boxbig_Ancient_Lv2.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      1.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020006": {
+    "editorDisplayPriority": 109,
+    "editorName": "石头地板（可破坏）",
+    "authorAwayInvisible": true,
+    "name": 1733249539,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_BreakableFloor.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      0.25,
+      0
+    ],
+    "canDestroyByAI": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1020033": {
+    "editorName": "可破坏石球_Lv4_破坏计次1小",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_Lv4Ct1.prefab",
+    "camp": 3001,
+    "name": 1982183629,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200057": {
+    "editorName": "废弃物体",
+    "mass": 70,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "editorDisplay": 1,
+    "camp": 3001,
+    "prefabResID": "$P_Item_SceneObject_Tree_Chest.prefab",
+    "name": 1648140449,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "1020007": {
+    "editorDisplayPriority": 109,
+    "editorName": "石墙（可破坏）",
+    "authorAwayInvisible": true,
+    "name": 1965813553,
+    "BodyHeight": 3,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_BreakableWall.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      2,
+      0
+    ],
+    "canDestroyByAI": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1050001": {
+    "mass": 35,
+    "editorOffset": [
+      0,
+      0.3,
+      0
+    ],
+    "editorDisplayPriority": 109,
+    "editorName": "古代爆炸球",
+    "authorAwayInvisible": true,
+    "name": 1647507703,
+    "BodyHeight": 1,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Explosive_BombBall_Ancient.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020008": {
+    "mass": 75,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 110,
+    "editorName": "石球（大）",
+    "isLockAsPuppet": 1,
+    "name": 1841306682,
+    "BodyHeight": 2,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBallBig.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_10023_KickStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1200063": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1993794785,
+    "entityTag": [
+      "TE_Env_Leave_Maku1_2"
+    ],
+    "editorName": "百变怪站立点_Mark1_2",
+    "envObjState": 0
+  },
+  "1040015": {
+    "editorDisplayPriority": 199,
+    "editorName": "电线连接点_通用",
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Electric_Linehub_Ancient.prefab",
+    "camp": 3001,
+    "name": 1244972871,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020009": {
+    "editorDisplayPriority": 400,
+    "editorName": "可破坏的碎石_样式1",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1.5,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_01.prefab",
+    "name": 1179955762,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "centerOffset": 0.55,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1200053": {
+    "editorName": "废弃物体",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "editorDisplay": 1,
+    "prefabResID": "$P_Item_SceneObject_Fruit_Pheromone.prefab",
+    "camp": 3001,
+    "detectionMode": 3,
+    "name": 1151573277,
+    "nonKinematic": 1,
+    "mass": 2,
+    "envObjState": 0
+  },
+  "1040014": {
+    "editorDisplayPriority": 199,
+    "name": 1337716653,
+    "BodyHeight": 0.5,
+    "BodySize": 5,
+    "prefabResID": "$P_Item_SceneObject_Electric_Line_10m_Ancient.prefab",
+    "camp": 3001,
+    "entityTag": [
+      "TE_Env_Metal"
+    ],
+    "editorName": "古代电线_10米（无导电特效）",
+    "envObjState": 0
+  },
+  "1020010": {
+    "editorDisplayPriority": 400,
+    "editorName": "可破坏的碎石_样式2",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1.5,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_02.prefab",
+    "name": 1389169773,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "centerOffset": 0.55,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1013034": {
+    "mass": 20,
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "editorDisplayPriority": 200,
+    "editorName": "物理尖刺藤（临时资源待更新）",
+    "authorAwayInvisible": true,
+    "name": 1559253775,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_BlockVine_Twist.prefab",
+    "isLockAsPuppet": 1,
+    "camp": 3001,
+    "detectionMode": 3,
+    "canDestroyByAI": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1030006": {
+    "name": 1317602595,
+    "editorDisplayPriority": 103,
+    "editorName": "大型金属球",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BallBig.prefab",
+    "mass": 40,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020011": {
+    "editorDisplayPriority": 400,
+    "editorName": "可破坏的碎石_样式3",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1.5,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_03.prefab",
+    "name": 2025930363,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "centerOffset": 0.65,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1200070": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1248931973,
+    "editorName": "百变怪撞墙MarkB",
+    "envObjState": 0
+  },
+  "1040011": {
+    "editorDisplayPriority": 109,
+    "editorName": "古代永久电池（球形）-神庙专用",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryInfiniteSphere_Ancient_Temple.prefab",
+    "name": 1768534314,
+    "camp": 3001,
+    "mass": 20,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "envObjState": 0,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020013": {
+    "editorDisplayPriority": 110,
+    "editorName": "石球（大且初始静止）",
+    "isLockAsPuppet": 1,
+    "name": 1980383845,
+    "BodyHeight": 2,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBallBig.prefab",
+    "mass": 75,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "envObjState": 0,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1080004": {
+    "prefabResID": "$P_Item_SceneObject_HuiYaoCage.prefab",
+    "name": 2062453707,
+    "camp": 3001,
+    "editorName": "辉耀符文罩子",
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "BodyHeight": 1,
+    "BodySize": 1
+  },
+  "1020017": {
+    "mass": 40,
+    "detectionMode": 3,
+    "editorDisplayPriority": 108,
+    "editorName": "石球（中型）",
+    "isLockAsPuppet": 1,
+    "name": 1183337688,
+    "BodyHeight": 1.5,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_Medium.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "editorOffset": [
+      0,
+      0.7,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_10021_KickStone",
+      "TE_Env_Stone",
+      "TE_Env_10024_KickStone"
+    ]
+  },
+  "1010015": {
+    "editorDisplayPriority": 90,
+    "editorName": "落叶堆",
+    "authorAwayInvisible": true,
+    "BodyHeight": 1.5,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_LeafPile.prefab",
+    "name": 1111887978,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "envObjState": 0,
+    "centerOffset": 0.4,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_FallenLeaves"
+    ]
+  },
+  "1034003": {
+    "name": 1237537657,
+    "editorDisplayPriority": 109,
+    "editorName": "滑轨铁箱",
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "BodyHeight": 3,
+    "BodySize": 1.5,
+    "prefabResID": "$P_Item_SceneObject_BreakableMetalBox2_Ct4.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "editorOffset": [
+      0,
+      1.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "actionPrototypeIds": [
+      632
+    ],
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020018": {
+    "editorDisplayPriority": 107,
+    "editorName": "龙爪石头（可破坏）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 3,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_ClawStone_01A.prefab",
+    "camp": 3001,
+    "name": 1125459316,
+    "centerOffset": 1.5,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Stone"
+    ],
+    "envObjState": 0
+  },
+  "1030008": {
+    "name": 1129061475,
+    "editorDisplayPriority": 103,
+    "editorName": "古代金属球（大）",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BallBig_Ancient.prefab",
+    "mass": 40,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020019": {
+    "editorDisplayPriority": 107,
+    "editorName": "金属矿石（可破坏）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 3,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Stone_MineralBreakable_01.prefab",
+    "camp": 3001,
+    "name": 2087113317,
+    "envObjState": 0,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Metal",
+      "TE_Env_Stone"
+    ]
+  },
+  "1013033": {
+    "editorDisplayPriority": 200,
+    "editorName": "静止木板_Lv1",
+    "authorAwayInvisible": true,
+    "BodyHeight": 0.5,
+    "BodySize": 1.2,
+    "prefabResID": "$P_Item_SceneObject_WoodPlank_01.prefab",
+    "name": 1769234122,
+    "camp": 3001,
+    "mass": 30,
+    "canDestroyByAI": 1,
+    "isLockAsPuppet": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1010017": {
+    "name": 1587207267,
+    "editorDisplayPriority": 101,
+    "editorName": "大木箱（无奖励）",
+    "authorAwayInvisible": true,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxBig.prefab",
+    "mass": 70,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020020": {
+    "name": 1416887311,
+    "editorDisplayPriority": 109,
+    "editorName": "屎壳郎泥巴球（大）",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_MudBallBig.prefab",
+    "mass": 30,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1040003": {
+    "mass": 20,
+    "canDestroyByAI": 1,
+    "editorName": "古代可充电电池（柱形）",
+    "isLockAsPuppet": 1,
+    "name": 1335659493,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryLimitedCylinder_Ancient.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.6,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1040001": {
+    "mass": 20,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代可充电电池（球形）",
+    "isLockAsPuppet": 1,
+    "name": 1704233143,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Electric_BatteryLimitedSphere_Ancient.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.25,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020021": {
+    "mass": 30,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "屎壳郎泥巴球（小）",
+    "isLockAsPuppet": 1,
+    "name": 1255684306,
+    "BodyHeight": 1,
+    "BodySize": 0.36,
+    "prefabResID": "$P_Item_SceneObject_Stone_MudBallSmall.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.4,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1080003": {
+    "editorName": "漂浮荷叶（不会倾覆）",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_Sceneobject_Physics_LotusLeafPlatform_1.prefab",
+    "name": 1751523482,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1033004": {
+    "mass": 40,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 103,
+    "editorName": "小铁箱_Lv3",
+    "isLockAsPuppet": 1,
+    "name": 1801527759,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxSmall_Lv3.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020022": {
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_HotRockCrystalBall.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 109,
+    "name": 1580087187,
+    "mass": 30,
+    "materialReactId": 40,
+    "isLockAsPuppet": 1,
+    "editorName": "炽岩晶球",
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      1.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1": {
+    "isFullScreen": 1,
+    "featureConfigData": 1,
+    "mass": 2,
+    "reward": 1,
+    "name": 1848009145,
+    "prefabResID": "$EnvApple.prefab",
+    "BodyHeight": 0.5,
+    "BodySize": 1,
+    "actionDelay": 1,
+    "bindingId": 611000,
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "centerOffset": 1,
+    "enableRVO": 1,
+    "envObjState": 1,
+    "extraType": 1,
+    "enableNightShine": 1,
+    "isDestroy": 1,
+    "editorName": "表头苹果",
+    "isLockAsPuppet": 1,
+    "materialReactId": 1,
+    "maxLifeTime": 1,
+    "responseTime": 1,
+    "editorDisplay": 1,
+    "unlockFailedAnim": "1",
+    "unlockSound": "1",
+    "forbidImpulseDamage": 1,
+    "envobjectScale": 1,
+    "attachId": 10000,
+    "actionPrototypeIds": [
+      4
+    ],
+    "entityTag": [
+      "TE_Env_Food",
+      "TE_Env_Heal"
+    ]
+  },
+  "1032001": {
+    "mass": 40,
+    "canDestroyByAI": 1,
+    "editorDisplayPriority": 109,
+    "editorName": "古代金属箱（小）_Lv2",
+    "isLockAsPuppet": 1,
+    "name": 1767276541,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxSmall_Ancient_Lv2.prefab",
+    "envObjState": 0,
+    "camp": 3001,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.55,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1020023": {
+    "name": 1308634277,
+    "editorDisplayPriority": 109,
+    "editorName": "屎壳郎泥巴球（无吸附）",
+    "isLockAsPuppet": 0,
+    "canDestroyByAI": 1,
+    "BodyHeight": 1,
+    "BodySize": 0.36,
+    "prefabResID": "$P_Item_SceneObject_Stone_MudBallSmall.prefab",
+    "mass": 30,
+    "envObjState": 0,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200069": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 1608682397,
+    "editorName": "百变怪撞墙MarkA",
+    "envObjState": 0
+  },
+  "1020024": {
+    "name": 1251593730,
+    "editorDisplayPriority": 110,
+    "editorName": "石球（超级大）",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 10,
+    "BodySize": 15,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBallBig_GrabEgg.prefab",
+    "mass": 75,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_10023_KickStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1200209": {
+    "editorDesc": "暮语薰-主线任务",
+    "isDestroy": 1,
+    "editorName": "暮语薰-主线任务",
+    "prefabResID": "$P_Item_SceneObject_Flower_BlueLupin_001.prefab",
+    "name": 1129503424,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "effs": [
+      "Eff_SceneObject_HoneyFlower"
+    ],
+    "actionPrototypeIds": [
+      639
+    ],
+    "envObjState": 0
+  },
+  "1200210": {
+    "featureConfigData": {
+      "warningEffect": "Eff_Env_SceneObject_BeePollen_Warning",
+      "destroyEffect": "Eff_Env_SceneObject_BeePollen_Destroy",
+      "warningDuration": 3
+    },
+    "BodyHeight": 0.5,
+    "BodySize": 0.25,
+    "prefabResID": "$P_Item_SceneObject_BubbleBee_Pollen.prefab",
+    "attachId": 10020,
+    "features": [
+      "BeePollenFeature"
+    ],
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "采集月见花后的月见花粉",
+    "editorName": "月见花粉（不可直接布置）",
+    "mass": 10,
+    "maxLifeTime": 10,
+    "camp": 3001,
+    "name": 1645497623,
+    "actionPrototypeIds": [
+      80
+    ],
+    "detectionMode": 1,
+    "canBeDestory": 1,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "isLockAsPuppet": 1
+  },
+  "1020026": {
+    "editorDisplayPriority": 109,
+    "editorName": "炽岩晶石",
+    "isLockAsPuppet": 1,
+    "materialReactId": 40,
+    "BodyHeight": 3,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_HotRockCrystalStone.prefab",
+    "name": 1339174827,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      0.35,
+      0
+    ],
+    "canDestroyByAI": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_BreakableStone",
+      "TE_Env_Stone"
+    ]
+  },
+  "1030003": {
+    "name": 1854097369,
+    "editorDisplayPriority": 104,
+    "editorName": "大铁箱",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Metal_BoxBig.prefab",
+    "mass": 100,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Metal"
+    ]
+  },
+  "1200056": {
+    "editorName": "椰果",
+    "mass": 2,
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_Coconut_Fruit.prefab",
+    "camp": 3001,
+    "detectionMode": 3,
+    "name": 1409217114,
+    "nonKinematic": 1,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "1020028": {
+    "editorName": "可破坏石球_Lv3_破坏计次3大",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_Lv3Ct3.prefab",
+    "camp": 3001,
+    "name": 1511591351,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020037": {
+    "BodyHeight": 1,
+    "BodySize": 0.36,
+    "prefabResID": "$P_Item_SceneObject_SoilBall_Smooth.prefab",
+    "camp": 3001,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDesc": "黑色光滑球_仅剧情使用",
+    "editorDisplayPriority": 109,
+    "editorName": "屎壳郎泥巴球（剧情用光滑）",
+    "isLockAsPuppet": 1,
+    "name": 1729143907,
+    "mass": 30,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.4,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1200058": {
+    "editorName": "椰子树B",
+    "mass": 70,
+    "BodyHeight": 2,
+    "BodySize": 2,
+    "prefabResID": "$P_Item_SceneObject_Coconut_Tree_B.prefab",
+    "camp": 3001,
+    "name": 1961862076,
+    "centerOffset": 4.5,
+    "isLockAsPuppet": 1,
+    "envObjState": 0
+  },
+  "1020029": {
+    "editorName": "可破坏石球_Lv4_破坏计次3大",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_Lv4Ct3.prefab",
+    "camp": 3001,
+    "name": 1965352973,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020035": {
+    "editorDisplayPriority": 109,
+    "editorName": "古代巨石_测试",
+    "isLockAsPuppet": 1,
+    "canDestroyByAI": 1,
+    "BodyHeight": 3,
+    "BodySize": 3,
+    "prefabResID": "$P_Item_SceneObject_RailwayTrack_Item_time_2.prefab",
+    "name": 1468249325,
+    "camp": 3001,
+    "envObjState": 0,
+    "editorOffset": [
+      0,
+      1.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ]
+  },
+  "1010011": {
+    "authorAwayInvisible": true,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Wood_BoxSmall_Ancient.prefab",
+    "camp": 3001,
+    "canBeDestory": 1,
+    "canDestroyByAI": 1,
+    "envObjState": 0,
+    "editorDisplayPriority": 100,
+    "name": 1757727021,
+    "mass": 30,
+    "materialReactId": 10,
+    "isLockAsPuppet": 1,
+    "detectionMode": 3,
+    "editorOffset": [
+      0,
+      0.5,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "editorName": "古代木箱（小）"
+  },
+  "1020030": {
+    "editorName": "可破坏石球_Lv3_破坏计次2中",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_Lv3Ct2.prefab",
+    "camp": 3001,
+    "name": 2086490549,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1020031": {
+    "editorName": "可破坏石球_Lv4_破坏计次2中",
+    "isLockAsPuppet": 1,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_StoneBreakable_Lv4Ct2.prefab",
+    "camp": 3001,
+    "name": 1370146620,
+    "canDestroyByAI": 1,
+    "entityTag": [
+      "TE_Env_Stone"
+    ],
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200068": {
+    "prefabResID": "$P_Chest_ShellForSing.prefab",
+    "name": 2119664631,
+    "editorName": "百变怪站立点_Mark1_3",
+    "envObjState": 0
+  },
+  "1200213": {
+    "editorName": "ECS白盒_木头长",
+    "authorAwayInvisible": 1,
+    "mass": 30,
+    "BodyHeight": 1,
+    "BodySize": 1,
+    "prefabResID": "$P_WOOD_Long.prefab",
+    "name": 1730347371,
+    "camp": 1,
+    "detectionMode": 3,
+    "canDestroyByAI": 3001,
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "envObjState": 1
+  },
+  "1060017": {
+    "editorDesc": "天使耶雪球",
+    "editorDisplayPriority": 105,
+    "editorName": "天使耶雪球",
+    "authorAwayInvisible": true,
+    "envObjState": 0,
+    "BodyHeight": 3,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Stone_SnowBallBig.prefab",
+    "name": 1825203020,
+    "camp": 3001,
+    "isLockAsPuppet": 1,
+    "editorOffset": [
+      0,
+      1,
+      0
+    ],
+    "nonKinematic": 1,
+    "enableVoxelCheck": 1,
+    "entityTag": [
+      "TE_Env_10291_SnowBall"
+    ]
+  },
+  "1060012": {
+    "editorDesc": "仅抢蛋需求推荐使用",
+    "editorName": "抢蛋_静止大冰块",
+    "authorAwayInvisible": true,
+    "BodyHeight": 2,
+    "BodySize": 1,
+    "prefabResID": "$P_Item_SceneObject_Ice_FrozenCaveIceBig_NoTransparent.prefab",
+    "camp": 3001,
+    "name": 1577674108,
+    "centerOffset": 2,
+    "enableVoxelCheck": 1,
+    "envObjState": 0
+  },
+  "1200214": {
+    "featureConfigData": {
+      "shiningTime": -1,
+      "shiningRadius": 10,
+      "shiningImpulseThreshold": 100,
+      "shiningValue": 30
+    },
+    "editorName": "拉拉蛋舞台果实",
+    "BodyHeight": 0.5,
+    "BodySize": 0.5,
+    "prefabResID": "$P_Item_SceneObject_FogLightFruit_Laladan.prefab",
+    "unlockFailedAnim": "{\"TE_Env_Ball\",}",
+    "features": [
+      "LevelFruitFeature",
+      "ShiningItemFeature"
+    ],
+    "editorOffset": [
+      0,
+      0.75,
+      0
+    ],
+    "name": 1691228614,
+    "canBeDestory": 1,
+    "envObjState": 1
+  }
+}

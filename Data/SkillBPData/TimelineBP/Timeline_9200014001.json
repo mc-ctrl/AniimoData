@@ -1,0 +1,392 @@
+{
+  "nodeMap": {
+    "40": {
+      "UID": "341e0299-6817-4cbb-ba90-6a65af87f26a",
+      "name": "setMask",
+      "mask": {
+        "canMove": 1,
+        "canRotate": 1
+      },
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 41,
+      "UID": "c836cd76-e036-4794-b6ab-2afa6e63c8db"
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "3b97282b-01b7-4b40-88b6-a46d750873c3",
+      "effectId": "Eff_Avatar_Girl_CheerStick_Skill_Inspire_LinkTarget",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "65": {
+      "action": {
+        "actionIds": [
+          63
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 65,
+      "UID": "bb917d18-4466-4bc9-983c-c3d907d26252"
+    },
+    "87": {
+      "UID": "3d76afe6-53a1-4463-8223-77d696161e75",
+      "name": "setMask",
+      "mask": {
+        "canMove": 0,
+        "canRotate": 0
+      },
+      "NodeID": 87
+    },
+    "3": {
+      "UID": "b06284d3-b244-4651-a9df-a1ddbfed96a7",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1,
+        "canMove": 1
+      },
+      "NodeID": 3
+    },
+    "70": {
+      "name": "stopEffectStr",
+      "UID": "a605f084-e926-4e8b-b976-b59844e48880",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeIn",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "71": {
+      "name": "stopEffectStr",
+      "UID": "ca1c2fa2-e35c-4cf3-9ff2-fa52957e2657",
+      "effectId": "Eff_Avatar_Girl_Flute_Skill_Magic",
+      "target": "OWNER",
+      "NodeID": 71
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7228dabd-f448-4356-94c6-79fed20072f8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Flute_Skill_Cure_Hit",
+      "NodeID": 58
+    },
+    "5": {
+      "UID": "8c7d0610-531a-4732-83ed-d7b394d9987a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          46
+        ]
+      },
+      "NodeID": 5
+    },
+    "63": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "af3bc524-68f2-4bda-9483-6a274af33a38",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeLoop",
+      "speed": 1,
+      "NodeID": 63
+    },
+    "79": {
+      "isNot": false,
+      "stateName": "RUN",
+      "isParentState": false,
+      "NodeID": 79,
+      "UID": "be5b4acf-ea23-4c52-8c30-b86da90ffb5d",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "78": {
+      "name": "forceSetSkillCD",
+      "NodeID": 78,
+      "UID": "df74504a-dd09-4e1b-855d-bb86e9645648",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "cdTime": 13
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          31,
+          56,
+          32,
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 19,
+      "UID": "855169e1-c573-4bfa-896f-1a499a5bd345"
+    },
+    "31": {
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectStr",
+      "NodeID": 31,
+      "UID": "bfe388c2-dffb-496e-82a2-da64989ebe00",
+      "effectId": "Eff_Avatar_Girl_CheerStick_Skill_Inspire_LinkTarget",
+      "isAbilityEndRemove": true,
+      "endTarget": "CURPET"
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "437f4778-c9a0-4b1f-a21e-14088bfab1e2",
+      "isAbilityEndRemove": false,
+      "soundId": "avatar_girl_cheerstick_skill_music_end",
+      "NodeID": 34
+    },
+    "44": {
+      "idleEndAnimId": "Flute_Skill_Cure_StandEnd",
+      "idleToMoveAnimId": "Flute_Skill_Cure_StandToWalk",
+      "moveAnimId": "Flute_Skill_Cure_WalkLoop",
+      "NodeID": 44,
+      "UID": "c5f77154-0a2c-439e-a5ca-0f5fac36155c",
+      "name": "enableSkillMotionAnimState",
+      "moveToIdleAnimId": "Flute_Skill_Cure_WalkToStand",
+      "moveEndAnimId": "Flute_Skill_Cure_WalkEnd",
+      "abilityEndExit": false,
+      "beginAnimId": "Flute_Skill_Cure_Start",
+      "enable": true,
+      "idleAnimId": "Flute_Skill_Cure_StandLoop"
+    },
+    "32": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "1838dbb6-7d09-4e5a-be9c-9303bb38cbfc",
+      "oldPetActionIds": [
+        60
+      ],
+      "NodeID": 32,
+      "newPetActionIds": [
+        31
+      ]
+    },
+    "51": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 51,
+      "UID": "8f3f4ef5-7628-4745-b4b7-476a8c09d7cf",
+      "effectId": "Eff_Avatar_Girl_Flute_Skill_Cure_sing",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "20": {
+      "UID": "50b9cd9f-a697-432a-a7b2-a9137f89cbbf",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          35,
+          33,
+          34,
+          50,
+          59,
+          70,
+          71,
+          78,
+          87,
+          15
+        ]
+      },
+      "NodeID": 20
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.3,
+      "NodeID": 29,
+      "UID": "2c72d5e4-e6c8-479e-b47f-b327b06fe6ae"
+    },
+    "22": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.05,
+        "add_cur_ep_rate": 0,
+        "add_cur_hp_fix": 0
+      },
+      "name": "calcResult",
+      "UID": "bb5ee675-935a-4a1e-80e8-d966a5ef1b1b",
+      "target": "CURPET",
+      "NodeID": 22
+    },
+    "60": {
+      "name": "stopEffectStr",
+      "UID": "59c8fede-1e0b-4adf-aaaa-8486a1e48a00",
+      "effectId": "Eff_Avatar_Girl_CheerStick_Skill_Inspire_LinkTarget",
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "24": {
+      "actionIds": [
+        22,
+        30,
+        58,
+        51
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "3fb95b6f-d7ee-49af-84dd-71dc6a89448f",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "49": {
+      "targetA": "OWNER",
+      "targetB": "CURPET",
+      "name": "checkDistanceLess",
+      "UID": "8ad5f9a8-d676-4c93-a28e-93cde2f4ea1d",
+      "distance": 20,
+      "NodeID": 49
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4c1857a1-9b35-4b31-ab81-748e219ce5fb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Flute_Skill_Cure_Song",
+      "NodeID": 56
+    },
+    "15": {
+      "timelineId": 9200014002,
+      "name": "jumpToNextTimeline",
+      "UID": "dfdd7df1-a3a2-4968-8f24-b903fddde24d",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "46": {
+      "actionIds": [
+        80,
+        61
+      ],
+      "conditionActionIds": [
+        79
+      ],
+      "UID": "3bddc1b5-907d-4cb1-bf9b-bf518ea5322a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        61,
+        44
+      ],
+      "NodeID": 46
+    },
+    "26": {
+      "eventType": "NotifyState",
+      "endTime": 8.8,
+      "NodeID": 26,
+      "UID": "270c970e-507c-413f-93af-b2c4aea3cb0b",
+      "onUpdate": {
+        "actionIds": [
+          24
+        ]
+      },
+      "startTime": 1.8,
+      "tickInterval": 1
+    },
+    "27": {
+      "name": "showEmojiBubbleByRef",
+      "UID": "b09f3e44-7991-4869-bd54-9e34f00709a3",
+      "target": "CURPET",
+      "emojiId": "Emoji_Test_Happy",
+      "NodeID": 27
+    },
+    "17": {
+      "time": 7,
+      "notShowCountDown": false,
+      "actionIds": [
+        35,
+        33,
+        34,
+        50,
+        59,
+        70,
+        71,
+        78,
+        87,
+        15
+      ],
+      "aiTriggerTime": 1,
+      "UID": "b3334806-f06a-4989-aba0-16c1774a4e3b",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 17
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7cb27e60-670d-46a0-abb7-056c992a6891",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_SFX_Avatar_Female_Flute_Skill_Cure_Song",
+      "NodeID": 59
+    },
+    "30": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "0e99ead9-2790-45ab-825f-bc0f157b2ee2",
+      "effectId": "Eff_Avatar_Girl_Flute_Skill_Cure_Hit_3",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "50": {
+      "name": "stopEffectStr",
+      "UID": "4b88a0d2-6ff1-4326-bf29-10c77d9c80ed",
+      "effectId": "Eff_Avatar_Girl_Flute_Skill_Cure_sing",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "33": {
+      "name": "stopSoundStr",
+      "UID": "36f0250d-e231-4936-9358-b2fcfab6be97",
+      "soundId": "avatar_girl_flute_skill_cure_music",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "61": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9c6c6c1a-90de-49a5-8b48-3b282664ab97",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeIn",
+      "speed": 1,
+      "NodeID": 61
+    },
+    "80": {
+      "idleEndAnimId": "Flute_Skill_Cure_StandEnd",
+      "idleToMoveAnimId": "Flute_Skill_Cure_StandToWalk",
+      "moveAnimId": "Flute_Skill_Cure_WalkLoop",
+      "NodeID": 80,
+      "UID": "b67ea17d-554a-4522-a565-bdefef8c668f",
+      "name": "enableSkillMotionAnimState",
+      "moveToIdleAnimId": "Flute_Skill_Cure_WalkToStand",
+      "abilityEndExit": false,
+      "moveEndAnimId": "Flute_Skill_Cure_WalkEnd",
+      "enable": true,
+      "idleAnimId": "Flute_Skill_Cure_StandLoop"
+    }
+  },
+  "BPName": "ability_9200014",
+  "NodeID": 7,
+  "UID": "0eb75eb9-8885-4b2e-8184-efc96211b7ad",
+  "eventIds": [
+    5,
+    19,
+    41,
+    26,
+    29,
+    65,
+    20
+  ],
+  "layer": "Base",
+  "length": 8.8
+}

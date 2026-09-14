@@ -1,0 +1,29 @@
+{
+  "BPName": "ability_10600151",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "2": {
+      "buffId": 2123100,
+      "name": "removeBuff",
+      "UID": "ad85d3c0-a2fd-43ce-b69a-1687d8c2da03",
+      "target": "CASTER",
+      "NodeID": 2
+    }
+  },
+  "onAbilityCastIds": [
+    2
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "isStealAbility": true,
+  "abilityParamId": 10600151,
+  "name": ""
+}

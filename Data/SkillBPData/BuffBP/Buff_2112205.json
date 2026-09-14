@@ -1,0 +1,34 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "crit_rate_v": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "b0943988-ffbd-49b8-b759-bcf0fc8d761c",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "crit_rate_v"
+      },
+      "name": "multiply",
+      "UID": "29e1fe8c-d922-429b-bc05-76f78865700b",
+      "NodeID": 4,
+      "lValue": {
+        "calcId": 2112205,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "33c680a5-36a9-4806-b59c-2e0c455528f6",
+        "name": "getParamByLuaConfig"
+      }
+    }
+  },
+  "NodeID": 1,
+  "UID": "7d604ff5-b369-4075-9544-28f25464cf0d",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2112205"
+}

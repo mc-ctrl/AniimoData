@@ -1,0 +1,142 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103303",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "checkElementType",
+      "UID": "53bb571c-887c-444c-9cc7-bb42826bf61a",
+      "target": "OWNER",
+      "NodeID": 3,
+      "elementType": 4
+    },
+    "4": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "e37e7cd3-5210-41de-8fed-5fccd79a2aab",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "035544e7-b332-4ed3-b729-2283b7da92d2",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "15": {
+      "value": {
+        "rValue": {
+          "calcId": 2103303,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 18,
+          "UID": "3e617439-61c6-47b5-b4d1-28fdf6bbd359",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "3ea13db5-e658-4af9-93b1-088da4d15fb1",
+        "NodeID": 14,
+        "lValue": {
+          "templateId": 2103304,
+          "name": "getBuffLayer",
+          "UID": "707faadd-d563-4c54-a45c-3a6da0475752",
+          "target": "OWNER",
+          "NodeID": 13
+        }
+      },
+      "name": "recoverEp",
+      "UID": "daa1055f-4263-45fc-aee5-9443824e7815",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "af0aac6a-0d40-464f-a437-7a1a3f69e856",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "buffId": 2103301,
+      "name": "hasBuff",
+      "UID": "e8ae3824-0960-4a2a-83dd-85360a3980c8",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "buffId": 2103304,
+      "name": "removeBuff",
+      "UID": "4cb6602f-3d46-43a3-9150-d41cc8242ea8",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "571eb4b2-1516-45a7-8434-29a354e8a666",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "18": {
+      "calcId": 2103303,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 18,
+      "UID": "3e617439-61c6-47b5-b4d1-28fdf6bbd359",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2103304,
+      "NodeID": 11,
+      "UID": "258edb66-4d9b-4cad-91bf-0d89a12ee5c1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "75a9a851-555e-49f6-83f3-a27f2840c805",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2103304,
+      "NodeID": 12,
+      "UID": "0fd1490f-64b6-442d-b480-105ab7c0b050",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onBuffDestroyIds": [
+    15,
+    17
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

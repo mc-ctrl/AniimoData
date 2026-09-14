@@ -1,0 +1,17 @@
+{
+  "nodeMap": {
+    "33": {
+      "UID": "df91567b-dcec-4bf1-be53-c57f2aa56a82",
+      "eventType": "EventEnter",
+      "NodeID": 33
+    }
+  },
+  "BPName": "ability_902130500",
+  "NodeID": 35,
+  "UID": "717cafeb-dce3-46c1-9a26-896fcc695d87",
+  "eventIds": [
+    33
+  ],
+  "layer": "Base",
+  "length": 5
+}

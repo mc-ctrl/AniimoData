@@ -1,0 +1,64 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1025",
+  "calcInfoByLuaConfig": {
+    "id": 1025,
+    "speed_ratio_sprint_v": "param3",
+    "speed_ratio_crouch_v": "param0",
+    "type": 1,
+    "speed_ratio_run_v": "param2",
+    "speed_ratio_standholdball_v": "param4",
+    "speed_ratio_walk_v": "param1"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    4,
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "d1c5b546-c92f-4fb0-a88d-cacc99001cad",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "target": "CURPET",
+      "NodeID": 9
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e6a438c2-688c-4e60-a2d2-2a2051a098e5",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "6ed01ee2-4d3a-4b3f-b59a-28cb8d4a5d09",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "6": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "d2540878-2c8a-4014-858e-fc58c6989931",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "speed": 1,
+      "NodeID": 6
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    7,
+    9
+  ],
+  "onBuffStartIds": [
+    4,
+    6
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "factor": 800,
+    "name": 1848803891,
+    "iconNone": "$UI_Img_PetReport_CatchQuantity_Inactive.png",
+    "itemReward1": 107,
+    "icon": "$UI_Img_PetReport_CatchQuantity.png"
+  },
+  {
+    "factor": 16000,
+    "factorWithShiny": 500000,
+    "icon": "$UI_Img_PetReport_ShiningStar.png",
+    "name": 1299500187,
+    "iconNone": "$UI_Img_PetReport_ShiningStar_Inactive.png"
+  },
+  {
+    "name": 1471818852,
+    "factorWithShiny": 24000,
+    "icon": "$UI_Img_PetReport_Flash.png",
+    "iconNone": "$UI_Img_PetReport_Flash_Inactive.png",
+    "itemReward2": 105
+  },
+  {
+    "name": 1877998218,
+    "factor": 8000,
+    "factorWithShiny": 250000,
+    "icon": "$UI_Img_PetReport_Boss.png",
+    "itemReward1": 106,
+    "iconNone": "$UI_Img_PetReport_Boss_Inactive.png"
+  },
+  {
+    "factor": 32000,
+    "factorWithShiny": 1000000,
+    "icon": "$UI_Img_PetReport_RainBow.png",
+    "name": 1491661321,
+    "iconNone": "$UI_Img_PetReport_RainBow_Inactive.png"
+  },
+  {
+    "factor": 1600,
+    "factorWithShiny": 50000,
+    "icon": "$UI_Img_PetReport_Once.png",
+    "name": 1296641331,
+    "iconNone": "$UI_Img_PetReport_Once_Inactive.png"
+  },
+  {
+    "factor": 800,
+    "factorWithShiny": 25000,
+    "icon": "$UI_Img_PetReport_Group.png",
+    "name": 1326071600,
+    "iconNone": "$UI_Img_PetReport_Group_Inactive.png"
+  }
+]

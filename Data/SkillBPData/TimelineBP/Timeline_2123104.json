@@ -1,0 +1,226 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5886706e-1f2c-41a1-ab7d-a00d84028377",
+      "effectId": "Eff_Parmon_Futternym_1023201_Skill_Sprinkle03",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "caca6ed4-2b2a-4031-8871-2dfac0fc0b03",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 2123106,
+      "NodeID": 24,
+      "UID": "cae0210c-a8c7-4b2e-be90-27035e2b9e59",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "269afcbb-78dc-4238-90c0-44e0d9103f13",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_Sprinkle_loop",
+      "NodeID": 6
+    },
+    "26": {
+      "UID": "5fbf4cf2-fc75-4afa-9b93-53610cf2b222",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "NodeID": 26
+    },
+    "15": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 2123104,
+            "calcType": 4,
+            "paramName": "param0",
+            "NodeID": 23,
+            "UID": "50177754-739c-43ae-b91d-f2c4af36a8a1",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "9d996d03-0de6-43e1-a216-549f18be94d9",
+          "NodeID": 13,
+          "lValue": {
+            "key": "hp10231",
+            "name": "getCacheVal",
+            "UID": "1572cc60-c5fb-4278-ac0f-fec5bede9079",
+            "target": "MASTER",
+            "NodeID": 12
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "39bbb4cc-f494-40ab-8fd0-93a51291181a",
+      "target": "TARGET",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "90446d7e-b952-4784-bb28-b38496f03ef6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "name": "doPetsActions",
+      "UID": "d914bfad-b0bd-4ad7-b540-4d2adc57558e",
+      "target": "TARGET",
+      "NodeID": 16
+    },
+    "27": {
+      "buffId": 2123106,
+      "name": "removeBuff",
+      "UID": "df3c6628-9e83-4263-97bc-5542d377db8f",
+      "target": "TrapTarget",
+      "NodeID": 27
+    },
+    "25": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 25,
+      "UID": "3c3f3735-3db8-42b2-b773-748cc3c50791",
+      "enterTrapActionIds": [
+        24
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        27
+      ],
+      "shapeArgs": [
+        7
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 1,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "9": {
+      "actionIds": [
+        16,
+        20
+      ],
+      "name": "actOnTargets",
+      "UID": "be49381f-1fab-46a5-a1d1-fd794f8f203a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 9
+    },
+    "23": {
+      "calcId": 2123104,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 23,
+      "UID": "50177754-739c-43ae-b91d-f2c4af36a8a1",
+      "name": "getParamByLuaConfig"
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.8,
+      "NodeID": 22,
+      "UID": "03fdd115-d95d-4c4f-81d8-b5a8ff1dc542"
+    },
+    "11": {
+      "eventType": "NotifyState",
+      "endTime": 9,
+      "NodeID": 11,
+      "UID": "acba33ff-413e-450d-8e76-2dbd895dde02",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1
+    },
+    "20": {
+      "key": "switchPet",
+      "name": "setCacheVal",
+      "UID": "99644cb7-7cf4-4f99-922a-5464dbc4ecd9",
+      "val": {
+        "UID": "500859c1-d524-4eb4-9ebc-09d0d2e1d1ab",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 19
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "12f6716f-fdd7-4b88-bb31-574644882686",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_SFX_Combat_10231_Skill_Sprinkle_loop",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2123104",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    22,
+    26,
+    4,
+    7,
+    11
+  ],
+  "layer": "Base",
+  "length": 10
+}

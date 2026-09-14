@@ -1,0 +1,350 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2169301",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    37,
+    42
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "name": "calcResult",
+      "UID": "ce6624f0-433a-40a2-9f29-8de4e0240699",
+      "target": "OWNER",
+      "NodeID": 37,
+      "calcInfoByLuaConfig": {
+        "id": 2169301,
+        "passive_energy_cur": "param0",
+        "type": 1
+      }
+    },
+    "39": {
+      "value": -100,
+      "name": "applyECSElement",
+      "UID": "39c4d855-b0a4-4123-b3e6-92e66c04e94a",
+      "element": 1,
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91693011,
+      "NodeID": 40,
+      "UID": "10f66551-e434-454d-a56d-2776ed701cd5",
+      "layer": 5,
+      "name": "addBuff",
+      "level": 1
+    },
+    "42": {
+      "templateId": 91693011,
+      "name": "removeBuffLayer",
+      "UID": "a01953bf-8603-4112-ad2f-921284f01d8f",
+      "layer": 5,
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "43": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0c177889-c4f9-482e-af4b-f27a539e2195",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start001",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "3": {
+      "name": "enableSkillMotionAnimState",
+      "abilityEndExit": true,
+      "moveAnimId": "Skill_Jet_Loop",
+      "NodeID": 3,
+      "UID": "69076a77-6237-46a8-bffe-2d9e926c16e0",
+      "dashAnimId": "Skill_Jet_Spin",
+      "enable": true,
+      "idleAnimId": "Skill_Jet_Loop"
+    },
+    "5": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "from": 16930000,
+      "name": "switchSkill",
+      "UID": "7362682f-18d6-496e-8ebe-d88de71e519e",
+      "to": 16930102,
+      "NodeID": 5,
+      "overrideDuration": 0
+    },
+    "53": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "84362e68-493e-40b8-b898-a6038c1f4d58",
+      "NodeID": 53,
+      "groupKey": 0
+    },
+    "52": {
+      "name": "stopEffectStr",
+      "UID": "1c1c1013-d2e5-49a4-9113-2e8544c18ffa",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start004",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "7": {
+      "actionIds": [
+        5,
+        14
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "17369e57-05ab-4aa6-9da6-2c99860f16b1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9,
+        13
+      ],
+      "NodeID": 7
+    },
+    "51": {
+      "name": "stopEffectStr",
+      "UID": "4f5790f1-dec9-4e02-bb26-a990265298f9",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start002",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "8": {
+      "name": "checkPetPrototypeId",
+      "UID": "313a75c9-326e-443f-b7be-02b1767cf972",
+      "target": "OWNER",
+      "petPrototypeId": 1069300,
+      "NodeID": 8
+    },
+    "31": {
+      "target": "OWNER",
+      "actionIds": [
+        30
+      ],
+      "attributeName": "passive_energy_cur",
+      "UID": "026d1e67-bf58-407a-be75-3e7099b40a44",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 31
+    },
+    "9": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "from": 16910000,
+      "name": "switchSkill",
+      "UID": "5ea6758f-b91f-4e7e-8139-c9709e9af242",
+      "to": 16910102,
+      "NodeID": 9,
+      "overrideDuration": 0
+    },
+    "12": {
+      "UID": "aa75e748-d7bc-4819-a712-52de6b99998d",
+      "oldPetActionIds": [
+        11
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 12
+    },
+    "27": {
+      "UID": "10d4c7b1-e53b-4eed-bc64-793fbf03dd96",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 27
+    },
+    "11": {
+      "buffId": 2169301,
+      "name": "removeBuff",
+      "UID": "df8b060b-890c-4317-bf5f-98b8f9ef2c09",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "19": {
+      "actionIds": [
+        39,
+        24,
+        40
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "16738d93-926a-4721-b47f-8dcd879861a4",
+      "name": "doActionsByConditions",
+      "NodeID": 19
+    },
+    "21": {
+      "endNum": 20,
+      "actionIds": [
+        19
+      ],
+      "NodeID": 21,
+      "UID": "8eca90fd-88a8-4b77-8c11-680dec60b039",
+      "stepNum": 1,
+      "startNum": 0,
+      "name": "forEach"
+    },
+    "17": {
+      "moveAnimId": "",
+      "NodeID": 17,
+      "UID": "ab937621-0f0a-4609-898a-ce045f4dc074",
+      "name": "enableSkillMotionAnimState",
+      "enable": false,
+      "abilityEndExit": true
+    },
+    "13": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "24266190-662b-49ee-8b70-1e369373f68e",
+      "to": 16910101,
+      "NodeID": 13,
+      "from": 16910100
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "47d0af13-1008-4124-810e-1f69f76972a9",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start002",
+      "speed": 1,
+      "NodeID": 45
+    },
+    "14": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "from": 16930100,
+      "name": "switchSkill",
+      "UID": "c668dbed-d8fd-4fe7-8b05-5cd5c9bb2a47",
+      "to": 16930101,
+      "NodeID": 14,
+      "overrideDuration": 0
+    },
+    "46": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "99d57acf-3944-4deb-b0c8-d599ff03e74e",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start004",
+      "speed": 1,
+      "NodeID": 46
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "419609b0-4465-4e6b-b840-57eceb29e187",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "Skill_Jet_End"
+    },
+    "47": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0b1783d8-809f-469f-b6dd-a5dbcd6ce3d0",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start003",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "26": {
+      "UID": "5d3927c3-1140-4de2-98b7-c34ce08eaa44",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 26
+    },
+    "48": {
+      "name": "stopEffectStr",
+      "UID": "1b29eed8-eef7-4e81-896f-6c10895cd10c",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start001",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "28": {
+      "buffId": 2169301,
+      "name": "removeBuff",
+      "UID": "cf1531a9-0a0c-441e-8447-b5b44677c296",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "18": {
+      "buffId": 10086,
+      "name": "hasBuff",
+      "UID": "98955a25-4810-451a-aecf-d9a847d47bd5",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "30": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "bec5afa6-87bf-4a3f-9267-504b23d36e30",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "50": {
+      "name": "stopEffectStr",
+      "UID": "42c5546b-c49c-4753-8879-65641f9a3564",
+      "effectId": "Eff_Parmon_10693_Skill_Jet_Start003",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "33": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "fe746007-6e41-4b5d-a542-6208e5d34afb",
+        "target": "OWNER",
+        "NodeID": 32,
+        "attributeName": "passive_energy_cur"
+      },
+      "name": "greater",
+      "UID": "7d96a022-6da3-4904-91e9-83c9a4860f0b",
+      "NodeID": 33,
+      "lValue": 1
+    },
+    "34": {
+      "delay": 1,
+      "NodeID": 34,
+      "UID": "10bfc383-5a72-4e9a-8551-b5daab140911",
+      "name": "buffStartThink",
+      "interval": 1,
+      "buffTemplateId": 2169301
+    },
+    "24": {
+      "calcInfo": {
+        "passive_energy_cur": 5
+      },
+      "name": "calcResult",
+      "UID": "06679fd1-1052-4d08-b27e-a7622d3e6726",
+      "target": "OWNER",
+      "NodeID": 24
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    15,
+    17,
+    26,
+    48,
+    51,
+    50,
+    52
+  ],
+  "onBuffStartIds": [
+    3,
+    7,
+    21,
+    12,
+    27,
+    31,
+    34,
+    43,
+    45,
+    47,
+    46,
+    53
+  ]
+}

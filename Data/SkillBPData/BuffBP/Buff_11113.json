@@ -1,0 +1,44 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11113",
+  "NodeID": 1,
+  "UID": "d96f4b5b-e92a-4f71-ad97-3c4028ed3ece",
+  "desc": "迷雾森林警告效果",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "11": {
+      "lerpTime": 15,
+      "name": "enableVignette",
+      "NodeID": 11,
+      "UID": "29674d3a-e8f2-4699-825e-992b75e303bc",
+      "endWidth": 0.8,
+      "enable": true,
+      "startWdith": 0.2
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "8921345a-9d91-4b7f-8011-d3622087c26e",
+      "effectId": "Eff_Avatar_Losing_Buff",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "13": {
+      "lerpTime": 3,
+      "name": "enableVignette",
+      "NodeID": 13,
+      "UID": "0ad8b34c-3272-49b9-bfa9-9e01c4766a0d",
+      "endWidth": 0,
+      "enable": false,
+      "startWdith": 0.8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9,
+    13
+  ],
+  "onBuffStartIds": [
+    11
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118701",
+  "calcInfoByLuaConfig": {
+    "id": 2118701,
+    "speed_ratio_sprint_v": "param1",
+    "type": 1,
+    "speed_ratio_run_v": "param0"
+  },
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "transferGroup": 0,
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.2,
+      "name": "multiply",
+      "UID": "93a919de-b117-47ea-8a25-c63bc88d3f1a",
+      "NodeID": 8,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "7aa91f80-21ab-492e-a849-8143dbcdd8cf",
+        "target": "OWNER",
+        "NodeID": 7,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "69d2b4c5-7703-4809-bc62-28b23fc44604",
+      "effectId": "Eff_Buff_Shield_Wind",
+      "target": "OWNER",
+      "NodeID": 18
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    18
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Shield_Wind"
+    }
+  ]
+}

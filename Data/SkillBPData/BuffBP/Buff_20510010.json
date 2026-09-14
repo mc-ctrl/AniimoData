@@ -1,0 +1,15 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "crit_rate_v": 0.035
+  },
+  "BPName": "buff_20510010",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {}
+}

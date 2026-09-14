@@ -1,0 +1,126 @@
+{
+  "BUFF_TAG_GROUP_PARSER": {
+    "BE_CONTROL": [
+      3,
+      9,
+      17,
+      5,
+      21,
+      8
+    ],
+    "HARMFUL": [
+      4,
+      5
+    ],
+    "NAGATIVE": [
+      3,
+      5,
+      8,
+      9,
+      17,
+      19,
+      21,
+      24,
+      11
+    ]
+  },
+  "ID_2_TAG": [
+    "SuperArmor",
+    "Invincible",
+    "Stun",
+    "Break",
+    "Charm",
+    "BreakFall",
+    "Favorable",
+    "Palsy",
+    "Frozen",
+    "Positive",
+    "Negative",
+    "Neutral",
+    "TimeScaleNoEffect",
+    "AtkDmgZero",
+    "ForbiddenSwitchPet",
+    "NoDeath",
+    "Silent",
+    "ConvertDmgToHeal",
+    "Slow",
+    "ImmuneDamage",
+    "Sleep",
+    "SuperArmorForceDisplacement",
+    "BuffTagNoBreak",
+    "Burn",
+    "CloudConfine",
+    "ForbidControlPet",
+    "DisableLocked",
+    "Restrained"
+  ],
+  "BUFF_TAG_2_GROUP_MAP": {
+    "3": {
+      "BE_CONTROL": true,
+      "NAGATIVE": true
+    },
+    "4": {
+      "HARMFUL": true
+    },
+    "24": {
+      "NAGATIVE": true
+    },
+    "8": {
+      "BE_CONTROL": true,
+      "NAGATIVE": true
+    },
+    "17": {
+      "BE_CONTROL": true,
+      "NAGATIVE": true
+    },
+    "9": {
+      "BE_CONTROL": true,
+      "NAGATIVE": true
+    },
+    "11": {
+      "NAGATIVE": true
+    },
+    "19": {
+      "NAGATIVE": true
+    },
+    "5": {
+      "BE_CONTROL": true,
+      "HARMFUL": true,
+      "NAGATIVE": true
+    },
+    "21": {
+      "BE_CONTROL": true,
+      "NAGATIVE": true
+    }
+  },
+  "BUFF_TAG_2_ID": {
+    "AtkDmgZero": 14,
+    "Break": 4,
+    "BreakFall": 6,
+    "BuffTagNoBreak": 23,
+    "Burn": 24,
+    "Charm": 5,
+    "CloudConfine": 25,
+    "ConvertDmgToHeal": 18,
+    "DisableLocked": 27,
+    "Favorable": 7,
+    "ForbidControlPet": 26,
+    "ForbiddenSwitchPet": 15,
+    "Frozen": 9,
+    "ImmuneDamage": 20,
+    "Invincible": 2,
+    "Negative": 11,
+    "Neutral": 12,
+    "NoDeath": 16,
+    "Palsy": 8,
+    "Positive": 10,
+    "Restrained": 28,
+    "Silent": 17,
+    "Slow": 19,
+    "Stun": 3,
+    "SuperArmor": 1,
+    "SuperArmorForceDisplacement": 22,
+    "TimeScaleNoEffect": 13,
+    "Sleep": 21
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "91100172": {
+    "id": 91100172,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 11410900,
+                  "name": "tSkillId"
+                },
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "speed": 2,
+        "ignoreRotation": true,
+        "position": [
+          -267.36,
+          24.24,
+          196.3
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "speed": 2,
+        "position": [
+          -268.71,
+          24.69,
+          194.22
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 11410900,
+                  "name": "tSkillId"
+                },
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "speed": 2,
+        "ignoreRotation": true,
+        "position": [
+          -269.27,
+          23.65,
+          203.67
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "speed": 2,
+        "position": [
+          -266.59,
+          23.77,
+          203.01
+        ]
+      }
+    ],
+    "pos": [
+      -277.25,
+      25.09,
+      202.34
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91085925
+  },
+  "91100180": {
+    "id": 91100180,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 11410900,
+                  "name": "tSkillId"
+                },
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "speed": 2,
+        "ignoreRotation": true,
+        "position": [
+          -266.26,
+          27.53,
+          177.81
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "speed": 2,
+        "position": [
+          -264.05,
+          27.42,
+          171.79
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "speed": 2,
+        "position": [
+          -267.36,
+          27.45,
+          171.59
+        ]
+      }
+    ],
+    "pos": [
+      -255.64,
+      28.17,
+      173.42
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91085925
+  },
+  "91100262": {
+    "id": 91100262,
+    "editorName": "假水母",
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 5,
+                  "name": "tWaitTime"
+                },
+                {
+                  "realValue": "Skill_Halo",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 207.8,
+        "position": [
+          -258.3,
+          25.62,
+          177.54
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "IdleSpecial",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Angry",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 81.93,
+        "ignoreRotation": true,
+        "position": [
+          -258.3,
+          25.72,
+          177.54
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0.97,
+      0,
+      -0.24
+    ],
+    "pos": [
+      -258.3,
+      25.62,
+      177.54
+    ],
+    "sandboxId": 91085925
+  },
+  "91100365": {
+    "id": 91100365,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 5,
+                  "name": "tWaitTime"
+                },
+                {
+                  "realValue": 11410900,
+                  "name": "tSkillId"
+                },
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 93.51,
+        "ignoreRotation": true,
+        "position": [
+          -257.51,
+          24.32,
+          189.28
+        ]
+      }
+    ],
+    "pos": [
+      -257.51,
+      24.32,
+      189.28
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91085925
+  }
+}

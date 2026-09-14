@@ -1,0 +1,265 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          38
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "f4b6242d-8444-490f-92b2-766c909749b0",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "b2133ffc-6942-485e-bbb5-d05a651115d8",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "actionIds": [
+        42
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "6a361f14-e737-4b85-97a0-8697bfb90fdb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        43
+      ],
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 41,
+      "UID": "ee29f3a1-2608-4126-a266-444cf23db3e7"
+    },
+    "42": {
+      "duration": 0.2,
+      "name": "puppetPreCastAction",
+      "UID": "5f1ac595-1307-47c0-9a5d-42784341c6ad",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 42
+    },
+    "43": {
+      "duration": 0.45,
+      "name": "puppetPreCastAction",
+      "UID": "e4d32644-d873-441e-be6a-0977f8001c15",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 43
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.81,
+      "NodeID": 31,
+      "UID": "d627b621-9fc3-4771-8514-89bf42115115"
+    },
+    "11": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "edbbcc22-1a4d-4823-af7f-86aec3d0ef0c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          26,
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c1cf2683-b52f-4c18-94bb-18bb1f1e66f1",
+      "target": "OWNER",
+      "NodeID": 24,
+      "animId": "Skill_MagicLeaf_BurrowState"
+    },
+    "15": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "26": {
+      "name": "stopSoundStr",
+      "UID": "457abc73-a633-4d96-b720-0b19bb25b06b",
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice_Loop",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "657215b9-1c56-429c-98a2-56c12836d808",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice",
+      "NodeID": 27
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 17,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 29,
+      "UID": "97022228-81a9-400b-ba25-468d34ac51e0"
+    },
+    "30": {
+      "cameraShakeId": 21124,
+      "name": "playCameraImpulseById",
+      "UID": "b5a571c4-916b-4840-b463-1c223af5f22b",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 116303,
+      "name": "createEntity",
+      "UID": "ba3dae4b-8ca9-40b8-8a2f-0ccb499d8a38",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 32,
+      "pos": "OWNER"
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_MagicLeaf"
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 34,
+      "UID": "5383c2e2-0870-44d1-b1d9-59ccda93d425"
+    },
+    "23": {
+      "UID": "ee1a32a3-0dea-4ea8-9362-166e182d97ff",
+      "target": "OWNER",
+      "name": "isInBurrow",
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_11630220",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    13,
+    21,
+    17,
+    29,
+    31,
+    34,
+    41
+  ],
+  "layer": "Base",
+  "length": 1.75
+}

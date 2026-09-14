@@ -1,0 +1,874 @@
+{
+  "1020004": [
+    {
+      "upgradeCost": {
+        "1010": 8200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10200041
+    },
+    {
+      "upgradeCost": {
+        "1010": 16300
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10200042
+    },
+    {
+      "upgradeCost": {
+        "1010": 85000
+      },
+      "homeLevel": 15,
+      "homeTemplateId": 10200043
+    },
+    {
+      "upgradeCost": {
+        "1010": 360000
+      },
+      "homeLevel": 19,
+      "homeTemplateId": 10200044
+    }
+  ],
+  "1010003": [
+    {
+      "upgradeCost": {
+        "1010": 18100
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10100031
+    },
+    {
+      "upgradeCost": {
+        "1010": 81000
+      },
+      "homeLevel": 13,
+      "homeTemplateId": 10100032
+    },
+    {
+      "upgradeCost": {
+        "1010": 320000
+      },
+      "homeLevel": 16,
+      "homeTemplateId": 10100033
+    }
+  ],
+  "1010001": [
+    {
+      "upgradeCost": {
+        "1010": 90
+      },
+      "homeLevel": 2,
+      "homeTemplateId": 10100011
+    },
+    {
+      "upgradeCost": {
+        "1010": 400
+      },
+      "homeLevel": 4,
+      "homeTemplateId": 10100012
+    },
+    {
+      "upgradeCost": {
+        "1010": 8200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10100013
+    },
+    {
+      "upgradeCost": {
+        "1010": 49000
+      },
+      "homeLevel": 11,
+      "homeTemplateId": 10100014
+    },
+    {
+      "upgradeCost": {
+        "1010": 199000
+      },
+      "homeLevel": 14,
+      "homeTemplateId": 10100015
+    },
+    {
+      "upgradeCost": {
+        "1010": 910000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10100016
+    }
+  ],
+  "1020005": [
+    {
+      "upgradeCost": {
+        "1010": 4200
+      },
+      "homeLevel": 6,
+      "homeTemplateId": 10200051
+    },
+    {
+      "upgradeCost": {
+        "1010": 12300
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10200052
+    },
+    {
+      "upgradeCost": {
+        "1010": 27000
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10200053
+    },
+    {
+      "upgradeCost": {
+        "1010": 149000
+      },
+      "homeLevel": 14,
+      "homeTemplateId": 10200054
+    },
+    {
+      "upgradeCost": {
+        "1010": 400000
+      },
+      "homeLevel": 17,
+      "homeTemplateId": 10200055
+    },
+    {
+      "upgradeCost": {
+        "1010": 720000
+      },
+      "homeLevel": 19,
+      "homeTemplateId": 10200056
+    }
+  ],
+  "1010004": [
+    {
+      "upgradeCost": {
+        "1010": 4200
+      },
+      "homeLevel": 6,
+      "homeTemplateId": 10100041
+    },
+    {
+      "upgradeCost": {
+        "1010": 269000
+      },
+      "homeLevel": 11,
+      "homeTemplateId": 10100042
+    }
+  ],
+  "1010008": [
+    {
+      "upgradeCost": {
+        "1010": 1100
+      },
+      "homeLevel": 4,
+      "homeTemplateId": 10100081
+    },
+    {
+      "upgradeCost": {
+        "1010": 20000
+      },
+      "homeLevel": 8,
+      "homeTemplateId": 10100082
+    },
+    {
+      "upgradeCost": {
+        "1010": 98000
+      },
+      "homeLevel": 11,
+      "homeTemplateId": 10100083
+    },
+    {
+      "upgradeCost": {
+        "1010": 240000
+      },
+      "homeLevel": 13,
+      "homeTemplateId": 10100084
+    },
+    {
+      "upgradeCost": {
+        "1010": 720000
+      },
+      "homeLevel": 17,
+      "homeTemplateId": 10100085
+    }
+  ],
+  "1020006": [
+    {
+      "upgradeCost": {
+        "1010": 4200
+      },
+      "homeLevel": 6,
+      "homeTemplateId": 10200061
+    },
+    {
+      "upgradeCost": {
+        "1010": 14000
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10200062
+    },
+    {
+      "upgradeCost": {
+        "1010": 61000
+      },
+      "homeLevel": 13,
+      "homeTemplateId": 10200063
+    },
+    {
+      "upgradeCost": {
+        "1010": 270000
+      },
+      "homeLevel": 17,
+      "homeTemplateId": 10200064
+    },
+    {
+      "upgradeCost": {
+        "1010": 720000
+      },
+      "homeLevel": 19,
+      "homeTemplateId": 10200065
+    }
+  ],
+  "1010005": [
+    {
+      "upgradeCost": {
+        "1010": 54000
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10100051
+    }
+  ],
+  "1020007": [
+    {
+      "upgradeCost": {
+        "1010": 1200
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10200071
+    },
+    {
+      "upgradeCost": {
+        "1010": 12300
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10200072
+    },
+    {
+      "upgradeCost": {
+        "1010": 16000
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10200073
+    },
+    {
+      "upgradeCost": {
+        "1010": 72000
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10200074
+    },
+    {
+      "upgradeCost": {
+        "1010": 230000
+      },
+      "homeLevel": 15,
+      "homeTemplateId": 10200075
+    },
+    {
+      "upgradeCost": {
+        "1010": 910000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10200076
+    }
+  ],
+  "1020008": [
+    {
+      "upgradeCost": {
+        "1010": 5900
+      },
+      "homeLevel": 8,
+      "homeTemplateId": 10200081
+    },
+    {
+      "upgradeCost": {
+        "1010": 16300
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10200082
+    },
+    {
+      "upgradeCost": {
+        "1010": 61000
+      },
+      "homeLevel": 13,
+      "homeTemplateId": 10200083
+    },
+    {
+      "upgradeCost": {
+        "1010": 240000
+      },
+      "homeLevel": 16,
+      "homeTemplateId": 10200084
+    },
+    {
+      "upgradeCost": {
+        "1010": 680000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10200085
+    }
+  ],
+  "1010007": [
+    {
+      "upgradeCost": {
+        "1010": 453000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10100071
+    }
+  ],
+  "1030001": [
+    {
+      "upgradeCost": {
+        "1010": 400
+      },
+      "homeLevel": 3,
+      "homeTemplateId": 10300011
+    },
+    {
+      "upgradeCost": {
+        "1010": 4200
+      },
+      "homeLevel": 6,
+      "homeTemplateId": 10300012
+    },
+    {
+      "upgradeCost": {
+        "1010": 24000
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10300013
+    }
+  ],
+  "1020000": [
+    {
+      "upgradeCost": {
+        "1010": 170
+      },
+      "homeLevel": 2,
+      "homeTemplateId": 10200001
+    },
+    {
+      "upgradeCost": {
+        "1010": 1800
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10200002
+    },
+    {
+      "upgradeCost": {
+        "1010": 16000
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10200003
+    },
+    {
+      "upgradeCost": {
+        "1010": 81000
+      },
+      "homeLevel": 13,
+      "homeTemplateId": 10200004
+    },
+    {
+      "upgradeCost": {
+        "1010": 320000
+      },
+      "homeLevel": 16,
+      "homeTemplateId": 10200005
+    },
+    {
+      "upgradeCost": {
+        "1010": 910000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10200006
+    }
+  ],
+  "1050000": [
+    {
+      "upgradeCost": {
+        "1010": 320
+      },
+      "homeLevel": 2,
+      "homeTemplateId": 10500001
+    }
+  ],
+  "1030002": [
+    {
+      "upgradeCost": {
+        "1010": 170
+      },
+      "homeLevel": 2,
+      "homeTemplateId": 10300021
+    },
+    {
+      "upgradeCost": {
+        "1010": 2900
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10300022
+    },
+    {
+      "upgradeCost": {
+        "1010": 12000
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10300023
+    }
+  ],
+  "1020010": [
+    {
+      "upgradeCost": {
+        "1010": 4200
+      },
+      "homeLevel": 6,
+      "homeTemplateId": 10200101
+    },
+    {
+      "upgradeCost": {
+        "1010": 16300
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10200102
+    },
+    {
+      "upgradeCost": {
+        "1010": 75000
+      },
+      "homeLevel": 14,
+      "homeTemplateId": 10200103
+    },
+    {
+      "upgradeCost": {
+        "1010": 340000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10200104
+    }
+  ],
+  "1020009": [
+    {
+      "upgradeCost": {
+        "1010": 4200
+      },
+      "homeLevel": 6,
+      "homeTemplateId": 10200091
+    },
+    {
+      "upgradeCost": {
+        "1010": 16300
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10200092
+    },
+    {
+      "upgradeCost": {
+        "1010": 75000
+      },
+      "homeLevel": 14,
+      "homeTemplateId": 10200093
+    },
+    {
+      "upgradeCost": {
+        "1010": 340000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10200094
+    }
+  ],
+  "1040003": [
+    {
+      "upgradeCost": {
+        "1010": 8200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10400031
+    }
+  ],
+  "1020011": [
+    {
+      "upgradeCost": {
+        "1010": 5900
+      },
+      "homeLevel": 8,
+      "homeTemplateId": 10200111
+    },
+    {
+      "upgradeCost": {
+        "1010": 16300
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10200112
+    },
+    {
+      "upgradeCost": {
+        "1010": 61000
+      },
+      "homeLevel": 13,
+      "homeTemplateId": 10200113
+    },
+    {
+      "upgradeCost": {
+        "1010": 240000
+      },
+      "homeLevel": 16,
+      "homeTemplateId": 10200114
+    },
+    {
+      "upgradeCost": {
+        "1010": 720000
+      },
+      "homeLevel": 19,
+      "homeTemplateId": 10200115
+    }
+  ],
+  "1040002": [
+    {
+      "upgradeCost": {
+        "1010": 21000
+      },
+      "homeTemplateId": 10400021
+    },
+    {
+      "upgradeCost": {
+        "1010": 45000
+      },
+      "homeTemplateId": 10400022
+    },
+    {
+      "upgradeCost": {
+        "1010": 120000
+      },
+      "homeTemplateId": 10400023
+    },
+    {
+      "upgradeCost": {
+        "1010": 340000
+      },
+      "homeTemplateId": 10400024
+    },
+    {
+      "upgradeCost": {
+        "1010": 720000
+      },
+      "homeTemplateId": 10400025
+    }
+  ],
+  "1040004": [
+    {
+      "upgradeCost": {
+        "1010": 8200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10400041
+    }
+  ],
+  "1020001": [
+    {
+      "upgradeCost": {
+        "1010": 320
+      },
+      "homeLevel": 3,
+      "homeTemplateId": 10200011
+    },
+    {
+      "upgradeCost": {
+        "1010": 1800
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10200012
+    },
+    {
+      "upgradeCost": {
+        "1010": 8200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10200013
+    },
+    {
+      "upgradeCost": {
+        "1010": 31000
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10200014
+    },
+    {
+      "upgradeCost": {
+        "1010": 143000
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10200015
+    },
+    {
+      "upgradeCost": {
+        "1010": 340000
+      },
+      "homeLevel": 15,
+      "homeTemplateId": 10200016
+    },
+    {
+      "upgradeCost": {
+        "1010": 910000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10200017
+    },
+    {
+      "upgradeCost": {
+        "1010": 1450000
+      },
+      "homeLevel": 20,
+      "homeTemplateId": 10200018
+    }
+  ],
+  "1040001": [
+    {
+      "upgradeCost": {
+        "1010": 3600
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10400011
+    }
+  ],
+  "1040005": [
+    {
+      "upgradeCost": {
+        "1010": 15700
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10400051
+    }
+  ],
+  "1020002": [
+    {
+      "upgradeCost": {
+        "1010": 540
+      },
+      "homeLevel": 4,
+      "homeTemplateId": 10200021
+    },
+    {
+      "upgradeCost": {
+        "1010": 1800
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10200022
+    },
+    {
+      "upgradeCost": {
+        "1010": 8200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10200023
+    },
+    {
+      "upgradeCost": {
+        "1010": 36000
+      },
+      "homeLevel": 10,
+      "homeTemplateId": 10200024
+    },
+    {
+      "upgradeCost": {
+        "1010": 143000
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10200025
+    },
+    {
+      "upgradeCost": {
+        "1010": 300000
+      },
+      "homeLevel": 14,
+      "homeTemplateId": 10200026
+    },
+    {
+      "upgradeCost": {
+        "1010": 910000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10200027
+    }
+  ],
+  "1010000": [
+    {
+      "upgradeCost": {
+        "1010": 10
+      },
+      "homeLevel": 1,
+      "homeTemplateId": 10100001
+    },
+    {
+      "upgradeCost": {
+        "1010": 60
+      },
+      "homeLevel": 2,
+      "homeTemplateId": 10100002
+    },
+    {
+      "upgradeCost": {
+        "1010": 700
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10100003
+    },
+    {
+      "upgradeCost": {
+        "1010": 6200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10100004
+    },
+    {
+      "upgradeCost": {
+        "1010": 23500
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10100005
+    },
+    {
+      "upgradeCost": {
+        "1010": 107000
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10100006
+    },
+    {
+      "upgradeCost": {
+        "1010": 480000
+      },
+      "homeLevel": 16,
+      "homeTemplateId": 10100007
+    }
+  ],
+  "1010006": [
+    {
+      "upgradeCost": {
+        "1010": 1500
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10100061
+    },
+    {
+      "upgradeCost": {
+        "1010": 9800
+      },
+      "homeLevel": 8,
+      "homeTemplateId": 10100062
+    },
+    {
+      "upgradeCost": {
+        "1010": 81000
+      },
+      "homeLevel": 13,
+      "homeTemplateId": 10100063
+    }
+  ],
+  "1020003": [
+    {
+      "upgradeCost": {
+        "1010": 540
+      },
+      "homeLevel": 4,
+      "homeTemplateId": 10200031
+    },
+    {
+      "upgradeCost": {
+        "1010": 1800
+      },
+      "homeLevel": 5,
+      "homeTemplateId": 10200032
+    },
+    {
+      "upgradeCost": {
+        "1010": 8200
+      },
+      "homeLevel": 7,
+      "homeTemplateId": 10200033
+    },
+    {
+      "upgradeCost": {
+        "1010": 31000
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10200034
+    },
+    {
+      "upgradeCost": {
+        "1010": 143000
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10200035
+    },
+    {
+      "upgradeCost": {
+        "1010": 480000
+      },
+      "homeLevel": 16,
+      "homeTemplateId": 10200036
+    },
+    {
+      "upgradeCost": {
+        "1010": 960000
+      },
+      "homeLevel": 19,
+      "homeTemplateId": 10200037
+    }
+  ],
+  "1010002": [
+    {
+      "upgradeCost": {
+        "1010": 320
+      },
+      "homeLevel": 3,
+      "homeTemplateId": 10100021
+    },
+    {
+      "upgradeCost": {
+        "1010": 4200
+      },
+      "homeLevel": 6,
+      "homeTemplateId": 10100022
+    },
+    {
+      "upgradeCost": {
+        "1010": 31000
+      },
+      "homeLevel": 9,
+      "homeTemplateId": 10100023
+    },
+    {
+      "upgradeCost": {
+        "1010": 143000
+      },
+      "homeLevel": 12,
+      "homeTemplateId": 10100024
+    },
+    {
+      "upgradeCost": {
+        "1010": 340000
+      },
+      "homeLevel": 15,
+      "homeTemplateId": 10100025
+    },
+    {
+      "upgradeCost": {
+        "1010": 910000
+      },
+      "homeLevel": 18,
+      "homeTemplateId": 10100026
+    }
+  ]
+}

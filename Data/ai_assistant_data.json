@@ -1,0 +1,1254 @@
+{
+  "113": {
+    "chat": 1420464259,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 113,
+    "AIType": 2,
+    "priority": 20
+  },
+  "115": {
+    "chat": 1413815307,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "showSource",
+    "group": 115,
+    "priority": 10,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      103001
+    ],
+    "time": 8,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "117": {
+    "chat": 2091551820,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 117,
+    "AIType": 2,
+    "priority": 10
+  },
+  "118": {
+    "chat": 1371804160,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "appearHelp",
+    "group": 118,
+    "priority": 10,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      408
+    ],
+    "time": 10,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "119": {
+    "chat": 1397691188,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "showSource",
+    "group": 119,
+    "priority": 10,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      103001
+    ],
+    "time": 8,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "128": {
+    "chat": 1670682825,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "aiHelperTrackTarget",
+    "feedback": 1650515312,
+    "feedback_end": 1649478560,
+    "group": 128,
+    "img": "$UI_Icon_AiGuide_RainBow.png",
+    "priority": 1,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      "trackNearRainbowPuppet"
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "127": {
+    "chat": 1690077060,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 127,
+    "AIType": 2,
+    "priority": 13
+  },
+  "129": {
+    "chat": 1543134016,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "aiHelperTrackTarget",
+    "feedback": 1387052114,
+    "feedback_end": 1514202911,
+    "group": 129,
+    "img": "$UI_Icon_AiGuide_obsidian.png",
+    "priority": 1,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      "trackNearBlackShinyPuppet"
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "6": {
+    "chat": 2128207937,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001,
+      1095
+    ],
+    "group": 6,
+    "AIType": 2,
+    "priority": 12
+  },
+  "110": {
+    "chat": 1585173671,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      550,
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 109,
+    "AIType": 2,
+    "priority": 20
+  },
+  "131": {
+    "chat": 1241847542,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 131,
+    "AIType": 2,
+    "priority": 13
+  },
+  "133": {
+    "chat": 1187752029,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "appearHelp",
+    "group": 133,
+    "priority": 5,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      119
+    ],
+    "time": 8,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "132": {
+    "chat": 1998463909,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      550,
+      3000,
+      3003,
+      3000001,
+      3000100,
+      3000101,
+      3000102,
+      3000103
+    ],
+    "group": 132,
+    "AIType": 2,
+    "priority": 1
+  },
+  "31": {
+    "chat": 1759924819,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 1,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 31,
+    "AIType": 2,
+    "priority": 30
+  },
+  "9": {
+    "chat": 1515684965,
+    "emo": "$UI_Node_AiAssistant_Sad.prefab",
+    "time": 5,
+    "group": 9,
+    "priority": 23,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 2,
+    "chat_value": [
+      7
+    ],
+    "AIType": 2
+  },
+  "114": {
+    "chat": 1471170673,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 7,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 114,
+    "AIType": 2,
+    "priority": 10
+  },
+  "112": {
+    "chat": 1939579554,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 112,
+    "AIType": 2,
+    "priority": 20
+  },
+  "121": {
+    "chat": 1983368128,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "showSource",
+    "group": 121,
+    "priority": 10,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      103001
+    ],
+    "time": 8,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "22": {
+    "chat": 2037334982,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 22,
+    "AIType": 2,
+    "priority": 13
+  },
+  "23": {
+    "chat": 1269256130,
+    "emo": "$UI_Node_RunAcross_Tips.prefab",
+    "event1": "acceptHornNotify",
+    "group": 23,
+    "img": "$UI_Icon_AiGuide_RunAcross.png",
+    "priority": 14,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "24": {
+    "chat": 1872441092,
+    "emo": "$UI_Node_RunAcross_Tips.prefab",
+    "event1": "acceptHornNotify",
+    "group": 24,
+    "img": "$UI_Icon_AiGuide_RunAcross.png",
+    "priority": 14,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "14": {
+    "chat": 1828742625,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "interactLeylineTree",
+    "group": 14,
+    "priority": 25,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      200011
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "120": {
+    "chat": 1761391265,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "showSource",
+    "group": 120,
+    "priority": 10,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      103001
+    ],
+    "time": 8,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "16": {
+    "chat": 1457389385,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 16,
+    "AIType": 2,
+    "priority": 13
+  },
+  "17": {
+    "chat": 1386254678,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 17,
+    "AIType": 2,
+    "priority": 13
+  },
+  "29": {
+    "chat": 1614146138,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 29,
+    "AIType": 2,
+    "priority": 13
+  },
+  "18": {
+    "chat": 1747612503,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 18,
+    "AIType": 2,
+    "priority": 13
+  },
+  "32": {
+    "chat": 1893929336,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "teleportScenePosition",
+    "group": 32,
+    "priority": 31,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 1,
+    "value1": [
+      3000,
+      52418043,
+      1
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/ItemDetail"
+  },
+  "19": {
+    "chat": 1394654397,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 19,
+    "AIType": 2,
+    "priority": 13
+  },
+  "34": {
+    "chat": 1287393054,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "aiHelperTrackTarget",
+    "feedback": 1421896363,
+    "feedback_end": 2145532891,
+    "group": 34,
+    "img": "$UI_Icon_AiGuide_Amber.png",
+    "priority": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      "trackNearEnvObj"
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "36": {
+    "chat": 1255762100,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "group": 36,
+    "priority": 33,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 1,
+    "platform": [
+      2
+    ],
+    "AIType": 2
+  },
+  "37": {
+    "chat": 1571482397,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "group": 36,
+    "priority": 33,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 1,
+    "platform": [
+      4
+    ],
+    "AIType": 2
+  },
+  "38": {
+    "chat": 1990429333,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "group": 36,
+    "priority": 33,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 1,
+    "platform": [
+      1
+    ],
+    "AIType": 2
+  },
+  "39": {
+    "chat": 1407348785,
+    "emo": "$UI_Node_Dizi_Tips.prefab",
+    "event1": "replyFluteNotify",
+    "group": 37,
+    "img": "$UI_Icon_AiGuide_RunAcross.png",
+    "priority": 38,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      2
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "40": {
+    "chat": 1119108321,
+    "emo": "$UI_Node_Dizi_Tips.prefab",
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "img": "$UI_Icon_AiGuide_RunAcross.png",
+    "group": 38,
+    "AIType": 1,
+    "priority": 39
+  },
+  "41": {
+    "chat": 2130494176,
+    "emo": "$UI_Node_Dizi_Tips.prefab",
+    "event1": "replyFluteNotify",
+    "group": 39,
+    "img": "$UI_Icon_AiGuide_RunAcross.png",
+    "priority": 37,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      2
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "42": {
+    "chat": 1747798386,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 40,
+    "AIType": 2,
+    "priority": 13
+  },
+  "35": {
+    "chat": 1652264132,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "aiHelperTrackTarget",
+    "feedback": 1585194026,
+    "feedback_end": 1424958725,
+    "group": 35,
+    "img": "$UI_Icon_AiGuide_Amber.png",
+    "priority": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      "trackNearSpecialEntTag"
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "1": {
+    "chat": 1153990430,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "aiHelperTrackTarget",
+    "feedback": 1979111013,
+    "feedback_end": 1818356631,
+    "group": 1,
+    "img": "$UI_Icon_AiGuide_Amber.png",
+    "priority": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      "trackNearLuminAmber"
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "2": {
+    "chat": 1445563069,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "aiHelperTrackTarget",
+    "feedback": 2008712172,
+    "feedback_end": 1810931794,
+    "group": 2,
+    "img": "$UI_Icon_AiGuide_Flash.png",
+    "priority": 1,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      "trackNearShinyPuppet"
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "4": {
+    "chat": 1814707536,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "img": "$UI_Icon_AiGuide_Momo.png",
+    "group": 4,
+    "AIType": 1,
+    "priority": 4
+  },
+  "101": {
+    "chat": 1521932852,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "appearHelp",
+    "group": 101,
+    "priority": 50,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      220
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "1004101": {
+    "chat": 2081690059,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1004101,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1004102": {
+    "chat": 1351407407,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1004102,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1004103": {
+    "chat": 1177481911,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1004103,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1004104": {
+    "chat": 1718643283,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1004104,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1004105": {
+    "chat": 1845922973,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1004105,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1017101": {
+    "chat": 2016791148,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1017101,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1017102": {
+    "chat": 1990024098,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1017102,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1017103": {
+    "chat": 1384233807,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1017103,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1017104": {
+    "chat": 1783488406,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1017104,
+    "AIType": 2,
+    "priority": 20
+  },
+  "1017105": {
+    "chat": 1655471967,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 1017105,
+    "AIType": 2,
+    "priority": 20
+  },
+  "134": {
+    "chat": 1302619022,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      550,
+      3000,
+      3003,
+      3000001,
+      3000100,
+      3000101,
+      3000102,
+      3000103
+    ],
+    "group": 134,
+    "AIType": 2,
+    "priority": 1
+  },
+  "33": {
+    "chat": 1151217241,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "event1": "aiHelperTrackTarget",
+    "feedback": 1257136941,
+    "feedback_end": 2087179216,
+    "group": 33,
+    "img": "$UI_Icon_AiGuide_Amber.png",
+    "priority": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      "trackNearLevelItem"
+    ],
+    "AIType": 1,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "30": {
+    "chat": 1930409363,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 30,
+    "AIType": 2,
+    "priority": 15
+  },
+  "43": {
+    "chat": 1636637921,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 41,
+    "AIType": 2,
+    "priority": 13
+  },
+  "102": {
+    "chat": 1437079438,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "appearHelp",
+    "group": 102,
+    "priority": 50,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      220
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "130": {
+    "chat": 1270121517,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      1070
+    ],
+    "group": 130,
+    "AIType": 2,
+    "priority": 1
+  },
+  "103": {
+    "chat": 1402123214,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "appearHelp",
+    "group": 103,
+    "priority": 50,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      220
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "21": {
+    "chat": 1988615391,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 21,
+    "AIType": 2,
+    "priority": 13
+  },
+  "104": {
+    "chat": 1461158239,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "appearHelp",
+    "group": 104,
+    "priority": 51,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      218
+    ],
+    "platform": [
+      2
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "15": {
+    "chat": 1453807237,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 15,
+    "AIType": 2,
+    "priority": 13
+  },
+  "105": {
+    "chat": 1678901695,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 105,
+    "AIType": 2,
+    "priority": 20
+  },
+  "10": {
+    "chat": 1622639636,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "group": 10,
+    "priority": 10,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 1,
+    "chat_value": [
+      4,
+      5,
+      6
+    ],
+    "AIType": 2
+  },
+  "106": {
+    "chat": 2008710206,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "appearHelp",
+    "group": 104,
+    "priority": 51,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 0,
+    "value1": [
+      218
+    ],
+    "platform": [
+      1,
+      4
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "13": {
+    "chat": 1666112191,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "openUI",
+    "group": 13,
+    "priority": 31,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 2,
+    "value1": [
+      251
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "107": {
+    "chat": 2025641771,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 3,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 107,
+    "AIType": 2,
+    "priority": 20
+  },
+  "11": {
+    "chat": 1942733772,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 11,
+    "AIType": 2,
+    "priority": 30
+  },
+  "108": {
+    "chat": 1497640543,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 5,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 107,
+    "AIType": 2,
+    "priority": 20
+  },
+  "8": {
+    "chat": 1333127958,
+    "emo": "$UI_Node_AiAssistant_Sad.prefab",
+    "time": 5,
+    "group": 8,
+    "priority": 22,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 2,
+    "chat_value": [
+      2
+    ],
+    "AIType": 2
+  },
+  "109": {
+    "chat": 1762225447,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 3,
+    "strength": 0,
+    "scene": [
+      550,
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 109,
+    "AIType": 2,
+    "priority": 20
+  },
+  "12": {
+    "chat": 1392042562,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "openUI",
+    "group": 12,
+    "priority": 13,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 2,
+    "value1": [
+      89
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/HelpTipEnter"
+  },
+  "7": {
+    "chat": 2072726370,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "group": 7,
+    "priority": 21,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 2,
+    "chat_value": [
+      1,
+      3
+    ],
+    "AIType": 2
+  },
+  "5": {
+    "chat": 1748477371,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "event1": "lockingMapPoints",
+    "group": 5,
+    "priority": 11,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "strength": 1,
+    "value1": [
+      3000,
+      52418043
+    ],
+    "time": 5,
+    "AIType": 2,
+    "action1": "Hud/AIAssistantOpenMap"
+  },
+  "111": {
+    "chat": 1266360732,
+    "emo": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "time": 5,
+    "strength": 2,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 111,
+    "AIType": 2,
+    "priority": 20
+  },
+  "116": {
+    "chat": 1542124670,
+    "emo": "$UI_Node_AiAssistant_Surprise.prefab",
+    "time": 8,
+    "strength": 0,
+    "scene": [
+      3000,
+      3003,
+      3000001
+    ],
+    "group": 116,
+    "AIType": 2,
+    "priority": 10
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2142308",
+  "name": "琉璃技能标记buff",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

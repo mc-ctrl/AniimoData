@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10063",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    1,
+    20
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "a856b571-65b3-497a-a094-fdf3771734de",
+      "name": "replaceHitEffect",
+      "effect": "Eff_NPC_Morphling_Hit",
+      "NodeID": 3
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

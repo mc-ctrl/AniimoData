@@ -1,0 +1,29 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9154302",
+  "name": "澡叶蛙-稀有特性",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "",
+  "onBuffRefreshIds": [
+    2
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9154301,
+      "NodeID": 2,
+      "UID": "6799f5ce-bdd4-4f4d-a481-fa9f33f1f19b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

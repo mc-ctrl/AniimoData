@@ -1,0 +1,99 @@
+{
+  "BPName": "ability_15030503",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 11200480,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "a3ea14c9-1e5c-40ac-aff4-884e4007769a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "38": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "26afc5c0-526b-4a8e-898b-7eb10248ec5d",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "99daf036-c7a4-459b-9a71-d18551eeebcb",
+      "conditionIds": [
+        38,
+        40,
+        46
+      ],
+      "name": "conditionOr",
+      "NodeID": 39
+    },
+    "40": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "cf9a587c-cb7b-4d93-a916-62eed393da95",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "46": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "1cdcbfaf-e536-472b-b887-2ea5e872fc47",
+      "NodeID": 46,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "e1946a43-3cd5-43b6-bb34-3decc6d2a9af",
+        "target": "OWNER",
+        "NodeID": 45
+      }
+    },
+    "7": {
+      "timelineId": 15030503001,
+      "name": "setCombatActionTimeline",
+      "UID": "537e7527-1cc7-4e22-8e80-1301c6f9b327",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "36": {
+      "timelineId": 15030507001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ecb6a32-5133-46e3-83f9-052c6452c3d0",
+      "target": "CASTER",
+      "NodeID": 36
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CrazyClaw04"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Slash",
+    "Eff_Parmon_10503_Skill_Dark_CrazyClaw4_L",
+    "Eff_Parmon_10503_Skill_CrazyClaw_AngerL",
+    "Eff_Parmon_10503_Skill_CrazyClaw_AngerR",
+    "Eff_Parmon_10503_Skill_Dark_CrazyClaw_AngerL",
+    "Eff_Parmon_10503_Skill_Dark_CrazyClaw_AngerR",
+    "Eff_Parmon_10503_Skill_Dark_CrazyClaw4_R"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

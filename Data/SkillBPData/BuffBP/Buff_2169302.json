@@ -1,0 +1,579 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2169302",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    68,
+    70
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "name": "stopEffectStr",
+      "UID": "1bb1f61f-97a9-47b3-93d3-56c72e6f4586",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_dimian",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "38": {
+      "name": "stopEffectStr",
+      "UID": "9a070809-cc47-46bd-b19a-2bfc436141eb",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_cb004",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "name": "stopEffectStr",
+      "UID": "644c03bd-01ef-492f-bdbe-2ad42220e61b",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_cb003",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "63352b61-a102-4276-85d2-8da5f361894e",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_cb002",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "buffId": 91693011,
+      "name": "removeBuff",
+      "UID": "72dc9881-feeb-403c-975d-b155a432b48f",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "UID": "2496f554-e812-4c43-8069-b46f4f2abc33",
+      "name": "fly",
+      "flyHeight": 3,
+      "NodeID": 42
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "8c534c52-4525-404d-be14-df2b9c365c2e",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_cb001",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "44": {
+      "NodeID": 44,
+      "name": "setOverrideAnim",
+      "UID": "263152bb-1557-4708-84ad-ed32c1074606",
+      "target": "OWNER",
+      "dstAnimKey": "Skill_Jet_Loop",
+      "srcAnimKey": "Fly_Forward"
+    },
+    "84": {
+      "UID": "6e476a41-802d-4cb1-94a6-bba903b1c999",
+      "value": 16930301,
+      "name": "constDouble",
+      "NodeID": 84
+    },
+    "66": {
+      "UID": "5e041116-43a5-4cd8-b314-8539e9bb1cb3",
+      "name": "buffStopThink",
+      "buffTemplateId": 2169302,
+      "NodeID": 66
+    },
+    "85": {
+      "UID": "511cf269-4320-4fda-a152-8f65d3f2b134",
+      "value": 16930301,
+      "name": "constDouble",
+      "NodeID": 85
+    },
+    "68": {
+      "calcInfo": {
+        "passive_energy_cur": -6
+      },
+      "name": "calcResult",
+      "UID": "cb416843-07f1-4261-88e2-0c593ffe462e",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "81": {
+      "buffId": 2169302,
+      "name": "removeBuff",
+      "UID": "8b1f2592-d1bd-4594-abb3-03d2ae3cd948",
+      "target": "OWNER",
+      "NodeID": 81
+    },
+    "4": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "from": 16930000,
+      "name": "switchSkill",
+      "UID": "0408bd02-548f-4bf6-8be9-74492ee0b90f",
+      "to": 16939901,
+      "NodeID": 4,
+      "overrideDuration": 0
+    },
+    "24": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91693011,
+      "NodeID": 24,
+      "UID": "944833fe-5162-4187-a357-1b907411f604",
+      "layer": 50,
+      "name": "addBuff",
+      "level": 1
+    },
+    "71": {
+      "key": "2169302",
+      "name": "setCacheVal",
+      "UID": "87293561-8a67-4eb5-92e3-9a9d786a29fd",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 71
+    },
+    "79": {
+      "rValue": 14,
+      "name": "greater",
+      "UID": "977a28f2-d02e-46f2-82c1-1fd67da081d9",
+      "NodeID": 79,
+      "lValue": {
+        "key": "2169302",
+        "name": "getCacheVal",
+        "UID": "14a4caa3-50f6-4ed8-9a27-2452dc9dd5ff",
+        "target": "OWNER",
+        "NodeID": 78
+      }
+    },
+    "77": {
+      "UID": "bf5cd93e-671e-4a60-98ca-954f107b9cc8",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        75,
+        80
+      ],
+      "NodeID": 77
+    },
+    "75": {
+      "key": "2169302",
+      "name": "setCacheVal",
+      "UID": "50fd855b-bedd-46c4-9ec2-3e6c083e1e4f",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "f584cc3a-231e-45ee-b2c0-4b4e215c781e",
+        "NodeID": 74,
+        "lValue": {
+          "key": "2169302",
+          "name": "getCacheVal",
+          "UID": "7baf85ac-7f2b-46e1-86ce-527caff6b855",
+          "target": "OWNER",
+          "NodeID": 73
+        }
+      },
+      "NodeID": 75
+    },
+    "70": {
+      "templateId": 91693011,
+      "name": "removeBuffLayer",
+      "UID": "f0a2d2c3-92dd-4a15-b16d-4c0cfb8cf172",
+      "layer": 6,
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "65": {
+      "delay": 0,
+      "NodeID": 65,
+      "UID": "8327cd07-8575-45a6-8c6e-3cf212a93558",
+      "name": "buffStartThink",
+      "interval": 1,
+      "buffTemplateId": 2169302
+    },
+    "63": {
+      "rValue": {
+        "UID": "511cf269-4320-4fda-a152-8f65d3f2b134",
+        "value": 16930301,
+        "name": "constDouble",
+        "NodeID": 85
+      },
+      "name": "equal",
+      "UID": "8ec06fd0-6f2f-4586-b44f-9f665870569c",
+      "NodeID": 63,
+      "lValue": {
+        "UID": "b279c523-efd0-4f04-877a-ab6c2b68b679",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onAbilityEnd",
+        "NodeID": 62
+      }
+    },
+    "62": {
+      "UID": "b279c523-efd0-4f04-877a-ab6c2b68b679",
+      "name": "getCombatContextAbilityId",
+      "eventName": "onAbilityEnd",
+      "NodeID": 62
+    },
+    "60": {
+      "rValue": {
+        "UID": "6e476a41-802d-4cb1-94a6-bba903b1c999",
+        "value": 16930301,
+        "name": "constDouble",
+        "NodeID": 84
+      },
+      "name": "equal",
+      "UID": "67144f92-577f-4c8e-9323-1465cc7d8fa5",
+      "NodeID": 60,
+      "lValue": {
+        "UID": "0065e76f-a4bc-49a0-b612-76c692e2d7e7",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onCastAbility",
+        "NodeID": 59
+      }
+    },
+    "59": {
+      "UID": "0065e76f-a4bc-49a0-b612-76c692e2d7e7",
+      "name": "getCombatContextAbilityId",
+      "eventName": "onCastAbility",
+      "NodeID": 59
+    },
+    "58": {
+      "actionIds": [
+        57
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "61b0018d-78ad-47b3-a650-63f556e12879",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "57": {
+      "actionIds": [
+        56
+      ],
+      "conditionActionIds": [
+        60
+      ],
+      "UID": "97480f53-3a2a-4526-919f-b20cc738f3b2",
+      "name": "doActionsByConditions",
+      "NodeID": 57
+    },
+    "56": {
+      "velocity": 0,
+      "name": "registerMoveByInput",
+      "UID": "d6d96779-5605-4fe8-b967-bbbba428eb50",
+      "target": "OWNER",
+      "NodeID": 56,
+      "angleVelocity": 0
+    },
+    "55": {
+      "UID": "5a41fcc7-3bba-4ce9-92e1-7c86aa98f6c8",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        54
+      ],
+      "NodeID": 55
+    },
+    "54": {
+      "actionIds": [
+        53
+      ],
+      "conditionActionIds": [
+        63
+      ],
+      "UID": "0de30ab1-8291-4b6c-b22d-4fcd2cd4895a",
+      "name": "doActionsByConditions",
+      "NodeID": 54
+    },
+    "53": {
+      "canRotate": true,
+      "name": "registerMoveByInput",
+      "UID": "ce1ea8e7-917f-43e0-8e7d-5a2078895612",
+      "target": "OWNER",
+      "refCameraDir": true,
+      "velocity": 7,
+      "NodeID": 53,
+      "angleVelocity": 360,
+      "autoMove": true
+    },
+    "52": {
+      "NodeID": 52,
+      "name": "setOverrideAnim",
+      "UID": "ff8e25ff-f2cc-4c32-8069-67a34c644e25",
+      "target": "OWNER",
+      "dstAnimKey": "Skill_Jet_Loop",
+      "srcAnimKey": "Idle"
+    },
+    "51": {
+      "name": "registerFlyStateChangeEvent",
+      "UID": "42f8001a-4f6b-4e33-9586-4dfeb64b48b6",
+      "exitActionIds": [
+        50
+      ],
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "50": {
+      "buffId": 2169302,
+      "name": "removeBuff",
+      "UID": "1c6c57af-f3fb-4f7f-aea2-143c05762c90",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "7": {
+      "buffId": 2169302,
+      "name": "removeBuff",
+      "UID": "5fa953c7-ac01-4285-9e9e-864bbd80dfca",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "49": {
+      "canRotate": true,
+      "name": "registerMoveByInput",
+      "UID": "c677a739-6217-4559-bae5-23fca4e03a38",
+      "target": "OWNER",
+      "refCameraDir": true,
+      "velocity": 7,
+      "NodeID": 49,
+      "angleVelocity": 360,
+      "autoMove": true
+    },
+    "8": {
+      "UID": "f771a06f-84f3-4c6f-9628-85a0659c999f",
+      "oldPetActionIds": [
+        7
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 8
+    },
+    "48": {
+      "name": "clearOverrideAnim",
+      "UID": "802e91f3-9d68-4ed7-83ba-b94ba7d3bcc7",
+      "target": "OWNER",
+      "NodeID": 48,
+      "animKey": "Fly_Idle"
+    },
+    "9": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "from": 16930100,
+      "name": "switchSkill",
+      "UID": "5397a9df-45e9-4cae-9f50-f345e7483c01",
+      "to": 16930101,
+      "NodeID": 9,
+      "overrideDuration": 0
+    },
+    "47": {
+      "name": "clearOverrideAnim",
+      "UID": "7e3d490c-8d6d-49b4-846e-5e417476893f",
+      "target": "OWNER",
+      "NodeID": 47,
+      "animKey": "Fly_Forward"
+    },
+    "23": {
+      "UID": "8ebd8c73-c2a5-4e98-9ed3-380836001879",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 23
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "971e2fcb-2707-4297-9bf8-dca7444735b5",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_Jet_End"
+    },
+    "19": {
+      "target": "OWNER",
+      "actionIds": [
+        18
+      ],
+      "attributeName": "passive_energy_cur",
+      "UID": "3893e4e4-34d8-4d40-869b-e305a1615349",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 19
+    },
+    "21": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "dfe24cb7-b15b-482d-b6cd-4e29384838e8",
+        "target": "OWNER",
+        "NodeID": 20,
+        "attributeName": "passive_energy_cur"
+      },
+      "name": "greater",
+      "UID": "0fb32939-26d4-4f3b-9c3b-f1cebcbcbea9",
+      "NodeID": 21,
+      "lValue": 1
+    },
+    "22": {
+      "delay": 1,
+      "NodeID": 22,
+      "UID": "dd59c934-d5e7-4253-a0c1-6c36dd6c5bb6",
+      "name": "buffStartThink",
+      "interval": 1,
+      "buffTemplateId": 2169302
+    },
+    "13": {
+      "calcInfo": {
+        "passive_energy_cur": 50
+      },
+      "name": "calcResult",
+      "UID": "b313572b-ec74-4c8a-9488-19057431fd79",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "45": {
+      "NodeID": 45,
+      "name": "setOverrideAnim",
+      "UID": "7a119966-94df-4f4a-8083-41f03fa50793",
+      "target": "OWNER",
+      "dstAnimKey": "Skill_Jet_Loop",
+      "srcAnimKey": "Fly_Idle"
+    },
+    "18": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "babab9b8-737b-4dac-be4f-d0acd51cd136",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    },
+    "46": {
+      "UID": "ca9ba3e4-de9e-4299-b458-8466dc0b5961",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 46
+    },
+    "15": {
+      "UID": "753856c8-e3c8-4645-8576-3cb3cf153de4",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d2667654-a215-413d-91c3-83ae67575dc7",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db001",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "buffId": 2169302,
+      "name": "removeBuff",
+      "UID": "ccc5bd60-568c-4d6e-aeca-c7524f2d8a45",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5131114e-cd78-40ea-a890-65778fd6e16c",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db004",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9895dc94-df20-4511-b7c7-0b6882295776",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db002",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0a375723-38cf-4f51-9695-2d6a57527b2b",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db003",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "595d6278-3c3b-48c1-abfe-49b1d7eb8185",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db001",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "b59f194e-fcde-48f9-8716-a5f89e1c01ff",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db004",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "2371edfb-6091-4d98-aa55-e90f7f34c2a1",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db003",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "name": "stopEffectStr",
+      "UID": "748a6af7-c252-406b-81d2-fe711b451650",
+      "effectId": "Eff_Parmon_10693_Skill_OutEx_db002",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "80": {
+      "actionIds": [
+        81
+      ],
+      "conditionActionIds": [
+        79
+      ],
+      "UID": "188aa3eb-d39d-4f10-87ed-d50a42870986",
+      "name": "doActionsByConditions",
+      "NodeID": 80
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    66,
+    23,
+    30,
+    34,
+    33,
+    32,
+    35,
+    40,
+    39,
+    38,
+    37,
+    41,
+    46,
+    47,
+    48
+  ],
+  "onBuffStartIds": [
+    42,
+    44,
+    45,
+    52,
+    49,
+    4,
+    9,
+    13,
+    24,
+    8,
+    15,
+    19,
+    22,
+    25,
+    28,
+    29,
+    27,
+    51,
+    58,
+    55,
+    65,
+    71,
+    77
+  ]
+}

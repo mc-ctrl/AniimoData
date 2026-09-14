@@ -1,0 +1,13 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2128302",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "熔岩暴龙-点燃",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {}
+}

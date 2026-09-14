@@ -1,0 +1,71 @@
+{
+  "BPName": "ability_9200015",
+  "NodeID": 1,
+  "UID": "736d9b36-3c40-4ce7-97df-312536837d47",
+  "abilityParamId": 9200015,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "28": {
+      "UID": "0eb2265f-b23a-465f-bdc4-048776225e5b",
+      "name": "hideBubbleMsg",
+      "msgId": 2194,
+      "NodeID": 28
+    },
+    "24": {
+      "buffId": 920001501,
+      "name": "removeBuff",
+      "UID": "d9825ac5-2c85-4fcd-93ce-0e15a4a20fbf",
+      "target": "CURPET_OR_TEAM_PET",
+      "NodeID": 24
+    },
+    "19": {
+      "buffId": 920001501,
+      "name": "hasBuff",
+      "UID": "28a3fd5b-8824-46c9-8d9d-fe0292ac9361",
+      "target": "CURPET_OR_TEAM_PET",
+      "NodeID": 19
+    },
+    "7": {
+      "timelineId": 9200015001,
+      "name": "setCombatActionTimeline",
+      "UID": "3693c471-8f5f-467e-b796-79ab948773a5",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "9": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "e7ee0750-5dda-4826-9537-660528b1e409",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_DefenseInstruction"
+  ],
+  "preloadEffs": [
+    "Eff_Buff_Hurt_Defense_Disappear",
+    "Eff_Buff_Hurt_Defense"
+  ],
+  "searchRelation": 1,
+  "name": "防御指令",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 2,
+  "onAbilityEndIds": [
+    28
+  ],
+  "searchTargetRangeDown": 2
+}

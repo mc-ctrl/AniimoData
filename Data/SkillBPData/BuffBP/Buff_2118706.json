@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118706",
+  "calcInfoByLuaConfig": {
+    "id": 2118706,
+    "final_taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_DefenseUp"
+    }
+  ]
+}

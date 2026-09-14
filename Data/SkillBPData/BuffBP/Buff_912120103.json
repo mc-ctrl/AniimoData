@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912120103",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "a5a7b1bd-1a33-4331-9127-e3c9ac550cbe",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        4
+      ]
+    },
+    "4": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 912120101,
+      "NodeID": 4,
+      "UID": "e61fca70-1087-4a08-ae16-e7407bf041dc",
+      "layer": 2,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "852f09d9-0b04-441e-8723-12a3a9a13fa5",
+      "name": "doActionsByConditions",
+      "NodeID": 9,
+      "elseActionIds": [
+        8
+      ]
+    },
+    "6": {
+      "thresholdActionIds": [
+        5
+      ],
+      "failedActionIds": [
+        9
+      ],
+      "threshold": 1,
+      "UID": "4c112c9b-e748-4bde-8b7f-a19965a188af",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "normalGrass",
+      "NodeID": 6,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "10": {
+      "buffId": 912120102,
+      "name": "hasBuff",
+      "UID": "7a2c5200-057d-498e-8177-8a84d2520ee4",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "buffId": 912120102,
+      "name": "hasBuff",
+      "UID": "57f4729b-28ba-483e-8735-0ea3b9c69d39",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 912120101,
+      "NodeID": 8,
+      "UID": "3036b4bc-8f88-4725-aabf-4c955bd0b4cd",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

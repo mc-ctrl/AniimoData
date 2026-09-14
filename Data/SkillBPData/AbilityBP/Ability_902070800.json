@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_902070800",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "化作圆月迅速的攻击前方的敌人，将敌人聚集在面前，再释放火焰力量攻击敌人。",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902070800001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Smash_Prepare",
+    "Skill_Smash_Loop",
+    "Skill_PullBack_End",
+    "Skill_Smash_QuickAttack"
+  ],
+  "preloadEffs": [
+    "Eff_SkillObj_90207_SoilShield_Break",
+    "Eff_Monster_90207_Skill_Smash_GroundWave",
+    "Eff_Monster_90207_Skill_Smash_Explosion"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 7.5,
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600411,
+  "name": "普通冲撞"
+}

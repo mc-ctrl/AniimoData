@@ -1,0 +1,113 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132417",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 2132405,
+      "NodeID": 5,
+      "UID": "d37232e7-7455-4d55-92ad-e661147e4a08",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "4": {
+      "templateId": 2132405,
+      "name": "removeBuffLayer",
+      "UID": "a2b36ed8-ca5b-4e10-b945-e364636dce18",
+      "layer": 1,
+      "target": "MASTER",
+      "NodeID": 4
+    },
+    "14": {
+      "key": "cd2",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 14,
+      "UID": "d63c214b-fa5b-44aa-88c0-256bc0294635",
+      "cd": 5,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "10": {
+      "unsummonValid": false,
+      "actionIds": [
+        9
+      ],
+      "name": "registerGroupEvent",
+      "UID": "34761644-f30b-4995-970c-3df03b7780f4",
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "c7ae68e6-3e01-4b29-8f08-28f0e100d60c",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "7d878bb7-21b5-46d8-b8f1-4b821d41d9bf",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "56070f32-4d71-4587-8dbb-740ee84d6beb",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "11": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2132418,
+      "NodeID": 11,
+      "UID": "5a33ccc0-dd63-4616-9ab7-47dd183d6bab",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "UID": "609b65fc-ad08-4d54-9d21-57d1aa016ce7",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 13
+    },
+    "12": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2132418,
+      "NodeID": 12,
+      "UID": "55c4b07f-efc9-41d2-9c26-9059edfca450",
+      "layer": 10,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    5,
+    10,
+    13
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21201001",
+  "NodeID": 1,
+  "UID": "b618e1a3-c3b0-4a87-a696-337b5fb1193e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "17d8cb1c-c8ed-473b-8ecf-d6ff9f65dc9b",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "8ef6e4d4-9508-4a1d-970d-322191b0f707",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "5": {
+      "petTarget": "OWNER",
+      "triggerId": 1023301,
+      "name": "onEntityTrigger",
+      "UID": "9d21e7e1-aa77-475c-864d-28ea266d91e4",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "2": {
+      "buffId": 21233051,
+      "name": "hasBuff",
+      "UID": "e11bf889-7d60-4452-a4f9-5dc322014b32",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

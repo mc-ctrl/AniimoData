@@ -1,0 +1,23 @@
+[
+  {
+    "visionTargetGroup": 1,
+    "valueChange": 5,
+    "entityId": "*",
+    "entityType": 1,
+    "attenuation": -8
+  },
+  {
+    "visionTargetGroup": 1,
+    "valueChange": 5,
+    "entityId": "*",
+    "entityType": 1,
+    "attenuation": -8
+  },
+  {
+    "visionTargetGroup": 1,
+    "valueChange": 5,
+    "entityId": "*",
+    "entityType": 1,
+    "attenuation": -8
+  }
+]

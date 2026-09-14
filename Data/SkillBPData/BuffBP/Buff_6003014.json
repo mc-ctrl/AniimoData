@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003014",
+  "calcInfoByLuaConfig": {
+    "dmg_holy_add_ratio": "param0",
+    "type": 1,
+    "id": 6003014
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

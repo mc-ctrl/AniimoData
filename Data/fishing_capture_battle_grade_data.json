@@ -1,0 +1,17 @@
+[
+  {
+    "grade": "S",
+    "rewardId": 14001,
+    "combatTime": 25
+  },
+  {
+    "grade": "A",
+    "rewardId": 14002,
+    "combatTime": 35
+  },
+  {
+    "grade": "B",
+    "rewardId": 14003,
+    "combatTime": 60
+  }
+]

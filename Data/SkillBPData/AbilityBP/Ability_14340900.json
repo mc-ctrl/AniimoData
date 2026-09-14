@@ -1,0 +1,65 @@
+{
+  "BPName": "ability_14340900",
+  "NodeID": 1,
+  "UID": "9fea0257-a909-458e-8074-da7c10429097",
+  "abilityParamId": 9400138,
+  "abilityType": 9,
+  "aiSelectWeight": 0,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "22": {
+      "startPosOffset": [
+        0,
+        0,
+        0
+      ],
+      "duration": 0,
+      "name": "enableSupportAimEffect",
+      "UID": "95575802-62f0-401c-9579-f05f03e79500",
+      "startNoGravityTime": 0,
+      "gravityRatio": 0,
+      "rotationOffset": [
+        0,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 22,
+      "enable": false,
+      "moveSpeed": 0
+    },
+    "7": {
+      "timelineId": 14340900001,
+      "name": "setCombatActionTimeline",
+      "UID": "d53cb538-9417-4af7-892a-a3290fdd3ead",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "24": {
+      "UID": "1a94d864-e533-431e-8f09-053c1fd36dd4",
+      "name": "enableSkillThrowState",
+      "enable": false,
+      "NodeID": 24
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_VortexLift"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    24,
+    22
+  ],
+  "searchTargetRangeDown": 2,
+  "isAim": true
+}

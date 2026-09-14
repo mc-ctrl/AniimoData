@@ -1,0 +1,269 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "39365a20-a110-4f06-845e-0f38fb84dab2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          42,
+          35
+        ]
+      },
+      "NodeID": 37
+    },
+    "38": {
+      "name": "stopEffectStr",
+      "UID": "10c8c0a1-87c1-4fc2-84b8-94e44eefbef2",
+      "effectId": "Eff_Avatar_Female_Skill_SkateBoarding_Loop",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "42": {
+      "leanTransitionTime": 1,
+      "NodeID": 42,
+      "UID": "a050e5c4-4ae5-4501-8a35-74fe20fc0dab",
+      "enable": true,
+      "name": "enablePlayerSkateboardState"
+    },
+    "35": {
+      "duration": 2,
+      "name": "playFovCameraAnim",
+      "UID": "f868e62c-11a4-4989-934d-0a75917723d4",
+      "blendInTime": 0.5,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CommonFOV_25",
+      "target": "OWNER",
+      "blendOutTime": 1,
+      "NodeID": 35
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "706f4d02-bdc3-4ff4-b1c7-2028e66c180b",
+      "isAbilityEndRemove": false,
+      "soundId": "Stop_SFX_Avatar_Girl_Skill_Skate_Move",
+      "NodeID": 44
+    },
+    "8": {
+      "timelineId": 9200006001,
+      "name": "jumpToNextTimeline",
+      "UID": "f0af425a-5f14-403f-8ce9-01f6f8810e4d",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "11": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        58
+      ],
+      "UID": "9a7ed880-7cef-4dfb-9c5d-7536addc330a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 20,
+      "NodeID": 20,
+      "UID": "61b835b1-3a8a-40fc-8917-eb6cfab99680"
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1c3d00b7-a837-4afd-be0f-5995098b85b5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Skate_Move",
+      "NodeID": 45
+    },
+    "22": {
+      "UID": "c2df2554-9040-4f8a-9d2a-85c6fa3bfd7b",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "d1891ca2-5e81-4d18-94a0-5976bee5eb0b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26,
+          30,
+          50,
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "5b6746e2-e569-40a9-a25b-24b1c68fcbeb",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 24
+    },
+    "58": {
+      "stateName": "METAVERSE_ST",
+      "name": "checkState",
+      "UID": "d79b9d4b-39ee-4f29-ae39-8808ddf3c817",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "10": {
+      "time": 20,
+      "notShowCountDown": false,
+      "actionIds": [
+        43,
+        38,
+        44,
+        8
+      ],
+      "aiTriggerTime": 1,
+      "UID": "f7647fd1-2c1d-487a-b7fe-60daa4b7159c",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 10
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 52,
+      "UID": "fe34eb12-8138-4fba-861d-d31da374ceec"
+    },
+    "47": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.66667,
+      "NodeID": 47,
+      "UID": "f35a6156-5f06-4dc4-8db7-557e17d24423"
+    },
+    "26": {
+      "UID": "a5ef4cec-9cdd-4c16-a9ee-d4bc34bebf43",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 26
+    },
+    "43": {
+      "name": "stopEffectStr",
+      "UID": "a1fa8024-ee8b-426e-96e3-4247eef2b05a",
+      "effectId": "Eff_Avatar_Female_Skill_SkateBoarding_StartTrail",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "17": {
+      "UID": "84b6b3c7-b240-43f4-95f7-4ab2c1318316",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          43,
+          38,
+          44,
+          8
+        ]
+      },
+      "NodeID": 17
+    },
+    "59": {
+      "stateName": "METAVERSE_ST",
+      "name": "checkState",
+      "UID": "92ac5f00-97f8-4a8c-a42f-413c76bbc36c",
+      "target": "OWNER",
+      "NodeID": 59
+    },
+    "18": {
+      "time": 20,
+      "notShowCountDown": false,
+      "actionIds": [
+        43,
+        38,
+        44,
+        8
+      ],
+      "aiTriggerTime": 1,
+      "UID": "53b6dac0-5875-4d53-90d4-0d8be2d3fe95",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 18
+    },
+    "50": {
+      "NodeID": 50,
+      "UID": "a7832495-802c-4325-bbed-e28351099207",
+      "name": "showBubbleMsg",
+      "checkPlayer": true,
+      "msgId": 2178
+    },
+    "19": {
+      "conditionActionIds": [
+        59
+      ],
+      "UID": "8348a447-80e3-43c9-99a5-0f7df73e4f86",
+      "name": "doActionsByConditions",
+      "NodeID": 19,
+      "elseActionIds": [
+        43,
+        38,
+        44,
+        8
+      ]
+    },
+    "51": {
+      "UID": "420c3d78-4c14-4041-8960-290b73452e5b",
+      "name": "hideBubbleMsg",
+      "msgId": 2178,
+      "NodeID": 51
+    },
+    "30": {
+      "canRotate": true,
+      "minVelocity": 7,
+      "maxVelocity": 12,
+      "NodeID": 30,
+      "UID": "8daa3f14-cd77-4467-915f-e6e00eb3499c",
+      "target": "OWNER",
+      "refCameraDir": true,
+      "velocity": 9,
+      "slopeAcceleration": 1,
+      "name": "registerMoveByInput",
+      "angleVelocity": 180,
+      "autoMove": true
+    }
+  },
+  "BPName": "ability_9200006",
+  "NodeID": 15,
+  "UID": "1736128c-c446-4052-9091-f89cc0072497",
+  "eventIds": [
+    13,
+    20,
+    37,
+    52,
+    17,
+    24,
+    47
+  ],
+  "layer": "Base",
+  "length": 20
+}

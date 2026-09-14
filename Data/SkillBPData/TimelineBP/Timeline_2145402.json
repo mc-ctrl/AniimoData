@@ -1,0 +1,370 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b3ec4f14-7974-439a-bb9b-a14400f19c14",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RockCollision_RockRise",
+      "NodeID": 6
+    },
+    "8": {
+      "UID": "327ed0e8-7e12-4815-af44-1ce720f82d41",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e602e1b9-4ee6-4296-9965-b202a2e22f4d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10454_Skill_RockCollision_RockBreak",
+      "NodeID": 9
+    },
+    "11": {
+      "offsetXYZ": [
+        -2.2624,
+        0,
+        2.2624
+      ],
+      "name": "playEffectStr",
+      "UID": "981ec7d4-54d6-4919-828d-994adc9c284f",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 11,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        225,
+        0
+      ],
+      "scale": 2
+    },
+    "20": {
+      "offsetXYZ": [
+        2.9568,
+        0,
+        -1.2248
+      ],
+      "name": "playEffectStr",
+      "UID": "94c15b72-e704-4330-b6ad-4b5eb936250d",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 20,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        202.5,
+        0
+      ],
+      "scale": 2
+    },
+    "2": {
+      "offsetXYZ": [
+        0,
+        0,
+        3.2
+      ],
+      "name": "playEffectStr",
+      "UID": "ed12f1ad-c197-4184-99a0-c0e79bf1e0fa",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 2,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": 2
+    },
+    "22": {
+      "offsetXYZ": [
+        2.9568,
+        0,
+        1.2248
+      ],
+      "name": "playEffectStr",
+      "UID": "c8123df9-c12d-4089-b394-24e71500264d",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 22,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        157.5,
+        0
+      ],
+      "scale": 2
+    },
+    "4": {
+      "UID": "bf3e24e7-0efa-4494-af60-c34da62753d0",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          9,
+          2,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "offsetXYZ": [
+        1.2248,
+        0,
+        2.9568
+      ],
+      "name": "playEffectStr",
+      "UID": "341bf91f-1e3c-4f01-b0d1-e7946e71396c",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 24,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        112.5,
+        0
+      ],
+      "scale": 2
+    },
+    "14": {
+      "offsetXYZ": [
+        -2.9568,
+        0,
+        -1.2248
+      ],
+      "name": "playEffectStr",
+      "UID": "b45534c6-293d-438d-834b-dbefb9add3d5",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 14,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        157.5,
+        0
+      ],
+      "scale": 2
+    },
+    "10": {
+      "offsetXYZ": [
+        -1.2248,
+        0,
+        2.9568
+      ],
+      "name": "playEffectStr",
+      "UID": "11935b76-132b-418e-b924-b967f4679be1",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 10,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        247.5,
+        0
+      ],
+      "scale": 2
+    },
+    "15": {
+      "offsetXYZ": [
+        -2.2624,
+        0,
+        -2.2624
+      ],
+      "name": "playEffectStr",
+      "UID": "8da7223c-3b94-43b2-bd4b-e2ce6cb79f2e",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 15,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        135,
+        0
+      ],
+      "scale": 2
+    },
+    "16": {
+      "offsetXYZ": [
+        -1.2248,
+        0,
+        -2.9568
+      ],
+      "name": "playEffectStr",
+      "UID": "10e3a8d8-4ec2-4da4-a03f-626d94978beb",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 16,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        112.5,
+        0
+      ],
+      "scale": 2
+    },
+    "17": {
+      "offsetXYZ": [
+        0,
+        0,
+        -3.2
+      ],
+      "name": "playEffectStr",
+      "UID": "08cd574a-0404-4ebd-b5aa-9e2ee9f18cba",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 17,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": 2
+    },
+    "23": {
+      "offsetXYZ": [
+        2.2624,
+        0,
+        2.2624
+      ],
+      "name": "playEffectStr",
+      "UID": "7d783e48-2951-4485-b24d-36b234277e5b",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 23,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        135,
+        0
+      ],
+      "scale": 2
+    },
+    "18": {
+      "offsetXYZ": [
+        1.2248,
+        0,
+        -2.9568
+      ],
+      "name": "playEffectStr",
+      "UID": "aceadca9-944c-495e-8223-3f902763a99c",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 18,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        247.5,
+        0
+      ],
+      "scale": 2
+    },
+    "21": {
+      "offsetXYZ": [
+        3.2,
+        0,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "81412631-08e2-44c7-bf64-9748366c983e",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 21,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": 2
+    },
+    "19": {
+      "offsetXYZ": [
+        2.2624,
+        0,
+        -2.2624
+      ],
+      "name": "playEffectStr",
+      "UID": "07a8caf5-4c41-444b-af7f-a16d31f303c9",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 19,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        225,
+        0
+      ],
+      "scale": 2
+    },
+    "12": {
+      "offsetXYZ": [
+        -2.9568,
+        0,
+        1.2248
+      ],
+      "name": "playEffectStr",
+      "UID": "d794dc8a-653f-439b-b336-c18ff6133ba8",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 12,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        202.5,
+        0
+      ],
+      "scale": 2
+    },
+    "13": {
+      "offsetXYZ": [
+        -3.2,
+        0,
+        0
+      ],
+      "name": "playEffectStr",
+      "UID": "2824c841-c0b0-4503-b733-981bb2e4ea61",
+      "effectId": "Eff_Parmon_10454_Skill_Rock_End_3",
+      "target": "OWNER",
+      "NodeID": 13,
+      "speed": 1,
+      "offsetRotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": 2
+    }
+  },
+  "BPName": "timeline_2145402",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    8,
+    4
+  ],
+  "layer": "Base",
+  "length": 20
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "shortDesc": 1718177343,
+    "intimacy": 0,
+    "levelDesc": 1611920369
+  },
+  {
+    "unlockEvent1": "setFunctionUnlock",
+    "unlockEventParams1": [
+      "PETRENAME",
+      1
+    ],
+    "levelDesc": 1334961407,
+    "intimacy": 100,
+    "shortDesc": 1209814342
+  },
+  {
+    "shortDesc": 1858926815,
+    "intimacy": 300,
+    "levelDesc": 1411121097
+  },
+  {
+    "shortDesc": 1779337380,
+    "intimacy": 600,
+    "levelDesc": 1560429589
+  },
+  {
+    "shortDesc": 1084411627,
+    "intimacy": 1000,
+    "levelDesc": 1541586371
+  }
+]

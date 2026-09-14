@@ -1,0 +1,132 @@
+[
+  {
+    "saveEnergy": 0,
+    "savelevel": 0,
+    "event1": 1902,
+    "setProp": 0,
+    "shopId": 40,
+    "spDayTime1": {
+      "3": 1790344800,
+      "4": 1790301600,
+      "1": 1790301600,
+      "2": 1790330400
+    },
+    "spDayTime2": {
+      "3": 1796112000,
+      "4": 1796068800,
+      "1": 1796068800,
+      "2": 1796097600
+    },
+    "supplyText": 1225055884,
+    "tabIconResId1": "$UI_Img_EventTab_BossCatch.png",
+    "tabIconResId2": "$UI_Img_EventTab_BossCatch1.png",
+    "ticketItem": [
+      1018,
+      1
+    ],
+    "trainDesc": 2057865276,
+    "trainDesc2": 1079660835,
+    "trainDesc3": 2069844018,
+    "trainRule": 1304959621,
+    "trainRule2": 1377516075,
+    "trainRule3": 1349753641,
+    "hpRate": 0,
+    "trainTab": 1661829369,
+    "trainTab2": 1320060954,
+    "trainTab3": 2014722435,
+    "trainTitle": 1219858354,
+    "transTime": 0,
+    "transcof": 1,
+    "weekreward": 40302,
+    "weeksceneId": 1096,
+    "sandboxId": 91352627,
+    "trainSupply": 1290007965,
+    "sceneId": 1095,
+    "TabRule1": 1731961988,
+    "TabRule2": 2083316371,
+    "ballCrit": [
+      0.1,
+      2
+    ],
+    "ballFreq": 0.3,
+    "ballType": [
+      110003,
+      110007,
+      110005,
+      110004,
+      110002,
+      110001
+    ],
+    "ballhighCrit": [
+      0,
+      10
+    ],
+    "banballType": [
+      110006,
+      111002
+    ],
+    "barfullEff": "Eff_Env_Sceneobject_BossCatch_KeyItem_Pulse",
+    "baseballId": 110011,
+    "bossReward": 7002,
+    "bossStaticId": 91352649,
+    "captTime": 999,
+    "captureWarnDuration": 15,
+    "catchRewardId": 7001,
+    "coincube": 99,
+    "coincubeId": 1026,
+    "coincubenum": 1,
+    "coinseasoncube": 50,
+    "coinseasoncubeId": 110014,
+    "coinseasoncubenum": 10,
+    "combTime": 200,
+    "cubeShow": [
+      "$UI_Help_BossCatch_001.png",
+      "$UI_Help_BossCatch_002.png"
+    ],
+    "currency": [
+      3
+    ],
+    "deathEff": "Eff_Env_Sceneobject_BossCatch_KeyItem_Manic_04",
+    "displayReward": 7000,
+    "eachBallEnergy": 1,
+    "extraEffect": 1015,
+    "finalPosOffset": [
+      0,
+      2,
+      0
+    ],
+    "finalevent": [
+      1905
+    ],
+    "getcoin": 1372442919,
+    "halfLevel": 5,
+    "helpId": 7017,
+    "keyPetType": 1021300,
+    "leftEnergy": 14005,
+    "levelLimit": 5,
+    "levelrewardmax": 50,
+    "midballCrit": [
+      0.01,
+      5
+    ],
+    "overTime": 3,
+    "petalItemId": 1017,
+    "prepTime": 7200,
+    "propshow": 0,
+    "quickpurchase1": [
+      360009,
+      50
+    ],
+    "quickpurchase2": [
+      360009,
+      99
+    ],
+    "recommendLevel": 20,
+    "recommendType": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "rewardbar": 1
+  }
+]

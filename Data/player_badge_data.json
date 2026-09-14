@@ -1,0 +1,1890 @@
+{
+  "101151": {
+    "name": 2127281718,
+    "group": 10115,
+    "desc": 1977896597,
+    "ability": [
+      4214001,
+      4214003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101151.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101151_Locked.png",
+    "condition": [
+      {
+        "4": 103014,
+        "1": 305097,
+        "2": 1
+      }
+    ]
+  },
+  "101152": {
+    "name": 1970615804,
+    "group": 10115,
+    "desc": 1917077294,
+    "title": 1031,
+    "ability": [
+      4214004,
+      4214005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101152.png",
+    "condition": [
+      {
+        "4": 103014,
+        "1": 305098,
+        "2": 1
+      },
+      [
+        305199,
+        1,
+        -1,
+        103026
+      ]
+    ]
+  },
+  "401011": {
+    "name": 1767148148,
+    "icon": "$UI_Icon_Personal_Badge_401011.png",
+    "desc": 1630424623,
+    "title": 1054,
+    "initState": 2,
+    "group": 40101,
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_401011_Locked.png",
+    "condition": [
+      [
+        305152,
+        1
+      ]
+    ]
+  },
+  "401012": {
+    "group": 40101,
+    "quality": 2,
+    "name": 1749215268,
+    "condition": [
+      [
+        305153,
+        1
+      ]
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_401012.png",
+    "desc": 1108273674,
+    "title": 1055
+  },
+  "401013": {
+    "group": 40101,
+    "quality": 3,
+    "name": 1428734426,
+    "condition": [
+      [
+        305154,
+        1
+      ]
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_401013.png",
+    "desc": 1989101896,
+    "title": 1056
+  },
+  "101101": {
+    "name": 1861908276,
+    "group": 10110,
+    "desc": 1253583630,
+    "ability": [
+      4207001,
+      4207003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101101.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101101_Locked.png",
+    "condition": [
+      {
+        "4": 103007,
+        "1": 305062,
+        "2": 1
+      }
+    ]
+  },
+  "302011": {
+    "name": 1943787497,
+    "icon": "$UI_Icon_Personal_Badge_302011.png",
+    "desc": 2106063346,
+    "title": 1050,
+    "initState": 2,
+    "group": 30201,
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_302011_Locked.png",
+    "condition": [
+      [
+        305136,
+        50
+      ]
+    ]
+  },
+  "302012": {
+    "group": 30201,
+    "quality": 2,
+    "name": 1362636649,
+    "condition": [
+      [
+        305137,
+        100
+      ]
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_302012.png",
+    "desc": 1596753222,
+    "title": 1051
+  },
+  "304011": {
+    "name": 1839926175,
+    "icon": "$UI_Icon_Personal_Badge_304011.png",
+    "desc": 2031095695,
+    "title": 1059,
+    "initState": 2,
+    "group": 30401,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_304011_Locked.png",
+    "condition": [
+      [
+        305143,
+        1,
+        -1
+      ]
+    ]
+  },
+  "500010": {
+    "name": 1932764260,
+    "icon": "$UI_Icon_Personal_Badge_500010.png",
+    "desc": 2045349726,
+    "title": 1901,
+    "initState": 2,
+    "group": 50001,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_500010_Locked.png",
+    "condition": [
+      [
+        305155,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101153": {
+    "quality": 3,
+    "name": 1120355407,
+    "ability": [
+      4214006
+    ],
+    "condition": [
+      {
+        "4": 103014,
+        "1": 305099,
+        "2": 1
+      },
+      [
+        305187,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10115,
+    "desc": 1809815822,
+    "icon": "$UI_Icon_Personal_Badge_101153.png"
+  },
+  "101154": {
+    "name": 1511712769,
+    "group": 10115,
+    "desc": 1337720527,
+    "title": 1032,
+    "ability": [
+      4214007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101154.png",
+    "condition": [
+      [
+        305217,
+        1
+      ],
+      [
+        305100,
+        1,
+        -1
+      ],
+      [
+        305102,
+        1,
+        -1
+      ],
+      [
+        305103,
+        1,
+        -1
+      ]
+    ]
+  },
+  "201080": {
+    "name": 1097478544,
+    "clue": 2051572274,
+    "group": 20108,
+    "desc": 1380092465,
+    "initState": 1,
+    "icon": "$UI_Icon_Personal_Badge_101041.png",
+    "quality": 3,
+    "condition": [
+      [
+        8,
+        -1
+      ]
+    ],
+    "iconLocked": "$UI_Icon_Personal_Badge_101041_Locked.png"
+  },
+  "201010": {
+    "name": 1898706064,
+    "icon": "$UI_Icon_Personal_Badge_201010.png",
+    "desc": 1682416109,
+    "title": 1035,
+    "iconLocked": "$UI_Icon_Personal_Badge_201010_Locked.png",
+    "initState": 2,
+    "group": 20101,
+    "quality": 3,
+    "manualDisplayUnlockEffect": 1,
+    "condition": [
+      [
+        305124,
+        1
+      ]
+    ]
+  },
+  "201020": {
+    "name": 2136625451,
+    "icon": "$UI_Icon_Personal_Badge_201020.png",
+    "desc": 2011266455,
+    "title": 1036,
+    "iconLocked": "$UI_Icon_Personal_Badge_201020_Locked.png",
+    "initState": 2,
+    "group": 20102,
+    "quality": 3,
+    "manualDisplayUnlockEffect": 1,
+    "condition": [
+      [
+        305125,
+        1
+      ]
+    ]
+  },
+  "201030": {
+    "name": 1999023558,
+    "icon": "$UI_Icon_Personal_Badge_201030.png",
+    "desc": 1383012686,
+    "title": 1037,
+    "iconLocked": "$UI_Icon_Personal_Badge_201030_Locked.png",
+    "initState": 2,
+    "group": 20103,
+    "quality": 3,
+    "manualDisplayUnlockEffect": 1,
+    "condition": [
+      [
+        305126,
+        1
+      ]
+    ]
+  },
+  "201040": {
+    "name": 1625325788,
+    "icon": "$UI_Icon_Personal_Badge_201040.png",
+    "desc": 1924267423,
+    "title": 1038,
+    "iconLocked": "$UI_Icon_Personal_Badge_201040_Locked.png",
+    "initState": 2,
+    "group": 20104,
+    "quality": 3,
+    "manualDisplayUnlockEffect": 1,
+    "condition": [
+      [
+        305127,
+        1
+      ]
+    ]
+  },
+  "201050": {
+    "name": 1247060626,
+    "icon": "$UI_Icon_Personal_Badge_201050.png",
+    "desc": 1652087930,
+    "title": 1039,
+    "iconLocked": "$UI_Icon_Personal_Badge_201050_Locked.png",
+    "initState": 2,
+    "group": 20105,
+    "quality": 3,
+    "manualDisplayUnlockEffect": 1,
+    "condition": [
+      [
+        305128,
+        1
+      ]
+    ]
+  },
+  "201060": {
+    "name": 1586899402,
+    "icon": "$UI_Icon_Personal_Badge_201060.png",
+    "desc": 1315554868,
+    "title": 1040,
+    "iconLocked": "$UI_Icon_Personal_Badge_201060_Locked.png",
+    "initState": 2,
+    "group": 20106,
+    "quality": 3,
+    "manualDisplayUnlockEffect": 1,
+    "condition": [
+      [
+        305129,
+        1
+      ]
+    ]
+  },
+  "201070": {
+    "name": 1209866023,
+    "icon": "$UI_Icon_Personal_Badge_201070.png",
+    "desc": 1475024844,
+    "title": 1060,
+    "iconLocked": "$UI_Icon_Personal_Badge_201070_Locked.png",
+    "initState": 2,
+    "group": 20107,
+    "quality": 3,
+    "manualDisplayUnlockEffect": 1,
+    "condition": [
+      [
+        305130,
+        1
+      ]
+    ]
+  },
+  "204010": {
+    "name": 1737054683,
+    "icon": "$UI_Icon_Personal_Badge_204010.png",
+    "desc": 1638601894,
+    "title": 1047,
+    "initState": 2,
+    "group": 20401,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_204010_Locked.png",
+    "condition": [
+      [
+        305333,
+        60
+      ]
+    ]
+  },
+  "301010": {
+    "name": 1344620664,
+    "icon": "$UI_Icon_Personal_Badge_301010.png",
+    "desc": 1475120019,
+    "title": 1048,
+    "initState": 2,
+    "group": 30101,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_301010_Locked.png",
+    "condition": [
+      [
+        305134,
+        18
+      ]
+    ]
+  },
+  "302013": {
+    "group": 30201,
+    "quality": 3,
+    "name": 1888220400,
+    "condition": [
+      [
+        305138,
+        200
+      ]
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_302013.png",
+    "desc": 1786028943,
+    "title": 1052
+  },
+  "101021": {
+    "name": 1571401863,
+    "group": 10102,
+    "desc": 2065892223,
+    "ability": [
+      4202001,
+      4202003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101021.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101021_Locked.png",
+    "condition": [
+      {
+        "4": 103002,
+        "1": 305006,
+        "2": 1
+      }
+    ]
+  },
+  "101004": {
+    "name": 1537928292,
+    "group": 10100,
+    "desc": 2090696462,
+    "title": 1002,
+    "ability": [
+      4201003
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101004.png",
+    "condition": [
+      [
+        305123,
+        195
+      ]
+    ]
+  },
+  "303010": {
+    "name": 1554069520,
+    "icon": "$UI_Icon_Personal_Badge_303010.png",
+    "desc": 1731131710,
+    "title": 1053,
+    "initState": 2,
+    "group": 30301,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_303010_Locked.png",
+    "condition": [
+      [
+        305142,
+        1,
+        -1
+      ]
+    ]
+  },
+  "203010": {
+    "name": 1219212727,
+    "icon": "$UI_Icon_Personal_Badge_203010.png",
+    "desc": 1426447457,
+    "title": 1046,
+    "initState": 2,
+    "group": 20301,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_203010_Locked.png",
+    "condition": [
+      [
+        305131,
+        1
+      ],
+      [
+        305132,
+        1
+      ],
+      [
+        305133,
+        1
+      ]
+    ]
+  },
+  "202020": {
+    "name": 1338992545,
+    "icon": "$UI_Icon_Personal_Badge_202020.png",
+    "desc": 1594848830,
+    "title": 1061,
+    "initState": 2,
+    "group": 20202,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_202020_Locked.png",
+    "condition": [
+      [
+        305337,
+        108
+      ]
+    ]
+  },
+  "202013": {
+    "group": 20201,
+    "quality": 3,
+    "name": 1706629421,
+    "condition": [
+      [
+        305159,
+        1
+      ]
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_202013.png",
+    "desc": 1623059215,
+    "title": 1044
+  },
+  "202012": {
+    "group": 20201,
+    "quality": 2,
+    "name": 1854997924,
+    "condition": [
+      [
+        305158,
+        1
+      ]
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_202012.png",
+    "desc": 1813559284,
+    "title": 1043
+  },
+  "202011": {
+    "name": 1918221802,
+    "icon": "$UI_Icon_Personal_Badge_202011.png",
+    "desc": 1657466102,
+    "title": 1042,
+    "initState": 2,
+    "group": 20201,
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_202011_Locked.png",
+    "condition": [
+      [
+        305157,
+        1
+      ]
+    ]
+  },
+  "201090": {
+    "name": 1249588893,
+    "clue": 1807402916,
+    "group": 20109,
+    "desc": 1930717697,
+    "initState": 1,
+    "icon": "$UI_Icon_Personal_Badge_101041.png",
+    "quality": 3,
+    "condition": [
+      [
+        8,
+        -1
+      ]
+    ],
+    "iconLocked": "$UI_Icon_Personal_Badge_101041_Locked.png"
+  },
+  "101054": {
+    "name": 1076920920,
+    "group": 10105,
+    "desc": 1631880612,
+    "title": 1012,
+    "ability": [
+      4205007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101054.png",
+    "condition": [
+      [
+        305207,
+        1
+      ],
+      [
+        305030,
+        1,
+        -1
+      ],
+      [
+        305032,
+        1,
+        -1
+      ],
+      [
+        305033,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101003": {
+    "name": 2046312416,
+    "group": 10100,
+    "desc": 1887176539,
+    "title": 1001,
+    "ability": [
+      4201001
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101003.png",
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_101001_Locked.png",
+    "condition": [
+      [
+        305122,
+        82
+      ]
+    ]
+  },
+  "500021": {
+    "name": 1983115157,
+    "icon": "$UI_Icon_Personal_Badge_500021.png",
+    "desc": 1430941241,
+    "title": 1057,
+    "initState": 2,
+    "group": 50002,
+    "quality": 3,
+    "iconLocked": "$UI_Icon_Personal_Badge_500021_Locked.png",
+    "condition": [
+      [
+        305335,
+        1
+      ]
+    ]
+  },
+  "500022": {
+    "group": 50002,
+    "quality": 4,
+    "name": 2094941618,
+    "condition": [
+      [
+        305336,
+        1
+      ]
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_500022.png",
+    "desc": 1412022879,
+    "title": 1058
+  },
+  "101023": {
+    "quality": 3,
+    "name": 1192994070,
+    "ability": [
+      4202006
+    ],
+    "condition": [
+      {
+        "4": 103002,
+        "1": 305008,
+        "2": 1
+      },
+      [
+        305175,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10102,
+    "desc": 2082396720,
+    "icon": "$UI_Icon_Personal_Badge_101023.png"
+  },
+  "101022": {
+    "name": 1329730716,
+    "group": 10102,
+    "desc": 1432764064,
+    "title": 1005,
+    "ability": [
+      4202004,
+      4202005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101022.png",
+    "condition": [
+      {
+        "4": 103002,
+        "1": 305007,
+        "2": 1
+      },
+      [
+        305197,
+        1,
+        -1,
+        103024
+      ]
+    ]
+  },
+  "101024": {
+    "name": 1294190946,
+    "group": 10102,
+    "desc": 1096089752,
+    "title": 1006,
+    "ability": [
+      4202007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101024.png",
+    "condition": [
+      [
+        305204,
+        1
+      ],
+      [
+        305009,
+        1,
+        -1
+      ],
+      [
+        305011,
+        1,
+        -1
+      ],
+      [
+        305012,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101031": {
+    "name": 1351193514,
+    "group": 10103,
+    "desc": 1734795851,
+    "ability": [
+      4204001,
+      4204003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101031.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101031_Locked.png",
+    "condition": [
+      {
+        "4": 103004,
+        "1": 305013,
+        "2": 1
+      }
+    ]
+  },
+  "101032": {
+    "name": 1321578049,
+    "group": 10103,
+    "desc": 1506420960,
+    "title": 1007,
+    "ability": [
+      4204004,
+      4204005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101032.png",
+    "condition": [
+      {
+        "4": 103004,
+        "1": 305014,
+        "2": 1
+      },
+      [
+        305192,
+        1,
+        -1,
+        103019
+      ]
+    ]
+  },
+  "101033": {
+    "quality": 3,
+    "name": 2024858070,
+    "ability": [
+      4204006
+    ],
+    "condition": [
+      {
+        "4": 103004,
+        "1": 305015,
+        "2": 1
+      },
+      [
+        305177,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10103,
+    "desc": 2144750783,
+    "icon": "$UI_Icon_Personal_Badge_101033.png"
+  },
+  "101034": {
+    "name": 1967268664,
+    "group": 10103,
+    "desc": 1364396495,
+    "title": 1008,
+    "ability": [
+      4204007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101034.png",
+    "condition": [
+      [
+        305205,
+        1
+      ],
+      [
+        305016,
+        1,
+        -1
+      ],
+      [
+        305018,
+        1,
+        -1
+      ],
+      [
+        305019,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101041": {
+    "name": 1521330832,
+    "group": 10104,
+    "desc": 1852895860,
+    "ability": [
+      4203001,
+      4203003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101041.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101041_Locked.png",
+    "condition": [
+      {
+        "4": 103003,
+        "1": 305020,
+        "2": 1
+      }
+    ]
+  },
+  "101042": {
+    "name": 1497608054,
+    "group": 10104,
+    "desc": 1148717249,
+    "title": 1009,
+    "ability": [
+      4203004,
+      4203005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101042.png",
+    "condition": [
+      {
+        "4": 103003,
+        "1": 305021,
+        "2": 1
+      },
+      [
+        305202,
+        1,
+        -1,
+        103029
+      ]
+    ]
+  },
+  "101043": {
+    "quality": 3,
+    "name": 2094130789,
+    "ability": [
+      4203006
+    ],
+    "condition": [
+      {
+        "4": 103003,
+        "1": 305022,
+        "2": 1
+      },
+      [
+        305176,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10104,
+    "desc": 1108785065,
+    "icon": "$UI_Icon_Personal_Badge_101043.png"
+  },
+  "101044": {
+    "name": 1389300189,
+    "group": 10104,
+    "desc": 1874340463,
+    "title": 1010,
+    "ability": [
+      4203007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101044.png",
+    "condition": [
+      [
+        305206,
+        1
+      ],
+      [
+        305023,
+        1,
+        -1
+      ],
+      [
+        305025,
+        1,
+        -1
+      ],
+      [
+        305026,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101051": {
+    "name": 1131831249,
+    "group": 10105,
+    "desc": 1858002822,
+    "ability": [
+      4205001,
+      4205003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101051.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101051_Locked.png",
+    "condition": [
+      {
+        "4": 103005,
+        "1": 305027,
+        "2": 1
+      }
+    ]
+  },
+  "101052": {
+    "name": 1660306165,
+    "group": 10105,
+    "desc": 1106763579,
+    "title": 1011,
+    "ability": [
+      4205004,
+      4205005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101052.png",
+    "condition": [
+      {
+        "4": 103005,
+        "1": 305028,
+        "2": 1
+      },
+      [
+        305193,
+        1,
+        -1,
+        103020
+      ]
+    ]
+  },
+  "101053": {
+    "quality": 3,
+    "name": 1828413941,
+    "ability": [
+      4205006
+    ],
+    "condition": [
+      {
+        "4": 103005,
+        "1": 305029,
+        "2": 1
+      },
+      [
+        305178,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10105,
+    "desc": 1705945150,
+    "icon": "$UI_Icon_Personal_Badge_101053.png"
+  },
+  "101102": {
+    "name": 1625038219,
+    "group": 10110,
+    "desc": 2003634845,
+    "title": 1021,
+    "ability": [
+      4207004,
+      4207005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101102.png",
+    "condition": [
+      {
+        "4": 103007,
+        "1": 305063,
+        "2": 1
+      },
+      [
+        305194,
+        1,
+        -1,
+        103021
+      ]
+    ]
+  },
+  "101061": {
+    "name": 1864198098,
+    "group": 10106,
+    "desc": 2126681614,
+    "ability": [
+      4206001,
+      4206003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101061.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101061_Locked.png",
+    "condition": [
+      {
+        "4": 103006,
+        "1": 305034,
+        "2": 1
+      }
+    ]
+  },
+  "101062": {
+    "name": 1120610142,
+    "group": 10106,
+    "desc": 2060090498,
+    "title": 1013,
+    "ability": [
+      4206004,
+      4206005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101062.png",
+    "condition": [
+      {
+        "4": 103006,
+        "1": 305035,
+        "2": 1
+      },
+      [
+        305195,
+        1,
+        -1,
+        103022
+      ]
+    ]
+  },
+  "101063": {
+    "quality": 3,
+    "name": 1604029926,
+    "ability": [
+      4206006
+    ],
+    "condition": [
+      {
+        "4": 103006,
+        "1": 305036,
+        "2": 1
+      },
+      [
+        305179,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10106,
+    "desc": 1720527949,
+    "icon": "$UI_Icon_Personal_Badge_101063.png"
+  },
+  "101064": {
+    "name": 1908910997,
+    "group": 10106,
+    "desc": 1162881984,
+    "title": 1014,
+    "ability": [
+      4206007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101064.png",
+    "condition": [
+      [
+        305208,
+        1
+      ],
+      [
+        305037,
+        1,
+        -1
+      ],
+      [
+        305039,
+        1,
+        -1
+      ],
+      [
+        305040,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101071": {
+    "name": 1994063774,
+    "group": 10107,
+    "desc": 1437535457,
+    "ability": [
+      4212001,
+      4212003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101071.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101071_Locked.png",
+    "condition": [
+      {
+        "4": 103012,
+        "1": 305041,
+        "2": 1
+      }
+    ]
+  },
+  "101072": {
+    "name": 2089710820,
+    "group": 10107,
+    "desc": 1420791860,
+    "title": 1015,
+    "ability": [
+      4212004,
+      4212005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101072.png",
+    "condition": [
+      {
+        "4": 103012,
+        "1": 305042,
+        "2": 1
+      },
+      [
+        305196,
+        1,
+        -1,
+        103023
+      ]
+    ]
+  },
+  "101073": {
+    "quality": 3,
+    "name": 1227852537,
+    "ability": [
+      4212006
+    ],
+    "condition": [
+      {
+        "4": 103012,
+        "1": 305043,
+        "2": 1
+      },
+      [
+        305185,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10107,
+    "desc": 1982164682,
+    "icon": "$UI_Icon_Personal_Badge_101073.png"
+  },
+  "101074": {
+    "name": 1307837485,
+    "group": 10107,
+    "desc": 1824504647,
+    "title": 1016,
+    "ability": [
+      4212007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101074.png",
+    "condition": [
+      [
+        305209,
+        1
+      ],
+      [
+        305044,
+        1,
+        -1
+      ],
+      [
+        305046,
+        1,
+        -1
+      ],
+      [
+        305047,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101081": {
+    "name": 1439984756,
+    "group": 10108,
+    "desc": 1905984386,
+    "ability": [
+      4211001,
+      4211003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101081.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101081_Locked.png",
+    "condition": [
+      {
+        "4": 103011,
+        "1": 305048,
+        "2": 1
+      }
+    ]
+  },
+  "101082": {
+    "name": 1430645314,
+    "group": 10108,
+    "desc": 2078190682,
+    "title": 1017,
+    "ability": [
+      4211004,
+      4211005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101082.png",
+    "condition": [
+      {
+        "4": 103011,
+        "1": 305049,
+        "2": 1
+      },
+      [
+        305191,
+        1,
+        -1,
+        103018
+      ]
+    ]
+  },
+  "101083": {
+    "quality": 3,
+    "name": 2102059039,
+    "ability": [
+      4211006
+    ],
+    "condition": [
+      {
+        "4": 103011,
+        "1": 305050,
+        "2": 1
+      },
+      [
+        305184,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10108,
+    "desc": 1943288734,
+    "icon": "$UI_Icon_Personal_Badge_101083.png"
+  },
+  "101084": {
+    "name": 1403190191,
+    "group": 10108,
+    "desc": 2082337355,
+    "title": 1018,
+    "ability": [
+      4211007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101084.png",
+    "condition": [
+      [
+        305210,
+        1
+      ],
+      [
+        305051,
+        1,
+        -1
+      ],
+      [
+        305053,
+        1,
+        -1
+      ],
+      [
+        305054,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101091": {
+    "name": 1630640909,
+    "group": 10109,
+    "desc": 2050860103,
+    "ability": [
+      4210001,
+      4210003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101091.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101091_Locked.png",
+    "condition": [
+      {
+        "4": 103010,
+        "1": 305055,
+        "2": 1
+      }
+    ]
+  },
+  "101092": {
+    "name": 1165708086,
+    "group": 10109,
+    "desc": 1086291680,
+    "title": 1019,
+    "ability": [
+      4210004,
+      4210005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101092.png",
+    "condition": [
+      {
+        "4": 103010,
+        "1": 305056,
+        "2": 1
+      },
+      [
+        305190,
+        1,
+        -1,
+        103017
+      ]
+    ]
+  },
+  "101093": {
+    "quality": 3,
+    "name": 1874984043,
+    "ability": [
+      4210006
+    ],
+    "condition": [
+      {
+        "4": 103010,
+        "1": 305057,
+        "2": 1
+      },
+      [
+        305183,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10109,
+    "desc": 1452529110,
+    "icon": "$UI_Icon_Personal_Badge_101093.png"
+  },
+  "101094": {
+    "name": 1844010409,
+    "group": 10109,
+    "desc": 1539850508,
+    "title": 1020,
+    "ability": [
+      4210007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101094.png",
+    "condition": [
+      [
+        305211,
+        1
+      ],
+      [
+        305058,
+        1,
+        -1
+      ],
+      [
+        305060,
+        1,
+        -1
+      ],
+      [
+        305061,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101103": {
+    "quality": 3,
+    "name": 1506566986,
+    "ability": [
+      4207006
+    ],
+    "condition": [
+      {
+        "4": 103007,
+        "1": 305064,
+        "2": 1
+      },
+      [
+        305180,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10110,
+    "desc": 1232662922,
+    "icon": "$UI_Icon_Personal_Badge_101103.png"
+  },
+  "101104": {
+    "name": 1310564035,
+    "group": 10110,
+    "desc": 1981088328,
+    "title": 1022,
+    "ability": [
+      4207007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101104.png",
+    "condition": [
+      [
+        305212,
+        1
+      ],
+      [
+        305065,
+        1,
+        -1
+      ],
+      [
+        305067,
+        1,
+        -1
+      ],
+      [
+        305068,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101111": {
+    "name": 1627502797,
+    "group": 10111,
+    "desc": 1186163057,
+    "ability": [
+      4209001,
+      4209003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101111.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101111_Locked.png",
+    "condition": [
+      {
+        "4": 103009,
+        "1": 305069,
+        "2": 1
+      }
+    ]
+  },
+  "101112": {
+    "name": 1824579432,
+    "group": 10111,
+    "desc": 1903777020,
+    "title": 1023,
+    "ability": [
+      4209004,
+      4209005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101112.png",
+    "condition": [
+      {
+        "4": 103009,
+        "1": 305070,
+        "2": 1
+      },
+      [
+        305201,
+        1,
+        -1,
+        103028
+      ]
+    ]
+  },
+  "101113": {
+    "quality": 3,
+    "name": 1203794542,
+    "ability": [
+      4209006
+    ],
+    "condition": [
+      {
+        "4": 103009,
+        "1": 305071,
+        "2": 1
+      },
+      [
+        305182,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10111,
+    "desc": 2053889832,
+    "icon": "$UI_Icon_Personal_Badge_101113.png"
+  },
+  "101114": {
+    "name": 1455538843,
+    "group": 10111,
+    "desc": 1244250872,
+    "title": 1024,
+    "ability": [
+      4209007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101114.png",
+    "condition": [
+      [
+        305213,
+        1
+      ],
+      [
+        305072,
+        1,
+        -1
+      ],
+      [
+        305074,
+        1,
+        -1
+      ],
+      [
+        305075,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101121": {
+    "name": 1861781643,
+    "group": 10112,
+    "desc": 1111889238,
+    "ability": [
+      4213001,
+      4213003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101121.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101121_Locked.png",
+    "condition": [
+      {
+        "4": 103013,
+        "1": 305076,
+        "2": 1
+      }
+    ]
+  },
+  "101122": {
+    "name": 1359901284,
+    "group": 10112,
+    "desc": 1259562016,
+    "title": 1025,
+    "ability": [
+      4213004,
+      4213005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101122.png",
+    "condition": [
+      {
+        "4": 103013,
+        "1": 305077,
+        "2": 1
+      }
+    ]
+  },
+  "101123": {
+    "quality": 3,
+    "name": 1173958982,
+    "ability": [
+      4213006
+    ],
+    "condition": [
+      {
+        "4": 103013,
+        "1": 305078,
+        "2": 1
+      },
+      [
+        305186,
+        3
+      ]
+    ],
+    "initState": 2,
+    "group": 10112,
+    "desc": 1646325346,
+    "icon": "$UI_Icon_Personal_Badge_101123.png"
+  },
+  "101124": {
+    "name": 1719217924,
+    "group": 10112,
+    "desc": 1607583297,
+    "title": 1026,
+    "ability": [
+      4213007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101124.png",
+    "condition": [
+      [
+        305214,
+        1
+      ],
+      [
+        305079,
+        1,
+        -1
+      ],
+      [
+        305081,
+        1,
+        -1
+      ],
+      [
+        305082,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101131": {
+    "name": 1949974427,
+    "group": 10113,
+    "desc": 2055310071,
+    "ability": [
+      4208001,
+      4208003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101131.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101131_Locked.png",
+    "condition": [
+      {
+        "4": 103008,
+        "1": 305083,
+        "2": 1
+      }
+    ]
+  },
+  "101132": {
+    "name": 2003319973,
+    "group": 10113,
+    "desc": 1671451334,
+    "title": 1027,
+    "ability": [
+      4208004,
+      4208005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101132.png",
+    "condition": [
+      {
+        "4": 103008,
+        "1": 305084,
+        "2": 1
+      },
+      [
+        305198,
+        1,
+        -1,
+        103025
+      ]
+    ]
+  },
+  "101133": {
+    "quality": 3,
+    "name": 1168261680,
+    "ability": [
+      4208006
+    ],
+    "condition": [
+      {
+        "4": 103008,
+        "1": 305085,
+        "2": 1
+      },
+      [
+        305181,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10113,
+    "desc": 1444902852,
+    "icon": "$UI_Icon_Personal_Badge_101133.png"
+  },
+  "101134": {
+    "name": 1917749961,
+    "group": 10113,
+    "desc": 1207976618,
+    "title": 1028,
+    "ability": [
+      4208007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101134.png",
+    "condition": [
+      [
+        305215,
+        1
+      ],
+      [
+        305086,
+        1,
+        -1
+      ],
+      [
+        305088,
+        1,
+        -1
+      ],
+      [
+        305089,
+        1,
+        -1
+      ]
+    ]
+  },
+  "101141": {
+    "name": 1180298118,
+    "group": 10114,
+    "desc": 1843019874,
+    "ability": [
+      4215001,
+      4215003
+    ],
+    "initState": 2,
+    "icon": "$UI_Icon_Personal_Badge_101141.png",
+    "quality": 1,
+    "iconLocked": "$UI_Icon_Personal_Badge_101141_Locked.png",
+    "condition": [
+      {
+        "4": 103015,
+        "1": 305090,
+        "2": 1
+      }
+    ]
+  },
+  "101142": {
+    "name": 1327919609,
+    "group": 10114,
+    "desc": 1770069286,
+    "title": 1029,
+    "ability": [
+      4215004,
+      4215005
+    ],
+    "initState": 2,
+    "quality": 2,
+    "icon": "$UI_Icon_Personal_Badge_101142.png",
+    "condition": [
+      {
+        "4": 103015,
+        "1": 305091,
+        "2": 1
+      },
+      [
+        305200,
+        1,
+        -1,
+        103027
+      ]
+    ]
+  },
+  "101143": {
+    "quality": 3,
+    "name": 1625722231,
+    "ability": [
+      4215006
+    ],
+    "condition": [
+      {
+        "4": 103015,
+        "1": 305092,
+        "2": 1
+      },
+      [
+        305188,
+        5
+      ]
+    ],
+    "initState": 2,
+    "group": 10114,
+    "desc": 1495433697,
+    "icon": "$UI_Icon_Personal_Badge_101143.png"
+  },
+  "101144": {
+    "name": 1957289488,
+    "group": 10114,
+    "desc": 1883655246,
+    "title": 1030,
+    "ability": [
+      4215007
+    ],
+    "initState": 2,
+    "quality": 4,
+    "icon": "$UI_Icon_Personal_Badge_101144.png",
+    "condition": [
+      [
+        305216,
+        1
+      ],
+      [
+        305093,
+        1,
+        -1
+      ],
+      [
+        305095,
+        1,
+        -1
+      ],
+      [
+        305096,
+        1,
+        -1
+      ]
+    ]
+  }
+}

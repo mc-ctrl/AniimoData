@@ -1,0 +1,173 @@
+{
+  "3": {
+    "yaw": 270,
+    "owner": "",
+    "position": [
+      254,
+      0,
+      -416
+    ],
+    "connectedCount": 1,
+    "resId": "$Level_Room_20_005_Key.prefab",
+    "id": 3,
+    "sandboxIds": [
+      91182994
+    ],
+    "depth": 1,
+    "roomType": 5
+  },
+  "58": {
+    "id": 58,
+    "sandboxIds": [
+      91183336
+    ],
+    "yaw": 90,
+    "position": [
+      354,
+      0,
+      -366
+    ],
+    "roomType": 5,
+    "resId": "$Level_Room_20_005_Key.prefab",
+    "connectedCount": 1,
+    "depth": 3
+  },
+  "59": {
+    "id": 59,
+    "sandboxIds": [
+      91184196
+    ],
+    "yaw": 90,
+    "position": [
+      314,
+      0,
+      -442
+    ],
+    "roomType": 5,
+    "resId": "$Level_Room_40_004_Key.prefab",
+    "connectedCount": 1,
+    "depth": 2
+  },
+  "60": {
+    "id": 60,
+    "sandboxIds": [
+      91183828
+    ],
+    "yaw": 180,
+    "position": [
+      302,
+      0,
+      -342
+    ],
+    "roomType": 1,
+    "resId": "$Level_Room_40_005_Key.prefab",
+    "connectedCount": 1,
+    "depth": 2
+  },
+  "28": {
+    "id": 28,
+    "sandboxIds": [
+      91056351,
+      91056366,
+      91056819,
+      91056823,
+      91056827,
+      91056829,
+      91056830,
+      91056831,
+      91056896,
+      91056897,
+      91056898,
+      91056899,
+      91058645,
+      91059474,
+      91062623,
+      91082662,
+      91082719,
+      91102795,
+      91117510,
+      91126583,
+      91126584,
+      91126588,
+      91126594,
+      91126610,
+      91141781
+    ],
+    "yaw": 0,
+    "position": [
+      304,
+      0,
+      -392
+    ],
+    "roomType": 1,
+    "resId": "$Level_Room_60_001.prefab",
+    "connectedCount": 4,
+    "depth": 1
+  },
+  "62": {
+    "yaw": 270,
+    "owner": "",
+    "position": [
+      344,
+      0,
+      -416
+    ],
+    "connectedCount": 1,
+    "resId": "$Level_Room_20_005_Key.prefab",
+    "id": 62,
+    "sandboxIds": [
+      91182994
+    ],
+    "depth": 3,
+    "roomType": 5
+  },
+  "63": {
+    "yaw": 90,
+    "owner": "",
+    "position": [
+      264,
+      0,
+      -366
+    ],
+    "connectedCount": 1,
+    "resId": "$Level_Room_20_005_Key.prefab",
+    "id": 63,
+    "sandboxIds": [
+      91182994
+    ],
+    "depth": 1,
+    "roomType": 5
+  },
+  "1": {
+    "id": 1,
+    "sandboxIds": [
+      91042890
+    ],
+    "yaw": 0,
+    "position": [
+      259,
+      0,
+      -391
+    ],
+    "roomType": 3,
+    "resId": "$Level_Room_30_001.prefab",
+    "connectedCount": 3,
+    "depth": 0
+  },
+  "2": {
+    "id": 2,
+    "sandboxIds": [
+      91042934
+    ],
+    "yaw": 0,
+    "position": [
+      349,
+      0,
+      -391
+    ],
+    "roomType": 4,
+    "resId": "$Level_Room_30_002.prefab",
+    "connectedCount": 3,
+    "depth": 2
+  }
+}

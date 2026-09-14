@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123106",
+  "calcInfoByLuaConfig": {
+    "id": 2123106,
+    "type": 1,
+    "bp_reduce_rate_v": "param0"
+  },
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "防御提升",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

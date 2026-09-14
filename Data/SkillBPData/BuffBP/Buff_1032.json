@@ -1,0 +1,72 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "speed_ratio_crouch_v": "param0",
+    "speed_ratio_dash_v": "param9",
+    "speed_ratio_climb_v": "param14",
+    "speed_ratio_fly_sprint_v": "param11",
+    "speed_ratio_glide_v": "param8",
+    "speed_ratio_speedburst_loop_v": "param13",
+    "speed_ratio_run_v": "param2",
+    "speed_ratio_sprint_v": "param3",
+    "speed_ratio_standholdball_v": "param4",
+    "speed_ratio_swim_dash_v": "param7",
+    "speed_ratio_swim_fast_v": "param6",
+    "speed_ratio_swim_v": "param5",
+    "speed_ratio_walk_v": "param1",
+    "id": 1032,
+    "type": 1,
+    "speed_ratio_fly_v": "param10",
+    "speed_ratio_speedburst_start_v": "param12"
+  },
+  "BPName": "buff_1032",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    7,
+    9
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0d403085-7198-494e-ae48-64fefa426f7f",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "9": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "056d6766-bbaf-43b9-89d3-b0ebf7ab7941",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "90644864-f68c-4ed8-bc94-dec8374ec155",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "5": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "e1051350-ff57-4399-91eb-7437241d184d",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 5
+    }
+  },
+  "stackRule": 0,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

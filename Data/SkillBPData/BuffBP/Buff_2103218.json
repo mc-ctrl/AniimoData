@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103218",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "d19fcf8d-0510-42cc-b48c-8dd793d1055d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 8
+    },
+    "4": {
+      "petTarget": "OWNER",
+      "triggerId": 20002022,
+      "name": "onEntityTrigger",
+      "UID": "0013eaa3-c341-4c0f-a464-da5d6bf411a4",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "78202318-1911-4a1e-933b-c4a3a82be472",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 6
+    },
+    "19": {
+      "UID": "9c8820b9-0d6d-440c-a167-369cc56ec517",
+      "name": "destroyEntity",
+      "NodeID": 19
+    },
+    "15": {
+      "buffId": 2103218,
+      "name": "removeBuff",
+      "UID": "51851334-7a9d-4a66-91dc-55c996b43552",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "20": {
+      "key": "buff_210321820",
+      "duration": 1,
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20,
+      "UID": "307c16e7-bf62-4773-a803-2613fc798077",
+      "name": "addEntityTimer"
+    },
+    "17": {
+      "actionIds": [
+        15,
+        20
+      ],
+      "name": "registerReceiveDamageThreshold",
+      "UID": "50227e3d-c7f6-42b4-aca2-5b9764cb49c2",
+      "thresholdCount": 6,
+      "NodeID": 17
+    }
+  },
+  "onBuffDestroyIds": [
+    4,
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    17
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_10320700",
+  "NodeID": 1,
+  "UID": "565df737-956d-4230-be4e-3454d5abd551",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10320700001,
+      "name": "setCombatActionTimeline",
+      "UID": "b239566d-bda8-45a4-ab7f-5c19d9dab6df",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 8,
+  "preloadAnims": [
+    "Skill_Sickle"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Slash_Big",
+    "Eff_Parmon_10032_Skill_Sickle02",
+    "Eff_Parmon_10032_Skill_Sickle01",
+    "Eff_Parmon_10032_Skill_Sickle_Xuli01",
+    "Eff_Parmon_10032_Skill_Sickle_Xuli02",
+    "Eff_Parmon_10032_Skill_Sickle_Xuli03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "abilityParamId": 11200321
+}

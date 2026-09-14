@@ -1,0 +1,54 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "duration": 1,
+      "name": "moveByDirection",
+      "UID": "ddbbf85c-78db-4704-a0bc-8364c33e8bdf",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "velocity": [
+        0,
+        5,
+        0
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "name": "registerDeadEvent",
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "1cecf20d-6845-4023-aace-91ab8eea42d6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    }
+  },
+  "BPName": "timeline_10001",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    6,
+    9
+  ],
+  "layer": "Base",
+  "length": 9999
+}

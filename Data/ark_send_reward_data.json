@@ -1,0 +1,293 @@
+{
+  "40002": {
+    "chestId": 30022,
+    "canSendByClient": 1,
+    "chestPos": 69676871,
+    "rewardMax": 1
+  },
+  "40003": {
+    "chestId": 30024,
+    "canSendByClient": 1,
+    "chestPos": 69676735,
+    "rewardMax": 1
+  },
+  "40004": {
+    "chestId": 30024,
+    "canSendByClient": 1,
+    "chestPos": 69676735,
+    "rewardMax": 1
+  },
+  "40005": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 88190323,
+    "rewardMax": 1
+  },
+  "40006": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 88195776,
+    "rewardMax": 1
+  },
+  "40007": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 90496642,
+    "rewardMax": 1
+  },
+  "40008": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 90502863,
+    "rewardMax": 1
+  },
+  "40009": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 88195776,
+    "rewardMax": 1
+  },
+  "40010": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 90637981,
+    "rewardMax": 1
+  },
+  "40011": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 90817599,
+    "rewardMax": 1
+  },
+  "40012": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 90825682,
+    "rewardMax": 1
+  },
+  "40013": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 90828941,
+    "rewardMax": 1
+  },
+  "40014": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 91307428,
+    "rewardMax": 1
+  },
+  "40015": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 91307449,
+    "rewardMax": 1
+  },
+  "50001": {
+    "chestId": 30028,
+    "canSendByClient": 1,
+    "chestPos": 71169924,
+    "rewardMax": 1
+  },
+  "50002": {
+    "chestId": 30021,
+    "canSendByClient": 1,
+    "chestPos": 71170002,
+    "rewardMax": 1
+  },
+  "60001": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 69690757,
+    "rewardMax": 1
+  },
+  "60002": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 71170002,
+    "rewardMax": 1
+  },
+  "60003": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 69676871,
+    "rewardMax": 1
+  },
+  "60004": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 73134778,
+    "rewardMax": 1
+  },
+  "60005": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 69676735,
+    "rewardMax": 1
+  },
+  "60006": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 69677268,
+    "rewardMax": 1
+  },
+  "60007": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 69677186,
+    "rewardMax": 1
+  },
+  "60008": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 73134779,
+    "rewardMax": 1
+  },
+  "60009": {
+    "chestId": 30029,
+    "canSendByClient": 1,
+    "chestPos": 71169924,
+    "rewardMax": 1
+  },
+  "60010": {
+    "chestId": 30023,
+    "canSendByClient": 1,
+    "chestPos": 73134778,
+    "rewardMax": 1
+  },
+  "60011": {
+    "chestId": 30027,
+    "canSendByClient": 1,
+    "chestPos": 73134779,
+    "rewardMax": 1
+  },
+  "10001": {
+    "chestId": 30004,
+    "chestPos": 69677385,
+    "rewardMax": -1
+  },
+  "10002": {
+    "chestId": 30005,
+    "chestPos": 69677385,
+    "rewardMax": -1
+  },
+  "10003": {
+    "chestId": 30006,
+    "chestPos": 69677385,
+    "rewardMax": -1
+  },
+  "20001": {
+    "chestId": 30010,
+    "canSendByClient": 1,
+    "chestPos": 69690557,
+    "rewardMax": 1
+  },
+  "20002": {
+    "chestId": 30020,
+    "canSendByClient": 1,
+    "chestPos": 69690757,
+    "rewardMax": 1
+  },
+  "20003": {
+    "chestId": 30026,
+    "canSendByClient": 1,
+    "chestPos": 69677186,
+    "rewardMax": 1
+  },
+  "20004": {
+    "chestId": 30012,
+    "canSendByClient": 1,
+    "chestPos": 69678599,
+    "rewardMax": 1
+  },
+  "20005": {
+    "chestId": 30014,
+    "canSendByClient": 1,
+    "chestPos": 69678697,
+    "rewardMax": 1
+  },
+  "20006": {
+    "chestId": 30014,
+    "canSendByClient": 1,
+    "chestPos": 69678761,
+    "rewardMax": 1
+  },
+  "20007": {
+    "chestId": 30008,
+    "canSendByClient": 1,
+    "chestPos": 69690879,
+    "rewardMax": 1
+  },
+  "20008": {
+    "chestId": 30009,
+    "canSendByClient": 1,
+    "chestPos": 71408608,
+    "rewardMax": 1
+  },
+  "20009": {
+    "chestId": 30014,
+    "canSendByClient": 1,
+    "chestPos": 69678303,
+    "rewardMax": 1
+  },
+  "20010": {
+    "chestId": 30025,
+    "canSendByClient": 1,
+    "chestPos": 69677268,
+    "rewardMax": 1
+  },
+  "20011": {
+    "chestId": 30011,
+    "canSendByClient": 1,
+    "chestPos": 69678831,
+    "rewardMax": 1
+  },
+  "20012": {
+    "chestId": 30016,
+    "canSendByClient": 1,
+    "chestPos": 69678443,
+    "rewardMax": 1
+  },
+  "20013": {
+    "chestId": 30014,
+    "canSendByClient": 1,
+    "chestPos": 69678697,
+    "rewardMax": 1
+  },
+  "20014": {
+    "chestId": 30014,
+    "canSendByClient": 1,
+    "chestPos": 69678928,
+    "rewardMax": 1
+  },
+  "20015": {
+    "chestId": 30010,
+    "canSendByClient": 1,
+    "chestPos": 69678520,
+    "rewardMax": 1
+  },
+  "20016": {
+    "chestId": 30013,
+    "canSendByClient": 1,
+    "chestPos": 69678761,
+    "rewardMax": 1
+  },
+  "30001": {
+    "chestId": 30008,
+    "canSendByClient": 1,
+    "chestPos": 69677186,
+    "rewardMax": 1
+  },
+  "30002": {
+    "chestId": 30011,
+    "canSendByClient": 1,
+    "chestPos": 69677268,
+    "rewardMax": 1
+  },
+  "40001": {
+    "chestId": 30002,
+    "canSendByClient": 1,
+    "chestPos": 72861946,
+    "rewardMax": 1
+  }
+}

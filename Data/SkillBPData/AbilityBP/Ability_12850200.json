@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_12850200",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10800140,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "13": {
+      "timelineId": 12850200002,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 13
+    }
+  },
+  "onAbilityCastIds": [
+    13
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3.5,
+  "preloadAnims": [
+    "Skill_Talus",
+    "Skill_Earthquake_BurrowState"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Rock_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

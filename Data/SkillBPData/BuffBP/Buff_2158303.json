@@ -1,0 +1,39 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2158303",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "f5b9b795-a477-426b-acce-f3811f36b9b4",
+      "effectId": "Eff_Common_Buff_AttackDown",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ceee4c33-cff8-4163-8a8b-0b624942139f",
+      "effectId": "Eff_Common_Buff_AttackDown",
+      "speed": 1,
+      "NodeID": 4
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2158303,
+    "type": 1,
+    "dmg_grass_dec_ratio": "param0"
+  },
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "61557885": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "这是神兽巢穴，具体描述自助修改",
+      "autoSetContent1": true,
+      "compassShowDistance": 150,
+      "initState": 1,
+      "inactiveDesc": "这是神兽巢穴，具体描述自助修改",
+      "mapAreaId": 0,
+      "markConfigId": 10101,
+      "markContent1": 61557885,
+      "nearState": 1,
+      "openMapState": 2,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 1,
+      "scale2": 1,
+      "compassTxt": "神兽巢穴",
+      "positionParam": [
+        0,
+        0
+      ],
+      "image": "$UI_Img_Many.png",
+      "SloganPlayOnce": false,
+      "POIDesc": "这是神兽巢穴，具体描述自助修改",
+      "POIIcon": "$UI_Icon_MarkFilter_Boss.png",
+      "POIOrNot": true,
+      "yaw": 0,
+      "title": "神兽巢穴",
+      "activeDisplayType": 1,
+      "activeDistance": 100,
+      "showPortalOffset": false,
+      "activeShapes": {},
+      "scale3": 1,
+      "arriveParam": {},
+      "arriveType": 1,
+      "inactiveImage": "$UI_Img_Monster_Unknown.png",
+      "circleRadius": 0,
+      "markType": 0,
+      "inactiveTitle": "神兽巢穴"
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 101,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_神兽巢穴_1",
+    "sightLevelType": 256,
+    "spawners": [
+      61557905,
+      61557907,
+      61557909,
+      61557911,
+      61645841,
+      61645843
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -1.87,
+      0.25,
+      11.59
+    ],
+    "owner": "汪玉笠",
+    "id": 61557885,
+    "levelItems": {},
+    "disposable": true
+  }
+}

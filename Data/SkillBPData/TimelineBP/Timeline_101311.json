@@ -1,0 +1,126 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "80": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7970fac8-de1e-4c9f-9197-ed60996541fe",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10073_skill_wind_loop",
+      "NodeID": 80
+    },
+    "74": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 6,
+      "NodeID": 74,
+      "UID": "1b00f04f-2981-432c-b900-98aa7f839fd8",
+      "onUpdate": {
+        "actionIds": [
+          73
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          73
+        ]
+      }
+    },
+    "78": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 101311,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 4
+      },
+      "UID": "b9615122-b2ef-47db-b3f3-0ef41ec459c8",
+      "target": "TARGET",
+      "NodeID": 78,
+      "attackData": {
+        "impulseId": 13000,
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 9,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "69": {
+      "UID": "49da9898-fa51-4223-8dfd-2e9e775f780e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          67,
+          80
+        ]
+      },
+      "NodeID": 69
+    },
+    "67": {
+      "name": "moveByDirection",
+      "duration": 6,
+      "velocity": [
+        0,
+        0,
+        2
+      ],
+      "NodeID": 67,
+      "UID": "c9b295a2-e1ac-4f3b-a674-194743e10cee",
+      "collisionTestDistance": 0,
+      "isLocalDir": true,
+      "needForceOnGround": false
+    },
+    "73": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 78,
+      "NodeID": 73,
+      "UID": "7f8f6dc8-7f95-45e2-839c-2e2b3b3c2c48",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            4,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 13000,
+      "actionIds": [
+        78
+      ]
+    }
+  },
+  "BPName": "timeline_101311",
+  "NodeID": 1,
+  "UID": "4f1d01a1-2a47-40ac-8135-397299048e9d",
+  "eventIds": [
+    69,
+    74
+  ],
+  "layer": "Base",
+  "length": 6
+}

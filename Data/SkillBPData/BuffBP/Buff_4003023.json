@@ -1,0 +1,148 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003023",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11,
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 2,
+      "target": "OWNER",
+      "NodeID": 3,
+      "UID": "fb88e4be-bee9-4971-8500-4505332d86cf",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain_Hit",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "4": {
+      "UID": "4694d684-fc5c-4871-bfb5-76b71dd82ab6",
+      "name": "callClientAction",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "actionIds": [
+        23
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "968de6fa-41f7-4471-bfc4-84165c5a643a",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "d32a8502-d6e3-4d8c-8711-1dfbfca3c0ea",
+      "name": "callClientAction",
+      "actionIds": [
+        27,
+        28,
+        12,
+        15
+      ],
+      "NodeID": 14
+    },
+    "10": {
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "6a47fb4b-9e09-497d-87a1-4cb85bcfc8f9",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        14
+      ]
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f63b7714-7061-4b34-a160-7d0d827b5ef3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossRush_Skill_ChainRestraint",
+      "NodeID": 15
+    },
+    "25": {
+      "key": "TimeSuolian01",
+      "name": "setServerCacheVal",
+      "UID": "feef8931-5116-456d-b014-a78fefb0725d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 25
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "6b577a22-7581-4fba-b518-492543e5e2a2",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain_Hit",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "UID": "72ff1a4c-73d5-48d8-979b-1fc80e50994f",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 27
+    },
+    "28": {
+      "duration": 2,
+      "name": "playStartLoopEndAni",
+      "NodeID": 28,
+      "UID": "d6171c41-8cf5-40a9-9a8a-fa0d8d43da0f",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "18": {
+      "UID": "3b346c2f-93e5-49e3-958c-66beeadebf09",
+      "name": "callClientAction",
+      "actionIds": [
+        16,
+        20
+      ],
+      "NodeID": 18
+    },
+    "26": {
+      "name": "hasBuffTag",
+      "UID": "4ca87a0b-df7b-4a73-9fa9-192c43cd2d6e",
+      "target": "OWNER",
+      "NodeID": 26,
+      "buffTag": 1
+    },
+    "23": {
+      "buffId": 4003023,
+      "name": "removeBuff",
+      "UID": "42879663-7542-4305-ac81-bbde33e597e6",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e94addc9-d4cd-4981-ac23-9bd47751ff18",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain_End",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a4e41a53-1bea-40f1-844c-1190c6d82b7d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossRush_Skill_ChainHit",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    18
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    24,
+    4,
+    10,
+    25
+  ]
+}

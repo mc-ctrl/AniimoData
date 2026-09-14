@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2160303",
+  "calcInfoByLuaConfig": {
+    "id": 2160303,
+    "type": 1
+  },
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "bc929a3a-e655-4388-907f-a399327ef00c",
+      "conditionIds": [
+        29,
+        4
+      ],
+      "name": "conditionAnd",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "02dc2d9f-d686-421f-8025-56f4c7fef483",
+      "name": "checkAbilityElementType",
+      "elementType": 6,
+      "NodeID": 4
+    },
+    "29": {
+      "UID": "5f2490b6-5135-4de2-a412-e4bf9579efbf",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 29
+    },
+    "6": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "37914f7d-e3a1-4aae-9570-5c187a4d2906",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e9ca3503-a186-41b9-afc0-305cf0cb6431",
+      "effectId": "Eff_Parmon_10603_Skill_Inhale_Debuff",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "19": {
+      "pos": "OWNER",
+      "timelineId": 2160303101,
+      "NodeID": 19,
+      "UID": "515e8984-0763-4afa-954b-0e67ecdb86a3",
+      "maxCount": 5,
+      "destroyOnMasterDead": true,
+      "name": "createSpellField"
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "interval": 1,
+      "UID": "2438d08e-1d11-4769-8965-92813925e864",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 7
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "c808c0d3-402c-4803-a812-177b3165d070",
+      "effectId": "Eff_Parmon_10603_Skill_Inhale_Debuff",
+      "target": "OWNER",
+      "NodeID": 26
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    26
+  ],
+  "onBuffStartIds": [
+    7,
+    25
+  ]
+}

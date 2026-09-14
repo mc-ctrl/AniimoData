@@ -1,0 +1,58 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10076",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": [
+    16
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "00c545c0-ea4b-4f06-b8c8-83ed5838634c",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 29020722,
+      "NodeID": 9,
+      "UID": "f5fcaa48-58f7-4f91-8569-fb61e2839987",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "b787c22c-3246-4907-b27a-29a254c5d261",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        9
+      ]
+    },
+    "6": {
+      "rValue": 0.01,
+      "name": "greater",
+      "UID": "f6700a42-d3cd-44f1-8fcd-b8460b8c23a4",
+      "NodeID": 6,
+      "lValue": {
+        "UID": "71919fe8-1485-4183-b800-453f75a68dbb",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 5
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

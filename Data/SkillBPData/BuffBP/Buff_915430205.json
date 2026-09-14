@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915430205",
+  "name": "大师-护盾",
+  "UID": "37549b6e-8cff-4f95-9138-27f746f81a06",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 915430205,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "ed931185-bc82-4099-a302-8cc9135eed8b",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "5a36925b-37b0-43d3-8671-74cfb482c7e7",
+      "NodeID": 6,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "eee3b698-0cd5-4f38-82d9-d8dcec255a0e",
+        "target": "CASTER",
+        "NodeID": 5,
+        "attributeName": "hp_max_cur"
+      }
+    },
+    "isGeneral": true,
+    "isTeamShare": false
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "13c2f61b-cb15-4896-95b3-6d97c6976f7b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10463_Skill_ShieldEnd",
+      "NodeID": 3
+    },
+    "10": {
+      "isSwitchPetInherit": true,
+      "target": "OWNER",
+      "NodeID": 10,
+      "UID": "c61594a5-cef6-42a4-a6eb-936c2b438d27",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water_break",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "5bd94fcc-06b8-4c6d-a2e2-0e8b77fe7d51",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "8": {
+      "calcId": 915430205,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "ed931185-bc82-4099-a302-8cc9135eed8b",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    10,
+    9,
+    3
+  ],
+  "NodeID": 1
+}

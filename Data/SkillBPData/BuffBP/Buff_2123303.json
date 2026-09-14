@@ -1,0 +1,63 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123303",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "onBuffRefreshIds": [
+    5,
+    8
+  ],
+  "transferGroup": 1,
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "43127856-11f7-4959-b065-a17cb3857260",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 3
+    },
+    "8": {
+      "value": {
+        "calcId": 2123303,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "352050f0-0fdb-4f9e-a56e-6505e38d22e1",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "b0b70610-d590-4f64-870f-3c0b48689cdc",
+      "target": "OWNER",
+      "NodeID": 8,
+      "applyIncRatio": false
+    },
+    "7": {
+      "calcId": 2123303,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "352050f0-0fdb-4f9e-a56e-6505e38d22e1",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "UID": "05140263-140e-42b5-918b-b0f061f305ab",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 2123303,
+        "ep_max_fix": "param0",
+        "type": 1
+      },
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    3
+  ],
+  "onBuffStartIds": [
+    5,
+    8
+  ]
+}

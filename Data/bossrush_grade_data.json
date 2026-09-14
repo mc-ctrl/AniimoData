@@ -1,0 +1,240 @@
+{
+  "5": {
+    "bossHpLossPercent": 0.055766596,
+    "buff": [
+      [
+        4000002,
+        1
+      ]
+    ],
+    "gradeName": "5☆",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "6": {
+    "bossHpLossPercent": 0.069708246,
+    "buff": [
+      [
+        4000002,
+        2
+      ],
+      [
+        4000004,
+        1
+      ]
+    ],
+    "gradeName": "6☆",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "7": {
+    "bossHpLossPercent": 0.085973503,
+    "buff": [
+      [
+        4000002,
+        2
+      ]
+    ],
+    "gradeName": "7☆",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "8": {
+    "bossHpLossPercent": 0.1,
+    "buff": [
+      [
+        4000002,
+        2
+      ]
+    ],
+    "gradeName": "8☆",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "9": {
+    "bossHpLossPercent": 0.13,
+    "buff": [
+      [
+        4000002,
+        3
+      ],
+      [
+        4000001,
+        1
+      ],
+      [
+        4000003,
+        1
+      ]
+    ],
+    "gradeName": "9☆",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "11": {
+    "bossHpLossPercent": 0.2,
+    "buff": [
+      [
+        4000002,
+        3
+      ],
+      [
+        4000003,
+        1
+      ]
+    ],
+    "gradeName": "9☆+2",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "1": {
+    "bossHpLossPercent": 0.009294433,
+    "startScore": 500,
+    "gradeName": "1☆",
+    "hpScore": 500
+  },
+  "12": {
+    "bossHpLossPercent": 0.25,
+    "buff": [
+      [
+        4000002,
+        4
+      ],
+      [
+        4000003,
+        1
+      ],
+      [
+        4000004,
+        1
+      ]
+    ],
+    "gradeName": "9☆+3",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "3": {
+    "bossHpLossPercent": 0.030206906,
+    "buff": [
+      [
+        4000002,
+        1
+      ],
+      [
+        4000004,
+        1
+      ]
+    ],
+    "gradeName": "3☆",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "4": {
+    "bossHpLossPercent": 0.041824947,
+    "buff": [
+      [
+        4000002,
+        1
+      ]
+    ],
+    "gradeName": "4☆",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "14": {
+    "bossHpLossPercent": 0.403258083,
+    "buff": [
+      [
+        4000002,
+        4
+      ],
+      [
+        4000003,
+        1
+      ]
+    ],
+    "gradeName": "9☆+5",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "10": {
+    "bossHpLossPercent": 0.165,
+    "buff": [
+      [
+        4000002,
+        3
+      ],
+      [
+        4000003,
+        1
+      ]
+    ],
+    "gradeName": "9☆+1",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "15": {
+    "bossHpLossPercent": 0.5,
+    "buff": [
+      [
+        4000002,
+        5
+      ],
+      [
+        4000001,
+        1
+      ],
+      [
+        4000003,
+        2
+      ]
+    ],
+    "gradeName": "9☆+6",
+    "hpScore": 500,
+    "startScore": 500
+  },
+  "16": {
+    "bossHpLossPercent": 1,
+    "buff": [
+      [
+        4000002,
+        5
+      ],
+      [
+        4000003,
+        2
+      ]
+    ],
+    "gradeName": "Eliminate",
+    "hpScore": 2500,
+    "startScore": 2500
+  },
+  "2": {
+    "bossHpLossPercent": 0.018588865,
+    "startScore": 500,
+    "gradeName": "2☆",
+    "hpScore": 500
+  },
+  "0": {
+    "bossHpLossPercent": 0,
+    "startScore": 0,
+    "gradeName": "0☆",
+    "hpScore": 0
+  },
+  "13": {
+    "bossHpLossPercent": 0.315310886,
+    "buff": [
+      [
+        4000002,
+        4
+      ],
+      [
+        4000003,
+        1
+      ]
+    ],
+    "gradeName": "9☆+4",
+    "hpScore": 500,
+    "startScore": 500
+  }
+}

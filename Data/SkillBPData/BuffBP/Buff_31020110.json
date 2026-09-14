@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_31020110",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.5
+      },
+      "name": "calcResult",
+      "UID": "071b20b2-cbb3-4e13-a61a-5a136de88e52",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "13": {
+      "UID": "f11f37d9-c577-4434-8053-6e0b4823a162",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8330adfa-f56a-483a-bc9d-28f648ef3e2f",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "12": {
+      "buffId": 31020110,
+      "name": "removeBuff",
+      "UID": "98b9f67d-f033-451f-ac69-ee175f4bc8dd",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cdd078bd-f0ed-4843-8a1c-7588285215db",
+      "target": "CASTER",
+      "NodeID": 10,
+      "animId": "Behav_EatLoop"
+    },
+    "11": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a4772126-3368-4258-8d5b-e85b84a87bc7",
+      "target": "CASTER",
+      "NodeID": 11,
+      "animId": "Behav_EatEnd"
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "64498809-4119-447c-97af-2d94e0af6d2c",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "2": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "8d029a98-17b5-4d6a-b57d-c2a246acd113",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffDestroyIds": [
+    7,
+    11
+  ],
+  "onBuffStartIds": [
+    2,
+    9,
+    10,
+    13
+  ]
+}

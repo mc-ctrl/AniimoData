@@ -1,0 +1,302 @@
+{
+  "91333551": {
+    "owner": "徐梦璇",
+    "chunk": 1019874,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91333567,
+    "levelItems": {
+      "91349675": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否为公主",
+        "position": [
+          3.02,
+          -0.36,
+          11.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91349675,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91373671": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "检测是否不为公主",
+        "position": [
+          9.11,
+          -0.43,
+          -7.67
+        ],
+        "rotation": [
+          0,
+          325.19,
+          0
+        ],
+        "id": 91373671,
+        "componentsInfo": {
+          "52068349": {
+            "expressionKey": "91373671_52068349"
+          },
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          45.13,
+          45.13,
+          45.13
+        ],
+        "isActive": true
+      },
+      "91334202": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否感知到玩家",
+        "position": [
+          5.74,
+          -0.46,
+          -11.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91334202,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91338112": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Trigger_Sphere_SB",
+        "position": [
+          11.51,
+          -0.43,
+          -14.16
+        ],
+        "rotation": [
+          0,
+          325.19,
+          0
+        ],
+        "id": 91338112,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "scale": [
+          8.07,
+          8.07,
+          8.07
+        ],
+        "isActive": true
+      },
+      "91338183": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否打开宝箱",
+        "position": [
+          5.74,
+          -0.46,
+          -11.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91338183,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91338267": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_ChestLocker",
+        "position": [
+          11.29,
+          -0.44,
+          -13.94
+        ],
+        "rotation": [
+          0,
+          332.99,
+          0
+        ],
+        "id": 91338267,
+        "configId": 426,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91342504": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          7.41,
+          38.18,
+          -11.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91342504,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          32.8,
+          1,
+          34.88
+        ],
+        "isActive": true
+      },
+      "91349650": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "检测是否为公主",
+        "position": [
+          9.11,
+          -0.43,
+          -7.67
+        ],
+        "rotation": [
+          0,
+          325.19,
+          0
+        ],
+        "id": 91349650,
+        "componentsInfo": {
+          "52068349": {
+            "expressionKey": "91349650_52068349"
+          },
+          "58801348": {
+            "radius": 0.5
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          45.13,
+          45.13,
+          45.13
+        ],
+        "isActive": true
+      },
+      "91405640": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否击败所有",
+        "position": [
+          5.74,
+          -0.46,
+          -11.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91405640,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 509,
+    "sandBoxLevel": 0,
+    "sandboxType": 7,
+    "name": "12号洞穴内容",
+    "spawners": [
+      91333560,
+      91333701,
+      91333703,
+      91333790,
+      91333799,
+      91333867,
+      91334510,
+      91338077,
+      91338084
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7512/Sandbox_91333551_GraphRef.asset",
+    "sightLevel": 64,
+    "id": 91333551,
+    "markIconSpawnerId": 0,
+    "position": [
+      9.9,
+      -0.44,
+      -12
+    ]
+  }
+}

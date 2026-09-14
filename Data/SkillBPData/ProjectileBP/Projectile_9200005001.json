@@ -1,0 +1,98 @@
+{
+  "duration": 0.5,
+  "BPName": "ability_9200005",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Avatar_Female_Skill_FirstAid_Loop",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0.1,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 45,
+  "nodeMap": {
+    "22": {
+      "actionIds": [
+        24
+      ],
+      "name": "actOnTargets",
+      "UID": "b0391f65-9219-4159-b9e6-2955b882d709",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 22
+    },
+    "24": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "69b6e9f9-db07-45b9-a0fa-ea49ffba958c",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Release",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "27": {
+      "target": "CURPET",
+      "duration": 10,
+      "buffId": 920000501,
+      "NodeID": 27,
+      "UID": "76e12e75-c58d-454e-8dc1-5aa54754ca9b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "7da0419b-18ef-42e0-9ec1-f417b37e91c9",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Loop",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "b047bb9a-76b6-40d7-bb09-f301de254f56",
+      "effectId": "Eff_Avatar_Female_Skill_FirstAid_Loop",
+      "target": "OWNER",
+      "NodeID": 26
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    22,
+    16,
+    26,
+    27
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "maxHitNum": 0,
+  "ignoreAbilityElement": true,
+  "acceleration": 0
+}

@@ -1,0 +1,429 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "sp_regen_p": -1,
+    "sp_inc_rate_v": -1
+  },
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffThinkIds": [
+    50
+  ],
+  "BPName": "buff_2122201",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "epCost": 20,
+      "epCostAddFix": {
+        "rValue": {
+          "calcId": 2122201,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 33,
+          "UID": "0212e2f0-7d18-49a8-a8b5-21ce50245f23",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "8f3511a3-e1c2-45ed-a254-15faf3a75f61",
+        "NodeID": 34,
+        "lValue": -1
+      },
+      "NodeID": 37,
+      "UID": "08e6922e-65c8-4002-8611-e25d37910dce",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": 0,
+      "abilityId": 12220700
+    },
+    "38": {
+      "epCost": 20,
+      "epCostAddFix": {
+        "rValue": {
+          "calcId": 2122201,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 33,
+          "UID": "0212e2f0-7d18-49a8-a8b5-21ce50245f23",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "8f3511a3-e1c2-45ed-a254-15faf3a75f61",
+        "NodeID": 34,
+        "lValue": -1
+      },
+      "NodeID": 38,
+      "UID": "2f8968b7-107d-459c-b39f-50174706b6ae",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": 0,
+      "abilityId": 12220610
+    },
+    "53": {
+      "calcInfo": {
+        "passive_energy_cur": 6
+      },
+      "name": "calcResult",
+      "UID": "56c46bba-60ec-4baa-8eac-8576d52fea0d",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "54": {
+      "buffId": 2122101,
+      "name": "removeBuff",
+      "UID": "0c0650ab-616d-4f7a-b56f-5acdd0fcbce7",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "42": {
+      "calcId": 2122201,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 42,
+      "UID": "eb441fc9-dabb-41e8-b73e-211a1a0fd873",
+      "name": "getParamByLuaConfig"
+    },
+    "35": {
+      "epCost": 20,
+      "epCostAddFix": {
+        "rValue": {
+          "calcId": 2122201,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 33,
+          "UID": "0212e2f0-7d18-49a8-a8b5-21ce50245f23",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "8f3511a3-e1c2-45ed-a254-15faf3a75f61",
+        "NodeID": 34,
+        "lValue": -1
+      },
+      "NodeID": 35,
+      "UID": "7ed194bb-1b29-4ec8-8ca2-8996a91fdbaa",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": 0,
+      "abilityId": 12220500
+    },
+    "44": {
+      "epCost": 20,
+      "epCostAddFix": {
+        "rValue": {
+          "calcId": 2122201,
+          "calcType": 1,
+          "paramName": "param2",
+          "NodeID": 42,
+          "UID": "eb441fc9-dabb-41e8-b73e-211a1a0fd873",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "a39d235e-c32f-4f79-8e28-e5919cfb6f9c",
+        "NodeID": 43,
+        "lValue": -1
+      },
+      "NodeID": 44,
+      "UID": "21c45e31-c370-4a2a-9ac1-a3efb410d5e7",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": 0,
+      "abilityId": 12220504
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "eb1ad7ed-2d19-4a5c-a757-288cbdee73b1",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "switchTag": "Spark",
+      "name": "setModelSwitchTag",
+      "UID": "9d12e61a-5083-408c-92ab-0975ff7228e6",
+      "NodeID": 5,
+      "groupKey": 0
+    },
+    "7": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "697877a1-2ca2-4776-a027-20d46f4f0608",
+      "NodeID": 7,
+      "groupKey": 0
+    },
+    "13": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 13,
+      "UID": "4445fdea-fe69-48ff-aa83-775a34e1e84a",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body_Spark",
+      "name": "playPreset"
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "e6bd3625-448c-489c-811d-dc8d23e48b7c",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "beea183d-41fa-42a2-b51d-835096a85e07",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "c85a72a4-8c31-4b13-888c-6fa7f7567403",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount02",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "32": {
+      "UID": "b8ac0a65-e9b7-4ce0-bfb7-eccc2483e81f",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        35,
+        36,
+        37,
+        38,
+        44,
+        30
+      ],
+      "NodeID": 32
+    },
+    "11": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9073d7ce-877e-4554-bc62-03a08d6a493a",
+      "effectId": "Eff_Parmon_10072_ChargeFur_Biu",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "0407fe2d-ceac-4991-8366-f32a011083d3",
+      "name": "addShieldData",
+      "shieldData": {
+        "absorbRate": 1,
+        "isGeneral": true,
+        "isTeamShare": false,
+        "elementType": 0,
+        "shieldPoint": {
+          "rValue": {
+            "calcId": 2122201,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 21,
+            "UID": "54a7079d-40d5-4090-bddd-05885802781f",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "61ca6a7b-99ce-4c3d-8a68-734915b128ee",
+          "NodeID": 18,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "733419f6-7d02-45f6-b805-3ef7f7527eb1",
+            "target": "OWNER",
+            "NodeID": 17,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "calcId": 2122201,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 21,
+      "UID": "54a7079d-40d5-4090-bddd-05885802781f",
+      "name": "getParamByLuaConfig"
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "43bfbef6-ccdc-4ef7-9f53-87110db485ae",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount03",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "23": {
+      "cameraShakeId": 30404,
+      "name": "playCameraImpulseById",
+      "UID": "30c47973-6961-4abd-8695-982da78120fa",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "45": {
+      "NodeID": 45,
+      "UID": "bf2b9e54-2468-46b9-9e0f-230f8be56bb6",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "14": {
+      "UID": "81ad7877-510e-4e50-ba3d-a5ab09a770d4",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body_Spark",
+      "NodeID": 14
+    },
+    "46": {
+      "epCostAddFix": 0,
+      "epCostAddRatio": 0,
+      "UID": "b65ee78a-f2e9-4c9f-95cc-8ef050766960",
+      "name": "setOverrideAbilityEpCost",
+      "NodeID": 46
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ab4b1452-f232-4dea-9683-9097f1b14c86",
+      "effectId": "Eff_Parmon_10221_Skill_ElectroShield",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "47": {
+      "UID": "4b8e5c81-3285-4169-bc62-bd34da8f9eff",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 47
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "be4cfd25-6436-4645-aa15-2402ca779fcd",
+      "effectId": "Eff_Parmon_10221_Skill_ElectroShield",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "48": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "6bdab0f8-d1bb-4678-8bac-8947d5db3c53",
+      "name": "buffStartThink",
+      "NodeID": 48
+    },
+    "28": {
+      "actionIds": [
+        35,
+        36,
+        37,
+        38,
+        44,
+        30
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "7956ded3-bd33-45ec-a4ae-32d4dee382d8",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "27": {
+      "name": "isInCombat",
+      "UID": "9a167075-2bfc-40b1-bce6-84a9bf703a0b",
+      "target": "OWNER",
+      "NodeID": 27,
+      "not": false
+    },
+    "30": {
+      "NodeID": 30,
+      "UID": "8160c3ef-656e-4b5c-84a1-01dbb170337c",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 2,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "50": {
+      "calcInfo": {
+        "passive_energy_cur": -1
+      },
+      "name": "calcResult",
+      "UID": "b99bd5b6-14c0-4483-bcf1-b120c1a20a99",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "33": {
+      "calcId": 2122201,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 33,
+      "UID": "0212e2f0-7d18-49a8-a8b5-21ce50245f23",
+      "name": "getParamByLuaConfig"
+    },
+    "51": {
+      "UID": "4bdd6704-be4b-4586-a708-95a7951bb524",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 51
+    },
+    "36": {
+      "epCost": 20,
+      "epCostAddFix": {
+        "rValue": {
+          "calcId": 2122201,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 33,
+          "UID": "0212e2f0-7d18-49a8-a8b5-21ce50245f23",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "8f3511a3-e1c2-45ed-a254-15faf3a75f61",
+        "NodeID": 34,
+        "lValue": -1
+      },
+      "NodeID": 36,
+      "UID": "7faf39de-746e-4fc7-8fa2-9783e5c67194",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": 0,
+      "abilityId": 12220600
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    3,
+    7,
+    14,
+    16,
+    24,
+    25,
+    26,
+    45,
+    46,
+    51
+  ],
+  "onBuffStartIds": [
+    11,
+    9,
+    47,
+    13,
+    5,
+    23,
+    15,
+    28,
+    32,
+    48,
+    53,
+    54,
+    20
+  ]
+}

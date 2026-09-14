@@ -1,0 +1,33 @@
+{
+  "84748005": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 84748005,
+    "logics": {},
+    "height": 80,
+    "radius": 55,
+    "sandboxId": 84748009,
+    "position": [
+      -871.14,
+      113.26,
+      1057.57
+    ],
+    "pointType": 1,
+    "name": "区域_山地房车营地"
+  }
+}

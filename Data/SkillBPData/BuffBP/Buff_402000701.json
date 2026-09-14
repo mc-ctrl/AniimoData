@@ -1,0 +1,220 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_402000701",
+  "NodeID": 1,
+  "UID": "766ec944-932c-4930-9d5f-fd03a1b73f88",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    6
+  ],
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    13
+  ],
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "instant_dmg_fix": {
+          "rValue": {
+            "calcId": 402000701,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 11,
+            "UID": "82590c57-c0ee-4200-876e-afad48bad9ae",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "dff9c856-7af1-4b0a-9ca4-67af728e4333",
+          "NodeID": 8,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "629da824-6e3d-4d3c-8f24-266c0a8bcb79",
+            "target": "OWNER",
+            "NodeID": 7,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 5
+      },
+      "UID": "c249a540-0680-4cd1-aff4-6ff8e3670700",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "71a519bd-e39c-4beb-aad7-5d7ee9370a52",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "48ce7f1a-6c4f-4a58-8773-6a29e7e8daa0",
+      "effectId": "Eff_Fire_WithEmbers_torch",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "68c436f6-c869-42c2-b416-3b4e681854b2",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "name": "isInCombat",
+      "UID": "e87c2a27-9e11-46e4-8484-502f166c4bcb",
+      "target": "OWNER",
+      "NodeID": 10,
+      "not": false
+    },
+    "15": {
+      "UID": "5c0db96b-7db4-40a0-b9c8-f452e4aa7ed3",
+      "target": "OWNER",
+      "name": "isTargetActiveForBattle",
+      "NodeID": 15
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "2be58cb8-38c0-46dc-a502-eaca7c87e91d",
+      "effectId": "Eff_Fire_WithEmbers_torch",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "name": "checkElementType",
+      "UID": "a51ae8a6-83b1-410a-b309-6aad52d38558",
+      "target": "OWNER",
+      "NodeID": 16,
+      "elementType": 5
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bcfbb1bc-bcde-4142-9297-d9214819a6f5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10513_Skill_Bullet_Buff",
+      "NodeID": 27
+    },
+    "28": {
+      "name": "stopSoundStr",
+      "UID": "a813d623-93fd-4188-939f-886e7d19b788",
+      "soundId": "SFX_Combat_10513_Skill_Bullet_Buff",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "23": {
+      "calcId": 402000701,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 23,
+      "UID": "1d5d3ee8-9a23-42b5-a271-fe5c56b389c7",
+      "name": "getParamByLuaConfig"
+    },
+    "18": {
+      "calcInfo": {
+        "instant_dmg_fix": {
+          "rValue": {
+            "calcId": 402000701,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 23,
+            "UID": "1d5d3ee8-9a23-42b5-a271-fe5c56b389c7",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "791cc167-5e9e-4b54-b627-43d31715ce60",
+          "NodeID": 21,
+          "lValue": {
+            "rValue": 0.5,
+            "name": "multiply",
+            "UID": "14f96ed9-070b-4c5d-9914-3dcf6169b9d3",
+            "NodeID": 20,
+            "lValue": {
+              "name": "getAttribute",
+              "UID": "5b7db7cf-180f-4734-9b0a-06ddfab2b73b",
+              "target": "OWNER",
+              "NodeID": 19,
+              "attributeName": "hp_max_cur"
+            }
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 5
+      },
+      "UID": "5804d984-ef8e-4b3d-a7fd-3487a4a1bb30",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 18
+    },
+    "13": {
+      "delay": 0,
+      "interval": {
+        "calcId": 402000701,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 12,
+        "UID": "b2be5be5-5113-4cf5-9d02-307a203a4b15",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "d3a66a58-1cb0-4e62-8c88-2264035ce271",
+      "name": "buffStartThink",
+      "NodeID": 13
+    },
+    "11": {
+      "calcId": 402000701,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 11,
+      "UID": "82590c57-c0ee-4200-876e-afad48bad9ae",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "3eec0b48-8589-4551-97e9-47261e8fd87e",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "12": {
+      "calcId": 402000701,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "b2be5be5-5113-4cf5-9d02-307a203a4b15",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    25,
+    28
+  ],
+  "onBuffStartIds": [
+    24,
+    27,
+    13
+  ]
+}

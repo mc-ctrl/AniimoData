@@ -1,0 +1,136 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "47ec7fbe-57d5-470b-b0e0-4f73686b50b7",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "19f70007-bb26-4aed-bf96-47814a21c0aa",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "15": {
+      "UID": "ec50140b-2b94-4adc-8ec7-739a0048846d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 25,
+      "UID": "bbffbfac-0f0b-47c7-b1e8-b46c294b9e4a"
+    },
+    "22": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "d77b1feb-3984-4115-b1d3-f55535ddca43",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "30": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "482ac051-dac5-43b4-8861-46f9282db0b7",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "17": {
+      "UID": "094490a2-b368-41bb-adcb-219885f1f846",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          30,
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "target": "OWNER",
+      "duration": 0.85,
+      "buffId": 10011,
+      "NodeID": 29,
+      "UID": "2d753a46-dc1a-4a24-a487-636ed56ecf29",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cc2829df-6bc5-4808-a71e-696ddad1b60e",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_DropBack"
+    },
+    "32": {
+      "action": {
+        "actionIds": {}
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 32,
+      "UID": "f1c02c0e-8feb-4177-9a05-753d7407cda2"
+    },
+    "5": {
+      "UID": "47842ba9-2bb6-4b27-ac05-f5f8446a70fd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          22,
+          29
+        ]
+      },
+      "NodeID": 5
+    },
+    "20": {
+      "UID": "1da037f7-0576-4df9-8b9f-bef03788e88d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18,
+          21
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a2c3baa4-ffb9-4559-bf6a-93b33bc486ac",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_realse",
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_10120508",
+  "NodeID": 7,
+  "UID": "c6c01d1d-b8bb-4a2c-893a-ca2c9e267bff",
+  "eventIds": [
+    5,
+    17,
+    20,
+    25,
+    32
+  ],
+  "layer": "Base",
+  "length": 0.85
+}

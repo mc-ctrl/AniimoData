@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2163303",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "13bb6a4f-d5c4-44d8-bf6b-aacd92a139dd",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "target": {
+        "UID": "29de9c1e-ce5c-42ba-af70-392392a38c3e",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 3
+      },
+      "duration": 0,
+      "buffId": 2163304,
+      "NodeID": 4,
+      "UID": "932b7e31-8efb-4123-a1a4-b21fc8ae5f40",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "buffId": 2163304,
+      "name": "removeBuff",
+      "UID": "0b794181-751d-4483-abfc-dd3a7abe06f2",
+      "target": {
+        "key": "9163301",
+        "name": "getCacheVal",
+        "UID": "dc17061c-650b-4b70-97d0-218b2b95d768",
+        "target": "OWNER",
+        "NodeID": 8
+      },
+      "NodeID": 9
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "d6a53025-3712-47cd-84c3-a0f49fcc68d3",
+      "NodeID": 6
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "db9650da-2ee1-476e-ac02-bca35b08e8e2",
+      "effectId": "Eff_Parmon_10633_Skill_OutEx_Loop001",
+      "target": "CURPET",
+      "NodeID": 14
+    },
+    "11": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "b6a18bbf-1a6a-482e-8245-497cc89ba9cc",
+      "effectId": "Eff_Parmon_10633_Skill_OutEx_Loop001",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "2a72918e-bbcf-4c94-bddf-02fd3f868217",
+      "effectId": "Eff_Parmon_10633_Skill_OutEx_Loop001",
+      "target": "CURPET",
+      "NodeID": 13
+    },
+    "12": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "d0716e81-b89d-4768-a73a-978d1428b476",
+      "oldPetActionIds": [
+        14
+      ],
+      "NodeID": 12,
+      "newPetActionIds": [
+        11
+      ]
+    }
+  },
+  "onBuffDestroyIds": [
+    13,
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    12,
+    11
+  ]
+}

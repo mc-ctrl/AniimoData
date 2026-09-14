@@ -1,0 +1,76 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4002032",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4ca6d2c4-5b63-459b-b0c2-82522176a3f3",
+      "effectId": "Eff_Parmon_Common_BossRush_FightStart_02",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "702a2e0c-3513-4f72-befc-bea54c5f9052",
+      "name": "callClientAction",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6d8fcef8-4b35-4f4b-9c5f-e805e4580237",
+      "effectId": "Eff_Parmon_Common_BossRush_FightEnd_02",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "05d26976-c7a1-44fe-9509-4814dc3269cf",
+      "effectId": "Eff_Parmon_Common_BossRush_FightStart_02",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 4002032,
+      "name": "removeBuff",
+      "UID": "b359c5c5-dcd7-413b-9bf1-a21148183f5c",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "83bf1993-aef8-4540-9843-451c27b00eeb",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "8": {
+      "UID": "9f775b17-f5e6-458f-bfd8-92cfa8bab9c2",
+      "name": "callClientAction",
+      "actionIds": [
+        6,
+        9
+      ],
+      "NodeID": 8
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    4
+  ]
+}

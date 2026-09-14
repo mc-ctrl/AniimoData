@@ -1,0 +1,46 @@
+{
+  "BPName": "ability_11910100",
+  "NodeID": 1,
+  "UID": "f2e6d1be-7ab4-4474-85eb-f66ad56b59be",
+  "abilityParamId": 10300090,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11910100001,
+      "name": "setCombatActionTimeline",
+      "UID": "48a6e5d6-b622-4bae-a277-c73b48dfd876",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_Entrance",
+    "Skill_Entrance02"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10191_Skill_ShellSmash_Water01",
+    "Eff_Parmon_10191_Skill_ShellSmash_Water",
+    "Eff_Parmon_10191_Skill_ShellSmash_Ground_Water",
+    "Eff_Hit_Water_Blunt_Big",
+    "Eff_Parmon_10191_Passive_L",
+    "Eff_Parmon_10191_Passive_R",
+    "Eff_Parmon_10194_Skill_ShellSmash_Ground_Water"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

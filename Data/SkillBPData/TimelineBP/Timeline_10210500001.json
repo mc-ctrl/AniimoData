@@ -1,0 +1,235 @@
+{
+  "nodeMap": {
+    "6": {
+      "action": {
+        "actionIds": [
+          40,
+          4
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 6,
+      "UID": "dd518e9a-feb2-4895-b130-34d67b79327e"
+    },
+    "31": {
+      "UID": "19384213-6731-465c-8ad6-d57aed22255e",
+      "eventType": "Notify",
+      "time": 1.56,
+      "NodeID": 31
+    },
+    "40": {
+      "UID": "9c1af66a-a031-4cac-8c37-e35dea58a0a3",
+      "effectId": "Eff_Parmon_10021_Helmonbox_Switch_02",
+      "name": "hideEffectThisFrame",
+      "NodeID": 40
+    },
+    "11": {
+      "name": "isInLift",
+      "UID": "b785745a-ecca-4efb-8f43-b98e82ead45a",
+      "target": "OWNER",
+      "NodeID": 11,
+      "not": false
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "53e1967d-29a6-4bd1-81a8-e1e114f3efa9",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.81,
+      "NodeID": 21,
+      "UID": "05f2bd81-a142-4939-b26f-a045107bddaf"
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 33,
+      "UID": "951abe3d-9987-4084-ad85-4e1f7131490e"
+    },
+    "4": {
+      "name": "swapPositionWithVirtualEntity",
+      "edgeDetectTime": 2.5,
+      "NodeID": 4,
+      "UID": "79314466-faa6-43a7-bb8a-bf9945191884",
+      "forbidMoveTime": 0.75,
+      "lerpTime": 2.3,
+      "entityId": {
+        "UID": "67f301ff-0fe9-4bde-849a-b2979408320f",
+        "name": "getCacheVal",
+        "key": "shadowEntityId",
+        "NodeID": 3
+      }
+    },
+    "24": {
+      "key": "HelmonBoxValue",
+      "name": "setServerCacheVal",
+      "UID": "a23439c3-9a4d-4e7a-8e83-b929dd7c59da",
+      "val": 1,
+      "NodeID": 24
+    },
+    "14": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a43bd0d6-4fc0-4244-8b79-47675e749b39",
+      "target": "OWNER",
+      "NodeID": 14,
+      "animId": "TimeTravelGrab"
+    },
+    "12": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "104d0d50-b5ab-45e5-a6b8-956586e232a6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        15
+      ],
+      "NodeID": 12
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7822c0dc-8c5f-4813-a946-f5009cc8c2ea",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "TimeTravelSkill"
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2c38f600-0194-41a6-bab7-60b5c8e93952",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_ACT_Helmon_TimeTravel",
+      "NodeID": 25
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 26,
+      "UID": "2f6edc95-995e-4ebd-a3ad-c54b4258db80"
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4f8fcf1a-0f46-4fcc-acbb-e5d70c3dadc3",
+      "effectId": "Eff_Parmon_10021_Helmonbox_Switch_02",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "b41eeafc-981a-4ad2-be64-edc638628ec5",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 17
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.33333,
+      "NodeID": 28,
+      "UID": "072bf1d2-e4da-4bbd-9c7c-b95c7e632f9a"
+    },
+    "18": {
+      "UID": "5dd9b723-f68a-4a63-b8cd-4d1c115ee899",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "name": "dropEffectStr",
+      "UID": "987f589c-a59c-4e61-835d-71796323e6f9",
+      "effectId": "Eff_Parmon_10021_Helmonbox_Switch_03",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "key": "HelmonBoxValue",
+      "name": "setServerCacheVal",
+      "UID": "e5a23501-28f3-48d9-b548-a85007d44899",
+      "val": 0,
+      "NodeID": 19
+    },
+    "13": {
+      "UID": "0fdae503-1a31-45ce-a063-2215ed5f0474",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "23": {
+      "rValue": {
+        "UID": "7b11f38d-19f6-48c1-abb1-228715e630b8",
+        "name": "getServerCacheVal",
+        "key": "HelmonBoxValue",
+        "NodeID": 22
+      },
+      "name": "equal",
+      "UID": "5fd4f0ae-42b3-449d-a0a6-b2972910a207",
+      "NodeID": 23,
+      "lValue": 1
+    }
+  },
+  "BPName": "ability_10210500",
+  "NodeID": 8,
+  "UID": "735303ae-12ab-479a-8166-e434662d0319",
+  "eventIds": [
+    13,
+    6,
+    18,
+    21,
+    26,
+    28,
+    31,
+    33
+  ],
+  "layer": "Base",
+  "length": 1.65
+}

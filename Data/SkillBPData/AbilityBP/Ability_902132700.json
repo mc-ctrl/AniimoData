@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_902132700",
+  "NodeID": 1,
+  "UID": "8e3c3b93-6299-4253-8dc7-01b469c2329a",
+  "abilityParamId": 49226010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902132700001,
+      "name": "setCombatActionTimeline",
+      "UID": "7559cb89-4e15-496c-8e86-1ecff00f4fe7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Green_Start",
+    "Skill_Green_End"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Attack_Teleport_Absorb",
+    "Eff_Monster_90213_Mon_Attack_Teleport_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 60,
+  "searchTargetRangeUp": 20,
+  "searchTargetRangeDown": 20
+}

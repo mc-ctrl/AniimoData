@@ -1,0 +1,186 @@
+{
+  "duration": 0.55,
+  "BPName": "ability_10450201",
+  "NodeID": 73,
+  "destroyOnHit": false,
+  "ignoreAbilityElement": true,
+  "effectTimeInitOffset": 0,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "effectId": "Eff_Parmon_10043_Skill_Bubble_Large_New_S",
+  "maxHitNum": 1,
+  "defaultHitSoundType": "s",
+  "nodeMap": {
+    "58": {
+      "pos": "TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "6c9e6c1f-a907-4fde-979c-8c25aca00ba5",
+      "effectId": "Eff_Parmon_10043_Skill_Bubble_Creation_01_New",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "70": {
+      "needEcs": true,
+      "UID": "7fbebd0c-79d9-4982-8882-63d68b27de65",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "NodeID": 70,
+      "name": "actOnTargets"
+    },
+    "59": {
+      "UID": "943dbf52-d2a0-450a-bca0-c00896d618b5",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 59
+    },
+    "63": {
+      "pos": {
+        "UID": "1488edbf-fc61-4a37-a334-e34cc8582548",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "723688bc-1019-48ee-8793-07e575a88e6b",
+          "name": "getProjectilePos",
+          "NodeID": 61
+        },
+        "NodeID": 62
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "292aeaef-1566-4400-bf3d-6a5f538da793",
+      "effectId": "Eff_Parmon_10043_Skill_Bubble_Creation_01_New",
+      "speed": 1,
+      "NodeID": 63
+    },
+    "46": {
+      "actionIds": [
+        58,
+        44
+      ],
+      "conditionActionIds": [
+        59
+      ],
+      "UID": "d2c0fd45-a4b6-4e89-a8d8-3254ac8922ec",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        63,
+        70,
+        65
+      ],
+      "NodeID": 46
+    },
+    "42": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 3000,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10043_Attack01_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": 10005
+      },
+      "UID": "ae62d979-c15c-4207-ba2c-b8ebc454b81a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 42
+    },
+    "65": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "3075f6c0-52d5-4a3d-b59e-fb4c251928b4",
+      "effectId": "Eff_Parmon_10043_Attack01_Hit",
+      "speed": 1,
+      "NodeID": 65
+    },
+    "44": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 42,
+      "NodeID": 44,
+      "UID": "565219dd-1c47-44d8-9cf0-6e0ff9699617",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        42
+      ]
+    }
+  },
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    46
+  ],
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 99999,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "tickInterval": 0,
+  "nextTemplateId": 10450201001,
+  "calcResultNodeId": 42,
+  "UID": "0197354b-5d9e-494e-96c0-94d05fd55dcc",
+  "groundSweepRadius": 0.2,
+  "impulseId": 3000,
+  "acceleration": 0
+}

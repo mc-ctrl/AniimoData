@@ -1,0 +1,84 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2146306",
+  "NodeID": 1,
+  "UID": "d1822160-e693-4771-9952-029877be62f5",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "calcInfo": {
+        "dmg_ice_add_ratio": {
+          "rValue": {
+            "rValue": {
+              "rValue": {
+                "name": "getAttribute",
+                "UID": "cee48072-adc6-4506-a091-c590491f06b7",
+                "target": "OWNER",
+                "NodeID": 3,
+                "attributeName": "hp_max_cur"
+              },
+              "name": "div",
+              "UID": "61f1ebc3-a23c-485f-849e-2f6ecfe4893e",
+              "NodeID": 4,
+              "lValue": {
+                "name": "getAttribute",
+                "UID": "434ec9c0-e3a5-4bda-8fa1-af71463967dd",
+                "target": "OWNER",
+                "NodeID": 10,
+                "attributeName": "hp_cur"
+              }
+            },
+            "name": "sub",
+            "UID": "e908dcff-132c-4f37-b7da-d08814b282ba",
+            "NodeID": 5,
+            "lValue": 1
+          },
+          "name": "multiply",
+          "UID": "0da8ee53-ec4c-4be7-986d-95fc0514a27c",
+          "NodeID": 6,
+          "lValue": 0.3
+        }
+      },
+      "name": "addDynamicAttribute",
+      "UID": "386cb51b-a903-4022-ac3b-6d8deb9733fa",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "cee48072-adc6-4506-a091-c590491f06b7",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      },
+      "name": "div",
+      "UID": "61f1ebc3-a23c-485f-849e-2f6ecfe4893e",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "434ec9c0-e3a5-4bda-8fa1-af71463967dd",
+        "target": "OWNER",
+        "NodeID": 10,
+        "attributeName": "hp_cur"
+      }
+    },
+    "11": {
+      "UID": "3840d287-7d34-4df9-b3d3-2c82725e70a5",
+      "target": "OWNER",
+      "name": "clearDynamicAttribute",
+      "NodeID": 11
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    11
+  ],
+  "onBuffStartIds": [
+    8
+  ]
+}

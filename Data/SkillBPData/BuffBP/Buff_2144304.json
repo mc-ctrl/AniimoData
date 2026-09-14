@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2144304",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e5d03959-865e-4f8f-9b89-f60da90fe7dc",
+      "effectId": "Eff_Parmon_10443_OutEx_Buff_01",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "a4139df0-a9ff-44c8-b97d-763819add83c",
+      "effectId": "Eff_Parmon_10443_Skill_Sonar_Weakness_01",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0d3328ca-c345-4826-a930-fca73190ce74",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10443_Skill_Sonar04",
+      "NodeID": 5
+    },
+    "15": {
+      "calcId": 2144304,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 15,
+      "UID": "0aca55fb-d096-4bc5-aa64-5db03145c994",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "key": "2",
+      "duration": 1,
+      "actionIds": [
+        16,
+        5,
+        8
+      ],
+      "NodeID": 7,
+      "UID": "3ea8fa5a-c22d-44bd-8784-4186090b3a39",
+      "name": "addTimer"
+    },
+    "16": {
+      "target": "OWNER",
+      "duration": {
+        "calcId": 2144304,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 15,
+        "UID": "0aca55fb-d096-4bc5-aa64-5db03145c994",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 2144301,
+      "NodeID": 16,
+      "UID": "40d14526-7e82-41fa-b925-e6979351ae0b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7
+  ]
+}

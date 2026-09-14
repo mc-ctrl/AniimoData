@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10121810",
+  "NodeID": 1,
+  "UID": "73fa7522-2017-4a7a-baeb-5ab32b013db6",
+  "desc": "方阵弹幕",
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10121810001,
+      "name": "setCombatActionTimeline",
+      "UID": "7dd3efe0-86b9-4f89-a63b-64ae0532e691",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Attack_Hands_01_R",
+    "Eff_Parmon_10012_Boss_Warning",
+    "Eff_Parmon_10011_Skill_Charm_Creation",
+    "Eff_Parmon_10012_Skill_Charm_Bullet_02_Rogue"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "shortDesc": "方阵弹幕",
+  "abilityParamId": 51012032,
+  "name": "方阵弹幕"
+}

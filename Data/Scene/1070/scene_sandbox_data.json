@@ -1,0 +1,192 @@
+{
+  "78323844": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 80099267,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "Level_Prepare",
+    "sightLevelType": 128,
+    "spawners": [
+      78796006,
+      80123369
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1070/Sandbox_78323844_GraphRef.asset",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "邵海东",
+    "id": 78323844,
+    "keepGraphOnFinished": false,
+    "levelItems": {}
+  },
+  "78323855": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 79225541,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "Level_MiniGame_01",
+    "sightLevelType": 64,
+    "spawners": [
+      78796790,
+      79249752,
+      79249756
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 40,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1070/Sandbox_78323855_GraphRef.asset",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "邵海东",
+    "id": 78323855,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "79225619": {
+        "majorCompId": 0,
+        "owner": "邵海东",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 79225619,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "78323852": {
+    "owner": "邵海东",
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 78824533,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "Level_Boss",
+    "spawners": [
+      78797760,
+      84041988,
+      91155507,
+      91155510,
+      91155512
+    ],
+    "activeOnInit": 4,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1070/Sandbox_78323852_GraphRef.asset",
+    "sightLevel": 40,
+    "id": 78323852,
+    "markIconSpawnerId": 0,
+    "position": [
+      0,
+      0,
+      0
+    ]
+  },
+  "78323857": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 79352085,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "Level_MiniGame_02",
+    "sightLevelType": 64,
+    "spawners": [
+      79337686,
+      79337688,
+      79337690
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 4,
+    "sightLevel": 40,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1070/Sandbox_78323857_GraphRef.asset",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "邵海东",
+    "id": 78323857,
+    "keepGraphOnFinished": false,
+    "levelItems": {}
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "90842154": {
+    "type": 2,
+    "value": 40,
+    "useHUDTarget": 1,
+    "txt": 1171128943
+  },
+  "91041073": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 1,
+    "txt": 1251315467
+  },
+  "91117244": {
+    "type": 2,
+    "value": 90,
+    "useHUDTarget": 1,
+    "txt": 1619281334
+  },
+  "91168498": {
+    "type": 2,
+    "value": 30,
+    "useHUDTarget": 1,
+    "txt": 1260132245
+  },
+  "723070496": {
+    "type": 1,
+    "value": 35,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Celestis_2"
+  },
+  "787866568": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Budsquire_2"
+  },
+  "911052446": {
+    "type": 2,
+    "value": 1,
+    "useHUDTarget": 0,
+    "txt": "RoundTimeTest"
+  },
+  "5500660551": {
+    "type": 2,
+    "value": 50,
+    "useHUDTarget": 0,
+    "txt": "       "
+  },
+  "6026219154": {
+    "type": 2,
+    "value": 45,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Shelly_2"
+  },
+  "7878665612": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Budsquire_2"
+  },
+  "7878665616": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Budsquire_2"
+  },
+  "7941344512": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 0,
+    "txt": " "
+  },
+  "8090177712": {
+    "type": 2,
+    "value": 120,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Mimbi_1"
+  },
+  "8746078624": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Susuta_2"
+  },
+  "1": {
+    "type": 2,
+    "value": 120,
+    "txt": 1313447382
+  },
+  "72439525": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 60
+  },
+  "72436389": {
+    "type": 2,
+    "value": 50,
+    "txt": 1771194746
+  },
+  "72280790": {
+    "type": 2,
+    "value": 80,
+    "txt": 1759716022
+  },
+  "72038401": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 80
+  },
+  "900004": {
+    "type": 2,
+    "value": 90,
+    "txt": 1195625254
+  },
+  "800101": {
+    "type": 2,
+    "value": 999,
+    "useHUDTarget": 1,
+    "event": {
+      "10": [
+        2003
+      ],
+      "20": [
+        3002
+      ]
+    }
+  },
+  "48198169": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 70
+  },
+  "54502175": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 40
+  },
+  "58189698": {
+    "type": 2,
+    "value": 17,
+    "txt": 1832439217
+  },
+  "58719870": {
+    "type": 2,
+    "value": 17,
+    "useHUDTarget": 1,
+    "txt": 1959784736
+  },
+  "58728102": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 40
+  },
+  "58734459": {
+    "type": 2,
+    "value": 18,
+    "txt": 1251768951
+  },
+  "59308849": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 35
+  },
+  "59419477": {
+    "type": 2,
+    "value": 20,
+    "txt": 1325222766
+  },
+  "59654656": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 20
+  },
+  "61815600": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 60
+  },
+  "62021521": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 40
+  },
+  "63473179": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 60
+  },
+  "64604861": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 40
+  },
+  "66081282": {
+    "type": 2,
+    "value": 40,
+    "txt": 1214304307
+  },
+  "72035444": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 12
+  },
+  "900003": {
+    "type": 2,
+    "value": 35,
+    "txt": 1797324178
+  },
+  "72200131": {
+    "type": 2,
+    "value": 20,
+    "txt": 1860406850
+  },
+  "900005": {
+    "type": 2,
+    "value": 40,
+    "txt": 1774157570
+  },
+  "900006": {
+    "type": 2,
+    "value": 150,
+    "txt": 1264085215
+  },
+  "900007": {
+    "type": 2,
+    "value": 60,
+    "txt": 1653816336
+  },
+  "72503526": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 60
+  },
+  "72507155": {
+    "type": 2,
+    "value": 25,
+    "txt": 1391056336
+  },
+  "72532411": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 24
+  },
+  "72565912": {
+    "type": 2,
+    "value": 40,
+    "txt": 1152094461
+  },
+  "72575194": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 30
+  },
+  "72589930": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 20
+  },
+  "72595894": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 30
+  },
+  "79758798": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 60
+  },
+  "81260925": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 14
+  },
+  "84757792": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 45
+  },
+  "86305763": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 30
+  },
+  "88591866": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 40
+  },
+  "89381920": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 40
+  },
+  "89682830": {
+    "type": 2,
+    "useHUDTarget": 1,
+    "value": 13
+  }
+}

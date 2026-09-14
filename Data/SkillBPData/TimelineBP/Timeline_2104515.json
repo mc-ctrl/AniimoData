@@ -1,0 +1,70 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "UID": "1a4fc254-e8ec-4ba8-89e8-25a7570973d5",
+      "name": "destroyEntity",
+      "NodeID": 8
+    },
+    "4": {
+      "duration": 3,
+      "NodeID": 4,
+      "UID": "669a4a6e-4d64-469d-b686-cadabaeaefc1",
+      "target": "OWNER",
+      "speed": 5,
+      "trackTarget": false,
+      "ignoreKnockST": false,
+      "name": "forceDisplacement",
+      "ignoreCollision": false,
+      "displacementTarget": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "2bfa37ff-6ceb-47a0-aec5-c4d4df53f366",
+        "target": "MASTER",
+        "NodeID": 3
+      },
+      "displacementDir": "OUT",
+      "ignoreYAxis": false,
+      "selfTogether": true
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 9,
+      "UID": "ecd68f03-7e7e-4fbd-b588-9a29c45accdc"
+    },
+    "6": {
+      "UID": "336c1a6a-1907-4c9b-9342-b53591870f76",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          10
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c9cb351c-ef3f-4005-9faa-e3996c436d89",
+      "effectId": "Eff_Monster_80023_Mon_Skill_StableFireSpar",
+      "speed": 1,
+      "NodeID": 10
+    }
+  },
+  "BPName": "timeline_2104515",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    6,
+    9
+  ],
+  "layer": "Base",
+  "length": 9999
+}

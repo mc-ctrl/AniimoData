@@ -1,0 +1,74 @@
+{
+  "10000043": {
+    "mapMarkStaticId": {
+      "91353627": 0
+    },
+    "sandBoxList": [
+      91353627
+    ],
+    "sceneId": 3000
+  },
+  "10000060": {
+    "mapMarkStaticId": {
+      "91338158": 0,
+      "91354437": 0,
+      "91353198": 0,
+      "91353627": 0
+    },
+    "sandBoxList": [
+      91353627,
+      91338157,
+      91353197,
+      91338497
+    ],
+    "sceneId": 3000
+  },
+  "10000044": {
+    "mapMarkStaticId": {
+      "91338158": 0
+    },
+    "sandBoxList": [
+      91338157
+    ],
+    "sceneId": 3000
+  },
+  "10000059": {
+    "mapMarkStaticId": {
+      "91354437": 0
+    },
+    "sandBoxList": [
+      91338497
+    ],
+    "sceneId": 3000
+  },
+  "10000010": {
+    "mapMarkStaticId": {
+      "91354442": 0
+    },
+    "sandBoxList": [
+      91338550
+    ],
+    "sceneId": 3000
+  },
+  "10000058": {
+    "mapMarkStaticId": {
+      "91353198": 0
+    },
+    "sandBoxList": [
+      91353197
+    ],
+    "sceneId": 3000
+  },
+  "10000029": {
+    "mapMarkStaticId": {
+      "91121960": 107
+    },
+    "sceneId": 3000,
+    "sandBoxList": [
+      91046805
+    ],
+    "condition": [
+      10000014
+    ]
+  }
+}

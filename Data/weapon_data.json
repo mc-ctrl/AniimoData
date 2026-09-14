@@ -1,0 +1,62 @@
+{
+  "1990002": {
+    "normalAtkAbilityId": 10010005,
+    "rotation": [
+      {},
+      [
+        0,
+        150,
+        180
+      ]
+    ],
+    "offset": [
+      {},
+      [
+        -0.05,
+        -0.05,
+        0
+      ]
+    ],
+    "prefab": "P_Equip_Avatar_Claymore_Test",
+    "skillAbility2Id": 99999,
+    "skillAbilityId": 10010011,
+    "stateHps": [
+      [
+        "",
+        "Bip001 R Hand"
+      ]
+    ],
+    "weaponRangeType": "Range",
+    "weaponType": "Claymore"
+  },
+  "1990001": {
+    "normalAtkAbilityId": 10010005,
+    "rotation": [
+      {},
+      [
+        -195,
+        -6,
+        -72
+      ]
+    ],
+    "offset": [
+      {},
+      [
+        -0.06,
+        0,
+        0
+      ]
+    ],
+    "prefab": "P_Equip_Avatar_Bow_01",
+    "skillAbility2Id": 99999,
+    "skillAbilityId": 10010011,
+    "stateHps": [
+      [
+        "",
+        "Bip001 L Hand"
+      ]
+    ],
+    "weaponRangeType": "Range",
+    "weaponType": "Bow"
+  }
+}

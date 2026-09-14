@@ -1,0 +1,25 @@
+{
+  "23": {
+    "key": "23",
+    "partId": 23,
+    "order": 0,
+    "originDisplayName": "基础",
+    "displayName": 47622986,
+    "kindList": {
+      "M_Avatar_Girl_NPC_Hair_G10003": {
+        "key": "M_Avatar_Girl_NPC_Hair_G10003",
+        "reaction": {
+          "key": 7630,
+          "bones": {},
+          "colors": {
+            "baseColor": {
+              "tIndex": 2,
+              "displayName": 41749054,
+              "opName": 21
+            }
+          }
+        }
+      }
+    }
+  }
+}

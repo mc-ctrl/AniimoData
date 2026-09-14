@@ -1,0 +1,39 @@
+{
+  "cutSceneDuration": 2.2,
+  "NodeID": 1,
+  "UID": "71eeed9b-f8e3-4347-acf3-a6c901c58bca",
+  "abilityParamId": 10900430,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12329900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2fc7fe5-f2ed-49ff-84a8-30877442f08d",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10232_Skill_Ex_04",
+    "Eff_Parmon_10232_Skill_Ex_06"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 1.5,
+  "BPName": "ability_12329900",
+  "preloadCutScenes": [
+    "$Parmon_10232_Skill_Ex_Timeline.prefab"
+  ]
+}

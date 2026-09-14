@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_10269901",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "abilityParamId": 11200161,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10269901001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 6,
+  "preloadAnims": [
+    "Skill_Ex_02"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Slash_Big",
+    "Eff_Parmon_10026_Skill_InEx_New_Crystal_01",
+    "Eff_Parmon_10026_Skill_InEx_New_Crystal_02",
+    "Eff_Parmon_10026_Skill_InEx_New_Crystal_03",
+    "Eff_Parmon_10026_Skill_Ex_New_Absorb"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

@@ -1,0 +1,211 @@
+{
+  "nodeMap": {
+    "37": {
+      "UID": "3a34a90d-986b-48d3-81d1-960482bb3b85",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "NodeID": 37
+    },
+    "39": {
+      "UID": "d7907066-9c4e-4aa5-8c2d-5e81792bfdd9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 39
+    },
+    "41": {
+      "UID": "7ddd1c8d-5997-404f-b2bd-5ee9760b37fa",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "NodeID": 41
+    },
+    "43": {
+      "UID": "e4e475dc-1c8b-4a40-9029-678e2d67748d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 43
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 45,
+      "UID": "1223b830-215d-4a27-9e89-9709858216b4"
+    },
+    "46": {
+      "UID": "cc3fd353-125b-441a-9da7-84d336864429",
+      "name": "stopBurrow",
+      "NodeID": 46
+    },
+    "62": {
+      "UID": "f64394be-a7a4-4eeb-9a51-f74f9b56b002",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          60
+        ]
+      },
+      "NodeID": 62
+    },
+    "57": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "debc880d-6967-4a7e-8765-20c968fd1e6a",
+      "target": "OWNER",
+      "NodeID": 57,
+      "animId": "Skill_BurrowSkill_CombatExit"
+    },
+    "35": {
+      "UID": "c07bee34-91b0-42a9-b187-4afdb4c6d7cf",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 35
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8323026e-744c-4a66-a1cb-1e0fdd38f2a8",
+      "isAbilityEndRemove": false,
+      "soundId": "Ani_Parmon_10161_Skill_BurrowSkill_CombatExit",
+      "NodeID": 58
+    },
+    "50": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 48,
+      "NodeID": 50,
+      "UID": "fe4e05e9-0768-42c5-b49f-c606a8dcd213",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.2,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3001,
+      "actionIds": [
+        48
+      ]
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0c80ba07-6dc0-4f04-8eb2-f334596d73db",
+      "effectId": "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit",
+      "speed": 1,
+      "NodeID": 59
+    },
+    "48": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_helgon_attack05",
+        "hitCameraShakeId": 10003,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 3001
+      },
+      "UID": "758563f2-b8e0-4971-8ec4-cf50c80967b5",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 48
+    },
+    "60": {
+      "name": "setSkillHitDistance",
+      "UID": "159ea9ba-bc5d-4cea-90f9-b0c470ed42ce",
+      "skillHitDisplacementId": 1008,
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          46,
+          27,
+          57,
+          58,
+          59
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 29,
+      "UID": "8dca78a2-8b4f-44a5-807a-968a5f646116"
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.12,
+      "NodeID": 51,
+      "UID": "3f9a73ec-16bc-4739-b2cd-0dd666418bab"
+    },
+    "27": {
+      "buffId": 2116101,
+      "name": "removeBuff",
+      "UID": "9afcdcc5-a0f7-443f-a045-fa0b24fc3e3e",
+      "target": "OWNER",
+      "NodeID": 27
+    }
+  },
+  "BPName": "ability_12850700",
+  "NodeID": 31,
+  "UID": "118a3034-f22a-404e-a362-34e089ead524",
+  "eventIds": [
+    37,
+    41,
+    45,
+    29,
+    51,
+    62
+  ],
+  "layer": "Base",
+  "length": 2.667
+}

@@ -1,0 +1,43 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_31020101",
+  "NodeID": 1,
+  "UID": "c94c439c-97c0-4945-95f4-64074a446ba4",
+  "desc": "地鼠走调草监听受击/冲量",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "cf35294f-5f65-4042-8289-aab1ef8e2a11",
+      "name": "replaceHitEffect",
+      "effect": "Eff_Hit_None_Blunt",
+      "NodeID": 3
+    },
+    "5": {
+      "target": "OWNER",
+      "duration": 60,
+      "buffId": 10017,
+      "NodeID": 5,
+      "UID": "ceb1b1b5-2f02-444b-88b3-4725dbb96ddd",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "UID": "166276ed-981e-4a3e-841e-e8699c51e51a",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    }
+  },
+  "name": "地鼠走调草监听受击/冲量",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    3
+  ]
+}

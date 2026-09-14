@@ -1,0 +1,132 @@
+{
+  "refControlPoint": [
+    [
+      4,
+      2,
+      2.5
+    ],
+    [
+      -4,
+      4,
+      8
+    ]
+  ],
+  "duration": 3,
+  "calcResultNodeId": 54,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10213_Attack01_01",
+  "nodeMap": {
+    "58": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b7f1f4ce-42c3-461e-b0e5-a1f1f63d1e69",
+      "effectId": "Eff_Parmon_10213_Skill_Hit",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "31": {
+      "UID": "d23a6625-e536-41c3-9ca6-6b2abada8916",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 31
+    },
+    "62": {
+      "targetPos": {
+        "UID": "fe0b14e0-edcd-4343-a4a3-0b85a6475356",
+        "target": "PROJECTILE",
+        "name": "getTargetPosition",
+        "NodeID": 61
+      },
+      "name": "playSoundAtPos",
+      "UID": "13fc5f40-d03a-4614-8599-f3be83f50c33",
+      "soundId": "SFX_Parmon_10213_Attack_Hit01",
+      "NodeID": 62
+    },
+    "32": {
+      "actionIds": [
+        42
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "c9864653-3f00-44a7-bfca-5461bfd1dcc6",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "42": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.7
+      },
+      "name": "calcResult",
+      "UID": "c01c4189-d6a9-402d-a177-2f604b917cec",
+      "target": "CASTER",
+      "NodeID": 42
+    },
+    "61": {
+      "UID": "fe0b14e0-edcd-4343-a4a3-0b85a6475356",
+      "target": "PROJECTILE",
+      "name": "getTargetPosition",
+      "NodeID": 61
+    },
+    "54": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12130001,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "db5339a3-691c-4951-9b55-87ce7ce2908b",
+      "target": "TARGET",
+      "NodeID": 54,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100
+      }
+    }
+  },
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "BezierCurve",
+  "refTargetPoint": [
+    0,
+    1,
+    15
+  ],
+  "maxHitNum": 1,
+  "maxMoveSpeed": 20,
+  "autoSwitchTrack": true,
+  "moveSpeed": 14,
+  "onProjectileFinishIds": [
+    62,
+    58
+  ],
+  "onProjectileHitIds": [
+    54,
+    32
+  ],
+  "performRatio": 0.8,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "refStartPoint": [
+    0,
+    1.7,
+    0.8
+  ],
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "BPName": "ability_12130001",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 2
+}

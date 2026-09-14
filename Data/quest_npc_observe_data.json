@@ -1,0 +1,44 @@
+{
+  "3": {
+    "dialogue": 651801,
+    "includeClues": [
+      301,
+      302,
+      303
+    ],
+    "refVar": 1136,
+    "rightClue": 303
+  },
+  "4": {
+    "dialogue": 5608404,
+    "includeClues": [
+      401,
+      402,
+      403,
+      404
+    ],
+    "refVar": 1138,
+    "rightClue": 404
+  },
+  "5": {
+    "dialogue": 26060134,
+    "includeClues": [
+      501,
+      502,
+      503,
+      504
+    ],
+    "refVar": 1139,
+    "rightClue": 504
+  },
+  "2": {
+    "dialogue": 651701,
+    "includeClues": [
+      201,
+      202,
+      203
+    ],
+    "refVar": 1133,
+    "rightClue": 203
+  }
+}

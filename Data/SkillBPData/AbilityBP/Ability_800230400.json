@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_800230400",
+  "NodeID": 1,
+  "UID": "34c7b4a7-ba2f-4bb0-9af5-3f3d084970b1",
+  "abilityParamId": 10500220,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 800230400001,
+      "name": "setCombatActionTimeline",
+      "UID": "da757e96-5c4c-4855-89dd-236f12edb6f1",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Monster_Longbreath"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dragon_Blunt",
+    "Eff_Monster_80023_Mon_Skill_Longbreath_Fire",
+    "Eff_Monster_80023_Mon_Skill_Longbreath_Absorb"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "selectPos": 1,
+  "searchTargetRangeDown": 1,
+  "onlyHasActOnTargets": true,
+  "desc": "",
+  "refBones": [
+    "Bone M Tongue 02"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "duration": 0.1,
+  "BPName": "ability_13710220",
+  "NodeID": 167,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10371_Skill_Tail_Light",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "calcResultNodeId": 146,
+  "moveSpeed": 15,
+  "rotation": "ToPos",
+  "onProjectileHitIds": [
+    146,
+    213,
+    237
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "237": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "42719c1d-91ca-40e5-85fb-db026eab322b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Fox_Skill_Hit",
+      "NodeID": 237
+    },
+    "146": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13710220,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "2f42fd0b-7a3a-4e51-893c-072c1ac9c3cb",
+      "target": "TARGET",
+      "NodeID": 146,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 1000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "213": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2137105,
+      "NodeID": 213,
+      "UID": "0a7b9678-822f-4de0-9497-1fef4870ce94",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "tickInterval": 0,
+  "nextTemplateId": 13710220003,
+  "UID": "ba0e1ff3-8ea3-4a4e-8b9c-fdbcdb1f0ee8",
+  "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

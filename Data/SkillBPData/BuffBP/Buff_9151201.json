@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9151201",
+  "name": "击拳尾-普通特性",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "使用5秒内使用普攻会直接施放普攻最后一段攻击",
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "UID": "ca2452f7-fd5f-42ec-8886-3fe67323653a",
+      "show": true,
+      "name": "setNormalAttackShow",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

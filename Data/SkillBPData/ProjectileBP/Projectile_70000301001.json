@@ -1,0 +1,111 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 90,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": {
+    "str": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_ShockWave_",
+    "name": "constString",
+    "UID": "62bf6214-9512-4d37-bd26-4a4fa22522e2",
+    "NodeID": 112,
+    "concatenateNumber": {
+      "UID": "d02e0560-254c-4da7-a315-452713d70334",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 111
+    }
+  },
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "116": {
+      "offsetXYZ": [
+        0,
+        0.15,
+        0
+      ],
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "c3c108f1-a6a7-46ed-97be-0dc938c07583",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Hit_",
+        "name": "constString",
+        "UID": "099c1b30-da3d-45ae-a8bb-53b94b6b7ab2",
+        "NodeID": 115,
+        "concatenateNumber": {
+          "UID": "7e5cfe9c-507f-4bac-a04f-0fb4b030898e",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 114
+        }
+      },
+      "speed": 1,
+      "NodeID": 116
+    },
+    "105": {
+      "target": "TARGET",
+      "duration": 2,
+      "buffId": 270010006,
+      "NodeID": 105,
+      "UID": "dbac52cb-e143-41df-aeaf-151e7793c855",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "114": {
+      "UID": "7e5cfe9c-507f-4bac-a04f-0fb4b030898e",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 114
+    },
+    "90": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 3
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "e905ff10-0923-47a4-824d-0733c2409e68",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 90
+    },
+    "111": {
+      "UID": "d02e0560-254c-4da7-a315-452713d70334",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 111
+    }
+  },
+  "maxHitNum": 99,
+  "maxHeightOffset": 5,
+  "stickGravity": 1,
+  "moveSpeed": 20,
+  "stickPitchMaxOffset": 40,
+  "onProjectileHitIds": [
+    90,
+    105,
+    116
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "BPName": "ability_70000301",
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "heightAboveGround": 0.4,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

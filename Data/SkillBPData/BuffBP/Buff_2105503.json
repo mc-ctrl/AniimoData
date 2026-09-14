@@ -1,0 +1,93 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "buffId": 2105501,
+      "name": "hasBuff",
+      "UID": "b1a653b0-9f51-46b4-b564-c429af4376cd",
+      "target": {
+        "eventName": "onKill",
+        "name": "getEventCombatContextTarget",
+        "UID": "49afc2c9-3e0a-4deb-84c9-8759697a2b16",
+        "target": "TARGET",
+        "NodeID": 2
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "543cc4ad-be34-463a-8ff0-44e60ee5007c",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "9": {
+      "eventName": "onKill",
+      "name": "getEventCombatContextTarget",
+      "UID": "a2e606af-a603-4acb-857c-cdbb03ced516",
+      "target": "TARGET",
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "884ccf5b-1327-4b99-a825-ad514cfc7c26",
+      "name": "callClientAction",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        1,
+        1
+      ],
+      "templateId": 2105503101,
+      "name": "createProjectile",
+      "UID": "27cbc017-6342-49f4-82f5-e998d14794bb",
+      "rotation": "ToTarget",
+      "pos": {
+        "eventName": "onKill",
+        "name": "getEventCombatContextTarget",
+        "UID": "a2e606af-a603-4acb-857c-cdbb03ced516",
+        "target": "TARGET",
+        "NodeID": 9
+      },
+      "projectileType": "Tracking",
+      "targetPos": "OWNER",
+      "NodeID": 10,
+      "offsetRotation": [
+        45,
+        0,
+        0
+      ]
+    },
+    "7": {
+      "UID": "08c58312-7d33-4ad1-ae4f-4281534ea776",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "2": {
+      "eventName": "onKill",
+      "name": "getEventCombatContextTarget",
+      "UID": "49afc2c9-3e0a-4deb-84c9-8759697a2b16",
+      "target": "TARGET",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2105503",
+  "dynamicRPCStates": {},
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

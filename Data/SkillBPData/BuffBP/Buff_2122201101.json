@@ -1,0 +1,18 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 2122201101,
+    "type": 1,
+    "atk_cur": "param0",
+    "atk_mag_cur": "param1"
+  },
+  "BPName": "buff_2122201101",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

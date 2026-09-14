@@ -1,0 +1,52 @@
+{
+  "LevelMsg_Route": {
+    "id": 1,
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "paramName": [
+      "routeId",
+      "loopTime"
+    ]
+  },
+  "LevelMsg_SwitchState": {
+    "id": 2,
+    "paramType": [
+      "S",
+      "S"
+    ],
+    "paramName": [
+      "targetState",
+      "replaceAnimationKey"
+    ]
+  },
+  "LevelMsg_CastSkill": {
+    "id": 4,
+    "paramType": [
+      "F",
+      "I",
+      "Elua",
+      "S",
+      "F"
+    ],
+    "paramName": [
+      "WaitTime",
+      "SkillId",
+      "RaycastOpen",
+      "EmojiBubbleKey",
+      "EmojiBubbleTimeout"
+    ]
+  },
+  "LevelMsg_EnterCombat": {
+    "id": 3,
+    "paramType": [
+      "S",
+      "S"
+    ],
+    "paramName": [
+      "targetState",
+      "replaceAnimationKey"
+    ]
+  }
+}

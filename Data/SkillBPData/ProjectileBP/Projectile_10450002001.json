@@ -1,0 +1,111 @@
+{
+  "duration": 3,
+  "calcResultNodeId": 96,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_common_Skill_Grass_Bullet_Fly_NoAnimation",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    100,
+    97,
+    103
+  ],
+  "nodeMap": {
+    "100": {
+      "pos": "TARGET",
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "c34577cf-38dd-4838-8d24-680e6c49f251",
+      "effectId": "Eff_Parmon_Common_Skill_Grass_Bullet_Bomb",
+      "speed": 1,
+      "NodeID": 100
+    },
+    "96": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10450002,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "900f4e9c-f03a-4e94-96c7-4acc9362aa79",
+      "target": "TARGET",
+      "NodeID": 96,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": 0
+      }
+    },
+    "103": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3716e402-3ce9-43da-a597-8e68bc3cd6f2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WhirlwindGrass_End",
+      "NodeID": 103
+    },
+    "97": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 96,
+      "NodeID": 97,
+      "UID": "d372ebfe-8bb0-48af-be13-f0ff718d489c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            0.7,
+            0.3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        96
+      ]
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "BPName": "ability_10450002",
+  "tickInterval": 0.1,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.3,
+  "impulseId": 2000,
+  "acceleration": 0
+}

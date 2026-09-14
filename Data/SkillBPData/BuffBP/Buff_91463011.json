@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91463011",
+  "name": "释放技能标记",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "onBuffLayerChangeIds": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "b32f9b6c-94f2-4f90-982f-9b7228a81f2d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        6
+      ],
+      "NodeID": 3
+    },
+    "9": {
+      "calcInfo": {
+        "passive_energy_cur": -3
+      },
+      "name": "calcResult",
+      "UID": "5f83edeb-e72f-464f-ade2-ad79804580c7",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "b4ae8404-e217-4eda-a384-bd47c3be7133",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 6
+    },
+    "5": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "3a5affff-1cc9-40ea-9087-ecf6e0d0c9c3",
+      "NodeID": 5,
+      "lValue": {
+        "UID": "678b60f1-9a8e-4474-ba7b-f7370a487075",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 4
+      }
+    },
+    "2": {
+      "UID": "44a43d95-ca0e-46c9-9a82-967906ca7080",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    9
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

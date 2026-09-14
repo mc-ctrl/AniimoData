@@ -1,0 +1,155 @@
+[
+  {
+    "goTo": [
+      1,
+      661
+    ],
+    "notEnough": "USE_ENERGY_NOT_ENOUGH",
+    "rewardDisplay": [
+      [
+        1001,
+        600
+      ],
+      [
+        151003,
+        1
+      ],
+      [
+        151005,
+        1
+      ]
+    ],
+    "remindType": 1,
+    "titleTxt": 1836255043,
+    "event": "delItem",
+    "eventParam": [
+      [
+        1009,
+        30
+      ]
+    ],
+    "name": 1396725706,
+    "remindTxt": "USE_ENERGY_COMMON",
+    "showType": 1009
+  },
+  {
+    "goTo": [
+      1,
+      703
+    ],
+    "notEnough": "USE_ENERGY_NOT_ENOUGH",
+    "rewardDisplay": [
+      [
+        1001,
+        1000
+      ],
+      [
+        151000,
+        1
+      ],
+      [
+        151004,
+        1
+      ]
+    ],
+    "remindType": 1,
+    "titleTxt": 2095451424,
+    "event": "delItem",
+    "eventParam": [
+      [
+        1009,
+        50
+      ]
+    ],
+    "name": 1802536644,
+    "remindTxt": "USE_ENERGY_COMMON",
+    "showType": 1009
+  },
+  {
+    "goTo": [
+      1,
+      704
+    ],
+    "notEnough": "USE_ENERGY_NOT_ENOUGH",
+    "rewardDisplay": [
+      [
+        1001,
+        400
+      ],
+      [
+        110002,
+        10
+      ]
+    ],
+    "remindType": 1,
+    "titleTxt": 1465214448,
+    "event": "delItem",
+    "eventParam": [
+      [
+        1009,
+        20
+      ]
+    ],
+    "name": 1590323535,
+    "remindTxt": "USE_ENERGY_COMMON",
+    "showType": 1009
+  },
+  {
+    "goTo": [
+      1,
+      704
+    ],
+    "notEnough": "USE_ENERGY_NOT_ENOUGH",
+    "rewardDisplay": [
+      [
+        1001,
+        400
+      ],
+      [
+        150002,
+        10
+      ]
+    ],
+    "remindType": 1,
+    "titleTxt": 1496705574,
+    "event": "delItem",
+    "eventParam": [
+      [
+        1009,
+        20
+      ]
+    ],
+    "name": 1336928197,
+    "remindTxt": "USE_ENERGY_COMMON",
+    "showType": 1009
+  },
+  {
+    "goTo": [
+      1,
+      673
+    ],
+    "notEnough": "USE_ENERGY_NOT_ENOUGH",
+    "rewardDisplay": [
+      [
+        1001,
+        400
+      ],
+      [
+        990021,
+        1
+      ]
+    ],
+    "remindType": 1,
+    "titleTxt": 1411779451,
+    "event": "delItem",
+    "eventParam": [
+      [
+        1009,
+        20
+      ]
+    ],
+    "name": 1076139328,
+    "remindTxt": "USE_ENERGY_COMMON",
+    "showType": 1009
+  }
+]

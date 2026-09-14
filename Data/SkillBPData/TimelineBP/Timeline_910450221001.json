@@ -1,0 +1,189 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "b8431a2d-fbc1-43b3-a449-8c410d87604d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "63": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2104515,
+      "NodeID": 63,
+      "UID": "c729c327-e756-4ee2-b416-8e4d5100ba20",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "64": {
+      "cameraShakeId": 21104,
+      "name": "playCameraImpulseById",
+      "UID": "43db8502-7c7b-46eb-9edd-6179e20be703",
+      "target": "OWNER",
+      "NodeID": 64
+    },
+    "65": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "20469f2e-5537-4e2b-84ca-9977a954d77e",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal",
+      "speed": 1,
+      "NodeID": 65
+    },
+    "66": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "172c07a1-6c11-494f-a29f-2f4c9d8b59ed",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_waterheal_release",
+      "NodeID": 66
+    },
+    "20": {
+      "actionIds": [
+        18,
+        29
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "c6d54ada-05b3-4e77-a28b-a32d6db97e26",
+      "name": "doActionsByConditions",
+      "NodeID": 20
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.36,
+      "NodeID": 21,
+      "UID": "8b88bc32-a4f9-46c2-9356-6b6b31ef5bd8"
+    },
+    "3": {
+      "UID": "5a052323-d304-474e-b0a6-1d54f515fab9",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "14": {
+      "UID": "bf294ee3-272d-465e-9b48-2fffc069965b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "b898c355-a07a-43e2-b48f-1c45daca6395",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cb8fc9c8-78d1-403f-91e0-52f8f273f1af",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "Attack01"
+    },
+    "57": {
+      "UID": "bbf4ecbb-6cd7-4ef3-8920-0338c4c6ca41",
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 57
+    },
+    "27": {
+      "UID": "524cd61f-0ca7-4e3a-b1fc-8ad9cb7f80db",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 27
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 28,
+      "UID": "fdf80518-4888-4ee6-8716-c4119bb23fdc"
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c5cdf78b-4b2c-4ef1-b224-09f811339edb",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "18": {
+      "duration": 0.1,
+      "name": "frameFreeze",
+      "UID": "1acb0e6d-6b7a-4f6e-ba0a-aefe0420ee7e",
+      "target": "OWNER",
+      "timeScale": 0.3,
+      "NodeID": 18
+    },
+    "12": {
+      "UID": "ec171919-ca50-4e33-b291-3573c4b2e85e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "17": {
+      "UID": "07bd34a0-27d7-41f6-bde0-2c58c37e97d9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          63,
+          66,
+          64,
+          65
+        ]
+      },
+      "NodeID": 17
+    },
+    "22": {
+      "name": "isActorType",
+      "UID": "0b45d294-d594-4273-8cbe-c6c308525650",
+      "target": "OWNER",
+      "NodeID": 22,
+      "actorType": 3
+    }
+  },
+  "BPName": "ability_910450221",
+  "NodeID": 7,
+  "UID": "054db125-8504-4cb1-8ae6-8b7015e32f34",
+  "eventIds": [
+    5,
+    14,
+    17,
+    28,
+    57,
+    21
+  ],
+  "layer": "Base",
+  "length": 1.649
+}

@@ -1,0 +1,19 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 2101307,
+    "type": 1,
+    "bp_add_ratio": "param0",
+    "taken_dmg_inc_rate_v": "param0"
+  },
+  "BPName": "buff_2101307",
+  "NodeID": 1,
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

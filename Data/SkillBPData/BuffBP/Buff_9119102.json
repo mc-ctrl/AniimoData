@@ -1,0 +1,98 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9119102",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "tags": [
+    10
+  ],
+  "UID": "f10bb700-0b18-471e-a1bc-9a2e140e2469",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 2119102,
+      "NodeID": 3,
+      "UID": "8d10c8ee-1f0d-4cc3-9747-df995e8979c0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "delay": 0.2,
+      "NodeID": 9,
+      "UID": "194392b5-3c87-4c3b-be3f-0c7c734296f9",
+      "name": "buffStartThink",
+      "interval": 1,
+      "buffTemplateId": 9119102
+    },
+    "14": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "79a0a1c8-1461-4088-93b4-f5e511474742",
+      "NodeID": 14,
+      "lValue": {
+        "key": "waterPool",
+        "name": "getCacheVal",
+        "UID": "635cce29-39c2-48b9-9066-3d6edef4bd39",
+        "target": "OWNER",
+        "NodeID": 13
+      }
+    },
+    "5": {
+      "UID": "10c37f3e-67da-4ffa-87cd-106808f3be27",
+      "name": "registerWaterAbsorbEvent",
+      "levelActions": [
+        {
+          "actionIds": [
+            3
+          ],
+          "count": 1
+        }
+      ],
+      "NodeID": 5
+    },
+    "11": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "e95ccf00-9495-47f5-b4aa-d81098247135",
+      "NodeID": 11,
+      "lValue": {
+        "voxelTag": "waterPool",
+        "radius": 0.8,
+        "UID": "a8bcfb59-e612-412f-86a0-1a110a219143",
+        "NodeID": 10,
+        "name": "getVoxelNum"
+      }
+    },
+    "7": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "64cbd641-6650-4152-a2e3-fb028f3bd6b6",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "12": {
+      "UID": "f2e3d6cf-071a-4f38-8f39-fcefc786a9ad",
+      "conditionIds": [
+        11,
+        14
+      ],
+      "name": "conditionOr",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    5
+  ]
+}

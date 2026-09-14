@@ -1,0 +1,62 @@
+{
+  "BPName": "ability_15039900",
+  "NodeID": 1,
+  "UID": "cc09a6b4-771c-4977-b797-44e980976a67",
+  "desc": "水母大招自爆",
+  "abilityType": 4,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 15039900001,
+      "name": "setCombatActionTimeline",
+      "UID": "aad6f3ee-733f-400b-a9a6-1e165c188a50",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "e24fadef-c6ab-439b-b550-8931276929e9",
+      "effectId": "Eff_Parmon_10143_Skill_Ex02",
+      "target": "OWNER",
+      "NodeID": 20
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Skill_Rampage_Start",
+    "Eff_Parmon_10503_Skill_Rampage_Loop",
+    "Eff_Parmon_10503_Skill_Rampage_End",
+    "Eff_Parmon_10503_Skill_Rampage_Dark_Start",
+    "Eff_Parmon_10503_Skill_Rampage_Dark_Loop",
+    "Eff_Parmon_10503_Skill_Rampage_Dark_End",
+    "Eff_Parmon_10503_OutEx_01",
+    "Eff_Parmon_10503_OutEx_02",
+    "Eff_Hit_Rock_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "水母大招自爆",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "水母大招自爆",
+  "searchTargetRangeDown": 0.5,
+  "preloadCutScenes": [
+    "$Parmon_10503B_Skill_Ex_Timeline.prefab",
+    "$Parmon_10503_Skill_Ex_Timeline.prefab",
+    "$Parmon_1050301B_Skill_Ex_Timeline.prefab",
+    "$Parmon_1050301_Skill_Ex_Timeline.prefab"
+  ],
+  "onAbilityEndIds": [
+    20
+  ],
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 10800430,
+  "cutSceneDuration": 2
+}

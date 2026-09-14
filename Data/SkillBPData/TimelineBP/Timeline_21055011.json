@@ -1,0 +1,238 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "overrideCaster": "MASTER",
+      "calcInfoByLuaConfig": {
+        "id": 21055011,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "0ba2d7d7-2680-405c-b25e-91bb59d590b1",
+      "target": "TARGET",
+      "NodeID": 5,
+      "attackData": {
+        "overrideAbilityType": 2,
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30103,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Slash_Big",
+            "rotAngle": 45,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 3001
+      }
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "6d7c9ca4-3a04-49d9-9a2e-e6e9785a5de6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3001,
+      "actionIds": [
+        5
+      ]
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fc9d855d-13f0-49d9-97b7-182b96a09af1",
+      "effectId": "Eff_Parmon_10055_Skill_Wolves_Dg_Fire",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          19,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.73,
+      "NodeID": 21,
+      "UID": "4b437757-4e06-4478-8066-8fce0cabb159"
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f983a6ab-1451-439f-b0bf-cfc41235df2d",
+      "effectId": "Eff_Parmon_10055_Skill_Wolves_Tuci_Fire",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.13,
+      "NodeID": 13,
+      "UID": "3e379298-3f51-4b32-a2a9-1e391729be86"
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.86,
+      "NodeID": 24,
+      "UID": "78994f2e-56d6-4b08-8343-c0faf4375ab1"
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.96,
+      "NodeID": 10,
+      "UID": "5a165747-713b-45a3-901b-d2141784b139"
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a0fce70e-6540-4798-b081-dbe964fe8e3c",
+      "effectId": "Eff_Parmon_10055_Skill_Wolves_Dg02_Fire",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d17adf69-809f-465a-af25-88d7b5f68b11",
+      "effectId": "Eff_Parmon_10055_Skill_Wolves_Atk01_Fire",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.03,
+      "NodeID": 27,
+      "UID": "8b94558a-c44b-4067-b2da-0f2919c46814"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "13df6590-f293-4616-99f0-4278e034a869",
+      "effectId": "Eff_Parmon_10055_Skill_Wolves_Tuci02_Fire",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16,
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.63,
+      "NodeID": 18,
+      "UID": "d5e40fae-8aed-46b1-a4c1-1075452eefd2"
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.96,
+      "NodeID": 30,
+      "UID": "80187404-be44-4a78-a0f6-ae7359b4510f"
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6d58aec-4aa4-41e1-b4e0-cfdc7b004444",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_Wolves_02_Fire",
+      "NodeID": 35
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.92,
+      "NodeID": 33,
+      "UID": "76cef2b1-db37-4cf6-b05a-df8a0d85e241"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "87040804-de78-4381-b996-ebc93d43d82f",
+      "effectId": "Eff_Parmon_10055_Skill_Wolves_Atk02_Fire",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8340ed1b-9017-40ca-93e5-6a7a9e417c7b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10055_Skill_Wolves_02_Fire",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_21055011",
+  "NodeID": 1,
+  "UID": "d62a301e-d5d0-4d37-bc93-e12a81c597e0",
+  "eventIds": [
+    18,
+    24,
+    27,
+    30,
+    21,
+    10,
+    13,
+    33
+  ],
+  "layer": "Base",
+  "length": 3
+}

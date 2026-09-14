@@ -1,0 +1,1239 @@
+{
+  "40401": {
+    "maxLv": 1,
+    "column": 1,
+    "row": 2,
+    "abilityType": 1
+  },
+  "40402": {
+    "maxLv": 1
+  },
+  "40403": {
+    "maxLv": 1
+  },
+  "40404": {
+    "maxLv": 1,
+    "abilityType": 1
+  },
+  "40405": {
+    "maxLv": 1
+  },
+  "40406": {
+    "maxLv": 1,
+    "column": 2,
+    "row": 4,
+    "abilityType": 1
+  },
+  "40407": {
+    "maxLv": 1
+  },
+  "40408": {
+    "maxLv": 1
+  },
+  "40409": {
+    "maxLv": 1
+  },
+  "40410": {
+    "maxLv": 1
+  },
+  "40411": {
+    "maxLv": 1
+  },
+  "40412": {
+    "maxLv": 1
+  },
+  "40413": {
+    "maxLv": 1
+  },
+  "40414": {
+    "maxLv": 1,
+    "column": 1,
+    "row": 6,
+    "abilityType": 1
+  },
+  "40416": {
+    "maxLv": 1
+  },
+  "110106": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10004.png"
+  },
+  "110118": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10004.png"
+  },
+  "110120": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10008.png"
+  },
+  "110121": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10008.png"
+  },
+  "110122": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110122.png"
+  },
+  "110123": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110123.png"
+  },
+  "110124": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110124.png"
+  },
+  "110125": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110125.png"
+  },
+  "110126": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110126.png"
+  },
+  "110127": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10006.png"
+  },
+  "110128": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10006.png"
+  },
+  "110129": {
+    "maxLv": 3,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110129.png"
+  },
+  "110130": {
+    "maxLv": 3,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110130.png"
+  },
+  "110131": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110131.png"
+  },
+  "110132": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110132.png"
+  },
+  "110133": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110133.png"
+  },
+  "110134": {
+    "maxLv": 2,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110134.png"
+  },
+  "110135": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10014.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "110136": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10015.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "110137": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10016.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "110138": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10030.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "40201": {
+    "column": 2,
+    "isRare": 1,
+    "maxLv": 1,
+    "row": 5,
+    "abilityType": 1
+  },
+  "40203": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_120001.png",
+    "hideInEquipList": 1
+  },
+  "40204": {
+    "maxLv": 1
+  },
+  "10104": {
+    "maxLv": 1,
+    "column": 1,
+    "row": 3,
+    "abilityType": 1
+  },
+  "40206": {
+    "maxLv": 1
+  },
+  "4201003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130009.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4202003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4202005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4203003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4203005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4204003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4204005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4205003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4205005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4206003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4206005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4207003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4207005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4208003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4208005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4209003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4209005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4210003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4210005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4211003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4211005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4212003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4212005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4213003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4213005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4214003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4214005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4215003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4215005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4216003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4216005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "20101": {
+    "maxLv": 1
+  },
+  "4217003": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201003.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4217004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "120007": {
+    "column": 3,
+    "hideInEquipList": 1,
+    "maxLv": 5,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10001.png",
+    "row": 2,
+    "abilityType": 2
+  },
+  "4217006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4217007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "10000": {
+    "maxLv": 1,
+    "column": 0,
+    "row": 0,
+    "abilityType": 0
+  },
+  "120002": {
+    "column": 4,
+    "hideInEquipList": 1,
+    "maxLv": 4,
+    "icon": "$UI_PassiveSkillIcon_Avatar_120002.png",
+    "row": 4,
+    "abilityType": 2
+  },
+  "120003": {
+    "column": 3,
+    "hideInEquipList": 1,
+    "isRare": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_120003.png",
+    "row": 3,
+    "abilityType": 2
+  },
+  "120004": {
+    "column": 3,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10008.png",
+    "row": 6,
+    "abilityType": 2
+  },
+  "120005": {
+    "column": 3,
+    "hideInEquipList": 1,
+    "isRare": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_120005.png",
+    "row": 8,
+    "abilityType": 2
+  },
+  "120006": {
+    "column": 4,
+    "hideInEquipList": 1,
+    "isRare": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_120006.png",
+    "row": 7,
+    "abilityType": 2
+  },
+  "120008": {
+    "column": 6,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10007.png",
+    "row": 2,
+    "abilityType": 2
+  },
+  "120009": {
+    "maxLv": 1,
+    "icon": "$UI_Icon_WaterInteraction_1.png"
+  },
+  "130001": {
+    "column": 5,
+    "hideInEquipList": 1,
+    "maxLv": 4,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130001.png",
+    "row": 2,
+    "abilityType": 2
+  },
+  "130002": {
+    "column": 8,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130002.png",
+    "row": 2,
+    "abilityType": 2
+  },
+  "130003": {
+    "column": 8,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130003.png",
+    "row": 4,
+    "abilityType": 2
+  },
+  "130004": {
+    "icon": "$UI_PassiveSkillIcon_Avatar_130004.png"
+  },
+  "130005": {
+    "column": 6,
+    "hideInEquipList": 1,
+    "isRare": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130005.png",
+    "row": 7,
+    "abilityType": 2
+  },
+  "130006": {
+    "column": 5,
+    "hideInEquipList": 1,
+    "maxLv": 4,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130006.png",
+    "row": 5,
+    "abilityType": 2
+  },
+  "130007": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130007.png"
+  },
+  "130008": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_130008.png",
+    "isRare": 1
+  },
+  "50101": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_50101.png"
+  },
+  "50102": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_50102.png"
+  },
+  "50103": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_50103.png"
+  },
+  "50104": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_50104.png"
+  },
+  "50105": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_50105.png"
+  },
+  "50106": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_50106.png"
+  },
+  "50107": {
+    "maxLv": 1
+  },
+  "150002": {
+    "typeName": 1733659033,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$ui_item_1000.png",
+    "iconTxt": 1348581501,
+    "abilityType": 3
+  },
+  "10101": {
+    "maxLv": 1,
+    "column": 0,
+    "row": 0,
+    "abilityType": 0
+  },
+  "10102": {
+    "maxLv": 1,
+    "column": 2,
+    "row": 3,
+    "abilityType": 1
+  },
+  "40202": {
+    "column": 2,
+    "isRare": 1,
+    "maxLv": 1,
+    "row": 7,
+    "abilityType": 1
+  },
+  "40415": {
+    "maxLv": 1,
+    "column": 1,
+    "row": 4,
+    "abilityType": 1
+  },
+  "140001": {
+    "column": 7,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_140006.png",
+    "row": 4,
+    "abilityType": 2
+  },
+  "4201001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10026.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "140003": {
+    "column": 7,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_140003.png",
+    "row": 8,
+    "abilityType": 2
+  },
+  "4202001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4202004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4202006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4202007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4203001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4203004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4203006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4203007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4204001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4204004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4204006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4204007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4205001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4205004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4205006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4205007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4206001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4206004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4206006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4206007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4207001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4207004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4207006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4207007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4208001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4208004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4208006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4208007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4209001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4209004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4209006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4209007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4210001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4210004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4210006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4210007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4211001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4211004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4211006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4211007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4212001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4212004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4212006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4212007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4213001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4213004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "110101": {
+    "column": 3,
+    "hideInEquipList": 1,
+    "isRare": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_110101.png",
+    "row": 4,
+    "abilityType": 2
+  },
+  "4213007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4214001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4214004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4214006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4214007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4215001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4215004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4215006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4215007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4216001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4216004": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201004.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4216006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4216007": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201007.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4217005": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201005.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4217001": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201001.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "4213006": {
+    "column": 0,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_4201006.png",
+    "row": 0,
+    "abilityType": 2
+  },
+  "120001": {
+    "column": 4,
+    "hideInEquipList": 1,
+    "maxLv": 4,
+    "icon": "$UI_PassiveSkillIcon_Avatar_120001.png",
+    "row": 2,
+    "abilityType": 2
+  },
+  "40205": {
+    "maxLv": 1
+  },
+  "10103": {
+    "maxLv": 1,
+    "column": 2,
+    "row": 2,
+    "abilityType": 1
+  },
+  "20201": {
+    "maxLv": 1
+  },
+  "110139": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10031.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "110140": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10006.png"
+  },
+  "110141": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10032.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "110142": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10033.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "110143": {
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_10033.png",
+    "hideInEquipList": 1,
+    "abilityType": 3
+  },
+  "140002": {
+    "column": 7,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_140005.png",
+    "row": 3,
+    "abilityType": 2
+  },
+  "140004": {
+    "column": 7,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$UI_PassiveSkillIcon_Avatar_140007.png",
+    "row": 6,
+    "abilityType": 2
+  },
+  "150001": {
+    "typeName": 1622966204,
+    "hideInEquipList": 1,
+    "maxLv": 1,
+    "icon": "$ui_item_521999.png",
+    "iconTxt": 1172234524,
+    "abilityType": 3
+  }
+}

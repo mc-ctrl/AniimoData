@@ -1,0 +1,23 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 9143302,
+    "type": 1,
+    "dmg_rock_dec_ratio": "param0"
+  },
+  "BPName": "buff_9143302",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "stackRule": 0,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_DefenseDown"
+    }
+  ]
+}

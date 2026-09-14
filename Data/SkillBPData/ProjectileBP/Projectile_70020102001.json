@@ -1,0 +1,116 @@
+{
+  "angularIncreaseDuration": 0,
+  "BPName": "ability_70020102",
+  "NodeID": 0,
+  "effectId": {
+    "str": "Eff_Monster_Robot_Atk_Cannon_Skill_Attack01_Fly_",
+    "name": "constString",
+    "UID": "680bd398-2c5d-4fda-9fd2-5e10f4942fa0",
+    "NodeID": 57,
+    "concatenateNumber": {
+      "UID": "8067ae62-e46d-417b-a0eb-e4f811a48c10",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 56
+    }
+  },
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 0,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "31": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 1000,
+        "useCasterMainElement": true
+      },
+      "UID": "07a015b1-6e69-401c-819a-533d3a7ec84a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 31
+    },
+    "25": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a240f612-9220-40ae-98b5-dd097f08518a",
+      "effectId": "Eff_Hit_None_Blunt",
+      "speed": 1.01,
+      "NodeID": 25
+    },
+    "56": {
+      "UID": "8067ae62-e46d-417b-a0eb-e4f811a48c10",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 56
+    },
+    "34": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.37
+      },
+      "name": "calcResult",
+      "UID": "df13976e-8d08-495a-83e2-b08c2b25ae67",
+      "target": "CASTER",
+      "NodeID": 34
+    },
+    "35": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "ceeb9186-f500-432d-a3bd-5230d4b47382",
+      "name": "doActionsByConditions",
+      "NodeID": 35
+    },
+    "36": {
+      "UID": "5f12f55c-8590-45e4-9008-7e5f894ffd4b",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 36
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    25
+  ],
+  "onProjectileHitIds": [
+    31,
+    35
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.4,
+  "sweepShape": 0,
+  "calcResultNodeId": 31,
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "duration": 5,
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

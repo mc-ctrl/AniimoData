@@ -1,0 +1,67 @@
+{
+  "BPName": "ability_11810400",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 10900400,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11810400001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "70": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 70,
+      "UID": "de0d1a0b-09c1-4369-962c-42953b593a94",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "90": {
+      "name": "stopEffectStr",
+      "UID": "d8eec365-b823-4770-bb32-0289ba369660",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_01",
+      "target": "OWNER",
+      "NodeID": 90
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10181_Skill_MetalPerformance01",
+    "Eff_Hit_Wind_Blunt_Big",
+    "Eff_Parmon_10185_Skill_WindCannon_Charge_01"
+  ],
+  "searchRelation": 2,
+  "name": "捣蛋鸥风弹龙卷风",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "龙卷弹",
+  "onAbilityEndIds": [
+    90,
+    70
+  ],
+  "searchTargetRangeDown": 0.5,
+  "desc": "",
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8"
+}

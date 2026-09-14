@@ -1,0 +1,70 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 910210602,
+      "NodeID": 3,
+      "UID": "25613f48-001f-4c30-8450-a613e2389a71",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "eventName": "ExitDefense",
+      "NodeID": 9,
+      "UID": "78e6d588-1a48-4f91-a789-3bacbfaf6c9d",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        11,
+        7
+      ]
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 910210601,
+      "NodeID": 10,
+      "UID": "1b58a7f3-c91a-4047-96d5-a800db0caa86",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "buffId": 910210602,
+      "name": "removeBuff",
+      "UID": "2785958b-efca-4c0b-9ab4-6adb54ffde1b",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "buffId": 910210601,
+      "name": "removeBuff",
+      "UID": "7b512f89-373c-4785-9338-74b1fec6009b",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "eventName": "EnterDefense",
+      "NodeID": 5,
+      "UID": "f338e019-940e-4297-8e46-bcc83fac57f4",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        10,
+        3
+      ]
+    }
+  },
+  "BPName": "buff_9102106",
+  "dynamicRPCStates": {},
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    9
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "57957100": {
+    "id": 57957100,
+    "logics": {},
+    "pointType": 2,
+    "name": "宠物区_57957100",
+    "targetPositionData": {
+      "scene": 506,
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        47.11,
+        22.86,
+        -5.68
+      ],
+      "name": "宠物区",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      47.11,
+      22.86,
+      -5.68
+    ],
+    "sandboxId": 57953381
+  },
+  "57954465": {
+    "id": 57954465,
+    "logics": {},
+    "pointType": 2,
+    "name": "校长室到达检测_57954465",
+    "targetPositionData": {
+      "scene": 506,
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        15
+      ],
+      "position": [
+        52.89,
+        22.86,
+        -8.11
+      ],
+      "name": "校长室到达检测",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      52.89,
+      22.86,
+      -8.11
+    ],
+    "sandboxId": 57953381
+  },
+  "57959794": {
+    "id": 57959794,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_57959794",
+    "targetPositionData": {
+      "scene": 506,
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        20
+      ],
+      "position": [
+        51.96,
+        22.86,
+        -11.21
+      ],
+      "name": "大厅到达检测",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      51.96,
+      22.86,
+      -11.21
+    ],
+    "sandboxId": 57951553
+  }
+}

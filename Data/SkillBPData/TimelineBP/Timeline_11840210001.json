@@ -1,0 +1,176 @@
+{
+  "nodeMap": {
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "58f5f0b2-1e8a-4855-a938-fac87fec9c31",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Fanatic"
+    },
+    "48": {
+      "name": "stopSoundStr",
+      "UID": "4e27faac-35d5-490b-ba5e-3721b29479fd",
+      "soundId": "SFX_Combat_Parmon_10184_Skill_Fanatic",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "4": {
+      "UID": "d9be6ef3-fff8-4fb1-b308-db9fff780d1d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          19,
+          30
+        ]
+      },
+      "NodeID": 4
+    },
+    "21": {
+      "UID": "5ef89924-7c0a-4ce2-a21f-b10d57c631a1",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 21
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          10,
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.64,
+      "NodeID": 14,
+      "UID": "0b11aeef-4ee5-499e-9b05-2f5b1e2a3856"
+    },
+    "46": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 2118402,
+      "NodeID": 46,
+      "UID": "677260aa-6dda-4d75-8f21-4cbe34ddbebf",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 18,
+      "UID": "deb5ee18-ada1-4da6-a8aa-a94a9e40b90d"
+    },
+    "47": {
+      "name": "stopEffectStr",
+      "UID": "2d670159-cf17-4f7a-84c8-30d84d8e200b",
+      "effectId": "Eff_Parmon_10184_Skill_Conjure_Release_Liuli",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "16": {
+      "UID": "ae2b6074-72ee-48ad-96ec-9d80415e5a91",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "UID": "c9b28cfd-9ed9-45bf-afb5-45cc90b6939a",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          25,
+          48,
+          47
+        ]
+      },
+      "NodeID": 27
+    },
+    "28": {
+      "cameraShakeId": 21124,
+      "name": "playCameraImpulseById",
+      "UID": "f11068b6-0352-4895-87b9-cd342166572d",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.55,
+      "NodeID": 29,
+      "UID": "bb318a32-83b0-4df8-8fce-e5c4676dae89"
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bdd0ba9c-9fab-4c6f-bef6-cd11f50428ee",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_Fanatic",
+      "NodeID": 30
+    },
+    "23": {
+      "UID": "91c734eb-b12b-4cd6-bc87-315e0e352e5f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 23
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f8f1e31b-ea99-40ca-b966-0d0b22328ba0",
+      "effectId": "Eff_Parmon_10184_Skill_Conjure_Release_Liuli",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "25": {
+      "UID": "da27a789-961a-4857-b886-4e1633d38a07",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 25
+    },
+    "10": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 2118102,
+      "NodeID": 10,
+      "UID": "78bf6e3b-ee96-4caf-9978-dee9e0cea9fc",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "ability_11840210",
+  "NodeID": 6,
+  "UID": "2f177381-ed2b-448e-a52c-fc9496151615",
+  "eventIds": [
+    18,
+    14,
+    4,
+    23,
+    27,
+    29
+  ],
+  "layer": "Base",
+  "length": 1.33
+}

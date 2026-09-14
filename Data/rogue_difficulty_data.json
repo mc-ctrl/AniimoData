@@ -1,0 +1,663 @@
+[
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss6.png",
+    "levelCondition": [
+      1305
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1704252251,
+    "postNode": [
+      2
+    ],
+    "recommendLv": 50,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 301100,
+    "roguelikeIDStart": 301010,
+    "sweepRewardIconLevelSet1": 3,
+    "sweepRewardIconLevelSet2": 3,
+    "sweepRewardSet2": [
+      77200
+    ],
+    "sweepRewardSetClient2": 77200,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77200,
+        77200
+      ],
+      {}
+    ],
+    "elementType": 3,
+    "WeeklyReward": 77351,
+    "WeeklyRewardClient": 77351,
+    "battleResultBackground": "$UI_Img_Tower_BossBg3.png",
+    "clearReward": 74012,
+    "difficulty": 1690134085,
+    "difficultyLabel": 0,
+    "difficultyLv": 0,
+    "elementName": "Grass",
+    "equipTypeNum": 3,
+    "firstClearReward": 76001,
+    "guideReward": 74100,
+    "hoverIcon": "$UI_Img_TowerLevelPre02.png",
+    "intelligentFilterId": "Rogue_1",
+    "interfaceName": 1476921962,
+    "recommendType": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "recommendPet": [
+      1,
+      5,
+      4
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss6.png",
+    "levelCondition": [
+      1310
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1991016081,
+    "postNode": [
+      3
+    ],
+    "preNode": [
+      1
+    ],
+    "recommendLv": 55,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 302100,
+    "roguelikeIDStart": 302010,
+    "sweepRewardIconLevelSet1": 3,
+    "sweepRewardIconLevelSet2": 3,
+    "sweepRewardSet2": [
+      77201
+    ],
+    "sweepRewardSetClient2": 77201,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77201,
+        77201
+      ],
+      {}
+    ],
+    "elementType": 3,
+    "WeeklyReward": 77352,
+    "WeeklyRewardClient": 77352,
+    "battleResultBackground": "$UI_Img_Tower_BossBg3.png",
+    "clearReward": 74013,
+    "difficulty": 1161895032,
+    "difficultyLabel": 1,
+    "difficultyLv": 0,
+    "elementName": "Grass",
+    "equipTypeNum": 3,
+    "firstClearReward": 76002,
+    "guideReward": 74101,
+    "hoverIcon": "$UI_Img_TowerLevelPre02.png",
+    "intelligentFilterId": "Rogue_2",
+    "interfaceName": 2051555854,
+    "recommendType": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "recommendPet": [
+      1,
+      5,
+      4
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss5.png",
+    "levelCondition": [
+      1311
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1466164229,
+    "preNode": [
+      2
+    ],
+    "recommendLv": 60,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 303160,
+    "roguelikeIDStart": 303010,
+    "sweepRewardIconLevelSet1": 4,
+    "sweepRewardIconLevelSet2": 4,
+    "sweepRewardSet2": [
+      77202
+    ],
+    "sweepRewardSetClient2": 77202,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77202,
+        77202
+      ],
+      {}
+    ],
+    "elementType": 3,
+    "WeeklyReward": 77353,
+    "WeeklyRewardClient": 77353,
+    "battleResultBackground": "$UI_Img_Tower_BossBg3.png",
+    "clearReward": 74014,
+    "difficulty": 1138592586,
+    "difficultyLabel": 2,
+    "difficultyLv": 0,
+    "elementName": "Grass",
+    "equipTypeNum": 3,
+    "firstClearReward": 76003,
+    "guideReward": 74102,
+    "hoverIcon": "$UI_Img_TowerLevelPre02.png",
+    "intelligentFilterId": "Rogue_3",
+    "interfaceName": 1408430186,
+    "recommendType": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "recommendPet": [
+      1,
+      5,
+      4
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss3.png",
+    "levelCondition": [
+      1305
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1638567873,
+    "postNode": [
+      5
+    ],
+    "recommendLv": 50,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 304100,
+    "roguelikeIDStart": 304010,
+    "sweepRewardIconLevelSet1": 3,
+    "sweepRewardIconLevelSet2": 3,
+    "sweepRewardSet2": [
+      77204
+    ],
+    "sweepRewardSetClient2": 77204,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77204,
+        77204
+      ],
+      {}
+    ],
+    "elementType": 11,
+    "WeeklyReward": 77355,
+    "WeeklyRewardClient": 77355,
+    "battleResultBackground": "$UI_Img_Tower_BossBg2.png",
+    "clearReward": 74020,
+    "difficulty": 1904325796,
+    "difficultyLabel": 0,
+    "difficultyLv": 0,
+    "elementName": "Water",
+    "equipTypeNum": 3,
+    "firstClearReward": 76005,
+    "guideReward": 74104,
+    "hoverIcon": "$UI_Img_TowerLevelPre01.png",
+    "intelligentFilterId": "Rogue_4",
+    "interfaceName": 2101466522,
+    "recommendType": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "recommendPet": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss3.png",
+    "levelCondition": [
+      1310
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1578079779,
+    "postNode": [
+      6
+    ],
+    "preNode": [
+      4
+    ],
+    "recommendLv": 55,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 305100,
+    "roguelikeIDStart": 305010,
+    "sweepRewardIconLevelSet1": 3,
+    "sweepRewardIconLevelSet2": 3,
+    "sweepRewardSet2": [
+      77205
+    ],
+    "sweepRewardSetClient2": 77205,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77205,
+        77205
+      ],
+      {}
+    ],
+    "elementType": 11,
+    "WeeklyReward": 77356,
+    "WeeklyRewardClient": 77356,
+    "battleResultBackground": "$UI_Img_Tower_BossBg2.png",
+    "clearReward": 74021,
+    "difficulty": 1804054071,
+    "difficultyLabel": 1,
+    "difficultyLv": 0,
+    "elementName": "Water",
+    "equipTypeNum": 3,
+    "firstClearReward": 76006,
+    "guideReward": 74105,
+    "hoverIcon": "$UI_Img_TowerLevelPre01.png",
+    "intelligentFilterId": "Rogue_5",
+    "interfaceName": 1559986759,
+    "recommendType": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "recommendPet": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss4.png",
+    "levelCondition": [
+      1311
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1712000737,
+    "preNode": [
+      5
+    ],
+    "recommendLv": 60,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 306160,
+    "roguelikeIDStart": 306010,
+    "sweepRewardIconLevelSet1": 4,
+    "sweepRewardIconLevelSet2": 4,
+    "sweepRewardSet2": [
+      77206
+    ],
+    "sweepRewardSetClient2": 77206,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77206,
+        77206
+      ],
+      {}
+    ],
+    "elementType": 11,
+    "WeeklyReward": 77357,
+    "WeeklyRewardClient": 77357,
+    "battleResultBackground": "$UI_Img_Tower_BossBg2.png",
+    "clearReward": 74022,
+    "difficulty": 1368233843,
+    "difficultyLabel": 2,
+    "difficultyLv": 0,
+    "elementName": "Water",
+    "equipTypeNum": 3,
+    "firstClearReward": 76007,
+    "guideReward": 74106,
+    "hoverIcon": "$UI_Img_TowerLevelPre01.png",
+    "intelligentFilterId": "Rogue_6",
+    "interfaceName": 2073471814,
+    "recommendType": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "recommendPet": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss1.png",
+    "levelCondition": [
+      1305
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1819565037,
+    "postNode": [
+      8
+    ],
+    "recommendLv": 50,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 307100,
+    "roguelikeIDStart": 307010,
+    "sweepRewardIconLevelSet1": 3,
+    "sweepRewardIconLevelSet2": 3,
+    "sweepRewardSet2": [
+      77208
+    ],
+    "sweepRewardSetClient2": 77208,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77208,
+        77208
+      ],
+      {}
+    ],
+    "elementType": 2,
+    "WeeklyReward": 77359,
+    "WeeklyRewardClient": 77359,
+    "battleResultBackground": "$UI_Img_Tower_BossBg1.png",
+    "clearReward": 74016,
+    "difficulty": 1759878741,
+    "difficultyLabel": 0,
+    "difficultyLv": 0,
+    "elementName": "Fire",
+    "equipTypeNum": 3,
+    "firstClearReward": 76009,
+    "guideReward": 74108,
+    "hoverIcon": "$UI_Img_TowerLevelPre03.png",
+    "intelligentFilterId": "Rogue_7",
+    "interfaceName": 1125746856,
+    "recommendType": [
+      "Water",
+      "Rock"
+    ],
+    "recommendPet": [
+      3,
+      8
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss1.png",
+    "levelCondition": [
+      1310
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1483844939,
+    "postNode": [
+      9
+    ],
+    "preNode": [
+      7
+    ],
+    "recommendLv": 55,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 308100,
+    "roguelikeIDStart": 308010,
+    "sweepRewardIconLevelSet1": 3,
+    "sweepRewardIconLevelSet2": 3,
+    "sweepRewardSet2": [
+      77209
+    ],
+    "sweepRewardSetClient2": 77209,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77209,
+        77209
+      ],
+      {}
+    ],
+    "elementType": 2,
+    "WeeklyReward": 77360,
+    "WeeklyRewardClient": 77360,
+    "battleResultBackground": "$UI_Img_Tower_BossBg1.png",
+    "clearReward": 74017,
+    "difficulty": 1086282441,
+    "difficultyLabel": 1,
+    "difficultyLv": 0,
+    "elementName": "Fire",
+    "equipTypeNum": 3,
+    "firstClearReward": 76010,
+    "guideReward": 74109,
+    "hoverIcon": "$UI_Img_TowerLevelPre03.png",
+    "intelligentFilterId": "Rogue_8",
+    "interfaceName": 1600950198,
+    "recommendType": [
+      "Water",
+      "Rock"
+    ],
+    "recommendPet": [
+      3,
+      8
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss2.png",
+    "levelCondition": [
+      1311
+    ],
+    "levelConditionIcon": 3,
+    "levelName": 1767279790,
+    "preNode": [
+      8
+    ],
+    "recommendLv": 60,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 309160,
+    "roguelikeIDStart": 309010,
+    "sweepRewardIconLevelSet1": 4,
+    "sweepRewardIconLevelSet2": 4,
+    "sweepRewardSet2": [
+      77210
+    ],
+    "sweepRewardSetClient2": 77210,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77210,
+        77210
+      ],
+      {}
+    ],
+    "elementType": 2,
+    "WeeklyReward": 77361,
+    "WeeklyRewardClient": 77361,
+    "battleResultBackground": "$UI_Img_Tower_BossBg1.png",
+    "clearReward": 74018,
+    "difficulty": 1695881853,
+    "difficultyLabel": 2,
+    "difficultyLv": 0,
+    "elementName": "Fire",
+    "equipTypeNum": 3,
+    "firstClearReward": 76011,
+    "guideReward": 74110,
+    "hoverIcon": "$UI_Img_TowerLevelPre03.png",
+    "intelligentFilterId": "Rogue_9",
+    "interfaceName": 1346187923,
+    "recommendType": [
+      "Water",
+      "Rock"
+    ],
+    "recommendPet": [
+      3,
+      8
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss5.png",
+    "levelCondition": [
+      1311
+    ],
+    "levelConditionIcon": 4,
+    "levelName": 1311468112,
+    "preNode": [
+      3
+    ],
+    "recommendLv": 63,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 310160,
+    "roguelikeIDStart": 310010,
+    "sweepRewardIconLevelSet1": 5,
+    "sweepRewardIconLevelSet2": 5,
+    "sweepRewardSet2": [
+      77203
+    ],
+    "sweepRewardSetClient2": 77203,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77203,
+        77203
+      ],
+      {}
+    ],
+    "elementType": 3,
+    "WeeklyReward": 77354,
+    "WeeklyRewardClient": 77354,
+    "battleResultBackground": "$UI_Img_Tower_BossBg3.png",
+    "clearReward": 74015,
+    "difficulty": 1275416412,
+    "difficultyLabel": 3,
+    "difficultyLv": 1,
+    "elementName": "Grass",
+    "equipTypeNum": 3,
+    "firstClearReward": 76004,
+    "guideReward": 74103,
+    "hoverIcon": "$UI_Img_TowerLevelPre05.png",
+    "intelligentFilterId": "Rogue_10",
+    "interfaceName": 1404975225,
+    "recommendType": [
+      "Fire",
+      "Wind",
+      "Dark"
+    ],
+    "recommendPet": [
+      1,
+      5,
+      4
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss4.png",
+    "levelCondition": [
+      1311
+    ],
+    "levelConditionIcon": 4,
+    "levelName": 1242226455,
+    "preNode": [
+      6
+    ],
+    "recommendLv": 63,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 311160,
+    "roguelikeIDStart": 311010,
+    "sweepRewardIconLevelSet1": 5,
+    "sweepRewardIconLevelSet2": 5,
+    "sweepRewardSet2": [
+      77207
+    ],
+    "sweepRewardSetClient2": 77207,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77207,
+        77207
+      ],
+      {}
+    ],
+    "elementType": 11,
+    "WeeklyReward": 77358,
+    "WeeklyRewardClient": 77358,
+    "battleResultBackground": "$UI_Img_Tower_BossBg2.png",
+    "clearReward": 74023,
+    "difficulty": 1793315626,
+    "difficultyLabel": 3,
+    "difficultyLv": 1,
+    "elementName": "Water",
+    "equipTypeNum": 3,
+    "firstClearReward": 76008,
+    "guideReward": 74107,
+    "hoverIcon": "$UI_Img_TowerLevelPre04.png",
+    "intelligentFilterId": "Rogue_11",
+    "interfaceName": 1528037920,
+    "recommendType": [
+      "Grass",
+      "Electric",
+      "Ice"
+    ],
+    "recommendPet": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "interfacePoster": "$UI_Img_Tower_Boss2.png",
+    "levelCondition": [
+      1311
+    ],
+    "levelConditionIcon": 4,
+    "levelName": 1469513820,
+    "preNode": [
+      9
+    ],
+    "recommendLv": 63,
+    "rogueStaminaRewardMark": 30200,
+    "roguelikeIDEnd": 312160,
+    "roguelikeIDStart": 312010,
+    "sweepRewardIconLevelSet1": 5,
+    "sweepRewardIconLevelSet2": 5,
+    "sweepRewardSet2": [
+      77211
+    ],
+    "sweepRewardSetClient2": 77211,
+    "sweepStamina": 30,
+    "sweepTicket": 1,
+    "uSweepRewardSet2": [
+      [
+        77211,
+        77211
+      ],
+      {}
+    ],
+    "elementType": 2,
+    "WeeklyReward": 77362,
+    "WeeklyRewardClient": 77362,
+    "battleResultBackground": "$UI_Img_Tower_BossBg1.png",
+    "clearReward": 74019,
+    "difficulty": 1093580592,
+    "difficultyLabel": 3,
+    "difficultyLv": 1,
+    "elementName": "Fire",
+    "equipTypeNum": 3,
+    "firstClearReward": 76012,
+    "guideReward": 74111,
+    "hoverIcon": "$UI_Img_TowerLevelPre06.png",
+    "intelligentFilterId": "Rogue_12",
+    "interfaceName": 1148701887,
+    "recommendType": [
+      "Water",
+      "Rock"
+    ],
+    "recommendPet": [
+      3,
+      8
+    ]
+  }
+]

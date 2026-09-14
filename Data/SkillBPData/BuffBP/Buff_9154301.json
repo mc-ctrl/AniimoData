@@ -1,0 +1,13 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9154301",
+  "name": "澡叶蛙-普通特性",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "",
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": {}
+}

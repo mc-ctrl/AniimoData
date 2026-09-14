@@ -1,0 +1,36 @@
+{
+  "preloadAnims": [
+    "Skill_FirstAid"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Female_Skill_FirstAid_Loop",
+    "Eff_Avatar_Female_Skill_FirstAid_Release",
+    "Eff_Avatar_Female_Skill_FirstAid_HealDestroy",
+    "Eff_Avatar_Female_Skill_FirstAid_Heal",
+    "Eff_Avatar_Female_Skill_FirstAid_Appear"
+  ],
+  "BPName": "ability_9200005",
+  "NodeID": 1,
+  "UID": "95e52ea3-8c1b-4b90-ab4a-4ea63308d06e",
+  "searchTargetRangeUp": 0,
+  "abilityParamId": 9200005,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeRadius": 0,
+  "checkExistBurrow": false,
+  "searchTargetRangeDown": 0,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200005001,
+      "name": "setCombatActionTimeline",
+      "UID": "ffb2e4a6-c0a4-40f2-93bf-be59534fccd6",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 1
+}

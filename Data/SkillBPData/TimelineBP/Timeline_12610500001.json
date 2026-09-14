@@ -1,0 +1,130 @@
+{
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 2117404,
+      "NodeID": 3,
+      "UID": "61a2a2c1-4eaf-4c30-ba47-9babc244147a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "UID": "c401b574-a034-470f-ae29-e0d10e3be7cd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "11907a50-96bc-4c98-9449-76249852942e",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "53caec78-abb1-4662-a158-b1b13ee953c0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "22542232-57f8-4c7a-b749-20dab1b9de6f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17
+      ],
+      "NodeID": 15
+    },
+    "16": {
+      "UID": "86a05a71-3733-4331-9374-add42b16ceb1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "17": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "b570fecb-8f42-4f8a-8d44-373d5d924d80",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 17
+    },
+    "9": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "73f3f8f4-188d-4043-abf2-64b017e276c2",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "a89c618a-4b71-4599-b42a-b594f1b517d1",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "e30f51cb-1170-4155-ba4b-b477d4166d50",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "3c59d673-1df4-40c9-be0e-e0c07738cec5",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 13
+    },
+    "12": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "9d1f57d1-a943-4ded-8254-662216b0b3a7",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12610500",
+  "NodeID": 6,
+  "UID": "7cff6ccf-2fc2-477e-8e74-873cfee89559",
+  "eventIds": [
+    4,
+    11,
+    16
+  ],
+  "layer": "Base",
+  "length": 2.76
+}

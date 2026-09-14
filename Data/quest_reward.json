@@ -1,0 +1,1423 @@
+{
+  "4702003": {
+    "questId": 4702003,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4702003
+  },
+  "4704029": {
+    "questId": 4704029,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704029
+  },
+  "4704033": {
+    "questId": 4704033,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704033
+  },
+  "4704034": {
+    "questId": 4704034,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704034
+  },
+  "4704035": {
+    "questId": 4704035,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704035
+  },
+  "4704036": {
+    "questId": 4704036,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704036
+  },
+  "4704039": {
+    "questId": 4704039,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704039
+  },
+  "4704040": {
+    "questId": 4704040,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704040
+  },
+  "4704041": {
+    "questId": 4704041,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704041
+  },
+  "4704042": {
+    "questId": 4704042,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704042
+  },
+  "4704043": {
+    "questId": 4704043,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704043
+  },
+  "4704044": {
+    "questId": 4704044,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704044
+  },
+  "4704050": {
+    "questId": 4704050,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704050
+  },
+  "4704051": {
+    "questId": 4704051,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 4704051
+  },
+  "4706010": {
+    "questId": 4706010,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4706010
+  },
+  "6523001": {
+    "questId": 6523001,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6523001
+  },
+  "6710001": {
+    "questId": 6710001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6710001
+  },
+  "4707020": {
+    "questId": 4707020,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4707020
+  },
+  "6711011": {
+    "questId": 6711011,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6711011
+  },
+  "4709001": {
+    "questId": 4709001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709001
+  },
+  "4709017": {
+    "questId": 4709017,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709017
+  },
+  "4709032": {
+    "questId": 4709032,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709032
+  },
+  "4709079": {
+    "questId": 4709079,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709079
+  },
+  "7704002": {
+    "questId": 7704002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 7704002
+  },
+  "7705002": {
+    "questId": 7705002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 7705002
+  },
+  "7706001": {
+    "questId": 7706001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 7706001
+  },
+  "4710001": {
+    "questId": 4710001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710001
+  },
+  "4710018": {
+    "questId": 4710018,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710018
+  },
+  "4710021": {
+    "questId": 4710021,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710021
+  },
+  "4710025": {
+    "questId": 4710025,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710025
+  },
+  "4710029": {
+    "questId": 4710029,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710029
+  },
+  "4710033": {
+    "questId": 4710033,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710033
+  },
+  "4710037": {
+    "questId": 4710037,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710037
+  },
+  "4710041": {
+    "questId": 4710041,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710041
+  },
+  "1902001": {
+    "isHadRewardConf": true,
+    "questId": 1902001,
+    "questType": 5,
+    "taskDes": "打飞走调草挑战",
+    "rewardId": 45003
+  },
+  "4710045": {
+    "questId": 4710045,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710045
+  },
+  "1902004": {
+    "isHadRewardConf": true,
+    "questId": 1902004,
+    "questType": 5,
+    "taskDes": "打飞走调草挑战",
+    "rewardId": 1902004
+  },
+  "4710049": {
+    "questId": 4710049,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710049
+  },
+  "1910001": {
+    "isHadRewardConf": true,
+    "questId": 1910001,
+    "questType": 5,
+    "taskDes": "快速灭火挑战",
+    "rewardId": 45003
+  },
+  "1910013": {
+    "questId": 1910013,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 1910013
+  },
+  "1910015": {
+    "isHadRewardConf": true,
+    "questId": 1910015,
+    "questType": 5,
+    "taskDes": "领取奖励",
+    "rewardId": 1910015
+  },
+  "2602166": {
+    "isHadRewardConf": true,
+    "questId": 2602166,
+    "questType": 1,
+    "taskDes": "",
+    "rewardId": 2602166
+  },
+  "2602188": {
+    "questId": 2602188,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 2602188
+  },
+  "2602189": {
+    "questId": 2602189,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 2602189
+  },
+  "2705002": {
+    "isHadRewardConf": true,
+    "questId": 2705002,
+    "questType": 5,
+    "taskDes": "",
+    "rewardId": 2705002
+  },
+  "2707004": {
+    "questId": 2707004,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 2707004
+  },
+  "5503014": {
+    "questId": 5503014,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503014
+  },
+  "5503015": {
+    "questId": 5503015,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503015
+  },
+  "5503024": {
+    "questId": 5503024,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503024
+  },
+  "5503025": {
+    "questId": 5503025,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503025
+  },
+  "5503026": {
+    "questId": 5503026,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503026
+  },
+  "5503027": {
+    "questId": 5503027,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503027
+  },
+  "5504001": {
+    "questId": 5504001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5504001
+  },
+  "5608002": {
+    "questId": 5608002,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5608002
+  },
+  "5608007": {
+    "questId": 5608007,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5608007
+  },
+  "5701078": {
+    "questId": 5701078,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701078
+  },
+  "5701128": {
+    "questId": 5701128,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701128
+  },
+  "5701186": {
+    "questId": 5701186,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701186
+  },
+  "5701203": {
+    "isHadRewardConf": true,
+    "questId": 5701203,
+    "questType": 5,
+    "taskDes": "",
+    "rewardId": 5701203
+  },
+  "5701204": {
+    "isHadRewardConf": true,
+    "questId": 5701204,
+    "questType": 5,
+    "taskDes": "",
+    "rewardId": 5701204
+  },
+  "5701205": {
+    "isHadRewardConf": true,
+    "questId": 5701205,
+    "questType": 5,
+    "taskDes": "",
+    "rewardId": 5701205
+  },
+  "5701216": {
+    "questId": 5701216,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701216
+  },
+  "5701217": {
+    "questId": 5701217,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701217
+  },
+  "5701221": {
+    "questId": 5701221,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701221
+  },
+  "6513038": {
+    "questId": 6513038,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6513038
+  },
+  "7704006": {
+    "questId": 7704006,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 7704006
+  },
+  "7703001": {
+    "questId": 7703001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 7703001
+  },
+  "6514021": {
+    "questId": 6514021,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6514021
+  },
+  "7702002": {
+    "questId": 7702002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 7702002
+  },
+  "7701001": {
+    "questId": 7701001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 7701001
+  },
+  "6515001": {
+    "questId": 6515001,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6515001
+  },
+  "6802001": {
+    "questId": 6802001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6802001
+  },
+  "6517001": {
+    "questId": 6517001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6517001
+  },
+  "6518001": {
+    "questId": 6518001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6518001
+  },
+  "6711001": {
+    "questId": 6711001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6711001
+  },
+  "6601007": {
+    "questId": 6601007,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6601007
+  },
+  "6519030": {
+    "questId": 6519030,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6519030
+  },
+  "6519031": {
+    "questId": 6519031,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6519031
+  },
+  "6519032": {
+    "questId": 6519032,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6519032
+  },
+  "6519033": {
+    "questId": 6519033,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6519033
+  },
+  "6519044": {
+    "questId": 6519044,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6519044
+  },
+  "6201065": {
+    "isHadRewardConf": true,
+    "questId": 6201065,
+    "questType": 1,
+    "taskDes": "到丹岩高地顶峰找到炎心石，但是炎心石似乎在一个危险的大家伙周围，注意安全！",
+    "rewardId": 6201065
+  },
+  "6202001": {
+    "questId": 6202001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6202001
+  },
+  "6301003": {
+    "isHadRewardConf": true,
+    "questId": 6301003,
+    "questType": 5,
+    "taskDes": "与格拉斯博士对话领取奖励",
+    "rewardId": 6301003
+  },
+  "6302002": {
+    "questId": 6302002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6302002
+  },
+  "6522001": {
+    "questId": 6522001,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6522001
+  },
+  "6521015": {
+    "questId": 6521015,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6521015
+  },
+  "6521002": {
+    "questId": 6521002,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6521002
+  },
+  "6520001": {
+    "questId": 6520001,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6520001
+  },
+  "6519003": {
+    "questId": 6519003,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6519003
+  },
+  "6518013": {
+    "questId": 6518013,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6518013
+  },
+  "6302003": {
+    "questId": 6302003,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6302003
+  },
+  "6303002": {
+    "questId": 6303002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6303002
+  },
+  "6304002": {
+    "questId": 6304002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6304002
+  },
+  "6513005": {
+    "questId": 6513005,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6513005
+  },
+  "6512028": {
+    "questId": 6512028,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6512028
+  },
+  "6512011": {
+    "questId": 6512011,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6512011
+  },
+  "6511043": {
+    "questId": 6511043,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6511043
+  },
+  "6511030": {
+    "questId": 6511030,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6511030
+  },
+  "6511019": {
+    "questId": 6511019,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6511019
+  },
+  "6511014": {
+    "questId": 6511014,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6511014
+  },
+  "6306001": {
+    "questId": 6306001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6306001
+  },
+  "6505001": {
+    "isHadRewardConf": true,
+    "questId": 6505001,
+    "questType": 6,
+    "taskDes": "",
+    "rewardId": 6505001
+  },
+  "2707005": {
+    "questId": 2707005,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 2707005
+  },
+  "2709002": {
+    "isHadRewardConf": true,
+    "questId": 2709002,
+    "questType": 5,
+    "taskDes": "放生赐福炽焰兽",
+    "rewardId": 2709002
+  },
+  "6510031": {
+    "questId": 6510031,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6510031
+  },
+  "2710002": {
+    "isHadRewardConf": true,
+    "questId": 2710002,
+    "questType": 5,
+    "taskDes": "放生赐福炽焰兽",
+    "rewardId": 2710002
+  },
+  "3010004": {
+    "isHadRewardConf": true,
+    "questId": 3010004,
+    "questType": 5,
+    "taskDes": "与格拉斯博士对话领取奖励",
+    "rewardId": 3010004
+  },
+  "6510026": {
+    "isHadRewardConf": true,
+    "questId": 6510026,
+    "questType": 6,
+    "taskDes": "",
+    "rewardId": 6510026
+  },
+  "3403001": {
+    "isHadRewardConf": true,
+    "questId": 3403001,
+    "questType": 5,
+    "taskDes": "懒惰走调草对话控制",
+    "rewardId": 1201045
+  },
+  "6505002": {
+    "isHadRewardConf": true,
+    "questId": 6505002,
+    "questType": 6,
+    "taskDes": "到等级之后自动接取挂在任务列表",
+    "rewardId": 6505002
+  },
+  "3403007": {
+    "isHadRewardConf": true,
+    "questId": 3403007,
+    "questType": 5,
+    "taskDes": "懒惰走调草对话控制",
+    "rewardId": 1201045
+  },
+  "6505057": {
+    "questId": 6505057,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6505057
+  },
+  "3502112": {
+    "questId": 3502112,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502112
+  },
+  "3502114": {
+    "questId": 3502114,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502114
+  },
+  "3502120": {
+    "questId": 3502120,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502120
+  },
+  "3502123": {
+    "questId": 3502123,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502123
+  },
+  "3502127": {
+    "questId": 3502127,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502127
+  },
+  "3502129": {
+    "questId": 3502129,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502129
+  },
+  "3502147": {
+    "questId": 3502147,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502147
+  },
+  "6510009": {
+    "questId": 6510009,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6510009
+  },
+  "3701066": {
+    "isHadRewardConf": true,
+    "questId": 3701066,
+    "questType": 5,
+    "taskDes": "在迷雾森林中，你再次遭遇了草王。一番交战后，你们获得了胜利，但也从其逃离的洞中坠落。 艰难起身后，在你眼前的是一座巨大的地宫，而入口正被藤蔓紧紧封锁。 草王为何会逃向此处？它身上又有着怎样的故事？",
+    "rewardId": 3701066
+  },
+  "3701067": {
+    "isHadRewardConf": true,
+    "questId": 3701067,
+    "questType": 5,
+    "taskDes": "在迷雾森林中，你再次遭遇了草王。一番交战后，你们获得了胜利，但也从其逃离的洞中坠落。 艰难起身后，在你眼前的是一座巨大的地宫，而入口正被藤蔓紧紧封锁。 草王为何会逃向此处？它身上又有着怎样的故事？",
+    "rewardId": 3701067
+  },
+  "3701068": {
+    "isHadRewardConf": true,
+    "questId": 3701068,
+    "questType": 5,
+    "taskDes": "在迷雾森林中，你再次遭遇了草王。一番交战后，你们获得了胜利，但也从其逃离的洞中坠落。 艰难起身后，在你眼前的是一座巨大的地宫，而入口正被藤蔓紧紧封锁。 草王为何会逃向此处？它身上又有着怎样的故事？",
+    "rewardId": 3701068
+  },
+  "3705085": {
+    "questId": 3705085,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3705085
+  },
+  "3707079": {
+    "questId": 3707079,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3707079
+  },
+  "3708032": {
+    "questId": 3708032,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708032
+  },
+  "3708046": {
+    "questId": 3708046,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708046
+  },
+  "3708054": {
+    "questId": 3708054,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708054
+  },
+  "3708057": {
+    "questId": 3708057,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708057
+  },
+  "3708080": {
+    "questId": 3708080,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708080
+  },
+  "3709002": {
+    "questId": 3709002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3709002
+  },
+  "3710003": {
+    "questId": 3710003,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3710003
+  },
+  "3712009": {
+    "questId": 3712009,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3712009
+  },
+  "3712012": {
+    "questId": 3712012,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3712012
+  },
+  "3712033": {
+    "questId": 3712033,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3712033
+  },
+  "3713047": {
+    "questId": 3713047,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3713047
+  },
+  "3713049": {
+    "questId": 3713049,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3713049
+  },
+  "3713050": {
+    "questId": 3713050,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3713050
+  },
+  "3713051": {
+    "questId": 3713051,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3713051
+  },
+  "6505078": {
+    "questId": 6505078,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6505078
+  },
+  "3901009": {
+    "isHadRewardConf": true,
+    "questId": 3901009,
+    "questType": 5,
+    "taskDes": "返回寻找画家",
+    "rewardId": 3901009
+  },
+  "6505086": {
+    "isHadRewardConf": true,
+    "questId": 6505086,
+    "questType": 6,
+    "taskDes": "",
+    "rewardId": 6505086
+  },
+  "3901010": {
+    "isHadRewardConf": true,
+    "questId": 3901010,
+    "questType": 5,
+    "taskDes": "返回寻找画家",
+    "rewardId": 3901010
+  },
+  "4702016": {
+    "isHadRewardConf": true,
+    "questId": 4702016,
+    "questType": 5,
+    "taskDes": "炎铠龙似乎一直看守着那把勇气之剑，等待它的宿敌出现。你联结为大眼盔，进化为盔勇士，正在揭开盔与龙的传说之秘。",
+    "rewardId": 4702016
+  },
+  "5801012": {
+    "questId": 5801012,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5801012
+  },
+  "4702048": {
+    "isHadRewardConf": true,
+    "questId": 4702048,
+    "questType": 5,
+    "taskDes": "",
+    "rewardId": 4702048
+  },
+  "4702105": {
+    "questId": 4702105,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4702105
+  },
+  "4706038": {
+    "questId": 4706038,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4706038
+  },
+  "4706045": {
+    "questId": 4706045,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4706045
+  },
+  "4706046": {
+    "questId": 4706046,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4706046
+  },
+  "4706049": {
+    "questId": 4706049,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4706049
+  },
+  "4709006": {
+    "questId": 4709006,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709006
+  },
+  "4709016": {
+    "questId": 4709016,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709016
+  },
+  "4709028": {
+    "questId": 4709028,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709028
+  },
+  "4709029": {
+    "questId": 4709029,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709029
+  },
+  "4709030": {
+    "questId": 4709030,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709030
+  },
+  "2602001": {
+    "questId": 2602001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 2602001
+  },
+  "2602112": {
+    "questId": 2602112,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 2602112
+  },
+  "2602114": {
+    "questId": 2602114,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 2602114
+  },
+  "2607001": {
+    "questId": 2607001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 2607001
+  },
+  "2608001": {
+    "questId": 2608001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 2608001
+  },
+  "2620003": {
+    "questId": 2620003,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 2620003
+  },
+  "3002030": {
+    "questId": 3002030,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3002030
+  },
+  "6505020": {
+    "isHadRewardConf": true,
+    "questId": 6505020,
+    "questType": 6,
+    "taskDes": "",
+    "rewardId": 6505020
+  },
+  "3502001": {
+    "isHadRewardConf": true,
+    "questId": 3502001,
+    "questType": 1,
+    "taskDes": "重返艾德尔",
+    "rewardId": 3502001
+  },
+  "3502110": {
+    "questId": 3502110,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3502110
+  },
+  "3701030": {
+    "isHadRewardConf": true,
+    "questId": 3701030,
+    "questType": 5,
+    "taskDes": "在迷雾森林中，你再次遭遇了草王。一番交战后，你们获得了胜利，但也从其逃离的洞中坠落。 艰难起身后，在你眼前的是一座巨大的地宫，而入口正被藤蔓紧紧封锁。 草王为何会逃向此处？它身上又有着怎样的故事？",
+    "rewardId": 3701030
+  },
+  "6510006": {
+    "questId": 6510006,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6510006
+  },
+  "6510016": {
+    "questId": 6510016,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6510016
+  },
+  "6510022": {
+    "questId": 6510022,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6510022
+  },
+  "3705001": {
+    "questId": 3705001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3705001
+  },
+  "3705048": {
+    "questId": 3705048,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3705048
+  },
+  "6511003": {
+    "questId": 6511003,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6511003
+  },
+  "6511008": {
+    "isHadRewardConf": true,
+    "questId": 6511008,
+    "questType": 6,
+    "taskDes": "",
+    "rewardId": 6511008
+  },
+  "3707004": {
+    "questId": 3707004,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3707004
+  },
+  "3708001": {
+    "questId": 3708001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708001
+  },
+  "3708017": {
+    "questId": 3708017,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708017
+  },
+  "3708035": {
+    "questId": 3708035,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708035
+  },
+  "3708068": {
+    "questId": 3708068,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3708068
+  },
+  "6514010": {
+    "questId": 6514010,
+    "questType": 6,
+    "isHadRewardConf": true,
+    "rewardId": 6514010
+  },
+  "6514016": {
+    "isHadRewardConf": true,
+    "questId": 6514016,
+    "questType": 6,
+    "taskDes": "",
+    "rewardId": 6514016
+  },
+  "6517009": {
+    "questId": 6517009,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6517009
+  },
+  "3708099": {
+    "questId": 3708099,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3708099
+  },
+  "3708103": {
+    "questId": 3708103,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3708103
+  },
+  "3708104": {
+    "questId": 3708104,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3708104
+  },
+  "6601001": {
+    "questId": 6601001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6601001
+  },
+  "6601003": {
+    "questId": 6601003,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6601003
+  },
+  "6601004": {
+    "questId": 6601004,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6601004
+  },
+  "6601006": {
+    "questId": 6601006,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 6601006
+  },
+  "3708165": {
+    "questId": 3708165,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3708165
+  },
+  "3709001": {
+    "questId": 3709001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3709001
+  },
+  "3709031": {
+    "questId": 3709031,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3709031
+  },
+  "6201055": {
+    "isHadRewardConf": true,
+    "questId": 6201055,
+    "questType": 1,
+    "taskDes": "",
+    "rewardId": 6201055
+  },
+  "3709044": {
+    "questId": 3709044,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3709044
+  },
+  "6201053": {
+    "isHadRewardConf": true,
+    "questId": 6201053,
+    "questType": 1,
+    "taskDes": "",
+    "rewardId": 6201053
+  },
+  "3710001": {
+    "questId": 3710001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3710001
+  },
+  "6201026": {
+    "isHadRewardConf": true,
+    "questId": 6201026,
+    "questType": 1,
+    "taskDes": "到制香坊找苏尼娅制作香料吧",
+    "rewardId": 6201026
+  },
+  "6201001": {
+    "questId": 6201001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 6201001
+  },
+  "3711001": {
+    "questId": 3711001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3711001
+  },
+  "3711003": {
+    "questId": 3711003,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3711003
+  },
+  "5804007": {
+    "questId": 5804007,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5804007
+  },
+  "5803022": {
+    "isHadRewardConf": true,
+    "questId": 5803022,
+    "questType": 5,
+    "taskDes": "与两只小羊对话",
+    "rewardId": 5803022
+  },
+  "5803020": {
+    "isHadRewardConf": true,
+    "questId": 5803020,
+    "questType": 5,
+    "taskDes": "与格拉斯博士对话领取奖励",
+    "rewardId": 5803020
+  },
+  "5701140": {
+    "questId": 5701140,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701140
+  },
+  "5701134": {
+    "questId": 5701134,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701134
+  },
+  "5701132": {
+    "questId": 5701132,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701132
+  },
+  "5701082": {
+    "questId": 5701082,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5701082
+  },
+  "5608001": {
+    "questId": 5608001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 5608001
+  },
+  "3711037": {
+    "questId": 3711037,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3711037
+  },
+  "3712001": {
+    "questId": 3712001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3712001
+  },
+  "3712002": {
+    "questId": 3712002,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3712002
+  },
+  "3712003": {
+    "questId": 3712003,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3712003
+  },
+  "5503013": {
+    "questId": 5503013,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503013
+  },
+  "5503001": {
+    "questId": 5503001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5503001
+  },
+  "5502001": {
+    "questId": 5502001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 5502001
+  },
+  "5103001": {
+    "isHadRewardConf": true,
+    "questId": 5103001,
+    "questType": 5,
+    "taskDes": "调查超级抓抓的异常情况",
+    "rewardId": 5103001
+  },
+  "5101004": {
+    "isHadRewardConf": true,
+    "questId": 5101004,
+    "questType": 5,
+    "taskDes": "奇怪的体素核心描述",
+    "rewardId": 5101004
+  },
+  "3713001": {
+    "questId": 3713001,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3713001
+  },
+  "3713003": {
+    "questId": 3713003,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3713003
+  },
+  "4710052": {
+    "questId": 4710052,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4710052
+  },
+  "4709086": {
+    "questId": 4709086,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709086
+  },
+  "3713063": {
+    "questId": 3713063,
+    "questType": 7,
+    "isHadRewardConf": true,
+    "rewardId": 3713063
+  },
+  "3901001": {
+    "isHadRewardConf": true,
+    "questId": 3901001,
+    "questType": 5,
+    "taskDes": "传说，夜晚的鲸落浅滩，会传来悠扬的回声鲸歌。听到回声鲸歌的人，会得到来自深海的祝福。而海滩边的神秘画家，似乎就在寻找着歌声……",
+    "rewardId": 3901001
+  },
+  "3901016": {
+    "questId": 3901016,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 3901016
+  },
+  "4709031": {
+    "questId": 4709031,
+    "questType": 5,
+    "isHadRewardConf": true,
+    "rewardId": 4709031
+  },
+  "1908007": {
+    "isHadRewardConf": true,
+    "questId": 1908007,
+    "questType": 5,
+    "taskDes": "帮助女巫草找回在森林中遗失的“特殊”的走调草",
+    "rewardId": 45010
+  },
+  "3906001": {
+    "questId": 3906001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3906001
+  },
+  "3906022": {
+    "questId": 3906022,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3906022
+  },
+  "3907001": {
+    "questId": 3907001,
+    "questType": 1,
+    "isHadRewardConf": true,
+    "rewardId": 3907001
+  }
+}

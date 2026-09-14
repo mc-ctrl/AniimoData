@@ -1,0 +1,55 @@
+{
+  "29709174": {
+    "isFunny": false,
+    "locationChooseMethod": 0,
+    "pointList": [
+      {
+        "yaw": 0,
+        "position": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "remainingActiveCount": -1,
+    "markConfig": {
+      "image": "UI_Img_Camp",
+      "desc": "-1433870634",
+      "autoSetContent1": true,
+      "compassShowDistance": 60,
+      "initState": 0,
+      "markContent1": 29709174,
+      "markType": 1,
+      "activeDisplayType": 1,
+      "activeDistance": 0,
+      "title": "-2031153899",
+      "scale3": 1,
+      "showUI": true,
+      "yaw": 0,
+      "revivedPointState": true,
+      "scale1": 1,
+      "compassTxt": "-877828718",
+      "scale2": 1
+    },
+    "stpType": 1,
+    "priority": 0,
+    "yaw": 0,
+    "endTime": -1,
+    "startTime": -1,
+    "pos": [
+      0,
+      0,
+      0
+    ],
+    "templateId": 0,
+    "smartTerrainType": 1,
+    "PerceptibilityRangeMultiple": 0.5,
+    "activeCD": 0,
+    "behaviorStateKey": {
+      "templateKey": "",
+      "behaviorTreeTemplateParameters": {}
+    },
+    "interruptDetection": false
+  }
+}

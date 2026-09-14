@@ -1,0 +1,122 @@
+{
+  "duration": 1.2,
+  "BPName": "ability_15430900",
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Bullet01",
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "113": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 115,
+      "NodeID": 113,
+      "UID": "a973b03f-bba4-472a-bc43-2120c169c0fa",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        115,
+        164
+      ]
+    },
+    "107": {
+      "pos": "PROJECTILE",
+      "scale": 2.85,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "5b729249-f604-4dba-9da7-6a1e8a23966b",
+      "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Boom01",
+      "speed": 1,
+      "NodeID": 107
+    },
+    "162": {
+      "cameraShakeId": 20100,
+      "name": "playCameraImpulseById",
+      "UID": "94ef4f7c-42dd-47a5-bbdb-2320ec41ba03",
+      "target": "OWNER",
+      "NodeID": 162
+    },
+    "115": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 15430900,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "54cc815a-19ee-432f-ab91-df8ba8543644",
+      "target": "TARGET",
+      "NodeID": 115,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+        "disableShowJumpWord": true,
+        "impulseId": 2000,
+        "elementType": 3
+      }
+    },
+    "164": {
+      "value": 200,
+      "name": "applyECSElement",
+      "UID": "ab9b3250-c742-4c36-93c8-0efb4c1e3709",
+      "element": 1,
+      "target": "TARGET",
+      "NodeID": 164
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    113,
+    107,
+    162
+  ],
+  "angularIncreaseDuration": 1,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.01,
+  "calcResultNodeId": 115,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

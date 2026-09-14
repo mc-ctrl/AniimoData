@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2105504",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "8cc49a41-d2d7-4f9a-960d-d64cbfca9f74",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Debuff02",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "464b38da-31ef-4047-bb80-070961f8a130",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Debuff02",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "isDeathKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    2
+  ]
+}

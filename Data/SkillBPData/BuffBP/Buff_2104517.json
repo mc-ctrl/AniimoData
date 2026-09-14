@@ -1,0 +1,198 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104517",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    1
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2104517,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 18,
+        "UID": "8887e461-d940-495d-a54a-5e94a9cf7c9e",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "acefbc5c-e46a-400e-b7cc-4ddfba818ca3",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "2822c7ea-f348-46c7-b24d-931dcaab93e8",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "UID": "3f68b9ef-1332-4ed1-a3cd-cd3e8cc5c70e",
+      "destroyReason": "armorVanish",
+      "name": "buffDestroyReason",
+      "NodeID": 6
+    },
+    "35": {
+      "id": 2044,
+      "hasCountDown": true,
+      "NodeID": 35,
+      "UID": "9845e8bd-613f-4762-9229-8457a26f2d4f",
+      "name": "hideBossMechanismTip"
+    },
+    "31": {
+      "id": 2044,
+      "duration": 10,
+      "NodeID": 31,
+      "UID": "99d5f5a6-133b-4d59-b985-9530fcb00c2a",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c8e1c91d-74e2-4d27-8454-7b4831edb8d2",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "4d8aefe7-c7b7-4fae-ba67-10f2345db240",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "24": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "96e46bb7-a233-4765-b0ea-45bf156da64b",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water_break",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 8.1,
+      "buffId": 10013,
+      "NodeID": 14,
+      "UID": "4a6d3b09-98ee-408e-ad76-2f8fab5dcbd7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "25": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "ec0532a0-95eb-4cd9-953c-40ba29baf3a9",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water_break",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "3043b788-c796-442d-846a-609b48f2d1aa",
+      "effectId": "Eff_Parmon_10171_Skill_Shield_Water",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "duration": 8.1,
+      "buffId": 1000601,
+      "NodeID": 27,
+      "UID": "928132a0-4868-4879-b9ff-888b9ccffd7c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "acd3f29f-b5b7-4ab0-96d3-7527db1cf4c4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glameep_Skill_Gather_Break",
+      "NodeID": 17
+    },
+    "7": {
+      "actionIds": [
+        35,
+        14,
+        27,
+        16,
+        17,
+        24
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "a1b6426e-5175-4334-878b-d9064fcb96f3",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22,
+        25,
+        26
+      ],
+      "NodeID": 7
+    },
+    "30": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 210451701,
+      "NodeID": 30,
+      "UID": "bb9d9a3a-e723-4a91-89e0-769cbadd6be3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "26": {
+      "key": "LeafyShieldResult",
+      "name": "setCacheVal",
+      "UID": "b8a14646-5dc9-45f2-96a6-3fc8eeb3f1bf",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 26
+    },
+    "18": {
+      "calcId": 2104517,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 18,
+      "UID": "8887e461-d940-495d-a54a-5e94a9cf7c9e",
+      "name": "getParamByLuaConfig"
+    },
+    "28": {
+      "key": "LeafyShieldResultServer",
+      "name": "setServerCacheVal",
+      "UID": "dfc0e63e-1577-45c6-b898-1eeb75cb164f",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 28
+    },
+    "36": {
+      "buffId": 210451701,
+      "name": "removeBuff",
+      "UID": "4989e8b2-373d-4cda-bfca-26ab20c07aef",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    7,
+    36
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    20,
+    28,
+    30,
+    31
+  ]
+}

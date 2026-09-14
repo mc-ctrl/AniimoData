@@ -1,0 +1,203 @@
+[
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 0,
+    "rewardId": 90001,
+    "formQuality": [
+      1
+    ],
+    "friendshipLevel": 2,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 1
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 0,
+    "rewardId": 90001,
+    "formQuality": [
+      1
+    ],
+    "friendshipLevel": 3,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 2
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 0,
+    "rewardId": 90001,
+    "formQuality": [
+      1
+    ],
+    "friendshipLevel": 3,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 3
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 0,
+    "rewardId": 90001,
+    "formQuality": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "friendshipLevel": 4,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 1
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 0,
+    "rewardId": 90001,
+    "formQuality": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "friendshipLevel": 4,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 2
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 0,
+    "rewardId": 90001,
+    "formQuality": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "friendshipLevel": 4,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 3
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 16,
+    "rewardId": 90001,
+    "formQuality": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "friendshipLevel": 4,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 1
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 16,
+    "rewardId": 90001,
+    "formQuality": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "friendshipLevel": 4,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 2
+  },
+  {
+    "itemCost": [
+      [
+        2,
+        1000
+      ]
+    ],
+    "label": 16,
+    "rewardId": 90001,
+    "formQuality": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "friendshipLevel": 4,
+    "credential": {
+      "5": 10,
+      "4": 9,
+      "2": 8
+    },
+    "stage": 3
+  }
+]

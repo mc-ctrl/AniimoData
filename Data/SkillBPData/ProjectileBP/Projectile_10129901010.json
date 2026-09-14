@@ -1,0 +1,117 @@
+{
+  "duration": 6,
+  "BPName": "ability_10129901",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Ex_t",
+  "gravityRatio": 0,
+  "actOnTag": "froze",
+  "kind": "Free3d",
+  "nodeMap": {
+    "92": {
+      "needEcs": true,
+      "calcResultNodeId": 90,
+      "NodeID": 92,
+      "UID": "37da24f3-c4cc-4c5c-876f-f6711da01a7f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        90
+      ]
+    },
+    "97": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "afd63204-6f81-41b7-a87f-68d41616ddc3",
+      "effectId": "Eff_Parmon_10012_Ex_h",
+      "speed": 1,
+      "NodeID": 97
+    },
+    "99": {
+      "affectCameraAnim": true,
+      "cameraShakeId": 10104,
+      "NodeID": 99,
+      "UID": "a535abd2-fef9-4368-ac74-a8a2441a9cc8",
+      "target": "OWNER",
+      "name": "playCameraImpulseById"
+    },
+    "90": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.16
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "00b5ed22-6aec-420e-bb01-4c7284fa6c52",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 90
+    },
+    "98": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "93b65f0d-3f1d-4cde-952b-295c6089cc72",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_ultimate_03_impact",
+      "NodeID": 98
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a8a2b6da-efeb-44ae-a8bd-2398bbca0574",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_ultimate_03",
+      "NodeID": 76
+    }
+  },
+  "moveSpeed": 17,
+  "onProjectileFinishIds": [
+    97,
+    98,
+    99,
+    92
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "onProjectileStartIds": [
+    76
+  ],
+  "startSleepTime": 0,
+  "calcResultNodeId": 90,
+  "groundDestroy": true,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

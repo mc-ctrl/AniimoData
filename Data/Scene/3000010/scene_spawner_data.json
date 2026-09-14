@@ -1,0 +1,33 @@
+{
+  "72800187": {
+    "spawnType": 0,
+    "owner": "蔡颖",
+    "sandboxType": 1,
+    "position": [
+      -766.48,
+      142.9,
+      536.05
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72560351,
+    "id": 72800187,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "levelAreaConfigId": 30502,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72800186
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 30502,
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

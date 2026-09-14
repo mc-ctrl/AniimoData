@@ -1,0 +1,255 @@
+{
+  "87940560": {
+    "id": 87940560,
+    "wayPoints": [
+      {
+        "position": [
+          336.68,
+          4.02,
+          232.29
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          339.47,
+          4.02,
+          232.8
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          341.21,
+          4.02,
+          228.44
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          338.56,
+          8.18,
+          224.9
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_Node_Com_FlyStopGrab",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 0,
+                  "name": "tTargetStaticId"
+                },
+                {
+                  "realValue": false,
+                  "name": "tForce"
+                }
+              ]
+            }
+          ]
+        },
+        "ignoreRotation": true,
+        "position": [
+          336.89,
+          4.86,
+          225.57
+        ]
+      }
+    ],
+    "pos": [
+      336.68,
+      4.02,
+      232.29
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 51382268
+  },
+  "72326537": {
+    "id": 72326537,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "position": [
+          299.2,
+          0,
+          266.57
+        ]
+      },
+      {
+        "position": [
+          295.71,
+          0,
+          266.47
+        ]
+      },
+      {
+        "position": [
+          293.67,
+          0,
+          269.02
+        ]
+      },
+      {
+        "position": [
+          296.32,
+          0,
+          270.56
+        ]
+      },
+      {
+        "position": [
+          299.43,
+          0,
+          270.2
+        ]
+      }
+    ],
+    "firstWayPointSelectType": 2,
+    "pos": [
+      299.2,
+      0,
+      266.57
+    ],
+    "sandboxId": 51382268
+  },
+  "83241192": {
+    "id": 83241192,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          296.7,
+          0,
+          228.15
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          284.36,
+          0,
+          229.22
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          285.89,
+          0,
+          218.73
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          297.71,
+          0,
+          216.51
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          306.56,
+          0,
+          222.52
+        ]
+      }
+    ],
+    "pos": [
+      296.7,
+      0,
+      228.15
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 51382268
+  },
+  "87484667": {
+    "id": 87484667,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          296.65,
+          0,
+          189.91
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          284.31,
+          0,
+          190.98
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          285.84,
+          0,
+          180.49
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          297.66,
+          0,
+          178.27
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          306.51,
+          0,
+          184.28
+        ]
+      }
+    ],
+    "pos": [
+      296.65,
+      0,
+      189.91
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 51382268
+  }
+}

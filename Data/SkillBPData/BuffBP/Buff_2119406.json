@@ -1,0 +1,128 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119406",
+  "calcInfoByLuaConfig": {
+    "dmg_water_add_ratio": "param0",
+    "type": 1,
+    "id": 2119406
+  },
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6f33f5b8-6e64-42fd-9bb9-8eaa5e9b55d5",
+      "effectId": "Eff_Parmon_10194_Passive",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "912ce059-3a12-43e4-b3c9-a9ec64a4b24a",
+      "effectId": "Eff_Parmon_10194_Passive_L_Red",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "name": "checkPetPrototypeId",
+      "UID": "98001677-d352-43b4-a17e-19864d3a419a",
+      "target": "OWNER",
+      "petPrototypeId": 1019402,
+      "NodeID": 10
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "a9ec4a05-6f31-4a92-b8c8-75eac978cf08",
+      "effectId": "Eff_Parmon_10194_Passive_R_Red",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        6,
+        9
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "0cb8d269-435b-40f4-ade0-3965d041c593",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11,
+        13
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "7311b120-242d-48b2-8d16-027ca551e60d",
+      "effectId": "Eff_Parmon_10194_Passive_L",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fd44806a-e804-4a7b-97b1-bee55b75d09b",
+      "effectId": "Eff_Parmon_10194_Passive_R_Red",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "d2e3adae-aebf-49e2-a47f-ab1fc085cf1f",
+      "effectId": "Eff_Parmon_10194_Passive_R",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "7a730b22-dc68-4cb6-9505-8e358df67045",
+      "effectId": "Eff_Parmon_10194_Passive",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "05dce8e2-6c55-445b-a26e-97152c1fc2a3",
+      "effectId": "Eff_Parmon_10194_Passive_L",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7e5f2fe7-0d4f-40f3-8a19-58111373a40e",
+      "effectId": "Eff_Parmon_10194_Passive_R",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "e7a16d87-f5c5-46f6-a070-cd976a39fea5",
+      "effectId": "Eff_Parmon_10194_Passive_L_Red",
+      "target": "OWNER",
+      "NodeID": 14
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14,
+    16,
+    17,
+    18,
+    19
+  ],
+  "onBuffStartIds": [
+    8,
+    4
+  ]
+}

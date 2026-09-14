@@ -1,0 +1,85 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4001040",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 4001041,
+      "NodeID": 8,
+      "UID": "1fcb5c20-096c-42bd-a525-7d53bdc7810c",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "4": {
+      "isSwitchPetInherit": true,
+      "target": "CURPET",
+      "NodeID": 4,
+      "UID": "c2da830d-88c0-42d2-9dbf-7f15e8b902d1",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_TrueLoop",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "9": {
+      "UID": "a916bfb8-3873-4794-a1e0-ba13bb6de180",
+      "name": "registerHealEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "10": {
+      "unsummonValid": false,
+      "actionIds": [
+        9
+      ],
+      "name": "registerGroupEvent",
+      "UID": "ac5e43e6-a08d-46fd-a212-f926186d4748",
+      "NodeID": 10
+    },
+    "11": {
+      "buffId": 4001040,
+      "name": "removeBuff",
+      "UID": "020347d2-1955-4b9f-b25f-5d28d9b63693",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "ec2c50cd-137d-4775-8612-d0898562fe2f",
+      "effectId": "Eff_Parmon_10043_Skill_WaterHeal_TrueLoop",
+      "target": "CURPET",
+      "NodeID": 7
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "5c255449-23e6-4477-8036-ef2c15597505",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 4001040,
+    "caster_heal_add_ratio": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "onBuffStartIds": [
+    12,
+    4,
+    10
+  ]
+}

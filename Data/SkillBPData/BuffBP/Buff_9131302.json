@@ -1,0 +1,64 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9131302",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_AttackUp"
+    }
+  ],
+  "nodeMap": {
+    "5": {
+      "UID": "1e81f3fc-3434-4394-81c0-6852ab887c2a",
+      "name": "checkAbilityElementType",
+      "elementType": 3,
+      "NodeID": 5
+    },
+    "6": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "d22633fd-e989-46f5-a268-adc2e728d5e7",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "name": "addDynamicAttribute",
+      "UID": "d6b9078b-0357-42e3-97a7-59813e9c24a5",
+      "target": "CURPET",
+      "NodeID": 10,
+      "calcInfoByLuaConfig": {
+        "id": 9131302,
+        "type": 1,
+        "instant_bp_add_ratio": "param0",
+        "taken_dmg_inc_rate_v": "param0"
+      }
+    },
+    "7": {
+      "UID": "3ca35176-8812-4575-99cc-96b6ce7c0241",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        7
+      ],
+      "name": "registerGroupEvent",
+      "UID": "8ed85816-d0fe-4e01-9226-69af9f2710e4",
+      "NodeID": 8
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

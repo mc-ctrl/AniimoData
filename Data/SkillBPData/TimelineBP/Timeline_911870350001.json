@@ -1,0 +1,227 @@
+{
+  "nodeMap": {
+    "53": {
+      "UID": "08fea954-ba76-4f5e-9f20-492e349e40c8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "NodeID": 53
+    },
+    "63": {
+      "UID": "8d62689a-0e19-4878-96d4-4e6f77786068",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 63
+    },
+    "54": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0c68bdfd-d461-44ca-92b8-1731db9b0f83",
+      "target": "CASTER",
+      "NodeID": 54,
+      "animId": "Skill_DefenseStanceEnd"
+    },
+    "64": {
+      "action": {
+        "actionIds": [
+          63
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 64,
+      "UID": "840bbd57-81d6-4203-bd07-d44b765a65f6"
+    },
+    "66": {
+      "offsetXYZ": [
+        0,
+        0,
+        -2
+      ],
+      "templateId": 107114,
+      "name": "createEntity",
+      "UID": "18eb323f-d862-4dac-a07f-189e8612d1e4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 66,
+      "pos": "CASTER"
+    },
+    "67": {
+      "action": {
+        "actionIds": [
+          66
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 67,
+      "UID": "37220bda-828a-449a-9a6e-a3644853502d"
+    },
+    "68": {
+      "offsetXYZ": [
+        0,
+        0,
+        -2
+      ],
+      "templateId": 107120,
+      "name": "createEntity",
+      "UID": "74a56340-1fcb-4cbe-ad9d-de8076058a96",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 68,
+      "pos": "CASTER"
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "0c205ee8-02b2-4f11-a426-f252d5a5ea12",
+      "target": "CASTER",
+      "NodeID": 2
+    },
+    "4": {
+      "UID": "2011fe5f-c977-4841-b293-a949e2c925be",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          17,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.667,
+      "NodeID": 55,
+      "UID": "11eb5b60-986d-4840-aae0-3999c6778154"
+    },
+    "71": {
+      "buffId": 3023001,
+      "name": "hasBuff",
+      "UID": "01764d67-dd76-4a22-8d6c-3b75ebf40222",
+      "target": "MASTER",
+      "NodeID": 71
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          69
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 70,
+      "UID": "11e9afa9-6c93-46d6-94e5-3b8e4837f5ca"
+    },
+    "17": {
+      "UID": "d69cd523-7b46-4f81-9d8e-5c4b79213d50",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 17
+    },
+    "69": {
+      "actionIds": [
+        68
+      ],
+      "conditionActionIds": [
+        71
+      ],
+      "UID": "5cf44e0f-4925-4d46-94b6-116b48998925",
+      "name": "doActionsByConditions",
+      "NodeID": 69
+    },
+    "21": {
+      "UID": "335dfa73-0543-4a49-99ba-720fc23c4d19",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    },
+    "58": {
+      "duration": 0.3,
+      "name": "frameFreeze",
+      "UID": "9d828faf-023f-4a09-a929-b044f22c1a52",
+      "target": "OWNER",
+      "timeScale": 0.1,
+      "NodeID": 58
+    },
+    "19": {
+      "UID": "3b7a896c-a433-48e9-946f-b0433c052dd0",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 19
+    },
+    "51": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cc824e30-5a7e-41af-b778-f2fb163c2695",
+      "target": "CASTER",
+      "NodeID": 51,
+      "animId": "Skill_DefenseStanceStart"
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 60,
+      "UID": "d95c10d7-5e1e-454e-88b8-131cc9fce3f2"
+    }
+  },
+  "BPName": "ability_911870350",
+  "NodeID": 6,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    4,
+    21,
+    53,
+    60,
+    64,
+    55,
+    67,
+    70
+  ],
+  "layer": "Base",
+  "length": 2.277
+}

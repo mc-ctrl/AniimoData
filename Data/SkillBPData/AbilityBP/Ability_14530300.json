@@ -1,0 +1,59 @@
+{
+  "BPName": "ability_14530300",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10800260,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14530300001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "89": {
+      "name": "stopSoundStr",
+      "UID": "4f731c1f-91a2-4499-bdeb-9301468a0135",
+      "soundId": "SFX_Combat_10453_Skill_Dount",
+      "target": "OWNER",
+      "NodeID": 89
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_DountEnd",
+    "Skill_DountStart",
+    "Skill_DountLoop2",
+    "Skill_DountLoop1"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10453_Skill_Dount",
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_L_Skill",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_R_Skill",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_L_Skill_Blue",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_R_Skill_Blue",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_L_Trail",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_R_Trail",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_L_Trail_Blue",
+    "Eff_Parmon_10453_Common_PlpeFlame_Loop_R_Trail_Blue"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    14530302
+  ],
+  "onAbilityEndIds": [
+    89
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

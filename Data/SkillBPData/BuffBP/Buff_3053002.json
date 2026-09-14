@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "1d907762-0a7f-400f-b634-0860b5319b04",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 3053002,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 3
+    }
+  },
+  "BPName": "buff_3053002",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

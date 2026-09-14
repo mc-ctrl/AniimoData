@@ -1,0 +1,45 @@
+{
+  "42722608": {
+    "spawnType": 2,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 0,
+    "position": [
+      0.37,
+      1,
+      30.27
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "sandboxId": 42418261,
+    "id": 42722608,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42722607,
+          42489336,
+          42722603,
+          42722592,
+          42722588,
+          42722583,
+          42722580,
+          42722576,
+          42722573,
+          42722569
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "nodeMap": {
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3d3f2ff9-4455-4c52-88d7-f20edad0bba9",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_flystrike",
+      "NodeID": 9
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          21,
+          9,
+          22,
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.63,
+      "NodeID": 11,
+      "UID": "9d8e236f-294d-4248-94d5-846406c3998c"
+    },
+    "20": {
+      "UID": "a4b920dc-7e46-4fb3-9ff8-251e7b694c90",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          18,
+          26
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e5998e1e-a92e-434d-acfe-229c262cf330",
+      "effectId": "Eff_Monster_80023_MonSkill_Taught_Roar",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "22": {
+      "affectCameraAnim": true,
+      "NodeID": 22,
+      "UID": "62292784-952f-41dc-8ae5-b94d95cc656d",
+      "isCenter": 1,
+      "shakeAmplitude": 0.7,
+      "shakeDir": [
+        0,
+        0,
+        1
+      ],
+      "shakeDissipationDistance": 100,
+      "shakeFrequency": 12,
+      "shakeKeepTime": 1,
+      "shakeRadius": 70,
+      "shakeTime": 0.5,
+      "target": "OWNER",
+      "checkCasterIsPlayer": false,
+      "name": "playCameraImpulse"
+    },
+    "4": {
+      "UID": "5f5bbf15-c0ca-4194-beaf-5f9b48a73e2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          23,
+          24
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "disableAllInput": false,
+      "maxTime": 1.71,
+      "UID": "ea2edf26-049e-48bc-9865-742f90ddc4b8",
+      "resetInput": true,
+      "name": "hideAllUI",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "763b015e-47ab-4ab1-bd2a-ed9f81e55528",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 14
+    },
+    "25": {
+      "UID": "7c3df07a-84ab-4cf2-8cc1-33550a32e0f3",
+      "name": "restoreAllUI",
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "6b9fad4d-9d44-4156-95fd-2ec70ba80ad1",
+      "name": "restoreAllUI",
+      "NodeID": 26
+    },
+    "27": {
+      "lockState": false,
+      "UID": "1153341b-5957-4b03-a2f1-c88264e5fce3",
+      "name": "playerForceLock",
+      "distance": 30,
+      "NodeID": 27
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a7813e36-3626-4cb6-a085-49a96ed7f719",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Taught_Absorb",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.33,
+      "NodeID": 29,
+      "UID": "d5097cf4-b51d-4127-8648-59e9670d1b1f"
+    },
+    "18": {
+      "UID": "295b41d5-25be-4134-b032-9922898bb142",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 18
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "79323a3d-3b88-4173-98ff-f52f54f83fbc",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Taught02"
+    },
+    "16": {
+      "UID": "783a3f6d-4d06-4675-8045-340a03ca319e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          27
+        ]
+      },
+      "NodeID": 16
+    },
+    "23": {
+      "forcePlay": true,
+      "target": "CASTER",
+      "name": "playSkillCameraAnim",
+      "NodeID": 23,
+      "UID": "bc7380e5-8e25-4899-84ca-2e7ee11d3eab",
+      "blendInTime": 0,
+      "blendOutTime": 0.5,
+      "animResId": "$CameraAni_Monster_HelgonBoss_Taught.asset"
+    }
+  },
+  "BPName": "ability_800231500",
+  "NodeID": 6,
+  "UID": "26bc3730-850c-44a2-96ab-c127e885acb4",
+  "eventIds": [
+    16,
+    20,
+    4,
+    11,
+    29
+  ],
+  "layer": "Base",
+  "length": 3.43
+}

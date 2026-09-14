@@ -1,0 +1,27 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9147407",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "2": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 9147402,
+      "NodeID": 2,
+      "UID": "cfa030cc-5c51-4b65-b1bb-87f4cf1d0868",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    2
+  ]
+}

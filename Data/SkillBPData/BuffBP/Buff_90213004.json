@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_90213004",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b7ef7ac4-d463-41cb-b05c-f8d74f9aba41",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_Suolian_Blue",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b3694553-038a-48cd-bf82-3b0b1162c37f",
+      "effectId": "Eff_Yuanwei_KeyItem_Blue_Loop_suolian",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "f725f8c6-81af-4c55-a80c-d1bdf9a61f18",
+      "effectId": "Eff_Yuanwei_KeyItem_Blue_Loop_suolian",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "5b75faa9-fb63-4d17-84f4-f3178fbe237a",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_Suolian_Blue",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2dfd8a6e-861e-43be-b4a0-028d427e1346",
+      "effectId": "Eff_Level_IOT_FlowerVillage_Yuanwei_Suolian_BlueDisappear",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bcc55d1c-89bd-4adb-8889-8eccd8b0363e",
+      "effectId": "Eff_Yuanwei_KeyItem_Blue_End_suolian",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7,
+    5,
+    8,
+    10
+  ],
+  "onBuffStartIds": [
+    3,
+    9
+  ]
+}

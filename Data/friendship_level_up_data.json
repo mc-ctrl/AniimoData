@@ -1,0 +1,74 @@
+[
+  {
+    "changeFriendRate": 0.01,
+    "dayMax": 20,
+    "enumName": "VIST_HOMELAND",
+    "desc": "拜访家园",
+    "friendshipRange": 20
+  },
+  {
+    "changeFriendRate": 0.01,
+    "dayMax": 20,
+    "enumName": "CHAT",
+    "desc": "聊天",
+    "friendshipRange": 10
+  },
+  {
+    "enumName": "TEAM",
+    "friendshipRange": 0,
+    "changeFriendRate": 0,
+    "desc": "组队"
+  },
+  {
+    "enumName": "PVP",
+    "friendshipRange": 0,
+    "changeFriendRate": 0.03,
+    "desc": "PVP对战"
+  },
+  {
+    "enumName": "VIST_WORLD",
+    "friendshipRange": 0,
+    "changeFriendRate": 0,
+    "desc": "见面"
+  },
+  {
+    "enumName": "EXCHANGE_PET",
+    "friendshipRange": 0,
+    "changeFriendRate": 0.02,
+    "desc": "宠物交换"
+  },
+  {
+    "changeFriendRate": 0.03,
+    "dayMax": 40,
+    "enumName": "TEAM_DUNGEON",
+    "desc": "组队通关副本",
+    "friendshipRange": 40
+  },
+  {
+    "changeFriendRate": 0.02,
+    "dayMax": 60,
+    "enumName": "TEAM_BOSS",
+    "desc": "组队通关BOSS",
+    "friendshipRange": 20
+  },
+  {
+    "changeFriendRate": 0.01,
+    "dayMax": 20,
+    "enumName": "ACTION",
+    "desc": "使用互动动作",
+    "friendshipRange": 20
+  },
+  {
+    "changeFriendRate": 0,
+    "dayMax": 0,
+    "enumName": "FOLLOW",
+    "desc": "开始一次跟随",
+    "friendshipRange": 0
+  },
+  {
+    "enumName": "FOLLOW_GIVEPET",
+    "friendshipRange": 0,
+    "changeFriendRate": 0.02,
+    "desc": "跟随中赠宠一次"
+  }
+]

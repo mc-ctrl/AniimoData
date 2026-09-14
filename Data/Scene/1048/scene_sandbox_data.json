@@ -1,0 +1,45 @@
+{
+  "61644934": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 61644940,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "sightLevel": 128,
+    "sightLevelType": 128,
+    "spawners": [
+      61644936,
+      61644938,
+      61687452,
+      61687469
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1048/Sandbox_61644934_GraphRef.asset",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "汪玉笠",
+    "id": 61644934,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  }
+}

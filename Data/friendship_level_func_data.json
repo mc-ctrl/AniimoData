@@ -1,0 +1,169 @@
+{
+  "5": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconGiveGifts.png",
+    "funcLevel": 5,
+    "type": 2,
+    "value": 58,
+    "funcDesc": 1319067451,
+    "funcName": 1410623238
+  },
+  "6": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconImoExchange.png",
+    "type": 3,
+    "value": 53,
+    "funcDesc": 1248300968,
+    "funcName": 2082708576
+  },
+  "7": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconImoExchange.png",
+    "funcLevel": 1,
+    "type": 3,
+    "value": 53,
+    "funcDesc": 1490189303,
+    "funcName": 1459164185
+  },
+  "8": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconImoExchange.png",
+    "funcLevel": 2,
+    "type": 3,
+    "value": 54,
+    "funcDesc": 1173957037,
+    "funcName": 1372582960
+  },
+  "9": {
+    "funcRes": "$UI_Img_Intimacy_FirstMeet.png",
+    "cost": [
+      700034,
+      100
+    ],
+    "type": 1,
+    "value": 801108,
+    "funcDesc": 1517633155,
+    "funcName": 1080723108
+  },
+  "11": {
+    "funcRes": "$UI_Img_Intimacy_TacitUnderstanding.png",
+    "cost": [
+      700034,
+      100
+    ],
+    "type": 1,
+    "value": 801110,
+    "funcDesc": 1428420723,
+    "funcName": 1623391184
+  },
+  "1": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconGiveGifts.png",
+    "type": 2,
+    "funcDesc": 1585447041,
+    "funcName": 2090620112
+  },
+  "12": {
+    "funcRes": "$UI_Img_Intimacy_SupportFace.png",
+    "cost": [
+      700034,
+      100
+    ],
+    "type": 1,
+    "value": 801111,
+    "funcDesc": 1981258609,
+    "funcName": 1112722320
+  },
+  "3": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconGiveGifts.png",
+    "funcLevel": 3,
+    "type": 2,
+    "funcDesc": 1533765263,
+    "funcName": 1538088792
+  },
+  "4": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconGiveGifts.png",
+    "funcLevel": 4,
+    "type": 2,
+    "value": 57,
+    "funcDesc": 1355429680,
+    "funcName": 1769749165
+  },
+  "14": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IrisPower.png",
+    "funcLevel": 1,
+    "funcDesc": 1370903360,
+    "funcName": 1338316086
+  },
+  "10": {
+    "funcRes": "$UI_Img_Intimacy_PeaceGesture.png",
+    "cost": [
+      700034,
+      100
+    ],
+    "type": 1,
+    "value": 801109,
+    "funcDesc": 1655764052,
+    "funcName": 1121205549
+  },
+  "15": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IrisPower.png",
+    "funcLevel": 2,
+    "funcDesc": 1749789169,
+    "funcName": 1654128328
+  },
+  "22": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IrisPower.png",
+    "funcLevel": 3,
+    "funcDesc": 1213002540,
+    "funcName": 1888020459
+  },
+  "17": {
+    "funcRes": "$UI_Img_Intimacy_OnlineReminder.png",
+    "type": 5,
+    "funcDesc": 1917725271,
+    "funcName": 1228644645
+  },
+  "21": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconImoExchange.png",
+    "funcLevel": 3,
+    "type": 3,
+    "value": 55,
+    "funcDesc": 1453632774,
+    "funcName": 1450122863
+  },
+  "18": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconNormal.png",
+    "type": 6,
+    "funcDesc": 1477232839,
+    "funcName": 1516486048
+  },
+  "20": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconGiveGifts.png",
+    "funcLevel": 1,
+    "type": 2,
+    "value": 56,
+    "funcDesc": 2001949298,
+    "funcName": 1694846275
+  },
+  "19": {
+    "funcRes": "$UI_Img_Intimacy_CustomTitle.png",
+    "type": 7,
+    "funcDesc": 1893777008,
+    "funcName": 1448606239
+  },
+  "2": {
+    "funcRes": "$UI_Img_PlayerInfoCard_IconGiveGifts.png",
+    "funcLevel": 2,
+    "type": 2,
+    "value": 56,
+    "funcDesc": 2062309437,
+    "funcName": 1636181787
+  },
+  "13": {
+    "funcRes": "$UI_Img_Intimacy_HeartGesture.png",
+    "cost": [
+      700034,
+      100
+    ],
+    "type": 1,
+    "value": 801112,
+    "funcDesc": 1205421028,
+    "funcName": 1844491069
+  }
+}

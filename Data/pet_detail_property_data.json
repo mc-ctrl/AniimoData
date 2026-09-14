@@ -1,0 +1,294 @@
+[
+  [
+    {
+      "speciesProp": "species_hp_max_v",
+      "icon": "$ui_img_skill_icon_buff_01.png",
+      "propName": 1760794340,
+      "basePropIndex": 1,
+      "dec": 1765046986,
+      "displayProp": "hp_max_cur",
+      "finalProp": "hp_max_v",
+      "propMerge": 1,
+      "showType": 2
+    },
+    {
+      "dec": 2135705323,
+      "displayProp": "crit_rate_v",
+      "icon": "$ui_img_skill_icon_buff_20.png",
+      "showType": 1,
+      "propName": 1643910289
+    }
+  ],
+  [
+    {
+      "speciesProp": "species_atk_v",
+      "icon": "$ui_img_skill_icon_buff_03.png",
+      "propName": 2004803882,
+      "basePropIndex": 2,
+      "dec": 1781053733,
+      "displayProp": "atk_cur",
+      "finalProp": "atk_v",
+      "propMerge": 1,
+      "showType": 2
+    },
+    {
+      "dec": 1130554859,
+      "displayProp": "crit_dmg_v",
+      "icon": "$ui_img_skill_icon_buff_19.png",
+      "showType": 1,
+      "propName": 1551485939
+    }
+  ],
+  [
+    {
+      "speciesProp": "species_def_v",
+      "icon": "$ui_img_skill_icon_buff_physics.png",
+      "propName": 1659347761,
+      "basePropIndex": 3,
+      "dec": 1821740912,
+      "displayProp": "def_cur",
+      "finalProp": "def_v",
+      "propMerge": 1,
+      "showType": 2
+    },
+    {
+      "dec": 1558298158,
+      "displayProp": "taken_dmg_inc_rate_v",
+      "icon": "$ui_img_skill_icon_buff_17.png",
+      "showType": 1,
+      "propName": 1616650917
+    }
+  ],
+  [
+    {
+      "speciesProp": "species_ep_regen_force_v",
+      "icon": "$ui_img_skill_icon_buff_07.png",
+      "propName": 1461285650,
+      "basePropIndex": 4,
+      "dec": 1301713247,
+      "displayProp": "ep_regen_force_cur",
+      "finalProp": "ep_regen_force_v",
+      "propMerge": 1,
+      "showType": 2
+    },
+    {
+      "dec": 1719170424,
+      "displayProp": "taken_dmg_dec_rate_v",
+      "icon": "$ui_img_skill_icon_buff_21.png",
+      "showType": 1,
+      "propName": 1296475430
+    }
+  ],
+  [
+    {
+      "speciesProp": "species_def_mag_v",
+      "icon": "$ui_img_skill_icon_buff_magic.png",
+      "propName": 1271200897,
+      "basePropIndex": 5,
+      "dec": 1294044504,
+      "displayProp": "def_mag_cur",
+      "finalProp": "def_mag_v",
+      "propMerge": 1,
+      "showType": 2
+    },
+    {
+      "dec": 1356800929,
+      "displayProp": "element_restraint_add_ratio",
+      "icon": "$ui_img_skill_icon_buff_63.png",
+      "showType": 1,
+      "propName": 1599831919
+    }
+  ],
+  [
+    {
+      "speciesProp": "species_bp_atk_v",
+      "icon": "$ui_img_skill_icon_buff_08.png",
+      "propName": 1852057875,
+      "basePropIndex": 6,
+      "dec": 1321918625,
+      "displayProp": "bp_atk_cur",
+      "finalProp": "bp_atk_v",
+      "propMerge": 1,
+      "showType": 2
+    },
+    {
+      "dec": 1933504310,
+      "displayProp": "element_resist_add_ratio",
+      "icon": "$ui_img_skill_icon_buff_64.png",
+      "showType": 1,
+      "propName": 2047874306
+    }
+  ],
+  {
+    "2": {
+      "specialDes": 2,
+      "specialProp": [
+        [
+          "dmg_fire_add_ratio",
+          "$ui_img_skill_icon_buff_30.png",
+          "e46161",
+          "c35a5e"
+        ],
+        [
+          "dmg_water_add_ratio",
+          "$ui_img_skill_icon_buff_31.png",
+          "2e8fed",
+          "317fce"
+        ],
+        [
+          "dmg_ice_add_ratio",
+          "$ui_img_skill_icon_buff_32.png",
+          "45c1d6",
+          "43a7bb"
+        ],
+        [
+          "dmg_electric_add_ratio",
+          "$ui_img_skill_icon_buff_33.png",
+          "e0c21a",
+          "bfa725"
+        ],
+        [
+          "dmg_rock_add_ratio",
+          "$ui_img_skill_icon_buff_34.png",
+          "bea77b",
+          "a49272"
+        ],
+        [
+          "dmg_wind_add_ratio",
+          "$ui_img_skill_icon_buff_35.png",
+          "58c7b1",
+          "53ab9e"
+        ],
+        [
+          "dmg_grass_add_ratio",
+          "$ui_img_skill_icon_buff_36.png",
+          "51b17a",
+          "4d9a72"
+        ],
+        [
+          "dmg_dark_add_ratio",
+          "$ui_img_skill_icon_buff_37.png",
+          "9355d0",
+          "8250b6"
+        ],
+        [
+          "dmg_holy_add_ratio",
+          "$ui_img_skill_icon_buff_38.png",
+          "f6a93c",
+          "d19340"
+        ]
+      ],
+      "icon": "$ui_img_skill_icon_buff_39.png",
+      "elementTitle": 1478241805,
+      "dec": 1773745069,
+      "displayProp": "combat_ep_regen_p",
+      "propName": 1860668734,
+      "elementTipDesc": 1166691364,
+      "showType": 1
+    }
+  },
+  {
+    "2": {
+      "specialDes": 3,
+      "specialProp": [
+        [
+          "dmg_fire_dec_ratio",
+          "$ui_img_skill_icon_buff_44.png",
+          "e46161",
+          "c35a5e"
+        ],
+        [
+          "dmg_water_dec_ratio",
+          "$ui_img_skill_icon_buff_45.png",
+          "2e8fed",
+          "317fce"
+        ],
+        [
+          "dmg_ice_dec_ratio",
+          "$ui_img_skill_icon_buff_46.png",
+          "45c1d6",
+          "43a7bb"
+        ],
+        [
+          "dmg_electric_dec_ratio",
+          "$ui_img_skill_icon_buff_47.png",
+          "e0c21a",
+          "bfa725"
+        ],
+        [
+          "dmg_rock_dec_ratio",
+          "$ui_img_skill_icon_buff_48.png",
+          "bea77b",
+          "a49272"
+        ],
+        [
+          "dmg_wind_dec_ratio",
+          "$ui_img_skill_icon_buff_49.png",
+          "58c7b1",
+          "53ab9e"
+        ],
+        [
+          "dmg_grass_dec_ratio",
+          "$ui_img_skill_icon_buff_50.png",
+          "51b17a",
+          "4d9a72"
+        ],
+        [
+          "dmg_dark_dec_ratio",
+          "$ui_img_skill_icon_buff_51.png",
+          "9355d0",
+          "8250b6"
+        ],
+        [
+          "dmg_holy_dec_ratio",
+          "$ui_img_skill_icon_buff_52.png",
+          "f6a93c",
+          "d19340"
+        ]
+      ],
+      "icon": "$ui_img_skill_icon_buff_40.png",
+      "elementTitle": 1968450784,
+      "dec": 2057256165,
+      "displayProp": "combat_ep_regen_p",
+      "propName": 1774570206,
+      "elementTipDesc": 1553423450,
+      "showType": 1
+    }
+  },
+  {
+    "2": {
+      "dec": 2124530883,
+      "displayProp": "taken_normal_attack_dmg_inc_rate_v",
+      "icon": "$ui_img_skill_icon_buff_41.png",
+      "showType": 1,
+      "propName": 1644101732
+    }
+  },
+  {
+    "2": {
+      "dec": 1893094221,
+      "displayProp": "taken_skill_dmg_inc_rate_v",
+      "icon": "$ui_img_skill_icon_buff_42.png",
+      "showType": 1,
+      "propName": 1410770454
+    }
+  },
+  {
+    "2": {
+      "dec": 1667848503,
+      "displayProp": "taken_ultimate_dmg_inc_rate_v",
+      "icon": "$ui_img_skill_icon_buff_43.png",
+      "showType": 1,
+      "propName": 1728594089
+    }
+  },
+  {
+    "2": {
+      "dec": 1844544386,
+      "displayProp": "common_skill_cd_dec_rate_v",
+      "icon": "$ui_img_skill_icon_buff_59.png",
+      "showType": 1,
+      "propName": 1869273579
+    }
+  }
+]

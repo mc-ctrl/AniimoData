@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117420",
+  "name": "减速（泡泡獭家族-水泡轰炸）",
+  "UID": "1861788e-1903-4041-b361-7ff8c1cd907e",
+  "desc": "减速（泡泡獭家族-水泡轰炸）",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "calcInfoByLuaConfig": {
+    "id": 2117420,
+    "speed_ratio_sprint_v": "param0",
+    "type": 1,
+    "speed_ratio_run_v": "param0"
+  }
+}

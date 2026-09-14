@@ -1,0 +1,37 @@
+{
+  "preloadAnims": [
+    "Skill_ChimneySentry_Start",
+    "Skill_ChimneySentry_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Die",
+    "Eff_Parmon_10433_Skill_ChimneySentry_fire",
+    "Eff_Parmon_10433_Skill_ChimneySentry_Loop",
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10433_Skill_ChimneySentry_Release"
+  ],
+  "BPName": "ability_14330303",
+  "NodeID": 1,
+  "UID": "182c8e21-2dd2-4907-99ce-7f4df60da490",
+  "searchTargetRangeUp": 3,
+  "abilityParamId": 10800382,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeRadius": 8,
+  "checkExistBurrow": false,
+  "searchTargetRangeDown": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14330303001,
+      "name": "setCombatActionTimeline",
+      "UID": "bcc8cccf-127a-4a4f-92d9-09dc4e376c7d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2
+}

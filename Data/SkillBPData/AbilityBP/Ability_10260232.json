@@ -1,0 +1,43 @@
+{
+  "BPName": "ability_10260232",
+  "NodeID": 1,
+  "UID": "f2e6d1be-7ab4-4474-85eb-f66ad56b59be",
+  "abilityParamId": 10200262,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "13": {
+      "timelineId": 10260232001,
+      "name": "setCombatActionTimeline",
+      "UID": "48a6e5d6-b622-4bae-a277-c73b48dfd876",
+      "target": "CASTER",
+      "NodeID": 13
+    }
+  },
+  "onAbilityCastIds": [
+    13
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 2,
+  "preloadAnims": [
+    "Skill_Smash03",
+    "Skill_Smash_BackSwing"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10026_Skill_Entrance_01_Ice",
+    "Eff_Parmon_10026_Skill_Entrance_Ground_03_Ice",
+    "Eff_Debuff_stun"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 1,
+  "searchTargetRangeUp": 1,
+  "shortDesc": "",
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

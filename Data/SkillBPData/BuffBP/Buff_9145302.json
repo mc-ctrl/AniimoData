@@ -1,0 +1,88 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9145302",
+  "NodeID": 1,
+  "UID": "918535db-c555-46bb-a8e0-cbd28c1dac0b",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 9145302,
+      "name": "removeBuff",
+      "UID": "64470704-a059-43a4-a41a-c6868cd9fa2c",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "7f2a84a8-dbfe-4080-ad3e-9221ee834b6e",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "ee8fea91-86ef-4c71-8fa4-4489b79dd941",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 9
+    },
+    "14": {
+      "key": "914530101",
+      "name": "setCacheVal",
+      "UID": "cff44f9d-f13c-4a0b-8be5-b73bb6a72ed8",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "03d8de9c-797f-4939-ab89-52131273216f",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 10
+    },
+    "13": {
+      "calcInfo": {
+        "passive_energy_cur": -12
+      },
+      "name": "calcResult",
+      "UID": "0cbe132f-e9ac-4bcd-8269-8222e8dd8eb5",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "5": {
+      "UID": "0189a1b7-14c5-4778-a0eb-45534e381c4d",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "8": {
+      "UID": "bca3ff59-2637-41a7-9f46-a391f5c294e0",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 8
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 9145302,
+    "type": 1,
+    "taken_skill_dmg_inc_rate_v": "param0"
+  },
+  "onBuffDestroyIds": [
+    13,
+    10,
+    14
+  ],
+  "onBuffStartIds": [
+    9,
+    5
+  ]
+}

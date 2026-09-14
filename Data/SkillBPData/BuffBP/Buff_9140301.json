@@ -1,0 +1,62 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "1c6f4c27-808d-4547-b7db-fcb59a4d36bd",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "duration": 3,
+      "actionIds": [
+        2,
+        9
+      ],
+      "NodeID": 4,
+      "UID": "f087e4f7-cf17-40f4-ac58-83be2a898c9d",
+      "name": "addTimer"
+    },
+    "9": {
+      "calcInfo": {
+        "passive_energy_cur": -80
+      },
+      "name": "calcResult",
+      "UID": "4de8b90c-e829-4196-af5c-4d2da1b56526",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "7": {
+      "naturalDecayV": 8,
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 8,
+      "name": "registerPassiveEnergyInfo",
+      "UID": "a47d4761-e340-44e1-901f-095047f91836",
+      "superBoosted": true,
+      "spEnergyMaxV": 80,
+      "spEnergyInitV": 0,
+      "NodeID": 7,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 1
+    },
+    "2": {
+      "buffId": 91403010,
+      "name": "removeBuff",
+      "UID": "0f8f594a-851e-443b-94fa-d711a476df51",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_9140301",
+  "dynamicRPCStates": {},
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    7
+  ]
+}

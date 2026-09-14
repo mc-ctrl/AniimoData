@@ -1,0 +1,108 @@
+{
+  "BPName": "ability_10250300",
+  "NodeID": 1,
+  "UID": "b6c15e17-506b-4d9b-ae58-53ff3d5cd96b",
+  "abilityIndicator": 1,
+  "abilityParamId": 10500021,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        56
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "5e7b3ff6-f620-4c20-b499-86a8a7953afe",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "81": {
+      "UID": "c555729b-7e90-4923-8567-fca40362ab69",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 81
+    },
+    "56": {
+      "timelineId": 10250300002,
+      "name": "setCombatActionTimeline",
+      "UID": "3127bf47-e80c-42fd-b93f-f7146d2d5e31",
+      "target": "CASTER",
+      "NodeID": 56
+    },
+    "61": {
+      "isNot": false,
+      "stateName": "FLYING",
+      "isParentState": true,
+      "NodeID": 61,
+      "UID": "ac3ab0ef-256c-42b7-89f9-0b28653daf02",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "7": {
+      "timelineId": 10250300001,
+      "name": "setCombatActionTimeline",
+      "UID": "2092cbff-9987-419b-9546-fbbbca456316",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 4,
+  "preloadAnims": [
+    "Skill_Headbutt",
+    "Skill_Landingattack"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10025_Skill_Headbutt_Charge",
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10025_Skill_Headbutt_Ground",
+    "Eff_Parmon_10025_Skill_Landingattack",
+    "Eff_Hit_Metal_Slash",
+    "Eff_Parmon_Common_Skill_Shield_Fire_01",
+    "Eff_Parmon_Common_Skill_Shield_Fire_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      1.5,
+      1.5,
+      12,
+      2,
+      2
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "onAbilityEndIds": [
+    81
+  ],
+  "onlyHasActOnTargets": true,
+  "parentDynamicRPCStates": [
+    "FLYING"
+  ],
+  "searchTargetRangeDown": 5
+}

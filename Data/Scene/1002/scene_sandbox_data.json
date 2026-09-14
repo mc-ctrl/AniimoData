@@ -1,0 +1,118 @@
+{
+  "91029359": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "宁静岛往返传送点",
+    "spawners": [
+      91089639
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "id": 91029359,
+    "position": [
+      1.6,
+      41.8,
+      29.59
+    ]
+  },
+  "91072146": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91101530": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Prefab_Container (1)",
+        "position": [
+          0,
+          42.31,
+          0
+        ],
+        "rotation": [
+          0,
+          42.73,
+          0
+        ],
+        "id": 91101530,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Echoback_UpsideDownWhaleDance_1.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Echoback_UpsideDownWhaleDance_1.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91072147": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          0,
+          42.31,
+          0
+        ],
+        "rotation": [
+          0,
+          42.73,
+          0
+        ],
+        "id": 91072147,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Echoback_UpsideDownWhaleDance.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Echoback_UpsideDownWhaleDance.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "全局_其他关卡_跳舞鲸鱼",
+    "spawners": {},
+    "activeOnInit": 1,
+    "sightLevel": 1024,
+    "id": 91072146,
+    "position": [
+      0,
+      42.31,
+      0
+    ]
+  }
+}

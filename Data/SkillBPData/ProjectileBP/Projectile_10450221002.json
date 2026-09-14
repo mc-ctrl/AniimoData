@@ -1,0 +1,155 @@
+{
+  "duration": 3,
+  "calcResultNodeId": 32,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_common_Skill_Grass_Bullet_Fly_NoAnimation",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    36,
+    89
+  ],
+  "nodeMap": {
+    "52": {
+      "UID": "1eff6b9e-ffd6-4b5c-b868-d5d735ba9582",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 52
+    },
+    "55": {
+      "needEcs": true,
+      "UID": "4f73313c-8130-4196-9ae4-9178db18566d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            0.7,
+            0.3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "NodeID": 55,
+      "name": "actOnTargets"
+    },
+    "63": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "20ae90de-3a65-4b9e-bebc-ab94accb6f6b",
+      "target": "OWNER",
+      "NodeID": 63
+    },
+    "32": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.3
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": 0
+      },
+      "UID": "1ff86e52-b262-481a-a068-49af0a59ade8",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 32
+    },
+    "89": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d8fc75cd-257c-4e60-aefd-52777cfa888f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WhirlwindGrass_End",
+      "NodeID": 89
+    },
+    "34": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 32,
+      "NodeID": 34,
+      "UID": "6e94d8be-3c59-4007-b635-c9e4d60c58c8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            0.7,
+            0.3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        32
+      ]
+    },
+    "36": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "e954c35f-f667-45af-a2be-afb6e04f420d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        63,
+        55
+      ],
+      "NodeID": 36
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "BPName": "ability_10450221",
+  "tickInterval": 0.1,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.3,
+  "impulseId": 2000,
+  "acceleration": 0
+}

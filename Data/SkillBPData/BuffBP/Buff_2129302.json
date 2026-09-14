@@ -1,0 +1,287 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2129302",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "d8ee4d5d-1a28-48d5-b7ad-821f8ede293a",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 5
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9e031a07-263b-4216-8130-8b422fbb3de1",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_Holy_LEar",
+      "speed": 1,
+      "NodeID": 38
+    },
+    "6": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "8eb4cefc-2753-4257-853e-eb734fef7e72",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        34
+      ],
+      "NodeID": 6
+    },
+    "41": {
+      "name": "stopEffectStr",
+      "UID": "642d5ed0-756b-437c-bf3a-ebdc88d32a3a",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_Holy_LEar",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "name": "stopEffectStr",
+      "UID": "f696c19d-f84f-4821-bc9d-6113cb5230f5",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_Holy_REar",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "c0cc436d-dce9-4c04-9d49-e07bd1ff03ce",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "44": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "0c539e66-1a8f-4b12-8895-d4aa70c7bdf7",
+      "name": "doActionsByConditions",
+      "NodeID": 44
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "261e299c-2c30-453a-a33b-2b37e07dcb5e",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_Holy_REar",
+      "speed": 1,
+      "NodeID": 40
+    },
+    "43": {
+      "UID": "8a4ff841-4b3d-45bc-9c36-d84000ce3e52",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 43
+    },
+    "11": {
+      "UID": "c218e2bc-b98e-4d22-9f40-c0c1b9b0d1b2",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "88a45058-e1da-4c56-b5bb-a9593489a4ab",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10293_Skill_Engraving_Lightning_Start",
+      "NodeID": 20
+    },
+    "12": {
+      "name": "checkPetPrototypeId",
+      "UID": "ce33051a-d783-416d-9197-c4f0a8df7d9b",
+      "target": "OWNER",
+      "petPrototypeId": 1029300,
+      "NodeID": 12
+    },
+    "22": {
+      "renderNameFilter": [
+        "M_Parmon_10293_Body"
+      ],
+      "duration": 20,
+      "disableWhenFinished": true,
+      "NodeID": 22,
+      "UID": "a11f23be-f06f-4382-a992-f4dafd59606a",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10293_Skill_Engraving_Lightning_Start",
+      "name": "playPreset"
+    },
+    "13": {
+      "actionIds": [
+        14,
+        16,
+        22
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "3a6f9ace-0e1f-4e19-8422-5e58fe9c65d5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        38,
+        40
+      ],
+      "NodeID": 13
+    },
+    "24": {
+      "renderNameFilter": [
+        "M_Parmon_10293_Body"
+      ],
+      "duration": 0.5,
+      "disableWhenFinished": true,
+      "NodeID": 24,
+      "UID": "e5a65d3e-ffda-4ce1-a533-719502935d06",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10293_Skill_Engraving_Lightning_End",
+      "name": "playPreset"
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4b9a7f23-3f3f-4ab0-bf8e-e70f4f9fe3fb",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_LEar",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "10": {
+      "target": {
+        "UID": "321f20c6-5f20-417e-ba65-b04a8c794006",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 9
+      },
+      "duration": 0,
+      "buffId": 21293021,
+      "NodeID": 10,
+      "UID": "fc36909c-324b-4969-85a9-b0bf1af1c971",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "46": {
+      "target": {
+        "UID": "63382316-71c7-459c-a667-b599cea4ccce",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 45
+      },
+      "duration": 0,
+      "buffId": 21293021,
+      "NodeID": 46,
+      "UID": "f8d553fa-96dd-47cb-862d-2021ed426d22",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "47": {
+      "UID": "a4b4fe29-c963-4168-9019-f6f493b5a9b2",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        46
+      ],
+      "NodeID": 47
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9c78df54-351f-4375-bbb9-851c53581474",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_REar",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "48": {
+      "eventName": "YinBao",
+      "name": "notifyCustomEvent",
+      "UID": "165e44f8-dfab-4727-ae1b-e3f490e96ea1",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "3d6798a8-8cbf-4b80-b982-e4c0d8642bac",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_LEar",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "29": {
+      "UID": "e69cfca2-ce32-4296-b0d7-ae91f45b39d1",
+      "target": "OWNER",
+      "name": "registerCastAbilityEvent",
+      "NodeID": 29
+    },
+    "37": {
+      "UID": "ac120f61-9e0c-4acc-9bf3-933cec5c294e",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        36
+      ],
+      "NodeID": 37
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "cea4bba7-2954-4cf6-a986-78cabe752272",
+      "effectId": "Eff_Parmon_10293_Skill_Engraving_REar",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "33": {
+      "UID": "f9cbe321-caa1-4846-8162-c5dc6048bed6",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 33
+    },
+    "34": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "09f2e63a-62e0-4d58-8958-e86002f18aef",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        44
+      ],
+      "NodeID": 34
+    },
+    "36": {
+      "target": {
+        "UID": "400cd4d1-f17e-49f4-9c58-d6ad7321b628",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 35
+      },
+      "duration": 0,
+      "buffId": 21293021,
+      "NodeID": 36,
+      "UID": "c2900cac-1396-4cc6-8529-888eb15f507d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    17,
+    19,
+    20,
+    24,
+    41,
+    42,
+    48
+  ],
+  "onBuffStartIds": [
+    29,
+    7,
+    13
+  ]
+}

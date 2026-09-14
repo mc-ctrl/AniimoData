@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_70000300",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10101030,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "5": {
+      "timelineId": 70000300001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 5
+    }
+  },
+  "onAbilityCastIds": [
+    5
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Gauntlet_Skill_ShockWave_Start",
+    "Gauntlet_Skill_ShockWave_End",
+    "Gauntlet_Skill_ShockWave_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "ParadoxNotion.Serialization.LUASerializer+constStringActionNodeInfo",
+    "Eff_Buff_Movement_Arrow_Down"
+  ],
+  "searchRelation": 2,
+  "name": "暗普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1
+}

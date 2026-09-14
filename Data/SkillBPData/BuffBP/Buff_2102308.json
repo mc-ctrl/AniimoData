@@ -1,0 +1,74 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "atk_p": 0.2
+  },
+  "NodeID": 1,
+  "UID": "e164d7b0-0066-4ff4-ba74-75d0517906d1",
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Evolution02_h"
+    }
+  ],
+  "BPName": "buff_2102308",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "53e93d73-156f-4985-8c1d-ea22b29cd0c6",
+      "effectId": "Eff_Parmon_Evolution02_h",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "UID": "73550d05-004e-4ea8-88f1-5805cc298416",
+      "name": "showBubbleMsg",
+      "msgId": 2059,
+      "NodeID": 9
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "892a7d62-921a-45c4-800d-48ce7e9606c1",
+      "effectId": "Eff_Parmon_Evolution01_h",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e0c00b56-9784-48f7-999b-f08b07bdaae8",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_shield_spawn",
+      "NodeID": 5
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8f670d7c-308b-4aec-82b0-5a5f30b92a05",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_shield_end",
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f1c6588f-4442-454d-8ddd-1113a9f0d2d7",
+      "effectId": "Eff_Parmon_Evolution01_h",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7,
+    8,
+    3
+  ],
+  "onBuffStartIds": [
+    9,
+    5,
+    10
+  ]
+}

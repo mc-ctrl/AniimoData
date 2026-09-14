@@ -1,0 +1,202 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "62": {
+      "action": {
+        "actionIds": [
+          92,
+          97,
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.03,
+      "NodeID": 62,
+      "UID": "261396c2-ac6f-4549-bd81-db44c57c978e"
+    },
+    "97": {
+      "UID": "17deb65b-a374-4b7f-bbc2-acb721b75cff",
+      "name": "stopAnimation",
+      "anim": "Skill_MagicFlower2",
+      "NodeID": 97
+    },
+    "115": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "320cd4a6-a826-4e7f-b81f-5aefec71fe1f",
+      "NodeID": 115,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "f5c012cb-46f5-40c7-97cb-ba7943b611fd",
+          "target": "OWNER",
+          "NodeID": 116,
+          "attributeName": "ep_temp_cur"
+        },
+        "name": "add",
+        "UID": "f6062e76-1169-4b84-85f6-f951a6a8c7b3",
+        "NodeID": 114,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "ca6d8ab8-28c2-4893-a403-34f605c78a17",
+          "target": "OWNER",
+          "NodeID": 113,
+          "attributeName": "ep_cur"
+        }
+      }
+    },
+    "117": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "341ae099-2b53-4ed2-b0bd-35f35d279f3f",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 117
+    },
+    "118": {
+      "name": "stopEffectStr",
+      "UID": "4e81a028-74d8-4d98-9223-e44270dad67e",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 118
+    },
+    "119": {
+      "name": "stopEffectStr",
+      "UID": "1639f556-31d1-4ae2-a042-7fbf7886ed05",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 119
+    },
+    "120": {
+      "action": {
+        "actionIds": [
+          119
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 120,
+      "UID": "0de436af-8798-4f81-8763-5ffb5ac7b854"
+    },
+    "71": {
+      "UID": "0d07be7a-c84a-4646-a4e1-ee44715c7f7a",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 71
+    },
+    "75": {
+      "UID": "4b1dbc6e-a676-4c43-82ce-949bd54734fc",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 75
+    },
+    "73": {
+      "UID": "9cf5b58b-3aa5-4fb0-a58b-6f5a31e0902a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          71,
+          91
+        ]
+      },
+      "NodeID": 73
+    },
+    "76": {
+      "action": {
+        "actionIds": [
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 76,
+      "UID": "e01dce8e-4c89-4535-b182-6eb0475e2fd4"
+    },
+    "92": {
+      "UID": "06421ae9-620f-4e5c-abee-2ee2f883952f",
+      "name": "stopAnimation",
+      "anim": "Skill_MagicFlower",
+      "NodeID": 92
+    },
+    "59": {
+      "offsetTime": 1.1,
+      "name": "playAnimation",
+      "UID": "d572052b-0cdd-41da-afff-37e4eefb6b65",
+      "target": "OWNER",
+      "NodeID": 59,
+      "animId": "Skill_MagicFlower"
+    },
+    "78": {
+      "UID": "70d21fe7-ea72-4a50-be5c-b07da45d4bf4",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 78
+    },
+    "60": {
+      "actionIds": [
+        111,
+        117
+      ],
+      "conditionActionIds": [
+        115
+      ],
+      "UID": "bbcd6fde-c3d3-41f1-8f76-98be90fd2809",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        59
+      ],
+      "NodeID": 60
+    },
+    "91": {
+      "UID": "53d619e3-877d-4707-b417-426fb9b06ec2",
+      "target": "OWNER",
+      "name": "stopMoveByInput",
+      "NodeID": 91
+    },
+    "111": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 111,
+      "UID": "0b313dd9-3825-456a-9a56-cd6af75f3086",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "80": {
+      "UID": "7a42457f-1ca5-491d-86bd-bfa9928ccd4e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          78,
+          118
+        ]
+      },
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_12110130",
+  "NodeID": 64,
+  "UID": "346afb4f-f7d0-4860-95d1-01c86b112920",
+  "eventIds": [
+    62,
+    76,
+    80,
+    73,
+    120
+  ],
+  "layer": "Base",
+  "length": 4.4
+}

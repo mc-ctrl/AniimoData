@@ -1,0 +1,224 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        27,
+        20,
+        14,
+        3,
+        28,
+        17,
+        13
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "cc995bf2-cb7a-474a-a379-82f8a1fdc110",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "6": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 6,
+      "relation": 1,
+      "enterTrapActionIds": [
+        5
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        1
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "a522f6f8-3220-433e-889d-83dc77973a48"
+    },
+    "8": {
+      "UID": "b5b947a5-3039-428c-b53f-3881bfad741f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          16,
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "20": {
+      "UID": "0432bfc4-560e-4792-9a82-64efc4da1416",
+      "name": "removeEvent",
+      "eventName": "onEnterTrap",
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "3bdb0d2c-160b-465e-9594-613d6863e296",
+      "target": "TrapTarget",
+      "name": "isTargetAlive",
+      "NodeID": 21
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "48bac0c3-df41-41cf-94ce-5f2ae2f5fea2",
+      "effectId": "Eff_Buff_Rogue_Money_Drop",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "key": "1",
+      "duration": 0.5,
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13,
+      "UID": "96e977b6-def6-403e-a210-446155e46790",
+      "name": "addTimer"
+    },
+    "24": {
+      "UID": "dc8b8d46-6f32-4a52-b638-9158c38da47c",
+      "name": "isNot",
+      "action": {
+        "templateId": 102702,
+        "name": "checkTargetTemplateId",
+        "UID": "ba91a25f-dde2-49e5-8f38-89599b5640b3",
+        "target": "TrapTarget",
+        "NodeID": 23
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "6a4fc784-ecd3-43f3-af6a-12c2662fb6a4",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "26": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "9a5105da-d0df-4867-bee1-13b875386fd7",
+      "NodeID": 26,
+      "lValue": {
+        "key": "GoldTime",
+        "name": "getCacheVal",
+        "UID": "ffbc26cf-da59-4d4a-83c3-0be7d65f5330",
+        "target": "OWNER",
+        "NodeID": 25
+      }
+    },
+    "15": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        -1,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "0cf9f975-9983-4ce6-8741-e212ecfc2c26",
+      "effectId": "Eff_Buff_Rogue_Money_Drop",
+      "scale": 5,
+      "NodeID": 15
+    },
+    "28": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 62102702,
+      "NodeID": 28,
+      "UID": "5a5fb381-2a84-40ac-b1cf-2e4135d24e33",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6ec6a44c-82fd-48e0-91f0-ee6f5faf1c1a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Drop",
+      "NodeID": 16
+    },
+    "27": {
+      "key": "GoldTime",
+      "name": "setCacheVal",
+      "UID": "3830297f-0472-4eed-bf20-4fdb204f2900",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 27
+    },
+    "17": {
+      "target": "TrapTarget",
+      "name": "playSoundStr",
+      "UID": "3006c46c-4644-4a42-bedc-b5903b20ec2b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Pickup",
+      "NodeID": 17
+    },
+    "29": {
+      "name": "checkTargetLifeState",
+      "UID": "8d917c3b-a871-4054-a67d-70b9cbda6577",
+      "target": "TrapTarget",
+      "NodeID": 29,
+      "life": 4
+    },
+    "18": {
+      "UID": "0eaee96b-e78f-4c7b-adef-5397ad60432a",
+      "target": "OWNER",
+      "name": "isTargetAlive",
+      "NodeID": 18
+    },
+    "12": {
+      "UID": "0775ef5c-a72f-419c-92bb-bb5ecf35aa8d",
+      "actorId": {
+        "UID": "798b57da-6fdb-45ae-81b9-25a1dc790322",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 11
+      },
+      "name": "destroyEntity",
+      "NodeID": 12
+    },
+    "19": {
+      "UID": "188bfb34-7fdd-4ce7-9fc3-c5e747b4c246",
+      "conditionIds": [
+        18,
+        22,
+        24,
+        26
+      ],
+      "name": "conditionAnd",
+      "NodeID": 19
+    },
+    "22": {
+      "UID": "67875ca0-5c5f-4769-aa61-7ece4d9d2a1f",
+      "conditionIds": [
+        29,
+        21
+      ],
+      "name": "conditionOr",
+      "NodeID": 22
+    },
+    "23": {
+      "templateId": 102702,
+      "name": "checkTargetTemplateId",
+      "UID": "ba91a25f-dde2-49e5-8f38-89599b5640b3",
+      "target": "TrapTarget",
+      "NodeID": 23
+    }
+  },
+  "BPName": "timeline_2102702",
+  "NodeID": 1,
+  "UID": "aacad472-df18-4f88-bdf8-31c6cc1902d2",
+  "eventIds": [
+    8
+  ],
+  "layer": "Base",
+  "length": 99999
+}

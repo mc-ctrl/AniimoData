@@ -1,0 +1,269 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145103",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "calcId": 1145103,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 37,
+      "UID": "059151a8-d1f3-415b-a629-6ae19a7d15ed",
+      "name": "getParamByLuaConfig"
+    },
+    "38": {
+      "target": "OWNER",
+      "duration": {
+        "calcId": 1145103,
+        "calcType": 1,
+        "paramName": "param3",
+        "NodeID": 37,
+        "UID": "059151a8-d1f3-415b-a629-6ae19a7d15ed",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 11451021,
+      "NodeID": 38,
+      "UID": "e03ee876-c34a-4842-8ad6-123287eb046a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "35": {
+      "calcId": 1145103,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 35,
+      "UID": "be58d8ff-7255-4f18-b5e5-c13b3e1289e4",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "needEcs": true,
+      "actionIds": [
+        4,
+        14
+      ],
+      "NodeID": 8,
+      "UID": "92936a7d-b8b3-4372-8cca-07e92ad2ac05",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.5
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": ""
+    },
+    "31": {
+      "buffId": 6005029,
+      "name": "hasBuff",
+      "UID": "a11955b9-b646-4ce4-b015-09d55f279fbd",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "df60648f-c9b1-43ef-83ec-cf685d0288e9",
+      "effectId": "Eff_Parmon_10451_Skill_Sprint",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "22": {
+      "calcId": 1145103,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 22,
+      "UID": "8ff82c5b-5333-4e51-bfda-50020360cc69",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 1145101,
+      "NodeID": 4,
+      "UID": "f1129cff-c27b-4d8c-91f1-39125d8422f7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "24": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "fd554b1d-6101-4543-9dfa-d10cb232a4c0",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "14": {
+      "buffId": 1145103,
+      "name": "removeBuff",
+      "UID": "aab25088-6c10-406b-acc9-769b275523d4",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "99094384-bc53-4ebc-b7d8-a294ce11f093",
+      "name": "buffStartThink",
+      "NodeID": 10
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "bdda258f-ea66-4d70-af1a-38246d089671",
+      "effectId": "Eff_Parmon_10451_Skill_Sprint",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "23": {
+      "target": "OWNER",
+      "duration": {
+        "calcId": 1145103,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 22,
+        "UID": "8ff82c5b-5333-4e51-bfda-50020360cc69",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 11451021,
+      "NodeID": 23,
+      "UID": "84cfccfd-4947-4402-a175-10d4691abe07",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "26": {
+      "buffId": 6005011,
+      "name": "hasBuff",
+      "UID": "f08397f4-6317-43dd-ab1a-09840a018eb7",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "buffId": 6005012,
+      "name": "hasBuff",
+      "UID": "cea15eb6-f1de-4494-aede-adc83818a3c2",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "2eed9e94-532f-45eb-ad61-01d3babd4a8b",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "29": {
+      "buffId": 6005013,
+      "name": "hasBuff",
+      "UID": "ab07241c-ba17-4959-9605-d0c504c09d4e",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "e67acb82-4ded-4938-b765-e72cd5fc03d5",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "20d000c5-5bf4-43ab-87f3-ed925c6f85bd",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "33": {
+      "calcId": 1145103,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 33,
+      "UID": "3816d616-8c3e-4c1a-a094-b9fdd1fe94b6",
+      "name": "getParamByLuaConfig"
+    },
+    "34": {
+      "target": "OWNER",
+      "duration": {
+        "calcId": 1145103,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 33,
+        "UID": "3816d616-8c3e-4c1a-a094-b9fdd1fe94b6",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 11451021,
+      "NodeID": 34,
+      "UID": "9276c15f-0329-441a-81a1-2a85303920cf",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "36": {
+      "target": "OWNER",
+      "duration": {
+        "calcId": 1145103,
+        "calcType": 1,
+        "paramName": "param2",
+        "NodeID": 35,
+        "UID": "be58d8ff-7255-4f18-b5e5-c13b3e1289e4",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 11451021,
+      "NodeID": 36,
+      "UID": "f91be499-f57e-4908-a362-7684d889735e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "onBuffDestroyIds": [
+    15,
+    24,
+    28,
+    30,
+    32
+  ],
+  "onBuffStartIds": [
+    2,
+    10
+  ]
+}

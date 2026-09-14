@@ -1,0 +1,163 @@
+{
+  "nodeMap": {
+    "69": {
+      "UID": "4d0245f0-2f1e-4492-a602-c6b07d01f4f5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          67
+        ]
+      },
+      "NodeID": 69
+    },
+    "115": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7a61e6a8-be23-4325-a235-4c3ba071b59b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "NodeID": 115
+    },
+    "82": {
+      "UID": "ab31ed64-405f-4745-b23e-6177d4bef0b4",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "cancellable": 1
+      },
+      "NodeID": 82
+    },
+    "75": {
+      "UID": "8a3ccbcd-650c-4fd1-b67f-7986ec29e534",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 75
+    },
+    "83": {
+      "action": {
+        "actionIds": [
+          82
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 83,
+      "UID": "357f4fd4-2204-4eb8-8c27-ed26db221556"
+    },
+    "91": {
+      "offsetXYZ": [
+        0,
+        1.5,
+        1
+      ],
+      "templateId": 12840101002,
+      "name": "createProjectile",
+      "UID": "c25d95d2-6a47-4e89-95d0-1aa1509e8ffd",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 91,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "84": {
+      "offsetXYZ": [
+        0,
+        1.5,
+        1
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5c7bd3e1-15c3-41b2-b7d9-8a1692e5f3a1",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+      "speed": 2,
+      "NodeID": 84
+    },
+    "77": {
+      "UID": "11a77458-ad5c-4f64-9819-539a0e37a5ec",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          75
+        ]
+      },
+      "NodeID": 77
+    },
+    "93": {
+      "action": {
+        "actionIds": [
+          91,
+          118
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 93,
+      "UID": "d8b03ccc-fba4-4ebe-ac8e-9732fefe3848"
+    },
+    "78": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d8948f10-5d90-4c26-be76-c1d1efed4362",
+      "target": "OWNER",
+      "NodeID": 78,
+      "animId": "Skill_Burrow_Attack"
+    },
+    "118": {
+      "name": "stopSoundStr",
+      "UID": "f0eb585d-7660-43f2-b349-e4d8954e548a",
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "target": "OWNER",
+      "NodeID": 118
+    },
+    "86": {
+      "action": {
+        "actionIds": [
+          115,
+          84
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 86,
+      "UID": "d901cb84-4d7f-48bc-97b0-0d1de75d831b"
+    },
+    "67": {
+      "UID": "4b0ed9ab-6fa7-4618-87a4-d8ac338d7a4e",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 67
+    },
+    "80": {
+      "UID": "9c573b27-6cb6-4228-940a-2420aac37add",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          78
+        ]
+      },
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_12840101",
+  "NodeID": 71,
+  "UID": "4701cac4-4ef7-4cbb-a1b4-3b8ee510e6f0",
+  "eventIds": [
+    69,
+    77,
+    83,
+    80,
+    93,
+    86
+  ],
+  "layer": "Base",
+  "length": 2
+}

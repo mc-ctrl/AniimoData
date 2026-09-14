@@ -1,0 +1,46 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004120",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "isUnSummonKeep": true,
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    3,
+    5
+  ],
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "a7f9de52-b31f-481f-87b4-d44952db64cd",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "target": "CURPET",
+      "duration": -1,
+      "buffId": 4004121,
+      "NodeID": 5,
+      "UID": "3a6ad16c-3070-44f6-acd8-a1a2b9c13214",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "2": {
+      "buffId": 4004120,
+      "name": "removeBuff",
+      "UID": "75da40ae-8922-4d00-9b1c-dfcbdb02b526",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

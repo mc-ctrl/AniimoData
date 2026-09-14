@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020017",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "MASTER",
+      "duration": -1,
+      "buffId": 402001701,
+      "NodeID": 5,
+      "UID": "dbbadc5c-4945-426f-ae8a-c61e207a9290",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "16da954f-2b3a-44a4-888b-71dc2e2f82f1",
+      "NodeID": 7
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerDeadEvent",
+      "UID": "c99db961-9cb4-4f35-9433-3b58ac44b95e",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

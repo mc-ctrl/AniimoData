@@ -1,0 +1,788 @@
+{
+  "Map_Parmon_10282": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.116667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.366667
+  },
+  "Map_Parmon_10283": {
+    "Hit_L": 1.5,
+    "Hit_Stand": 2.233333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 2.416667
+  },
+  "Map_Parmon_10284": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.483333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.533333
+  },
+  "Map_Parmon_10285": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.366667,
+    "Hit_Shake": 0.5666667,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10291": {
+    "Hit_L": 0.9,
+    "Hit_Stand": 1.416667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.216667
+  },
+  "Map_Parmon_10293": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.333333,
+    "Hit_Shake": 0.5666667,
+    "Hit_H": 1.266667
+  },
+  "Map_Parmon_10311": {},
+  "Map_Parmon_10313": {},
+  "Map_Parmon_10314": {},
+  "Map_Parmon_10321": {
+    "Hit_L": 1.45,
+    "Hit_Stand": 0.9666667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.733333
+  },
+  "Map_Parmon_10323": {
+    "Hit_L": 1.05,
+    "Hit_Stand": 2.533334,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.333333
+  },
+  "Map_Parmon_10324": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.2
+  },
+  "Map_Parmon_10331": {
+    "Hit_L": 0.7500001,
+    "Hit_Stand": 1.583333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 0.9666667
+  },
+  "Map_Parmon_10333": {
+    "Hit_L": 0.8000001,
+    "Hit_Stand": 1.4,
+    "Hit_Shake": 0.5,
+    "Hit_H": 0.9166667
+  },
+  "Map_Parmon_10351": {
+    "Hit_L": 1.2,
+    "Hit_Stand": 2.166667,
+    "Hit_Shake": 0.6666667,
+    "Hit_H": 2
+  },
+  "Map_Parmon_10352": {
+    "Hit_L": 1.033333,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.2666667,
+    "Hit_H": 1.216667
+  },
+  "Map_Parmon_10361": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.333333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10363": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.416667,
+    "Hit_Shake": 0.5666667,
+    "Hit_H": 1.2
+  },
+  "Map_Parmon_10371": {
+    "Hit_L": 1.033333,
+    "Hit_Stand": 1.433333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.316667
+  },
+  "Map_Parmon_10373": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.166667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 0.8333334
+  },
+  "Map_Parmon_10381": {},
+  "Map_Parmon_10383": {},
+  "Map_Parmon_10391": {},
+  "Map_Parmon_10393": {},
+  "Map_Parmon_10401": {},
+  "OMap_Parmon_90213_Boss": {
+    "Hit_L": 0.9666667,
+    "Hit_Stand": 2.666667,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 3.616667
+  },
+  "Map_Parmon_10281": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.083333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.383333
+  },
+  "Map_Parmon_10263": {
+    "Hit_L": 1.25,
+    "Hit_Stand": 1.583333,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.666667
+  },
+  "Map_Parmon_10262": {
+    "Hit_L": 1,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.4
+  },
+  "Map_Parmon_10261": {
+    "Hit_L": 1.05,
+    "Hit_Stand": 1.466667,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.416667
+  },
+  "Map_Parmon_10241": {},
+  "Map_Parmon_10233": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.333333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10232": {
+    "Hit_L": 1,
+    "Hit_Stand": 0.7,
+    "Hit_Shake": 0.3333333,
+    "Hit_H": 1.333333
+  },
+  "Map_Parmon_10231": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.083333,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10223": {},
+  "Map_Parmon_10222": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.983333,
+    "Hit_Shake": 0.3333333,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10221": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.333333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10213": {
+    "Hit_L": 1.2,
+    "Hit_Stand": 2.333333,
+    "Hit_Shake": 0.4333334,
+    "Hit_H": 1.4
+  },
+  "Map_Parmon_10212": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.066667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10211": {
+    "Hit_L": 1.033333,
+    "Hit_Stand": 1.55,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10207": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.666667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10203": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.9,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10201": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.3,
+    "Hit_Shake": 0.3833333,
+    "Hit_H": 1.166667
+  },
+  "Map_Parmon_10195": {},
+  "Map_Parmon_10194": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.833333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10192": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.266667,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10191": {
+    "Hit_L": 1,
+    "Hit_Stand": 0.7500001,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10187": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.266667,
+    "Hit_Shake": 0.5666667,
+    "Hit_H": 1.15
+  },
+  "Map_Parmon_10185": {
+    "Hit_L": 1,
+    "Hit_Stand": 0.7166667,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10184": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.583333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10181": {
+    "Hit_L": 1,
+    "Hit_Stand": 3,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10174": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.1,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.4
+  },
+  "Map_Parmon_10173": {
+    "Hit_L": 1,
+    "Hit_Stand": 2,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10172": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.833333,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10171": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.333333,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10163": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.516667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10162": {
+    "Hit_L": 0.95,
+    "Hit_Stand": 1.466667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.166667
+  },
+  "Map_Parmon_10161": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.566667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10153": {},
+  "Map_Parmon_10152": {},
+  "Map_Parmon_10151": {},
+  "Map_Parmon_10144": {},
+  "Map_Parmon_10143": {
+    "Hit_L": 1,
+    "Hit_Stand": 3,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10142": {
+    "Hit_L": 1,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10141": {
+    "Hit_L": 1,
+    "Hit_Stand": 3.266667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10133": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.916667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10132": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.166667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10131": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10122": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.1,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10083": {},
+  "Map_Parmon_10082": {},
+  "Map_Parmon_10081": {},
+  "Map_Parmon_10072": {},
+  "Map_Parmon_10071": {},
+  "Map_Parmon_10055": {
+    "Hit_L": 1.2,
+    "Hit_Stand": 1.966667,
+    "Hit_Shake": 0.2333333,
+    "Hit_H": 2
+  },
+  "Map_Parmon_10053": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.5000001,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10052": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.133333,
+    "Hit_Shake": 0.4166667,
+    "Hit_H": 1.166667
+  },
+  "Map_Parmon_10051": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.4666667,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10045": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.383333,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10043": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.55,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10042": {
+    "Hit_L": 1,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10041": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.566667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.45
+  },
+  "Map_Parmon_10033": {
+    "Hit_L": 0.7666667,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.416667
+  },
+  "Map_Parmon_10032": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.633333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.266667
+  },
+  "Map_Parmon_10031": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.366667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.35
+  },
+  "Map_Parmon_10027": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.3333333,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10026": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.716667,
+    "Hit_Shake": 0.4,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10025": {
+    "Hit_L": 1.283333,
+    "Hit_Stand": 1.383333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.733333
+  },
+  "Map_Parmon_10024": {
+    "Hit_L": 1,
+    "Hit_Stand": 2,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10023": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.6,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.4
+  },
+  "Map_Parmon_10022": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.8,
+    "Hit_Shake": 0.5166667,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10021": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.45,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10013": {},
+  "Map_Parmon_10012": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10011": {
+    "Hit_L": 1.083333,
+    "Hit_Stand": 1.666667,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Custom_SkillObj_10045_Ex_Lotus": {},
+  "Map_Custom_SceneObject_Tendril": {},
+  "Map_Custom_SceneObject_Incubator": {},
+  "Map_Custom_Rogue_Dice": {},
+  "Map_Custom_NPC_VeinFlower": {},
+  "Map_Custom_NPC_TeleportFlower": {},
+  "Map_Custom_LVC_Bini": {},
+  "Map_Custom_Item_IrilyBoss_WaterPillar": {},
+  "Map_Custom_Item_IrilyBoss_GrassPillar": {},
+  "Map_Custom_Item_IrilyBoss_FirePillar": {},
+  "Map_Custom_Icosahedron_Small": {},
+  "Map_Custom_Basic": {},
+  "Map_BaseLoco_NPC_Unique_Robot": {},
+  "Map_BaseLoco_NPC_Unique_ElderJaeger": {},
+  "Map_BaseLoco_NPC_Unique_Drove": {},
+  "Map_BaseLoco_NPC_Parmon_10783": {},
+  "Map_BaseLoco_Monster_Robot": {},
+  "Map_BaseLoco_Monster_90025": {
+    "Hit_L": 2,
+    "Hit_Stand": 1.6,
+    "Hit_Shake": 0.5,
+    "Hit_H": 2.5
+  },
+  "Map_BaseLoco_GrabEgg_Elve": {},
+  "Map_Avatar_Male": {},
+  "Map_Avatar_Girl": {
+    "Hit_L": 2.083333,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.366667
+  },
+  "Map_Avatar_Female": {},
+  "Map_Avatar_Boy": {
+    "Hit_L": 2.5,
+    "Hit_Shake": 0.8333334,
+    "Hit_H": 3.5
+  },
+  "OMap_Parmon_10161_Ark": {},
+  "OMap_Parmon_10143_Sp": {
+    "Hit_L": 1,
+    "Hit_Stand": 3,
+    "Hit_Shake": 0.6666667,
+    "Hit_H": 1.5
+  },
+  "OMap_Parmon_10143_Die": {},
+  "OMap_Parmon_10053_UpStanding": {
+    "Hit_L": 1.166667,
+    "Hit_Stand": 1.683333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.55
+  },
+  "OMap_Parmon_10053_NPC_Yizhu": {
+    "Hit_L": 1.166667,
+    "Hit_Stand": 1.683333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.55
+  },
+  "OMap_Parmon_10051_Ark": {},
+  "OMap_Parmon_10043_Ark": {},
+  "OMap_Parmon_10025_Infergon": {
+    "Hit_L": 2,
+    "Hit_Stand": 1.6,
+    "Hit_Shake": 0.5,
+    "Hit_H": 2.5
+  },
+  "OMap_Parmon_10023_Ark": {},
+  "OMap_Parmon_10021_Ark": {},
+  "OMap_Parmon_10012_Ark": {},
+  "OMap_Parmon_10011_Ark": {},
+  "OMap_Parmon_10503_Rampage": {
+    "Hit_L": 0.8666667,
+    "Hit_Stand": 1.116667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.366667
+  },
+  "OMap_Parmon_10501_Rampage": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.116667,
+    "Hit_Shake": 0.4,
+    "Hit_H": 1.266667
+  },
+  "OMap_Parmon_10373_Ark": {},
+  "OMap_Parmon_10323_OMap_Parmon_10323_Knight": {},
+  "OMap_Parmon_10233_Velouria": {},
+  "OMap_Parmon_10221_Frizz": {},
+  "OMap_Parmon_10213_Irelia": {},
+  "OMap_Parmon_10201_Mimicry2": {},
+  "OMap_Parmon_10191_Egg": {},
+  "OMap_Parmon_10171_Ark": {},
+  "OMap_Parmon_10171_Ark_LayOnWindow": {},
+  "OMap_Parmon_10171_NPC": {},
+  "OMap_Parmon_10181_Ark": {},
+  "OMap_Parmon_10191_Ark": {},
+  "Map_Parmon_10403": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.466667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.333333
+  },
+  "Map_Parmon_10421": {},
+  "Map_Parmon_10423": {},
+  "Map_Parmon_10431": {
+    "Hit_L": 1.083333,
+    "Hit_Stand": 1.066667,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_10433": {
+    "Hit_L": 0.9333334,
+    "Hit_Stand": 1.583333,
+    "Hit_Shake": 0.25,
+    "Hit_H": 0.9666667
+  },
+  "Map_Parmon_10434": {},
+  "Map_Parmon_10441": {
+    "Hit_L": 0.8000001,
+    "Hit_Stand": 1.266667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.2
+  },
+  "Map_Parmon_10443": {
+    "Hit_L": 0.6666667,
+    "Hit_Stand": 1.933333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.35
+  },
+  "Map_Parmon_10444": {},
+  "Map_Parmon_10451": {
+    "Hit_L": 0.7833334,
+    "Hit_Stand": 1.033333,
+    "Hit_Shake": 0.2333333,
+    "Hit_H": 1.3
+  },
+  "Map_Parmon_10453": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.133333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.366667
+  },
+  "Map_Parmon_10454": {
+    "Hit_L": 0.9,
+    "Hit_Stand": 1.666667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.233333
+  },
+  "Map_Parmon_10461": {},
+  "Map_Parmon_10463": {},
+  "Map_Parmon_10464": {},
+  "Map_Parmon_10471": {
+    "Hit_L": 1.083333,
+    "Hit_Stand": 1.5,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1
+  },
+  "Map_Parmon_10474": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.6,
+    "Hit_Shake": 0.4666667,
+    "Hit_H": 1.533333
+  },
+  "Map_Parmon_10475": {
+    "Hit_L": 1.183333,
+    "Hit_Stand": 1.55,
+    "Hit_Shake": 0.4833333,
+    "Hit_H": 1.416667
+  },
+  "Map_Parmon_10481": {
+    "Hit_L": 1,
+    "Hit_Stand": 2.166667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.75
+  },
+  "Map_Parmon_10483": {
+    "Hit_L": 0.9,
+    "Hit_Stand": 1.516667,
+    "Hit_Shake": 0.5333334,
+    "Hit_H": 1.2
+  },
+  "Map_Parmon_10491": {},
+  "Map_Parmon_10493": {},
+  "Map_Parmon_10501": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.166667,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.3
+  },
+  "Map_Parmon_10503": {
+    "Hit_L": 1.166667,
+    "Hit_Stand": 2,
+    "Hit_Shake": 0.4833333,
+    "Hit_H": 1.7
+  },
+  "Map_Parmon_10511": {
+    "Hit_L": 1.083333,
+    "Hit_Stand": 1.25,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 2
+  },
+  "Map_Parmon_10512": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.233333,
+    "Hit_Shake": 0.3,
+    "Hit_H": 1.2
+  },
+  "Map_Parmon_10513": {},
+  "Map_Parmon_10541": {},
+  "Map_Parmon_10543": {},
+  "Map_Parmon_10544": {},
+  "Map_Parmon_10561": {},
+  "Map_Parmon_10563": {},
+  "Map_Parmon_10564": {},
+  "Map_Parmon_10565": {},
+  "Map_Parmon_10571": {},
+  "Map_Parmon_10573": {},
+  "Map_Parmon_10574": {},
+  "Map_Parmon_10581": {},
+  "Map_Parmon_10583": {},
+  "Map_Parmon_10584": {},
+  "Map_Parmon_10591": {},
+  "Map_Parmon_10593": {},
+  "Map_Parmon_10594": {},
+  "Map_Parmon_10601": {},
+  "Map_Parmon_10603": {},
+  "Map_Parmon_10604": {},
+  "Map_Parmon_10611": {},
+  "Map_Parmon_10613": {},
+  "Map_Parmon_10614": {},
+  "Map_Parmon_10621": {},
+  "Map_Parmon_10623": {
+    "Hit_L": 1.083333,
+    "Hit_Stand": 1.066667,
+    "Hit_Shake": 0.4,
+    "Hit_H": 1.25
+  },
+  "Map_Parmon_10631": {},
+  "Map_Parmon_10633": {},
+  "Map_Parmon_10641": {},
+  "Map_Parmon_10643": {},
+  "Map_Parmon_10644": {},
+  "Map_Parmon_10651": {},
+  "Map_Parmon_10653": {},
+  "Map_Parmon_10661": {},
+  "Map_Parmon_10663": {},
+  "Map_Parmon_10664": {},
+  "Map_Parmon_10671": {},
+  "Map_Parmon_10673": {},
+  "Map_Parmon_10674": {},
+  "Map_Parmon_10681": {},
+  "Map_Parmon_10683": {},
+  "Map_Parmon_10691": {},
+  "Map_Parmon_10693": {},
+  "Map_Parmon_10694": {},
+  "Map_Parmon_10713": {},
+  "Map_Parmon_10723": {},
+  "Map_Parmon_10761": {},
+  "Map_Parmon_10763": {},
+  "Map_Parmon_69993": {
+    "Hit_L": 1,
+    "Hit_Stand": 1.533333,
+    "Hit_Shake": 0.5,
+    "Hit_H": 1.5
+  },
+  "Map_Parmon_90207": {
+    "Hit_L": 0.7333333,
+    "Hit_Shake": 0.6333334,
+    "Hit_H": 1.233333
+  },
+  "Map_Parmon_90213": {
+    "Hit_L": 0.9666667,
+    "Hit_Stand": 2.666667,
+    "Hit_Shake": 0.3833334,
+    "Hit_H": 3.616667
+  },
+  "OMap_Avatar_Boy_ArkBoyFallinlove": {},
+  "OMap_Avatar_Boy_Black": {},
+  "OMap_Avatar_Boy_NPC_Bohr": {},
+  "OMap_Avatar_Boy_Sorora": {},
+  "OMap_Avatar_Boy_Unique_Sisus": {},
+  "OMap_Avatar_Female_ArkFemaleAngrySighOutdoor": {},
+  "OMap_Avatar_Female_ArkFemaleFallinlove": {},
+  "OMap_Avatar_Female_NPC_ARK_F10003": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleOutdoorSitting02": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleOutdoorThink": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleOutdoorWalk": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleOverlook": {},
+  "OMap_Avatar_Female_NPC_ArkFemalePinkWalk": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleSitTalkPink": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleSquatTalk": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleStandTalkOutdoor": {},
+  "OMap_Avatar_Female_NPC_ArkFemaleThinkPink": {},
+  "OMap_Avatar_Female_NPC_Fernanda": {},
+  "OMap_Avatar_Female_NPC_Ling": {},
+  "OMap_Avatar_Female_Unique_Anthi": {},
+  "OMap_Avatar_Girl_ArkGirlFallinlove": {},
+  "OMap_Avatar_Girl_Black": {},
+  "OMap_Avatar_Girl_EggMan": {},
+  "OMap_Avatar_Girl_NPC_ArkGirlSitting01": {},
+  "OMap_Avatar_Girl_NPC_Nicole": {
+    "Hit_L": 2.066667,
+    "Hit_H": 1.366667
+  },
+  "OMap_Avatar_Girl_NPC_Sunia": {},
+  "OMap_Avatar_Male_ElderJaeger": {},
+  "OMap_Avatar_Male_NPC_Levi": {},
+  "OMap_Avatar_Male_NPC_Oswen": {},
+  "OMap_BaseLoco_Monster_Robot_Normal_Atk": {
+    "Hit_L": 0.6666667,
+    "Hit_Shake": 0.5333334,
+    "Hit_H": 1.466667
+  },
+  "OMap_BaseLoco_Monster_Robot_Normal_Bal": {
+    "Hit_L": 0.95,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.85
+  },
+  "OMap_BaseLoco_Monster_Robot_Normal_Def": {
+    "Hit_L": 0.85,
+    "Hit_Shake": 0.5833334,
+    "Hit_H": 1.666667
+  },
+  "OMap_BaseLoco_NPC_Unique_Robot_001_StoreRobot": {},
+  "OMap_BaseLoco_NPC_Unique_Robot_002_OrderRobot": {},
+  "OMap_Custom_Basic_TempleEntrance": {},
+  "OMap_Custom_NPC_TeleportFlower_Shrink": {},
+  "OMap_Custom_SceneObject_Tendril_Shrink": {}
+}

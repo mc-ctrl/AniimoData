@@ -1,0 +1,137 @@
+{
+  "60735819": {
+    "name": "区域_60735819_bancatch",
+    "areaPoints": [
+      -9.01,
+      41.68,
+      -35.5,
+      40.22,
+      -34.05,
+      71.21,
+      -8.89,
+      70.5
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 60735819,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "CATCH_TUTORIAL_1"
+          ]
+        ],
+        "condition": [
+          "CheckActorType",
+          1
+        ]
+      }
+    ],
+    "height": 30,
+    "sandboxId": 60452058,
+    "position": [
+      -33.19,
+      1,
+      54.97
+    ],
+    "pointType": 1
+  },
+  "90938795": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaShapeType": 0,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "id": 90938795,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "DisableModule",
+            "Skill"
+          ],
+          [
+            "DisableModule",
+            "PetLink"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "radius": 60,
+    "sandboxId": 60452058,
+    "position": [
+      -4.82,
+      1,
+      30.31
+    ],
+    "pointType": 1,
+    "name": "功能禁用"
+  },
+  "60735829": {
+    "areaLoadType": 0,
+    "areaPoints": [
+      -28.54,
+      56.89,
+      -28.47,
+      53.06,
+      -30.89,
+      52.03,
+      -30.81,
+      57.46
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 60735829,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": {},
+        "condition": [
+          "CheckActorType",
+          1
+        ]
+      }
+    ],
+    "height": 30,
+    "sandboxId": 60452058,
+    "position": [
+      -28.83,
+      1.01,
+      54.43
+    ],
+    "pointType": 1,
+    "name": "区域_60735829"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123304",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "tags": [
+    10
+  ],
+  "transferGroup": 1,
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Futternym_10233_Skill_Shadowcure_04"
+    }
+  ],
+  "onBuffDestroyIds": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "559dd7bd-3f29-41cc-bfdc-7d3e0e42d9de",
+      "effectId": "Eff_Parmon_Futternym_10233_Skill_Shadowcure_04",
+      "target": "OWNER",
+      "NodeID": 3
+    }
+  }
+}

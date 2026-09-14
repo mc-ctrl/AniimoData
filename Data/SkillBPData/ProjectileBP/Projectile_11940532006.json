@@ -1,0 +1,30 @@
+{
+  "duration": 1,
+  "BPName": "ability_11940532",
+  "NodeID": 196,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Chop01",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {},
+  "moveSpeed": 20,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 2.5,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "nextTemplateId": 11940532005,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "maxHitNum": 999,
+  "UID": "5f14ff9d-8a4a-431a-8565-68952e50d83f",
+  "hasAttackDataInOnProjectileHit": false,
+  "acceleration": 0
+}

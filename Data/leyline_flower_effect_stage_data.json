@@ -1,0 +1,74 @@
+{
+  "3": [
+    {
+      "resId": "Eff_Env_SceneObject_LeaderFlower_GrowFruit",
+      "trans": {
+        "pos": [
+          -0.433,
+          0.056,
+          0.007
+        ],
+        "rot": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          2,
+          2,
+          2
+        ]
+      },
+      "growingRatio": 1,
+      "index": "GROW_FRUIT"
+    }
+  ],
+  "4": [
+    {
+      "resId": "Eff_Env_SceneObject_LeaderFlower_FruitIdle",
+      "trans": {
+        "pos": [
+          -0.433,
+          0.056,
+          0.007
+        ],
+        "rot": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          2,
+          2,
+          2
+        ]
+      },
+      "growingRatio": 1,
+      "index": "FRUIT_IDLE"
+    }
+  ],
+  "1": [
+    {
+      "resId": "Eff_Env_SceneObject_LeaderFlower_GatherSpots",
+      "trans": {
+        "pos": [
+          -0.52,
+          0.05,
+          0.02
+        ],
+        "rot": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "growingRatio": -1,
+      "index": "GATHER_SPOTS"
+    }
+  ]
+}

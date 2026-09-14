@@ -1,0 +1,434 @@
+{
+  "84750943": {
+    "id": 84750943,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车17点位",
+    "position": [
+      -1874.32,
+      24.87,
+      1445.61
+    ],
+    "rotation": [
+      0,
+      95.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750944": {
+    "id": 84750944,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车17平台",
+    "position": [
+      -1866.19,
+      24.89,
+      1444.23
+    ],
+    "rotation": [
+      0,
+      95.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750945": {
+    "id": 84750945,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车18平台",
+    "position": [
+      -1858.47,
+      24.89,
+      1419.94
+    ],
+    "rotation": [
+      0,
+      50.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750946": {
+    "id": 84750946,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车18点位",
+    "position": [
+      -1865.19,
+      24.87,
+      1415.16
+    ],
+    "rotation": [
+      0,
+      50.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750947": {
+    "id": 84750947,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车18广告牌",
+    "position": [
+      -1853.92,
+      24.39,
+      1423.34
+    ],
+    "rotation": [
+      0,
+      51.63,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "87830177": {
+    "id": 87830177,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车13宠物创建点",
+    "position": [
+      -1818.39,
+      25.11,
+      1418.9
+    ],
+    "rotation": [
+      0,
+      52.6,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "87830181": {
+    "id": 87830181,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车14宠物创建点",
+    "position": [
+      -1807.74,
+      25.34,
+      1436.02
+    ],
+    "rotation": [
+      0,
+      5.52,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "87830304": {
+    "id": 87830304,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车15宠物创建点",
+    "position": [
+      -1827.35,
+      25.29,
+      1466.73
+    ],
+    "rotation": [
+      0,
+      273.97,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "87831560": {
+    "id": 87831560,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车16宠物创建点",
+    "position": [
+      -1847.64,
+      25.43,
+      1463.15
+    ],
+    "rotation": [
+      0,
+      228.19,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "87832053": {
+    "id": 87832053,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车17宠物创建点",
+    "position": [
+      -1859.38,
+      25.31,
+      1445
+    ],
+    "rotation": [
+      0,
+      186.31,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "87832057": {
+    "id": 87832057,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车18宠物创建点",
+    "position": [
+      -1854.24,
+      24.72,
+      1425.51
+    ],
+    "rotation": [
+      0,
+      147.76,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750928": {
+    "id": 84750928,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车13广告牌",
+    "position": [
+      -1815.96,
+      24.04,
+      1419.77
+    ],
+    "rotation": [
+      0,
+      321.14,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750929": {
+    "id": 84750929,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车13点位",
+    "position": [
+      -1807.64,
+      24.87,
+      1408.61
+    ],
+    "rotation": [
+      0,
+      320.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750930": {
+    "id": 84750930,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车13平台",
+    "position": [
+      -1812.42,
+      24.89,
+      1415.33
+    ],
+    "rotation": [
+      0,
+      320.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750933": {
+    "id": 84750933,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车14平台",
+    "position": [
+      -1800.31,
+      24.89,
+      1438.03
+    ],
+    "rotation": [
+      0,
+      275.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750934": {
+    "id": 84750934,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车14点位",
+    "position": [
+      -1792.18,
+      24.87,
+      1436.66
+    ],
+    "rotation": [
+      0,
+      275.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750935": {
+    "id": 84750935,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车14广告牌",
+    "position": [
+      -1805.99,
+      24.34,
+      1438.55
+    ],
+    "rotation": [
+      0,
+      276.84,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750936": {
+    "id": 84750936,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车15广告牌",
+    "position": [
+      -1830.43,
+      24.21,
+      1468.83
+    ],
+    "rotation": [
+      0,
+      185.5,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750937": {
+    "id": 84750937,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车15点位",
+    "position": [
+      -1828.18,
+      24.87,
+      1482.55
+    ],
+    "rotation": [
+      0,
+      185.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750938": {
+    "id": 84750938,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车15平台",
+    "position": [
+      -1829.55,
+      24.89,
+      1474.42
+    ],
+    "rotation": [
+      0,
+      185.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750939": {
+    "id": 84750939,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车16平台",
+    "position": [
+      -1854.16,
+      24.89,
+      1466.86
+    ],
+    "rotation": [
+      0,
+      140.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750940": {
+    "id": 84750940,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车16点位",
+    "position": [
+      -1858.93,
+      24.87,
+      1473.57
+    ],
+    "rotation": [
+      0,
+      140.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750941": {
+    "id": 84750941,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车16广告牌",
+    "position": [
+      -1850.91,
+      24.15,
+      1462.2
+    ],
+    "rotation": [
+      0,
+      139.83,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  },
+  "84750942": {
+    "id": 84750942,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车17广告牌",
+    "position": [
+      -1860.51,
+      24.12,
+      1443.5
+    ],
+    "rotation": [
+      0,
+      94.77,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 84750948
+  }
+}

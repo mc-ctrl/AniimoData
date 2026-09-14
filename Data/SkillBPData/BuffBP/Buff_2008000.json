@@ -1,0 +1,39 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2008000",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "db5ba754-4754-43ec-8b4e-791e41b4f550",
+      "value": "hello",
+      "name": "print",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "c6f5b1c4-4e53-4abc-b949-f5b0648127ae",
+      "name": "registerOverDamageEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "a6869d5c-0c1a-47f3-9676-2fa027c254d3",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

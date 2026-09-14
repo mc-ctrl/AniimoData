@@ -1,0 +1,103 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4001030",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "fd0fcba8-0117-4f2a-933d-58153ff1c572",
+      "name": "getCombatContextAbilityId",
+      "eventName": "onCastAbility",
+      "NodeID": 3
+    },
+    "4": {
+      "rValue": {
+        "key": "CastSameAbility",
+        "name": "getCacheVal",
+        "UID": "535fefbf-3a23-4383-9430-05986c5eb502",
+        "target": "OWNER",
+        "NodeID": 9
+      },
+      "name": "equal",
+      "UID": "1d45e783-8746-4df0-99ad-66b3dbc6d6d9",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "fd0fcba8-0117-4f2a-933d-58153ff1c572",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onCastAbility",
+        "NodeID": 3
+      }
+    },
+    "5": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "a229bdf9-5890-4906-82b2-3bff9152c0f1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "d958ffcf-2680-43d8-8194-3e35566ff368",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 4001031,
+      "NodeID": 10,
+      "UID": "13ddb9bd-b89b-40d4-b598-90300baabc7c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "buffId": 4001030,
+      "name": "removeBuff",
+      "UID": "c353ee29-e863-4fd3-9cc1-cdb8c546c4b8",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "8": {
+      "key": "CastSameAbility",
+      "name": "setCacheVal",
+      "UID": "f873f6e0-7901-4ae1-9216-56303cada547",
+      "target": "OWNER",
+      "val": {
+        "UID": "fd0fcba8-0117-4f2a-933d-58153ff1c572",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onCastAbility",
+        "NodeID": 3
+      },
+      "NodeID": 8
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "5d15fd01-4f1f-46b6-8e14-8e09f8141b14",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    12,
+    6
+  ]
+}

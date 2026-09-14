@@ -1,0 +1,64 @@
+{
+  "110002": {
+    "cubeRotation": [
+      90,
+      0,
+      0
+    ],
+    "linkEffect": 0,
+    "sort": 2
+  },
+  "110003": {
+    "cubeRotation": [
+      90,
+      0,
+      0
+    ],
+    "linkEffect": 1,
+    "petFertilityDesc": 1232555470,
+    "suggestDesc": 1359030084,
+    "sort": 4
+  },
+  "110004": {
+    "cubeRotation": [
+      90,
+      0,
+      0
+    ],
+    "linkEffect": 0,
+    "sort": 6
+  },
+  "110001": {
+    "cubeRotation": [
+      180,
+      90,
+      90
+    ],
+    "linkEffect": 0,
+    "sort": 1
+  },
+  "110006": {
+    "sort": 5,
+    "linkEffect": 1,
+    "petFertilityDesc": 1625826977,
+    "suggestDesc": 1911817142
+  },
+  "110005": {
+    "cubeRotation": [
+      90,
+      0,
+      0
+    ],
+    "linkEffect": 0,
+    "sort": 7
+  },
+  "110007": {
+    "cubeRotation": [
+      90,
+      0,
+      0
+    ],
+    "linkEffect": 0,
+    "sort": 3
+  }
+}

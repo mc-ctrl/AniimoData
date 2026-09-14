@@ -1,0 +1,1342 @@
+{
+  "58119863": {
+    "id": 58119863,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat"
+            },
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Happy",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -167.75,
+          0.1,
+          -14.15
+        ],
+        "yaw": 104.65,
+        "speed": 5,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0.29,
+              "templateKey": "ST_Idle"
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 1,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          19.43
+        ],
+        "position": [
+          -166.79,
+          0.1,
+          -16.76
+        ],
+        "yaw": 90,
+        "speed": 5,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.29,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "DashStart",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 10,
+                  "name": "tAnimationTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Eat",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "eatTimeOut"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Happy",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          18.83
+        ],
+        "position": [
+          -166.41,
+          0.1,
+          -15.9
+        ],
+        "yaw": 22.38,
+        "speed": 5,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "DashStart",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 10,
+                  "name": "tAnimationTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 1,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          0,
+          20.02
+        ],
+        "yaw": 329.28,
+        "position": [
+          -164.12,
+          0.1,
+          -14.95
+        ],
+        "ignoreRotation": true,
+        "speed": 5,
+        "movingBehaviorTreeTemplate": {
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.9,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 1,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "yaw": 329.28,
+        "speed": 5,
+        "position": [
+          -165.58,
+          0.1,
+          -12.65
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "movingBehaviorTreeTemplate": {
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -169.46,
+      0.1,
+      -14.73
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 58119701
+  },
+  "58449831": {
+    "id": 58449831,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Idle",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Think",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          17.37
+        ],
+        "position": [
+          -96.95,
+          0.1,
+          -34.98
+        ],
+        "speed": 5,
+        "yaw": 90
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Attack03",
+                  "name": "tAnimationKey"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Attack04",
+                  "name": "tAnimationKey"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Attack02",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Love",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 1,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          8.38
+        ],
+        "position": [
+          -95.24,
+          0.1,
+          -35.04
+        ],
+        "yaw": 90,
+        "movingBehaviorTreeTemplate": {
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -94.65,
+      0.1,
+      -35.06
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 58449836
+  },
+  "58635422": {
+    "id": 58635422,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "position": [
+          -98.63,
+          0.1,
+          -17.32
+        ],
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "DashStart",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "SprintLoop",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -96.49,
+          0.1,
+          -12.53
+        ],
+        "ignoreRotation": true,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Love",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -93.47,
+          0.1,
+          -17.12
+        ],
+        "ignoreRotation": true,
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -92.95,
+      0.1,
+      -13.36
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 58633886
+  },
+  "59240470": {
+    "id": 59240470,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 10,
+                  "name": "sleepTimeOut"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -118.88,
+          0.1,
+          -14.35
+        ]
+      }
+    ],
+    "pos": [
+      -118.88,
+      0.1,
+      -14.35
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 58202299
+  },
+  "55435862": {
+    "id": 55435862,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            },
+            {
+              "templateKey": "ST_Idle",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 2,
+                  "name": "idleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -386.3,
+          51.64,
+          -56.16
+        ],
+        "speed": 10,
+        "yaw": 252.47,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            }
+          ]
+        },
+        "position": [
+          -391.37,
+          51.69,
+          -57.7
+        ],
+        "speed": 8,
+        "yaw": 30.76,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            }
+          ]
+        },
+        "position": [
+          -389.06,
+          51.76,
+          -53.63
+        ],
+        "speed": 6,
+        "yaw": 248.02,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            },
+            {
+              "templateKey": "ST_Idle",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1,
+                  "name": "idleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          4.4
+        ],
+        "position": [
+          -393.71,
+          51.83,
+          -55.41
+        ],
+        "yaw": 17.67,
+        "speed": 10,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Idle",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 2,
+                  "name": "idleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          5.68
+        ],
+        "position": [
+          -392.64,
+          51.86,
+          -51.05
+        ],
+        "yaw": 71.29,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Idle"
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          3.88
+        ],
+        "yaw": 148.45,
+        "position": [
+          -387.55,
+          51.8,
+          -49.39
+        ],
+        "ignoreRotation": true,
+        "speed": 4,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Idle"
+            }
+          ]
+        },
+        "position": [
+          -385.47,
+          51.72,
+          -52.84
+        ],
+        "ignoreRotation": true,
+        "speed": 3.3,
+        "yaw": 193.9,
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -389.58,
+      52,
+      -51.75
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 55420187
+  },
+  "57236687": {
+    "id": 57236687,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            },
+            {
+              "templateKey": "ST_Idle",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 2,
+                  "name": "idleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -141.56,
+          0.1,
+          -58.57
+        ],
+        "speed": 10,
+        "yaw": 252.47,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            }
+          ]
+        },
+        "position": [
+          -146.63,
+          0.1,
+          -60.11
+        ],
+        "speed": 8,
+        "yaw": 30.76,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            }
+          ]
+        },
+        "position": [
+          -144.32,
+          0.1,
+          -56.04
+        ],
+        "speed": 6,
+        "yaw": 248.02,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dash"
+            },
+            {
+              "templateKey": "ST_Idle",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1,
+                  "name": "idleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          4.4
+        ],
+        "position": [
+          -148.97,
+          0.1,
+          -57.82
+        ],
+        "yaw": 17.67,
+        "speed": 10,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Idle",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 2,
+                  "name": "idleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          5.68
+        ],
+        "position": [
+          -147.9,
+          0.1,
+          -53.46
+        ],
+        "yaw": 71.29,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Idle"
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          3.88
+        ],
+        "yaw": 148.45,
+        "position": [
+          -142.81,
+          0.1,
+          -51.8
+        ],
+        "ignoreRotation": true,
+        "speed": 4,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Idle"
+            }
+          ]
+        },
+        "position": [
+          -140.73,
+          0.1,
+          -55.25
+        ],
+        "ignoreRotation": true,
+        "speed": 3.3,
+        "yaw": 193.9,
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -144.84,
+      0.39,
+      -54.16
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 57236690
+  },
+  "58115543": {
+    "id": 58115543,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.6,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          1,
+          3
+        ],
+        "position": [
+          -119.45,
+          0.1,
+          -57.42
+        ],
+        "ignoreRotation": true,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0.6,
+              "templateKey": "ST_Alert"
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        }
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.59,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          0,
+          14.37
+        ],
+        "position": [
+          -113.58,
+          0.1,
+          -54.79
+        ],
+        "ignoreRotation": true,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "SprintLoop",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.84,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          0,
+          13.77
+        ],
+        "position": [
+          -112.6,
+          0.1,
+          -50
+        ],
+        "ignoreRotation": true,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.64,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "SprintLoop",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0.6,
+              "templateKey": "ST_Idle"
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          0,
+          16.17
+        ],
+        "position": [
+          -117.64,
+          0.1,
+          -46
+        ],
+        "ignoreRotation": true,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0.85,
+              "templateKey": "ST_Alert"
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        }
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.6,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Alert",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Alert",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          2.4,
+          29.94
+        ],
+        "position": [
+          -123.44,
+          0.1,
+          -48.22
+        ],
+        "ignoreRotation": true,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.41,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "SprintLoop",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0.5,
+              "templateKey": "ST_Idle"
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          0,
+          23.35
+        ],
+        "position": [
+          -122.94,
+          0.1,
+          -53.46
+        ],
+        "ignoreRotation": true,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "probability": 0.43,
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "SprintLoop",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -117.72,
+      0.1,
+      -54.7
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 58115359
+  },
+  "58117421": {
+    "id": 58117421,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Attack03",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          8.38
+        ],
+        "position": [
+          -118.48,
+          0.1,
+          -34.81
+        ],
+        "yaw": 104.4,
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0.76,
+              "templateKey": "ST_Alert"
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Attack02",
+                  "name": "tAnimationKey"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Attack01",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 105.26,
+        "ignoreRotation": true,
+        "position": [
+          -117.65,
+          0.1,
+          -35.06
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0.81,
+              "templateKey": "ST_Alert"
+            }
+          ],
+          "BehaviourTreeCompositeType": 1
+        },
+        "movingMinMaxTime": [
+          0,
+          0
+        ],
+        "position": [
+          -117.54,
+          0.1,
+          -35.95
+        ],
+        "ignoreRotation": true,
+        "yaw": 90,
+        "movingBehaviorTreeTemplate": {
+          "BehaviourTreeCompositeType": 1
+        },
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "DashStart",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 10,
+                  "name": "tAnimationTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          21.18
+        ],
+        "position": [
+          -119.26,
+          0.1,
+          -35.85
+        ],
+        "ignoreRotation": true,
+        "yaw": 90,
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "movingBehaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation"
+            }
+          ]
+        },
+        "movingMinMaxTime": [
+          0,
+          17.37
+        ],
+        "position": [
+          -120.19,
+          0.1,
+          -34.37
+        ],
+        "ignoreRotation": true,
+        "yaw": 90,
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -117.89,
+      0.1,
+      -35.06
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 58116520
+  }
+}

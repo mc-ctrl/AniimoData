@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_12610001",
+  "NodeID": 1,
+  "UID": "77aecff1-32d7-4170-bbeb-8098350e3035",
+  "abilityParamId": 14400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12610001001,
+      "name": "setCombatActionTimeline",
+      "UID": "a4fd3684-3e56-4df1-a79d-6a0ff10e9a92",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack02"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10261_Attack_Hit",
+    "Eff_Parmon_10261_Skill_Attack02",
+    "Eff_Parmon_10261_Skill_Attack_Start_01"
+  ],
+  "searchRelation": 2,
+  "name": "云朵羊远程普攻",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "searchTargetRangeDown": 3
+}

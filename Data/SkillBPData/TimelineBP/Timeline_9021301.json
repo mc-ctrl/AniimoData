@@ -1,0 +1,311 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "action": {
+        "actionIds": [
+          17,
+          18,
+          14,
+          3,
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 33.31,
+      "NodeID": 5,
+      "UID": "187d9c3f-7f77-4c6d-98ea-61c5bc865588"
+    },
+    "35": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "adf1766e-bdbe-4afe-befb-1c08a4339b8c",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "8": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 9021301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "87dd027e-bc25-4f23-b870-24920332d705",
+      "target": "TARGET",
+      "NodeID": 8,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "SFX_Combat_90213_Skill_Qgsx_99",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 1000
+      }
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          19,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 14.31,
+      "NodeID": 22,
+      "UID": "30000abb-17b1-434d-9366-f12cf506a9d3"
+    },
+    "2": {
+      "UID": "680f862e-8085-4f57-8b17-db324d7ae322",
+      "name": "destroyEntity",
+      "NodeID": 2
+    },
+    "33": {
+      "name": "stopSoundStr",
+      "UID": "f2eb9fd7-2e96-4bfd-977a-499228a54ac7",
+      "soundId": "SFX_Combat_90213_Skill_Ydfh_04",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          19,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.31,
+      "NodeID": 21,
+      "UID": "9c35183d-cb63-440a-aa92-1d977b352794"
+    },
+    "3": {
+      "key": "1",
+      "duration": 1,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "089407ea-e787-484c-a8e6-7758b2ad704d",
+      "name": "addTimer"
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          19,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 24.31,
+      "NodeID": 23,
+      "UID": "6844978b-4ecb-4f9b-9edc-899b2f5d9830"
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          19,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.31,
+      "NodeID": 24,
+      "UID": "ce03a183-d2cf-4998-b77f-f52a6abd634f"
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "686ac25e-34f3-4c16-ac66-14ced2a44c9e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Ydfh_05",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 8,
+      "NodeID": 10,
+      "UID": "78668b49-8cd6-494a-bf60-d31ab2bde015",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            5,
+            180,
+            0.5,
+            1
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        8
+      ]
+    },
+    "12": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 33.31,
+      "NodeID": 12,
+      "UID": "629d7128-8787-44ff-b544-fb69f8f95380",
+      "onUpdate": {
+        "actionIds": [
+          10
+        ]
+      },
+      "startTime": 3.31,
+      "onEnter": {
+        "actionIds": [
+          10
+        ]
+      }
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          19,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 19.31,
+      "NodeID": 25,
+      "UID": "7dc83cce-1380-4392-9070-cea3d2a122c0"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          19,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 29.31,
+      "NodeID": 26,
+      "UID": "c4b9be06-bba7-4b22-acdf-bd1295937766"
+    },
+    "27": {
+      "duration": 5,
+      "name": "moveByDirection",
+      "UID": "1c304e18-3f8c-4a79-8300-c7f06dc5c3d5",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "targetPos": "RANDOM_POINT",
+      "velocity": [
+        0,
+        0,
+        2
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 27
+    },
+    "17": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "19264d15-d36c-4e0f-80ff-f148d9693092",
+      "effectId": "Eff_Monster_90213_Mon_Attack_MagicCircle_End",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "626ba87e-dfb7-422a-8c3f-60ec0f6bfdf1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Ydfh_04",
+      "NodeID": 30
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "19f217c4-4ce1-4026-847f-86f20625c5a6",
+      "effectId": "Eff_Monster_90213_Mon_Attack_MagicCircle",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          34,
+          35,
+          36,
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.31,
+      "NodeID": 32,
+      "UID": "edf103ad-9a29-4ff1-8477-053812fab6af"
+    },
+    "19": {
+      "targetPos": "TARGET",
+      "radius": 15,
+      "UID": "cf5db588-5886-4e19-8570-bcf906d0b845",
+      "NodeID": 19,
+      "name": "randomPoint"
+    },
+    "34": {
+      "duration": 30,
+      "NodeID": 34,
+      "UID": "54d8c895-4b3a-4fa2-b5e0-3516bb9ad5c9",
+      "effectId": "Eff_Monster_90213_Mon_Attack_MagicCircle",
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "speed": 1,
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "scale": 1
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "743d4f4d-1204-4910-bbac-e84fe70bb42c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Ydfh_03",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_9021301",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    32,
+    21,
+    24,
+    22,
+    25,
+    23,
+    26,
+    12,
+    5
+  ],
+  "layer": "Base",
+  "length": 35
+}

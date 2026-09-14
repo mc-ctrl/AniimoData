@@ -1,0 +1,13 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "atk_p": 0.25,
+    "atk_mag_p": 0.25
+  },
+  "BPName": "buff_2061000011",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

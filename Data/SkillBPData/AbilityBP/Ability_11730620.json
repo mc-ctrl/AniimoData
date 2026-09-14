@@ -1,0 +1,124 @@
+{
+  "BPName": "ability_11730620",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "abilityIndicator": 1,
+  "abilityParamId": 10300181,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11730620001,
+      "name": "setCombatActionTimeline",
+      "UID": "899421cb-0e49-4cbb-bffe-62e929d2d059",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "92": {
+      "UID": "f18a2f9c-d3bb-4450-8038-0874bd3e6982",
+      "target": "CASTER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 92
+    },
+    "96": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "58b9333b-50ff-4ca7-91a4-2112ae494fcc",
+      "effectId": "Eff_Parmon_10173_Skill__Surf_03",
+      "target": "OWNER",
+      "NodeID": 96
+    },
+    "89": {
+      "UID": "caa7ad4d-e192-45ba-9471-58b99ff8c2b4",
+      "name": "ignoreVelocityProjection",
+      "enable": false,
+      "NodeID": 89
+    },
+    "95": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "24ce52e4-f4e5-4745-adfa-de0d217706b5",
+      "effectId": "Eff_Parmon_10173_Skill__Surf_01",
+      "target": "OWNER",
+      "NodeID": 95
+    },
+    "94": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "736cf7c6-7370-4ab9-9060-da46727dfab0",
+      "effectId": "Eff_Parmon_10173_Skill__Surf_02",
+      "target": "OWNER",
+      "NodeID": 94
+    },
+    "93": {
+      "name": "stopSoundStr",
+      "UID": "84258d1e-f93a-45a7-8acf-17a4313dec6b",
+      "soundId": "parmon_Dramotter_skill_roll_loop",
+      "target": "OWNER",
+      "NodeID": 93
+    },
+    "91": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "beae40fd-ac2e-46e7-b608-68d919761d5d",
+      "effectId": "Eff_Parmon_10173_Skill_Surf_02",
+      "target": "OWNER",
+      "NodeID": 91
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Roll_Start",
+    "Skill_Roll_End",
+    "Skill_Roll_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_10173_Skill__Surf_03",
+    "Eff_Parmon_10173_Skill__Surf_02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12.5,
+  "searchTargetRangeUp": 1.5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0.5
+    ],
+    "shapeArgs": [
+      2,
+      2,
+      12.5,
+      2.2,
+      0.6
+    ],
+    "shapeKind": "Trapezoid3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  },
+  "notTurnToTarget": true,
+  "onAbilityEndIds": [
+    89,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

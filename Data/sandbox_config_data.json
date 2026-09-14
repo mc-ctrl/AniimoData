@@ -1,0 +1,358 @@
+{
+  "37": {
+    "onFinished": 1,
+    "autoSave": "false",
+    "name": "房主全控蓝图关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 0,
+    "desc": "蓝图完成、离开即卸载的一次性关卡；存档/物件/实体全部房主主导；不自动存档"
+  },
+  "38": {
+    "onFinished": 2,
+    "autoSave": "false",
+    "name": "房主全控完成立刻卸载蓝图关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 0,
+    "desc": "蓝图完成，完成立刻卸载，存档/物件/实体全部房主主导，不自动存档"
+  },
+  "41": {
+    "onFinished": 1,
+    "autoSave": "true",
+    "name": "仅房主存档同步宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 2,
+    "finishType": 1,
+    "desc": "开箱完成、离开即卸载的一次性关卡；全员同步；自动存档常见的多人开箱关卡配置"
+  },
+  "35": {
+    "onFinished": 4,
+    "autoSave": "true",
+    "name": "房主全控保留关卡",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 0,
+    "desc": "蓝图完成、保留型一次性关卡；存档/物件/实体全部房主主导；自动存档"
+  },
+  "0": {
+    "autoSave": "true",
+    "name": "多人玩法Sandbox",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "onFinished": 1
+  },
+  "1": {
+    "hasBluePrint": "false",
+    "name": "布怪Sandbox"
+  },
+  "2": {
+    "autoSave": "false",
+    "name": "副本Sandbox",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "onFinished": 1
+  },
+  "3": {
+    "hasBluePrint": "false",
+    "name": "ArkSandbox"
+  },
+  "4": {
+    "onFinished": 1,
+    "autoSave": "true",
+    "name": "标准淡出关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "desc": "最通用的默认配置。蓝图判定完成后，玩家离开即卸载的一次性关卡；全员数据实时同步，且自动存档。适合绝大多数主线/常规玩法关"
+  },
+  "99": {
+    "autoSave": "true",
+    "name": "白盒Sandbox",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "onFinished": 1
+  },
+  "5": {
+    "onFinished": 3,
+    "autoSave": "false",
+    "name": "可重复全同步关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "desc": "蓝图完成后关卡保留、可重复进入游玩（disposable=false）；全员同步；关闭自动存档，进度不落地适合可反复挑战、无需保存进度"
+  },
+  "12": {
+    "onFinished": 1,
+    "autoSave": "false",
+    "name": "无存档宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "desc": "开箱完成、离开即卸载的一次性关卡；全员同步；不自动存档"
+  },
+  "6": {
+    "onFinished": 1,
+    "autoSave": "false",
+    "name": "无存档淡出关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "desc": "蓝图完成后离开即卸载的一次性关卡；全员同步；不自动存档适合过程性、结果不需要落地的轻量关卡"
+  },
+  "16": {
+    "onFinished": 4,
+    "autoSave": "false",
+    "name": "保留型蓝图关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "desc": "蓝图完成、保留型一次性关卡；全员同步；不自动存档"
+  },
+  "33": {
+    "onFinished": 3,
+    "autoSave": "false",
+    "name": "可重复宝箱关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "desc": "开箱完成、可重复游玩的保留关卡；全员同步；不自动存档"
+  },
+  "7": {
+    "onFinished": 1,
+    "autoSave": "true",
+    "name": "房主物件宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 1,
+    "desc": "开启宝箱即判定完成、离开卸载的一次性关卡；存档与物件由房主主导、实体全员同步；自动存档适合房主驱动的开箱类玩法"
+  },
+  "18": {
+    "onFinished": 2,
+    "autoSave": "true",
+    "name": "即清蓝图关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "desc": "蓝图完成时立刻清除的一次性关卡（不等玩家离开）；全员同步；自动存档适合完成即结算收场的玩法"
+  },
+  "8": {
+    "onFinished": 4,
+    "autoSave": "false",
+    "name": "保留型宝箱关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "desc": "开箱完成、保留型一次性关卡（disposable=true，关卡结构保留但不可再刷）；全员同步；不自动存档"
+  },
+  "31": {
+    "onFinished": 2,
+    "autoSave": "false",
+    "name": "房主全控即清宝箱关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 1,
+    "desc": "开箱完成时立刻清除的一次性关卡；存档/物件/实体全部房主主导；不自动存档"
+  },
+  "9": {
+    "onFinished": 4,
+    "autoSave": "true",
+    "name": "房主保留宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 1,
+    "desc": "开箱完成、保留型一次性关卡；存档与物件房主主导、实体全员同步；自动存档适合房主驱动、需保留结果的开箱玩法"
+  },
+  "13": {
+    "onFinished": 4,
+    "autoSave": "true",
+    "name": "保留型蓝图关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "desc": "蓝图完成、保留型一次性关卡（结构保留不可再刷）；全员同步；自动存档"
+  },
+  "17": {
+    "onFinished": 1,
+    "autoSave": "true",
+    "name": "房主物件蓝图关卡",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 0,
+    "desc": "使用较多蓝图完成、离开即卸载的一次性关卡；存档与物件房主主导、实体全员同步；自动存档适合房主驱动的常规蓝图玩法"
+  },
+  "11": {
+    "onFinished": 3,
+    "autoSave": "true",
+    "name": "可重复宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "desc": "开箱完成、可重复游玩的保留关卡；全员同步；自动存档适合可反复开箱且需记录进度的场景"
+  },
+  "20": {
+    "onFinished": 1,
+    "autoSave": "false",
+    "name": "房主物件宝箱关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 1,
+    "desc": "开箱完成、离开即卸载的一次性关卡；存档与物件房主主导、实体全员同步；不自动存档"
+  },
+  "21": {
+    "onFinished": 3,
+    "autoSave": "true",
+    "name": "可重复蓝图关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 0,
+    "desc": "蓝图完成、可重复游玩的保留关卡；全员同步；自动存档适合可反复挑战并保存进度的蓝图玩法"
+  },
+  "22": {
+    "onFinished": 1,
+    "autoSave": "false",
+    "name": "房主物件蓝图关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 0,
+    "desc": "蓝图完成、离开即卸载的一次性关卡；存档与物件房主主导、实体全员同步；不自动存档"
+  },
+  "23": {
+    "onFinished": 4,
+    "autoSave": "true",
+    "name": "保留型宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "desc": "开箱完成、保留型一次性关卡（结构保留不可再刷）；全员同步；自动存档"
+  },
+  "24": {
+    "onFinished": 4,
+    "autoSave": "true",
+    "name": "房主保留蓝图关卡",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 0,
+    "desc": "蓝图完成、保留型一次性关卡；存档与物件房主主导、实体全员同步；自动存档"
+  },
+  "14": {
+    "onFinished": 4,
+    "autoSave": "false",
+    "name": "房主保留蓝图关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 0,
+    "desc": "蓝图完成、保留型一次性关卡；存档与物件房主主导、实体全员同步；不自动存档"
+  },
+  "10": {
+    "onFinished": 1,
+    "autoSave": "true",
+    "name": "全同步宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "desc": "开箱完成、离开即卸载的一次性关卡；全员同步；自动存档常见的多人开箱关卡配置"
+  },
+  "15": {
+    "onFinished": 3,
+    "autoSave": "true",
+    "name": "房主全控可重复关卡",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 0,
+    "desc": "蓝图完成、可重复游玩的保留关卡；存档/物件/实体全部由房主主导（OwnerFull）；自动存档适合房主强主导的可重复玩法"
+  },
+  "25": {
+    "onFinished": 4,
+    "autoSave": "false",
+    "name": "房主保留宝箱关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 1,
+    "desc": "开箱完成、保留型一次性关卡；存档与物件房主主导、实体全员同步；不自动存档"
+  },
+  "26": {
+    "onFinished": 3,
+    "autoSave": "true",
+    "name": "房主物件可重复关卡",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 0,
+    "desc": "蓝图完成、可重复游玩的保留关卡；存档与物件房主主导、实体全员同步；自动存档"
+  },
+  "27": {
+    "onFinished": 2,
+    "autoSave": "true",
+    "name": "房主物件即清关卡",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 0,
+    "desc": "蓝图完成时立刻清除的一次性关卡；存档与物件房主主导、实体全员同步；自动存档"
+  },
+  "28": {
+    "onFinished": 2,
+    "autoSave": "true",
+    "name": "即清宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 0,
+    "finishType": 1,
+    "desc": "开箱完成时立刻清除的一次性关卡；全员同步；自动存档"
+  },
+  "29": {
+    "onFinished": 2,
+    "autoSave": "true",
+    "name": "房主全控即清关卡",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 0,
+    "desc": "蓝图完成时立刻清除的一次性关卡；存档/物件/实体全部房主主导；自动存档"
+  },
+  "30": {
+    "onFinished": 1,
+    "autoSave": "true",
+    "name": "房主全控宝箱关卡",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 1,
+    "desc": "开箱完成、离开即卸载的一次性关卡；存档/物件/实体全部房主主导；自动存档"
+  },
+  "32": {
+    "onFinished": 1,
+    "autoSave": "false",
+    "name": "房主全控宝箱关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 1,
+    "desc": "开箱完成、离开即卸载的一次性关卡；存档/物件/实体全部房主主导；不自动存档"
+  },
+  "19": {
+    "onFinished": 1,
+    "autoSave": "true",
+    "name": "房主全控蓝图关卡",
+    "hasBluePrint": "true",
+    "syncMode": 3,
+    "finishType": 0,
+    "desc": "蓝图完成、离开即卸载的一次性关卡；存档/物件/实体全部房主主导；自动存档"
+  },
+  "34": {
+    "onFinished": 2,
+    "autoSave": "true",
+    "name": "仅房主存档即清关卡",
+    "hasBluePrint": "true",
+    "syncMode": 2,
+    "finishType": 0,
+    "desc": "蓝图完成时立刻清除的一次性关卡；仅存档由房主主导、物件与实体全员同步（OwnerSaveOnly）；自动存档"
+  },
+  "36": {
+    "onFinished": 2,
+    "autoSave": "false",
+    "name": "房主物件即清关卡不存档",
+    "hasBluePrint": "true",
+    "syncMode": 1,
+    "finishType": 0,
+    "desc": "蓝图完成时立刻清除的一次性关卡；存档与物件房主主导、实体全员同步；不自动存档"
+  }
+}

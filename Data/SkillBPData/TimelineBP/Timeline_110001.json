@@ -1,0 +1,60 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 8,
+      "relation": 1,
+      "isNotifyLeaveWhenExit": true,
+      "shapeKind": "Box",
+      "shapeArgs": [
+        2,
+        2,
+        0.6
+      ],
+      "isPortal": true,
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "0e6ecac6-1a2c-42f6-b34b-fa5fc9a5e9f8"
+    },
+    "4": {
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "name": "registerDeadEvent",
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "aa24ba75-ea9e-418d-a008-e2aaecaa4ed9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    }
+  },
+  "BPName": "timeline_110001",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    6,
+    9
+  ],
+  "layer": "Base",
+  "length": 9999
+}

@@ -1,0 +1,62 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "f557dffc-8438-4ba5-aa98-f2390b440b8d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "baebd9c7-9019-4037-b246-5b43c71d7c36",
+      "effectId": "Eff_Parmon_10623_Skill_Bubble_2",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "eeafaed7-8044-4665-ab03-da5548589bba",
+      "effectId": "Eff_Parmon_10623_Skill_Bubble_Hit_2",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "96fc6319-cbac-43b5-b340-8a14e67fd154",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          5,
+          8
+        ]
+      },
+      "NodeID": 7
+    },
+    "2": {
+      "offsetXYZ": [
+        0,
+        0.25,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "177937ba-dbaa-4b7c-bee4-796ab5fbbee5",
+      "effectId": "Eff_Parmon_10623_Skill_Bubble_2",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2162302",
+  "NodeID": 1,
+  "UID": "b20e72dd-8e15-49ee-af90-2de8d4a47ed2",
+  "eventIds": [
+    3,
+    7
+  ],
+  "layer": "Base",
+  "length": 5
+}

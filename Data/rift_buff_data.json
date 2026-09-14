@@ -1,0 +1,14 @@
+{
+  "101": {
+    "buffName": 1660907543,
+    "enemyBuff": 4002050,
+    "desc": 1606624882,
+    "buffIcon": "$UI_Icon_BossRush_Affix_102.png"
+  },
+  "102": {
+    "buffName": 1647011166,
+    "enemyBuff": 4002070,
+    "desc": 1623389710,
+    "buffIcon": "$UI_Icon_BossRush_Affix_104.png"
+  }
+}

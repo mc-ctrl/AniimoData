@@ -1,0 +1,72 @@
+{
+  "nodeMap": {
+    "56": {
+      "actionIds": [
+        55
+      ],
+      "name": "actOnTargets",
+      "UID": "7de46a4b-fa05-4575-8057-4e3fe730243b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            -0.5,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 56
+    },
+    "55": {
+      "target": "TARGET",
+      "duration": 3,
+      "buffId": 2105320,
+      "NodeID": 55,
+      "UID": "d2f33af5-2aad-41ae-9d92-c7477dd2f2f1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "57": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 20,
+      "NodeID": 57,
+      "UID": "d6e09932-c50a-4ca6-bfe0-da6de74f9cef",
+      "onUpdate": {
+        "actionIds": [
+          56
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          56
+        ]
+      }
+    }
+  },
+  "BPName": "ability_10531800",
+  "NodeID": 58,
+  "UID": "794f0db3-bf6c-4e1e-87bb-3a54b8605a4c",
+  "eventIds": [
+    57
+  ],
+  "layer": "Base",
+  "length": 20
+}

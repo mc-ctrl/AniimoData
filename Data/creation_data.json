@@ -1,0 +1,6051 @@
+{
+  "9020706": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--连斩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 9020706,
+    "shapeArgs": [
+      2.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101312": {
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "isOnWater": 1,
+    "isOnGround": 1,
+    "prefabResID": "$P_Item_SceneObject_WhiteHole_Whitebox.prefab",
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0.5,
+    "name": "白洞"
+  },
+  "101313": {
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "isOnWater": 1,
+    "isOnGround": 1,
+    "prefabResID": "$P_Item_SceneObject_Blockmesh_GravityBall.prefab",
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0.5,
+    "name": "重力球"
+  },
+  "9020710": {
+    "isTrigger": 1,
+    "duration": 30,
+    "isShowTopLogo": 0,
+    "isOnGround": 0,
+    "timelineId": 9020710,
+    "propId": 10011,
+    "shapeArgs": [
+      4,
+      3,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 2,
+    "vanishTime": 0,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03_1.prefab",
+    "name": "藤蔓",
+    "inflammable": 1
+  },
+  "101314": {
+    "duration": 1,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "isOnWater": 0,
+    "isOnGround": 0,
+    "prefabResID": "$P_Item_SceneObject_Morphling_Blackhole.prefab",
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0.5,
+    "name": "黑洞"
+  },
+  "9020711": {
+    "isTrigger": 1,
+    "duration": 30,
+    "isShowTopLogo": 0,
+    "isOnGround": 0,
+    "timelineId": 9020710,
+    "propId": 10011,
+    "shapeArgs": [
+      4,
+      3,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 2,
+    "vanishTime": 0,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03_2.prefab",
+    "name": "藤蔓",
+    "inflammable": 1
+  },
+  "102302": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "火焰",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2102302,
+    "propId": 90001,
+    "shapeArgs": [
+      15,
+      1,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0,
+    "canBeLocked": 0
+  },
+  "9020712": {
+    "isTrigger": 1,
+    "duration": 30,
+    "isShowTopLogo": 0,
+    "isOnGround": 0,
+    "timelineId": 9020710,
+    "propId": 10011,
+    "shapeArgs": [
+      4,
+      3,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 2,
+    "vanishTime": 0,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03_3.prefab",
+    "name": "藤蔓",
+    "inflammable": 1
+  },
+  "102303": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "火焰",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2102303,
+    "propId": 90001,
+    "shapeArgs": [
+      15,
+      1.5,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0,
+    "canBeLocked": 0
+  },
+  "102304": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "火焰",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2102304,
+    "propId": 90001,
+    "shapeArgs": [
+      1.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0,
+    "canBeLocked": 0
+  },
+  "102305": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "火焰",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2102305,
+    "propId": 90001,
+    "shapeArgs": [
+      15,
+      1,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0,
+    "canBeLocked": 0
+  },
+  "102306": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "canBeLocked": 0,
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2102306,
+    "propId": 90001,
+    "shapeArgs": [
+      15,
+      1.5,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "name": "火焰",
+    "isShowTopLogo": 0,
+    "effs": [
+      "Eff_Parmon_10023_Mon_Skill_Flylongbreath_03"
+    ]
+  },
+  "102307": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "飓风领域",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2102307,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "9020715": {
+    "isTrigger": 1,
+    "duration": 30,
+    "isShowTopLogo": 0,
+    "isOnGround": 0,
+    "timelineId": 9020710,
+    "propId": 10011,
+    "shapeArgs": [
+      4,
+      3,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 2,
+    "vanishTime": 0,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03A_6.prefab",
+    "name": "藤蔓",
+    "inflammable": 1
+  },
+  "102701": {
+    "duration": 15,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "prefabResID": "$Eff_Parmon_10027_Mon_Skill_Metal_Column.prefab",
+    "timelineId": 2102701,
+    "shapeArgs": [
+      1,
+      2,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "nameOffset": 0.5,
+    "name": "盔卫士-钢柱",
+    "enableReboundDash": 1
+  },
+  "9021301": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "移动法环",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 9021301,
+    "propId": 1001,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "102702": {
+    "duration": -1,
+    "canBeHit": 0,
+    "name": "抢蛋翻倍符金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2102702,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "9021303": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "鸢尾boss巨型法相",
+    "minOverlayDis": 0.2,
+    "nameOffset": 10,
+    "isOnGround": 1,
+    "timelineId": 9021303,
+    "propId": 1001,
+    "shapeArgs": [
+      1,
+      0.2,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "103202": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "黑洞领域",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2103202,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "104101": {
+    "duration": 1.5,
+    "canBeHit": 1,
+    "name": "水泡",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2104101,
+    "shapeArgs": [
+      1.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "9021305": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "鸢尾boss分身连段2",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 9021305,
+    "propId": 1001,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "104302": {
+    "duration": 30,
+    "conductive": 1,
+    "ecsType": 1,
+    "isOnGround": 1,
+    "timelineId": 2104302,
+    "shapeArgs": [
+      1.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "canBeHit": 0,
+    "name": "水滩",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.6,
+    "vanishTime": 0,
+    "waterPool": 1,
+    "ecsPower": 35,
+    "isShowTopLogo": 0,
+    "entityTag": [
+      "TE_Cre_Water"
+    ]
+  },
+  "9021306": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "鸢尾boss分身连段3",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 9021306,
+    "propId": 1001,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "104303": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "冰柱",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "prefabResID": "$Eff_Parmon_10043_Skill_IceColumn_Model.prefab",
+    "vanishTime": 1,
+    "shapeArgs": [
+      1,
+      2,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "timelineId": 2104303,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "9025021": {
+    "vanishTime": 0,
+    "duration": 120,
+    "canBeHit": 1,
+    "isShowTopLogo": 2,
+    "minOverlayDis": 0.2,
+    "bodyMatType": "flesh",
+    "nameOffset": 0.6,
+    "isOnGround": 0,
+    "timelineId": 29025021,
+    "propId": 90005,
+    "shapeArgs": [
+      4,
+      3,
+      4
+    ],
+    "shapeKind": "Box",
+    "elementType": {
+      "5": true
+    },
+    "name": "火晶石",
+    "followMasterCamp": 1,
+    "canBeLocked": 1
+  },
+  "9025022": {
+    "vanishTime": 0,
+    "duration": 120,
+    "canBeHit": 1,
+    "isShowTopLogo": 2,
+    "minOverlayDis": 0.2,
+    "bodyMatType": "flesh",
+    "nameOffset": 0.6,
+    "isOnGround": 0,
+    "timelineId": 29025022,
+    "propId": 90005,
+    "shapeArgs": [
+      4,
+      3,
+      4
+    ],
+    "shapeKind": "Box",
+    "elementType": {
+      "5": true
+    },
+    "name": "火晶石",
+    "followMasterCamp": 1,
+    "canBeLocked": 1
+  },
+  "104304": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2104304,
+    "vanishTime": 0,
+    "shapeArgs": [
+      7
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "治愈场",
+    "duration": 6.1
+  },
+  "9113302": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 1,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 6,
+    "nameOffset": 0,
+    "isOnGround": 1,
+    "timelineId": 9113302,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3.5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "2": true
+    },
+    "name": "冰狼--冰刃",
+    "followMasterCamp": 1,
+    "duration": 300
+  },
+  "104305": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰墙",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Parmon_10043_Skill_IceColumn_Model.prefab",
+    "timelineId": 10001,
+    "shapeArgs": [
+      1,
+      2,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "scale": 2,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "10451601": {
+    "vanishTime": 0.2,
+    "duration": -1,
+    "canBeHit": 1,
+    "isShowTopLogo": 2,
+    "minOverlayDis": 0.2,
+    "bodyMatType": "flesh",
+    "nameOffset": 0.6,
+    "isOnGround": 0,
+    "timelineId": 210451601,
+    "propId": 90005,
+    "shapeArgs": [
+      2,
+      2,
+      1
+    ],
+    "shapeKind": "Box",
+    "elementType": {
+      "3": true
+    },
+    "name": "荷叶精华",
+    "followMasterCamp": 1,
+    "canBeLocked": 1
+  },
+  "104306": {
+    "vanishTime": 0,
+    "duration": 15,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "isDestroyByImpulse": 1,
+    "timelineId": 20001,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Temp_IcePlatform.prefab",
+    "scale": 1,
+    "shapeArgs": [
+      2,
+      1,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "冰台",
+    "layer": 0
+  },
+  "22331301": {
+    "duration": 35,
+    "canBeHit": 0,
+    "name": "迷梦之粉",
+    "minOverlayDis": 7.5,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 22331301,
+    "vanishTime": 0,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "elementType": {
+      "9": true,
+      "6": true
+    },
+    "shapeArgs": [
+      3
+    ],
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "104307": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰台",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Temp_IcePlatform_Model1.prefab",
+    "timelineId": 20001,
+    "shapeArgs": [
+      3,
+      3,
+      3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "scale": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "104308": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰台",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Temp_IcePlatform_Model2.prefab",
+    "timelineId": 20001,
+    "shapeArgs": [
+      1,
+      1,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "scale": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "104309": {
+    "duration": 15,
+    "canBeHit": 1,
+    "name": "泥浆",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 50006,
+    "shapeArgs": [
+      3.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "920002302": {
+    "duration": 20,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 920002302,
+    "propId": 920002301,
+    "shapeArgs": [
+      7.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "主角的小黄鸭",
+    "isShowTopLogo": 0,
+    "entityTag": [
+      "TE_Cre_DuckBait"
+    ]
+  },
+  "104310": {
+    "waterPool": 1,
+    "duration": 60,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.6,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2104310,
+    "name": "水滩",
+    "shapeArgs": [
+      2.25
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "ecsPower": 35,
+    "conductive": 1,
+    "ecsType": 1
+  },
+  "104501": {
+    "duration": 20,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2104501,
+    "nameOffset": 1.5,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "治愈花丛",
+    "colliderCenterByRoot": 1,
+    "entityTag": [
+      "TE_Cre_Grass"
+    ]
+  },
+  "104502": {
+    "duration": 12,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2104502,
+    "nameOffset": 1.5,
+    "shapeArgs": [
+      8
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "活力花丛",
+    "colliderCenterByRoot": 1,
+    "entityTag": [
+      "TE_Cre_Grass"
+    ]
+  },
+  "104503": {
+    "duration": 20,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2104503,
+    "nameOffset": 1.5,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "生命花丛",
+    "colliderCenterByRoot": 1,
+    "entityTag": [
+      "TE_Cre_Grass"
+    ]
+  },
+  "104504": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "荷花",
+    "minOverlayDis": 3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 2104504,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0,
+    "nameOffset": 0,
+    "isShowTopLogo": 0
+  },
+  "104505": {
+    "vanishTime": 0,
+    "duration": 10,
+    "canBeHit": 1,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 3,
+    "layer": 0,
+    "isOnWater": true,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Parmon_10045_Lotus_02_Model.prefab",
+    "timelineId": 2104505,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "shapeArgs": [
+      1
+    ],
+    "nameOffset": 0,
+    "name": "荷花"
+  },
+  "104506": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "荷花",
+    "minOverlayDis": 3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 2104506,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0,
+    "nameOffset": 0,
+    "isShowTopLogo": 0
+  },
+  "104507": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "活力花丛",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2104507,
+    "shapeArgs": [
+      15
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "104508": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "伤害花丛",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2104508,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "104509": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "荷花",
+    "minOverlayDis": 3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 2104509,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0,
+    "nameOffset": 0,
+    "isShowTopLogo": 0
+  },
+  "104510": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "荷花",
+    "minOverlayDis": 3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 2104510,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0,
+    "nameOffset": 0,
+    "isShowTopLogo": 0
+  },
+  "104511": {
+    "vanishTime": 0,
+    "duration": 10,
+    "canBeHit": 1,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 3,
+    "layer": 0,
+    "isOnWater": true,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Parmon_10045_Lotus_02_Model.prefab",
+    "timelineId": 2104505,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "shapeArgs": [
+      1
+    ],
+    "nameOffset": 0,
+    "name": "荷花"
+  },
+  "104512": {
+    "vanishTime": 0,
+    "duration": 10,
+    "canBeHit": 1,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 3,
+    "layer": 0,
+    "isOnWater": true,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Parmon_10045_Lotus_02_Model.prefab",
+    "timelineId": 2104505,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "shapeArgs": [
+      1
+    ],
+    "nameOffset": 0,
+    "name": "荷花"
+  },
+  "104513": {
+    "duration": 8,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2104513,
+    "nameOffset": 1.5,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "name": "藤蔓束缚",
+    "followMasterCamp": 1,
+    "colliderCenterByRoot": 1
+  },
+  "104514": {
+    "duration": -1,
+    "isShowTopLogo": 0,
+    "isOnWater": true,
+    "isOnGround": 0,
+    "timelineId": 2104514,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "canBeHit": 0,
+    "name": "荷叶",
+    "minOverlayDis": 3,
+    "layer": 0,
+    "vanishTime": 0.2,
+    "nameOffset": 0,
+    "scale": 2.2,
+    "noColliderAndInvincible": 1,
+    "prefabResID": "$Eff_Parmon_10045_Lotus_02_Model.prefab"
+  },
+  "104516": {
+    "vanishTime": 0.2,
+    "duration": -1,
+    "canBeHit": 0,
+    "isShowTopLogo": 2,
+    "minOverlayDis": 0.2,
+    "bodyMatType": "flesh",
+    "shapeArgs": [
+      2,
+      2,
+      1
+    ],
+    "isOnGround": 0,
+    "timelineId": 2104516,
+    "propId": 90005,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Box",
+    "elementType": {
+      "3": true
+    },
+    "nameOffset": 0.6,
+    "name": "荷叶精华",
+    "followMasterCamp": 1
+  },
+  "104517": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "荷叶精华弹道",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 0,
+    "timelineId": 2104517,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "104519": {
+    "duration": 4,
+    "canBeHit": 0,
+    "name": "龙卷风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 0,
+    "timelineId": 2104519,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "shapeArgs": [
+      1
+    ],
+    "isShowTopLogo": 0
+  },
+  "104520": {
+    "duration": 25,
+    "canBeHit": 0,
+    "name": "旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 0,
+    "timelineId": 2104520,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "shapeArgs": [
+      1
+    ],
+    "isShowTopLogo": 0
+  },
+  "104521": {
+    "duration": 12,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 21045021,
+    "nameOffset": 1.5,
+    "shapeArgs": [
+      8
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "活力花丛",
+    "colliderCenterByRoot": 1,
+    "entityTag": [
+      "TE_Cre_Grass"
+    ]
+  },
+  "105101": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "圣炎领域-小",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2105101,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "105201": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "圣炎领域-中",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2105201,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "105302": {
+    "duration": 6,
+    "canBeHit": 1,
+    "name": "空翔击判定-普通",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105302,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "105303": {
+    "duration": 6,
+    "canBeHit": 1,
+    "name": "空翔击判定-火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105303,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "105304": {
+    "duration": 6,
+    "canBeHit": 1,
+    "name": "空翔击判定-电",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105304,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "105305": {
+    "duration": 6,
+    "canBeHit": 1,
+    "name": "空翔击判定-火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105305,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "105501": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "御魂狼-狼群突击",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105501,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "105502": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "御魂狼-必杀",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105502,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "105503": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "御魂狼-狼群突击",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105503,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "105512": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "御魂狼-必杀-精英用",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2105512,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "notifyMasterAbilityEvent": 1,
+    "isShowTopLogo": 0
+  },
+  "107101": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107101,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101102": {
+    "duration": 300,
+    "canBeHit": 0,
+    "name": "电法术场-无限时间",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2101102,
+    "propId": 90001,
+    "shapeArgs": [
+      1.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107103": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "聚怪旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2107103,
+    "propId": 1001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "9": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "107104": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "原地旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107104,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101203": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "爆炸法术场-小",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2101202,
+    "propId": 90001,
+    "shapeArgs": [
+      1.6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "148304": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "name": "沐羽鸟的泡泡领域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2148304,
+    "propId": 90002,
+    "shapeArgs": [
+      12
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "duration": 15,
+    "isShowTopLogo": 0
+  },
+  "107106": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "左斜角旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107106,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107107": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "右斜角旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107107,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101206": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101205,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101207": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "头目星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101206,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107109": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "小径直旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107109,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107110": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "小径直旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107110,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107111": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "聚怪水龙卷",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2107111,
+    "propId": 1001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "3": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "101210": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "传送门",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0,
+    "vanishTime": 1,
+    "isOnGround": 0,
+    "prefabResID": "$Eff_Portal.prefab",
+    "propId": 1001,
+    "shapeArgs": [
+      1,
+      1,
+      0.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "timelineId": 110001,
+    "scale": 2,
+    "isShowTopLogo": 0
+  },
+  "107112": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "小型聚怪龙卷",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107112,
+    "propId": 1001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "notifyMasterAbilityEvent": 1,
+    "isShowTopLogo": 0
+  },
+  "107113": {
+    "duration": 16,
+    "canBeHit": 0,
+    "name": "小径直旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2107113,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "9": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "107114": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "旋风发射器",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107114,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101213": {
+    "vanishTime": 1,
+    "duration": 10,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.6,
+    "timelineId": 2101213,
+    "isOnGround": 1,
+    "prefabResID": "$P_Parmon_10012.prefab",
+    "propId": 10120100,
+    "animController": "Starmage_ParmonController_OM",
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "shapeArgs": [
+      1,
+      1,
+      1.5
+    ],
+    "name": "星魔师真分身",
+    "isShowTopLogo": 1
+  },
+  "107115": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "径直旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2107115,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "9": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "107116": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "聚怪草龙卷",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2107116,
+    "propId": 1001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "107117": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "引导追踪法术场",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107117,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107118": {
+    "duration": 3.1,
+    "canBeHit": 0,
+    "name": "头目变身-银盔龙用旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107118,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "notifyMasterAbilityEvent": 1,
+    "isShowTopLogo": 0
+  },
+  "107119": {
+    "duration": 3.1,
+    "canBeHit": 0,
+    "name": "头目变身-银盔龙用旋风升级版",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107119,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "notifyMasterAbilityEvent": 1,
+    "isShowTopLogo": 0
+  },
+  "107120": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "爬塔用旋风发射器-天赋额外旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107120,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107121": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "爬塔词缀用减速场",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107121,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107122": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "风治愈场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2107122,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "148307": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "name": "沐羽鸟的泡泡领域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2148307,
+    "propId": 90002,
+    "shapeArgs": [
+      12
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "duration": 15,
+    "isShowTopLogo": 0
+  },
+  "107123": {
+    "duration": 2,
+    "canBeHit": 0,
+    "name": "自爆",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107123,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "101101": {
+    "isTrigger": 0,
+    "duration": 3,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2101101,
+    "propId": 90001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "name": "电法术场"
+  },
+  "101201": {
+    "vanishTime": 1,
+    "duration": 10,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.6,
+    "timelineId": 101200,
+    "isOnGround": 1,
+    "prefabResID": "$P_Parmon_10012.prefab",
+    "propId": 10120100,
+    "animController": "Starmage_ParmonController_OM",
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "shapeArgs": [
+      1,
+      1,
+      1.5
+    ],
+    "name": "星魔师分身",
+    "isShowTopLogo": 1
+  },
+  "108102": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "绿意盎然-攻击三次",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2108102,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "108103": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "绿意盎然-捆绑",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2108103,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "103201": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "螳螂-烟雾",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2103201,
+    "propId": 90001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "108301": {
+    "duration": 9,
+    "canBeHit": 1,
+    "name": "蝶翼精灵-种子",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "seed": 1,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "timelineId": 2108301,
+    "isShowTopLogo": 0
+  },
+  "104301": {
+    "duration": 1.5,
+    "canBeHit": 1,
+    "name": "水泡",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2104301,
+    "shapeArgs": [
+      1.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "108302": {
+    "duration": 9,
+    "canBeHit": 1,
+    "name": "蝶翼精灵-种子长大后的花",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2108302,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "108303": {
+    "duration": 9,
+    "canBeHit": 1,
+    "name": "蝶翼精灵-种子-爆炸版",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "seed": 1,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "timelineId": 2108303,
+    "isShowTopLogo": 0
+  },
+  "108304": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "回能法术场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2108304,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "109901": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "Boss引力场",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2109901,
+    "propId": 90001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "109902": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "Boss的石头",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "prefabResID": "$TNT_Box.prefab",
+    "propId": 90001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "timelineId": 2109902,
+    "isShowTopLogo": 0
+  },
+  "164301": {
+    "duration": 30,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2164301,
+    "vanishTime": 0,
+    "shapeArgs": [
+      0.01
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "3": true
+    },
+    "nameOffset": 0.1,
+    "name": "音弹",
+    "followMasterCamp": 1
+  },
+  "109903": {
+    "duration": 300,
+    "canBeHit": 0,
+    "name": "阻挡荆棘",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "prefabResID": "$P_Item_SceneObject_flammableplant.prefab",
+    "propId": 90001,
+    "shapeArgs": [
+      5.91,
+      1.52,
+      1.39
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "timelineId": 2109903,
+    "isShowTopLogo": 0
+  },
+  "2042000": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "自爆",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2042000,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "112201": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "贝瑟斯登场技",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2112201,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "112202": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "贝瑟斯终结技法术场",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2112202,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "113301": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--连斩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2113301,
+    "vanishTime": 0,
+    "shapeArgs": [
+      2.5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "2": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "113302": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--惊雷砸尾爆炸",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2113302,
+    "shapeArgs": [
+      1.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0,
+    "canBeLocked": 0
+  },
+  "113303": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--连斩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2113303,
+    "shapeArgs": [
+      2.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "113304": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--惊雷砸尾爆炸",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2113304,
+    "shapeArgs": [
+      1.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0,
+    "canBeLocked": 0
+  },
+  "113305": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--连斩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2113305,
+    "vanishTime": 0,
+    "shapeArgs": [
+      2.5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "13": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "113306": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--连斩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2113306,
+    "vanishTime": 0,
+    "shapeArgs": [
+      2.5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "113307": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "冰狼--冰刃",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2113307,
+    "vanishTime": 0,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "2": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "114101": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "电水母-雷云",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2114101,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "114102": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "电水母-雷云",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2114102,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "114103": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "电水母-雷云",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2114103,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "114104": {
+    "duration": 20.1,
+    "canBeHit": 0,
+    "name": "电水母头目-雷云",
+    "minOverlayDis": 0.2,
+    "nameOffset": 3,
+    "isOnGround": 1,
+    "timelineId": 2114104,
+    "propId": 1001,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "4": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "114105": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "电水母头目-雷云",
+    "minOverlayDis": 0.2,
+    "nameOffset": 3,
+    "isOnGround": 1,
+    "timelineId": 2114105,
+    "propId": 1001,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "114106": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "电水母-雷云",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2114106,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "4": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "114301": {
+    "duration": 30,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2114301,
+    "propId": 1001,
+    "shapeArgs": [
+      7.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "电水母-电气场地",
+    "entityTag": [
+      "TE_Cre_Elec"
+    ]
+  },
+  "114302": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2114302,
+    "nameOffset": 1.5,
+    "shapeArgs": [
+      15
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "4": true
+    },
+    "name": "电水母-电气场地",
+    "followMasterCamp": 1,
+    "entityTag": [
+      "TE_Cre_Elec"
+    ]
+  },
+  "114306": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "电水母-雷云",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2114306,
+    "propId": 1001,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "4": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "116301": {
+    "vanishTime": 0,
+    "duration": 8,
+    "canBeHit": 1,
+    "isShowTopLogo": 0,
+    "enableReboundDash": 1,
+    "layer": 0,
+    "timelineId": 2116301,
+    "isOnGround": 1,
+    "prefabResID": "$P_Item_SkillObj_10163_IcePrison.prefab",
+    "nameOffset": 2.5,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "2": true
+    },
+    "name": "冰牢",
+    "minOverlayDis": 0.3,
+    "followMasterCamp": 1
+  },
+  "116302": {
+    "duration": 2,
+    "canBeHit": 0,
+    "name": "晶壳蟹--大招冰刺",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2116302,
+    "vanishTime": 0,
+    "shapeArgs": [
+      9
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "notifyMasterAbilityEvent": 1,
+    "nameOffset": 0,
+    "isShowTopLogo": 0
+  },
+  "116303": {
+    "vanishTime": 0.2,
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "nameOffset": 0,
+    "isOnGround": 1,
+    "timelineId": 2116303,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      3.2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "2": true
+    },
+    "name": "晶壳蟹--冰风暴",
+    "followMasterCamp": 1,
+    "colliderCenterByRoot": 1
+  },
+  "116304": {
+    "vanishTime": 0.2,
+    "duration": 5,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "timelineId": 2116304,
+    "isOnGround": 1,
+    "prefabResID": "$Eff_Parmon_10463_Skill_IceSurf_01.prefab",
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      2.7,
+      1,
+      3.4
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "晶壳蟹-冰墙",
+    "enableReboundDash": 1
+  },
+  "116305": {
+    "duration": 4,
+    "canBeHit": 0,
+    "name": "晶壳蟹--大招冰刺",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2116305,
+    "shapeArgs": [
+      9
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0,
+    "isShowTopLogo": 0
+  },
+  "116306": {
+    "vanishTime": 0.2,
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "nameOffset": 0,
+    "isOnGround": 1,
+    "timelineId": 2116306,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      3.2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "2": true
+    },
+    "name": "晶壳蟹--冰风暴",
+    "followMasterCamp": 1,
+    "colliderCenterByRoot": 1
+  },
+  "117301": {
+    "duration": 11,
+    "canBeHit": 0,
+    "name": "海浪",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2117301,
+    "shapeArgs": [
+      1,
+      1,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "117302": {
+    "duration": 11,
+    "canBeHit": 0,
+    "name": "海浪",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2117302,
+    "shapeArgs": [
+      1,
+      1,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "117401": {
+    "vanishTime": 0,
+    "duration": 30,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "enableReboundDash": 1,
+    "layer": 0,
+    "timelineId": 2117401,
+    "isOnGround": 1,
+    "prefabResID": "$P_SkillObj_10174_Wall_01.prefab",
+    "nameOffset": 1.5,
+    "shapeArgs": [
+      2.7,
+      1,
+      3.4
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "name": "土墙",
+    "minOverlayDis": 0.3,
+    "isDestroyByImpulse": 1
+  },
+  "117402": {
+    "duration": 10,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.6,
+    "vanishTime": 1,
+    "isOnGround": 1,
+    "prefabResID": "$P_Parmon_10171.prefab",
+    "propId": 10120100,
+    "animController": "10171_ParmonController_OM",
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "shapeArgs": [
+      1,
+      1,
+      1.5
+    ],
+    "name": "召唤羞羞獭",
+    "isShowTopLogo": 1
+  },
+  "117403": {
+    "duration": 300,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "prefabResID": "$P_SkillObj_10174_Wall_01.prefab",
+    "timelineId": 2117403,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "土墙",
+    "enableReboundDash": 1
+  },
+  "118701": {
+    "duration": 15,
+    "canBeHit": 0,
+    "name": "大号鸥-减伤法术场",
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2118701,
+    "propId": 1001,
+    "shapeArgs": [
+      8
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "119401": {
+    "duration": 11,
+    "canBeHit": 0,
+    "name": "水柱",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2119401,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "119402": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "水柱",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2119402,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "119403": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "水柱",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2119403,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "119404": {
+    "duration": 2,
+    "canBeHit": 0,
+    "name": "水柱",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2119404,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "119405": {
+    "duration": 2,
+    "canBeHit": 0,
+    "name": "水柱",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2119405,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "120301": {
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2120301,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "nameOffset": 1.5,
+    "name": "黑洞领域",
+    "followMasterCamp": 1
+  },
+  "120302": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "寄生领域",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2120302,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "120303": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "暗影领域",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2120303,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "120304": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "黑洞领域",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2120304,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "120305": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "暗影领域",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2120305,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "120306": {
+    "duration": 1.7,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2120306,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "8": true
+    },
+    "nameOffset": 1.5,
+    "name": "碎石领域",
+    "followMasterCamp": 1
+  },
+  "120307": {
+    "duration": 15,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 2120307,
+    "vanishTime": 0,
+    "shapeArgs": [
+      0.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "发光种子",
+    "entityTag": [
+      "TE_Cre_Light"
+    ]
+  },
+  "121201": {
+    "duration": 11,
+    "canBeHit": 0,
+    "name": "泉水",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921201,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0.5,
+    "isShowTopLogo": 0
+  },
+  "121202": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "花环",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921202,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "121203": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "光束阵",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921203,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "121204": {
+    "duration": 20,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921204,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "绽放",
+    "entityTag": [
+      "TE_Cre_Grass"
+    ]
+  },
+  "121205": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "天女散花",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921205,
+    "propId": 10011,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "121311": {
+    "vanishTime": 1,
+    "duration": 5,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0,
+    "layer": 0,
+    "notifyMasterAbilityEvent": 1,
+    "isOnGround": 1,
+    "timelineId": 2121311,
+    "propId": 1001,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "nameOffset": 1,
+    "name": "普攻法术场",
+    "followMasterCamp": 1
+  },
+  "121312": {
+    "vanishTime": 1,
+    "duration": 5,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0,
+    "layer": 0,
+    "notifyMasterAbilityEvent": 1,
+    "isOnGround": 1,
+    "timelineId": 2121312,
+    "propId": 1001,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "nameOffset": 1,
+    "name": "大招花朵",
+    "followMasterCamp": 1
+  },
+  "122201": {
+    "duration": 12,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2122201,
+    "vanishTime": 0,
+    "shapeArgs": [
+      2,
+      4,
+      2
+    ],
+    "shapeKind": "Box",
+    "elementType": {
+      "4": true
+    },
+    "nameOffset": 1.5,
+    "name": "残影",
+    "followMasterCamp": 1
+  },
+  "122202": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "残影",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2122202,
+    "shapeArgs": [
+      2,
+      4,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "122203": {
+    "duration": 5,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2122203,
+    "vanishTime": 0,
+    "shapeArgs": [
+      2,
+      4,
+      2
+    ],
+    "shapeKind": "Box",
+    "elementType": {
+      "4": true
+    },
+    "nameOffset": 1.5,
+    "name": "残影",
+    "followMasterCamp": 1
+  },
+  "123101": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "治愈场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2123101,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "123102": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "绿叶风暴",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2123102,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "123103": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "风治愈场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2123103,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "123104": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "草治愈场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2123104,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "2062001": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2062001,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "123105": {
+    "duration": 10,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "prefabResID": "$P_Parmon_10231_Shadow.prefab",
+    "timelineId": 2123105,
+    "animController": "Ctrl_Parmon_10231_Shadow",
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "shapeArgs": [
+      5
+    ],
+    "nameOffset": 1.5,
+    "name": "幻影蝶"
+  },
+  "2062003": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2062003,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "123106": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "小型绿叶风暴",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2123106,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "2101302": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "头目星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101302,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "123107": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "岩治愈场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2123107,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "123108": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "草治愈场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2123108,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "123109": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "风治愈场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2123109,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "123201": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "治疗之蝶",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2123201,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65,
+      0.65,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "123202": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "治疗之蝶-变异",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2123202,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65,
+      0.65,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "123203": {
+    "duration": 300,
+    "canBeHit": 0,
+    "name": "治疗之蝶",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2123203,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65,
+      0.65,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "123301": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "蝴蝶光波",
+    "minOverlayDis": 0.2,
+    "nameOffset": 3,
+    "isOnGround": 0,
+    "timelineId": 2123301,
+    "propId": 1001,
+    "shapeArgs": [
+      6,
+      5,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "123302": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "蝴蝶光波",
+    "minOverlayDis": 0.2,
+    "nameOffset": 3,
+    "isOnGround": 0,
+    "timelineId": 2123302,
+    "propId": 1001,
+    "shapeArgs": [
+      6,
+      5,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "126101": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "云海",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126101,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "126102": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "云海",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126102,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "126103": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "云海",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126103,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "126104": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126104,
+    "vanishTime": 0,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "云海",
+    "duration": 20
+  },
+  "126105": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "云海",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126105,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "126106": {
+    "duration": 60,
+    "canBeHit": 1,
+    "name": "云团",
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 6126101,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0
+  },
+  "126107": {
+    "duration": 60,
+    "canBeHit": 1,
+    "name": "云团",
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 6126102,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0
+  },
+  "126202": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "蓬蓬羊的藏品",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2126202,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "126203": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "蓬蓬羊的藏品",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2126203,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "126204": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "蓬蓬羊的藏品",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2126204,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "126205": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "蓬蓬羊的藏品",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2126205,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "126206": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "蓬蓬羊的藏品",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2126206,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "126207": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "云海",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126207,
+    "vanishTime": 0,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "notifyMasterAbilityEvent": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "126208": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "小羊",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126208,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1,
+    "isShowTopLogo": 0
+  },
+  "126209": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "小羊",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126209,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1,
+    "isShowTopLogo": 0
+  },
+  "126210": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "小羊",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126210,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1,
+    "isShowTopLogo": 0
+  },
+  "126211": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "云海",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126211,
+    "vanishTime": 0,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "notifyMasterAbilityEvent": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "126212": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126212,
+    "vanishTime": 0,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "云海",
+    "duration": 20
+  },
+  "126213": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "云雾场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126213,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0.5,
+    "isShowTopLogo": 0
+  },
+  "126301": {
+    "duration": 1,
+    "canBeHit": 0,
+    "name": "云弹扩散",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "vanishTime": 1,
+    "isOnGround": 1,
+    "timelineId": 2126301,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "126302": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "食梦",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2126302,
+    "vanishTime": 0,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "notifyMasterAbilityEvent": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "126303": {
+    "duration": 4,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2126303,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "nameOffset": 1.5,
+    "name": "食梦",
+    "followMasterCamp": 1
+  },
+  "126304": {
+    "duration": 3,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2126304,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "nameOffset": 1.5,
+    "name": "食梦",
+    "followMasterCamp": 1
+  },
+  "126305": {
+    "duration": 4,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2126305,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "nameOffset": 1.5,
+    "name": "食梦",
+    "followMasterCamp": 1
+  },
+  "126306": {
+    "duration": 3,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2126306,
+    "notifyMasterAbilityEvent": 1,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "nameOffset": 1.5,
+    "name": "食梦",
+    "followMasterCamp": 1
+  },
+  "128301": {
+    "duration": 1,
+    "canBeHit": 0,
+    "name": "熔岩爆炸",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2128301,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "vanishTime": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "128302": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "暴龙-小熔岩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2128302,
+    "propId": 1001,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "128303": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "暴龙-大熔岩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2128303,
+    "propId": 1001,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "128501": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "岩锥",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2128501,
+    "shapeArgs": [
+      2.4,
+      2.4,
+      1.6
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "128502": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "回音岩晶",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2128502,
+    "shapeArgs": [
+      2.4,
+      2.4,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "128503": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "回音岩晶",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2128503,
+    "shapeArgs": [
+      2.4,
+      2.4,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "129301": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "雷电场",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2129301,
+    "vanishTime": 0,
+    "shapeArgs": [
+      8
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "4": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "129302": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "雷电场",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2129302,
+    "vanishTime": 0,
+    "shapeArgs": [
+      8
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "4": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "129303": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "忧伤云雾碰撞",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.25,
+    "isOnGround": 0,
+    "prefabResID": "$P_Item_SceneObject_SadCloudColider.prefab",
+    "shapeArgs": [
+      1.2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0.2,
+    "timelineId": 2129303,
+    "isShowTopLogo": 0
+  },
+  "129304": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "闪电镖",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2129304,
+    "vanishTime": 0,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "4": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "129305": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "圣光镖",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2129305,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "notifyMasterAbilityEvent": 1,
+    "isShowTopLogo": 0
+  },
+  "129306": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "闪电镖",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2129306,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "132101": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "光源",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2132101,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "132401": {
+    "duration": 15,
+    "canBeHit": 0,
+    "name": "荆棘领域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2132401,
+    "shapeArgs": [
+      8
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "132402": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "阿瓦隆之庭",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2132402,
+    "shapeArgs": [
+      19
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "132403": {
+    "duration": 10,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2132403,
+    "vanishTime": 0,
+    "shapeArgs": [
+      15
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "nameOffset": 1.5,
+    "name": "阿瓦隆之庭",
+    "followMasterCamp": 1
+  },
+  "132404": {
+    "duration": 4,
+    "canBeHit": 0,
+    "name": "草域地刺",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2132404,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "132405": {
+    "duration": 10,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2132405,
+    "vanishTime": 0,
+    "shapeArgs": [
+      15
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "13": true
+    },
+    "nameOffset": 1.5,
+    "name": "阿瓦隆之庭",
+    "followMasterCamp": 1
+  },
+  "133101": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "鬼火火球",
+    "minOverlayDis": 0.1,
+    "nameOffset": 1.5,
+    "isOnGround": 0,
+    "timelineId": 2133101,
+    "propId": 90002,
+    "shapeArgs": [
+      0.2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "133301": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "诡戏炸弹",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2133301,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "137101": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "水柱",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2137101,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "138301": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "珊瑚丛",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2138301,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "8": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "143101": {
+    "duration": 10,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isSmoke": 1,
+    "timelineId": 2143101,
+    "vanishTime": 0,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "烟幕",
+    "isOnGround": 1
+  },
+  "143301": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "侵蚀地表",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2143301,
+    "propId": 1001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "8": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "144401": {
+    "duration": 5,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 2144401,
+    "vanishTime": 0,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "12": true
+    },
+    "nameOffset": 0.6,
+    "name": "钩爪",
+    "followMasterCamp": 1
+  },
+  "145401": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "岩球堆",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 2145401,
+    "shapeArgs": [
+      3,
+      1,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 0.5,
+    "nameOffset": 0.6,
+    "isShowTopLogo": 0
+  },
+  "145402": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "岩球堆",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "prefabResID": "$P_Monster_10454_RockWall.prefab",
+    "timelineId": 2145402,
+    "vanishTime": 0.5,
+    "followMasterCamp": 1,
+    "scale": 2,
+    "nameOffset": 0.6,
+    "isShowTopLogo": 0
+  },
+  "145403": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "岩球堆",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "prefabResID": "$P_Monster_10454_RockWall.prefab",
+    "timelineId": 2145402,
+    "vanishTime": 0.5,
+    "followMasterCamp": 1,
+    "scale": 3,
+    "nameOffset": 0.6,
+    "isShowTopLogo": 0
+  },
+  "148301": {
+    "duration": 9,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 0,
+    "timelineId": 2148301,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "沐羽鸟的大泡泡",
+    "colliderCenterByRoot": 1,
+    "entityTag": [
+      "TE_Cre_Bubble"
+    ]
+  },
+  "148302": {
+    "duration": 15,
+    "canBeHit": 0,
+    "name": "沐羽鸟的泡泡立场",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2148302,
+    "propId": 90002,
+    "shapeArgs": [
+      4
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "148303": {
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 0,
+    "timelineId": 2148303,
+    "propId": 90002,
+    "shapeArgs": [
+      0.3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "沐羽鸟的小泡泡",
+    "colliderCenterByRoot": 1,
+    "entityTag": [
+      "TE_Cre_Bubble"
+    ]
+  },
+  "148305": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "name": "沐羽鸟的泡泡领域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2148305,
+    "propId": 90002,
+    "shapeArgs": [
+      12
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "duration": 10,
+    "isShowTopLogo": 0
+  },
+  "148306": {
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "vanishTime": 0,
+    "isOnGround": 0,
+    "timelineId": 2148306,
+    "propId": 90002,
+    "shapeArgs": [
+      0.3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "沐羽鸟的中泡泡",
+    "colliderCenterByRoot": 1,
+    "entityTag": [
+      "TE_Cre_Bubble"
+    ]
+  },
+  "148308": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "name": "沐羽鸟的泡泡领域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2148308,
+    "propId": 90002,
+    "shapeArgs": [
+      12
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "duration": 10,
+    "isShowTopLogo": 0
+  },
+  "151301": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2151301,
+    "propId": 90002,
+    "shapeArgs": [
+      0.3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "name": "霸拳尾小松果炸弹",
+    "followMasterCamp": 1,
+    "duration": 5
+  },
+  "156301": {
+    "duration": 21,
+    "canBeHit": 0,
+    "name": "孢子云",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2156301,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0.1,
+    "notifyMasterAbilityEvent": 1,
+    "isShowTopLogo": 0
+  },
+  "156302": {
+    "duration": 25,
+    "canBeHit": 0,
+    "name": "炸弹菇",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2156302,
+    "vanishTime": 2,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "159101": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "冰激凌",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2159101,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "258301": {
+    "duration": 10.5,
+    "isShowTopLogo": 1,
+    "isOnGround": 1,
+    "timelineId": 2258301,
+    "shapeArgs": [
+      3
+    ],
+    "topLogoOffset": 2.5,
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "name": "大泡泡",
+    "minOverlayDis": 6,
+    "bodyMatType": "flesh",
+    "canBeLocked": 1,
+    "vanishTime": 0,
+    "elementType": {
+      "3": true
+    },
+    "shapeKind": "Sphere",
+    "topbarHeight": 3,
+    "nameOffset": 3
+  },
+  "258302": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "丽芙羊头目的小泡泡",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 0,
+    "timelineId": 2258302,
+    "shapeArgs": [
+      0.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "258303": {
+    "colliderCenterByRoot": 1,
+    "canBeHit": 0,
+    "name": "丽芙羊头目的戳泡泡",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 0,
+    "timelineId": 2258303,
+    "propId": 90002,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "duration": 60,
+    "isShowTopLogo": 0
+  },
+  "300004": {
+    "duration": 10,
+    "canBeHit": 1,
+    "name": "连携终结奖励爆发-电",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 300004,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "300006": {
+    "duration": 10,
+    "canBeHit": 1,
+    "name": "连携终结奖励爆发-草",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 300006,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "300007": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "捉虫爬塔创生物",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.5,
+    "isOnGround": 0,
+    "timelineId": 300007,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 2,
+    "isShowTopLogo": 0
+  },
+  "300008": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "捉虫爬塔创生物",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.5,
+    "isOnGround": 0,
+    "timelineId": 300008,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 2,
+    "isShowTopLogo": 0
+  },
+  "902501": {
+    "vanishTime": 0,
+    "duration": 120,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "timelineId": 2902501,
+    "isOnGround": 1,
+    "prefabResID": "$P_Item_Sceneobject_LevelHeartSoul.prefab",
+    "propId": 90003,
+    "shapeArgs": [
+      2.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "nameOffset": 0.6,
+    "name": "火晶石",
+    "isShowTopLogo": 0
+  },
+  "9121201": {
+    "duration": 2.5,
+    "canBeHit": 0,
+    "name": "天女散花",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 9121201,
+    "propId": 10011,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "902502": {
+    "vanishTime": 0,
+    "duration": 120,
+    "canBeHit": 1,
+    "isShowTopLogo": 2,
+    "minOverlayDis": 0.2,
+    "bodyMatType": "flesh",
+    "nameOffset": 0.6,
+    "isOnGround": 0,
+    "timelineId": 2902502,
+    "propId": 90005,
+    "shapeArgs": [
+      4,
+      3,
+      4
+    ],
+    "shapeKind": "Box",
+    "elementType": {
+      "5": true
+    },
+    "name": "火晶石",
+    "followMasterCamp": 1,
+    "canBeLocked": 1
+  },
+  "902503": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "陨石残留物",
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2902503,
+    "propId": 90005,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0.6,
+    "isShowTopLogo": 0
+  },
+  "921301": {
+    "duration": 15,
+    "canBeHit": 0,
+    "name": "彩虹天气场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921301,
+    "shapeArgs": [
+      30
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "921302": {
+    "duration": 15,
+    "canBeHit": 0,
+    "name": "彩虹天气场",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921302,
+    "shapeArgs": [
+      30
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "921303": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "生命之树",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 2921303,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "nameOffset": 1,
+    "isShowTopLogo": 0
+  },
+  "1005305": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "狼斗士头目-地火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.1,
+    "isOnGround": 1,
+    "timelineId": 10532005,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "1005306": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "狼斗士头目-地火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.1,
+    "isOnGround": 1,
+    "timelineId": 10532006,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "1005307": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "狼斗士头目-地火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.1,
+    "isOnGround": 1,
+    "timelineId": 10532007,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "1055011": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "御魂狼-狼群突击",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 21055011,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "1055031": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "御魂狼-狼群突击",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 21055031,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "notifyMasterAbilityEvent": 1,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "2030101": {
+    "duration": 300,
+    "canBeHit": 0,
+    "name": "脉冲水晶",
+    "minOverlayDis": 0.3,
+    "layer": 25,
+    "vanishTime": 1,
+    "isOnGround": 1,
+    "prefabResID": "$Eff_Parmon_Common_BossRush_CrystalChange_Formal_New_01.prefab",
+    "propId": 10011,
+    "shapeArgs": [
+      1,
+      1,
+      3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "timelineId": 2030101,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "2030301": {
+    "vanishTime": 0,
+    "duration": 300,
+    "canBeHit": 1,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.1,
+    "name": "主角的小黄鸭",
+    "isOnGround": 1,
+    "timelineId": 2030301,
+    "propId": 10011,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "canBeLocked": 1,
+    "followMasterCamp": 1,
+    "entityTag": [
+      "TE_Cre_DuckBait"
+    ]
+  },
+  "2030321": {
+    "duration": 300,
+    "canBeHit": 0,
+    "name": "烫脚区域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.1,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 2030321,
+    "propId": 10011,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "elementType": {
+      "5": true
+    },
+    "shapeArgs": [
+      3
+    ],
+    "followMasterCamp": 0,
+    "isShowTopLogo": 0
+  },
+  "920002301": {
+    "duration": 10,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "vanishTime": 0,
+    "isOnGround": 1,
+    "timelineId": 920002301,
+    "propId": 920002301,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "name": "主角的小黄鸭",
+    "isShowTopLogo": 0,
+    "entityTag": [
+      "TE_Cre_DuckBait"
+    ]
+  },
+  "2040701": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "能量球",
+    "minOverlayDis": 0.5,
+    "nameOffset": 0.4,
+    "isOnGround": 1,
+    "timelineId": 2040701,
+    "shapeArgs": [
+      0.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "22331303": {
+    "duration": 5,
+    "canBeHit": 0,
+    "name": "奥涅蓝紫风直线",
+    "minOverlayDis": 7.5,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 22331303,
+    "vanishTime": 0,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "elementType": {
+      "9": true
+    },
+    "shapeArgs": [
+      3
+    ],
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "22331302": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "奥涅蓝紫风",
+    "minOverlayDis": 7.5,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 22331302,
+    "vanishTime": 0,
+    "noColliderAndInvincible": 1,
+    "shapeKind": "Sphere",
+    "elementType": {
+      "9": true
+    },
+    "shapeArgs": [
+      3
+    ],
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "2104518": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "治疗模块",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2104518,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2162301": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "橙色泡泡",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2162301,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "15630101": {
+    "duration": 21,
+    "canBeHit": 0,
+    "name": "孢子云",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 215630101,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0.1,
+    "notifyMasterAbilityEvent": 1,
+    "isShowTopLogo": 0
+  },
+  "2162302": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "紫色泡泡",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2162302,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "10451401": {
+    "duration": -1,
+    "isShowTopLogo": 0,
+    "isOnWater": true,
+    "isOnGround": 0,
+    "timelineId": 210451401,
+    "shapeArgs": [
+      1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "canBeHit": 0,
+    "name": "荷叶",
+    "minOverlayDis": 3,
+    "layer": 0,
+    "vanishTime": 0.2,
+    "nameOffset": 0,
+    "scale": 1.5,
+    "noColliderAndInvincible": 1,
+    "prefabResID": "$Eff_Parmon_10045_Lotus_02_Model.prefab"
+  },
+  "2162303": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "紫色泡泡",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2162303,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "2162304": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "紫色泡泡",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2162304,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "2700001": {
+    "duration": 2,
+    "canBeHit": 0,
+    "name": "自爆",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2700001,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2700002": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "荆棘领域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2700002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "2700003": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "荆棘领域",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isOnGround": 1,
+    "timelineId": 2700003,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "9113301": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "冰狼--连斩",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 9113301,
+    "shapeArgs": [
+      2.5
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "2": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "9104507": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "活力花丛",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 9104507,
+    "shapeArgs": [
+      17
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "9021304": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "鸢尾boss分身连段1",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 9021304,
+    "propId": 1001,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "9021302": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "移动法环",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 0,
+    "timelineId": 9021302,
+    "propId": 1001,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "elementType": {
+      "6": true
+    },
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "isShowTopLogo": 0
+  },
+  "9020714": {
+    "isTrigger": 1,
+    "duration": 30,
+    "isShowTopLogo": 0,
+    "isOnGround": 0,
+    "timelineId": 9020710,
+    "propId": 10011,
+    "shapeArgs": [
+      4,
+      3,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 2,
+    "vanishTime": 0,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03A_5.prefab",
+    "name": "藤蔓",
+    "inflammable": 1
+  },
+  "2101301": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "头目星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101301,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "2101303": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "头目星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101303,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "9020713": {
+    "isTrigger": 1,
+    "duration": 30,
+    "isShowTopLogo": 0,
+    "isOnGround": 0,
+    "timelineId": 9020710,
+    "propId": 10011,
+    "shapeArgs": [
+      4,
+      3,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.3,
+    "nameOffset": 2,
+    "vanishTime": 0,
+    "prefabResID": "$P_SkillObj_90207_TuckinBossWalls_03A_4.prefab",
+    "name": "藤蔓",
+    "inflammable": 1
+  },
+  "9020708": {
+    "duration": 5,
+    "canBeHit": 1,
+    "name": "泥浆",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 9020708,
+    "shapeArgs": [
+      3.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "9020707": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "地刺",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 9020707,
+    "shapeArgs": [
+      2.4,
+      1,
+      5.3
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "9020705": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "藤墙",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "prefabResID": "$P_SkillObj_90207_Wall_Back.prefab",
+    "shapeArgs": [
+      0.5,
+      2,
+      20
+    ],
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "timelineId": 9020701,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "9020704": {
+    "duration": 15,
+    "isShowTopLogo": 1,
+    "isOnGround": 0,
+    "timelineId": 9020704,
+    "propId": 90005,
+    "shapeArgs": [
+      2,
+      2.5,
+      2
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "canBeHit": 1,
+    "name": "重锤",
+    "minOverlayDis": 0.3,
+    "bodyMatType": "flesh",
+    "vanishTime": 0,
+    "elementType": {
+      "6": true
+    },
+    "canBeLocked": 1,
+    "prefabResID": "$P_Item_SkillObj_90207_Sphere.prefab",
+    "nameOffset": 2.5
+  },
+  "102301": {
+    "vanishTime": 0,
+    "duration": 300,
+    "canBeHit": 1,
+    "name": "银盔龙的守护石",
+    "minOverlayDis": 0.3,
+    "nameOffset": 0.5,
+    "isShowTopLogo": 1,
+    "isOnGround": 1,
+    "timelineId": 2102301,
+    "propId": 10230100,
+    "shapeArgs": [
+      1,
+      2,
+      1
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 0,
+    "scale": 3,
+    "topbarHeight": 3.3,
+    "canBeLocked": 1
+  },
+  "101204": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "buff场-小",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2101203,
+    "propId": 90001,
+    "shapeArgs": [
+      0.8
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101214": {
+    "vanishTime": 1,
+    "duration": 10,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.6,
+    "timelineId": 2101214,
+    "isOnGround": 1,
+    "prefabResID": "$P_Parmon_10012.prefab",
+    "propId": 10120100,
+    "animController": "Starmage_ParmonController_OM",
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "shapeArgs": [
+      1,
+      1,
+      1.5
+    ],
+    "name": "星魔师假分身",
+    "isShowTopLogo": 1
+  },
+  "101212": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101212,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101211": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101211,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107105": {
+    "duration": 1.5,
+    "canBeHit": 0,
+    "name": "径直旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107105,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101209": {
+    "duration": 10,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.6,
+    "vanishTime": 1,
+    "isOnGround": 1,
+    "prefabResID": "$P_Parmon_10012.prefab",
+    "propId": 90003,
+    "animController": "Starmage_ParmonController_OM",
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "shapeArgs": [
+      1,
+      1,
+      1.5
+    ],
+    "name": "星魔师分身",
+    "isShowTopLogo": 1
+  },
+  "101208": {
+    "duration": 3,
+    "canBeHit": 0,
+    "name": "星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101208,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101305": {
+    "duration": 300,
+    "canBeHit": 0,
+    "name": "治疗之泉",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 50005,
+    "propId": 90002,
+    "shapeArgs": [
+      1.5,
+      1.5,
+      1.5
+    ],
+    "shapeKind": "Box",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2101304": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "头目星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101304,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "2062002": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2062002,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2062000": {
+    "duration": 60,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2062000,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2031002": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "治疗模块",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2031002,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2008000": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2008000,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "1005304": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "狼斗士头目-地火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.1,
+    "isOnGround": 1,
+    "timelineId": 10532004,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "1005303": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "狼斗士头目-地火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.1,
+    "isOnGround": 1,
+    "timelineId": 10532003,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "108101": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "绿意盎然-攻击一次",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2108101,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "107102": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "火焰旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107102,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101304": {
+    "duration": 6,
+    "canBeHit": 0,
+    "name": "黑洞领域",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 1,
+    "timelineId": 50003,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "101308": {
+    "vanishTime": 1,
+    "duration": 10,
+    "canBeHit": 1,
+    "canBeLocked": 1,
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.6,
+    "timelineId": 101308,
+    "isOnGround": 1,
+    "prefabResID": "$P_Parmon_10012.prefab",
+    "propId": 10120100,
+    "animController": "Starmage_ParmonController_OM",
+    "shapeKind": "Box",
+    "followMasterCamp": 1,
+    "shapeArgs": [
+      1,
+      1,
+      1.5
+    ],
+    "name": "星魔师分身",
+    "isShowTopLogo": 1
+  },
+  "2700004": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2700004,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2700005": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2700005,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2700006": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2700006,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2700007": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2700007,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "2700008": {
+    "duration": 120,
+    "canBeHit": 0,
+    "name": "爬塔金币",
+    "minOverlayDis": 0.3,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2700008,
+    "propId": 90002,
+    "shapeArgs": [
+      0.65
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 0,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "6143101": {
+    "duration": 10,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isSmoke": 1,
+    "timelineId": 6143101,
+    "vanishTime": 0,
+    "shapeArgs": [
+      6
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "烟幕",
+    "isOnGround": 1
+  },
+  "9020701": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "藤墙",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "prefabResID": "$P_SkillObj_90207_Wall.prefab",
+    "shapeArgs": [
+      0.5,
+      2,
+      20
+    ],
+    "vanishTime": 0,
+    "followMasterCamp": 1,
+    "timelineId": 9020701,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "105301": {
+    "duration": 12,
+    "canBeHit": 0,
+    "name": "圣炎领域-大",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2105301,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "101202": {
+    "duration": 13,
+    "canBeHit": 0,
+    "name": "星星炸弹",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2101201,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "9020702": {
+    "duration": 30,
+    "canBeHit": 0,
+    "name": "藤墙",
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "prefabResID": "$P_Temp_Battle_TuckinBossWalls_Standard.prefab",
+    "vanishTime": 1,
+    "followMasterCamp": 1,
+    "timelineId": 9020702,
+    "nameOffset": 1.5,
+    "isShowTopLogo": 0
+  },
+  "101205": {
+    "duration": 10,
+    "canBeHit": 0,
+    "name": "buff场",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.6,
+    "isOnGround": 1,
+    "timelineId": 2101204,
+    "propId": 90001,
+    "shapeArgs": [
+      3
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  },
+  "9020703": {
+    "duration": 15,
+    "canBeHit": 1,
+    "canBeLocked": 0,
+    "minOverlayDis": 0.3,
+    "layer": 0,
+    "isOnGround": 0,
+    "timelineId": 9020703,
+    "vanishTime": 0,
+    "shapeArgs": [
+      3.5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "nameOffset": 1.5,
+    "name": "泥浆",
+    "isShowTopLogo": 0
+  },
+  "1005301": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "狼斗士头目-地火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.1,
+    "isOnGround": 1,
+    "timelineId": 10532001,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "1005302": {
+    "duration": 20,
+    "canBeHit": 0,
+    "name": "狼斗士头目-地火",
+    "minOverlayDis": 0.2,
+    "nameOffset": 0.1,
+    "isOnGround": 1,
+    "timelineId": 10532002,
+    "propId": 90002,
+    "shapeArgs": [
+      0.1
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 1,
+    "isShowTopLogo": 0
+  },
+  "101310": {
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "isOnWater": 1,
+    "isOnGround": 1,
+    "prefabResID": "$P_Item_SceneObject_BlackHole_Whitebox.prefab",
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "nameOffset": 0.5,
+    "name": "黑洞"
+  },
+  "101311": {
+    "vanishTime": 0,
+    "duration": 6,
+    "canBeHit": 0,
+    "isShowTopLogo": 0,
+    "minOverlayDis": 0.2,
+    "layer": 0,
+    "isOnWater": true,
+    "isOnGround": 0,
+    "prefabResID": "$P_SkillObj_10181_Whirlwind_Normal.prefab",
+    "propId": 101311,
+    "shapeArgs": [
+      5
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "timelineId": 101311,
+    "nameOffset": 0.5,
+    "name": "龙卷风"
+  },
+  "107108": {
+    "duration": 8,
+    "canBeHit": 0,
+    "name": "小径直旋风",
+    "minOverlayDis": 0.2,
+    "nameOffset": 1.5,
+    "isOnGround": 1,
+    "timelineId": 2107108,
+    "propId": 1001,
+    "shapeArgs": [
+      2
+    ],
+    "shapeKind": "Sphere",
+    "followMasterCamp": 1,
+    "vanishTime": 0,
+    "isShowTopLogo": 0
+  }
+}

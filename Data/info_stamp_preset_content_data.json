@@ -1,0 +1,2804 @@
+{
+  "1012": {
+    "txtClips": [
+      [
+        10008,
+        20607
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 6777
+  },
+  "1013": {
+    "txtClips": [
+      [
+        10008,
+        20607
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 6777
+  },
+  "1014": {
+    "txtClips": [
+      [
+        10018,
+        1026100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 1861
+  },
+  "1015": {
+    "txtClips": [
+      [
+        10018,
+        1021100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 1861
+  },
+  "1016": {
+    "txtClips": [
+      [
+        21025
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 3,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "10008": {
+    "txtClips": [
+      [
+        10023,
+        1026100
+      ],
+      [
+        30101
+      ],
+      [
+        10001,
+        20419
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 1,
+    "rotation": [
+      0,
+      24.504583358765,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 632
+  },
+  "10009": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      67.284042358398,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 321,
+    "txtClips": [
+      [
+        10002,
+        20800
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1269312733,
+    "courseName": 1742618301,
+    "informationType": 1
+  },
+  "10010": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      178.39224243164,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 546,
+    "txtClips": [
+      [
+        10018,
+        20800
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1706531720,
+    "courseName": 1458632833,
+    "informationType": 1
+  },
+  "5": {
+    "animation": "1002",
+    "bubbleType": 2,
+    "npcId": 400100,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 101,
+    "txtClips": [
+      [
+        10010,
+        20516
+      ]
+    ],
+    "picture": "$UI_Help_1012.png",
+    "informationType": 1
+  },
+  "6": {
+    "animation": "1002",
+    "bubbleType": 3,
+    "npcId": 400021,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 132131,
+    "txtClips": [
+      [
+        10002,
+        20231
+      ],
+      [
+        30101
+      ],
+      [
+        10007,
+        20101
+      ]
+    ],
+    "course": 205,
+    "movie": "$Video_Login_01.mp4",
+    "picture": "$UI_Help_1012.png",
+    "voice": "SFX_SceneObject_ARK_SlotMachine_Firework",
+    "rotation": [
+      0,
+      0,
+      0
+    ]
+  },
+  "10019": {
+    "txtClips": [
+      [
+        10001,
+        20523
+      ],
+      [
+        30101
+      ],
+      [
+        10001,
+        20526
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      25.135667800903,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 212
+  },
+  "7": {
+    "txtClips": [
+      [
+        10002,
+        20231
+      ],
+      [
+        30101
+      ],
+      [
+        10007,
+        20101
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1003",
+    "bubbleType": 3,
+    "npcId": 400006,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 1221
+  },
+  "8": {
+    "clueList": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1001100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 12312,
+    "txtClips": [
+      [
+        10001,
+        21035
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1611732138,
+    "courseName": 1359382865,
+    "playerName": 1229303992,
+    "informationType": 2
+  },
+  "9": {
+    "clueList": [
+      [
+        3,
+        9220020
+      ],
+      [
+        4,
+        10300011
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 4324,
+    "txtClips": [
+      [
+        10001,
+        21035
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1639941150,
+    "courseName": 1293520634,
+    "playerName": 1486954981,
+    "informationType": 2
+  },
+  "1017": {
+    "txtClips": [
+      [
+        10009,
+        20412
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 132
+  },
+  "1018": {
+    "txtClips": [
+      [
+        10009,
+        20417
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 33
+  },
+  "1019": {
+    "txtClips": [
+      [
+        21020
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 4
+  },
+  "1020": {
+    "txtClips": [
+      [
+        21008
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 15
+  },
+  "1021": {
+    "txtClips": [
+      [
+        10007,
+        20800
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 99
+  },
+  "1022": {
+    "txtClips": [
+      [
+        10009,
+        20409
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 12
+  },
+  "1023": {
+    "txtClips": [
+      [
+        10004,
+        20611
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 155
+  },
+  "1024": {
+    "txtClips": [
+      [
+        10017,
+        1026100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 56
+  },
+  "1025": {
+    "txtClips": [
+      [
+        10017,
+        1018100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 70
+  },
+  "1026": {
+    "txtClips": [
+      [
+        10005,
+        20518
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 137
+  },
+  "1027": {
+    "txtClips": [
+      [
+        10021,
+        20519
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1003",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 139
+  },
+  "1028": {
+    "txtClips": [
+      [
+        20413
+      ],
+      [
+        30101
+      ],
+      [
+        20409
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 17
+  },
+  "1029": {
+    "txtClips": [
+      [
+        20608
+      ],
+      [
+        30101
+      ],
+      [
+        20519
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 9
+  },
+  "1030": {
+    "txtClips": [
+      [
+        21019
+      ],
+      [
+        21033
+      ],
+      [
+        30101
+      ],
+      [
+        21028
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 86
+  },
+  "1031": {
+    "txtClips": [
+      [
+        10012,
+        20245
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 98
+  },
+  "10029": {
+    "txtClips": [
+      [
+        10025,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20526
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      157.13876342773,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 546
+  },
+  "1033": {
+    "txtClips": [
+      [
+        10012,
+        21033
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 6
+  },
+  "1034": {
+    "txtClips": [
+      [
+        10003,
+        20514
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 59
+  },
+  "10036": {
+    "txtClips": [
+      [
+        10025,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20526
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      346.91519165039,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 689
+  },
+  "1036": {
+    "txtClips": [
+      [
+        10009,
+        20101
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 125
+  },
+  "1037": {
+    "txtClips": [
+      [
+        10012,
+        20417
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 113
+  },
+  "1038": {
+    "txtClips": [
+      [
+        21008
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 114
+  },
+  "10051": {
+    "txtClips": [
+      [
+        10008,
+        20527
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 233
+  },
+  "10053": {
+    "txtClips": [
+      [
+        10015,
+        21044
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 333
+  },
+  "1041": {
+    "txtClips": [
+      [
+        10018,
+        21032
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "1042": {
+    "txtClips": [
+      [
+        21002
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "1043": {
+    "txtClips": [
+      [
+        10002,
+        20412
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "1044": {
+    "txtClips": [
+      [
+        10004,
+        20413
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "1045": {
+    "txtClips": [
+      [
+        10019,
+        20176
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "1046": {
+    "txtClips": [
+      [
+        10004,
+        20818
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 725
+  },
+  "1047": {
+    "txtClips": [
+      [
+        10015,
+        20419
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 725
+  },
+  "1048": {
+    "txtClips": [
+      [
+        10019,
+        20176
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 725
+  },
+  "1049": {
+    "txtClips": [
+      [
+        10020,
+        20303
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 725
+  },
+  "1050": {
+    "txtClips": [
+      [
+        10012,
+        21033
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 6
+  },
+  "1051": {
+    "txtClips": [
+      [
+        10017,
+        1005100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "10011": {
+    "txtClips": [
+      [
+        10023,
+        1026100
+      ],
+      [
+        30101
+      ],
+      [
+        10001,
+        20618
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      201.40992736816,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 212
+  },
+  "10012": {
+    "txtClips": [
+      [
+        10002,
+        20407
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      35.100082397461,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 365
+  },
+  "10013": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      212.43252563477,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 212,
+    "txtClips": [
+      [
+        10002,
+        20412
+      ]
+    ],
+    "course": 207,
+    "courseDesc": 1126317181,
+    "courseName": 2069973278,
+    "informationType": 2
+  },
+  "10038": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 259,
+    "txtClips": [
+      [
+        10019,
+        20227
+      ]
+    ],
+    "course": 210,
+    "courseDesc": 1741250642,
+    "courseName": 2061362076,
+    "informationType": 1
+  },
+  "10041": {
+    "txtClips": [
+      [
+        10018,
+        20819
+      ]
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "10059": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 216,
+    "txtClips": [
+      [
+        10023,
+        1028300
+      ],
+      [
+        30111
+      ],
+      [
+        10004,
+        21034
+      ]
+    ],
+    "picture": "$UI_Help_10059.png",
+    "informationType": 1
+  },
+  "10064": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 212,
+    "txtClips": [
+      [
+        10009,
+        20422
+      ]
+    ],
+    "picture": "$UI_Help_8132.png",
+    "informationType": 1
+  },
+  "1052": {
+    "txtClips": [
+      [
+        10012,
+        20245
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 98
+  },
+  "1053": {
+    "txtClips": [
+      [
+        10009,
+        20417
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 33
+  },
+  "1054": {
+    "txtClips": [
+      [
+        10019,
+        20176
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "1055": {
+    "txtClips": [
+      [
+        10017,
+        1018100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 70
+  },
+  "1056": {
+    "txtClips": [
+      [
+        20612
+      ],
+      [
+        30101
+      ],
+      [
+        20302
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 38
+  },
+  "1057": {
+    "txtClips": [
+      [
+        20420,
+        20613
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 55
+  },
+  "1058": {
+    "txtClips": [
+      [
+        10017,
+        1018100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 100
+  },
+  "1059": {
+    "txtClips": [
+      [
+        10004,
+        20806
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 3,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 100
+  },
+  "10006": {
+    "txtClips": [
+      [
+        10004,
+        1026100
+      ]
+    ],
+    "animation": "1001",
+    "rotation": [
+      0,
+      343.841796875,
+      0
+    ],
+    "clueList": [
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        1005100
+      ],
+      [
+        4,
+        10500231
+      ]
+    ],
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 652
+  },
+  "10020": {
+    "txtClips": [
+      [
+        10001,
+        20523
+      ],
+      [
+        10001,
+        21036
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      177.0184173584,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 365
+  },
+  "10021": {
+    "txtClips": [
+      [
+        10023,
+        1018100
+      ],
+      [
+        30101
+      ],
+      [
+        10001,
+        20417
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      172.89476013184,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 546
+  },
+  "10007": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      343.77947998047,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 655,
+    "txtClips": [
+      [
+        10023,
+        1005100
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1552902147,
+    "courseName": 1195957775,
+    "informationType": 1
+  },
+  "10014": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      35.231590270996,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 328,
+    "txtClips": [
+      [
+        10002,
+        20800
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1737096520,
+    "courseName": 1845290400,
+    "informationType": 2
+  },
+  "10015": {
+    "txtClips": [
+      [
+        10023,
+        1022100
+      ],
+      [
+        30101
+      ],
+      [
+        10001,
+        20419
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      47.735118865967,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 546
+  },
+  "10016": {
+    "txtClips": [
+      [
+        10022,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20526
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      6.0721386034857e-06,
+      141.76821899414,
+      -2.2421891117119e-06
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 212
+  },
+  "10017": {
+    "txtClips": [
+      [
+        10020,
+        20419
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      309.81756591797,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 365
+  },
+  "10018": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      177.71636962891,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 546,
+    "txtClips": [
+      [
+        10009,
+        20804
+      ]
+    ],
+    "course": 305,
+    "courseDesc": 1189473462,
+    "courseName": 1302706012,
+    "informationType": 2
+  },
+  "10022": {
+    "txtClips": [
+      [
+        10026,
+        1018100
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      120.06159973145,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 212
+  },
+  "10023": {
+    "txtClips": [
+      [
+        10024,
+        20526
+      ],
+      [
+        10001,
+        21036
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      105.3557510376,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 365
+  },
+  "10024": {
+    "txtClips": [
+      [
+        10019,
+        20420
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      276.63024902344,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 546
+  },
+  "10025": {
+    "txtClips": [
+      [
+        10023,
+        1001100
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      30.158458709717,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 654
+  },
+  "10026": {
+    "animation": "1001",
+    "rotation": [
+      6.1639957493753e-06,
+      44.322113037109,
+      -2.0188108464936e-06
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 689,
+    "txtClips": [
+      [
+        10020,
+        20417
+      ]
+    ],
+    "course": 102,
+    "courseDesc": 1646675045,
+    "courseName": 1147898395,
+    "informationType": 2
+  },
+  "10027": {
+    "txtClips": [
+      [
+        10022,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20526
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      150.8399810791,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 464
+  },
+  "10002": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      16.769920349121,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 462,
+    "txtClips": [
+      [
+        10023,
+        1005100
+      ],
+      [
+        30101
+      ],
+      [
+        10002,
+        20800
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1831886546,
+    "courseName": 1445419388,
+    "informationType": 1
+  },
+  "10030": {
+    "txtClips": [
+      [
+        10008,
+        20614
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      96.20629119873,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 654
+  },
+  "10060": {
+    "txtClips": [
+      [
+        10017,
+        20237
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 67
+  },
+  "10032": {
+    "txtClips": [
+      [
+        10002,
+        20800
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      146.3963470459,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 464
+  },
+  "10033": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      134.34077453613,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 365,
+    "txtClips": [
+      [
+        10018,
+        20807
+      ]
+    ],
+    "course": 304,
+    "courseDesc": 1975680887,
+    "courseName": 1959527608,
+    "informationType": 2
+  },
+  "10034": {
+    "txtClips": [
+      [
+        10025,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20523
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      333.47161865234,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 546
+  },
+  "10035": {
+    "txtClips": [
+      [
+        10025,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20526
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      274.29064941406,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 654
+  },
+  "10037": {
+    "animation": "1001",
+    "rotation": [
+      0,
+      16.769920349121,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 462,
+    "txtClips": [
+      [
+        10023,
+        1005100
+      ],
+      [
+        30101
+      ],
+      [
+        10002,
+        20800
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1893750380,
+    "courseName": 1477182588,
+    "informationType": 1
+  },
+  "10044": {
+    "txtClips": [
+      [
+        10019,
+        20246
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 325
+  },
+  "10045": {
+    "txtClips": [
+      [
+        10001,
+        20618
+      ],
+      [
+        10001,
+        30110
+      ],
+      [
+        21036
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 234
+  },
+  "10046": {
+    "txtClips": [
+      [
+        10018,
+        20247
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 233
+  },
+  "10047": {
+    "txtClips": [
+      [
+        10001,
+        20614
+      ],
+      [
+        10001,
+        21036
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 233
+  },
+  "10048": {
+    "txtClips": [
+      [
+        10002,
+        20246
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 233
+  },
+  "10049": {
+    "txtClips": [
+      [
+        10020,
+        20246
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 233
+  },
+  "10050": {
+    "txtClips": [
+      [
+        10008,
+        20527
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 233
+  },
+  "10052": {
+    "txtClips": [
+      [
+        10019,
+        1058100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 333
+  },
+  "10054": {
+    "txtClips": [
+      [
+        20519
+      ],
+      [
+        30101
+      ],
+      [
+        10019,
+        20238
+      ]
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "rotation": [
+      0,
+      35.231590270996,
+      0
+    ],
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 227
+  },
+  "10055": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 259,
+    "txtClips": [
+      [
+        10009,
+        20422
+      ]
+    ],
+    "picture": "$UI_Help_8162.png",
+    "informationType": 1
+  },
+  "10056": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 233,
+    "txtClips": [
+      [
+        10002,
+        20807
+      ]
+    ],
+    "informationType": 1,
+    "clueList": [
+      [
+        1,
+        2
+      ]
+    ]
+  },
+  "10057": {
+    "txtClips": [
+      [
+        10008,
+        20512
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 152
+  },
+  "10058": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 203,
+    "txtClips": [
+      [
+        10023,
+        1028300
+      ],
+      [
+        30111
+      ],
+      [
+        10004,
+        21034
+      ]
+    ],
+    "picture": "$UI_Help_10058.png",
+    "informationType": 1
+  },
+  "10039": {
+    "animation": "1001",
+    "clueList": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1004100
+      ],
+      [
+        4,
+        10300011
+      ]
+    ],
+    "rotation": [
+      0,
+      35.231590270996,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 328,
+    "txtClips": [
+      [
+        10002,
+        20802
+      ]
+    ],
+    "course": 206,
+    "courseDesc": 1632258530,
+    "courseName": 1376431329,
+    "informationType": 2
+  },
+  "10042": {
+    "txtClips": [
+      [
+        10018,
+        20246
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 102
+  },
+  "10061": {
+    "txtClips": [
+      [
+        10023,
+        1002100
+      ],
+      [
+        30101
+      ],
+      [
+        10003,
+        1002300
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 12
+  },
+  "10066": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 276,
+    "txtClips": [
+      [
+        10009,
+        20422
+      ]
+    ],
+    "picture": "$UI_Help_8124.png",
+    "informationType": 1
+  },
+  "1": {
+    "txtClips": [
+      [
+        10002,
+        20231
+      ],
+      [
+        30101
+      ],
+      [
+        10007,
+        20101
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 401001,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "2": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400014,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 101,
+    "txtClips": [
+      [
+        10002,
+        20231
+      ],
+      [
+        30101
+      ],
+      [
+        10007,
+        20101
+      ]
+    ],
+    "movie": "$Video_Login_01.mp4",
+    "informationType": 1
+  },
+  "3": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400015,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 256,
+    "txtClips": [
+      [
+        10002,
+        20231
+      ],
+      [
+        30101
+      ],
+      [
+        10007,
+        20101
+      ]
+    ],
+    "course": 205,
+    "informationType": 1
+  },
+  "4": {
+    "animation": "1001",
+    "bubbleType": 2,
+    "npcId": 400021,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 101,
+    "txtClips": [
+      [
+        10002,
+        20231
+      ],
+      [
+        30101
+      ],
+      [
+        10007,
+        20101
+      ]
+    ],
+    "voice": "SFX_SceneObject_ARK_SlotMachine_Firework",
+    "informationType": 1
+  },
+  "1002": {
+    "txtClips": [
+      [
+        10019,
+        20176
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "10062": {
+    "txtClips": [
+      [
+        10023,
+        1002100
+      ],
+      [
+        30101
+      ],
+      [
+        10003,
+        1002300
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 7
+  },
+  "10068": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 276,
+    "txtClips": [
+      [
+        10009,
+        20422
+      ]
+    ],
+    "picture": "$UI_Help_8123.png",
+    "informationType": 1
+  },
+  "1040": {
+    "txtClips": [
+      [
+        21024
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "10065": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 260,
+    "txtClips": [
+      [
+        10009,
+        20422
+      ]
+    ],
+    "picture": "$UI_Help_8142.png",
+    "informationType": 1
+  },
+  "1001": {
+    "txtClips": [
+      [
+        10018,
+        1026100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "1035": {
+    "txtClips": [
+      [
+        10002,
+        20800
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 71
+  },
+  "1039": {
+    "txtClips": [
+      [
+        10005,
+        20418
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 37
+  },
+  "10028": {
+    "txtClips": [
+      [
+        10025,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20523
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      236.15502929688,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 365
+  },
+  "1004": {
+    "txtClips": [
+      [
+        10020,
+        20240
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "1005": {
+    "txtClips": [
+      [
+        10021,
+        20155
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1015",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 336
+  },
+  "1006": {
+    "txtClips": [
+      [
+        10015,
+        20243
+      ],
+      [
+        10009,
+        20416
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 3455
+  },
+  "10040": {
+    "animation": "1001",
+    "clueList": [
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        1001100
+      ]
+    ],
+    "rotation": [
+      0,
+      35.231590270996,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 637,
+    "txtClips": [
+      [
+        10019,
+        20409
+      ]
+    ],
+    "course": 102,
+    "courseDesc": 2050393320,
+    "courseName": 1271133309,
+    "informationType": 2
+  },
+  "1009": {
+    "txtClips": [
+      [
+        10004,
+        20171
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 10086
+  },
+  "1007": {
+    "txtClips": [
+      [
+        10003,
+        20100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 1088
+  },
+  "10043": {
+    "txtClips": [
+      [
+        10021,
+        20519
+      ],
+      [
+        30101
+      ],
+      [
+        10018,
+        20246
+      ]
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 667
+  },
+  "1008": {
+    "txtClips": [
+      [
+        10003,
+        20516
+      ],
+      [
+        21030
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 465
+  },
+  "1000": {
+    "txtClips": [
+      [
+        10017,
+        1005100
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 101
+  },
+  "10063": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 326,
+    "txtClips": [
+      [
+        10009,
+        20422
+      ]
+    ],
+    "picture": "$UI_Help_8122.png",
+    "informationType": 1
+  },
+  "10": {
+    "clueList": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        110001
+      ],
+      [
+        3,
+        9220020
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 23545,
+    "txtClips": [
+      [
+        10001,
+        21035
+      ]
+    ],
+    "course": 205,
+    "courseDesc": 1692473987,
+    "courseName": 1591669548,
+    "playerName": 1968567451,
+    "informationType": 2
+  },
+  "1010": {
+    "txtClips": [
+      [
+        10004,
+        21034
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 885
+  },
+  "10067": {
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "rotation": [
+      0,
+      111.208,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 207,
+    "txtClips": [
+      [
+        10009,
+        20422
+      ]
+    ],
+    "picture": "$UI_Help_6952.png",
+    "informationType": 1
+  },
+  "1011": {
+    "txtClips": [
+      [
+        10022,
+        20907
+      ]
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "animation": "1001",
+    "bubbleType": 1,
+    "npcId": 400153,
+    "informationType": 1,
+    "informationUnit": 1,
+    "thumbsUp": 586
+  },
+  "10031": {
+    "txtClips": [
+      [
+        10025,
+        20155
+      ],
+      [
+        30101
+      ],
+      [
+        10024,
+        20526
+      ]
+    ],
+    "animation": "1001",
+    "informationType": 2,
+    "rotation": [
+      0,
+      104.35359954834,
+      0
+    ],
+    "informationUnit": 1,
+    "thumbsUp": 689
+  }
+}

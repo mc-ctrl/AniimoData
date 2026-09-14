@@ -1,0 +1,80 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 910120701,
+    "type": 1,
+    "taken_skill_dmg_inc_rate_v": "param0"
+  },
+  "BPName": "buff_910120701",
+  "NodeID": 1,
+  "UID": "ec2dc841-88d7-4996-ad4c-75336db66765",
+  "tags": [
+    10
+  ],
+  "stackRule": 0,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b31f8f86-05d8-40e7-8a54-853c0dbb447e",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "9": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "b9cb3533-be89-4547-ad62-dc74db2bb8f0",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "d755e722-cd39-4dc6-a48b-deb57171ac4d",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "65ba6a7e-366a-4ca7-ba56-fa491da17ae8",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "8": {
+      "UID": "dff8c9cc-b597-4cbd-bff5-8ba07aa07d30",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 8
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "eba84cac-5d84-4a7a-b8ee-8701d455378b",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "12": {
+      "buffId": 910120701,
+      "name": "removeBuff",
+      "UID": "cbbb7b2d-af43-48bd-8851-8f26e1299961",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    10,
+    3
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "43432079": {
+    "graphId": 43432079,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "Out",
+        "targetNode": 2,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "nodes": {
+      "0": {
+        "_inputPortValues": {
+          "LevelItemId": 43425653,
+          "State": 0
+        },
+        "_outputPortValues": {},
+        "className": "ChangeLevelItemStateNode",
+        "uid": "29d6fc7d-0622-41ce-9886-b184ba6e9ad5"
+      },
+      "1": {
+        "_inputPortValues": {
+          "staticId": 43425663
+        },
+        "_outputPortValues": {},
+        "className": "KillEntityNode",
+        "uid": "15c17d47-040b-4367-802c-4f5c56797645"
+      },
+      "2": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0,
+          "DoOnce": true
+        },
+        "_outputPortValues": {},
+        "className": "AttributeMonitorNode",
+        "uid": "7c1e13f1-6a29-4e56-8885-c08288e14512",
+        "Operation": 0,
+        "TargetPercent": 0
+      }
+    }
+  },
+  "43434192": {
+    "graphId": 43434192,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "Out",
+        "targetNode": 2,
+        "targetPortName": "In"
+      }
+    ],
+    "isSandbox": true,
+    "nodes": {
+      "0": {
+        "_inputPortValues": {
+          "LevelItemId": 43434185,
+          "State": 0
+        },
+        "_outputPortValues": {},
+        "className": "ChangeLevelItemStateNode",
+        "uid": "29d6fc7d-0622-41ce-9886-b184ba6e9ad5"
+      },
+      "1": {
+        "_inputPortValues": {
+          "staticId": 43434189
+        },
+        "_outputPortValues": {},
+        "className": "KillEntityNode",
+        "uid": "15c17d47-040b-4367-802c-4f5c56797645"
+      },
+      "2": {
+        "_inputPortValues": {
+          "TimeOutSecond": 0,
+          "DoOnce": true
+        },
+        "_outputPortValues": {},
+        "className": "AttributeMonitorNode",
+        "uid": "7c1e13f1-6a29-4e56-8885-c08288e14512",
+        "Operation": 0,
+        "TargetPercent": 0
+      }
+    }
+  }
+}

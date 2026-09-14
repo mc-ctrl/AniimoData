@@ -1,0 +1,572 @@
+{
+  "72244600": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      378.81,
+      61.68,
+      294.06
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72244600,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244599,
+          72354502,
+          72354470,
+          72354503,
+          72244598,
+          72354471,
+          72354504,
+          72244597,
+          72244596,
+          72244595,
+          72244594,
+          72244593,
+          72244592,
+          72244591,
+          72244590,
+          72354505,
+          72354472,
+          72244589,
+          72244588,
+          72244587,
+          72244586,
+          72244585
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244608": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      370.57,
+      62.95,
+      293.3
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72244608,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244607,
+          72244606,
+          72244605,
+          72244604,
+          72244603,
+          72244602,
+          72244601
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244611": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      400.16,
+      31.48,
+      34.39
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72244611,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244610,
+          74127334,
+          72244609
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244622": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      399.97,
+      30.87,
+      34.37
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72244622,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          74126910,
+          72244620,
+          74126911,
+          72244619,
+          72244618,
+          72244617,
+          72244616,
+          72244615,
+          72244614,
+          72244613,
+          74126912,
+          72244612,
+          74126913
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244624": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      353.1,
+      64.5,
+      293.36
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72244624,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244623
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244626": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "position": [
+      439,
+      62.05,
+      245.75
+    ],
+    "titanDistance": 512,
+    "sandboxId": 72244663,
+    "sandboxType": 2,
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": true,
+    "id": 72244626,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244625,
+          72283633
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244628": {
+    "spawnType": 1,
+    "owner": "唐睿尚",
+    "diedRefreshInterval": 0.2,
+    "position": [
+      393.98,
+      50.17,
+      180
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "sandboxId": 72244663,
+    "id": 72244628,
+    "SpawnState": 0,
+    "titanDistance": 512,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "sandboxType": 2,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244627
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244630": {
+    "spawnType": 1,
+    "owner": "唐睿尚",
+    "diedRefreshInterval": 0.2,
+    "position": [
+      393.77,
+      47.27,
+      103.95
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "sandboxId": 72244663,
+    "id": 72244630,
+    "SpawnState": 0,
+    "titanDistance": 512,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "sandboxType": 2,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244629
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72244632": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      428,
+      46,
+      140
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72244632,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72244631
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72280586": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      394,
+      43.12,
+      168
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72280586,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72280585
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72280613": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      395.21,
+      42.63,
+      175.05
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72280613,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72280612,
+          72280619
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72280615": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      395.99,
+      42,
+      182.14
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72280615,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72280624
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72280622": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      397.91,
+      43.03,
+      178.5
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72280622,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72280621,
+          72280633,
+          72280634,
+          72280631
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72280636": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      397.35,
+      42.98,
+      179.68
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72280636,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72280635,
+          72292649,
+          72280637,
+          72292648,
+          72280639,
+          72280644
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72286117": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      428,
+      58.35,
+      303.47
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72286117,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72286116
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72293456": {
+    "spawnType": 1,
+    "owner": "唐睿尚",
+    "diedRefreshInterval": 0.1,
+    "position": [
+      419.76,
+      69.23,
+      309.02
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "sandboxId": 72244663,
+    "id": 72293456,
+    "SpawnState": 0,
+    "titanDistance": 512,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "sandboxType": 2,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72293455
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "72537445": {
+    "spawnType": 0,
+    "owner": "唐睿尚",
+    "sandboxType": 2,
+    "position": [
+      400,
+      28.9,
+      -35.5
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 72244663,
+    "id": 72537445,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "titanDistance": 512,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          72537444
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

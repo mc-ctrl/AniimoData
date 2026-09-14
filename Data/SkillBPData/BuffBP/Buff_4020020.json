@@ -1,0 +1,105 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020020",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "onBuffThinkIds": [
+    6
+  ],
+  "onBuffInheritIds": [
+    7
+  ],
+  "nodeMap": {
+    "5": {
+      "rValue": {
+        "UID": "5abeeffc-7060-4520-a972-f43a25430d9e",
+        "target": "CURPET",
+        "name": "getHpRatio",
+        "NodeID": 4
+      },
+      "name": "greater",
+      "UID": "294eda85-6b9d-4762-bc25-5bd784b681e0",
+      "NodeID": 5,
+      "lValue": {
+        "calcId": 4020020,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 14,
+        "UID": "36270060-2742-49c0-a27d-bdfd7385e443",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "c4d1218a-dc87-4706-a00d-988246178f3d",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "target": "CURPET",
+      "NodeID": 13
+    },
+    "14": {
+      "calcId": 4020020,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 14,
+      "UID": "36270060-2742-49c0-a27d-bdfd7385e443",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "actionIds": [
+        8,
+        12
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "84e20206-d789-4a2f-9989-bee3ee289050",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10,
+        13
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 402002001,
+      "name": "removeBuff",
+      "UID": "63040cc5-d882-4f1e-9289-f0cf51e83614",
+      "target": "CURPET",
+      "NodeID": 10
+    },
+    "8": {
+      "target": "CURPET",
+      "duration": 5,
+      "buffId": 402002001,
+      "NodeID": 8,
+      "UID": "7c1b7a74-dbd8-44c2-a785-5817f178ebbf",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "16d9ef46-94b4-403d-87aa-f0dd8e116491",
+      "name": "buffStartThink",
+      "NodeID": 7
+    },
+    "12": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "2071e08b-0637-42f9-a9aa-c23559c9ac35",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "BPName": "ability_12120202",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "冲！",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 12120202001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "50": {
+      "name": "stopSoundStr",
+      "UID": "44d4abd7-138d-476f-9412-dbb6765974b8",
+      "soundId": "SFX_Combat_Boss_10212_Skill_SunBeam_Attack",
+      "target": "OWNER",
+      "NodeID": 50
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "onAbilityRemovedIds": [
+    50
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_SunBeam_Body_XuLi",
+    "Eff_Parmon_10212_Skill_SunBeam_Boss"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "onAbilityEndIds": [
+    50
+  ],
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 10600511,
+  "preloadAnims": [
+    "Skill_SunBeam_Start",
+    "Skill_SunBeam_End",
+    "Skill_SunBeam_Loop"
+  ]
+}

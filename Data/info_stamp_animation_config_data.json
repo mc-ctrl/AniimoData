@@ -1,0 +1,103 @@
+{
+  "1003": [
+    {
+      "loopTime": -1,
+      "order": 4,
+      "icon": "$UI_Icon_Action_Link.png",
+      "animationName": "链接",
+      "animationStart": "Link"
+    }
+  ],
+  "1004": [
+    {
+      "loopTime": 999999999,
+      "order": 5,
+      "animationLoop": "Crouch_Idle",
+      "animationName": "蹲下",
+      "icon": "$UI_Icon_Action_Squat.png"
+    }
+  ],
+  "1002": [
+    {
+      "loopTime": -1,
+      "order": 3,
+      "icon": "$UI_Icon_Action_PointForward.png",
+      "animationName": "向前指",
+      "animationStart": "Attack02"
+    }
+  ],
+  "1006": [
+    {
+      "loopTime": 999999999,
+      "order": 7,
+      "animationLoop": "SprintLoop",
+      "animationName": "冲刺",
+      "icon": "$UI_Icon_Action_Sprint.png"
+    }
+  ],
+  "1007": [
+    {
+      "loopTime": 999999999,
+      "order": 8,
+      "animationLoop": "Swim_Idle",
+      "animationName": "游泳",
+      "icon": "$UI_Icon_Action_Swim.png"
+    }
+  ],
+  "1008": [
+    {
+      "loopTime": -1,
+      "order": 9,
+      "icon": "$UI_Icon_Action_Kick.png",
+      "animationName": "踢",
+      "animationStart": "Kick"
+    }
+  ],
+  "1009": [
+    {
+      "loopTime": 999999999,
+      "rotationY": 90,
+      "order": 10,
+      "animationLoop": "StunLoop",
+      "animationName": "眩晕",
+      "icon": "$UI_Icon_Action_Dizzy.png"
+    }
+  ],
+  "1010": [
+    {
+      "loopTime": -1,
+      "order": 11,
+      "icon": "$UI_Icon_Action_DanceOne.png",
+      "animationName": "跳舞1",
+      "animationStart": "Show_Dance01"
+    }
+  ],
+  "1001": [
+    {
+      "loopTime": 999999999,
+      "rotationY": 180,
+      "order": 1,
+      "animationLoop": "PointTo_Loop",
+      "animationName": "指路",
+      "icon": "$UI_Icon_Action_PointRoad.png"
+    }
+  ],
+  "1011": [
+    {
+      "loopTime": -1,
+      "order": 12,
+      "icon": "$UI_Icon_Action_DanceTwo.png",
+      "animationName": "跳舞2",
+      "animationStart": "Show_Dance02"
+    }
+  ],
+  "1005": [
+    {
+      "loopTime": 999999999,
+      "order": 6,
+      "animationLoop": "Walk",
+      "animationName": "慢步",
+      "icon": "$UI_Icon_Action_SlowWalk.png"
+    }
+  ]
+}

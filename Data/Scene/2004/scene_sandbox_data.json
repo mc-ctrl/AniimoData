@@ -1,0 +1,1984 @@
+{
+  "50955358": {
+    "areaType": 999,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51556625,
+    "levelItems": {
+      "72255268": {
+        "majorCompId": 72193952,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_RevivalPoint",
+        "position": [
+          127.27,
+          50,
+          -20.44
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 52,
+        "id": 72255268,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              -3.46,
+              0.41,
+              1.25
+            ],
+            "localScale": [
+              10.49,
+              2.5,
+              4
+            ]
+          },
+          "72193952": {
+            "savePointId": 53351200
+          }
+        },
+        "configId": 395,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72255274": {
+        "majorCompId": 72193952,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_RevivalPoint",
+        "position": [
+          71.81,
+          54,
+          -48.76
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 53,
+        "id": 72255274,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              1.91,
+              0.41,
+              3.45
+            ],
+            "localScale": [
+              4,
+              1.67,
+              14.21
+            ]
+          },
+          "72193952": {
+            "savePointId": 53351507
+          }
+        },
+        "configId": 395,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "74180693": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment (0)",
+        "position": [
+          63.61,
+          52.13,
+          -69.85
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 39,
+        "serializeVersion": 3,
+        "id": 74180693,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 382,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "74180694": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment_Area (0)",
+        "position": [
+          67.14,
+          52.68,
+          -71.27
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "siblingIndex": 46,
+        "serializeVersion": 3,
+        "id": 74180694,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 398,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51278442": {
+        "majorCompId": 55701939,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_FireMechanism_07",
+        "position": [
+          114.9,
+          51,
+          -39.18
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "siblingIndex": 8,
+        "serializeVersion": 3,
+        "id": 51278442,
+        "path": "",
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 2
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "state": 0,
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63912060": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_02",
+        "position": [
+          124.74,
+          50,
+          -28.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 33,
+        "id": 63912060,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63995488": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          23.5,
+          47.6,
+          -46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 36,
+        "id": 63995488,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66328646": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          124,
+          52,
+          -20
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 38,
+        "id": 66328646,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          16,
+          4,
+          4
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72099559": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment_Area",
+        "position": [
+          83.49,
+          51.95,
+          -77.52
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "siblingIndex": 47,
+        "id": 72099559,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 398,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "71250565": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -2.58,
+          49.92,
+          0.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 45,
+        "id": 71250565,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          2.05,
+          4.72,
+          20.63
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "69607152": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment (4)",
+        "position": [
+          39.8,
+          58.9,
+          -95.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 44,
+        "serializeVersion": 3,
+        "id": 69607152,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 382,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "69606959": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment (3)",
+        "position": [
+          59.62,
+          54.62,
+          -106.19
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 43,
+        "serializeVersion": 3,
+        "id": 69606959,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 382,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51209381": {
+        "majorCompId": 55701939,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_FireMechanism_03",
+        "position": [
+          13.5,
+          49,
+          10
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 51209381,
+        "path": "",
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "state": 0,
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "69606827": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment (2)",
+        "position": [
+          68.04,
+          54.35,
+          -94.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 42,
+        "serializeVersion": 3,
+        "id": 69606827,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 382,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "61655511": {
+        "majorCompId": 61568800,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_MovableWater",
+        "position": [
+          24,
+          49.75,
+          -46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 28,
+        "serializeVersion": 3,
+        "id": 61655511,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "61568800": {
+            "scale": [
+              40,
+              4,
+              8
+            ],
+            "blendToPos": [
+              0,
+              -5.75,
+              0
+            ]
+          },
+          "62198175": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 338,
+        "defaultValue": {
+          "blendInExp": 2,
+          "blendInFunc": 0,
+          "blendOutDuration": 2,
+          "blendOutExp": 2,
+          "blendOutFunc": 0,
+          "state": 0,
+          "blendInDuration": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51209382": {
+        "majorCompId": 55701939,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_FireMechanism_04",
+        "position": [
+          14.5,
+          49.5,
+          10
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "siblingIndex": 4,
+        "serializeVersion": 3,
+        "id": 51209382,
+        "path": "",
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 1.5
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "69606451": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment (1)",
+        "position": [
+          87.44,
+          51.16,
+          -89.87
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 41,
+        "serializeVersion": 3,
+        "id": 69606451,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 382,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51278441": {
+        "majorCompId": 55701939,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_FireMechanism_08",
+        "position": [
+          114.9,
+          51.5,
+          -40.18
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "siblingIndex": 6,
+        "serializeVersion": 3,
+        "id": 51278441,
+        "path": "",
+        "componentsInfo": {
+          "55701939": {
+            "scaleValue": 2
+          }
+        },
+        "configId": 145,
+        "defaultValue": {
+          "state": 0,
+          "delaySpurtTime": 0,
+          "fireLength": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "61924427": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          66.59,
+          46,
+          -68.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 29,
+        "id": 61924427,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63908189": {
+        "majorCompId": 50866965,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          132,
+          50.25,
+          -28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 30,
+        "id": 63908189,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63909420": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          118.5,
+          51,
+          -28
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 31,
+        "id": 63909420,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51299532": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          36,
+          50,
+          -46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51299532,
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51533390": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          66,
+          46.5,
+          -63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51533390,
+        "siblingIndex": 7,
+        "serializeVersion": 3,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51552439": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_TempleMachine_Statue",
+        "position": [
+          57.5,
+          44.75,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 51552439,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "53631173": {
+            "tempPetTemplateId": 100520003,
+            "noticeKey": "STATUEGUIDE_TEMPLE_05",
+            "guideId": 102500,
+            "realCharacters": "PUZZLE"
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "tempPetTemplateId": 100520003,
+          "noticeKey": "STATUEGUIDE_TEMPLE_05",
+          "guideId": 102500,
+          "realCharacters": "PUZZLE"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51825547": {
+        "majorCompId": 72094199,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Fire",
+        "position": [
+          90,
+          49,
+          8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51825547,
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "configId": 168,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0,
+          "isOn": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51825752": {
+        "majorCompId": 72094199,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Fire (1)",
+        "position": [
+          90,
+          49,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 5,
+        "id": 51825752,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 168,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0,
+          "isOn": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51826663": {
+        "majorCompId": 72094199,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Fire",
+        "position": [
+          85,
+          53,
+          -33
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51826663,
+        "siblingIndex": 10,
+        "serializeVersion": 3,
+        "configId": 168,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51826732": {
+        "majorCompId": 72094199,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Fire",
+        "position": [
+          85,
+          53,
+          -59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51826732,
+        "siblingIndex": 9,
+        "serializeVersion": 3,
+        "configId": 168,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51966149": {
+        "majorCompId": 42720819,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_Platform_SB",
+        "position": [
+          78,
+          45.75,
+          -75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 11,
+        "id": 51966149,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "42720819": {
+            "speed": 2,
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -6.5,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 2,
+        "defaultValue": {
+          "state": 0,
+          "actived": 0,
+          "startIndex": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63915038": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          66,
+          48,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 35,
+        "id": 63915038,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4,
+          8,
+          36
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "52497452": {
+        "majorCompId": 42742113,
+        "scale": [
+          28,
+          12,
+          24
+        ],
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          14,
+          34,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 12,
+        "id": 52497452,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerRevivePos": [
+              0,
+              48,
+              0
+            ],
+            "blackScreenId": 2000,
+            "playerReviveType": 3,
+            "detectType": 131,
+            "playerReviveRot": [
+              0,
+              90,
+              0
+            ],
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "52500063": {
+        "majorCompId": 42742113,
+        "scale": [
+          24,
+          12,
+          28
+        ],
+        "EditorName": "P_Item_DeathBox_SB (1)",
+        "position": [
+          124,
+          36,
+          -36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 13,
+        "serializeVersion": 3,
+        "id": 52500063,
+        "path": "",
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerRevivePos": [
+              124,
+              50.5,
+              -24
+            ],
+            "blackScreenId": 2000,
+            "playerReviveType": 3,
+            "detectType": 131,
+            "playerReviveRot": [
+              0,
+              180,
+              0
+            ],
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "52500759": {
+        "majorCompId": 42742113,
+        "scale": [
+          16,
+          12,
+          44
+        ],
+        "EditorName": "P_Item_DeathBox_SB (2)",
+        "position": [
+          88,
+          42,
+          -46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 14,
+        "serializeVersion": 3,
+        "id": 52500759,
+        "path": "",
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerRevivePos": [
+              99,
+              54.5,
+              -46
+            ],
+            "blackScreenId": 2000,
+            "playerReviveType": 3,
+            "detectType": 131,
+            "playerReviveRot": [
+              0,
+              -90,
+              0
+            ],
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "52501190": {
+        "majorCompId": 42742113,
+        "scale": [
+          68,
+          12,
+          68
+        ],
+        "EditorName": "P_Item_DeathBox_SB (3)",
+        "position": [
+          63,
+          38,
+          -90
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 15,
+        "serializeVersion": 3,
+        "id": 52501190,
+        "path": "",
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerRevivePos": [
+              81.5,
+              46.5,
+              -77
+            ],
+            "blackScreenId": 2000,
+            "playerReviveType": 1,
+            "detectType": 131,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53360496": {
+        "majorCompId": 0,
+        "scale": [
+          8,
+          4,
+          4
+        ],
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          124,
+          52,
+          -16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 53360496,
+        "siblingIndex": 16,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53360992": {
+        "majorCompId": 0,
+        "scale": [
+          4,
+          4,
+          12
+        ],
+        "EditorName": "P_Item_Trigger_SB (1)",
+        "position": [
+          112,
+          60,
+          -60
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 17,
+        "id": 53360992,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53361726": {
+        "majorCompId": 0,
+        "scale": [
+          8,
+          4,
+          12
+        ],
+        "EditorName": "P_Item_Trigger_SB (2)",
+        "position": [
+          54,
+          52,
+          -46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 18,
+        "id": 53361726,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53361930": {
+        "majorCompId": 0,
+        "scale": [
+          8,
+          4,
+          12
+        ],
+        "EditorName": "P_Item_Trigger_SB (3)",
+        "position": [
+          66,
+          48,
+          -72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 19,
+        "id": 53361930,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53362009": {
+        "majorCompId": 0,
+        "scale": [
+          12,
+          4,
+          8
+        ],
+        "EditorName": "P_Item_Trigger_SB (4)",
+        "position": [
+          84,
+          48,
+          -86
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 20,
+        "id": 53362009,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53362098": {
+        "majorCompId": 0,
+        "scale": [
+          4,
+          4,
+          8
+        ],
+        "EditorName": "P_Item_Trigger_SB (5)",
+        "position": [
+          47,
+          56,
+          -102
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 21,
+        "id": 53362098,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53362191": {
+        "majorCompId": 0,
+        "scale": [
+          12,
+          4,
+          26.88
+        ],
+        "EditorName": "P_Item_Trigger_SB (6)",
+        "position": [
+          -0.11,
+          52,
+          -46.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 22,
+        "id": 53362191,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56835015": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_TempleMachineDoor",
+        "position": [
+          95,
+          48,
+          0
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 23,
+        "id": 56835015,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "69602863": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment",
+        "position": [
+          84.45,
+          51.16,
+          -73.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 40,
+        "id": 69602863,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 382,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56840415": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_TempleMachineDoor",
+        "position": [
+          79,
+          54,
+          -46
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 24,
+        "id": 56840415,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "57003835": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_EndingMachine_SinglePlayer",
+        "position": [
+          -35.5,
+          50,
+          -46
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 25,
+        "id": 57003835,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "57008168": {
+        "majorCompId": 55004214,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_WaterMechanism",
+        "position": [
+          29,
+          51.5,
+          -50
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 26,
+        "id": 57008168,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 259,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72099823": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment_Area (1)",
+        "position": [
+          84.58,
+          51.95,
+          -95.12
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "siblingIndex": 48,
+        "serializeVersion": 3,
+        "id": 72099823,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 398,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63997081": {
+        "majorCompId": 44987560,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          48.5,
+          51,
+          -38
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 37,
+        "serializeVersion": 3,
+        "id": 63997081,
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 243
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72099825": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment_Area (2)",
+        "position": [
+          68.17,
+          55.91,
+          -94.81
+        ],
+        "rotation": [
+          90,
+          90,
+          0
+        ],
+        "siblingIndex": 49,
+        "serializeVersion": 3,
+        "id": 72099825,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 398,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63913001": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Empty_SB_03",
+        "position": [
+          119.46,
+          50,
+          -35.38
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 34,
+        "id": 63913001,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72099828": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment_Area (3)",
+        "position": [
+          58.22,
+          58.12,
+          -102.91
+        ],
+        "rotation": [
+          90,
+          90,
+          0
+        ],
+        "siblingIndex": 50,
+        "serializeVersion": 3,
+        "id": 72099828,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 398,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "63910176": {
+        "majorCompId": 59832261,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_Wheel",
+        "position": [
+          119,
+          55.5,
+          -28
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "siblingIndex": 32,
+        "serializeVersion": 3,
+        "id": 63910176,
+        "scale": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "componentsInfo": {
+          "59832261": {
+            "rotationCoord": 1,
+            "rotSpeed": 30,
+            "rotTime": -1
+          }
+        },
+        "configId": 326,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "72099830": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Level_Temple05_PointLight_BurningEnvironment_Area (4)",
+        "position": [
+          42.24,
+          62.08,
+          -93.96
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "siblingIndex": 51,
+        "serializeVersion": 3,
+        "id": 72099830,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 398,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "57008170": {
+        "majorCompId": 55004214,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_WaterMechanism (1)",
+        "position": [
+          27,
+          51.5,
+          -42
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 27,
+        "serializeVersion": 3,
+        "id": 57008170,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 259,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1002,
+    "publishTags": [
+      "3DAY_神庙"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 512,
+    "sightLevelType": 512,
+    "spawners": [
+      51277359,
+      51278118,
+      52143612,
+      52143816,
+      52155052,
+      52401082,
+      52423891,
+      52424066,
+      52425529,
+      52434208,
+      56735056,
+      56735133,
+      56735204,
+      56891735,
+      56894635,
+      59918701,
+      63905102,
+      63906692,
+      63908313,
+      76073250,
+      76073252
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2004/Sandbox_50955358_GraphRef.asset",
+    "owner": "徐一乘",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "forceSync": true,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 50955358,
+    "autoEndType": 0,
+    "name": "Level_FB_Temple_05"
+  }
+}

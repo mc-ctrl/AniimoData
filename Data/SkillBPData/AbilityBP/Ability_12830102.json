@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_12830102",
+  "NodeID": 1,
+  "UID": "52b2a4ba-c774-4ca0-933a-462b5e69832a",
+  "desc": "冲！",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12830102001,
+      "name": "setCombatActionTimeline",
+      "UID": "02cb7cb0-a5b3-4625-8ce1-1a729c298813",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Boss_Skill_BreathStart",
+    "Boss_Skill_BreathLoop",
+    "Boss_Skill_BreathEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10283_Skill_Breath_Start",
+    "Eff_Parmon_10283_Skill_Breath_LoopRotation",
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10283_Skill_Breath_EndRotation"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10501001
+}

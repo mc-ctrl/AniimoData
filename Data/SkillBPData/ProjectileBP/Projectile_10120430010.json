@@ -1,0 +1,80 @@
+{
+  "duration": 1,
+  "BPName": "ability_10120430",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Skill_Swift_Bullet_Delay_liuli",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "113": {
+      "UID": "f8f1b2e2-54df-4abb-b25c-43e1c67ac73f",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 113
+    },
+    "110": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "7866af5d-23a5-455a-b770-85f7d354c2ab",
+      "effectId": "Eff_Parmon_10012_Skill_Swift_End_liuli",
+      "speed": 1,
+      "NodeID": 110
+    },
+    "115": {
+      "actionIds": [
+        114
+      ],
+      "NodeID": 115,
+      "UID": "778b9ba8-19b0-4b04-a5ed-818adddafc33",
+      "cd": 0.1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "111": {
+      "actionIds": [
+        115
+      ],
+      "conditionActionIds": [
+        113
+      ],
+      "UID": "dea8b0b1-ec78-45ee-b6d2-9e3f920ab280",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        110
+      ],
+      "NodeID": 111
+    },
+    "114": {
+      "pos": "TARGET",
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "target": "TARGET",
+      "name": "playEffectOnPosRot",
+      "UID": "e3198b96-54a6-4ca1-8784-ad04c15a1276",
+      "effectId": "Eff_Parmon_10012_Skill_Swift_End_liuli",
+      "speed": 1,
+      "NodeID": 114
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    111
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.3,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

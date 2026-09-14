@@ -1,0 +1,140 @@
+{
+  "$E_P_NPC_Accessory_012.prefab": {
+    "id": 4720,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_013.prefab": {
+    "id": 4730,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_014.prefab": {
+    "id": 4740,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_015.prefab": {
+    "id": 4750,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_016.prefab": {
+    "id": 4760,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_017.prefab": {
+    "id": 4770,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_018.prefab": {
+    "id": 4780,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_Avatar_Acc_Head_NPC_H10001.prefab": {
+    "id": 8150,
+    "order": 2,
+    "displayName": 37195419,
+    "kind": "-110214246"
+  },
+  "$E_P_Avatar_Acc_Head_NPC_H10002.prefab": {
+    "id": 8160,
+    "order": 2,
+    "displayName": 37195419,
+    "kind": "-110214246"
+  },
+  "$E_P_Avatar_Acc_Head_NPC_H10003.prefab": {
+    "id": 8170,
+    "order": 2,
+    "displayName": 37195419,
+    "kind": "-110214246"
+  },
+  "$E_P_Avatar_Acc_Back_NPC_B10001.prefab": {
+    "id": 8180,
+    "order": 4,
+    "displayName": 35431939,
+    "kind": "-110261134"
+  },
+  "$E_P_Avatar_Acc_Neck_NPC_N10002.prefab": {
+    "id": 8190,
+    "order": 6,
+    "displayName": 65666481,
+    "kind": "-1354907709"
+  },
+  "$E_P_NPC_Accessory_001.prefab": {
+    "id": 4610,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_002.prefab": {
+    "id": 4620,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_003.prefab": {
+    "id": 4630,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_004.prefab": {
+    "id": 4640,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_005.prefab": {
+    "id": 4650,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_006.prefab": {
+    "id": 4660,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_007.prefab": {
+    "id": 4670,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_008.prefab": {
+    "id": 4680,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_009.prefab": {
+    "id": 4690,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_010.prefab": {
+    "id": 4700,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  },
+  "$E_P_NPC_Accessory_011.prefab": {
+    "id": 4710,
+    "order": 7,
+    "displayName": 63023497,
+    "kind": "124732337"
+  }
+}

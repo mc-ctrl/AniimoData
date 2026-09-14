@@ -1,0 +1,285 @@
+{
+  "91309390": {
+    "owner": "陈智豪",
+    "chunk": 1019874,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91309425,
+    "levelItems": {
+      "91309392": {
+        "majorCompId": 72094199,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Fire",
+        "position": [
+          -13.98,
+          8.65,
+          -8.12
+        ],
+        "rotation": [
+          270.26,
+          282.59,
+          346.43
+        ],
+        "id": 91309392,
+        "configId": 168,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91309394": {
+        "majorCompId": 54408025,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Chest_Shield_With_Marker_03",
+        "position": [
+          6.57,
+          -0.43,
+          -9.61
+        ],
+        "rotation": [
+          0,
+          59.27,
+          0
+        ],
+        "id": 91309394,
+        "componentsInfo": {
+          "54408025": {
+            "chestId": 91309405,
+            "customId2State": {},
+            "id2State": {
+              "91309392": 1,
+              "91309399": 2,
+              "91309400": 1
+            }
+          },
+          "49996532": {
+            "targetState": 2,
+            "bindSwitchId": 91309399
+          },
+          "49996533": {
+            "bindSwitchId": 91309400
+          },
+          "49996534": {
+            "bindSwitchId": 91309392
+          }
+        },
+        "configId": 142,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91309399": {
+        "majorCompId": 50866965,
+        "owner": "陈智豪",
+        "EditorName": "踏板",
+        "position": [
+          7.34,
+          -0.2,
+          -25.75
+        ],
+        "rotation": [
+          0,
+          282.14,
+          0
+        ],
+        "id": 91309399,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91309400": {
+        "majorCompId": 72094199,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Fire",
+        "position": [
+          29.78,
+          6.76,
+          -8.84
+        ],
+        "rotation": [
+          81.75,
+          22.84,
+          107.89
+        ],
+        "id": 91309400,
+        "configId": 168,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91309398": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否完成游戏",
+        "position": [
+          5.67,
+          -0.37,
+          -13.84
+        ],
+        "rotation": [
+          0,
+          282.59,
+          0
+        ],
+        "id": 91309398,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91309464": {
+        "majorCompId": 58031210,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (1)",
+        "position": [
+          1.6,
+          20.37,
+          -22.71
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91309464,
+        "componentsInfo": {
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                -20.3,
+                0
+              ]
+            ]
+          },
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              1.6,
+              20.37,
+              -22.71
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91309604": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          5.33,
+          30.42,
+          -11.93
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91309604,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          48.11,
+          1,
+          39.22
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "板块1花海-花海北山林_其他关卡_雪山ECS玩法_迁移",
+    "spawners": [
+      91309406,
+      91309408,
+      91309468,
+      91309591,
+      91309609,
+      91342497
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7511/Sandbox_91309390_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91309390,
+    "markIconSpawnerId": 0,
+    "position": [
+      14.62,
+      -0.25,
+      -3.92
+    ]
+  }
+}

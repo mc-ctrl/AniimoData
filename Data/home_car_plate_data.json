@@ -1,0 +1,11 @@
+[
+  {
+    "name": 1602196523,
+    "icon": "$UI_Img_Home_PostStation_TabIcon_Grass.png"
+  },
+  {
+    "icon": "$UI_Img_Home_PostStation_TabIcon_Water.png",
+    "name": 2078015945,
+    "condition": 62030
+  }
+]

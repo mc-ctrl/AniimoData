@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2105309",
+  "NodeID": 1,
+  "UID": "2a552ba2-f5de-4ee0-9f17-f1ec5e29ee4b",
+  "icon": "icon_buff_attack_down",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1.6
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10014,
+        "hitSoundType": "h",
+        "impulseId": 5004,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20103
+      },
+      "UID": "14bac27e-acf1-4aa8-b5ce-64110795196e",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "10": {
+      "templateId": 10079,
+      "name": "removeBuffLayer",
+      "UID": "2875e5da-37b2-43f7-8eb4-61f80692eb40",
+      "layer": 10,
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "8": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.3,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0ffd0a87-f5b8-4fc2-812b-a8d1c70495d8",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "5": {
+      "key": "damage",
+      "duration": 1,
+      "actionIds": [
+        8,
+        3
+      ],
+      "NodeID": 5,
+      "UID": "a17ccdbc-b820-473b-ba49-9ec871c7d46f",
+      "name": "addTimer"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10,
+    5
+  ]
+}

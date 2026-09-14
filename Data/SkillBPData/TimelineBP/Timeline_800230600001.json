@@ -1,0 +1,439 @@
+{
+  "nodeMap": {
+    "52": {
+      "layerId": 11,
+      "rumbleName": "CommonHigh",
+      "name": "playRumble",
+      "UID": "4c5073d3-b4a3-4cd0-8dfd-38c875a4ffaa",
+      "target": "TARGET",
+      "NodeID": 52
+    },
+    "53": {
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.33,
+      "NodeID": 53,
+      "UID": "096c8ce3-10bc-433d-b8e7-8e7f3045ec69"
+    },
+    "40": {
+      "UID": "02d88d19-600c-477f-8283-c5ddd593940a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.05,
+      "NodeID": 41,
+      "UID": "f0375bf9-b0da-47b8-ba88-2ea7b2f8d7db"
+    },
+    "42": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 42,
+      "UID": "2d13fe12-e985-482c-9f9e-73e7a2b3461c",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Absorb_01",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "35": {
+      "UID": "f0faa6de-a9fe-475c-8a3b-658a3e0918ce",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 35
+    },
+    "44": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 44,
+      "UID": "b74fd96f-6ead-44af-a623-bef9d980f074",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Release",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "345ffd81-5cac-4a49-b315-827823d46735",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Skill_Monster_Flyshortbreath"
+    },
+    "60": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 60,
+      "UID": "6d9c170f-ba28-41cd-901c-70c3b1f31718",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Roar",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "64": {
+      "exposureVal": 150,
+      "name": "vfxEmissiveExposure",
+      "NodeID": 64,
+      "UID": "43edc8ba-379d-4763-9f3a-3d64f738443e",
+      "lerpTime": 2.43,
+      "enable": true,
+      "curveName": "Eff_Mon_80023_Emissive_Exposure.asset"
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bf30cc2e-5e58-4a58-a000-31964dac0046",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_AOE",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "63": {
+      "UID": "8eafb624-d71b-4d7e-912a-b4de637abea4",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 63
+    },
+    "62": {
+      "UID": "79dc6543-814c-47e0-904c-7cfa775fca61",
+      "value": true,
+      "name": "forceUngrounded",
+      "NodeID": 62
+    },
+    "61": {
+      "action": {
+        "actionIds": [
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 14.28,
+      "NodeID": 61,
+      "UID": "09bb8da6-234c-49ba-b363-4c5454f8f4dd"
+    },
+    "5": {
+      "UID": "70290d37-9a96-4dc1-81e8-d5816d6a017c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          49
+        ]
+      },
+      "NodeID": 5
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 13.15,
+      "NodeID": 59,
+      "UID": "f687b203-e11f-4154-92d4-6480f0a63648"
+    },
+    "57": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 57,
+      "UID": "5ba4bfea-c235-49f1-93ad-1cc2ad79e1c7",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Sky_Fire",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "56": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 56,
+      "UID": "015bddd9-47ce-4a04-ac68-1687f351c4af",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Fly",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "29": {
+      "UID": "f08e1f01-87e2-464d-876a-dd5a4bbb2e81",
+      "name": "resetCameraDistanceScale",
+      "NodeID": 29
+    },
+    "54": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 54,
+      "UID": "6960b966-3ca9-47d1-951d-37e81c2d3985",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Release_01",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "51": {
+      "UID": "ac0a163e-1947-4b36-979f-5cf25e0a08c3",
+      "name": "hideBubbleMsg",
+      "msgId": 2127,
+      "NodeID": 51
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.35,
+      "NodeID": 43,
+      "UID": "10719a16-58fa-486c-a9b0-3aed9f30dc9f"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "13357724-49ac-4411-a485-4849f864a0e1",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_flyshortbreath",
+      "NodeID": 10
+    },
+    "31": {
+      "UID": "24cd0d9a-c710-4010-a775-dbd79ddfca5a",
+      "name": "resetCameraDistanceScale",
+      "NodeID": 31
+    },
+    "19": {
+      "UID": "253ba70a-96fa-4e58-a070-210791c0d96f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17,
+          25,
+          29,
+          30,
+          36,
+          50,
+          51,
+          63
+        ]
+      },
+      "NodeID": 19
+    },
+    "25": {
+      "buffId": 9802301,
+      "name": "removeBuff",
+      "UID": "d8d70891-c2d6-4336-9b67-2b930358d269",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 27,
+      "UID": "a6f85460-53e2-4801-8ef1-dadddf383e12"
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.05,
+      "NodeID": 11,
+      "UID": "dbdc5ff5-43dc-4fda-b6f6-57989c665677"
+    },
+    "20": {
+      "UID": "62ab6179-73f5-4657-befb-55f57187fa9f",
+      "name": "clearHitBox",
+      "hitBoxId": "999",
+      "NodeID": 20
+    },
+    "21": {
+      "tickInterval": 0.4,
+      "eventType": "NotifyState",
+      "endTime": 6.1,
+      "NodeID": 21,
+      "UID": "6aaeb080-84dd-41b8-a70a-a23c64a14f01",
+      "onUpdate": {
+        "actionIds": [
+          20
+        ]
+      },
+      "startTime": 4.63,
+      "onEnter": {
+        "actionIds": [
+          20
+        ]
+      }
+    },
+    "22": {
+      "eventType": "NotifyState",
+      "endTime": 5.7,
+      "NodeID": 22,
+      "UID": "092ff388-8799-4355-98f1-61236d3b9447",
+      "startTime": 5.33,
+      "tickInterval": 0.1
+    },
+    "13": {
+      "UID": "cb6e68bb-f0ee-449e-aaea-dff7350f6936",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 13
+    },
+    "55": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 55,
+      "UID": "64e0cb4d-1d7e-457f-9029-3fbbdaf40715",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Release_Buff",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "28": {
+      "maxTime": 5,
+      "UID": "99090842-9dec-4af5-a5de-d88559edd3df",
+      "name": "setCameraDistanceScale",
+      "distanceScale": 1.5,
+      "NodeID": 28
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          44,
+          54,
+          55,
+          56,
+          57,
+          64
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.48,
+      "NodeID": 46,
+      "UID": "9378d7ab-8511-4ce4-a6d7-d76e848fb80b"
+    },
+    "15": {
+      "UID": "6d10ce02-2ccd-4ca3-8e80-630adea343ec",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13,
+          28,
+          35,
+          62
+        ]
+      },
+      "NodeID": 15
+    },
+    "47": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 47,
+      "UID": "4e2b1c96-f9e8-43dd-99a5-7e71a50126d9",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Absorb",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "26": {
+      "buffId": 9802301,
+      "name": "removeBuff",
+      "UID": "285b9078-115d-4629-a488-1b4f9d100d9c",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.88,
+      "NodeID": 48,
+      "UID": "9be1bb8e-ce1c-466f-9e70-210175aa5492"
+    },
+    "17": {
+      "UID": "abb91661-844a-49d7-bb3c-44ba9a5157d2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 17
+    },
+    "49": {
+      "UID": "17b0ed2a-0762-4f4b-9e9a-fea066794667",
+      "name": "showBubbleMsg",
+      "msgId": 2127,
+      "NodeID": 49
+    },
+    "30": {
+      "UID": "a7d9a425-cc1d-44ca-98bb-ac07ddeef282",
+      "name": "resetLockOnCameraExtraYAngle",
+      "NodeID": 30
+    },
+    "50": {
+      "UID": "16c62a42-4717-4381-8b22-186db44d2a53",
+      "name": "hideBubbleMsg",
+      "msgId": 2116,
+      "NodeID": 50
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          31,
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 33,
+      "UID": "f4691f83-6a6f-4a8c-ab15-b7a156208574"
+    },
+    "34": {
+      "UID": "6ba02dca-fbc4-4f5f-a712-a2d71e6b5477",
+      "name": "resetLockOnCameraExtraYAngle",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "f3bbfa61-1e83-4aa2-acf0-83a711bd5f04",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_800230600",
+  "NodeID": 7,
+  "UID": "e0df99a3-0aa0-417e-bbb4-950407a75567",
+  "eventIds": [
+    15,
+    19,
+    5,
+    33,
+    11,
+    21,
+    27,
+    22,
+    41,
+    43,
+    48,
+    53,
+    46,
+    59,
+    61
+  ],
+  "layer": "Base",
+  "length": 25
+}

@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91471020",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        9,
+        7
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "e4b29417-aeb1-4623-af28-fd397374498d",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 6,
+      "name": "equal",
+      "UID": "93e56a42-f9c7-4225-95b2-119ab26e36df",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "15fc3893-c20c-4703-b06f-f6e8b806bc42",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 3
+      }
+    },
+    "9": {
+      "UID": "42770548-cf60-4bcc-a37b-d3ffb17d1d9d",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 9
+    },
+    "15": {
+      "calcInfo": {
+        "passive_energy_cur": -15
+      },
+      "name": "calcResult",
+      "UID": "305e9bd2-da9d-4e83-967b-51843c69416a",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "11": {
+      "calcInfo": {
+        "passive_energy_cur": 2.5
+      },
+      "name": "calcResult",
+      "UID": "2645ee5a-8e21-4b5a-9d34-c4bacb6ee0fb",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91471021,
+      "NodeID": 7,
+      "UID": "3e9c654f-fbca-4620-834b-32270a888950",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "UID": "8312b3bc-2946-4c64-bfb0-ef40cf273752",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 12
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    5,
+    11
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    12,
+    15
+  ],
+  "onBuffStartIds": [
+    5,
+    11
+  ]
+}

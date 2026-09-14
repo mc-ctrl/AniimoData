@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "dmg_fire_add_ratio": 0.3
+  },
+  "calcInfoByLuaConfig": {
+    "dmg_fire_add_ratio": "param0",
+    "type": 1,
+    "id": 26999301
+  },
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "870ca468-1a82-4a51-a96b-c9bed1cb0bce",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "target": "CURPET",
+      "NodeID": 5
+    },
+    "8": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "4daf4bac-c855-4cee-816b-b1bc22d359d3",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "3941c30c-3883-46d1-95f5-89475027d56e",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "target": "CURPET",
+      "NodeID": 9
+    },
+    "6": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "4c5e245c-a784-4766-8fc0-3290f39fa4ee",
+      "oldPetActionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "newPetActionIds": [
+        8
+      ]
+    }
+  },
+  "BPName": "buff_26999301",
+  "onBuffDestroyIds": [
+    9
+  ],
+  "onBuffStartIds": [
+    6,
+    8
+  ]
+}

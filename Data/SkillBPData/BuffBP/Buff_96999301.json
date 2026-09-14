@@ -1,0 +1,38 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_96999301",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "templateId": 96999302,
+      "name": "removeBuffLayer",
+      "UID": "dc4645ed-7278-451d-8ce2-da335acb6742",
+      "layer": 1,
+      "target": "MASTER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 96999302,
+      "NodeID": 4,
+      "UID": "6de48d34-a7ce-4562-a6e9-72e3e2518906",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

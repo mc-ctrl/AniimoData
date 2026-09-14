@@ -1,0 +1,51 @@
+{
+  "duration": 5,
+  "BPName": "buff_9168301",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10683_Skill_DropCoin_Bullet",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "11": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 168301,
+      "name": "createEntity",
+      "UID": "5482c2e2-ffad-4ffe-98ba-2eb75d57b7c6",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "rot": "CURPET",
+      "entityName": "Creation",
+      "stick": 1,
+      "maxCount": 9,
+      "pos": "PROJECTILE",
+      "NodeID": 11
+    }
+  },
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    11
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

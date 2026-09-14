@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2700200060",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    3
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 2700200060
+      },
+      "UID": "4da547c1-bc5e-473a-b1b9-acb034304290",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "4": {
+      "delay": 0.5,
+      "interval": 0.5,
+      "UID": "8afd7d86-bc61-4a5a-88d7-6d4b55b7c7b4",
+      "name": "buffStartThink",
+      "NodeID": 4
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

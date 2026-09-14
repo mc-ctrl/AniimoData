@@ -1,0 +1,299 @@
+{
+  "58723030": {
+    "spawnType": 2,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      36,
+      108.5,
+      19.5
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 58723030,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          58723029
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59068257": {
+    "spawnType": 4,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -15,
+      109,
+      122
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 59068257,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59068255
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59068570": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -10,
+      96.25,
+      122
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 59068570,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59068569
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59070532": {
+    "spawnType": 4,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      11,
+      109,
+      122
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 59070532,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59070531
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59331485": {
+    "spawnType": 2,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -16,
+      117,
+      180
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 59331485,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59331484
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59668997": {
+    "spawnType": 2,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -164,
+      123,
+      106
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 59668997,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59668996
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "59918363": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -2,
+      100,
+      -4.5
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 59918363,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59918347
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "60026082": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -67,
+      102,
+      60
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 60026082,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60026081
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "60026409": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -84,
+      102,
+      85
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 60026409,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60026408
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "60026411": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -84,
+      102,
+      51
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 60026411,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60026410
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "60026457": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -67,
+      102,
+      76
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 58461913,
+    "id": 60026457,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60026456
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

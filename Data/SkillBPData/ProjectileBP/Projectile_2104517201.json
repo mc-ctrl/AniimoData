@@ -1,0 +1,109 @@
+{
+  "duration": 4,
+  "calcResultNodeId": 10,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10041_Skill_Bubble_Bullet",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 1.3,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxHitNum": 1,
+  "relation": 1,
+  "moveSpeed": 5,
+  "onProjectileFinishIds": [
+    15
+  ],
+  "onProjectileHitIds": [
+    4
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "defaultHitSoundType": "s",
+  "tickInterval": 0,
+  "nodeMap": {
+    "10": {
+      "calcInfo": {
+        "hp_max_cur": 0
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "hitSoundType": "s",
+        "impulseId": 1001,
+        "attackRotateMode": "CasterPos",
+        "elementType": 9,
+        "hitSoundStr": "",
+        "disableShowJumpWord": true
+      },
+      "UID": "418463ea-3938-495d-863d-a42a0cc45c69",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "4": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 10,
+      "NodeID": 4,
+      "UID": "595357d4-fcb1-4c63-a0bf-5e7591bed972",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "POS_OR_TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1001,
+      "actionIds": [
+        10,
+        13
+      ]
+    },
+    "15": {
+      "UID": "7897cd56-6d61-4023-8f16-b3cd27b2cee9",
+      "actorId": {
+        "UID": "15e5d15c-2f58-4f02-9406-21609e43e9a5",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 14
+      },
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "13": {
+      "target": "TARGET",
+      "duration": 10,
+      "buffId": 2104312,
+      "NodeID": 13,
+      "UID": "054f802a-1fb2-4263-8e10-7cda585067be",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "timeline_2104517",
+  "groundSweepRadius": 0.2,
+  "impulseId": 1001,
+  "acceleration": 0
+}

@@ -1,0 +1,54 @@
+[
+  [
+    {
+      "categoryName": 1844653763
+    }
+  ],
+  [
+    {
+      "categoryName": 1792342452,
+      "icon": "$UI_Icon_MarkShare_Words_Organism.png"
+    },
+    {
+      "categoryName": 2019447599,
+      "icon": "$UI_Icon_MarkShare_Words_Object.png"
+    },
+    {
+      "categoryName": 1731571596,
+      "icon": "$UI_Icon_MarkShare_Words_Tactic.png"
+    },
+    {
+      "categoryName": 1322768973,
+      "icon": "$UI_Icon_MarkShare_Words_Action.png"
+    },
+    {
+      "categoryName": 1568558966,
+      "icon": "$UI_Icon_MarkShare_Words_Environment.png"
+    },
+    {
+      "categoryName": 1499982462,
+      "icon": "$UI_Icon_MarkShare_Words_Indicate.png"
+    },
+    {
+      "categoryName": 1179158781,
+      "icon": "$UI_Icon_MarkShare_Words_Part.png"
+    },
+    {
+      "categoryName": 1333854136,
+      "icon": "$UI_Icon_MarkShare_Words_Attribute.png"
+    },
+    {
+      "categoryName": 1951599821,
+      "icon": "$UI_Icon_MarkShare_Words_Other.png"
+    },
+    {
+      "categoryName": 1962794358,
+      "icon": "$UI_Icon_MarkShare_Words_ShortSentence.png"
+    }
+  ],
+  [
+    {
+      "categoryName": 1684574471
+    }
+  ]
+]

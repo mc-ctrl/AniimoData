@@ -1,0 +1,37 @@
+{
+  "stopBurrowActOnTgtNodeId": 26,
+  "stopBurrowTimelineId": 12850710001,
+  "BPName": "ability_12850710",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12850710001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BurrowSkill_CombatExit"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 9400095
+}

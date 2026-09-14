@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10121200",
+  "NodeID": 1,
+  "UID": "1bb37783-4979-41a1-83b3-69511f84e301",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10121200001,
+      "name": "setCombatActionTimeline",
+      "UID": "e542f056-bac7-40f1-874b-252a788aebbe",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Charm"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Common_Skill_Psychic_Orb_Hit",
+    "Eff_Parmon_Common_Skill_Psychic_Orb_Bullet",
+    "Eff_Parmon_10012_Boss_Warning",
+    "Eff_Parmon_10012_Skill_Psychic_Orb_Shoot"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 51012010,
+  "name": ""
+}

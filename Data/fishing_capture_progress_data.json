@@ -1,0 +1,44 @@
+[
+  [
+    {
+      "levelEnergy": 5,
+      "rewardLevel": 1
+    },
+    {
+      "levelEnergy": 10,
+      "rewardLevel": 2
+    },
+    {
+      "levelEnergy": 15,
+      "rewardLevel": 3
+    },
+    {
+      "levelEnergy": 20,
+      "rewardLevel": 4
+    },
+    {
+      "levelEnergy": 30,
+      "rewardLevel": 5
+    },
+    {
+      "levelEnergy": 50,
+      "rewardLevel": 6
+    },
+    {
+      "levelEnergy": 50,
+      "rewardLevel": 7
+    },
+    {
+      "levelEnergy": 80,
+      "rewardLevel": 8
+    },
+    {
+      "levelEnergy": 80,
+      "rewardLevel": 9
+    },
+    {
+      "levelEnergy": 150,
+      "rewardLevel": 10
+    }
+  ]
+]

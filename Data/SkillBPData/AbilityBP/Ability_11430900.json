@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_11430900",
+  "NodeID": 1,
+  "UID": "ebf3f0e1-0645-415f-8961-4cc9bab8e2c8",
+  "abilityParamId": 9400023,
+  "abilityType": 9,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11430900001,
+      "name": "setCombatActionTimeline",
+      "UID": "0be97c41-cbd4-4005-a7c7-9de74a5fe0b3",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Halo"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10143_Light",
+    "Eff_Parmon_10143_Buff_ChargeLightStart_001",
+    "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+  ],
+  "searchRelation": 2,
+  "name": "照明3",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 4.5,
+  "searchTargetRangeDown": 3
+}

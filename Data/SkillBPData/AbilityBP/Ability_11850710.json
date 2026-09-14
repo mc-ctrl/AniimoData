@@ -1,0 +1,67 @@
+{
+  "BPName": "ability_11850710",
+  "NodeID": 1,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11850710001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "81": {
+      "buffId": 2118505,
+      "name": "removeBuff",
+      "UID": "e6af9767-424c-4953-ace0-c0f30abd2c7f",
+      "target": "OWNER",
+      "NodeID": 81
+    },
+    "80": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2118505,
+      "NodeID": 80,
+      "UID": "dcee2ccd-c102-4202-966f-ef3ad2ad8392",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "onAbilityRemovedIds": [
+    81
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10185_Skill_WindCannon_Charge_02_liuli",
+    "Eff_Parmon_10185_Skill_WindCannon_Charge_01_liuli",
+    "Eff_Parmon_10185_Skill_WindCannon_Bullet_liuli",
+    "Eff_Parmon_10185_Skill_WindCannon_Burst_liuli"
+  ],
+  "isSwitch": true,
+  "onAbilityAddedIds": [
+    80
+  ],
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "searchTargetRangeDown": 0.5,
+  "searchRelation": 2,
+  "preloadAnims": [
+    "Skill_WindCannon_Start",
+    "Skill_WindCannon_End",
+    "Skill_WindCannon_Charge",
+    "Skill_WindCannon_Fast"
+  ],
+  "abilityParamId": 10900391,
+  "isAim": true,
+  "name": "火花"
+}

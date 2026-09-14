@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_12620002",
+  "NodeID": 1,
+  "UID": "ec3fff6d-6d93-42db-829a-17dbd92d338d",
+  "abilityParamId": 14400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12620002001,
+      "name": "setCombatActionTimeline",
+      "UID": "663d54e7-5df0-4a75-8120-5de8103025dc",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10261_Skill_Attack03",
+    "Eff_Parmon_10261_Skill_Attack_Start_01",
+    "Eff_Parmon_10261_Attack_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "念力远程普攻",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "searchTargetRangeDown": 3
+}

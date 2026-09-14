@@ -1,0 +1,700 @@
+{
+  "91050070": {
+    "owner": "任之杰",
+    "autoSave": true,
+    "chunk": 1018850,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91058282,
+    "levelItems": {
+      "91068311": {
+        "majorCompId": 0,
+        "owner": "任之杰",
+        "EditorName": "Eff_BossArea_Common_30X30_Multi_Proxy",
+        "position": [
+          11.04,
+          10.35,
+          2.63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91068311,
+        "configId": 562,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91150742": {
+        "majorCompId": 59832261,
+        "owner": "任之杰",
+        "EditorName": "P_TempleComponent_Wheel_2",
+        "position": [
+          0,
+          -2.99,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91150742,
+        "configId": 557,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1002,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "全局_运营活动_副本入口传送点",
+    "spawners": [
+      91053958,
+      91123549
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1095/Sandbox_91050070_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -11.38,
+      9.61,
+      -47.81
+    ],
+    "id": 91050070,
+    "enableFinishMark": false
+  },
+  "91352627": {
+    "owner": "汪岩嵩",
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91352658,
+    "levelItems": {
+      "91352632": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "场景与技能变化条件",
+        "position": [
+          10.8,
+          10.1,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352632,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          2,
+          1.2,
+          2
+        ],
+        "isActive": true
+      },
+      "91352633": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_IrilyBoss_FirePillar",
+        "position": [
+          19.71,
+          9.96,
+          19.2
+        ],
+        "rotation": [
+          0,
+          20.82,
+          0
+        ],
+        "id": 91352633,
+        "configId": 627,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "isActive": true
+      },
+      "91352634": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_SceneObject_Tree_Iris_Boss_Airwall",
+        "position": [
+          10.75,
+          10,
+          3.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352634,
+        "configId": 562,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352635": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_LVLRILY_Local_Env_Volume_Gray",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352635,
+        "configId": 580,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352636": {
+        "majorCompId": 73871347,
+        "owner": "汪岩嵩",
+        "EditorName": "红色技能触发",
+        "position": [
+          10.8,
+          10.1,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352636,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 88957639
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352637": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_SceneObject_Tree_Iris_Boss_GreenObject",
+        "position": [
+          4.17,
+          1.61,
+          -5.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352637,
+        "configId": 642,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91352638": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "阶段检测",
+        "position": [
+          10.68,
+          10,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352638,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352639": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_IrilyBoss_WaterPillar",
+        "position": [
+          -4.2,
+          9.98,
+          0.02
+        ],
+        "rotation": [
+          0,
+          68.01,
+          0
+        ],
+        "id": 91352639,
+        "configId": 629,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "isActive": true
+      },
+      "91352640": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_IrilyBoss_GrassPillar",
+        "position": [
+          23.47,
+          9.97,
+          -10.37
+        ],
+        "rotation": [
+          0,
+          336.93,
+          0
+        ],
+        "id": 91352640,
+        "configId": 628,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "isActive": true
+      },
+      "91352641": {
+        "majorCompId": 73871347,
+        "owner": "汪岩嵩",
+        "EditorName": "蓝色技能触发",
+        "position": [
+          10.8,
+          10.1,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352641,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 88957340
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352642": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "BGM阶段",
+        "position": [
+          10.81,
+          10.1,
+          3.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352642,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352643": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_SceneObject_Tree_Iris_Boss_Blueobject",
+        "position": [
+          -45.45,
+          29.04,
+          1.57
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352643,
+        "configId": 643,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91352628": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_SceneObject_Tree_Iris_Boss_RedObject",
+        "position": [
+          26,
+          19.5,
+          -26.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352628,
+        "configId": 641,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "91352644": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "战斗检测创建柱子",
+        "position": [
+          10.8,
+          10.1,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352644,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          2,
+          1.2,
+          2
+        ],
+        "isActive": true
+      },
+      "91352629": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "台词检测",
+        "position": [
+          10.68,
+          10,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352629,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352645": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "入战检测",
+        "position": [
+          10.8,
+          10.1,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352645,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          2,
+          1.2,
+          2
+        ],
+        "isActive": true
+      },
+      "91352630": {
+        "majorCompId": 73871347,
+        "owner": "汪岩嵩",
+        "EditorName": "绿色技能触发",
+        "position": [
+          10.8,
+          10.1,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352630,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 88957572
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352646": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "是否能放大招",
+        "position": [
+          12.37,
+          10,
+          14.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352646,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352648": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_SceneObject_Tree_Iris_Boss",
+        "position": [
+          0,
+          -21.55,
+          0
+        ],
+        "rotation": [
+          0,
+          34.27,
+          0
+        ],
+        "id": 91352648,
+        "configId": 592,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          4.5,
+          3,
+          3
+        ],
+        "isActive": true
+      },
+      "91352631": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "蓝色大招音频检测",
+        "position": [
+          10.81,
+          10.1,
+          3.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352631,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91352647": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "柱子受击检测",
+        "position": [
+          10.75,
+          10,
+          3.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91352647,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 38,
+    "name": "彩虹鸢尾boss战_最终捕获",
+    "spawners": [
+      91352650,
+      91352652,
+      91352654,
+      91352656
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/1095/Sandbox_91352627_GraphRef.asset",
+    "sightLevel": 64,
+    "id": 91352627,
+    "markIconSpawnerId": 0,
+    "position": [
+      12,
+      10.1,
+      5.7
+    ]
+  }
+}

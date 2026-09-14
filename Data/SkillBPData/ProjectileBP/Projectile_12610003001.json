@@ -1,0 +1,114 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12610003",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10261_Skill_Attack04",
+  "enableMaxAngleTime": 1,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 10,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "39": {
+      "pos": {
+        "UID": "c5fb1190-2609-475c-8d70-d8d0160eb294",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "d771eece-7a0a-4f2d-8b4c-6ec5244a0bc3",
+          "name": "getProjectilePos",
+          "NodeID": 37
+        },
+        "NodeID": 38
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "048f6c7c-de31-43e8-92b0-8e4c5c5b39b9",
+      "effectId": "Eff_Parmon_10261_Skill_Throw_Bomb",
+      "speed": 1,
+      "NodeID": 39
+    },
+    "14": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a93f9c9f-16c9-462a-b60b-bf44d4ea49d2",
+      "effectId": "Eff_Parmon_10261_Skill_Throw_Bomb",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "41": {
+      "templateId": 11026105059,
+      "name": "checkTargetTemplateId",
+      "UID": "50f5335d-74d2-4bbf-84aa-e25f266e1529",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "actionIds": [
+        43
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "7071e7db-b7f2-4d21-be72-f0f5310432d3",
+      "name": "doActionsByConditions",
+      "NodeID": 42
+    },
+    "20": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12610003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "1668ecc9-38e4-4451-b624-9f01415fc619",
+      "target": "TARGET",
+      "NodeID": 20,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3001,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102
+      }
+    },
+    "43": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 6126103,
+      "NodeID": 43,
+      "UID": "6de5aefe-954b-49b2-ba75-647e7c5d9408",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 10,
+  "calcResultNodeId": 20,
+  "onProjectileHitIds": [
+    20,
+    42,
+    39
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "onProjectileGroundedIds": [
+    14
+  ],
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "duration": 2,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3001,
+  "acceleration": 0
+}

@@ -1,0 +1,143 @@
+{
+  "nodeMap": {
+    "22": {
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectStr",
+      "NodeID": 22,
+      "UID": "079aed77-2dfc-44b8-904f-6570560201ba",
+      "effectId": "Eff_Parmon_10143_Skill_LinkTarget_Charge",
+      "isAbilityEndRemove": true,
+      "endTarget": "MASTER"
+    },
+    "4": {
+      "UID": "964587e7-54ac-4ab0-b3f0-ad7e0dd7e4f8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22,
+          2,
+          10,
+          15,
+          16,
+          17,
+          23
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "name": "stopSoundStr",
+      "UID": "f7ede7ae-e54d-4527-b8ee-e23b6c4d75a6",
+      "soundId": "SFX_Combat_Boss_10143_Skill_JellyfishParty",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "67efb3a0-379f-4159-9422-1117394dd76d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          21,
+          24
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "b545f455-75af-4522-aa6f-cf2bdef8c8a5",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 10011,
+      "NodeID": 15,
+      "UID": "32906fbb-0380-4e8f-bbb9-68c50b9ab239",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "lockTarget": "MASTER",
+      "name": "lockTarget",
+      "UID": "eaf8e867-0478-43e2-86d9-37e577963d9d",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "487fde2c-743e-43b7-bcc4-b4570c694613",
+      "target": "OWNER",
+      "NodeID": 17,
+      "animId": "Behav_LoveStart"
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a515ed77-b79a-4c26-b467-9428b38734d1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Boss_10143_Skill_JellyfishParty",
+      "NodeID": 23
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a5b562c1-8671-4d59-8b00-3b2584964d0d",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Behav_LoveLoop"
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "41e1b62d-edb3-4ed9-8ad3-1cb573316f58",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Behav_LoveEnd"
+    },
+    "12": {
+      "UID": "2aeffdee-435c-479e-9e9b-d3f162819bbd",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 12
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.51,
+      "NodeID": 20,
+      "UID": "2fb8445e-7c32-4687-8dd3-9fbbf1b3b88e"
+    },
+    "2": {
+      "UID": "05973edc-1ce3-4862-b013-5c99d550d7f3",
+      "name": "disableWeightPush",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_11410201",
+  "NodeID": 6,
+  "UID": "58f1e0e7-a913-439a-a59b-7c626c83e8f6",
+  "eventIds": [
+    4,
+    14,
+    20
+  ],
+  "layer": "Base",
+  "length": 9999
+}

@@ -1,0 +1,63 @@
+{
+  "BPName": "ability_12610150",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "abilityIndicator": 1,
+  "abilityParamId": 10400290,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12610150001,
+      "name": "setCombatActionTimeline",
+      "UID": "7d8cee22-643a-48db-b69d-5e440653cc6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Throw"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10261_Skill_Throw_Start_01_Electric",
+    "Eff_Parmon_10261_Skill_Throw_Electric",
+    "Eff_Parmon_10261_Skill_Throw_Start_02_Electric",
+    "Eff_Parmon_10261_Skill_Throw_Bomb_Electric",
+    "Eff_Parmon_10474_Skill_Skill_Smash_02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 3,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      0.8,
+      0.8,
+      0.8
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "POS_OR_TARGET",
+    "maxNum": 0
+  },
+  "shortDesc": "",
+  "tags": {},
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

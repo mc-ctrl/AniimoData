@@ -1,0 +1,23 @@
+{
+  "72553252": {
+    "owner": "黄境梧",
+    "sandboxType": 3,
+    "chunk": 1003518,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 72553252,
+    "spawners": [
+      72797980
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -996.68,
+      77.91,
+      1755.22
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 503,
+    "name": "板块1高地_场景交互物_滚滚郎BOSS篝火"
+  }
+}

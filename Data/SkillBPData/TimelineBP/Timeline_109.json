@@ -1,0 +1,146 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "8748ac37-14ea-4630-a53a-3ac5eed19ba1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          2,
+          6,
+          7,
+          8,
+          9,
+          11,
+          21,
+          23
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "99ca260b-7688-4b00-82ed-b920f961516d",
+      "target": "OWNER",
+      "name": "playHitSound",
+      "NodeID": 6
+    },
+    "23": {
+      "UID": "a9dadaf3-c572-469a-8293-71f20ca694fe",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 1,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 23
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 15,
+      "UID": "b09f93f0-bcb2-47bd-be2c-43b3a69f77c7"
+    },
+    "7": {
+      "UID": "589ac99f-ecd6-406c-a300-12aff25c0330",
+      "target": "OWNER",
+      "name": "applyHitModelShake",
+      "NodeID": 7
+    },
+    "21": {
+      "name": "moveByDirection",
+      "duration": 0.5,
+      "velocity": {
+        "rValue": 2.5,
+        "name": "multiply",
+        "UID": "5e7a6524-fe2d-480f-ac30-19d5a0ea3fa5",
+        "NodeID": 20,
+        "lValue": {
+          "UID": "ce059187-3872-49e1-8a00-8ac24dd2d0c1",
+          "name": "getHitImpulseDir",
+          "NodeID": 19
+        }
+      },
+      "NodeID": 21,
+      "UID": "a5ff1a75-1d3d-4724-b4ed-481f231b9ef0",
+      "collisionTestDistance": 0,
+      "isLocalDir": false,
+      "needForceOnGround": false
+    },
+    "8": {
+      "UID": "118a8362-1f55-4cdc-a4a8-b64ccb10d369",
+      "target": "OWNER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "e32d9a6c-4434-45d1-aad5-f2c519d69cb1",
+      "name": "setMask",
+      "mask": {
+        "inHitBackswing": 0,
+        "inHit": 0
+      },
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "d5e3c0d4-86e5-42b5-ab5a-6d4a09690859",
+      "target": "CASTER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "577eef5f-cd66-464f-9ab6-0e064edc2772",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 18
+    },
+    "14": {
+      "UID": "5b33654c-ad16-4f43-b520-3b452c1d2320",
+      "name": "setMask",
+      "mask": {
+        "inHitBackswing": 1,
+        "inHit": 0
+      },
+      "NodeID": 14
+    },
+    "11": {
+      "UID": "7be5f981-c679-4e3e-b7f3-052f208efb50",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 11
+    },
+    "2": {
+      "UID": "0fb83825-fb6b-4785-a97b-130443a44ddc",
+      "target": "OWNER",
+      "name": "playHitEffect",
+      "NodeID": 2
+    },
+    "12": {
+      "lockTarget": "CASTER",
+      "name": "lockTarget",
+      "UID": "1de4e842-d182-4ed7-98ba-4fec0995a0b9",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_109",
+  "NodeID": 1,
+  "UID": "065a51b0-2958-498b-9262-4d6932b58d34",
+  "eventIds": [
+    4,
+    15,
+    18
+  ],
+  "layer": "Base",
+  "length": 1
+}

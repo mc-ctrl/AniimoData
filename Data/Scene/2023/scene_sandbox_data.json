@@ -1,0 +1,148 @@
+{
+  "67089662": {
+    "areaType": 999,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 67089672,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1002,
+    "publishTags": [
+      "3DAY_神庙"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "Level_FB_Temple_23",
+    "sightLevelType": 512,
+    "spawners": [
+      67089666,
+      67089668
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 512,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2023/Sandbox_67089662_GraphRef.asset",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "徐一乘",
+    "forceSync": true,
+    "id": 67089662,
+    "levelItems": {
+      "68927898": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Temple_StoneStatueBase_BlessTip",
+        "position": [
+          0.01,
+          102,
+          -9.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 68927898,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 377,
+        "defaultValue": {
+          "canReturn": false,
+          "noticeKey": "STATUEGUIDE_TEMPLE_BlESS",
+          "realCharacters": "BLESSING",
+          "tempPetTemplateId": 0,
+          "state": 1,
+          "guideId": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "67089663": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_EndingMachine",
+        "position": [
+          0,
+          100,
+          77.5
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 67089663,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "67089664": {
+        "majorCompId": 42742113,
+        "owner": "lixu",
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          0,
+          80,
+          40
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 67089664,
+        "scale": [
+          76,
+          12,
+          120
+        ],
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "expressionKey": "67089664_42742113",
+            "blackScreenId": 2000,
+            "playerReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

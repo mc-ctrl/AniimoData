@@ -1,0 +1,110 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11118",
+  "NodeID": 1,
+  "UID": "6e1b1382-3a03-4b2d-97c2-ab1266bae04b",
+  "onBuffRefreshIds": [
+    13
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "b8f7a728-bbf4-4bef-bc9b-82387b1f9141",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fb10b78a-1070-4ae0-90a5-3c8512889add",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "14": {
+      "tag": "TE_Wild_DewyHasHoney",
+      "name": "removeEntityTag",
+      "UID": "b9053b00-5a0f-429b-bae4-bd62d490c263",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "setSubModelVisible",
+      "UID": "17f8acc3-6153-4264-ad16-66ad937e34b9",
+      "NodeID": 10,
+      "subModelName": "M_Parmon_10351_Body01_fnr",
+      "visible": false
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 11119,
+      "NodeID": 7,
+      "UID": "05f76cc8-8033-4bd6-8ed4-cfbe9d12218c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "3aff0e5d-22d8-4cd4-8464-7a502f630fac",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Delivery",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e808f685-c5cc-42a8-bb3d-98d1b12ecbd3",
+      "effectId": "Eff_Parmon_10351_CatchHoney_DeliveryFailed",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "13": {
+      "tag": "TE_Wild_DewyHasHoney",
+      "name": "removeEntityTag",
+      "UID": "b6195cda-6a51-41de-acae-3e9d96f14df8",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "11": {
+      "UID": "c7bba6d4-3aef-46ec-a9bb-7cbb6864bc3e",
+      "target": "OWNER",
+      "name": "stopFly",
+      "NodeID": 11
+    },
+    "12": {
+      "tag": "TE_Wild_DewyHasHoney",
+      "name": "removeEntityTag",
+      "UID": "23c34eee-b076-4ef3-aea2-1377dc69c024",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "2": {
+      "duration": 1.5,
+      "name": "playStartLoopEndAni",
+      "NodeID": 2,
+      "UID": "903d6488-4c84-4c04-964a-9a283975c7a4",
+      "endAni": "StunLoop",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    5,
+    7,
+    14
+  ],
+  "onBuffStartIds": [
+    11,
+    2,
+    4,
+    8,
+    9,
+    10,
+    12
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "duration": 0.1,
+  "calcResultNodeId": 33,
+  "defaultHitSoundType": "s",
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10371_Skill_Tail_Light",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "BPName": "ability_13710200",
+  "nodeMap": {
+    "33": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13710200,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "380c7b4c-5bef-4c09-9f90-2a9d41bb73de",
+      "target": "TARGET",
+      "NodeID": 33,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 1000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    }
+  },
+  "moveSpeed": 15,
+  "rotation": "ToPos",
+  "onProjectileHitIds": [
+    33
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "UID": "dede15e1-b9a6-4e44-b138-c92f79e7e4de",
+  "tickInterval": 0,
+  "nextTemplateId": 13710200002,
+  "NodeID": 49,
+  "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

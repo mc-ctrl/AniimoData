@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117103",
+  "calcInfoByLuaConfig": {
+    "id": 2117103,
+    "taken_dmg_dec_rate_v": "param1",
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "eb9b35b7-9d13-4cfd-ad5d-5b734a07a6d5",
+      "effectId": "Eff_Parmon_10172_Bubbles",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "23": {
+      "NodeID": 23,
+      "UID": "8261d859-9735-4092-b8d0-662aa2f6da1c",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": true
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "f229e213-19ef-4ff8-90d3-2039287fa077",
+      "effectId": "Eff_Parmon_10172_Bubbles",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "21": {
+      "NodeID": 21,
+      "UID": "e42df53c-6676-40f4-b78a-6d2520aff8c9",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": false
+    },
+    "25": {
+      "name": "checkPetPrototypeId",
+      "UID": "807f41ce-2836-4d6e-8b70-f00a99000323",
+      "target": "OWNER",
+      "petPrototypeId": 1017200,
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "0fb3b1b7-8327-4f53-a0a3-c88dc4895c77",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    21,
+    28
+  ],
+  "onBuffStartIds": [
+    23,
+    26
+  ]
+}

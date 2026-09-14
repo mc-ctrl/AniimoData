@@ -1,0 +1,13 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_916430101",
+  "name": "音弹剩余时长",
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": {},
+  "isUnSummonFreeze": true
+}

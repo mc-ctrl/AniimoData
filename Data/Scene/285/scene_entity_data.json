@@ -1,0 +1,77 @@
+{
+  "53637654": {
+    "position": [
+      -1276.14,
+      78.28,
+      896
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "attachId": 0,
+    "staticId": 53637654,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 0,
+    "subType": "EnvObject",
+    "stick": true,
+    "enable_elite_rate": false,
+    "spawnerId": 53637655,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 1990042,
+    "isAuto": false,
+    "sandboxId": 53637653,
+    "enable_envobjecy_scale": false,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "routeId": 0,
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig",
+    "intensity": 0
+  },
+  "53637656": {
+    "position": [
+      -1276.14,
+      82.78,
+      896
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "attachId": 0,
+    "staticId": 53637656,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 0,
+    "subType": "Chest",
+    "enable_elite_rate": false,
+    "stick": true,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 11041,
+    "isAuto": false,
+    "spawnerId": 53637657,
+    "sandboxId": 53637653,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "routeId": 0,
+    "enableVirtualChest": false,
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig"
+  }
+}

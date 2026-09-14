@@ -1,0 +1,32 @@
+{
+  "preloadAnims": [
+    "Shield_Skill_SelfDestruct_Start",
+    "Shield_Skill_SelfDestruct_Loop",
+    "Shield_Skill_SelfDestruct_End"
+  ],
+  "searchTargetRangeRadius": 3,
+  "BPName": "ability_70000600",
+  "name": "暗普通攻击",
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 10101250,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 70000600001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

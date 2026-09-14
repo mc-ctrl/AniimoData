@@ -1,0 +1,455 @@
+{
+  "55784290": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018855,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 55784291,
+    "levelItems": {
+      "55784287": {
+        "majorCompId": 51219203,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_POI_Cloud_4",
+        "position": [
+          -106.89,
+          0,
+          338.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 55784287,
+        "path": "",
+        "componentsInfo": {
+          "51219203": {
+            "areaRadius": 42
+          }
+        },
+        "configId": 187,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1003,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_复合探索_低重力区域",
+    "sightLevelType": 128,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/252/Sandbox_55784290_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "邵海东",
+    "position": [
+      -52,
+      0,
+      300
+    ],
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "onlySyncOwner": false,
+    "id": 55784290,
+    "keepGraphOnFinished": false,
+    "sightLevel": 128
+  },
+  "51278229": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1023974,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_其他关卡_风场",
+    "sightLevelType": 128,
+    "spawners": [
+      51278332,
+      51278334,
+      58296925
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 51278229,
+    "sightLevel": 128,
+    "position": [
+      285.38,
+      0.01,
+      242.91
+    ],
+    "levelItems": {
+      "58296884": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          285.27,
+          0,
+          239.79
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 58296884,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 263,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "activeOnInit": 1,
+    "owner": "路司机"
+  },
+  "47303059": {
+    "areaType": 999,
+    "autoSave": false,
+    "chunk": 1027046,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 55434546,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1003,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 6,
+    "name": "全局_复合探索_低重力区域_内藏boss版",
+    "sightLevelType": 128,
+    "spawners": [
+      55540794
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/252/Sandbox_47303059_GraphRef.asset",
+    "position": [
+      456,
+      0,
+      200.4
+    ],
+    "owner": "邵海东",
+    "id": 47303059,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "53027812": {
+        "majorCompId": 51219203,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_POI_Cloud_4",
+        "position": [
+          401.11,
+          0,
+          238.53
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 53027812,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "51219203": {
+            "areaRadius": 42
+          }
+        },
+        "configId": 187,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "55436816": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          432.55,
+          0,
+          180.53
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 0,
+        "id": 55436816,
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51382268": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1023975,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 66566733,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1003,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": [
+      72326537,
+      83241192,
+      87484667,
+      87940560
+    ],
+    "startVersion": "0.0",
+    "sandboxType": 4,
+    "name": "全局_其他关卡_探查测试区域——大眼盔",
+    "sightLevelType": 128,
+    "spawners": [
+      72297205,
+      72326536,
+      72377011,
+      72403027,
+      72404963,
+      72404965,
+      72412359,
+      72429690,
+      81502323,
+      81596650,
+      81723690,
+      81727768,
+      83241190,
+      83241206,
+      83241209,
+      83241211,
+      83241214,
+      87926376,
+      87926380
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/252/Sandbox_51382268_GraphRef.asset",
+    "position": [
+      315.47,
+      0,
+      259.3
+    ],
+    "owner": "庄淏晨",
+    "id": 51382268,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "66566669": {
+        "majorCompId": 44987560,
+        "owner": "庄淏晨",
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          315.28,
+          3,
+          236.4
+        ],
+        "siblingIndex": 0,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 66566669,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "66500426": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1023975,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 66501402,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_其他关卡_PvP自走战斗测试区域",
+    "sightLevelType": 128,
+    "spawners": [
+      66500484
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/252/Sandbox_66500426_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      318.26,
+      0,
+      300.65
+    ],
+    "owner": "庄淏晨",
+    "id": 66500426,
+    "levelItems": {
+      "66501330": {
+        "majorCompId": 44987560,
+        "owner": "庄淏晨",
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          315.28,
+          3,
+          288.95
+        ],
+        "siblingIndex": 0,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 66501330,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

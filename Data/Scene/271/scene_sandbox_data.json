@@ -1,0 +1,123 @@
+{
+  "60886330": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1022946,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "这是神兽巢穴，具体描述自助修改",
+      "autoSetContent1": true,
+      "compassShowDistance": 150,
+      "initState": 1,
+      "inactiveDesc": "这是神兽巢穴，具体描述自助修改",
+      "mapAreaId": 0,
+      "markConfigId": 10101,
+      "markContent1": 60886330,
+      "nearState": 1,
+      "openMapState": 2,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 1,
+      "scale2": 1,
+      "compassTxt": "神兽巢穴",
+      "positionParam": [
+        0,
+        0
+      ],
+      "image": "$UI_Img_Many.png",
+      "SloganPlayOnce": false,
+      "POIDesc": "这是神兽巢穴，具体描述自助修改",
+      "POIIcon": "$UI_Icon_MarkFilter_Boss.png",
+      "POIOrNot": true,
+      "yaw": 0,
+      "title": "神兽巢穴",
+      "activeDisplayType": 1,
+      "activeDistance": 100,
+      "showPortalOffset": false,
+      "activeShapes": {},
+      "scale3": 1,
+      "arriveParam": {},
+      "arriveType": 1,
+      "inactiveImage": "$UI_Img_Monster_Unknown.png",
+      "circleRadius": 0,
+      "markType": 0,
+      "inactiveTitle": "神兽巢穴"
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 101,
+    "publishTags": [
+      "3DAY_草原"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_神兽巢穴_藤蔓测试",
+    "sightLevelType": 256,
+    "spawners": [
+      61485413,
+      61485636,
+      61485637,
+      61485776,
+      61485778,
+      61485780,
+      61485782,
+      61485784
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      227,
+      0.04,
+      -17.57
+    ],
+    "owner": "路司机",
+    "id": 60886330,
+    "levelItems": {
+      "60900674": {
+        "majorCompId": 52075636,
+        "owner": "路司机",
+        "EditorName": "P_Item_BuffTrigger",
+        "position": [
+          224.36,
+          0.77,
+          -19.52
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 60900674,
+        "serializeVersion": 3,
+        "scale": [
+          10,
+          1,
+          10
+        ],
+        "configId": 174,
+        "defaultValue": {
+          "buffId": 10016
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "disposable": true
+  }
+}

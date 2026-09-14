@@ -1,0 +1,142 @@
+{
+  "nodeMap": {
+    "22": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 2123310,
+      "NodeID": 22,
+      "UID": "6aa6ca7b-8499-4b40-8074-d2c36270902f",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "4": {
+      "UID": "de1a2316-0ba6-43dd-b60d-fe3c4f08f599",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          13
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "buffId": 2123303,
+      "name": "hasBuff",
+      "UID": "b73b9f91-0076-4317-9ee8-d7773e9303da",
+      "target": "MASTER",
+      "NodeID": 24
+    },
+    "10": {
+      "UID": "60aed95a-32af-465c-9109-c1a35672cf1c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5b1d1f6d-a291-41e8-bb4f-07095f615f94",
+      "effectId": "Eff_Parmon_Futternym_10233_Skill_Dance",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.43,
+      "NodeID": 16,
+      "UID": "087a4b80-05ff-4818-9716-1fe91970f3d8"
+    },
+    "17": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 2123304,
+      "NodeID": 17,
+      "UID": "7f0b7b2a-e93a-4229-8ed3-6347771258c2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2c818671-cc25-45d5-bc23-ec71130e980c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_dance",
+      "NodeID": 23
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          23,
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 21,
+      "UID": "295dffd1-8121-43e1-9985-a1dd9486367a"
+    },
+    "19": {
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "c471d1ca-72fd-4985-95c1-b4ccc0210f84",
+      "name": "doActionsByConditions",
+      "NodeID": 19,
+      "elseActionIds": [
+        22,
+        17
+      ]
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 11,
+      "UID": "7aeaf09e-69f9-4086-bb71-246a04c47a18"
+    },
+    "13": {
+      "UID": "13fde584-2bcc-43b0-a914-62ad88cfd69a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 13
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "16e0ac69-457d-44dd-9c35-68fb95200ff1",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Dance"
+    }
+  },
+  "BPName": "ability_12330600",
+  "NodeID": 6,
+  "UID": "565084b5-9852-411f-8059-eb08aec2712d",
+  "eventIds": [
+    21,
+    11,
+    4,
+    16
+  ],
+  "layer": "Base",
+  "length": 3.34
+}

@@ -1,0 +1,191 @@
+{
+  "nodeMap": {
+    "62": {
+      "UID": "b79bd5a7-2bc1-4399-bef6-ad7984719580",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 62
+    },
+    "96": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.6
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 3000
+      },
+      "UID": "91296a52-52c2-4f47-b3f0-d7f4f968db19",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 96
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cd8c177e-0e76-4e91-acf0-547ceb697809",
+      "effectId": "Eff_Parmon_10122_Skill_Dance_02",
+      "speed": 1.5,
+      "NodeID": 56
+    },
+    "64": {
+      "UID": "034a0040-a676-4a10-a40f-20917e6637ba",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 64
+    },
+    "57": {
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.13,
+      "NodeID": 57,
+      "UID": "f9384c5e-4ea6-4e95-bb96-e1d0e8cf4438"
+    },
+    "99": {
+      "action": {
+        "actionIds": [
+          98
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 99,
+      "UID": "90e8edfd-e452-4837-903b-b5762a4cb452"
+    },
+    "58": {
+      "UID": "6dc3ca3d-9bc6-4dfd-971d-ed6910f390e9",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 58
+    },
+    "66": {
+      "UID": "989eab1b-d43b-4fac-9b50-fe524eb86769",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          64
+        ]
+      },
+      "NodeID": 66
+    },
+    "98": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 96,
+      "NodeID": 98,
+      "UID": "3276e146-1568-4ddc-828a-5f8c5064f77c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        96
+      ]
+    },
+    "50": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "49b880ef-fb45-414e-be25-7badb90cd29d",
+      "target": "OWNER",
+      "NodeID": 50,
+      "animId": "Skill_Dance_02"
+    },
+    "60": {
+      "UID": "1879a307-2196-44ad-b258-d7bc96d00073",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          58,
+          62
+        ]
+      },
+      "NodeID": 60
+    },
+    "68": {
+      "UID": "80e68e8b-3c7c-42dd-af39-21ad92f248a7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 68
+    },
+    "51": {
+      "UID": "d383167b-fff1-4aa4-9402-eb8bcbe8e683",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "NodeID": 51
+    },
+    "69": {
+      "action": {
+        "actionIds": [
+          68
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 69,
+      "UID": "e59ed3de-ed33-4b73-b8ab-8e01c2753dcd"
+    }
+  },
+  "BPName": "ability_11220400",
+  "NodeID": 53,
+  "UID": "e36cdd94-4f91-4bf5-bb86-13e7ed39ca74",
+  "eventIds": [
+    51,
+    57,
+    99,
+    60,
+    66,
+    69
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

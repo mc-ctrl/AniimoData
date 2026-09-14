@@ -1,0 +1,132 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20520002",
+  "NodeID": 1,
+  "UID": "cb79fbbb-0c96-41c7-92fa-dd74651b0067",
+  "icon": "icon_buff_attack_up",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "add_cur_hp_by_dmg": {
+          "key": "2052000heal",
+          "name": "getCacheVal",
+          "UID": "464b3acc-b29a-48e1-840e-c561c276704c",
+          "target": "MASTER",
+          "NodeID": 3
+        }
+      },
+      "name": "calcResult",
+      "UID": "1f845df6-4221-4f87-8de1-6531c46e43eb",
+      "target": "CURPET",
+      "NodeID": 5
+    },
+    "13": {
+      "actionIds": [
+        11,
+        16
+      ],
+      "NodeID": 13,
+      "UID": "70a914f2-f173-4296-9f27-71d1897a62e7",
+      "target": "OWNER",
+      "name": "doPetsActions",
+      "applyOnExplorePets": true
+    },
+    "6": {
+      "UID": "09127973-bca1-4721-8837-63d4a0671f58",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "15": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "0b1570fe-3ef5-41ad-8ea7-c7952e6b200d",
+      "oldPetActionIds": [
+        17
+      ],
+      "NodeID": 15,
+      "newPetActionIds": [
+        14
+      ]
+    },
+    "16": {
+      "name": "stopSoundStr",
+      "UID": "238b1818-5271-4845-8687-67b5f4e81f2e",
+      "soundId": "SFX_Combat_Rogue_Berserke_02",
+      "target": "TARGET",
+      "NodeID": 16
+    },
+    "8": {
+      "isSwitchPetInherit": true,
+      "target": "CURPET",
+      "NodeID": 8,
+      "UID": "0c8c749c-dc3c-4e7a-ba48-7fd939d752df",
+      "effectId": "Eff_Buff_Rogue_Skill_Berserker_Equip_Buff",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "17": {
+      "name": "stopSoundStr",
+      "UID": "0c8c4b65-c783-4c4f-b3e8-ecf44598522d",
+      "soundId": "SFX_Combat_Rogue_Berserke_02",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "295592a2-434f-43c3-852c-8754b2f2cbed",
+      "effectId": "Eff_Buff_Rogue_Skill_Berserker_Equip_Buff",
+      "target": "CURPET",
+      "NodeID": 9
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bba6dc61-15ec-4768-8800-7b0bf62aa78d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Berserke_02",
+      "NodeID": 14
+    },
+    "11": {
+      "isSwitchPetInherit": true,
+      "NodeID": 11,
+      "UID": "0a780d21-6660-4b04-a59e-fbb142df52c6",
+      "effectId": "Eff_Buff_Rogue_Skill_Berserker_Equip_Buff",
+      "target": "TARGET",
+      "name": "stopEffectStr"
+    },
+    "19": {
+      "name": "stopSoundStr",
+      "UID": "70e8a2ee-1d8a-4b70-be4a-f7c961e7a726",
+      "soundId": "SFX_Combat_Rogue_Berserke_02",
+      "target": "CURPET",
+      "NodeID": 19
+    },
+    "21": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "ea30d5fe-eb25-45ed-8baa-c8dcb27742a2",
+      "NodeID": 21
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    9,
+    13,
+    19
+  ],
+  "onBuffStartIds": [
+    8,
+    15,
+    14,
+    21
+  ]
+}

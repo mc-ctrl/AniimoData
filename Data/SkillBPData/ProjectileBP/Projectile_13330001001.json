@@ -1,0 +1,100 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_13330001",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10331_Attack01_Bullet",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "duration": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "defaultHitSoundType": "s",
+  "onProjectileHitIds": [
+    132
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "nodeMap": {
+    "130": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13330001,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "93465ded-b4b2-41fd-bc54-c31216b27115",
+      "target": "TARGET",
+      "NodeID": 130,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt"
+      }
+    },
+    "136": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "3f8eff56-a6d8-45d9-be8c-e0f4a96fad5e",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1.01,
+      "NodeID": 136
+    },
+    "132": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 130,
+      "NodeID": 132,
+      "UID": "d7df3a8c-98eb-43d3-a6ce-c48e80a5b275",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        130,
+        136
+      ]
+    }
+  },
+  "tickInterval": 0.01,
+  "calcResultNodeId": 130,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

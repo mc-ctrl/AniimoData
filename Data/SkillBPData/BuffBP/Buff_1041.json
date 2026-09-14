@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_climb_sprint_v": 0.1,
+    "speed_ratio_climb_v": 2,
+    "speed_ratio_climb_dash_v": 2
+  },
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_1041",
+  "parentDynamicRPCStates": {},
+  "name": "大世界竞速增益-攀爬"
+}

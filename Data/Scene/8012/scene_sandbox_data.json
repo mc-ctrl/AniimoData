@@ -1,0 +1,562 @@
+{
+  "65049255": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018849,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 65049256,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 506,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "逃跑的琥珀教学",
+    "sightLevelType": 256,
+    "spawners": [
+      65877245
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8012/Sandbox_65049255_GraphRef.asset",
+    "position": [
+      -13.68,
+      7,
+      -115.92
+    ],
+    "owner": "路司机",
+    "id": 65049255,
+    "levelItems": {
+      "42478974": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          -13.9,
+          -11.57,
+          -1.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42478974,
+        "siblingIndex": 2,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42478974_43015735"
+          }
+        },
+        "configId": 73,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "65877207": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_LevelItem_SpeedUpTrigger_Fly_World (2)",
+        "position": [
+          -14.43,
+          2.64,
+          -51.65
+        ],
+        "siblingIndex": 6,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 65877207,
+        "path": "",
+        "componentsInfo": {
+          "59240634": {
+            "size": [
+              4,
+              10,
+              4
+            ]
+          },
+          "59913369": {
+            "localPosition": [
+              0,
+              0,
+              1.88
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              270
+            ]
+          }
+        },
+        "configId": 333,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "65877196": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_LevelItem_SpeedUpTrigger_Fly_World (1)",
+        "position": [
+          -14.43,
+          5.13,
+          -65.1
+        ],
+        "siblingIndex": 5,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 65877196,
+        "path": "",
+        "componentsInfo": {
+          "59240634": {
+            "size": [
+              4,
+              10,
+              4
+            ]
+          },
+          "59913369": {
+            "localPosition": [
+              0,
+              0,
+              1.88
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              270
+            ]
+          }
+        },
+        "configId": 333,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478738": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头1-附身星乐蒂",
+        "position": [
+          -13.9,
+          7,
+          -115.71
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42478738,
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "65877215": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_LevelItem_SpeedUpTrigger_Fly_World (3)",
+        "position": [
+          -14.43,
+          -2.24,
+          -32.71
+        ],
+        "siblingIndex": 7,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 65877215,
+        "path": "",
+        "componentsInfo": {
+          "59240634": {
+            "size": [
+              4,
+              10,
+              4
+            ]
+          },
+          "59913369": {
+            "localPosition": [
+              0,
+              0,
+              1.88
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              270
+            ]
+          }
+        },
+        "configId": 333,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478777": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点1-附身星乐蒂",
+        "position": [
+          -13.9,
+          6.69,
+          -107.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42478777,
+        "siblingIndex": 1,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42478777_43015308"
+          }
+        },
+        "configId": 72,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "65876752": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_RacePuzzle_Container",
+        "position": [
+          -14.26,
+          7.15,
+          -79.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 65876752,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "50598753": {
+            "chestSpawnerId": 65877245,
+            "luaTransData": {
+              "transData": [
+                {
+                  "refName": "StartTriggerRoot",
+                  "trans": {
+                    "localPosition": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "localRotation": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "refName": "RaceSpline",
+                  "trans": {
+                    "localPosition": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "localRotation": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "refName": "LookAtPoint",
+                  "trans": {
+                    "localPosition": [
+                      0,
+                      1,
+                      10
+                    ],
+                    "localRotation": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ]
+            },
+            "blackScreenId": 17,
+            "resetPortalId": 65891476,
+            "luaSpline": {
+              "splineData": [
+                {
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "position": [
+                    0,
+                    -0.58,
+                    9.5
+                  ]
+                },
+                {
+                  "position": [
+                    0,
+                    -2.83,
+                    13.7
+                  ]
+                },
+                {
+                  "position": [
+                    0,
+                    -5.79,
+                    26.7
+                  ]
+                },
+                {
+                  "position": [
+                    0,
+                    -6.9,
+                    30.78
+                  ]
+                },
+                {
+                  "position": [
+                    0,
+                    -15.4,
+                    56.18
+                  ]
+                },
+                {
+                  "position": [
+                    0,
+                    -17.95,
+                    63.8
+                  ]
+                }
+              ]
+            },
+            "effectMoveDuration": 5
+          }
+        },
+        "configId": 148,
+        "defaultValue": {
+          "chestSpawnerId": 65877245,
+          "blackScreenId": 17,
+          "resetPortalId": 65891476
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "65877155": {
+        "majorCompId": 0,
+        "owner": "路司机",
+        "EditorName": "P_Item_LevelItem_SpeedUpTrigger_Fly_World",
+        "position": [
+          -14.43,
+          7.5,
+          -75.75
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "siblingIndex": 4,
+        "serializeVersion": 3,
+        "id": 65877155,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "59240634": {
+            "size": [
+              4,
+              10,
+              4
+            ]
+          },
+          "59913369": {
+            "localPosition": [
+              0,
+              0,
+              1.88
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              270
+            ]
+          }
+        },
+        "configId": 333,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      }
+    },
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "在限定时间里追上逃脱的辉耀琥珀",
+      "autoSetContent1": true,
+      "compassShowDistance": 25,
+      "initState": 0,
+      "inactiveDesc": "在限定时间里追上逃脱的辉耀琥珀",
+      "mapAreaId": 0,
+      "markConfigId": 10413,
+      "markContent1": 65049255,
+      "nearState": 2,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 1,
+      "scale2": 0,
+      "compassTxt": "逃脱的琥珀",
+      "positionParam": [
+        0,
+        0
+      ],
+      "SloganPlayOnce": false,
+      "POIDesc": "逃脱的琥珀",
+      "POIIcon": "$UI_Icon_POI_Decrypt_TimeLimited.png",
+      "POIOrNot": false,
+      "yaw": 0,
+      "title": "逃脱的琥珀",
+      "showPortalOffset": false,
+      "activeDisplayType": 1,
+      "activeDistance": 20,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "scale3": 0,
+      "markType": 0,
+      "arriveParam": {},
+      "arriveType": 1,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "inactiveTitle": "逃脱的琥珀"
+    }
+  },
+  "64959269": {
+    "areaType": 0,
+    "chunk": 1018849,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 64959269,
+    "owner": "路司机",
+    "position": [
+      -13.78,
+      6.37,
+      -126.38
+    ],
+    "markIconSpawnerId": 0
+  }
+}

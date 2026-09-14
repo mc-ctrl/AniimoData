@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_10430520",
+  "NodeID": 1,
+  "UID": "3f334484-d73f-473b-9d5d-872685e16479",
+  "abilityParamId": 10300060,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10430520001,
+      "name": "setCombatActionTimeline",
+      "UID": "a5ece6d3-d49b-4561-b1d5-f6e0a50a6c95",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_StormTail"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10043_Skill_SprayTail",
+    "Eff_Parmon_10043_Skill_SprayTail_Tail",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "冰封甩尾",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2
+}

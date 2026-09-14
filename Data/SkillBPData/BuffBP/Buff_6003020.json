@@ -1,0 +1,65 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003020",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "UID": "d4a81818-09d0-4ff9-a920-5ede44dafa63",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 6003020,
+        "pvp_taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "80533ee3-4417-47a6-82da-54584d07e846",
+      "name": "checkAbilityElementType",
+      "elementType": 9,
+      "NodeID": 9
+    },
+    "6": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "0406d181-0abc-4cfe-9f43-9281a052c22a",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "b0e28362-2522-472b-a13f-0c3672bc0df9",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "e1a7cc48-17d9-4b40-833c-3770bb6bfc5b",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "7": {
+      "UID": "f6ae508d-5a18-4b03-81b3-bcc6bc1a749b",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    11
+  ]
+}

@@ -1,0 +1,1074 @@
+{
+  "113": {
+    "dialogue": 70001832,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 4,
+    "lockFinish": 4,
+    "outOrNot": 1
+  },
+  "168": {
+    "dialogue": 70008085,
+    "type": 1,
+    "autoCloseTime": 10,
+    "inOrNot": 0,
+    "lockEscape": 10,
+    "lockFinish": 10,
+    "outOrNot": 1
+  },
+  "169": {
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "115": {
+    "dialogue": 3705342,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "174": {
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 0,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 0
+  },
+  "117": {
+    "dialogue": 3705309,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "3701503": {
+    "dialogue": 3701503,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 2,
+    "outOrNot": 1
+  },
+  "118": {
+    "dialogue": 3701503,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "330308": {
+    "dialogue": 3303030,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "119": {
+    "dialogue": 70006270,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "137": {
+    "dialogue": 102810056,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 2,
+    "outOrNot": 1
+  },
+  "330307": {
+    "dialogue": 3303027,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "330306": {
+    "dialogue": 3303026,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "1001": {
+    "dialogue": 70001598,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "330304": {
+    "dialogue": 3303017,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "330303": {
+    "dialogue": 3303014,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "1002": {
+    "dialogue": 70001619,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "123": {
+    "dialogue": 100310052,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "1003": {
+    "dialogue": 70001626,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "150403": {
+    "dialogue": 150460,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "125": {
+    "dialogue": 70007277,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "150402": {
+    "dialogue": 150450,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "150401": {
+    "dialogue": 150445,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "126": {
+    "dialogue": 100310069,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 2,
+    "outOrNot": 1
+  },
+  "2002": {
+    "dialogue": 700006014,
+    "type": 1,
+    "autoCloseTime": 2,
+    "inOrNot": 0,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "2001": {
+    "dialogue": 164,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 999,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "2000": {
+    "type": 1,
+    "autoCloseTime": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "5": {
+    "dialogue": 70001830,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "127": {
+    "dialogue": 3707900,
+    "type": 1,
+    "autoCloseTime": 999,
+    "inOrNot": 0,
+    "lockEscape": 999,
+    "lockFinish": 999,
+    "outOrNot": 1
+  },
+  "129": {
+    "dialogue": 100310101,
+    "type": 1,
+    "autoCloseTime": 4,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "6": {
+    "dialogue": 20620799,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "1006": {
+    "dialogue": 70001629,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "110": {
+    "dialogue": 38030009,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 4,
+    "lockFinish": 4,
+    "outOrNot": 1
+  },
+  "131": {
+    "dialogue": 70007336,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "133": {
+    "dialogue": 70007338,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "132": {
+    "dialogue": 102810035,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 2,
+    "outOrNot": 1
+  },
+  "1005": {
+    "dialogue": 70001628,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "9": {
+    "dialogue": 70001541,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "128": {
+    "dialogue": 100310097,
+    "type": 1,
+    "autoCloseTime": 4,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "134": {
+    "dialogue": 70007339,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "11": {
+    "dialogue": 20620699,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "135": {
+    "dialogue": 3906312,
+    "type": 1,
+    "autoCloseTime": 999,
+    "inOrNot": 0,
+    "lockEscape": 999,
+    "lockFinish": 999,
+    "outOrNot": 1
+  },
+  "152": {
+    "dialogue": 20623091,
+    "playType": 0,
+    "type": 2,
+    "intervalTime": 4,
+    "autoCloseTime": 999,
+    "inOrNot": 0,
+    "lockEscape": 999,
+    "lockFinish": 999,
+    "outOrNot": 1
+  },
+  "330301": {
+    "dialogue": 3303002,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "330302": {
+    "dialogue": 3303005,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "999": {
+    "outTime": 0,
+    "type": 1,
+    "autoCloseTime": 99,
+    "inOrNot": 0,
+    "lockEscape": 99,
+    "lockFinish": 99,
+    "outOrNot": 0
+  },
+  "14": {
+    "dialogue": 70006104,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "330305": {
+    "dialogue": 3303018,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "120": {
+    "dialogue": 9010010,
+    "type": 1,
+    "autoCloseTime": 99,
+    "inOrNot": 0,
+    "lockEscape": 99,
+    "lockFinish": 99,
+    "outOrNot": 1
+  },
+  "150": {
+    "dialogue": 70008800,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "16": {
+    "dialogue": 20131029,
+    "type": 1,
+    "inOrNot": 1,
+    "outOrNot": 1
+  },
+  "151": {
+    "dialogue": 20623091,
+    "playType": 0,
+    "type": 2,
+    "intervalTime": 4,
+    "autoCloseTime": 999,
+    "inOrNot": 0,
+    "lockEscape": 999,
+    "lockFinish": 999,
+    "outOrNot": 1
+  },
+  "17": {
+    "dialogue": 20131032,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 0,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 0
+  },
+  "901": {
+    "dialogue": 90000209,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "18": {
+    "dialogue": 70006107,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "160": {
+    "dialogue": 70009000,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "19": {
+    "dialogue": 70006417,
+    "type": 1,
+    "autoCloseTime": 2,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "163": {
+    "dialogue": 3707900,
+    "inTime": 1,
+    "type": 1,
+    "outTime": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "201": {
+    "dialogue": 91339567,
+    "inTime": 1,
+    "type": 1,
+    "outTime": 1,
+    "autoCloseTime": 20,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 999,
+    "outOrNot": 1
+  },
+  "200": {
+    "type": 1,
+    "autoCloseTime": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "165": {
+    "dialogue": 70008082,
+    "type": 1,
+    "autoCloseTime": 10,
+    "inOrNot": 0,
+    "lockEscape": 10,
+    "lockFinish": 10,
+    "outOrNot": 1
+  },
+  "199": {
+    "dialogue": 1047212,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "166": {
+    "dialogue": 70008083,
+    "type": 1,
+    "autoCloseTime": 10,
+    "inOrNot": 0,
+    "lockEscape": 10,
+    "lockFinish": 10,
+    "outOrNot": 1
+  },
+  "198": {
+    "dialogue": 91339567,
+    "inTime": 1,
+    "type": 1,
+    "outTime": 1,
+    "autoCloseTime": 20,
+    "inOrNot": 1,
+    "lockEscape": 999,
+    "lockFinish": 999,
+    "outOrNot": 1
+  },
+  "116": {
+    "dialogue": 3705220,
+    "type": 1,
+    "autoCloseTime": 4,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "188": {
+    "dialogue": 1070207,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "196": {
+    "dialogue": 70090001,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "170": {
+    "dialogue": 690252,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "190": {
+    "dialogue": 3801759,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "171": {
+    "dialogue": 70010001,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "172": {
+    "dialogue": 3906003,
+    "inTime": 1,
+    "type": 2,
+    "outTime": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 0,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "153": {
+    "dialogue": 3906445,
+    "type": 1,
+    "autoCloseTime": 6,
+    "inOrNot": 1,
+    "lockEscape": 7,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "197": {
+    "dialogue": 1070209,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 7,
+    "lockFinish": 7,
+    "outOrNot": 1
+  },
+  "1": {
+    "dialogue": 158,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 999,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "2": {
+    "dialogue": 90000005,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "3": {
+    "dialogue": 90000006,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 999,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "4": {
+    "dialogue": 70000102,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "162": {
+    "dialogue": 70009112,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "176": {
+    "type": 1,
+    "autoCloseTime": 10,
+    "inOrNot": 1,
+    "lockEscape": 10,
+    "lockFinish": 10,
+    "outOrNot": 0
+  },
+  "101": {
+    "dialogue": 20620999,
+    "type": 1,
+    "autoCloseTime": 7,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "177": {
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "187": {
+    "dialogue": 1070206,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "178": {
+    "dialogue": 301449,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "175": {
+    "type": 2,
+    "autoCloseTime": 3,
+    "inOrNot": 0,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 0
+  },
+  "185": {
+    "dialogue": 1070204,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "179": {
+    "dialogue": 690263,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "184": {
+    "dialogue": 1070203,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "180": {
+    "dialogue": 690264,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "183": {
+    "dialogue": 1070202,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "138": {
+    "dialogue": 102810075,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 2,
+    "outOrNot": 1
+  },
+  "114": {
+    "dialogue": 2605132,
+    "type": 1,
+    "autoCloseTime": 4,
+    "inOrNot": 1,
+    "lockEscape": 4,
+    "lockFinish": 4,
+    "outOrNot": 1
+  },
+  "139": {
+    "dialogue": 102810074,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 2,
+    "outOrNot": 1
+  },
+  "181": {
+    "dialogue": 71000004,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "186": {
+    "dialogue": 1070205,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "173": {
+    "type": 2,
+    "autoCloseTime": 5,
+    "inOrNot": 0,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 0
+  },
+  "189": {
+    "dialogue": 1070208,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "140": {
+    "dialogue": 70008656,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "142": {
+    "dialogue": 3712462,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "141": {
+    "dialogue": 3712461,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "143": {
+    "dialogue": 70008804,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "167": {
+    "dialogue": 70008084,
+    "type": 1,
+    "autoCloseTime": 10,
+    "inOrNot": 0,
+    "lockEscape": 10,
+    "lockFinish": 10,
+    "outOrNot": 1
+  },
+  "136": {
+    "dialogue": 102810061,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 2,
+    "lockFinish": 2,
+    "outOrNot": 1
+  },
+  "124": {
+    "dialogue": 100310060,
+    "type": 1,
+    "autoCloseTime": 4,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "102": {
+    "dialogue": 20620799,
+    "type": 1,
+    "autoCloseTime": 7,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "130": {
+    "dialogue": 70007335,
+    "type": 1,
+    "autoCloseTime": 5,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "103": {
+    "dialogue": 20620699,
+    "type": 1,
+    "autoCloseTime": 7,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "8": {
+    "dialogue": 20620999,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "104": {
+    "dialogue": 20620998,
+    "type": 1,
+    "autoCloseTime": 7,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "1004": {
+    "dialogue": 70001627,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "105": {
+    "dialogue": 20620701,
+    "type": 1,
+    "autoCloseTime": 7,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "182": {
+    "dialogue": 1070201,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "106": {
+    "dialogue": 20620829,
+    "type": 1,
+    "autoCloseTime": 7,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "12": {
+    "dialogue": 20620998,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "107": {
+    "dialogue": 20620831,
+    "type": 1,
+    "autoCloseTime": 999,
+    "inOrNot": 0,
+    "lockEscape": 999,
+    "lockFinish": 999,
+    "outOrNot": 1
+  },
+  "10": {
+    "dialogue": 70001600,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "108": {
+    "dialogue": 38030000,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 4,
+    "lockFinish": 4,
+    "outOrNot": 1
+  },
+  "112": {
+    "dialogue": 70001831,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 4,
+    "lockFinish": 4,
+    "outOrNot": 1
+  },
+  "109": {
+    "dialogue": 38030001,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 4,
+    "lockFinish": 4,
+    "outOrNot": 1
+  },
+  "121": {
+    "type": 1,
+    "autoCloseTime": 99,
+    "inOrNot": 0,
+    "lockEscape": 99,
+    "lockFinish": 99,
+    "outOrNot": 1
+  },
+  "161": {
+    "dialogue": 99000136,
+    "type": 1,
+    "autoCloseTime": 3,
+    "inOrNot": 1,
+    "lockEscape": 3,
+    "lockFinish": 3,
+    "outOrNot": 1
+  },
+  "7": {
+    "dialogue": 20620899,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 5,
+    "lockFinish": 5,
+    "outOrNot": 1
+  },
+  "111": {
+    "dialogue": 70001830,
+    "type": 1,
+    "inOrNot": 1,
+    "lockEscape": 4,
+    "lockFinish": 4,
+    "outOrNot": 1
+  },
+  "164": {
+    "dialogue": 70008081,
+    "type": 1,
+    "autoCloseTime": 10,
+    "inOrNot": 0,
+    "lockEscape": 10,
+    "lockFinish": 10,
+    "outOrNot": 1
+  }
+}

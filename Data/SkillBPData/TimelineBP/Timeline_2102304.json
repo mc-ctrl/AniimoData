@@ -1,0 +1,228 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.3,
+        "instant_dmg_rate_v": 0.3
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "impulseId": 1000,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10011_Attack_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "ea5d095f-58a9-4ecf-8d9f-e26303854e29",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "23": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 23,
+      "UID": "33d537dd-6370-47c7-a477-1580112fa1c7",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flylongbreath_AOE",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    },
+    "14": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.7,
+        "instant_dmg_rate_v": 0.7
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "impulseId": 3002,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10011_Attack_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "386ffcef-fb0e-4678-81d3-cba3fb844858",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 14
+    },
+    "25": {
+      "UID": "0ab22735-50f0-4dfe-ad1a-a9a370f55ae0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23,
+          30
+        ]
+      },
+      "NodeID": 25
+    },
+    "26": {
+      "NodeID": 26,
+      "UID": "610476c7-d21c-46a5-9f15-3ca6f8a77fab",
+      "isCenter": 1,
+      "shakeAmplitude": 0.3,
+      "shakeDir": [
+        0,
+        0,
+        0
+      ],
+      "shakeDissipationDistance": 100,
+      "shakeFrequency": 10,
+      "shakeRadius": 70,
+      "shakeTime": 0.25,
+      "target": "OWNER",
+      "checkCasterIsPlayer": false,
+      "name": "playCameraImpulse"
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "22325d55-8cb6-42d1-90ab-94fc9e0e7cf6",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_fireball_explosion",
+      "NodeID": 27
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 28,
+      "UID": "f932025f-7849-4420-a136-80b5ead3dee9"
+    },
+    "29": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 29,
+      "UID": "577b603e-0605-4b4b-915a-ed05265764d1",
+      "effectId": "Eff_Monster_80023_Mon_Skill_Flylongbreath_AOE_Bomb",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    },
+    "30": {
+      "key": "Timer1",
+      "duration": 1,
+      "actionIds": [
+        29
+      ],
+      "NodeID": 30,
+      "UID": "d334a3b4-3f7c-4b68-b94f-f6c6dee2b0a5",
+      "name": "addTimer"
+    },
+    "16": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 14,
+      "NodeID": 16,
+      "UID": "f776e0c4-3fdc-47dc-9468-cda0eac1cecd",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            4,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        14
+      ]
+    },
+    "5": {
+      "calcResultNodeId": 3,
+      "name": "actOnTargets",
+      "UID": "7447d392-e9ff-4bf5-accb-796fd77f4e8e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2304",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        3
+      ],
+      "impulseId": 1000,
+      "NodeID": 5
+    },
+    "6": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 2,
+      "NodeID": 6,
+      "UID": "a871eae0-932e-435a-a3e1-2c42977bdf20",
+      "onUpdate": {
+        "actionIds": [
+          5
+        ]
+      },
+      "startTime": 0.1,
+      "onExit": {
+        "actionIds": [
+          16,
+          26
+        ]
+      }
+    }
+  },
+  "BPName": "timeline_2102304",
+  "NodeID": 1,
+  "UID": "4510fe2e-4d3f-4898-bfe2-5487dc86f97c",
+  "eventIds": [
+    28,
+    6,
+    25
+  ],
+  "layer": "Base",
+  "length": 5
+}

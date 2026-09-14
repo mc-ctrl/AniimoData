@@ -1,0 +1,293 @@
+{
+  "nodeMap": {
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "1942a174-f763-48d0-aa0e-9634335d0ad3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            -0.5,
+            0.5
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            4.5,
+            1.8,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        3
+      ]
+    },
+    "6": {
+      "tickInterval": 0.3,
+      "eventType": "NotifyState",
+      "endTime": 1.6,
+      "NodeID": 6,
+      "UID": "390beef6-16d1-4f73-a1dc-21f0867159bb",
+      "onUpdate": {
+        "actionIds": [
+          11
+        ]
+      },
+      "startTime": 0.5,
+      "onEnter": {
+        "actionIds": [
+          5
+        ]
+      }
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 41,
+      "UID": "1b43048c-731f-4132-ad57-c3957cbf2215"
+    },
+    "42": {
+      "name": "stopSoundStr",
+      "UID": "77d03624-19b5-4dac-901f-ada48c6e9558",
+      "soundId": "parmon_helgon_attack_flybreath_heavy",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "44": {
+      "UID": "59504bdf-d044-4c46-98b2-050d69660a31",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "NodeID": 44
+    },
+    "11": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "775f089e-b01d-4f96-b578-31bc5d6b3870",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "21": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4278b9ab-164b-4f1e-b478-d9cc6b5d8f17",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Fly_HeavyBreath_Enter"
+    },
+    "3": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.5
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30402,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000,
+        "airImpulseId": 10031
+      },
+      "UID": "186d02bb-08ea-479f-ab37-54c34674ccd0",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "23": {
+      "UID": "b4ff07fa-97f4-449c-a4fc-87ed6dbb8f05",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 23
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "10dddd6e-3d7c-4083-beb0-a94f03b6db62",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_attack_flybreath_heavy",
+      "NodeID": 24
+    },
+    "14": {
+      "target": "OWNER",
+      "scale": 2,
+      "speed": 1,
+      "NodeID": 14,
+      "UID": "9b4f2574-9210-484f-9e12-0f89099697ac",
+      "effectId": "Eff_Parmon_10025_Skill_Attack04_Air",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 52,
+      "UID": "645ff360-6755-466f-8f13-8d062e7bfccf"
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "71702c84-a3a2-4510-9a5d-feeebd4964ab",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "17": {
+      "isNot": false,
+      "stateName": "FLYING",
+      "isParentState": true,
+      "NodeID": 17,
+      "UID": "d0c71ec5-1f2d-4c3f-b22b-d10da9a58e44",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 16,
+      "UID": "15094f70-642e-4424-a38b-5c7b870a4043"
+    },
+    "48": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4ef8b521-4399-4182-80f7-b61702ea4faf",
+      "target": "OWNER",
+      "NodeID": 48,
+      "animId": "Fly_HeavyBreath_End"
+    },
+    "28": {
+      "UID": "6563801e-096c-48b6-ae38-5522d2976c6c",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1,
+        "canMove": 1
+      },
+      "NodeID": 28
+    },
+    "49": {
+      "action": {
+        "actionIds": [
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 49,
+      "UID": "cb849016-959b-4d18-ba27-40583134d0bd"
+    },
+    "30": {
+      "UID": "93a5cd16-358b-42b3-a72a-e103ea5832fb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "NodeID": 30
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.35,
+      "NodeID": 26,
+      "UID": "696931a4-098d-41de-aa41-280fdaf0e646"
+    },
+    "19": {
+      "isNot": false,
+      "stateName": "FLYING",
+      "isParentState": true,
+      "NodeID": 19,
+      "UID": "ea1be36b-7556-4613-97d4-528e01969d39",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "51": {
+      "UID": "c8cead5f-a0f3-4419-b2da-e813af7d070e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 51
+    },
+    "40": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2265ca41-6dcc-4de7-9952-8f59e231ce4b",
+      "target": "OWNER",
+      "NodeID": 40,
+      "animId": "Fly_HeavyBreath_Loop"
+    }
+  },
+  "BPName": "ability_10250005",
+  "NodeID": 8,
+  "UID": "e0cab8d5-28cf-4a67-9e46-9515f8483028",
+  "eventIds": [
+    30,
+    44,
+    23,
+    6,
+    16,
+    26,
+    49,
+    41,
+    52
+  ],
+  "layer": "Base",
+  "length": 9999
+}

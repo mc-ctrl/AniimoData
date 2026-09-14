@@ -1,0 +1,109 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "c1ec9272-f125-461f-b63d-480d45385add",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "13": {
+      "value": 50,
+      "name": "applyECSElement",
+      "UID": "e9a83bb6-6f68-471a-8816-30ce82867256",
+      "element": 0,
+      "target": "CASTER",
+      "NodeID": 13
+    },
+    "6": {
+      "key": "1",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "4484f7c6-87b3-4221-81d2-6311009bde88",
+      "cd": 1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "10": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "12433abb-d916-48f0-b08b-f6daa9e99f36",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "c4466996-114f-43c3-b222-d774c2c71afa",
+      "name": "isReceiveDamageEventElementType",
+      "elementType": 2,
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "bc344fcf-c90c-4186-a8cb-4476f22cc47e",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "dc562863-c6e8-4cef-9b43-e5c71bff8a1f",
+      "name": "isReceiveDamageEventElementType",
+      "elementType": 5,
+      "NodeID": 9
+    },
+    "12": {
+      "value": -40,
+      "name": "applyECSElement",
+      "UID": "7abeebf3-dd53-42c2-8363-c1b37e940abc",
+      "element": 0,
+      "target": "CASTER",
+      "NodeID": 12
+    },
+    "11": {
+      "value": -40,
+      "name": "applyECSElement",
+      "UID": "2b515d52-6ac6-479d-b3d6-e9932a14400c",
+      "element": 0,
+      "target": "CASTER",
+      "NodeID": 11
+    },
+    "5": {
+      "UID": "875ac66f-f411-4e35-b097-09ea3b1418b0",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        8,
+        3,
+        10
+      ],
+      "NodeID": 5
+    },
+    "2": {
+      "UID": "6355731a-e2b6-4c8a-98b6-5141c078db96",
+      "name": "isReceiveDamageEventElementType",
+      "elementType": 3,
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_91283112",
+  "dynamicRPCStates": {},
+  "UID": "3fafcb1c-301e-46d6-9f40-ebc04bb0fe0a",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

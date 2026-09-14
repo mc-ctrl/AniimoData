@@ -1,0 +1,72 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "UID": "6961f18f-8e36-4bb4-94f6-0429e30c982c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23,
+          6,
+          14,
+          25,
+          22
+        ]
+      },
+      "NodeID": 8
+    },
+    "23": {
+      "eventName": "huiyin",
+      "name": "notifyCustomEvent",
+      "UID": "81c1c31e-7286-412c-ae13-c00c846db307",
+      "target": "MASTER",
+      "NodeID": 23
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "d7b5f463-b760-4e23-beb9-d924e20b6c65",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_01",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cf52fb41-0c51-49dc-a945-f12b65c336ee",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_01_End02",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "22": {
+      "key": "1",
+      "duration": 0.9,
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "927f5681-fed4-4a94-ab80-7bbcb4ae0a11",
+      "name": "addTimer"
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "479249fc-9817-47e5-b2f6-eb427b778cc7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10287_Skill_Talus_End_shiny",
+      "NodeID": 25
+    },
+    "21": {
+      "UID": "2a8102f5-faa1-4159-b13e-983abb11e969",
+      "name": "destroyEntity",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2128502",
+  "NodeID": 10,
+  "UID": "5a9d65d4-8579-4e86-ba4f-710a62ae7322",
+  "eventIds": [
+    8
+  ],
+  "layer": "Base",
+  "length": 5
+}

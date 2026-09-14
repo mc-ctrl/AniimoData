@@ -1,0 +1,37 @@
+[
+  {
+    "order": 1,
+    "res": "$UI_Img_PlayerInfoCard_LevelTab1.png",
+    "type": 1158602196
+  },
+  {
+    "order": 2,
+    "res": "$UI_Img_PlayerInfoCard_LevelTab2.png",
+    "type": 2113291045
+  },
+  {
+    "order": 3,
+    "res": "$UI_Img_PlayerInfoCard_LevelTab3.png",
+    "type": 1808578185
+  },
+  {
+    "order": 5,
+    "res": "$UI_Img_PlayerInfoCard_LevelTab5.png",
+    "type": 1347024245
+  },
+  {
+    "order": 4,
+    "res": "$UI_Img_PlayerInfoCard_LevelTab4.png",
+    "type": 1937402495
+  },
+  {
+    "order": 6,
+    "res": "$UI_Img_PlayerInfoCard_ChatBubble.png",
+    "type": 1477258019
+  },
+  {
+    "order": 7,
+    "res": "$UI_Img_PlayerInfoCard_Studio.png",
+    "type": 1866118534
+  }
+]

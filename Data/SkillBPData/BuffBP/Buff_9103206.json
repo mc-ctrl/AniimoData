@@ -1,0 +1,31 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "4": {
+      "UID": "082e4048-a936-4a0c-82a8-3573fa9a20a0",
+      "name": "registerAttackHpZero",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 4
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9103208,
+      "NodeID": 2,
+      "UID": "427965ef-638a-43ab-9a3d-7907c3034626",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_9103206",
+  "dynamicRPCStates": {},
+  "UID": "d12d85ec-915f-4fce-ab7c-18d0f2b21459",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

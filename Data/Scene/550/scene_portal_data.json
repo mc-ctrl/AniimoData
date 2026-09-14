@@ -1,0 +1,90 @@
+{
+  "91284736": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      -0.97,
+      100.57,
+      -43.82
+    ]
+  },
+  "91284751": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 168.98,
+    "markPosition": [
+      1.27,
+      100.72,
+      -77.3
+    ]
+  },
+  "91284758": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 89.62,
+    "markPosition": [
+      40.94,
+      101.03,
+      -43.67
+    ]
+  },
+  "91312647": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      0.17,
+      100.99,
+      -58.17
+    ]
+  },
+  "91257908": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      0.1,
+      100.99,
+      -53.8
+    ]
+  },
+  "91274706": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      0,
+      100.79,
+      -70.49
+    ]
+  },
+  "91274707": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      0.17,
+      100.99,
+      -58.17
+    ]
+  },
+  "91274752": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 238.03,
+    "markPosition": [
+      -8.15,
+      100.94,
+      -65.22
+    ]
+  }
+}

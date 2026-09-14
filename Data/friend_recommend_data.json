@@ -1,0 +1,11 @@
+[
+  {
+    "condition": "oppositegender"
+  },
+  {
+    "condition": "teamupnum"
+  },
+  {
+    "condition": "insamehomepark"
+  }
+]

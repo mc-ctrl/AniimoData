@@ -1,0 +1,502 @@
+{
+  "37": {
+    "currency": [
+      1008
+    ],
+    "name": 1141945750,
+    "translateDesc": "学院主题角色饰品",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "38": {
+    "currency": [
+      2
+    ],
+    "name": 1859213571,
+    "translateDesc": "学院主题伊莫饰品",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "39": {
+    "currency": [
+      1010,
+      1011
+    ],
+    "tabIcon": "$UI_Img_Shop_HomesteadGiftPack.png",
+    "sort": 1,
+    "name": 1224508449
+  },
+  "40": {
+    "currency": [
+      1010
+    ],
+    "tabIcon": "$UI_Img_Shop_AniimoFood.png",
+    "sort": 1,
+    "name": 1181847774
+  },
+  "41": {
+    "currency": [
+      1015
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1779490781
+  },
+  "42": {
+    "currency": [
+      1015
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1259747016
+  },
+  "35": {
+    "currency": [
+      5200006,
+      1014
+    ],
+    "name": 2002037881,
+    "typePage": [
+      3,
+      4,
+      100,
+      101,
+      1
+    ],
+    "translateDesc": "抢蛋商店",
+    "sort": 1,
+    "tabIcon": "$UI_Img_GrabEgg_TabIcon_Shop.png"
+  },
+  "44": {
+    "currency": [
+      1,
+      1017
+    ],
+    "tabIcon": "$UI_Img_Shop_SanhuaFlowingBeadExchange.png",
+    "sort": 1,
+    "name": 1336239625
+  },
+  "1": {
+    "currency": [
+      2,
+      3000
+    ],
+    "name": 1652309550,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "2": {
+    "currency": [
+      2,
+      3000
+    ],
+    "name": 2048467425,
+    "translateDesc": "商店的页签名称",
+    "sort": 2,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "3": {
+    "currency": [
+      2,
+      3000
+    ],
+    "name": 1716472874,
+    "translateDesc": "商店的页签名称",
+    "sort": 3,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "4": {
+    "currency": [
+      2,
+      3000
+    ],
+    "name": 1364700079,
+    "translateDesc": "商店的页签名称",
+    "sort": 4,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "63": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Inventory_TabIcon_5.png",
+    "sort": 3,
+    "name": 1216949527
+  },
+  "60": {
+    "currency": {},
+    "tabIcon": "$UI_Img_Shop_ItemExchange.png",
+    "sort": 1,
+    "name": 1876226724
+  },
+  "59": {
+    "currency": {},
+    "tabIcon": "$UI_Img_Shop_HomeRewardCionConvert.png",
+    "sort": 1,
+    "name": 1904937424
+  },
+  "18": {
+    "currency": [
+      1008
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 2,
+    "name": 1820695948
+  },
+  "17": {
+    "currency": [
+      4000
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1790501846
+  },
+  "13": {
+    "currency": [
+      5000
+    ],
+    "name": 1981402268,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "55": {
+    "currency": [
+      700034
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1421600998
+  },
+  "54": {
+    "currency": [
+      1013
+    ],
+    "tabIcon": "$UI_Img_Shop_SeasonalExchange.png",
+    "sort": 2,
+    "name": 1153672868
+  },
+  "53": {
+    "currency": [
+      1013
+    ],
+    "tabIcon": "$UI_Img_Shop_WeeklyRewards.png",
+    "sort": 1,
+    "name": 1076266574
+  },
+  "52": {
+    "currency": [
+      4040033
+    ],
+    "startTimeRefId": 11001,
+    "name": 1676565373,
+    "endTimeRefId": 11002,
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_HomeBlueprintConvert.png"
+  },
+  "16": {
+    "currency": [
+      700034
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 4,
+    "name": 1544926073
+  },
+  "50": {
+    "currency": [
+      1010
+    ],
+    "tabIcon": "$UI_Img_Shop_ResourceExchange.png",
+    "sort": 1,
+    "name": 2091324392
+  },
+  "48": {
+    "currency": [
+      1014
+    ],
+    "name": 1898225397,
+    "typePage": [
+      4,
+      104,
+      102
+    ],
+    "translateDesc": "抢蛋段位限购",
+    "sort": 1,
+    "tabIcon": "$UI_Img_GrabEgg_TabIcon_Rank.png"
+  },
+  "5": {
+    "currency": [
+      2,
+      3000
+    ],
+    "name": 1503459271,
+    "translateDesc": "商店的页签名称",
+    "sort": 5,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "47": {
+    "currency": [
+      1301
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 2023773031
+  },
+  "46": {
+    "currency": [
+      1013
+    ],
+    "tabIcon": "$UI_Img_Shop_WeeklyRewards.png",
+    "sort": 1,
+    "name": 1634770584
+  },
+  "6": {
+    "currency": [
+      2
+    ],
+    "name": 1972465076,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "45": {
+    "currency": [
+      700034
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 2055058969
+  },
+  "43": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1265957610
+  },
+  "7": {
+    "currency": [
+      2,
+      3000
+    ],
+    "name": 1657282041,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "12": {
+    "currency": [
+      4000
+    ],
+    "name": 1532944981,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "8": {
+    "currency": [
+      1,
+      3000
+    ],
+    "name": 1554245035,
+    "translateDesc": "商店的页签名称",
+    "sort": 3,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "31": {
+    "currency": [
+      1,
+      700034
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1213925393
+  },
+  "56": {
+    "currency": [
+      2
+    ],
+    "refreshType": 1,
+    "name": 1791649258,
+    "sort": 1,
+    "gmOrder": 1,
+    "refreshLimit": 3,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "57": {
+    "currency": [
+      700034
+    ],
+    "name": 1350578499,
+    "sort": 2,
+    "condition": 62011,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "58": {
+    "currency": [
+      1014
+    ],
+    "tabIcon": "$UI_Img_GrabEgg_TabIcon_Shop.png",
+    "name": 2132030826
+  },
+  "11": {
+    "currency": [
+      521000
+    ],
+    "name": 1738679068,
+    "translateDesc": "商店的页签名称",
+    "sort": 6,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "20": {
+    "currency": [
+      700034
+    ],
+    "name": 1548069785,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "21": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 2034876303
+  },
+  "22": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1216457223
+  },
+  "23": {
+    "currency": [
+      400001
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1882377189
+  },
+  "24": {
+    "currency": [
+      913120
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1242474341
+  },
+  "14": {
+    "currency": [
+      400012
+    ],
+    "name": 1639730898,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "10": {
+    "currency": [
+      2,
+      3000
+    ],
+    "name": 2069056712,
+    "translateDesc": "商店的页签名称",
+    "sort": 1,
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png"
+  },
+  "15": {
+    "currency": [
+      1
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 2,
+    "name": 1665849665
+  },
+  "25": {
+    "currency": [
+      1009
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1808433317
+  },
+  "26": {
+    "currency": [
+      1010,
+      4040033
+    ],
+    "tabIcon": "$UI_Img_Shop_SeedShop.png",
+    "sort": 1,
+    "name": 2125299866
+  },
+  "27": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_ItemExchange.png",
+    "sort": 1,
+    "name": 2137138597
+  },
+  "28": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1151513365
+  },
+  "29": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1747234923
+  },
+  "30": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1973229493
+  },
+  "32": {
+    "currency": [
+      700034
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1563821775
+  },
+  "33": {
+    "currency": [
+      2
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 2084438263
+  },
+  "51": {
+    "currency": {},
+    "startTimeRefId": 11001,
+    "name": 1843056979,
+    "endTimeRefId": 11002,
+    "sort": 2,
+    "tabIcon": "$UI_Img_Shop_HomeVariationSale.png"
+  },
+  "36": {
+    "currency": [
+      1
+    ],
+    "tabIcon": "$UI_Img_Shop_CreditCoin.png",
+    "sort": 1,
+    "name": 1548364221
+  }
+}

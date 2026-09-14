@@ -1,0 +1,274 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 37,
+      "UID": "bac05386-9003-44c6-8b53-024acc73aacc",
+      "bone": "Bip001 R Hand",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10222_Skill_Cross_Claw"
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "62237f54-2c00-45e5-b25b-2960008949fb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Cross_Claw",
+      "NodeID": 42
+    },
+    "8": {
+      "UID": "59b4f1a2-b6ec-4854-85e1-a5b3504e5599",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 8
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.05,
+      "NodeID": 31,
+      "UID": "127b05a0-2d13-40f6-8e6d-a713436ef229"
+    },
+    "60": {
+      "duration": 0.6,
+      "name": "puppetPreCastAction",
+      "UID": "39fe3059-63f7-42d4-bb07-a23697ba3816",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 60
+    },
+    "59": {
+      "duration": 0.3,
+      "name": "puppetPreCastAction",
+      "UID": "25a11e7e-bde4-487b-9c42-4bb0bd1b6211",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 59
+    },
+    "58": {
+      "action": {
+        "actionIds": [
+          57
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 58,
+      "UID": "2b7051d1-816b-4e0c-b30c-4364f63b1212"
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d005527f-b336-4e92-8e6f-427ae254e095",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Cross"
+    },
+    "3": {
+      "UID": "b770b386-09f5-4e97-ad44-64d6c71be24e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 13,
+      "UID": "10d10572-8d2a-4fc3-8a99-57f9042ef124"
+    },
+    "12": {
+      "UID": "04e25a81-751d-42dd-9ec8-2aee92939ea3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 12
+    },
+    "56": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "eb5e49fc-6e13-4e97-81c1-167cdb01defc",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "10": {
+      "UID": "4d8bea2d-3185-40c3-ba4d-d0eebd63adff",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          17,
+          8
+        ]
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "02f68853-7032-4547-936c-90b59a8e09bc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "57": {
+      "actionIds": [
+        59
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "992a2447-efe9-42cd-9659-0efb3d174ca4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        60
+      ],
+      "NodeID": 57
+    },
+    "16": {
+      "UID": "ddcacdae-ff15-4411-ad74-eadadbfc4961",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "offsetXYZ": [
+        0,
+        1,
+        1
+      ],
+      "templateId": 12220700001,
+      "name": "createProjectile",
+      "UID": "44873b4a-b1a8-4b0c-b39e-ad40f4002a4f",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": [
+        -0.1,
+        1,
+        999
+      ],
+      "NodeID": 27,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "17": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "1dee1246-9eff-4b6e-b865-37811c1fd5fb",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.32,
+      "NodeID": 29,
+      "UID": "2b342913-3c2e-4460-89a7-0ddf456bb4f1"
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "abd6e729-a62f-4b0d-bc7a-f8f9bb76d02d",
+      "effectId": "Eff_Parmon_10222_Skill_Cross_Ground",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ff632a1d-cb5e-44f5-95ad-f95f8847c9a9",
+      "effectId": "Eff_Parmon_10222_Skill_Cross_Charge",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "8b81ac2b-b3b1-408e-8e0a-8346f0f5170a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 34,
+      "UID": "77ccafbf-603a-436a-8d24-1e3c5a84c3f6",
+      "bone": "Bip001 L Hand",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10222_Skill_Cross_Claw"
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          34,
+          37,
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.083,
+      "NodeID": 36,
+      "UID": "90be572d-8c76-4722-98bd-a5c29b1fc07e"
+    }
+  },
+  "BPName": "ability_12220700",
+  "NodeID": 5,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    10,
+    3,
+    16,
+    13,
+    31,
+    29,
+    33,
+    36,
+    58
+  ],
+  "layer": "Base",
+  "length": 2.81
+}

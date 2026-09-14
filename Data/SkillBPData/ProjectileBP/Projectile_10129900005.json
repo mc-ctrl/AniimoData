@@ -1,0 +1,126 @@
+{
+  "duration": 6,
+  "calcResultNodeId": 21,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Ex_t",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 0.5,
+  "maxHitNum": 1,
+  "minAngularOffset": 180,
+  "moveSpeed": 19,
+  "onProjectileFinishIds": [
+    56,
+    57,
+    58,
+    23
+  ],
+  "onProjectileStartIds": [
+    94
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "nodeMap": {
+    "58": {
+      "affectCameraAnim": true,
+      "cameraShakeId": 10104,
+      "NodeID": 58,
+      "UID": "0392f932-14a7-4cea-9fd4-6ec4bc640b6c",
+      "target": "OWNER",
+      "name": "playCameraImpulseById"
+    },
+    "23": {
+      "needEcs": true,
+      "calcResultNodeId": 21,
+      "NodeID": 23,
+      "UID": "14d124d1-f13f-4197-9077-90c44dd7162c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        21
+      ]
+    },
+    "56": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "e57368f8-4315-4815-922d-5ff425e78952",
+      "effectId": "Eff_Parmon_10012_Ex_h",
+      "speed": 1,
+      "NodeID": 56
+    },
+    "94": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7e789067-3921-46cf-bb8d-e5db022509dc",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_ultimate_03",
+      "NodeID": 94
+    },
+    "57": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5c163cc4-6126-4b57-8bd1-d7628f948cf7",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_ultimate_03_impact",
+      "NodeID": 57
+    },
+    "21": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 0
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "8b302f91-9fe3-4a68-9ca4-de474b5823b9",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 10129900,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "NodeID": 21
+    }
+  },
+  "startSleepTime": 0,
+  "angularIncreaseDuration": 0.5,
+  "BPName": "ability_10129900",
+  "actOnTag": "froze",
+  "acceleration": 0
+}

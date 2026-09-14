@@ -1,0 +1,47 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1114101",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": [
+    11,
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 20,
+      "name": "playStartLoopEndAni",
+      "NodeID": 3,
+      "UID": "01bd4298-cda5-4d59-9a0b-e2d200603b06",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "5": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "53aa1d0a-9e23-42be-979f-f23a0f32269b",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 5
+    },
+    "6": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "dbf27305-9d50-4686-bd41-cfc05027f5ad",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

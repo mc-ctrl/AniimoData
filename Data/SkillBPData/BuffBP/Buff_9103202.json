@@ -1,0 +1,80 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9103202",
+  "NodeID": 1,
+  "UID": "42d3709d-ef91-48b5-a071-d2c228143b04",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "acf5a53e-f97b-47f4-bf7a-4e9fd677de89",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "507cc066-d652-4baa-a3e3-5e8a70ec920f",
+      "name": "registerKillEnemyEvent",
+      "actionIds": [
+        8,
+        2
+      ],
+      "NodeID": 4
+    },
+    "9": {
+      "target": "OWNER",
+      "duration": 8,
+      "buffId": 9103204,
+      "NodeID": 9,
+      "UID": "350a8031-0e8d-4012-87ad-93b91a6c7758",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 20,
+      "buffId": 9103204,
+      "NodeID": 10,
+      "UID": "3acd6fbd-5135-435e-958c-92b2ac46ffd0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "rValue": 3,
+      "name": "greater",
+      "UID": "3b0ce965-37f3-45ee-8f94-4995983de5ee",
+      "NodeID": 7,
+      "lValue": {
+        "templateId": 9103204,
+        "name": "getBuffLayer",
+        "UID": "6b40385a-929a-44ef-9d4b-c428d4fe5281",
+        "target": "OWNER",
+        "NodeID": 6
+      }
+    },
+    "2": {
+      "petTarget": "OWNER",
+      "triggerId": 20002023,
+      "name": "onEntityTrigger",
+      "UID": "88bf8e28-4554-441e-bd0b-eb62b9d8ee06",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

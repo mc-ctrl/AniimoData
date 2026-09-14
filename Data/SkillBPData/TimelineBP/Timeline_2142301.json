@@ -1,0 +1,155 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2142301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "97de0cb4-778b-4eba-8ea8-62142b184633",
+      "target": "TARGET",
+      "NodeID": 3,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10423_Skill_GhostDance01_hit01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 1000
+      }
+    },
+    "17": {
+      "UID": "d2f947c5-a4d1-49bf-b066-78d09b13fd82",
+      "value": "asdfghjkl",
+      "name": "print",
+      "NodeID": 17
+    },
+    "16": {
+      "UID": "57a2e10e-48d0-4c1c-9ba2-d1a644ab0933",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "a1753792-158f-4799-b0b7-422640b9db40",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.7,
+            1.6,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        3,
+        12
+      ]
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "46e0d960-956d-40b2-ab3e-2ab78dd0ec4c",
+      "effectId": "Eff_Parmon_10423_Skill_GhostDance03_SpecialEffect",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "eventType": "NotifyState",
+      "endTime": 1.05,
+      "NodeID": 7,
+      "UID": "27287906-fab7-4584-9932-1881a190b89e",
+      "onUpdate": {
+        "actionIds": [
+          5,
+          17
+        ]
+      },
+      "startTime": 0.15,
+      "tickInterval": 0.09
+    },
+    "12": {
+      "noiseRotSeeds": [
+        0,
+        0,
+        0
+      ],
+      "affectCameraAnim": true,
+      "NodeID": 12,
+      "UID": "6489e53d-19bd-4090-8980-4a1ab9bf8bda",
+      "target": "OWNER",
+      "name": "playCameraPerlinNoiseImpulse",
+      "shakeDissipationDistance": 28,
+      "shakeFrequency": 11,
+      "shakeKeepTime": 0.08,
+      "shakeRadius": 2,
+      "shakeTime": 0.05,
+      "noisePosAmplitudes": [
+        0.03,
+        0.1,
+        0.03
+      ],
+      "noisePosSeeds": [
+        0,
+        1,
+        0
+      ],
+      "noiseRotAmplitudes": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "BPName": "timeline_2142301",
+  "NodeID": 1,
+  "UID": "d62a301e-d5d0-4d37-bc93-e12a81c597e0",
+  "eventIds": [
+    16,
+    7
+  ],
+  "layer": "Base",
+  "length": 5
+}

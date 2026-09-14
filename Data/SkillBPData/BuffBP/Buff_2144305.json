@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "dmg_wind_dec_ratio": 0
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2144305,
+    "dmg_wind_dec_ratio": "param0",
+    "type": 1
+  },
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_2144305",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

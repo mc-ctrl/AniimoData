@@ -1,0 +1,50 @@
+{
+  "BPName": "ability_11949901",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 1,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11949901001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ExStart",
+    "Skill_ExLoop",
+    "Skill_ExEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10194_Mon_Skill_GreatSword_Loop",
+    "Eff_Parmon_10194_InEx_Sword_02",
+    "Eff_Parmon_10194_Skill_EX_Sword_04",
+    "Eff_Parmon_10194_Mon_Skill_GreatSword_Chop",
+    "Eff_Parmon_10194_Mon_Skill_GreatSword_Ground",
+    "Eff_Common_Parmon_Switch",
+    "Eff_Parmon_10194_Mon_Skill_AbsorbWater_Start",
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_10194_Mon_Teleport",
+    "Eff_Parmon_10194_Mon_Teleport01",
+    "Eff_parmon_Rogue_Boss_Indicator_Ex"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10300151
+}

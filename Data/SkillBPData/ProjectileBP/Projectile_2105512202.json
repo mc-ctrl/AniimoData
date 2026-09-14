@@ -1,0 +1,127 @@
+{
+  "duration": 2,
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreActorCollision": true,
+  "heightAboveGround": 0.2,
+  "acceleration": 0,
+  "allowHitCaster": true,
+  "BPName": "timeline_2105512",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10055_OutEx_Wolves_01",
+  "calcResultNodeId": 21,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "ignoreNonCurPetCollision": true,
+  "maxHeightOffset": 5,
+  "onProjectileTickIds": [
+    23
+  ],
+  "moveSpeed": 10,
+  "stickPitchMaxOffset": 40,
+  "stickGravity": 0.5,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.1,
+  "maxHitNum": 1,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "77": {
+      "name": "stopSoundStr",
+      "UID": "129dd557-c11f-4253-91ab-0beffe8684d3",
+      "soundId": "SFX_Combat_Parmon_10055_Skill_Ex02",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "23": {
+      "calcResultNodeId": 21,
+      "name": "actOnTargets",
+      "UID": "ea5e424a-7335-4c76-ae40-c523f1c07096",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        21
+      ],
+      "impulseId": 3002,
+      "NodeID": 23
+    },
+    "73": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "73132f2f-838e-43b3-b8b5-358b8c5559a4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10055_Skill_Ex02",
+      "NodeID": 73
+    },
+    "21": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2105512,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "8ef95468-a0e7-4f5d-930b-a48ddeccc5aa",
+      "target": "TARGET",
+      "NodeID": 21,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "SFX_Combat_Parmon_10055_Skill_Ex04",
+        "hitCameraShakeId": 30304,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10055_OutEx_Nboom",
+            "rotAngle": 90,
+            "posMode": "RootPos"
+          }
+        ],
+        "elementType": 12,
+        "impulseId": 3002,
+        "hitEffectByAction": {
+          "NodeID": 0
+        }
+      }
+    }
+  },
+  "onProjectileFinishIds": [
+    77
+  ],
+  "impulseId": 3002,
+  "onProjectileStartIds": [
+    73
+  ]
+}

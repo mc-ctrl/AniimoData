@@ -1,0 +1,474 @@
+[
+  {
+    "addOrderNums": [
+      1
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ]
+    ],
+    "blue": 0,
+    "freeRefresh": 5,
+    "green": 1,
+    "maxOrderCount": 5,
+    "orange": 0,
+    "purple": 0,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      1,
+      1
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.090909091,
+    "freeRefresh": 5,
+    "green": 0.909090909,
+    "maxOrderCount": 6,
+    "orange": 0,
+    "purple": 0,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      1,
+      1
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.166666667,
+    "freeRefresh": 5,
+    "green": 0.833333333,
+    "maxOrderCount": 6,
+    "orange": 0,
+    "purple": 0,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      2,
+      1
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.230769231,
+    "costRefresh": 5,
+    "freeRefresh": 5,
+    "green": 0.769230769,
+    "maxOrderCount": 7,
+    "orange": 0,
+    "purple": 0,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      2,
+      1
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.214285714,
+    "costRefresh": 5,
+    "freeRefresh": 5,
+    "green": 0.785714286,
+    "maxOrderCount": 7,
+    "orange": 0,
+    "purple": 0,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      2,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.329545455,
+    "costRefresh": 10,
+    "freeRefresh": 5,
+    "green": 0.568181818,
+    "maxOrderCount": 9,
+    "orange": 0,
+    "purple": 0.102272727,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      2,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.537931034,
+    "costRefresh": 10,
+    "freeRefresh": 5,
+    "green": 0.310344828,
+    "maxOrderCount": 9,
+    "orange": 0.006896552,
+    "purple": 0.144827586,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      2,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.612121212,
+    "costRefresh": 15,
+    "freeRefresh": 5,
+    "green": 0.212121212,
+    "maxOrderCount": 9,
+    "orange": 0.006060606,
+    "purple": 0.16969697,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      3,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.785714286,
+    "costRefresh": 15,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 11,
+    "orange": 0.010204082,
+    "purple": 0.204081633,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      3,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.780487805,
+    "costRefresh": 20,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 11,
+    "orange": 0.008130081,
+    "purple": 0.211382114,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      3,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.736842105,
+    "costRefresh": 20,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 11,
+    "orange": 0.042105263,
+    "purple": 0.221052632,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      4,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.529953917,
+    "costRefresh": 25,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 13,
+    "orange": 0.092165899,
+    "purple": 0.377880184,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      4,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0.260663507,
+    "costRefresh": 25,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 13,
+    "orange": 0.156398104,
+    "purple": 0.582938389,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      4,
+      2
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0,
+    "costRefresh": 30,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 13,
+    "orange": 0.223602484,
+    "purple": 0.776397516,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      4,
+      3
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0,
+    "costRefresh": 30,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 15,
+    "orange": 0.210526316,
+    "purple": 0.789473684,
+    "rainbow": 0
+  },
+  {
+    "addOrderNums": [
+      4,
+      3
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0,
+    "costRefresh": 35,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 15,
+    "orange": 0.346534653,
+    "purple": 0.574257426,
+    "rainbow": 0.079207921
+  },
+  {
+    "addOrderNums": [
+      4,
+      3
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0,
+    "costRefresh": 35,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 15,
+    "orange": 0.474358974,
+    "purple": 0.391025641,
+    "rainbow": 0.134615385
+  },
+  {
+    "addOrderNums": [
+      5,
+      3
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0,
+    "costRefresh": 40,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 17,
+    "orange": 0.604878049,
+    "purple": 0.224390244,
+    "rainbow": 0.170731707
+  },
+  {
+    "addOrderNums": [
+      5,
+      3
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0,
+    "costRefresh": 40,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 17,
+    "orange": 0.745454545,
+    "purple": 0.027272727,
+    "rainbow": 0.227272727
+  },
+  {
+    "addOrderNums": [
+      5,
+      3
+    ],
+    "addOrderTimes": [
+      [
+        1,
+        "4:00:00"
+      ],
+      [
+        1,
+        "16:00:00"
+      ]
+    ],
+    "blue": 0,
+    "costRefresh": 45,
+    "freeRefresh": 5,
+    "green": 0,
+    "maxOrderCount": 17,
+    "orange": 0.72826087,
+    "purple": 0.032608696,
+    "rainbow": 0.239130435
+  }
+]

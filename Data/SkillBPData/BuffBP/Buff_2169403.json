@@ -1,0 +1,57 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2169403",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "calcId": 2169403,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "40bf7408-bc2d-4e30-b221-019f8ffc2ee9",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "actionIds": [
+        9,
+        13
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "37d05619-bba3-48b9-b7d4-e3e2608f20ea",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "9": {
+      "value": {
+        "calcId": 2169403,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "40bf7408-bc2d-4e30-b221-019f8ffc2ee9",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "de295a31-010e-4107-9a39-ef005464622a",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "13": {
+      "templateId": 2169403,
+      "name": "removeBuffLayer",
+      "UID": "e8cd5977-c402-4661-9251-0c300e861b7f",
+      "layer": 1,
+      "target": "OWNER",
+      "NodeID": 13
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

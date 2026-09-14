@@ -1,0 +1,328 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "8bd11b46-f43b-491e-9cdb-d78b6f28553f",
+      "effectId": "Eff_Parmon_10444_Skill_Grasp",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "f9c92ab6-6f34-478f-8267-0a29dd37ec43",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 36
+      },
+      "NodeID": 37
+    },
+    "39": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "abbfdab6-6023-4b44-9837-87f70efa3d8e",
+      "effectId": "Eff_Parmon_10444_Skill_Grasp_Model",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "472ce002-9f3a-4228-8d78-3b839b4431f9",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 38
+      },
+      "NodeID": 39
+    },
+    "6": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 4,
+      "NodeID": 6,
+      "UID": "df2bbd98-78df-42ba-8e9b-f9d2b23a1594",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6.5,
+            50,
+            2,
+            2
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3003,
+      "actionIds": [
+        4
+      ]
+    },
+    "41": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "bbcffb27-7ab2-427f-b6a7-badabf9f66b8",
+      "effectId": "Eff_Parmon_10444_Skill_Grasp_01",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "f5447cab-0ff3-48b3-91f6-ace5f3ef8064",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 40
+      },
+      "NodeID": 41
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          41,
+          45,
+          47,
+          49,
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 43,
+      "UID": "4eb752d1-790e-481e-ba46-15feac795256"
+    },
+    "8": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "21": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 19,
+      "NodeID": 21,
+      "UID": "8e7676de-6368-4d75-9433-44a1036021d1",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6.5,
+            50,
+            2,
+            2
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3003,
+      "actionIds": [
+        19,
+        27
+      ]
+    },
+    "4": {
+      "name": "calcResult",
+      "overrideCaster": "MASTER",
+      "calcInfo": {
+        "instant_dmg_rate_v": 0
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10303,
+        "hitFrameFreezeId": 10014,
+        "elementType": 12,
+        "isPlayRadialBlur": true,
+        "impulseId": 3003,
+        "defaultHitEffect": "Eff_Hit_Dark_Blunt"
+      },
+      "UID": "536f7a56-acfd-45da-b24c-c09c067bcd0f",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 2144401,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "9523a01c-1bbc-4fc5-8025-234df9be885f",
+      "effectId": "Eff_Parmon_10444_Skill_Grasp_02",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "a7ee9c93-ca45-4338-bd97-037829611f69",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 44
+      },
+      "NodeID": 45
+    },
+    "47": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "a37c10f9-9166-4b7f-8ef5-80e14a06193f",
+      "effectId": "Eff_Parmon_10444_Skill_Grasp_03",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "3bc7c1a2-ee5c-457a-b305-b9ec5aac4999",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 46
+      },
+      "NodeID": 47
+    },
+    "27": {
+      "duration": 0.1,
+      "name": "forceDisplacement",
+      "UID": "67c1f007-b8d2-46e9-9326-d5dd6f8b9cc1",
+      "target": "TARGET",
+      "trackTarget": true,
+      "ignoreKnockST": true,
+      "displacementDir": "IN",
+      "speed": 30,
+      "displacementTarget": "CASTER",
+      "NodeID": 27
+    },
+    "49": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "1d7f60d6-a8d7-4280-8ad2-5e44d40dbfef",
+      "effectId": "Eff_Parmon_10444_Skill_Grasp_04",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "0a622015-6d66-4fcf-bec4-e405ff55d03b",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 48
+      },
+      "NodeID": 49
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.55,
+      "NodeID": 23,
+      "UID": "e1e0d327-f40b-4f07-b0a6-85b4eb01ebd0"
+    },
+    "19": {
+      "name": "calcResult",
+      "overrideCaster": "MASTER",
+      "calcInfo": {
+        "instant_dmg_rate_v": 0
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10303,
+        "hitFrameFreezeId": 10014,
+        "elementType": 12,
+        "isPlayRadialBlur": true,
+        "impulseId": 3003,
+        "defaultHitEffect": "Eff_Hit_Dark_Blunt"
+      },
+      "UID": "14e48191-5cfd-4bd2-b23f-8eb6e83bf7b4",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 2144401,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "NodeID": 19
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "99549c04-b2b5-43da-871a-800952224afe",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10444_Skill_Grasp",
+      "NodeID": 33
+    },
+    "51": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "f04925a2-1dc3-4967-a84c-e2693229ba7f",
+      "effectId": "Eff_Parmon_10444_Skill_Grasp_05",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "2d61b861-7a2e-47b6-ad78-6c07ee127e2d",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 50
+      },
+      "NodeID": 51
+    },
+    "35": {
+      "UID": "a6e8062f-4b63-4e6c-b015-941252c51964",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37,
+          39,
+          33
+        ]
+      },
+      "NodeID": 35
+    }
+  },
+  "BPName": "timeline_2144401",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    8,
+    35,
+    43,
+    23
+  ],
+  "layer": "Base",
+  "length": 99999
+}

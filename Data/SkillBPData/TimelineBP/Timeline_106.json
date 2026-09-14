@@ -1,0 +1,190 @@
+{
+  "nodeMap": {
+    "6": {
+      "UID": "8512758d-9220-4c75-9935-56f7e9971e67",
+      "target": "OWNER",
+      "name": "playHitSound",
+      "NodeID": 6
+    },
+    "7": {
+      "UID": "1ae8dcd0-ffe1-444a-a589-03bbc7060bf4",
+      "target": "OWNER",
+      "name": "applyHitModelShake",
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "bc191135-bf35-4410-abc9-50bbd180defa",
+      "target": "CASTER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "53b3f383-e5e8-44bc-a74f-ed7b18733e5f",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 9
+    },
+    "11": {
+      "lockTarget": "CASTER",
+      "name": "lockTarget",
+      "UID": "7459bf3c-b55a-408a-b471-4bec4a49f2de",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "name": "playHitAnimation",
+      "UID": "14d42132-2ff0-42c7-b204-6a936c103de6",
+      "target": "OWNER",
+      "NodeID": 20,
+      "animId": "Hit_Stand"
+    },
+    "21": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "5935fd7d-c9f9-4f98-9308-5a762586992d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "22": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "ce22b28c-aade-4a19-b68b-cfa708a7efa3",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21
+      ],
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "009b64ba-a20d-4bd7-87b3-245df6e113ed",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          6,
+          7,
+          9,
+          8,
+          10,
+          11,
+          22,
+          13
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "3b2a7215-40ff-40db-8551-3dfc3a74d049",
+      "name": "isPlayerInCarryEggState",
+      "carryEggState": 1,
+      "NodeID": 24
+    },
+    "10": {
+      "UID": "1b996729-56a1-4ed2-95a7-a3ac027657f5",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "1e3d4fd3-b6bf-431a-b26e-bcafb34ed60d",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "inHitBackswing": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "d8242bbc-879d-4792-8305-89a3ad6dfdd6",
+      "name": "isPlayerInCarryEggState",
+      "carryEggState": 2,
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "a320c7a9-4f31-4210-991c-36293e81745f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 16
+    },
+    "26": {
+      "name": "playHitAnimation",
+      "UID": "4cddf7aa-f848-43fa-9600-3abfb72bfe95",
+      "target": "OWNER",
+      "NodeID": 26,
+      "animId": "HEgg_Hit_Stand"
+    },
+    "18": {
+      "UID": "a71c3475-82bf-48bc-a775-cb11d86fc725",
+      "name": "setMask",
+      "mask": {
+        "inHitBackswing": 1
+      },
+      "NodeID": 18
+    },
+    "23": {
+      "name": "playHitAnimation",
+      "UID": "ff43e11e-7a38-4d0f-a4dd-b913a3c5a701",
+      "target": "OWNER",
+      "NodeID": 23,
+      "animId": "BEgg_Hit_Stand"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 19,
+      "UID": "45461dbf-5779-4b93-b12a-959aacaab50d"
+    },
+    "2": {
+      "UID": "806b906b-f22f-471c-8ab9-61b1f4c4b7f5",
+      "target": "OWNER",
+      "name": "playHitEffect",
+      "NodeID": 2
+    },
+    "13": {
+      "UID": "d953bc71-8d8f-4818-a400-8326f2b71747",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 1,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 13
+    }
+  },
+  "BPName": "timeline_106",
+  "NodeID": 1,
+  "UID": "94a32cb9-fab5-46d7-8623-9f7017d1e0a5",
+  "eventIds": [
+    4,
+    19,
+    16
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

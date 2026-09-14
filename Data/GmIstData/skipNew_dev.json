@@ -1,0 +1,205 @@
+{
+  "steps": [
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "PETENTRY"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁宠物管理"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "MAP"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁地图"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "PETRESEARCH"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁研究手册"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "PLAYERENHANCEMENT"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁角色管理"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "SPECIALTRAIN"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁特训计划"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "state": 1,
+        "uid": 0,
+        "name": "DAYNIGHTCHANGE"
+      },
+      "mid": "setFunctionUnlock",
+      "name": "解锁昼夜"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 2602001,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "2602"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 2602112,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "2602"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 2602114,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "2602"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 3707004,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "3707"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 3502001,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "3502"
+    },
+    {
+      "delay": 1,
+      "params": {
+        "questId": 3502110,
+        "uid": 0,
+        "ignorePerformanceEvents": 2,
+        "isForceSubmit": 1
+      },
+      "mid": "playerQuestCompleteAndSubmit",
+      "name": "3502"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 1,
+        "uid": 0,
+        "eventName": "forceChangeCombatPet",
+        "eventParam": "{0}"
+      },
+      "mid": "doEventByData",
+      "name": "显示队列"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "setCurPetVisible",
+        "eventParam": "{1}"
+      },
+      "mid": "doEventByData",
+      "name": "宠物显示"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "learnSkill",
+        "eventParam": "{10000,1}"
+      },
+      "mid": "doEventByData",
+      "name": "解锁双子合体"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "skillState",
+        "eventParam": "{{'Q','E','R','T'},1}"
+      },
+      "mid": "doEventByData",
+      "name": "解锁技能"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "value": 800
+      },
+      "mid": "addPlayerExp",
+      "name": "增加经验"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "delay": 0,
+        "uid": 0,
+        "eventName": "teleportScenePosition",
+        "eventParam": "{3000,52418043,1}"
+      },
+      "mid": "doEventByData",
+      "name": "传送地脉树"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "uid": 0,
+        "index": 2
+      },
+      "mid": "initTwinPetChoice",
+      "name": "选择月辉狐"
+    }
+  ],
+  "name": "跳过全部新手-月辉狐"
+}

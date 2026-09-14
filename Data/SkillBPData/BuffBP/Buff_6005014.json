@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6005014",
+  "calcInfoByLuaConfig": {
+    "id": 6005014,
+    "type": 1,
+    "element_resist_add_ratio": "param3",
+    "element_restraint_add_ratio": "param2",
+    "puppet_element_restraint_add_ratio": "param0",
+    "puppet_element_resist_add_ratio": "param1"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

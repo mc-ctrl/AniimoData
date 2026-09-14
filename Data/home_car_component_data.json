@@ -1,0 +1,74 @@
+{
+  "3": {
+    "homeLevel": 1,
+    "name": 1414319243,
+    "partTypeId": 1,
+    "partIcon": "$ui_item_4040011.png",
+    "floor": 1,
+    "attachId": "GreenPlants"
+  },
+  "4": {
+    "homeLevel": 2,
+    "name": 1145966329,
+    "partTypeId": 1,
+    "partIcon": "$ui_item_4040012.png",
+    "floor": 1,
+    "attachId": "Kitchen"
+  },
+  "6": {
+    "homeLevel": 3,
+    "name": 1857566992,
+    "partTypeId": 1,
+    "partIcon": "$ui_item_4040014.png",
+    "floor": 1,
+    "attachId": "HandicraftTable"
+  },
+  "10": {
+    "homeLevel": 6,
+    "name": 1101529453,
+    "partTypeId": 2,
+    "partIcon": "$ui_item_4040018.png",
+    "floor": 2,
+    "attachId": "Telescope"
+  },
+  "7": {
+    "homeLevel": 5,
+    "name": 1077771480,
+    "partTypeId": 2,
+    "partIcon": "$ui_item_4040015.png",
+    "floor": 2,
+    "attachId": "ElectricityResearch"
+  },
+  "8": {
+    "homeLevel": 6,
+    "name": 1661446355,
+    "partTypeId": 2,
+    "partIcon": "$ui_item_4040016.png",
+    "floor": 2,
+    "attachId": "MutationResearch"
+  },
+  "9": {
+    "homeLevel": 6,
+    "name": 1813287922,
+    "partTypeId": 2,
+    "partIcon": "$ui_item_4040017.png",
+    "floor": 2,
+    "attachId": "DnaOrnament"
+  },
+  "5": {
+    "homeLevel": 2,
+    "name": 1676164497,
+    "partTypeId": 1,
+    "partIcon": "$ui_item_4040013.png",
+    "floor": 1,
+    "attachId": "CrystalOrnament"
+  },
+  "2": {
+    "homeLevel": 1,
+    "name": 1758469550,
+    "partTypeId": 1,
+    "partIcon": "$ui_item_4040010.png",
+    "floor": 1,
+    "attachId": "LifeDecoration"
+  }
+}

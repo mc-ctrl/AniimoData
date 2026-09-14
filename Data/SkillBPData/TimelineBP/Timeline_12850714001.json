@@ -1,0 +1,112 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21,
+          2,
+          32,
+          33
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "803914b6-9d7b-40fb-8314-353cad0d2ce7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "cd80f15e-6ef6-4b62-bbbe-23a2fca94761",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 10
+    },
+    "16": {
+      "UID": "f86a0968-7cd1-48a5-8b2b-20dfe201be94",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "12": {
+      "UID": "bda93d8c-ebc9-459d-80a6-1d322f8413f1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 12
+    },
+    "21": {
+      "UID": "3e7a3196-9b31-4080-b0f6-1fb6d463a34e",
+      "name": "stopBurrow",
+      "NodeID": 21
+    },
+    "18": {
+      "UID": "3057404a-3f59-4b58-9534-42567c26bfeb",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b142b7ec-cd2e-46a8-8a71-7a58bc7a60ce",
+      "target": "OWNER",
+      "NodeID": 32,
+      "animId": "Skill_BurrowSkill_DashOut_Stay"
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "77c7c749-4709-4dfe-aa3b-93ea3d78bad4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_BurrowSkill_CombatExit",
+      "NodeID": 33
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 20,
+      "UID": "6943ae87-2d8b-4661-a947-5fd06e58fef7"
+    },
+    "2": {
+      "buffId": 2116101,
+      "name": "removeBuff",
+      "UID": "27a1626f-c10d-4383-b4a3-bacc52e24a5f",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "ability_12850714",
+  "NodeID": 6,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    12,
+    16,
+    20,
+    4
+  ],
+  "layer": "Base",
+  "length": 2.75
+}

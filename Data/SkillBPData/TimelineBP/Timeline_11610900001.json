@@ -1,0 +1,83 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 4
+    },
+    "66": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          64
+        ]
+      },
+      "NodeID": 66
+    },
+    "14": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "23": {
+      "UID": "b00ccb87-a28b-490b-a32e-54efc6724c03",
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 23
+    },
+    "64": {
+      "duration": -1,
+      "name": "burrow",
+      "UID": "7d6fcb0a-b67b-4618-8354-af99a93e15e7",
+      "velocity": 5,
+      "enableTurnInstant": false,
+      "enterBuffIds": [
+        2116101
+      ],
+      "exitCastAbilityId": 11610210,
+      "switchBurrowStateTime": 0.7,
+      "switchToAbilityId": 11610210,
+      "NodeID": 64
+    },
+    "6": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "12": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_11610900",
+  "NodeID": 8,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    6,
+    14,
+    66,
+    23
+  ],
+  "layer": "Base",
+  "length": 1.65
+}

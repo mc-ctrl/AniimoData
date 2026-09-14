@@ -1,0 +1,289 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "39cd20cc-7ee7-42ef-8fd8-7175de34a8b1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          29,
+          42,
+          40
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "UID": "8aa297cc-d89b-47e4-8724-53bb6abd688b",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 38
+    },
+    "40": {
+      "fullbodyAnimId": "Attack01",
+      "upperAnimId": "Attack01_Upper",
+      "NodeID": 40,
+      "UID": "f527fbc3-e41c-47de-ba83-c1056bb738e3",
+      "name": "setWalkingAttackAnimIndex",
+      "index": 1
+    },
+    "42": {
+      "name": "setNextComboAbilityId",
+      "UID": "5e05be85-c939-440a-8969-fe62bc50da55",
+      "target": "OWNER",
+      "NodeID": 42,
+      "abilityId": 910000105
+    },
+    "35": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "a12cc2d5-4a12-4509-87e9-ec9f3bac983a",
+      "target": "OWNER",
+      "val": {
+        "UID": "8c1d21eb-c20d-490f-b802-05b01ae3b47e",
+        "target": "TARGET_HIT",
+        "name": "getTargetId",
+        "NodeID": 34
+      },
+      "NodeID": 35
+    },
+    "31": {
+      "actionIds": [
+        35
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "280c15b5-f801-48db-82a9-e596434f2bbe",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        33
+      ],
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "bc352751-fd41-4451-9c89-92e732a0c27c",
+      "name": "setMask",
+      "mask": {
+        "inCombo": 1,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.33,
+      "NodeID": 12,
+      "UID": "180d69ee-4622-46eb-a258-a75a69218adb"
+    },
+    "3": {
+      "UID": "c6751ec8-058d-4b72-8b79-371c917e1af8",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1,
+        "canMove": 1
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "actionIds": [
+        22
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "5d43413f-17f2-4c31-b515-a0b56c97647f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 23
+    },
+    "14": {
+      "UID": "f3a27fa0-2ba6-416a-ad70-5a14cf8b54b2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 14
+    },
+    "37": {
+      "name": "getTargetOffsetPos",
+      "UID": "720715b5-aaa3-4046-99bf-004a06a19cbb",
+      "target": "OWNER",
+      "offset": [
+        0,
+        1.113,
+        20
+      ],
+      "NodeID": 37
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.63,
+      "NodeID": 15,
+      "UID": "c09c9c5a-c8fe-4f65-b499-47989e154a16"
+    },
+    "22": {
+      "offsetXYZ": [
+        -0.139,
+        0.913,
+        0
+      ],
+      "templateId": 910000104001,
+      "name": "createProjectile",
+      "UID": "ced6f787-5ae5-4559-a046-e8612be00b83",
+      "rotation": "ToTarget",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "77c06e84-1062-4d6b-8091-1d2b67ee3c39",
+        "target": "OWNER",
+        "NodeID": 36
+      },
+      "projectileType": "Tracking",
+      "NodeID": 22,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          28,
+          31,
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.233,
+      "NodeID": 26,
+      "UID": "52a28446-a36f-46b5-9d43-6910210f8126"
+    },
+    "27": {
+      "offsetXYZ": [
+        0.139,
+        0.913,
+        0
+      ],
+      "templateId": 910000104002,
+      "name": "createProjectile",
+      "UID": "df5a2773-5694-41ee-aa5e-ba40e97dd83d",
+      "rotation": "ToTarget",
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "720715b5-aaa3-4046-99bf-004a06a19cbb",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1.113,
+          20
+        ],
+        "NodeID": 37
+      },
+      "projectileType": "Tracking",
+      "NodeID": 27,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "28": {
+      "eventName": "Msg_EnemyBreak_Exit",
+      "name": "sendAIMsg",
+      "UID": "ef73c014-e8f3-4df6-b23d-440892e0d7db",
+      "target": "CURPET",
+      "NodeID": 28
+    },
+    "29": {
+      "name": "playSoundStr",
+      "UID": "7be18a89-9d80-4398-a7b9-a96f8102230e",
+      "soundId": "SFX_Combat_Boy_Attack01",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "5f247669-bc06-4496-b433-8dcf3476f671",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 30
+    },
+    "32": {
+      "name": "getTargetOffsetPos",
+      "UID": "f7d66f3d-706a-460f-a231-6d84da72424f",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        10
+      ],
+      "NodeID": 32
+    },
+    "33": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "fda74abb-8abc-428c-b59a-542baa923a7f",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "f7d66f3d-706a-460f-a231-6d84da72424f",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          10
+        ],
+        "NodeID": 32
+      },
+      "NodeID": 33
+    },
+    "18": {
+      "UID": "2289ec3c-a83d-4a2c-99fb-4704a8a0f5ba",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 18
+    },
+    "17": {
+      "UID": "94232862-a83f-494f-ab2f-dfbb66897d6d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 17
+    }
+  },
+  "BPName": "ability_910000104",
+  "NodeID": 7,
+  "UID": "6a984e36-5ec3-493b-9208-7b701956c59d",
+  "eventIds": [
+    5,
+    12,
+    15,
+    26,
+    18
+  ],
+  "layer": "Base",
+  "length": 1.83
+}

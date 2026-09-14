@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10110300",
+  "NodeID": 1,
+  "UID": "4e40a413-2f7d-4573-8f5c-656237e8064b",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10110300001,
+      "name": "setCombatActionTimeline",
+      "UID": "17bde3ff-8402-486c-b411-c6ea1d0ebcce",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Gliding"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10011_Model_StarTail",
+    "Eff_Parmon_10011_Skill_Gliding_Bullet",
+    "Eff_Parmon_10011_Skill_Gliding_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 11100020
+}

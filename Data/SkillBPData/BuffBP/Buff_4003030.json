@@ -1,0 +1,216 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003030",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2030301,
+      "name": "createEntity",
+      "UID": "6ebce0eb-7778-40ed-b22c-211c615b0764",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 3,
+      "pos": "RANDOM_POINT"
+    },
+    "13": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "69d18616-4050-4d97-85a5-7ee9b6dab108",
+      "NodeID": 13,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "c3e1b30a-c45c-4a81-bd84-c9f4de6ed97c",
+          "target": "OWNER",
+          "NodeID": 14,
+          "attributeName": "bp_max_cur"
+        },
+        "name": "div",
+        "UID": "155dfd96-abb5-41b3-a7b6-8c1a56dd110a",
+        "NodeID": 12,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "253210d7-2b92-4730-8413-34b43a3fdcb5",
+          "target": "OWNER",
+          "NodeID": 11,
+          "attributeName": "bp_cur"
+        }
+      }
+    },
+    "6": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "bc32ed45-b486-4c17-ae91-acbb6dfcf801",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "calcId": 4003030,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 10,
+      "UID": "c8f6a515-a7c0-4e56-93f2-e818d06f46b5",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "calcId": 4003030,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "fc212350-b2cb-4176-a39c-9e96861218eb",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "targetPos": {
+        "UID": "9a472c6a-db05-4c3e-acf1-2600cb56adf3",
+        "name": "getBornPos",
+        "NodeID": 15
+      },
+      "radius": 20,
+      "UID": "f1f1aff4-527b-4f51-a4fa-3cc9f550e0e4",
+      "NodeID": 16,
+      "name": "randomPoint"
+    },
+    "8": {
+      "delay": {
+        "calcId": 4003030,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "fc212350-b2cb-4176-a39c-9e96861218eb",
+        "name": "getParamByLuaConfig"
+      },
+      "interval": {
+        "calcId": 4003030,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 10,
+        "UID": "c8f6a515-a7c0-4e56-93f2-e818d06f46b5",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "b0952a9d-189d-4abe-ab35-cce40243de7b",
+      "name": "buffStartThink",
+      "NodeID": 8
+    },
+    "17": {
+      "buffId": 4003030,
+      "name": "removeBuff",
+      "UID": "cbd9c538-da4d-4f24-869e-beedc0b63616",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "23": {
+      "key": "TimeSuolian01",
+      "name": "setServerCacheVal",
+      "UID": "a7503aac-9f8d-429f-b7d0-cb18a9b563a5",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "05bb09c4-983b-4f1f-8d58-61e74e8b1669",
+        "NodeID": 22,
+        "lValue": {
+          "key": "TimeSuolian01",
+          "name": "getServerCacheVal",
+          "UID": "4f81062c-f4f2-4cb1-9891-a3803fd1338a",
+          "target": "OWNER",
+          "NodeID": 20
+        }
+      },
+      "NodeID": 23
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "6ce90ecb-008e-441a-9aea-b2e2de9a7d93",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "21": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "90e46e43-c41e-4fff-a858-8e7d569b3419",
+      "NodeID": 21,
+      "lValue": {
+        "key": "TimeSuolian01",
+        "name": "getServerCacheVal",
+        "UID": "4f81062c-f4f2-4cb1-9891-a3803fd1338a",
+        "target": "OWNER",
+        "NodeID": 20
+      }
+    },
+    "19": {
+      "key": "TimeSuolian01",
+      "name": "setServerCacheVal",
+      "UID": "eef6035a-8040-4453-9670-94c33af080a7",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 19
+    },
+    "5": {
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "3a714321-8fec-4b6e-b556-d6fc7bf144a8",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        23,
+        16,
+        3
+      ]
+    },
+    "12": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "c3e1b30a-c45c-4a81-bd84-c9f4de6ed97c",
+        "target": "OWNER",
+        "NodeID": 14,
+        "attributeName": "bp_max_cur"
+      },
+      "name": "div",
+      "UID": "155dfd96-abb5-41b3-a7b6-8c1a56dd110a",
+      "NodeID": 12,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "253210d7-2b92-4730-8413-34b43a3fdcb5",
+        "target": "OWNER",
+        "NodeID": 11,
+        "attributeName": "bp_cur"
+      }
+    }
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    18,
+    8
+  ]
+}

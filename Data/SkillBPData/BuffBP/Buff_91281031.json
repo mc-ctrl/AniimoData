@@ -1,0 +1,239 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91281031",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    5
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    33
+  ],
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        14,
+        12
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "384703d5-c700-40cc-92bf-17c44fb59acb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 5
+    },
+    "7": {
+      "rValue": 4,
+      "name": "equal",
+      "UID": "ef0bf7e4-2748-4201-9333-c547ef9160c7",
+      "NodeID": 7,
+      "lValue": {
+        "UID": "5e677585-7102-480b-844f-1cd997ef6298",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 6
+      }
+    },
+    "8": {
+      "actionIds": [
+        17,
+        15
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "1a29e88b-64a8-4088-8b6b-9fb6a2a28703",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 8
+    },
+    "11": {
+      "actionIds": [
+        20,
+        18
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "c23bd304-47e9-4e5b-811d-847850481860",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "c2425f06-0c47-4f8f-91c1-43f52fd6a00f",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10285_speciality_Lv2",
+      "NodeID": 20
+    },
+    "12": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 12,
+      "UID": "15782637-b4e3-4f68-81a2-f070e6e388da",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10285_speciality_Lv5",
+      "name": "playPreset"
+    },
+    "22": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "cfbd5385-4e58-49af-90ee-5a9c4460599d",
+      "NodeID": 22,
+      "lValue": {
+        "UID": "38e85559-0b08-429e-8aec-4403736a2d0c",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 21
+      }
+    },
+    "4": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "1d6e88f1-1776-4144-a7e7-001ed866375a",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "25acb196-774a-4c6d-9d17-b045f49d9bed",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 3
+      }
+    },
+    "24": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 24,
+      "UID": "5d559a08-9208-433b-886e-b8f21e5393fc",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10285_speciality_Lv2",
+      "name": "playPreset"
+    },
+    "14": {
+      "UID": "46c6f625-9cab-468f-8536-3330d4b8c0fa",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10285_speciality_Lv4",
+      "NodeID": 14
+    },
+    "10": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "6dd9dcb4-a2c8-4b64-8eb3-eaa20c56555a",
+      "NodeID": 10,
+      "lValue": {
+        "UID": "4fc00f94-9847-4d8e-86b6-484cd2de53eb",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 15,
+      "UID": "7035828b-1770-48dc-8c56-2f420ff33d43",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10285_speciality_Lv4",
+      "name": "playPreset"
+    },
+    "26": {
+      "UID": "95ca726f-e028-4890-9e44-8c9855f461e3",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10285_speciality_Lv1",
+      "NodeID": 26
+    },
+    "30": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 30,
+      "UID": "5b36b783-f4d2-43d8-aa8b-826234fc6335",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10285_speciality_Lv1",
+      "name": "playPreset"
+    },
+    "17": {
+      "UID": "3dc7457a-0828-4169-aa26-2a7864d85014",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10285_speciality_Lv3",
+      "NodeID": 17
+    },
+    "29": {
+      "actionIds": [
+        32,
+        30
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "3c975945-5168-4af5-9f70-9d93edd9313e",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "18": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 18,
+      "UID": "c4faba5c-6c0d-4417-b619-74dc29d37016",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10285_speciality_Lv3",
+      "name": "playPreset"
+    },
+    "32": {
+      "duration": 5,
+      "disableWhenFinished": false,
+      "NodeID": 32,
+      "UID": "a29f55f8-7e10-4717-9b72-8e0739ae4101",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10285_speciality_Lv1_start",
+      "name": "playPreset"
+    },
+    "33": {
+      "duration": 5,
+      "disableWhenFinished": false,
+      "NodeID": 33,
+      "UID": "56f6d58a-9e9b-4e96-9983-7bd69d65bd74",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10285_speciality_Lv1_end",
+      "name": "playPreset"
+    },
+    "28": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "06faf983-ce30-48ce-a80f-60d8d347e0a7",
+      "NodeID": 28,
+      "lValue": {
+        "UID": "056d4f7e-581e-48b0-a2b9-ba3a28fd4626",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 27
+      }
+    },
+    "23": {
+      "actionIds": [
+        26,
+        24
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "ef0b677e-5ed2-43df-9b6d-52f161520a16",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 23
+    }
+  }
+}

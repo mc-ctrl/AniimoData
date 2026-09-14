@@ -1,0 +1,29 @@
+{
+  "64959768": {
+    "areaType": 0,
+    "chunk": 1018849,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 64959768,
+    "owner": "路司机",
+    "position": [
+      -13.78,
+      6.37,
+      -126.38
+    ],
+    "markIconSpawnerId": 0
+  }
+}

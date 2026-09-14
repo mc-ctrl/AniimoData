@@ -1,0 +1,151 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d48a4d8f-775c-40fe-8b49-2686df90faff",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10083_skill_greenfield_attack",
+      "NodeID": 22
+    },
+    "4": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 17,
+      "NodeID": 4,
+      "UID": "80fa910b-0d1a-4e71-99ce-eea6c2349327",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1.5,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5001,
+      "actionIds": [
+        17
+      ]
+    },
+    "6": {
+      "action": {
+        "actionIds": [
+          4,
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 6,
+      "UID": "a2492c42-80fb-467d-87e8-661a55235b7b"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6c5c22f1-4efc-4784-9980-3f5f0c1f15f3",
+      "effectId": "Eff_Parmon_10083_Skill_GreenField_Attack_02",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "300edf93-30b8-47cd-9830-807604184fc9",
+      "effectId": "Eff_Parmon_10083_Skill_GreenField_Field",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1,
+        "instant_dmg_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101,
+        "hitFrameFreezeId": 10101,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 5001
+      },
+      "UID": "c4058048-838b-4e43-aadd-187beaed2206",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 17
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 9,
+      "UID": "7488be00-dafe-4c4e-ad55-0f9c066ff1e4"
+    },
+    "21": {
+      "UID": "007ec444-90f4-4d44-8b3f-efa21370f00a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 21
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ae212fcb-3b2d-43b0-9021-acf1f57cbefa",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10083_skill_greenfield_prepare",
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "e82352e0-7672-4d92-a7e5-f4f489ccd539",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2108101",
+  "NodeID": 1,
+  "UID": "99b31ea0-fa4f-4b75-8de1-f53cf69192fc",
+  "eventIds": [
+    12,
+    6,
+    9,
+    21
+  ],
+  "layer": "Base",
+  "length": 2
+}

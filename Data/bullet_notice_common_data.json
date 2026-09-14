@@ -1,0 +1,12 @@
+{
+  "1001": {
+    "icon": "$UI_Icon_FunMenu_Boss.png",
+    "name": 1368050758,
+    "speed": 4,
+    "channel": [
+      4
+    ],
+    "ignorRemoveChannel": 1,
+    "txt": 1548212110
+  }
+}

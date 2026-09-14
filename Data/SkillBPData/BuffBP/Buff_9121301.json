@@ -1,0 +1,72 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9121301",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 9,
+      "spEnergyInitV": 0,
+      "UID": "d872e8ef-ce77-40bf-85b8-5393c3457978",
+      "superBoosted": true,
+      "spEnergyMaxV": 9,
+      "name": "registerPassiveEnergyInfo",
+      "NodeID": 3,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 1
+    },
+    "9": {
+      "buffId": 91213012,
+      "name": "removeBuff",
+      "UID": "2f8fb826-6d27-4929-85ee-dfc1195861d1",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "5": {
+      "buffId": 91213011,
+      "name": "removeBuff",
+      "UID": "ef01487a-41b4-4dfa-bc0c-edc168129e28",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "11": {
+      "calcInfo": {
+        "passive_energy_cur": -9
+      },
+      "name": "calcResult",
+      "UID": "c9a4869e-1f16-4a66-b96b-f5920a19b24a",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "key": "delay",
+      "duration": 3,
+      "actionIds": [
+        5,
+        9,
+        11
+      ],
+      "NodeID": 7,
+      "UID": "cd5a0173-5e52-44d1-a1f0-a690c4ae2743",
+      "name": "addTimer"
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "4d53bfe6-0b9c-4286-a81a-f8d379bad180",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": [
+    3,
+    8
+  ]
+}

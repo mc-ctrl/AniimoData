@@ -1,0 +1,77 @@
+{
+  "BPName": "ability_12120139",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10600919,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12120139001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "140": {
+      "UID": "b1cb6935-14e4-42d8-8eb7-c6b9e7c0cb10",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 140
+    },
+    "137": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "dc95e573-5928-483a-bbf6-054a42ba66e5",
+      "target": "OWNER",
+      "NodeID": 137
+    },
+    "139": {
+      "UID": "b5825dc9-897c-4378-921f-75e1fa5207e7",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 139
+    },
+    "159": {
+      "name": "stopEffectStr",
+      "UID": "6b2c3e80-b76d-456e-b08a-55a9e6de99ed",
+      "effectId": "Eff_Parmon_10212_Skill_MagicFlower_Body_003",
+      "target": "OWNER",
+      "NodeID": 159
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 10,
+  "preloadAnims": [
+    "Skill_MagicFlower",
+    "Skill_MagicFlower2"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_MagicFlower_Body_001",
+    "Eff_Parmon_10212_Skill_MagicFlower_Bullet",
+    "Eff_Parmon_10211_Skill_MagicFlower_01",
+    "Eff_Parmon_10212_Skill_MagicFlower_Body_002",
+    "Eff_Parmon_10212_Skill_MagicFlower_Body_003",
+    "Eff_Parmon_10212_Skill_MagicFlower_Body"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "tags": {},
+  "onAbilityEndIds": [
+    137,
+    140,
+    139,
+    159
+  ],
+  "searchTargetRangeDown": 0.5,
+  "desc": "冲！",
+  "refBones": [
+    "Bip001 R Hand"
+  ]
+}

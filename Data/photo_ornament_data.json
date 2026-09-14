@@ -1,0 +1,80 @@
+{
+  "803001": {
+    "id": 803001,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$EPrefab_LVARK_Props_Ornament_026_281676903.prefab"
+  },
+  "803002": {
+    "id": 803002,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$EPrefab_LVARK_Props_Back_01_-173532799.prefab"
+  },
+  "803003": {
+    "id": 803003,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$EPrefab_LVARK_Props_Arrowhead_001_B_-445510584.prefab"
+  },
+  "803004": {
+    "id": 803004,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$EPrefab_LVARK_Props_Balloon_001_I_-1108774527.prefab"
+  },
+  "803005": {
+    "id": 803005,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$EPrefab_LVARK_Props_Billboard_001_D_-334152194.prefab"
+  },
+  "803006": {
+    "id": 803006,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$P_Item_SceneObject_Ark_Signboard_C.prefab"
+  },
+  "803007": {
+    "id": 803007,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$EPrefab_Flower_Fleldpoppy_001_-960498961.prefab"
+  },
+  "803008": {
+    "id": 803008,
+    "initialClaim": 1,
+    "showStatus": 1,
+    "res": "$EPrefab_Flower_Plants_Peony_01_C_1199571600.prefab"
+  },
+  "803010": {
+    "id": 803010,
+    "res": "$EPrefab_LVH_Tree_Maple_001_1818971592.prefab",
+    "showStatus": 1
+  },
+  "803011": {
+    "id": 803011,
+    "res": "$EPrefab_LVH_Tree_Willow_Ripe_-204243236.prefab",
+    "showStatus": 1
+  },
+  "803015": {
+    "id": 803015,
+    "res": "$EPrefab_LVH_Props_Carpet_014_-2112069543.prefab",
+    "showStatus": 1
+  },
+  "803016": {
+    "id": 803016,
+    "res": "$EPrefab_LVH_Props_DeskLamp_003_-174365805.prefab",
+    "showStatus": 1
+  },
+  "803017": {
+    "id": 803017,
+    "res": "$EPrefab_LVH_Props_BeeflowerStand_001_-430675957.prefab",
+    "showStatus": 1
+  },
+  "803009": {
+    "id": 803009,
+    "res": "$EPrefab_LVH_Flower_Hydrangea_001_995321886.prefab",
+    "showStatus": 1
+  }
+}

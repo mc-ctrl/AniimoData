@@ -1,0 +1,85 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91163013",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "27": {
+      "UID": "f8b42b3a-1fc9-4790-904e-dfa508d26138",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        26
+      ],
+      "NodeID": 27
+    },
+    "31": {
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "beae6091-96bf-43a9-9112-7f60b7804065",
+      "name": "doActionsByConditions",
+      "NodeID": 31,
+      "elseActionIds": [
+        30
+      ]
+    },
+    "24": {
+      "UID": "27db445f-9ece-4bdb-aa3b-ac757aba7d8d",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 24
+    },
+    "30": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91163011,
+      "NodeID": 30,
+      "UID": "593a2085-3766-4bcc-ab1d-1e00e91ad3b7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "32": {
+      "UID": "5ef86db5-464d-44b2-b947-334f7edd786e",
+      "name": "checkAbilityElementType",
+      "elementType": 2,
+      "NodeID": 32
+    },
+    "34": {
+      "buffId": 91163012,
+      "name": "hasBuff",
+      "UID": "30daaca7-b71f-47d5-b923-dbe2d3c4d4e0",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "25": {
+      "UID": "d86af83a-5b48-432b-879e-f510a70fb694",
+      "conditionIds": [
+        24,
+        32
+      ],
+      "name": "conditionAnd",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "d14c7ca3-8131-4fb1-8b32-e2801b275209",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    27
+  ]
+}

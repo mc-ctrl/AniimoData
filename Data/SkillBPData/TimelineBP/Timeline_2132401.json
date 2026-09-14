@@ -1,0 +1,184 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 14.7,
+      "NodeID": 22,
+      "UID": "a1085b55-63a5-4a08-bf1f-85763fd81f62"
+    },
+    "4": {
+      "UID": "327ed0e8-7e12-4815-af44-1ce720f82d41",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          9,
+          17
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f57500db-0bb7-4de3-b675-2095e6f29cc3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_ThornsField_03",
+      "NodeID": 24
+    },
+    "28": {
+      "UID": "7153cfe7-961d-4ffd-92f1-ffaae4941e8c",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          29,
+          26
+        ]
+      },
+      "NodeID": 28
+    },
+    "15": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2132401,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "b8101350-9d3d-438d-a4de-aaf82a63ae1e",
+      "target": {
+        "key": "10324Target",
+        "name": "getCacheVal",
+        "UID": "f39fe5d5-1697-4d93-bea7-61446d729a80",
+        "target": "OWNER",
+        "NodeID": 23
+      },
+      "NodeID": 15,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "impulseId": 1000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 4,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30102
+      }
+    },
+    "7": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 2132401,
+      "NodeID": 7,
+      "UID": "af513e9a-cd36-4769-b228-f76b51f36ff1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "26": {
+      "name": "stopSoundStr",
+      "UID": "6886793f-0ffa-48a2-bd80-a630d5ad57de",
+      "soundId": "SFX_Combat_10324_Skill_ThornsField_02",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c00b443a-3b13-4fb8-8770-88b674dd8644",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_ThornsField_04",
+      "NodeID": 29
+    },
+    "17": {
+      "eventName": "beHit",
+      "NodeID": 17,
+      "UID": "bbd83dcf-90a7-4767-adaa-2ac1303e5c9b",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        24,
+        15
+      ]
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 9,
+      "UID": "f03d1045-ebb2-43a8-9c20-ed4a0157bf9c",
+      "enterTrapActionIds": [
+        7,
+        25
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        13
+      ],
+      "shapeArgs": [
+        8
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 1,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "d432398b-60c9-4b77-9f1d-73aff420e66c",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsField_01",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "993e3c08-67cb-43d9-90c7-14c81e8af47f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_ThornsField_02",
+      "NodeID": 25
+    },
+    "13": {
+      "buffId": 2132401,
+      "name": "removeBuff",
+      "UID": "65d77abf-cd26-4ae0-85ac-749d780fb9e8",
+      "target": "TrapTarget",
+      "NodeID": 13
+    },
+    "20": {
+      "scale": 1,
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "4b27c486-bf10-4c17-b3d4-b11a6b04727d",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsField_02",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "2": {
+      "scale": 1,
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "7e4dac28-354f-4848-badf-33fcddf5477a",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsField_01",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2132401",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    4,
+    28,
+    22
+  ],
+  "layer": "Base",
+  "length": 15.5
+}

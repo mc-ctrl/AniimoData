@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_902070222",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10600182,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902070222001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BothPunch"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Grass_Blunt_Big",
+    "Eff_Parmon_10201_Skill_SpikeAttack",
+    "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Appear",
+    "Eff_Monster_90207_Mon_Skill_Punch_Smoke",
+    "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Sprint",
+    "Eff_Monster_90207_Mon_Skill_Punch_Music_SingGrass_Shadow"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5
+}

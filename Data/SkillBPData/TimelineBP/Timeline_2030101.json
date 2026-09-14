@@ -1,0 +1,456 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "tickInterval": 15,
+      "eventType": "NotifyState",
+      "endTime": 9999,
+      "NodeID": 5,
+      "UID": "15aded16-c7bc-41b1-afd2-7f92991a5d6b",
+      "onUpdate": {
+        "actionIds": [
+          26,
+          3,
+          23
+        ]
+      },
+      "startTime": 3,
+      "onEnter": {
+        "actionIds": [
+          26,
+          3,
+          23
+        ]
+      }
+    },
+    "38": {
+      "UID": "a820cba9-6d93-4e21-9615-ab9911f6f8b5",
+      "name": "destroyEntity",
+      "NodeID": 38
+    },
+    "39": {
+      "key": "1",
+      "duration": 2,
+      "actionIds": [
+        38
+      ],
+      "NodeID": 39,
+      "UID": "cf23e2cc-1ebe-49d7-af18-9834b2972a42",
+      "name": "addTimer"
+    },
+    "40": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a25d5544-5dc4-485b-b4a4-f887599d2ebe",
+      "target": "TARGET",
+      "NodeID": 40,
+      "animId": "HitFly"
+    },
+    "41": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "561f1fbf-9090-467b-b9df-eb44bc5acca9",
+      "target": "MASTER",
+      "NodeID": 41,
+      "animId": "Hit_L"
+    },
+    "42": {
+      "cameraShakeId": 30405,
+      "name": "playCameraImpulseById",
+      "UID": "09b589d3-e4ce-48a2-954e-112739f77163",
+      "target": "TARGET",
+      "NodeID": 42
+    },
+    "35": {
+      "UID": "75a53d20-c5e4-468d-8c09-c6b4d53fa220",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 35
+    },
+    "8": {
+      "duration": 0,
+      "linkTarget": {
+        "key": "laser2",
+        "name": "getServerCacheVal",
+        "UID": "a0830042-e148-46b0-a16e-89640b9b9dfe",
+        "target": "OWNER",
+        "NodeID": 7
+      },
+      "name": "playLaserEffect",
+      "UID": "c007ac3c-6942-4d89-b258-9ff75cb2e6ef",
+      "effectId": "Eff_Parmon_Common_BossRush_Laser_Formal_New_01",
+      "scale": 0,
+      "raycastTestLayer": 4205577,
+      "performer": "OWNER",
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "linkEndEffectId": "Eff_Parmon_Common_BossRush_LaserHit_Formal_New_01",
+      "distance": 0,
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "abffd587-9d90-462f-8d0f-a089f8c980ac",
+      "name": "callClientAction",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "11": {
+      "tickInterval": 15,
+      "eventType": "NotifyState",
+      "endTime": 9999,
+      "NodeID": 11,
+      "UID": "66774525-0195-4cf1-bcd7-9e9a8cba7774",
+      "onUpdate": {
+        "actionIds": [
+          9,
+          14
+        ]
+      },
+      "startTime": 8,
+      "onEnter": {
+        "actionIds": [
+          9,
+          14
+        ]
+      }
+    },
+    "37": {
+      "UID": "66efc6b0-a841-4bdc-bbb1-719c659a3380",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "NodeID": 37
+    },
+    "21": {
+      "duration": 0,
+      "linkTarget": {
+        "key": "laser2",
+        "name": "getServerCacheVal",
+        "UID": "f0992a01-29ea-4c0b-9bbe-cb38507cc542",
+        "target": "OWNER",
+        "NodeID": 20
+      },
+      "name": "playLaserEffect",
+      "UID": "4ab51042-c85a-40ac-9d1d-44555113c2f7",
+      "effectId": "Eff_Parmon_Common_BossRush_LaserLock_New_01",
+      "scale": 0,
+      "raycastTestLayer": 4205577,
+      "performer": "OWNER",
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "linkEndEffectId": "Eff_Parmon_Common_BossRush_LockPoint_New_01",
+      "distance": 0,
+      "NodeID": 21
+    },
+    "3": {
+      "key": "laser2",
+      "name": "setServerCacheVal",
+      "UID": "d515287d-6764-4b88-806c-90c152f725c0",
+      "target": "OWNER",
+      "val": {
+        "name": "searchEntity",
+        "UID": "3b1ed88a-7b63-40c6-bcad-114b5c6d090e",
+        "relation": 2,
+        "heightDown": 5,
+        "radius": 30,
+        "checkValidPlayer": true,
+        "isRandom": true,
+        "heightUp": 5,
+        "NodeID": 2
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "name": "getRotationFromTo",
+      "considerYAxis": true,
+      "UID": "2a2beda0-4598-49aa-89f0-9436c21aaa94",
+      "to": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "38b9d9c1-06b2-483d-a7ee-543c58ba3199",
+        "forceCurPet": true,
+        "target": {
+          "key": "laser2",
+          "name": "getServerCacheVal",
+          "UID": "a0830042-e148-46b0-a16e-89640b9b9dfe",
+          "target": "OWNER",
+          "NodeID": 7
+        },
+        "NodeID": 12
+      },
+      "NodeID": 13,
+      "from": {
+        "name": "getTargetOffsetPos",
+        "UID": "32065607-6d10-4342-addd-3fcb7f07780d",
+        "target": "OWNER",
+        "offset": [
+          0,
+          2,
+          0
+        ],
+        "NodeID": 25
+      }
+    },
+    "24": {
+      "offsetXYZ": [
+        0,
+        2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "610ab9d6-5384-4153-9e74-36df8ddf6931",
+      "effectId": "Eff_Parmon_Common_BossRush_LaserCharge_Formal_New_01",
+      "speed": 0.666,
+      "NodeID": 24
+    },
+    "14": {
+      "boxExtends": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "NodeID": 14,
+      "hitBoxMaxHitEntityCnt": 1,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "rotationNodeId": 13,
+      "startPosNodeId": 25,
+      "hitBoxMaxHitCnt": 1,
+      "hitCd": 1,
+      "needEcs": true,
+      "actionIds": [
+        18,
+        42,
+        39
+      ],
+      "name": "actOnSweepTargets",
+      "relation": 4,
+      "sweepDistance": {
+        "targetA": {
+          "name": "getTargetOffsetPos",
+          "UID": "32065607-6d10-4342-addd-3fcb7f07780d",
+          "target": "OWNER",
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "NodeID": 25
+        },
+        "targetB": {
+          "name": "getPlayerRealControlEnt",
+          "UID": "38b9d9c1-06b2-483d-a7ee-543c58ba3199",
+          "forceCurPet": true,
+          "target": {
+            "key": "laser2",
+            "name": "getServerCacheVal",
+            "UID": "a0830042-e148-46b0-a16e-89640b9b9dfe",
+            "target": "OWNER",
+            "NodeID": 7
+          },
+          "NodeID": 12
+        },
+        "name": "getDistanceBetweenTarget",
+        "UID": "76e319cc-8575-4e63-a953-87285d673847",
+        "NodeID": 15,
+        "onlyXZ": false
+      },
+      "UID": "d3dcac6b-29fe-4384-a789-47de7ddb5219",
+      "calcResultNodeId": 32,
+      "impulseId": 5005,
+      "hitBoxId": "1"
+    },
+    "12": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "38b9d9c1-06b2-483d-a7ee-543c58ba3199",
+      "forceCurPet": true,
+      "target": {
+        "key": "laser2",
+        "name": "getServerCacheVal",
+        "UID": "a0830042-e148-46b0-a16e-89640b9b9dfe",
+        "target": "OWNER",
+        "NodeID": 7
+      },
+      "NodeID": 12
+    },
+    "15": {
+      "targetA": {
+        "name": "getTargetOffsetPos",
+        "UID": "32065607-6d10-4342-addd-3fcb7f07780d",
+        "target": "OWNER",
+        "offset": [
+          0,
+          2,
+          0
+        ],
+        "NodeID": 25
+      },
+      "targetB": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "38b9d9c1-06b2-483d-a7ee-543c58ba3199",
+        "forceCurPet": true,
+        "target": {
+          "key": "laser2",
+          "name": "getServerCacheVal",
+          "UID": "a0830042-e148-46b0-a16e-89640b9b9dfe",
+          "target": "OWNER",
+          "NodeID": 7
+        },
+        "NodeID": 12
+      },
+      "name": "getDistanceBetweenTarget",
+      "UID": "76e319cc-8575-4e63-a953-87285d673847",
+      "NodeID": 15,
+      "onlyXZ": false
+    },
+    "25": {
+      "name": "getTargetOffsetPos",
+      "UID": "32065607-6d10-4342-addd-3fcb7f07780d",
+      "target": "OWNER",
+      "offset": [
+        0,
+        2,
+        0
+      ],
+      "NodeID": 25
+    },
+    "16": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 4003011,
+      "NodeID": 16,
+      "UID": "4f335cc5-b67a-413c-b16f-5fff6a5ed66a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "27": {
+      "name": "isActorType",
+      "UID": "78e9168a-909c-4e36-b993-65a8a12cefde",
+      "target": "TARGET",
+      "NodeID": 27,
+      "actorType": 2
+    },
+    "26": {
+      "UID": "c1f4811b-0f30-4ed5-8141-8955fe07baab",
+      "name": "clearHitBox",
+      "hitBoxId": "1",
+      "NodeID": 26
+    },
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2030101,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "253e25a7-474f-4934-8d3a-cf79ef62707f",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30405,
+        "hitFrameFreezeId": 10033,
+        "elementType": 0,
+        "impulseId": 5005
+      }
+    },
+    "18": {
+      "actionIds": [
+        29,
+        40
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "cc857966-9dd4-4fed-8a41-70e7732b6ae7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        16,
+        32,
+        41
+      ],
+      "NodeID": 18
+    },
+    "32": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2030101,
+        "type": 4,
+        "add_cur_bp_max_p": "param1",
+        "reduce_cur_tp_rate": "999999"
+      },
+      "UID": "f4b5a72a-ebce-463e-8834-eb00222e6be1",
+      "target": "TARGET",
+      "NodeID": 32,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30405,
+        "hitFrameFreezeId": 10033,
+        "elementType": 0,
+        "impulseId": 5005
+      }
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f934bb81-d925-40ce-840a-4a8adf0f790f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_BossRush_Skill_Laser",
+      "NodeID": 33
+    },
+    "2": {
+      "name": "searchEntity",
+      "UID": "3b1ed88a-7b63-40c6-bcad-114b5c6d090e",
+      "relation": 2,
+      "heightDown": 5,
+      "radius": 30,
+      "checkValidPlayer": true,
+      "isRandom": true,
+      "heightUp": 5,
+      "NodeID": 2
+    },
+    "23": {
+      "UID": "eba273da-0c9f-4c2a-83eb-87a8ca786260",
+      "name": "callClientAction",
+      "actionIds": [
+        24,
+        21,
+        33
+      ],
+      "NodeID": 23
+    }
+  },
+  "BPName": "timeline_2030101",
+  "NodeID": 1,
+  "UID": "4f1d01a1-2a47-40ac-8135-397299048e9d",
+  "eventIds": [
+    37,
+    5,
+    11
+  ],
+  "layer": "Base",
+  "length": 999
+}

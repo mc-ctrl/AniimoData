@@ -1,0 +1,313 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9844962c-f70e-4ba0-9c2c-524e91d27b7e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10352_Attack_01",
+      "NodeID": 37
+    },
+    "39": {
+      "UID": "9cdf7bef-7489-4cf1-922d-884e7cb70501",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bf330f11-0b77-4f37-8a22-cadf99be9f63",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10352_Skill_Fragrance_Bomb",
+      "NodeID": 40
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 41,
+      "UID": "c6daed42-9f6f-4c07-beea-9a93d24ad005"
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6b43fbf5-8251-4e8c-b49f-0fbbb898acce",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "35": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2135205,
+      "NodeID": 35,
+      "UID": "14b3e424-92e6-4259-a2b6-c3d2ead42ece",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "78689a2a-1fab-4332-af78-a331ce2085d6",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "12": {
+      "UID": "848f2e9c-50fa-4c21-8ffc-b4dc0f492e68",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 12
+    },
+    "21": {
+      "UID": "8eb89a30-cdf1-45e6-8156-d458b01e95fa",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 21
+    },
+    "22": {
+      "UID": "38e37a91-d4f4-4d9c-8f2b-98d009dcc01f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    },
+    "43": {
+      "name": "setSkillHitDistance",
+      "UID": "85e5f0fd-bcee-453a-b9b1-2447b1b21474",
+      "skillHitDisplacementId": 1023,
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "24": {
+      "UID": "d384ef26-dfc4-491c-88aa-c4c2073719c1",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "198a4373-6ab8-4e94-bf3b-6a578e24ea00",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          19,
+          42,
+          43
+        ]
+      },
+      "NodeID": 14
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 46,
+      "UID": "f822b337-c4cd-464f-86b5-98db84410dfc"
+    },
+    "49": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "73738076-2a2b-4e83-8eff-e2b1ce91316d",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_01",
+      "speed": 1,
+      "NodeID": 49
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 25,
+      "UID": "be6b8336-6a5a-4692-8ff0-fd4dd6059a20"
+    },
+    "48": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "45dbb896-40c8-4c38-9ae8-c877ea17b4b1",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 48
+    },
+    "27": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 33,
+      "NodeID": 27,
+      "UID": "2afb3abb-20c5-4154-8f22-610c24009260",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.5,
+            2,
+            0.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        33,
+        35
+      ]
+    },
+    "47": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "eaf2c299-e42b-4ada-a837-eb41ae36e8ad",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 47
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 29,
+      "UID": "1fa89405-0612-46e4-aba8-fc711247a788"
+    },
+    "45": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        44
+      ],
+      "UID": "f678d781-77a0-49c0-87fa-251a84c49ed8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        48
+      ],
+      "NodeID": 45
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.467,
+      "NodeID": 50,
+      "UID": "5b21aa39-6acf-4879-9e27-f4cacbb53497"
+    },
+    "33": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13520600,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "e5d87e58-8417-48e5-b6bf-219f39907861",
+      "target": "TARGET",
+      "NodeID": 33,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30405,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "isPlayRadialBlur": true,
+        "impulseId": 2001
+      }
+    },
+    "51": {
+      "name": "dropEffectStr",
+      "UID": "6fbec022-3086-4bd6-ab48-837c530d36fe",
+      "effectId": "Eff_Parmon_10352_Skill_PerfumeSign_01",
+      "target": "CASTER",
+      "NodeID": 51
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "893855a8-85c0-414d-b07c-49abe5c16ac6",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_Feather"
+    }
+  },
+  "BPName": "ability_13520600",
+  "NodeID": 16,
+  "UID": "81608a50-d56d-47a3-bba4-5c843e90e736",
+  "eventIds": [
+    46,
+    14,
+    25,
+    22,
+    39,
+    29,
+    50,
+    41
+  ],
+  "layer": "Base",
+  "length": 4.16
+}

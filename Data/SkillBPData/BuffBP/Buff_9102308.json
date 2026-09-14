@@ -1,0 +1,14 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102308",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "desc": "无敌",
+  "tags": [
+    1,
+    20
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {}
+}

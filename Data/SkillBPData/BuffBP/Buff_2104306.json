@@ -1,0 +1,51 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104306",
+  "calcInfoByLuaConfig": {
+    "id": 2104306,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    7,
+    4
+  ],
+  "parentDynamicRPCStates": {},
+  "name": "水元素增伤buff",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bc371090-db84-4fca-b8b5-598fc86b88b3",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "af981655-0a0d-4aaf-a616-7c78678352f7",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "a6e7f9f2-8199-4154-b59d-cb82263d50de",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 6
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

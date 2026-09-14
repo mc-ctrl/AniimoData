@@ -1,0 +1,199 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c854b5e5-f985-4151-897d-8d535bb06bb4",
+      "effectId": "Eff_Parmon_10263_Skill_DreamEater_03",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "actOnTargets",
+      "UID": "77198c5c-c9fc-4be0-898f-961a334928b7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            3.2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "f8807402-67cb-4e34-908c-ad225a57d8f8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "calcId": 2126302,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 25,
+      "UID": "074694e4-f2c7-4f58-a1ee-e7e1dafa8ccd",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "scale": 1.3,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e7995c7c-a8f7-4823-9290-b6f511aa9777",
+      "effectId": "Eff_Parmon_10263_Skill_WaterHeal",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "calcInfo": {
+        "add_cur_hp_max_p": {
+          "rValue": {
+            "rValue": {
+              "calcId": 2126302,
+              "calcType": 4,
+              "paramName": "param1",
+              "NodeID": 21,
+              "UID": "bb3fdb77-df5c-4433-b4ed-fe42c1fd4843",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "664b8102-da92-4a1f-8abe-c9262f774459",
+            "NodeID": 5,
+            "lValue": {
+              "b": {
+                "UID": "c1d68e5f-c079-4141-8f48-11429580fa45",
+                "number": 3,
+                "name": "constNumber",
+                "NodeID": 22
+              },
+              "NodeID": 4,
+              "UID": "78bbf0f2-e244-4039-8798-4f67f41e41a9",
+              "name": "min",
+              "a": {
+                "key": "12630100",
+                "name": "getCacheVal",
+                "UID": "98de3ba1-f579-498d-89eb-4307908148d3",
+                "target": "MASTER",
+                "NodeID": 3
+              }
+            }
+          },
+          "name": "add",
+          "UID": "488b6ea8-ea09-4337-b58a-ce9841933ea3",
+          "NodeID": 6,
+          "lValue": {
+            "calcId": 2126302,
+            "calcType": 4,
+            "paramName": "param0",
+            "NodeID": 25,
+            "UID": "074694e4-f2c7-4f58-a1ee-e7e1dafa8ccd",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "59a8d5c4-d1f0-4156-b06e-eb6d790a3bfc",
+      "target": "TARGET",
+      "NodeID": 8
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 17,
+      "UID": "b7a9b45f-20ae-4b0e-8c1c-9538a3fc0bc1"
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "doPetsActions",
+      "UID": "f3e43b5a-bba4-4bed-b64e-db415e242373",
+      "target": "TARGET",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "6fea3122-6ab5-4eda-9c98-63f7a3fe926b",
+      "eventType": "EventExit",
+      "NodeID": 18
+    },
+    "19": {
+      "target": "MASTER",
+      "name": "playSoundStr",
+      "UID": "6c3a0052-2917-4351-948f-aa744ac3ce97",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_boom",
+      "NodeID": 19
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 11,
+      "UID": "8512558d-ffdb-4c71-8103-71c2b45779b4"
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.05,
+      "NodeID": 20,
+      "UID": "b0d9cc21-3b46-4001-8926-fb6e207c4f51"
+    },
+    "21": {
+      "calcId": 2126302,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 21,
+      "UID": "bb3fdb77-df5c-4433-b4ed-fe42c1fd4843",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "timeline_2126302",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    15,
+    20,
+    11,
+    17,
+    18
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

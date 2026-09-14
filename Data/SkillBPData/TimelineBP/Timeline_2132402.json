@@ -1,0 +1,128 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "action": {
+        "actionIds": [
+          11,
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 29.7,
+      "NodeID": 4,
+      "UID": "55becab0-675f-4487-ac15-60a3f0ea75b5"
+    },
+    "6": {
+      "buffId": 2132404,
+      "name": "removeBuff",
+      "UID": "c962832b-239f-4a58-a5c2-c90d4d6ee291",
+      "target": "TrapTarget",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "20260c8f-e1de-42a4-b9a0-15bf3887fab6",
+      "effectId": "Eff_Parmon_10324_Skill_Ex_Flower",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "target": "TrapTarget",
+      "duration": -1,
+      "buffId": 2132404,
+      "NodeID": 15,
+      "UID": "19419c3f-a949-4430-a3a6-5ff1a645c9a9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 7,
+      "UID": "f286db55-0a76-45dd-858f-522f52d81bd3",
+      "enterTrapActionIds": [
+        15
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        6
+      ],
+      "shapeArgs": [
+        20
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 1,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "9": {
+      "UID": "d4b0f3a6-d883-4441-84c4-fcd92e29d4af",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10,
+          12,
+          7
+        ]
+      },
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "68c61101-3756-4cae-9cf4-8feb81abe500",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 14
+    },
+    "13": {
+      "name": "stopSoundStr",
+      "UID": "59bf353a-65b6-4759-a106-23c60612a4c7",
+      "soundId": "SFX_Combat_10324_Skill_Ex_02",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "116449c8-450c-4276-8e12-211daa91e8de",
+      "effectId": "Eff_Parmon_10324_OutEx_02",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "c48f7531-b5ec-45b7-a4f1-2725cfd9ea29",
+      "effectId": "Eff_Parmon_10324_Skill_Ex_Flower",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3d7c76d1-a41d-48c6-be5e-f61cfcfa067b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_Ex_02",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2132402",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    9,
+    4,
+    14
+  ],
+  "layer": "Base",
+  "length": 30
+}

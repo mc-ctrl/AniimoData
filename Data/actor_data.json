@@ -1,0 +1,672 @@
+{
+  "25800": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "6": true
+    }
+  },
+  "26400": {
+    "rigidbody": "Pet_HumanLike1",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "53": {
+    "audioMat": "Skin",
+    "propId": 1000,
+    "volume": 0.076,
+    "type": 8,
+    "chemistryMaterial": 8,
+    "rigidbody": "Avatar",
+    "bodySize": 0.25,
+    "bodyHeight": 1.5
+  },
+  "26600": {
+    "rigidbody": "Pet_HumanLike1",
+    "bodyHeight": 1.5,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true
+    }
+  },
+  "26800": {
+    "rigidbody": "Pet_HumanLike1",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "6": true
+    }
+  },
+  "101101": {
+    "rigidbody": "Parmon_Starly",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "101201": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "102301": {
+    "rigidbody": "Parmon_Helgon",
+    "propId": 1001,
+    "bodyHeight": 1.7,
+    "type": 5,
+    "bodySize": 0.8,
+    "elementType": {
+      "7": true,
+      "10": true
+    }
+  },
+  "103101": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "5": true
+    }
+  },
+  "103201": {
+    "rigidbody": "Parmon_Ripzor",
+    "propId": 1001,
+    "bodyHeight": 1.6,
+    "type": 5,
+    "bodySize": 0.45,
+    "elementType": {
+      "5": true,
+      "11": true
+    }
+  },
+  "104301": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true,
+      "2": true
+    }
+  },
+  "105301": {
+    "rigidbody": "Parmon_Wolferno",
+    "propId": 1001,
+    "bodyHeight": 1.8,
+    "type": 5,
+    "bodySize": 0.4,
+    "elementType": {
+      "5": true
+    }
+  },
+  "151101": {
+    "rigidbody": "Parmon_Starly",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "152301": {
+    "rigidbody": "Parmon_Helgon",
+    "propId": 1001,
+    "bodyHeight": 1.7,
+    "type": 5,
+    "bodySize": 0.8,
+    "elementType": {
+      "7": true,
+      "10": true
+    }
+  },
+  "153201": {
+    "rigidbody": "Parmon_Ripzor",
+    "propId": 1001,
+    "bodyHeight": 1.6,
+    "type": 5,
+    "bodySize": 0.45,
+    "elementType": {
+      "5": true,
+      "11": true
+    }
+  },
+  "154301": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true,
+      "2": true
+    }
+  },
+  "155301": {
+    "rigidbody": "Parmon_Wolferno",
+    "propId": 1001,
+    "bodyHeight": 1.8,
+    "type": 5,
+    "bodySize": 0.4,
+    "elementType": {
+      "5": true
+    }
+  },
+  "161101": {
+    "rigidbody": "Pet_HumanLike1",
+    "propId": 2001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "162301": {
+    "rigidbody": "Parmon_Helgon",
+    "propId": 2002,
+    "bodyHeight": 1.7,
+    "type": 5,
+    "bodySize": 0.8,
+    "elementType": {
+      "7": true,
+      "10": true
+    }
+  },
+  "163201": {
+    "rigidbody": "Pet_HumanLike1",
+    "propId": 2003,
+    "bodyHeight": 1.6,
+    "type": 5,
+    "bodySize": 0.45,
+    "elementType": {
+      "5": true,
+      "11": true
+    }
+  },
+  "164301": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 2004,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true,
+      "2": true
+    }
+  },
+  "165301": {
+    "rigidbody": "Parmon_Wolferno",
+    "propId": 2005,
+    "bodyHeight": 1.8,
+    "type": 5,
+    "bodySize": 0.4,
+    "elementType": {
+      "5": true
+    }
+  },
+  "1101101": {
+    "rigidbody": "Parmon_Starly",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "1101201": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "1102301": {
+    "rigidbody": "Parmon_Helgon",
+    "bodyHeight": 1.7,
+    "type": 3,
+    "bodySize": 0.8,
+    "elementType": {
+      "7": true,
+      "10": true
+    }
+  },
+  "1103101": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "5": true
+    }
+  },
+  "1103201": {
+    "rigidbody": "Parmon_Ripzor",
+    "bodyHeight": 1.6,
+    "type": 3,
+    "bodySize": 0.45,
+    "elementType": {
+      "5": true,
+      "11": true
+    }
+  },
+  "1104301": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true,
+      "2": true
+    }
+  },
+  "1105301": {
+    "rigidbody": "Parmon_Wolferno",
+    "bodyHeight": 1.8,
+    "type": 3,
+    "bodySize": 0.4,
+    "elementType": {
+      "5": true
+    }
+  },
+  "1501101": {
+    "rigidbody": "Parmon_Starly",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "1502301": {
+    "rigidbody": "Parmon_Helgon",
+    "bodyHeight": 1.7,
+    "type": 3,
+    "bodySize": 0.8,
+    "elementType": {
+      "7": true,
+      "10": true
+    }
+  },
+  "1503201": {
+    "rigidbody": "Parmon_Ripzor",
+    "bodyHeight": 1.6,
+    "type": 3,
+    "bodySize": 0.45,
+    "elementType": {
+      "5": true,
+      "11": true
+    }
+  },
+  "1504301": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true,
+      "2": true
+    }
+  },
+  "1505301": {
+    "rigidbody": "Parmon_Wolferno",
+    "bodyHeight": 1.8,
+    "type": 3,
+    "bodySize": 0.4,
+    "elementType": {
+      "5": true
+    }
+  },
+  "1601101": {
+    "rigidbody": "Pet_HumanLike1",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "1602301": {
+    "rigidbody": "Parmon_Helgon",
+    "bodyHeight": 1.7,
+    "type": 3,
+    "bodySize": 0.8,
+    "elementType": {
+      "7": true,
+      "10": true
+    }
+  },
+  "1603201": {
+    "rigidbody": "Pet_HumanLike1",
+    "bodyHeight": 1.6,
+    "type": 3,
+    "bodySize": 0.45,
+    "elementType": {
+      "5": true,
+      "11": true
+    }
+  },
+  "1604301": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true,
+      "2": true
+    }
+  },
+  "1605301": {
+    "rigidbody": "Parmon_Wolferno",
+    "bodyHeight": 1.8,
+    "type": 3,
+    "bodySize": 0.4,
+    "elementType": {
+      "5": true
+    }
+  },
+  "16777215": {
+    "type": -1
+  },
+  "3": {
+    "audioMat": "Skin",
+    "propId": 1000,
+    "volume": 0.076,
+    "type": 4,
+    "chemistryMaterial": 8,
+    "rigidbody": "Avatar",
+    "bodySize": 0.25,
+    "bodyHeight": 1.65
+  },
+  "4": {
+    "audioMat": "Skin",
+    "propId": 1000,
+    "volume": 0.075,
+    "type": 4,
+    "chemistryMaterial": 8,
+    "rigidbody": "Avatar",
+    "bodySize": 0.25,
+    "bodyHeight": 1.6
+  },
+  "10001": {
+    "rigidbody": "Parmon_Starly",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "26500": {
+    "rigidbody": "Pet_HumanLike1",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "2": true
+    }
+  },
+  "20700": {
+    "rigidbody": "Pet_HumanLike",
+    "Burning": 1,
+    "bodyHeight": 3,
+    "type": 3,
+    "bodySize": 1,
+    "elementType": {
+      "5": true,
+      "10": true
+    }
+  },
+  "1101": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1.4,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "1301": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1.5,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true
+    }
+  },
+  "1401": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 3,
+    "type": 5,
+    "bodySize": 1,
+    "elementType": {
+      "5": true,
+      "10": true
+    }
+  },
+  "1501": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "6": true
+    }
+  },
+  "5101": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1.4,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "5201": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1.4,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "2": true
+    }
+  },
+  "5301": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1.5,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true
+    }
+  },
+  "5501": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "6": true
+    }
+  },
+  "6101": {
+    "rigidbody": "Pet_HumanLike1",
+    "propId": 2006,
+    "bodyHeight": 1.4,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "6201": {
+    "rigidbody": "Pet_HumanLike1",
+    "propId": 2007,
+    "bodyHeight": 1.4,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "2": true
+    }
+  },
+  "6301": {
+    "rigidbody": "Pet_HumanLike1",
+    "propId": 2008,
+    "bodyHeight": 1.5,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true
+    }
+  },
+  "6501": {
+    "rigidbody": "Pet_HumanLike1",
+    "propId": 2009,
+    "bodyHeight": 1,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "6": true
+    }
+  },
+  "10000": {
+    "rigidbody": "Parmon_Starly",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "12": true
+    }
+  },
+  "20800": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "6": true
+    }
+  },
+  "20400": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "20401": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "20404": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "20500": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "2": true
+    }
+  },
+  "20600": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.5,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true
+    }
+  },
+  "1201": {
+    "rigidbody": "Pet_HumanLike",
+    "propId": 1001,
+    "bodyHeight": 1.4,
+    "type": 5,
+    "bodySize": 0.35,
+    "elementType": {
+      "2": true
+    }
+  },
+  "50": {
+    "audioMat": "Skin",
+    "propId": 1000,
+    "volume": 0.075,
+    "type": 4,
+    "chemistryMaterial": 8,
+    "rigidbody": "Avatar",
+    "bodySize": 0.25,
+    "bodyHeight": 1.5
+  },
+  "25400": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "4": true
+    }
+  },
+  "25500": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.4,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "2": true
+    }
+  },
+  "25600": {
+    "rigidbody": "Pet_HumanLike",
+    "bodyHeight": 1.5,
+    "type": 3,
+    "bodySize": 0.35,
+    "elementType": {
+      "3": true
+    }
+  }
+}

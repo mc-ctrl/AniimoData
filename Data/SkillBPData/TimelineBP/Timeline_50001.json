@@ -1,0 +1,133 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "name": "isActorType",
+      "UID": "a5b87b84-6390-4ed7-92e6-5b67948bd25f",
+      "target": "TARGET",
+      "NodeID": 22,
+      "actorType": 2
+    },
+    "18": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3
+      },
+      "name": "calcResult",
+      "UID": "9b1fd290-f617-4797-8fc6-74fd2413b887",
+      "target": "MASTER",
+      "NodeID": 18
+    },
+    "16": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3
+      },
+      "name": "calcResult",
+      "UID": "9d60bc5f-0803-482a-a9a6-e704f87e2e86",
+      "target": {
+        "petIndex": 3,
+        "UID": "e3259ab8-b583-4329-a762-fe85ef18c345",
+        "target": "TARGET",
+        "NodeID": 15,
+        "name": "getPetByIdx"
+      },
+      "NodeID": 16
+    },
+    "6": {
+      "actionIds": [
+        12
+      ],
+      "name": "actOnTargets",
+      "UID": "84828ccb-b809-4740-a0d2-9e77ca849187",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 3,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 6
+    },
+    "10": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3
+      },
+      "name": "calcResult",
+      "UID": "5bc14bd1-0dfe-420b-b753-cc839c0c01fc",
+      "target": {
+        "petIndex": 1,
+        "UID": "83dd95a7-aa14-4913-a01d-717e91304326",
+        "target": "TARGET",
+        "NodeID": 9,
+        "name": "getPetByIdx"
+      },
+      "NodeID": 10
+    },
+    "14": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3
+      },
+      "name": "calcResult",
+      "UID": "4c548edf-75ff-4de0-bedd-fdc2aeed2a54",
+      "target": {
+        "petIndex": 2,
+        "UID": "92b8facf-acc1-48dd-aaf3-53433c1fb52e",
+        "target": "TARGET",
+        "NodeID": 13,
+        "name": "getPetByIdx"
+      },
+      "NodeID": 14
+    },
+    "7": {
+      "eventType": "NotifyState",
+      "endTime": 99999,
+      "NodeID": 7,
+      "UID": "e9d95f8a-d437-4a06-a6bb-12a817e547ad",
+      "onUpdate": {
+        "actionIds": [
+          6
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1.5
+    },
+    "12": {
+      "actionIds": [
+        10,
+        14,
+        16,
+        18
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "4948f999-a646-4aa7-b7fe-f1d26e360ea0",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_50001",
+  "NodeID": 1,
+  "UID": "6c222997-2baf-4c15-9e55-e0c52ce8aacb",
+  "eventIds": [
+    7
+  ],
+  "layer": "Base",
+  "length": 99999
+}

@@ -1,0 +1,34 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11155",
+  "name": "泡泡宠物消失用buff",
+  "UID": "aa0f7eb7-6d29-459b-a90b-50955012290b",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "879127a1-ce2a-4b11-b8b8-eb563a761dd0",
+      "actorId": {
+        "UID": "403d5cd2-e74b-4cae-b7b8-02c7e94e7b4b",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 2
+      },
+      "name": "destroyEntity",
+      "NodeID": 3
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c81d7db7-a2cd-432c-9302-1897ae2de3c2",
+      "effectId": "Eff_Parmon_LevelAppear_Normal",
+      "speed": 1,
+      "NodeID": 5
+    }
+  },
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    5,
+    3
+  ]
+}

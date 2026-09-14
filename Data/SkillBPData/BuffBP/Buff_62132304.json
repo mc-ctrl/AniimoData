@@ -1,0 +1,31 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62132304",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Attack_Arrow_Up"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "60046c48-b3b8-401c-a4b7-bbf67aa69b63",
+      "speed": 0.0001,
+      "NodeID": 3,
+      "animId": "Behav_HappyLoop"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

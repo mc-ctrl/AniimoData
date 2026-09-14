@@ -1,0 +1,111 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "a1b251ba-49d9-478f-92de-83c887e28af9",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 9105501,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "5bbcc564-d20d-4d2f-a146-35b56c74a0ab",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 13
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "4f956168-bcc4-415a-bee1-383fe0a42c15",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "15": {
+      "UID": "7c975dc8-9825-43de-bc70-70f411d35bae",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "2cbfc11c-c80a-4b11-b603-e324eb26dd17",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "6a73cfd0-05cc-4719-9b6c-5dc2fd31f26c",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "a4e2cef1-4d5a-4c8b-a641-9fa7c3a61978",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "bc26e8aa-faa0-4b0d-b7d7-0b0c372bde44",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "c89dcecc-4427-4168-8fee-9cfeee593bbc",
+      "conditionIds": [
+        13,
+        15,
+        16
+      ],
+      "name": "conditionOr",
+      "NodeID": 14
+    },
+    "5": {
+      "actionIds": [
+        3,
+        9
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "5ec484d3-e8f4-4f3f-b435-7fa8466c8767",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "12": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "cf430e09-c437-4aa5-adfd-52b78503d88d",
+      "NodeID": 12,
+      "lValue": {
+        "UID": "ec74a08d-ea28-41a8-87da-387597c8ca81",
+        "target": {
+          "UID": "854484dd-bd02-4cc7-b6b0-9e610de9b7f5",
+          "name": "getEventAttackTarget",
+          "NodeID": 10
+        },
+        "name": "getHpRatio",
+        "NodeID": 11
+      }
+    }
+  },
+  "BPName": "buff_9105501",
+  "dynamicRPCStates": {},
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

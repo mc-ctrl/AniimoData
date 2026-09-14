@@ -1,0 +1,2333 @@
+{
+  "CHANGE_PET_IV_MAX": 5,
+  "CHAT_BUBBLE_DEFAULT": 180001,
+  "CHAT_CHANNEL_WORLD_OPEN_LEVEL": 45,
+  "CHAT_FRIENDS_STORAGE_MAX": 200,
+  "CHAT_LEVEL": [
+    [
+      3
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "CHAT_LIMIT_MAX": 50,
+  "CHAT_REPORT_DAILY_COUNT": 10,
+  "CHAT_STORAGE_MAX": 100,
+  "CHAT_WORLD_STORAGE_MAX": 50,
+  "CHEST_TRACK_MAX_DISTANCE": 110,
+  "CURRENT_VALID_SCENE": [
+    3000,
+    1002,
+    501,
+    513,
+    3003,
+    3004,
+    3005,
+    20031,
+    20032,
+    20033,
+    20034,
+    20035,
+    20036,
+    20037,
+    20038,
+    20039,
+    20040,
+    20041,
+    20042,
+    20043,
+    20044,
+    20045,
+    20046,
+    20047,
+    20048,
+    20049,
+    20050,
+    20051,
+    20052,
+    20053,
+    20054,
+    20055,
+    20056,
+    20057,
+    20058,
+    20059,
+    20060,
+    20100,
+    29999,
+    7501,
+    7502,
+    7503,
+    7504,
+    7505,
+    7506,
+    7507,
+    7508,
+    7509,
+    7510,
+    7511,
+    7512,
+    7513,
+    7514,
+    7515
+  ],
+  "CUSTOM_DATA_CACHE_VERSION": 3,
+  "CarryEggModeInteractWhiteList": [
+    10001,
+    10007,
+    10008,
+    10009
+  ],
+  "ClientPerformanceLevelLowScoreLimit": 27,
+  "ClientPerformanceLevelScoreForbidden": 23,
+  "CollectCallFriendMessage": "CollectCallFriendMessage",
+  "CollectCallFriendNum": 10,
+  "CollectCallFriendRange": 15,
+  "DAILY_RECOMMEND_FRIEND_MAX_NUM": 50,
+  "DAYTIME_NIGHTTIME_ZONES": [
+    [
+      6,
+      0,
+      8,
+      0,
+      1
+    ],
+    [
+      8,
+      0,
+      17,
+      0,
+      2
+    ],
+    [
+      17,
+      0,
+      20,
+      0,
+      3
+    ],
+    [
+      20,
+      0,
+      6,
+      0,
+      4
+    ]
+  ],
+  "DAY_REAL_MIN": 99999999,
+  "DAY_START_MIN": 540,
+  "DIALOGUE_SKIP_BLACKLIST": [
+    89,
+    121
+  ],
+  "DISPATCH_RAINBOW_TIME": 0.2,
+  "DISPATCH_SHINY_TIME": 0.1,
+  "DISPATCH_TIME": 4,
+  "DITTO_DUNGEON_CD_TIME": 1,
+  "DITTO_DUNGEON_PLAY_TIME": -1,
+  "DURATION_DETECTIVESCAN": 15,
+  "DYNAMIC_LV_CALC_FUNC2": 5999,
+  "DYNAMIC_LV_CALC_FUNC6": 6000,
+  "DYNAMIC_LV_CALC_FUNC7": 6001,
+  "Direct_Purchase_Current_Country": {},
+  "Direct_Purchase_Package": [
+    "apple.official.Idchh1",
+    "google.official.A4g87q"
+  ],
+  "Direct_Purchase_Register_Country": [
+    "us"
+  ],
+  "Direct_Purchase_Server": {},
+  "ECOLOGICAL_PERIOD_CONSUME_COUNT": 2,
+  "ECOLOGICAL_PERIOD_FREE_COUNT": 3,
+  "ECS_FIRE_VOXEL_INFO": [
+    [
+      1,
+      35
+    ],
+    [
+      1,
+      35
+    ],
+    [
+      1,
+      35
+    ],
+    [
+      3,
+      35
+    ]
+  ],
+  "EGG_MODE_DASH_CD": 15,
+  "EP_VALUE_PER_BALL": 10,
+  "EXCHANGE_COST_ITEM_ID": 2,
+  "EXPLORE_J_SWITCH_INIT_STATE": 0,
+  "EXPLORE_LOCK_TIME": 0.5,
+  "EXPLORE_MAX_DISTANCE": 30,
+  "EXPLORE_V_SWITCH_INIT_STATE": 1,
+  "Eco_Redirect_Page_Show_Time": 8,
+  "EggModeInteractWhiteList": [
+    10001,
+    10007,
+    10008,
+    10009
+  ],
+  "ElectricField": 1200012,
+  "Electric_Element_Last_Time": 1,
+  "EnergyMatchAccessory": [
+    [
+      10
+    ],
+    [
+      25
+    ]
+  ],
+  "ExplosiveField": 1200013,
+  "FEEDBACK_URL": "https://funplus.yuque.com/yom8p8/mbe19g/ktk6uw/edit#85cm",
+  "FIRE_BURN_HIGH_GRASS_LAST_TIME": 1,
+  "FIRE_BURN_NORMAL_GRASS_LAST_TIME": 5,
+  "FIRE_END_SMOKE": "Eff_VEG_Fire_OnlySmoke_End",
+  "FIRE_END_SMOKE_EARLY_TIME": 0.5,
+  "FIRE_END_VAPOR": "Eff_VEG_Fire_OnlyVapor",
+  "FIRE_START_MAGIC": "Eff_VEG_Fire_OnlyMagic",
+  "FIRE_START_SMOKE": "Eff_VEG_Fire_OnlySmoke_Start",
+  "FIRST_TREE": 300001,
+  "FISHING_CAMERA_COORD": [
+    0,
+    -0.1,
+    1.75
+  ],
+  "FISHING_CAMERA_FOV": 35,
+  "FISHING_CAMERA_SPIN": [
+    0,
+    180,
+    0
+  ],
+  "FISHING_CATCH_NUM": 99,
+  "FISHING_CATCH_TIME": 180,
+  "FLUTE_PORTAL": 881084,
+  "FLUTE_PORTAL_GATE_DISTANCE": 0.5,
+  "FLUTE_PORTAL_TIME": 3,
+  "FLUTE_USE_SCENE_ID": [
+    3000,
+    515,
+    550
+  ],
+  "FOCUS_TARGET_LINE_ALPHA": 1,
+  "FOCUS_TARGET_LINE_ARC_HEIGHT": 1,
+  "FOCUS_TARGET_LINE_COLOR": [
+    1,
+    0.77,
+    0.37,
+    0.85
+  ],
+  "FOCUS_TARGET_LINE_ME_OFFSET": 0,
+  "FOCUS_TARGET_LINE_TARGET_OFFSET": 0,
+  "FOCUS_TARGET_LINE_WIDTH": 0.5,
+  "FRIENDSHIP_DAILY_LIMIT": 100,
+  "FRIEND_GIFTS_ID": [
+    [
+      7000
+    ],
+    [
+      7001
+    ],
+    [
+      7002
+    ]
+  ],
+  "FollowBackToNormalCountdown": 3,
+  "FollowBackToNormalDelay": 3,
+  "FollowBackToNormalInterruptCountLimit": 9999,
+  "GET_CHEST_TREASURE_RANGE": 60,
+  "GIVE_GIFT_NEED_FRIENDSHIPLEVEL": 3,
+  "GIVE_PETS_LIMIT_10": 58,
+  "GIVE_PETS_LIMIT_8": 56,
+  "GIVE_PETS_LIMIT_9": 57,
+  "GIVE_PET_TIME_LIMIT": 7200,
+  "GLAMOUR_STAR_BONUS_TYPE": [
+    "Ability",
+    "Attribute",
+    "Position",
+    "Form",
+    "Personality",
+    "Evolution"
+  ],
+  "GRABEGG_BECOMEEGG_HIDE": 5910001,
+  "GRABEGG_BECOMEEGG_INVISIBILITY": 5,
+  "GRABEGG_BECOMEEGG_SUICIDE": 5100010,
+  "GRABEGG_BECOMEEGG_TEAMSIZE": 1,
+  "GRABEGG_BECOMEEGG_TIMELIMIT": 600,
+  "GRABEGG_CAMERA_EXIT_DELAY_TIME": 2.5,
+  "GRABEGG_CHEAPBAG": 5020001,
+  "GRABEGG_CHEST_SPAWN_DURABILITY_RANGE": [
+    1,
+    1
+  ],
+  "GRABEGG_COLLECTBAG": 20,
+  "GRABEGG_COUNTDOWN_HIDE": 180,
+  "GRABEGG_COUNTDOWN_TRANSFER": 180,
+  "GRABEGG_EQUIP_DUR_COLOR": [
+    0,
+    30,
+    60
+  ],
+  "GRABEGG_KEYDOOR_CD": 60,
+  "GRABEGG_MARKER_INDEX": [
+    1019,
+    1020,
+    1022
+  ],
+  "GRABEGG_MONSTER_SPAWN_DURABILITY_RANGE": [
+    0,
+    0.8
+  ],
+  "GRABEGG_PVP_MODE": 1,
+  "GRABEGG_RANK_FAIL_COEFFICENT": 0.2,
+  "GRABEGG_RANK_SCORE_DOUBLE_MULTIPLE": 2,
+  "GRABEGG_RANK_SCORE_DOUBLE_TIME": 1,
+  "GRABEGG_RANK_SCORE_LIMIT": [
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      99,
+      7
+    ]
+  ],
+  "GRABEGG_RANK_SUCCESS_COEFFICENT": 1,
+  "GRABEGG_REMAIN_EXTRACT_TIME": [
+    5,
+    3,
+    1
+  ],
+  "GRABEGG_SAFEBOX_LINK_TAL": [
+    19,
+    23,
+    25
+  ],
+  "GRABEGG_SAFEBOX_WEIGHT": 5,
+  "GRABEGG_SCRAMBLE_TRANSFER": 8,
+  "GRABEGG_egg_form_height_dmg": [
+    20,
+    40,
+    75
+  ],
+  "GRABEGG_egg_form_height_range": [
+    4,
+    8,
+    12
+  ],
+  "RogueTransformBarDeductEffectValue": 5,
+  "SCENE_PLENTY_MIN_RANGE": 26,
+  "SCOPE_DETECTIVESCAN": 20,
+  "SEASON_PAGE_ORDER": [
+    "specialTrain",
+    "schoolGuide",
+    "battlePass",
+    "journeyTrial"
+  ],
+  "SEND_MESSAGE_CD": 5,
+  "SHOPMALL_SEARCH_HIGHLIGHT": "<style=Hint_BgD>{0}</style>",
+  "SHOP_BUY_LIMIT": 99,
+  "SHOP_TAB_ICON_TYPE": [
+    35
+  ],
+  "SHOW_ALERT_MARK_DISTANCE": 30,
+  "SHOW_QUEST_MARK_DISTANCE": 30,
+  "SHRINK_P_DELAY_TIME": 2.9,
+  "SHRINK_P_LIFE_TIME": 1,
+  "SIMPLE_CHAT_LIMIT_MAX": 25,
+  "SOCIAL_PARTY_DAILY_MAX_ITEM_NUM": [
+    [
+      700034,
+      150
+    ],
+    [
+      1013,
+      40
+    ]
+  ],
+  "SOCIAL_PARTY_PET_AI_CD": 100,
+  "SOCIAL_PARTY_PET_AI_EVENT": 1884,
+  "SOCIAL_PARTY_PET_AI_EVENT_DAILY_NUM": 1,
+  "SOCIAL_PARTY_PET_AI_MAX_NUM": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "SOCIAL_PARTY_PET_AI_REWARD_TIME": 15,
+  "SOCIAL_PARTY_PET_AI_TIME": 30,
+  "SOCIAL_PARTY_PET_AI_TRIGGER_DAILY_NUM": 5,
+  "SOUDACHE_PVP_SWITCH_PET_CD": 5,
+  "SOUDACHE_PVP_SWITCH_PET_CD_MODE": 0,
+  "SPECIALTRAIN_GRASS_ENDING_QUEST_JUMP": 6711001,
+  "SPEICIAL_TRAIN_BUBBLE_COOLDOWN": 86400,
+  "SPEICIAL_TRAIN_BUBBLE_DURATION": 10,
+  "STONE_NOT_ACTIVE_AREA": [
+    78053833
+  ],
+  "SendGiftLimitParam": 5,
+  "SendGiftLimitType": 2,
+  "SpecialTrainBadgeContinuousReward": [
+    10,
+    60420
+  ],
+  "TEAM_TOKEN_EXPIREDTIME": 600,
+  "TEMP_CAPTURE_STATIC_ID": {},
+  "TEXT_KEY_CATCH": [
+    "FC_CATCH_KEY_1",
+    "FC_CATCH_KEY_2",
+    "FC_CATCH_KEY_3"
+  ],
+  "THRESHOLD_MULTICATCH_NOTIFICATION": 2,
+  "THROWBALL_CAMERA_ANGLE": 0,
+  "THROWBALL_STARTPOINT_ANGLE": 1,
+  "THROWBALL_STARTPOINT_DISTANCE": 7,
+  "THROWBALL_TO_CAMERA_TWEEN_TIME": 0.4,
+  "TIPS_SIDE_ICON": {
+    "0": "$UI_Img_PetManual_TabIcon_Barchart.png"
+  },
+  "TIPS_SIDE_ICON_BIG": [
+    "$ui_item_7010.png"
+  ],
+  "TOAST_EN_TIME": 1.6,
+  "TOAST_JK_TIME": 1.4,
+  "TOPLOGO_BUBBLE_DISTANCE": 25,
+  "TOPLOGO_PLAYER_TITLE_VISIBLE_DIST": 5,
+  "TOPLOGO_PVP2_REVEAL_DURATION": 5,
+  "TOPLOGO_SHOW_UP_DOWN": [
+    20,
+    5
+  ],
+  "TRADE_AUDIT_TIME": 24,
+  "TRADE_FREEZE_TIME": 168,
+  "TRADE_FREE_PRICE_MAX": 20000000,
+  "TRADE_FREE_PRICE_MIN": 2000,
+  "TRADE_NOTICE_TIME": 24,
+  "TRADE_RECOMMEND_PRICE_INTERVAL": 1,
+  "TRADE_RECOMMEND_PRICE_MAX_RATIO": 1.5,
+  "TRADE_RECOMMEND_PRICE_MIN_RATIO": 0.5,
+  "TRADE_RECOMMEND_PRICE_STEP_RATIO": 0.05,
+  "TRADE_RECORD_LIMIT": 10,
+  "TRADE_RUSH_TIME": 5,
+  "TRADE_SELL_CURRENCY_TYPE": 4,
+  "TRADE_SELL_MAIL": 64,
+  "TRADE_STALL_FEE_CURRENCY_TYPE": 2,
+  "TRADE_STALL_FEE_MAX": 1000000,
+  "TRADE_STALL_FEE_MIN": 10000,
+  "TRADE_STALL_FEE_RATIO": 0.1,
+  "TRADE_STALL_NUM_LIMIT": [
+    10,
+    6
+  ],
+  "TRADE_SUBTYPE_NAME": [
+    [
+      "TRADE_SUBTYPE_NAME_11",
+      "TRADE_SUBTYPE_NAME_12"
+    ],
+    [
+      "TRADE_SUBTYPE_NAME_21"
+    ]
+  ],
+  "TRADE_TAX_RATE": 0.09,
+  "TRADE_TRANSFER_CURRENCY": 1,
+  "TRADE_TYPE_NAME": [
+    "TRADE_TYPE_NAME_1",
+    "TRADE_TYPE_NAME_2"
+  ],
+  "TRADE_WATCH_FULL_COUNT": 20,
+  "TRADE_WATCH_LIMIT": 12,
+  "TRAINING_CAMERA_POS_OFFSET": [
+    -0.53932,
+    -0.57668,
+    -0.43987
+  ],
+  "TRAINING_CAMERA_POS_OFFSET_MOBILE": [
+    -0.53932,
+    -0.57668,
+    -0.43987
+  ],
+  "TeamInviteValidTime": 180,
+  "ToplogoAlertExclamationTimeout": 2,
+  "WEIGHT_RANGE": [
+    0,
+    100,
+    125,
+    150,
+    175,
+    200
+  ],
+  "WHITE_LIST_FUNCTION": [
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      2,
+      14
+    ]
+  ],
+  "Water_Element_Ice_Last_Time": 60,
+  "Water_Element_Ice_Max_Num": 20,
+  "WeatherForecastDuration": 1440,
+  "WeatherForecastPush": 5,
+  "WeightPushMaxSpeed": 5,
+  "airFrictionRate": 0.0125,
+  "appearFromTopLogoBuffTime": 2,
+  "avatarDensity": 0.9,
+  "avatarMass": 35,
+  "avatarVolume": 0.075,
+  "avatarWeight": 67.5,
+  "badgeMaxRewardQuestId": 2620003,
+  "banLogicTimeTick": true,
+  "boilHeat": 25,
+  "bossTitleBuffCount": 6,
+  "bounciness": 0,
+  "buffDisappearHintDuration": 3,
+  "buffDisappearHintDurationLimit": 5,
+  "burnRate": 0.05,
+  "cameraFocus": 1,
+  "cameraIndexIncreaseRateIn13Mode": 0.5,
+  "cameraMaxZoomIndexReduceMobile": 4,
+  "cancelExploreSwitchDelay": 3,
+  "catchAbsorbSpeedMax": 4000,
+  "catchDampingRateMax": 1,
+  "chainAttackRespondDuration": 2.5,
+  "chestRewardAttractAbsorbDuration": 0.6,
+  "chestRewardAttractAbsorbDurationMax": 0.45,
+  "chestRewardAttractAbsorbDurationMin": 0.45,
+  "chestRewardAttractAbsorbEffectByQuality": [
+    "Eff_SceneObject_LootBoxAbsorb_White_01",
+    "Eff_SceneObject_LootBoxAbsorb_Green_01",
+    "Eff_SceneObject_LootBoxAbsorb_Blue_01",
+    "Eff_SceneObject_LootBoxAbsorb_Purple_01",
+    "Eff_SceneObject_LootBoxAbsorb_Gold_01",
+    "Eff_SceneObject_LootBoxAbsorb_Rainbow_01"
+  ],
+  "chestRewardAttractAbsorbEffectDefault": [
+    "Eff_PVE_Boss_Multiple_Battle_Gain_White",
+    "Eff_PVE_Boss_Multiple_Battle_Gain_White",
+    "Eff_PVE_Boss_Multiple_Battle_Gain_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Gain_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Gain_Gold"
+  ],
+  "chestRewardAttractAbsorbEffectOffsetY": 0.6,
+  "chestRewardAttractAbsorbEndUp": 0.4,
+  "chestRewardAttractAbsorbSideRandom": 0.15,
+  "chestRewardAttractAbsorbSound": "SFX_SceneObject_Chest_Absorb",
+  "chestRewardAttractAbsorbStartUp": 0.8,
+  "chestRewardAttractAbsorbUseVariableSpeed": true,
+  "chestRewardAttractDefaultRadius": 1.5,
+  "chestRewardAttractFallDuration": 0.6,
+  "chestRewardAttractFallDurationMax": 1.25,
+  "chestRewardAttractFallDurationMin": 0.5,
+  "chestRewardAttractFallEndUp": -0.7,
+  "chestRewardAttractFallGravity": 12,
+  "chestRewardAttractFallSideRandom": 0.1,
+  "chestRewardAttractFallStartUp": 2.1,
+  "chestRewardAttractPillarByQuality": [
+    "Eff_SceneObject_LootBoxOpened_White_01",
+    "Eff_SceneObject_LootBoxOpened_Green_01",
+    "Eff_SceneObject_LootBoxOpened_Blue_01",
+    "Eff_SceneObject_LootBoxOpened_Purple_01",
+    "Eff_SceneObject_LootBoxOpened_Gold_01",
+    "Eff_SceneObject_LootBoxOpened_Rainbow_01"
+  ],
+  "chestRewardAttractPillarDefault": [
+    "Eff_Env_GrabEgg_Indication_Green",
+    "Eff_Env_GrabEgg_Indication_Green",
+    "Eff_Env_GrabEgg_Indication_Blue",
+    "Eff_Env_GrabEgg_Indication_Blue",
+    "Eff_Env_GrabEgg_Indication_Glod"
+  ],
+  "chestRewardAttractStayDuration": 0.1,
+  "chestRewardAttractTrailAbsorbByQuality": [
+    "Eff_SceneObject_LootBox_Trail02_White_01",
+    "Eff_SceneObject_LootBox_Trail02_Green_01",
+    "Eff_SceneObject_LootBox_Trail02_Blue_01",
+    "Eff_SceneObject_LootBox_Trail02_Purple_01",
+    "Eff_SceneObject_LootBox_Trail02_Gold_01",
+    "Eff_SceneObject_LootBox_Trail02_Rainbow_01"
+  ],
+  "chestRewardAttractTrailAbsorbDefault": [
+    "Eff_PVE_Boss_Multiple_Battle_Trail_White",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_White",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Gold"
+  ],
+  "chestRewardAttractTrailByQuality": [
+    "Eff_PVE_Boss_Multiple_Battle_Trail_White",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_White",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Gold"
+  ],
+  "chestRewardAttractTrailFallByQuality": [
+    "Eff_PVE_Boss_Multiple_Battle_Trail_White_Gravity",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Green_Gravity",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Blue_Gravity",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Purple_Gravity",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Gold_Gravity",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Rainbow_Gravity"
+  ],
+  "chestRewardAttractTrailFallDefault": [
+    "Eff_PVE_Boss_Multiple_Battle_Trail_White",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_White",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Blue",
+    "Eff_PVE_Boss_Multiple_Battle_Trail_Gold"
+  ],
+  "climbSpeedLevels": [
+    1.5,
+    2,
+    2.5
+  ],
+  "climbSprintSpeedRate": 1.5,
+  "climbToTopAngleLimit": 45,
+  "climbToTopHighHeightRatioRange": [
+    0.75,
+    1
+  ],
+  "climbToTopLowHeightRatioRange": [
+    0.5,
+    0.75
+  ],
+  "collisionIgnoreRatio": 0.1,
+  "controllerMaxCollisionV": 10,
+  "dashLimitNum": 3,
+  "dashRechargeTime": 0.8,
+  "deadCatchTimeTolerance": 0.5,
+  "defaultAfkFov": 25,
+  "defaultAnimScaleInInflate": 3,
+  "defaultAnimScaleInLowGravity": 3,
+  "defaultAnimScaleInLowGravityAndInflate": 9,
+  "defaultBattleBreakRecoverTime": 0,
+  "defaultBattleBreakTime": 5,
+  "defaultClimbEndSlidingSpeed": 0.3,
+  "defaultEnterSwimDepthRatio": 0.65,
+  "defaultExitSwimDepthRatio": 0.45,
+  "defaultFlyHeight": 3,
+  "defaultFlySpeedRatioBySprint": 1,
+  "defaultGamepadMenuList": [
+    "BAG",
+    "PETENTRY",
+    "MAP",
+    "PETRESEARCH",
+    "QUEST",
+    "TAKEPHOTO",
+    "SPECIALTRAIN",
+    "ACTIVITYCENTER"
+  ],
+  "defaultGroundWalkSpeed": 1.5,
+  "defaultIdleSpecialProb": 0.3,
+  "defaultIdleSpecialProbConnectMode": 0.3,
+  "defaultInteractStopDist": 0.5,
+  "defaultLookAtDist": 8,
+  "defaultLookAtPointHeight": 0.5,
+  "defaultMaterialId": 29600836,
+  "defaultSlipRadiusRatio": 0.3,
+  "defaultSneakSpeed": 4.7,
+  "defaultSpAnimProb": 0.8,
+  "defaultTurnMaxTime": 0.3,
+  "defaultTurnMaxTimeInAir": 1,
+  "defaultTurnMaxTimeInClimb": 0.4,
+  "defaultTurnMaxTimeInFly": 0.8,
+  "defaultTurnMaxTimeInGlide": 2,
+  "defaultTurnMaxTimeInInflate": 2,
+  "defaultTurnMaxTimeInLoco": 0.3,
+  "defaultTurnMaxTimeInLocoAI": 0.6,
+  "defaultTurnMaxTimeInSpeedBurstFall": 2.5,
+  "defaultTurnMaxTimeInSwim": 2,
+  "defaultTurnMaxTimeInSwimAI": 0.4,
+  "detectSkillEffectRange": 50,
+  "detectSkillSweepLineSpeed": 20,
+  "deviceRumbleRatio": [
+    [
+      0.9,
+      0.9
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0.9,
+      0.9
+    ]
+  ],
+  "dialogueCameraDis": 3,
+  "dialogueCameraOffsetPitch": -5,
+  "dialogueCameraOffsetYaw": -20,
+  "dialogueGraphAmbientIntensity": 3.5,
+  "dialogueGraphAmbientIntensityBlendTime": 1.5,
+  "diceMachineBonusId": [
+    [
+      73006
+    ],
+    [
+      73016
+    ],
+    [
+      73025
+    ],
+    [
+      73035
+    ]
+  ],
+  "diceMachineCost": [
+    [
+      100,
+      100
+    ],
+    [
+      100,
+      100
+    ],
+    [
+      0,
+      50
+    ],
+    [
+      0,
+      50
+    ]
+  ],
+  "digEggDelayQteTime": 1,
+  "dropLimit": 5,
+  "drownedHpPer": 0.2,
+  "dynamicFriction": 1.5,
+  "eliteCatchPanelTagDefault": [
+    "ELITE_CATCH_PANEL_TAG_1"
+  ],
+  "eliteDeadCatchDizzinessEffectDuration": 122,
+  "eliteDeadCatchDuration": 120,
+  "enableWeightPush": false,
+  "enemyExtraCollideRadiusAddRatio": 0.6,
+  "enemyExtraCollideRadiusMax": 0.6,
+  "enemyExtraCollideRadiusMin": 0.4,
+  "enterFlyTimeAfterJump": 0.3,
+  "evacuationCountdown": 30,
+  "exploreCustomAbilityIdsMaxCount": 4,
+  "exploreCustomAbilityIdsMinCount": 1,
+  "explorePetHpRegenRate": 0.05,
+  "explorePetHpRegenRateInCombat": 0.01,
+  "explorePetReviveTime": 60,
+  "explorePetReviveTimeInCombat": 600,
+  "exploreTime": [
+    1,
+    1,
+    1.3,
+    1.8,
+    2.6,
+    3.8
+  ],
+  "fallenAidDuration": 10,
+  "fallenBeHitInterval": 1,
+  "fallenHp": 180,
+  "fallenInjuredReduceHp": 25,
+  "fallenReduceHp": 1,
+  "fallenReduceHpSkip": 50,
+  "fallenSelfHelpDuration": 20,
+  "fightCustomAbilityIdsMaxCount": 4,
+  "fightCustomAbilityIdsMinCount": 1,
+  "fireTransmissionEfficiency": 0.1,
+  "floatIceCreateInterval": 0.1,
+  "floatingDuration": 0.6,
+  "focusGoldColor": [
+    1,
+    1,
+    0.8588235,
+    1
+  ],
+  "focusWhiteColor": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "followStaminaCostReductionRate": 0.5,
+  "forbidFollowMasterCharStateList": [
+    "AIRING",
+    "CLIMBING",
+    "GLIDING",
+    "SWIMMING",
+    "MOUNTING"
+  ],
+  "forbidIdleSpecialCameraDistanceIndex": 2,
+  "g": 20,
+  "glideMaxYVelocity": 2,
+  "glideMaxYVelocityRatio": 0.5,
+  "glideSpeedLevels": [
+    5,
+    6,
+    7
+  ],
+  "glideSpeedRatio": 0.75,
+  "goHomeTimeOutValue": 10,
+  "groupDropChestMailId": -1,
+  "heatRadiationRate": 0.1,
+  "helpDuration": 7,
+  "helpRecentNum": 5,
+  "helpTime": 8,
+  "hhNeedStarTitle": {
+    "201": 6,
+    "202": 7,
+    "203": 8
+  },
+  "hookClawMaxDistance": 33,
+  "imgBgImageColor": [
+    0.878431373,
+    0.698039216,
+    0.152941176,
+    0.4
+  ],
+  "imgLineColor": [
+    1,
+    1,
+    0.784313725,
+    1
+  ],
+  "imgLineGlowColor": [
+    1,
+    0.917647059,
+    0,
+    1
+  ],
+  "inflateFadeInTime": 0.2,
+  "inflateFadeOutTime": 0.2,
+  "inflateStateDuration": 15,
+  "initPetActionMode": 1,
+  "initialPets": [
+    410001,
+    410002
+  ],
+  "ToplogoAlertMax": 8,
+  "ToplogoAlertStartRemoveFOV": 80,
+  "ToplogoAlertThreshold1": 0.33,
+  "ToplogoAlertThreshold2": 0.66,
+  "TrainGroundPetList": [
+    11001100,
+    11001200,
+    11002100,
+    11002200,
+    11002300,
+    11003100,
+    11003200,
+    11004100,
+    11004200,
+    11004300,
+    11005100,
+    11005200,
+    11005300,
+    11007100,
+    11007200,
+    11008100,
+    11008300,
+    11012200,
+    11016100,
+    11016200,
+    11017100,
+    11018100,
+    11018500,
+    11018700,
+    11019100,
+    11019200,
+    11019400,
+    21001200,
+    21002300,
+    21003200,
+    21004300,
+    21005300,
+    21007200,
+    21008300,
+    21017400,
+    21019400
+  ],
+  "UNUSABLE_HERALDRY_ALL_LIST": [
+    1021300,
+    1036100,
+    1036300,
+    1037100,
+    1037300
+  ],
+  "UNUSABLE_HERALDRY_SHINYSTYTLE_LIST": [
+    990005,
+    [
+      1021300,
+      1036100,
+      1036300,
+      1037100,
+      1037300
+    ]
+  ],
+  "UNUSABLE_HERALDRY_SHINY_LIST": [
+    510101,
+    [
+      0
+    ]
+  ],
+  "USE_ECS_BODY": true,
+  "VISION_CLEAR_SNEAK_TIME": 3,
+  "WAIT_APPLICANT_TIME": 15,
+  "WAIT_INVITE_TIME": 15,
+  "WEGAME_DISTRIBUTE_ID_LIST": [
+    "3002018042001",
+    "3002018042002",
+    "3002018042003",
+    "3002018042008"
+  ],
+  "likeColor": [
+    1,
+    0.9882353,
+    0.5490196,
+    1
+  ],
+  "lookatCameraDistanceIndex": 2,
+  "mapUnlockDelay": 0,
+  "massPushRatio": 0.1,
+  "massPushThreshold": 0.1,
+  "maxAirFrictionX": 0.25,
+  "maxAirFrictionY": 1,
+  "maxHatredArrowNum": 10,
+  "maxMagnesisIndicationDis": 100,
+  "minBoxDist": 0.5,
+  "minRigidbodyCollisionV": 2.5,
+  "minStepHeightDownInSpeedBurst": 0.4,
+  "minStepHeightUpInSpeedBurst": 1,
+  "mockBattle_UP": 10000011,
+  "mockBattle_UP_RULE": 2,
+  "mockBattle_UpLimit": 12,
+  "nearDeadDuration": 300,
+  "needPauseAIUIList": [
+    18,
+    29,
+    79
+  ],
+  "noTargetGoCD": 19,
+  "openingTimelineParams1": [
+    8.55,
+    11.55,
+    11.85,
+    1.5,
+    13.35,
+    14.35
+  ],
+  "openingTimelineParams2": [
+    2.05,
+    5.05,
+    7.05,
+    7.85
+  ],
+  "openingTimelineParams3": [
+    1,
+    4,
+    6,
+    6.8
+  ],
+  "petReviveHealth": 0.1,
+  "playerNameCost": {
+    "1012": 1
+  },
+  "playerNameMaxLen": 7,
+  "playerReviveHealth": 5,
+  "playerSignatureMaxLen": 20,
+  "playerTagsMaxCount": 2,
+  "radiationExpandRate": 2,
+  "refreshTimestampAP": 4,
+  "refreshTimestampCN": 4,
+  "refreshTimestampEU": 4,
+  "refreshTimestampUS": 4,
+  "respawnCostDefault": {
+    "620001": 1
+  },
+  "reviveStateDuration": 1.3,
+  "rippleIntensityTrailDefault": 1,
+  "rippleIntensityTrailInRiver": 3,
+  "runSpeedLevels": [
+    4.2,
+    4.7,
+    5.2
+  ],
+  "safe_area_mobile": 132,
+  "sceneInit": 3002,
+  "selfStatusBuffCount": 6,
+  "showSignatureMaxLen": 20,
+  "sizeLevelTableBy2": {
+    "Small": [
+      0,
+      0.6
+    ],
+    "Large": [
+      0.6,
+      9999
+    ]
+  },
+  "sizeLevelTableBy3": {
+    "Large": [
+      1.2,
+      9999
+    ],
+    "Medium": [
+      0.5,
+      1.2
+    ],
+    "Small": [
+      0,
+      0.5
+    ]
+  },
+  "skillItemIds": [
+    1000
+  ],
+  "soundImpulseConversion": [
+    [
+      180,
+      1
+    ],
+    [
+      250,
+      2
+    ],
+    [
+      480,
+      3
+    ],
+    [
+      800,
+      4
+    ]
+  ],
+  "spawnIceHeightCorrection": 0.2,
+  "sprintSpeedLevels": [
+    6,
+    6.5,
+    7
+  ],
+  "starting_grab_guarantee_chance": 30,
+  "starting_grab_guarantee_egg": [
+    5010999
+  ],
+  "starting_grab_guarantee_item": [
+    5000121,
+    5000219,
+    5000407,
+    5000409,
+    5000410
+  ],
+  "starting_grab_guarantee_item2": [
+    5000221,
+    5000218,
+    5001317,
+    5001321,
+    5001329,
+    5001333
+  ],
+  "staticFriction": 1.5,
+  "stepHeightDownInBEgg": 1,
+  "stepHeightDownInDBNO": 1,
+  "stepHeightDownInSkateboard": 1.5,
+  "stepHeightDownInSkill": 1.5,
+  "stepHeightUpInBEgg": 0.4,
+  "stepHeightUpInDBNO": 0.4,
+  "stepHeightUpInSkateboard": 0.5,
+  "stepHeightUpInSkill": 0.3,
+  "stepUpAngleLimit": 75,
+  "stepUpHeightRatioRange": [
+    0.2,
+    0.5
+  ],
+  "RAPIDCATCH_DISTANCE": 15,
+  "REAL_TIME_VOICE_THRESHOLD": 25,
+  "REBATE_LINK_CN": "https://www.yimo.com/act/rebate/zh/",
+  "REBATE_LINK_OVERSEA": "https://www.aniimo.com/act/rebate/{0}/",
+  "RECEIVE_FLUTE_CD": 1800,
+  "RECONNECT_MAX_TIMES": 3,
+  "REUNION_LEVEL": 50,
+  "ROBEGG_COLLECTION_TIME": 2,
+  "ROBEGG_GRAB_TIME": 6,
+  "ROBEGG_INCUBATION_TIME": 180,
+  "ROBEGG_MAXEGG_SHIEID_TIME": 300,
+  "ROGUE_HEAL_EVENT_ID": 70000247,
+  "ROGUE_MVP_COMMON_COEFFICIENT": [
+    2,
+    1,
+    1
+  ],
+  "ROGUE_MVP_DPS_COEFFICIENT": [
+    1,
+    1,
+    1.2
+  ],
+  "ROGUE_MVP_EQUIPMENT_COEFFICIENT": [
+    1,
+    0,
+    1
+  ],
+  "ROGUE_MVP_HEAL_COEFFICIENT": [
+    1.2,
+    1.2,
+    0.8
+  ],
+  "ROGUE_MVP_TANK_COEFFICIENT": [
+    1.2,
+    0.8,
+    1
+  ],
+  "ROGUE_MVP_TRANSFORM_COEFFICIENT": [
+    1.5,
+    1.5,
+    1.5
+  ],
+  "ROGUE_REVIVE_COST": 100,
+  "RUMBLE_ATTACK_TYPE": [
+    2,
+    3,
+    4
+  ],
+  "ReceiveGivePetDailyLimit": 10,
+  "RobEggCoinFlush": {
+    "500001": 2
+  },
+  "RobEggFinishID": [
+    500002,
+    500012,
+    500022,
+    500032
+  ],
+  "RogueTalentResetCost": 50,
+  "RogueTransformBarColorDiv": 40,
+  "turnMaxTimeInAirBEgg": 1,
+  "turnMaxTimeInAirDBNO": 3,
+  "turnMaxTimeInBEgg": 0.8,
+  "turnMaxTimeInDBNO": 1,
+  "upgradedPets": [
+    410003,
+    410004
+  ],
+  "walkSpeedLevels": [
+    1.2,
+    1.5,
+    1.8
+  ],
+  "waterAbsorbRate": 0.05,
+  "waterCollideDepth": 0.3,
+  "waterVelocityScale": 0.7,
+  "weaponReturnToBackAniClips": [
+    1505221118,
+    -1913318376,
+    -634878691
+  ],
+  "weightPushThreshold": 0.1,
+  "whiteImgBgImageColor": [
+    0.2392157,
+    0.2392157,
+    0.3137255,
+    0.4
+  ],
+  "whiteImgLineColor": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "whiteLikeColor": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "toplogoOffset": 0.15,
+  "toplogoNpcDialogueScaleLimit": [
+    0.6,
+    1
+  ],
+  "toplogoNpcDialogueOpacityLimit": [
+    0.6,
+    1
+  ],
+  "toplogoNpcDialogueLongdistanceScaleLimit": [
+    0.9,
+    1.4
+  ],
+  "toplogoNpcDialogueLongdistanceOpacityLimit": [
+    0.6,
+    1
+  ],
+  "toplogoNpcDialogueLongdistanceDistance": [
+    5,
+    63
+  ],
+  "toplogoNpcDialogueDistance": [
+    5,
+    10
+  ],
+  "toplogoFadeTime": 5,
+  "toplogoBuffCount": 3,
+  "toplogoBubbleTooCloseToHideDist": 0.9,
+  "toplogoBubbleScaleMinDistance": 1.2,
+  "toplogoBubbleScaleLimit": [
+    0.5,
+    3
+  ],
+  "toplogoBubbleScaleDefaultDistance": 4.5,
+  "timeSwitchAnimRate": [
+    1,
+    1.5,
+    2
+  ],
+  "teammateBuffCount": 4,
+  "teamHateTgtMinHoldTimeRange": [
+    8,
+    12
+  ],
+  "teamHateTgtDecayRate": 0.1,
+  "teamHateSwitchTargetOverRatio": 0.2,
+  "teamHateInitHateRatio": 0.2,
+  "switchAppearTime": 0.4,
+  "swimNormalSpeedLevels": [
+    3,
+    4,
+    5
+  ],
+  "swimFastSpeedLevels": [
+    4,
+    5.2,
+    6.5
+  ],
+  "supportPetSummonOffset": [
+    1.5,
+    0,
+    0
+  ],
+  "sublimateHeat": 30,
+  "struggleDepthRatioInWater": 0.8,
+  "leylineTree_UP_RULE": [
+    3,
+    4
+  ],
+  "leylineTree_UP": 10000010,
+  "leyLineCatchCircularTrans": [
+    -0.348,
+    0.06,
+    -0.032
+  ],
+  "leyLineCatchBoomTrans": [
+    -0.348,
+    0.06,
+    -0.032
+  ],
+  "killBossFreezeScale": 0.1,
+  "killBossFreezeDuration": 3,
+  "killBossFreezeDelay": 0.1,
+  "killBossCameraOffsetAngle": 25,
+  "killBossCameraMaxDistance": 3.5,
+  "jumpOnWallToTopHighHeightRange": [
+    0,
+    0.9
+  ],
+  "jumpOnWallHeightRatio": 1,
+  "jumpOnWallAngleLimit": 30,
+  "CHANGE_PETS_DAILY_LIMIT": 200,
+  "CHANGE_PETS_CD": 30,
+  "CHANGE_LIMIT_9": 54,
+  "CHANGE_LIMIT_8": 53,
+  "CHANGE_LIMIT_10": 55,
+  "CHANGE_FRIEND_FRIENDSHIPLV": 6,
+  "CATCH_SUCCESS_RATE_RESTRAIN_RATIO_SHINY": 1,
+  "CATCH_SUCCESS_RATE_RESTRAIN_RATIO_ELITE": 0.5,
+  "CATCH_SUCCESS_RATE_RESTRAIN_LEVEL_RATIO_MAX": 0.5,
+  "CATCH_SUCCESS_RATE_RESTRAIN_LEVEL_RATIO": 0.1,
+  "CATCH_SUCCESS_RATE_RESTRAIN_LEVEL": 5,
+  "CATCH_SUCCESS_RATE_BACKSTAB": 1.5,
+  "CATCH_SUCCESS_COLOR_RATE": [
+    0.2,
+    0.7
+  ],
+  "CATCH_ROGUE_TOPLOGO_DISTANCE": 30,
+  "CATCH_LUCKY_REWARD_EFFECT_CFG": {
+    "stayDuration": 0.1,
+    "radius": 1.5,
+    "absorbDurationMax": 0.9,
+    "absorbDurationMin": 0.7,
+    "absorbEndUp": 0.4,
+    "absorbSideRandom": 0.15,
+    "absorbStartUp": 0.8,
+    "fallDurationMax": 0.8,
+    "fallDurationMin": 0.7,
+    "fallGravity": 20
+  },
+  "CATCH_LUCKY_REWARD_DISPLAY_PARAM": [
+    3.45,
+    0.8,
+    6.1,
+    2
+  ],
+  "CATCH_LUCKY_REWARD_DISPLAY_FORMULA": 1142,
+  "CATCH_FLY_MAX_HEIGHT": 30,
+  "CATCH_CAMERA_TARGETSHOULDER_CROUCH": [
+    0,
+    1,
+    0
+  ],
+  "CATCH_CAMERA_TARGETSHOULDER_BOSS": [
+    0.65,
+    0,
+    0.7
+  ],
+  "CATCH_CAMERA_TARGETSHOULDER": [
+    0.45,
+    0.22,
+    -0.15
+  ],
+  "CATCH_CAMERA_TARGETPIVOTOFFSET_CROUCH": [
+    0.45,
+    0.35,
+    0
+  ],
+  "CATCH_CAMERA_TARGETPIVOTOFFSET_BOSS": [
+    0,
+    1.4,
+    0
+  ],
+  "CATCH_CAMERA_TARGETPIVOTOFFSET": [
+    0,
+    1.43,
+    0
+  ],
+  "CATCH_CAMERA_TARGETARMLENGTH_CROUCH": 2.4,
+  "CATCH_CAMERA_TARGETARMLENGTH_BOSS": 2.4,
+  "CATCH_CAMERA_TARGETARMLENGTH": 2.4,
+  "CATCH_CAMERA_FOCUSDISTANCE_BOSS": 10,
+  "CATCH_CAMERA_CAMRIGHTDIS_BOSS": 1.1,
+  "CATCH_BALL_CLIENT_DESTROY_DELAY_TIME": 2,
+  "CATCHCAMERALOCK_MAX_DISTANCE": 11.5,
+  "CAN_NOT_REROLL_MBTI": [
+    1036100,
+    1036300,
+    1037100,
+    1037300
+  ],
+  "CANNOT_SEND_CATCH_BALL_LIST": [
+    110006
+  ],
+  "CAMERA_DECELERATION_TIME": 0.15,
+  "CALL_FRIENDS_TOP_LOGO_MAX_DISTANCE": 10,
+  "BossRushStarMultiplierMidBoss": 2,
+  "BossRushResultWaitTime": 30,
+  "BossRushRespawnTime": 5,
+  "BossRushRespawnNum": 4,
+  "BossRushPrepareLevelId": 10001,
+  "BossRushPlayerBotList": [
+    301001,
+    301002,
+    301003,
+    301004
+  ],
+  "BossRushMaxStarSideBoss": 15,
+  "BossRushLuckyPetTriggerEffect": "Eff_PVE_Boss_Multiple_Battle_BossRush_Lucky",
+  "BossRushCombatStartUpRatio": 0,
+  "BossRushCombatStartEpRatio": 1,
+  "BossRushCombatDuration": 180,
+  "BossRushAssistRewardStarNum": 5,
+  "BossRushAssistRewardNumLimit": 12,
+  "BossRushAssistRewardItemId": 990058,
+  "BlackTransitionFadeOutTime": 0.2,
+  "BlackTransitionDuration": 0.2,
+  "BigBodyLevel": 2,
+  "BUBBLE_DISTANCE_RATIO": 0.5,
+  "BREAK_VIBRATION_CUTOFF": [
+    0.3,
+    0.5
+  ],
+  "BREAK_STATE_CUTOFF": [
+    0.3,
+    0.7
+  ],
+  "BREAKCATCH_INITSPEED": 20,
+  "BOX_NUM_MAX": 35,
+  "BOSS_HP_HUD_BLOOD_VX_TIME_LIMIT": 0.4,
+  "BOSS_HP_HUD_BLOOD_VX_THRESHOLD": 1,
+  "BOSS_CATCH_STOP_DIST": 5,
+  "BOSS_CATCH_START_DIST": 8,
+  "BIGWHITEBALL_TIMELIMIT_MAX": 7,
+  "BIGWHITEBALL_TIMELIMIT_INIT": 7,
+  "BIGWHITEBALL_ANGLE_V": 30,
+  "BATTLE_PASS_LEVEL_UP_PURCHASE": [
+    3,
+    100
+  ],
+  "BATTLE_PASS_LEVEL_UP_MAX": 100,
+  "BATTLE_PASS_LEVEL_UP_EXP": 1000,
+  "BATTLE_PASS_CYCLEWARD_RECV_MAX": 200,
+  "BATCH_RELEASE_TIP_NUM_COLOR_2": "#000000",
+  "ACCUSATION_DESC_LIMIT": 200,
+  "ACTIVITY_PET_HATCH_SPEED": 500,
+  "ACT_FIRST_CHARGE_QUALIFY_COND_ID": 1601253,
+  "AIMSWITCH_MAX_DISTANCE": 30,
+  "AIMSWITCH_SHIFT_DISTANCE": [
+    [
+      10,
+      1
+    ],
+    [
+      10.5,
+      0.7
+    ],
+    [
+      11,
+      0.5
+    ],
+    [
+      11.5,
+      0
+    ]
+  ],
+  "AI_TRACK_CD": 3,
+  "AI_TRACK_DISTANCE": 25,
+  "AI_TRACK_LIMIT": 307002,
+  "ALBUM_BLANK_DAYS": [
+    0,
+    2,
+    2,
+    2
+  ],
+  "ALBUM_INIT_COUNT": 50,
+  "AUDIO_PRESS_THRESHOLD": 0.3,
+  "BATCH_RELEASE_TIP_NUM_COLOR_1": "#000000",
+  "BADGE_UNLOCK": [
+    1013,
+    4
+  ],
+  "BADGE_COST": [
+    1013,
+    1
+  ],
+  "AndroidCloudUrl": "https://yimo.com/cloud_down",
+  "PET_FOLLOW_LIST_LOCATION": [
+    [
+      -0.6,
+      0.7,
+      -0.5
+    ],
+    [
+      0.6,
+      0.7,
+      -0.5
+    ],
+    [
+      0,
+      0.7,
+      -0.5
+    ]
+  ],
+  "PET_FOLLOW_LINE_LOCATION": [
+    -0.6,
+    0.7,
+    0.5
+  ],
+  "PET_FERTILITY_TOPLOGO_DISTANCE": 25,
+  "PET_EXCHANGE_GOLDEN": [
+    700034,
+    150
+  ],
+  "PET_PANEL_ACTION": [
+    "idle",
+    "idle",
+    "idle",
+    "idle"
+  ],
+  "PET_IMAGE": "UI_PetImgBig",
+  "PET_ICON": "UI_PetHead",
+  "PET_EXCEED_LEVEL_MAX": 10,
+  "PET_ACTION_FEEDBACK_RANGE": 5,
+  "PET_ACTION_FEEDBACK_CD": 10,
+  "PRIVATE_VIEW_MAX_COUNT": 99,
+  "PROP_INTVAL_CATCH": [
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      10,
+      100
+    ]
+  ],
+  "PUPPET_HEALTH_DISTANCE": 40,
+  "PetConjunctionCountdownTime": 15,
+  "PetManualScaleSwitchDuration": 0.5,
+  "PetManualSceneSwitchDuration": 1.2,
+  "QTE_EGG_STRUGGLE_DELAY": 3,
+  "QUICK_EP_RECOVER_INTERVAL": 0.3,
+  "QUICK_EQUIP_BALL_SLOT": [
+    7
+  ],
+  "QUICK_EQUIP_ITEM_SLOT": [
+    6,
+    19
+  ],
+  "QUICK_EQUIP_SLOT": [
+    10,
+    4,
+    10
+  ],
+  "QUICK_MARK_CD": 0.1,
+  "IntelFilterSameSpeciesNumLimit": 2,
+  "QUICK_P_LIFE_TIME": 3,
+  "RAINBOW_CRYSTAL_ITEM_ID": 590011,
+  "RAINBOW_FLOWER_EFFECT": "Eff_Env_SceneObject_LeaderFlower_KeyItem_GuangzhuBurst",
+  "RAINBOW_PET_SPAWN_EFFECT": "Eff_Env_RainbowPet_Spawn",
+  "PORTAL_POINT_CD": 3,
+  "PLAYER_MAX_LEVEL": 100,
+  "PLAYER_GHOST_FLASH_INTERVAL": [
+    5,
+    1
+  ],
+  "PHOTO_TEMPLATE_MINE": 50,
+  "PHOTO_TEMPLATE_COLLECT": 50,
+  "PHOTO_LOCK_DISTANCE": 30,
+  "PHOTO_ACTION_TIME_RANGE": [
+    3,
+    5
+  ],
+  "PHOTO_ACTION_PARAM": [
+    5,
+    3,
+    2
+  ],
+  "PHOTO_ACTION_DURATION_I": [
+    5,
+    5,
+    10,
+    6,
+    5,
+    10
+  ],
+  "PHOTO_ACTION_DURATION_E": [
+    8,
+    5,
+    3,
+    5,
+    8,
+    7
+  ],
+  "PET_PVP_AVARAGE_HELP_ID": 5001,
+  "PET_PANEL_POSITION": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "LEYLINE_FLOWER_RAINBOW_CAMERA_START_FOV": 40,
+  "PET_LEADER_LINE_LOCATION": [
+    -0.6,
+    0.7,
+    -0.5
+  ],
+  "LEYLINE_FLOWER_RAINBOW_CAMERA_HEIGHT": 12,
+  "LEYLINE_FLOWER_RAINBOW_CAMERA_FOCUS_DURATION": 2,
+  "PET_GROUP_EMERGENCE_OVERRIDE_BEHAV": {
+    "Param_ST_Sensed": "PBT_Vision_Alert",
+    "behavGroupId": "BG_Wild_GroupEmergence",
+    "perceptGroupId": "",
+    "Param_ST_Alert": "PBT_Perception_Stare",
+    "patrolRange": 3,
+    "bornState": "LOCOMOTION"
+  },
+  "GRABEGG_egg_form_hp": [
+    100,
+    120,
+    150
+  ],
+  "GRABEGG_egg_form_speed_dmg": [
+    5,
+    10,
+    25
+  ],
+  "GRABEGG_egg_form_speed_range": [
+    4,
+    8,
+    12.8
+  ],
+  "GRABEGG_egg_form_state": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "GRABEGG_egg_hit_dmg": [
+    5,
+    5,
+    5
+  ],
+  "GRABEGG_egg_limite_count": 5,
+  "GRABEGG_egg_limite_eggid": 5010110,
+  "GRABEGG_egg_limite_time": 10,
+  "GRABEGG_egg_repair_time": 5,
+  "GRAB_EGG_EMPTY_IDLE_RANGE": 20,
+  "GRAB_EGG_WEAPON_IDLE_ANIM_CD": 8,
+  "GROUPCAPNOTIFACATION_TIME_DELAYUNIT": 0.2,
+  "GROUPCAPNOTIFACATION_TIME_NORMAL": 0.333,
+  "GROUPCAPNOTIFACATION_TIME_SPECIAL": 0.833,
+  "GUIDE_GROUP_SKIP_DELAY": 5,
+  "GameGoalID": 500005,
+  "GrabEggDoubleBuffMultiplier": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "GrabEggDoubleMarkingRange": 30,
+  "GrabEggFakePortal": {
+    "881083": 100000
+  },
+  "GrabEggMandatoryEvacuation": 0.3,
+  "GrabEggSafeBoxSlotNum": 3,
+  "GrabEggSkill": [
+    200001,
+    200002,
+    200003
+  ],
+  "GrabeEggMultiPullLevel": 60,
+  "GroupEnemyAttackNum": [
+    1,
+    2,
+    3
+  ],
+  "GroupEnemyAttackWeight": [
+    20,
+    20,
+    60
+  ],
+  "GuidenceArrowVisibleDistance": 300,
+  "HORN_ROT_ANGLE": [
+    133,
+    -103,
+    -45,
+    75
+  ],
+  "HandBookWaitSleepTime": 5,
+  "HandBookWaitTipTime": 2,
+  "HoldBallMove_TransitionCurve": [
+    [
+      0,
+      0,
+      0.325914,
+      0.325914
+    ],
+    [
+      0.2068196,
+      0.1674746,
+      1.123767,
+      1.123767
+    ],
+    [
+      0.806222,
+      0.8892669,
+      0.9158981,
+      0.9158981
+    ],
+    [
+      1,
+      1,
+      0.06614749,
+      0.06614749
+    ]
+  ],
+  "HugeEggTeamSharing": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "ICE_BREAK_PROGRESS": 0.4,
+  "ICON_STACK_COE": [
+    30,
+    40,
+    50,
+    60
+  ],
+  "IGNORE_COUNT_LIMIT_STATIC_IDS": [
+    72033552,
+    91029647,
+    91030376,
+    90676118,
+    90672671,
+    91030370,
+    90837884,
+    91301693,
+    91294819,
+    91294816,
+    91294813,
+    91294808,
+    91294802,
+    91294765,
+    91294743,
+    91294732,
+    91294750,
+    91294753,
+    91294755,
+    91294756
+  ],
+  "INFO_STAMP_AVATAR_POSITION": [
+    0,
+    0,
+    1
+  ],
+  "INFO_STAMP_BUBBLE_EDIT_OFFSET": [
+    -600,
+    200,
+    0,
+    1.3,
+    1.3,
+    1.3
+  ],
+  "INFO_STAMP_BUBBLE_FONT_SIZE_EDIT": 40,
+  "INFO_STAMP_BUBBLE_FONT_SIZE_VIEW": 60,
+  "INFO_STAMP_BUBBLE_HEIGHT": 1.5,
+  "INFO_STAMP_BUBBLE_VIEW_OFFSET": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "INFO_STAMP_CAMERA_INFO": [
+    [
+      1.04805,
+      1.129603,
+      -0.3632286
+    ],
+    [
+      0,
+      -33.217,
+      0
+    ],
+    45,
+    0.5
+  ],
+  "INFO_STAMP_COLOR_THRESHOLD": 100,
+  "INFO_STAMP_FORBIDDEN_AREA_NEAR_NPC": 5,
+  "INFO_STAMP_FRIEND_LOAD_DISTANCE": 30,
+  "INFO_STAMP_FRIEND_MAX_LIMIT": 100,
+  "INFO_STAMP_MAX_LIMIT": 10,
+  "INFO_STAMP_MIN_RANGE": 0.5,
+  "INFO_STAMP_MODEL_REFRESH_CD": 300,
+  "INFO_STAMP_STRANGERS_LOAD_DISTANCE": 30,
+  "INFO_STAMP_STRANGERS_MAX_LIMIT": 6,
+  "INIT_QUEST_LIST": [
+    1101,
+    1106
+  ],
+  "INVITE_CD": 20,
+  "INVITE_TEAM_FOLLOW": [
+    "$UI_Icon_Friend_InviteToTravel.png",
+    "$UI_Icon_Friend_InviteToTravel_1.png"
+  ],
+  "IOSCloudUrl": "itms-apps://itunes.apple.com/app/id6796757624",
+  "ITEM_QUALITY_WARN": [
+    4,
+    5,
+    6
+  ],
+  "IceTemplated": 1060005,
+  "IndicatorIconDisplayArea": 10,
+  "IntelFilterSameRoleCpRateBelowHide_Break": 0.5,
+  "IntelFilterSameRoleCpRateBelowHide_DPS": 0.7,
+  "IntelFilterSameRoleCpRateBelowHide_Energy": 0.2,
+  "IntelFilterSameRoleCpRateBelowHide_Heal": 0.2,
+  "IntelFilterSameRoleCpRateBelowHide_Sup": 0.2,
+  "IntelFilterSameSpeciesCpRateBelowHide_Break": 0.7,
+  "IntelFilterSameSpeciesCpRateBelowHide_DPS": 0.8,
+  "IntelFilterSameSpeciesCpRateBelowHide_Energy": 0.5,
+  "IntelFilterSameSpeciesCpRateBelowHide_Heal": 0.5,
+  "IntelFilterSameSpeciesCpRateBelowHide_Sup": 0.5,
+  "MONTH_CARD_DAYS_LEFT_HIGHLIGHT": 5,
+  "IntimacyDailyLimit": 100,
+  "IntimacyTotalLimit": 100,
+  "JOIN_TEAM_FOLLOW": [
+    "$UI_Icon_Friend_ApplyToTravel.png",
+    "$UI_Icon_Friend_ApplyToTravel_1.png"
+  ],
+  "JewelryInfoCosts": [
+    {
+      "700034": 1
+    },
+    {
+      "700034": 50
+    },
+    {
+      "700034": 50
+    },
+    {
+      "700034": 101
+    }
+  ],
+  "LABEL_VALUE": {
+    "8": 64,
+    "4": 16,
+    "99": 128,
+    "1": 256,
+    "2": 32
+  },
+  "LEYLINEFLOWER_CAPTURE_BLOOM_MAX": 99,
+  "LEYLINEFLOWER_ENERGY_GET_EFFECT_CONFIG": [
+    [
+      0,
+      "Eff_Env_SceneObject_LeaderFlower_KeyItem_Burst1"
+    ],
+    [
+      500,
+      "Eff_Env_SceneObject_LeaderFlower_KeyItem_Burst2"
+    ],
+    [
+      600,
+      "Eff_Env_SceneObject_LeaderFlower_KeyItem_Burst3"
+    ],
+    [
+      700,
+      "Eff_Env_SceneObject_LeaderFlower_KeyItem_Burst"
+    ]
+  ],
+  "LEYLINEFLOWER_NOURISH_BLOOM_MAX": 1,
+  "LEYLINEFLOWER_NOURISH_COST": {
+    "1103": 1
+  },
+  "LEYLINEFLOWER_NOURISH_FREECOUNT": 1,
+  "LEYLINEFLOWER_NOURISH_FREEMAXCOUNT": 3,
+  "LEYLINEFLOWER_NOURISH_MAXCOUNT": 15,
+  "LEYLINETREE_CHANGEMETEOROLOGY_CD": 60,
+  "LEYLINETREE_CHANGEMETEOROLOGY_COST": {
+    "1102": 1
+  },
+  "LEYLINETREE_CHANGEMETEOROLOGY_DURATION": 240,
+  "LEYLINETREE_CHANGEMETEOROLOGY_ID": 1,
+  "LEYLINETREE_CHANGEMETEOROLOGY_LEVEL": 6,
+  "LEYLINETREE_CHANGEMETEOROLOGY_MAXCOUNT": 3,
+  "LEYLINETREE_CREATEPLENTY_LEVEL": 0,
+  "LEYLINETREE_FREELANCE_LEVEL": 15,
+  "LEYLINE_FLOWER_RAINBOW_CAMERA_BACK_TIME": 0.8,
+  "LEYLINE_FLOWER_RAINBOW_CAMERA_END_FOV": 70,
+  "LEYLINE_FLOWER_RAINBOW_CAMERA_FOCUS_DELAY": 1,
+  "MONTH_CARD_REWARD_DAILY": [
+    [
+      1,
+      100
+    ],
+    [
+      1019,
+      200
+    ]
+  ],
+  "MONTH_CARD_REWARD_NOW": [
+    [
+      3,
+      330
+    ]
+  ],
+  "LEYLINE_FLOWER_RAINBOW_CAMERA_ROTATE_TIME": 1,
+  "MONTH_CARD_REWARD_STORAGE": 5,
+  "LIGHT_BALL_SHOW_DELAY": 1,
+  "LINE_DESTROY_TIME": 60,
+  "LINE_STATE_CROWD": 0.8,
+  "LINE_STATE_FEW": 0.6,
+  "LINE_STATE_GOOD": 0.3,
+  "LOADING_IMG_BG": "UI_LoadingBg_",
+  "LOCK_BRACKET_S_SCALE": [
+    [
+      2,
+      1
+    ],
+    [
+      10,
+      0.6
+    ]
+  ],
+  "LOCK_BRACKET_V_SCALE": [
+    [
+      0.4,
+      0.5
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "LOCK_BRACKET_V_WIDTH": [
+    [
+      0.5,
+      0.5
+    ],
+    [
+      1.5,
+      2
+    ]
+  ],
+  "LOOP_LEVEL_LIMITS": 1000,
+  "LUCKYPET_TIP": 3,
+  "MAIL_LIVE_DAY": 30,
+  "MAIN_CAMERA_RATE_MOBILE": 1.8,
+  "MAP_PLENTY_MIN_RANGE": 176,
+  "MARKSHARE_ENCOURAGE_DURING_MAX": 10,
+  "MARKSHARE_ENTER_DIST": 2,
+  "MARKSHARE_EXIT_DIST": 4,
+  "MARK_SHARE_ENCOURAGE_WEIGHT_INCREASE": 1,
+  "MATCH_FLUTE_CD": 900,
+  "MAX_APPLICANT_LIST_LEN": 5,
+  "MAX_FORMATION_COUNT": 8,
+  "MAX_INVITE_LIST_LEN": 10,
+  "MAX_PLAYER_NUM": 4,
+  "MAX_WAIT_APPLICANT_TIME": 600,
+  "MAX_WAIT_CONFIRM_TIME": 30,
+  "MAX_WAIT_INVITE_TIME": 600,
+  "MODEL_PREFAB_RES_1": "$P_Avatar_Female_Body_All.prefab",
+  "MODEL_PREFAB_RES_2": "$P_Avatar_Boy_Body_B10001_AII.prefab",
+  "MONTH_CARD_PRIVILEGE": [
+    7000101,
+    7000102,
+    7000206
+  ],
+  "MONTH_CARD_REWARD_COMPENSATE": 39,
+  "MONTH_CARD_REWARD_CONTINUE": [
+    [
+      560301,
+      1
+    ]
+  ],
+  "MONTH_CARD_STATE_MAX": 180,
+  "MONTH_CARD_STATE_TIME": 30,
+  "Multiple_Battle_Reward_Delay": 5,
+  "Multiple_Battle_Reward_Eff_Delay": 2.5,
+  "NEED_SWITCH_GROW_QUEST_ID": [
+    6701002,
+    6702004,
+    6703002,
+    6704002,
+    6705002,
+    6706002,
+    6707002,
+    6708002
+  ],
+  "NEED_SWITCH_LEVEL_UP_QUEST_IDS": {},
+  "NEED_SWITCH_STORY_QUEST_CONDITION": 10000,
+  "NEED_SWITCH_STORY_QUEST_IDS": {},
+  "NEED_SWITCH_STORY_QUEST_TIME": 1800,
+  "NOURISH_RESULT_DELAY": 3.5,
+  "NO_CHANGE_PETS": [
+    1036100,
+    1036300,
+    1037100,
+    1037300,
+    1012200,
+    1023300,
+    1021300
+  ],
+  "NO_GIVE_PETS": [
+    1036100,
+    1036300,
+    1037100,
+    1037300,
+    1012200,
+    1023300,
+    1021300
+  ],
+  "NPCDUEL_DYNAMICLEVEL_CLAMP": [
+    1,
+    70
+  ],
+  "NPC_CALL_CLOSE_TIME": 15,
+  "NPC_LOAD_HALF_ANGLE": 50,
+  "NPC_LOAD_HALF_ANGLE_MOBILE": 50,
+  "NPC_LOAD_R_FAR": 50,
+  "NPC_LOAD_R_FAR_MOBILE": 35,
+  "NPC_LOAD_R_FRONT": 120,
+  "NPC_LOAD_R_FRONT_MOBILE": 100,
+  "NPC_LOAD_R_NEAR": 25,
+  "NPC_LOAD_R_NEAR_MOBILE": 25,
+  "NPC_NAME_DISTANCE": 8,
+  "NPC_TOPLOGO_DISTANCE": 30,
+  "OBT_MOBILE_DOWNLOAD_TIP": "扫码下载手游\n领取专属奖励",
+  "OBT_MOBILE_PRE_REGISTER_TIP": "手游9月23日公测\n扫码预约抢专属奖励",
+  "OBT_MOBILE_PRE_REGISTER_URL": "https://yimo.com/wegamedownload",
+  "OBT_PRE_REGISTER_END_TIME": 1790128800,
+  "OPENING_PV_SKIP": 1,
+  "OVERWEIGHT_LEVEL_BUFF": [
+    0,
+    6003033,
+    6003034,
+    6003035,
+    6003036,
+    6003037
+  ],
+  "OffLineSpecificAbilityBindPetTable": {
+    "Glide": 1001100,
+    "Climb": 1001100,
+    "Swim": 1004300
+  },
+  "OutFightStaminRatio": 0.5,
+  "PAGE_RECOMMEND_FRIEND_MAX_NUM": 5,
+  "PETSAVE_CHANGE_TIME": 3,
+  "PETSAVE_EGG": {
+    "990077": 100223,
+    "990075": 100221,
+    "990076": 100222
+  },
+  "PETSAVE_GET_MAIL": 90,
+  "PETSGOT_POSITION": [
+    [
+      [
+        0,
+        333,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        333,
+        0
+      ],
+      [
+        0,
+        -333,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        333,
+        0
+      ],
+      [
+        299,
+        -196,
+        0
+      ],
+      [
+        -299,
+        -196,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        333,
+        0
+      ],
+      [
+        333,
+        0,
+        0
+      ],
+      [
+        0,
+        -333,
+        0
+      ],
+      [
+        -333,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        333,
+        0
+      ],
+      [
+        339,
+        114,
+        0
+      ],
+      [
+        218,
+        -270,
+        0
+      ],
+      [
+        -218,
+        -270,
+        0
+      ],
+      [
+        -339,
+        114,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        333,
+        0
+      ],
+      [
+        320,
+        160,
+        0
+      ],
+      [
+        320,
+        -160,
+        0
+      ],
+      [
+        0,
+        -333,
+        0
+      ],
+      [
+        -320,
+        -160,
+        0
+      ],
+      [
+        -320,
+        160,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        333,
+        0
+      ],
+      [
+        277,
+        210,
+        0
+      ],
+      [
+        340,
+        -77,
+        0
+      ],
+      [
+        152,
+        -320,
+        0
+      ],
+      [
+        -152,
+        -320,
+        0
+      ],
+      [
+        -340,
+        -77,
+        0
+      ],
+      [
+        -277,
+        210,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        333,
+        0
+      ],
+      [
+        236,
+        236,
+        0
+      ],
+      [
+        333,
+        0,
+        0
+      ],
+      [
+        236,
+        -236,
+        0
+      ],
+      [
+        0,
+        -333,
+        0
+      ],
+      [
+        -236,
+        -236,
+        0
+      ],
+      [
+        -333,
+        0,
+        0
+      ],
+      [
+        -236,
+        236,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        353,
+        0
+      ],
+      [
+        242,
+        262,
+        0
+      ],
+      [
+        347,
+        44,
+        0
+      ],
+      [
+        312,
+        -188,
+        0
+      ],
+      [
+        131,
+        -347,
+        0
+      ],
+      [
+        -131,
+        -347,
+        0
+      ],
+      [
+        -312,
+        -188,
+        0
+      ],
+      [
+        -347,
+        44,
+        0
+      ],
+      [
+        -242,
+        262,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        353,
+        0
+      ],
+      [
+        214,
+        292,
+        0
+      ],
+      [
+        347,
+        110,
+        0
+      ],
+      [
+        347,
+        -110,
+        0
+      ],
+      [
+        214,
+        -292,
+        0
+      ],
+      [
+        0,
+        -353,
+        0
+      ],
+      [
+        -214,
+        -292,
+        0
+      ],
+      [
+        -347,
+        -110,
+        0
+      ],
+      [
+        -347,
+        110,
+        0
+      ],
+      [
+        -214,
+        292,
+        0
+      ]
+    ]
+  ]
+}

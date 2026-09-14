@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2144401",
+  "calcInfoByLuaConfig": {
+    "id": 2144401,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "renderNameFilter": [
+        "M_Parmon_10444_Body01"
+      ],
+      "duration": 1,
+      "disableWhenFinished": false,
+      "NodeID": 5,
+      "UID": "c4406cd7-9cd5-4034-b909-3dbe23282c85",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10444_Skill_Grasp_buff",
+      "name": "playPreset"
+    },
+    "8": {
+      "renderNameFilter": [
+        "M_Parmon_10444_Body01"
+      ],
+      "duration": 1.5,
+      "disableWhenFinished": false,
+      "NodeID": 8,
+      "UID": "9a73f540-1264-467d-ac27-401e758451b2",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10444_Skill_Grasp_buff_End",
+      "name": "playPreset"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

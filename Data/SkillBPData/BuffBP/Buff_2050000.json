@@ -1,0 +1,156 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "rValue": 0.75,
+      "name": "greater",
+      "UID": "e3383d45-f78a-4897-bf55-d1ac68fca612",
+      "NodeID": 3,
+      "lValue": {
+        "UID": "8c1ac5f5-c68a-4dc0-869c-09c2ba8d7cdc",
+        "target": "CURPET",
+        "name": "getLossHpRatio",
+        "NodeID": 2
+      }
+    },
+    "4": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "612fcfb1-3dc6-4286-8564-0496a894a563",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "dd4593d4-8ee1-41c6-bf50-684e72c0b881",
+      "NodeID": 6
+    },
+    "8": {
+      "UID": "2542a93c-6840-4b75-b2b4-6022a5faf3e4",
+      "newPetActionIds": [
+        4
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 8
+    },
+    "17": {
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": {
+          "rValue": {
+            "rValue": 0.75,
+            "name": "multiply",
+            "UID": "5372c7a2-64f1-4192-a195-22a87f1b5259",
+            "NodeID": 14,
+            "lValue": {
+              "calcId": 2050000,
+              "calcType": 1,
+              "paramName": "param0",
+              "NodeID": 13,
+              "UID": "0b6f8872-f28e-41df-8149-84eaab95ebec",
+              "name": "getParamByLuaConfig"
+            }
+          },
+          "name": "add",
+          "UID": "fb969e5c-051d-4cfa-b2a0-cec269d7af8d",
+          "NodeID": 15,
+          "lValue": {
+            "calcId": 2050000,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 18,
+            "UID": "cc7a4e1f-1aed-436a-8701-8a0fc3e2b718",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "3bb5808b-e124-4a78-9c90-90e103b948d9",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 17
+    },
+    "9": {
+      "unsummonValid": false,
+      "actionIds": [
+        8
+      ],
+      "name": "registerGroupEvent",
+      "UID": "7b0bc8a2-61e8-4c97-8c22-32699c4005a1",
+      "NodeID": 9
+    },
+    "18": {
+      "calcId": 2050000,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 18,
+      "UID": "cc7a4e1f-1aed-436a-8701-8a0fc3e2b718",
+      "name": "getParamByLuaConfig"
+    },
+    "13": {
+      "calcId": 2050000,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "0b6f8872-f28e-41df-8149-84eaab95ebec",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "name": "registerAttributeChange",
+      "actionIds": [
+        4
+      ],
+      "attributeName": "hp_cur",
+      "UID": "987de711-01ca-4b19-8d8b-f73ae9d9c1d0",
+      "target": "OWNER",
+      "targetType": 1,
+      "NodeID": 5
+    },
+    "12": {
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": {
+          "rValue": {
+            "calcId": 2050000,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 13,
+            "UID": "0b6f8872-f28e-41df-8149-84eaab95ebec",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "addf45e1-e69f-4bb6-8812-59c51a6e44df",
+          "NodeID": 10,
+          "lValue": {
+            "UID": "8c1ac5f5-c68a-4dc0-869c-09c2ba8d7cdc",
+            "target": "CURPET",
+            "name": "getLossHpRatio",
+            "NodeID": 2
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "63ffd5f2-24ab-4998-90c6-071991de36cb",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2050000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    9,
+    4
+  ]
+}

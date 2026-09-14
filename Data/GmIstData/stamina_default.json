@@ -1,0 +1,37 @@
+{
+  "steps": [
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000006
+      },
+      "mid": "removeGmEntry",
+      "name": "删除2000006词条"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000007
+      },
+      "mid": "removeGmEntry",
+      "name": "删除2000007词条"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000008
+      },
+      "mid": "removeGmEntry",
+      "name": "删除2000008词条"
+    },
+    {
+      "delay": 0,
+      "params": {
+        "entryConfigId": 2000003
+      },
+      "mid": "removeGmEntry",
+      "name": "删除2000003词条"
+    }
+  ],
+  "name": "体力上限初始化"
+}

@@ -1,0 +1,447 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "52": {
+      "time": 0,
+      "rotateSpeed": 999,
+      "name": "rotateTo",
+      "UID": "f691823c-bfbe-47d6-b383-884bafdaec34",
+      "referenceOffsetRotY": 0,
+      "target": {
+        "listId": "timeline_2158402_1784374609",
+        "NodeID": 51,
+        "UID": "549962d1-b7ff-4106-a85c-11e822b663d1",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "UID": "e2fd2bfe-3a32-4c24-b630-da607970812b",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 50
+        }
+      },
+      "NodeID": 52
+    },
+    "39": {
+      "listId": "timeline_2158402_1784374609",
+      "name": "removeDynamicListItem",
+      "UID": "daf0b959-3203-45f0-bf8e-9796acac8d78",
+      "target": "OWNER",
+      "value": {
+        "UID": "e04783e7-d74e-4701-a787-14aa3965f776",
+        "target": "TrapTarget",
+        "name": "getTargetId",
+        "NodeID": 38
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "listId": "timeline_2158402_1784374609",
+      "name": "getDynamicListCount",
+      "UID": "f71a1731-6f85-4b53-94e0-c9e43a89d9b5",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "rValue": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "ac9eb23f-2c3d-4120-9e96-19a6b5541ac9",
+        "target": "OWNER",
+        "NodeID": 43
+      },
+      "name": "equal",
+      "UID": "54f7c9fb-4288-4d2d-8619-8a25b44fd170",
+      "NodeID": 41,
+      "lValue": {
+        "listId": "timeline_2158402_1784374609",
+        "name": "getDynamicListCount",
+        "UID": "f71a1731-6f85-4b53-94e0-c9e43a89d9b5",
+        "target": "OWNER",
+        "NodeID": 40
+      }
+    },
+    "42": {
+      "UID": "21e2fda7-a792-4c9d-a833-1fb49c5174ec",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        41
+      ],
+      "NodeID": 42
+    },
+    "35": {
+      "listId": "timeline_2158402_1784374609",
+      "name": "getDynamicListCount",
+      "UID": "d9c0bf5a-9378-461b-a2bc-dd2f98593302",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "62464292-5226-4348-9a98-8d8dd756fbfa",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_FlowerAttack",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "5": {
+      "UID": "03f63bd3-7787-4b6c-8fce-bfd3142ef06c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          7,
+          3,
+          15,
+          8
+        ]
+      },
+      "NodeID": 5
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2c215cd2-bb36-4d94-a53a-39cc4cf869f3",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_Flower",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "55": {
+      "offsetXYZ": [
+        -0.027,
+        1.416,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8334f8ec-eb77-461a-8ec9-93143000c365",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_FlowerAttack_03",
+      "speed": 1,
+      "NodeID": 55
+    },
+    "8": {
+      "triggerName": "Gain",
+      "name": "setEffectAnimTrigger",
+      "UID": "2063e852-aaf1-4b31-8068-a576db355302",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_Flower",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "54": {
+      "offsetXYZ": [
+        -0.027,
+        1.416,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3185c3ad-c23a-405f-a8cc-fd81f0a62b1b",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_FlowerAttack_01",
+      "speed": 1,
+      "NodeID": 54
+    },
+    "9": {
+      "triggerName": "Attack",
+      "name": "setEffectAnimTrigger",
+      "UID": "11aecdde-2f49-4e2e-b700-7efb77673aa8",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_Flower",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "27": {
+      "listId": "timeline_2158402_1784374609",
+      "name": "getDynamicListCount",
+      "UID": "1cb6aabd-1a6a-4ece-b566-1e4f78a125c9",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "34": {
+      "listId": "timeline_2158402_1784374609",
+      "name": "addDynamicListItem",
+      "UID": "b2a3e806-bde9-4daf-bae4-d926cc2422be",
+      "target": "OWNER",
+      "value": {
+        "UID": "53fc9754-9321-424b-98db-1691e864e967",
+        "target": "TrapTarget",
+        "name": "getTargetId",
+        "NodeID": 33
+      },
+      "NodeID": 34
+    },
+    "11": {
+      "actionIds": [
+        52,
+        9,
+        54,
+        55,
+        23
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "44da0f0b-6718-4997-aed7-69092b6ff35e",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "23": {
+      "offsetXYZ": [
+        -0.027,
+        1.416,
+        1.256
+      ],
+      "templateId": 2158402201,
+      "name": "createProjectile",
+      "UID": "19abca12-5b37-4cc9-9a45-5cb7fd864ace",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Tracking",
+      "targetPos": {
+        "UID": "b78ab84e-c6d8-406a-b616-0d810bd2354d",
+        "target": {
+          "listId": "timeline_2158402_1784374609",
+          "NodeID": 45,
+          "UID": "eab6e59f-05ad-4939-a6b6-20db66792d9a",
+          "target": "OWNER",
+          "name": "getDynamicListItem",
+          "index": {
+            "UID": "d8a9fac2-ba79-41d3-aff2-e4f986c14543",
+            "number": 1,
+            "name": "constNumber",
+            "NodeID": 44
+          }
+        },
+        "name": "getTargetPosition",
+        "NodeID": 46
+      },
+      "NodeID": 23,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "12": {
+      "tickInterval": 1,
+      "eventType": "NotifyState",
+      "endTime": 14,
+      "NodeID": 12,
+      "UID": "cfcc66af-ea9e-4950-b85e-5a92e256f01a",
+      "onUpdate": {
+        "actionIds": [
+          11
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          11
+        ]
+      }
+    },
+    "29": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "cbbfdbac-dce4-446e-a6fa-3962cf753f22",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "13": {
+      "triggerName": "Wither",
+      "name": "setEffectAnimTrigger",
+      "UID": "05b00166-2d51-4d8b-92fd-681b64afceee",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_Flower",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "45": {
+      "listId": "timeline_2158402_1784374609",
+      "NodeID": 45,
+      "UID": "eab6e59f-05ad-4939-a6b6-20db66792d9a",
+      "target": "OWNER",
+      "name": "getDynamicListItem",
+      "index": {
+        "UID": "d8a9fac2-ba79-41d3-aff2-e4f986c14543",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 44
+      }
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 14,
+      "NodeID": 14,
+      "UID": "210092d6-649b-4957-8c71-221d4bcf091a"
+    },
+    "46": {
+      "UID": "b78ab84e-c6d8-406a-b616-0d810bd2354d",
+      "target": {
+        "listId": "timeline_2158402_1784374609",
+        "NodeID": 45,
+        "UID": "eab6e59f-05ad-4939-a6b6-20db66792d9a",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "UID": "d8a9fac2-ba79-41d3-aff2-e4f986c14543",
+          "number": 1,
+          "name": "constNumber",
+          "NodeID": 44
+        }
+      },
+      "name": "getTargetPosition",
+      "NodeID": 46
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c6ee4220-3b6c-4c87-874c-1cdcea783b33",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_FlowerAttack_02",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "47": {
+      "listId": "timeline_2158402_1784374609",
+      "name": "getDynamicListCount",
+      "UID": "d181152f-a6fe-4fab-964a-11e52a16c865",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0069125f-5686-4607-9318-0e2897f17d36",
+      "effectId": "Eff_Parmon_10584_Skill_Gain_FlowerWither",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "48": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "f68552d1-9c39-4846-8daf-a6d4d2c3729f",
+      "NodeID": 48,
+      "lValue": {
+        "listId": "timeline_2158402_1784374609",
+        "name": "getDynamicListCount",
+        "UID": "d181152f-a6fe-4fab-964a-11e52a16c865",
+        "target": "OWNER",
+        "NodeID": 47
+      }
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 14.5,
+      "NodeID": 17,
+      "UID": "64a51646-dc75-42bc-af5c-7b0d0a4db6e1"
+    },
+    "49": {
+      "listId": "timeline_2158402_1784374609",
+      "NodeID": 49,
+      "UID": "faa37d6d-b2e3-44f1-8e78-fdecd4f2c89c",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": false
+    },
+    "30": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "name": "registerTrapEvent",
+      "UID": "e83a5e9a-b220-4918-bac4-20861fe894c7",
+      "enterTrapActionIds": [
+        29
+      ],
+      "isCreationStandAlone": true,
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        36,
+        39,
+        42
+      ],
+      "shapeArgs": [
+        7
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 2,
+      "center": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "UID": "5512c3b1-ea20-4801-b80f-89c523f30730",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          49,
+          30
+        ]
+      },
+      "NodeID": 32
+    },
+    "28": {
+      "rValue": {
+        "listId": "timeline_2158402_1784374609",
+        "name": "getDynamicListCount",
+        "UID": "1cb6aabd-1a6a-4ece-b566-1e4f78a125c9",
+        "target": "OWNER",
+        "NodeID": 27
+      },
+      "name": "greater",
+      "UID": "f1dae5f9-716c-4efe-b8da-e82c3d2b091f",
+      "NodeID": 28,
+      "lValue": 20
+    },
+    "51": {
+      "listId": "timeline_2158402_1784374609",
+      "NodeID": 51,
+      "UID": "549962d1-b7ff-4106-a85c-11e822b663d1",
+      "target": "OWNER",
+      "name": "getDynamicListItem",
+      "index": {
+        "UID": "e2fd2bfe-3a32-4c24-b630-da607970812b",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 50
+      }
+    },
+    "36": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "fa2c6898-9356-4e45-8f24-6a6817650540",
+      "target": "OWNER",
+      "val": {
+        "listId": "timeline_2158402_1784374609",
+        "name": "getDynamicListCount",
+        "UID": "d9c0bf5a-9378-461b-a2bc-dd2f98593302",
+        "target": "OWNER",
+        "NodeID": 35
+      },
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2158402",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    32,
+    5,
+    17,
+    14,
+    12
+  ],
+  "layer": "Base",
+  "length": 9999
+}

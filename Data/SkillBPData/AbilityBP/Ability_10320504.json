@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_10320504",
+  "NodeID": 1,
+  "UID": "3ebb9838-9556-400d-9ee2-678a27270e56",
+  "abilityParamId": 11200322,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10320504001,
+      "name": "setCombatActionTimeline",
+      "UID": "dec23241-b54a-47d2-a491-13e17a97b41a",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "IdleSpecial",
+    "Skill_ShadowBuff"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10032_Skill_Dash_Enhance_L_Mon",
+    "Eff_Parmon_10032_Skill_Dash_Enhance_R_Mon",
+    "Eff_Parmon_10032_Skill_Dash_Enhance_Red_L_Mon",
+    "Eff_Parmon_10032_Skill_Dash_Enhance_Red_R_Mon"
+  ],
+  "searchRelation": 2,
+  "name": "暗黑暗连斩",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5
+}

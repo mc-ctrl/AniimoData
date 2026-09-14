@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_11220510",
+  "NodeID": 1,
+  "UID": "3be8d30a-1853-4c5e-931b-7f68fe9a9238",
+  "abilityParamId": 10400070,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11220510001,
+      "name": "setCombatActionTimeline",
+      "UID": "458ff369-c386-4b78-997e-84a1d927a373",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 4,
+  "preloadAnims": [
+    "Skill_Piano"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10122_Skill_Piano_1",
+    "Eff_Parmon_10122_Skill_Piano_4",
+    "Eff_Hit_Electric_Blunt_Y"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

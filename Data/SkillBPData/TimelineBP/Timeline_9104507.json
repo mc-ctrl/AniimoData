@@ -1,0 +1,156 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          2,
+          9,
+          10,
+          11
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "b6907493-7fb7-4770-a9cb-862ebcd1ad94",
+      "eventType": "Notify",
+      "time": 20,
+      "NodeID": 24
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "57a3133e-5cf7-4a02-b770-d223a13a363a",
+      "effectId": "Eff_Parmon_10045_EX_05_Rogue",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20,
+          23,
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "16": {
+      "buffId": 2104507,
+      "name": "removeBuff",
+      "UID": "d6ea55cc-277f-4320-ba37-cda12078fe2c",
+      "target": "TrapTarget",
+      "NodeID": 16
+    },
+    "23": {
+      "actOnTag": "plantGrass",
+      "name": "actOnTargets",
+      "UID": "c1747f7a-15a9-4d1b-b799-51b25e9f1050",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            20,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 23
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "e227f9d0-54e8-4787-a86b-64acda25a112",
+      "effectId": "Eff_Parmon_10045_EX_03",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "name": "registerTrapEvent",
+      "UID": "95511ac2-8983-474a-b040-c49ff7cb909c",
+      "enterTrapActionIds": [
+        12
+      ],
+      "isCreationStandAlone": true,
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        16
+      ],
+      "shapeArgs": [
+        20
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 1,
+      "center": "OWNER",
+      "NodeID": 13
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Parmon_10045_EX_01_Rogue",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "6be5da09-4ac4-47e4-bc07-e432be658f18",
+      "effectId": "Eff_Parmon_10045_EX_04",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "pos": "POS_OR_TARGET",
+      "scale": 6,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "47524c53-c5a4-45a8-8292-31d52ae3bf85",
+      "effectId": "Eff_Parmon_10045_Skill_FlowerCircle_02_Rogue",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "12": {
+      "target": "TrapTarget",
+      "duration": 20,
+      "buffId": 2104507,
+      "NodeID": 12,
+      "UID": "2f24cc2c-e651-4ae9-8c73-cfe262c9c1ee",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "timeline_9104507",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    15,
+    4,
+    24
+  ],
+  "layer": "Base",
+  "length": 9999
+}

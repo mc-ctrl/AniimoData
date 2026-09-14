@@ -1,0 +1,635 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2101302",
+  "NodeID": 1,
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "key": "TransferDamage",
+      "name": "setCacheVal",
+      "UID": "056d019d-e9c3-4e3b-be90-f5f285756442",
+      "target": {
+        "eventName": "onReceiveDamage",
+        "name": "getEventCombatContextTarget",
+        "UID": "6e7bade3-81f1-4a91-8aa2-78f8df79ec39",
+        "target": "CASTER",
+        "NodeID": 36
+      },
+      "val": {
+        "key": "TransferDamage",
+        "name": "getCacheVal",
+        "UID": "689d3943-e6bb-4975-905d-97ba465bfba9",
+        "target": "MASTER",
+        "NodeID": 74
+      },
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "50630ec1-2490-4289-87f0-4dbf17081177",
+      "name": "isGoingBeKilled",
+      "NodeID": 38
+    },
+    "39": {
+      "actionIds": [
+        62
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "02a45bba-5489-4ab8-a0e6-035ec36eb742",
+      "name": "doActionsByConditions",
+      "NodeID": 39
+    },
+    "41": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "d37d4d7a-a2fa-4048-86d6-d4710fab5438",
+        "target": "OWNER",
+        "NodeID": 40,
+        "attributeName": "hp_cur"
+      },
+      "name": "div",
+      "UID": "bbe149fb-1dd0-4e48-8332-c03ff367caee",
+      "NodeID": 41,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "19796379-d553-4096-a21b-d9962a980647",
+        "target": "OWNER",
+        "NodeID": 45,
+        "attributeName": "hp_max_cur"
+      }
+    },
+    "64": {
+      "target": "TARGET",
+      "duration": 0.1,
+      "buffId": 2101310,
+      "NodeID": 64,
+      "UID": "c1ccfb40-43c0-4bed-add5-13dd30022f02",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "35": {
+      "key": "10013ID",
+      "name": "setCacheVal",
+      "UID": "d57b0724-2409-42e0-9f3c-eca68da4038c",
+      "target": "OWNER",
+      "val": {
+        "key": "10013ID",
+        "name": "getCacheVal",
+        "UID": "006a3c31-7341-4bfb-b31d-b9e5ad47858e",
+        "target": "MASTER",
+        "NodeID": 34
+      },
+      "NodeID": 35
+    },
+    "44": {
+      "overrideCaster": "OWNER",
+      "calcInfo": {
+        "hp_scale": {
+          "rValue": 1,
+          "name": "sub",
+          "UID": "b20f9c75-9db3-4f28-a80d-6d155c84d5d1",
+          "NodeID": 42,
+          "lValue": {
+            "rValue": {
+              "name": "getAttribute",
+              "UID": "d37d4d7a-a2fa-4048-86d6-d4710fab5438",
+              "target": "OWNER",
+              "NodeID": 40,
+              "attributeName": "hp_cur"
+            },
+            "name": "div",
+            "UID": "bbe149fb-1dd0-4e48-8332-c03ff367caee",
+            "NodeID": 41,
+            "lValue": {
+              "name": "getAttribute",
+              "UID": "19796379-d553-4096-a21b-d9962a980647",
+              "target": "OWNER",
+              "NodeID": 45,
+              "attributeName": "hp_max_cur"
+            }
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "9a7fc161-4855-4e5f-b237-1823ca1fafba",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 44
+    },
+    "67": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "0bb2332c-e3e0-4d5e-adf0-c70096f47935",
+      "NodeID": 67,
+      "lValue": {
+        "key": "10013rareability",
+        "name": "getCacheVal",
+        "UID": "2118fae3-4fd9-4d30-991e-b7c419293a41",
+        "target": "MASTER",
+        "NodeID": 66
+      }
+    },
+    "68": {
+      "eventName": "onReceiveDamage",
+      "name": "getEventCombatContextTarget",
+      "UID": "c9803ee0-4bac-4edb-9de0-d593cb11f9e7",
+      "target": "CASTER",
+      "NodeID": 68
+    },
+    "2": {
+      "key": "10013_Fenshen",
+      "name": "applyMaterialEffect",
+      "NodeID": 2
+    },
+    "4": {
+      "eventName": "onPostReceiveDamage",
+      "name": "getEventCombatContextTarget",
+      "UID": "6eb58b44-91ee-42c5-b2d7-b7373b5f24ea",
+      "target": "CASTER",
+      "NodeID": 4
+    },
+    "71": {
+      "key": "10013MasterId",
+      "name": "setCacheVal",
+      "UID": "677ea9b3-e7ab-4754-95ef-bc5d505bb701",
+      "target": "TARGET",
+      "val": {
+        "UID": "a7b72f95-7194-4125-ba23-078c7b0bffbe",
+        "target": "MASTER",
+        "name": "getTargetId",
+        "NodeID": 70
+      },
+      "NodeID": 71
+    },
+    "72": {
+      "UID": "35c58805-e03f-41c0-9c60-4c683c219f4b",
+      "name": "checkAbilityElementType",
+      "elementType": 12,
+      "NodeID": 72
+    },
+    "81": {
+      "UID": "ce11a366-b1a6-4ead-a4e6-8197a780a5d9",
+      "name": "removeMaterialEffect",
+      "key": "10013_Fenshen",
+      "NodeID": 81
+    },
+    "80": {
+      "UID": "45abada1-6856-4a65-9536-dd19bf5c79c6",
+      "actorId": {
+        "UID": "e5ba8ffc-62c2-42b3-9851-e2f23f36e4ce",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 79
+      },
+      "name": "destroyEntity",
+      "NodeID": 80
+    },
+    "78": {
+      "actionIds": [
+        77
+      ],
+      "attributeName": "hp_cur",
+      "UID": "bcc5f28c-c464-42f1-81b9-0e3fdf933e80",
+      "target": "MASTER",
+      "name": "registerAttributeChange",
+      "NodeID": 78
+    },
+    "77": {
+      "actionIds": [
+        80
+      ],
+      "conditionActionIds": [
+        76
+      ],
+      "UID": "41f4aa0d-d424-4ac0-8c3d-5478bfdb0ea5",
+      "name": "doActionsByConditions",
+      "NodeID": 77
+    },
+    "76": {
+      "rValue": {
+        "UID": "61836ad3-3844-438e-b496-0e860b7086a7",
+        "target": "MASTER",
+        "name": "getHpRatio",
+        "NodeID": 75
+      },
+      "name": "equal",
+      "UID": "343ddce7-a206-4bb9-a49a-9f9dd6dcdf24",
+      "NodeID": 76,
+      "lValue": 0
+    },
+    "62": {
+      "actionIds": [
+        61
+      ],
+      "conditionActionIds": [
+        67
+      ],
+      "UID": "cb5e9bc2-c072-45b5-8693-a7f58633f393",
+      "name": "doActionsByConditions",
+      "NodeID": 62
+    },
+    "5": {
+      "key": "TransferBreak",
+      "name": "setCacheVal",
+      "UID": "98217f74-0296-4517-b002-20efe02b93c5",
+      "target": {
+        "eventName": "onPostReceiveDamage",
+        "name": "getEventCombatContextTarget",
+        "UID": "6eb58b44-91ee-42c5-b2d7-b7373b5f24ea",
+        "target": "CASTER",
+        "NodeID": 4
+      },
+      "val": {
+        "rValue": {
+          "key": "TransferDamage",
+          "name": "getCacheVal",
+          "UID": "20fa9543-bdad-42dc-8408-9665929abdd2",
+          "target": "MASTER",
+          "NodeID": 73
+        },
+        "name": "multiply",
+        "UID": "8d4acc63-6954-4665-854e-009106540b5b",
+        "NodeID": 9,
+        "lValue": {
+          "UID": "3d0c0bf8-0dea-4792-8fbd-54d8c6bce996",
+          "name": "getEventAttributeChangeValue",
+          "targetType": 0,
+          "NodeID": 8
+        }
+      },
+      "NodeID": 5
+    },
+    "61": {
+      "actionIds": [
+        60
+      ],
+      "name": "doPetsActions",
+      "UID": "0cf3002e-ecf3-4a00-ab98-5183fd68ed56",
+      "target": {
+        "eventName": "onReceiveDamage",
+        "name": "getEventCombatContextTarget",
+        "UID": "c9803ee0-4bac-4edb-9de0-d593cb11f9e7",
+        "target": "CASTER",
+        "NodeID": 68
+      },
+      "NodeID": 61
+    },
+    "60": {
+      "actionIds": [
+        71,
+        64
+      ],
+      "conditionActionIds": [
+        59
+      ],
+      "UID": "2d295932-d58d-4756-97a0-22ef940296b0",
+      "name": "doActionsByConditions",
+      "NodeID": 60
+    },
+    "6": {
+      "UID": "7cfdd46f-73c5-4105-a172-e2fcf47f3f07",
+      "name": "registerPostReceiveDamageEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "59": {
+      "rValue": {
+        "key": "10013ID",
+        "name": "getCacheVal",
+        "UID": "8bdbca98-f3ca-449e-b84d-431186bbd86f",
+        "target": "OWNER",
+        "NodeID": 58
+      },
+      "name": "equal",
+      "UID": "e0539267-556b-40f4-9bd6-d9e035f9048f",
+      "NodeID": 59,
+      "lValue": {
+        "UID": "04ecc6dc-5611-4dbc-9f8b-a6813a234994",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 69
+      }
+    },
+    "55": {
+      "calcId": 2101302,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 55,
+      "UID": "eb8bc88d-3e04-4a55-b838-a5ee9c61b7e3",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "attributeName": "bp_cur",
+      "UID": "f48316c9-10b4-48ce-b504-a3b60e58cda0",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 7
+    },
+    "52": {
+      "calcId": 2101302,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 52,
+      "UID": "7868f501-d3de-4611-a1d7-c76a73a21c3a",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "UID": "3d0c0bf8-0dea-4792-8fbd-54d8c6bce996",
+      "name": "getEventAttributeChangeValue",
+      "targetType": 0,
+      "NodeID": 8
+    },
+    "31": {
+      "name": "hasBuffTag",
+      "UID": "1b0646cf-8d1c-445f-97f8-9b8b01815dc8",
+      "target": "MASTER",
+      "NodeID": 31,
+      "buffTag": 4
+    },
+    "26": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "853a128c-781f-49a0-8fce-28a48bf17ca7",
+      "target": "MASTER",
+      "NodeID": 26
+    },
+    "18": {
+      "UID": "f83359f6-46ce-44eb-aae1-f97028c71353",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        37,
+        20,
+        16,
+        39
+      ],
+      "NodeID": 18
+    },
+    "48": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "e3c36666-948f-4257-9429-b7b06934f6a1",
+        "target": "OWNER",
+        "NodeID": 47,
+        "attributeName": "hp_cur"
+      },
+      "name": "equal",
+      "UID": "0716b9fa-eb2e-45b4-914f-82ee93fbebb6",
+      "NodeID": 48,
+      "lValue": 0
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerDeadEvent",
+      "UID": "c8b132f2-8bef-4c48-80d9-2753fd4f12ca",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "key": "10013MasterId",
+      "name": "setCacheVal",
+      "UID": "5f5ba196-94ed-4e4e-a17c-75f4836baa4d",
+      "target": {
+        "eventName": "onReceiveDamage",
+        "name": "getEventCombatContextTarget",
+        "UID": "6e49898d-65d4-445f-92c2-1e1d5364d666",
+        "target": "CASTER",
+        "NodeID": 19
+      },
+      "val": {
+        "UID": "7ab4e81e-e096-4aa9-8501-c81ee4419d37",
+        "target": "MASTER",
+        "name": "getTargetId",
+        "NodeID": 21
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "50c71ef4-5ea1-4d6b-ba2d-15bd9f378e06",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 12
+    },
+    "23": {
+      "overrideCaster": "OWNER",
+      "calcInfo": {
+        "hp_max_p": {
+          "rValue": 1,
+          "name": "sub",
+          "UID": "021b92a8-bf5a-45c3-af16-60e7123d6b09",
+          "NodeID": 56,
+          "lValue": {
+            "calcId": 2101302,
+            "calcType": 1,
+            "paramName": "param2",
+            "NodeID": 55,
+            "UID": "eb8bc88d-3e04-4a55-b838-a5ee9c61b7e3",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "b50a77d0-cc52-4269-a53d-814e34a10cbc",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 23
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "allowExploreAbility": true,
+      "UID": "0ff2d096-82db-42bb-b22e-a4ec85163f55",
+      "target": "OWNER",
+      "name": "registerCastAbilityEvent",
+      "NodeID": 13
+    },
+    "24": {
+      "actionIds": [
+        30
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "1d4097f9-f3a2-4944-81fa-b6b9d4e43bb7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 24
+    },
+    "14": {
+      "eventName": "onReceiveDamage",
+      "name": "getEventCombatContextTarget",
+      "UID": "cda5367a-8abb-4183-a9ba-9174351c126e",
+      "target": "CASTER",
+      "NodeID": 14
+    },
+    "10": {
+      "buffId": 2101301,
+      "name": "removeBuff",
+      "UID": "22d89eba-0857-422f-a1d4-c0611e5e1c51",
+      "target": "MASTER",
+      "NodeID": 10
+    },
+    "15": {
+      "target": {
+        "eventName": "onReceiveDamage",
+        "name": "getEventCombatContextTarget",
+        "UID": "cda5367a-8abb-4183-a9ba-9174351c126e",
+        "target": "CASTER",
+        "NodeID": 14
+      },
+      "duration": 1,
+      "buffId": 2101303,
+      "NodeID": 15,
+      "UID": "77bce2cf-9178-44cf-8b16-7444dd5e07d7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "19": {
+      "eventName": "onReceiveDamage",
+      "name": "getEventCombatContextTarget",
+      "UID": "6e49898d-65d4-445f-92c2-1e1d5364d666",
+      "target": "CASTER",
+      "NodeID": 19
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        72
+      ],
+      "UID": "5f2b5d10-493b-40f4-8795-00ee39140e33",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "27": {
+      "UID": "96100232-b5a8-4ba6-b80b-8ca58b5bdc90",
+      "conditionIds": [
+        26,
+        28
+      ],
+      "name": "conditionOr",
+      "NodeID": 27
+    },
+    "28": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "ae66a99d-d714-4a6f-b5e7-d25d3372b4ab",
+      "target": "MASTER",
+      "NodeID": 28
+    },
+    "49": {
+      "actionIds": [
+        51
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "da9e7a96-8d98-4cbe-9495-f9a380e2bfaf",
+      "name": "doActionsByConditions",
+      "NodeID": 49
+    },
+    "30": {
+      "overrideCaster": "OWNER",
+      "calcInfo": {
+        "hp_max_p": {
+          "rValue": 1,
+          "name": "sub",
+          "UID": "4c04a097-2224-4183-85dc-eef314b99007",
+          "NodeID": 53,
+          "lValue": {
+            "calcId": 2101302,
+            "calcType": 1,
+            "paramName": "param3",
+            "NodeID": 52,
+            "UID": "7868f501-d3de-4611-a1d7-c76a73a21c3a",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "c9cedc01-50d3-4966-a951-a7f962954f19",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "d294ed2f-8602-434d-ad0a-e9c2bead699a",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 10003,
+      "NodeID": 33,
+      "UID": "d4800653-2ea8-415b-80ac-b835d1a9bb83",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "51": {
+      "UID": "eccf139f-42ab-4cad-85fe-fa5523cf5643",
+      "actorId": {
+        "UID": "40d3b40f-1a25-4273-bf00-22c72a0b8133",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 50
+      },
+      "name": "destroyEntity",
+      "NodeID": 51
+    },
+    "36": {
+      "eventName": "onReceiveDamage",
+      "name": "getEventCombatContextTarget",
+      "UID": "6e7bade3-81f1-4a91-8aa2-78f8df79ec39",
+      "target": "CASTER",
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    81
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    24,
+    44,
+    49,
+    2,
+    7,
+    35,
+    11,
+    13,
+    18,
+    32,
+    78
+  ]
+}

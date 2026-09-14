@@ -1,0 +1,106 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126109",
+  "calcInfoByLuaConfig": {
+    "id": 2126109,
+    "type": 1,
+    "stamina_cost_ratio_v": "param0"
+  },
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10261_Skill_CloudShield"
+    }
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": false,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2126109,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 13,
+        "UID": "8d3bf1e5-1430-460d-bba0-299e53b88fd0",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 9,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "OWNER",
+        "NodeID": 8,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 3,
+      "UID": "06ca7101-40c1-4b17-bd67-57a1dc64c1c7",
+      "effectId": "Eff_Parmon_10261_Skill_CloudShield_End",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "13": {
+      "calcId": 2126109,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 13,
+      "UID": "8d3bf1e5-1430-460d-bba0-299e53b88fd0",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28efae2a-95aa-4467-a2e9-55e3613fe4a4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10261_Skill_Shield_loop",
+      "NodeID": 5
+    },
+    "11": {
+      "name": "stopSoundStr",
+      "UID": "f4a85363-442e-4e08-9176-2fcec242c165",
+      "soundId": "SFX_Combat_Parmon_10261_Skill_Shield_loop",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_SFX_Combat_Parmon_10261_Skill_Shield_loop",
+      "NodeID": 7
+    },
+    "12": {
+      "buffId": 2126101,
+      "name": "removeBuff",
+      "UID": "23eb0113-6fae-4802-8097-8ad79eaafe6a",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    11,
+    3,
+    7
+  ],
+  "onBuffStartIds": [
+    5,
+    12
+  ]
+}

@@ -1,0 +1,1203 @@
+{
+  "190011": {
+    "sort": 3,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "cost": [
+      [
+        3,
+        1280
+      ]
+    ],
+    "num": 1,
+    "avatarPic": "$UI_Img_CashShop_GiveGift1.png",
+    "onSale": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "itemId": 1601001
+  },
+  "190010": {
+    "sort": 3,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "cost": [
+      [
+        3,
+        680
+      ]
+    ],
+    "num": 1,
+    "avatarPic": "$UI_Img_CashShop_GiveGift2.png",
+    "onSale": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "itemId": 1601000
+  },
+  "60005": {
+    "sort": 3,
+    "isNew": 1,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        2000
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 402,
+    "limitType": 3,
+    "itemId": 151001
+  },
+  "60007": {
+    "sort": 6,
+    "isNew": 1,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        600
+      ]
+    ],
+    "num": 1,
+    "itemId": 7002,
+    "tabGroupId": 402,
+    "onSale": 1
+  },
+  "20008": {
+    "sort": 99,
+    "limitNum": 6,
+    "noGift": 1,
+    "tabGroupId": 202,
+    "onSale": 1,
+    "levelCost": [
+      [
+        2,
+        100
+      ],
+      [
+        4,
+        150
+      ],
+      [
+        5,
+        200
+      ]
+    ],
+    "num": 60,
+    "itemId": 1009,
+    "cost": [
+      [
+        1,
+        50
+      ]
+    ],
+    "limitType": 1,
+    "levelCostType": 1
+  },
+  "20009": {
+    "sort": 19,
+    "cost": [
+      [
+        1,
+        28
+      ]
+    ],
+    "num": 1,
+    "itemId": 7001,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "20010": {
+    "sort": 20,
+    "cost": [
+      [
+        1,
+        88
+      ]
+    ],
+    "num": 1,
+    "itemId": 7002,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "20011": {
+    "sort": 18,
+    "cost": [
+      [
+        1,
+        10
+      ]
+    ],
+    "num": 1,
+    "itemId": 3000,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "20012": {
+    "sort": 21,
+    "limitNum": 1,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        300
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 1012
+  },
+  "20013": {
+    "sort": 7,
+    "limitNum": 3,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        500
+      ]
+    ],
+    "num": 1,
+    "onSale": 0,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 553024
+  },
+  "20014": {
+    "sort": 6,
+    "cost": [
+      [
+        1,
+        100
+      ]
+    ],
+    "num": 1,
+    "itemId": 510002,
+    "tabGroupId": 202,
+    "onSale": 1,
+    "noGift": 1
+  },
+  "20015": {
+    "sort": 5,
+    "limitNum": 1,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        1000
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 151000
+  },
+  "20016": {
+    "sort": 12,
+    "limitNum": 5,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        200
+      ]
+    ],
+    "num": 100,
+    "onSale": 0,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 533001
+  },
+  "20017": {
+    "sort": 31,
+    "cost": [
+      [
+        1,
+        8
+      ]
+    ],
+    "num": 1,
+    "itemId": 151001,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "20018": {
+    "sort": 32,
+    "cost": [
+      [
+        1,
+        40
+      ]
+    ],
+    "num": 1,
+    "itemId": 151002,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "20019": {
+    "sort": 33,
+    "limitNum": 2,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        200
+      ]
+    ],
+    "num": 1,
+    "onSale": 0,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 151003
+  },
+  "20020": {
+    "sort": 8,
+    "cost": [
+      [
+        1,
+        300
+      ]
+    ],
+    "num": 1,
+    "itemId": 640021,
+    "tabGroupId": 202,
+    "onSale": 1,
+    "noGift": 1
+  },
+  "20021": {
+    "sort": 2,
+    "limitNum": 99,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        60
+      ]
+    ],
+    "num": 100000,
+    "onSale": 0,
+    "tabGroupId": 202,
+    "limitType": 1,
+    "itemId": 2
+  },
+  "20022": {
+    "sort": 22,
+    "limitNum": 1,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        1000
+      ]
+    ],
+    "num": 1,
+    "onSale": 0,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 152000
+  },
+  "20023": {
+    "sort": 23,
+    "limitNum": 100,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        15
+      ]
+    ],
+    "num": 10,
+    "onSale": 1,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 110908
+  },
+  "20024": {
+    "sort": 9,
+    "cost": [
+      [
+        1,
+        300
+      ]
+    ],
+    "num": 1,
+    "itemId": 640011,
+    "tabGroupId": 202,
+    "onSale": 1,
+    "noGift": 1
+  },
+  "30031": {
+    "sort": 5,
+    "cost": [
+      [
+        3,
+        300
+      ]
+    ],
+    "num": 1,
+    "itemId": 1103,
+    "tabGroupId": 203,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "10002": {
+    "sort": 6,
+    "isNew": 1,
+    "isTop": 1,
+    "tabGroupId": 101,
+    "startTime": {
+      "3": 1790150400,
+      "4": 1790107200,
+      "1": 1790107200,
+      "2": 1790136000
+    },
+    "uiBack": "$T_LVUIMall_BackGround_Shuimu_CA.png",
+    "onSale": 1,
+    "cost": [
+      [
+        3,
+        980
+      ]
+    ],
+    "avatarId": {
+      "21": 210007,
+      "11": 110007
+    },
+    "num": 1,
+    "itemId": 710014,
+    "avatarPicShow": "$UI_Img_Cashshop_Fashion_710014.png",
+    "avatarType": 3000,
+    "avatarPic": "$UI_Img_CashShop_Appearance5.png"
+  },
+  "10003": {
+    "sort": 3,
+    "onSale": 1,
+    "tabGroupId": 101,
+    "uiBack": "$T_LVUIMall_BackGround_BL_CA.png",
+    "avatarId": {
+      "21": 210007,
+      "11": 110007
+    },
+    "avatarPic": "$UI_Img_CashShop_Appearance6.png",
+    "cost": [
+      [
+        3,
+        1280
+      ]
+    ],
+    "num": 1,
+    "itemId": 710021,
+    "avatarPicShow": "$UI_Img_Cashshop_Fashion_710021.png",
+    "avatarType": 3000,
+    "ignoreStartTime": 1
+  },
+  "10004": {
+    "sort": 1,
+    "onSale": 1,
+    "tabGroupId": 101,
+    "uiBack": "$T_LVUIMall_BackGround_Tanglang_CA.png",
+    "avatarId": {
+      "21": 210007,
+      "11": 110007
+    },
+    "avatarPic": "$UI_Img_CashShop_Appearance8.png",
+    "cost": [
+      [
+        3,
+        1280
+      ]
+    ],
+    "num": 1,
+    "itemId": 710022,
+    "avatarPicShow": "$UI_Img_Cashshop_Fashion_710022.png",
+    "avatarType": 3000,
+    "ignoreStartTime": 1
+  },
+  "10005": {
+    "sort": 5,
+    "onSale": 1,
+    "tabGroupId": 101,
+    "uiBack": "$T_LVUIMall_BackGround_Xingluli_CA.png",
+    "avatarId": {
+      "21": 210007,
+      "11": 110007
+    },
+    "avatarPic": "$UI_Img_CashShop_Appearance2.png",
+    "cost": [
+      [
+        3,
+        380
+      ]
+    ],
+    "num": 1,
+    "itemId": 710004,
+    "avatarPicShow": "$UI_Img_Cashshop_Fashion_710004.png",
+    "avatarType": 3000,
+    "ignoreStartTime": 1
+  },
+  "10006": {
+    "sort": 2,
+    "onSale": 1,
+    "tabGroupId": 101,
+    "uiBack": "$T_LVUIMall_BackGround_SummerAB_CA.png",
+    "avatarId": {
+      "21": 210007,
+      "11": 110007
+    },
+    "avatarPic": "$UI_Img_CashShop_Appearance11.png",
+    "cost": [
+      [
+        3,
+        980
+      ]
+    ],
+    "num": 1,
+    "itemId": 710039,
+    "avatarPicShow": "$UI_Img_Cashshop_Fashion_710039.png",
+    "avatarType": 3000,
+    "ignoreStartTime": 1
+  },
+  "40007": {
+    "sort": 65,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 2,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        3,
+        680
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 303,
+    "limitType": 2,
+    "itemId": 8011
+  },
+  "40008": {
+    "sort": 85,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        3,
+        1680
+      ]
+    ],
+    "num": 1,
+    "itemId": 8004,
+    "tabGroupId": 302,
+    "onSale": 1
+  },
+  "40009": {
+    "sort": 70,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        3,
+        380
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 303,
+    "limitType": 2,
+    "itemId": 8010
+  },
+  "40010": {
+    "sort": 75,
+    "endTime": {
+      "3": 1796860799,
+      "4": 1796860799,
+      "1": 1796860799,
+      "2": 1796860799
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        3,
+        2980
+      ]
+    ],
+    "num": 1,
+    "itemId": 8008,
+    "tabGroupId": 302,
+    "onSale": 1
+  },
+  "40011": {
+    "sort": 90,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        3,
+        980
+      ]
+    ],
+    "num": 1,
+    "itemId": 8003,
+    "tabGroupId": 302,
+    "onSale": 1
+  },
+  "30001": {
+    "sort": 2,
+    "cost": [
+      [
+        3,
+        200
+      ]
+    ],
+    "num": 1,
+    "itemId": 110003,
+    "tabGroupId": 203,
+    "onSale": 1,
+    "noGift": 1
+  },
+  "30002": {
+    "sort": 1,
+    "cost": [
+      [
+        3,
+        1500
+      ]
+    ],
+    "num": 1,
+    "itemId": 110006,
+    "tabGroupId": 203,
+    "onSale": 1,
+    "noGift": 1
+  },
+  "40015": {
+    "sort": 85,
+    "endTime": {
+      "3": 1791489599,
+      "4": 1791489599,
+      "1": 1791489599,
+      "2": 1791489599
+    },
+    "limitNum": 3,
+    "startTime": {
+      "3": 1790344800,
+      "4": 1790301600,
+      "1": 1790301600,
+      "2": 1790330400
+    },
+    "cost": [
+      [
+        3,
+        380
+      ]
+    ],
+    "num": 1,
+    "itemId": 8014,
+    "tabGroupId": 303,
+    "onSale": 1
+  },
+  "40016": {
+    "sort": 90,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1790755200,
+      "4": 1790712000,
+      "1": 1790712000,
+      "2": 1790740800
+    },
+    "cost": [
+      [
+        3,
+        980
+      ]
+    ],
+    "num": 1,
+    "itemId": 8013,
+    "tabGroupId": 303,
+    "onSale": 0
+  },
+  "60001": {
+    "sort": 7,
+    "tabGroupId": 402,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "num": 1,
+    "itemId": 110002,
+    "onSale": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        800
+      ]
+    ]
+  },
+  "60002": {
+    "sort": 8,
+    "tabGroupId": 402,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "num": 1,
+    "itemId": 110003,
+    "onSale": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        800
+      ]
+    ]
+  },
+  "60003": {
+    "sort": 9,
+    "tabGroupId": 402,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "num": 1,
+    "itemId": 110004,
+    "onSale": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        1200
+      ]
+    ]
+  },
+  "60006": {
+    "sort": 4,
+    "isNew": 1,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        500
+      ]
+    ],
+    "num": 1,
+    "itemId": 7001,
+    "tabGroupId": 402,
+    "onSale": 1
+  },
+  "10001": {
+    "sort": 4,
+    "onSale": 0,
+    "tabGroupId": 101,
+    "uiBack": "$T_LVUIMall_BackGround_Xiaotanquan_CA.png",
+    "avatarId": {
+      "21": 210007,
+      "11": 110007
+    },
+    "avatarPic": "$UI_Img_CashShop_Appearance4.png",
+    "cost": [
+      [
+        3,
+        680
+      ]
+    ],
+    "num": 1,
+    "itemId": 710011,
+    "avatarPicShow": "$UI_Img_Cashshop_Fashion_710011.png",
+    "avatarType": 3000,
+    "ignoreStartTime": 1
+  },
+  "60008": {
+    "sort": 5,
+    "isNew": 1,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        400
+      ]
+    ],
+    "num": 1,
+    "itemId": 150003,
+    "tabGroupId": 402,
+    "onSale": 1
+  },
+  "60009": {
+    "sort": 2,
+    "isNew": 1,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        12000
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 402,
+    "limitType": 3,
+    "itemId": 540112
+  },
+  "60004": {
+    "sort": 1,
+    "isNew": 1,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        1020,
+        8000
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 402,
+    "limitType": 3,
+    "itemId": 110908
+  },
+  "40014": {
+    "sort": 95,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1790755200,
+      "4": 1790712000,
+      "1": 1790712000,
+      "2": 1790740800
+    },
+    "cost": [
+      [
+        3,
+        60
+      ]
+    ],
+    "num": 1,
+    "itemId": 8012,
+    "tabGroupId": 303,
+    "onSale": 0
+  },
+  "20001": {
+    "sort": 1,
+    "limitNum": 10,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        200
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 110003
+  },
+  "40013": {
+    "sort": 80,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 2,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        3,
+        1980
+      ]
+    ],
+    "num": 1,
+    "itemId": 8005,
+    "tabGroupId": 302,
+    "onSale": 1
+  },
+  "20002": {
+    "sort": 10,
+    "limitNum": 1,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        5000
+      ]
+    ],
+    "num": 1,
+    "onSale": 0,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 1102
+  },
+  "40006": {
+    "sort": 75,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "specialCostText": "9x",
+    "tabGroupId": 303,
+    "cost": [
+      [
+        3,
+        60
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "limitType": 2,
+    "itemId": 8009
+  },
+  "20003": {
+    "sort": 11,
+    "limitNum": 20,
+    "noGift": 1,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "levelCost": [
+      [
+        4,
+        200
+      ],
+      [
+        7,
+        250
+      ],
+      [
+        11,
+        300
+      ]
+    ],
+    "num": 1,
+    "itemId": 1103,
+    "cost": [
+      [
+        1,
+        150
+      ]
+    ],
+    "limitType": 2,
+    "levelCostType": 2
+  },
+  "40002": {
+    "sort": 3,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "cost": [
+      [
+        3,
+        588
+      ]
+    ],
+    "num": 1,
+    "itemId": 8002,
+    "tabGroupId": 301,
+    "onSale": 1
+  },
+  "20004": {
+    "sort": 9,
+    "cost": [
+      [
+        1,
+        50
+      ]
+    ],
+    "num": 1,
+    "itemId": 111002,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "40001": {
+    "sort": 95,
+    "endTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "limitNum": 1,
+    "specialCostText": "6x",
+    "cost": [
+      [
+        3,
+        280
+      ]
+    ],
+    "num": 1,
+    "itemId": 8001,
+    "tabGroupId": 302,
+    "startTime": {
+      "3": 1774512000,
+      "4": 1774468800,
+      "1": 1774468800,
+      "2": 1774497600
+    },
+    "onSale": 1
+  },
+  "20005": {
+    "sort": 13,
+    "limitNum": 100,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        60
+      ]
+    ],
+    "num": 1,
+    "onSale": 0,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 540000
+  },
+  "30032": {
+    "sort": 6,
+    "limitNum": 1,
+    "noGift": 1,
+    "startTime": {
+      "3": 1790150400,
+      "4": 1790107200,
+      "1": 1790107200,
+      "2": 1790136000
+    },
+    "uiBack": "$T_LVUIBP_BackGroud_03_CA.png",
+    "cost": [
+      [
+        3,
+        380
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "avatarType": 4000,
+    "itemId": 2800001
+  },
+  "20006": {
+    "sort": 17,
+    "cost": [
+      [
+        1,
+        10
+      ]
+    ],
+    "num": 1,
+    "itemId": 630000,
+    "tabGroupId": 202,
+    "onSale": 0,
+    "noGift": 1
+  },
+  "20007": {
+    "sort": 16,
+    "limitNum": 10,
+    "noGift": 1,
+    "cost": [
+      [
+        1,
+        300
+      ]
+    ],
+    "num": 1,
+    "onSale": 1,
+    "tabGroupId": 202,
+    "limitType": 2,
+    "itemId": 590012
+  }
+}

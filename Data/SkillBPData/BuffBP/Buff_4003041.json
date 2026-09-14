@@ -1,0 +1,475 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003041",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    41
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "d1bb5c5f-0be8-4f74-9a9c-fe1e412df198",
+      "name": "buffStartThink",
+      "NodeID": 37
+    },
+    "39": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "dabb726d-4192-49b6-9525-ad9126a84229",
+      "forceCurPet": true,
+      "target": {
+        "key": "SuolianTarget",
+        "name": "getServerCacheVal",
+        "UID": "d79e2bae-6062-472f-9c0b-39f6e72b3c2d",
+        "target": "OWNER",
+        "NodeID": 38
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "buffId": 4003045,
+      "name": "hasBuff",
+      "UID": "20c2526b-1bdd-4934-ac5e-780c86f4fb3e",
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "dabb726d-4192-49b6-9525-ad9126a84229",
+        "forceCurPet": true,
+        "target": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "d79e2bae-6062-472f-9c0b-39f6e72b3c2d",
+          "target": "OWNER",
+          "NodeID": 38
+        },
+        "NodeID": 39
+      },
+      "NodeID": 40
+    },
+    "41": {
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "a73b288e-70ec-483b-9ae6-9998e6ff2ebe",
+      "name": "doActionsByConditions",
+      "NodeID": 41,
+      "elseActionIds": [
+        42
+      ]
+    },
+    "42": {
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "dabb726d-4192-49b6-9525-ad9126a84229",
+        "forceCurPet": true,
+        "target": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "d79e2bae-6062-472f-9c0b-39f6e72b3c2d",
+          "target": "OWNER",
+          "NodeID": 38
+        },
+        "NodeID": 39
+      },
+      "duration": 60,
+      "buffId": 4003045,
+      "NodeID": 42,
+      "UID": "e23bf760-1446-484b-8881-777beae88014",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "4895d438-2786-4bb1-862d-548101e5640b",
+      "forceCurPet": true,
+      "target": {
+        "UID": "0e0acc04-d3f5-49f9-89a4-05193e97e021",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 43
+      },
+      "NodeID": 44
+    },
+    "2": {
+      "buffId": 4003041,
+      "name": "removeBuff",
+      "UID": "32665801-fb3f-4921-9c8b-902bd83c122b",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "201bd98a-8712-4495-85ae-cc066eaeb6fa",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "6": {
+      "UID": "b95856c7-3a7f-442d-8663-bec86f167ce4",
+      "actorId": {
+        "UID": "074dfbb9-0c16-4cea-984f-3c4a2f84c4f0",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 5
+      },
+      "name": "destroyEntity",
+      "NodeID": 6
+    },
+    "48": {
+      "key": "SuolianTarget",
+      "name": "setServerCacheVal",
+      "UID": "b83140a5-aced-4938-9e5f-68beea309ec1",
+      "target": "OWNER",
+      "val": {
+        "name": "searchEntity",
+        "UID": "f5c10619-9711-481f-ae6c-18f46124658c",
+        "relation": 2,
+        "radius": 50,
+        "heightDown": 5,
+        "heightUp": 10,
+        "checkValidPlayer": true,
+        "isRandom": true,
+        "NodeID": 47,
+        "filterCondition": 46
+      },
+      "NodeID": 48
+    },
+    "47": {
+      "name": "searchEntity",
+      "UID": "f5c10619-9711-481f-ae6c-18f46124658c",
+      "relation": 2,
+      "radius": 50,
+      "heightDown": 5,
+      "heightUp": 10,
+      "checkValidPlayer": true,
+      "isRandom": true,
+      "NodeID": 47,
+      "filterCondition": 46
+    },
+    "8": {
+      "buffId": 4003042,
+      "name": "removeBuff",
+      "UID": "c34df539-1e02-426c-b8f8-eadd50a51d91",
+      "target": "MASTER",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "e2aef042-7c18-4a0a-9b29-2d691c556142",
+      "name": "callClientAction",
+      "actionIds": [
+        32,
+        29
+      ],
+      "NodeID": 31
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "0b034f9a-22a2-4649-aed4-eda72c88c8db",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 9
+    },
+    "46": {
+      "UID": "ca5fdfc6-f27d-41d0-9a14-d47e60add98b",
+      "name": "isNot",
+      "action": {
+        "buffId": 4003045,
+        "name": "hasBuff",
+        "UID": "e05e788c-9167-4ded-a0c4-dea6ba95c5f3",
+        "target": {
+          "name": "getPlayerRealControlEnt",
+          "UID": "4895d438-2786-4bb1-862d-548101e5640b",
+          "forceCurPet": true,
+          "target": {
+            "UID": "0e0acc04-d3f5-49f9-89a4-05193e97e021",
+            "target": "TARGET",
+            "name": "getTargetId",
+            "NodeID": 43
+          },
+          "NodeID": 44
+        },
+        "NodeID": 45
+      },
+      "NodeID": 46
+    },
+    "21": {
+      "actionIds": [
+        19,
+        23,
+        28,
+        25
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "ab4309f5-f480-41b4-8687-bc0cf64016c4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        48,
+        19,
+        23,
+        28,
+        25
+      ],
+      "NodeID": 21
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "6b70000b-7260-48a9-b838-84c89a556894",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 11
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "9f86e13e-3f35-4736-9a15-7a2018a59d45",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "12": {
+      "buffId": 4003045,
+      "name": "removeBuff",
+      "UID": "ef6a97f5-d048-46b8-9650-7d9999d80c51",
+      "target": "MASTER",
+      "NodeID": 12
+    },
+    "16": {
+      "templateId": 1000005,
+      "name": "checkTargetTemplateId",
+      "UID": "11150785-8488-416d-89b0-57e78bd18581",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "23": {
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "0d894c1b-366c-406f-93f0-292e17aa1c33",
+        "forceCurPet": true,
+        "target": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "5800da72-3fd6-420c-89c7-23ae5686b661",
+          "target": "OWNER",
+          "NodeID": 17
+        },
+        "NodeID": 18
+      },
+      "duration": 60,
+      "buffId": 4003045,
+      "NodeID": 23,
+      "UID": "2da90f09-4eda-452f-8c17-c0ca57fb77b2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "24": {
+      "buffId": 4003045,
+      "name": "removeBuff",
+      "UID": "db828610-bcf9-4026-a06e-da01792b0283",
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "0d894c1b-366c-406f-93f0-292e17aa1c33",
+        "forceCurPet": true,
+        "target": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "5800da72-3fd6-420c-89c7-23ae5686b661",
+          "target": "OWNER",
+          "NodeID": 17
+        },
+        "NodeID": 18
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "templateId": 1000003,
+      "name": "checkTargetTemplateId",
+      "UID": "c7501f4a-05bb-4a2b-8e78-2077d9304d57",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "buffId": 4003043,
+      "name": "removeBuff",
+      "UID": "fa68b7ce-04f3-400f-8978-883b45afe00b",
+      "target": "MASTER",
+      "NodeID": 10
+    },
+    "15": {
+      "templateId": 1000004,
+      "name": "checkTargetTemplateId",
+      "UID": "083a0dce-b8cf-46ad-a955-2d8b5c868b48",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "name": "registerDeadEvent",
+      "UID": "77dbd2be-4eca-4d2a-841a-4e6853214432",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        36
+      ],
+      "name": "registerDeadEvent",
+      "UID": "63b8adb2-5b73-47ab-9407-a07c0d4887f1",
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "0d894c1b-366c-406f-93f0-292e17aa1c33",
+        "forceCurPet": true,
+        "target": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "5800da72-3fd6-420c-89c7-23ae5686b661",
+          "target": "OWNER",
+          "NodeID": 17
+        },
+        "NodeID": 18
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "duration": 0,
+      "linkTarget": {
+        "key": "SuolianTarget",
+        "name": "getServerCacheVal",
+        "UID": "5800da72-3fd6-420c-89c7-23ae5686b661",
+        "target": "OWNER",
+        "NodeID": 17
+      },
+      "performer": "OWNER",
+      "UID": "07c12129-6a96-41e7-af2e-67621a0a204a",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain",
+      "scale": 0,
+      "raycastTestLayer": 8201,
+      "name": "playLaserEffect",
+      "distance": 0,
+      "NodeID": 27
+    },
+    "28": {
+      "UID": "e6b3856c-7945-4717-9468-55c10472654b",
+      "name": "callClientAction",
+      "actionIds": [
+        27
+      ],
+      "NodeID": 28
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "2fd181af-bb35-4f63-9b3e-e5b49da511b8",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain",
+      "target": {
+        "key": "SuolianTarget",
+        "name": "getServerCacheVal",
+        "UID": "5800da72-3fd6-420c-89c7-23ae5686b661",
+        "target": "OWNER",
+        "NodeID": 17
+      },
+      "NodeID": 29
+    },
+    "18": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "0d894c1b-366c-406f-93f0-292e17aa1c33",
+      "forceCurPet": true,
+      "target": {
+        "key": "SuolianTarget",
+        "name": "getServerCacheVal",
+        "UID": "5800da72-3fd6-420c-89c7-23ae5686b661",
+        "target": "OWNER",
+        "NodeID": 17
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "0b428ba5-a126-4276-a41c-6b49db2a55b7",
+      "effectId": "Eff_Parmon_Common_Buff_BossRush_KeyItem_Chain",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "time": 0.1,
+      "rotateSpeed": 3600,
+      "name": "rotateTo",
+      "UID": "8f7df297-da15-4296-9ae2-baf9a35538f6",
+      "referenceOffsetRotY": 0,
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "0d894c1b-366c-406f-93f0-292e17aa1c33",
+        "forceCurPet": true,
+        "target": {
+          "key": "SuolianTarget",
+          "name": "getServerCacheVal",
+          "UID": "5800da72-3fd6-420c-89c7-23ae5686b661",
+          "target": "OWNER",
+          "NodeID": 17
+        },
+        "NodeID": 18
+      },
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "d0d4011c-6568-4aba-bed8-93fc76a6e557",
+      "target": {
+        "key": "SuolianTarget",
+        "name": "getServerCacheVal",
+        "UID": "8bdb2f3a-49e7-4a47-b60e-0cb5c8e35bc9",
+        "target": "OWNER",
+        "NodeID": 33
+      },
+      "name": "isTargetAlive",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "540b2ab8-2f46-4c89-964e-0b92a781efc8",
+      "actorId": {
+        "UID": "67266fc6-38e6-468d-bcdd-0dfa720873bc",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 35
+      },
+      "name": "destroyEntity",
+      "NodeID": 36
+    }
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "onBuffDestroyIds": [
+    24,
+    9,
+    31,
+    6
+  ],
+  "onBuffStartIds": [
+    3,
+    21,
+    26,
+    37
+  ]
+}

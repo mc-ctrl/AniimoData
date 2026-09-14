@@ -1,0 +1,1233 @@
+{
+  "91290029": {
+    "name": "基础点位_91290029",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91284414,
+    "id": 91290029,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        69.38,
+        105,
+        -37.16
+      ],
+      "name": "清理杂物",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      69.38,
+      105,
+      -37.16
+    ]
+  },
+  "91303575": {
+    "name": "基础点位_91303575",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91284414,
+    "id": 91303575,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        36.22,
+        100.24,
+        -43.56
+      ],
+      "name": "遇到乔乔",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      36.22,
+      100.24,
+      -43.56
+    ]
+  },
+  "91306399": {
+    "name": "基础点位_91306399",
+    "rotation": [
+      0,
+      7.01,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91284414,
+    "id": 91306399,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -11.58,
+        101.55,
+        -67.6
+      ],
+      "name": "初见",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -11.58,
+      101.55,
+      -67.6
+    ]
+  },
+  "91329897": {
+    "name": "基础点位_91329897",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91329897,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -0.14,
+        100.9,
+        -55.77
+      ],
+      "name": "到达家园",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -0.14,
+      100.9,
+      -55.77
+    ]
+  },
+  "91329899": {
+    "name": "基础点位_91329899",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91329899,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        -0.28,
+        100,
+        -32.46
+      ],
+      "name": "清理杂物",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -0.28,
+      100,
+      -32.46
+    ]
+  },
+  "91375666": {
+    "name": "基础点位_91375666",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91375666,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        23.43,
+        101.14,
+        -56.29
+      ],
+      "name": "进讨论区",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      23.43,
+      101.14,
+      -56.29
+    ]
+  },
+  "91335456": {
+    "name": "基础点位_91335456",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91335456,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        5.09,
+        103.99,
+        -103.97
+      ],
+      "name": "过桥",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      5.09,
+      103.99,
+      -103.97
+    ]
+  },
+  "91370734": {
+    "name": "建造区宠物出生点",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274705,
+    "id": 91370734,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        5.33,
+        103.87,
+        -97.65
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        1
+      ],
+      "name": "宠物创建",
+      "circleRadius": 2,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      5.33,
+      103.87,
+      -97.65
+    ]
+  },
+  "91369221": {
+    "id": 91369221,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      85.51,
+      105,
+      -51.4
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91338607": {
+    "name": "基础点位_91338607",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91338607,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        -15.21,
+        101.26,
+        -50.24
+      ],
+      "name": "家园门口",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -15.21,
+      101.26,
+      -50.24
+    ]
+  },
+  "91369220": {
+    "id": 91369220,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      81.67,
+      105,
+      -45.09
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369219": {
+    "id": 91369219,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      88.24,
+      105,
+      -41.83
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91348243": {
+    "name": "基础点位_91348243",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91348243,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        -0.4,
+        100.9,
+        -60.64
+      ],
+      "name": "礼物",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -0.4,
+      100.9,
+      -60.64
+    ]
+  },
+  "91369218": {
+    "id": 91369218,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      81.02,
+      105,
+      -38.47
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369217": {
+    "id": 91369217,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      86.31,
+      105,
+      -19.66
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91349639": {
+    "name": "基础点位_91349639",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91349639,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -0.32,
+        100.9,
+        -58.15
+      ],
+      "name": "广场中间",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -0.32,
+      100.9,
+      -58.15
+    ]
+  },
+  "91369216": {
+    "id": 91369216,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      88.36,
+      105,
+      -26.52
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369215": {
+    "id": 91369215,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      83.78,
+      105,
+      -30.67
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91355237": {
+    "name": "基础点位_91355237",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91284414,
+    "id": 91355237,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "name": "赛季地块门口寻路点",
+      "position": [
+        56.55,
+        105,
+        -46.63
+      ],
+      "author": "worldx_ch"
+    },
+    "position": [
+      56.55,
+      105,
+      -46.63
+    ]
+  },
+  "91369214": {
+    "id": 91369214,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      80.3,
+      105,
+      -23.99
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369213": {
+    "id": 91369213,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      73.51,
+      105,
+      -50.6
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91356045": {
+    "name": "基础点位_91356045",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91329896,
+    "id": 91356045,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        8
+      ],
+      "position": [
+        12.19,
+        102.43,
+        -66.63
+      ],
+      "name": "听到广播",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      12.19,
+      102.43,
+      -66.63
+    ]
+  },
+  "91369212": {
+    "id": 91369212,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      65.87,
+      105,
+      -49.86
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369211": {
+    "id": 91369211,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      69.07,
+      105,
+      -44.01
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369148": {
+    "id": 91369148,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      66.53,
+      105,
+      -19.62
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369208": {
+    "id": 91369208,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      65.93,
+      105,
+      -30.59
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369206": {
+    "id": 91369206,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      71.29,
+      105,
+      -24.27
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91369207": {
+    "id": 91369207,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      73.05,
+      105,
+      -31.11
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91274708": {
+    "name": "生产区宠物出生点",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274705,
+    "id": 91274708,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        -0.42,
+        100.32,
+        -43.4
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        1
+      ],
+      "name": "宠物创建",
+      "circleRadius": 2,
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -0.42,
+      100.32,
+      -43.4
+    ]
+  },
+  "91369210": {
+    "id": 91369210,
+    "logics": {},
+    "pointType": 2,
+    "name": "丰收小礼点位",
+    "position": [
+      65.49,
+      105,
+      -39.78
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91257906
+  },
+  "91274709": {
+    "id": 91274709,
+    "logics": {},
+    "pointType": 2,
+    "name": "欢迎点位1",
+    "position": [
+      -3.4,
+      100.74,
+      -49.43
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274705
+  },
+  "91274710": {
+    "id": 91274710,
+    "logics": {},
+    "pointType": 2,
+    "name": "欢迎点位2",
+    "position": [
+      1.88,
+      100.75,
+      -49.46
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274705
+  },
+  "91274711": {
+    "id": 91274711,
+    "logics": {},
+    "pointType": 2,
+    "name": "欢迎点位3",
+    "position": [
+      -5.34,
+      100.75,
+      -51.2
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274705
+  },
+  "91274712": {
+    "id": 91274712,
+    "logics": {},
+    "pointType": 2,
+    "name": "欢迎点位4",
+    "position": [
+      4.7,
+      100.75,
+      -51.43
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274705
+  },
+  "91274753": {
+    "id": 91274753,
+    "logics": {},
+    "pointType": 2,
+    "name": "房车创建点",
+    "position": [
+      -20.1,
+      101.06,
+      -54.16
+    ],
+    "rotation": [
+      0,
+      321.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274754": {
+    "id": 91274754,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位1",
+    "position": [
+      -4.28,
+      101.11,
+      -68.06
+    ],
+    "rotation": [
+      0,
+      32.62,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274755": {
+    "id": 91274755,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位2",
+    "position": [
+      -5.83,
+      101,
+      -67.28
+    ],
+    "rotation": [
+      0,
+      44.17,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274756": {
+    "id": 91274756,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位3",
+    "position": [
+      -8.32,
+      101.58,
+      -68.96
+    ],
+    "rotation": [
+      0,
+      15.68,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274757": {
+    "id": 91274757,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位4",
+    "position": [
+      -8.49,
+      101.38,
+      -71.57
+    ],
+    "rotation": [
+      0,
+      88.5,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274758": {
+    "id": 91274758,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位5",
+    "position": [
+      -12.4,
+      101.86,
+      -71.2
+    ],
+    "rotation": [
+      0,
+      306.36,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274759": {
+    "id": 91274759,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位6",
+    "position": [
+      -14.01,
+      101.9,
+      -72.16
+    ],
+    "rotation": [
+      0,
+      0.38,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274760": {
+    "id": 91274760,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位7",
+    "position": [
+      -16.2,
+      101.86,
+      -70.24
+    ],
+    "rotation": [
+      0,
+      74.75,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274761": {
+    "id": 91274761,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位8",
+    "position": [
+      -15.64,
+      101.86,
+      -68.82
+    ],
+    "rotation": [
+      0,
+      124.33,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274762": {
+    "id": 91274762,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位9",
+    "position": [
+      -13.95,
+      101.85,
+      -68.28
+    ],
+    "rotation": [
+      0,
+      202.78,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274763": {
+    "id": 91274763,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位10",
+    "position": [
+      -16.25,
+      101.81,
+      -63.52
+    ],
+    "rotation": [
+      0,
+      124.58,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274764": {
+    "id": 91274764,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位11",
+    "position": [
+      -19.64,
+      102.39,
+      -66.68
+    ],
+    "rotation": [
+      0,
+      51.66,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274765": {
+    "id": 91274765,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位12",
+    "position": [
+      -19.72,
+      102.38,
+      -64.86
+    ],
+    "rotation": [
+      0,
+      90.23,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274766": {
+    "id": 91274766,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位13",
+    "position": [
+      -14.58,
+      101.68,
+      -64.95
+    ],
+    "rotation": [
+      0,
+      79.67,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274767": {
+    "id": 91274767,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位14",
+    "position": [
+      -14.52,
+      101.62,
+      -63.94
+    ],
+    "rotation": [
+      0,
+      108.26,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274768": {
+    "id": 91274768,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位15",
+    "position": [
+      -8.13,
+      102.98,
+      -79.81
+    ],
+    "rotation": [
+      0,
+      327.81,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274769": {
+    "id": 91274769,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位16",
+    "position": [
+      -5.86,
+      103.47,
+      -79.58
+    ],
+    "rotation": [
+      0,
+      330.4,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274770": {
+    "id": 91274770,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位17",
+    "position": [
+      -4.22,
+      101.01,
+      -70.29
+    ],
+    "rotation": [
+      0,
+      73.45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274771": {
+    "id": 91274771,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位18",
+    "position": [
+      -4.53,
+      100.81,
+      -72.49
+    ],
+    "rotation": [
+      0,
+      90.26,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274772": {
+    "id": 91274772,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位19",
+    "position": [
+      -10.48,
+      101.63,
+      -69.41
+    ],
+    "rotation": [
+      0,
+      332.88,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91274773": {
+    "id": 91274773,
+    "logics": {},
+    "pointType": 2,
+    "name": "安抚点位20",
+    "position": [
+      -12.24,
+      101.6,
+      -66.91
+    ],
+    "rotation": [
+      0,
+      146.8,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91274747
+  },
+  "91284461": {
+    "name": "基础点位_91284461",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 91284414,
+    "id": 91284461,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        10.9,
+        101.65,
+        -65.95
+      ],
+      "name": "前往商店",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      10.9,
+      101.65,
+      -65.95
+    ]
+  }
+}

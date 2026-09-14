@@ -1,0 +1,80 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91213011",
+  "name": "被动-舞力值",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "onBuffLayerChangeIds": [
+    14
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "rValue": 9,
+      "name": "equal",
+      "UID": "e6bdfef6-b50e-4f21-b367-6b7cce22dac3",
+      "NodeID": 13,
+      "lValue": {
+        "UID": "94d1e931-eeee-4a0f-a494-4ad69d4f6c09",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 12
+      }
+    },
+    "14": {
+      "actionIds": [
+        51,
+        75
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "7850d794-c109-4132-bab0-1c1ce78bf3f0",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "50": {
+      "name": "checkPetPrototypeId",
+      "UID": "b97a4fff-7524-4f37-bcf0-12760a503ed6",
+      "target": "OWNER",
+      "petPrototypeId": 1021300,
+      "NodeID": 50
+    },
+    "75": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9126f400-494f-45d1-aab9-eb5344d9f09f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Healing01",
+      "NodeID": 75
+    },
+    "51": {
+      "actionIds": [
+        74
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "035761b5-389c-4f7e-8920-e2ed51ac8f41",
+      "name": "doActionsByConditions",
+      "NodeID": 51
+    },
+    "74": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91213012,
+      "NodeID": 74,
+      "UID": "50b9803c-1af2-4c6d-8b05-7cff70c125c8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": {}
+}

@@ -1,0 +1,88 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10710002",
+  "defaultHitSoundType": "h",
+  "effectId": "Eff_Parmon_10072_Attack03",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    14
+  ],
+  "onProjectileHitIds": [
+    24,
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "27": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.1
+      },
+      "name": "calcResult",
+      "UID": "d788f134-f928-457b-a6c1-6a085fa05a1b",
+      "target": "CASTER",
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "2dc85b1b-cf3d-458e-bbf6-5ff426443569",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "24": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1.1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "8b659523-47c9-4bfc-9b42-d4aab2cc865d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 24
+    },
+    "14": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "3e50f5d3-2ced-480a-a7be-131166ef29b6",
+      "effectId": "Eff_Parmon_10072_Skill_Hit",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "30": {
+      "UID": "99351b1f-55e2-4192-9111-40dadcb7e02c",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 30
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 1,
+  "calcResultNodeId": 24,
+  "impulseId": 2000,
+  "acceleration": 0
+}

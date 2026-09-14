@@ -1,0 +1,4680 @@
+{
+  "1017200": [
+    {
+      "text": 1772280361,
+      "type": 3,
+      "skeleton": "Bip001 R Clavicle",
+      "clueDesc": 1098545947,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1242924781,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1164188306
+    },
+    {
+      "text": 1528462010,
+      "type": 3,
+      "skeleton": "Bip001 L Forearm",
+      "clueDesc": 1168223144,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 601,
+      "displaySequence": 2,
+      "traitsDesc": 1149918438,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Swim_Idle"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1650752875
+    }
+  ],
+  "1018700": [
+    {
+      "text": 1898831491,
+      "type": 3,
+      "skeleton": "Bone M Tongue 03",
+      "clueDesc": 1613673315,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1581852848,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_DefenseStanceStart",
+        "Skill_DefenseStanceLoop",
+        "Skill_DefenseStanceEnd"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1248073687
+    },
+    {
+      "text": 1653590984,
+      "type": 3,
+      "clueDesc": 1104789534,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "clueSeek": 687,
+      "displaySequence": 2,
+      "traitsDesc": 1629465051,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Cry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1906281914
+    }
+  ],
+  "1032300": [
+    {
+      "text": 1532878231,
+      "type": 3,
+      "clueDesc": 1560540571,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1635461296,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1421007760
+    },
+    {
+      "text": 2087365795,
+      "type": 3,
+      "reward": 50,
+      "clueDesc": 2120805673,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bone B Hair A 02",
+      "displaySequence": 2,
+      "traitsDesc": 1088433609,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1094997598
+    },
+    {
+      "text": 1120615706,
+      "type": 3,
+      "skeleton": "Bone L Eyelid D",
+      "clueDesc": 1640149787,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1634190439,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1504363189
+    }
+  ],
+  "1048100": [
+    {
+      "text": 1582309575,
+      "type": 3,
+      "clueDesc": 1145321718,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1371100535,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1642970278
+    },
+    {
+      "text": 1856759690,
+      "clueDesc": 1388201831,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1678948727,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1312933996
+    }
+  ],
+  "1048300": [
+    {
+      "text": 1216977206,
+      "type": 3,
+      "clueDesc": 1204043422,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1821153628,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1849693170
+    },
+    {
+      "text": 1403833537,
+      "clueDesc": 2132034477,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 2073051954,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1240584017
+    }
+  ],
+  "1050100": [
+    {
+      "text": 1989078332,
+      "type": 3,
+      "clueDesc": 1449301851,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1935536586,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2110129790
+    },
+    {
+      "text": 1726410706,
+      "clueDesc": 1873190739,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 2131602224,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Sleep"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1949126750
+    }
+  ],
+  "1050300": [
+    {
+      "text": 2108304906,
+      "type": 3,
+      "clueDesc": 1984100544,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1784222204,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1889046171
+    },
+    {
+      "text": 1580395422,
+      "clueDesc": 1698841393,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 2085263991,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Rampage"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1607518638
+    }
+  ],
+  "1022100": [
+    {
+      "clueDesc": 1781282305,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 639,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bip001 Head",
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "traitsDesc": 1502241964,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1359370624,
+      "text": 1564041975,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1831109529,
+      "type": 3,
+      "clueDesc": 1792715514,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bone M Belly",
+      "displaySequence": 2,
+      "traitsDesc": 1130575346,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_AngryStart"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1578524249
+    }
+  ],
+  "1022200": [
+    {
+      "text": 1420083093,
+      "type": 3,
+      "traitsDesc": 1785142541,
+      "clueDesc": 1603929650,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "clueSeek": 688,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_AngryLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1978767980
+    },
+    {
+      "text": 2014930664,
+      "type": 3,
+      "clueDesc": 1785652052,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bip001 R UpperArm",
+      "displaySequence": 2,
+      "traitsDesc": 1773748089,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack04"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1667968476
+    }
+  ],
+  "1035200": [
+    {
+      "text": 1619086683,
+      "type": 3,
+      "clueDesc": 1438647113,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1402941236,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1697553936
+    },
+    {
+      "text": 1592609052,
+      "type": 3,
+      "clueDesc": 1852856632,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bip001 R Clavicle",
+      "displaySequence": 2,
+      "traitsDesc": 1173872620,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1213096537
+    }
+  ],
+  "1014100": [
+    {
+      "text": 1350545755,
+      "type": 3,
+      "skeleton": "Bip001 L Clavicle",
+      "clueDesc": 1096132216,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1745045375,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Die"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2133736884
+    },
+    {
+      "text": 1615806955,
+      "clueDesc": 1579887971,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1300106729,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1400002806
+    }
+  ],
+  "1014200": [
+    {
+      "clueDesc": 1887157158,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "clueSeek": 695,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bone R EyeBall 01",
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "traitsDesc": 1692312509,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1217627423,
+      "text": 1303871345,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1890129931,
+      "type": 3,
+      "clueDesc": 1515190179,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bone R EyeBall 01",
+      "displaySequence": 2,
+      "traitsDesc": 1358011286,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1507789952
+    }
+  ],
+  "1013200": [
+    {
+      "text": 1156606847,
+      "type": 3,
+      "traitsDesc": 1882605425,
+      "clueDesc": 1829118114,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 624,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Throw"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2047417645
+    },
+    {
+      "text": 1677665683,
+      "type": 3,
+      "clueDesc": 1690300263,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bone B Spine",
+      "displaySequence": 2,
+      "traitsDesc": 2055168844,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2109309028
+    }
+  ],
+  "1013300": [
+    {
+      "text": 1713543564,
+      "type": 3,
+      "clueDesc": 1431175933,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1864600242,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1403092666
+    }
+  ],
+  "1002300": [
+    {
+      "text": 1239410247,
+      "type": 3,
+      "traitsDesc": 2018433431,
+      "clueDesc": 1183743193,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 616,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1667809543
+    },
+    {
+      "text": 1351082349,
+      "type": 3,
+      "reward": 50,
+      "clueDesc": 1100862277,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bone R IndexFinger",
+      "displaySequence": 2,
+      "traitsDesc": 1686959989,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart",
+        "Behav_SleepLoop",
+        "Behav_SleepEnd"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1841018288
+    },
+    {
+      "clueDesc": 1560476047,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "clueSeek": 693,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bip001 L Clavicle",
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "traitsDesc": 1762858029,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 2113704152,
+      "text": 1900974087,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    }
+  ],
+  "1004100": [
+    {
+      "text": 1595651613,
+      "type": 3,
+      "clueDesc": 1417587523,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1096203159,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1592738077
+    },
+    {
+      "text": 1335070438,
+      "type": 3,
+      "reward": 50,
+      "clueDesc": 1594821813,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bone R Forearm A 02",
+      "displaySequence": 2,
+      "traitsDesc": 1496348203,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "EnvBehav_Slide"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1973848957
+    },
+    {
+      "text": 1692434115,
+      "type": 3,
+      "skeleton": "Bone L Hand A 01",
+      "clueDesc": 1623609729,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1669337602,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1636086695
+    }
+  ],
+  "1001200": [
+    {
+      "text": 1274000014,
+      "type": 3,
+      "skeleton": "Bone Cheek L",
+      "clueDesc": 1402727627,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1608210026,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "EnvBehav_ScreenShowLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2108563474
+    },
+    {
+      "text": 1078783764,
+      "type": 3,
+      "reward": 50,
+      "clueDesc": 1130723893,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bip001 R Clavicle",
+      "displaySequence": 2,
+      "traitsDesc": 1324523609,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "AI_IdleSpecial01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2012446425
+    },
+    {
+      "text": 2081456844,
+      "type": 3,
+      "skeleton": "Bone L Cheek",
+      "clueDesc": 1819615754,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1610118576,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1605351207
+    }
+  ],
+  "1004300": [
+    {
+      "text": 1164539729,
+      "type": 3,
+      "skeleton": "Bone Spine 01",
+      "clueDesc": 1822355718,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1942218908,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_WaterHeal"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1527587866
+    },
+    {
+      "text": 1875473230,
+      "clueDesc": 1884094861,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1938914744,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1155878939
+    }
+  ],
+  "1002600": [
+    {
+      "text": 1677589977,
+      "type": 3,
+      "clueDesc": 2117261612,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1580633931,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "SprintLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1451073841
+    },
+    {
+      "text": 2051093667,
+      "type": 3,
+      "skeleton": "Bip001 R Forearm",
+      "clueDesc": 1740854373,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "clueSeek": 691,
+      "displaySequence": 2,
+      "traitsDesc": 1214556106,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1240856365
+    },
+    {
+      "text": 1665480729,
+      "type": 3,
+      "skeleton": "Bip001 R Forearm",
+      "clueDesc": 2131998533,
+      "clueIcon": "$UI_Icon_Explore_03.png",
+      "traitsDesc": 1854994044,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Die"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1829374336
+    },
+    {
+      "text": 1973421983,
+      "clueDesc": 1150474436,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 4,
+      "traitsDesc": 1080796294,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 1492611446
+    }
+  ],
+  "1002500": [
+    {
+      "text": 1631105691,
+      "type": 3,
+      "clueDesc": 1501261926,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1569251676,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Breath"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1158718472
+    }
+  ],
+  "1003100": [
+    {
+      "text": 1081048559,
+      "type": 3,
+      "skeleton": "Bone L Mouth",
+      "clueDesc": 2114748852,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1910949537,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1541766606
+    },
+    {
+      "text": 1836670562,
+      "type": 3,
+      "clueDesc": 1356346153,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bip001 R Thigh",
+      "displaySequence": 2,
+      "traitsDesc": 1581436884,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "AI_IdleSpecial01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1224777832
+    }
+  ],
+  "1028300": [
+    {
+      "text": 1375520027,
+      "type": 3,
+      "clueDesc": 1744631127,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1565569829,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1647371790
+    },
+    {
+      "text": 2023446159,
+      "clueDesc": 1371548157,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1922979524,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2007960393
+    }
+  ],
+  "1003300": [
+    {
+      "text": 1457763467,
+      "type": 3,
+      "clueDesc": 1290050317,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1297097371,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2024955645
+    },
+    {
+      "text": 1398461260,
+      "clueDesc": 1878072550,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1859709475,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1826673209
+    }
+  ],
+  "1016100": [
+    {
+      "text": 1931406451,
+      "type": 3,
+      "clueDesc": 1430122613,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1917287007,
+      "displaySequence": 2,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Hit_Stand"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1432612531
+    },
+    {
+      "text": 1664094603,
+      "clueDesc": 1933557888,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 3,
+      "traitsDesc": 1440974696,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1578899039
+    }
+  ],
+  "1016200": [
+    {
+      "text": 1663166049,
+      "type": 3,
+      "skeleton": "Bip001 R Forearm",
+      "clueDesc": 2137655145,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1369528906,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1770612002
+    }
+  ],
+  "1016300": [
+    {
+      "text": 1481859981,
+      "type": 3,
+      "clueDesc": 1125436333,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 2056538041,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1312011180
+    },
+    {
+      "text": 1809058212,
+      "type": 3,
+      "skeleton": "Bip001 Tail3",
+      "clueDesc": 2039875489,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "clueSeek": 686,
+      "displaySequence": 2,
+      "traitsDesc": 1610019932,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_IceSlash"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1239354328
+    }
+  ],
+  "1028100": [
+    {
+      "text": 1819886598,
+      "type": 3,
+      "skeleton": "Bone M Hair B",
+      "clueDesc": 1676580297,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1593054973,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_EatLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1850583853
+    },
+    {
+      "text": 1808521138,
+      "clueDesc": 1586731905,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1422343936,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Digging"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1303965963
+    }
+  ],
+  "1028400": [
+    {
+      "text": 1986336206,
+      "type": 3,
+      "skeleton": "Bone L HatRoot C 01",
+      "clueDesc": 1149226600,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1742204730,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_EatLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1383880665
+    }
+  ],
+  "1028500": [
+    {
+      "text": 1492479335,
+      "type": 3,
+      "skeleton": "Bone R UpCloth A 02",
+      "clueDesc": 1904740322,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1390119053,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1395633186
+    },
+    {
+      "text": 1405012249,
+      "clueDesc": 2009253283,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1953748514,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1279878080
+    }
+  ],
+  "1028200": [
+    {
+      "text": 2088999744,
+      "type": 3,
+      "clueDesc": 1128737749,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1222722540,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1673973277
+    },
+    {
+      "text": 2041815147,
+      "clueDesc": 2085183653,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1517850583,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_EatLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1181844805
+    }
+  ],
+  "1043300": [
+    {
+      "text": 1346939375,
+      "type": 3,
+      "clueDesc": 1186399009,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1865482307,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_TurretForm_Fire"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1477686741
+    },
+    {
+      "text": 1211764532,
+      "clueDesc": 1954519838,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1793574294,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1226639223
+    }
+  ],
+  "1018400": [
+    {
+      "text": 1901139122,
+      "type": 3,
+      "skeleton": "Bip001 R Foot",
+      "clueDesc": 1409219584,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1331139170,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1966710443
+    },
+    {
+      "text": 2103424606,
+      "type": 3,
+      "clueDesc": 2048467465,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bone L Hat 02",
+      "displaySequence": 2,
+      "traitsDesc": 1183828095,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1851729704
+    }
+  ],
+  "1018500": [
+    {
+      "text": 1290982480,
+      "type": 3,
+      "clueDesc": 2046778890,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 2028500822,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1852614319
+    },
+    {
+      "text": 1867540107,
+      "type": 3,
+      "clueDesc": 1864626023,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bip001 Spine1",
+      "displaySequence": 2,
+      "traitsDesc": 2137720825,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Sing"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1270999577
+    }
+  ],
+  "1005500": [
+    {
+      "text": 1940026691,
+      "type": 3,
+      "clueDesc": 1831001739,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1674837686,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1797088906
+    },
+    {
+      "text": 1322404716,
+      "clueDesc": 2028957787,
+      "clueIcon": "$UI_Icon_Explore_03.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1359920365,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1550183191
+    }
+  ],
+  "1026100": {
+    "3": {
+      "text": 1233503111,
+      "type": 3,
+      "clueDesc": 1359235141,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1613351787,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Float_IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1442252158
+    },
+    "4": {
+      "text": 1111346933,
+      "type": 3,
+      "skeleton": "Bip001 R Finger0",
+      "clueDesc": 1788440369,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 699,
+      "displaySequence": 2,
+      "traitsDesc": 1742660659,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart",
+        "Behav_SleepLoop",
+        "Behav_SleepEnd"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1255075404
+    },
+    "5": {
+      "text": 1748921713,
+      "type": 3,
+      "clueDesc": 1266906723,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1233172930,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1855134040
+    }
+  },
+  "1051100": [
+    {
+      "text": 1437132511,
+      "type": 3,
+      "clueDesc": 1661026324,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 2078476059,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1637741657
+    },
+    {
+      "text": 1988514024,
+      "clueDesc": 1873905147,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1892214670,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1379618916
+    }
+  ],
+  "1051200": [
+    {
+      "text": 1912041113,
+      "type": 3,
+      "clueDesc": 1747660392,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1896282058,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1323061035
+    },
+    {
+      "text": 2024212562,
+      "clueDesc": 1280807597,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1109163484,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1728914334
+    }
+  ],
+  "1026200": [
+    {
+      "clueDesc": 1652357563,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "displaySequence": 1,
+      "isMirror": 1,
+      "positionCustomer": [
+        -919,
+        350
+      ],
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bone M Mask",
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "traitsDesc": 1614844274,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1526200268,
+      "text": 1375812874,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1128403485,
+      "type": 3,
+      "clueDesc": 1614092714,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "clueSeek": 689,
+      "displaySequence": 2,
+      "traitsDesc": 1337275777,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Blast"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1175599478
+    },
+    {
+      "clueDesc": 1700411556,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 683,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "positionCustomer": [
+        -870,
+        -230
+      ],
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bip001 L Thigh",
+      "traitsAnimation": [
+        "GlideStart",
+        "Glideldle"
+      ],
+      "traitsDesc": 1680696059,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1193948115,
+      "text": 1554101223,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1611838677,
+      "clueDesc": 1862449633,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 4,
+      "traitsDesc": 1151322503,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_HappyLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 2013231572
+    }
+  ],
+  "1020700": [
+    {
+      "text": 1206605670,
+      "type": 3,
+      "skeleton": "Bip001 L UpperArm",
+      "clueDesc": 1310705874,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1419167462,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_NoiseWave"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1757165969
+    },
+    {
+      "text": 1971175356,
+      "clueDesc": 1244619163,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 2015052373,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1542996904
+    }
+  ],
+  "6999300": [
+    {
+      "text": 1244897717,
+      "type": 3,
+      "clueDesc": 1986765325,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 2036510528,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1229453843
+    },
+    {
+      "text": 1945576650,
+      "clueDesc": 1941236786,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1366075741,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1647422035
+    }
+  ],
+  "1029300": [
+    {
+      "text": 1602339833,
+      "type": 3,
+      "clueDesc": 1746348355,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1944504823,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1876539576
+    }
+  ],
+  "1047500": [
+    {
+      "text": 1417152567,
+      "type": 3,
+      "clueDesc": 1880439107,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 2115661545,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_AnxiousBeat"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1223218760
+    },
+    {
+      "text": 1185481013,
+      "clueDesc": 1636773852,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1138346466,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_FrenzyBeat"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1241623123
+    },
+    {
+      "text": 2056839672,
+      "type": 3,
+      "clueDesc": 1864913838,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 2073138158,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1082058887
+    }
+  ],
+  "1029100": [
+    {
+      "text": 1962952479,
+      "type": 3,
+      "clueDesc": 1625324163,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1327321387,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1519150828
+    },
+    {
+      "text": 1447387997,
+      "clueDesc": 1968849339,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1707854589,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1941833721
+    }
+  ],
+  "1047400": [
+    {
+      "text": 1989527505,
+      "type": 3,
+      "clueDesc": 1629493862,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1864464306,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1240369776
+    },
+    {
+      "text": 2106996785,
+      "clueDesc": 1090716990,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 2085951520,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2029165019
+    }
+  ],
+  "1045100": [
+    {
+      "text": 1797893780,
+      "type": 3,
+      "skeleton": "Bone L Eyelid In",
+      "clueDesc": 2077056302,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1336444914,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1592588674
+    },
+    {
+      "text": 1946718213,
+      "clueDesc": 2029604928,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1281319314,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1333721323
+    }
+  ],
+  "1002200": [
+    {
+      "text": 1815183162,
+      "type": 3,
+      "skeleton": "Bone R IndexFinger",
+      "clueDesc": 1692412174,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 2023880212,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1694441112
+    },
+    {
+      "text": 1439621456,
+      "type": 3,
+      "clueDesc": 1352752305,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bone Grass B 03",
+      "displaySequence": 2,
+      "traitsDesc": 1229366466,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "SprintLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1170717356
+    }
+  ],
+  "1002400": [
+    {
+      "text": 1951667369,
+      "type": 3,
+      "skeleton": "Bone Grass B 02",
+      "clueDesc": 1844578730,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1096070153,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1319138892
+    },
+    {
+      "text": 2102664317,
+      "type": 3,
+      "clueDesc": 1233095624,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bone L Eye A",
+      "displaySequence": 2,
+      "traitsDesc": 1316249243,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1346165092
+    },
+    {
+      "text": 1288906902,
+      "type": 3,
+      "skeleton": "Bone R IndexFinger",
+      "clueDesc": 2064236240,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1216571442,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 2091958705
+    },
+    {
+      "text": 1991251348,
+      "type": 3,
+      "clueDesc": 2071746171,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 692,
+      "displaySequence": 4,
+      "traitsDesc": 2039702471,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 1438906521
+    }
+  ],
+  "1005100": [
+    {
+      "clueDesc": 1218812228,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 681,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bone Starfish Rotate R",
+      "traitsAnimation": [
+        "Skill_Fire_Field"
+      ],
+      "traitsDesc": 1352501590,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2113436162,
+      "text": 1497904660,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1571751148,
+      "type": 3,
+      "clueDesc": 2041949193,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bone Starfish Star L 02",
+      "displaySequence": 2,
+      "traitsDesc": 1741736509,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1333131604
+    },
+    {
+      "text": 1909711114,
+      "type": 3,
+      "traitsDesc": 1546983318,
+      "clueDesc": 1728301290,
+      "clueIcon": "$UI_Icon_Explore_03.png",
+      "clueSeek": 819,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1162090084
+    },
+    {
+      "text": 1853532237,
+      "clueDesc": 2140329644,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 4,
+      "traitsDesc": 1201610138,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 1870962404
+    }
+  ],
+  "1017100": [
+    {
+      "text": 1251566940,
+      "type": 3,
+      "skeleton": "Bip001 L Forearm",
+      "clueDesc": 1416955742,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1695009445,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Digging"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1602436054
+    },
+    {
+      "clueDesc": 1296357952,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "clueSeek": 600,
+      "displaySequence": 2,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "skeleton": "Bip001 R Calf",
+      "traitsAnimation": [
+        "Jump"
+      ],
+      "traitsDesc": 2070184546,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1619772210,
+      "text": 1893637756,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "clueDesc": 1413753041,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "displaySequence": 3,
+      "isMirror": 1,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "traitsDesc": 1469456075,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1642633466,
+      "spAnimation": "lerpHairColor",
+      "spAnimationParams": [
+        1,
+        1
+      ],
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "text": 1883564378
+    }
+  ],
+  "1045400": [
+    {
+      "text": 2010779971,
+      "type": 3,
+      "clueDesc": 1469839083,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1363050255,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2024293932
+    },
+    {
+      "text": 1941289426,
+      "clueDesc": 2094079450,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1389244284,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_RockCollision"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1839777185
+    }
+  ],
+  "1047100": [
+    {
+      "text": 1952834697,
+      "type": 3,
+      "clueDesc": 1313822588,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 2140137633,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1817018287
+    },
+    {
+      "text": 1845899854,
+      "clueDesc": 1872989324,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1305459850,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Cry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2121972616
+    },
+    {
+      "text": 1771181875,
+      "type": 3,
+      "clueDesc": 1636453704,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1579372521,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1770382162
+    }
+  ],
+  "1032100": [
+    {
+      "text": 2081740910,
+      "type": 3,
+      "skeleton": "Bone B Skirt",
+      "clueDesc": 1210919296,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1148138268,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1350291602
+    },
+    {
+      "text": 2140571532,
+      "type": 3,
+      "clueDesc": 1103788864,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bone M Hair B",
+      "displaySequence": 2,
+      "traitsDesc": 1526972216,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Block_Perfect"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1838153246
+    },
+    {
+      "text": 2091043185,
+      "type": 3,
+      "clueDesc": 1404632158,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 2128272585,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1076578023
+    }
+  ],
+  "1005300": [
+    {
+      "text": 1830480198,
+      "type": 3,
+      "clueDesc": 1172050806,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1852105094,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1207006092
+    },
+    {
+      "text": 1659785169,
+      "type": 3,
+      "reward": 50,
+      "clueDesc": 1819538766,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bone Prop003",
+      "displaySequence": 2,
+      "traitsDesc": 1885682738,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1513558659
+    },
+    {
+      "text": 2074285767,
+      "type": 3,
+      "clueDesc": 1508877358,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1189043667,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Fire_Field"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1567928669
+    }
+  ],
+  "1045300": [
+    {
+      "text": 1142218840,
+      "type": 3,
+      "skeleton": "Bone R Skirt A",
+      "clueDesc": 1200990423,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1766167514,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "DashStart"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1322540473
+    }
+  ],
+  "1044100": [
+    {
+      "text": 1258180470,
+      "type": 3,
+      "clueDesc": 1827219626,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1557504679,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart02",
+        "Behav_SleepLoop02",
+        "Behav_SleepEnd02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1118402747
+    },
+    {
+      "text": 1440455669,
+      "clueDesc": 1225456570,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1479540604,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1882629486
+    }
+  ],
+  "1002100": {
+    "3": {
+      "text": 1194380451,
+      "type": 3,
+      "reward": 50,
+      "clueDesc": 1301664013,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "skeleton": "Bip001 R Foot",
+      "displaySequence": 2,
+      "traitsDesc": 1725900213,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_DefMode_Start"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2129839396
+    },
+    "4": {
+      "text": 1448708819,
+      "type": 3,
+      "skeleton": "Bone L Lip B",
+      "clueDesc": 2060903935,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1179156222,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "EnvBehav_WorryLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1196986145
+    },
+    "1": {
+      "text": 1935147004,
+      "type": 3,
+      "traitsDesc": 1397906273,
+      "clueDesc": 1177812422,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 680,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1957408368
+    }
+  },
+  "1044300": [
+    {
+      "text": 1688987654,
+      "type": 3,
+      "clueDesc": 1319569022,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1877448779,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1919499067
+    },
+    {
+      "text": 2136106826,
+      "clueDesc": 2068176924,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1080882382,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2118543471
+    }
+  ],
+  "1043100": [
+    {
+      "text": 1646588644,
+      "type": 3,
+      "clueDesc": 1138972622,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1364183306,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1722299653
+    },
+    {
+      "text": 1454983172,
+      "clueDesc": 1564001418,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1245890302,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1477696191
+    }
+  ],
+  "1035100": [
+    {
+      "text": 1647717816,
+      "type": 3,
+      "skeleton": "Bone Up Body",
+      "clueDesc": 1392971593,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1996327356,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2038887491
+    }
+  ],
+  "1023100": [
+    {
+      "text": 1608180275,
+      "type": 3,
+      "skeleton": "Bone M Tongue 02",
+      "clueDesc": 1558630207,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1951563181,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_LoveLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1153629985
+    },
+    {
+      "text": 2024945903,
+      "clueDesc": 1358445114,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1883573890,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Dance"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1161852645
+    },
+    {
+      "text": 1397650784,
+      "type": 3,
+      "clueDesc": 1768515343,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1677383711,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1619862658
+    }
+  ],
+  "1023200": {
+    "2": {
+      "text": 2026387978,
+      "type": 3,
+      "skeleton": "Bip001 R Toe0",
+      "clueDesc": 1593575437,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 2040848485,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2080007417
+    }
+  },
+  "1023300": [
+    {
+      "text": 2008950236,
+      "type": 3,
+      "skeleton": "Bone M Weapon",
+      "clueDesc": 1355796813,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1582910798,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1352916441
+    }
+  ],
+  "1020300": [
+    {
+      "text": 1361093872,
+      "type": 3,
+      "skeleton": "Bone R Eyelid Out",
+      "clueDesc": 2030607831,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1911298330,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Impact"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1811548313
+    },
+    {
+      "text": 1108561106,
+      "type": 3,
+      "clueDesc": 1786625888,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "skeleton": "Bip001 R Hand",
+      "displaySequence": 2,
+      "traitsDesc": 2131884305,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_MagicZone"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1651830636
+    },
+    {
+      "text": 1878632398,
+      "type": 3,
+      "clueDesc": 2075655554,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1795175386,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1439551972
+    }
+  ],
+  "1019400": [
+    {
+      "text": 1490523423,
+      "type": 3,
+      "clueDesc": 1534784294,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1670763084,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1370398960
+    }
+  ],
+  "1017300": [
+    {
+      "text": 1410089497,
+      "type": 3,
+      "clueDesc": 1528370162,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1716221539,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1890185785
+    }
+  ],
+  "1019200": [
+    {
+      "text": 1395913314,
+      "type": 3,
+      "clueDesc": 1202065137,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 2053367136,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1758246504
+    },
+    {
+      "text": 2052399478,
+      "type": 3,
+      "clueDesc": 1776131226,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bip001 Neck",
+      "displaySequence": 2,
+      "traitsDesc": 1258739068,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1650055939
+    }
+  ],
+  "1032400": [
+    {
+      "text": 1820666967,
+      "type": 3,
+      "clueDesc": 2003424165,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1223560142,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1290426662
+    },
+    {
+      "text": 1206311927,
+      "clueDesc": 1882042630,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1811943739,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2085719479
+    }
+  ],
+  "1021100": [
+    {
+      "text": 1532254538,
+      "type": 3,
+      "skeleton": "Bip001 R UpperArm",
+      "clueDesc": 1799613285,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1142833439,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1250414051
+    },
+    {
+      "text": 1666369520,
+      "type": 3,
+      "clueDesc": 1447150843,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bip001 L Forearm",
+      "displaySequence": 2,
+      "traitsDesc": 1350078539,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1231834496
+    },
+    {
+      "clueDesc": 1476279454,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "clueSeek": 698,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bip001 L Forearm",
+      "traitsAnimation": [
+        "Al_IdleSpecial02"
+      ],
+      "traitsDesc": 1245740296,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1732478540,
+      "text": 1448459571,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1258807347,
+      "clueDesc": 1807226255,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 4,
+      "traitsDesc": 1134912304,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 1998272506
+    }
+  ],
+  "1012200": [
+    {
+      "text": 1873016542,
+      "type": 3,
+      "clueDesc": 1162592784,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1543890653,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1716059392
+    }
+  ],
+  "1004200": [
+    {
+      "text": 1463429255,
+      "type": 3,
+      "clueDesc": 1838172305,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 2111550251,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1182596761
+    }
+  ],
+  "1003200": [
+    {
+      "text": 1432280089,
+      "type": 3,
+      "clueDesc": 2062625092,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1415746997,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_DoubtLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 2045483477
+    },
+    {
+      "text": 1539310494,
+      "type": 3,
+      "clueDesc": 1958298828,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bone C Mouth",
+      "displaySequence": 2,
+      "traitsDesc": 1246606908,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Hit_Stand"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1719278760
+    }
+  ],
+  "1021200": [
+    {
+      "text": 1228288021,
+      "type": 3,
+      "clueDesc": 1270641739,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1229109005,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "AI_IdleSpecial01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1132428725
+    },
+    {
+      "text": 1261995538,
+      "type": 3,
+      "clueDesc": 1441372117,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "skeleton": "Bone R Ear",
+      "displaySequence": 2,
+      "traitsDesc": 1870339981,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_HappyLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1424751811
+    },
+    {
+      "text": 1294678720,
+      "type": 3,
+      "clueDesc": 2074270083,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1302732280,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Ex"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1437335338
+    }
+  ],
+  "1021300": [
+    {
+      "text": 2116736368,
+      "type": 3,
+      "clueDesc": 1843275336,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "traitsDesc": 1721403287,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1218575574
+    },
+    {
+      "text": 1226153617,
+      "clueDesc": 1440043837,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1205344533,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_HappyLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1547620358
+    }
+  ],
+  "1004500": [
+    {
+      "text": 1867647467,
+      "type": 3,
+      "clueDesc": 2134239824,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1951246909,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1684636552
+    }
+  ],
+  "1001100": [
+    {
+      "clueDesc": 1721814404,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 619,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bone Belly R",
+      "traitsAnimation": [
+        "GlideStart",
+        "Glideldle"
+      ],
+      "traitsDesc": 1289068308,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1675410636,
+      "text": 1747137516,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1088628820,
+      "type": 3,
+      "skeleton": "Bone Belly L",
+      "clueDesc": 1109389934,
+      "clueIcon": "$UI_Icon_Explore_03.png",
+      "clueSeek": 690,
+      "displaySequence": 2,
+      "traitsDesc": 2142318650,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1967655408
+    },
+    {
+      "text": 1976006517,
+      "type": 3,
+      "skeleton": "Bip001 R UpperArm",
+      "clueDesc": 1465873097,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1627022331,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1577395436
+    },
+    {
+      "text": 1278203439,
+      "clueDesc": 2034427779,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 4,
+      "traitsDesc": 1113387106,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_EatLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 1116377547
+    }
+  ],
+  "1019100": [
+    {
+      "text": 1464839979,
+      "type": 3,
+      "skeleton": "Bip001 R Calf",
+      "clueDesc": 1858077727,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1263006308,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1734544398
+    },
+    {
+      "text": 1519394410,
+      "type": 3,
+      "clueDesc": 1180705599,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bip001 Neck",
+      "displaySequence": 2,
+      "traitsDesc": 1280769676,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "EnvBehav_LieLoop"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1731671485
+    }
+  ],
+  "1014300": [
+    {
+      "text": 1465875070,
+      "type": 3,
+      "skeleton": "Bone M Hair",
+      "clueDesc": 1120652937,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 2083787959,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1888294419
+    },
+    {
+      "text": 1394978933,
+      "type": 3,
+      "clueDesc": 1400116691,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1419480365,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack03"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1937072703
+    },
+    {
+      "text": 1999740914,
+      "clueDesc": 1786183916,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1512937216,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Home_OperateLoop_Lightning"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1296795741
+    }
+  ],
+  "1013100": [
+    {
+      "text": 2009822819,
+      "type": 3,
+      "skeleton": "Bone M EyeBall",
+      "clueDesc": 1560278832,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1958321917,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1576338827
+    },
+    {
+      "text": 1377057803,
+      "type": 3,
+      "clueDesc": 1813484565,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "reward": 50,
+      "displaySequence": 2,
+      "traitsDesc": 1089568262,
+      "positionCustomer": [
+        810,
+        200
+      ],
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1515301551
+    },
+    {
+      "clueDesc": 1368407317,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "clueSeek": 694,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bone R Weapon B 03",
+      "traitsAnimation": [
+        "Skill_Throw"
+      ],
+      "traitsDesc": 1646508302,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1753517217,
+      "text": 2124378651,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    }
+  ],
+  "1033100": [
+    {
+      "text": 1417298499,
+      "type": 3,
+      "skeleton": "Bone Spine",
+      "clueDesc": 1576736705,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1810482989,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1435219622
+    },
+    {
+      "text": 1292868296,
+      "clueDesc": 1238295390,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1487533435,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1405315959
+    }
+  ],
+  "1033300": [
+    {
+      "text": 1907973025,
+      "type": 3,
+      "skeleton": "Bone R Mouth A",
+      "clueDesc": 1644376803,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "traitsDesc": 1111652867,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1175777520
+    },
+    {
+      "text": 1648092693,
+      "type": 3,
+      "clueDesc": 1809947834,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bone L Cloth A 02",
+      "displaySequence": 2,
+      "traitsDesc": 1656299549,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "AI_IdleSpecial01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1509543328
+    }
+  ],
+  "1002700": [
+    {
+      "text": 1717823875,
+      "type": 3,
+      "skeleton": "Bip001 Spine",
+      "clueDesc": 1579078689,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1249900245,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "AI_IdleSpecial02"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1425811431
+    },
+    {
+      "text": 1301314028,
+      "clueDesc": 1677072999,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1571270285,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1494420851
+    }
+  ],
+  "1005200": [
+    {
+      "text": 1200671601,
+      "type": 3,
+      "skeleton": "Bone  R Forearm",
+      "clueDesc": 1747113380,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1500262092,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "AI_IdleSpecial01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1524911222
+    },
+    {
+      "text": 1700339867,
+      "type": 3,
+      "clueDesc": 1559675969,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "skeleton": "Bone L Eye 04",
+      "displaySequence": 2,
+      "traitsDesc": 1790146514,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Taught01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1201669190
+    },
+    {
+      "text": 1533764628,
+      "type": 3,
+      "traitsDesc": 1174231687,
+      "clueDesc": 1351165915,
+      "clueIcon": "$UI_Icon_Explore_06.png",
+      "clueSeek": 820,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 2066474543
+    }
+  ],
+  "1017400": [
+    {
+      "text": 1805009168,
+      "type": 3,
+      "skeleton": "Bip001 Neck",
+      "clueDesc": 1177283997,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 2090791877,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "DashStart"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1225616883
+    },
+    {
+      "text": 1693805966,
+      "type": 3,
+      "clueDesc": 1201533429,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "skeleton": "Bip001 L Hand",
+      "displaySequence": 2,
+      "traitsDesc": 2042339916,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Attack04"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1552654571
+    },
+    {
+      "text": 1693066508,
+      "type": 3,
+      "clueDesc": 1887638688,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1596704593,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "IdleSpecial"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1435488987
+    }
+  ],
+  "1026300": [
+    {
+      "text": 1455237123,
+      "type": 3,
+      "skeleton": "Bone M Hair B",
+      "clueDesc": 1120723781,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "traitsDesc": 1729695486,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_DreamEater"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1559777287
+    },
+    {
+      "text": 1600587560,
+      "clueDesc": 2054972717,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 2092603397,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart",
+        "Behav_SleepLoop",
+        "Behav_SleepEnd"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 2108792508
+    }
+  ],
+  "1020100": [
+    {
+      "clueDesc": 1915778311,
+      "clueIcon": "$UI_Icon_Explore_04.png",
+      "clueSeek": 697,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bone R Ear",
+      "traitsAnimation": [
+        "SprintStop"
+      ],
+      "traitsDesc": 1905896265,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1886477466,
+      "text": 1981122920,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1249237242,
+      "type": 3,
+      "clueDesc": 1750009735,
+      "clueIcon": "$UI_Icon_Explore_01.png",
+      "skeleton": "Bone M Tongue 01",
+      "displaySequence": 2,
+      "traitsDesc": 1183405961,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_SleepStart"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1411373862
+    },
+    {
+      "text": 1816731549,
+      "type": 3,
+      "skeleton": "Bip001 L Finger0",
+      "clueDesc": 1640152699,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1247424696,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Angry"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1438717253
+    },
+    {
+      "text": 1437470350,
+      "clueDesc": 1208284982,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 4,
+      "traitsDesc": 1204722949,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Al_IdleSpecial01"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 1420337351
+    }
+  ],
+  "1018100": [
+    {
+      "clueDesc": 1802830224,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 682,
+      "displaySequence": 1,
+      "isMirror": 1,
+      "positionDefault": "1",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "skeleton": "Bip001 R Hand",
+      "traitsAnimation": [
+        "Behav_Love"
+      ],
+      "traitsDesc": 1523057835,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_01.png",
+      "traitsName": 1093415324,
+      "text": 1192753272,
+      "reward": 50,
+      "type": 3,
+      "banFeedBack": 0,
+      "initState": 1
+    },
+    {
+      "text": 1232155068,
+      "clueDesc": 1074938273,
+      "clueIcon": "$UI_Icon_Explore_02.png",
+      "type": 3,
+      "displaySequence": 2,
+      "traitsDesc": 1347342448,
+      "reward": 50,
+      "positionDefault": "2",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Alert"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_02.png",
+      "traitsName": 1615322107
+    },
+    {
+      "text": 2131976352,
+      "type": 3,
+      "skeleton": "Bip001 Spine",
+      "clueDesc": 1727456710,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "traitsDesc": 1669795561,
+      "displaySequence": 3,
+      "isMirror": 1,
+      "reward": 50,
+      "positionDefault": "3",
+      "rotationCustome": [
+        0,
+        -15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Behav_Happy"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_03.png",
+      "traitsName": 1757393376
+    },
+    {
+      "text": 2072713321,
+      "type": 3,
+      "clueDesc": 1610747973,
+      "clueIcon": "$UI_Icon_Explore_05.png",
+      "clueSeek": 696,
+      "displaySequence": 4,
+      "traitsDesc": 1876057663,
+      "reward": 50,
+      "positionDefault": "4",
+      "rotationCustome": [
+        0,
+        15,
+        0
+      ],
+      "initState": 1,
+      "traitsAnimation": [
+        "Skill_Conjure"
+      ],
+      "banFeedBack": 0,
+      "traitsImg": "$UI_Img_PetManual_FeatureNum_04.png",
+      "traitsName": 1644214699
+    }
+  ]
+}

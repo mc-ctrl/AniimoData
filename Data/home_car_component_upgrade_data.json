@@ -1,0 +1,945 @@
+{
+  "3": [
+    {
+      "upgradeConditions1": 60003,
+      "upgradeConditionsDes1": 1655886677,
+      "unlockCost": [
+        1010,
+        180
+      ],
+      "functionUnlockDes": 1962809677,
+      "source1": 761,
+      "levelDes": 1810029779,
+      "carModuleResId": "$P_Home_SetDressing_Taro.prefab",
+      "upgradeConditionsDesShort1": 2005686813,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60007,
+      "upgradeConditionsDes1": 1990493256,
+      "unlockCost": [
+        1010,
+        1900
+      ],
+      "functionUnlockDes": 2017103941,
+      "source1": 761,
+      "levelDes": 1610538289,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch01.prefab",
+      "upgradeConditionsDesShort1": 1175155775,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60008,
+      "upgradeConditionsDes1": 1350182177,
+      "unlockCost": [
+        1010,
+        2300
+      ],
+      "functionUnlockDes": 2107928728,
+      "source1": 761,
+      "levelDes": 1680026570,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch01.prefab",
+      "upgradeConditionsDesShort1": 1616657953,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60011,
+      "upgradeConditionsDes1": 1667979706,
+      "unlockCost": [
+        1010,
+        5500
+      ],
+      "functionUnlockDes": 1986154626,
+      "source1": 761,
+      "levelDes": 1136203321,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch01.prefab",
+      "upgradeConditionsDesShort1": 1646273381,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60012,
+      "upgradeConditionsDes1": 1566197640,
+      "unlockCost": [
+        1010,
+        8700
+      ],
+      "functionUnlockDes": 1513549044,
+      "source1": 761,
+      "levelDes": 1868945982,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch01.prefab",
+      "upgradeConditionsDesShort1": 1969050798,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60014,
+      "upgradeConditionsDes1": 1835345948,
+      "unlockCost": [
+        1010,
+        12000
+      ],
+      "functionUnlockDes": 1882744426,
+      "source1": 761,
+      "levelDes": 1768354793,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch01.prefab",
+      "upgradeConditionsDesShort1": 1313941656,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60017,
+      "upgradeConditionsDes1": 1753604067,
+      "unlockCost": [
+        1010,
+        22000
+      ],
+      "functionUnlockDes": 1299478724,
+      "source1": 761,
+      "levelDes": 1648053121,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch01.prefab",
+      "upgradeConditionsDesShort1": 2094391871,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60018,
+      "upgradeConditionsDes1": 1693302347,
+      "unlockCost": [
+        1010,
+        28000
+      ],
+      "functionUnlockDes": 1757882655,
+      "source1": 761,
+      "levelDes": 1404784764,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch01.prefab",
+      "upgradeConditionsDesShort1": 2065512512,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    }
+  ],
+  "4": [
+    {
+      "upgradeConditions1": 60002,
+      "upgradeConditionsDes1": 1578335079,
+      "functionUnlockDes": 1876199685,
+      "source1": 761,
+      "levelDes": 1567644803,
+      "carModuleResId": "$P_Home_SetDressing_Kitchen_LV1.prefab",
+      "defaultUnlock": 1,
+      "minShowCarLevel": 2,
+      "upgradeConditionsDesShort1": 1231185633
+    },
+    {
+      "upgradeConditions1": 60004,
+      "upgradeConditionsDes1": 1867721102,
+      "unlockCost": [
+        1010,
+        310
+      ],
+      "functionUnlockDes": 1592399141,
+      "source1": 761,
+      "levelDes": 1927355956,
+      "carModuleResId": "$P_Home_SetDressing_Kitchen_LV1.prefab",
+      "upgradeConditionsDesShort1": 1473365914,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60008,
+      "upgradeConditionsDes1": 1472559580,
+      "unlockCost": [
+        1010,
+        2300
+      ],
+      "functionUnlockDes": 1329727534,
+      "source1": 761,
+      "levelDes": 1815236777,
+      "carModuleResId": "$P_Home_SetDressing_Kitchen_LV1.prefab",
+      "upgradeConditionsDesShort1": 1931372063,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60010,
+      "upgradeConditionsDes1": 1655897959,
+      "unlockCost": [
+        1010,
+        4000
+      ],
+      "functionUnlockDes": 1453665242,
+      "source1": 761,
+      "levelDes": 1465725832,
+      "carModuleResId": "$P_Home_SetDressing_Kitchen_LV1.prefab",
+      "upgradeConditionsDesShort1": 1314712801,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60013,
+      "upgradeConditionsDes1": 1859833508,
+      "unlockCost": [
+        1010,
+        9800
+      ],
+      "functionUnlockDes": 1844976643,
+      "source1": 761,
+      "levelDes": 2058978299,
+      "carModuleResId": "$P_Home_SetDressing_Kitchen_LV2.prefab",
+      "upgradeConditionsDesShort1": 2009089094,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60016,
+      "upgradeConditionsDes1": 1266070433,
+      "unlockCost": [
+        1010,
+        20000
+      ],
+      "functionUnlockDes": 1514498065,
+      "source1": 761,
+      "levelDes": 1827228426,
+      "carModuleResId": "$P_Home_SetDressing_Kitchen_LV2.prefab",
+      "upgradeConditionsDesShort1": 1357918215,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60019,
+      "upgradeConditionsDes1": 1268051000,
+      "unlockCost": [
+        1010,
+        30000
+      ],
+      "functionUnlockDes": 1883550598,
+      "source1": 761,
+      "levelDes": 1736753670,
+      "carModuleResId": "$P_Home_SetDressing_Kitchen_LV2.prefab",
+      "upgradeConditionsDesShort1": 1176886503,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    }
+  ],
+  "6": [
+    {
+      "upgradeConditions1": 60005,
+      "upgradeConditionsDes1": 1903811329,
+      "unlockCost": [
+        1010,
+        690
+      ],
+      "functionUnlockDes": 1196913620,
+      "source1": 761,
+      "levelDes": 1399102495,
+      "carModuleResId": "$P_Home_SetDressing_HandmakeTable_LV1.prefab",
+      "upgradeConditionsDesShort1": 1103326772,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60007,
+      "upgradeConditionsDes1": 1889902484,
+      "unlockCost": [
+        1010,
+        1900
+      ],
+      "functionUnlockDes": 2020092385,
+      "source1": 761,
+      "levelDes": 1105597584,
+      "carModuleResId": "$P_Home_SetDressing_HandmakeTable_LV1.prefab",
+      "upgradeConditionsDesShort1": 1606926599,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60010,
+      "upgradeConditionsDes1": 1437681901,
+      "unlockCost": [
+        1010,
+        4000
+      ],
+      "functionUnlockDes": 2110131268,
+      "source1": 761,
+      "levelDes": 1423152425,
+      "carModuleResId": "$P_Home_SetDressing_HandmakeTable_LV1.prefab",
+      "upgradeConditionsDesShort1": 1573419891,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60012,
+      "upgradeConditionsDes1": 1953287465,
+      "unlockCost": [
+        1010,
+        8700
+      ],
+      "functionUnlockDes": 1364441537,
+      "source1": 761,
+      "levelDes": 2068804640,
+      "carModuleResId": "$P_Home_SetDressing_HandmakeTable_LV2.prefab",
+      "upgradeConditionsDesShort1": 1686878283,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60017,
+      "upgradeConditionsDes1": 1366720199,
+      "unlockCost": [
+        1010,
+        22000
+      ],
+      "functionUnlockDes": 1313055461,
+      "source1": 761,
+      "levelDes": 1702125143,
+      "carModuleResId": "$P_Home_SetDressing_HandmakeTable_LV2.prefab",
+      "upgradeConditionsDesShort1": 1926302982,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60018,
+      "upgradeConditionsDes1": 1975686666,
+      "unlockCost": [
+        1010,
+        28000
+      ],
+      "functionUnlockDes": 2097732249,
+      "source1": 761,
+      "levelDes": 1574174091,
+      "carModuleResId": "$P_Home_SetDressing_HandmakeTable_LV2.prefab",
+      "upgradeConditionsDesShort1": 1094545259,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60019,
+      "upgradeConditionsDes1": 1555972128,
+      "unlockCost": [
+        1010,
+        30000
+      ],
+      "functionUnlockDes": 1237143757,
+      "source1": 761,
+      "levelDes": 1207039583,
+      "carModuleResId": "$P_Home_SetDressing_HandmakeTable_LV2.prefab",
+      "upgradeConditionsDesShort1": 1635706237,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    }
+  ],
+  "10": [
+    {
+      "upgradeConditions1": 60006,
+      "upgradeConditionsDes1": 2145016919,
+      "functionUnlockDes": 1295285330,
+      "source1": 761,
+      "events": [
+        [
+          "addCampPetNumLimit",
+          [
+            1
+          ]
+        ],
+        [
+          "setFunctionUnlock",
+          [
+            "HOMECAR_MANAGEMENT",
+            1
+          ]
+        ]
+      ],
+      "levelDes": 2029393192,
+      "carModuleResId": "$P_Home_SetDressing_Telescope.prefab",
+      "defaultUnlock": 1,
+      "minShowCarLevel": 3,
+      "upgradeConditionsDesShort1": 1275184601
+    },
+    {
+      "upgradeConditions1": 60011,
+      "upgradeConditionsDes1": 2074242853,
+      "unlockCost": [
+        1010,
+        5500
+      ],
+      "functionUnlockDes": 1286076352,
+      "source1": 761,
+      "events": [
+        [
+          "addCampPetNumLimit",
+          [
+            1
+          ]
+        ]
+      ],
+      "levelDes": 1368924948,
+      "carModuleResId": "$P_Home_SetDressing_Telescope.prefab",
+      "upgradeConditionsDesShort1": 1986782253,
+      "minShowCarLevel": 3,
+      "unlockItem": [
+        [
+          4040074,
+          2
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60016,
+      "upgradeConditionsDes1": 2092369282,
+      "unlockCost": [
+        1010,
+        20000
+      ],
+      "functionUnlockDes": 2138808836,
+      "source1": 761,
+      "events": [
+        [
+          "addCampPetNumLimit",
+          [
+            1
+          ]
+        ]
+      ],
+      "levelDes": 1557885273,
+      "carModuleResId": "$P_Home_SetDressing_Telescope.prefab",
+      "upgradeConditionsDesShort1": 1226231392,
+      "minShowCarLevel": 3,
+      "unlockItem": [
+        [
+          4040074,
+          2
+        ]
+      ]
+    }
+  ],
+  "7": [
+    {
+      "upgradeConditions1": 60012,
+      "upgradeConditionsDes1": 1251466568,
+      "unlockCost": [
+        1010,
+        8700
+      ],
+      "functionUnlockDes": 1628674566,
+      "source1": 761,
+      "levelDes": 1958199005,
+      "carModuleResId": "$P_Home_SetDressing_ElectricPowerFacilities.prefab",
+      "minShowCarLevel": 12,
+      "upgradeConditionsDesShort1": 1869164365
+    },
+    {
+      "upgradeConditions1": 60014,
+      "upgradeConditionsDes1": 1402948555,
+      "unlockCost": [
+        1010,
+        12000
+      ],
+      "functionUnlockDes": 1211272349,
+      "source1": 761,
+      "levelDes": 1218126009,
+      "carModuleResId": "$P_Home_SetDressing_ElectricPowerFacilities.prefab",
+      "upgradeConditionsDesShort1": 1088654321,
+      "minShowCarLevel": 12,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60016,
+      "upgradeConditionsDes1": 1349450406,
+      "unlockCost": [
+        1010,
+        20000
+      ],
+      "functionUnlockDes": 1757435281,
+      "source1": 761,
+      "levelDes": 1256081030,
+      "carModuleResId": "$P_Home_SetDressing_ElectricPowerFacilities.prefab",
+      "upgradeConditionsDesShort1": 1262565160,
+      "minShowCarLevel": 12,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60018,
+      "upgradeConditionsDes1": 1334435639,
+      "unlockCost": [
+        1010,
+        28000
+      ],
+      "functionUnlockDes": 1277026505,
+      "source1": 761,
+      "levelDes": 1259299422,
+      "carModuleResId": "$P_Home_SetDressing_ElectricPowerFacilities.prefab",
+      "upgradeConditionsDesShort1": 1845370523,
+      "minShowCarLevel": 12,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60020,
+      "upgradeConditionsDes1": 2100134109,
+      "unlockCost": [
+        1010,
+        30000
+      ],
+      "functionUnlockDes": 1497929509,
+      "source1": 761,
+      "levelDes": 1460033942,
+      "carModuleResId": "$P_Home_SetDressing_ElectricPowerFacilities.prefab",
+      "upgradeConditionsDesShort1": 1927254992,
+      "minShowCarLevel": 12,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    }
+  ],
+  "8": [
+    {
+      "upgradeConditions1": 60006,
+      "upgradeConditionsDes1": 1516080649,
+      "unlockCost": [
+        1010,
+        960
+      ],
+      "functionUnlockDes": 1688214013,
+      "source1": 761,
+      "levelDes": 1483047048,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch.prefab",
+      "upgradeConditionsDesShort1": 1355838831,
+      "minShowCarLevel": 3,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60009,
+      "upgradeConditionsDes1": 1551789112,
+      "unlockCost": [
+        1010,
+        3600
+      ],
+      "functionUnlockDes": 1236510677,
+      "source1": 761,
+      "levelDes": 1929892809,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch.prefab",
+      "upgradeConditionsDesShort1": 1768085784,
+      "minShowCarLevel": 3,
+      "unlockItem": [
+        [
+          4040074,
+          2
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60012,
+      "upgradeConditionsDes1": 1863486487,
+      "unlockCost": [
+        1010,
+        8700
+      ],
+      "functionUnlockDes": 1163709561,
+      "source1": 761,
+      "levelDes": 1552661027,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch.prefab",
+      "upgradeConditionsDesShort1": 1962059960,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          2
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60015,
+      "upgradeConditionsDes1": 2128073022,
+      "unlockCost": [
+        1010,
+        14000
+      ],
+      "functionUnlockDes": 1732453936,
+      "source1": 761,
+      "levelDes": 1867007472,
+      "carModuleResId": "$P_Home_SetDressing_ScientificResearch.prefab",
+      "upgradeConditionsDesShort1": 1559736734,
+      "minShowCarLevel": 5,
+      "unlockItem": [
+        [
+          4040074,
+          2
+        ]
+      ]
+    }
+  ],
+  "9": [
+    {
+      "upgradeConditions1": 60009,
+      "upgradeConditionsDes1": 2045519308,
+      "unlockCost": [
+        1010,
+        3600
+      ],
+      "functionUnlockDes": 1260676544,
+      "source1": 761,
+      "events": [
+        [
+          "homelandHatchCarSpeed",
+          {}
+        ]
+      ],
+      "levelDes": 1290436310,
+      "carModuleResId": "$P_Home_SetDressing_CrystalOrnaments.prefab",
+      "upgradeConditionsDesShort1": 1582268123,
+      "minShowCarLevel": 3,
+      "unlockItem": [
+        [
+          4040074,
+          2
+        ]
+      ]
+    }
+  ],
+  "5": [
+    {
+      "upgradeConditions1": 60005,
+      "upgradeConditionsDes1": 1213170734,
+      "unlockCost": [
+        1010,
+        310
+      ],
+      "functionUnlockDes": 1304722614,
+      "source1": 761,
+      "levelDes": 1516851200,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 1240456491,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60008,
+      "upgradeConditionsDes1": 1114632153,
+      "unlockCost": [
+        1010,
+        2300
+      ],
+      "functionUnlockDes": 1552066294,
+      "source1": 761,
+      "levelDes": 2147386290,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 1323152695,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60011,
+      "upgradeConditionsDes1": 1607589627,
+      "unlockCost": [
+        1010,
+        5600
+      ],
+      "functionUnlockDes": 1348020561,
+      "source1": 761,
+      "levelDes": 1352924402,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 1237370964,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60012,
+      "upgradeConditionsDes1": 1336057853,
+      "unlockCost": [
+        1010,
+        8800
+      ],
+      "functionUnlockDes": 2086452923,
+      "source1": 761,
+      "levelDes": 2052492024,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 1939052460,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60013,
+      "upgradeConditionsDes1": 1987387675,
+      "unlockCost": [
+        1010,
+        10000
+      ],
+      "functionUnlockDes": 1881508071,
+      "source1": 761,
+      "levelDes": 2066885825,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 1391313009,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60015,
+      "upgradeConditionsDes1": 1485959672,
+      "unlockCost": [
+        1010,
+        14000
+      ],
+      "functionUnlockDes": 1220414333,
+      "source1": 761,
+      "levelDes": 1986891598,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 2056935315,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60017,
+      "upgradeConditionsDes1": 1311517048,
+      "unlockCost": [
+        1010,
+        22000
+      ],
+      "functionUnlockDes": 1395593909,
+      "source1": 761,
+      "levelDes": 2023227529,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 1389758519,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    },
+    {
+      "upgradeConditions1": 60019,
+      "upgradeConditionsDes1": 1410106691,
+      "unlockCost": [
+        1010,
+        30000
+      ],
+      "functionUnlockDes": 1661087963,
+      "source1": 761,
+      "levelDes": 1594132637,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration05.prefab",
+      "upgradeConditionsDesShort1": 1292179650,
+      "minShowCarLevel": 2,
+      "unlockItem": [
+        [
+          4040074,
+          1
+        ]
+      ]
+    }
+  ],
+  "2": [
+    {
+      "upgradeConditions1": 60001,
+      "upgradeConditionsDes1": 1131603951,
+      "functionUnlockDes": 1682451616,
+      "source1": 761,
+      "events": [
+        [
+          "homeAddStamina",
+          [
+            2000016
+          ]
+        ]
+      ],
+      "levelDes": 1641433497,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration_LV1.prefab",
+      "defaultUnlock": 1,
+      "upgradeConditionsDesShort1": 1943581486
+    },
+    {
+      "upgradeConditions1": 60003,
+      "upgradeConditionsDes1": 1499433895,
+      "unlockCost": [
+        1010,
+        180
+      ],
+      "functionUnlockDes": 1352824537,
+      "source1": 761,
+      "events": [
+        [
+          "homeAddStamina",
+          [
+            2000017
+          ]
+        ]
+      ],
+      "levelDes": 1976896623,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration_LV2.prefab",
+      "upgradeConditionsDesShort1": 1991281090
+    },
+    {
+      "upgradeConditions1": 60005,
+      "upgradeConditionsDes1": 1467792624,
+      "unlockCost": [
+        1010,
+        1400
+      ],
+      "functionUnlockDes": 2004825329,
+      "source1": 761,
+      "events": [
+        [
+          "homeAddStamina",
+          [
+            2000018
+          ]
+        ]
+      ],
+      "levelDes": 1733393513,
+      "carModuleResId": "$P_Home_SetDressing_LifeDecoration_LV3.prefab",
+      "upgradeConditionsDesShort1": 1910503562
+    }
+  ]
+}

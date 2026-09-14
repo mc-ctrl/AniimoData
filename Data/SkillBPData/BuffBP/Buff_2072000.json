@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "17989d27-6323-4071-8677-c74eead89851",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "c3facbac-cc3f-483f-857f-16be821be327",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "9": {
+      "value": 30,
+      "name": "recoverEp",
+      "UID": "753e2ba7-63b6-4f0e-887d-7d1f5fb5de30",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "45482a17-4a59-4056-a81d-987fd64fac1b",
+      "NodeID": 5
+    },
+    "2": {
+      "UID": "c191f7a3-e61f-45cc-8ba8-f4b37149dc41",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2072000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

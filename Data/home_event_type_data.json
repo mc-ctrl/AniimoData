@@ -1,0 +1,130 @@
+[
+  {
+    "weight": 1,
+    "feedback": 1345487148,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "Behav_AngryLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Hurried.prefab",
+    "interact": 331,
+    "petStatus": 1,
+    "statusIcon": "$UI_Home_TopLogo_Strike.png",
+    "statusName": 1392967356,
+    "targetNum": 1,
+    "targetType": 1
+  },
+  {
+    "weight": 1,
+    "feedback": 2126637342,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "Behav_SleepLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Peaceful.prefab",
+    "interact": 332,
+    "petStatus": 2,
+    "statusIcon": "$UI_Home_TopLogo_Rest.png",
+    "statusName": 1819192320,
+    "targetNum": 1,
+    "targetType": 1
+  },
+  {
+    "weight": 1,
+    "feedback": 1689835855,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "Behav_CryLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Sad.prefab",
+    "interact": 333,
+    "petStatus": 3,
+    "statusIcon": "$UI_Home_TopLogo_Get_Ill.png",
+    "statusName": 1706356706,
+    "targetNum": 1,
+    "targetType": 1
+  },
+  {
+    "weight": 1,
+    "feedback": 1318051634,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "StunLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Hurried.prefab",
+    "interact": 334,
+    "petStatus": 4,
+    "statusIcon": "$UI_Home_TopLogo_Vertigo.png",
+    "statusName": 1849371934,
+    "targetNum": 2,
+    "targetType": 1
+  },
+  {
+    "giftStaticId": 91274713,
+    "weight": 2,
+    "targetNum": 1,
+    "interact": 335,
+    "targetType": 2,
+    "emoji": "$UI_Node_AiAssistant_Surprise.prefab"
+  },
+  {
+    "weight": 0,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "StunLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Sad.prefab",
+    "interact": 458,
+    "petStatus": 4,
+    "statusIcon": "$UI_Home_TopLogo_Hungry.png",
+    "statusName": 1512430090,
+    "targetNum": 2,
+    "targetType": 1
+  },
+  {
+    "weight": 0,
+    "feedback": 1698906134,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "StunLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Sad.prefab",
+    "petStatus": 4,
+    "statusIcon": "$UI_Home_TopLogo_Vertigo.png",
+    "statusName": 1833314192,
+    "targetNum": 1,
+    "targetType": 1
+  },
+  {
+    "weight": 0,
+    "feedback": 1731514800,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "StunLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Sad.prefab",
+    "petStatus": 4,
+    "statusIcon": "$UI_Home_TopLogo_Vertigo.png",
+    "statusName": 1074213475,
+    "targetNum": 1,
+    "targetType": 1
+  },
+  {
+    "weight": 0,
+    "feedback": 1120845590,
+    "aiMsgName": "Msg_Home_RandomEvent",
+    "aiMsgParams": {
+      "animationKey": "StunLoop"
+    },
+    "emoji": "$UI_Node_AiAssistant_Sad.prefab",
+    "petStatus": 4,
+    "statusIcon": "$UI_Home_TopLogo_Vertigo.png",
+    "statusName": 1293206306,
+    "targetNum": 1,
+    "targetType": 1
+  },
+  {},
+  {},
+  {},
+  {}
+]

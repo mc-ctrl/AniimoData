@@ -1,0 +1,1697 @@
+{
+  "nodeMap": {
+    "232": {
+      "NodeID": 232,
+      "name": "constVector3",
+      "UID": "a871c1f7-754a-4772-a198-51dbd3beb320",
+      "x": 8,
+      "y": 0,
+      "z": -8
+    },
+    "168": {
+      "NodeID": 168,
+      "name": "constVector3",
+      "UID": "493c6f83-8127-4140-8c3f-d2b497c602b0",
+      "x": 8,
+      "y": 0,
+      "z": -4
+    },
+    "169": {
+      "UID": "fb5c4220-acdc-4f65-b95e-ba62419fd530",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 178,
+          "name": "constVector3",
+          "UID": "6b3172eb-d423-4d36-a086-e5f812ab20b9",
+          "x": 8,
+          "y": 0,
+          "z": 4
+        },
+        {
+          "NodeID": 177,
+          "name": "constVector3",
+          "UID": "0db6a689-75a9-4f7f-9363-7429ba66e146",
+          "x": -8,
+          "y": 0,
+          "z": 4
+        },
+        {
+          "NodeID": 179,
+          "name": "constVector3",
+          "UID": "b5ee7a37-07b2-4a79-9820-f30e9db2df05",
+          "x": -8,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "NodeID": 168,
+          "name": "constVector3",
+          "UID": "493c6f83-8127-4140-8c3f-d2b497c602b0",
+          "x": 8,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "NodeID": 192,
+          "name": "constVector3",
+          "UID": "6bb19f71-14b8-4c0e-a181-5a6c3c1ff60a",
+          "x": 4,
+          "y": 0,
+          "z": 8
+        },
+        {
+          "NodeID": 191,
+          "name": "constVector3",
+          "UID": "f3d1e094-04d8-4845-9ced-ab7775f88f03",
+          "x": -4,
+          "y": 0,
+          "z": 8
+        },
+        {
+          "NodeID": 193,
+          "name": "constVector3",
+          "UID": "28073b37-2951-4933-829a-e1c863bb5c1e",
+          "x": -4,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "NodeID": 190,
+          "name": "constVector3",
+          "UID": "c279bc57-7c30-4a68-9c71-498edaaaf7ed",
+          "x": 4,
+          "y": 0,
+          "z": -8
+        }
+      ],
+      "NodeID": 169
+    },
+    "171": {
+      "offsetXYZ": {
+        "listId": 169,
+        "NodeID": 170,
+        "UID": "1497b417-b4e2-4cd6-abd0-2a6e7834f77c",
+        "name": "getListItem",
+        "index": {
+          "UID": "f6eb74e7-f226-4a7b-8fbe-db15b1a81bbc",
+          "name": "getIterNumber",
+          "NodeID": 180
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "ca173588-53e2-4fdc-9a1d-ae67a777c529",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 171,
+      "pos": "CASTER"
+    },
+    "173": {
+      "endNum": 8,
+      "actionIds": [
+        171
+      ],
+      "NodeID": 173,
+      "UID": "c727657a-308a-4774-b127-82a582e570d6",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "260": {
+      "NodeID": 260,
+      "name": "constVector3",
+      "UID": "1ee32d05-2c03-4d98-a400-b3f99abc3e20",
+      "x": 0,
+      "y": 0,
+      "z": -12
+    },
+    "175": {
+      "action": {
+        "actionIds": [
+          186,
+          173,
+          265,
+          282
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 175,
+      "UID": "b852d64e-a653-4d1c-aafe-f32a97f5941e"
+    },
+    "176": {
+      "UID": "5a7c3af8-4df3-4d1d-a44a-088919d8ba36",
+      "eventType": "Notify",
+      "time": 8,
+      "NodeID": 176
+    },
+    "177": {
+      "NodeID": 177,
+      "name": "constVector3",
+      "UID": "0db6a689-75a9-4f7f-9363-7429ba66e146",
+      "x": -8,
+      "y": 0,
+      "z": 4
+    },
+    "178": {
+      "NodeID": 178,
+      "name": "constVector3",
+      "UID": "6b3172eb-d423-4d36-a086-e5f812ab20b9",
+      "x": 8,
+      "y": 0,
+      "z": 4
+    },
+    "179": {
+      "NodeID": 179,
+      "name": "constVector3",
+      "UID": "b5ee7a37-07b2-4a79-9820-f30e9db2df05",
+      "x": -8,
+      "y": 0,
+      "z": -4
+    },
+    "181": {
+      "NodeID": 181,
+      "name": "constVector3",
+      "UID": "0c0f01d4-1f16-4e91-9acd-db11ce3f3b3b",
+      "x": 0,
+      "y": 0,
+      "z": -4
+    },
+    "182": {
+      "UID": "2c6b047c-bc82-4270-af64-48a565413868",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 188,
+          "name": "constVector3",
+          "UID": "e8de0dde-dff1-4ec8-af9d-8fa815d420fe",
+          "x": 4,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "NodeID": 187,
+          "name": "constVector3",
+          "UID": "548f08ef-fe1d-4378-a296-15f73ee6a7a3",
+          "x": 0,
+          "y": 0,
+          "z": 4
+        },
+        {
+          "NodeID": 189,
+          "name": "constVector3",
+          "UID": "e4f3abca-0789-4801-9617-75549dbc7f98",
+          "x": -4,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "NodeID": 181,
+          "name": "constVector3",
+          "UID": "0c0f01d4-1f16-4e91-9acd-db11ce3f3b3b",
+          "x": 0,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "NodeID": 279,
+          "name": "constVector3",
+          "UID": "44adbd1b-a99a-40a8-ae7b-8c7a869bafdb",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "NodeID": 182
+    },
+    "184": {
+      "offsetXYZ": {
+        "listId": 182,
+        "NodeID": 183,
+        "UID": "2a8cd22e-0c76-45ee-b4f3-436f1c0794a4",
+        "name": "getListItem",
+        "index": {
+          "UID": "ad8119a1-7518-420d-8147-6283aa0fca0f",
+          "name": "getIterNumber",
+          "NodeID": 194
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "b348d396-61b2-4b6f-91e6-38d55d580fe1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 184,
+      "pos": "CASTER"
+    },
+    "225": {
+      "offsetXYZ": {
+        "listId": 223,
+        "NodeID": 224,
+        "UID": "04845284-c45e-4550-95b2-2a9cabe825a6",
+        "name": "getListItem",
+        "index": {
+          "UID": "2e13ccb4-d513-4d91-9df1-397a5cb1cc0d",
+          "name": "getIterNumber",
+          "NodeID": 231
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "14a999c0-e7bc-4ed1-8dbb-18e8280a5428",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 225,
+      "pos": "CASTER"
+    },
+    "186": {
+      "endNum": 5,
+      "actionIds": [
+        184
+      ],
+      "NodeID": 186,
+      "UID": "6ca0db27-f3d3-47fc-b37c-c45f2dc02fe7",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "187": {
+      "NodeID": 187,
+      "name": "constVector3",
+      "UID": "548f08ef-fe1d-4378-a296-15f73ee6a7a3",
+      "x": 0,
+      "y": 0,
+      "z": 4
+    },
+    "188": {
+      "NodeID": 188,
+      "name": "constVector3",
+      "UID": "e8de0dde-dff1-4ec8-af9d-8fa815d420fe",
+      "x": 4,
+      "y": 0,
+      "z": 0
+    },
+    "189": {
+      "NodeID": 189,
+      "name": "constVector3",
+      "UID": "e4f3abca-0789-4801-9617-75549dbc7f98",
+      "x": -4,
+      "y": 0,
+      "z": 0
+    },
+    "190": {
+      "NodeID": 190,
+      "name": "constVector3",
+      "UID": "c279bc57-7c30-4a68-9c71-498edaaaf7ed",
+      "x": 4,
+      "y": 0,
+      "z": -8
+    },
+    "191": {
+      "NodeID": 191,
+      "name": "constVector3",
+      "UID": "f3d1e094-04d8-4845-9ced-ab7775f88f03",
+      "x": -4,
+      "y": 0,
+      "z": 8
+    },
+    "192": {
+      "NodeID": 192,
+      "name": "constVector3",
+      "UID": "6bb19f71-14b8-4c0e-a181-5a6c3c1ff60a",
+      "x": 4,
+      "y": 0,
+      "z": 8
+    },
+    "193": {
+      "NodeID": 193,
+      "name": "constVector3",
+      "UID": "28073b37-2951-4933-829a-e1c863bb5c1e",
+      "x": -4,
+      "y": 0,
+      "z": -8
+    },
+    "195": {
+      "NodeID": 195,
+      "name": "constVector3",
+      "UID": "bcf24c5c-7081-4842-af63-aa815a2f5587",
+      "x": 12,
+      "y": 0,
+      "z": -4
+    },
+    "210": {
+      "NodeID": 210,
+      "name": "constVector3",
+      "UID": "5e982330-0d83-417d-b10d-7cb42f5d23e4",
+      "x": 4,
+      "y": 0,
+      "z": 12
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "198": {
+      "offsetXYZ": {
+        "listId": 196,
+        "NodeID": 197,
+        "UID": "a21d34d6-8a60-443a-b1c7-a13c2a29a283",
+        "name": "getListItem",
+        "index": {
+          "UID": "7d1fa468-6e6a-46c8-8ef8-b0051d967113",
+          "name": "getIterNumber",
+          "NodeID": 207
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "9c026c01-3339-4e68-8e0d-25cf725cca22",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 198,
+      "pos": "CASTER"
+    },
+    "211": {
+      "NodeID": 211,
+      "name": "constVector3",
+      "UID": "a6a1e468-eb18-4604-9e04-ef622ae62ff0",
+      "x": -4,
+      "y": 0,
+      "z": -12
+    },
+    "200": {
+      "endNum": 12,
+      "actionIds": [
+        198
+      ],
+      "NodeID": 200,
+      "UID": "0a34dfc2-5316-4795-8a3e-a6c33a4f3512",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "221": {
+      "NodeID": 221,
+      "name": "constVector3",
+      "UID": "6a77a546-7d67-43c1-8314-c548da3092cc",
+      "x": -4,
+      "y": 0,
+      "z": -4
+    },
+    "223": {
+      "UID": "734633ec-f41e-4535-a59b-7014e270b405",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 229,
+          "name": "constVector3",
+          "UID": "4f643810-4336-4c4a-9375-95cfab8b82a7",
+          "x": 8,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "NodeID": 228,
+          "name": "constVector3",
+          "UID": "257d8bee-c8a6-4b05-b72e-921b1e038ed9",
+          "x": 0,
+          "y": 0,
+          "z": 8
+        },
+        {
+          "NodeID": 230,
+          "name": "constVector3",
+          "UID": "e1f4aa61-905b-4f75-b2f8-b38d77b7601e",
+          "x": -8,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "NodeID": 222,
+          "name": "constVector3",
+          "UID": "65994398-f92e-417e-8ae0-7dbf973e6d63",
+          "x": 0,
+          "y": 0,
+          "z": -8
+        }
+      ],
+      "NodeID": 223
+    },
+    "322": {
+      "NodeID": 322,
+      "name": "constVector3",
+      "UID": "11ac7103-6b62-49b5-9317-bcbed36f417c",
+      "x": -6,
+      "y": 0,
+      "z": -6
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 11,
+      "NodeID": 31,
+      "UID": "1dc70c5b-53ff-4f4c-81b5-ffb212980a44"
+    },
+    "216": {
+      "endNum": 5,
+      "actionIds": [
+        214
+      ],
+      "NodeID": 216,
+      "UID": "641ee6bb-f543-4824-b5d8-7ad0fc8024e2",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "328": {
+      "NodeID": 328,
+      "name": "constVector3",
+      "UID": "b84d8889-6ed5-4fbc-82dc-33bb9c778ce8",
+      "x": -2,
+      "y": 0,
+      "z": 2
+    },
+    "217": {
+      "NodeID": 217,
+      "name": "constVector3",
+      "UID": "d3966ec4-1de4-4632-91db-cd4b5de07936",
+      "x": 4,
+      "y": 0,
+      "z": -4
+    },
+    "218": {
+      "UID": "0e6c0b10-8134-442e-be46-154ac1aad18e",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 220,
+          "name": "constVector3",
+          "UID": "6db3e987-9891-4aca-88a4-2c78511a6626",
+          "x": 4,
+          "y": 0,
+          "z": 4
+        },
+        {
+          "NodeID": 219,
+          "name": "constVector3",
+          "UID": "77cd2c8d-eee2-4b75-aebc-6acf96915e76",
+          "x": -4,
+          "y": 0,
+          "z": 4
+        },
+        {
+          "NodeID": 221,
+          "name": "constVector3",
+          "UID": "6a77a546-7d67-43c1-8314-c548da3092cc",
+          "x": -4,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "NodeID": 217,
+          "name": "constVector3",
+          "UID": "d3966ec4-1de4-4632-91db-cd4b5de07936",
+          "x": 4,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "NodeID": 278,
+          "name": "constVector3",
+          "UID": "54b130ff-3cd7-4c9b-8f3b-4ece24e8a4eb",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "NodeID": 218
+    },
+    "219": {
+      "NodeID": 219,
+      "name": "constVector3",
+      "UID": "77cd2c8d-eee2-4b75-aebc-6acf96915e76",
+      "x": -4,
+      "y": 0,
+      "z": 4
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9,
+      "NodeID": 22,
+      "UID": "91bb1f3e-80b2-43ce-946b-1a34d047b5ea"
+    },
+    "13": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "327": {
+      "NodeID": 327,
+      "name": "constVector3",
+      "UID": "e79638c1-bcd6-4c94-bbee-5cd0e67a81b9",
+      "x": 2,
+      "y": 0,
+      "z": 2
+    },
+    "14": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "07d1059a-48b5-4e08-bf71-a8c338485d44",
+      "target": "OWNER",
+      "NodeID": 14,
+      "animId": "Mon_Skill_WaterPillar_Start"
+    },
+    "222": {
+      "NodeID": 222,
+      "name": "constVector3",
+      "UID": "65994398-f92e-417e-8ae0-7dbf973e6d63",
+      "x": 0,
+      "y": 0,
+      "z": -8
+    },
+    "326": {
+      "NodeID": 326,
+      "name": "constVector3",
+      "UID": "d615940b-ca70-4ebc-9fcc-ab5673da06c0",
+      "x": 2,
+      "y": 0,
+      "z": -2
+    },
+    "228": {
+      "NodeID": 228,
+      "name": "constVector3",
+      "UID": "257d8bee-c8a6-4b05-b72e-921b1e038ed9",
+      "x": 0,
+      "y": 0,
+      "z": 8
+    },
+    "16": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          280,
+          25
+        ]
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9,
+      "NodeID": 27,
+      "UID": "58f9a352-342a-40c6-8bed-1f6e53732cb0"
+    },
+    "17": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2ad91fde-1221-4eb9-8d2d-a989028f303d",
+      "target": "OWNER",
+      "NodeID": 17,
+      "animId": "Mon_Skill_WaterPillar_Loop"
+    },
+    "29": {
+      "UID": "afbdc6c2-1c03-44b6-8720-91ce5d9b2a08",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 29
+    },
+    "309": {
+      "NodeID": 309,
+      "name": "constVector3",
+      "UID": "4bff7dba-2fc1-4ec8-ae00-001c88ef8dc6",
+      "x": -2,
+      "y": 0,
+      "z": -6
+    },
+    "32": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 32,
+      "UID": "b27fc38a-7913-4244-82ef-2d311a03ff07",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_State",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 19,
+      "UID": "91bd9fd5-3567-4394-b41f-457ab9087fce"
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 34,
+      "UID": "683e2f71-dae9-4c07-aeab-c67a01f2df6b"
+    },
+    "325": {
+      "NodeID": 325,
+      "name": "constVector3",
+      "UID": "7d9cb51e-9daf-42db-bd3c-1c67d703a07e",
+      "x": -2,
+      "y": 0,
+      "z": -2
+    },
+    "206": {
+      "NodeID": 206,
+      "name": "constVector3",
+      "UID": "8937bee7-b768-4edc-91c2-c9e69cb90c4f",
+      "x": -12,
+      "y": 0,
+      "z": -4
+    },
+    "323": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "390c2d8f-7ad2-4a55-b83f-c809b26566d4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterColumnImpact_End",
+      "NodeID": 323
+    },
+    "208": {
+      "NodeID": 208,
+      "name": "constVector3",
+      "UID": "5f5f4307-ac9f-443d-ad3b-4721daae8213",
+      "x": 4,
+      "y": 0,
+      "z": -12
+    },
+    "320": {
+      "NodeID": 320,
+      "name": "constVector3",
+      "UID": "4ab0b9f1-48b2-4b1c-a169-b6b0c9582359",
+      "x": -6,
+      "y": 0,
+      "z": 6
+    },
+    "307": {
+      "NodeID": 307,
+      "name": "constVector3",
+      "UID": "fbefe8e0-5e64-42f6-8a1e-7ea456ac3827",
+      "x": 6,
+      "y": 0,
+      "z": 2
+    },
+    "314": {
+      "endNum": 8,
+      "actionIds": [
+        312
+      ],
+      "NodeID": 314,
+      "UID": "7989358c-91c5-407e-b9e7-3db94d38875a",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "bac3dc10-fa8a-4091-ab32-8f2445c6b0de",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_WaterPillar_State",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "316": {
+      "NodeID": 316,
+      "name": "constVector3",
+      "UID": "e4d032ff-92d6-4a1c-9183-f535098b6ca6",
+      "x": 2,
+      "y": 0,
+      "z": 6
+    },
+    "315": {
+      "NodeID": 315,
+      "name": "constVector3",
+      "UID": "225dbe60-65d8-4005-8482-58139e12eb1d",
+      "x": 2,
+      "y": 0,
+      "z": -6
+    },
+    "317": {
+      "NodeID": 317,
+      "name": "constVector3",
+      "UID": "bffaf819-91fd-49c3-a48c-4118ae7094c5",
+      "x": -2,
+      "y": 0,
+      "z": 6
+    },
+    "312": {
+      "offsetXYZ": {
+        "listId": 310,
+        "NodeID": 311,
+        "UID": "c96700cd-cd82-421d-9963-3ba4b4bc4e18",
+        "name": "getListItem",
+        "index": {
+          "UID": "4743ba1f-31e9-4c9f-97bb-cb980645ba5c",
+          "name": "getIterNumber",
+          "NodeID": 318
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "bcc81927-0786-4d93-90ac-c57af29a49b9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 312,
+      "pos": "CASTER"
+    },
+    "310": {
+      "UID": "61b5b5e7-e0e3-4b44-9041-d1797bb0c25c",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 316,
+          "name": "constVector3",
+          "UID": "e4d032ff-92d6-4a1c-9183-f535098b6ca6",
+          "x": 2,
+          "y": 0,
+          "z": 6
+        },
+        {
+          "NodeID": 315,
+          "name": "constVector3",
+          "UID": "225dbe60-65d8-4005-8482-58139e12eb1d",
+          "x": 2,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "NodeID": 317,
+          "name": "constVector3",
+          "UID": "bffaf819-91fd-49c3-a48c-4118ae7094c5",
+          "x": -2,
+          "y": 0,
+          "z": 6
+        },
+        {
+          "NodeID": 309,
+          "name": "constVector3",
+          "UID": "4bff7dba-2fc1-4ec8-ae00-001c88ef8dc6",
+          "x": -2,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "NodeID": 327,
+          "name": "constVector3",
+          "UID": "e79638c1-bcd6-4c94-bbee-5cd0e67a81b9",
+          "x": 2,
+          "y": 0,
+          "z": 2
+        },
+        {
+          "NodeID": 326,
+          "name": "constVector3",
+          "UID": "d615940b-ca70-4ebc-9fcc-ab5673da06c0",
+          "x": 2,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "NodeID": 328,
+          "name": "constVector3",
+          "UID": "b84d8889-6ed5-4fbc-82dc-33bb9c778ce8",
+          "x": -2,
+          "y": 0,
+          "z": 2
+        },
+        {
+          "NodeID": 325,
+          "name": "constVector3",
+          "UID": "7d9cb51e-9daf-42db-bd3c-1c67d703a07e",
+          "x": -2,
+          "y": 0,
+          "z": -2
+        }
+      ],
+      "NodeID": 310
+    },
+    "308": {
+      "NodeID": 308,
+      "name": "constVector3",
+      "UID": "86a4c93a-9a22-4a79-add4-b038f236e52c",
+      "x": -6,
+      "y": 0,
+      "z": -2
+    },
+    "203": {
+      "UID": "c0274a6b-c281-4a97-bf3f-1bd59cb6af91",
+      "eventType": "Notify",
+      "time": 7.6,
+      "NodeID": 203
+    },
+    "319": {
+      "NodeID": 319,
+      "name": "constVector3",
+      "UID": "c13055f8-727d-4233-9420-a3e2275d802a",
+      "x": 6,
+      "y": 0,
+      "z": -6
+    },
+    "306": {
+      "NodeID": 306,
+      "name": "constVector3",
+      "UID": "7707527b-6716-4e86-b51d-957a9be7b20d",
+      "x": -6,
+      "y": 0,
+      "z": 2
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "26": {
+      "duration": 4,
+      "name": "frameFreeze",
+      "UID": "ae97db11-b550-45ad-8a18-20403d3f163c",
+      "target": "OWNER",
+      "timeScale": 0.3,
+      "NodeID": 26
+    },
+    "304": {
+      "NodeID": 304,
+      "name": "constVector3",
+      "UID": "fc74807b-0bf0-4b60-b49c-07753508c39d",
+      "x": 6,
+      "y": 0,
+      "z": -2
+    },
+    "303": {
+      "endNum": 4,
+      "actionIds": [
+        301
+      ],
+      "NodeID": 303,
+      "UID": "455c21c9-68e4-4266-8fc2-a6947c2787cd",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "297": {
+      "NodeID": 297,
+      "name": "constVector3",
+      "UID": "636ccf32-a62d-48a9-9d48-3ac96a5a957d",
+      "x": 2,
+      "y": 0,
+      "z": 10
+    },
+    "20": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e07ce8bd-4bbe-46b3-aaaa-d40849e50463",
+      "target": "OWNER",
+      "NodeID": 20,
+      "animId": "Mon_Skill_WaterPillar_End"
+    },
+    "202": {
+      "action": {
+        "actionIds": [
+          216,
+          227,
+          200,
+          282
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 202,
+      "UID": "e67c161a-5279-46e0-aedf-7f6c7b5a4d6a"
+    },
+    "301": {
+      "offsetXYZ": {
+        "listId": 305,
+        "NodeID": 300,
+        "UID": "100f9ff7-46bd-446d-be39-249ed7359ce4",
+        "name": "getListItem",
+        "index": {
+          "UID": "a0e55b3d-bded-4973-a992-08ee7f0d9b77",
+          "name": "getIterNumber",
+          "NodeID": 299
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "e75a5383-d1a0-4727-acc0-5e3c7b94c89e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 301,
+      "pos": "CASTER"
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "25": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 25,
+      "UID": "ed60ec4c-3c50-4827-a549-a69e9b717a04",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_AbsorbWater_Start",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "229": {
+      "NodeID": 229,
+      "name": "constVector3",
+      "UID": "4f643810-4336-4c4a-9375-95cfab8b82a7",
+      "x": 8,
+      "y": 0,
+      "z": 0
+    },
+    "292": {
+      "NodeID": 292,
+      "name": "constVector3",
+      "UID": "aad14efb-3d71-4058-819c-fca90ae6860b",
+      "x": 10,
+      "y": 0,
+      "z": 2
+    },
+    "233": {
+      "NodeID": 233,
+      "name": "constVector3",
+      "UID": "9f719147-b746-4d93-9072-b2568416267d",
+      "x": -8,
+      "y": 0,
+      "z": 8
+    },
+    "234": {
+      "NodeID": 234,
+      "name": "constVector3",
+      "UID": "1d0a9ea9-9db4-49c3-a37d-aba0943dcbca",
+      "x": 8,
+      "y": 0,
+      "z": 8
+    },
+    "261": {
+      "UID": "ff434469-683c-4626-9e84-f830373abd39",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 267,
+          "name": "constVector3",
+          "UID": "20e09dbb-fc39-4ee7-8c66-379174137b70",
+          "x": 12,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "NodeID": 266,
+          "name": "constVector3",
+          "UID": "e6314004-981e-4546-88ce-7a772ac15798",
+          "x": -12,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "NodeID": 268,
+          "name": "constVector3",
+          "UID": "49268072-fc38-4ae8-a7ac-b4691aa50304",
+          "x": 0,
+          "y": 0,
+          "z": 12
+        },
+        {
+          "NodeID": 260,
+          "name": "constVector3",
+          "UID": "1ee32d05-2c03-4d98-a400-b3f99abc3e20",
+          "x": 0,
+          "y": 0,
+          "z": -12
+        }
+      ],
+      "NodeID": 261
+    },
+    "235": {
+      "NodeID": 235,
+      "name": "constVector3",
+      "UID": "7be22010-df5b-4dc7-9ded-f81e4cc603b1",
+      "x": -8,
+      "y": 0,
+      "z": -8
+    },
+    "265": {
+      "endNum": 4,
+      "actionIds": [
+        263
+      ],
+      "NodeID": 265,
+      "UID": "ec41af4e-cd12-4338-aeec-bcb06f26b04d",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "266": {
+      "NodeID": 266,
+      "name": "constVector3",
+      "UID": "e6314004-981e-4546-88ce-7a772ac15798",
+      "x": -12,
+      "y": 0,
+      "z": 0
+    },
+    "267": {
+      "NodeID": 267,
+      "name": "constVector3",
+      "UID": "20e09dbb-fc39-4ee7-8c66-379174137b70",
+      "x": 12,
+      "y": 0,
+      "z": 0
+    },
+    "227": {
+      "endNum": 4,
+      "actionIds": [
+        225
+      ],
+      "NodeID": 227,
+      "UID": "10e9d545-6c39-4005-a2a7-e128e41c0dee",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "286": {
+      "offsetXYZ": {
+        "listId": 284,
+        "NodeID": 285,
+        "UID": "b4635e3e-a5fc-407e-b5b2-de1337fcea87",
+        "name": "getListItem",
+        "index": {
+          "UID": "ce6c23fa-eeed-49a5-affe-57a699bcf25a",
+          "name": "getIterNumber",
+          "NodeID": 294
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "e2ab6c39-945a-4765-93d1-b41dcdeb96fa",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 286,
+      "pos": "CASTER"
+    },
+    "278": {
+      "NodeID": 278,
+      "name": "constVector3",
+      "UID": "54b130ff-3cd7-4c9b-8f3b-4ece24e8a4eb",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "279": {
+      "NodeID": 279,
+      "name": "constVector3",
+      "UID": "44adbd1b-a99a-40a8-ae7b-8c7a869bafdb",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "280": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2d9e2d33-5fd6-43b6-b8ee-8f437e2673f1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterColumnImpact_Start",
+      "NodeID": 280
+    },
+    "281": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b7b6c1e9-b68d-4778-bbc7-59f024b143a7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WaterColumnImpact_End",
+      "NodeID": 281
+    },
+    "204": {
+      "NodeID": 204,
+      "name": "constVector3",
+      "UID": "7d1d38c7-1859-4689-bc17-70b60ae02796",
+      "x": -12,
+      "y": 0,
+      "z": 4
+    },
+    "205": {
+      "NodeID": 205,
+      "name": "constVector3",
+      "UID": "c088664f-5273-4276-9b16-835868b872cd",
+      "x": 12,
+      "y": 0,
+      "z": 4
+    },
+    "282": {
+      "key": "ability_11940601282",
+      "duration": 1.3,
+      "actionIds": [
+        281
+      ],
+      "NodeID": 282,
+      "UID": "7f28495c-9fa3-465f-bf4d-48b4ca301c21",
+      "name": "addEntityTimer"
+    },
+    "283": {
+      "NodeID": 283,
+      "name": "constVector3",
+      "UID": "d3bc85e6-6cf0-4e29-a0ff-249d8a0f9085",
+      "x": 10,
+      "y": 0,
+      "z": -2
+    },
+    "284": {
+      "UID": "f6508383-a4ce-4fda-ab6a-117e97f687b9",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 292,
+          "name": "constVector3",
+          "UID": "aad14efb-3d71-4058-819c-fca90ae6860b",
+          "x": 10,
+          "y": 0,
+          "z": 2
+        },
+        {
+          "NodeID": 291,
+          "name": "constVector3",
+          "UID": "f4b500ec-7327-4fcd-8b18-8097450ac5b4",
+          "x": -10,
+          "y": 0,
+          "z": 2
+        },
+        {
+          "NodeID": 293,
+          "name": "constVector3",
+          "UID": "44d2cb3c-ec33-4462-9bc0-37cdde947a47",
+          "x": -10,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "NodeID": 283,
+          "name": "constVector3",
+          "UID": "d3bc85e6-6cf0-4e29-a0ff-249d8a0f9085",
+          "x": 10,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "NodeID": 297,
+          "name": "constVector3",
+          "UID": "636ccf32-a62d-48a9-9d48-3ac96a5a957d",
+          "x": 2,
+          "y": 0,
+          "z": 10
+        },
+        {
+          "NodeID": 296,
+          "name": "constVector3",
+          "UID": "1ad958dc-5501-45c1-b6aa-1033d4dfc327",
+          "x": -2,
+          "y": 0,
+          "z": 10
+        },
+        {
+          "NodeID": 298,
+          "name": "constVector3",
+          "UID": "a9096466-dc31-49e8-9bb5-d9c36c681a1c",
+          "x": -2,
+          "y": 0,
+          "z": -10
+        },
+        {
+          "NodeID": 295,
+          "name": "constVector3",
+          "UID": "68432ec0-0d04-49bf-9ffd-bb30995c755b",
+          "x": 2,
+          "y": 0,
+          "z": -10
+        },
+        {
+          "NodeID": 321,
+          "name": "constVector3",
+          "UID": "5a8a1e27-d0c1-4418-9888-247925adc7d7",
+          "x": 6,
+          "y": 0,
+          "z": 6
+        },
+        {
+          "NodeID": 320,
+          "name": "constVector3",
+          "UID": "4ab0b9f1-48b2-4b1c-a169-b6b0c9582359",
+          "x": -6,
+          "y": 0,
+          "z": 6
+        },
+        {
+          "NodeID": 322,
+          "name": "constVector3",
+          "UID": "11ac7103-6b62-49b5-9317-bcbed36f417c",
+          "x": -6,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "NodeID": 319,
+          "name": "constVector3",
+          "UID": "c13055f8-727d-4233-9420-a3e2275d802a",
+          "x": 6,
+          "y": 0,
+          "z": -6
+        }
+      ],
+      "NodeID": 284
+    },
+    "268": {
+      "NodeID": 268,
+      "name": "constVector3",
+      "UID": "49268072-fc38-4ae8-a7ac-b4691aa50304",
+      "x": 0,
+      "y": 0,
+      "z": 12
+    },
+    "230": {
+      "NodeID": 230,
+      "name": "constVector3",
+      "UID": "e1f4aa61-905b-4f75-b2f8-b38d77b7601e",
+      "x": -8,
+      "y": 0,
+      "z": 0
+    },
+    "263": {
+      "offsetXYZ": {
+        "listId": 261,
+        "NodeID": 262,
+        "UID": "0b4a8d97-9706-4702-b442-6e090e10fadc",
+        "name": "getListItem",
+        "index": {
+          "UID": "c27335a7-3ebf-43db-b5e4-d4540bd53912",
+          "name": "getIterNumber",
+          "NodeID": 269
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "08bf73d2-5a65-439b-82eb-728f157bb999",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 263,
+      "pos": "CASTER"
+    },
+    "288": {
+      "endNum": 12,
+      "actionIds": [
+        286
+      ],
+      "NodeID": 288,
+      "UID": "afb1b712-79af-4684-aab8-96a5c8a0dfa7",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "290": {
+      "action": {
+        "actionIds": [
+          303,
+          314,
+          288,
+          324
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 290,
+      "UID": "4bd82afe-7e20-451e-b1ff-39e764f1bda4"
+    },
+    "291": {
+      "NodeID": 291,
+      "name": "constVector3",
+      "UID": "f4b500ec-7327-4fcd-8b18-8097450ac5b4",
+      "x": -10,
+      "y": 0,
+      "z": 2
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "293": {
+      "NodeID": 293,
+      "name": "constVector3",
+      "UID": "44d2cb3c-ec33-4462-9bc0-37cdde947a47",
+      "x": -10,
+      "y": 0,
+      "z": -2
+    },
+    "305": {
+      "UID": "d0f44aa3-3fd4-48b5-83e7-0520cd163795",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 307,
+          "name": "constVector3",
+          "UID": "fbefe8e0-5e64-42f6-8a1e-7ea456ac3827",
+          "x": 6,
+          "y": 0,
+          "z": 2
+        },
+        {
+          "NodeID": 306,
+          "name": "constVector3",
+          "UID": "7707527b-6716-4e86-b51d-957a9be7b20d",
+          "x": -6,
+          "y": 0,
+          "z": 2
+        },
+        {
+          "NodeID": 308,
+          "name": "constVector3",
+          "UID": "86a4c93a-9a22-4a79-add4-b038f236e52c",
+          "x": -6,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "NodeID": 304,
+          "name": "constVector3",
+          "UID": "fc74807b-0bf0-4b60-b49c-07753508c39d",
+          "x": 6,
+          "y": 0,
+          "z": -2
+        }
+      ],
+      "NodeID": 305
+    },
+    "295": {
+      "NodeID": 295,
+      "name": "constVector3",
+      "UID": "68432ec0-0d04-49bf-9ffd-bb30995c755b",
+      "x": 2,
+      "y": 0,
+      "z": -10
+    },
+    "296": {
+      "NodeID": 296,
+      "name": "constVector3",
+      "UID": "1ad958dc-5501-45c1-b6aa-1033d4dfc327",
+      "x": -2,
+      "y": 0,
+      "z": 10
+    },
+    "298": {
+      "NodeID": 298,
+      "name": "constVector3",
+      "UID": "a9096466-dc31-49e8-9bb5-d9c36c681a1c",
+      "x": -2,
+      "y": 0,
+      "z": -10
+    },
+    "321": {
+      "NodeID": 321,
+      "name": "constVector3",
+      "UID": "5a8a1e27-d0c1-4418-9888-247925adc7d7",
+      "x": 6,
+      "y": 0,
+      "z": 6
+    },
+    "209": {
+      "NodeID": 209,
+      "name": "constVector3",
+      "UID": "fa1f3e7f-6c48-4d4c-ad49-463558ebd688",
+      "x": -4,
+      "y": 0,
+      "z": 12
+    },
+    "214": {
+      "offsetXYZ": {
+        "listId": 218,
+        "NodeID": 213,
+        "UID": "9595020f-ca65-4a17-8f37-b584fa4fcff4",
+        "name": "getListItem",
+        "index": {
+          "UID": "54ffebae-ab23-46d9-81d7-fb8898af5c29",
+          "name": "getIterNumber",
+          "NodeID": 212
+        }
+      },
+      "templateId": 119403,
+      "name": "createEntity",
+      "UID": "56b96fd3-32ba-4523-82d9-7153a9a59a39",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 214,
+      "pos": "CASTER"
+    },
+    "324": {
+      "key": "ability_11940601324",
+      "duration": 1.3,
+      "actionIds": [
+        323
+      ],
+      "NodeID": 324,
+      "UID": "e2ae58e4-893f-4ef3-8e1a-0c9df6fb3c43",
+      "name": "addEntityTimer"
+    },
+    "196": {
+      "UID": "3a0a79fb-2098-418a-8e6a-92cc39b2084e",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 205,
+          "name": "constVector3",
+          "UID": "c088664f-5273-4276-9b16-835868b872cd",
+          "x": 12,
+          "y": 0,
+          "z": 4
+        },
+        {
+          "NodeID": 204,
+          "name": "constVector3",
+          "UID": "7d1d38c7-1859-4689-bc17-70b60ae02796",
+          "x": -12,
+          "y": 0,
+          "z": 4
+        },
+        {
+          "NodeID": 206,
+          "name": "constVector3",
+          "UID": "8937bee7-b768-4edc-91c2-c9e69cb90c4f",
+          "x": -12,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "NodeID": 195,
+          "name": "constVector3",
+          "UID": "bcf24c5c-7081-4842-af63-aa815a2f5587",
+          "x": 12,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "NodeID": 210,
+          "name": "constVector3",
+          "UID": "5e982330-0d83-417d-b10d-7cb42f5d23e4",
+          "x": 4,
+          "y": 0,
+          "z": 12
+        },
+        {
+          "NodeID": 209,
+          "name": "constVector3",
+          "UID": "fa1f3e7f-6c48-4d4c-ad49-463558ebd688",
+          "x": -4,
+          "y": 0,
+          "z": 12
+        },
+        {
+          "NodeID": 211,
+          "name": "constVector3",
+          "UID": "a6a1e468-eb18-4604-9e04-ef622ae62ff0",
+          "x": -4,
+          "y": 0,
+          "z": -12
+        },
+        {
+          "NodeID": 208,
+          "name": "constVector3",
+          "UID": "5f5f4307-ac9f-443d-ad3b-4721daae8213",
+          "x": 4,
+          "y": 0,
+          "z": -12
+        },
+        {
+          "NodeID": 234,
+          "name": "constVector3",
+          "UID": "1d0a9ea9-9db4-49c3-a37d-aba0943dcbca",
+          "x": 8,
+          "y": 0,
+          "z": 8
+        },
+        {
+          "NodeID": 233,
+          "name": "constVector3",
+          "UID": "9f719147-b746-4d93-9072-b2568416267d",
+          "x": -8,
+          "y": 0,
+          "z": 8
+        },
+        {
+          "NodeID": 235,
+          "name": "constVector3",
+          "UID": "7be22010-df5b-4dc7-9ded-f81e4cc603b1",
+          "x": -8,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "NodeID": 232,
+          "name": "constVector3",
+          "UID": "a871c1f7-754a-4772-a198-51dbd3beb320",
+          "x": 8,
+          "y": 0,
+          "z": -8
+        }
+      ],
+      "NodeID": 196
+    },
+    "220": {
+      "NodeID": 220,
+      "name": "constVector3",
+      "UID": "6db3e987-9891-4aca-88a4-2c78511a6626",
+      "x": 4,
+      "y": 0,
+      "z": 4
+    }
+  },
+  "BPName": "ability_11940601",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    13,
+    16,
+    19,
+    22,
+    31,
+    202,
+    175,
+    290,
+    176,
+    203,
+    34,
+    27
+  ],
+  "layer": "Base",
+  "length": 12
+}

@@ -1,0 +1,102 @@
+{
+  "3": {
+    "sort": 1,
+    "bagName": 1326426511,
+    "default": 80,
+    "icon": "$UI_Img_Inventory_TabIcon_7.png",
+    "funcType": 3
+  },
+  "4": {
+    "sort": 4,
+    "bagName": 1774496553,
+    "default": 400,
+    "icon": "$UI_Img_Inventory_TabIcon_2.png",
+    "funcType": 99
+  },
+  "10": {
+    "sort": 10,
+    "funcType": 99,
+    "default": 0,
+    "bagName": 1902822764,
+    "hideInBag": 1
+  },
+  "7": {
+    "sort": 7,
+    "funcType": 99,
+    "default": 400,
+    "bagName": 1833491585,
+    "hideInBag": 1
+  },
+  "8": {
+    "sort": 8,
+    "bagName": 1455154578,
+    "default": 800,
+    "icon": "$UI_Img_Inventory_TabIcon_3.png",
+    "funcType": 99
+  },
+  "13": {
+    "sort": 13,
+    "funcType": 99,
+    "default": 400,
+    "icon": "$UI_Img_Inventory_TabIcon_1.png",
+    "bagName": 2124926138,
+    "hideInBag": 1
+  },
+  "9": {
+    "sort": 9,
+    "funcType": 99,
+    "default": 2000,
+    "bagName": 2079314987,
+    "hideInBag": 1
+  },
+  "12": {
+    "sort": 12,
+    "funcType": 99,
+    "default": 9,
+    "bagName": 1163975962,
+    "hideInBag": 1
+  },
+  "5": {
+    "sort": 5,
+    "bagName": 1324614107,
+    "default": 400,
+    "icon": "$UI_Img_Inventory_TabIcon_10.png",
+    "thirdPage": [
+      10,
+      11
+    ],
+    "funcType": 99
+  },
+  "11": {
+    "showInEggRob": 1,
+    "bagName": 1989677475,
+    "default": 800,
+    "thirdPage": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "icon": "$UI_Img_Inventory_TabIcon_GrabEgg.png",
+    "sort": 11,
+    "funcType": 99
+  },
+  "1": {
+    "sort": 3,
+    "bagName": 1941572632,
+    "default": 400,
+    "icon": "$UI_Img_Inventory_TabIcon_9.png",
+    "funcType": 99
+  },
+  "2": {
+    "sort": 2,
+    "bagName": 1956240735,
+    "default": 200,
+    "icon": "$UI_Img_Inventory_TabIcon_5.png",
+    "thirdPage": [
+      7,
+      8
+    ],
+    "funcType": 2
+  }
+}

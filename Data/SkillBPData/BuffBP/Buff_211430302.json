@@ -1,0 +1,178 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_211430302",
+  "NodeID": 1,
+  "UID": "87114387-5dca-4449-b601-a675f855529f",
+  "onBuffRefreshIds": [
+    8,
+    3,
+    11,
+    24
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "hasBuffTag",
+      "UID": "fc44c461-6e67-4de7-a763-a012a2846efa",
+      "target": "OWNER",
+      "NodeID": 5,
+      "buffTag": 4
+    },
+    "6": {
+      "actionIds": [
+        9,
+        12,
+        18,
+        15,
+        17,
+        13,
+        14
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "74638bea-641d-42ed-b858-fb4d76464e0a",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "8": {
+      "key": "10143electric",
+      "name": "setCacheVal",
+      "UID": "61f5fadf-38dc-4e0a-aea7-543fd8cb5965",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 8
+    },
+    "9": {
+      "key": "10143electric",
+      "name": "setCacheVal",
+      "UID": "4e9263e3-7277-4792-9fd5-d434d3054cc3",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        9,
+        12,
+        18,
+        15,
+        17,
+        13,
+        14
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "3465e032-3295-4dd3-baa1-bbe248956500",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        21,
+        23
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "f376b81e-ae1f-478d-b963-c7f0bc6087e9",
+      "name": "doActionsByConditions",
+      "NodeID": 20
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "5664f3e3-501e-4838-8926-ddd58fab29bf",
+      "effectId": "Eff_Parmon_10143_Skill_Charge02",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "3": {
+      "delay": 0,
+      "interval": 0.01,
+      "UID": "8e83428e-5f59-436d-90b3-d3e4381e33ce",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "13": {
+      "buffId": 2114303,
+      "name": "removeBuff",
+      "UID": "31b4c7e1-a05a-419c-9ad2-5836f10861e5",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "23d65077-ee18-44b7-8537-d983f22ae2d3",
+      "target": "TARGET",
+      "name": "setCombatTargetId",
+      "NodeID": 24
+    },
+    "14": {
+      "buffId": 2114304,
+      "name": "removeBuff",
+      "UID": "ccc42e6d-6459-4e30-b40c-a6cefbce7374",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "69a55b22-37fd-4204-affc-c571e592c5f0",
+      "effectId": "Eff_Parmon_10143_Skill_Charge02",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "453540a2-529e-43ed-aa47-339dc944b5db",
+      "effectId": "Eff_Parmon_10143_Skill_Charge03",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "241a07b9-4f4b-4831-97af-4c7bc0ba6c8c",
+      "effectId": "Eff_Parmon_10143_Skill_Charge01",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "buffId": 2114303,
+      "name": "hasBuff",
+      "UID": "f4108497-a627-4175-afc4-6e9852eca557",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "1458a411-ebb6-4b46-ba88-090f27f07a3c",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_White",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "c302dff8-ac4b-4707-9530-d8d09d22a393",
+      "effectId": "Eff_Parmon_10143_Skill_Charge01",
+      "target": "OWNER",
+      "NodeID": 23
+    }
+  },
+  "onBuffThinkIds": [
+    6,
+    20
+  ],
+  "onBuffDestroyIds": [
+    9,
+    12,
+    18,
+    15,
+    17,
+    13,
+    14
+  ],
+  "onBuffStartIds": [
+    8,
+    3,
+    11,
+    24
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "BPName": "ability_15010201",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800350,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "1187689a-b088-4155-b6bd-3992c6c540f7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 8
+    },
+    "23": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "4a7e48d3-77e0-4764-8f92-406213ca7744",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "24": {
+      "UID": "6982707a-b5a6-43ec-bf01-46fadcefcc83",
+      "conditionIds": [
+        23,
+        25
+      ],
+      "name": "conditionOr",
+      "NodeID": 24
+    },
+    "25": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "2e2e2203-f34c-49bd-86a7-6f79ddfb4b2a",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "7": {
+      "timelineId": 15010201001,
+      "name": "setCombatActionTimeline",
+      "UID": "6758f69c-3b96-4f50-95ef-ed7a78af6fb3",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "22": {
+      "timelineId": 15010200001,
+      "name": "setCombatActionTimeline",
+      "UID": "3d4e6151-ed72-4170-bda6-b4c43c3ff75c",
+      "target": "CASTER",
+      "NodeID": 22
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_EarthShock"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Parmon_10503_Rampage_Skill_EarthShock"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

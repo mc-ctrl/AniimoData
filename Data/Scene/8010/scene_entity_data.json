@@ -1,0 +1,94 @@
+{
+  "42050331": {
+    "position": [
+      24.63,
+      1,
+      23.92
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0.68,
+      0,
+      0.73
+    ],
+    "routeId": 0,
+    "sandboxId": 42049328,
+    "spawnerId": 42050333,
+    "staticId": 42050331,
+    "stick": true,
+    "subType": "EnvObject",
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 85.94,
+    "entityTags": {},
+    "idInType": 1070001,
+    "isAuto": false,
+    "isGhost": false,
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig",
+    "AddBehavList": {},
+    "behavOverrideType": 0
+  },
+  "42050454": {
+    "position": [
+      4.15,
+      1.02,
+      26.61
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0.88,
+      0,
+      0.47
+    ],
+    "routeId": 0,
+    "sandboxId": 42049328,
+    "spawnerId": 42050457,
+    "staticId": 42050454,
+    "stick": true,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 123.79,
+    "entityTags": {},
+    "idInType": 80000064,
+    "isAuto": false,
+    "isGhost": false,
+    "subType": "Puppet",
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig",
+    "AddBehavList": {},
+    "patrolRange": 1
+  },
+  "42050461": {
+    "position": [
+      4.67,
+      0.98,
+      22.05
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      -0.83,
+      0,
+      0.55
+    ],
+    "routeId": 0,
+    "sandboxId": 42049328,
+    "spawnerId": 42050457,
+    "staticId": 42050461,
+    "stick": true,
+    "behavOverrideType": 0,
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 247.06,
+    "entityTags": {},
+    "idInType": 80000064,
+    "isAuto": false,
+    "isGhost": false,
+    "subType": "Puppet",
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig",
+    "AddBehavList": {},
+    "patrolRange": 1
+  }
+}

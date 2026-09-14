@@ -1,0 +1,23 @@
+{
+  "duration": 0.5,
+  "BPName": "ability_15630002",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10563_Attack_Projectile3",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "nodeMap": {},
+  "maxMoveSpeed": 60,
+  "moveSpeed": 20,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "maxHitNum": 0,
+  "acceleration": 60
+}

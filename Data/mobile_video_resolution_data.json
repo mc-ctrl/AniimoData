@@ -1,0 +1,122 @@
+[
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A11 Bionic",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone14,5"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A15 Bionic",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone14,2"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A15 Bionic",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone14,3"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A15",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone14,7"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A15",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone14,8"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A16 Bionic",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone15,2"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A16 Bionic",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone15,3"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A16 Bionic",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone15,4"
+  },
+  {
+    "high": "1907x880",
+    "low": "1560x720",
+    "processorType": "A16 Bionic",
+    "scale": 1,
+    "mid": "1560x720",
+    "deviceName": "iPhone15,5"
+  },
+  {
+    "high": "2340x1080",
+    "low": "1560x720",
+    "processorType": "A17 Pro",
+    "scale": 1,
+    "mid": "1907x880",
+    "deviceName": "iPhone15,2"
+  },
+  {
+    "high": "2340x1080",
+    "low": "1560x720",
+    "processorType": "A17 Pro",
+    "scale": 1,
+    "mid": "1907x880",
+    "deviceName": "iPhone15,3"
+  },
+  {
+    "high": "2340x1080",
+    "low": "1560x720",
+    "processorType": "A18",
+    "scale": 1,
+    "mid": "1907x880",
+    "deviceName": "iPhone17,3"
+  },
+  {
+    "high": "2340x1080",
+    "low": "1560x720",
+    "processorType": "A18",
+    "scale": 1,
+    "mid": "1907x880",
+    "deviceName": "iPhone17,4"
+  },
+  {
+    "high": "2643x1206",
+    "low": "1907x880",
+    "processorType": "A18 Pro",
+    "scale": 1,
+    "mid": "2340x1080",
+    "deviceName": "iPhone17,1"
+  },
+  {
+    "high": "2643x1206",
+    "low": "1907x880",
+    "processorType": "A18 Pro",
+    "scale": 1,
+    "mid": "2340x1080",
+    "deviceName": "iPhone17,2"
+  }
+]

@@ -1,0 +1,7463 @@
+{
+  "500002": {
+    "npcFunc": [
+      [
+        1589003624,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80060
+        ]
+      ]
+    ]
+  },
+  "500003": {
+    "npcFunc": [
+      [
+        1706200923,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80061
+        ]
+      ]
+    ]
+  },
+  "500007": {},
+  "990030": {
+    "npcFunc": [
+      [
+        2099864901,
+        "$UI_Icon_MarkPoint_CampingCar.png",
+        [
+          9042,
+          62004
+        ],
+        [
+          1804,
+          1805
+        ]
+      ],
+      [
+        1705493107,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          1067
+        ],
+        [
+          1803
+        ]
+      ],
+      [
+        1686079908,
+        "$UI_Icon_InteractionTitle_CreateStation.png",
+        [
+          1067
+        ],
+        [
+          1850
+        ]
+      ]
+    ]
+  },
+  "990031": {
+    "npcFunc": [
+      [
+        1212051077,
+        "$UI_Icon_MarkPoint_CampingCar.png",
+        [
+          9042,
+          62004,
+          62007
+        ],
+        [
+          1804,
+          1805
+        ]
+      ],
+      [
+        1158013325,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          1067,
+          62027
+        ],
+        [
+          1803
+        ]
+      ],
+      [
+        1077953671,
+        "$UI_Icon_InteractionTitle_CreateStation.png",
+        [
+          1067,
+          62027
+        ],
+        [
+          1850
+        ]
+      ]
+    ]
+  },
+  "990032": {
+    "npcFunc": [
+      [
+        1991803596,
+        "$UI_Icon_MarkPoint_CampingCar.png",
+        [
+          9042,
+          62004,
+          62008
+        ],
+        [
+          1804,
+          1805
+        ]
+      ],
+      [
+        1780140778,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          1067,
+          62028
+        ],
+        [
+          1803
+        ]
+      ],
+      [
+        1126236568,
+        "$UI_Icon_InteractionTitle_CreateStation.png",
+        [
+          1067,
+          62028
+        ],
+        [
+          1850
+        ]
+      ]
+    ]
+  },
+  "990033": {
+    "npcFunc": [
+      [
+        1205270794,
+        "$UI_Icon_MarkPoint_CampingCar.png",
+        [
+          9042,
+          62004,
+          62006
+        ],
+        [
+          1804,
+          1805
+        ]
+      ],
+      [
+        1669876537,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          1067,
+          62026
+        ],
+        [
+          1803
+        ]
+      ],
+      [
+        2012475002,
+        "$UI_Icon_InteractionTitle_CreateStation.png",
+        [
+          1067,
+          62026
+        ],
+        [
+          1850
+        ]
+      ]
+    ]
+  },
+  "990034": {
+    "npcFunc": [
+      [
+        2135778634,
+        "$UI_Icon_MarkPoint_CampingCar.png",
+        [
+          9042,
+          62004
+        ],
+        [
+          1804,
+          1805
+        ]
+      ],
+      [
+        1796770602,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          1067
+        ],
+        [
+          1803
+        ]
+      ],
+      [
+        1329144945,
+        "$UI_Icon_InteractionTitle_CreateStation.png",
+        [
+          1067
+        ],
+        [
+          1850
+        ]
+      ]
+    ]
+  },
+  "990035": {
+    "npcFunc": [
+      [
+        1408017062,
+        "$UI_Icon_MarkPoint_CampingCar.png",
+        [
+          9042,
+          62004,
+          62005
+        ],
+        [
+          1804,
+          1805
+        ]
+      ],
+      [
+        1241264426,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          1067,
+          62025
+        ],
+        [
+          1803
+        ]
+      ],
+      [
+        1171719949,
+        "$UI_Icon_InteractionTitle_CreateStation.png",
+        [
+          1067,
+          62025
+        ],
+        [
+          1850
+        ]
+      ]
+    ]
+  },
+  "990061": {
+    "npcFunc": [
+      [
+        1612115586,
+        "$UI_Icon_HomeOrder_Icon_DailyOrder.png",
+        [
+          63000
+        ],
+        [
+          1802
+        ]
+      ]
+    ]
+  },
+  "990062": {
+    "npcFunc": [
+      [
+        1994285842,
+        "$UI_HomeToplogo_Icon_Mall.png",
+        {},
+        [
+          1415
+        ]
+      ]
+    ]
+  },
+  "990064": {
+    "npcFunc": [
+      [
+        1298060544,
+        "$UI_Icon_InteractionTitle_Exit.png",
+        {},
+        [
+          1806
+        ]
+      ]
+    ]
+  },
+  "5": {
+    "npcFunc": [
+      [
+        1375425906,
+        "$UI_Icon_InteractionTitle_Therapy.png",
+        {},
+        [
+          1012
+        ]
+      ],
+      [
+        1466099011,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          81000501
+        ]
+      ]
+    ]
+  },
+  "7": {
+    "npcFunc": [
+      [
+        1384322503,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1113
+        ]
+      ]
+    ]
+  },
+  "800205": {},
+  "9": {
+    "npcFunc": [
+      [
+        1459034248,
+        "$UI_Icon_InteractionTitle_BattleRoom.png",
+        {},
+        [
+          1842
+        ]
+      ],
+      [
+        1088238029,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          101003
+        ]
+      ]
+    ]
+  },
+  "201409": {
+    "npcFunc": [
+      [
+        1820589025,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002089
+        ]
+      ]
+    ]
+  },
+  "201410": {
+    "npcFunc": [
+      [
+        1612832703,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002090
+        ]
+      ]
+    ]
+  },
+  "201411": {
+    "npcFunc": [
+      [
+        1865335631,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002091
+        ]
+      ]
+    ]
+  },
+  "201412": {
+    "npcFunc": [
+      [
+        1763257770,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002092
+        ]
+      ]
+    ]
+  },
+  "201413": {
+    "npcFunc": [
+      [
+        2078841397,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002093
+        ]
+      ]
+    ]
+  },
+  "201414": {
+    "npcFunc": [
+      [
+        1286639883,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002094
+        ]
+      ]
+    ]
+  },
+  "201813": {
+    "npcFunc": [
+      [
+        1890515536,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201813
+        ]
+      ]
+    ]
+  },
+  "203003": {
+    "npcFunc": [
+      [
+        1078517573,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1947
+        ]
+      ]
+    ]
+  },
+  "203004": {
+    "npcFunc": [
+      [
+        1940858915,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1948
+        ]
+      ]
+    ]
+  },
+  "203005": {
+    "npcFunc": [
+      [
+        1841808775,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1979
+        ]
+      ]
+    ]
+  },
+  "203006": {
+    "npcFunc": [
+      [
+        1978968831,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1980
+        ]
+      ]
+    ]
+  },
+  "201102": {
+    "npcFunc": [
+      [
+        1123169607,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          20110201
+        ]
+      ]
+    ]
+  },
+  "203008": {
+    "npcFunc": [
+      [
+        1280564629,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1981
+        ]
+      ]
+    ]
+  },
+  "203009": {
+    "npcFunc": [
+      [
+        1957890853,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1982
+        ]
+      ]
+    ]
+  },
+  "203010": {
+    "npcFunc": [
+      [
+        1543457543,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1983
+        ]
+      ]
+    ]
+  },
+  "203011": {
+    "npcFunc": [
+      [
+        1653092529,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1984
+        ]
+      ]
+    ]
+  },
+  "203012": {
+    "npcFunc": [
+      [
+        1207681112,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1985
+        ]
+      ]
+    ]
+  },
+  "203013": {
+    "npcFunc": [
+      [
+        1352640823,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1986
+        ]
+      ]
+    ]
+  },
+  "203014": {
+    "npcFunc": [
+      [
+        1144043065,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1987
+        ]
+      ]
+    ]
+  },
+  "203015": {
+    "npcFunc": [
+      [
+        1572279859,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1988
+        ]
+      ]
+    ]
+  },
+  "203016": {
+    "npcFunc": [
+      [
+        1427299613,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1989
+        ]
+      ]
+    ]
+  },
+  "203017": {
+    "npcFunc": [
+      [
+        2021466899,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1990
+        ]
+      ]
+    ]
+  },
+  "203018": {
+    "npcFunc": [
+      [
+        2141093608,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1991
+        ]
+      ]
+    ]
+  },
+  "201401": {},
+  "201402": {},
+  "201403": {},
+  "203022": {
+    "npcFunc": [
+      [
+        1700830384,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80279
+        ]
+      ]
+    ]
+  },
+  "203023": {
+    "npcFunc": [
+      [
+        2007713957,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80281
+        ]
+      ]
+    ]
+  },
+  "203024": {
+    "npcFunc": [
+      [
+        1974298315,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80280
+        ]
+      ]
+    ]
+  },
+  "203025": {
+    "npcFunc": [
+      [
+        2057088996,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80282
+        ]
+      ]
+    ]
+  },
+  "203026": {
+    "npcFunc": [
+      [
+        1482914051,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80283
+        ]
+      ]
+    ]
+  },
+  "203027": {
+    "npcFunc": [
+      [
+        1305364026,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2041
+        ]
+      ]
+    ]
+  },
+  "203028": {
+    "npcFunc": [
+      [
+        1496900573,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2042
+        ]
+      ]
+    ]
+  },
+  "203029": {
+    "npcFunc": [
+      [
+        2015864446,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2043
+        ]
+      ]
+    ]
+  },
+  "203030": {
+    "npcFunc": [
+      [
+        1244907746,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2044
+        ]
+      ]
+    ]
+  },
+  "203031": {
+    "npcFunc": [
+      [
+        1824687048,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2045
+        ]
+      ]
+    ]
+  },
+  "203032": {
+    "npcFunc": [
+      [
+        1981889460,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2046
+        ]
+      ]
+    ]
+  },
+  "203033": {
+    "npcFunc": [
+      [
+        1417761684,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2047
+        ]
+      ]
+    ]
+  },
+  "203034": {
+    "npcFunc": [
+      [
+        1344810975,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2048
+        ]
+      ]
+    ]
+  },
+  "203035": {
+    "npcFunc": [
+      [
+        1409005625,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2049
+        ]
+      ]
+    ]
+  },
+  "203036": {
+    "npcFunc": [
+      [
+        1471687075,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2050
+        ]
+      ]
+    ]
+  },
+  "203037": {
+    "npcFunc": [
+      [
+        1301264160,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2051
+        ]
+      ]
+    ]
+  },
+  "203038": {
+    "npcFunc": [
+      [
+        1561957354,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2052
+        ]
+      ]
+    ]
+  },
+  "203039": {
+    "npcFunc": [
+      [
+        1515027815,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          2053
+        ]
+      ]
+    ]
+  },
+  "300806": {},
+  "300809": {},
+  "300810": {
+    "npcFunc": [
+      [
+        1615270495,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001619
+        ]
+      ]
+    ]
+  },
+  "300920": {
+    "npcFunc": [
+      [
+        1261591738,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092001
+        ]
+      ]
+    ]
+  },
+  "300921": {
+    "npcFunc": [
+      [
+        1924540985,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092101
+        ]
+      ]
+    ]
+  },
+  "300922": {
+    "npcFunc": [
+      [
+        1240449455,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092201
+        ]
+      ]
+    ]
+  },
+  "300923": {
+    "npcFunc": [
+      [
+        1948092403,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092301
+        ]
+      ]
+    ]
+  },
+  "300924": {
+    "npcFunc": [
+      [
+        1950372352,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092401
+        ]
+      ]
+    ]
+  },
+  "300925": {
+    "npcFunc": [
+      [
+        1489525228,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092501
+        ]
+      ]
+    ]
+  },
+  "300926": {
+    "npcFunc": [
+      [
+        1929307505,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092601
+        ]
+      ]
+    ]
+  },
+  "300927": {
+    "npcFunc": [
+      [
+        1298716757,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30092701
+        ]
+      ]
+    ]
+  },
+  "300930": {
+    "npcFunc": [
+      [
+        1493427089,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          30093002
+        ]
+      ]
+    ]
+  },
+  "400060": {
+    "npcFunc": [
+      [
+        1199006963,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80057
+        ]
+      ]
+    ]
+  },
+  "400079": {
+    "npcFunc": [
+      [
+        1819039294,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          906
+        ],
+        [
+          1165
+        ]
+      ]
+    ]
+  },
+  "400085": {
+    "npcFunc": [
+      [
+        2068912087,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80062
+        ]
+      ]
+    ]
+  },
+  "400099": {
+    "npcFunc": [
+      [
+        1514587159,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80099
+        ]
+      ]
+    ]
+  },
+  "400105": {
+    "npcFunc": [
+      [
+        2064481386,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1431
+        ]
+      ]
+    ]
+  },
+  "400114": {
+    "npcFunc": [
+      [
+        2053894360,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80107
+        ]
+      ]
+    ]
+  },
+  "400118": {
+    "npcFunc": [
+      [
+        1392040956,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80200
+        ]
+      ],
+      [
+        1934219976,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80202
+        ]
+      ],
+      [
+        2047673069,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80204
+        ]
+      ]
+    ]
+  },
+  "400120": {
+    "npcFunc": [
+      [
+        1150364936,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80205
+        ]
+      ]
+    ]
+  },
+  "400128": {
+    "npcFunc": [
+      [
+        1419628735,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000228
+        ]
+      ]
+    ]
+  },
+  "400129": {},
+  "400130": {},
+  "400131": {},
+  "400132": {
+    "npcFunc": [
+      [
+        1460407056,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80157
+        ]
+      ]
+    ]
+  },
+  "400133": {},
+  "400159": {
+    "npcFunc": [
+      [
+        1536529889,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80125
+        ]
+      ]
+    ]
+  },
+  "400160": {
+    "npcFunc": [
+      [
+        1377693507,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1014
+        ]
+      ]
+    ]
+  },
+  "400161": {},
+  "400162": {},
+  "400174": {},
+  "400175": {},
+  "400195": {},
+  "400241": {
+    "npcFunc": [
+      [
+        1199591577,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        [
+          2
+        ],
+        [
+          80152
+        ]
+      ]
+    ]
+  },
+  "400252": {},
+  "400258": {},
+  "400262": {},
+  "400263": {},
+  "400264": {},
+  "400277": {
+    "npcFunc": [
+      [
+        1194826518,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80255
+        ]
+      ]
+    ]
+  },
+  "400287": {
+    "npcFunc": [
+      [
+        1670003785,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80242
+        ]
+      ]
+    ]
+  },
+  "400288": {
+    "npcFunc": [
+      [
+        2100282064,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80245
+        ]
+      ]
+    ]
+  },
+  "400289": {
+    "npcFunc": [
+      [
+        1590883157,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80243
+        ]
+      ]
+    ]
+  },
+  "400290": {
+    "npcFunc": [
+      [
+        1867431691,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80244
+        ]
+      ]
+    ]
+  },
+  "400292": {},
+  "400512": {
+    "npcFunc": [
+      [
+        1506824955,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80183
+        ]
+      ]
+    ]
+  },
+  "400519": {
+    "npcFunc": [
+      [
+        1320253122,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          400519,
+          80199
+        ]
+      ]
+    ]
+  },
+  "400520": {
+    "npcFunc": [
+      [
+        1122057567,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80252
+        ]
+      ]
+    ]
+  },
+  "400531": {
+    "npcFunc": [
+      [
+        1806721441,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80262
+        ]
+      ]
+    ]
+  },
+  "400536": {
+    "npcFunc": [
+      [
+        1802028686,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80261
+        ]
+      ]
+    ]
+  },
+  "400538": {
+    "npcFunc": [
+      [
+        1607136713,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80260
+        ]
+      ]
+    ]
+  },
+  "400539": {
+    "npcFunc": [
+      [
+        2121801876,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80259
+        ]
+      ]
+    ]
+  },
+  "400540": {
+    "npcFunc": [
+      [
+        1251944128,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80258
+        ]
+      ]
+    ]
+  },
+  "400550": {
+    "npcFunc": [
+      [
+        1117926849,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80249
+        ]
+      ]
+    ]
+  },
+  "400553": {
+    "npcFunc": [
+      [
+        1116323296,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80257
+        ]
+      ]
+    ]
+  },
+  "400561": {
+    "npcFunc": [
+      [
+        2051178854,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80247
+        ]
+      ]
+    ]
+  },
+  "400562": {
+    "npcFunc": [
+      [
+        1647329718,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80256
+        ]
+      ]
+    ]
+  },
+  "400563": {
+    "npcFunc": [
+      [
+        1582519222,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1051
+        ]
+      ]
+    ]
+  },
+  "300207": {
+    "npcFunc": [
+      [
+        2083426007,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001532
+        ]
+      ]
+    ]
+  },
+  "300208": {
+    "npcFunc": [
+      [
+        2039524453,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001533
+        ]
+      ]
+    ]
+  },
+  "300209": {
+    "npcFunc": [
+      [
+        1841360999,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001534
+        ]
+      ]
+    ]
+  },
+  "300210": {
+    "npcFunc": [
+      [
+        1502487727,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001535
+        ]
+      ]
+    ]
+  },
+  "300211": {
+    "npcFunc": [
+      [
+        1827542805,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001536
+        ]
+      ]
+    ]
+  },
+  "300212": {
+    "npcFunc": [
+      [
+        1397208683,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001537
+        ]
+      ]
+    ]
+  },
+  "300213": {
+    "npcFunc": [
+      [
+        1959037274,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001538
+        ]
+      ]
+    ]
+  },
+  "300214": {
+    "npcFunc": [
+      [
+        1571879475,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          50773112
+        ]
+      ]
+    ]
+  },
+  "300215": {
+    "npcFunc": [
+      [
+        1747284127,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          50773157
+        ]
+      ]
+    ]
+  },
+  "400611": {
+    "npcFunc": [
+      [
+        1862170358,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80246
+        ]
+      ]
+    ]
+  },
+  "400614": {
+    "npcFunc": [
+      [
+        1207233117,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80263
+        ]
+      ]
+    ]
+  },
+  "400617": {
+    "npcFunc": [
+      [
+        1769393517,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80264
+        ]
+      ]
+    ]
+  },
+  "401059": {
+    "npcFunc": [
+      [
+        1213791137,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1559
+        ]
+      ]
+    ]
+  },
+  "409998": {
+    "npcFunc": [
+      [
+        1905140643,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1500
+        ]
+      ]
+    ]
+  },
+  "499999": {},
+  "500039": {},
+  "500040": {},
+  "500048": {},
+  "500049": {},
+  "500069": {},
+  "500070": {},
+  "500071": {},
+  "500072": {},
+  "500073": {},
+  "500074": {},
+  "500079": {},
+  "500081": {},
+  "500082": {},
+  "500083": {},
+  "500085": {},
+  "500205": {
+    "npcFunc": [
+      [
+        1391200908,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80215
+        ]
+      ]
+    ]
+  },
+  "599999": {
+    "npcFunc": [
+      [
+        1422394695,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "600027": {
+    "npcFunc": [
+      [
+        1745370599,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80154
+        ]
+      ]
+    ]
+  },
+  "600033": {
+    "npcFunc": [
+      [
+        1654372848,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80156
+        ]
+      ]
+    ]
+  },
+  "600040": {
+    "npcFunc": [
+      [
+        2085866350,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80216
+        ]
+      ]
+    ]
+  },
+  "600041": {
+    "npcFunc": [
+      [
+        1406081001,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80217
+        ]
+      ]
+    ]
+  },
+  "600042": {
+    "npcFunc": [
+      [
+        1442779881,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80218
+        ]
+      ]
+    ]
+  },
+  "600057": {
+    "npcFunc": [
+      [
+        1281769785,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80229
+        ]
+      ]
+    ]
+  },
+  "699999": {
+    "npcFunc": [
+      {
+        "2": "$UI_Icon_InteractionTitle_Chat.png"
+      }
+    ]
+  },
+  "800014": {
+    "npcFunc": [
+      [
+        2141592616,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          302
+        ],
+        [
+          1003
+        ],
+        377
+      ],
+      [
+        1764040149,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          303
+        ],
+        [
+          1005
+        ],
+        377
+      ],
+      [
+        1652300412,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          304
+        ],
+        [
+          1006
+        ],
+        377
+      ],
+      [
+        1924738593,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          305
+        ],
+        [
+          1007
+        ],
+        377
+      ]
+    ]
+  },
+  "880101": {
+    "npcFunc": [
+      [
+        2100774933,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1111
+        ],
+        211
+      ],
+      [
+        1311321651,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90009
+        ],
+        211
+      ]
+    ]
+  },
+  "880102": {
+    "npcFunc": [
+      [
+        1774261611,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1421
+        ],
+        211
+      ],
+      [
+        2089024834,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90010
+        ],
+        211
+      ]
+    ]
+  },
+  "880106": {
+    "npcFunc": [
+      [
+        2087035487,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90005
+        ]
+      ]
+    ]
+  },
+  "880107": {
+    "npcFunc": [
+      [
+        1373331012,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1197
+        ]
+      ]
+    ]
+  },
+  "880111": {
+    "npcFunc": [
+      [
+        1340879932,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1116
+        ]
+      ]
+    ]
+  },
+  "880131": {
+    "npcFunc": [
+      [
+        1368194296,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1117
+        ]
+      ],
+      [
+        1302044500,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90004
+        ]
+      ]
+    ]
+  },
+  "880134": {
+    "npcFunc": [
+      [
+        1726680610,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90006
+        ]
+      ]
+    ]
+  },
+  "880143": {
+    "npcFunc": [
+      [
+        1549914331,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90007
+        ]
+      ]
+    ]
+  },
+  "880144": {
+    "npcFunc": [
+      [
+        1357479448,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90008
+        ]
+      ]
+    ]
+  },
+  "880829": {
+    "npcFunc": [
+      [
+        1365434603,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1463
+        ]
+      ]
+    ]
+  },
+  "880830": {
+    "npcFunc": [
+      [
+        1738848390,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1900,
+          1903
+        ]
+      ]
+    ]
+  },
+  "880831": {
+    "npcFunc": [
+      [
+        1447829762,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1901
+        ]
+      ]
+    ]
+  },
+  "880832": {
+    "npcFunc": [
+      [
+        1122495427,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          301011
+        ],
+        [
+          301011
+        ]
+      ],
+      [
+        1579787431,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          301012
+        ],
+        [
+          301012
+        ]
+      ]
+    ]
+  },
+  "880160": {
+    "npcFunc": [
+      [
+        1322200094,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1135
+        ]
+      ]
+    ]
+  },
+  "880161": {
+    "npcFunc": [
+      [
+        1703538707,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1136
+        ]
+      ]
+    ]
+  },
+  "880162": {
+    "npcFunc": [
+      [
+        1585260254,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1137
+        ]
+      ]
+    ]
+  },
+  "880163": {
+    "npcFunc": [
+      [
+        1954805901,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1243
+        ]
+      ],
+      [
+        1348900717,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1992
+        ]
+      ]
+    ]
+  },
+  "880164": {
+    "npcFunc": [
+      [
+        1577248246,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1248
+        ]
+      ]
+    ]
+  },
+  "880165": {
+    "npcFunc": [
+      [
+        1571378912,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1240
+        ]
+      ]
+    ]
+  },
+  "880176": {
+    "npcFunc": [
+      [
+        2000360528,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        {}
+      ]
+    ]
+  },
+  "880182": {
+    "npcFunc": [
+      [
+        1367588028,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000007
+        ],
+        [
+          1199
+        ]
+      ]
+    ]
+  },
+  "880204": {},
+  "880219": {
+    "npcFunc": [
+      [
+        1749288416,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1194
+        ]
+      ],
+      [
+        1182538445,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1195
+        ]
+      ],
+      [
+        1751383427,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1196
+        ]
+      ]
+    ]
+  },
+  "880953": {
+    "npcFunc": [
+      [
+        1849813322,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1552
+        ]
+      ]
+    ]
+  },
+  "880971": {
+    "npcFunc": [
+      [
+        1729538353,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1549
+        ]
+      ]
+    ]
+  },
+  "880972": {
+    "npcFunc": [
+      [
+        1911814138,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1550
+        ]
+      ]
+    ]
+  },
+  "880973": {
+    "npcFunc": [
+      [
+        1835626642,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1551
+        ]
+      ]
+    ]
+  },
+  "880990": {
+    "npcFunc": [
+      [
+        1288388940,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1545
+        ]
+      ]
+    ]
+  },
+  "880994": {
+    "npcFunc": [
+      [
+        1418624047,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1546
+        ]
+      ]
+    ]
+  },
+  "881002": {
+    "npcFunc": [
+      [
+        1848911725,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90001
+        ]
+      ]
+    ]
+  },
+  "881013": {
+    "npcFunc": [
+      [
+        1754026720,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90002
+        ]
+      ]
+    ]
+  },
+  "881014": {
+    "npcFunc": [
+      [
+        1581794268,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90011
+        ]
+      ],
+      [
+        1913205239,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90012
+        ]
+      ]
+    ]
+  },
+  "881015": {
+    "npcFunc": [
+      [
+        1892928503,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90014
+        ]
+      ],
+      [
+        1442425871,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90015
+        ]
+      ]
+    ]
+  },
+  "881016": {
+    "npcFunc": [
+      [
+        1569839236,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90017
+        ]
+      ],
+      [
+        1612845282,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90018
+        ]
+      ]
+    ]
+  },
+  "881031": {
+    "npcFunc": [
+      [
+        1798601108,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1553
+        ]
+      ]
+    ]
+  },
+  "881040": {
+    "npcFunc": [
+      [
+        2112816555,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1548
+        ]
+      ]
+    ]
+  },
+  "881051": {
+    "npcFunc": [
+      [
+        1885885510,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1557
+        ]
+      ]
+    ]
+  },
+  "881077": {
+    "npcFunc": [
+      [
+        1466822633,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1543
+        ]
+      ]
+    ]
+  },
+  "881128": {
+    "npcFunc": [
+      [
+        1120516527,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1570
+        ]
+      ]
+    ]
+  },
+  "881129": {
+    "npcFunc": [
+      [
+        1756955218,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1571
+        ]
+      ]
+    ]
+  },
+  "881130": {
+    "npcFunc": [
+      [
+        1165838344,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1572
+        ]
+      ]
+    ]
+  },
+  "881141": {
+    "npcFunc": [
+      [
+        1595840083,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1815
+        ],
+        211
+      ]
+    ]
+  },
+  "881142": {
+    "npcFunc": [
+      [
+        1262849627,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1816
+        ]
+      ]
+    ]
+  },
+  "881143": {
+    "npcFunc": [
+      [
+        1877933897,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1817
+        ]
+      ]
+    ]
+  },
+  "881144": {
+    "npcFunc": [
+      [
+        1760319596,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1818
+        ]
+      ]
+    ]
+  },
+  "881145": {
+    "npcFunc": [
+      [
+        1821476807,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1819
+        ]
+      ]
+    ]
+  },
+  "881149": {
+    "npcFunc": [
+      [
+        1785390921,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1820
+        ]
+      ]
+    ]
+  },
+  "890000": {
+    "npcFunc": [
+      [
+        2060885631,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000268,
+          70000269
+        ]
+      ]
+    ]
+  },
+  "890001": {
+    "npcFunc": [
+      [
+        2037888732,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000200,
+          70000272,
+          70000273
+        ]
+      ]
+    ]
+  },
+  "890002": {
+    "npcFunc": [
+      [
+        1118796260,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000200,
+          70000276,
+          70000277
+        ]
+      ]
+    ]
+  },
+  "890003": {
+    "npcFunc": [
+      [
+        1815042663,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000200,
+          70000280,
+          70000281
+        ]
+      ]
+    ]
+  },
+  "890004": {
+    "npcFunc": [
+      [
+        2081617200,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000200,
+          70000284,
+          70000285
+        ]
+      ]
+    ]
+  },
+  "890005": {
+    "npcFunc": [
+      [
+        1870544939,
+        "$UI_Icon_InteractionTitle_Exit.png",
+        {},
+        [
+          70000200
+        ]
+      ]
+    ]
+  },
+  "890006": {
+    "npcFunc": [
+      [
+        1671741732,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          70000203
+        ]
+      ]
+    ]
+  },
+  "890007": {},
+  "890008": {},
+  "890009": {
+    "npcFunc": [
+      [
+        1665145936,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000257
+        ]
+      ]
+    ]
+  },
+  "890010": {
+    "npcFunc": [
+      [
+        2111283185,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000258
+        ]
+      ]
+    ]
+  },
+  "890011": {
+    "npcFunc": [
+      [
+        1394485814,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000259
+        ]
+      ]
+    ]
+  },
+  "890013": {
+    "npcFunc": [
+      [
+        1645274412,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000211
+        ]
+      ],
+      [
+        1472694299,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000212
+        ]
+      ]
+    ]
+  },
+  "890015": {
+    "npcFunc": [
+      [
+        1485708949,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000213
+        ]
+      ],
+      [
+        1387727508,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000214
+        ]
+      ]
+    ]
+  },
+  "890017": {
+    "npcFunc": [
+      [
+        1943792880,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000215
+        ]
+      ],
+      [
+        2060245069,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000216
+        ]
+      ]
+    ]
+  },
+  "890019": {
+    "npcFunc": [
+      [
+        1778159756,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000205
+        ]
+      ],
+      [
+        1910326321,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000206
+        ]
+      ]
+    ]
+  },
+  "890022": {
+    "npcFunc": [
+      [
+        1498675872,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000221
+        ]
+      ]
+    ]
+  },
+  "890024": {
+    "npcFunc": [
+      [
+        1278087102,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000222
+        ]
+      ]
+    ]
+  },
+  "890026": {
+    "npcFunc": [
+      [
+        1747625362,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000223
+        ]
+      ]
+    ]
+  },
+  "890027": {
+    "npcFunc": [
+      [
+        1311755095,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000224
+        ]
+      ]
+    ]
+  },
+  "890028": {
+    "npcFunc": [
+      [
+        2073807324,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000225
+        ]
+      ]
+    ]
+  },
+  "890029": {
+    "npcFunc": [
+      [
+        1261102421,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000227
+        ]
+      ]
+    ]
+  },
+  "890030": {
+    "npcFunc": [
+      [
+        1100561187,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000229
+        ]
+      ]
+    ]
+  },
+  "890032": {
+    "npcFunc": [
+      [
+        1392311442,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000228
+        ]
+      ]
+    ]
+  },
+  "890033": {
+    "npcFunc": [
+      [
+        1749446826,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000241
+        ]
+      ]
+    ]
+  },
+  "890034": {
+    "npcFunc": [
+      [
+        2026959758,
+        "$UI_Icon_InteractionTitle_Survey.png",
+        {},
+        {}
+      ]
+    ]
+  },
+  "890035": {
+    "npcFunc": [
+      [
+        1190500457,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000242
+        ]
+      ]
+    ]
+  },
+  "890036": {
+    "npcFunc": [
+      [
+        1584918122,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000243
+        ]
+      ]
+    ]
+  },
+  "890037": {
+    "npcFunc": [
+      [
+        1556590414,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000244
+        ]
+      ]
+    ]
+  },
+  "890038": {
+    "npcFunc": [
+      [
+        1852995276,
+        "$UI_Icon_InteractionTitle_Exit.png",
+        {},
+        [
+          70000245
+        ]
+      ]
+    ]
+  },
+  "890039": {
+    "npcFunc": [
+      [
+        1600870690,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000246
+        ]
+      ]
+    ]
+  },
+  "890040": {
+    "npcFunc": [
+      [
+        1154009628,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000251
+        ]
+      ]
+    ]
+  },
+  "890041": {
+    "npcFunc": [
+      [
+        1919835956,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000252
+        ]
+      ]
+    ]
+  },
+  "890042": {
+    "npcFunc": [
+      [
+        1114614537,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000253
+        ]
+      ]
+    ]
+  },
+  "880351": {
+    "npcFunc": [
+      [
+        1189224753,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1300,
+          1302,
+          1304,
+          1306,
+          1308,
+          1310,
+          1303,
+          1321,
+          1830,
+          1831,
+          1832,
+          1833
+        ]
+      ]
+    ]
+  },
+  "880352": {
+    "npcFunc": [
+      [
+        1659413195,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1300,
+          1302,
+          1304,
+          1306,
+          1308,
+          1310,
+          1305,
+          1322,
+          1830,
+          1831,
+          1832,
+          1833
+        ]
+      ]
+    ]
+  },
+  "880353": {
+    "npcFunc": [
+      [
+        1760421827,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1300,
+          1302,
+          1304,
+          1306,
+          1308,
+          1310,
+          1307,
+          1323,
+          1830,
+          1831,
+          1832,
+          1833
+        ]
+      ]
+    ]
+  },
+  "880354": {
+    "npcFunc": [
+      [
+        1829739986,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1300,
+          1302,
+          1304,
+          1306,
+          1308,
+          1310,
+          1309,
+          1324,
+          1830,
+          1831,
+          1832,
+          1833
+        ]
+      ]
+    ]
+  },
+  "880355": {
+    "npcFunc": [
+      [
+        2135720820,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1300,
+          1302,
+          1304,
+          1306,
+          1308,
+          1310,
+          1325,
+          1834,
+          1835,
+          1836,
+          1837
+        ]
+      ]
+    ]
+  },
+  "880369": {
+    "npcFunc": [
+      [
+        1826653541,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1313
+        ]
+      ]
+    ]
+  },
+  "880370": {
+    "npcFunc": [
+      [
+        1142067467,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1315
+        ]
+      ]
+    ]
+  },
+  "880373": {
+    "npcFunc": [
+      [
+        2124093549,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1316
+        ]
+      ]
+    ]
+  },
+  "880385": {
+    "npcFunc": [
+      [
+        1556213564,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1317
+        ]
+      ]
+    ]
+  },
+  "880391": {
+    "npcFunc": [
+      [
+        2020083161,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1558
+        ]
+      ]
+    ]
+  },
+  "880512": {
+    "npcFunc": [
+      [
+        1741311833,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1390
+        ]
+      ]
+    ]
+  },
+  "880530": {
+    "npcFunc": [
+      [
+        1947090932,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1400,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880531": {
+    "npcFunc": [
+      [
+        1688751139,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1401,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880532": {
+    "npcFunc": [
+      [
+        1873559219,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1402,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880533": {
+    "npcFunc": [
+      [
+        1994025820,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1403,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880534": {
+    "npcFunc": [
+      [
+        1164632922,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1404,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880535": {
+    "npcFunc": [
+      [
+        1568064598,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1405,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880536": {
+    "npcFunc": [
+      [
+        1367457966,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1406,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880537": {
+    "npcFunc": [
+      [
+        1273889434,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1407,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880538": {
+    "npcFunc": [
+      [
+        1424938484,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1408,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880539": {
+    "npcFunc": [
+      [
+        1166918018,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1409,
+          1410
+        ]
+      ]
+    ]
+  },
+  "880603": {
+    "npcFunc": [
+      [
+        1966451443,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1419
+        ],
+        211
+      ]
+    ]
+  },
+  "880604": {
+    "npcFunc": [
+      [
+        1856295648,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1420
+        ],
+        211
+      ]
+    ]
+  },
+  "500000": {},
+  "401001": {
+    "npcFunc": [
+      [
+        1315063527,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80100
+        ]
+      ],
+      [
+        1442156087,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80101
+        ]
+      ]
+    ]
+  },
+  "401002": {
+    "npcFunc": [
+      [
+        2093642721,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000202
+        ]
+      ]
+    ]
+  },
+  "890086": {
+    "npcFunc": [
+      [
+        1224935592,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000256
+        ]
+      ]
+    ]
+  },
+  "890087": {
+    "npcFunc": [
+      [
+        1379605355,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000260
+        ]
+      ]
+    ]
+  },
+  "890088": {
+    "npcFunc": [
+      [
+        2018830584,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000261
+        ]
+      ]
+    ]
+  },
+  "890089": {
+    "npcFunc": [
+      [
+        1751028647,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000262
+        ]
+      ]
+    ]
+  },
+  "890090": {
+    "npcFunc": [
+      [
+        1204895375,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000263
+        ]
+      ]
+    ]
+  },
+  "890091": {
+    "npcFunc": [
+      [
+        2003490105,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000264
+        ]
+      ]
+    ]
+  },
+  "890092": {
+    "npcFunc": [
+      [
+        1950277470,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000265
+        ]
+      ]
+    ]
+  },
+  "890093": {
+    "npcFunc": [
+      [
+        1097230470,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000243
+        ]
+      ]
+    ]
+  },
+  "890094": {
+    "npcFunc": [
+      [
+        2032401553,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000295
+        ]
+      ]
+    ]
+  },
+  "890095": {
+    "npcFunc": [
+      [
+        1722686675,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000295
+        ]
+      ]
+    ]
+  },
+  "890096": {
+    "npcFunc": [
+      [
+        1559773554,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000295
+        ]
+      ]
+    ]
+  },
+  "890098": {
+    "npcFunc": [
+      [
+        1728583785,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000252
+        ]
+      ]
+    ]
+  },
+  "890199": {
+    "npcFunc": [
+      [
+        1970105151,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "990004": {
+    "npcFunc": [
+      [
+        1201686969,
+        "$UI_HomeToplogo_Icon_Mall.png",
+        [
+          6132
+        ],
+        [
+          1415
+        ]
+      ],
+      [
+        1953584498,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          6132
+        ],
+        [
+          1414
+        ]
+      ],
+      [
+        2029742271,
+        "$UI_Icon_InteractionTitle_Survey.png",
+        [
+          6132
+        ],
+        [
+          1417
+        ]
+      ],
+      [
+        1933868542,
+        "$UI_HomeToplogo_Icon__Mall.png",
+        {},
+        [
+          1427
+        ]
+      ]
+    ]
+  },
+  "990086": {
+    "npcFunc": [
+      [
+        1380546300,
+        "$UI_Icon_InteractionTitle_Exit.png",
+        [
+          306209
+        ],
+        [
+          2010
+        ]
+      ]
+    ]
+  },
+  "5000045": {
+    "npcFunc": [
+      [
+        1983832786,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1890
+        ]
+      ]
+    ]
+  },
+  "5000046": {
+    "npcFunc": [
+      [
+        1725342661,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1891
+        ]
+      ]
+    ]
+  },
+  "5000047": {
+    "npcFunc": [
+      [
+        1629867684,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1892
+        ]
+      ],
+      [
+        1505033473,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1893
+        ]
+      ]
+    ]
+  },
+  "5000053": {
+    "npcFunc": [
+      [
+        2079784904,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1936
+        ]
+      ]
+    ]
+  },
+  "5000500": {
+    "npcFunc": [
+      [
+        1622032719,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1840
+        ]
+      ],
+      [
+        1375663950,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1848
+        ]
+      ]
+    ]
+  },
+  "5140033": {
+    "npcFunc": [
+      [
+        1845188224,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1883
+        ],
+        102001
+      ]
+    ]
+  },
+  "5140040": {
+    "npcFunc": [
+      [
+        1635798877,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1971,
+          1939,
+          1940,
+          1941,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1956,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ],
+      [
+        1095715691,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1938,
+          1956,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ]
+    ]
+  },
+  "5140041": {
+    "npcFunc": [
+      [
+        1708654573,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1972,
+          1957,
+          1958,
+          1941,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1938,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ],
+      [
+        1445504540,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1938,
+          1956,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ]
+    ]
+  },
+  "5140042": {
+    "npcFunc": [
+      [
+        1510487676,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1973,
+          1960,
+          1961,
+          1941,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1938,
+          1956,
+          1962,
+          1965,
+          1968
+        ]
+      ],
+      [
+        1570243845,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1938,
+          1956,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ]
+    ]
+  },
+  "5140043": {
+    "npcFunc": [
+      [
+        1816456438,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1974,
+          1963,
+          1964,
+          1941,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1938,
+          1956,
+          1959,
+          1965,
+          1968
+        ]
+      ],
+      [
+        1545177160,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1938,
+          1956,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ]
+    ]
+  },
+  "5140044": {
+    "npcFunc": [
+      [
+        1960028445,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1975,
+          1966,
+          1967,
+          1941,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1938,
+          1956,
+          1959,
+          1962,
+          1968
+        ]
+      ],
+      [
+        1645104859,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1938,
+          1956,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ]
+    ]
+  },
+  "5140045": {
+    "npcFunc": [
+      [
+        1820446376,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1976,
+          1969,
+          1970,
+          1941,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1938,
+          1956,
+          1959,
+          1962,
+          1965
+        ]
+      ],
+      [
+        1693482821,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1938,
+          1956,
+          1959,
+          1962,
+          1965,
+          1968
+        ]
+      ]
+    ]
+  },
+  "5150017": {
+    "npcFunc": [
+      [
+        1734991230,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80275
+        ]
+      ]
+    ]
+  },
+  "5200019": {
+    "npcFunc": [
+      [
+        1811847281,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1896
+        ]
+      ],
+      [
+        1557401104,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1894
+        ]
+      ]
+    ]
+  },
+  "5200021": {
+    "npcFunc": [
+      [
+        1591706731,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1899
+        ]
+      ],
+      [
+        1215387688,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1898
+        ]
+      ]
+    ]
+  },
+  "5200030": {
+    "npcFunc": [
+      [
+        1601371417,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1999
+        ]
+      ]
+    ]
+  },
+  "5200046": {
+    "npcFunc": [
+      [
+        1820377604,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1247
+        ]
+      ],
+      [
+        1512014937,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1243
+        ]
+      ]
+    ]
+  },
+  "20140601": {},
+  "20140701": {},
+  "20140702": {},
+  "20140703": {},
+  "20140704": {},
+  "20140705": {},
+  "20140706": {},
+  "20140707": {},
+  "20140708": {},
+  "20140801": {},
+  "20140901": {},
+  "1102010007": {
+    "npcFunc": [
+      [
+        2119756830,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001725
+        ]
+      ]
+    ]
+  },
+  "1102010011": {},
+  "5000510": {
+    "npcFunc": [
+      [
+        1821951115,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1841
+        ]
+      ],
+      [
+        1888862556,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1849
+        ]
+      ]
+    ]
+  },
+  "5140048": {
+    "npcFunc": [
+      [
+        1292833315,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          2000
+        ]
+      ]
+    ]
+  },
+  "400013": {
+    "npcFunc": [
+      [
+        1258823124,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1001
+        ]
+      ],
+      [
+        1859876512,
+        "$UI_Icon_FunMenu_CashShop.png",
+        {},
+        [
+          1920
+        ]
+      ]
+    ]
+  },
+  "1": {
+    "npcFunc": [
+      [
+        1158989028,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1001
+        ]
+      ],
+      [
+        1094221789,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1101
+        ]
+      ]
+    ]
+  },
+  "2": {
+    "npcFunc": [
+      [
+        1397281848,
+        "$UI_icon_research.png",
+        {},
+        [
+          1011
+        ]
+      ]
+    ]
+  },
+  "3": {
+    "npcFunc": [
+      [
+        1493319068,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1009
+        ]
+      ]
+    ]
+  },
+  "4": {
+    "npcFunc": [
+      [
+        1256130521,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1010
+        ]
+      ]
+    ]
+  },
+  "201008": {
+    "npcFunc": [
+      [
+        1575095511,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "201011": {
+    "npcFunc": [
+      [
+        1264618754,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "201012": {
+    "npcFunc": [
+      [
+        1788276255,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "201105": {
+    "npcFunc": [
+      [
+        1134152985,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          20110601
+        ]
+      ]
+    ]
+  },
+  "201106": {
+    "npcFunc": [
+      [
+        1867670594,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          20110601
+        ]
+      ]
+    ]
+  },
+  "201107": {},
+  "201309": {
+    "npcFunc": [
+      [
+        1223126960,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201316
+        ]
+      ]
+    ]
+  },
+  "201317": {
+    "npcFunc": [
+      [
+        1625948346,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201317
+        ]
+      ]
+    ]
+  },
+  "201318": {
+    "npcFunc": [
+      [
+        1274607007,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201318
+        ]
+      ]
+    ]
+  },
+  "201319": {
+    "npcFunc": [
+      [
+        1419933228,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201319
+        ]
+      ]
+    ]
+  },
+  "201323": {
+    "npcFunc": [
+      [
+        1801794187,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201321
+        ]
+      ]
+    ]
+  },
+  "201324": {
+    "npcFunc": [
+      [
+        1441838883,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201322
+        ]
+      ]
+    ]
+  },
+  "201325": {
+    "npcFunc": [
+      [
+        1923360418,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201325,
+          201324
+        ]
+      ]
+    ]
+  },
+  "201326": {
+    "npcFunc": [
+      [
+        1150755684,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201326
+        ]
+      ]
+    ]
+  },
+  "201327": {
+    "npcFunc": [
+      [
+        1896712083,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201327
+        ]
+      ]
+    ]
+  },
+  "201328": {
+    "npcFunc": [
+      [
+        1634487183,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201328
+        ]
+      ]
+    ]
+  },
+  "201329": {
+    "npcFunc": [
+      [
+        1963968270,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201329
+        ]
+      ]
+    ]
+  },
+  "201330": {},
+  "201331": {
+    "npcFunc": [
+      [
+        1605157711,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700109
+        ],
+        [
+          70001544
+        ]
+      ],
+      [
+        1695200784,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001545
+        ]
+      ],
+      [
+        1645943977,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700110
+        ],
+        [
+          70001546
+        ]
+      ]
+    ]
+  },
+  "201333": {
+    "npcFunc": [
+      [
+        1556705762,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201333
+        ]
+      ]
+    ]
+  },
+  "201334": {
+    "npcFunc": [
+      [
+        1640374331,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201334
+        ]
+      ],
+      [
+        1811014070,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          201342
+        ]
+      ]
+    ]
+  },
+  "201335": {
+    "npcFunc": [
+      [
+        2039818795,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201335
+        ]
+      ],
+      [
+        1282293839,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201344
+        ]
+      ]
+    ]
+  },
+  "201336": {
+    "npcFunc": [
+      [
+        1113497708,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201336
+        ]
+      ]
+    ]
+  },
+  "201337": {
+    "npcFunc": [
+      [
+        1906698182,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201337
+        ]
+      ]
+    ]
+  },
+  "201338": {
+    "npcFunc": [
+      [
+        1286042120,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201338
+        ]
+      ]
+    ]
+  },
+  "201339": {
+    "npcFunc": [
+      [
+        1824589535,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001703
+        ]
+      ],
+      [
+        2113892437,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001707
+        ]
+      ]
+    ]
+  },
+  "201340": {
+    "npcFunc": [
+      [
+        2027651961,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201340
+        ]
+      ]
+    ]
+  },
+  "201341": {
+    "npcFunc": [
+      [
+        1450188296,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201341
+        ]
+      ]
+    ]
+  },
+  "201343": {
+    "npcFunc": [
+      [
+        2092434822,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201330
+        ]
+      ]
+    ]
+  },
+  "201344": {
+    "npcFunc": [
+      [
+        1520211205,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          201331
+        ]
+      ]
+    ]
+  },
+  "201350": {
+    "npcFunc": [
+      [
+        1371800615,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001744
+        ]
+      ],
+      [
+        1900211571,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          701
+        ],
+        [
+          70001745
+        ]
+      ],
+      [
+        1272541861,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          701
+        ],
+        [
+          70001746
+        ]
+      ]
+    ]
+  },
+  "201351": {
+    "npcFunc": [
+      [
+        1131409747,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001727
+        ]
+      ]
+    ]
+  },
+  "201352": {
+    "npcFunc": [
+      [
+        1518562378,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001713
+        ]
+      ],
+      [
+        1924325047,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001714
+        ]
+      ],
+      [
+        2085317967,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001715
+        ]
+      ],
+      [
+        1826012273,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001717
+        ]
+      ],
+      [
+        1928491885,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001718
+        ]
+      ],
+      [
+        1374518695,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001719
+        ]
+      ],
+      [
+        1363285765,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001720
+        ]
+      ]
+    ]
+  },
+  "201353": {
+    "npcFunc": [
+      [
+        1753313178,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001733
+        ]
+      ]
+    ]
+  },
+  "201354": {
+    "npcFunc": [
+      [
+        1659858922,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001711
+        ]
+      ]
+    ]
+  },
+  "201355": {
+    "npcFunc": [
+      [
+        2090025715,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001726
+        ]
+      ]
+    ]
+  },
+  "201356": {
+    "npcFunc": [
+      [
+        1134921151,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001732
+        ]
+      ]
+    ]
+  },
+  "201357": {
+    "npcFunc": [
+      [
+        1411058445,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001736
+        ]
+      ]
+    ]
+  },
+  "201358": {
+    "npcFunc": [
+      [
+        1466150345,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001737
+        ]
+      ]
+    ]
+  },
+  "201359": {
+    "npcFunc": [
+      [
+        1109958755,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001738
+        ]
+      ]
+    ]
+  },
+  "201360": {
+    "npcFunc": [
+      [
+        1828717399,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001739
+        ]
+      ]
+    ]
+  },
+  "201361": {
+    "npcFunc": [
+      [
+        1427560207,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001740
+        ]
+      ]
+    ]
+  },
+  "201362": {
+    "npcFunc": [
+      [
+        1486500463,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001741
+        ]
+      ]
+    ]
+  },
+  "201363": {
+    "npcFunc": [
+      [
+        1396465869,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001742
+        ]
+      ]
+    ]
+  },
+  "201364": {
+    "npcFunc": [
+      [
+        2114696054,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001743
+        ]
+      ]
+    ]
+  },
+  "201372": {
+    "npcFunc": [
+      [
+        1157119983,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002244
+        ]
+      ]
+    ]
+  },
+  "201375": {
+    "npcFunc": [
+      [
+        1843603314,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700113
+        ],
+        [
+          70002263
+        ]
+      ],
+      [
+        1540172973,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700114
+        ],
+        [
+          70002265
+        ]
+      ]
+    ]
+  },
+  "201376": {
+    "npcFunc": [
+      [
+        1448896073,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002258
+        ]
+      ]
+    ]
+  },
+  "201377": {
+    "npcFunc": [
+      [
+        2019444337,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002271
+        ]
+      ]
+    ]
+  },
+  "201381": {
+    "npcFunc": [
+      [
+        1517866898,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002253
+        ]
+      ]
+    ]
+  },
+  "201383": {
+    "npcFunc": [
+      [
+        1785170050,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700127
+        ],
+        [
+          70002527
+        ]
+      ]
+    ]
+  },
+  "201404": {},
+  "201405": {
+    "npcFunc": [
+      [
+        1718339683,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002085
+        ]
+      ]
+    ]
+  },
+  "201406": {
+    "npcFunc": [
+      [
+        1561699323,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002086
+        ]
+      ]
+    ]
+  },
+  "201407": {
+    "npcFunc": [
+      [
+        1091073226,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002087
+        ]
+      ]
+    ]
+  },
+  "201408": {
+    "npcFunc": [
+      [
+        1131355477,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002088
+        ]
+      ]
+    ]
+  },
+  "300220": {
+    "npcFunc": [
+      [
+        2080406816,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001587
+        ]
+      ]
+    ]
+  },
+  "300223": {
+    "npcFunc": [
+      [
+        1447178886,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001558
+        ]
+      ]
+    ]
+  },
+  "300224": {
+    "npcFunc": [
+      [
+        1997334650,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001560
+        ]
+      ]
+    ]
+  },
+  "300225": {
+    "npcFunc": [
+      [
+        1942251832,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001562
+        ]
+      ]
+    ]
+  },
+  "300226": {
+    "npcFunc": [
+      [
+        1110221265,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001564
+        ]
+      ]
+    ]
+  },
+  "300227": {
+    "npcFunc": [
+      [
+        1451502571,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001566
+        ]
+      ]
+    ]
+  },
+  "300228": {
+    "npcFunc": [
+      [
+        1780981914,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001568
+        ]
+      ]
+    ]
+  },
+  "300229": {
+    "npcFunc": [
+      [
+        1717722940,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001570
+        ]
+      ]
+    ]
+  },
+  "300230": {
+    "npcFunc": [
+      [
+        1825615851,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001572
+        ]
+      ]
+    ]
+  },
+  "300231": {
+    "npcFunc": [
+      [
+        1889294065,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001574
+        ]
+      ]
+    ]
+  },
+  "300232": {
+    "npcFunc": [
+      [
+        1474070952,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001576
+        ]
+      ]
+    ]
+  },
+  "300233": {
+    "npcFunc": [
+      [
+        2038752161,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001578
+        ]
+      ]
+    ]
+  },
+  "300234": {
+    "npcFunc": [
+      [
+        1883385080,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001580
+        ]
+      ]
+    ]
+  },
+  "300235": {
+    "npcFunc": [
+      [
+        1534948214,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001582
+        ]
+      ]
+    ]
+  },
+  "300236": {
+    "npcFunc": [
+      [
+        1295508267,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001584
+        ]
+      ]
+    ]
+  },
+  "300237": {
+    "npcFunc": [
+      [
+        2095466245,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001586
+        ]
+      ]
+    ]
+  },
+  "300238": {
+    "npcFunc": [
+      [
+        1408722959,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001589
+        ]
+      ]
+    ]
+  },
+  "300239": {
+    "npcFunc": [
+      [
+        1925148498,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001591
+        ]
+      ]
+    ]
+  },
+  "300240": {
+    "npcFunc": [
+      [
+        1229486883,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001593
+        ]
+      ]
+    ]
+  },
+  "300241": {
+    "npcFunc": [
+      [
+        1759148021,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001599
+        ]
+      ]
+    ]
+  },
+  "300242": {
+    "npcFunc": [
+      [
+        1440982705,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001620
+        ]
+      ]
+    ]
+  },
+  "300243": {
+    "npcFunc": [
+      [
+        1215208834,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001622
+        ]
+      ]
+    ]
+  },
+  "300245": {
+    "npcFunc": [
+      [
+        1229496009,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001623
+        ]
+      ]
+    ]
+  },
+  "300247": {
+    "npcFunc": [
+      [
+        1615619329,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700105
+        ],
+        [
+          10190003,
+          54836563,
+          10180001,
+          10281002
+        ]
+      ],
+      [
+        1894253758,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700106
+        ],
+        [
+          70001630
+        ]
+      ]
+    ]
+  },
+  "300248": {
+    "npcFunc": [
+      [
+        1951329022,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700105
+        ],
+        [
+          10190004,
+          54836636,
+          10281002
+        ]
+      ],
+      [
+        1361522555,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700106
+        ],
+        [
+          70001631
+        ]
+      ],
+      [
+        1125593431,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001634
+        ]
+      ]
+    ]
+  },
+  "300249": {
+    "npcFunc": [
+      [
+        1962560392,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700105
+        ],
+        [
+          10190005,
+          54836692,
+          10180002,
+          10281002
+        ]
+      ],
+      [
+        1865772240,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700106
+        ],
+        [
+          70001632
+        ]
+      ]
+    ]
+  },
+  "300250": {
+    "npcFunc": [
+      [
+        1533578190,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700105
+        ],
+        [
+          10190006,
+          54836729,
+          10281002
+        ]
+      ],
+      [
+        2070218737,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          240700106
+        ],
+        [
+          70001633
+        ]
+      ],
+      [
+        2131337026,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70001635
+        ]
+      ]
+    ]
+  },
+  "300251": {
+    "npcFunc": [
+      [
+        1576710240,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002065
+        ]
+      ]
+    ]
+  },
+  "300252": {
+    "npcFunc": [
+      [
+        1559183524,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70002084
+        ]
+      ]
+    ]
+  },
+  "201001": {
+    "npcFunc": [
+      [
+        1183137686,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "201004": {
+    "npcFunc": [
+      [
+        1643573818,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "5200009": {
+    "npcFunc": [
+      [
+        1647402710,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1852
+        ]
+      ]
+    ]
+  },
+  "5200008": {
+    "npcFunc": [
+      [
+        1885972026,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1851
+        ]
+      ]
+    ]
+  },
+  "880801": {
+    "npcFunc": [
+      [
+        1294006009,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1435
+        ]
+      ]
+    ]
+  },
+  "880610": {
+    "npcFunc": [
+      [
+        1206914241,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1426
+        ],
+        211
+      ]
+    ]
+  },
+  "990000": {
+    "npcFunc": [
+      [
+        1993540690,
+        "$UI_HomeToplogo_Icon_Mall.png",
+        [
+          6132
+        ],
+        [
+          1415
+        ]
+      ],
+      [
+        1404075508,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          6132
+        ],
+        [
+          1414
+        ]
+      ],
+      [
+        1902049126,
+        "$UI_Icon_InteractionTitle_Survey.png",
+        [
+          6132
+        ],
+        [
+          1417
+        ]
+      ],
+      [
+        1646685422,
+        "$UI_HomeToplogo_Icon_Mall.png",
+        {},
+        [
+          1427
+        ]
+      ]
+    ]
+  },
+  "500023": {},
+  "500024": {},
+  "890084": {
+    "npcFunc": [
+      [
+        1954793730,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000255
+        ]
+      ]
+    ]
+  },
+  "890082": {
+    "npcFunc": [
+      [
+        1975406896,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000254
+        ]
+      ]
+    ]
+  },
+  "890058": {
+    "npcFunc": [
+      [
+        1208849083,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1473
+        ]
+      ]
+    ]
+  },
+  "890057": {
+    "npcFunc": [
+      [
+        1688051986,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1472
+        ]
+      ]
+    ]
+  },
+  "890056": {
+    "npcFunc": [
+      [
+        1801905543,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1471
+        ]
+      ]
+    ]
+  },
+  "500033": {
+    "npcFunc": [
+      [
+        1927809205,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          2606001
+        ],
+        [
+          80146
+        ]
+      ]
+    ]
+  },
+  "500034": {
+    "npcFunc": [
+      [
+        1864906643,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          2606004
+        ],
+        [
+          80147
+        ]
+      ]
+    ]
+  },
+  "500035": {},
+  "500036": {},
+  "500037": {},
+  "890055": {
+    "npcFunc": [
+      [
+        2045011244,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1470
+        ]
+      ]
+    ]
+  },
+  "890054": {
+    "npcFunc": [
+      [
+        2140190639,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1469
+        ]
+      ]
+    ]
+  },
+  "890053": {
+    "npcFunc": [
+      [
+        2145093762,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1468
+        ]
+      ]
+    ]
+  },
+  "500047": {},
+  "890052": {
+    "npcFunc": [
+      [
+        1528651106,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1467
+        ]
+      ]
+    ]
+  },
+  "890051": {
+    "npcFunc": [
+      [
+        1839356189,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          1466
+        ]
+      ]
+    ]
+  },
+  "890047": {
+    "npcFunc": [
+      [
+        1651904430,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000200,
+          70000292,
+          70000293
+        ]
+      ]
+    ]
+  },
+  "890046": {
+    "npcFunc": [
+      [
+        1775815738,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000200,
+          70000288,
+          70000289
+        ]
+      ]
+    ]
+  },
+  "600011": {
+    "npcFunc": [
+      [
+        1583831377,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80213
+        ]
+      ]
+    ]
+  },
+  "600012": {
+    "npcFunc": [
+      [
+        1956198932,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80214
+        ]
+      ]
+    ]
+  },
+  "600013": {
+    "npcFunc": [
+      [
+        1801071408,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "600014": {
+    "npcFunc": [
+      [
+        1925036707,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "890045": {
+    "npcFunc": [
+      [
+        1412170748,
+        "$UI_Icon_InteractionTitle_General.png",
+        {},
+        [
+          70000247
+        ]
+      ]
+    ]
+  },
+  "500001": {
+    "npcFunc": [
+      [
+        1700246133,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80059
+        ]
+      ]
+    ]
+  },
+  "400014": {
+    "npcFunc": [
+      [
+        1334735127,
+        "$UI_Icon_InteractionTitle_Therapy.png",
+        {},
+        [
+          80040
+        ]
+      ]
+    ]
+  },
+  "400608": {
+    "npcFunc": [
+      [
+        1505640048,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80233
+        ]
+      ]
+    ]
+  },
+  "400592": {
+    "npcFunc": [
+      [
+        1895367708,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1434
+        ]
+      ]
+    ]
+  },
+  "400591": {
+    "npcFunc": [
+      [
+        2015676234,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1433
+        ]
+      ]
+    ]
+  },
+  "400589": {
+    "npcFunc": [
+      [
+        1860933907,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1432
+        ]
+      ]
+    ]
+  },
+  "400578": {
+    "npcFunc": [
+      [
+        1109394898,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80241
+        ]
+      ]
+    ]
+  },
+  "400577": {
+    "npcFunc": [
+      [
+        1533435975,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80250
+        ]
+      ]
+    ]
+  },
+  "400576": {
+    "npcFunc": [
+      [
+        1503897322,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80248
+        ]
+      ]
+    ]
+  },
+  "400575": {
+    "npcFunc": [
+      [
+        1333633052,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80251
+        ]
+      ]
+    ]
+  },
+  "400564": {
+    "npcFunc": [
+      [
+        1611700576,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80254
+        ]
+      ]
+    ]
+  },
+  "400015": {
+    "npcFunc": [
+      [
+        1350254428,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80038
+        ]
+      ],
+      [
+        1655570263,
+        "$UI_icon_research.png",
+        {},
+        [
+          1011
+        ]
+      ],
+      [
+        1367724174,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80055
+        ]
+      ],
+      [
+        1772102549,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80056
+        ]
+      ]
+    ]
+  },
+  "203007": {
+    "npcFunc": [
+      [
+        2092682466,
+        "$UI_Icon_MarkPoint_Cave.png",
+        {},
+        [
+          1978
+        ]
+      ]
+    ]
+  },
+  "203021": {
+    "npcFunc": [
+      [
+        1656129802,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80278
+        ]
+      ]
+    ]
+  },
+  "203020": {
+    "npcFunc": [
+      [
+        1541023615,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80277
+        ]
+      ]
+    ]
+  },
+  "203019": {
+    "npcFunc": [
+      [
+        1098792806,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1948
+        ]
+      ]
+    ]
+  },
+  "201005": {
+    "npcFunc": [
+      [
+        1834903174,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "201006": {
+    "npcFunc": [
+      [
+        1999663746,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "201103": {
+    "npcFunc": [
+      [
+        1827160036,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          20110301
+        ]
+      ]
+    ]
+  },
+  "201104": {
+    "npcFunc": [
+      [
+        1175251121,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          20110401
+        ]
+      ]
+    ]
+  },
+  "201101": {
+    "npcFunc": [
+      [
+        1657032550,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          20110101
+        ]
+      ]
+    ]
+  },
+  "10": {
+    "npcFunc": [
+      [
+        1721704007,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          101003
+        ]
+      ]
+    ]
+  },
+  "600005": {
+    "npcFunc": [
+      [
+        1091145254,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80211
+        ]
+      ]
+    ]
+  },
+  "600015": {
+    "npcFunc": [
+      [
+        1341922817,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "600016": {
+    "npcFunc": [
+      [
+        1767681069,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "600017": {
+    "npcFunc": [
+      [
+        2145338360,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "600000": {},
+  "600018": {
+    "npcFunc": [
+      [
+        1145906529,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "600019": {
+    "npcFunc": [
+      [
+        2076199780,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "600020": {
+    "npcFunc": [
+      [
+        2031665367,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80126
+        ]
+      ]
+    ]
+  },
+  "700001": {
+    "npcFunc": [
+      [
+        1437674389,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000101
+        ]
+      ],
+      [
+        1220144401,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000106
+        ]
+      ]
+    ]
+  },
+  "700002": {
+    "npcFunc": [
+      [
+        1464670808,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000102,
+          70000108
+        ]
+      ]
+    ]
+  },
+  "700003": {
+    "npcFunc": [
+      [
+        2144936912,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000103
+        ]
+      ]
+    ]
+  },
+  "700004": {
+    "npcFunc": [
+      [
+        1468156483,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000109
+        ]
+      ]
+    ]
+  },
+  "700005": {
+    "npcFunc": [
+      [
+        1414316367,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000107
+        ]
+      ]
+    ]
+  },
+  "700006": {
+    "npcFunc": [
+      [
+        1140227854,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000601
+        ]
+      ]
+    ]
+  },
+  "700007": {
+    "npcFunc": [
+      [
+        1862220842,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          70000112
+        ]
+      ]
+    ]
+  },
+  "880145": {
+    "npcFunc": [
+      [
+        2113605172,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1111
+        ]
+      ],
+      [
+        2145093956,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90003
+        ]
+      ]
+    ]
+  },
+  "880156": {
+    "npcFunc": [
+      [
+        1433217559,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1121
+        ]
+      ]
+    ]
+  },
+  "880157": {
+    "npcFunc": [
+      [
+        1114413605,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000001
+        ],
+        [
+          90020
+        ]
+      ],
+      [
+        1623502464,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000002
+        ],
+        [
+          90021
+        ]
+      ],
+      [
+        2106190759,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000003
+        ],
+        [
+          90022
+        ]
+      ],
+      [
+        1650102398,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000005
+        ],
+        [
+          90025
+        ]
+      ],
+      [
+        2106205133,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000008
+        ],
+        [
+          90028
+        ]
+      ],
+      [
+        1370472756,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000005
+        ],
+        [
+          1122
+        ]
+      ]
+    ]
+  },
+  "880158": {
+    "npcFunc": [
+      [
+        1186659622,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        {}
+      ]
+    ]
+  },
+  "880220": {
+    "npcFunc": [
+      [
+        1590238138,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1195
+        ]
+      ]
+    ]
+  },
+  "880221": {
+    "npcFunc": [
+      [
+        1515762011,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1196
+        ]
+      ]
+    ]
+  },
+  "880222": {
+    "npcFunc": [
+      [
+        1563541560,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1193
+        ]
+      ]
+    ]
+  },
+  "880232": {
+    "npcFunc": [
+      [
+        2001874802,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1189
+        ]
+      ]
+    ]
+  },
+  "400102": {
+    "npcFunc": [
+      [
+        1296211538,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          906
+        ],
+        [
+          1165
+        ]
+      ]
+    ]
+  },
+  "400103": {},
+  "880243": {
+    "npcFunc": [
+      [
+        1313919382,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1192
+        ]
+      ]
+    ]
+  },
+  "400112": {
+    "npcFunc": [
+      [
+        2032184184,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80104
+        ]
+      ],
+      [
+        2001070951,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80105
+        ]
+      ]
+    ]
+  },
+  "400113": {
+    "npcFunc": [
+      [
+        1239905945,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80106
+        ]
+      ]
+    ]
+  },
+  "880244": {
+    "npcFunc": [
+      [
+        1383615852,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1197
+        ]
+      ]
+    ]
+  },
+  "880247": {
+    "npcFunc": [
+      [
+        1584473263,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000008
+        ],
+        [
+          1198
+        ]
+      ],
+      [
+        2056127441,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        [
+          8000009
+        ],
+        [
+          1199
+        ]
+      ],
+      [
+        1391633654,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        [
+          8000009
+        ],
+        [
+          1200
+        ]
+      ]
+    ]
+  },
+  "880249": {
+    "npcFunc": [
+      [
+        1876506869,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1201
+        ]
+      ]
+    ]
+  },
+  "880254": {
+    "npcFunc": [
+      [
+        2065174539,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          90027
+        ]
+      ]
+    ]
+  },
+  "880259": {
+    "npcFunc": [
+      [
+        1486683802,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1204
+        ]
+      ],
+      [
+        1557671205,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1205
+        ]
+      ]
+    ]
+  },
+  "880260": {
+    "npcFunc": [
+      [
+        1415046052,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1205
+        ]
+      ]
+    ]
+  },
+  "880261": {
+    "npcFunc": [
+      [
+        1972119164,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1206
+        ]
+      ],
+      [
+        1674803468,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1207
+        ]
+      ]
+    ]
+  },
+  "880262": {
+    "npcFunc": [
+      [
+        1452480735,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1207
+        ]
+      ]
+    ]
+  },
+  "880263": {
+    "npcFunc": [
+      [
+        1177441229,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1208
+        ]
+      ],
+      [
+        1614675698,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1209
+        ]
+      ]
+    ]
+  },
+  "880264": {
+    "npcFunc": [
+      [
+        1561256894,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1209
+        ]
+      ]
+    ]
+  },
+  "880283": {
+    "npcFunc": [
+      [
+        2053352999,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1244
+        ]
+      ]
+    ]
+  },
+  "880284": {
+    "npcFunc": [
+      [
+        1154268103,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1245
+        ]
+      ]
+    ]
+  },
+  "880285": {
+    "npcFunc": [
+      [
+        2002320813,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1246
+        ]
+      ]
+    ]
+  },
+  "880286": {
+    "npcFunc": [
+      [
+        1850503159,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1247
+        ]
+      ],
+      [
+        1515159505,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80155
+        ]
+      ],
+      [
+        1254103233,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1992
+        ]
+      ]
+    ]
+  },
+  "880287": {
+    "npcFunc": [
+      [
+        2016932764,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1249
+        ]
+      ]
+    ]
+  },
+  "880288": {
+    "npcFunc": [
+      [
+        1180621028,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1250
+        ]
+      ],
+      [
+        1212141029,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          80155
+        ]
+      ]
+    ]
+  },
+  "880291": {
+    "npcFunc": [
+      [
+        1645173207,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1251
+        ]
+      ]
+    ]
+  },
+  "880292": {},
+  "880293": {},
+  "880294": {},
+  "880299": {
+    "npcFunc": [
+      [
+        1388980050,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1260
+        ]
+      ]
+    ]
+  },
+  "880300": {
+    "npcFunc": [
+      [
+        1619034829,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1246
+        ]
+      ],
+      [
+        1316087658,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1247
+        ]
+      ],
+      [
+        1172836044,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1253
+        ]
+      ],
+      [
+        1803879243,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1254
+        ]
+      ]
+    ]
+  },
+  "880301": {
+    "npcFunc": [
+      [
+        1999259148,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1261
+        ]
+      ]
+    ]
+  },
+  "880302": {
+    "npcFunc": [
+      [
+        1564850044,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1262
+        ]
+      ]
+    ]
+  },
+  "880303": {
+    "npcFunc": [
+      [
+        1803724922,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1263
+        ]
+      ]
+    ]
+  },
+  "880304": {
+    "npcFunc": [
+      [
+        1787916312,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1264
+        ]
+      ]
+    ]
+  },
+  "880305": {
+    "npcFunc": [
+      [
+        2122988275,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1265
+        ]
+      ]
+    ]
+  },
+  "880306": {
+    "npcFunc": [
+      [
+        1696864450,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1266
+        ]
+      ]
+    ]
+  },
+  "880307": {
+    "npcFunc": [
+      [
+        2071499064,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1267
+        ]
+      ]
+    ]
+  },
+  "880308": {
+    "npcFunc": [
+      [
+        1389508449,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1268
+        ]
+      ]
+    ]
+  },
+  "880309": {
+    "npcFunc": [
+      [
+        2122778854,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1269
+        ]
+      ]
+    ]
+  },
+  "880310": {
+    "npcFunc": [
+      [
+        1374997130,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1270
+        ]
+      ]
+    ]
+  },
+  "880311": {
+    "npcFunc": [
+      [
+        1243630028,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1271
+        ]
+      ]
+    ]
+  },
+  "880312": {
+    "npcFunc": [
+      [
+        2129371853,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1272
+        ]
+      ]
+    ]
+  },
+  "880313": {
+    "npcFunc": [
+      [
+        2052564141,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1273
+        ]
+      ]
+    ]
+  },
+  "880314": {
+    "npcFunc": [
+      [
+        1886993143,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1274
+        ]
+      ]
+    ]
+  },
+  "880315": {
+    "npcFunc": [
+      [
+        1133070284,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1275
+        ]
+      ]
+    ]
+  },
+  "880316": {
+    "npcFunc": [
+      [
+        1290905254,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1276
+        ]
+      ]
+    ]
+  },
+  "880317": {
+    "npcFunc": [
+      [
+        1223983968,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1277
+        ]
+      ]
+    ]
+  },
+  "880318": {
+    "npcFunc": [
+      [
+        2126161000,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1278
+        ]
+      ]
+    ]
+  },
+  "880319": {
+    "npcFunc": [
+      [
+        1926161851,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1279
+        ]
+      ]
+    ]
+  },
+  "880320": {
+    "npcFunc": [
+      [
+        1358905524,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1280
+        ]
+      ]
+    ]
+  },
+  "880326": {
+    "npcFunc": [
+      [
+        1652109505,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1281
+        ]
+      ]
+    ]
+  },
+  "880327": {
+    "npcFunc": [
+      [
+        1170542437,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1282
+        ]
+      ]
+    ]
+  },
+  "880328": {
+    "npcFunc": [
+      [
+        1751141453,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1283
+        ]
+      ]
+    ]
+  },
+  "880329": {
+    "npcFunc": [
+      [
+        2127803301,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1284
+        ]
+      ]
+    ]
+  },
+  "880330": {
+    "npcFunc": [
+      [
+        1140100698,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1285
+        ]
+      ]
+    ]
+  },
+  "880331": {
+    "npcFunc": [
+      [
+        1751382201,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1286
+        ]
+      ]
+    ]
+  },
+  "880332": {
+    "npcFunc": [
+      [
+        1278465148,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1287
+        ]
+      ]
+    ]
+  },
+  "880333": {
+    "npcFunc": [
+      [
+        2145121451,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1288
+        ]
+      ]
+    ]
+  },
+  "880336": {
+    "npcFunc": [
+      [
+        1108648106,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  },
+  "880605": {
+    "npcFunc": [
+      [
+        1761149510,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1421
+        ],
+        211
+      ]
+    ]
+  },
+  "880606": {
+    "npcFunc": [
+      [
+        1816397600,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1422
+        ],
+        211
+      ]
+    ]
+  },
+  "880607": {
+    "npcFunc": [
+      [
+        1391454147,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1423
+        ],
+        211
+      ]
+    ]
+  },
+  "880608": {
+    "npcFunc": [
+      [
+        2067754630,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1424
+        ],
+        211
+      ]
+    ]
+  },
+  "880609": {
+    "npcFunc": [
+      [
+        1582239627,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1425
+        ],
+        211
+      ]
+    ]
+  },
+  "5030002": {
+    "npcFunc": [
+      [
+        1940929809,
+        "$UI_Icon_InteractionTitle_General.png",
+        [
+          1221000
+        ],
+        [
+          1997,
+          2007
+        ]
+      ]
+    ]
+  },
+  "880611": {
+    "npcFunc": [
+      [
+        1528149129,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1111
+        ],
+        211
+      ]
+    ]
+  },
+  "880701": {
+    "npcFunc": [
+      [
+        1363637820,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1428
+        ],
+        374
+      ],
+      [
+        1519312723,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1429
+        ],
+        374
+      ]
+    ]
+  },
+  "880710": {
+    "npcFunc": [
+      [
+        1253075208,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1430
+        ],
+        374
+      ]
+    ]
+  },
+  "880711": {
+    "npcFunc": [
+      [
+        1890678010,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1430
+        ],
+        374
+      ]
+    ]
+  },
+  "880712": {
+    "npcFunc": [
+      [
+        1274802856,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1508,
+          1555
+        ],
+        419
+      ]
+    ]
+  },
+  "5030004": {
+    "npcFunc": [
+      [
+        1081134548,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          2056
+        ]
+      ],
+      [
+        1081994092,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          2057
+        ]
+      ]
+    ]
+  },
+  "880802": {
+    "npcFunc": [
+      [
+        1326807914,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1436
+        ]
+      ]
+    ]
+  },
+  "880803": {
+    "npcFunc": [
+      [
+        1192753313,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1437
+        ]
+      ]
+    ]
+  },
+  "880804": {
+    "npcFunc": [
+      [
+        1354509703,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1438
+        ]
+      ]
+    ]
+  },
+  "880805": {
+    "npcFunc": [
+      [
+        1453456247,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1439
+        ]
+      ]
+    ]
+  },
+  "880806": {
+    "npcFunc": [
+      [
+        1597118115,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1440
+        ]
+      ]
+    ]
+  },
+  "880807": {
+    "npcFunc": [
+      [
+        1326737611,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1441
+        ]
+      ]
+    ]
+  },
+  "880808": {
+    "npcFunc": [
+      [
+        1117615649,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1442
+        ]
+      ]
+    ]
+  },
+  "880809": {
+    "npcFunc": [
+      [
+        1129289475,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1443
+        ]
+      ]
+    ]
+  },
+  "880810": {
+    "npcFunc": [
+      [
+        2103169742,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1444
+        ]
+      ]
+    ]
+  },
+  "880811": {
+    "npcFunc": [
+      [
+        2096656992,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1445
+        ]
+      ]
+    ]
+  },
+  "880812": {
+    "npcFunc": [
+      [
+        1469614582,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1446
+        ]
+      ]
+    ]
+  },
+  "880813": {
+    "npcFunc": [
+      [
+        1383132602,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1447
+        ]
+      ]
+    ]
+  },
+  "880814": {
+    "npcFunc": [
+      [
+        1159623001,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1448
+        ]
+      ]
+    ]
+  },
+  "880815": {
+    "npcFunc": [
+      [
+        1900726363,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1449
+        ]
+      ]
+    ]
+  },
+  "880816": {
+    "npcFunc": [
+      [
+        1612750036,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1450
+        ]
+      ]
+    ]
+  },
+  "880817": {
+    "npcFunc": [
+      [
+        2054436448,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1451
+        ]
+      ]
+    ]
+  },
+  "880818": {
+    "npcFunc": [
+      [
+        1262315132,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1452
+        ]
+      ]
+    ]
+  },
+  "880819": {
+    "npcFunc": [
+      [
+        1932841660,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1453
+        ]
+      ]
+    ]
+  },
+  "880820": {
+    "npcFunc": [
+      [
+        1433682367,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1454
+        ]
+      ]
+    ]
+  },
+  "880821": {
+    "npcFunc": [
+      [
+        1237939281,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1568
+        ]
+      ],
+      [
+        2140867467,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1569
+        ]
+      ]
+    ]
+  },
+  "880822": {
+    "npcFunc": [
+      {
+        "3": {},
+        "4": [
+          1456
+        ],
+        "2": "$UI_Icon_InteractionTitle_Chat.png"
+      }
+    ]
+  },
+  "880823": {
+    "npcFunc": [
+      {
+        "3": {},
+        "4": [
+          1457
+        ],
+        "2": "$UI_Icon_InteractionTitle_Chat.png"
+      }
+    ]
+  },
+  "880824": {
+    "npcFunc": [
+      {
+        "3": {},
+        "4": [
+          1458
+        ],
+        "2": "$UI_Icon_InteractionTitle_Chat.png"
+      }
+    ]
+  },
+  "880825": {
+    "npcFunc": [
+      {
+        "3": {},
+        "4": [
+          1459
+        ],
+        "2": "$UI_Icon_InteractionTitle_Chat.png"
+      }
+    ]
+  },
+  "880826": {
+    "npcFunc": [
+      [
+        1401103829,
+        "$UI_Icon_InteractionTitle_Crack.png",
+        {},
+        [
+          1460
+        ]
+      ]
+    ]
+  },
+  "880827": {
+    "npcFunc": [
+      [
+        1962151554,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1461
+        ]
+      ]
+    ]
+  },
+  "880828": {
+    "npcFunc": [
+      [
+        1518802463,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1462
+        ]
+      ]
+    ]
+  },
+  "880857": {
+    "npcFunc": [
+      [
+        1413906191,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1511
+        ]
+      ]
+    ]
+  },
+  "880858": {
+    "npcFunc": [
+      [
+        1417895183,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1513
+        ]
+      ],
+      [
+        1704853768,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1512
+        ]
+      ],
+      [
+        2138423433,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1842
+        ]
+      ]
+    ]
+  },
+  "880861": {
+    "npcFunc": [
+      [
+        1559685279,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1547
+        ]
+      ]
+    ]
+  },
+  "880864": {
+    "npcFunc": [
+      [
+        1411366627,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1514
+        ]
+      ]
+    ]
+  },
+  "880865": {
+    "npcFunc": [
+      [
+        1238521296,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1515
+        ]
+      ]
+    ]
+  },
+  "880866": {
+    "npcFunc": [
+      [
+        1336117636,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1516
+        ]
+      ],
+      [
+        1225172756,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1842
+        ]
+      ]
+    ]
+  },
+  "880880": {
+    "npcFunc": [
+      [
+        2133209594,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1517
+        ]
+      ]
+    ]
+  },
+  "880896": {
+    "npcFunc": [
+      [
+        2076736093,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1519
+        ]
+      ],
+      [
+        1844958031,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1518
+        ]
+      ]
+    ]
+  },
+  "880909": {
+    "npcFunc": [
+      [
+        2145841479,
+        "$UI_Icon_InteractionTitle_Trade.png",
+        {},
+        [
+          1520
+        ]
+      ]
+    ]
+  },
+  "880935": {
+    "npcFunc": [
+      [
+        1690818121,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1544
+        ]
+      ]
+    ]
+  },
+  "880350": {
+    "npcFunc": [
+      [
+        1865528919,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {},
+        [
+          1300,
+          1302,
+          1304,
+          1306,
+          1308,
+          1310,
+          1301,
+          1320,
+          1830,
+          1831,
+          1832,
+          1833
+        ]
+      ]
+    ]
+  },
+  "880337": {
+    "npcFunc": [
+      [
+        1264563861,
+        "$UI_Icon_InteractionTitle_Chat.png",
+        {}
+      ]
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "91325760": {
+    "id": 91325760,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Angry"
+            }
+          ]
+        },
+        "position": [
+          7.2,
+          -0.11,
+          -9.25
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      7.2,
+      0.37,
+      -9.25
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91314384
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "dmg_rock_add_ratio": {
+      "rValue": {
+        "rValue": {
+          "key": "Bullet1",
+          "name": "getCacheVal",
+          "UID": "3ea27b8a-ceeb-47c7-93b7-a901fb919fbc",
+          "target": {
+            "UID": "c2c8d3ff-125b-430d-98c0-2847e8810e92",
+            "target": "OWNER",
+            "name": "getPlayer",
+            "NodeID": 19
+          },
+          "NodeID": 20
+        },
+        "name": "multiply",
+        "UID": "3b3af2ef-fb50-406e-a4c6-b7171c9686af",
+        "NodeID": 4,
+        "lValue": {
+          "calcId": 2166301,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 3,
+          "UID": "2acc550d-cd39-47bc-a8a2-e733bfaee59e",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "add",
+      "UID": "806ca9d2-06fd-448e-96b8-6725aaa472a0",
+      "NodeID": 5,
+      "lValue": {
+        "calcId": 2166301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 21,
+        "UID": "9578031d-d536-4248-9dcc-4ccef6e54690",
+        "name": "getParamByLuaConfig"
+      }
+    }
+  },
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    9,
+    18
+  ],
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b50d7e1b-4183-419a-8015-41109975d1ac",
+      "effectId": "Eff_Parmon_10663_Skill_Reinforce_Buff",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "17": {
+      "rValue": 6,
+      "name": "equal",
+      "UID": "cf09e97e-61ff-4d47-ab55-8f46f7eb67fc",
+      "NodeID": 17,
+      "lValue": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "6313edc7-ed8c-4ef4-a2df-a8dfe4cab8ac",
+        "target": {
+          "UID": "12f1abd9-a957-4c12-86c4-d0fe87fef1a2",
+          "target": "OWNER",
+          "name": "getPlayer",
+          "NodeID": 15
+        },
+        "NodeID": 16
+      }
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "70b8ae3d-739c-4075-afe7-5da1bfafdc47",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11
+      ],
+      "NodeID": 9
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "b6f281b2-d204-4d4b-b801-ece5526eb07b",
+      "effectId": "Eff_Parmon_10663_Skill_Reinforce_Buff_Low",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "18": {
+      "UID": "8a650450-62c1-4970-9ead-41b78c8df719",
+      "value": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "6313edc7-ed8c-4ef4-a2df-a8dfe4cab8ac",
+        "target": {
+          "UID": "12f1abd9-a957-4c12-86c4-d0fe87fef1a2",
+          "target": "OWNER",
+          "name": "getPlayer",
+          "NodeID": 15
+        },
+        "NodeID": 16
+      },
+      "name": "print",
+      "NodeID": 18
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4e1c8750-fbf7-450b-8a90-812561c9c7b9",
+      "effectId": "Eff_Parmon_10663_Skill_Reinforce_Buff_Low",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "15": {
+      "UID": "12f1abd9-a957-4c12-86c4-d0fe87fef1a2",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 15
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "27de7624-f12e-48a4-a64d-32ecb70b5646",
+      "effectId": "Eff_Parmon_10663_Skill_Reinforce_Buff",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2166301",
+  "onBuffDestroyIds": [
+    12,
+    14
+  ],
+  "onBuffStartIds": [
+    9,
+    18
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2022001",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "isTeam": true,
+      "NodeID": 3,
+      "UID": "58b55437-4d51-43f8-8fe0-ab295b530311",
+      "enable": false,
+      "name": "enableAccumulateShield"
+    },
+    "2": {
+      "isTeam": true,
+      "NodeID": 2,
+      "UID": "4fd5dcdd-5795-4e29-9485-2600b98c8bd6",
+      "enable": true,
+      "name": "enableAccumulateShield"
+    }
+  },
+  "onBuffDestroyIds": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "weight": 1,
+    "rewardId": 200669,
+    "tierId": 1
+  },
+  {
+    "weight": 1,
+    "rewardId": 200670,
+    "tierId": 1
+  },
+  {
+    "weight": 1,
+    "rewardId": 200668,
+    "tierId": 1
+  },
+  {
+    "weight": 1,
+    "rewardId": 200674,
+    "tierId": 2
+  },
+  {
+    "weight": 1,
+    "rewardId": 200673,
+    "tierId": 2
+  },
+  {
+    "weight": 1,
+    "rewardId": 200672,
+    "tierId": 2
+  },
+  {
+    "weight": 1,
+    "rewardId": 200671,
+    "tierId": 2
+  },
+  {
+    "weight": 1,
+    "rewardId": 200678,
+    "tierId": 3
+  },
+  {
+    "weight": 1,
+    "rewardId": 200677,
+    "tierId": 3
+  },
+  {
+    "weight": 1,
+    "rewardId": 200676,
+    "tierId": 3
+  },
+  {
+    "weight": 1,
+    "rewardId": 200675,
+    "tierId": 3
+  },
+  {
+    "weight": 1,
+    "rewardId": 200682,
+    "tierId": 4
+  },
+  {
+    "weight": 1,
+    "rewardId": 200681,
+    "tierId": 4
+  },
+  {
+    "weight": 1,
+    "rewardId": 200680,
+    "tierId": 4
+  },
+  {
+    "weight": 1,
+    "rewardId": 200679,
+    "tierId": 4
+  }
+]

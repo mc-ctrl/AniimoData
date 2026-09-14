@@ -1,0 +1,582 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.73,
+      "NodeID": 37,
+      "UID": "dd2e6e3e-fa8c-4e26-a956-d5508c361137"
+    },
+    "38": {
+      "target": "TARGET",
+      "duration": 0.1,
+      "speed": 300,
+      "NodeID": 38,
+      "UID": "a208689e-02ec-4321-93db-bf45fb01f917",
+      "displacementDir": "OUT",
+      "displacementTarget": "CASTER",
+      "name": "forceDisplacement"
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 39,
+      "UID": "459ed0d7-d05e-4ce8-8801-6faa6df48e1f"
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "34b9ec3e-92ae-463a-99de-916791c07288",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Red_Jx_02",
+      "NodeID": 40
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c1f61857-e40a-49d9-ba21-2cc6e4428e72",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Start",
+      "speed": 1,
+      "NodeID": 41
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6a58c011-f322-44a1-8c45-5aafab07648b",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_End",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10.4,
+      "NodeID": 43,
+      "UID": "a61731aa-b95d-4b9d-a649-64e85270e17c"
+    },
+    "44": {
+      "duration": 1.6,
+      "target": "OWNER",
+      "NodeID": 44,
+      "UID": "7a757fcc-fecb-4e22-a76a-37b6bcbebd91",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Xparticle_02",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9e271144-4b1d-46ef-ac02-c53bdb5f6df4",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Attack_01",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "3": {
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.65,
+      "NodeID": 3,
+      "UID": "5d651055-85b0-4620-a717-976b2dba7859"
+    },
+    "58": {
+      "isRootDir": false,
+      "NodeID": 58,
+      "UID": "7c2c3321-47f0-4c5d-a7e6-7e9ab7404609",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bip001 R Hand"
+    },
+    "55": {
+      "target": "TARGET",
+      "duration": 0.1,
+      "speed": 100,
+      "NodeID": 55,
+      "UID": "cbff5aa2-89a4-4710-9144-6e9abaf2e95c",
+      "displacementDir": "OUT",
+      "displacementTarget": "CASTER",
+      "name": "forceDisplacement"
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba9a2b96-437d-4c51-8b9e-593bbba084ac",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Attack_02",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "53": {
+      "eventType": "NotifyState",
+      "endTime": 6.8,
+      "NodeID": 53,
+      "onExit": {
+        "actionIds": [
+          52
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          52
+        ]
+      },
+      "startTime": 4.8,
+      "tickInterval": 0.2,
+      "onEnter": {
+        "actionIds": [
+          52
+        ]
+      },
+      "UID": "b15b9327-457d-4f80-b420-20eb5ed31f9c"
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8.01667,
+      "NodeID": 9,
+      "UID": "29a3eadd-cc1a-4095-8011-bccc88dd46ef"
+    },
+    "52": {
+      "calcResultNodeId": 50,
+      "name": "actOnTargets",
+      "UID": "821e87ad-41e1-46e2-8d75-951dc3857c89",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            -10
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            20,
+            3,
+            3
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "isRootDir": false,
+            "NodeID": 58,
+            "UID": "7c2c3321-47f0-4c5d-a7e6-7e9ab7404609",
+            "target": "OWNER",
+            "name": "getBonePosition",
+            "boneName": "Bip001 R Hand"
+          },
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        50,
+        55
+      ],
+      "impulseId": 5007,
+      "NodeID": 52
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "666005f4-875a-4435-ad53-2e271509749f",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_Red_JxLoop"
+    },
+    "25": {
+      "actionIds": [
+        23
+      ],
+      "NodeID": 25,
+      "UID": "953fef1a-97d5-46f4-a7ce-5472efa13768",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            5,
+            180,
+            0.2,
+            10
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 23,
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 25,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 50,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18,
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.33333,
+      "NodeID": 20,
+      "UID": "b1ef1e18-3108-4032-8908-4b412fcce934"
+    },
+    "12": {
+      "UID": "47918d2f-9048-4ea5-85a5-f270f366b699",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10,
+          40,
+          41
+        ]
+      },
+      "NodeID": 12
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "15d3914b-a599-43fa-bbec-da029134cf7e",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Xparticle_01",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "23": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902132601,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "9999",
+        "type": 2
+      },
+      "UID": "c0c4de7d-e101-4e17-840b-c438a55f297a",
+      "target": "TARGET",
+      "NodeID": 23,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 3002,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt"
+      }
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.73333,
+      "NodeID": 45,
+      "UID": "46d1c91f-7cd6-4a8b-a079-241c782f8225"
+    },
+    "14": {
+      "UID": "dbbf8679-5a4c-478b-a99b-f180e747610b",
+      "actorId": {
+        "UID": "6602cf41-83b4-4b08-804d-cb1c349d64a9",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 13
+      },
+      "name": "destroyEntity",
+      "NodeID": 14
+    },
+    "46": {
+      "duration": 1,
+      "target": "OWNER",
+      "NodeID": 46,
+      "UID": "11220e25-6d39-448c-9b38-c6778485ecb4",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Xparticle_03",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 13.01667,
+      "NodeID": 15,
+      "UID": "91ac2b6c-9d7a-44f0-b474-6ae6574cb564"
+    },
+    "47": {
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.33333,
+      "NodeID": 47,
+      "UID": "ba425736-ce9d-4f2a-9e66-53c4463d3db9"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.5,
+      "NodeID": 26,
+      "UID": "990ebccf-0e76-4410-822d-16bc97cc5b15"
+    },
+    "27": {
+      "actionIds": [
+        23
+      ],
+      "NodeID": 27,
+      "UID": "90a1927a-1e63-43e4-8024-4d22322d58f5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            5,
+            180,
+            0.2,
+            10
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 23,
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 27,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 50,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8,
+      "NodeID": 28,
+      "UID": "954a42f3-1ba7-40d0-bc52-f3c6e32bfab5"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.15,
+      "NodeID": 17,
+      "UID": "2211b558-b07a-4b08-adaa-111638a406db"
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b735694d-d74e-4644-acf9-f7cec48e4d63",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Jx_Flower_Explode",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "50": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902132601,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "9999",
+        "type": 2
+      },
+      "UID": "af9b2202-8b32-4814-9ebc-a3b6351cdd0b",
+      "target": "TARGET",
+      "NodeID": 50,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 5007,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt"
+      }
+    },
+    "33": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902132601,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "9999",
+        "type": 2
+      },
+      "UID": "5a0b8e0c-7742-4ffd-90d4-fd41f3b82fb4",
+      "target": "TARGET",
+      "NodeID": 33,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 5007,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt"
+      }
+    },
+    "34": {
+      "actionIds": [
+        33
+      ],
+      "NodeID": 34,
+      "UID": "ace6f4a6-c564-4cdc-a9dc-6e15bb032404",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            5,
+            180,
+            0.2,
+            10
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 33,
+      "hitBoxId": "3",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 25,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 75,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "36": {
+      "duration": 3.27,
+      "disableWhenFinished": false,
+      "NodeID": 36,
+      "UID": "4e1d4f40-5677-4768-a0da-e7d321368c6e",
+      "target": "OWNER",
+      "presetName": "Eff_Monster_90213_Mon_Skill_Red_Jx_DisAppear_Ripple",
+      "name": "playPreset"
+    }
+  },
+  "BPName": "ability_902132601",
+  "NodeID": 5,
+  "UID": "78d6d569-1570-46a6-a0af-58aa802a383a",
+  "eventIds": [
+    12,
+    3,
+    17,
+    9,
+    26,
+    20,
+    37,
+    15,
+    39,
+    43,
+    45,
+    47,
+    28,
+    53
+  ],
+  "layer": "Base",
+  "length": 13.5
+}

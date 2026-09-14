@@ -1,0 +1,62 @@
+{
+  "BPName": "ability_11949900",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10300150,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11949900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 15,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10194_InEx_xuli",
+    "Eff_Parmon_10194_InEx_Sword_02_s",
+    "Eff_Parmon_10194_InEx_Sword_02",
+    "Eff_Parmon_10194_InEx_Sword_01",
+    "Eff_Parmon_10194_InEx_Sword_01_s",
+    "Eff_Parmon_10194_OutEx_Boom_s",
+    "Eff_Parmon_10194_OutEx_Boom_Lang_s",
+    "Eff_Parmon_10194_InEx_Sword_03_s",
+    "Eff_Parmon_10194_OutEx_Boom",
+    "Eff_Parmon_10194_OutEx_Boom_Lang",
+    "Eff_Parmon_10194_InEx_Sword_03",
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_10194_Enpowered_Ex_Passive_loop",
+    "Eff_Parmon_10194_Enpowered_Ex_Passive_end",
+    "Eff_Parmon_10194_Passive",
+    "Eff_Parmon_10194_Passive_L_Red",
+    "Eff_Parmon_10194_Passive_R_Red",
+    "Eff_Parmon_10194_Passive_L",
+    "Eff_Parmon_10194_Passive_R"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "tags": [
+    1
+  ],
+  "searchTargetRangeDown": 0.5,
+  "preloadCutScenes": [
+    "$Parmon_10194_Skill_Ex_Timeline_s.prefab",
+    "$Parmon_10194_Skill_Ex_Timeline.prefab"
+  ],
+  "onlyHasActOnTargets": true,
+  "desc": "",
+  "cutSceneDuration": 2.38
+}

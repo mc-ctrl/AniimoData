@@ -1,0 +1,241 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2142304",
+  "name": "",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    13,
+    21,
+    7,
+    24,
+    14,
+    15,
+    19,
+    27
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2142304,
+        "instant_dmg_hp_by_cur_hp_rate": "param0",
+        "type": 1
+      },
+      "UID": "502c6648-f463-431f-abdc-39ce9d24d7fa",
+      "target": "OWNER",
+      "NodeID": 5,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    },
+    "6": {
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "cd114766-8316-49df-a800-efb1c8950a17",
+      "name": "doActionsByConditions",
+      "NodeID": 6,
+      "elseActionIds": [
+        5
+      ]
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "b07ef0f3-e8e1-4537-b313-d20ec300b2ac",
+      "target": "SRC",
+      "NodeID": 7
+    },
+    "31": {
+      "isClearOld": true,
+      "UID": "f1eabedc-df1e-4ca8-a0ff-0d9c40dfd274",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 31,
+      "calcInfoByLuaConfig": {
+        "id": 2142304,
+        "type": 1,
+        "taken_skill_dmg_inc_rate_v": "param2"
+      }
+    },
+    "9": {
+      "UID": "acb436cb-b0a2-4bd1-b3b6-5349753ea499",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 9
+    },
+    "21": {
+      "key": "2142304attack",
+      "name": "setCacheVal",
+      "UID": "35605f5d-ccfa-4ee3-b99e-58247aeadbe2",
+      "target": "SRC",
+      "val": 0,
+      "NodeID": 21
+    },
+    "13": {
+      "key": "2142304",
+      "name": "setCacheVal",
+      "UID": "1fd73747-ea63-4fe2-986b-79b1089581a5",
+      "target": "SRC",
+      "val": 0,
+      "NodeID": 13
+    },
+    "24": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "622dcae6-abe0-42b9-91e5-46098f73eabf",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 24
+    },
+    "14": {
+      "epCost": 0,
+      "epCostAddFix": 0,
+      "NodeID": 14,
+      "UID": "2f8caa5d-cdcd-4261-802f-e938b12fd8c0",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": -1
+    },
+    "10": {
+      "UID": "ce3cdb22-4680-493c-bd3d-14972a510a4b",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9823f903-248c-4a17-94f3-6f9b2a3095f7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10423_Skill_Ghost02",
+      "NodeID": 15
+    },
+    "33": {
+      "rValue": 14230000,
+      "name": "equal",
+      "UID": "85d51a54-c116-4353-a2b0-236908ded449",
+      "NodeID": 33,
+      "lValue": {
+        "UID": "b28cefba-165f-43de-814a-51f04b987d6c",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onCastAbility",
+        "NodeID": 32
+      }
+    },
+    "16": {
+      "UID": "ceb8551a-5a9e-4226-aa98-94bd72e5be1a",
+      "name": "getEventPostAttackDamage",
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e4adbdf1-5f79-4bfd-953c-250257b49446",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "3bb87f1d-db2b-440b-b17a-686dd945eba5",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "buffId": 2142308,
+      "name": "hasBuff",
+      "UID": "181dfd39-9852-4a6f-982a-d91cdabdb241",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "key": "2142304attack",
+      "name": "setCacheVal",
+      "UID": "fa5dcb02-5f56-4ebf-b46a-7210fb78919b",
+      "target": "SRC",
+      "val": {
+        "rValue": {
+          "UID": "ceb8551a-5a9e-4226-aa98-94bd72e5be1a",
+          "name": "getEventPostAttackDamage",
+          "NodeID": 16
+        },
+        "name": "add",
+        "UID": "eabd75e8-a134-48a2-89a8-75f2220fc88d",
+        "NodeID": 17,
+        "lValue": {
+          "key": "2142304attack",
+          "name": "getCacheVal",
+          "UID": "71e7022e-dcef-4855-8f6f-91a67194d689",
+          "target": "SRC",
+          "NodeID": 20
+        }
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "UID": "b28cefba-165f-43de-814a-51f04b987d6c",
+      "name": "getCombatContextAbilityId",
+      "eventName": "onCastAbility",
+      "NodeID": 32
+    },
+    "19": {
+      "UID": "e21dde04-5ed9-4311-b3a9-cee3f103473f",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "23": {
+      "isClearOld": true,
+      "UID": "86d5f41f-b190-4bd4-8130-4f79ee2e8565",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 23,
+      "calcInfoByLuaConfig": {
+        "id": 2142304,
+        "type": 1,
+        "taken_skill_dmg_inc_rate_v": "param1"
+      }
+    },
+    "26": {
+      "name": "stopSoundStr",
+      "UID": "480267a2-7d32-44ab-98e7-3e94d30e0c04",
+      "soundId": "SFX_Combat_10423_Skill_Ghost02",
+      "target": "OWNER",
+      "NodeID": 26
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10,
+    26,
+    28
+  ],
+  "onBuffStartIds": [
+    13,
+    21,
+    7,
+    24,
+    14,
+    15,
+    19,
+    27
+  ]
+}

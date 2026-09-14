@@ -1,0 +1,24 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91143011",
+  "calcInfoByLuaConfig": {
+    "id": 91143011,
+    "dmg_electric_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "3968bd98-3f1e-4a34-9800-891767903f6d",
+  "desc": "",
+  "tags": [
+    10
+  ],
+  "nodeMap": {},
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10143_Skill_HaloMax_Huan"
+    }
+  ],
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

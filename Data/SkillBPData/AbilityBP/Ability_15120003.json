@@ -1,0 +1,85 @@
+{
+  "BPName": "ability_15120003",
+  "NodeID": 1,
+  "UID": "c034e49c-c23e-47c7-9bb0-50e933e3f097",
+  "abilityParamId": 16400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        69
+      ],
+      "UID": "ec6df5ce-3597-4b19-9c8a-44d686b56e7c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "13": {
+      "timelineId": 15120003002,
+      "name": "setCombatActionTimeline",
+      "UID": "d3216b56-156c-462b-819d-92f0803a658b",
+      "target": "CASTER",
+      "NodeID": 13
+    },
+    "10": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        70
+      ],
+      "UID": "fd34bf6c-9b7b-41b3-857e-904eea3dbc3c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 10
+    },
+    "70": {
+      "buffId": 915130105,
+      "name": "hasBuff",
+      "UID": "4596ea66-7d32-42c1-964c-9f95b5c4b5bd",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "7": {
+      "timelineId": 15120003001,
+      "name": "setCombatActionTimeline",
+      "UID": "e86d657e-cc4d-45c3-9781-043547c1e457",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "69": {
+      "buffId": 915120102,
+      "name": "hasBuff",
+      "UID": "b0f01934-905b-419b-8b08-9443596771b6",
+      "target": "OWNER",
+      "NodeID": 69
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack04"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10513_Attack_04"
+  ],
+  "searchRelation": 2,
+  "name": "火普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

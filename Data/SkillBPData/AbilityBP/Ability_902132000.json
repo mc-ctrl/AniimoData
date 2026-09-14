@@ -1,0 +1,43 @@
+{
+  "BPName": "ability_902132000",
+  "NodeID": 1,
+  "UID": "135c5d3c-de76-4c77-ad63-ceb1b6190f18",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902132000001,
+      "name": "setCombatActionTimeline",
+      "UID": "6a364f65-4b1f-45ec-9dc7-30437d5891eb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FctzLoop",
+    "Skill_FctzEnd",
+    "Skill_Fctz_01"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Skill_Red_Flower_AOE_VEG",
+    "Eff_Monster_90213_Mon_Skill_Red_Flower_Sky_01",
+    "Eff_Monster_90213_Mon_Skill_Red_Flower",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+    "Eff_Monster_90213_Mon_Skill_Red_Flower_Absorb",
+    "Eff_Monster_90213_Mon_Skill_Red_Flower_Proxy",
+    "Eff_Monster_90213_Mon_Skill_Red_Flower_AOE"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 9999,
+  "searchTargetRangeUp": 999,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 999,
+  "abilityParamId": 49221010
+}

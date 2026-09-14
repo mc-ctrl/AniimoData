@@ -1,0 +1,234 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "buffId": 2061000014,
+      "name": "removeBuff",
+      "UID": "e713d2f6-f665-46c7-abcc-6fb744c3cf97",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "aa14657a-46be-4f1d-ab14-f434d1383076",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "dc4a395c-4ed8-4d01-b4b3-03e47215969b",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        14,
+        21
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "34c0f0ba-694c-41b2-b24f-b86b02aab982",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "11": {
+      "unsummonValid": false,
+      "actionIds": [
+        10
+      ],
+      "name": "registerGroupEvent",
+      "UID": "6baeb8ec-d40c-487a-bebf-528adad8ae30",
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "43de7a71-146f-4fad-a458-6bc3ebf933a4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "ae4999de-fd91-46bb-8e0d-836e865b3c43",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "3": {
+      "NodeID": 3,
+      "UID": "83eef37b-adc3-456f-aeaf-4e84c61db59b",
+      "actorId": {
+        "key": "RogueDice",
+        "name": "getCacheVal",
+        "UID": "015e1cd4-9185-4a3a-b163-83488b28b5dc",
+        "target": "OWNER",
+        "NodeID": 2
+      },
+      "forceDeleteNotCombatEntity": true,
+      "name": "destroyEntity"
+    },
+    "23": {
+      "rValue": {
+        "rValue": {
+          "calcId": 2061000014,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 28,
+          "UID": "bfc8d61f-274b-431d-854a-a965e69b5c2a",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "add",
+        "UID": "02018712-baf4-404f-8cc4-0fe680995b60",
+        "NodeID": 29,
+        "lValue": -1
+      },
+      "name": "greater",
+      "UID": "d4ca1f90-abe7-4ae4-b4b3-84ea39ded682",
+      "NodeID": 23,
+      "lValue": {
+        "UID": "f4c26b47-f158-4689-a86d-a539a7702e41",
+        "name": "getRoguePersistData",
+        "key": "castUltimateCnt",
+        "NodeID": 22
+      }
+    },
+    "14": {
+      "key": "castUltimateCnt",
+      "name": "setRoguePersistData",
+      "UID": "e75c7e28-5a85-4e7d-84c2-3d84551b8b63",
+      "value": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "d74a11b1-9cc4-4874-b4f5-889de2989313",
+        "NodeID": 13,
+        "lValue": {
+          "UID": "240e6360-d526-48ec-b7db-78e27e03e855",
+          "name": "getRoguePersistData",
+          "key": "castUltimateCnt",
+          "NodeID": 12
+        }
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "e7709bea-03c2-4feb-8603-7886e6b29617",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "25": {
+      "key": "castUltimateCnt",
+      "name": "setRoguePersistData",
+      "UID": "dbd37476-f7cd-4858-8eaa-fa80b63aaad5",
+      "value": {
+        "UID": "8079d9b7-0822-489d-9d73-3448de515529",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 24
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "3fd25829-facf-40bb-b865-41b4d1ff1167",
+      "name": "getRoguePersistData",
+      "key": "ChainBurstCnt",
+      "NodeID": 16
+    },
+    "27": {
+      "rValue": {
+        "UID": "e3fded9e-8c7e-4309-a85a-78bd60fa9d29",
+        "name": "getRoguePersistData",
+        "key": "castUltimateCnt",
+        "NodeID": 26
+      },
+      "name": "greater",
+      "UID": "5fba1108-11ca-4248-a75f-28027dedba9e",
+      "NodeID": 27,
+      "lValue": {
+        "rValue": {
+          "calcId": 2061000014,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 28,
+          "UID": "bfc8d61f-274b-431d-854a-a965e69b5c2a",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "add",
+        "UID": "f85f952e-60f0-4e9b-a8c4-de3fbf3b5f76",
+        "NodeID": 30,
+        "lValue": 1
+      }
+    },
+    "28": {
+      "calcId": 2061000014,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 28,
+      "UID": "bfc8d61f-274b-431d-854a-a965e69b5c2a",
+      "name": "getParamByLuaConfig"
+    },
+    "18": {
+      "key": "ChainBurstCnt",
+      "name": "setRoguePersistData",
+      "UID": "b6420b47-a25f-4cf7-bb7a-3dfdbc431c00",
+      "value": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "47ddf8a0-2faa-4e37-b427-b61d3a65f9f8",
+        "NodeID": 17,
+        "lValue": {
+          "UID": "3fd25829-facf-40bb-b865-41b4d1ff1167",
+          "name": "getRoguePersistData",
+          "key": "ChainBurstCnt",
+          "NodeID": 16
+        }
+      },
+      "NodeID": 18
+    },
+    "26": {
+      "UID": "e3fded9e-8c7e-4309-a85a-78bd60fa9d29",
+      "name": "getRoguePersistData",
+      "key": "castUltimateCnt",
+      "NodeID": 26
+    },
+    "12": {
+      "UID": "240e6360-d526-48ec-b7db-78e27e03e855",
+      "name": "getRoguePersistData",
+      "key": "castUltimateCnt",
+      "NodeID": 12
+    },
+    "22": {
+      "UID": "f4c26b47-f158-4689-a86d-a539a7702e41",
+      "name": "getRoguePersistData",
+      "key": "castUltimateCnt",
+      "NodeID": 22
+    }
+  },
+  "BPName": "buff_2061000014",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7,
+    11
+  ]
+}

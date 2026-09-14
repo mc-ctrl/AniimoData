@@ -1,0 +1,11 @@
+{
+  "2009": {
+    "Icon": "$ui_item_GrabEgg_Icon_Intrigue_Purple.png"
+  },
+  "2010": {
+    "Icon": "$ui_item_GrabEgg_Icon_Intrigue_Gold.png"
+  },
+  "2008": {
+    "Icon": "$ui_item_GrabEgg_Icon_Intrigue_Blue.png"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9139301",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9139302,
+      "NodeID": 3,
+      "UID": "c74f5986-a9fe-4b54-a2dd-324bbdffbb36",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "a8e7fbf3-fa1f-4d10-9af3-e21f3780a73e",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerPawnMovedDistanceReachThresholdEvent",
+      "UID": "0e5575e1-587a-4cef-82fb-c8f174b234d9",
+      "threshold": 1,
+      "onlyConsiderXZ": true,
+      "NodeID": 6
+    },
+    "23": {
+      "naturalDecayV": 1,
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 0,
+      "name": "registerPassiveEnergyInfo",
+      "UID": "0db9b26f-baa8-423f-82c5-584c949ad17b",
+      "superBoosted": true,
+      "spEnergyMaxV": 40,
+      "spEnergyInitV": 0,
+      "NodeID": 23,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 0.25
+    },
+    "22": {
+      "buffId": 9139303,
+      "name": "removeBuff",
+      "UID": "8ab292fe-5424-4ea0-bad1-f7fe32467d9f",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "21": {
+      "buffId": 9139302,
+      "name": "removeBuff",
+      "UID": "5ea405c4-e7d7-4436-b0a8-59d132aab610",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "16": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "b179c832-b0dd-4130-a91d-16c3bdb1617d",
+      "NodeID": 16,
+      "lValue": {
+        "key": "9139301",
+        "name": "getCacheVal",
+        "UID": "fca13886-961c-4e09-a950-fc5c68ad8c71",
+        "target": "OWNER",
+        "NodeID": 15
+      }
+    },
+    "8": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "1698769d-2ba2-48ba-ae6b-0389ad7586da",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        6
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "f663bbd4-7eba-4a07-a74b-9c4c4bc8a1b5",
+      "name": "removeEvent",
+      "eventName": "onPawnMovedDistanceReachThreshold",
+      "NodeID": 17
+    },
+    "9": {
+      "eventName": "91393",
+      "NodeID": 9,
+      "UID": "9011f38b-18da-4de6-ad3b-09767b781e3c",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        8
+      ]
+    },
+    "14": {
+      "buffId": 2139301,
+      "name": "hasBuff",
+      "UID": "009aa339-7404-4b30-b105-ef62d9e9142c",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "19": {
+      "duration": 3,
+      "actionIds": [
+        17,
+        21,
+        22
+      ],
+      "NodeID": 19,
+      "UID": "06f50059-715c-4fd0-92d5-748b2e57035d",
+      "name": "addTimer"
+    },
+    "11": {
+      "UID": "96f0ff98-7aab-48dc-a8b0-7885d400ca0e",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "d58f4a7c-1298-499d-81e5-102a9928f816",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerPawnMovedDistanceReachThresholdEvent",
+      "UID": "18f39ec1-6de6-4fb7-a8ad-c315369301b3",
+      "threshold": 0.5,
+      "onlyConsiderXZ": true,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    9,
+    20,
+    23
+  ]
+}

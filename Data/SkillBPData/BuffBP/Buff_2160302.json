@@ -1,0 +1,41 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2160302",
+  "calcInfoByLuaConfig": {
+    "id": 2160302,
+    "taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    10,
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "f9db1a25-1a93-44e2-9ed5-fb5ed22a0af1",
+      "effectId": "Eff_Parmon_10603_Skill_Wood_Buff",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ed11d3c8-bd3d-4670-bc1d-eb9d64dfb792",
+      "effectId": "Eff_Parmon_10603_Skill_Wood_Buff",
+      "speed": 1,
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

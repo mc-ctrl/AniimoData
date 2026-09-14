@@ -1,0 +1,162 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5886706e-1f2c-41a1-ab7d-a00d84028377",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Sprinkle03_Rock",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "caca6ed4-2b2a-4031-8871-2dfac0fc0b03",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "269afcbb-78dc-4238-90c0-44e0d9103f13",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_Sprinkle_loop",
+      "NodeID": 6
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.8,
+      "NodeID": 15,
+      "UID": "03fdd115-d95d-4c4f-81d8-b5a8ff1dc542"
+    },
+    "7": {
+      "UID": "90446d7e-b952-4784-bb28-b38496f03ef6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2123105,
+      "NodeID": 16,
+      "UID": "945f46b4-42f5-4edc-b79f-4250b1528569",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "1368ecf5-9cb6-4543-aacf-63fd5d5d3f1e",
+      "name": "doActionsByConditions",
+      "NodeID": 17,
+      "elseActionIds": [
+        16
+      ]
+    },
+    "9": {
+      "actionIds": [
+        17
+      ],
+      "name": "actOnTargets",
+      "UID": "be49381f-1fab-46a5-a1d1-fd794f8f203a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 9
+    },
+    "19": {
+      "buffId": 2123105,
+      "name": "hasBuff",
+      "UID": "f5ffdab6-26f6-4180-bcf5-ac333234dd72",
+      "target": "TARGET",
+      "NodeID": 19
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "12f6716f-fdd7-4b88-bb31-574644882686",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_SFX_Combat_10231_Skill_Sprinkle_loop",
+      "NodeID": 14
+    },
+    "11": {
+      "eventType": "NotifyState",
+      "endTime": 9,
+      "NodeID": 11,
+      "UID": "acba33ff-413e-450d-8e76-2dbd895dde02",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1
+    },
+    "13": {
+      "UID": "5fbf4cf2-fc75-4afa-9b93-53610cf2b222",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "12": {
+      "key": "switchPet",
+      "name": "setCacheVal",
+      "UID": "14694c9a-b3e4-4d50-9ec2-e06ccffc84ae",
+      "val": 0,
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2123107",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    15,
+    13,
+    4,
+    7,
+    11
+  ],
+  "layer": "Base",
+  "length": 10
+}

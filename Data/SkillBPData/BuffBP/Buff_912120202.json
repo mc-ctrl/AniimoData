@@ -1,0 +1,36 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912120202",
+  "name": "舞力值积满提升攻击力buff",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "ea9bb6c1-bedc-48ce-945f-657abaf35e17",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 8
+    },
+    "12": {
+      "UID": "5ddab537-820a-4d2b-b99c-46f6e98a1cdb",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 912120202,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    12
+  ]
+}

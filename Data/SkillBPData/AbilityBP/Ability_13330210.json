@@ -1,0 +1,60 @@
+{
+  "BPName": "ability_13330210",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 10500232,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "10": {
+      "timelineId": 13330210001,
+      "name": "setCombatActionTimeline",
+      "UID": "824b607a-8d8d-45b1-adea-d43f9a03a7ef",
+      "target": "CASTER",
+      "NodeID": 10
+    },
+    "12": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 12,
+      "UID": "8d962d34-25e9-4497-94d1-6b64207326b8",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 12,
+  "preloadAnims": [
+    "Skill_FireBall_Start",
+    "Skill_FullBodyFire"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10333_Skill_Bullet_Strat01",
+    "Eff_Parmon_10333_Skill_Bullet_Strat_01_Loop",
+    "Eff_Parmon_10333_Skill_Bullet_Strat02",
+    "Eff_Parmon_10052_Fireball"
+  ],
+  "searchRelation": 2,
+  "name": "照明1",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "onAbilityEndIds": [
+    12
+  ],
+  "searchTargetRangeDown": 0.5,
+  "UID": "a94ecab6-c7f8-4973-bf75-72b0d8fd560b"
+}

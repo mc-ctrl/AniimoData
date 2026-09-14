@@ -1,0 +1,104 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 66,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10293_SpecialAttack_LightningBlade04",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "maxHitNum": 9999,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    73
+  ],
+  "onProjectileHitIds": [
+    45
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.5,
+  "sweepShape": 0,
+  "tickInterval": 0.1,
+  "nodeMap": {
+    "66": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12930006,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "191d9ed5-410f-4246-a168-056a8550073c",
+      "target": "TARGET",
+      "NodeID": 66,
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "hitSoundType": "h",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Slash_Big",
+            "rotAngle": 60,
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "impulseId": 2000,
+        "hitSoundStr": "battle_projectilehit_electric_s",
+        "elementType": 4
+      }
+    },
+    "45": {
+      "calcResultNodeId": 66,
+      "name": "actOnTargets",
+      "UID": "8689bf62-282b-4055-b3ef-e4b8424d15ff",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0.5,
+            0
+          ],
+          "shapeArgs": [
+            1.8,
+            3,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "rotFrom": "TARGET_HIT"
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        66
+      ],
+      "impulseId": 2000,
+      "NodeID": 45
+    },
+    "73": {
+      "name": "stopSoundStr",
+      "UID": "dff90c08-30ce-4d40-a55a-76e42a4d3c0f",
+      "soundId": "SFX_Combat_10293_Skill_SpecialAttack03_Loop",
+      "target": "OWNER",
+      "NodeID": 73
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_12930006",
+  "NodeID": 0,
+  "impulseId": 2000,
+  "acceleration": 0
+}

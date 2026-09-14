@@ -1,0 +1,83 @@
+{
+  "57951553": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019874,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 2001,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_任务POI_第二幕-返回Ark-大厅",
+    "sightLevelType": 128,
+    "spawners": [
+      57959176,
+      57959367,
+      57959370,
+      57960911
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 57951553,
+    "sightLevel": 128,
+    "position": [
+      51.81,
+      22.86,
+      -11.7
+    ],
+    "levelItems": {},
+    "activeOnInit": 1,
+    "owner": "徐麟"
+  },
+  "57953381": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019874,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 2001,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_任务POI_第二幕-返回Ark-校长室",
+    "sightLevelType": 128,
+    "spawners": [
+      57957286,
+      57957381,
+      57957394,
+      57957403,
+      57960954
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "lastModifiedBy": "",
+    "position": [
+      51.81,
+      22.86,
+      -8.95
+    ],
+    "owner": "徐麟",
+    "id": 57953381,
+    "levelItems": {}
+  }
+}

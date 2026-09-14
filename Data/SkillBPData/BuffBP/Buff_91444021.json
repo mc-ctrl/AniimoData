@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91444021",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "onBuffRefreshIds": [
+    8,
+    6,
+    12
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "UID": "44005afc-1f79-4707-a82b-e565b0b3d8eb",
+      "target": "OWNER",
+      "NodeID": 5,
+      "calcInfoByLuaConfig": {
+        "id": 91444021,
+        "type": 1,
+        "add_cur_hp_loss_p": "param0"
+      }
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "953c29aa-b702-4848-9df8-ddc9c286af4b",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "11": {
+      "buffId": 9144402,
+      "name": "hasBuff",
+      "UID": "7045f9e1-96e3-49e6-abfc-6f08a988b297",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "78827f48-74fc-4296-8f48-e434b2112f3e",
+      "effectId": "Eff_Parmon_10444_Skill_Shadow_AttackUp",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a8ef9eb2-b7e8-4e7d-a97e-224e807a0139",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10444_Skill_AttackUp",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    6,
+    12
+  ]
+}

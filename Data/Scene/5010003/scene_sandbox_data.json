@@ -1,0 +1,25 @@
+{
+  "91113801": {
+    "owner": "宋雨轩",
+    "chunk": 1019882,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "sightLevel": 128,
+    "spawners": {},
+    "activeOnInit": 1,
+    "id": 91113801,
+    "markIconSpawnerId": 0,
+    "name": "全局_其他关卡_ARK NPC对决",
+    "position": [
+      -121.33,
+      40.01,
+      282.75
+    ]
+  }
+}

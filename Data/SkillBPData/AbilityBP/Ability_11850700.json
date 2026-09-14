@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_11850700",
+  "NodeID": 1,
+  "isAim": true,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11850700001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_WindCannon_Start",
+    "Skill_WindCannon_End",
+    "Skill_WindCannon_Charge",
+    "Skill_WindCannon_Fast"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10185_Skill_WindCannon_Charge_02",
+    "Eff_Parmon_10185_Skill_WindCannon_Charge_01",
+    "Eff_Parmon_10185_Skill_WindCannon_Bullet",
+    "Eff_Parmon_10185_Skill_WindCannon_Burst"
+  ],
+  "isSwitch": true,
+  "name": "火花",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "searchTargetRangeDown": 0.5,
+  "searchRelation": 2,
+  "abilityParamId": 10900390,
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8"
+}

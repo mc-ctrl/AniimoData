@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "16": {
+      "UID": "2e23afdf-2c67-4879-91ff-3f7a088b26ef",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "15": {
+      "target": {
+        "UID": "e5a1b37d-562e-4f11-b692-ed9293de96e1",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 14
+      },
+      "duration": 10,
+      "buffId": 2700200130,
+      "NodeID": 15,
+      "UID": "22aa168d-38e3-42d2-86d7-223f0f0db828",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_270020013",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    16
+  ]
+}

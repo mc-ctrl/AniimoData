@@ -1,0 +1,112 @@
+{
+  "nodeMap": {
+    "22": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 22,
+      "UID": "ce97cc58-2758-4c78-a267-7fe602532249"
+    },
+    "4": {
+      "UID": "9e77670d-eda5-4d3e-ab3e-a3535b0f6559",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "15": {
+      "UID": "768509e0-e8da-47d4-a5d2-70bd19336048",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "17": {
+      "UID": "4cd9734a-de30-4798-8a0c-f5ff446fb324",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "3258b723-0705-4196-8c3e-1afe1ba895bf",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 9
+    },
+    "13": {
+      "UID": "ab917641-a7ab-446b-bb6d-0cfab2948f99",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 13
+    },
+    "11": {
+      "UID": "09c9abdd-81d4-4561-a3e3-692cc78d9a6b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 11
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 19,
+      "UID": "aaa2a8cc-186a-4b9f-aa76-7d94cb282a68"
+    },
+    "20": {
+      "target": "OWNER",
+      "duration": 50,
+      "buffId": 920001201,
+      "NodeID": 20,
+      "UID": "c2db6cbf-2d9f-4e83-9fd7-bd20fe6d12b0",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "994edad8-8c06-4062-9fbe-c81a1e5911bc",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_ShieldDance"
+    }
+  },
+  "BPName": "ability_9200011",
+  "NodeID": 6,
+  "UID": "1e8dc6a7-3eb6-4d52-9615-0220eea85783",
+  "eventIds": [
+    15,
+    19,
+    4,
+    22,
+    11
+  ],
+  "layer": "Base",
+  "length": 2
+}

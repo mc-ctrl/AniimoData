@@ -1,0 +1,948 @@
+{
+  "91141863": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      30,
+      30,
+      30,
+      -30,
+      -30,
+      -30,
+      -30,
+      30
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -30,
+      -30,
+      30,
+      30
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141857,
+    "position": [
+      0,
+      5.9,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141863",
+    "id": 91141863
+  },
+  "91141881": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      15,
+      -15,
+      -15,
+      -15,
+      -15,
+      15,
+      15,
+      15
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -15,
+      -15,
+      15,
+      15
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141879,
+    "position": [
+      0,
+      4,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141881",
+    "id": 91141881
+  },
+  "91141906": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      14.29,
+      15.15,
+      -15,
+      15,
+      -15,
+      -15,
+      14.97,
+      -14.96
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -15,
+      -15,
+      14.97,
+      15.15
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10.14,
+    "sandboxId": 91141902,
+    "position": [
+      0,
+      4.4,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141906",
+    "id": 91141906
+  },
+  "91141919": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      15,
+      15,
+      -15,
+      15,
+      -15,
+      -15,
+      15,
+      -15
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -15,
+      -15,
+      15,
+      15
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141913,
+    "position": [
+      0,
+      3.9,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141919",
+    "id": 91141919
+  },
+  "91336512": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      15,
+      -15,
+      -15,
+      -15,
+      -15,
+      15,
+      15,
+      15
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -15,
+      -15,
+      15,
+      15
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 14,
+    "sandboxId": 91336511,
+    "position": [
+      0,
+      11.83,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91336512",
+    "id": 91336512
+  },
+  "91141930": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      15,
+      -15,
+      13,
+      18,
+      -15,
+      15,
+      -15,
+      -15
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -15,
+      -15,
+      15,
+      18
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141928,
+    "position": [
+      0,
+      6,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141930",
+    "id": 91141930
+  },
+  "91142020": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      23,
+      -25,
+      23,
+      25,
+      -27,
+      25,
+      -27,
+      -25
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -27,
+      -25,
+      23,
+      25
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91142014,
+    "position": [
+      -2,
+      5.9,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91142020",
+    "id": 91142020
+  },
+  "91141951": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      15,
+      -15,
+      15,
+      15,
+      -15,
+      15,
+      -15,
+      -15
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -15,
+      -15,
+      15,
+      15
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141950,
+    "position": [
+      0,
+      3.9,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141951",
+    "id": 91141951
+  },
+  "91142004": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      24,
+      -23,
+      25,
+      25,
+      -25,
+      25,
+      -25,
+      -25
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -25,
+      -25,
+      25,
+      25
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91142003,
+    "position": [
+      0,
+      5.9,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91142004",
+    "id": 91142004
+  },
+  "91141782": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      30,
+      -30,
+      -30,
+      -30,
+      -30,
+      30,
+      30,
+      30
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -30,
+      -30,
+      30,
+      30
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141781,
+    "position": [
+      0,
+      6.4,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141782",
+    "id": 91141782
+  },
+  "91141988": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      25,
+      25,
+      25,
+      -25,
+      -25,
+      -25,
+      -25,
+      25
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -25,
+      -25,
+      25,
+      25
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141986,
+    "position": [
+      0,
+      5.9,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141988",
+    "id": 91141988
+  },
+  "91141807": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      30,
+      -30,
+      -30,
+      -30,
+      -30,
+      30,
+      30,
+      30
+    ],
+    "areaShapeType": 2,
+    "entityType": 3,
+    "entityTypeList": [
+      1,
+      2
+    ],
+    "areaAABB": [
+      -30,
+      -30,
+      30,
+      30
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141803,
+    "position": [
+      0,
+      5.9,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141807",
+    "id": 91141807
+  },
+  "91141969": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      10,
+      -10,
+      10,
+      10,
+      -10,
+      10,
+      -10,
+      -10
+    ],
+    "areaShapeType": 2,
+    "entityType": 0,
+    "entityTypeList": {},
+    "areaAABB": [
+      -10,
+      -10,
+      10,
+      10
+    ],
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": [
+          [
+            "changeMapLayerData",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        ],
+        "exitEvents": [
+          [
+            "changeMapLayerData",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "states": {},
+        "stayEvents": {}
+      }
+    ],
+    "height": 10,
+    "sandboxId": 91141967,
+    "position": [
+      0,
+      3.5,
+      0
+    ],
+    "pointType": 1,
+    "name": "区域_91141969",
+    "id": 91141969
+  }
+}

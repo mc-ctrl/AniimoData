@@ -1,0 +1,64 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020000",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": [
+    "SNEAKOUTBYHIT"
+  ],
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "6a88f7b7-d3ba-4fc1-8aa6-5919e42418cf",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "12a37c3e-1d83-4301-9635-7eef2996e5e1",
+      "name": "isEnterCharacterState",
+      "characterState": [
+        "SNEAKOUTBYHIT"
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerCharacterStateChangeEvent",
+      "UID": "09631b6b-8c7b-42bd-b210-87bbaf5ef9aa",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "11": {
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "a6cf83ba-842c-4ec0-93d6-cb91c28b4a45",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": {}
+    },
+    "13": {
+      "buffId": 4020001,
+      "name": "hasBuff",
+      "UID": "5c5e701e-6405-48df-9234-10e112d99c62",
+      "target": "OWNER",
+      "NodeID": 13
+    }
+  },
+  "parentDynamicRPCStates": [
+    "SNEAKOUTBYHIT"
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

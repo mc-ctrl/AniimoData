@@ -1,0 +1,229 @@
+{
+  "91356185": {
+    "id": 91356185,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_MakeLoveForever",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 999,
+                  "name": "MakeLoveTimeOut"
+                },
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 91.74,
+        "position": [
+          5.03,
+          -0.46,
+          -12.64
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      4.81,
+      -0.46,
+      -12.63
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91305177
+  },
+  "91358001": {
+    "id": 91358001,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Doubt"
+            }
+          ]
+        },
+        "yaw": 2.73,
+        "position": [
+          6.26,
+          -0.43,
+          -12.66
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Doubt"
+            }
+          ]
+        },
+        "yaw": 2.73,
+        "position": [
+          9.8,
+          -0.43,
+          -11.08
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      6.27,
+      -0.43,
+      -12.65
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91305177
+  },
+  "91358004": {
+    "id": 91358004,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Doubt"
+            }
+          ]
+        },
+        "yaw": 2.01,
+        "position": [
+          4.83,
+          -0.43,
+          -12.6
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Doubt"
+            }
+          ]
+        },
+        "yaw": 318.21,
+        "position": [
+          0.86,
+          -0.43,
+          -10.95
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      6.27,
+      -0.43,
+      -12.65
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91305177
+  },
+  "91358473": {
+    "id": 91358473,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 999,
+                  "name": "cryTimeOut"
+                },
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 3.99,
+        "position": [
+          5.49,
+          -0.43,
+          -12.16
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      5.48,
+      -0.43,
+      -12.65
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91305177
+  },
+  "91356111": {
+    "id": 91356111,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_MakeLoveForever",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 999,
+                  "name": "MakeLoveTimeOut"
+                },
+                {
+                  "realValue": true,
+                  "name": "tIsLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 271.83,
+        "position": [
+          5.99,
+          -0.43,
+          -12.65
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      6.27,
+      -0.43,
+      -12.65
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91305177
+  }
+}

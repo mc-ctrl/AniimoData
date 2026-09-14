@@ -1,0 +1,50 @@
+{
+  "BPName": "ability_11330521",
+  "NodeID": 1,
+  "UID": "6b2c8053-71c6-4d50-a9f2-aab290286336",
+  "abilityParamId": 10200101,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11330521001,
+      "name": "setCombatActionTimeline",
+      "UID": "a33b4f58-6784-4a88-99a7-d727cd451817",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "62": {
+      "buffId": 2113305,
+      "name": "removeBuff",
+      "UID": "67c86d1a-36b9-48c2-96a6-287d68948bc0",
+      "target": "OWNER",
+      "NodeID": 62
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_IceboundSlash"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Ice_Blunt_Big",
+    "Eff_Parmon_10133_Skill_TailSmash_Ice_Explosion",
+    "Eff_Parmon_10133_Skill_TailSmash_Ice_Attack_liuli",
+    "Eff_Parmon_10133_Skill_IceBreak_liuli",
+    "Eff_Hit_Ice_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "0",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "onAbilityEndIds": [
+    62
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2
+}

@@ -1,0 +1,101 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010041",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    6,
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "scale": 0.8125,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "343be3cb-9d55-464f-b5cf-fb96f06e5dea",
+      "effectId": "Eff_Monster_Robot_Normal_Def_Shield_Skill_Block_Wave",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "9": {
+      "delay": 0,
+      "interval": {
+        "calcId": 270010041,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "94bfc851-6920-41aa-bf7d-56a108036e15",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "f11c37ae-2b6f-45c8-965e-15c9f5bc88d4",
+      "name": "buffStartThink",
+      "NodeID": 9
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "actOnTargets",
+      "UID": "20db2705-5526-47a6-b387-86ae55ac75a8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6.5,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 6
+    },
+    "8": {
+      "calcId": 270010041,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "94bfc851-6920-41aa-bf7d-56a108036e15",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "32c37fa9-689e-4cd6-8c33-aefae561c806",
+      "effectId": "Eff_Monster_Robot_Normal_Def_Shield_Skill_Block_Wave",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 270010042,
+      "NodeID": 5,
+      "UID": "25c79775-c1ac-47b1-a234-cb2dc21d60c5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7
+  ],
+  "onBuffStartIds": [
+    9
+  ]
+}

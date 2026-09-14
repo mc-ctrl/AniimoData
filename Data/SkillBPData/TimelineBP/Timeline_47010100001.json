@@ -1,0 +1,312 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "1bfd29ba-1c83-4f3c-bcfa-e6c0489d1358",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          18
+        ]
+      },
+      "NodeID": 5
+    },
+    "39": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30303,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "rotAngle": 0,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "impulseId": 5005
+      },
+      "UID": "313735ac-ebc0-49a0-b76c-e2eead01ad79",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 39
+    },
+    "41": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "5adb14d9-1c3a-4841-ba23-f022ee00559e",
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": false,
+      "timeScale": 0.1,
+      "enableFrameFreeze": true,
+      "NodeID": 41
+    },
+    "35": {
+      "eventType": "NotifyState",
+      "endTime": 1.367,
+      "NodeID": 35,
+      "onExit": {
+        "actionIds": [
+          33
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          33
+        ]
+      },
+      "startTime": 0.1,
+      "tickInterval": 0.1,
+      "onEnter": {
+        "actionIds": [
+          33
+        ]
+      },
+      "UID": "d9908d5b-038f-4704-a950-28d1062b271d"
+    },
+    "44": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f98fec17-8240-44d1-b87c-581f01f12ffb",
+      "target": "OWNER",
+      "NodeID": 44,
+      "animId": "Skill_DashEnd"
+    },
+    "56": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "198ab5bd-ce29-4223-a387-434dbd3cc824",
+      "target": "TARGET",
+      "NodeID": 56,
+      "animId": "Hit_L"
+    },
+    "11": {
+      "UID": "37f72297-8b1c-4838-bee1-07e3c18442d5",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "3290d040-7989-48a1-aa6d-48a2ccc8946a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 20
+    },
+    "49": {
+      "name": "stopEffectStr",
+      "UID": "ee4a12fa-7d54-4068-ac75-e1bf3d843ee1",
+      "effectId": "Eff_EggMan_Skill_Sprint_01",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "3": {
+      "UID": "2887c44a-71dc-480c-a6b4-b1f7f72f266b",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "c1d6f070-df4c-40a4-9e4a-3e2a33b8bf7d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "33": {
+      "calcResultNodeId": 39,
+      "name": "actOnTargets",
+      "UID": "f4143a30-1907-4984-934a-8f08e39d6a47",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1,
+            2,
+            0.1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 3,
+      "needEcs": true,
+      "actionIds": [
+        39,
+        56
+      ],
+      "impulseId": 5005,
+      "NodeID": 33
+    },
+    "43": {
+      "UID": "02c31b8d-cbea-4ac9-8461-72afc637efc0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "NodeID": 43
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          44,
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.367,
+      "NodeID": 46,
+      "UID": "d79fc9f4-441b-4dba-bf2e-8188641a10e0"
+    },
+    "15": {
+      "UID": "8edda50f-da6e-4d41-bdd8-4fe3042e9a77",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": {}
+      },
+      "eventType": "Notify",
+      "time": 0.64,
+      "NodeID": 25,
+      "UID": "7fde8531-fc82-4d6e-b586-91cf25435230"
+    },
+    "26": {
+      "UID": "5e8f21e5-ba0d-46dc-8291-3c10022efa55",
+      "name": "registerStunCollision",
+      "NodeID": 26
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.47,
+      "NodeID": 27,
+      "UID": "2cbcb417-8d2a-4413-bece-91323929c763"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ac05cb9d-ebb8-40af-9875-03c7c2d427ec",
+      "effectId": "Eff_EggMan_Skill_Sprint_01",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 29,
+      "UID": "4388e425-aa3f-44e6-b8f8-ea0eab623aa0"
+    },
+    "18": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "5df8299d-a2a7-44a5-a448-7539cbf0c3bf",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.367,
+      "NodeID": 17,
+      "UID": "a7db2b19-900f-4538-a6d9-8ee0c3262265"
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "324792ff-0e64-4e38-8da6-c84a34aa8d71",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_Dash"
+    },
+    "23": {
+      "UID": "66695aca-513b-42bc-b2d4-2a156baaeab2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 23
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8cad00cb-6c5e-453a-b549-4cc2bd83e889",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10031_Skill_Dash_Dark",
+      "NodeID": 22
+    }
+  },
+  "BPName": "ability_47010100",
+  "NodeID": 7,
+  "UID": "eb632ad4-0ab2-4a9e-8ed3-ad1fb8efeca8",
+  "eventIds": [
+    17,
+    5,
+    13,
+    20,
+    46,
+    23,
+    27,
+    25,
+    35,
+    43,
+    29
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

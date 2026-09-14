@@ -1,0 +1,166 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103222",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "petTarget": "OWNER",
+      "triggerId": 20002022,
+      "name": "onEntityTrigger",
+      "UID": "09b46af4-f679-46e1-a7f8-d95e1947180c",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "23": {
+      "delay": 0,
+      "interval": 0.05,
+      "UID": "7be4a7bd-0330-488f-ac2f-972196467066",
+      "name": "buffStartThink",
+      "NodeID": 23
+    },
+    "14": {
+      "actionIds": [
+        12,
+        17,
+        18,
+        19
+      ],
+      "name": "registerReceiveDamageThreshold",
+      "UID": "eff8d80d-7fa5-4951-98e2-899368462b09",
+      "thresholdCount": 6,
+      "NodeID": 14
+    },
+    "22": {
+      "stateName": "BOSS_CAPTURE_ST",
+      "name": "checkState",
+      "UID": "bd099109-8959-40aa-8e32-e04fef897281",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "21": {
+      "id": 2020,
+      "hasCountDown": true,
+      "NodeID": 21,
+      "UID": "2e0f52c2-75a0-455f-83b0-88add2d14abe",
+      "name": "hideBossMechanismTip"
+    },
+    "7": {
+      "actionIds": [
+        3,
+        9,
+        21,
+        19
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "1a5ba318-ac25-4c63-9f4e-1af38d9699fa",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "buffId": 2103222,
+      "name": "removeBuff",
+      "UID": "9c5374a0-3cd7-4aa9-af55-d163189e5806",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "03e84d02-937e-4678-87f0-45b852982f92",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 8
+    },
+    "17": {
+      "duration": 0.5,
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17,
+      "UID": "5648d5a6-811c-45ff-8b90-2a1cc9b51afd",
+      "name": "addTimer"
+    },
+    "9": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "286eb53a-d437-4f62-8e28-69c9e1bf6af0",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 9
+    },
+    "18": {
+      "key": "cloakF",
+      "name": "setServerCacheVal",
+      "UID": "6d031650-16c4-44b7-987d-8705eb5146a2",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 18
+    },
+    "5": {
+      "actionIds": [
+        3,
+        9,
+        21,
+        19
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "72a90cd7-6e9f-46ab-bed5-e76220ca0012",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "19": {
+      "name": "destroyCreatedEntity",
+      "UID": "ed248d4a-793a-46a4-a634-83dcc3085d3f",
+      "target": "OWNER",
+      "entityType": "Puppet",
+      "NodeID": 19
+    },
+    "20": {
+      "id": 2020,
+      "duration": 22,
+      "NodeID": 20,
+      "UID": "dc8b86d5-0b59-493e-a5d5-bd9294997c7e",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "12": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "bp_cur": "param1",
+        "type": 1,
+        "id": 2103222
+      },
+      "UID": "2b611024-ab69-4ea0-aa2a-8ebf6f8532ed",
+      "target": "OWNER",
+      "NodeID": 12,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    }
+  },
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "onBuffDestroyIds": [
+    3,
+    9,
+    21,
+    19
+  ],
+  "onBuffStartIds": [
+    20,
+    8,
+    14,
+    5,
+    23
+  ]
+}

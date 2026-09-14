@@ -1,0 +1,211 @@
+{
+  "91220178": {
+    "name": 1497465399,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "91220188": {
+    "name": 1990637528,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72269752": {
+    "name": 1991055440,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72270062": {
+    "name": 1512033005,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72270727": {
+    "name": 1975343811,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72270757": {
+    "name": 1369795131,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72342010": {
+    "name": 1898192038,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72356123": {
+    "name": 1873922529,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72356133": {
+    "name": 1270134235,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72356417": {
+    "name": 1829673797,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72356420": {
+    "name": 1923582231,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72356456": {
+    "name": 1934917769,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72356519": {
+    "name": 1825636581,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72356521": {
+    "name": 1114220208,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72577237": {
+    "name": 1295376127,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "72577247": {
+    "name": 2140846661,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "84198088": {
+    "name": 1162558532,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "87336324": {
+    "name": 1383493226,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  },
+  "90843359": {
+    "name": 1816124739,
+    "mainScene": 3000,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "enterRegion": "ENTERSEAMLESS_MIRROR"
+  }
+}

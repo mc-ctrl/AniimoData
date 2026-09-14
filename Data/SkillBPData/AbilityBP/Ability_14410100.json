@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_14410100",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10900490,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "timelineId": 14410100001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ArcAttack"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Wind_Blunt",
+    "Eff_Debuff_stun",
+    "Eff_Parmon_10441_Skill_FallAttack"
+  ],
+  "searchRelation": 2,
+  "name": "风普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    14410001,
+    14410002
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

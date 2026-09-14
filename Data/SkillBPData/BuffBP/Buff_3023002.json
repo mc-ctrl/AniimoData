@@ -1,0 +1,93 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_3023002",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": true,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 3023002,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 12,
+        "UID": "25edc6c7-eee8-4ec1-ac5b-a02ac5977f13",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "3dc1a907-7ebf-4a90-9768-d4a360b6da7c",
+      "NodeID": 3,
+      "lValue": {
+        "key": "30230020",
+        "name": "getCacheVal",
+        "UID": "d5ee36ab-3538-4536-bdd9-b6aa62d066e7",
+        "target": "OWNER",
+        "NodeID": 2
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "7329cb7c-a418-4893-b4f7-65e3e37f6945",
+      "oldPetActionIds": [
+        11
+      ],
+      "NodeID": 8,
+      "newPetActionIds": [
+        6
+      ]
+    },
+    "13": {
+      "key": "30230020",
+      "name": "setCacheVal",
+      "UID": "9639178a-dd54-4aa6-9838-6d3a7077f86c",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 13
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "b0aa56af-ee6a-41be-b2fb-fa50942d9040",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 9
+    },
+    "6": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "150fcbf1-789a-4358-8af3-d656aea0db0a",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "d0620d9d-4841-420e-992e-29799562e3ec",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 11
+    },
+    "12": {
+      "calcId": 3023002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "25edc6c7-eee8-4ec1-ac5b-a02ac5977f13",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "onBuffDestroyIds": [
+    9,
+    13
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    6
+  ]
+}

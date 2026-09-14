@@ -1,0 +1,639 @@
+{
+  "91008483": {
+    "id": 91008483,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CastCutsomSkill",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 12930900,
+                  "name": "tSkillId"
+                },
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 3,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 288.05,
+        "position": [
+          -593.27,
+          157.05,
+          1264.62
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "position": [
+          -599.52,
+          155.05,
+          1260.18
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "position": [
+          -596.53,
+          155.32,
+          1257.73
+        ],
+        "ignoreRotation": true,
+        "yaw": 36.35,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "position": [
+          -593.18,
+          156.3,
+          1260.08
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -593.27,
+      157.05,
+      1264.62
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91007180
+  },
+  "91008499": {
+    "id": 91008499,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 346.21,
+        "position": [
+          -605.2,
+          155.4,
+          1270.34
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Laugh",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -596.96,
+          155.55,
+          1272.67
+        ],
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "position": [
+          -597.67,
+          155.91,
+          1276.47
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "position": [
+          -601.48,
+          155.92,
+          1276.73
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "position": [
+          -603.92,
+          155.6,
+          1273.11
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "position": [
+          -600.76,
+          155.44,
+          1270.94
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "position": [
+          -600.17,
+          155.71,
+          1274.01
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          -605.43,
+          155.66,
+          1275.19
+        ],
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 20.65,
+        "position": [
+          -607.09,
+          155.56,
+          1272.42
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -617.08,
+      156.13,
+      1261.19
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91007180
+  },
+  "91008949": {
+    "id": 91008949,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "position": [
+          -610.47,
+          155.12,
+          1261.16
+        ],
+        "ignoreRotation": true,
+        "yaw": 323.6,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 45.93,
+        "position": [
+          -612.92,
+          155.36,
+          1259.11
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Cry",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_Alert"
+            },
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "position": [
+          -614.81,
+          155.76,
+          1261.09
+        ],
+        "ignoreRotation": true,
+        "yaw": 29.38,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 45.93,
+        "position": [
+          -613.36,
+          155.71,
+          1263.59
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 45.93,
+        "position": [
+          -610.93,
+          155.39,
+          1264.06
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -601.18,
+      155.07,
+      1258.24
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91007180
+  },
+  "91009031": {
+    "id": 91009031,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 130.31,
+        "position": [
+          -605.91,
+          154.18,
+          1251.7
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 146.23,
+        "position": [
+          -608.93,
+          154.23,
+          1250.24
+        ],
+        "ignoreRotation": true,
+        "behaviorPatrolMoveType": 1,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Laugh",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "yaw": 270.02,
+        "position": [
+          -611.65,
+          154.56,
+          1252.55
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Behav_Love",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 3.27,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Love",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 60.65,
+        "position": [
+          -606.74,
+          154.46,
+          1255.04
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -610.74,
+      156.67,
+      1265.07
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91007180
+  },
+  "91065869": {
+    "id": 91065869,
+    "editorName": "定位镜头用",
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_Node_Com_IdleSpecial"
+            }
+          ]
+        },
+        "yaw": 249.81,
+        "position": [
+          -603.39,
+          153.95,
+          1249.64
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_Node_Com_IdleSpecial"
+            }
+          ]
+        },
+        "yaw": 249.81,
+        "position": [
+          -594.54,
+          155.11,
+          1253.49
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_Node_Com_IdleSpecial"
+            }
+          ]
+        },
+        "yaw": 249.81,
+        "position": [
+          -595.08,
+          155.18,
+          1254.71
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_Node_Com_IdleSpecial"
+            }
+          ]
+        },
+        "yaw": 249.81,
+        "position": [
+          -596.63,
+          154.81,
+          1253.72
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      -601.74,
+      154.85,
+      1254.18
+    ],
+    "sandboxId": 91007180
+  },
+  "91008471": {
+    "id": 91008471,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_ShowEmojiBubble",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Happy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 2,
+                  "name": "tEmojiBubbleTimeout"
+                }
+              ]
+            },
+            {
+              "templateKey": "PBT_Node_Com_IdleSpecial"
+            }
+          ]
+        },
+        "yaw": 249.81,
+        "position": [
+          -602.44,
+          154.81,
+          1263.32
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 248.3,
+        "position": [
+          -603.45,
+          154.62,
+          1258.3
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 262.48,
+        "position": [
+          -605.64,
+          154.67,
+          1259.31
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 262.48,
+        "position": [
+          -605.52,
+          154.77,
+          1263.13
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -606.45,
+      154.85,
+      1264.13
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91007180
+  }
+}

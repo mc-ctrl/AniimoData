@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_14540202",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800570,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14540202001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_RollingBall_Start",
+    "Skill_RollingBall_End",
+    "Skill_RollingBall_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10454_Skill_RollingBall_Down_01",
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10454_Skill_RollingBall_Down_03",
+    "Eff_Skill_Common_Warning_Red01_NoFrame",
+    "Eff_Parmon_10454_Skill_RollingBall_Diffuse",
+    "Eff_Parmon_10454_Skill_RollingBall_Down_02",
+    "Eff_Parmon_10454_Skill_RollingBall_move",
+    "Eff_Parmon_10454_Skill_RollingBall_Down_GatherLoop",
+    "Eff_Parmon_10454_Skill_RollingBall_Rock_Hit",
+    "Eff_Parmon_10454_Skill_RollingBall_move_02",
+    "Eff_Boss_Debuff_Weak"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

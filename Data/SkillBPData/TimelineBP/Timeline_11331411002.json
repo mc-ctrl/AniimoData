@@ -1,0 +1,54 @@
+{
+  "nodeMap": {
+    "77": {
+      "UID": "9fc0a722-e930-44bf-9d8c-b57288c9fde2",
+      "name": "stopAnimation",
+      "anim": "Behav_HappyLoop",
+      "NodeID": 77
+    },
+    "63": {
+      "target": "OWNER",
+      "duration": 8,
+      "buffId": 1000601,
+      "NodeID": 63,
+      "UID": "e6239e9b-e7e7-41e4-b833-cf8534d1085e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "72": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "c2a8b127-04da-4b72-9f71-710200b9abe6",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "65": {
+      "UID": "51559875-9d84-452e-ba3b-9957a5bf2f15",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          77,
+          63,
+          72,
+          76
+        ]
+      },
+      "NodeID": 65
+    },
+    "76": {
+      "UID": "3d8074a8-c954-4b5b-abdc-a8280ca4d878",
+      "value": "weak",
+      "name": "print",
+      "NodeID": 76
+    }
+  },
+  "BPName": "ability_11331411",
+  "NodeID": 67,
+  "UID": "1dbb1855-fcff-4a99-8243-c23711512d34",
+  "eventIds": [
+    65
+  ],
+  "layer": "Base",
+  "length": 8
+}

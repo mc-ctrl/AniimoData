@@ -1,0 +1,78 @@
+{
+  "3005": {
+    "becomeEggTime": 0,
+    "maxEgg": {},
+    "regionId": {},
+    "transmitterGrabTime": 10,
+    "transmitterId": {},
+    "transmitterNumber": 0,
+    "transmitterTime": 0,
+    "GameGoalID": [
+      500001,
+      500001,
+      500001,
+      500011,
+      500021,
+      500031
+    ],
+    "transmitterTime1": [
+      10,
+      10,
+      10,
+      30,
+      60,
+      180
+    ]
+  },
+  "3004": {
+    "maxEggMarkId": 90970563,
+    "transmitterTime1": [
+      10,
+      10,
+      10,
+      30,
+      60,
+      180
+    ],
+    "transmitterTime": 0,
+    "transmitterNumber": 5,
+    "becomeEggTime": 0,
+    "maxEgg": {
+      "91021283": [
+        5011210
+      ]
+    },
+    "regionId": {
+      "91010297": 0,
+      "91018408": 0,
+      "91018550": 0,
+      "91010289": 0
+    },
+    "transmitterGrabTime": 10,
+    "transmitterId": [
+      91018550,
+      91018408,
+      91010297,
+      91010289,
+      91033721
+    ],
+    "coreAreaID": 41008,
+    "coreAreaNameID": 90817651,
+    "doubleEnemyId": [
+      91033413,
+      91033408,
+      91033403,
+      91033399,
+      91033395,
+      91033388,
+      91033384,
+      91033381
+    ],
+    "doubleEnemyNumber": 3,
+    "doubleEnemyTime": [
+      120,
+      300
+    ],
+    "maxEggDropProbability": 0
+  }
+}

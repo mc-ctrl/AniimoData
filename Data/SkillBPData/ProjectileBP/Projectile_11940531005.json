@@ -1,0 +1,99 @@
+{
+  "duration": 0.5,
+  "BPName": "ability_11940531",
+  "NodeID": 72,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Chop04",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "moveSpeed": 5,
+  "onProjectileHitIds": [
+    79
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "nodeMap": {
+    "81": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11940531,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "2e0e229f-04af-4dca-8135-bd473cf238a7",
+      "target": "TARGET",
+      "NodeID": 81,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10104,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 5000
+      }
+    },
+    "79": {
+      "calcResultNodeId": 81,
+      "name": "actOnTargets",
+      "UID": "5400a50c-8fb4-4bc9-87f5-0f0e9d8448a5",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            90,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            15,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        81
+      ],
+      "impulseId": 5000,
+      "NodeID": 79
+    }
+  },
+  "UID": "509490c4-49ae-4259-b47d-7c1444e0a4ac",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 81,
+  "impulseId": 5000,
+  "acceleration": -10
+}

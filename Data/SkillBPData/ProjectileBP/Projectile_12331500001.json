@@ -1,0 +1,161 @@
+{
+  "duration": 5,
+  "calcResultNodeId": 10,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "ignoreAbilityElement": true,
+  "onProjectileGroundedIds": [
+    36
+  ],
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "effectId": "Eff_Parmon_10233_Skill_Hypnospore02",
+  "maxHitNum": 1,
+  "relation": 2,
+  "hasAttackDataInOnProjectileHit": false,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    13,
+    32
+  ],
+  "onProjectileHitIds": [
+    33
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "36": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "acf4ab48-1de6-4d3c-a630-e770e95f65ab",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10233_SleepSpore_Hit",
+      "NodeID": 36
+    },
+    "13": {
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "710fc46e-e6d2-4bbf-8e4d-d1f1972555f5",
+      "name": "doActionsByConditions",
+      "NodeID": 13,
+      "elseActionIds": [
+        12
+      ]
+    },
+    "29": {
+      "target": "TARGET",
+      "duration": -1,
+      "buffId": 21233001,
+      "NodeID": 29,
+      "UID": "5bee7591-be65-4a05-9508-4c854b4faa05",
+      "layer": 20,
+      "name": "addBuff",
+      "level": 1
+    },
+    "32": {
+      "pos": {
+        "UID": "ffd07547-e1d3-47f2-8e82-eea0e68e79d3",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "rotation": "PROJECTILE",
+          "radius": 0,
+          "NodeID": 30,
+          "UID": "2363efb6-cf22-42e2-bfbb-5b2178606f64",
+          "angle": 0,
+          "center": "PROJECTILE",
+          "name": "getRotatedPoint"
+        },
+        "NodeID": 31
+      },
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "db6de07e-31a5-4824-af55-bdd9a925bf3a",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore03",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "10": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "parmon_starmage_skill_charm_hit_Psychic",
+        "hitCameraShakeId": 21113
+      },
+      "UID": "b4f18aea-e0d2-42cd-b7de-3508d2d16993",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "fb010140-a105-45a1-8e0c-4548ffa67bd4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10233_SleepSpore_Hit",
+      "NodeID": 33
+    },
+    "35": {
+      "name": "hasBuffTag",
+      "UID": "ce16cff5-95f3-4d8f-963a-06d90e61c821",
+      "target": "TARGET",
+      "NodeID": 35,
+      "buffTag": 21
+    },
+    "12": {
+      "calcResultNodeId": 10,
+      "name": "actOnTargets",
+      "UID": "bed2db78-c379-4ff9-ae2d-80c5ee49f0ec",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        10,
+        29
+      ],
+      "isScaleWithModel": true,
+      "impulseId": 2000,
+      "NodeID": 12
+    }
+  },
+  "tickInterval": 0.05,
+  "BPName": "ability_12331500",
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

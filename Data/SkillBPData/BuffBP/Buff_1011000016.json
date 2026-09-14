@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "add_cur_hp_fix": 12000,
+        "hp_max_fix": 12000
+      },
+      "isClearOld": true,
+      "UID": "9def29e3-f096-4024-ab02-ce1b9d03a152",
+      "target": "OWNER",
+      "name": "addDynamicAttribute",
+      "NodeID": 3
+    },
+    "6": {
+      "calcInfo": {
+        "add_cur_hp_fix": 12000
+      },
+      "isClearOld": true,
+      "UID": "8f4711ce-121f-4eab-bdb8-d13deed6f027",
+      "target": "OWNER",
+      "name": "addDynamicAttribute",
+      "NodeID": 6
+    }
+  },
+  "BPName": "buff_1011000016",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6
+  ]
+}

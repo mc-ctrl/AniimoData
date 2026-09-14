@@ -1,0 +1,45 @@
+{
+  "300001": {
+    "3": {
+      "collectNum": 24,
+      "reward": 22004
+    },
+    "4": {
+      "collectNum": 32,
+      "reward": 22005
+    },
+    "6": {
+      "collectNum": 48,
+      "reward": 22007
+    },
+    "10": {
+      "collectNum": 82,
+      "reward": 22011
+    },
+    "7": {
+      "collectNum": 56,
+      "reward": 22008
+    },
+    "8": {
+      "collectNum": 64,
+      "reward": 22009
+    },
+    "9": {
+      "collectNum": 72,
+      "reward": 22010
+    },
+    "5": {
+      "collectNum": 40,
+      "reward": 22006
+    },
+    "0": {},
+    "1": {
+      "collectNum": 8,
+      "reward": 22002
+    },
+    "2": {
+      "collectNum": 16,
+      "reward": 22003
+    }
+  }
+}

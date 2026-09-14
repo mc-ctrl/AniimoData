@@ -1,0 +1,46 @@
+{
+  "duration": 2.5,
+  "calcResultNodeId": 14,
+  "NodeID": 0,
+  "effectId": "Eff_Avatar_Male_Attack_04_01",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "nodeMap": {
+    "14": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 910000107,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "51c6071d-8114-4f8c-963b-d9b05668e3a7",
+      "target": "TARGET",
+      "NodeID": 14,
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "impulseId": 2002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "SFX_Combat_Boy_Hit",
+        "hitCameraShakeId": 0
+      }
+    }
+  },
+  "moveSpeed": 17,
+  "onProjectileHitIds": [
+    14
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 3,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0.1,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "BPName": "ability_910000107",
+  "impulseId": 2002,
+  "acceleration": 20
+}

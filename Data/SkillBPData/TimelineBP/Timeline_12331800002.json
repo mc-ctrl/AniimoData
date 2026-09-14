@@ -1,0 +1,284 @@
+{
+  "nodeMap": {
+    "112": {
+      "name": "hideModel",
+      "UID": "7bd84ab3-8fa1-4ae7-b8e9-6d45fc01e884",
+      "target": "OWNER",
+      "NodeID": 112,
+      "maxHideTime": 10
+    },
+    "96": {
+      "name": "stopEffectStr",
+      "UID": "59965f8f-dd7b-48b0-a1be-56e1dff6d039",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_Hurricane_Start",
+      "target": "OWNER",
+      "NodeID": 96
+    },
+    "81": {
+      "UID": "abb7c78f-8f6c-4bb1-aa43-36939777a613",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          79
+        ]
+      },
+      "NodeID": 81
+    },
+    "114": {
+      "action": {
+        "actionIds": [
+          112,
+          115
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 114,
+      "UID": "e62338ad-0b8e-494c-8709-236f7f604945"
+    },
+    "98": {
+      "name": "stopEffectStr",
+      "UID": "2dc9776e-331d-4b15-839d-dff5a6a329c7",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_Hurricane_Loop_01",
+      "target": "OWNER",
+      "NodeID": 98
+    },
+    "115": {
+      "name": "dropEffectStr",
+      "UID": "e2073b06-9f1c-4df2-abae-1b13bfca0941",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_MirrorImage",
+      "target": "OWNER",
+      "NodeID": 115
+    },
+    "99": {
+      "name": "stopEffectStr",
+      "UID": "81c0acce-e669-41af-95aa-311fe3af5658",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_Hurricane_Loop_02",
+      "target": "OWNER",
+      "NodeID": 99
+    },
+    "100": {
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "edbd754d-675e-4ea1-ba03-e8a2abb76271",
+      "ignoreSelf": false,
+      "NodeID": 100
+    },
+    "138": {
+      "UID": "4fdbfabe-a736-4cbe-a1a4-318a4ea0146b",
+      "name": "cancelCameraLockOnTarget",
+      "checkCaster": false,
+      "NodeID": 138
+    },
+    "118": {
+      "buffId": 21233003,
+      "name": "removeBuff",
+      "UID": "40991c14-d2e1-4afa-bf3f-4eee5e810567",
+      "target": "CASTER",
+      "NodeID": 118
+    },
+    "86": {
+      "target": "OWNER",
+      "pitch": [
+        60,
+        -60
+      ],
+      "name": "cameraLockOnTarget",
+      "UID": "e5d93077-dfb9-48f8-9dca-6aa1935d51d2",
+      "shoulder": [
+        0,
+        1.854,
+        -5.562
+      ],
+      "NodeID": 86,
+      "checkCaster": false
+    },
+    "103": {
+      "action": {
+        "actionIds": [
+          101
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.06667,
+      "NodeID": 103,
+      "UID": "bedbba34-fb2c-4134-9d04-9e1c47a4f675"
+    },
+    "134": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 21233003,
+      "NodeID": 134,
+      "UID": "eb2ae1e2-0c8d-4e90-b207-d781626c67ee",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "120": {
+      "isTemp": true,
+      "NodeID": 120,
+      "UID": "36df34f0-a3a1-46d2-8193-d98a14fc71da",
+      "distance": 60,
+      "name": "playerForceLock"
+    },
+    "88": {
+      "action": {
+        "actionIds": [
+          92,
+          99,
+          86,
+          100,
+          120
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 88,
+      "UID": "032301ed-c46b-47ba-ab14-729406e2d5d8"
+    },
+    "105": {
+      "target": "OWNER",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f192033e-d92d-49e5-85a3-a9b161912b39",
+      "speed": 1,
+      "NodeID": 105,
+      "animId": "Skill_MirrorImage"
+    },
+    "89": {
+      "UID": "1094e8f1-5dbf-49a2-b373-4a9e0f0664ae",
+      "name": "cancelCameraLockOnTarget",
+      "NodeID": 89
+    },
+    "101": {
+      "UID": "806797fe-20a0-4191-b5c2-121910840f6f",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 101
+    },
+    "127": {
+      "UID": "3b3b5729-0508-45d7-aba7-b3700067bd1c",
+      "name": "hideBattleDialog",
+      "dialogId": 71000006,
+      "NodeID": 127
+    },
+    "107": {
+      "action": {
+        "actionIds": [
+          105,
+          111,
+          134
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 107,
+      "UID": "a95c035d-c1ca-4053-b8b6-1875fe1ed034"
+    },
+    "91": {
+      "action": {
+        "actionIds": [
+          89,
+          127,
+          96,
+          98
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.06667,
+      "NodeID": 91,
+      "UID": "ec4c8deb-bcb9-434d-80b6-4c35281e7eeb"
+    },
+    "108": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 108,
+      "UID": "33b1b87c-f5c3-4731-a6e1-083ec77ac398",
+      "bone": "Bone R Hair C",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_MirrorImage"
+    },
+    "92": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "903aab5a-cc63-4905-a767-b053bb48f14a",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_Hurricane_End_01",
+      "speed": 1,
+      "NodeID": 92
+    },
+    "121": {
+      "time": 0.1,
+      "rotateSpeed": 3600,
+      "name": "rotateTo",
+      "UID": "80bb976f-8763-49a4-b8a1-a6fa0235797b",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 121
+    },
+    "93": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5e0cc449-ad30-4468-8f2e-5a72087cbc23",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_Hurricane_End_02",
+      "speed": 1,
+      "NodeID": 93
+    },
+    "110": {
+      "action": {
+        "actionIds": [
+          108
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.66,
+      "NodeID": 110,
+      "UID": "6df250f0-6168-49dd-bb3e-978531a60063"
+    },
+    "79": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b9907e8e-190f-43b6-ae06-b3803f241eee",
+      "target": "OWNER",
+      "NodeID": 79,
+      "animId": "Skill_Hurricane_End"
+    },
+    "111": {
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 111,
+      "UID": "31b68899-f06c-4d14-9005-8d1c1abba00e",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10233_Mon_Skill_MirrorImage",
+      "name": "playPreset"
+    },
+    "95": {
+      "action": {
+        "actionIds": [
+          93,
+          118,
+          121,
+          138
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 95,
+      "UID": "707bdf68-0c97-4dc8-880e-7290e3fbdb94"
+    }
+  },
+  "BPName": "ability_12331800",
+  "NodeID": 83,
+  "UID": "43492c54-42ff-4de7-a903-4f5bda56a0b9",
+  "eventIds": [
+    81,
+    103,
+    91,
+    88,
+    95,
+    107,
+    114,
+    110
+  ],
+  "layer": "Base",
+  "length": 4.6
+}

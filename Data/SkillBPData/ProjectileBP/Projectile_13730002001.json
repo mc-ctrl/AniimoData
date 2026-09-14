@@ -1,0 +1,104 @@
+{
+  "duration": 1,
+  "BPName": "ability_13730002",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10371_Attack02",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "trackingNoOffsetRotationRange": 3,
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "nodeMap": {
+    "85": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13730002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "7cf0d587-d0b5-4332-b20c-23b51ce42baa",
+      "target": "TARGET",
+      "NodeID": 85,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 2000,
+        "elementType": 13,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "126": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "940fecf1-a666-44de-945f-a5e3d152bcee",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Fox_Attack_Hit",
+      "NodeID": 126
+    },
+    "86": {
+      "actionIds": [
+        115
+      ],
+      "conditionActionIds": [
+        111
+      ],
+      "UID": "ad825d4a-3bc2-4b19-a554-0fef8475eb5f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        85
+      ],
+      "NodeID": 86
+    },
+    "115": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13730002,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "63f5ab69-d6a7-42f4-8cdb-6b7822ebf556",
+      "target": "TARGET",
+      "NodeID": 115,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 2000,
+        "elementType": 13,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "111": {
+      "buffId": 2137106,
+      "name": "hasBuff",
+      "UID": "d312316a-0727-4c17-89c5-9c0a0ef08eee",
+      "target": "OWNER",
+      "NodeID": 111
+    }
+  },
+  "onProjectileHitIds": [
+    86,
+    126
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "calcResultNodeId": 85,
+  "tickInterval": 0.05,
+  "angularIncreaseDuration": 0.1,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

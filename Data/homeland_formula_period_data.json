@@ -1,0 +1,16 @@
+[
+  {
+    "endDayTimeRefId": 11002,
+    "name": 1268198040,
+    "startDayTimeRefId": 11001,
+    "periodType": 2,
+    "istomorrow": 1
+  },
+  {
+    "endDayTimeRefId": 50001,
+    "name": 1450545537,
+    "startDayTimeRefId": 50000,
+    "periodType": 1,
+    "istomorrow": 1
+  }
+]

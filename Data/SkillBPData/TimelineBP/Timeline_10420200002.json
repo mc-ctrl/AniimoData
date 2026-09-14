@@ -1,0 +1,148 @@
+{
+  "nodeMap": {
+    "81": {
+      "UID": "3855a15e-096a-463c-86ae-424dc500dc91",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          80
+        ]
+      },
+      "NodeID": 81
+    },
+    "82": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 82,
+      "UID": "d60aac55-0bbe-4917-b1b8-5b723d1a9d03",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "75": {
+      "UID": "3d5dfe31-78cf-48e9-86e1-f6a0031c5789",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 75
+    },
+    "47": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0.3,
+        0.8
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "475add89-3849-4998-88b7-424b73dc9a71",
+      "effectId": "Eff_Parmon_10041_Skill_Bubble_Release",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "76": {
+      "action": {
+        "actionIds": [
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 76,
+      "UID": "344cd8e6-274e-4e26-9469-0509e92529b1"
+    },
+    "77": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 77,
+      "UID": "5b1c94fa-7170-4cab-b19b-0172892646bb",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "78": {
+      "action": {
+        "actionIds": [
+          77
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 78,
+      "UID": "489f48e3-3577-4af6-bdc2-ad77f1d06821"
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30,
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 32,
+      "UID": "ad48cb5e-7159-4469-b7e4-53d05eb8eb68"
+    },
+    "79": {
+      "UID": "2124273a-2c8e-4f03-994e-ddb1b24e48af",
+      "name": "checkIsInAutoAim",
+      "NodeID": 79
+    },
+    "30": {
+      "rotation": "ToAim",
+      "offsetXYZ": [
+        0,
+        0.5,
+        1.1
+      ],
+      "templateId": 10420200001,
+      "name": "createProjectile",
+      "UID": "33673616-7629-4a8b-a173-c1bdfd412563",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 30
+    },
+    "80": {
+      "actionIds": [
+        82
+      ],
+      "conditionActionIds": [
+        79
+      ],
+      "UID": "478b3b8a-af89-48e6-b67e-1fac1012d7a2",
+      "name": "doActionsByConditions",
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_10420200",
+  "NodeID": 34,
+  "UID": "e04b204a-4f52-42cd-970d-3678f3ad22cd",
+  "eventIds": [
+    32,
+    76,
+    78,
+    81
+  ],
+  "layer": "Base",
+  "length": 2.3
+}

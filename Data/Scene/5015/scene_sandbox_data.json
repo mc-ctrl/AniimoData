@@ -1,0 +1,30 @@
+{
+  "75086306": {
+    "areaType": 999,
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 3001,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_地图区域划分_出生点配置",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 75086306,
+    "spawnerId": 0,
+    "owner": "裴正猛",
+    "position": [
+      0,
+      0,
+      0
+    ]
+  }
+}

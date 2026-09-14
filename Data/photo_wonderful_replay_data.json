@@ -1,0 +1,57 @@
+{
+  "101111": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Sleep"
+  },
+  "101106": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Eat"
+  },
+  "101107": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Happy"
+  },
+  "101108": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_HeartBreak"
+  },
+  "101109": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Idle"
+  },
+  "101110": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_IdleSpeical"
+  },
+  "101101": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Alert"
+  },
+  "101105": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Doubt"
+  },
+  "101102": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Angry"
+  },
+  "101103": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Chat"
+  },
+  "101104": {
+    "recordDuration": 5,
+    "petPrototypeId": 1001100,
+    "behaviour": "ST_Dash"
+  }
+}

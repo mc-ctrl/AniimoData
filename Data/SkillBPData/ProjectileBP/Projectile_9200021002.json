@@ -1,0 +1,104 @@
+{
+  "refControlPoint": [
+    [
+      0,
+      2,
+      5
+    ],
+    [
+      0,
+      2,
+      15
+    ]
+  ],
+  "duration": 2.5,
+  "BPName": "ability_9200021",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Avatar_Female_Skill_Mushroom_Bullet",
+  "gravityRatio": 0.5,
+  "groundDestroy": false,
+  "autoSwitchTrack": true,
+  "nodeMap": {
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5b7d464d-ed27-49fa-a2d7-5758085b9f6d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_GetLarge_Attack",
+      "NodeID": 58
+    },
+    "55": {
+      "name": "showEmojiBubbleByRef",
+      "UID": "68bd898f-471e-4ebf-9bee-83ac5c9145f9",
+      "target": "CURPET_OR_TEAM_PET",
+      "emojiId": "Emoji_Test_Eat",
+      "NodeID": 55
+    },
+    "60": {
+      "target": "CURPET_OR_TEAM_PET",
+      "name": "playEffectStr",
+      "UID": "80791543-e063-4aa6-b692-442c8a499593",
+      "effectId": "Eff_Avatar_Female_Skill_Mushroom_Disappear01",
+      "speed": 1,
+      "NodeID": 60
+    },
+    "53": {
+      "target": "CURPET_OR_TEAM_PET",
+      "name": "playEffectStr",
+      "UID": "d961d0b5-fc00-4686-b060-5cf18c12f5b4",
+      "effectId": "Eff_Avatar_Female_Skill_Mushroom_Disappear",
+      "speed": 1,
+      "NodeID": 53
+    },
+    "51": {
+      "target": "CURPET_OR_TEAM_PET",
+      "duration": 15,
+      "buffId": 920002101,
+      "NodeID": 51,
+      "UID": "075ea849-e40d-43b4-854d-0210a1380f5b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "target": "CURPET_OR_TEAM_PET",
+      "name": "playEffectStr",
+      "UID": "d95cd59a-be03-49db-bca0-5ce905ffa13d",
+      "effectId": "Eff_VEG_Avatar_Mushroom",
+      "speed": 1,
+      "NodeID": 44
+    }
+  },
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    51,
+    44,
+    53,
+    55,
+    58,
+    60
+  ],
+  "performRatio": 0.8,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0.05,
+  "refTargetPoint": [
+    0,
+    0,
+    20
+  ],
+  "startSleepTime": 0,
+  "ignoreNonCurPetCollision": true,
+  "kind": "BezierCurve",
+  "maxHitNum": 0,
+  "acceleration": 0.5
+}

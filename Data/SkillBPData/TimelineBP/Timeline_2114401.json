@@ -1,0 +1,559 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "UID": "f927a64a-35a0-4fa2-ba58-0598dc74a9d8",
+      "name": "isReceiveBeAttackedEventElementType",
+      "elementType": 12,
+      "NodeID": 37
+    },
+    "38": {
+      "eventName": "DARKBOMB",
+      "name": "notifyCustomEvent",
+      "UID": "02977219-d6a5-4668-a5fd-5dedeaa85ac7",
+      "target": "MASTER",
+      "NodeID": 38
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3a6eff12-564e-4f61-b51b-a28622371d1c",
+      "effectId": "Eff_Parmon_10144_Skill_ThrowCap02_idle",
+      "speed": 1,
+      "NodeID": 39
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "2ce421bb-7473-4b07-94fd-104e3405ea4a",
+      "effectId": "Eff_Parmon_10144_Skill_ThrowCap02_idle",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "buffId": 2114401,
+      "name": "removeBuff",
+      "UID": "9b3be9c1-79db-4d1e-a81a-aaca1ec857db",
+      "target": "MASTER",
+      "NodeID": 41
+    },
+    "42": {
+      "calcId": 2114401,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 42,
+      "UID": "42e6671e-88f6-46d6-9b60-ef5120543de5",
+      "name": "getParamByLuaConfig"
+    },
+    "35": {
+      "templateId": 1014400,
+      "name": "checkTargetTemplateId",
+      "UID": "513b8bb3-5f9f-4520-bc8d-bc7ae1596cdd",
+      "target": "TrapTarget",
+      "NodeID": 35
+    },
+    "44": {
+      "UID": "10cf92c5-7d3e-4e44-ad4a-e0cb61062413",
+      "name": "getCombatContextAbilityId",
+      "eventName": "onCastAbility",
+      "NodeID": 44
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "931301fa-b0e9-414f-8b39-9ed1c2fa91b9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10144_Skill_ThrowCap_Start",
+      "NodeID": 67
+    },
+    "68": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "fc33b94a-e1e9-490a-9197-a4f211091402",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10144_Skill_ThrowCap_Loop",
+      "NodeID": 68
+    },
+    "69": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e80d822c-e78d-4504-a030-b8379b98c6d5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10144_Skill_ThrowCap_Energy",
+      "NodeID": 69
+    },
+    "3": {
+      "UID": "c474f78b-f8d8-4a2e-8d2c-faf596368702",
+      "actorId": {
+        "UID": "85abe4fa-538a-40c2-8bdc-4ebb08411fa7",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 2
+      },
+      "name": "destroyEntity",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "e3970bfc-4694-4578-99ab-4dd7d14f3cfc",
+      "target": "MASTER",
+      "NodeID": 4
+    },
+    "70": {
+      "name": "stopSoundStr",
+      "UID": "a0f20099-aae1-4d1f-b902-ec3d6b8f63dc",
+      "soundId": "SFX_Combat_10144_Skill_ThrowCap_Loop",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "64": {
+      "rValue": 8,
+      "name": "equal",
+      "UID": "def21edc-65dd-4878-9d0e-046a8ab0893c",
+      "NodeID": 64,
+      "lValue": {
+        "key": "2114401Hat",
+        "name": "getServerCacheVal",
+        "UID": "683d490e-110c-48f1-b0d6-ef63f09ec5f4",
+        "target": "OWNER",
+        "NodeID": 63
+      }
+    },
+    "62": {
+      "key": "2114401Hat",
+      "name": "setServerCacheVal",
+      "UID": "4db26a3b-3e0a-4195-b4eb-db74d21bcaaa",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "c27da7fe-39dc-4fab-abd8-50b8ce56e9eb",
+        "NodeID": 61,
+        "lValue": {
+          "key": "2114401Hat",
+          "name": "getServerCacheVal",
+          "UID": "b1756b3e-e4d6-4b9b-b57b-f8ba231b6ef0",
+          "target": "OWNER",
+          "NodeID": 60
+        }
+      },
+      "NodeID": 62
+    },
+    "59": {
+      "key": "2114401Hat",
+      "name": "setServerCacheVal",
+      "UID": "31df97b1-d966-4969-9880-f913f2fc81c5",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 59
+    },
+    "19": {
+      "UID": "cabdc063-9cff-46b8-8f91-c83e7a2f5273",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          17,
+          26,
+          38,
+          40,
+          59,
+          70
+        ]
+      },
+      "NodeID": 19
+    },
+    "57": {
+      "lockState": false,
+      "UID": "d4b6ab0d-aba4-4407-9a37-5a6e72e72218",
+      "name": "playerForceLock",
+      "distance": 15,
+      "NodeID": 57
+    },
+    "56": {
+      "action": {
+        "actionIds": [
+          54,
+          57,
+          68
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 56,
+      "UID": "68a69a86-3744-4e3a-a4f6-0fb01d9a4947"
+    },
+    "54": {
+      "UID": "32462567-20dc-4175-94e1-370e926e5f44",
+      "target": "OWNER",
+      "name": "setPetLockedActorId",
+      "NodeID": 54
+    },
+    "53": {
+      "UID": "b5dac4c8-10b9-42ca-9ba4-8b47d1ddb91a",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 53
+    },
+    "6": {
+      "UID": "178724e4-aa6e-4c5b-a16d-26d2f5571d56",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          58,
+          39,
+          16,
+          15,
+          24,
+          4,
+          34,
+          67
+        ]
+      },
+      "NodeID": 6
+    },
+    "52": {
+      "value": {
+        "rValue": {
+          "calcId": 2114401,
+          "calcType": 4,
+          "paramName": "param0",
+          "NodeID": 50,
+          "UID": "41a99ab7-e4d5-4866-a865-271788376611",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "b179ff3e-b1ef-4349-ba57-fb98599a60e5",
+        "NodeID": 51,
+        "lValue": {
+          "rValue": {
+            "key": "2114401Hat",
+            "name": "getServerCacheVal",
+            "UID": "741bab2b-e2a5-441e-8efc-4b53b6f006c5",
+            "target": "OWNER",
+            "NodeID": 65
+          },
+          "name": "sub",
+          "UID": "1fc0800e-03e8-48fd-8adb-293378203eca",
+          "NodeID": 66,
+          "lValue": 8
+        }
+      },
+      "name": "recoverEp",
+      "UID": "e7b168bd-b2c1-4d84-bff2-1e929e916b24",
+      "target": "MASTER",
+      "NodeID": 52
+    },
+    "50": {
+      "calcId": 2114401,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 50,
+      "UID": "41a99ab7-e4d5-4866-a865-271788376611",
+      "name": "getParamByLuaConfig"
+    },
+    "28": {
+      "UID": "cca08a10-abe3-403e-a133-949928195f1c",
+      "actorId": {
+        "UID": "af961d08-45fe-4bcc-893d-e5b86802fb60",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 27
+      },
+      "name": "destroyEntity",
+      "NodeID": 28
+    },
+    "47": {
+      "UID": "7b159766-d35d-4392-9b32-c6c0e20173d1",
+      "actorId": {
+        "UID": "961f23c5-c4c8-4e51-a3dc-87dfbbbed150",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 46
+      },
+      "name": "destroyEntity",
+      "NodeID": 47
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "770b68b3-de43-4c14-8f9d-7e17bb0d5487",
+      "effectId": "Eff_Parmon_10144_Skill_ThrowCap02_Wave02",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "31": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "5d39bee7-cb89-47e5-86c5-d76e146435dd",
+      "name": "doActionsByConditions",
+      "NodeID": 31
+    },
+    "45": {
+      "rValue": 11440200,
+      "name": "equal",
+      "UID": "7966b9a0-510c-482f-944b-77adaf535c38",
+      "NodeID": 45,
+      "lValue": {
+        "UID": "10cf92c5-7d3e-4e44-ad4a-e0cb61062413",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onCastAbility",
+        "NodeID": 44
+      }
+    },
+    "43": {
+      "value": {
+        "calcId": 2114401,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 42,
+        "UID": "42e6671e-88f6-46d6-9b60-ef5120543de5",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "8cdfbeda-70c9-4a34-b5a9-aaae74126da4",
+      "target": "TARGET",
+      "NodeID": 43
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "c773859c-7308-460f-bf5a-4f1011ad053f",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "26": {
+      "buffId": 2114401,
+      "name": "removeBuff",
+      "UID": "bae3651e-1a33-4540-92cd-b916eb703209",
+      "target": "MASTER",
+      "NodeID": 26
+    },
+    "20": {
+      "cameraShakeId": 30204,
+      "NodeID": 20,
+      "UID": "3ec267ee-1796-4a45-8d1a-aa2ad3d5de6a",
+      "target": "OWNER",
+      "name": "playCameraImpulseById",
+      "ignoreShakeCD": true
+    },
+    "12": {
+      "actionIds": [
+        28,
+        41
+      ],
+      "conditionActionIds": [
+        64
+      ],
+      "UID": "b05cf7bd-f4c6-4c72-9769-db24c293490d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23,
+        25,
+        62,
+        10,
+        22,
+        69
+      ],
+      "NodeID": 12
+    },
+    "22": {
+      "hitBoxMaxHitCnt": 8,
+      "needEcs": true,
+      "actionIds": [
+        43
+      ],
+      "NodeID": 22,
+      "UID": "d97a63a1-63c7-4439-a7ad-90b814aac428",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.5
+          ],
+          "shapeArgs": [
+            5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "1"
+    },
+    "23": {
+      "triggerName": "Hit",
+      "name": "setEffectAnimTrigger",
+      "UID": "45ed20ca-a482-47f4-b839-2a189e1f83b2",
+      "effectId": "Eff_Parmon_10144_Skill_Hat",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "24": {
+      "triggerName": "Stop",
+      "name": "setEffectAnimTrigger",
+      "UID": "27803e85-c687-4ba0-bb27-ecf5e551dda6",
+      "effectId": "Eff_Parmon_10144_Skill_Hat",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        53
+      ],
+      "UID": "be270f4e-1b6e-4321-bc42-895f187361c6",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "key": "delay",
+      "duration": 0.58333,
+      "actionIds": [
+        8,
+        20
+      ],
+      "NodeID": 10,
+      "UID": "e2806ac8-22ae-451d-958f-82efa503eba3",
+      "name": "addEntityTimer"
+    },
+    "15": {
+      "UID": "d21b82c3-eec9-4a19-bcbf-11be24fec5a3",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4053b4b8-c1d5-486e-a226-ba8549354f5c",
+      "effectId": "Eff_Parmon_10144_Skill_ThrowCap02_Wave01",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7ee5687c-14d9-40e0-92fa-7a64acccdcb3",
+      "effectId": "Eff_Parmon_10144_Skill_Hat",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "58": {
+      "key": "2114401Hat",
+      "name": "setServerCacheVal",
+      "UID": "6fdd1338-4826-4606-9e33-a6405cc20843",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 58
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "94224446-3596-4933-8b85-60d7eab86d18",
+      "effectId": "Eff_Parmon_10144_Skill_Hat",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "49": {
+      "buffId": 2114401,
+      "name": "removeBuff",
+      "UID": "2acb11e1-bdf0-4941-b444-79aca566e404",
+      "target": "MASTER",
+      "NodeID": 49
+    },
+    "30": {
+      "name": "isActorType",
+      "UID": "02eaf2b3-d2f2-417d-96c7-71c8b8801d30",
+      "target": "TrapTarget",
+      "NodeID": 30,
+      "actorType": 2
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 32,
+      "relation": 2,
+      "enterTrapActionIds": [
+        31
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        2
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "bdc4b58c-3256-4425-b32a-8399d536d69c"
+    },
+    "33": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "dc0a5b12-d7ba-44b1-b31e-60ab96ba462c",
+      "name": "doActionsByConditions",
+      "NodeID": 33
+    },
+    "34": {
+      "actionIds": [
+        33
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "da1df445-39a2-46d6-b29b-38f8f94f7986",
+      "target": "MASTER",
+      "NodeID": 34
+    },
+    "36": {
+      "actionIds": [
+        52,
+        47,
+        49
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "87901498-ee1c-435d-90de-4107c9af952d",
+      "name": "doActionsByConditions",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2114401",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    6,
+    56,
+    19
+  ],
+  "layer": "Base",
+  "length": 8
+}

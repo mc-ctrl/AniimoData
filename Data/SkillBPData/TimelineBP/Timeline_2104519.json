@@ -1,0 +1,197 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10005,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10043_Attack01_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 1000
+      },
+      "UID": "2a62c9af-486b-45c6-a834-d3d018cd6829",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "13": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8ab96c2b-8f78-4f48-b2c5-69e9461b54b8",
+      "effectId": "Eff_Parmon_10045_Skill_GrassTail_Wind_03",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0ed81c7e-efd1-40a0-aea2-fe88b9096a37",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_Tornado_Loop",
+      "NodeID": 24
+    },
+    "6": {
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 6,
+      "UID": "42c9452c-c1de-4ef7-a1f5-56c7c7bafd2c",
+      "onUpdate": {
+        "actionIds": [
+          5
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.6
+    },
+    "15": {
+      "UID": "57968cea-3478-475e-8df2-45ff291d3410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13,
+          20,
+          24
+        ]
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ff628de8-6bc0-46a6-989a-108379a8cfb2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_Tornado_End",
+      "NodeID": 25
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "3865c3ec-bb42-41bf-b101-6c7738903902",
+      "effectId": "Eff_Parmon_10045_Skill_GrassTail_Wind",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "26": {
+      "name": "stopSoundStr",
+      "UID": "748c6ea5-30e1-43a1-b0b0-4d5fe36e4f79",
+      "soundId": "SFX_Parmon_10045_Skill_Tornado_Loop",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "18": {
+      "UID": "e940d27f-04ca-4484-9482-c7bf6c195bbd",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16,
+          25,
+          26
+        ]
+      },
+      "NodeID": 18
+    },
+    "22": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 22,
+      "UID": "84ff10f8-1a0b-4aca-8b8f-3a4bc825c8b5",
+      "onUpdate": {
+        "actionIds": [
+          21
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          21
+        ]
+      }
+    },
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "b3abed13-259d-4bf4-8460-2de4d00d3ba9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        3
+      ]
+    },
+    "20": {
+      "target": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "bf089567-6c64-440e-be0b-0310ef47c8ad",
+        "target": "MASTER",
+        "NodeID": 19
+      },
+      "name": "followTarget",
+      "UID": "a9ed9e59-daeb-456f-9c11-023f4e25b3b2",
+      "stopDistance": 0,
+      "NodeID": 20,
+      "followSpeed": 3
+    },
+    "21": {
+      "lockTarget": {
+        "key": "targetId",
+        "name": "getCacheVal",
+        "UID": "bf089567-6c64-440e-be0b-0310ef47c8ad",
+        "target": "MASTER",
+        "NodeID": 19
+      },
+      "name": "lockTarget",
+      "UID": "503d374f-0a02-4f82-8d01-f57fac8b50ca",
+      "target": "OWNER",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2104519",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    15,
+    22,
+    18,
+    6
+  ],
+  "layer": "Base",
+  "length": 9999
+}

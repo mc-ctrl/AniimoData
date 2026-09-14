@@ -1,0 +1,20 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915940101",
+  "name": "特性增伤",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "calcInfoByLuaConfig": {
+    "id": 915940101,
+    "type": 1,
+    "taken_skill_dmg_inc_rate_v": "param0"
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": {}
+}

@@ -1,0 +1,98 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000112",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "value": {
+        "data": {
+          "UID": "05f2b758-c9f1-4182-892d-419eed9be254",
+          "name": "getEventData",
+          "eventName": "onCastAbility",
+          "NodeID": 3
+        },
+        "propertyName": "curEpCost",
+        "name": "getProperty",
+        "UID": "719487b5-30af-45c8-a3ba-d1d55eb5ceab",
+        "NodeID": 4
+      },
+      "name": "recoverEp",
+      "UID": "8f56b59d-8186-4bb1-b347-09eb9dfa1362",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "9": {
+      "calcId": 5000112,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "7f23e657-2e3c-4986-91c8-d160ee1a85b8",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "cf3d96d8-f53a-4a3e-9fb6-09b7511a8725",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "873d90b5-4bf5-4183-93b9-28aa0812452b",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "11": {
+      "UID": "7f53587e-b0f7-46f2-9e3f-858d3a04394f",
+      "randomPercent": {
+        "rValue": 100,
+        "name": "multiply",
+        "UID": "099b53af-a58f-4969-81ba-6e38808fe90c",
+        "NodeID": 10,
+        "lValue": {
+          "calcId": 5000112,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 9,
+          "UID": "7f23e657-2e3c-4986-91c8-d160ee1a85b8",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "isRandom",
+      "NodeID": 11
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "2cf19753-30a8-4e8b-9240-4b3b1738f413",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "12": {
+      "UID": "3f07901c-625f-45fe-9f62-5397421566f3",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

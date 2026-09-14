@@ -1,0 +1,283 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91026020",
+  "calcInfoByLuaConfig": {
+    "id": 91026020,
+    "dmg_break_add_ratio": "param0",
+    "type": 1,
+    "combat_ep_regen_p": "param1"
+  },
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    3,
+    9,
+    6,
+    10,
+    17,
+    16,
+    18
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2e25dd96-1425-4d6a-9cc0-8dc4ec9d76a3",
+      "target": "OWNER",
+      "NodeID": 5,
+      "animId": "Passive_Start"
+    },
+    "6": {
+      "key": "1",
+      "duration": 0.17,
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "b2b9d670-0390-40f5-90a2-cdc122a0eddc",
+      "name": "addTimer"
+    },
+    "7": {
+      "UID": "f26a7c01-68ff-4dcf-81a4-055778d9f7e5",
+      "name": "stopAnimation",
+      "anim": "Passive_Start",
+      "NodeID": 7
+    },
+    "33": {
+      "UID": "096d171e-3b7c-4f17-8b8b-b77e994f3b05",
+      "name": "removeMaterialEffect",
+      "key": "10026_Qishi",
+      "NodeID": 33
+    },
+    "23": {
+      "name": "checkPetPrototypeId",
+      "UID": "55989101-9df9-4308-ba5c-4aa9099266b8",
+      "target": "OWNER",
+      "petPrototypeId": 1002601,
+      "NodeID": 23
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2c34b370-8aad-4752-826f-857864dae548",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01_Red",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "453ef83b-06dc-4860-a35b-fef1df7c60b4",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Passive_End"
+    },
+    "30": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "1141e7ca-e8ac-4195-bdcb-6c051e20d4d9",
+      "to": 10269900,
+      "NodeID": 30,
+      "from": 10269900
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "49373649-dc5a-4537-83ed-7176bd6f6a37",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01_Ice",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "11": {
+      "blendShapeName": "BS_10026_Harden",
+      "fromWeight": 100,
+      "NodeID": 11,
+      "UID": "b9d6e559-dd77-4df1-8416-fa6e55594583",
+      "transitionDuration": 1,
+      "targetWeight": 0,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "919842e1-6215-4783-9041-0588edd671d9",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "5838b818-8afd-413e-a1e1-3c35afe10689",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10026_Skill_Ex_New_Buff_Fresnel",
+      "NodeID": 21
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7c594c9f-f880-4bd4-8f69-cbc5bff62b4a",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "duration": 2,
+      "disableWhenFinished": true,
+      "NodeID": 13,
+      "UID": "98b5b6ef-e09d-4f6e-a345-bafd34bd39c4",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10027_Harden",
+      "name": "playPreset"
+    },
+    "24": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "d424949d-4982-492b-9b27-344e30e7b4cd",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 24
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "0dd5ef66-8e14-472e-b3e0-4ac956b705ee",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01_Ice",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "10": {
+      "blendShapeName": "BS_10026_Harden",
+      "fromWeight": 0,
+      "NodeID": 10,
+      "UID": "5fdff59d-73e0-4cce-8b0e-e0225fe0231c",
+      "transitionDuration": 1,
+      "targetWeight": 100,
+      "name": "tweenSMRBlendShapeWeight"
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "acd74bdc-74f9-4a92-9fcd-29785118a7f1",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01_Red",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "d6664d2d-2a01-498c-97fd-cd070545eba5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 25
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "1b5edfff-9253-4d66-8c87-e8e4ecfebaf3",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "57e3d5e2-1eb9-4094-b63a-371028117e7c",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "17": {
+      "key": "10026_Qishi",
+      "name": "applyMaterialEffect",
+      "NodeID": 17
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "3fbce35f-4210-4655-9245-c1b393bb1b85",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01_Red",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "duration": 30,
+      "disableWhenFinished": true,
+      "NodeID": 18,
+      "UID": "2b579141-878d-43a5-a239-79aa19f070a5",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10026_Skill_Ex_New_Buff_Fresnel",
+      "name": "playPreset"
+    },
+    "32": {
+      "name": "checkPetPrototypeId",
+      "UID": "8ef88a87-d851-4f45-b3a5-d2e2f2869597",
+      "target": "OWNER",
+      "petPrototypeId": 1002604,
+      "NodeID": 32
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "6e7a37c7-99e5-457b-8442-9b8d7b18ac36",
+      "effectId": "Eff_Parmon_10026_Skill_Ex_New_Buff_Sword_01",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "22": {
+      "name": "checkPetPrototypeId",
+      "UID": "4a860a7f-642e-4366-8b79-11331d9e45dd",
+      "target": "OWNER",
+      "petPrototypeId": 1002603,
+      "NodeID": 22
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "429068e8-99e8-4814-9600-31218b6d407e",
+      "effectId": "Eff_Buff_Defense_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7,
+    11,
+    33,
+    12,
+    13,
+    19,
+    20,
+    29,
+    28,
+    21,
+    30
+  ],
+  "onBuffStartIds": [
+    3,
+    9,
+    6,
+    10,
+    17,
+    16,
+    18
+  ]
+}

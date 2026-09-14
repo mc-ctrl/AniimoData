@@ -1,0 +1,3733 @@
+{
+  "334": {
+    "mmoNotPrefabModel": 1,
+    "subType": "PosterDisplay",
+    "resId": "$Eff_Trigger_Rogue_Boss.prefab",
+    "name": "爬塔-电脑"
+  },
+  "314": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_Boss.prefab",
+    "name": "草原云正式_云朵羊boss云"
+  },
+  "315": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "LevelItem",
+    "name": "终点线",
+    "resId": "$P_Item_LevelItem_FinishLine.prefab"
+  },
+  "323": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Electric_Connect_Particle.prefab",
+    "name": "电特效挂接"
+  },
+  "324": {
+    "customField": [
+      "actived"
+    ],
+    "name": "移动平台_11Temple",
+    "groupType": 3,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_Platform_Pro_Temple11.prefab"
+  },
+  "325": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_10",
+    "resId": "$P_Item_Totem_Grassland_10.prefab"
+  },
+  "58": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_3000_logicjinggu_LevelItem_Chest.prefab",
+    "name": "回音石宝箱"
+  },
+  "329": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_河间地_01",
+    "resId": "$P_Item_Totem_Riverlands_01.prefab"
+  },
+  "331": {
+    "name": "土祭坛插剑的石台",
+    "groupType": 1,
+    "subType": "LevelItem",
+    "sortId": 0,
+    "resId": "$P_Item_LevelItem_SwordHolder.prefab"
+  },
+  "5": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Empty_SB.prefab",
+    "name": "VirtualState"
+  },
+  "336": {
+    "subType": "LevelItem",
+    "name": "黄树林-海风2",
+    "resId": "$Eff_Env_Level_IOT_SceneObject_SeaWind_02.prefab"
+  },
+  "6": {
+    "groupType": 3,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_OverlapCounter_SB.prefab",
+    "name": "方形重叠计数器"
+  },
+  "7": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Chest_LevelItem.prefab",
+    "name": "宝箱状态专用"
+  },
+  "337": {
+    "name": "新风扇_无任何表现",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Fan_SB_NoPerform.prefab"
+  },
+  "8": {
+    "groupType": 3,
+    "subType": "DeathBox",
+    "resId": "$P_Item_DeathBox_SB.prefab",
+    "name": "即死检测盒"
+  },
+  "339": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_test_temp",
+    "resId": "$P_Temple_11_Totem_Helgon_test_temp.prefab"
+  },
+  "9": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Empty_SB.prefab",
+    "name": "位置元件"
+  },
+  "341": {
+    "resId": "$P_Item_Shrine11_DisapperDoor_02.prefab",
+    "subType": "LevelItem",
+    "name": "11号神庙石门_02",
+    "prefabModel": 1
+  },
+  "342": {
+    "name": "贴花_鲸骨回音石符文贴花",
+    "groupType": 3,
+    "subType": "LevelItem",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Levelitem_Decal_Rune_001.prefab"
+  },
+  "11": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Sphere_SB.prefab",
+    "name": "球元件"
+  },
+  "344": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_TimelineContainer.prefab",
+    "name": "TimelineContainer"
+  },
+  "12": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Cylinder_SB.prefab",
+    "name": "圆柱元件"
+  },
+  "346": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_新_04_1",
+    "resId": "$P_Temple_11_Totem_Helgon_new_04_01.prefab"
+  },
+  "13": {
+    "groupType": 1,
+    "subType": "Seesaw",
+    "resId": "$P_Item_Seesaw.prefab",
+    "name": "跷跷板元件"
+  },
+  "14": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Sphere_SB.prefab",
+    "name": "模型元件"
+  },
+  "351": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_桥2_左",
+    "resId": "$P_Temple_11_Totem_Helgon_Bridge_02_left.prefab"
+  },
+  "355": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_TempleLinePort.prefab",
+    "name": "电线端口(元件版)"
+  },
+  "16": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Airwall_Box_SB.prefab",
+    "name": "空气墙-方形"
+  },
+  "18": {
+    "subType": "LevelItem",
+    "name": "供盆",
+    "resId": "$P_Item_Box_Tub_01.prefab"
+  },
+  "19": {
+    "subType": "LevelItem",
+    "name": "神像",
+    "resId": "$P_Item_Box_Griffin_Statue_01.prefab"
+  },
+  "364": {
+    "groupType": 6,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_Platform_Pro_Empty.prefab",
+    "name": "ECS白盒_PlatformPro_Empty"
+  },
+  "365": {
+    "resId": "$P_TempleComponent_Wheel_Empty.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": false
+    },
+    "name": "ECS白盒_旋转齿轮_Empty"
+  },
+  "367": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_高地_01",
+    "resId": "$P_Item_Totem_Highland_Helgon_01.prefab"
+  },
+  "368": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_高地_02",
+    "resId": "$P_Item_Totem_Highland_Helgon_02.prefab"
+  },
+  "145": {
+    "groupType": 6,
+    "subType": "SpurtItem",
+    "resId": "$P_Item_LevelItem_FireMechanism.prefab",
+    "name": "喷火机关"
+  },
+  "370": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_TempleComponent_StandardFence_002.prefab",
+    "name": "神庙-栅栏2"
+  },
+  "146": {
+    "name": "限时音符玩法（收集）",
+    "groupType": 6,
+    "subType": "CollectItemPuzzle",
+    "initData": {
+      "warningTime": 8
+    },
+    "resId": "$P_Item_CollectItemPuzzle_Container.prefab"
+  },
+  "403": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_Tree_Clover_002.prefab",
+    "name": "树叶平台_星落森林_二叶"
+  },
+  "148": {
+    "name": "限时到达玩法（竞速）",
+    "groupType": 6,
+    "subType": "RacePuzzle",
+    "initData": {
+      "warningTime": 8
+    },
+    "resId": "$P_Item_RacePuzzle_Container.prefab"
+  },
+  "372": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "RaceSample",
+    "name": "2008地宫-实时评价元件",
+    "resId": "$P_LevelItem_RaceSample_2008.prefab"
+  },
+  "373": {
+    "groupType": 6,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_Platform_Pro_Container.prefab",
+    "name": "移动平台Pro-引用元件"
+  },
+  "374": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_CameraRecenter.prefab",
+    "name": "镜头矫正元件"
+  },
+  "375": {
+    "groupType": 1,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_Platform_SB_SheepSphere.prefab",
+    "name": "云朵羊移动平台"
+  },
+  "376": {
+    "subType": "Peep",
+    "name": "窥视元件",
+    "resId": "$P_Levelltem_Peep.prefab"
+  },
+  "377": {
+    "groupType": 2,
+    "subType": "PetExchangeItem",
+    "resId": "$P_Item_Temple_StoneStatueBase_BlessTip.prefab",
+    "name": "神庙宠物雕像机关_祝福"
+  },
+  "378": {
+    "groupType": 2,
+    "subType": "BilateralTotem",
+    "resId": "$P_Gaodi_Totem_Helgon_01.prefab",
+    "name": "高地_双侧图腾元件_新版"
+  },
+  "381": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_遗迹之门",
+    "resId": "$P_Item_Totem_Cabe_Door.prefab"
+  },
+  "382": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Level_Temple05_PointLight_BurningEnvironment.prefab",
+    "name": "5号神庙_灯光_点燃火炬_黑暗房间"
+  },
+  "383": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_3_228demo.prefab",
+    "name": "演示云-0228"
+  },
+  "384": {
+    "groupType": 2,
+    "subType": "Switch",
+    "resId": "$P_Item_SceneObject_Electric_Fan_Ancient_Temple.prefab",
+    "name": "电风扇_地宫"
+  },
+  "385": {
+    "groupType": 2,
+    "subType": "TwinklePlatformController",
+    "resId": "$P_Item_LevelItem_FlashPlatform_Controller.prefab",
+    "name": "闪烁平台控制器"
+  },
+  "182": {
+    "resId": "$P_Item_Shrine11_Bridge.prefab",
+    "subType": "LevelItem",
+    "name": "11号神庙断桥",
+    "prefabModel": 1
+  },
+  "387": {
+    "name": "载人大炮原型",
+    "groupType": 1,
+    "subType": "LevelItem",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Item_MannedCannon.prefab"
+  },
+  "125": {
+    "subType": "LevelItem",
+    "name": "迷雾森林全范围雾",
+    "resId": "$200Rad_Sphere_Cloud_Forest.prefab"
+  },
+  "126": {
+    "subType": "LevelItem",
+    "name": "迷雾森林-中央池塘雾",
+    "resId": "$P_Item_Fog_Forest_Center.prefab"
+  },
+  "133": {
+    "resId": "$P_Item_Box_TotemBox.prefab",
+    "subType": "TotemPuzzle",
+    "name": "双侧视觉图腾遗迹",
+    "prefabModel": 1
+  },
+  "20": {
+    "subType": "LevelItem",
+    "name": "Anim测试 门",
+    "resId": "$P_Item_Door_SB.prefab"
+  },
+  "152": {
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger.prefab",
+    "name": "跑步加速道具"
+  },
+  "22": {
+    "subType": "LevelItem",
+    "name": "日晷图腾",
+    "resId": "$P_Item_SceneObject_SteleMonument.prefab"
+  },
+  "23": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Box_Sword_01.prefab",
+    "name": "插着剑的石台"
+  },
+  "24": {
+    "subType": "PlantTree",
+    "name": "灵果树",
+    "resId": "$P_Item_Box_Tree_01a.prefab"
+  },
+  "25": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Prefab_Container.prefab",
+    "name": "Timeline播放器"
+  },
+  "26": {
+    "groupType": 5,
+    "subType": "Trigger",
+    "resId": "$P_Item_TriggerCamera_SB.prefab",
+    "name": "相机解密触发器"
+  },
+  "27": {
+    "groupType": 5,
+    "subType": "Trigger",
+    "resId": "$P_Item_TotemTrigger_SB.prefab",
+    "name": "图腾谜题（废弃）"
+  },
+  "32": {
+    "subType": "LevelItem",
+    "name": "藤蔓机关门_内层（废弃）",
+    "resId": "$P_Item_Box_Root_02.prefab"
+  },
+  "33": {
+    "groupType": 1,
+    "subType": "Trigger",
+    "resId": "$P_Item_Trigger_Sphere_SB.prefab",
+    "name": "球形触发器"
+  },
+  "327": {
+    "subType": "PlatformPro",
+    "name": "移动墙体1",
+    "resId": "$P_Item_LevelItem_MovingWall.prefab"
+  },
+  "36": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Sphere_SB.prefab",
+    "name": "GDC"
+  },
+  "37": {
+    "subType": "LevelItem",
+    "name": "藤蔓机关门_外层（废弃）",
+    "resId": "$P_Item_Box_Root_01.prefab"
+  },
+  "38": {
+    "subType": "FilterCurtain",
+    "name": "过滤光幕",
+    "resId": "$Eff_Env_LightCurtain_01.prefab"
+  },
+  "39": {
+    "subType": "LevelItem",
+    "name": "机关栅栏",
+    "resId": "$P_Item_Box_Spear.prefab"
+  },
+  "40": {
+    "subType": "LevelItem",
+    "name": "材质变化箱",
+    "resId": "$P_Item_SceneObject_MaterialTransform.prefab"
+  },
+  "41": {
+    "subType": "PressPlatform",
+    "name": "按压平台",
+    "resId": "$P_Item_PressPlatform.prefab"
+  },
+  "357": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_12",
+    "resId": "$P_Item_Totem_Grassland_12.prefab"
+  },
+  "43": {
+    "subType": "Switch",
+    "name": "打包神像（废弃）",
+    "resId": "$P_Item_Box_Package_Griffin_Statue.prefab"
+  },
+  "391": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Gaodi_Totem_Stone_4m.prefab",
+    "name": "高地_闪光盔面龙_溶解石头"
+  },
+  "427": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Temple_TempleChestHolder_002.prefab",
+    "name": "宝箱底座"
+  },
+  "431": {
+    "subType": "DialoguePlayer",
+    "name": "对话图播放器",
+    "resId": "$P_Item_DialoguePlayer.prefab"
+  },
+  "432": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_HopscotchFloorEffect.prefab",
+    "name": "跳格子台阶特效"
+  },
+  "433": {
+    "subType": "AddInteract",
+    "name": "添加交互元件",
+    "resId": "$P_Item_AddInteract_SB.prefab"
+  },
+  "439": {
+    "groupType": 1,
+    "subType": "ChestContainer",
+    "resId": "$P_Item_ChestContainer.prefab",
+    "name": "琥珀奖励元件"
+  },
+  "441": {
+    "name": "地宫宝箱屏障_小",
+    "groupType": 2,
+    "subType": "ChestContainer",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "封闭"
+      ],
+      [
+        "state",
+        1,
+        "解锁"
+      ]
+    ],
+    "resId": "$P_Item_LevelItem_TempleChestShielding_Middle.prefab"
+  },
+  "443": {
+    "subType": "LevelItem",
+    "name": "跳格子",
+    "resId": "$P_Item_StepSequencePuzzle.prefab"
+  },
+  "444": {
+    "subType": "TimerSB",
+    "name": "timer",
+    "resId": "$P_Item_TimerSB.prefab"
+  },
+  "449": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_CircleDivingEffect.prefab",
+    "name": "圆圈跳水特效"
+  },
+  "453": {
+    "name": "地宫尖刺（1x1）",
+    "groupType": 2,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_1x1_Temple.prefab"
+  },
+  "455": {
+    "name": "地宫尖刺（4x4）",
+    "groupType": 2,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_4x4_Temple.prefab"
+  },
+  "456": {
+    "name": "抢蛋撤离点",
+    "groupType": 3,
+    "subType": "GrabEggExitPoint",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_QuitArea.prefab"
+  },
+  "457": {
+    "groupType": 1,
+    "subType": "Geyser",
+    "resId": "$P_Levelltem_Geyser.prefab",
+    "name": "飞天泉"
+  },
+  "462": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_RailwayTrack.prefab",
+    "name": "古代导轨"
+  },
+  "463": {
+    "groupType": 3,
+    "subType": "GrabEggDoor",
+    "resId": "$P_Item_Build_GrabEggs_LockedDoor_Blue.prefab",
+    "name": "蓝色钥匙门"
+  },
+  "464": {
+    "groupType": 3,
+    "subType": "GrabEggDoor",
+    "resId": "$P_Item_Build_GrabEggs_LockedDoor_Purple.prefab",
+    "name": "紫色钥匙门"
+  },
+  "465": {
+    "groupType": 3,
+    "subType": "GrabEggDoor",
+    "resId": "$P_Item_Build_GrabEggs_LockedDoor_Golden.prefab",
+    "name": "金色钥匙门"
+  },
+  "468": {
+    "groupType": 1,
+    "subType": "BuffTrigger",
+    "resId": "$P_Item_Cloud_Temp.prefab",
+    "name": "忧伤云雾"
+  },
+  "469": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Level_Decal_Rock_WolfFangCrack_001_A.prefab",
+    "name": "狼牙岭爪痕贴画A"
+  },
+  "470": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Level_Decal_Rock_WolfFangCrack_001_B.prefab",
+    "name": "狼牙岭爪痕贴画B"
+  },
+  "471": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Level_Decal_Rock_WolfFangCrack_001_C.prefab",
+    "name": "狼牙岭爪痕贴画C"
+  },
+  "472": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Level_Decal_Rock_WolfFangCrack_001_D.prefab",
+    "name": "狼牙岭爪痕贴画D"
+  },
+  "473": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_ImpulseBarrier.prefab",
+    "name": "狼牙岭冲击石柱"
+  },
+  "475": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_LVIOT_Tree_FlameLeaf_002.prefab",
+    "name": "狼牙岭枯林树叶002"
+  },
+  "476": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_LVIOT_Tree_FlameLeaf_003.prefab",
+    "name": "狼牙岭枯林树叶003"
+  },
+  "478": {
+    "groupType": 3,
+    "subType": "HitCounter",
+    "resId": "$P_Item_Trigger_SB_GrabEgg.prefab",
+    "name": "受击计数器"
+  },
+  "479": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_ScanEffect.prefab",
+    "name": "黑暗后效控制器"
+  },
+  "480": {
+    "subType": "OverlapCounter",
+    "name": "破碎模板",
+    "resId": "$P_Levelitem_BrokenFloor_New.prefab"
+  },
+  "481": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_CrystaBless.prefab",
+    "name": "生态融入特效"
+  },
+  "482": {
+    "subType": "OverlapCounter",
+    "name": "破碎模板双人",
+    "resId": "$P_Levelitem_BrokenFloor_Double_New.prefab"
+  },
+  "483": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_FightChest.prefab",
+    "name": "守护宝箱特效"
+  },
+  "484": {
+    "subType": "BuffTrigger",
+    "name": "POI火光照明区域",
+    "resId": "$P_Item_MasterBuffTrigger.prefab"
+  },
+  "485": {
+    "groupType": 1,
+    "subType": "BuffTrigger",
+    "resId": "$P_Item_SceneObject_HypnosisRose.prefab",
+    "name": "催眠白蔷薇"
+  },
+  "204": {
+    "groupType": 1,
+    "subType": "ChestShield",
+    "resId": "$P_Item_Chest_Shield_With_Marker_04.prefab",
+    "name": "封印宝箱平台（4）"
+  },
+  "205": {
+    "groupType": 1,
+    "subType": "ChestShield",
+    "resId": "$P_Item_Chest_Shield_With_Marker_05.prefab",
+    "name": "封印宝箱平台（5）"
+  },
+  "488": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "RaceSample",
+    "name": "2028地宫-实时评价元件",
+    "resId": "$P_LevelItem_RaceSample_2028.prefab"
+  },
+  "489": {
+    "name": "大地宫尖刺（1x1）",
+    "groupType": 2,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_1x1_Temple_Big.prefab"
+  },
+  "491": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_花海北部_林地",
+    "resId": "$P_Item_Totem_FlowerSea_Forest.prefab"
+  },
+  "492": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_HighLand_SweetHeart.prefab",
+    "name": "爱心特效"
+  },
+  "493": {
+    "groupType": 1,
+    "subType": "SoundGame",
+    "resId": "$P_Item_SoundGameSB.prefab",
+    "name": "SoundGame"
+  },
+  "494": {
+    "subType": "LevelItem",
+    "name": "ark移动平台（白车）",
+    "resId": "$P_Item_SceneObject_Ark_Car_01.prefab"
+  },
+  "495": {
+    "subType": "LevelItem",
+    "name": "ark移动平台（粉车）",
+    "resId": "$P_Item_SceneObject_Ark_Car_03B.prefab"
+  },
+  "496": {
+    "subType": "LevelItem",
+    "name": "ark移动平台（蓝车）",
+    "resId": "$P_Item_SceneObject_Ark_Car_03D.prefab"
+  },
+  "497": {
+    "subType": "LevelItem",
+    "name": "ark移动平台（白巴士）",
+    "resId": "$P_Item_SceneObject_Ark_Car_002.prefab"
+  },
+  "498": {
+    "subType": "LevelItem",
+    "name": "ark移动平台（绿巴士）",
+    "resId": "$P_Item_SceneObject_Ark_Car_002_D.prefab"
+  },
+  "499": {
+    "mmoNotPrefabModel": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_ArkMark.prefab",
+    "name": "ark悬浮标题"
+  },
+  "520": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_HappyFlower.prefab",
+    "name": "忧乐花"
+  },
+  "410": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_TintGrassDecal.prefab",
+    "name": "多人头目 - 地表变化"
+  },
+  "411": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_RaidEnvVolume.prefab",
+    "name": "多人头目 - 环境Env"
+  },
+  "412": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "断桥结构",
+    "resId": "$P_POI_BreakBrideTech.prefab"
+  },
+  "666": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_4.prefab",
+    "name": "驱散迷雾-壁灯"
+  },
+  "309": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_Bridge.prefab",
+    "name": "神庙触发桥"
+  },
+  "272": {
+    "groupType": 2,
+    "subType": "Trampoline",
+    "resId": "$P_Item_LevelItem_SpringBoard.prefab",
+    "name": "神庙弹板"
+  },
+  "208": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_7.prefab",
+    "name": "草原云正式_7"
+  },
+  "500": {
+    "name": "魔弗灵石碑",
+    "groupType": 5,
+    "subType": "DittoEntry",
+    "actionPrototypeIds": [
+      364
+    ],
+    "resId": "$P_LevelItem_MorphlingStatue.prefab"
+  },
+  "600": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_RailwayTrack_06.prefab",
+    "name": "古代导轨_荆棘塔03"
+  },
+  "606": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_ImpulseAIm.prefab",
+    "name": "冲量开关-圆盘"
+  },
+  "608": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_ImpulseRemote.prefab",
+    "name": "冲量开关-远距离"
+  },
+  "552": {
+    "groupType": 1,
+    "subType": "Trigger",
+    "resId": "$Eff_Env_Level_IOT_HudieGu_DreamFlower_Flower.prefab",
+    "name": "蝴蝶谷_小花触发"
+  },
+  "613": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_RotateRoom_1_Temple29.prefab",
+    "name": "旋转空间1_29号地宫"
+  },
+  "615": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$Eff_Env_Level_IOT_Meadow_Sadclouds_Looping_10261.prefab",
+    "name": "忧伤云雾"
+  },
+  "617": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Bone_SB.prefab",
+    "name": "回溯珊瑚白盒_仙人掌"
+  },
+  "556": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_RailwayTrack_03.prefab",
+    "name": "古代导轨03"
+  },
+  "557": {
+    "resId": "$P_TempleComponent_Wheel_2.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔"
+  },
+  "558": {
+    "resId": "$P_TempleComponent_Wheel_3.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔02"
+  },
+  "559": {
+    "resId": "$P_TempleComponent_Wheel_4.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔03"
+  },
+  "560": {
+    "subType": "LevelItem",
+    "name": "红色能量粒子",
+    "resId": "$Eff_Level_IOT_FlowerVillage_Yuanwei_SoulLiziFenwei.prefab"
+  },
+  "561": {
+    "resId": "$P_TempleComponent_Wheel_5.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔04"
+  },
+  "562": {
+    "subType": "LevelItem",
+    "name": "鸢尾BOSS战空气墙",
+    "resId": "$P_Item_SceneObject_Tree_Iris_Boss_Airwall.prefab"
+  },
+  "563": {
+    "resId": "$P_TempleComponent_Wheel_6.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔05"
+  },
+  "564": {
+    "resId": "$P_Item_SceneObject_Ark_Door_Propshop.prefab",
+    "subType": "LevelItem",
+    "actionPrototypeIds": [
+      428
+    ],
+    "name": "ARK宠物道具店开门"
+  },
+  "565": {
+    "resId": "$P_Item_SceneObject_Ark_Door_Toystore.prefab",
+    "subType": "LevelItem",
+    "actionPrototypeIds": [
+      429
+    ],
+    "name": "ARK玩具店开门"
+  },
+  "566": {
+    "resId": "$P_Item_SceneObject_Ark_Door_Souvenir.prefab",
+    "subType": "LevelItem",
+    "actionPrototypeIds": [
+      430
+    ],
+    "name": "ARK礼品店开门"
+  },
+  "567": {
+    "resId": "$P_Item_SceneObject_Ark_Door_Trendytoys.prefab",
+    "subType": "LevelItem",
+    "actionPrototypeIds": [
+      431
+    ],
+    "name": "ARK潮玩店开门"
+  },
+  "568": {
+    "resId": "$P_Item_SceneObject_Ark_Door_Barbecue.prefab",
+    "subType": "LevelItem",
+    "actionPrototypeIds": [
+      432
+    ],
+    "name": "ARK人宠餐厅开门"
+  },
+  "569": {
+    "resId": "$P_Item_SceneObject_Ark_Door_Clothing.prefab",
+    "subType": "LevelItem",
+    "actionPrototypeIds": [
+      433
+    ],
+    "name": "ARK时装店开门"
+  },
+  "570": {
+    "resId": "$P_Item_SceneObject_Ark_Door_Supercikw.prefab",
+    "subType": "LevelItem",
+    "actionPrototypeIds": [
+      434
+    ],
+    "name": "ARK捕捉球店开门"
+  },
+  "571": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Eff_SceneObject_Butterfly_Valley_Windfield.prefab",
+    "name": "蝴蝶谷_蝴蝶_风场"
+  },
+  "572": {
+    "groupType": 1,
+    "subType": "Geyser",
+    "resId": "$P_Levelltem_BigGeyser.prefab",
+    "name": "超高飞天泉"
+  },
+  "573": {
+    "name": "盔卫士格拉斯-检查平台",
+    "groupType": 1,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "未激活"
+      ],
+      [
+        "state",
+        1,
+        "激活"
+      ]
+    ],
+    "resId": "$P_Item_SceneObject_BalanceCheck.prefab"
+  },
+  "574": {
+    "subType": "LevelItem",
+    "name": "ark移动平台",
+    "resId": "$P_Item_SceneObject_Ark_SheepPlatform_2.prefab"
+  },
+  "575": {
+    "subType": "LevelItem",
+    "name": "ark移动平台",
+    "resId": "$P_Item_SceneObject_Ark_SheepPlatform_3.prefab"
+  },
+  "576": {
+    "name": "新风扇_荆棘塔",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Fan_SB_Tower.prefab"
+  },
+  "577": {
+    "resId": "$P_TempleComponent_Wheel_7.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔_音效"
+  },
+  "578": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_RailwayTrack_04.prefab",
+    "name": "古代导轨_荆棘塔"
+  },
+  "579": {
+    "subType": "LevelItem",
+    "name": "鸢尾boss战黑色场景",
+    "resId": "$P_LVLRILY_Local_Env_Volume_Black.prefab"
+  },
+  "580": {
+    "subType": "LevelItem",
+    "name": "鸢尾boss战灰色场景",
+    "resId": "$P_LVLRILY_Local_Env_Volume_Gray.prefab"
+  },
+  "581": {
+    "name": "新风扇_山洞",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_NoLeafFan_BearCave.prefab"
+  },
+  "582": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_InvisibleWind_Force_Temple28.prefab",
+    "name": "28号地宫隐形力场"
+  },
+  "583": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_07.prefab",
+    "name": "ARK街道引导光带7"
+  },
+  "584": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_08.prefab",
+    "name": "ARK街道引导光带8"
+  },
+  "585": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_09.prefab",
+    "name": "ARK街道引导光带9"
+  },
+  "75": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_海滩_02",
+    "resId": "$P_Item_Totem_Beach_02.prefab"
+  },
+  "587": {
+    "subType": "SpurtItem",
+    "name": "抢蛋优化的喷火装置（旋转）",
+    "resId": "$P_Item_LevelItem_FireMechanism_Garb_rot.prefab"
+  },
+  "588": {
+    "subType": "LevelItem",
+    "name": "鸢尾boss战地面机关三色光点",
+    "resId": "$Eff_Level_IOT_FlowerVillage_YuanweiBattle_KeyItem_diguangchuxian.prefab"
+  },
+  "589": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$Eff_Env_Level_IOT_Meadow_Sadclouds_Looping_10261.prefab",
+    "name": "高原云朵羊哭哭特效"
+  },
+  "591": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_RailwayTrack_05.prefab",
+    "name": "古代导轨_荆棘塔02"
+  },
+  "592": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Tree_Iris_Boss.prefab",
+    "name": "鸢尾boss战氛围花瓣"
+  },
+  "593": {
+    "subType": "LevelItem",
+    "name": "耶耶毛团原型特效",
+    "resId": "$P_Item_BounceFurFloorEffect.prefab"
+  },
+  "594": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Red_Iris_Boss.prefab",
+    "name": "鸢尾boss战红色灵体氛围"
+  },
+  "595": {
+    "groupType": 1,
+    "subType": "BuffTrigger",
+    "resId": "$P_Item_SceneObject_HypnosisRose_10231Trigger.prefab",
+    "name": "催眠白蔷薇-小哭苞触发"
+  },
+  "596": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_IrilyBoss_Waterwave_Red.prefab",
+    "name": "鸢尾boss战红色水波"
+  },
+  "597": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_IrilyBoss_Waterwave_Green.prefab",
+    "name": "鸢尾boss战绿色水波"
+  },
+  "81": {
+    "name": "预制体引用元件",
+    "groupType": 3,
+    "subType": "LevelItem",
+    "mmoNotPrefabModel": 1,
+    "resId": "$P_Prefab_Container.prefab"
+  },
+  "203": {
+    "groupType": 1,
+    "subType": "ChestShield",
+    "resId": "$P_Item_Chest_Shield_With_Marker_02.prefab",
+    "name": "封印宝箱平台（2）"
+  },
+  "87": {
+    "subType": "Switch",
+    "name": "爬塔关卡_开始",
+    "resId": "$P_Item_DungeonDemo_Start_Interact.prefab"
+  },
+  "88": {
+    "subType": "Switch",
+    "name": "爬塔关卡_结束",
+    "resId": "$P_Item_DungeonDemo_End.prefab"
+  },
+  "89": {
+    "resId": "$P_LevelItem_Totem_262.prefab",
+    "subType": "TotemPuzzle",
+    "name": "测试用图腾元件（后面要删）",
+    "prefabModel": 1
+  },
+  "90": {
+    "subType": "LevelItem",
+    "name": "银盔龙BOSS战空气墙",
+    "resId": "$Eff_BossArea_80023.prefab"
+  },
+  "94": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "云上草原预研-高台与云朵羊boss",
+    "resId": "$P_Level_Temp_TowerSheepBossFight.prefab"
+  },
+  "96": {
+    "groupType": 1,
+    "subType": "Rope",
+    "resId": "$P_Item_Rope.prefab",
+    "name": "绳索"
+  },
+  "97": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_BlockBox_SB_Climb.prefab",
+    "name": "空气墙-无提示-可攀爬"
+  },
+  "100": {
+    "customField": [
+      "actived"
+    ],
+    "prefabModel": 1,
+    "subType": "TotemPuzzle",
+    "name": "大世界遗迹测试临时（废弃）",
+    "resId": "$P_Totem_Ele2_DemoItem.prefab"
+  },
+  "102": {
+    "customField": [
+      "actived"
+    ],
+    "prefabModel": 1,
+    "subType": "TotemPuzzle",
+    "name": "大世界 遗迹测试临时2（废弃）",
+    "resId": "$P_Totem_Ele2_DemoItemFake.prefab"
+  },
+  "103": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "大世界 海边图腾1",
+    "resId": "$P_Item_Totem_Cabe_01.prefab"
+  },
+  "104": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "云上草原预研-浮空的宝箱（废弃）",
+    "resId": "$P_Level_Temp_ChestInAir.prefab"
+  },
+  "45": {
+    "groupType": 1,
+    "subType": "Trigger",
+    "resId": "$P_Item_SceneObject_Clover_Green_SB.prefab",
+    "name": "四叶草（废弃）"
+  },
+  "106": {
+    "customField": [
+      "actived"
+    ],
+    "name": "云上羊移动玩法（废弃）",
+    "groupType": 3,
+    "subType": "MovingPlatform",
+    "resId": "$P_Item_Level_MoveMiemie.prefab"
+  },
+  "107": {
+    "groupType": 1,
+    "subType": "PressPlatform",
+    "resId": "$P_Item_Level_MoveMiemie_box.prefab",
+    "name": "云上羊移动玩法_范围（废弃）"
+  },
+  "48": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_3000_TAbaibianguai2_LevelItem.prefab",
+    "name": "羞羞獭百变怪（废弃）"
+  },
+  "109": {
+    "subType": "LevelItem",
+    "name": "云雾元件",
+    "resId": "$P_Item_Fog.prefab"
+  },
+  "50": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_407_count_4_LevelItem.prefab",
+    "name": "开图点（废弃）"
+  },
+  "51": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Transfigure_ForGDC_LevelItem.prefab",
+    "name": "海鸥百变怪（废弃）"
+  },
+  "52": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_3000_chestinsandlogic_LevelItem.prefab",
+    "name": "沙中宝箱"
+  },
+  "53": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_106_CooperationDemo_Seesaw_LevelItem.prefab",
+    "name": "跷跷板（旧测试）（废弃）"
+  },
+  "54": {
+    "subType": "PressPlatform",
+    "name": "箱庭_踏板",
+    "resId": "$P_Item_Box_Switch_01.prefab"
+  },
+  "115": {
+    "subType": "LevelItem",
+    "name": "跳跳乐云",
+    "resId": "$P_Item_Fog_Cloud2.prefab"
+  },
+  "117": {
+    "subType": "LevelItem",
+    "name": "云朵4",
+    "resId": "$P_Item_Fog_Cloud4.prefab"
+  },
+  "118": {
+    "subType": "LevelItem",
+    "name": "浮空宝箱云",
+    "resId": "$P_Item_Fog_Cloud6.prefab"
+  },
+  "119": {
+    "subType": "LevelItem",
+    "name": "云朵7",
+    "resId": "$P_Item_Fog_Cloud7.prefab"
+  },
+  "122": {
+    "subType": "Switch",
+    "name": "爬塔关卡_事件",
+    "resId": "$P_Item_DungeonDemo_Event.prefab"
+  },
+  "861": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Prefab_LVUIRg_Build_FightingRoom_04_FENGXIAN.prefab",
+    "name": "休息室风险"
+  },
+  "123": {
+    "groupType": 3,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_OverlapCounter_Sphere_SB.prefab",
+    "name": "球形重叠计数器"
+  },
+  "128": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "大世界 草原图腾4",
+    "resId": "$P_Item_Totem_Cabe_04.prefab"
+  },
+  "129": {
+    "groupType": 3,
+    "subType": "Trigger",
+    "resId": "$P_Item_Level_WBLevelComponent_TempFlower_Float.prefab",
+    "name": "升空蒲公英-预研"
+  },
+  "131": {
+    "groupType": 5,
+    "subType": "Trigger",
+    "resId": "$P_Item_TriggerEventBox.prefab",
+    "name": "特定物件触发器（废弃）"
+  },
+  "132": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_ShuiBoYu_HuaHuaTi.prefab",
+    "name": "水波鱼滑滑梯（废弃）"
+  },
+  "881": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Ark_NPCDuel_Fire.prefab",
+    "name": "ARK露天对决火焰"
+  },
+  "134": {
+    "subType": "StunMushroom",
+    "name": "迷雾森林蘑菇",
+    "resId": "$P_Temp_Forest_Trap.prefab"
+  },
+  "135": {
+    "name": "多人终点机关",
+    "multiPlayerNum": 2,
+    "subType": "LevelItemMultiInteractor",
+    "actionPrototypeIds": [
+      135
+    ],
+    "resId": "$P_Item_LevelItem_TempleEndingMachine_MultiPlayer.prefab"
+  },
+  "55": {
+    "subType": "LevelItem",
+    "name": "箱庭_损坏踏板（废弃）",
+    "resId": "$P_Item_Box_Switch_01a.prefab"
+  },
+  "388": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_POI_ShineHelmet.prefab",
+    "name": "闪光钢颚崽白盒"
+  },
+  "389": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Gaodi_Totem_Stone_01.prefab",
+    "name": "高地_赐福钢颚崽_溶解石头"
+  },
+  "392": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_HearEffect.prefab",
+    "name": "高地_偷听特效"
+  },
+  "393": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_海滩_03",
+    "resId": "$P_Item_Totem_Beach_01_2.prefab"
+  },
+  "394": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Gaodi_Totem_Bridge_12m.prefab",
+    "name": "高地_闪光盔面龙_桥梁"
+  },
+  "395": {
+    "groupType": 1,
+    "subType": "DungeonSavePoint",
+    "resId": "$P_Item_LevelItem_RevivalPoint.prefab",
+    "name": "神庙_记录点"
+  },
+  "396": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Eff_SceneObject_WindField_new_small.prefab",
+    "name": "高地_风图腾_风场"
+  },
+  "397": {
+    "name": "花海_带绳子的风车",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_LevelItem_Windmill.prefab"
+  },
+  "398": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Level_Temple05_PointLight_BurningEnvironment_Area.prefab",
+    "name": "5号神庙_灯光_点燃火炬_黑暗房间_区域补光"
+  },
+  "399": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_LeavesArea.prefab",
+    "name": "落叶区域"
+  },
+  "63": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_海滩_01",
+    "resId": "$P_Item_Totem_Beach_01.prefab"
+  },
+  "64": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_海滩_03",
+    "resId": "$P_Item_Totem_Beach_03.prefab"
+  },
+  "414": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_海滩_04",
+    "resId": "$P_Item_Totem_Beach_01_4.prefab"
+  },
+  "415": {
+    "name": "多人头目 - 战斗开启交互物",
+    "groupType": 1,
+    "subType": "Switch",
+    "actionPrototypeIds": [
+      279
+    ],
+    "resId": "$Eff_Boss_lv.prefab"
+  },
+  "416": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_StasticCustomDynamicSky.prefab",
+    "name": "多人头目 - 静态天空盒"
+  },
+  "417": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_DirectionArrow.prefab",
+    "name": "多人头目  - 方向箭头"
+  },
+  "67": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_02",
+    "resId": "$P_Item_Totem_Grassland_02.prefab"
+  },
+  "419": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_CircuitDiagram.prefab",
+    "name": "布线工具"
+  },
+  "420": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_POI_BreakBrideTech_new.prefab",
+    "name": "断桥结构"
+  },
+  "421": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_花海_废墟",
+    "resId": "$P_Item_Totem_FlowerSea_Ruins.prefab"
+  },
+  "422": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_闪电2",
+    "resId": "$P_Item_Totem_Beach_01_5.prefab"
+  },
+  "423": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_星落森林木桩",
+    "resId": "$P_Item_Totem_Xinluosenlin_1.prefab"
+  },
+  "424": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_狼2",
+    "resId": "$P_Item_Totem_Beach_01_6.prefab"
+  },
+  "72": {
+    "canShowTargetPos": 1,
+    "name": "CE新手_检查点",
+    "groupType": 3,
+    "subType": "Trigger",
+    "sortId": 150,
+    "resId": "$P_Item_SceneObject_Tutorial_CheckPoint.prefab"
+  },
+  "425": {
+    "subType": "LevelItem",
+    "name": "篝火座椅",
+    "resId": "$P_Levelitem_BonfireStump.prefab"
+  },
+  "426": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_ChestLocker.prefab",
+    "name": "宝箱封印罩子"
+  },
+  "428": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_花海_滩涂",
+    "resId": "$P_Item_Totem_FlowerSea_Beach.prefab"
+  },
+  "430": {
+    "subType": "MeetingPlace",
+    "name": "集合点",
+    "resId": "$P_Item_MeetingPlace.prefab"
+  },
+  "434": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Level_HelgonBoss_Stones.prefab",
+    "name": "炎铠龙头目战浮石环境"
+  },
+  "435": {
+    "groupType": 5,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_LevelItem_EnergyTrigger_Mobeable.prefab",
+    "name": "恢复体力道具（移动）"
+  },
+  "436": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_Spike_1x1.prefab",
+    "name": "自然尖刺（1x1）"
+  },
+  "138": {
+    "subType": "Trigger",
+    "name": "时间检测元件",
+    "resId": "$P_Item_TimeTrigger_SB.prefab"
+  },
+  "437": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_Spike_2x2.prefab",
+    "name": "自然尖刺（2x2）"
+  },
+  "438": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_Spike_4x4.prefab",
+    "name": "自然尖刺（4x4）"
+  },
+  "440": {
+    "groupType": 3,
+    "subType": "TimelineContainer",
+    "resId": "$P_Item_LevelItem_ServerTimelineContainer.prefab",
+    "name": "服务器版TimelineContainer"
+  },
+  "442": {
+    "name": "地宫宝箱屏障_大",
+    "groupType": 2,
+    "subType": "ChestContainer",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "封闭"
+      ],
+      [
+        "state",
+        1,
+        "解锁"
+      ]
+    ],
+    "resId": "$P_Item_LevelItem_TempleChestShielding_Magnificent.prefab"
+  },
+  "142": {
+    "groupType": 1,
+    "subType": "ChestShield",
+    "resId": "$P_Item_Chest_Shield_With_Marker_03.prefab",
+    "name": "封印宝箱平台（3）"
+  },
+  "446": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_SpikeGroup.prefab",
+    "name": "尖刺组"
+  },
+  "447": {
+    "groupType": 3,
+    "subType": "BallTargetSB",
+    "resId": "$P_Levelitem_BallTargetSB.prefab",
+    "name": "投球目标"
+  },
+  "448": {
+    "name": "尖刺（4x4）伸缩节奏变体",
+    "groupType": 5,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_4x4_waitRhythm.prefab"
+  },
+  "450": {
+    "customField": [
+      "fly"
+    ],
+    "name": "蝴蝶谷_预研风",
+    "groupType": 1,
+    "subType": "LevelItem",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Fan_Test_ButterflyValley.prefab"
+  },
+  "451": {
+    "subType": "Screen",
+    "name": "Ark广告大屏幕",
+    "resId": "$P_Levelltem_Screen.prefab"
+  },
+  "454": {
+    "name": "地宫尖刺（2x2）",
+    "groupType": 2,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_2x2_Temple.prefab"
+  },
+  "458": {
+    "prefabModel": 1,
+    "groupType": 6,
+    "subType": "Piano",
+    "name": "ARK音乐钢琴b",
+    "resId": "$P_Item_LevelItem_Ark_PianoStair_Container_B.prefab"
+  },
+  "459": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_06.prefab",
+    "name": "ARK街道引导光带6"
+  },
+  "460": {
+    "groupType": 1,
+    "subType": "ChallengeDoor",
+    "resId": "$P_Levelltem_ChallengeDoor.prefab",
+    "name": "摩托郎格拉斯_检查环"
+  },
+  "461": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_CollectMushroom_1.prefab",
+    "name": "螳螂格拉斯_蘑菇组件"
+  },
+  "466": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Levelitem_Barrier_Pata.prefab",
+    "name": "捉宠爬塔_屏障元件"
+  },
+  "467": {
+    "groupType": 1,
+    "subType": "Trampoline",
+    "resId": "$P_Item_BounceFurr_02.prefab",
+    "name": "弹跳毛团"
+  },
+  "474": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_LVIOT_Tree_FlameLeaf_001.prefab",
+    "name": "狼牙岭枯林树叶001"
+  },
+  "477": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_LVIOT_Tree_FlameLeaf_004.prefab",
+    "name": "狼牙岭枯林树叶004"
+  },
+  "230": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_08",
+    "resId": "$P_Item_Totem_Grassland_08.prefab"
+  },
+  "601": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_RailwayTrack_07.prefab",
+    "name": "古代导轨_荆棘塔04"
+  },
+  "602": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Balance1.prefab",
+    "name": "盔卫士格拉斯-关卡1"
+  },
+  "607": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_RotateRoom_3_Temple29.prefab",
+    "name": "旋转空间3_29号地宫"
+  },
+  "609": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_Rotatewall_Temple29.prefab",
+    "name": "旋转墙体_29号地宫"
+  },
+  "611": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Cylinder2_SB.prefab",
+    "name": "回溯珊瑚白盒"
+  },
+  "612": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Cylinder3_SB.prefab",
+    "name": "回溯珊瑚白盒2"
+  },
+  "614": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_RotateRoom_2_Temple29.prefab",
+    "name": "旋转空间2_29号地宫"
+  },
+  "618": {
+    "mmoNotPrefabModel": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Ark_TakeoutWall.prefab",
+    "name": "ark外卖墙"
+  },
+  "619": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_Rotatewall_2_Temple29.prefab",
+    "name": "旋转墙体2_29号地宫"
+  },
+  "620": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_Rotatecube_Temple29.prefab",
+    "name": "旋转方块_29号地宫"
+  },
+  "621": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Cylinder5_SB.prefab",
+    "name": "回溯珊瑚白盒3"
+  },
+  "623": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Morphling_10291.prefab",
+    "name": "天使耶百变怪白盒"
+  },
+  "624": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_ControlTemp.prefab",
+    "name": "控温柱"
+  },
+  "625": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_TempFruit.prefab",
+    "name": "变温果实"
+  },
+  "627": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_IrilyBoss_FirePillar.prefab",
+    "name": "鸢尾boss战红色机关"
+  },
+  "628": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_IrilyBoss_GrassPillar.prefab",
+    "name": "鸢尾boss战绿色机关"
+  },
+  "629": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_IrilyBoss_WaterPillar.prefab",
+    "name": "鸢尾boss战蓝色机关"
+  },
+  "630": {
+    "groupType": 1,
+    "subType": "GridCell",
+    "resId": "$P_Levelitem_GridCell.prefab",
+    "name": "格子元件"
+  },
+  "631": {
+    "groupType": 1,
+    "subType": "GridGame",
+    "resId": "$P_Levelitem_GridGame.prefab",
+    "name": "格子玩法"
+  },
+  "632": {
+    "groupType": 1,
+    "subType": "RotatingPlatform",
+    "resId": "$P_Levelitem_RotatingPlatform.prefab",
+    "name": "旋转元件"
+  },
+  "633": {
+    "subType": "LevelItem",
+    "name": "学院大厅云朵羊1",
+    "resId": "$P_Item_SceneObject_Ark_SheepPlatform_Campus1.prefab"
+  },
+  "634": {
+    "subType": "LevelItem",
+    "name": "学院大厅云朵羊2",
+    "resId": "$P_Item_SceneObject_Ark_SheepPlatform_Campus2.prefab"
+  },
+  "635": {
+    "subType": "ArkPropshop",
+    "name": "拳击虾挑战",
+    "resId": "$P_Levelltem_Propshop.prefab"
+  },
+  "636": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Airwall_Box_SB_Standable.prefab",
+    "name": "空气墙-可站立"
+  },
+  "637": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_1_5m.prefab",
+    "name": "地宫驱散迷雾1.5M灯"
+  },
+  "638": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_4m.prefab",
+    "name": "地宫驱散迷雾4M灯"
+  },
+  "639": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_6m.prefab",
+    "name": "地宫驱散迷雾6M灯"
+  },
+  "640": {
+    "groupType": 1,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_GrabEgg_RazorBarrier.prefab",
+    "name": "旋转刀刃机关"
+  },
+  "641": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Tree_Iris_Boss_RedObject.prefab",
+    "name": "鸢尾boss战红色组件"
+  },
+  "642": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Tree_Iris_Boss_GreenObject.prefab",
+    "name": "鸢尾boss战绿色组件"
+  },
+  "643": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Tree_Iris_Boss_BlueObject.prefab",
+    "name": "鸢尾boss战蓝色组件"
+  },
+  "644": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_PlantPipe.prefab",
+    "name": "植物管道工具"
+  },
+  "645": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_狼2",
+    "resId": "$P_Item_Totem_Beach_01_7.prefab"
+  },
+  "646": {
+    "groupType": 3,
+    "subType": "TimelineExchange",
+    "resId": "$P_Item_TimelineExchange.prefab",
+    "name": "ARK_扭蛋机"
+  },
+  "647": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_狼2",
+    "resId": "$P_Item_Totem_Beach_01_8.prefab"
+  },
+  "648": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_HookHole.prefab",
+    "name": "钩爪锚点"
+  },
+  "649": {
+    "groupType": 1,
+    "subType": "Switch",
+    "resId": "$P_Item_SceneObject_AntHole_LightningMushroom.prefab",
+    "name": "烟囱蚁洞穴电发光蘑菇"
+  },
+  "650": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_ImpulseDetector_NoCollider.prefab",
+    "name": "无碰撞冲量检测器"
+  },
+  "651": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_1_5m_switch.prefab",
+    "name": "地宫驱散迷雾1.5M灯_默认0开1关"
+  },
+  "652": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_4m_switch.prefab",
+    "name": "地宫驱散迷雾4M灯_默认0开1关"
+  },
+  "653": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_6m_switch.prefab",
+    "name": "地宫驱散迷雾6M灯_默认0开1关"
+  },
+  "654": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Sandbox_GrabEgg_BreakableGate.prefab",
+    "name": "地宫可破坏大门_破坏计次3"
+  },
+  "279": {
+    "subType": "EchoStone",
+    "name": "回音石",
+    "resId": "$P_Item_LevelItem_Echostone.prefab"
+  },
+  "656": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEgg_Props_Lamp.prefab",
+    "name": "地宫_宝箱指引灯（黄）"
+  },
+  "657": {
+    "name": "抢蛋专用_地宫尖刺（1x1）",
+    "groupType": 3,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_1x1_Temple_GrabEgg.prefab"
+  },
+  "658": {
+    "name": "抢蛋专用_地宫尖刺（2x2）",
+    "groupType": 3,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_2x2_Temple_GrabEgg.prefab"
+  },
+  "91": {
+    "subType": "LevelItem",
+    "name": "3D_新手流程空气墙",
+    "resId": "$P_Item_SceneObject_Beginning_AirWall.prefab"
+  },
+  "660": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_AntHole_CrackedWall.prefab",
+    "name": "烟囱蚁洞穴_需要修补的裂缝"
+  },
+  "661": {
+    "groupType": 3,
+    "subType": "Geyser",
+    "resId": "$P_Item_SpringFountain.prefab",
+    "name": "间歇喷泉"
+  },
+  "662": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_LevelItem_GearArrow.prefab",
+    "name": "旋转锚点"
+  },
+  "664": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_2.prefab",
+    "name": "驱散迷雾-扁火台"
+  },
+  "665": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_3.prefab",
+    "name": "驱散迷雾-高火台"
+  },
+  "667": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_5.prefab",
+    "name": "驱散迷雾-1.5m小灯红色"
+  },
+  "668": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_1_switch.prefab",
+    "name": "驱散迷雾-小火台(开关)"
+  },
+  "669": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_2_switch.prefab",
+    "name": "驱散迷雾-扁火台(开关)"
+  },
+  "670": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_3_switch.prefab",
+    "name": "驱散迷雾-高火台(开关)"
+  },
+  "671": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_4_switch.prefab",
+    "name": "驱散迷雾-壁灯(开关)"
+  },
+  "672": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_5_switch.prefab",
+    "name": "驱散迷雾-1.5m小灯红色(开关)"
+  },
+  "673": {
+    "groupType": 1,
+    "subType": "QuickControl",
+    "resId": "$P_Item_Levelitem_Quickcontrol.prefab",
+    "name": "宠物链接触发器"
+  },
+  "674": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_SceneObject_BubblePlant_Pump.prefab",
+    "name": "泡泡植物-泵"
+  },
+  "675": {
+    "groupType": 1,
+    "subType": "BuffTrigger",
+    "resId": "$P_Item_SceneObject_SleepBuffTrigger.prefab",
+    "name": "迷梦崽催眠Buff触发器"
+  },
+  "676": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_SceneObject_BubblePlant_Big.prefab",
+    "name": "大型吹泡泡植物"
+  },
+  "677": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_SceneObject_BubblePlant_Small.prefab",
+    "name": "小型吹泡泡植物"
+  },
+  "678": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_SceneObject_BubblePlant_Dead.prefab",
+    "name": "死亡吐泡泡植物"
+  },
+  "679": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_SceneObject_BubblePlant_PipeTool.prefab",
+    "name": "输水泡泡管道"
+  },
+  "161": {
+    "resId": "$P_Item_SceneObject_jxl.prefab",
+    "subType": "TotemPuzzle",
+    "name": "云朵图腾遗迹",
+    "prefabModel": 1
+  },
+  "681": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_Spike_4x8.prefab",
+    "name": "自然尖刺（4x8）"
+  },
+  "682": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_levelitem_LakeBigBubble.prefab",
+    "name": "水板块湖心中央的特殊大泡泡（专用）"
+  },
+  "683": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Prefab_StandardCube_2m_Climb1.prefab",
+    "name": "地宫攀爬砖1"
+  },
+  "684": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Prefab_StandardCube_4m_Climb1.prefab",
+    "name": "地宫攀爬砖2"
+  },
+  "167": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "云中图腾_粘云朵羊挑战_关卡白盒",
+    "resId": "$P_Level_Temp_CloudTotem_BlockMesh.prefab"
+  },
+  "168": {
+    "sortId": 110,
+    "prefabModel": 6,
+    "groupType": 6,
+    "subType": "Switch",
+    "name": "元素开关-火",
+    "resId": "$P_Item_LevelItem_ElementSwitch_Fire.prefab"
+  },
+  "169": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_04",
+    "resId": "$P_Item_Totem_Grassland_04.prefab"
+  },
+  "693": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Shrub_Hidden_01.prefab",
+    "name": "地宫大隐身草"
+  },
+  "171": {
+    "groupType": 6,
+    "subType": "LevelItem",
+    "resId": "$P_Item_ElectricAnd.prefab",
+    "name": "电路与"
+  },
+  "174": {
+    "subType": "BuffTrigger",
+    "name": "沼泽",
+    "resId": "$P_Item_BuffTrigger.prefab"
+  },
+  "318": {
+    "name": "开关_一次性",
+    "groupType": 6,
+    "subType": "Switch",
+    "sortId": 100,
+    "resId": "$P_Item_SceneObject_Switch_Once_SB.prefab"
+  },
+  "206": {
+    "name": "迷雾森林发光果树_小",
+    "groupType": 1,
+    "subType": "PlantTree",
+    "initData": {
+      "shiningRadius": 6,
+      "shiningTime": -1,
+      "shiningValue": 40
+    },
+    "resId": "$P_Item_FogForestTree.prefab"
+  },
+  "321": {
+    "name": "踏板开关_一次性",
+    "groupType": 6,
+    "subType": "PressPlatform",
+    "sortId": 100,
+    "resId": "$P_Item_LevelItem_Platform_Disposable.prefab"
+  },
+  "137": {
+    "name": "新风扇_02",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Item_Fan_SB_02.prefab"
+  },
+  "821": {
+    "groupType": 3,
+    "subType": "ArkBridge",
+    "resId": "$P_Item_LevelItem_Ark_Bridge.prefab",
+    "name": "Ark入口桥"
+  },
+  "908": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$E_Eff_Env_Level_IOT_Meadow_Sadclouds_Cloud_Proxy.prefab",
+    "name": "忧伤云雾_白色"
+  },
+  "771": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_RYL_Crystal.prefab",
+    "name": "被赐福的炽岩兽赐福石头"
+  },
+  "200": {
+    "resId": "$P_Temple_11_Totem_Avatar_01.prefab",
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_人视野_01",
+    "prefabModel": 1
+  },
+  "780": {
+    "name": "新风扇_洞穴",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Fan_SB_TowerCave.prefab"
+  },
+  "31": {
+    "resId": "$P_Item_Box_Platform_01.prefab",
+    "subType": "PlantNursery",
+    "actionPrototypeIds": [
+      81
+    ],
+    "name": "灵果园（废弃）"
+  },
+  "112": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "大世界 海边图腾2（废弃）",
+    "resId": "$P_Item_Totem_Cabe_02.prefab"
+  },
+  "144": {
+    "groupType": 6,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_BalancePlate.prefab",
+    "name": "天平"
+  },
+  "120": {
+    "name": "神庙宠物雕像机关",
+    "groupType": 2,
+    "subType": "PetExchangeItem",
+    "actionPrototypeIds": [
+      132,
+      133
+    ],
+    "resId": "$P_Item_Temple_StoneStatueBase.prefab"
+  },
+  "150": {
+    "groupType": 1,
+    "subType": "Switch",
+    "resId": "$P_Item_VineEnd.prefab",
+    "name": "迷雾森林-藤蔓终端"
+  },
+  "160": {
+    "subType": "LevelItem",
+    "name": "电线端口",
+    "resId": "$P_Item_ElectricWire.prefab"
+  },
+  "163": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_FootPrint_FogForest_01.prefab",
+    "name": "迷雾森林发光脚印-水平"
+  },
+  "165": {
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_SpeedupinclineBasic.prefab",
+    "name": "加速板"
+  },
+  "170": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_05",
+    "resId": "$P_Item_Totem_Grassland_05.prefab"
+  },
+  "173": {
+    "groupType": 6,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_ImpulseSwitch.prefab",
+    "name": "冲量开关"
+  },
+  "1": {
+    "name": "开关",
+    "groupType": 6,
+    "subType": "Switch",
+    "sortId": 100,
+    "resId": "$P_Item_SceneObject_Switch_SB.prefab"
+  },
+  "2": {
+    "customField": [
+      "actived"
+    ],
+    "name": "移动平台",
+    "groupType": 3,
+    "subType": "MovingPlatform",
+    "resId": "$P_Item_LevelItem_Platform_SB.prefab"
+  },
+  "3": {
+    "groupType": 3,
+    "subType": "Trigger",
+    "resId": "$P_Item_Trigger_SB.prefab",
+    "name": "方形触发器"
+  },
+  "4": {
+    "groupType": 3,
+    "subType": "VirtualPuppetContainer",
+    "resId": "$P_Virtual_Puppet_Container.prefab",
+    "name": "VirtualPuppet"
+  },
+  "176": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$HeightCloud_1.prefab",
+    "name": "35米半径-草原云_测试"
+  },
+  "201": {
+    "resId": "$P_Temple_11_Totem_Helgon_01.prefab",
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_01",
+    "prefabModel": 1
+  },
+  "202": {
+    "groupType": 6,
+    "subType": "PressPlatform",
+    "resId": "$P_Item_LevelItem_Templeplate.prefab",
+    "name": "元气按压踏板"
+  },
+  "301": {
+    "groupType": 6,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_Platform_Pro.prefab",
+    "name": "移动平台Pro"
+  },
+  "401": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_violet_001_C.prefab",
+    "name": "可攀爬藤蔓_星落森林"
+  },
+  "179": {
+    "subType": "LevelItem",
+    "name": "ARK商店引导光带配饰",
+    "resId": "$Eff_Env_LigthStrip_AccessoryShop_01.prefab"
+  },
+  "180": {
+    "mmoNotPrefabModel": 1,
+    "subType": "LevelItem",
+    "resId": "$Eff_Env_LigthStrip_Street_01.prefab",
+    "name": "ARK街道引导光带1"
+  },
+  "181": {
+    "resId": "$P_LevelItem_GroupSingPuzzle.prefab",
+    "subType": "GroupSingPuzzle",
+    "name": "街头艺宠",
+    "prefabModel": 1
+  },
+  "183": {
+    "resId": "$P_Item_Shrine11_DisapperDoor.prefab",
+    "subType": "LevelItem",
+    "name": "11号神庙石门",
+    "prefabModel": 1
+  },
+  "188": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_5.prefab",
+    "name": "草原云正式_5"
+  },
+  "189": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_6.prefab",
+    "name": "草原云正式_6"
+  },
+  "192": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_TempleComponent_MachineGate_4m.prefab",
+    "name": "神庙_机关门"
+  },
+  "193": {
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger_Swim_4m.prefab",
+    "name": "游泳加速道具（4m）"
+  },
+  "194": {
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger_Swim_8m.prefab",
+    "name": "游泳加速道具（8m）"
+  },
+  "195": {
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger_Swim_16m.prefab",
+    "name": "游泳加速道具（16m）"
+  },
+  "196": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_TempleComponent_MachineGate_8m.prefab",
+    "name": "神庙_机关门_大"
+  },
+  "302": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_TrapBridge.prefab",
+    "name": "陷阱桥"
+  },
+  "303": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "Switch",
+    "name": "蝴蝶谷_梦境之花",
+    "resId": "$P_Levelltem_ButterflyValley_Flower.prefab"
+  },
+  "390": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_POI_CrystalDragon.prefab",
+    "name": "赐福钢颚崽白盒"
+  },
+  "402": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_Tree_Clover_001.prefab",
+    "name": "树叶平台_星落森林_一叶"
+  },
+  "406": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_BlockIgnoreMagnesis_SB.prefab",
+    "name": "空气墙-无提示-可引力操控"
+  },
+  "407": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "台地-落叶区域底座",
+    "resId": "$P_POI_Leaves.prefab"
+  },
+  "408": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "台地-隐身宝箱结构",
+    "resId": "$P_POI_InvisibleChest.prefab"
+  },
+  "409": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_CustomDynamicSky.prefab",
+    "name": "多人头目 - 天空盒timeline"
+  },
+  "490": {
+    "name": "地宫交互灯",
+    "groupType": 2,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "未激活"
+      ],
+      [
+        "state",
+        1,
+        "激活"
+      ]
+    ],
+    "resId": "$P_Item_LevelItem_Temple_InteractiveLight.prefab"
+  },
+  "590": {
+    "resId": "$P_TempleComponent_Wheel_8.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔06"
+  },
+  "603": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Balance2.prefab",
+    "name": "盔卫士格拉斯-关卡2"
+  },
+  "604": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Balance3.prefab",
+    "name": "盔卫士格拉斯-关卡3"
+  },
+  "127": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "大世界 草原图腾3（废弃）",
+    "resId": "$P_Item_Totem_Cabe_03.prefab"
+  },
+  "245": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_风景_草原_01（废弃）",
+    "resId": "$P_Item_Totem_Scenery_Grassland_01.prefab"
+  },
+  "246": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_风景_草原_02",
+    "resId": "$P_Item_Totem_Scenery_Grassland_02.prefab"
+  },
+  "247": {
+    "groupType": 5,
+    "subType": "Trigger",
+    "resId": "$P_Item_SceneObject_Acceleration_Circle_L.prefab",
+    "name": "竞速指引圈（废弃）"
+  },
+  "156": {
+    "groupType": 6,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_Fence.prefab",
+    "name": "机关栅栏-古代文明"
+  },
+  "319": {
+    "customField": [
+      "animSpeedUp"
+    ],
+    "name": "空中加速道具",
+    "groupType": 6,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger_Fly.prefab"
+  },
+  "184": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_1.prefab",
+    "name": "草原云正式_1"
+  },
+  "153": {
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_LevelItem_EnergyTrigger.prefab",
+    "name": "恢复体力道具"
+  },
+  "197": {
+    "name": "元素开关-电",
+    "groupType": 6,
+    "subType": "Switch",
+    "sortId": 110,
+    "resId": "$P_Item_LevelItem_ElementSwitch_Electricity.prefab"
+  },
+  "199": {
+    "name": "元素开关-水",
+    "groupType": 6,
+    "subType": "Switch",
+    "sortId": 110,
+    "resId": "$P_Item_LevelItem_ElementSwitch_Water.prefab"
+  },
+  "162": {
+    "subType": "Trigger",
+    "name": "时间检测元件-圆形",
+    "resId": "$P_Item_TimeTrigger_Sphere.prefab"
+  },
+  "95": {
+    "subType": "Switch",
+    "name": "银盔龙BOSS战入战开关",
+    "resId": "$P_Item_HelgonBossArena_Switch.prefab"
+  },
+  "207": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_云上草原_01",
+    "resId": "$P_Item_Totem_Grassland_Cloud_01.prefab"
+  },
+  "211": {
+    "groupType": 6,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_MovingBar_48m.prefab",
+    "name": "MovingBar_48m"
+  },
+  "212": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带占卜",
+    "resId": "$Eff_Env_LigthStrip_AugurShop_01.prefab"
+  },
+  "213": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带保龄",
+    "resId": "$Eff_Env_LigthStrip_BowlingAlley_01.prefab"
+  },
+  "214": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带拳击",
+    "resId": "$Eff_Env_LigthStrip_BoxingGym_01.prefab"
+  },
+  "326": {
+    "resId": "$P_TempleComponent_Wheel.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮"
+  },
+  "215": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带捕捉",
+    "resId": "$Eff_Env_LigthStrip_CatcherOut_02_New.prefab"
+  },
+  "185": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_2.prefab",
+    "name": "草原云正式_2"
+  },
+  "216": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带咖啡",
+    "resId": "$Eff_Env_LigthStrip_CoffeeShopOut_01.prefab"
+  },
+  "186": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_3.prefab",
+    "name": "草原云正式_3"
+  },
+  "253": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_SensorPlant_003.prefab",
+    "name": "感声发光植物（藤蔓形状1）"
+  },
+  "191": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_06",
+    "resId": "$P_Item_Totem_Grassland_06.prefab"
+  },
+  "141": {
+    "initData": {
+      "dropCD": 1.5,
+      "shiningRadius": 35,
+      "shiningTime": -1,
+      "shiningValue": 40
+    },
+    "name": "迷雾森林发光果树",
+    "groupType": 1,
+    "subType": "PlantTree",
+    "actionPrototypeIds": [
+      223
+    ],
+    "resId": "$P_Item_FogForestTree_30day.prefab"
+  },
+  "220": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带照相2",
+    "resId": "$Eff_Env_LigthStrip_PhotoGalleryOut_02.prefab"
+  },
+  "124": {
+    "groupType": 3,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_OverlapCounter_Capsule_SB.prefab",
+    "name": "胶囊体重叠计数器"
+  },
+  "130": {
+    "subType": "Trigger",
+    "name": "星星宝箱-半透-预研",
+    "resId": "$P_Item_ScenenObject_StarChest_Transparent_SB.prefab"
+  },
+  "223": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_02.prefab",
+    "name": "ARK街道引导光带2"
+  },
+  "259": {
+    "subType": "LevelItem",
+    "name": "喷水机关",
+    "resId": "$P_Item_LevelItem_WaterMechanism.prefab"
+  },
+  "224": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_03.prefab",
+    "name": "ARK街道引导光带3"
+  },
+  "260": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_FootPrint_FogForest_02.prefab",
+    "name": "迷雾森林发光脚印-垂直"
+  },
+  "225": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_04.prefab",
+    "name": "ARK街道引导光带4"
+  },
+  "261": {
+    "groupType": 1,
+    "subType": "BuffTrigger",
+    "resId": "$P_Item_LosingArea.prefab",
+    "name": "迷雾森林迷失trigger"
+  },
+  "226": {
+    "mmoNotPrefabModel": 1,
+    "subType": "AudioTrigger",
+    "resId": "$Eff_Env_LigthStrip_Street_05.prefab",
+    "name": "ARK街道引导光带5"
+  },
+  "210": {
+    "groupType": 6,
+    "subType": "PlatformPro",
+    "resId": "$P_Item_LevelItem_MovingBar_32m.prefab",
+    "name": "MovingBar_32m"
+  },
+  "227": {
+    "resId": "$P_Item_Shrine11_DisapperDoor Diff.prefab",
+    "subType": "LevelItem",
+    "name": "11号神庙石门_前后错位",
+    "prefabModel": 1
+  },
+  "228": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_5_Small.prefab",
+    "name": "草原云临时云-9"
+  },
+  "229": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_07",
+    "resId": "$P_Item_Totem_Grassland_07.prefab"
+  },
+  "266": {
+    "resId": "$P_Temple_11_Totem_Helgon_03.prefab",
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_03",
+    "prefabModel": 1
+  },
+  "267": {
+    "resId": "$P_Temple_11_Totem_AvatarSpecial.prefab",
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_人视野_02",
+    "prefabModel": 1
+  },
+  "317": {
+    "prefabModel": 1,
+    "groupType": 6,
+    "subType": "Piano",
+    "name": "ARK音乐钢琴_02",
+    "resId": "$P_Item_LevelItem_Ark_PianoStair_Container_A.prefab"
+  },
+  "242": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_Item_soundstone_link.prefab",
+    "name": "回音石连线(临时）"
+  },
+  "271": {
+    "resId": "$P_Item_slot_machine.prefab",
+    "subType": "SlotMachine",
+    "name": "ARK老虎机",
+    "prefabModel": 1
+  },
+  "280": {
+    "subType": "EchoLink",
+    "name": "回音石连线",
+    "resId": "$P_Item_EchoLink.prefab"
+  },
+  "281": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_ScalableAirwall_Box_SB.prefab",
+    "name": "可缩放空气墙-方形"
+  },
+  "243": {
+    "subType": "MechanismBallHole",
+    "name": "机关球洞",
+    "resId": "$P_Item_LevelItem_TempleBallHolder.prefab"
+  },
+  "249": {
+    "groupType": 6,
+    "subType": "LevelButton",
+    "resId": "$P_Item_LevelItem_ConsoleTrigger_001.prefab",
+    "name": "控制台方形"
+  },
+  "60": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_3000_runningstarly_LevelItem.prefab",
+    "name": "出生点（废弃）"
+  },
+  "901": {
+    "groupType": 2,
+    "subType": "Switch",
+    "resId": "$P_Item_LevelItem_ConsoleTrigger_Switch.prefab",
+    "name": "控制台方形_开关版"
+  },
+  "251": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_SensorPlant_006.prefab",
+    "name": "感声发光植物（草形状1）"
+  },
+  "862": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Prefab_LVUIRg_Build_FightingRoom_04_KEKONG.prefab",
+    "name": "休息室可控"
+  },
+  "860": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_Prefab_LVUIRg_Build_FightingRoom_04_CAIFU.prefab",
+    "name": "休息室财富"
+  },
+  "694": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Shrub_Hidden_02.prefab",
+    "name": "地宫小隐身草"
+  },
+  "680": {
+    "name": "地宫尖刺（4x8）",
+    "groupType": 2,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_4x8_Temple.prefab"
+  },
+  "663": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GrabEggLamp_Light_1.prefab",
+    "name": "驱散迷雾-小火台"
+  },
+  "659": {
+    "name": "抢蛋专用_地宫尖刺（4x4）",
+    "groupType": 3,
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "伸出"
+      ],
+      [
+        "state",
+        1,
+        "收缩"
+      ],
+      [
+        "state",
+        2,
+        "循环周期活动"
+      ]
+    ],
+    "resId": "$P_Levelltem_Spike_4x4_Temple_GrabEgg.prefab"
+  },
+  "655": {
+    "groupType": 3,
+    "subType": "Geyser",
+    "resId": "$P_Levelltem_GrabEgg_GeyserMech.prefab",
+    "name": "地宫_间歇喷泉机关"
+  },
+  "187": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_4.prefab",
+    "name": "草原云正式_4"
+  },
+  "113": {
+    "subType": "LevelItem",
+    "name": "高台云1",
+    "resId": "$P_Item_Fog_Cloud1_1.prefab"
+  },
+  "268": {
+    "subType": "SequenceSound",
+    "name": "ARK音序器",
+    "resId": "$P_Item_LevelItem_SequenceSound.prefab"
+  },
+  "265": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_ImpulseDetector.prefab",
+    "name": "冲量检测器"
+  },
+  "217": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带电竞",
+    "resId": "$Eff_Env_LigthStrip_EsportsStadium_01.prefab"
+  },
+  "219": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带照相1",
+    "resId": "$Eff_Env_LigthStrip_PhotoGalleryOut_01.prefab"
+  },
+  "238": {
+    "resId": "$P_Item_LevelItem_CommonLight.prefab",
+    "subType": "LevelItem",
+    "levelitemDesc": [
+      [
+        "state",
+        0,
+        "灯光关闭"
+      ],
+      [
+        "state",
+        1,
+        "灯光打开"
+      ]
+    ],
+    "name": "发光元件"
+  },
+  "264": {
+    "groupType": 1,
+    "subType": "BuffTrigger",
+    "resId": "$P_Item_PreLosingArea.prefab",
+    "name": "迷雾森林预警trigger"
+  },
+  "236": {
+    "resId": "$P_Temple_11_Totem_Helgon_Bridge_02_right.prefab",
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_桥2_右",
+    "prefabModel": 1
+  },
+  "232": {
+    "resId": "$P_Temple_11_Totem_Helgon_Bridge_01.prefab",
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_桥1",
+    "prefabModel": 1
+  },
+  "270": {
+    "groupType": 1,
+    "subType": "Switch",
+    "resId": "$P_Item_SceneObject_Electric_Fan_Ancient_TempleTest.prefab",
+    "name": "电风扇_象鼻海岸测试专用"
+  },
+  "147": {
+    "name": "单人神庙终点",
+    "multiPlayerNum": 1,
+    "subType": "LevelItemMulti",
+    "actionPrototypeIds": [
+      135
+    ],
+    "resId": "$P_TempleComponent_EndingMachine_SinglePlayer.prefab"
+  },
+  "143": {
+    "groupType": 1,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_Event_Trigger.prefab",
+    "name": "事件触发器"
+  },
+  "231": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_09",
+    "resId": "$P_Item_Totem_Grassland_09.prefab"
+  },
+  "111": {
+    "groupType": 3,
+    "subType": "Trigger",
+    "resId": "$P_Item_Level_WBLevelComponent_TempFlower.prefab",
+    "name": "驱散云雾蒲公英-预研"
+  },
+  "218": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带中餐",
+    "resId": "$Eff_Env_LigthStrip_Express_01.prefab"
+  },
+  "139": {
+    "name": "风扇开关",
+    "groupType": 6,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Item_WindSwitch.prefab"
+  },
+  "198": {
+    "name": "元素开关-冰",
+    "groupType": 6,
+    "subType": "Switch",
+    "sortId": 110,
+    "resId": "$P_Item_LevelItem_ElementSwitch_Freeze.prefab"
+  },
+  "73": {
+    "canShowTargetPos": 1,
+    "name": "CE新手_终点",
+    "groupType": 3,
+    "subType": "Trigger",
+    "sortId": 150,
+    "resId": "$P_Item_SceneObject_Tutorial_EndPoint.prefab"
+  },
+  "71": {
+    "name": "CE新手_指引箭头",
+    "groupType": 3,
+    "subType": "LevelItem",
+    "sortId": 150,
+    "resId": "$P_Item_SceneObject_Tutorial_Direction.prefab"
+  },
+  "70": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_03（废弃）",
+    "resId": "$P_Item_Totem_Grassland_03.prefab"
+  },
+  "175": {
+    "subType": "BuffTrigger",
+    "name": "巫帽草歌唱区域",
+    "resId": "$P_Item_Trigger_Cylinder_SB.prefab"
+  },
+  "116": {
+    "subType": "LevelItem",
+    "name": "图腾遗迹云",
+    "resId": "$P_Item_Fog_Cloud3.prefab"
+  },
+  "209": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Animator_Prefab_Container.prefab",
+    "name": "预制体引用元件Animator"
+  },
+  "66": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_106_multichest2_LevelItem.prefab",
+    "name": "多层宝箱"
+  },
+  "65": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_01",
+    "resId": "$P_Item_Totem_Grassland_01.prefab"
+  },
+  "154": {
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger_Swim.prefab",
+    "name": "游泳加速道具"
+  },
+  "330": {
+    "subType": "LevelItem",
+    "name": "电系神庙电源",
+    "resId": "$P_TempleComponent_PowerSupply.prefab"
+  },
+  "178": {
+    "resId": "$P_Item_LevelItem_TempleLight.prefab",
+    "subType": "LevelItem",
+    "name": "神庙通电灯泡",
+    "prefabModel": 1
+  },
+  "240": {
+    "groupType": 3,
+    "subType": "PetChallengeGoal",
+    "resId": "$P_Item_Pet_Challenge_Goal.prefab",
+    "name": "限时挑战目标"
+  },
+  "49": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "海浪",
+    "resId": "$P_LC_272_BoxInSea_LevelItem.prefab"
+  },
+  "61": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_LC_3000_trappainter_LevelItem.prefab",
+    "name": "多人关卡示例（废弃）"
+  },
+  "157": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$20Rad_Sphere_Cloud.prefab",
+    "name": "云上草原_半径20高度云"
+  },
+  "34": {
+    "groupType": 1,
+    "subType": "Trigger",
+    "resId": "$P_Item_Trigger_Capsule_SB.prefab",
+    "name": "胶囊体触发器"
+  },
+  "158": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$15Rad_Sphere_Cloud.prefab",
+    "name": "云上草原_半径15高度云"
+  },
+  "10": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_Cube_SB.prefab",
+    "name": "方块元件"
+  },
+  "56": {
+    "subType": "Switch",
+    "name": "箱庭_滚石风场",
+    "resId": "$P_Item_Box_Wind.prefab"
+  },
+  "86": {
+    "name": "无扇叶风扇-对人非物理风-有特效",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_NoLeafFan_NonPhysics_SB.prefab"
+  },
+  "21": {
+    "subType": "Trigger",
+    "name": "箱庭_供盆",
+    "resId": "$P_Item_Box_Package_Tub.prefab"
+  },
+  "114": {
+    "subType": "LevelItem",
+    "name": "高台云2-云朵羊Boss云",
+    "resId": "$P_Item_Fog_Cloud1_2.prefab"
+  },
+  "136": {
+    "groupType": 3,
+    "subType": "PetChallengeGoal",
+    "resId": "$P_Item_SceneObject_StickSheepArea.prefab",
+    "name": "粘云朵羊交付任务提示圈"
+  },
+  "328": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_草原_11",
+    "resId": "$P_Item_Totem_Grassland_11.prefab"
+  },
+  "278": {
+    "multiPlayerNum": 2,
+    "name": "双人交互机关",
+    "groupType": 2,
+    "subType": "LevelItemMultiInteractor",
+    "actionPrototypeIds": [
+      176
+    ],
+    "resId": "$P_Item_LevelItem_Stela.prefab"
+  },
+  "332": {
+    "name": "物理平台",
+    "groupType": 1,
+    "subType": "LevelItem",
+    "sortId": 0,
+    "resId": "$P_Item_Physics_Platform.prefab"
+  },
+  "333": {
+    "customField": [
+      "animSpeedUp"
+    ],
+    "name": "空中加速道具_世界",
+    "groupType": 6,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger_Fly_World.prefab"
+  },
+  "335": {
+    "subType": "LevelItem",
+    "name": "黄树林-海风1",
+    "resId": "$Eff_Env_Level_IOT_SceneObject_SeaWind_01.prefab"
+  },
+  "338": {
+    "groupType": 3,
+    "subType": "PositionBlender",
+    "resId": "$P_Item_LevelItem_MovableWater.prefab",
+    "name": "水体控制器"
+  },
+  "340": {
+    "name": "风扇-伪水流流速效果",
+    "groupType": 5,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_FakeWaterFlow.prefab"
+  },
+  "343": {
+    "customField": [
+      "animSpeedUp"
+    ],
+    "name": "空中加速道具_世界02",
+    "groupType": 6,
+    "subType": "EventTrigger",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Item_LevelItem_SpeedUpTrigger_Fly_World02.prefab"
+  },
+  "345": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_新_03",
+    "resId": "$P_Temple_11_Totem_Helgon_new_03.prefab"
+  },
+  "347": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_新_04_2",
+    "resId": "$P_Temple_11_Totem_Helgon_new_04_02.prefab"
+  },
+  "350": {
+    "groupType": 3,
+    "subType": "LevelItem",
+    "resId": "$P_Item_EmptyAbsorber_SB.prefab",
+    "name": "空吸附点"
+  },
+  "353": {
+    "subType": "Piano",
+    "name": "钢琴",
+    "resId": "$P_Fan_SB_NoLeaf.prefab"
+  },
+  "354": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "LevelItem",
+    "name": "图腾_11号神庙_人龙视野_门_06",
+    "resId": "$P_Item_Shrine11_DisapperDoor_06.prefab"
+  },
+  "356": {
+    "subType": "LevelItem",
+    "name": "喷水机关(ECS版)",
+    "resId": "$P_Item_LevelItem_WaterMechanism_ECS.prefab"
+  },
+  "369": {
+    "groupType": 2,
+    "subType": "LevelItem",
+    "resId": "$P_TempleComponent_StandardFence.prefab",
+    "name": "神庙-栅栏1"
+  },
+  "250": {
+    "groupType": 6,
+    "subType": "LevelButton",
+    "resId": "$P_Item_LevelItem_ConsoleTrigger_002.prefab",
+    "name": "控制台圆形"
+  },
+  "371": {
+    "name": "发光元件_测试用",
+    "groupType": 6,
+    "subType": "Switch",
+    "sortId": 110,
+    "resId": "$P_Item_LevelItem_ElementSwitch_Light.prefab"
+  },
+  "380": {
+    "subType": "LevelItem",
+    "name": "黄树林发光树",
+    "resId": "$P_Item_SceneObject_StarFruitTree.prefab"
+  },
+  "386": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_StarFruitTree.prefab",
+    "name": "星乐蒂大树"
+  },
+  "46": {
+    "name": "踏板开关",
+    "groupType": 6,
+    "subType": "PressPlatform",
+    "sortId": 100,
+    "resId": "$P_Item_SceneObject_Chest_Trigger.prefab"
+  },
+  "275": {
+    "groupType": 1,
+    "subType": "FogController",
+    "resId": "$P_Item_SceneObject_POI_Cloud_CountingSheep.prefab",
+    "name": "草原云正式_数羊云"
+  },
+  "108": {
+    "name": "刚体运动辅助风",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Item_AssistWind_SB.prefab"
+  },
+  "263": {
+    "groupType": 1,
+    "subType": "Switch",
+    "resId": "$P_Item_SceneObject_Electric_Fan_Ancient.prefab",
+    "name": "电风扇"
+  },
+  "257": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "FogController",
+    "name": "神庙正式云_03",
+    "resId": "$P_Item_SceneObject_Temple_Cloud_03.prefab"
+  },
+  "256": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_Item_LevelItem_TempleLight.prefab",
+    "name": "灯泡"
+  },
+  "47": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_Chest_Final.prefab",
+    "name": "宝箱平台（废弃）"
+  },
+  "255": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_SensorPlant_005.prefab",
+    "name": "感声发光植物（藤蔓形状3）"
+  },
+  "254": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_SensorPlant_004.prefab",
+    "name": "感声发光植物（藤蔓形状2）"
+  },
+  "252": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_SensorPlant_007.prefab",
+    "name": "感声发光植物（草形状2）"
+  },
+  "400": {
+    "prefabModel": 1,
+    "groupType": 2,
+    "subType": "LevelItem",
+    "name": "狼烟",
+    "resId": "$P_POI_WolfSmoke.prefab"
+  },
+  "404": {
+    "groupType": 1,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_SceneObject_Tree_Clover_003.prefab",
+    "name": "树叶平台_星落森林_三叶"
+  },
+  "405": {
+    "groupType": 1,
+    "subType": "PaintArea",
+    "resId": "$P_Item_LevelItem_PaintArea.prefab",
+    "name": "画沙触发器"
+  },
+  "413": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_闪电",
+    "resId": "$P_Item_Totem_Beach_01_3.prefab"
+  },
+  "149": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "LevelItem",
+    "name": "云上草原-地下洞穴预研（废弃）",
+    "resId": "$P_Level_Grassland_UndergroundCaveTest.prefab"
+  },
+  "177": {
+    "mmoNotPrefabModel": 1,
+    "subType": "PosterDisplay",
+    "resId": "$P_Item_Poster_Display.prefab",
+    "name": "ARK店铺海报"
+  },
+  "80": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_BlockBox_SB.prefab",
+    "name": "空气墙-无提示"
+  },
+  "79": {
+    "subType": "LevelItem",
+    "name": "CE新手_空气墙",
+    "resId": "$P_Item_SceneObject_Tutorial_AirWall.prefab"
+  },
+  "78": {
+    "name": "无扇叶风扇-物理风",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_NoLeafFan_SB.prefab"
+  },
+  "77": {
+    "groupType": 1,
+    "subType": "PressPlatform",
+    "resId": "$P_Item_VirtualPressPlatform.prefab",
+    "name": "VirtualPressPlatform"
+  },
+  "76": {
+    "name": "新风扇-地宫",
+    "groupType": 6,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Fan_SB.prefab"
+  },
+  "74": {
+    "groupType": 5,
+    "subType": "LevelItem",
+    "resId": "$P_Item_GoPos_SB.prefab",
+    "name": "Go点"
+  },
+  "555": {
+    "subType": "LevelItem",
+    "name": "抢蛋地宫终点激活装置",
+    "resId": "$P_Item_TempleComponent_EndingMachine_GrabEgg.prefab"
+  },
+  "554": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Levelltem_RailwayTrack_02.prefab",
+    "name": "古代导轨02"
+  },
+  "553": {
+    "subType": "SpurtItem",
+    "name": "抢蛋优化的喷火装置",
+    "resId": "$P_Item_LevelItem_FireMechanism_Garb.prefab"
+  },
+  "235": {
+    "name": "新风扇_可旋转",
+    "groupType": 2,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Fan_SB_Rotate.prefab"
+  },
+  "551": {
+    "sortId": 200,
+    "prefabModel": 1,
+    "groupType": 4,
+    "subType": "TotemPuzzle",
+    "name": "图腾遗迹_花海北部_林地_拉拉蛋地区",
+    "resId": "$P_Item_Totem_FlowerSea_Forest_01.prefab"
+  },
+  "221": {
+    "subType": "AudioTrigger",
+    "name": "ARK商店引导光带人宠配饰",
+    "resId": "$Eff_Env_LigthStrip_SmartOut_01.prefab"
+  },
+  "486": {
+    "subType": "LevelItem",
+    "name": "ark移动平台",
+    "resId": "$P_Item_SceneObject_Ark_SheepPlatform_1.prefab"
+  },
+  "487": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_POI_RainCloud_1.prefab",
+    "name": "云上草原_黑色乌云"
+  },
+  "172": {
+    "groupType": 3,
+    "subType": "OverlapCounter",
+    "resId": "$P_Item_OverlapCounter_Sphere_GravityField.prefab",
+    "name": "球形低重力场"
+  },
+  "233": {
+    "resId": "$P_Temple_11_Totem_Helgon_02.prefab",
+    "subType": "TotemPuzzle",
+    "name": "图腾_11号神庙_龙视野_02",
+    "prefabModel": 1
+  },
+  "276": {
+    "prefabModel": 1,
+    "groupType": 1,
+    "subType": "FogController",
+    "name": "神庙正式云_04",
+    "resId": "$P_Item_SceneObject_Temple_Cloud_04.prefab"
+  },
+  "274": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_TransparentCube_SB.prefab",
+    "name": "透明方块"
+  },
+  "273": {
+    "groupType": 1,
+    "subType": "ChestShield",
+    "resId": "$P_Item_Chest_Shield_With_Marker_01.prefab",
+    "name": "封印宝箱平台（1）"
+  },
+  "599": {
+    "resId": "$P_TempleComponent_Wheel_9.prefab",
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "name": "旋转齿轮_荆棘塔07"
+  },
+  "598": {
+    "groupType": 1,
+    "subType": "LevelItem",
+    "resId": "$P_Item_SceneObject_IrilyBoss_Waterwave_Blue.prefab",
+    "name": "鸢尾boss战蓝色水波"
+  },
+  "320": {
+    "customField": [
+      "actived"
+    ],
+    "name": "升降锤",
+    "groupType": 3,
+    "subType": "MovingPlatform",
+    "resId": "$P_Item_LevelItem_TempleLiftingHammer.prefab"
+  },
+  "239": {
+    "groupType": 3,
+    "subType": "Trigger",
+    "resId": "$P_Item_Level_WBLevelComponent_TempFlower_Small.prefab",
+    "name": "小型驱散蒲公英-预研"
+  },
+  "237": {
+    "resId": "$P_Item_Shrine11_DisapperDoor_TwoDoors.prefab",
+    "subType": "LevelItem",
+    "name": "11号神庙石门_双门",
+    "prefabModel": 1
+  },
+  "234": {
+    "name": "新风扇_无扇叶",
+    "groupType": 1,
+    "subType": "Switch",
+    "initData": {
+      "isOn": true
+    },
+    "resId": "$P_Fan_SB_NoLeaf.prefab"
+  }
+}

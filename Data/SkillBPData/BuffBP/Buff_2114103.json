@@ -1,0 +1,169 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114103",
+  "NodeID": 1,
+  "UID": "3968bd98-3f1e-4a34-9800-891767903f6d",
+  "desc": "",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "ee02eda5-50d6-4b70-8701-e45b7bed0be6",
+      "target": "TrapTarget",
+      "val": 0,
+      "NodeID": 22
+    },
+    "13": {
+      "leaveActionIds": [
+        16
+      ],
+      "relation": 4,
+      "NodeID": 13,
+      "UID": "1a5cc210-2069-461e-a755-3b492c912697",
+      "radius": 5,
+      "name": "addAOITrap",
+      "enterActionIds": [
+        12
+      ]
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "a84735d7-f6f5-4e8a-a7ca-c77a3afe1ab9",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "6": {
+      "tag": "TE_Wild_Light",
+      "name": "removeEntityTag",
+      "UID": "427c9aef-2ee2-46c4-96ca-89666156d30a",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 1114402,
+      "NodeID": 10,
+      "UID": "a4a23554-1c97-44bb-8d01-d41119fdbc7f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "templateId": 1114402,
+      "name": "removeBuffLayer",
+      "UID": "1ad0971b-7110-4866-a591-25f9fd85669d",
+      "layer": 1,
+      "target": "TrapTarget",
+      "NodeID": 15
+    },
+    "7": {
+      "tag": "TE_Par_Light",
+      "name": "addEntityTag",
+      "UID": "7a70dba8-d9c5-41e1-b0fe-50a51d9749d9",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "d8a43aa0-9406-44c2-88e8-a15da52eca2a",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "8282a566-26fb-4340-91b5-427e2fab1f5e",
+      "effectId": "Eff_Parmon_10143_Light",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "b183ce73-2ec8-49f6-893b-3881d25ada14",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "9": {
+      "tag": "TE_Wild_Light",
+      "name": "addEntityTag",
+      "UID": "03654427-ead2-455b-bb06-9fb0eaec9563",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "buffId": 1114401,
+      "name": "hasBuff",
+      "UID": "11d70a3c-bc18-4b47-a1fc-dcbaa54245c6",
+      "target": "TrapTarget",
+      "NodeID": 18
+    },
+    "21": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "51aed643-84c3-422a-a232-eed9781be13a",
+      "NodeID": 21,
+      "lValue": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "4591405a-402d-4098-a15e-1e9f2f6a54f8",
+        "target": "TrapTarget",
+        "NodeID": 20
+      }
+    },
+    "19": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "743b7386-fbc0-412c-a530-34fa36e1c949",
+      "target": "TrapTarget",
+      "val": 1,
+      "NodeID": 19
+    },
+    "4": {
+      "tag": "TE_Par_Light",
+      "name": "removeEntityTag",
+      "UID": "ff6ec864-d794-4be1-be3f-dc88cfd3a84f",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "12": {
+      "actionIds": [
+        10,
+        19
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "87fdca44-32ed-4a4d-a3b9-b55ca08a1029",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    4,
+    6,
+    23,
+    24,
+    25
+  ],
+  "onBuffStartIds": [
+    7,
+    9,
+    13
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116103",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "registerCharacterBuff",
+      "calcInfo": {
+        "pet_switch_cd_reduce_ratio": 0.5
+      },
+      "NodeID": 3,
+      "UID": "c3e31a9e-f0dd-4202-81d0-af559927af87",
+      "conditionType": 1,
+      "conditions": [
+        {
+          "stateName": "SNEAK",
+          "isParentState": true,
+          "NodeID": 10,
+          "UID": "98a70228-52e0-4010-b50c-8e23759626fd",
+          "target": "OWNER",
+          "name": "isInCharacterState",
+          "abilityType": 0
+        }
+      ],
+      "characterBuffType": 1
+    },
+    "9": {
+      "target": {
+        "UID": "4b02a898-6349-4e13-8129-cd6b1b573201",
+        "name": "getEventData",
+        "eventName": "onNewPetSwitch",
+        "NodeID": 8
+      },
+      "duration": 10,
+      "buffId": 2116104,
+      "NodeID": 9,
+      "UID": "67f9568c-c463-4be5-9993-bf235aa5d781",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "313ed140-7ab9-409c-996d-8c4a29dda49d",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "7": {
+      "UID": "462b9173-8a7d-44a1-8a07-9b6372f554a2",
+      "newPetActionIds": [
+        6
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 7
+    },
+    "5": {
+      "name": "isInBurrow",
+      "UID": "3dbc30c3-53a8-4612-b409-6728703d57bf",
+      "target": "OWNER",
+      "NodeID": 5,
+      "not": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7
+  ]
+}

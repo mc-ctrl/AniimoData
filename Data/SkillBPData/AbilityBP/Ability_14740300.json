@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_14740300",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "钢尾",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 14740300001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Dance"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10474_Skill_Dance_01",
+    "Eff_Parmon_10474_Skill_Dance_02",
+    "Eff_Hit_Electric_Blunt_Y",
+    "Eff_Parmon_10474_Skill_Dance_03",
+    "Eff_Parmon_10474_Skill_Dance_04"
+  ],
+  "searchRelation": 2,
+  "name": "钢尾",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10400400
+}

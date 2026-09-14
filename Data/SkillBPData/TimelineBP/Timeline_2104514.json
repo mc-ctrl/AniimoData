@@ -1,0 +1,151 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "key": "delay1",
+      "duration": 0.01,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "0f5fbdab-5623-4c91-acd9-9855aec71f8b",
+      "name": "addEntityTimer"
+    },
+    "4": {
+      "actionIds": [
+        2,
+        11
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "3551e98e-f756-4104-835d-0500026a4e15",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "b0ced10e-965c-4a35-ab12-8d21a89c3800",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "195301d1-6317-4d70-a3b4-354e43662386",
+      "target": "MASTER",
+      "name": "isTargetAlive",
+      "NodeID": 10
+    },
+    "15": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "638f58de-18aa-4c0e-9370-937db8220a41",
+      "NodeID": 15,
+      "lValue": {
+        "key": "LeafyLotus",
+        "name": "getCacheVal",
+        "UID": "8736589c-a62e-4f4b-a69a-6f47c7b19df7",
+        "target": "MASTER",
+        "NodeID": 14
+      }
+    },
+    "16": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "d76ff837-de65-4889-a3e7-44e2615b969f",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "57968cea-3478-475e-8df2-45ff291d3410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "13": {
+      "duration": 0.2,
+      "name": "moveByDirection",
+      "UID": "5c2a789b-ba95-459e-bbb3-65292c28d9b0",
+      "target": "OWNER",
+      "isLocalDir": false,
+      "needForceOnGround": false,
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "3d953a0e-318d-424b-a166-e0cad3435c3c",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1.15,
+          0
+        ],
+        "NodeID": 12
+      },
+      "velocity": [
+        0,
+        10,
+        0
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 13
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2eca0090-c40b-416e-946f-0bed0ae7c5a5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_LotusLeafEssence_Start",
+      "NodeID": 11
+    },
+    "2": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104516,
+      "NodeID": 2,
+      "UID": "5fb0fb60-cb7f-4df6-8cc3-49e4d9fb89c9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Creation",
+      "stick": 0,
+      "pos": "OWNER",
+      "name": "createEntity"
+    },
+    "12": {
+      "name": "getTargetOffsetPos",
+      "UID": "3d953a0e-318d-424b-a166-e0cad3435c3c",
+      "target": "OWNER",
+      "offset": [
+        0,
+        1.15,
+        0
+      ],
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2104514",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    8
+  ],
+  "layer": "Base",
+  "length": 9999
+}

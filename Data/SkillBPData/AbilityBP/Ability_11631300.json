@@ -1,0 +1,47 @@
+{
+  "stopBurrowActOnTgtNodeId": 39,
+  "stopBurrowTimelineId": 11631300001,
+  "BPName": "ability_11631300",
+  "NodeID": 1,
+  "UID": "0d60a06c-3db4-4b70-8523-eec15727b526",
+  "abilityParamId": 10200190,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "burrowSwitchToAbilityId": 11630110,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11631300001,
+      "name": "setCombatActionTimeline",
+      "UID": "a88dfbe4-bb3e-4000-a0d1-d5bc5d13fc87",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_SpikeAttack_BurrowState",
+    "Skill_BurrowSkill_CombatExit"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10161_Skill_Burrow_DashAttack_ICE",
+    "Eff_Hit_Ice_Blunt",
+    "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "tags": [
+    1
+  ],
+  "searchTargetRangeDown": 0.5,
+  "canCastByCallFriends": false,
+  "burrowExitCastAbilityId": 11630110,
+  "onlyHasActOnTargets": true,
+  "burrowDuration": 6,
+  "desc": ""
+}

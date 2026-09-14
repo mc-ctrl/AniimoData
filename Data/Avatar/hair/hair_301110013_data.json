@@ -1,0 +1,150 @@
+{
+  "24": {
+    "key": "24",
+    "partId": 24,
+    "order": 0,
+    "originDisplayName": "发束",
+    "displayName": 50991165,
+    "kindList": {
+      "M_Avatar_Girl_Hair_G10013_Plait03": {
+        "key": "M_Avatar_Girl_Hair_G10013_Plait03",
+        "reaction": {
+          "key": 48,
+          "bones": {},
+          "colors": {
+            "dye1": {
+              "opName": 22,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 43966019
+            },
+            "gradient": {
+              "opName": 24,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 34225454
+            },
+            "baseColor": {
+              "tIndex": 2,
+              "displayName": 41749054,
+              "opName": 21
+            }
+          }
+        }
+      }
+    }
+  },
+  "23": {
+    "key": "23",
+    "partId": 23,
+    "order": 0,
+    "originDisplayName": "基础",
+    "displayName": 47622986,
+    "kindList": {
+      "M_Avatar_Girl_Hair_G10013_Body01": {
+        "key": "M_Avatar_Girl_Hair_G10013_Body01",
+        "reaction": {
+          "key": 46,
+          "bones": {},
+          "colors": {
+            "dye1": {
+              "opName": 22,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 43966019
+            },
+            "gradient": {
+              "opName": 24,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 34225454
+            },
+            "baseColor": {
+              "tIndex": 2,
+              "displayName": 41749054,
+              "opName": 21
+            }
+          }
+        }
+      }
+    }
+  },
+  "20": {
+    "key": "20",
+    "partId": 20,
+    "order": 0,
+    "originDisplayName": "刘海",
+    "displayName": 50776316,
+    "kindList": {
+      "M_Avatar_Girl_Hair_G10013_Fringe02": {
+        "key": "M_Avatar_Girl_Hair_G10013_Fringe02",
+        "reaction": {
+          "key": 47,
+          "bones": {},
+          "colors": {
+            "dye1": {
+              "opName": 22,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 43966019
+            },
+            "gradient": {
+              "opName": 24,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 34225454
+            },
+            "baseColor": {
+              "tIndex": 2,
+              "displayName": 41749054,
+              "opName": 21
+            }
+          }
+        }
+      }
+    }
+  },
+  "21": {
+    "key": "21",
+    "partId": 21,
+    "order": 0,
+    "originDisplayName": "鬓角",
+    "displayName": 59939053,
+    "kindList": {
+      "M_Avatar_Girl_Hair_G10013_Temples01": {
+        "key": "M_Avatar_Girl_Hair_G10013_Temples01",
+        "reaction": {
+          "key": 49,
+          "bones": {},
+          "colors": {
+            "dye1": {
+              "opName": 22,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 43966019
+            },
+            "gradient": {
+              "opName": 24,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 34225454
+            },
+            "baseColor": {
+              "tIndex": 2,
+              "displayName": 41749054,
+              "opName": 21
+            }
+          }
+        }
+      }
+    }
+  }
+}

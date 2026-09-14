@@ -1,0 +1,50 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6006001",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "instant_dmg_fix": 10
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "5876105c-28a7-4883-b4d4-b72385012b1a",
+      "target": {
+        "valueName": "tgt",
+        "name": "getAIBlackBoardValue",
+        "UID": "b74655a1-e712-4789-9356-1540e0908ff2",
+        "target": "OWNER",
+        "NodeID": 4
+      },
+      "name": "calcResult",
+      "NodeID": 5
+    },
+    "4": {
+      "valueName": "tgt",
+      "name": "getAIBlackBoardValue",
+      "UID": "b74655a1-e712-4789-9356-1540e0908ff2",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "9a035b5e-f2a0-44d8-8d1c-b8cf2b242787",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

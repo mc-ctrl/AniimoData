@@ -1,0 +1,521 @@
+{
+  "nodeMap": {
+    "37": {
+      "name": "calcResult",
+      "NodeID": 37,
+      "calcInfoByLuaConfig": {
+        "id": 15610101,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "d7ec2381-13f1-44ed-bd33-8236121b706e",
+      "target": "TARGET",
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30205,
+        "hitFrameFreezeId": 10042,
+        "hitEffect": {},
+        "elementType": 6,
+        "impulseId": 4002
+      }
+    },
+    "39": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 37,
+      "NodeID": 39,
+      "UID": "54c6be65-f60c-4960-9cae-d350054cb493",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            80,
+            1.8,
+            0
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -10,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 4002,
+      "actionIds": [
+        37,
+        59
+      ]
+    },
+    "63": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "dc8f0140-945f-4e52-98b1-ae2c97fc54ae",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 63
+    },
+    "54": {
+      "name": "dropEffectStr",
+      "UID": "d6850cd1-81f7-438e-9cf3-9a984733da90",
+      "effectId": "Eff_Parmon_10561_Skill_BladeReturn_Pursuit_Green",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "64": {
+      "name": "setSkillHitDistance",
+      "UID": "9855b04f-7138-4f95-9512-d2ac2293e189",
+      "skillHitDisplacementId": 1000,
+      "target": "OWNER",
+      "NodeID": 64
+    },
+    "43": {
+      "buffId": 9156401,
+      "name": "hasBuff",
+      "UID": "c80221e7-6fe8-4f64-a816-ed5e2b73020d",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "44": {
+      "calcId": 15610101,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 44,
+      "UID": "f1e58054-f40a-472f-b5fc-d2cb57a876ba",
+      "name": "getParamByLuaConfig"
+    },
+    "2": {
+      "name": "setNextComboAbilityId",
+      "UID": "c01f7070-bd31-4c54-9cf1-d118168f919f",
+      "target": "OWNER",
+      "NodeID": 2,
+      "abilityId": 0
+    },
+    "4": {
+      "UID": "507665a6-1528-47d7-8251-bc4aea054e51",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          20,
+          2,
+          54,
+          55,
+          56
+        ]
+      },
+      "NodeID": 4
+    },
+    "71": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "d6476f84-a2b4-4a2f-b4cc-1d91ac5853ed",
+      "NodeID": 71,
+      "lValue": {
+        "key": "BladeColor1",
+        "name": "getServerCacheVal",
+        "UID": "b4dcd603-5097-4415-a68c-26a8cd60567e",
+        "target": "OWNER",
+        "NodeID": 70
+      }
+    },
+    "73": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "d19d677b-cd7d-49a2-8aba-be921171a8ab",
+      "NodeID": 73,
+      "lValue": {
+        "key": "BladeColor1",
+        "name": "getServerCacheVal",
+        "UID": "16a39763-10ff-48e3-9a69-5f61c73b9a5a",
+        "target": "OWNER",
+        "NodeID": 72
+      }
+    },
+    "74": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2a2864f1-99e1-45aa-9a05-7855249c8597",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10561_Skill_BladeReturn03",
+      "NodeID": 74
+    },
+    "69": {
+      "key": "BladeColor1",
+      "name": "setServerCacheVal",
+      "UID": "59391c2b-2a6a-4454-85f3-1044627d4425",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "f1e56d31-9028-4fa6-84d7-c3a917ca306c",
+        "NodeID": 68,
+        "lValue": {
+          "key": "BladeColor1",
+          "name": "getServerCacheVal",
+          "UID": "3f655ffb-24c2-4520-b00b-fd4ddc0bcad0",
+          "target": "OWNER",
+          "NodeID": 67
+        }
+      },
+      "NodeID": 69
+    },
+    "65": {
+      "action": {
+        "actionIds": [
+          64
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 65,
+      "UID": "44390b3a-a316-4cfe-86be-783dc56016df"
+    },
+    "49": {
+      "actionIds": [
+        48
+      ],
+      "conditionActionIds": [
+        71
+      ],
+      "UID": "022d5949-9534-475f-b947-cafa56a901ae",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        53
+      ],
+      "NodeID": 49
+    },
+    "52": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c21df18c-bbbf-4df1-841b-5a56b2d94e66",
+      "effectId": "Eff_Parmon_10561_Skill_BladeReturn_Pursuit_Red",
+      "speed": 1,
+      "NodeID": 52
+    },
+    "18": {
+      "UID": "147d7e8d-84af-4bfe-b9ec-5713e39c04ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21,
+          16,
+          63,
+          74
+        ]
+      },
+      "NodeID": 18
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c9504d59-aa76-4b3b-b1ad-e37de0386cf4",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_BladeReturn_Pursuit"
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 32,
+      "UID": "4e5b5fc2-87ef-46fe-98de-ae429383b0d1"
+    },
+    "47": {
+      "calcId": 15610101,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 47,
+      "UID": "5843abd2-b962-4f31-a3b6-5d150c786aa3",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "UID": "530e10cc-5fbb-49b3-a8f0-190eee42d991",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          22
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "c38d460e-5eb7-410f-b750-4d4d7c740ae2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "86a05e58-847d-46e3-af18-06e4e5d00620",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "22": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "2c2b2c27-5104-4466-8c26-6c05d63d903b",
+      "to": 15610100,
+      "NodeID": 22,
+      "from": 15610100
+    },
+    "13": {
+      "UID": "38803913-205b-4ea4-a06b-b60e03880f87",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 13
+    },
+    "55": {
+      "name": "dropEffectStr",
+      "UID": "32e9208e-f434-43c7-8e6e-c617d44f074a",
+      "effectId": "Eff_Parmon_10561_Skill_BladeReturn_Pursuit_Yellow",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 14,
+      "UID": "0e233a76-6638-453a-a288-ffee053ae1e7"
+    },
+    "56": {
+      "name": "dropEffectStr",
+      "UID": "920879f3-1e32-452d-8730-e60078600fe4",
+      "effectId": "Eff_Parmon_10561_Skill_BladeReturn_Pursuit_Red",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "16": {
+      "UID": "6180cfc4-a19f-4304-8e77-c039b312fed6",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 16
+    },
+    "57": {
+      "key": "Bullet2",
+      "name": "setCacheVal",
+      "UID": "0d09421f-bbbc-41ef-97cd-3f32d52ee4ce",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 57
+    },
+    "26": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "calcId": 15610101,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 47,
+            "UID": "5843abd2-b962-4f31-a3b6-5d150c786aa3",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "61e7458a-b1eb-4e75-972d-f55720a471a8",
+          "NodeID": 45,
+          "lValue": {
+            "calcId": 15610101,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 44,
+            "UID": "f1e58054-f40a-472f-b5fc-d2cb57a876ba",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30205,
+        "hitFrameFreezeId": 10042,
+        "hitEffect": {},
+        "elementType": 6,
+        "impulseId": 4002
+      },
+      "UID": "6b07402d-ba5f-4ecc-a8e2-5d0036e361fc",
+      "target": "TARGET",
+      "overridePower": 1,
+      "NodeID": 26
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8bbb1e86-be8d-4937-9816-5aa371e2c8c7",
+      "effectId": "Eff_Parmon_10561_Skill_BladeReturn_Pursuit_Green",
+      "speed": 1,
+      "NodeID": 48
+    },
+    "28": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 26,
+      "NodeID": 28,
+      "UID": "4874014b-3dff-495d-bcb6-4ae63d2eca82",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            80,
+            1.8,
+            0
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            -10,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 4002,
+      "actionIds": [
+        26,
+        59
+      ]
+    },
+    "59": {
+      "actionIds": [
+        69,
+        62,
+        57
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "180c8b09-350a-4711-9dd0-df46aa51ee1d",
+      "name": "doActionsByConditions",
+      "NodeID": 59
+    },
+    "30": {
+      "actionIds": [
+        39
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "459e58dd-193f-46c2-b6b0-816306c8053a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 30
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6666,
+      "NodeID": 50,
+      "UID": "9a73a070-ed81-497a-acc9-bdd00774fbba"
+    },
+    "53": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        73
+      ],
+      "UID": "255d96ca-fe0c-4b76-a75c-fa8d5aeeeb25",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        52
+      ],
+      "NodeID": 53
+    },
+    "61": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "d5e6dd6c-fa00-412b-b115-e52db5af4144",
+      "NodeID": 61,
+      "lValue": {
+        "key": "Bullet2",
+        "name": "getCacheVal",
+        "UID": "6a5c7b59-905f-4fc5-9ad1-696ffa7773a2",
+        "target": "OWNER",
+        "NodeID": 60
+      }
+    },
+    "62": {
+      "scale": 0.5,
+      "name": "playEffectOnPosRot",
+      "UID": "f3e48c51-24d6-46e8-9ad3-985979a2d119",
+      "effectId": "Eff_Parmon_10564_Skill_Sword_Hit",
+      "pos": "HIT",
+      "target": "TARGET",
+      "speed": 1,
+      "NodeID": 62,
+      "offsetRotation": [
+        0,
+        -80,
+        0
+      ]
+    }
+  },
+  "BPName": "ability_15610101",
+  "NodeID": 6,
+  "UID": "f8d925ef-bcfa-4a35-b359-89445eb7b576",
+  "eventIds": [
+    18,
+    4,
+    14,
+    11,
+    65,
+    32,
+    50
+  ],
+  "layer": "Base",
+  "length": 2.37
+}

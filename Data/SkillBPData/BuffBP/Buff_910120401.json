@@ -1,0 +1,39 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 910120401,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "BPName": "buff_910120401",
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    10
+  ],
+  "stackRule": 0,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "71dbda0d-1522-4954-b8cc-7df9abf86f5d",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "86fe93b1-5587-4933-a1ae-a133f7692dcb",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 23
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    24
+  ],
+  "onBuffStartIds": [
+    23
+  ]
+}

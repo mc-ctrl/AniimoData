@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "dmg_grass_add_ratio": 0
+  },
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    10
+  ],
+  "BPName": "buff_9160302",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "calcInfoByLuaConfig": {
+    "id": 9160302,
+    "dmg_grass_add_ratio": "param0",
+    "type": 1
+  }
+}

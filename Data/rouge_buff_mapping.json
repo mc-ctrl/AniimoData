@@ -1,0 +1,419 @@
+{
+  "2070005": {
+    "ItemId": 2070005,
+    "buffItemName": "Break流-穿透"
+  },
+  "2040001": {
+    "ItemId": 2040001,
+    "buffItemName": "防御流-生命"
+  },
+  "2040002": {
+    "ItemId": 2040002,
+    "buffItemName": "防御流-防御"
+  },
+  "2071001": {
+    "ItemId": 2071001,
+    "buffItemName": "Break流-SP"
+  },
+  "2050001": {
+    "ItemId": 2050001,
+    "buffItemName": "受伤流-护盾量"
+  },
+  "2050002": {
+    "ItemId": 2050002,
+    "buffItemName": "受伤流-吸血"
+  },
+  "2060001": {
+    "ItemId": 2060001,
+    "buffItemName": "暴击流-暴伤"
+  },
+  "2060002": {
+    "ItemId": 2060002,
+    "buffItemName": "暴击流-Break"
+  },
+  "2060003": {
+    "ItemId": 2060003,
+    "buffItemName": "暴击流-EP"
+  },
+  "2060004": {
+    "ItemId": 2060004,
+    "buffItemName": "暴击流-增伤"
+  },
+  "2070001": {
+    "ItemId": 2070001,
+    "buffItemName": "Break流-暴击"
+  },
+  "2070002": {
+    "ItemId": 2070002,
+    "buffItemName": "Break流-暴伤"
+  },
+  "2070003": {
+    "ItemId": 2070003,
+    "buffItemName": "Break流-减防"
+  },
+  "2031000": {
+    "ItemId": 2031000,
+    "buffItemName": "治疗流-减伤"
+  },
+  "2000000": {
+    "buffItemName": "技能流-增伤1",
+    "ItemId": 2000000,
+    "id": 120000
+  },
+  "2000001": {
+    "buffItemName": "技能流-暴击",
+    "ItemId": 2000001,
+    "id": 120001
+  },
+  "2000002": {
+    "buffItemName": "技能流-暴伤",
+    "ItemId": 2000002,
+    "id": 120002
+  },
+  "2000003": {
+    "buffItemName": "技能流-Break",
+    "ItemId": 2000003,
+    "id": 120003
+  },
+  "2000004": {
+    "buffItemName": "技能流-EP1",
+    "ItemId": 2000004,
+    "id": 120004
+  },
+  "2000005": {
+    "buffItemName": "技能流-增伤2",
+    "ItemId": 2000005,
+    "id": 120005
+  },
+  "2001000": {
+    "buffItemName": "技能流-EP2",
+    "ItemId": 2001000,
+    "id": 120006
+  },
+  "2001001": {
+    "buffItemName": "技能流-移速",
+    "ItemId": 2001001,
+    "id": 120007
+  },
+  "2001002": {
+    "buffItemName": "技能流-斩杀",
+    "ItemId": 2001002,
+    "id": 120008
+  },
+  "2001003": {
+    "buffItemName": "技能流-护盾",
+    "ItemId": 2001003,
+    "id": 120009
+  },
+  "2002000": {
+    "buffItemName": "技能流-EP",
+    "ItemId": 2002000,
+    "id": 120010
+  },
+  "2010000": {
+    "buffItemName": "必杀流-增伤",
+    "ItemId": 2010000,
+    "id": 120012
+  },
+  "2010001": {
+    "buffItemName": "必杀流-暴击",
+    "ItemId": 2010001,
+    "id": 120013
+  },
+  "2010002": {
+    "buffItemName": "必杀流-暴伤",
+    "ItemId": 2010002,
+    "id": 120014
+  },
+  "2010003": {
+    "buffItemName": "必杀流-Break",
+    "ItemId": 2010003,
+    "id": 120015
+  },
+  "2010004": {
+    "buffItemName": "必杀流-SP",
+    "ItemId": 2010004,
+    "id": 120016
+  },
+  "2010005": {
+    "buffItemName": "必杀流-增伤",
+    "ItemId": 2010005,
+    "id": 120017
+  },
+  "2011000": {
+    "buffItemName": "必杀流-SP",
+    "ItemId": 2011000,
+    "id": 120018
+  },
+  "2011001": {
+    "buffItemName": "必杀流-治疗",
+    "ItemId": 2011001,
+    "id": 120019
+  },
+  "2011002": {
+    "buffItemName": "必杀流-攻击",
+    "ItemId": 2011002,
+    "id": 120020
+  },
+  "2011003": {
+    "buffItemName": "必杀流-SP",
+    "ItemId": 2011003,
+    "id": 120021
+  },
+  "2012000": {
+    "buffItemName": "必杀流-高频必杀",
+    "ItemId": 2012000,
+    "id": 120023
+  },
+  "2020000": {
+    "ItemId": 2020000,
+    "buffItemName": "护盾流-防御"
+  },
+  "2020001": {
+    "ItemId": 2020001,
+    "buffItemName": "护盾流-减伤"
+  },
+  "2020002": {
+    "ItemId": 2020002,
+    "buffItemName": "护盾流-EP"
+  },
+  "2020003": {
+    "ItemId": 2020003,
+    "buffItemName": "护盾流-Break"
+  },
+  "2020004": {
+    "ItemId": 2020004,
+    "buffItemName": "护盾流-护盾量"
+  },
+  "2020005": {
+    "ItemId": 2020005,
+    "buffItemName": "护盾流-冷却"
+  },
+  "2021000": {
+    "ItemId": 2021000,
+    "buffItemName": "护盾流-攻击特效"
+  },
+  "2021001": {
+    "ItemId": 2021001,
+    "buffItemName": "护盾流-额外伤害"
+  },
+  "2021002": {
+    "ItemId": 2021002,
+    "buffItemName": "护盾流-额外伤害"
+  },
+  "2021003": {
+    "ItemId": 2021003,
+    "buffItemName": "护盾流-霸体"
+  },
+  "2022000": {
+    "ItemId": 2022000,
+    "buffItemName": "护盾流-反伤"
+  },
+  "2030000": {
+    "ItemId": 2030000,
+    "buffItemName": "治疗流-防御"
+  },
+  "2030001": {
+    "ItemId": 2030001,
+    "buffItemName": "治疗流-EP"
+  },
+  "2030002": {
+    "ItemId": 2030002,
+    "buffItemName": "治疗流-SP"
+  },
+  "2030003": {
+    "ItemId": 2030003,
+    "buffItemName": "治疗流-Break伤害"
+  },
+  "2030004": {
+    "ItemId": 2030004,
+    "buffItemName": "治疗流-生命恢复量"
+  },
+  "2030005": {
+    "ItemId": 2030005,
+    "buffItemName": "治疗流-冷却"
+  },
+  "2031001": {
+    "ItemId": 2031001,
+    "buffItemName": "治疗流-护盾"
+  },
+  "2031002": {
+    "ItemId": 2031002,
+    "buffItemName": "治疗流-生命恢复"
+  },
+  "2002001": {
+    "buffItemName": "技能流-增伤",
+    "ItemId": 2002001,
+    "id": 120011
+  },
+  "2032000": {
+    "ItemId": 2032000,
+    "buffItemName": "治疗流-满血"
+  },
+  "2040000": {
+    "ItemId": 2040000,
+    "buffItemName": "防御流-生命"
+  },
+  "2040003": {
+    "ItemId": 2040003,
+    "buffItemName": "防御流-减伤"
+  },
+  "2040004": {
+    "ItemId": 2040004,
+    "buffItemName": "防御流-防御"
+  },
+  "2040005": {
+    "ItemId": 2040005,
+    "buffItemName": "防御流-防御"
+  },
+  "2041000": {
+    "ItemId": 2041000,
+    "buffItemName": "防御流-减防"
+  },
+  "2041001": {
+    "ItemId": 2041001,
+    "buffItemName": "防御流-减攻"
+  },
+  "2041002": {
+    "ItemId": 2041002,
+    "buffItemName": "防御流-生命恢复"
+  },
+  "2011004": {
+    "buffItemName": "必杀流-SP",
+    "ItemId": 2011004,
+    "id": 120022
+  },
+  "2042000": {
+    "ItemId": 2042000,
+    "buffItemName": "防御流-无伤"
+  },
+  "2012001": {
+    "buffItemName": "必杀流-连携必杀",
+    "ItemId": 2012001,
+    "id": 120024
+  },
+  "2050003": {
+    "ItemId": 2050003,
+    "buffItemName": "受伤流-治疗量"
+  },
+  "2050004": {
+    "ItemId": 2050004,
+    "buffItemName": "受伤流-生命"
+  },
+  "2050005": {
+    "ItemId": 2050005,
+    "buffItemName": "受伤流-减伤"
+  },
+  "2051000": {
+    "ItemId": 2051000,
+    "buffItemName": "受伤流-EP"
+  },
+  "2051001": {
+    "ItemId": 2051001,
+    "buffItemName": "受伤流-移速"
+  },
+  "2051002": {
+    "ItemId": 2051002,
+    "buffItemName": "受伤流-攻击"
+  },
+  "2051003": {
+    "ItemId": 2051003,
+    "buffItemName": "受伤流-额外伤害"
+  },
+  "2052000": {
+    "ItemId": 2052000,
+    "buffItemName": "受伤流-强化"
+  },
+  "2060000": {
+    "ItemId": 2060000,
+    "buffItemName": "暴击流-攻击"
+  },
+  "2042001": {
+    "ItemId": 2042001,
+    "buffItemName": "防御流-灼烧"
+  },
+  "2061000": {
+    "ItemId": 2061000,
+    "buffItemName": "暴击流-暴击"
+  },
+  "2022001": {
+    "ItemId": 2022001,
+    "buffItemName": "护盾流-叠甲"
+  },
+  "2061002": {
+    "ItemId": 2061002,
+    "buffItemName": "暴击流-暴击"
+  },
+  "2061003": {
+    "ItemId": 2061003,
+    "buffItemName": "暴击流-生命恢复"
+  },
+  "2062000": {
+    "ItemId": 2062000,
+    "buffItemName": "暴击流-满暴"
+  },
+  "2051004": {
+    "ItemId": 2051004,
+    "buffItemName": "受伤流-免死"
+  },
+  "2052001": {
+    "ItemId": 2052001,
+    "buffItemName": "受伤流-减伤"
+  },
+  "2072001": {
+    "ItemId": 2072001,
+    "buffItemName": "Break流-高频Break"
+  },
+  "2072000": {
+    "ItemId": 2072000,
+    "buffItemName": "Break流-Break收益"
+  },
+  "2071003": {
+    "ItemId": 2071003,
+    "buffItemName": "Break流-Break时间"
+  },
+  "2071002": {
+    "ItemId": 2071002,
+    "buffItemName": "Break流-HP"
+  },
+  "2071000": {
+    "ItemId": 2071000,
+    "buffItemName": "Break流-EP"
+  },
+  "2050000": {
+    "ItemId": 2050000,
+    "buffItemName": "受伤流-增伤"
+  },
+  "2062001": {
+    "ItemId": 2062001,
+    "buffItemName": "暴击流-暴击收益"
+  },
+  "2061001": {
+    "ItemId": 2061001,
+    "buffItemName": "暴击流-减伤"
+  },
+  "2070000": {
+    "ItemId": 2070000,
+    "buffItemName": "Break流-增伤"
+  },
+  "2060005": {
+    "ItemId": 2060005,
+    "buffItemName": "暴击流-暴伤"
+  },
+  "2032001": {
+    "ItemId": 2032001,
+    "buffItemName": "治疗流-生存"
+  },
+  "2041003": {
+    "ItemId": 2041003,
+    "buffItemName": "防御流-额外伤害"
+  },
+  "2031003": {
+    "ItemId": 2031003,
+    "buffItemName": "治疗流-攻击特效"
+  },
+  "2070004": {
+    "ItemId": 2070004,
+    "buffItemName": "Break流-穿透"
+  }
+}

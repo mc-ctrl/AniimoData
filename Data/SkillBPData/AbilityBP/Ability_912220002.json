@@ -1,0 +1,69 @@
+{
+  "BPName": "ability_912220002",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10400000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        101
+      ],
+      "UID": "53e71113-c841-4f21-b1be-263a54c05c0d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        107
+      ],
+      "NodeID": 8
+    },
+    "107": {
+      "timelineId": 912220002004,
+      "name": "setCombatActionTimeline",
+      "UID": "ec06f08e-589d-4658-9e35-933dca2bca89",
+      "target": "CASTER",
+      "NodeID": 107
+    },
+    "7": {
+      "timelineId": 912220002001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "101": {
+      "UID": "b44ccebe-f090-43a2-ae17-e9d398651925",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 101
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack03_Start",
+    "Attack03_Loop",
+    "Attack03_End",
+    "Attack04"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10222_Attack03_R",
+    "Eff_Hit_Electric_Slash_Y",
+    "Eff_Parmon_10222_Attack03_L",
+    "Eff_Parmon_10222_Attack04"
+  ],
+  "searchRelation": 2,
+  "name": "电近战普攻",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

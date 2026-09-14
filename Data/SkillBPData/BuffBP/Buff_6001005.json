@@ -1,0 +1,169 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6001005",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "UID": "d16d6095-8483-40c2-87d5-232576cedd94",
+      "name": "closeFlashlightTrigger",
+      "triggerKey": "1",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "74517380-3a00-4f3f-932d-c3cc55d7d8ce",
+      "name": "addFlashlightLockTargetByContext",
+      "NodeID": 4
+    },
+    "6": {
+      "offsetXYZ": [
+        -0.5,
+        2,
+        0
+      ],
+      "triggerKey": "1",
+      "name": "createFlashlightTrigger",
+      "UID": "5d384733-0592-412d-aa2b-e4f231232233",
+      "visualScale": [
+        45,
+        45,
+        15
+      ],
+      "enterActionIds": [
+        4
+      ],
+      "leaveActionIds": [
+        11
+      ],
+      "triggerOffsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "shapeArgs": [
+        15,
+        45,
+        2,
+        0
+      ],
+      "entityName": "Eff_Env_GrabEgg_TorchLightMask_KeyItem",
+      "shapeKind": "Sector3D",
+      "relation": 2,
+      "NodeID": 6,
+      "pos": "OWNER"
+    },
+    "10": {
+      "UID": "9804aac0-632d-439d-b329-7e53dc1a6c30",
+      "name": "registerPetEnterControlEvent",
+      "actionIds": [
+        21,
+        6
+      ],
+      "NodeID": 10
+    },
+    "16": {
+      "offsetXYZ": [
+        -0.5,
+        2,
+        0
+      ],
+      "triggerKey": "2",
+      "name": "createFlashlightTrigger",
+      "UID": "59e5c2a9-250d-49dd-a311-fc89f0fdbcca",
+      "visualScale": [
+        45,
+        45,
+        15
+      ],
+      "enterActionIds": [
+        14
+      ],
+      "leaveActionIds": [
+        19
+      ],
+      "triggerOffsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "shapeArgs": [
+        15,
+        45,
+        2,
+        0
+      ],
+      "entityName": "Eff_Env_GrabEgg_TorchLightMask_KeyItem",
+      "shapeKind": "Sector3D",
+      "relation": 2,
+      "NodeID": 16,
+      "pos": "MASTER"
+    },
+    "8": {
+      "actionIds": [
+        21,
+        6
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "7c6e3c8f-b9e4-4e2c-8c31-ca82aa2ea688",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22,
+        16
+      ],
+      "NodeID": 8
+    },
+    "13": {
+      "UID": "5746841e-6cb1-411d-92c7-0ed8fa255a52",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 13
+    },
+    "18": {
+      "UID": "a19b3e79-408d-448d-a0dd-eab10bf1b922",
+      "name": "registerPetLeaveControlEvent",
+      "actionIds": [
+        22,
+        16
+      ],
+      "NodeID": 18
+    },
+    "19": {
+      "UID": "b011ac25-de78-4f27-805e-bae97f7fba17",
+      "name": "removeFlashlightLockTargetByContext",
+      "NodeID": 19
+    },
+    "11": {
+      "UID": "025e5e93-a391-422a-9e76-20a213a4169c",
+      "name": "removeFlashlightLockTargetByContext",
+      "NodeID": 11
+    },
+    "14": {
+      "UID": "a1b6e775-3fc7-4636-94b6-7d0ddf15ecbc",
+      "name": "addFlashlightLockTargetByContext",
+      "NodeID": 14
+    },
+    "21": {
+      "UID": "73cbe964-0a6d-46ae-ba53-1c8136940ce7",
+      "name": "closeFlashlightTrigger",
+      "triggerKey": "2",
+      "NodeID": 21
+    }
+  },
+  "onBuffInheritIds": [
+    8,
+    18,
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    18,
+    10
+  ]
+}

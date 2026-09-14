@@ -1,0 +1,50 @@
+[
+  {
+    "resId": "$GhostEyeProfile.asset",
+    "priority": 1
+  },
+  {
+    "resId": "$Level_FB_HelmonBox_VolumeProfile_01.asset",
+    "lerpTime": 0.5,
+    "priority": 1
+  },
+  {
+    "resId": "$Ability_Player_SnatchPower_VolumeProfile_01.asset",
+    "priority": 1
+  },
+  {
+    "resId": "$Dialogue_Foreground_Blur_VolumeProfile.asset",
+    "priority": 1
+  },
+  {
+    "resId": "$Eff_Env_Item_Temple_Acceleration_Line_Loop.asset",
+    "priority": 5
+  },
+  {
+    "resId": "$Eff_Env_GrassLand_Cloud_InnerFog.asset",
+    "lerpTime": 0.5,
+    "priority": 10
+  },
+  {
+    "resId": "$Eff_Skill_Debuff_ColdScreen_Appear.asset",
+    "lerpTime": 0.5,
+    "priority": 99
+  },
+  {
+    "resId": "$Eff_Skill_Debuff_ColdScreen_AppearFrozen.asset",
+    "priority": 100
+  },
+  {
+    "resId": "$Eff_Env_DragonBus_Dash.asset",
+    "lerpTime": 2,
+    "priority": 100
+  },
+  {
+    "resId": "$Eff_Common_Catch_HUD_ChampionBall.asset",
+    "priority": 10
+  },
+  {
+    "resId": "$Eff_Common_Catch_HUD_ShinyBall.asset",
+    "priority": 10
+  }
+]

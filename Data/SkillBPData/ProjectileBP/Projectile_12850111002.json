@@ -1,0 +1,137 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12850111",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10285_Skill_Bullet_Iron",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "52": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "46c95c37-ffaf-4523-b6c3-a6a01b0b8195",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Iron_Hit",
+      "NodeID": 52
+    },
+    "53": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9bc9fe34-dd8a-4476-a780-aedcc124ce9a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Iron_Hit",
+      "NodeID": 53
+    },
+    "55": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "9259ffa4-1562-476c-b9ab-ab9e16632eb9",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Iron_Hit",
+      "speed": 1.01,
+      "NodeID": 55
+    },
+    "46": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 44,
+      "NodeID": 46,
+      "UID": "9b4aca43-8450-49af-8d81-00472e7b4e31",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        44,
+        52,
+        51
+      ]
+    },
+    "50": {
+      "UID": "23c98ca3-74a9-46d0-843c-5d9f999e9cc1",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 50
+    },
+    "51": {
+      "UID": "44980663-7748-4c70-8517-79fba6a064e4",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        50
+      ],
+      "NodeID": 51
+    },
+    "44": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 0.5
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 3000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Metal_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 7,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101
+      },
+      "UID": "abf3af77-293b-4043-abfd-93f823e43dd6",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 44
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    53,
+    55
+  ],
+  "onProjectileHitIds": [
+    46
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.6,
+  "sweepShape": 0,
+  "calcResultNodeId": 44,
+  "tickInterval": 0.01,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 1,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

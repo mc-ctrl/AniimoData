@@ -1,0 +1,64 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126306",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28efae2a-95aa-4467-a2e9-55e3613fe4a4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10261_Skill_Shield_loop",
+      "NodeID": 3
+    },
+    "10": {
+      "buffId": 2126108,
+      "name": "removeBuff",
+      "UID": "23eb0113-6fae-4802-8097-8ad79eaafe6a",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "8": {
+      "name": "stopSoundStr",
+      "UID": "f4a85363-442e-4e08-9176-2fcec242c165",
+      "soundId": "SFX_Combat_Parmon_10261_Skill_Shield_loop",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": false,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.1,
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 6,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "OWNER",
+        "NodeID": 5,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10263_Skill_Throw_04"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8,
+    10
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

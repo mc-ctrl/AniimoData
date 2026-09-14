@@ -1,0 +1,34 @@
+{
+  "BPName": "ability_902070701",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10800630,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 902070701001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Behav_Angry"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10207_Skill_SummonBomb_Release02",
+    "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5
+}

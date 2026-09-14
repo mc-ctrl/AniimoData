@@ -1,0 +1,134 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9128103",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "dynamicRPCStates": [
+    "SNEAK"
+  ],
+  "nodeMap": {
+    "3": {
+      "UID": "e0781322-76a0-47e5-8560-57e874ceef2d",
+      "name": "isEnterCharacterState",
+      "characterState": [
+        "SNEAK"
+      ],
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "82819e12-9be2-4c54-913c-019803c82ce9",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "5a3e93cf-9938-4467-84be-6a0c751a083d",
+      "name": "registerImmuneToDamageEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91281032,
+      "NodeID": 10,
+      "UID": "6abfb9a8-6e14-4ed7-aa60-8dca05311c4d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "buffId": 91281031,
+      "name": "removeBuff",
+      "UID": "b7395d61-542b-4d41-be77-435757b900c8",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "16": {
+      "delay": 5,
+      "NodeID": 16,
+      "UID": "ba62d8b9-a801-47bb-ae89-a4ff1d7d0aea",
+      "name": "buffStartThink",
+      "interval": 5,
+      "buffTemplateId": 9128103
+    },
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91281031,
+      "NodeID": 8,
+      "UID": "e713cc02-ba13-4ae4-b632-1ce0f61261a2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "UID": "c4dcca10-8c46-4217-85b6-e4d970e54b76",
+      "name": "buffStopThink",
+      "buffTemplateId": 9128103,
+      "NodeID": 17
+    },
+    "18": {
+      "UID": "50ba0b51-9693-4678-8b27-949367a75f8f",
+      "name": "isLeaveCharacterState",
+      "characterState": [
+        "SNEAK"
+      ],
+      "NodeID": 18
+    },
+    "6": {
+      "actionIds": [
+        4,
+        12
+      ],
+      "name": "registerCharacterStateChangeEvent",
+      "UID": "fe0cda66-d47f-4441-80f9-74e373ac61e4",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91281031,
+      "NodeID": 13,
+      "UID": "2f514b1b-41a3-429a-bce2-80a63bc2a811",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "actionIds": [
+        17,
+        10,
+        15
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "b6736365-34c8-478a-9432-0190c814d23d",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": [
+    "SNEAK"
+  ],
+  "onBuffStartIds": [
+    6,
+    14
+  ]
+}

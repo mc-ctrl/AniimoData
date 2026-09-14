@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114401",
+  "name": "控制帽子模型显隐",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    3,
+    14
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "setSubModelVisible",
+      "UID": "8c58c8d7-9443-4d5d-a33b-a0032017701b",
+      "NodeID": 3,
+      "subModelName": "M_Parmon_10144_Body01",
+      "visible": false
+    },
+    "13": {
+      "key": "2114401",
+      "name": "setCacheVal",
+      "UID": "0e72045e-92c9-4cb5-ad61-918e6884aed0",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 13
+    },
+    "14": {
+      "key": "2114401",
+      "name": "setCacheVal",
+      "UID": "5722b7ee-c5d4-4914-9995-cc6dd184dbe1",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 14
+    },
+    "10": {
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "f838f3fb-b699-4452-8190-bca8ac78d3b0",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        16,
+        8
+      ]
+    },
+    "16": {
+      "UID": "2d97a1ae-7f96-48e0-ae8c-971a9d2bffcf",
+      "name": "setMask",
+      "mask": {
+        "canMove": 1,
+        "canRotate": 1
+      },
+      "NodeID": 16
+    },
+    "8": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e09fde37-85e2-4044-98ad-d7633ec48d59",
+      "target": "OWNER",
+      "NodeID": 8,
+      "animId": "Skill_ThrowCap03"
+    },
+    "11": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2114402,
+      "NodeID": 11,
+      "UID": "d1b653e7-9696-4925-9ea5-bb54a0502d91",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "name": "setSubModelVisible",
+      "UID": "7b2d5ce7-7105-4e70-a326-d932785760fa",
+      "NodeID": 5,
+      "subModelName": "M_Parmon_10144_Body01",
+      "visible": true
+    },
+    "12": {
+      "UID": "3e847169-c70f-45d2-92ab-312f70bcfacc",
+      "name": "isInAbility",
+      "NodeID": 12
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    5,
+    10,
+    11,
+    13
+  ],
+  "onBuffStartIds": [
+    3,
+    14
+  ]
+}

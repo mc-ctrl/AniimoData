@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010034",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "key": "GrassTower",
+      "name": "setRoguePersistData",
+      "UID": "05ddb483-b665-4bc1-be5c-0d766b159c2c",
+      "value": {
+        "UID": "695c11b8-7054-4536-a507-def081881d97",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 3
+      },
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

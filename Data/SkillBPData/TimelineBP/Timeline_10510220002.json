@@ -1,0 +1,76 @@
+{
+  "nodeMap": {
+    "157": {
+      "pos": {
+        "key": "airStrikePos",
+        "name": "getCacheVal",
+        "UID": "eb566880-a9a9-4e7d-8fa0-f25a1358e9c0",
+        "target": "OWNER",
+        "NodeID": 156
+      },
+      "name": "getTargetPosOrCustomPos",
+      "UID": "bafe928b-4a3b-4342-8f81-254a5825642d",
+      "useHitPos": true,
+      "NodeID": 157,
+      "outputTargetActorId": true
+    },
+    "158": {
+      "notAvoidOverlap": false,
+      "NodeID": 158,
+      "UID": "3d38a249-4cdf-4977-b712-0ea66e714230",
+      "target": "OWNER",
+      "motionWarpingTarget": {
+        "pos": {
+          "key": "airStrikePos",
+          "name": "getCacheVal",
+          "UID": "eb566880-a9a9-4e7d-8fa0-f25a1358e9c0",
+          "target": "OWNER",
+          "NodeID": 156
+        },
+        "name": "getTargetPosOrCustomPos",
+        "UID": "bafe928b-4a3b-4342-8f81-254a5825642d",
+        "useHitPos": true,
+        "NodeID": 157,
+        "outputTargetActorId": true
+      },
+      "motionWarpingXZMaxLen": 7,
+      "offsetTime": 0.4,
+      "warpEndTime": 0.32,
+      "warpStartTime": 0,
+      "animId": "Skill_Air_Strike",
+      "name": "playAnimation"
+    },
+    "150": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8d6a2272-61d6-4db5-a946-5d1324b1d249",
+      "effectId": "Eff_Skill_Common_DodgePerfect",
+      "speed": 1,
+      "NodeID": 150
+    },
+    "152": {
+      "UID": "6323fe62-7cd2-4e1f-a9b5-1d1e3c74c374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          150,
+          158
+        ]
+      },
+      "NodeID": 152
+    }
+  },
+  "BPName": "ability_10510220",
+  "NodeID": 154,
+  "UID": "83a77c1e-ee45-4a59-bf82-da405655a11e",
+  "eventIds": [
+    152
+  ],
+  "layer": "Base",
+  "length": 1
+}

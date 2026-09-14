@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010014",
+  "NodeID": 1,
+  "UID": "a29df3cb-4153-43a0-ae81-1db6138f460c",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.1
+      },
+      "name": "calcResult",
+      "UID": "9fc0dd64-53d5-4b72-b1a9-a80e251ad28c",
+      "target": "TARGET",
+      "NodeID": 5
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "4a85c10a-5ebf-4067-b219-45cde59d7cd3",
+      "NodeID": 8
+    },
+    "6": {
+      "UID": "b2ddb544-76ee-4bc1-a8ad-a78bd50ec84c",
+      "name": "doPetsActions",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    }
+  },
+  "calcInfo": {
+    "hp_max_p": 0.1
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

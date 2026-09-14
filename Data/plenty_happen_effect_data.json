@@ -1,0 +1,107 @@
+[
+  {
+    "resId2": "Eff_Env_SceneObject_LeaderFlower_GatherSpots_White",
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "resId1": "$Eff_Env_SceneObject_LeaderFlower_WhiteAperture.prefab"
+  },
+  {
+    "resId2": "Eff_Env_SceneObject_LeaderFlower_GatherSpots_Green",
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "resId1": "$Eff_Env_SceneObject_LeaderFlower_GreenAperture.prefab"
+  },
+  {
+    "resId2": "Eff_Env_SceneObject_LeaderFlower_GatherSpots_Blue",
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "resId1": "$Eff_Env_Level_IOT_SceneObject_HaloArea_Guangzhu.prefab"
+  },
+  {
+    "resId2": "Eff_Env_SceneObject_LeaderFlower_GatherSpots_Purple",
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "resId1": "$Eff_Env_SceneObject_LeaderFlower_PurpleAperture.prefab"
+  },
+  {
+    "resId2": "Eff_Env_SceneObject_LeaderFlower_GatherSpots_Gold",
+    "trans": {
+      "pos": [
+        -0.348,
+        0.06,
+        -0.032
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "resId1": "$Eff_Env_SceneObject_LeaderFlower_RingGlod.prefab"
+  }
+]

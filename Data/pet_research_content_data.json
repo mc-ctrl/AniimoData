@@ -1,0 +1,5635 @@
+{
+  "1005503": {
+    "numberTxt": "S1",
+    "desc": 2105881732,
+    "countryId": 1000
+  },
+  "1013102": {
+    "desc": 1664933913,
+    "countryId": 300001
+  },
+  "1013202": {
+    "desc": 1411327353,
+    "countryId": 300001
+  },
+  "1013301": {
+    "scene": 2,
+    "numberTxt": "S1",
+    "desc": 1570734175,
+    "countryId": 1000
+  },
+  "1013302": {
+    "desc": 1673687831,
+    "countryId": 300001
+  },
+  "1014301": {
+    "scene": 1,
+    "desc": 1691902463,
+    "countryId": 300001
+  },
+  "1014302": {
+    "scene": 1,
+    "desc": 1482581185,
+    "countryId": 300001
+  },
+  "1016202": {
+    "scene": 1,
+    "desc": 2087811988,
+    "countryId": 300001
+  },
+  "1016203": {
+    "scene": 1,
+    "desc": 1501674224,
+    "countryId": 300001
+  },
+  "1017201": {
+    "scene": 1,
+    "desc": 1259530807,
+    "countryId": 300001
+  },
+  "1017301": {
+    "scene": 1,
+    "desc": 1914707790,
+    "countryId": 300001
+  },
+  "1017401": {
+    "scene": 1,
+    "desc": 1281758134,
+    "countryId": 300001
+  },
+  "1018101": {
+    "scene": 1,
+    "desc": 1206979033,
+    "countryId": 300001
+  },
+  "1018103": {
+    "scene": 1,
+    "desc": 1284006838,
+    "countryId": 300001
+  },
+  "1018401": {
+    "scene": 1,
+    "desc": 1806565968,
+    "countryId": 300001
+  },
+  "1018403": {
+    "scene": 1,
+    "desc": 2035518692,
+    "countryId": 300001
+  },
+  "1018501": {
+    "scene": 1,
+    "desc": 1733496736,
+    "countryId": 300001
+  },
+  "1018502": {
+    "scene": 1,
+    "desc": 1134440399,
+    "countryId": 300001
+  },
+  "1018503": {
+    "scene": 1,
+    "desc": 1558502723,
+    "countryId": 300001
+  },
+  "1018701": {
+    "scene": 1,
+    "desc": 1388298570,
+    "countryId": 300001
+  },
+  "1018703": {
+    "scene": 1,
+    "desc": 1536337543,
+    "countryId": 300001
+  },
+  "1035100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10351.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      -0.3,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      -0.2,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1463762784,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 38,
+    "gender": 1,
+    "name": 1211519726,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      70,
+      80
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1035200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10352.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1797771186,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 39,
+    "gender": 1,
+    "name": 2137363778,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.55,
+    "scene": 2
+  },
+  "1014100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10141.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      -0.1,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      -0.2,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1985053186,
+    "countryId": 300001,
+    "researchLvSet": 1014100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 77,
+    "gender": 1,
+    "name": 1694445548,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.6,
+    "scene": 1
+  },
+  "1013100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10131.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1959829374,
+    "countryId": 300001,
+    "researchLvSet": 1013100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 42,
+    "gender": 1,
+    "name": 1765345493,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1013200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10132.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1620175720,
+    "countryId": 300001,
+    "researchLvSet": 1013200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 43,
+    "gender": 1,
+    "name": 1996055979,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      100,
+      130
+    ],
+    "scale": 0.406666667,
+    "scene": 2
+  },
+  "1013300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10133.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1078007968,
+    "countryId": 300001,
+    "researchLvSet": 1013300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 44,
+    "gender": 1,
+    "name": 2098481445,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.38,
+    "scene": 2
+  },
+  "1020101": {
+    "scene": 2,
+    "desc": 1231791507,
+    "countryId": 300001
+  },
+  "1020301": {
+    "scene": 2,
+    "desc": 1551646097,
+    "countryId": 300001
+  },
+  "1020302": {
+    "scene": 2,
+    "desc": 1946777369,
+    "countryId": 300001
+  },
+  "1020701": {
+    "desc": 1525339208,
+    "countryId": 300001
+  },
+  "1004300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10043.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.032,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1187739312,
+    "countryId": 300001,
+    "researchLvSet": 1004300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 15,
+    "gender": 1,
+    "name": 2056465559,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      130,
+      190
+    ],
+    "scale": 0.37,
+    "scene": 1
+  },
+  "1021102": {
+    "scene": 2,
+    "desc": 1824377487,
+    "countryId": 300001
+  },
+  "1021103": {
+    "scene": 2,
+    "desc": 1548025955,
+    "countryId": 300001
+  },
+  "1021104": {
+    "scene": 2,
+    "desc": 2094863709,
+    "countryId": 300001
+  },
+  "1021105": {
+    "scene": 2,
+    "desc": 1100774544,
+    "countryId": 300001
+  },
+  "1021106": {
+    "scene": 2,
+    "desc": 1750682131,
+    "countryId": 300001
+  },
+  "1021201": {
+    "scene": 2,
+    "desc": 1354807972,
+    "countryId": 300001
+  },
+  "1021202": {
+    "scene": 2,
+    "desc": 1987038429,
+    "countryId": 300001
+  },
+  "1021203": {
+    "scene": 2,
+    "desc": 1577118845,
+    "countryId": 300001
+  },
+  "1021204": {
+    "scene": 2,
+    "desc": 2096340674,
+    "countryId": 300001
+  },
+  "1021205": {
+    "scene": 2,
+    "desc": 1472140442,
+    "countryId": 300001
+  },
+  "1021206": {
+    "scene": 2,
+    "desc": 1762750522,
+    "countryId": 300001
+  },
+  "1016200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10162.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      -0.387
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2126952253,
+    "countryId": 300001,
+    "researchLvSet": 1016200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 24,
+    "gender": 2,
+    "name": 1670182566,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.4,
+    "scene": 1
+  },
+  "1022102": {
+    "desc": 1695106499,
+    "countryId": 300001
+  },
+  "1028100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10281.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1833514397,
+    "countryId": 300001,
+    "researchLvSet": 1028100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 70,
+    "gender": 1,
+    "name": 1626015272,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      90,
+      120
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1022201": {
+    "scene": 2,
+    "desc": 1671999336,
+    "countryId": 300001
+  },
+  "1022202": {
+    "scene": 2,
+    "desc": 1337011228,
+    "countryId": 300001
+  },
+  "1018100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10181.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      -0.29,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      -0.29,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1994261616,
+    "countryId": 300001,
+    "researchLvSet": 1018100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 7,
+    "gender": 1,
+    "name": 1756230778,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      100,
+      160,
+      230
+    ],
+    "scale": 0.6,
+    "scene": 1
+  },
+  "1045302": {
+    "scene": 2,
+    "numberTxt": "S1",
+    "desc": 1175326506,
+    "countryId": 1000
+  },
+  "1018400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10184.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1357772207,
+    "countryId": 300001,
+    "researchLvSet": 1018400,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 8,
+    "gender": 1,
+    "name": 1804736492,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.496766467,
+    "scene": 1
+  },
+  "1018500": {
+    "bigIcon": "$UI_Icon_PlayerHead_10185.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.062,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1355336075,
+    "countryId": 300001,
+    "researchLvSet": 1018500,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Happy"
+    ],
+    "number": 9,
+    "gender": 1,
+    "name": 1532369831,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      140,
+      190
+    ],
+    "scale": 0.49,
+    "scene": 1
+  },
+  "1023103": {
+    "scene": 2,
+    "desc": 1972247786,
+    "countryId": 300001
+  },
+  "1005500": {
+    "bigIcon": "$UI_Icon_PlayerHead_10055.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1494380689,
+    "countryId": 300001,
+    "researchLvSet": 1005500,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 4,
+    "gender": 1,
+    "name": 1852714653,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.37,
+    "scene": 2
+  },
+  "1023202": {
+    "scene": 2,
+    "desc": 2061929814,
+    "countryId": 300001
+  },
+  "1023203": {
+    "scene": 2,
+    "desc": 1485908729,
+    "countryId": 300001
+  },
+  "1051200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10512.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      -0.1,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1486368629,
+    "countryId": 300001,
+    "researchLvSet": 1048300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 48,
+    "gender": 1,
+    "name": 1369696073,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.43,
+    "scene": 2
+  },
+  "1026101": {
+    "scene": 2,
+    "desc": 2044720467,
+    "countryId": 300001
+  },
+  "1026200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10262.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1249232637,
+    "countryId": 300001,
+    "researchLvSet": 1026200,
+    "showAnimation": [
+      "Skill_Blast"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 18,
+    "gender": 1,
+    "name": 1578803905,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      110,
+      180,
+      260
+    ],
+    "scale": 0.47,
+    "scene": 2
+  },
+  "1047103": {
+    "scene": 2,
+    "desc": 1517481379,
+    "countryId": 300001
+  },
+  "1020700": {
+    "bigIcon": "$UI_Icon_PlayerHead_10207.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1680971285,
+    "countryId": 300001,
+    "researchLvSet": 1020700,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 22,
+    "gender": 1,
+    "name": 1969254937,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.43,
+    "scene": 2
+  },
+  "1020100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10201.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1728442558,
+    "countryId": 300001,
+    "researchLvSet": 1020100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 20,
+    "gender": 1,
+    "name": 1467337379,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      150,
+      200
+    ],
+    "scale": 0.6,
+    "scene": 2
+  },
+  "1026201": {
+    "scene": 2,
+    "desc": 1967357260,
+    "countryId": 300001
+  },
+  "1002700": {
+    "bigIcon": "$UI_Icon_PlayerHead_10027.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1380585166,
+    "countryId": 300001,
+    "researchLvSet": 1002700,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 63,
+    "gender": 1,
+    "name": 1107994217,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      120,
+      170
+    ],
+    "scale": 0.362718446,
+    "scene": 2
+  },
+  "1047503": {
+    "scene": 2,
+    "desc": 1422601706,
+    "countryId": 300001
+  },
+  "1026204": {
+    "scene": 2,
+    "desc": 2052075463,
+    "countryId": 300001
+  },
+  "1002200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10022.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0.044
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1619580979,
+    "countryId": 300001,
+    "researchLvSet": 1002200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 65,
+    "gender": 1,
+    "name": 1814661473,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      140
+    ],
+    "scale": 0.4,
+    "scene": 2
+  },
+  "1002400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10024.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2030011287,
+    "countryId": 300001,
+    "researchLvSet": 1002400,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 64,
+    "gender": 1,
+    "name": 1486145876,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      130,
+      190
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1004101": {
+    "desc": 2103416718,
+    "countryId": 300001
+  },
+  "1017100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10171.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "flashIcon": "$ui_item_815002.png",
+    "modelPos": [
+      0,
+      0.048,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2012919943,
+    "countryId": 300001,
+    "researchLvSet": 1017100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 49,
+    "gender": 1,
+    "name": 1192300479,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.64,
+    "scene": 1
+  },
+  "1045400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10454.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1659125739,
+    "countryId": 300001,
+    "researchLvSet": 1045400,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 58,
+    "gender": 1,
+    "name": 1933533737,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      110,
+      140
+    ],
+    "scale": 0.45,
+    "scene": 2
+  },
+  "1005200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10052.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      -0.399
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1533064718,
+    "countryId": 300001,
+    "researchLvSet": 1005200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 2,
+    "gender": 1,
+    "name": 1220794891,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      140,
+      190
+    ],
+    "scale": 0.463463687,
+    "scene": 2
+  },
+  "1017101": {
+    "scene": 1,
+    "desc": 1863660050,
+    "countryId": 300001
+  },
+  "1016102": {
+    "scene": 1,
+    "desc": 1295297530,
+    "countryId": 300001
+  },
+  "1044100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10441.png",
+    "defaultReward": [
+      811016,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1936022086,
+    "countryId": 300001,
+    "researchLvSet": 1044100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 31,
+    "gender": 1,
+    "name": 1308119059,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.6,
+    "scene": 1
+  },
+  "1002100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10021.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      -0.131
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1414094373,
+    "countryId": 300001,
+    "researchLvSet": 1019200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 61,
+    "gender": 1,
+    "name": 1147101794,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      150,
+      200
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1004301": {
+    "desc": 1294469479,
+    "countryId": 300001
+  },
+  "1023100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10231.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      -0.2,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      -0.2,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1764875675,
+    "countryId": 300001,
+    "researchLvSet": 1023100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 28,
+    "gender": 1,
+    "name": 1598646795,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      160,
+      220
+    ],
+    "scale": 0.6,
+    "scene": 2
+  },
+  "1017300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10173.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1886319325,
+    "countryId": 300001,
+    "researchLvSet": 1017300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 51,
+    "gender": 1,
+    "name": 1391257567,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.41069307,
+    "scene": 1
+  },
+  "1019100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10191.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.123,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0.05,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1653994128,
+    "countryId": 300001,
+    "researchLvSet": 1019100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 53,
+    "gender": 1,
+    "name": 1416984502,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.55,
+    "scene": 1
+  },
+  "1020300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10203.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1850470078,
+    "countryId": 300001,
+    "researchLvSet": 1020300,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 21,
+    "gender": 1,
+    "name": 1825405379,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      140,
+      190
+    ],
+    "scale": 0.46,
+    "scene": 2
+  },
+  "1019400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10194.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1594539551,
+    "countryId": 300001,
+    "researchLvSet": 1019400,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 55,
+    "gender": 1,
+    "name": 1617800658,
+    "showAnimationTask": [
+      "Behav_Happy"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      110,
+      140
+    ],
+    "scale": 0.482325581,
+    "scene": 1
+  },
+  "1032402": {
+    "numberTxt": "S1",
+    "desc": 1846561985,
+    "countryId": 1000
+  },
+  "1036300": {
+    "bigIcon": "$ui_item_640001_Prop.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1250999464,
+    "isShow": 0,
+    "researchLvSet": 1028400,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 99997,
+    "gender": 1,
+    "name": 1799024290,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "countryId": 0,
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      50,
+      50
+    ],
+    "scale": 0.55,
+    "scene": 2
+  },
+  "1021100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10211.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1515741676,
+    "countryId": 300001,
+    "researchLvSet": 1021100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 11,
+    "gender": 1,
+    "name": 1733615856,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      130,
+      220,
+      320
+    ],
+    "scale": 0.6,
+    "scene": 2
+  },
+  "1033102": {
+    "scene": 2,
+    "desc": 1989435673,
+    "countryId": 300001
+  },
+  "1033103": {
+    "scene": 2,
+    "desc": 2004432379,
+    "countryId": 300001
+  },
+  "1021200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10212.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1320301414,
+    "countryId": 300001,
+    "researchLvSet": 1021200,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 12,
+    "gender": 1,
+    "name": 1447197544,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      120,
+      200,
+      280
+    ],
+    "scale": 0.51,
+    "scene": 2
+  },
+  "1021300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10213.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1517162918,
+    "countryId": 1000,
+    "researchLvSet": 1021300,
+    "numberTxt": "S1",
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 10001,
+    "gender": 1,
+    "name": 1602008170,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      50,
+      50
+    ],
+    "scale": 0.46,
+    "scene": 2
+  },
+  "1004500": {
+    "bigIcon": "$UI_Icon_PlayerHead_10045.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1104412419,
+    "countryId": 300001,
+    "researchLvSet": 1004500,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 16,
+    "gender": 1,
+    "name": 1539907952,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      70,
+      100
+    ],
+    "scale": 0.337235772,
+    "scene": 1
+  },
+  "1017400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10174.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0.069
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1496936509,
+    "countryId": 300001,
+    "researchLvSet": 1017400,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 52,
+    "gender": 1,
+    "name": 1803827370,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      140,
+      190
+    ],
+    "scale": 0.482325581,
+    "scene": 1
+  },
+  "1017200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10172.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1337878666,
+    "countryId": 300001,
+    "researchLvSet": 1017200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 50,
+    "gender": 1,
+    "name": 1716787809,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      140
+    ],
+    "scale": 0.525063291,
+    "scene": 1
+  },
+  "1017402": {
+    "desc": 1239466585,
+    "countryId": 300001
+  },
+  "6999301": {
+    "gender": 1,
+    "numberTxt": "S1",
+    "desc": 1325994297,
+    "countryId": 1000
+  },
+  "1018700": {
+    "bigIcon": "$UI_Icon_PlayerHead_10187.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.062,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1794169569,
+    "countryId": 300001,
+    "researchLvSet": 1018700,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 10,
+    "gender": 1,
+    "name": 1973540444,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      120,
+      170
+    ],
+    "scale": 0.47,
+    "scene": 1
+  },
+  "6999300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10673.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1425480556,
+    "countryId": 1000,
+    "researchLvSet": 1048100,
+    "numberTxt": "S1",
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 11001,
+    "gender": 1,
+    "name": 1219801450,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      90,
+      130
+    ],
+    "scale": 1,
+    "scene": 1
+  },
+  "1051100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10511.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1805070251,
+    "countryId": 300001,
+    "researchLvSet": 1048100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 47,
+    "gender": 1,
+    "name": 1510346520,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1032300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10323.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1325067797,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 34,
+    "gender": 1,
+    "name": 1147808442,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      160,
+      220
+    ],
+    "scale": 0.4,
+    "scene": 2
+  },
+  "1050301": {
+    "scene": 2,
+    "desc": 1747977941,
+    "countryId": 300001
+  },
+  "1048100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10481.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1371406385,
+    "countryId": 300001,
+    "researchLvSet": 1048100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 80,
+    "gender": 1,
+    "name": 1771522162,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.55,
+    "scene": 1
+  },
+  "1048300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10483.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1275310436,
+    "countryId": 300001,
+    "researchLvSet": 1048300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 81,
+    "gender": 1,
+    "name": 1839607496,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.45,
+    "scene": 1
+  },
+  "1050100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10501.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1582930000,
+    "countryId": 300001,
+    "researchLvSet": 1050100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 68,
+    "gender": 1,
+    "name": 1943715205,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.6,
+    "scene": 2
+  },
+  "1050300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10503.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1161373391,
+    "countryId": 300001,
+    "researchLvSet": 1050300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 69,
+    "gender": 1,
+    "name": 1948782612,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.37,
+    "scene": 2
+  },
+  "1047502": {
+    "scene": 2,
+    "desc": 1664414026,
+    "countryId": 300001
+  },
+  "1047501": {
+    "scene": 2,
+    "desc": 2027442205,
+    "countryId": 300001
+  },
+  "1047500": {
+    "bigIcon": "$UI_Icon_PlayerHead_10475.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2023800838,
+    "countryId": 300001,
+    "researchLvSet": 1047500,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 37,
+    "gender": 1,
+    "name": 1256471408,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      150,
+      210
+    ],
+    "scale": 0.45,
+    "scene": 2
+  },
+  "1026205": {
+    "scene": 2,
+    "desc": 2041598936,
+    "countryId": 300001
+  },
+  "1047102": {
+    "scene": 2,
+    "desc": 1618250758,
+    "countryId": 300001
+  },
+  "1047101": {
+    "scene": 2,
+    "desc": 1741134556,
+    "countryId": 300001
+  },
+  "1047100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10471.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1393260446,
+    "countryId": 300001,
+    "researchLvSet": 1047100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 36,
+    "gender": 1,
+    "name": 1527927908,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      100,
+      160,
+      230
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1045401": {
+    "scene": 2,
+    "desc": 1111237823,
+    "countryId": 300001
+  },
+  "1045301": {
+    "scene": 2,
+    "desc": 1241047807,
+    "countryId": 300001
+  },
+  "1045300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10453.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      160,
+      0
+    ],
+    "desc": 1376542408,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 57,
+    "gender": 1,
+    "name": 2025686160,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -200,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1045101": {
+    "scene": 2,
+    "desc": 1848492245,
+    "countryId": 300001
+  },
+  "1045100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10451.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      160,
+      0
+    ],
+    "desc": 2010335343,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 56,
+    "gender": 1,
+    "name": 1196173930,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -200,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      110,
+      140
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1044300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10443.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1670847180,
+    "countryId": 300001,
+    "researchLvSet": 1044300,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 32,
+    "gender": 1,
+    "name": 1446737741,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.4,
+    "scene": 1
+  },
+  "1023300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10233.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2000372898,
+    "countryId": 300001,
+    "researchLvSet": 1023300,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 30,
+    "gender": 1,
+    "name": 2025144266,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      60,
+      70
+    ],
+    "scale": 0.4,
+    "scene": 2
+  },
+  "1022100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10221.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1362332590,
+    "countryId": 300001,
+    "researchLvSet": 1022100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 45,
+    "gender": 1,
+    "name": 1226039517,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      110,
+      140
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1022200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10222.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1455465426,
+    "countryId": 300001,
+    "researchLvSet": 1022200,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 46,
+    "gender": 1,
+    "name": 1833089729,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1047400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10474.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2073037591,
+    "countryId": 1000,
+    "researchLvSet": 1047400,
+    "numberTxt": "S1",
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 10002,
+    "gender": 1,
+    "name": 1598538088,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.45,
+    "scene": 2
+  },
+  "1037300": {
+    "bigIcon": "$ui_item_640001_Prop.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1439981491,
+    "isShow": 0,
+    "researchLvSet": 1028500,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 99995,
+    "gender": 1,
+    "name": 1294389924,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "countryId": 0,
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      50,
+      50
+    ],
+    "scale": 0.55,
+    "scene": 2
+  },
+  "1037100": {
+    "bigIcon": "$ui_item_640001_Prop.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1777405745,
+    "isShow": 0,
+    "researchLvSet": 1028500,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 99996,
+    "gender": 1,
+    "name": 1612980177,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "countryId": 0,
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      50,
+      50
+    ],
+    "scale": 0.6,
+    "scene": 2
+  },
+  "1036100": {
+    "bigIcon": "$ui_item_640001_Prop.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1552074166,
+    "isShow": 0,
+    "researchLvSet": 1028400,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 99998,
+    "gender": 1,
+    "name": 1272728551,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "countryId": 0,
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      50,
+      50
+    ],
+    "scale": 0.6,
+    "scene": 2
+  },
+  "1033303": {
+    "scene": 2,
+    "desc": 1926520623,
+    "countryId": 300001
+  },
+  "1033302": {
+    "scene": 2,
+    "desc": 1183182637,
+    "countryId": 300001
+  },
+  "1033301": {
+    "scene": 2,
+    "desc": 1734051043,
+    "countryId": 300001
+  },
+  "1033300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10333.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1561166114,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 27,
+    "gender": 1,
+    "name": 1206407959,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      130,
+      190
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1033101": {
+    "scene": 2,
+    "desc": 2077035798,
+    "countryId": 300001
+  },
+  "1033100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10331.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      -0.1,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1150749193,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 26,
+    "gender": 1,
+    "name": 1436202607,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      140,
+      190
+    ],
+    "scale": 0.45,
+    "scene": 2
+  },
+  "1032400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10324.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1227676332,
+    "countryId": 300001,
+    "researchLvSet": 1032400,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 35,
+    "gender": 1,
+    "name": 1348802703,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.45,
+    "scene": 2
+  },
+  "1012200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10122.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1372124266,
+    "countryId": 300001,
+    "scene": 2,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 82,
+    "gender": 1,
+    "name": 2008136378,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      70,
+      80
+    ],
+    "scale": 0.476781609
+  },
+  "1032303": {
+    "desc": 1989233672,
+    "countryId": 300001
+  },
+  "1032302": {
+    "scene": 2,
+    "desc": 2121538022,
+    "countryId": 300001
+  },
+  "1032301": {
+    "scene": 2,
+    "desc": 1689949235,
+    "countryId": 300001
+  },
+  "1032103": {
+    "desc": 1704856949,
+    "countryId": 300001
+  },
+  "1032100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10321.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1666651820,
+    "countryId": 300001,
+    "researchLvSet": 1012200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 33,
+    "gender": 1,
+    "name": 1563339264,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1029301": {
+    "scene": 2,
+    "desc": 2035827517,
+    "countryId": 300001
+  },
+  "1016100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10161.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      -0.179
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1670984522,
+    "countryId": 300001,
+    "researchLvSet": 1016100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 23,
+    "gender": 2,
+    "name": 1843499012,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      150,
+      200
+    ],
+    "scale": 0.55,
+    "scene": 1
+  },
+  "1029100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10291.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1172199573,
+    "countryId": 300001,
+    "researchLvSet": 1029100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 59,
+    "gender": 1,
+    "name": 1496450141,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1028500": {
+    "bigIcon": "$UI_Icon_PlayerHead_10285.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1896659754,
+    "countryId": 300001,
+    "researchLvSet": 1028500,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 74,
+    "gender": 1,
+    "name": 1125574607,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      90,
+      120
+    ],
+    "scale": 0.368711111,
+    "scene": 2
+  },
+  "1028400": {
+    "bigIcon": "$UI_Icon_PlayerHead_10284.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2043139326,
+    "countryId": 300001,
+    "researchLvSet": 1028400,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 73,
+    "gender": 1,
+    "name": 1100721177,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      50,
+      60,
+      80
+    ],
+    "scale": 0.45,
+    "scene": 2
+  },
+  "1028301": {
+    "scene": 2,
+    "desc": 2082866120,
+    "countryId": 300001
+  },
+  "1028300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10283.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1892392890,
+    "countryId": 300001,
+    "researchLvSet": 1028300,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 72,
+    "gender": 1,
+    "name": 1397861379,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.37,
+    "scene": 2
+  },
+  "1028200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10282.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1769733875,
+    "countryId": 300001,
+    "researchLvSet": 1028200,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 71,
+    "gender": 1,
+    "name": 1992968355,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      100
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1026300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10263.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2096794708,
+    "countryId": 300001,
+    "researchLvSet": 1026300,
+    "showAnimation": [
+      "Skill_Blast"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 19,
+    "gender": 1,
+    "name": 1750705869,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.47,
+    "scene": 2
+  },
+  "1043100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10431.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1859218938,
+    "countryId": 300001,
+    "researchLvSet": 1043100,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 75,
+    "gender": 1,
+    "name": 1785757323,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.55,
+    "scene": 2
+  },
+  "1026202": {
+    "scene": 2,
+    "desc": 1943976858,
+    "countryId": 300001
+  },
+  "1026105": {
+    "scene": 2,
+    "desc": 1885677074,
+    "countryId": 300001
+  },
+  "1026102": {
+    "scene": 2,
+    "desc": 1120955826,
+    "countryId": 300001
+  },
+  "1026100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10261.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1340919561,
+    "countryId": 300001,
+    "researchLvSet": 1026100,
+    "showAnimation": [
+      "Skill_Shield"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 17,
+    "gender": 1,
+    "name": 1768632881,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      100,
+      160,
+      230
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1043300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10433.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1502378837,
+    "countryId": 300001,
+    "researchLvSet": 1043300,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 76,
+    "gender": 1,
+    "name": 1522625248,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.45,
+    "scene": 2
+  },
+  "1023201": {
+    "scene": 2,
+    "desc": 1222142702,
+    "countryId": 300001
+  },
+  "1023200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10232.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1661411426,
+    "countryId": 300001,
+    "researchLvSet": 1023200,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 29,
+    "gender": 1,
+    "name": 1460380334,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.55,
+    "scene": 2
+  },
+  "1023102": {
+    "scene": 2,
+    "desc": 1277496039,
+    "countryId": 300001
+  },
+  "1023101": {
+    "scene": 2,
+    "desc": 1980224540,
+    "countryId": 300001
+  },
+  "1016300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10163.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1364027833,
+    "countryId": 300001,
+    "researchLvSet": 1016300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 25,
+    "gender": 1,
+    "name": 1909574115,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      90,
+      120
+    ],
+    "scale": 0.392571429,
+    "scene": 2
+  },
+  "1001100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10011.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2065320292,
+    "countryId": 300001,
+    "researchLvSet": 1001100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 5,
+    "gender": 1,
+    "name": 1973836582,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      120,
+      170
+    ],
+    "scale": 0.58,
+    "scene": 2
+  },
+  "1004100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10041.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.063,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2116293737,
+    "countryId": 300001,
+    "researchLvSet": 1004100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 13,
+    "gender": 1,
+    "name": 1772478771,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      90,
+      140,
+      190
+    ],
+    "scale": 0.6,
+    "scene": 1
+  },
+  "1001200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10012.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1302462662,
+    "countryId": 300001,
+    "researchLvSet": 1001200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 6,
+    "gender": 1,
+    "name": 1299702967,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      130,
+      190
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1002600": {
+    "bigIcon": "$UI_Icon_PlayerHead_10026.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1246054511,
+    "countryId": 300001,
+    "researchLvSet": 1002600,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 62,
+    "gender": 1,
+    "name": 1075752925,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      100,
+      170,
+      250
+    ],
+    "scale": 0.402718446,
+    "scene": 2
+  },
+  "1002500": {
+    "bigIcon": "$UI_Icon_PlayerHead_10025.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1814576684,
+    "countryId": 300001,
+    "researchLvSet": 1002500,
+    "showAnimation": [
+      "IdleSpecial"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 67,
+    "gender": 1,
+    "name": 1969388193,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      110
+    ],
+    "scale": 0.37,
+    "scene": 2
+  },
+  "1003100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10031.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1478829975,
+    "countryId": 300001,
+    "researchLvSet": 1003100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 40,
+    "gender": 1,
+    "name": 1464788925,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      130,
+      180
+    ],
+    "scale": 0.58,
+    "scene": 2
+  },
+  "1003200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10032.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1812280677,
+    "countryId": 300001,
+    "researchLvSet": 1003200,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 41,
+    "gender": 1,
+    "name": 1333435976,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      130,
+      190
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1003300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10033.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1930276726,
+    "countryId": 1000,
+    "researchLvSet": 1003300,
+    "numberTxt": "S1",
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 10003,
+    "gender": 1,
+    "name": 1150505337,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      130
+    ],
+    "scale": 0.42,
+    "scene": 2
+  },
+  "1029300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10293.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1115794032,
+    "countryId": 300001,
+    "researchLvSet": 1029300,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 60,
+    "gender": 1,
+    "name": 1479757630,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      90,
+      120
+    ],
+    "scale": 0.5,
+    "scene": 2
+  },
+  "1001201": {
+    "scene": 2,
+    "desc": 1644401946,
+    "countryId": 300001
+  },
+  "1001202": {
+    "scene": 2,
+    "scale": 0.45,
+    "desc": 1608709753,
+    "countryId": 300001
+  },
+  "1014200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10142.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1752085990,
+    "countryId": 300001,
+    "researchLvSet": 1014200,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 78,
+    "gender": 1,
+    "name": 1622732935,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      100
+    ],
+    "scale": 0.6,
+    "scene": 1
+  },
+  "1002101": {
+    "scene": 2,
+    "desc": 1749953216,
+    "countryId": 300001
+  },
+  "1002102": {
+    "scene": 2,
+    "desc": 1982700587,
+    "countryId": 300001
+  },
+  "1019401": {
+    "scene": 1,
+    "desc": 2032801951,
+    "countryId": 300001
+  },
+  "1002201": {
+    "scene": 2,
+    "desc": 1406891857,
+    "countryId": 300001
+  },
+  "1016101": {
+    "scene": 1,
+    "desc": 1674987447,
+    "countryId": 300001
+  },
+  "1016103": {
+    "scene": 1,
+    "desc": 1919346053,
+    "countryId": 300001
+  },
+  "1016201": {
+    "scene": 1,
+    "desc": 1785363857,
+    "countryId": 300001
+  },
+  "1002300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10023.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0.125
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2060889800,
+    "countryId": 300001,
+    "researchLvSet": 1002300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 66,
+    "gender": 1,
+    "name": 1621251169,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      120,
+      160
+    ],
+    "scale": 0.37,
+    "scene": 2
+  },
+  "1002301": {
+    "scene": 2,
+    "desc": 1555295206,
+    "countryId": 300001
+  },
+  "1002401": {
+    "scene": 2,
+    "desc": 1973819119,
+    "countryId": 300001
+  },
+  "1002503": {
+    "numberTxt": "S1",
+    "desc": 1753513831,
+    "countryId": 1000
+  },
+  "1019402": {
+    "scene": 1,
+    "desc": 1317723770,
+    "countryId": 300001
+  },
+  "1004102": {
+    "desc": 1241702726,
+    "countryId": 300001
+  },
+  "1005300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10053.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1321295689,
+    "countryId": 300001,
+    "researchLvSet": 1005300,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 3,
+    "gender": 1,
+    "name": 2142627219,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      100,
+      170,
+      230
+    ],
+    "scale": 0.384693548,
+    "scene": 2
+  },
+  "1002601": {
+    "scene": 2,
+    "desc": 1928862455,
+    "countryId": 300001
+  },
+  "1002602": {
+    "scene": 2,
+    "desc": 1456772188,
+    "countryId": 300001
+  },
+  "1002603": {
+    "scene": 2,
+    "desc": 1746300881,
+    "countryId": 300001
+  },
+  "1002701": {
+    "scene": 2,
+    "desc": 1199220452,
+    "countryId": 300001
+  },
+  "1002702": {
+    "scene": 2,
+    "desc": 1207724746,
+    "countryId": 300001
+  },
+  "1004200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10042.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.044,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1591722076,
+    "countryId": 300001,
+    "researchLvSet": 1004200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 14,
+    "gender": 1,
+    "name": 1953060837,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      70,
+      100,
+      140
+    ],
+    "scale": 0.53,
+    "scene": 1
+  },
+  "1003101": {
+    "scene": 2,
+    "desc": 1790695814,
+    "countryId": 300001
+  },
+  "1003103": {
+    "scene": 2,
+    "desc": 2009514598,
+    "countryId": 300001
+  },
+  "1005100": {
+    "bigIcon": "$UI_Icon_PlayerHead_10051.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.05,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 1557719051,
+    "countryId": 300001,
+    "researchLvSet": 1005100,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_Angry"
+    ],
+    "number": 1,
+    "gender": 1,
+    "name": 1345148520,
+    "showAnimationTask": [
+      "Behav_Alert"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      100,
+      160,
+      230
+    ],
+    "scale": 0.58,
+    "scene": 2
+  },
+  "1003201": {
+    "scene": 2,
+    "desc": 1988456497,
+    "countryId": 300001
+  },
+  "1003202": {
+    "scene": 2,
+    "desc": 1587662781,
+    "countryId": 300001
+  },
+  "1003203": {
+    "scene": 2,
+    "desc": 1796647241,
+    "countryId": 300001
+  },
+  "1014300": {
+    "bigIcon": "$UI_Icon_PlayerHead_10143.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      -0.1,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2000145308,
+    "countryId": 300001,
+    "researchLvSet": 1014300,
+    "showAnimation": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 79,
+    "gender": 1,
+    "name": 1589991121,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_LoveStart",
+      "Behav_LoveLoop",
+      "Behav_LoveEnd"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      80,
+      130,
+      190
+    ],
+    "scale": 0.5,
+    "scene": 1
+  },
+  "1019200": {
+    "bigIcon": "$UI_Icon_PlayerHead_10192.png",
+    "defaultReward": [
+      640001,
+      1
+    ],
+    "modelPos": [
+      0,
+      0.073,
+      0
+    ],
+    "modelPosOther": [
+      0,
+      0,
+      0
+    ],
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "desc": 2048076814,
+    "countryId": 300001,
+    "researchLvSet": 1019200,
+    "showAnimation": [
+      "Behav_Happy"
+    ],
+    "showAnimationAbility": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "number": 54,
+    "gender": 1,
+    "name": 2052118004,
+    "showAnimationTask": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "showAnimationEvolve": [
+      "Behav_Love"
+    ],
+    "modelRotationOther": [
+      0,
+      -16,
+      0
+    ],
+    "needResearchPoint": [
+      110,
+      60,
+      80,
+      100
+    ],
+    "scale": 0.5,
+    "scene": 1
+  },
+  "1003305": {
+    "scene": 2,
+    "numberTxt": "S1",
+    "desc": 1267020551,
+    "countryId": 1000
+  },
+  "1004201": {
+    "desc": 1581870088,
+    "countryId": 300001
+  },
+  "1004202": {
+    "desc": 1447985146,
+    "countryId": 300001
+  },
+  "1004302": {
+    "desc": 1113893100,
+    "countryId": 300001
+  },
+  "1004303": {
+    "desc": 1331279794,
+    "countryId": 300001
+  },
+  "1005101": {
+    "scene": 2,
+    "desc": 1945117182,
+    "countryId": 300001
+  },
+  "1005104": {
+    "scene": 2,
+    "desc": 1201748141,
+    "countryId": 300001
+  },
+  "1005201": {
+    "scene": 2,
+    "desc": 1721205657,
+    "countryId": 300001
+  },
+  "1005204": {
+    "scene": 2,
+    "desc": 2051861406,
+    "countryId": 300001
+  },
+  "1005301": {
+    "scene": 2,
+    "desc": 1094019511,
+    "countryId": 300001
+  },
+  "1005302": {
+    "scene": 2,
+    "desc": 1700385038,
+    "countryId": 300001
+  },
+  "1005303": {
+    "scene": 2,
+    "scale": 0.36,
+    "desc": 1175204528,
+    "countryId": 300001
+  },
+  "1005304": {
+    "scene": 2,
+    "desc": 1591905489,
+    "countryId": 300001
+  },
+  "1021101": {
+    "scene": 2,
+    "desc": 1323199652,
+    "countryId": 300001
+  }
+}

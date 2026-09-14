@@ -1,0 +1,75 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 10,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10072_Attack01",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "nodeMap": {
+    "10": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.6
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "1504d85b-907a-4954-8843-9c2eb8e8eeec",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "23": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "74fec0c0-d0bd-4556-aefa-9cac134c65a8",
+      "effectId": "Eff_Parmon_10072_Skill_Hit",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "13dc5911-a0af-479d-897e-cf335a7219f1",
+      "isAbilityEndRemove": false,
+      "soundId": "battle_pets_pikachu_attack_common01",
+      "NodeID": 30
+    },
+    "18": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.6
+      },
+      "name": "calcResult",
+      "UID": "efc1c1cd-2ca1-46e9-b830-9d5ff0bf9356",
+      "target": "CASTER",
+      "NodeID": 18
+    }
+  },
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    23,
+    30
+  ],
+  "onProjectileHitIds": [
+    10,
+    18
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "BPName": "ability_10710010",
+  "impulseId": 2000,
+  "acceleration": 0
+}

@@ -1,0 +1,108 @@
+{
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.34,
+        "reduce_cur_tp_rate": 0.34
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10006,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10011_Skill_Swift_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_starly_attack_hit",
+        "hitCameraShakeId": 10002
+      },
+      "UID": "548cda73-cc41-422b-9954-9884d0c2dedf",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 23,
+      "UID": "02376866-be88-477e-9aae-7c313deb4531"
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2d6f3322-3c90-4091-997e-875261525926",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_swift_impact",
+      "NodeID": 24
+    },
+    "5": {
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "cdc45544-7a03-45c5-8889-b8a4941daca3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        3
+      ]
+    },
+    "7": {
+      "action": {
+        "actionIds": [
+          5,
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 7,
+      "UID": "70a10f99-ec78-4890-a3e2-a79c98733a81"
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "7467db23-3a50-499b-8849-3be6085bce43",
+      "effectId": "Eff_Parmon_Starmouse_Skill_DamageField_s",
+      "target": "OWNER",
+      "NodeID": 22
+    }
+  },
+  "BPName": "timeline_2101202",
+  "NodeID": 9,
+  "UID": "893aff51-4a4d-44a7-b1c8-84b200ff813c",
+  "eventIds": [
+    7,
+    23
+  ],
+  "layer": "Base",
+  "length": 2
+}

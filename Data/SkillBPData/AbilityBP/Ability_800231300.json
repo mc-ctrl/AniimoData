@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_800231300",
+  "NodeID": 1,
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "abilityParamId": 10500200,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 800231300001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_JumpBomb"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_80023_Mon_Skill_JumpBomb_02_Fly",
+    "Eff_Monster_80023_Mon_Skill_JumpBomb_01",
+    "Eff_Monster_80023_Mon_Skill_JumpBomb_02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1,
+  "refBones": [
+    "Bone M Tongue 02"
+  ]
+}

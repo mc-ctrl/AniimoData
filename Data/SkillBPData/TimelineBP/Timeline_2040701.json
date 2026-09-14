@@ -1,0 +1,170 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "UID": "11470728-b000-4b21-810a-fedceafeaec9",
+      "actorId": {
+        "UID": "1d2ee2e7-d93d-45b2-a2ab-15521f2b8193",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 21
+      },
+      "name": "destroyEntity",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          11,
+          8
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "45d08dee-3806-4c32-a825-f9ea2c023581",
+      "effectId": "Eff_Parmon_10023_Mon_Skill_Fireball_02_QXXZ",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "value": {
+        "calcId": 2040701,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 9,
+        "UID": "ebdd18c5-ab83-45d3-9757-b8ba80611d2b",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "2e6f3b3e-dd47-4fb7-a987-e7f0ee9c17e2",
+      "target": "TrapTarget",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "c5a5af73-47b4-44a7-bb45-6592c8e85bee",
+      "actorId": {
+        "UID": "a5ce222c-6e80-4ed5-82dc-ee426675dc7e",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 14
+      },
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3131c319-c0ad-4a74-b26c-8e6e715af5ca",
+      "effectId": "Eff_Parmon_10434_Skill_Drop_02_QXXZ",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "8f2da44f-25be-4a49-903d-9396526e754f",
+      "effectId": "Eff_Parmon_10023_Mon_Skill_Fireball_02_QXXZ",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 8,
+      "relation": 2,
+      "enterTrapActionIds": [
+        6,
+        12,
+        13,
+        10,
+        15
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        0.65
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "e00f1fd6-ebda-4fba-8e50-616b664214c5"
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba24bf6c-d7da-4174-8630-286d8947f8e0",
+      "effectId": "Eff_Parmon_10434_Skill_Drop_03_QXXZ",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "9": {
+      "calcId": 2040701,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "ebdd18c5-ab83-45d3-9757-b8ba80611d2b",
+      "name": "getParamByLuaConfig"
+    },
+    "18": {
+      "UID": "206c2936-ded1-43d5-bcc2-7604f5236dda",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16,
+          19,
+          20,
+          22
+        ]
+      },
+      "NodeID": 18
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b391cbe5-81e8-4888-bc17-a421da523c5c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Passive03",
+      "NodeID": 13
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "219cb139-f3ef-4709-b763-6398d24ff0fd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Passive02",
+      "NodeID": 11
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "cf80b8bc-4d07-4d1d-8d90-7555be49d65d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10434_Skill_Passive03",
+      "NodeID": 20
+    },
+    "12": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "4bf0081a-cbfe-43dd-b9fc-adba54bda651",
+      "effectId": "Eff_Parmon_10434_Skill_Drop_03_QXXZ",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2040701",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    4,
+    18
+  ],
+  "layer": "Base",
+  "length": 30
+}

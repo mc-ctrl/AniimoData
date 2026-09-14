@@ -1,0 +1,83 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "a4b3c989-9fd0-44f7-a092-1bc958c88422",
+      "cd": 999,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "56327f0d-2d79-40f9-adb0-3c4ce51c81e4",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "9": {
+      "calcId": 270020005,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "f2da38b6-a422-4ead-a4ea-405a22a39821",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "rValue": {
+        "UID": "ed65ed28-1347-4a90-8e28-5ccd8d7c382b",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 7
+      },
+      "name": "greater",
+      "UID": "1624ccf9-b112-4bed-947b-bb58fb9d0a5c",
+      "NodeID": 8,
+      "lValue": {
+        "calcId": 270020005,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 9,
+        "UID": "f2da38b6-a422-4ead-a4ea-405a22a39821",
+        "name": "getParamByLuaConfig"
+      }
+    },
+    "5": {
+      "target": "OWNER",
+      "actionIds": [
+        4
+      ],
+      "attributeName": "hp_cur",
+      "UID": "4f8da347-3cae-4137-917a-a0739f39d4ee",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 5
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2700200050,
+      "NodeID": 2,
+      "UID": "fa4f2252-fa3e-4dde-adbd-1e888f8ab1c8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_270020005",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    5
+  ]
+}

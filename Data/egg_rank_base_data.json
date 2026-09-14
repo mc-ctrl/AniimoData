@@ -1,0 +1,732 @@
+[
+  [
+    {
+      "desc1": 1666233804,
+      "evaluation": [
+        15,
+        50,
+        80
+      ],
+      "pointLimit": 90,
+      "icon": "$UI_Img_Season_Rank_Level1.png",
+      "upNumber": 3,
+      "point": 30,
+      "name": 1167929909,
+      "boxDropGroup": [
+        21,
+        22,
+        23,
+        11
+      ],
+      "boxDropRatio": [
+        40,
+        30,
+        30
+      ],
+      "boxNumber": 1,
+      "boxUnlock": 1,
+      "boxUpLimit": 4
+    },
+    {
+      "desc1": 1460554375,
+      "evaluation": [
+        15,
+        50,
+        80
+      ],
+      "pointLimit": 90,
+      "icon": "$UI_Img_Season_Rank_Level1.png",
+      "upNumber": 3,
+      "point": 30,
+      "name": 1369782027,
+      "boxDropGroup": [
+        21,
+        22,
+        23,
+        11
+      ],
+      "boxDropRatio": [
+        40,
+        30,
+        30
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 4
+    },
+    {
+      "name": 1170344954,
+      "pointLimit": 90,
+      "icon": "$UI_Img_Season_Rank_Level1.png",
+      "upNumber": 3,
+      "point": 30,
+      "evaluation": [
+        15,
+        50,
+        80
+      ],
+      "boxDropGroup": [
+        21,
+        22,
+        23,
+        11
+      ],
+      "boxDropRatio": [
+        40,
+        30,
+        30
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 4
+    }
+  ],
+  [
+    {
+      "desc1": 2125312293,
+      "evaluation": [
+        30,
+        80,
+        120
+      ],
+      "pointLimit": 180,
+      "icon": "$UI_Img_Season_Rank_Level2.png",
+      "upNumber": 3,
+      "point": 60,
+      "name": 1927315774,
+      "boxDropGroup": [
+        24,
+        25,
+        26,
+        27,
+        12
+      ],
+      "boxDropRatio": [
+        35,
+        30,
+        35
+      ],
+      "boxNumber": 1,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1546193165,
+      "evaluation": [
+        30,
+        80,
+        120
+      ],
+      "pointLimit": 180,
+      "icon": "$UI_Img_Season_Rank_Level2.png",
+      "upNumber": 3,
+      "point": 60,
+      "name": 2125745050,
+      "boxDropGroup": [
+        24,
+        25,
+        26,
+        27,
+        12
+      ],
+      "boxDropRatio": [
+        35,
+        30,
+        35
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1850988848,
+      "desc2": 1530877669,
+      "evaluation": [
+        30,
+        80,
+        120
+      ],
+      "pointLimit": 180,
+      "icon": "$UI_Img_Season_Rank_Level2.png",
+      "upNumber": 3,
+      "point": 60,
+      "name": 1274706043,
+      "boxDropGroup": [
+        24,
+        25,
+        26,
+        27,
+        12
+      ],
+      "boxDropRatio": [
+        35,
+        30,
+        35
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    }
+  ],
+  [
+    {
+      "desc1": 1166584989,
+      "evaluation": [
+        30,
+        120,
+        150
+      ],
+      "pointLimit": 270,
+      "icon": "$UI_Img_Season_Rank_Level3.png",
+      "upNumber": 4,
+      "point": 90,
+      "name": 1963996348,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        13
+      ],
+      "boxDropRatio": [
+        20,
+        20,
+        30,
+        30
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1777421068,
+      "evaluation": [
+        30,
+        120,
+        150
+      ],
+      "pointLimit": 270,
+      "icon": "$UI_Img_Season_Rank_Level3.png",
+      "upNumber": 4,
+      "point": 90,
+      "name": 1298324660,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        13
+      ],
+      "boxDropRatio": [
+        20,
+        20,
+        30,
+        30
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1933498531,
+      "evaluation": [
+        30,
+        120,
+        150
+      ],
+      "pointLimit": 270,
+      "icon": "$UI_Img_Season_Rank_Level3.png",
+      "upNumber": 4,
+      "point": 90,
+      "name": 1635722086,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        13
+      ],
+      "boxDropRatio": [
+        20,
+        20,
+        30,
+        30
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1779543295,
+      "evaluation": [
+        30,
+        120,
+        150
+      ],
+      "pointLimit": 270,
+      "icon": "$UI_Img_Season_Rank_Level3.png",
+      "upNumber": 4,
+      "point": 90,
+      "name": 2044848240,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        13
+      ],
+      "boxDropRatio": [
+        20,
+        20,
+        30,
+        30
+      ],
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    }
+  ],
+  [
+    {
+      "desc1": 1195871421,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level4.png",
+      "upNumber": 5,
+      "point": 120,
+      "name": 1870056655,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        14
+      ],
+      "boxDropRatio": {
+        "3": 35,
+        "4": 35,
+        "2": 30
+      },
+      "boxNumber": 1,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1217513573,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level4.png",
+      "upNumber": 5,
+      "point": 120,
+      "name": 1199387083,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        14
+      ],
+      "boxDropRatio": {
+        "3": 35,
+        "4": 35,
+        "2": 30
+      },
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1973847572,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level4.png",
+      "upNumber": 5,
+      "point": 120,
+      "name": 1244676045,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        14
+      ],
+      "boxDropRatio": {
+        "3": 35,
+        "4": 35,
+        "2": 30
+      },
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    },
+    {
+      "desc1": 1612471708,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level4.png",
+      "upNumber": 5,
+      "point": 120,
+      "name": 1631406239,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        31,
+        14
+      ],
+      "boxDropRatio": {
+        "3": 35,
+        "4": 35,
+        "2": 30
+      },
+      "boxNumber": 0,
+      "boxUnlock": 1,
+      "boxUpLimit": 5
+    }
+  ],
+  [
+    {
+      "desc1": 1145820322,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level5.png",
+      "upNumber": 6,
+      "point": 150,
+      "name": 1169021147,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        29,
+        31,
+        15
+      ],
+      "boxDropRatio": {
+        "3": 30,
+        "4": 40,
+        "5": 10,
+        "2": 20
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "desc1": 1975039717,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level5.png",
+      "upNumber": 6,
+      "point": 150,
+      "name": 1349990312,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        29,
+        31,
+        15
+      ],
+      "boxDropRatio": {
+        "3": 30,
+        "4": 40,
+        "5": 10,
+        "2": 20
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "desc1": 1944046894,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level5.png",
+      "upNumber": 6,
+      "point": 150,
+      "name": 1105102732,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        29,
+        31,
+        15
+      ],
+      "boxDropRatio": {
+        "3": 30,
+        "4": 40,
+        "5": 10,
+        "2": 20
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "desc1": 1325984919,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level5.png",
+      "upNumber": 6,
+      "point": 150,
+      "name": 1569338439,
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        29,
+        31,
+        15
+      ],
+      "boxDropRatio": {
+        "3": 30,
+        "4": 40,
+        "5": 10,
+        "2": 20
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "name": 1501583651,
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level5.png",
+      "upNumber": 6,
+      "point": 150,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "boxDropGroup": [
+        30,
+        28,
+        29,
+        29,
+        31,
+        15
+      ],
+      "boxDropRatio": {
+        "3": 30,
+        "4": 40,
+        "5": 10,
+        "2": 20
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    }
+  ],
+  [
+    {
+      "desc1": 2097283167,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level6.png",
+      "upNumber": 6,
+      "point": 180,
+      "name": 1338607947,
+      "boxDropGroup": [
+        34,
+        32,
+        33,
+        33,
+        35,
+        16
+      ],
+      "boxDropRatio": {
+        "3": 40,
+        "4": 45,
+        "5": 15
+      },
+      "boxNumber": 1,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "desc1": 1374573258,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level6.png",
+      "upNumber": 6,
+      "point": 180,
+      "name": 1535296641,
+      "boxDropGroup": [
+        34,
+        32,
+        33,
+        33,
+        35,
+        16
+      ],
+      "boxDropRatio": {
+        "3": 40,
+        "4": 45,
+        "5": 15
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "desc1": 1839965672,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level6.png",
+      "upNumber": 6,
+      "point": 180,
+      "name": 1798755483,
+      "boxDropGroup": [
+        34,
+        32,
+        33,
+        33,
+        35,
+        16
+      ],
+      "boxDropRatio": {
+        "3": 40,
+        "4": 45,
+        "5": 15
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "desc1": 1102792870,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level6.png",
+      "upNumber": 6,
+      "point": 180,
+      "name": 1772006054,
+      "boxDropGroup": [
+        34,
+        32,
+        33,
+        33,
+        35,
+        16
+      ],
+      "boxDropRatio": {
+        "3": 40,
+        "4": 45,
+        "5": 15
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    },
+    {
+      "name": 1855823820,
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level6.png",
+      "upNumber": 6,
+      "point": 180,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "boxDropGroup": [
+        34,
+        32,
+        33,
+        33,
+        35,
+        16
+      ],
+      "boxDropRatio": {
+        "3": 40,
+        "4": 45,
+        "5": 15
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.8,
+      "boxUpLimit": 6
+    }
+  ],
+  [
+    {
+      "desc1": 1662763812,
+      "desc2": 1939152565,
+      "desc3": 2097975803,
+      "evaluation": [
+        30,
+        120,
+        180
+      ],
+      "pointLimit": 360,
+      "icon": "$UI_Img_Season_Rank_Level7.png",
+      "point": 180,
+      "name": 1076091668,
+      "boxDropGroup": [
+        34,
+        32,
+        33,
+        33,
+        35,
+        17
+      ],
+      "boxDropRatio": {
+        "3": 30,
+        "4": 50,
+        "5": 20
+      },
+      "boxNumber": 0,
+      "boxUnlock": 0.5,
+      "boxUpLimit": 6
+    }
+  ]
+]

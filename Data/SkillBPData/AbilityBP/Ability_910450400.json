@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_910450400",
+  "NodeID": 1,
+  "UID": "cc09a6b4-771c-4977-b797-44e980976a67",
+  "abilityParamId": 10600307,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 910450400001,
+      "name": "setCombatActionTimeline",
+      "UID": "aad6f3ee-733f-400b-a9a6-1e165c188a50",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10045_EX_02",
+    "Eff_Parmon_10045_EX_04_Rogue",
+    "Eff_Parmon_10045_EX_01_Rogue",
+    "Eff_Buff_Rogue_Heal_Drop_Fly"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 0.5
+}

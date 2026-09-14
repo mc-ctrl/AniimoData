@@ -1,0 +1,149 @@
+{
+  "duration": 0.7,
+  "calcResultNodeId": 43,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10133_Skill_Throw_Ice01_small",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "BPName": "ability_11310410",
+  "maxHitNum": 999,
+  "relation": 2,
+  "onProjectileTickIds": [
+    36
+  ],
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    49
+  ],
+  "sweepBoxSize": [
+    2.4,
+    2.4,
+    2.4
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "sweepShape": 1,
+  "nodeMap": {
+    "112": {
+      "value": {
+        "calcId": 11310410,
+        "calcType": 2,
+        "paramName": "param2",
+        "NodeID": 109,
+        "UID": "e1e20a30-7638-405e-8950-f29e69500bf2",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "8d7724cc-b7fd-4c9f-baad-fd55f64d86d2",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 112
+    },
+    "109": {
+      "calcId": 11310410,
+      "calcType": 2,
+      "paramName": "param2",
+      "NodeID": 109,
+      "UID": "e1e20a30-7638-405e-8950-f29e69500bf2",
+      "name": "getParamByLuaConfig"
+    },
+    "49": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 11310410003,
+      "name": "createProjectile",
+      "UID": "1191cf99-72b5-42c2-922d-960f72cd3e44",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": "PROJECTILE",
+      "projectileType": "Tracking",
+      "NodeID": 49,
+      "targetPos": "CASTER"
+    },
+    "43": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11310410,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      },
+      "UID": "2e2e9c9d-1ad2-4e61-8f14-36078b7d4538",
+      "target": "TARGET",
+      "NodeID": 43,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000
+      }
+    },
+    "36": {
+      "calcResultNodeId": 43,
+      "name": "actOnTargets",
+      "UID": "bd5cc23c-72d8-451d-80dd-0a24a62554ec",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "3",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        43,
+        112
+      ],
+      "impulseId": 2000,
+      "NodeID": 36
+    }
+  },
+  "tickInterval": 0.2,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

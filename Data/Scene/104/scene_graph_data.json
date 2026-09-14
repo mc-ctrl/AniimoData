@@ -1,0 +1,163 @@
+{
+  "16799764": {
+    "graphId": 16799764,
+    "nodes": {
+      "3": {
+        "className": "ClientNode"
+      },
+      "4": {
+        "className": "ClientNode"
+      },
+      "6": {
+        "_inputPortValues": {
+          "SpawnerId": 16836171
+        },
+        "className": "CreateSpawnerNode",
+        "spawnerId": 16836171
+      },
+      "10": {
+        "className": "ClientNode"
+      },
+      "14": {
+        "className": "ClientNode"
+      },
+      "7": {
+        "className": "ClientNode"
+      },
+      "13": {
+        "className": "ClientNode"
+      },
+      "8": {
+        "className": "ClientNode"
+      },
+      "12": {
+        "className": "ClientNode"
+      },
+      "9": {
+        "className": "ClientNode"
+      },
+      "11": {
+        "className": "ClientNode"
+      },
+      "5": {
+        "className": "ClientNode"
+      },
+      "0": {
+        "className": "ClientNode"
+      },
+      "1": {
+        "className": "ClientNode"
+      },
+      "2": {
+        "className": "ClientNode"
+      }
+    },
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "da6a361a-57ad-407f-8993-f36d019ddd75",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "Out",
+        "targetNode": 2,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Finish",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "0",
+        "targetNode": 4,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 3,
+        "sourcePortName": "1",
+        "targetNode": 6,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "Done",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "Out",
+        "targetNode": 7,
+        "targetPortName": "Play"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 8,
+        "sourcePortName": "position",
+        "targetNode": 2,
+        "targetPortName": "position"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 8,
+        "sourcePortName": "eulerAngles",
+        "targetNode": 2,
+        "targetPortName": "rotationEuler"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 9,
+        "sourcePortName": "On Trigger",
+        "targetNode": 10,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 10,
+        "sourcePortName": "Out",
+        "targetNode": 11,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 11,
+        "sourcePortName": "Out",
+        "targetNode": 12,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 12,
+        "sourcePortName": "Done",
+        "targetNode": 13,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 14,
+        "sourcePortName": "position",
+        "targetNode": 11,
+        "targetPortName": "position"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 14,
+        "sourcePortName": "eulerAngles",
+        "targetNode": 11,
+        "targetPortName": "rotationEuler"
+      }
+    ]
+  }
+}

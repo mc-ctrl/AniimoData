@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114402",
+  "NodeID": 1,
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    8,
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 2114401,
+      "name": "hasBuff",
+      "UID": "536955c8-5710-47e9-9bc2-45f95ff47152",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "29954110-fe4f-4f21-b7e9-09e715986000",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "8": {
+      "key": "2114401",
+      "name": "setCacheVal",
+      "UID": "b0f61c80-9352-4091-bb7d-de1c4b22fead",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 8
+    },
+    "7": {
+      "buffId": 2114402,
+      "name": "removeBuff",
+      "UID": "132fb1a0-bcc8-4aac-8a78-636924dee834",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "UID": "24ad372d-172a-43d6-9b1d-accc1eba4304",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    }
+  },
+  "name": "控制帽子模型显隐",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    5
+  ]
+}

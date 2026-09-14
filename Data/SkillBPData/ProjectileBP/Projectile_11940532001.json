@@ -1,0 +1,108 @@
+{
+  "duration": 0.5,
+  "BPName": "ability_11940532",
+  "NodeID": 82,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Chop",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "moveSpeed": 5,
+  "onProjectileHitIds": [
+    102
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 2.5,
+  "sweepShape": 0,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "nodeMap": {
+    "102": {
+      "calcResultNodeId": 118,
+      "name": "actOnTargets",
+      "UID": "b1aacc50-ee82-47af-aa2a-f79c10a28510",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            90,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        118,
+        188
+      ],
+      "impulseId": 2000,
+      "NodeID": 102
+    },
+    "118": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11940532,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "52736ce3-67e4-470f-a38c-2210a076cf7c",
+      "target": "TARGET",
+      "NodeID": 118,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10203,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2000
+      }
+    },
+    "188": {
+      "key": "10194Hit01",
+      "name": "setCacheVal",
+      "UID": "238e935d-c112-436f-a09f-d33c20010a69",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 188
+    }
+  },
+  "UID": "109ff79c-cc4b-487d-8ecf-bd90338d71b0",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 118,
+  "impulseId": 2000,
+  "acceleration": -10
+}

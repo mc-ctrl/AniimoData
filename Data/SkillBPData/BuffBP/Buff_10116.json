@@ -1,0 +1,121 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10116",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    11,
+    21
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "56e2f6c9-6ba2-4d6b-938d-d82a491f5826",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "42ec8e16-4153-4f6c-9fa3-ba10c21df14f",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        14,
+        11
+      ],
+      "NodeID": 13
+    },
+    "6": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 6,
+      "UID": "5e208db8-d03f-490e-870d-2e784471ad34",
+      "target": "OWNER",
+      "fadeTime": 0.3,
+      "animId": "Behav_SleepStart"
+    },
+    "10": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "00f026e4-fae9-4562-a05a-60caa83f3413",
+      "target": "OWNER",
+      "val": 4,
+      "NodeID": 10
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "b2c57225-6eea-415e-ac0f-110216260013",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 7,
+      "UID": "792efd4d-0f60-4866-85a4-b538c1aabe19",
+      "target": "OWNER",
+      "fadeTime": 0.3,
+      "animId": "Behav_SleepLoop"
+    },
+    "17": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "58283941-5eae-48eb-a282-d4b44dd863b3",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 17
+    },
+    "9": {
+      "key": "delay",
+      "duration": 1,
+      "actionIds": [
+        7,
+        13
+      ],
+      "NodeID": 9,
+      "UID": "547e6439-874b-43dc-a00a-c4cfbd717618",
+      "name": "addTimer"
+    },
+    "18": {
+      "UID": "c303d057-913c-42eb-9bd9-ea143173f68d",
+      "name": "stopAnimation",
+      "anim": "Behav_SleepStart",
+      "NodeID": 18
+    },
+    "11": {
+      "buffId": 10116,
+      "name": "removeBuff",
+      "UID": "96d80910-1bdb-4e05-a550-9bd45dc186e5",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "19": {
+      "UID": "87276fa1-72c0-4d30-ae61-f485781fb0d7",
+      "name": "stopAnimation",
+      "anim": "Behav_SleepLoop",
+      "NodeID": 19
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "2c486bb9-8fa5-4bb8-9a42-58d26381d6c3",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 14
+    }
+  },
+  "onBuffDestroyIds": [
+    15,
+    17,
+    18,
+    19
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6,
+    9,
+    10
+  ]
+}

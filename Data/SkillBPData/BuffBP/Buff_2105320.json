@@ -1,0 +1,44 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2105320",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "desc": "狼斗士-地火",
+  "tags": [
+    24,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "607ea146-1f2e-4aa2-adca-04ab6af76e9c",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "6": {
+      "name": "calcResult",
+      "NodeID": 6,
+      "calcInfoByLuaConfig": {
+        "id": 2105320,
+        "instant_dmg_v": "param0",
+        "type": 1
+      },
+      "UID": "c6fc38e2-77f7-4619-92e2-23e8ac662865",
+      "target": "OWNER",
+      "overridePower": 1,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    }
+  },
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

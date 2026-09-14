@@ -1,0 +1,308 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "6ab6cea2-064e-4f92-8eb9-b22585b9f992",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          39
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "be0d4d13-b530-428e-ba08-35a056d48a51",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "07db3d25-7a6d-4aa2-9066-41e7bd64d679",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_RoarAttack",
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 29020721,
+      "NodeID": 40,
+      "UID": "dd9106e3-246c-46d7-9100-90eed11f1062",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "42": {
+      "UID": "303fa1ce-bfe2-4204-b756-f692e38b44e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 10011,
+      "NodeID": 35,
+      "UID": "e832b6f8-dd2e-4296-b6cd-becb4536e43b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "44": {
+      "UID": "f89271ca-33e6-4a8d-a513-8cdc8a71fd42",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 44
+    },
+    "31": {
+      "UID": "b474002d-054e-4ad3-b842-4ad9b9090025",
+      "name": "sendWxFlowGlobalEvent",
+      "eventName": "TuckinBossRoar",
+      "NodeID": 31
+    },
+    "11": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0,
+        "reduce_cur_tp_rate": 10000
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "disableShowJumpWord": true,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 5002,
+        "hitCameraShakeId": 20100
+      },
+      "UID": "41eb0ea6-4118-405e-9560-2f0cffaa343f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 11
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a8a2c1e3-bc4a-4dab-9ca8-2678b12553a9",
+      "effectId": "Eff_Monster_90207_Skill_RoarAttack02",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cf32a87c-fcd1-4a34-8990-f248664d1654",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Skill_RoarAttack"
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 11,
+      "NodeID": 13,
+      "UID": "1bc25ad9-a6a5-4451-a5f8-c352d123e7af",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            50,
+            3,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        11,
+        27
+      ]
+    },
+    "45": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 29020721,
+      "NodeID": 45,
+      "UID": "25c5e5f5-2af5-45fe-b8a5-dc9c6e216613",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.2,
+      "NodeID": 46,
+      "UID": "683ff443-d421-47ff-9304-ecc5b0e55a52"
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 15,
+      "UID": "f90f045a-fac5-493a-9723-9f5641c3785a"
+    },
+    "47": {
+      "UID": "bb8d0c63-ac7c-4f2b-b53d-a0e32b3186a5",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "lightGrassOn",
+      "NodeID": 47
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 16,
+      "UID": "8cb888df-912c-4a61-97e9-cdac301b52ca"
+    },
+    "27": {
+      "target": "TARGET",
+      "duration": 0.3,
+      "speed": 22,
+      "NodeID": 27,
+      "UID": "8ef06fb6-a53b-4c45-b843-4ce1e8aca8e0",
+      "displacementDir": "OUT",
+      "displacementTarget": "OWNER",
+      "name": "forceDisplacement"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "45b90354-23a4-4bb2-8675-a304cf72e0ab",
+      "effectId": "Eff_Monster_90207_Skill_RoarAttack",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "target": "TARGET",
+      "duration": 5,
+      "buffId": 10013,
+      "NodeID": 29,
+      "UID": "2a5b89ed-d56f-44ea-9950-1f5a8e1bec06",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.35,
+      "NodeID": 30,
+      "UID": "1425ec4e-76ea-4d60-ae8c-7d0cf2cd3083"
+    },
+    "37": {
+      "UID": "6b242134-3ec8-4c1b-8962-82f55da4b28a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          42,
+          35
+        ]
+      },
+      "NodeID": 37
+    },
+    "33": {
+      "UID": "d8e80216-6cbb-4b58-938d-268afce4c36b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          44,
+          31,
+          34,
+          38,
+          40
+        ]
+      },
+      "NodeID": 33
+    },
+    "34": {
+      "buffId": 29020711,
+      "name": "removeBuff",
+      "UID": "79a23375-27a5-4fa9-8802-d74a53c9015e",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21,
+          28,
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.35,
+      "NodeID": 23,
+      "UID": "c9a09529-aeae-46aa-ad13-6d066a991ca2"
+    }
+  },
+  "BPName": "ability_902070430",
+  "NodeID": 7,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    37,
+    33,
+    5,
+    15,
+    23,
+    46,
+    16,
+    30
+  ],
+  "layer": "Base",
+  "length": 4.1
+}

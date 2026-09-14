@@ -1,0 +1,227 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9104502",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "actOnTag": "plantGrass",
+      "name": "actOnTargets",
+      "UID": "6aec653f-6bcc-4490-8c9c-71f6c2d67c9b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            8,
+            1.5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 6
+    },
+    "8": {
+      "actionIds": [
+        24,
+        6
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "0315dc85-d44e-4a8d-8ebd-5626889aa631",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "31": {
+      "actionIds": [
+        11
+      ],
+      "name": "registerAbilityDisableReturnEvent",
+      "UID": "ff8d7d4d-3cc4-4442-917b-4ed4f206001b",
+      "target": "MASTER",
+      "NodeID": 31
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "ccb79c66-b7ec-4162-a8ab-91ec1c7c4e6c",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "21": {
+      "key": "9104502",
+      "name": "setCacheVal",
+      "UID": "443a0800-8999-4bdc-a198-7599900426fd",
+      "target": "MASTER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "bc44ba71-d0f5-4e85-b62f-7985e29b6102",
+        "NodeID": 20,
+        "lValue": {
+          "key": "9104502",
+          "name": "getCacheVal",
+          "UID": "2a11ad5f-d13a-4be7-961f-52c98217ab15",
+          "target": "MASTER",
+          "NodeID": 19
+        }
+      },
+      "NodeID": 21
+    },
+    "13": {
+      "unsummonValid": false,
+      "actionIds": [
+        31
+      ],
+      "name": "registerGroupEvent",
+      "UID": "42a890d4-b375-40d9-b37d-1b30b51d6b09",
+      "NodeID": 13
+    },
+    "24": {
+      "key": "9104502",
+      "name": "setCacheVal",
+      "UID": "94d1a56e-0ebc-4069-98ba-573f4e769a72",
+      "target": "MASTER",
+      "val": 0,
+      "NodeID": 24
+    },
+    "10": {
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "53679a4a-ae57-4308-bfd2-089a10682043",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        21,
+        8
+      ]
+    },
+    "15": {
+      "eventName": "onAbilityDisableReturn",
+      "name": "getEventCombatContextTarget",
+      "UID": "2a74869b-12ae-4faf-b858-77c5e0097d91",
+      "target": "CASTER",
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "a1e35d23-e852-4382-9488-352e5c617cbb",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 25
+    },
+    "16": {
+      "rValue": {
+        "UID": "0561d87b-29e0-4016-b2b0-f03d3748503c",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 18
+      },
+      "name": "equal",
+      "UID": "24b7ef3b-514f-4af1-8506-dcd0ec8dceed",
+      "NodeID": 16,
+      "lValue": {
+        "eventName": "onAbilityDisableReturn",
+        "name": "getEventCombatContextTarget",
+        "UID": "2a74869b-12ae-4faf-b858-77c5e0097d91",
+        "target": "CASTER",
+        "NodeID": 15
+      }
+    },
+    "27": {
+      "UID": "e10d266f-7d54-4015-94f4-eab1f9838ae1",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 27
+    },
+    "28": {
+      "eventName": "onAbilityDisableReturn",
+      "name": "getEventCombatContextTarget",
+      "UID": "3a99098b-a2c8-4473-982b-080f7ba2901e",
+      "target": "CASTER",
+      "NodeID": 28
+    },
+    "29": {
+      "rValue": {
+        "UID": "f6a58bda-4f72-41c8-8b9f-88efd6951f54",
+        "target": "OWNER",
+        "name": "getPlayer",
+        "NodeID": 30
+      },
+      "name": "equal",
+      "UID": "665d3ebf-209c-4c7f-812e-29bf80861f16",
+      "NodeID": 29,
+      "lValue": {
+        "eventName": "onAbilityDisableReturn",
+        "name": "getEventCombatContextTarget",
+        "UID": "3a99098b-a2c8-4473-982b-080f7ba2901e",
+        "target": "CASTER",
+        "NodeID": 28
+      }
+    },
+    "30": {
+      "UID": "f6a58bda-4f72-41c8-8b9f-88efd6951f54",
+      "target": "OWNER",
+      "name": "getPlayer",
+      "NodeID": 30
+    },
+    "23": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "72a8c276-ed8e-43e5-9f6c-e053272523d3",
+      "NodeID": 23,
+      "lValue": {
+        "key": "9104502",
+        "name": "getCacheVal",
+        "UID": "8dcf2028-a551-4110-81bd-82713cbcf3bb",
+        "target": "MASTER",
+        "NodeID": 22
+      }
+    },
+    "26": {
+      "UID": "167e073d-32e4-4aa6-afcc-932022013267",
+      "conditionIds": [
+        25,
+        27
+      ],
+      "name": "conditionOr",
+      "NodeID": 26
+    },
+    "17": {
+      "UID": "ae5a9f44-2848-48f6-98b3-fc436257b36b",
+      "conditionIds": [
+        16,
+        29
+      ],
+      "name": "conditionOr",
+      "NodeID": 17
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13
+  ]
+}

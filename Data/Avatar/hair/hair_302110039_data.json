@@ -1,0 +1,39 @@
+{
+  "23": {
+    "key": "23",
+    "partId": 23,
+    "order": 0,
+    "originDisplayName": "基础",
+    "displayName": 47622986,
+    "kindList": {
+      "M_Avatar_Boy_Hair_B10039": {
+        "key": "M_Avatar_Boy_Hair_B10039",
+        "reaction": {
+          "key": 7750,
+          "bones": {},
+          "colors": {
+            "dye1": {
+              "opName": 22,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 43966019
+            },
+            "gradient": {
+              "opName": 24,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 34225454
+            },
+            "baseColor": {
+              "tIndex": 2,
+              "displayName": 41749054,
+              "opName": 21
+            }
+          }
+        }
+      }
+    }
+  }
+}

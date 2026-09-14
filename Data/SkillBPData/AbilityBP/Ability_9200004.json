@@ -1,0 +1,56 @@
+{
+  "BPName": "ability_9200004",
+  "NodeID": 1,
+  "UID": "e1171bce-d859-47b9-aad7-4d6f48d64010",
+  "abilityParamId": 9200004,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "72": {
+      "name": "stopEffectStr",
+      "UID": "1d3d7b65-3a80-4bba-9277-4c90cb57c1d9",
+      "effectId": "Eff_Avatar_Female_Skill_DestinyRoll_Loop",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "7": {
+      "timelineId": 9200004001,
+      "name": "setCombatActionTimeline",
+      "UID": "0691f55a-e6c2-4657-97f2-261757cb242b",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "74": {
+      "name": "stopEffectStr",
+      "UID": "d7c77e27-040f-45b5-a7fc-190cb3329460",
+      "effectId": "Eff_Avatar_Female_Skill_DestinyRoll01_Appear",
+      "target": "OWNER",
+      "NodeID": 74
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_DestinyRoll_Start",
+    "Skill_DestinyRoll_End"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Female_Skill_DestinyRoll_Bullet",
+    "Eff_Avatar_Female_Skill_DestinyRoll01_Appear",
+    "Eff_Avatar_Female_Skill_DestinyRoll_Loop",
+    "Eff_Avatar_Female_Skill_DestinyRoll_Release"
+  ],
+  "searchRelation": 1,
+  "name": "命运掷骰",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    74,
+    72
+  ],
+  "searchTargetRangeDown": 2
+}

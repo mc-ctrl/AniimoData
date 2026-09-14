@@ -1,0 +1,108 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "9c5a883f-34ff-4087-911c-7a70edbb4b77",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 52
+    },
+    "45": {
+      "UID": "1040dcc2-0e77-44c6-ba91-f41526e49f83",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 45
+    },
+    "40": {
+      "UID": "908ee018-936b-4327-a56f-6b19039b518c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 40
+    },
+    "46": {
+      "UID": "6a8d3698-5d6d-4a95-9358-1605cc24f195",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "NodeID": 46
+    },
+    "42": {
+      "UID": "42d58ecc-4bfc-45c2-a9b1-5a536fb2301f",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 42
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 43,
+      "UID": "cb8b9f05-1317-4edc-abff-61b6477ffdaa"
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f3b27d16-bc82-4454-9605-30833cb48e86",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "Skill_Spin_End"
+    },
+    "29": {
+      "UID": "7f292461-47a7-453f-8c64-2dc12a81f63f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          67,
+          62,
+          40
+        ]
+      },
+      "NodeID": 29
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c662af23-0ae1-4226-896b-7fe00da7e82e",
+      "effectId": "Eff_Parmon_10153_Skill_Spin_End",
+      "speed": 1,
+      "NodeID": 67
+    },
+    "62": {
+      "name": "stopEffectStr",
+      "UID": "28109bb1-afb3-44ca-b9ca-1109d21d50a5",
+      "effectId": "Eff_Parmon_10153_Skill_Spin_Loop",
+      "target": "OWNER",
+      "NodeID": 62
+    }
+  },
+  "BPName": "ability_11530400",
+  "NodeID": 31,
+  "UID": "619d1ae2-8d56-4daa-9156-eb4ee91af798",
+  "eventIds": [
+    29,
+    43,
+    46,
+    52
+  ],
+  "layer": "Base",
+  "length": 1.783
+}

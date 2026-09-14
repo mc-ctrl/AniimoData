@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_800230501",
+  "NodeID": 1,
+  "UID": "1c9b4272-c115-4821-b208-914e36b8c6bc",
+  "abilityParamId": 10500171,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "12": {
+      "timelineId": 800230501001,
+      "name": "setCombatActionTimeline",
+      "UID": "0ef7516d-a6fc-4821-9f31-83756b35bc96",
+      "target": "CASTER",
+      "NodeID": 12
+    }
+  },
+  "onAbilityCastIds": [
+    12
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Fireball_Combo"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_80023_Mon_Skill_JumpBomb_02_Fly",
+    "Eff_Monster_80023_Mon_Skill_JumpBomb_01",
+    "Eff_Monster_80023_Mon_Skill_JumpBomb_01_Kuosan",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "searchTargetRangeDown": 1,
+  "refBones": [
+    "Bone M Tongue 02"
+  ]
+}

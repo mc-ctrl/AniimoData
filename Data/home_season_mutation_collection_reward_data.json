@@ -1,0 +1,37 @@
+[
+  {
+    "reward": [
+      200720
+    ],
+    "needPoint": 6,
+    "seasonId": 1
+  },
+  {
+    "reward": [
+      200721
+    ],
+    "needPoint": 12,
+    "seasonId": 1
+  },
+  {
+    "reward": [
+      200722
+    ],
+    "needPoint": 18,
+    "seasonId": 1
+  },
+  {
+    "reward": [
+      200723
+    ],
+    "needPoint": 24,
+    "seasonId": 1
+  },
+  {
+    "reward": [
+      200724
+    ],
+    "needPoint": 32,
+    "seasonId": 1
+  }
+]

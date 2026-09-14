@@ -1,0 +1,51 @@
+{
+  "duration": 1.2,
+  "BPName": "ability_10450323",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10045_Skill_GrassTail_Wind",
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "nodeMap": {
+    "39": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104519,
+      "name": "createEntity",
+      "UID": "00822a89-1470-4d86-9d83-4a60631e78f5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "TARGET",
+      "pos": "PROJECTILE",
+      "NodeID": 39
+    }
+  },
+  "moveSpeed": 3.5,
+  "onProjectileFinishIds": [
+    39
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "tickInterval": 0.1,
+  "startSleepTime": 0,
+  "maxHitNum": 9999,
+  "groundSweepRadius": 0.5,
+  "hasAttackDataInOnProjectileHit": false,
+  "acceleration": 0
+}

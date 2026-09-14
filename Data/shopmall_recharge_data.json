@@ -1,0 +1,690 @@
+{
+  "190001": {
+    "sort": 1,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv1.png",
+    "type": 1,
+    "name": 1090026394,
+    "channelId": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv1.png",
+    "price": 6,
+    "des": 1752048896,
+    "dollar_price": 0.99,
+    "effectLevel": 0,
+    "extraGift": [
+      3,
+      6
+    ],
+    "firstTmieGift": [
+      1,
+      60
+    ],
+    "getCurrency": [
+      3,
+      60
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv1.png",
+    "overselling": [
+      3,
+      60
+    ],
+    "product_id": "com.x.yimoo.1.1.6"
+  },
+  "190002": {
+    "sort": 2,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv2.png",
+    "name": 1588222626,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv2.png",
+    "price": 30,
+    "des": 1414952018,
+    "dollar_price": 4.99,
+    "effectLevel": 1,
+    "extraGift": [
+      3,
+      30
+    ],
+    "firstTmieGift": [
+      1,
+      300
+    ],
+    "getCurrency": [
+      3,
+      300
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv2.png",
+    "overselling": [
+      3,
+      300
+    ],
+    "product_id": "com.x.yimoo.1.1.30"
+  },
+  "190003": {
+    "sort": 3,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv3.png",
+    "name": 2067361807,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv3.png",
+    "price": 98,
+    "des": 1793609364,
+    "dollar_price": 14.99,
+    "effectLevel": 2,
+    "extraGift": [
+      3,
+      98
+    ],
+    "firstTmieGift": [
+      1,
+      980
+    ],
+    "getCurrency": [
+      3,
+      980
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv3.png",
+    "overselling": [
+      3,
+      980
+    ],
+    "product_id": "com.x.yimoo.1.1.98"
+  },
+  "190004": {
+    "sort": 4,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv4.png",
+    "name": 2028428370,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv4.png",
+    "price": 198,
+    "des": 2005580041,
+    "dollar_price": 29.99,
+    "effectLevel": 3,
+    "extraGift": [
+      3,
+      198
+    ],
+    "firstTmieGift": [
+      1,
+      1980
+    ],
+    "getCurrency": [
+      3,
+      1980
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv4.png",
+    "overselling": [
+      3,
+      1980
+    ],
+    "product_id": "com.x.yimoo.1.1.1980"
+  },
+  "190005": {
+    "sort": 5,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv5.png",
+    "name": 1651126122,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv5.png",
+    "price": 328,
+    "des": 1088016332,
+    "dollar_price": 49.99,
+    "effectLevel": 4,
+    "extraGift": [
+      3,
+      328
+    ],
+    "firstTmieGift": [
+      1,
+      3280
+    ],
+    "getCurrency": [
+      3,
+      3280
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv5.png",
+    "overselling": [
+      3,
+      3280
+    ],
+    "product_id": "com.x.yimoo.1.1.3280"
+  },
+  "190006": {
+    "sort": 6,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv6.png",
+    "name": 1214945988,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv6.png",
+    "price": 648,
+    "des": 1907148648,
+    "dollar_price": 99.99,
+    "effectLevel": 5,
+    "extraGift": [
+      3,
+      648
+    ],
+    "firstTmieGift": [
+      1,
+      6480
+    ],
+    "getCurrency": [
+      3,
+      6480
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv6.png",
+    "overselling": [
+      3,
+      6480
+    ],
+    "product_id": "com.x.yimoo.1.1.6480"
+  },
+  "190007": {
+    "sort": 7,
+    "name": 1430249017,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv2.png",
+    "type": 1,
+    "des": 1490491479,
+    "price": 999,
+    "isHide": 1,
+    "extraGift": [
+      3,
+      1
+    ],
+    "firstTmieGift": [
+      1,
+      9990
+    ],
+    "getCurrency": [
+      3,
+      9990
+    ],
+    "iconBuy": "$UI_Icon_Payment_CashIcon_Lv2.png",
+    "overselling": [
+      3,
+      9990
+    ],
+    "product_id": "com.x.yimoo.1.1.9990"
+  },
+  "190008": {
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Card_Payment_Cashlcon_Lv2.png",
+    "name": 1702351654,
+    "type": 2,
+    "icon": "$ui_item_1601002.png",
+    "specialCaseMailId": 42,
+    "des": 1090986241,
+    "dollar_price": 4.99,
+    "price": 30,
+    "sendGiftltemld": 1601002,
+    "cloudGameType": 1,
+    "cloudGameAmountSeconds": 604800,
+    "iconBuy": "$ui_item_1601002.png",
+    "overselling": [
+      1601002,
+      1
+    ],
+    "product_id": "com.x.yimoo.1.2.30"
+  },
+  "190009": {
+    "sort": 1,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Card_Payment_Cashlcon_Lv3.png",
+    "type": 3,
+    "name": 1906278917,
+    "subType": 31,
+    "icon": "$ui_item_1601000.png",
+    "specialCaseMailId": 41,
+    "des": 1441377876,
+    "dollar_price": 9.99,
+    "price": 68,
+    "sendGiftltemld": 1601000,
+    "cloudGameType": 1,
+    "cloudGameAmountSeconds": 1814400,
+    "iconBuy": "$ui_item_1601000.png",
+    "overselling": [
+      1601000,
+      1
+    ],
+    "product_id": "com.x.yimoo.1.3.68"
+  },
+  "190010": {
+    "sort": 2,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Monthly_Card.png",
+    "type": 3,
+    "name": 1748563979,
+    "subType": 32,
+    "icon": "$ui_item_1601001.png",
+    "specialCaseMailId": 41,
+    "des": 1375880798,
+    "dollar_price": 19.99,
+    "price": 128,
+    "sendGiftltemld": 1601001,
+    "cloudGameType": 1,
+    "cloudGameAmountSeconds": 3628800,
+    "iconBuy": "$ui_item_1601001.png",
+    "overselling": [
+      1601001,
+      1
+    ],
+    "product_id": "com.x.yimoo.1.3.128"
+  },
+  "190011": {
+    "sort": 3,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Monthly_Card.png",
+    "name": 1724059514,
+    "type": 3,
+    "icon": "$ui_item_1601001.png",
+    "subType": 33,
+    "des": 1150886567,
+    "dollar_price": 10,
+    "price": 60,
+    "specialCaseMailId": 41,
+    "cloudGameType": 1,
+    "cloudGameAmountSeconds": 1814400,
+    "iconBuy": "$ui_item_1601001.png",
+    "overselling": [
+      3,
+      660
+    ],
+    "product_id": "com.x.yimoo.1.3.60"
+  },
+  "210001": {
+    "sort": 3,
+    "sendMailId": 65,
+    "name": 1605975606,
+    "des": 1799549468,
+    "dollar_price": 9.99,
+    "isHide": 1,
+    "type": 6,
+    "price": 68,
+    "product_id": "9PH327N126WG"
+  },
+  "210002": {
+    "sort": 3,
+    "sendMailId": 66,
+    "name": 1486825311,
+    "des": 1903174512,
+    "dollar_price": 9.99,
+    "isHide": 1,
+    "type": 6,
+    "price": 68,
+    "product_id": "0686800086613616"
+  },
+  "210003": {
+    "sort": 3,
+    "sendMailId": 67,
+    "name": 2012339596,
+    "des": 1511897394,
+    "dollar_price": 19.99,
+    "isHide": 1,
+    "type": 6,
+    "price": 128,
+    "product_id": "9P7SMC59003M"
+  },
+  "210004": {
+    "sort": 3,
+    "sendMailId": 68,
+    "name": 1713015291,
+    "des": 1666460122,
+    "dollar_price": 19.99,
+    "isHide": 1,
+    "type": 6,
+    "price": 128,
+    "product_id": "0588301512156043"
+  },
+  "210005": {
+    "sort": 3,
+    "price": 0,
+    "sendMailId": 69,
+    "name": 1660597086,
+    "type": 6,
+    "product_id": "0546644977920139",
+    "isHide": 1,
+    "des": 1949121379
+  },
+  "290001": {
+    "sort": 1,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv1.png",
+    "name": 1518501330,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv1.png",
+    "price": 6,
+    "des": 2045857129,
+    "dollar_price": 0.99,
+    "effectLevel": 0,
+    "extraGift": [
+      3,
+      6
+    ],
+    "firstTmieGift": [
+      1,
+      60
+    ],
+    "getCurrency": [
+      3,
+      60
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv1.png",
+    "overselling": [
+      3,
+      60
+    ],
+    "product_id": "com.x.aniimos.2.1.6"
+  },
+  "290002": {
+    "sort": 2,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv2.png",
+    "name": 1735441880,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv2.png",
+    "price": 30,
+    "des": 1367344525,
+    "dollar_price": 4.99,
+    "effectLevel": 1,
+    "extraGift": [
+      3,
+      30
+    ],
+    "firstTmieGift": [
+      1,
+      300
+    ],
+    "getCurrency": [
+      3,
+      300
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv2.png",
+    "overselling": [
+      3,
+      300
+    ],
+    "product_id": "com.x.aniimos.2.1.30"
+  },
+  "290003": {
+    "sort": 3,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv3.png",
+    "name": 1165648640,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv3.png",
+    "price": 98,
+    "des": 1920058373,
+    "dollar_price": 14.99,
+    "effectLevel": 2,
+    "extraGift": [
+      3,
+      98
+    ],
+    "firstTmieGift": [
+      1,
+      980
+    ],
+    "getCurrency": [
+      3,
+      980
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv3.png",
+    "overselling": [
+      3,
+      980
+    ],
+    "product_id": "com.x.aniimos.2.1.98"
+  },
+  "290004": {
+    "sort": 4,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv4.png",
+    "name": 1954316421,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv4.png",
+    "price": 198,
+    "des": 1312236512,
+    "dollar_price": 29.99,
+    "effectLevel": 3,
+    "extraGift": [
+      3,
+      198
+    ],
+    "firstTmieGift": [
+      1,
+      1980
+    ],
+    "getCurrency": [
+      3,
+      1980
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv4.png",
+    "overselling": [
+      3,
+      1980
+    ],
+    "product_id": "com.x.aniimos.2.1.1980"
+  },
+  "290005": {
+    "sort": 5,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv5.png",
+    "name": 1136238205,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv5.png",
+    "price": 328,
+    "des": 2130851483,
+    "dollar_price": 49.99,
+    "effectLevel": 4,
+    "extraGift": [
+      3,
+      328
+    ],
+    "firstTmieGift": [
+      1,
+      3280
+    ],
+    "getCurrency": [
+      3,
+      3280
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv5.png",
+    "overselling": [
+      3,
+      3280
+    ],
+    "product_id": "com.x.aniimos.2.1.3280"
+  },
+  "290006": {
+    "sort": 6,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Payment_CashIcon_Lv6.png",
+    "name": 1353582605,
+    "type": 1,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv6.png",
+    "price": 648,
+    "des": 1407313694,
+    "dollar_price": 99.99,
+    "effectLevel": 5,
+    "extraGift": [
+      3,
+      648
+    ],
+    "firstTmieGift": [
+      1,
+      6480
+    ],
+    "getCurrency": [
+      3,
+      6480
+    ],
+    "iconBuy": "$UI_Icon_QuickRecharge_CashIcon_Lv6.png",
+    "overselling": [
+      3,
+      6480
+    ],
+    "product_id": "com.x.aniimos.2.1.6480"
+  },
+  "290007": {
+    "sort": 7,
+    "name": 1103859823,
+    "icon": "$UI_Icon_Payment_CashIcon_Lv2.png",
+    "type": 1,
+    "des": 1368780111,
+    "price": 999,
+    "isHide": 1,
+    "extraGift": [
+      3,
+      1
+    ],
+    "firstTmieGift": [
+      1,
+      9990
+    ],
+    "getCurrency": [
+      3,
+      9990
+    ],
+    "iconBuy": "$UI_Icon_Payment_CashIcon_Lv2.png",
+    "overselling": [
+      3,
+      9990
+    ],
+    "product_id": "com.x.aniimos.2.1.9990"
+  },
+  "290008": {
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Card_Payment_Cashlcon_Lv2.png",
+    "name": 1594932269,
+    "icon": "$ui_item_1601002.png",
+    "des": 1639733813,
+    "dollar_price": 4.99,
+    "price": 30,
+    "sendGiftltemld": 1601002,
+    "specialCaseMailId": 42,
+    "type": 2,
+    "iconBuy": "$ui_item_1601002.png",
+    "overselling": [
+      1601002,
+      1
+    ],
+    "product_id": "com.x.aniimos.2.2.30"
+  },
+  "290009": {
+    "sort": 1,
+    "name": 1822164448,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Card_Payment_Cashlcon_Lv3.png",
+    "icon": "$ui_item_1601000.png",
+    "sendGiftltemld": 1601000,
+    "des": 2014521361,
+    "dollar_price": 9.99,
+    "price": 68,
+    "subType": 31,
+    "specialCaseMailId": 41,
+    "type": 3,
+    "iconBuy": "$ui_item_1601000.png",
+    "overselling": [
+      1601000,
+      1
+    ],
+    "product_id": "com.x.aniimos.2.3.68"
+  },
+  "290010": {
+    "sort": 2,
+    "name": 2124197880,
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Monthly_Card.png",
+    "icon": "$ui_item_1601001.png",
+    "sendGiftltemld": 1601001,
+    "des": 2124094444,
+    "dollar_price": 19.99,
+    "price": 128,
+    "subType": 32,
+    "specialCaseMailId": 41,
+    "type": 3,
+    "iconBuy": "$ui_item_1601001.png",
+    "overselling": [
+      1601001,
+      1
+    ],
+    "product_id": "com.x.aniimos.2.3.128"
+  },
+  "290011": {
+    "sort": 3,
+    "name": 2089414725,
+    "icon": "$ui_item_1601001.png",
+    "url": "https://kg-web-cdn.kingsgroup.cn/official-website/worldx/office_cn/recharge/Monthly_Card.png",
+    "des": 1634540742,
+    "dollar_price": 10,
+    "price": 60,
+    "specialCaseMailId": 41,
+    "subType": 33,
+    "type": 3,
+    "iconBuy": "$ui_item_1601001.png",
+    "overselling": [
+      3,
+      660
+    ],
+    "product_id": "com.x.aniimos.2.3.60"
+  },
+  "310006": {
+    "sort": 4,
+    "name": 1504511995,
+    "des": 1584020832,
+    "dollar_price": 0.99,
+    "isHide": 1,
+    "type": 4,
+    "cloudGameAmountSeconds": 10800,
+    "cloudGameType": 2,
+    "price": 6,
+    "product_id": "com.x.yimmo.5.1.6"
+  },
+  "310007": {
+    "sort": 5,
+    "name": 1705564874,
+    "des": 1176125504,
+    "dollar_price": 4.99,
+    "isHide": 1,
+    "type": 4,
+    "cloudGameAmountSeconds": 54000,
+    "cloudGameType": 2,
+    "price": 30,
+    "product_id": "com.x.yimmo.5.1.30"
+  },
+  "310008": {
+    "sort": 6,
+    "name": 2111275550,
+    "des": 1323820865,
+    "dollar_price": 14.99,
+    "isHide": 1,
+    "type": 4,
+    "cloudGameAmountSeconds": 10800,
+    "cloudGameType": 2,
+    "price": 90,
+    "product_id": "com.x.yimmo.5.1.90"
+  },
+  "310009": {
+    "sort": 1,
+    "name": 1571836529,
+    "des": 1653412082,
+    "dollar_price": 4.99,
+    "isHide": 1,
+    "type": 4,
+    "cloudGameAmountSeconds": 1296000,
+    "cloudGameType": 1,
+    "price": 30,
+    "product_id": "com.x.yimmo.5.2.30"
+  },
+  "310010": {
+    "sort": 2,
+    "name": 1779171226,
+    "des": 1213563952,
+    "dollar_price": 9.99,
+    "isHide": 1,
+    "type": 4,
+    "cloudGameAmountSeconds": 2592000,
+    "cloudGameType": 1,
+    "price": 60,
+    "product_id": "com.x.yimmo.5.2.60"
+  },
+  "510001": {
+    "sort": 1,
+    "name": 1716259372,
+    "icon": "$ui_item_1601002.png",
+    "des": 2009006931,
+    "dollar_price": 4.99,
+    "price": 30,
+    "sendGiftltemld": 1601002,
+    "specialCaseMailId": 42,
+    "type": 5,
+    "iconBuy": "$ui_item_1601002.png",
+    "overselling": [
+      1601002,
+      1
+    ],
+    "product_id": "com.x.aniimos.gppay.30"
+  }
+}

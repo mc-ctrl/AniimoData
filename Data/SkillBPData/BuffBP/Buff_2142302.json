@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2142302",
+  "name": "战斗非战斗模型显隐",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    12,
+    8,
+    6,
+    10
+  ],
+  "tags": [
+    16
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "523653f6-8678-4f11-8147-608dd3b5ca58",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10423_Skill_Ghost",
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "3a98016e-6f7b-43b0-a4ee-b729d7e27dc8",
+      "name": "removeMaterialEffect",
+      "key": "10423_Combat",
+      "NodeID": 13
+    },
+    "6": {
+      "buffId": 2142305,
+      "name": "removeBuff",
+      "UID": "473c9e4b-04f9-4286-9e5d-b7f706456780",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 21423031,
+      "name": "removeBuff",
+      "UID": "1a7d6f5e-4d71-4552-b977-eec19ccc8064",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "d75f4c14-11f3-44ab-bc3c-0dbd3464def3",
+      "name": "stopPreset",
+      "presetName": "Eff_Buff_Mushroom_Fresnel",
+      "NodeID": 11
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "25ac1bcd-ed2d-49ea-9dda-c73a87a7fe00",
+      "effectId": "Eff_Parmon_10423_Skill_Feature_Buff01",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "12": {
+      "key": "10423_Combat",
+      "name": "applyMaterialEffect",
+      "NodeID": 12
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    13,
+    11,
+    3
+  ],
+  "onBuffStartIds": [
+    12,
+    8,
+    6,
+    10
+  ]
+}

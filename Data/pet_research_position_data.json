@@ -1,0 +1,73 @@
+{
+  "1001100": [
+    {
+      "littleAreaId": [
+        1001
+      ],
+      "map": "3000",
+      "timeSet": [
+        [
+          6,
+          12
+        ]
+      ],
+      "monsterList": [
+        1001100
+      ],
+      "markPosition": 31347866
+    },
+    {
+      "littleAreaId": [
+        1002
+      ],
+      "map": "3000",
+      "timeSet": [
+        [
+          0,
+          6
+        ]
+      ],
+      "monsterList": [
+        1001100
+      ],
+      "markPosition": 41102753
+    }
+  ],
+  "1005100": [
+    {
+      "littleAreaId": [
+        1003
+      ],
+      "map": "3000",
+      "monsterList": [
+        1005100
+      ],
+      "markPosition": 38077721
+    }
+  ],
+  "1017100": [
+    {
+      "littleAreaId": [
+        1003,
+        1004
+      ],
+      "map": "3000",
+      "monsterList": [
+        1017100
+      ],
+      "markPosition": 39377442
+    }
+  ],
+  "1016100": [
+    {
+      "littleAreaId": [
+        1003
+      ],
+      "map": "3000",
+      "monsterList": [
+        1016100
+      ],
+      "markPosition": 38512166
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21233051",
+  "NodeID": 1,
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "onBuffRefreshIds": [
+    4,
+    2
+  ],
+  "tags": [
+    11,
+    21
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "buffId": 21233051,
+      "name": "removeBuff",
+      "UID": "e709d4ac-76ee-4bba-8a53-8c9a7cd300cc",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "6fb09bd3-ed01-47a9-9d1e-b8de2b355997",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        11,
+        5,
+        30
+      ],
+      "NodeID": 7
+    },
+    "31": {
+      "cameraShakeId": 30403,
+      "name": "playCameraImpulseById",
+      "UID": "e0d51442-605f-45cc-b0a3-7242df705d85",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "key": "sleep_start",
+      "duration": 1.5,
+      "actionIds": [
+        7,
+        13
+      ],
+      "NodeID": 9,
+      "UID": "c1cd2dab-3e53-4fcb-81e6-e23f3537bb00",
+      "name": "addTimer"
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "0cae2730-f8b3-4d12-a5f7-4dbb5d1a88bb",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "b88d7ac5-1f3a-4ace-9e62-7f99497452df",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 21,
+      "UID": "5f17dda8-48cd-4d2c-b3a2-29ee94238319",
+      "target": "OWNER",
+      "fadeTime": 0.3,
+      "animId": "Behav_SleepLoop"
+    },
+    "22": {
+      "key": "delay",
+      "duration": 1,
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "ab01f482-cf93-46f3-8727-e94d295852ee",
+      "name": "addTimer"
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1884c845-8b20-4a2d-9773-a18e470ceff4",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "24": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "a4417ad2-17bc-49eb-9c81-1db406bc3ef7",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 24
+    },
+    "13": {
+      "name": "addDynamicAttrInNextSkillByBeAttacked",
+      "UID": "4250f06b-4b4f-4c99-a9ca-84e748e666aa",
+      "target": "OWNER",
+      "NodeID": 13,
+      "calcInfoByLuaConfig": {
+        "id": 21233051,
+        "taken_dmg_dec_rate_v": "param0",
+        "type": 1
+      }
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "89e81f10-33b2-4ef2-a9e5-9e42c00a3f3c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 2
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "108caab5-7971-4502-8712-0cdab3395c81",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "name": "checkPetPrototypeId",
+      "UID": "7cca474c-2f42-4f68-8a19-0cd01a5eaac0",
+      "target": "OWNER",
+      "petPrototypeId": 1017101,
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "e411ce5d-03f0-4c20-805c-409ab53ed1d9",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "27": {
+      "petTarget": "SRC",
+      "triggerId": 1023301,
+      "name": "onEntityTrigger",
+      "UID": "01ae4436-1c73-4d9a-b275-a125c55fd956",
+      "target": "SRC",
+      "NodeID": 27
+    },
+    "17": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 17,
+      "UID": "32e7ad6d-f450-4bd4-aabf-ccc3bae2be4e",
+      "target": "OWNER",
+      "fadeTime": 0.3,
+      "animId": "Behav_SleepStart"
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "7a72f81e-bb1c-4c46-b028-cee9eb5c95e5",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_003",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "target": "OWNER",
+      "duration": 2,
+      "buffId": 2123306,
+      "NodeID": 18,
+      "UID": "08a89e41-7a23-49d7-b6d9-065370783ca0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "3e7e61c6-7789-4263-8709-d2778a9fd4a5",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_003",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "33": {
+      "calcInfo": {
+        "tp_temp_max": 999,
+        "tp_temp_cur": 999
+      },
+      "name": "addDynamicAttribute",
+      "UID": "84119b55-3ccc-44bf-8d9b-691b3ce7e399",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "UID": "a582d7c2-f1b9-4a3c-917d-6d4cf4094211",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 34
+    },
+    "23": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "8f8ff62c-c99a-481e-bf63-5653f3cc0920",
+      "target": "OWNER",
+      "val": 4,
+      "NodeID": 23
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    20,
+    18,
+    24,
+    29,
+    34
+  ],
+  "onBuffStartIds": [
+    15,
+    33,
+    17,
+    22,
+    23,
+    26,
+    9,
+    31
+  ]
+}

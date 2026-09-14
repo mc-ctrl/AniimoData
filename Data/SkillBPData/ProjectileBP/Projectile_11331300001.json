@@ -1,0 +1,113 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 40,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Monster_10133_Mon_Skill_BladeRealm_FrostBlade_02",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "waterDestroy": false,
+  "relation": 2,
+  "moveSpeed": 50,
+  "onProjectileFinishIds": [
+    24
+  ],
+  "onProjectileHitIds": [
+    40,
+    118
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepBoxSize": [
+    4,
+    1,
+    2
+  ],
+  "sweepShape": 1,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "117": {
+      "calcId": 11331300,
+      "calcType": 2,
+      "paramName": "param2",
+      "NodeID": 117,
+      "UID": "24f38d10-09fd-4172-8d4a-d07c4cc09cc8",
+      "name": "getParamByLuaConfig"
+    },
+    "40": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "calcId": 11331300,
+          "calcType": 2,
+          "paramName": "param1",
+          "NodeID": 111,
+          "UID": "d31941e9-f192-4fd4-aec9-8d2dd2955790",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash_Big",
+            "rotAngle": 0,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000
+      },
+      "UID": "4aa3f969-0bd6-47cb-9392-cbf9e406447d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 40
+    },
+    "118": {
+      "value": {
+        "calcId": 11331300,
+        "calcType": 2,
+        "paramName": "param2",
+        "NodeID": 117,
+        "UID": "24f38d10-09fd-4172-8d4a-d07c4cc09cc8",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "e76f76c1-a56e-4b0b-9197-2271c5b44cda",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 118
+    },
+    "111": {
+      "calcId": 11331300,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 111,
+      "UID": "d31941e9-f192-4fd4-aec9-8d2dd2955790",
+      "name": "getParamByLuaConfig"
+    },
+    "24": {
+      "name": "stopSoundStr",
+      "UID": "49dfa60f-67f6-4a41-903e-5aa21c9492c7",
+      "soundId": "SFX_Combat_10032_Skill_Sickle_Loop",
+      "target": "OWNER",
+      "NodeID": 24
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_11331300",
+  "groundSweepRadius": 1,
+  "impulseId": 2000,
+  "acceleration": 0
+}

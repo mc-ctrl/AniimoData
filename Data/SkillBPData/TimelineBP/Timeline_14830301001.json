@@ -1,0 +1,253 @@
+{
+  "nodeMap": {
+    "31": {
+      "buffId": 2148305,
+      "name": "removeBuff",
+      "UID": "8d921115-ab75-440c-a0b0-92c8463a0143",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a5cd0f6f-c4f6-4bfd-a8ed-f659dcc36499",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_GatherBubble_02"
+    },
+    "11": {
+      "UID": "40c4a539-17d0-4318-b351-8234d0e5815c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25,
+          9,
+          21,
+          20
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 148305,
+      "name": "createEntity",
+      "UID": "95acd51e-b93c-4696-9f63-cbefb6ae1828",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 20,
+      "pos": "OWNER"
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ba019767-072f-47e1-b616-af72e3226bcc",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10483_Skill_GatherBubble_03",
+      "NodeID": 21
+    },
+    "22": {
+      "calcId": 14830301,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 22,
+      "UID": "45979919-2321-4d34-86e7-838c59d2c630",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          16
+        ]
+      },
+      "NodeID": 4
+    },
+    "13": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 13
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.55,
+      "NodeID": 14,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "30": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "37c7ff8a-e1da-4dde-a8c4-1c4910cc2311",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "25": {
+      "delayTime": 0,
+      "duration": 0.8,
+      "NodeID": 25,
+      "UID": "1b84b9e3-4157-44bb-8e4d-64266261eaf7",
+      "radius": 12,
+      "waterPoolDissolveRange": [
+        1,
+        2
+      ],
+      "commonMount": "CM_common_warning",
+      "levelActions": [
+        {
+          "actionIds": [
+            23
+          ],
+          "count": 1
+        }
+      ],
+      "notConsumeRate": 0,
+      "waterPoolDelayTime": 0.1,
+      "maxCount": 1,
+      "waterPoolVanishDuration": 1.3,
+      "name": "waterAbsorb"
+    },
+    "26": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "d2b10a9f-b2b7-45d9-9534-5f9eb78becfd",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 26
+    },
+    "27": {
+      "actionIds": [
+        26
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "3b430639-db10-4bfb-9c24-1e7dd15514f2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 27
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 28,
+      "UID": "eb44efcf-f866-4897-a0ae-3764c3d1c19f"
+    },
+    "29": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "a6bf4a99-8281-4442-affe-6314ff675000",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "27a15d24-d886-4370-a8f5-2de7c092e8e3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "UID": "a29ddc77-d073-451a-ab2b-022fc9411c9c",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "NodeID": 32
+    },
+    "19": {
+      "UID": "d8b239da-f6be-4c58-8a77-ef753a972845",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 19
+    },
+    "16": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 16
+    },
+    "23": {
+      "value": {
+        "calcId": 14830301,
+        "calcType": 2,
+        "paramName": "param0",
+        "NodeID": 22,
+        "UID": "45979919-2321-4d34-86e7-838c59d2c630",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "a0ebd6eb-99a8-4191-841d-1dd9d0c9b8e1",
+      "target": "OWNER",
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_14830301",
+  "NodeID": 6,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    4,
+    19,
+    11,
+    14,
+    32,
+    28
+  ],
+  "layer": "Base",
+  "length": 1.667
+}

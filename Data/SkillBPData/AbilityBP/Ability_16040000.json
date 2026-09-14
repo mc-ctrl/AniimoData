@@ -1,0 +1,43 @@
+{
+  "BPName": "ability_16040000",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 16500000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 16040000001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Parmon_10604_Skill_Angry_01",
+    "Eff_Parmon_10604_Skill_Angry_02",
+    "Eff_Parmon_10604_Skill_Angry_03",
+    "Eff_Parmon_10604_Skill_Angry_04",
+    "Eff_Parmon_10604_Skill_Angry_05"
+  ],
+  "searchRelation": 2,
+  "name": "草普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    16040001,
+    16040002
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

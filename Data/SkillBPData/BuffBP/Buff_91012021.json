@@ -1,0 +1,13 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "bp_atk_v": 40
+  },
+  "NodeID": 1,
+  "UID": "810551a1-be28-45df-b155-320f8c15aef3",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_91012021"
+}

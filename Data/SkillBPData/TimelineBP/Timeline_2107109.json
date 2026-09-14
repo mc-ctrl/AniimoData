@@ -1,0 +1,201 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "action": {
+        "actionIds": [
+          2,
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 4,
+      "UID": "a3c95562-ee2a-4954-8c68-d6382287ea1f"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "115a1314-6c40-445f-98db-5a55a8b2f37f",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_Indicator",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "impulseId": 3002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "c1f9207b-735e-4576-8163-6db572930e70",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "14": {
+      "eventType": "NotifyState",
+      "endTime": 2.7,
+      "NodeID": 14,
+      "UID": "916864e1-c46a-4fc9-bd33-f984987b7d87",
+      "onUpdate": {
+        "actionIds": [
+          12
+        ]
+      },
+      "startTime": 0.5,
+      "tickInterval": 0.05
+    },
+    "12": {
+      "calcResultNodeId": 10,
+      "name": "actOnTargets",
+      "UID": "a7776e2a-0760-4a7f-bdad-8be7d729d0a3",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            3,
+            5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "Enemy",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        10
+      ],
+      "impulseId": 3002,
+      "NodeID": 12
+    },
+    "2": {
+      "name": "stopEffectStr",
+      "UID": "9571f1c1-30b5-44b7-b6c7-6be7dd0ad845",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind01_0.5",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "8": {
+      "UID": "e224d6fc-e7ba-4b62-bf77-c35c9fce1e3a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6,
+          34
+        ]
+      },
+      "NodeID": 8
+    },
+    "27": {
+      "name": "moveByDirection",
+      "duration": 6,
+      "velocity": [
+        0,
+        0,
+        15
+      ],
+      "NodeID": 27,
+      "UID": "c9893910-7336-497d-ba2d-55080c2c3fff",
+      "collisionTestDistance": 0,
+      "isLocalDir": true,
+      "needForceOnGround": false
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 29,
+      "UID": "eba9abe1-637a-40cd-a7f1-46042bd48e6b"
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "274c77ce-9f4c-476c-9250-fb0b5f0b839b",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          33,
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 32,
+      "UID": "9580efbc-1aa5-4d3d-8e8d-7b591dd5220c"
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "5aed665c-0698-4d08-9c52-ba823269bf43",
+      "effectId": "Eff_Monster_10023_Mon_Skill_Tornado_Indicator",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2da33e4f-d828-4a28-adf9-fef438b94188",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10023_Skill_HurricaneAttack_03_loop",
+      "NodeID": 34
+    },
+    "21": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "dcc2197e-ce09-457a-9513-7e337d57badd",
+      "val": {
+        "UID": "e950f676-d08b-4190-acb4-7552962f2603",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 20
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2107109",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    8,
+    14,
+    29,
+    32,
+    4
+  ],
+  "layer": "Base",
+  "length": 3.5
+}

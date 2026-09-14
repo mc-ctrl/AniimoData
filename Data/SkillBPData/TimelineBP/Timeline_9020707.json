@@ -1,0 +1,119 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "NodeID": 3,
+      "UID": "4fb9035d-7d62-43f5-8667-62a835420f45",
+      "effectId": "Eff_Monster_90207_Branch_Spike_Quick",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "4": {
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 4,
+      "UID": "5270b078-503e-400d-a59f-80b4d9d1bbba"
+    },
+    "9": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 7,
+      "NodeID": 9,
+      "UID": "77a0abed-01ac-4d87-8920-53fc2f70302d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            3,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        7
+      ]
+    },
+    "11": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 11,
+      "UID": "9e7a0d7a-4a8f-4e7e-b145-ae7c00f0d469"
+    },
+    "7": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 3000,
+        "ignoreHitLockTarget": true
+      },
+      "UID": "2cf57a61-e5f5-4cef-9075-6c5cda2a008d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "timeline_9020707",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    16,
+    4,
+    11
+  ],
+  "layer": "Base",
+  "length": 9999
+}

@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123306",
+  "NodeID": 1,
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "onBuffRefreshIds": [
+    3
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 3,
+      "UID": "e338c88c-8721-4dcf-85dd-820a3606a122",
+      "target": "OWNER",
+      "disableMotion": true,
+      "animId": "Behav_SleepEnd"
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

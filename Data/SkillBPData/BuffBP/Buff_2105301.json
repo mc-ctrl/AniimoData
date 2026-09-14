@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "atk_v": 0,
+    "atk_mag_p": 0,
+    "taken_dmg_inc_rate_v": 0,
+    "atk_p": 0.3
+  },
+  "NodeID": 1,
+  "UID": "cb79fbbb-0c96-41c7-92fa-dd74651b0067",
+  "icon": "icon_buff_attack_up",
+  "onBuffRefreshIds": [
+    4
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.01
+      },
+      "name": "calcResult",
+      "UID": "55a35913-64c2-458e-b792-3b08e3943caf",
+      "target": "OWNER",
+      "NodeID": 4
+    }
+  },
+  "BPName": "buff_2105301",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

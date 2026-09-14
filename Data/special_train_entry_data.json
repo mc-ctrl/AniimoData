@@ -1,0 +1,4731 @@
+{
+  "3021": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1175376595,
+      "help": 2094755683,
+      "questId": 4102302101,
+      "taskConditions": 978,
+      "desc": 1532551970,
+      "weight": 1,
+      "rewardId": 60188,
+      "taskPreconditions1": 977,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1677248432,
+      "taskDes": 2111072080
+    }
+  ],
+  "3023": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1970887121,
+      "help": 2039893396,
+      "questId": 4102302301,
+      "taskConditions": 8285,
+      "desc": 2125799469,
+      "weight": 2,
+      "rewardId": 60195,
+      "taskPreconditions1": 978,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1448134632,
+      "taskDes": 1767804026
+    }
+  ],
+  "1012": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1881
+      ],
+      "goToTxt": 1423222240,
+      "help": 1938806271,
+      "questId": 4102101201,
+      "taskConditions": 1067,
+      "desc": 1718904905,
+      "weight": 1,
+      "rewardId": 60609,
+      "totalPhase": 1,
+      "taskType": 1,
+      "displayType": 1,
+      "taskName": 2065992118,
+      "taskDes": 1160051045
+    }
+  ],
+  "1013": [
+    {
+      "badgeNum": 3,
+      "goTo": [
+        1,
+        833
+      ],
+      "goToTxt": 1467637758,
+      "help": 1385466194,
+      "questId": 4102101301,
+      "specialTask": 888,
+      "desc": 1546566800,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "recommendTask": 3,
+      "taskName": 1074579429,
+      "taskDes": 1766642017,
+      "taskConditions": 9150,
+      "rewardId": 60610,
+      "guideId": 1000200
+    }
+  ],
+  "1014": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1821
+      ],
+      "goToTxt": 1788929428,
+      "help": 1456073890,
+      "questId": 4102101401,
+      "taskConditions": 8161,
+      "desc": 1988849525,
+      "weight": 1,
+      "rewardId": 60611,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1115724264,
+      "taskDes": 1256561932,
+      "guideId": 1000300
+    }
+  ],
+  "1016": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        651
+      ],
+      "goToTxt": 1878239780,
+      "help": 1694756512,
+      "questId": 4102101601,
+      "taskConditions": 6057,
+      "desc": 1936142051,
+      "needCompleteTask": "4102101301",
+      "rewardId": 60613,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1276193423,
+      "taskDes": 1589131104
+    }
+  ],
+  "1015": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        676
+      ],
+      "goToTxt": 1170508316,
+      "help": 1310989876,
+      "questId": 4102101501,
+      "taskConditions": 9269,
+      "desc": 1972140845,
+      "weight": 1,
+      "rewardId": 60614,
+      "totalPhase": 1,
+      "taskType": 1,
+      "displayType": 1,
+      "taskName": 2110985956,
+      "taskDes": 1786712442
+    }
+  ],
+  "3040": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        654
+      ],
+      "goToTxt": 2130337653,
+      "help": 1528720880,
+      "questId": 4102304001,
+      "taskConditions": 9285,
+      "desc": 1567958860,
+      "rewardId": 60192,
+      "weight": 2,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1977448306,
+      "taskDes": 1100762831
+    }
+  ],
+  "3041": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        654
+      ],
+      "goToTxt": 1203501424,
+      "help": 1239420074,
+      "questId": 4102304101,
+      "taskConditions": 9286,
+      "desc": 1262234403,
+      "weight": 3,
+      "rewardId": 60199,
+      "taskPreconditions1": 9285,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1796496746,
+      "taskDes": 1328699814
+    }
+  ],
+  "3042": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        654
+      ],
+      "goToTxt": 2098363215,
+      "help": 2064967686,
+      "questId": 4102304201,
+      "taskConditions": 9287,
+      "desc": 1493393014,
+      "weight": 4,
+      "rewardId": 60205,
+      "taskPreconditions1": 9286,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1911243249,
+      "taskDes": 1264337855
+    }
+  ],
+  "3043": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        654
+      ],
+      "goToTxt": 1838036187,
+      "help": 1416334162,
+      "questId": 4102304301,
+      "taskConditions": 9288,
+      "desc": 1736186552,
+      "weight": 4,
+      "rewardId": 60212,
+      "taskPreconditions1": 9287,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1136648587,
+      "taskDes": 1727460889
+    }
+  ],
+  "3050": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1630324562,
+      "help": 1428500475,
+      "questId": 4102305001,
+      "taskConditions": 8212,
+      "desc": 1500855896,
+      "rewardId": 60211,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1475197993,
+      "taskDes": 1079367937
+    }
+  ],
+  "3061": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1934
+      ],
+      "goToTxt": 1479156730,
+      "help": 1559317144,
+      "questId": 4102306101,
+      "taskConditions": 974,
+      "desc": 1490123050,
+      "weight": 2,
+      "rewardId": 60193,
+      "totalPhase": 1,
+      "taskType": 3,
+      "displayType": 1,
+      "taskName": 1528880903,
+      "taskDes": 1261380424
+    }
+  ],
+  "3062": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1934
+      ],
+      "goToTxt": 2034987131,
+      "help": 1484455580,
+      "questId": 4102306201,
+      "taskConditions": 1506,
+      "desc": 1852785095,
+      "weight": 2,
+      "rewardId": 60200,
+      "totalPhase": 1,
+      "taskType": 3,
+      "displayType": 1,
+      "taskName": 1418118038,
+      "taskDes": 1295993813
+    }
+  ],
+  "3063": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1934
+      ],
+      "goToTxt": 2127292296,
+      "help": 1263395665,
+      "questId": 4102306301,
+      "taskConditions": 6065,
+      "desc": 1513009188,
+      "weight": 2,
+      "rewardId": 60206,
+      "totalPhase": 1,
+      "taskType": 3,
+      "displayType": 1,
+      "taskName": 2007742912,
+      "taskDes": 1155931069
+    }
+  ],
+  "3065": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1934
+      ],
+      "goToTxt": 1338400813,
+      "help": 1955127890,
+      "questId": 4102306501,
+      "taskConditions": 8377,
+      "desc": 1757768122,
+      "weight": 2,
+      "rewardId": 60213,
+      "taskPreconditions1": 8375,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1578949273,
+      "taskDes": 1713657292
+    }
+  ],
+  "3070": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        2037
+      ],
+      "goToTxt": 1986713761,
+      "help": 1461718405,
+      "questId": 4102307001,
+      "taskConditions": 6012,
+      "desc": 1919192519,
+      "weight": 3,
+      "rewardId": 60204,
+      "taskPreconditions1": 6011,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1893502708,
+      "taskDes": 1433745765
+    }
+  ],
+  "3101": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1288806859,
+      "help": 2053299041,
+      "questId": 4102310101,
+      "specialTask": 777,
+      "desc": 1254709774,
+      "weight": 3,
+      "totalPhase": 1,
+      "rewardId": 60182,
+      "taskType": 3,
+      "taskName": 1618183229,
+      "taskDes": 1316986456,
+      "taskConditions": 918,
+      "recommendTask": 1
+    }
+  ],
+  "3000": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1900654868,
+      "help": 1136981417,
+      "questId": 4102300001,
+      "taskConditions": 8279,
+      "desc": 1464783797,
+      "weight": 1,
+      "rewardId": 60184,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1785040380,
+      "taskDes": 1646387304,
+      "guideId": 6270010
+    }
+  ],
+  "1041": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1873
+      ],
+      "goToTxt": 1599370970,
+      "help": 1207922347,
+      "questId": 4102104101,
+      "taskConditions": 9104,
+      "desc": 1669333985,
+      "weight": 1,
+      "rewardId": 60629,
+      "totalPhase": 1,
+      "taskType": 1,
+      "displayType": 1,
+      "taskName": 1903152125,
+      "taskDes": 1912307984
+    }
+  ],
+  "1042": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1176
+      ],
+      "goToTxt": 1866582073,
+      "help": 1409696421,
+      "questId": 4102104201,
+      "taskConditions": 9101,
+      "desc": 1797112897,
+      "preGuideId": 8100,
+      "rewardId": 60630,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 2110407630,
+      "taskDes": 1555110352
+    }
+  ],
+  "1043": [
+    {
+      "badgeNum": 3,
+      "goTo": [
+        1,
+        835
+      ],
+      "goToTxt": 1352304686,
+      "help": 1100605151,
+      "questId": 4102104301,
+      "specialTask": 888,
+      "desc": 1502632058,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60631,
+      "taskType": 1,
+      "taskName": 2135200671,
+      "taskDes": 1565298692,
+      "taskConditions": 9174,
+      "recommendTask": 3
+    }
+  ],
+  "1044": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1877
+      ],
+      "goToTxt": 2010785884,
+      "help": 1865527440,
+      "questId": 4102104401,
+      "taskConditions": 8333,
+      "desc": 1161442973,
+      "preGuideId": 9320,
+      "rewardId": 60632,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1580153181,
+      "taskDes": 1307982083
+    }
+  ],
+  "1045": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        2037
+      ],
+      "goToTxt": 1820125097,
+      "help": 1090211147,
+      "questId": 4102104501,
+      "taskConditions": 6011,
+      "desc": 1521729596,
+      "preGuideId": 1001300,
+      "rewardId": 60633,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1856384094,
+      "taskDes": 1799753917
+    }
+  ],
+  "1046": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        2037
+      ],
+      "goToTxt": 1223787019,
+      "help": 1254450761,
+      "questId": 4102104601,
+      "taskConditions": 9298,
+      "desc": 1938341962,
+      "needCompleteTask": "4102104301",
+      "rewardId": 60634,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1089895742,
+      "taskDes": 1702920092
+    }
+  ],
+  "1047": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8191
+      ],
+      "goToTxt": 1826374208,
+      "help": 1676120660,
+      "questId": 4102104701,
+      "taskConditions": 9171,
+      "desc": 1121961026,
+      "needCompleteTask": "4102104301",
+      "rewardId": 60635,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1416249884,
+      "taskDes": 1127723692
+    }
+  ],
+  "4012": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1261330353,
+      "help": 2029866200,
+      "questId": 4102401201,
+      "taskConditions": 9241,
+      "desc": 1297233982,
+      "rewardId": 60217,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1976451042,
+      "taskDes": 1891471547
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 2076197764,
+      "help": 1085862916,
+      "questId": 4102401202,
+      "taskConditions": 9242,
+      "desc": 1661561986,
+      "rewardId": 60217,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1490700848,
+      "taskDes": 1830413889
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1449068675,
+      "help": 1994893618,
+      "questId": 4102401203,
+      "taskConditions": 9243,
+      "desc": 1254464713,
+      "rewardId": 60217,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1546219915,
+      "taskDes": 2039093450
+    }
+  ],
+  "4013": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1999566104,
+      "help": 1457774546,
+      "questId": 4102401301,
+      "taskConditions": 9244,
+      "desc": 1790028577,
+      "weight": 1,
+      "rewardId": 60218,
+      "taskPreconditions1": 9241,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1633511704,
+      "taskDes": 2088925371
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1082196808,
+      "help": 1614176053,
+      "questId": 4102401302,
+      "taskConditions": 9245,
+      "desc": 1639075416,
+      "rewardId": 60218,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1974496604,
+      "taskDes": 1993126567
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 2038691099,
+      "help": 1464248964,
+      "questId": 4102401303,
+      "taskConditions": 9246,
+      "desc": 1367396282,
+      "rewardId": 60218,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1504396833,
+      "taskDes": 1208362376
+    }
+  ],
+  "4023": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1176
+      ],
+      "goToTxt": 2021982075,
+      "help": 1671466175,
+      "questId": 4102402301,
+      "taskConditions": 8194,
+      "desc": 1620980894,
+      "rewardId": 60230,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1157763927,
+      "taskDes": 1688878073
+    }
+  ],
+  "4024": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1176
+      ],
+      "goToTxt": 1080521849,
+      "help": 1880199872,
+      "questId": 4102402401,
+      "taskConditions": 8198,
+      "desc": 2009992429,
+      "weight": 1,
+      "rewardId": 60234,
+      "taskPreconditions1": 8194,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1387706544,
+      "taskDes": 1881935627
+    }
+  ],
+  "1051": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1874
+      ],
+      "goToTxt": 1119772804,
+      "help": 1095785504,
+      "questId": 4102105101,
+      "taskConditions": 8105,
+      "desc": 2135478129,
+      "weight": 1,
+      "rewardId": 60636,
+      "totalPhase": 1,
+      "taskType": 1,
+      "displayType": 1,
+      "taskName": 2099249311,
+      "taskDes": 1144402202
+    }
+  ],
+  "4030": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        822
+      ],
+      "goToTxt": 1360915428,
+      "help": 1822859665,
+      "questId": 4102403001,
+      "taskConditions": 9219,
+      "desc": 2007595671,
+      "weight": 1,
+      "rewardId": 60226,
+      "taskPreconditions1": 9218,
+      "totalPhase": 2,
+      "taskType": 4,
+      "taskName": 1234588610,
+      "taskDes": 2139780783
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        822
+      ],
+      "goToTxt": 1774223352,
+      "help": 1137748466,
+      "questId": 4102403002,
+      "taskConditions": 9220,
+      "desc": 2074478898,
+      "rewardId": 60226,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 4,
+      "taskName": 2074414241,
+      "taskDes": 1215402477
+    }
+  ],
+  "1061": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1934
+      ],
+      "goToTxt": 1648549329,
+      "help": 1371616767,
+      "questId": 4102106101,
+      "taskConditions": 8375,
+      "desc": 1888199055,
+      "rewardId": 60648,
+      "weight": 2,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 2019337648,
+      "taskDes": 2067151760
+    }
+  ],
+  "4032": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        823
+      ],
+      "goToTxt": 1973843977,
+      "help": 1171609380,
+      "questId": 4102403201,
+      "taskConditions": 9224,
+      "desc": 2029506625,
+      "rewardId": 60233,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 2145820136,
+      "taskDes": 2072631713
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        823
+      ],
+      "goToTxt": 1790041222,
+      "help": 1811032529,
+      "questId": 4102403202,
+      "taskConditions": 9225,
+      "desc": 1174507650,
+      "rewardId": 60233,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1222278601,
+      "taskDes": 1667369016
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        823
+      ],
+      "goToTxt": 1436794097,
+      "help": 1814931330,
+      "questId": 4102403203,
+      "taskConditions": 9226,
+      "desc": 1155610310,
+      "rewardId": 60233,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1723044882,
+      "taskDes": 1903263358
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        823
+      ],
+      "goToTxt": 1130097538,
+      "help": 1821409558,
+      "questId": 4102403204,
+      "taskConditions": 9227,
+      "desc": 1761160278,
+      "rewardId": 60233,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1747926894,
+      "taskDes": 1928676674
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        823
+      ],
+      "goToTxt": 1549291394,
+      "help": 2089231730,
+      "questId": 4102403205,
+      "taskConditions": 9228,
+      "desc": 1790977933,
+      "rewardId": 60233,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1265951330,
+      "taskDes": 1841830939
+    }
+  ],
+  "4033": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        822
+      ],
+      "goToTxt": 2099765686,
+      "help": 1402606789,
+      "questId": 4102403301,
+      "taskConditions": 9277,
+      "desc": 1517654000,
+      "weight": 1,
+      "rewardId": 60271,
+      "taskPreconditions1": 9223,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1694387797,
+      "taskDes": 1987160030
+    }
+  ],
+  "4034": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        823
+      ],
+      "goToTxt": 2077512336,
+      "help": 1251899777,
+      "questId": 4102403401,
+      "taskConditions": 9278,
+      "desc": 1152874392,
+      "weight": 1,
+      "rewardId": 60272,
+      "taskPreconditions1": 9228,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 2032367513,
+      "taskDes": 1876100015
+    }
+  ],
+  "4040": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        713
+      ],
+      "goToTxt": 2027157078,
+      "help": 1769406348,
+      "questId": 4102404001,
+      "taskConditions": 8206,
+      "desc": 1097756628,
+      "preGuideId": 9500,
+      "rewardId": 60235,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1228296282,
+      "taskDes": 1880004053
+    }
+  ],
+  "4042": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        713
+      ],
+      "goToTxt": 1593883788,
+      "help": 1292859857,
+      "questId": 4102404201,
+      "taskConditions": 8368,
+      "desc": 1463024872,
+      "weight": 1,
+      "rewardId": 60235,
+      "taskPreconditions1": 8206,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1698978049,
+      "taskDes": 2002183118
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        713
+      ],
+      "goToTxt": 1325963789,
+      "help": 1229271810,
+      "questId": 4102404202,
+      "taskConditions": 8344,
+      "desc": 1671602727,
+      "rewardId": 60235,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1445181688,
+      "taskDes": 1198994045
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        713
+      ],
+      "goToTxt": 1558221978,
+      "help": 1976482143,
+      "questId": 4102404203,
+      "taskConditions": 8369,
+      "desc": 1763504912,
+      "rewardId": 60235,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1712408374,
+      "taskDes": 1470282893
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        713
+      ],
+      "goToTxt": 1640162443,
+      "help": 1439228589,
+      "questId": 4102404204,
+      "taskConditions": 8370,
+      "desc": 1729963857,
+      "rewardId": 60235,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1101275937,
+      "taskDes": 1611429153
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        713
+      ],
+      "goToTxt": 1217320666,
+      "help": 1277536538,
+      "questId": 4102404205,
+      "taskConditions": 8371,
+      "desc": 1728033310,
+      "rewardId": 60235,
+      "weight": 1,
+      "totalPhase": 5,
+      "taskType": 4,
+      "taskName": 1993559264,
+      "taskDes": 1974899391
+    }
+  ],
+  "4050": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1079642176,
+      "help": 2038376102,
+      "questId": 4102405001,
+      "taskConditions": 8219,
+      "desc": 1184138411,
+      "rewardId": 60236,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1402740833,
+      "taskDes": 1921435650
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1465554638,
+      "help": 1687001441,
+      "questId": 4102405002,
+      "taskConditions": 8307,
+      "desc": 1782696559,
+      "rewardId": 60236,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1206755400,
+      "taskDes": 1386228041
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1323799918,
+      "help": 1873325581,
+      "questId": 4102405003,
+      "taskConditions": 8308,
+      "desc": 1590618586,
+      "rewardId": 60236,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1950599820,
+      "taskDes": 1800193983
+    }
+  ],
+  "4055": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1779629223,
+      "help": 1139786441,
+      "questId": 4102405501,
+      "taskConditions": 8349,
+      "desc": 1564263816,
+      "rewardId": 60240,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1967573541,
+      "taskDes": 1768501565
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1320981740,
+      "help": 1406256440,
+      "questId": 4102405502,
+      "taskConditions": 8350,
+      "desc": 1803669127,
+      "rewardId": 60240,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1172516533,
+      "taskDes": 1219296916
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1384974269,
+      "help": 1659310068,
+      "questId": 4102405503,
+      "taskConditions": 8351,
+      "desc": 1314354374,
+      "rewardId": 60240,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1527588474,
+      "taskDes": 1280580676
+    }
+  ],
+  "4056": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1962650439,
+      "help": 1733615967,
+      "questId": 4102405601,
+      "taskConditions": 9229,
+      "desc": 1342546119,
+      "weight": 1,
+      "rewardId": 60241,
+      "taskPreconditions1": 8219,
+      "totalPhase": 4,
+      "taskType": 4,
+      "taskName": 1310522402,
+      "taskDes": 1086372750
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 2092317774,
+      "help": 1667126252,
+      "questId": 4102405602,
+      "taskConditions": 9230,
+      "desc": 1297944880,
+      "rewardId": 60241,
+      "weight": 1,
+      "totalPhase": 4,
+      "taskType": 4,
+      "taskName": 1433672421,
+      "taskDes": 1417045833
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1977030520,
+      "help": 1628143428,
+      "questId": 4102405603,
+      "taskConditions": 9231,
+      "desc": 1923130039,
+      "rewardId": 60241,
+      "weight": 1,
+      "totalPhase": 4,
+      "taskType": 4,
+      "taskName": 1623400424,
+      "taskDes": 1382789250
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 1298740077,
+      "help": 1248351159,
+      "questId": 4102405604,
+      "taskConditions": 9232,
+      "desc": 1480000146,
+      "rewardId": 60241,
+      "weight": 1,
+      "totalPhase": 4,
+      "taskType": 4,
+      "taskName": 1284631554,
+      "taskDes": 1151566211
+    }
+  ],
+  "4101": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        824
+      ],
+      "goToTxt": 1712375000,
+      "help": 1909063787,
+      "questId": 4102410101,
+      "specialTask": 777,
+      "desc": 1240800484,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60220,
+      "taskType": 4,
+      "taskName": 1255636090,
+      "taskDes": 1670967929,
+      "taskConditions": 9202,
+      "recommendTask": 1
+    }
+  ],
+  "4102": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        825
+      ],
+      "goToTxt": 1210200570,
+      "help": 1807452642,
+      "questId": 4102410201,
+      "specialTask": 777,
+      "desc": 1796099657,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60223,
+      "taskType": 4,
+      "taskName": 1713697359,
+      "taskDes": 1468116713,
+      "taskConditions": 9203,
+      "recommendTask": 1
+    }
+  ],
+  "4103": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        826
+      ],
+      "goToTxt": 1926966850,
+      "help": 2043617231,
+      "questId": 4102410301,
+      "specialTask": 777,
+      "desc": 2123313629,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60225,
+      "taskType": 4,
+      "taskName": 1265748516,
+      "taskDes": 1495343032,
+      "taskConditions": 9204,
+      "recommendTask": 1
+    }
+  ],
+  "4104": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        827
+      ],
+      "goToTxt": 1473204126,
+      "help": 1720660091,
+      "questId": 4102410401,
+      "specialTask": 777,
+      "desc": 2053254062,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60228,
+      "taskType": 4,
+      "taskName": 1245088516,
+      "taskDes": 1865170452,
+      "taskConditions": 9205,
+      "recommendTask": 1
+    }
+  ],
+  "4105": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        828
+      ],
+      "goToTxt": 1337221833,
+      "help": 1900543806,
+      "questId": 4102410501,
+      "specialTask": 777,
+      "desc": 1855341072,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60232,
+      "taskType": 4,
+      "taskName": 1886025925,
+      "taskDes": 1193378910,
+      "taskConditions": 9206,
+      "recommendTask": 1
+    }
+  ],
+  "4106": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        906
+      ],
+      "goToTxt": 1598941383,
+      "help": 1162381815,
+      "questId": 4102410601,
+      "specialTask": 777,
+      "desc": 1805966317,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60237,
+      "taskType": 4,
+      "taskName": 1428747338,
+      "taskDes": 1468077809,
+      "taskConditions": 9276,
+      "recommendTask": 1
+    }
+  ],
+  "5001": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1370706060,
+      "help": 1591539565,
+      "questId": 4102500101,
+      "taskConditions": 1502,
+      "desc": 1605910620,
+      "weight": 2,
+      "rewardId": 60252,
+      "taskPreconditions1": 8312,
+      "totalPhase": 4,
+      "taskType": 5,
+      "taskName": 1306241260,
+      "taskDes": 1956666585
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1514859786,
+      "help": 1816687931,
+      "questId": 4102500102,
+      "taskConditions": 1503,
+      "desc": 1409347146,
+      "rewardId": 60252,
+      "weight": 3,
+      "totalPhase": 4,
+      "taskType": 5,
+      "taskName": 2124170411,
+      "taskDes": 1342054814
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1159769854,
+      "help": 1992623860,
+      "questId": 4102500103,
+      "taskConditions": 8315,
+      "desc": 1282894796,
+      "rewardId": 60252,
+      "weight": 4,
+      "totalPhase": 4,
+      "taskType": 5,
+      "taskName": 1228818783,
+      "taskDes": 1960889826
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1331982090,
+      "help": 1127085877,
+      "questId": 4102500104,
+      "taskConditions": 8313,
+      "desc": 1413801522,
+      "rewardId": 60252,
+      "weight": 4,
+      "totalPhase": 4,
+      "taskType": 5,
+      "taskName": 1260683122,
+      "taskDes": 1874010939
+    }
+  ],
+  "5003": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1145564210,
+      "help": 1354548422,
+      "questId": 4102500301,
+      "taskConditions": 8352,
+      "desc": 1829789802,
+      "rewardId": 60250,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1788410910,
+      "taskDes": 1707746911
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1831476353,
+      "help": 1225456836,
+      "questId": 4102500302,
+      "taskConditions": 9109,
+      "desc": 1465868485,
+      "rewardId": 60250,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1648151440,
+      "taskDes": 1508037932
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1826987034,
+      "help": 1160743847,
+      "questId": 4102500303,
+      "taskConditions": 9110,
+      "desc": 1242583453,
+      "rewardId": 60250,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1370930770,
+      "taskDes": 1950162943
+    }
+  ],
+  "5005": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1402588420,
+      "help": 1276968069,
+      "questId": 4102500501,
+      "taskConditions": 8353,
+      "desc": 1358831626,
+      "weight": 1,
+      "rewardId": 60251,
+      "taskPreconditions1": 8352,
+      "totalPhase": 2,
+      "taskType": 5,
+      "taskName": 2035707969,
+      "taskDes": 2140950921
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 2070179622,
+      "help": 1986925326,
+      "questId": 4102500502,
+      "taskConditions": 8354,
+      "desc": 1317272479,
+      "rewardId": 60251,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 5,
+      "taskName": 1918295251,
+      "taskDes": 1663799372
+    }
+  ],
+  "5007": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1814
+      ],
+      "goToTxt": 1663081327,
+      "help": 1085298269,
+      "questId": 4102500701,
+      "taskConditions": 8356,
+      "desc": 1214446049,
+      "rewardId": 60242,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1573251630,
+      "taskDes": 1803535841
+    }
+  ],
+  "5020": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1196981703,
+      "help": 2146013665,
+      "questId": 4102502001,
+      "taskConditions": 8320,
+      "desc": 1703769294,
+      "rewardId": 60260,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1536867984,
+      "taskDes": 1581193714
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1628663051,
+      "help": 1346760052,
+      "questId": 4102502002,
+      "taskConditions": 8321,
+      "desc": 2072889615,
+      "rewardId": 60260,
+      "weight": 2,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1121553675,
+      "taskDes": 1428870700
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1891205642,
+      "help": 2034063996,
+      "questId": 4102502003,
+      "taskConditions": 8323,
+      "desc": 1669205999,
+      "rewardId": 60260,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1769642576,
+      "taskDes": 1675131462
+    }
+  ],
+  "5021": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1481075232,
+      "help": 1999256300,
+      "questId": 4102502101,
+      "taskConditions": 8359,
+      "desc": 1838869471,
+      "rewardId": 60265,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 5,
+      "taskName": 1121554973,
+      "taskDes": 2028296153
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1780627627,
+      "help": 1279240874,
+      "questId": 4102502102,
+      "taskConditions": 8324,
+      "desc": 1350067320,
+      "rewardId": 60265,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 5,
+      "taskName": 1613680094,
+      "taskDes": 1682232353
+    }
+  ],
+  "5022": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1469083103,
+      "help": 1292606070,
+      "questId": 4102502201,
+      "taskConditions": 8175,
+      "desc": 1898389935,
+      "rewardId": 60266,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1757715776,
+      "taskDes": 1885473876
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 2136863424,
+      "help": 1359284494,
+      "questId": 4102502202,
+      "taskConditions": 8176,
+      "desc": 1166293962,
+      "rewardId": 60266,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1934245902,
+      "taskDes": 1637833842
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1461194126,
+      "help": 1364093953,
+      "questId": 4102502203,
+      "taskConditions": 8177,
+      "desc": 1196730279,
+      "rewardId": 60266,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1543792563,
+      "taskDes": 1960288833
+    }
+  ],
+  "5023": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1148740797,
+      "help": 1383817731,
+      "questId": 4102502301,
+      "taskConditions": 9117,
+      "desc": 1820254260,
+      "rewardId": 60244,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1100517474,
+      "taskDes": 1578664009
+    }
+  ],
+  "5024": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1178
+      ],
+      "goToTxt": 1673147505,
+      "help": 1966690226,
+      "questId": 4102502401,
+      "taskConditions": 9118,
+      "desc": 1872274967,
+      "rewardId": 60245,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1383694384,
+      "taskDes": 1299263793
+    }
+  ],
+  "5025": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1399
+      ],
+      "goToTxt": 1188891312,
+      "help": 2073550740,
+      "questId": 4102502501,
+      "taskConditions": 9119,
+      "desc": 1918595932,
+      "preGuideId": 9100,
+      "rewardId": 60246,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1938190464,
+      "taskDes": 1303590845
+    }
+  ],
+  "5026": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1399
+      ],
+      "goToTxt": 1590339580,
+      "help": 1955219819,
+      "questId": 4102502601,
+      "taskConditions": 9216,
+      "desc": 1699968981,
+      "rewardId": 60261,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 2075965227,
+      "taskDes": 1601221287
+    }
+  ],
+  "5027": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1399
+      ],
+      "goToTxt": 2114619252,
+      "help": 2037036435,
+      "questId": 4102502701,
+      "taskConditions": 9240,
+      "desc": 1336350202,
+      "weight": 1,
+      "rewardId": 60262,
+      "taskPreconditions1": 8312,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1490477507,
+      "taskDes": 1847535302
+    }
+  ],
+  "5030": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1102823289,
+      "help": 1777801969,
+      "questId": 4102503001,
+      "taskConditions": 9237,
+      "desc": 1519555091,
+      "weight": 1,
+      "rewardId": 60254,
+      "taskPreconditions1": 1067,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1271041820,
+      "taskDes": 1804181271
+    }
+  ],
+  "2020": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1878
+      ],
+      "goToTxt": 1880409921,
+      "help": 1408837416,
+      "questId": 4102202001,
+      "taskConditions": 8259,
+      "desc": 1109101136,
+      "rewardId": 60156,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1340919950,
+      "taskDes": 1971359929
+    }
+  ],
+  "5032": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1199392004,
+      "help": 1823034482,
+      "questId": 4102503201,
+      "taskConditions": 9239,
+      "desc": 2004442780,
+      "weight": 3,
+      "rewardId": 60270,
+      "taskPreconditions1": 9238,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1191188683,
+      "taskDes": 1237347234
+    }
+  ],
+  "2021": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1878
+      ],
+      "goToTxt": 1528499880,
+      "help": 1902621790,
+      "questId": 4102202101,
+      "taskConditions": 8260,
+      "desc": 1528675009,
+      "weight": 1,
+      "rewardId": 60166,
+      "taskPreconditions1": 8259,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1845205887,
+      "taskDes": 1231403002
+    }
+  ],
+  "5041": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1482940273,
+      "help": 1783042208,
+      "questId": 4102504101,
+      "specialTask": 777,
+      "desc": 1921178721,
+      "weight": 2,
+      "totalPhase": 2,
+      "taskType": 5,
+      "rewardId": 60253,
+      "taskPreconditions1": 60006,
+      "taskName": 1532446844,
+      "taskDes": 1994132889,
+      "taskConditions": 60008,
+      "recommendTask": 1
+    },
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1901730947,
+      "help": 1522435494,
+      "questId": 4102504102,
+      "specialTask": 777,
+      "desc": 2080901203,
+      "weight": 2,
+      "totalPhase": 2,
+      "rewardId": 60253,
+      "taskType": 5,
+      "taskName": 1364742256,
+      "taskDes": 2009272358,
+      "taskConditions": 60010,
+      "recommendTask": 1
+    }
+  ],
+  "2022": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1878
+      ],
+      "goToTxt": 1093918874,
+      "help": 1316742167,
+      "questId": 4102202201,
+      "taskConditions": 8261,
+      "desc": 1515398761,
+      "weight": 1,
+      "rewardId": 60176,
+      "taskPreconditions1": 8260,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1204442797,
+      "taskDes": 2097111683
+    }
+  ],
+  "5043": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1493592136,
+      "help": 2112476276,
+      "questId": 4102504301,
+      "specialTask": 777,
+      "desc": 1175814619,
+      "weight": 2,
+      "totalPhase": 1,
+      "taskType": 5,
+      "rewardId": 60263,
+      "taskPreconditions1": 60012,
+      "taskName": 2076058726,
+      "taskDes": 1880272124,
+      "taskConditions": 60014,
+      "recommendTask": 1
+    }
+  ],
+  "2023": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1879
+      ],
+      "goToTxt": 1588327027,
+      "help": 1563894212,
+      "questId": 4102202301,
+      "taskConditions": 9217,
+      "desc": 2105003248,
+      "rewardId": 60167,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1943036226,
+      "taskDes": 2069169208
+    }
+  ],
+  "5045": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1927248015,
+      "help": 1741988446,
+      "questId": 4102504501,
+      "specialTask": 777,
+      "desc": 2011124641,
+      "weight": 2,
+      "totalPhase": 1,
+      "taskType": 5,
+      "rewardId": 60269,
+      "taskPreconditions1": 60017,
+      "taskName": 1134951658,
+      "taskDes": 2129587047,
+      "taskConditions": 60020,
+      "recommendTask": 1
+    }
+  ],
+  "5051": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1908375924,
+      "help": 1339927636,
+      "questId": 4102505101,
+      "taskConditions": 8360,
+      "desc": 1124723654,
+      "weight": 1,
+      "rewardId": 60248,
+      "taskPreconditions1": 1067,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1375244198,
+      "taskDes": 1445654373
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1617083341,
+      "help": 1433061879,
+      "questId": 4102505102,
+      "taskConditions": 8361,
+      "desc": 2010436247,
+      "rewardId": 60248,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1972122823,
+      "taskDes": 1512879901
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1189332527,
+      "help": 1754658413,
+      "questId": 4102505103,
+      "taskConditions": 8362,
+      "desc": 1437860642,
+      "rewardId": 60248,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 5,
+      "taskName": 1301671610,
+      "taskDes": 1605862605
+    }
+  ],
+  "5052": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1828497219,
+      "help": 1347418434,
+      "questId": 4102505201,
+      "taskConditions": 8363,
+      "desc": 1081600474,
+      "weight": 1,
+      "rewardId": 60258,
+      "taskPreconditions1": 8362,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1849281335,
+      "taskDes": 1556940649
+    }
+  ],
+  "5053": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1077775538,
+      "help": 1454925183,
+      "questId": 4102505301,
+      "taskConditions": 8364,
+      "desc": 1997891215,
+      "weight": 1,
+      "rewardId": 60268,
+      "taskPreconditions1": 8363,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1853946055,
+      "taskDes": 1210465273
+    }
+  ],
+  "5060": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1982480002,
+      "help": 1822671762,
+      "questId": 4102506001,
+      "taskConditions": 9247,
+      "desc": 2089894696,
+      "weight": 1,
+      "rewardId": 60259,
+      "taskPreconditions1": 1067,
+      "totalPhase": 2,
+      "taskType": 5,
+      "taskName": 1657106833,
+      "taskDes": 1958344134
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1384604186,
+      "help": 1961452791,
+      "questId": 4102506002,
+      "taskConditions": 9248,
+      "desc": 1228597748,
+      "rewardId": 60259,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 5,
+      "taskName": 1154756678,
+      "taskDes": 1904899218
+    }
+  ],
+  "3004": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1683906670,
+      "help": 1161443067,
+      "questId": 4102300401,
+      "taskConditions": 8282,
+      "desc": 1181008521,
+      "weight": 5,
+      "rewardId": 60210,
+      "taskPreconditions1": 8281,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1868181754,
+      "taskDes": 1914017897
+    }
+  ],
+  "1017": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        801
+      ],
+      "goToTxt": 1948023544,
+      "help": 1910792200,
+      "questId": 4102101701,
+      "taskConditions": 8187,
+      "desc": 1795551018,
+      "needCompleteTask": "4102101301",
+      "preGoTo": [
+        1,
+        754
+      ],
+      "preGuideId": 6500010,
+      "rewardId": 60612,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1956140523,
+      "taskDes": 1513517814
+    }
+  ],
+  "1021": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1871
+      ],
+      "goToTxt": 1326722190,
+      "help": 1167172493,
+      "questId": 4102102101,
+      "taskConditions": 9102,
+      "desc": 1283050145,
+      "weight": 1,
+      "rewardId": 60615,
+      "totalPhase": 1,
+      "taskType": 1,
+      "displayType": 1,
+      "taskName": 2016174440,
+      "taskDes": 1802750587
+    }
+  ],
+  "1022": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1084978089,
+      "help": 1373861444,
+      "questId": 4102102201,
+      "taskConditions": 8125,
+      "desc": 1914450972,
+      "rewardId": 60616,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1292620952,
+      "taskDes": 1962101311
+    }
+  ],
+  "1023": [
+    {
+      "badgeNum": 3,
+      "goTo": [
+        1,
+        8168
+      ],
+      "goToTxt": 2010560586,
+      "help": 1185198263,
+      "questId": 4102102301,
+      "specialTask": 888,
+      "desc": 1890635721,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "recommendTask": 3,
+      "taskName": 1177764535,
+      "taskDes": 1970920497,
+      "taskConditions": 9154,
+      "rewardId": 60617,
+      "guideId": 1000200
+    }
+  ],
+  "1024": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1821
+      ],
+      "goToTxt": 2072697497,
+      "help": 1895169192,
+      "questId": 4102102401,
+      "taskConditions": 8163,
+      "desc": 1569502118,
+      "preGuideId": 9300,
+      "rewardId": 60618,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1682242139,
+      "taskDes": 1128993522
+    }
+  ],
+  "4002": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1343364928,
+      "help": 1655740690,
+      "questId": 4102400201,
+      "taskConditions": 8309,
+      "desc": 1824758043,
+      "rewardId": 60219,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 4,
+      "taskName": 1394160527,
+      "taskDes": 1293484906
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 2055337219,
+      "help": 1654400735,
+      "questId": 4102400202,
+      "taskConditions": 8310,
+      "desc": 1213018316,
+      "rewardId": 60219,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 4,
+      "taskName": 1667885127,
+      "taskDes": 1603029219
+    }
+  ],
+  "4003": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1864514629,
+      "help": 2129964084,
+      "questId": 4102400301,
+      "taskConditions": 9111,
+      "desc": 1523793133,
+      "weight": 1,
+      "rewardId": 60222,
+      "taskPreconditions1": 8310,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1266208292,
+      "taskDes": 1951586115
+    }
+  ],
+  "4004": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1435835750,
+      "help": 1608606251,
+      "questId": 4102400401,
+      "taskConditions": 9112,
+      "desc": 1715441911,
+      "weight": 1,
+      "rewardId": 60224,
+      "taskPreconditions1": 9111,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1130476639,
+      "taskDes": 2104900892
+    }
+  ],
+  "2008": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1801691381,
+      "help": 1313372513,
+      "questId": 4102200801,
+      "taskConditions": 9197,
+      "desc": 1822192145,
+      "weight": 7,
+      "rewardId": 60181,
+      "taskPreconditions1": 9196,
+      "totalPhase": 4,
+      "taskType": 2,
+      "taskName": 1275418963,
+      "taskDes": 2008070977
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 2080852760,
+      "help": 1858199206,
+      "questId": 4102200802,
+      "taskConditions": 9198,
+      "desc": 2072649600,
+      "rewardId": 60181,
+      "weight": 3,
+      "totalPhase": 4,
+      "taskType": 2,
+      "taskName": 1155144043,
+      "taskDes": 1131568177
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1131133044,
+      "help": 1647478240,
+      "questId": 4102200803,
+      "taskConditions": 9199,
+      "desc": 1386996094,
+      "rewardId": 60181,
+      "weight": 7,
+      "totalPhase": 4,
+      "taskType": 2,
+      "taskName": 1928307349,
+      "taskDes": 1450085671
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 2110301236,
+      "help": 1249631568,
+      "questId": 4102200804,
+      "taskConditions": 9201,
+      "desc": 2066184435,
+      "rewardId": 60181,
+      "weight": 7,
+      "totalPhase": 4,
+      "taskType": 2,
+      "taskName": 1356403429,
+      "taskDes": 1535152394
+    }
+  ],
+  "4005": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1231788510,
+      "help": 1806396568,
+      "questId": 4102400501,
+      "taskConditions": 9113,
+      "desc": 1417444378,
+      "weight": 1,
+      "rewardId": 60227,
+      "taskPreconditions1": 9112,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1363624314,
+      "taskDes": 1421441481
+    }
+  ],
+  "2001": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1535796971,
+      "help": 1248693357,
+      "questId": 4102200101,
+      "specialTask": 777,
+      "desc": 1339753231,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60147,
+      "taskType": 2,
+      "taskName": 1651222519,
+      "taskDes": 1704431789,
+      "taskConditions": 9186,
+      "recommendTask": 1
+    }
+  ],
+  "2002": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1249945801,
+      "help": 1548769002,
+      "questId": 4102200201,
+      "specialTask": 777,
+      "desc": 1429820215,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 2,
+      "rewardId": 60152,
+      "taskPreconditions1": 9186,
+      "taskName": 2078575473,
+      "taskDes": 1760810469,
+      "taskConditions": 9187,
+      "recommendTask": 1
+    }
+  ],
+  "2003": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1873900096,
+      "help": 1311730005,
+      "questId": 4102200301,
+      "specialTask": 777,
+      "desc": 1546565792,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 2,
+      "rewardId": 60158,
+      "taskPreconditions1": 9187,
+      "taskName": 1530356148,
+      "taskDes": 1310705684,
+      "taskConditions": 9188,
+      "recommendTask": 1
+    }
+  ],
+  "2004": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1254180412,
+      "help": 1196995470,
+      "questId": 4102200401,
+      "specialTask": 777,
+      "desc": 1924821892,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 2,
+      "rewardId": 60164,
+      "taskPreconditions1": 9188,
+      "taskName": 1214306476,
+      "taskDes": 1284770330,
+      "taskConditions": 9189,
+      "recommendTask": 1
+    }
+  ],
+  "2005": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1697878409,
+      "help": 1712920342,
+      "questId": 4102200501,
+      "specialTask": 777,
+      "desc": 1784908312,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60169,
+      "taskType": 2,
+      "taskName": 1670852140,
+      "taskDes": 1888348892,
+      "taskConditions": 9190,
+      "recommendTask": 1
+    }
+  ],
+  "5044": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1926059378,
+      "help": 1950881630,
+      "questId": 4102504401,
+      "specialTask": 777,
+      "desc": 1599316269,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "rewardId": 60267,
+      "taskPreconditions1": 60014,
+      "taskName": 1694980584,
+      "taskDes": 1292824793,
+      "taskConditions": 60017,
+      "recommendTask": 1
+    }
+  ],
+  "2006": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1998
+      ],
+      "goToTxt": 2126696825,
+      "help": 1436839029,
+      "questId": 4102200601,
+      "specialTask": 777,
+      "desc": 2055056803,
+      "weight": -1,
+      "totalPhase": 1,
+      "rewardId": 60173,
+      "taskType": 2,
+      "taskName": 1252200770,
+      "taskDes": 1322124346,
+      "taskConditions": 9191,
+      "recommendTask": 1
+    }
+  ],
+  "5042": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1717847744,
+      "help": 1511681811,
+      "questId": 4102504201,
+      "specialTask": 777,
+      "desc": 1616216139,
+      "weight": 2,
+      "totalPhase": 1,
+      "taskType": 5,
+      "rewardId": 60257,
+      "taskPreconditions1": 60010,
+      "taskName": 1735616685,
+      "taskDes": 1574143604,
+      "taskConditions": 60012,
+      "recommendTask": 1
+    }
+  ],
+  "5040": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 1914568313,
+      "help": 1679268937,
+      "questId": 4102504001,
+      "specialTask": 777,
+      "desc": 1144581785,
+      "weight": 2,
+      "totalPhase": 2,
+      "taskType": 5,
+      "rewardId": 60247,
+      "taskPreconditions1": 1067,
+      "taskName": 1545039459,
+      "taskDes": 2131747699,
+      "taskConditions": 60004,
+      "recommendTask": 1
+    },
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 2015275119,
+      "help": 2000886926,
+      "questId": 4102504002,
+      "specialTask": 777,
+      "desc": 1620023613,
+      "weight": 1,
+      "totalPhase": 2,
+      "rewardId": 60247,
+      "taskType": 5,
+      "taskName": 1175795479,
+      "taskDes": 1683598784,
+      "taskConditions": 60006,
+      "recommendTask": 1
+    }
+  ],
+  "5031": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1812
+      ],
+      "goToTxt": 2033022362,
+      "help": 2126366659,
+      "questId": 4102503101,
+      "taskConditions": 9238,
+      "desc": 1509231862,
+      "weight": 2,
+      "rewardId": 60264,
+      "taskPreconditions1": 9237,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1892058217,
+      "taskDes": 2129832427
+    }
+  ],
+  "2007": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1709217058,
+      "help": 1640018038,
+      "questId": 4102200701,
+      "taskConditions": 9193,
+      "desc": 1629732466,
+      "weight": 3,
+      "rewardId": 60273,
+      "taskPreconditions1": 9192,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1490048936,
+      "taskDes": 1589691703
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 2097927539,
+      "help": 1130930410,
+      "questId": 4102200702,
+      "taskConditions": 9194,
+      "desc": 1857946984,
+      "rewardId": 60273,
+      "weight": 3,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1712727010,
+      "taskDes": 1483044183
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1925
+      ],
+      "goToTxt": 1373563664,
+      "help": 1820769203,
+      "questId": 4102200703,
+      "taskConditions": 9195,
+      "desc": 1718847760,
+      "rewardId": 60273,
+      "weight": 7,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1323935012,
+      "taskDes": 1654661411
+    }
+  ],
+  "5000": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1813
+      ],
+      "goToTxt": 1768285585,
+      "help": 1193117763,
+      "questId": 4102500001,
+      "taskConditions": 8312,
+      "desc": 1259518293,
+      "rewardId": 60243,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1247291739,
+      "taskDes": 1471306501
+    }
+  ],
+  "2012": [
+    {
+      "badgeNum": 1,
+      "help": 1954120838,
+      "taskName": 1110314902,
+      "taskConditions": 9279,
+      "desc": 1704870615,
+      "rewardId": 60162,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskDes": 1495730158,
+      "questId": 4102201201
+    },
+    {
+      "badgeNum": 1,
+      "help": 1525493952,
+      "taskName": 1829677542,
+      "taskConditions": 9280,
+      "desc": 2002684832,
+      "rewardId": 60162,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskDes": 1114326278,
+      "questId": 4102201202
+    },
+    {
+      "badgeNum": 1,
+      "help": 1755383317,
+      "taskName": 1233971746,
+      "taskConditions": 9281,
+      "desc": 1766535302,
+      "rewardId": 60162,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskDes": 1894156618,
+      "questId": 4102201203
+    }
+  ],
+  "5011": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1876
+      ],
+      "goToTxt": 1772059954,
+      "help": 1965237682,
+      "questId": 4102501101,
+      "taskConditions": 1098,
+      "desc": 1873069557,
+      "weight": 1,
+      "rewardId": 60256,
+      "taskPreconditions1": 8312,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1753847981,
+      "taskDes": 1455509479
+    }
+  ],
+  "5012": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1814
+      ],
+      "goToTxt": 1637471177,
+      "help": 1802625255,
+      "questId": 4102501201,
+      "taskConditions": 9120,
+      "desc": 1181538328,
+      "rewardId": 60249,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1709204491,
+      "taskDes": 1679280692
+    }
+  ],
+  "4031": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        822
+      ],
+      "goToTxt": 1521926449,
+      "help": 2059470075,
+      "questId": 4102403101,
+      "taskConditions": 9221,
+      "desc": 1437639875,
+      "weight": 1,
+      "rewardId": 60229,
+      "taskPreconditions1": 9220,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1080365012,
+      "taskDes": 1544591323
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        822
+      ],
+      "goToTxt": 1423996850,
+      "help": 2136256478,
+      "questId": 4102403102,
+      "taskConditions": 9222,
+      "desc": 2028384894,
+      "rewardId": 60229,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1756405310,
+      "taskDes": 1185286232
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        822
+      ],
+      "goToTxt": 1830894112,
+      "help": 1743495003,
+      "questId": 4102403103,
+      "taskConditions": 9223,
+      "desc": 2144964413,
+      "rewardId": 60229,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1833380307,
+      "taskDes": 1922963095
+    }
+  ],
+  "4025": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1176
+      ],
+      "goToTxt": 1284337007,
+      "help": 1387704742,
+      "questId": 4102402501,
+      "taskConditions": 8202,
+      "desc": 1398369693,
+      "weight": 1,
+      "rewardId": 60239,
+      "taskPreconditions1": 8198,
+      "totalPhase": 1,
+      "taskType": 4,
+      "taskName": 1549585334,
+      "taskDes": 1950661489
+    }
+  ],
+  "2010": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1137189737,
+      "help": 1679127920,
+      "questId": 4102201001,
+      "taskConditions": 8253,
+      "desc": 1771524657,
+      "weight": 2,
+      "rewardId": 60154,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1650028759,
+      "taskDes": 2070005143,
+      "guideId": 1001000
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1701828461,
+      "help": 1134112031,
+      "questId": 4102201002,
+      "taskConditions": 8137,
+      "desc": 1298104445,
+      "rewardId": 60154,
+      "weight": 2,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1145446180,
+      "taskDes": 1483417979
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 2100263425,
+      "help": 1870903597,
+      "questId": 4102201003,
+      "taskConditions": 1019,
+      "desc": 1950184424,
+      "rewardId": 60154,
+      "weight": 3,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1748635857,
+      "taskDes": 1718777827
+    }
+  ],
+  "3002": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1969299193,
+      "help": 1544875175,
+      "questId": 4102300201,
+      "taskConditions": 8280,
+      "desc": 2025793398,
+      "weight": 3,
+      "rewardId": 60196,
+      "taskPreconditions1": 6109,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1477464434,
+      "taskDes": 1793234925
+    }
+  ],
+  "2011": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1954845130,
+      "help": 1284931299,
+      "questId": 4102201101,
+      "taskConditions": 969,
+      "desc": 1567035484,
+      "rewardId": 60160,
+      "weight": 2,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1365224932,
+      "taskDes": 1244739575
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1489850399,
+      "help": 1588757633,
+      "questId": 4102201102,
+      "taskConditions": 1017,
+      "desc": 1200960985,
+      "rewardId": 60160,
+      "weight": 2,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1878557132,
+      "taskDes": 2050515646
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1657579109,
+      "help": 1708107319,
+      "questId": 4102201103,
+      "taskConditions": 1018,
+      "desc": 1078355876,
+      "rewardId": 60160,
+      "weight": 2,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 2036445377,
+      "taskDes": 1257718255
+    }
+  ],
+  "4010": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1513497573,
+      "help": 1456573808,
+      "questId": 4102401001,
+      "taskConditions": 1566,
+      "desc": 1823392190,
+      "weight": 1,
+      "rewardId": 60216,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1815704560,
+      "taskDes": 2008500503,
+      "guideId": 1002500
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1990898263,
+      "help": 2038509479,
+      "questId": 4102401002,
+      "taskConditions": 1567,
+      "desc": 1265928966,
+      "rewardId": 60216,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1871003346,
+      "taskDes": 2050151783
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1158905242,
+      "help": 1076278720,
+      "questId": 4102401003,
+      "taskConditions": 1568,
+      "desc": 1281891162,
+      "rewardId": 60216,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1211081928,
+      "taskDes": 1222768324
+    }
+  ],
+  "3003": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1351270656,
+      "help": 1329711204,
+      "questId": 4102300301,
+      "taskConditions": 8281,
+      "desc": 1661583594,
+      "weight": 5,
+      "rewardId": 60203,
+      "taskPreconditions1": 8280,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1852466693,
+      "taskDes": 1314144466
+    }
+  ],
+  "3107": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1941877992,
+      "help": 1166329724,
+      "questId": 4102310701,
+      "specialTask": 777,
+      "desc": 2098194787,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 3,
+      "rewardId": 60215,
+      "taskPreconditions1": 1517,
+      "taskName": 2120576462,
+      "taskDes": 1718359096,
+      "taskConditions": 9108,
+      "recommendTask": 1
+    }
+  ],
+  "3106": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1304100735,
+      "help": 1903220380,
+      "questId": 4102310601,
+      "specialTask": 777,
+      "desc": 1528395841,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 3,
+      "rewardId": 60214,
+      "taskPreconditions1": 922,
+      "taskName": 2093593956,
+      "taskDes": 2011276079,
+      "taskConditions": 1517,
+      "recommendTask": 1
+    }
+  ],
+  "3104": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1345761596,
+      "help": 1391498384,
+      "questId": 4102310401,
+      "specialTask": 777,
+      "desc": 1097884133,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 3,
+      "rewardId": 60201,
+      "taskPreconditions1": 920,
+      "taskName": 1957997056,
+      "taskDes": 1081730972,
+      "taskConditions": 921,
+      "recommendTask": 1
+    }
+  ],
+  "3103": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1103687661,
+      "help": 2030330013,
+      "questId": 4102310301,
+      "specialTask": 777,
+      "desc": 1832551931,
+      "weight": 5,
+      "totalPhase": 1,
+      "taskType": 3,
+      "rewardId": 60194,
+      "taskPreconditions1": 919,
+      "taskName": 1134702903,
+      "taskDes": 1619383889,
+      "taskConditions": 920,
+      "recommendTask": 1
+    }
+  ],
+  "5013": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1814
+      ],
+      "goToTxt": 1452880810,
+      "help": 1954731085,
+      "questId": 4102501301,
+      "taskConditions": 9121,
+      "desc": 2094664981,
+      "rewardId": 60255,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 5,
+      "taskName": 1873850169,
+      "taskDes": 1213445534
+    }
+  ],
+  "3032": [
+    {
+      "badgeNum": 1,
+      "help": 1122293188,
+      "taskName": 1294897540,
+      "taskConditions": 9236,
+      "desc": 1111220227,
+      "weight": 2,
+      "rewardId": 60198,
+      "taskPreconditions1": 9235,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskDes": 2017708231,
+      "questId": 4102303201
+    }
+  ],
+  "1007": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        684
+      ],
+      "goToTxt": 1587458814,
+      "help": 1377692269,
+      "questId": 4102100701,
+      "taskConditions": 9146,
+      "desc": 2044972401,
+      "needCompleteTask": "4102100301",
+      "weight": 1,
+      "guideId": 1000200,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1642637349,
+      "taskDes": 1521788172,
+      "rewardId": 60607
+    }
+  ],
+  "3030": [
+    {
+      "badgeNum": 1,
+      "help": 1593193470,
+      "taskName": 1776921592,
+      "taskConditions": 9233,
+      "desc": 2083852387,
+      "rewardId": 60186,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 3,
+      "taskDes": 1163599180,
+      "questId": 4102303001
+    },
+    {
+      "badgeNum": 1,
+      "help": 2003272152,
+      "taskName": 1989115763,
+      "taskConditions": 9234,
+      "desc": 2012212166,
+      "rewardId": 60186,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 3,
+      "taskDes": 1855782233,
+      "questId": 4102303002
+    }
+  ],
+  "1006": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        677
+      ],
+      "goToTxt": 1222499199,
+      "help": 1851267802,
+      "questId": 4102100601,
+      "taskConditions": 9259,
+      "desc": 1277883555,
+      "needCompleteTask": "4102100301",
+      "rewardId": 60606,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1102535755,
+      "taskDes": 1878783604
+    }
+  ],
+  "1057": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8192
+      ],
+      "goToTxt": 1077197992,
+      "help": 1893160063,
+      "questId": 4102105701,
+      "taskConditions": 9167,
+      "desc": 1638098361,
+      "needCompleteTask": "4102105301",
+      "rewardId": 60642,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1165357867,
+      "taskDes": 1492828424
+    }
+  ],
+  "1056": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        2037
+      ],
+      "goToTxt": 2059114576,
+      "help": 1770889965,
+      "questId": 4102105601,
+      "taskConditions": 9289,
+      "desc": 1994635619,
+      "needCompleteTask": "4102105301",
+      "rewardId": 60641,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 2091551115,
+      "taskDes": 1513626412
+    }
+  ],
+  "1004": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 2068811957,
+      "help": 1472133092,
+      "questId": 4102100401,
+      "specialTask": 996,
+      "desc": 1919175662,
+      "weight": 1,
+      "totalPhase": 1,
+      "preGuideId": 1002600,
+      "guideId": 1000100,
+      "taskType": 1,
+      "taskName": 1710790465,
+      "taskDes": 1294854001,
+      "taskConditions": 9290,
+      "rewardId": 60604
+    }
+  ],
+  "1003": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        837
+      ],
+      "goToTxt": 1742051822,
+      "help": 1672012934,
+      "questId": 4102100301,
+      "specialTask": 997,
+      "desc": 1686391155,
+      "weight": 1,
+      "rewardId": 60602,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 2133727215,
+      "taskDes": 1090568396,
+      "taskConditions": 9257
+    }
+  ],
+  "1053": [
+    {
+      "badgeNum": 3,
+      "goTo": [
+        1,
+        836
+      ],
+      "goToTxt": 2009097592,
+      "help": 1799036076,
+      "questId": 4102105301,
+      "specialTask": 888,
+      "desc": 1334962109,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60638,
+      "taskType": 1,
+      "taskName": 1326254380,
+      "taskDes": 2147353745,
+      "taskConditions": 9178,
+      "recommendTask": 3
+    }
+  ],
+  "1052": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        712
+      ],
+      "goToTxt": 2070343821,
+      "help": 1989285600,
+      "questId": 4102105201,
+      "taskConditions": 8190,
+      "desc": 1951949546,
+      "preGuideId": 9600,
+      "rewardId": 60637,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1762769129,
+      "taskDes": 1233028909
+    }
+  ],
+  "1001": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1869
+      ],
+      "goToTxt": 1206172538,
+      "help": 1401977868,
+      "questId": 4102100101,
+      "specialTask": 999,
+      "desc": 1202606912,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60601,
+      "taskType": 1,
+      "taskName": 1601900092,
+      "displayType": 1,
+      "taskDes": 2071287569,
+      "taskConditions": 8226
+    }
+  ],
+  "3031": [
+    {
+      "badgeNum": 1,
+      "help": 1212828489,
+      "taskName": 2143057704,
+      "taskConditions": 9235,
+      "desc": 1742219027,
+      "weight": 2,
+      "rewardId": 60191,
+      "taskPreconditions1": 9234,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskDes": 1658777885,
+      "questId": 4102303101
+    }
+  ],
+  "1037": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8190
+      ],
+      "goToTxt": 1901404326,
+      "help": 2111664776,
+      "questId": 4102103701,
+      "taskConditions": 9139,
+      "desc": 1967555693,
+      "needCompleteTask": "4102103301",
+      "rewardId": 60628,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1671875616,
+      "taskDes": 1255845924
+    }
+  ],
+  "1036": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        830
+      ],
+      "goToTxt": 1462718632,
+      "help": 1153645165,
+      "questId": 4102103601,
+      "taskConditions": 9260,
+      "desc": 1168903227,
+      "needCompleteTask": "4102103301",
+      "rewardId": 60627,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 2147362812,
+      "taskDes": 1656811691
+    }
+  ],
+  "1035": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        3,
+        1181
+      ],
+      "goToTxt": 2050834549,
+      "help": 1487351561,
+      "questId": 4102103501,
+      "taskConditions": 8380,
+      "desc": 2054211191,
+      "preGoTo": [
+        1,
+        754
+      ],
+      "weight": 1,
+      "guideId": 1001800,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 2074550669,
+      "taskDes": 1425120819,
+      "rewardId": 60626
+    }
+  ],
+  "1034": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1821
+      ],
+      "goToTxt": 2071847943,
+      "help": 1393655845,
+      "questId": 4102103401,
+      "taskConditions": 9215,
+      "desc": 1163493809,
+      "preGuideId": 9400,
+      "rewardId": 60625,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1395458427,
+      "taskDes": 1393930882
+    }
+  ],
+  "1033": [
+    {
+      "badgeNum": 3,
+      "goTo": [
+        1,
+        834
+      ],
+      "goToTxt": 1308599206,
+      "help": 1802273698,
+      "questId": 4102103301,
+      "specialTask": 888,
+      "desc": 1712226207,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60624,
+      "taskType": 1,
+      "taskName": 1933557685,
+      "taskDes": 1445593863,
+      "taskConditions": 9162,
+      "recommendTask": 3
+    }
+  ],
+  "1031": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1872
+      ],
+      "goToTxt": 1624497576,
+      "help": 2058670415,
+      "questId": 4102103101,
+      "taskConditions": 9103,
+      "desc": 1166156900,
+      "weight": 1,
+      "rewardId": 60622,
+      "totalPhase": 1,
+      "taskType": 1,
+      "displayType": 1,
+      "taskName": 1967609266,
+      "taskDes": 1132825226
+    }
+  ],
+  "1002": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        684
+      ],
+      "goToTxt": 1451915138,
+      "help": 1078992211,
+      "questId": 4102100201,
+      "specialTask": 998,
+      "desc": 1847930840,
+      "weight": 1,
+      "rewardId": 60603,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1737339499,
+      "taskDes": 1606718407,
+      "taskConditions": 9254
+    }
+  ],
+  "4011": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1123597212,
+      "help": 1916747308,
+      "questId": 4102401101,
+      "taskConditions": 9114,
+      "desc": 2121533938,
+      "rewardId": 60221,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 2103152211,
+      "taskDes": 1171960576
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1127252324,
+      "help": 1256743390,
+      "questId": 4102401102,
+      "taskConditions": 9115,
+      "desc": 1750559866,
+      "rewardId": 60221,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1890021898,
+      "taskDes": 1793679923
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1762486118,
+      "help": 1268248361,
+      "questId": 4102401103,
+      "taskConditions": 9116,
+      "desc": 1855541123,
+      "rewardId": 60221,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 4,
+      "taskName": 1752758976,
+      "taskDes": 1981381596
+    }
+  ],
+  "3102": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 2062586578,
+      "help": 1894606666,
+      "questId": 4102310201,
+      "specialTask": 777,
+      "desc": 1650025650,
+      "weight": 4,
+      "totalPhase": 1,
+      "taskType": 3,
+      "rewardId": 60187,
+      "taskPreconditions1": 918,
+      "taskName": 1457832059,
+      "taskDes": 1362525354,
+      "taskConditions": 919,
+      "recommendTask": 1
+    }
+  ],
+  "1032": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        822
+      ],
+      "goToTxt": 1886308030,
+      "help": 1138981326,
+      "questId": 4102103201,
+      "taskConditions": 9218,
+      "desc": 1828001228,
+      "rewardId": 60623,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1473024780,
+      "taskDes": 1208419881
+    }
+  ],
+  "1025": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8193
+      ],
+      "goToTxt": 1888800390,
+      "help": 1825695499,
+      "questId": 4102102501,
+      "taskConditions": 6010,
+      "desc": 1203339371,
+      "weight": 1,
+      "rewardId": 60619,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1977993810,
+      "taskDes": 1178238884,
+      "guideId": 9220
+    }
+  ],
+  "1062": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1168932454,
+      "help": 1123898740,
+      "questId": 4102106201,
+      "taskConditions": 8366,
+      "desc": 2023363299,
+      "rewardId": 60643,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1339500521,
+      "taskDes": 1325687894
+    }
+  ],
+  "1011": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1870
+      ],
+      "goToTxt": 1745659273,
+      "help": 1254427111,
+      "questId": 4102101101,
+      "taskConditions": 8103,
+      "desc": 1564634665,
+      "weight": 1,
+      "rewardId": 60608,
+      "totalPhase": 1,
+      "taskType": 1,
+      "displayType": 1,
+      "taskName": 1842061126,
+      "taskDes": 1095896694
+    }
+  ],
+  "3105": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1664871307,
+      "help": 1356229338,
+      "questId": 4102310501,
+      "specialTask": 777,
+      "desc": 2145533762,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 3,
+      "rewardId": 60208,
+      "taskPreconditions1": 921,
+      "taskName": 1824795654,
+      "taskDes": 1969594167,
+      "taskConditions": 922,
+      "recommendTask": 1
+    }
+  ],
+  "2101": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1421771672,
+      "help": 1526499539,
+      "questId": 4102210101,
+      "taskConditions": 9300,
+      "desc": 1689527961,
+      "rewardId": 60153,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1811236394,
+      "taskDes": 1248923741
+    }
+  ],
+  "2102": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 2105665242,
+      "help": 1649199189,
+      "questId": 4102210201,
+      "taskConditions": 9301,
+      "desc": 2134307278,
+      "needCompleteTask": "4102210101",
+      "rewardId": 60159,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1452196838,
+      "taskDes": 2000108128
+    }
+  ],
+  "3024": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1152881627,
+      "help": 2124738743,
+      "questId": 4102302401,
+      "taskConditions": 8286,
+      "desc": 1234733666,
+      "weight": 2,
+      "rewardId": 60202,
+      "taskPreconditions1": 8285,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1940717274,
+      "taskDes": 1953595467
+    }
+  ],
+  "3025": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1708389885,
+      "help": 2080543031,
+      "questId": 4102302501,
+      "taskConditions": 8287,
+      "desc": 1503415465,
+      "weight": 2,
+      "rewardId": 60209,
+      "taskPreconditions1": 8286,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 2013952019,
+      "taskDes": 1137716038
+    }
+  ],
+  "3001": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1182
+      ],
+      "goToTxt": 1952802534,
+      "help": 1143796021,
+      "questId": 4102300101,
+      "taskConditions": 6109,
+      "desc": 1550780992,
+      "weight": 1,
+      "rewardId": 60189,
+      "taskPreconditions1": 8125,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1681994916,
+      "taskDes": 1745949327
+    }
+  ],
+  "1054": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        1877
+      ],
+      "goToTxt": 1584438505,
+      "help": 1270374249,
+      "questId": 4102105401,
+      "taskConditions": 9253,
+      "desc": 1958375541,
+      "rewardId": 60639,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1753086173,
+      "taskDes": 1123719233
+    }
+  ],
+  "1063": [
+    {
+      "badgeNum": 3,
+      "goTo": [
+        1,
+        8169
+      ],
+      "goToTxt": 1801165912,
+      "help": 1146511761,
+      "questId": 4102106301,
+      "specialTask": 888,
+      "desc": 1874829538,
+      "weight": 1,
+      "totalPhase": 1,
+      "rewardId": 60644,
+      "taskType": 1,
+      "taskName": 1142806354,
+      "taskDes": 1762899973,
+      "taskConditions": 9158,
+      "recommendTask": 3
+    }
+  ],
+  "1026": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8082
+      ],
+      "goToTxt": 1316603139,
+      "help": 1464722538,
+      "questId": 4102102601,
+      "taskConditions": 9271,
+      "desc": 1791591972,
+      "needCompleteTask": "4102102301",
+      "rewardId": 60620,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1649099488,
+      "taskDes": 1555253330
+    }
+  ],
+  "1027": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8189
+      ],
+      "goToTxt": 1725633399,
+      "help": 1311662499,
+      "questId": 4102102701,
+      "taskConditions": 9135,
+      "desc": 2058355023,
+      "needCompleteTask": "4102102301",
+      "rewardId": 60621,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1935294648,
+      "taskDes": 1287380888
+    }
+  ],
+  "1064": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        2037
+      ],
+      "goToTxt": 1941747784,
+      "help": 1669764136,
+      "questId": 4102106401,
+      "taskConditions": 9272,
+      "desc": 1869304251,
+      "rewardId": 60645,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 2062656425,
+      "taskDes": 1387681420
+    }
+  ],
+  "1065": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        2,
+        2037
+      ],
+      "goToTxt": 1143841998,
+      "help": 1803645993,
+      "questId": 4102106501,
+      "taskConditions": 9289,
+      "desc": 1469357655,
+      "rewardId": 60647,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1886012598,
+      "taskDes": 1139201179
+    }
+  ],
+  "1066": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8088
+      ],
+      "goToTxt": 1387777679,
+      "help": 2059535245,
+      "questId": 4102106601,
+      "taskConditions": 9274,
+      "desc": 1713938029,
+      "needCompleteTask": "4102106301",
+      "rewardId": 60646,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1202153830,
+      "taskDes": 2050804648
+    }
+  ],
+  "1067": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        7002
+      ],
+      "goToTxt": 1174082852,
+      "help": 2129504528,
+      "questId": 4102106701,
+      "taskConditions": 9275,
+      "desc": 1173037336,
+      "needCompleteTask": "4102106301",
+      "rewardId": 60649,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1807045632,
+      "taskDes": 1194976951
+    }
+  ],
+  "2030": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1877
+      ],
+      "goToTxt": 1968137545,
+      "help": 1260812273,
+      "questId": 4102203001,
+      "taskConditions": 8334,
+      "desc": 1132309030,
+      "rewardId": 60172,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1549139215,
+      "taskDes": 1792097333
+    }
+  ],
+  "2032": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1877
+      ],
+      "goToTxt": 1759061398,
+      "help": 1586969315,
+      "questId": 4102203201,
+      "taskConditions": 8336,
+      "desc": 1734992497,
+      "rewardId": 60177,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 2,
+      "taskName": 1646001294,
+      "taskDes": 1353808392
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1877
+      ],
+      "goToTxt": 1202945970,
+      "help": 1899185888,
+      "questId": 4102203202,
+      "taskConditions": 8337,
+      "desc": 1294153433,
+      "rewardId": 60177,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 2,
+      "taskName": 1833240746,
+      "taskDes": 1602561032
+    }
+  ],
+  "2051": [
+    {
+      "badgeNum": 1,
+      "help": 2123420883,
+      "taskName": 1583192985,
+      "taskConditions": 8268,
+      "desc": 1893740515,
+      "rewardId": 60149,
+      "weight": 2,
+      "totalPhase": 2,
+      "taskType": 2,
+      "taskDes": 1103809097,
+      "questId": 4102205101
+    },
+    {
+      "badgeNum": 1,
+      "help": 1353883347,
+      "taskName": 1730128675,
+      "taskConditions": 6009,
+      "desc": 1614004188,
+      "rewardId": 60149,
+      "weight": 2,
+      "totalPhase": 2,
+      "taskType": 2,
+      "taskDes": 1980929281,
+      "questId": 4102205102
+    }
+  ],
+  "2061": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 2095194222,
+      "help": 2082945646,
+      "questId": 4102206101,
+      "taskConditions": 9282,
+      "desc": 1959116799,
+      "weight": 3,
+      "rewardId": 60150,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 2049915608,
+      "taskDes": 1094523098,
+      "guideId": 1000800
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1757187919,
+      "help": 1837632592,
+      "questId": 4102206102,
+      "taskConditions": 9283,
+      "desc": 1464079661,
+      "rewardId": 60150,
+      "weight": 3,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1332181436,
+      "taskDes": 1131233375
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1625337543,
+      "help": 1800858395,
+      "questId": 4102206103,
+      "taskConditions": 9284,
+      "desc": 1562864730,
+      "rewardId": 60150,
+      "weight": 3,
+      "totalPhase": 3,
+      "taskType": 2,
+      "taskName": 1594821925,
+      "taskDes": 2060526490
+    }
+  ],
+  "2062": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1290777250,
+      "help": 1662320895,
+      "questId": 4102206201,
+      "taskConditions": 8331,
+      "desc": 1847698197,
+      "rewardId": 60175,
+      "weight": 3,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1197971064,
+      "taskDes": 1467938989
+    }
+  ],
+  "2063": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        2037
+      ],
+      "goToTxt": 2049404493,
+      "help": 1860826423,
+      "questId": 4102206301,
+      "taskConditions": 9297,
+      "desc": 1533452721,
+      "rewardId": 60180,
+      "weight": 4,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1533530065,
+      "taskDes": 1219986644
+    }
+  ],
+  "2071": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        3,
+        1411
+      ],
+      "goToTxt": 2006632881,
+      "help": 1959544217,
+      "questId": 4102207101,
+      "taskConditions": 1563,
+      "desc": 2069383302,
+      "weight": 2,
+      "rewardId": 60151,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1418256122,
+      "taskDes": 1950999512,
+      "guideId": 1001500
+    }
+  ],
+  "2072": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        3,
+        1411
+      ],
+      "goToTxt": 2083419850,
+      "help": 1515187575,
+      "questId": 4102207201,
+      "taskConditions": 1564,
+      "desc": 1108804721,
+      "weight": 4,
+      "rewardId": 60155,
+      "taskPreconditions1": 1563,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1764635556,
+      "taskDes": 1332574917
+    }
+  ],
+  "2073": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        3,
+        1411
+      ],
+      "goToTxt": 1790844441,
+      "help": 1412090579,
+      "questId": 4102207301,
+      "taskConditions": 8276,
+      "desc": 1903230923,
+      "weight": 4,
+      "rewardId": 60161,
+      "taskPreconditions1": 1564,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1081238005,
+      "taskDes": 1537188848
+    }
+  ],
+  "2080": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1360988697,
+      "help": 1742148484,
+      "questId": 4102208001,
+      "taskConditions": 8009,
+      "desc": 2013404059,
+      "weight": 1,
+      "preGoTo": [
+        2,
+        1391
+      ],
+      "preGuideId": 1100500,
+      "guideId": 1100550,
+      "totalPhase": 2,
+      "taskType": 2,
+      "taskName": 1477045537,
+      "taskDes": 1715263119,
+      "rewardId": 60148
+    },
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1541046668,
+      "help": 1753054402,
+      "questId": 4102208002,
+      "taskConditions": 8278,
+      "desc": 1278879586,
+      "rewardId": 60148,
+      "weight": 1,
+      "totalPhase": 2,
+      "taskType": 2,
+      "taskName": 1815463178,
+      "taskDes": 1130399000
+    }
+  ],
+  "1055": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        655
+      ],
+      "goToTxt": 1524858308,
+      "help": 2044909180,
+      "questId": 4102105501,
+      "taskConditions": 9299,
+      "desc": 1908276682,
+      "rewardId": 60640,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1525075266,
+      "taskDes": 1902320798
+    }
+  ],
+  "1005": [
+    {
+      "badgeNum": 2,
+      "goTo": [
+        1,
+        8043
+      ],
+      "goToTxt": 1305561249,
+      "help": 2090596325,
+      "questId": 4102100501,
+      "specialTask": 995,
+      "desc": 1665411038,
+      "weight": 1,
+      "rewardId": 60605,
+      "totalPhase": 1,
+      "taskType": 1,
+      "taskName": 1478817408,
+      "taskDes": 1794368222,
+      "taskConditions": 8151
+    }
+  ],
+  "2103": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 2039307742,
+      "help": 1366925173,
+      "questId": 4102210301,
+      "taskConditions": 9302,
+      "desc": 1568489104,
+      "needCompleteTask": "4102210201",
+      "rewardId": 60165,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1853714194,
+      "taskDes": 1205671939
+    }
+  ],
+  "2104": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 2016445756,
+      "help": 1179342327,
+      "questId": 4102210401,
+      "taskConditions": 9303,
+      "desc": 1554852047,
+      "needCompleteTask": "4102210301",
+      "rewardId": 60170,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1211055759,
+      "taskDes": 1984629256
+    }
+  ],
+  "2105": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 1539064893,
+      "help": 1528258364,
+      "questId": 4102210501,
+      "taskConditions": 9304,
+      "desc": 1847692213,
+      "needCompleteTask": "4102210401",
+      "rewardId": 60174,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1950132010,
+      "taskDes": 1166427048
+    }
+  ],
+  "2106": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1174
+      ],
+      "goToTxt": 2058492816,
+      "help": 1999082485,
+      "questId": 4102210601,
+      "taskConditions": 9305,
+      "desc": 1643734141,
+      "needCompleteTask": "4102210501",
+      "rewardId": 60179,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1565973352,
+      "taskDes": 1875090928
+    }
+  ],
+  "2120": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1179
+      ],
+      "goToTxt": 2024583224,
+      "help": 2075860148,
+      "questId": 4102212001,
+      "taskConditions": 947,
+      "desc": 1748052052,
+      "weight": 1,
+      "rewardId": 60157,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1783294504,
+      "taskDes": 2139854697,
+      "guideId": 1000900
+    }
+  ],
+  "2121": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1179
+      ],
+      "goToTxt": 1649885581,
+      "help": 2012707172,
+      "questId": 4102212101,
+      "taskConditions": 949,
+      "desc": 1538032217,
+      "weight": 3,
+      "rewardId": 60163,
+      "taskPreconditions1": 947,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1107247397,
+      "taskDes": 1078934841
+    }
+  ],
+  "2122": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1179
+      ],
+      "goToTxt": 1296979211,
+      "help": 1973472011,
+      "questId": 4102212201,
+      "taskConditions": 950,
+      "desc": 1438072909,
+      "weight": 7,
+      "rewardId": 60168,
+      "taskPreconditions1": 949,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 2020850997,
+      "taskDes": 1620426204
+    }
+  ],
+  "2123": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1179
+      ],
+      "goToTxt": 1074764051,
+      "help": 1274642608,
+      "questId": 4102212301,
+      "taskConditions": 8251,
+      "desc": 2121064272,
+      "weight": 7,
+      "rewardId": 60171,
+      "taskPreconditions1": 950,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 1320552593,
+      "taskDes": 1485161179
+    }
+  ],
+  "2124": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        2,
+        1179
+      ],
+      "goToTxt": 1460130880,
+      "help": 1759210803,
+      "questId": 4102212401,
+      "taskConditions": 8252,
+      "desc": 2141949147,
+      "weight": 7,
+      "rewardId": 60178,
+      "taskPreconditions1": 8251,
+      "totalPhase": 1,
+      "taskType": 2,
+      "taskName": 2002534456,
+      "taskDes": 1270894765
+    }
+  ],
+  "3010": [
+    {
+      "badgeNum": 1,
+      "help": 1195668240,
+      "taskName": 1565381374,
+      "taskConditions": 8117,
+      "desc": 1416325727,
+      "rewardId": 60185,
+      "weight": 3,
+      "totalPhase": 3,
+      "taskType": 3,
+      "taskDes": 1465408096,
+      "questId": 4102301001
+    },
+    {
+      "badgeNum": 1,
+      "help": 1362073492,
+      "taskName": 1132520532,
+      "taskConditions": 1089,
+      "desc": 2026887278,
+      "rewardId": 60185,
+      "weight": 1,
+      "totalPhase": 3,
+      "taskType": 3,
+      "taskDes": 1641748018,
+      "questId": 4102301002
+    },
+    {
+      "badgeNum": 1,
+      "help": 1731691100,
+      "taskName": 1144871021,
+      "taskConditions": 1090,
+      "desc": 1336491579,
+      "rewardId": 60185,
+      "weight": 2,
+      "totalPhase": 3,
+      "taskType": 3,
+      "taskDes": 1709472601,
+      "questId": 4102301003
+    }
+  ],
+  "3011": [
+    {
+      "badgeNum": 1,
+      "help": 1375070361,
+      "taskName": 1552083541,
+      "taskConditions": 1091,
+      "desc": 1082982217,
+      "weight": 3,
+      "rewardId": 60190,
+      "taskPreconditions1": 1090,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskDes": 1873309076,
+      "questId": 4102301101
+    }
+  ],
+  "3012": [
+    {
+      "badgeNum": 1,
+      "help": 1343521571,
+      "taskName": 2014098881,
+      "taskConditions": 1092,
+      "desc": 1671906272,
+      "weight": 3,
+      "rewardId": 60197,
+      "taskPreconditions1": 1091,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskDes": 1656953301,
+      "questId": 4102301201
+    }
+  ],
+  "3020": [
+    {
+      "badgeNum": 1,
+      "goTo": [
+        1,
+        653
+      ],
+      "goToTxt": 1860564447,
+      "help": 1247282431,
+      "questId": 4102302001,
+      "taskConditions": 977,
+      "desc": 1256809344,
+      "rewardId": 60183,
+      "weight": 1,
+      "totalPhase": 1,
+      "taskType": 3,
+      "taskName": 1893906399,
+      "taskDes": 1545318575
+    }
+  ]
+}

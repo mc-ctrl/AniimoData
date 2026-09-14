@@ -1,0 +1,145 @@
+{
+  "91125295": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": [
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          0.75,
+          0.28,
+          1
+        ]
+      },
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          0.75,
+          0.07,
+          -1
+        ]
+      },
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          -1,
+          -0.24,
+          0
+        ]
+      }
+    ],
+    "position": [
+      -1305.55,
+      67.89,
+      796.07
+    ],
+    "usePointOverride": false,
+    "usePortOverride": true,
+    "routeId": 0,
+    "sandboxId": 91125077,
+    "id": 91125295,
+    "yaw": 0,
+    "templateId": 48355500,
+    "activeRangeOverride": 0,
+    "routeIds": [
+      91125078,
+      91125079,
+      91125080
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "91125296": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": [
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          0.75,
+          0.23,
+          1
+        ]
+      },
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          0.75,
+          0,
+          -1
+        ]
+      },
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          -1,
+          -0.24,
+          0
+        ]
+      }
+    ],
+    "name": "",
+    "usePointOverride": false,
+    "usePortOverride": true,
+    "routeId": 0,
+    "sandboxId": 91125077,
+    "id": 91125296,
+    "yaw": 0,
+    "templateId": 48355500,
+    "routeIds": [
+      91125078,
+      91125079,
+      91125080
+    ],
+    "activeRangeOverride": 0,
+    "position": [
+      -1305.55,
+      67.89,
+      796.07
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10120804",
+  "NodeID": 1,
+  "UID": "1ace6ec7-9e9d-446a-a049-debeab2f4761",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "12": {
+      "timelineId": 10120804001,
+      "name": "setCombatActionTimeline",
+      "UID": "25727bc7-b08a-4b24-bb78-de435d4b6b26",
+      "target": "CASTER",
+      "NodeID": 12
+    }
+  },
+  "onAbilityCastIds": [
+    12
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicField"
+  ],
+  "preloadEffs": [
+    "T_Eff_Starry_Z_10012_EX_Bullet",
+    "Eff_Parmon_10011_Attack_Hit",
+    "Eff_Range_Indicator_Ripzor_Dash_Thin",
+    "Eff_Parmon_Starmouse_Skill_Start"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "abilityParamId": 11100062,
+  "name": ""
+}

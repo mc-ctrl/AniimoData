@@ -1,0 +1,38 @@
+[
+  {
+    "costNum": 0,
+    "costType": 2
+  },
+  {
+    "costNum": 0,
+    "costType": 2
+  },
+  {
+    "costNum": 0,
+    "costType": 2
+  },
+  {
+    "costNum": 1000,
+    "costType": 2
+  },
+  {
+    "costNum": 5000,
+    "costType": 2
+  },
+  {
+    "costNum": 10000,
+    "costType": 2
+  },
+  {
+    "costNum": 100,
+    "costType": 1
+  },
+  {
+    "costNum": 200,
+    "costType": 1
+  },
+  {
+    "costNum": 300,
+    "costType": 1
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91464021",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 91464021,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "1948cd4e-a67d-44cb-bcad-57b865de78b1",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 5,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "CASTER",
+        "NodeID": 4,
+        "attributeName": "hp_max_cur"
+      }
+    },
+    "isGeneral": true,
+    "isTeamShare": false
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "da0c834e-b90e-4ddf-9100-99795b434e29",
+      "effectId": "Eff_Parmon_10463_Skill_Bubble_SmashGroundBuff_Start_01",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "isSwitchPetInherit": true,
+      "target": "CASTER",
+      "NodeID": 9,
+      "UID": "b73952b7-8fa1-4cab-a09b-3d4f2ac0f40c",
+      "effectId": "Eff_Parmon_10463_Skill_Bubble_SmashGroundBuff_Start_01",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "7": {
+      "calcId": 91464021,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "1948cd4e-a67d-44cb-bcad-57b865de78b1",
+      "name": "getParamByLuaConfig"
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10463_Skill_ShieldEnd",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    8,
+    2
+  ],
+  "onBuffStartIds": [
+    9
+  ]
+}

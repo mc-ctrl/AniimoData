@@ -1,0 +1,46 @@
+{
+  "80341885": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": {},
+    "areaShapeType": 2,
+    "entityType": 4,
+    "entityTypeList": [
+      4
+    ],
+    "id": 80341885,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ShortHole"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 30,
+    "sandboxId": 80341880,
+    "position": [
+      -111.65,
+      0.5,
+      164.14
+    ],
+    "pointType": 1,
+    "name": "区域_80341885",
+    "AreaLoadTypeNoNormal": 1
+  }
+}

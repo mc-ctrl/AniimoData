@@ -1,0 +1,127 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "01292205-61bb-442e-96be-7d882e714d75",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 52
+    },
+    "40": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e17a9f1e-24b5-4639-b0db-261eb533c6af",
+      "target": "OWNER",
+      "NodeID": 40,
+      "animId": "Skill_LongBreath_End"
+    },
+    "56": {
+      "UID": "224d039a-d28b-4b19-b62f-c942ffc13723",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 56
+    },
+    "42": {
+      "UID": "69d715e4-cd42-45da-8969-7430322d194c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          40,
+          67,
+          50
+        ]
+      },
+      "NodeID": 42
+    },
+    "57": {
+      "UID": "75365b25-6edd-47df-9c6f-a635e85a5fdc",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "NodeID": 57
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0bc6cc5c-bf78-49c5-a3f1-67e658775520",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_waterbreath_end",
+      "NodeID": 76
+    },
+    "67": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 67,
+      "UID": "dec0cb3c-881b-46b0-9360-cb9866a102ad",
+      "val": false,
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "name": "setIsInAim",
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "blendTime": 0.5,
+      "cameraPitchOffset": 0
+    },
+    "50": {
+      "UID": "420700f6-cdd2-4f87-917d-00b19bf6dbcc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 50
+    },
+    "79": {
+      "name": "stopSoundStr",
+      "UID": "af3756ca-9c73-4bd9-a0fd-a911746751dd",
+      "soundId": "parmon_10043_waterbreath_loop",
+      "target": "OWNER",
+      "NodeID": 79
+    },
+    "78": {
+      "UID": "2b693a51-53e8-44bb-add3-21484b65dfe6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          79,
+          76
+        ]
+      },
+      "NodeID": 78
+    },
+    "54": {
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 54,
+      "UID": "fe43e7df-7480-4593-895d-7804cd92e12a"
+    }
+  },
+  "BPName": "ability_10420310",
+  "NodeID": 44,
+  "UID": "57888898-c915-4059-85c5-b1194f95a9dd",
+  "eventIds": [
+    42,
+    54,
+    57,
+    78
+  ],
+  "layer": "Base",
+  "length": 1.783
+}

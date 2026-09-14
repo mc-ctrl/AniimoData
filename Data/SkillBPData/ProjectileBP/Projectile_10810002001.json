@@ -1,0 +1,88 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10810002",
+  "defaultHitSoundType": "s",
+  "effectId": "Eff_Parmon_10083_Attack01",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    14
+  ],
+  "onProjectileHitIds": [
+    22,
+    26
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "22": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1.11
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "4ac0fed8-00ea-4a2f-a74f-2a801616587a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 22
+    },
+    "28": {
+      "UID": "3b09e8c8-53f2-4a6d-a9b4-de3866c6a5f7",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 28
+    },
+    "14": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "298d93b5-5262-4418-a59c-391f110661f8",
+      "effectId": "Eff_Parmon_10083_Attack04_Hit",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "25": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.11
+      },
+      "name": "calcResult",
+      "UID": "8ac4adb7-146b-4286-b8ed-d054f8c0943f",
+      "target": "CASTER",
+      "NodeID": 25
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "f2bb3303-19d5-4bf3-9296-471acd2243ba",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 2,
+  "calcResultNodeId": 22,
+  "impulseId": 2000,
+  "acceleration": 0
+}

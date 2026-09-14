@@ -1,0 +1,122 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118716",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Rogue_Skill_Shield"
+    }
+  ],
+  "nodeMap": {
+    "5": {
+      "UID": "cd8d5b69-be02-4169-af7b-cf5c9c9e79a5",
+      "name": "addShieldData",
+      "shieldData": {
+        "absorbRate": 1,
+        "isGeneral": false,
+        "isTeamShare": false,
+        "elementType": 0,
+        "shieldPoint": {
+          "rValue": {
+            "calcId": 2118716,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 12,
+            "UID": "fd10a7ed-7c3d-4045-ae24-8d0c813b126b",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "99578dde-fbaf-491a-91c1-ad0787633c09",
+          "NodeID": 3,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "04d6e8c9-a198-4f78-819f-eaed74830a0f",
+            "target": "CURPET",
+            "NodeID": 2,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "NodeID": 5
+    },
+    "13": {
+      "buffId": 2118716,
+      "name": "removeBuff",
+      "UID": "ccc1536a-6bcb-4a6d-bb31-4fe56a4aa32c",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "6d778cb2-c479-4b34-8c43-5adecf02c4c2",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "15": {
+      "UID": "88c1930f-c58e-4027-9523-a90af88b786f",
+      "name": "registerShieldChangeEvent",
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15
+    },
+    "7": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "39c8f294-9e7c-47f0-8ea5-d0c35176191f",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "cf9b75bd-a645-41d3-9be7-67825af7504a",
+      "name": "getBuffShieldPoint",
+      "NodeID": 16
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "a178ec58-67be-41c0-b5ee-eaeb33856d96",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 8
+    },
+    "17": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "16599f71-0338-49d7-81a5-e5da0840c1d9",
+      "NodeID": 17,
+      "lValue": {
+        "UID": "cf9b75bd-a645-41d3-9be7-67825af7504a",
+        "name": "getBuffShieldPoint",
+        "NodeID": 16
+      }
+    },
+    "12": {
+      "calcId": 2118716,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "fd10a7ed-7c3d-4045-ae24-8d0c813b126b",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    15,
+    7,
+    5
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "angularIncreaseDuration": 0.25,
+  "BPName": "ability_70020100",
+  "NodeID": 0,
+  "effectId": {
+    "str": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Dmg_Fly_",
+    "name": "constString",
+    "UID": "e57c2639-1160-4cbe-a840-9f8ce5cd5bff",
+    "NodeID": 52,
+    "concatenateNumber": {
+      "UID": "b9b91bd0-522c-44d3-a5de-9293e0a46474",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 51
+    }
+  },
+  "nodeMap": {
+    "22": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "battle_projectilehit_fire_h",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "isPlayRadialBlur": true,
+        "impulseId": 1000,
+        "useCasterMainElement": true
+      },
+      "UID": "bb50c1b7-e1d0-4ce4-a61d-9c5b357c07d2",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 22
+    },
+    "24": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 22,
+      "NodeID": 24,
+      "UID": "5deb4784-5338-43d8-9b96-5bb99cb1c899",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        22
+      ]
+    },
+    "62": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ba1a5e7d-bd82-435c-b022-7997511b0a58",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_Burst_Dmg_Charge_Fly",
+      "NodeID": 62
+    },
+    "59": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "e1e409bc-fc2d-4e5a-8a65-66b8a8fdb4af",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Hit_",
+        "name": "constString",
+        "UID": "14f85a2c-e8fc-421e-a314-aef1da4c3b26",
+        "NodeID": 58,
+        "concatenateNumber": {
+          "UID": "a5cdb135-892b-4027-8dd4-6286e9837358",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 57
+        }
+      },
+      "speed": 1.01,
+      "NodeID": 59
+    },
+    "57": {
+      "UID": "a5cdb135-892b-4027-8dd4-6286e9837358",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 57
+    },
+    "51": {
+      "UID": "b9b91bd0-522c-44d3-a5de-9293e0a46474",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 51
+    }
+  },
+  "enableMaxAngleTime": 0.25,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "calcResultNodeId": 22,
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    59
+  ],
+  "onProjectileHitIds": [
+    24
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.6,
+  "sweepShape": 0,
+  "onProjectileStartIds": [
+    62
+  ],
+  "tickInterval": 0.01,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 4,
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

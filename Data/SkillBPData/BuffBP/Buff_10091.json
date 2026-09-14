@@ -1,0 +1,44 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10091",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "a8eec3b8-e30e-4e7c-94c0-bd61846964e2",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "10": {
+      "UID": "0a155e5d-4d2f-4779-954a-c1e14c5527c9",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "hp0",
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "c3918337-d7a0-4ded-89d8-7d4d1d9af528",
+      "name": "isGoingBeKilled",
+      "NodeID": 7
+    },
+    "9": {
+      "UID": "bc3f1c64-abc2-4a56-ab86-13a5cfb424f8",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9
+  ]
+}

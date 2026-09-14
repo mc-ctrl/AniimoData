@@ -1,0 +1,3996 @@
+{
+  "1017200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_EatStart",
+      "Behav_EatLoop",
+      "Behav_EatEnd"
+    ],
+    "clickHandCondition": [
+      "Behav_Digging"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1018700": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Skill_Conjure"
+    ],
+    "longClickHeadCondition": [
+      "Die"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_Sleep"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Skill_Conjure"
+    ],
+    "quickClickHeadCondition": [
+      "Die"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "IdleSpecial"
+    ],
+    "clickHandCondition": [
+      "Skill_Whirlwind"
+    ],
+    "clickHeadCondition": [
+      "Skill_Attention"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1014400": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1015100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1015200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1015300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "9002500": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1022100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1022200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1014100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1019300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1013100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_Happy"
+    ],
+    "clickHandCondition": [
+      "Behav_Alert"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1013200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1019500": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1001100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Behav_Angry"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_Sleep"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Behav_Cry"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Behav_Alert"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_Happy"
+    ],
+    "clickHandCondition": [
+      "Taught01"
+    ],
+    "clickHeadCondition": [
+      "EnvBehav_Clap"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1004200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Skill_Shield"
+    ],
+    "longClickHandCondition": [
+      "Behav_Cry"
+    ],
+    "longClickHeadCondition": [
+      "Die"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Skill_Shield"
+    ],
+    "quickClickHandCondition": [
+      "Behav_Cry"
+    ],
+    "quickClickHeadCondition": [
+      "Die"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_EatStart",
+      "Behav_EatLoop",
+      "Behav_EatEnd"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Behav_Happy"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1004300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Skill_StormTail"
+    ],
+    "longClickHandCondition": [
+      "Behav_Cry"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "EnvBehav_AcceptLoveDance"
+    ],
+    "quickClickBellyCondition": [
+      "Skill_StormTail"
+    ],
+    "quickClickHandCondition": [
+      "Behav_Cry"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_Happy"
+    ],
+    "clickHandCondition": [
+      "Behav_Love"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1002600": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1028300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1016100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_AngryStart"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Behav_Seeklove"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1016200": {
+    "grabAni": "Struggle",
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_Alert"
+    ],
+    "clickHandCondition": [
+      "Skill_MagicWhip"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1016300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1028100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1028400": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1028500": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1022300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1018100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_Sing"
+    ],
+    "clickHandCondition": [
+      "Behav_Love"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1018400": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1018500": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Skill_Conjure"
+    ],
+    "longClickHeadCondition": [
+      "Skill_AerialAce"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Skill_Conjure"
+    ],
+    "quickClickHeadCondition": [
+      "Skill_AerialAce"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "IdleSpecial"
+    ],
+    "clickHandCondition": [
+      "EnvBehav_Sing"
+    ],
+    "clickHeadCondition": [
+      "Behav_Happy"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1026100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1026200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "9021300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1026300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1033300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1020100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1020300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1002700": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1001300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1032300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1002200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_Sleep"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "IdleSpecial"
+    ],
+    "clickHandCondition": [
+      "Behav_Happy"
+    ],
+    "clickHeadCondition": [
+      "Behav_Alert"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1002400": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1005100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_L"
+    ],
+    "longClickHandCondition": [
+      "Skill_Headbutt"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_CircleStart",
+      "Behav_CircleLoop",
+      "Behav_CircleEnd"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_L"
+    ],
+    "quickClickHandCondition": [
+      "Skill_Headbutt"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Skill_Rotate"
+    ],
+    "clickHandCondition": [
+      "EnvBehav_Wavehands"
+    ],
+    "clickHeadCondition": [
+      "EnvBehav_FlapHair"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1017100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Behav_MakeLove"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1032100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1031100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1005200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_EatEnd"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Taught01"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1005300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_EatEnd"
+    ],
+    "clickHandCondition": [
+      "Behav_Play"
+    ],
+    "clickHeadCondition": [
+      "Behav_Alert"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1031200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1030100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1002100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "longClickHandCondition": [
+      "Hit_H"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Behav_AngryStart",
+      "Behav_AngryLoop",
+      "Behav_AngryEnd"
+    ],
+    "quickClickHandCondition": [
+      "Hit_H"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SnuggleStart",
+      "Behav_SnuggleLoop",
+      "Behav_SnuggleEnd"
+    ],
+    "clickHandCondition": [
+      "Behav_RollStart",
+      "Behav_RollLoop",
+      "Behav_RollEnd"
+    ],
+    "clickHeadCondition": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1030300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1024100": {
+    "grabAni": "Struggle",
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_Sleep"
+    ],
+    "pettingCondition": [
+      "Behav_HappyStart",
+      "Behav_HappyLoop",
+      "Behav_HappyEnd"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "IdleSpecial"
+    ],
+    "clickHandCondition": [
+      "Talk"
+    ],
+    "clickHeadCondition": [
+      "Deceived"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1031300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1023100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1023200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1023300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1019200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Behav_CryStart",
+      "Behav_CryLoop",
+      "Behav_CryEnd"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Behav_CryStart",
+      "Behav_CryLoop",
+      "Behav_CryEnd"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_EatStart",
+      "Behav_EatLoop",
+      "Behav_EatEnd"
+    ],
+    "clickHandCondition": [
+      "Behav_AlertStart",
+      "Behav_AlertLoop",
+      "Behav_AlertEnd"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1027200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1030200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1028200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1027400": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1021100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1014300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1002300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_Happy"
+    ],
+    "clickHandCondition": [
+      "Skill_IronClaw"
+    ],
+    "clickHeadCondition": [
+      "Behav_Alert"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1012200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "JumpBack"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_Sleep"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "JumpBack"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Skill_Dance_02_QTE"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Skill_Ex"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1021200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1021300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1004500": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1014200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1019100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Behav_Cry"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Behav_Cry"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "IdleSpecial"
+    ],
+    "clickHandCondition": [
+      "Hit_Shake"
+    ],
+    "clickHeadCondition": [
+      "Behav_Happy"
+    ],
+    "garbAndDropAni": "FallToGroundL_FromSprint"
+  },
+  "1019400": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Behav_Cry"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "Behav_Cry"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Taunt"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Behav_Alert"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1001200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Skill_DropBackReturn"
+    ],
+    "clickHandCondition": [
+      "Taught01"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1033100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1027100": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1020700": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1013300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Behav_Angry"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Skill_WildRoar"
+    ],
+    "clickHandCondition": [
+      "Behav_Alert"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundL"
+  },
+  "1017400": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_L"
+    ],
+    "longClickHandCondition": [
+      "Skill_Shield"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Love"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_L"
+    ],
+    "quickClickHandCondition": [
+      "Skill_Shield"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Skill_Press"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Behav_Happy"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1017300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "Hit_H"
+    ],
+    "longClickHandCondition": [
+      "Skill_Shield"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "Hit_H"
+    ],
+    "quickClickHandCondition": [
+      "Skill_Shield"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_EatStart",
+      "Behav_EatLoop",
+      "Behav_EatEnd"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "Behav_Alert"
+    ],
+    "garbAndDropAni": "FallToGroundH"
+  },
+  "1025200": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  },
+  "1027300": {
+    "grabAni": "Struggle",
+    "longClickBellyCondition": [
+      "JumpBack"
+    ],
+    "longClickHandCondition": [
+      "Hit_L"
+    ],
+    "longClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "madRotateCondition": [
+      "StunStart",
+      "StunLoop",
+      "StunEnd",
+      3
+    ],
+    "noActionCondition": [
+      "Behav_SleepStart",
+      "Behav_SleepLoop",
+      "Behav_SleepEnd"
+    ],
+    "pettingCondition": [
+      "Behav_Happy"
+    ],
+    "quickClickBellyCondition": [
+      "JumpBack"
+    ],
+    "quickClickHandCondition": [
+      "Hit_L"
+    ],
+    "quickClickHeadCondition": [
+      "Hit_Stand"
+    ],
+    "rotateCondition": [
+      "WalkBlend",
+      90,
+      1
+    ],
+    "clickBellyCondition": [
+      "Behav_SeekLove"
+    ],
+    "clickHandCondition": [
+      "IdleSpecial"
+    ],
+    "clickHeadCondition": [
+      "IdleSpecial"
+    ],
+    "garbAndDropAni": "FallToGroundH_FromSprint"
+  }
+}

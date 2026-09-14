@@ -1,0 +1,303 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_212031301",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "immuneTags": {},
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    5
+  ],
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        15,
+        3
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "5b39985a-bc0c-4d6f-b1f9-5f717b1bf149",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        14
+      ],
+      "NodeID": 5
+    },
+    "38": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 38,
+      "UID": "d8013f9b-aa6a-4646-bc2c-7c5a86cf6540",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": false,
+      "childTransformName": "yinfu01"
+    },
+    "40": {
+      "rValue": 6,
+      "name": "equal",
+      "UID": "6e735e30-3b8d-4eb4-b545-5bdf56c2bc0b",
+      "NodeID": 40,
+      "lValue": {
+        "templateId": 212031301,
+        "name": "getBuffLayer",
+        "UID": "fe22cc20-22b2-4553-8d98-c45feda21318",
+        "target": "OWNER",
+        "NodeID": 39
+      }
+    },
+    "41": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 41,
+      "UID": "02025e38-d9f4-499b-95a2-d68878e8b54f",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": false,
+      "childTransformName": "yinfu03"
+    },
+    "35": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 35,
+      "UID": "9a450e09-4495-4fdd-b6c2-47667429a783",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": true,
+      "childTransformName": "yinfu05"
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "baca2d15-2cba-4eff-a3b9-309ac5f79133",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "daee09bf-5127-4688-a5c8-5c634f5d5bf4",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "scale": 0.5,
+      "NodeID": 9
+    },
+    "43": {
+      "rValue": 7,
+      "name": "equal",
+      "UID": "1209edc4-62b2-43b2-845a-b658a3d59a0f",
+      "NodeID": 43,
+      "lValue": {
+        "templateId": 212031301,
+        "name": "getBuffLayer",
+        "UID": "0c24dcca-7368-49b7-9590-0d698dfafa46",
+        "target": "OWNER",
+        "NodeID": 42
+      }
+    },
+    "37": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 37,
+      "UID": "0ef3da5c-13b1-434b-8aec-ce7ad704eb67",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": true,
+      "childTransformName": "yinfu02"
+    },
+    "12": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "47ff3476-0663-4798-9fb3-fc00c74a2395",
+      "NodeID": 12,
+      "lValue": {
+        "templateId": 212031301,
+        "name": "getBuffLayer",
+        "UID": "cdb3142e-3e36-418b-b825-e913e3d722f6",
+        "target": "OWNER",
+        "NodeID": 11
+      }
+    },
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 212031302,
+      "NodeID": 3,
+      "UID": "5c0392ba-46e0-4b71-aa21-649194f79720",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "cb4689fa-bb98-45f3-bcfb-f6823b4021bf",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 13
+    },
+    "16": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 16,
+      "UID": "4c6b0743-5150-471e-a715-ad317b8b74c8",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": true,
+      "childTransformName": "yinfu01"
+    },
+    "14": {
+      "actionIds": [
+        41
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "7b9b3a74-584b-4473-87be-32c6e5b55de9",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "23": {
+      "actionIds": [
+        29
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "00d6f707-1bba-451f-a24d-746e16d074ed",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 23
+    },
+    "15": {
+      "buffId": 212031301,
+      "name": "removeBuff",
+      "UID": "5307de5b-3753-482c-b394-642a967170ca",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "22": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "8a2f0157-03e4-4fac-9aa7-b5b3d96145b1",
+      "NodeID": 22,
+      "lValue": {
+        "templateId": 212031301,
+        "name": "getBuffLayer",
+        "UID": "f259ff99-8281-4bac-b444-e0770a772eb2",
+        "target": "OWNER",
+        "NodeID": 21
+      }
+    },
+    "26": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "566dbb8a-bd69-420f-b5f0-3552c56bc1a1",
+      "NodeID": 26,
+      "lValue": {
+        "templateId": 212031301,
+        "name": "getBuffLayer",
+        "UID": "d7f26839-0892-4ecb-a6bc-7c9033df83fb",
+        "target": "OWNER",
+        "NodeID": 25
+      }
+    },
+    "27": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "5db91524-f5c8-4a86-9d64-b9c3d7410966",
+      "name": "doActionsByConditions",
+      "NodeID": 27
+    },
+    "18": {
+      "rValue": 4,
+      "name": "equal",
+      "UID": "884e6f63-3823-47bd-aca4-3d041c6b3cbc",
+      "NodeID": 18,
+      "lValue": {
+        "templateId": 212031301,
+        "name": "getBuffLayer",
+        "UID": "b71bea01-0722-42c9-b841-5a5b066e5683",
+        "target": "OWNER",
+        "NodeID": 17
+      }
+    },
+    "29": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 29,
+      "UID": "deb46153-8b3a-41fb-9e29-7b4dbd3ffc45",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": false,
+      "childTransformName": "yinfu02"
+    },
+    "30": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 30,
+      "UID": "d097deca-2b5a-41d1-b28b-3194d0c9fb25",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": false,
+      "childTransformName": "yinfu05"
+    },
+    "32": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 32,
+      "UID": "af2f3351-bf59-4765-ac06-f372d41bacd3",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": false,
+      "childTransformName": "yinfu04"
+    },
+    "19": {
+      "actionIds": [
+        30
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "2c02c2b1-950b-4200-8751-2f0d4f6de45c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 19
+    },
+    "34": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 34,
+      "UID": "54d90867-9e1c-4fa1-8a46-8e12b6c00d1e",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": true,
+      "childTransformName": "yinfu04"
+    },
+    "36": {
+      "name": "enableEffectChildTransform",
+      "NodeID": 36,
+      "UID": "e9970b6a-5dcb-4f92-8ac9-9f1ee44efb64",
+      "effectId": "Eff_Parmon_10203_Skill_SadMusic_01",
+      "enable": true,
+      "childTransformName": "yinfu03"
+    }
+  },
+  "onBuffDestroyIds": [
+    31
+  ],
+  "onBuffStartIds": [
+    9,
+    16,
+    37,
+    36,
+    34,
+    35
+  ]
+}

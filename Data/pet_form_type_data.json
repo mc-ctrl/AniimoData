@@ -1,0 +1,150 @@
+{
+  "5": {
+    "iconBg": "$UI_Img_rainbow_bg.png",
+    "iconSmall": "$UI_Icon_rainbowsmall6.png",
+    "formQuality": 6,
+    "icon": "$UI_Icon_rainbow6.png",
+    "sort": 1,
+    "name": 1113979452
+  },
+  "6": {
+    "iconBg": "$UI_Img_thunderstorm_bg.png",
+    "iconSmall": "$UI_Icon_rainsmall7.png",
+    "formQuality": 3,
+    "icon": "$UI_Icon_rain7.png",
+    "sort": 3,
+    "name": 1512628585
+  },
+  "7": {
+    "sort": 9,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 2108689605
+  },
+  "8": {
+    "sort": 10,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1101873867
+  },
+  "9": {
+    "sort": 11,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1151824291
+  },
+  "11": {
+    "sort": 5,
+    "iconSmall": "$UI_Icon_snowsmall4.png",
+    "name": 1906891152,
+    "icon": "$UI_Icon_snow4.png",
+    "formQuality": 4
+  },
+  "1": {
+    "sort": 6,
+    "iconSmall": "$UI_Icon_basicsmall1.png",
+    "name": 1321984903,
+    "icon": "$UI_Icon_basic1.png",
+    "formQuality": 1
+  },
+  "12": {
+    "sort": 12,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 2061719293
+  },
+  "3": {
+    "sort": 8,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1602369633
+  },
+  "4": {
+    "iconBg": "$UI_Img_thunderstorm_bg.png",
+    "iconSmall": "$UI_Icon_thunderstormsmall5.png",
+    "formQuality": 5,
+    "icon": "$UI_Icon_thunderstorm5.png",
+    "sort": 2,
+    "name": 1595269102
+  },
+  "14": {
+    "sort": 14,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1480817284
+  },
+  "10": {
+    "sort": 4,
+    "iconSmall": "$UI_Icon_nightsmall3.png",
+    "name": 1861219594,
+    "icon": "$UI_Icon_night3.png",
+    "formQuality": 3
+  },
+  "15": {
+    "sort": 15,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1174817299
+  },
+  "16": {
+    "sort": 16,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1985656406
+  },
+  "17": {
+    "sort": 17,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1535070738
+  },
+  "18": {
+    "sort": 18,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 2091253187
+  },
+  "2": {
+    "sort": 7,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1919543906
+  },
+  "0": {
+    "sort": 7,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "name": 1456185337,
+    "icon": "$UI_Icon_region2.png",
+    "formQuality": 2
+  },
+  "13": {
+    "sort": 13,
+    "iconSmall": "$UI_Icon_regionsmall2.png",
+    "formQuality": 2,
+    "icon": "$UI_Icon_region2.png",
+    "belong": 0,
+    "name": 1433241477
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "nodeMap": {
+    "52": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "fa0296e2-bca8-42d9-b70c-d1b4a90880ea",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 52
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          36,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 38,
+      "UID": "b9c6b17b-882e-4c0b-b57f-eabe4e34602c"
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "61e1bcc7-f029-4101-b2ce-f9ca26b2d5c3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10263_SKill_DreamEater_01",
+      "NodeID": 39
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "be600078-b4de-49ec-8341-a6512efa6ba1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10263_SKill_DreamEater_02",
+      "NodeID": 40
+    },
+    "54": {
+      "UID": "85b35db4-49a0-4418-a1af-060548e64f62",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          53
+        ]
+      },
+      "NodeID": 54
+    },
+    "42": {
+      "UID": "9365075e-474d-4665-af1b-fbd56f8b658e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "key": "9126301",
+      "name": "setCacheVal",
+      "UID": "80f79dbc-d400-445e-85bd-d1dd331f2744",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 35
+    },
+    "2": {
+      "name": "isActorType",
+      "UID": "463c53a8-ee2e-4432-9932-a14b5e6486b7",
+      "target": "OWNER",
+      "NodeID": 2,
+      "actorType": 3
+    },
+    "4": {
+      "actionIds": [
+        14
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "0b877065-cd59-4f63-9b20-9943bb6cae88",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 5,
+      "UID": "ee29f3a1-2608-4126-a266-444cf23db3e7"
+    },
+    "56": {
+      "UID": "de5038ca-0088-4643-8eec-1a96c2e720e4",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 56
+    },
+    "55": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "a6262af9-0037-4739-855a-947a29b29220",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 55
+    },
+    "53": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "f44c0d5d-c092-4414-84a5-29bb8d48a62c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        55
+      ],
+      "NodeID": 53
+    },
+    "51": {
+      "buffId": 2126304,
+      "name": "removeBuff",
+      "UID": "a6e858fa-fc71-4e7a-9a45-90342bcf24b4",
+      "target": "TARGET",
+      "NodeID": 51
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 43,
+      "UID": "511a8227-c205-4b33-87cd-0f8936f35af2"
+    },
+    "24": {
+      "UID": "b74a8e91-8f78-404b-bcbc-656708935738",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "NodeID": 24
+    },
+    "10": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 10,
+      "animId": "Skill_DreamEater"
+    },
+    "25": {
+      "key": "12630100",
+      "name": "setCacheVal",
+      "UID": "8d60acc5-0054-44b2-8621-3b81c637c3ad",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 25
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7297f0de-a38d-4e0c-87e1-4369fb7a7c6e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10263_SKill_DreamEater_01",
+      "NodeID": 16
+    },
+    "29": {
+      "buffId": 2126304,
+      "name": "hasBuff",
+      "UID": "ca2e10cb-7d95-48b8-a058-d99a25b95e61",
+      "target": "TARGET",
+      "NodeID": 29
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 20,
+      "UID": "b100968d-49d3-4223-8ce8-f896cb8c8b95"
+    },
+    "12": {
+      "UID": "7ee40454-c7d7-4ed4-b9fd-9281589f06cc",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          10,
+          15,
+          16,
+          18,
+          25,
+          35,
+          39
+        ]
+      },
+      "NodeID": 12
+    },
+    "27": {
+      "UID": "0e82a3c5-a53f-49f4-b2d6-0d48796eb5fb",
+      "conditionIds": [
+        26,
+        29
+      ],
+      "name": "conditionOr",
+      "NodeID": 27
+    },
+    "23": {
+      "actionIds": [
+        28
+      ],
+      "name": "actOnTargets",
+      "UID": "964b25c0-b62b-4d0b-84ed-f6f15e8b9f62",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 23
+    },
+    "45": {
+      "UID": "6f08a4b5-9e00-435a-9ca5-4288356d1ab2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 45
+    },
+    "14": {
+      "duration": 0.6,
+      "name": "puppetPreCastAction",
+      "UID": "eb95303a-7734-439b-881c-b43d107038cd",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.9,
+        0.5
+      ],
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 14
+    },
+    "46": {
+      "UID": "75f673e0-2e0f-48c0-a596-f714ba1a27a2",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "NodeID": 46
+    },
+    "15": {
+      "target": "OWNER",
+      "speed": 1.4,
+      "NodeID": 15,
+      "UID": "59ba5f56-87e4-4808-92eb-e9ef1a887019",
+      "effectId": "Eff_Parmon_10263_Skill_DreamEater_01",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "47": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 47,
+      "UID": "aac38fc3-ec8d-4990-a17a-09eb25110454",
+      "effectId": "Eff_Parmon_10263_Skill_DreamEater_01_Link",
+      "name": "playEffectStr",
+      "endTarget": "TARGET"
+    },
+    "26": {
+      "buffId": 2126302,
+      "name": "hasBuff",
+      "UID": "d898e00a-d1df-4aa8-a5b5-d29e4b6454d5",
+      "target": "TARGET",
+      "NodeID": 26
+    },
+    "48": {
+      "UID": "32c3cc52-872f-4166-b685-002854e42901",
+      "name": "callClientAction",
+      "actionIds": [
+        47
+      ],
+      "NodeID": 48
+    },
+    "28": {
+      "actionIds": [
+        32,
+        34,
+        48,
+        49,
+        51
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "98ed1888-b9e6-419c-933c-494680dc495b",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "49": {
+      "buffId": 2126302,
+      "name": "removeBuff",
+      "UID": "33c92862-8dad-4268-bb23-a3cea8f70141",
+      "target": "TARGET",
+      "NodeID": 49
+    },
+    "18": {
+      "UID": "ac7e8bad-aa28-4e82-8351-052db95adf74",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "key": "12630100",
+      "name": "setCacheVal",
+      "UID": "d83373d9-5a6e-4501-a6c1-c47e3e0e40c5",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "04f8c733-7160-474e-8a21-7f43b40cb2e9",
+        "NodeID": 31,
+        "lValue": {
+          "key": "12630100",
+          "name": "getCacheVal",
+          "UID": "8b40fe73-5b14-415e-98e2-1f5b88a262f6",
+          "target": "OWNER",
+          "NodeID": 30
+        }
+      },
+      "NodeID": 32
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 126302,
+      "name": "createEntity",
+      "UID": "8bdcde92-866e-481d-b0d1-41bc6e88a2e8",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 1,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "CASTER",
+      "pos": "CASTER",
+      "NodeID": 19
+    },
+    "34": {
+      "eventName": "WeakUp",
+      "name": "notifyCustomEvent",
+      "UID": "fb6f985a-8c65-4b43-bf29-7f1ca50a5788",
+      "target": "TARGET",
+      "NodeID": 34
+    },
+    "36": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 36,
+      "UID": "1e8e37f2-2e71-47e2-b34a-e42d01746bf5",
+      "effectId": "Eff_Parmon_10263_Skill_DreamEater_04",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    }
+  },
+  "BPName": "ability_12630100",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    12,
+    38,
+    24,
+    43,
+    46,
+    20,
+    54
+  ],
+  "layer": "Base",
+  "length": 3.12
+}

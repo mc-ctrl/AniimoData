@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_103200000",
+  "NodeID": 1,
+  "UID": "73e1965f-86f7-4274-8a19-41582545404b",
+  "abilityParamId": 11200000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "timelineId": 103200000001,
+      "name": "setCombatActionTimeline",
+      "UID": "b70a63aa-78de-48ee-a64e-93d340cf6045",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Slash",
+    "Eff_Skill_Common_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "暗普通攻击",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    10320001,
+    10320002,
+    10320003,
+    10320010,
+    10320011,
+    10320012,
+    10320013
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

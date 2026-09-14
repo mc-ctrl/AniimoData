@@ -1,0 +1,115 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9139304",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9139302,
+      "NodeID": 3,
+      "UID": "c74f5986-a9fe-4b54-a2dd-324bbdffbb36",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "rValue": 40,
+      "name": "equal",
+      "UID": "b179c832-b0dd-4130-a91d-16c3bdb1617d",
+      "NodeID": 13,
+      "lValue": {
+        "templateId": 9139302,
+        "name": "getBuffLayer",
+        "UID": "ed2bf8be-d770-4187-b0ca-908d544dd83e",
+        "target": "OWNER",
+        "NodeID": 12
+      }
+    },
+    "14": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "a8e7fbf3-fa1f-4d10-9af3-e21f3780a73e",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        3,
+        14
+      ],
+      "name": "registerPawnMovedDistanceReachThresholdEvent",
+      "UID": "18f39ec1-6de6-4fb7-a8ad-c315369301b3",
+      "threshold": 0.5,
+      "onlyConsiderXZ": true,
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9139305,
+      "NodeID": 15,
+      "UID": "24029e6b-a6f7-4752-ae03-9339b11c81fe",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "1698769d-2ba2-48ba-ae6b-0389ad7586da",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        5
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "buffId": 2139301,
+      "name": "hasBuff",
+      "UID": "009aa339-7404-4b30-b105-ef62d9e9142c",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "eventName": "91393",
+      "NodeID": 8,
+      "UID": "44f3c6c0-12f8-4e0e-81dd-a449f41b2d1a",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        7
+      ]
+    },
+    "5": {
+      "actionIds": [
+        3,
+        14
+      ],
+      "name": "registerPawnMovedDistanceReachThresholdEvent",
+      "UID": "0e5575e1-587a-4cef-82fb-c8f174b234d9",
+      "threshold": 1,
+      "onlyConsiderXZ": true,
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    8
+  ]
+}

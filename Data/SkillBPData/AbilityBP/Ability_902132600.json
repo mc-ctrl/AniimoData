@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_902132600",
+  "NodeID": 1,
+  "UID": "8e3c3b93-6299-4253-8dc7-01b469c2329a",
+  "abilityParamId": 49225010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902132600001,
+      "name": "setCombatActionTimeline",
+      "UID": "7559cb89-4e15-496c-8e86-1ecff00f4fe7",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Red_JxStart",
+    "Skill_DwpyStart",
+    "Skill_DwpyEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Attack_Teleport_Absorb",
+    "Eff_Monster_90213_Mon_Attack_Teleport_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 60,
+  "searchTargetRangeUp": 20,
+  "searchTargetRangeDown": 20
+}

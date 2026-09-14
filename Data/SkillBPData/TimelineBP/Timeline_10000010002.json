@@ -1,0 +1,61 @@
+{
+  "nodeMap": {
+    "22": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 22,
+      "UID": "527605de-2a1a-4937-8dad-e07e70a12256"
+    },
+    "13": {
+      "duration": 20,
+      "name": "playFovCameraAnim",
+      "UID": "12fdc434-2dea-47b0-92f1-904e7f2415b5",
+      "blendInTime": 0,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CameraCurveFov_Skill_10000010",
+      "target": "OWNER",
+      "blendOutTime": 0.5,
+      "NodeID": 13
+    },
+    "24": {
+      "param": "SetZoom,0.6,1,0.5",
+      "name": "cameraEvent",
+      "UID": "61f025a9-8ddc-4a1b-bba9-faf6ef84826c",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "15": {
+      "UID": "0944dbe3-695d-4c99-8442-fa72cf627b59",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13,
+          24
+        ]
+      },
+      "NodeID": 15
+    },
+    "20": {
+      "param": "SetDamp,6,6,6",
+      "name": "cameraEvent",
+      "UID": "b4fd8dd3-2f38-4331-9e44-2cb2fd71d4ba",
+      "target": "OWNER",
+      "NodeID": 20
+    }
+  },
+  "layer": "Additive",
+  "BPName": "ability_10000010",
+  "NodeID": 17,
+  "UID": "f55a65ff-f364-4d12-bdea-911924d609cd",
+  "eventIds": [
+    15,
+    22
+  ],
+  "isSkillTimeline": false,
+  "length": 0.8
+}

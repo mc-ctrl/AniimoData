@@ -1,0 +1,320 @@
+[
+  {
+    "inputkey": [
+      "<Gamepad>/buttonSouth"
+    ],
+    "actionName": [
+      "Bind/Confirm"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/buttonEast"
+      ]
+    ],
+    "desc": 1131011636,
+    "type": 1854640734
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/buttonEast"
+    ],
+    "actionName": [
+      "Bind/Cancel"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/buttonSouth"
+      ]
+    ],
+    "desc": 1200393407,
+    "type": 1878657847
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/buttonSouth"
+    ],
+    "actionName": [
+      "Bind/Jump"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/buttonEast"
+      ],
+      [
+        "<Gamepad>/buttonWest"
+      ]
+    ],
+    "desc": 1673390445,
+    "type": 1454603022
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/buttonEast"
+    ],
+    "actionName": [
+      "Bind/Sprint"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/buttonSouth"
+      ],
+      [
+        "<Gamepad>/buttonWest"
+      ]
+    ],
+    "desc": 1594201616,
+    "type": 1101402811
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/buttonWest"
+    ],
+    "actionName": [
+      "Bind/NormalAttack"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/buttonSouth"
+      ],
+      [
+        "<Gamepad>/buttonEast"
+      ]
+    ],
+    "desc": 1859604146,
+    "type": 2059197875
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/leftStickPress"
+    ],
+    "actionName": [
+      "Bind/TrackOpenSpecial"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/rightStickPress"
+      ]
+    ],
+    "desc": 1607216003,
+    "type": 1774718594
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/rightStickPress"
+    ],
+    "actionName": [
+      "Bind/LockTarget"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/leftStickPress"
+      ]
+    ],
+    "desc": 2072932005,
+    "type": 1685295778
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/buttonWest",
+      "<Gamepad>/buttonSouth"
+    ],
+    "actionName": [
+      "Bind/ExploreSkillButton1",
+      "Bind/ExploreSkillButton2"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/buttonNorth",
+        "<Gamepad>/buttonEast"
+      ]
+    ],
+    "desc": 1500581311,
+    "type": 2121790321
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/buttonNorth",
+      "<Gamepad>/buttonEast"
+    ],
+    "actionName": [
+      "Bind/SkillChainAttackButton1",
+      "Bind/SkillChainAttackButton2"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/buttonWest",
+        "<Gamepad>/buttonSouth"
+      ]
+    ],
+    "desc": 1396654424,
+    "type": 1994968982
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/dpad/up"
+    ],
+    "actionName": [
+      "Bind/Pet1"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/dpad/right"
+      ],
+      [
+        "<Gamepad>/dpad/down"
+      ],
+      [
+        "<Gamepad>/dpad/left"
+      ]
+    ],
+    "desc": 1923975430,
+    "type": 1488453559
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/leftShoulder"
+    ],
+    "actionName": [
+      "Bind/Skill1"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/leftTrigger"
+      ],
+      [
+        "<Gamepad>/rightTrigger"
+      ],
+      [
+        "<Gamepad>/rightShoulder"
+      ]
+    ],
+    "desc": 1075964393,
+    "type": 1244518313
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/dpad/right"
+    ],
+    "actionName": [
+      "Bind/Pet2"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/dpad/up"
+      ],
+      [
+        "<Gamepad>/dpad/down"
+      ],
+      [
+        "<Gamepad>/dpad/left"
+      ]
+    ],
+    "desc": 2032715170,
+    "type": 1546667299
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/rightShoulder"
+    ],
+    "actionName": [
+      "Bind/Skill2"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/leftTrigger"
+      ],
+      [
+        "<Gamepad>/rightTrigger"
+      ],
+      [
+        "<Gamepad>/leftShoulder"
+      ]
+    ],
+    "desc": 1508581811,
+    "type": 1457112836
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/dpad/down"
+    ],
+    "actionName": [
+      "Bind/Pet3"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/dpad/up"
+      ],
+      [
+        "<Gamepad>/dpad/right"
+      ],
+      [
+        "<Gamepad>/dpad/left"
+      ]
+    ],
+    "desc": 1552864267,
+    "type": 1250289995
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/leftTrigger"
+    ],
+    "actionName": [
+      "Bind/SwitchCatchMode"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/rightTrigger"
+      ],
+      [
+        "<Gamepad>/leftShoulder"
+      ],
+      [
+        "<Gamepad>/rightShoulder"
+      ]
+    ],
+    "desc": 1420556338,
+    "type": 1855432343
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/dpad/left"
+    ],
+    "actionName": [
+      "Bind/Pet4"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/dpad/up"
+      ],
+      [
+        "<Gamepad>/dpad/right"
+      ],
+      [
+        "<Gamepad>/dpad/down"
+      ]
+    ],
+    "desc": 1240010820,
+    "type": 1187870855
+  },
+  {
+    "inputkey": [
+      "<Gamepad>/rightTrigger"
+    ],
+    "actionName": [
+      "Bind/SwitchPet"
+    ],
+    "listkey": [
+      [
+        "<Gamepad>/leftTrigger"
+      ],
+      [
+        "<Gamepad>/leftShoulder"
+      ],
+      [
+        "<Gamepad>/rightShoulder"
+      ]
+    ],
+    "desc": 1778351011,
+    "type": 1941505502
+  }
+]

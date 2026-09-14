@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "bc970d76-7616-4cb2-94dc-e452f5b64423",
+      "cd": 300,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "228d80d5-3262-45e4-a859-fa486610ee7c",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "03e03959-3f87-439f-81c8-2528ac221e4c",
+      "NodeID": 6
+    },
+    "8": {
+      "UID": "7b060600-f0e9-4f9c-8713-4f3b26ceef18",
+      "name": "isGoingBeKilled",
+      "NodeID": 8
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerReceiveDamageEvent",
+      "UID": "771a6430-0961-4894-986e-a143ec4aed1b",
+      "targetType": 1,
+      "NodeID": 5
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 10012,
+      "NodeID": 2,
+      "UID": "2f772f7e-559d-4912-b678-9448aaa22b9f",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_2051004",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

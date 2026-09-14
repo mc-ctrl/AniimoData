@@ -1,0 +1,271 @@
+{
+  "401": {
+    "imagePanel": "$UI_Img_Quest_ClueBgImage.png",
+    "imageItem": "$UI_Hud_Icon_Clue_Yellow.png",
+    "quests": {},
+    "subTypeName": 1806024821
+  },
+  "403": {
+    "imagePanel": "$UI_Img_Quest_ClueBgImage.png",
+    "imageItem": "$UI_Hud_Icon_Clue_Gray.png",
+    "quests": [
+      {
+        "questId": 3711037
+      },
+      {
+        "questId": 4709093
+      },
+      {
+        "questId": 4710020
+      },
+      {
+        "questId": 5503028
+      },
+      {
+        "questId": 4710032
+      },
+      {
+        "questId": 4709085
+      },
+      {
+        "questId": 4706077
+      },
+      {
+        "questId": 4709082
+      },
+      {
+        "questId": 4704051
+      },
+      {
+        "questId": 4704043
+      },
+      {
+        "questId": 4710055
+      },
+      {
+        "questId": 5101103
+      },
+      {
+        "questId": 3708103
+      },
+      {
+        "questId": 4710024
+      },
+      {
+        "questId": 4702127
+      },
+      {
+        "questId": 3708104
+      },
+      {
+        "questId": 3708128
+      },
+      {
+        "questId": 3901027
+      },
+      {
+        "questId": 4710040
+      },
+      {
+        "questId": 5503030
+      },
+      {
+        "questId": 4704042
+      },
+      {
+        "questId": 4704035
+      },
+      {
+        "questId": 3708129
+      },
+      {
+        "questId": 3708155
+      },
+      {
+        "questId": 3708165
+      },
+      {
+        "questId": 3709045
+      },
+      {
+        "questId": 3708087
+      },
+      {
+        "questId": 3709044
+      },
+      {
+        "questId": 3709043
+      },
+      {
+        "questId": 3701106
+      },
+      {
+        "questId": 4704041
+      },
+      {
+        "questId": 4704036
+      },
+      {
+        "questId": 4704044
+      },
+      {
+        "questId": 4704029
+      },
+      {
+        "questId": 4704033
+      },
+      {
+        "questId": 4704040
+      },
+      {
+        "questId": 4702129
+      },
+      {
+        "questId": 3713063
+      },
+      {
+        "questId": 4702121
+      },
+      {
+        "questId": 4704050
+      },
+      {
+        "questId": 3701116
+      },
+      {
+        "questId": 5503031
+      },
+      {
+        "questId": 3708099
+      },
+      {
+        "questId": 4702123
+      },
+      {
+        "questId": 5503029
+      },
+      {
+        "questId": 4704034
+      },
+      {
+        "questId": 3705048
+      },
+      {
+        "questId": 4710036
+      },
+      {
+        "questId": 4710056
+      },
+      {
+        "questId": 4710028
+      },
+      {
+        "questId": 4710048
+      },
+      {
+        "questId": 4710044
+      },
+      {
+        "questId": 4709100
+      },
+      {
+        "questId": 4704039
+      },
+      {
+        "questId": 3705095
+      },
+      {
+        "questId": 3711030
+      },
+      {
+        "questId": 3705050
+      },
+      {
+        "questId": 3002037
+      },
+      {
+        "questId": 4702124
+      },
+      {
+        "questId": 3713058
+      },
+      {
+        "questId": 4702120
+      },
+      {
+        "questId": 3708094
+      },
+      {
+        "questId": 4706080
+      },
+      {
+        "questId": 4706067
+      },
+      {
+        "questId": 3708158
+      },
+      {
+        "questId": 4707032
+      },
+      {
+        "questId": 4709094
+      },
+      {
+        "questId": 3710043
+      },
+      {
+        "questId": 3712047
+      },
+      {
+        "questId": 3713057
+      },
+      {
+        "questId": 3708088
+      },
+      {
+        "questId": 4706076
+      },
+      {
+        "questId": 4709081
+      },
+      {
+        "questId": 3712048
+      },
+      {
+        "questId": 4710016
+      },
+      {
+        "questId": 3901028
+      },
+      {
+        "questId": 3711031
+      },
+      {
+        "questId": 3710045
+      },
+      {
+        "questId": 3712044
+      },
+      {
+        "questId": 3712043
+      },
+      {
+        "questId": 3712046
+      },
+      {
+        "questId": 3701115
+      }
+    ],
+    "subTypeName": 1486184522
+  },
+  "402": {
+    "imagePanel": "$UI_Img_Quest_ClueBgImage.png",
+    "imageItem": "$UI_Hud_Icon_Clue_Blue.png",
+    "quests": [
+      {
+        "questId": 5103008
+      }
+    ],
+    "subTypeName": 1862832501
+  }
+}

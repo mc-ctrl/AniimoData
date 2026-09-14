@@ -1,0 +1,154 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "2b0ec2d4-564b-4bd4-87ed-7bc81b874091",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          14
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "354dcb63-cb5b-4c39-853b-96a020f8a828",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 14
+    },
+    "16": {
+      "UID": "b163d295-42db-4cd0-adcd-9242cde8b230",
+      "name": "setMask",
+      "mask": {
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 17,
+      "UID": "4359a492-d7b9-4272-b641-45e32701428e"
+    },
+    "9": {
+      "duration": -1,
+      "name": "forceTaunt",
+      "UID": "f8129991-73f7-43c9-805d-a0c03c3ad588",
+      "target": "TARGET",
+      "NodeID": 9
+    },
+    "23": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.2
+      },
+      "name": "calcResult",
+      "UID": "5d7b1dca-9fcb-4b4b-b29b-d06abe89afe7",
+      "target": "CASTER",
+      "NodeID": 23
+    },
+    "21": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1.2
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 1,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Slash_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 4,
+        "impulseId": 2000
+      },
+      "UID": "8caad956-e3cc-4a4e-8369-e263f6f57a78",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 21
+    },
+    "11": {
+      "calcResultNodeId": 21,
+      "name": "actOnTargets",
+      "UID": "d0b64d71-e6ed-43f8-9828-575b9abf5a20",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            60,
+            180,
+            60,
+            60
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        21,
+        23,
+        9
+      ],
+      "impulseId": 2000,
+      "NodeID": 11
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "00672c70-6f6a-4b1b-a439-e16df4dcc2ed",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Behav_Happy"
+    },
+    "12": {
+      "UID": "2376832c-724b-4343-8243-5d9693061bc6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_10110221",
+  "NodeID": 6,
+  "UID": "779fb967-9053-4ef9-a94b-80cccdbfd63e",
+  "eventIds": [
+    4,
+    12,
+    17
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

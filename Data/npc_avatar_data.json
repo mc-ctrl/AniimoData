@@ -1,0 +1,466 @@
+{
+  "Boy_ZHX_09": {
+    "avatarId": 1200008,
+    "templateId": 4
+  },
+  "Boy_ZHX_10": {
+    "avatarId": 2100017,
+    "templateId": 4
+  },
+  "Boy_ZHX_11": {
+    "avatarId": 1200015,
+    "templateId": 4
+  },
+  "Boy_ZHX_12": {
+    "avatarId": 1200014,
+    "templateId": 4
+  },
+  "Boy_ZHX_13": {
+    "avatarId": 1200020,
+    "templateId": 4
+  },
+  "Boy_ZHX_14": {
+    "avatarId": 1200021,
+    "templateId": 4
+  },
+  "Boy_ZHX_15": {
+    "avatarId": 1200024,
+    "templateId": 4
+  },
+  "Boy_ZHX_16": {
+    "avatarId": 1200025,
+    "templateId": 4
+  },
+  "Boy_ZHX_17": {
+    "avatarId": 1200026,
+    "templateId": 4
+  },
+  "Boy_ZHX_18": {
+    "avatarId": 1200027,
+    "templateId": 4
+  },
+  "Boy_ZHX_19": {
+    "avatarId": 1200028,
+    "templateId": 4
+  },
+  "Boy_ZHX_20": {
+    "avatarId": 1200029,
+    "templateId": 4
+  },
+  "Boy_ZHX_21": {
+    "avatarId": 1200035,
+    "templateId": 4
+  },
+  "Boy_ZHX_22": {
+    "avatarId": 1200036,
+    "templateId": 4
+  },
+  "Boy_ZHX_23": {
+    "avatarId": 1200038,
+    "templateId": 4
+  },
+  "Boy_ZHX_24": {
+    "avatarId": 1200044,
+    "templateId": 4
+  },
+  "Girl_Ark_01": {
+    "avatarId": 1100012,
+    "templateId": 3
+  },
+  "Girl_Ark_02": {
+    "avatarId": 1100013,
+    "templateId": 3
+  },
+  "Girl_Ark_03": {
+    "avatarId": 1100014,
+    "templateId": 3
+  },
+  "Girl_Ark_04": {
+    "avatarId": 1100015,
+    "templateId": 3
+  },
+  "Girl_Ark_05": {
+    "avatarId": 1100016,
+    "templateId": 3
+  },
+  "Girl_Ark_06": {
+    "avatarId": 1100017,
+    "templateId": 3
+  },
+  "Girl_Ark_07": {
+    "avatarId": 1100018,
+    "templateId": 3
+  },
+  "Girl_Ark_08": {
+    "avatarId": 1100019,
+    "templateId": 3
+  },
+  "Girl_Ark_09": {
+    "avatarId": 1300008,
+    "templateId": 3
+  },
+  "Girl_Ark_10": {
+    "avatarId": 1300009,
+    "templateId": 3
+  },
+  "Girl_Ark_11": {
+    "avatarId": 1300010,
+    "templateId": 3
+  },
+  "Girl_Ark_12": {
+    "avatarId": 1300011,
+    "templateId": 3
+  },
+  "Girl_Ark_13": {
+    "avatarId": 1300012,
+    "templateId": 3
+  },
+  "Girl_Ark_14": {
+    "avatarId": 1300013,
+    "templateId": 3
+  },
+  "Girl_Ark_15": {
+    "avatarId": 1300014,
+    "templateId": 3
+  },
+  "Girl_Ark_16": {
+    "avatarId": 1300015,
+    "templateId": 3
+  },
+  "Girl_Ark_17": {
+    "avatarId": 1100020,
+    "templateId": 3
+  },
+  "Girl_Ark_18": {
+    "avatarId": 1100021,
+    "templateId": 3
+  },
+  "Girl_Ark_19": {
+    "avatarId": 1100022,
+    "templateId": 3
+  },
+  "Girl_Ark_20": {
+    "avatarId": 1100023,
+    "templateId": 3
+  },
+  "Girl_Ark_21": {
+    "avatarId": 1100024,
+    "templateId": 3
+  },
+  "Girl_Ark_22": {
+    "avatarId": 1100025,
+    "templateId": 3
+  },
+  "Girl_Ark_23": {
+    "avatarId": 1100027,
+    "templateId": 3
+  },
+  "Girl_Ark_24": {
+    "avatarId": 2100021,
+    "templateId": 3
+  },
+  "Girl_Carcamp_1": {
+    "avatarId": 1400001,
+    "templateId": 3
+  },
+  "Girl_Carcamp_2": {
+    "avatarId": 1400002,
+    "templateId": 3
+  },
+  "Girl_Carcamp_3": {
+    "avatarId": 1400003,
+    "templateId": 3
+  },
+  "Girl_Carcamp_4": {
+    "avatarId": 1400004,
+    "templateId": 3
+  },
+  "Girl_Carcamp_5": {
+    "avatarId": 1400006,
+    "templateId": 3
+  },
+  "Girl_DaoGuan_1": {
+    "avatarId": 2100027,
+    "templateId": 3
+  },
+  "Girl_DaoGuan_2": {
+    "avatarId": 2100025,
+    "templateId": 3
+  },
+  "Girl_Flute_1": {
+    "avatarId": 1100025,
+    "templateId": 3
+  },
+  "Girl_ZHX_01": {
+    "avatarId": 1100001,
+    "templateId": 3
+  },
+  "Girl_ZHX_02": {
+    "avatarId": 1100002,
+    "templateId": 3
+  },
+  "Girl_ZHX_03": {
+    "avatarId": 1100003,
+    "templateId": 3
+  },
+  "Girl_ZHX_04": {
+    "avatarId": 1100004,
+    "templateId": 3
+  },
+  "Girl_ZHX_05": {
+    "avatarId": 1100006,
+    "templateId": 3
+  },
+  "Girl_ZHX_06": {
+    "avatarId": 1100007,
+    "templateId": 3
+  },
+  "Girl_ZHX_07": {
+    "avatarId": 1100008,
+    "templateId": 3
+  },
+  "Girl_ZHX_08": {
+    "avatarId": 1100009,
+    "templateId": 3
+  },
+  "Girl_ZHX_09": {
+    "avatarId": 1100010,
+    "templateId": 3
+  },
+  "Girl_ZHX_10": {
+    "avatarId": 1100011,
+    "templateId": 3
+  },
+  "Girl_ZHX_11": {
+    "avatarId": 1200001,
+    "templateId": 3
+  },
+  "Girl_ZHX_12": {
+    "avatarId": 1200002,
+    "templateId": 3
+  },
+  "Girl_ZHX_13": {
+    "avatarId": 1200003,
+    "templateId": 3
+  },
+  "Girl_ZHX_14": {
+    "avatarId": 1200004,
+    "templateId": 3
+  },
+  "Girl_ZHX_15": {
+    "avatarId": 1200009,
+    "templateId": 3
+  },
+  "Girl_ZHX_16": {
+    "avatarId": 1200010,
+    "templateId": 3
+  },
+  "Girl_ZHX_17": {
+    "avatarId": 1200011,
+    "templateId": 3
+  },
+  "Girl_ZHX_18": {
+    "avatarId": 1200012,
+    "templateId": 3
+  },
+  "Girl_ZHX_19": {
+    "avatarId": 1200013,
+    "templateId": 3
+  },
+  "Girl_ZHX_20": {
+    "avatarId": 1200017,
+    "templateId": 3
+  },
+  "Girl_ZHX_21": {
+    "avatarId": 1200018,
+    "templateId": 3
+  },
+  "Girl_ZHX_22": {
+    "avatarId": 1200016,
+    "templateId": 3
+  },
+  "Girl_ZHX_23": {
+    "avatarId": 1200019,
+    "templateId": 3
+  },
+  "Girl_ZHX_24": {
+    "avatarId": 1200022,
+    "templateId": 3
+  },
+  "Girl_ZHX_25": {
+    "avatarId": 1200023,
+    "templateId": 3
+  },
+  "Girl_ZHX_26": {
+    "avatarId": 1200030,
+    "templateId": 3
+  },
+  "Girl_ZHX_27": {
+    "avatarId": 1200031,
+    "templateId": 3
+  },
+  "Girl_ZHX_28": {
+    "avatarId": 1200032,
+    "templateId": 3
+  },
+  "Girl_ZHX_29": {
+    "avatarId": 1200033,
+    "templateId": 3
+  },
+  "Girl_ZHX_30": {
+    "avatarId": 1200034,
+    "templateId": 3
+  },
+  "Girl_ZHX_31": {
+    "avatarId": 1200037,
+    "templateId": 3
+  },
+  "Girl_ZHX_32": {
+    "avatarId": 1200039,
+    "templateId": 3
+  },
+  "Girl_ZHX_33": {
+    "avatarId": 1200040,
+    "templateId": 3
+  },
+  "Girl_ZHX_34": {
+    "avatarId": 1200041,
+    "templateId": 3
+  },
+  "Girl_ZHX_35": {
+    "avatarId": 1200042,
+    "templateId": 3
+  },
+  "Girl_ZHX_36": {
+    "avatarId": 1200043,
+    "templateId": 3
+  },
+  "Girl_ZHX_37": {
+    "avatarId": 1200045,
+    "templateId": 3
+  },
+  "Boy_Ark_01": {
+    "avatarId": 2100001,
+    "templateId": 4
+  },
+  "Boy_Ark_02": {
+    "avatarId": 2100007,
+    "templateId": 4
+  },
+  "Boy_Ark_03": {
+    "avatarId": 2100012,
+    "templateId": 4
+  },
+  "Boy_Ark_04": {
+    "avatarId": 2100013,
+    "templateId": 4
+  },
+  "Boy_Ark_05": {
+    "avatarId": 2100014,
+    "templateId": 4
+  },
+  "Boy_Ark_06": {
+    "avatarId": 2100015,
+    "templateId": 4
+  },
+  "Boy_Ark_07": {
+    "avatarId": 1300001,
+    "templateId": 4
+  },
+  "Boy_Ark_08": {
+    "avatarId": 1300002,
+    "templateId": 4
+  },
+  "Boy_Ark_09": {
+    "avatarId": 1300003,
+    "templateId": 4
+  },
+  "Boy_Ark_10": {
+    "avatarId": 1300004,
+    "templateId": 4
+  },
+  "Boy_Ark_11": {
+    "avatarId": 1300005,
+    "templateId": 4
+  },
+  "Boy_Ark_12": {
+    "avatarId": 1300006,
+    "templateId": 4
+  },
+  "Boy_Ark_13": {
+    "avatarId": 1300007,
+    "templateId": 4
+  },
+  "Boy_Ark_14": {
+    "avatarId": 2100019,
+    "templateId": 4
+  },
+  "Boy_Ark_15": {
+    "avatarId": 2100020,
+    "templateId": 4
+  },
+  "Boy_Ark_16": {
+    "avatarId": 2100022,
+    "templateId": 4
+  },
+  "Boy_Ark_17": {
+    "avatarId": 2100023,
+    "templateId": 4
+  },
+  "Boy_Ark_18": {
+    "avatarId": 2100030,
+    "templateId": 4
+  },
+  "Boy_Carcamp_1": {
+    "avatarId": 1400005,
+    "templateId": 4
+  },
+  "Boy_Carcamp_2": {
+    "avatarId": 1400007,
+    "templateId": 4
+  },
+  "Boy_DaoGuan_2": {
+    "avatarId": 2100026,
+    "templateId": 4
+  },
+  "Boy_DaoGuan_3": {
+    "avatarId": 2100029,
+    "templateId": 4
+  },
+  "Boy_Flute_1": {
+    "avatarId": 2100018,
+    "templateId": 4
+  },
+  "Boy_ZHX_01": {
+    "avatarId": 2100006,
+    "templateId": 4
+  },
+  "Boy_ZHX_02": {
+    "avatarId": 2100008,
+    "templateId": 4
+  },
+  "Boy_ZHX_03": {
+    "avatarId": 2100009,
+    "templateId": 4
+  },
+  "Boy_ZHX_04": {
+    "avatarId": 2100010,
+    "templateId": 4
+  },
+  "Boy_ZHX_05": {
+    "avatarId": 2100011,
+    "templateId": 4
+  },
+  "Boy_ZHX_06": {
+    "avatarId": 1200005,
+    "templateId": 4
+  },
+  "Boy_ZHX_07": {
+    "avatarId": 1200006,
+    "templateId": 4
+  },
+  "Boy_ZHX_08": {
+    "avatarId": 1200007,
+    "templateId": 4
+  }
+}

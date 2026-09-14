@@ -1,0 +1,112 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_910120001",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10011_Attack",
+  "enableMaxAngleTime": 1,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 10,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "27": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.4625,
+        "instant_dmg_rate_v": 0.4625
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "battle_projectilehit_dark_s",
+        "hitCameraShakeId": 10001,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "58f82751-640a-4766-80e7-9ed42fc9490e",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        60
+      ],
+      "conditionActionIds": [
+        58
+      ],
+      "UID": "74672869-1274-4627-b897-e43d9c3c85ab",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 28
+    },
+    "60": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.02775,
+        "instant_dmg_rate_v": 0.02775
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "battle_projectilehit_dark_s",
+        "hitCameraShakeId": 10001,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "aff0f66d-f339-4cd2-ba1d-36e6467a30e9",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 60
+    },
+    "19": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "1c937282-3abe-4e6b-8d4f-569f5d994815",
+      "effectId": "Eff_Parmon_10011_Attack_Hit",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "58": {
+      "name": "isActorType",
+      "UID": "9fa5b1c7-e314-4f63-b922-11eb4b51c2b3",
+      "target": "OWNER",
+      "NodeID": 58,
+      "actorType": 3
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    19
+  ],
+  "onProjectileHitIds": [
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "calcResultNodeId": 27,
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 0.8,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

@@ -1,0 +1,116 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "duration": 1,
+      "name": "moveByDirection",
+      "UID": "ddbbf85c-78db-4704-a0bc-8364c33e8bdf",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "velocity": [
+        0,
+        5,
+        0
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 8
+    },
+    "4": {
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "name": "registerDeadEvent",
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "1cecf20d-6845-4023-aace-91ab8eea42d6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 100014,
+      "NodeID": 10,
+      "UID": "b284b741-3aa6-43f6-a28a-ac721a733e2c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 15,
+      "NodeID": 13,
+      "UID": "60370295-8b83-4814-ac74-e2b6fd24d27d",
+      "onUpdate": {
+        "actionIds": [
+          12
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          12
+        ]
+      }
+    },
+    "12": {
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            5,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 4,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "actionIds": [
+        10
+      ],
+      "NodeID": 12,
+      "UID": "8693791e-b1c4-4fa5-b10f-acae2633dac7",
+      "ignoreAbilityElement": true,
+      "needEcs": true,
+      "name": "actOnTargets"
+    }
+  },
+  "BPName": "timeline_20001",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    6,
+    9,
+    13
+  ],
+  "layer": "Base",
+  "length": 20
+}

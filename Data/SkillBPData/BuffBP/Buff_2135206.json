@@ -1,0 +1,236 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135206",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "7ed6e12b-8844-4338-abe1-5c04c576c95b",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "8": {
+      "UID": "b4df8a42-c04f-4330-801f-ec2009261feb",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "1ecc4e3f-6ec8-45b9-a033-cb0b6e233465",
+      "conditionIds": [
+        8,
+        33
+      ],
+      "name": "conditionAnd",
+      "NodeID": 9
+    },
+    "20": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2135206,
+        "instant_dmg_v": "param1",
+        "type": 1
+      },
+      "UID": "d83b63ae-4e9a-4728-8bf7-14a186a9a843",
+      "target": "OWNER",
+      "NodeID": 20,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "impulseId": 2000
+      }
+    },
+    "21": {
+      "key": "1",
+      "actionIds": [
+        20
+      ],
+      "NodeID": 21,
+      "UID": "55d2d138-b050-40f1-a04e-4c6cbcc67c99",
+      "cd": 0.5,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "388a30e8-20b2-47f7-8fe9-93ea78edd8b1",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "370f9b6c-f73d-4827-b8c4-fb9533a8bf34",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "26": {
+      "UID": "f58fc864-ee53-4990-8434-9096a32b55ae",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 26
+    },
+    "14": {
+      "name": "checkPetPrototypeId",
+      "UID": "f5f12caf-accd-4b2a-96c0-6f6fbd6e4118",
+      "target": "SRC",
+      "petPrototypeId": 1020302,
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "54a9bcf7-1d12-4bba-8c8b-f2f49db384e3",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "749383ae-192a-4e7e-a32f-d6a3a3309759",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Debuff",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "overrideAbilityType": 1,
+      "name": "setEntityOverrideDamageAbilityType",
+      "UID": "3764f4cb-e914-4274-8bbe-a545ba99d2b6",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "NodeID": 16,
+      "UID": "7a2ed82e-0b1c-4961-9fba-6f7295e5fcf6",
+      "min": 0,
+      "max": 100,
+      "name": "random"
+    },
+    "27": {
+      "calcId": 2135206,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 27,
+      "UID": "dfc1e983-dfc3-4c79-a869-871daea94f17",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "rValue": 75,
+      "name": "greater",
+      "UID": "5b3d4839-13cc-4048-b019-041692865440",
+      "NodeID": 17,
+      "lValue": {
+        "NodeID": 16,
+        "UID": "7a2ed82e-0b1c-4961-9fba-6f7295e5fcf6",
+        "min": 0,
+        "max": 100,
+        "name": "random"
+      }
+    },
+    "30": {
+      "calcInfo": {
+        "taken_normal_attack_dmg_dec_rate_v": {
+          "rValue": -1,
+          "name": "multiply",
+          "UID": "7852d6c0-1cd4-4bf8-bf00-dc50fd82f665",
+          "NodeID": 28,
+          "lValue": {
+            "calcId": 2135206,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 27,
+            "UID": "dfc1e983-dfc3-4c79-a869-871daea94f17",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "659294d4-e6af-47b2-ab0d-22649e73ee34",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 30
+    },
+    "18": {
+      "actionIds": [
+        21
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "9230020f-86a8-419b-b3ac-41f5bc064484",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    },
+    "32": {
+      "UID": "7f51d630-8612-44fb-9c55-512d08575ef0",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        30
+      ],
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "02ca31b5-8cac-4d37-8049-f54679f45b3d",
+      "name": "checkAbilityElementType",
+      "elementType": 12,
+      "NodeID": 33
+    },
+    "12": {
+      "actionIds": [
+        26,
+        10
+      ],
+      "name": "registerPostReceiveDamageEvent",
+      "UID": "be9d052d-ed9e-45b5-9649-9057d88d1b25",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e6cffffd-ebb3-42eb-bf28-8ddc38997449",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Debuff",
+      "speed": 1,
+      "NodeID": 13
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    15
+  ],
+  "onBuffStartIds": [
+    4,
+    25,
+    32,
+    12
+  ]
+}

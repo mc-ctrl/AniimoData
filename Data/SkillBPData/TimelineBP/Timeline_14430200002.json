@@ -1,0 +1,100 @@
+{
+  "nodeMap": {
+    "22": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "1a0c354e-f220-4022-83a5-b6defe597168",
+      "target": "OWNER",
+      "NodeID": 22,
+      "animId": "Skill_Sonar_End"
+    },
+    "38": {
+      "UID": "efaf0855-87d6-46fa-921f-d0adc1fe2459",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 38
+    },
+    "24": {
+      "UID": "11202696-162c-41db-9fe9-d27c36d06a94",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22,
+          33,
+          49
+        ]
+      },
+      "NodeID": 24
+    },
+    "40": {
+      "UID": "b12320cc-9839-4be0-b05c-adf7fb50030f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "NodeID": 40
+    },
+    "49": {
+      "name": "stopEffectStr",
+      "UID": "083bbf79-79dd-4055-ab08-23748949a95c",
+      "effectId": "Eff_Parmon_10443_Skill_Sonar_Screen",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "33": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 33,
+      "UID": "deb4a72e-1505-4a0a-8f0a-0d4627605ab5",
+      "aimAnim": "",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "35": {
+      "UID": "5d8ada95-2ecd-4c5c-ba44-082f689e7119",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 35
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 36,
+      "UID": "7700ff26-1a3a-4f78-9ef5-372b610dd36a"
+    }
+  },
+  "BPName": "ability_14430200",
+  "NodeID": 26,
+  "UID": "0be04ea2-2875-4c04-bbbe-a36fe453c754",
+  "eventIds": [
+    24,
+    36,
+    40
+  ],
+  "layer": "Base",
+  "length": 10
+}

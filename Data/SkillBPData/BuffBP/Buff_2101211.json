@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2101211",
+  "NodeID": 1,
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "targetPos": "OWNER",
+      "innerRadius": 4,
+      "name": "randomPoint",
+      "UID": "9f15f83a-0823-4388-85a2-88265b48bac6",
+      "radius": 5,
+      "NodeID": 4
+    },
+    "11": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2101211101,
+      "name": "createProjectile",
+      "UID": "87133113-4298-43ed-9cea-37556d3009da",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 11,
+      "targetPos": "RANDOM_POINT"
+    },
+    "6": {
+      "UID": "7fc6bed8-edde-49d1-b49e-f0e1310f93dc",
+      "name": "callClientAction",
+      "actionIds": [
+        4,
+        11
+      ],
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2112201",
+  "calcInfoByLuaConfig": {
+    "id": 2112201,
+    "taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "8c9497fb-57e7-46ee-9dfc-f6eea6990fa9",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "immuneTags": {},
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "UID": "ed1db7b6-a412-450a-a0c2-9c075b6ca168",
+      "value": {
+        "name": "getAttribute",
+        "UID": "8e2f30f6-32c4-4c22-ac5e-fc97ac6bc489",
+        "target": "OWNER",
+        "NodeID": 5,
+        "attributeName": "taken_dmg_dec_rate_v"
+      },
+      "name": "print",
+      "NodeID": 6
+    }
+  },
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

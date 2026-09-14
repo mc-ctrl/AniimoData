@@ -1,0 +1,98 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "78f4bdb2-2119-470b-bf28-6baa99eeab9f",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 3
+    },
+    "55": {
+      "name": "stopEffectStr",
+      "UID": "e559de10-8b5d-4d95-b012-38e0f686516f",
+      "effectId": "Eff_Avatar_Female_Skill_SkateBoarding_StartTrail",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "41": {
+      "UID": "c897f19b-16ca-40f6-92d3-8aee48cf9203",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 41
+    },
+    "57": {
+      "name": "stopEffectStr",
+      "UID": "bf5fe833-2400-4daa-9fe6-d9a05f65a877",
+      "effectId": "Eff_Avatar_Female_Skill_SkateBoarding_End01",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "9981beb0-b0a8-4656-90ee-2408df071528",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "Skill_Skate_End"
+    },
+    "31": {
+      "UID": "4940caae-76aa-4cbb-9ff2-37cd62d0b673",
+      "target": "OWNER",
+      "name": "stopMoveByInput",
+      "NodeID": 31
+    },
+    "29": {
+      "UID": "c7539f7f-0944-4809-85f5-1617420f7123",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          41,
+          55,
+          53
+        ]
+      },
+      "NodeID": 29
+    },
+    "56": {
+      "name": "stopEffectStr",
+      "UID": "e874aea2-85e0-450e-8adb-2785ed38ba6e",
+      "effectId": "Eff_Avatar_Female_Skill_SkateBoarding_End",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          3,
+          31,
+          57,
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 5,
+      "UID": "6a7760d6-04d6-4d81-9fd0-cb44dcbf2569"
+    },
+    "53": {
+      "UID": "cc35a5d1-ee93-406c-822a-80c0453317a8",
+      "name": "hideBubbleMsg",
+      "msgId": 2178,
+      "NodeID": 53
+    }
+  },
+  "BPName": "ability_9200006",
+  "NodeID": 7,
+  "UID": "16f1c772-bede-48f6-9b64-68e5d3b9cdb8",
+  "eventIds": [
+    29,
+    5
+  ],
+  "layer": "Base",
+  "length": 2
+}

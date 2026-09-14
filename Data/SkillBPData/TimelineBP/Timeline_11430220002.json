@@ -1,0 +1,127 @@
+{
+  "nodeMap": {
+    "38": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b1b426d5-1bc7-48d7-be27-a9fcb28be86d",
+      "target": "OWNER",
+      "NodeID": 38,
+      "animId": "Skill_Wave_End"
+    },
+    "53": {
+      "UID": "f8a7391c-6638-4f19-90fd-f9538c00ca0f",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 53
+    },
+    "40": {
+      "UID": "2deb8799-64e4-41eb-8a9c-b991a2e674dc",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          38,
+          65,
+          51
+        ]
+      },
+      "NodeID": 40
+    },
+    "56": {
+      "UID": "d8409ab0-2e75-40d2-bcc1-5072d6a2bc76",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 56
+    },
+    "57": {
+      "UID": "00d49757-8093-464b-8456-5831e8699efa",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          56
+        ]
+      },
+      "NodeID": 57
+    },
+    "65": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 65,
+      "UID": "03a8860c-dca6-4e8d-aa1f-bf93aca8ad26",
+      "val": false,
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "name": "setIsInAim",
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "blendTime": 0.5,
+      "cameraPitchOffset": 0
+    },
+    "85": {
+      "UID": "e014735c-21ca-4ccb-9bf7-2cda339b8772",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          83,
+          86
+        ]
+      },
+      "NodeID": 85
+    },
+    "83": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "79da4558-e452-4314-9477-8da907fda0c5",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_End",
+      "NodeID": 83
+    },
+    "86": {
+      "name": "stopSoundStr",
+      "UID": "7ec22b85-dc09-435a-b978-08db61ce9497",
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_Loop",
+      "target": "OWNER",
+      "NodeID": 86
+    },
+    "51": {
+      "UID": "c393cf7f-a772-4844-aada-02cc4bfa4891",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 51
+    },
+    "54": {
+      "action": {
+        "actionIds": [
+          53
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 54,
+      "UID": "3b3db276-bbd0-462a-a982-2e7dd5b01a99"
+    }
+  },
+  "BPName": "ability_11430220",
+  "NodeID": 42,
+  "UID": "01feb8a5-f5ac-45c9-8d4c-5efabf5bd3b1",
+  "eventIds": [
+    40,
+    54,
+    57,
+    85
+  ],
+  "layer": "Base",
+  "length": 1.783
+}

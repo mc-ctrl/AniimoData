@@ -1,0 +1,31 @@
+{
+  "BPName": "ability_30100020",
+  "NodeID": 1,
+  "UID": "5f7c282c-2ff6-4eb0-a771-c580949539a1",
+  "abilityParamId": 30100020,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 30100020001,
+      "name": "setCombatActionTimeline",
+      "UID": "ef3716da-afe0-4978-bc72-ceb2f1c96554",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Buff_Heal_Arrow_Up"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 0,
+  "notTurnToTarget": true,
+  "searchTargetRangeDown": 0
+}

@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91441021",
+  "calcInfoByLuaConfig": {
+    "id": 91441021,
+    "dmg_wind_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

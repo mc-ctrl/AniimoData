@@ -1,0 +1,100 @@
+{
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        9,
+        15
+      ],
+      "name": "actOnTargets",
+      "UID": "2fa3b49f-d60d-4240-aadf-fa95f0bfc687",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 5
+    },
+    "9": {
+      "target": "TARGET",
+      "duration": 1.2,
+      "buffId": 2105301,
+      "NodeID": 9,
+      "UID": "d1908c4b-210c-41a0-97e0-60aac1f586c0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "calcInfo": {
+        "add_cur_hp_fix": 0
+      },
+      "name": "calcResult",
+      "UID": "e4be0c7f-0894-4711-9fbc-62b80b06c8d5",
+      "target": "TARGET",
+      "NodeID": 15
+    },
+    "11": {
+      "name": "playEffectOnPosRot",
+      "UID": "d0ecb0c1-aaf1-458f-a4f1-02c170c146ce",
+      "effectId": "Eff_Parmon_10053_Skill_Fire_Field_Loop",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 11,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "7": {
+      "eventType": "NotifyState",
+      "endTime": 8,
+      "NodeID": 7,
+      "UID": "225ecd42-7e1d-45c3-8b15-cb2e5d34092f",
+      "onUpdate": {
+        "actionIds": [
+          5
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.5
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 12,
+      "UID": "7086439f-7b39-4861-b464-e365c6b96e7e"
+    }
+  },
+  "BPName": "timeline_2105301",
+  "NodeID": 1,
+  "UID": "b3fedcba-2213-4377-af7b-c627153799ce",
+  "eventIds": [
+    7,
+    12
+  ],
+  "layer": "Base",
+  "length": 12
+}

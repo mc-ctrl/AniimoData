@@ -1,0 +1,455 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 2156304,
+      "NodeID": 37,
+      "UID": "71c3bc13-51bb-47d3-b73d-dba15709ce08",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "38": {
+      "buffId": 2156303,
+      "name": "hasBuff",
+      "UID": "b8a6d99d-3c5b-4ae3-8ce8-42c04385906a",
+      "target": "MASTER",
+      "NodeID": 38
+    },
+    "39": {
+      "actionIds": [
+        40
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "7b84cdd2-8c86-4d0c-886c-14a2521e7ac9",
+      "name": "doActionsByConditions",
+      "NodeID": 39
+    },
+    "40": {
+      "timelineId": 2156302,
+      "time": 5,
+      "name": "fastforwardTimeline",
+      "UID": "775bc5c7-377b-44fd-94e7-02860ac6d297",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "eventName": "2156303",
+      "NodeID": 41,
+      "UID": "188d92eb-f45d-48d8-ad27-e84b7f5289ea",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        40
+      ]
+    },
+    "42": {
+      "name": "stopEffectStr",
+      "UID": "52710269-f157-467d-8c98-64d4ab203845",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_Grow",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "35": {
+      "NodeID": 35,
+      "UID": "cdabf47d-12ee-4668-99b6-df168472de0c",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_Bomb",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "44": {
+      "UID": "fb421514-91c4-49e8-9f5b-be4502496626",
+      "actorId": {
+        "UID": "487ab009-5756-4fe8-8a87-31bfa2294e07",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 43
+      },
+      "name": "destroyEntity",
+      "NodeID": 44
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b2dd253d-a512-4914-8eec-8f721733b95a",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_ChargeUp",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "4": {
+      "UID": "401d68f1-5217-4721-817d-8b2755e9f93d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11,
+          2,
+          30,
+          39,
+          41
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "07d2c254-da5c-42ca-90b4-ea403762f89c",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_ChargeUp",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "60": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "827a0a1f-6729-4bad-a61d-5eba2f97135e",
+      "soundId": "SFX_Combat_10563_Skill_BombMushroom_Grow",
+      "NodeID": 60
+    },
+    "8": {
+      "UID": "2461a70a-f94c-41a6-9f1b-9e2a1ec00984",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          33,
+          6,
+          42
+        ]
+      },
+      "NodeID": 8
+    },
+    "59": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "eb66cfcd-169c-44ab-995c-6139870b55d8",
+      "soundId": "SFX_Combat_10563_Skill_BombMushroom_Bomb",
+      "NodeID": 59
+    },
+    "9": {
+      "timelineId": 2156302,
+      "time": 1,
+      "name": "fastforwardTimeline",
+      "UID": "772b1d7f-285c-4f22-bf2c-487fd0064fb0",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "57": {
+      "name": "isActorType",
+      "UID": "69ab0b85-ff5f-4efe-8f3c-89f126bd178f",
+      "target": "TrapTarget",
+      "NodeID": 57,
+      "actorType": 3
+    },
+    "55": {
+      "calcId": 2156302,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 55,
+      "UID": "1ea2d9cd-556d-4114-92dd-6cd4787d4eda",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "eventName": "InDmg",
+      "NodeID": 11,
+      "UID": "abb57239-3f2d-4d1a-9330-5fa38a500e61",
+      "target": "CURPET",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        9
+      ]
+    },
+    "52": {
+      "calcId": 2156302,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 52,
+      "UID": "57a30989-f7d1-4583-a39f-91f1446c62cb",
+      "name": "getParamByLuaConfig"
+    },
+    "21": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 18,
+      "NodeID": 21,
+      "UID": "90866663-6b48-42bb-8d61-37f1b1945184",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 4002,
+      "actionIds": [
+        19,
+        37
+      ]
+    },
+    "25": {
+      "actionIds": [
+        23,
+        59
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "2d1d0835-2128-4f37-891d-9b13c848cb48",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "23": {
+      "key": "BombDelay",
+      "duration": 0.3,
+      "actionIds": [
+        21,
+        35,
+        29,
+        45,
+        44
+      ],
+      "NodeID": 23,
+      "UID": "d8f524eb-ae1f-4601-a542-664c5511b909",
+      "name": "addTimer"
+    },
+    "45": {
+      "name": "stopEffectStr",
+      "UID": "16f20312-34ec-4b2e-87f4-7e0011cbd7e9",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_Grow",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          46,
+          12,
+          60,
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 14,
+      "UID": "4d6f6c56-d44f-4a7d-8a35-2a4e3e41191f"
+    },
+    "46": {
+      "name": "stopEffectStr",
+      "UID": "1eb05946-3a4f-42dd-bf2d-cd3fecf90db4",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_ChargeUp",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "19": {
+      "actionIds": [
+        51
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "55ec74f2-b788-40b4-8606-aa31d90ee603",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "47": {
+      "buffId": 2156302,
+      "name": "hasBuff",
+      "UID": "e7e73ca7-4771-4987-9345-e5c8691bc957",
+      "target": "TARGET",
+      "NodeID": 47
+    },
+    "26": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "name": "registerTrapEvent",
+      "UID": "32e017a1-9abc-4dd9-94a4-b59e93a91c60",
+      "enterTrapActionIds": [
+        25
+      ],
+      "isCreationStandAlone": true,
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        2
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 2,
+      "center": "OWNER",
+      "NodeID": 26
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "de7e320c-5403-47cd-89dc-3b79feb7bcaa",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_Grow",
+      "speed": 1,
+      "NodeID": 12
+    },
+    "30": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "485941c7-fbe8-4bb0-b2b6-b18f6a4d0e38",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 30
+    },
+    "29": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "3746b750-584c-4858-8bcf-f8fc6c5720f3",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 29
+    },
+    "18": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2156302,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "542c5c04-8d1c-4036-a0bf-6a142f5dbb0f",
+      "target": "TARGET",
+      "NodeID": 18,
+      "attackData": {
+        "hitFrameFreezeId": 10024,
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "impulseId": 4002,
+        "hitSoundStr": "",
+        "elementType": 6
+      }
+    },
+    "32": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "0acaf30a-e39a-4608-a954-28c7ebd6f184",
+      "NodeID": 32,
+      "lValue": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "3baf4278-814c-4829-b035-d47a719775fb",
+        "target": "OWNER",
+        "NodeID": 31
+      }
+    },
+    "33": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "f415af36-39c7-4457-8cc5-0443b81d9a11",
+      "name": "doActionsByConditions",
+      "NodeID": 33
+    },
+    "51": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "rValue": {
+              "calcId": 2156302,
+              "calcType": 4,
+              "paramName": "param1",
+              "NodeID": 55,
+              "UID": "1ea2d9cd-556d-4114-92dd-6cd4787d4eda",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "add",
+            "UID": "17ff0474-97a2-4d87-84f2-8f8bbada4502",
+            "NodeID": 56,
+            "lValue": 1
+          },
+          "name": "multiply",
+          "UID": "0dcdbaf0-e771-44b2-8750-0af545298f1b",
+          "NodeID": 53,
+          "lValue": {
+            "calcId": 2156302,
+            "calcType": 4,
+            "paramName": "param0",
+            "NodeID": 52,
+            "UID": "57a30989-f7d1-4583-a39f-91f1446c62cb",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10024,
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "impulseId": 4002,
+        "hitSoundStr": "",
+        "elementType": 6
+      },
+      "UID": "dd9019cf-ec6e-4803-8bf2-d7fdca48b733",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 51
+    },
+    "36": {
+      "NodeID": 36,
+      "UID": "e1b79cff-c7e1-487d-8cd6-8bed68c13c1b",
+      "effectId": "Eff_Parmon_10563_Skill_BombMushroom_End",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    }
+  },
+  "BPName": "timeline_2156302",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    4,
+    14,
+    8
+  ],
+  "layer": "Base",
+  "length": 80
+}

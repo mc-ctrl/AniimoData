@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91231011",
+  "calcInfoByLuaConfig": {
+    "id": 91231011,
+    "caster_heal_add_ratio": "param1",
+    "type": 1
+  },
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

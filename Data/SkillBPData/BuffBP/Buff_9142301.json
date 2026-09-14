@@ -1,0 +1,169 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9142301",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    8,
+    9
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "b363b522-b8e2-463b-bec3-805946b437d2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 8
+    },
+    "13": {
+      "calcId": 9142301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "a310ff6d-9a82-4cd5-a2fe-8482f31536b5",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "attributeName": "hp_cur",
+      "UID": "bf868608-3706-456b-b7ce-d7936984f23e",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 9
+    },
+    "14": {
+      "calcId": 9142301,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 14,
+      "UID": "d24d047f-62b9-4b61-adc0-527d662ae4c6",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "UID": "e403095d-a302-4273-aa24-53b5783ee99f",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 17
+    },
+    "16": {
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": {
+          "calcId": 9142301,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 14,
+          "UID": "d24d047f-62b9-4b61-adc0-527d662ae4c6",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "isClearOld": true,
+      "UID": "95c1bd1f-1e1e-4875-aa8e-9feea7204fe8",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 16
+    },
+    "7": {
+      "rValue": {
+        "calcId": 9142301,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 14,
+        "UID": "d24d047f-62b9-4b61-adc0-527d662ae4c6",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "greater",
+      "UID": "df5c6d2c-9f2c-429b-b581-ecfe7724c1ce",
+      "NodeID": 7,
+      "lValue": {
+        "rValue": {
+          "calcId": 9142301,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 13,
+          "UID": "a310ff6d-9a82-4cd5-a2fe-8482f31536b5",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "c64ad93d-f0d1-4c5c-a134-b02bdce9bd3a",
+        "NodeID": 6,
+        "lValue": {
+          "rValue": 100,
+          "name": "multiply",
+          "UID": "85a56748-d18f-4dda-9644-aca670518d8e",
+          "NodeID": 5,
+          "lValue": {
+            "rValue": {
+              "UID": "330e6c07-b93f-4787-ac99-4b04578d240b",
+              "target": "OWNER",
+              "name": "getHpRatio",
+              "NodeID": 3
+            },
+            "name": "sub",
+            "UID": "db803177-117a-4e55-807a-f7c087d313eb",
+            "NodeID": 4,
+            "lValue": 1
+          }
+        }
+      }
+    },
+    "12": {
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": {
+          "rValue": {
+            "calcId": 9142301,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 13,
+            "UID": "a310ff6d-9a82-4cd5-a2fe-8482f31536b5",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "c64ad93d-f0d1-4c5c-a134-b02bdce9bd3a",
+          "NodeID": 6,
+          "lValue": {
+            "rValue": 100,
+            "name": "multiply",
+            "UID": "85a56748-d18f-4dda-9644-aca670518d8e",
+            "NodeID": 5,
+            "lValue": {
+              "rValue": {
+                "UID": "330e6c07-b93f-4787-ac99-4b04578d240b",
+                "target": "OWNER",
+                "name": "getHpRatio",
+                "NodeID": 3
+              },
+              "name": "sub",
+              "UID": "db803177-117a-4e55-807a-f7c087d313eb",
+              "NodeID": 4,
+              "lValue": 1
+            }
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "381e883d-56ad-4fba-a9d1-f1b5e89d315e",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    17
+  ],
+  "onBuffStartIds": [
+    8,
+    9
+  ]
+}

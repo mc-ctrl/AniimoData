@@ -1,0 +1,68 @@
+{
+  "BPName": "ability_12930000",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 14000000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        77
+      ],
+      "conditionActionIds": [
+        70
+      ],
+      "UID": "1898019f-cd27-4b67-b446-ba3ef0cd128a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "70": {
+      "buffId": 2129301,
+      "name": "hasBuff",
+      "UID": "8d3c8a65-2929-4ba4-a6b6-76d2eb4cb49b",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "7": {
+      "timelineId": 12930000001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "77": {
+      "timelineId": 12930004001,
+      "name": "setCombatActionTimeline",
+      "UID": "86408016-f54f-4a2a-ab30-635fc25c7058",
+      "target": "CASTER",
+      "NodeID": 77
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Electric_Blunt",
+    "Eff_Parmon_10293_Attack_LightningBall_Small"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    12930001,
+    12930002,
+    12930003
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

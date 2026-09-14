@@ -1,0 +1,80 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010025",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "UID": "ec23ec84-f852-42d1-a77c-63bb70127d10",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "33152a34-bf14-4fb7-9149-0b4aaa159908",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "calcInfo": {
+        "add_cur_hp_max_p": {
+          "calcId": 270010025,
+          "calcType": 1,
+          "paramName": "param1",
+          "NodeID": 2,
+          "UID": "46c09361-02b2-47d8-9512-174c13f459c9",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "calcResult",
+      "UID": "642e1e35-c09c-49a5-b384-26eba7d9c2ec",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "calcId": 270010025,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "56e33cfe-8a1b-483c-9434-c6868e2a8e7b",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "UID": "f200b51f-3e71-4a32-b9a4-1d16c4019131",
+      "target": "OWNER",
+      "name": "isTargetActiveForBattle",
+      "NodeID": 8
+    },
+    "7": {
+      "delay": 0,
+      "interval": {
+        "calcId": 270010025,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 6,
+        "UID": "56e33cfe-8a1b-483c-9434-c6868e2a8e7b",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "1bf461b4-cdd5-4193-82bd-89c4a1039ea4",
+      "name": "buffStartThink",
+      "NodeID": 7
+    },
+    "2": {
+      "calcId": 270010025,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 2,
+      "UID": "46c09361-02b2-47d8-9512-174c13f459c9",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

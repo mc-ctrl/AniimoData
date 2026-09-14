@@ -1,0 +1,41 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1000001",
+  "NodeID": 1,
+  "UID": "f766885b-6115-4e74-bddd-a59602e3750d",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcInfo": {},
+      "name": "calcResult",
+      "UID": "13556d59-8b7f-4965-bc2e-dbc7ab6b4908",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 1000001,
+      "NodeID": 7,
+      "UID": "b2d294d8-f7db-48cf-b67c-a89f7c7306fb",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "UID": "29f449d0-3ddf-412e-adb8-8715d7f3cd0d",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 5
+    }
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

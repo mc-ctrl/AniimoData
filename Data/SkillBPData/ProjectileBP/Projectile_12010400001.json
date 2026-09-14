@@ -1,0 +1,64 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12010400",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10212_Attack01",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "minAngularOffset": 50,
+  "moveSpeed": 10,
+  "onProjectileHitIds": [
+    27,
+    39,
+    42
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 1,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "trackingNoOffsetRotationRange": 5,
+  "tickInterval": 0,
+  "nodeMap": {
+    "27": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.4
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "SFX_Combat_10232_Skill_ShadowCure_02",
+        "elementType": 0
+      },
+      "UID": "ef68e44f-1387-44c1-9700-117783bf4869",
+      "target": "MASTER",
+      "name": "calcResult",
+      "NodeID": 27
+    },
+    "42": {
+      "id": 2008,
+      "duration": 3,
+      "NodeID": 42,
+      "UID": "63bd3eca-7074-4f31-922b-9f78aea8b6b9",
+      "name": "showBossMechanismTip",
+      "hasCountDown": false
+    },
+    "39": {
+      "target": "MASTER",
+      "name": "playEffectStr",
+      "UID": "7fc36745-d796-40b4-add5-1bae847b8f16",
+      "effectId": "Eff_Parmon_Futternym_10232_Skill_Shadowcure_05",
+      "speed": 1,
+      "NodeID": 39
+    }
+  },
+  "startSleepTime": 0,
+  "calcResultNodeId": 27,
+  "groundSweepRadius": 0.05,
+  "duration": 3.2,
+  "acceleration": 0
+}

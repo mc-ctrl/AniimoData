@@ -1,0 +1,410 @@
+{
+  "64669383": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -476.68,
+      24.9,
+      1977.15
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669383,
+    "SpawnState": 0,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "levelAreaConfigId": 2012,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669378,
+          64669379,
+          64669380,
+          64669381,
+          64669382
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 2012,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669385": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -475.07,
+      44.15,
+      1977.37
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669385,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669384
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669387": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -469.24,
+      43.53,
+      1974.63
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669387,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669386
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669392": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -487.32,
+      25.5,
+      1984.04
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669392,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669388,
+          64669389,
+          64669390,
+          64669391
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669394": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -477.59,
+      20.81,
+      1987.57
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669394,
+    "SpawnState": 0,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "levelAreaConfigId": 2012,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669393
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 2012,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669396": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -475.03,
+      51.81,
+      1988.5
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669396,
+    "SpawnState": 0,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "levelAreaConfigId": 2012,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669395
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 2012,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669398": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -466.94,
+      32.62,
+      1984.78
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669398,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669397
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669402": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -483.08,
+      46.15,
+      1973.1
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669402,
+    "SpawnState": 0,
+    "isAuto": false,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "levelAreaConfigId": 2012,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669399,
+          64669400,
+          64669401
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 2012,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669407": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -479.81,
+      36.87,
+      1986.52
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669407,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669403,
+          64669404,
+          64669405,
+          64669406
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669410": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -486.15,
+      34.87,
+      1978.59
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669410,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669408,
+          64669409
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669412": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -471.81,
+      39.24,
+      1984.22
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669412,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669411
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669414": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -478.45,
+      56.56,
+      1991.63
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669414,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669413
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669375": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -471.44,
+      42.57,
+      1983.91
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669375,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669374
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "64669377": {
+    "spawnType": 0,
+    "owner": "曹一宁",
+    "sandboxType": 0,
+    "position": [
+      -471.43,
+      43.42,
+      1983.53
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 64669373,
+    "id": 64669377,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 45329648,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          64669376
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

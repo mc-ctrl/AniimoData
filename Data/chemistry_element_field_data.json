@@ -1,0 +1,319 @@
+{
+  "232": {
+    "duration": 30,
+    "relation": 1,
+    "showDebugPrefab": true,
+    "burning": 1,
+    "tick_interval": 0,
+    "calc_interval": 0.5,
+    "element_kind": "Fire",
+    "element_shape_extent": [
+      0.5,
+      0.5,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "3004": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Water",
+    "element_shape_extent": [
+      0.5,
+      2,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "236": {
+    "duration": 10,
+    "trigger_id1": 32,
+    "relation": 1,
+    "trigger_id2": 32,
+    "tick_interval": 0,
+    "calc_interval": 0.5,
+    "element_kind": "Electric",
+    "element_shape_extent": 1.5,
+    "element_shape_kind": 1
+  },
+  "131": {
+    "duration": 30,
+    "trigger_id1": 13101,
+    "relation": 1,
+    "max_calc_num_single": 1,
+    "tick_interval": 0,
+    "attachEffects": [
+      "Eff_Common_Element_IceFog"
+    ],
+    "fragment": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Ice",
+    "element_shape_extent": [
+      1,
+      1,
+      1
+    ],
+    "element_shape_kind": 2
+  },
+  "3001": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Water",
+    "element_shape_extent": [
+      1
+    ],
+    "element_shape_kind": 1
+  },
+  "132": {
+    "duration": 30,
+    "trigger_id1": 13201,
+    "relation": 1,
+    "max_calc_num_single": 1,
+    "tick_interval": 0,
+    "attachEffects": [
+      "Eff_Common_Element_RockFog"
+    ],
+    "fragment": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Rock",
+    "element_shape_extent": [
+      1,
+      1,
+      1
+    ],
+    "element_shape_kind": 2
+  },
+  "100": {
+    "duration": 10,
+    "trigger_id2": {
+      "Ice": 10002,
+      "Rock": 10003
+    },
+    "trigger_id1": 10001,
+    "relation": 1,
+    "extentAttachEffects": {
+      "Ice": [
+        "Eff_Common_Element_IceCyclone"
+      ],
+      "Rock": [
+        "Eff_Common_Element_RockFog"
+      ]
+    },
+    "max_calc_num_single": 10,
+    "move_speed": 2,
+    "tag_check_trigger_id": 10000,
+    "sound": "battle_pets_charizard_skill02_loop",
+    "attachEffects": [
+      "Eff_Debug"
+    ],
+    "tick_interval": 0,
+    "calc_interval": 0.2,
+    "element_kind": "Wind",
+    "element_shape_extent": [
+      1
+    ],
+    "element_shape_kind": 1
+  },
+  "3002": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Water",
+    "element_shape_extent": [
+      0.5,
+      2,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "3003": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Water",
+    "element_shape_extent": [
+      0.5,
+      2,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "101": {
+    "tick_interval": 0,
+    "transparent": true,
+    "trigger_id1": 10011,
+    "weather_interval": 1.5,
+    "weather_kind": "Rain",
+    "weather_trigger": 10012,
+    "weatherResId": "Eff_LocalWeather_01",
+    "voxel_trigger": 10013,
+    "duration": 30,
+    "calc_interval": 2,
+    "element_kind": "None",
+    "element_shape_extent": [
+      25
+    ],
+    "element_shape_kind": 1
+  },
+  "4002": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Fire",
+    "element_shape_extent": [
+      0.5,
+      2,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "4004": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Fire",
+    "element_shape_extent": [
+      0.5,
+      2,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "4003": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Fire",
+    "element_shape_extent": [
+      0.5,
+      2,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "234": {
+    "duration": 99,
+    "min_overlay_dis": 3,
+    "trigger_id1": 2341,
+    "relation": 1,
+    "burning": 1,
+    "vanish_time": 2,
+    "attachEffects": [
+      "Eff_Sprite_Arceus_Skill1_Fire"
+    ],
+    "tick_interval": 0,
+    "calc_interval": 1,
+    "element_kind": "Fire",
+    "element_shape_extent": [
+      4
+    ],
+    "element_shape_kind": 1
+  },
+  "4001": {
+    "tick_interval": 0,
+    "duration": 30,
+    "showDebugPrefab": true,
+    "relation": 1,
+    "calc_interval": 0.5,
+    "element_kind": "Fire",
+    "element_shape_extent": [
+      1
+    ],
+    "element_shape_kind": 1
+  },
+  "1111": {
+    "duration": 31,
+    "relation": 1,
+    "showDebugPrefab": true,
+    "tick_interval": 0,
+    "is_permanent": true,
+    "calc_interval": 0.5,
+    "element_kind": "Water",
+    "element_shape_extent": [
+      1
+    ],
+    "element_shape_kind": 1
+  },
+  "12": {
+    "fragile": 1,
+    "duration": 30,
+    "relation": 1,
+    "tick_interval": 0,
+    "attachEffects": [
+      "Eff_Common_Element_IceBlock"
+    ],
+    "break_template": 131,
+    "calc_interval": 0.5,
+    "element_kind": "Ice",
+    "element_shape_extent": [
+      1.5
+    ],
+    "element_shape_kind": 1
+  },
+  "233": {
+    "duration": 60,
+    "min_overlay_dis": 1.5,
+    "relation": 1,
+    "waterPool": 1,
+    "voxel_trigger": 10014,
+    "attachEffects": [
+      "Eff_Sprite_Greninja_Skill_1_Hit2"
+    ],
+    "tick_interval": 0,
+    "calc_interval": 0.5,
+    "element_kind": "Water",
+    "element_shape_extent": [
+      2.5
+    ],
+    "element_shape_kind": 1
+  },
+  "1112": {
+    "duration": 30,
+    "relation": 1,
+    "showDebugPrefab": true,
+    "tick_interval": 0,
+    "is_permanent": true,
+    "calc_interval": 0.5,
+    "element_kind": "Fire",
+    "element_shape_extent": [
+      0.5,
+      0.5,
+      3
+    ],
+    "element_shape_kind": 2
+  },
+  "235": {
+    "duration": 1,
+    "trigger_id1": 2351,
+    "relation": 1,
+    "max_calc_num_single": 1,
+    "voxel_trigger": 10015,
+    "tick_interval": 0,
+    "attachEffects": [
+      "Eff_Sprite_Garchomp_Skill2_Thunderstorm"
+    ],
+    "max_voxel_trigger_num": 1,
+    "calc_interval": 0.2,
+    "element_kind": "Electric",
+    "element_shape_extent": [
+      3.5
+    ],
+    "element_shape_kind": 1
+  }
+}

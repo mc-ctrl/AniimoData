@@ -1,0 +1,98 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9119103",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0.2,
+      "interval": 1,
+      "UID": "f5b61d35-81c4-4059-8301-4f0799e53e77",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "13": {
+      "buffId": 91191031,
+      "name": "removeBuff",
+      "UID": "bc16e953-5259-4efe-a3b1-27a0e8394d53",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "a4592420-a92a-4dc6-bd2b-bf537d32663b",
+      "NodeID": 6,
+      "lValue": {
+        "voxelTag": "waterPool",
+        "radius": 1,
+        "UID": "0032987c-7096-485d-82ae-3e25b3156da3",
+        "NodeID": 5,
+        "name": "getVoxelNum"
+      }
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91191031,
+      "NodeID": 10,
+      "UID": "8512383a-527d-4a6f-bed9-46c7f2e727f0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "e5bd5ee8-717f-430e-9122-8289137813b3",
+      "NodeID": 15,
+      "lValue": {
+        "key": "waterPool",
+        "name": "getCacheVal",
+        "UID": "5c53f41f-e16a-4987-a0d2-66932765affa",
+        "target": "OWNER",
+        "NodeID": 14
+      }
+    },
+    "8": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "5e716c4d-0efb-42ec-ad47-43bb8ec8d9fc",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 8
+    },
+    "12": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "d36a0804-feb9-4ec1-b26e-506f68209bcb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

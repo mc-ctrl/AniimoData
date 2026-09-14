@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "atk_p": 0.1
+  },
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": [
+    10
+  ],
+  "BPName": "buff_10020",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Attack_Arrow_Up"
+    }
+  ]
+}

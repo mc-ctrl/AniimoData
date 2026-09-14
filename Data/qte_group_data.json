@@ -1,0 +1,105 @@
+{
+  "QTE_10122_MomentEnergy": {
+    "failEvent": "qteGroupFail",
+    "successEvent": "qteGroupSuccessPiano",
+    "SuccessByPartCount": 1
+  },
+  "QTE_10122_Piano": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccessPiano",
+    "SuccessByPartCount": 1
+  },
+  "QTE_10451_EggCharge": {
+    "failEvent": "qteGroupFail",
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 1
+  },
+  "QTE_10471_Combo": {
+    "failEvent": "qteGroupFail",
+    "successEvent": "qteGroupSuccessPiano",
+    "SuccessByPartCount": 1
+  },
+  "QTE_Become_Egg_Free": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 99
+  },
+  "QTE_Combo": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 99
+  },
+  "QTE_Combo_Test": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 99
+  },
+  "QTE_Continous_Button": {},
+  "QTE_DIGEGG01": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 1
+  },
+  "QTE_DIGEGG02": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 1
+  },
+  "QTE_Group_Avatar_Skill_Cure": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 3
+  },
+  "QTE_Group_Avatar_Skill_FirstAid": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 1
+  },
+  "QTE_Group_Avatar_Skill_Inspire": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 3
+  },
+  "QTE_WRS_CompetitionMid": {
+    "failEvent": "qteGroupFail",
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 99
+  },
+  "QTE_WRS_CompetitionHard": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 99
+  },
+  "QTE_WRS_Competition": {
+    "failEvent": "qteGroupFail",
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 99
+  },
+  "QTE_Group_Test_01": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccess",
+    "SuccessByPartCount": 1
+  },
+  "QTE_10122_Current": {
+    "failEvent": "qteGroupFail",
+    "successEvent": "qteGroupSuccessPiano",
+    "SuccessByPartCount": 1
+  },
+  "QTE_10122_Dance": {
+    "failEvent": "qteGroupFail",
+    "qteType1": 1,
+    "successEvent": "qteGroupSuccessDance",
+    "SuccessByPartCount": 1
+  }
+}

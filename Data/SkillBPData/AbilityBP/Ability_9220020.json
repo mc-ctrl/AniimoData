@@ -1,0 +1,143 @@
+{
+  "BPName": "ability_9220020",
+  "NodeID": 1,
+  "UID": "35caa4eb-5cd4-42c1-8d43-a8c3a62be263",
+  "desc": "使用规则之力远程抓取物体的能力。",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "4": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.35
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "impulseId": 3000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      },
+      "UID": "a420f260-606d-48d2-bb74-71ca43820d10",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 4
+    },
+    "6": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 4,
+      "NodeID": 6,
+      "UID": "1912b293-6ecc-4fdc-a7d8-bdca54249eb4",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "HIT",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        4,
+        12
+      ]
+    },
+    "10": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "7d42c991-81bc-48fe-ac7a-e5070d92d1d5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "8": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "b34269b1-2fae-41f5-b9f8-878227ec3e37",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "17": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "392d17d7-a5df-4730-8370-7088ce7de050",
+      "NodeID": 17,
+      "lValue": {
+        "key": "flyingState",
+        "name": "getServerCacheVal",
+        "UID": "256d1ffa-d576-4466-91d1-ee56c47053a4",
+        "target": "TARGET",
+        "NodeID": 16
+      }
+    },
+    "9": {
+      "name": "enableMagnesisState",
+      "UID": "f7d8eeb6-5ff6-43d5-a419-d738e1183797",
+      "NodeID": 9,
+      "enableQuickGrab": false,
+      "onTriggerHitIds": [
+        8
+      ]
+    },
+    "18": {
+      "UID": "f1b59425-af46-4931-8830-b9c1f7b8a215",
+      "target": "CASTER",
+      "name": "isInBattleField",
+      "NodeID": 18
+    },
+    "34": {
+      "timelineId": 9220020001,
+      "name": "setCombatActionTimeline",
+      "UID": "9a87f6ff-5db2-4078-97a5-43daf3dd1da0",
+      "target": "CASTER",
+      "NodeID": 34
+    },
+    "12": {
+      "calcInfo": {},
+      "name": "calcResult",
+      "UID": "f7e3dfac-4c28-41d7-9012-ca04e3443442",
+      "target": "CASTER",
+      "NodeID": 12
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0,
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "shortDesc": "远程抓取物体和投掷。",
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 9220020,
+  "name": "引力掌控"
+}

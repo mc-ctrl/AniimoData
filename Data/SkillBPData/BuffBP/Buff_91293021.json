@@ -1,0 +1,182 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91293021",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "rValue": 10,
+      "name": "equal",
+      "UID": "97e3da6e-250c-4f79-b662-2ed5adb591d5",
+      "NodeID": 5,
+      "lValue": {
+        "UID": "003856e0-051d-4685-b23f-4181484d37c4",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 4
+      }
+    },
+    "38": {
+      "NodeID": 38,
+      "UID": "b09b28bd-7b56-437a-968d-06ca9721d6e1",
+      "applyAbilityIds": {},
+      "applyToFinalSkill": true,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 3,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 32,
+      "name": "setIntensitySkillStyle"
+    },
+    "24": {
+      "rValue": 30,
+      "name": "equal",
+      "UID": "6745af5e-c72a-41b2-bab2-0d951c0f4ed6",
+      "NodeID": 24,
+      "lValue": {
+        "UID": "cd5798ff-54b4-4bc6-9bf1-59ea51992a3e",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 23
+      }
+    },
+    "6": {
+      "UID": "f1e5b007-5567-47d1-8494-b691b4476e9d",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "rValue": 20,
+      "name": "equal",
+      "UID": "5e786535-5f6c-485c-af6b-08d45599ecc3",
+      "NodeID": 10,
+      "lValue": {
+        "UID": "2fd3de59-dbd9-453a-a6f9-bab4dd15b10c",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 9
+      }
+    },
+    "25": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "16653207-37d1-4eb6-8d71-e18e626babd1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        33
+      ],
+      "NodeID": 25
+    },
+    "26": {
+      "buffId": 91293021,
+      "name": "removeBuff",
+      "UID": "aab68cce-19f9-438d-a315-5faa9fa56ca5",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "28": {
+      "actionIds": [
+        26,
+        36
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "d6b764ae-9128-4040-938c-8507356a5899",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "37": {
+      "name": "checkPetPrototypeId",
+      "UID": "deb746e5-be91-4226-bba7-e57fbe732832",
+      "target": "OWNER",
+      "petPrototypeId": 1029100,
+      "NodeID": 37
+    },
+    "30": {
+      "NodeID": 30,
+      "UID": "6d1b4a9a-b434-4fec-b22b-570a9ac4c49c",
+      "applyAbilityIds": [
+        12930100,
+        12930200,
+        12930300,
+        12930301,
+        12930201
+      ],
+      "applyToFinalSkill": true,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 3,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 32,
+      "name": "setIntensitySkillStyle"
+    },
+    "32": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "82a63ad0-c0f0-4a77-9c72-4ab9df19a0b5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        30
+      ],
+      "NodeID": 32
+    },
+    "11": {
+      "UID": "86182c51-d742-40c7-a0f1-094cb459c3e0",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "33": {
+      "NodeID": 33,
+      "UID": "345b90a4-ef7a-4172-b5b0-92b822e4d4aa",
+      "applyToFinalSkill": true,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "36": {
+      "calcInfo": {
+        "passive_energy_cur": -30
+      },
+      "name": "calcResult",
+      "UID": "5a89dd0c-f238-43cc-9e4f-646c4b685899",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    6,
+    11,
+    25
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    33
+  ],
+  "onBuffStartIds": [
+    28
+  ]
+}

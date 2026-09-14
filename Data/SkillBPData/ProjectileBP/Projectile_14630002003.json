@@ -1,0 +1,40 @@
+{
+  "duration": 0.3,
+  "BPName": "ability_14630002",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10463_Attack_03_01",
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "63": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "6016c203-1c93-470a-bd50-6adc6eedfdfa",
+      "effectId": "Eff_Parmon_10463_Attack_03_End",
+      "speed": 1,
+      "NodeID": 63
+    }
+  },
+  "maxHeightOffset": 5,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    63
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 9999,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "stickPitchMaxOffset": 40,
+  "tickInterval": 0.1,
+  "stickGravity": 0.5,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.05,
+  "heightAboveGround": 0.4,
+  "acceleration": 0
+}

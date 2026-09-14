@@ -1,0 +1,4506 @@
+{
+  "10200026": {
+    "personalityDes": 204,
+    "typeName": "音乐烘干机",
+    "mbti": "N",
+    "level": 6,
+    "priority": 5,
+    "typeId": 1020002,
+    "electricModeFormulaList": [
+      40100731,
+      40100721,
+      40101331,
+      40100741,
+      40100711,
+      40100681,
+      40100661,
+      40101381,
+      40100691,
+      40100761
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4010073,
+      4010072,
+      4010133,
+      4010074,
+      4010071,
+      4010068,
+      4010066,
+      4010138,
+      4010069,
+      4010076
+    ],
+    "outputLimit": 10
+  },
+  "10200027": {
+    "personalityDes": 204,
+    "typeName": "音乐烘干机",
+    "mbti": "N",
+    "level": 7,
+    "priority": 5,
+    "typeId": 1020002,
+    "electricModeFormulaList": [
+      40100731,
+      40100721,
+      40101331,
+      40100741,
+      40100711,
+      40100681,
+      40100661,
+      40101381,
+      40100691,
+      40100761,
+      40100701,
+      40100751
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 105,
+    "facilityType": 8,
+    "formulaList": [
+      4010073,
+      4010072,
+      4010133,
+      4010074,
+      4010071,
+      4010068,
+      4010066,
+      4010138,
+      4010069,
+      4010076,
+      4010070,
+      4010075
+    ],
+    "outputLimit": 10
+  },
+  "10200031": {
+    "personalityDes": 203,
+    "typeName": "抓夹烹饪炉",
+    "mbti": "S",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020003,
+    "electricModeFormulaList": [
+      40100531,
+      40200671,
+      40101491
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010053,
+      4020067,
+      4010149
+    ],
+    "outputLimit": 10
+  },
+  "10200032": {
+    "personalityDes": 203,
+    "typeName": "抓夹烹饪炉",
+    "mbti": "S",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020003,
+    "electricModeFormulaList": [
+      40100531,
+      40200671,
+      40101491,
+      40101911
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010053,
+      4020067,
+      4010149,
+      4010191
+    ],
+    "outputLimit": 10
+  },
+  "10200033": {
+    "personalityDes": 203,
+    "typeName": "抓夹烹饪炉",
+    "mbti": "S",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020003,
+    "electricModeFormulaList": [
+      40100531,
+      40200671,
+      40101491,
+      40101911,
+      40101541,
+      40101621,
+      40101661
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010053,
+      4020067,
+      4010149,
+      4010191,
+      4010154,
+      4010162,
+      4010166
+    ],
+    "outputLimit": 10
+  },
+  "10200034": {
+    "personalityDes": 203,
+    "typeName": "抓夹烹饪炉",
+    "mbti": "S",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020003,
+    "electricModeFormulaList": [
+      40100531,
+      40200671,
+      40101491,
+      40101911,
+      40101541,
+      40101621,
+      40101661,
+      40101601,
+      40101041
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010053,
+      4020067,
+      4010149,
+      4010191,
+      4010154,
+      4010162,
+      4010166,
+      4010160,
+      4010104
+    ],
+    "outputLimit": 10
+  },
+  "10200035": {
+    "personalityDes": 203,
+    "typeName": "抓夹烹饪炉",
+    "mbti": "S",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020003,
+    "electricModeFormulaList": [
+      40100531,
+      40200671,
+      40101491,
+      40101911,
+      40101541,
+      40101621,
+      40101661,
+      40101601,
+      40101041,
+      40101011,
+      40100771
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010053,
+      4020067,
+      4010149,
+      4010191,
+      4010154,
+      4010162,
+      4010166,
+      4010160,
+      4010104,
+      4010101,
+      4010077
+    ],
+    "outputLimit": 10
+  },
+  "10200036": {
+    "personalityDes": 203,
+    "typeName": "抓夹烹饪炉",
+    "mbti": "S",
+    "level": 6,
+    "priority": 5,
+    "typeId": 1020003,
+    "electricModeFormulaList": [
+      40100531,
+      40200671,
+      40101491,
+      40101911,
+      40101541,
+      40101621,
+      40101661,
+      40101601,
+      40101041,
+      40101011,
+      40100771,
+      40100511,
+      40100561
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4010053,
+      4020067,
+      4010149,
+      4010191,
+      4010154,
+      4010162,
+      4010166,
+      4010160,
+      4010104,
+      4010101,
+      4010077,
+      4010051,
+      4010056
+    ],
+    "outputLimit": 10
+  },
+  "10200037": {
+    "personalityDes": 203,
+    "typeName": "抓夹烹饪炉",
+    "mbti": "S",
+    "level": 7,
+    "priority": 5,
+    "typeId": 1020003,
+    "electricModeFormulaList": [
+      40100531,
+      40200671,
+      40101491,
+      40101911,
+      40101541,
+      40101621,
+      40101661,
+      40101601,
+      40101041,
+      40101011,
+      40100771,
+      40100511,
+      40100561,
+      40101131,
+      40101441,
+      40200721
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 105,
+    "facilityType": 8,
+    "formulaList": [
+      4010053,
+      4020067,
+      4010149,
+      4010191,
+      4010154,
+      4010162,
+      4010166,
+      4010160,
+      4010104,
+      4010101,
+      4010077,
+      4010051,
+      4010056,
+      4010113,
+      4010144,
+      4020072
+    ],
+    "outputLimit": 10
+  },
+  "10200043": {
+    "personalityDes": 206,
+    "typeName": "摩天轮纺车",
+    "mbti": "F",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020004,
+    "electricModeFormulaList": [
+      40100391,
+      40100401,
+      40100421,
+      40100431,
+      40100411
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010039,
+      4010040,
+      4010042,
+      4010043,
+      4010041
+    ],
+    "outputLimit": 10
+  },
+  "10200044": {
+    "personalityDes": 206,
+    "typeName": "摩天轮纺车",
+    "mbti": "F",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020004,
+    "electricModeFormulaList": [
+      40100391,
+      40100401,
+      40100421,
+      40100431,
+      40100411,
+      40101931
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010039,
+      4010040,
+      4010042,
+      4010043,
+      4010041,
+      4010193
+    ],
+    "outputLimit": 10
+  },
+  "10200051": {
+    "personalityDes": 202,
+    "typeName": "留声制香台",
+    "mbti": "I",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020005,
+    "electricModeFormulaList": [
+      40100271
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010027
+    ],
+    "outputLimit": 10
+  },
+  "10200052": {
+    "personalityDes": 202,
+    "typeName": "留声制香台",
+    "mbti": "I",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020005,
+    "electricModeFormulaList": [
+      40100271,
+      40100181,
+      40100201
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010027,
+      4010018,
+      4010020
+    ],
+    "outputLimit": 10
+  },
+  "10200053": {
+    "personalityDes": 202,
+    "typeName": "留声制香台",
+    "mbti": "I",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020005,
+    "electricModeFormulaList": [
+      40100271,
+      40100181,
+      40100201,
+      40100171,
+      40100221,
+      40200751
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010027,
+      4010018,
+      4010020,
+      4010017,
+      4010022,
+      4020075
+    ],
+    "outputLimit": 10
+  },
+  "10200054": {
+    "personalityDes": 202,
+    "typeName": "留声制香台",
+    "mbti": "I",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020005,
+    "electricModeFormulaList": [
+      40100271,
+      40100181,
+      40100201,
+      40100171,
+      40100221,
+      40200751,
+      40101391
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010027,
+      4010018,
+      4010020,
+      4010017,
+      4010022,
+      4020075,
+      4010139
+    ],
+    "outputLimit": 10
+  },
+  "10200055": {
+    "personalityDes": 202,
+    "typeName": "留声制香台",
+    "mbti": "I",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020005,
+    "electricModeFormulaList": [
+      40100271,
+      40100181,
+      40100201,
+      40100171,
+      40100221,
+      40200751,
+      40101391,
+      40100251,
+      40200761
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010027,
+      4010018,
+      4010020,
+      4010017,
+      4010022,
+      4020075,
+      4010139,
+      4010025,
+      4020076
+    ],
+    "outputLimit": 10
+  },
+  "10200056": {
+    "personalityDes": 202,
+    "typeName": "留声制香台",
+    "mbti": "I",
+    "level": 6,
+    "priority": 5,
+    "typeId": 1020005,
+    "electricModeFormulaList": [
+      40100271,
+      40100181,
+      40100201,
+      40100171,
+      40100221,
+      40200751,
+      40101391,
+      40100251,
+      40200761,
+      40100231,
+      40100191,
+      40100301,
+      40200781
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4010027,
+      4010018,
+      4010020,
+      4010017,
+      4010022,
+      4020075,
+      4010139,
+      4010025,
+      4020076,
+      4010023,
+      4010019,
+      4010030,
+      4020078
+    ],
+    "outputLimit": 10
+  },
+  "10200064": {
+    "personalityDes": 201,
+    "typeName": "蹦蹦酿造桶",
+    "mbti": "E",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020006,
+    "electricModeFormulaList": [
+      40100011,
+      40100001,
+      40100941,
+      40101611,
+      40100961,
+      40100061,
+      40100031,
+      40100081,
+      40101591,
+      40101851,
+      40100951,
+      40101941
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010001,
+      4010000,
+      4010094,
+      4010161,
+      4010096,
+      4010006,
+      4010003,
+      4010008,
+      4010159,
+      4010185,
+      4010095,
+      4010194
+    ],
+    "outputLimit": 10
+  },
+  "10200065": {
+    "personalityDes": 201,
+    "typeName": "蹦蹦酿造桶",
+    "mbti": "E",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020006,
+    "electricModeFormulaList": [
+      40100011,
+      40100001,
+      40100941,
+      40101611,
+      40100961,
+      40100061,
+      40100031,
+      40100081,
+      40101591,
+      40101851,
+      40100951,
+      40101941,
+      40101861,
+      40100581,
+      40101871,
+      40100151
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010001,
+      4010000,
+      4010094,
+      4010161,
+      4010096,
+      4010006,
+      4010003,
+      4010008,
+      4010159,
+      4010185,
+      4010095,
+      4010194,
+      4010186,
+      4010058,
+      4010187,
+      4010015
+    ],
+    "outputLimit": 10
+  },
+  "10200071": {
+    "personalityDes": 205,
+    "typeName": "熬制锅",
+    "mbti": "T",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020007,
+    "electricModeFormulaList": [
+      40101551,
+      40101511
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010155,
+      4010151
+    ],
+    "outputLimit": 10
+  },
+  "10200072": {
+    "personalityDes": 205,
+    "typeName": "熬制锅",
+    "mbti": "T",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020007,
+    "electricModeFormulaList": [
+      40101551,
+      40101511,
+      40101651
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010155,
+      4010151,
+      4010165
+    ],
+    "outputLimit": 10
+  },
+  "10200073": {
+    "personalityDes": 205,
+    "typeName": "熬制锅",
+    "mbti": "T",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020007,
+    "electricModeFormulaList": [
+      40101551,
+      40101511,
+      40101651,
+      40100461,
+      40100981,
+      40101001
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010155,
+      4010151,
+      4010165,
+      4010046,
+      4010098,
+      4010100
+    ],
+    "outputLimit": 10
+  },
+  "10200074": {
+    "personalityDes": 205,
+    "typeName": "熬制锅",
+    "mbti": "T",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020007,
+    "electricModeFormulaList": [
+      40101551,
+      40101511,
+      40101651,
+      40100461,
+      40100981,
+      40101001,
+      40101571,
+      40100971,
+      40101401
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010155,
+      4010151,
+      4010165,
+      4010046,
+      4010098,
+      4010100,
+      4010157,
+      4010097,
+      4010140
+    ],
+    "outputLimit": 10
+  },
+  "10200075": {
+    "personalityDes": 205,
+    "typeName": "熬制锅",
+    "mbti": "T",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020007,
+    "electricModeFormulaList": [
+      40101551,
+      40101511,
+      40101651,
+      40100461,
+      40100981,
+      40101001,
+      40101571,
+      40100971,
+      40101401,
+      40100471,
+      40100451
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010155,
+      4010151,
+      4010165,
+      4010046,
+      4010098,
+      4010100,
+      4010157,
+      4010097,
+      4010140,
+      4010047,
+      4010045
+    ],
+    "outputLimit": 10
+  },
+  "10200076": {
+    "personalityDes": 205,
+    "typeName": "熬制锅",
+    "mbti": "T",
+    "level": 6,
+    "priority": 5,
+    "typeId": 1020007,
+    "electricModeFormulaList": [
+      40101551,
+      40101511,
+      40101651,
+      40100461,
+      40100981,
+      40101001,
+      40101571,
+      40100971,
+      40101401,
+      40100471,
+      40100451,
+      40101421,
+      40100991,
+      40101561
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4010155,
+      4010151,
+      4010165,
+      4010046,
+      4010098,
+      4010100,
+      4010157,
+      4010097,
+      4010140,
+      4010047,
+      4010045,
+      4010142,
+      4010099,
+      4010156
+    ],
+    "outputLimit": 10
+  },
+  "10200082": {
+    "personalityDes": 204,
+    "typeName": "超旺灶台",
+    "mbti": "N",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020008,
+    "electricModeFormulaList": [
+      40101341,
+      40100641,
+      40100621,
+      40200681,
+      40101471,
+      40101501,
+      40100611,
+      40101121,
+      40100491
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010134,
+      4010064,
+      4010062,
+      4020068,
+      4010147,
+      4010150,
+      4010061,
+      4010112,
+      4010049
+    ],
+    "outputLimit": 10
+  },
+  "10200083": {
+    "personalityDes": 204,
+    "typeName": "超旺灶台",
+    "mbti": "N",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020008,
+    "electricModeFormulaList": [
+      40101341,
+      40100641,
+      40100621,
+      40200681,
+      40101471,
+      40101501,
+      40100611,
+      40101121,
+      40100491,
+      40101841,
+      40101411,
+      40100551
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010134,
+      4010064,
+      4010062,
+      4020068,
+      4010147,
+      4010150,
+      4010061,
+      4010112,
+      4010049,
+      4010184,
+      4010141,
+      4010055
+    ],
+    "outputLimit": 10
+  },
+  "10200084": {
+    "personalityDes": 204,
+    "typeName": "超旺灶台",
+    "mbti": "N",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020008,
+    "electricModeFormulaList": [
+      40101341,
+      40100641,
+      40100621,
+      40200681,
+      40101471,
+      40101501,
+      40100611,
+      40101121,
+      40100491,
+      40101841,
+      40101411,
+      40100551,
+      40100601,
+      40101581,
+      40101021,
+      40200711
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010134,
+      4010064,
+      4010062,
+      4020068,
+      4010147,
+      4010150,
+      4010061,
+      4010112,
+      4010049,
+      4010184,
+      4010141,
+      4010055,
+      4010060,
+      4010158,
+      4010102,
+      4020071
+    ],
+    "outputLimit": 10
+  },
+  "10200085": {
+    "personalityDes": 204,
+    "typeName": "超旺灶台",
+    "mbti": "N",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020008,
+    "electricModeFormulaList": [
+      40101341,
+      40100641,
+      40100621,
+      40200681,
+      40101471,
+      40101501,
+      40100611,
+      40101121,
+      40100491,
+      40101841,
+      40101411,
+      40100551,
+      40100601,
+      40101581,
+      40101021,
+      40200711,
+      40100541,
+      40101431
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010134,
+      4010064,
+      4010062,
+      4020068,
+      4010147,
+      4010150,
+      4010061,
+      4010112,
+      4010049,
+      4010184,
+      4010141,
+      4010055,
+      4010060,
+      4010158,
+      4010102,
+      4020071,
+      4010054,
+      4010143
+    ],
+    "outputLimit": 10
+  },
+  "10200091": {
+    "personalityDes": 201,
+    "typeName": "木工台",
+    "mbti": "E",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020009,
+    "electricModeFormulaList": [
+      40101691
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010169
+    ],
+    "outputLimit": 10
+  },
+  "10200092": {
+    "personalityDes": 201,
+    "typeName": "木工台",
+    "mbti": "E",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020009,
+    "electricModeFormulaList": [
+      40101691,
+      40101701
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010169,
+      4010170
+    ],
+    "outputLimit": 10
+  },
+  "10200093": {
+    "personalityDes": 201,
+    "typeName": "木工台",
+    "mbti": "E",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020009,
+    "electricModeFormulaList": [
+      40101691,
+      40101701,
+      40101711
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010169,
+      4010170,
+      4010171
+    ],
+    "outputLimit": 10
+  },
+  "10200094": {
+    "personalityDes": 201,
+    "typeName": "木工台",
+    "mbti": "E",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020009,
+    "electricModeFormulaList": [
+      40101691,
+      40101701,
+      40101711,
+      40101721
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010169,
+      4010170,
+      4010171,
+      4010172
+    ],
+    "outputLimit": 10
+  },
+  "10200102": {
+    "personalityDes": 203,
+    "typeName": "烟囱锻烧炉",
+    "mbti": "S",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020010,
+    "electricModeFormulaList": [
+      40101741,
+      40101751
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010174,
+      4010175
+    ],
+    "outputLimit": 10
+  },
+  "10200103": {
+    "personalityDes": 203,
+    "typeName": "烟囱锻烧炉",
+    "mbti": "S",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020010,
+    "electricModeFormulaList": [
+      40101741,
+      40101751,
+      40101761
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010174,
+      4010175,
+      4010176
+    ],
+    "outputLimit": 10
+  },
+  "10200104": {
+    "personalityDes": 203,
+    "typeName": "烟囱锻烧炉",
+    "mbti": "S",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020010,
+    "electricModeFormulaList": [
+      40101741,
+      40101751,
+      40101761,
+      40101771
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010174,
+      4010175,
+      4010176,
+      4010177
+    ],
+    "outputLimit": 10
+  },
+  "10200111": {
+    "personalityDes": 208,
+    "typeName": "风味腌制罐",
+    "mbti": "P",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020011,
+    "electricModeFormulaList": [
+      40101351,
+      40100121,
+      40101461
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010135,
+      4010012,
+      4010146
+    ],
+    "outputLimit": 10
+  },
+  "10200112": {
+    "personalityDes": 208,
+    "typeName": "风味腌制罐",
+    "mbti": "P",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020011,
+    "electricModeFormulaList": [
+      40101351,
+      40100121,
+      40101461,
+      40100021,
+      40100091,
+      40200691
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010135,
+      4010012,
+      4010146,
+      4010002,
+      4010009,
+      4020069
+    ],
+    "outputLimit": 10
+  },
+  "10200113": {
+    "personalityDes": 208,
+    "typeName": "风味腌制罐",
+    "mbti": "P",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020011,
+    "electricModeFormulaList": [
+      40101351,
+      40100121,
+      40101461,
+      40100021,
+      40100091,
+      40200691,
+      40100111,
+      40101921,
+      40200701
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010135,
+      4010012,
+      4010146,
+      4010002,
+      4010009,
+      4020069,
+      4010011,
+      4010192,
+      4020070
+    ],
+    "outputLimit": 10
+  },
+  "10200114": {
+    "personalityDes": 208,
+    "typeName": "风味腌制罐",
+    "mbti": "P",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020011,
+    "electricModeFormulaList": [
+      40101351,
+      40100121,
+      40101461,
+      40100021,
+      40100091,
+      40200691,
+      40100111,
+      40101921,
+      40200701,
+      40101881
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010135,
+      4010012,
+      4010146,
+      4010002,
+      4010009,
+      4020069,
+      4010011,
+      4010192,
+      4020070,
+      4010188
+    ],
+    "outputLimit": 10
+  },
+  "10200115": {
+    "personalityDes": 208,
+    "typeName": "风味腌制罐",
+    "mbti": "P",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020011,
+    "electricModeFormulaList": [
+      40101351,
+      40100121,
+      40101461,
+      40100021,
+      40100091,
+      40200691,
+      40100111,
+      40101921,
+      40200701,
+      40101881,
+      40101891
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010135,
+      4010012,
+      4010146,
+      4010002,
+      4010009,
+      4020069,
+      4010011,
+      4010192,
+      4020070,
+      4010188,
+      4010189
+    ],
+    "outputLimit": 10
+  },
+  "10200021": {
+    "personalityDes": 204,
+    "typeName": "音乐烘干机",
+    "mbti": "N",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020002,
+    "electricModeFormulaList": [
+      40100731
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010073
+    ],
+    "outputLimit": 10
+  },
+  "10200022": {
+    "personalityDes": 204,
+    "typeName": "音乐烘干机",
+    "mbti": "N",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020002,
+    "electricModeFormulaList": [
+      40100731,
+      40100721
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010073,
+      4010072
+    ],
+    "outputLimit": 10
+  },
+  "10400024": {
+    "typeName": "雷云发电机",
+    "envBounds": [
+      11,
+      11
+    ],
+    "envFormulaList": [
+      44
+    ],
+    "level": 4,
+    "priority": 6,
+    "typeId": 1040002,
+    "electricModeFormulaList": {},
+    "facilityType": 1,
+    "formulaList": {}
+  },
+  "10200041": {
+    "personalityDes": 206,
+    "typeName": "摩天轮纺车",
+    "mbti": "F",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020004,
+    "electricModeFormulaList": [
+      40100391
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010039
+    ],
+    "outputLimit": 10
+  },
+  "10200061": {
+    "personalityDes": 201,
+    "typeName": "蹦蹦酿造桶",
+    "mbti": "E",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020006,
+    "electricModeFormulaList": [
+      40100011,
+      40100001
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010001,
+      4010000
+    ],
+    "outputLimit": 10
+  },
+  "10200062": {
+    "personalityDes": 201,
+    "typeName": "蹦蹦酿造桶",
+    "mbti": "E",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020006,
+    "electricModeFormulaList": [
+      40100011,
+      40100001,
+      40100941,
+      40101611,
+      40100961,
+      40100061
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010001,
+      4010000,
+      4010094,
+      4010161,
+      4010096,
+      4010006
+    ],
+    "outputLimit": 10
+  },
+  "10200081": {
+    "personalityDes": 204,
+    "typeName": "超旺灶台",
+    "mbti": "N",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020008,
+    "electricModeFormulaList": [
+      40101341,
+      40100641,
+      40100621,
+      40200681,
+      40101471,
+      40101501
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010134,
+      4010064,
+      4010062,
+      4020068,
+      4010147,
+      4010150
+    ],
+    "outputLimit": 10
+  },
+  "10200101": {
+    "personalityDes": 203,
+    "typeName": "烟囱锻烧炉",
+    "mbti": "S",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020010,
+    "electricModeFormulaList": [
+      40101741
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010174
+    ],
+    "outputLimit": 10
+  },
+  "10300013": {
+    "produceToBag": 1,
+    "level": 3,
+    "priority": 5,
+    "typeName": "谜立方制造机",
+    "typeId": 1030001,
+    "electricModeFormulaList": [
+      1100011,
+      1100021,
+      1100071
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      110001,
+      110002,
+      110007
+    ],
+    "outputLimit": 12
+  },
+  "10300022": {
+    "produceToBag": 1,
+    "level": 2,
+    "priority": 5,
+    "typeName": "能量聚合器",
+    "typeId": 1030002,
+    "electricModeFormulaList": [
+      1500011,
+      1500021
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      150001,
+      150002
+    ],
+    "outputLimit": 12
+  },
+  "10300023": {
+    "produceToBag": 1,
+    "level": 3,
+    "priority": 5,
+    "typeName": "能量聚合器",
+    "typeId": 1030002,
+    "electricModeFormulaList": [
+      1500011,
+      1500021,
+      1500031
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      150001,
+      150002,
+      150003
+    ],
+    "outputLimit": 12
+  },
+  "10100001": {
+    "typeName": "田地",
+    "tillState": 100312,
+    "level": 1,
+    "priority": 10,
+    "typeId": 1010000,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001000,
+      4001066,
+      4001067,
+      4001068
+    ],
+    "outputLimit": 5
+  },
+  "91700008": {
+    "formulaList": [
+      91700008
+    ]
+  },
+  "91700009": {
+    "formulaList": [
+      91700009
+    ]
+  },
+  "91700010": {
+    "formulaList": [
+      91700010
+    ]
+  },
+  "91700011": {
+    "formulaList": [
+      91700011
+    ]
+  },
+  "10100071": {
+    "personalityDes": 204,
+    "typeName": "花舞风车",
+    "mbti": "N",
+    "level": 1,
+    "priority": 7,
+    "typeId": 1010007,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001042,
+      4020065
+    ],
+    "outputLimit": 10
+  },
+  "91700013": {
+    "formulaList": [
+      91700013
+    ]
+  },
+  "91700014": {
+    "formulaList": [
+      91700014
+    ]
+  },
+  "91700015": {
+    "formulaList": [
+      91700015
+    ]
+  },
+  "91700016": {
+    "formulaList": [
+      91700016
+    ]
+  },
+  "10400051": {
+    "typeName": "日光设备",
+    "envBounds": [
+      9,
+      9
+    ],
+    "envFormulaList": [
+      61
+    ],
+    "level": 1,
+    "priority": 6,
+    "typeId": 1040005,
+    "electricModeFormulaList": {},
+    "facilityType": 7,
+    "formulaList": {}
+  },
+  "10100081": {
+    "personalityDes": 206,
+    "typeName": "水井",
+    "mbti": "F",
+    "level": 1,
+    "priority": 8,
+    "typeId": 1010008,
+    "electricModeFormulaList": [
+      40010701,
+      40200591
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4001070,
+      4020059
+    ],
+    "outputLimit": 10
+  },
+  "10300011": {
+    "produceToBag": 1,
+    "level": 1,
+    "priority": 5,
+    "typeName": "谜立方制造机",
+    "typeId": 1030001,
+    "electricModeFormulaList": [
+      1100011
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      110001
+    ],
+    "outputLimit": 12
+  },
+  "10300012": {
+    "produceToBag": 1,
+    "level": 2,
+    "priority": 5,
+    "typeName": "谜立方制造机",
+    "typeId": 1030001,
+    "electricModeFormulaList": [
+      1100011,
+      1100021
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      110001,
+      110002
+    ],
+    "outputLimit": 12
+  },
+  "10300021": {
+    "produceToBag": 1,
+    "level": 1,
+    "priority": 5,
+    "typeName": "能量聚合器",
+    "typeId": 1030002,
+    "electricModeFormulaList": [
+      1500011
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      150001
+    ],
+    "outputLimit": 12
+  },
+  "10200001": {
+    "personalityDes": 205,
+    "typeName": "旋转木马磨坊",
+    "mbti": "T",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020000,
+    "electricModeFormulaList": [
+      40100321
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010032
+    ],
+    "outputLimit": 10
+  },
+  "10400021": {
+    "typeName": "雷云发电机",
+    "envBounds": [
+      11,
+      11
+    ],
+    "envFormulaList": [
+      41
+    ],
+    "level": 1,
+    "priority": 6,
+    "typeId": 1040002,
+    "electricModeFormulaList": {},
+    "facilityType": 1,
+    "formulaList": {}
+  },
+  "10400022": {
+    "typeName": "雷云发电机",
+    "envBounds": [
+      11,
+      11
+    ],
+    "envFormulaList": [
+      42
+    ],
+    "level": 2,
+    "priority": 6,
+    "typeId": 1040002,
+    "electricModeFormulaList": {},
+    "facilityType": 1,
+    "formulaList": {}
+  },
+  "10400031": {
+    "typeName": "制热机",
+    "envBounds": [
+      9,
+      9
+    ],
+    "envFormulaList": [
+      45,
+      46
+    ],
+    "level": 1,
+    "priority": 6,
+    "typeId": 1040003,
+    "electricModeFormulaList": {},
+    "facilityType": 5,
+    "formulaList": {}
+  },
+  "91700017": {
+    "formulaList": [
+      91700017
+    ]
+  },
+  "91700012": {
+    "formulaList": [
+      91700012
+    ]
+  },
+  "91700007": {
+    "formulaList": [
+      91700007
+    ]
+  },
+  "10400023": {
+    "typeName": "雷云发电机",
+    "envBounds": [
+      11,
+      11
+    ],
+    "envFormulaList": [
+      43
+    ],
+    "level": 3,
+    "priority": 6,
+    "typeId": 1040002,
+    "electricModeFormulaList": {},
+    "facilityType": 1,
+    "formulaList": {}
+  },
+  "91700005": {
+    "formulaList": [
+      91700005
+    ]
+  },
+  "10400011": {
+    "typeId": 1040001,
+    "electricModeFormulaList": {},
+    "typeName": "电线",
+    "level": 1,
+    "facilityType": 2,
+    "formulaList": {},
+    "envBounds": [
+      7,
+      7
+    ]
+  },
+  "91700003": {
+    "formulaList": [
+      91700003
+    ]
+  },
+  "10200063": {
+    "personalityDes": 201,
+    "typeName": "蹦蹦酿造桶",
+    "mbti": "E",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020006,
+    "electricModeFormulaList": [
+      40100011,
+      40100001,
+      40100941,
+      40101611,
+      40100961,
+      40100061,
+      40100031,
+      40100081,
+      40101591,
+      40101851
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010001,
+      4010000,
+      4010094,
+      4010161,
+      4010096,
+      4010006,
+      4010003,
+      4010008,
+      4010159,
+      4010185
+    ],
+    "outputLimit": 10
+  },
+  "91700001": {
+    "formulaList": [
+      91700001
+    ]
+  },
+  "10100082": {
+    "personalityDes": 206,
+    "typeName": "水井",
+    "mbti": "F",
+    "level": 2,
+    "priority": 8,
+    "typeId": 1010008,
+    "electricModeFormulaList": [
+      40010701,
+      40200591,
+      40010711
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4001070,
+      4020059,
+      4001071
+    ],
+    "outputLimit": 10
+  },
+  "91600016": {
+    "formulaList": [
+      91600016
+    ]
+  },
+  "10200042": {
+    "personalityDes": 206,
+    "typeName": "摩天轮纺车",
+    "mbti": "F",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020004,
+    "electricModeFormulaList": [
+      40100391,
+      40100401,
+      40100421
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010039,
+      4010040,
+      4010042
+    ],
+    "outputLimit": 10
+  },
+  "91600014": {
+    "formulaList": [
+      91600014
+    ]
+  },
+  "90800006": {
+    "formulaList": [
+      90800006
+    ]
+  },
+  "91600012": {
+    "formulaList": [
+      91600012
+    ]
+  },
+  "90800007": {
+    "formulaList": [
+      90800007
+    ]
+  },
+  "91600010": {
+    "formulaList": [
+      91600010
+    ]
+  },
+  "90800008": {
+    "formulaList": [
+      90800008
+    ]
+  },
+  "91600008": {
+    "formulaList": [
+      91600008
+    ]
+  },
+  "90800009": {
+    "formulaList": [
+      90800009
+    ]
+  },
+  "91600006": {
+    "formulaList": [
+      91600006
+    ]
+  },
+  "90800010": {
+    "formulaList": [
+      90800010
+    ]
+  },
+  "91600004": {
+    "formulaList": [
+      91600004
+    ]
+  },
+  "90800011": {
+    "formulaList": [
+      90800011
+    ]
+  },
+  "91600002": {
+    "formulaList": [
+      91600002
+    ]
+  },
+  "90800012": {
+    "formulaList": [
+      90800012
+    ]
+  },
+  "91500017": {
+    "formulaList": [
+      91500017
+    ]
+  },
+  "90800013": {
+    "formulaList": [
+      90800013
+    ]
+  },
+  "91500015": {
+    "formulaList": [
+      91500015
+    ]
+  },
+  "90800014": {
+    "formulaList": [
+      90800014
+    ]
+  },
+  "90800015": {
+    "formulaList": [
+      90800015
+    ]
+  },
+  "90800016": {
+    "formulaList": [
+      90800016
+    ]
+  },
+  "90800017": {
+    "formulaList": [
+      90800017
+    ]
+  },
+  "90900001": {
+    "formulaList": [
+      90900001
+    ]
+  },
+  "90900002": {
+    "formulaList": [
+      90900002
+    ]
+  },
+  "90900003": {
+    "formulaList": [
+      90900003
+    ]
+  },
+  "90800005": {
+    "formulaList": [
+      90800005
+    ]
+  },
+  "10100002": {
+    "typeName": "田地",
+    "tillState": 100312,
+    "level": 2,
+    "priority": 10,
+    "typeId": 1010000,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001000,
+      4001066,
+      4001067,
+      4001068,
+      4001002,
+      4020033
+    ],
+    "outputLimit": 10
+  },
+  "10100003": {
+    "typeName": "田地",
+    "tillState": 100312,
+    "level": 3,
+    "priority": 10,
+    "typeId": 1010000,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001000,
+      4001066,
+      4001067,
+      4001068,
+      4001002,
+      4020033,
+      4001003,
+      4001009
+    ],
+    "outputLimit": 15
+  },
+  "10100004": {
+    "typeName": "田地",
+    "tillState": 100312,
+    "level": 4,
+    "priority": 10,
+    "typeId": 1010000,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001000,
+      4001066,
+      4001067,
+      4001068,
+      4001002,
+      4020033,
+      4001003,
+      4001009,
+      4001014,
+      4001004,
+      4020054
+    ],
+    "outputLimit": 20
+  },
+  "10100005": {
+    "typeName": "田地",
+    "tillState": 100312,
+    "level": 5,
+    "priority": 10,
+    "typeId": 1010000,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001000,
+      4001066,
+      4001067,
+      4001068,
+      4001002,
+      4020033,
+      4001003,
+      4001009,
+      4001014,
+      4001004,
+      4020054,
+      4001005,
+      4001007,
+      4001001
+    ],
+    "outputLimit": 25
+  },
+  "10100006": {
+    "typeName": "田地",
+    "tillState": 100312,
+    "level": 6,
+    "priority": 10,
+    "typeId": 1010000,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001000,
+      4001066,
+      4001067,
+      4001068,
+      4001002,
+      4020033,
+      4001003,
+      4001009,
+      4001014,
+      4001004,
+      4020054,
+      4001005,
+      4001007,
+      4001001,
+      4001016,
+      4001010,
+      4020079,
+      4020055
+    ],
+    "outputLimit": 30
+  },
+  "10100007": {
+    "typeName": "田地",
+    "tillState": 100312,
+    "level": 7,
+    "priority": 10,
+    "typeId": 1010000,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001000,
+      4001066,
+      4001067,
+      4001068,
+      4001002,
+      4020033,
+      4001003,
+      4001009,
+      4001014,
+      4001004,
+      4020054,
+      4001005,
+      4001007,
+      4001001,
+      4001016,
+      4001010,
+      4020079,
+      4020055,
+      4001015,
+      4001013,
+      4020057
+    ],
+    "outputLimit": 35
+  },
+  "10100011": {
+    "typeName": "林地",
+    "tillState": 100312,
+    "level": 1,
+    "priority": 9,
+    "typeId": 1010001,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001018
+    ],
+    "outputLimit": 8
+  },
+  "10100012": {
+    "typeName": "林地",
+    "tillState": 100312,
+    "level": 2,
+    "priority": 9,
+    "typeId": 1010001,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001018,
+      4001017,
+      4001038
+    ],
+    "outputLimit": 12
+  },
+  "10100013": {
+    "typeName": "林地",
+    "tillState": 100312,
+    "level": 3,
+    "priority": 9,
+    "typeId": 1010001,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001018,
+      4001017,
+      4001038,
+      4001034,
+      4001033,
+      4001030,
+      4020035
+    ],
+    "outputLimit": 16
+  },
+  "10100014": {
+    "typeName": "林地",
+    "tillState": 100312,
+    "level": 4,
+    "priority": 9,
+    "typeId": 1010001,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001018,
+      4001017,
+      4001038,
+      4001034,
+      4001033,
+      4001030,
+      4020035,
+      4001031,
+      4001041,
+      4001040,
+      4020043
+    ],
+    "outputLimit": 20
+  },
+  "10100015": {
+    "typeName": "林地",
+    "tillState": 100312,
+    "level": 5,
+    "priority": 9,
+    "typeId": 1010001,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001018,
+      4001017,
+      4001038,
+      4001034,
+      4001033,
+      4001030,
+      4020035,
+      4001031,
+      4001041,
+      4001040,
+      4020043,
+      4001029,
+      4001039,
+      4020056
+    ],
+    "outputLimit": 24
+  },
+  "10100016": {
+    "typeName": "林地",
+    "tillState": 100312,
+    "level": 6,
+    "priority": 9,
+    "typeId": 1010001,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001018,
+      4001017,
+      4001038,
+      4001034,
+      4001033,
+      4001030,
+      4020035,
+      4001031,
+      4001041,
+      4001040,
+      4020043,
+      4001029,
+      4001039,
+      4020056,
+      4001012,
+      4001035,
+      4020044
+    ],
+    "outputLimit": 28
+  },
+  "10100021": {
+    "personalityDes": 208,
+    "typeName": "矿山",
+    "mbti": "P",
+    "level": 1,
+    "priority": 8,
+    "typeId": 1010002,
+    "electricModeFormulaList": [
+      40010531
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4001053
+    ],
+    "outputLimit": 6
+  },
+  "10100022": {
+    "personalityDes": 208,
+    "typeName": "矿山",
+    "mbti": "P",
+    "level": 2,
+    "priority": 8,
+    "typeId": 1010002,
+    "electricModeFormulaList": [
+      40010531,
+      40010571
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4001053,
+      4001057
+    ],
+    "outputLimit": 12
+  },
+  "10100023": {
+    "personalityDes": 208,
+    "typeName": "矿山",
+    "mbti": "P",
+    "level": 3,
+    "priority": 8,
+    "typeId": 1010002,
+    "electricModeFormulaList": [
+      40010531,
+      40010571,
+      40010511
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4001053,
+      4001057,
+      4001051
+    ],
+    "outputLimit": 18
+  },
+  "10100024": {
+    "personalityDes": 208,
+    "typeName": "矿山",
+    "mbti": "P",
+    "level": 4,
+    "priority": 8,
+    "typeId": 1010002,
+    "electricModeFormulaList": [
+      40010531,
+      40010571,
+      40010511,
+      40010541
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 120,
+    "facilityType": 8,
+    "formulaList": [
+      4001053,
+      4001057,
+      4001051,
+      4001054
+    ],
+    "outputLimit": 24
+  },
+  "10100025": {
+    "personalityDes": 208,
+    "typeName": "矿山",
+    "mbti": "P",
+    "level": 5,
+    "priority": 8,
+    "typeId": 1010002,
+    "electricModeFormulaList": [
+      40010531,
+      40010571,
+      40010511,
+      40010541,
+      40010561
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 150,
+    "facilityType": 8,
+    "formulaList": [
+      4001053,
+      4001057,
+      4001051,
+      4001054,
+      4001056
+    ],
+    "outputLimit": 30
+  },
+  "10100026": {
+    "personalityDes": 208,
+    "typeName": "矿山",
+    "mbti": "P",
+    "level": 6,
+    "priority": 8,
+    "typeId": 1010002,
+    "electricModeFormulaList": [
+      40010531,
+      40010571,
+      40010511,
+      40010541,
+      40010561,
+      40010521
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 180,
+    "facilityType": 8,
+    "formulaList": [
+      4001053,
+      4001057,
+      4001051,
+      4001054,
+      4001056,
+      4001052
+    ],
+    "outputLimit": 36
+  },
+  "10100031": {
+    "personalityDes": 207,
+    "typeName": "绵云草床",
+    "mbti": "J",
+    "level": 1,
+    "priority": 7,
+    "typeId": 1010003,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001044
+    ],
+    "outputLimit": 10
+  },
+  "10100032": {
+    "personalityDes": 207,
+    "typeName": "绵云草床",
+    "mbti": "J",
+    "level": 2,
+    "priority": 7,
+    "typeId": 1010003,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001044,
+      4020062
+    ],
+    "outputLimit": 12
+  },
+  "10100033": {
+    "personalityDes": 207,
+    "typeName": "绵云草床",
+    "mbti": "J",
+    "level": 3,
+    "priority": 7,
+    "typeId": 1010003,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001044,
+      4020062,
+      4001045
+    ],
+    "outputLimit": 14
+  },
+  "10100041": {
+    "personalityDes": 202,
+    "typeName": "采蜜鸟屋",
+    "mbti": "I",
+    "level": 1,
+    "priority": 7,
+    "typeId": 1010004,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001046
+    ],
+    "outputLimit": 10
+  },
+  "10500001": {
+    "typeId": 1050000,
+    "electricModeFormulaList": {},
+    "typeName": "孵化器",
+    "level": 1,
+    "formulaList": {},
+    "facilityType": 4
+  },
+  "10100042": {
+    "personalityDes": 202,
+    "typeName": "采蜜鸟屋",
+    "mbti": "I",
+    "level": 2,
+    "priority": 7,
+    "typeId": 1010004,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001046,
+      4020066
+    ],
+    "outputLimit": 12
+  },
+  "10100051": {
+    "personalityDes": 206,
+    "typeName": "星落吊床",
+    "mbti": "F",
+    "level": 1,
+    "priority": 7,
+    "typeId": 1010005,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001047
+    ],
+    "outputLimit": 10
+  },
+  "10100061": {
+    "personalityDes": 207,
+    "typeName": "汐语沙堡",
+    "mbti": "J",
+    "level": 1,
+    "priority": 7,
+    "typeId": 1010006,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001069
+    ],
+    "outputLimit": 10
+  },
+  "10100062": {
+    "personalityDes": 207,
+    "typeName": "汐语沙堡",
+    "mbti": "J",
+    "level": 2,
+    "priority": 7,
+    "typeId": 1010006,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001069,
+      4020060
+    ],
+    "outputLimit": 20
+  },
+  "10100063": {
+    "personalityDes": 207,
+    "typeName": "汐语沙堡",
+    "mbti": "J",
+    "level": 3,
+    "priority": 7,
+    "typeId": 1010006,
+    "electricModeFormulaList": {},
+    "facilityType": 4,
+    "formulaList": [
+      4001069,
+      4020060,
+      4001049
+    ],
+    "outputLimit": 30
+  },
+  "10100083": {
+    "personalityDes": 206,
+    "typeName": "水井",
+    "mbti": "F",
+    "level": 3,
+    "priority": 8,
+    "typeId": 1010008,
+    "electricModeFormulaList": [
+      40010701,
+      40200591,
+      40010711,
+      40200611
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4001070,
+      4020059,
+      4001071,
+      4020061
+    ],
+    "outputLimit": 20
+  },
+  "10100084": {
+    "personalityDes": 206,
+    "typeName": "水井",
+    "mbti": "F",
+    "level": 4,
+    "priority": 8,
+    "typeId": 1010008,
+    "electricModeFormulaList": [
+      40010701,
+      40200591,
+      40010711,
+      40200611,
+      40010721,
+      40200631
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 120,
+    "facilityType": 8,
+    "formulaList": [
+      4001070,
+      4020059,
+      4001071,
+      4020061,
+      4001072,
+      4020063
+    ],
+    "outputLimit": 20
+  },
+  "10100085": {
+    "personalityDes": 206,
+    "typeName": "水井",
+    "mbti": "F",
+    "level": 5,
+    "priority": 8,
+    "typeId": 1010008,
+    "electricModeFormulaList": [
+      40010701,
+      40200591,
+      40010711,
+      40200611,
+      40010721,
+      40200631,
+      40010731,
+      40200641
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 150,
+    "facilityType": 8,
+    "formulaList": [
+      4001070,
+      4020059,
+      4001071,
+      4020061,
+      4001072,
+      4020063,
+      4001073,
+      4020064
+    ],
+    "outputLimit": 30
+  },
+  "10200002": {
+    "personalityDes": 205,
+    "typeName": "旋转木马磨坊",
+    "mbti": "T",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020000,
+    "electricModeFormulaList": [
+      40100321,
+      40100351,
+      40010631
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010032,
+      4010035,
+      4001063
+    ],
+    "outputLimit": 10
+  },
+  "10200003": {
+    "personalityDes": 205,
+    "typeName": "旋转木马磨坊",
+    "mbti": "T",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020000,
+    "electricModeFormulaList": [
+      40100321,
+      40100351,
+      40010631,
+      40101451
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010032,
+      4010035,
+      4001063,
+      4010145
+    ],
+    "outputLimit": 10
+  },
+  "10200004": {
+    "personalityDes": 205,
+    "typeName": "旋转木马磨坊",
+    "mbti": "T",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020000,
+    "electricModeFormulaList": [
+      40100321,
+      40100351,
+      40010631,
+      40101451,
+      40101521,
+      40101371
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010032,
+      4010035,
+      4001063,
+      4010145,
+      4010152,
+      4010137
+    ],
+    "outputLimit": 10
+  },
+  "10200005": {
+    "personalityDes": 205,
+    "typeName": "旋转木马磨坊",
+    "mbti": "T",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020000,
+    "electricModeFormulaList": [
+      40100321,
+      40100351,
+      40010631,
+      40101451,
+      40101521,
+      40101371,
+      40101631,
+      40100241
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010032,
+      4010035,
+      4001063,
+      4010145,
+      4010152,
+      4010137,
+      4010163,
+      4010024
+    ],
+    "outputLimit": 10
+  },
+  "10200006": {
+    "personalityDes": 205,
+    "typeName": "旋转木马磨坊",
+    "mbti": "T",
+    "level": 6,
+    "priority": 5,
+    "typeId": 1020000,
+    "electricModeFormulaList": [
+      40100321,
+      40100351,
+      40010631,
+      40101451,
+      40101521,
+      40101371,
+      40101631,
+      40100241,
+      40100361,
+      40101641
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4010032,
+      4010035,
+      4001063,
+      4010145,
+      4010152,
+      4010137,
+      4010163,
+      4010024,
+      4010036,
+      4010164
+    ],
+    "outputLimit": 10
+  },
+  "10200011": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 1,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 15,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148
+    ],
+    "outputLimit": 10
+  },
+  "10200012": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 2,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481,
+      40100801,
+      40101681,
+      40200731
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 30,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148,
+      4010080,
+      4010168,
+      4020073
+    ],
+    "outputLimit": 10
+  },
+  "10200013": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481,
+      40100801,
+      40101681,
+      40200731,
+      40100281,
+      40100781,
+      40200741
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148,
+      4010080,
+      4010168,
+      4020073,
+      4010028,
+      4010078,
+      4020074
+    ],
+    "outputLimit": 10
+  },
+  "10200014": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481,
+      40100801,
+      40101681,
+      40200731,
+      40100281,
+      40100781,
+      40200741,
+      40100921,
+      40100841,
+      40101361
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148,
+      4010080,
+      4010168,
+      4020073,
+      4010028,
+      4010078,
+      4020074,
+      4010092,
+      4010084,
+      4010136
+    ],
+    "outputLimit": 10
+  },
+  "10200015": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481,
+      40100801,
+      40101681,
+      40200731,
+      40100281,
+      40100781,
+      40200741,
+      40100921,
+      40100841,
+      40101361,
+      40100851,
+      40100901,
+      40100911,
+      40200521
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148,
+      4010080,
+      4010168,
+      4020073,
+      4010028,
+      4010078,
+      4020074,
+      4010092,
+      4010084,
+      4010136,
+      4010085,
+      4010090,
+      4010091,
+      4020052
+    ],
+    "outputLimit": 10
+  },
+  "10200016": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 6,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481,
+      40100801,
+      40101681,
+      40200731,
+      40100281,
+      40100781,
+      40200741,
+      40100921,
+      40100841,
+      40101361,
+      40100851,
+      40100901,
+      40100911,
+      40200521,
+      40101901,
+      40100821,
+      40100891,
+      40100791
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 90,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148,
+      4010080,
+      4010168,
+      4020073,
+      4010028,
+      4010078,
+      4020074,
+      4010092,
+      4010084,
+      4010136,
+      4010085,
+      4010090,
+      4010091,
+      4020052,
+      4010190,
+      4010082,
+      4010089,
+      4010079
+    ],
+    "outputLimit": 10
+  },
+  "10200017": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 7,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481,
+      40100801,
+      40101681,
+      40200731,
+      40100281,
+      40100781,
+      40200741,
+      40100921,
+      40100841,
+      40101361,
+      40100851,
+      40100901,
+      40100911,
+      40200521,
+      40101901,
+      40100821,
+      40100891,
+      40100791,
+      40100871,
+      40100831,
+      40100931,
+      40200771
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 105,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148,
+      4010080,
+      4010168,
+      4020073,
+      4010028,
+      4010078,
+      4020074,
+      4010092,
+      4010084,
+      4010136,
+      4010085,
+      4010090,
+      4010091,
+      4020052,
+      4010190,
+      4010082,
+      4010089,
+      4010079,
+      4010087,
+      4010083,
+      4010093,
+      4020077
+    ],
+    "outputLimit": 10
+  },
+  "10200018": {
+    "personalityDes": 207,
+    "typeName": "手作台",
+    "mbti": "J",
+    "level": 8,
+    "priority": 5,
+    "typeId": 1020001,
+    "electricModeFormulaList": [
+      40100811,
+      40101481,
+      40100801,
+      40101681,
+      40200731,
+      40100281,
+      40100781,
+      40200741,
+      40100921,
+      40100841,
+      40101361,
+      40100851,
+      40100901,
+      40100911,
+      40200521,
+      40101901,
+      40100821,
+      40100891,
+      40100791,
+      40100871,
+      40100831,
+      40100931,
+      40200771,
+      40100881
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 120,
+    "facilityType": 8,
+    "formulaList": [
+      4010081,
+      4010148,
+      4010080,
+      4010168,
+      4020073,
+      4010028,
+      4010078,
+      4020074,
+      4010092,
+      4010084,
+      4010136,
+      4010085,
+      4010090,
+      4010091,
+      4020052,
+      4010190,
+      4010082,
+      4010089,
+      4010079,
+      4010087,
+      4010083,
+      4010093,
+      4020077,
+      4010088
+    ],
+    "outputLimit": 10
+  },
+  "10200023": {
+    "personalityDes": 204,
+    "typeName": "音乐烘干机",
+    "mbti": "N",
+    "level": 3,
+    "priority": 5,
+    "typeId": 1020002,
+    "electricModeFormulaList": [
+      40100731,
+      40100721,
+      40101331,
+      40100741
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 45,
+    "facilityType": 8,
+    "formulaList": [
+      4010073,
+      4010072,
+      4010133,
+      4010074
+    ],
+    "outputLimit": 10
+  },
+  "10200024": {
+    "personalityDes": 204,
+    "typeName": "音乐烘干机",
+    "mbti": "N",
+    "level": 4,
+    "priority": 5,
+    "typeId": 1020002,
+    "electricModeFormulaList": [
+      40100731,
+      40100721,
+      40101331,
+      40100741,
+      40100711,
+      40100681
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 60,
+    "facilityType": 8,
+    "formulaList": [
+      4010073,
+      4010072,
+      4010133,
+      4010074,
+      4010071,
+      4010068
+    ],
+    "outputLimit": 10
+  },
+  "10200025": {
+    "personalityDes": 204,
+    "typeName": "音乐烘干机",
+    "mbti": "N",
+    "level": 5,
+    "priority": 5,
+    "typeId": 1020002,
+    "electricModeFormulaList": [
+      40100731,
+      40100721,
+      40101331,
+      40100741,
+      40100711,
+      40100681,
+      40100661,
+      40101381
+    ],
+    "electricModeUnlockLevel": 12,
+    "electricRequire": 75,
+    "facilityType": 8,
+    "formulaList": [
+      4010073,
+      4010072,
+      4010133,
+      4010074,
+      4010071,
+      4010068,
+      4010066,
+      4010138
+    ],
+    "outputLimit": 10
+  },
+  "90900004": {
+    "formulaList": [
+      90900004
+    ]
+  },
+  "90900005": {
+    "formulaList": [
+      90900005
+    ]
+  },
+  "90900006": {
+    "formulaList": [
+      90900006
+    ]
+  },
+  "90900007": {
+    "formulaList": [
+      90900007
+    ]
+  },
+  "90900008": {
+    "formulaList": [
+      90900008
+    ]
+  },
+  "90900009": {
+    "formulaList": [
+      90900009
+    ]
+  },
+  "90900010": {
+    "formulaList": [
+      90900010
+    ]
+  },
+  "90900011": {
+    "formulaList": [
+      90900011
+    ]
+  },
+  "90900012": {
+    "formulaList": [
+      90900012
+    ]
+  },
+  "90900013": {
+    "formulaList": [
+      90900013
+    ]
+  },
+  "90900014": {
+    "formulaList": [
+      90900014
+    ]
+  },
+  "90900015": {
+    "formulaList": [
+      90900015
+    ]
+  },
+  "90900016": {
+    "formulaList": [
+      90900016
+    ]
+  },
+  "90900017": {
+    "formulaList": [
+      90900017
+    ]
+  },
+  "91000001": {
+    "formulaList": [
+      91000001
+    ]
+  },
+  "91000002": {
+    "formulaList": [
+      91000002
+    ]
+  },
+  "91000003": {
+    "formulaList": [
+      91000003
+    ]
+  },
+  "91000004": {
+    "formulaList": [
+      91000004
+    ]
+  },
+  "91000005": {
+    "formulaList": [
+      91000005
+    ]
+  },
+  "91000006": {
+    "formulaList": [
+      91000006
+    ]
+  },
+  "91000007": {
+    "formulaList": [
+      91000007
+    ]
+  },
+  "91000008": {
+    "formulaList": [
+      91000008
+    ]
+  },
+  "91000009": {
+    "formulaList": [
+      91000009
+    ]
+  },
+  "91000010": {
+    "formulaList": [
+      91000010
+    ]
+  },
+  "91000011": {
+    "formulaList": [
+      91000011
+    ]
+  },
+  "91000012": {
+    "formulaList": [
+      91000012
+    ]
+  },
+  "91000013": {
+    "formulaList": [
+      91000013
+    ]
+  },
+  "91000014": {
+    "formulaList": [
+      91000014
+    ]
+  },
+  "91000015": {
+    "formulaList": [
+      91000015
+    ]
+  },
+  "91000016": {
+    "formulaList": [
+      91000016
+    ]
+  },
+  "91000017": {
+    "formulaList": [
+      91000017
+    ]
+  },
+  "91100001": {
+    "formulaList": [
+      91100001
+    ]
+  },
+  "91100002": {
+    "formulaList": [
+      91100002
+    ]
+  },
+  "91100003": {
+    "formulaList": [
+      91100003
+    ]
+  },
+  "91100004": {
+    "formulaList": [
+      91100004
+    ]
+  },
+  "91100005": {
+    "formulaList": [
+      91100005
+    ]
+  },
+  "91100006": {
+    "formulaList": [
+      91100006
+    ]
+  },
+  "91100007": {
+    "formulaList": [
+      91100007
+    ]
+  },
+  "91100008": {
+    "formulaList": [
+      91100008
+    ]
+  },
+  "91100009": {
+    "formulaList": [
+      91100009
+    ]
+  },
+  "91100010": {
+    "formulaList": [
+      91100010
+    ]
+  },
+  "91100011": {
+    "formulaList": [
+      91100011
+    ]
+  },
+  "91100012": {
+    "formulaList": [
+      91100012
+    ]
+  },
+  "91100013": {
+    "formulaList": [
+      91100013
+    ]
+  },
+  "91100014": {
+    "formulaList": [
+      91100014
+    ]
+  },
+  "91100015": {
+    "formulaList": [
+      91100015
+    ]
+  },
+  "91100016": {
+    "formulaList": [
+      91100016
+    ]
+  },
+  "91100017": {
+    "formulaList": [
+      91100017
+    ]
+  },
+  "91200001": {
+    "formulaList": [
+      91200001
+    ]
+  },
+  "91200002": {
+    "formulaList": [
+      91200002
+    ]
+  },
+  "91200003": {
+    "formulaList": [
+      91200003
+    ]
+  },
+  "91200004": {
+    "formulaList": [
+      91200004
+    ]
+  },
+  "91200005": {
+    "formulaList": [
+      91200005
+    ]
+  },
+  "91200006": {
+    "formulaList": [
+      91200006
+    ]
+  },
+  "91200007": {
+    "formulaList": [
+      91200007
+    ]
+  },
+  "91200008": {
+    "formulaList": [
+      91200008
+    ]
+  },
+  "91200009": {
+    "formulaList": [
+      91200009
+    ]
+  },
+  "91200010": {
+    "formulaList": [
+      91200010
+    ]
+  },
+  "91200011": {
+    "formulaList": [
+      91200011
+    ]
+  },
+  "91200012": {
+    "formulaList": [
+      91200012
+    ]
+  },
+  "91200013": {
+    "formulaList": [
+      91200013
+    ]
+  },
+  "91200014": {
+    "formulaList": [
+      91200014
+    ]
+  },
+  "91200015": {
+    "formulaList": [
+      91200015
+    ]
+  },
+  "91200016": {
+    "formulaList": [
+      91200016
+    ]
+  },
+  "91200017": {
+    "formulaList": [
+      91200017
+    ]
+  },
+  "91300001": {
+    "formulaList": [
+      91300001
+    ]
+  },
+  "91300002": {
+    "formulaList": [
+      91300002
+    ]
+  },
+  "91300003": {
+    "formulaList": [
+      91300003
+    ]
+  },
+  "91300004": {
+    "formulaList": [
+      91300004
+    ]
+  },
+  "91300005": {
+    "formulaList": [
+      91300005
+    ]
+  },
+  "91300006": {
+    "formulaList": [
+      91300006
+    ]
+  },
+  "91300007": {
+    "formulaList": [
+      91300007
+    ]
+  },
+  "91300008": {
+    "formulaList": [
+      91300008
+    ]
+  },
+  "91300009": {
+    "formulaList": [
+      91300009
+    ]
+  },
+  "91300010": {
+    "formulaList": [
+      91300010
+    ]
+  },
+  "91300011": {
+    "formulaList": [
+      91300011
+    ]
+  },
+  "91300012": {
+    "formulaList": [
+      91300012
+    ]
+  },
+  "91300013": {
+    "formulaList": [
+      91300013
+    ]
+  },
+  "91300014": {
+    "formulaList": [
+      91300014
+    ]
+  },
+  "91300015": {
+    "formulaList": [
+      91300015
+    ]
+  },
+  "91300016": {
+    "formulaList": [
+      91300016
+    ]
+  },
+  "91300017": {
+    "formulaList": [
+      91300017
+    ]
+  },
+  "91400001": {
+    "formulaList": [
+      91400001
+    ]
+  },
+  "91400002": {
+    "formulaList": [
+      91400002
+    ]
+  },
+  "91400003": {
+    "formulaList": [
+      91400003
+    ]
+  },
+  "91400004": {
+    "formulaList": [
+      91400004
+    ]
+  },
+  "91400005": {
+    "formulaList": [
+      91400005
+    ]
+  },
+  "91400006": {
+    "formulaList": [
+      91400006
+    ]
+  },
+  "91400007": {
+    "formulaList": [
+      91400007
+    ]
+  },
+  "91400008": {
+    "formulaList": [
+      91400008
+    ]
+  },
+  "91400009": {
+    "formulaList": [
+      91400009
+    ]
+  },
+  "91400010": {
+    "formulaList": [
+      91400010
+    ]
+  },
+  "91400011": {
+    "formulaList": [
+      91400011
+    ]
+  },
+  "91400012": {
+    "formulaList": [
+      91400012
+    ]
+  },
+  "91400013": {
+    "formulaList": [
+      91400013
+    ]
+  },
+  "91400014": {
+    "formulaList": [
+      91400014
+    ]
+  },
+  "91400015": {
+    "formulaList": [
+      91400015
+    ]
+  },
+  "91400016": {
+    "formulaList": [
+      91400016
+    ]
+  },
+  "91400017": {
+    "formulaList": [
+      91400017
+    ]
+  },
+  "91500001": {
+    "formulaList": [
+      91500001
+    ]
+  },
+  "91500002": {
+    "formulaList": [
+      91500002
+    ]
+  },
+  "91500003": {
+    "formulaList": [
+      91500003
+    ]
+  },
+  "91500004": {
+    "formulaList": [
+      91500004
+    ]
+  },
+  "91500005": {
+    "formulaList": [
+      91500005
+    ]
+  },
+  "91500006": {
+    "formulaList": [
+      91500006
+    ]
+  },
+  "91500007": {
+    "formulaList": [
+      91500007
+    ]
+  },
+  "91500008": {
+    "formulaList": [
+      91500008
+    ]
+  },
+  "91500009": {
+    "formulaList": [
+      91500009
+    ]
+  },
+  "91500010": {
+    "formulaList": [
+      91500010
+    ]
+  },
+  "91500011": {
+    "formulaList": [
+      91500011
+    ]
+  },
+  "91500012": {
+    "formulaList": [
+      91500012
+    ]
+  },
+  "91500013": {
+    "formulaList": [
+      91500013
+    ]
+  },
+  "91500014": {
+    "formulaList": [
+      91500014
+    ]
+  },
+  "90100001": {
+    "formulaList": [
+      90100001
+    ]
+  },
+  "91500016": {
+    "formulaList": [
+      91500016
+    ]
+  },
+  "90100002": {
+    "formulaList": [
+      90100002
+    ]
+  },
+  "91600001": {
+    "formulaList": [
+      91600001
+    ]
+  },
+  "90100003": {
+    "formulaList": [
+      90100003
+    ]
+  },
+  "91600003": {
+    "formulaList": [
+      91600003
+    ]
+  },
+  "90100004": {
+    "formulaList": [
+      90100004
+    ]
+  },
+  "91600005": {
+    "formulaList": [
+      91600005
+    ]
+  },
+  "90100005": {
+    "formulaList": [
+      90100005
+    ]
+  },
+  "91600007": {
+    "formulaList": [
+      91600007
+    ]
+  },
+  "90100006": {
+    "formulaList": [
+      90100006
+    ]
+  },
+  "91600009": {
+    "formulaList": [
+      91600009
+    ]
+  },
+  "90100007": {
+    "formulaList": [
+      90100007
+    ]
+  },
+  "91600011": {
+    "formulaList": [
+      91600011
+    ]
+  },
+  "90100008": {
+    "formulaList": [
+      90100008
+    ]
+  },
+  "91600013": {
+    "formulaList": [
+      91600013
+    ]
+  },
+  "90100009": {
+    "formulaList": [
+      90100009
+    ]
+  },
+  "91600015": {
+    "formulaList": [
+      91600015
+    ]
+  },
+  "90100010": {
+    "formulaList": [
+      90100010
+    ]
+  },
+  "91600017": {
+    "formulaList": [
+      91600017
+    ]
+  },
+  "90100011": {
+    "formulaList": [
+      90100011
+    ]
+  },
+  "91700002": {
+    "formulaList": [
+      91700002
+    ]
+  },
+  "90100012": {
+    "formulaList": [
+      90100012
+    ]
+  },
+  "91700004": {
+    "formulaList": [
+      91700004
+    ]
+  },
+  "90100013": {
+    "formulaList": [
+      90100013
+    ]
+  },
+  "91700006": {
+    "formulaList": [
+      91700006
+    ]
+  },
+  "90100014": {
+    "formulaList": [
+      90100014
+    ]
+  },
+  "10400025": {
+    "typeName": "雷云发电机",
+    "envBounds": [
+      11,
+      11
+    ],
+    "envFormulaList": [
+      65
+    ],
+    "level": 5,
+    "priority": 6,
+    "typeId": 1040002,
+    "electricModeFormulaList": {},
+    "facilityType": 1,
+    "formulaList": {}
+  },
+  "90100015": {
+    "formulaList": [
+      90100015
+    ]
+  },
+  "10400041": {
+    "typeName": "制冷机",
+    "envBounds": [
+      9,
+      9
+    ],
+    "envFormulaList": [
+      54,
+      55
+    ],
+    "level": 1,
+    "priority": 6,
+    "typeId": 1040004,
+    "electricModeFormulaList": {},
+    "facilityType": 6,
+    "formulaList": {}
+  },
+  "90100016": {
+    "formulaList": [
+      90100016
+    ]
+  },
+  "90100017": {
+    "formulaList": [
+      90100017
+    ]
+  },
+  "90200001": {
+    "formulaList": [
+      90200001
+    ]
+  },
+  "90200002": {
+    "formulaList": [
+      90200002
+    ]
+  },
+  "90200003": {
+    "formulaList": [
+      90200003
+    ]
+  },
+  "90200004": {
+    "formulaList": [
+      90200004
+    ]
+  },
+  "90200005": {
+    "formulaList": [
+      90200005
+    ]
+  },
+  "90200006": {
+    "formulaList": [
+      90200006
+    ]
+  },
+  "90200007": {
+    "formulaList": [
+      90200007
+    ]
+  },
+  "90200008": {
+    "formulaList": [
+      90200008
+    ]
+  },
+  "90200009": {
+    "formulaList": [
+      90200009
+    ]
+  },
+  "90200010": {
+    "formulaList": [
+      90200010
+    ]
+  },
+  "90200011": {
+    "formulaList": [
+      90200011
+    ]
+  },
+  "90200012": {
+    "formulaList": [
+      90200012
+    ]
+  },
+  "90200013": {
+    "formulaList": [
+      90200013
+    ]
+  },
+  "90200014": {
+    "formulaList": [
+      90200014
+    ]
+  },
+  "90200015": {
+    "formulaList": [
+      90200015
+    ]
+  },
+  "90200016": {
+    "formulaList": [
+      90200016
+    ]
+  },
+  "90200017": {
+    "formulaList": [
+      90200017
+    ]
+  },
+  "90300001": {
+    "formulaList": [
+      90300001
+    ]
+  },
+  "90300002": {
+    "formulaList": [
+      90300002
+    ]
+  },
+  "90300003": {
+    "formulaList": [
+      90300003
+    ]
+  },
+  "90300004": {
+    "formulaList": [
+      90300004
+    ]
+  },
+  "90300005": {
+    "formulaList": [
+      90300005
+    ]
+  },
+  "90300006": {
+    "formulaList": [
+      90300006
+    ]
+  },
+  "90300007": {
+    "formulaList": [
+      90300007
+    ]
+  },
+  "90300008": {
+    "formulaList": [
+      90300008
+    ]
+  },
+  "90300009": {
+    "formulaList": [
+      90300009
+    ]
+  },
+  "90300010": {
+    "formulaList": [
+      90300010
+    ]
+  },
+  "90300011": {
+    "formulaList": [
+      90300011
+    ]
+  },
+  "90300012": {
+    "formulaList": [
+      90300012
+    ]
+  },
+  "90300013": {
+    "formulaList": [
+      90300013
+    ]
+  },
+  "90300014": {
+    "formulaList": [
+      90300014
+    ]
+  },
+  "90300015": {
+    "formulaList": [
+      90300015
+    ]
+  },
+  "90300016": {
+    "formulaList": [
+      90300016
+    ]
+  },
+  "90300017": {
+    "formulaList": [
+      90300017
+    ]
+  },
+  "90400001": {
+    "formulaList": [
+      90400001
+    ]
+  },
+  "90400002": {
+    "formulaList": [
+      90400002
+    ]
+  },
+  "90400003": {
+    "formulaList": [
+      90400003
+    ]
+  },
+  "90400004": {
+    "formulaList": [
+      90400004
+    ]
+  },
+  "90400005": {
+    "formulaList": [
+      90400005
+    ]
+  },
+  "90400006": {
+    "formulaList": [
+      90400006
+    ]
+  },
+  "90400007": {
+    "formulaList": [
+      90400007
+    ]
+  },
+  "90400008": {
+    "formulaList": [
+      90400008
+    ]
+  },
+  "90400009": {
+    "formulaList": [
+      90400009
+    ]
+  },
+  "90400010": {
+    "formulaList": [
+      90400010
+    ]
+  },
+  "90400011": {
+    "formulaList": [
+      90400011
+    ]
+  },
+  "90400012": {
+    "formulaList": [
+      90400012
+    ]
+  },
+  "90400013": {
+    "formulaList": [
+      90400013
+    ]
+  },
+  "90400014": {
+    "formulaList": [
+      90400014
+    ]
+  },
+  "90400015": {
+    "formulaList": [
+      90400015
+    ]
+  },
+  "90400016": {
+    "formulaList": [
+      90400016
+    ]
+  },
+  "90400017": {
+    "formulaList": [
+      90400017
+    ]
+  },
+  "90500001": {
+    "formulaList": [
+      90500001
+    ]
+  },
+  "90500002": {
+    "formulaList": [
+      90500002
+    ]
+  },
+  "90500003": {
+    "formulaList": [
+      90500003
+    ]
+  },
+  "90500004": {
+    "formulaList": [
+      90500004
+    ]
+  },
+  "90500005": {
+    "formulaList": [
+      90500005
+    ]
+  },
+  "90500006": {
+    "formulaList": [
+      90500006
+    ]
+  },
+  "90500007": {
+    "formulaList": [
+      90500007
+    ]
+  },
+  "90500008": {
+    "formulaList": [
+      90500008
+    ]
+  },
+  "90500009": {
+    "formulaList": [
+      90500009
+    ]
+  },
+  "90500010": {
+    "formulaList": [
+      90500010
+    ]
+  },
+  "90500011": {
+    "formulaList": [
+      90500011
+    ]
+  },
+  "90500012": {
+    "formulaList": [
+      90500012
+    ]
+  },
+  "90500013": {
+    "formulaList": [
+      90500013
+    ]
+  },
+  "90500014": {
+    "formulaList": [
+      90500014
+    ]
+  },
+  "90500015": {
+    "formulaList": [
+      90500015
+    ]
+  },
+  "90500016": {
+    "formulaList": [
+      90500016
+    ]
+  },
+  "90500017": {
+    "formulaList": [
+      90500017
+    ]
+  },
+  "90600001": {
+    "formulaList": [
+      90600001
+    ]
+  },
+  "90600002": {
+    "formulaList": [
+      90600002
+    ]
+  },
+  "90600003": {
+    "formulaList": [
+      90600003
+    ]
+  },
+  "90600004": {
+    "formulaList": [
+      90600004
+    ]
+  },
+  "90600005": {
+    "formulaList": [
+      90600005
+    ]
+  },
+  "90600006": {
+    "formulaList": [
+      90600006
+    ]
+  },
+  "90600007": {
+    "formulaList": [
+      90600007
+    ]
+  },
+  "90600008": {
+    "formulaList": [
+      90600008
+    ]
+  },
+  "90600009": {
+    "formulaList": [
+      90600009
+    ]
+  },
+  "90600010": {
+    "formulaList": [
+      90600010
+    ]
+  },
+  "90600011": {
+    "formulaList": [
+      90600011
+    ]
+  },
+  "90600012": {
+    "formulaList": [
+      90600012
+    ]
+  },
+  "90600013": {
+    "formulaList": [
+      90600013
+    ]
+  },
+  "90600014": {
+    "formulaList": [
+      90600014
+    ]
+  },
+  "90600015": {
+    "formulaList": [
+      90600015
+    ]
+  },
+  "90600016": {
+    "formulaList": [
+      90600016
+    ]
+  },
+  "90600017": {
+    "formulaList": [
+      90600017
+    ]
+  },
+  "90700001": {
+    "formulaList": [
+      90700001
+    ]
+  },
+  "90700002": {
+    "formulaList": [
+      90700002
+    ]
+  },
+  "90700003": {
+    "formulaList": [
+      90700003
+    ]
+  },
+  "90700004": {
+    "formulaList": [
+      90700004
+    ]
+  },
+  "90700005": {
+    "formulaList": [
+      90700005
+    ]
+  },
+  "90700006": {
+    "formulaList": [
+      90700006
+    ]
+  },
+  "90700007": {
+    "formulaList": [
+      90700007
+    ]
+  },
+  "90700008": {
+    "formulaList": [
+      90700008
+    ]
+  },
+  "90700009": {
+    "formulaList": [
+      90700009
+    ]
+  },
+  "90700010": {
+    "formulaList": [
+      90700010
+    ]
+  },
+  "90700011": {
+    "formulaList": [
+      90700011
+    ]
+  },
+  "90700012": {
+    "formulaList": [
+      90700012
+    ]
+  },
+  "90700013": {
+    "formulaList": [
+      90700013
+    ]
+  },
+  "90700014": {
+    "formulaList": [
+      90700014
+    ]
+  },
+  "90700015": {
+    "formulaList": [
+      90700015
+    ]
+  },
+  "90700016": {
+    "formulaList": [
+      90700016
+    ]
+  },
+  "90700017": {
+    "formulaList": [
+      90700017
+    ]
+  },
+  "90800001": {
+    "formulaList": [
+      90800001
+    ]
+  },
+  "90800002": {
+    "formulaList": [
+      90800002
+    ]
+  },
+  "90800003": {
+    "formulaList": [
+      90800003
+    ]
+  },
+  "90800004": {
+    "formulaList": [
+      90800004
+    ]
+  }
+}

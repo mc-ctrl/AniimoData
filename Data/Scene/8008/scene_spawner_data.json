@@ -1,0 +1,139 @@
+{
+  "42733099": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      32.03,
+      -0.59,
+      23.84
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42136130,
+    "id": 42733099,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42733098,
+          42733097,
+          42733096,
+          42733095,
+          42733091,
+          42733090,
+          42733089,
+          42733088,
+          42733094,
+          62542502,
+          42733093,
+          42733092
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42734921": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      66.59,
+      -12,
+      23.94
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42136130,
+    "id": 42734921,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42734944,
+          42897097,
+          42897104
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42894423": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      69,
+      -11.4,
+      23.93
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42136130,
+    "id": 42894423,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42894422,
+          62542560,
+          62542561,
+          42897085,
+          42894421,
+          42897089,
+          42894411,
+          62542533,
+          42894410,
+          42894409
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "42732702": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      1.72,
+      2.71,
+      17.14
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 42136130,
+    "id": 42732702,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42732701,
+          42732700,
+          42732699,
+          42732698,
+          42732693,
+          42732692,
+          42732691,
+          42732697,
+          42732696,
+          42739178,
+          42739183,
+          42732695
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116111",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "onBuffRefreshIds": [
+    5
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    24,
+    30
+  ],
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        6,
+        8
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "229f3656-bbbc-4dc3-9b87-c5013a582a0d",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 6,
+      "name": "equal",
+      "UID": "37bf8ff2-7d3e-4f71-af06-72ba614743c0",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "fdaa4392-6151-444f-82a6-eb0483a67846",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 3
+      }
+    },
+    "24": {
+      "calcInfo": {
+        "passive_energy_cur": {
+          "rValue": {
+            "key": "10161Passive",
+            "name": "getCacheVal",
+            "UID": "afc4f702-1594-46a4-9d8c-ba8d89992e19",
+            "target": "OWNER",
+            "NodeID": 21
+          },
+          "name": "sub",
+          "UID": "c6ef6c13-9ee2-478f-b566-d448f39eb71a",
+          "NodeID": 22,
+          "lValue": {
+            "UID": "f06021ee-6e25-4420-9489-22e7fbbc531e",
+            "target": "OWNER",
+            "name": "getBuffLayer",
+            "NodeID": 26
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "a77c2d9a-8c69-4d90-a260-f2e524e09786",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "25f7f958-6dd8-4838-94da-ea6d03b1284d",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "73d36464-4169-4864-87ca-e0e107d78f36",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "16": {
+      "calcInfo": {
+        "passive_energy_cur": -6
+      },
+      "name": "calcResult",
+      "UID": "8d508d86-ca22-4e02-81e9-e3d4aa865cde",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "buffId": 9116111,
+      "name": "removeBuff",
+      "UID": "d37ff655-eacf-4e04-a602-bb7a609ef5bc",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "28": {
+      "key": "10161Passive",
+      "name": "setCacheVal",
+      "UID": "c61176f6-4fa6-4f04-a398-2f613823585c",
+      "target": "OWNER",
+      "val": {
+        "UID": "3384480b-cb9a-4cd3-816e-918a130891f7",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 27
+      },
+      "NodeID": 28
+    },
+    "30": {
+      "key": "10161Passive",
+      "name": "setCacheVal",
+      "UID": "58a92f99-8916-48fb-9eea-aa56dde4a1ec",
+      "target": "OWNER",
+      "val": {
+        "UID": "025bb16b-b1b9-42b6-8294-d0b58daa124a",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 29
+      },
+      "NodeID": 30
+    },
+    "18": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "bd4a96e3-3cae-4e5e-9596-79a22a3fb576",
+      "NodeID": 18,
+      "lValue": {
+        "UID": "2b44a600-77da-4a33-a6f7-c27c4734d8b6",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 17
+      }
+    },
+    "13": {
+      "UID": "21caeee7-c66f-46f2-977f-0205ab5e2ae9",
+      "destroyReason": "timeout",
+      "name": "buffDestroyReason",
+      "NodeID": 13
+    },
+    "11": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "d470ab1e-3e2f-4737-94c1-938e0b44eb70",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "calcInfo": {
+        "passive_energy_cur": 2
+      },
+      "name": "calcResult",
+      "UID": "75f92a7a-70fc-48d2-bc60-d8fd6dbaeb3b",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "6": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9116112,
+      "NodeID": 6,
+      "UID": "6d590d53-47cf-418a-9279-80ccaf807024",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onBuffDestroyIds": [
+    14
+  ],
+  "onBuffStartIds": [
+    11,
+    28
+  ]
+}

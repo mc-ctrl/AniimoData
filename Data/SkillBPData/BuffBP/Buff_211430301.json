@@ -1,0 +1,284 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_211430301",
+  "NodeID": 1,
+  "UID": "87114387-5dca-4449-b601-a675f855529f",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "72d8f206-bca5-435a-b7ea-95f6bff8fd9f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3,
+        13,
+        14
+      ],
+      "NodeID": 5
+    },
+    "38": {
+      "name": "stopEffectStr",
+      "UID": "92bb25f3-a949-4cf0-ad3f-52fc3a4f9e70",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_Red",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "39": {
+      "name": "stopEffectStr",
+      "UID": "f2279d04-85c5-4f12-9708-6efbe61316b0",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_White",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "b1b66bc2-35ae-4947-8557-2e8bd70eaac8",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "35": {
+      "key": "10143electric",
+      "name": "setCacheVal",
+      "UID": "4049052e-6b46-401e-92a9-0f0e16c09c64",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 35
+    },
+    "8": {
+      "key": "10143electric",
+      "actionIds": [
+        6,
+        21,
+        36
+      ],
+      "NodeID": 8,
+      "UID": "9de29028-881b-4b1a-bc05-c444b4af6950",
+      "name": "registerCacheValChange"
+    },
+    "37": {
+      "name": "stopEffectStr",
+      "UID": "006f45e8-9f38-4adf-b898-cd6b0e7a2852",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_Red",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "df76e009-8c02-4da7-b28c-151faefcfe2a",
+      "effectId": "Eff_Parmon_10143_Skill_Charge01",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "863f58fb-3f74-4f03-8fb0-f404d7730afe",
+      "effectId": "Eff_Parmon_10143_Skill_Charge02",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "33": {
+      "rValue": 1,
+      "name": "greater",
+      "UID": "a96eefce-d5f7-45e9-a02c-3211cf45c823",
+      "NodeID": 33,
+      "lValue": {
+        "key": "10143electric",
+        "name": "getCacheVal",
+        "UID": "8c326386-b01a-4775-97be-1acc6dae45aa",
+        "target": "OWNER",
+        "NodeID": 31
+      }
+    },
+    "12": {
+      "actionIds": [
+        22,
+        23,
+        19
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "98f46451-088d-4a72-86ae-8f46604adcb7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10,
+        15,
+        16
+      ],
+      "NodeID": 12
+    },
+    "21": {
+      "actionIds": [
+        22,
+        23,
+        19
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "527b04c3-73d8-4592-950f-88427a37704c",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f60d4014-211e-4ae0-87f7-07dc23c52b1b",
+      "effectId": "Eff_Parmon_10143_Skill_Charge01",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "d3be04b7-5ccd-4d0e-bf62-0eeff6a31a0c",
+      "effectId": "Eff_Parmon_10143_Skill_Charge02",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "aabdd2e4-75f5-4887-accb-a0215173c43d",
+      "effectId": "Eff_Parmon_10143_Skill_Charge03",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "ee494cde-db8f-46f2-b8da-51059243b3f5",
+      "effectId": "Eff_Parmon_10143_Skill_Charge03",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7f9f98e5-cd0f-40a9-add1-12e833342a0f",
+      "effectId": "Eff_Parmon_10143_Skill_Charge02",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "ffab79f0-b549-4414-8ac8-22719069439d",
+      "effectId": "Eff_Parmon_10143_Skill_Charge01",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "ffed4b82-2315-4b9a-a756-78f2a13b0120",
+      "effectId": "Eff_Parmon_10143_Skill_Charge02",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "7a42359b-a8d0-45b1-9cf5-4ba11c7cdcad",
+      "effectId": "Eff_Parmon_10143_Skill_Charge03",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "85f77f32-d58a-461d-b900-8da4822936d2",
+      "effectId": "Eff_Parmon_10143_Skill_Charge01",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "d1c8ad8f-a496-49aa-9020-d87c4814aa18",
+      "effectId": "Eff_Parmon_10143_Skill_Charge03",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "34e99b0c-dc9b-42c9-9255-88211d874e19",
+      "effectId": "Eff_Parmon_10143_Skill_Shield_Spark",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "30": {
+      "rValue": 2,
+      "name": "greater",
+      "UID": "026a2db4-8c0b-49ee-be6b-c21e61616d83",
+      "NodeID": 30,
+      "lValue": {
+        "key": "10143electric",
+        "name": "getCacheVal",
+        "UID": "085607e3-f3f1-43f3-aa23-c605c0fed1b2",
+        "target": "OWNER",
+        "NodeID": 29
+      }
+    },
+    "32": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "d207c345-7853-4f25-a99d-56e827612ae6",
+      "NodeID": 32,
+      "lValue": {
+        "key": "10143electric",
+        "name": "getCacheVal",
+        "UID": "8c326386-b01a-4775-97be-1acc6dae45aa",
+        "target": "OWNER",
+        "NodeID": 31
+      }
+    },
+    "19": {
+      "key": "removeRedLight",
+      "duration": 40,
+      "actionIds": [
+        37,
+        35,
+        17
+      ],
+      "NodeID": 19,
+      "UID": "b09c29bb-c918-494d-8ad7-79bed45d23ac",
+      "name": "addEntityTimer"
+    },
+    "34": {
+      "rValue": 2,
+      "name": "greater",
+      "UID": "7dfdff04-2d6c-4e18-870f-cb2b49699771",
+      "NodeID": 34,
+      "lValue": {
+        "key": "10143electric",
+        "name": "getCacheVal",
+        "UID": "8c326386-b01a-4775-97be-1acc6dae45aa",
+        "target": "OWNER",
+        "NodeID": 31
+      }
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2f5371f2-b3cc-4be4-a999-91de99e25b4d",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_White",
+      "speed": 1,
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    24,
+    26,
+    27,
+    28,
+    38,
+    39
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

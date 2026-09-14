@@ -1,0 +1,98 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 29,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10011_Attack",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0.1,
+  "kind": "Tracking",
+  "maxAngularOffset": 0.5,
+  "nodeMap": {
+    "31": {
+      "UID": "6f68f3f2-9e25-4691-9a60-b085bcc368a4",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 31
+    },
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10121001,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "f64d20fe-b291-4a52-9dcc-9f219101c254",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 3001,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10001
+      }
+    },
+    "32": {
+      "actionIds": [
+        44
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "06b061dd-1ad0-4b7d-b0c7-fa65267be358",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f2734e69-b972-493b-bea0-fa90ed5dfef0",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_attack_hit",
+      "NodeID": 23
+    },
+    "20": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "78854716-f3f8-4ea2-ad2a-b0842f3d94c6",
+      "effectId": "Eff_Parmon_10011_Attack_Hit",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "44": {
+      "name": "calcResult",
+      "UID": "d5ba41b1-586e-49a4-8395-a0a274b14528",
+      "target": "CASTER",
+      "NodeID": 44,
+      "calcInfoByLuaConfig": {
+        "id": 10121001,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      }
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    32,
+    20,
+    23
+  ],
+  "onProjectileHitIds": [
+    29,
+    32
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "BPName": "ability_10121001",
+  "impulseId": 3001,
+  "acceleration": 0
+}

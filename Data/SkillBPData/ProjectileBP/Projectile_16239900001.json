@@ -1,0 +1,51 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 33,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10623_Skill_OutEx_Bubble_j001",
+  "gravityRatio": 4,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 1,
+  "nodeMap": {
+    "39": {
+      "pos": "PROJECTILE",
+      "timelineId": 16239900002,
+      "name": "createSpellField",
+      "UID": "a2f126a7-a8b5-45c1-b9ba-13cde0f0ebaa",
+      "rot": "OWNER",
+      "destroyOnMasterDead": true,
+      "NodeID": 39
+    },
+    "74": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "66530140-3764-4ec4-86eb-d77f2c5d5cc2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10623_Skill_Ex_02",
+      "NodeID": 74
+    }
+  },
+  "moveSpeed": 17,
+  "onProjectileFinishIds": [
+    39
+  ],
+  "BPName": "ability_16239900",
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "onProjectileStartIds": [
+    74
+  ],
+  "tickInterval": 0,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.3,
+  "impulseId": 2000,
+  "acceleration": 0
+}

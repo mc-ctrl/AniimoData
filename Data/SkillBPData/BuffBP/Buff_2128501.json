@@ -1,0 +1,153 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2128501",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    9,
+    23,
+    17,
+    27
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "27": {
+      "actionIds": [
+        28
+      ],
+      "name": "actOnTargets",
+      "UID": "bbb75012-f02b-4768-b4bd-a4d16f470252",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            180,
+            2.2,
+            0.6
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 27
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "233d80f5-3987-471e-b63d-a02e2d533c20",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_HitGround",
+      "NodeID": 17
+    },
+    "9": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 7,
+      "NodeID": 9,
+      "UID": "c5acde0d-8a2e-4c78-936c-11ef2b9cf0e9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            180,
+            2.2,
+            0.6
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        7
+      ]
+    },
+    "28": {
+      "eventName": "gesila10",
+      "name": "notifyCustomEvent",
+      "UID": "03d2e3f0-f166-4786-a975-18ef07d9613b",
+      "target": "TARGET",
+      "NodeID": 28
+    },
+    "23": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "8bb072dc-e7e6-4511-b007-aba19ad4cde5",
+      "effectId": "Eff_Parmon_10285_Skill_Earthqueake",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "10531832-4a02-4f5c-be0b-4d708f633940",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 22
+      },
+      "NodeID": 23
+    },
+    "7": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2128501,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "7158964e-3fe2-4b83-a5c4-95bdc0c9438c",
+      "target": "TARGET",
+      "NodeID": 7,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "elementType": 8,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Rock_Blunt"
+      }
+    },
+    "2": {
+      "delay": 0.58,
+      "interval": 1,
+      "UID": "94c44fc8-e533-405c-92cd-e8209add3d45",
+      "name": "buffStartThink",
+      "NodeID": 2
+    }
+  },
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

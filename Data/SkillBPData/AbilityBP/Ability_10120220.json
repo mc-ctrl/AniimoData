@@ -1,0 +1,58 @@
+{
+  "BPName": "ability_10120220",
+  "NodeID": 1,
+  "isAim": true,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10120220001,
+      "name": "setCombatActionTimeline",
+      "UID": "e542f056-bac7-40f1-874b-252a788aebbe",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "71": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 71,
+      "UID": "0ba34e03-1eb1-4ee5-b728-9d29beb6c67e",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Charm"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Common_Skill_Ice_Bullet_Fly",
+    "Eff_Parmon_Common_Skill_Ice_Bullet_Bomb",
+    "Eff_Parmon_10012_Boss_Warning"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    71
+  ],
+  "searchTargetRangeDown": 3,
+  "abilityParamId": 10200020,
+  "UID": "1bb37783-4979-41a1-83b3-69511f84e301"
+}

@@ -1,0 +1,125 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2150103",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bedea1bd-b816-4629-8ea0-e4fb990c623e",
+      "effectId": "Eff_Parmon_10503_Skill_CrazyClaw_AngerL",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "41bfa9a7-bdd7-431f-85f1-50b47f7ce636",
+      "effectId": "Eff_Parmon_10503_Skill_Dark_CrazyClaw_AngerL",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "010343ac-6214-4d14-9aaa-e28675ad9c0f",
+      "effectId": "Eff_Parmon_10503_Skill_CrazyClaw_AngerR",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "42debf8b-cc29-41b2-8baa-99ae192d57d5",
+      "effectId": "Eff_Parmon_10503_Skill_CrazyClaw_AngerR",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c7ebf281-dc2f-475d-a49a-4153b83a3b13",
+      "effectId": "Eff_Parmon_10503_Skill_Dark_CrazyClaw_AngerR",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "52a31b22-6f63-44fd-9395-ddfc2e4047a6",
+      "effectId": "Eff_Parmon_10503_Skill_CrazyClaw_AngerL",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "f7963971-f9c8-4310-9187-61dd31ea0893",
+      "effectId": "Eff_Parmon_10503_Skill_Dark_CrazyClaw_AngerL",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "9": {
+      "actionIds": [
+        16,
+        18
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "7b62981b-7bb4-4a05-9dcc-f4238660ca9f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7,
+        10
+      ],
+      "NodeID": 9
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "c23d7f3d-1d49-454a-8eb8-0c2015fa0c08",
+      "effectId": "Eff_Parmon_10503_Skill_Dark_CrazyClaw_AngerR",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "11": {
+      "name": "checkPetPrototypeId",
+      "UID": "c59d6bac-6914-4f22-b0ee-29bd1aadf27d",
+      "target": "OWNER",
+      "petPrototypeId": 1050301,
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        13,
+        15
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "a9feaf74-b644-4760-8fc2-f0365cc778b7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3,
+        6
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "name": "checkPetPrototypeId",
+      "UID": "10775fc9-ff52-4fd7-b909-2c80d14628fc",
+      "target": "OWNER",
+      "petPrototypeId": 1050301,
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

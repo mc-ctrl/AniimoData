@@ -1,0 +1,67 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4002010",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 4002011,
+      "NodeID": 8,
+      "UID": "3a9bb18b-e6a1-45ab-958a-61cc9a2948b0",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "d093ec1b-a9ab-4a06-a536-73e0ee3bf6b6",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 4
+    },
+    "9": {
+      "buffId": 4002010,
+      "name": "removeBuff",
+      "UID": "dd62ca3a-bd6c-46c1-a56b-9943a606571a",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "16e82506-72f4-44f9-b309-d0b0246c1e74",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "34bf41d7-2122-4e47-8755-c91b335a681a",
+      "target": "OWNER",
+      "NodeID": 10
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 4002010,
+    "type": 1,
+    "final_taken_dmg_inc_rate_v": "param0"
+  },
+  "onBuffDestroyIds": [
+    4,
+    8
+  ],
+  "onBuffStartIds": [
+    10,
+    6
+  ]
+}

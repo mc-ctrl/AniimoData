@@ -1,0 +1,133 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9101202",
+  "NodeID": 1,
+  "UID": "810551a1-be28-45df-b155-320f8c15aef3",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "value": {
+        "UID": "0579800c-e7d8-489e-bf5b-03282214a872",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 2
+      },
+      "rangeActions": [
+        {
+          "actionIds": [
+            6,
+            14
+          ],
+          "value": 0.5
+        },
+        {
+          "actionIds": [
+            10,
+            13
+          ],
+          "value": 1
+        }
+      ],
+      "name": "doSplitRangeActions",
+      "UID": "002c0e9f-1d07-4a2d-b264-677e76acaeb4",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "attributeName": "hp_cur",
+      "UID": "85070562-9fe9-4d19-ab3d-be5ae7a8e15e",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91012021,
+      "NodeID": 24,
+      "UID": "48f741aa-ab14-4830-b281-c8b8feb2d28f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "UID": "0287ca94-d0f1-4643-8c64-d3daf9265f27",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "e2678e47-6fb7-412f-bb03-87c01e016dbc",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 10
+    },
+    "25": {
+      "buffId": 91012021,
+      "name": "removeBuff",
+      "UID": "10afdebd-3bfd-4676-be93-8de06580ebb1",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "value": {
+        "UID": "44f8a6b8-4c3e-4ab3-8fa3-932cd1af49bc",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 15
+      },
+      "rangeActions": [
+        {
+          "actionIds": [
+            17,
+            25
+          ],
+          "value": 0.5
+        },
+        {
+          "actionIds": [
+            21,
+            24
+          ],
+          "value": 1
+        }
+      ],
+      "name": "doSplitRangeActions",
+      "UID": "1beefa30-b9dd-4e49-aad9-832e2fe0d3f0",
+      "NodeID": 16
+    },
+    "17": {
+      "UID": "393fbd33-55cb-494b-b160-a7a41d0b3dba",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 17
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91012021,
+      "NodeID": 13,
+      "UID": "39a31902-9b17-41a4-98de-98aeca99fa5a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "buffId": 91012021,
+      "name": "removeBuff",
+      "UID": "736a93bb-98a7-4fbd-8fac-be59078ea6e8",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "21": {
+      "UID": "c3b2c0ef-fcc1-40af-abcd-f806f45a07b1",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 21
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    16,
+    4
+  ]
+}

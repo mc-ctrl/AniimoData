@@ -1,0 +1,64 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "actOnTargets",
+      "UID": "0faa9d20-372c-4f46-9aaf-694e6e081d3b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            80,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerDeadEvent",
+      "UID": "3484bdc3-1351-4b4c-90c5-5bcd11df345d",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "2": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 100624,
+      "NodeID": 2,
+      "UID": "c4ce9e8c-4e2b-47b5-bba6-bbc7740df676",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_1011000020",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "d9bebbd8-8744-4013-ab70-1669e8d1bdec",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          6
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "triggerName": "Green_Gm_02",
+      "name": "setEffectAnimTrigger",
+      "UID": "2b2a3c4f-b03e-4bde-861f-63d47e0b113c",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Gm",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "2": {
+      "duration": 10,
+      "target": "OWNER",
+      "NodeID": 2,
+      "UID": "90a118bc-17e6-4730-83ee-741dcff3d97f",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Gm",
+      "speed": 1,
+      "name": "playEffectStr"
+    }
+  },
+  "BPName": "timeline_9021305",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 35
+}

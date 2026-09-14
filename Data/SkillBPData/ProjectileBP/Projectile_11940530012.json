@@ -1,0 +1,109 @@
+{
+  "duration": 1,
+  "BPName": "ability_11940530",
+  "NodeID": 212,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Chop03",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 999,
+  "moveSpeed": 20,
+  "nodeMap": {
+    "108": {
+      "calcResultNodeId": 114,
+      "name": "actOnTargets",
+      "UID": "9d5ab1ad-7f8c-473f-ad6e-36541d22e458",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            90,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "3",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        114,
+        110
+      ],
+      "impulseId": 5000,
+      "NodeID": 108
+    },
+    "114": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11940530,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "48fad5a0-909b-4071-baac-b2a1af4ba65b",
+      "target": "TARGET",
+      "NodeID": 114,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 5000
+      }
+    },
+    "110": {
+      "key": "10194Hit03",
+      "name": "setCacheVal",
+      "UID": "ca9756f4-78c7-48c9-983b-5eccca1a038a",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 110
+    }
+  },
+  "onProjectileHitIds": [
+    108
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 2.5,
+  "sweepShape": 0,
+  "startRotationOffset": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "nextTemplateId": 11940530011,
+  "UID": "98815baf-4b80-404d-baeb-6b8603008195",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 114,
+  "impulseId": 5000,
+  "acceleration": 0
+}

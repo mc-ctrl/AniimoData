@@ -1,0 +1,32 @@
+[
+  {
+    "res": "Behav_SleepStart",
+    "name": 1973573806,
+    "photo": 2,
+    "icon": "$UI_Img_Photograph_Pet_1101.png",
+    "resEnd": "Behav_SleepEnd",
+    "resLoop": "Behav_SleepLoop"
+  },
+  {
+    "photo": 2,
+    "icon": "$UI_Img_Photograph_Pet_1112.png",
+    "res": "IdleSpecial",
+    "name": 1803362419
+  },
+  {
+    "res": "Behav_HappyStart",
+    "name": 1888196947,
+    "photo": 2,
+    "icon": "$UI_Img_Photograph_Pet_1113.png",
+    "resEnd": "Behav_HappyEnd",
+    "resLoop": "Behav_HappyLoop"
+  },
+  {
+    "res": "Behav_LoveStart",
+    "name": 1898987683,
+    "photo": 2,
+    "icon": "$UI_Img_Photograph_Pet_1114.png",
+    "resEnd": "Behav_LoveEnd",
+    "resLoop": "Behav_LoveLoop"
+  }
+]

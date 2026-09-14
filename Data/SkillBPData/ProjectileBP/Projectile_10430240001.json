@@ -1,0 +1,131 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10430240",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_Common_Skill_Ice_Bullet_Fly",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "27": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 77,
+      "NodeID": 27,
+      "UID": "086d25ac-aea1-450e-b417-206b50099ad8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        77,
+        25
+      ]
+    },
+    "77": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10430240,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "75ba61f2-61d8-4b92-bd7c-93dae1ff2413",
+      "target": "TARGET",
+      "NodeID": 77,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 3000
+      }
+    },
+    "45": {
+      "UID": "76467d0b-deef-4cfb-a142-342cf59c8fb0",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 45
+    },
+    "47": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "9ae570f7-f281-45ca-99ae-672265175c30",
+      "effectId": "Eff_Hit_Ice_Blunt_Big",
+      "speed": 1.01,
+      "NodeID": 47
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "fdf62731-3af7-40c1-90a6-7c56872f7895",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "24": {
+      "calcInfo": {},
+      "name": "calcResult",
+      "UID": "68bb56d4-c3a2-4d04-af09-d10c8e0e977e",
+      "target": "CASTER",
+      "NodeID": 24
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 200,
+  "onProjectileFinishIds": [
+    47
+  ],
+  "onProjectileHitIds": [
+    27
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "calcResultNodeId": 77,
+  "tickInterval": 0.01,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 0.5,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

@@ -1,0 +1,169 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91261031",
+  "NodeID": 1,
+  "UID": "170ce6e3-19e6-4989-b5fb-a999f6444f83",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "4dec0ff4-c882-4bbf-8ce8-7a862e177c5d",
+      "effectId": "Eff_Parmon_10262_PassiveSkill_Surroundingcloud",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "key": "91026103",
+      "name": "setCacheVal",
+      "UID": "615ed92b-2533-45b0-9ab4-24b467d5db34",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 13
+    },
+    "21": {
+      "calcInfo": {
+        "passive_energy_cur": -4
+      },
+      "name": "calcResult",
+      "UID": "a123a492-0c64-47fd-bc71-28fbbe6ba16d",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a75386c9-4e5a-454f-96ce-a6d58af960ec",
+      "effectId": "Eff_Parmon_10261_PassiveSkill_Surroundingcloud",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "bd78839b-ad64-4e80-ac7f-8dae391da3c8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a06b402d-c10a-4753-b2a3-917c87a367f9",
+      "effectId": "Eff_Parmon_10262_PassiveSkill_Surroundingcloud",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "913d6740-a7f0-4e63-99e8-051a39eef80f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        15
+      ],
+      "NodeID": 7
+    },
+    "16": {
+      "NodeID": 16,
+      "UID": "079b26f0-6b28-4dad-8b91-15712bf44bd1",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "19": {
+      "UID": "75b5e57b-c50c-4ad4-a032-683865863e69",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 19
+    },
+    "17": {
+      "NodeID": 17,
+      "UID": "e1c26b5a-ee30-492c-b228-a2a6a549a3c4",
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": true,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "9": {
+      "key": "91026103",
+      "name": "setCacheVal",
+      "UID": "efc169e1-7d57-4ef2-98c9-4cc6054b7ccb",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "d4e30a09-0dc7-4965-a34b-5474a412a446",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 18
+    },
+    "14": {
+      "name": "checkPetPrototypeId",
+      "UID": "09c52697-af97-4f13-8a59-e0315f8a8620",
+      "target": "OWNER",
+      "petPrototypeId": 1026100,
+      "NodeID": 14
+    },
+    "11": {
+      "key": "91026103",
+      "name": "setCacheVal",
+      "UID": "d5e5e028-422e-4c1d-a6c7-43447465c6fc",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 11
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "b6fc3518-82af-41fc-99aa-39ec08dfd745",
+      "effectId": "Eff_Parmon_10261_PassiveSkill_Surroundingcloud",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "12": {
+      "name": "isInCombat",
+      "UID": "c0814a9b-e3e5-4705-b5c9-4ca0129f1304",
+      "target": "OWNER",
+      "NodeID": 12,
+      "not": false
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5,
+    3,
+    10,
+    17,
+    19,
+    21
+  ],
+  "onBuffStartIds": [
+    7,
+    11,
+    16,
+    18
+  ]
+}

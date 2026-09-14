@@ -1,0 +1,11 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9102304",
+  "NodeID": 1,
+  "UID": "06ac01a0-c9cd-4096-a413-c6cc2189205c",
+  "desc": "反击大师",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {}
+}

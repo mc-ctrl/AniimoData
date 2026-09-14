@@ -1,0 +1,144 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11147",
+  "NodeID": 1,
+  "UID": "a29df3cb-4153-43a0-ae81-1db6138f460c",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "2960da00-72fc-4e60-8d6c-edbd6ccdcb0f",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Delivery",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "4": {
+      "name": "setSubModelVisible",
+      "UID": "cf22f658-8138-49a4-81cb-e4fdb6f7f6bc",
+      "NodeID": 4,
+      "subModelName": "M_Parmon_10351_Body01_fnr",
+      "visible": true
+    },
+    "21": {
+      "name": "stopSoundStr",
+      "UID": "33961bc7-5529-4f1c-af38-9162b2aedc52",
+      "soundId": "SFX_Parmon_10351_DeliveryFailed",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "fb432bab-082a-43bd-9f09-aa3afb4f13a2",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Delivery",
+      "target": "CURPET",
+      "NodeID": 14
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "1c7d1fab-2a4f-47ab-a0dd-79f6f741c6bf",
+      "effectId": "Eff_Parmon_10351_CatchHoney_DeliveryWarn",
+      "target": "CURPET",
+      "NodeID": 13
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "a0ceaf1e-6158-4fc6-a4a1-13610e6c4757",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Collect",
+      "target": "CURPET",
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "b7e091d9-031a-400f-a731-deca4b2dbeb2",
+      "value": true,
+      "name": "setForceControlMode",
+      "NodeID": 7
+    },
+    "16": {
+      "name": "setSubModelVisible",
+      "UID": "dea91201-ef8b-40ef-8c9b-2ef2cc5d4f8a",
+      "NodeID": 16,
+      "subModelName": "M_Parmon_10351_Body01_fnr",
+      "visible": false
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "41d5a619-c5eb-4fab-aebc-3f8a9b3d316f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10351_CatchHoney",
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "c24d9d8c-a64a-4b53-966d-4391822d7b1d",
+      "effectId": "Eff_Debuff_stun",
+      "target": "CURPET",
+      "NodeID": 17
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2413e960-eefb-4189-b384-9e76fd2c5812",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10351_DeliveryHoney",
+      "NodeID": 9
+    },
+    "18": {
+      "name": "stopSoundStr",
+      "UID": "0c7dfd99-277c-4efe-91ce-7f667ea9fdb1",
+      "soundId": "SFX_Parmon_10351_CatchHoney",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "name": "stopSoundStr",
+      "UID": "df31a046-a0eb-4d7a-ba5f-b66c1a4df113",
+      "soundId": "SFX_Parmon_10351_DeliveryHoney",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "UID": "74965e07-6c69-411e-a2d9-7c36a482719d",
+      "value": false,
+      "name": "setForceControlMode",
+      "NodeID": 11
+    },
+    "20": {
+      "name": "stopSoundStr",
+      "UID": "f07f01d3-d6df-4d8f-ad4d-c6b4ff0174e3",
+      "soundId": "SFX_Parmon_10351_DeliveryWarn",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "2": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "69d72456-6780-430b-a6a9-a0d9596e8911",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Collect",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    13,
+    14,
+    15,
+    11,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    8,
+    4,
+    5,
+    9,
+    7
+  ]
+}

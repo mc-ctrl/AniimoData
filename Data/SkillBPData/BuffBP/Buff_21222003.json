@@ -1,0 +1,31 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21222003",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    23
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "Boss_10222_break",
+      "name": "setCacheVal",
+      "UID": "fe190946-20ec-4947-b39f-aa82608e4fb5",
+      "target": "OWNER",
+      "val": 30,
+      "NodeID": 3
+    },
+    "6": {
+      "UID": "fe260f02-e93a-4491-9a14-63082c9373f1",
+      "name": "showBossMechanismTip",
+      "id": 2046,
+      "NodeID": 6
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6,
+    3
+  ]
+}

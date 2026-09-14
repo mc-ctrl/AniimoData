@@ -1,0 +1,284 @@
+{
+  "nodeMap": {
+    "37": {
+      "isNot": false,
+      "stateName": "FLYING",
+      "isParentState": true,
+      "NodeID": 37,
+      "UID": "12e41d34-76f5-4632-ad39-545bac9fe96d",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "64": {
+      "UID": "248bc5d9-6b46-4452-a107-19194de3dad9",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 64
+    },
+    "43": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0.2
+      ],
+      "templateId": 10720410002,
+      "name": "createProjectile",
+      "UID": "e0427519-2fab-483e-a777-27422f6fafc4",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 43,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "65": {
+      "action": {
+        "actionIds": [
+          64
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 65,
+      "UID": "8e17783d-d78c-4727-a249-b2b88ead8830"
+    },
+    "9": {
+      "actionIds": [
+        20,
+        7
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "705adee9-554f-4f02-b7c8-510888589452",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        46,
+        43
+      ],
+      "NodeID": 9
+    },
+    "67": {
+      "UID": "38ca46e6-213b-4bba-a8bc-02865067dc22",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 67
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "854deb53-e506-491f-981a-6b318b9724fa",
+      "isAbilityEndRemove": false,
+      "soundId": "battle_pets_pikachu_attack_common01",
+      "NodeID": 20
+    },
+    "69": {
+      "UID": "d1a4442b-0e59-4d1f-9f06-c6a161957e7e",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 1,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 69
+    },
+    "62": {
+      "UID": "797fc19a-2f7f-41ca-8da1-0ce6b8904781",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          60
+        ]
+      },
+      "NodeID": 62
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          69
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.93,
+      "NodeID": 70,
+      "UID": "ff7a85bd-5b7a-4ac7-89be-7af1efb788a2"
+    },
+    "60": {
+      "UID": "88ffd434-7550-45b8-862e-fccd6f08672b",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 60
+    },
+    "35": {
+      "name": "isActorType",
+      "UID": "93405f44-aea2-40cb-a3ae-64d8c8350930",
+      "target": "OWNER",
+      "NodeID": 35,
+      "actorType": 3
+    },
+    "46": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4e44b45a-2dd5-49fb-94ea-fc8a43ffd582",
+      "isAbilityEndRemove": false,
+      "soundId": "battle_pets_pikachu_attack_common01",
+      "NodeID": 46
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ba7cb7a3-aeff-4d95-a515-05c042dd7f79",
+      "target": "CASTER",
+      "NodeID": 15,
+      "animId": "Skill_ChainLightening"
+    },
+    "57": {
+      "pitchCurveName": "CommonPitch_10angle",
+      "duration": 1,
+      "NodeID": 57,
+      "UID": "b4fef70e-fbac-46f1-b1d3-6eb7cf4596ff",
+      "blendInTime": 0.3,
+      "target": "OWNER",
+      "name": "playPitchYawCameraAnim"
+    },
+    "18": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "70e6addf-523d-414e-97d2-17ba66726ac5",
+      "target": "CASTER",
+      "NodeID": 18
+    },
+    "58": {
+      "UID": "27704c89-2c48-4ade-a289-761fead2914f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          57
+        ]
+      },
+      "NodeID": 58
+    },
+    "17": {
+      "UID": "fd1f9d6f-4415-4dca-bb22-2a4f1c6a3e23",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          67,
+          15,
+          18
+        ]
+      },
+      "NodeID": 17
+    },
+    "7": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0.2
+      ],
+      "templateId": 10720410001,
+      "name": "createProjectile",
+      "UID": "70024d1b-07a6-4a60-9023-a0ab572174cc",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 7,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "30": {
+      "duration": 0.4,
+      "name": "frameFreeze",
+      "UID": "6412d4fb-bf7f-4e2f-9830-ebb9773e117a",
+      "target": "OWNER",
+      "timeScale": 0.1,
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        30,
+        34
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "b633f0bb-0da7-410a-a4af-d3f365467333",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 33,
+      "UID": "f4e52be7-00c1-46e0-8c3c-dbc64dee605a"
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ec1ad7cd-c5c9-40cb-add6-b54cb8e72288",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1.5,
+      "NodeID": 34
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 10,
+      "UID": "d6b13e6d-48d3-47ef-8986-795b9cc35efa"
+    }
+  },
+  "BPName": "ability_10720410",
+  "NodeID": 12,
+  "UID": "2c7c6c7d-2ca0-4bdf-95b4-526dc6792038",
+  "eventIds": [
+    17,
+    62,
+    10,
+    70,
+    65,
+    33,
+    58
+  ],
+  "layer": "Base",
+  "length": 1.49
+}

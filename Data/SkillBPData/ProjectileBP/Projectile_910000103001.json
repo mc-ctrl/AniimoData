@@ -1,0 +1,72 @@
+{
+  "refControlPoint": [
+    [
+      1.839,
+      1,
+      2.711
+    ]
+  ],
+  "duration": 2.5,
+  "calcResultNodeId": 18,
+  "NodeID": 0,
+  "effectId": "Eff_Avatar_Female_Attack_New_01_04",
+  "gravityRatio": 0,
+  "autoSwitchTrack": true,
+  "nodeMap": {
+    "34": {
+      "pos": "TARGET_HIT",
+      "target": "TARGET",
+      "name": "playEffectOnPosRot",
+      "UID": "0aca0e54-5db0-4dc8-912b-c10a7917d3f5",
+      "effectId": "Eff_Avatar_Female_Attack_Hit_01",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "18": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 910000103,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "456a87b5-a45c-4b34-9037-bb3c24e9250a",
+      "target": "TARGET",
+      "NodeID": 18,
+      "attackData": {
+        "hitFrameFreezeId": 0,
+        "impulseId": 1000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "SFX_Combat_Girl_Hit",
+        "hitCameraShakeId": 0
+      }
+    }
+  },
+  "moveSpeed": 35,
+  "onProjectileHitIds": [
+    18,
+    34
+  ],
+  "refTargetPoint": [
+    0.012,
+    0,
+    11.547
+  ],
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 3,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "kind": "BezierCurve",
+  "tickInterval": 0.1,
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "BPName": "ability_910000103",
+  "impulseId": 1000,
+  "acceleration": 20
+}

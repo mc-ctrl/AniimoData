@@ -1,0 +1,62 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132414",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10,
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9db33535-bf31-41dc-8a99-9a2e6c7333e3",
+      "effectId": "Eff_Parmon_10324_Buff_QueenShield_01",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "4": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2241aedb-a49c-4d3a-bced-aa03669a2566",
+      "target": "OWNER",
+      "NodeID": 4,
+      "animId": "Behav_SleepLoop"
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "1d0331e3-0045-476d-8f47-1c80faac7ad9",
+      "effectId": "Eff_Parmon_10324_Buff_QueenShield_01",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20582708-909f-4c07-8c3e-015daab1516f",
+      "target": "OWNER",
+      "NodeID": 6,
+      "animId": "Behav_SleepEnd"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6e773202-e768-4004-b19a-c45441a75864",
+      "effectId": "Eff_Parmon_10324_Buff_QueenShield_End_01",
+      "speed": 1,
+      "NodeID": 10
+    }
+  },
+  "onBuffDestroyIds": [
+    9,
+    10,
+    6
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    4
+  ]
+}

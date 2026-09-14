@@ -1,0 +1,86 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 11,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10011_Skill_Charm_Bullet_01",
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "13": {
+      "needEcs": true,
+      "calcResultNodeId": 11,
+      "NodeID": 13,
+      "UID": "ea418618-a521-45d1-a368-ee76757f0547",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        11
+      ]
+    },
+    "11": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.35,
+        "instant_dmg_rate_v": 1.05
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10011_Attack_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "a1eaf9b2-bc36-46f9-acc6-269f96f15d93",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 11
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    13
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "BPName": "ability_10120101",
+  "defaultHitSoundType": "h",
+  "maxHitNum": 0,
+  "acceleration": 0
+}

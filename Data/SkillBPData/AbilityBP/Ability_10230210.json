@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_10230210",
+  "NodeID": 1,
+  "UID": "d271b001-51cf-4c84-91c5-4361ef9f9342",
+  "abilityParamId": 10900021,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10230210001,
+      "name": "setCombatActionTimeline",
+      "UID": "45821edc-1ccc-42a7-bcf5-34100b5657ca",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Petrifaction_Enter"
+  ],
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Wind_Blunt_Big",
+    "Eff_Parmon_10023_Skill_ShieldReverse_Wind_EndLight_liuli",
+    "Eff_Parmon_10023_Skill_ShieldReverse_Wind_EndLight02_liuli",
+    "Eff_Parmon_10023_Skill_ShieldReverse_Wind_Enter_liuli"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "subAbilityIds": [
+    10230211,
+    1023010
+  ],
+  "delayStartCd": true,
+  "switchSafeTime": 1,
+  "searchTargetRangeDown": 0
+}

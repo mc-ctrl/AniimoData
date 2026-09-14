@@ -1,0 +1,457 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "37": {
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "fabcb8dd-475d-4404-ad5f-f05b9296890b",
+      "name": "doActionsByConditions",
+      "NodeID": 37,
+      "elseActionIds": [
+        38
+      ]
+    },
+    "38": {
+      "duration": -1,
+      "buffId": 270010017,
+      "NodeID": 38,
+      "UID": "5e98dcb6-35eb-48ff-bba3-b25a6f6c6c41",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "39": {
+      "UID": "dfba355b-8cdc-4c25-ae12-3a0f2c0999ef",
+      "name": "getRoguePersistData",
+      "key": "buff270010022",
+      "NodeID": 39
+    },
+    "41": {
+      "name": "addRogueCoin",
+      "UID": "87fcfe13-369c-45c0-a906-4271dc65fad0",
+      "count": {
+        "rValue": {
+          "UID": "dfba355b-8cdc-4c25-ae12-3a0f2c0999ef",
+          "name": "getRoguePersistData",
+          "key": "buff270010022",
+          "NodeID": 39
+        },
+        "name": "multiply",
+        "UID": "de003bfd-13ec-4a90-b8aa-2122a2c1723c",
+        "NodeID": 40,
+        "lValue": {
+          "NodeID": 45,
+          "UID": "c2e388e2-6a0b-4ed6-87ff-bf4f0c3dd939",
+          "min": 1,
+          "max": 200,
+          "name": "random"
+        }
+      },
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "35": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "1010a52b-4d12-420c-b809-6be5201c9a58",
+      "name": "doActionsByConditions",
+      "NodeID": 35
+    },
+    "44": {
+      "key": "hasgetmoney",
+      "name": "setRoguePersistData",
+      "UID": "85c40341-b027-4c27-8091-0bd1702a1fef",
+      "value": {
+        "UID": "d80a6264-f5b9-4ac0-bac4-c61ef22d1a37",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 43
+      },
+      "NodeID": 44
+    },
+    "61": {
+      "duration": -1,
+      "buffId": 270010047,
+      "NodeID": 61,
+      "UID": "358b277c-b09e-4b3a-99fe-eb50576391b2",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "60": {
+      "conditionActionIds": [
+        59
+      ],
+      "UID": "2a59e5b1-2e12-441e-b382-3147ec13f0fc",
+      "name": "doActionsByConditions",
+      "NodeID": 60,
+      "elseActionIds": [
+        61
+      ]
+    },
+    "59": {
+      "buffId": 270010047,
+      "name": "hasBuff",
+      "UID": "908beaba-6762-4c99-a13a-5d20ed1e03ff",
+      "target": "OWNER",
+      "NodeID": 59
+    },
+    "58": {
+      "actionIds": [
+        60
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "f753462e-b334-485e-83c1-5a5ef6a4a775",
+      "name": "doActionsByConditions",
+      "NodeID": 58
+    },
+    "57": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "b4095280-b48b-435d-be36-cc1b9d052155",
+      "NodeID": 57,
+      "lValue": {
+        "UID": "36c6b9a0-6898-4d43-b232-53f3bf5debcb",
+        "name": "getRoguePersistData",
+        "key": "buff270010046",
+        "NodeID": 56
+      }
+    },
+    "56": {
+      "UID": "36c6b9a0-6898-4d43-b232-53f3bf5debcb",
+      "name": "getRoguePersistData",
+      "key": "buff270010046",
+      "NodeID": 56
+    },
+    "55": {
+      "NodeID": 55,
+      "UID": "f1ca0694-8ada-4388-a8d2-42abdb87c864",
+      "min": 1,
+      "max": 200,
+      "name": "random"
+    },
+    "54": {
+      "key": "hasgetmoney2",
+      "name": "setRoguePersistData",
+      "UID": "14014ae2-d53b-4dfd-8657-d7ee9ef5bf49",
+      "value": {
+        "UID": "9b6818dd-1328-4fea-8c65-faa0f6a4fa85",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 53
+      },
+      "NodeID": 54
+    },
+    "51": {
+      "name": "addRogueCoin",
+      "UID": "b9e899fb-e538-47a8-8951-361c67ffeba7",
+      "count": {
+        "rValue": {
+          "UID": "ba1c4245-a2b9-44a7-a6b5-a587da0e47c8",
+          "name": "getRoguePersistData",
+          "key": "buff270010045",
+          "NodeID": 49
+        },
+        "name": "multiply",
+        "UID": "fbca0d60-ed9f-4fd0-85e0-440966f4e8b2",
+        "NodeID": 50,
+        "lValue": {
+          "NodeID": 55,
+          "UID": "f1ca0694-8ada-4388-a8d2-42abdb87c864",
+          "min": 1,
+          "max": 200,
+          "name": "random"
+        }
+      },
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "49": {
+      "UID": "ba1c4245-a2b9-44a7-a6b5-a587da0e47c8",
+      "name": "getRoguePersistData",
+      "key": "buff270010045",
+      "NodeID": 49
+    },
+    "48": {
+      "actionIds": [
+        51,
+        54
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "5e7dcc02-a61a-40a6-ad19-42d7a2b431b3",
+      "name": "doActionsByConditions",
+      "NodeID": 48
+    },
+    "47": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "4ed8a9eb-d104-4363-bb9f-5771e63554df",
+      "NodeID": 47,
+      "lValue": {
+        "UID": "d0628c44-e71d-4e01-9923-53f01447aad4",
+        "name": "getRoguePersistData",
+        "key": "hasgetmoney2",
+        "NodeID": 46
+      }
+    },
+    "21": {
+      "UID": "b7d271c3-003a-44c4-8376-bec7b3822e76",
+      "name": "getRoguePersistData",
+      "key": "buff270010015",
+      "NodeID": 21
+    },
+    "13": {
+      "actionIds": [
+        41,
+        44
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "40ed9685-5577-4342-aa83-f58db8bae555",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "19": {
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "70d74044-4913-47c3-8dc8-f1cb0e01a150",
+      "name": "doActionsByConditions",
+      "NodeID": 19,
+      "elseActionIds": [
+        20
+      ]
+    },
+    "31": {
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "dd5a5c1c-c330-4be3-a421-31360c597f23",
+      "name": "doActionsByConditions",
+      "NodeID": 31,
+      "elseActionIds": [
+        32
+      ]
+    },
+    "24": {
+      "buffId": 270010015,
+      "name": "hasBuff",
+      "UID": "56bdf9d3-76fb-408c-9e6c-903df1cdfac3",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "18": {
+      "buffId": 270010014,
+      "name": "hasBuff",
+      "UID": "8055c260-3780-4c88-b172-51a0dc0affd2",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "26": {
+      "duration": -1,
+      "buffId": 270010015,
+      "NodeID": 26,
+      "UID": "ca1b8b5c-3fc2-46d2-9588-b20b5c6e3229",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "11": {
+      "UID": "de7711c6-b7d1-43fe-8f42-f1f1521ad978",
+      "name": "getRoguePersistData",
+      "key": "hasgetmoney",
+      "NodeID": 11
+    },
+    "20": {
+      "duration": -1,
+      "buffId": 270010014,
+      "NodeID": 20,
+      "UID": "11128615-361e-4bfe-8b0c-f7bcff6b64b8",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "12": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "475f429b-12e8-450e-9be0-0e45e772c444",
+      "NodeID": 12,
+      "lValue": {
+        "UID": "de7711c6-b7d1-43fe-8f42-f1f1521ad978",
+        "name": "getRoguePersistData",
+        "key": "hasgetmoney",
+        "NodeID": 11
+      }
+    },
+    "22": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "ec96da11-9841-412c-87c0-f9c385ed6f9e",
+      "NodeID": 22,
+      "lValue": {
+        "UID": "b7d271c3-003a-44c4-8376-bec7b3822e76",
+        "name": "getRoguePersistData",
+        "key": "buff270010015",
+        "NodeID": 21
+      }
+    },
+    "23": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "c881072c-09cd-44ab-9134-b097a3d080c2",
+      "name": "doActionsByConditions",
+      "NodeID": 23
+    },
+    "45": {
+      "NodeID": 45,
+      "UID": "c2e388e2-6a0b-4ed6-87ff-bf4f0c3dd939",
+      "min": 1,
+      "max": 200,
+      "name": "random"
+    },
+    "17": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "028cec4f-d7df-4ae4-8509-379df94caf47",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "46": {
+      "UID": "d0628c44-e71d-4e01-9923-53f01447aad4",
+      "name": "getRoguePersistData",
+      "key": "hasgetmoney2",
+      "NodeID": 46
+    },
+    "15": {
+      "UID": "07ba520c-66dc-4cda-b953-d3d53774016d",
+      "name": "getRoguePersistData",
+      "key": "buff270010014",
+      "NodeID": 15
+    },
+    "25": {
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "28d636b7-3a6c-4998-ba74-14bf3fd17817",
+      "name": "doActionsByConditions",
+      "NodeID": 25,
+      "elseActionIds": [
+        26
+      ]
+    },
+    "16": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "5e551f4e-4f7d-4ea0-b6e2-a9e2c846e28c",
+      "NodeID": 16,
+      "lValue": {
+        "UID": "07ba520c-66dc-4cda-b953-d3d53774016d",
+        "name": "getRoguePersistData",
+        "key": "buff270010014",
+        "NodeID": 15
+      }
+    },
+    "27": {
+      "UID": "c34a95c4-16a7-4d0c-964b-dd9bd160a2f7",
+      "name": "getRoguePersistData",
+      "key": "buff270010016",
+      "NodeID": 27
+    },
+    "28": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "01af21dc-bf14-4275-a067-cd93ec08d305",
+      "NodeID": 28,
+      "lValue": {
+        "UID": "c34a95c4-16a7-4d0c-964b-dd9bd160a2f7",
+        "name": "getRoguePersistData",
+        "key": "buff270010016",
+        "NodeID": 27
+      }
+    },
+    "29": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "00786278-a12c-4103-937c-abdaec3862f1",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "30": {
+      "buffId": 270010016,
+      "name": "hasBuff",
+      "UID": "9ecc8952-ccbb-4af5-85b9-5f68c27e35fd",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "duration": -1,
+      "buffId": 270010016,
+      "NodeID": 32,
+      "UID": "508cb8f2-6031-4195-a664-ed7960b308f0",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "33": {
+      "UID": "cd712a2b-a62f-4d8e-b6ee-c6335a24eaca",
+      "name": "getRoguePersistData",
+      "key": "buff270010017",
+      "NodeID": 33
+    },
+    "34": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "52d1c2b8-1d90-44ae-99c5-d6c7ee75a811",
+      "NodeID": 34,
+      "lValue": {
+        "UID": "cd712a2b-a62f-4d8e-b6ee-c6335a24eaca",
+        "name": "getRoguePersistData",
+        "key": "buff270010017",
+        "NodeID": 33
+      }
+    },
+    "36": {
+      "buffId": 270010017,
+      "name": "hasBuff",
+      "UID": "14da896a-796e-41d8-a3d7-68b55b50f51d",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "BPName": "buff_2061000013",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    58,
+    13,
+    17,
+    23,
+    29,
+    35,
+    48
+  ]
+}

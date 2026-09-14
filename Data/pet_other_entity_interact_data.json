@@ -1,0 +1,55 @@
+{
+  "1005100": [
+    {
+      "interactBehav": "PercpetEntityReactionTriggerCastSkill",
+      "interactObjectChemState": [
+        "STATE_Flammable_KEY"
+      ],
+      "interactArg": [
+        10510500
+      ]
+    },
+    {
+      "interactBehav": "PercpetEntityReactionTriggerHappy",
+      "interactObjectChemState": [
+        "STATE_Flammable_KEY"
+      ]
+    }
+  ],
+  "1002100": [
+    {
+      "interactBehav": "PercpetEntityReactionTriggerEat",
+      "interactObjectEntityTag": [
+        "TE_Env_Stone"
+      ]
+    }
+  ],
+  "1002300": [
+    {
+      "interactBehav": "PercpetEntityReactionTriggerEat",
+      "interactObjectChemState": [
+        "STATE_WET_KEY"
+      ],
+      "interactObjectEntityTag": [
+        "TE_Env_Stone"
+      ]
+    }
+  ],
+  "1001100": [
+    {
+      "interactBehav": "PercpetEntityReactionTriggerCastSkill",
+      "interactObjectChemState": [
+        "STATE_WET_KEY"
+      ],
+      "interactObjectEntityTag": [
+        "TE_Env_Stone"
+      ]
+    },
+    {
+      "interactBehav": "PercpetEntityReactionTriggerEat",
+      "interactObjectEntityTag": [
+        "TE_Env_Food"
+      ]
+    }
+  ]
+}

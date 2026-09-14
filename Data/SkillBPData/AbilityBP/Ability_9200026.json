@@ -1,0 +1,91 @@
+{
+  "BPName": "ability_9200026",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 9200026,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "84": {
+      "name": "stopEffectStr",
+      "UID": "db152cf1-a7b8-4f19-bf97-d6e51a57be5b",
+      "effectId": "Eff_Avatar_Girl_Skill_BubbleMachineEnd01",
+      "target": "OWNER",
+      "NodeID": 84
+    },
+    "28": {
+      "eventName": "FISHING_CAPTURE_SKILL_START",
+      "name": "notifySystemEvent",
+      "UID": "5e3cb17a-51eb-4669-bad9-d2b79b029e59",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "eventName": "FISHING_CAPTURE_SKILL_END",
+      "name": "notifySystemEvent",
+      "UID": "e11502b0-e74a-42ca-97c2-7792f73f6f32",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "41": {
+      "name": "stopEffectStr",
+      "UID": "8f713994-23fb-4025-ae05-d82f543e062d",
+      "effectId": "Eff_Env_Sceneobject_BossCatch_KeyItem_Buff_Loop",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "79": {
+      "name": "stopEffectStr",
+      "UID": "3772ca84-abcd-4f6b-83f3-1c05a35124f0",
+      "effectId": "Eff_Avatar_Girl_Skill_BubbleMachineLoop",
+      "target": "OWNER",
+      "NodeID": 79
+    },
+    "7": {
+      "timelineId": 9200026001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "83": {
+      "name": "stopEffectStr",
+      "UID": "4e3080b7-8f7a-4ef2-87c4-f72aac00a3fd",
+      "effectId": "Eff_Avatar_Girl_Skill_BubbleMachineStart03",
+      "target": "OWNER",
+      "NodeID": 83
+    }
+  },
+  "onAbilityCastIds": [
+    28,
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FireThrow_Start",
+    "Skill_FireThrow_End"
+  ],
+  "preloadEffs": [
+    "Eff_Env_Sceneobject_BossCatch_KeyItem_Buff_Disappear",
+    "Eff_Env_Sceneobject_BossCatch_KeyItem_Buff_Loop",
+    "Eff_Catch_MagicCube_BossCatchBall_H"
+  ],
+  "searchRelation": 2,
+  "name": "倍速连投",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 1.5,
+  "onAbilityEndIds": [
+    29,
+    41,
+    84,
+    79,
+    83
+  ],
+  "searchTargetRangeDown": 0.5,
+  "refBones": [
+    "Bone Hold Ball"
+  ]
+}

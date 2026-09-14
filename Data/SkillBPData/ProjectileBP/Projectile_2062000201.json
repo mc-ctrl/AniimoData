@@ -1,0 +1,162 @@
+{
+  "duration": 6,
+  "BPName": "timeline_2062000",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Money_Drop_Fly",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "nodeMap": {
+    "22": {
+      "UID": "059b7fad-a051-459e-b38e-c341a26cf415",
+      "name": "getRoguePersistData",
+      "key": "CoinBulletCD",
+      "NodeID": 22
+    },
+    "38": {
+      "name": "addRogueCoin",
+      "UID": "06a2e25e-d015-4ed1-8bbb-5726a8e2b5f4",
+      "count": {
+        "calcId": 2062000,
+        "calcType": 4,
+        "paramName": "param0",
+        "NodeID": 37,
+        "UID": "2410570d-c4f4-4e8c-b5b3-2d3938a9b2d8",
+        "name": "getParamByLuaConfig"
+      },
+      "target": {
+        "key": "PlayerPos",
+        "name": "getCacheVal",
+        "UID": "c822214f-fa92-4300-8d5a-64fdbf023e08",
+        "target": "OWNER",
+        "NodeID": 43
+      },
+      "NodeID": 38
+    },
+    "24": {
+      "key": "CoinBulletCD",
+      "name": "setRoguePersistData",
+      "UID": "95267203-ea4c-4d33-abaf-f1463acad616",
+      "value": {
+        "rValue": {
+          "calcId": 2062000,
+          "calcType": 4,
+          "paramName": "param1",
+          "NodeID": 42,
+          "UID": "95d79f60-2453-4a62-97ed-3f48d064761b",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "add",
+        "UID": "eaa1b6ae-4596-4d89-8393-9b4d5235267f",
+        "NodeID": 23,
+        "lValue": {
+          "UID": "059b7fad-a051-459e-b38e-c341a26cf415",
+          "name": "getRoguePersistData",
+          "key": "CoinBulletCD",
+          "NodeID": 22
+        }
+      },
+      "NodeID": 24
+    },
+    "46": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "a3054bce-414c-4cf2-acc8-b35c54dd54f4",
+      "NodeID": 46,
+      "lValue": {
+        "templateId": 2062000,
+        "name": "getBuffLayer",
+        "UID": "b6d001a7-4a83-410c-88e3-d0f17073aedf",
+        "target": {
+          "key": "PlayerPos",
+          "name": "getCacheVal",
+          "UID": "c822214f-fa92-4300-8d5a-64fdbf023e08",
+          "target": "OWNER",
+          "NodeID": 43
+        },
+        "NodeID": 45
+      }
+    },
+    "42": {
+      "calcId": 2062000,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 42,
+      "UID": "95d79f60-2453-4a62-97ed-3f48d064761b",
+      "name": "getParamByLuaConfig"
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "conditionActionIds": [
+        46
+      ],
+      "UID": "9ac80d8c-bfbe-4519-919a-94eb4acc3b68",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "44": {
+      "target": {
+        "key": "PlayerPos",
+        "name": "getCacheVal",
+        "UID": "c822214f-fa92-4300-8d5a-64fdbf023e08",
+        "target": "OWNER",
+        "NodeID": 43
+      },
+      "name": "playSoundStr",
+      "UID": "198dc953-1afe-4c57-818a-d3045f248e9c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Money_Pickup",
+      "NodeID": 44
+    },
+    "37": {
+      "calcId": 2062000,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 37,
+      "UID": "2410570d-c4f4-4e8c-b5b3-2d3938a9b2d8",
+      "name": "getParamByLuaConfig"
+    },
+    "39": {
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "e1109a67-cd9c-4326-9538-178b658b1375",
+      "effectId": "Eff_Buff_Rogue_Money_Pcikup",
+      "speed": 1,
+      "NodeID": 39
+    },
+    "36": {
+      "UID": "733b0b53-9891-40b0-9297-8e64217d949b",
+      "actorId": {
+        "UID": "b6d29f0d-a08e-48a0-8f0f-70ed3b7f8139",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 35
+      },
+      "name": "destroyEntity",
+      "NodeID": 36
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    39,
+    38,
+    44,
+    25,
+    36
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 10
+}

@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_12830601",
+  "NodeID": 1,
+  "UID": "ad3a1f3d-96be-400b-81ab-42709125d3c5",
+  "desc": "5-10m大范围跳砸",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12830601001,
+      "name": "setCombatActionTimeline",
+      "UID": "21d75b78-c0cd-4c76-ab12-b9b1d69eef55",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_HighJump_Start",
+    "Skill_HighJump_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10283_Skill_HighJump_Strat",
+    "Eff_Parmon_10283_Skill_HighJump_Strat_01",
+    "Eff_Parmon_10283_Skill_HighJump_End",
+    "Eff_Parmon_10283_Skill_HighJump_Smash",
+    "Eff_Parmon_10283_Skill_HighJump_Ring01",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 5,
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 5,
+  "abilityParamId": 10501006
+}

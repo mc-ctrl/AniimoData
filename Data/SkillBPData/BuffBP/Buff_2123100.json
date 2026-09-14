@@ -1,0 +1,78 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123100",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "petTarget": "OWNER",
+      "triggerId": 20002022,
+      "name": "onEntityTrigger",
+      "UID": "0013eaa3-c341-4c0f-a464-da5d6bf411a4",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "effa90fd-33ae-427e-891b-c2a85be9bd59",
+      "effectId": "Eff_Env_Level_IOT_10231_Dust",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "5": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "78202318-1911-4a1e-933b-c4a3a82be472",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 5
+    },
+    "10": {
+      "name": "hideModel",
+      "UID": "7b241c0a-c857-4ff3-9f2f-2a4ca8b5a2d1",
+      "target": "OWNER",
+      "NodeID": 10,
+      "maxHideTime": 9999
+    },
+    "11": {
+      "UID": "7db99f3d-1f7b-465f-940c-1d720ce0285b",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 11
+    },
+    "7": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "d19fcf8d-0510-42cc-b48c-8dd793d1055d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 7
+    },
+    "8": {
+      "offsetXYZ": [
+        0,
+        0.9,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "547ee423-e135-4eba-b495-78fec59fb7cd",
+      "effectId": "Eff_Env_Level_IOT_10231_Dust",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "onBuffDestroyIds": [
+    3,
+    7,
+    9,
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10,
+    5,
+    8
+  ]
+}

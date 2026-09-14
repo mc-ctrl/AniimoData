@@ -1,0 +1,55 @@
+{
+  "BPName": "ability_9200006",
+  "NodeID": 1,
+  "UID": "e24d3b30-67f7-4fb4-a5d2-113234f49e66",
+  "abilityParamId": 9200006,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "54": {
+      "UID": "e163be14-543a-469e-93e1-bb21c5dc843b",
+      "name": "hideBubbleMsg",
+      "msgId": 2178,
+      "NodeID": 54
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "4a04b6c9-fa0f-4336-a5e7-599ff8d30f54",
+      "effectId": "Eff_Avatar_Female_Skill_SkateBoarding_StartTrail",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "39": {
+      "name": "stopEffectStr",
+      "UID": "f2596476-b69d-4da4-9dba-d8b9029a573d",
+      "effectId": "Eff_Avatar_Female_Skill_SkateBoarding_End",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "16": {
+      "timelineId": 9200006002,
+      "name": "setCombatActionTimeline",
+      "UID": "f5f728de-2c28-47b7-aa5d-73573721c456",
+      "target": "CASTER",
+      "NodeID": 16
+    }
+  },
+  "onAbilityCastIds": [
+    16
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Skate_End"
+  ],
+  "isSwitch": true,
+  "searchTargetRangeDown": 0,
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "onAbilityEndIds": [
+    33,
+    39,
+    54
+  ],
+  "searchRelation": 1
+}

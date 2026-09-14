@@ -1,0 +1,67 @@
+{
+  "froze": [
+    {
+      "duration": 1.2,
+      "voxel_event": 5,
+      "name": "modifyVoxel"
+    }
+  ],
+  "ignite": [
+    {
+      "duration": 20,
+      "voxel_event": 11,
+      "name": "modifyVoxel"
+    },
+    {
+      "duration": 1,
+      "voxel_event": 10,
+      "name": "modifyVoxel"
+    },
+    {
+      "duration": 40,
+      "voxel_event": 9,
+      "name": "modifyVoxel"
+    }
+  ],
+  "grassGrowFlower": [
+    {
+      "duration": 20,
+      "voxel_event": 12,
+      "name": "modifyVoxel"
+    }
+  ],
+  "actWater": [
+    {
+      "duration": 1.2,
+      "voxel_event": 5,
+      "name": "modifyVoxel"
+    }
+  ],
+  "actWet": [
+    {
+      "duration": 1.2,
+      "voxel_event": 2,
+      "name": "modifyVoxel"
+    }
+  ],
+  "plantGrass": [
+    {
+      "duration": 20,
+      "voxel_event": 8,
+      "name": "modifyVoxel"
+    }
+  ],
+  "conduct": {},
+  "forceIgnite": [
+    {
+      "duration": 20,
+      "voxel_event": 6,
+      "name": "modifyVoxel"
+    },
+    {
+      "duration": 60,
+      "voxel_event": 9,
+      "name": "modifyVoxel"
+    }
+  ]
+}

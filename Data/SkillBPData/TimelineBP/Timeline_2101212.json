@@ -1,0 +1,276 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2116202,
+      "NodeID": 37,
+      "UID": "b0840d68-e0c8-4d89-afa0-b60523adfed7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "duration": 5,
+      "actionIds": [
+        17,
+        4,
+        16,
+        21
+      ],
+      "NodeID": 6,
+      "UID": "a7149864-6484-4b7e-8f4b-448cf045507a",
+      "name": "addTimer"
+    },
+    "35": {
+      "UID": "a01941a5-b3a4-4262-9581-1dd95f99d44f",
+      "target": "OWNER",
+      "name": "stopActionTimeline",
+      "NodeID": 35
+    },
+    "11": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10007,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10012_Skill_IceTrap_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitCameraShakeId": 10003
+      },
+      "UID": "d8d8b3a2-4590-4010-9e90-295c1a2d9400",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 11
+    },
+    "21": {
+      "offsetXYZ": [
+        0,
+        0.81,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "e035f46d-3d33-4333-bd2a-dea65b96e740",
+      "effectId": "Eff_Parmon_10012_Skill_IceTrap_Hit",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 21
+    },
+    "4": {
+      "needEcs": true,
+      "calcResultNodeId": 11,
+      "NodeID": 4,
+      "UID": "fed676f7-b8e6-41a5-b3eb-3271bb17afea",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        11,
+        36
+      ]
+    },
+    "24": {
+      "needEcs": true,
+      "calcResultNodeId": 27,
+      "NodeID": 24,
+      "UID": "6302d92b-0cfa-40a0-a7d6-2b79fc34fb53",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "actionIds": [
+        27,
+        34,
+        37,
+        32,
+        33,
+        35
+      ]
+    },
+    "7": {
+      "UID": "b2a38081-71d2-46d7-aeb9-0c40cd39146a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "25": {
+      "eventType": "NotifyState",
+      "endTime": 5,
+      "NodeID": 25,
+      "UID": "326f46ea-34dc-44de-b270-0c25e35b59c4",
+      "onUpdate": {
+        "actionIds": [
+          24
+        ]
+      },
+      "startTime": 1,
+      "tickInterval": 0.1
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "4474352a-417a-4485-945f-7b5e971dba5c",
+      "effectId": "Eff_Parmon_10012_Skill_IceTrap_Creation",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10007,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10012_Skill_IceTrap_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitCameraShakeId": 10003
+      },
+      "UID": "1fac1d98-793f-42c6-a081-64ed3514e8a9",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 27
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ac53d040-579a-4761-9300-a84be3135be8",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_boom_Ice",
+      "NodeID": 17
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 19,
+      "UID": "8968f4a1-1302-4d62-924e-cf0c725584ca"
+    },
+    "18": {
+      "name": "playEffectOnPosRot",
+      "UID": "c76750a1-ffb9-437d-b28d-7168f4e6c577",
+      "effectId": "Eff_Parmon_10012_Skill_IceTrap_Creation",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 18,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7744098a-98c7-41f5-9b7a-32acedf8c097",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_boom_Ice",
+      "NodeID": 32
+    },
+    "33": {
+      "offsetXYZ": [
+        0,
+        0.81,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "23c6f48b-20ac-444a-baff-4f1449896411",
+      "effectId": "Eff_Parmon_10012_Skill_IceTrap_Hit",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "name": "stopEffectStr",
+      "UID": "d3f423b4-c669-48cd-a868-ecd73d91573c",
+      "effectId": "Eff_Parmon_10012_Skill_IceTrap_Creation",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "36": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2116202,
+      "NodeID": 36,
+      "UID": "fa25cce9-d606-4961-89ee-a8d97a7d4564",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "timeline_2101212",
+  "NodeID": 1,
+  "UID": "daaeb583-63ce-4c1a-9c9d-ad41a423f8c8",
+  "eventIds": [
+    19,
+    25,
+    7
+  ],
+  "layer": "Base",
+  "length": 5
+}

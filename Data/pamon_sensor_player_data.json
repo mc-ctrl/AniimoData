@@ -1,0 +1,452 @@
+{
+  "10015": {
+    "abortConditionRelationList": [
+      1
+    ],
+    "conditionIDList": [
+      "TargetFOV_Left",
+      "Distance_0_10"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500,
+    "triggeredAction": "ST_MB_Happy",
+    "abortConditionIDList": [
+      "TargetFOV_ForwardWide"
+    ]
+  },
+  "10016": {
+    "abortConditionRelationList": [
+      1
+    ],
+    "conditionIDList": [
+      "TargetFOV_Right",
+      "Distance_0_10"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500,
+    "triggeredAction": "ST_MB_Happy",
+    "abortConditionIDList": [
+      "TargetFOV_ForwardWide"
+    ]
+  },
+  "10017": {
+    "triggeredAction": "ST_MB_AlertDoubt",
+    "conditionIDList": [
+      "FOV_Forward",
+      "Distance_0_10",
+      "LevelDeltaHigher"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "10018": {
+    "triggeredAction": "ST_MB_Angry",
+    "conditionIDList": [
+      "TargetFOV_ForwardWide",
+      "Distance_0_10",
+      "TakePhoto"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 700
+  },
+  "10019": {
+    "triggeredAction": "ST_MB_Happy",
+    "conditionIDList": [
+      "FOV_Forward",
+      "Distance_0_10",
+      "HeightGreaterThan_1dot7m"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "10023": {
+    "triggeredAction": "ST_MB_Die",
+    "conditionIDList": [
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10011": {
+    "abortConditionRelationList": [
+      1,
+      1
+    ],
+    "conditionIDList": [
+      "TargetFOV_ForwardWide",
+      "Distance_0_10"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500,
+    "triggeredAction": "ST_MB_Hide",
+    "abortConditionIDList": [
+      "TargetFOV_Left",
+      "TargetFOV_Right"
+    ]
+  },
+  "10012": {
+    "triggeredAction": "ST_MB_LeaveGlide",
+    "conditionIDList": [
+      "FOV_Forward",
+      "Distance_0_20",
+      "AsHuman"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 20,
+    "priority": 500
+  },
+  "10013": {
+    "triggeredAction": "ST_MB_Hide",
+    "conditionIDList": [
+      "IsHoldBall",
+      "FOV_Forward",
+      "Distance_0_20",
+      "TargetFOV_Forward"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coolDown": 6,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "10002": {
+    "triggeredAction": "ST_MB_AlertStare",
+    "conditionIDList": [
+      "VisionValue_T2",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10003": {
+    "triggeredAction": "ST_MB_Leave",
+    "conditionIDList": [
+      "VisionValue_T3",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10026": {
+    "triggeredAction": "ST_MB_Die",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsDance"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10025": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "IsIdle",
+      "FOV_Forward",
+      "Distance_0_20",
+      "TargetFOV_Forward"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10024": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "FOV_Forward",
+      "Distance_0_20",
+      "TargetFOV_ForwardWide",
+      "IsThrowBall"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10022": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10008": {
+    "triggeredAction": "ST_MB_Leave",
+    "conditionIDList": [
+      "IsJumped",
+      "FOV_Forward",
+      "FOV_Right",
+      "FOV_Left"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10020": {
+    "triggeredAction": "ST_MB_Happy",
+    "conditionIDList": [
+      "FOV_Forward",
+      "Distance_0_10",
+      "LevelDeltaLower"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "10004": {
+    "triggeredAction": "ST_MB_ReadyToFight",
+    "conditionIDList": [
+      "VisionValue_T3",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 0,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10001": {
+    "triggeredAction": "ST_MB_AlertDoubt",
+    "conditionIDList": [
+      "VisionValue_T1",
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10006": {
+    "triggeredAction": "ST_MB_ReadyToFight",
+    "conditionIDList": [
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10005": {
+    "triggeredAction": "ST_MB_AlertDoubt",
+    "conditionIDList": [
+      "FOV_Right"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10021": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "Distance_0_20"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "10007": {
+    "triggeredAction": "ST_MB_AlertStare",
+    "conditionIDList": [
+      "VisionValue_T1",
+      "Personality_Outgoing"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10009": {
+    "triggeredAction": "ST_MB_ReadyToFight",
+    "conditionIDList": [
+      "FOV_Forward"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  },
+  "10014": {
+    "triggeredAction": "ST_MB_Hide",
+    "conditionIDList": [
+      "FOV_Forward",
+      "Distance_0_10",
+      "HeightLowerThan_1dot7m"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 500
+  },
+  "10010": {
+    "triggeredAction": "ST_MB_AlertDoubt",
+    "conditionIDList": [
+      "FOV_Right"
+    ],
+    "conditionRelationList": [
+      1
+    ],
+    "coolDown": 0,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 400
+  }
+}

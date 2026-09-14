@@ -1,0 +1,79 @@
+{
+  "nodeMap": {
+    "3": {
+      "targetPos": {
+        "UID": "adbf691b-dbd1-49d6-9e80-9a0dc862da11",
+        "name": "getBornPos",
+        "NodeID": 2
+      },
+      "radius": 10,
+      "UID": "30734527-c0f0-4d46-aa1f-7d57be8e3310",
+      "NodeID": 3,
+      "name": "randomPoint"
+    },
+    "17": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e2e145e9-a8ef-40b3-9c31-21deae2492c1",
+      "target": "OWNER",
+      "NodeID": 17,
+      "animId": "Skill_Halo"
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "34dd91e3-8ad2-4c46-8cd5-8b2866de5a41",
+      "effectId": "Eff_Parmon_10143_Teleport",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "10": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "target": "RANDOM_POINT",
+      "name": "teleport",
+      "UID": "9486371c-7cda-4d4d-a9e5-ebe975853fd1",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "336c1d86-223f-4184-8f3b-267a1d5492bb",
+      "effectId": "Eff_Parmon_10012_Skill_DropBack_Teleport_End",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "5": {
+      "UID": "78bbfdcf-d895-4726-93f2-037bc756ff5e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          15,
+          3,
+          10,
+          17
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "ability_11430109",
+  "NodeID": 6,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 0.5
+}

@@ -1,0 +1,219 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2142301",
+  "NodeID": 1,
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    8,
+    13,
+    28,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    6
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        3,
+        12,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "3149cb0c-2756-41ec-a016-2b4f7362e84c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8,
+        13,
+        28,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "66fb358b-5e0f-4bbf-b57e-6d564eed1b91",
+      "name": "registerAbilityStateChangeEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "8": {
+      "name": "setSubModelVisible",
+      "UID": "dda45e70-f657-47a1-a618-51d561bcc443",
+      "NodeID": 8,
+      "subModelName": "M_Parmon_10423_Body04",
+      "visible": true
+    },
+    "28": {
+      "UID": "2753fde8-e5db-4dcf-9665-14726e099e4a",
+      "name": "removeMaterialEffect",
+      "key": "10423_Combat",
+      "NodeID": 28
+    },
+    "11": {
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "8fb42fb3-f174-44c3-8342-e84319adc322",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "20": {
+      "name": "setSubModelVisible",
+      "UID": "f427e720-68d9-4c72-9c62-6ef6311dacaa",
+      "NodeID": 20,
+      "subModelName": "M_Parmon_10423_Eye",
+      "visible": true
+    },
+    "21": {
+      "name": "setSubModelVisible",
+      "UID": "5abbd199-cf9c-41c9-8b78-d03338401f51",
+      "NodeID": 21,
+      "subModelName": "M_Parmon_10423_Eye01",
+      "visible": true
+    },
+    "3": {
+      "name": "setSubModelVisible",
+      "UID": "050a97d8-f896-4642-b3b5-34cc8b51b671",
+      "NodeID": 3,
+      "subModelName": "M_Parmon_10423_Body05",
+      "visible": true
+    },
+    "13": {
+      "name": "setSubModelVisible",
+      "UID": "079e1d77-681a-48fb-825b-be3fee97cf87",
+      "NodeID": 13,
+      "subModelName": "M_Parmon_10423_Body05",
+      "visible": false
+    },
+    "24": {
+      "name": "setSubModelVisible",
+      "UID": "def20d69-8f82-4052-87c4-ebefbba8e571",
+      "NodeID": 24,
+      "subModelName": "M_Parmon_10423_Eye04",
+      "visible": true
+    },
+    "14": {
+      "name": "setSubModelVisible",
+      "UID": "4e80adf5-d8e2-4a2b-9c4c-f28c91995924",
+      "NodeID": 14,
+      "subModelName": "M_Parmon_10423_Eye",
+      "visible": false
+    },
+    "10": {
+      "key": "10423_Combat",
+      "name": "applyMaterialEffect",
+      "NodeID": 10
+    },
+    "15": {
+      "name": "setSubModelVisible",
+      "UID": "0467f105-6d5c-4f68-b8ec-281836c1b86a",
+      "NodeID": 15,
+      "subModelName": "M_Parmon_10423_Eye01",
+      "visible": false
+    },
+    "25": {
+      "name": "setSubModelVisible",
+      "UID": "ff4c6837-4917-4ea6-ac59-6708888e8ff0",
+      "NodeID": 25,
+      "subModelName": "M_Parmon_10423_Eye05",
+      "visible": true
+    },
+    "16": {
+      "name": "setSubModelVisible",
+      "UID": "93020158-2adf-43c4-b067-42627c23fcac",
+      "NodeID": 16,
+      "subModelName": "M_Parmon_10423_Eye02",
+      "visible": false
+    },
+    "27": {
+      "buffId": 2142302,
+      "name": "hasBuff",
+      "UID": "5ca301e3-2daf-4001-abcf-5f865a08feda",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "name": "setSubModelVisible",
+      "UID": "0b9ff5b1-e4c3-42aa-9037-3641b0676db8",
+      "NodeID": 17,
+      "subModelName": "M_Parmon_10423_Eye03",
+      "visible": false
+    },
+    "26": {
+      "UID": "9fa6961b-c797-4170-9463-0960c507f9b7",
+      "name": "isInAbility",
+      "NodeID": 26
+    },
+    "18": {
+      "name": "setSubModelVisible",
+      "UID": "5c4f9a9b-fe6f-4c1b-b0e6-c8640dcfa85e",
+      "NodeID": 18,
+      "subModelName": "M_Parmon_10423_Eye04",
+      "visible": false
+    },
+    "23": {
+      "name": "setSubModelVisible",
+      "UID": "a4d04135-ecdf-4a3d-b86f-78ec31eac31e",
+      "NodeID": 23,
+      "subModelName": "M_Parmon_10423_Eye03",
+      "visible": true
+    },
+    "19": {
+      "name": "setSubModelVisible",
+      "UID": "01352c3c-610f-4c78-8c4d-4d49c5f52836",
+      "NodeID": 19,
+      "subModelName": "M_Parmon_10423_Eye05",
+      "visible": false
+    },
+    "22": {
+      "name": "setSubModelVisible",
+      "UID": "17c2392a-d317-4e9e-b95c-44ef08736d59",
+      "NodeID": 22,
+      "subModelName": "M_Parmon_10423_Eye02",
+      "visible": true
+    },
+    "12": {
+      "name": "setSubModelVisible",
+      "UID": "a1f4f6de-5fef-4292-a297-49ee7288c386",
+      "NodeID": 12,
+      "subModelName": "M_Parmon_10423_Body04",
+      "visible": false
+    }
+  },
+  "name": "战斗非战斗模型显隐",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    13,
+    28,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    6
+  ]
+}

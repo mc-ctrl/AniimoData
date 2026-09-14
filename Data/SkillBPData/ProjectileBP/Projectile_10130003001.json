@@ -1,0 +1,100 @@
+{
+  "angularIncreaseDuration": 0.6,
+  "BPName": "ability_10130003",
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 0.6,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 0,
+  "effectId": "Eff_Parmon_10013_Attack_Bullet_Big",
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    23,
+    29
+  ],
+  "calcResultNodeId": 31,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "23": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "45f3d9ad-16da-4140-9d65-facbe7ece784",
+      "effectId": "Eff_Parmon_10013_Skill_HitBig",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "29": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 31,
+      "NodeID": 29,
+      "UID": "636a509d-012b-4a67-97a6-fd5157d7d237",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3001,
+      "actionIds": [
+        31
+      ]
+    },
+    "31": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10130003,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "0ca92b59-d4cf-4280-a66a-cd62990d3c9d",
+      "target": "TARGET",
+      "NodeID": 31,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "hitSoundType": "h",
+        "impulseId": 3001,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "battle_projectilehit_psychic_h",
+        "hitCameraShakeId": 30303
+      }
+    }
+  },
+  "tickInterval": 0.05,
+  "duration": 2,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3001,
+  "acceleration": 1
+}

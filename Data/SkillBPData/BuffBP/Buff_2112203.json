@@ -1,0 +1,29 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "dmg_electric_dec_ratio": {
+      "rValue": -1,
+      "name": "multiply",
+      "UID": "99c1bae4-e1dc-4784-a3bb-5e6947867726",
+      "NodeID": 5,
+      "lValue": {
+        "calcId": 2112203,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 4,
+        "UID": "d5f10bef-467c-497c-84be-258378895ca6",
+        "name": "getParamByLuaConfig"
+      }
+    }
+  },
+  "NodeID": 1,
+  "UID": "7d604ff5-b369-4075-9544-28f25464cf0d",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2112203"
+}

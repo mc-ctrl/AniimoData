@@ -1,0 +1,256 @@
+{
+  "nodeMap": {
+    "9": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "c25ae1af-6fb2-4dd4-a578-655f6f9581c9",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "2d205d7d-1c14-4e38-9a72-685079a85df2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          45,
+          9
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18,
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 20,
+      "UID": "2ec143ce-05e6-4b87-b6a6-515e1a0273e7"
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "52c51c4c-9ea0-450f-9804-953394223380",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "4": {
+      "UID": "c46ad807-67c3-4125-9c51-70016f642319",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          28
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "UID": "d8de2f58-4360-47dc-9bcf-23100e889991",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 45
+    },
+    "71": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9a9e86d1-9a74-46fe-94f6-47abe7709a3e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glynsera_Skill_Throw_Start",
+      "NodeID": 71
+    },
+    "72": {
+      "action": {
+        "actionIds": [
+          71
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.44,
+      "NodeID": 72,
+      "UID": "63f3ff36-7d52-42e1-88b7-01144ca2b0af"
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0.3,
+        0
+      ],
+      "templateId": 11331410001,
+      "name": "createProjectile",
+      "UID": "a029d619-72d1-4954-bdc7-c31fb90f692f",
+      "rotation": "Direct",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetRotation": {
+        "name": "getRotationFromTo",
+        "considerYAxis": true,
+        "UID": "7372d46c-7215-4470-b08e-75a71a71cdfb",
+        "to": {
+          "pos": {
+            "name": "getTargetOffsetPos",
+            "UID": "be1581b6-12ca-4b96-9373-0f8ad5e5d71b",
+            "target": "OWNER",
+            "offset": [
+              0,
+              0,
+              15
+            ],
+            "NodeID": 32
+          },
+          "name": "getTargetPosOrCustomPos",
+          "UID": "452d17a5-c81b-40e3-9032-f81b060e4d21",
+          "useHitPos": true,
+          "NodeID": 33,
+          "outputTargetActorId": true
+        },
+        "NodeID": 34,
+        "from": "OWNER"
+      },
+      "targetPos": "TARGET",
+      "soundId": "SFX_Combat_Glynsera_Skill_Throw_Loop",
+      "NodeID": 15,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "47": {
+      "UID": "3dd4a8e1-15bd-41ce-b821-6b5695959741",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 47
+    },
+    "49": {
+      "UID": "b275a153-65c3-4581-b712-1981295a633e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "NodeID": 49
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6be10cbf-67fb-4c0b-a9fa-ca77ec9ee08b",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Boss_Skill_Throw"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "68e1cea4-f649-4f9f-a12d-3a63ac4dfdb2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glynsera_Skill_Throw_Pre",
+      "NodeID": 28
+    },
+    "29": {
+      "name": "playSoundStr",
+      "UID": "0afb80b7-e45a-4b2d-bb3c-7d681590d1a3",
+      "soundId": "parmon_10133_skill_throw_ice_loop",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "2325413a-5178-4fa1-86de-667e515b32cd",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 18
+    },
+    "32": {
+      "name": "getTargetOffsetPos",
+      "UID": "be1581b6-12ca-4b96-9373-0f8ad5e5d71b",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        15
+      ],
+      "NodeID": 32
+    },
+    "33": {
+      "pos": {
+        "name": "getTargetOffsetPos",
+        "UID": "be1581b6-12ca-4b96-9373-0f8ad5e5d71b",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          15
+        ],
+        "NodeID": 32
+      },
+      "name": "getTargetPosOrCustomPos",
+      "UID": "452d17a5-c81b-40e3-9032-f81b060e4d21",
+      "useHitPos": true,
+      "NodeID": 33,
+      "outputTargetActorId": true
+    },
+    "34": {
+      "name": "getRotationFromTo",
+      "considerYAxis": true,
+      "UID": "7372d46c-7215-4470-b08e-75a71a71cdfb",
+      "to": {
+        "pos": {
+          "name": "getTargetOffsetPos",
+          "UID": "be1581b6-12ca-4b96-9373-0f8ad5e5d71b",
+          "target": "OWNER",
+          "offset": [
+            0,
+            0,
+            15
+          ],
+          "NodeID": 32
+        },
+        "name": "getTargetPosOrCustomPos",
+        "UID": "452d17a5-c81b-40e3-9032-f81b060e4d21",
+        "useHitPos": true,
+        "NodeID": 33,
+        "outputTargetActorId": true
+      },
+      "NodeID": 34,
+      "from": "OWNER"
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.44,
+      "NodeID": 17,
+      "UID": "d240df63-611a-4a8b-9dbd-a50189d156f0"
+    }
+  },
+  "BPName": "ability_11331410",
+  "NodeID": 6,
+  "UID": "de2a04c1-1223-4854-8ef6-7bf343440ea1",
+  "eventIds": [
+    11,
+    49,
+    17,
+    20,
+    4,
+    72
+  ],
+  "layer": "Base",
+  "length": 3.47
+}

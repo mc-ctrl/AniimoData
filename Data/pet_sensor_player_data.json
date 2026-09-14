@@ -1,0 +1,138 @@
+{
+  "10008": {
+    "triggeredAction": "ST_MB_Happy",
+    "conditionIDList": [
+      "Distance_0_20",
+      "LevelUp"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10006": {
+    "triggeredAction": "ST_MB_Sad",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsIdle_5",
+      "IsHungry"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10005": {
+    "triggeredAction": "ST_MB_Sad",
+    "conditionIDList": [
+      "Distance_0_20",
+      "AsHuman",
+      "TargetDie"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10002": {
+    "triggeredAction": "ST_MB_AlertDoubt",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsIdle_15"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10001": {
+    "triggeredAction": "ST_MB_HappyStare",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsIdle_5"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10007": {
+    "triggeredAction": "ST_MB_IdleSpecial",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsIdle_5"
+    ],
+    "conditionRelationList": [
+      1,
+      2
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10003": {
+    "triggeredAction": "ST_MB_Happy",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsIdle_5",
+      "TargetLevelUp"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  },
+  "10004": {
+    "triggeredAction": "ST_MB_Happy",
+    "conditionIDList": [
+      "Distance_0_20",
+      "IsIdle_5",
+      "ChestOpen"
+    ],
+    "conditionRelationList": [
+      1,
+      2,
+      3
+    ],
+    "coolDown": 10,
+    "interruptable": 1,
+    "triggerFailedCD": 10,
+    "triggerPercent": 100,
+    "priority": 600
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "74886479": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1020899,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 2001,
+    "publishTags": [
+      "3DAY_支线"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_任务POI_宠物触发器测试",
+    "sightLevelType": 128,
+    "spawners": [
+      74886481,
+      75290288,
+      75334214,
+      76106696,
+      76106700,
+      76106721,
+      76106769,
+      76109058,
+      76109060,
+      76109062,
+      76109108,
+      77699406
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      98.35,
+      0,
+      19.13
+    ],
+    "owner": "陈瑾瑜",
+    "id": 74886479,
+    "autoEndType": 0
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "b3a08477-2037-4e65-bd75-99fd0444b4e1",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 1,
+        "canMove": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "23bc8e72-c598-4ecb-ae47-ef57181a4d2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "db231205-10b6-406c-b12a-9d34e1978b2c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Start",
+      "NodeID": 39
+    },
+    "18": {
+      "timelineId": 9200025002,
+      "name": "jumpToNextTimeline",
+      "UID": "89d38da7-ab6b-4292-8307-c9016376c9b8",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "67": {
+      "UID": "84bb5693-b433-497a-a4a7-ec7a165dc48a",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 67
+    },
+    "19": {
+      "onCancelActionIds": [
+        65,
+        67
+      ],
+      "name": "enableFreeAimMode",
+      "UID": "62117453-aabd-4ca7-9855-ee2729ee5837",
+      "onConfirmActionIds": [
+        18
+      ],
+      "enable": true,
+      "NodeID": 19
+    },
+    "65": {
+      "UID": "56410995-c365-4af3-bb41-91b0b4ecbc12",
+      "name": "enableFreeAimMode",
+      "enable": false,
+      "NodeID": 65
+    },
+    "21": {
+      "UID": "a07a0186-4eea-4f5e-877a-37370e2302d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          39
+        ]
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_9200025",
+  "NodeID": 6,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    4,
+    21
+  ],
+  "layer": "Base",
+  "length": 9999
+}

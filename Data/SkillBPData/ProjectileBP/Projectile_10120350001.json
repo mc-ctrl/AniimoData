@@ -1,0 +1,138 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 27,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10011_Skill_Gliding_Bullet_Water",
+  "onProjectileGroundedIds": [
+    101
+  ],
+  "gravityRatio": 1.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    19,
+    12,
+    117
+  ],
+  "nodeMap": {
+    "27": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10120350,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "cb6d6aac-1239-46ad-a0d1-962d7f88ffcd",
+      "target": "TARGET",
+      "NodeID": 27,
+      "attackData": {
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Water_Blunt",
+        "hitSoundStr": "parmon_starly_attack_hit",
+        "hitCameraShakeId": 10103
+      }
+    },
+    "117": {
+      "cameraShakeId": 10103,
+      "name": "playCameraImpulseById",
+      "UID": "431117f7-43a9-49b1-b97f-e9ccbd048146",
+      "target": "OWNER",
+      "NodeID": 117
+    },
+    "118": {
+      "calcId": 10120350,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 118,
+      "UID": "691daabd-4938-45ec-9b4a-7fbc7734a7f2",
+      "name": "getParamByLuaConfig"
+    },
+    "101": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "429269b5-3f1b-439b-b2f6-209aca0e5cc3",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_glid_boom_Water",
+      "NodeID": 101
+    },
+    "19": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 27,
+      "NodeID": 19,
+      "UID": "b145a9f2-ae00-4ae1-87ca-273ac736bd6c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        27,
+        119
+      ]
+    },
+    "119": {
+      "value": {
+        "calcId": 10120350,
+        "calcType": 2,
+        "paramName": "param1",
+        "NodeID": 118,
+        "UID": "691daabd-4938-45ec-9b4a-7fbc7734a7f2",
+        "name": "getParamByLuaConfig"
+      },
+      "epCostReason": 2,
+      "name": "costEp",
+      "UID": "c76520d6-789f-4e20-9df3-35a192163cc2",
+      "target": "TARGET",
+      "NodeID": 119
+    },
+    "12": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4411993a-ccb2-4c20-813f-0084b95b926b",
+      "effectId": "Eff_Parmon_10011_Skill_Gliding_Hit_Water",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "BPName": "ability_10120350",
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Water_Blunt",
+  "NodeID": 0,
+  "impulseId": 2000,
+  "acceleration": 0
+}

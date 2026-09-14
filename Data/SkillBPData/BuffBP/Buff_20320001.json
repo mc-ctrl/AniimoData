@@ -1,0 +1,154 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20320001",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    5
+  ],
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "add_cur_hp_fix": 0,
+        "add_cur_hp_max_p": 0.02
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 20320001
+      },
+      "UID": "3c9dcff8-28d9-43f4-a897-2528c975b06f",
+      "target": "CURPET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "3cb7b32e-caf2-4b96-9c95-67142ec36ab0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "calcInfo": {
+        "add_cur_hp_fix": 0,
+        "add_cur_hp_max_p": 0.04
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param2",
+        "type": 1,
+        "id": 20320001
+      },
+      "UID": "2cef8963-3022-4aaa-bff0-108491bea6a6",
+      "target": "CURPET",
+      "name": "calcResult",
+      "NodeID": 24
+    },
+    "25": {
+      "calcId": 20320001,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 25,
+      "UID": "21b2b935-b0fb-4f15-a5d6-5a67fe6778a4",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "039b1d16-d052-4249-bbfd-f745fe30c6d6",
+      "NodeID": 16,
+      "lValue": {
+        "UID": "e36466b1-a5cc-4529-ba2b-cb1dcbd0a6d8",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 15
+      }
+    },
+    "26": {
+      "delay": 1,
+      "interval": {
+        "calcId": 20320001,
+        "calcType": 1,
+        "paramName": "param3",
+        "NodeID": 25,
+        "UID": "21b2b935-b0fb-4f15-a5d6-5a67fe6778a4",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "ba41e79e-d058-40c5-a558-8aa8e6eda4d2",
+      "name": "buffStartThink",
+      "NodeID": 26
+    },
+    "18": {
+      "calcInfo": {
+        "add_cur_hp_fix": 0,
+        "add_cur_hp_max_p": 0.03
+      },
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 1,
+        "id": 20320001
+      },
+      "UID": "ad37f6a1-20b4-4eb7-afc4-2064d886a68e",
+      "target": "CURPET",
+      "name": "calcResult",
+      "NodeID": 18
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "c2b6c243-b3a5-4021-92a2-b6a4be6fa9b0",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "b08b649e-ec8a-4220-aaee-fd0669105a63",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 19
+    },
+    "20": {
+      "name": "isInCombat",
+      "UID": "9c678394-f4f8-434b-8923-de6a23ffa477",
+      "target": "CURPET",
+      "NodeID": 20,
+      "not": false
+    },
+    "22": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "2fb22eb1-05b6-4828-8d6a-e64f413b2a59",
+      "NodeID": 22,
+      "lValue": {
+        "UID": "8587aa04-78fd-4006-86aa-734d63deb341",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 21
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    26
+  ]
+}

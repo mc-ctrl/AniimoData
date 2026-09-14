@@ -1,0 +1,51 @@
+{
+  "duration": 2,
+  "BPName": "ability_92000231",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_VEG_Avatar_Female_Skill_Duck_Bullet01",
+  "gravityRatio": 0.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "55": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 920002302,
+      "name": "createEntity",
+      "UID": "9ec61a6c-a7e7-40e9-ba5c-f7affce5f0b0",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 55,
+      "pos": {
+        "UID": "11b4ef8a-8ff9-483e-b1f8-74010a57b244",
+        "name": "getProjectilePos",
+        "NodeID": 54
+      }
+    }
+  },
+  "moveSpeed": 25,
+  "onProjectileFinishIds": [
+    55
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 2
+}

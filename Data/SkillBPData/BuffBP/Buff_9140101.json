@@ -1,0 +1,38 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "duration": 1,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "f087e4f7-cf17-40f4-ac58-83be2a898c9d",
+      "name": "addTimer"
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "1c6f4c27-808d-4547-b7db-fcb59a4d36bd",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "2": {
+      "buffId": 91401010,
+      "name": "removeBuff",
+      "UID": "0f8f594a-851e-443b-94fa-d711a476df51",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_9140101",
+  "dynamicRPCStates": {},
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

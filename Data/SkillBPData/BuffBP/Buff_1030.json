@@ -1,0 +1,65 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1030",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffRefreshIds": [
+    8,
+    3,
+    12,
+    13,
+    14
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 1026,
+      "name": "removeBuff",
+      "UID": "b8741a3c-1520-4f69-9642-eaaff2d014fc",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3e65175e-efec-4313-98ac-026797e52bfa",
+      "target": "CURPET",
+      "NodeID": 13,
+      "animId": "Hit_Shake"
+    },
+    "14": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "ef45432b-b96d-4985-b724-8c383944b253",
+      "effectId": "Eff_Buff_Hit_Shake",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "8": {
+      "buffId": 1026,
+      "name": "removeBuff",
+      "UID": "feeba5e5-6007-496d-82e2-d32e4e40f54f",
+      "target": "CURPET",
+      "NodeID": 8
+    },
+    "12": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "db3589c0-8806-4a10-83f3-48469702fd20",
+      "target": "OWNER",
+      "NodeID": 12,
+      "animId": "Hit_Shake"
+    }
+  },
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    3,
+    12,
+    13,
+    14
+  ]
+}

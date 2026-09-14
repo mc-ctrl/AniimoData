@@ -1,0 +1,61 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "ep_cost_reduce_ratio": "param0",
+    "type": 1,
+    "id": 910330201
+  },
+  "BPName": "buff_910330201",
+  "NodeID": 1,
+  "UID": "ec2dc841-88d7-4996-ad4c-75336db66765",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "b9cb3533-be89-4547-ad62-dc74db2bb8f0",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "13": {
+      "UID": "d755e722-cd39-4dc6-a48b-deb57171ac4d",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 13
+    },
+    "9": {
+      "UID": "65ba6a7e-366a-4ca7-ba56-fa491da17ae8",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "11": {
+      "buffId": 910330201,
+      "name": "removeBuff",
+      "UID": "cbbb7b2d-af43-48bd-8851-8f26e1299961",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "UID": "dff8c9cc-b597-4cbd-bff5-8ba07aa07d30",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 7
+    }
+  },
+  "stackRule": 0,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9
+  ]
+}

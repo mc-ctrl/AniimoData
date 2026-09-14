@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1000030",
+  "NodeID": 1,
+  "UID": "f766885b-6115-4e74-bddd-a59602e3750d",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "2a01b6bd-9ff4-4f07-a8e8-140b5e0bf37d",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "tag": "TE_Wild_LeaveCombt",
+      "name": "addEntityTag",
+      "UID": "1abf4172-6066-4343-8ee4-14b518267bdb",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "2": {
+      "tag": "TE_Wild_LeaveCombt",
+      "name": "removeEntityTag",
+      "UID": "dc1df0b2-4485-4d61-9773-7a490d653e49",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    2
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    3
+  ]
+}

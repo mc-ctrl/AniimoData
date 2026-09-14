@@ -1,0 +1,161 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "1f0c5d28-7fab-4982-951a-d1765740fb36",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          9
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "a612c681-fd03-4262-a06b-a340b54d27c1",
+      "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Hit",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 14,
+      "scale": 1
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "5ab2087b-198b-4986-acce-ff0d3957ac79",
+      "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Special",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "playTime": 1,
+      "stayTime": 0,
+      "name": "playIndicatorEff",
+      "UID": "4dc707a8-f61d-49cf-93df-b231eaee938f",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2.5,
+          1,
+          1
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100,
+        "hitFrameFreezeId": -1,
+        "elementType": 6,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Parmon_10212_Skill_Ex_Bullet_Hit"
+      },
+      "UID": "ff9145f0-0fcb-4506-90b3-f4b9be6f3fd1",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 16
+    },
+    "17": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 16,
+      "NodeID": 17,
+      "UID": "3e8486f4-0ec4-4f09-a8d0-bc8f574bb06c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2.5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        16
+      ]
+    },
+    "9": {
+      "eventName": "Creation1",
+      "NodeID": 9,
+      "UID": "17d36138-0015-4cf6-a574-85bedf1edfe1",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        7,
+        12
+      ]
+    },
+    "2": {
+      "pos": "POS_OR_TARGET",
+      "scale": 2.5,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0537d340-53c4-4169-a6a9-046eb77bc5f7",
+      "effectId": "Eff_Parmon_10212_Skill_Ex_Bullet_Special",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "12": {
+      "duration": 1,
+      "actionIds": [
+        10,
+        14,
+        17
+      ],
+      "NodeID": 12,
+      "UID": "f7904dd2-41b5-441e-b01b-e92da954772b",
+      "name": "addTimer"
+    }
+  },
+  "BPName": "timeline_9121201",
+  "NodeID": 1,
+  "UID": "8aa4cd8e-25ba-44d0-8ed2-2a71684c7340",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 4
+}

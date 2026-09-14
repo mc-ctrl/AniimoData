@@ -1,0 +1,135 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.66,
+      "NodeID": 24,
+      "UID": "e741aeae-bf33-4c2e-bdec-d1324b02a021"
+    },
+    "6": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "25": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2120702,
+      "NodeID": 25,
+      "UID": "314e87d2-6ad1-4f4c-b834-d02622930dd2",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "UID": "5f8009f4-1c4a-4210-80c5-111d77099dd9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.66,
+      "NodeID": 26,
+      "UID": "25f2e7e2-1998-41e2-9a39-f95d5636265a"
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.55,
+      "NodeID": 18,
+      "UID": "d7f087b4-7c89-4c10-854c-a24ecad9437a"
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fb7b819f-061e-4f99-b54a-ab7b44bab759",
+      "effectId": "Eff_Parmon_10207_Skill_TakeRoot_Start",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "14": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "20": {
+      "duration": 10,
+      "switchToAbilityId": 12070401,
+      "NodeID": 20,
+      "UID": "36043ccd-1641-4b9c-8d10-5c9b20506679",
+      "name": "enableTakeRootState",
+      "enable": true,
+      "exitCastAbilityId": 12070401
+    },
+    "12": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12070400",
+  "NodeID": 8,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    6,
+    14,
+    18,
+    22,
+    24,
+    26
+  ],
+  "layer": "Base",
+  "length": 1.8
+}

@@ -1,0 +1,108 @@
+{
+  "1000": {
+    "name": 1980498970,
+    "elementType": [
+      "Fire"
+    ],
+    "icon": "$UI_bg_fire.png",
+    "desc": 1844918754,
+    "iconColor": "#e03d3d"
+  },
+  "1004": {
+    "name": 1967422477,
+    "elementType": [
+      "Electric"
+    ],
+    "icon": "$UI_bg_electricity.png",
+    "desc": 1591130338,
+    "iconColor": "#e2c10b"
+  },
+  "1002": {
+    "name": 1105667470,
+    "elementType": [
+      "Water"
+    ],
+    "icon": "$UI_bg_water.png",
+    "desc": 1117240475,
+    "iconColor": "#1e90ff"
+  },
+  "1006": {
+    "name": 1728905461,
+    "elementType": [
+      "Wind"
+    ],
+    "icon": "$UI_bg_wind.png",
+    "desc": 1784468988,
+    "iconColor": "#58c7b1"
+  },
+  "1007": {
+    "name": 1722175633,
+    "elementType": [
+      "Dark"
+    ],
+    "icon": "$UI_bg_shadow.png",
+    "desc": 1615077170,
+    "iconColor": "#7b4ca9"
+  },
+  "1008": {
+    "name": 2074972195,
+    "elementType": [
+      "Holy"
+    ],
+    "icon": "$UI_bg_light.png",
+    "desc": 2025876086,
+    "iconColor": "#f6a93c"
+  },
+  "1100": {
+    "iconColor": "#6285cc",
+    "icon": "$UI_Img_Ability_Transport.png",
+    "desc": 2004493701,
+    "name": 1668823838
+  },
+  "1101": {
+    "iconColor": "#71b258",
+    "icon": "$UI_Img_Ability_Cropping.png",
+    "desc": 1284519369,
+    "name": 1786677313
+  },
+  "1102": {
+    "iconColor": "#e77894",
+    "icon": "$UI_Img_Ability_Play.png",
+    "desc": 1983980706,
+    "name": 1968564894
+  },
+  "1103": {
+    "specialDes": 2070267222,
+    "name": 1411042793,
+    "iconColor": "#b579dc",
+    "desc": 1255319766,
+    "icon": "$UI_Img_Ability_Incense_Making.png"
+  },
+  "1001": {
+    "name": 1173721242,
+    "elementType": [
+      "Grass"
+    ],
+    "icon": "$UI_bg_grass.png",
+    "desc": 1807290100,
+    "iconColor": "#43a061"
+  },
+  "1003": {
+    "name": 1134125605,
+    "elementType": [
+      "Rock"
+    ],
+    "icon": "$UI_bg_earth.png",
+    "desc": 1824103527,
+    "iconColor": "#b8a278"
+  },
+  "1005": {
+    "name": 1726550626,
+    "elementType": [
+      "Ice"
+    ],
+    "icon": "$UI_bg_ice.png",
+    "desc": 1468464949,
+    "iconColor": "#58d0e8"
+  }
+}

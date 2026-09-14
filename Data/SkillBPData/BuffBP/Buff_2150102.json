@@ -1,0 +1,691 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2150102",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    17,
+    27
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "52": {
+      "UID": "f69b61a4-3835-4dd1-bfcd-80942836a2f3",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10503_Skill_Rampage",
+      "NodeID": 52
+    },
+    "53": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9ad68508-5927-41c4-9e7f-a5cbe66b0034",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_End",
+      "speed": 1,
+      "NodeID": 53
+    },
+    "54": {
+      "name": "stopEffectStr",
+      "UID": "05e3c46f-a822-423c-91a5-68b8cb38be92",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Dark_Loop",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "5": {
+      "UID": "9fa77724-9077-4b79-ae3a-8401a57b8553",
+      "name": "setAnimController",
+      "animController": "",
+      "NodeID": 5
+    },
+    "8": {
+      "buffId": 215010101,
+      "name": "removeBuff",
+      "UID": "8be43971-fef6-4836-b5bd-1b9be7309e00",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "20": {
+      "switchTag": "Rampage",
+      "name": "setModelSwitchTag",
+      "UID": "eb4a9b9b-d046-41a0-91b8-ff6b977a2c11",
+      "NodeID": 20,
+      "groupKey": 0
+    },
+    "21": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "3987df43-db0e-492a-9e71-cf9eeabd4a75",
+      "NodeID": 21,
+      "groupKey": 0
+    },
+    "22": {
+      "name": "changeControlState",
+      "UID": "6e0b9df4-ec54-4ff8-8c3c-93567630fbe4",
+      "target": "OWNER",
+      "controlState": "IDLE",
+      "NodeID": 22
+    },
+    "13": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "e72b0723-1077-40b2-a311-961d97ee146f",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 13
+    },
+    "55": {
+      "tag": "TE_Wild_10501_ReturnSleep",
+      "name": "removeEntityTag",
+      "UID": "bd659ff6-5766-4f7d-9f62-d8b36351c6cf",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "74": {
+      "UID": "7dcf2619-0457-449e-914c-decc9dfe5c7e",
+      "name": "stopPreset",
+      "presetName": "Eff_10501_Eye_Rampage_MM",
+      "NodeID": 74
+    },
+    "56": {
+      "buffId": 10003,
+      "name": "hasBuff",
+      "UID": "9fffe4a4-251d-42cc-97b2-d01f49dc602a",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "75": {
+      "UID": "10e79f35-d648-4f17-a072-cf3c6a8369ab",
+      "name": "removeMaterialEffect",
+      "key": "10501_Kuangbao",
+      "NodeID": 75
+    },
+    "57": {
+      "label": 1,
+      "name": "isPuppetLabel",
+      "UID": "07b11cbb-c59c-429d-8552-77e5ecb480c2",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "26": {
+      "actionIds": [
+        23,
+        72,
+        74,
+        75,
+        37,
+        33
+      ],
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "28bb7613-d06a-4c54-bf5d-8ff6419b5466",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        80,
+        29,
+        34,
+        35
+      ],
+      "NodeID": 26
+    },
+    "58": {
+      "actionIds": [
+        84,
+        87
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "310bbd96-db19-4240-a490-e8c58dae7bcc",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        65,
+        68
+      ],
+      "NodeID": 58
+    },
+    "77": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Body"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 77,
+      "UID": "8113609e-45eb-499f-8163-e267624f5c27",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Body_Rampage_MM",
+      "name": "playPreset"
+    },
+    "59": {
+      "conditionActionIds": [
+        99
+      ],
+      "UID": "f3bac7c1-ac34-444c-b09e-33c4633fe02a",
+      "name": "doActionsByConditions",
+      "NodeID": 59,
+      "elseActionIds": [
+        58
+      ]
+    },
+    "60": {
+      "conditionActionIds": [
+        97
+      ],
+      "UID": "c5a82c46-dbe2-4808-865b-85439e7149a9",
+      "name": "doActionsByConditions",
+      "NodeID": 60,
+      "elseActionIds": [
+        59
+      ]
+    },
+    "79": {
+      "actionIds": [
+        90,
+        93
+      ],
+      "conditionActionIds": [
+        88
+      ],
+      "UID": "3d01a78f-fd0d-43f1-98e7-f4486c02b39c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        77,
+        82
+      ],
+      "NodeID": 79
+    },
+    "61": {
+      "name": "hasBuffTag",
+      "UID": "8734d69b-363d-441c-acb8-eb87a77d94c0",
+      "target": "OWNER",
+      "NodeID": 61,
+      "buffTag": 4
+    },
+    "80": {
+      "conditionActionIds": [
+        98
+      ],
+      "UID": "a71f8564-32fa-4573-824a-760b7e968379",
+      "name": "doActionsByConditions",
+      "NodeID": 80,
+      "elseActionIds": [
+        100
+      ]
+    },
+    "37": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "4dd0942c-9289-4499-b96f-fa8e08974e57",
+      "NodeID": 37,
+      "groupKey": 0
+    },
+    "38": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4a8c3304-8b9e-4217-b361-ba1300aaf1b8",
+      "target": "OWNER",
+      "NodeID": 38,
+      "animId": "Skill_Rampage"
+    },
+    "39": {
+      "tag": "TE_Wild_10501_Rage",
+      "name": "addEntityTag",
+      "UID": "78f7acbf-f2d9-4002-95b9-f86eab3d431d",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "tag": "TE_Wild_10501_Rage",
+      "name": "removeEntityTag",
+      "UID": "9b3fc946-cd96-4068-b583-cca22cd3b27f",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "buffId": 1145114,
+      "name": "hasBuff",
+      "UID": "9e294679-c2d9-46a5-94a8-cdbcf3ca0646",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "8da3f604-4dbd-4c59-9476-3a15c794d81a",
+      "target": "OWNER",
+      "val": 4,
+      "NodeID": 42
+    },
+    "35": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "1cdeaebe-ad56-4470-808d-cfa0931bdd89",
+      "target": "OWNER",
+      "val": 2150101,
+      "NodeID": 35
+    },
+    "44": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e554729c-b75f-4fa0-b174-19c8e4d60679",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Loop",
+      "speed": 1,
+      "NodeID": 44
+    },
+    "84": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Body"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 84,
+      "UID": "9b866344-18e1-4099-b5c1-40d4c54d1191",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Body_Shiny_Rampage_MM",
+      "name": "playPreset"
+    },
+    "68": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Eye"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 68,
+      "UID": "7bef408a-ef55-4c77-9e90-f2d321474689",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Eye_Rampage_MM",
+      "name": "playPreset"
+    },
+    "87": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Eye"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 87,
+      "UID": "42d23eab-b476-42de-9b5b-36f4772e2b6d",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Eye_Rampage_MM",
+      "name": "playPreset"
+    },
+    "88": {
+      "label": 1,
+      "name": "isPuppetLabel",
+      "UID": "e7bea2aa-02f3-488f-8f80-f83e3162f644",
+      "target": "OWNER",
+      "NodeID": 88
+    },
+    "71": {
+      "UID": "6e00180c-6e6e-4695-9fcb-ea6e88c46750",
+      "name": "stopPreset",
+      "presetName": "Eff_10501_Eye_Rampage_MM",
+      "NodeID": 71
+    },
+    "101": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "df6bafe4-6f2f-4fd1-804b-deea5d9459d2",
+      "target": "OWNER",
+      "NodeID": 101
+    },
+    "72": {
+      "UID": "f5d466b8-a382-4e16-9940-5033a4257965",
+      "name": "stopPreset",
+      "presetName": "Eff_10501_Body_Rampage_MM",
+      "NodeID": 72
+    },
+    "93": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Eye"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 93,
+      "UID": "81e76bcb-f6a6-44a0-8a35-2a654a74aac4",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Eye_Rampage_MM",
+      "name": "playPreset"
+    },
+    "94": {
+      "UID": "9777c0ce-2639-4c2e-bb2d-feeda3b3fee2",
+      "name": "stopPreset",
+      "presetName": "Eff_10501_Body_Shiny_Rampage_MM",
+      "NodeID": 94
+    },
+    "29": {
+      "switchTag": "Rampage",
+      "name": "setModelSwitchTag",
+      "UID": "dd446193-a985-4847-8fdb-dcfbb3e8ec05",
+      "NodeID": 29,
+      "groupKey": 0
+    },
+    "32": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "f3fcb988-c859-423a-873b-e49ba6301cbb",
+      "target": "OWNER",
+      "val": 5,
+      "NodeID": 32
+    },
+    "34": {
+      "name": "stopEffectStr",
+      "UID": "5dfc5af0-cfd9-415e-8725-56a2a6ed01af",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "96": {
+      "UID": "1089abec-6eea-48d1-961e-3d3ff43d070b",
+      "name": "stopPreset",
+      "presetName": "Eff_10501_Eye_Rampage_MM",
+      "NodeID": 96
+    },
+    "90": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Body"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 90,
+      "UID": "d22c562a-c674-4732-a700-e17e9a5ec885",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Body_Shiny_Rampage_MM",
+      "name": "playPreset"
+    },
+    "97": {
+      "name": "checkPetPrototypeId",
+      "UID": "eebbfc97-676c-442e-920f-1f193b9a040b",
+      "target": "OWNER",
+      "petPrototypeId": 105010001,
+      "NodeID": 97
+    },
+    "36": {
+      "name": "hasBuffTag",
+      "UID": "b1a657b1-e8eb-4f25-8dc1-ff228699c5c7",
+      "target": "OWNER",
+      "NodeID": 36,
+      "buffTag": 21
+    },
+    "98": {
+      "name": "checkPetPrototypeId",
+      "UID": "f1fc2280-cbd0-4342-8a6d-1648cb9c159e",
+      "target": "OWNER",
+      "petPrototypeId": 105010001,
+      "NodeID": 98
+    },
+    "33": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "b01dd511-2fa3-497a-987e-d215963bfbd5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        42
+      ],
+      "NodeID": 33
+    },
+    "99": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "41542cd2-d39a-40bc-8c5c-7ecdbe4a74be",
+      "target": "OWNER",
+      "NodeID": 99
+    },
+    "12": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "f527fd43-89d7-49e4-8e30-6efcc4ccda38",
+      "target": "OWNER",
+      "val": 2150101,
+      "NodeID": 12
+    },
+    "100": {
+      "conditionActionIds": [
+        101
+      ],
+      "UID": "751ddf27-9cbe-4722-8094-3e62616f7a5b",
+      "name": "doActionsByConditions",
+      "NodeID": 100,
+      "elseActionIds": [
+        79
+      ]
+    },
+    "17": {
+      "addTagGroup": "HARMFUL",
+      "addActionIds": [
+        16
+      ],
+      "NodeID": 17,
+      "UID": "740bca1e-3e74-4ba1-a77b-b7957fcf04ed",
+      "target": "OWNER",
+      "name": "registerBuffTagChange"
+    },
+    "27": {
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "407b693f-7b3b-4bb5-b9a7-c9cf402dc27d",
+      "name": "doActionsByConditions",
+      "NodeID": 27,
+      "elseActionIds": [
+        26
+      ]
+    },
+    "16": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "7860790c-87a6-40c6-a8d0-a4f3548d47ab",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 16
+    },
+    "65": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Body"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 65,
+      "UID": "0d9283e2-9952-45f5-8589-2ee7fd06a037",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Body_Rampage_MM",
+      "name": "playPreset"
+    },
+    "15": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "edbdd1d8-afa0-4815-a958-b0f64d82a839",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 15
+    },
+    "10": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 215010101,
+      "NodeID": 10,
+      "UID": "6e42ec25-8810-4992-9160-ac64216ed9ce",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "3e3ffd74-120a-4b4e-a4e0-3e353318657a",
+      "name": "buffStartThink",
+      "NodeID": 14
+    },
+    "23": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e4ebce63-ff66-4ce9-86e8-0132db005457",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "45": {
+      "name": "stopEffectStr",
+      "UID": "b3559f53-a675-4581-805b-6d5a67bb84e5",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Loop",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "19": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "8e529a93-533f-40c2-b7ba-f4c227e60dca",
+      "target": "OWNER",
+      "val": 2150101,
+      "NodeID": 19
+    },
+    "46": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "658a58ae-3ea6-49e6-94ab-9af7e5098728",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10503_Rampage_Start",
+      "NodeID": 46
+    },
+    "43": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bfc55db9-20f3-4c36-9adf-6ad9ce28331c",
+      "effectId": "Eff_Parmon_10503_Skill_Rampage_Start",
+      "speed": 1,
+      "NodeID": 43
+    },
+    "47": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "055ab3e4-05a0-4ee9-9b42-53a02deb5ac9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10503_Rampage_Loop",
+      "NodeID": 47
+    },
+    "62": {
+      "label": 1,
+      "name": "isPuppetLabel",
+      "UID": "0566888d-00bc-462d-8528-7211a5562a8e",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "48": {
+      "name": "stopSoundStr",
+      "UID": "6c40d632-5eb0-4118-a156-3acc2b575ca1",
+      "soundId": "SFX_Combat_10503_Rampage_Loop",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "2": {
+      "UID": "cf0584cb-321e-47f4-b107-27022b5577da",
+      "name": "setAnimController",
+      "animController": "OMap_Parmon_10501_Rampage",
+      "NodeID": 2
+    },
+    "49": {
+      "name": "stopSoundStr",
+      "UID": "e7f8ac1b-f300-4097-aca5-50c5a0d41fa5",
+      "soundId": "SFX_Combat_10503_Rampage_End",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "63": {
+      "actionIds": [
+        94,
+        96
+      ],
+      "conditionActionIds": [
+        62
+      ],
+      "UID": "fe1d6936-9333-4dba-af55-2a54ebdbe52e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        69,
+        71
+      ],
+      "NodeID": 63
+    },
+    "50": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b354c6cb-7307-459b-af57-a61176ae4431",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10503_Rampage_End",
+      "NodeID": 50
+    },
+    "69": {
+      "UID": "3658175d-0113-4827-b4d0-375e781a270e",
+      "name": "stopPreset",
+      "presetName": "Eff_10501_Body_Rampage_MM",
+      "NodeID": 69
+    },
+    "51": {
+      "UID": "89677995-f5c7-4b65-abe1-78b1cb3d9e9b",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10503_Skill_Rampage",
+      "NodeID": 51
+    },
+    "82": {
+      "renderNameFilter": [
+        "M_Parmon_10501_Eye"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 82,
+      "UID": "c12b10ab-84ff-433b-83bb-39d97c273c4e",
+      "target": "OWNER",
+      "presetName": "Eff_10501_Eye_Rampage_MM",
+      "name": "playPreset"
+    }
+  },
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "onBuffDestroyIds": [
+    10,
+    13,
+    22,
+    40,
+    63,
+    21,
+    5,
+    49,
+    45,
+    48,
+    50,
+    51,
+    52,
+    54,
+    53
+  ],
+  "onBuffStartIds": [
+    2,
+    60,
+    20,
+    43,
+    44,
+    38,
+    46,
+    47,
+    55,
+    39,
+    8,
+    12,
+    14
+  ]
+}

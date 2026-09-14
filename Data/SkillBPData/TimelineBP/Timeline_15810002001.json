@@ -1,0 +1,911 @@
+{
+  "nodeMap": {
+    "52": {
+      "name": "getTargetOffsetPos",
+      "UID": "45c590e6-c516-4730-919f-44bd374a2cc7",
+      "target": "OWNER",
+      "offset": [
+        0,
+        1,
+        12
+      ],
+      "NodeID": 52
+    },
+    "119": {
+      "name": "getTargetOffsetPos",
+      "UID": "fdcb2d34-a969-4a76-b95a-ff34c70d907c",
+      "target": "OWNER",
+      "offset": [
+        0,
+        1,
+        12
+      ],
+      "NodeID": 119
+    },
+    "122": {
+      "name": "getTargetOffsetPos",
+      "UID": "b3792f43-0f3d-4b0b-bfc6-9f23a0ed7883",
+      "target": "OWNER",
+      "offset": [
+        0,
+        1,
+        12
+      ],
+      "NodeID": 122
+    },
+    "125": {
+      "name": "getTargetOffsetPos",
+      "UID": "2600ad2d-8e98-41cc-8b82-98ad4077f870",
+      "target": "OWNER",
+      "offset": [
+        0,
+        1,
+        12
+      ],
+      "NodeID": 125
+    },
+    "127": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3a4f29e4-e3ba-4a03-8d39-61ddd2ccd745",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10581_Skill_Attack03",
+      "NodeID": 127
+    },
+    "9": {
+      "UID": "a70bc71f-0105-4adf-8c8f-2f23e234093f",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "4f93a20e-8ba0-4823-ba3d-a9fccc3814bf",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          17,
+          12,
+          28
+        ]
+      },
+      "NodeID": 11
+    },
+    "21": {
+      "UID": "60258ce0-e017-4d50-9175-8bcc8db1919c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 21
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.05,
+      "NodeID": 22,
+      "UID": "8ac109af-0a71-420b-a0fc-35a6b444977f"
+    },
+    "13": {
+      "name": "setNextComboAbilityId",
+      "UID": "61ef37d7-bd93-4468-99c5-61a21f98b286",
+      "target": "OWNER",
+      "NodeID": 13,
+      "abilityId": 0
+    },
+    "24": {
+      "UID": "143167ca-678b-4540-a3a0-952453d60795",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 1
+      },
+      "NodeID": 24
+    },
+    "56": {
+      "UID": "6cabc063-b662-46f8-9074-b9fab72363be",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 56
+    },
+    "75": {
+      "UID": "23c9dce5-db6a-49f4-a156-2e447c7b1e35",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 75
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 25,
+      "UID": "a471411c-15cb-46c9-88f3-a9517a831ffc"
+    },
+    "26": {
+      "UID": "82d149ad-5345-4b2c-97e5-4d7e5363e070",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 26
+    },
+    "58": {
+      "actionIds": [
+        68
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "75e7b689-9d9e-4c95-83b3-31d6735232e7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        69
+      ],
+      "NodeID": 58
+    },
+    "77": {
+      "actionIds": [
+        87
+      ],
+      "conditionActionIds": [
+        75
+      ],
+      "UID": "74b3d2d3-f5ac-430d-8b28-23dfd6e22c40",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        88
+      ],
+      "NodeID": 77
+    },
+    "29": {
+      "name": "getTargetOffsetPos",
+      "UID": "c4da8969-986c-4325-9035-ae756ffd185c",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0,
+        10
+      ],
+      "NodeID": 29
+    },
+    "30": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "c7205081-f497-4904-a683-fa0179c9dbc8",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "c4da8969-986c-4325-9035-ae756ffd185c",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0,
+          10
+        ],
+        "NodeID": 29
+      },
+      "NodeID": 30
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          62,
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.55,
+      "NodeID": 60,
+      "UID": "1f2363ca-59f3-4aa2-a76a-2b0c09ea3c8b"
+    },
+    "79": {
+      "action": {
+        "actionIds": [
+          81,
+          77
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.85,
+      "NodeID": 79,
+      "UID": "c58e2eba-25f8-4fc5-a5bc-391ec39fd262"
+    },
+    "61": {
+      "UID": "25a4eabb-ef0e-474a-abca-7a0eb688da8e",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 61
+    },
+    "80": {
+      "UID": "0725e957-b030-4da0-a14d-135d28974bdc",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 80
+    },
+    "62": {
+      "actionIds": [
+        66
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "b94c9960-05f9-48d6-9920-3c9bfcb45513",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        64
+      ],
+      "NodeID": 62
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          41,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.383,
+      "NodeID": 38,
+      "UID": "811c1158-05d5-4c2c-a4ba-7757121b8d53"
+    },
+    "81": {
+      "actionIds": [
+        85
+      ],
+      "conditionActionIds": [
+        80
+      ],
+      "UID": "34bd32eb-f109-4c39-8a85-4b38675c44b6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        83
+      ],
+      "NodeID": 81
+    },
+    "40": {
+      "UID": "954c6ab8-cc1a-4f19-983c-ba3cd23e910a",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 40
+    },
+    "41": {
+      "actionIds": [
+        45
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "a95b861a-dc80-4471-9c11-93358cab2e74",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        43
+      ],
+      "NodeID": 41
+    },
+    "42": {
+      "name": "getTargetOffsetPos",
+      "UID": "d8df19bd-7b64-45b8-a125-42d0ba755fd7",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0.5,
+        10
+      ],
+      "NodeID": 42
+    },
+    "43": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "c0cd7529-0d5f-4c78-9430-0cad852318b7",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "d8df19bd-7b64-45b8-a125-42d0ba755fd7",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0.5,
+          10
+        ],
+        "NodeID": 42
+      },
+      "NodeID": 43
+    },
+    "66": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "9b5a3226-9109-4f8b-9773-fc0b05649977",
+      "target": "OWNER",
+      "val": {
+        "UID": "fffc2be4-5eda-43df-98b4-450ebefa4e68",
+        "target": "TARGET_HIT",
+        "name": "getTargetId",
+        "NodeID": 65
+      },
+      "NodeID": 66
+    },
+    "85": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "36322783-357c-4c74-ae80-8a03050f9a23",
+      "target": "OWNER",
+      "val": {
+        "UID": "74b479c9-03cd-4792-bd25-d1a164758916",
+        "target": "TARGET_HIT",
+        "name": "getTargetId",
+        "NodeID": 84
+      },
+      "NodeID": 85
+    },
+    "68": {
+      "offsetXYZ": [
+        -0.2,
+        0.5,
+        0
+      ],
+      "templateId": 15810002003,
+      "name": "createProjectile",
+      "UID": "33495d6d-68b1-4355-8aee-9264bb3ccd8e",
+      "rotation": "ToTarget",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "68228aac-2427-4f28-8571-efe3445f88d4",
+        "target": "OWNER",
+        "NodeID": 124
+      },
+      "projectileType": "BezierCurve",
+      "NodeID": 68,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "87": {
+      "offsetXYZ": [
+        0.3,
+        0.5,
+        0
+      ],
+      "templateId": 15810002005,
+      "name": "createProjectile",
+      "UID": "729bb83e-b446-4ac4-8306-4a2e1d68b241",
+      "rotation": "ToTarget",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "119e8bfe-3a5a-4129-a4b7-7523e1df2855",
+        "target": "OWNER",
+        "NodeID": 118
+      },
+      "projectileType": "BezierCurve",
+      "NodeID": 87,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "4": {
+      "UID": "fdc55f8b-2d40-423f-955d-4c0bdc8d64e9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          127
+        ]
+      },
+      "NodeID": 4
+    },
+    "101": {
+      "name": "getTargetOffsetPos",
+      "UID": "4225c706-2f85-466b-abbd-c9ec7fe73e92",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0.5,
+        10
+      ],
+      "NodeID": 101
+    },
+    "94": {
+      "UID": "ee2ab553-d087-40df-a26b-83e8f60102d9",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 94
+    },
+    "96": {
+      "actionIds": [
+        106
+      ],
+      "conditionActionIds": [
+        94
+      ],
+      "UID": "6cb1bd9c-619b-41e7-b20e-b73af858c471",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        107
+      ],
+      "NodeID": 96
+    },
+    "98": {
+      "action": {
+        "actionIds": [
+          100,
+          96
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.71,
+      "NodeID": 98,
+      "UID": "12c09055-ccd8-40aa-8469-b7fa5603e620"
+    },
+    "36": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "4da8e614-0999-459c-968c-f8254c60db5a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        48
+      ],
+      "NodeID": 36
+    },
+    "99": {
+      "UID": "8e1758a4-30f8-41d2-b99b-9404572a6b31",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 99
+    },
+    "34": {
+      "UID": "bda60230-823d-4ed4-af4c-2b068870dd68",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 34
+    },
+    "100": {
+      "actionIds": [
+        104
+      ],
+      "conditionActionIds": [
+        99
+      ],
+      "UID": "9e8eee47-c220-41af-9ad7-0fe60f3e9272",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        102
+      ],
+      "NodeID": 100
+    },
+    "33": {
+      "name": "isActorType",
+      "UID": "d3b5d588-30dd-4e57-a227-935c9e9723c8",
+      "target": "OWNER",
+      "NodeID": 33,
+      "actorType": 3
+    },
+    "32": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "ad2455e8-805b-4769-8740-ba3b5162d699",
+      "target": "OWNER",
+      "val": {
+        "UID": "9b97522d-dc13-489f-a367-3361d825f0ea",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 31
+      },
+      "NodeID": 32
+    },
+    "102": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "62871f0f-c7c6-4849-84ef-8a9471899985",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "4225c706-2f85-466b-abbd-c9ec7fe73e92",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0.5,
+          10
+        ],
+        "NodeID": 101
+      },
+      "NodeID": 102
+    },
+    "17": {
+      "UID": "628a0637-7cab-43de-8696-efa150bacd6c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 17
+    },
+    "19": {
+      "UID": "9eb46f4c-13da-4b45-a142-278f037834ce",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 19
+    },
+    "47": {
+      "offsetXYZ": [
+        -0.3,
+        0.5,
+        0
+      ],
+      "templateId": 15810002001,
+      "name": "createProjectile",
+      "UID": "5344a81c-5483-43c5-9f3a-89f6181e6fba",
+      "rotation": "ToTarget",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "b51917b5-69f5-4cea-b7c5-781766a9b547",
+        "target": "OWNER",
+        "NodeID": 51
+      },
+      "projectileType": "BezierCurve",
+      "NodeID": 47,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "104": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "5624486b-3e19-4472-90b0-0ee481c1ea48",
+      "target": "OWNER",
+      "val": {
+        "UID": "b2226177-226f-4998-b64a-a115b9317eec",
+        "target": "TARGET_HIT",
+        "name": "getTargetId",
+        "NodeID": 103
+      },
+      "NodeID": 104
+    },
+    "15": {
+      "UID": "8c6c6e30-f751-4cc8-a200-8679b14d1f9e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19,
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "45": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "b2367625-2151-4f80-a3d9-fea860106f47",
+      "target": "OWNER",
+      "val": {
+        "UID": "5cc038b3-5283-4e0f-a0d6-39e18267b3f9",
+        "target": "TARGET_HIT",
+        "name": "getTargetId",
+        "NodeID": 44
+      },
+      "NodeID": 45
+    },
+    "28": {
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "e8964bd8-2228-4913-b348-039d2a61abf4",
+      "name": "doActionsByConditions",
+      "NodeID": 28,
+      "elseActionIds": [
+        27
+      ]
+    },
+    "106": {
+      "offsetXYZ": [
+        0.2,
+        0.5,
+        0
+      ],
+      "templateId": 15810002007,
+      "name": "createProjectile",
+      "UID": "a6f99a0c-cac5-44d0-9ceb-abc70f97b28b",
+      "rotation": "ToTarget",
+      "targetPos": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "4eca32cc-e567-418a-a090-2143e8b7ed18",
+        "target": "OWNER",
+        "NodeID": 121
+      },
+      "projectileType": "BezierCurve",
+      "NodeID": 106,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "12": {
+      "name": "setNextComboAbilityId",
+      "UID": "d62d5132-973b-4814-93cc-e4947cf8eac1",
+      "target": "OWNER",
+      "NodeID": 12,
+      "abilityId": 15810003
+    },
+    "107": {
+      "offsetXYZ": [
+        0.2,
+        0.5,
+        0
+      ],
+      "templateId": 15810002008,
+      "name": "createProjectile",
+      "UID": "c53eef6a-b6ff-4547-bce2-179287580c48",
+      "rotation": "ToPos",
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "b3792f43-0f3d-4b0b-bfc6-9f23a0ed7883",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 122
+      },
+      "projectileType": "BezierCurve",
+      "rotationTowardsPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "b3792f43-0f3d-4b0b-bfc6-9f23a0ed7883",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 122
+      },
+      "NodeID": 107,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "27": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "03ae5d2e-2040-4a55-9d3c-139ac3c2439c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        30
+      ],
+      "NodeID": 27
+    },
+    "48": {
+      "offsetXYZ": [
+        -0.3,
+        0.5,
+        0
+      ],
+      "templateId": 15810002002,
+      "name": "createProjectile",
+      "UID": "a89c6eec-6c0b-46ae-b77c-88b5f2b92d67",
+      "rotation": "ToPos",
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "45c590e6-c516-4730-919f-44bd374a2cc7",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 52
+      },
+      "projectileType": "BezierCurve",
+      "rotationTowardsPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "45c590e6-c516-4730-919f-44bd374a2cc7",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 52
+      },
+      "NodeID": 48,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "63": {
+      "name": "getTargetOffsetPos",
+      "UID": "863f3559-922c-4dfe-8877-fd47623c7e09",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0.5,
+        10
+      ],
+      "NodeID": 63
+    },
+    "64": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "cced7909-9d30-42d2-bd91-f891cd8545a1",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "863f3559-922c-4dfe-8877-fd47623c7e09",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0.5,
+          10
+        ],
+        "NodeID": 63
+      },
+      "NodeID": 64
+    },
+    "82": {
+      "name": "getTargetOffsetPos",
+      "UID": "22d779c8-b6f2-47ca-a142-9692ee188965",
+      "target": "OWNER",
+      "offset": [
+        0,
+        0.5,
+        10
+      ],
+      "NodeID": 82
+    },
+    "83": {
+      "key": "TargetPos",
+      "name": "setCacheVal",
+      "UID": "73ae39c0-9404-4fac-8d59-0f738e70cda6",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "22d779c8-b6f2-47ca-a142-9692ee188965",
+        "target": "OWNER",
+        "offset": [
+          0,
+          0.5,
+          10
+        ],
+        "NodeID": 82
+      },
+      "NodeID": 83
+    },
+    "88": {
+      "offsetXYZ": [
+        0.3,
+        0.5,
+        0
+      ],
+      "templateId": 15810002006,
+      "name": "createProjectile",
+      "UID": "997f368d-163d-42da-be15-f37a5a9a3475",
+      "rotation": "ToPos",
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "fdcb2d34-a969-4a76-b95a-ff34c70d907c",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 119
+      },
+      "projectileType": "BezierCurve",
+      "rotationTowardsPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "fdcb2d34-a969-4a76-b95a-ff34c70d907c",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 119
+      },
+      "NodeID": 88,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "69": {
+      "offsetXYZ": [
+        -0.2,
+        0.5,
+        0
+      ],
+      "templateId": 15810002004,
+      "name": "createProjectile",
+      "UID": "3404cd00-092c-4f83-a756-a3d5ccfee748",
+      "rotation": "ToPos",
+      "targetPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "2600ad2d-8e98-41cc-8b82-98ad4077f870",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 125
+      },
+      "projectileType": "BezierCurve",
+      "rotationTowardsPos": {
+        "name": "getTargetOffsetPos",
+        "UID": "2600ad2d-8e98-41cc-8b82-98ad4077f870",
+        "target": "OWNER",
+        "offset": [
+          0,
+          1,
+          12
+        ],
+        "NodeID": 125
+      },
+      "NodeID": 69,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a52b2715-92cf-4e8a-a9c8-d85105bd7322",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Attack03"
+    }
+  },
+  "BPName": "ability_15810002",
+  "NodeID": 6,
+  "UID": "c3b6e877-3570-421e-a7ac-1e62c47d36f3",
+  "eventIds": [
+    11,
+    15,
+    4,
+    22,
+    25,
+    38,
+    79,
+    60,
+    98
+  ],
+  "layer": "Base",
+  "length": 2.76
+}

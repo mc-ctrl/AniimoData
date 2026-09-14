@@ -1,0 +1,408 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010010",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    7
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "6654ad47-29ae-4887-b7e3-fd634dfdf752",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "38": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "8dbeee96-12d4-4819-b01d-3d2cf6dfdb2e",
+      "name": "buffStartThink",
+      "NodeID": 38
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "3ac90306-ed96-4dd9-8a4b-be7668526c68",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "41": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "8eaa5646-5a76-4112-b7ed-29b5884a933f",
+      "value": {
+        "rValue": {
+          "UID": "fac10e0c-ebac-45cf-b695-54ba2f54688e",
+          "number": -2,
+          "name": "constNumber",
+          "NodeID": 39
+        },
+        "name": "add",
+        "UID": "48b2edaa-7969-4eec-9e3c-eace7f2f0f18",
+        "NodeID": 40,
+        "lValue": {
+          "UID": "345f42a0-a04a-472e-9602-de2095ade817",
+          "name": "getRoguePersistData",
+          "key": "rogueSkillEp",
+          "NodeID": 42
+        }
+      },
+      "NodeID": 41
+    },
+    "42": {
+      "UID": "345f42a0-a04a-472e-9602-de2095ade817",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 42
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "8314da0e-3b1f-44f0-bd05-0a79f34cb066",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        37,
+        31
+      ],
+      "NodeID": 7
+    },
+    "44": {
+      "calcId": 270010010,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 44,
+      "UID": "c4b7618d-3dcb-4497-aea9-f95f508ef874",
+      "name": "getParamByLuaConfig"
+    },
+    "48": {
+      "calcId": 270010010,
+      "calcType": 1,
+      "paramName": "param2",
+      "NodeID": 48,
+      "UID": "df7bc33d-19e0-4bd9-8e86-bf12e4edb5c7",
+      "name": "getParamByLuaConfig"
+    },
+    "31": {
+      "actionIds": [
+        30
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "7824386c-9963-4dab-8cc3-9cf9e01a9888",
+      "name": "doActionsByConditions",
+      "NodeID": 31
+    },
+    "46": {
+      "calcId": 270010010,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 46,
+      "UID": "c84237df-abb1-4803-9c20-27fdaded92f6",
+      "name": "getParamByLuaConfig"
+    },
+    "43": {
+      "buffId": 206100002,
+      "name": "hasBuff",
+      "UID": "4cc7ac58-1970-4c1e-bc8e-39cba361af8e",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "37": {
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "75a901e9-c167-4ba0-a07b-422e4ee85923",
+      "name": "doActionsByConditions",
+      "NodeID": 37,
+      "elseActionIds": [
+        41
+      ]
+    },
+    "17": {
+      "target": "OWNER",
+      "actionIds": [
+        16
+      ],
+      "attributeName": "ep_cur",
+      "UID": "a74bfc57-fd67-4e8a-b544-8a7588f4d5d7",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 17
+    },
+    "35": {
+      "name": "isInCombat",
+      "UID": "2ac2a58a-3508-4017-9df9-8f8f9293a82d",
+      "target": "OWNER",
+      "NodeID": 35,
+      "not": false
+    },
+    "21": {
+      "unsummonValid": false,
+      "actionIds": [
+        19
+      ],
+      "name": "registerGroupEvent",
+      "UID": "53608c97-4a40-4877-a3aa-132737e7b65c",
+      "NodeID": 21
+    },
+    "23": {
+      "UID": "ef48dcb5-b127-4889-9304-e082d19d77ba",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 23
+    },
+    "4": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "c7e24331-3857-4d45-a108-1a248ed032b6",
+      "value": {
+        "rValue": {
+          "UID": "d22fbe74-4619-4db2-b51b-4a05c354d1e0",
+          "name": "getRoguePersistData",
+          "key": "rogueSkillEp",
+          "NodeID": 2
+        },
+        "name": "add",
+        "UID": "32f41191-58f6-44c7-b705-f71b4b008499",
+        "NodeID": 3,
+        "lValue": {
+          "calcId": 270010010,
+          "calcType": 1,
+          "paramName": "param2",
+          "NodeID": 48,
+          "UID": "df7bc33d-19e0-4bd9-8e86-bf12e4edb5c7",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "535b716c-bcdc-49a2-9e0c-d96cd5457154",
+      "name": "getEventAttributeChangeValue",
+      "targetType": 0,
+      "NodeID": 24
+    },
+    "33": {
+      "UID": "8fd2dab5-1bee-4ba1-89ec-a9ac45ad4713",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 33
+    },
+    "10": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "cd0a5cf1-1848-4ce6-b119-d6c9498e3c4d",
+      "value": {
+        "rValue": {
+          "rValue": 1.2,
+          "name": "multiply",
+          "UID": "7aab952f-1674-4d25-b80e-12e87cee3fdc",
+          "NodeID": 49,
+          "lValue": {
+            "calcId": 270010010,
+            "calcType": 1,
+            "paramName": "param2",
+            "NodeID": 48,
+            "UID": "df7bc33d-19e0-4bd9-8e86-bf12e4edb5c7",
+            "name": "getParamByLuaConfig"
+          }
+        },
+        "name": "add",
+        "UID": "8c817bf0-61f2-43e8-bb55-12407f7a3454",
+        "NodeID": 9,
+        "lValue": {
+          "UID": "d22fbe74-4619-4db2-b51b-4a05c354d1e0",
+          "name": "getRoguePersistData",
+          "key": "rogueSkillEp",
+          "NodeID": 2
+        }
+      },
+      "NodeID": 10
+    },
+    "13": {
+      "UID": "30c9ac5d-da59-4102-a27d-cb185411b4c8",
+      "name": "getEventAttributeChangeValue",
+      "targetType": 0,
+      "NodeID": 13
+    },
+    "12": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "8d3c2683-1414-40c8-8742-3bbcd5807dd3",
+      "NodeID": 12,
+      "lValue": {
+        "key": "RogueTransform",
+        "name": "getCacheVal",
+        "UID": "109d526d-0dad-4910-9257-3a4206923fa5",
+        "target": "OWNER",
+        "NodeID": 11
+      }
+    },
+    "16": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "a895f409-306c-4187-99b8-cd01a64f9aa4",
+      "value": {
+        "rValue": {
+          "rValue": {
+            "rValue": -1,
+            "name": "multiply",
+            "UID": "85fefd2f-7587-4321-bad8-3bcbd50a391f",
+            "NodeID": 45,
+            "lValue": {
+              "calcId": 270010010,
+              "calcType": 1,
+              "paramName": "param0",
+              "NodeID": 44,
+              "UID": "c4b7618d-3dcb-4497-aea9-f95f508ef874",
+              "name": "getParamByLuaConfig"
+            }
+          },
+          "name": "multiply",
+          "UID": "94a68e08-79f4-4562-9b54-297cfa5f89ea",
+          "NodeID": 14,
+          "lValue": {
+            "UID": "30c9ac5d-da59-4102-a27d-cb185411b4c8",
+            "name": "getEventAttributeChangeValue",
+            "targetType": 0,
+            "NodeID": 13
+          }
+        },
+        "name": "add",
+        "UID": "0e2bff37-5ae1-4263-8d51-c20a26d231c1",
+        "NodeID": 15,
+        "lValue": {
+          "UID": "ef48dcb5-b127-4889-9304-e082d19d77ba",
+          "name": "getRoguePersistData",
+          "key": "rogueSkillEp",
+          "NodeID": 23
+        }
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "998900fe-fc98-49a1-9152-c9f0bfd5af9f",
+      "value": {
+        "rValue": {
+          "rValue": {
+            "rValue": -1,
+            "name": "multiply",
+            "UID": "2f679e3b-8a3f-4935-bfcd-1333450dd76d",
+            "NodeID": 47,
+            "lValue": {
+              "calcId": 270010010,
+              "calcType": 1,
+              "paramName": "param1",
+              "NodeID": 46,
+              "UID": "c84237df-abb1-4803-9c20-27fdaded92f6",
+              "name": "getParamByLuaConfig"
+            }
+          },
+          "name": "multiply",
+          "UID": "fd276f85-b0dc-4deb-979a-44c4b63bc047",
+          "NodeID": 25,
+          "lValue": {
+            "UID": "535b716c-bcdc-49a2-9e0c-d96cd5457154",
+            "name": "getEventAttributeChangeValue",
+            "targetType": 0,
+            "NodeID": 24
+          }
+        },
+        "name": "add",
+        "UID": "26ee84cb-a49b-4f5d-9667-586aa8938c43",
+        "NodeID": 26,
+        "lValue": {
+          "UID": "f3ffa639-847a-413b-8eb8-40fc163368c5",
+          "name": "getRoguePersistData",
+          "key": "rogueSkillEp",
+          "NodeID": 29
+        }
+      },
+      "NodeID": 27
+    },
+    "28": {
+      "target": "OWNER",
+      "actionIds": [
+        27
+      ],
+      "attributeName": "sp_cur",
+      "UID": "6688e751-59ed-4fc6-8330-6f09f8e3a36b",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "f3ffa639-847a-413b-8eb8-40fc163368c5",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 29
+    },
+    "30": {
+      "eventName": "RunOut",
+      "name": "notifyCustomEvent",
+      "UID": "1ad2d3da-1650-47f7-b679-34facd3c6716",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "2": {
+      "UID": "d22fbe74-4619-4db2-b51b-4a05c354d1e0",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 2
+    },
+    "19": {
+      "UID": "5be29718-e4fb-4f54-9597-4a2d5de4790b",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        17,
+        28
+      ],
+      "NodeID": 19
+    },
+    "34": {
+      "rValue": {
+        "UID": "8fd2dab5-1bee-4ba1-89ec-a9ac45ad4713",
+        "name": "getRoguePersistData",
+        "key": "rogueSkillEp",
+        "NodeID": 33
+      },
+      "name": "greater",
+      "UID": "75139a3e-fc5e-476c-acad-cfb5207f9aae",
+      "NodeID": 34,
+      "lValue": 0
+    },
+    "36": {
+      "buffId": 2122206,
+      "name": "hasBuff",
+      "UID": "6eb17f0a-ccfa-4483-8607-1edbfa14f6c9",
+      "target": "CURPET",
+      "NodeID": 36
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    38,
+    21
+  ]
+}

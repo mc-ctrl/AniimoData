@@ -1,0 +1,388 @@
+{
+  "60452058": {
+    "owner": "汪玉笠",
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 60454894,
+    "levelItems": {
+      "60552817": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "开启潜行点1",
+        "position": [
+          21.83,
+          1,
+          50.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60552817,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60553517": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "潜行点1",
+        "position": [
+          -18.12,
+          1,
+          60.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60553517,
+        "configId": 72,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "60553969": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "潜行点2",
+        "position": [
+          -29.92,
+          1,
+          55.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60553969,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -29.92,
+            1,
+            55.01
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "60454960": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "目标点1",
+        "position": [
+          16.08,
+          1,
+          0.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60454960,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            16.08,
+            1,
+            0.01
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60456490": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "目标点2",
+        "position": [
+          24.08,
+          1,
+          38.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60456490,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            24.08,
+            1,
+            38.01
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "60554982": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint",
+        "position": [
+          -44.5,
+          1,
+          55.01
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 60554982,
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -44.5,
+            1,
+            55.01
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "60456747": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "目标点3",
+        "position": [
+          -15.15,
+          1,
+          55.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60456747,
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -15.15,
+            1,
+            55.01
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": false
+      },
+      "60543266": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "开启目标点2",
+        "position": [
+          26.28,
+          1,
+          50.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60543266,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60555099": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "开启终点",
+        "position": [
+          21.83,
+          1,
+          50.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60555099,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60543267": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "开启目标点3",
+        "position": [
+          21.83,
+          1,
+          50.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60543267,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60553970": {
+        "majorCompId": 0,
+        "owner": "汪玉笠",
+        "EditorName": "开启潜行点2",
+        "position": [
+          21.83,
+          1,
+          50.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60553970,
+        "templateId": 0,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "sightLevel": 128,
+    "spawners": [
+      60455980,
+      60456568,
+      60456957
+    ],
+    "id": 60452058,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8002/Sandbox_60452058_GraphRef.asset",
+    "position": [
+      2.08,
+      1,
+      0.01
+    ],
+    "areaIds": [
+      60735819,
+      60735829,
+      90938795
+    ],
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1
+  }
+}

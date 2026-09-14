@@ -1,0 +1,698 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1033",
+  "NodeID": 1,
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "isOnControlRemove": true,
+  "onBuffRefreshIds": [
+    107
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "key": "grow",
+      "duration": 0.3,
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5,
+      "UID": "2f511b60-6562-4158-855b-9df7b0578213",
+      "name": "addTimer"
+    },
+    "7": {
+      "actionIds": [
+        59,
+        5
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "76e66d7f-c264-4e56-9778-fd3f24dd0f5b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "97632e3f-e9e7-4355-b7b2-ebf12f00a88e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "31": {
+      "name": "isPuppetStage",
+      "UID": "8c3e931d-4bad-4b50-a8aa-e1768172d0f6",
+      "stage": 3,
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "11": {
+      "UID": "ba9cd2d1-83e9-49af-a96b-d6bce2da5bb4",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": 0.2
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "name": "isPuppetStage",
+      "UID": "41ecd6cc-18cd-4ec7-90e6-db06c98d2446",
+      "stage": 1,
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "name": "isPuppetStage",
+      "UID": "bc53e849-0322-49a2-a228-8551abdac4db",
+      "stage": 2,
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "22": {
+      "actionIds": [
+        60,
+        35
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "6e43bb89-9e0f-4c80-bc19-58ca54e4a869",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 22
+    },
+    "23": {
+      "name": "isPuppetStage",
+      "UID": "055e35cb-80de-4994-b650-4b91dc47f2ab",
+      "stage": 3,
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "24": {
+      "actionIds": [
+        61,
+        39
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "f685d146-6036-4a2a-afcd-7b20d928ce5e",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "74": {
+      "UID": "c4ff39c2-1c55-40b8-aad3-36148f922efe",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 74
+    },
+    "75": {
+      "key": "small",
+      "duration": 0.25,
+      "actionIds": [
+        74
+      ],
+      "NodeID": 75,
+      "UID": "2e060798-d34e-45d3-8937-52b4c5e67a4b",
+      "name": "addTimer"
+    },
+    "25": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "5aa513e8-a79e-4e4e-93cd-1781ca5eaec0",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "76": {
+      "duration": 0.25,
+      "curve": "9200021_Small",
+      "NodeID": 76,
+      "UID": "b8d607b7-728e-49df-bedd-905fdd0db800",
+      "target": "OWNER",
+      "targetScale": 1,
+      "name": "playModelScaleAnim"
+    },
+    "27": {
+      "name": "isPuppetStage",
+      "UID": "93d25f5e-4090-4ccd-a89d-2aa2b1ef12d6",
+      "stage": 1,
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        62,
+        43
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "8e9d96a3-e3d7-4cab-9ce0-1858314f3897",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        30
+      ],
+      "NodeID": 28
+    },
+    "29": {
+      "name": "isPuppetStage",
+      "UID": "6f40bea2-25a3-48a8-b701-e4f2f04e34ec",
+      "stage": 2,
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "78": {
+      "UID": "50685c90-4d20-4e19-ac5e-aa4eed6ee52e",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 78
+    },
+    "32": {
+      "actionIds": [
+        64,
+        51
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "55f3c529-8e57-47e7-9642-95a6e93ddfcf",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "79": {
+      "key": "small",
+      "duration": 0.25,
+      "actionIds": [
+        78
+      ],
+      "NodeID": 79,
+      "UID": "b7f3ef63-31df-45f7-a48f-dc57d59a86cc",
+      "name": "addTimer"
+    },
+    "61": {
+      "duration": 0.3,
+      "curve": "9200021_Grow",
+      "NodeID": 61,
+      "UID": "c0df7949-c183-4b88-8c1a-0e3d91fcb270",
+      "target": "OWNER",
+      "targetScale": 0.2,
+      "name": "playModelScaleAnim"
+    },
+    "80": {
+      "duration": 0.25,
+      "curve": "9200021_Small",
+      "NodeID": 80,
+      "UID": "b93321a4-530d-4488-8353-fd6224cd4c95",
+      "target": "OWNER",
+      "targetScale": 1,
+      "name": "playModelScaleAnim"
+    },
+    "62": {
+      "duration": 0.3,
+      "curve": "9200021_Grow",
+      "NodeID": 62,
+      "UID": "4d593a54-9a0c-4e04-b5ff-328474b0ff26",
+      "target": "OWNER",
+      "targetScale": 1.5,
+      "name": "playModelScaleAnim"
+    },
+    "38": {
+      "UID": "8bae3f1f-e45d-4b2a-a2ce-2871015310ea",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "born_scale_rate_v": 1
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "key": "grow",
+      "duration": 0.3,
+      "actionIds": [
+        38
+      ],
+      "NodeID": 39,
+      "UID": "bf0d0903-9441-4e76-b186-56e3c0cb2f46",
+      "name": "addTimer"
+    },
+    "63": {
+      "duration": 0.3,
+      "curve": "9200021_Grow",
+      "NodeID": 63,
+      "UID": "fe693d24-f19b-4de6-8c6a-2b88cfd84dc2",
+      "target": "OWNER",
+      "targetScale": 1.3,
+      "name": "playModelScaleAnim"
+    },
+    "82": {
+      "UID": "1c600480-4a3e-4e48-99b9-477dfba3fb2d",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 82
+    },
+    "42": {
+      "UID": "1749c03b-7a65-404e-821f-803ea6014226",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "born_scale_rate_v": 0.5
+      },
+      "NodeID": 42
+    },
+    "43": {
+      "key": "grow",
+      "duration": 0.3,
+      "actionIds": [
+        42
+      ],
+      "NodeID": 43,
+      "UID": "fb896721-56f1-43eb-bbe0-fa83c221958b",
+      "name": "addTimer"
+    },
+    "65": {
+      "name": "isPuppetStage",
+      "UID": "6f383659-d419-4ff0-a142-4d88b311249c",
+      "stage": 1,
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "84": {
+      "name": "isPuppetStage",
+      "UID": "fa6f73e8-4720-429a-bb86-3784f9970e3c",
+      "stage": 3,
+      "target": "OWNER",
+      "NodeID": 84
+    },
+    "66": {
+      "actionIds": [
+        72,
+        75
+      ],
+      "conditionActionIds": [
+        65
+      ],
+      "UID": "f8048783-047e-4044-9029-e647846c69a6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        69
+      ],
+      "NodeID": 66
+    },
+    "67": {
+      "actionIds": [
+        87
+      ],
+      "conditionActionIds": [
+        105
+      ],
+      "UID": "c2b02b35-e252-41ec-9258-f27dfc793bee",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        66
+      ],
+      "NodeID": 67
+    },
+    "68": {
+      "name": "isPuppetStage",
+      "UID": "808323af-440c-4550-b7e1-4f958be93ee1",
+      "stage": 2,
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "69": {
+      "actionIds": [
+        76,
+        79
+      ],
+      "conditionActionIds": [
+        68
+      ],
+      "UID": "4a9eb5e9-4d89-4796-a110-c9f2e6a5c60f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        71
+      ],
+      "NodeID": 69
+    },
+    "70": {
+      "name": "isPuppetStage",
+      "UID": "242edde3-3e31-4fb4-a0e7-a9333c8d753c",
+      "stage": 3,
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "71": {
+      "actionIds": [
+        80,
+        83
+      ],
+      "conditionActionIds": [
+        70
+      ],
+      "UID": "ad637e17-5333-49ac-b4b2-3cf7b9120adf",
+      "name": "doActionsByConditions",
+      "NodeID": 71
+    },
+    "101": {
+      "duration": 0.25,
+      "curve": "9200021_Small",
+      "NodeID": 101,
+      "UID": "42b3660a-0ffe-4413-9f99-c9a5176cf850",
+      "target": "OWNER",
+      "targetScale": 1,
+      "name": "playModelScaleAnim"
+    },
+    "90": {
+      "UID": "3c97a458-13bb-44be-aea5-3f317d07ac58",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 90
+    },
+    "91": {
+      "key": "small",
+      "duration": 0.25,
+      "actionIds": [
+        90
+      ],
+      "NodeID": 91,
+      "UID": "1d2c5279-9397-49d0-b568-f1df10878bbf",
+      "name": "addTimer"
+    },
+    "93": {
+      "duration": 0.25,
+      "curve": "9200021_Small",
+      "NodeID": 93,
+      "UID": "0ea88f87-9e12-4ad4-bc22-539d5653ddf3",
+      "target": "OWNER",
+      "targetScale": 1,
+      "name": "playModelScaleAnim"
+    },
+    "94": {
+      "UID": "fb55a813-2d8f-4021-9ae3-1423e4b5922e",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 94
+    },
+    "95": {
+      "key": "small",
+      "duration": 0.25,
+      "actionIds": [
+        94
+      ],
+      "NodeID": 95,
+      "UID": "71ad2db2-18ca-4616-9e4b-4082448bebde",
+      "name": "addTimer"
+    },
+    "107": {
+      "duration": 0.65,
+      "disableWhenFinished": true,
+      "NodeID": 107,
+      "UID": "b19e2056-eafe-43b3-a76e-d1adc342b3e7",
+      "target": "OWNER",
+      "presetName": "Eff_Buff_Mushroom_Fresnel",
+      "name": "playPreset"
+    },
+    "97": {
+      "duration": 0.25,
+      "curve": "9200021_Small",
+      "NodeID": 97,
+      "UID": "ad0f0dc4-ddfd-4427-8bb6-f29724ca8ffa",
+      "target": "OWNER",
+      "targetScale": 1,
+      "name": "playModelScaleAnim"
+    },
+    "106": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "15cf087a-ace6-4d47-9e96-7e0451919fd5",
+      "target": "OWNER",
+      "NodeID": 106
+    },
+    "98": {
+      "UID": "dccdfff6-1ee7-4027-83df-467642a09109",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 98
+    },
+    "34": {
+      "UID": "1d74467d-76c3-4d0b-8f6a-b46c96d112ba",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "born_scale_rate_v": 1
+      },
+      "NodeID": 34
+    },
+    "99": {
+      "key": "small",
+      "duration": 0.25,
+      "actionIds": [
+        98
+      ],
+      "NodeID": 99,
+      "UID": "179c350f-20fc-4dc5-b8cd-2159673fd51e",
+      "name": "addTimer"
+    },
+    "26": {
+      "UID": "5fadbdc6-fc59-4495-a1a1-a4b79d4f2a8d",
+      "conditionIds": [
+        103,
+        25
+      ],
+      "name": "conditionOr",
+      "NodeID": 26
+    },
+    "59": {
+      "duration": 0.3,
+      "curve": "9200021_Grow",
+      "NodeID": 59,
+      "UID": "8ba3a0a7-b4f7-45aa-8e57-7dd45b1dd825",
+      "target": "OWNER",
+      "targetScale": 0.3,
+      "name": "playModelScaleAnim"
+    },
+    "60": {
+      "duration": 0.3,
+      "curve": "9200021_Grow",
+      "NodeID": 60,
+      "UID": "ea3ca33d-5db7-4e5b-803b-73e1988c4bcb",
+      "target": "OWNER",
+      "targetScale": 0.2,
+      "name": "playModelScaleAnim"
+    },
+    "83": {
+      "key": "small",
+      "duration": 0.25,
+      "actionIds": [
+        82
+      ],
+      "NodeID": 83,
+      "UID": "24040321-b53b-4168-b5ed-9fe55bb27c98",
+      "name": "addTimer"
+    },
+    "102": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e7888b8f-92b4-4af6-a21f-16808f8c900d",
+      "effectId": "Eff_Avatar_Female_Skill_Mushroom_Small",
+      "speed": 1,
+      "NodeID": 102
+    },
+    "18": {
+      "value": 0,
+      "propertyName": "_VFXFresnelPluginModel_FresnelEnable",
+      "name": "setMaterialPropertyFloat",
+      "UID": "a80270ea-28a1-4611-b611-2d69c1d12b60",
+      "NodeID": 18
+    },
+    "103": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "16eb46fb-1bd7-4df9-909e-da618b88f269",
+      "target": "OWNER",
+      "NodeID": 103
+    },
+    "58": {
+      "UID": "f73e9e48-7fb8-4167-9df5-8e830e891152",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 58
+    },
+    "104": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "13ca7823-90d1-4995-9aa0-e449d9241e75",
+      "target": "OWNER",
+      "NodeID": 104
+    },
+    "88": {
+      "name": "isPuppetStage",
+      "UID": "301b9444-c537-4624-8660-e138cd2a5f53",
+      "stage": 2,
+      "target": "OWNER",
+      "NodeID": 88
+    },
+    "105": {
+      "UID": "57c945fe-1256-43ee-9773-0f27be01101b",
+      "conditionIds": [
+        106,
+        104
+      ],
+      "name": "conditionOr",
+      "NodeID": 105
+    },
+    "30": {
+      "actionIds": [
+        63,
+        47
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "0510449d-bb6b-467e-bd92-112d186cf3f1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        32
+      ],
+      "NodeID": 30
+    },
+    "46": {
+      "UID": "4627fb97-8ab8-4280-8bee-f20fed397004",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "born_scale_rate_v": 0.3
+      },
+      "NodeID": 46
+    },
+    "64": {
+      "duration": 0.3,
+      "curve": "9200021_Grow",
+      "NodeID": 64,
+      "UID": "26e29e0c-b781-4ad5-8844-2d583de9c9e3",
+      "target": "OWNER",
+      "targetScale": 1.1,
+      "name": "playModelScaleAnim"
+    },
+    "47": {
+      "key": "grow",
+      "duration": 0.3,
+      "actionIds": [
+        46
+      ],
+      "NodeID": 47,
+      "UID": "1637d6ae-6b88-4e51-af6c-dce06555760c",
+      "name": "addTimer"
+    },
+    "85": {
+      "actionIds": [
+        101,
+        99
+      ],
+      "conditionActionIds": [
+        84
+      ],
+      "UID": "42326c34-7b77-423a-b252-965a192c730a",
+      "name": "doActionsByConditions",
+      "NodeID": 85
+    },
+    "86": {
+      "actionIds": [
+        97,
+        95
+      ],
+      "conditionActionIds": [
+        88
+      ],
+      "UID": "110dca84-d044-4afc-9a8c-8376747825bc",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        85
+      ],
+      "NodeID": 86
+    },
+    "87": {
+      "actionIds": [
+        93,
+        91
+      ],
+      "conditionActionIds": [
+        89
+      ],
+      "UID": "4a8b52eb-c82e-468e-b5d2-2c22da200e0f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        86
+      ],
+      "NodeID": 87
+    },
+    "89": {
+      "name": "isPuppetStage",
+      "UID": "ac3573de-4615-4a43-b02e-a772118bb85d",
+      "stage": 1,
+      "target": "OWNER",
+      "NodeID": 89
+    },
+    "72": {
+      "duration": 0.25,
+      "curve": "9200021_Small",
+      "NodeID": 72,
+      "UID": "132fbf9d-ddd0-49f9-8529-2503c5120a4d",
+      "target": "OWNER",
+      "targetScale": 1,
+      "name": "playModelScaleAnim"
+    },
+    "50": {
+      "UID": "93387758-9a30-4912-88cc-97533d033923",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "born_scale_rate_v": 0.1
+      },
+      "NodeID": 50
+    },
+    "4": {
+      "UID": "715083da-2570-4328-9115-27d0c0d533a7",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "born_scale_rate_v": 1
+      },
+      "NodeID": 4
+    },
+    "51": {
+      "key": "grow",
+      "duration": 0.3,
+      "actionIds": [
+        50
+      ],
+      "NodeID": 51,
+      "UID": "76157868-eee9-47a1-b800-4bcd0a51791a",
+      "name": "addTimer"
+    },
+    "35": {
+      "key": "grow",
+      "duration": 0.3,
+      "actionIds": [
+        34
+      ],
+      "NodeID": 35,
+      "UID": "5016dc24-e6c6-48cf-9a2a-8a753aceaa42",
+      "name": "addTimer"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    18,
+    58,
+    67,
+    102
+  ],
+  "onBuffStartIds": [
+    8,
+    11,
+    107
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9118101",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "14": {
+      "name": "registerCharacterBuff",
+      "calcInfo": {
+        "taken_dmg_dec_rate_v": 0.1
+      },
+      "NodeID": 14,
+      "UID": "c94dbc6a-1c33-4952-ac67-dcd3b6239922",
+      "conditionType": 0,
+      "conditions": [
+        {
+          "name": "checkCharacterBuffTargetState",
+          "UID": "1cda51c9-3b42-495b-a0c5-bb47a0c9fbce",
+          "target": "OWNER",
+          "NodeID": 13,
+          "abilityType": 0
+        }
+      ],
+      "characterBuffType": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    14
+  ]
+}

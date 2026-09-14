@@ -1,0 +1,111 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4001050",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "70b084c3-7655-4182-9574-08f3741d0ca9",
+      "name": "checkDamageAbilityType",
+      "abilityType": 4,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "95115aef-525e-4507-ab83-e6d841594809",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "14": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "dd8284d2-bedf-418f-88ab-c24ba619e876",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "150ed24e-0796-4d5a-afdf-a67b09f4e4d4",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        5,
+        13
+      ],
+      "name": "registerGroupEvent",
+      "UID": "c5b89eaa-f015-4dfc-b906-298cad021293",
+      "NodeID": 7
+    },
+    "16": {
+      "buffId": 4001050,
+      "name": "removeBuff",
+      "UID": "3a304971-a5ed-46aa-bfd2-65f80a7ca458",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "b231134c-c508-4d11-9aaa-3422bb0e1233",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "13": {
+      "UID": "c0e16d3c-d11c-4e47-9e84-0e5d3b5896c6",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "11": {
+      "isClearOld": true,
+      "UID": "eb690134-e70f-437c-80f7-acce961311fd",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 11,
+      "calcInfoByLuaConfig": {
+        "id": 4001050,
+        "taken_ultimate_dmg_inc_rate_v": "param0",
+        "type": 1
+      }
+    },
+    "5": {
+      "UID": "b66ac86f-053f-4cc0-a291-8b1fd59387a8",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "7ad6cf5c-c2b7-4a24-8a31-02328a3f2d6d",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    15
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    17,
+    14,
+    7
+  ]
+}

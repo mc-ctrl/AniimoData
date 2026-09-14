@@ -1,0 +1,820 @@
+{
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": [
+        3,
+        0,
+        1
+      ],
+      "templateId": 70030038,
+      "name": "createEntity",
+      "UID": "4495d839-4c31-4ef2-ac39-5af4e6e992fa",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 37
+    },
+    "38": {
+      "actionIds": [
+        65
+      ],
+      "conditionActionIds": [
+        64
+      ],
+      "UID": "ae1c84fa-89e1-4799-aeef-099d46377c60",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        37
+      ],
+      "NodeID": 38
+    },
+    "39": {
+      "actionIds": [
+        66
+      ],
+      "conditionActionIds": [
+        63
+      ],
+      "UID": "10d64918-50ad-4576-b0bc-2b60e78e2fd5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        38
+      ],
+      "NodeID": 39
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 40,
+      "UID": "cdc987d3-fa12-46ec-9b2b-eaa14521a024"
+    },
+    "41": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "26c21a24-35f5-4d3a-bbda-7ec99de06778",
+      "target": "OWNER",
+      "NodeID": 41,
+      "animId": "Gauntlet_Skill_Summon_Start"
+    },
+    "42": {
+      "UID": "1ec5dd85-e9f1-4055-b40e-0207ca76bbd1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "actionIds": [
+        58
+      ],
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "587cc3b6-c0a5-4547-af66-08a544aa376a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        34
+      ],
+      "NodeID": 35
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 44,
+      "UID": "6f18a80b-0153-4780-b622-d75d2683ddfc"
+    },
+    "66": {
+      "offsetXYZ": [
+        3,
+        0,
+        1
+      ],
+      "templateId": 70030055,
+      "name": "createEntity",
+      "UID": "6be96db5-1203-43a7-ad12-81e404e894a5",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 66
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "4": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "65": {
+      "offsetXYZ": [
+        3,
+        0,
+        1
+      ],
+      "templateId": 70030051,
+      "name": "createEntity",
+      "UID": "dca6dc52-330e-4e7d-a35f-a27b406bf800",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 65
+    },
+    "64": {
+      "name": "checkElementType",
+      "UID": "a6eca80a-983a-4f27-acf6-21d91874d912",
+      "target": "OWNER",
+      "NodeID": 64,
+      "elementType": 6
+    },
+    "63": {
+      "name": "checkElementType",
+      "UID": "a61440fe-8193-4480-a123-2cdb488a9973",
+      "target": "OWNER",
+      "NodeID": 63,
+      "elementType": 5
+    },
+    "62": {
+      "offsetXYZ": [
+        1.5,
+        0,
+        1
+      ],
+      "templateId": 70030055,
+      "name": "createEntity",
+      "UID": "4a73bc13-7bec-486f-a5c6-611b1c9c56fe",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 62
+    },
+    "61": {
+      "offsetXYZ": [
+        1.5,
+        0,
+        1
+      ],
+      "templateId": 70030051,
+      "name": "createEntity",
+      "UID": "7066932c-754a-491d-adb4-234cd5d415a6",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 61
+    },
+    "60": {
+      "name": "checkElementType",
+      "UID": "ea7ef2ec-eaad-4ef1-96d7-76fb897e66e2",
+      "target": "OWNER",
+      "NodeID": 60,
+      "elementType": 6
+    },
+    "59": {
+      "name": "checkElementType",
+      "UID": "0c72e718-35a7-4322-a973-20c340b45f7b",
+      "target": "OWNER",
+      "NodeID": 59,
+      "elementType": 5
+    },
+    "56": {
+      "name": "checkElementType",
+      "UID": "c271fef4-1bb7-4cb0-9a10-6018c6cb13d6",
+      "target": "OWNER",
+      "NodeID": 56,
+      "elementType": 6
+    },
+    "57": {
+      "offsetXYZ": [
+        -3,
+        0,
+        1
+      ],
+      "templateId": 70030051,
+      "name": "createEntity",
+      "UID": "3a50a591-76b9-4422-8691-409deb9902b4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 57
+    },
+    "58": {
+      "offsetXYZ": [
+        -3,
+        0,
+        1
+      ],
+      "templateId": 70030055,
+      "name": "createEntity",
+      "UID": "01700197-948a-497c-9af8-aaad47c0935f",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 58
+    },
+    "55": {
+      "name": "checkElementType",
+      "UID": "c68749e9-7d30-4e4c-a042-b9aef60e7580",
+      "target": "OWNER",
+      "NodeID": 55,
+      "elementType": 5
+    },
+    "54": {
+      "offsetXYZ": [
+        -1.5,
+        0,
+        1
+      ],
+      "templateId": 70030055,
+      "name": "createEntity",
+      "UID": "1fff7734-17b3-4b59-8b16-9f7d1417b136",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 54
+    },
+    "53": {
+      "offsetXYZ": [
+        -1.5,
+        0,
+        1
+      ],
+      "templateId": 70030051,
+      "name": "createEntity",
+      "UID": "45157ff9-8125-4370-b4f1-c5b8b35371f9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 53
+    },
+    "52": {
+      "name": "checkElementType",
+      "UID": "8832cf05-4b35-4eef-bfec-1a94d2eed8ac",
+      "target": "OWNER",
+      "NodeID": 52,
+      "elementType": 6
+    },
+    "51": {
+      "name": "checkElementType",
+      "UID": "151e5af9-2206-40ae-bd6c-4ddedad43339",
+      "target": "OWNER",
+      "NodeID": 51,
+      "elementType": 5
+    },
+    "50": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "templateId": 70030055,
+      "name": "createEntity",
+      "UID": "4395b6ce-ca0c-429c-908b-4ba70943c12a",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 50
+    },
+    "49": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "templateId": 70030051,
+      "name": "createEntity",
+      "UID": "6b5731d6-ac4f-4f3a-b36c-6c996a3eea90",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 49
+    },
+    "48": {
+      "name": "checkElementType",
+      "UID": "617060da-a240-4c85-94ce-ac11a491a7da",
+      "target": "OWNER",
+      "NodeID": 48,
+      "elementType": 6
+    },
+    "47": {
+      "name": "checkElementType",
+      "UID": "fbe20c5a-35ad-4eb8-a439-b57d248153e7",
+      "target": "OWNER",
+      "NodeID": 47,
+      "elementType": 5
+    },
+    "26": {
+      "actionIds": [
+        62
+      ],
+      "conditionActionIds": [
+        59
+      ],
+      "UID": "fd1a12d7-cb63-47ea-b9b8-2e0a9486bb8b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 26
+    },
+    "45": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "303b8bbe-f426-4080-9b6c-c3e33baf8776",
+      "target": "OWNER",
+      "NodeID": 45,
+      "animId": "Gauntlet_Skill_Summon_End"
+    },
+    "43": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "59d4adb1-8d64-4f79-8bed-eeab119ece76",
+      "target": "OWNER",
+      "NodeID": 43,
+      "animId": "Gauntlet_Skill_Summon_Loop"
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 31,
+      "UID": "e25ddcfb-148b-4cb2-8ea4-010b8d6e6914"
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "757c5a67-31fb-4027-b3de-bdd227227a9f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "13": {
+      "name": "isActorType",
+      "UID": "73622733-8ce8-4585-a3c3-0151e61164bc",
+      "target": "OWNER",
+      "NodeID": 13,
+      "actorType": 3
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 12,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "11": {
+      "actionIds": [
+        32,
+        9
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "3a3176be-be5b-4fd6-a217-0a84446b1a21",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "20": {
+      "offsetXYZ": [
+        -1.5,
+        0,
+        1
+      ],
+      "templateId": 70030038,
+      "name": "createEntity",
+      "UID": "2b0317f3-13dc-4221-8065-4ccfe06ff3e7",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        53
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "80bb47be-de8d-43a0-b847-30698d66dcfa",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "22": {
+      "actionIds": [
+        54
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "8aca7324-4f58-4ee1-8c88-c850018f19ea",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21
+      ],
+      "NodeID": 22
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 23,
+      "UID": "f2b04387-9f86-4c55-a090-9d7e2e2ece4f"
+    },
+    "24": {
+      "offsetXYZ": [
+        1.5,
+        0,
+        1
+      ],
+      "templateId": 70030038,
+      "name": "createEntity",
+      "UID": "223e5d1a-87bf-4396-b1b1-6e73ff27f282",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 24
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.75,
+      "NodeID": 19,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 46,
+      "UID": "f8021ec9-cc74-48ac-a209-465dbbde880e"
+    },
+    "18": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 18
+    },
+    "25": {
+      "actionIds": [
+        61
+      ],
+      "conditionActionIds": [
+        60
+      ],
+      "UID": "82e39e0e-3700-4a58-baa7-79508219e264",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 27,
+      "UID": "706171c1-feb1-40d8-a71e-32d77723f53d"
+    },
+    "28": {
+      "offsetXYZ": [
+        0,
+        0,
+        2
+      ],
+      "templateId": 70030038,
+      "name": "createEntity",
+      "UID": "ddb93dda-7734-4bfb-8a23-e8d204f98b56",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        49
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "4b302113-1e31-455b-b7e7-2b92735935e4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 29
+    },
+    "30": {
+      "actionIds": [
+        50
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "5831423f-966d-4b70-ba0a-a565f0e9928f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        29
+      ],
+      "NodeID": 30
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "31e4e35c-0c86-4c37-8980-9cde011fce85",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_Entrance_Start",
+      "NodeID": 32
+    },
+    "33": {
+      "offsetXYZ": [
+        -3,
+        0,
+        1
+      ],
+      "templateId": 70030038,
+      "name": "createEntity",
+      "UID": "d30e28f8-432d-40e8-8c46-5687972abf12",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "pos": "OWNER",
+      "bornHp": 0,
+      "rot": "OWNER",
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 5,
+      "setLevel": true,
+      "NodeID": 33
+    },
+    "34": {
+      "actionIds": [
+        57
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "cbdf1c90-327d-4131-9a89-02f2b7bfcff9",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        33
+      ],
+      "NodeID": 34
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 36,
+      "UID": "ef05dad6-106d-4205-be8d-c6876fb72985"
+    }
+  },
+  "BPName": "ability_70020700",
+  "NodeID": 6,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    4,
+    19,
+    12,
+    42,
+    44,
+    46,
+    31,
+    23,
+    27,
+    36,
+    40
+  ],
+  "layer": "Base",
+  "length": 7
+}

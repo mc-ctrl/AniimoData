@@ -1,0 +1,76 @@
+{
+  "refControlPoint": [
+    [
+      0.75,
+      0.44,
+      5.1
+    ]
+  ],
+  "duration": 2,
+  "calcResultNodeId": 26,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10263_Attack01_01",
+  "gravityRatio": 0.1,
+  "autoSwitchTrack": true,
+  "nodeMap": {
+    "26": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12630002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "8e392317-7f72-4181-9fa6-b9b88d6e54a8",
+      "target": "TARGET",
+      "NodeID": 26,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106
+      }
+    },
+    "15": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "71753f5f-7bf8-461c-a222-4b2c40613803",
+      "effectId": "Eff_Parmon_10263_Attack01_02",
+      "speed": 1,
+      "NodeID": 15
+    }
+  },
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "moveSpeed": 10,
+  "onProjectileFinishIds": [
+    15
+  ],
+  "onProjectileHitIds": [
+    26
+  ],
+  "kind": "BezierCurve",
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "refTargetPoint": [
+    0.43,
+    0.53,
+    7.14
+  ],
+  "tickInterval": 0.05,
+  "BPName": "ability_12630002",
+  "startSleepTime": 0,
+  "defaultHitSoundType": "s",
+  "maxHitNum": 1,
+  "impulseId": 2000,
+  "acceleration": 0
+}

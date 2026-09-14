@@ -1,0 +1,42 @@
+{
+  "cutSceneDuration": 2.916,
+  "NodeID": 1,
+  "UID": "71eeed9b-f8e3-4347-acf3-a6c901c58bca",
+  "abilityParamId": 10600420,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10459900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2fc7fe5-f2ed-49ff-84a8-30877442f08d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10045_EX_02",
+    "Eff_Parmon_10045_EX_04",
+    "Eff_Parmon_10161_Skill_MagicLeaf_S",
+    "Eff_Parmon_10161_Skill_MagicLeaf_End",
+    "Eff_Buff_FlashHeal"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 1.5,
+  "BPName": "ability_10459900",
+  "preloadCutScenes": [
+    "$Parmon_10045_Skill_Ex_Timeline.prefab"
+  ]
+}

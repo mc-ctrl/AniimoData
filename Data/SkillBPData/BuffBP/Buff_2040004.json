@@ -1,0 +1,49 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "key": "DefenseCnt",
+      "name": "setRoguePersistData",
+      "UID": "1bcf4c41-d828-452c-b07b-719ccd29b57e",
+      "value": {
+        "UID": "a83dee5c-de62-45ed-b96e-8d81029e5aae",
+        "name": "getBuffSeriesCnt",
+        "buffSeries": 4,
+        "NodeID": 4
+      },
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "a83dee5c-de62-45ed-b96e-8d81029e5aae",
+      "name": "getBuffSeriesCnt",
+      "buffSeries": 4,
+      "NodeID": 4
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "78232a23-f08f-4b8e-a741-cb30e2640482",
+      "NodeID": 7
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "3af9fee2-42b6-48fb-8aaf-a1ec6e741ade",
+      "name": "registerBuffSeriesCntChangeEvent",
+      "buffSeries": 4
+    }
+  },
+  "BPName": "buff_2040004",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

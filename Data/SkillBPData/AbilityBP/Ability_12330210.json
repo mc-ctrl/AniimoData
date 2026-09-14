@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_12330210",
+  "NodeID": 1,
+  "UID": "cc09a6b4-771c-4977-b797-44e980976a67",
+  "abilityParamId": 10900221,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12330210001,
+      "name": "setCombatActionTimeline",
+      "UID": "aad6f3ee-733f-400b-a9a6-1e165c188a50",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Sprinkle"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Futternym_10233_Skill_Sprinkle02",
+    "Eff_Parmon_Futternym_10233_Skill_Sprinkle01_01"
+  ],
+  "searchRelation": 2,
+  "name": "荧粉蝶幻蝶领域",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 0.5
+}

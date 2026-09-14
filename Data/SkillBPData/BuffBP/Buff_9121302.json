@@ -1,0 +1,351 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9121302",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9cde6783-f497-4370-81bd-d784155ad68d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Revive_Start",
+      "NodeID": 37
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2ddca82e-b80a-4b3c-9fe9-982433cc0589",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Revive_End",
+      "NodeID": 38
+    },
+    "39": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "780ae3c6-b624-4ade-835f-8be34a0370e6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Revive_Loop",
+      "NodeID": 39
+    },
+    "40": {
+      "name": "stopSoundStr",
+      "UID": "eb011ea7-1a16-4e5e-a700-ec9cdaf9d925",
+      "soundId": "SFX_Parmon_10213_Skill_Revive_Loop",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "name": "stopEffectStr",
+      "UID": "e3178535-295a-429f-89dc-3dec02ff6a48",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead02",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "key": "4",
+      "duration": 1.333,
+      "actionIds": [
+        41
+      ],
+      "NodeID": 42,
+      "UID": "68200849-78ca-4f90-9930-e7f3de02531d",
+      "name": "addTimer"
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "73ed859c-f330-4ede-9349-682bcfc4de81",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead01",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "44": {
+      "tag": 15,
+      "name": "removeBuffByTag",
+      "UID": "053bd611-1b61-4256-a435-9cdf486241a5",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "c769ce21-80d9-4943-a43c-f33747447513",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Summon_Born01"
+    },
+    "5": {
+      "UID": "83ffd1fd-b8ff-4d11-bbfb-4f78df838e65",
+      "name": "callClientAction",
+      "actionIds": [
+        3,
+        36,
+        18,
+        38,
+        40,
+        42
+      ],
+      "NodeID": 5
+    },
+    "7": {
+      "actionsOnFakeDead": [
+        46,
+        15,
+        25
+      ],
+      "actionsOnReborn": [
+        5,
+        17,
+        26,
+        44
+      ],
+      "canBeHitWhenFakeDead": false,
+      "NodeID": 7,
+      "UID": "3cc8bd8c-7312-4709-999c-749bb746e190",
+      "reviveHpRate": 0.25,
+      "rebornTime": 5,
+      "name": "petFakeDead"
+    },
+    "46": {
+      "UID": "dc93211f-1f85-4225-8bf9-cac34aff4efc",
+      "tags": [
+        15
+      ],
+      "name": "addBuffTag",
+      "NodeID": 46
+    },
+    "31": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91213021,
+      "NodeID": 31,
+      "UID": "c120376e-2115-416c-98b8-3e8162876eed",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "key": "1",
+      "actionIds": [
+        7,
+        33,
+        29
+      ],
+      "NodeID": 9,
+      "UID": "ad3bf22c-d47a-4485-878d-71e49535673e",
+      "cd": {
+        "calcId": 9121302,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 28,
+        "UID": "b5904921-a13a-4934-98ae-5a39026df365",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "43": {
+      "UID": "bf62a14e-d5fd-483e-ae4b-42a7e9038038",
+      "target": "MASTER",
+      "name": "isTargetAlive",
+      "NodeID": 43
+    },
+    "13": {
+      "scale": 0.9,
+      "NodeID": 13,
+      "UID": "9af112e3-591a-40a3-8614-055e1e8c788d",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead01",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "name": "playEffectOnPosRot"
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerDeadEvent",
+      "UID": "c47352c9-3a88-46e6-9ef6-6fdec01ba812",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "17": {
+      "UID": "1702d69e-6cae-4cc5-8561-2b25bf832ba8",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 17
+    },
+    "21": {
+      "key": "3",
+      "duration": 2,
+      "actionIds": [
+        19,
+        23
+      ],
+      "NodeID": 21,
+      "UID": "a99b0d6f-145e-4bfa-87fe-7769a4d606d4",
+      "name": "addTimer"
+    },
+    "22": {
+      "eventName": "10213_revive_eff",
+      "NodeID": 22,
+      "UID": "4f90941c-59e2-4168-84cf-ea5d4ebd45d9",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        21
+      ]
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "26dad672-eaa8-4c0f-9aee-37d266b4aea7",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead02",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "24": {
+      "name": "hideModel",
+      "UID": "88a489a5-f94c-4fe1-9d16-c0d105d1f2e0",
+      "target": "OWNER",
+      "NodeID": 24,
+      "maxHideTime": 4.8
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "7422f27d-b53b-4122-87b0-fe8bdf23a206",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead01",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "e3a33e17-3828-49a9-bafe-22479cf14ddc",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "236e6ad6-6355-400b-b150-62692cb5a054",
+      "name": "callClientAction",
+      "actionIds": [
+        13,
+        37,
+        39
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "key": "2",
+      "duration": 2,
+      "actionIds": [
+        24
+      ],
+      "NodeID": 25,
+      "UID": "74ef6e69-5e5c-4b2c-b537-8bde40cb5202",
+      "name": "addTimer"
+    },
+    "26": {
+      "eventName": "10213_revive_eff",
+      "name": "notifyCustomEvent",
+      "UID": "a885473d-c8cc-4660-8cf0-33e81065ba30",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9121301,
+      "NodeID": 27,
+      "UID": "b7c1463e-b1f5-44b1-96dd-cc2be3ae88de",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "28": {
+      "calcId": 9121302,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 28,
+      "UID": "b5904921-a13a-4934-98ae-5a39026df365",
+      "name": "getParamByLuaConfig"
+    },
+    "29": {
+      "target": "OWNER",
+      "duration": {
+        "calcId": 9121302,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 28,
+        "UID": "b5904921-a13a-4934-98ae-5a39026df365",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 91213022,
+      "NodeID": 29,
+      "UID": "48d81a56-f0f7-495f-b5bd-6e23c6c03851",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "scale": 0.9,
+      "NodeID": 18,
+      "UID": "3830af80-e471-4ea8-8f5d-b0c7d5d05a8b",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead02",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "name": "playEffectOnPosRot"
+    },
+    "32": {
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "bd0f95a2-75b6-4a60-81aa-b0d4cb135f36",
+      "name": "doActionsByConditions",
+      "NodeID": 32,
+      "elseActionIds": [
+        31
+      ]
+    },
+    "33": {
+      "buffId": 91213021,
+      "name": "removeBuff",
+      "UID": "a567edc7-dd42-46a4-92c3-01be88279f7d",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "buffId": 91213022,
+      "name": "hasBuff",
+      "UID": "def2326f-1e94-4340-b25f-2b89c6b6b38e",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "36": {
+      "key": "5",
+      "duration": 0.167,
+      "actionIds": [
+        35
+      ],
+      "NodeID": 36,
+      "UID": "8d7451de-ffb1-4799-8903-1c6b424066e0",
+      "name": "addTimer"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": {},
+  "onBuffStartIds": [
+    27,
+    22,
+    11,
+    32
+  ]
+}

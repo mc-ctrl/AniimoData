@@ -1,0 +1,235 @@
+{
+  "duration": 3,
+  "calcResultNodeId": 29,
+  "defaultHitSoundType": "s",
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10483_Skill_Bubble_Attack01",
+  "gravityRatio": 0,
+  "kind": "Free3d",
+  "BPName": "ability_14830100",
+  "nodeMap": {
+    "52": {
+      "actionIds": [
+        51
+      ],
+      "conditionActionIds": [
+        58
+      ],
+      "UID": "7fdd6353-107a-440e-9151-10f80ced67c6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        65,
+        72
+      ],
+      "NodeID": 52
+    },
+    "45": {
+      "actionIds": [
+        48
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "f5d47273-3952-4e9a-b9b7-0c67c03c74b7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        44
+      ],
+      "NodeID": 45
+    },
+    "63": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "13c4bc4d-08a9-4a43-ad57-87fe417bfed2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10483_Skill_Bubble_03",
+      "NodeID": 63
+    },
+    "64": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b59f8822-d462-498b-8010-b1e7dd03e5c4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10483_Skill_Bubble_04",
+      "NodeID": 64
+    },
+    "72": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 148301,
+      "name": "createEntity",
+      "UID": "8be79eae-feea-4a72-98d7-a01cff575466",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "NodeID": 72,
+      "pos": "RANDOM_POINT"
+    },
+    "44": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "bb9e23e7-4d30-4317-8ade-bc42cc74e34e",
+      "effectId": "Eff_Parmon_10483_Skill_Bubble_Attack01_End",
+      "speed": 1.01,
+      "NodeID": 44
+    },
+    "48": {
+      "pos": {
+        "UID": "2cc9834c-af49-4e49-8628-38186b734f20",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 47
+      },
+      "target": "TARGET",
+      "name": "playEffectOnPosRot",
+      "UID": "521dcd34-329f-4889-93a7-0511f8eb9752",
+      "effectId": "Eff_Parmon_10483_Skill_Bubble_Attack01_End",
+      "speed": 1.01,
+      "NodeID": 48
+    },
+    "31": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 29,
+      "NodeID": 31,
+      "UID": "3047b623-29d9-40cc-87f3-9088587ace35",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 1
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        29,
+        52,
+        64
+      ]
+    },
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14830100,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "a1fca050-8afe-4983-ab27-c9727581eae1",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "impulseId": 3002,
+        "hitSoundStr": "",
+        "elementType": 3
+      }
+    },
+    "65": {
+      "targetPos": "PROJECTILE",
+      "radius": 3,
+      "UID": "e33bdbf3-4274-4400-a40d-758b6784dc0d",
+      "name": "randomPoint",
+      "NodeID": 65,
+      "randomHeight": -0.3
+    },
+    "62": {
+      "name": "stopSoundStr",
+      "UID": "91e91995-fbbd-4886-b5fb-988987186870",
+      "soundId": "SFX_Combat_10483_Skill_Bubble_02",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "58": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "57d9db00-383b-40de-b997-efb86f23b095",
+      "NodeID": 58,
+      "lValue": {
+        "UID": "a52c40e6-ea54-421d-a651-e25e170e8c9e",
+        "name": "getAbilityCacheVal",
+        "key": "91483022",
+        "NodeID": 57
+      }
+    },
+    "51": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 148301,
+      "name": "createEntity",
+      "UID": "40aa32ed-c0a4-45af-8729-7d864b97ce41",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": -1,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 51,
+      "pos": "PROJECTILE"
+    },
+    "49": {
+      "UID": "01e1168a-f450-43de-943f-177afe3d3867",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 49
+    }
+  },
+  "maxHeightOffset": 5,
+  "stickPitchMaxOffset": 40,
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    62,
+    45,
+    63
+  ],
+  "onProjectileHitIds": [
+    31
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.7,
+  "sweepShape": 0,
+  "stickGravity": 0.5,
+  "tickInterval": 0.01,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3002,
+  "acceleration": -2
+}

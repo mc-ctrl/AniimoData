@@ -1,0 +1,28 @@
+{
+  "9000002": {
+    "volume": 0.075,
+    "name": "RainManager",
+    "propID": 90001,
+    "audioMat": "Skin",
+    "skillList": [
+      4001010
+    ],
+    "elementType": "Water",
+    "rigidbody": "Component_Rock",
+    "chemistryMaterial": 8,
+    "bTree": "CombatUnit/Mechanism/Mech_Rain"
+  },
+  "9000001": {
+    "fragile": 1,
+    "name": "石块",
+    "propID": 90001,
+    "audioMat": "Skin",
+    "volume": 0.075,
+    "elementType": "Rock",
+    "break_template": 132,
+    "chemistryMaterial": 8,
+    "rigidbody": "Component_Rock",
+    "topbarHeight": 1.5,
+    "prefabResID": "Rock01"
+  }
+}

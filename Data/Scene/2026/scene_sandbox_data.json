@@ -1,0 +1,1241 @@
+{
+  "72244663": {
+    "owner": "贺桥",
+    "autoSave": false,
+    "chunk": 1026022,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 72244664,
+    "levelItems": {
+      "72244638": {
+        "majorCompId": 42742113,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          412,
+          43,
+          276
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244638,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.05,
+            "detectType": 3,
+            "blackScreenId": 2000,
+            "playerReviveType": 2
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          100,
+          3,
+          100
+        ],
+        "isActive": true
+      },
+      "72244639": {
+        "majorCompId": 42742113,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_DeathBox_SB (2)",
+        "position": [
+          410,
+          30,
+          221
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244639,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.05,
+            "detectType": 3,
+            "blackScreenId": 2000,
+            "playerReviveType": 2
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          88,
+          3,
+          140
+        ],
+        "isActive": true
+      },
+      "72244640": {
+        "majorCompId": 42742113,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_DeathBox_SB (1)",
+        "position": [
+          399.6,
+          14,
+          86.96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244640,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.05,
+            "detectType": 3,
+            "blackScreenId": 2000,
+            "playerReviveType": 2
+          }
+        },
+        "configId": 8,
+        "path": "",
+        "scale": [
+          56,
+          2,
+          128
+        ],
+        "isActive": true
+      },
+      "72244646": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_SB镜头",
+        "position": [
+          400,
+          45.99,
+          159
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244646,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          20,
+          4,
+          2
+        ],
+        "isActive": true
+      },
+      "72280579": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient_Temple",
+        "position": [
+          400,
+          44.5,
+          198
+        ],
+        "rotation": [
+          90,
+          180,
+          0
+        ],
+        "id": 72280579,
+        "componentsInfo": {
+          "55186434": {
+            "expressionKey": "72280579_55186434"
+          },
+          "55768844": {
+            "center": [
+              0,
+              3,
+              0
+            ],
+            "size": [
+              5,
+              24,
+              7
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          },
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55186433": {
+            "isConstraintWhenStart": false,
+            "shape": {
+              "endPosition": [
+                0,
+                14,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                13,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72285777": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Cube_SB",
+        "position": [
+          394,
+          49,
+          178.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72285777,
+        "componentsInfo": {
+          "72226655": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 10,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          2,
+          1
+        ],
+        "isActive": true
+      },
+      "72294023": {
+        "majorCompId": 54312401,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_LevelItem_TempleBallHolder (1)",
+        "position": [
+          424,
+          58.5,
+          330
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72294023,
+        "configId": 243,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.51,
+          1.51,
+          1.51
+        ],
+        "isActive": true
+      },
+      "72294024": {
+        "majorCompId": 50866965,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger (1)",
+        "position": [
+          424,
+          60.35,
+          330
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72294024,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72294082": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_Sphere_SB (1)",
+        "position": [
+          424,
+          61,
+          330
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72294082,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          },
+          "52068349": {
+            "expressionKey": "72294082_52068349",
+            "detectType": 128
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72341835": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "DeathBOX (2)",
+        "position": [
+          400,
+          18,
+          81
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72341835,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "72341835_52068346",
+            "detectType": 128
+          },
+          "54919957": {
+            "size": [
+              88,
+              3,
+              140
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72341974": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "Death2 (1)",
+        "position": [
+          422.46,
+          24.35,
+          266
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72341974,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73209529": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "镜头记录器",
+        "position": [
+          444.06,
+          63,
+          267.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73209529,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73209531": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "镜头记录器 (1)",
+        "position": [
+          444.06,
+          63,
+          267.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73209531,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73209918": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "镜头记录器 (2)",
+        "position": [
+          444.06,
+          63,
+          267.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73209918,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "73211671": {
+        "majorCompId": 58031210,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_LevelItem_Platform_Pro_Container",
+        "position": [
+          444,
+          62.05,
+          258.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 73211671,
+        "componentsInfo": {
+          "60348572": {
+            "initPosition": [
+              444,
+              62.05,
+              258.5
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "bindEntStaticIds": [
+              72244625
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -21,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 373,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "isActive": true
+      },
+      "72244549": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_TempleComponent_MachineGate_8m",
+        "position": [
+          408,
+          65,
+          344
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244549,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244550": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_TempleComponent_MachineGate_4m",
+        "position": [
+          400,
+          44,
+          152
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244550,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244554": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Fan_SB",
+        "position": [
+          410,
+          45.5,
+          218
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 72244554,
+        "componentsInfo": {
+          "42658052": {
+            "elementLevel": 3,
+            "shape": {
+              "endPosition": [
+                0,
+                14.9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                14,
+                0
+              ]
+            },
+            "constraintPower": 10,
+            "elementPower": 30
+          },
+          "42662676": {
+            "constraintPower": 10
+          },
+          "49544975": {
+            "size": [
+              4,
+              31,
+              4
+            ]
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.85,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 2
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244555": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "Death2",
+        "position": [
+          422.46,
+          24.35,
+          266
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244555,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244556": {
+        "majorCompId": 50866965,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          400,
+          40.95,
+          138
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244556,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244557": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Temple_StoneStatueBase",
+        "position": [
+          400,
+          25.7,
+          6
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 72244557,
+        "componentsInfo": {
+          "53631173": {
+            "tempPetTemplateId": 101810004,
+            "noticeKey": "STATUEGUIDE_TEMPLE_26",
+            "guideId": 104500,
+            "realCharacters": "PUZZLE"
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "tempPetTemplateId": 101810004,
+          "noticeKey": "STATUEGUIDE_TEMPLE_26",
+          "guideId": 104500,
+          "realCharacters": "PUZZLE"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244562": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "Death1",
+        "position": [
+          422.46,
+          24.35,
+          197.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244562,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244563": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置1",
+        "position": [
+          391.67,
+          67.69,
+          200.69
+        ],
+        "rotation": [
+          30.73,
+          34.84,
+          0.08
+        ],
+        "id": 72244563,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244564": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置",
+        "position": [
+          400,
+          51,
+          127
+        ],
+        "rotation": [
+          30,
+          0,
+          0
+        ],
+        "id": 72244564,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244565": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置2",
+        "position": [
+          424.85,
+          78.06,
+          314.99
+        ],
+        "rotation": [
+          34.64,
+          341.61,
+          0
+        ],
+        "id": 72244565,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244566": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_TempleComponent_EndingMachine_SinglePlayer",
+        "position": [
+          408,
+          69,
+          390
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 72244566,
+        "configId": 147,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244569": {
+        "majorCompId": 54312401,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_LevelItem_TempleBallHolder",
+        "position": [
+          400,
+          39.11,
+          138
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244569,
+        "configId": 243,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1.51,
+          1.51,
+          1.51
+        ],
+        "isActive": true
+      },
+      "72244570": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Fan_SB (1)",
+        "position": [
+          400,
+          25.9,
+          75
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 72244570,
+        "componentsInfo": {
+          "42658052": {
+            "constraintPower": 10,
+            "shape": {
+              "endPosition": [
+                0,
+                22,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                19,
+                0
+              ]
+            }
+          },
+          "42662676": {
+            "constraintPower": 10
+          },
+          "49544975": {
+            "size": [
+              4,
+              45,
+              4
+            ]
+          },
+          "55877160": {
+            "localPosition": [
+              0,
+              -3.85,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          }
+        },
+        "configId": 76,
+        "defaultValue": {
+          "isOn": 1,
+          "state": 2
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244576": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Empty_SB镜头触发",
+        "position": [
+          402.48,
+          43.99,
+          157.51
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244576,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244577": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "相机位置2 (1)",
+        "position": [
+          406.81,
+          57.14,
+          160.83
+        ],
+        "rotation": [
+          32.68,
+          338.67,
+          0
+        ],
+        "id": 72244577,
+        "configId": 9,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244633": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Trigger_Sphere_SB",
+        "position": [
+          400,
+          41.3,
+          138
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244633,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 0.5
+          },
+          "52068349": {
+            "expressionKey": "72244633_52068349",
+            "detectType": 128
+          }
+        },
+        "configId": 33,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244636": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "DeathBOX",
+        "position": [
+          412,
+          43,
+          276
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244636,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "72244636_52068346",
+            "detectType": 128
+          },
+          "54919957": {
+            "size": [
+              100,
+              3,
+              100
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72244637": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "DeathBOX (1)",
+        "position": [
+          410,
+          30,
+          221
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72244637,
+        "componentsInfo": {
+          "52068346": {
+            "expressionKey": "72244637_52068346",
+            "detectType": 128
+          },
+          "54919957": {
+            "size": [
+              88,
+              3,
+              140
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91242077": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "死亡重置镜头",
+        "position": [
+          400.29,
+          44,
+          152.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91242077,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1001,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "全局_箱庭关卡_风神庙预研III",
+    "spawners": [
+      72244600,
+      72244608,
+      72244611,
+      72244622,
+      72244624,
+      72244626,
+      72244628,
+      72244630,
+      72244632,
+      72280586,
+      72280613,
+      72280615,
+      72280622,
+      72280636,
+      72286117,
+      72293456,
+      72537445
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 512,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2026/Sandbox_72244663_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      400,
+      26,
+      255
+    ],
+    "forceSync": true,
+    "id": 72244663,
+    "enableFinishMark": false
+  }
+}

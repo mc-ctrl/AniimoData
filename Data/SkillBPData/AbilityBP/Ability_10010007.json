@@ -1,0 +1,29 @@
+{
+  "preloadAnims": [
+    "Command_Back"
+  ],
+  "BPName": "ability_10010007",
+  "NodeID": 1,
+  "UID": "6c9c7159-12b0-48c9-a7de-65c14d64f2de",
+  "searchTargetRangeUp": 0,
+  "abilityParamId": 20000010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeRadius": 0,
+  "checkExistBurrow": false,
+  "searchTargetRangeDown": 0,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10010007001,
+      "name": "setCombatActionTimeline",
+      "UID": "9ff700d6-d705-4b43-b9cb-f5efa8b32420",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2
+}

@@ -1,0 +1,29 @@
+{
+  "unlockExtraTeamPos": [
+    1
+  ],
+  "unlockResetBuff": [
+    20,
+    40
+  ],
+  "unlockSweep": [
+    30
+  ],
+  "addBuff": [
+    21,
+    22,
+    23
+  ],
+  "applyItemSet": [
+    45
+  ],
+  "gainExtraBuff": [
+    29
+  ],
+  "initRogueCoin": [
+    16
+  ],
+  "unlockBuffSeries": [
+    11
+  ]
+}

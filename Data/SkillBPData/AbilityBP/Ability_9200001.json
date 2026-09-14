@@ -1,0 +1,34 @@
+{
+  "BPName": "ability_9200001",
+  "NodeID": 1,
+  "UID": "3749de43-4fb9-48f2-8d27-d7bca2f40cf4",
+  "abilityParamId": 9200001,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200001001,
+      "name": "setCombatActionTimeline",
+      "UID": "baec7423-19cd-44ef-887a-0d18b5cb397b",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FlashHeal"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Girl_Skill_FirstAid_Hit"
+  ],
+  "searchRelation": 1,
+  "name": "生命恢复",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2
+}

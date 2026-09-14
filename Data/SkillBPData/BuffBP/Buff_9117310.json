@@ -1,0 +1,112 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9117310",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "da04c65e-15a2-45f1-8982-b70d83c2ce16",
+      "name": "checkGenderDifferenceInTeam",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "a2fb5b5c-8a9c-4826-b02a-87bc4665b895",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "1f44a3f4-2ee0-467b-89d5-b44b1fea312d",
+      "name": "registerPetListChangeEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "9a4acf42-f53f-48f6-adc2-81b6382e1a20",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "5fd662a0-c884-4639-98e3-00465a3d3aac",
+      "target": "TARGET",
+      "name": "checkGenderDifference",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "5215a380-3b5f-424d-9b64-2cfff3371b51",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "doPetsActions",
+      "UID": "2f33e67e-0fdb-4357-8a49-e3541f23925b",
+      "target": "TARGET",
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "566ce430-5543-48ac-a9c0-8917b4108fe3",
+      "name": "doPlayerTeamActions",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "11": {
+      "target": "TARGET",
+      "duration": -1,
+      "buffId": 91173101,
+      "NodeID": 11,
+      "UID": "b2e027c9-2393-4901-8f07-e0c15712be62",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "name": "doPetsActions",
+      "UID": "2856c86c-b65f-4261-af8c-f951c7617c11",
+      "target": "TARGET",
+      "NodeID": 13
+    },
+    "12": {
+      "buffId": 91173101,
+      "name": "removeBuff",
+      "UID": "86bb3229-0f27-4e65-a793-f158dc270bdc",
+      "target": "TARGET",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    14
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    6
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "3ddfa18d-90d1-4fc8-9904-ccec44c418bd",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.25,
+      "NodeID": 13,
+      "UID": "28adc18d-1d96-4384-a226-4326878061f6"
+    },
+    "15": {
+      "UID": "ff69ef01-b638-4750-90c7-723c70593744",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 15
+    },
+    "26": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "55f23ed2-9ee8-4d49-9019-feb3a3a23b12",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "17": {
+      "UID": "b0b999b1-d3c6-410e-aba1-f1c868661bf0",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "5": {
+      "UID": "19c5c8e1-c519-4b4d-a4af-2c72cad2f591",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          26
+        ]
+      },
+      "NodeID": 5
+    },
+    "18": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "cd420f8d-a2f2-4a6f-9f93-885e477de629",
+      "target": "OWNER",
+      "NodeID": 18,
+      "animId": "Skill_RunAway"
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "eee4c572-30b2-470c-94ee-f53c2f88c4f8",
+      "effectId": "Eff_Parmon_10143_Skill_RunAway_Trail",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "11": {
+      "UID": "1ac41507-76d3-4182-a7c1-a997b76d20f3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "1bd6c18b-8333-4ee0-9808-049dceaab054",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18,
+          21,
+          32
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "dfc18918-3bc3-4344-9bfc-a1971af55789",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_realse",
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_11430106",
+  "NodeID": 7,
+  "UID": "6fd57ba7-9b82-422f-82ef-ca3053b3bde6",
+  "eventIds": [
+    5,
+    17,
+    13,
+    20
+  ],
+  "layer": "Base",
+  "length": 3.067
+}

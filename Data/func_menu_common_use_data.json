@@ -1,0 +1,107 @@
+{
+  "3": {
+    "sort": 3,
+    "functionName": "HELP",
+    "hudIcon": "$UI_HUD_Entry_Help.png",
+    "shortName": 1369991854,
+    "icon": "$UI_Icon_FunMenuMini_Help.png",
+    "function": "help",
+    "name": 2136630004
+  },
+  "4": {
+    "sort": 4,
+    "name": 1793124206,
+    "shortName": 1736035070,
+    "icon": "$UI_Icon_FunMenuMini_Setting.png",
+    "function": "config",
+    "hudIcon": "$UI_HUD_Entry_Setting.png"
+  },
+  "14": {
+    "sort": 11,
+    "functionName": "ANNOUNCEMENT",
+    "name": 1675835103,
+    "shortName": 1693843461,
+    "icon": "$UI_Icon_FunMenuMini_Info.png",
+    "function": "announcement"
+  },
+  "10": {
+    "sort": 8,
+    "stateDisable": "INFO_STAMP",
+    "functionName": "MARKSHARE",
+    "hudIcon": "$UI_HUD_Entry_Tips.png",
+    "shortName": 1203732749,
+    "icon": "$UI_Icon_FunMenuMini_Tips.png",
+    "function": "markShare",
+    "name": 2140311145
+  },
+  "15": {
+    "sort": 0,
+    "functionName": "VIP",
+    "hudIcon": "$UI_Hud_polaris_hub.png",
+    "shortName": 1207817447,
+    "icon": "$UI_Icon_polaris_hub.png",
+    "function": "VIP",
+    "name": 1186037842
+  },
+  "7": {
+    "sort": 6,
+    "name": 1288115466,
+    "shortName": 1561976588,
+    "icon": "$UI_Icon_FunMenuMini_Element.png",
+    "function": "element"
+  },
+  "8": {
+    "sort": 7,
+    "functionName": "DAYNIGHTCHANGE",
+    "hudIcon": "$UI_HUD_Entry_Time.png",
+    "shortName": 1587075307,
+    "icon": "$UI_Icon_FunMenuMini_Time.png",
+    "function": "dayNightChange",
+    "name": 1107354018
+  },
+  "9": {
+    "sort": 1,
+    "name": 1454983099,
+    "hudIcon": "$UI_HUD_Entry_Service.png",
+    "shortName": 2070428298,
+    "icon": "$UI_Icon_FunMenuMini_Service2.png",
+    "function": "service",
+    "actionPath": "Hud/Service"
+  },
+  "13": {
+    "sort": 9,
+    "functionName": "MAIL",
+    "hudIcon": "$UI_HUD_Entry_Mail.png",
+    "shortName": 1764450570,
+    "icon": "$UI_Icon_FunMenuMini_Mail.png",
+    "function": "mail",
+    "name": 1996161776
+  },
+  "12": {
+    "sort": 10,
+    "functionName": "VITALITY",
+    "hudIcon": "$UI_HUD_Entry_Huoli.png",
+    "shortName": 1251415355,
+    "icon": "$UI_Icon_FunMenuMini_Huoli.png",
+    "function": "vitality",
+    "name": 1950273847
+  },
+  "5": {
+    "sort": 5,
+    "name": 1706800244,
+    "shortName": 1417970256,
+    "icon": "$UI_Icon_FunMenuMini_Divorce.png",
+    "function": "escape",
+    "hudIcon": "$UI_HUD_Entry_Divorce.png"
+  },
+  "2": {
+    "sort": 2,
+    "name": 1767947505,
+    "functionName": "MAP",
+    "hudIcon": "$UI_HUD_Entry_Map.png",
+    "shortName": 1945400618,
+    "icon": "$UI_Icon_FunMenuMini_Map.png",
+    "function": "map",
+    "actionPath": "Hud/OpenMap"
+  }
+}

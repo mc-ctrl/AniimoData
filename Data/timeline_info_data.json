@@ -1,0 +1,149 @@
+{
+  "$P_TL_Novice_P7_HuiGui.prefab": {
+    "msg": 1754312893,
+    "updateShadow": 1,
+    "title": 1652415992
+  },
+  "$P_TL_Plot_ARK_LakesideSquare.prefab": {
+    "msg": 2047726329,
+    "updateShadow": 1,
+    "title": 1216252612
+  },
+  "$P_TL_Plot_BeachWhale.prefab": {
+    "msg": 1705700332,
+    "title": 1943391876
+  },
+  "$P_TL_Plot_HelgonBoss.prefab": {
+    "updateShadow": 1
+  },
+  "$P_TL_Plot_LightningResponse01.prefab": {
+    "msg": 1912392066,
+    "updateShadow": 1,
+    "title": 2087856350
+  },
+  "$P_TL_Plot_OuDeHeChang.prefab": {
+    "msg": 2005948146,
+    "updateShadow": 1,
+    "title": 1488993465
+  },
+  "$P_TL_Plot_StarlyCamp.prefab": {
+    "updateShadow": 1
+  },
+  "$P_TL_Plot_TeleportFlower.prefab": {
+    "updateShadow": 1
+  },
+  "$P_TL_Plot_WolfWarriorRestrike01.prefab": {
+    "msg": 1460327255,
+    "updateShadow": 1,
+    "title": 1141636898
+  },
+  "$P_TL_Quest_GrassKing_Appear_Forest.prefab": {
+    "msg": 1831131307,
+    "updateShadow": 1,
+    "title": 1376969450
+  },
+  "$P_TL_Avatar_NieLianQianZhiXiaoJuChang.prefab": {
+    "msg": 1099078566,
+    "updateShadow": 1,
+    "title": 1848755577
+  },
+  "$P_TL_Dojo_P1_GriffinAppear.prefab": {
+    "msg": 1926272463,
+    "title": 1592256766
+  },
+  "$P_TL_Dojo_P3_GriffinDream.prefab": {
+    "msg": 1205714876,
+    "title": 1451603573
+  },
+  "$P_TL_Dojo_P6_SYHExpose.prefab": {
+    "msg": 1246113396,
+    "updateShadow": 1,
+    "title": 1976199338
+  },
+  "$P_TL_Grass_P10_YuanWeiWeiSheng.prefab": {
+    "msg": 1882277639,
+    "title": 1841320461
+  },
+  "$P_TL_Grass_P11_ShadowMemory01.prefab": {},
+  "$P_TL_Grass_P11_ShadowMemory02.prefab": {},
+  "$P_TL_Grass_P11_ShadowMemory03.prefab": {},
+  "$P_TL_Grass_P1_SYH.prefab": {},
+  "$P_TL_Grass_P2_SuniaPast.prefab": {
+    "msg": 1578511842,
+    "updateShadow": 1,
+    "title": 1754420638
+  },
+  "$P_TL_Grass_P3_SuniaBeiLue.prefab": {
+    "msg": 1548115170,
+    "updateShadow": 1,
+    "title": 1751090153
+  },
+  "$P_TL_Grass_P4_MeiMengDieDengChang.prefab": {
+    "msg": 1620858882,
+    "updateShadow": 1,
+    "title": 1329734552
+  },
+  "$P_TL_Grass_P5_IrisTectorumBossArena.prefab": {
+    "msg": 1649454919,
+    "title": 1839448541
+  },
+  "$P_TL_Grass_P6_IrisTectorumBossPostwar.prefab": {
+    "msg": 1192334122,
+    "title": 1204776860
+  },
+  "$P_TL_Grass_P7_IrisTectorumBossDance.prefab": {
+    "msg": 2125303488,
+    "title": 1157880044
+  },
+  "$P_TL_Grass_P8_ZhaoHuaXianLi.prefab": {
+    "msg": 1884870113,
+    "updateShadow": 1,
+    "title": 1217315383
+  },
+  "$P_TL_Grass_P9_IrisTectorumBossDiscolor.prefab": {
+    "msg": 1787676033,
+    "updateShadow": 1,
+    "title": 1172385828
+  },
+  "$P_TL_Novice_P1_ArriveGaia.prefab": {
+    "msg": 2008673548,
+    "updateShadow": 1,
+    "title": 1214815234,
+    "mobileResId": "$P_TL_Novice_P1_ArriveGaia_Mobile.prefab"
+  },
+  "$P_TL_Novice_P2_DuoZouBiNi.prefab": {
+    "msg": 2127284952,
+    "title": 1524980787
+  },
+  "$P_TL_Novice_P2_DuoZouBiNi01.prefab": {
+    "msg": 1613830345,
+    "updateShadow": 1,
+    "title": 2024712852
+  },
+  "$P_TL_Novice_P3_ShuangZiChuXian.prefab": {
+    "msg": 1124323785,
+    "updateShadow": 1,
+    "title": 1161964126
+  },
+  "$P_TL_Novice_P4_SilverDragonAppear.prefab": {
+    "msg": 1258077693,
+    "updateShadow": 1,
+    "title": 1367868920
+  },
+  "$P_TL_Novice_P5_BlazeWyvernAppear.prefab": {
+    "msg": 1085943618,
+    "updateShadow": 1,
+    "title": 1598180435,
+    "mobileResId": "$P_TL_Novice_P5_BlazeWyvernAppear_Mobile.prefab"
+  },
+  "$P_TL_Novice_P5_BlazeWyvernAppear01.prefab": {
+    "msg": 1641957389,
+    "updateShadow": 1,
+    "title": 2113269982
+  },
+  "$P_TL_Novice_P6_ErShiMianTiYiBian.prefab": {
+    "msg": 2025184862,
+    "updateShadow": 1,
+    "title": 1899760582
+  }
+}

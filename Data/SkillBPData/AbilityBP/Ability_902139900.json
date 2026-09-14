@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "searchTargetRangeRadius": 3,
+  "BPName": "ability_902139900",
+  "name": "梦境花月夜",
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 11100990,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 902139900001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

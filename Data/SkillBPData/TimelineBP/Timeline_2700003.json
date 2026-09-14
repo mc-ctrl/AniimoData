@@ -1,0 +1,486 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "12efcf9d-13aa-42e1-b331-b70be11e6b02",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24,
+          27,
+          30,
+          33,
+          35
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "UID": "29c50199-8702-47dc-80f4-6229827dd9d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "NodeID": 38
+    },
+    "7": {
+      "NodeID": 7,
+      "name": "getTargetOffsetPos",
+      "UID": "92be112a-6a5b-4974-8bf7-6a14d708dc7e",
+      "target": "OWNER",
+      "offset": [
+        7,
+        0.5,
+        0
+      ],
+      "rotType": "OWNER"
+    },
+    "31": {
+      "NodeID": 31,
+      "name": "getTargetOffsetPos",
+      "UID": "9fa3291f-ebca-46cc-a639-03a423b0a3c6",
+      "target": "OWNER",
+      "offset": [
+        2.16312,
+        0.5,
+        -6.65739
+      ],
+      "rotType": "OWNER"
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003202,
+      "name": "createProjectile",
+      "UID": "0e74d119-fcd7-4148-a58c-565b589b6de5",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 9,
+      "targetPos": {
+        "NodeID": 10,
+        "name": "getTargetOffsetPos",
+        "UID": "1fb813d2-5f81-45c3-9f40-830a01f3089f",
+        "target": "OWNER",
+        "offset": [
+          5.66312,
+          0.5,
+          4.1145
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "37": {
+      "key": "touzi",
+      "name": "setCacheVal",
+      "UID": "d5ecfd86-178e-4aca-ae31-202cfa5330e2",
+      "target": "OWNER",
+      "val": {
+        "key": "touzi",
+        "name": "getCacheVal",
+        "UID": "ed9985a6-4633-4754-8e96-faf240f06a86",
+        "target": "MASTER",
+        "NodeID": 36
+      },
+      "NodeID": 37
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "57053504-ae2d-4bb2-af50-7f9cb8e63fee",
+      "effectId": "Eff_Buff_Rogue_Skill_Money_Equip_Bullet_Hit_Boss",
+      "speed": 1,
+      "NodeID": 35
+    },
+    "21": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003206,
+      "name": "createProjectile",
+      "UID": "3afb6123-24d7-46ee-aa52-9262da16745f",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 21,
+      "targetPos": {
+        "NodeID": 22,
+        "name": "getTargetOffsetPos",
+        "UID": "ce7a664c-6994-41ca-8a46-b1a09af5e127",
+        "target": "OWNER",
+        "offset": [
+          -7,
+          0.5,
+          0
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "3": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003201,
+      "name": "createProjectile",
+      "UID": "58f9ff22-e8b5-4d37-9b26-048ae3213d6a",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 3,
+      "targetPos": {
+        "NodeID": 7,
+        "name": "getTargetOffsetPos",
+        "UID": "92be112a-6a5b-4974-8bf7-6a14d708dc7e",
+        "target": "OWNER",
+        "offset": [
+          7,
+          0.5,
+          0
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "13": {
+      "NodeID": 13,
+      "name": "getTargetOffsetPos",
+      "UID": "a556978c-e7b2-49f0-9806-14e1686f9025",
+      "target": "OWNER",
+      "offset": [
+        2.16312,
+        0.5,
+        6.65739
+      ],
+      "rotType": "OWNER"
+    },
+    "24": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003207,
+      "name": "createProjectile",
+      "UID": "76a25bbc-8184-4a58-8212-b275cc75d9b8",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 24,
+      "targetPos": {
+        "NodeID": 25,
+        "name": "getTargetOffsetPos",
+        "UID": "6e71c334-7276-4f31-8247-a8b24fa6ba3e",
+        "target": "OWNER",
+        "offset": [
+          -5.66312,
+          0.5,
+          -4.1145
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003203,
+      "name": "createProjectile",
+      "UID": "1f209bb3-fa20-4431-8d4c-96653fcd7235",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 12,
+      "targetPos": {
+        "NodeID": 13,
+        "name": "getTargetOffsetPos",
+        "UID": "a556978c-e7b2-49f0-9806-14e1686f9025",
+        "target": "OWNER",
+        "offset": [
+          2.16312,
+          0.5,
+          6.65739
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "10": {
+      "NodeID": 10,
+      "name": "getTargetOffsetPos",
+      "UID": "1fb813d2-5f81-45c3-9f40-830a01f3089f",
+      "target": "OWNER",
+      "offset": [
+        5.66312,
+        0.5,
+        4.1145
+      ],
+      "rotType": "OWNER"
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003204,
+      "name": "createProjectile",
+      "UID": "0e157326-cea7-471c-bb00-37dfcd13adfd",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 15,
+      "targetPos": {
+        "NodeID": 16,
+        "name": "getTargetOffsetPos",
+        "UID": "d1005017-3326-45fc-a714-8c2e80ab3913",
+        "target": "OWNER",
+        "offset": [
+          -2.16312,
+          0.5,
+          6.65739
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "25": {
+      "NodeID": 25,
+      "name": "getTargetOffsetPos",
+      "UID": "6e71c334-7276-4f31-8247-a8b24fa6ba3e",
+      "target": "OWNER",
+      "offset": [
+        -5.66312,
+        0.5,
+        -4.1145
+      ],
+      "rotType": "OWNER"
+    },
+    "16": {
+      "NodeID": 16,
+      "name": "getTargetOffsetPos",
+      "UID": "d1005017-3326-45fc-a714-8c2e80ab3913",
+      "target": "OWNER",
+      "offset": [
+        -2.16312,
+        0.5,
+        6.65739
+      ],
+      "rotType": "OWNER"
+    },
+    "27": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003208,
+      "name": "createProjectile",
+      "UID": "7c210cea-8779-43e4-973d-3b871759267e",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 27,
+      "targetPos": {
+        "NodeID": 28,
+        "name": "getTargetOffsetPos",
+        "UID": "b2e20e39-5781-4537-9168-b7cb761db447",
+        "target": "OWNER",
+        "offset": [
+          -2.16312,
+          0.5,
+          -6.65739
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "28": {
+      "NodeID": 28,
+      "name": "getTargetOffsetPos",
+      "UID": "b2e20e39-5781-4537-9168-b7cb761db447",
+      "target": "OWNER",
+      "offset": [
+        -2.16312,
+        0.5,
+        -6.65739
+      ],
+      "rotType": "OWNER"
+    },
+    "33": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003210,
+      "name": "createProjectile",
+      "UID": "d17b26d3-97a5-40ef-96c4-d6ad3a473af2",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 33,
+      "targetPos": {
+        "NodeID": 34,
+        "name": "getTargetOffsetPos",
+        "UID": "7227204f-9404-4076-a34e-28f62c714fee",
+        "target": "OWNER",
+        "offset": [
+          5.66312,
+          0.5,
+          -4.1145
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "18": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003205,
+      "name": "createProjectile",
+      "UID": "96eb0f27-d780-4903-a4d3-2e34c50e4441",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 18,
+      "targetPos": {
+        "NodeID": 19,
+        "name": "getTargetOffsetPos",
+        "UID": "09a9efc9-84a4-4dbe-b394-a4cc212661df",
+        "target": "OWNER",
+        "offset": [
+          -5.66312,
+          0.5,
+          4.1145
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "30": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "templateId": 2700003209,
+      "name": "createProjectile",
+      "UID": "acd25a6a-e72d-4ef0-9da8-7c86814c1658",
+      "offsetRotation": [
+        70,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Parabola3d",
+      "NodeID": 30,
+      "targetPos": {
+        "NodeID": 31,
+        "name": "getTargetOffsetPos",
+        "UID": "9fa3291f-ebca-46cc-a639-03a423b0a3c6",
+        "target": "OWNER",
+        "offset": [
+          2.16312,
+          0.5,
+          -6.65739
+        ],
+        "rotType": "OWNER"
+      }
+    },
+    "19": {
+      "NodeID": 19,
+      "name": "getTargetOffsetPos",
+      "UID": "09a9efc9-84a4-4dbe-b394-a4cc212661df",
+      "target": "OWNER",
+      "offset": [
+        -5.66312,
+        0.5,
+        4.1145
+      ],
+      "rotType": "OWNER"
+    },
+    "34": {
+      "NodeID": 34,
+      "name": "getTargetOffsetPos",
+      "UID": "7227204f-9404-4076-a34e-28f62c714fee",
+      "target": "OWNER",
+      "offset": [
+        5.66312,
+        0.5,
+        -4.1145
+      ],
+      "rotType": "OWNER"
+    },
+    "22": {
+      "NodeID": 22,
+      "name": "getTargetOffsetPos",
+      "UID": "ce7a664c-6994-41ca-8a46-b1a09af5e127",
+      "target": "OWNER",
+      "offset": [
+        -7,
+        0.5,
+        0
+      ],
+      "rotType": "OWNER"
+    }
+  },
+  "BPName": "timeline_2700003",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    38,
+    5
+  ],
+  "layer": "Base",
+  "length": 5
+}

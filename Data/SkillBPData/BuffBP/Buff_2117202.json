@@ -1,0 +1,91 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117202",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10173_skill_shield_break",
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2280c155-ffa0-4e51-9f31-76709f6a66c5",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10173_skill_shield_loop",
+      "NodeID": 13
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6d92032d-047b-4c60-a14a-1c9ebc8fbb76",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10173_skill_shield",
+      "NodeID": 9
+    },
+    "11": {
+      "duration": 0.05,
+      "actionIds": [
+        9,
+        13
+      ],
+      "NodeID": 11,
+      "UID": "d730678c-2f1a-4fae-b9df-e08499508345",
+      "name": "addTimer"
+    },
+    "8": {
+      "name": "stopSoundStr",
+      "UID": "f4a85363-442e-4e08-9176-2fcec242c165",
+      "soundId": "parmon_10173_skill_shield_loop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "d7e72282-1bf2-41fd-8416-05a9c7c1fee3",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.4,
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 6,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "OWNER",
+        "NodeID": 5,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8,
+    12,
+    3
+  ],
+  "onBuffStartIds": [
+    11
+  ]
+}

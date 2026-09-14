@@ -1,0 +1,348 @@
+{
+  "nodeMap": {
+    "12": {
+      "UID": "40c4a539-17d0-4318-b351-8234d0e5815c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    },
+    "38": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 39,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "40": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.3,
+        0,
+        0
+      ],
+      "speed": 0.36,
+      "NodeID": 40,
+      "UID": "a4e052be-6af5-4385-80b3-38f6ae064336",
+      "effectId": "Eff_Monster_Robot_IndicatorBox_02_Rogue",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "54": {
+      "name": "stopEffectStr",
+      "UID": "bc72f5a6-6b91-438f-ac1c-d67174ddfc21",
+      "effectId": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Charge_Fire",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          43,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 42,
+      "UID": "2b696518-d4dd-4f51-818a-2bd63755d536"
+    },
+    "35": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "a43f32bd-45d5-4572-ab92-7c52b749bd28",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "44": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "dfbcdaf9-09ed-4494-9989-2a89cd217dc1",
+      "target": "OWNER",
+      "NodeID": 44,
+      "animId": "Cannon_Skill_Burst_DmgEnd"
+    },
+    "8": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 8
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          25,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.23,
+      "NodeID": 31,
+      "UID": "44560370-85a7-44d0-a8db-3ba2e96552b4"
+    },
+    "56": {
+      "name": "stopEffectStr",
+      "UID": "339bfb31-7387-45c6-8913-09fd4e657a76",
+      "effectId": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Charge_Grass",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "55": {
+      "name": "stopEffectStr",
+      "UID": "ffe9412d-60a6-4fa8-9ead-3c2832905e17",
+      "effectId": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Charge_Water",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "2cc7c912-2a4f-40fd-84da-5abb8637e5df",
+      "effectId": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Charge_Normal",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "11": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a5cd0f6f-c4f6-4bfd-a8ed-f659dcc36499",
+      "target": "OWNER",
+      "NodeID": 11,
+      "animId": "Cannon_Skill_Burst_Dmg"
+    },
+    "46": {
+      "UID": "9929350b-7ed9-4d8a-90cf-ceffe7217df9",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 46
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "3": {
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 3,
+      "UID": "dfd20175-a5eb-4b02-88f8-d89aed93f862"
+    },
+    "13": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "0e3d2ff6-8546-4e0b-a953-7b754de1f8eb",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 13
+    },
+    "45": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "965e325a-332d-452e-8062-e0f4480beef2",
+      "target": "OWNER",
+      "NodeID": 45,
+      "animId": "Cannon_Skill_Burst_DmgEnd"
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "987d9c10-ea04-4c29-aad2-b26be82dbe68",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Charge_",
+        "name": "constString",
+        "UID": "a06d2cb5-ffb8-434e-a601-fbc4e9bb2323",
+        "NodeID": 47,
+        "concatenateNumber": {
+          "UID": "9929350b-7ed9-4d8a-90cf-ceffe7217df9",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 46
+        }
+      },
+      "speed": 1,
+      "NodeID": 48
+    },
+    "10": {
+      "UID": "d8b239da-f6be-4c58-8a77-ef753a972845",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "actionIds": [
+        13,
+        17
+      ],
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "3a3176be-be5b-4fd6-a217-0a84446b1a21",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "25": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0.2,
+        0.75,
+        0
+      ],
+      "templateId": 70020100001,
+      "name": "createProjectile",
+      "UID": "90a14f94-514b-405b-8b28-9d04a7f5a397",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 25
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 16,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.83,
+      "NodeID": 27,
+      "UID": "24f1cf16-a31b-4c1e-91a5-9911626da173"
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "757c5a67-31fb-4027-b3de-bdd227227a9f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          44,
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.53,
+      "NodeID": 29,
+      "UID": "516a2099-7ed1-4742-ac31-43f37044e849"
+    },
+    "18": {
+      "name": "isActorType",
+      "UID": "73622733-8ce8-4585-a3c3-0151e61164bc",
+      "target": "OWNER",
+      "NodeID": 18,
+      "actorType": 3
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          48,
+          61
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.66,
+      "NodeID": 50,
+      "UID": "e25ddcfb-148b-4cb2-8ea4-010b8d6e6914"
+    },
+    "43": {
+      "time": 2,
+      "rotateSpeed": 30,
+      "name": "rotateTo",
+      "UID": "bef55c43-c398-45b5-a28f-9b6d0dad4eb9",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 43
+    },
+    "61": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b381bd36-32a6-4c53-a45f-afd35b55998c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_Burst_Dmg_Charge",
+      "NodeID": 61
+    },
+    "36": {
+      "eventType": "NotifyState",
+      "endTime": 0.5,
+      "NodeID": 36,
+      "UID": "d87f618e-71b5-49d6-8ef0-cb2854e1dd9a",
+      "tickInterval": 0.01,
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          35
+        ]
+      }
+    }
+  },
+  "BPName": "ability_70020100",
+  "NodeID": 5,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    8,
+    3,
+    10,
+    12,
+    50,
+    36,
+    39,
+    31,
+    29,
+    27,
+    16,
+    42
+  ],
+  "layer": "Base",
+  "length": 4
+}

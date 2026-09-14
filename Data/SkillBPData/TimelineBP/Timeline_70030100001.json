@@ -1,0 +1,225 @@
+{
+  "nodeMap": {
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.58,
+      "NodeID": 52,
+      "UID": "dfd20175-a5eb-4b02-88f8-d89aed93f862"
+    },
+    "39": {
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectStr",
+      "NodeID": 39,
+      "UID": "c1893bae-e70a-4831-9081-96ecf8f31582",
+      "effectId": "Eff_Monster_Robot_Atk_Cannon_Skill_LinkTarget",
+      "isAbilityEndRemove": true,
+      "endTarget": "TARGET"
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.83,
+      "NodeID": 40,
+      "UID": "e25ddcfb-148b-4cb2-8ea4-010b8d6e6914"
+    },
+    "41": {
+      "target": "TARGET",
+      "speed": 1,
+      "NodeID": 41,
+      "UID": "515cf7f1-b866-40d8-80cc-d7453df0ac80",
+      "effectId": "Eff_Monster_Robot_Atk_Cannon_Skill_LinkTarget01",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.83,
+      "NodeID": 42,
+      "UID": "de2a7150-9e19-4093-8ec1-a835e790bd0f"
+    },
+    "43": {
+      "target": "TARGET",
+      "speed": 1,
+      "NodeID": 43,
+      "UID": "825f0170-5a04-4503-8864-fceb332e99e5",
+      "effectId": "Eff_Monster_Robot_Atk_Cannon_Skill_Consec_Heal",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "44": {
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.83,
+      "NodeID": 44,
+      "UID": "afe7550d-e904-4a45-871f-6c52f14fb9c5"
+    },
+    "21": {
+      "UID": "d8b239da-f6be-4c58-8a77-ef753a972845",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 21
+    },
+    "22": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "a5cd0f6f-c4f6-4bfd-a8ed-f659dcc36499",
+      "target": "OWNER",
+      "NodeID": 22,
+      "animId": "Cannon_Skill_Consec_Heal"
+    },
+    "24": {
+      "UID": "40c4a539-17d0-4318-b351-8234d0e5815c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 24
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 55,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "54": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 54
+    },
+    "51": {
+      "UID": "8512157b-eea2-4c67-afa1-6db24f744f45",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 1,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 51
+    },
+    "35": {
+      "name": "isActorType",
+      "UID": "73622733-8ce8-4585-a3c3-0151e61164bc",
+      "target": "OWNER",
+      "NodeID": 35,
+      "actorType": 3
+    },
+    "17": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "19": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "NodeID": 19
+    },
+    "30": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "0e3d2ff6-8546-4e0b-a953-7b754de1f8eb",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 30
+    },
+    "32": {
+      "actionIds": [
+        30,
+        34
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "3a3176be-be5b-4fd6-a217-0a84446b1a21",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 33,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "757c5a67-31fb-4027-b3de-bdd227227a9f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "7": {
+      "UID": "bbe6df62-85a7-4b26-b372-52eb6327c8af",
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 7
+    }
+  },
+  "BPName": "ability_70030100",
+  "NodeID": 9,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    19,
+    21,
+    24,
+    52,
+    40,
+    55,
+    7,
+    33,
+    42,
+    44
+  ],
+  "layer": "Base",
+  "length": 6
+}

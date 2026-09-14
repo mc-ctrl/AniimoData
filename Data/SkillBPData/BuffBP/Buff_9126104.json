@@ -1,0 +1,43 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9126104",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    30,
+    32
+  ],
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "27": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9126105,
+      "NodeID": 27,
+      "UID": "d783aac9-d1b3-4ad9-818b-ad4847f16ba1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "32": {
+      "UID": "69056379-6c6f-42e7-8964-c1cd4dfbb591",
+      "name": "buffStopThink",
+      "NodeID": 32
+    },
+    "30": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9126105,
+      "NodeID": 30,
+      "UID": "3fd110f7-6662-48ca-935f-ad2f359c77a4",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    27
+  ]
+}

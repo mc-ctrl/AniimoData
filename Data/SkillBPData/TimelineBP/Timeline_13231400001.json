@@ -1,0 +1,304 @@
+{
+  "nodeMap": {
+    "37": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13231400,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "02a05cc8-d82f-495c-bb76-3999ec4aa8b2",
+      "target": "TARGET",
+      "NodeID": 37,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30302,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Slash_Big",
+            "rotAngle": 45,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 2000
+      }
+    },
+    "39": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 37,
+      "NodeID": 39,
+      "UID": "48edae97-bb9e-4936-9910-c33e73078c6f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            45,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        37
+      ]
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.25,
+      "NodeID": 41,
+      "UID": "1ccd947e-4bf9-4413-99d5-bacaa525e1f9"
+    },
+    "31": {
+      "name": "dropEffectStr",
+      "UID": "4427eef6-c085-4372-924e-f1cddbca11b7",
+      "effectId": "Eff_Parmon_10201_Skill_Headbutt_Rock",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "30": {
+      "UID": "c7785be1-a8e9-4262-8fd5-68cb7099db84",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "NodeID": 30
+    },
+    "54": {
+      "duration": 0.6,
+      "name": "puppetPreCastAction",
+      "UID": "07683d6e-e59d-48aa-82c2-f04855433069",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 54
+    },
+    "53": {
+      "duration": 0.3,
+      "name": "puppetPreCastAction",
+      "UID": "356fe199-2bcf-4887-b1f1-c9c860ae8d69",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 53
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 52,
+      "UID": "eb0c2bbb-248f-478e-84ea-99668e832183"
+    },
+    "55": {
+      "name": "setNextComboAbilityId",
+      "UID": "1b854136-6060-4e3e-9103-40175dbf7175",
+      "target": "OWNER",
+      "NodeID": 55,
+      "abilityId": 13231401
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          31,
+          55
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "47": {
+      "offsetXYZ": [
+        0,
+        0,
+        -1.25
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "befaa8ec-4a41-4a1d-b025-abbecbf1b9cd",
+      "effectId": "Eff_Parmon_10323_Skill_SwordDance_01",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "16": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "49": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 49,
+      "UID": "06dd1892-91db-4efa-bb29-cde7f82ea4da"
+    },
+    "28": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26,
+          33
+        ]
+      },
+      "NodeID": 28
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7e96e07e-5a0e-489a-ae5e-d3c685442f22",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10323_Skill_SwordDance01",
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.43,
+      "NodeID": 18,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "50": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "6776a31d-15de-4960-a146-d26a0901490d",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "33": {
+      "NodeID": 33,
+      "from": 13230400,
+      "to": 13230401,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 5,
+      "recoverOnExit": false,
+      "name": "switchSkill",
+      "UID": "3ef9f7fb-6030-44f7-b5fd-98b36b2168f0",
+      "notShowCountDown": false
+    },
+    "51": {
+      "actionIds": [
+        53
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "0db2df4d-80cb-4655-9ea6-7a5e91360a1f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        54
+      ],
+      "NodeID": 51
+    },
+    "26": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 26,
+      "animId": "Skill_SwordDance_01"
+    }
+  },
+  "BPName": "ability_13231400",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    28,
+    18,
+    30,
+    49,
+    52,
+    41
+  ],
+  "layer": "Base",
+  "length": 2.6
+}

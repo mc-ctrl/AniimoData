@@ -1,0 +1,217 @@
+{
+  "nodeMap": {
+    "62": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "98176ecf-87b9-4af1-8fd3-8064ea63275d",
+      "target": "OWNER",
+      "NodeID": 62,
+      "animId": "Behav_SleepStart"
+    },
+    "81": {
+      "UID": "3e90d99e-9dee-4125-a399-d98aa73cf795",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 81
+    },
+    "54": {
+      "UID": "811cc275-acc3-410b-b809-9e1818c90cad",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 54
+    },
+    "64": {
+      "UID": "c42ab586-6839-4fea-9278-cb7d03033407",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          62,
+          80,
+          81,
+          86
+        ]
+      },
+      "NodeID": 64
+    },
+    "66": {
+      "UID": "3948d0f4-91ee-45a0-a260-73a7b5145a56",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 66
+    },
+    "67": {
+      "action": {
+        "actionIds": [
+          66
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.2,
+      "NodeID": 67,
+      "UID": "06e1022c-ca59-4aa4-a166-b355faa15338"
+    },
+    "86": {
+      "endNum": 3,
+      "actionIds": [
+        85
+      ],
+      "NodeID": 86,
+      "UID": "6fb17e53-14e6-4635-9471-7f9f0d4ac088",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "69": {
+      "UID": "f52e00b6-204c-4754-9514-cf6b3fc50d03",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 69
+    },
+    "70": {
+      "UID": "bff6d6fe-dd65-4f51-ab86-ddeea93aa69a",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          69
+        ]
+      },
+      "NodeID": 70
+    },
+    "71": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6f41bed6-4fcd-4bbd-b20a-75c268313a68",
+      "target": "OWNER",
+      "NodeID": 71,
+      "animId": "Behav_SleepLoop"
+    },
+    "56": {
+      "UID": "c8ea7436-e013-43b9-af7f-5be843800e62",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "NodeID": 56
+    },
+    "75": {
+      "action": {
+        "actionIds": [
+          74
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5,
+      "NodeID": 75,
+      "UID": "54fe3965-753c-46da-9cc6-1b4a2ce6bad7"
+    },
+    "73": {
+      "action": {
+        "actionIds": [
+          71
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 73,
+      "UID": "879e71ef-3a25-4f29-ae72-dbea205224d0"
+    },
+    "78": {
+      "action": {
+        "actionIds": [
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 78,
+      "UID": "8529de86-1249-4be6-b01b-f842a837f071"
+    },
+    "85": {
+      "UID": "25ec7d1f-046d-432d-aeca-4a46e7193b9a",
+      "actorId": {
+        "key": {
+          "str": "PuppetId",
+          "name": "constString",
+          "UID": "fd586a64-0714-41f8-8d33-ca8d8a2650d7",
+          "NodeID": 83,
+          "concatenateNumber": {
+            "UID": "50c9eb11-9dee-49d2-84bc-59c393722a3c",
+            "name": "getIterNumber",
+            "NodeID": 82
+          }
+        },
+        "name": "getServerCacheVal",
+        "UID": "0e96c95f-b058-4261-920a-130a0093eac1",
+        "target": "OWNER",
+        "NodeID": 84
+      },
+      "name": "destroyEntity",
+      "NodeID": 85
+    },
+    "74": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "541b4254-4c9b-434b-8d6f-07af3d5969d6",
+      "target": "OWNER",
+      "NodeID": 74,
+      "animId": "Behav_SleepEnd"
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6953f9df-f514-433c-ba20-7724ab21dc67",
+      "effectId": "Eff_Parmon_10011_Skill_Debuff_5s",
+      "speed": 0.8,
+      "NodeID": 76
+    },
+    "80": {
+      "checkGroundLayer": true,
+      "faceToTarget": "TARGET",
+      "performer": "OWNER",
+      "UID": "b09268a2-1390-4e66-8d7f-3a476f6c5d73",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "key": "TargetPos",
+        "name": "getCacheVal",
+        "UID": "949541ab-2b76-4d7d-b192-ba87e786d90f",
+        "target": "OWNER",
+        "NodeID": 79
+      },
+      "name": "teleport",
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_10120701",
+  "NodeID": 58,
+  "UID": "3f5b6b1d-126e-47df-8b5c-185f96d5bfb4",
+  "eventIds": [
+    56,
+    64,
+    78,
+    73,
+    75,
+    67,
+    70
+  ],
+  "layer": "Base",
+  "length": 7.3
+}

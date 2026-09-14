@@ -1,0 +1,80 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9117101",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        36
+      ],
+      "NodeID": 37,
+      "UID": "0c59949e-011e-4d03-ae9f-b7fd8a976b7c",
+      "cd": {
+        "calcId": 9117101,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 55,
+        "UID": "7f44d4e9-99e4-49e3-9694-e7cff08472b7",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "55": {
+      "calcId": 9117101,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 55,
+      "UID": "7f44d4e9-99e4-49e3-9694-e7cff08472b7",
+      "name": "getParamByLuaConfig"
+    },
+    "32": {
+      "UID": "5bcc859e-3e5d-4752-a4b4-708f0add8a08",
+      "target": {
+        "UID": "c3309905-90e7-4570-86e8-78d9e2dc0e15",
+        "name": "getLockedTarget",
+        "NodeID": 31
+      },
+      "name": "checkGenderDifference",
+      "NodeID": 32
+    },
+    "33": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "10820932-c736-4a8c-887f-20399af196e4",
+      "name": "doActionsByConditions",
+      "NodeID": 33
+    },
+    "34": {
+      "UID": "d8ae89ea-91d6-4d2a-bc2d-0758059482ee",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        33
+      ],
+      "NodeID": 34
+    },
+    "36": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2117103,
+      "NodeID": 36,
+      "UID": "0f7058e9-31c1-4f5b-9d2d-27a3b1b15c0b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    34
+  ]
+}

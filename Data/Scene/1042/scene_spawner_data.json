@@ -1,0 +1,132 @@
+{
+  "61743058": {
+    "spawnType": 2,
+    "owner": "汪玉笠",
+    "sandboxType": 2,
+    "position": [
+      -30.24,
+      1408.15,
+      -0.8
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 61597836,
+    "id": 61743058,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61743059,
+          61743060,
+          61743061,
+          61743064,
+          61743065,
+          61743066
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61743073": {
+    "spawnType": 2,
+    "owner": "汪玉笠",
+    "sandboxType": 2,
+    "position": [
+      -31.22,
+      1408.15,
+      -0.69
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 61597836,
+    "id": 61743073,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61743072,
+          61743071,
+          61743070,
+          61743074,
+          61743075,
+          61743067,
+          61743068,
+          61743077,
+          61743082,
+          61743069
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61598327": {
+    "spawnType": 2,
+    "owner": "汪玉笠",
+    "sandboxType": 2,
+    "position": [
+      -30.99,
+      1408.15,
+      0.35
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 61597836,
+    "id": 61598327,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61598325,
+          61742880,
+          61742895,
+          61742901,
+          61742904
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "61743003": {
+    "spawnType": 2,
+    "owner": "汪玉笠",
+    "sandboxType": 2,
+    "position": [
+      -30.99,
+      1408.15,
+      0.35
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 61597836,
+    "id": 61743003,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          61743002,
+          61743001,
+          61743000,
+          61742999,
+          61742998
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

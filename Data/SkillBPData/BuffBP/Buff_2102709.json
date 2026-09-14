@@ -1,0 +1,234 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "taken_dmg_dec_rate_v": 0.3
+  },
+  "NodeID": 1,
+  "UID": "b618e1a3-c3b0-4a87-a696-337b5fb1193e",
+  "tags": [
+    10,
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2102709",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "f0734016-6f5a-4138-9322-866b463766c1",
+      "name": "stopAnimation",
+      "anim": "Skill_DefMode_Loop",
+      "NodeID": 5
+    },
+    "7": {
+      "drag": 0.05,
+      "inputAcceleration": 8,
+      "NodeID": 7,
+      "UID": "c74535d3-04f0-4330-a67a-9e5959c1249b",
+      "name": "enableSpecialDefenseST",
+      "enable": true,
+      "maxVelocity": 45
+    },
+    "8": {
+      "drag": 0,
+      "inputAcceleration": 0,
+      "NodeID": 8,
+      "UID": "a84e8086-6d7f-42d4-ba08-c49c2e3131e1",
+      "name": "enableSpecialDefenseST",
+      "enable": false,
+      "maxVelocity": 0
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "02a96185-c86a-4994-979b-692bc0a431b1",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_ShockWave",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        9,
+        14,
+        15,
+        21
+      ],
+      "interval": 0.1,
+      "UID": "1842dbde-4535-414b-9b5d-9d56cd548768",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 11
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "dae136c4-06dd-49fa-adbc-3073c9541b68",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "eb64bbfd-2801-43c2-8bf1-0ff285a5cb1b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10027_Skill_DefMode_Hit",
+      "NodeID": 21
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0f1da8a8-977d-4007-ae85-ec748f83dcfc",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Skill_DefMode_Loop"
+    },
+    "14": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 25,
+      "NodeID": 14,
+      "UID": "d6bce02a-3666-435b-85fa-ccf3a4675427",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        25
+      ]
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "fd28ff14-a73d-423d-bad3-cc0f9981f7fe",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "Skill_DefMode_Hit"
+    },
+    "25": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30202,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 0,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "f0decc0e-61d2-4bff-8950-d9ae22cd87d9",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 25
+    },
+    "16": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "65ae78c0-efc5-4c8d-94fc-1662b87304c7",
+      "to": 910270401,
+      "NodeID": 16,
+      "from": 910270400
+    },
+    "27": {
+      "UID": "b665f760-8770-4d38-9b1f-97dc53b5aebf",
+      "name": "stopAnimation",
+      "anim": "Skill_DefMode_Start",
+      "NodeID": 27
+    },
+    "17": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "690d6cab-2eee-401e-86fd-c80ac2a6f14f",
+      "to": 910270400,
+      "NodeID": 17,
+      "from": 910270401
+    },
+    "29": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "2a2b0561-420f-445a-8100-306ce1d8bb78",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "393592bf-ba04-43c7-8759-26d9bfbd6c13",
+      "name": "disableWeightPush",
+      "NodeID": 18
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cdb65ae6-a166-4f65-96fe-92bb4f9882c2",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "30": {
+      "UID": "59d0ddce-8937-4012-b3e1-3a9d4f24488d",
+      "target": "OWNER",
+      "name": "isTargetAlive",
+      "NodeID": 30
+    },
+    "28": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "52ac1df4-7a2b-4a87-84d9-6425162ef0e7",
+      "target": "OWNER",
+      "NodeID": 28,
+      "animId": "Skill_DefMode_End"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5,
+    29,
+    8,
+    17,
+    20,
+    27
+  ],
+  "onBuffStartIds": [
+    3,
+    7,
+    11,
+    16,
+    18,
+    19
+  ]
+}

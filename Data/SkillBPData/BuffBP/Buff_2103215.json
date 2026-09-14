@@ -1,0 +1,116 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103215",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "petTarget": "OWNER",
+      "triggerId": 20002022,
+      "name": "onEntityTrigger",
+      "UID": "0013eaa3-c341-4c0f-a464-da5d6bf411a4",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "13": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "bp_cur": "param1",
+        "type": 1,
+        "id": 2103215
+      },
+      "UID": "46743c3a-cfaf-439b-9689-4d41f4e28547",
+      "target": "OWNER",
+      "NodeID": 13,
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      }
+    },
+    "15": {
+      "actionIds": [
+        13,
+        18,
+        20,
+        21
+      ],
+      "name": "registerReceiveDamageThreshold",
+      "UID": "50227e3d-c7f6-42b4-aca2-5b9764cb49c2",
+      "thresholdCount": 3,
+      "NodeID": 15
+    },
+    "7": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "78202318-1911-4a1e-933b-c4a3a82be472",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 7
+    },
+    "8": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "d19fcf8d-0510-42cc-b48c-8dd793d1055d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 8
+    },
+    "17": {
+      "buffId": 2103215,
+      "name": "removeBuff",
+      "UID": "51851334-7a9d-4a66-91dc-55c996b43552",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "duration": 0.5,
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18,
+      "UID": "f041b3c5-d9e1-4035-8e21-11b3611f56b0",
+      "name": "addTimer"
+    },
+    "21": {
+      "name": "destroyCreatedEntity",
+      "UID": "5713a797-0825-4e25-9bf4-309fa68542a9",
+      "target": "OWNER",
+      "entityType": "Creation",
+      "NodeID": 21
+    },
+    "20": {
+      "key": "cloakF",
+      "name": "setServerCacheVal",
+      "UID": "b6d7eab7-7610-4383-81b7-db1e51db642c",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 20
+    },
+    "2": {
+      "NodeID": 2,
+      "UID": "17b622ba-8465-4220-8431-1ef6a615deea",
+      "name": "enableCamouFlage",
+      "lerpTime": 0,
+      "enable": true
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2103215,
+    "type": 1,
+    "bp_reduce_rate_v": "param0"
+  },
+  "onBuffDestroyIds": [
+    5,
+    8
+  ],
+  "onBuffStartIds": [
+    2,
+    7,
+    15
+  ]
+}

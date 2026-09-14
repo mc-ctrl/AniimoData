@@ -1,0 +1,199 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 37,
+      "UID": "f8801189-1d00-47a3-bc67-2db2bfbd2b26"
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2894a356-8ce2-413b-8b28-b179e1bf16b3",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_charge_punch01",
+      "NodeID": 38
+    },
+    "39": {
+      "name": "stopSoundStr",
+      "UID": "2eb61d3c-0515-4595-a902-d0433c48f2f5",
+      "soundId": "parmon_wolferno_skill_charge_punch03",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "41": {
+      "name": "stopSoundStr",
+      "UID": "9354c40c-50a4-416a-b6e9-65b2f128c3f3",
+      "soundId": "parmon_wolferno_skill_charge_punch01_fire",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "name": "stopSoundStr",
+      "UID": "4f57b28b-763d-43f5-9eae-acbea561df8b",
+      "soundId": "parmon_wolferno_skill_charge_punch02",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "43": {
+      "name": "stopSoundStr",
+      "UID": "62f5311d-b67f-4e79-b516-434cf2363a08",
+      "soundId": "parmon_wolferno_skill_charge_punch01",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "44": {
+      "name": "stopEffectStr",
+      "UID": "3307a246-f781-4299-b62f-453d5eab2cbb",
+      "effectId": "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Warning",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "31": {
+      "UID": "db1bee17-ad17-442a-aa13-20d8d0c0be22",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 31
+    },
+    "3": {
+      "UID": "9928ce30-f4bc-49df-a2ce-c69c993713aa",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "24": {
+      "UID": "8125c0da-2689-45d1-a707-a63acef2208e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 24
+    },
+    "26": {
+      "UID": "9e17ffef-e534-4db7-9300-c95094392e96",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          24,
+          39,
+          41,
+          42,
+          43
+        ]
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "24bb2842-d552-4db3-9cc7-8ea7e5b2ad91",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "ExploreSkill_WaterBullet_End"
+    },
+    "5": {
+      "UID": "70e343e1-d035-414d-98eb-c44ac449d01b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "29": {
+      "UID": "9ea232eb-6dd3-4fb5-9a40-0d857c4dcfa8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          30
+        ]
+      },
+      "NodeID": 29
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "16c62c7a-4af2-4c67-9e03-cb36fb9bf09b",
+      "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Hold01",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "109": {
+      "offsetXYZ": [
+        0,
+        1.4,
+        0.9
+      ],
+      "templateId": 15410900001,
+      "name": "createProjectile",
+      "UID": "70e14f17-599e-434b-9337-a4e09278a5bb",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 109,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          109,
+          111,
+          31,
+          38,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.22,
+      "NodeID": 33,
+      "UID": "fc0dc014-a08a-491f-ba78-df663c26ca61"
+    },
+    "111": {
+      "offsetXYZ": [
+        0,
+        1.4,
+        0.6
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d6ba2771-adc5-404e-b00f-376d4958e474",
+      "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Release01",
+      "speed": 1,
+      "NodeID": 111
+    },
+    "35": {
+      "UID": "a15b294d-ad2f-46f7-9f9b-20be9d7fa15a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 35
+    }
+  },
+  "BPName": "ability_15410900",
+  "NodeID": 7,
+  "UID": "1e455520-a280-441c-a9d2-5de1253e3981",
+  "eventIds": [
+    37,
+    5,
+    26,
+    29,
+    33
+  ],
+  "layer": "Base",
+  "length": 0.9
+}

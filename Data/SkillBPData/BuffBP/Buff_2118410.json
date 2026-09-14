@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118410",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "UID": "b4136e24-550e-4086-8757-a8c41f7a8d3e",
+      "target": "OWNER",
+      "name": "clearDynamicAttribute",
+      "NodeID": 6
+    },
+    "4": {
+      "calcInfo": {
+        "tp_max_v": 99999
+      },
+      "name": "addDynamicAttribute",
+      "UID": "372a85bf-3025-4db5-9077-3b03ed3cb21a",
+      "target": "OWNER",
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    6
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

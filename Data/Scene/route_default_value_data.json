@@ -1,0 +1,84 @@
+{
+  "owner": "",
+  "bindTimePeriod": 0,
+  "extraLongRoute": false,
+  "firstWayPointSelectType": 0,
+  "ignoreAILod": false,
+  "sandboxId": 0,
+  "quaternion": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "routeType": 0,
+  "simpleMoveRouteSnapToGround": true,
+  "useAccurateArrive": false,
+  "wayPoints": {
+    "animHashKey1": "",
+    "animHashKey2": "",
+    "animHashKey3": "",
+    "actions": {
+      "actionType": 6,
+      "templateKey": "Idle",
+      "LuaForCsClass": "LevelDesigner.Editor.Route.Action.WpTemplateReference"
+    },
+    "behaviorPatrolMoveType": 0,
+    "behaviorSpeedRateType": 0,
+    "behaviorTreeTemplate": {
+      "behaviors": {
+        "templateKey": "",
+        "probability": 1,
+        "_loopStateName": "",
+        "behaviorTreeTemplateParameters": {}
+      },
+      "BehaviourTreeCompositeType": 0
+    },
+    "climbDataId": 0,
+    "enterNotifyInfoList": {
+      "isLoop": false,
+      "matchMultiple": false,
+      "timeout": 0,
+      "emojiName": "",
+      "callbackFunctionName": ""
+    },
+    "facingDir": 0,
+    "ignoreRotation": false,
+    "inexecutionAction": false,
+    "isStatic": false,
+    "leaveNotifyInfoList": {
+      "dialogueId": 0,
+      "isLoop": false,
+      "matchMultiple": false,
+      "timeout": 0,
+      "callbackFunctionName": "",
+      "emojiName": ""
+    },
+    "movingBehaviorTreeTemplate": {
+      "behaviors": {
+        "templateKey": "",
+        "probability": 1,
+        "behaviorTreeTemplateParameters": {}
+      },
+      "BehaviourTreeCompositeType": 0
+    },
+    "movingMinMaxTime": [
+      0,
+      2
+    ],
+    "useOnlinePathFinding": false,
+    "yaw": 0,
+    "speed": 0,
+    "animationTimeout": -1
+  },
+  "name": "",
+  "id": 0,
+  "editorName": "",
+  "pos": [
+    0,
+    0,
+    0
+  ],
+  "priority": 100,
+  "isBindTimePeriod": false
+}

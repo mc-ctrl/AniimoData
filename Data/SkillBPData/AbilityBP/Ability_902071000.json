@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_902071000",
+  "NodeID": 1,
+  "UID": "4490a65a-f1f3-4f83-b7e9-e0e3a8fd1e03",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 902071000001,
+      "name": "setCombatActionTimeline",
+      "UID": "d0734830-ff4a-42f9-ae65-0a58b9dae76a",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BothPunch"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Mon_Skill_Warning_Boss",
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_90207_Skill_MagicZone_Rock"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 10800164
+}

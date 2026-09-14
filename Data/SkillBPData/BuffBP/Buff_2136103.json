@@ -1,0 +1,342 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2136103",
+  "calcInfoByLuaConfig": {
+    "id": 2136103,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": [
+    "SpeedBurst"
+  ],
+  "nodeMap": {
+    "37": {
+      "afterModelRefreshedActionIds": [
+        51,
+        35
+      ],
+      "relearnSkill": false,
+      "name": "shapeShift",
+      "second": 9999,
+      "target": "OWNER",
+      "petPrototypeId": 1036300,
+      "useConfigData": false,
+      "NodeID": 37,
+      "reverseShift": false,
+      "UID": "6e559e95-6228-4e64-b298-cf8c9137f5ad"
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fbeb822b-c389-4b88-b751-6f5ae581ad1f",
+      "effectId": "Eff_Parmon_10363_Skill_Transfrom",
+      "speed": 1,
+      "NodeID": 38
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "f460dd18-00a8-4d95-b7a3-d02a2cc3122a",
+      "effectId": "Eff_Parmon_10363_Character",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "40": {
+      "isNot": false,
+      "stateName": "SpeedBurst",
+      "isParentState": false,
+      "NodeID": 40,
+      "UID": "9907e823-c5c5-44b8-9e75-7de63e0489a0",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "41": {
+      "UID": "b0b3160c-bb57-4d0e-b683-0ba4239ce72b",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 41
+    },
+    "42": {
+      "buffId": 2136301,
+      "name": "removeBuff",
+      "UID": "7c5d9991-28a8-4434-8248-56949fc64c27",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "35": {
+      "offsetTime": 0.1777,
+      "name": "playAnimation",
+      "UID": "1dce8ec4-23c2-4dd5-acd9-4e9d05717a6c",
+      "target": "OWNER",
+      "NodeID": 35,
+      "animId": "Skill_Ex"
+    },
+    "44": {
+      "buffId": 2136101,
+      "name": "hasBuff",
+      "UID": "92ad214f-d5c9-4cc0-9fe3-67ade409b31f",
+      "target": "OWNER",
+      "NodeID": 44
+    },
+    "54": {
+      "cdTime": 10,
+      "name": "forceSetSkillCD",
+      "NodeID": 54,
+      "UID": "02d672fb-fa0c-407d-b899-36469ecc596a",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 13639900
+    },
+    "52": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d947ebbb-b325-480c-92e4-0f3a23fc333b",
+      "effectId": "Eff_Parmon_10363_Character",
+      "speed": 1,
+      "NodeID": 52
+    },
+    "16": {
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "939cbbbc-1040-4395-92e3-2288ae463685",
+      "name": "doActionsByConditions",
+      "NodeID": 16,
+      "elseActionIds": [
+        15
+      ]
+    },
+    "34": {
+      "name": "isInCombat",
+      "UID": "5cc88730-abaf-41ec-bd66-2dcfbf4dd011",
+      "target": "OWNER",
+      "NodeID": 34,
+      "not": false
+    },
+    "31": {
+      "name": "isInCombat",
+      "UID": "2b24d0a9-4dfe-4ca0-a57c-876527277441",
+      "target": "OWNER",
+      "NodeID": 31,
+      "not": false
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0ff28ee8-20ee-4bee-b869-52b83c4b30cf",
+      "effectId": "Eff_Parmon_10363_Skill_Transfrom",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "27": {
+      "name": "isInCombat",
+      "UID": "96eb6549-0795-413a-b7b4-57599dadc472",
+      "target": "OWNER",
+      "NodeID": 27,
+      "not": false
+    },
+    "32": {
+      "UID": "5cea94f0-73cd-4106-8f5e-761c46ba10ef",
+      "target": "OWNER",
+      "name": "cancelShapeShift",
+      "NodeID": 32
+    },
+    "11": {
+      "cameraShakeId": 30402,
+      "name": "playCameraImpulseById",
+      "UID": "1bafc6fb-9d96-470f-9000-725dd44268b6",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        19
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "0279c2bd-a02b-4f75-8758-eca26c266de8",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "3d2dfb96-8294-4c41-a9b4-6e6eeb022e25",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 21
+    },
+    "30": {
+      "UID": "14140ad2-7dec-41fa-8792-f6252bd2e5a1",
+      "name": "isInAbility",
+      "abilityType": 8,
+      "NodeID": 30
+    },
+    "23": {
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "62309e59-a069-48dd-9a64-245b417f260c",
+      "name": "doActionsByConditions",
+      "NodeID": 23,
+      "elseActionIds": [
+        15
+      ]
+    },
+    "45": {
+      "actionIds": [
+        53,
+        46
+      ],
+      "conditionActionIds": [
+        44
+      ],
+      "UID": "1ee6a253-6393-41cc-bc99-f00eb2e7f2aa",
+      "name": "doActionsByConditions",
+      "NodeID": 45
+    },
+    "28": {
+      "UID": "07e4887e-b002-41a5-a11e-978a57f6c704",
+      "name": "isInAbility",
+      "abilityType": 1,
+      "NodeID": 28
+    },
+    "46": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e804509b-5049-45ca-b7d2-08d0c9f0ff6b",
+      "effectId": "Eff_Parmon_10361_Character",
+      "speed": 1,
+      "NodeID": 46
+    },
+    "15": {
+      "buffId": 2136103,
+      "name": "removeBuff",
+      "UID": "b4b5e34e-c48b-49ee-8d0d-dc0eeb906e89",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "2aaa6d9e-b0ab-483a-a271-d1cb0398b78c",
+      "name": "isInAbility",
+      "abilityType": 2,
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "a5caa64f-27c0-4149-816b-bf67352bbcb9",
+      "conditionIds": [
+        25,
+        28,
+        29,
+        30,
+        40
+      ],
+      "name": "conditionOr",
+      "NodeID": 26
+    },
+    "48": {
+      "calcId": 2136103,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 48,
+      "UID": "1613981c-b767-4eb4-a27d-64163e577f6d",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "UID": "c6bfc2ec-7422-4ac1-999e-af79968135a8",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17
+    },
+    "29": {
+      "UID": "47deed95-07e5-442f-a099-96be39e25aea",
+      "name": "isInAbility",
+      "abilityType": 4,
+      "NodeID": 29
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "9932137b-4bde-40e3-bdc6-435a33d20917",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 18
+    },
+    "50": {
+      "buffId": 2136101,
+      "name": "hasBuff",
+      "UID": "f511b9b3-8c6f-450b-8664-9ac24abc32bd",
+      "target": "OWNER",
+      "NodeID": 50
+    },
+    "19": {
+      "key": "1",
+      "duration": {
+        "calcId": 2136103,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 48,
+        "UID": "1613981c-b767-4eb4-a27d-64163e577f6d",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        18
+      ],
+      "NodeID": 19,
+      "UID": "00ccc764-9b67-4d08-95c3-3a413d8eb7db",
+      "name": "addTimer"
+    },
+    "51": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "9d0382a2-00d8-4803-b32a-7ea442d80a78",
+      "name": "doActionsByConditions",
+      "NodeID": 51
+    },
+    "43": {
+      "switchTag": "default",
+      "name": "setModelSwitchTag",
+      "UID": "cb7d5a76-547d-4517-b82a-eda7ae957168",
+      "NodeID": 43,
+      "groupKey": 0
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9,
+    11,
+    32,
+    41,
+    42,
+    45
+  ],
+  "onBuffStartIds": [
+    38,
+    37,
+    43,
+    21,
+    54
+  ]
+}

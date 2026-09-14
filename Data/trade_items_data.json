@@ -1,0 +1,44 @@
+{
+  "3": {
+    "isNotice": 1,
+    "needCanTrade": 0,
+    "rank": 1,
+    "turnoverThreshold": 100,
+    "isMultiple": 1,
+    "maxRecPriceFactor": 2.5,
+    "minRecPriceFactor": 0.4,
+    "startTime": 46199,
+    "sellingTime": 24,
+    "displayType": 1,
+    "displaySubType": 2,
+    "initRecPrice": 200
+  },
+  "1021300": {
+    "isFreePrice": 1,
+    "isFrozen": 1,
+    "isNotice": 1,
+    "needCanTrade": 0,
+    "rank": 1,
+    "turnoverThreshold": 1,
+    "startTime": 46199,
+    "sellingTime": 144,
+    "displayType": 2,
+    "displaySubType": 1,
+    "initRecPrice": 20000000
+  },
+  "560323": {
+    "isFrozen": 1,
+    "isNotice": 1,
+    "needCanTrade": 0,
+    "rank": 2,
+    "turnoverThreshold": 10,
+    "isMultiple": 1,
+    "maxRecPriceFactor": 2.5,
+    "minRecPriceFactor": 0.4,
+    "startTime": 46199,
+    "sellingTime": 144,
+    "displayType": 1,
+    "displaySubType": 2,
+    "initRecPrice": 100000
+  }
+}

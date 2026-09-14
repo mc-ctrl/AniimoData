@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010002",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 3,
+      "disableWhenFinished": false,
+      "NodeID": 3,
+      "UID": "2dcfb5ca-1015-4817-8584-c4728943c3a6",
+      "target": "OWNER",
+      "presetName": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_SelfDestruct_Fresnel",
+      "name": "playPreset"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

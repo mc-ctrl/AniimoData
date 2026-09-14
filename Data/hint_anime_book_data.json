@@ -1,0 +1,127 @@
+{
+  "1003": {
+    "hintAnimeID": 1003,
+    "mainBodyFuncID": 1040,
+    "mainBodyID": [
+      91071544
+    ],
+    "mainBodyType": "static",
+    "checkBlock": 1
+  },
+  "1004": {
+    "hintAnimeID": 1001,
+    "mainBodyFuncID": 1011,
+    "mainBodyID": [
+      62106221
+    ],
+    "mainBodyType": "static",
+    "checkBlock": 1
+  },
+  "1002": {
+    "hintAnimeID": 1002,
+    "mainBodyFuncID": 1001,
+    "mainBodyID": [
+      77693591
+    ],
+    "mainBodyType": "static",
+    "checkBlock": 1
+  },
+  "1006": {
+    "checkBlock": 1,
+    "hintAnimeID": 1001,
+    "mainBodyID": [
+      90859146
+    ],
+    "mainBodyType": "static"
+  },
+  "2002": {
+    "checkBlock": 1,
+    "hintAnimeID": 2002,
+    "mainBodyID": [
+      5140023
+    ],
+    "mainBodyType": "npc"
+  },
+  "1007": {
+    "checkBlock": 1,
+    "hintAnimeID": 1001,
+    "mainBodyID": [
+      72875569
+    ],
+    "mainBodyType": "static"
+  },
+  "2001": {
+    "checkBlock": 1,
+    "hintAnimeID": 2001,
+    "mainBodyID": [
+      5140022
+    ],
+    "mainBodyType": "npc"
+  },
+  "1008": {
+    "checkBlock": 1,
+    "hintAnimeID": 1001,
+    "mainBodyID": [
+      72777612
+    ],
+    "mainBodyType": "static"
+  },
+  "1013": {
+    "checkBlock": 1,
+    "hintAnimeID": 1002,
+    "mainBodyID": [
+      88238188
+    ],
+    "mainBodyType": "static"
+  },
+  "1009": {
+    "checkBlock": 1,
+    "hintAnimeID": 1001,
+    "mainBodyID": [
+      72777829
+    ],
+    "mainBodyType": "static"
+  },
+  "1012": {
+    "checkBlock": 1,
+    "hintAnimeID": 1002,
+    "mainBodyID": [
+      501049
+    ],
+    "mainBodyType": "npc"
+  },
+  "1010": {
+    "checkBlock": 1,
+    "hintAnimeID": 1001,
+    "mainBodyID": [
+      72877834
+    ],
+    "mainBodyType": "static"
+  },
+  "1001": {
+    "hintAnimeID": 1001,
+    "mainBodyFuncID": 1001,
+    "mainBodyID": [
+      77693596
+    ],
+    "mainBodyType": "static",
+    "checkBlock": 1
+  },
+  "1011": {
+    "checkBlock": 1,
+    "hintAnimeID": 1001,
+    "mainBodyID": [
+      72877831
+    ],
+    "mainBodyType": "static"
+  },
+  "1005": {
+    "hintAnimeID": 1005,
+    "mainBodyFuncID": 1050,
+    "mainBodyID": [
+      91335093
+    ],
+    "mainBodyType": "static",
+    "checkBlock": 1
+  }
+}

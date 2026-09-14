@@ -1,0 +1,113 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.7,
+        "instant_dmg_rate_v": 0.7
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10101,
+        "weaponSoundType": "blunt",
+        "impulseId": 3000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Slash_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 4,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "386ffcef-fb0e-4678-81d3-cba3fb844858",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "eb66f58c-288c-4a1f-8ce5-bab31d68612b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10133_skill_tailsmash_electric_explosion",
+      "NodeID": 17
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.213,
+      "NodeID": 14,
+      "UID": "f932025f-7849-4420-a136-80b5ead3dee9"
+    },
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "f776e0c4-3fdc-47dc-9468-cda0eac1cecd",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.2,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        3
+      ]
+    },
+    "7": {
+      "action": {
+        "actionIds": [
+          5,
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.613,
+      "NodeID": 7,
+      "UID": "753be41b-6e41-4a47-8730-ef71154c9e1b"
+    },
+    "12": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 12,
+      "UID": "33d537dd-6370-47c7-a477-1580112fa1c7",
+      "effectId": "Eff_Parmon_10133_Skill_TailSmash_Electric_Explosion",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    }
+  },
+  "BPName": "timeline_2113302",
+  "NodeID": 1,
+  "UID": "4510fe2e-4d3f-4898-bfe2-5487dc86f97c",
+  "eventIds": [
+    14,
+    7
+  ],
+  "layer": "Base",
+  "length": 3
+}

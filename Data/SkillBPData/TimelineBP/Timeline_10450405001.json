@@ -1,0 +1,82 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 14
+    },
+    "21": {
+      "UID": "2a4ba90f-6a8c-4902-a281-3c8f9bc10859",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2100450003,
+      "name": "createSummonedEntity",
+      "UID": "b60fbdde-107d-40c0-a387-9c91d1f89485",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "campWithHost": true,
+      "deadWithHost": true,
+      "lifeTime": -1,
+      "rot": "OWNER",
+      "NodeID": 19
+    },
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "16": {
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_10450405",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    16,
+    21
+  ],
+  "layer": "Base",
+  "length": 1
+}

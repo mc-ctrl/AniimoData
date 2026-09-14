@@ -1,0 +1,126 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135205",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "388a30e8-20b2-47f7-8fe9-93ea78edd8b1",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "370f9b6c-f73d-4827-b8c4-fb9533a8bf34",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "6afb53ea-c050-4298-8271-175654ef3ca9",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 24
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "7ed6e12b-8844-4338-abe1-5c04c576c95b",
+      "effectId": "Eff_Parmon_10203_Skill_MaliciousZone_Debuff",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "25": {
+      "actionIds": [
+        24
+      ],
+      "name": "registerPostReceiveDamageEvent",
+      "UID": "0c38e0cc-1daf-448b-8b41-71d85f31b737",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e6cffffd-ebb3-42eb-bf28-8ddc38997449",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Debuff",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "17": {
+      "name": "checkPetPrototypeId",
+      "UID": "f5f12caf-accd-4b2a-96c0-6f6fbd6e4118",
+      "target": "SRC",
+      "petPrototypeId": 1020302,
+      "NodeID": 17
+    },
+    "29": {
+      "calcInfo": {
+        "taken_normal_attack_dmg_dec_rate_v": {
+          "rValue": -1,
+          "name": "multiply",
+          "UID": "3682f3b3-6237-49d6-95e4-3122cdb318b4",
+          "NodeID": 27,
+          "lValue": {
+            "calcId": 2135205,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 26,
+            "UID": "d91a34e2-20da-480e-809b-d9c5c0de08cb",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "f234508a-c3f3-4b52-809f-5cb0ffa5ea6a",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "7f51d630-8612-44fb-9c55-512d08575ef0",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        29
+      ],
+      "NodeID": 30
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "749383ae-192a-4e7e-a32f-d6a3a3309759",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Debuff",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "26": {
+      "calcId": 2135205,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 26,
+      "UID": "d91a34e2-20da-480e-809b-d9c5c0de08cb",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    19
+  ],
+  "onBuffStartIds": [
+    4,
+    30,
+    25
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_902131401",
+  "NodeID": 1,
+  "UID": "bad30555-a3ba-45d9-91cc-eb4b51169968",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902131401001,
+      "name": "setCombatActionTimeline",
+      "UID": "74216465-4879-4466-9b17-2c2d66a3bfee",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Zzdm"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Attack_Crystal_Release_01",
+    "Eff_Monster_90213_Mon_Attack_Crystal_Trail_01",
+    "Eff_Monster_90213_Mon_Attack_Crystal_Release_02",
+    "Eff_Monster_90213_Mon_Attack_Crystal_Abosrd",
+    "Eff_Monster_90213_Mon_Attack_Crystal_Release_03",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 5,
+  "searchTargetRangeRadius": 100,
+  "searchTargetRangeUp": 10,
+  "shortDesc": "",
+  "abilityParamId": 49219010,
+  "name": ""
+}

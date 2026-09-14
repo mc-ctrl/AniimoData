@@ -1,0 +1,173 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "ee047212-35fd-4218-bd44-eee25b9306ce",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "0181efa7-ad3c-40ac-aa16-89a587db0574",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "22b49013-2a3e-4378-bea4-ab3205cb8b8b",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "63": {
+      "duration": 6,
+      "name": "burrow",
+      "UID": "7d6fcb0a-b67b-4618-8354-af99a93e15e7",
+      "burrowInAnim": "BurrowInSand",
+      "enableTurnInstant": false,
+      "enterBuffIds": [
+        2116101
+      ],
+      "exitCastAbilityId": 12840710,
+      "velocity": 5,
+      "switchToAbilityId": 12840710,
+      "NodeID": 63
+    },
+    "79": {
+      "action": {
+        "actionIds": [
+          78
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 79,
+      "UID": "3c4f8bd8-b463-467f-8538-347e53c14554"
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          24,
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 22,
+      "UID": "b00ccb87-a28b-490b-a32e-54efc6724c03"
+    },
+    "77": {
+      "action": {
+        "actionIds": [
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 77,
+      "UID": "94f314f0-ceaf-4bc7-b196-44033a74416a"
+    },
+    "65": {
+      "UID": "2415b94c-429d-4f2b-aae7-a3e7c9cb44f3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          63
+        ]
+      },
+      "NodeID": 65
+    },
+    "76": {
+      "pos": "OWNER",
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b032a5b2-811f-45d4-b038-02179fdb5509",
+      "effectId": "Eff_Parmon_10201_Bejav_JumpInGround_RunStop",
+      "speed": 1,
+      "NodeID": 76
+    },
+    "31": {
+      "timelineId": 12840700002,
+      "name": "jumpToNextTimeline",
+      "UID": "85cff81c-e7a0-4f45-9bb8-cbd03b58b50f",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "5": {
+      "UID": "39d44af6-fe4e-4b57-87ba-a837577b6374",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "78": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8c21f79a-6c94-4965-b1ac-1b5fb8e0b2ee",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_BurrowSkill_Enter",
+      "NodeID": 78
+    },
+    "11": {
+      "UID": "8ee9d989-ccc9-4c64-8b09-b3970d7e77ca",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "cancellable": 0
+      },
+      "NodeID": 11
+    },
+    "19": {
+      "name": "isActorType",
+      "UID": "57a09c9f-89c7-46fd-9384-07ac18956bbd",
+      "target": "OWNER",
+      "NodeID": 19,
+      "actorType": 3
+    },
+    "20": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "08df7811-907b-4567-82fe-3365c0c0aea0",
+      "name": "doActionsByConditions",
+      "NodeID": 20
+    },
+    "23": {
+      "UID": "f76ef8eb-09df-4aaa-81f2-6944997f3ed4",
+      "name": "isInControlState",
+      "controlState": 2,
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_12840700",
+  "NodeID": 7,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    5,
+    13,
+    65,
+    77,
+    79,
+    22
+  ],
+  "layer": "Base",
+  "length": 1.667
+}

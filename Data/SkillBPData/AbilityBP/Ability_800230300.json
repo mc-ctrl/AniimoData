@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_800230300",
+  "NodeID": 1,
+  "UID": "bf950733-0c13-4a37-ad38-52c6af1cf15a",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 800230300001,
+      "name": "setCombatActionTimeline",
+      "UID": "06ffd96c-506c-4fec-b55d-fe55bbc93b3a",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Monster_Tail"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Monster_80023_Mon_Skill_Tail"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "abilityParamId": 10700060
+}

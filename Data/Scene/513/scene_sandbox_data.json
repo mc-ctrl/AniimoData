@@ -1,0 +1,46 @@
+{
+  "69524816": {
+    "areaType": 999,
+    "chunk": 1017826,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_系统"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_城市_区域范围",
+    "spawners": [
+      70547163,
+      70547168,
+      71149900,
+      76243956
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 69524816,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "position": [
+      -88.2,
+      0.5,
+      -13.3
+    ],
+    "areaIds": [
+      69525352,
+      70392235,
+      70392362,
+      70392466,
+      70392548,
+      70392765
+    ],
+    "difficultyLevel": 0,
+    "autoEndType": 0,
+    "owner": "徐云涛"
+  }
+}

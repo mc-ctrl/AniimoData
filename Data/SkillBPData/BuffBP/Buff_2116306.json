@@ -1,0 +1,55 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2116306",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "setShaderFrozen",
+      "NodeID": 3,
+      "UID": "e9267757-f8e8-47c2-9dae-6edae89267d3",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": true
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "803e6d96-69ce-444f-ada1-a872ef2fcdab",
+      "effectId": "Eff_Buff_Defense_Arrow_Down",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "09dc8d23-a250-4b7c-9e09-154e20b9188a",
+      "effectId": "Eff_Buff_Defense_Arrow_Down",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "5": {
+      "name": "setShaderFrozen",
+      "NodeID": 5,
+      "UID": "dfb93edc-3982-495c-a36a-6a6b6c8e1db7",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": false
+    }
+  },
+  "calcInfo": {
+    "dmg_ice_dec_ratio": -0.05
+  },
+  "onBuffDestroyIds": [
+    8,
+    5
+  ],
+  "onBuffStartIds": [
+    7,
+    3
+  ]
+}

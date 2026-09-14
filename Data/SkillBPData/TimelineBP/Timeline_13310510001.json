@@ -1,0 +1,129 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "317183b0-252f-4ce5-ab75-1cdd52b98156",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 5
+    },
+    "13": {
+      "UID": "d84bc1bd-176e-4685-943c-8dbc0b72f5f2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 13
+    },
+    "15": {
+      "UID": "7a7513b6-c6f7-4807-86b7-2064e3616ecd",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "42788db3-9118-4d79-b424-2f4ac592ab2f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5,
+          28
+        ]
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "d5aabc4b-58a2-480a-8408-93ab2012c938",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 16
+    },
+    "28": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "2b837e3d-6e83-4a8f-a290-f885af230c2b",
+      "target": "OWNER",
+      "val": {
+        "UID": "ee8c5ba1-93d6-4b3f-9735-e9b1dcb8e19e",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 27
+      },
+      "NodeID": 28
+    },
+    "25": {
+      "UID": "e4fbb241-e5e6-4a93-8a9c-617c43d5ab5f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "NodeID": 25
+    },
+    "18": {
+      "actionIds": [
+        16,
+        20
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "f7caa796-2def-4771-b425-2cec1a06181e",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    },
+    "23": {
+      "eventName": "Fire",
+      "name": "notifyCustomEvent",
+      "UID": "e72b3684-9e98-4b8d-91cc-f426b136e215",
+      "target": "CASTER",
+      "NodeID": 23
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 19,
+      "UID": "df39cc1a-cbb7-41f0-92cd-4778eed263d9"
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4f25cb7a-8546-455b-a756-032a23507982",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "21": {
+      "name": "isActorType",
+      "UID": "2e68bae3-e582-458d-a749-c4897c8cc7f8",
+      "target": "OWNER",
+      "NodeID": 21,
+      "actorType": 3
+    }
+  },
+  "BPName": "ability_13310510",
+  "NodeID": 9,
+  "UID": "13ae237c-cea1-49af-9637-40a6dac2894e",
+  "eventIds": [
+    19,
+    7,
+    15,
+    25
+  ],
+  "layer": "Base",
+  "length": 1
+}

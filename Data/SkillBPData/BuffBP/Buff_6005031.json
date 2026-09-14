@@ -1,0 +1,62 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6005031",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": {},
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "81315dc1-46f5-44dc-8a74-1f72afd8a3b5",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "4": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 4,
+      "UID": "ec4fa7d2-43c9-42fc-a67b-191f3fe89710",
+      "target": "OWNER",
+      "presetName": "Eff_Env_GrabEgg_Elite_Red_Fresnel",
+      "name": "playPreset"
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "e5944f7b-01c9-461d-a394-f17542a5604f",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "9f04c492-87da-4956-9fd5-fd789b043e3c",
+      "name": "stopPreset",
+      "presetName": "Eff_Env_GrabEgg_Elite_Red_Fresnel",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "53183580-f6b3-4c80-aa1d-fac5d8a6672d",
+      "value": 2,
+      "name": "setRobEggDangerAddV",
+      "NodeID": 10
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 6005031,
+    "type": 1,
+    "pvp_taken_dmg_inc_rate_v": "param1",
+    "rob_egg_atk": "param0"
+  },
+  "onBuffDestroyIds": [
+    6,
+    9
+  ],
+  "onBuffStartIds": [
+    4,
+    8,
+    10
+  ]
+}

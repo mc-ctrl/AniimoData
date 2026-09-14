@@ -1,0 +1,163 @@
+{
+  "nodeMap": {
+    "62": {
+      "UID": "28b13ed3-4a85-4671-80dd-1c7b8c73e132",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          60,
+          63,
+          64,
+          69,
+          65,
+          66
+        ]
+      },
+      "NodeID": 62
+    },
+    "63": {
+      "buffId": 2116101,
+      "name": "removeBuff",
+      "UID": "23c0151f-4c99-4301-b2c2-56a406e38857",
+      "target": "OWNER",
+      "NodeID": 63
+    },
+    "46": {
+      "UID": "ce1043d1-caf2-48b9-b4f8-80aaeb9325f5",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 46
+    },
+    "64": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "1f0fd0f4-74e6-4638-9958-6e3c404ec7c3",
+      "target": "OWNER",
+      "NodeID": 64,
+      "animId": "Skill_BurrowSkill_CombatExit"
+    },
+    "57": {
+      "UID": "12b3e063-93d9-4671-b574-4f38e1b77775",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 57
+    },
+    "65": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "afe36251-1552-4bd1-bc00-40d5b0d5fcdd",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_BurrowSkill_CombatExit",
+      "NodeID": 65
+    },
+    "48": {
+      "UID": "5e27baf8-82df-4d20-8a9b-64ccb5e0f161",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "NodeID": 48
+    },
+    "66": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0f38995a-70ae-47c2-b945-66d94fb77f8a",
+      "effectId": "Eff_Parmon_10161_Skill_BurrowSkill_CombatExit",
+      "speed": 1,
+      "NodeID": 66
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          57
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 59,
+      "UID": "27842b80-c269-4aca-9671-4477e9f8fee9"
+    },
+    "60": {
+      "UID": "07068b43-b25a-48c2-8a2f-db1a14a1b14d",
+      "name": "stopBurrow",
+      "NodeID": 60
+    },
+    "71": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_helgon_attack05",
+        "hitCameraShakeId": 10003,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 3002
+      },
+      "UID": "8ab842ce-8806-4972-a68b-e95547788d51",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 71
+    },
+    "69": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 71,
+      "NodeID": 69,
+      "UID": "3858bdc7-a235-4e91-b9c3-03abfc165a1e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        71
+      ]
+    }
+  },
+  "BPName": "ability_12850905",
+  "NodeID": 50,
+  "UID": "dc7f425e-7ae9-46e0-84af-fb7290708514",
+  "eventIds": [
+    48,
+    59,
+    62
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

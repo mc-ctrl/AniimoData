@@ -1,0 +1,260 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "6": {
+      "tag": "TE_Cre_DuckBait",
+      "name": "addEntityTag",
+      "UID": "18d2abab-4dfd-4083-9e85-5373792a5176",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "70156e17-4d94-4432-91e6-106935406305",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "8": {
+      "key": "DuckDisappear",
+      "duration": 20,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "fcf139b1-25a0-4368-ac2b-e384c4d3f557",
+      "name": "addTimer"
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5ba029d9-22e4-43ab-a214-ad6827073cc7",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Duck_Music",
+      "NodeID": 31
+    },
+    "9": {
+      "triggerName": "Dance",
+      "name": "setEffectAnimTrigger",
+      "UID": "1ec5a145-4a50-430d-87db-c945afd64119",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "11": {
+      "offsetXYZ": [
+        0.1,
+        0.3,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "2094137d-0b6e-4c73-8b8e-a01a96d39ed1",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock01",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "eventName": "Msg_DuckBait",
+      "name": "sendAIMsg",
+      "UID": "1512399b-90ce-410b-89b4-92c1b134c9e9",
+      "target": "TARGET",
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "name": "actOnTargets",
+      "UID": "5baaf29a-5dd8-442b-933e-52e99e0a920c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            5,
+            5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 21
+    },
+    "4": {
+      "UID": "5774ab36-3afb-440c-908d-0a69a7a84287",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6,
+          2,
+          8,
+          9,
+          10,
+          13,
+          31,
+          16,
+          33
+        ]
+      },
+      "NodeID": 4
+    },
+    "10": {
+      "name": "playEffectOnPosRot",
+      "UID": "9dd776ff-1634-4e32-b479-1f9717c5fe40",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_MockAppear",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 10,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "510987c3-360b-4532-a33c-24d38dddb923",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Duck_Throw",
+      "NodeID": 33
+    },
+    "16": {
+      "key": "duck",
+      "name": "setServerCacheVal",
+      "UID": "cb8c2ae1-e239-4d8b-b291-0674ade05cea",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 16
+    },
+    "27": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "9b2baeda-c590-406a-b03a-e1df0a73d63b",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Dancing",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "7b7bdf2a-706b-4b48-b6d5-2c5235e08e3c",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 26
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "name": "playEffectOnPosRot",
+      "UID": "2d96bc45-5700-424a-9ed2-be63e0422abe",
+      "effectId": "Eff_Duck_Die",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "NodeID": 17,
+      "speed": 1,
+      "rotTo": "OWNER",
+      "rot": "OWNER"
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 29,
+      "UID": "dfd0fbb4-b354-48fd-8999-1870f6a29efe"
+    },
+    "2": {
+      "scale": 0.6,
+      "name": "playEffectOnPosRot",
+      "UID": "9e562a4f-800b-4d68-b1a8-aa25615a65b7",
+      "effectId": "Eff_Avatar_Female_Skill_Duck_Mock",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "NodeID": 2
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "fbcfcc22-caf3-4d53-b41f-5de90c486902",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Girl_Skill_Duck_End",
+      "NodeID": 32
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17,
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9.9,
+      "NodeID": 19,
+      "UID": "0402f174-1df3-494e-96ab-a78c8040cee5"
+    },
+    "13": {
+      "key": "duck",
+      "duration": 1,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 13,
+      "UID": "6b44012b-3d1f-489f-9120-9c144f65d9d4",
+      "name": "addEntityTimer"
+    },
+    "23": {
+      "eventType": "NotifyState",
+      "endTime": 999,
+      "NodeID": 23,
+      "onExit": {
+        "actionIds": [
+          21
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          21
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1,
+      "onEnter": {
+        "actionIds": [
+          21
+        ]
+      },
+      "UID": "c837314b-6cc1-493e-a616-f7a2bc0e9463"
+    }
+  },
+  "BPName": "timeline_920002301",
+  "NodeID": 1,
+  "UID": "4f1d01a1-2a47-40ac-8135-397299048e9d",
+  "eventIds": [
+    4,
+    29,
+    19,
+    23
+  ],
+  "layer": "Base",
+  "length": 999
+}

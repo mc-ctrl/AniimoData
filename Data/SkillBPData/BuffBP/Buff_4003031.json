@@ -1,0 +1,236 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003031",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    25,
+    13,
+    17,
+    15,
+    21,
+    24,
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "25": {
+      "key": "TimeSuolian01",
+      "name": "setServerCacheVal",
+      "UID": "38b66f2a-5675-4a4c-a83a-4d4e69082153",
+      "target": "SRC",
+      "val": 0,
+      "NodeID": 25
+    },
+    "4": {
+      "actionIds": [
+        11,
+        2
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "171fc3d7-7760-46f8-b2e3-72377982acfc",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "24": {
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "6dac31b8-618b-4253-a154-0314cfe553ba",
+        "forceCurPet": true,
+        "target": {
+          "key": "TimeSuolian01",
+          "name": "getServerCacheVal",
+          "UID": "aa4b2933-f718-4a1d-871b-300da4265e5d",
+          "target": "OWNER",
+          "NodeID": 22
+        },
+        "NodeID": 23
+      },
+      "duration": 5.5,
+      "buffId": 4003032,
+      "NodeID": 24,
+      "UID": "220654ef-d439-459f-9a3e-b3d5346ed0b3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "calcId": 4003031,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 6,
+      "UID": "d40132f6-1f01-4697-bbfa-b657e407e476",
+      "name": "getParamByLuaConfig"
+    },
+    "23": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "6dac31b8-618b-4253-a154-0314cfe553ba",
+      "forceCurPet": true,
+      "target": {
+        "key": "TimeSuolian01",
+        "name": "getServerCacheVal",
+        "UID": "aa4b2933-f718-4a1d-871b-300da4265e5d",
+        "target": "OWNER",
+        "NodeID": 22
+      },
+      "NodeID": 23
+    },
+    "15": {
+      "scale": 2,
+      "NodeID": 15,
+      "UID": "57a1bf09-91bc-49ef-b97f-91b321492a24",
+      "effectId": "Eff_Parmon_QXXZ_Boom_Appear",
+      "target": {
+        "key": "TimeSuolian01",
+        "name": "getServerCacheVal",
+        "UID": "c59641c0-3b3d-4e81-b3cb-4fd9aa33b2e8",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "speed": 1,
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true,
+      "offsetXYZ": [
+        0,
+        3,
+        0
+      ],
+      "duration": 5
+    },
+    "7": {
+      "delay": {
+        "calcId": 4003031,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "7cf14d62-4492-45fa-aeed-5a7c1bd749b2",
+        "name": "getParamByLuaConfig"
+      },
+      "interval": {
+        "calcId": 4003031,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 6,
+        "UID": "d40132f6-1f01-4697-bbfa-b657e407e476",
+        "name": "getParamByLuaConfig"
+      },
+      "UID": "92f17200-c051-430d-a209-e0921092eed2",
+      "name": "buffStartThink",
+      "NodeID": 7
+    },
+    "21": {
+      "scale": 2,
+      "NodeID": 21,
+      "UID": "60a88f54-febb-404e-8472-f3b510bc7f64",
+      "effectId": "Eff_Parmon_QXXZ_Boom_Loop",
+      "target": {
+        "name": "getPlayerRealControlEnt",
+        "UID": "15301051-1a6c-40a7-b966-e3c2e82ea899",
+        "forceCurPet": true,
+        "target": {
+          "key": "TimeSuolian01",
+          "name": "getServerCacheVal",
+          "UID": "aa5ab858-5751-47a7-8763-9b96d3373313",
+          "target": "OWNER",
+          "NodeID": 19
+        },
+        "NodeID": 20
+      },
+      "speed": 1,
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true,
+      "offsetXYZ": [
+        0,
+        3,
+        0
+      ],
+      "duration": 5
+    },
+    "8": {
+      "calcId": 4003031,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "7cf14d62-4492-45fa-aeed-5a7c1bd749b2",
+      "name": "getParamByLuaConfig"
+    },
+    "17": {
+      "UID": "3ca8e9d1-9373-47d7-ad82-208e015e98fb",
+      "name": "callClientAction",
+      "actionIds": [
+        15,
+        21
+      ],
+      "NodeID": 17
+    },
+    "9": {
+      "id": 2036,
+      "duration": 5,
+      "NodeID": 9,
+      "UID": "d3e231ac-879d-4609-ba0e-8a856b4f56e2",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "2": {
+      "buffId": 4003031,
+      "name": "removeBuff",
+      "UID": "54148af2-075b-49a3-990f-bf17273dbf50",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "13": {
+      "key": "TimeSuolian01",
+      "name": "setServerCacheVal",
+      "UID": "157a4821-14a4-440c-b37d-038424c3a1d8",
+      "target": "OWNER",
+      "val": {
+        "name": "searchEntity",
+        "UID": "d19b3fda-f84b-4b77-a3e6-2fea69f59fd0",
+        "relation": 2,
+        "heightDown": 10,
+        "radius": 100,
+        "checkValidPlayer": true,
+        "isRandom": true,
+        "heightUp": 10,
+        "NodeID": 12
+      },
+      "NodeID": 13
+    },
+    "11": {
+      "id": 2036,
+      "hasCountDown": true,
+      "NodeID": 11,
+      "UID": "7b109242-172a-4a5a-b1d9-9757143f8d3e",
+      "name": "hideBossMechanismTip"
+    },
+    "20": {
+      "name": "getPlayerRealControlEnt",
+      "UID": "15301051-1a6c-40a7-b966-e3c2e82ea899",
+      "forceCurPet": true,
+      "target": {
+        "key": "TimeSuolian01",
+        "name": "getServerCacheVal",
+        "UID": "aa5ab858-5751-47a7-8763-9b96d3373313",
+        "target": "OWNER",
+        "NodeID": 19
+      },
+      "NodeID": 20
+    },
+    "12": {
+      "name": "searchEntity",
+      "UID": "d19b3fda-f84b-4b77-a3e6-2fea69f59fd0",
+      "relation": 2,
+      "heightDown": 10,
+      "radius": 100,
+      "checkValidPlayer": true,
+      "isRandom": true,
+      "heightUp": 10,
+      "NodeID": 12
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    7
+  ]
+}

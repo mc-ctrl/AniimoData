@@ -1,0 +1,198 @@
+{
+  "nodeMap": {
+    "21": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0.5
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "16a26e3b-318a-4f3d-b618-b1f3de118733",
+      "effectId": "Eff_Parmon_10261_Skill_Attack_Start_02",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "4": {
+      "UID": "a34fb0b3-35a4-4448-8a20-c42213356a4b",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          9,
+          10
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "offsetXYZ": [
+        0,
+        1.2,
+        1.2
+      ],
+      "templateId": 12620013002,
+      "name": "createProjectile",
+      "UID": "0f9be3c4-a509-4f29-9327-d896690a21b8",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "TARGET",
+      "NodeID": 24,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "14": {
+      "name": "isActorType",
+      "UID": "688d761f-27bc-4f5d-8ae8-3d6bc93df3dc",
+      "target": "OWNER",
+      "NodeID": 14,
+      "actorType": 3
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "0a4c9dea-9f05-48c0-b009-2170ef38d0c2",
+      "target": "CASTER",
+      "NodeID": 10
+    },
+    "26": {
+      "UID": "e24e375e-3ed8-49e6-bcf4-f17bcdefb03c",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 26
+    },
+    "23": {
+      "offsetXYZ": [
+        0,
+        1.2,
+        1.2
+      ],
+      "templateId": 12620013001,
+      "name": "createProjectile",
+      "UID": "f9faeac1-6ae6-4c2b-96bf-2c9d70502a55",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Free3d",
+      "targetPos": "TARGET",
+      "NodeID": 23,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "16": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "9a753fdc-9efb-454b-bcc0-5f365b1a2e77",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 16
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 27,
+      "UID": "b0f9b1a2-b1df-4db5-9ed8-fb9818045205"
+    },
+    "17": {
+      "UID": "5cf9b497-a109-4cff-81c7-31644ff4d190",
+      "target": "TARGET_HIT",
+      "name": "getTargetPosition",
+      "NodeID": 17
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b04a76bf-592b-4de4-85cc-3ba43649421d",
+      "target": "CASTER",
+      "NodeID": 9,
+      "animId": "Boss_Attack04"
+    },
+    "18": {
+      "key": "targetPos",
+      "name": "setCacheVal",
+      "UID": "b14e124f-f073-48c8-aad1-874b642cedbf",
+      "target": "OWNER",
+      "val": {
+        "UID": "5cf9b497-a109-4cff-81c7-31644ff4d190",
+        "target": "TARGET_HIT",
+        "name": "getTargetPosition",
+        "NodeID": 17
+      },
+      "NodeID": 18
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.92,
+      "NodeID": 19,
+      "UID": "9e9578e2-c757-4fef-9455-679aeae7283d"
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d8bdd6d7-1e51-4918-9872-763dbf72c58e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10261_Attack04",
+      "NodeID": 11
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          21,
+          16,
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.71,
+      "NodeID": 13,
+      "UID": "b77f2f11-82c9-4e09-b6f9-bd6553b604b7"
+    },
+    "2": {
+      "name": "setNextComboAbilityId",
+      "UID": "5fee0653-28ec-481c-a27b-60ba610fa6a2",
+      "target": "CASTER",
+      "NodeID": 2,
+      "abilityId": 0
+    }
+  },
+  "BPName": "ability_12620013",
+  "NodeID": 6,
+  "UID": "c0d7fd58-18e7-46f0-9316-670495f27d7c",
+  "eventIds": [
+    4,
+    19,
+    13,
+    27
+  ],
+  "layer": "Base",
+  "length": 1.75
+}

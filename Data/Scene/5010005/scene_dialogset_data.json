@@ -1,0 +1,2353 @@
+{
+  "91320671": {
+    "targetGroupIds": [
+      91179422,
+      91247890
+    ],
+    "targetGroups": {
+      "91179422": {
+        "id": 91179422,
+        "name": "TargetGroup_A全身 ",
+        "rotationMode": 0,
+        "position": [
+          52.01,
+          41.82,
+          443.93
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 91179405,
+            "weight": 1,
+            "radius": 1
+          },
+          {
+            "virtualTargetId": 91179408,
+            "weight": 0.2,
+            "radius": 0.1
+          },
+          {
+            "virtualTargetId": 91179880,
+            "weight": 0.5,
+            "radius": 0.1
+          }
+        ],
+        "updateMethod": 2
+      },
+      "91247890": {
+        "id": 91247890,
+        "name": "TargetGroup_主持人半身",
+        "rotationMode": 0,
+        "position": [
+          54.79,
+          42.82,
+          444.03
+        ],
+        "positionMode": 0,
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "targets": [
+          {
+            "virtualTargetId": 91247882,
+            "weight": 0.8,
+            "radius": 0.2
+          },
+          {
+            "virtualTargetId": 91247884,
+            "weight": 0.2,
+            "radius": 0.2
+          }
+        ],
+        "updateMethod": 2
+      }
+    },
+    "virtualTargets": {
+      "91247883": {
+        "name": "VT_Npc_奥斯卡_91175425_Bone_Root",
+        "rotation": [
+          0,
+          0.01,
+          0,
+          1
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179760,
+        "subPartIndex": 0,
+        "id": 91247883,
+        "position": [
+          54.79,
+          41.47,
+          444.04
+        ]
+      },
+      "91247884": {
+        "name": "VT_Npc_奥斯卡_91175425_Bone_Bip001 Spine1",
+        "rotation": [
+          -0.47,
+          0.52,
+          0.48,
+          -0.53
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Spine1",
+        "bindingMode": 1,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 91179760,
+        "subPartIndex": 2,
+        "id": 91247884,
+        "position": [
+          54.79,
+          42.47,
+          444.04
+        ]
+      },
+      "91248284": {
+        "name": "VT_Npc_阿尔伯特_91222800_Bone_Bip001 Head",
+        "rotation": [
+          0.52,
+          -0.52,
+          -0.47,
+          0.47
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179745,
+        "subPartIndex": 0,
+        "id": 91248284,
+        "position": [
+          55.58,
+          41.86,
+          448.09
+        ]
+      },
+      "91248285": {
+        "name": "VT_Npc_阿尔伯特_91222800_Bone_Root",
+        "rotation": [
+          0,
+          0.05,
+          0,
+          -1
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179745,
+        "subPartIndex": 0,
+        "id": 91248285,
+        "position": [
+          55.58,
+          40.51,
+          448.1
+        ]
+      },
+      "91248286": {
+        "name": "VT_Npc_阿尔伯特_91222800_Bone_Bip001 Spine",
+        "rotation": [
+          0.53,
+          -0.52,
+          -0.48,
+          0.47
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Spine",
+        "bindingMode": 1,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 91179745,
+        "subPartIndex": 2,
+        "id": 91248286,
+        "position": [
+          55.58,
+          41.41,
+          448.1
+        ]
+      },
+      "91179397": {
+        "name": "VT_MainPlayerPet_Bone_Bone L Eyeball",
+        "rotation": [
+          -0.68,
+          0.2,
+          0.2,
+          0.68
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone L Eyeball",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179397,
+        "position": [
+          51.93,
+          42.14,
+          443.94
+        ]
+      },
+      "91179398": {
+        "name": "VT_MainPlayerPet_Bone_Bone L EyeBall",
+        "rotation": [
+          0.83,
+          -0.02,
+          -0.56,
+          0.04
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone L EyeBall",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179398,
+        "position": [
+          51.94,
+          41.97,
+          444
+        ]
+      },
+      "91179399": {
+        "name": "VT_MainPlayerPet_Bone_Bone L Eye 03",
+        "rotation": [
+          0.53,
+          -0.22,
+          -0.14,
+          -0.81
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone L Eye 03",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179399,
+        "position": [
+          52.07,
+          43.39,
+          444.16
+        ]
+      },
+      "91179400": {
+        "name": "VT_MainPlayerPet_Bone_Bone L Eye 03 (1)",
+        "rotation": [
+          0.53,
+          -0.22,
+          -0.14,
+          -0.81
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone L Eye 03",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179400,
+        "position": [
+          52.07,
+          43.39,
+          444.16
+        ]
+      },
+      "91179401": {
+        "name": "VT_MainPlayerPet_Bone_Bone R Eyeball",
+        "rotation": [
+          -0.19,
+          0.68,
+          0.68,
+          0.19
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone R Eyeball",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179401,
+        "position": [
+          52.1,
+          42.14,
+          443.94
+        ]
+      },
+      "91179402": {
+        "name": "VT_MainPlayerPet_Bone_Bone R EyeBall",
+        "rotation": [
+          0.02,
+          -0.84,
+          0.04,
+          -0.54
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone R EyeBall",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179402,
+        "position": [
+          52.09,
+          41.97,
+          443.99
+        ]
+      },
+      "91179403": {
+        "name": "VT_MainPlayerPet_Bone_Bone R Eye 03",
+        "rotation": [
+          0.2,
+          -0.54,
+          -0.81,
+          -0.13
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone R Eye 03",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179403,
+        "position": [
+          52.21,
+          43.39,
+          444.1
+        ]
+      },
+      "91179404": {
+        "name": "VT_MainPlayerPet_Bone_Bone R Eye 03 (1)",
+        "rotation": [
+          0.2,
+          -0.54,
+          -0.81,
+          -0.13
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bone R Eye 03",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179404,
+        "position": [
+          52.21,
+          43.39,
+          444.1
+        ]
+      },
+      "91179405": {
+        "name": "VirtualTarget_Slot_NPC_Bip001 Head",
+        "rotation": [
+          0.52,
+          -0.48,
+          -0.52,
+          0.48
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 0,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179405,
+        "position": [
+          52.01,
+          41.82,
+          443.93
+        ]
+      },
+      "91179406": {
+        "name": "VT_MainPlayerPet_Bone_Bip001 Neck",
+        "rotation": [
+          -0.42,
+          0.57,
+          -0.42,
+          0.57
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Neck",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179406,
+        "position": [
+          52.01,
+          41.79,
+          443.92
+        ]
+      },
+      "91179407": {
+        "name": "VirtualTarget_Slot_NPC_Bip001 Spine02",
+        "rotation": [
+          -0.04,
+          0.71,
+          -0.04,
+          0.7
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Spine02",
+        "bindingMode": 0,
+        "partID": 2,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 2,
+        "id": 91179407,
+        "position": [
+          52.01,
+          41.72,
+          443.83
+        ]
+      },
+      "91179408": {
+        "name": "VirtualTarget_Slot_NPC_Root",
+        "rotation": [
+          -0.42,
+          0.57,
+          -0.42,
+          0.57
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Neck",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179408,
+        "position": [
+          52.01,
+          41.79,
+          443.92
+        ]
+      },
+      "91179880": {
+        "name": "VT_MainPlayerPet_Bone_Root",
+        "rotation": [
+          0,
+          -0.01,
+          0,
+          -1
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Root",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179395,
+        "subPartIndex": 0,
+        "id": 91179880,
+        "position": [
+          52.01,
+          41.51,
+          443.79
+        ]
+      },
+      "91247882": {
+        "name": "VT_Npc_奥斯卡_91175425_Bone_Bip001 Head",
+        "rotation": [
+          -0.49,
+          0.49,
+          0.5,
+          -0.5
+        ],
+        "autoUpdateToTargetGroupRadius": true,
+        "bindingBoneName": "Bip001 Head",
+        "bindingMode": 1,
+        "partID": 0,
+        "partIndex": 0,
+        "slotId": 91179760,
+        "subPartIndex": 0,
+        "id": 91247882,
+        "position": [
+          54.79,
+          42.82,
+          444.03
+        ]
+      }
+    },
+    "position": [
+      52.1,
+      41.46,
+      444.66
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      -1
+    ],
+    "sandboxId": 91320639,
+    "id": 91320671,
+    "name": "Dialogset_2_1v1_91320671",
+    "cameraIds": [
+      91179500,
+      91222844,
+      91244078,
+      91244090,
+      91244100,
+      91244112,
+      91247738,
+      91247744,
+      91247750,
+      91248148,
+      91248158,
+      91254176,
+      91248276,
+      91248279,
+      91248282,
+      91248309,
+      91248321,
+      91254696,
+      91254963,
+      91254968,
+      91256185
+    ],
+    "cameras": {
+      "91248148": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          0.99,
+          0.01,
+          -0.13
+        ],
+        "position": [
+          56.37,
+          41.47,
+          451.48
+        ],
+        "id": 91248148,
+        "name": "全场特写左",
+        "editorPosition": [
+          56.37,
+          41.47,
+          451.48
+        ],
+        "editorRotation": [
+          0,
+          0.99,
+          0.01,
+          -0.13
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91248158": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          0.99,
+          -0.02,
+          -0.1
+        ],
+        "position": [
+          49.09,
+          41.59,
+          451.42
+        ],
+        "id": 91248158,
+        "name": "全场特写右",
+        "editorPosition": [
+          49.09,
+          41.59,
+          451.42
+        ],
+        "editorRotation": [
+          0,
+          0.99,
+          -0.02,
+          -0.1
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91248276": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          1,
+          0.02,
+          0.08
+        ],
+        "position": [
+          55.5,
+          41.28,
+          450.71
+        ],
+        "id": 91248276,
+        "name": "捕捉球店长介绍",
+        "editorPosition": [
+          55.5,
+          41.28,
+          450.71
+        ],
+        "editorRotation": [
+          0,
+          1,
+          0.02,
+          0.08
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91248279": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          1,
+          0.07,
+          0.04
+        ],
+        "position": [
+          53.18,
+          41.17,
+          450.71
+        ],
+        "id": 91248279,
+        "name": "咖啡店长介绍",
+        "editorPosition": [
+          53.18,
+          41.17,
+          450.71
+        ],
+        "editorRotation": [
+          0,
+          1,
+          0.07,
+          0.04
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91248282": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          1,
+          0.02,
+          0.07
+        ],
+        "position": [
+          50.46,
+          41.29,
+          450.23
+        ],
+        "id": 91248282,
+        "name": "男孩介绍",
+        "editorPosition": [
+          50.46,
+          41.29,
+          450.23
+        ],
+        "editorRotation": [
+          0,
+          1,
+          0.02,
+          0.07
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91248309": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          1,
+          0.04,
+          0.04
+        ],
+        "position": [
+          48.05,
+          41.24,
+          450.36
+        ],
+        "id": 91248309,
+        "name": "玩家介绍",
+        "editorPosition": [
+          48.05,
+          41.24,
+          450.36
+        ],
+        "editorRotation": [
+          0,
+          1,
+          0.04,
+          0.04
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91248321": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0.03,
+          0.27,
+          -0.01,
+          0.96
+        ],
+        "position": [
+          48.88,
+          41.74,
+          448.23
+        ],
+        "id": 91248321,
+        "name": "观众特写",
+        "editorPosition": [
+          48.88,
+          41.74,
+          448.23
+        ],
+        "editorRotation": [
+          0.03,
+          0.27,
+          -0.01,
+          0.96
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91179500": {
+        "fov": 60,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 1
+        },
+        "lookAtTargetID": 91179422,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0,
+          1,
+          -0.09,
+          -0.02
+        ],
+        "position": [
+          52,
+          42.31,
+          446.2
+        ],
+        "id": 91179500,
+        "name": "玩家宠物全身",
+        "editorPosition": [
+          51.99,
+          42.71,
+          448.07
+        ],
+        "editorRotation": [
+          0,
+          1,
+          -0.09,
+          -0.02
+        ],
+        "followMode": 4,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            -0.34,
+            1.89
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91222844": {
+        "fov": 40,
+        "lookAtMode": 2,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.64
+        },
+        "lookAtTargetID": 91247890,
+        "lookAtTargetType": 2,
+        "rotation": [
+          0,
+          0.98,
+          0.02,
+          -0.21
+        ],
+        "position": [
+          55.29,
+          42.77,
+          445.12
+        ],
+        "id": 91222844,
+        "name": "主持人半身",
+        "editorPosition": [
+          55.35,
+          42.76,
+          445.25
+        ],
+        "editorRotation": [
+          0,
+          0.98,
+          0.02,
+          -0.21
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91244078": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0.02,
+          -0.05,
+          0,
+          -1
+        ],
+        "position": [
+          54.91,
+          41.78,
+          446.01
+        ],
+        "id": 91244078,
+        "name": "捕捉球店长半身",
+        "editorPosition": [
+          54.91,
+          41.78,
+          446.01
+        ],
+        "editorRotation": [
+          0.02,
+          -0.05,
+          0,
+          -1
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91244090": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0.02,
+          0.22,
+          0.01,
+          -0.97
+        ],
+        "position": [
+          53.13,
+          41.71,
+          446.78
+        ],
+        "id": 91244090,
+        "name": "咖啡店长半身",
+        "editorPosition": [
+          53.13,
+          41.71,
+          446.78
+        ],
+        "editorRotation": [
+          0.02,
+          0.22,
+          0.01,
+          -0.97
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91244100": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0.01,
+          -0.27,
+          0,
+          -0.96
+        ],
+        "position": [
+          50.16,
+          41.81,
+          446.81
+        ],
+        "id": 91244100,
+        "name": "男孩半身",
+        "editorPosition": [
+          50.16,
+          41.81,
+          446.81
+        ],
+        "editorRotation": [
+          0.01,
+          -0.27,
+          0,
+          -0.96
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91256185": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          -1,
+          -0.04,
+          0
+        ],
+        "position": [
+          52.19,
+          41.88,
+          458.75
+        ],
+        "id": 91256185,
+        "name": "采访前镜头",
+        "editorPosition": [
+          52.19,
+          41.88,
+          458.75
+        ],
+        "editorRotation": [
+          0,
+          -1,
+          -0.04,
+          0
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91244112": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0.05,
+          0.95,
+          -0.21,
+          0.22
+        ],
+        "position": [
+          48.38,
+          45.35,
+          452.58
+        ],
+        "id": 91244112,
+        "name": "全景",
+        "editorPosition": [
+          48.38,
+          45.35,
+          452.58
+        ],
+        "editorRotation": [
+          0.05,
+          0.95,
+          -0.21,
+          0.22
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91254968": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          -1,
+          -0.07,
+          -0.01
+        ],
+        "position": [
+          51.96,
+          41.23,
+          452.03
+        ],
+        "id": 91254968,
+        "name": "颁奖拍照",
+        "editorPosition": [
+          51.96,
+          41.23,
+          452.03
+        ],
+        "editorRotation": [
+          0,
+          -1,
+          -0.07,
+          -0.01
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91247738": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          -1,
+          -0.01,
+          0
+        ],
+        "position": [
+          52.06,
+          41.9,
+          446.32
+        ],
+        "id": 91247738,
+        "name": "抓抓特写",
+        "editorPosition": [
+          52.06,
+          41.9,
+          446.32
+        ],
+        "editorRotation": [
+          0,
+          -1,
+          -0.01,
+          0
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91254963": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          1,
+          0.04,
+          0.02
+        ],
+        "position": [
+          52.42,
+          41.77,
+          450.9
+        ],
+        "id": 91254963,
+        "name": "颁奖采访",
+        "editorPosition": [
+          52.42,
+          41.77,
+          450.9
+        ],
+        "editorRotation": [
+          0,
+          1,
+          0.04,
+          0.02
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91247744": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          1,
+          0.03,
+          -0.02
+        ],
+        "position": [
+          52.19,
+          42.5,
+          446.94
+        ],
+        "id": 91247744,
+        "name": "阿滢特写",
+        "editorPosition": [
+          52.19,
+          42.5,
+          446.94
+        ],
+        "editorRotation": [
+          0,
+          1,
+          0.03,
+          -0.02
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91254696": {
+        "fov": 40,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          -1,
+          0.1,
+          0
+        ],
+        "position": [
+          51.87,
+          43.08,
+          453.99
+        ],
+        "id": 91254696,
+        "name": "玩家宠物表演",
+        "editorPosition": [
+          51.87,
+          43.08,
+          453.99
+        ],
+        "editorRotation": [
+          0,
+          -1,
+          0.1,
+          0
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91247750": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          0,
+          -1,
+          -0.01,
+          0
+        ],
+        "position": [
+          52.06,
+          41.9,
+          446.32
+        ],
+        "id": 91247750,
+        "name": "冰骨崽特写",
+        "editorPosition": [
+          52.06,
+          41.9,
+          446.32
+        ],
+        "editorRotation": [
+          0,
+          -1,
+          -0.01,
+          0
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      },
+      "91254176": {
+        "fov": 45,
+        "lookAtMode": 0,
+        "lookAtPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "lookAtTargetID": 0,
+        "lookAtTargetType": 0,
+        "rotation": [
+          -0.04,
+          0.96,
+          -0.18,
+          -0.23
+        ],
+        "position": [
+          61.63,
+          49.1,
+          463.23
+        ],
+        "id": 91254176,
+        "name": "全场特写",
+        "editorPosition": [
+          61.63,
+          49.1,
+          463.23
+        ],
+        "editorRotation": [
+          -0.04,
+          0.96,
+          -0.18,
+          -0.23
+        ],
+        "followMode": 0,
+        "followPipelineData": {
+          "orbitalBias": 0,
+          "screenX": 0.5,
+          "screenY": 0.5,
+          "trackedObjectOffset": [
+            0,
+            0,
+            0
+          ],
+          "cameraDistance": 10,
+          "followOffset": [
+            0,
+            0,
+            0
+          ],
+          "groupFramingSize": 0.5
+        },
+        "followTargetID": 0,
+        "followTargetType": 0
+      }
+    },
+    "slotIds": [
+      91179395,
+      91179672,
+      91179675,
+      91179679,
+      91179745,
+      91179760,
+      91244132,
+      91244137,
+      91244146,
+      91247646,
+      91247721,
+      91247762,
+      91247763,
+      91247764,
+      91247765,
+      91254878,
+      91255451,
+      91254904,
+      91255379,
+      91254902,
+      91257127
+    ],
+    "slots": {
+      "91244137": {
+        "id": 91244137,
+        "type": 4,
+        "VirtualActorId": -1867953040,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.04,
+          0,
+          1
+        ],
+        "position": [
+          53.63,
+          40.51,
+          448
+        ],
+        "entityId": 91248075
+      },
+      "91244146": {
+        "id": 91244146,
+        "type": 4,
+        "position": [
+          51.1,
+          40.53,
+          447.92
+        ],
+        "VirtualActorId": -1049775534,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.06,
+          0,
+          1
+        ],
+        "desc": "",
+        "entityId": 91175429
+      },
+      "91247646": {
+        "id": 91247646,
+        "type": 4,
+        "VirtualActorId": -695786473,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "position": [
+          48.83,
+          40.51,
+          447.48
+        ],
+        "entityId": 0
+      },
+      "91247721": {
+        "id": 91247721,
+        "type": 0,
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          0.71,
+          0,
+          0.7
+        ],
+        "position": [
+          50.27,
+          41.47,
+          443.8
+        ],
+        "entityId": 0
+      },
+      "91247762": {
+        "id": 91247762,
+        "type": 4,
+        "VirtualActorId": -849169900,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -1,
+          0,
+          -0.09
+        ],
+        "position": [
+          50.73,
+          40.51,
+          447.71
+        ],
+        "entityId": 0
+      },
+      "91247763": {
+        "id": 91247763,
+        "type": 4,
+        "VirtualActorId": -2131311940,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -1,
+          0,
+          0.07
+        ],
+        "position": [
+          52.68,
+          40.51,
+          447.77
+        ],
+        "entityId": 0
+      },
+      "91247764": {
+        "id": 91247764,
+        "type": 4,
+        "VirtualActorId": -346013045,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.94,
+          0,
+          0.33
+        ],
+        "position": [
+          55.01,
+          40.51,
+          447.18
+        ],
+        "entityId": 0
+      },
+      "91247765": {
+        "id": 91247765,
+        "type": 0,
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          0.97,
+          0,
+          0.26
+        ],
+        "position": [
+          48.89,
+          40.51,
+          447.1
+        ],
+        "entityId": 0
+      },
+      "91254878": {
+        "id": 91254878,
+        "type": 4,
+        "VirtualActorId": -1490126528,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          0.41,
+          0,
+          0.91
+        ],
+        "position": [
+          52.02,
+          40.51,
+          449.52
+        ],
+        "entityId": 0
+      },
+      "91254902": {
+        "id": 91254902,
+        "type": 0,
+        "position": [
+          51.96,
+          40.51,
+          449.15
+        ],
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          0.01,
+          0,
+          1
+        ],
+        "desc": "",
+        "entityId": 0
+      },
+      "91254904": {
+        "id": 91254904,
+        "type": 4,
+        "position": [
+          52.83,
+          40.51,
+          449.47
+        ],
+        "VirtualActorId": -341274847,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.39,
+          0,
+          0.92
+        ],
+        "desc": "",
+        "entityId": 0
+      },
+      "91255379": {
+        "id": 91255379,
+        "type": 4,
+        "position": [
+          51.3,
+          40.51,
+          449.61
+        ],
+        "VirtualActorId": -1490126528,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          0.01,
+          0,
+          1
+        ],
+        "desc": "",
+        "entityId": 0
+      },
+      "91255451": {
+        "id": 91255451,
+        "type": 0,
+        "position": [
+          51.24,
+          40.51,
+          449.13
+        ],
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          0.01,
+          0,
+          1
+        ],
+        "desc": "",
+        "entityId": 0
+      },
+      "91257127": {
+        "id": 91257127,
+        "type": 0,
+        "position": [
+          52.74,
+          40.51,
+          449.65
+        ],
+        "VirtualActorId": 0,
+        "dialogueGraphId": 0,
+        "rotation": [
+          0,
+          -0.03,
+          0,
+          1
+        ],
+        "desc": "",
+        "entityId": 0
+      },
+      "91179395": {
+        "id": 91179395,
+        "type": 4,
+        "VirtualActorId": -1049775534,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.01,
+          0,
+          -1
+        ],
+        "position": [
+          52.01,
+          41.51,
+          443.79
+        ],
+        "entityId": 0
+      },
+      "91179672": {
+        "id": 91179672,
+        "type": 4,
+        "VirtualActorId": -1051132736,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          0.06,
+          0,
+          -1
+        ],
+        "position": [
+          47.8,
+          40.51,
+          447.98
+        ],
+        "entityId": 0
+      },
+      "91179675": {
+        "id": 91179675,
+        "type": 4,
+        "position": [
+          50.45,
+          40.51,
+          447.93
+        ],
+        "VirtualActorId": -849169900,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.02,
+          0,
+          1
+        ],
+        "desc": "",
+        "entityId": 91175427
+      },
+      "91179679": {
+        "id": 91179679,
+        "type": 4,
+        "position": [
+          52.77,
+          40.51,
+          448.2
+        ],
+        "VirtualActorId": -2131311940,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.02,
+          0,
+          -1
+        ],
+        "desc": "",
+        "entityId": 91226263
+      },
+      "91179745": {
+        "id": 91179745,
+        "type": 4,
+        "position": [
+          55.58,
+          40.51,
+          448.1
+        ],
+        "VirtualActorId": -346013045,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          0.05,
+          0,
+          -1
+        ],
+        "desc": "",
+        "entityId": 91222800
+      },
+      "91179760": {
+        "id": 91179760,
+        "type": 4,
+        "VirtualActorId": -341274847,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          0.01,
+          0,
+          1
+        ],
+        "position": [
+          54.79,
+          41.47,
+          444.04
+        ],
+        "entityId": 91234322
+      },
+      "91244132": {
+        "id": 91244132,
+        "type": 4,
+        "VirtualActorId": -312948930,
+        "dialogueGraphId": 91222716,
+        "rotation": [
+          0,
+          -0.02,
+          0,
+          1
+        ],
+        "position": [
+          56.29,
+          40.54,
+          448.08
+        ],
+        "entityId": 91248071
+      }
+    }
+  }
+}

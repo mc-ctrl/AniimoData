@@ -1,0 +1,17 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 912330201,
+    "dmg_grass_add_ratio": "param0",
+    "type": 1
+  },
+  "BPName": "buff_912330201",
+  "NodeID": 1,
+  "UID": "114d36ec-d014-4b0e-9769-3762fd267b3b",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_10130100",
+  "NodeID": 1,
+  "UID": "1bb37783-4979-41a1-83b3-69511f84e301",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10130100001,
+      "name": "setCombatActionTimeline",
+      "UID": "e542f056-bac7-40f1-874b-252a788aebbe",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Bless"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10013_Skill_Bless_01"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 11100011,
+  "name": ""
+}

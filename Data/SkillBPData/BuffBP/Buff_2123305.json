@@ -1,0 +1,156 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123305",
+  "NodeID": 1,
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b355c7d4-f6b6-4a48-9ecc-b6d4fb4c7980",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 3
+    },
+    "13": {
+      "name": "stopEffectStr",
+      "UID": "0a63425b-b4f0-4650-8c83-953c6558b757",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_001",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "5e8bd710-1561-4bbd-b0ec-64a6f6aa9f59",
+      "name": "doActionsByConditions",
+      "NodeID": 6,
+      "elseActionIds": [
+        5
+      ]
+    },
+    "21": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "8c135e4f-2723-429f-9bc2-b1263e07226b",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "5": {
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "afe32e31-fe3a-4818-8595-a6f101e9d1d8",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        3,
+        7,
+        16
+      ]
+    },
+    "7": {
+      "isSwitchPetInherit": true,
+      "target": "OWNER",
+      "NodeID": 7,
+      "UID": "b93d23fe-1781-4099-8820-359e3d0c1243",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_001",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "16": {
+      "delay": 3,
+      "interval": 1,
+      "UID": "dabd1a4d-8c53-4cda-8eff-24e0b3c288b5",
+      "name": "buffStartThink",
+      "NodeID": 16
+    },
+    "19": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "b37445e6-57b7-40ae-b559-5fad45027f26",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a5ef602b-8c65-4d35-9d19-0b05404a807f",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_003",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 21233051,
+      "NodeID": 9,
+      "UID": "7c542dda-a454-4adc-84c1-e8e7fe88a21f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "574eedf0-5bd2-4af8-9b8b-0d50b1edb079",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4fbb2702-0277-4d1b-bce4-5550462a8efe",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_002",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "11": {
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "5fb2f296-99ca-42d2-88c9-264379d58094",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        13,
+        14,
+        17,
+        9
+      ]
+    },
+    "20": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "c8c4dfb1-4305-4c45-a751-2b1df573842b",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "271a28a3-16fe-4787-a7a7-d4d7672d9c73",
+      "name": "doActionsByConditions",
+      "NodeID": 12,
+      "elseActionIds": [
+        11
+      ]
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    12
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

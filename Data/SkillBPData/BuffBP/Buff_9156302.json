@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9156302",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "23f3545c-1ed1-4718-9654-7a22cc30d120",
+      "name": "checkDamageAbilityType",
+      "abilityType": 2,
+      "NodeID": 5
+    },
+    "13": {
+      "eventName": "InDmg",
+      "name": "notifyCustomEvent",
+      "UID": "d5c2b934-eece-430b-b3c0-3e6755a9b310",
+      "target": "CURPET",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "af2d88c9-4168-46b8-adc2-5fe516c2ba6d",
+      "conditionIds": [
+        11,
+        5,
+        12
+      ],
+      "name": "conditionOr",
+      "NodeID": 6
+    },
+    "15": {
+      "name": "checkElementType",
+      "UID": "07cc4d82-95eb-487c-8bd7-8d58833db1fa",
+      "target": "CURPET",
+      "NodeID": 15,
+      "elementType": 6
+    },
+    "7": {
+      "actionIds": [
+        13,
+        16
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "fdcdb1bb-68c2-4bc3-ae8e-6801db323e6f",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "540acfe2-3793-4ce4-9e3c-278611eb62c0",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10563_Skill_Hit",
+      "NodeID": 16
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "56b0ef54-ea90-488d-9b8c-8005502a7d92",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "interval": 1,
+      "UID": "c41fc2d9-feb8-46ff-9dac-d238f9eb91b9",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "b41fffa3-6204-4a19-ba47-800495d8173c",
+      "name": "checkDamageAbilityType",
+      "abilityType": 1,
+      "NodeID": 11
+    },
+    "12": {
+      "UID": "6767c591-0f14-4cac-8a04-22ae5a0012ea",
+      "name": "checkDamageAbilityType",
+      "abilityType": 4,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9
+  ]
+}

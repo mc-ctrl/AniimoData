@@ -1,0 +1,99 @@
+{
+  "23370110": {
+    "id": 23370110,
+    "radius": 9,
+    "height": 10,
+    "name": "星露莉从树枝上滑翔下来",
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 3,
+    "position": [
+      -70.34,
+      0.01,
+      -6.1
+    ]
+  },
+  "23125746": {
+    "id": 23125746,
+    "radius": 5,
+    "height": 10,
+    "name": "火盆Trigger",
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 3,
+    "position": [
+      -115.62,
+      0.01,
+      -33.18
+    ]
+  },
+  "23142701": {
+    "id": 23142701,
+    "radius": 2,
+    "height": 5,
+    "name": "螳螂Trigger",
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 3,
+    "position": [
+      -120.3,
+      0.01,
+      -9.77
+    ]
+  },
+  "23143645": {
+    "id": 23143645,
+    "height": 3,
+    "position": [
+      -110.78,
+      0.01,
+      -7.06
+    ],
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 3,
+    "radius": 2
+  },
+  "23020407": {
+    "id": 23020407,
+    "radius": 19.17,
+    "height": 10,
+    "name": "测试trigger1",
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 15,
+    "position": [
+      76.55,
+      0.01,
+      29.02
+    ]
+  },
+  "23143557": {
+    "id": 23143557,
+    "radius": 2,
+    "height": 3,
+    "name": "螳螂Trigger2",
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 3,
+    "position": [
+      -114.71,
+      0.01,
+      -10.06
+    ]
+  },
+  "23020413": {
+    "id": 23020413,
+    "radius": 5,
+    "height": 10,
+    "name": "测试trigger2",
+    "shapeType": 0,
+    "petInControl": false,
+    "targetType": 3,
+    "position": [
+      41.12,
+      0.01,
+      26.55
+    ]
+  }
+}

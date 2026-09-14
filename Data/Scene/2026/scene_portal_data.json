@@ -1,0 +1,68 @@
+{
+  "72244584": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      434,
+      63,
+      218
+    ]
+  },
+  "72244579": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      400,
+      29,
+      51
+    ]
+  },
+  "72244580": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      400,
+      29,
+      -31
+    ]
+  },
+  "72244581": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      400,
+      29,
+      25
+    ]
+  },
+  "72244582": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      400,
+      45,
+      98
+    ]
+  },
+  "72244583": {
+    "markType": 0,
+    "randomRange": 0,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      400,
+      44,
+      160
+    ]
+  }
+}

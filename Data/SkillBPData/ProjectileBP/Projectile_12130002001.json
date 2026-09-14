@@ -1,0 +1,107 @@
+{
+  "refControlPoint": [
+    [
+      -0.2,
+      1.7,
+      5
+    ],
+    [
+      -5,
+      2.5,
+      7
+    ]
+  ],
+  "duration": 3,
+  "calcResultNodeId": 50,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10213_Attack01_01",
+  "nodeMap": {
+    "50": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12130002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "01701986-a8ef-4e1d-bc9c-f5e0103dd87d",
+      "target": "TARGET",
+      "NodeID": 50,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": 10001,
+        "elementType": 6,
+        "impulseId": 2000
+      }
+    },
+    "139": {
+      "targetPos": {
+        "UID": "20bf339c-0428-4fea-acc0-fe0dfc30ae50",
+        "target": "PROJECTILE",
+        "name": "getTargetPosition",
+        "NodeID": 138
+      },
+      "name": "playSoundAtPos",
+      "UID": "db662252-e840-4939-acc3-7aa4c3756c95",
+      "soundId": "SFX_Parmon_10213_Attack_Hit01",
+      "NodeID": 139
+    },
+    "123": {
+      "pos": "PROJECTILE",
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "6d1d86c5-1389-4fad-a10a-f14495ff3482",
+      "effectId": "Eff_Parmon_10213_Skill_Hit",
+      "speed": 1,
+      "NodeID": 123
+    },
+    "138": {
+      "UID": "20bf339c-0428-4fea-acc0-fe0dfc30ae50",
+      "target": "PROJECTILE",
+      "name": "getTargetPosition",
+      "NodeID": 138
+    }
+  },
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "BezierCurve",
+  "refTargetPoint": [
+    0,
+    1,
+    12
+  ],
+  "maxHitNum": 1,
+  "maxMoveSpeed": 19,
+  "autoSwitchTrack": true,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    139,
+    123
+  ],
+  "onProjectileHitIds": [
+    50
+  ],
+  "performRatio": 0.8,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "refStartPoint": [
+    0,
+    1.7,
+    0.8
+  ],
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "BPName": "ability_12130002",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 1
+}

@@ -1,0 +1,124 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5886706e-1f2c-41a1-ab7d-a00d84028377",
+      "effectId": "Eff_Parmon_10083_Skill_Ex_03",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "269afcbb-78dc-4238-90c0-44e0d9103f13",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wingenie_skill_wingenie_loop",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "caca6ed4-2b2a-4031-8871-2dfac0fc0b03",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "eventType": "NotifyState",
+      "endTime": 8,
+      "NodeID": 10,
+      "UID": "00a64a9e-4006-4c45-b8d2-977775277340",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 1
+    },
+    "15": {
+      "name": "stopSoundStr",
+      "UID": "8520d69c-5107-480b-9c6d-01bb7fb340cd",
+      "soundId": "parmon_wingenie_skill_wingenie_loop",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.8,
+      "NodeID": 16,
+      "UID": "03fdd115-d95d-4c4f-81d8-b5a8ff1dc542"
+    },
+    "9": {
+      "actionIds": [
+        12
+      ],
+      "name": "actOnTargets",
+      "UID": "f4cb68e9-42d8-4da4-b47d-761b2cd40dcc",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "90446d7e-b952-4784-bb28-b38496f03ef6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 14
+    },
+    "12": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1
+      },
+      "name": "calcResult",
+      "UID": "9ecf4a88-a112-4b26-9cee-717849cbdaeb",
+      "target": "TARGET",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2108304",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    16,
+    6,
+    14,
+    10
+  ],
+  "layer": "Base",
+  "length": 9999
+}

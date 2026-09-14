@@ -1,0 +1,100 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2120309",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "petTarget": "SRC",
+      "triggerId": 1020302,
+      "name": "onEntityTrigger",
+      "UID": "eedf3ae5-83a8-4053-953f-04581011defc",
+      "target": "SRC",
+      "NodeID": 22
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "388a30e8-20b2-47f7-8fe9-93ea78edd8b1",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Debuff",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "13": {
+      "actionIds": [
+        11,
+        21,
+        22
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "54a9bcf7-1d12-4bba-8c8b-f2f49db384e3",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "7f51d630-8612-44fb-9c55-512d08575ef0",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "19": {
+      "UID": "b4df8a42-c04f-4330-801f-ec2009261feb",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 19
+    },
+    "11": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2120309,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param0",
+        "type": 1
+      },
+      "UID": "75d6bc0c-f70a-4393-8f63-2a0561e1850d",
+      "target": "OWNER",
+      "NodeID": 11,
+      "attackData": {
+        "hitSoundType": "s",
+        "impulseId": 1000,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "elementType": 12,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "7ed6e12b-8844-4338-abe1-5c04c576c95b",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Debuff",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "21": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "b72df226-6cfc-4c3a-afda-027a695a1007",
+      "effectId": "Eff_Parmon_1020302_Skill_MaliciousZone_Hit",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "onBuffDestroyIds": [
+    18
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    14
+  ]
+}

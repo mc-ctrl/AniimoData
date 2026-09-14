@@ -1,0 +1,47 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6005016",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "id": 2025,
+      "duration": 3,
+      "NodeID": 3,
+      "UID": "4f6f8315-9bb9-4dca-8cdb-cc66547c3203",
+      "name": "showBossMechanismTip"
+    },
+    "5": {
+      "buffId": 6005016,
+      "name": "removeBuff",
+      "UID": "4daf7772-cb7a-486c-967f-0219fab3d84b",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "bec24eb2-eec7-49fb-9e81-152bb6d5a877",
+      "name": "hideBossMechanismTip",
+      "id": 2025,
+      "NodeID": 7
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerDeadEvent",
+      "UID": "572e65d7-03db-48a7-9034-58f2c5baebe2",
+      "target": "SRC",
+      "NodeID": 6
+    }
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6
+  ]
+}

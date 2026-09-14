@@ -1,0 +1,220 @@
+{
+  "52": {
+    "interactBehav": "Event_PER_Chase"
+  },
+  "39": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "40": {
+    "interactBehav": "Event_PER_LeaveAndStare"
+  },
+  "41": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "42": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "35": {
+    "interactBehav": "Event_PER_Chase"
+  },
+  "44": {
+    "interactBehav": "Event_PER_Happy",
+    "isFriendly": true
+  },
+  "67": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "68": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "80": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "2": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "79": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "60": {
+    "interactBehav": "Event_PER_Happy",
+    "isFriendly": true
+  },
+  "78": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "71": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "77": {
+    "interactBehav": "Event_PER_Love",
+    "isFriendly": true
+  },
+  "76": {
+    "interactBehav": "Event_PER_Happy",
+    "isFriendly": true
+  },
+  "27": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "73": {
+    "interactBehav": "Event_PER_LeaveAndStare"
+  },
+  "25": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "70": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "69": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "65": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "58": {
+    "interactBehav": "Event_PER_LeaveAndStare"
+  },
+  "64": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "63": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "62": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "61": {
+    "interactBehav": "Event_PER_Happy",
+    "isFriendly": true
+  },
+  "59": {
+    "interactBehav": "Event_PER_Happy",
+    "isFriendly": true
+  },
+  "56": {
+    "interactBehav": "Event_PER_Happy",
+    "isFriendly": true
+  },
+  "54": {
+    "interactBehav": "Event_PER_Love",
+    "isFriendly": true
+  },
+  "53": {
+    "interactBehav": "Event_PER_Leave"
+  },
+  "24": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "50": {
+    "interactBehav": "Event_PER_Fight"
+  },
+  "43": {
+    "interactBehav": "Event_PER_Happy",
+    "isFriendly": true
+  },
+  "29": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "31": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "23": {
+    "interactBehav": "Event_PER_LeaveAndStare"
+  },
+  "10": {
+    "interactBehav": "Event_PER_Scare"
+  },
+  "18": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "11": {
+    "interactBehav": "Event_PER_LeaveAndStare"
+  },
+  "20": {
+    "interactBehav": "Event_PER_Fight"
+  },
+  "21": {
+    "interactBehav": "Event_PER_Fight"
+  },
+  "22": {
+    "interactBehav": "Event_PER_LeaveAndStare"
+  },
+  "13": {
+    "interactBehav": "Event_PER_Fight"
+  },
+  "45": {
+    "interactBehav": "Event_PER_Fight"
+  },
+  "74": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "46": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "75": {
+    "interactBehav": "Event_PER_Fight"
+  },
+  "47": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "26": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "48": {
+    "interactBehav": "Event_PER_StareFriendly",
+    "isFriendly": true
+  },
+  "28": {
+    "interactBehav": "Event_PER_Love",
+    "isFriendly": true
+  },
+  "49": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "30": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "32": {
+    "interactBehav": "Event_PER_Chase"
+  },
+  "19": {
+    "interactBehav": "Event_PER_Follow",
+    "isFriendly": true
+  },
+  "51": {
+    "interactBehav": "Event_PER_Love",
+    "isFriendly": true
+  },
+  "36": {
+    "interactBehav": "Event_PER_Fight"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116304",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "2eafb438-6729-4432-842a-2ae0b9b49021",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        4
+      ]
+    },
+    "4": {
+      "target": {
+        "UID": "37eb08e5-de25-4486-9eb8-4eb075f5af0e",
+        "name": "getEventAttackTarget",
+        "NodeID": 3
+      },
+      "duration": 0,
+      "buffId": 91163041,
+      "NodeID": 4,
+      "UID": "a7fe1c63-d347-4129-9e3a-3d1288aad041",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "buffId": 91163042,
+      "name": "hasBuff",
+      "UID": "fc7da1c7-c911-41f2-8d5c-81e9a89a1610",
+      "target": {
+        "UID": "37eb08e5-de25-4486-9eb8-4eb075f5af0e",
+        "name": "getEventAttackTarget",
+        "NodeID": 3
+      },
+      "NodeID": 7
+    },
+    "6": {
+      "UID": "9c54434a-0afd-4757-883c-c00497194acb",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

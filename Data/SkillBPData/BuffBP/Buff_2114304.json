@@ -1,0 +1,134 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114304",
+  "NodeID": 1,
+  "UID": "2ea184be-47f0-45d4-9cc7-bf1cf4a63278",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "key": "10143electric",
+      "name": "setCacheVal",
+      "UID": "7ebae0d6-79f1-42b2-a146-45540cae2250",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "189356bb-d8ab-4116-8da1-7bc3ac91a78e",
+        "NodeID": 4,
+        "lValue": {
+          "key": "10143electric",
+          "name": "getCacheVal",
+          "UID": "e571986e-b4c2-4520-a3ec-fe8de3669759",
+          "target": "OWNER",
+          "NodeID": 3
+        }
+      },
+      "NodeID": 5
+    },
+    "13": {
+      "duration": 1,
+      "name": "frameFreeze",
+      "UID": "0912b376-c046-4a87-af79-1847ca66eb3a",
+      "target": "OWNER",
+      "timeScale": 0.5,
+      "NodeID": 13
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "069e2e7f-2a35-4924-a5a3-c69b16108e99",
+      "effectId": "Eff_Parmon_10143_Skill_Charge_Gather01",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "63f8d7b8-d6f6-431d-bd4a-2d2a9a950eba",
+      "effectId": "Eff_Parmon_10143_Skill_Charge_Gather01",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c0fe5d90-76dc-4009-81e7-3dde525ff097",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Shield",
+      "NodeID": 15
+    },
+    "7": {
+      "key": "ele",
+      "duration": 1.5,
+      "actionIds": [
+        5,
+        18
+      ],
+      "NodeID": 7,
+      "UID": "6a84bc01-196d-404c-9be2-b45fe0809db4",
+      "name": "addEntityTimer"
+    },
+    "17": {
+      "value": {
+        "key": "10143electric",
+        "name": "getCacheVal",
+        "UID": "602cdbe4-bb72-4e50-ba36-ef798e6b762f",
+        "target": "OWNER",
+        "NodeID": 16
+      },
+      "name": "setBossMechanismIconProgress",
+      "UID": "f1512e2a-9aa8-4ce5-9ccd-4625593d7a44",
+      "NodeID": 17,
+      "needFlash": true
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "53b767f7-1dec-41a2-9cb0-dc4d80711bb2",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Halo"
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "09555f43-1219-49e6-9e5d-b996c4d6cd8b",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "a733f0bb-5f9c-4aec-8c0c-cf0dc6f74f30",
+      "name": "stopAnimation",
+      "anim": "Skill_Halo",
+      "NodeID": 11
+    },
+    "20": {
+      "rValue": {
+        "key": "10143electric",
+        "name": "getCacheVal",
+        "UID": "25857d9b-7269-460a-833f-745c744949aa",
+        "target": "OWNER",
+        "NodeID": 19
+      },
+      "name": "greater",
+      "UID": "60c1b6f4-67af-47d4-b7c7-6619eb9f6fd7",
+      "NodeID": 20,
+      "lValue": 3
+    }
+  },
+  "onBuffDestroyIds": [
+    11,
+    14
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    9,
+    10,
+    7,
+    13,
+    15
+  ]
+}

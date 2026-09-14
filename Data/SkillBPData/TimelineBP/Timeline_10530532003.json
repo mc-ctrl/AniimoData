@@ -1,0 +1,442 @@
+{
+  "nodeMap": {
+    "62": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8450e57f-78f0-45c9-9834-b92553cb9b3a",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_charge_punch03",
+      "NodeID": 62
+    },
+    "166": {
+      "UID": "6a535035-1bd2-4f16-8078-f294b1fe9a5c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          164,
+          192,
+          194
+        ]
+      },
+      "NodeID": 166
+    },
+    "113": {
+      "UID": "7af3bffb-567c-4b26-a992-004a652b000e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          112
+        ]
+      },
+      "NodeID": 113
+    },
+    "97": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bee25fb3-e630-48de-94c7-9aca9b5d9ea3",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_charge_punch01_fire",
+      "NodeID": 97
+    },
+    "98": {
+      "UID": "77ee5c94-2a4d-4bed-825e-18319ff48f84",
+      "target": "CASTER",
+      "name": "burnUpEp",
+      "NodeID": 98
+    },
+    "64": {
+      "action": {
+        "actionIds": [
+          62,
+          97
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 64,
+      "UID": "f5bc6dc4-65ec-405e-a75a-a7846478e5db"
+    },
+    "115": {
+      "name": "stopEffectStr",
+      "UID": "16146218-5146-4243-8b3e-0a1fb691bc5b",
+      "effectId": "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Buff_Liuli",
+      "target": "OWNER",
+      "NodeID": 115
+    },
+    "172": {
+      "UID": "5c8b90bb-6baf-4e4d-a7ad-c60d36cc2b14",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 172
+    },
+    "192": {
+      "lockTarget": {
+        "UID": "6ee0b5f5-92d1-4e9b-80a9-893f83c17682",
+        "name": "getLockedTarget",
+        "NodeID": 191
+      },
+      "name": "lockTarget",
+      "UID": "5de1884a-b675-4829-9cdf-58ec528fe304",
+      "target": "OWNER",
+      "NodeID": 192
+    },
+    "100": {
+      "key": "ability_10530532100",
+      "duration": 0.2,
+      "actionIds": [
+        98
+      ],
+      "NodeID": 100,
+      "UID": "5616ef7e-3417-45f2-ac6f-8abb71a89b20",
+      "name": "addEntityTimer"
+    },
+    "117": {
+      "action": {
+        "actionIds": [
+          115
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.07,
+      "NodeID": 117,
+      "UID": "d334cdc0-d9f0-4cd3-b904-9ec352555939"
+    },
+    "190": {
+      "name": "dropEffectStr",
+      "UID": "b01ff145-0d0c-4e22-97f0-e16c8396f9de",
+      "effectId": "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Liuli",
+      "target": "OWNER",
+      "NodeID": 190
+    },
+    "177": {
+      "UID": "de490bbf-ced0-4147-a2ef-8c1a94d81c13",
+      "eventType": "Notify",
+      "time": 0.01,
+      "NodeID": 177
+    },
+    "183": {
+      "calcId": 10530532,
+      "calcType": 2,
+      "paramName": "param3",
+      "NodeID": 183,
+      "UID": "2f1475df-32f9-4d54-a7c8-e988b9d1abf0",
+      "name": "getParamByLuaConfig"
+    },
+    "174": {
+      "action": {
+        "actionIds": [
+          172
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.35,
+      "NodeID": 174,
+      "UID": "764102f1-0268-405d-b05b-67684bc021d2"
+    },
+    "180": {
+      "calcId": 10530532,
+      "calcType": 2,
+      "paramName": "param2",
+      "NodeID": 180,
+      "UID": "c7ed1279-75e7-4ca4-bd3d-79d95bf88154",
+      "name": "getParamByLuaConfig"
+    },
+    "104": {
+      "rValue": 60,
+      "name": "greater",
+      "UID": "1fc7f3c8-b0ea-4c98-b71e-66d92ce65bb1",
+      "NodeID": 104,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "c429ce03-7b5a-47c5-bb8b-553902680a59",
+          "target": "OWNER",
+          "NodeID": 105,
+          "attributeName": "ep_temp_cur"
+        },
+        "name": "add",
+        "UID": "76da6cb9-41cb-42b5-a93a-0ad7e6ae816a",
+        "NodeID": 103,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "6ae50240-fdd4-4a34-b449-d509968fc5b0",
+          "target": "OWNER",
+          "NodeID": 102,
+          "attributeName": "ep_cur"
+        }
+      }
+    },
+    "170": {
+      "UID": "dd697dac-17e8-487b-9c8c-1c333a7847da",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          168
+        ]
+      },
+      "NodeID": 170
+    },
+    "45": {
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0252545d-3790-4dc8-98ae-7e40374acc9a",
+      "effectId": "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Liuli",
+      "speed": 1,
+      "NodeID": 45
+    },
+    "74": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": {
+            "calcId": 10530532,
+            "calcType": 2,
+            "paramName": "param2",
+            "NodeID": 180,
+            "UID": "c7ed1279-75e7-4ca4-bd3d-79d95bf88154",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "070836f2-0927-4735-a28b-01a3a949f2cf",
+          "NodeID": 181,
+          "lValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "453392d2-b0b5-429c-914f-a8bc9c8fcd7d",
+            "NodeID": 185,
+            "lValue": {
+              "rValue": {
+                "calcId": 10530532,
+                "calcType": 2,
+                "paramName": "param3",
+                "NodeID": 183,
+                "UID": "2f1475df-32f9-4d54-a7c8-e988b9d1abf0",
+                "name": "getParamByLuaConfig"
+              },
+              "name": "multiply",
+              "UID": "4ffad86c-369b-4dc9-9aef-c2c6365e39f6",
+              "NodeID": 184,
+              "lValue": {
+                "rValue": 0.1,
+                "name": "multiply",
+                "UID": "1011c8cf-6d9b-4d08-a457-368977261e4a",
+                "NodeID": 188,
+                "lValue": {
+                  "rValue": {
+                    "name": "getAttribute",
+                    "UID": "143d5894-ecdc-4cd2-9f28-9560fa83064f",
+                    "target": "OWNER",
+                    "NodeID": 189,
+                    "attributeName": "ep_temp_cur"
+                  },
+                  "name": "add",
+                  "UID": "5936945f-9610-45af-a2e0-9fbdc0e8d35d",
+                  "NodeID": 187,
+                  "lValue": {
+                    "name": "getAttribute",
+                    "UID": "7d56d590-f8b6-45e9-a69a-a0bc5c3ceaf5",
+                    "target": "OWNER",
+                    "NodeID": 186,
+                    "attributeName": "ep_cur"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10304,
+        "hitFrameFreezeId": 10014,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt_Big_01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 5005,
+        "dmgWordUITypes": [
+          "POWERFUL_STRIKE"
+        ]
+      },
+      "UID": "466acd37-d901-4092-959c-4c9f1702351a",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 74
+    },
+    "106": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "db7a7174-e6ca-450f-866f-8a29b113fc9e",
+      "effectId": "Eff_Parmon_10053_Skill_Empowered_ChargePunch_03_Liuli",
+      "speed": 1,
+      "NodeID": 106
+    },
+    "168": {
+      "UID": "de26edd0-8cbe-453e-99f0-5bbaf2114410",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 168
+    },
+    "46": {
+      "actionIds": [
+        45
+      ],
+      "conditionActionIds": [
+        104
+      ],
+      "UID": "f2fba815-3e10-45f2-92ca-5861342659b1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        106
+      ],
+      "NodeID": 46
+    },
+    "76": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 74,
+      "NodeID": 76,
+      "UID": "90cf8edf-2e00-487f-b48f-f2a85823d2cc",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.6
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            3.4,
+            2,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        74
+      ]
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.17,
+      "NodeID": 48,
+      "UID": "935d285e-d66a-479c-81e1-6e36ad0ddf76"
+    },
+    "92": {
+      "UID": "a4658f3d-9fe2-4628-a024-85d2cb7c8521",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 92
+    },
+    "112": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 112,
+      "UID": "888391c5-0383-46b9-a92d-e7dd457246ee",
+      "effectId": "Eff_WindOmniEmitter",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "78": {
+      "action": {
+        "actionIds": [
+          101,
+          76,
+          100,
+          190
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.26,
+      "NodeID": 78,
+      "UID": "f8532404-8e7a-4fcd-950a-7404b1bdcd2f"
+    },
+    "93": {
+      "action": {
+        "actionIds": [
+          92
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 93,
+      "UID": "f952b90b-4e95-4b6d-a30b-511c5fe86d77"
+    },
+    "194": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 194,
+      "UID": "f3e35486-1dd1-4833-9493-232697e13b83",
+      "target": "OWNER",
+      "animId": "Skill_ChargePunch_Charge_End_Liuli",
+      "motionWarpingTarget": {
+        "UID": "258cd649-44c2-47c9-8a06-4659adbbfb2e",
+        "name": "getLockedTarget",
+        "NodeID": 193
+      }
+    },
+    "101": {
+      "petTarget": "OWNER",
+      "triggerId": 20002033,
+      "name": "onEntityTrigger",
+      "UID": "1db614ba-3819-4d1c-8124-18bd4bd82457",
+      "target": "OWNER",
+      "NodeID": 101
+    },
+    "164": {
+      "UID": "90c77f10-22f0-455c-a227-b8d6c8118ca6",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 164
+    }
+  },
+  "BPName": "ability_10530532",
+  "NodeID": 50,
+  "UID": "8d78e4a3-a23c-4de5-99de-604c0844c263",
+  "eventIds": [
+    174,
+    166,
+    170,
+    117,
+    78,
+    64,
+    93,
+    113,
+    48,
+    177
+  ],
+  "layer": "Base",
+  "length": 1.167
+}

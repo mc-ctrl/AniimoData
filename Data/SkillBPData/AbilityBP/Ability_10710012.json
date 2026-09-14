@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_10710012",
+  "NodeID": 1,
+  "UID": "39c97acb-3f55-4b21-9857-5d18824c41ab",
+  "abilityParamId": 11700000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10710012001,
+      "name": "setCombatActionTimeline",
+      "UID": "ff8e2354-378a-411c-93b1-e32a224f9144",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Fly_Attack03",
+    "Fly_Attack03_BackSwing"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10072_Attack03",
+    "Eff_Parmon_10072_Skill_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "subAbilityIds": {},
+  "searchTargetRangeDown": 5
+}

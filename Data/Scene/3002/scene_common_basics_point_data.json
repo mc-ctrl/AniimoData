@@ -1,0 +1,2106 @@
+{
+  "53813229": {
+    "name": "大门",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009,
+    "id": 53813229,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        -1720.81,
+        91,
+        586.11
+      ],
+      "name": "0",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1720.81,
+      91,
+      586.11
+    ]
+  },
+  "79378150": {
+    "id": 79378150,
+    "logics": {},
+    "pointType": 2,
+    "name": "Y0",
+    "position": [
+      -1746.99,
+      94.61,
+      631.43
+    ],
+    "rotation": [
+      0,
+      97.3,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162
+  },
+  "54592265": {
+    "name": "小炭犬示爱_52765895",
+    "rotation": [
+      0,
+      227.9,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 54592265,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        -1649.92,
+        93.34,
+        804.76
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1649.92,
+      93.34,
+      804.76
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "79382125": {
+    "name": "基础点位_79382125",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 79382125,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        -1735.03,
+        95.61,
+        617.6
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1735.03,
+      95.61,
+      617.6
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "55009457": {
+    "id": 55009457,
+    "logics": {},
+    "pointType": 2,
+    "name": "new探索_53200450",
+    "targetPositionData": {
+      "hookType": 2,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -1751.23,
+        103.5,
+        758.05
+      ],
+      "name": "主线-new探索",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "rotation": [
+      0,
+      284.7,
+      0
+    ],
+    "position": [
+      -1751.23,
+      103.5,
+      758.05
+    ],
+    "sandboxId": 49394857
+  },
+  "80233813": {
+    "name": "一线天妮可启动",
+    "rotation": [
+      0,
+      237.24,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 80233813,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -1655.2,
+      94.23,
+      798.73
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "56320119": {
+    "id": 56320119,
+    "logics": {},
+    "pointType": 2,
+    "name": "双子传送",
+    "position": [
+      -1739.1,
+      112.29,
+      713.52
+    ],
+    "rotation": [
+      0,
+      27.7,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857
+  },
+  "82120644": {
+    "name": "大门",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 82120644,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        -1720.81,
+        91,
+        586.11
+      ],
+      "name": "0",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1720.81,
+      91,
+      586.11
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "56476969": {
+    "name": "timeline_52753063",
+    "rotation": [
+      0,
+      233.8,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 56476969,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        -1653.15,
+        94.03,
+        800.61
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1653.15,
+      94.03,
+      800.61
+    ]
+  },
+  "56723121": {
+    "id": 56723121,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_56723121",
+    "rotation": [
+      0,
+      311.5,
+      0
+    ],
+    "position": [
+      -1641.29,
+      93.01,
+      802.01
+    ],
+    "sandboxId": 49394857
+  },
+  "84662896": {
+    "name": "基础点位_84662896",
+    "rotation": [
+      0,
+      201.92,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 84662896,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -1748.94,
+      108.4,
+      746.13
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "59748093": {
+    "name": "boss房",
+    "rotation": [
+      0,
+      170.32,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009,
+    "id": 59748093,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        15
+      ],
+      "position": [
+        -1714.74,
+        90.73,
+        566.08
+      ],
+      "name": "",
+      "author": "lin.xu"
+    },
+    "position": [
+      -1714.74,
+      90.73,
+      566.08
+    ]
+  },
+  "90837782": {
+    "id": 90837782,
+    "logics": {},
+    "pointType": 2,
+    "name": "Y1a",
+    "position": [
+      -1743.84,
+      94.61,
+      632.8
+    ],
+    "rotation": [
+      0,
+      97.3,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162
+  },
+  "60632871": {
+    "id": 60632871,
+    "logics": {},
+    "pointType": 2,
+    "name": "NK_60632871",
+    "position": [
+      -1716.81,
+      90.77,
+      564.3
+    ],
+    "rotation": [
+      0,
+      161.85,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "90837783": {
+    "id": 90837783,
+    "logics": {},
+    "pointType": 2,
+    "name": "X1a",
+    "position": [
+      -1743.4,
+      94.61,
+      631.66
+    ],
+    "rotation": [
+      0,
+      38,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162
+  },
+  "60632911": {
+    "id": 60632911,
+    "logics": {},
+    "pointType": 2,
+    "name": "X",
+    "position": [
+      -1712.15,
+      90.73,
+      563.95
+    ],
+    "rotation": [
+      0,
+      171.04,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "60632950": {
+    "id": 60632950,
+    "logics": {},
+    "pointType": 2,
+    "name": "Y",
+    "position": [
+      -1718.67,
+      90.77,
+      561.26
+    ],
+    "rotation": [
+      0,
+      152.59,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "61562060": {
+    "name": "鱼_61562060",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 61562060,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        -1663.55,
+        93.13,
+        775.04
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1663.55,
+      93.13,
+      775.04
+    ]
+  },
+  "91080624": {
+    "name": "T0",
+    "rotation": [
+      0,
+      197.36,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 91080624,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3.3
+      ],
+      "position": [
+        -1646.41,
+        107.13,
+        680.35
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": false,
+    "position": [
+      -1646.41,
+      107.13,
+      680.35
+    ]
+  },
+  "61753487": {
+    "name": "A未知声音",
+    "rotation": [
+      0,
+      180.64,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 61753487,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1751.82,
+        105.44,
+        755.62
+      ],
+      "name": "主线-未知声音",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1751.82,
+      105.44,
+      755.62
+    ]
+  },
+  "91155145": {
+    "name": "T4",
+    "rotation": [
+      0,
+      197.36,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 91155145,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1718.21,
+        97.52,
+        644.6
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1718.21,
+      97.52,
+      644.6
+    ]
+  },
+  "61767397": {
+    "name": "基础点位_61767397",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 61767397,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        -1663.55,
+        92.62,
+        775.04
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1663.55,
+      92.62,
+      775.04
+    ]
+  },
+  "91198902": {
+    "name": "2602165触发",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 91198902,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        1.6
+      ],
+      "position": [
+        -1635.92,
+        93.34,
+        800.43
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1635.92,
+      93.34,
+      800.43
+    ]
+  },
+  "62251760": {
+    "id": 62251760,
+    "logics": {},
+    "pointType": 2,
+    "name": "双子触发R",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        18
+      ],
+      "position": [
+        -1738.86,
+        112.51,
+        718.95
+      ],
+      "name": "主线-未知声音",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -1738.86,
+      112.51,
+      718.95
+    ],
+    "sandboxId": 49394857
+  },
+  "91299725": {
+    "name": "T5",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 91299725,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1673.77,
+        102.99,
+        665.83
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1673.77,
+      102.99,
+      665.83
+    ]
+  },
+  "62943065": {
+    "name": "timeline_52753063",
+    "rotation": [
+      0,
+      233.8,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 62943065,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        1
+      ],
+      "position": [
+        -1651.43,
+        94.03,
+        802.23
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1651.43,
+      94.03,
+      802.23
+    ]
+  },
+  "72063425": {
+    "id": 72063425,
+    "logics": {},
+    "pointType": 2,
+    "name": "妮可山口",
+    "position": [
+      -1649.77,
+      93.31,
+      804.83
+    ],
+    "rotation": [
+      0,
+      207.6,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72127769": {
+    "name": "靠近boss触发",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009,
+    "id": 72127769,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        35
+      ],
+      "position": [
+        -1707.45,
+        96.47,
+        534.27
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1707.45,
+      96.47,
+      534.27
+    ]
+  },
+  "72128087": {
+    "name": "大门触发",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009,
+    "id": 72128087,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        -1719.82,
+        92.3,
+        582.63
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1719.82,
+      92.3,
+      582.63
+    ]
+  },
+  "72205099": {
+    "name": "基础点位_72205099",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 72205099,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "position": [
+        -1690.35,
+        92.55,
+        752.33
+      ],
+      "hookType": 0,
+      "isTargetPosition": true,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1690.35,
+      92.55,
+      752.33
+    ]
+  },
+  "72305729": {
+    "id": 72305729,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72305729",
+    "position": [
+      -1688.71,
+      94.71,
+      784.2
+    ],
+    "rotation": [
+      0,
+      209.61,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857
+  },
+  "72306607": {
+    "id": 72306607,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72306607",
+    "position": [
+      -1683.94,
+      94.86,
+      787.67
+    ],
+    "rotation": [
+      0,
+      227.16,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857
+  },
+  "72306835": {
+    "name": "妮可终点",
+    "rotation": [
+      0,
+      355.81,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 72306835,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        1.5
+      ],
+      "position": [
+        -1740.16,
+        103.21,
+        766.65
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1740.16,
+      103.21,
+      766.65
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "72318903": {
+    "name": "靠近莲顶鱼",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 72318903,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        13
+      ],
+      "position": [
+        -1690.08,
+        93.06,
+        752.72
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1690.08,
+      93.06,
+      752.72
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "72319969": {
+    "id": 72319969,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72319969",
+    "position": [
+      -1720.19,
+      90.82,
+      582.07
+    ],
+    "rotation": [
+      0,
+      113.57,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72320460": {
+    "id": 72320460,
+    "logics": {},
+    "pointType": 2,
+    "name": "玩家位置",
+    "position": [
+      -1719.41,
+      90.82,
+      584.33
+    ],
+    "rotation": [
+      0,
+      162.7,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72320461": {
+    "id": 72320461,
+    "logics": {},
+    "pointType": 2,
+    "name": "玩家宠物点",
+    "position": [
+      -1720.69,
+      90.82,
+      583.75
+    ],
+    "rotation": [
+      0,
+      147.3,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72320633": {
+    "id": 72320633,
+    "logics": {},
+    "pointType": 2,
+    "name": "妮可位置",
+    "position": [
+      -1719.02,
+      90.82,
+      583.48
+    ],
+    "rotation": [
+      0,
+      330.6,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72320654": {
+    "id": 72320654,
+    "logics": {},
+    "pointType": 2,
+    "name": "y位置",
+    "position": [
+      -1720.24,
+      90.82,
+      582.77
+    ],
+    "rotation": [
+      0,
+      1.4,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72324159": {
+    "id": 72324159,
+    "logics": {},
+    "pointType": 2,
+    "name": "玩家宠物点2",
+    "position": [
+      -1720.69,
+      90.82,
+      583.75
+    ],
+    "rotation": [
+      0,
+      94.7,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72324163": {
+    "id": 72324163,
+    "logics": {},
+    "pointType": 2,
+    "name": "y位置2",
+    "position": [
+      -1720.24,
+      90.82,
+      582.77
+    ],
+    "rotation": [
+      0,
+      35.3,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72325933": {
+    "id": 72325933,
+    "logics": {},
+    "pointType": 2,
+    "name": "nk00",
+    "position": [
+      -1640.12,
+      92.98,
+      806.34
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72404186": {
+    "id": 72404186,
+    "logics": {},
+    "pointType": 2,
+    "name": "出生2",
+    "position": [
+      -1625.36,
+      92.16,
+      799.07
+    ],
+    "rotation": [
+      0,
+      202.2,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72478869": {
+    "name": "靠近走调草",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 72478869,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        9
+      ],
+      "position": [
+        -1691.19,
+        94.03,
+        777.77
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1691.19,
+      94.03,
+      777.77
+    ]
+  },
+  "72534555": {
+    "id": 72534555,
+    "logics": {},
+    "pointType": 2,
+    "name": "nk2",
+    "position": [
+      -1625.54,
+      92.14,
+      798.27
+    ],
+    "rotation": [
+      0,
+      15.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72621195": {
+    "id": 72621195,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72621195",
+    "position": [
+      -1709.43,
+      90.73,
+      540.52
+    ],
+    "rotation": [
+      0,
+      172.65,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "72694297": {
+    "id": 72694297,
+    "logics": {},
+    "pointType": 2,
+    "name": "蹲姿",
+    "position": [
+      -1636.42,
+      92.66,
+      800.56
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72694298": {
+    "id": 72694298,
+    "logics": {},
+    "pointType": 2,
+    "name": "蹲姿2",
+    "position": [
+      -1643.02,
+      92.95,
+      802.45
+    ],
+    "rotation": [
+      0,
+      283.5,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72740408": {
+    "id": 72740408,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72740408",
+    "position": [
+      -1658.01,
+      94.78,
+      795.68
+    ],
+    "rotation": [
+      0,
+      231.8,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72741782": {
+    "id": 72741782,
+    "logics": {},
+    "pointType": 2,
+    "name": "cao位置0",
+    "position": [
+      -1656.71,
+      94.83,
+      794.34
+    ],
+    "rotation": [
+      0,
+      350.55,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72741909": {
+    "id": 72741909,
+    "logics": {},
+    "pointType": 2,
+    "name": "ca位置1",
+    "position": [
+      -1657.21,
+      94.83,
+      796.53
+    ],
+    "rotation": [
+      0,
+      341.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "72741910": {
+    "id": 72741910,
+    "logics": {},
+    "pointType": 2,
+    "name": "cao位置2",
+    "position": [
+      -1659.69,
+      94.76,
+      797.69
+    ],
+    "rotation": [
+      0,
+      274.28,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "90946513": {
+    "name": "双子触发",
+    "rotation": [
+      0,
+      254.8,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 90946513,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1742.85,
+        94.6,
+        632.5
+      ],
+      "name": "主线-未知声音",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1742.85,
+      94.6,
+      632.5
+    ]
+  },
+  "90837787": {
+    "id": 90837787,
+    "logics": {},
+    "pointType": 2,
+    "name": "玩家1a",
+    "position": [
+      -1742.19,
+      94.6,
+      632.73
+    ],
+    "rotation": [
+      0,
+      254.8,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162
+  },
+  "82127471": {
+    "name": "基础点位_82127401",
+    "rotation": [
+      0,
+      163.4,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 82127471,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -1720.05,
+      90.75,
+      582.67
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "82127401": {
+    "name": "基础点位_82127401",
+    "rotation": [
+      0,
+      163.4,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 82127401,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -1719.21,
+      90.78,
+      583.19
+    ],
+    "AreaLoadTypeNoNormal": 1
+  },
+  "82120641": {
+    "name": "大门触发",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 82120641,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        8
+      ],
+      "position": [
+        -1718.58,
+        92.3,
+        578.46
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "enable": false,
+    "position": [
+      -1718.58,
+      92.3,
+      578.46
+    ]
+  },
+  "79378149": {
+    "id": 79378149,
+    "logics": {},
+    "pointType": 2,
+    "name": "X0",
+    "position": [
+      -1746.55,
+      94.61,
+      630.29
+    ],
+    "rotation": [
+      0,
+      38,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162
+  },
+  "52753063": {
+    "name": "跟上去看看_52753063",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 52753063,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2.2
+      ],
+      "position": [
+        -1635.63,
+        93.34,
+        799.94
+      ],
+      "name": "0",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1635.63,
+      93.34,
+      799.94
+    ]
+  },
+  "72742338": {
+    "name": "跟上去看看_52753063",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 72742338,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2.2
+      ],
+      "position": [
+        -1635.63,
+        92.69,
+        799.94
+      ],
+      "name": "0",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1635.63,
+      92.69,
+      799.94
+    ]
+  },
+  "72800645": {
+    "id": 72800645,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72800645",
+    "position": [
+      -1625.74,
+      92.13,
+      798.49
+    ],
+    "rotation": [
+      0,
+      29.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "52753217": {
+    "name": "豁然开朗1_52753217",
+    "rotation": [
+      0,
+      223.2,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774,
+    "id": 52753217,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        -1657.43,
+        95.21,
+        796.71
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1657.43,
+      95.21,
+      796.71
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "72859744": {
+    "id": 72859744,
+    "logics": {},
+    "pointType": 2,
+    "name": "远景注视结束站位",
+    "position": [
+      -1701.25,
+      97.65,
+      792.45
+    ],
+    "rotation": [
+      0,
+      26.74,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857
+  },
+  "52758355": {
+    "id": 52758355,
+    "logics": {},
+    "pointType": 2,
+    "name": "双子触发",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1754.06,
+        112.51,
+        726.49
+      ],
+      "name": "主线-未知声音",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -1754.06,
+      112.51,
+      726.49
+    ],
+    "sandboxId": 49394857
+  },
+  "72859950": {
+    "name": "继续探索moveto_53200450",
+    "rotation": [
+      0,
+      255.84,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 72859950,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        30
+      ],
+      "position": [
+        -1744.26,
+        99.97,
+        783.17
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1744.26,
+      99.97,
+      783.17
+    ]
+  },
+  "72876842": {
+    "id": 72876842,
+    "logics": {},
+    "pointType": 2,
+    "name": "妮可离开",
+    "position": [
+      -1741.29,
+      102.92,
+      768.19
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857
+  },
+  "53010627": {
+    "id": 53010627,
+    "logics": {},
+    "pointType": 2,
+    "name": "豁然开朗0_52753217",
+    "position": [
+      -1654.42,
+      93.99,
+      799.29
+    ],
+    "rotation": [
+      0,
+      248.51,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "73157444": {
+    "id": 73157444,
+    "logics": {},
+    "pointType": 2,
+    "name": "战斗玩家位置",
+    "position": [
+      -1708.28,
+      90.77,
+      560.57
+    ],
+    "rotation": [
+      0,
+      172.65,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "53116620": {
+    "name": "妮可调度",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 53116620,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        30
+      ],
+      "position": [
+        -1691.68,
+        94.07,
+        776.69
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1691.68,
+      94.07,
+      776.69
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "73157446": {
+    "id": 73157446,
+    "logics": {},
+    "pointType": 2,
+    "name": "战斗宠物位置",
+    "position": [
+      -1708.9,
+      90.76,
+      560.98
+    ],
+    "rotation": [
+      0,
+      171.52,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "53116704": {
+    "id": 53116704,
+    "logics": {},
+    "pointType": 2,
+    "name": "星露莉捕捉moveT_53116704",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        15
+      ],
+      "position": [
+        -1743.14,
+        100.37,
+        779.17
+      ],
+      "name": "主线-星露莉捕捉",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -1743.14,
+      100.37,
+      779.17
+    ],
+    "sandboxId": 49394857
+  },
+  "73157447": {
+    "id": 73157447,
+    "logics": {},
+    "pointType": 2,
+    "name": "战斗妮可位置",
+    "position": [
+      -1702.6,
+      90.73,
+      538.25
+    ],
+    "rotation": [
+      0,
+      190,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "53188219": {
+    "id": 53188219,
+    "logics": {},
+    "pointType": 2,
+    "name": "捕捉走调草_53188219",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        4
+      ],
+      "position": [
+        -1691.82,
+        94.81,
+        776.42
+      ],
+      "name": "主线-走调草捕捉触发",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      -1691.82,
+      94.81,
+      776.42
+    ],
+    "sandboxId": 49394857
+  },
+  "73157448": {
+    "id": 73157448,
+    "logics": {},
+    "pointType": 2,
+    "name": "战斗Y位置",
+    "position": [
+      -1707.5,
+      90.81,
+      560.85
+    ],
+    "rotation": [
+      0,
+      188.6,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 53904009
+  },
+  "53200450": {
+    "id": 53200450,
+    "logics": {},
+    "pointType": 2,
+    "name": "继续探索山谷_53200450",
+    "targetPositionData": {
+      "scene": 3000,
+      "hookType": 2,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1708.13,
+        97.06,
+        786.19
+      ],
+      "name": "主线-继续探索山谷",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "rotation": [
+      0,
+      284.7,
+      0
+    ],
+    "position": [
+      -1708.13,
+      97.06,
+      786.19
+    ],
+    "sandboxId": 49394857
+  },
+  "73573596": {
+    "name": "双子触发-线",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 73573596,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        -1754.06,
+        111.62,
+        726.49
+      ],
+      "name": "主线-未知声音",
+      "arriveType": 1,
+      "author": "lin.xu"
+    },
+    "position": [
+      -1754.06,
+      111.62,
+      726.49
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "53175743": {
+    "id": 53175743,
+    "logics": {},
+    "pointType": 2,
+    "name": "走调草moveto2_53175743",
+    "rotation": [
+      0,
+      285.73,
+      0
+    ],
+    "position": [
+      -1692.07,
+      94.26,
+      776.48
+    ],
+    "sandboxId": 49394857
+  },
+  "76795165": {
+    "name": "T1",
+    "rotation": [
+      0,
+      197.36,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 76795165,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -1661.69,
+        103.98,
+        670.84
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1661.69,
+      103.98,
+      670.84
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "76795167": {
+    "name": "T2",
+    "rotation": [
+      0,
+      197.36,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 76795167,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        10
+      ],
+      "position": [
+        -1699.74,
+        99.71,
+        654.67
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1699.74,
+      99.71,
+      654.67
+    ]
+  },
+  "76795168": {
+    "name": "T3",
+    "rotation": [
+      0,
+      197.36,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162,
+    "id": 76795168,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        12
+      ],
+      "position": [
+        -1739.57,
+        95.29,
+        633.93
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1739.57,
+      95.29,
+      633.93
+    ]
+  },
+  "78254368": {
+    "id": 78254368,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_78254368",
+    "position": [
+      -1625.76,
+      92.13,
+      798.55
+    ],
+    "rotation": [
+      356.77,
+      358.8,
+      1.05
+    ],
+    "entityType": 0,
+    "sandboxId": 53873774
+  },
+  "53201409": {
+    "name": "继续探索moveto_53200450",
+    "rotation": [
+      0,
+      255.84,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 55680217,
+    "id": 53201409,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        8
+      ],
+      "position": [
+        -1730.81,
+        99.97,
+        785.78
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1730.81,
+      99.97,
+      785.78
+    ]
+  },
+  "78877174": {
+    "name": "玩家坐姿点",
+    "rotation": [
+      0,
+      39.4,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 78877174,
+    "logics": {},
+    "pointType": 2,
+    "position": [
+      -1738.56,
+      111.55,
+      750.37
+    ],
+    "AreaLoadTypeNoNormal": 0
+  },
+  "53290707": {
+    "name": "星露莉捕捉_53116704",
+    "rotation": [
+      270.81,
+      155.79,
+      155.79
+    ],
+    "entityType": 0,
+    "sandboxId": 49394857,
+    "id": 53290707,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        1
+      ],
+      "position": [
+        -1739.09,
+        101.24,
+        783.67
+      ],
+      "author": "worldx_ch"
+    },
+    "position": [
+      -1739.09,
+      101.24,
+      783.67
+    ]
+  },
+  "79378148": {
+    "id": 79378148,
+    "logics": {},
+    "pointType": 2,
+    "name": "玩家",
+    "position": [
+      -1745.39,
+      94.59,
+      631.42
+    ],
+    "rotation": [
+      0,
+      242,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 76795162
+  }
+}

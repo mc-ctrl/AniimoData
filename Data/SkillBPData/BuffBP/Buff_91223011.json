@@ -1,0 +1,187 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91223011",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "936007a7-4aa6-4bbb-93f2-ca85ec340b8c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "actionIds": [
+        2
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "332059dd-b22f-4835-9ce4-d182ad14b5d7",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "24": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "6e40bea1-3b90-44b4-bd93-04dcbeba322c",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "23": {
+      "rValue": 9,
+      "name": "greater",
+      "UID": "61daa5e4-076b-473a-82d3-bc9107f67f84",
+      "NodeID": 23,
+      "lValue": {
+        "templateId": 91223011,
+        "name": "getBuffLayer",
+        "UID": "807d7cdc-5e60-480c-85a9-bae686313152",
+        "target": "OWNER",
+        "NodeID": 22
+      }
+    },
+    "10": {
+      "rValue": 5,
+      "name": "greater",
+      "UID": "7628bce9-990c-49d5-9083-71187a10e2ef",
+      "NodeID": 10,
+      "lValue": {
+        "templateId": 91223011,
+        "name": "getBuffLayer",
+        "UID": "0f9ecbdb-ec19-4913-9803-0120ddf072e0",
+        "target": "OWNER",
+        "NodeID": 9
+      }
+    },
+    "15": {
+      "buffId": 9122302,
+      "name": "hasBuff",
+      "UID": "3c10ce1b-00bb-4278-bb0f-a27100daf36b",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "buffId": 91223011,
+      "name": "removeBuff",
+      "UID": "89f6c10e-e274-4cc4-b1d1-46a436eeec11",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "16": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91223012,
+      "NodeID": 16,
+      "UID": "f4a81a4f-3b68-4e17-af14-f2d40157d654",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "rValue": 5,
+      "name": "greater",
+      "UID": "0b814281-e53d-4f8e-9ddd-51801b266443",
+      "NodeID": 8,
+      "lValue": {
+        "templateId": 91223011,
+        "name": "getBuffLayer",
+        "UID": "362b181d-4e23-4446-80d5-cf9b57ea37e6",
+        "target": "OWNER",
+        "NodeID": 7
+      }
+    },
+    "21": {
+      "buffId": 9122302,
+      "name": "hasBuff",
+      "UID": "e0d9661c-5db6-4f23-8e92-67b907223e38",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "13": {
+      "buffId": 91223011,
+      "name": "removeBuff",
+      "UID": "cc9e3b3a-622d-4fe5-9351-ace56e3425b6",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "18": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "d040f43a-3565-4cd6-b4f1-9abdc9989b8d",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 91223012,
+      "NodeID": 2,
+      "UID": "d7a042ee-b748-48e1-ac18-90f078c25d94",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "eb38152f-1ceb-4f2e-9908-c6f3b98408ee",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "20": {
+      "rValue": 9,
+      "name": "greater",
+      "UID": "c3ba0c0a-4615-4e96-96f1-c7acc858ee95",
+      "NodeID": 20,
+      "lValue": {
+        "templateId": 91223011,
+        "name": "getBuffLayer",
+        "UID": "e7c49739-fd59-43bc-bdc1-4293a9b58418",
+        "target": "OWNER",
+        "NodeID": 19
+      }
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "0f480763-e7c8-48ea-beff-c9472e611130",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        24
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    5,
+    12
+  ]
+}

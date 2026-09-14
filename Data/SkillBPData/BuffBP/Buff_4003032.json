@@ -1,0 +1,124 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4003032",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    11
+  ],
+  "isDeathKeep": true,
+  "onBuffInheritIds": [
+    5,
+    15
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 4003032,
+      "name": "removeBuff",
+      "UID": "25440776-bdf1-487c-8301-b46377de0ae5",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "084fa3db-763e-4cf5-b53c-0c71b81ead94",
+      "effectId": "Eff_Parmon_QXXZ_Boom_Loop",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "15": {
+      "scale": 2,
+      "NodeID": 15,
+      "UID": "25a3fdbf-1790-4a84-bd55-f5f324439aee",
+      "effectId": "Eff_Parmon_QXXZ_Boom_Loop",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true,
+      "offsetXYZ": [
+        0,
+        3,
+        0
+      ],
+      "duration": 3
+    },
+    "16": {
+      "key": "TimeSuolian01",
+      "name": "setServerCacheVal",
+      "UID": "68dfb023-e0f6-4c13-926b-10539e78820d",
+      "target": "SRC",
+      "val": 0,
+      "NodeID": 16
+    },
+    "8": {
+      "id": 2036,
+      "hasCountDown": true,
+      "NodeID": 8,
+      "UID": "4cb496a3-e012-4675-b6bc-b03ff92a1666",
+      "name": "hideBossMechanismTip"
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2030321,
+      "name": "createEntity",
+      "UID": "e9fcb334-7de9-4eed-8cf7-973e64c25191",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 9,
+      "pos": "OWNER"
+    },
+    "11": {
+      "key": "creatboom",
+      "duration": 5.5,
+      "actionIds": [
+        13,
+        12,
+        9,
+        16
+      ],
+      "NodeID": 11,
+      "UID": "7d9dfcb3-da27-467c-a836-566e6bb0d7f7",
+      "name": "addEntityTimer"
+    },
+    "5": {
+      "actionIds": [
+        3,
+        8
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "4e387a2b-9dcd-4d0a-9aca-ba35111fb939",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6df47e09-b53e-4084-b172-2baff2eef357",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil_Hit",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    13
+  ],
+  "onBuffStartIds": [
+    5,
+    11
+  ]
+}

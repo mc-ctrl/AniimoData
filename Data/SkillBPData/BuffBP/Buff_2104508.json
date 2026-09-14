@@ -1,0 +1,175 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104508",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Common_Skill_Grass_Shield_Loop"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "31": {
+      "endNum": 5,
+      "actionIds": [
+        29
+      ],
+      "NodeID": 31,
+      "UID": "d5262709-b652-4685-878a-6ef600affeee",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    },
+    "29": {
+      "offsetXYZ": [
+        0,
+        -0.18,
+        0
+      ],
+      "templateId": 104514,
+      "NodeID": 29,
+      "UID": "2866b70b-128a-48c2-b2da-7dbecb442920",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Creation",
+      "stick": 0,
+      "pos": {
+        "rotation": "Null",
+        "radius": 6,
+        "NodeID": 28,
+        "UID": "26247b3a-14c3-4003-9fd4-58e5bab24f57",
+        "angle": {
+          "rValue": 72,
+          "name": "add",
+          "UID": "e0bad4fa-b618-4aba-8163-0e6e614d960b",
+          "NodeID": 27,
+          "lValue": {
+            "rValue": {
+              "UID": "8d315db2-ce6d-476d-a50b-d6796919de56",
+              "val": 72,
+              "name": "getConstVal",
+              "NodeID": 32
+            },
+            "name": "multiply",
+            "UID": "384370a1-72a9-45b6-9763-65e30bbd2b59",
+            "NodeID": 26,
+            "lValue": {
+              "UID": "eab44e85-81b7-482d-b968-ae798a7526eb",
+              "name": "getIterNumber",
+              "NodeID": 25
+            }
+          }
+        },
+        "center": {
+          "UID": "5d368904-4b26-4fa9-9b63-74a3606e7750",
+          "target": "OWNER",
+          "name": "getTargetPosition",
+          "NodeID": 33
+        },
+        "name": "getRotatedPoint"
+      },
+      "name": "createEntity"
+    },
+    "24": {
+      "UID": "04d52595-cd1e-4c38-8664-f20e924ba36b",
+      "target": "OWNER",
+      "name": "getTargetPosition",
+      "NodeID": 24
+    },
+    "33": {
+      "UID": "5d368904-4b26-4fa9-9b63-74a3606e7750",
+      "target": "OWNER",
+      "name": "getTargetPosition",
+      "NodeID": 33
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        -0.18,
+        0
+      ],
+      "templateId": 104514,
+      "NodeID": 19,
+      "UID": "55c3fed0-fcc9-4c05-b18c-228da5f3b31c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Creation",
+      "stick": 0,
+      "pos": {
+        "rotation": "Null",
+        "radius": 12,
+        "NodeID": 18,
+        "UID": "1cc857cb-9687-42fd-a6fb-3788f2db574c",
+        "angle": {
+          "rValue": 36,
+          "name": "add",
+          "UID": "a9447287-f3ac-402d-80d7-21a7f5053619",
+          "NodeID": 17,
+          "lValue": {
+            "rValue": {
+              "UID": "57373632-6c14-43fa-a1fe-ac51d28e4eeb",
+              "val": 36,
+              "name": "getConstVal",
+              "NodeID": 23
+            },
+            "name": "multiply",
+            "UID": "296ea7fd-9ff2-4ddd-b470-b43b8164bac6",
+            "NodeID": 16,
+            "lValue": {
+              "UID": "2f480573-e17a-4fb2-8f81-a3e23d17ff4d",
+              "name": "getIterNumber",
+              "NodeID": 15
+            }
+          }
+        },
+        "center": {
+          "UID": "04d52595-cd1e-4c38-8664-f20e924ba36b",
+          "target": "OWNER",
+          "name": "getTargetPosition",
+          "NodeID": 24
+        },
+        "name": "getRotatedPoint"
+      },
+      "name": "createEntity"
+    },
+    "35": {
+      "key": "LeafyLotus",
+      "name": "setCacheVal",
+      "UID": "9b21196d-e0fa-445f-8c5d-c373937f08c5",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 35
+    },
+    "21": {
+      "endNum": 10,
+      "actionIds": [
+        19
+      ],
+      "NodeID": 21,
+      "UID": "4c07da10-9c83-4ab9-aa5c-f4f3e2bdb54b",
+      "stepNum": 1,
+      "startNum": 1,
+      "name": "forEach"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    35,
+    21,
+    31
+  ]
+}

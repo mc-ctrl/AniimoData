@@ -1,0 +1,17 @@
+[
+  {
+    "friendshipLevel": 1,
+    "toastId": 103001,
+    "funcName": "sendGift"
+  },
+  {
+    "friendshipLevel": 1,
+    "toastId": 10045,
+    "funcName": "exchangePet"
+  },
+  {
+    "friendshipLevel": 1,
+    "toastId": 10046,
+    "funcName": "sendPet"
+  }
+]

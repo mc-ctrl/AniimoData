@@ -1,0 +1,2310 @@
+{
+  "154043": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1333496160,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154044": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1831414019,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154045": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1570692791,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154046": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1216702322,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154047": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1778437544,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154048": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2050819435,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154049": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1411085178,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154050": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1702089778,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154051": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2118251762,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154052": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2034068909,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154053": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1968773857,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154054": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1898590954,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155054",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155001": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1239386466,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155001",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155002": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1546723040,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155002",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155003": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1417911109,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155004": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1775925255,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155004",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155005": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2067093847,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155005",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155006": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1323227389,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155007": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1653142802,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155007",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "153001": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1408766907,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Assist_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 30,
+    "isServerAI": 1,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155009": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1201649684,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155010": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1726514233,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "153002": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1595125331,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Assist_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 30,
+    "isServerAI": 1,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "153003": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1735167150,
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "bTree": "SM_BotPlayer_Root",
+    "engageView": 30,
+    "isServerAI": 1,
+    "normalAtkAbilityId": 131010
+  },
+  "155013": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2123622401,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_154042",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155014": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1969748715,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155015": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1652308716,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154001": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1259443066,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155017": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2022826166,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155018": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1452878096,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155019": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1478082505,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155019",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154004": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1224622443,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154005": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1144574217,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154006": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1305049198,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154007": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1637351342,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154008": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2130412786,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154009": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1688806394,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154010": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1733941179,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154011": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1510859109,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154012": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2142420175,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154013": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1401531091,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_154042",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155028": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1306825596,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155029": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1629765091,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155030": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1888659906,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155031": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2105197446,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155032": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1410874696,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155033": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1214851016,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010061": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1534451898,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151006",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010070": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1435538306,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151007",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155041": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2098338781,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155042": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1136332130,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155043": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1684096873,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155043",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155044": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1201706900,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155045": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1134694648,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155046": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2028508556,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155047": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1426910334,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155047",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155048": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1283617166,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155054": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2119768912,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155054",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155103": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1297693692,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155133": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1580560537,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155154": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2117808774,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155054",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155233": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1510246076,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155254": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1597288684,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155054",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155333": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2130830652,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "301001": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1074666742,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Assist_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol_BotPlayer",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 60,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "301002": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1602752425,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Assist_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol_BotPlayer",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 60,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "301003": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1465718026,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Assist_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol_BotPlayer",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 60,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "301004": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1164735390,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Assist_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol_BotPlayer",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 60,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010010": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1638433253,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151001",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010011": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1746415861,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151001",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010020": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1943501866,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151002",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010021": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2020573004,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151002",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010030": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1620637526,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151003",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010031": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2089792929,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151003",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010040": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1380971751,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151004",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010041": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1142953035,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151004",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010050": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1867635677,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151005",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010051": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1418218776,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151005",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010052": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1454016995,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151005",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010060": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1441292902,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151006",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "1010071": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1192351589,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_151007",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "153004": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1467261563,
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "bTree": "SM_BotPlayer_Root",
+    "engageView": 30,
+    "isServerAI": 1,
+    "normalAtkAbilityId": 131010
+  },
+  "153005": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1344833402,
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "bTree": "SM_BotPlayer_Root",
+    "engageView": 30,
+    "isServerAI": 1,
+    "normalAtkAbilityId": 131010
+  },
+  "153006": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1292165473,
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "bTree": "SM_BotPlayer_Root",
+    "engageView": 30,
+    "isServerAI": 1,
+    "normalAtkAbilityId": 131010
+  },
+  "154002": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1283884455,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154003": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1132860828,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155021": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1846025547,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155039": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1424627934,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155040": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1465827936,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155022": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2060512658,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155024": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1378488775,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155025": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1299211725,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155027": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1236442382,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155027",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155026": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1915990671,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155023": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1803839416,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_154023",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155020": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1511175262,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155020",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155016": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1531806727,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155012": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1825299025,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154014": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2062452532,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154015": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1869418999,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154016": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2104682583,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154017": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1901947443,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154018": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1610348283,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154019": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1558713486,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154020": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1711532201,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_154020",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155011": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1760689233,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154021": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1824109296,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154022": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1868579892,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154023": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1593141370,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_154023",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "155008": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2067763342,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_155008",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154024": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1379541154,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154025": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1258521464,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154026": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1294105452,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154027": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1239693948,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154028": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1815797682,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154029": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1744978380,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154030": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1167323920,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154031": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1890098534,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154032": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1882409201,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154033": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1145232436,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154034": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1275889734,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154035": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1196192316,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154036": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1312800205,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154037": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2010696184,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154038": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2089378676,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154039": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 2022595424,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154040": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1649230802,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154041": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1108873690,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  },
+  "154042": {
+    "initPetActionMode": 2,
+    "canWalkBack": true,
+    "canWalkLeftOrRight": true,
+    "name": 1235111195,
+    "engageViewType": 1,
+    "Param_ST_Player_AutoCombat": "PBT_BotPlayer_Combat_154042",
+    "Param_ST_Player_Idle": "PBT_Behav_Com_IdlePatrol",
+    "skillList": [
+      130010,
+      112030
+    ],
+    "patrolRange": 6,
+    "normalAtkAbilityId": 131010,
+    "engageView": 10,
+    "attackType": 2,
+    "bTree": "SM_BotPlayer_Root"
+  }
+}

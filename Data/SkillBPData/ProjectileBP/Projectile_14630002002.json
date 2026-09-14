@@ -1,0 +1,203 @@
+{
+  "duration": 0.6,
+  "calcResultNodeId": 35,
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10463_Attack_03_01",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 9999,
+  "hasAttackDataInOnProjectileHit": false,
+  "onProjectileTickIds": [
+    38
+  ],
+  "moveSpeed": 0,
+  "onProjectileFinishIds": [
+    65
+  ],
+  "defaultHitSoundType": "s",
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "52": {
+      "UID": "5fe677b3-8d65-4809-afa0-37e28cc617d3",
+      "value": {
+        "key": "4539902",
+        "name": "getCacheVal",
+        "UID": "2a06a54a-2317-4fa6-9536-7d0e1e2497ea",
+        "target": "OWNER",
+        "NodeID": 51
+      },
+      "name": "print",
+      "NodeID": 52
+    },
+    "38": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 35,
+      "NodeID": 38,
+      "UID": "55a02433-3402-49db-a3ec-6f5f1b67d4bd",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        46,
+        36,
+        52,
+        66
+      ]
+    },
+    "46": {
+      "key": "4539902",
+      "name": "setCacheVal",
+      "UID": "d29154eb-da79-4cb3-9da4-31de4c77098e",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "32b5b05d-238d-455d-b145-cbfa67265bd9",
+        "NodeID": 45,
+        "lValue": {
+          "key": "4539902",
+          "name": "getCacheVal",
+          "UID": "60607e91-f163-4837-bae6-047c3d5e39d5",
+          "target": "OWNER",
+          "NodeID": 44
+        }
+      },
+      "NodeID": 46
+    },
+    "35": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14630002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "cba3d79b-7676-404d-a92c-2ac4c5f5b76b",
+      "target": "TARGET",
+      "NodeID": 35,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30401,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Parmon_10453_Skill_EX_spere_shouji"
+      }
+    },
+    "65": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "18428da0-992a-4c35-b5d4-d7e439f42266",
+      "effectId": "Eff_Parmon_10463_Attack_03_End",
+      "speed": 1,
+      "NodeID": 65
+    },
+    "48": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "15b33482-1de9-46a2-9ae1-c6d59dda64ab",
+      "NodeID": 48,
+      "lValue": {
+        "key": "4539902",
+        "name": "getCacheVal",
+        "UID": "f37ccff6-c034-4a7b-b40e-68dbe0da171b",
+        "target": "OWNER",
+        "NodeID": 47
+      }
+    },
+    "66": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c647a39e-8bd9-4134-91ff-adbb563c631a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_Attack03_Hit",
+      "NodeID": 66
+    },
+    "50": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14630002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "bbecb10f-900f-472f-b556-d5de943e975c",
+      "target": "TARGET",
+      "NodeID": 50,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30401,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 2000
+      }
+    },
+    "36": {
+      "actionIds": [
+        50
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "fdec81ab-5967-483f-a2d2-8d7ee879bf74",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        35
+      ],
+      "NodeID": 36
+    }
+  },
+  "tickInterval": 0.1,
+  "BPName": "ability_14630002",
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Parmon_10453_Skill_EX_spere_shouji",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

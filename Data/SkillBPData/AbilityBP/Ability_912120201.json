@@ -1,0 +1,61 @@
+{
+  "BPName": "ability_912120201",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "80": {
+      "reclaim": true,
+      "name": "stopEffectStr",
+      "UID": "0888e563-6b09-4500-a9c0-fc3114eacfb5",
+      "effectId": "Eff_Parmon_10212_Skill_SunBeam_Boss",
+      "target": "OWNER",
+      "NodeID": 80
+    },
+    "9": {
+      "timelineId": 912120201001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "78": {
+      "name": "stopSoundStr",
+      "UID": "d4912af2-0250-4e4f-9047-f21a0b2d15ce",
+      "soundId": "SFX_Combat_10212_Skill_SunBeam",
+      "target": "OWNER",
+      "NodeID": 78
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_SleepStart",
+    "Skill_SleepLoop",
+    "Skill_SleepEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_SunBeam_Boss",
+    "Eff_Parmon_10212_Skill_SunBeam_Body_XuLi"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "onAbilityEndIds": [
+    80,
+    78
+  ],
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 10600514,
+  "refBones": [
+    "Root"
+  ]
+}

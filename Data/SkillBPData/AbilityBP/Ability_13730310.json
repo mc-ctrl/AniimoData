@@ -1,0 +1,62 @@
+{
+  "BPName": "ability_13730310",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityIndicator": 1,
+  "abilityParamId": 11300080,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 13730310001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 12,
+  "preloadAnims": [
+    "Skill_Cast_Long"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10373_Skill_Mooncrash_Release01",
+    "Eff_Parmon_10373_Skill_Mooncrash_Release02",
+    "Eff_Parmon_10373_Skill_Mooncrash_Fly",
+    "Eff_Parmon_10373_Skill_Mooncrash_Explosion",
+    "Eff_Parmon_10373_Skill_Mooncrash_Release03",
+    "Eff_Parmon_10371_Attack04_Explosion"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 2,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      3,
+      3,
+      1
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "POS_OR_TARGET",
+    "maxNum": 0
+  },
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

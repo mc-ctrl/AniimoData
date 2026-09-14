@@ -1,0 +1,55 @@
+{
+  "42891244": {
+    "id": 42891244,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "StunLoop",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 999,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Dizzy",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 999,
+                  "name": "tEmojiBubbleTimeout"
+                },
+                {
+                  "realValue": true,
+                  "name": "tNeedLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          1.6,
+          6,
+          -138.73
+        ]
+      }
+    ],
+    "pos": [
+      1.6,
+      6,
+      -138.73
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 42834374
+  }
+}

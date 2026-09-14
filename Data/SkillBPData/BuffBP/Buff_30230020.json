@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "4": {
+      "key": "30230020",
+      "name": "setCacheVal",
+      "UID": "070ab116-03ed-4c50-9811-a48a3f00f700",
+      "target": "MASTER",
+      "val": {
+        "rValue": {
+          "UID": "7e2da36c-afa5-4ccd-b443-7fd9877c6e81",
+          "name": "getEventShieldChangePoint",
+          "NodeID": 9
+        },
+        "name": "add",
+        "UID": "90506867-f2df-41d8-9a26-29bacc88065b",
+        "NodeID": 3,
+        "lValue": {
+          "key": "30230020",
+          "name": "getCacheVal",
+          "UID": "810f003a-c0ad-4c8e-9ff7-7c0d62a51936",
+          "target": "MASTER",
+          "NodeID": 2
+        }
+      },
+      "NodeID": 4
+    },
+    "7": {
+      "unsummonValid": false,
+      "actionIds": [
+        6
+      ],
+      "name": "registerGroupEvent",
+      "UID": "d1441995-591f-4b01-9284-db25001bdba4",
+      "NodeID": 7
+    },
+    "6": {
+      "UID": "dcab75a3-e03d-4133-999f-1c5f3a5a54dc",
+      "name": "registerShieldChangeEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 6
+    }
+  },
+  "BPName": "buff_30230020",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

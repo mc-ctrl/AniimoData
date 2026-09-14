@@ -1,0 +1,56 @@
+{
+  "3": {
+    "maxLevel": 35,
+    "petMaxLevel": 1890659700,
+    "petMinLevel": 1678292886,
+    "minLevel": 25
+  },
+  "4": {
+    "maxLevel": 40,
+    "petMaxLevel": 1235632186,
+    "petMinLevel": 1100629862,
+    "minLevel": 35
+  },
+  "6": {
+    "maxLevel": 50,
+    "petMaxLevel": 1134642695,
+    "petMinLevel": 2118766527,
+    "minLevel": 45
+  },
+  "7": {
+    "maxLevel": 55,
+    "petMaxLevel": 1465461478,
+    "petMinLevel": 1604706534,
+    "minLevel": 50
+  },
+  "8": {
+    "maxLevel": 60,
+    "petMaxLevel": 1949839679,
+    "petMinLevel": 1737143683,
+    "minLevel": 55
+  },
+  "9": {
+    "maxLevel": 65,
+    "minLevel": 60
+  },
+  "5": {
+    "maxLevel": 45,
+    "petMaxLevel": 1929848330,
+    "petMinLevel": 1942632274,
+    "minLevel": 40
+  },
+  "0": {
+    "maxLevel": 1,
+    "minLevel": 1
+  },
+  "1": {
+    "maxLevel": 1,
+    "petMaxLevel": 1346036537,
+    "petMinLevel": 1273989827,
+    "minLevel": 1
+  },
+  "2": {
+    "maxLevel": 25,
+    "minLevel": 1
+  }
+}

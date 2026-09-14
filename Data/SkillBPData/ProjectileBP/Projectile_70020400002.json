@@ -1,0 +1,140 @@
+{
+  "duration": 4,
+  "BPName": "ability_70020400",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": {
+    "str": "Eff_Monster_Robot_Atk_Cannon_Skill_Burst_Dmg_Fly_",
+    "name": "constString",
+    "UID": "f43bdef0-ef35-4be6-810d-ad40a6760c9d",
+    "NodeID": 60,
+    "concatenateNumber": {
+      "UID": "07d6b3aa-c393-4844-b641-4614fffa6f25",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 59
+    }
+  },
+  "ignoreActorCollision": true,
+  "gravityRatio": 2,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "70": {
+      "UID": "66e7a39b-7e57-4a1d-b92f-9b08b3d2c16c",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 70
+    },
+    "59": {
+      "UID": "07d6b3aa-c393-4844-b641-4614fffa6f25",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 59
+    },
+    "89": {
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "9598a1a6-1b9d-4e30-8d67-3cee28877985",
+      "effectId": "Eff_Buff_Rogue_Heal_Pickup",
+      "speed": 1,
+      "NodeID": 89
+    },
+    "72": {
+      "scale": 1.2,
+      "name": "playEffectOnPosRot",
+      "UID": "e0e73c8d-377e-4e55-be19-3a8b00096897",
+      "effectId": "ParadoxNotion.Serialization.LUASerializer+constStringActionNodeInfo",
+      "pos": {
+        "UID": "1b4fe294-3de6-4978-9118-ce410cd057e6",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "620c6b8a-ae51-4fcf-9726-a09f9a3f4dfa",
+          "name": "getProjectilePos",
+          "NodeID": 77
+        },
+        "NodeID": 78
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 72,
+      "rot": "OWNER"
+    },
+    "86": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "UID": "042f1dad-7427-4a0a-a72d-f8817193a63f",
+            "number": 0.01,
+            "name": "constNumber",
+            "NodeID": 88
+          },
+          "name": "multiply",
+          "UID": "514912d7-d6cc-45c5-ba64-bd50980d3264",
+          "NodeID": 84,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "c85cfbe8-d55f-4bf6-a387-0a713a1736b4",
+            "target": "OWNER",
+            "NodeID": 83,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "80993bf0-f753-4f2d-8c45-8b2fe2ef2eed",
+      "target": "TARGET",
+      "NodeID": 86
+    },
+    "76": {
+      "actionIds": [
+        86,
+        89
+      ],
+      "name": "actOnTargets",
+      "UID": "6f803a79-0102-473c-b8f1-8da041995e2a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.6,
+            2,
+            2.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 76
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    76,
+    72
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.6,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.05,
+  "ignoreAbilityElement": true,
+  "acceleration": 0
+}

@@ -1,0 +1,232 @@
+{
+  "nodeMap": {
+    "53": {
+      "result": 2,
+      "name": "pushChargeQteResult",
+      "UID": "4776f388-ab00-4f7b-b066-7098e0c5ac88",
+      "NodeID": 53,
+      "chargeQteId": "QTE_10475_Charge"
+    },
+    "83": {
+      "action": {
+        "actionIds": [
+          81,
+          93
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 83,
+      "UID": "3be562c0-c332-43f7-8708-81f08b289789"
+    },
+    "44": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "eeaa881f-4fa7-4658-a91f-0bb85cad4fef",
+      "target": "OWNER",
+      "NodeID": 44,
+      "animId": "Skill_FrenzyBeatEnd"
+    },
+    "143": {
+      "UID": "e39aba61-9366-4b85-bd82-ed9ad6b42838",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          141,
+          144,
+          146
+        ]
+      },
+      "NodeID": 143
+    },
+    "117": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14750300,
+        "instant_dmg_rate_v": "param0",
+        "instant_bp_add_ratio": "param1",
+        "type": 2
+      },
+      "UID": "b991fea2-5d2a-42d2-bfd2-c5f69fe1142a",
+      "target": "TARGET",
+      "NodeID": 117,
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+        "hitCameraShakeId": 20100,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "SFX_Parmon_10475_Hit_Middle",
+        "airImpulseId": 11200
+      }
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8b662eb8-e359-405d-8d6c-d5d35d9e7063",
+      "effectId": "Eff_Parmon_10475_Skill_FrenzyBeat_03",
+      "speed": 1,
+      "NodeID": 67
+    },
+    "119": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 117,
+      "NodeID": 119,
+      "UID": "30a3b4b0-7696-41b6-bf74-93998052127e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.5,
+            40,
+            2,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        117
+      ]
+    },
+    "70": {
+      "name": "stopEffectStr",
+      "UID": "be3a7c2a-75e9-4884-b988-22dd5f0e26f0",
+      "effectId": "Eff_Parmon_10475_Skill_FrenzyBeat_01",
+      "target": "OWNER",
+      "NodeID": 70
+    },
+    "121": {
+      "tickInterval": 0.15,
+      "eventType": "NotifyState",
+      "endTime": 0.3,
+      "NodeID": 121,
+      "UID": "16b64bf1-75a6-4a7e-8b92-22c49f7fee46",
+      "onUpdate": {
+        "actionIds": [
+          119
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          119
+        ]
+      }
+    },
+    "74": {
+      "UID": "dfeb2207-0f0b-402e-8a3d-3a21dc878288",
+      "target": "OWNER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 74
+    },
+    "46": {
+      "UID": "70f1948c-0810-4c06-bc59-ff20772dc0d1",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          53,
+          70,
+          44,
+          67,
+          74,
+          161
+        ]
+      },
+      "NodeID": 46
+    },
+    "81": {
+      "UID": "8ada1825-55d7-4fa4-bdc6-18ba85fa7308",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 81
+    },
+    "146": {
+      "UID": "2f9f8294-9cc8-494b-bb58-ee72abdac369",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 146
+    },
+    "144": {
+      "result": 3,
+      "name": "pushChargeQteResult",
+      "UID": "d79c12c2-d025-48ba-87b3-816828942a9a",
+      "NodeID": 144,
+      "chargeQteId": "QTE_10475_Charge"
+    },
+    "93": {
+      "UID": "de596815-02dc-4fa1-b5f0-e81e21d01e1c",
+      "name": "stopChargeQte",
+      "chargeQteId": "QTE_10475_Charge",
+      "NodeID": 93
+    },
+    "161": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8f2e5e5c-e00e-4d65-89f7-b2d1c69e7af8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10475_Skill_FrenzyBeat_End2",
+      "NodeID": 161
+    },
+    "99": {
+      "UID": "21f99a54-1aaa-4b01-a769-c5e0e4473af6",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 99
+    },
+    "101": {
+      "UID": "b0c68b07-6a3d-4a72-b130-9b92fed0f146",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          99
+        ]
+      },
+      "NodeID": 101
+    },
+    "141": {
+      "buffId": 9147104,
+      "name": "removeBuff",
+      "UID": "16e065bc-ff40-42b9-8ef8-56a5526d5d07",
+      "target": "OWNER",
+      "NodeID": 141
+    }
+  },
+  "BPName": "ability_14750300",
+  "NodeID": 48,
+  "UID": "8c0f555a-9b94-4f54-a536-be622cc7e65a",
+  "eventIds": [
+    46,
+    83,
+    143,
+    101,
+    121
+  ],
+  "layer": "Base",
+  "length": 3
+}

@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_90213007",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8c759cb1-daf9-4368-b117-9974d03181db",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Red_Waterwave",
+      "speed": 1,
+      "NodeID": 3
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003007",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "3bd837c3-8ffe-4519-afa6-345bd1240941",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "13": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "4009ae39-5959-4e03-b722-342897a2349e",
+      "target": {
+        "UID": "8a58c5cf-5612-40aa-b476-ec134db26c4e",
+        "name": "getEventAttackTarget",
+        "NodeID": 12
+      },
+      "NodeID": 13
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "20ef891c-658b-4dbe-bdd9-8b60489f143f",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "6": {
+      "isClearOld": true,
+      "UID": "595987db-af04-4cab-9846-fc83f662658d",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 6,
+      "calcInfoByLuaConfig": {
+        "id": 6003007,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      }
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

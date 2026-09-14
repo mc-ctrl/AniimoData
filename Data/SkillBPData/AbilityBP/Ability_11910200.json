@@ -1,0 +1,44 @@
+{
+  "BPName": "ability_11910200",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 10300021,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11910200001,
+      "name": "setCombatActionTimeline",
+      "UID": "51fde7c8-b480-44d3-93b3-174f00d9d637",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_LongBreath_Start",
+    "Skill_LongBreath_Loop",
+    "Skill_LongBreath_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10191_AttackSpecial_Length_Loop",
+    "Eff_Parmon_10043_Attack01_Hit",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10191_AttackSpecial_Length_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "searchTargetRangeDown": 2,
+  "onlyHasActOnTargets": true,
+  "UID": "6e2020e3-dce2-43c2-b46a-8dc3969581e8",
+  "refBones": [
+    "Bone Starfish Root"
+  ]
+}

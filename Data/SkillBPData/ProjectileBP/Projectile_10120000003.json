@@ -1,0 +1,134 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10120000",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10011_Attack",
+  "enableMaxAngleTime": 1,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 10,
+  "maxHitNum": 1,
+  "nodeMap": {
+    "33": {
+      "actionIds": [
+        74
+      ],
+      "conditionActionIds": [
+        76
+      ],
+      "UID": "a04bcc35-f696-4ae4-a41c-d0c97862c8db",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        32
+      ],
+      "NodeID": 33
+    },
+    "28": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.45
+      },
+      "name": "calcResult",
+      "UID": "23ac5f70-d597-4593-bf05-edfe8b8bf9e2",
+      "target": "CASTER",
+      "NodeID": 28
+    },
+    "29": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "dd77894b-55b3-4cfe-b728-f781ed8018e2",
+      "name": "doActionsByConditions",
+      "NodeID": 29
+    },
+    "74": {
+      "name": "calcResult",
+      "overrideCaster": "MASTER",
+      "calcInfoByLuaConfig": {
+        "id": 10120000,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "8ade0a65-28a6-405e-bd98-6d206688e79f",
+      "target": "TARGET",
+      "NodeID": 74,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100
+      }
+    },
+    "32": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10120000,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "ba431dfa-083a-4136-b46d-c4d805814726",
+      "target": "TARGET",
+      "NodeID": 32,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10100
+      }
+    },
+    "19": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "c13cdd82-370f-40d1-b925-9bc78b4c6df2",
+      "effectId": "Eff_Parmon_10011_Attack_Hit",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "035ec485-3f8d-43b6-9c75-10115b7ef4b9",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 34
+    },
+    "76": {
+      "buffId": 2101206,
+      "name": "hasBuff",
+      "UID": "01ed3898-8d20-4391-bba2-0af6ce2a744d",
+      "target": "OWNER",
+      "NodeID": 76
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    19
+  ],
+  "onProjectileHitIds": [
+    33,
+    29
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "calcResultNodeId": 32,
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "s",
+  "startSleepTime": 0,
+  "duration": 0.8,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

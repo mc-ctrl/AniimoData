@@ -1,0 +1,70 @@
+{
+  "3": {
+    "soundRange": [
+      150,
+      100,
+      50
+    ],
+    "level": 3,
+    "soundType": "normal"
+  },
+  "4": {
+    "soundRange": [
+      200,
+      150,
+      100,
+      50
+    ],
+    "level": 4,
+    "soundType": "normal"
+  },
+  "103": {
+    "soundRange": [
+      200,
+      150,
+      100,
+      50
+    ],
+    "level": 4,
+    "soundType": "ultrasound"
+  },
+  "102": {
+    "soundRange": [
+      150,
+      100,
+      50
+    ],
+    "level": 3,
+    "soundType": "ultrasound"
+  },
+  "101": {
+    "soundRange": [
+      100,
+      50
+    ],
+    "level": 2,
+    "soundType": "ultrasound"
+  },
+  "100": {
+    "soundRange": [
+      50
+    ],
+    "level": 1,
+    "soundType": "ultrasound"
+  },
+  "1": {
+    "soundRange": [
+      50
+    ],
+    "level": 1,
+    "soundType": "normal"
+  },
+  "2": {
+    "soundRange": [
+      100,
+      50
+    ],
+    "level": 2,
+    "soundType": "normal"
+  }
+}

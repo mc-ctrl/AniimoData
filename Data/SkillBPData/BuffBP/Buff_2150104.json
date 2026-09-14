@@ -1,0 +1,190 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2150104",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    5
+  ],
+  "onBuffLayerChangeIds": [
+    12
+  ],
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        18
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "cd132418-77cd-4a39-80b9-052b178410df",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3
+      ],
+      "NodeID": 5
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "93c2f6d8-4043-438b-8116-8ddf1f34c040",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint1",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "8": {
+      "actionIds": [
+        6,
+        9
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "44901bcb-df8c-4ef4-9659-d8eca5af45f4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21,
+        23
+      ],
+      "NodeID": 8
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "8ed112d5-1842-493f-a3d3-1e745895e4cd",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint2",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "11": {
+      "rValue": 24,
+      "name": "equal",
+      "UID": "2d974288-e664-4113-b7e2-a5616cda9af5",
+      "NodeID": 11,
+      "lValue": {
+        "templateId": 2150104,
+        "name": "getBuffLayer",
+        "UID": "8ee3882f-b54b-4a01-9928-ba5ae6686764",
+        "target": "OWNER",
+        "NodeID": 10
+      }
+    },
+    "20": {
+      "name": "checkPetPrototypeId",
+      "UID": "088afecc-75f0-496d-aa78-427c2db68cae",
+      "target": "SRC",
+      "petPrototypeId": 1050301,
+      "NodeID": 20
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "752b1e28-5a80-45d7-bf1b-8698bf35e6bc",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint1",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "09e98ff6-7d6e-4657-893a-3c24a6768769",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint1",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "25cd4bb2-60c0-4a20-966f-379e0985d0ab",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint2",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "24": {
+      "name": "checkPetPrototypeId",
+      "UID": "1762bc0b-2616-44b3-80f5-01741bc1e7e2",
+      "target": "SRC",
+      "petPrototypeId": 1050301,
+      "NodeID": 24
+    },
+    "15": {
+      "actionIds": [
+        13,
+        16
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "13bf9cf0-7496-4e23-8c46-032b4b95fedf",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25,
+        27
+      ],
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8f490dc4-17dd-483f-acbc-a557d05ef6af",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint2",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "8406bcdf-5c02-44c9-a73e-2ff9846685b0",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint1",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "efdbcf99-0a24-43d5-999a-273653a07a29",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint1",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "name": "checkPetPrototypeId",
+      "UID": "78f4b24f-499e-4b5e-8043-e29e1aa9a805",
+      "target": "SRC",
+      "petPrototypeId": 1050301,
+      "NodeID": 17
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cec034c7-4695-410d-9763-ef55ed229a59",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw_Dark_PawPrint1",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "12": {
+      "actionIds": [
+        15
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "37a65493-2589-4c28-8b21-01d02cc0d695",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "031e061e-96fa-44d6-bb26-6afec40ee5fd",
+      "effectId": "Eff_Parmon_10503_Rampage_Skill_CrazyClaw1_PawPrint2",
+      "target": "OWNER",
+      "NodeID": 23
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

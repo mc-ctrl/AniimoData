@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020005",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "onBuffThinkIds": [
+    7
+  ],
+  "onBuffInheritIds": [
+    4
+  ],
+  "nodeMap": {
+    "4": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "5246a8aa-246f-4cff-878f-2c051b7ad86e",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "7": {
+      "threshold": 1,
+      "thresholdActionIds": [
+        6
+      ],
+      "voxelTag": "normalGrass",
+      "radius": 1,
+      "UID": "39309ce1-9a43-4cca-8528-f7a5f3307af6",
+      "target": "OWNER",
+      "NodeID": 7,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "6": {
+      "name": "calcResult",
+      "UID": "c08377e2-3b54-4ffe-92de-ef0def6eb05c",
+      "target": "CURPET",
+      "NodeID": 6,
+      "calcInfoByLuaConfig": {
+        "id": 4020005,
+        "type": 1,
+        "add_cur_ep_fix": "param0"
+      }
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

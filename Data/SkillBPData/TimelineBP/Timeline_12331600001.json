@@ -1,0 +1,215 @@
+{
+  "nodeMap": {
+    "22": {
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "templateId": 22331303,
+      "NodeID": 22,
+      "UID": "34fff1d2-5327-45f1-a323-bbe051d92985",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "OWNER",
+      "name": "createEntity"
+    },
+    "4": {
+      "UID": "e4eb8fa4-a395-43c2-b64d-2d2bb10012a5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          2,
+          14,
+          23
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "77ac2633-4489-41ad-9b2a-e23f8bd84262",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Velouria_Skill_TornadoTrap_Start",
+      "NodeID": 24
+    },
+    "14": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "8553b01b-a429-4a07-b964-5e9ad2f5ff11",
+      "target": "OWNER",
+      "val": {
+        "UID": "29cd87e3-7d2c-4eff-85bf-2f53a1be7598",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 13
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4649fb05-526f-4442-9b4c-dc21d64b116e",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_Tornado",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "randomMinVal": -3,
+      "name": "clientGenRandomInt",
+      "UID": "b60dd7f7-20a6-4d5d-84e8-d8dfc1167229",
+      "NodeID": 15,
+      "forbidSameAsPrev": true,
+      "randomMaxVal": 3
+    },
+    "16": {
+      "convertType": 0,
+      "name": "toInt",
+      "UID": "5b465de1-6c51-41e5-9c28-843f430a45eb",
+      "val": {
+        "randomMinVal": -3,
+        "name": "clientGenRandomInt",
+        "UID": "b60dd7f7-20a6-4d5d-84e8-d8dfc1167229",
+        "NodeID": 15,
+        "forbidSameAsPrev": true,
+        "randomMaxVal": 3
+      },
+      "NodeID": 16
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7a532fe3-5136-4190-b835-dd54f364fc1d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Velouria_Skill_Tornado",
+      "NodeID": 23
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "324be7f7-d2c7-465d-a701-ab032a719353",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Hypnospore"
+    },
+    "18": {
+      "offsetXYZ": {
+        "NodeID": 17,
+        "name": "constVector3",
+        "UID": "4466231f-28b7-4c2a-bfd2-418bfabd8427",
+        "x": {
+          "convertType": 0,
+          "name": "toInt",
+          "UID": "5b465de1-6c51-41e5-9c28-843f430a45eb",
+          "val": {
+            "randomMinVal": -3,
+            "name": "clientGenRandomInt",
+            "UID": "b60dd7f7-20a6-4d5d-84e8-d8dfc1167229",
+            "NodeID": 15,
+            "forbidSameAsPrev": true,
+            "randomMaxVal": 3
+          },
+          "NodeID": 16
+        },
+        "y": 0.5,
+        "z": {
+          "convertType": 0,
+          "name": "toInt",
+          "UID": "5b465de1-6c51-41e5-9c28-843f430a45eb",
+          "val": {
+            "randomMinVal": -3,
+            "name": "clientGenRandomInt",
+            "UID": "b60dd7f7-20a6-4d5d-84e8-d8dfc1167229",
+            "NodeID": 15,
+            "forbidSameAsPrev": true,
+            "randomMaxVal": 3
+          },
+          "NodeID": 16
+        }
+      },
+      "templateId": 22331302,
+      "NodeID": 18,
+      "UID": "02334ad2-05f1-471c-9184-d191b568355d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "deadOnMasterDestroy": true,
+      "deadOnMasterLeaveCombat": true,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "stick": 0,
+      "pos": "OWNER",
+      "name": "createEntity"
+    },
+    "21": {
+      "rValue": 0.5,
+      "name": "greater",
+      "UID": "45b1e02f-9da4-4601-b792-36b0610c186c",
+      "NodeID": 21,
+      "lValue": {
+        "UID": "ae3b7f77-a956-4a53-b8bd-503396566ebd",
+        "target": "OWNER",
+        "name": "getHpRatio",
+        "NodeID": 20
+      }
+    },
+    "19": {
+      "actionIds": [
+        22
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "ef33a64d-a23c-4314-a03d-de4ab3ad29e0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "6e3b0de6-b673-4392-bff0-271cd8a0a958",
+      "target": "CASTER",
+      "NodeID": 2
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          10,
+          19,
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.35,
+      "NodeID": 12,
+      "UID": "ec702347-8e3f-4c92-8868-d22c33bb0c39"
+    }
+  },
+  "BPName": "ability_12331600",
+  "NodeID": 6,
+  "UID": "565084b5-9852-411f-8059-eb08aec2712d",
+  "eventIds": [
+    4,
+    12
+  ],
+  "layer": "Base",
+  "length": 2.1
+}

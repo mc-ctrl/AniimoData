@@ -1,0 +1,18 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 10093,
+    "type": 1,
+    "dmg_rock_dec_ratio": "param0"
+  },
+  "BPName": "buff_10093",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

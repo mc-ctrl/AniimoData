@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_run_v": -0.6,
+    "speed_ratio_sprint_v": -0.6,
+    "normal_attack_speed_add_ratio": -0.6,
+    "speed_ratio_dash_v": -0.6,
+    "speed_ratio_walk_v": -0.6
+  },
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    11,
+    8
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 10089,
+    "speed_ratio_sprint_v": "param0",
+    "speed_ratio_dash_v": "param0",
+    "type": 1,
+    "speed_ratio_run_v": "param0",
+    "normal_attack_speed_add_ratio": "param0",
+    "speed_ratio_walk_v": "param0"
+  },
+  "BPName": "buff_10089",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fb0ae9f7-b5e6-4f47-9767-d56989ec002d",
+      "effectId": "Eff_Parmon_10474_Skill_Skill_Smash_02",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "33c78b5b-8308-46d9-83d0-f47d0859ce8b",
+      "effectId": "Eff_Parmon_10474_Skill_Skill_Smash_02",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

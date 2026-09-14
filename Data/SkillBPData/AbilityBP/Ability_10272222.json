@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_10272222",
+  "NodeID": 1,
+  "UID": "f2e6d1be-7ab4-4474-85eb-f66ad56b59be",
+  "abilityParamId": 11200490,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "timelineId": 10272222001,
+      "name": "setCombatActionTimeline",
+      "UID": "48a6e5d6-b622-4bae-a277-c73b48dfd876",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 2,
+  "preloadAnims": [
+    "Skill_Smash03",
+    "Skill_Smash_BackSwing"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Dark_Blunt",
+    "Eff_Parmon_10027_Skill_Entrance_Ground_03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 1,
+  "searchTargetRangeUp": 1,
+  "shortDesc": "",
+  "tags": [
+    1
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

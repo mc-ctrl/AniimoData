@@ -1,0 +1,51 @@
+{
+  "BPName": "ability_11920300",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11920300001,
+      "name": "setCombatActionTimeline",
+      "UID": "571c0079-3142-4bfa-83e0-4eeda09f0f55",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "55": {
+      "weight": 0,
+      "blendShapeName": "BS_10192_03",
+      "name": "setSMRBlendShapeWeight",
+      "UID": "3c42123f-0ab8-4ab6-a164-5169e18d5178",
+      "NodeID": 55
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Roll_Start",
+    "Skill_Roll_End",
+    "Skill_Roll_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10192_Skill_Roll_Water_Start",
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_10192_Skill_Roll_Water_Loop",
+    "Eff_Parmon_10192_Skill_Roll_Water_End"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "switchSafeTime": 1,
+  "onAbilityEndIds": [
+    55
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10300080
+}

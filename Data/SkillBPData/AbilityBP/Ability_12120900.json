@@ -1,0 +1,70 @@
+{
+  "BPName": "ability_12120900",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "abilityParamId": 9400139,
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12120900001,
+      "name": "setCombatActionTimeline",
+      "UID": "3dc91cb4-0974-48cf-bc37-9b8a2d0f06a7",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "3c4fc14f-3a11-4428-b6a6-14922704c8c5",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 31
+    },
+    "9": {
+      "actionIds": [
+        31,
+        34
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "fd656c26-b8b9-42d0-b5f5-6a68b8e00e9b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "33": {
+      "name": "isInCombat",
+      "UID": "c5d63e79-40c3-4b4f-9e90-4d2370eed511",
+      "target": "OWNER",
+      "NodeID": 33,
+      "not": false
+    },
+    "34": {
+      "UID": "b65377d6-2902-4793-9484-3c72084f155a",
+      "name": "showBubbleMsg",
+      "msgId": 2254,
+      "NodeID": 34
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "EnvBehav_Bloom"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_MagicFlower_Body_003"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "delayStartCd": true,
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

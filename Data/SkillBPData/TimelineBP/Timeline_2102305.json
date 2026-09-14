@@ -1,0 +1,38 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "duration": 1.1,
+      "name": "moveByDirection",
+      "UID": "240da47b-5a0f-4fca-8af6-8d9101c15749",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "velocity": [
+        0,
+        0,
+        20
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "a871eae0-932e-435a-a3e1-2c42977bdf20",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 6
+    }
+  },
+  "BPName": "timeline_2102305",
+  "NodeID": 1,
+  "UID": "4510fe2e-4d3f-4898-bfe2-5487dc86f97c",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 1.2
+}

@@ -1,0 +1,351 @@
+{
+  "41701256": {
+    "owner": "路司机",
+    "chunk": 1018848,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 42302308,
+    "levelItems": {
+      "42936087": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42936087,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "42989692": {
+        "majorCompId": 0,
+        "scale": [
+          12,
+          10,
+          2
+        ],
+        "EditorName": "P_Item_Trigger_SB_2",
+        "position": [
+          -13.73,
+          6.45,
+          -122
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42989692,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "isActive": true
+      },
+      "43446515": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -8.85,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43446515,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "43508910": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint",
+        "position": [
+          -14.13,
+          6.45,
+          -78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43508910,
+        "configId": 73,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -14.13,
+            6.45,
+            -78
+          ],
+          "arriveType": 1,
+          "author": "worldx_ch"
+        },
+        "isActive": true
+      },
+      "43508921": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43508921,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "44657030": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_4",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 44657030,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "76152909": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          -4.13,
+          9.4,
+          -107.38
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 76152909,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          10,
+          14,
+          1
+        ],
+        "isActive": true
+      },
+      "76152910": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockBox_SB (1)",
+        "position": [
+          -24.66,
+          9.4,
+          -107.38
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 76152910,
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          11,
+          14,
+          1
+        ],
+        "isActive": true
+      },
+      "42302264": {
+        "majorCompId": 0,
+        "scale": [
+          2.5,
+          10,
+          2
+        ],
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -13.73,
+          6.45,
+          -109.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42302264,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "isActive": true
+      },
+      "42935846": {
+        "majorCompId": 0,
+        "scale": [
+          2.5,
+          10,
+          2
+        ],
+        "EditorName": "P_Item_Trigger_SB_1",
+        "position": [
+          -13.73,
+          6.45,
+          -91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42935846,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "isActive": true
+      },
+      "42936054": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -9.03,
+          6.45,
+          -99.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42936054,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "sightLevel": 128,
+    "spawners": [
+      42302129,
+      42302154,
+      42302215,
+      42935774
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8103/Sandbox_41701256_GraphRef.asset",
+    "id": 41701256,
+    "markIconSpawnerId": 0,
+    "position": [
+      -9.73,
+      9.83,
+      -131.09
+    ]
+  }
+}

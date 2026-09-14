@@ -1,0 +1,558 @@
+{
+  "91036067": {
+    "owner": "bifei.jiang",
+    "sandboxType": 1,
+    "chunk": 1019890,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91036067,
+    "spawners": [
+      91046392,
+      91046395,
+      91046400,
+      91046402,
+      91046404,
+      91046406,
+      91046436,
+      91046466,
+      91046468,
+      91046486,
+      91110989,
+      91110996,
+      91111002,
+      91111016,
+      91111035,
+      91119162,
+      91119164,
+      91119171,
+      91119182,
+      91119184,
+      91119190,
+      91119192,
+      91119199,
+      91297295,
+      91297297,
+      91297326,
+      91297357,
+      91297375,
+      91297753,
+      91298089,
+      91298093,
+      91298100,
+      91298124,
+      91298130,
+      91332511
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      49.13,
+      52.18,
+      1005.34
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "全局_生态点_学院一楼徽章情境"
+  },
+  "73270368": {
+    "areaType": 999,
+    "chunk": 1019892,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "3DAY_主线"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_多人城市_校长办公室椅子",
+    "spawners": [
+      73270370
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 73270368,
+    "spawnerId": 0,
+    "owner": "陈瑾瑜",
+    "position": [
+      48.58,
+      125,
+      1141.23
+    ]
+  },
+  "76707178": {
+    "owner": "陈瑾瑜",
+    "sandboxType": 1,
+    "chunk": 1019891,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 76707178,
+    "spawners": [
+      76707199,
+      76707201,
+      76878117,
+      76878168,
+      91147152,
+      91147180
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      41.19,
+      51.76,
+      1040.49
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "全局_生态点_新手ARK段情境-莉特、玻尔支线"
+  },
+  "76707205": {
+    "owner": "陈瑾瑜",
+    "chunk": 1019891,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91037151,
+    "levelItems": {
+      "91038719": {
+        "majorCompId": 0,
+        "owner": "bifei.jiang",
+        "EditorName": "上楼提示",
+        "position": [
+          49.19,
+          51.8,
+          1044.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91038719,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 3
+          }
+        },
+        "configId": 33,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91037290": {
+        "majorCompId": 0,
+        "owner": "bifei.jiang",
+        "EditorName": "P_Item_Trigger_Sphere_SB",
+        "position": [
+          48.83,
+          51.86,
+          1018.66
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91037290,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 9
+          }
+        },
+        "configId": 33,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 37,
+    "name": "全局_生态点_新手主线",
+    "spawners": [
+      76707209,
+      76707250,
+      76877285,
+      76877289,
+      76877350,
+      76877940,
+      76883609,
+      77239041,
+      77239043,
+      77239063,
+      77242330,
+      78796614,
+      79259335,
+      79267939,
+      79631976,
+      81600636,
+      81987686,
+      90303914,
+      91037297,
+      91042106,
+      91114226
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/5010002/Sandbox_76707205_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 76707205,
+    "markIconSpawnerId": 0,
+    "position": [
+      44.84,
+      63.69,
+      1060.72
+    ]
+  },
+  "91285676": {
+    "owner": "唐睿�?",
+    "sandboxType": 1,
+    "chunk": 1020915,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91285676,
+    "spawners": [
+      91292997,
+      91294734,
+      91294766,
+      91294801,
+      91294807,
+      91294812,
+      91294815,
+      91294818,
+      91294833,
+      91294835,
+      91294837,
+      91294840,
+      91294842,
+      91294844,
+      91301694
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      74.48,
+      52.12,
+      1036.07
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "全局_多人城市_OBT科普�?"
+  },
+  "90998713": {
+    "areaType": 999,
+    "chunk": 1019890,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_生态点_新手传送点",
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 90998713,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "position": [
+      25.89,
+      51.97,
+      1002.54
+    ],
+    "difficultyLevel": 0,
+    "autoEndType": 0,
+    "owner": "bifei.jiang"
+  },
+  "90268080": {
+    "owner": "施宗梵",
+    "chunk": 1019891,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 6,
+    "sightLevel": 128,
+    "spawners": [
+      90268082,
+      90268084,
+      90268086,
+      90268088,
+      90268090,
+      90268092,
+      90268094,
+      90268096,
+      90268098,
+      90268100,
+      90268102,
+      90268104,
+      90268108,
+      90268110,
+      90268112,
+      90268116,
+      90268118,
+      90268120,
+      90268122,
+      90268124,
+      90268126,
+      90268128,
+      90268130,
+      90268132,
+      90268134,
+      90268136,
+      90268138,
+      90268140
+    ],
+    "activeOnInit": 4,
+    "id": 90268080,
+    "markIconSpawnerId": 0,
+    "name": "全局_多人城市_悬浮标题_学院_迁移",
+    "position": [
+      52.87,
+      51.76,
+      1024.79
+    ]
+  },
+  "91025674": {
+    "owner": "唐睿尚",
+    "sandboxType": 1,
+    "chunk": 1019891,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91025674,
+    "spawners": [
+      91025705,
+      91026027,
+      91026244,
+      91030445,
+      91030448,
+      91030502,
+      91030696,
+      91033060,
+      91033064,
+      91034162,
+      91035456,
+      91035692,
+      91035702,
+      91095894,
+      91100582,
+      91120025
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      48.77,
+      51.76,
+      1026.33
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "全局_多人城市_学院大厅宠物生态白盒"
+  },
+  "72671018": {
+    "owner": "陈瑾瑜",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 72671018,
+    "spawners": [
+      72692544,
+      72692747,
+      72789719,
+      72789721,
+      72789723,
+      72789725,
+      72794334,
+      72794336,
+      72794345,
+      72794347,
+      72794349,
+      72794404,
+      72794572,
+      72794640,
+      72796197,
+      72796252,
+      72796317,
+      72796778,
+      72806023,
+      72806027,
+      72806029,
+      72820481,
+      72820483,
+      72820485,
+      72869517,
+      72869823,
+      72869826,
+      88501780
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      49.17,
+      58.4,
+      1071.33
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "全局_多人城市_学院大厅二楼情境（7day）"
+  },
+  "76707174": {
+    "owner": "陈瑾瑜",
+    "chunk": 1019891,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91026341,
+    "levelItems": {
+      "91026338": {
+        "majorCompId": 0,
+        "owner": "bifei.jiang",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          52.58,
+          51.76,
+          1018.45
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91026338,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91029301": {
+        "majorCompId": 0,
+        "owner": "bifei.jiang",
+        "EditorName": "P_Item_Trigger_Sphere_SB",
+        "position": [
+          45.6,
+          51.76,
+          1022.69
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91029301,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 10
+          }
+        },
+        "configId": 33,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 37,
+    "name": "全局_生态点_新手ARK段情境-翎AR讲学",
+    "spawners": [
+      76707183,
+      76877956,
+      76877960,
+      91042102
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/5010002/Sandbox_76707174_GraphRef.asset",
+    "sightLevel": 64,
+    "id": 76707174,
+    "markIconSpawnerId": 0,
+    "position": [
+      61.89,
+      51.76,
+      1031.3
+    ]
+  },
+  "72422356": {
+    "owner": "宋雨轩",
+    "sandboxType": 1,
+    "chunk": 1019891,
+    "spawners": [
+      72423799,
+      72423993,
+      72424028,
+      72424035,
+      72424038,
+      72425929,
+      72458106,
+      72458173,
+      72462296,
+      72462301,
+      72465979,
+      72465982,
+      72465984,
+      72622280,
+      72622328,
+      72622331,
+      72623506,
+      72757916,
+      72766070,
+      87041907,
+      87042151,
+      87042155,
+      87042157,
+      87042872,
+      87042897,
+      87042900,
+      87043137,
+      87043139,
+      87044025,
+      87044027,
+      87106034,
+      87106053
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "id": 72422356,
+    "sandBoxLevel": 0,
+    "markIconSpawnerId": 0,
+    "lastModifiedBy": "",
+    "position": [
+      48.98,
+      51.81,
+      1033.08
+    ],
+    "name": "全局_多人城市_学院大厅NPC情景",
+    "poiType": 501,
+    "enableFinishMark": false
+  }
+}

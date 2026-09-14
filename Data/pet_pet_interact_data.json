@@ -1,0 +1,98 @@
+{
+  "1004300": {
+    "1004300": {
+      "interactBehav": "PercpetEntityReactionTriggerCastSkill"
+    },
+    "1004500": {
+      "interactBehav": "PercpetEntityReactionTriggerCastSkill"
+    },
+    "1004100": {
+      "interactBehav": "PercpetEntityReactionTriggerCastSkill"
+    },
+    "1004200": {
+      "interactBehav": "PercpetEntityReactionTriggerCastSkill"
+    }
+  },
+  "1035100": {
+    "1035200": {
+      "interactBehav": "PercpetEntityReactionTriggerFollow"
+    }
+  },
+  "1003100": {
+    "1003100": {
+      "interactBehav": "PercpetEntityReactionTriggerFight"
+    }
+  },
+  "1018500": {
+    "1018500": {
+      "interactBehav": "PercpetEntityReactionTriggerAngry"
+    }
+  },
+  "1026100": {
+    "1005100": {
+      "interactBehav": "PercpetEntityReactionTriggerLeave"
+    }
+  },
+  "1002400": {
+    "1002200": {
+      "interactBehav": "PercpetEntityReactionTriggerFollow",
+      "interactArg": [
+        1.4
+      ]
+    }
+  },
+  "1005100": {
+    "1005200": {
+      "interactBehav": "PercpetEntityReactionTriggerFollow"
+    },
+    "1005300": {
+      "interactBehav": "PercpetEntityReactionTriggerFollow",
+      "interactArg": [
+        3,
+        [
+          [
+            72737706,
+            3
+          ],
+          [
+            72737702,
+            3
+          ]
+        ]
+      ]
+    },
+    "1026100": {
+      "interactBehav": "PercpetEntityReactionTriggerChase"
+    }
+  },
+  "1013200": {
+    "1026100": {
+      "interactBehav": "PercpetEntityReactionTriggerChase"
+    }
+  },
+  "1017100": {
+    "1017300": {
+      "interactBehav": "PercpetEntityReactionTriggerFollow"
+    }
+  },
+  "1016200": {
+    "1016200": {
+      "interactBehav": "PercpetEntityReactionTriggerFight"
+    }
+  },
+  "1001100": {
+    "1001200": {
+      "interactBehav": "PercpetEntityReactionTriggerFollow"
+    }
+  },
+  "1013100": {
+    "1026100": {
+      "interactBehav": "PercpetEntityReactionTriggerChase"
+    }
+  },
+  "1004200": {
+    "1004300": {
+      "interactBehav": "PercpetEntityReactionTriggerFollow"
+    }
+  }
+}

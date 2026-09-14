@@ -1,0 +1,61 @@
+{
+  "BPName": "ability_12331500",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "abilityIndicator": 1,
+  "abilityParamId": 40900001,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12331500001,
+      "name": "setCombatActionTimeline",
+      "UID": "7d8cee22-643a-48db-b69d-5e440653cc6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Hypnospore"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10233_Skill_Hypnospore02",
+    "Eff_Parmon_10233_Skill_Hypnospore01",
+    "Eff_Parmon_10233_Skill_Hypnospore03",
+    "Eff_Range_Indicator_Circle1"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      2,
+      2,
+      1
+    ],
+    "shapeKind": "Circle3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "POS_OR_TARGET",
+    "maxNum": 0
+  },
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

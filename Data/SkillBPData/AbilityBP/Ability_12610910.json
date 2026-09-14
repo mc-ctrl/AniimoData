@@ -1,0 +1,122 @@
+{
+  "BPName": "ability_12610910",
+  "NodeID": 1,
+  "UID": "51ad2801-7d20-4ec1-a635-a712b4b97529",
+  "desc": "",
+  "abilityType": 9,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "4": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "b1e4ce45-f149-4119-866c-2c748331733f",
+      "to": 12610910,
+      "NodeID": 4,
+      "from": 12610910
+    },
+    "6": {
+      "NodeID": 6,
+      "UID": "ff95f34b-77d4-44d2-a973-38f74b0d1486",
+      "exitActionIds": [
+        4,
+        15,
+        17
+      ],
+      "name": "registerInflateChangeEvent",
+      "enterActionIds": [
+        9,
+        16
+      ]
+    },
+    "15": {
+      "cdTime": 3,
+      "name": "forceSetSkillCD",
+      "NodeID": 15,
+      "UID": "7e5b6c3c-45d3-4a77-9622-0b2833152171",
+      "target": "OWNER",
+      "applyOnAll": false,
+      "abilityId": 12610910
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2cae6255-f643-4a6c-bd91-4a77a2a933ff",
+      "effectId": "Eff_Parmon_10261_Inflate_Loop",
+      "speed": 1,
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "edb9975a-4bd2-46e7-9be0-fd387d50d40e",
+      "name": "switchInflateState",
+      "enable": true,
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "4a109658-7f7e-42ed-8d10-02a52a12f62a",
+      "effectId": "Eff_Parmon_10261_Inflate_Loop",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "NodeID": 9,
+      "from": 12610910,
+      "to": 12610911,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 15,
+      "recoverOnExit": true,
+      "name": "switchSkill",
+      "UID": "314c3290-1b48-4528-80ad-23726c0f101c",
+      "notShowCountDown": false
+    },
+    "11": {
+      "UID": "20fdfc2b-bde7-4d59-9e04-aed80abb57ab",
+      "name": "switchInflateState",
+      "enable": false,
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "76061177-8580-4f57-9c46-d9025a5367dd",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        17,
+        11
+      ],
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "9204c61c-fcfa-456f-a68c-5a7d53840411",
+      "name": "registerPetLeaveControlEvent",
+      "actionIds": [
+        17,
+        11
+      ],
+      "NodeID": 14
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10261_Inflate_Loop"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "shortDesc": "",
+  "subAbilityIds": [
+    12610911
+  ],
+  "notTurnToTarget": true,
+  "searchTargetRangeDown": 0,
+  "abilityParamId": 9400105,
+  "onAbilityAddedIds": [
+    6,
+    13,
+    14
+  ]
+}

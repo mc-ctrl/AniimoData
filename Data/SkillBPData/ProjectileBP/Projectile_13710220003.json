@@ -1,0 +1,82 @@
+{
+  "angularIncreaseDuration": 0.15,
+  "calcResultNodeId": 146,
+  "NodeID": 166,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10371_Skill_Tail_Light",
+  "effectTimeInitOffset": 0,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 1200,
+  "maxHitNum": 1,
+  "BPName": "ability_13710220",
+  "minAngularOffset": 0,
+  "moveSpeed": 15,
+  "nodeMap": {
+    "237": {
+      "target": "TARGET",
+      "name": "playSoundStr",
+      "UID": "42719c1d-91ca-40e5-85fb-db026eab322b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Fox_Skill_Hit",
+      "NodeID": 237
+    },
+    "146": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13710220,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "2f42fd0b-7a3a-4e51-893c-072c1ac9c3cb",
+      "target": "TARGET",
+      "NodeID": 146,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "impulseId": 1000,
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301
+      }
+    },
+    "213": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2137105,
+      "NodeID": 213,
+      "UID": "0a7b9678-822f-4de0-9497-1fef4870ce94",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "onProjectileHitIds": [
+    146,
+    213,
+    237
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 5,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "targetPos": {
+    "key": "TargetPos",
+    "name": "getCacheVal",
+    "UID": "88f64c2d-2b9c-4068-86df-9cd9e332e357",
+    "target": "OWNER",
+    "NodeID": 165
+  },
+  "tickInterval": 0,
+  "UID": "1c89667f-3565-416f-b182-2a30014f99fc",
+  "duration": 3,
+  "defaultHitEffect": "Eff_Hit_Holy_Blue_Blunt_Big",
+  "groundSweepRadius": 0.05,
+  "impulseId": 1000,
+  "acceleration": 0
+}

@@ -1,0 +1,332 @@
+{
+  "nodeMap": {
+    "5": {
+      "action": {
+        "actionIds": [
+          3,
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 5,
+      "UID": "635c5bef-a805-4d12-b3e8-5a4956fe0c5f"
+    },
+    "38": {
+      "isRootDir": false,
+      "NodeID": 38,
+      "UID": "fe584e11-5b65-4e8f-9c5f-f5c7654b6322",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bip001 Spine"
+    },
+    "40": {
+      "target": "OWNER",
+      "pitch": [
+        15,
+        -15
+      ],
+      "name": "cameraLockOnTarget",
+      "UID": "d8958421-1552-4ca1-8823-36c4fa1e3e09",
+      "shoulder": [
+        0,
+        1.5,
+        -6.472
+      ],
+      "NodeID": 40,
+      "checkCaster": false
+    },
+    "41": {
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.5,
+      "NodeID": 41,
+      "UID": "a260f3d6-18a3-48eb-9d6b-8d8656d839cd"
+    },
+    "42": {
+      "time": 4.7,
+      "rotateSpeed": 60,
+      "name": "rotateTo",
+      "UID": "c56736ff-b798-4dc3-aea8-781cde545454",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 42
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ad2768d0-5df9-4380-bc00-f5dff4d58c6a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Green_Gm_04",
+      "NodeID": 35
+    },
+    "31": {
+      "calcResultNodeId": 29,
+      "name": "actOnTargets",
+      "UID": "db6806e9-881a-461c-baeb-2ba921f55cff",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            17.5,
+            10,
+            10
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "isRootDir": false,
+            "NodeID": 38,
+            "UID": "fe584e11-5b65-4e8f-9c5f-f5c7654b6322",
+            "target": "OWNER",
+            "name": "getBonePosition",
+            "boneName": "Bip001 Spine"
+          },
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        29
+      ],
+      "impulseId": 5007,
+      "NodeID": 31
+    },
+    "20": {
+      "name": "hideModel",
+      "UID": "8f5b4fca-4ce5-4864-8d8b-bd2f2357639f",
+      "target": "OWNER",
+      "NodeID": 20,
+      "maxHideTime": 4
+    },
+    "21": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        6.2,
+        1.56,
+        -0.23
+      ],
+      "speed": 1,
+      "NodeID": 21,
+      "UID": "b1e7af17-b240-455b-b836-f518d4be92a4",
+      "bone": "Bip001 Spine",
+      "name": "playEffectStr",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Gm_03_01"
+    },
+    "3": {
+      "UID": "a28fdd71-8776-44a4-a146-26b62a8c502c",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.7,
+      "NodeID": 23,
+      "UID": "b3e19e72-7d55-4019-ac27-7d068b57ad87"
+    },
+    "24": {
+      "target": "OWNER",
+      "speed": 1,
+      "offsetRotation": [
+        6.35,
+        0.53,
+        -0.22
+      ],
+      "NodeID": 24,
+      "UID": "fea63aa9-a49f-473e-9a1d-b55fde4ba552",
+      "bone": "Bip001 Spine",
+      "name": "playEffectStr",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Green_Gm_03"
+    },
+    "14": {
+      "UID": "2cb4886d-49af-4100-9909-eda5fbb4be3f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          12,
+          19,
+          42
+        ]
+      },
+      "NodeID": 14
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24,
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.516,
+      "NodeID": 26,
+      "UID": "1b431c83-a703-427f-8eeb-db29a7a82a88"
+    },
+    "27": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "897e0c15-9ff0-4157-b2f8-dabb46fc54fb",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.11667,
+      "NodeID": 33,
+      "UID": "50dfbd2e-631f-47d9-a25f-105892513661"
+    },
+    "29": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 902132703,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "9999",
+        "type": 2
+      },
+      "UID": "7f2d572f-8754-45e4-a15e-06483c489878",
+      "target": "TARGET",
+      "NodeID": 29,
+      "attackData": {
+        "hitFrameFreezeId": 10022,
+        "hitSoundType": "h",
+        "impulseId": 5007,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10501
+      }
+    },
+    "18": {
+      "UID": "2ef1afc8-bf51-4b7c-b741-7b897bc0aa18",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "32": {
+      "actionIds": [
+        29
+      ],
+      "NodeID": 32,
+      "UID": "a2e7b48b-53f6-4ab2-a0cb-ef1f6af85bb2",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            17.5,
+            18.5,
+            180,
+            10,
+            10
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "isRootDir": false,
+            "NodeID": 38,
+            "UID": "fe584e11-5b65-4e8f-9c5f-f5c7654b6322",
+            "target": "OWNER",
+            "name": "getBonePosition",
+            "boneName": "Bip001 Spine"
+          },
+          "maxNum": 0
+        }
+      ],
+      "calcResultNodeId": 29,
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 26.5,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 6,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "19": {
+      "offsetTime": 2.8,
+      "name": "playAnimation",
+      "UID": "6f15bfa6-43f3-4df4-a5bc-878c89ea80da",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_Green_Gm_03"
+    },
+    "12": {
+      "UID": "7cb90c98-7a6b-4475-a4e8-e331005b488a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 12
+    },
+    "16": {
+      "UID": "617a99c7-6869-4ea1-8736-dc0380e2a8b8",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_902132703",
+  "NodeID": 7,
+  "UID": "78d6d569-1570-46a6-a0af-58aa802a383a",
+  "eventIds": [
+    14,
+    5,
+    18,
+    26,
+    23,
+    41,
+    33
+  ],
+  "layer": "Base",
+  "length": 9
+}

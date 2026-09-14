@@ -1,0 +1,71 @@
+{
+  "allowHitCaster": false,
+  "duration": 0.6,
+  "BPName": "timeline_2164301",
+  "NodeID": 87,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10643_Skill_Note_Bullet01",
+  "effectTimeInitOffset": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 8,
+  "rotation": "ToPos",
+  "onProjectileHitIds": [
+    66
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 1,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.05,
+  "sweepShape": 0,
+  "targetPos": {
+    "NodeID": 86,
+    "name": "getTargetOffsetPos",
+    "UID": "68c5f536-65cc-4686-b1ff-d6d3ce2d62aa",
+    "target": "CASTER",
+    "offset": [
+      -1,
+      2.2,
+      0
+    ],
+    "rotType": "CASTER"
+  },
+  "tickInterval": 0,
+  "nextTemplateId": 2164301213,
+  "nodeMap": {
+    "66": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 4,
+        "id": 2164301
+      },
+      "UID": "6c6f83c3-c7d2-45ab-a3a3-f7cb741b3b51",
+      "target": "TARGET",
+      "NodeID": 66,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_starmage_skill_charm_hit_Psychic",
+        "disableShowJumpWord": true,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10643_Skill_Note_Hit01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "hitCameraShakeId": 21104
+      }
+    }
+  },
+  "UID": "02f4bdd1-0885-42b8-93dc-c316c1c0427c",
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 66,
+  "acceleration": 0
+}

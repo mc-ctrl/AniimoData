@@ -1,0 +1,85 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9117301",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "UID": "ec042c49-b6c6-46b7-bc7d-bdc581089f7d",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "25": {
+      "name": "addDynamicAttribute",
+      "UID": "f75e7e58-ebf9-4244-b99a-a5f021111f00",
+      "target": "OWNER",
+      "NodeID": 25,
+      "calcInfoByLuaConfig": {
+        "id": 9117301,
+        "taken_dmg_inc_rate_v": "param1",
+        "type": 1
+      }
+    },
+    "23": {
+      "name": "addDynamicAttribute",
+      "UID": "c14f9667-2089-4fd2-a4c7-7db19e2ddebf",
+      "target": "OWNER",
+      "NodeID": 23,
+      "calcInfoByLuaConfig": {
+        "id": 9117301,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      }
+    },
+    "21": {
+      "UID": "26357df9-4aea-44ab-954b-3eb48479008e",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        20
+      ],
+      "NodeID": 21
+    },
+    "19": {
+      "UID": "b3acf9a5-e8a6-440f-af27-2b670546ed10",
+      "target": {
+        "UID": "79e92fb9-295f-4965-aaa0-2611b0d97ff2",
+        "name": "getEventAttackTarget",
+        "NodeID": 18
+      },
+      "name": "checkGenderDifference",
+      "NodeID": 19
+    },
+    "20": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "b3f113f1-8c44-4447-b851-61fd07e8355a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "9654affe-fbf0-4e18-a42d-a26f3fa7d928",
+      "target": "OWNER",
+      "name": "clearDynamicAttribute",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    21,
+    13
+  ]
+}

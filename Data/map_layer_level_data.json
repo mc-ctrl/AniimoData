@@ -1,0 +1,132 @@
+{
+  "3000": {
+    "82301580": {
+      "layerLevel": -1,
+      "layerId": 8
+    },
+    "82312861": {
+      "layerLevel": -1,
+      "layerId": 1
+    },
+    "91137716": {
+      "layerLevel": -1,
+      "layerId": 2
+    },
+    "91139910": {
+      "layerLevel": 1,
+      "layerId": 3
+    },
+    "91141854": {
+      "layerLevel": 2,
+      "layerId": 3
+    },
+    "91141921": {
+      "layerLevel": 3,
+      "layerId": 3
+    },
+    "91148922": {
+      "layerLevel": -1,
+      "layerId": 4
+    },
+    "91149883": {
+      "layerLevel": -1,
+      "layerId": 4
+    },
+    "91171198": {
+      "layerLevel": -1,
+      "layerId": 5
+    },
+    "91171421": {
+      "layerLevel": -1,
+      "layerId": 6
+    },
+    "91171697": {
+      "layerLevel": -1,
+      "layerId": 7
+    },
+    "91173803": {
+      "layerLevel": -1,
+      "layerId": 8
+    },
+    "91174799": {
+      "layerLevel": -1,
+      "layerId": 8
+    }
+  },
+  "3004": {
+    "86387708": {
+      "layerLevel": 2,
+      "layerId": 1
+    },
+    "86637838": {
+      "layerLevel": 1,
+      "layerId": 2
+    },
+    "86640580": {
+      "layerLevel": 2,
+      "layerId": 2
+    },
+    "86641643": {
+      "layerLevel": 3,
+      "layerId": 2
+    },
+    "86384111": {
+      "layerLevel": 1,
+      "layerId": 1
+    },
+    "86387566": {
+      "layerLevel": 1,
+      "layerId": 1
+    }
+  },
+  "3005": {
+    "90826281": {
+      "layerLevel": 1,
+      "layerId": 1
+    },
+    "90826282": {
+      "layerLevel": 2,
+      "layerId": 1
+    },
+    "90826235": {
+      "layerLevel": 1,
+      "layerId": 2
+    },
+    "90826236": {
+      "layerLevel": 2,
+      "layerId": 2
+    },
+    "90826237": {
+      "layerLevel": 3,
+      "layerId": 2
+    },
+    "90826280": {
+      "layerLevel": 1,
+      "layerId": 1
+    }
+  },
+  "513": {
+    "70392548": {
+      "layerLevel": -3,
+      "layerId": 1
+    },
+    "70392235": {
+      "layerLevel": -1,
+      "layerId": 1
+    },
+    "70392362": {
+      "layerLevel": -2,
+      "layerId": 1
+    },
+    "70392466": {
+      "layerLevel": -2,
+      "layerId": 1
+    }
+  },
+  "501": {
+    "73394884": {
+      "layerLevel": 1,
+      "layerId": 1
+    }
+  }
+}

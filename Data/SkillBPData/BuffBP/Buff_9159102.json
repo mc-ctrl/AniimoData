@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9159102",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_EnergyUp"
+    }
+  ],
+  "onBuffThinkIds": [
+    5
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "81b13c8e-a993-4030-ba65-6d05d8267bd2",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "4": {
+      "calcId": 9159102,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 4,
+      "UID": "a5a2c66a-70bd-432c-936b-3347649aa631",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "value": {
+        "calcId": 9159102,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 4,
+        "UID": "a5a2c66a-70bd-432c-936b-3347649aa631",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "805cef6d-996b-4b48-9717-008c51cb0d4e",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

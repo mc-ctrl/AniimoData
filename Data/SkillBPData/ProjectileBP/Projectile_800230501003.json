@@ -1,0 +1,213 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 80,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Monster_80023_Mon_Skill_JumpBomb_02_Fly",
+  "ignoreActorCollision": true,
+  "gravityRatio": 2.5,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    70,
+    71,
+    65,
+    95,
+    76,
+    77
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "ignoreAbilityElement": true,
+  "tickInterval": 0,
+  "nodeMap": {
+    "70": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 70,
+      "UID": "a7a95b35-ab56-4e4c-adb9-ce017d5bf8df",
+      "effectId": "Eff_Monster_80023_Mon_Skill_JumpBomb_01",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    },
+    "71": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "9671e6ff-15a9-4708-a102-df7a005097bf",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_fireball_explosion",
+      "NodeID": 71
+    },
+    "90": {
+      "cameraShakeId": 21123,
+      "checkCasterIsPlayer": false,
+      "UID": "0f9efa18-454f-4ee0-b04f-cbe585d2e0f0",
+      "target": "OWNER",
+      "name": "playCameraImpulseById",
+      "NodeID": 90
+    },
+    "76": {
+      "actionIds": [
+        80
+      ],
+      "NodeID": 76,
+      "UID": "b385bce8-cd27-43ef-a14d-cc45c8d8adf1",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            0.2,
+            180,
+            0.3,
+            0.3
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "rotFrom": "OWNER"
+        }
+      ],
+      "calcResultNodeId": 80,
+      "hitBoxId": "5013",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 8,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 6,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "77": {
+      "scale": 0.55,
+      "NodeID": 77,
+      "UID": "d678efc7-9010-4034-8581-65f72633c976",
+      "effectId": "Eff_Monster_80023_Mon_Skill_JumpBomb_01_Kuosan",
+      "global": true,
+      "pos": "PROJECTILE",
+      "speed": 0.9,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "95": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d92b0b6c-40b4-4775-9494-5e54e97cb2ff",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_fireball_spread",
+      "NodeID": 95
+    },
+    "65": {
+      "calcResultNodeId": 63,
+      "name": "actOnTargets",
+      "UID": "772b070b-72f5-4a9d-bc8f-91d8a6ee91ea",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "5013",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        63,
+        90
+      ],
+      "impulseId": 3002,
+      "NodeID": 65
+    },
+    "63": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 5,
+        "impulseId": 3002
+      },
+      "UID": "53d47431-689a-46bd-869e-60b74786204d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 63
+    },
+    "80": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 5,
+        "impulseId": 3002
+      },
+      "UID": "e15e7e8e-cb47-4212-b2fd-81f76ee3b002",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 80
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_800230501",
+  "defaultHitSoundType": "s",
+  "impulseId": 3002,
+  "acceleration": 0
+}

@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9147103",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    17
+  ],
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10475_Skill_AnxiousBeat_04"
+    }
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {}
+}

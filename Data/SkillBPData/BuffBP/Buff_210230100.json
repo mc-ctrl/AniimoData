@@ -1,0 +1,34 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_210230100",
+  "NodeID": 1,
+  "UID": "c9de6cfd-43ce-4ca4-a599-c3cb635d4474",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "fec1bda0-3c71-49eb-ba9d-48a48a760ae8",
+      "to": 10230200,
+      "NodeID": 3,
+      "from": 10230200
+    },
+    "2": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "d8cf1570-23d6-40eb-8e89-906bd1556eb0",
+      "to": 10230201,
+      "NodeID": 2,
+      "from": 10230200
+    }
+  },
+  "onBuffDestroyIds": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

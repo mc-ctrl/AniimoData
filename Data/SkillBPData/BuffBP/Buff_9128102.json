@@ -1,0 +1,86 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9128102",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": [
+    "SNEAK"
+  ],
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "dd5b878e-3688-4982-a6ef-09a93d5bb4de",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "9": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "8f22406e-107a-45a3-a8dd-20d0ac03dfd5",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "5": {
+      "actionIds": [
+        3,
+        9
+      ],
+      "name": "registerCharacterStateChangeEvent",
+      "UID": "52470115-b19a-426d-bf1a-df69cbc34028",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "8": {
+      "UID": "1d317ee8-fab6-4db7-89ec-84374181c8a5",
+      "name": "isLeaveCharacterState",
+      "characterState": [
+        "SNEAK"
+      ],
+      "NodeID": 8
+    },
+    "11": {
+      "buffId": 912810201,
+      "name": "removeBuff",
+      "UID": "82afd224-0e5e-4c6e-8be7-013ab9be04db",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "UID": "4d6c9fee-72ae-429d-8556-d7a87cb4caff",
+      "name": "isEnterCharacterState",
+      "characterState": [
+        "SNEAK"
+      ],
+      "NodeID": 7
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 912810201,
+      "NodeID": 2,
+      "UID": "d4996b98-80ae-46c6-b2e3-0e994dac980d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": [
+    "SNEAK"
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

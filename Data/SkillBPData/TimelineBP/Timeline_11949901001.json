@@ -1,0 +1,572 @@
+{
+  "nodeMap": {
+    "37": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "26633902-0efb-465f-b74e-0253d35c026c",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_GreatSword_Ground",
+      "speed": 2,
+      "NodeID": 37
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          59,
+          62,
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.25,
+      "NodeID": 39,
+      "UID": "4210918a-b9a9-484e-9f34-76e4b163bbda"
+    },
+    "40": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "55b2a426-3cb1-4c58-8504-46ca0eba4258",
+      "effectId": "Eff_Common_Parmon_Switch",
+      "speed": 1,
+      "NodeID": 40
+    },
+    "82": {
+      "action": {
+        "actionIds": [
+          80,
+          83,
+          85
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 82,
+      "UID": "c204c1b8-fd83-4080-b237-2f2ca6eae03e"
+    },
+    "42": {
+      "UID": "f5079bc5-bb49-47ff-b8d3-39487b46be7e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          33,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 35,
+      "UID": "6277d296-07f3-4a8a-bc3e-ed4d0a8198e5"
+    },
+    "44": {
+      "UID": "8db7cbd5-ac96-4f4d-8144-35691297861e",
+      "eventType": "Notify",
+      "time": 4.1,
+      "NodeID": 44
+    },
+    "84": {
+      "name": "stopEffectStr",
+      "UID": "bae12f44-43c1-4b39-97ef-939b38e99ef7",
+      "effectId": "Eff_parmon_Rogue_Boss_Indicator_Ex",
+      "target": "OWNER",
+      "NodeID": 84
+    },
+    "67": {
+      "pos": "CASTER",
+      "target": "CASTER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "c3820669-3465-4565-a50e-eccc74bac26e",
+      "effectId": "Eff_Parmon_10194_Mon_Teleport",
+      "rot": "CASTER",
+      "NodeID": 67
+    },
+    "68": {
+      "action": {
+        "actionIds": [
+          67
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 68,
+      "UID": "5853a482-2154-4486-8a5b-beedb7a1f4e2"
+    },
+    "69": {
+      "pos": "CASTER",
+      "target": "CASTER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "5a1eb05b-75e0-41a3-be6f-a53d5cb1ea33",
+      "effectId": "Eff_Parmon_10194_Mon_Teleport01",
+      "rot": "CASTER",
+      "NodeID": 69
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "70": {
+      "action": {
+        "actionIds": [
+          69
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.85,
+      "NodeID": 70,
+      "UID": "057eab28-c673-4dd5-97f1-c2d2e3c16ca3"
+    },
+    "85": {
+      "key": "ability_1194990185",
+      "duration": 4,
+      "actionIds": [
+        84
+      ],
+      "NodeID": 85,
+      "UID": "18fb9877-dec6-4604-9451-d6db693de4bc",
+      "name": "addEntityTimer"
+    },
+    "83": {
+      "target": "OWNER",
+      "speed": 0.16,
+      "NodeID": 83,
+      "UID": "d538fdc2-3836-4d8f-8c7f-766f46caa75a",
+      "effectId": "Eff_parmon_Rogue_Boss_Indicator_Ex",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "80": {
+      "time": 2.8,
+      "rotateSpeed": 90,
+      "name": "rotateTo",
+      "UID": "0519ef03-8346-40ae-ad30-eb787f93ca43",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 80
+    },
+    "76": {
+      "UID": "8845cee2-e784-4bf1-91e5-dd25f95022cd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          74
+        ]
+      },
+      "NodeID": 76
+    },
+    "74": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0.55,
+        0,
+        -1.28
+      ],
+      "name": "teleport",
+      "rotRefTarget": "OWNER",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "UID": "8b72816d-ca49-4a95-a8f5-7d1fab3b9e91",
+        "name": "getBornPos",
+        "NodeID": 73
+      },
+      "NodeID": 74,
+      "performer": "OWNER",
+      "UID": "6cd36356-0c10-4b09-a3b5-d8fc346177e3"
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10,
+          55
+        ]
+      },
+      "NodeID": 5
+    },
+    "62": {
+      "cameraShakeId": 21134,
+      "name": "playCameraImpulseById",
+      "UID": "0ca66b92-db97-4914-a01e-75036f63cfe5",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "59": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 57,
+      "NodeID": 59,
+      "UID": "3b3ae5d6-b38e-4bb7-a18f-6f6150e55799",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            20,
+            3,
+            0
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5005,
+      "actionIds": [
+        57
+      ]
+    },
+    "57": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "3001",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": 10003,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 5005
+      },
+      "UID": "92fc43fa-0c49-43b9-8b98-e115e7007e1d",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 57
+    },
+    "55": {
+      "time": 2.25,
+      "rotateSpeed": 45,
+      "name": "rotateTo",
+      "UID": "4fa1ebde-9071-419f-817d-819a8e0c9b36",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 55
+    },
+    "53": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bd8db800-509a-47db-a4f1-1c5fb6a42915",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_AbsorbWater_Start",
+      "speed": 0.5,
+      "NodeID": 53
+    },
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.75,
+      "NodeID": 52,
+      "UID": "d99e9092-693e-4381-8b3c-d61c9fd6bc83"
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 25,
+      "UID": "72526b86-1b0d-445d-b7ca-4ec0faa74c73"
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "31": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "57d93669-f02f-4967-b7e8-39d9e7ca4eb5",
+      "target": "OWNER",
+      "NodeID": 31,
+      "animId": "Skill_ExLoop"
+    },
+    "26": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.4,
+        0,
+        0
+      ],
+      "speed": 0.8,
+      "name": "playEffectStr",
+      "UID": "edd26ba4-06ef-4aba-ab66-18bafe915fdc",
+      "effectId": "Eff_Parmon_10194_Skill_EX_Sword_04",
+      "scale": 1.5,
+      "NodeID": 26
+    },
+    "19": {
+      "switchTag": "ShieldSword",
+      "name": "setModelSwitchTag",
+      "UID": "1a140359-c379-4596-9b20-ec36e3bbe276",
+      "NodeID": 19,
+      "groupKey": 0
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 32,
+      "UID": "5780b5d9-2704-4ff7-94fd-acbf64ecbaaa"
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.25,
+      "NodeID": 30,
+      "UID": "6fccd9f6-418c-46bc-b9e7-e5b40b957fb7"
+    },
+    "20": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "38b4bedc-4f6e-496e-a7b4-6ee59d45ee45",
+      "target": "OWNER",
+      "NodeID": 20,
+      "animId": "Skill_ExStart"
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "22": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20,
+          53
+        ]
+      },
+      "NodeID": 22
+    },
+    "23": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.1,
+        0,
+        0
+      ],
+      "speed": 0.5,
+      "name": "playEffectStr",
+      "UID": "255118da-a577-4864-92c3-d849dbf9c00c",
+      "effectId": "Eff_Parmon_10194_InEx_Sword_02",
+      "scale": 1.5,
+      "NodeID": 23
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6b8462da-9461-40d4-9baf-f8124a2a35a4",
+      "isAbilityEndRemove": false,
+      "soundId": "BOSS_parmon_wishytar_greatsword_charge",
+      "NodeID": 45
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "46": {
+      "UID": "af0e3189-0356-463b-86ea-0dc62e803651",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "NodeID": 46
+    },
+    "29": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "268b44f3-a29e-4539-a206-84fd1c5ad84e",
+      "effectId": "Eff_Parmon_10194_Mon_Skill_GreatSword_Chop",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "47": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7f06e92d-93b6-4576-8f10-bfb71340a7de",
+      "isAbilityEndRemove": false,
+      "soundId": "BOSS_parmon_wishytar_greatsword_slash",
+      "NodeID": 47
+    },
+    "16": {
+      "target": "CASTER",
+      "duration": -1,
+      "buffId": 2119411,
+      "NodeID": 16,
+      "UID": "397bb16d-51d5-4156-b614-fb25c3a2bc13",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.25,
+      "NodeID": 48,
+      "UID": "1f7905fc-23a0-4743-85f7-39d456db9286"
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.25,
+      "NodeID": 28,
+      "UID": "5f63c691-62d6-4577-9df2-f1f4aab8c33b"
+    },
+    "49": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bf534942-c582-40c0-ae1e-c32fbfd0bfa2",
+      "isAbilityEndRemove": false,
+      "soundId": "BOSS_parmon_wishytar_greatsword_ground",
+      "NodeID": 49
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16,
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.25,
+      "NodeID": 18,
+      "UID": "64412a4d-cac2-4088-a3fe-1e97dfa38028"
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.35,
+      "NodeID": 50,
+      "UID": "c89b489e-5e4c-4536-8c1d-8dc8e6cbe846"
+    },
+    "33": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6378af0b-7bad-4461-a4bd-cbe4191e4052",
+      "target": "OWNER",
+      "NodeID": 33,
+      "animId": "Skill_ExEnd"
+    },
+    "51": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c9a24869-90a3-457c-99bd-9e845dc4e9a1",
+      "isAbilityEndRemove": false,
+      "soundId": "BOSS_parmon_wishytar_greatsword_end",
+      "NodeID": 51
+    },
+    "36": {
+      "duration": 1.5,
+      "name": "frameFreeze",
+      "UID": "1175aeba-1318-499e-a362-27d76cde028b",
+      "target": "CASTER",
+      "timeScale": 0.8,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11949901",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    22,
+    32,
+    25,
+    35,
+    28,
+    76,
+    39,
+    30,
+    18,
+    82,
+    42,
+    46,
+    48,
+    50,
+    52,
+    44,
+    70,
+    68
+  ],
+  "layer": "Base",
+  "length": 6.25
+}

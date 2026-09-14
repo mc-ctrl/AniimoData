@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_15830005",
+  "NodeID": 1,
+  "UID": "92340266-d052-48b6-8dbf-3629f20bae2b",
+  "abilityParamId": 11600001,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15830005001,
+      "name": "setCombatActionTimeline",
+      "UID": "dba0d501-8037-4a7b-8425-9821bbfe090a",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack02_Boss"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10583_Attack_Bullet_Boss",
+    "Eff_Hit_Grass_Blunt",
+    "Eff_Parmon_10583_Attack02_Boss"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 5,
+  "searchTargetRangeDown": 3
+}

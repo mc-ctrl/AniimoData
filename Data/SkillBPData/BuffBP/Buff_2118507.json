@@ -1,0 +1,50 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118507",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "10": {
+      "epCostAddFix": 0,
+      "NodeID": 10,
+      "UID": "3056c0f3-3e58-4984-a414-d22d9f018a39",
+      "name": "setOverrideAbilityEpCost",
+      "epCostAddRatio": {
+        "rValue": {
+          "calcId": 2118507,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 11,
+          "UID": "e7da7ed9-567b-4fe5-a913-45b2f8e8d44c",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "0ef363a1-73fc-414b-a6bf-84b96fa685cb",
+        "NodeID": 9,
+        "lValue": {
+          "key": "10185Num",
+          "name": "getCacheVal",
+          "UID": "8a505054-1a4e-4eb6-a617-ab3298dfd142",
+          "target": "MASTER",
+          "NodeID": 8
+        }
+      },
+      "abilityId": 11850710
+    },
+    "11": {
+      "calcId": 2118507,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 11,
+      "UID": "e7da7ed9-567b-4fe5-a913-45b2f8e8d44c",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10
+  ]
+}

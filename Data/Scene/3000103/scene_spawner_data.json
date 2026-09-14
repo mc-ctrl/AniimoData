@@ -1,0 +1,1904 @@
+{
+  "90823411": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -388.52,
+      166.11,
+      1224.35
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90823411,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90823410
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90857652": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -390.5,
+      165.23,
+      1223.57
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90857652,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90857651
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90857656": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -389.88,
+      165.23,
+      1222.64
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90857656,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90857653
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90857660": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -390.87,
+      165.23,
+      1224.98
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90857660,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90857659
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90963565": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -375.55,
+      163.99,
+      1251.25
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "吕祥萌",
+    "id": 90963565,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90963564
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90963563": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -375.55,
+      163.99,
+      1251.25
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "吕祥萌",
+    "id": 90963563,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90963562
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90963561": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -375.55,
+      163.99,
+      1251.25
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "吕祥萌",
+    "id": 90963561,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90963560
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879080": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -383.98,
+      163.61,
+      1245.98
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879080,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879079
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879086": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -383.26,
+      163.63,
+      1242.26
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879086,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879085
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879089": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -386.64,
+      163.63,
+      1243.53
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879089,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879088
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879092": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -401.35,
+      163.61,
+      1239.95
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879092,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879091
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879095": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -400.28,
+      163.63,
+      1238.31
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879095,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879094
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879099": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -403.29,
+      163.61,
+      1237.13
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879099,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879098
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879102": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -403.66,
+      163.6,
+      1239.09
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879102,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879101
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879105": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -402.81,
+      163.87,
+      1232.48
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879105,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879104
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879108": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -403.31,
+      163.87,
+      1229.13
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879108,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879107
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879115": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -406.88,
+      163.87,
+      1228.9
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879115,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879114
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879123": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -406.47,
+      163.87,
+      1232.85
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879123,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879122
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879130": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -414.74,
+      163.9,
+      1214.08
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879130,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879129
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879137": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -414.49,
+      163.9,
+      1210.35
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879137,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879136
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879141": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -410.33,
+      163.9,
+      1210.99
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879141,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879139
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879152": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -411.18,
+      163.9,
+      1214.67
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879152,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879151
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879158": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -400.24,
+      163.54,
+      1208.66
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879158,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879157
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879164": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -397.84,
+      163.52,
+      1210.85
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879164,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879160
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879167": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -396.32,
+      163.53,
+      1207.75
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879167,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879166
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879171": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -378.67,
+      163.9,
+      1208.13
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879171,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879170
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879173": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -377.12,
+      163.9,
+      1204.88
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879173,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879172
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879178": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -380.18,
+      163.9,
+      1204.4
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879178,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879176
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879181": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -380.65,
+      163.9,
+      1207.42
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879181,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879180
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879189": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -371.83,
+      163.58,
+      1214.89
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879189,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879188
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "89069058": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -429.69,
+      162.95,
+      1221.56
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 89069058,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          89069043
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "89069062": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -430.57,
+      162.82,
+      1222.19
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 89069062,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          89069059
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879201": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -366.44,
+      163.91,
+      1236.04
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879201,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879200
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879216": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -367.83,
+      163.91,
+      1238.98
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879216,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879215
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879220": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -370.92,
+      163.91,
+      1236.97
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879220,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879219
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90884582": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -416.87,
+      163.53,
+      1230.58
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90884582,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90884581
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90884587": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -417.19,
+      163.43,
+      1226.95
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90884587,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90884585
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90884600": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -368.93,
+      163.5,
+      1198.76
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90884600,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90884599
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90884606": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -359.63,
+      163.54,
+      1241.71
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90884606,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90884605
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90884612": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -361.64,
+      163.54,
+      1244.45
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90884612,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90884610
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90884576": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -380.25,
+      163.59,
+      1255.62
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90884576,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90884575
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90884572": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -376.78,
+      163.56,
+      1255.13
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90884572,
+    "levelAreaConfigId": 31301,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90884571
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 31301,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879197": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -369.09,
+      163.91,
+      1234.55
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879197,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879196
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90879193": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -370.67,
+      163.56,
+      1210.65
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "sandboxType": 0,
+    "weatherRefreshType": 0,
+    "refresTimeType": 0,
+    "owner": "端木一康",
+    "id": 90879193,
+    "levelAreaConfigId": 20600,
+    "avoidRepeatGroupCount": 0,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90879192
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90823378": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -380.62,
+      164.98,
+      1215
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90823378,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90823377
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90823395": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -389.02,
+      166.11,
+      1225.24
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "targetPositionData": {
+      "entity": 90823394,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        -389.02,
+        166.11,
+        1225.24
+      ],
+      "author": "worldx_ch"
+    },
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90823395,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90823394
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90823404": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -380.3,
+      164.98,
+      1213.78
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "targetPositionData": {
+      "entity": 90823403,
+      "hookType": 1,
+      "isTargetPosition": true,
+      "position": [
+        -380.3,
+        164.98,
+        1213.78
+      ],
+      "author": "worldx_ch"
+    },
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90823404,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90823403
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "90823408": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "position": [
+      -379.09,
+      164.98,
+      1214.49
+    ],
+    "sandboxId": 84750989,
+    "mapAreaId": 45329648,
+    "weatherRefreshType": 0,
+    "sandboxType": 0,
+    "owner": "meng.wu",
+    "refresTimeType": 0,
+    "isAuto": false,
+    "levelAreaConfigId": 20600,
+    "SpawnState": 0,
+    "avoidRepeatGroupCount": 0,
+    "defaultHide": true,
+    "id": 90823408,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          90823407
+        ],
+        "desc": "",
+        "deadTime": 0,
+        "levelAreaConfigId": 20600,
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

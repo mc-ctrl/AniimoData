@@ -1,0 +1,182 @@
+{
+  "duration": 1.8,
+  "BPName": "ability_11320410",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10133_Skill_Throw_Ice02_small",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "nodeMap": {
+    "52": {
+      "duration": 1.8,
+      "name": "forceDisplacement",
+      "UID": "70c20471-718b-4a72-9ed3-e617bbbb3984",
+      "target": "TARGET",
+      "trackTarget": true,
+      "ignoreKnockST": true,
+      "displacementDir": "IN",
+      "speed": 10,
+      "displacementTarget": "PROJECTILE",
+      "NodeID": 52
+    },
+    "81": {
+      "name": "calcResult",
+      "UID": "08b5f63b-3804-4b22-b71b-ccdc3e9ea921",
+      "target": "TARGET",
+      "NodeID": 81,
+      "calcInfoByLuaConfig": {
+        "id": 11320410,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param0",
+        "type": 2
+      }
+    },
+    "56": {
+      "targetA": "PROJECTILE",
+      "targetB": "CASTER",
+      "NodeID": 56,
+      "UID": "852e54a0-7ac6-4fd1-bc2e-996c7c3bfb7f",
+      "name": "checkDistanceLess",
+      "ignoreYAxis": false,
+      "distance": 1.4
+    },
+    "47": {
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        52,
+        81,
+        113
+      ],
+      "NodeID": 47,
+      "UID": "0f8fd314-bd9e-4721-9d48-f2260f2dad23",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "4"
+    },
+    "76": {
+      "name": "stopSoundStr",
+      "UID": "06cbfb8c-7e1e-412b-bf74-09b0f551638c",
+      "soundId": "parmon_10133_skill_throw_ice_loop",
+      "target": "OWNER",
+      "NodeID": 76
+    },
+    "113": {
+      "value": {
+        "calcId": 11320410,
+        "calcType": 2,
+        "paramName": "param2",
+        "NodeID": 111,
+        "UID": "e1e20a30-7638-405e-8950-f29e69500bf2",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "9a7b0717-0bb1-407c-9536-9fb271339812",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 113
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "788a914a-5c00-45f0-bef9-d9590c8637b7",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10133_skill_throw_ice_loop",
+      "NodeID": 67
+    },
+    "60": {
+      "key": "darts",
+      "name": "setAbilityCacheVal",
+      "UID": "9ffce806-e7f4-4a1a-91f9-9cbf56b88900",
+      "value": {
+        "UID": "26304a6a-7990-493d-8386-9e1d0009ba71",
+        "name": "getProjectileInstanceId",
+        "NodeID": 59
+      },
+      "NodeID": 60
+    },
+    "57": {
+      "actionIds": [
+        62
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "36ae218f-b071-4c64-840f-933c6800c62d",
+      "name": "doActionsByConditions",
+      "NodeID": 57
+    },
+    "111": {
+      "calcId": 11320410,
+      "calcType": 2,
+      "paramName": "param2",
+      "NodeID": 111,
+      "UID": "e1e20a30-7638-405e-8950-f29e69500bf2",
+      "name": "getParamByLuaConfig"
+    },
+    "62": {
+      "UID": "a9692e52-0f7e-4fe0-b2bb-15ba153d4355",
+      "projInstanceId": {
+        "UID": "e4b968e4-01bd-4d3a-b42e-0aaa3aa0e6ed",
+        "name": "getAbilityCacheVal",
+        "key": "darts",
+        "NodeID": 61
+      },
+      "name": "destroyProjectile",
+      "NodeID": 62
+    }
+  },
+  "onProjectileTickIds": [
+    47,
+    57
+  ],
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    57,
+    67,
+    76
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 99999,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepShape": 1,
+  "sweepBoxSize": [
+    2.4,
+    2.4,
+    2.4
+  ],
+  "tickInterval": 0.2,
+  "relation": 2,
+  "startSleepTime": 0,
+  "onProjectileStartIds": [
+    60
+  ],
+  "maxHitNum": 99,
+  "hasAttackDataInOnProjectileHit": false,
+  "acceleration": 0
+}

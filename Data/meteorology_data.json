@@ -1,0 +1,11 @@
+[
+  {
+    "weatherPrefab": "WeatherPreset_SunnyRain",
+    "forecast": 1,
+    "name": 1897046975,
+    "push": 1891679392,
+    "icon": "$UI_Img_Weather_Rainbow.png",
+    "picture": "$UI_Img_Map_Preview_GamePlay3.png",
+    "effect": "$UI_Node_Weather_Rainbow.prefab"
+  }
+]

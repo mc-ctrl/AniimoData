@@ -1,0 +1,201 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 31,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "ignoreAbilityElement": true,
+  "gravityRatio": 1.3,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "maxHitNum": 1,
+  "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Fly",
+  "relation": 2,
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    35
+  ],
+  "hasAttackDataInOnProjectileHit": false,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "nodeMap": {
+    "62": {
+      "pos": {
+        "UID": "c0324707-9a5d-4455-a368-3b11628220c8",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "4edf3dec-c25e-483d-9c20-453a8d68d8ad",
+          "name": "getProjectilePos",
+          "NodeID": 60
+        },
+        "NodeID": 61
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "6e357e0c-44ae-4b6f-9221-1c2e5dfdb65b",
+      "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Bomb",
+      "speed": 1,
+      "NodeID": 62
+    },
+    "63": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "20ae90de-3a65-4b9e-bebc-ab94accb6f6b",
+      "target": "OWNER",
+      "NodeID": 63
+    },
+    "42": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 31,
+      "NodeID": 42,
+      "UID": "4f73313c-8130-4196-9ae4-9178db18566d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        31
+      ]
+    },
+    "47": {
+      "pos": "TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "9677b361-6602-438a-ad3e-8ea283f00561",
+      "effectId": "Eff_Parmon_Common_Skill_Water_Bullet_Bomb",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "31": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10005,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10043_Attack01_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 3000
+      },
+      "UID": "1ff86e52-b262-481a-a068-49af0a59ade8",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 31
+    },
+    "35": {
+      "actionIds": [
+        64,
+        47,
+        33
+      ],
+      "conditionActionIds": [
+        50
+      ],
+      "UID": "e954c35f-f667-45af-a2be-afb6e04f420d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        63,
+        62,
+        42,
+        69
+      ],
+      "NodeID": 35
+    },
+    "50": {
+      "UID": "1eff6b9e-ffd6-4b5c-b868-d5d735ba9582",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 50
+    },
+    "33": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 31,
+      "NodeID": 33,
+      "UID": "6e94d8be-3c59-4007-b635-c9e4d60c58c8",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        31
+      ]
+    },
+    "64": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "55865493-20f5-4ce8-8a6f-01401c1db4e5",
+      "target": "OWNER",
+      "NodeID": 64
+    },
+    "69": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6320c860-90a6-4325-82d6-a338f00a06f0",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_laricander_attack_hit",
+      "NodeID": 69
+    }
+  },
+  "tickInterval": 0,
+  "BPName": "ability_10450210",
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.2,
+  "impulseId": 3000,
+  "acceleration": 0
+}

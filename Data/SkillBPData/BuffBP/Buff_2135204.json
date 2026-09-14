@@ -1,0 +1,73 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135204",
+  "NodeID": 1,
+  "UID": "cb79fbbb-0c96-41c7-92fa-dd74651b0067",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2135204,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 7,
+        "UID": "c50084ea-32a1-417a-b8e5-606172297f90",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "4d9fce72-07f4-461a-8e58-2c42828eedcf",
+      "NodeID": 5,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "3bc3ca44-99c1-4ff4-a3bd-94260638baa6",
+        "target": "OWNER",
+        "NodeID": 4,
+        "attributeName": "hp_max_cur"
+      }
+    },
+    "isGeneral": true,
+    "isTeamShare": false
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10261_Skill_CloudShield"
+    }
+  ],
+  "nodeMap": {
+    "3": {
+      "name": "stopSoundStr",
+      "UID": "2a9cf501-4018-401b-8ba1-bd23fe9069be",
+      "soundId": "SFX_Combat_10352_Skill_WakeUp_Buff",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "7": {
+      "calcId": 2135204,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "c50084ea-32a1-417a-b8e5-606172297f90",
+      "name": "getParamByLuaConfig"
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d786e450-44f4-46e3-a2ef-38b0f8e703ec",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10352_Skill_WakeUp_Buff",
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    3
+  ],
+  "onBuffStartIds": [
+    2
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91122041",
+  "NodeID": 1,
+  "UID": "8c9497fb-57e7-46ee-9dfc-f6eea6990fa9",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "hasBuffTag",
+      "UID": "e79a8677-9d38-4177-b216-199b24341d0e",
+      "target": "OWNER",
+      "NodeID": 3,
+      "buffTag": 11
+    },
+    "4": {
+      "actionIds": [
+        6,
+        8
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "6a241053-1089-4479-8718-d105491d5533",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "target": "SRC",
+      "duration": 0,
+      "buffId": 91122042,
+      "NodeID": 6,
+      "UID": "454d270a-8f60-4f01-88ee-3ed5074362bd",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "buffId": 91122041,
+      "name": "removeBuff",
+      "UID": "484c2971-9c9f-4f91-aa6e-98314980d7f3",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "UID": "1d274f86-c6c4-4d40-b198-d3cd1d409235",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

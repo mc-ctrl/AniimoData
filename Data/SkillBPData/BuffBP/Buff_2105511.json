@@ -1,0 +1,94 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2105511",
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    4,
+    11
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14,
+    16
+  ],
+  "nodeMap": {
+    "3": {
+      "rValue": 3,
+      "name": "greater",
+      "UID": "622cb887-bdcf-4250-861c-083f550772d2",
+      "NodeID": 3,
+      "lValue": {
+        "templateId": 2105511,
+        "name": "getBuffLayer",
+        "UID": "df9bce3f-ddb0-4f42-849d-2a6c38db124a",
+        "target": "OWNER",
+        "NodeID": 2
+      }
+    },
+    "4": {
+      "UID": "83efabb9-4af0-4d36-891d-54e962d792db",
+      "name": "doActionsByConditions",
+      "conditionActionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "19": {
+      "buffId": 2105511,
+      "name": "removeBuff",
+      "UID": "b6654770-dcc3-4a2b-a092-2fdb9ecd4a51",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "14": {
+      "UID": "2c6918b6-903f-4257-bbe1-8dce2cf23f26",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10055_Skill_Passive01",
+      "NodeID": 14
+    },
+    "10": {
+      "rValue": 7,
+      "name": "greater",
+      "UID": "004179f7-ff21-4ac0-8cc7-73c5c360cbb0",
+      "NodeID": 10,
+      "lValue": {
+        "templateId": 2105511,
+        "name": "getBuffLayer",
+        "UID": "162e0828-a4e8-42ac-aa0e-a567760a808a",
+        "target": "OWNER",
+        "NodeID": 9
+      }
+    },
+    "11": {
+      "actionIds": [
+        17,
+        19
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "36fe0f59-e0bb-4cfa-85b8-b7811781435a",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "17": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2105512,
+      "NodeID": 17,
+      "UID": "e0e80c45-9a6b-49ce-8730-8faa415c08eb",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "UID": "9effb1b2-59a2-4105-a97b-9efa3310ecf2",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10055_Skill_Passive02",
+      "NodeID": 16
+    }
+  }
+}

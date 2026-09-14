@@ -1,0 +1,82 @@
+{
+  "5030211": {
+    "type": 2,
+    "useTime": 2,
+    "repairPoints": 120
+  },
+  "5030212": {
+    "type": 2,
+    "useTime": 3,
+    "repairPoints": 150
+  },
+  "5030213": {
+    "type": 2,
+    "useTime": 5,
+    "repairPoints": 180
+  },
+  "5930213": {
+    "type": 2,
+    "useTime": 5,
+    "repairPoints": 180
+  },
+  "5930212": {
+    "type": 2,
+    "useTime": 3,
+    "repairPoints": 150
+  },
+  "5930211": {
+    "type": 2,
+    "useTime": 2,
+    "repairPoints": 120
+  },
+  "5930210": {
+    "type": 2,
+    "useTime": 1,
+    "repairPoints": 100
+  },
+  "5930203": {
+    "type": 1,
+    "useTime": 3,
+    "repairPoints": 120
+  },
+  "5930200": {
+    "type": 1,
+    "useTime": 1,
+    "repairPoints": 60
+  },
+  "5930201": {
+    "type": 1,
+    "useTime": 1,
+    "repairPoints": 80
+  },
+  "5930202": {
+    "type": 1,
+    "useTime": 2,
+    "repairPoints": 100
+  },
+  "5030200": {
+    "type": 1,
+    "useTime": 1,
+    "repairPoints": 60
+  },
+  "5030201": {
+    "type": 1,
+    "useTime": 1,
+    "repairPoints": 80
+  },
+  "5030202": {
+    "type": 1,
+    "useTime": 2,
+    "repairPoints": 100
+  },
+  "5030203": {
+    "type": 1,
+    "useTime": 3,
+    "repairPoints": 120
+  },
+  "5030210": {
+    "type": 2,
+    "useTime": 1,
+    "repairPoints": 100
+  }
+}

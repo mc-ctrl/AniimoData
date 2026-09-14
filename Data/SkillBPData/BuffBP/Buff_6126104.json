@@ -1,0 +1,427 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6126104",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    25,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "UID": "fc48e0f0-10e3-4673-994c-baa7f0b522de",
+      "name": "stopAnimation",
+      "anim": "Behav_CryLoop",
+      "NodeID": 37
+    },
+    "38": {
+      "target": "OWNER",
+      "postFollowType": -1,
+      "name": "playEffectStr",
+      "UID": "713a4ab4-422b-4ee8-ab1b-d0b689a09e87",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop",
+      "speed": 1,
+      "NodeID": 38
+    },
+    "39": {
+      "name": "stopEffectStr",
+      "UID": "687f0f25-d640-4ddc-9077-f723502729ca",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_01",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "54": {
+      "buffId": 6126104,
+      "name": "removeBuff",
+      "UID": "0f6892b6-ee47-4966-9e3b-bcd80703a662",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "42": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e66b1281-127f-4465-88b0-80d5f653e69e",
+      "target": "OWNER",
+      "NodeID": 42,
+      "animId": "Emotion_Pain_Loop"
+    },
+    "35": {
+      "UID": "ef793302-5df6-41b9-b6ea-2301005d1f92",
+      "name": "stopAnimation",
+      "anim": "Emotion_Pain_Loop",
+      "NodeID": 35
+    },
+    "44": {
+      "name": "startQteTimeline",
+      "UID": "5648bd42-3968-4aef-8055-0c7a9428d336",
+      "target": "MASTER",
+      "NodeID": 44,
+      "qteGroupId": "QTE_10451_EggCharge"
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "845d4525-6fdb-49d4-a693-40c5fa4848b8",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Start",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "64": {
+      "UID": "8e3b3954-8b6f-4146-b144-4acd505a74c3",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "speed_ratio_egg_mode_v": -1
+      },
+      "NodeID": 64
+    },
+    "62": {
+      "actionIds": [
+        64
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "c96908f6-1db6-42f9-950f-0f4ca355ed3e",
+      "name": "doActionsByConditions",
+      "NodeID": 62
+    },
+    "61": {
+      "UID": "e3603432-34bd-4967-bd08-5c7fabb85732",
+      "target": "OWNER",
+      "name": "checkPlayerEggMode",
+      "NodeID": 61
+    },
+    "60": {
+      "buffId": 6126103,
+      "name": "removeBuff",
+      "UID": "f31c2b10-6c11-47a5-8332-ec532098d7a9",
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "59": {
+      "name": "stopQteTimeline",
+      "UID": "94cd780f-5584-4cbe-bcef-e846376a312d",
+      "target": "OWNER",
+      "NodeID": 59,
+      "qteGroupId": "QTE_10451_EggCharge"
+    },
+    "58": {
+      "actionIds": [
+        59
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "66d0daf1-dc67-4cbb-85e5-67f9dd39281a",
+      "name": "doActionsByConditions",
+      "NodeID": 58
+    },
+    "57": {
+      "name": "isActorType",
+      "UID": "4e624257-3c32-4052-a3d7-77cec7b7520c",
+      "target": "OWNER",
+      "NodeID": 57,
+      "actorType": 1
+    },
+    "56": {
+      "name": "isActorType",
+      "UID": "90d0a9d9-de84-4881-8c39-38290dcc8152",
+      "target": "OWNER",
+      "NodeID": 56,
+      "actorType": 2
+    },
+    "55": {
+      "eventName": "qtePartGood",
+      "NodeID": 55,
+      "UID": "49a2390e-b7f9-4608-8d18-4278d378ec54",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        54
+      ]
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4478c7f8-1fce-4715-a759-7f26189bcf07",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop_01",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "53": {
+      "eventName": "qtePartGood",
+      "NodeID": 53,
+      "UID": "bbda6b70-2869-45ec-8b6d-d980118db464",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        52
+      ]
+    },
+    "52": {
+      "buffId": 6126104,
+      "name": "removeBuff",
+      "UID": "49c60dc5-7ba7-4412-9d31-20048d7b83ea",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "50": {
+      "name": "startQteTimeline",
+      "UID": "bb5ef214-ec72-4993-8726-01c388aa19c2",
+      "target": "OWNER",
+      "NodeID": 50,
+      "qteGroupId": "QTE_10451_EggCharge"
+    },
+    "49": {
+      "actionIds": [
+        50,
+        55
+      ],
+      "conditionActionIds": [
+        48
+      ],
+      "UID": "3cea78dd-7017-41bd-9021-b7f2a9ba720c",
+      "name": "doActionsByConditions",
+      "NodeID": 49
+    },
+    "8": {
+      "key": "start1",
+      "duration": 0.2,
+      "actionIds": [
+        6,
+        38
+      ],
+      "NodeID": 8,
+      "UID": "699d2364-8b1c-42de-a243-48bc52b5cbe5",
+      "name": "addTimer"
+    },
+    "31": {
+      "UID": "08f2abd2-7e01-4fc0-858d-1012acde631a",
+      "conditionIds": [
+        30,
+        32
+      ],
+      "name": "conditionOr",
+      "NodeID": 31
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d37ec369-e9a4-42ff-ac37-40323f9f08b1",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Disappear_02",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "17": {
+      "name": "stopQteTimeline",
+      "UID": "949d0315-0ab2-4fbc-a216-72e89ac4f0b3",
+      "target": "MASTER",
+      "NodeID": 17,
+      "qteGroupId": "QTE_10451_EggCharge"
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "92c08539-3e33-4f49-b722-5292b089bb85",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_End",
+      "NodeID": 25
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "657358d9-41cc-456d-9ecf-05d2ab55bddd",
+      "effectId": "Eff_Env_Level_IOT_Meadow_Sadclouds_Imprisonment_Loop",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "19": {
+      "name": "stopSoundStr",
+      "UID": "9a0b964c-94ac-4c99-afbb-b6a0d63d9728",
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_Loop",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "21": {
+      "actionIds": [
+        19,
+        25
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "00f8dfee-4ee0-450e-b522-b0cfca5f1876",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f0f9de6d-7f33-48b7-9f2c-4f19282d23b2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_Loop",
+      "NodeID": 22
+    },
+    "16": {
+      "UID": "fed980d7-e66b-49ca-85ce-96b36adf6838",
+      "actorId": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "4355d06f-2aac-4a48-9d52-175037236f5e",
+        "target": "OWNER",
+        "NodeID": 15
+      },
+      "name": "destroyEntity",
+      "NodeID": 16
+    },
+    "24": {
+      "actionIds": [
+        26,
+        22
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "477fe545-aa76-473a-b876-92e8615da018",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "18": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "2eb554fb-2f97-442d-bcf6-edefad2ea006",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        58
+      ],
+      "NodeID": 18
+    },
+    "46": {
+      "actionIds": [
+        44,
+        53
+      ],
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "928e3947-0488-41eb-b6d5-e45673b955d5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        49
+      ],
+      "NodeID": 46
+    },
+    "27": {
+      "name": "isActorType",
+      "UID": "694a1f6a-89be-4796-a823-34a60136fc08",
+      "target": "OWNER",
+      "NodeID": 27,
+      "actorType": 1
+    },
+    "47": {
+      "name": "isActorType",
+      "UID": "af7c5b1d-a8f3-47b6-bb27-37af1f6e29f9",
+      "target": "OWNER",
+      "NodeID": 47,
+      "actorType": 2
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8ca0b91f-0b0f-4cdf-add9-9cf96db9d848",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10261_Buff_SadCloud02_Start",
+      "NodeID": 26
+    },
+    "48": {
+      "name": "isActorType",
+      "UID": "87cf5ee1-159c-43a4-8c23-74e7f91ebb60",
+      "target": "OWNER",
+      "NodeID": 48,
+      "actorType": 1
+    },
+    "28": {
+      "UID": "a3f804b9-cfc7-4eb7-b241-37a4cff84123",
+      "conditionIds": [
+        27,
+        29
+      ],
+      "name": "conditionOr",
+      "NodeID": 28
+    },
+    "29": {
+      "name": "isActorType",
+      "UID": "5f32342f-29fd-4518-80a7-b9fbb41bfa08",
+      "target": "OWNER",
+      "NodeID": 29,
+      "actorType": 2
+    },
+    "30": {
+      "name": "isActorType",
+      "UID": "6da04144-b485-407e-ad84-7ccd102d3e64",
+      "target": "OWNER",
+      "NodeID": 30,
+      "actorType": 1
+    },
+    "32": {
+      "name": "isActorType",
+      "UID": "7e67a446-0e75-41a4-85a2-5e43249b3d91",
+      "target": "OWNER",
+      "NodeID": 32,
+      "actorType": 2
+    },
+    "33": {
+      "name": "isActorType",
+      "UID": "965a3c32-ed82-4300-9beb-bcf59e0f6458",
+      "target": "OWNER",
+      "NodeID": 33,
+      "actorType": 1
+    },
+    "34": {
+      "actionIds": [
+        42
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "ee16193b-a405-4be5-b294-b4f8df9872d0",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        43
+      ],
+      "NodeID": 34
+    },
+    "43": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "43a79047-ab7c-4725-b44b-f3c2f7e09ace",
+      "target": "OWNER",
+      "NodeID": 43,
+      "animId": "Behav_CryLoop"
+    }
+  },
+  "onBuffDestroyIds": [
+    9,
+    39,
+    11,
+    35,
+    37,
+    16,
+    18,
+    21,
+    60
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    8,
+    34,
+    46,
+    24,
+    62
+  ]
+}

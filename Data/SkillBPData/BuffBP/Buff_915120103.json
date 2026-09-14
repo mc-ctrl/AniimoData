@@ -1,0 +1,76 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_915120103",
+  "name": "衔接强化普攻",
+  "UID": "6c582592-3b9b-4fa9-b805-ea8de8d64715",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffRefreshIds": [
+    2,
+    7
+  ],
+  "onBuffStartIds": [
+    2,
+    7
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "NodeID": 8,
+      "UID": "0efac0fc-c077-4f79-98bc-eef68be5bad6",
+      "applyAbilityIds": [
+        15120010
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": true,
+      "applyToNormalSkill": false,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "4": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "08c59813-ba46-43ee-89d1-5fc03728bc92",
+      "to": 15120000,
+      "NodeID": 4,
+      "from": 15120000
+    },
+    "7": {
+      "NodeID": 7,
+      "UID": "c2ff7e58-750d-4a29-9adb-1d399e46348c",
+      "applyAbilityIds": [
+        15120010
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": true,
+      "applyToNormalSkill": false,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "2": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "1e4ab941-483d-48c7-9867-a06a2409bafd",
+      "to": 15120010,
+      "NodeID": 2,
+      "from": 15120000
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4,
+    8
+  ],
+  "isUnSummonFreeze": false
+}

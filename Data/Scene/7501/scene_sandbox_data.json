@@ -1,0 +1,190 @@
+{
+  "91295288": {
+    "owner": "陈智豪",
+    "position": [
+      5.93,
+      -0.13,
+      -4.6
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91295292,
+    "keepGraphOnFinished": true,
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "全局_新洞穴入口_1号洞穴玩法内容",
+    "spawners": [
+      91294692,
+      91294709,
+      91294991,
+      91295021,
+      91295035,
+      91295056,
+      91295110,
+      91297434,
+      91302871,
+      91302880
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7501/Sandbox_91295288_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91295288,
+    "levelItems": {
+      "91302939": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "高级宝箱是否拿取",
+        "position": [
+          13.9,
+          -0.19,
+          -2.82
+        ],
+        "rotation": [
+          0,
+          67.92,
+          0
+        ],
+        "id": 91302939,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91302940": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "中级宝箱是否拿取",
+        "position": [
+          13.9,
+          -0.19,
+          -2.82
+        ],
+        "rotation": [
+          0,
+          67.92,
+          0
+        ],
+        "id": 91302940,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91342519": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          2.43,
+          1.78,
+          8.1
+        ],
+        "rotation": [
+          0,
+          333.47,
+          0
+        ],
+        "id": 91342519,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          28.75,
+          4.03,
+          9.54
+        ],
+        "isActive": true
+      },
+      "91342521": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          9.38,
+          39.86,
+          -10.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91342521,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          35.84,
+          1,
+          36.52
+        ],
+        "isActive": true
+      },
+      "91342520": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否触发自言自语",
+        "position": [
+          13.9,
+          -0.19,
+          -2.82
+        ],
+        "rotation": [
+          0,
+          67.92,
+          0
+        ],
+        "id": 91342520,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "chunk": 1019874
+  }
+}

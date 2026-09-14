@@ -1,0 +1,46 @@
+{
+  "duration": 3,
+  "BPName": "buff_62120105",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10201_Skill_Hummin_BulletLoop",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "nodeMap": {
+    "30": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 62120106,
+      "NodeID": 30,
+      "UID": "71658461-686f-4df4-a843-b6bba925de66",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2662bfe2-b568-421f-ba21-a57caeb79b9a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_WhirlwindGrass_End",
+      "NodeID": 12
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileHitIds": [
+    30,
+    12
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "tickInterval": 0.1,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.3,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

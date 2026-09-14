@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_14810100",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10301040,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 14810100001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Bubble"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10483_Skill_Bubble_Attack01",
+    "Eff_Parmon_10483_Skill_Bubble_Release",
+    "Eff_Parmon_10481_Skill_Bubble_Release_01",
+    "Eff_Parmon_10483_Skill_Bubble_Attack01_End"
+  ],
+  "searchRelation": 2,
+  "name": "水远程攻击",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 2,
+  "loadingCd": 6,
+  "maxLoadedCnt": 3,
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,328 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91604011",
+  "calcInfoByLuaConfig": {
+    "id": 91604011,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "onBuffLayerChangeIds": [
+    8,
+    13,
+    17,
+    21
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "38": {
+      "rValue": {
+        "templateId": 91604011,
+        "name": "getBuffLayer",
+        "UID": "2ca94505-8bc8-4a9f-ae95-4088ddf96e8d",
+        "target": "OWNER",
+        "NodeID": 37
+      },
+      "name": "greater",
+      "UID": "711f8290-3598-4f94-a36f-ea0a47115d3a",
+      "NodeID": 38,
+      "lValue": 12
+    },
+    "48": {
+      "name": "stopEffectStr",
+      "UID": "f134a57e-ac00-42e8-95ac-6dfd15629eda",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_03",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bd2eafd3-5b92-431c-8d08-8f59c5726cfb",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_02",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "41": {
+      "UID": "a5426df6-7c70-4ad6-b60a-48ad5ad9c2a2",
+      "conditionIds": [
+        40,
+        43
+      ],
+      "name": "conditionAnd",
+      "NodeID": 41
+    },
+    "47": {
+      "name": "stopEffectStr",
+      "UID": "0de32c65-4775-42ec-a84e-4589d5c92b78",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_02",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "35": {
+      "rValue": 7,
+      "name": "greater",
+      "UID": "8c0c1027-0006-4726-8a96-d58f49316595",
+      "NodeID": 35,
+      "lValue": {
+        "templateId": 91604011,
+        "name": "getBuffLayer",
+        "UID": "4d137b53-81f4-4900-a757-e19543b1c44f",
+        "target": "OWNER",
+        "NodeID": 34
+      }
+    },
+    "46": {
+      "name": "stopEffectStr",
+      "UID": "3094e5af-19c0-4b01-ba3b-9734a76d939b",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_01",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "8": {
+      "actionIds": [
+        6,
+        10
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "be6982fb-4449-45c3-8458-e49aef4b30ca",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "9f860806-e403-4dcd-93d2-35b87f331ed6",
+      "conditionIds": [
+        30,
+        33
+      ],
+      "name": "conditionAnd",
+      "NodeID": 31
+    },
+    "33": {
+      "rValue": {
+        "templateId": 91604011,
+        "name": "getBuffLayer",
+        "UID": "2b45cda8-af89-472e-8df0-da20d14d409e",
+        "target": "OWNER",
+        "NodeID": 32
+      },
+      "name": "greater",
+      "UID": "8825013a-dfdd-475d-a8f0-83393619e295",
+      "NodeID": 33,
+      "lValue": 8
+    },
+    "43": {
+      "rValue": {
+        "templateId": 91604011,
+        "name": "getBuffLayer",
+        "UID": "8665a1ee-3b05-41c4-9810-196197e2d652",
+        "target": "OWNER",
+        "NodeID": 42
+      },
+      "name": "greater",
+      "UID": "5d3dc0a1-0758-4a6b-a795-33dd1f85b097",
+      "NodeID": 43,
+      "lValue": 16
+    },
+    "40": {
+      "rValue": 11,
+      "name": "greater",
+      "UID": "404d16db-559a-47e1-bb0f-aff67f3fda64",
+      "NodeID": 40,
+      "lValue": {
+        "templateId": 91604011,
+        "name": "getBuffLayer",
+        "UID": "bed829ec-614e-4270-985f-55d67fdfba4e",
+        "target": "OWNER",
+        "NodeID": 39
+      }
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d7854ef0-79c9-4a1e-b6db-d3aabe706705",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_03",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "47f396a8-5d43-4a68-89bf-2913d209bc02",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_01",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "21": {
+      "actionIds": [
+        19,
+        22,
+        48
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "f11984ff-1996-4806-a7e9-218165ef4c5c",
+      "name": "doActionsByConditions",
+      "NodeID": 21
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "c78fb7f9-47b5-4bed-9fe7-b27c08d5da28",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_04",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "97d69682-c7f0-42de-87b0-882f1774e137",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_01",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "45": {
+      "rValue": 15,
+      "name": "greater",
+      "UID": "40f22eb5-bd8b-410f-adda-625fc350a26d",
+      "NodeID": 45,
+      "lValue": {
+        "templateId": 91604011,
+        "name": "getBuffLayer",
+        "UID": "13c2b6f5-567a-4af9-b49d-be792ff828fc",
+        "target": "OWNER",
+        "NodeID": 44
+      }
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "07d5c239-c8ca-43a5-9c23-e77e916ad4f6",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_02",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "5ae4da42-c573-4ee1-b3e4-f4b6fff7dddb",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_01",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "20de7d7b-68fb-44b4-824c-f3a63b1420d1",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_04",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "b7bcad5c-994f-40e5-ae86-cd3b13c769e4",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_02",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "08243588-4bf4-4d9e-9496-82b191458b2e",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_03",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "81ac1b46-98de-4c43-b25d-35d2df82aa55",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_04",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "17": {
+      "actionIds": [
+        15,
+        18,
+        47
+      ],
+      "conditionActionIds": [
+        41
+      ],
+      "UID": "5204f835-31ba-4a8f-a4c0-9f810e9e02ed",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "30": {
+      "rValue": 3,
+      "name": "greater",
+      "UID": "5888e28c-109d-43e8-8fe6-d1127e684f77",
+      "NodeID": 30,
+      "lValue": {
+        "templateId": 91604011,
+        "name": "getBuffLayer",
+        "UID": "67bd6111-8e89-4cd8-a1b5-82c3c9e58fbb",
+        "target": "OWNER",
+        "NodeID": 29
+      }
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "2dccfe5b-2c6b-4b05-9b3b-7f5ecbad6fcc",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_03",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "6dcb5ffd-1b2e-4940-94cf-e2a9419a9322",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_05",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5a79affa-d097-4b3e-a81e-0c14bc8d2518",
+      "effectId": "Eff_Parmon_10604_Skill_Angry_05",
+      "speed": 1,
+      "NodeID": 19
+    },
+    "13": {
+      "actionIds": [
+        11,
+        14,
+        46
+      ],
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "b34d0804-17aa-4151-94bd-3f04804363a7",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "36": {
+      "UID": "f64cb503-f960-48c6-b208-0113a0e2d6e1",
+      "conditionIds": [
+        35,
+        38
+      ],
+      "name": "conditionAnd",
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    23,
+    25,
+    26,
+    27,
+    28
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

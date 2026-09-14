@@ -1,0 +1,272 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "90608587-8af4-43f6-affb-d5e4f9a96bd3",
+      "name": "doActionsByConditions",
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "bfaab951-9b92-46d2-bede-d9146c53681f",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        37
+      ],
+      "NodeID": 38
+    },
+    "6": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 4,
+      "NodeID": 6,
+      "UID": "e857b73b-e8ee-49ca-af35-80f93297bb8e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 6000,
+      "actionIds": [
+        4
+      ]
+    },
+    "41": {
+      "target": "MASTER",
+      "duration": 1,
+      "buffId": 912120103,
+      "NodeID": 41,
+      "UID": "0c7c37ee-45ec-4e5d-891c-42772f0c6089",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "42": {
+      "buffId": 9121201,
+      "name": "hasBuff",
+      "UID": "a31f5cbe-05d9-4e70-83b3-4507976829de",
+      "target": "MASTER",
+      "NodeID": 42
+    },
+    "35": {
+      "UID": "bca48a8f-eceb-453a-8228-860393c5f817",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 35
+    },
+    "8": {
+      "tickInterval": 0.3,
+      "eventType": "NotifyState",
+      "endTime": 1.8,
+      "NodeID": 8,
+      "UID": "3c134837-3f7d-4f6e-ae49-c8b4a53dffa0",
+      "onUpdate": {
+        "actionIds": [
+          6
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          26
+        ]
+      }
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 20,
+      "UID": "187d9c3f-7f77-4c6d-98ea-61c5bc865588"
+    },
+    "4": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.14,
+        "reduce_cur_tp_rate": 0.14
+      },
+      "attackData": {
+        "applyRootMotion": false,
+        "impulseId": 6000,
+        "elementType": 6,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "hitFrameFreezeId": 10001,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 0
+      },
+      "UID": "8418d968-d959-4513-bee1-7ef79ccce158",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 4
+    },
+    "24": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.14,
+        "reduce_cur_tp_rate": 0.14
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "impulseId": 6000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 20100
+      },
+      "UID": "2f0ff8f9-155e-45c4-a50a-5343efad35cd",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 24
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d21b6c1b-e3db-4583-92d4-4751b62fe687",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_loop",
+      "NodeID": 15
+    },
+    "26": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 24,
+      "NodeID": 26,
+      "UID": "a298db41-97c4-4b62-a117-bfe003697073",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 6000,
+      "actionIds": [
+        24
+      ]
+    },
+    "17": {
+      "UID": "246fa402-2070-4ba2-9469-f9834ea12784",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32,
+          38,
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "97be48e0-0965-4460-929b-8df9e8904532",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10073_skill_wind_loop",
+      "NodeID": 18
+    },
+    "32": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2dfaba4b-3fe8-4944-89fe-7d9ecd3be01d",
+      "effectId": "Eff_Parmon_10212_Skill_FlowerTornado_Attack",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "fa827300-0690-4271-93d2-f8c79d310cfe",
+      "effectId": "Eff_Parmon_10212_Skill_FlowerTornado_Attack",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "action": {
+        "actionIds": [
+          33
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 34,
+      "UID": "1f818f4f-8653-4c32-ae53-508abc85c63c"
+    },
+    "36": {
+      "actionIds": [
+        41
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "fb89b333-cfc7-44e5-88aa-d37695dc1151",
+      "name": "doActionsByConditions",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2123106",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    17,
+    8,
+    34,
+    20
+  ],
+  "layer": "Base",
+  "length": 6.5
+}

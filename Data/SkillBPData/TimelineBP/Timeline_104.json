@@ -1,0 +1,100 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "dc65d8ff-48e0-4d77-90d7-19778b95e280",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12
+        ]
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "84b43ccb-8d1c-4c06-9329-17c26a4a9738",
+      "target": "OWNER",
+      "name": "playHitSound",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "75b88cd3-1b68-455b-a0d6-33717b4f78e4",
+      "name": "applyHitFrameFreeze",
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "daee7bd2-a3a3-4629-8423-edcf7e983d3d",
+      "target": "OWNER",
+      "name": "applyHitModelShake",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "fdc03c3f-5913-462b-a75e-22ef4b73eb5f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "36b04a62-27a9-4f36-b9d4-65e6bdf6e270",
+      "target": "OWNER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "8ac9bfa2-d5ba-4661-9630-8bf03d4b7e46",
+      "target": "CASTER",
+      "name": "applyHitCameraImpulse",
+      "NodeID": 9
+    },
+    "14": {
+      "UID": "4b393ceb-a650-4bb7-81ad-abbdce144e1f",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 14
+    },
+    "2": {
+      "UID": "2de88337-d64a-4f16-aa54-343b7a888f5a",
+      "target": "OWNER",
+      "name": "playHitEffect",
+      "NodeID": 2
+    },
+    "12": {
+      "UID": "698a2520-a6ea-4262-83c1-222f3adbe020",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 1,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_104",
+  "NodeID": 1,
+  "UID": "f532cc09-1d9a-4715-8777-aec8def56cd1",
+  "eventIds": [
+    4,
+    16
+  ],
+  "layer": "Base",
+  "length": 1
+}

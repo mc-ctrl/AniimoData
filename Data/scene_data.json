@@ -1,0 +1,9250 @@
+{
+  "1011": {
+    "isOpenToPlayer": 1,
+    "name": "RogueLike_PVE",
+    "type": 7,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Rogue_Rest",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "specialStateBanOperate": "ROGUE_ST",
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle_02",
+    "funcListId": 7,
+    "minLevel": 1
+  },
+  "550": {
+    "amb": "SFX_AMB_Scene_Farm",
+    "specialStateBanOperate": "METAVERSE_ST",
+    "bgm": "BGM_Scene_Farm",
+    "bornTpId": 91257908,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Home_01.unity",
+    "type": 16,
+    "funcListId": 8,
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Home_1",
+    "respawnByCheckpoint": 10,
+    "playerBuffIds": [
+      920000102
+    ],
+    "petBuffIds": [
+      9104302
+    ],
+    "forceOpen": 1,
+    "maxLevel": 1,
+    "canPlaceFurniture": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "1013": {
+    "isOpenToPlayer": 1,
+    "name": "RogueLike_PVE",
+    "type": 7,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Rogue_Rest",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "specialStateBanOperate": "ROGUE_ST",
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle_02",
+    "funcListId": 7,
+    "minLevel": 1
+  },
+  "1014": {
+    "isOpenToPlayer": 1,
+    "name": "RogueLike_PVE",
+    "type": 7,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Rogue_Rest",
+    "bornTpId": 72270040,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "specialStateBanOperate": "ROGUE_ST",
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle_02",
+    "funcListId": 7,
+    "minLevel": 1
+  },
+  "1016": {
+    "isOpenToPlayer": 1,
+    "name": "RogueLike_PVE",
+    "type": 7,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Rogue_Rest",
+    "bornTpId": 72270067,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "specialStateBanOperate": "ROGUE_ST",
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle_02",
+    "funcListId": 7,
+    "minLevel": 1
+  },
+  "1015": {
+    "isOpenToPlayer": 1,
+    "name": "RogueLike_PVE",
+    "type": 7,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Rogue_Rest",
+    "bornTpId": 72270067,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "specialStateBanOperate": "ROGUE_ST",
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle_02",
+    "funcListId": 7,
+    "minLevel": 1
+  },
+  "1030": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "specialStateBanOperate": "ROGUE_ST",
+    "minLevel": 1
+  },
+  "1040": {
+    "type": 8,
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "specialStateBanOperate": "TUTORIAL_BATTLE_ST_2",
+    "respawnByCheckpoint": 2,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 61576355,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "noBattleMusic": 1,
+    "file": "$RuntimeLevel_FB_Roguelike_PVE_Tutorial_Grass.unity",
+    "maxLevel": 1,
+    "forbiddenCatch": 1,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "3000": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "amb": "amb_scene_1",
+    "mapQuickTeleport": {
+      "501": [
+        [
+          72183801,
+          "$UI_Icon_TransPoint_02.png"
+        ]
+      ]
+    },
+    "markShare": 1,
+    "positionResetType1": 2,
+    "bornTpId": 58619804,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "respawnByCall": 0,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "veinMapLevel": 4,
+    "funcListId": 6,
+    "isOpenToPlayer": 1,
+    "name": "大世界场景",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 2,
+    "showTeamNot": 1,
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      6144,
+      -6144
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "sceneName": 1895830692,
+    "type": 2,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "timeprivate": 1,
+    "heightLimit": 500,
+    "positionResetType4": 2,
+    "positionResetType2": 2,
+    "MapAPosition": [
+      0,
+      0
+    ],
+    "respawnByCheckpoint": 1,
+    "isStreamEditor": 1,
+    "mapDisplayOverlayScenes": [
+      1002,
+      7501,
+      7502,
+      7503,
+      7504,
+      7505,
+      7506,
+      7507,
+      7508,
+      7509,
+      7510,
+      7511,
+      7512,
+      7513,
+      7514,
+      7515
+    ],
+    "isFlyLowStaminaCost": 1,
+    "allowMigrateBuff": true,
+    "cameraFarPlane": 20000,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "canPlaceFurniture": 1,
+    "canTakeOutPet": 1,
+    "editorSortId": 999
+  },
+  "1041": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1042": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 61598086,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1043": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1044": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 61644264,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1045": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1046": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 61644540,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1047": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1048": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 61644939,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 2,
+    "file": "$Level_FB_Roguelike_PVE_Tutorial_Grass.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1049": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1050": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 61645019,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1051": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "ROGUE_ST",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1060": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "file": "$Level_SimpleDunmmyTest02.unity",
+    "maxLevel": 1,
+    "type": 8,
+    "specialStateBanOperate": "ROGUE_ST",
+    "minLevel": 1
+  },
+  "5": {
+    "isOpenToPlayer": 1,
+    "name": "free_walk_init",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 5001,
+    "canEnterByAltX": 0,
+    "file": "free_walk_init",
+    "maxLevel": 1,
+    "type": 0,
+    "script": "FreewalkInitScene",
+    "minLevel": 1
+  },
+  "1070": {
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_BossRush",
+    "skipSkillCutScene": 1,
+    "respawnByCheckpoint": 2,
+    "bgm": "BGM_TowerMultiplayer_Rest",
+    "bornTpId": 78323844,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "type": 13,
+    "file": "$RuntimeLevel_FB_BossRush.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle",
+    "funcListId": 13,
+    "minLevel": 1
+  },
+  "6": {
+    "isOpenToPlayer": 1,
+    "name": "denglu",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 2001,
+    "canEnterByAltX": 0,
+    "file": "denglu",
+    "maxLevel": 1,
+    "type": 0,
+    "script": "LoginRenderScene",
+    "minLevel": 1
+  },
+  "1090": {
+    "voxelPath": "Level_FB_pata_01",
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_pata_01_XBatch",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Pata_01.unity",
+    "maxLevel": 1,
+    "type": 14,
+    "funcListId": 14,
+    "minLevel": 1
+  },
+  "7": {
+    "isOpenToPlayer": 1,
+    "name": "createPlayer",
+    "bornTpId": 2001,
+    "canEnterByAltX": 0,
+    "script": "CreateAdditiveScene",
+    "maxLevel": 1,
+    "type": 0,
+    "file": "$Level_FB_ARK_TeleportRoom.unity",
+    "minLevel": 1
+  },
+  "1091": {
+    "voxelPath": "Level_FB_pata_02",
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_pata_02_XBatch",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Pata_02.unity",
+    "maxLevel": 1,
+    "type": 14,
+    "funcListId": 14,
+    "minLevel": 1
+  },
+  "1092": {
+    "voxelPath": "Level_FB_pata_03",
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_pata_03_XBatch",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Pata_03.unity",
+    "maxLevel": 1,
+    "type": 14,
+    "funcListId": 14,
+    "minLevel": 1
+  },
+  "1093": {
+    "voxelPath": "Level_FB_pata_04",
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_pata_04_XBatch",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Pata_04.unity",
+    "maxLevel": 1,
+    "type": 14,
+    "funcListId": 14,
+    "minLevel": 1
+  },
+  "1095": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_BossCatchFinal_XBatch",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Boss_Irily_Intro",
+    "bornTpId": 91352657,
+    "canEnterByAltX": 1,
+    "type": 101,
+    "file": "$RuntimeLevel_FB_BossCatchFinal.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Operations_BOSS_Irily",
+    "funcListId": 21,
+    "minLevel": 1
+  },
+  "1096": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_BossCatch_XBatch",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Boss_Irily_Intro",
+    "bornTpId": 91352417,
+    "canEnterByAltX": 1,
+    "type": 104,
+    "file": "$RuntimeLevel_FB_BossCatch.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Boss_Irily_Part3_Loop",
+    "funcListId": 29,
+    "minLevel": 1
+  },
+  "102": {
+    "isFlyLowStaminaCost": 1,
+    "isOpenToPlayer": 0,
+    "name": "Level_FB_Test_POI_Demo",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 22349016,
+    "canEnterByAltX": 1,
+    "type": 2,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "maxLevel": 1,
+    "file": "$Level_FB_Test_POI_Demo.unity",
+    "minLevel": 1
+  },
+  "5015": {
+    "isOpenToPlayer": 0,
+    "name": "Level_Profiler",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 75086307,
+    "canEnterByAltX": 1,
+    "file": "$Level_Profiler.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "6002": {
+    "isOpenToPlayer": 1,
+    "forceDayNight": 1,
+    "forceWeatherType": 1,
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46371157,
+    "canEnterByAltX": 1,
+    "type": 11,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "name": "天使耶百变怪",
+    "funcListId": 25,
+    "minLevel": 1
+  },
+  "6003": {
+    "isOpenToPlayer": 1,
+    "forceDayNight": 1,
+    "forceWeatherType": 1,
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46371157,
+    "canEnterByAltX": 1,
+    "type": 11,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "name": "拉拉蛋百变怪",
+    "funcListId": 25,
+    "minLevel": 1
+  },
+  "6004": {
+    "isOpenToPlayer": 1,
+    "forceDayNight": 1,
+    "forceWeatherType": 1,
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46371157,
+    "canEnterByAltX": 1,
+    "type": 11,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "name": "云朵羊百变怪",
+    "funcListId": 25,
+    "minLevel": 1
+  },
+  "6005": {
+    "isOpenToPlayer": 1,
+    "forceDayNight": 4,
+    "forceWeatherType": 1,
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46371157,
+    "canEnterByAltX": 1,
+    "type": 11,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "name": "灯泡水母百变怪",
+    "funcListId": 25,
+    "minLevel": 1
+  },
+  "6006": {
+    "isOpenToPlayer": 1,
+    "forceDayNight": 4,
+    "forceWeatherType": 1,
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46371157,
+    "canEnterByAltX": 1,
+    "type": 11,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "name": "羞羞獭百变怪",
+    "funcListId": 25,
+    "minLevel": 1
+  },
+  "7001": {
+    "exitToRandom": [
+      [
+        3000,
+        90836417
+      ]
+    ],
+    "specialStateBanOperate": "SINGLEBOSS_ST",
+    "bgm": "BGM_Boss_Irily_Intro",
+    "bornTpId": 79818277,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Boss_Irily.unity",
+    "type": 2,
+    "forbiddenCatch": 1,
+    "funcListId": 17,
+    "noBattleMusic": 1,
+    "voxelPath": "EntityLevel_FB_Boss_Irily",
+    "isOpenToPlayer": 1,
+    "name": "Boss_Test",
+    "respawnByCheckpoint": 10,
+    "maxLevel": 1,
+    "amb": "SFX_AMB_Scene_Boss90213",
+    "minLevel": 1
+  },
+  "2013": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 61213315,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_13_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "2015": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67086514,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_15_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "110": {
+    "isFlyLowStaminaCost": 1,
+    "isOpenToPlayer": 0,
+    "name": "Level_FB_Lookdev_SeashoreGrassland",
+    "bornTpId": 60627082,
+    "canEnterByAltX": 1,
+    "type": 2,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "maxLevel": 1,
+    "file": "$Level_FB_Lookdev_SeashoreGrassland.unity",
+    "minLevel": 1
+  },
+  "2016": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67086716,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_16_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7002": {
+    "voxelPath": "EntityLevel_FB_Boss_Irily",
+    "isOpenToPlayer": 1,
+    "amb": "SFX_AMB_Scene_Boss90213",
+    "type": 2,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Boss_Irily_Part0",
+    "bornTpId": 90863150,
+    "canEnterByAltX": 1,
+    "noBattleMusic": 1,
+    "name": "Boss_Test",
+    "file": "$RuntimeLevel_FB_Boss_Irily.unity",
+    "maxLevel": 1,
+    "exitToRandom": [
+      [
+        3000,
+        90836417
+      ]
+    ],
+    "funcListId": 17,
+    "minLevel": 1
+  },
+  "2017": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67088150,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_17_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7003": {
+    "voxelPath": "EntityLevel_FB_Boss_Irily",
+    "isOpenToPlayer": 1,
+    "amb": "SFX_AMB_Scene_Boss90213",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 79818277,
+    "canEnterByAltX": 1,
+    "type": 9,
+    "noBattleMusic": 1,
+    "file": "$RuntimeLevel_FB_Boss_Irily.unity",
+    "maxLevel": 1,
+    "name": "Boss_Test",
+    "funcListId": 13,
+    "minLevel": 1
+  },
+  "7004": {
+    "isOpenToPlayer": 1,
+    "exitToRandom": [
+      [
+        3000,
+        91279206
+      ]
+    ],
+    "type": 2,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Scene_ValleyofWings",
+    "bornTpId": 91278534,
+    "canEnterByAltX": 1,
+    "name": "奥涅蓝单人场景",
+    "amb": "SFX_AMB_Scene_ValleyofWings",
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "forbiddenCatch": 1,
+    "funcListId": 17,
+    "minLevel": 1
+  },
+  "7501": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Sence_Oumingwan",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "1号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -1435.75,
+      76.94,
+      656.12
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "2020": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67089162,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_20_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7502": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Sence_Oumingwan",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "2号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -1265,
+      28.77,
+      685.03
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "2021": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67089221,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_21_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7503": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_StarfallForest",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "3号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -1681,
+      100,
+      1172
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "2022": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67089339,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_22_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7504": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_WolfForest",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "4号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -1163,
+      100,
+      1349
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "2023": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67089669,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_23_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7505": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "bgm_beach01",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "5号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -1252,
+      100,
+      1637
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "2024": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67089764,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_24_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7506": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_LostForest",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "6号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -1063,
+      100,
+      1114
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "2025": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 71441316,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_25.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Temple_25_XBatch",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7507": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_LightningForest",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "7号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -548,
+      100,
+      433
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "7508": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_LostForest",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "8号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -792,
+      100,
+      1314
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "7509": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_LightningForest",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "9号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -770,
+      100,
+      372
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "2027": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 72624996,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_27.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Temple_27_Xbatch",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7510": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_Highland_03",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "10号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -81,
+      100,
+      1711
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "7511": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_Highland_03",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "11号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -385,
+      100,
+      1406
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "10000": {
+    "MapBPosition": [
+      1154.19,
+      -147.34
+    ],
+    "PointAPositon": [
+      -404.0882,
+      -166.0024
+    ],
+    "PointBPosition": [
+      495,
+      97.7
+    ],
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "file": "$Level_FB_GrabEggs_Underground.unity",
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "isOpenToPlayer": 1,
+    "name": "抢蛋大作战_随机地宫",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3004,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      1280,
+      720
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 2,
+    "showTeamNot": 1,
+    "toplogoType": 2,
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "sceneName": 1781631557,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "type": 17,
+    "InteractionType": 1,
+    "MapAPosition": [
+      242.49,
+      -415.61
+    ]
+  },
+  "7512": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_FlowerSea",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "12号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -619,
+      100,
+      967
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "7513": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Scene_ValleyNormal",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "13号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -50,
+      100,
+      1731
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "7514": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_NorthernFlowerSeaForest",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "14号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -265,
+      100,
+      932
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "300": {
+    "isOpenToPlayer": 0,
+    "name": "QuestTest_Demo",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 27015751,
+    "canEnterByAltX": 1,
+    "file": "$Level_FB_QuestTest_Demo.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "20034": {
+    "MapBPosition": [
+      1414,
+      -169
+    ],
+    "PointAPositon": [
+      236.5,
+      -413.5
+    ],
+    "PointBPosition": [
+      333.5,
+      -146.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20034.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20034,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫034",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      788,
+      -1880
+    ]
+  },
+  "8000": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_3C_1",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41187120,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_3C_1.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "111": {
+    "isOpenToPlayer": 0,
+    "name": "$Level_BW_ECSLevel_WYS",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 15017118,
+    "canEnterByAltX": 1,
+    "file": "$Level_BW_ECSLevel_WYS.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "amb": "amb_scene_1",
+    "minLevel": 1
+  },
+  "20035": {
+    "MapBPosition": [
+      1553,
+      -287
+    ],
+    "PointAPositon": [
+      200,
+      -327.8
+    ],
+    "PointBPosition": [
+      343.899,
+      -99.99699
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20035.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20035,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫035",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      731,
+      -1597
+    ]
+  },
+  "3007": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "amb": "amb_scene_1",
+    "mapQuickTeleport": {
+      "501": [
+        [
+          72183801,
+          "$UI_Icon_TransPoint_02.png"
+        ]
+      ]
+    },
+    "markShare": 1,
+    "positionResetType1": 2,
+    "bornTpId": 91165556,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "respawnByCall": 0,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "veinMapLevel": 4,
+    "funcListId": 6,
+    "isOpenToPlayer": 1,
+    "name": "CBT3抖音切片场景",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 2,
+    "showTeamNot": 1,
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      6144,
+      -6144
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "sceneName": 1546147737,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "type": 2,
+    "timeprivate": 1,
+    "positionResetType4": 2,
+    "respawnByCheckpoint": 1,
+    "positionResetType2": 2,
+    "MapAPosition": [
+      0,
+      0
+    ],
+    "isStreamEditor": 1,
+    "allowMigrateBuff": true,
+    "cameraFarPlane": 20000,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "isFlyLowStaminaCost": 1,
+    "canTakeOutPet": 1,
+    "editorSortId": 999
+  },
+  "4000": {
+    "isOpenToPlayer": 0,
+    "name": "多人战斗场景 - 星魔师",
+    "respawnByCheckpoint": 10,
+    "type": 9,
+    "bornTpId": 72087722,
+    "canEnterByAltX": 1,
+    "specialStateBanOperate": "MULTIPLE_BATTLE_ST",
+    "showTeamNot": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "isStreamEditor": 1,
+    "funcListId": 2,
+    "minLevel": 1
+  },
+  "1010": {
+    "isOpenToPlayer": 1,
+    "name": "RogueLike_PVE",
+    "type": 7,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Rogue_Rest",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "specialStateBanOperate": "ROGUE_ST",
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle_02",
+    "funcListId": 7,
+    "minLevel": 1
+  },
+  "8001": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_3C_2",
+    "type": 8,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41188403,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "hideSkill": 1,
+    "file": "$RuntimeLevel_FB_Tutorial_3C_2.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "8002": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Catch_1",
+    "type": 8,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 60454479,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "file": "$RuntimeLevel_FB_Tutorial_Catch_1.unity",
+    "maxLevel": 1,
+    "hidePet": 1,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "4002": {
+    "isOpenToPlayer": 0,
+    "name": "多人战斗场景 - 海獭",
+    "respawnByCheckpoint": 10,
+    "type": 9,
+    "bornTpId": 73445148,
+    "canEnterByAltX": 1,
+    "specialStateBanOperate": "MULTIPLE_BATTLE_ST",
+    "showTeamNot": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "isStreamEditor": 1,
+    "funcListId": 2,
+    "minLevel": 1
+  },
+  "8004": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Chem_1_Fire",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41614489,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Chem_1_Fire.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NORMAL",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "4003": {
+    "isOpenToPlayer": 0,
+    "name": "多人战斗场景 - 雷光貂领地",
+    "respawnByCheckpoint": 10,
+    "type": 9,
+    "bornTpId": 73445286,
+    "canEnterByAltX": 1,
+    "specialStateBanOperate": "MULTIPLE_BATTLE_ST",
+    "showTeamNot": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "isStreamEditor": 1,
+    "funcListId": 2,
+    "minLevel": 1
+  },
+  "5010002": {
+    "MapBPosition": [
+      1113,
+      -7924
+    ],
+    "PointAPositon": [
+      46.96,
+      1154.18
+    ],
+    "PointBPosition": [
+      -38.46,
+      437.44
+    ],
+    "bornTpId": 71867591,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_Ark.unity",
+    "veinMapLevel": 2,
+    "funcListId": 5,
+    "voxelPath": "Level_BW_Ark",
+    "autoCutSeamless": 1,
+    "isOpenToPlayer": 1,
+    "name": "Level_BW_Ark_InstituteSecondFloor",
+    "mapImage": 501,
+    "mapImageScale": [
+      1.5,
+      1.25,
+      1,
+      0.75,
+      0.5,
+      0.3
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      2065.36,
+      -7034.765
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      4096,
+      8960
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      0.4,
+      0.4
+    ],
+    "showTeamNot": 1,
+    "enterSeamless": "ENTERSEAMLESS_QUEST",
+    "specialStateBanOperate": "METAVERSE_ST",
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "moveSpeed": [
+      4,
+      4
+    ],
+    "respawnByCheckpoint": 10,
+    "type": 2,
+    "seamlessRange": [
+      72461650,
+      3
+    ],
+    "scanVehicle": 1,
+    "exitSeamless": "EXITSEAMLESS_QUEST",
+    "mainScene": 501,
+    "forceTime": 11,
+    "isStreamEditor": 1,
+    "canTakeOutPet": 1,
+    "MapAPosition": [
+      2012,
+      -439
+    ]
+  },
+  "4004": {
+    "isOpenToPlayer": 0,
+    "name": "多人战斗场景 - 花舞兰",
+    "respawnByCheckpoint": 10,
+    "type": 9,
+    "bornTpId": 73455792,
+    "canEnterByAltX": 1,
+    "specialStateBanOperate": "MULTIPLE_BATTLE_ST",
+    "showTeamNot": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "isStreamEditor": 1,
+    "funcListId": 2,
+    "minLevel": 1
+  },
+  "2008": {
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 53117313,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_08.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_08",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "2028": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 80856988,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_28.unity",
+    "immuneFallDamage": 1,
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_28",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "5010001": {
+    "MapBPosition": [
+      1113,
+      -7924
+    ],
+    "PointAPositon": [
+      46.96,
+      1154.18
+    ],
+    "PointBPosition": [
+      -38.46,
+      437.44
+    ],
+    "bornTpId": 72064804,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_Ark.unity",
+    "veinMapLevel": 2,
+    "scanVehicle": 1,
+    "voxelPath": "Level_BW_Ark",
+    "exitSeamless": "EXITSEAMLESS_QUEST",
+    "name": "Level_BW_Ark_PrincipalsOffice",
+    "mapImage": 501,
+    "mapImageScale": [
+      1.5,
+      1.25,
+      1,
+      0.75,
+      0.5,
+      0.3
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      2065.36,
+      -7034.765
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      4096,
+      9069
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      0.4,
+      0.4
+    ],
+    "hidePet": 1,
+    "showTeamNot": 1,
+    "enterSeamless": "ENTERSEAMLESS_QUEST",
+    "specialStateBanOperate": "METAVERSE_ST",
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "moveSpeed": [
+      4,
+      4
+    ],
+    "respawnByCheckpoint": 10,
+    "type": 2,
+    "seamlessRange": [
+      69441575,
+      1
+    ],
+    "isStreamEditor": 1,
+    "funcListId": 5,
+    "isOpenToPlayer": 1,
+    "mainScene": 501,
+    "canTakeOutPet": 1,
+    "MapAPosition": [
+      2012,
+      -439
+    ]
+  },
+  "4006": {
+    "isOpenToPlayer": 0,
+    "name": "多人战斗场景 - 簇晶脊龙",
+    "respawnByCheckpoint": 10,
+    "type": 9,
+    "bornTpId": 73457454,
+    "canEnterByAltX": 1,
+    "specialStateBanOperate": "MULTIPLE_BATTLE_ST",
+    "showTeamNot": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "isStreamEditor": 1,
+    "funcListId": 2,
+    "minLevel": 1
+  },
+  "8005": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Chem_2_Water",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41614424,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Chem_2_Water.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NORMAL",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "5010": {
+    "miniMapImageScale": [
+      1
+    ],
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Ark_VoxelMission",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Ark_Voxelmission.unity",
+    "maxLevel": 1,
+    "editorSortId": 999,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "20041": {
+    "MapBPosition": [
+      1559,
+      -509
+    ],
+    "PointAPositon": [
+      102.4,
+      -373.747
+    ],
+    "PointBPosition": [
+      261.649,
+      -264.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20041.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20041,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫041",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      401,
+      -1299
+    ]
+  },
+  "8006": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Chem_3_Ice",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41614592,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Chem_3_Ice.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NORMAL",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "8100": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Combat_1",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41700318,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Combat_1.unity",
+    "maxLevel": 1,
+    "forbiddenCatch": 1,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "20042": {
+    "MapBPosition": [
+      351,
+      -299
+    ],
+    "PointAPositon": [
+      337.5,
+      -337.5
+    ],
+    "PointBPosition": [
+      158.5,
+      -182.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20042.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20042,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫042",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      1924,
+      -1662
+    ]
+  },
+  "8007": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Chem_4_Electric",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 59235512,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Chem_4_Electric.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NORMAL",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "5014": {
+    "isOpenToPlayer": 1,
+    "exitToRandom": [
+      [
+        501,
+        72038036
+      ]
+    ],
+    "type": 2,
+    "specialStateBanOperate": "METAVERSE_ST",
+    "bgm": "BGM_ARK_3D_Store_Prop",
+    "bornTpId": 72037350,
+    "canEnterByAltX": 1,
+    "showCampCircle": {
+      "1": [
+        "green",
+        "blue",
+        "",
+        "red"
+      ],
+      "0": [
+        "green",
+        "blue",
+        "",
+        "red"
+      ]
+    },
+    "name": "Level_FB_Ark_SimulationLab",
+    "file": "$RuntimeLevel_FB_Ark_SimulationLab.unity",
+    "maxLevel": 1,
+    "minLevel": 1,
+    "funcListId": 5,
+    "editorSortId": 999
+  },
+  "2001": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "showTeamNot": 1,
+    "bgm": "BGM_Scene_HelmonBox",
+    "positionResetType2": 2,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$Level_FB_HelmonBox_MultiPlayer_Temp.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showCampCircle": {
+      "1": [
+        "green",
+        "blue",
+        "",
+        "red"
+      ],
+      "0": [
+        "green",
+        "blue",
+        "",
+        "red"
+      ]
+    },
+    "isOpenToPlayer": 0,
+    "name": "Level_FB_HelmonBox_MultiPlayer",
+    "respawnByCheckpoint": 10,
+    "shadowEntityOffset": [
+      1000,
+      0,
+      0
+    ],
+    "positionResetType4": 4,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "bornTpId": 39370296,
+    "maxLevel": 1,
+    "enableCreateShadowEntity": 1,
+    "positionResetBlackScreenId2": 1,
+    "minLevel": 1
+  },
+  "8008": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Chem_5_Impulse",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41614761,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Chem_5_Impulse.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NORMAL",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "3000103": {
+    "isFlyLowStaminaCost": 1,
+    "enterSeamless": "ENTERSEAMLESS_CAMP",
+    "specialStateBanOperate": "SCENE_HOME_CAMP_ST",
+    "bgm": "BGM_Scene_RVCamp",
+    "bornTpId": 84750989,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "type": 18,
+    "canHugPet": 1,
+    "funcListId": 6,
+    "name": "房车营地_冰湖畔",
+    "autoCutSeamless": 1,
+    "isOpenToPlayer": 1,
+    "mainScene": 3000,
+    "respawnByCheckpoint": 10,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "seamlessRange": [
+      84750983,
+      1
+    ],
+    "exitSeamless": "EXITSEAMLESS_CAMP",
+    "maxLevel": 1,
+    "hideSceneBlockPoiTip": 1,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "canPlaceFurniture": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "20044": {
+    "MapBPosition": [
+      468,
+      -124
+    ],
+    "PointAPositon": [
+      441.5,
+      -373.5
+    ],
+    "PointBPosition": [
+      276.5,
+      -128.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20044.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20044,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫044",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      1683,
+      -1924
+    ]
+  },
+  "2002": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 50083197,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_09.unity",
+    "type": 103,
+    "teamHudDis": 15,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_09",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "7515": {
+    "MapBPosition": [
+      9216,
+      -9216
+    ],
+    "PointAPositon": [
+      -2048,
+      2048
+    ],
+    "PointBPosition": [
+      4096,
+      -4096
+    ],
+    "bgm": "BGM_Sence_TideblossomCoast",
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Cave_001.unity",
+    "veinMapLevel": 4,
+    "funcListId": 26,
+    "isOpenToPlayer": 1,
+    "name": "15号洞穴",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 1,
+    "showTeamNot": 1,
+    "type": 2,
+    "wholemapOffset": [
+      -108,
+      100,
+      665
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "isFlyLowStaminaCost": 1,
+    "positionResetType4": 4,
+    "positionResetBlackScreenId4": 4,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "respawnByCheckpoint": 10,
+    "heightLimit": 500,
+    "mapOffsetUI": [
+      3072,
+      -3072
+    ],
+    "isStreamEditor": 1,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "mapUISize": [
+      9216,
+      9216
+    ],
+    "maxLevel": 1,
+    "MapAPosition": [
+      0,
+      0
+    ]
+  },
+  "20045": {
+    "MapBPosition": [
+      1865,
+      -565
+    ],
+    "PointAPositon": [
+      158.02,
+      -341.9
+    ],
+    "PointBPosition": [
+      332.02,
+      -216.15
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20045.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20045,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫045",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      499,
+      -1547
+    ]
+  },
+  "8010": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Plus_2_CallFriend",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41615644,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Plus_2_CallFriend.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_CALLPALS",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "2003": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 50076659,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_02.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_02",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "20046": {
+    "MapBPosition": [
+      1354,
+      -308
+    ],
+    "PointAPositon": [
+      202.48,
+      -383.5
+    ],
+    "PointBPosition": [
+      361.5,
+      -274.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20046.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20046,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫046",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      124,
+      -1155
+    ]
+  },
+  "1020": {
+    "isOpenToPlayer": 1,
+    "name": "DungeonDemo_2F-1",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 47665143,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "8011": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Plus_3_PhotoTaking",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 42834384,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Plus_3_PhotoTaking.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "2004": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 52434748,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_05.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_05",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "3000100": {
+    "isFlyLowStaminaCost": 1,
+    "enterSeamless": "ENTERSEAMLESS_CAMP",
+    "specialStateBanOperate": "SCENE_HOME_CAMP_ST",
+    "bgm": "BGM_Scene_RVCamp",
+    "bornTpId": 83980508,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "type": 18,
+    "canHugPet": 1,
+    "funcListId": 6,
+    "name": "房车营地_草原",
+    "autoCutSeamless": 1,
+    "isOpenToPlayer": 1,
+    "mainScene": 3000,
+    "respawnByCheckpoint": 10,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "seamlessRange": [
+      83981881,
+      1
+    ],
+    "exitSeamless": "EXITSEAMLESS_CAMP",
+    "maxLevel": 1,
+    "hideSceneBlockPoiTip": 1,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "canPlaceFurniture": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "8012": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_AmberGamePlay_1",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 64959270,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_AmberGamePlay_1.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "20048": {
+    "MapBPosition": [
+      366,
+      -401
+    ],
+    "PointAPositon": [
+      409.5,
+      -475.5
+    ],
+    "PointBPosition": [
+      220.5,
+      -310.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20048.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20048,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫048",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      1681,
+      -1550
+    ]
+  },
+  "2005": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 50598160,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_03_1.unity",
+    "type": 103,
+    "teamHudDis": 15,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_03_1",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "8013": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_AmberGamePlay_2",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 64959634,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_AmberGamePlay_2.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "20049": {
+    "MapBPosition": [
+      1363,
+      -283
+    ],
+    "PointAPositon": [
+      230.27,
+      -435.72
+    ],
+    "PointBPosition": [
+      358.87,
+      -293.17
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20049.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20049,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫049",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      477,
+      -1265
+    ]
+  },
+  "3000001": {
+    "MapBPosition": [
+      2878,
+      -766
+    ],
+    "PointAPositon": [
+      -1331,
+      571
+    ],
+    "PointBPosition": [
+      -155.7,
+      1635
+    ],
+    "amb": "amb_scene_1",
+    "bornTpId": 58619804,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "respawnByCall": 0,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "veinMapLevel": 4,
+    "funcListId": 6,
+    "autoCutSeamless": 1,
+    "isOpenToPlayer": 1,
+    "mainScene": 3000,
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "petBuffIds": [
+      9104302
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.51,
+      3.03,
+      2.55,
+      2.07,
+      1.59,
+      1.11
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      6144,
+      6144
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "showTeamNot": 1,
+    "enterSeamless": "ENTERSEAMLESS_CAMP",
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "type": 1,
+    "seamlessRange": [
+      69111822,
+      3
+    ],
+    "nearSeamless": [
+      20,
+      "NEARSEAMLESS_CAMP"
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "respawnByCheckpoint": 1,
+    "name": "位面—初始营地",
+    "MapAPosition": [
+      1076,
+      -2400
+    ],
+    "exitSeamless": "EXITSEAMLESS_CAMP",
+    "isFlyLowStaminaCost": 1,
+    "cameraFarPlane": 20000,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "isStreamEditor": 1,
+    "canTakeOutPet": 1,
+    "editorSortId": 100
+  },
+  "2006": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 50607511,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_11.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_11",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "20050": {
+    "MapBPosition": [
+      1455,
+      -234
+    ],
+    "PointAPositon": [
+      279,
+      -373.25
+    ],
+    "PointBPosition": [
+      357,
+      -173
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20050.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20050,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫050",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      828,
+      -1815
+    ]
+  },
+  "30001": {
+    "type": 102,
+    "isOpenToPlayer": 1,
+    "name": "NPC对决 草板块副本",
+    "timeprivate": 1,
+    "combatBgm": "bgm_battle_pvp_01",
+    "bgm": "BGM_Rogue_Rest",
+    "minLevel": 1,
+    "canEnterByAltX": 1,
+    "isStreamEditor": 1,
+    "cameraFarPlane": 20000,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "sceneName": 1274827051,
+    "funcListId": 24,
+    "editorSortId": 100
+  },
+  "8015": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_AmberGamePlay_4",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 64959769,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$Level_FB_Tutorial_AmberGamePlay_4.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "2007": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 50858141,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_06_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "29999": {
+    "MapBPosition": [
+      1793,
+      -573
+    ],
+    "PointAPositon": [
+      244,
+      -425.63
+    ],
+    "PointBPosition": [
+      364,
+      -356.37
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_29999.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 29999,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "特殊奖励6钥匙房地宫",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      254,
+      -1451
+    ]
+  },
+  "8016": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Chem_6_ChemLevel",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 72280234,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Chem_6_ChemLevel.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NORMAL",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "20052": {
+    "MapBPosition": [
+      1924,
+      -524
+    ],
+    "PointAPositon": [
+      204.5,
+      -291.5
+    ],
+    "PointBPosition": [
+      383.5,
+      -202.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20052.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20052,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫052",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      124,
+      -1424
+    ]
+  },
+  "20032": {
+    "MapBPosition": [
+      160,
+      -683
+    ],
+    "PointAPositon": [
+      351.5,
+      -367.5
+    ],
+    "PointBPosition": [
+      112.5,
+      -226.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20032.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20032,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫032号",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      1620,
+      -1547
+    ]
+  },
+  "2009": {
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_TempleEntranceCollection",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 56403570,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_TempleEntranceCollection.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "script": "TempleScene",
+    "minLevel": 1
+  },
+  "20053": {
+    "MapBPosition": [
+      1805,
+      -1717
+    ],
+    "PointAPositon": [
+      232.465,
+      -142.562
+    ],
+    "PointBPosition": [
+      387.493,
+      -299.499
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20053.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20053,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫053",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      327,
+      -219
+    ]
+  },
+  "2010": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 56736268,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_12_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "3002": {
+    "MapBPosition": [
+      2878,
+      -766
+    ],
+    "PointAPositon": [
+      -1331,
+      571
+    ],
+    "PointBPosition": [
+      -155.7,
+      1635
+    ],
+    "amb": "amb_scene_1",
+    "bornTpId": 52752099,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "respawnByCall": 0,
+    "file": "$RuntimeLevel_BW_Novice.unity",
+    "veinMapLevel": 2,
+    "funcListId": 6,
+    "isOpenToPlayer": 1,
+    "name": "大世界新手场景",
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapImage": 3000,
+    "mapImageScale": [
+      4,
+      3.83,
+      3.66,
+      3.49,
+      3.32,
+      3.15,
+      2.98,
+      2.81,
+      2.64,
+      2.47,
+      2.3,
+      2.13,
+      1.96,
+      1.79,
+      1.62,
+      1.45,
+      1.28,
+      1.11,
+      0.94
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      7394.759,
+      -5497.617
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      6144,
+      6144
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "showTeamNot": 1,
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "respawnByCheckpoint": 1,
+    "type": 2,
+    "cameraFarPlane": 20000,
+    "timeprivate": 1,
+    "editorSortId": 999,
+    "isStreamEditor": 1,
+    "mainScene": 3000,
+    "MapAPosition": [
+      1076,
+      -2400
+    ]
+  },
+  "2011": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 58463618,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_10.unity",
+    "type": 8,
+    "showTeamNot": 1,
+    "funcListId": 11,
+    "script": "TempleScene",
+    "positionResetBlackScreenId3": 2001,
+    "positionResetType4": 4,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_10",
+    "positionResetType2": 2,
+    "respawnByCheckpoint": 10,
+    "cameraFarPlane": 750,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "accuratePhysics": true,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "20036": {
+    "MapBPosition": [
+      1924,
+      -337
+    ],
+    "PointAPositon": [
+      152.5,
+      -327.5
+    ],
+    "PointBPosition": [
+      421.5,
+      -200.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20036.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20036,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫036",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      124,
+      -1191
+    ]
+  },
+  "20059": {
+    "MapBPosition": [
+      1412,
+      -323
+    ],
+    "PointAPositon": [
+      202.5,
+      -263.49
+    ],
+    "PointBPosition": [
+      287.5,
+      -110.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20059.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20059,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫059",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      597,
+      -1782
+    ]
+  },
+  "20055": {
+    "MapBPosition": [
+      1751,
+      -559
+    ],
+    "PointAPositon": [
+      192.41,
+      -273.3
+    ],
+    "PointBPosition": [
+      311.04,
+      -144.25
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20055.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20055,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫055",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      505,
+      -1913
+    ]
+  },
+  "20058": {
+    "MapBPosition": [
+      1859,
+      -124
+    ],
+    "PointAPositon": [
+      259,
+      -385
+    ],
+    "PointBPosition": [
+      396.99,
+      -193
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20058.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20058,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫057",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      560,
+      -1924
+    ]
+  },
+  "20047": {
+    "MapBPosition": [
+      1733,
+      -617
+    ],
+    "PointAPositon": [
+      236.1,
+      -273.82
+    ],
+    "PointBPosition": [
+      391.49,
+      -163
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20047.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20047,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫047",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      313,
+      -1633
+    ]
+  },
+  "20056": {
+    "MapBPosition": [
+      316,
+      -340
+    ],
+    "PointAPositon": [
+      333.5,
+      -313.5
+    ],
+    "PointBPosition": [
+      210.5,
+      -186.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20056.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20056,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫056",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      1804,
+      -1876
+    ]
+  },
+  "20054": {
+    "MapBPosition": [
+      1924,
+      -1587
+    ],
+    "PointAPositon": [
+      314.5,
+      -186
+    ],
+    "PointBPosition": [
+      505,
+      -297.2
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20054.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20054,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫054",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      123,
+      -536
+    ]
+  },
+  "20051": {
+    "MapBPosition": [
+      1803,
+      -555
+    ],
+    "PointAPositon": [
+      202.75,
+      -263
+    ],
+    "PointBPosition": [
+      311.04,
+      -143
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20051.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20051,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫051",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      579,
+      -1915
+    ]
+  },
+  "20057": {
+    "MapBPosition": [
+      1507,
+      -699
+    ],
+    "PointAPositon": [
+      256.25,
+      -291.58
+    ],
+    "PointBPosition": [
+      361,
+      -191
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20057.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20057,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫057",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      387,
+      -1779
+    ]
+  },
+  "20043": {
+    "MapBPosition": [
+      1817,
+      -593
+    ],
+    "PointAPositon": [
+      236.399,
+      -273.75
+    ],
+    "PointBPosition": [
+      391.649,
+      -162.25
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20043.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20043,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫043",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      323,
+      -1665
+    ]
+  },
+  "20040": {
+    "MapBPosition": [
+      438,
+      -124
+    ],
+    "PointAPositon": [
+      443.5,
+      -325.5
+    ],
+    "PointBPosition": [
+      186.5,
+      -140.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20040.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20040,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫040",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      1918,
+      -1190
+    ]
+  },
+  "252": {
+    "heightLimit": 300,
+    "isFlyLowStaminaCost": 1,
+    "isOpenToPlayer": 0,
+    "name": "Level_Test_CombatAnd3C",
+    "respawnByCheckpoint": 10,
+    "type": 2,
+    "bornTpId": 15016912,
+    "canEnterByAltX": 1,
+    "canFlyVerticalAndSprint": 1,
+    "maxLevel": 1,
+    "file": "$Level_Test_CombatAnd3C.unity",
+    "canGlideRise": 1,
+    "canHugPet": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "20039": {
+    "MapBPosition": [
+      1845,
+      -211
+    ],
+    "PointAPositon": [
+      305.899,
+      -407.997
+    ],
+    "PointBPosition": [
+      478,
+      -171.75
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20039.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20039,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫039",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      629,
+      -1883
+    ]
+  },
+  "259": {
+    "isOpenToPlayer": 0,
+    "name": "Level_SimpleDunmmyTest",
+    "IsTrainStage": 1,
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_TrainingGround",
+    "bornTpId": 16469087,
+    "canEnterByAltX": 1,
+    "file": "$Level_SimpleDunmmyTest.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "20038": {
+    "MapBPosition": [
+      1924,
+      -455
+    ],
+    "PointAPositon": [
+      206.5,
+      -309.5
+    ],
+    "PointBPosition": [
+      477.5,
+      -172.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20038.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20038,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫038",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      124,
+      -1368
+    ]
+  },
+  "20037": {
+    "MapBPosition": [
+      1259,
+      -489
+    ],
+    "PointAPositon": [
+      126.4,
+      -347.497
+    ],
+    "PointBPosition": [
+      247.399,
+      -170.5
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20037.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20037,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫037",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      527,
+      -1557
+    ]
+  },
+  "20060": {
+    "MapBPosition": [
+      1724,
+      -394
+    ],
+    "PointAPositon": [
+      234.5,
+      -377.5
+    ],
+    "PointBPosition": [
+      337,
+      -253
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20060.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20060,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫060",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      684,
+      -1654
+    ]
+  },
+  "263": {
+    "isFlyLowStaminaCost": 1,
+    "isOpenToPlayer": 0,
+    "name": "Level_ParmonCompetition",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 15017118,
+    "canEnterByAltX": 1,
+    "type": 2,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "maxLevel": 1,
+    "file": "$Level_ParmonCompetition.unity",
+    "minLevel": 1
+  },
+  "20033": {
+    "MapBPosition": [
+      1607,
+      -521
+    ],
+    "PointAPositon": [
+      138.0941,
+      -393.642
+    ],
+    "PointBPosition": [
+      303.8441,
+      -205.892
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20033.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20033,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫033",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      509,
+      -1769
+    ]
+  },
+  "20100": {
+    "MapBPosition": [
+      1795,
+      -567
+    ],
+    "PointAPositon": [
+      244,
+      -425.63
+    ],
+    "PointBPosition": [
+      364,
+      -356.37
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20100.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20100,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋测试地宫20100",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      252,
+      -1453
+    ]
+  },
+  "265": {
+    "isOpenToPlayer": 0,
+    "name": "Level_ParmonInteract",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 22517157,
+    "canEnterByAltX": 1,
+    "file": "$Level_ParmonInteract.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "1": {
+    "isOpenToPlayer": 1,
+    "name": "Init",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 1001,
+    "canEnterByAltX": 0,
+    "file": "Init",
+    "maxLevel": 1,
+    "type": 0,
+    "minLevel": 1
+  },
+  "2": {
+    "isOpenToPlayer": 1,
+    "name": "login",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 2001,
+    "canEnterByAltX": 0,
+    "file": "$Level_SYS_Login.unity",
+    "maxLevel": 1,
+    "type": 0,
+    "script": "LoginScene",
+    "minLevel": 1
+  },
+  "3": {
+    "isOpenToPlayer": 1,
+    "name": "player",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 3001,
+    "canEnterByAltX": 0,
+    "file": "player",
+    "maxLevel": 1,
+    "type": 0,
+    "script": "PlayerScene",
+    "minLevel": 1
+  },
+  "4": {
+    "isOpenToPlayer": 1,
+    "name": "loading",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 4001,
+    "canEnterByAltX": 0,
+    "file": "$Level_SYS_Loading.unity",
+    "maxLevel": 1,
+    "type": 0,
+    "script": "LoadingScene",
+    "minLevel": 1
+  },
+  "501": {
+    "MapBPosition": [
+      3290,
+      -3703
+    ],
+    "PointAPositon": [
+      49.349,
+      1075.455
+    ],
+    "PointBPosition": [
+      -60.979,
+      455.217
+    ],
+    "mapQuickTeleport": {
+      "3000": [
+        [
+          0,
+          "$UI_Icon_TransPoint_03.png"
+        ]
+      ]
+    },
+    "bornTpId": 37824947,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_Ark.unity",
+    "veinMapLevel": 2,
+    "canHugPet": 1,
+    "scanVehicle": 1,
+    "showCampCircle": {
+      "1": [
+        "green",
+        "blue",
+        "",
+        "red"
+      ],
+      "0": [
+        "green",
+        "blue",
+        "",
+        "red"
+      ]
+    },
+    "voxelPath": "Level_BW_Ark",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_BW_Ark",
+    "mapImage": 501,
+    "mapImageScale": [
+      3.5,
+      2.6,
+      1.9,
+      1.4,
+      1,
+      0.65
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      3740,
+      -3639
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      7680,
+      5120
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      0.8,
+      2
+    ],
+    "showTeamNot": 1,
+    "specialStateBanOperate": "METAVERSE_ST",
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "sceneName": 1227640580,
+    "moveSpeed": [
+      4,
+      4
+    ],
+    "respawnByCheckpoint": 10,
+    "allowMigrateBuff": true,
+    "type": 1,
+    "editorSortId": 999,
+    "funcListId": 5,
+    "isStreamEditor": 1,
+    "canTakeOutPet": 1,
+    "MapAPosition": [
+      3840,
+      -665
+    ]
+  },
+  "4001": {
+    "isOpenToPlayer": 0,
+    "name": "多人战斗场景 - 火狼",
+    "respawnByCheckpoint": 10,
+    "type": 9,
+    "bornTpId": 73443734,
+    "canEnterByAltX": 1,
+    "specialStateBanOperate": "MULTIPLE_BATTLE_ST",
+    "showTeamNot": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "isStreamEditor": 1,
+    "funcListId": 2,
+    "minLevel": 1
+  },
+  "20031": {
+    "MapBPosition": [
+      1709,
+      -743
+    ],
+    "PointAPositon": [
+      206.149,
+      -363.735
+    ],
+    "PointBPosition": [
+      389.992,
+      -243.99
+    ],
+    "amb": "SFX_AMB_TEM_SilenceTemple_02",
+    "berserkBgm": "BGM_HitAndRun_Temple_Wild_Explore",
+    "berserkCombatBgm": "BGM_HitAndRun_Temple_Wild_Combat",
+    "bgm": "BGM_HitAndRun_Temple_Normal_Explore",
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "exitCombatBgm": "BGM_HitAndRun_Temple_OutCombat",
+    "file": "$Level_FB_Random_Map_20031.unity",
+    "footStepVolume": [
+      40,
+      40
+    ],
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "highDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Danger",
+    "highDangerValue": [
+      11,
+      9
+    ],
+    "isOpenToPlayer": 1,
+    "lowDangerValue": [
+      4,
+      2
+    ],
+    "mapFiltrateNotTick": [
+      10506
+    ],
+    "mapFogBlock": 1,
+    "mapImage": 20031,
+    "mapImageScale": [
+      4,
+      3.696,
+      3.415,
+      3.155,
+      2.916,
+      2.695,
+      1.58
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 0,
+    "mapUISize": [
+      2048,
+      2048
+    ],
+    "maxLevel": 1,
+    "midDangerBgm": "BGM_HitAndRun_Temple_Jizhiguai_Alert",
+    "midDangerValue": [
+      7,
+      5
+    ],
+    "minLevel": 1,
+    "miniMapImageScale": [
+      1.5,
+      2.5
+    ],
+    "positionResetType3": 2,
+    "reverb": "Aux_Reverb_UndergroundPalace",
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "type": 100,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "name": "抢蛋大作战_随机地宫031号",
+    "combatBgm": "BGM_HitAndRun_Temple_Normal_Combat",
+    "InteractionType": 1,
+    "MapAPosition": [
+      555,
+      -1489
+    ]
+  },
+  "269": {
+    "isOpenToPlayer": 0,
+    "name": "RougelikeDemo",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_TrainingGround",
+    "bornTpId": 25266655,
+    "canEnterByAltX": 1,
+    "file": "$Level_RougelikeDemo.unity",
+    "maxLevel": 1,
+    "type": 7,
+    "script": "RoguelikeScene",
+    "minLevel": 1
+  },
+  "19999": {
+    "isOpenToPlayer": 1,
+    "exitToRandom": [
+      [
+        501,
+        91062193
+      ],
+      [
+        501,
+        91062221
+      ],
+      [
+        501,
+        91062223
+      ],
+      [
+        501,
+        91062222
+      ],
+      [
+        501,
+        91062225
+      ],
+      [
+        501,
+        91062224
+      ],
+      [
+        501,
+        91062227
+      ],
+      [
+        501,
+        91062226
+      ]
+    ],
+    "respawnByCheckpoint": 10,
+    "bornTpId": 91011278,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "type": 1,
+    "file": "$RuntimeLevel_FB_BonfireTest_Hall.unity",
+    "maxLevel": 1,
+    "name": "篝火测试初始场景",
+    "funcListId": 20,
+    "minLevel": 1
+  },
+  "19998": {
+    "isOpenToPlayer": 1,
+    "exitToRandom": [
+      [
+        501,
+        91062193
+      ],
+      [
+        501,
+        91062221
+      ],
+      [
+        501,
+        91062223
+      ],
+      [
+        501,
+        91062222
+      ],
+      [
+        501,
+        91062225
+      ],
+      [
+        501,
+        91062224
+      ],
+      [
+        501,
+        91062227
+      ],
+      [
+        501,
+        91062226
+      ]
+    ],
+    "skipSkillCutScene": 1,
+    "respawnByCheckpoint": 10,
+    "bornTpId": 72270067,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "type": 2,
+    "file": "$Level_FB_GrabEggs_RoomComponent.unity",
+    "maxLevel": 1,
+    "name": "抢蛋测试场景",
+    "funcListId": 12,
+    "minLevel": 1
+  },
+  "3000101": {
+    "isFlyLowStaminaCost": 1,
+    "enterSeamless": "ENTERSEAMLESS_CAMP",
+    "specialStateBanOperate": "SCENE_HOME_CAMP_ST",
+    "bgm": "BGM_Scene_RVCamp",
+    "bornTpId": 84748009,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "type": 18,
+    "canHugPet": 1,
+    "funcListId": 6,
+    "name": "房车营地_山地",
+    "autoCutSeamless": 1,
+    "isOpenToPlayer": 1,
+    "mainScene": 3000,
+    "respawnByCheckpoint": 10,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "seamlessRange": [
+      84748005,
+      1
+    ],
+    "exitSeamless": "EXITSEAMLESS_CAMP",
+    "maxLevel": 1,
+    "hideSceneBlockPoiTip": 1,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "canPlaceFurniture": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "271": {
+    "isOpenToPlayer": 0,
+    "name": "TransfigurePuzzlePoint_Demo",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 22349016,
+    "canEnterByAltX": 1,
+    "file": "$Level_TransfigurePuzzlePoint_Demo.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "3000102": {
+    "isFlyLowStaminaCost": 1,
+    "enterSeamless": "ENTERSEAMLESS_CAMP",
+    "specialStateBanOperate": "SCENE_HOME_CAMP_ST",
+    "bgm": "BGM_Scene_RVCamp",
+    "bornTpId": 84750948,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "type": 18,
+    "canHugPet": 1,
+    "funcListId": 6,
+    "name": "房车营地_海滩",
+    "autoCutSeamless": 1,
+    "isOpenToPlayer": 1,
+    "mainScene": 3000,
+    "respawnByCheckpoint": 10,
+    "petBuffIds": [
+      9104302
+    ],
+    "playerBuffIds": [
+      920000102
+    ],
+    "seamlessRange": [
+      84750931,
+      1
+    ],
+    "exitSeamless": "EXITSEAMLESS_CAMP",
+    "maxLevel": 1,
+    "hideSceneBlockPoiTip": 1,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "canPlaceFurniture": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "8009": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Plus_1_RemoteControl",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41614874,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Plus_1_RemoteControl.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NORMAL",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "272": {
+    "isOpenToPlayer": 0,
+    "name": "TotemJigsawPoint_Demo",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 22349016,
+    "canEnterByAltX": 1,
+    "file": "$Level_TotemJigsawPoint_Demo.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "8101": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Combat_2",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41701061,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Combat_2.unity",
+    "maxLevel": 1,
+    "forbiddenCatch": 1,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "3003104": {
+    "enterSeamless": "ENTERSEAMLESS_CAMP",
+    "specialStateBanOperate": "SCENE_HOME_CAMP_ST",
+    "bgm": "BGM_Scene_RVCamp",
+    "bornTpId": 91103540,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "type": 18,
+    "canHugPet": 1,
+    "funcListId": 6,
+    "autoCutSeamless": 1,
+    "exitSeamless": "EXITSEAMLESS_CAMP",
+    "name": "房车营地_水板块测试",
+    "respawnByCheckpoint": 10,
+    "seamlessRange": [
+      91103548,
+      1
+    ],
+    "hideSceneBlockPoiTip": 1,
+    "mainScene": 3003,
+    "maxLevel": 1,
+    "isOpenToPlayer": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "273": {
+    "isOpenToPlayer": 0,
+    "name": "Level_Test_IrisBossArena",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 27880221,
+    "canEnterByAltX": 1,
+    "file": "$Level_Test_IrisBossArena.unity",
+    "maxLevel": 1,
+    "type": 8,
+    "minLevel": 1
+  },
+  "8102": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Combat_3",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41701170,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Combat_3.unity",
+    "maxLevel": 1,
+    "forbiddenCatch": 1,
+    "funcListId": 3,
+    "minLevel": 1
+  },
+  "8014": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_AmberGamePlay_3",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 64959696,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "file": "$RuntimeLevel_FB_Tutorial_AmberGamePlay_3.unity",
+    "maxLevel": 1,
+    "type": 8,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "275": {
+    "isOpenToPlayer": 0,
+    "name": "Level_TuckinBossArenaTest",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 46538249,
+    "canEnterByAltX": 1,
+    "file": "$Level_FB_Lookdev_MistyForest.unity",
+    "maxLevel": 1,
+    "type": 8,
+    "minLevel": 1
+  },
+  "8103": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Combat_4",
+    "type": 8,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41701267,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "specialStateBanOperate": "TUTORIAL_BATTLE_ST",
+    "file": "$RuntimeLevel_FB_Tutorial_Combat_4.unity",
+    "maxLevel": 1,
+    "forbiddenCatch": 1,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "5010003": {
+    "isOpenToPlayer": 1,
+    "name": "ARK-NPC对决位面",
+    "type": 102,
+    "timeprivate": 1,
+    "bgm": "BGM_Rogue_Rest",
+    "minLevel": 1,
+    "canEnterByAltX": 1,
+    "isStreamEditor": 1,
+    "cameraFarPlane": 20000,
+    "file": "$RuntimeLevel_BW_Ark.unity",
+    "maxLevel": 1,
+    "combatBgm": "bgm_battle_pvp_01",
+    "funcListId": 24,
+    "editorSortId": 100
+  },
+  "8003": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Catch_2",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41614187,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_Catch_2.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "5010004": {
+    "MapBPosition": [
+      1113,
+      -7924
+    ],
+    "PointAPositon": [
+      46.96,
+      1154.18
+    ],
+    "PointBPosition": [
+      -38.46,
+      437.44
+    ],
+    "bornTpId": 71867591,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_Ark.unity",
+    "veinMapLevel": 2,
+    "scanVehicle": 1,
+    "voxelPath": "Level_BW_Ark",
+    "autoCutSeamless": 1,
+    "exitSeamless": "EXITSEAMLESS_QUEST",
+    "name": "ARK-支线广场位面（弃用）",
+    "mapImage": 501,
+    "mapImageScale": [
+      1.5,
+      1.25,
+      1,
+      0.75,
+      0.5,
+      0.3
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      2065.36,
+      -7034.765
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      4096,
+      8960
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      0.4,
+      0.4
+    ],
+    "showTeamNot": 1,
+    "enterSeamless": "ENTERSEAMLESS_QUEST",
+    "specialStateBanOperate": "METAVERSE_ST",
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "moveSpeed": [
+      4,
+      4
+    ],
+    "respawnByCheckpoint": 10,
+    "type": 2,
+    "seamlessRange": [
+      91273039,
+      3
+    ],
+    "isStreamEditor": 1,
+    "funcListId": 5,
+    "isOpenToPlayer": 1,
+    "mainScene": 501,
+    "canTakeOutPet": 1,
+    "MapAPosition": [
+      2012,
+      -439
+    ]
+  },
+  "8104": {
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Tutorial_Combat_5",
+    "type": 8,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 41701393,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "specialStateBanOperate": "TUTORIAL_BATTLE_ST",
+    "file": "$RuntimeLevel_FB_Tutorial_Combat_5.unity",
+    "maxLevel": 1,
+    "forbiddenCatch": 1,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "5010005": {
+    "MapBPosition": [
+      1113,
+      -7924
+    ],
+    "PointAPositon": [
+      46.96,
+      1154.18
+    ],
+    "PointBPosition": [
+      -38.46,
+      437.44
+    ],
+    "bornTpId": 91321237,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_Ark.unity",
+    "veinMapLevel": 2,
+    "scanVehicle": 1,
+    "voxelPath": "Level_BW_Ark",
+    "isOpenToPlayer": 1,
+    "name": "ARK-风采大赛场景",
+    "mapImage": 501,
+    "mapImageScale": [
+      1.5,
+      1.25,
+      1,
+      0.75,
+      0.5,
+      0.3
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      2065.36,
+      -7034.765
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      4096,
+      8960
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      0.4,
+      0.4
+    ],
+    "exitToRandom": [
+      [
+        501,
+        91321216
+      ]
+    ],
+    "specialStateBanOperate": "METAVERSE_ST",
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "type": 2,
+    "moveSpeed": [
+      4,
+      4
+    ],
+    "respawnByCheckpoint": 10,
+    "showTeamNot": 1,
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "isStreamEditor": 1,
+    "funcListId": 27,
+    "canTakeOutPet": 1,
+    "MapAPosition": [
+      2012,
+      -439
+    ]
+  },
+  "413": {
+    "positionResetBlackScreenId4": 4,
+    "positionResetType3": 1,
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 53005562,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_07.unity",
+    "type": 8,
+    "funcListId": 11,
+    "script": "TempleScene",
+    "positionResetType2": 1,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_07",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "8105": {
+    "isOpenToPlayer": 1,
+    "name": "CBT抖音切片教学关卡_3C_1",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_NewbieTraining",
+    "bornTpId": 91165593,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "type": 8,
+    "file": "$RuntimeLevel_FB_Tutorial_3C_1.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "TUTORIAL_NOBATTLE",
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "1061": {
+    "isOpenToPlayer": 0,
+    "name": "DungeonDemo_Test",
+    "type": 2,
+    "respawnByCheckpoint": 2,
+    "bgm": "bgm_battle_pvp_01",
+    "bornTpId": 61576355,
+    "canEnterByAltX": 1,
+    "prompt": 1,
+    "specialStateBanOperate": "TUTORIAL_BATTLE_ST_2",
+    "file": "$Level_FB_Roguelike_PVE_Tutorial_Grass.unity",
+    "maxLevel": 1,
+    "noBattleMusic": 1,
+    "funcListId": 15,
+    "minLevel": 1
+  },
+  "4005": {
+    "isOpenToPlayer": 0,
+    "name": "多人战斗场景 -  蓬蓬羊",
+    "respawnByCheckpoint": 10,
+    "type": 9,
+    "bornTpId": 73456787,
+    "canEnterByAltX": 1,
+    "specialStateBanOperate": "MULTIPLE_BATTLE_ST",
+    "showTeamNot": 1,
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "maxLevel": 1,
+    "isStreamEditor": 1,
+    "funcListId": 2,
+    "minLevel": 1
+  },
+  "1001": {
+    "isOpenToPlayer": 0,
+    "name": "Dungeon_Workspace_Lwy",
+    "bornTpId": 45764037,
+    "canEnterByAltX": 1,
+    "type": 8,
+    "petRespawnTime": 4,
+    "petRespawnGuide": 101000,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "file": "$Level_FB_Dungeon_Workspace_Lwy.unity",
+    "minLevel": 1
+  },
+  "420": {
+    "positionResetBlackScreenId4": 4,
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 53968183,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_04.unity",
+    "type": 8,
+    "funcListId": 11,
+    "script": "TempleScene",
+    "positionResetBlackScreenId3": 2001,
+    "positionResetType4": 4,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_04",
+    "positionResetType2": 1,
+    "respawnByCheckpoint": 10,
+    "editorSortId": 100,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "canFlyVerticalAndSprint": 1,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "268": {
+    "miniMapImageScale": [
+      1
+    ],
+    "isOpenToPlayer": 0,
+    "name": "HelgonBossArenaTest",
+    "respawnByCheckpoint": 10,
+    "bgm": "bgm_battle_helgonboss_0",
+    "bornTpId": 46625922,
+    "canEnterByAltX": 1,
+    "voxelPath": "invalid",
+    "file": "$Level_HelgonBossArenaTest.unity",
+    "maxLevel": 1,
+    "type": 8,
+    "funcListId": 13,
+    "minLevel": 1
+  },
+  "1012": {
+    "isOpenToPlayer": 1,
+    "name": "RogueLike_PVE",
+    "type": 7,
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Rogue_Rest",
+    "bornTpId": 46560901,
+    "canEnterByAltX": 1,
+    "combatBgmResetTime": 5,
+    "specialStateBanOperate": "ROGUE_ST",
+    "file": "$RuntimeLevel_FB_Roguelike.unity",
+    "maxLevel": 1,
+    "combatBgm": "BGM_Rogue_Battle_02",
+    "funcListId": 7,
+    "minLevel": 1
+  },
+  "421": {
+    "positionResetBlackScreenId4": 4,
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 50697107,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_01.unity",
+    "type": 8,
+    "funcListId": 11,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_01",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "2026": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 72244580,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_26.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Temple_26_Xbatch",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "2029": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "markShare": 1,
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 79507179,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_29.unity",
+    "type": 103,
+    "teamHudDis": 15,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "positionResetType2": 2,
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_29",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetBlackScreenId3": 2001,
+    "editorSortId": 100,
+    "petRespawnTime": 3,
+    "isExportVoxel": 1,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "maxLevel": 1,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "429": {
+    "canEnterByAltX": 1,
+    "isOpenToPlayer": 0,
+    "file": "$Level_LRTest.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "name": "Level_LRTest",
+    "minLevel": 1
+  },
+  "3005": {
+    "MapBPosition": [
+      2592.7,
+      -3620.2
+    ],
+    "PointAPositon": [
+      538.3712,
+      -27.21061
+    ],
+    "PointBPosition": [
+      -117.5,
+      -501.5
+    ],
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_GrabEggs.unity",
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "isOpenToPlayer": 1,
+    "name": "小队摸蛋",
+    "mapImage": 3005,
+    "mapImageScale": [
+      4,
+      3.83,
+      3.66,
+      3.49,
+      3.32,
+      3.15,
+      2.98,
+      2.81,
+      2.64,
+      2.47,
+      2.3,
+      2.13,
+      1.96,
+      1.79,
+      1.62,
+      1.45,
+      1.28,
+      1.11,
+      0.94
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      6144,
+      4096
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 2,
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "sceneName": 1514696152,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "type": 12,
+    "InteractionType": 1,
+    "MapAPosition": [
+      5216.1,
+      -1738
+    ]
+  },
+  "2018": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67088936,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_18_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "2019": {
+    "positionResetType3": 1,
+    "isStreamEditor": 1,
+    "amb": "SFX_AMB_TEM_SilenceTemple",
+    "bgm": "BGM_Temple_Normal",
+    "bornTpId": 67089096,
+    "canEnterByAltX": 1,
+    "respawnBlackScreenId": 2001,
+    "file": "$RuntimeLevel_FB_Temple_06.unity",
+    "type": 8,
+    "funcListId": 11,
+    "showTeamNot": 1,
+    "script": "TempleScene",
+    "isOpenToPlayer": 1,
+    "name": "RuntimeLevel_FB_Temple_19_Bless",
+    "positionResetType4": 4,
+    "respawnByCheckpoint": 10,
+    "positionResetType2": 2,
+    "positionResetBlackScreenId3": 2001,
+    "maxLevel": 1,
+    "editorSortId": 100,
+    "cameraFarPlane": 750,
+    "petRespawnGuide": 101301,
+    "petRespawnTime": 3,
+    "petRespawnType": 2,
+    "positionResetBlackScreenId2": 2001,
+    "minLevel": 1
+  },
+  "3004": {
+    "MapBPosition": [
+      2592.7,
+      -3620.2
+    ],
+    "PointAPositon": [
+      538.3712,
+      -27.21061
+    ],
+    "PointBPosition": [
+      -117.5,
+      -501.5
+    ],
+    "bornTpId": 76059985,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_BW_GrabEggs.unity",
+    "forbiddenCatch": 1,
+    "funcListId": 12,
+    "hideNormalMapInfo": 1,
+    "isOpenToPlayer": 1,
+    "name": "抢蛋大作战",
+    "mapImage": 3004,
+    "mapImageScale": [
+      4,
+      3.83,
+      3.66,
+      3.49,
+      3.32,
+      3.15,
+      2.98,
+      2.81,
+      2.64,
+      2.47,
+      2.3,
+      2.13,
+      1.96,
+      1.79,
+      1.62,
+      1.45,
+      1.28,
+      1.11,
+      0.94
+    ],
+    "mapLevelBreakdown": [
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        19
+      ]
+    ],
+    "mapSwitchDefaultPos": [
+      0,
+      0
+    ],
+    "mapSwitchDefaultScaleRatio": 1,
+    "mapUISize": [
+      6144,
+      4096
+    ],
+    "maxLevel": 1,
+    "minLevel": 1,
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "positionResetType3": 2,
+    "showTeamNot": 1,
+    "skipSkillCutScene": 1,
+    "specialStateBanOperate": "INFO_DISABLE_ST",
+    "toplogoType": 2,
+    "trackShareType": 1,
+    "trackType": 1,
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "sceneName": 1080507106,
+    "moveSpeed": [
+      0.8,
+      2,
+      5
+    ],
+    "type": 12,
+    "InteractionType": 1,
+    "MapAPosition": [
+      5216.1,
+      -1738
+    ]
+  },
+  "113": {
+    "isFlyLowStaminaCost": 1,
+    "isOpenToPlayer": 0,
+    "name": "AllPetInLine",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 90836543,
+    "canEnterByAltX": 1,
+    "type": 2,
+    "file": "$Level_Test_CombatAnd3C.unity",
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "maxLevel": 1,
+    "funcListId": 23,
+    "minLevel": 1
+  },
+  "109": {
+    "isFlyLowStaminaCost": 1,
+    "isOpenToPlayer": 0,
+    "name": "Level_QuestTest",
+    "bornTpId": 38578068,
+    "canEnterByAltX": 1,
+    "type": 2,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "maxLevel": 1,
+    "file": "$Level_QuestTest.unity",
+    "minLevel": 1
+  },
+  "515": {
+    "amb": "SFX_AMB_Scene_Farm",
+    "specialStateBanOperate": "METAVERSE_ST",
+    "bgm": "BGM_Scene_Farm",
+    "bornTpId": 72154413,
+    "canEnterByAltX": 1,
+    "file": "$RuntimeLevel_FB_Home.unity",
+    "type": 16,
+    "funcListId": 8,
+    "isOpenToPlayer": 1,
+    "name": "Level_FB_Home",
+    "respawnByCheckpoint": 10,
+    "playerBuffIds": [
+      920000102
+    ],
+    "petBuffIds": [
+      9104302
+    ],
+    "forceOpen": 1,
+    "maxLevel": 1,
+    "canPlaceFurniture": 1,
+    "canTakeOutPet": 1,
+    "minLevel": 1
+  },
+  "5011": {
+    "miniMapImageScale": [
+      1
+    ],
+    "isOpenToPlayer": 1,
+    "exitToRandom": [
+      [
+        501,
+        72478232
+      ]
+    ],
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_ARK_VoxelMission_End",
+    "bornTpId": 72766403,
+    "canEnterByAltX": 1,
+    "type": 2,
+    "name": "Level_FB_Ark_VoxelMission_Dark",
+    "file": "$RuntimeLevel_FB_Ark_Voxelmission_Dark.unity",
+    "maxLevel": 1,
+    "minLevel": 1,
+    "funcListId": 16,
+    "editorSortId": 999
+  },
+  "3001": {
+    "MapBPosition": [
+      1194,
+      -1704.3
+    ],
+    "PointAPositon": [
+      -1599.566,
+      1498.54
+    ],
+    "PointBPosition": [
+      -1371.658,
+      1151.701
+    ],
+    "amb": "amb_scene_1",
+    "bornTpId": 54992588,
+    "canEnterByAltX": 1,
+    "editorMapAPosition": [
+      0,
+      0
+    ],
+    "editorMapBPosition": [
+      4000,
+      -4000
+    ],
+    "file": "$RuntimeLevel_BW_CountryOfTime.unity",
+    "editorPointBPosition": [
+      2048,
+      -2048
+    ],
+    "type": 2,
+    "respawnBlackScreenId": 2001,
+    "isOpenToPlayer": 1,
+    "name": "Level_BW_CountryOfTime_XTerrain",
+    "respawnByCall": 0,
+    "respawnByCheckpoint": 1,
+    "mapImage": 3000,
+    "mapImageScale": [
+      8,
+      3,
+      0.7
+    ],
+    "miniMapImageScale": [
+      3,
+      4
+    ],
+    "minLevel": 1,
+    "maxLevel": 1,
+    "canFlyVerticalAndSprint": 1,
+    "canGlideRise": 1,
+    "isFlyLowStaminaCost": 1,
+    "editorPointAPositon": [
+      -2048,
+      2048
+    ],
+    "MapAPosition": [
+      761.7,
+      -1047
+    ]
+  },
+  "408": {
+    "isOpenToPlayer": 0,
+    "name": "Sketchup_Workspace_lwy",
+    "respawnByCheckpoint": 10,
+    "bornTpId": 45243531,
+    "canEnterByAltX": 1,
+    "file": "$Level_FB_Sketchup_Workspace_lwy.unity",
+    "maxLevel": 1,
+    "type": 2,
+    "minLevel": 1
+  },
+  "521": {
+    "isOpenToPlayer": 1,
+    "name": "拍照场景",
+    "respawnByCheckpoint": 10,
+    "bgm": "BGM_Scene_Farm",
+    "bornTpId": 72154413,
+    "canEnterByAltX": 1,
+    "type": 2,
+    "file": "$RuntimeLevel_FB_PhotoStudio.unity",
+    "maxLevel": 1,
+    "specialStateBanOperate": "METAVERSE_ST",
+    "funcListId": 18,
+    "minLevel": 1
+  }
+}

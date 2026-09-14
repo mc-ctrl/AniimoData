@@ -1,0 +1,487 @@
+{
+  "23": {
+    "key": "23",
+    "partId": 23,
+    "order": 0,
+    "originDisplayName": "基础",
+    "displayName": 47622986,
+    "kindList": {
+      "M_Avatar_Girl_Hair_G10007": {
+        "key": "M_Avatar_Girl_Hair_G10007",
+        "reaction": {
+          "key": 32,
+          "bones": [
+            {
+              "operations": [
+                {
+                  "displayName": 55295756,
+                  "subOps": [
+                    {
+                      "opName": 1,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 59381762
+                    },
+                    {
+                      "opName": 2,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 56026640
+                    },
+                    {
+                      "opName": 3,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 47151758
+                    }
+                  ]
+                },
+                {
+                  "displayName": 41352984,
+                  "subOps": [
+                    {
+                      "opName": 5,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 57605298
+                    },
+                    {
+                      "opName": 6,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35417729
+                    },
+                    {
+                      "opName": 7,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35982600
+                    }
+                  ]
+                },
+                {
+                  "displayName": 65641329,
+                  "subOps": [
+                    {
+                      "opName": 8,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 65641329
+                    }
+                  ]
+                }
+              ],
+              "bone": "Bone L Hair G10007 A",
+              "subHair": {}
+            },
+            {
+              "operations": [
+                {
+                  "displayName": 55295756,
+                  "subOps": [
+                    {
+                      "opName": 1,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 59381762
+                    },
+                    {
+                      "opName": 2,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 56026640
+                    },
+                    {
+                      "opName": 3,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 47151758
+                    }
+                  ]
+                },
+                {
+                  "displayName": 41352984,
+                  "subOps": [
+                    {
+                      "opName": 5,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 57605298
+                    },
+                    {
+                      "opName": 6,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35417729
+                    },
+                    {
+                      "opName": 7,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35982600
+                    }
+                  ]
+                },
+                {
+                  "displayName": 65641329,
+                  "subOps": [
+                    {
+                      "opName": 8,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 65641329
+                    }
+                  ]
+                }
+              ],
+              "bone": "Bone R Hair G10007 A",
+              "subHair": {}
+            },
+            {
+              "operations": [
+                {
+                  "displayName": 55295756,
+                  "subOps": [
+                    {
+                      "opName": 1,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 59381762
+                    },
+                    {
+                      "opName": 2,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 56026640
+                    },
+                    {
+                      "opName": 3,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 47151758
+                    }
+                  ]
+                },
+                {
+                  "displayName": 41352984,
+                  "subOps": [
+                    {
+                      "opName": 5,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 57605298
+                    },
+                    {
+                      "opName": 6,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35417729
+                    },
+                    {
+                      "opName": 7,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35982600
+                    }
+                  ]
+                },
+                {
+                  "displayName": 65641329,
+                  "subOps": [
+                    {
+                      "opName": 8,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 65641329
+                    }
+                  ]
+                }
+              ],
+              "bone": "Bone L Hair G10007",
+              "subHair": [
+                {
+                  "operations": [
+                    {
+                      "displayName": 41352984,
+                      "subOps": [
+                        {
+                          "opName": 5,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 57605298
+                        },
+                        {
+                          "opName": 6,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35417729
+                        },
+                        {
+                          "opName": 7,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35982600
+                        }
+                      ]
+                    },
+                    {
+                      "displayName": 65641329,
+                      "subOps": [
+                        {
+                          "opName": 8,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 65641329
+                        }
+                      ]
+                    }
+                  ],
+                  "bone": "Bone L Hair G10007 01"
+                },
+                {
+                  "operations": [
+                    {
+                      "displayName": 41352984,
+                      "subOps": [
+                        {
+                          "opName": 5,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 57605298
+                        },
+                        {
+                          "opName": 6,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35417729
+                        },
+                        {
+                          "opName": 7,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35982600
+                        }
+                      ]
+                    },
+                    {
+                      "displayName": 65641329,
+                      "subOps": [
+                        {
+                          "opName": 8,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 65641329
+                        }
+                      ]
+                    }
+                  ],
+                  "bone": "Bone L Hair G10007 02"
+                }
+              ]
+            },
+            {
+              "operations": [
+                {
+                  "displayName": 55295756,
+                  "subOps": [
+                    {
+                      "opName": 1,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 59381762
+                    },
+                    {
+                      "opName": 2,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 56026640
+                    },
+                    {
+                      "opName": 3,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 47151758
+                    }
+                  ]
+                },
+                {
+                  "displayName": 41352984,
+                  "subOps": [
+                    {
+                      "opName": 5,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 57605298
+                    },
+                    {
+                      "opName": 6,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35417729
+                    },
+                    {
+                      "opName": 7,
+                      "tIndex": 0,
+                      "maxValue": 180,
+                      "minValue": -180,
+                      "displayName": 35982600
+                    }
+                  ]
+                },
+                {
+                  "displayName": 65641329,
+                  "subOps": [
+                    {
+                      "opName": 8,
+                      "tIndex": 0,
+                      "maxValue": 100,
+                      "minValue": -100,
+                      "displayName": 65641329
+                    }
+                  ]
+                }
+              ],
+              "bone": "Bone R Hair G10007",
+              "subHair": [
+                {
+                  "operations": [
+                    {
+                      "displayName": 41352984,
+                      "subOps": [
+                        {
+                          "opName": 5,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 57605298
+                        },
+                        {
+                          "opName": 6,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35417729
+                        },
+                        {
+                          "opName": 7,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35982600
+                        }
+                      ]
+                    },
+                    {
+                      "displayName": 65641329,
+                      "subOps": [
+                        {
+                          "opName": 8,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 65641329
+                        }
+                      ]
+                    }
+                  ],
+                  "bone": "Bone R Hair G10007 01"
+                },
+                {
+                  "operations": [
+                    {
+                      "displayName": 41352984,
+                      "subOps": [
+                        {
+                          "opName": 5,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 57605298
+                        },
+                        {
+                          "opName": 6,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35417729
+                        },
+                        {
+                          "opName": 7,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 35982600
+                        }
+                      ]
+                    },
+                    {
+                      "displayName": 65641329,
+                      "subOps": [
+                        {
+                          "opName": 8,
+                          "tIndex": 0,
+                          "maxValue": 100,
+                          "minValue": -100,
+                          "displayName": 65641329
+                        }
+                      ]
+                    }
+                  ],
+                  "bone": "Bone R Hair G10007 02"
+                }
+              ]
+            }
+          ],
+          "colors": {
+            "gradient": {
+              "opName": 24,
+              "tIndex": 3,
+              "maxValue": 100,
+              "minValue": -100,
+              "displayName": 34225454
+            },
+            "baseColor": {
+              "tIndex": 2,
+              "displayName": 41749054,
+              "opName": 21
+            }
+          }
+        }
+      }
+    }
+  }
+}

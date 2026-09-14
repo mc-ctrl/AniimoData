@@ -1,0 +1,16 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9126303",
+  "name": "仅标记用特性buff",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "NodeID": 1,
+  "nodeMap": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": {},
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": {}
+}

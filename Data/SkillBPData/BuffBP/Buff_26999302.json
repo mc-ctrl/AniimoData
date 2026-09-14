@@ -1,0 +1,88 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "dmg_fire_add_ratio": 0
+  },
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "calcInfoByLuaConfig": {
+    "dmg_fire_add_ratio": "param0",
+    "type": 1,
+    "id": 26999302
+  },
+  "BPName": "buff_26999302",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "aef4ce01-77ad-461c-bf6a-aee894aff343",
+      "effectId": "Eff_Parmon_69993_Skill_OutEx_Buff",
+      "target": "CURPET",
+      "NodeID": 5
+    },
+    "13": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "064db235-f429-4146-8c4f-1b0473e42c29",
+      "isAbilityEndRemove": false,
+      "soundId": "Parmon_69993_Skill_Ex_Pc_02",
+      "NodeID": 13
+    },
+    "9": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "245821c2-c2f2-4657-a37b-061590232808",
+      "effectId": "Eff_Parmon_69993_Skill_OutEx_Buff",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "14": {
+      "name": "stopSoundStr",
+      "UID": "21c85df1-7818-49fe-b394-f72d87f2a36a",
+      "soundId": "Parmon_69993_Skill_Ex_Pc_02",
+      "target": "CURPET",
+      "NodeID": 14
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "b7efe324-2845-4d23-b566-ee843b6fb587",
+      "effectId": "Eff_Parmon_69993_Skill_OutEx_Buff",
+      "target": "CURPET",
+      "NodeID": 11
+    },
+    "7": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "862adc16-c685-423a-ae0b-a20f93b9b444",
+      "oldPetActionIds": [
+        5,
+        14
+      ],
+      "NodeID": 7,
+      "newPetActionIds": [
+        9,
+        13
+      ]
+    },
+    "15": {
+      "name": "stopSoundStr",
+      "UID": "c024d5f4-2c39-424b-a667-e73183b672a3",
+      "soundId": "Parmon_69993_Skill_Ex_Pc_02",
+      "target": "CURPET",
+      "NodeID": 15
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    11,
+    15
+  ],
+  "onBuffStartIds": [
+    7,
+    9,
+    13
+  ]
+}

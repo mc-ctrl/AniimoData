@@ -1,0 +1,75 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "eventName": "tuoyin",
+      "name": "notifyCustomEvent",
+      "UID": "8ecf0aa6-df4b-4125-a9b8-cbe4e6227684",
+      "target": "TrapTarget",
+      "NodeID": 3
+    },
+    "4": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 4,
+      "UID": "f25d3aa1-4558-418a-8d0b-18fae51282ee",
+      "enterTrapActionIds": [
+        3
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        8
+      ],
+      "shapeArgs": [
+        5
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 4,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3593a874-f099-408a-977d-0f926db16515",
+      "effectId": "Eff_Parmon_10052_Fireball_Rogue",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "bbdc2825-38bc-45d3-9bfd-bc10ed1b519a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "8": {
+      "eventName": "yinshen",
+      "name": "notifyCustomEvent",
+      "UID": "09c14192-1d89-4117-a705-8279fc20f537",
+      "target": "TrapTarget",
+      "NodeID": 8
+    }
+  },
+  "BPName": "timeline_2132101",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 9999
+}

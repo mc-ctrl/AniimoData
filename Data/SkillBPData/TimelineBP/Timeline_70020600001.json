@@ -1,0 +1,457 @@
+{
+  "nodeMap": {
+    "52": {
+      "offsetXYZ": [
+        0,
+        0.15,
+        0
+      ],
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "b5061655-63bc-40d9-933f-e2b03a449ccc",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Hit_",
+        "name": "constString",
+        "UID": "188c8c26-f0f9-4252-8fdf-922de988feaa",
+        "NodeID": 51,
+        "concatenateNumber": {
+          "UID": "be34f76f-f0ce-4581-9495-b49388234d70",
+          "target": "MASTER",
+          "name": "getMainElementName",
+          "NodeID": 50
+        }
+      },
+      "speed": 1,
+      "NodeID": 52
+    },
+    "38": {
+      "UID": "591c9b5b-9277-45a9-842b-3795a0ddba70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "NodeID": 38
+    },
+    "39": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b5fba870-ef19-4c73-850d-ddd2f9dc3b78",
+      "target": "OWNER",
+      "NodeID": 39,
+      "animId": "Cannon_Skill_Burst_DmgLoop"
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 40,
+      "UID": "04d12e82-43e1-456c-852e-c8ae2cb9eaf0"
+    },
+    "41": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "962ae52c-01d7-40cb-9a6c-f2249ad1e9fd",
+      "target": "OWNER",
+      "NodeID": 41,
+      "animId": "Cannon_Skill_Burst_DmgEnd"
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9,
+      "NodeID": 42,
+      "UID": "89b4df68-3db8-4129-832e-7b7220f4c5be"
+    },
+    "35": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 9,
+      "NodeID": 35,
+      "UID": "e25ddcfb-148b-4cb2-8ea4-010b8d6e6914",
+      "onUpdate": {
+        "actionIds": [
+          33,
+          46
+        ]
+      },
+      "startTime": 0.5,
+      "onEnter": {
+        "actionIds": [
+          33,
+          46
+        ]
+      }
+    },
+    "2": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "0e3d2ff6-8546-4e0b-a953-7b754de1f8eb",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 2
+    },
+    "4": {
+      "actionIds": [
+        2,
+        10
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "3a3176be-be5b-4fd6-a217-0a84446b1a21",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2701ada4-f8e2-4deb-8560-0c47c0b80ed6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_ShockWave_Boss",
+      "NodeID": 58
+    },
+    "5": {
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 5,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "62": {
+      "name": "stopSoundStr",
+      "UID": "017dcefa-a52b-43b6-aafe-877b40364f29",
+      "soundId": "SFX_Combat_Monster_Robot_Skill_ShockWave_loop_Boss",
+      "target": "OWNER",
+      "NodeID": 62
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3ea6a0a0-328e-4532-8b87-26dcba6fcbb7",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_ShockWave_Sector_",
+        "name": "constString",
+        "UID": "5a2d8a14-1eae-4db5-998c-754f258927f9",
+        "NodeID": 54,
+        "concatenateNumber": {
+          "UID": "2b9117de-6769-4587-b870-9399fbb60b1b",
+          "target": "MASTER",
+          "name": "getMainElementName",
+          "NodeID": 53
+        }
+      },
+      "speed": 1,
+      "NodeID": 45
+    },
+    "31": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.5
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "3f31788c-683d-42ad-b673-f69bc10a76b0",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 31
+    },
+    "60": {
+      "target": "CASTER",
+      "name": "playSoundStr",
+      "UID": "0113dd2d-b974-4bc2-8c1e-34bfd345cd99",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_ShockWave_loop_Boss",
+      "NodeID": 60
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 59,
+      "UID": "b4e599dd-1e97-4773-a487-83507dba40f7"
+    },
+    "46": {
+      "actionIds": [
+        45
+      ],
+      "NodeID": 46,
+      "UID": "ed08e29e-2e97-48b9-afa1-5fce529c82ac",
+      "cd": 0.8,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "11": {
+      "name": "isActorType",
+      "UID": "73622733-8ce8-4585-a3c3-0151e61164bc",
+      "target": "OWNER",
+      "NodeID": 11,
+      "actorType": 3
+    },
+    "19": {
+      "UID": "27a15d24-d886-4370-a8f5-2de7c092e8e3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 19
+    },
+    "21": {
+      "UID": "7cb80736-06db-4232-aee7-00e9ac464c8b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          57,
+          19,
+          62
+        ]
+      },
+      "NodeID": 21
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23,
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 25,
+      "UID": "dfd20175-a5eb-4b02-88f8-d89aed93f862"
+    },
+    "23": {
+      "UID": "8512157b-eea2-4c67-afa1-6db24f744f45",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 1,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 23
+    },
+    "55": {
+      "UID": "bb770eec-6f7e-4eca-8aa0-13b367afa35c",
+      "target": "MASTER",
+      "name": "getMainElementName",
+      "NodeID": 55
+    },
+    "37": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7345bd13-468c-45aa-81cd-df34babc3574",
+      "target": "OWNER",
+      "NodeID": 37,
+      "animId": "Cannon_Skill_Burst_DmgStart"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "757c5a67-31fb-4027-b3de-bdd227227a9f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "c5caee56-f634-4dea-a941-fb5a63b8b4c2",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 15
+    },
+    "57": {
+      "name": "stopEffectStr",
+      "UID": "f97e9e5d-811f-43d5-bf64-a3610e5e4a52",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_ShockWave_Sector_",
+        "name": "constString",
+        "UID": "5cfff563-0de1-41e1-9995-e497fe46246f",
+        "NodeID": 56,
+        "concatenateNumber": {
+          "UID": "bb770eec-6f7e-4eca-8aa0-13b367afa35c",
+          "target": "MASTER",
+          "name": "getMainElementName",
+          "NodeID": 55
+        }
+      },
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          57,
+          62
+        ]
+      },
+      "eventType": "Notify",
+      "time": 9,
+      "NodeID": 29,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "48": {
+      "time": 9,
+      "rotateSpeed": 60,
+      "name": "rotateTo",
+      "UID": "83d237a8-7078-4a48-bb1d-c234b2bbdce8",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 48
+    },
+    "17": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          48
+        ]
+      },
+      "NodeID": 17
+    },
+    "49": {
+      "duration": 9,
+      "name": "moveByDirection",
+      "UID": "0bd7a0e5-8c90-4cd0-9d72-795f70c995db",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": true,
+      "velocity": [
+        0,
+        0,
+        2
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 49
+    },
+    "27": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 27
+    },
+    "50": {
+      "UID": "be34f76f-f0ce-4581-9495-b49388234d70",
+      "target": "MASTER",
+      "name": "getMainElementName",
+      "NodeID": 50
+    },
+    "33": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 31,
+      "NodeID": 33,
+      "UID": "1d16d97f-6e55-4ba0-b6ad-077873af7513",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.5,
+            25,
+            1,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        31,
+        52
+      ]
+    },
+    "61": {
+      "action": {
+        "actionIds": [
+          60
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 61,
+      "UID": "84f29449-1845-40ba-88b7-215fa4bb7be0"
+    },
+    "53": {
+      "UID": "2b9117de-6769-4587-b870-9399fbb60b1b",
+      "target": "MASTER",
+      "name": "getMainElementName",
+      "NodeID": 53
+    }
+  },
+  "BPName": "ability_70020600",
+  "NodeID": 7,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    17,
+    25,
+    29,
+    21,
+    5,
+    38,
+    40,
+    42,
+    35,
+    59,
+    61
+  ],
+  "layer": "Base",
+  "length": 10
+}

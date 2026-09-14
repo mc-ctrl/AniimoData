@@ -1,0 +1,383 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "6dac062f-21e2-4b8f-bf7c-508390d1c432",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "40": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11631500,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "83558c1c-75d8-4253-a384-142c08b7d9ab",
+      "target": "TARGET",
+      "NodeID": 40,
+      "attackData": {
+        "weaponSoundType": "slash",
+        "hitSoundType": "s",
+        "impulseId": 3002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 2,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "41": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 40,
+      "NodeID": 41,
+      "UID": "3fdb204d-d3f8-4e09-ac65-e98558cbdaf0",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            90,
+            1,
+            0.8
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        40
+      ]
+    },
+    "42": {
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.2,
+      "NodeID": 42,
+      "UID": "5b122bfe-2c16-4969-a322-53e3ad4dfdec"
+    },
+    "52": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "21648fb0-bfb9-4de5-bcb9-37300240f50e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Attack_05",
+      "NodeID": 52
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          52,
+          29,
+          33,
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.1,
+      "NodeID": 31,
+      "UID": "e8029882-cb56-47e6-b16c-940bcdbb30ff"
+    },
+    "51": {
+      "name": "stopEffectStr",
+      "UID": "fe79f174-5352-4d98-9318-6efedb520124",
+      "effectId": "Eff_Parmon_10163_Skill_IceStorm",
+      "target": "OWNER",
+      "NodeID": 51
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          49
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 50,
+      "UID": "e02db2cb-ffb4-4892-bf59-d1cb354467bc"
+    },
+    "49": {
+      "overridePos": "TARGET",
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "becf9a3a-d426-4aaf-a004-ee64a766bc9e",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.1,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": true,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 49
+    },
+    "11": {
+      "UID": "790c8dc4-142c-45ef-b54f-8c203c445404",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "cancellable": 0
+      },
+      "NodeID": 11
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "4cdac420-b1a6-4323-ac47-467f6c12bd3f",
+      "effectId": "Eff_Parmon_10163_Skill_IceStorm",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "21": {
+      "eventType": "NotifyState",
+      "endTime": 4.8,
+      "NodeID": 21,
+      "UID": "15502323-e52a-4ecf-a803-6a15e8b45219",
+      "onUpdate": {
+        "actionIds": [
+          19,
+          46,
+          45
+        ]
+      },
+      "startTime": 0.8,
+      "tickInterval": 0.8
+    },
+    "3": {
+      "UID": "faa8c9bd-8e80-4d22-bdfe-0583c6f4af8d",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "8b9e95db-cd5d-44f6-9c2e-16894c3d6013",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          51
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7ec4b27c-293b-4c3c-ae17-f74a213feb6f",
+      "target": "OWNER",
+      "NodeID": 24,
+      "animId": "Skill_RotateSlash_Start"
+    },
+    "47": {
+      "duration": 0.8,
+      "name": "moveByDirection",
+      "UID": "6a6f1c60-fe2e-4445-bc48-19bdab62573e",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "targetPos": "TARGET",
+      "velocity": [
+        0,
+        0,
+        4
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 47
+    },
+    "46": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "abd37079-80dc-4a3a-bcd5-1ed12c0c9815",
+      "effectId": "Eff_Parmon_10161_Skill_MagicLeaf_Ice_H_Boss",
+      "speed": 1,
+      "NodeID": 46
+    },
+    "45": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f848cbaa-1ca4-4d39-9b66-c25e037e2157",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10163_Skill_MagicLeaf_Ice_attack",
+      "NodeID": 45
+    },
+    "25": {
+      "UID": "086ed3fc-41cf-4081-8751-9a393f6242ee",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "NodeID": 25
+    },
+    "26": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ea490300-3429-4178-91db-c80721cd6476",
+      "target": "OWNER",
+      "NodeID": 26,
+      "animId": "Skill_RotateSlash_Loop"
+    },
+    "48": {
+      "eventType": "NotifyState",
+      "endTime": 4.8,
+      "NodeID": 48,
+      "UID": "fbde029f-d946-452d-82b6-b22551fdf006",
+      "onUpdate": {
+        "actionIds": [
+          47
+        ]
+      },
+      "startTime": 0.8,
+      "tickInterval": 0.8
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26,
+          32,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 28,
+      "UID": "83eb7874-454e-4c70-a83f-52fd311923eb"
+    },
+    "29": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f83d4c91-e11b-43aa-9214-a045cbfd0ce1",
+      "target": "OWNER",
+      "NodeID": 29,
+      "animId": "Skill_RotateSlash_End"
+    },
+    "18": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11631500,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "03590916-660e-4fa7-9e5d-8152661ce340",
+      "target": "TARGET",
+      "NodeID": 18,
+      "attackData": {
+        "weaponSoundType": "slash",
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 2,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "269c737a-202b-4a4a-86d0-f086016e0314",
+      "effectId": "Eff_Parmon_10163_Skill_IceStorm",
+      "speed": 2,
+      "NodeID": 32
+    },
+    "19": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 18,
+      "NodeID": 19,
+      "UID": "f8dc4098-f16d-4685-aea4-d508730aa487",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        18
+      ]
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b40cae9e-5646-4964-89a4-00353bccc811",
+      "effectId": "Eff_Parmon_10163_Skill_RotateSlash_02",
+      "speed": 2,
+      "NodeID": 34
+    },
+    "36": {
+      "time": 4.3,
+      "rotateSpeed": 180,
+      "name": "rotateTo",
+      "UID": "3fa88060-6083-4197-a61c-d338d79363f3",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11631500",
+  "NodeID": 7,
+  "UID": "562a0299-2b4b-44aa-a419-87778fd7d68d",
+  "eventIds": [
+    5,
+    13,
+    25,
+    28,
+    31,
+    21,
+    42,
+    50,
+    48
+  ],
+  "layer": "Base",
+  "length": 5.2
+}

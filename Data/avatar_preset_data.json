@@ -1,0 +1,194 @@
+{
+  "210008": {
+    "sort": 102,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210008.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "210009": {
+    "sort": 103,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210009.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "210010": {
+    "sort": 105,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210010.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110007": {
+    "sort": 1,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110007.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "110008": {
+    "sort": 2,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110008.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "110009": {
+    "sort": 3,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110009.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "110010": {
+    "sort": 5,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110010.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "110011": {
+    "sort": 7,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110011.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210024": {
+    "sort": 104,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210024.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110012": {
+    "sort": 9,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110012.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210023": {
+    "sort": 111,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210023.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110013": {
+    "sort": 6,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110013.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210020": {
+    "sort": 108,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210020.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110014": {
+    "sort": 8,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110014.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210018": {
+    "sort": 110,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210018.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110015": {
+    "sort": 10,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110015.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210016": {
+    "sort": 112,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210016.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110016": {
+    "sort": 12,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110016.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210014": {
+    "sort": 109,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210014.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110017": {
+    "sort": 11,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110017.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210013": {
+    "sort": 107,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210013.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "110018": {
+    "sort": 4,
+    "defaultSuit": 710069,
+    "animController": "Map_Avatar_Girl",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_110018.png",
+    "templateId": 3,
+    "body": 11
+  },
+  "210011": {
+    "sort": 106,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210011.png",
+    "templateId": 4,
+    "body": 21
+  },
+  "210007": {
+    "sort": 101,
+    "defaultSuit": 720069,
+    "animController": "Map_Avatar_Boy",
+    "icon": "$UI_Img_Avatar_PinchFace_Preset_210007.png",
+    "templateId": 4,
+    "body": 21
+  }
+}

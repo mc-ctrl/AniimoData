@@ -1,0 +1,636 @@
+{
+  "91301440": {
+    "owner": "陈智豪",
+    "chunk": 1019874,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91301832,
+    "levelItems": {
+      "91344833": {
+        "majorCompId": 72094201,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Electricity",
+        "position": [
+          18.77,
+          -0.3,
+          -18.7
+        ],
+        "rotation": [
+          0,
+          354.3,
+          0
+        ],
+        "id": 91344833,
+        "configId": 197,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91344837": {
+        "majorCompId": 72094201,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Electricity (1)",
+        "position": [
+          -1.35,
+          -0.38,
+          -19.21
+        ],
+        "rotation": [
+          0,
+          0.97,
+          0
+        ],
+        "id": 91344837,
+        "configId": 197,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91344840": {
+        "majorCompId": 72094201,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Electricity (2)",
+        "position": [
+          23.22,
+          12.94,
+          -5.2
+        ],
+        "rotation": [
+          0,
+          345.14,
+          0
+        ],
+        "id": 91344840,
+        "configId": 197,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91344849": {
+        "majorCompId": 72094201,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_ElementSwitch_Electricity (3)",
+        "position": [
+          -11.6,
+          11.83,
+          -15.98
+        ],
+        "rotation": [
+          0,
+          345.14,
+          0
+        ],
+        "id": 91344849,
+        "configId": 197,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91302019": {
+        "majorCompId": 72040899,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Rope",
+        "position": [
+          23.17,
+          12.86,
+          -5.21
+        ],
+        "rotation": [
+          0,
+          74.48,
+          0
+        ],
+        "id": 91302019,
+        "componentsInfo": {
+          "72040899": {
+            "staticId": 91302011
+          }
+        },
+        "configId": 96,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91403059": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Fan_SB_NoPerform (2)",
+        "position": [
+          -8.72,
+          2.54,
+          28.25
+        ],
+        "rotation": [
+          0.75,
+          313.96,
+          89.22
+        ],
+        "id": 91403059,
+        "componentsInfo": {
+          "42658053": {
+            "expressionKey": "91403059_42658053"
+          },
+          "49544975": {
+            "center": [
+              0,
+              0,
+              -0.11
+            ],
+            "size": [
+              4,
+              10,
+              4.26
+            ]
+          },
+          "42658052": {
+            "isConstraintWhenStart": false,
+            "shape": {
+              "endPosition": [
+                0,
+                5,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                1.94,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 337,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91308649": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Airwall_Box_SB",
+        "position": [
+          7.96,
+          31.56,
+          -13.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91308649,
+        "componentsInfo": {
+          "87892526": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 16,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          34.87,
+          1,
+          47.69
+        ],
+        "isActive": true
+      },
+      "91315970": {
+        "majorCompId": 58031210,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_Platform_Pro (1)",
+        "position": [
+          -11.52,
+          11.67,
+          -15.98
+        ],
+        "rotation": [
+          0,
+          74.48,
+          0
+        ],
+        "id": 91315970,
+        "componentsInfo": {
+          "58031210": {
+            "path": {}
+          },
+          "60348572": {
+            "initRotation": [
+              0,
+              0.61,
+              0,
+              0.8
+            ],
+            "initPosition": [
+              -11.52,
+              11.67,
+              -15.98
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91301809": {
+        "majorCompId": 58031210,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          23.18,
+          12.75,
+          -5.2
+        ],
+        "rotation": [
+          0,
+          74.48,
+          0
+        ],
+        "id": 91301809,
+        "componentsInfo": {
+          "58031210": {
+            "path": {}
+          },
+          "60348572": {
+            "bindLevelItemIds": [
+              91302019
+            ],
+            "initPosition": [
+              23.18,
+              12.75,
+              -5.2
+            ],
+            "initRotation": [
+              0,
+              0.61,
+              0,
+              0.8
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91403054": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Fan_SB_NoPerform (1)",
+        "position": [
+          -11.61,
+          6.89,
+          25.33
+        ],
+        "rotation": [
+          0.75,
+          313.96,
+          89.22
+        ],
+        "id": 91403054,
+        "componentsInfo": {
+          "42658053": {
+            "expressionKey": "91403054_42658053"
+          },
+          "49544975": {
+            "center": [
+              0.11,
+              0,
+              -0.11
+            ],
+            "size": [
+              5.97,
+              10,
+              4.26
+            ]
+          },
+          "42658052": {
+            "isConstraintWhenStart": false,
+            "shape": {
+              "endPosition": [
+                0,
+                5,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                1.94,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 337,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91348318": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "自言自语触发",
+        "position": [
+          -10.88,
+          2.91,
+          24.8
+        ],
+        "rotation": [
+          0,
+          313.03,
+          0
+        ],
+        "id": 91348318,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4.89,
+          5.3,
+          17.3
+        ],
+        "isActive": true
+      },
+      "91301896": {
+        "majorCompId": 54408025,
+        "owner": "陈智豪",
+        "EditorName": "P_Item_Chest_Shield_With_Marker_04",
+        "position": [
+          9.16,
+          -0.36,
+          -11.77
+        ],
+        "rotation": [
+          0,
+          74.48,
+          0
+        ],
+        "id": 91301896,
+        "componentsInfo": {
+          "53172216": {
+            "bindSwitchId": 91344849
+          },
+          "54408025": {
+            "chestId": 91301967,
+            "customId2State": {},
+            "id2State": {
+              "91344849": 1,
+              "91344833": 1,
+              "91344837": 1,
+              "91344840": 1
+            }
+          },
+          "49996532": {
+            "bindSwitchId": 91344833
+          },
+          "49996533": {
+            "bindSwitchId": 91344837
+          },
+          "49996534": {
+            "bindSwitchId": 91344840
+          }
+        },
+        "configId": 204,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91348331": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "是否触发自言自语",
+        "position": [
+          -16.33,
+          0.27,
+          29.81
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91348331,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91403021": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_Fan_SB_NoPerform",
+        "position": [
+          -14.36,
+          2.65,
+          22.4
+        ],
+        "rotation": [
+          0.75,
+          313.96,
+          89.22
+        ],
+        "id": 91403021,
+        "componentsInfo": {
+          "42658053": {
+            "expressionKey": "91403021_42658053"
+          },
+          "49544975": {
+            "center": [
+              0,
+              0,
+              -0.11
+            ],
+            "size": [
+              4,
+              10,
+              4.26
+            ]
+          },
+          "42658052": {
+            "isConstraintWhenStart": false,
+            "shape": {
+              "endPosition": [
+                0,
+                5,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                1.94,
+                0
+              ]
+            }
+          }
+        },
+        "configId": 337,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91315982": {
+        "majorCompId": 0,
+        "owner": "陈智豪",
+        "EditorName": "P_NoLeafFan_BearCave",
+        "position": [
+          -12.04,
+          2.74,
+          25.92
+        ],
+        "rotation": [
+          0,
+          312.61,
+          0
+        ],
+        "id": 91315982,
+        "componentsInfo": {
+          "42662676": {
+            "power": 60
+          }
+        },
+        "configId": 581,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "poiType": 513,
+    "sandBoxLevel": 0,
+    "sandboxType": 35,
+    "name": "全局_新洞穴玩法内容_9号洞穴玩法",
+    "spawners": [
+      91301444,
+      91301968,
+      91302012
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/7509/Sandbox_91301440_GraphRef.asset",
+    "sightLevel": 128,
+    "id": 91301440,
+    "markIconSpawnerId": 0,
+    "position": [
+      7.99,
+      0.58,
+      -5.71
+    ]
+  }
+}

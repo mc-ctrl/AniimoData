@@ -1,0 +1,62 @@
+[
+  {
+    "rankRange": [
+      990,
+      999
+    ],
+    "scoreRange": [
+      819,
+      1069
+    ]
+  },
+  {
+    "rankRange": [
+      900,
+      990
+    ],
+    "scoreRange": [
+      759,
+      819
+    ]
+  },
+  {
+    "rankRange": [
+      800,
+      900
+    ],
+    "scoreRange": [
+      699,
+      759
+    ]
+  },
+  {
+    "rankRange": [
+      600,
+      800
+    ],
+    "scoreRange": [
+      514,
+      699
+    ]
+  },
+  {
+    "rankRange": [
+      400,
+      600
+    ],
+    "scoreRange": [
+      364,
+      514
+    ]
+  },
+  {
+    "rankRange": [
+      0,
+      400
+    ],
+    "scoreRange": [
+      0,
+      364
+    ]
+  }
+]

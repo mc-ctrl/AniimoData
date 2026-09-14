@@ -1,0 +1,315 @@
+{
+  "BPName": "timeline_203",
+  "NodeID": 1,
+  "UID": "d22f6883-41fb-4fc7-b4cf-e09f8137c04d",
+  "layer": "Base",
+  "isSkillTimeline": false,
+  "length": 2.5,
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "194daf3c-2bbe-46bd-b6ba-67fda7df2c3c",
+      "NodeID": 37,
+      "lValue": {
+        "data": {
+          "UID": "6f14c1b0-136e-4fb4-8d65-b38829870f85",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 35
+        },
+        "propertyName": "CatchBallShowIdx",
+        "name": "getProperty",
+        "UID": "ed0f5d09-01f8-41f3-914e-df40856527df",
+        "NodeID": 36
+      }
+    },
+    "38": {
+      "UID": "652dbb46-db7c-439d-98e0-c2dd984bbb09",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 38
+    },
+    "6": {
+      "actionIds": [
+        25,
+        4,
+        43
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "5124df32-0832-45b2-a58e-0e5f2acbdc2a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        16
+      ],
+      "NodeID": 6
+    },
+    "41": {
+      "UID": "f1480a29-5866-431b-9db9-82e860256c64",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 41
+    },
+    "35": {
+      "UID": "6f14c1b0-136e-4fb4-8d65-b38829870f85",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 35
+    },
+    "8": {
+      "UID": "724855d2-272d-435c-af69-bc830e38e4d9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          31,
+          6
+        ]
+      },
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "fb2ee092-5961-4926-8d71-c0eedbc8788f",
+      "value": {
+        "str": "zxc showid",
+        "name": "constString",
+        "UID": "68f87e90-1772-49f9-b539-81713747c9d4",
+        "NodeID": 30,
+        "concatenateNumber": {
+          "data": {
+            "UID": "d401be74-8020-440e-911d-3347f50c7de1",
+            "target": "OWNER",
+            "name": "getTargetConfigData",
+            "NodeID": 27
+          },
+          "propertyName": "CatchBallShowIdx",
+          "name": "getProperty",
+          "UID": "478859e6-6409-4427-8c04-99dccc21a38a",
+          "NodeID": 28
+        }
+      },
+      "name": "print",
+      "NodeID": 31
+    },
+    "21": {
+      "name": "playEffectOnPosRot",
+      "UID": "35dbdf76-8a8d-44ef-8252-5759f88e5efa",
+      "effectId": "Eff_Catch_MagicCube_NormalBall_Struggle_Small",
+      "global": true,
+      "pos": {
+        "data": {
+          "UID": "84911838-31e8-476c-a196-fd76c917f85a",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 19
+        },
+        "propertyName": "FinalPos",
+        "name": "getProperty",
+        "UID": "7655be0d-3bba-4e2d-9220-d190cb09ce73",
+        "NodeID": 20
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "NodeID": 21
+    },
+    "43": {
+      "layerId": 5,
+      "rumbleName": "Catch_Struggle",
+      "name": "playRumble",
+      "UID": "a2b21581-485f-4aed-baa8-f1d993b1dddf",
+      "target": {
+        "data": {
+          "UID": "f1480a29-5866-431b-9db9-82e860256c64",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 41
+        },
+        "propertyName": "PlayerActorId",
+        "name": "getProperty",
+        "UID": "f7ffe019-ab8b-4598-8575-c56d2780a2f4",
+        "NodeID": 42
+      },
+      "NodeID": 43
+    },
+    "4": {
+      "name": "playEffectOnPosRot",
+      "UID": "fdd50be9-8087-42bf-96d9-950a9e5de634",
+      "effectId": "Eff_Catch_MagicCube_NormalBall_Struggle_Large",
+      "global": true,
+      "pos": {
+        "data": {
+          "UID": "405524e4-4b5e-48c8-a892-3c1c60b66f15",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 2
+        },
+        "propertyName": "FinalPos",
+        "name": "getProperty",
+        "UID": "b1d0a20d-5c2c-4f1b-a858-43d2e6c4a083",
+        "NodeID": 3
+      },
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "NodeID": 4
+    },
+    "40": {
+      "layerId": 5,
+      "rumbleName": "Catch_Struggle",
+      "name": "playRumble",
+      "UID": "5578190b-610a-4bc2-aeab-c4fa5bfaeb71",
+      "target": {
+        "data": {
+          "UID": "652dbb46-db7c-439d-98e0-c2dd984bbb09",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 38
+        },
+        "propertyName": "PlayerActorId",
+        "name": "getProperty",
+        "UID": "f05d0fa2-cc99-48b4-822c-ca806b25427d",
+        "NodeID": 39
+      },
+      "NodeID": 40
+    },
+    "14": {
+      "key": "Eff_Catch_MagicCube_NormalBall_Struggle_Small",
+      "duration": 0.8,
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14,
+      "UID": "2a42bdda-6c8e-47f0-8f76-4d7e35484346",
+      "target": "OWNER",
+      "name": "addSimpleTimer"
+    },
+    "13": {
+      "timelineId": 201,
+      "name": "stopActionTimeline",
+      "UID": "a2b6832f-2b24-4f7f-b80f-d1ff7d695bc4",
+      "layer": "Base",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "2": {
+      "UID": "405524e4-4b5e-48c8-a892-3c1c60b66f15",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 2
+    },
+    "25": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "a8e62bd3-a6c2-454b-a4d8-84a634c550d1",
+      "soundId": "se_catchball_normalball_magiccube_struggle_large",
+      "NodeID": 25
+    },
+    "26": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "30e58420-dd48-4fde-91ce-870b0e6e60e6",
+      "soundId": "se_catchball_normalball_magiccube_struggle_small",
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "d401be74-8020-440e-911d-3347f50c7de1",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 27
+    },
+    "17": {
+      "actionIds": [
+        21,
+        14,
+        26,
+        40
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "bd349f15-c747-4d08-b034-08bea27eeb69",
+      "name": "doActionsByConditions",
+      "NodeID": 17
+    },
+    "29": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "40aa6778-a4fb-4625-8b85-046f87dac8f3",
+      "NodeID": 29,
+      "lValue": {
+        "data": {
+          "UID": "d401be74-8020-440e-911d-3347f50c7de1",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 27
+        },
+        "propertyName": "CatchBallShowIdx",
+        "name": "getProperty",
+        "UID": "478859e6-6409-4427-8c04-99dccc21a38a",
+        "NodeID": 28
+      }
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 18,
+      "UID": "fd24d1c2-94ff-4e69-826a-84ed45af7901"
+    },
+    "32": {
+      "UID": "73d1f51d-70ed-4b72-b833-eefcb5deb28d",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 32
+    },
+    "19": {
+      "UID": "84911838-31e8-476c-a196-fd76c917f85a",
+      "target": "OWNER",
+      "name": "getTargetConfigData",
+      "NodeID": 19
+    },
+    "34": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "e5e925e2-f2d0-4014-bbd3-222ac950220e",
+      "NodeID": 34,
+      "lValue": {
+        "data": {
+          "UID": "73d1f51d-70ed-4b72-b833-eefcb5deb28d",
+          "target": "OWNER",
+          "name": "getTargetConfigData",
+          "NodeID": 32
+        },
+        "propertyName": "CatchBallShowIdx",
+        "name": "getProperty",
+        "UID": "35648dc3-b35a-4593-9e37-f06e284af0ea",
+        "NodeID": 33
+      }
+    },
+    "16": {
+      "actionIds": [
+        21,
+        14,
+        26,
+        40
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "96595ab2-63c7-49b1-a34c-5dcb323d20ab",
+      "name": "doActionsByConditions",
+      "NodeID": 16
+    }
+  },
+  "eventIds": [
+    8,
+    18
+  ]
+}

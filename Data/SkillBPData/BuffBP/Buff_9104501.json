@@ -1,0 +1,198 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9104501",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    17
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0.2,
+      "interval": 1,
+      "UID": "3017f01e-c790-4698-82d0-8e0f83dd8a36",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "14": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "048b3baa-9d83-4c73-9ef7-46fa9b1d66fe",
+      "target": "OWNER",
+      "val": {
+        "rValue": -1,
+        "name": "add",
+        "UID": "ec1ce5bf-fc84-4cec-9332-4e2b5bc6fe73",
+        "NodeID": 13,
+        "lValue": {
+          "key": "seed",
+          "name": "getCacheVal",
+          "UID": "52664140-293a-4ae9-8f36-1c1824504596",
+          "target": "OWNER",
+          "NodeID": 10
+        }
+      },
+      "NodeID": 14
+    },
+    "22": {
+      "value": {
+        "calcId": 9104501,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 21,
+        "UID": "fa3f204f-b68e-4961-a560-f0eec419d03d",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "1929ee65-839a-4a06-9696-dfb3a1107776",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "15": {
+      "UID": "363ce8c3-3cd0-4da3-8053-16a0a2ccaba5",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 15
+    },
+    "7": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "fe1d5d20-98c2-4790-b571-6aae45a03e1e",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 7
+    },
+    "16": {
+      "thresholdActionIds": [
+        20
+      ],
+      "failedActionIds": [
+        15
+      ],
+      "threshold": 1,
+      "UID": "fed09ec2-1e74-4fb0-ab66-093c3e7ca214",
+      "target": "OWNER",
+      "radius": 1,
+      "voxelTag": "normalGrass",
+      "NodeID": 16,
+      "name": "doActionsByVoxelThreshold"
+    },
+    "8": {
+      "name": "hasEntityTag",
+      "UID": "37a69918-d077-4380-90e6-d7cd164847d9",
+      "target": "TrapTarget",
+      "NodeID": 8,
+      "entityTag": "TE_Cre_Grass"
+    },
+    "17": {
+      "UID": "180b5415-b099-468c-85ba-3cdce8159f04",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 9,
+      "UID": "e39d8b87-1e57-470b-9bf3-fe5ea1925f07",
+      "enterTrapActionIds": [
+        12
+      ],
+      "relation": 4,
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        14
+      ],
+      "shapeArgs": [
+        0
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "prefFilterActionIds": [
+        8
+      ],
+      "center": "CURPET",
+      "name": "registerTrapEvent"
+    },
+    "21": {
+      "calcId": 9104501,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 21,
+      "UID": "fa3f204f-b68e-4961-a560-f0eec419d03d",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "30b9444b-66f5-484c-a650-179d6ad057bd",
+      "oldPetActionIds": [
+        7,
+        9,
+        3
+      ],
+      "NodeID": 5,
+      "newPetActionIds": [
+        7,
+        9,
+        3
+      ]
+    },
+    "19": {
+      "calcId": 9104501,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 19,
+      "UID": "17eda8df-a746-4600-ad80-d3386dccfd75",
+      "name": "getParamByLuaConfig"
+    },
+    "20": {
+      "actionIds": [
+        22
+      ],
+      "NodeID": 20,
+      "UID": "bbaee1ad-a889-434e-b9b1-7c848a7d3de2",
+      "cd": {
+        "calcId": 9104501,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 19,
+        "UID": "17eda8df-a746-4600-ad80-d3386dccfd75",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "12": {
+      "key": "seed",
+      "name": "setCacheVal",
+      "UID": "564b09e4-0d60-4ecc-8e89-ef2a6e1a0ad3",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "a1c27668-d9b3-42ca-ac10-dfcf23d08c7a",
+        "NodeID": 11,
+        "lValue": {
+          "key": "seed",
+          "name": "getCacheVal",
+          "UID": "52664140-293a-4ae9-8f36-1c1824504596",
+          "target": "OWNER",
+          "NodeID": 10
+        }
+      },
+      "NodeID": 12
+    }
+  },
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

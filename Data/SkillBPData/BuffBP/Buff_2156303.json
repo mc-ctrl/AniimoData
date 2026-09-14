@@ -1,0 +1,43 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2156303",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "45546e9f-bb44-4d86-9a70-8316a2ee5552",
+      "effectId": "Eff_Parmon_10563_Skill_OutEx_06",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "2a763119-6b34-4c8d-9637-bb1db21070d1",
+      "effectId": "Eff_Parmon_10563_Skill_OutEx_06",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "10": {
+      "eventName": "2156303",
+      "name": "notifyCustomEvent",
+      "UID": "1248a9be-7b51-4f58-a3aa-ea3bf85218b1",
+      "target": "OWNER",
+      "NodeID": 10
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    7
+  ],
+  "onBuffStartIds": [
+    5,
+    10
+  ]
+}

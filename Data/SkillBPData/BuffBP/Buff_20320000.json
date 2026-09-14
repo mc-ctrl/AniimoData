@@ -1,0 +1,55 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20320000",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Rogue_Skill_Shield"
+    }
+  ],
+  "nodeMap": {
+    "5": {
+      "UID": "dc988dd9-7273-4bc3-9ec7-65a757bd1b06",
+      "name": "registerOverHealEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "f6a0fd9b-fc9e-4214-9764-5140582279e4",
+      "name": "addShieldData",
+      "shieldData": {
+        "absorbRate": 1,
+        "isGeneral": false,
+        "isTeamShare": true,
+        "elementType": 0,
+        "shieldPoint": {
+          "UID": "800c1f94-60b8-49dd-bbde-2b3d8fd876ee",
+          "name": "getOverHealPoint",
+          "NodeID": 2
+        },
+        "maxPoint": {
+          "rValue": 0.35,
+          "name": "multiply",
+          "UID": "66435a0a-8f35-44e4-8266-6f3156210540",
+          "NodeID": 8,
+          "lValue": {
+            "name": "getAttribute",
+            "UID": "b1a688a1-008e-4cf0-8b89-00a3f7d7a8dd",
+            "target": "CURPET",
+            "NodeID": 7,
+            "attributeName": "hp_max_cur"
+          }
+        }
+      },
+      "NodeID": 4
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

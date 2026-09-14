@@ -1,0 +1,75 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000233",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": false,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "key": "5000230",
+      "name": "getCacheVal",
+      "UID": "6c4f7971-55df-42ba-8fd5-ef08a518b781",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "maxPoint": {
+      "rValue": {
+        "calcId": 5000233,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "bf0cd742-3888-4e46-93e2-f5b8c97cdaaa",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "2fcdc6d2-7378-468a-8058-14432a775cba",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "56956e03-f726-47b9-bf3b-0040eda800d2",
+        "target": "OWNER",
+        "NodeID": 9,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 5000233,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "bf0cd742-3888-4e46-93e2-f5b8c97cdaaa",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "dbade1b8-05ec-4522-a0c2-e99ba8d885bb",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Loop",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "86af97ea-1b9e-486f-a027-6c7d75a63105",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield_Loop",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

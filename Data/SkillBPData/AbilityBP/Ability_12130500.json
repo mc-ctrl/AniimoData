@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_12130500",
+  "NodeID": 1,
+  "UID": "fbc85552-454b-4ca4-aba3-4fb5bae0c26d",
+  "abilityParamId": 10600650,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "16": {
+      "timelineId": 12130500001,
+      "name": "setCombatActionTimeline",
+      "UID": "259f8897-2ee5-4174-9fce-b952d6f5d05f",
+      "target": "CASTER",
+      "NodeID": 16
+    }
+  },
+  "onAbilityCastIds": [
+    16
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Summon_Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10213_Skill_Doppelganger_Bullet002",
+    "Eff_Parmon_10213_Skill_Doppelganger_Bullet002_liuli",
+    "Eff_Parmon_10213_Skill_Hit01"
+  ],
+  "searchRelation": 2,
+  "name": "念力星空滑翔",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 8,
+  "shortDesc": "范围攻击",
+  "searchTargetRangeDown": 8,
+  "onlyHasActOnTargets": true,
+  "desc": "移动的同时持续落下星星攻击敌人。",
+  "refBones": [
+    "Root"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "b80d1c03-fc2d-48dc-8314-f37d149e324c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 5
+    },
+    "14": {
+      "UID": "6946fade-10a4-4311-a282-cde5a1eeef23",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 14
+    },
+    "15": {
+      "UID": "488adfb9-296c-41e8-9cdb-e0575dc87e7d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "UID": "7059a00d-0bae-4780-afd2-56c9f7845f43",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5,
+          12,
+          19
+        ]
+      },
+      "NodeID": 7
+    },
+    "44": {
+      "UID": "e2ad2ea0-fb98-434c-bb2b-532e0f5a29e8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "NodeID": 44
+    },
+    "17": {
+      "UID": "672fa5b3-a836-453f-9233-0c94d9052aa1",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 0,
+        "inBackswing": 1,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 17
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.45,
+      "NodeID": 18,
+      "UID": "c9adf33c-5396-44b1-abc2-c50682bbbee1"
+    },
+    "19": {
+      "buffId": 2102330,
+      "name": "removeBuff",
+      "UID": "7b1425e9-0679-49f3-8000-f0c63dcf0376",
+      "target": "CASTER",
+      "NodeID": 19
+    },
+    "43": {
+      "buffId": 2102330,
+      "name": "removeBuff",
+      "UID": "6a4fae82-f822-4efb-b897-c180d36bb757",
+      "target": "OWNER",
+      "NodeID": 43
+    },
+    "12": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "89326b7c-9b24-4c8c-96b2-bb3cc09d4f0b",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_10230211",
+  "NodeID": 9,
+  "UID": "2d17d9ec-8593-4cb7-9010-2f135e833392",
+  "eventIds": [
+    7,
+    15,
+    18,
+    44
+  ],
+  "layer": "Base",
+  "length": 10
+}

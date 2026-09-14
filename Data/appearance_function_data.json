@@ -1,0 +1,115 @@
+{
+  "710022": {
+    "action": [
+      801905
+    ],
+    "type": 2,
+    "suitPowerType": [
+      3
+    ],
+    "petId": [
+      1003201,
+      1003200,
+      1003203,
+      1003300,
+      1003305
+    ]
+  },
+  "710035": {
+    "idleSpecial": "Set_B10035_Idle",
+    "type": 1
+  },
+  "711014": {
+    "type": 1,
+    "additiveAnim": "ArmOpen_Additive"
+  },
+  "711019": {
+    "idleSpecial": "Set_G10019_IdleSpecial",
+    "type": 1,
+    "additiveAnim": "ArmOpen_Additive"
+  },
+  "720014": {
+    "action": [
+      801907
+    ],
+    "type": 2,
+    "suitPowerType": [
+      3
+    ],
+    "petId": [
+      1014200
+    ]
+  },
+  "720021": {
+    "suitPowerType": [
+      1
+    ],
+    "petEffId": "Eff_Avatar_Transform_710021_Fashion_Parmon",
+    "roleEffId": "Eff_Avatar_Transform_710021_Fashion",
+    "petId": [
+      1013300,
+      1013301,
+      1013302
+    ],
+    "type": 2
+  },
+  "720022": {
+    "action": [
+      801905
+    ],
+    "type": 2,
+    "suitPowerType": [
+      3
+    ],
+    "petId": [
+      1003201,
+      1003200,
+      1003203,
+      1003300,
+      1003305
+    ]
+  },
+  "720035": {
+    "idleSpecial": "Set_G10035_Idle",
+    "type": 1
+  },
+  "721019": {
+    "idleSpecial": "Set_B10019_IdleSpecial",
+    "type": 1
+  },
+  "815007": {
+    "type": 1
+  },
+  "815005": {
+    "type": 1
+  },
+  "811017": {
+    "type": 1,
+    "emoji": "Face_Down"
+  },
+  "710014": {
+    "action": [
+      801906
+    ],
+    "type": 2,
+    "suitPowerType": [
+      3
+    ],
+    "petId": [
+      1014200
+    ]
+  },
+  "710021": {
+    "suitPowerType": [
+      1
+    ],
+    "petEffId": "Eff_Avatar_Transform_710021_Fashion_Parmon",
+    "roleEffId": "Eff_Avatar_Transform_710021_Fashion",
+    "petId": [
+      1013300,
+      1013301,
+      1013302
+    ],
+    "type": 2
+  }
+}

@@ -1,0 +1,1569 @@
+{
+  "4001009": {
+    "3": {
+      "probability": 0,
+      "name": 1466097079,
+      "modelPrefab": "$P_Home_Produce_Crops_Soybean_Ripe2.prefab",
+      "collectType": 7,
+      "output": 4030043,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1092135828,
+      "modelPrefab": "$P_Home_Produce_Crops_Soybean_Variation1.prefab",
+      "collectType": 7,
+      "output": 4030046,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1749250460,
+      "modelPrefab": "$P_Home_Produce_Crops_Soybean_Ripe3.prefab",
+      "collectType": 7,
+      "output": 4030044,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1497289277,
+      "modelPrefab": "$P_Home_Produce_Crops_Soybean_Variation3.prefab",
+      "collectType": 7,
+      "output": 4030048,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1527262061,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Soybean_Variation.prefab",
+      "collectType": 7,
+      "output": 4030135,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1268119915,
+      "modelPrefab": "$P_Home_Produce_Crops_Soybean_Variation2.prefab",
+      "collectType": 7,
+      "output": 4030047,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 7,
+      "output": 4001009,
+      "name": 1785490342
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 2138484173,
+      "modelPrefab": "$P_Home_Produce_Crops_Soybean_Variation.prefab",
+      "collectType": 7,
+      "output": 4030045,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1560084062,
+      "modelPrefab": "$P_Home_Produce_Crops_Soybean_Ripe1.prefab",
+      "collectType": 7,
+      "output": 4030042,
+      "outputNum": 1
+    }
+  },
+  "4020033": {
+    "3": {
+      "probability": 0,
+      "name": 1159191356,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe2.prefab",
+      "collectType": 1,
+      "output": 4030001,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 2114226967,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation1.prefab",
+      "collectType": 1,
+      "output": 4030004,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 2011365229,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe3.prefab",
+      "collectType": 1,
+      "output": 4030002,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1465442367,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation3.prefab",
+      "collectType": 1,
+      "output": 4030006,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1519079772,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Wheat_Variation.prefab",
+      "collectType": 1,
+      "output": 4030129,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1651458124,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation2.prefab",
+      "collectType": 1,
+      "output": 4030005,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 1,
+      "output": 4001000,
+      "name": 1129081127
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1254422459,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation.prefab",
+      "collectType": 1,
+      "output": 4030003,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1460175354,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe1.prefab",
+      "collectType": 1,
+      "output": 4030000,
+      "outputNum": 1
+    }
+  },
+  "4001013": {
+    "3": {
+      "probability": 0,
+      "name": 1647088601,
+      "modelPrefab": "$P_Home_Produce_Crops_Agave_Ripe2.prefab",
+      "collectType": 9,
+      "output": 4030057,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 2042600947,
+      "modelPrefab": "$P_Home_Produce_Crops_Agave_Variation1.prefab",
+      "collectType": 9,
+      "output": 4030060,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1822325080,
+      "modelPrefab": "$P_Home_Produce_Crops_Agave_Ripe3.prefab",
+      "collectType": 9,
+      "output": 4030058,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1108160373,
+      "modelPrefab": "$P_Home_Produce_Crops_Agave_Variation3.prefab",
+      "collectType": 9,
+      "output": 4030062,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1746013435,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Agave_Variation.prefab",
+      "collectType": 9,
+      "output": 4030137,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1487604663,
+      "modelPrefab": "$P_Home_Produce_Crops_Agave_Variation2.prefab",
+      "collectType": 9,
+      "output": 4030061,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 9,
+      "output": 4001013,
+      "name": 1499471911
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1922825116,
+      "modelPrefab": "$P_Home_Produce_Crops_Agave_Variation.prefab",
+      "collectType": 9,
+      "output": 4030059,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 2100130766,
+      "modelPrefab": "$P_Home_Produce_Crops_Agave_Ripe1.prefab",
+      "collectType": 9,
+      "output": 4030056,
+      "outputNum": 1
+    }
+  },
+  "4001014": {
+    "3": {
+      "probability": 0,
+      "name": 2091925780,
+      "modelPrefab": "$P_Home_Produce_Crops_Rose_Ripe2.prefab",
+      "collectType": 10,
+      "output": 4030064,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1488712652,
+      "modelPrefab": "$P_Home_Produce_Crops_Rose_Variation1.prefab",
+      "collectType": 10,
+      "output": 4030067,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1842950888,
+      "modelPrefab": "$P_Home_Produce_Crops_Rose_Ripe3.prefab",
+      "collectType": 10,
+      "output": 4030065,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 2008582353,
+      "modelPrefab": "$P_Home_Produce_Crops_Rose_Variation3.prefab",
+      "collectType": 10,
+      "output": 4030069,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 2106867797,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Rose_Variation.prefab",
+      "collectType": 10,
+      "output": 4030138,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 2013772174,
+      "modelPrefab": "$P_Home_Produce_Crops_Rose_Variation2.prefab",
+      "collectType": 10,
+      "output": 4030068,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 10,
+      "output": 4001014,
+      "name": 1638981614
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1819213602,
+      "modelPrefab": "$P_Home_Produce_Crops_Rose_Variation.prefab",
+      "collectType": 10,
+      "output": 4030066,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1864899742,
+      "modelPrefab": "$P_Home_Produce_Crops_Rose_Ripe1.prefab",
+      "collectType": 10,
+      "output": 4030063,
+      "outputNum": 1
+    }
+  },
+  "4001015": {
+    "3": {
+      "probability": 0,
+      "name": 2094594638,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Ripe2.prefab",
+      "collectType": 15,
+      "output": 4030122,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1491608433,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Variation1.prefab",
+      "collectType": 15,
+      "output": 4030125,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 2130266455,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Ripe3.prefab",
+      "collectType": 15,
+      "output": 4030123,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1429904737,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Variation3.prefab",
+      "collectType": 15,
+      "output": 4030127,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1490457305,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Cranberry_Variation.prefab",
+      "collectType": 15,
+      "output": 4030128,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1104762857,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Variation2.prefab",
+      "collectType": 15,
+      "output": 4030126,
+      "outputNum": 1
+    },
+    "0": {
+      "output": 4001015,
+      "collectType": 15,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Ripe.prefab",
+      "name": 2099245004
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1809933670,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Variation.prefab",
+      "collectType": 15,
+      "output": 4030124,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1228746914,
+      "modelPrefab": "$P_Home_Produce_Crops_Cranberry_Ripe1.prefab",
+      "collectType": 15,
+      "output": 4030121,
+      "outputNum": 1
+    }
+  },
+  "4001016": {
+    "3": {
+      "probability": 0,
+      "name": 1445193032,
+      "modelPrefab": "$P_Home_Produce_Crops_Ginseng_Ripe2.prefab",
+      "collectType": 12,
+      "output": 4030078,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1585508312,
+      "modelPrefab": "$P_Home_Produce_Crops_Ginseng_Variation1.prefab",
+      "collectType": 12,
+      "output": 4030081,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1402514946,
+      "modelPrefab": "$P_Home_Produce_Crops_Ginseng_Ripe3.prefab",
+      "collectType": 12,
+      "output": 4030079,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1979782742,
+      "modelPrefab": "$P_Home_Produce_Crops_Ginseng_Variation3.prefab",
+      "collectType": 12,
+      "output": 4030083,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 2012720856,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Ginseng_Variation.prefab",
+      "collectType": 12,
+      "output": 4030140,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1288270286,
+      "modelPrefab": "$P_Home_Produce_Crops_Ginseng_Variation2.prefab",
+      "collectType": 12,
+      "output": 4030082,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 12,
+      "output": 4001016,
+      "name": 1695785627
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1506579011,
+      "modelPrefab": "$P_Home_Produce_Crops_Ginseng_Variation.prefab",
+      "collectType": 12,
+      "output": 4030080,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1701332180,
+      "modelPrefab": "$P_Home_Produce_Crops_Ginseng_Ripe1.prefab",
+      "collectType": 12,
+      "output": 4030077,
+      "outputNum": 1
+    }
+  },
+  "4020055": {
+    "3": {
+      "probability": 0,
+      "name": 1086983062,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Ripe2.prefab",
+      "collectType": 4,
+      "output": 4030022,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1425027841,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation1.prefab",
+      "collectType": 4,
+      "output": 4030025,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 2021102385,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Ripe3.prefab",
+      "collectType": 4,
+      "output": 4030023,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1333915028,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation3.prefab",
+      "collectType": 4,
+      "output": 4030027,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 2089812782,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Rice_Variation.prefab",
+      "collectType": 4,
+      "output": 4030132,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1841017972,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation2.prefab",
+      "collectType": 4,
+      "output": 4030026,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 4,
+      "output": 4001003,
+      "name": 1284021261
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1717547173,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation.prefab",
+      "collectType": 4,
+      "output": 4030024,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1724971711,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Ripe1.prefab",
+      "collectType": 4,
+      "output": 4030021,
+      "outputNum": 1
+    }
+  },
+  "4020057": {
+    "3": {
+      "probability": 0,
+      "name": 1264709503,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Ripe2.prefab",
+      "collectType": 6,
+      "output": 4030036,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1606947643,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation1.prefab",
+      "collectType": 6,
+      "output": 4030039,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1242541741,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Ripe3.prefab",
+      "collectType": 6,
+      "output": 4030037,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1411225337,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation3.prefab",
+      "collectType": 6,
+      "output": 4030041,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1591486520,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Strawberry_Variation.prefab",
+      "collectType": 6,
+      "output": 4030134,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1291046101,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation2.prefab",
+      "collectType": 6,
+      "output": 4030040,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 6,
+      "output": 4001005,
+      "name": 1506868719
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1446088247,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation.prefab",
+      "collectType": 6,
+      "output": 4030038,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1772999241,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Ripe1.prefab",
+      "collectType": 6,
+      "output": 4030035,
+      "outputNum": 1
+    }
+  },
+  "4001062": {
+    "3": {
+      "probability": 0,
+      "name": 1289336462,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Ripe2.prefab",
+      "collectType": 13,
+      "output": 4030085,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1915349009,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Fruit1.prefab",
+      "collectType": 13,
+      "output": 4030088,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1778470133,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Ripe3.prefab",
+      "collectType": 13,
+      "output": 4030086,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1685057672,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Fruit3.prefab",
+      "collectType": 13,
+      "output": 4030090,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1117424383,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Variation3.prefab",
+      "collectType": 13,
+      "output": 4030091,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1594047897,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Fruit2.prefab",
+      "collectType": 13,
+      "output": 4030089,
+      "outputNum": 1
+    },
+    "0": {
+      "output": 4001062,
+      "collectType": 13,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Ripe.prefab",
+      "name": 1694746343
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 2005089809,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Fruit.prefab",
+      "collectType": 13,
+      "output": 4030087,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1342316597,
+      "modelPrefab": "$P_Home_Produce_Crops_Pumpkin_Ripe1.prefab",
+      "collectType": 13,
+      "output": 4030084,
+      "outputNum": 1
+    }
+  },
+  "4001068": {
+    "3": {
+      "probability": 0,
+      "name": 1449925288,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Ripe2.prefab",
+      "collectType": 1,
+      "output": 4030107,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1918516870,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Variation1.prefab",
+      "collectType": 1,
+      "output": 4030110,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1492945721,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Ripe3.prefab",
+      "collectType": 1,
+      "output": 4030108,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1610392244,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Variation3.prefab",
+      "collectType": 1,
+      "output": 4030112,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1576572087,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Redclub_Variation.prefab",
+      "collectType": 1,
+      "output": 4030143,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1460458726,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Variation2.prefab",
+      "collectType": 1,
+      "output": 4030111,
+      "outputNum": 1
+    },
+    "0": {
+      "output": 4001068,
+      "collectType": 1,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Ripe.prefab",
+      "name": 1722256240
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1987652916,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Variation.prefab",
+      "collectType": 1,
+      "output": 4030109,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 2088642832,
+      "modelPrefab": "$P_Home_Produce_Crops_Redclub_Ripe1.prefab",
+      "collectType": 1,
+      "output": 4030106,
+      "outputNum": 1
+    }
+  },
+  "4001066": {
+    "3": {
+      "probability": 0,
+      "name": 1452777990,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Ripe_Ripe2.prefab",
+      "collectType": 1,
+      "output": 4030093,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 2068205079,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Variation1.prefab",
+      "collectType": 1,
+      "output": 4030096,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1629369469,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Ripe_Ripe3.prefab",
+      "collectType": 1,
+      "output": 4030094,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 2113384854,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Variation3.prefab",
+      "collectType": 1,
+      "output": 4030098,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1352399759,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_WhiteRadish_Variation.prefab",
+      "collectType": 1,
+      "output": 4030141,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1875836843,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Variation2.prefab",
+      "collectType": 1,
+      "output": 4030097,
+      "outputNum": 1
+    },
+    "0": {
+      "output": 4001066,
+      "collectType": 1,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Ripe_Ripe.prefab",
+      "name": 1463313785
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1949328192,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Variation.prefab",
+      "collectType": 1,
+      "output": 4030095,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1667790499,
+      "modelPrefab": "$P_Home_Produce_Crops_WhiteRadish_Ripe_Ripe1.prefab",
+      "collectType": 1,
+      "output": 4030092,
+      "outputNum": 1
+    }
+  },
+  "4001067": {
+    "3": {
+      "probability": 0,
+      "name": 1930503091,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Ripe2.prefab",
+      "collectType": 1,
+      "output": 4030100,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 2118778606,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Variation1.prefab",
+      "collectType": 1,
+      "output": 4030103,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1172975700,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Ripe3.prefab",
+      "collectType": 1,
+      "output": 4030101,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1977789807,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Variation3.prefab",
+      "collectType": 1,
+      "output": 4030105,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1237545393,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Moon_Variation.prefab",
+      "collectType": 1,
+      "output": 4030142,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 2123194998,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Variation2.prefab",
+      "collectType": 1,
+      "output": 4030104,
+      "outputNum": 1
+    },
+    "0": {
+      "output": 4001067,
+      "collectType": 1,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Ripe.prefab",
+      "name": 1629925506
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1154668617,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Variation.prefab",
+      "collectType": 1,
+      "output": 4030102,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1415116105,
+      "modelPrefab": "$P_Home_Produce_Crops_Moon_Ripe1.prefab",
+      "collectType": 1,
+      "output": 4030099,
+      "outputNum": 1
+    }
+  },
+  "4020079": {
+    "3": {
+      "probability": 0,
+      "name": 1638794180,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe2.prefab",
+      "collectType": 1,
+      "output": 4030001,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1073751003,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation1.prefab",
+      "collectType": 1,
+      "output": 4030004,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1897853125,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe3.prefab",
+      "collectType": 1,
+      "output": 4030002,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1456141804,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation3.prefab",
+      "collectType": 1,
+      "output": 4030006,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1224353860,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Wheat_Variation.prefab",
+      "collectType": 1,
+      "output": 4030129,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1764287749,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation2.prefab",
+      "collectType": 1,
+      "output": 4030005,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 1,
+      "output": 4001000,
+      "name": 1340489791
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1453791202,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation.prefab",
+      "collectType": 1,
+      "output": 4030003,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1415920705,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe1.prefab",
+      "collectType": 1,
+      "output": 4030000,
+      "outputNum": 1
+    }
+  },
+  "4020054": {
+    "3": {
+      "probability": 0,
+      "name": 1357086687,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Ripe2.prefab",
+      "collectType": 2,
+      "output": 4030008,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1259213386,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation1.prefab",
+      "collectType": 2,
+      "output": 4030011,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1171995849,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Ripe3.prefab",
+      "collectType": 2,
+      "output": 4030009,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1814245601,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation3.prefab",
+      "collectType": 2,
+      "output": 4030013,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1985049132,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Potato_Variation.prefab",
+      "collectType": 2,
+      "output": 4030130,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 2113819641,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation2.prefab",
+      "collectType": 2,
+      "output": 4030012,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 2,
+      "output": 4001002,
+      "name": 1462965321
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 2026326075,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation.prefab",
+      "collectType": 2,
+      "output": 4030010,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1941256871,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Ripe1.prefab",
+      "collectType": 2,
+      "output": 4030007,
+      "outputNum": 1
+    }
+  },
+  "4001003": {
+    "3": {
+      "probability": 0,
+      "name": 2108358737,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Ripe2.prefab",
+      "collectType": 4,
+      "output": 4030022,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1754938335,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation1.prefab",
+      "collectType": 4,
+      "output": 4030025,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1192144713,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Ripe3.prefab",
+      "collectType": 4,
+      "output": 4030023,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 2100067952,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation3.prefab",
+      "collectType": 4,
+      "output": 4030027,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 2098773685,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Rice_Variation.prefab",
+      "collectType": 4,
+      "output": 4030132,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1088743603,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation2.prefab",
+      "collectType": 4,
+      "output": 4030026,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 4,
+      "output": 4001003,
+      "name": 1835008358
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1158331410,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Variation.prefab",
+      "collectType": 4,
+      "output": 4030024,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1957787360,
+      "modelPrefab": "$P_Home_Produce_Crops_Rice_Ripe1.prefab",
+      "collectType": 4,
+      "output": 4030021,
+      "outputNum": 1
+    }
+  },
+  "4001001": {
+    "3": {
+      "probability": 0,
+      "name": 1423667155,
+      "modelPrefab": "$P_Home_Produce_Crops_SugarCane_Ripe2.prefab",
+      "collectType": 3,
+      "output": 4030015,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1588355895,
+      "modelPrefab": "$P_Home_Produce_Crops_SugarCane_Variation1.prefab",
+      "collectType": 3,
+      "output": 4030018,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1236335889,
+      "modelPrefab": "$P_Home_Produce_Crops_SugarCane_Ripe3.prefab",
+      "collectType": 3,
+      "output": 4030016,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1115994952,
+      "modelPrefab": "$P_Home_Produce_Crops_SugarCane_Variation3.prefab",
+      "collectType": 3,
+      "output": 4030020,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1193377264,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_SugarCane_Variation.prefab",
+      "collectType": 3,
+      "output": 4030131,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1450157772,
+      "modelPrefab": "$P_Home_Produce_Crops_SugarCane_Variation2.prefab",
+      "collectType": 3,
+      "output": 4030019,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 3,
+      "output": 4001001,
+      "name": 1204376421
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1400994238,
+      "modelPrefab": "$P_Home_Produce_Crops_SugarCane_Variation.prefab",
+      "collectType": 3,
+      "output": 4030017,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 2127482046,
+      "modelPrefab": "$P_Home_Produce_Crops_SugarCane_Ripe1.prefab",
+      "collectType": 3,
+      "output": 4030014,
+      "outputNum": 1
+    }
+  },
+  "4001002": {
+    "3": {
+      "probability": 0,
+      "name": 1111692005,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Ripe2.prefab",
+      "collectType": 2,
+      "output": 4030008,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 2002263397,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation1.prefab",
+      "collectType": 2,
+      "output": 4030011,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1329474933,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Ripe3.prefab",
+      "collectType": 2,
+      "output": 4030009,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1302100565,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation3.prefab",
+      "collectType": 2,
+      "output": 4030013,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1243857125,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Potato_Variation.prefab",
+      "collectType": 2,
+      "output": 4030130,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1491791307,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation2.prefab",
+      "collectType": 2,
+      "output": 4030012,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 2,
+      "output": 4001002,
+      "name": 1569911510
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1433196640,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Variation.prefab",
+      "collectType": 2,
+      "output": 4030010,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1785066417,
+      "modelPrefab": "$P_Home_Produce_Crops_Potato_Ripe1.prefab",
+      "collectType": 2,
+      "output": 4030007,
+      "outputNum": 1
+    }
+  },
+  "4001010": {
+    "3": {
+      "probability": 0,
+      "name": 1358941260,
+      "modelPrefab": "$P_Home_Produce_Crops_Grape_Ripe2.prefab",
+      "collectType": 11,
+      "output": 4030071,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1694130299,
+      "modelPrefab": "$P_Home_Produce_Crops_Grape_Variation1.prefab",
+      "collectType": 11,
+      "output": 4030074,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1627994583,
+      "modelPrefab": "$P_Home_Produce_Crops_Grape_Ripe3.prefab",
+      "collectType": 11,
+      "output": 4030072,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1766793990,
+      "modelPrefab": "$P_Home_Produce_Crops_Grape_Variation3.prefab",
+      "collectType": 11,
+      "output": 4030076,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1386836075,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Grape_Variation.prefab",
+      "collectType": 11,
+      "output": 4030139,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1224123274,
+      "modelPrefab": "$P_Home_Produce_Crops_Grape_Variation2.prefab",
+      "collectType": 11,
+      "output": 4030075,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 11,
+      "output": 4001010,
+      "name": 1727265736
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1962670441,
+      "modelPrefab": "$P_Home_Produce_Crops_Grape_Variation.prefab",
+      "collectType": 11,
+      "output": 4030073,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1306212977,
+      "modelPrefab": "$P_Home_Produce_Crops_Grape_Ripe1.prefab",
+      "collectType": 11,
+      "output": 4030070,
+      "outputNum": 1
+    }
+  },
+  "4001004": {
+    "3": {
+      "probability": 0,
+      "name": 1460825084,
+      "modelPrefab": "$P_Home_Produce_Crops_Cotton_Ripe2.prefab",
+      "collectType": 5,
+      "output": 4030029,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1416587436,
+      "modelPrefab": "$P_Home_Produce_Crops_Cotton_Variation1.prefab",
+      "collectType": 5,
+      "output": 4030032,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1261667508,
+      "modelPrefab": "$P_Home_Produce_Crops_Cotton_Ripe3.prefab",
+      "collectType": 5,
+      "output": 4030030,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1450159075,
+      "modelPrefab": "$P_Home_Produce_Crops_Cotton_Variation3.prefab",
+      "collectType": 5,
+      "output": 4030034,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1228967380,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Cotton_Variation.prefab",
+      "collectType": 5,
+      "output": 4030133,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1897374575,
+      "modelPrefab": "$P_Home_Produce_Crops_Cotton_Variation2.prefab",
+      "collectType": 5,
+      "output": 4030033,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 5,
+      "output": 4001004,
+      "name": 1691255804
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1935161104,
+      "modelPrefab": "$P_Home_Produce_Crops_Cotton_Variation.prefab",
+      "collectType": 5,
+      "output": 4030031,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1785229220,
+      "modelPrefab": "$P_Home_Produce_Crops_Cotton_Ripe1.prefab",
+      "collectType": 5,
+      "output": 4030028,
+      "outputNum": 1
+    }
+  },
+  "4001005": {
+    "3": {
+      "probability": 0,
+      "name": 1091450356,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Ripe2.prefab",
+      "collectType": 6,
+      "output": 4030036,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1157228248,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation1.prefab",
+      "collectType": 6,
+      "output": 4030039,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1924686788,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Ripe3.prefab",
+      "collectType": 6,
+      "output": 4030037,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1150737120,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation3.prefab",
+      "collectType": 6,
+      "output": 4030041,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1570031400,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Strawberry_Variation.prefab",
+      "collectType": 6,
+      "output": 4030134,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1625738191,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation2.prefab",
+      "collectType": 6,
+      "output": 4030040,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 6,
+      "output": 4001005,
+      "name": 1174143692
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1206284155,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Variation.prefab",
+      "collectType": 6,
+      "output": 4030038,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1863960162,
+      "modelPrefab": "$P_Home_Produce_Crops_Strawberry_Ripe1.prefab",
+      "collectType": 6,
+      "output": 4030035,
+      "outputNum": 1
+    }
+  },
+  "4001000": {
+    "3": {
+      "probability": 0,
+      "name": 2003006166,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe2.prefab",
+      "collectType": 1,
+      "output": 4030001,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 2077412276,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation1.prefab",
+      "collectType": 1,
+      "output": 4030004,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 1933232049,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe3.prefab",
+      "collectType": 1,
+      "output": 4030002,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1603364892,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation3.prefab",
+      "collectType": 1,
+      "output": 4030006,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1247919784,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Wheat_Variation.prefab",
+      "collectType": 1,
+      "output": 4030129,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1153742525,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation2.prefab",
+      "collectType": 1,
+      "output": 4030005,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 1,
+      "output": 4001000,
+      "name": 1322730101
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1176159590,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Variation.prefab",
+      "collectType": 1,
+      "output": 4030003,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1788510399,
+      "modelPrefab": "$P_Home_Produce_Crops_Wheat_Ripe1.prefab",
+      "collectType": 1,
+      "output": 4030000,
+      "outputNum": 1
+    }
+  },
+  "4001007": {
+    "3": {
+      "probability": 0,
+      "name": 1288812991,
+      "modelPrefab": "$P_Home_Produce_Crops_Lavender_Ripe2.prefab",
+      "collectType": 8,
+      "output": 4030050,
+      "outputNum": 1
+    },
+    "4": {
+      "probability": 0,
+      "name": 1651855449,
+      "modelPrefab": "$P_Home_Produce_Crops_Lavender_Variation1.prefab",
+      "collectType": 8,
+      "output": 4030053,
+      "outputNum": 1
+    },
+    "6": {
+      "probability": 0,
+      "name": 2028868286,
+      "modelPrefab": "$P_Home_Produce_Crops_Lavender_Ripe3.prefab",
+      "collectType": 8,
+      "output": 4030051,
+      "outputNum": 1
+    },
+    "7": {
+      "probability": 0,
+      "name": 1499560430,
+      "modelPrefab": "$P_Home_Produce_Crops_Lavender_Variation3.prefab",
+      "collectType": 8,
+      "output": 4030055,
+      "outputNum": 1
+    },
+    "8": {
+      "probability": 0,
+      "name": 1531154754,
+      "modelPrefab": "$P_Home_Produce_LVH_Crops_Lavender_Variation.prefab",
+      "collectType": 8,
+      "output": 4030136,
+      "outputNum": 1
+    },
+    "5": {
+      "probability": 0,
+      "name": 1977730165,
+      "modelPrefab": "$P_Home_Produce_Crops_Lavender_Variation2.prefab",
+      "collectType": 8,
+      "output": 4030054,
+      "outputNum": 1
+    },
+    "0": {
+      "collectType": 8,
+      "output": 4001007,
+      "name": 1597701528
+    },
+    "1": {
+      "probability": 0.0005,
+      "name": 1421423496,
+      "modelPrefab": "$P_Home_Produce_Crops_Lavender_Variation.prefab",
+      "collectType": 8,
+      "output": 4030052,
+      "outputNum": 1
+    },
+    "2": {
+      "probability": 0,
+      "name": 1531882550,
+      "modelPrefab": "$P_Home_Produce_Crops_Lavender_Ripe1.prefab",
+      "collectType": 8,
+      "output": 4030049,
+      "outputNum": 1
+    }
+  }
+}

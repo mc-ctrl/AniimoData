@@ -1,0 +1,88 @@
+{
+  "duration": 0.2,
+  "calcResultNodeId": 62,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "",
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "62": {
+      "calcInfo": {
+        "instant_dmg_rate_v": {
+          "rValue": 0.4,
+          "name": "multiply",
+          "UID": "e0c47bf0-f46f-4a99-beff-38e1be6fd6eb",
+          "NodeID": 67,
+          "lValue": {
+            "calcId": 10260400,
+            "calcType": 2,
+            "paramName": "param0",
+            "NodeID": 66,
+            "UID": "d515d1b5-d0a9-4044-8eb1-f2542e4202a5",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 0,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "impulseId": 3000
+      },
+      "UID": "23cb9fdd-0664-4551-b873-983fef47f946",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 62
+    },
+    "66": {
+      "calcId": 10260400,
+      "calcType": 2,
+      "paramName": "param0",
+      "NodeID": 66,
+      "UID": "d515d1b5-d0a9-4044-8eb1-f2542e4202a5",
+      "name": "getParamByLuaConfig"
+    },
+    "39": {
+      "duration": 0.5,
+      "name": "forceDisplacement",
+      "UID": "f2f82778-e0ec-495f-ac15-72ef532c5ca4",
+      "target": "TARGET",
+      "trackTarget": true,
+      "ignoreKnockST": true,
+      "displacementDir": "IN",
+      "speed": 30,
+      "displacementTarget": "CASTER",
+      "NodeID": 39
+    }
+  },
+  "moveSpeed": 75,
+  "onProjectileHitIds": [
+    62,
+    39
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "tickInterval": 0.01,
+  "BPName": "ability_10260400",
+  "startSleepTime": 0,
+  "maxHitNum": 99999,
+  "NodeID": 0,
+  "impulseId": 3000,
+  "acceleration": 0
+}

@@ -1,0 +1,242 @@
+{
+  "loop": true,
+  "nodeMap": {
+    "4": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          9
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_dmg_v",
+      "UID": "3cfbbc17-7ebd-44fe-a045-834aa6895591",
+      "name": "getRogueProp",
+      "NodeID": 24
+    },
+    "14": {
+      "overrideCaster": "CURPET",
+      "calcInfo": {
+        "instant_crit_rate_v": {
+          "key": "EquipAttr",
+          "attributeName": "instant_crit_rate_v",
+          "UID": "ce433926-99b6-48f1-95a3-8221c54e13b4",
+          "name": "getRogueProp",
+          "NodeID": 25
+        },
+        "instant_addition_dmg": {
+          "rValue": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "a56ab04a-95c3-4176-9fc3-353ea584ff0a",
+            "NodeID": 23,
+            "lValue": {
+              "rValue": {
+                "calcId": 2042000,
+                "calcType": 4,
+                "paramName": "param0",
+                "NodeID": 27,
+                "UID": "7b46d033-34c7-4b33-b93a-bc2906c4b5a9",
+                "name": "getParamByLuaConfig"
+              },
+              "name": "multiply",
+              "UID": "2d18971c-932a-4530-a580-931f31c22ede",
+              "NodeID": 22,
+              "lValue": {
+                "UID": "eb5cb1a9-8fda-45a2-97aa-de2ec5332128",
+                "name": "getRoguePersistData",
+                "key": "DefenseCnt",
+                "NodeID": 21
+              }
+            }
+          },
+          "name": "multiply",
+          "UID": "9dfe045f-0673-4ee8-b5d8-72b62f542f76",
+          "NodeID": 18,
+          "lValue": {
+            "rValue": {
+              "calcId": 2042000,
+              "calcType": 4,
+              "paramName": "param4",
+              "NodeID": 28,
+              "UID": "10908b47-eac2-49f7-aa67-6bd69a6f8258",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "c7d0bc48-d797-4d87-b768-7d1b3a8761ca",
+            "NodeID": 17,
+            "lValue": {
+              "rValue": {
+                "name": "getAttribute",
+                "UID": "fd388525-a195-4d89-ad45-26458cf6a8e6",
+                "target": "CURPET",
+                "NodeID": 20,
+                "attributeName": "def_mag_cur"
+              },
+              "name": "add",
+              "UID": "6baddcbf-bb7e-4f5e-a63d-44c8987c8763",
+              "NodeID": 16,
+              "lValue": {
+                "name": "getAttribute",
+                "UID": "605839a8-b506-4e9b-9fb6-197fe34eae1f",
+                "target": "CURPET",
+                "NodeID": 15,
+                "attributeName": "def_cur"
+              }
+            }
+          }
+        },
+        "instant_dmg_rate_v": {
+          "key": "EquipAttr",
+          "attributeName": "instant_dmg_rate_v",
+          "UID": "617ab3ea-eb5f-45ee-82be-684fb39daf31",
+          "name": "getRogueProp",
+          "NodeID": 26
+        },
+        "instant_crit_dmg_v": {
+          "key": "EquipAttr",
+          "attributeName": "instant_crit_dmg_v",
+          "UID": "3cfbbc17-7ebd-44fe-a045-834aa6895591",
+          "name": "getRogueProp",
+          "NodeID": 24
+        }
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "impulseId": 1000,
+        "dmgWordUITypes": [
+          "DOT",
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "69d8e10b-2c53-4f9b-b307-36d1b2a6e320",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 14
+    },
+    "10": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 20420000,
+      "NodeID": 10,
+      "UID": "70ec58fc-66ea-4db1-994c-3adab6d365f5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "25": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_rate_v",
+      "UID": "ce433926-99b6-48f1-95a3-8221c54e13b4",
+      "name": "getRogueProp",
+      "NodeID": 25
+    },
+    "26": {
+      "key": "EquipAttr",
+      "attributeName": "instant_dmg_rate_v",
+      "UID": "617ab3ea-eb5f-45ee-82be-684fb39daf31",
+      "name": "getRogueProp",
+      "NodeID": 26
+    },
+    "8": {
+      "calcResultNodeId": 14,
+      "name": "actOnTargets",
+      "UID": "c36577f8-0da5-4a53-bef9-5306af0204a3",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            10,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "rotFrom": "OWNER"
+        }
+      ],
+      "hitBoxId": "1",
+      "needEcs": true,
+      "actionIds": [
+        10,
+        14
+      ],
+      "impulseId": 1000,
+      "NodeID": 8
+    },
+    "28": {
+      "calcId": 2042000,
+      "calcType": 4,
+      "paramName": "param4",
+      "NodeID": 28,
+      "UID": "10908b47-eac2-49f7-aa67-6bd69a6f8258",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "key": "timeline_20420009",
+      "duration": 0.7,
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "0f8b972f-f833-434a-9c8d-eb63054cc576",
+      "name": "addEntityTimer"
+    },
+    "27": {
+      "calcId": 2042000,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 27,
+      "UID": "7b46d033-34c7-4b33-b93a-bc2906c4b5a9",
+      "name": "getParamByLuaConfig"
+    },
+    "2": {
+      "scale": 0.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "19852097-efcd-45bb-a084-d3f485e79482",
+      "effectId": "Eff_ChainBurst_Fire",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "21": {
+      "UID": "eb5cb1a9-8fda-45a2-97aa-de2ec5332128",
+      "name": "getRoguePersistData",
+      "key": "DefenseCnt",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2042000",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 2
+}

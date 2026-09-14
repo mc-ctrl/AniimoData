@@ -1,0 +1,27 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "5c0af896-4730-44fe-a750-43f261b921f2",
+      "name": "fly",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "d9be6ef3-fff8-4fb1-b308-db9fff780d1d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    }
+  },
+  "BPName": "ability_11810900",
+  "NodeID": 5,
+  "UID": "2f177381-ed2b-448e-a52c-fc9496151615",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 0.2
+}

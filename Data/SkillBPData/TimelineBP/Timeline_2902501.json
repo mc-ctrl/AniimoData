@@ -1,0 +1,165 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "4": {
+      "UID": "b444b72f-62e6-431b-ac20-51bbd2df5f9a",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "0fbfde8e-55b0-47ca-acde-808717dc2aeb",
+      "soundId": "monster_helgonboss_skill_fireball_explosion",
+      "NodeID": 24
+    },
+    "6": {
+      "UID": "2649dc0c-6023-4715-9f72-f3537c656a11",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          14
+        ]
+      },
+      "NodeID": 6
+    },
+    "21": {
+      "NodeID": 21,
+      "UID": "dc9f6204-2a0c-4e98-8b03-6ee99c773262",
+      "effectId": "Eff_Parmon_10023_Mon_Skill_Fireball_03",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    },
+    "19": {
+      "name": "checkPetPrototypeId",
+      "UID": "7759ca50-b378-4c6a-9776-f252781a5ab0",
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "28dce115-daf5-4b64-b45f-567247c65f18",
+        "target": "CASTER",
+        "NodeID": 18
+      },
+      "petPrototypeId": 9002500,
+      "NodeID": 19
+    },
+    "9": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.5,
+        "instant_dmg_rate_v": 0.5
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "elementType": 8,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "impulseId": 3002,
+        "hitCameraShakeId": -1
+      },
+      "UID": "0c9cb0cb-fab9-41b9-b132-ed599f0bef7f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 9
+    },
+    "18": {
+      "eventName": "onReceiveBeAttacked",
+      "name": "getEventCombatContextTarget",
+      "UID": "28dce115-daf5-4b64-b45f-567247c65f18",
+      "target": "CASTER",
+      "NodeID": 18
+    },
+    "14": {
+      "UID": "96bdc45f-9902-41a2-9805-9ee5d6876dac",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14
+    },
+    "11": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 9,
+      "NodeID": 11,
+      "UID": "e4cad771-5105-4a8f-9884-93b7a0787fa4",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.8,
+            1.8,
+            1.5,
+            3.85,
+            1.3
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        9
+      ]
+    },
+    "13": {
+      "actionIds": [
+        11,
+        21,
+        24
+      ],
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "f12721c4-19e0-440a-bfe1-2cb4e83bbeea",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11,
+        21,
+        24
+      ],
+      "NodeID": 13
+    },
+    "2": {
+      "NodeID": 2,
+      "UID": "660f0930-284e-458f-a4e5-ececf7fd35ab",
+      "effectId": "Eff_Parmon_10174_Skill_Wall_End",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "rot": "OWNER",
+      "rotTo": "OWNER",
+      "name": "playEffectOnPosRot"
+    }
+  },
+  "BPName": "timeline_2902501",
+  "NodeID": 1,
+  "UID": "c5f957ab-050f-4b6c-95dc-869abfcaf882",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 600
+}

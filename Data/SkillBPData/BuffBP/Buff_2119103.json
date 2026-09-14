@@ -1,0 +1,30 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119103",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "tags": [
+    10
+  ],
+  "calcInfoByLuaConfig": {
+    "dmg_water_add_ratio": "param0",
+    "type": 1,
+    "id": 2119103
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2e8d0753-9822-4135-acc7-b3a8987441e6",
+      "effectId": "Eff_Parmon_10191_Passive",
+      "speed": 1,
+      "NodeID": 3
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

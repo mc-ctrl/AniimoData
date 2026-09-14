@@ -1,0 +1,193 @@
+{
+  "91054252": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 90,
+    "markPosition": [
+      65.31,
+      -3.58,
+      -61.07
+    ]
+  },
+  "91054258": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 90,
+    "markPosition": [
+      69.32,
+      2.47,
+      -45.14
+    ]
+  },
+  "91054268": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      109.87,
+      -3.54,
+      -50.52
+    ]
+  },
+  "91054282": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 135,
+    "markPosition": [
+      129.57,
+      -4.18,
+      -35.88
+    ]
+  },
+  "91054320": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      203.12,
+      -5.69,
+      -2.79
+    ]
+  },
+  "79240437": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      7.11,
+      -1.07,
+      -91.05
+    ]
+  },
+  "79342586": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 90,
+    "markPosition": [
+      26.75,
+      -1.52,
+      -20.1
+    ]
+  },
+  "79408259": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      203.01,
+      -5.69,
+      50.83
+    ]
+  },
+  "79499057": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 270,
+    "markPosition": [
+      -22.8,
+      -1.18,
+      -128.91
+    ]
+  },
+  "79507179": {
+    "markType": 0,
+    "randomRange": 2,
+    "revivedPointState": true,
+    "yaw": 0,
+    "markPosition": [
+      7.01,
+      -1.11,
+      -163.72
+    ]
+  },
+  "91006380": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      109.87,
+      -3.54,
+      -33.27
+    ]
+  },
+  "91006382": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 90,
+    "markPosition": [
+      176.91,
+      -1.6,
+      -37.22
+    ]
+  },
+  "91006384": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      201.78,
+      -1.66,
+      -23.95
+    ]
+  },
+  "91054128": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 90,
+    "markPosition": [
+      31.52,
+      -3.13,
+      -129.15
+    ]
+  },
+  "91054162": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      7.11,
+      0.92,
+      -67.34
+    ]
+  },
+  "91054203": {
+    "markType": 0,
+    "randomRange": 0,
+    "groupId": 1,
+    "revivedPointState": false,
+    "yaw": 0,
+    "markPosition": [
+      203.29,
+      -5.51,
+      69.35
+    ]
+  }
+}

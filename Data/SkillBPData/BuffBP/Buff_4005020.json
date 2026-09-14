@@ -1,0 +1,291 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4005020",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "7ac2a499-9d5b-48ee-a8b8-5dca7540b868",
+      "name": "callClientAction",
+      "actionIds": [
+        3,
+        24,
+        19,
+        26,
+        28,
+        30
+      ],
+      "NodeID": 5
+    },
+    "38": {
+      "actionIds": [
+        37
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "b925f252-f1b2-4ca3-a188-6a907a645efc",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "37": {
+      "buffId": 4005020,
+      "name": "removeBuff",
+      "UID": "1d195e70-67f1-48f0-ad4b-4913d003513f",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "23": {
+      "name": "stopEffectStr",
+      "UID": "29c0fc2a-63be-4b2c-b047-aea2b58db491",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead01",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "7": {
+      "actionsOnFakeDead": [
+        16,
+        21
+      ],
+      "actionsOnReborn": [
+        5,
+        18,
+        22,
+        32
+      ],
+      "canBeHitWhenFakeDead": false,
+      "NodeID": 7,
+      "UID": "2581f308-9005-41e9-bfec-bec177bf0162",
+      "reviveHpRate": 0.3,
+      "rebornTime": 5,
+      "name": "petFakeDead"
+    },
+    "35": {
+      "buffId": 91213022,
+      "name": "hasBuff",
+      "UID": "06fbf5c5-de49-47dc-bc8c-67569be40cdf",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "22": {
+      "eventName": "10213_revive_eff",
+      "name": "notifyCustomEvent",
+      "UID": "0d7c8c55-b62c-4a95-a128-2c902d2233b9",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "31": {
+      "buffId": 4005020,
+      "name": "removeBuff",
+      "UID": "0015b75f-bf5e-4455-b346-d91d34b641fb",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "9": {
+      "key": "quanxibeidong",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 9,
+      "UID": "8047b6a5-fd35-47d8-b29d-865e51a4ae3c",
+      "cd": 5,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "33": {
+      "name": "checkPetPrototypeId",
+      "UID": "e59e3982-ad8a-40df-ae1b-89c0555b7b68",
+      "target": "OWNER",
+      "petPrototypeId": 1021300,
+      "NodeID": 33
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3f3913e4-2d1f-4d7a-9b6f-9d78fd9e51cb",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Revive_End",
+      "NodeID": 26
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerDeadEvent",
+      "UID": "97cf6edf-9b6f-492c-bafb-8f796f73cf8f",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "name": "hideModel",
+      "UID": "25afa8a9-f1ad-4be3-8f56-8ae0cccba874",
+      "target": "OWNER",
+      "NodeID": 20,
+      "maxHideTime": 4.8
+    },
+    "21": {
+      "key": "2",
+      "duration": 2,
+      "actionIds": [
+        20
+      ],
+      "NodeID": 21,
+      "UID": "45d7533a-19b0-4adf-adc7-e419235e5918",
+      "name": "addTimer"
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b4d90117-3fb4-47c4-9934-eff49a50c816",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Summon_Born01"
+    },
+    "13": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "e58cee59-2b89-446e-aaac-2b0a88a85053",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "24": {
+      "key": "5",
+      "duration": 0.167,
+      "actionIds": [
+        23
+      ],
+      "NodeID": 24,
+      "UID": "2bd04621-f990-4365-9638-e775f5528da7",
+      "name": "addTimer"
+    },
+    "14": {
+      "scale": 0.9,
+      "NodeID": 14,
+      "UID": "cccf9bf0-114b-46a3-b7c6-58e0e5567eec",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead01",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "name": "playEffectOnPosRot"
+    },
+    "10": {
+      "actionIds": [
+        13
+      ],
+      "conditionActionIds": [
+        34
+      ],
+      "UID": "4e16e9f7-bdb6-442a-9390-80ba0ee09ac2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "30": {
+      "key": "4",
+      "duration": 1.333,
+      "actionIds": [
+        29
+      ],
+      "NodeID": 30,
+      "UID": "bc6a56c0-bf5b-4583-91d9-582128c34c30",
+      "name": "addTimer"
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d15e4589-d327-4816-a3b5-32e7d6386acf",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Revive_Start",
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "c3072db0-a677-4d8e-ad81-b6cf87b753bd",
+      "name": "callClientAction",
+      "actionIds": [
+        14,
+        25,
+        27
+      ],
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "37f8fa29-bd73-480d-9873-5d5f2d072e28",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10213_Skill_Revive_Loop",
+      "NodeID": 27
+    },
+    "28": {
+      "name": "stopSoundStr",
+      "UID": "b346878c-e6bd-4e69-8d96-1609c5b7a53d",
+      "soundId": "SFX_Parmon_10213_Skill_Revive_Loop",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "412b44c7-8f0f-4005-bd8e-ee9dd74cfef6",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead02",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "a9b5940a-272b-468d-8078-3e5269731b01",
+      "target": "OWNER",
+      "name": "showModel",
+      "NodeID": 18
+    },
+    "32": {
+      "key": "6",
+      "duration": 2,
+      "actionIds": [
+        31
+      ],
+      "NodeID": 32,
+      "UID": "0e4d058a-803c-481a-9ba1-35384229c61c",
+      "name": "addTimer"
+    },
+    "19": {
+      "scale": 0.9,
+      "NodeID": 19,
+      "UID": "3d4e93d1-fda0-4c8a-8613-3e24dd0e37ae",
+      "effectId": "Eff_Parmon_10213_Skill_Revive_Dead02",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "isAbilityEndRemove": true,
+      "name": "playEffectOnPosRot"
+    },
+    "34": {
+      "UID": "2657f196-8a26-48da-a7d9-66e31d157935",
+      "conditionIds": [
+        33,
+        36
+      ],
+      "name": "conditionOr",
+      "NodeID": 34
+    },
+    "36": {
+      "templateId": 1021300,
+      "name": "checkTargetTemplateId",
+      "UID": "67ee23e2-7e52-4a2e-84c4-3de59eb6cc84",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11,
+    38
+  ]
+}

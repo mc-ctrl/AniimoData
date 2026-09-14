@@ -1,0 +1,97 @@
+{
+  "nodeMap": {
+    "21": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "825a9985-5f28-406b-b1d7-859fda0b6b8c",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "4": {
+      "UID": "9a3d559f-2587-42db-98df-4d382f0acc9a",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "de761238-9b31-40c5-8672-240c8c26659d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          21
+        ]
+      },
+      "NodeID": 6
+    },
+    "14": {
+      "UID": "2832ccb5-6df5-4fef-a14a-adf7b9f71790",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 14
+    },
+    "17": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104506,
+      "name": "createEntity",
+      "UID": "2fce89bc-30d2-4959-a051-56a813a8c6ed",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "OWNER",
+      "NodeID": 17,
+      "pos": "RANDOM_POINT"
+    },
+    "19": {
+      "UID": "2a4ba90f-6a8c-4902-a281-3c8f9bc10859",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          20,
+          17
+        ]
+      },
+      "NodeID": 19
+    },
+    "20": {
+      "targetPos": "TARGET",
+      "innerRadius": 1,
+      "name": "randomPoint",
+      "UID": "716267c1-8ad4-4b73-8a03-8d1f5b4ceef5",
+      "radius": 1.5,
+      "NodeID": 20
+    },
+    "16": {
+      "UID": "707c1f20-018d-411a-af62-a3e530b66043",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    }
+  },
+  "BPName": "ability_10450401",
+  "NodeID": 8,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    6,
+    16,
+    19
+  ],
+  "layer": "Base",
+  "length": 0.1
+}

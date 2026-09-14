@@ -1,0 +1,112 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2122202",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    7,
+    29
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 0.25,
+        "instant_dmg_rate_v": 0.25
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitCameraShakeId": 10021,
+        "hitFrameFreezeId": 10201,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 4,
+        "impulseId": 1000
+      },
+      "UID": "183667e9-2b02-4f51-8c09-ebafafef596f",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 5
+    },
+    "23": {
+      "name": "setSubModelVisible",
+      "UID": "f5ade260-e6cd-4ffb-b8fa-ba23e0ad6a6e",
+      "NodeID": 23,
+      "subModelName": "Eff_Parmon_10222_Skill_EleField_03",
+      "visible": false
+    },
+    "29": {
+      "calcInfo": {
+        "sp_cur": 3
+      },
+      "name": "calcResult",
+      "UID": "d80490d5-fe0b-4bb8-8dc9-860745e71ca8",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "27": {
+      "delay": 1,
+      "interval": 1,
+      "UID": "b8baa3a1-8b11-4cd4-88ab-87597fa2c62b",
+      "name": "buffStartThink",
+      "NodeID": 27
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "77c264c0-4d6e-4d07-8971-ee22d9333114",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.65
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        5
+      ]
+    },
+    "16": {
+      "name": "setSubModelVisible",
+      "UID": "afc2742a-0aa9-4132-b2c0-97786dcb6c59",
+      "NodeID": 16,
+      "subModelName": "Eff_Parmon_10222_Skill_EleField_03",
+      "visible": true
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    23
+  ],
+  "onBuffStartIds": [
+    27,
+    16
+  ]
+}

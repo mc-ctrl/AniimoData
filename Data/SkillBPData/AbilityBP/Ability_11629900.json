@@ -1,0 +1,48 @@
+{
+  "stopBurrowActOnTgtNodeId": 24,
+  "stopBurrowTimelineId": 11629900001,
+  "cutSceneDuration": 2.05,
+  "NodeID": 1,
+  "UID": "71eeed9b-f8e3-4347-acf3-a6c901c58bca",
+  "abilityParamId": 10800070,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11629900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2fc7fe5-f2ed-49ff-84a8-30877442f08d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Rock_Blunt",
+    "Eff_Parmon_10162_Skill_Ex_1",
+    "Eff_Parmon_10162_Skill_Ex_2_R",
+    "Eff_Parmon_10162_Skill_Ex_2_L",
+    "Eff_Parmon_10162_Skill_Ex_3",
+    "Eff_Parmon_10162_Skill_Ex_4",
+    "Eff_Parmon_10162_Skill_Ex_5",
+    "Eff_Parmon_10162_Skill_Ex_6"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 1.5,
+  "onlyHasActOnTargets": true,
+  "BPName": "ability_11629900",
+  "preloadCutScenes": [
+    "$Parmon_10162_Skill_Ex_Timeline.prefab"
+  ]
+}

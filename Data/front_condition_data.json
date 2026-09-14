@@ -1,0 +1,817 @@
+{
+  "1046101": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Skill_IceSurf01"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "Skill_IceSurf02"
+        ]
+      ]
+    ]
+  },
+  "1014301": {
+    "conditionExpression": [
+      1,
+      2
+    ],
+    "condition": [
+      [
+        "HAS_ENTITY_TAG",
+        [
+          "TE_Wild_DynamicInterruptPatrol"
+        ]
+      ],
+      [
+        "HAS_PET_BASE",
+        [
+          1014300
+        ]
+      ]
+    ]
+  },
+  "1047102": {
+    "conditionExpression": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Mimicry_Idle"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_SleepLoop"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "HideMimicry_Idle"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "SprintLoop"
+        ]
+      ]
+    ]
+  },
+  "1051201": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1051101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "SprintLoop"
+        ]
+      ]
+    ]
+  },
+  "1050301": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "HAVE_BUFF",
+        [
+          2150101
+        ]
+      ],
+      [
+        "HAVE_BUFF",
+        [
+          1145129
+        ]
+      ]
+    ]
+  },
+  "1026103": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1044101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_SleepLoop02"
+        ]
+      ]
+    ]
+  },
+  "1002202": {
+    "conditionExpression": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "ROTUE_ID",
+        [
+          72308724
+        ]
+      ],
+      [
+        "ROTUE_ID",
+        [
+          65982030
+        ]
+      ],
+      [
+        "ROTUE_ID",
+        [
+          72308718
+        ]
+      ],
+      [
+        "ROTUE_ID",
+        [
+          72305212
+        ]
+      ]
+    ]
+  },
+  "1050101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_10501_RageChasePuppet"
+        ]
+      ]
+    ]
+  },
+  "1017201": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_LoveLoop"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_Love"
+        ]
+      ]
+    ]
+  },
+  "1047402": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "SprintLoop_Sp"
+        ]
+      ]
+    ]
+  },
+  "1002403": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_GroupBehav_1v1Argue"
+        ]
+      ]
+    ]
+  },
+  "1003302": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1045301": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "SprintLoop"
+        ]
+      ]
+    ]
+  },
+  "1005102": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_PER_Chase_ToPuppet"
+        ]
+      ],
+      [
+        "ROTUE_ID",
+        [
+          50670328
+        ]
+      ]
+    ]
+  },
+  "1028501": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_SleepLoop"
+        ]
+      ]
+    ]
+  },
+  "1005501": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1012201": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_SleepLoop"
+        ]
+      ]
+    ]
+  },
+  "1017101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_Digging"
+        ]
+      ]
+    ]
+  },
+  "1016102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_10161_MakeLove_Love"
+        ]
+      ]
+    ]
+  },
+  "1017103": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_10171_MakeLove_Love"
+        ]
+      ]
+    ]
+  },
+  "1018402": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "ROTUE_ID",
+        [
+          71150426
+        ]
+      ]
+    ]
+  },
+  "1019102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "EnvBehav_LieLoop"
+        ]
+      ]
+    ]
+  },
+  "1019201": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_SleepLoop"
+        ]
+      ]
+    ]
+  },
+  "1019202": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "ROTUE_ID",
+        [
+          72368105
+        ]
+      ]
+    ]
+  },
+  "1020102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Mimicry_Idle"
+        ]
+      ]
+    ]
+  },
+  "1021301": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1026302": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_SleepLoop"
+        ]
+      ]
+    ]
+  },
+  "1028101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_EatLoop"
+        ]
+      ]
+    ]
+  },
+  "1028102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_GroupBehav_10281Sneak"
+        ]
+      ]
+    ]
+  },
+  "1035101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "EnvBehav_NectarSucking"
+        ]
+      ]
+    ]
+  },
+  "1035202": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial02"
+        ]
+      ]
+    ]
+  },
+  "1043101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_GroupBehav_10431Carry"
+        ]
+      ]
+    ]
+  },
+  "1046102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_LoveLoop"
+        ]
+      ]
+    ]
+  },
+  "1048101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1048301": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1016301": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1050102": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "HAVE_BUFF",
+        [
+          1145114
+        ]
+      ],
+      [
+        "HAVE_BUFF",
+        [
+          1145128
+        ]
+      ]
+    ]
+  },
+  "1038101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1038302": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "TIME_STATE",
+        [
+          4
+        ]
+      ]
+    ]
+  },
+  "1038301": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1042101": {
+    "conditionExpression": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Skill_GhostDance01"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "Skill_GhostDance02"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "Skill_GhostDance03"
+        ]
+      ],
+      [
+        "PLAY_ANIMATION",
+        [
+          "Skill_GhostStep"
+        ]
+      ]
+    ]
+  },
+  "1021201": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial"
+        ]
+      ]
+    ]
+  },
+  "1029102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "IdleSpecial02"
+        ]
+      ]
+    ]
+  },
+  "1014102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_10141_LightUp"
+        ]
+      ]
+    ]
+  },
+  "1004103": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_10041_SwimMimicryIdleSp"
+        ]
+      ]
+    ]
+  },
+  "1016101": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "StunLoop"
+        ]
+      ]
+    ]
+  },
+  "1005301": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Env_FightDuel"
+        ]
+      ]
+    ]
+  },
+  "1005103": {
+    "conditionExpression": [
+      1,
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_PER_Leave_ToPuppet"
+        ]
+      ],
+      [
+        "ROTUE_ID",
+        [
+          50670328
+        ]
+      ]
+    ]
+  },
+  "1022102": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Skill_Leave"
+        ]
+      ]
+    ]
+  },
+  "1002302": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "PLAY_ANIMATION",
+        [
+          "Behav_SleepLoop"
+        ]
+      ]
+    ]
+  },
+  "1001104": {
+    "conditionExpression": [
+      1
+    ],
+    "condition": [
+      [
+        "BEHAVIOUR_ID",
+        [
+          "BP_Wild_10011_EatStarFruit"
+        ]
+      ]
+    ]
+  }
+}

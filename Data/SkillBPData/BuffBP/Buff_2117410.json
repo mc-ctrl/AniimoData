@@ -1,0 +1,72 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117410",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    7
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "1514a939-29cf-4cef-8607-841e38c8b4c4",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "4": {
+      "NodeID": 4,
+      "UID": "67800b41-28a0-44ed-91ab-14386b0f4ce0",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": false
+    },
+    "9": {
+      "name": "isInCombat",
+      "UID": "b14aef8b-2032-4221-a335-829bd4a1d4f6",
+      "target": "OWNER",
+      "NodeID": 9,
+      "not": false
+    },
+    "6": {
+      "buffId": 2117410,
+      "name": "removeBuff",
+      "UID": "2aed868c-2799-46b1-9a1c-ed6a00688b2e",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "7": {
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "49f1f57b-058e-47a7-8e23-4f2d18e32cb4",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        6
+      ]
+    },
+    "2": {
+      "NodeID": 2,
+      "UID": "51971363-1bbf-46cb-b83e-4be2fa233338",
+      "name": "lerpProperty",
+      "lerpTime": 1.4,
+      "enable": true
+    }
+  },
+  "calcInfo": {
+    "taken_dmg_inc_rate_v": 0.2
+  },
+  "onBuffDestroyIds": [
+    4
+  ],
+  "onBuffStartIds": [
+    2,
+    5
+  ]
+}

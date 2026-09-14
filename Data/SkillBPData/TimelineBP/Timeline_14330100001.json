@@ -1,0 +1,326 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "82f34d7a-cc54-473b-9e34-1f728e0176e9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          16,
+          112
+        ]
+      },
+      "NodeID": 5
+    },
+    "39": {
+      "timelineId": 14330100003,
+      "name": "setCombatActionTimeline",
+      "UID": "530a8926-c876-4988-a635-57de5ff40ebc",
+      "target": "CASTER",
+      "NodeID": 39
+    },
+    "40": {
+      "timelineId": 14330100003,
+      "name": "stopActionTimeline",
+      "UID": "20730a81-87fd-4c55-bace-f4e4718ac3e5",
+      "layer": "Parallel",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "114": {
+      "name": "checkInControl",
+      "NodeID": 114
+    },
+    "98": {
+      "actionIds": [
+        97
+      ],
+      "conditionActionIds": [
+        115
+      ],
+      "UID": "e5c944e5-b386-4b25-b5d2-b1e022d13fe1",
+      "name": "doActionsByConditions",
+      "NodeID": 98
+    },
+    "115": {
+      "name": "checkInControl",
+      "NodeID": 115
+    },
+    "99": {
+      "action": {
+        "actionIds": [
+          98
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 99,
+      "UID": "a2e80bfc-73f1-4d80-a69d-5cf8be4a62c8"
+    },
+    "11": {
+      "UID": "4cc48593-b344-41a1-96cf-482854a9036e",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "tags": 1,
+      "name": "setEffectOpacityByPerformanceTag",
+      "UID": "d18584ed-196c-4624-94b1-8f845b9f3b1d",
+      "opacity": 0.5,
+      "NodeID": 20
+    },
+    "21": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 21,
+      "UID": "b00ab90f-dc82-46c9-a868-656045c6aa84",
+      "aimAnim": "Skill_TurretForm_Loop",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "17c72111-a06e-4901-9d10-aef3f11a450f",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Skill_TurretForm_Start"
+    },
+    "23": {
+      "UID": "ef5400eb-1f0c-447a-9d7d-9a2ea374f779",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          24,
+          21,
+          80,
+          30
+        ]
+      },
+      "NodeID": 23
+    },
+    "24": {
+      "tags": 1,
+      "name": "setEffectOpacityByPerformanceTag",
+      "UID": "75fd8679-4a14-415e-8936-0331ede90cea",
+      "opacity": -1,
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "0ee3b7b8-2bd5-48b5-b669-d4e482261f50",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 14
+    },
+    "112": {
+      "conditionActionIds": [
+        114
+      ],
+      "UID": "d0cda14b-418d-4f19-b9c3-4e8d7a454662",
+      "name": "doActionsByConditions",
+      "NodeID": 112,
+      "elseActionIds": [
+        111
+      ]
+    },
+    "15": {
+      "UID": "1f96ae63-e55f-4c13-9800-f6c9bbd1bcf4",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 15
+    },
+    "12": {
+      "UID": "d8f5e8d0-e59e-4088-a858-c773d8a0afbe",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "896929a2-5441-4102-8d96-61a2346df7c6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10433_Skill_TurretForm_Enter",
+      "NodeID": 16
+    },
+    "97": {
+      "startPosOffset": [
+        -0.4,
+        1.2,
+        0.3
+      ],
+      "duration": 5,
+      "NodeID": 97,
+      "UID": "9289aeb8-b26c-47b1-b74b-2958c4a738a2",
+      "startNoGravityTime": 0,
+      "gravityRatio": 1,
+      "rotationOffset": [
+        20,
+        0,
+        0
+      ],
+      "name": "enableSupportAimEffect",
+      "acceleration": 0,
+      "damageIndicator": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          2,
+          1,
+          1
+        ],
+        "shapeKind": "Circle3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "enable": true,
+      "moveSpeed": 18
+    },
+    "17": {
+      "NodeID": 17,
+      "UID": "e06a670b-c16c-4dfa-ae7e-1eed4c50802e",
+      "blendTime": 0.3,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1,
+      "cameraPivotOffsetXOverride": -1,
+      "cameraPivotOffsetZOverride": -0.3,
+      "cameraYawOffset": 0,
+      "maxPitch": 20,
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "name": "setIsInAim",
+      "aimAnim": "Skill_TurretForm_Loop",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": false,
+      "minPitch": -20,
+      "showAimUI": false,
+      "val": true,
+      "targetAimLength": 1
+    },
+    "93": {
+      "UID": "462aedf7-bf2e-44bc-a408-55c547066630",
+      "name": "notifyFollowPhantomEvent",
+      "eventName": "TurretIn",
+      "NodeID": 93
+    },
+    "30": {
+      "timelineId": 14330100002,
+      "name": "jumpToNextTimeline",
+      "UID": "9c436814-0327-44fb-aed8-6d2e9c29635e",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "notShowCountDown": false,
+      "actionIds": [
+        40,
+        30
+      ],
+      "aiTriggerTime": 999,
+      "UID": "9ac41e38-03a3-4c0b-b0a2-d28d3cfd70ea",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 32
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          93,
+          20,
+          17,
+          39,
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 19,
+      "UID": "d23e9c40-f610-4849-9ee0-338ce0840bad"
+    },
+    "111": {
+      "time": 999,
+      "rotateSpeed": 60,
+      "name": "rotateTo",
+      "UID": "c93cc05e-aa25-4ba3-8adf-29815192cc96",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 111
+    },
+    "80": {
+      "startPosOffset": [
+        0,
+        0,
+        0
+      ],
+      "duration": 0,
+      "name": "enableSupportAimEffect",
+      "UID": "163b5f84-a2bb-4f59-b208-1fcbf8db5fd7",
+      "startNoGravityTime": 0,
+      "gravityRatio": 0,
+      "rotationOffset": [
+        0,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 80,
+      "enable": false,
+      "moveSpeed": 0
+    }
+  },
+  "BPName": "ability_14330100",
+  "NodeID": 7,
+  "UID": "13ae237c-cea1-49af-9637-40a6dac2894e",
+  "eventIds": [
+    12,
+    15,
+    5,
+    99,
+    19,
+    23
+  ],
+  "layer": "Base",
+  "length": 9999
+}

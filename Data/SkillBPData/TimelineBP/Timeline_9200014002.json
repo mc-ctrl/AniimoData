@@ -1,0 +1,153 @@
+{
+  "nodeMap": {
+    "52": {
+      "name": "stopEffectStr",
+      "UID": "7bba18e7-c5cd-4840-a037-7e94f6a7f15b",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeLoop",
+      "target": "OWNER",
+      "NodeID": 52
+    },
+    "38": {
+      "UID": "e139b12d-c965-4088-989a-0e6c240901ee",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "NodeID": 38
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.65,
+      "NodeID": 55,
+      "UID": "14520751-61ed-4d6e-98f9-c7d8f86d6f74"
+    },
+    "54": {
+      "actionIds": [
+        52,
+        66
+      ],
+      "conditionActionIds": [
+        72
+      ],
+      "UID": "e6ad292b-eabc-49e4-98de-2b907785abc0",
+      "name": "doActionsByConditions",
+      "NodeID": 54
+    },
+    "42": {
+      "idleEndAnimId": "Flute_Skill_Cure_StandEnd",
+      "moveAnimId": "Flute_Skill_Cure_WalkLoop",
+      "moveEndAnimId": "Flute_Skill_Cure_WalkEnd",
+      "UID": "82d00ab2-8294-4399-a85f-a5d6cb486505",
+      "name": "enableSkillMotionAnimState",
+      "abilityEndExit": false,
+      "NodeID": 42,
+      "enable": false,
+      "idleAnimId": "Flute_Skill_Cure_StandLoop"
+    },
+    "43": {
+      "UID": "8504aff6-ef46-4a35-a27f-a15c7139f945",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "NodeID": 43
+    },
+    "73": {
+      "name": "stopEffectStr",
+      "UID": "dbfe73c5-0ebe-4894-be41-11bb706563f6",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeLoop",
+      "target": "OWNER",
+      "NodeID": 73
+    },
+    "77": {
+      "gender": 1,
+      "name": "isActorGender",
+      "UID": "1c8f36b4-43dd-4688-9b28-14f02e258cf1",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "66": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "767f07b9-2fbb-4d97-b997-156106640c12",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeOut",
+      "speed": 1,
+      "NodeID": 66
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "20301c5e-bcfc-4248-9fd1-f43ca8ab1d1f",
+      "effectId": "Eff_Equip_Avatar_Flute_FadeOut",
+      "speed": 1,
+      "NodeID": 76
+    },
+    "75": {
+      "actionIds": [
+        73,
+        76
+      ],
+      "conditionActionIds": [
+        77
+      ],
+      "UID": "8daab89a-ac6b-4637-8f77-429d869d0675",
+      "name": "doActionsByConditions",
+      "NodeID": 75
+    },
+    "72": {
+      "gender": 2,
+      "name": "isActorGender",
+      "UID": "c338274b-c274-4eea-8f70-4ebafb3ac9fc",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "36": {
+      "name": "changeControlState",
+      "UID": "06734e3a-c680-4dcf-b5dc-cbf4fe252665",
+      "target": "OWNER",
+      "controlState": "SKILLEND",
+      "NodeID": 36
+    },
+    "10": {
+      "UID": "88919c4d-1d33-4103-ba8a-e055cf7fb727",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 10
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          10,
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.0166,
+      "NodeID": 12,
+      "UID": "47a31fb4-f506-426b-b3e8-4aab7d8b8af5"
+    }
+  },
+  "BPName": "ability_9200014",
+  "NodeID": 14,
+  "UID": "e6613c01-538a-4dab-9a47-e56e340ed9ec",
+  "eventIds": [
+    38,
+    43,
+    12,
+    55
+  ],
+  "layer": "Base",
+  "length": 2.46
+}

@@ -1,0 +1,106 @@
+{
+  "203": {
+    "shareType": 1,
+    "socialMedia": [
+      102,
+      103,
+      104
+    ],
+    "platform": 2,
+    "area": 3,
+    "stayTime": 5,
+    "cdTime": 2
+  },
+  "204": {
+    "shareType": 1,
+    "socialMedia": [
+      102,
+      103,
+      104
+    ],
+    "platform": 2,
+    "area": 4,
+    "stayTime": 5,
+    "cdTime": 2
+  },
+  "202": {
+    "shareType": 1,
+    "socialMedia": [
+      102,
+      103,
+      104
+    ],
+    "platform": 2,
+    "area": 2,
+    "stayTime": 5,
+    "cdTime": 2
+  },
+  "104": {
+    "shareType": 1,
+    "socialMedia": [
+      102,
+      103,
+      104
+    ],
+    "platform": 1,
+    "area": 4,
+    "stayTime": 5,
+    "cdTime": 2
+  },
+  "101": {
+    "shareType": 1,
+    "socialMedia": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "platform": 1,
+    "area": 1,
+    "stayTime": 5,
+    "cdTime": 2
+  },
+  "102": {
+    "shareType": 1,
+    "socialMedia": [
+      102,
+      103,
+      104
+    ],
+    "platform": 1,
+    "area": 2,
+    "stayTime": 5,
+    "cdTime": 2
+  },
+  "103": {
+    "shareType": 1,
+    "socialMedia": [
+      102,
+      103,
+      104
+    ],
+    "platform": 1,
+    "area": 3,
+    "stayTime": 5,
+    "cdTime": 2
+  },
+  "201": {
+    "shareType": 1,
+    "socialMedia": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "platform": 2,
+    "area": 1,
+    "stayTime": 5,
+    "cdTime": 2
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "1002100": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10271,
+    "propId": 1002100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 9,
+      "5": 12,
+      "1": 10,
+      "2": 9
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1003100": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10371,
+    "propId": 1003100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1003100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 9,
+      "6": 9,
+      "5": 9,
+      "1": 8,
+      "2": 15
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1004100": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10471,
+    "propId": 1004100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1004100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1008200": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10871,
+    "propId": 1008200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1008200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1001100": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10171,
+    "propId": 1001100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1001100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 9,
+      "6": 15,
+      "5": 9,
+      "1": 8,
+      "2": 9
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1003200": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10371,
+    "propId": 1003200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1003200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 9,
+      "6": 9,
+      "5": 9,
+      "1": 8,
+      "2": 15
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1001200": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10171,
+    "propId": 1001200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1001200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 9,
+      "6": 15,
+      "5": 9,
+      "1": 8,
+      "2": 9
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1004200": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10471,
+    "propId": 1004200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1004200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1004300": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10471,
+    "propId": 1004300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1004300,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1005100": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10571,
+    "propId": 1005100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1005100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 9,
+      "5": 10,
+      "1": 10,
+      "2": 11
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1005200": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10571,
+    "propId": 1005200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1005200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 9,
+      "5": 10,
+      "1": 10,
+      "2": 11
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1007100": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10771,
+    "propId": 1007100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1007100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1005300": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10571,
+    "propId": 1005300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1005300,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 9,
+      "5": 10,
+      "1": 10,
+      "2": 11
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1008100": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10871,
+    "propId": 1008100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1008100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1002200": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10271,
+    "propId": 1002200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 12,
+      "6": 9,
+      "5": 10,
+      "1": 10,
+      "2": 9
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1008300": {
+    "DefaultGen": 2,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10871,
+    "propId": 1008300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1008300,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1012200": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 11271,
+    "propId": 1012200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1012200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 9,
+      "5": 10,
+      "1": 12,
+      "2": 9
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1016100": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 11271,
+    "propId": 1016100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1016100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1017100": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 11271,
+    "propId": 1017100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1017100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1018100": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 11271,
+    "propId": 1018100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1018100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1019100": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 11271,
+    "propId": 1019100,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1019100,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1002300": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10271,
+    "propId": 1002300,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1002300,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 11,
+      "6": 9,
+      "5": 11,
+      "1": 10,
+      "2": 9
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  "1007200": {
+    "DefaultGen": 1,
+    "DefaultLevel": 30,
+    "DefaultNature": 1,
+    "defaultFeature": 10771,
+    "propId": 1007200,
+    "useTemplateFeatures": 1,
+    "useTemplateSkills": 1,
+    "templateBaseId": 1007200,
+    "strengthenPoint": 50,
+    "strengthenPointMap": {
+      "3": 10,
+      "6": 10,
+      "5": 10,
+      "1": 10,
+      "2": 10
+    },
+    "talentPointMap": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ]
+  }
+}

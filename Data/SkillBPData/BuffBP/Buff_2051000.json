@@ -1,0 +1,116 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "b1006363-5b88-49a4-9d85-ff92bdb0471c",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "c491d05e-bc28-4e3a-8dbd-30091a8cc872",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        4,
+        12
+      ],
+      "name": "registerGroupEvent",
+      "UID": "07fbbd6e-e894-4eed-8304-49844bb7a17e",
+      "NodeID": 6
+    },
+    "10": {
+      "target": "CURPET",
+      "duration": {
+        "calcId": 2051000,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 9,
+        "UID": "b2dfe0a0-4b3d-4690-86e0-cd5ed3205798",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 20510000,
+      "NodeID": 10,
+      "UID": "53b9fe3c-473b-4dfa-9529-8bb064fb3b6c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "calcId": 2051000,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 7,
+      "UID": "8c225692-902a-4763-ab0b-e291182a1e03",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "key": "2051000cd",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 8,
+      "UID": "28924448-2b92-4ee5-971c-65577fefec09",
+      "cd": {
+        "calcId": 2051000,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 7,
+        "UID": "8c225692-902a-4763-ab0b-e291182a1e03",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "9": {
+      "calcId": 2051000,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "b2dfe0a0-4b3d-4690-86e0-cd5ed3205798",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "key": "2051000cd",
+      "name": "setCacheVal",
+      "UID": "ec63366e-ced6-4d87-ad83-6a2f23228ab4",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 11
+    },
+    "12": {
+      "eventName": "RogueRestart",
+      "NodeID": 12,
+      "UID": "0d955a12-185f-48d3-909a-558644f2933b",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        11
+      ]
+    },
+    "2": {
+      "UID": "e6ebb410-55e7-468c-9a1a-604676c8f90b",
+      "name": "isGoingBeKilled",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2051000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

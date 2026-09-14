@@ -1,0 +1,28 @@
+{
+  "shortDesc": "",
+  "searchTargetRangeRadius": 5,
+  "BPName": "ability_10450407",
+  "name": "治愈花丛",
+  "UID": "cc09a6b4-771c-4977-b797-44e980976a67",
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600304,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 0.5,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10450407001,
+      "name": "setCombatActionTimeline",
+      "UID": "aad6f3ee-733f-400b-a9a6-1e165c188a50",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

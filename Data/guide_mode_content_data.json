@@ -1,0 +1,65 @@
+{
+  "1003": {
+    "text": 1584615191,
+    "pic": "$UI_Img_Guide_1003.png",
+    "textDec": 1172279549,
+    "functionDefaultValue": [
+      [
+        29,
+        0
+      ]
+    ]
+  },
+  "1002": {
+    "text": 1580981107,
+    "pic": "$UI_Img_Guide_1001.png",
+    "textDec": 1264059997,
+    "functionDefaultValue": [
+      [
+        29,
+        2
+      ]
+    ]
+  },
+  "1001": {
+    "text": 1227275258,
+    "pic": "$UI_Img_Guide_1002.png",
+    "textDec": 2115219821,
+    "functionDefaultValue": [
+      [
+        29,
+        1
+      ]
+    ]
+  },
+  "1011": {
+    "text": 1467154526,
+    "textDec": 1418874150,
+    "video": "$Tutorial_ModeSelect_AttackLockTarget.mp4",
+    "functionDefaultValue": [
+      [
+        2,
+        1
+      ],
+      [
+        22,
+        0
+      ]
+    ]
+  },
+  "1012": {
+    "text": 1176319718,
+    "textDec": 1848104668,
+    "video": "$Tutorial_ModeSelect_ManualLockTarget.mp4",
+    "functionDefaultValue": [
+      [
+        2,
+        0
+      ],
+      [
+        22,
+        1
+      ]
+    ]
+  }
+}

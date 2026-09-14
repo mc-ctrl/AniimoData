@@ -1,0 +1,96 @@
+{
+  "BPName": "ability_15030300",
+  "NodeID": 1,
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "abilityParamId": 10800440,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "actionIds": [
+        23
+      ],
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "c3933404-07ec-4b9a-859b-dad2875fd57b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "23": {
+      "timelineId": 15030301001,
+      "name": "setCombatActionTimeline",
+      "UID": "7bf550a6-172e-4582-843e-3a36dc465806",
+      "target": "CASTER",
+      "NodeID": 23
+    },
+    "54": {
+      "rValue": 100,
+      "name": "equal",
+      "UID": "bc5d0789-5611-44e5-8160-562776d7df5e",
+      "NodeID": 54,
+      "lValue": {
+        "templateId": 9150103,
+        "name": "getBuffLayer",
+        "UID": "fb44b7bb-3421-4d62-976b-35724eb03652",
+        "target": "OWNER",
+        "NodeID": 53
+      }
+    },
+    "32": {
+      "UID": "71fcf0d0-38f2-4cc5-bc1e-2f0a669f244d",
+      "conditionIds": [
+        31,
+        33,
+        54
+      ],
+      "name": "conditionOr",
+      "NodeID": 32
+    },
+    "33": {
+      "buffId": 2150102,
+      "name": "hasBuff",
+      "UID": "5afe6c0f-1573-4fea-9dfe-b0bf7ad93e47",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "7": {
+      "timelineId": 15030300001,
+      "name": "setCombatActionTimeline",
+      "UID": "6cab6386-0fac-4f33-805a-337f22311c1a",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "31": {
+      "buffId": 2150101,
+      "name": "hasBuff",
+      "UID": "ded12f10-1030-45e3-8bb4-c953129e269a",
+      "target": "OWNER",
+      "NodeID": 31
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CriticalHit"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10503_Skill_CriticalHit_01",
+    "Eff_Parmon_10503_Skill_CriticalHit",
+    "Eff_Parmon_10503_Skill_CriticalHit_RHand",
+    "Eff_Hit_Rock_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

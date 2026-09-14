@@ -1,0 +1,368 @@
+{
+  "3": {
+    "bossUltimateSkillVideo": "$Transform_Heal_3.mp4",
+    "buffSeriesBg": "$UI_Rogue_Equipment_Heal.png",
+    "transformBuffLvUpIcon": "$UI_Rogue_Boss_Avatar_05.png",
+    "transformBuffUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ]
+    },
+    "transformDesc": 2086787670,
+    "transformIcon": "$UI_Img_ResearchBook_Enter_10045.png",
+    "transformName": 1531368587,
+    "transformSkill": 9400003,
+    "transformSkillUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ]
+    },
+    "transformTemplateID": 100450000,
+    "transformType": 2075491392,
+    "transformVideo": "$Transform_Heal_4.mp4",
+    "transformVerticalPainting": "$UI_Rogue_Boss_illustration_05.png",
+    "bossSkill1Id": 10600326,
+    "bossSkill1Video": "$Transform_Heal_1.mp4",
+    "bossSkill2Id": 10300042,
+    "bossSkill2Video": "$Transform_Heal_2.mp4",
+    "bossUltimateSkillId": 10600307
+  },
+  "4": {
+    "bossUltimateSkillVideo": "$Transform_Defense_3.mp4",
+    "buffSeriesBg": "$UI_Rogue_Equipment_Defense.png",
+    "transformBuffLvUpIcon": "$UI_Rogue_Boss_Avatar_04.png",
+    "transformBuffUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ]
+    },
+    "transformDesc": 1777153181,
+    "transformIcon": "$UI_Img_ResearchBook_Enter_10023.png",
+    "transformName": 1214637181,
+    "transformSkill": 9400004,
+    "transformSkillUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ]
+    },
+    "transformTemplateID": 100230000,
+    "transformType": 1674027240,
+    "transformVideo": "$Transform_Defense_4.mp4",
+    "transformVerticalPainting": "$UI_Rogue_Boss_illustration_04.png",
+    "transformType2": 1556879766,
+    "bossSkill1Id": 10500271,
+    "bossSkill1Video": "$Transform_Defense_1.mp4",
+    "bossSkill2Id": 10700221,
+    "bossSkill2Video": "$Transform_Defense_2.mp4",
+    "bossUltimateSkillId": 10700251
+  },
+  "6": {
+    "bossUltimateSkillVideo": "$Transform_Money_3.mp4",
+    "buffSeriesBg": "$UI_Rogue_Equipment_Money.png",
+    "transformBuffLvUpIcon": "$UI_Rogue_Boss_Avatar_01.png",
+    "transformBuffUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.8,
+        1.8,
+        1.8
+      ]
+    },
+    "transformDesc": 1112956454,
+    "transformIcon": "$UI_Img_ResearchBook_Enter_10012.png",
+    "transformName": 1292261403,
+    "transformSkill": 9400006,
+    "transformSkillUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.8,
+        1.8,
+        1.8
+      ]
+    },
+    "transformTemplateID": 100120000,
+    "transformType": 1137946127,
+    "transformVideo": "$Transform_Money_4.mp4",
+    "transformVerticalPainting": "$UI_Rogue_Boss_illustration_01.png",
+    "bossSkill1Id": 11100034,
+    "bossSkill1Video": "$Transform_Money_1.mp4",
+    "bossSkill2Id": 11100025,
+    "bossSkill2Video": "$Transform_Money_2.mp4",
+    "bossUltimateSkillId": 11100064
+  },
+  "5": {
+    "bossUltimateSkillVideo": "$Transform_Berserker_3.mp4",
+    "buffSeriesBg": "$UI_Rogue_Equipment_Chaos.png",
+    "transformBuffLvUpIcon": "$UI_Rogue_Boss_Avatar_03.png",
+    "transformBuffUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.4,
+        1.4,
+        1.4
+      ]
+    },
+    "transformDesc": 2083275847,
+    "transformIcon": "$UI_Img_ResearchBook_Enter_10053.png",
+    "transformName": 2098576340,
+    "transformSkill": 9400005,
+    "transformSkillUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.4,
+        1.4,
+        1.4
+      ]
+    },
+    "transformTemplateID": 100530000,
+    "transformType": 1926511237,
+    "transformVideo": "$Transform_Berserker_4.mp4",
+    "transformVerticalPainting": "$UI_Rogue_Boss_illustration_03.png",
+    "bossSkill1Id": 10500124,
+    "bossSkill1Video": "$Transform_Berserker_1.mp4",
+    "bossSkill2Id": 10500123,
+    "bossSkill2Video": "$Transform_Berserker_2.mp4",
+    "bossUltimateSkillId": 10500104
+  },
+  "0": {
+    "bossUltimateSkillVideo": "$Transform_Skill_3.mp4",
+    "buffSeriesBg": "$UI_Rogue_Equipment_Skill.png",
+    "transformBuffLvUpIcon": "$UI_Rogue_Boss_Avatar_07.png",
+    "transformBuffUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "transformDesc": 1870801742,
+    "transformIcon": "$UI_Img_ResearchBook_Enter_10212.png",
+    "transformName": 2139306813,
+    "transformSkill": 9400000,
+    "transformSkillUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "transformTemplateID": 102120000,
+    "transformType": 1267197011,
+    "transformVideo": "$Transform_Skill_4.mp4",
+    "transformVerticalPainting": "$UI_Rogue_Boss_illustration_07.png",
+    "bossSkill1Id": 10600514,
+    "bossSkill1Video": "$Transform_Skill_1.mp4",
+    "bossSkill2Id": 10600515,
+    "bossSkill2Video": "$Transform_Skill_2.mp4",
+    "bossUltimateSkillId": 10600142
+  },
+  "1": {
+    "bossUltimateSkillVideo": "$Transform_Ultimate_3.mp4",
+    "buffSeriesBg": "$UI_Rogue_Equipment_Ultimate.png",
+    "transformBuffLvUpIcon": "$UI_Rogue_Boss_Avatar_06.png",
+    "transformBuffUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "transformDesc": 1382937959,
+    "transformIcon": "$UI_Img_ResearchBook_Enter_10222.png",
+    "transformName": 1802910963,
+    "transformSkill": 9400001,
+    "transformSkillUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "transformTemplateID": 102220000,
+    "transformType": 1329994206,
+    "transformVideo": "$Transform_Ultimate_4.mp4",
+    "transformVerticalPainting": "$UI_Rogue_Boss_illustration_06.png",
+    "bossSkill1Id": 10400310,
+    "bossSkill1Video": "$Transform_Ultimate_1.mp4",
+    "bossSkill2Id": 10400430,
+    "bossSkill2Video": "$Transform_Ultimate_2.mp4",
+    "bossUltimateSkillId": 10400268
+  },
+  "2": {
+    "bossUltimateSkillVideo": "$Transform_Shield_3.mp4",
+    "buffSeriesBg": "$UI_Rogue_Equipment_Shield.png",
+    "transformBuffLvUpIcon": "$UI_Rogue_Boss_Avatar_02.png",
+    "transformBuffUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "transformDesc": 1962787580,
+    "transformIcon": "$UI_Img_ResearchBook_Enter_10187.png",
+    "transformName": 1490038269,
+    "transformSkill": 9400002,
+    "transformSkillUIBossPos": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "rot": [
+        0,
+        -17.5,
+        0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "transformTemplateID": 101870000,
+    "transformType": 1302801833,
+    "transformVideo": "$Transform_Shield_4.mp4",
+    "transformVerticalPainting": "$UI_Rogue_Boss_illustration_02.png",
+    "transformType2": 1507961983,
+    "bossSkill1Id": 10900048,
+    "bossSkill1Video": "$Transform_Shield_1.mp4",
+    "bossSkill2Id": 10900049,
+    "bossSkill2Video": "$Transform_Shield_2.mp4",
+    "bossUltimateSkillId": 10900166
+  }
+}

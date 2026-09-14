@@ -1,0 +1,16 @@
+[
+  {
+    "name": "呼朋引伴",
+    "bubble": "$call.prefab"
+  },
+  {
+    "name": "蹦跳",
+    "bubble": "$ctyHard.prefab"
+  },
+  {
+    "name": "趴下"
+  },
+  {
+    "name": "舔毛"
+  }
+]

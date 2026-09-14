@@ -1,0 +1,203 @@
+{
+  "41701052": {
+    "owner": "路司机",
+    "position": [
+      -13.81,
+      6.37,
+      -125.43
+    ],
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 43163779,
+    "levelItems": {
+      "43509582": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_3",
+        "position": [
+          -24.27,
+          6.45,
+          -84.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43509582,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "43163510": {
+        "id": 43163510,
+        "scale": [
+          2.5,
+          10,
+          2
+        ],
+        "EditorName": "P_Item_Trigger_SB",
+        "configId": 3,
+        "position": [
+          -13.73,
+          6.45,
+          -109
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "majorCompId": 0,
+        "isActive": true
+      },
+      "43163511": {
+        "id": 43163511,
+        "scale": [
+          10,
+          10,
+          10
+        ],
+        "EditorName": "P_Item_Trigger_SB_2",
+        "configId": 3,
+        "position": [
+          -13.73,
+          6.45,
+          -118
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "majorCompId": 0,
+        "isActive": true
+      },
+      "43163515": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -6.63,
+          6.45,
+          -97.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43163515,
+        "configId": 5,
+        "defaultValue": {
+          "state": 0
+        },
+        "isActive": true
+      },
+      "43436712": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_1",
+        "position": [
+          -6.63,
+          6.45,
+          -98.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43436712,
+        "configId": 5,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "isActive": true
+      },
+      "43508041": {
+        "id": 43508041,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Tutorial_EndPoint",
+        "configId": 73,
+        "position": [
+          -12.97,
+          6.52,
+          -78.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "majorCompId": 0,
+        "isActive": true
+      },
+      "43508064": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container_2",
+        "position": [
+          -24.27,
+          6.45,
+          -84.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 43508064,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "",
+    "spawners": [
+      43163239,
+      43163241,
+      43163243
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8101/Sandbox_41701052_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 128,
+    "enableFinishMark": false,
+    "id": 41701052,
+    "chunk": 1018849
+  }
+}

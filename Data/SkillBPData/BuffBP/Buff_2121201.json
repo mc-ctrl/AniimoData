@@ -1,0 +1,102 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "6de1d8d5-3a5f-46f0-8017-95c97014a0d7",
+      "target": {
+        "key": "Bulbly_01",
+        "name": "getServerCacheVal",
+        "UID": "992c3809-56d1-4711-a2d2-cfe1138992d2",
+        "target": "OWNER",
+        "NodeID": 2
+      },
+      "NodeID": 3
+    },
+    "9": {
+      "UID": "cb381430-2666-4c10-856d-4f9ccff70b24",
+      "actorId": {
+        "key": "Bulbly_03",
+        "name": "getServerCacheVal",
+        "UID": "17bccaeb-d0cf-4025-aa79-dbbad549dbe5",
+        "target": "OWNER",
+        "NodeID": 7
+      },
+      "name": "destroyEntity",
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "a323090d-3ee5-4060-89be-87957e07c9cb",
+      "actorId": {
+        "key": "Bulbly_01",
+        "name": "getServerCacheVal",
+        "UID": "992c3809-56d1-4711-a2d2-cfe1138992d2",
+        "target": "OWNER",
+        "NodeID": 2
+      },
+      "name": "destroyEntity",
+      "NodeID": 6
+    },
+    "8": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "63f1e114-ea7d-4a2a-b4d8-27ef49f54fe9",
+      "target": {
+        "key": "Bulbly_03",
+        "name": "getServerCacheVal",
+        "UID": "17bccaeb-d0cf-4025-aa79-dbbad549dbe5",
+        "target": "OWNER",
+        "NodeID": 7
+      },
+      "NodeID": 8
+    },
+    "11": {
+      "eventName": "Msg_MechanismSkillEnd",
+      "name": "sendAIMsg",
+      "UID": "925755a7-26b8-4959-8ed2-64f5d6834fe6",
+      "target": {
+        "key": "Bulbly_02",
+        "name": "getServerCacheVal",
+        "UID": "0b65f4c0-9321-4815-8451-ed274aa8055d",
+        "target": "OWNER",
+        "NodeID": 10
+      },
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        3,
+        11,
+        8,
+        6,
+        12,
+        9
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "b5d86122-5caf-4105-8e93-f3ab862589f2",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "d1b04605-71b9-4153-b715-9a0347eb0686",
+      "actorId": {
+        "key": "Bulbly_02",
+        "name": "getServerCacheVal",
+        "UID": "0b65f4c0-9321-4815-8451-ed274aa8055d",
+        "target": "OWNER",
+        "NodeID": 10
+      },
+      "name": "destroyEntity",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2121201",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

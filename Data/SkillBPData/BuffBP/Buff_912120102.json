@@ -1,0 +1,23 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912120102",
+  "name": "舞力值积满提升攻击力buff",
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "ea9bb6c1-bedc-48ce-945f-657abaf35e17",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8
+  ],
+  "NodeID": 1
+}

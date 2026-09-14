@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104501",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Common_Skill_Grass_Shield_Loop"
+    }
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.06,
+      "name": "multiply",
+      "UID": "20e1e2f8-3aa0-4a18-838a-952095696ecd",
+      "NodeID": 6,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "ceef94dc-8a84-4b60-bebb-663ce054a3a6",
+        "target": "OWNER",
+        "NodeID": 5,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "tag": 11,
+      "name": "removeBuffByTag",
+      "UID": "8d3f6a43-259f-41ff-8da4-ab7994b0aaf9",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

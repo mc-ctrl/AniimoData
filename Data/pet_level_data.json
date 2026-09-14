@@ -1,0 +1,341 @@
+[
+  {
+    "needStage": 1
+  },
+  {
+    "needStage": 1,
+    "needExp": 283
+  },
+  {
+    "needStage": 1,
+    "needExp": 425
+  },
+  {
+    "needStage": 1,
+    "needExp": 578
+  },
+  {
+    "needStage": 1,
+    "needExp": 741
+  },
+  {
+    "needStage": 1,
+    "needExp": 917
+  },
+  {
+    "needStage": 1,
+    "needExp": 1104
+  },
+  {
+    "needStage": 1,
+    "needExp": 1306
+  },
+  {
+    "needStage": 1,
+    "needExp": 1522
+  },
+  {
+    "needStage": 1,
+    "needExp": 1753
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 2001
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 2267
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 2551
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 2857
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 3184
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 3535
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 3910
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 4313
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 4745
+  },
+  {
+    "providePotentialPoint": 1,
+    "needStage": 1,
+    "needExp": 5208
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 5704
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 6235
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 6805
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 7416
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 8070
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 8772
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 9524
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 10329
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 11193
+  },
+  {
+    "providePotentialPoint": 2,
+    "needStage": 1,
+    "needExp": 12119
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 13111
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 14174
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 15314
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 16536
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 17845
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 19249
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 20753
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 22365
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 24093
+  },
+  {
+    "providePotentialPoint": 3,
+    "needStage": 1,
+    "needExp": 25944
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 27929
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 30057
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 32337
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 34781
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 37400
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 40207
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 61616
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 69941
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 78698
+  },
+  {
+    "providePotentialPoint": 4,
+    "needStage": 1,
+    "needExp": 87903
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 97573
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 107729
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 118391
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 129579
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 141319
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 153636
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 166555
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 180107
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 194321
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 209233
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 224876
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 241290
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 258515
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 276595
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 295578
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 315513
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 336454
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 358461
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 381594
+  },
+  {
+    "providePotentialPoint": 5,
+    "needStage": 1,
+    "needExp": 405920
+  }
+]

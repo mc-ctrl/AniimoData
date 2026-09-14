@@ -1,0 +1,19 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "2": {
+      "UID": "fa3f8ad1-9c0d-4b17-ad89-4d187b751c5c",
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_9020701",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    2
+  ],
+  "layer": "Base",
+  "length": 20
+}

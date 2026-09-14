@@ -1,0 +1,434 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5167,
+      "NodeID": 37,
+      "UID": "1dc85a99-53c3-4141-9efc-00f6a4e9867d"
+    },
+    "39": {
+      "UID": "79d424fe-70c5-4a54-bc00-885c7e1c616e",
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 39
+    },
+    "63": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "62e5a07d-1582-49a3-a4b5-940fb8b4124a",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 63
+    },
+    "41": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "702edf18-1874-4f0b-aa4a-4105ff3406c4",
+      "effectId": "Eff_Parmon_10023_Skill_IronClaw_Hand",
+      "speed": 1,
+      "NodeID": 41
+    },
+    "42": {
+      "UID": "9ede382b-496e-4015-8dcf-5a34b4970112",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 35,
+      "UID": "16a8fbaf-a87a-442e-8545-eb5f2fb05892"
+    },
+    "44": {
+      "UID": "58fd4982-bfbe-49c1-bcd0-c0a9e4fb9d1b",
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 44
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "f3d2e433-b00a-4795-9f32-1f2a7086170a",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "4": {
+      "UID": "376b01f1-ad4b-4604-af07-3b425d00c416",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          49
+        ]
+      },
+      "NodeID": 4
+    },
+    "65": {
+      "UID": "c4f514bb-20e5-4d6d-8c8f-777cbc93bf5b",
+      "name": "clearHitBox",
+      "hitBoxId": "1",
+      "NodeID": 65
+    },
+    "64": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "bb3fcaae-7d51-4d09-b0b7-cecbdc54af9e",
+      "target": "OWNER",
+      "NodeID": 64
+    },
+    "62": {
+      "action": {
+        "actionIds": [
+          61
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 62,
+      "UID": "5ebe6346-506f-473e-a829-e3c3703d4ec0"
+    },
+    "61": {
+      "actionIds": [
+        60
+      ],
+      "conditionActionIds": [
+        64
+      ],
+      "UID": "0727a6d3-24e0-4438-85cc-9a22a8ca278f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        63
+      ],
+      "NodeID": 61
+    },
+    "54": {
+      "action": {
+        "actionIds": [
+          53
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.56,
+      "NodeID": 54,
+      "UID": "c81858c4-c08d-498d-bed6-1ef5e23ad1d6"
+    },
+    "34": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1d3d387d-0485-473b-b2df-4a0539d56f02",
+      "effectId": "Eff_Parmon_10023_Skill_IronClaw_Hand_juqi",
+      "speed": 1,
+      "NodeID": 34
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "045c8753-8e18-40ee-afad-47d931686f56",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_IronClaw"
+    },
+    "46": {
+      "UID": "eaea8ba1-408a-4d14-af12-fa84808556ad",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 46
+    },
+    "32": {
+      "UID": "4cfee0f7-db05-4399-8615-8df128f63dbc",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          51,
+          30,
+          57
+        ]
+      },
+      "NodeID": 32
+    },
+    "11": {
+      "UID": "c4664b5f-3dd6-4beb-be27-4ffcc83fc0c9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10230500,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "c96bdc5a-785b-4785-8506-82d9e69533e2",
+      "target": "TARGET",
+      "NodeID": 20,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10105,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Metal_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "isPlayRadialBlur": true,
+        "impulseId": 5003
+      }
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6ba94032-fefd-4bfe-a45a-97a9bea7cd48",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10023_skill_ironclaw_pre",
+      "NodeID": 12
+    },
+    "22": {
+      "calcResultNodeId": 20,
+      "name": "actOnTargets",
+      "UID": "64f02956-5c06-4db8-a463-de8ae58411b7",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0.5
+          ],
+          "shapeArgs": [
+            2,
+            3,
+            4,
+            3,
+            0.6
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "needEcs": true,
+      "actionIds": [
+        20,
+        65
+      ],
+      "impulseId": 5003,
+      "NodeID": 22
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 13,
+      "UID": "4546d531-d2da-44fa-9d68-9b4374a9f616"
+    },
+    "55": {
+      "UID": "0f7d9011-f46e-4587-a8cf-1cb14e82a0fa",
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 55
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          28
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 29,
+      "UID": "711379ef-da16-4650-b1ba-1233a12ba6ab"
+    },
+    "56": {
+      "action": {
+        "actionIds": [
+          55
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.35,
+      "NodeID": 56,
+      "UID": "ce40bb76-a1e9-4029-9db5-449f56bde2d8"
+    },
+    "24": {
+      "tickInterval": 0.083,
+      "eventType": "NotifyState",
+      "endTime": 0.783,
+      "NodeID": 24,
+      "UID": "49d73e40-31ee-4719-a177-bba389edba3a",
+      "onUpdate": {
+        "actionIds": [
+          22
+        ]
+      },
+      "startTime": 0.583,
+      "onEnter": {
+        "actionIds": [
+          22,
+          59
+        ]
+      }
+    },
+    "57": {
+      "UID": "e73baffa-2532-4708-9a43-602d53f50b04",
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "NodeID": 57
+    },
+    "49": {
+      "UID": "27c90199-c8a9-4a15-8a07-ae48e4e6be14",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 49
+    },
+    "47": {
+      "UID": "ca9e4446-5183-4e39-884c-e81a24f5e4e0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "NodeID": 47
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "73dde778-0f70-48ea-b24d-4c6f86790685",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10023_skill_ironclaw_atk",
+      "NodeID": 28
+    },
+    "59": {
+      "cameraShakeId": 21123,
+      "name": "playCameraImpulseById",
+      "UID": "da506a6a-3b13-4176-a093-8e65720918e2",
+      "target": "OWNER",
+      "NodeID": 59
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "4b33079b-df94-4811-ad56-0feca3d9459c",
+      "effectId": "Eff_Parmon_10023_Skill_IronClaw_Hand",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "60": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "163fddda-db56-47fe-85d7-55c546717a00",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 60
+    },
+    "53": {
+      "UID": "8bbf7133-4620-4640-9a90-0eaff1bdc9d7",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 53
+    },
+    "51": {
+      "UID": "ff5ee298-9971-4e11-af99-2813f13d4543",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 51
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b31e3704-b7c5-4d7d-8888-db899bffa933",
+      "effectId": "Eff_Parmon_10023_Skill_IronClaw",
+      "speed": 1,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_10230500",
+  "NodeID": 6,
+  "UID": "f1c282f0-679b-438f-a65d-556cb0627b98",
+  "eventIds": [
+    4,
+    32,
+    11,
+    24,
+    37,
+    29,
+    44,
+    13,
+    62,
+    42,
+    35,
+    39,
+    54,
+    47,
+    56
+  ],
+  "layer": "Base",
+  "length": 2.62
+}

@@ -1,0 +1,12 @@
+{
+  "stackRule": 0,
+  "dynamicRPCStates": {},
+  "calcInfo": {
+    "miss_ratio_v": 0.5
+  },
+  "NodeID": 1,
+  "UID": "3a55b3bc-de34-499c-ba2a-8169328ff726",
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2103203"
+}

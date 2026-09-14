@@ -1,0 +1,127 @@
+{
+  "nodeMap": {
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 52,
+      "UID": "0a5bdeae-b396-436e-b1e6-b7d02aa5c811"
+    },
+    "55": {
+      "UID": "4e670256-879f-4ffc-bd94-9f97c1f53cd7",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "NodeID": 55
+    },
+    "54": {
+      "UID": "3bcdad3e-dbf4-4e1c-bf88-bd7e5ae2e71e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 54
+    },
+    "35": {
+      "UID": "024a401b-3875-4282-8c1e-a319ee9b8b94",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          33,
+          58,
+          49
+        ]
+      },
+      "NodeID": 35
+    },
+    "58": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 58,
+      "UID": "a1100a7b-693d-4fdf-bb16-2395860a657e",
+      "val": false,
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "name": "setIsInAim",
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "blendTime": 0.5,
+      "cameraPitchOffset": 0
+    },
+    "49": {
+      "UID": "57a98c92-93f1-4705-ae7d-0d6d929dc341",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 49
+    },
+    "85": {
+      "name": "stopSoundStr",
+      "UID": "8b9f7d52-cf3b-458e-ba2e-d2b074271832",
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_Loop",
+      "target": "OWNER",
+      "NodeID": 85
+    },
+    "84": {
+      "UID": "cd32a503-8546-4013-8ce4-dd00c56a20ce",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          82,
+          85
+        ]
+      },
+      "NodeID": 84
+    },
+    "33": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "6b0c101f-52b3-4856-82ac-71b0fea58123",
+      "target": "OWNER",
+      "NodeID": 33,
+      "animId": "Skill_Wave_End"
+    },
+    "51": {
+      "UID": "8df3adac-9c69-4a8c-8a7f-0f22c7c3e882",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 51
+    },
+    "82": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "65564891-df80-4b9f-8f83-478eca0c888d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10141_Skill_Wave_Ele_End",
+      "NodeID": 82
+    }
+  },
+  "BPName": "ability_11430200",
+  "NodeID": 37,
+  "UID": "328f52e5-87ea-4ea0-a285-0b64d350de8e",
+  "eventIds": [
+    35,
+    52,
+    55,
+    84
+  ],
+  "layer": "Base",
+  "length": 1.783
+}

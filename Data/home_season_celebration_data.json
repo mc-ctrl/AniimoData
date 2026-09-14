@@ -1,0 +1,26 @@
+[
+  {
+    "finishEventIds": [
+      2040
+    ],
+    "requiredComfortValue": 1200,
+    "requiredGoalIds": [
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "startEventIds": [
+      2039
+    ],
+    "seasonId": 1,
+    "stageId": [
+      103
+    ],
+    "countdownSeconds": 15,
+    "dailyOpenCount": 1,
+    "durationSeconds": 340,
+    "entryNpcFuncMenuId": 990086
+  }
+]

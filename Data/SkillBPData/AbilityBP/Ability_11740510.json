@@ -1,0 +1,63 @@
+{
+  "BPName": "ability_11740510",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "141": {
+      "name": "stopSoundStr",
+      "UID": "b53fce9a-e6bd-4084-ba43-a21901471610",
+      "soundId": "parmon_Dramotter_skill_roll_loop",
+      "target": "OWNER",
+      "NodeID": 141
+    },
+    "7": {
+      "timelineId": 11740510001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "143": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d81979b2-0058-41fb-ac5f-830154ef5199",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_Dramotter_skill_roll_end",
+      "NodeID": 143
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Roll_Start",
+    "Skill_Roll_End",
+    "Skill_Roll_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10174_Skill_Roll_Liuli",
+    "Eff_Hit_Water_Blunt",
+    "Eff_Parmon_10174_Skill_Roll_Hit",
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Water_Blunt_Big"
+  ],
+  "searchRelation": 2,
+  "name": "流水滚动-琉璃",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "switchSafeTime": 1,
+  "delayStartCd": true,
+  "notTurnToTarget": true,
+  "onAbilityEndIds": [
+    143,
+    141
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10300085
+}

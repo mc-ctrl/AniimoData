@@ -1,0 +1,61 @@
+{
+  "cutSceneDuration": 1.916,
+  "NodeID": 1,
+  "UID": "71eeed9b-f8e3-4347-acf3-a6c901c58bca",
+  "abilityParamId": 10900280,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11859900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2fc7fe5-f2ed-49ff-84a8-30877442f08d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 7,
+  "preloadAnims": [
+    "Skill_Gullchestra"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Wind_Blunt_Big",
+    "Eff_Parmon_10185_Skill_Ex_01",
+    "Eff_Parmon_10185_Skill_Ex_02",
+    "Eff_Parmon_10185_Skill_Ex_03",
+    "Eff_Parmon_10185_Skill_Ex_05",
+    "Eff_Parmon_10185_Skill_Ex_08",
+    "Eff_Parmon_10185_Skill_Ex_08_1",
+    "Eff_Parmon_10185_Skill_Ex_08_2",
+    "Eff_Parmon_10185_Skill_Ex_07",
+    "Eff_Parmon_10185_Skill_Ex_07_3",
+    "Eff_Parmon_10185_Skill_Ex_07_2",
+    "Eff_Parmon_10185_Skill_Ex_07_1",
+    "Eff_Parmon_10181_Skill_Ex_haio",
+    "Eff_Parmon_10184_Skill_Ex_haio",
+    "Eff_Parmon_10187_Skill_Ex_haio"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 1.5,
+  "BPName": "ability_11859900",
+  "preloadCutScenes": [
+    "$Parmon_10185_Skill_Ex_Timeline.prefab",
+    "$Parmon_10185_Skill_Ex_Timeline_1.prefab"
+  ],
+  "onlyHasActOnTargets": true,
+  "parentDynamicRPCStates": [
+    "FLYING"
+  ],
+  "refBones": [
+    "Bone M Jaw"
+  ]
+}

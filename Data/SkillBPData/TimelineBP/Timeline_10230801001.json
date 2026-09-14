@@ -1,0 +1,307 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "ffa2bf6a-c697-4833-8006-2a84d2144fa2",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 52
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0c8ad344-2833-4d80-9d61-a6c17453939e",
+      "effectId": "Eff_Parmon_10023_Mon_Skill_Fireball_01_0.6",
+      "speed": 1,
+      "NodeID": 38
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 39,
+      "UID": "4e42b7fd-2d25-43c3-9d35-a41aac980677"
+    },
+    "40": {
+      "time": 0.8,
+      "rotateSpeed": 180,
+      "name": "rotateTo",
+      "UID": "252f61d1-0b48-46c8-aa0a-1177a3b3afa7",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 40
+    },
+    "41": {
+      "isRootDir": true,
+      "NodeID": 41,
+      "UID": "17e2bb7a-bf86-4c73-b3c0-2f0b45d264ff",
+      "target": "OWNER",
+      "name": "getBonePosition",
+      "boneName": "Bone M Tongue 02"
+    },
+    "43": {
+      "UID": "12679ed6-758a-42bc-b7fb-03cdb54a5148",
+      "target": "TARGET",
+      "name": "getTargetPosition",
+      "NodeID": 43
+    },
+    "44": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "3968958e-659f-4ceb-8fbb-dc6362c4c138",
+      "target": "OWNER",
+      "val": {
+        "UID": "12679ed6-758a-42bc-b7fb-03cdb54a5148",
+        "target": "TARGET",
+        "name": "getTargetPosition",
+        "NodeID": 43
+      },
+      "NodeID": 44
+    },
+    "58": {
+      "action": {
+        "actionIds": [
+          57
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 58,
+      "UID": "c1d0d31d-58f9-406b-93a4-622e9312e0cf"
+    },
+    "57": {
+      "UID": "f800f5c9-2529-4dc4-a93f-19a184a4697e",
+      "target": "TARGET",
+      "name": "sendAIDodgeMsg",
+      "NodeID": 57
+    },
+    "56": {
+      "UID": "86db2244-886c-4306-93bf-9bd2689366cb",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 56
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "4f589c34-f0a7-47e9-b182-559f03db838d",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Monster_Fireball"
+    },
+    "55": {
+      "key": "fireballPos",
+      "name": "setCacheVal",
+      "UID": "f2522ab1-0fa5-4f7f-bba1-8ebc497f3d76",
+      "target": "OWNER",
+      "val": {
+        "name": "getTargetOffsetPos",
+        "UID": "304c87d4-f39d-4696-bf6a-34e96efd0615",
+        "target": "OWNER",
+        "offset": [
+          0,
+          -6,
+          6
+        ],
+        "NodeID": 54
+      },
+      "NodeID": 55
+    },
+    "4": {
+      "UID": "eb4cd78d-26d2-483b-9a15-b93b3591aaac",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          40
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "29ccf5c2-aa17-4253-a60a-86ca73657260",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_fireball_release",
+      "NodeID": 24
+    },
+    "14": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 10230801001,
+      "name": "createProjectile",
+      "UID": "85b65007-0ba0-4235-be7e-112b33a6b066",
+      "rotation": "ToTarget",
+      "pos": {
+        "isRootDir": true,
+        "NodeID": 41,
+        "UID": "17e2bb7a-bf86-4c73-b3c0-2f0b45d264ff",
+        "target": "OWNER",
+        "name": "getBonePosition",
+        "boneName": "Bone M Tongue 02"
+      },
+      "projectileType": "Free3d",
+      "targetPos": {
+        "key": "fireballPos",
+        "name": "getCacheVal",
+        "UID": "97b5c069-d357-4590-9e90-549bd33a4f2c",
+        "target": "OWNER",
+        "NodeID": 47
+      },
+      "NodeID": 14,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 46,
+      "UID": "ba55823f-9a41-4453-ad0e-492dddc71678"
+    },
+    "54": {
+      "name": "getTargetOffsetPos",
+      "UID": "304c87d4-f39d-4696-bf6a-34e96efd0615",
+      "target": "OWNER",
+      "offset": [
+        0,
+        -6,
+        6
+      ],
+      "NodeID": 54
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 25,
+      "UID": "e1f5aea4-adb4-4ead-9be0-a567fe4db427"
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.15,
+      "NodeID": 16,
+      "UID": "5297968f-dc63-44e0-a044-cd200aa1b23e"
+    },
+    "48": {
+      "UID": "082318fd-1949-45ab-9c1c-8810c11ae3f2",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 48
+    },
+    "28": {
+      "UID": "cc359573-2677-4e16-a40e-b4462368210b",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 28
+    },
+    "49": {
+      "UID": "1603a8d1-60e4-4288-8359-56125e3e73b9",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 49
+    },
+    "30": {
+      "UID": "65916c54-2f54-4378-bab5-e9c5ae6d6bb6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          28,
+          48
+        ]
+      },
+      "NodeID": 30
+    },
+    "32": {
+      "UID": "0b5b67a6-43ef-45a1-abd5-18ba5059cd8e",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 32
+    },
+    "53": {
+      "action": {
+        "actionIds": [
+          52
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.83,
+      "NodeID": 53,
+      "UID": "0fd7759a-9e82-4486-8550-d85b755a2a51"
+    },
+    "34": {
+      "UID": "2532ac50-aaa8-4baf-9def-863c6e01bc01",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          32,
+          49
+        ]
+      },
+      "NodeID": 34
+    },
+    "45": {
+      "actionIds": [
+        44
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "4e21d31e-5685-4913-a2df-dee0770e4375",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        55
+      ],
+      "NodeID": 45
+    }
+  },
+  "BPName": "ability_10230801",
+  "NodeID": 6,
+  "UID": "50133a16-e2d0-410a-b84d-9096212a4ede",
+  "eventIds": [
+    30,
+    34,
+    4,
+    16,
+    39,
+    25,
+    46,
+    53,
+    58
+  ],
+  "layer": "Base",
+  "length": 3.03
+}

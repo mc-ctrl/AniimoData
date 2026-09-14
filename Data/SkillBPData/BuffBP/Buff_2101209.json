@@ -1,0 +1,183 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2101209",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "UID": "222ae29d-7046-4894-892c-cc704435c0ca",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "duration": -1,
+      "name": "forceTaunt",
+      "UID": "448d3cd3-eee8-4460-8395-11e11ccea1d0",
+      "target": "TARGET",
+      "NodeID": 5
+    },
+    "13": {
+      "relation": 2,
+      "radius": 20,
+      "heightDown": 2,
+      "NodeID": 13,
+      "UID": "c284bb2b-54a4-4be3-9f0b-bf8ae9be6206",
+      "name": "searchEntity",
+      "heightUp": 2,
+      "filterCondition": 12
+    },
+    "24": {
+      "UID": "e675288e-0195-420e-a3a3-bef3a2c824e6",
+      "actorId": {
+        "UID": "0ddcc46a-7aef-455e-84d2-c8ddda04fd8f",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 23
+      },
+      "name": "destroyEntity",
+      "NodeID": 24
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "actOnTargets",
+      "UID": "0a30315d-4f86-4059-aef1-337b17e4e996",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 6
+    },
+    "10": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "81266a5b-d853-463b-b54e-ff39eca7a67a",
+      "name": "buffStartThink",
+      "NodeID": 10
+    },
+    "15": {
+      "key": "910012Skill",
+      "name": "setServerCacheVal",
+      "UID": "08ccac9e-b196-4aab-b135-cea2b00fb5f3",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "duration": 15,
+      "actionIds": [
+        24
+      ],
+      "NodeID": 25,
+      "UID": "6b142238-5fee-4f47-9dfa-671608385a3c",
+      "name": "addTimer"
+    },
+    "16": {
+      "eventName": "1",
+      "NodeID": 16,
+      "UID": "bb94a761-4231-4985-bcdd-62f7fad8f08b",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        15
+      ]
+    },
+    "22": {
+      "key": "10012_Fenshen",
+      "name": "applyMaterialEffect",
+      "NodeID": 22,
+      "isFullBodyReplaceMaterial": true
+    },
+    "21": {
+      "eventName": "3",
+      "NodeID": 21,
+      "UID": "16973c10-0f22-4cd4-a880-5e76363ff495",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        20
+      ]
+    },
+    "18": {
+      "key": "910012Skill",
+      "name": "setServerCacheVal",
+      "UID": "a9c3d17f-2a45-46d7-89f1-7103cc70c5a0",
+      "target": "OWNER",
+      "val": 2,
+      "NodeID": 18
+    },
+    "14": {
+      "abilityTarget": {
+        "relation": 2,
+        "radius": 20,
+        "heightDown": 2,
+        "NodeID": 13,
+        "UID": "c284bb2b-54a4-4be3-9f0b-bf8ae9be6206",
+        "name": "searchEntity",
+        "heightUp": 2,
+        "filterCondition": 12
+      },
+      "forceCast": true,
+      "NodeID": 14,
+      "UID": "6b0aaead-38b8-4826-92f5-6329c6607dab",
+      "name": "castAbility",
+      "abilityId": 910120422
+    },
+    "19": {
+      "eventName": "2",
+      "NodeID": 19,
+      "UID": "78cdb339-4633-492a-b639-4b4142f27f50",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        18
+      ]
+    },
+    "20": {
+      "key": "910012Skill",
+      "name": "setServerCacheVal",
+      "UID": "7bce7cd9-d0ce-4b11-b937-4ac9c29d2624",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 20
+    },
+    "12": {
+      "name": "isActorType",
+      "UID": "16af53be-ac82-4efa-a06a-5121f0a42a30",
+      "target": "TARGET",
+      "NodeID": 12,
+      "actorType": 3
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10,
+    22,
+    14,
+    25,
+    16,
+    19,
+    21
+  ]
+}

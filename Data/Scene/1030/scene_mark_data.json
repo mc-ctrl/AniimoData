@@ -1,0 +1,69 @@
+{
+  "0": {
+    "61557885": {
+      "favorableCollectId": 0,
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoAvatar": 1,
+      "infoImage": "$UI_Img_Many.png",
+      "infoImageNot": "$UI_Img_Monster_Unknown.png",
+      "infoPage": 0,
+      "infoText": "385403736",
+      "infoTextNot": "481837921",
+      "infoTitle": "401093804",
+      "infoTitleNot": "507734137",
+      "initState": 1,
+      "mapAreaId": 0,
+      "markConfigId": 10101,
+      "markPosition": [
+        -1.87,
+        0.25,
+        11.59
+      ],
+      "markType": 0,
+      "openMapState": 2,
+      "randomRange": 0,
+      "realSceneId": 1030,
+      "scale1": 1,
+      "idInType": 0,
+      "scale3": 1,
+      "scale4": 0,
+      "smallAreaId": 0,
+      "largeAreaId": 0,
+      "sandboxId": 61557885,
+      "ClickorNot": 0,
+      "OnlyShowInMinimapResizeArea": 0,
+      "POIBoundStaticId": 0,
+      "POIDesc": "415829566",
+      "POIIcon": "$UI_Icon_MarkFilter_Boss.png",
+      "POIOrNot": true,
+      "POIPriority": 3,
+      "POIShowType": [
+        2,
+        2
+      ],
+      "POIState": [
+        2
+      ],
+      "ShoworNot": 1,
+      "UsableState": [
+        1,
+        2,
+        3
+      ],
+      "activeDisplayType": 1,
+      "activeDistance": 100,
+      "yaw": 0,
+      "activeShapes": {},
+      "activeState": 1,
+      "affiliatedCamp": [
+        0
+      ],
+      "arriveParam": {},
+      "type": 2,
+      "circleRadius": 0,
+      "scale2": 1,
+      "arriveType": 1
+    }
+  }
+}

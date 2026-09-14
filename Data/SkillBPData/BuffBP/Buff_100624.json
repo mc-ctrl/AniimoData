@@ -1,0 +1,92 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_100624",
+  "NodeID": 1,
+  "UID": "7b863a99-e402-4d70-92da-e8b60add2433",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "isActorType",
+      "UID": "a2adedd4-40bc-4c91-bd5d-c75cb70c1ff5",
+      "target": "OWNER",
+      "NodeID": 8,
+      "actorType": 3
+    },
+    "9": {
+      "target": "TARGET",
+      "duration": -1,
+      "buffId": 100624,
+      "NodeID": 9,
+      "UID": "0474d6ad-b1ca-45c5-9744-f9c1ae06fd8c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 1
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "1e553dfc-2ec0-4c6b-8adf-23fd3029e39c",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 6
+    },
+    "10": {
+      "actionIds": [
+        9
+      ],
+      "name": "actOnTargets",
+      "UID": "e997d83c-c5eb-4175-99c1-e595bbf0c6cb",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            100,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 10
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "acba1f44-042d-4588-8469-25ddb435ac6e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        10
+      ],
+      "NodeID": 7
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

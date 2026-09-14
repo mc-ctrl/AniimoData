@@ -1,0 +1,4944 @@
+{
+  "42137005": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoHabit_Sleep"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 1,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoHabit_Sleep"
+    ],
+    "name": "EcoHabit Sleep 2固定朝向",
+    "id": 42137005
+  },
+  "42137762": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoHabit_Eat"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoHabit_Eat"
+    ],
+    "name": "EcoHabit Eat 1不限朝向",
+    "id": 42137762
+  },
+  "74604735": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_GuGuCyclone",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.5,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.5,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_GuGuCyclone"
+    ],
+    "name": "台地 滚滚郎大旋风",
+    "id": 74604735
+  },
+  "54559663": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_SaveHelmon_1v1Chase",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 6,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 6,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_SaveHelmon_1V1Chase"
+    ],
+    "name": "拯救大眼盔-大眼盔被追",
+    "id": 54559663
+  },
+  "42137763": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3.33,
+          14.11,
+          -11.1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.33,
+          14.51,
+          -13.1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoHabit_Eat"
+    ],
+    "name": "EcoHabit Eat 2固定朝向",
+    "id": 42137763
+  },
+  "42315027": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoDemoTest_Climb"
+        ],
+        "bodySize": 3,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoDemoTest_Climb"
+    ],
+    "name": "EcoDemo测试4 Climb",
+    "id": 42315027
+  },
+  "55008304": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10201FruitHappy_03",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10201FruitHappy"
+    ],
+    "name": "走调草舞动青春（3只）",
+    "id": 55008304
+  },
+  "42399579": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoHabit_Glide"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoHabit_Glide"
+    ],
+    "name": "EcoHabit Glide",
+    "id": 42399579
+  },
+  "55422930": {
+    "activeRange": 3,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_NS_GenericTemplate"
+    ],
+    "name": "新手通用生态模版",
+    "id": 55422930
+  },
+  "42722672": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoHabit_Climb"
+        ],
+        "bodySize": 1.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoHabit_Climb"
+    ],
+    "name": "EcoHabit Climb",
+    "id": 42722672
+  },
+  "55526535": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_DanceSing",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3,
+          0,
+          3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3,
+          0,
+          -3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3,
+          0,
+          3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3,
+          0,
+          -3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_DanceSing"
+    ],
+    "name": "鸢尾集体跳舞",
+    "id": 55526535
+  },
+  "76240818": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10031Scratch",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10031Scratch"
+    ],
+    "name": "螳螂磨爪",
+    "id": 76240818
+  },
+  "42825571": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_FollowGroup_1_1"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -4,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_FollowGroup_1_2"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_FollowGroup_1_1"
+    ],
+    "name": "盔卫兵跟随银盔龙",
+    "id": 42825571
+  },
+  "56386233": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_GrassTrain",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.89,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 1,
+            "towardsYaw": 0,
+            "towardsYawType": 1
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_GrassTrain"
+    ],
+    "name": "走调草军训",
+    "id": 56386233
+  },
+  "76705301": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10431Run",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 90,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 90,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10431Run"
+    ],
+    "name": "10431Run",
+    "id": 76705301
+  },
+  "42825818": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 0,
+        "portPosition": [
+          -2,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_FollowGroup_2_1"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 0,
+        "portPosition": [
+          -4,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_FollowGroup_2_2"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_FollowGroup_2_1"
+    ],
+    "name": "骨领崽跟随",
+    "id": 42825818
+  },
+  "56397620": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 1,
+            "towardsYaw": 0,
+            "towardsYawType": 1
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_GrassOut"
+    ],
+    "name": "走调草轮流钻头",
+    "id": 56397620
+  },
+  "76960788": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10281Sleep",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -2
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10281Sleep"
+    ],
+    "name": "烟囱蚁围观小龙睡觉",
+    "id": 76960788
+  },
+  "47239324": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_Test_HitHeadInTurns",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 2,
+        "portPosition": [
+          0,
+          0,
+          1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_Test_HitHeadInTurns"
+    ],
+    "name": "GB测试 轮流拍头",
+    "id": 47239324
+  },
+  "56651994": {
+    "activeRange": 1,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_HitHeadInTurns",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 2,
+        "portPosition": [
+          0.1,
+          0,
+          0.3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 340,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.1,
+          0,
+          -0.3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 340,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_HitHeadInTurns"
+    ],
+    "name": "海獭拍头",
+    "id": 56651994
+  },
+  "77117281": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10281Sneak",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.42,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2.54,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10281Sneak"
+    ],
+    "name": "碎岩仔训练钻地",
+    "id": 77117281
+  },
+  "47668217": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_Test_MoveHappyChat",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_Test_MoveHappyChat"
+    ],
+    "name": "GB测试 开心聊天",
+    "id": 47668217
+  },
+  "56747176": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_SkippySlide",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_SkippySlide"
+    ],
+    "name": "莲顶鱼滑滑梯",
+    "id": 56747176
+  },
+  "77355114": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10031JumpOverRiver",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -1.38
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -2.93
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2.17,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2.93,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10031JumpOverRiver"
+    ],
+    "name": "螳螂跳跃过河练习",
+    "id": 77355114
+  },
+  "47731453": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_Braveman",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.03,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_Braveman"
+    ],
+    "name": "盔勇士 群体活动",
+    "id": 47731453
+  },
+  "56820477": {
+    "activeRange": 3,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_Yahaha"
+    ],
+    "name": "呀哈哈玩法",
+    "id": 56820477
+  },
+  "77400926": {
+    "activeRange": 2,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10031TeachInvisible",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 5,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 4,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 5,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.8,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 5,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.43,
+          0,
+          1.19
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 5,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.52,
+          0,
+          -1.13
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10031TeachInvisible"
+    ],
+    "name": "螳螂教学隐身",
+    "id": 77400926
+  },
+  "57254665": {
+    "activeRange": 2,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_AttackEachOther",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.5,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.1,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.5,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.1,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_AttackEachOther"
+    ],
+    "name": "螳螂 互相攻击",
+    "id": 57254665
+  },
+  "48265290": {
+    "activeRange": 2,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_PatrolFour",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_PatrolFour"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_PatrolFour"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          4,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_PatrolFour"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          6,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_PatrolFour"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_PatrolFour"
+    ],
+    "name": "高地生态 GB 巡逻4只",
+    "id": 48265290
+  },
+  "58016505": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_LoveAndKiss",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 2,
+        "portPosition": [
+          0,
+          0,
+          1.5
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_LoveAndKiss"
+    ],
+    "name": "羞羞獭求爱亲亲",
+    "id": 58016505
+  },
+  "48355500": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_HappyChase",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.75,
+          0,
+          1
+        ],
+        "portTags": [
+          "TR_GB_HappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.75,
+          0,
+          -1
+        ],
+        "portTags": [
+          "TR_GB_HappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_HappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_HappyChase"
+    ],
+    "name": "高地生态 GB 开心互追",
+    "id": 48355500
+  },
+  "58101034": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_GetAngryWithEachOther",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.31,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.3,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.33,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.3,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_GetAngryWithEachOther"
+    ],
+    "name": "螳螂 互相生气",
+    "id": 58101034
+  },
+  "80592304": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_GuGuSlide",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2,
+          0,
+          0.5
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2,
+          0,
+          0.5
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_GuGuSlide"
+    ],
+    "name": "台地 滚滚郎滑滑梯",
+    "id": 80592304
+  },
+  "48436812": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_Test_RVO"
+    ],
+    "name": "测试 RVO",
+    "id": 48436812
+  },
+  "58203335": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_Taunt",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.4,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.4,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_Taunt"
+    ],
+    "name": "螳螂 示爱",
+    "id": 58203335
+  },
+  "48971708": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          2
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GD_GBTest1"
+    ],
+    "name": "高地生态测试 群体1",
+    "id": 48971708
+  },
+  "48976787": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10021WRS",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_10021WRS"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.5,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_10021WRS"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10021WRS"
+    ],
+    "name": "高地生态 GB 10021掰手腕",
+    "id": 48976787
+  },
+  "49382933": {
+    "activeRange": 2,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10291_FentuftJumpFur",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2.25,
+          0,
+          -0.75
+        ],
+        "portTags": [
+          "role1"
+        ],
+        "bodySize": 0.1,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              70,
+              0
+            ],
+            "limitYawRangeType": 1
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.75,
+          0,
+          -0.5
+        ],
+        "portTags": [
+          "role2"
+        ],
+        "bodySize": 0.1,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              280,
+              0
+            ],
+            "limitYawRangeType": 1
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          5.5
+        ],
+        "portTags": [
+          "role3"
+        ],
+        "bodySize": 0.1,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              180,
+              0
+            ],
+            "limitYawRangeType": 1
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_FentuftJumpFur"
+    ],
+    "name": "天使耶跳毛团",
+    "id": 49382933
+  },
+  "90875243": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10291JumpTest",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2.23,
+          0,
+          0.15
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2.26,
+          0,
+          0.17
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -7.61,
+          0,
+          0.07
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10291JumpTest"
+    ],
+    "name": "天使耶跳山羊测试",
+    "id": 90875243
+  },
+  "49722791": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_HumorFriend",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.8,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.8,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_HumorFriend"
+    ],
+    "name": "高地生态 GB 哄同伴",
+    "id": 49722791
+  },
+  "90995031": {
+    "activeRange": 2,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10291CrossRiver",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          -0.33,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10291CrossRiver"
+    ],
+    "name": "天使耶过河",
+    "id": 90995031
+  },
+  "50011076": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 1,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_Test_MultiRoute"
+    ],
+    "name": "测试 多路线",
+    "id": 50011076
+  },
+  "91089375": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10581shangan"
+    ],
+    "name": "叶羊上岸",
+    "id": 91089375
+  },
+  "50083712": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10024HappyLoop",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.4,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.4,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10024HappyLoop"
+    ],
+    "name": "高地生态 GB 10024HappyLoop",
+    "id": 50083712
+  },
+  "91145712": {
+    "activeRange": 0,
+    "activeType": 0,
+    "id": 91145712,
+    "interactPorts": {}
+  },
+  "50149045": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_Test_DynamicVoxel"
+    ],
+    "name": "测试 动态体素",
+    "id": 50149045
+  },
+  "50153308": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_PerformThree",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.86,
+          0,
+          -0.5
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 300,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.86,
+          0,
+          -0.5
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 60,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_PerformThree"
+    ],
+    "name": "高地生态 GB 待机表演3只",
+    "id": 50153308
+  },
+  "90660899": {
+    "activeRange": 0,
+    "activeType": 1,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 1,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0.5,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 1,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 3.5
+      }
+    ],
+    "tags": [
+      "TE_Env_BounceFurrClose"
+    ],
+    "name": "天使耶激活毛团",
+    "id": 90660899
+  },
+  "83617793": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10161_YaYaJourney",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_YaYaJourney"
+    ],
+    "name": "台地 花芽蟹过桥",
+    "id": 83617793
+  },
+  "50265235": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_HelmonBeChased",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.6,
+          0,
+          1.5
+        ],
+        "portTags": [
+          "TR_GB_HelmonBeChased"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.7,
+          0,
+          -4.35
+        ],
+        "portTags": [
+          "TR_GB_HelmonBeChased"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.4,
+          0,
+          3.97
+        ],
+        "portTags": [
+          "TR_GB_HelmonBeChased"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.97,
+          0,
+          2.2
+        ],
+        "portTags": [
+          "TR_GB_HelmonBeChased"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_HelmonBeChased"
+    ],
+    "name": "高地拯救大眼盔-围堵大眼盔",
+    "id": 50265235
+  },
+  "82774102": {
+    "activeRange": 0,
+    "activeType": 1,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 1,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_Mimicry"
+    ],
+    "name": "台地 滚滚郎拟态",
+    "id": 82774102
+  },
+  "78895075": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10031_1V1Chase",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 5,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 5,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_1v1Chase"
+    ],
+    "name": "螳螂与螃蟹互相追逐",
+    "id": 78895075
+  },
+  "77467989": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10431Carry",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          2
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -4
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -5
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10431Carry"
+    ],
+    "name": "烟囱蚁搬运矿石",
+    "id": 77467989
+  },
+  "50583432": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10021&10024",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10021&10024"
+    ],
+    "name": "高地生态 GB 10021&10024",
+    "id": 50583432
+  },
+  "76145315": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10031TrickCrab",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 6,
+        "interactMaxNum": 1,
+        "portPosition": [
+          7,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_10031TrickCrab"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 6,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_10031TrickCrab"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 180,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 6,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.6,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_10031TrickCrab"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -6
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10031TrickCrab"
+    ],
+    "name": "螳螂吓唬螃蟹",
+    "id": 76145315
+  },
+  "76091019": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_BonfireParty",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3.73,
+          0,
+          2.1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3.61,
+          0,
+          -2.1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.41,
+          0,
+          -4.38
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.37,
+          0,
+          -3.01
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          4.56,
+          0,
+          0.58
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2.78,
+          0,
+          3.68
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.8,
+          0,
+          4.53
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_BonfireParty"
+    ],
+    "name": "走调草幽幽焰篝火晚会",
+    "id": 76091019
+  },
+  "72165059": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_NS_GenericTemplate2"
+    ],
+    "name": "新手通用生态模版2",
+    "id": 72165059
+  },
+  "50709685": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_10261_LeaveToCloud"
+    ],
+    "name": "云朵羊逃跑点",
+    "id": 50709685
+  },
+  "72045186": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": -1,
+        "interactMaxNum": -1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": -1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": -1
+      }
+    ],
+    "tags": {},
+    "name": "简单资源点（标记）",
+    "id": 72045186
+  },
+  "35499862": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 1.24,
+        "interactMaxNum": 26,
+        "portPosition": [
+          2.77,
+          0,
+          1.53
+        ],
+        "portTags": {},
+        "bodySize": 0.9,
+        "interactDirDescs": {},
+        "interactDist": 1.25
+      },
+      {
+        "interactMaxHeight": 0,
+        "interactMaxNum": 0,
+        "portPosition": [
+          0.4,
+          0,
+          2.08
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0.6
+      },
+      {
+        "interactMaxHeight": 0,
+        "interactMaxNum": 0,
+        "portPosition": [
+          -1.82,
+          0,
+          -0.35
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0.68
+      }
+    ],
+    "tags": {},
+    "name": "测试资源点",
+    "id": 35499862
+  },
+  "51200631": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_Test_Node"
+    ],
+    "name": "生态测试Node",
+    "id": 51200631
+  },
+  "35755304": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 15,
+        "interactMaxNum": 2,
+        "portPosition": [
+          -0.37,
+          0,
+          0.73
+        ],
+        "portTags": {},
+        "bodySize": 0.45,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 0,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 1,
+            "towardsYaw": 0,
+            "towardsYawType": 2
+          },
+          {
+            "dirInteractMaxNum": 0,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0.54
+      },
+      {
+        "interactMaxHeight": 0,
+        "interactMaxNum": 0,
+        "portPosition": [
+          0.77,
+          0,
+          -0.32
+        ],
+        "portTags": {},
+        "bodySize": 0.6,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 0,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0.75
+      }
+    ],
+    "tags": {},
+    "name": "Test1",
+    "id": 35755304
+  },
+  "72037989": {
+    "activeRange": 1,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_CollectiveSing",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 180,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.04,
+          0,
+          2.93
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.02,
+          0,
+          1.17
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2.31,
+          0,
+          3.9
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2.27,
+          0,
+          3.46
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3.19,
+          0,
+          1.58
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_CollectiveSing"
+    ],
+    "name": "海鸥家族合唱",
+    "id": 72037989
+  },
+  "51211963": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_1v1Argue",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_1v1Argue"
+    ],
+    "name": "高地生态 GB 1v1Argue",
+    "id": 51211963
+  },
+  "58549761": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_Taunt",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_Boxing"
+        ],
+        "bodySize": 0.5,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_Boxing"
+    ],
+    "name": "螳螂虾拳击点位",
+    "id": 58549761
+  },
+  "51213139": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_10023_HelgonBus"
+    ],
+    "name": "玩法 银盔龙巴士",
+    "id": 51213139
+  },
+  "41698090": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoDemoTest_Glide"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoDemoTest_Glide"
+    ],
+    "name": "EcoDemo测试3",
+    "id": 41698090
+  },
+  "37811621": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 0,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TRPW_Catch01"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      ""
+    ],
+    "name": "捕捉场景用测试资源点1",
+    "id": 37811621
+  },
+  "64252442": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoHabit_Eat_Fly"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoHabit_Eat_Fly"
+    ],
+    "name": "EcoHabit_Eat_Fly",
+    "id": 64252442
+  },
+  "61841601": {
+    "activeRange": 2,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 5,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_ElectricMarten"
+        ],
+        "bodySize": 2.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_ElectricMarten"
+    ],
+    "name": "雷光貂头目磨爪点",
+    "id": 61841601
+  },
+  "37905114": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 0,
+        "interactMaxNum": 0,
+        "portPosition": [
+          0.4,
+          0,
+          0.3
+        ],
+        "portTags": [
+          "TRPW_Bait"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 0,
+        "interactMaxNum": 0,
+        "portPosition": [
+          -0.4,
+          0,
+          0.3
+        ],
+        "portTags": [
+          "TRPW_Bait"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": {},
+    "name": "诱饵用资源点",
+    "id": 37905114
+  },
+  "59758085": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": {},
+    "tags": [
+      "TR_PatrolPhotoNight"
+    ],
+    "name": "生态拍照 路点 夜晚",
+    "id": 59758085
+  },
+  "61559337": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 4,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          ""
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 4,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_PatrolPhoto"
+    ],
+    "name": "生态拍照 多路点 多宝宝",
+    "id": 61559337
+  },
+  "38078221": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_ShoelWater"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_ShoelWater"
+    ],
+    "name": "RP_ShoelWater",
+    "id": 38078221
+  },
+  "51295264": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_1v1Chase",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_1v1Chase"
+    ],
+    "name": "高地生态 GB 1v1追逐",
+    "id": 51295264
+  },
+  "59764694": {
+    "activeRange": 1,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_Rolling",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_Rolling"
+    ],
+    "name": "水母转圈圈",
+    "id": 59764694
+  },
+  "38758183": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.36,
+          0,
+          7.77
+        ],
+        "portTags": [
+          "TR_FollowGroup"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.85,
+          0,
+          9.03
+        ],
+        "portTags": [
+          "TR_FollowGroup"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.98,
+          0,
+          6.2
+        ],
+        "portTags": [
+          "TR_FollowGroup"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.73,
+          0,
+          5.26
+        ],
+        "portTags": [
+          "TR_FollowGroup"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.06,
+          0,
+          9.13
+        ],
+        "portTags": [
+          "TR_FollowGroup"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.51,
+          0,
+          11.96
+        ],
+        "portTags": [
+          "TR_FollowGroup"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.19,
+          0,
+          3.11
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_FollowGroup"
+    ],
+    "name": "跟随测试",
+    "id": 38758183
+  },
+  "59499986": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_SingInTheStone ",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          3
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_SingInTheStone"
+    ],
+    "name": "海鸥在石头上唱歌",
+    "id": 59499986
+  },
+  "51298563": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_HappyChase",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.75,
+          0,
+          1
+        ],
+        "portTags": [
+          "TR_GB_HappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.75,
+          0,
+          -1
+        ],
+        "portTags": [
+          "TR_GB_HappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_HappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 2,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_HappyChase"
+    ],
+    "name": "拍照测试 开心互追",
+    "id": 51298563
+  },
+  "38933518": {
+    "activeRange": 2,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.31,
+          0,
+          -2.03
+        ],
+        "portTags": [
+          "TR_FollowGroup_1"
+        ],
+        "bodySize": 0.21,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0.3
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.58,
+          0,
+          -1.51
+        ],
+        "portTags": [
+          "TR_FollowGroup_1"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.28,
+          0,
+          -4.09
+        ],
+        "portTags": [
+          "TR_FollowGroup_1"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.34,
+          0,
+          -3.89
+        ],
+        "portTags": [
+          "TR_FollowGroup_1"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_FollowGroup_1"
+    ],
+    "name": "4个跟随",
+    "id": 38933518
+  },
+  "51532723": {
+    "activeRange": 3,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          ""
+        ],
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_PatrolPhoto"
+    ],
+    "name": "生态拍照 路点",
+    "id": 51532723
+  },
+  "58465964": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_Flash",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_Flash"
+    ],
+    "name": "螳螂 闪现攻击",
+    "id": 58465964
+  },
+  "39216814": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_DrinkPoint"
+        ],
+        "bodySize": 1,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 0,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_DrinkPoint"
+    ],
+    "name": "RP_DrinkPoint",
+    "id": 39216814
+  },
+  "51551706": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_SheepHappyChase",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          2.5,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_GB_SheepHappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -2,
+          0,
+          -1.5
+        ],
+        "portTags": [
+          "TR_GB_SheepHappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.85,
+          0,
+          0.4
+        ],
+        "portTags": [
+          "TR_GB_SheepHappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          1.5
+        ],
+        "portTags": [
+          "TR_GB_SheepHappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          -1.9
+        ],
+        "portTags": [
+          "TR_GB_SheepHappyChase"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_SheepHappyChase"
+    ],
+    "name": "羊群追逐5只",
+    "id": 51551706
+  },
+  "53887501": {
+    "activeRange": 2,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_GlacySleep2",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1,
+          0,
+          1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1,
+          0,
+          -1
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_GlacySleep"
+    ],
+    "name": "莹冰龙睡觉",
+    "id": 53887501
+  },
+  "40316187": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          2.97
+        ],
+        "portTags": [
+          "TR_EcoDemoTest_Sleep"
+        ],
+        "bodySize": 1,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 180,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 4,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0.1
+      }
+    ],
+    "tags": [
+      "TR_EcoDemoTest_Sleep"
+    ],
+    "name": "EcoDemo测试1",
+    "id": 40316187
+  },
+  "65963392": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "BP_Wild_GroupBehav_Morphling_WolfChaseSheep",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3.78,
+          0,
+          -0.86
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.36,
+          0,
+          0.85
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.21,
+          0,
+          0.96
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.37,
+          0,
+          2.61
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_WolfChaseSheep"
+    ],
+    "name": "百变怪狼追羊",
+    "id": 65963392
+  },
+  "52421840": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_10201FruitHappy",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          4.55,
+          0,
+          -5.21
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.79,
+          0,
+          -6.58
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -6.78,
+          0,
+          -2.89
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -6.81,
+          0,
+          2.82
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -1.61,
+          0,
+          6.57
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          7.4,
+          0,
+          0.25
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          4.55,
+          0,
+          5.05
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_10201FruitHappy"
+    ],
+    "name": "走调草舞动青春",
+    "id": 52421840
+  },
+  "40472002": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          1.5
+        ],
+        "portTags": [
+          "TR_EcoDemoTest_Follow"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoDemoTest_Follow"
+    ],
+    "name": "EcoDemo测试2",
+    "id": 40472002
+  },
+  "70643626": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYaw": 0,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 1,
+            "limitYawRangeType": 0
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": {},
+    "name": "简单资源点（交互）",
+    "id": 70643626
+  },
+  "51219263": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_CountSheep",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -1
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -2
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -3
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          -4
+        ],
+        "portTags": {},
+        "bodySize": 0.5,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_CountSheep"
+    ],
+    "name": "数云朵羊",
+    "id": 51219263
+  },
+  "53273436": {
+    "activeRange": 3,
+    "activeType": 0,
+    "groupBehaviour": "GBP_Wild_WolfChaseSheep",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -3.78,
+          0,
+          -0.86
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.36,
+          0,
+          0.85
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.21,
+          0,
+          0.96
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          1.37,
+          0,
+          2.61
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          4.66,
+          0,
+          1.21
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          3.8,
+          0,
+          3.17
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": [
+          {
+            "towardsYawType": 0,
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              0,
+              0
+            ],
+            "limitYawRangeType": 2
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_GB_WolfChaseSheep"
+    ],
+    "name": "狼追羊",
+    "id": 53273436
+  },
+  "47751391": {
+    "activeRange": 1,
+    "activeType": 0,
+    "groupBehaviour": "",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_NS_FollowRouteToEat"
+    ],
+    "name": "星露丽走向果子吃果子",
+    "id": 47751391
+  },
+  "36066566": {
+    "activeRange": 0,
+    "activeType": 0,
+    "groupBehaviour": "EcologyPerform",
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0.8,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.1,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              180,
+              180
+            ],
+            "limitYawRangeType": 2,
+            "towardsYaw": 0,
+            "towardsYawType": 2
+          }
+        ],
+        "interactDist": 0
+      },
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          -0.8,
+          0,
+          0
+        ],
+        "portTags": {},
+        "bodySize": 0.1,
+        "interactDirDescs": [
+          {
+            "dirInteractMaxNum": 1,
+            "limitYawRange": [
+              180,
+              180
+            ],
+            "limitYawRangeType": 2,
+            "towardsYaw": 0,
+            "towardsYawType": 2
+          }
+        ],
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_Test_GroupBehav"
+    ],
+    "name": "测试资源点-群体行为",
+    "id": 36066566
+  },
+  "42132691": {
+    "activeRange": 0,
+    "activeType": 0,
+    "interactPorts": [
+      {
+        "interactMaxHeight": 2,
+        "interactMaxNum": 1,
+        "portPosition": [
+          0,
+          0,
+          0
+        ],
+        "portTags": [
+          "TR_EcoHabit_Sleep"
+        ],
+        "bodySize": 0,
+        "interactDirDescs": {},
+        "interactDist": 0
+      }
+    ],
+    "tags": [
+      "TR_EcoHabit_Sleep"
+    ],
+    "name": "EcoHabit Sleep 1不限朝向",
+    "id": 42132691
+  },
+  "53696808": {
+    "activeRange": 0,
+    "activeType": 1,
+    "interactPorts": {},
+    "tags": {},
+    "name": "测试开关",
+    "id": 53696808
+  }
+}

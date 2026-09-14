@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_10600152",
+  "NodeID": 1,
+  "UID": "0416f57a-057a-4854-96aa-dda9a83aa240",
+  "abilityParamId": 9400061,
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10600152001,
+      "name": "setCombatActionTimeline",
+      "UID": "5a656db1-4b4f-4c4c-a694-377b45bf89b2",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Dance"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Die",
+    "Eff_Env_Level_IOT_10231_Dust"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "subAbilityIds": {},
+  "searchTargetRangeDown": 0
+}

@@ -1,0 +1,440 @@
+{
+  "num_player_enemy_break_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Break_Basic_Normal",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_player_enemy_break_critical_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Break_Critical_Heavy",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_player_enemy_break_critical_light": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Break_Critical_Light",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "light"
+  },
+  "num_player_enemy_break_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Break_Critical_Normal",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_player_enemy_nonbreak_basic_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Basic_Heavy",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_player_enemy_nonbreak_basic_light": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Basic_Light",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "light"
+  },
+  "num_player_enemy_nonbreak_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Basic_Normal",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_player_enemy_nonbreak_critical_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Critical_Heavy",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_player_enemy_nonbreak_critical_light": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Critical_Light",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "light"
+  },
+  "num_player_enemy_nonbreak_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Critical_Normal",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "ep_enemy_enemy": {
+    "damageType": "ep",
+    "target": "enemy",
+    "source": "enemy",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "ep_null_enemy": {
+    "damageType": "ep",
+    "target": "enemy",
+    "source": "null",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "ep_null_player": {
+    "damageType": "ep",
+    "target": "player",
+    "source": "null",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "ep_null_playerPet": {
+    "damageType": "ep",
+    "target": "playerPet",
+    "source": "null",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "ep_playerPet_player": {
+    "damageType": "ep",
+    "target": "player",
+    "source": "playerPet",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "ep_playerPet_playerPet": {
+    "damageType": "ep",
+    "target": "playerPet",
+    "source": "playerPet",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "ep_player_player": {
+    "damageType": "ep",
+    "target": "player",
+    "source": "player",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "ep_player_playerPet": {
+    "damageType": "ep",
+    "target": "playerPet",
+    "source": "player",
+    "resID": "UI_DamageNumber_Energy"
+  },
+  "heal_enemy_enemy": {
+    "damageType": "heal",
+    "target": "enemy",
+    "source": "enemy",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "heal_null_enemy": {
+    "damageType": "heal",
+    "target": "enemy",
+    "source": "null",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "heal_null_player": {
+    "damageType": "heal",
+    "target": "player",
+    "source": "null",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "heal_null_playerPet": {
+    "damageType": "heal",
+    "target": "playerPet",
+    "source": "null",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "heal_playerPet_player": {
+    "damageType": "heal",
+    "target": "player",
+    "source": "playerPet",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "heal_playerPet_playerPet": {
+    "damageType": "heal",
+    "target": "playerPet",
+    "source": "playerPet",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "heal_player_player": {
+    "damageType": "heal",
+    "target": "player",
+    "source": "player",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "heal_player_playerPet": {
+    "damageType": "heal",
+    "target": "playerPet",
+    "source": "player",
+    "resID": "UI_DamageNumber_Heal"
+  },
+  "num_enemy_playerPet_break_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Basic_Normal",
+    "source": "enemy",
+    "target": "playerPet",
+    "ElementRelation": "normal"
+  },
+  "num_enemy_playerPet_break_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Critical_Normal",
+    "source": "enemy",
+    "target": "playerPet",
+    "ElementRelation": "normal"
+  },
+  "num_enemy_playerPet_nonbreak_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Basic_Normal",
+    "source": "enemy",
+    "target": "playerPet",
+    "ElementRelation": "normal"
+  },
+  "num_enemy_playerPet_nonbreak_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Critical_Normal",
+    "source": "enemy",
+    "target": "playerPet",
+    "ElementRelation": "normal"
+  },
+  "num_enemy_player_break_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Basic_Normal",
+    "source": "enemy",
+    "target": "player",
+    "ElementRelation": "normal"
+  },
+  "num_enemy_player_break_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Critical_Normal",
+    "source": "enemy",
+    "target": "player",
+    "ElementRelation": "normal"
+  },
+  "num_enemy_player_nonbreak_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Basic_Normal",
+    "source": "enemy",
+    "target": "player",
+    "ElementRelation": "normal"
+  },
+  "num_enemy_player_nonbreak_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Critical_Normal",
+    "source": "enemy",
+    "target": "player",
+    "ElementRelation": "normal"
+  },
+  "num_null_enemy_nonbreak_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Basic_Normal",
+    "source": "null",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_null_enemy_nonbreak_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Critical_Normal",
+    "source": "null",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_null_playerPet_nonbreak_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Basic_Normal",
+    "source": "null",
+    "target": "playerPet",
+    "ElementRelation": "normal"
+  },
+  "num_null_playerPet_nonbreak_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Critical_Normal",
+    "source": "null",
+    "target": "playerPet",
+    "ElementRelation": "normal"
+  },
+  "num_null_player_nonbreak_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Basic_Normal",
+    "source": "null",
+    "target": "player",
+    "ElementRelation": "normal"
+  },
+  "num_null_player_nonbreak_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Enemy_Nonbreak_Critical_Normal",
+    "source": "null",
+    "target": "player",
+    "ElementRelation": "normal"
+  },
+  "num_playerPet_enemy_break_basic_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Break_Basic_Heavy",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_playerPet_enemy_break_basic_light": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Break_Basic_Light",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "light"
+  },
+  "num_playerPet_enemy_break_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Break_Basic_Normal",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_playerPet_enemy_break_critical_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Break_Critical_Heavy",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_playerPet_enemy_break_critical_light": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Break_Critical_Light",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "light"
+  },
+  "num_playerPet_enemy_break_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Break_Critical_Normal",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_playerPet_enemy_nonbreak_basic_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Basic_Heavy",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_playerPet_enemy_nonbreak_basic_light": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Basic_Light",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "light"
+  },
+  "num_playerPet_enemy_nonbreak_basic_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Basic_Normal",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_playerPet_enemy_nonbreak_critical_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Critical_Heavy",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_playerPet_enemy_nonbreak_critical_light": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Critical_Light",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "light"
+  },
+  "num_playerPet_enemy_nonbreak_critical_normal": {
+    "damageType": "num",
+    "isBreakEnhance": "nonbreak",
+    "isCritical": "critical",
+    "resID": "UI_DamageNumber_Partner_Nonbreak_Critical_Normal",
+    "source": "playerPet",
+    "target": "enemy",
+    "ElementRelation": "normal"
+  },
+  "num_player_enemy_break_basic_heavy": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Break_Basic_Heavy",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "heavy"
+  },
+  "num_player_enemy_break_basic_light": {
+    "damageType": "num",
+    "isBreakEnhance": "break",
+    "isCritical": "basic",
+    "resID": "UI_DamageNumber_Partner_Break_Basic_Light",
+    "source": "player",
+    "target": "enemy",
+    "ElementRelation": "light"
+  }
+}

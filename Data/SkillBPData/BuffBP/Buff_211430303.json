@@ -1,0 +1,101 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "type": 2,
+      "max": 3,
+      "name": "initBossMechanismIcon",
+      "NodeID": 3,
+      "UID": "133ff528-4319-4e41-aec5-3896bf839e65",
+      "assetId": "$UI_Node_Hud_Boss_Property_Lightning.prefab",
+      "initProgress": 0,
+      "needFlash": false
+    },
+    "4": {
+      "UID": "6acc4bc9-0f47-4b73-9301-564a83bb28cf",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "c659393e-edba-48d7-b21a-3b659259de38",
+      "name": "hideBossMechanismIconVX",
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 211430301,
+      "name": "removeBuff",
+      "UID": "4c15fae6-3f56-4ffc-bda0-2659a6f0cec2",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "type": 2,
+      "max": 3,
+      "name": "initBossMechanismIcon",
+      "NodeID": 15,
+      "UID": "b5e091a5-4e2d-4c79-bb19-8ca6b3c61464",
+      "assetId": "$UI_Node_Hud_Boss_Property_Lightning.prefab",
+      "initProgress": 0,
+      "needFlash": false
+    },
+    "8": {
+      "actionIds": [
+        6,
+        9,
+        10,
+        11
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "ac09a201-eaa4-4342-8603-06e685f9a6cc",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "ffb3f4a1-0de8-4097-8108-725b1bb2a71a",
+      "name": "destroyBossMechanismIcon",
+      "NodeID": 9
+    },
+    "11": {
+      "buffId": 211430302,
+      "name": "removeBuff",
+      "UID": "a4dc2d03-5c0c-4784-b2fe-bfa69e21b6cd",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "14": {
+      "actionIds": [
+        12,
+        15
+      ],
+      "NodeID": 14,
+      "UID": "90df6791-2e42-473a-a7f4-98ff445a8f10",
+      "target": "OWNER",
+      "buffId": 10003,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": false,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    },
+    "12": {
+      "buffId": 2114303,
+      "name": "removeBuff",
+      "UID": "89dd0e15-b1e1-4eb4-ad50-d919ebaa740b",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_211430303",
+  "dynamicRPCStates": {},
+  "UID": "87114387-5dca-4449-b601-a675f855529f",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    14,
+    8
+  ]
+}

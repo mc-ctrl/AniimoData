@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_14230004",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 12800000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "11": {
+      "timelineId": 14230004001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 11
+    }
+  },
+  "onAbilityCastIds": [
+    11
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_GhostDance_S",
+    "Skill_Ghost"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10423_Skill_GhostDance01_hit01"
+  ],
+  "searchRelation": 2,
+  "name": "额外技能",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    14230000,
+    14230001,
+    14230002,
+    14230003
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1
+}

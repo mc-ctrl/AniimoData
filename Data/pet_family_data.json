@@ -1,0 +1,767 @@
+{
+  "1017": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2027770269,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530011,
+    "breakthroughItems": [
+      530011,
+      540002
+    ]
+  },
+  "1018": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1109083682,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530012,
+    "breakthroughItems": [
+      530012,
+      540003
+    ]
+  },
+  "1019": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1318777917,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530013,
+    "breakthroughItems": [
+      530013,
+      540002
+    ]
+  },
+  "1020": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1242718987,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530014,
+    "breakthroughItems": [
+      530014,
+      540010
+    ]
+  },
+  "1014": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2032549017,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530009,
+    "breakthroughItems": [
+      530009,
+      540007
+    ]
+  },
+  "1022": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1974977906,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530016,
+    "breakthroughItems": [
+      530016,
+      540007
+    ]
+  },
+  "1015": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1479307228
+  },
+  "1024": {
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1634980685,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530026,
+    "breakthroughItems": [
+      530026,
+      540009
+    ]
+  },
+  "1016": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1570155814,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530010,
+    "breakthroughItems": [
+      530010,
+      540008
+    ]
+  },
+  "1026": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2145858822,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530018,
+    "breakthroughItems": [
+      530018,
+      540003
+    ]
+  },
+  "1028": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1780967969,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530019,
+    "breakthroughItems": [
+      530019,
+      540008
+    ]
+  },
+  "1029": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1918383274
+  },
+  "2002": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2134444644,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530002,
+    "breakthroughItems": [
+      530002,
+      540003
+    ]
+  },
+  "1032": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1753923237,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530020,
+    "breakthroughItems": [
+      530020,
+      540010
+    ]
+  },
+  "1033": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1856646668,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530022,
+    "breakthroughItems": [
+      530022,
+      540001
+    ]
+  },
+  "1035": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1093536181,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530021,
+    "breakthroughItems": [
+      530021,
+      540011
+    ]
+  },
+  "1036": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1974043931,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530023,
+    "breakthroughItems": [
+      530023,
+      540012
+    ]
+  },
+  "1037": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1616377391,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530024,
+    "breakthroughItems": [
+      530024,
+      540012
+    ]
+  },
+  "1038": {
+    "enhanceItem": [
+      533002,
+      0
+    ],
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1074527345
+  },
+  "1039": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1250143314
+  },
+  "1040": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1935979638
+  },
+  "1042": {
+    "enhanceItem": [
+      533002,
+      0
+    ],
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1801836118
+  },
+  "1043": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1245700227
+  },
+  "1044": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1348854547
+  },
+  "1045": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1794369520,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530025,
+    "breakthroughItems": [
+      530025,
+      540008
+    ]
+  },
+  "1046": {
+    "enhanceItem": [
+      533002,
+      0
+    ],
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1590698642
+  },
+  "1047": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1200256755
+  },
+  "1048": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2046045924
+  },
+  "1050": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1701500917
+  },
+  "1051": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1303325137
+  },
+  "1072": {
+    "enhanceItem": [
+      533002,
+      0
+    ],
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1487300046
+  },
+  "1001": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1706343569,
+    "enhanceClothes": 823001,
+    "enhanceCondition": 1304,
+    "breakthroughItem": 530001,
+    "breakthroughItems": [
+      530001,
+      540011
+    ]
+  },
+  "1003": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1831913401,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530004,
+    "breakthroughItems": [
+      530004,
+      540011
+    ]
+  },
+  "1004": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1192295296,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530005,
+    "breakthroughItems": [
+      530005,
+      540002
+    ]
+  },
+  "1005": {
+    "canCommunicateEthnicGroup": {
+      "1013": true
+    },
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2113020918,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530006,
+    "breakthroughItems": [
+      530006,
+      540001
+    ]
+  },
+  "1007": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1242625323
+  },
+  "1002": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1618859611,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530003,
+    "breakthroughItems": [
+      530003,
+      540011
+    ]
+  },
+  "1008": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2000421410
+  },
+  "1062": {
+    "enhanceItem": [
+      533002,
+      0
+    ],
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1753446331
+  },
+  "1058": {
+    "enhanceItem": [
+      533002,
+      0
+    ],
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "name": 1860878834
+  },
+  "1013": {
+    "canCommunicateEthnicGroup": {
+      "1005": true
+    },
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2104034649,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530008,
+    "breakthroughItems": [
+      530008,
+      540006
+    ]
+  },
+  "1012": {
+    "enhanceItem": [
+      533001,
+      101221
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1609115184,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530007,
+    "breakthroughItems": [
+      530007,
+      540007
+    ]
+  },
+  "1021": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1075139735,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530015,
+    "breakthroughItems": [
+      530015,
+      540010
+    ]
+  },
+  "1023": {
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 1310125351,
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "breakthroughItem": 530017,
+    "breakthroughItems": [
+      530017,
+      540003
+    ]
+  },
+  "6999": {
+    "potentialPointItems": [
+      151001,
+      151002,
+      151003
+    ],
+    "enhanceItem": [
+      533001,
+      0
+    ],
+    "equipmentBindNeedItem": {
+      "510102": 10
+    },
+    "name": 2077388507
+  }
+}

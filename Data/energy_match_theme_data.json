@@ -1,0 +1,277 @@
+[
+  {
+    "101": {
+      "displayScore": 620,
+      "duration": [
+        1,
+        8
+      ],
+      "formBonus": [
+        [
+          1,
+          200
+        ],
+        [
+          2,
+          150
+        ],
+        [
+          3,
+          100
+        ]
+      ],
+      "newBonus": 1.2,
+      "taskName": 1756222064,
+      "uiTheme": 5,
+      "1": [
+        2,
+        0
+      ],
+      "award": [
+        [
+          300,
+          100068
+        ],
+        [
+          400,
+          100069
+        ],
+        [
+          500,
+          100070
+        ],
+        [
+          600,
+          100071
+        ]
+      ],
+      "accessoryTheme": [
+        1,
+        2,
+        3
+      ],
+      "accessoryTry": [
+        821002,
+        825015
+      ],
+      "2": [
+        3,
+        100
+      ],
+      "baseScore": 20,
+      "bgNo": 2,
+      "bonusAttribute1": [
+        "Grass"
+      ],
+      "bonusAttribute3": [
+        201,
+        301
+      ],
+      "bonusIcon1": "$UI_IconTMP_Element_Grass.png",
+      "bonusIcon2": "$UI_Icon_PetAge03.png",
+      "bonusIcon3": "$UI_Icon_PetFertility_E.png",
+      "bonusName1": 2010222674,
+      "bonusName2": 1723468344,
+      "bonusName3": 1079363176,
+      "bonusScore1": [
+        100
+      ],
+      "bonusScore2": [
+        1,
+        0
+      ],
+      "bonusScore3": [
+        100
+      ],
+      "bonusType1": "attribute",
+      "bonusType2": "evolution",
+      "bonusType3": "personality"
+    }
+  },
+  {
+    "201": {
+      "displayScore": 620,
+      "duration": [
+        1,
+        8
+      ],
+      "formBonus": [
+        [
+          1,
+          200
+        ],
+        [
+          2,
+          150
+        ],
+        [
+          3,
+          100
+        ]
+      ],
+      "newBonus": 1.2,
+      "taskName": 1076132128,
+      "uiTheme": 0,
+      "bgNo": 7,
+      "baseScore": 20,
+      "accessoryTry": [
+        821015,
+        825005
+      ],
+      "award": [
+        [
+          300,
+          100068
+        ],
+        [
+          400,
+          100069
+        ],
+        [
+          500,
+          100070
+        ],
+        [
+          600,
+          100071
+        ]
+      ],
+      "accessoryTheme": [
+        2,
+        6,
+        7
+      ],
+      "1": [
+        2,
+        100
+      ],
+      "2": [
+        3,
+        100
+      ],
+      "3": [
+        2,
+        0
+      ],
+      "4": [
+        3,
+        100
+      ],
+      "bonusAttribute1": [
+        "canSwim"
+      ],
+      "bonusAttribute3": [
+        "Water"
+      ],
+      "bonusIcon1": "$UI_Icon_PetChar_Swim.png",
+      "bonusIcon2": "$UI_Icon_PetAge03.png",
+      "bonusIcon3": "$UI_IconTMP_Element_Water.png",
+      "bonusName1": 1648143407,
+      "bonusName2": 1381323602,
+      "bonusName3": 1912645597,
+      "bonusScore1": [
+        1,
+        100
+      ],
+      "bonusScore2": [
+        1,
+        0
+      ],
+      "bonusScore3": [
+        100
+      ],
+      "bonusType1": "ability",
+      "bonusType2": "evolution",
+      "bonusType3": "attribute"
+    }
+  },
+  {
+    "301": {
+      "displayScore": 620,
+      "duration": [
+        1,
+        8
+      ],
+      "formBonus": [
+        [
+          1,
+          200
+        ],
+        [
+          2,
+          150
+        ],
+        [
+          3,
+          100
+        ]
+      ],
+      "newBonus": 1.2,
+      "taskName": 1446016503,
+      "uiTheme": 2,
+      "1": [
+        2,
+        0
+      ],
+      "award": [
+        [
+          300,
+          100068
+        ],
+        [
+          400,
+          100069
+        ],
+        [
+          500,
+          100070
+        ],
+        [
+          600,
+          100071
+        ]
+      ],
+      "accessoryTheme": [
+        2,
+        8,
+        9
+      ],
+      "accessoryTry": [
+        825006,
+        821018
+      ],
+      "2": [
+        3,
+        0
+      ],
+      "baseScore": 20,
+      "bgNo": 6,
+      "bonusAttribute1": [
+        "night"
+      ],
+      "bonusAttribute3": [
+        202,
+        302
+      ],
+      "bonusIcon1": "$UI_Img_PetManage_InfoTab1_Selected.png",
+      "bonusIcon2": "$UI_Icon_PetAge01.png",
+      "bonusIcon3": "$UI_Icon_PetFertility_I.png",
+      "bonusName1": 1912659685,
+      "bonusName2": 1789694149,
+      "bonusName3": 1894529198,
+      "bonusScore1": [
+        100
+      ],
+      "bonusScore2": [
+        1,
+        100
+      ],
+      "bonusScore3": [
+        100
+      ],
+      "bonusType1": "form",
+      "bonusType2": "evolution",
+      "bonusType3": "personality"
+    }
+  }
+]

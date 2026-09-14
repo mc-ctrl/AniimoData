@@ -1,0 +1,42 @@
+[
+  {
+    "valueName": 1941811751,
+    "valueColor": "Q_1",
+    "valueStage": [
+      0,
+      22499
+    ]
+  },
+  {
+    "valueName": 1787767887,
+    "valueColor": "Q_2",
+    "valueStage": [
+      22500,
+      44999
+    ]
+  },
+  {
+    "valueName": 1571657792,
+    "valueColor": "Q_3",
+    "valueStage": [
+      45000,
+      89999
+    ]
+  },
+  {
+    "valueName": 1240397510,
+    "valueColor": "Q_4",
+    "valueStage": [
+      90000,
+      224999
+    ]
+  },
+  {
+    "valueName": 1815050334,
+    "valueColor": "Q_5",
+    "valueStage": [
+      225000,
+      99999999
+    ]
+  }
+]

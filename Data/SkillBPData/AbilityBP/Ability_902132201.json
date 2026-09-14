@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_QtAoe_02"
+  ],
+  "searchTargetRangeRadius": 3,
+  "BPName": "ability_902132201",
+  "name": "",
+  "UID": "21d347c4-1fee-4def-b06d-c94f129c8234",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 49222011,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902132201001,
+      "name": "setCombatActionTimeline",
+      "UID": "f2fc1c0d-808a-4104-859f-0c8eee497b0b",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

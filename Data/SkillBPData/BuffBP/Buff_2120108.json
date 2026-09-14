@@ -1,0 +1,54 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "dee70b9c-e4a3-4abb-baf0-1167aa237614",
+      "actorId": {
+        "UID": "b8c846db-8c59-4d6e-b55e-37d44397fc23",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 2
+      },
+      "name": "destroyEntity",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "4f6f8594-81bf-4e8d-809f-411b814d5751",
+      "target": "MASTER",
+      "NodeID": 4
+    },
+    "7": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerDeadEvent",
+      "UID": "4ecc29f1-7afa-4edc-9bcc-26e0f1879007",
+      "target": "MASTER",
+      "NodeID": 7
+    },
+    "6": {
+      "eventName": "unSummon",
+      "NodeID": 6,
+      "UID": "02f0dabb-017b-4434-8ba1-0619a5bebe9b",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        3
+      ]
+    }
+  },
+  "BPName": "buff_2120108",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    6,
+    7
+  ]
+}

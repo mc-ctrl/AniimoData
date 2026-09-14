@@ -1,0 +1,4949 @@
+{
+  "51190315": {
+    "areaType": 999,
+    "autoSave": false,
+    "chunk": 1018850,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51289733,
+    "levelItems": {
+      "60459776": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply",
+        "position": [
+          48.47,
+          18.53,
+          -3.04
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 60459776,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "54926261": {
+        "majorCompId": 72050842,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_TempleLight",
+        "position": [
+          41.28,
+          23.15,
+          -46.2
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 54926261,
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "configId": 256,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56741959": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          95.95,
+          19.65,
+          -40.61
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 21,
+        "serializeVersion": 3,
+        "id": 56741959,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                -0.08,
+                8,
+                0.06
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56741962": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (1)",
+        "position": [
+          87.88,
+          19.69,
+          -40.58
+        ],
+        "siblingIndex": 20,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56741962,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0.01,
+                7.85,
+                0.19
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56741989": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (2)",
+        "position": [
+          80.03,
+          19.69,
+          -40.61
+        ],
+        "siblingIndex": 23,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56741989,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0.01,
+                7.82,
+                0.25
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742003": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (3)",
+        "position": [
+          72.53,
+          19.69,
+          -40.6
+        ],
+        "siblingIndex": 30,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742003,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0.01,
+                7.6,
+                0.36
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742004": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (4)",
+        "position": [
+          64.85,
+          19.69,
+          -40.6
+        ],
+        "siblingIndex": 26,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742004,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                7.68,
+                0.31
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742033": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (5)",
+        "position": [
+          95.95,
+          21.65,
+          -27.62
+        ],
+        "siblingIndex": 25,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742033,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                -0.09,
+                7.89,
+                -0.28
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742035": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (6)",
+        "position": [
+          88.29,
+          21.66,
+          -27.62
+        ],
+        "siblingIndex": 28,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742035,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                -0.11,
+                7.88,
+                -0.31
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "66581760": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          -14.03,
+          35.08,
+          -46.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 9,
+        "serializeVersion": 3,
+        "id": 66581760,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              -14.03,
+              35.08,
+              -46.05
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                37.18,
+                -16,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742049": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (7)",
+        "position": [
+          79.97,
+          21.63,
+          -27.62
+        ],
+        "siblingIndex": 27,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742049,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                -0.01,
+                7.9,
+                -0.26
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742090": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (8)",
+        "position": [
+          72.49,
+          21.64,
+          -27.62
+        ],
+        "siblingIndex": 29,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742090,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                9,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0.12,
+                7.93,
+                -0.17
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742092": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (9)",
+        "position": [
+          64.69,
+          19.69,
+          -27.62
+        ],
+        "siblingIndex": 22,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742092,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "66581402": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          51.8,
+          18.09,
+          -47.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 66581402,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              51.8,
+              18.09,
+              -47.13
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                44,
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742119": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (10)",
+        "position": [
+          95.95,
+          19.69,
+          -13.24
+        ],
+        "siblingIndex": 31,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742119,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                6,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                3,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "64856463": {
+        "majorCompId": 72629573,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TempleLinePort",
+        "position": [
+          112.92,
+          23.66,
+          -22.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 13,
+        "id": 64856463,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 355,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742120": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (11)",
+        "position": [
+          88.38,
+          19.69,
+          -13.28
+        ],
+        "siblingIndex": 19,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742120,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                6,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                3,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "64856433": {
+        "majorCompId": 72629573,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TempleLinePort",
+        "position": [
+          112.94,
+          23.66,
+          -27.73
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 7,
+        "id": 64856433,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 355,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742174": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (12)",
+        "position": [
+          80.1,
+          19.69,
+          -13.21
+        ],
+        "siblingIndex": 1,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742174,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                6,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                3,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "64856425": {
+        "majorCompId": 72629573,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TempleLinePort",
+        "position": [
+          112.9,
+          23.68,
+          -32.79
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 8,
+        "id": 64856425,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 355,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742175": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (13)",
+        "position": [
+          72.7,
+          19.69,
+          -13.21
+        ],
+        "siblingIndex": 18,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742175,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                6,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                3,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "60369272": {
+        "majorCompId": 74305925,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_PowerSupply",
+        "position": [
+          37.16,
+          18.52,
+          -2.87
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "siblingIndex": 6,
+        "id": 60369272,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742278": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (14)",
+        "position": [
+          64.99,
+          19.69,
+          -13.19
+        ],
+        "siblingIndex": 17,
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742278,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              4,
+              16,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                6,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                3,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "60276050": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply",
+        "position": [
+          -66.8,
+          47.52,
+          -26.92
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "siblingIndex": 15,
+        "id": 60276050,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742279": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          39.78,
+          18.37,
+          -15.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 16,
+        "serializeVersion": 3,
+        "id": 56742279,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742319": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          19.02,
+          23.45,
+          -9.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 12,
+        "serializeVersion": 3,
+        "id": 56742319,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56742343": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (15)",
+        "position": [
+          -3.02,
+          28.45,
+          -9.09
+        ],
+        "siblingIndex": 14,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "id": 56742343,
+        "path": "",
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "56748273": {
+        "majorCompId": 56996091,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_EndingMachine_MultiPlayer",
+        "position": [
+          -46.73,
+          35.34,
+          -27.41
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 11,
+        "id": 56748273,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 135,
+        "defaultValue": {
+          "ownerPassTime": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51883206": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          -24.45,
+          37.31,
+          -48.03
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51883206,
+        "siblingIndex": 24,
+        "serializeVersion": 3,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51989218": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          48.05,
+          18.4,
+          -47.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51989218,
+        "siblingIndex": 10,
+        "serializeVersion": 3,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "52574185": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          41.29,
+          18.6,
+          -46.7
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 52574185,
+        "siblingIndex": 5,
+        "serializeVersion": 3,
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "52659557": {
+        "majorCompId": 0,
+        "scale": [
+          20,
+          5,
+          20
+        ],
+        "EditorName": "P_Item_Trigger_SB_FanControl",
+        "position": [
+          119.02,
+          26.12,
+          -27.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 52659557,
+        "siblingIndex": 4,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 1001,
+    "publishTags": [
+      "3DAY_神庙"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 1024,
+    "sightLevelType": 1024,
+    "spawners": [
+      51205273,
+      51205310,
+      51205326,
+      51205347,
+      51272167,
+      51288986,
+      51289223,
+      51289486,
+      51289499,
+      51289532,
+      51289555,
+      51291697,
+      51373190,
+      51373288,
+      51373313,
+      51373316,
+      51373340,
+      51373341,
+      51373358,
+      51373381,
+      51373412,
+      51373413,
+      51459715,
+      51876905,
+      51877607,
+      51877782,
+      51877799,
+      51878109,
+      51878221,
+      51878720,
+      51878859,
+      51878921,
+      51879016,
+      51879074,
+      52054379,
+      52064645,
+      54406331,
+      54406471,
+      56734234,
+      56909900,
+      56909976,
+      56909984,
+      60621617
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2005/Sandbox_51190315_GraphRef.asset",
+    "position": [
+      -34.95,
+      35.3,
+      -38.87
+    ],
+    "owner": "徐一乘",
+    "forceSync": true,
+    "id": 51190315,
+    "autoEndType": 0
+  },
+  "50597751": {
+    "owner": "徐一乘",
+    "position": [
+      -43.79,
+      1.82,
+      19.19
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 50774537,
+    "levelItems": {
+      "64755869": {
+        "majorCompId": 74305865,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_EmptyAbsorber_SB",
+        "position": [
+          70.01,
+          24.29,
+          35.16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64755869,
+        "componentsInfo": {
+          "74305865": {
+            "speed": 3
+          },
+          "52068266": {
+            "expressionKey": "64755869_52068266",
+            "detectType": 128
+          },
+          "64146362": {
+            "center": [
+              -0.7,
+              0,
+              0
+            ],
+            "size": [
+              1,
+              1.5,
+              1.5
+            ]
+          }
+        },
+        "configId": 350,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56741784": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          85.15,
+          27.56,
+          31.87
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 56741784,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              11,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                5.5,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                4.5,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              6.1,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "57005292": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_Trigger_SB_r3",
+        "position": [
+          46.08,
+          21.34,
+          24.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 57005292,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          3,
+          5,
+          6.64
+        ],
+        "isActive": true
+      },
+      "65112606": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB_r4",
+        "position": [
+          72.56,
+          21.34,
+          25.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 65112606,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          3,
+          5,
+          6.64
+        ],
+        "isActive": true
+      },
+      "57005470": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_Trigger_SB_r5",
+        "position": [
+          113.04,
+          23.31,
+          3.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 57005470,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          10,
+          10,
+          3
+        ],
+        "isActive": true
+      },
+      "65715113": {
+        "majorCompId": 72050842,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_TempleLight (2)",
+        "position": [
+          -38.05,
+          6.87,
+          25.99
+        ],
+        "rotation": [
+          90,
+          270,
+          0
+        ],
+        "id": 65715113,
+        "configId": 256,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "57150813": {
+        "majorCompId": 56996091,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Stela",
+        "position": [
+          37.22,
+          19.66,
+          24.78
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 57150813,
+        "configId": 278,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "57151006": {
+        "majorCompId": 56996091,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Stela",
+        "position": [
+          115.2,
+          19.65,
+          10.78
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 57151006,
+        "configId": 278,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59917973": {
+        "majorCompId": 58031210,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          -25.49,
+          1.82,
+          39.16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59917973,
+        "componentsInfo": {
+          "60348572": {
+            "bindLevelItemIds": [
+              59926897
+            ],
+            "initPosition": [
+              -25.49,
+              1.82,
+              39.16
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                8.28,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59926897": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_Electric_Connect_Particle",
+        "position": [
+          -25.5,
+          2.11,
+          40.32
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 59926897,
+        "componentsInfo": {
+          "59339842": {
+            "localPosition": [
+              0.45,
+              -0.04,
+              0.01
+            ]
+          }
+        },
+        "configId": 323,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59927968": {
+        "majorCompId": 58031210,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          23.87,
+          17.58,
+          39.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59927968,
+        "componentsInfo": {
+          "60348572": {
+            "bindLevelItemIds": [
+              0
+            ],
+            "initPosition": [
+              23.87,
+              17.58,
+              39.49
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -19.47,
+                0,
+                0
+              ],
+              [
+                -19.47,
+                -15.44,
+                0
+              ],
+              [
+                -19.47,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59928850": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          38.57,
+          21.97,
+          33.54
+        ],
+        "rotation": [
+          0,
+          269.32,
+          0
+        ],
+        "id": 59928850,
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59931214": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_MachineGate_4m",
+        "position": [
+          42.57,
+          19.66,
+          24.76
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 59931214,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59932135": {
+        "majorCompId": 72050842,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_TempleLight",
+        "position": [
+          38.53,
+          26.93,
+          33.06
+        ],
+        "rotation": [
+          0,
+          270,
+          90
+        ],
+        "id": 59932135,
+        "configId": 256,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59932754": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_MachineGate_8m",
+        "position": [
+          115.4,
+          19.65,
+          5.97
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59932754,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59933394": {
+        "majorCompId": 58031210,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          81.94,
+          19.67,
+          18.96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59933394,
+        "componentsInfo": {
+          "60348572": {
+            "bindLevelItemIds": [
+              59933503
+            ],
+            "initPosition": [
+              81.94,
+              19.67,
+              18.96
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                7.63,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59933503": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_Electric_Connect_Particle",
+        "position": [
+          83.18,
+          19.97,
+          18.97
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59933503,
+        "componentsInfo": {
+          "59339842": {
+            "localPosition": [
+              0.35,
+              -0.02,
+              0.05
+            ]
+          }
+        },
+        "configId": 323,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59933672": {
+        "majorCompId": 58031210,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          47.21,
+          19.68,
+          11.48
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59933672,
+        "componentsInfo": {
+          "60348572": {
+            "bindLevelItemIds": [
+              59935043
+            ],
+            "initPosition": [
+              47.21,
+              19.68,
+              11.48
+            ],
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                6.79,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59935043": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_Electric_Connect_Particle",
+        "position": [
+          47.21,
+          19.98,
+          10.3
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 59935043,
+        "componentsInfo": {
+          "59339842": {
+            "localPosition": [
+              0.5,
+              -0.02,
+              0.01
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 323,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59936424": {
+        "majorCompId": 42742113,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_DeathBox_SB_Room3",
+        "position": [
+          57.56,
+          14.68,
+          25.93
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59936424,
+        "componentsInfo": {
+          "42742113": {
+            "detectType": 128,
+            "expressionKey": "59936424_42742113",
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          5.19,
+          1,
+          40.73
+        ],
+        "isActive": true
+      },
+      "72206961": {
+        "majorCompId": 72193952,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_RevivalPoint",
+        "position": [
+          -33.27,
+          1.82,
+          27.84
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72206961,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              -0.71,
+              0.41,
+              -1.21
+            ],
+            "localScale": [
+              4,
+              1,
+              6.46
+            ]
+          },
+          "72193952": {
+            "savePointId": 66045957
+          }
+        },
+        "configId": 395,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "59936936": {
+        "majorCompId": 55004214,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_WaterMechanism",
+        "position": [
+          57.2,
+          21.81,
+          9.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 59936936,
+        "configId": 259,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60275664": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply",
+        "position": [
+          -38.03,
+          6.96,
+          17.74
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 60275664,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60275750": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply",
+        "position": [
+          -17.6,
+          10.24,
+          36.93
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 60275750,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          0.5,
+          1,
+          0.5
+        ],
+        "isActive": true
+      },
+      "72224509": {
+        "majorCompId": 72193952,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_RevivalPoint",
+        "position": [
+          118.3,
+          19.61,
+          1.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72224509,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              -2.92,
+              0.48,
+              1.13
+            ],
+            "localScale": [
+              10.51,
+              1,
+              4
+            ]
+          },
+          "72193952": {
+            "savePointId": 57005472
+          }
+        },
+        "configId": 395,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "72224501": {
+        "majorCompId": 72193952,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_RevivalPoint",
+        "position": [
+          47.34,
+          19.67,
+          26.54
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 72224501,
+        "componentsInfo": {
+          "72198956": {
+            "localPosition": [
+              -0.98,
+              0.53,
+              -1.87
+            ],
+            "localScale": [
+              4,
+              1,
+              8.26
+            ]
+          },
+          "72193952": {
+            "savePointId": 57005175
+          }
+        },
+        "configId": 395,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "66590260": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Box_Wind",
+        "position": [
+          93.23,
+          22.95,
+          25.72
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 66590260,
+        "componentsInfo": {
+          "49544975": {
+            "size": [
+              8,
+              10,
+              8
+            ]
+          },
+          "42658052": {
+            "power": 84.3
+          }
+        },
+        "configId": 56,
+        "defaultValue": {
+          "flame": 0,
+          "state": 2
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "66580735": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          106.01,
+          20.03,
+          19.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66580735,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              106.01,
+              20.03,
+              19.02
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -16,
+                7.2,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "66569225": {
+        "majorCompId": 58031210,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_LevelItem_Platform_Pro",
+        "position": [
+          -49.05,
+          1.51,
+          33.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66569225,
+        "componentsInfo": {
+          "60348572": {
+            "initRotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "initPosition": [
+              -49.05,
+              1.51,
+              33.59
+            ]
+          },
+          "58031210": {
+            "path": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                -10.76,
+                0
+              ]
+            ]
+          }
+        },
+        "configId": 301,
+        "defaultValue": {
+          "performState": 0,
+          "movingState": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "66052653": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB_Tips1",
+        "position": [
+          -82.71,
+          -8.15,
+          25.96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66052653,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          2.74,
+          5.63,
+          13.57
+        ],
+        "isActive": true
+      },
+      "66049654": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "Room2_state",
+        "position": [
+          -31.45,
+          1.82,
+          25.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66049654,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "66046003": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_Trigger_SB_r2",
+        "position": [
+          -32.99,
+          1.85,
+          25.84
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 66046003,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5,
+              5,
+              7
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "65733295": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_MachineGate_4m",
+        "position": [
+          -37.04,
+          1.83,
+          26.02
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 65733295,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "65730321": {
+        "majorCompId": 74305925,
+        "owner": "徐一乘",
+        "EditorName": "P_TempleComponent_PowerSupply (1)",
+        "position": [
+          -36.15,
+          6.96,
+          17.74
+        ],
+        "rotation": [
+          0,
+          180,
+          90
+        ],
+        "id": 65730321,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "65724430": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (4)",
+        "position": [
+          123.7,
+          30.06,
+          18.97
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "id": 65724430,
+        "componentsInfo": {
+          "70043992": {
+            "localPosition": [
+              0,
+              -4.69,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -6.76,
+              0
+            ],
+            "size": [
+              4.5,
+              13.8,
+              4.5
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                0.1,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                -1.55,
+                0
+              ]
+            },
+            "power": 84.3
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              36.28,
+              0
+            ],
+            "localScale": [
+              1,
+              2.62,
+              1
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "64856670": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_TempleComponent_MachineGate_4m",
+        "position": [
+          70.06,
+          19.65,
+          26
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 64856670,
+        "configId": 192,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "50859112": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_TempleMachine_Statue",
+        "position": [
+          -69.33,
+          -9.73,
+          35.55
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 50859112,
+        "componentsInfo": {
+          "53631173": {
+            "canReturn": true,
+            "noticeKey": "STATUEGUIDE_TEMPLE_03",
+            "realCharacters": "RACING",
+            "tempPetTemplateId": 100310002,
+            "guideId": 103420
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "canReturn": true,
+          "noticeKey": "STATUEGUIDE_TEMPLE_03",
+          "realCharacters": "RACING",
+          "tempPetTemplateId": 100310002,
+          "guideId": 103420
+        },
+        "isActive": true
+      },
+      "54919043": {
+        "majorCompId": 72050842,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_TempleLight",
+        "position": [
+          69.32,
+          24.37,
+          15.24
+        ],
+        "rotation": [
+          90,
+          270,
+          0
+        ],
+        "id": 54919043,
+        "configId": 256,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "50859133": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_TempleMachine_Statue (1)",
+        "position": [
+          -69.37,
+          -9.75,
+          16.17
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 50859133,
+        "componentsInfo": {
+          "53631173": {
+            "canReturn": true,
+            "noticeKey": "STATUEGUIDE_TEMPLE_03",
+            "realCharacters": "RACING",
+            "tempPetTemplateId": 102210001,
+            "guideId": 103410
+          }
+        },
+        "configId": 120,
+        "defaultValue": {
+          "canReturn": true,
+          "noticeKey": "STATUEGUIDE_TEMPLE_03",
+          "realCharacters": "RACING",
+          "tempPetTemplateId": 102210001,
+          "guideId": 103410
+        },
+        "path": "",
+        "isActive": true
+      },
+      "56741668": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (7)",
+        "position": [
+          19.38,
+          5.08,
+          33.03
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 56741668,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -0.2,
+              0
+            ],
+            "size": [
+              4,
+              17.5,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                8,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                -7.62,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "51298679": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger-water1",
+        "position": [
+          53.26,
+          21.09,
+          31.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51298679,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "60275874": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply",
+        "position": [
+          40.56,
+          31.65,
+          24.74
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 60275874,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "51443397": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_LevelItem_Fence_R21",
+        "position": [
+          35.03,
+          26.11,
+          14.87
+        ],
+        "rotation": [
+          0,
+          0,
+          270
+        ],
+        "id": 51443397,
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "56741632": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (5)",
+        "position": [
+          12.24,
+          1.8,
+          37.8
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 56741632,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "51463914": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container-water11",
+        "position": [
+          57.6,
+          18.04,
+          25.63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51463914,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "isActive": true
+      },
+      "56741335": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          -50.9,
+          -9.74,
+          17.98
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56741335,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "51464010": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container-water11 (1)",
+        "position": [
+          57.54,
+          15.08,
+          25.63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51464010,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "templateId": 0,
+        "isActive": true
+      },
+      "56741628": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (3)",
+        "position": [
+          12.24,
+          1.8,
+          33.03
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 56741628,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "51810028": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          -45.41,
+          1.8,
+          33.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51810028,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "51879833": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger (2)",
+        "position": [
+          32.73,
+          23.87,
+          37.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51879833,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "isActive": true
+      },
+      "51882578": {
+        "majorCompId": 50866965,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          109.36,
+          20.31,
+          19.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 51882578,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "isActive": true
+      },
+      "52412952": {
+        "majorCompId": 42742113,
+        "scale": [
+          78.86,
+          2,
+          42
+        ],
+        "EditorName": "P_Item_DeathBox_SB_Room2",
+        "position": [
+          1.63,
+          -7.89,
+          25.79
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 52412952,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerReviveType": 1,
+            "blackScreenId": 2000,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "isActive": true
+      },
+      "60275799": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply (2)",
+        "position": [
+          -17.66,
+          8.35,
+          36.93
+        ],
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "id": 60275799,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          0.5,
+          1,
+          0.5
+        ],
+        "isActive": true
+      },
+      "52502221": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_ElectricAnd",
+        "position": [
+          -13.49,
+          1.83,
+          33.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 52502221,
+        "configId": 171,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "52502390": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_ElectricAnd",
+        "position": [
+          64.27,
+          24.34,
+          10.02
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 52502390,
+        "configId": 171,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "isActive": true
+      },
+      "60275907": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply (3)",
+        "position": [
+          44.47,
+          31.92,
+          24.78
+        ],
+        "rotation": [
+          0,
+          180,
+          90
+        ],
+        "id": 60275907,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56730798": {
+        "majorCompId": 42742113,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_DeathBox_SB (2)_Room3",
+        "position": [
+          93.44,
+          5.42,
+          25.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56730798,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerReviveType": 1,
+            "blackScreenId": 2000,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          48.75,
+          2,
+          40.5
+        ],
+        "isActive": true
+      },
+      "60275970": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply",
+        "position": [
+          115.54,
+          32.11,
+          6.65
+        ],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "id": 60275970,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "60276001": {
+        "majorCompId": 74305925,
+        "owner": "peng.ding",
+        "EditorName": "P_TempleComponent_PowerSupply (4)",
+        "position": [
+          115.5,
+          31.67,
+          5.18
+        ],
+        "rotation": [
+          90,
+          180,
+          0
+        ],
+        "id": 60276001,
+        "configId": 330,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56741433": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient",
+        "position": [
+          -26.39,
+          1.82,
+          15.57
+        ],
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "id": 56741433,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "61740538": {
+        "majorCompId": 61568800,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_LevelItem_MovableWater1",
+        "position": [
+          57.47,
+          16.16,
+          25.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 61740538,
+        "componentsInfo": {
+          "61568800": {
+            "scale": [
+              4,
+              6,
+              32
+            ],
+            "blendToPos": [
+              0,
+              3,
+              0
+            ]
+          }
+        },
+        "configId": 338,
+        "defaultValue": {
+          "blendInExp": 2,
+          "blendInFunc": 0,
+          "blendOutDuration": 2,
+          "blendOutExp": 2,
+          "blendOutFunc": 0,
+          "state": 0,
+          "blendInDuration": 2
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56741627": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (2)",
+        "position": [
+          5.97,
+          1.8,
+          33.08
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 56741627,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              18,
+              4
+            ]
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              4.42,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62184394": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "camera_state1",
+        "position": [
+          -31.39,
+          4.71,
+          37.73
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62184394,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62184761": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "camera_state2",
+        "position": [
+          45.5,
+          19.67,
+          16.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62184761,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "62184959": {
+        "majorCompId": 0,
+        "owner": "徐一乘",
+        "EditorName": "camera_state3",
+        "position": [
+          52.07,
+          19.67,
+          27.38
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 62184959,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "64514591": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          0.91,
+          3.66,
+          39.56
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64514591,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "64515367": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          27.22,
+          20.08,
+          37.88
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64515367,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "64516353": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          103.24,
+          21.51,
+          -48.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64516353,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "64516700": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          47.83,
+          20.1,
+          -46.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64516700,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          5,
+          4,
+          8
+        ],
+        "isActive": true
+      },
+      "64517495": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          34.5,
+          20.22,
+          -45.69
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64517495,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4,
+          4,
+          4
+        ],
+        "isActive": true
+      },
+      "64517657": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -17.64,
+          37.07,
+          -40.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64517657,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          4,
+          4,
+          12
+        ],
+        "isActive": true
+      },
+      "64682027": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_Fence (1)",
+        "position": [
+          69.7,
+          19.81,
+          15.18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 64682027,
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56730868": {
+        "majorCompId": 42742113,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_DeathBox_SB (2)_Room4",
+        "position": [
+          3.51,
+          -1.45,
+          -27.11
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56730868,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "playerReviveType": 1,
+            "blackScreenId": 2000,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          80,
+          2,
+          55.57
+        ],
+        "isActive": true
+      },
+      "64686909": {
+        "majorCompId": 72050842,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_LevelItem_TempleLight (1)",
+        "position": [
+          69.32,
+          24.37,
+          25.99
+        ],
+        "rotation": [
+          90,
+          270,
+          0
+        ],
+        "id": 64686909,
+        "configId": 256,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56730864": {
+        "majorCompId": 42742113,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_DeathBox_SB_Room4",
+        "position": [
+          83.65,
+          6.2,
+          -26.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 56730864,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.2,
+            "blackScreenId": 2000,
+            "playerReviveType": 1,
+            "detectType": 131,
+            "envobjReviveType": 1
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          80,
+          2,
+          55
+        ],
+        "isActive": true
+      },
+      "64687511": {
+        "majorCompId": 0,
+        "owner": "钟雪儿",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (1)",
+        "position": [
+          81.17,
+          19.67,
+          31.92
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 64687511,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "size": [
+              4,
+              11,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                5.5,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                4.5,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              6.09,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "56741783": {
+        "majorCompId": 0,
+        "owner": "peng.ding",
+        "EditorName": "P_Item_SceneObject_Electric_Fan_Ancient (8)",
+        "position": [
+          19.38,
+          5.08,
+          37.93
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 56741783,
+        "componentsInfo": {
+          "70043992": {
+            "localEulerAngles": [
+              0,
+              180,
+              0
+            ]
+          },
+          "55768844": {
+            "center": [
+              0,
+              -0.2,
+              0
+            ],
+            "size": [
+              4,
+              17.5,
+              4
+            ]
+          },
+          "55186433": {
+            "shape": {
+              "endPosition": [
+                0,
+                8,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                -7.62,
+                0
+              ]
+            }
+          },
+          "55768845": {
+            "localPosition": [
+              0,
+              9.5,
+              0
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              0
+            ]
+          }
+        },
+        "configId": 384,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "poiType": 1001,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "全局_箱庭关卡_Temple03",
+    "spawners": [
+      50597766,
+      50597769,
+      50597773,
+      50597818,
+      50752847,
+      50753021,
+      50774405,
+      50839796,
+      50839825,
+      50855171,
+      50941435,
+      50941516,
+      51202401,
+      51205517,
+      51206840,
+      51212088,
+      51388575,
+      51388734,
+      51388745,
+      51444537,
+      51445345,
+      51445598,
+      51445605,
+      51448765,
+      51470106,
+      51470112,
+      51810450,
+      51811993,
+      51812026,
+      51813807,
+      51813952,
+      51814286,
+      51814313,
+      51814379,
+      51814452,
+      51814500,
+      51814657,
+      51814691,
+      51819848,
+      51882412,
+      51981877,
+      51981927,
+      51989033,
+      52571959,
+      53866209,
+      54231941,
+      54232864,
+      54232981,
+      54233347,
+      54402827,
+      55090266,
+      55090605,
+      55091226,
+      55091552,
+      56733482,
+      56733669,
+      56753697,
+      56753814,
+      56753993,
+      56754019,
+      56818444,
+      59916720,
+      59930547,
+      59930649,
+      59930814,
+      59934304,
+      59949302,
+      60349866,
+      64694748,
+      65730411,
+      65960350,
+      65960477,
+      65960647,
+      65960752,
+      65961117,
+      65961156,
+      66500965
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/2005/Sandbox_50597751_GraphRef.asset",
+    "sightLevel": 1024,
+    "enableFinishMark": false,
+    "forceSync": true,
+    "id": 50597751,
+    "chunk": 1018851
+  }
+}

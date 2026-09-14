@@ -1,0 +1,212 @@
+{
+  "refControlPoint": [
+    [
+      -2,
+      0,
+      2
+    ]
+  ],
+  "duration": 1,
+  "refTargetPoint": [
+    0,
+    0,
+    3.13
+  ],
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "ignoreActorCollision": true,
+  "heightAboveGround": 0.4,
+  "acceleration": 0,
+  "calcResultNodeId": 52,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10187_Skill_PauseWhirlwind_02",
+  "nodeMap": {
+    "37": {
+      "needEcs": true,
+      "actionIds": [
+        41
+      ],
+      "NodeID": 37,
+      "UID": "febcf682-1a8d-4149-a45b-baf2e66b8720",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": ""
+    },
+    "24": {
+      "pos": {
+        "UID": "929897e9-6b9a-42ea-bbf5-938920683f72",
+        "name": "getProjectilePos",
+        "NodeID": 23
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "0076f393-cb18-40fb-aa5b-ac5b03913688",
+      "effectId": "Eff_Parmon_10187_Skill_PauseWhirlwind_03",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "41": {
+      "notBlockInput": true,
+      "duration": 0.3,
+      "name": "forceDisplacement",
+      "UID": "ac5b3e8c-dd0c-4962-831f-0895a64cb560",
+      "target": "TARGET",
+      "speed": 10,
+      "ignoreYAxis": true,
+      "displacementDir": "IN",
+      "displacementTarget": "PROJECTILE",
+      "NodeID": 41
+    },
+    "47": {
+      "name": "stopSoundStr",
+      "UID": "bc72cce4-1c5c-4705-813d-aaa0c36307b5",
+      "soundId": "SFX_Combat_10187_Skill_PauseWhirlwind_Loop",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "44": {
+      "calcResultNodeId": 52,
+      "name": "actOnTargets",
+      "UID": "c928d25c-0ad5-435d-bd33-9aec9648b08f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        52
+      ],
+      "isScaleWithModel": false,
+      "impulseId": 3002,
+      "NodeID": 44
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6f09311f-a3f3-43be-969d-7ac327883c00",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10187_Skill_PauseWhirlwind_Explode",
+      "NodeID": 48
+    },
+    "52": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11870430,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "3b3bc827-de87-485c-9e00-1df8834686ab",
+      "target": "TARGET",
+      "NodeID": 52,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Blunt_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 9,
+        "impulseId": 3002,
+        "hitCameraShakeId": -1
+      }
+    },
+    "46": {
+      "target": "PROJECTILE",
+      "name": "playSoundStr",
+      "UID": "e3cedbb6-8f67-40e9-8900-45a1fcfea637",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10187_Skill_PauseWhirlwind_Loop",
+      "NodeID": 46
+    },
+    "45": {
+      "cameraShakeId": 21124,
+      "name": "playCameraImpulseById",
+      "UID": "c03ae700-5fd0-4fd9-9133-d6492ea5ea68",
+      "target": "OWNER",
+      "NodeID": 45
+    }
+  },
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "BezierCurve",
+  "refStartPoint": [
+    -1,
+    0,
+    0
+  ],
+  "maxHitNum": 1,
+  "maxHeightOffset": 0.8,
+  "onProjectileTickIds": [
+    37
+  ],
+  "stickGravity": 1,
+  "onProjectileFinishIds": [
+    44,
+    24,
+    45,
+    47,
+    48
+  ],
+  "keepRot": true,
+  "stickPitchMaxOffset": 40,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.4,
+  "sweepShape": 0,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.05,
+  "BPName": "ability_11870430",
+  "startSleepTime": 0,
+  "moveSpeed": 10,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3002,
+  "onProjectileStartIds": [
+    46
+  ]
+}

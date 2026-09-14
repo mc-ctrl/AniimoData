@@ -1,0 +1,90 @@
+{
+  "duration": 6,
+  "BPName": "timeline_2104518",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Heal_Drop_Fly",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "nodeMap": {
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Buff_Rogue_Heal_Drop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "155c2486-5869-4b77-a013-2e112df6a6e0",
+      "effectId": "Eff_Buff_Rogue_Heal_Pickup",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "94e2b0e1-2243-453d-aad9-69a31ef23e87",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Heal_Drop",
+      "NodeID": 18
+    },
+    "15": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 14
+      },
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "25": {
+      "calcInfo": {
+        "add_cur_hp_max_p": {
+          "calcId": 2104518,
+          "calcType": 4,
+          "paramName": "param0",
+          "NodeID": 23,
+          "UID": "e6a0c79a-d1c4-42c0-8251-3ae193aea708",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "calcResult",
+      "UID": "11295a9a-b941-4d15-a877-07314530f735",
+      "target": "TrapTarget",
+      "NodeID": 25
+    },
+    "23": {
+      "calcId": 2104518,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 23,
+      "UID": "e6a0c79a-d1c4-42c0-8251-3ae193aea708",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    17,
+    25,
+    8,
+    18,
+    15
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 10
+}

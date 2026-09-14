@@ -1,0 +1,66 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6004007",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    3
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "92993a68-dbb5-48a7-aaaf-51da23b766c4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Egg_Aura_Witchin",
+      "NodeID": 3
+    },
+    "4": {
+      "NodeID": 4,
+      "UID": "a0c0243f-afa3-452e-b307-bf3574564c6d",
+      "min": 3,
+      "max": 6,
+      "name": "random"
+    },
+    "5": {
+      "convertType": 0,
+      "name": "toInt",
+      "UID": "47a62c89-8cf0-4f2d-b5dd-a3ef67072ade",
+      "val": {
+        "NodeID": 4,
+        "UID": "a0c0243f-afa3-452e-b307-bf3574564c6d",
+        "min": 3,
+        "max": 6,
+        "name": "random"
+      },
+      "NodeID": 5
+    },
+    "6": {
+      "delay": 0,
+      "interval": {
+        "convertType": 0,
+        "name": "toInt",
+        "UID": "47a62c89-8cf0-4f2d-b5dd-a3ef67072ade",
+        "val": {
+          "NodeID": 4,
+          "UID": "a0c0243f-afa3-452e-b307-bf3574564c6d",
+          "min": 3,
+          "max": 6,
+          "name": "random"
+        },
+        "NodeID": 5
+      },
+      "UID": "f6a4005a-7597-4bef-af27-c2ce9c0748d5",
+      "name": "buffStartThink",
+      "NodeID": 6
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

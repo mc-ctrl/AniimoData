@@ -1,0 +1,102 @@
+{
+  "nodeMap": {
+    "45": {
+      "UID": "c97eae5d-81d6-48db-b5bf-6161ee51251d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          43,
+          51,
+          57,
+          53,
+          64
+        ]
+      },
+      "NodeID": 45
+    },
+    "57": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "cb324fc9-a0b1-423c-b817-5e8c6a507833",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starimm_roll_end",
+      "NodeID": 57
+    },
+    "53": {
+      "UID": "8310b26b-2445-4152-a3e6-f135931240be",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 1,
+        "inCombo": 0
+      },
+      "NodeID": 53
+    },
+    "59": {
+      "UID": "7d35db7f-f1c0-4773-b192-1288594e3423",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCombo": 0,
+        "cancellable": 1
+      },
+      "NodeID": 59
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          59
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 60,
+      "UID": "20b9d011-258d-465e-8d96-87a51b75e06d"
+    },
+    "64": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 104302,
+      "name": "createEntity",
+      "UID": "2a67a521-7c3e-47a3-84c6-00bfa6dff4c2",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 64,
+      "pos": "CASTER"
+    },
+    "51": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c13b294f-ae59-4dad-be65-b82cbb903a85",
+      "effectId": "Eff_Parmon_10194_Skill_Roll_End",
+      "speed": 1,
+      "NodeID": 51
+    },
+    "43": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "24231e67-d709-4257-b097-65417bb08803",
+      "target": "OWNER",
+      "NodeID": 43,
+      "animId": "Skill_Roll_End"
+    }
+  },
+  "BPName": "ability_11940300",
+  "NodeID": 47,
+  "UID": "c8acf920-3f00-4f1b-8759-8303d3d2ad8c",
+  "eventIds": [
+    45,
+    60
+  ],
+  "layer": "Base",
+  "length": 1
+}

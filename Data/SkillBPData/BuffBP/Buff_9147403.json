@@ -1,0 +1,82 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9147403",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Attack_Arrow_Up"
+    }
+  ],
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "5d241a08-11a4-4d33-97ff-1634b09d5246",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "name": "addDynamicAttribute",
+      "UID": "f2e753b7-02f9-47c6-ad80-b250f19d8654",
+      "target": "CURPET",
+      "NodeID": 4,
+      "calcInfoByLuaConfig": {
+        "id": 9147403,
+        "crit_rate_v": "param0",
+        "type": 1
+      }
+    },
+    "9": {
+      "UID": "8fcb0602-bc8b-4f5d-ad60-6c85f2146973",
+      "name": "checkAbilityElementType",
+      "elementType": 4,
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "49d5acb8-bb8e-431c-b69c-5a54ea4f8fad",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "5ea91476-ed33-4d50-853f-efdcd24b27d8",
+      "target": "CURPET",
+      "name": "clearDynamicAttribute",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "3304554f-cd32-454c-90a0-9578e2f51cc4",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        6,
+        11
+      ],
+      "NodeID": 8,
+      "UID": "25b0dce2-5eef-4645-8986-8d13033fffd8",
+      "name": "registerGroupEvent",
+      "isReceiveCreationEvent": true
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

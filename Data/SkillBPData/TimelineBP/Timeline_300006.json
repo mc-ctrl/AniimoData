@@ -1,0 +1,140 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5a0f3cbe-da54-45f9-a56b-fdeb256575b6",
+      "isAbilityEndRemove": false,
+      "soundId": "ultimateskill_linkblast_attack_grass",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "793f5624-8aa3-4f08-b1ce-414279e8866a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "9": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 14,
+      "NodeID": 9,
+      "UID": "dfd1e714-a840-4f06-8ffb-65cc04cca4af",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        14,
+        16
+      ]
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ee7cc51f-a0d5-472f-8cbf-2462e7bc5c69",
+      "effectId": "Eff_ChainBurst_Grass",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "tickInterval": 0.25,
+      "eventType": "NotifyState",
+      "endTime": 3.8,
+      "NodeID": 10,
+      "UID": "b02a022d-8423-4413-8d90-0a64c9d09295",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          9
+        ]
+      }
+    },
+    "14": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0,
+        "instant_dmg_v": 20,
+        "reduce_cur_tp_rate": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10007,
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "impulseId": 2000,
+        "hitCameraShakeId": 10003
+      },
+      "UID": "2b665b85-8d88-416b-8f6f-c58c8c9fbb58",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 14
+    },
+    "7": {
+      "UID": "6743a8e7-ad7b-4654-b4dd-8d234e40fa5e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "16": {
+      "target": "TARGET",
+      "duration": 0.5,
+      "speed": 5,
+      "NodeID": 16,
+      "UID": "34658d6b-8524-4dd1-9445-ba5797b4044f",
+      "displacementDir": "IN",
+      "displacementTarget": "OWNER",
+      "name": "forceDisplacement"
+    }
+  },
+  "BPName": "timeline_300006",
+  "NodeID": 1,
+  "UID": "3c7c1f62-974a-4f99-bd85-562e37295802",
+  "eventIds": [
+    4,
+    7,
+    10
+  ],
+  "layer": "Base",
+  "length": 9999
+}

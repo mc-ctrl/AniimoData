@@ -1,0 +1,66 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "bp_add_ratio": 2
+  },
+  "calcInfoByLuaConfig": {
+    "id": 9161303,
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "UID": "de6273fe-cbd7-4865-a26c-5bbbc351b7d2",
+      "name": "stopPreset",
+      "presetName": "Eff_parmon_10613_EX_Fresnel01",
+      "NodeID": 8
+    },
+    "13": {
+      "calcInfo": {
+        "passive_energy_cur": -5
+      },
+      "name": "calcResult",
+      "UID": "013670ea-1e38-4221-a040-9eb634b10158",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "6": {
+      "duration": 8,
+      "disableWhenFinished": false,
+      "NodeID": 6,
+      "UID": "c80b1317-9238-49f7-85df-66fae06969e0",
+      "target": "OWNER",
+      "presetName": "Eff_parmon_10613_EX_Fresnel01",
+      "name": "playPreset"
+    },
+    "10": {
+      "UID": "31d298aa-c454-4aa8-b578-faf340a1b48c",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "70dcfa20-f34f-4174-8c77-f7a5c41f34f6",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 11
+    }
+  },
+  "BPName": "buff_9161303",
+  "onBuffDestroyIds": [
+    11,
+    8,
+    13
+  ],
+  "onBuffStartIds": [
+    10,
+    6
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "BPName": "ability_12130001",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 14200000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12130001001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "43": {
+      "leaveGroundOffset": 0,
+      "NodeID": 43,
+      "UID": "21717998-3c7c-4eff-8108-8f14bcf0ad8a",
+      "velocity": 4.5,
+      "enable": false,
+      "name": "enableSkillGliding"
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack02"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10213_Attack01",
+    "Eff_Parmon_10213_Attack01_01",
+    "Eff_Parmon_10213_Skill_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "电近战普攻",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "onAbilityEndIds": [
+    43
+  ],
+  "searchTargetRangeDown": 1
+}

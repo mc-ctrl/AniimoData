@@ -1,0 +1,254 @@
+{
+  "48003": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1796151462,
+    "maxLv": 3,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.14
+      ]
+    ],
+    "desc": 2108924342,
+    "param0": 14
+  },
+  "48004": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1756707880,
+    "maxLv": 4,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.16
+      ]
+    ],
+    "desc": 1136761703,
+    "param0": 16
+  },
+  "48005": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1609872015,
+    "maxLv": 5,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.18
+      ]
+    ],
+    "desc": 1900948495,
+    "param0": 18
+  },
+  "48006": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1830516723,
+    "maxLv": 6,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.2
+      ]
+    ],
+    "desc": 1182963899,
+    "param0": 20
+  },
+  "48007": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1751944848,
+    "maxLv": 7,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.22
+      ]
+    ],
+    "desc": 1269247599,
+    "param0": 22
+  },
+  "48008": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1176268779,
+    "maxLv": 8,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.24
+      ]
+    ],
+    "desc": 1830394518,
+    "param0": 24
+  },
+  "48009": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1896785605,
+    "maxLv": 9,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.26
+      ]
+    ],
+    "desc": 2025070712,
+    "param0": 26
+  },
+  "48010": {
+    "lvExp": 100,
+    "talentTreeNum": 48,
+    "title": 1309470025,
+    "maxLv": 10,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.28
+      ]
+    ],
+    "desc": 1147111002,
+    "param0": 28
+  },
+  "43002": {
+    "lvExp": 200,
+    "talentTreeNum": 43,
+    "title": 1363952210,
+    "maxLv": 2,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.05
+      ]
+    ],
+    "desc": 1893792499,
+    "param0": 5
+  },
+  "43003": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1573158185,
+    "maxLv": 3,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.07
+      ]
+    ],
+    "desc": 1258833340,
+    "param0": 7
+  },
+  "43004": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1715561585,
+    "maxLv": 4,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.09
+      ]
+    ],
+    "desc": 1773359309,
+    "param0": 9
+  },
+  "43005": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1954730837,
+    "maxLv": 5,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.11
+      ]
+    ],
+    "desc": 1692124641,
+    "param0": 11
+  },
+  "43006": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1963741521,
+    "maxLv": 6,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.13
+      ]
+    ],
+    "desc": 1810748847,
+    "param0": 13
+  },
+  "43007": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1964833835,
+    "maxLv": 7,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.15
+      ]
+    ],
+    "desc": 2100201898,
+    "param0": 15
+  },
+  "43008": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1731193521,
+    "maxLv": 8,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.17
+      ]
+    ],
+    "desc": 1408094052,
+    "param0": 17
+  },
+  "43009": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1385789233,
+    "maxLv": 9,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.19
+      ]
+    ],
+    "desc": 1241668850,
+    "param0": 19
+  },
+  "43010": {
+    "lvExp": 100,
+    "talentTreeNum": 43,
+    "title": 1901991574,
+    "maxLv": 10,
+    "property": [
+      [
+        "taken_dmg_inc_rate_v",
+        0.21
+      ]
+    ],
+    "desc": 1380441617,
+    "param0": 21
+  },
+  "48002": {
+    "lvExp": 200,
+    "talentTreeNum": 48,
+    "title": 1173548362,
+    "maxLv": 2,
+    "property": [
+      [
+        "rogue_coin_add_p",
+        0.12
+      ]
+    ],
+    "desc": 1584741547,
+    "param0": 12
+  }
+}

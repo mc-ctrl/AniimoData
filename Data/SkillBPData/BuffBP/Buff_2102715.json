@@ -1,0 +1,266 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102715",
+  "calcInfoByLuaConfig": {
+    "id": 2102715,
+    "taken_dmg_dec_rate_v": "param1",
+    "type": 1
+  },
+  "UID": "b618e1a3-c3b0-4a87-a696-337b5fb1193e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "name": "hasBuffTag",
+      "UID": "f41fa268-ab68-43b6-9076-11e85342c7d3",
+      "target": "OWNER",
+      "NodeID": 6,
+      "buffTag": 4
+    },
+    "35": {
+      "actionIds": [
+        34
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "95c7fd8c-ed90-4c0f-a568-0ed602809f6b",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "8": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2f3fa769-339e-465c-a5e0-73c6e4d90701",
+      "target": "OWNER",
+      "NodeID": 8,
+      "animId": "Skill_DefMode_Loop"
+    },
+    "31": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3e1da651-e2fe-41ef-97ca-da798f0436c4",
+      "target": "OWNER",
+      "NodeID": 31,
+      "animId": "Skill_DefMode_End"
+    },
+    "9": {
+      "UID": "7b252a26-2316-4b30-872c-f960759f9e2b",
+      "name": "stopAnimation",
+      "anim": "Skill_DefMode_Loop",
+      "NodeID": 9
+    },
+    "11": {
+      "drag": 0.05,
+      "inputAcceleration": 8,
+      "NodeID": 11,
+      "UID": "4bd550d3-65e6-41c7-8e94-1cd4baa222fe",
+      "name": "enableSpecialDefenseST",
+      "enable": true,
+      "maxVelocity": 45
+    },
+    "20": {
+      "UID": "1668df99-1cae-4c75-a5fc-9df0029f14a6",
+      "name": "disableWeightPush",
+      "isDisableForceDisplacement": true,
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "167a526a-25b1-42cd-80df-ffbae1f93121",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "3": {
+      "actionIds": [
+        2
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "ce2691e6-6e08-4d25-bc8e-c4da5652e5ca",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "289ee588-7514-4777-bc52-b357252dd9f9",
+      "name": "registerAddBuffEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "f0dbf279-c47d-474f-9a66-13250c6199f4",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "33": {
+      "UID": "49dcf037-405f-4c53-b684-4020cc8b1bf6",
+      "target": "OWNER",
+      "name": "isTargetAlive",
+      "NodeID": 33
+    },
+    "15": {
+      "actionIds": [
+        13,
+        19,
+        23,
+        18
+      ],
+      "interval": 0.1,
+      "UID": "9b40755e-f413-4328-afc7-e7a0b4fb7f03",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 15
+    },
+    "25": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2102715,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 1
+      },
+      "UID": "81442fa8-650a-4bb0-aab4-fc20ad9563d6",
+      "target": "TARGET",
+      "NodeID": 25,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30202,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 12,
+        "impulseId": 0
+      }
+    },
+    "2": {
+      "buffId": 2102715,
+      "name": "removeBuff",
+      "UID": "34bfa09a-b8e7-421c-ad69-f691774fca37",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "30": {
+      "UID": "e80469d6-a434-410c-8d26-cf1047fa63a6",
+      "name": "stopAnimation",
+      "anim": "Skill_DefMode_Start",
+      "NodeID": 30
+    },
+    "12": {
+      "drag": 0,
+      "inputAcceleration": 0,
+      "NodeID": 12,
+      "UID": "2eb33a7f-225f-470f-96d0-ad10b2561ab2",
+      "name": "enableSpecialDefenseST",
+      "enable": false,
+      "maxVelocity": 0
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9d62869b-b60c-46f8-8bb1-35961819ced8",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_ShockWave",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "18": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 25,
+      "NodeID": 18,
+      "UID": "d3a6bc99-de06-4559-aed7-58ad31c25f15",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.5,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        25
+      ]
+    },
+    "32": {
+      "actionIds": [
+        31
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "64cb0a59-74fc-4c7e-9847-b93a3cdff322",
+      "name": "doActionsByConditions",
+      "NodeID": 32
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "39eeccfb-25a3-4b85-a021-b42b91353e8c",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_DefMode_Hit"
+    },
+    "34": {
+      "buffId": 2102715,
+      "name": "removeBuff",
+      "UID": "0b41a8a8-cf51-472d-8e30-1eddb7611cb3",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "68d6b88c-8d53-411d-ab0a-689dc0fb3332",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10027_Skill_DefMode_Hit",
+      "NodeID": 23
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9,
+    32,
+    12,
+    22,
+    30
+  ],
+  "onBuffStartIds": [
+    8,
+    11,
+    21,
+    20,
+    4,
+    35,
+    15
+  ]
+}

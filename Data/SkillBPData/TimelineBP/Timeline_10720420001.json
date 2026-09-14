@@ -1,0 +1,284 @@
+{
+  "nodeMap": {
+    "5": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0.2
+      ],
+      "templateId": 10720420001,
+      "name": "createProjectile",
+      "UID": "5dcfad23-bceb-402d-9cbe-9fe38cc60cd7",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 5,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f15540f5-69e7-4b75-ab30-d5e93863a88e",
+      "isAbilityEndRemove": false,
+      "soundId": "battle_pets_pikachu_attack_common01",
+      "NodeID": 38
+    },
+    "53": {
+      "UID": "8fa9f857-02ff-4bbe-a0fd-4460e818feba",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 53
+    },
+    "43": {
+      "pitchCurveName": "CommonPitch_10angle",
+      "duration": 1,
+      "NodeID": 43,
+      "UID": "60dc3df4-5cf2-4650-85a9-4360d5902be6",
+      "blendInTime": 0.3,
+      "target": "OWNER",
+      "name": "playPitchYawCameraAnim"
+    },
+    "44": {
+      "UID": "c2280937-25a0-40ed-b547-b5c603be2a7c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          43
+        ]
+      },
+      "NodeID": 44
+    },
+    "8": {
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 8,
+      "UID": "af07ea9a-2e73-4bc4-bac0-981170a8588b"
+    },
+    "56": {
+      "action": {
+        "actionIds": [
+          55
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.93,
+      "NodeID": 56,
+      "UID": "c8968bfc-4ab0-4417-879b-f9a0e3ff71b3"
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 26,
+      "UID": "ad331d2b-fdcd-45ce-859f-68c89e8466e0"
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 51,
+      "UID": "120dc236-3ea6-460c-80bf-f5d9cdcce49c"
+    },
+    "13": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "9735bdc3-985c-4118-a63a-7b72fe567da8",
+      "target": "CASTER",
+      "NodeID": 13,
+      "animId": "Skill_ChainLightening"
+    },
+    "55": {
+      "UID": "b39df776-801a-4430-813e-b83201b9de90",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 1,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 55
+    },
+    "48": {
+      "UID": "9bf13d6f-fa4d-42fe-a563-0dec6c9e6955",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "NodeID": 48
+    },
+    "46": {
+      "UID": "025f9bc1-9da0-4e8e-8db3-be7f233532e7",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 46
+    },
+    "15": {
+      "UID": "14df8f9e-e0de-4014-ac39-a22e1fe6ce78",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          53,
+          13,
+          16
+        ]
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "actionIds": [
+        23,
+        27
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "9a2c18b1-bba9-4d3f-8280-fdca9d1cf9ee",
+      "name": "doActionsByConditions",
+      "NodeID": 25
+    },
+    "16": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "588a91e6-c536-41f0-b217-c7b8393425e3",
+      "target": "CASTER",
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bdc661a2-1c3c-4ee7-b81b-1b6c39094e45",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1.5,
+      "NodeID": 27
+    },
+    "28": {
+      "name": "isActorType",
+      "UID": "46e8e553-edb1-47cd-addc-b17d3d6984c0",
+      "target": "OWNER",
+      "NodeID": 28,
+      "actorType": 3
+    },
+    "23": {
+      "duration": 0.4,
+      "name": "frameFreeze",
+      "UID": "faeaf216-bd8e-4631-85ed-327f34f99733",
+      "target": "OWNER",
+      "timeScale": 0.1,
+      "NodeID": 23
+    },
+    "30": {
+      "isNot": false,
+      "stateName": "FLYING",
+      "isParentState": true,
+      "NodeID": 30,
+      "UID": "668fa27b-c040-4116-a7fc-cd7da6b65ddd",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "50": {
+      "UID": "cb8239b4-eb0f-46a5-8b53-c320bc017fd5",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 50
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "bc61a78b-e916-44d6-b418-216fb67ff086",
+      "isAbilityEndRemove": false,
+      "soundId": "battle_pets_pikachu_attack_common01",
+      "NodeID": 19
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0.2
+      ],
+      "templateId": 10720420002,
+      "name": "createProjectile",
+      "UID": "4d0bfb8b-789c-42bd-b633-072700237bcb",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 34,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "7": {
+      "actionIds": [
+        19,
+        5
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "5154fa81-8c16-428e-9a7a-afdf226783fb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        38,
+        34
+      ],
+      "NodeID": 7
+    }
+  },
+  "BPName": "ability_10720420",
+  "NodeID": 10,
+  "UID": "16a6bddb-8eef-4331-bcbf-4b343f799179",
+  "eventIds": [
+    15,
+    48,
+    8,
+    56,
+    51,
+    26,
+    44
+  ],
+  "layer": "Base",
+  "length": 1.49
+}

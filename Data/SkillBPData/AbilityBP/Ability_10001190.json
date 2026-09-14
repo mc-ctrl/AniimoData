@@ -1,0 +1,92 @@
+{
+  "BPName": "ability_10001190",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "5": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "e2ac5564-09b7-4819-8bdc-e064a6cf79bf",
+      "effectId": "Eff_Parmon_10351_CatchHoney_DeliverySuccess",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "d20175a8-8418-404c-8137-56c83bc909e2",
+      "effectId": "Eff_Parmon_10351_CatchHoney_Delivery",
+      "target": "CASTER",
+      "NodeID": 4
+    },
+    "9": {
+      "tag": "TE_Wild_DewyHasHoney",
+      "name": "removeEntityTag",
+      "UID": "1b335bab-3742-4922-9071-2ead395c261c",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "6": {
+      "name": "setSubModelVisible",
+      "UID": "cdc5a1e5-61ea-4f04-88ec-c76739203093",
+      "NodeID": 6,
+      "subModelName": "M_Parmon_10351_Body01_fnr",
+      "visible": false
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c4e4a613-9333-4eb0-aaa6-311db5ca3c1b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10351_DeliverySuccess",
+      "NodeID": 8
+    },
+    "11": {
+      "name": "stopSoundStr",
+      "UID": "d510d678-9f49-406f-8451-ce2cce549145",
+      "soundId": "SFX_Parmon_10351_DeliverySuccess",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "tag": "TE_Wild_DewyHasHoney",
+      "name": "removeEntityTag",
+      "UID": "6ad25704-7f6b-42e5-a152-1cdd77e200b7",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "2": {
+      "buffId": 11115,
+      "name": "removeBuff",
+      "UID": "2d4247a6-04ca-41d1-a62a-a36d9a069cd4",
+      "target": "CASTER",
+      "NodeID": 2
+    }
+  },
+  "onAbilityCastIds": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10351_CatchHoney_DeliverySuccess"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "isStealAbility": true,
+  "onAbilityEndIds": [
+    9,
+    11
+  ],
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10001190
+}

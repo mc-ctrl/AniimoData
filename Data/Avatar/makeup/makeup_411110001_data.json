@@ -1,0 +1,1307 @@
+{
+  "-922667152": {
+    "key": "-922667152",
+    "shaderPropertyType": 3,
+    "reactionList": [
+      {
+        "key": 2000,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "opName": 15,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 60002739
+          },
+          {
+            "opName": 16,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 39362067
+          }
+        ],
+        "opCollections": {},
+        "configId": 838002
+      },
+      {
+        "key": 2010,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "opName": 15,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 60002739
+          },
+          {
+            "opName": 16,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 39362067
+          }
+        ],
+        "opCollections": {},
+        "configId": 838001
+      },
+      {
+        "key": 7610,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "opName": 15,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 60002739
+          },
+          {
+            "opName": 16,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 39362067
+          }
+        ],
+        "opCollections": {},
+        "configId": 0
+      },
+      {
+        "key": 7560,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "opName": 15,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 60002739
+          },
+          {
+            "opName": 16,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 39362067
+          }
+        ],
+        "opCollections": {},
+        "configId": 0
+      },
+      {
+        "key": 7570,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "opName": 15,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 60002739
+          },
+          {
+            "opName": 16,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 39362067
+          }
+        ],
+        "opCollections": {},
+        "configId": 0
+      }
+    ],
+    "allowedMultiSelect": false,
+    "order": 16,
+    "originDisplayName": "皮肤",
+    "displayName": 52112766,
+    "realizeType": 1
+  },
+  "1220534827": {
+    "key": "1220534827",
+    "shaderPropertyType": 1,
+    "reactionList": [
+      {
+        "key": 3,
+        "key_L": 31,
+        "key_R": 32,
+        "configId": 0,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 4,
+        "key_L": 41,
+        "key_R": 42,
+        "configId": 0,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 5,
+        "key_L": 51,
+        "key_R": 52,
+        "configId": 0,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 7,
+        "key_L": 71,
+        "key_R": 72,
+        "configId": 834001,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 8,
+        "key_L": 81,
+        "key_R": 82,
+        "configId": 834002,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 9,
+        "key_L": 91,
+        "key_R": 92,
+        "configId": 834003,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 10,
+        "key_L": 101,
+        "key_R": 102,
+        "configId": 834004,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 11,
+        "key_L": 111,
+        "key_R": 112,
+        "configId": 834005,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 12,
+        "key_L": 121,
+        "key_R": 122,
+        "configId": 834006,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 13,
+        "key_L": 131,
+        "key_R": 132,
+        "configId": 834007,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 14,
+        "key_L": 141,
+        "key_R": 142,
+        "configId": 834008,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 15,
+        "key_L": 151,
+        "key_R": 152,
+        "configId": 834009,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 16,
+        "key_L": 161,
+        "key_R": 162,
+        "configId": 834010,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 17,
+        "key_L": 171,
+        "key_R": 172,
+        "configId": 834011,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 18,
+        "key_L": 181,
+        "key_R": 182,
+        "configId": 834012,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 19,
+        "key_L": 191,
+        "key_R": 192,
+        "configId": 834013,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 20,
+        "key_L": 201,
+        "key_R": 202,
+        "configId": 834014,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 21,
+        "key_L": 211,
+        "key_R": 212,
+        "configId": 834015,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 22,
+        "key_L": 221,
+        "key_R": 222,
+        "configId": 834016,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 23,
+        "key_L": 231,
+        "key_R": 232,
+        "configId": 834017,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      },
+      {
+        "key": 233,
+        "key_L": 2331,
+        "key_R": 2332,
+        "configId": 834018,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          },
+          {
+            "tIndex": 2,
+            "displayName": 44029451,
+            "opName": 13
+          },
+          {
+            "opName": 18,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 64516617
+          },
+          {
+            "opName": 19,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 61154420
+          },
+          {
+            "opName": 20,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 62742930
+          },
+          {
+            "opName": 26,
+            "tIndex": 0,
+            "maxValue": 100,
+            "minValue": -100,
+            "displayName": 66158350
+          }
+        ],
+        "opCollections": {}
+      }
+    ],
+    "allowedMultiSelect": false,
+    "order": 7,
+    "originDisplayName": "瞳孔",
+    "displayName": 55770639,
+    "realizeType": 1
+  },
+  "-784141180": {
+    "key": "-784141180",
+    "shaderPropertyType": 0,
+    "reactionList": [
+      {
+        "key": 2100,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 832002
+      },
+      {
+        "key": 2110,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 832003
+      },
+      {
+        "key": 2120,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 832004
+      },
+      {
+        "key": 3110,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 832005
+      }
+    ],
+    "allowedMultiSelect": false,
+    "order": 5,
+    "originDisplayName": "睫毛",
+    "displayName": 34243249,
+    "realizeType": 1
+  },
+  "-1777635281": {
+    "key": "-1777635281",
+    "shaderPropertyType": 0,
+    "reactionList": [
+      {
+        "key": 2020,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 833002
+      },
+      {
+        "key": 2030,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 833003
+      },
+      {
+        "key": 2040,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 833004
+      },
+      {
+        "key": 2050,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 833005
+      },
+      {
+        "key": 2060,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 833006
+      },
+      {
+        "key": 2070,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 0
+      },
+      {
+        "key": 2080,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 833008
+      },
+      {
+        "key": 2090,
+        "operations": [
+          {
+            "tIndex": 2,
+            "displayName": 45909769,
+            "opName": 12
+          }
+        ],
+        "opCollections": {},
+        "configId": 833009
+      }
+    ],
+    "allowedMultiSelect": false,
+    "order": 6,
+    "originDisplayName": "眉形",
+    "displayName": 54758083,
+    "realizeType": 1
+  }
+}

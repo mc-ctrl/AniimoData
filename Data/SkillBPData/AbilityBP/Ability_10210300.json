@@ -1,0 +1,38 @@
+{
+  "BPName": "ability_10210300",
+  "NodeID": 1,
+  "UID": "04cbc9b3-7715-4ffb-a4df-8ba0583d6d4c",
+  "abilityParamId": 10900020,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10210300001,
+      "name": "setCombatActionTimeline",
+      "UID": "839fd8da-2f55-44f9-9c9e-d5ed9d262e1f",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Petrifaction_Enter",
+    "Skill_Petrifaction_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10023_Skill_Petrifaction_Success_L"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "subAbilityIds": [
+    10210201,
+    10210202
+  ],
+  "searchTargetRangeDown": 0
+}

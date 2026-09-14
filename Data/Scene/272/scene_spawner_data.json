@@ -1,0 +1,34 @@
+{
+  "59939307": {
+    "spawnType": 0,
+    "owner": "路司机",
+    "sandboxType": 0,
+    "position": [
+      -604.11,
+      1.24,
+      11.09
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 59939187,
+    "id": 59939307,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          59939306,
+          59939309,
+          59939310,
+          59939314,
+          59939311,
+          59939313
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

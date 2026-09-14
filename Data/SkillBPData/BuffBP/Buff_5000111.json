@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000111",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5000110,
+      "NodeID": 3,
+      "UID": "13cb45a7-92af-4bd6-86d8-3c94a1383b1c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

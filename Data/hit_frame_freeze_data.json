@@ -1,0 +1,102 @@
+{
+  "10015": {
+    "frameFreeze": 0.18,
+    "timeScale": 0.01,
+    "name": "钝器-超大"
+  },
+  "10016": {
+    "frameFreeze": 0.12,
+    "timeScale": 0.01,
+    "name": "霹雳蜥-电舞连击"
+  },
+  "10022": {
+    "frameFreeze": 0.08,
+    "timeScale": 0.1,
+    "name": "锐器-中"
+  },
+  "10023": {
+    "frameFreeze": 0.12,
+    "timeScale": 0.1,
+    "name": "锐器-大"
+  },
+  "10024": {
+    "frameFreeze": 0.2,
+    "timeScale": 0.1,
+    "name": "锐器-巨"
+  },
+  "10012": {
+    "frameFreeze": 0.08,
+    "timeScale": 0.01,
+    "name": "钝器-中"
+  },
+  "10013": {
+    "frameFreeze": 0.16,
+    "timeScale": 0.01,
+    "name": "钝器-大"
+  },
+  "10031": {
+    "frameFreeze": 0.06,
+    "timeScale": 0.05,
+    "name": "中等钝器-小"
+  },
+  "10032": {
+    "frameFreeze": 0.08,
+    "timeScale": 0.05,
+    "name": "中等钝器-中"
+  },
+  "10033": {
+    "frameFreeze": 0.12,
+    "timeScale": 0.05,
+    "name": "中等钝器-大"
+  },
+  "10034": {
+    "frameFreeze": 0.2,
+    "timeScale": 0.05,
+    "name": "中等钝器-巨"
+  },
+  "10044": {
+    "frameFreeze": 0.25,
+    "timeScale": 0.005,
+    "name": "大等钝器-巨"
+  },
+  "10043": {
+    "frameFreeze": 0.16,
+    "timeScale": 0.005,
+    "name": "大等钝器-大"
+  },
+  "10042": {
+    "frameFreeze": 0.08,
+    "timeScale": 0.005,
+    "name": "大等钝器-中"
+  },
+  "10041": {
+    "frameFreeze": 0.06,
+    "timeScale": 0.005,
+    "name": "大型钝器-小"
+  },
+  "10021": {
+    "frameFreeze": 0.06,
+    "timeScale": 0.1,
+    "name": "锐器-小"
+  },
+  "10001": {
+    "frameFreeze": 0,
+    "timeScale": 0.01,
+    "name": "不卡帧"
+  },
+  "10025": {
+    "frameFreeze": 0.16,
+    "timeScale": 0.1,
+    "name": "锐器-超大"
+  },
+  "10014": {
+    "frameFreeze": 0.25,
+    "timeScale": 0.01,
+    "name": "钝器-巨"
+  },
+  "10011": {
+    "frameFreeze": 0.06,
+    "timeScale": 0.01,
+    "name": "钝器-小"
+  }
+}

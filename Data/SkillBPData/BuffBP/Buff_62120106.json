@@ -1,0 +1,74 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62120106",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 62120106,
+      "NodeID": 8,
+      "UID": "b74b1633-df7f-48f8-b28b-23cb8338bca3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "duration": 0.65,
+      "disableWhenFinished": true,
+      "NodeID": 4,
+      "UID": "5b6b0216-22ea-474b-b9f7-2f52119c0430",
+      "target": "OWNER",
+      "presetName": "Eff_Buff_Mushroom_Fresnel",
+      "name": "playPreset"
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "c33279ce-7fff-4e8c-864e-a508678c921f",
+      "target": "SRC",
+      "buffId": 62120102,
+      "isListenDestroy": true,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": false,
+      "isListenStart": false,
+      "name": "registerBuffLifeEvent"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6320bc2c-a848-47b3-b3b2-5bdfe4f1cbef",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "62be49e9-e2ea-4174-8e11-a092f5078edb",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 62120106,
+    "pvp_taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "onBuffStartIds": [
+    4,
+    6,
+    9
+  ]
+}

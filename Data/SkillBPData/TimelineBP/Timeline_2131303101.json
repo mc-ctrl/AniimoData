@@ -1,0 +1,79 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "bb442862-d9c2-44c6-b0a7-a4f255b2bcba",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "09f90ceb-e03c-4807-b122-d9dce047b771",
+      "effectId": "Eff_Parmon_10313_Skill_Bullet_09",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "23": {
+      "pos": "TrapTarget",
+      "name": "createSpellField",
+      "UID": "b93113a7-93a1-479c-bf1f-9a4cd8c192b4",
+      "timelineId": 2131303102,
+      "destroyOnMasterDead": false,
+      "NodeID": 23
+    },
+    "17": {
+      "UID": "6e0c4ba4-c4e1-47c3-a8ab-c5c2af488a0d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 17
+    },
+    "2": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "f5b6b1a2-7cfc-4ec7-9697-ef6117b326d6",
+      "effectId": "Eff_Parmon_10313_Skill_Bullet_09",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "16": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 16,
+      "relation": 2,
+      "enterTrapActionIds": [
+        14,
+        23
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        1
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "2aab1ec5-1f2f-44d5-a3db-ac0ffb8522b6"
+    }
+  },
+  "BPName": "buff_2131303",
+  "NodeID": 6,
+  "UID": "ae9383d0-b909-4782-9d41-8d7e48c4ff2d",
+  "eventIds": [
+    4,
+    17
+  ],
+  "layer": "Base",
+  "length": 5
+}

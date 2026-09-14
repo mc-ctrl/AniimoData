@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "shield_skill_cd_dec_rate_v": 0.15
+  },
+  "calcInfoByLuaConfig": {
+    "id": 2020004,
+    "type": 1,
+    "shield_skill_cd_dec_rate_v": "param0"
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_2020004",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

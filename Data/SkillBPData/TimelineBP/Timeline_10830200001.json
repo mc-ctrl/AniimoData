@@ -1,0 +1,195 @@
+{
+  "nodeMap": {
+    "42": {
+      "UID": "92b08193-84b6-42dc-ad75-4a3d190b9c13",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "NodeID": 42
+    },
+    "4": {
+      "UID": "c28baf82-17b2-46cf-b2c4-0f41cfac808d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50,
+          9,
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "45": {
+      "UID": "d98752cb-4bd2-455e-8f4b-6f89ec97b95f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "NodeID": 45
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          47
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.2,
+      "NodeID": 48,
+      "UID": "a1731d15-8d87-4926-9cf0-4f446ca5d18d"
+    },
+    "41": {
+      "pitchCurveName": "CommonPitch_10angle",
+      "duration": 1,
+      "NodeID": 41,
+      "UID": "1742c28f-7365-4310-9069-b95d9e88a747",
+      "blendInTime": 0.3,
+      "target": "OWNER",
+      "name": "playPitchYawCameraAnim"
+    },
+    "15": {
+      "offsetXYZ": [
+        0,
+        0.9,
+        1
+      ],
+      "templateId": 10830200001,
+      "name": "createProjectile",
+      "UID": "c8e72af4-dcb5-4c1b-80ff-8115d2df1e9a",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 15,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "47": {
+      "UID": "7695a04d-af32-4734-8be3-e15f741a3462",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 47
+    },
+    "44": {
+      "UID": "5abb5eec-e30a-4d4f-a8d2-f7d62c2ddffb",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 44
+    },
+    "27": {
+      "pos": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.9,
+        1
+      ],
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "c8441aa6-821d-406f-b987-48ae7519ce54",
+      "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_01",
+      "speed": 1.2,
+      "NodeID": 27
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.72,
+      "NodeID": 17,
+      "UID": "52e485dc-2668-44da-b5db-461b722d0a4b"
+    },
+    "9": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "21c958cf-7b19-4e7b-8fbe-df01ba103bc9",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "77967cdd-de08-4f75-9dd8-d3fb8e83f972",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_charge",
+      "NodeID": 30
+    },
+    "50": {
+      "UID": "fd935270-65f2-479d-bf49-972f151c8abe",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 50
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "914ced4a-e44b-47cd-9ddc-66829d92fd95",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starmage_skill_charm_attack",
+      "NodeID": 31
+    },
+    "29": {
+      "UID": "87a7334b-93fe-432d-b363-82f1d3b398f2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          30
+        ]
+      },
+      "NodeID": 29
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "dfceeb54-f716-4a99-b85d-7e980405c2da",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Charm"
+    }
+  },
+  "BPName": "ability_10830200",
+  "NodeID": 6,
+  "UID": "a0542bdc-8dae-4efd-9b1d-4b1ff8fabb84",
+  "eventIds": [
+    4,
+    45,
+    17,
+    42,
+    48,
+    29
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

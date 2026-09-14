@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "taken_dmg_inc_rate_v": 0.02
+  },
+  "name": "伤害加深",
+  "UID": "37549b6e-8cff-4f95-9138-27f746f81a06",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_920000103",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

@@ -1,0 +1,29 @@
+{
+  "gamePad": {
+    "absorbSpeed": 0,
+    "absorbSpeedMultiplier": 533.33,
+    "dampingFactor": 0.8,
+    "dampingFactorMultiplier": 0.16,
+    "dampingRayRadius": 0.4,
+    "absorbRayRadius": 1,
+    "absorbRayRadiusStart": 5
+  },
+  "mobile": {
+    "absorbSpeed": 200,
+    "absorbSpeedMultiplier": 400,
+    "dampingFactor": 0.3,
+    "dampingFactorMultiplier": 0.14,
+    "dampingRayRadius": 0.4,
+    "absorbRayRadius": 1,
+    "absorbRayRadiusStart": 8
+  },
+  "mouseKeyBoard": {
+    "absorbSpeed": 0,
+    "absorbSpeedMultiplier": 266.67,
+    "dampingFactor": 0.2,
+    "dampingFactorMultiplier": 0.14,
+    "dampingRayRadius": 0.4,
+    "absorbRayRadius": 1,
+    "absorbRayRadiusStart": 5
+  }
+}

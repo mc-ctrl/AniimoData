@@ -1,0 +1,139 @@
+{
+  "nodeMap": {
+    "74": {
+      "action": {
+        "actionIds": [
+          73
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 74,
+      "UID": "e836f212-9c3b-4352-bbb0-7e6d796b84b8"
+    },
+    "149": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "33b762ed-1c55-4a75-b099-10f9d9c0856e",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_Down_04",
+      "speed": 1,
+      "NodeID": 149
+    },
+    "171": {
+      "NodeID": 171,
+      "from": 14540201,
+      "to": 14540201,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 5,
+      "recoverOnExit": true,
+      "name": "switchSkill",
+      "UID": "bb80aced-223a-4c7d-95c3-45fe7e8ed5ae",
+      "notShowCountDown": false
+    },
+    "47": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "06c90e55-2af9-4973-b87d-f12e45e70839",
+      "target": "OWNER",
+      "NodeID": 47,
+      "animId": "Skill_RollingBall_End"
+    },
+    "76": {
+      "UID": "bfa594d7-8adc-4904-b10a-550bdea517a9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 76
+    },
+    "124": {
+      "name": "stopEffectStr",
+      "UID": "a4d77854-5519-4956-a7bb-fc3b1e0bdbfe",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move",
+      "target": "OWNER",
+      "NodeID": 124
+    },
+    "77": {
+      "UID": "30f60e14-a314-41ab-8fa3-64241fc4d410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          76
+        ]
+      },
+      "NodeID": 77
+    },
+    "49": {
+      "UID": "9d221516-82de-4629-8cce-595fa445dd3c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          47,
+          124,
+          150,
+          151,
+          171
+        ]
+      },
+      "NodeID": 49
+    },
+    "151": {
+      "name": "stopEffectStr",
+      "UID": "be5d482e-a31b-462e-8b0f-62b600a42319",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_Snow_move_02",
+      "target": "OWNER",
+      "NodeID": 151
+    },
+    "150": {
+      "key": "EndEff",
+      "duration": 0.72,
+      "actionIds": [
+        149
+      ],
+      "NodeID": 150,
+      "UID": "ab972def-e754-4725-ba29-82d4866571d2",
+      "name": "addTimer"
+    },
+    "79": {
+      "UID": "55eadd0c-3773-48c2-ab75-77ba5f82b2a6",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 79
+    },
+    "73": {
+      "UID": "76dd1c53-3e39-4698-b1bf-9abc0925afac",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 73
+    },
+    "80": {
+      "UID": "269bd30b-933a-4c7c-8651-4ff8ff2f5850",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          79
+        ]
+      },
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_14540201",
+  "NodeID": 51,
+  "UID": "21a9359e-d471-4629-888c-c321593a2bb8",
+  "eventIds": [
+    77,
+    74,
+    80,
+    49
+  ],
+  "layer": "Base",
+  "length": 2
+}

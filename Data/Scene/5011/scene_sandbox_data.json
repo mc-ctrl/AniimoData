@@ -1,0 +1,43 @@
+{
+  "72766274": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1033187,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 4,
+    "name": "全局_其他关卡_黑房间",
+    "sightLevelType": 128,
+    "spawners": [
+      72766312
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "position": [
+      834.97,
+      14.2,
+      2.73
+    ],
+    "poiType": 1003,
+    "owner": "唐睿尚",
+    "id": 72766274,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  }
+}

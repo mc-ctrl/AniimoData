@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9118106",
+  "calcInfoByLuaConfig": {
+    "ep_cost_reduce_ratio": "param0",
+    "type": 1,
+    "id": 9118106
+  },
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

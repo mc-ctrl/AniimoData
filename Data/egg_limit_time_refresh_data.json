@@ -1,0 +1,862 @@
+[
+  {
+    "SpicificEnemy": {
+      "11005100069": [
+        3
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100101,
+    "NextNum": 0,
+    "NextWaves": 100102
+  },
+  {
+    "SpicificEnemy": {
+      "11016100069": [
+        3
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100102,
+    "NextNum": 0,
+    "NextWaves": 100103
+  },
+  {
+    "SpicificEnemy": {
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100103,
+    "NextNum": 0,
+    "NextWaves": 100104
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        2
+      ],
+      "11004200069": [
+        4
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100104,
+    "NextNum": 0,
+    "NextWaves": 100105
+  },
+  {
+    "SpicificEnemy": {
+      "11014100069": [
+        4
+      ],
+      "11014300069": [
+        2
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100105,
+    "NextNum": 0,
+    "NextWaves": 100106
+  },
+  {
+    "SpicificEnemy": {
+      "11018400050": [
+        2
+      ],
+      "11005100069": [
+        4
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100106,
+    "NextNum": 0,
+    "NextWaves": 100107
+  },
+  {
+    "SpicificEnemy": {
+      "11021100069": [
+        3
+      ],
+      "11020100069": [
+        5
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100107,
+    "NextNum": 0,
+    "NextWaves": 100108
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        5
+      ],
+      "11002600069": [
+        3
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100108,
+    "NextNum": 0,
+    "NextWaves": 100109
+  },
+  {
+    "SpicificEnemy": {
+      "11001200069": [
+        4
+      ],
+      "11026100069": [
+        4
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100109,
+    "NextNum": 0,
+    "NextWaves": 100110
+  },
+  {
+    "SpicificEnemy": {
+      "11004300069": [
+        5
+      ],
+      "11005100069": [
+        5
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100110,
+    "NextNum": 0,
+    "NextWaves": 100111
+  },
+  {
+    "SpicificEnemy": {
+      "11017400069": [
+        6
+      ],
+      "11017100069": [
+        4
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100111,
+    "NextNum": 0,
+    "NextWaves": 100112
+  },
+  {
+    "SpicificEnemy": {
+      "11026100069": [
+        6
+      ],
+      "11005300069": [
+        6
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100112,
+    "NextNum": 0,
+    "NextWaves": 100113
+  },
+  {
+    "SpicificEnemy": {
+      "11018400069": [
+        8
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100113,
+    "NextNum": 0,
+    "NextWaves": 100114
+  },
+  {
+    "SpicificEnemy": {
+      "11020100069": [
+        6
+      ],
+      "11002600069": [
+        8
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100114,
+    "NextNum": 0,
+    "NextWaves": 100115
+  },
+  {
+    "SpicificEnemy": {
+      "11014300069": [
+        10
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 3,
+    "EnemyGroup": 1001,
+    "EnemyWaves": 100115,
+    "NextNum": 0
+  },
+  {
+    "SpicificEnemy": {
+      "11005100069": [
+        3
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200101,
+    "NextNum": 0,
+    "NextWaves": 200102
+  },
+  {
+    "SpicificEnemy": {
+      "11016100069": [
+        3
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200102,
+    "NextNum": 0,
+    "NextWaves": 200103
+  },
+  {
+    "SpicificEnemy": {
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200103,
+    "NextNum": 0,
+    "NextWaves": 200104
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        2
+      ],
+      "11004200069": [
+        4
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200104,
+    "NextNum": 0,
+    "NextWaves": 200105
+  },
+  {
+    "SpicificEnemy": {
+      "11014100069": [
+        4
+      ],
+      "11014300069": [
+        2
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200105,
+    "NextNum": 0,
+    "NextWaves": 200106
+  },
+  {
+    "SpicificEnemy": {
+      "11018400050": [
+        2
+      ],
+      "11005100069": [
+        4
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200106,
+    "NextNum": 0,
+    "NextWaves": 200107
+  },
+  {
+    "SpicificEnemy": {
+      "11021100069": [
+        3
+      ],
+      "11020100069": [
+        5
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200107,
+    "NextNum": 0,
+    "NextWaves": 200108
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        5
+      ],
+      "11002600069": [
+        3
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200108,
+    "NextNum": 0,
+    "NextWaves": 200109
+  },
+  {
+    "SpicificEnemy": {
+      "11001200069": [
+        4
+      ],
+      "11026100069": [
+        4
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200109,
+    "NextNum": 0,
+    "NextWaves": 200110
+  },
+  {
+    "SpicificEnemy": {
+      "11004300069": [
+        5
+      ],
+      "11005100069": [
+        5
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200110,
+    "NextNum": 0,
+    "NextWaves": 200111
+  },
+  {
+    "SpicificEnemy": {
+      "11017400069": [
+        6
+      ],
+      "11017100069": [
+        4
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200111,
+    "NextNum": 0,
+    "NextWaves": 200112
+  },
+  {
+    "SpicificEnemy": {
+      "11026100069": [
+        6
+      ],
+      "11005300069": [
+        6
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200112,
+    "NextNum": 0,
+    "NextWaves": 200113
+  },
+  {
+    "SpicificEnemy": {
+      "11018400069": [
+        8
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200113,
+    "NextNum": 0,
+    "NextWaves": 200114
+  },
+  {
+    "SpicificEnemy": {
+      "11020100069": [
+        6
+      ],
+      "11002600069": [
+        8
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200114,
+    "NextNum": 0,
+    "NextWaves": 200115
+  },
+  {
+    "SpicificEnemy": {
+      "11014300069": [
+        10
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 4,
+    "EnemyGroup": 2001,
+    "EnemyWaves": 200115,
+    "NextNum": 0
+  },
+  {
+    "SpicificEnemy": {
+      "11005100069": [
+        3
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300101,
+    "NextNum": 0,
+    "NextWaves": 300102
+  },
+  {
+    "SpicificEnemy": {
+      "11016100069": [
+        3
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300102,
+    "NextNum": 0,
+    "NextWaves": 300103
+  },
+  {
+    "SpicificEnemy": {
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300103,
+    "NextNum": 0,
+    "NextWaves": 300104
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        2
+      ],
+      "11004200069": [
+        4
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300104,
+    "NextNum": 0,
+    "NextWaves": 300105
+  },
+  {
+    "SpicificEnemy": {
+      "11014100069": [
+        4
+      ],
+      "11014300069": [
+        2
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300105,
+    "NextNum": 0,
+    "NextWaves": 300106
+  },
+  {
+    "SpicificEnemy": {
+      "11018400050": [
+        2
+      ],
+      "11005100069": [
+        4
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300106,
+    "NextNum": 0,
+    "NextWaves": 300107
+  },
+  {
+    "SpicificEnemy": {
+      "11021100069": [
+        3
+      ],
+      "11020100069": [
+        5
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300107,
+    "NextNum": 0,
+    "NextWaves": 300108
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        5
+      ],
+      "11002600069": [
+        3
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300108,
+    "NextNum": 0,
+    "NextWaves": 300109
+  },
+  {
+    "SpicificEnemy": {
+      "11001200069": [
+        4
+      ],
+      "11026100069": [
+        4
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300109,
+    "NextNum": 0,
+    "NextWaves": 300110
+  },
+  {
+    "SpicificEnemy": {
+      "11004300069": [
+        5
+      ],
+      "11005100069": [
+        5
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300110,
+    "NextNum": 0,
+    "NextWaves": 300111
+  },
+  {
+    "SpicificEnemy": {
+      "11017400069": [
+        6
+      ],
+      "11017100069": [
+        4
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300111,
+    "NextNum": 0,
+    "NextWaves": 300112
+  },
+  {
+    "SpicificEnemy": {
+      "11026100069": [
+        6
+      ],
+      "11005300069": [
+        6
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300112,
+    "NextNum": 0,
+    "NextWaves": 300113
+  },
+  {
+    "SpicificEnemy": {
+      "11018400069": [
+        8
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300113,
+    "NextNum": 0,
+    "NextWaves": 300114
+  },
+  {
+    "SpicificEnemy": {
+      "11020100069": [
+        6
+      ],
+      "11002600069": [
+        8
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300114,
+    "NextNum": 0,
+    "NextWaves": 300115
+  },
+  {
+    "SpicificEnemy": {
+      "11014300069": [
+        10
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 5,
+    "EnemyGroup": 3001,
+    "EnemyWaves": 300115,
+    "NextNum": 0
+  },
+  {
+    "SpicificEnemy": {
+      "11005100069": [
+        3
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400101,
+    "NextNum": 0,
+    "NextWaves": 400102
+  },
+  {
+    "SpicificEnemy": {
+      "11016100069": [
+        3
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400102,
+    "NextNum": 0,
+    "NextWaves": 400103
+  },
+  {
+    "SpicificEnemy": {
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400103,
+    "NextNum": 0,
+    "NextWaves": 400104
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        2
+      ],
+      "11004200069": [
+        4
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400104,
+    "NextNum": 0,
+    "NextWaves": 400105
+  },
+  {
+    "SpicificEnemy": {
+      "11014100069": [
+        4
+      ],
+      "11014300069": [
+        2
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400105,
+    "NextNum": 0,
+    "NextWaves": 400106
+  },
+  {
+    "SpicificEnemy": {
+      "11018400050": [
+        2
+      ],
+      "11005100069": [
+        4
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400106,
+    "NextNum": 0,
+    "NextWaves": 400107
+  },
+  {
+    "SpicificEnemy": {
+      "11021100069": [
+        3
+      ],
+      "11020100069": [
+        5
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400107,
+    "NextNum": 0,
+    "NextWaves": 400108
+  },
+  {
+    "SpicificEnemy": {
+      "11004100069": [
+        5
+      ],
+      "11002600069": [
+        3
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400108,
+    "NextNum": 0,
+    "NextWaves": 400109
+  },
+  {
+    "SpicificEnemy": {
+      "11001200069": [
+        4
+      ],
+      "11026100069": [
+        4
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400109,
+    "NextNum": 0,
+    "NextWaves": 400110
+  },
+  {
+    "SpicificEnemy": {
+      "11004300069": [
+        5
+      ],
+      "11005100069": [
+        5
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400110,
+    "NextNum": 0,
+    "NextWaves": 400111
+  },
+  {
+    "SpicificEnemy": {
+      "11017400069": [
+        6
+      ],
+      "11017100069": [
+        4
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400111,
+    "NextNum": 0,
+    "NextWaves": 400112
+  },
+  {
+    "SpicificEnemy": {
+      "11026100069": [
+        6
+      ],
+      "11005300069": [
+        6
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400112,
+    "NextNum": 0,
+    "NextWaves": 400113
+  },
+  {
+    "SpicificEnemy": {
+      "11018400069": [
+        8
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400113,
+    "NextNum": 0,
+    "NextWaves": 400114
+  },
+  {
+    "SpicificEnemy": {
+      "11020100069": [
+        6
+      ],
+      "11002600069": [
+        8
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400114,
+    "NextNum": 0,
+    "NextWaves": 400115
+  },
+  {
+    "SpicificEnemy": {
+      "11014300069": [
+        10
+      ],
+      "11002100069": [
+        4
+      ]
+    },
+    "DifficultID": 6,
+    "EnemyGroup": 4001,
+    "EnemyWaves": 400115,
+    "NextNum": 0
+  }
+]

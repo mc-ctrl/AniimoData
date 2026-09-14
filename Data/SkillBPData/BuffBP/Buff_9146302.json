@@ -1,0 +1,169 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9146302",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "name": "稀有特性",
+  "onBuffThinkIds": [
+    6
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "48e06076-bfc6-429d-85fd-69fd5cc9cb88",
+        "target": "OWNER",
+        "NodeID": 4,
+        "attributeName": "hp_cur"
+      },
+      "name": "greater",
+      "UID": "ef39feef-7449-48be-9605-6c8f131ccc53",
+      "NodeID": 5,
+      "lValue": {
+        "rValue": 0.5,
+        "name": "multiply",
+        "UID": "e0f362d9-b948-439c-b3dc-32bfd6806364",
+        "NodeID": 9,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "eee8f6e3-a683-4781-85a7-2ddb398a354a",
+          "target": "OWNER",
+          "NodeID": 8,
+          "attributeName": "hp_max_cur"
+        }
+      }
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91463022,
+      "NodeID": 13,
+      "UID": "bacbb19b-a726-4519-a62e-8a7a0fbf86a6",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "actionIds": [
+        18,
+        20
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "313ed140-7ab9-409c-996d-8c4a29dda49d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 91463021,
+      "name": "removeBuff",
+      "UID": "91244575-72f9-4988-9c13-74b129c1bf89",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "2aceb0f7-edde-4bd2-90db-710120efa386",
+        "target": "OWNER",
+        "NodeID": 14,
+        "attributeName": "hp_cur"
+      },
+      "name": "greater",
+      "UID": "aa1fc3ad-d703-4b08-9224-e1be0c25ef94",
+      "NodeID": 15,
+      "lValue": {
+        "rValue": 0.75,
+        "name": "multiply",
+        "UID": "65f70cdb-d817-42a9-aac3-48d4404e246f",
+        "NodeID": 17,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "4f2ab4c3-6b66-43ba-aded-19638e09add0",
+          "target": "OWNER",
+          "NodeID": 16,
+          "attributeName": "hp_max_cur"
+        }
+      }
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "attributeName": "hp_cur",
+      "UID": "a47b2aff-f286-4487-b41e-8d7949274e7e",
+      "target": "OWNER",
+      "name": "registerAttributeChange",
+      "NodeID": 7
+    },
+    "23": {
+      "buffId": 91463022,
+      "name": "removeBuff",
+      "UID": "6fea3918-a0d4-4d6e-930c-c138a5e21544",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "18": {
+      "buffId": 91463022,
+      "name": "removeBuff",
+      "UID": "9264fce0-e136-4c41-8bb5-235ed8ad82ea",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "21": {
+      "buffId": 91463021,
+      "name": "removeBuff",
+      "UID": "03fad917-4faa-41ec-9c54-a2c70f1b3a87",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 9146301,
+      "NodeID": 2,
+      "UID": "d8a17f79-5502-4209-b701-5f1d2686f7e9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "20": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91463021,
+      "NodeID": 20,
+      "UID": "d406660b-6323-4908-aa4c-678e6aeb5531",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "12": {
+      "actionIds": [
+        10,
+        13
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "61b60d51-a8df-494d-86fc-162567ef4ccb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21,
+        23
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    7,
+    6
+  ]
+}

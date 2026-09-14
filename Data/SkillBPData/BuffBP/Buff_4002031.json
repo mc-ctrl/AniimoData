@@ -1,0 +1,83 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4002031",
+  "calcInfoByLuaConfig": {
+    "id": 4002031,
+    "taken_dmg_inc_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    11
+  ],
+  "isDeathKeep": true,
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "UID": "4ad1a591-893a-459f-a3b5-d05342f2c32d",
+      "name": "callClientAction",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4ca6d2c4-5b63-459b-b0c2-82522176a3f3",
+      "effectId": "Eff_Buff_Attack_Arrow_Down",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "41477c36-9219-46a5-adf8-191fc6a3784a",
+      "name": "callClientAction",
+      "actionIds": [
+        7,
+        10
+      ],
+      "NodeID": 9
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "6d8fcef8-4b35-4f4b-9c5f-e805e4580237",
+      "effectId": "Eff_Buff_Attack_Arrow_Down",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "11": {
+      "buffId": 4002031,
+      "name": "removeBuff",
+      "UID": "b359c5c5-dcd7-413b-9bf1-a21148183f5c",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "05d26976-c7a1-44fe-9509-4814dc3269cf",
+      "effectId": "Eff_Parmon_Common_BossRush_FightStart_02",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "83bf1993-aef8-4540-9843-451c27b00eeb",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9
+  ],
+  "onBuffStartIds": [
+    12,
+    5
+  ]
+}

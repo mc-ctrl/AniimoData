@@ -1,0 +1,46 @@
+{
+  "BPName": "ability_800231800",
+  "NodeID": 1,
+  "UID": "e7c9073d-b853-4437-91f2-f55a96d49657",
+  "isExploreFly": true,
+  "abilityParamId": 10500430,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 800231800001,
+      "name": "setCombatActionTimeline",
+      "UID": "9661fb5e-780c-467a-8270-63b71fe6bc92",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Monster_Flyshortbreath"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Fly",
+    "Eff_Monster_80023_Mon_Skill_Warning",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Absorb",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Release",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Release_01",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Release_Buff",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Fire",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Sky_Fire",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Absorb_01",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_AOE",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_Roar",
+    "Eff_Monster_80023_Mon_Skill_Flyshortbreath_AOE_Kuosan",
+    "Eff_Hit_None_Blunt"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 1,
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "name": ""
+}

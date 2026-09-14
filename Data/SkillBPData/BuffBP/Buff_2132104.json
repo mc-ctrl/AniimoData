@@ -1,0 +1,56 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132104",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    4,
+    8
+  ],
+  "tags": [
+    11
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "f6ab2b87-fab8-4cf0-9e55-641911a6b504",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "4": {
+      "value": 11,
+      "epCostReason": 1,
+      "name": "costEp",
+      "UID": "db9743a8-5909-4bb3-b4b6-386be271476c",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "8": {
+      "key": "StealEp",
+      "name": "setServerCacheVal",
+      "UID": "7fff0045-31d1-4ce4-9d28-fc756b2c2682",
+      "target": "SRC",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "dd91c326-52fc-4a40-a3f5-fd789c023d48",
+        "NodeID": 7,
+        "lValue": {
+          "key": "StealEp",
+          "name": "getServerCacheVal",
+          "UID": "4e3e513f-2c94-42ac-8b4c-2f1e51500899",
+          "target": "SRC",
+          "NodeID": 6
+        }
+      },
+      "NodeID": 8
+    }
+  },
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

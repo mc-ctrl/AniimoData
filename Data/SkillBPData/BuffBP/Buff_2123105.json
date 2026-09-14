@@ -1,0 +1,73 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123105",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2123105,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 10,
+        "UID": "7f02e996-d765-4488-837f-1285a75d4ac2",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 6,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "SRC",
+        "NodeID": 5,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil"
+    }
+  ],
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28efae2a-95aa-4467-a2e9-55e3613fe4a4",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10173_skill_shield",
+      "NodeID": 3
+    },
+    "10": {
+      "calcId": 2123105,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 10,
+      "UID": "7f02e996-d765-4488-837f-1285a75d4ac2",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "effdebd9-3d60-40c6-a966-fc25e977367c",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

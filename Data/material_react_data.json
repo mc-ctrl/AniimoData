@@ -1,0 +1,553 @@
+{
+  "5": {
+    "destroy": {
+      "4": {
+        "events": [
+          [
+            "openEnvObj",
+            {},
+            1
+          ],
+          [
+            "addEntityTag",
+            [
+              "TE_Env_Bait"
+            ],
+            1
+          ],
+          [
+            "dialogue",
+            [
+              20120105
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "ecsEvent": [
+      {
+        "events": [
+          [
+            "openEnvObj",
+            {},
+            1
+          ],
+          [
+            "addEntityTag",
+            [
+              "TE_Env_Bait"
+            ],
+            1
+          ],
+          [
+            "dialogue",
+            [
+              20120105
+            ],
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "40": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "addBuffByEnvObj",
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              12,
+              [
+                1028300,
+                102830001
+              ],
+              1024
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "41": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "removeBuffByEnvObj",
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              2,
+              {},
+              21293041
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "42": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "petTraitStateSet",
+            [
+              1102910000,
+              3,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "43": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "petTraitStateSet",
+            [
+              1104710100,
+              3,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "44": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "createSpellArea",
+            [
+              143101,
+              0,
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "31": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "createEnvObjByRoot",
+            [
+              1300002,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              5
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "11": {
+    "destroy": {
+      "4": {
+        "events": [
+          [
+            "createPuppetByRoot",
+            [
+              1101910004,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              0
+            ],
+            1
+          ],
+          [
+            "petTraitStateSet",
+            [
+              1019100,
+              1,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "ecsEvent": [
+      {
+        "events": [
+          [
+            "createPuppetByRoot",
+            [
+              1101910004,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              0
+            ],
+            1
+          ],
+          [
+            "petTraitStateSet",
+            [
+              1019100,
+              1,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "20": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "petTraitStateSet",
+            [
+              1002100,
+              3,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "21": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "petTraitStateSet",
+            [
+              1002700,
+              2,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "3": {
+    "ecsEvent": [
+      {}
+    ]
+  },
+  "4": {
+    "destroy": {
+      "4": {
+        "events": [
+          [
+            "createPuppetByRoot",
+            [
+              11019100,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              0
+            ],
+            1
+          ],
+          [
+            "petTraitStateSet",
+            [
+              1019100,
+              1,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "ecsEvent": [
+      {
+        "events": [
+          [
+            "createPuppetByRoot",
+            [
+              11019100,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              0
+            ],
+            1
+          ],
+          [
+            "petTraitStateSet",
+            [
+              1019100,
+              1,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "45": {
+    "open": {
+      "0": {
+        "events": [
+          [
+            "triggerExplode",
+            {},
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "10": {
+    "destroy": {
+      "0": {}
+    }
+  },
+  "12": {
+    "destroy": {
+      "4": {
+        "events": [
+          [
+            "createPuppetByRoot",
+            [
+              1101910005,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              0
+            ],
+            1
+          ],
+          [
+            "petTraitStateSet",
+            [
+              1019100,
+              1,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "ecsEvent": [
+      {
+        "events": [
+          [
+            "createPuppetByRoot",
+            [
+              1101910005,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              0
+            ],
+            1
+          ],
+          [
+            "petTraitStateSet",
+            [
+              1019100,
+              1,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "1": {
+    "destroy": {
+      "4": {
+        "events": [
+          [
+            "handleInteractEnv",
+            [
+              57
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "ecsEvent": [
+      {
+        "events": [
+          [
+            "handleInteractEnv",
+            [
+              57
+            ],
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "22": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "petTraitStateSet",
+            [
+              1002100,
+              3,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "30": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "createEnvObjByRoot",
+            [
+              1300004,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              9
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "32": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "createEnvObjByRoot",
+            [
+              1990052,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              8
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "33": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "createEnvObjByRoot",
+            [
+              1300001,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              5
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "34": {
+    "destroy": {
+      "0": {
+        "events": [
+          [
+            "createEnvObjByRoot",
+            [
+              1300003,
+              0,
+              [
+                0,
+                0,
+                0
+              ],
+              10
+            ],
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "2": {
+    "ecsEvent": [
+      {}
+    ]
+  }
+}

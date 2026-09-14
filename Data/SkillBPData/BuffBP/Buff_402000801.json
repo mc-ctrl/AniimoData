@@ -1,0 +1,51 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_402000801",
+  "calcInfoByLuaConfig": {
+    "id": 402000801,
+    "final_taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "a0b27bd0-a03b-48e0-9879-7ebf82531211",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "CURPET",
+      "duration": 2,
+      "buffId": 2123306,
+      "NodeID": 5,
+      "UID": "280afc33-a4c4-4a7d-b595-104520d9faae",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerPostReceiveDamageEvent",
+      "UID": "84d79904-f887-4572-a3cb-2034313d3277",
+      "target": "CURPET",
+      "NodeID": 11
+    },
+    "10": {
+      "buffId": 402000801,
+      "name": "removeBuff",
+      "UID": "2cc22eee-3a3c-47eb-8ba7-41132930a3ee",
+      "target": "MASTER",
+      "NodeID": 10
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    11
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "allowHitCaster": true,
+  "duration": 1.2,
+  "BPName": "ability_12030230",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10203_Skill_NoiseWave_Grass",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "ignoreNonCurPetCollision": true,
+  "onProjectileTickIds": [
+    13
+  ],
+  "moveSpeed": 10,
+  "nodeMap": {
+    "50": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2120308,
+      "NodeID": 50,
+      "UID": "82869271-4351-453b-885d-a8446e04043e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "calcResultNodeId": 11,
+      "name": "actOnTargets",
+      "UID": "ced52d6c-c7ce-460f-b91b-b90b3a6d723a",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            -1
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            3,
+            1,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "rotFrom": {
+            "UID": "8e15240b-b887-43b3-aceb-dfebba7871fd",
+            "name": "getProjectileRotation",
+            "NodeID": 71
+          }
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 3,
+      "needEcs": true,
+      "actionIds": [
+        50,
+        11
+      ],
+      "impulseId": 3002,
+      "NodeID": 13
+    },
+    "11": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12030230,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "a137dc09-11c0-41c0-9940-1b3872263e15",
+      "target": "TARGET",
+      "NodeID": 11,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 3002
+      }
+    }
+  },
+  "calcResultNodeId": 11,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "onProjectileStartIds": [
+    13
+  ],
+  "tickInterval": 0.1,
+  "maxHitNum": 9999,
+  "startSleepTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "defaultHitSoundType": "s",
+  "impulseId": 3002,
+  "acceleration": 0
+}

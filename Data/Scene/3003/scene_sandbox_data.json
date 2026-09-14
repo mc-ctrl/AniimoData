@@ -1,0 +1,7339 @@
+{
+  "91106217": {
+    "owner": "mo.si",
+    "autoSave": true,
+    "position": [
+      -183.95,
+      97.49,
+      1094.7
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_任务POI_道馆55级汐汐学姐",
+    "spawners": {},
+    "id": 91106217,
+    "sightLevel": 64,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1016820
+  },
+  "91107323": {
+    "owner": "徐梦璇",
+    "sandboxType": 1,
+    "chunk": 993266,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91107323,
+    "spawners": [
+      91107325
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -167.68,
+      103.72,
+      757.25
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 410,
+    "name": "水板块_宁静之岛_大量发生_沙滩"
+  },
+  "91107643": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "spawners": [
+      91107701,
+      91107703
+    ],
+    "envobjs": {},
+    "id": 91107643,
+    "sandBoxLevel": 0,
+    "enableFinishMark": false,
+    "sandBoxConfigType": 2,
+    "position": [
+      -75.81,
+      98.08,
+      667.68
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 502,
+    "name": "水板块_宁静之岛_纯奖励点_潮汐宝箱"
+  },
+  "91107707": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91107737": {
+        "majorCompId": 72040899,
+        "owner": "张博文",
+        "EditorName": "P_Item_Rope",
+        "position": [
+          -73.16,
+          95.29,
+          689.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91107737,
+        "componentsInfo": {
+          "72040899": {
+            "staticId": 91107715,
+            "length": 1.3
+          }
+        },
+        "configId": 96,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 504,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_宝箱解谜_潮汐宝箱绳索",
+    "spawners": [
+      91107716
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91107707,
+    "position": [
+      -38.53,
+      95.29,
+      696.6
+    ]
+  },
+  "91107776": {
+    "areaType": 301,
+    "position": [
+      107.38,
+      98.93,
+      128.89
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 3001,
+    "publishTags": [
+      "CBT3_世界水板块"
+    ],
+    "routes": {},
+    "sandBoxLevel": 0,
+    "sandboxType": 1,
+    "name": "水板块_宁静之岛_地图区域划分_CBT3宁静+潮汐之柱划分",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 91107776,
+    "spawnerId": 0,
+    "levelAreaConfigId": 31403,
+    "owner": "pengcheng.han",
+    "LuaForCsVersion": 1,
+    "chunk": 1020901
+  },
+  "91111709": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1017835,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91111726,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块1海滩_其他关卡_贝壳星晒星光浴_迁移",
+    "spawners": [
+      91111717,
+      91111719,
+      91111721,
+      91111723,
+      91111725,
+      91111893
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91111709_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -108.73,
+      102.67,
+      560.33
+    ],
+    "id": 91111709,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 0,
+      "autoSetContent1": true,
+      "initState": 0,
+      "inactiveDesc": "",
+      "mapAreaId": 91012179,
+      "markConfigId": 10405,
+      "markContent1": 91111709,
+      "markType": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "image": "",
+      "SloganPlayOnce": false,
+      "showPortalOffset": false,
+      "title": "",
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIIcon": "",
+      "POIMusic": "",
+      "POIOrNot": false,
+      "yaw": 0,
+      "nearState": 0,
+      "desc": "",
+      "entityStaticIdType": 0,
+      "inactiveTitle": "关键生态点",
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "arriveParam": {},
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "inactiveImage": "",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "enableFinishMark": false
+  },
+  "91110821": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      218.7,
+      95.53,
+      969.06
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91110823": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          213.56,
+          94.48,
+          967.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91110823,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91110889,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91110824": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          197.94,
+          94.59,
+          949.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91110824,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91110886,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_泡泡植物2",
+    "spawners": [
+      91110886,
+      91110889
+    ],
+    "id": 91110821,
+    "sightLevel": 128,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91111082": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      -77.28,
+      95.92,
+      679.61
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91111165": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          -107.69,
+          94.39,
+          689.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91111165,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91111181,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91111208": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          42.24,
+          94.87,
+          674.95
+        ],
+        "rotation": [
+          0,
+          45.14,
+          0
+        ],
+        "id": 91111208,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91111210,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91111084": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          -73.54,
+          95.16,
+          677.94
+        ],
+        "rotation": [
+          0,
+          319.43,
+          358.25
+        ],
+        "id": 91111084,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91111122,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91111085": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          -70.6,
+          94.8,
+          594.27
+        ],
+        "rotation": [
+          0,
+          325.86,
+          0
+        ],
+        "id": 91111085,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91111148,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91111093": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -47.08,
+          94.72,
+          674.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91111093,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91111131,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91111151": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          23,
+          94.77,
+          613.66
+        ],
+        "rotation": [
+          0,
+          321.05,
+          0
+        ],
+        "id": 91111151,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91111153,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_泡泡植物3",
+    "spawners": [
+      91111122,
+      91111131,
+      91111148,
+      91111153,
+      91111181,
+      91111210
+    ],
+    "id": 91111082,
+    "sightLevel": 128,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91052893": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1022961,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91052906,
+    "levelItems": {
+      "91052946": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          218.49,
+          107.83,
+          935.73
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91052946,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91052940": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Totem_Beach_01_7",
+        "position": [
+          217.07,
+          116.33,
+          942.04
+        ],
+        "rotation": [
+          2.11,
+          109.94,
+          1.23
+        ],
+        "id": 91052940,
+        "configId": 645,
+        "defaultValue": {
+          "chestSpawnerId": 91052949,
+          "disableByLevel": 0,
+          "state": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91124964": {
+        "majorCompId": 91091388,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Levelitem_Quickcontrol",
+        "position": [
+          223.14,
+          108.15,
+          938.98
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91124964,
+        "componentsInfo": {
+          "91091388": {
+            "templateIds": "{1058100,}",
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          }
+        },
+        "configId": 673,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91052945": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          218.24,
+          107.85,
+          935.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91052945,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "finishChestId": 91052948,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 10,
+    "name": "水板块_宁静之岛_图腾遗迹_图腾遗迹·白崖之上",
+    "spawners": [
+      91052949,
+      91124969
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91052893_GraphRef.asset",
+    "position": [
+      218.11,
+      107.17,
+      939.7
+    ],
+    "poiType": 401,
+    "id": 91052893,
+    "enableFinishMark": false,
+    "keepGraphOnFinished": true
+  },
+  "91111685": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1017836,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91111698,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块1海滩_其他关卡_贝壳星晒星光浴_迁移",
+    "spawners": [
+      91111691,
+      91111693,
+      91111695,
+      91111697
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91111685_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -111.13,
+      100.49,
+      592.3
+    ],
+    "id": 91111685,
+    "enableFinishMark": false
+  },
+  "91053056": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1017837,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91053602,
+    "levelItems": {
+      "91053556": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_ChestLocker",
+        "position": [
+          -101.07,
+          95.4,
+          683.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91053556,
+        "configId": 426,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91053594": {
+        "majorCompId": 75060209,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_ChestContainer",
+        "position": [
+          -101.16,
+          96.27,
+          683.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91053594,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91053558
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91116484": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -100.07,
+          97.12,
+          683.11
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91116484,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              10,
+              4,
+              10
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "finishChestId": 91053558,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 10,
+    "name": "水板块_宁静之岛_守护宝箱_夜晚落潮守护琥珀",
+    "spawners": [
+      91053559,
+      91115887
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91053056_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -100.94,
+      95.39,
+      683.66
+    ],
+    "poiType": 508,
+    "id": 91053056,
+    "enableFinishMark": false
+  },
+  "91111810": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91111810,
+    "spawners": [
+      91111831,
+      91111905
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      70.87,
+      233.27,
+      1040.54
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_魔海蝶"
+  },
+  "91111916": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91111916,
+    "spawners": [
+      91111920,
+      91111924,
+      91111926,
+      91111928,
+      91111930,
+      91111932,
+      91111934,
+      91111936,
+      91111938,
+      91111940,
+      91111942,
+      91111944,
+      91111946,
+      91111948,
+      91111950,
+      91111952,
+      91111954,
+      91111956,
+      91111958,
+      91111960,
+      91113746,
+      91113749,
+      91113752,
+      91113756,
+      91113757,
+      91113761,
+      91113762,
+      91113872,
+      91113873,
+      91113876,
+      91113878,
+      91113881,
+      91113883,
+      91113905
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -309.79,
+      102.15,
+      1197.4
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_CBT3海天使"
+  },
+  "91052974": {
+    "activeParams": [
+      8,
+      [
+        [
+          1200,
+          1440
+        ],
+        [
+          0,
+          360
+        ]
+      ]
+    ],
+    "owner": "徐梦璇",
+    "autoSave": true,
+    "chunk": 1022958,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91054177,
+    "levelItems": {
+      "91054232": {
+        "majorCompId": 74830881,
+        "owner": "徐梦璇",
+        "EditorName": "交互触发器",
+        "position": [
+          224.51,
+          96.22,
+          773.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054232,
+        "componentsInfo": {
+          "74830881": {
+            "interactId": 75336713,
+            "interactInfo": [
+              {
+                "interactConfigId": 511,
+                "state": 1
+              },
+              {
+                "interactConfigId": 511,
+                "state": 2
+              }
+            ],
+            "overrideNpcTemplateId": 201838,
+            "staticId": 91054309
+          }
+        },
+        "configId": 433,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91054316": {
+        "majorCompId": 73871347,
+        "owner": "徐梦璇",
+        "EditorName": "对话播放_吐球提示",
+        "position": [
+          222.91,
+          96.32,
+          771.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054316,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 91053104
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91106416": {
+        "majorCompId": 91091388,
+        "owner": "徐梦璇",
+        "EditorName": "P_Item_Levelitem_Quickcontrol",
+        "position": [
+          221.3,
+          96.53,
+          773.73
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91106416,
+        "componentsInfo": {
+          "91091388": {
+            "resetTime": 5,
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 673,
+        "scale": [
+          5,
+          5,
+          5
+        ],
+        "isActive": false
+      },
+      "91054213": {
+        "majorCompId": 0,
+        "owner": "徐梦璇",
+        "EditorName": "玩家状态机_对话",
+        "position": [
+          222.52,
+          96.21,
+          773.27
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054213,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "91054213_47735904"
+          },
+          "61746411": {
+            "radius": 0.5
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          10,
+          10,
+          10
+        ],
+        "isActive": false
+      },
+      "91054227": {
+        "majorCompId": 73871347,
+        "owner": "徐梦璇",
+        "EditorName": "对话播放_吐泡泡",
+        "position": [
+          222.91,
+          96.32,
+          771.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91054227,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 91053011
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "saveRole": 1,
+    "onFinished": 1,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 17,
+    "name": "水板块_宁静之岛_任务POI_浮泡章鱼-钱灵出金",
+    "spawners": [
+      91052978,
+      91053999,
+      91054310,
+      91106325
+    ],
+    "activeOnInit": 12,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91052974_GraphRef.asset",
+    "syncLevelItemRole": 1,
+    "sightLevel": 64,
+    "position": [
+      219.52,
+      97.27,
+      766.71
+    ],
+    "id": 91052974,
+    "enableFinishMark": false
+  },
+  "91056466": {
+    "owner": "张博文",
+    "autoSave": true,
+    "position": [
+      -133.53,
+      100.13,
+      703.39
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 504,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_宝箱解谜_化石盖子宝箱1",
+    "spawners": [
+      91056477,
+      91056734,
+      91062317,
+      91075858,
+      91075863,
+      91075866,
+      91075868,
+      91075872,
+      91104553,
+      91104555
+    ],
+    "id": 91056466,
+    "sightLevel": 256,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1016813
+  },
+  "91058969": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1018861,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91062365,
+    "levelItems": {
+      "91062553": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -52,
+          98.4,
+          661.66
+        ],
+        "rotation": [
+          0.93,
+          358.55,
+          359.59
+        ],
+        "id": 91062553,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91062554": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -53.7,
+          98.01,
+          671.42
+        ],
+        "rotation": [
+          0.93,
+          358.55,
+          359.59
+        ],
+        "id": 91062554,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "templateId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91121238": {
+        "majorCompId": 75060209,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_ChestContainer",
+        "position": [
+          -42.04,
+          101.21,
+          684.97
+        ],
+        "rotation": [
+          1.15,
+          358.85,
+          359.99
+        ],
+        "id": 91121238,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91062381
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91124597": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Totem_Beach_01_8",
+        "position": [
+          -50.11,
+          100.28,
+          668.94
+        ],
+        "rotation": [
+          357.46,
+          27.29,
+          0.5
+        ],
+        "id": 91124597,
+        "configId": 647,
+        "defaultValue": {
+          "chestSpawnerId": 91062382,
+          "disableByLevel": 0,
+          "state": 0,
+          "actived": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91125817": {
+        "majorCompId": 91091388,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Levelitem_Quickcontrol",
+        "position": [
+          -48.2,
+          96.64,
+          674.04
+        ],
+        "rotation": [
+          0,
+          35.13,
+          0
+        ],
+        "id": 91125817,
+        "componentsInfo": {
+          "91091388": {
+            "templateIds": "{1058100,}",
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              9,
+              3,
+              9
+            ]
+          }
+        },
+        "configId": 673,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "finishChestId": 91062381,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 10,
+    "name": "水板块_宁静之岛_图腾遗迹_图腾遗迹·湖心泡泡",
+    "spawners": [
+      91062382,
+      91125827
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91058969_GraphRef.asset",
+    "position": [
+      -42.77,
+      100.33,
+      668.91
+    ],
+    "poiType": 401,
+    "id": 91058969,
+    "enableFinishMark": false,
+    "keepGraphOnFinished": true
+  },
+  "91117244": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1022962,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91117273,
+    "levelItems": {
+      "91117247": {
+        "majorCompId": 50268828,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_CollectItemPuzzle_Container",
+        "position": [
+          202.71,
+          104.9,
+          969.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91117247,
+        "componentsInfo": {
+          "50268828": {
+            "chestSpawnerId": 91117295,
+            "duration": 90,
+            "blackScreenId": 17,
+            "resetPortalId": 91117245,
+            "itemList": [
+              [
+                0.14,
+                2.18,
+                0.53
+              ],
+              [
+                0.14,
+                4.21,
+                0.53
+              ],
+              [
+                0.14,
+                6.54,
+                0.53
+              ],
+              [
+                -6.5,
+                9.26,
+                5.69
+              ],
+              [
+                -6.44,
+                11.33,
+                5.59
+              ],
+              [
+                -14.57,
+                21.09,
+                12.48
+              ],
+              [
+                -11.35,
+                20.8,
+                14.62
+              ],
+              [
+                -6.49,
+                13.98,
+                8.36
+              ],
+              [
+                -6.39,
+                15.44,
+                11.54
+              ],
+              [
+                -6.26,
+                18.06,
+                11.52
+              ],
+              [
+                -7.32,
+                19.5,
+                13.85
+              ],
+              [
+                -18.06,
+                21.17,
+                10.28
+              ],
+              [
+                -19.01,
+                21.81,
+                7.59
+              ],
+              [
+                -18.95,
+                24.02,
+                7.56
+              ],
+              [
+                -18.63,
+                26.62,
+                6.87
+              ],
+              [
+                -21.76,
+                30.17,
+                -1.08
+              ],
+              [
+                -20.15,
+                27.14,
+                3.05
+              ],
+              [
+                -26.39,
+                33.93,
+                -5.25
+              ],
+              [
+                -26.32,
+                37.27,
+                -5.25
+              ],
+              [
+                -28.36,
+                41.04,
+                1.21
+              ],
+              [
+                -28.06,
+                43.35,
+                1.14
+              ],
+              [
+                -27.86,
+                45.51,
+                1.12
+              ],
+              [
+                -6.41,
+                13.17,
+                5.5
+              ],
+              [
+                -29.41,
+                38.63,
+                -3.12
+              ],
+              [
+                -23.26,
+                33.42,
+                -3.72
+              ]
+            ],
+            "markId": 91117245,
+            "luaTransData": {
+              "transData": [
+                {
+                  "refName": "StartTrigger",
+                  "trans": {
+                    "localPosition": [
+                      5.73,
+                      0.75,
+                      -1.31
+                    ],
+                    "localRotation": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ]
+            },
+            "itemCount": 25
+          }
+        },
+        "configId": 146,
+        "defaultValue": {
+          "chestSpawnerId": 91117295,
+          "duration": 90,
+          "blackScreenId": 17,
+          "resetPortalId": 91117245,
+          "itemCount": 25
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "saveRole": 1,
+    "onFinished": 1,
+    "finishChestId": 91117294,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 7,
+    "name": "水板块_宁静之岛_辉耀能量收集_辉耀琥珀·上升瀑布",
+    "finishMark": [
+      0,
+      91117245
+    ],
+    "syncLevelItemRole": 1,
+    "id": 91117244,
+    "spawners": [
+      91117295
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91117244_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      207.19,
+      104.97,
+      967.05
+    ],
+    "poiType": 507,
+    "enableFinishMark": true,
+    "activeOnInit": 1
+  },
+  "91063589": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1021933,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91063703,
+    "levelItems": {
+      "91071908": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB1",
+        "position": [
+          155.72,
+          113.19,
+          668.86
+        ],
+        "rotation": [
+          0,
+          128.25,
+          0
+        ],
+        "id": 91071908,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "91071908_47735904"
+          },
+          "61746411": {
+            "radius": 10
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91071907": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB",
+        "position": [
+          156.59,
+          113.19,
+          667.35
+        ],
+        "rotation": [
+          0,
+          128.25,
+          0
+        ],
+        "id": 91071907,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "91071907_47735904"
+          },
+          "61746411": {
+            "radius": 10
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_章鱼必出金",
+    "spawners": [
+      91063609,
+      91063615,
+      91063617,
+      91063619
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91063589_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      155.84,
+      113.35,
+      671.07
+    ],
+    "id": 91063589,
+    "enableFinishMark": false
+  },
+  "91086159": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_化石盖子2",
+    "spawners": [
+      91086162,
+      91104608,
+      91104610
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91086159,
+    "position": [
+      -57.03,
+      100.78,
+      620.17
+    ]
+  },
+  "91086495": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_倒转到神庙传送复苏点",
+    "spawners": {},
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91086495,
+    "position": [
+      60.7,
+      231.2,
+      1030.1
+    ]
+  },
+  "90825631": {
+    "owner": "徐梦璇",
+    "sandboxType": 1,
+    "chunk": 1015795,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 90825631,
+    "spawners": [
+      90825644,
+      90825645,
+      90825677,
+      90826151,
+      91050918,
+      91179807,
+      91179867,
+      91179924
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -211.6,
+      111,
+      1074.9
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "全局_生态点_海象"
+  },
+  "91095646": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 1021933,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91095646,
+    "spawners": [
+      91095648
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      180.65,
+      101.91,
+      659.24
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_白崖密集刷新区白天"
+  },
+  "90839389": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 1017841,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 90839389,
+    "spawners": [
+      91052284,
+      91052287,
+      91052290,
+      91052292,
+      91052294,
+      91052296,
+      91052299,
+      91052301,
+      91052303,
+      91052305,
+      91052309,
+      91052311,
+      91052313,
+      91052319,
+      91052322,
+      91052337,
+      91052353,
+      91052355,
+      91052373,
+      91052378,
+      91052393,
+      91052398,
+      91052400,
+      91052402,
+      91052404,
+      91052406,
+      91052408,
+      91052742,
+      91052744,
+      91132559,
+      91132565,
+      91132568,
+      91132576,
+      91132579,
+      91132597,
+      91132607,
+      91132629,
+      91132634,
+      91132646,
+      91132649,
+      91132653,
+      91163037,
+      91163041,
+      91163046,
+      91163060,
+      91164259,
+      91180065,
+      91180067,
+      91180070,
+      91180073,
+      91180075,
+      91180081,
+      91180085,
+      91180087,
+      91180089,
+      91180094,
+      91180098,
+      91180100
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -121.72,
+      99.82,
+      930.81
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 502,
+    "name": "全局_纯奖励点_宁静岛登岛区奖励"
+  },
+  "91095665": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91095665,
+    "spawners": [
+      91095670,
+      91095676
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      178.13,
+      101.56,
+      659.83
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_晚上替代"
+  },
+  "90876454": {
+    "owner": "bowen.zhang",
+    "sandboxType": 1,
+    "chunk": 1017838,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 90876454,
+    "spawners": {},
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -74.77,
+      100.28,
+      747.41
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 3001,
+    "name": "全局_地图区域划分_宁静之岛区域划分"
+  },
+  "91095694": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91095694,
+    "spawners": [
+      91095699
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      185.13,
+      95.53,
+      747
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_白崖密集捕捉区晚"
+  },
+  "90882744": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019888,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "sightLevel": 128,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_任务POI_任务传送点",
+    "sightLevelType": 128,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -151.8,
+      101.59,
+      1067.12
+    ],
+    "poiType": 2001,
+    "owner": "bowen.zhang",
+    "forceSync": false,
+    "id": 90882744,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "91095724": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91095724,
+    "spawners": [
+      91095727,
+      91095729,
+      91095731,
+      91095734
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      175.46,
+      95.99,
+      795.68
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_小读一手"
+  },
+  "90948869": {
+    "owner": "yuhong.cao",
+    "autoSave": true,
+    "position": [
+      -560.3,
+      113.78,
+      1221.4
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "全局_任务POI_cbt2水板块任务",
+    "spawners": [
+      90948930,
+      90948936,
+      90948944,
+      90948955,
+      90948961,
+      90948976,
+      90948979,
+      90948983,
+      90949808,
+      90949810,
+      90949813,
+      90949815,
+      90949817,
+      90949940,
+      90949943,
+      90957305,
+      90959471,
+      90964380
+    ],
+    "id": 90948869,
+    "sightLevel": 128,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1010678
+  },
+  "91095739": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1022962,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91117203,
+    "levelItems": {
+      "91107822": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          176.3,
+          132.99,
+          964.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91107822,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91097403,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91107823": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          183.68,
+          121.87,
+          976.97
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91107823,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91097369,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91125381": {
+        "majorCompId": 91091388,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Levelitem_Quickcontrol",
+        "position": [
+          207.86,
+          105.15,
+          970.26
+        ],
+        "rotation": [
+          0,
+          339.98,
+          0
+        ],
+        "id": 91125381,
+        "componentsInfo": {
+          "91091388": {
+            "templateIds": "{1058100,}",
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              3,
+              3,
+              3
+            ]
+          }
+        },
+        "configId": 673,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91104451": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          202.98,
+          103.29,
+          969.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91104451,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91097297,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91104457": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          195.63,
+          109.74,
+          975.48
+        ],
+        "rotation": [
+          0,
+          220.2,
+          0
+        ],
+        "id": 91104457,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91097325,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91107821": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          196.7,
+          115.13,
+          980.77
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91107821,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91097352,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91104488": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          180.8,
+          128.78,
+          969.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91104488,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91097384,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91104406": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          174.39,
+          139.93,
+          970.63
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91104406,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91097415,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 507,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_辉耀能量收集_辉耀琥珀·上升",
+    "spawners": [
+      91097297,
+      91097325,
+      91097352,
+      91097369,
+      91097384,
+      91097403,
+      91097415,
+      91125385
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91095739_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      204.52,
+      105.06,
+      965.45
+    ],
+    "id": 91095739,
+    "enableFinishMark": false
+  },
+  "91103540": {
+    "owner": "端木一康",
+    "autoSave": true,
+    "chunk": 1028069,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块1草原_其他关卡_水板块测试营地",
+    "spawners": [
+      91103657,
+      91103659
+    ],
+    "activeOnInit": 1,
+    "lastModifiedBy": "端木一康",
+    "sightLevel": 128,
+    "position": [
+      555.18,
+      99.29,
+      129.08
+    ],
+    "id": 91103540,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "infoPage": 0,
+      "autoSetContent1": true,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 0,
+      "markConfigId": 2000,
+      "markContent1": 91103540,
+      "nearState": 1,
+      "openMapState": 1,
+      "portalOffset": [
+        -0.18,
+        -0.1,
+        -4.37
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": true,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "image": "$UI_Img_Map_Preview_Home_Camp01.png",
+      "SloganPlayOnce": true,
+      "desc": "位于浪漫花海与松林之间的驿站，联结者们可以在这里休憩、交友、装饰露营地台、获得驿站增益，还可以派遣伊莫外出探险。",
+      "title": "房车驿站·鸢尾花海",
+      "showUI": true,
+      "showPortalOffset": true,
+      "showActiveDistance": false,
+      "POIDesc": "松风轻语，花舞翩跹。",
+      "POIIcon": "$UI_Icon_POI_Explore_CampingCar.png",
+      "POIMusic": "",
+      "POIOrNot": true,
+      "yaw": 120,
+      "entityStaticIdType": 0,
+      "markType": 32,
+      "arriveParam": {},
+      "inactiveImage": "$UI_Img_Map_Preview_Home_Camp01.png",
+      "activeDisplayType": 1,
+      "activeDistance": 20,
+      "activeHigh": [
+        10,
+        -10
+      ],
+      "activeShapes": {},
+      "inactiveDesc": "位于浪漫花海与松林之间的驿站，联结者们可以在这里休憩、交友、装饰露营地台、获得驿站增益，还可以派遣伊莫外出探险。<style=Hint_BgL>可前往驿站管理员滨滨处激活</style>。",
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "inactiveTitle": "房车驿站·鸢尾花海：待激活",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    }
+  },
+  "91072569": {
+    "activeParams": [
+      8,
+      [
+        [
+          1200,
+          1440
+        ],
+        [
+          0,
+          360
+        ]
+      ]
+    ],
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1017837,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91119572,
+    "levelItems": {
+      "91119585": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_SB (1)",
+        "position": [
+          -78.02,
+          96.35,
+          688
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91119585,
+        "componentsInfo": {
+          "52068266": {
+            "expressionKey": "91119585_52068266"
+          },
+          "91118258": {
+            "size": [
+              15,
+              5,
+              15
+            ]
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91119580": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_SB",
+        "position": [
+          -78.02,
+          96.35,
+          688
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91119580,
+        "componentsInfo": {
+          "52068266": {
+            "expressionKey": "91119580_52068266"
+          },
+          "91118258": {
+            "size": [
+              15,
+              5,
+              15
+            ]
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_吵架鱼",
+    "spawners": [
+      91072572,
+      91072574,
+      91075358
+    ],
+    "activeOnInit": 12,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91072569_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -71.69,
+      95.72,
+      684.61
+    ],
+    "id": 91072569,
+    "enableFinishMark": false
+  },
+  "91026107": {
+    "owner": "张博文",
+    "autoSave": true,
+    "position": [
+      -29.06,
+      100.4,
+      812.01
+    ],
+    "disposable": false,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91127527,
+    "levelItems": {
+      "91100935": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -9,
+          100,
+          844
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91100935,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_LevelItem_SoundAreaBubblePeacefulland.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_LevelItem_SoundAreaBubblePeacefulland.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91026140": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -9,
+          100,
+          844
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91026140,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_levelitem_LakeBigBubble.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_levelitem_LakeBigBubble.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 21,
+    "name": "板块2-核心区_其他关卡_湖心泡泡",
+    "spawners": {},
+    "id": 91026107,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91026107_GraphRef.asset",
+    "sightLevel": 512,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91272354": {
+    "owner": "黄司晨",
+    "autoSave": true,
+    "position": [
+      152.52,
+      98.76,
+      771.92
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 4001,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块2-核心区_运营活动_水板块活动追踪-浮泡章鱼艺术家",
+    "spawners": {},
+    "id": 91272354,
+    "sightLevel": 64,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 4,
+    "chunk": 0
+  },
+  "91272343": {
+    "owner": "黄司晨",
+    "autoSave": true,
+    "position": [
+      23.37,
+      102.37,
+      691.93
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 4001,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块2-核心区_运营活动_水板块活动追踪-浮泡章鱼",
+    "spawners": {},
+    "id": 91272343,
+    "sightLevel": 64,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 4,
+    "chunk": 0
+  },
+  "91272338": {
+    "owner": "黄司晨",
+    "autoSave": true,
+    "position": [
+      -116.42,
+      101.17,
+      750.81
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 4001,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块2-核心区_运营活动_水板块活动追踪-觅叶羊",
+    "spawners": {},
+    "id": 91272338,
+    "sightLevel": 64,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 4,
+    "chunk": 0
+  },
+  "91127801": {
+    "owner": "黄琦睿",
+    "sandboxType": 1,
+    "chunk": 1018860,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91127801,
+    "spawners": [
+      91127811,
+      91127857,
+      91128263,
+      91128278
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -57.63,
+      101.04,
+      622.68
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_帮助信息及生态"
+  },
+  "91074400": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_虹光叶羊打点",
+    "spawners": {},
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91074400,
+    "position": [
+      149.92,
+      156.62,
+      972.71
+    ]
+  },
+  "91177907": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91177907,
+    "spawners": [
+      91177915,
+      91178066,
+      91178070,
+      91178143,
+      91178368,
+      91178398,
+      91178425
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -245.01,
+      99.84,
+      1154.4
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 502,
+    "name": "水板块_宁静之岛_纯奖励点_登岛区采集物"
+  },
+  "91028723": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 1017838,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91028723,
+    "spawners": [
+      91028726,
+      91028729,
+      91028731,
+      91028733,
+      91028737,
+      91028739,
+      91028822,
+      91028824,
+      91049835,
+      91083080,
+      91083082,
+      91083084,
+      91083086,
+      91083088,
+      91083090,
+      91083092,
+      91083094,
+      91083096,
+      91083098,
+      91083100,
+      91083102,
+      91083104,
+      91083106,
+      91093161,
+      91093163,
+      91093165,
+      91093342,
+      91093344,
+      91093394,
+      91093397,
+      91093457,
+      91093460,
+      91093462,
+      91093464,
+      91093466,
+      91093503,
+      91095238,
+      91095241,
+      91095243,
+      91105803,
+      91105885,
+      91105887,
+      91106074,
+      91112534,
+      91133336,
+      91133339
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -64.12,
+      100.2,
+      750.42
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_叶羊"
+  },
+  "91177923": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      -229.65,
+      99.98,
+      1138.93
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_登岛区珊壳鱼",
+    "spawners": [
+      91177941,
+      91177944,
+      91177946,
+      91178478,
+      91178480,
+      91178547,
+      91178549,
+      91178558,
+      91178570,
+      91178572,
+      91178574,
+      91178577,
+      91178580,
+      91178582,
+      91178584,
+      91178586,
+      91178588,
+      91178641,
+      91178654,
+      91178661,
+      91178663,
+      91178665
+    ],
+    "id": 91177923,
+    "sightLevel": 256,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1015796
+  },
+  "91075738": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91075738,
+    "spawners": [
+      91075746,
+      91075750,
+      91076966,
+      91076968,
+      91076971,
+      91076984,
+      91095640,
+      91095642,
+      91095644
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      178.13,
+      102.71,
+      655.12
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_章鱼读博"
+  },
+  "91183220": {
+    "activeParams": [
+      3,
+      [
+        [
+          360,
+          480
+        ],
+        [
+          480,
+          1020
+        ]
+      ]
+    ],
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91183255,
+    "levelItems": {
+      "91183565": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_OverlapCounter_SB",
+        "position": [
+          87.45,
+          98.38,
+          680.16
+        ],
+        "rotation": [
+          0,
+          355.01,
+          0
+        ],
+        "id": 91183565,
+        "componentsInfo": {
+          "91118258": {
+            "size": [
+              8,
+              6,
+              13
+            ]
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91183225": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_ScalableAirwall_Box_SB",
+        "position": [
+          87.45,
+          98.38,
+          680.16
+        ],
+        "rotation": [
+          0,
+          355.01,
+          0
+        ],
+        "id": 91183225,
+        "componentsInfo": {
+          "59658659": {
+            "size": [
+              14,
+              6,
+              13.78
+            ]
+          }
+        },
+        "configId": 281,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_潮汐峡谷空气墙",
+    "spawners": {},
+    "activeOnInit": 12,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91183220_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      83.94,
+      95.66,
+      679.54
+    ],
+    "id": 91183220,
+    "enableFinishMark": false
+  },
+  "91099950": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91099950,
+    "markIconSpawnerId": 0,
+    "spawners": [
+      91099955,
+      91099957,
+      91099962,
+      91099964,
+      91099966,
+      91099968,
+      91099971,
+      91099973,
+      91099976,
+      91099979
+    ],
+    "sandBoxLevel": 0,
+    "position": [
+      201.16,
+      95.68,
+      902.5
+    ],
+    "poiType": 502,
+    "name": "水板块_宁静之岛_纯奖励点_白崖珊瑚采集"
+  },
+  "91032684": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1018860,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91032697,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块1海滩_其他关卡_贝壳星晒星光浴_迁移",
+    "spawners": [
+      91032690,
+      91032692,
+      91032694,
+      91032696
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91032684_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -13.08,
+      102.8,
+      591.99
+    ],
+    "id": 91032684,
+    "enableFinishMark": false
+  },
+  "91100038": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 1022961,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91100038,
+    "spawners": [
+      91100057,
+      91100059,
+      91100061,
+      91100063,
+      91100065,
+      91100067,
+      91100069,
+      91100071,
+      91113826,
+      91113827,
+      91113829,
+      91113831,
+      91113834,
+      91113836,
+      91113839,
+      91113847,
+      91113853
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      218.69,
+      95.53,
+      954.4
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_晚上章鱼很爽"
+  },
+  "91272278": {
+    "owner": "黄司晨",
+    "autoSave": true,
+    "position": [
+      -187.47,
+      100.33,
+      1026.12
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 4001,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块2-核心区_运营活动_水板块活动追踪-珊壳鱼",
+    "spawners": {},
+    "id": 91272278,
+    "sightLevel": 64,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 4,
+    "chunk": 1016819
+  },
+  "91035002": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91035002,
+    "markIconSpawnerId": 0,
+    "spawners": [
+      91036820,
+      91036822,
+      91036885,
+      91036887,
+      91036892,
+      91036894,
+      91036899,
+      91036901,
+      91036905,
+      91036907,
+      91036911,
+      91036913
+    ],
+    "sandBoxLevel": 0,
+    "position": [
+      -160.87,
+      102.6,
+      736.16
+    ],
+    "poiType": 502,
+    "name": "水板块_宁静之岛_纯奖励点_泡泡宝箱"
+  },
+  "91012173": {
+    "owner": "张博文",
+    "chunk": 1017837,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 91065285,
+      "markConfigId": 10406,
+      "markContent1": 91012173,
+      "markType": 0,
+      "openMapState": 1,
+      "portalOffset": [
+        3.05,
+        0.25,
+        0.46
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": false,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "image": "$UI_Img_Map_Preview_TeleportationArray.png",
+      "SloganPlayOnce": true,
+      "nearState": 1,
+      "title": "地脉晶簇·浮光海岸",
+      "showPortalOffset": true,
+      "POIDesc": "",
+      "POIIcon": "$UI_Icon_POI_Explore_Transmit.png",
+      "showActiveDistance": true,
+      "POIOrNot": true,
+      "yaw": 139.56,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "地脉晶簇",
+      "inactiveImage": "$UI_Img_Map_Preview_TeleportationArray.png",
+      "arriveParam": {},
+      "activeDisplayType": 1,
+      "activeDistance": 15,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "desc": "地脉能量涌现的位置，联结者可以通过地脉晶簇快速旅行。",
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "inactiveDesc": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91012176,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "poiType": 406,
+    "sandBoxLevel": 0,
+    "sandboxType": 21,
+    "name": "传送点A4_浮光海岸",
+    "spawners": [
+      91012175
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91012173_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 512,
+    "position": [
+      -71.93,
+      102.61,
+      645.29
+    ],
+    "enableFinishMark": false,
+    "id": 91012173
+  },
+  "91038935": {
+    "activeParams": [
+      31403,
+      2
+    ],
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1016816,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "enableActiveCondition": true,
+    "envobjs": {},
+    "graphId": 91105972,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_关键生态点_滑沙的海象",
+    "spawners": [
+      91038937,
+      91105941
+    ],
+    "id": 91038935,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91038935_GraphRef.asset",
+    "sightLevel": 80,
+    "position": [
+      -182.16,
+      110.84,
+      853.57
+    ],
+    "enableFinishMark": false,
+    "activeCondition": [
+      "Active_Not",
+      [
+        9,
+        [
+          31403,
+          2
+        ]
+      ]
+    ]
+  },
+  "91216521": {
+    "activeParams": [
+      3,
+      [
+        [
+          360,
+          480
+        ],
+        [
+          480,
+          1020
+        ]
+      ]
+    ],
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1016819,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91216523": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -180.38,
+          100.04,
+          1066.72
+        ],
+        "rotation": [
+          0,
+          307.87,
+          0
+        ],
+        "id": 91216523,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$Eff_Env_Common_WaterFog_Big.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$Eff_Env_Common_WaterFog_Big.prefab"
+        },
+        "scale": [
+          0.81,
+          0.81,
+          0.81
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_涨潮时瀑布特效",
+    "spawners": {},
+    "id": 91216521,
+    "sightLevel": 128,
+    "position": [
+      -175.35,
+      95.95,
+      1063.42
+    ],
+    "markIconSpawnerId": 0,
+    "activeOnInit": 12
+  },
+  "91076011": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91076011,
+    "spawners": [
+      91076015,
+      91076018
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -108.73,
+      100.07,
+      583.28
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_白天吵架鱼"
+  },
+  "91042088": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91044998": {
+        "majorCompId": 50866965,
+        "owner": "张博文",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          213.1,
+          108.31,
+          940.76
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91044998,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91045009": {
+        "majorCompId": 50866965,
+        "owner": "张博文",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          187.21,
+          102.88,
+          956.37
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91045009,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91045019": {
+        "majorCompId": 54408025,
+        "owner": "张博文",
+        "EditorName": "P_Item_Chest_Shield_With_Marker_03",
+        "position": [
+          191.9,
+          102.43,
+          956.77
+        ],
+        "rotation": [
+          359.98,
+          295.61,
+          359.99
+        ],
+        "id": 91045019,
+        "componentsInfo": {
+          "54408025": {
+            "chestId": 91044629,
+            "customId2State": {},
+            "id2State": {
+              "91045021": 2,
+              "91044998": 2,
+              "91045009": 2
+            }
+          },
+          "49996532": {
+            "targetState": 2,
+            "bindSwitchId": 91045021
+          },
+          "49996533": {
+            "targetState": 2,
+            "bindSwitchId": 91045009
+          },
+          "49996534": {
+            "targetState": 2,
+            "bindSwitchId": 91044998
+          }
+        },
+        "configId": 142,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91045021": {
+        "majorCompId": 50866965,
+        "owner": "张博文",
+        "EditorName": "P_Item_SceneObject_Chest_Trigger",
+        "position": [
+          196.22,
+          105.02,
+          969.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91045021,
+        "configId": 46,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1.4,
+          1.4,
+          1.4
+        ],
+        "isActive": true
+      },
+      "91127610": {
+        "majorCompId": 91091388,
+        "owner": "张博文",
+        "EditorName": "P_Item_Levelitem_Quickcontrol",
+        "position": [
+          189.21,
+          104.01,
+          958.92
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91127610,
+        "componentsInfo": {
+          "91091388": {
+            "familyIds": "{1058}",
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              4,
+              5,
+              4
+            ]
+          }
+        },
+        "configId": 673,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91042433": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_NoLeafFan_SB",
+        "position": [
+          192.09,
+          110,
+          962.24
+        ],
+        "rotation": [
+          0,
+          34.4,
+          0
+        ],
+        "id": 91042433,
+        "componentsInfo": {
+          "91042379": {
+            "localPosition": [
+              0.83,
+              0,
+              0.92
+            ],
+            "localScale": [
+              1,
+              1.08,
+              1
+            ],
+            "localEulerAngles": [
+              0,
+              270,
+              270
+            ]
+          },
+          "42662676": {
+            "power": 23
+          },
+          "42658052": {
+            "shape": {
+              "endPosition": [
+                0,
+                3.67,
+                0
+              ],
+              "shapeType": "LinearShape",
+              "startPosition": [
+                0,
+                3.23,
+                0
+              ]
+            }
+          },
+          "91042378": {
+            "size": [
+              4,
+              8.29,
+              4
+            ]
+          }
+        },
+        "configId": 78,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0,
+          "fly": 0
+        },
+        "scale": [
+          2.47,
+          2.43,
+          1.67
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "saveRole": 1,
+    "onFinished": 3,
+    "finishChestId": 91044629,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 9,
+    "name": "水板块_宁静之岛_宝箱解谜_泡泡抬升压感",
+    "spawners": [
+      91044630,
+      91044713,
+      91044727,
+      91044731,
+      91044734,
+      91127618
+    ],
+    "id": 91042088,
+    "syncLevelItemRole": 1,
+    "sightLevel": 128,
+    "position": [
+      217.08,
+      95.83,
+      929.81
+    ],
+    "poiType": 504,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1
+  },
+  "91101203": {
+    "activeParams": [
+      31403,
+      12
+    ],
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1017838,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "enableActiveCondition": true,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91101204": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -88.61,
+          100.53,
+          738.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91101204,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_LevelItem_SoundAreaOutBubbleRainPeacefulland.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_LevelItem_SoundAreaOutBubbleRainPeacefulland.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_雨BGM",
+    "spawners": {},
+    "id": 91101203,
+    "sightLevel": 128,
+    "position": [
+      -85.4,
+      100.53,
+      731.04
+    ],
+    "activeCondition": [
+      "Active_Or",
+      [
+        9,
+        [
+          31403,
+          2
+        ]
+      ],
+      [
+        9,
+        [
+          31403,
+          12
+        ]
+      ]
+    ]
+  },
+  "91078640": {
+    "activeParams": [
+      8,
+      [
+        [
+          1200,
+          1440
+        ],
+        [
+          0,
+          360
+        ]
+      ]
+    ],
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_打水仗很爽",
+    "spawners": [
+      91078654,
+      91078657,
+      91078659,
+      91078661
+    ],
+    "id": 91078640,
+    "sightLevel": 128,
+    "position": [
+      166.18,
+      98.33,
+      711.68
+    ],
+    "markIconSpawnerId": 0,
+    "activeOnInit": 12
+  },
+  "91127584": {
+    "owner": "张博文",
+    "autoSave": true,
+    "position": [
+      -104,
+      94.89,
+      692.45
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91127585,
+    "levelItems": {
+      "91127587": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB",
+        "position": [
+          -103.95,
+          100.28,
+          691.73
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91127587,
+        "componentsInfo": {
+          "61746411": {
+            "radius": 9
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91127588": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB (1)",
+        "position": [
+          -78.2,
+          100.28,
+          688.26
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91127588,
+        "componentsInfo": {
+          "61746411": {
+            "radius": 9
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91127589": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB (2)",
+        "position": [
+          10.36,
+          100.28,
+          680.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91127589,
+        "componentsInfo": {
+          "61746411": {
+            "radius": 9
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_潮汐帮助",
+    "spawners": {},
+    "id": 91127584,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91127584_GraphRef.asset",
+    "sightLevel": 128,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91079435": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91079435,
+    "spawners": [
+      91079439
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      248.58,
+      96.26,
+      980.91
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_章鱼很爽"
+  },
+  "91102163": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1015793,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91104204,
+    "levelItems": {
+      "91102261": {
+        "majorCompId": 72040899,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Rope",
+        "position": [
+          -232.13,
+          114.17,
+          952.19
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91102261,
+        "componentsInfo": {
+          "72040899": {
+            "staticId": 91102267,
+            "length": 8
+          }
+        },
+        "configId": 96,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91102279": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -229.79,
+          98.66,
+          951.98
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91102279,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91102285,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91104198": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -229.55,
+          99.9,
+          954.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91104198,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_宝箱和泡泡",
+    "spawners": [
+      91102268,
+      91102285
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91102163_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -220.33,
+      99.59,
+      956.82
+    ],
+    "id": 91102163,
+    "enableFinishMark": false
+  },
+  "91083014": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 0,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91083014,
+    "markIconSpawnerId": 0,
+    "spawners": {},
+    "sandBoxLevel": 0,
+    "position": [
+      11.5,
+      100.2,
+      768.14
+    ],
+    "poiType": 501,
+    "name": "板块2-核心区_进食活动点"
+  },
+  "91127499": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      -52.52,
+      100.2,
+      778.04
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91127532,
+    "levelItems": {
+      "91127537": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB",
+        "position": [
+          -9,
+          100,
+          844
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91127537,
+        "componentsInfo": {
+          "61746411": {
+            "radius": 85
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91127505": {
+        "majorCompId": 91091388,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Levelitem_Quickcontrol",
+        "position": [
+          -56.15,
+          100.2,
+          776.16
+        ],
+        "rotation": [
+          0,
+          36.35,
+          0
+        ],
+        "id": 91127505,
+        "componentsInfo": {
+          "91091388": {
+            "templateIds": "{1058100,}",
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              20,
+              25,
+              20
+            ]
+          }
+        },
+        "configId": 673,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91127507": {
+        "majorCompId": 91091388,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Levelitem_Quickcontrol (1)",
+        "position": [
+          5.75,
+          100.2,
+          764.35
+        ],
+        "rotation": [
+          0,
+          347.38,
+          0
+        ],
+        "id": 91127507,
+        "componentsInfo": {
+          "91091388": {
+            "templateIds": "{1058100,}",
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              20,
+              25,
+              20
+            ]
+          }
+        },
+        "configId": 673,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_泡泡引导",
+    "spawners": [
+      91127518,
+      91127520
+    ],
+    "id": 91127499,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91127499_GraphRef.asset",
+    "sightLevel": 128,
+    "activeOnInit": 1,
+    "chunk": 1018863
+  },
+  "91050461": {
+    "owner": "徐梦璇",
+    "autoSave": true,
+    "chunk": 1019885,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 1,
+      "autoSetContent1": true,
+      "initState": 0,
+      "inactiveDesc": "伊莫似乎遇到了什么问题，你能帮助它吗？",
+      "mapAreaId": 91012179,
+      "markConfigId": 10412,
+      "markContent1": 91050461,
+      "nearState": 2,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 1,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": true,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "SloganPlayOnce": true,
+      "POIDesc": "帮帮伊莫",
+      "POIIcon": "$UI_Icon_POI_Decrypt_FindFriends.png",
+      "title": "帮帮伊莫",
+      "POIOrNot": true,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "帮帮伊莫",
+      "markType": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "arriveParam": {},
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "desc": "伊莫似乎遇到了什么问题，你能帮助它吗？",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91052266,
+    "levelItems": {
+      "91052415": {
+        "majorCompId": 75060209,
+        "owner": "徐梦璇",
+        "EditorName": "宝箱显影控制器",
+        "position": [
+          18.79,
+          103.43,
+          711.3
+        ],
+        "rotation": [
+          0,
+          213.62,
+          0
+        ],
+        "id": 91052415,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91237825,
+            "flyToPlayer": false
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91080171": {
+        "majorCompId": 0,
+        "owner": "徐梦璇",
+        "EditorName": "集合气泡触发",
+        "position": [
+          17.93,
+          101.2,
+          707.52
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91080171,
+        "componentsInfo": {
+          "61746411": {
+            "radius": 0.5
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          14.07,
+          14.07,
+          14.07
+        ],
+        "isActive": true
+      },
+      "91063830": {
+        "majorCompId": 0,
+        "owner": "徐梦璇",
+        "EditorName": "贝壳监听状态机",
+        "position": [
+          -8.99,
+          100.77,
+          699.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91063830,
+        "componentsInfo": {
+          "52068266": {
+            "expressionKey": "91063830_52068266",
+            "detectType": 128
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          2,
+          1,
+          2
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "saveRole": 1,
+    "onFinished": 1,
+    "finishChestId": 91237825,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 7,
+    "name": "水板块_宁静之岛_关键生态点_觅叶羊-捉迷藏",
+    "spawners": [
+      91051388,
+      91051606,
+      91051608,
+      91051611,
+      91051613,
+      91051844,
+      91051847,
+      91051849,
+      91052268,
+      91062376,
+      91063834,
+      91237828
+    ],
+    "syncLevelItemRole": 1,
+    "sightLevel": 128,
+    "activeOnInit": 1,
+    "position": [
+      18.65,
+      100.45,
+      703.74
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91050461_GraphRef.asset",
+    "poiType": 412,
+    "id": 91050461,
+    "enableFinishMark": false,
+    "keepGraphOnFinished": true,
+    "disposable": true
+  },
+  "91124951": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91124977": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          217.57,
+          105.84,
+          939.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91124977,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91124980,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_图腾遗迹提示",
+    "spawners": [
+      91124980
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91124951,
+    "position": [
+      223.23,
+      108.04,
+      936.98
+    ]
+  },
+  "91123314": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1015793,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_第一个泡泡帮助",
+    "spawners": {},
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91123314,
+    "position": [
+      -227.93,
+      99.46,
+      954.2
+    ]
+  },
+  "91102457": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1015790,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91104055,
+    "levelItems": {
+      "91127529": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB",
+        "position": [
+          -211.03,
+          100.36,
+          765.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91127529,
+        "componentsInfo": {
+          "61746411": {
+            "radius": 9
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91102458": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -211.01,
+          98.53,
+          765.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91102458,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91102464,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91104084": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -208.89,
+          98.69,
+          768.81
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91104084,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "saveRole": 1,
+    "onFinished": 1,
+    "finishChestId": 91102468,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 7,
+    "name": "水板块_宁静之岛_其他关卡_泡泡琥珀",
+    "spawners": [
+      91102464,
+      91102470
+    ],
+    "activeOnInit": 1,
+    "syncLevelItemRole": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91102457_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -210.4,
+      99.33,
+      764.01
+    ],
+    "poiType": 1003,
+    "id": 91102457,
+    "enableFinishMark": false
+  },
+  "91120504": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_虹光提示信息戳",
+    "spawners": {},
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91120504,
+    "position": [
+      163.84,
+      156.66,
+      980.05
+    ]
+  },
+  "91118662": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_生态融入信息",
+    "spawners": {},
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91118662,
+    "position": [
+      -18.16,
+      100.37,
+      708.73
+    ]
+  },
+  "91051791": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1018863,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "initState": 0,
+      "mapAreaId": 91012179,
+      "markConfigId": 10405,
+      "markContent1": 91051791,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": true,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "SloganPlayOnce": false,
+      "POIDesc": "=\"这是\"&J67&\"，具体描述自助修改\"",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "关键生态点",
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "markType": 0,
+      "affiliatedCamp": {},
+      "arriveParam": {},
+      "arriveType": 1,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91122996,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_关键生态点_进入大泡泡表演",
+    "spawners": [
+      91051796,
+      91123308
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91051791_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -51.95,
+      100.4,
+      783.83
+    ],
+    "id": 91051791,
+    "markIconSpawnerId": 0,
+    "disposable": true
+  },
+  "91115639": {
+    "activeParams": [
+      12,
+      [
+        [
+          1020,
+          1200
+        ],
+        [
+          1200,
+          1440
+        ],
+        [
+          0,
+          360
+        ]
+      ]
+    ],
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1021934,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91115677,
+    "levelItems": {
+      "91115640": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_ChestLocker",
+        "position": [
+          189.46,
+          95.4,
+          762.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91115640,
+        "configId": 426,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91115642": {
+        "majorCompId": 75060209,
+        "owner": "张博文",
+        "EditorName": "P_Item_ChestContainer",
+        "position": [
+          189.37,
+          96.27,
+          762.23
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91115642,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91115648
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91115907": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Item_Trigger_Sphere_SB",
+        "position": [
+          189.36,
+          96.1,
+          762.18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91115907,
+        "componentsInfo": {
+          "58801348": {
+            "radius": 12
+          }
+        },
+        "configId": 33,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 2,
+    "finishChestId": 91115648,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 28,
+    "name": "水板块_宁静之岛_守护宝箱_夜晚落潮守护琥珀",
+    "spawners": [
+      91115643,
+      91115647
+    ],
+    "id": 91115639,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91115639_GraphRef.asset",
+    "lastModifiedBy": "张博文",
+    "position": [
+      189.59,
+      95.39,
+      762.55
+    ],
+    "poiType": 508,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 12
+  },
+  "91048688": {
+    "owner": "黄琦睿",
+    "sandboxType": 1,
+    "chunk": 1021933,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91048688,
+    "spawners": [
+      91048690,
+      91048692,
+      91048694,
+      91085872
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      144.17,
+      96.01,
+      684.43
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_卖唱的章鱼"
+  },
+  "91102626": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      188.78,
+      98.69,
+      708.77
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91102665": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          175.95,
+          101.54,
+          707.76
+        ],
+        "rotation": [
+          0,
+          304.93,
+          0
+        ],
+        "id": 91102665,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91102684,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91107825": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          178.76,
+          94.51,
+          701.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91107825,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91102681,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91107828": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big (1)",
+        "position": [
+          200.26,
+          94.68,
+          715.51
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91107828,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91107830,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91107831": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          193.98,
+          104.75,
+          714.12
+        ],
+        "rotation": [
+          0,
+          254.08,
+          0
+        ],
+        "id": 91107831,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91107833,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91125393": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          156.87,
+          94.64,
+          712.16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91125393,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91125396,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91102664": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          163.97,
+          99.85,
+          719.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91102664,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91222893,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_泡泡植物",
+    "spawners": [
+      91102681,
+      91102684,
+      91107830,
+      91107833,
+      91125396,
+      91222893
+    ],
+    "id": 91102626,
+    "sightLevel": 128,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91048696": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      25.04,
+      103.01,
+      666.67
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_贝壳星栖息地",
+    "spawners": [
+      91048706,
+      91048708,
+      91048710,
+      91048712,
+      91048714,
+      91048716
+    ],
+    "id": 91048696,
+    "sightLevel": 128,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91115352": {
+    "activeParams": [
+      31403,
+      2
+    ],
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1018863,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_雨天羊",
+    "spawners": [
+      91115453,
+      91115457,
+      91115460,
+      91115532,
+      91115534,
+      91115538,
+      91115540,
+      91115543,
+      91115597,
+      91115599,
+      91115601,
+      91115798,
+      91115800,
+      91115805,
+      91115807,
+      91115815,
+      91115817,
+      91115819,
+      91115821,
+      91115823,
+      91115825,
+      91123136,
+      91123146,
+      91123261,
+      91123263,
+      91123727,
+      91123729,
+      91123870,
+      91123872
+    ],
+    "id": 91115352,
+    "sightLevel": 128,
+    "position": [
+      -12.75,
+      100.24,
+      780.8
+    ],
+    "markIconSpawnerId": 0,
+    "activeOnInit": 9
+  },
+  "91048861": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1019885,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91049221,
+    "levelItems": {
+      "91049692": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB",
+        "position": [
+          15.01,
+          92.84,
+          682.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91049692,
+        "componentsInfo": {
+          "61746411": {
+            "radius": 7
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91048864": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_ChestLocker",
+        "position": [
+          14.95,
+          95.78,
+          682.21
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91048864,
+        "configId": 426,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "finishChestId": 91048982,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 10,
+    "name": "水板块_宁静之岛_守护宝箱_落潮守护宝箱",
+    "spawners": [
+      91048983,
+      91049040
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91048861_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      14.46,
+      95.79,
+      681.99
+    ],
+    "poiType": 508,
+    "id": 91048861,
+    "enableFinishMark": false
+  },
+  "91111633": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1017837,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "板块2-核心区_关键生态点_贝壳星星光1",
+    "spawners": [
+      91111640,
+      91111642,
+      91111644,
+      91111647
+    ],
+    "id": 91111633,
+    "lastModifiedBy": "yan.lv",
+    "sightLevel": 256,
+    "position": [
+      -126.13,
+      102.8,
+      654.16
+    ],
+    "activeOnInit": 1
+  },
+  "91048629": {
+    "owner": "yan.lv",
+    "sandboxType": 1,
+    "chunk": 1018862,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91048629,
+    "spawners": [
+      91048631,
+      91048633,
+      91048635,
+      91048637,
+      91048639,
+      91048641,
+      91058531,
+      91063777,
+      91063933,
+      91063944,
+      91063948,
+      91085029,
+      91085031,
+      91085035,
+      91085037,
+      91085039,
+      91085043,
+      91085045,
+      91085047,
+      91085086,
+      91085097,
+      91085099,
+      91090503,
+      91090568,
+      91090607,
+      91090808,
+      91112319,
+      91112321,
+      91115619,
+      91115627,
+      91115629,
+      91115632,
+      91115652,
+      91115657,
+      91115661,
+      91115663
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -46.44,
+      100.2,
+      760.53
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_叶羊生态"
+  },
+  "91077228": {
+    "activeParams": [
+      91049972
+    ],
+    "owner": "黄琦睿",
+    "autoSave": true,
+    "chunk": 1021934,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_生态点_比拼结束后的泡泡大作",
+    "spawners": [
+      91077232,
+      91077235,
+      91085222,
+      91085224,
+      91085321
+    ],
+    "activeOnInit": 7,
+    "sightLevel": 128,
+    "position": [
+      159.29,
+      95.92,
+      767.63
+    ],
+    "id": 91077228,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "initState": 0,
+      "mapAreaId": 91012179,
+      "markConfigId": 10405,
+      "markContent1": 91077228,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": true,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "SloganPlayOnce": false,
+      "POIDesc": "=\"这是\"&J67&\"，具体描述自助修改\"",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "关键生态点",
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "markType": 0,
+      "affiliatedCamp": {},
+      "arriveParam": {},
+      "arriveType": 1,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "enableFinishMark": false
+  },
+  "76059984": {
+    "owner": "路司机",
+    "autoSave": true,
+    "chunk": 1016817,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "全局_其他关卡_出生点打点",
+    "spawners": {},
+    "id": 76059984,
+    "sightLevel": 128,
+    "position": [
+      -187.4,
+      102.11,
+      1024.44
+    ],
+    "markConfig": {
+      "hideToplogoMark": false,
+      "infoPage": 0,
+      "autoSetContent1": true,
+      "initState": 1,
+      "isPorfal": true,
+      "mapAreaId": 91012179,
+      "markConfigId": 8,
+      "markContent1": 76059984,
+      "nearState": 1,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": true,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "SloganPlayOnce": false,
+      "POIOrNot": false,
+      "yaw": 0,
+      "showUI": true,
+      "showPortalOffset": false,
+      "showActiveDistance": false,
+      "activeDisplayType": 1,
+      "activeDistance": 0,
+      "entityStaticIdType": 0,
+      "activeShapes": {},
+      "markType": 0,
+      "affiliatedCamp": {},
+      "arriveParam": {},
+      "arriveType": 1,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "enableFinishMark": false,
+    "activeOnInit": 1
+  },
+  "91049770": {
+    "owner": "黄琦睿",
+    "sandboxType": 1,
+    "chunk": 1017838,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91049770,
+    "spawners": [
+      91049858,
+      91049907
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -106,
+      100.26,
+      759.03
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 501,
+    "name": "水板块_宁静之岛_生态点_觅叶羊跳高高"
+  },
+  "91103727": {
+    "activeParams": [
+      12,
+      [
+        [
+          1020,
+          1200
+        ],
+        [
+          1200,
+          1440
+        ],
+        [
+          0,
+          360
+        ]
+      ]
+    ],
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91103751,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "saveRole": 1,
+    "onFinished": 1,
+    "finishChestId": 91103745,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 7,
+    "name": "水板块_宁静之岛_关键生态点_赐福叶羊",
+    "spawners": [
+      91103742,
+      91103746
+    ],
+    "id": 91103727,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91103727_GraphRef.asset",
+    "syncLevelItemRole": 1,
+    "sightLevel": 128,
+    "position": [
+      -89.48,
+      97.81,
+      661.56
+    ],
+    "poiType": 405,
+    "activeOnInit": 12
+  },
+  "91049862": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1018862,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91049893,
+    "levelItems": {
+      "91069842": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB (3)",
+        "position": [
+          -13.43,
+          110.38,
+          710
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91069842,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              2,
+              3,
+              2
+            ]
+          },
+          "52068346": {
+            "expressionKey": "91069842_52068346",
+            "detectType": 7
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91049864": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -17.01,
+          109.88,
+          710.25
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91049864,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              2,
+              3,
+              2
+            ]
+          },
+          "52068346": {
+            "expressionKey": "91049864_52068346"
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91049866": {
+        "majorCompId": 73871347,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_DialoguePlayer",
+        "position": [
+          -26.01,
+          100.38,
+          721.53
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91049866,
+        "componentsInfo": {
+          "73871347": {
+            "dialogueGraphId": 91037215
+          }
+        },
+        "configId": 431,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91049870": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "生态融入判定",
+        "position": [
+          -20.45,
+          100.38,
+          705.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91049870,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91072464": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB (5)",
+        "position": [
+          -17.12,
+          109.52,
+          706.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91072464,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              2,
+              3,
+              2
+            ]
+          },
+          "52068346": {
+            "expressionKey": "91072464_52068346",
+            "detectType": 7
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91049873": {
+        "majorCompId": 75060209,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_ChestContainer",
+        "position": [
+          -17.07,
+          115.19,
+          710.03
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91049873,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91049896
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91049875": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "非同",
+        "position": [
+          -17.46,
+          101.31,
+          710.38
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91049875,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "91049875_47735904"
+          },
+          "61746411": {
+            "radius": 30
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91118413": {
+        "majorCompId": 91091388,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Levelitem_Quickcontrol",
+        "position": [
+          -17.28,
+          102.51,
+          710.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91118413,
+        "componentsInfo": {
+          "91091388": {
+            "templateIds": "{1058100,}",
+            "repeatable": true
+          },
+          "91091390": {
+            "size": [
+              5,
+              5,
+              5
+            ]
+          }
+        },
+        "configId": 673,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91049876": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "同",
+        "position": [
+          -17.46,
+          101.31,
+          710.38
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91049876,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "91049876_47735904"
+          },
+          "61746411": {
+            "radius": 30
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91118404": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_SB",
+        "position": [
+          -17.28,
+          105.05,
+          710.14
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91118404,
+        "componentsInfo": {
+          "52068266": {
+            "expressionKey": "91118404_52068266"
+          },
+          "91118258": {
+            "size": [
+              3,
+              10,
+              3
+            ]
+          }
+        },
+        "configId": 6,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91069829": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB (1)",
+        "position": [
+          -20.72,
+          110.38,
+          710.2
+        ],
+        "rotation": [
+          0,
+          357.71,
+          0
+        ],
+        "id": 91069829,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              2,
+              3,
+              2
+            ]
+          },
+          "52068346": {
+            "expressionKey": "91069829_52068346",
+            "detectType": 7
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91069863": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "生态融入判定 (1)",
+        "position": [
+          -20.45,
+          100.38,
+          705.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91069863,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91069835": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB (2)",
+        "position": [
+          -16.76,
+          110.38,
+          713.24
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91069835,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              2,
+              3,
+              2
+            ]
+          },
+          "52068346": {
+            "expressionKey": "91069835_52068346",
+            "detectType": 7
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91069846": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB (4)",
+        "position": [
+          -17.12,
+          100.53,
+          706.72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91069846,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              2,
+              3,
+              2
+            ]
+          },
+          "52068346": {
+            "expressionKey": "91069846_52068346",
+            "detectType": 7
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "finishChestId": 91049896,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 10,
+    "name": "全局_其他关卡_叶羊生态融入_迁移",
+    "spawners": [
+      91049882,
+      91049884,
+      91049886,
+      91049888,
+      91049897,
+      91118418,
+      91237644
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91049862_GraphRef.asset",
+    "position": [
+      -27.2,
+      100.38,
+      719.37
+    ],
+    "poiType": 1003,
+    "id": 91049862,
+    "enableFinishMark": false,
+    "keepGraphOnFinished": true
+  },
+  "91065134": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1021937,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91103704,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "saveRole": 1,
+    "onFinished": 1,
+    "finishChestId": 91103691,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 7,
+    "name": "水板块_宁静之岛_其他关卡_赐福章鱼临时",
+    "spawners": [
+      91067435,
+      91103687,
+      91103692
+    ],
+    "activeOnInit": 1,
+    "syncLevelItemRole": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91065134_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      173.48,
+      132.28,
+      946.14
+    ],
+    "poiType": 1003,
+    "id": 91065134,
+    "enableFinishMark": false
+  },
+  "91103800": {
+    "owner": "张博文",
+    "autoSave": true,
+    "position": [
+      -86.08,
+      97.92,
+      664.77
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 504,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_宝箱解谜_化石盖子宝箱2",
+    "spawners": [
+      91103803,
+      91103808,
+      91103810
+    ],
+    "id": 91103800,
+    "sightLevel": 128,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91063807": {
+    "owner": "张博文",
+    "sandboxType": 1,
+    "chunk": 1018862,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 91063807,
+    "markIconSpawnerId": 0,
+    "spawners": [
+      91063810,
+      91063815,
+      91063817,
+      91063819,
+      91063821,
+      91063823,
+      91063825,
+      91082999,
+      91083008,
+      91132804,
+      91132808,
+      91132812,
+      91132854,
+      91132859
+    ],
+    "sandBoxLevel": 0,
+    "position": [
+      -57.34,
+      100.2,
+      725.35
+    ],
+    "poiType": 502,
+    "name": "水板块_宁静之岛_纯奖励点_黑洞果实"
+  },
+  "91104566": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 504,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_宝箱解谜_化石盖子3",
+    "spawners": [
+      91104569,
+      91104571
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91104566,
+    "position": [
+      -46.25,
+      98.43,
+      652.14
+    ]
+  },
+  "91084702": {
+    "owner": "张博文",
+    "autoSave": false,
+    "chunk": 1018852,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 91012179,
+      "markConfigId": 10304,
+      "markContent1": 91084702,
+      "markType": 0,
+      "openMapState": 1,
+      "portalOffset": [
+        4.99,
+        1.58,
+        -2.85
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": false,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 0,
+      "exportOwnerInfo": true,
+      "showTeleportBtn": true,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "image": "$UI_Img_Map_Preview_Midfieldboss.png",
+      "SloganPlayOnce": false,
+      "nearState": 2,
+      "title": "伊莫首领：丽芙羊",
+      "showPortalOffset": true,
+      "POIDesc": "首领级：丽芙羊",
+      "POIIcon": "$UI_POI_Icon1_BOSS.png",
+      "showActiveDistance": true,
+      "POIOrNot": false,
+      "yaw": 0,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "首领级伊莫",
+      "inactiveImage": "$UI_Img_Monster_Unknown.png",
+      "arriveParam": {},
+      "activeDisplayType": 1,
+      "activeDistance": 50,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "desc": "美丽优雅的丽芙羊，在如梦似幻的镜湖空间中顾影自怜，静静守候着往昔的泡影。",
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "inactiveDesc": "警告:首领级伊莫<BR>危险程度：高",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91084706,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 3,
+    "poiType": 304,
+    "resetType": 3,
+    "sandboxType": 5,
+    "name": "全局_首领战_丽芙羊首领_迁移",
+    "spawners": [
+      91084704
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91084702_GraphRef.asset",
+    "sandBoxLevel": 0,
+    "position": [
+      -4.73,
+      99.63,
+      848.66
+    ],
+    "id": 91084702,
+    "markIconSpawnerId": 91084703,
+    "disposable": false
+  },
+  "91104572": {
+    "owner": "张博文",
+    "autoSave": true,
+    "position": [
+      28.04,
+      95.54,
+      588.77
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 508,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_守护宝箱_化石盖子4",
+    "spawners": [
+      91104574,
+      91104577,
+      91104582,
+      91104585,
+      91104588
+    ],
+    "id": 91104572,
+    "sightLevel": 256,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91075157": {
+    "activeParams": [
+      6204001,
+      0
+    ],
+    "owner": "yuhong.cao",
+    "chunk": 1016820,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "poiType": 2001,
+    "sandBoxLevel": 0,
+    "sandboxType": 17,
+    "name": "水板块_宁静之岛_任务POI_登岛处",
+    "spawners": {},
+    "activeOnInit": 2,
+    "questActiveType": 0,
+    "sightLevel": 128,
+    "id": 91075157,
+    "markIconSpawnerId": 0,
+    "position": [
+      -188.1,
+      100.32,
+      1101.43
+    ]
+  },
+  "91105094": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      -107.56,
+      100.2,
+      803.01
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91105761": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Small",
+        "position": [
+          -8.52,
+          98.63,
+          748.04
+        ],
+        "rotation": [
+          0,
+          141.11,
+          0
+        ],
+        "id": 91105761,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105763,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 677,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91105099": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -105.07,
+          96.28,
+          804.75
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91105099,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105268,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "isActive": true
+      },
+      "91105106": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -102.83,
+          96.25,
+          833.71
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91105106,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105277,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "isActive": true
+      },
+      "91105111": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -93.98,
+          96.27,
+          776.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91105111,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105116,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "isActive": true
+      },
+      "91105290": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -58.97,
+          98.01,
+          775.81
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91105290,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105295,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91105311": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -34.7,
+          96.21,
+          764.59
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91105311,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105313,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "isActive": true
+      },
+      "91105599": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          31.15,
+          96.23,
+          754.29
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91105599,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105614,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "isActive": true
+      },
+      "91105643": {
+        "majorCompId": 91099676,
+        "owner": "yan.lv",
+        "EditorName": "P_SceneObject_BubblePlant_Big",
+        "position": [
+          -44.28,
+          96.21,
+          742.26
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91105643,
+        "componentsInfo": {
+          "91099674": {
+            "spawnerId": 91105646,
+            "subCompType": "SpawnerControl"
+          }
+        },
+        "configId": 676,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_泡泡植物叶羊",
+    "spawners": [
+      91105116,
+      91105268,
+      91105277,
+      91105295,
+      91105313,
+      91105614,
+      91105646,
+      91105763,
+      91112925,
+      91113000,
+      91113008,
+      91113014,
+      91113040,
+      91113046,
+      91113052,
+      91113055,
+      91113060,
+      91113066
+    ],
+    "id": 91105094,
+    "sightLevel": 256,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1017839
+  },
+  "91044794": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1021934,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91046519,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_章鱼打水仗",
+    "spawners": [
+      91044826,
+      91044828,
+      91044831,
+      91044834,
+      91044836,
+      91044838
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91044794_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      144.31,
+      104.9,
+      730.45
+    ],
+    "id": 91044794,
+    "enableFinishMark": false
+  },
+  "91065285": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1017836,
+    "disposable": false,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 91065342,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 3,
+    "poiType": 406,
+    "sandBoxLevel": 0,
+    "sandboxType": 21,
+    "name": "传送点A4_浮光海岸_靠近即解锁的CBT传送",
+    "spawners": [
+      91065311
+    ],
+    "activeOnInit": 1,
+    "sightLevel": 512,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91065285_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -171.86,
+      102.99,
+      1055.81
+    ],
+    "id": 91065285,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "desc": "地脉能量涌现的位置，联结者可以通过地脉晶簇快速旅行。",
+      "autoSetContent1": true,
+      "initState": 0,
+      "isPorfal": true,
+      "mapAreaId": 91012179,
+      "markConfigId": 10406,
+      "markContent1": 91065285,
+      "markType": 0,
+      "openMapState": 1,
+      "portalOffset": [
+        6.75,
+        -2.41,
+        -6.44
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "revivedPointState": false,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "image": "$UI_Img_Map_Preview_TeleportationArray.png",
+      "SloganPlayOnce": true,
+      "nearState": 1,
+      "title": "地脉晶簇·白沙汀",
+      "showPortalOffset": true,
+      "showActiveDistance": true,
+      "POIDesc": "",
+      "POIIcon": "$UI_Icon_POI_Explore_Transmit.png",
+      "POIMusic": "",
+      "POIOrNot": true,
+      "yaw": 139.56,
+      "entityStaticIdType": 0,
+      "infoPage": 0,
+      "inactiveTitle": "地脉晶簇",
+      "arriveParam": {},
+      "activeDisplayType": 1,
+      "activeDistance": 35,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "inactiveDesc": "未激活的地脉晶簇分支，前往该处可激活此地脉晶簇。",
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "inactiveImage": "$UI_Img_Map_Preview_TeleportationArray.png",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "enableFinishMark": false
+  },
+  "91100173": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "position": [
+      215.79,
+      108.13,
+      944.31
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_打水仗危险了",
+    "spawners": [
+      91100260,
+      91100266,
+      91100269,
+      91100273,
+      91100275,
+      91100277
+    ],
+    "id": 91100173,
+    "sightLevel": 128,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "91049972": {
+    "activeParams": [
+      8,
+      [
+        [
+          1200,
+          1440
+        ],
+        [
+          0,
+          360
+        ]
+      ]
+    ],
+    "owner": "黄琦睿",
+    "autoSave": true,
+    "chunk": 1021934,
+    "markConfig": {
+      "finishStateAlwaysShow": false,
+      "hideToplogoMark": false,
+      "infoPage": 1,
+      "autoSetContent1": true,
+      "initState": 0,
+      "inactiveDesc": "伊莫似乎遇到了什么问题，你能帮助它吗？",
+      "mapAreaId": 91012179,
+      "markConfigId": 10412,
+      "markContent1": 91049972,
+      "nearState": 2,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 1,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 21600,
+      "SloganPlayOnce": true,
+      "POIDesc": "帮帮伊莫",
+      "POIIcon": "$UI_Icon_POI_Decrypt_FindFriends.png",
+      "title": "帮帮伊莫",
+      "POIOrNot": true,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "帮帮伊莫",
+      "markType": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "arriveParam": {},
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "desc": "伊莫似乎遇到了什么问题，你能帮助它吗？",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91054401,
+    "levelItems": {
+      "91230398": {
+        "majorCompId": 75060209,
+        "owner": "黄琦睿",
+        "EditorName": "P_Item_ChestContainer",
+        "position": [
+          147.53,
+          99.18,
+          774.47
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91230398,
+        "componentsInfo": {
+          "75060209": {
+            "chestId": 91230383,
+            "flyToPlayer": false
+          }
+        },
+        "configId": 439,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "enableFinishMark": false,
+    "saveRole": 1,
+    "onFinished": 1,
+    "finishChestId": 91230383,
+    "finishType": 1,
+    "sandBoxLevel": 0,
+    "sandboxType": 7,
+    "name": "水板块_宁静之岛_关键生态点_浮泡章鱼_泡泡大比拼任务1",
+    "spawners": [
+      91052492,
+      91052494,
+      91056275,
+      91056288,
+      91058127,
+      91058755,
+      91058758,
+      91058760,
+      91074259,
+      91074271,
+      91079486,
+      91079501,
+      91228191,
+      91228199,
+      91230384
+    ],
+    "syncLevelItemRole": 1,
+    "sightLevel": 128,
+    "activeOnInit": 12,
+    "position": [
+      155.77,
+      97.16,
+      765.89
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91049972_GraphRef.asset",
+    "poiType": 412,
+    "markIconSpawnerId": 0,
+    "id": 91049972,
+    "keepGraphOnFinished": true,
+    "disposable": true
+  },
+  "91101189": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91101192": {
+        "majorCompId": 0,
+        "owner": "张博文",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -75.03,
+          100.46,
+          723.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91101192,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_LevelItem_SoundAreaOutBubblePeacefulland.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_LevelItem_SoundAreaOutBubblePeacefulland.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_晴日BGM",
+    "spawners": {},
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "id": 91101189,
+    "position": [
+      -77.97,
+      100.53,
+      725.71
+    ]
+  },
+  "91075773": {
+    "owner": "yan.lv",
+    "autoSave": true,
+    "chunk": 1021934,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91077057,
+    "levelItems": {
+      "91077166": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB",
+        "position": [
+          171.67,
+          120.13,
+          721.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91077166,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "91077166_47735904"
+          },
+          "61746411": {
+            "radius": 10
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "91077174": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_OverlapCounter_Sphere_SB (1)",
+        "position": [
+          171.67,
+          120.13,
+          721.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 91077174,
+        "componentsInfo": {
+          "47735904": {
+            "expressionKey": "91077174_47735904"
+          },
+          "61746411": {
+            "radius": 10
+          }
+        },
+        "configId": 123,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 1003,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_读博很爽",
+    "spawners": [
+      91077051,
+      91077054,
+      91078287,
+      91078293,
+      91078295,
+      91078297
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91075773_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      175.58,
+      119.69,
+      722.55
+    ],
+    "id": 91075773,
+    "enableFinishMark": false
+  },
+  "91029260": {
+    "owner": "张博文",
+    "autoSave": true,
+    "chunk": 1018864,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91084678,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 304,
+    "sandBoxLevel": 0,
+    "sandboxType": 4,
+    "name": "水板块_宁静之岛_其他关卡_传送至倒转的传送交互",
+    "spawners": [
+      91029262
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3003/Sandbox_91029260_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -3.69,
+      100.4,
+      847.52
+    ],
+    "id": 91029260,
+    "enableFinishMark": false
+  }
+}

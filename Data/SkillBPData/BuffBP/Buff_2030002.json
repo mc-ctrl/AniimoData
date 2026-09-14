@@ -1,0 +1,152 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "8": {
+      "rValue": {
+        "calcId": 2030002,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 18,
+        "UID": "f5639b24-72d4-4952-a070-54ac8ac10168",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "div",
+      "UID": "60b8a7b3-f8f6-4552-8041-24ec630d7992",
+      "NodeID": 8,
+      "lValue": {
+        "UID": "8064d4cb-98ab-46c5-89b1-b727858121ba",
+        "name": "getRoguePersistData",
+        "key": "HealBulletCnt",
+        "NodeID": 7
+      }
+    },
+    "17": {
+      "calcId": 2030002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 17,
+      "UID": "6eacb576-c04c-4367-98c6-e17fd3404a57",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "convertType": 1,
+      "name": "toInt",
+      "UID": "8dd590c3-291b-4506-a4fd-0461bc242766",
+      "val": {
+        "rValue": {
+          "calcId": 2030002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 18,
+          "UID": "f5639b24-72d4-4952-a070-54ac8ac10168",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "div",
+        "UID": "60b8a7b3-f8f6-4552-8041-24ec630d7992",
+        "NodeID": 8,
+        "lValue": {
+          "UID": "8064d4cb-98ab-46c5-89b1-b727858121ba",
+          "name": "getRoguePersistData",
+          "key": "HealBulletCnt",
+          "NodeID": 7
+        }
+      },
+      "NodeID": 9
+    },
+    "14": {
+      "key": "HealBulletCnt",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 14,
+      "UID": "513fc9ff-5a25-4a55-aebb-a2c175ab6e6c",
+      "name": "registerRoguePersistDataChange",
+      "cumulativeCount": {
+        "calcId": 2030002,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 17,
+        "UID": "6eacb576-c04c-4367-98c6-e17fd3404a57",
+        "name": "getParamByLuaConfig"
+      },
+      "responseNegative": false
+    },
+    "18": {
+      "calcId": 2030002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 18,
+      "UID": "f5639b24-72d4-4952-a070-54ac8ac10168",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "calcId": 2030002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 16,
+      "UID": "d3fcb866-c2cd-4f67-be55-af462021ac81",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "UID": "8064d4cb-98ab-46c5-89b1-b727858121ba",
+      "name": "getRoguePersistData",
+      "key": "HealBulletCnt",
+      "NodeID": 7
+    },
+    "12": {
+      "calcInfo": {
+        "heal_add_ratio": {
+          "rValue": {
+            "calcId": 2030002,
+            "calcType": 1,
+            "paramName": "param1",
+            "NodeID": 16,
+            "UID": "d3fcb866-c2cd-4f67-be55-af462021ac81",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "dc4394db-9acd-4a91-959d-c39f04450508",
+          "NodeID": 10,
+          "lValue": {
+            "convertType": 1,
+            "name": "toInt",
+            "UID": "8dd590c3-291b-4506-a4fd-0461bc242766",
+            "val": {
+              "rValue": {
+                "calcId": 2030002,
+                "calcType": 1,
+                "paramName": "param0",
+                "NodeID": 18,
+                "UID": "f5639b24-72d4-4952-a070-54ac8ac10168",
+                "name": "getParamByLuaConfig"
+              },
+              "name": "div",
+              "UID": "60b8a7b3-f8f6-4552-8041-24ec630d7992",
+              "NodeID": 8,
+              "lValue": {
+                "UID": "8064d4cb-98ab-46c5-89b1-b727858121ba",
+                "name": "getRoguePersistData",
+                "key": "HealBulletCnt",
+                "NodeID": 7
+              }
+            },
+            "NodeID": 9
+          }
+        }
+      },
+      "isClearOld": true,
+      "UID": "dfb89b83-ae3d-4775-a615-5a2abf8f5e81",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2030002",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    12,
+    14
+  ]
+}

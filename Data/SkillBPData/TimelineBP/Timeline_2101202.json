@@ -1,0 +1,93 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "13": {
+      "UID": "36835741-70f7-49ef-a472-9b9e0fe342b9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "19": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "d55fdd01-db0c-4ea1-bcd8-402707aa04ba",
+      "effectId": "Eff_Parmon_Starmouse_Skill_DamageField_s",
+      "rot": "OWNER",
+      "NodeID": 19
+    },
+    "21": {
+      "UID": "7e95b285-1f71-4174-99c5-1e65539c8cde",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          25
+        ]
+      },
+      "NodeID": 21
+    },
+    "10": {
+      "timelineId": 2101202201,
+      "name": "jumpToNextTimeline",
+      "UID": "2d59366f-718b-47cf-9dff-906dfd75e423",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          10
+        ]
+      },
+      "eventType": "Notify",
+      "time": 7.5,
+      "NodeID": 15,
+      "UID": "2219ddde-623c-4093-bb12-ba590f2bc3ba"
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "ceaa76e9-d89d-498f-bd3b-1b057fdc3303",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_charm_realse",
+      "NodeID": 25
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 12,
+      "relation": 2,
+      "enterTrapActionIds": [
+        10
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        1
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "040183f2-22b3-4b61-9bbf-c8367bb9a352"
+    }
+  },
+  "BPName": "timeline_2101202",
+  "NodeID": 1,
+  "UID": "2b9372e6-f050-4220-8eed-2c6dfade3750",
+  "eventIds": [
+    15,
+    21,
+    13
+  ],
+  "layer": "Base",
+  "length": 8
+}

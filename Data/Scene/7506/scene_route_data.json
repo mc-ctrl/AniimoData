@@ -1,0 +1,257 @@
+{
+  "91327871": {
+    "id": 91327871,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomLoopAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Cry",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": "StunStart",
+                  "name": "tAnimationStartKey"
+                },
+                {
+                  "realValue": "StunLoop",
+                  "name": "tAnimationLoopKey"
+                },
+                {
+                  "realValue": "StunEnd",
+                  "name": "tAnimationEndKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 356.64,
+        "position": [
+          -0.01,
+          -0.15,
+          10.86
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 999,
+                  "name": "cryTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 137.07,
+        "position": [
+          6.12,
+          -0.5,
+          5.89
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      -0.84,
+      -0.15,
+      10.86
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91312756
+  },
+  "91328395": {
+    "id": 91328395,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomLoopAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Cry",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": "StunStart",
+                  "name": "tAnimationStartKey"
+                },
+                {
+                  "realValue": "StunLoop",
+                  "name": "tAnimationLoopKey"
+                },
+                {
+                  "realValue": "StunEnd",
+                  "name": "tAnimationEndKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 356.64,
+        "position": [
+          6.28,
+          -0.57,
+          4.48
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 999,
+                  "name": "cryTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 182,
+        "position": [
+          8.74,
+          -0.42,
+          -7.37
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      5.45,
+      -0.57,
+      4.48
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91312756
+  },
+  "91328562": {
+    "id": 91328562,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 999,
+                  "name": "cryTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 5.83,
+        "position": [
+          10.56,
+          -0.42,
+          -8.7
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      7,
+      -0.57,
+      2.88
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91312756
+  },
+  "91329616": {
+    "id": 91329616,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 5.83,
+        "position": [
+          10.56,
+          -0.42,
+          -8.7
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      7,
+      -0.57,
+      2.88
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91312756
+  },
+  "91329711": {
+    "id": 91329711,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Cry",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 999,
+                  "name": "cryTimeOut"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 5.83,
+        "position": [
+          10.56,
+          -0.42,
+          -8.7
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "pos": [
+      7,
+      -0.57,
+      2.88
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91312756
+  }
+}

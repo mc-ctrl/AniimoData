@@ -1,0 +1,1293 @@
+{
+  "10000010": {
+    "apRule": 1285915100,
+    "eventType": 18,
+    "euRule": 1194631461,
+    "eventDesc": 1185510402,
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "naRule": 2113425449,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "iconUp": 1,
+    "name": 1730275824,
+    "sendTaskWardMailId": 43,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1789977599,
+      "4": 1789934399,
+      "1": 1789934399,
+      "2": 1789963199
+    },
+    "tabStartDayTime": {
+      "3": 1789718400,
+      "4": 1789675200,
+      "1": 1789675200,
+      "2": 1789704000
+    },
+    "rule": 2020925126,
+    "rank": 3
+  },
+  "10000029": {
+    "eventType": 26,
+    "name": 1878025814,
+    "rank": 2,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1796889599,
+      "4": 1796846399,
+      "1": 1796846399,
+      "2": 1796875199
+    },
+    "tabStartDayTime": {
+      "3": 1789502400,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789502400
+    },
+    "iconResId": "$UI_Img_EventTab_BossCatch.png",
+    "eventDesc": 2082827155
+  },
+  "10000043": {
+    "apRule": 2037231767,
+    "eventType": 18,
+    "euRule": 1699377166,
+    "eventDesc": 1242226819,
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "naRule": 1587218621,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "iconUp": 1,
+    "name": 1392156766,
+    "sendTaskWardMailId": 43,
+    "phase": 2,
+    "tabEndDayTime": {
+      "3": 1790582399,
+      "4": 1790539199,
+      "1": 1790539199,
+      "2": 1790567999
+    },
+    "tabStartDayTime": {
+      "3": 1789977600,
+      "4": 1789934400,
+      "1": 1789934400,
+      "2": 1789963200
+    },
+    "rule": 1164422164,
+    "rank": 3
+  },
+  "10000044": {
+    "apRule": 2023528010,
+    "eventType": 18,
+    "euRule": 1726381831,
+    "eventDesc": 1180299956,
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "naRule": 1713000781,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "iconUp": 1,
+    "name": 1802740152,
+    "sendTaskWardMailId": 43,
+    "phase": 3,
+    "tabEndDayTime": {
+      "3": 1791187199,
+      "4": 1791143999,
+      "1": 1791143999,
+      "2": 1791172799
+    },
+    "tabStartDayTime": {
+      "3": 1790582400,
+      "4": 1790539200,
+      "1": 1790539200,
+      "2": 1790568000
+    },
+    "rule": 1820876585,
+    "rank": 3
+  },
+  "10000058": {
+    "apRule": 1765572420,
+    "eventType": 18,
+    "euRule": 1160919423,
+    "eventDesc": 1213368390,
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "naRule": 2120614914,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "iconUp": 1,
+    "name": 1264987444,
+    "sendTaskWardMailId": 43,
+    "phase": 4,
+    "tabEndDayTime": {
+      "3": 1791791999,
+      "4": 1791748799,
+      "1": 1791748799,
+      "2": 1791777599
+    },
+    "tabStartDayTime": {
+      "3": 1791187200,
+      "4": 1791144000,
+      "1": 1791144000,
+      "2": 1791172800
+    },
+    "rule": 1402338894,
+    "rank": 3
+  },
+  "10000059": {
+    "apRule": 2032573039,
+    "eventType": 18,
+    "euRule": 1991375616,
+    "eventDesc": 1159157381,
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "naRule": 1666511471,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "iconUp": 1,
+    "name": 1271026287,
+    "sendTaskWardMailId": 43,
+    "phase": 5,
+    "tabEndDayTime": {
+      "3": 1792396799,
+      "4": 1792353599,
+      "1": 1792353599,
+      "2": 1792382399
+    },
+    "tabStartDayTime": {
+      "3": 1791792000,
+      "4": 1791748800,
+      "1": 1791748800,
+      "2": 1791777600
+    },
+    "rule": 2066509643,
+    "rank": 3
+  },
+  "10000021": {
+    "apRule": 1640186514,
+    "container": "signNewbieUContainer",
+    "euRule": 1888926486,
+    "eventDesc": 1985750199,
+    "iconResId": "$UI_Img_Event_LeftTab_SignIn.png",
+    "naRule": 1679725602,
+    "conditions": 304096,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rule": 1918696601,
+    "rank": 1,
+    "phase": 1,
+    "name": 1102104023,
+    "eventType": 13
+  },
+  "10000022": {
+    "apRule": 1118118816,
+    "container": "newHandSigninUContainer",
+    "euRule": 1306793005,
+    "eventDesc": 1611947587,
+    "iconResId": "$UI_Img_Event_Tab_NewHandSignin.png",
+    "naRule": 1390522241,
+    "rule": 2133315108,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "phase": 1,
+    "rank": 1,
+    "tabEndDayTime": {
+      "3": 1793260799,
+      "4": 1793217599,
+      "1": 1793217599,
+      "2": 1793246399
+    },
+    "tabStartDayTime": {
+      "3": 1790841600,
+      "4": 1790798400,
+      "1": 1790798400,
+      "2": 1790827200
+    },
+    "eventType": 14,
+    "name": 1469678909
+  },
+  "10000024": {
+    "textColor": 0,
+    "phase": 1,
+    "timeControlRule": 11,
+    "name": 1928329428,
+    "rank": 1,
+    "eventType": 12,
+    "conditions": 62012,
+    "switch": 1
+  },
+  "10000056": {
+    "apRule": 2017108442,
+    "eventType": 19,
+    "euRule": 1630037438,
+    "eventDesc": 1164189631,
+    "iconResId": "$UI_Img_EventTab_GrowthGift.png",
+    "naRule": 2016224950,
+    "conditions": 3707004,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rule": 1980505351,
+    "rank": 2,
+    "phase": 1,
+    "name": 1174320022
+  },
+  "10000057": {
+    "apRule": 1293196676,
+    "container": "totalloginsUContainer",
+    "euRule": 1525738185,
+    "eventDesc": 1812725436,
+    "iconResId": "$UI_Img_Event_LeftTab_Totallogins.png",
+    "naRule": 1994767333,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 2141897807,
+    "eventType": 27,
+    "rule": 2012323643,
+    "tabEndDayTime": {
+      "3": 1793260799,
+      "4": 1793217599,
+      "1": 1793217599,
+      "2": 1793246399
+    },
+    "tabStartDayTime": {
+      "3": 1789545600,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789531200
+    },
+    "rank": 3,
+    "phase": 1
+  },
+  "10000061": {
+    "apRule": 1679662569,
+    "eventType": 22,
+    "euRule": 1668223800,
+    "eventDesc": 1387837037,
+    "iconResId": "$UI_Img_Event_LeftTab_FirstTopup.png",
+    "naRule": 1806178281,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 4,
+    "rule": 1805124361,
+    "tabEndDayTime": {
+      "3": 1796860799,
+      "4": 1796860799,
+      "1": 1796860799,
+      "2": 1796860799
+    },
+    "tabStartDayTime": {
+      "3": 1786176000,
+      "4": 1786132800,
+      "1": 1786132800,
+      "2": 1786161600
+    },
+    "phase": 1,
+    "name": 1691560863
+  },
+  "10000037": {
+    "apRule": 1407876055,
+    "eventType": 106,
+    "euRule": 1114862189,
+    "eventDesc": 1543470772,
+    "iconResId": "$UI_Img_Event_TabHolographicBattle.png",
+    "naRule": 1167495120,
+    "conditions": 1225051,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 31,
+    "guideId": 1006,
+    "weekEventTime": [
+      [
+        4,
+        7
+      ]
+    ],
+    "rule": 1863553097,
+    "rank": 7,
+    "phase": 1,
+    "name": 1822822417
+  },
+  "20000003": {
+    "eventType": 25,
+    "name": 1472324969,
+    "rank": 1,
+    "conditions": 62012,
+    "switch": 1,
+    "timeControlRule": 11,
+    "tabEndDayTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "tabStartDayTime": {
+      "3": 1789502400,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789502400
+    },
+    "phase": 1
+  },
+  "10000040": {
+    "apRule": 1782683815,
+    "eventType": 2,
+    "euRule": 1279961953,
+    "eventDesc": 2058541186,
+    "iconResId": "$UI_Img_Event_LeftTab_MorphologicalSurvey.png",
+    "naRule": 1156698553,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1842571127,
+    "sendTaskWardMailId": 23,
+    "phase": 2,
+    "tabEndDayTime": {
+      "3": 1791532799,
+      "4": 1791489599,
+      "1": 1791489599,
+      "2": 1791518399
+    },
+    "tabStartDayTime": {
+      "3": 1790928000,
+      "4": 1790884800,
+      "1": 1790884800,
+      "2": 1790913600
+    },
+    "rule": 1258091206,
+    "rank": 7
+  },
+  "10000041": {
+    "apRule": 2041887944,
+    "eventType": 2,
+    "euRule": 1489916475,
+    "eventDesc": 1333297714,
+    "iconResId": "$UI_Img_Event_LeftTab_MorphologicalSurvey.png",
+    "naRule": 1400062060,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1313419463,
+    "sendTaskWardMailId": 23,
+    "phase": 3,
+    "tabEndDayTime": {
+      "3": 1792742399,
+      "4": 1792699199,
+      "1": 1792699199,
+      "2": 1792727999
+    },
+    "tabStartDayTime": {
+      "3": 1792137600,
+      "4": 1792094400,
+      "1": 1792094400,
+      "2": 1792123200
+    },
+    "rule": 1696700530,
+    "rank": 7
+  },
+  "10000042": {
+    "apRule": 1764184008,
+    "eventType": 2,
+    "euRule": 2020422462,
+    "eventDesc": 1912512143,
+    "iconResId": "$UI_Img_Event_LeftTab_MorphologicalSurvey.png",
+    "naRule": 1938086030,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1654376145,
+    "sendTaskWardMailId": 23,
+    "phase": 4,
+    "tabEndDayTime": {
+      "3": 1793951999,
+      "4": 1793908799,
+      "1": 1793908799,
+      "2": 1793937599
+    },
+    "tabStartDayTime": {
+      "3": 1793347200,
+      "4": 1793304000,
+      "1": 1793304000,
+      "2": 1793332800
+    },
+    "rule": 2056987845,
+    "rank": 7
+  },
+  "10000045": {
+    "apRule": 2011176564,
+    "eventType": 109,
+    "euRule": 1350507026,
+    "eventDesc": 1464074207,
+    "iconResId": "$UI_Img_Event_LeftTab_XyTeaParty.png",
+    "naRule": 1163620639,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1009,
+    "rule": 2052059985,
+    "rank": 4,
+    "phase": 1,
+    "name": 1364870851
+  },
+  "10000047": {
+    "apRule": 1939702444,
+    "eventType": 7,
+    "euRule": 1296057670,
+    "eventDesc": 1660881687,
+    "iconResId": "$UI_Img_Event_VitalityContest101.png",
+    "naRule": 1395431804,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1314155506,
+    "sendTaskWardMailId": 20,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1790927999,
+      "4": 1790884799,
+      "1": 1790884799,
+      "2": 1790913599
+    },
+    "tabStartDayTime": {
+      "3": 1790323200,
+      "4": 1790280000,
+      "1": 1790280000,
+      "2": 1790308800
+    },
+    "rule": 1209711095,
+    "rank": 6
+  },
+  "10000048": {
+    "apRule": 1940641386,
+    "eventType": 7,
+    "euRule": 1127428924,
+    "eventDesc": 1159606618,
+    "iconResId": "$UI_Img_Event_VitalityContest103.png",
+    "naRule": 1672604480,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1974313189,
+    "sendTaskWardMailId": 20,
+    "phase": 2,
+    "tabEndDayTime": {
+      "3": 1792137599,
+      "4": 1792094399,
+      "1": 1792094399,
+      "2": 1792123199
+    },
+    "tabStartDayTime": {
+      "3": 1791532800,
+      "4": 1791489600,
+      "1": 1791489600,
+      "2": 1791518400
+    },
+    "rule": 1709263867,
+    "rank": 6
+  },
+  "20000006": {
+    "eventType": 25,
+    "name": 1184766282,
+    "rank": 1,
+    "conditions": 62012,
+    "switch": 1,
+    "timeControlRule": 11,
+    "tabEndDayTime": {
+      "3": 1796860799,
+      "4": 1796860799,
+      "1": 1796860799,
+      "2": 1796860799
+    },
+    "tabStartDayTime": {
+      "3": 1793239200,
+      "4": 1793239200,
+      "1": 1793239200,
+      "2": 1793239200
+    },
+    "phase": 1
+  },
+  "10000005": {
+    "apRule": 1375412991,
+    "eventType": 101,
+    "euRule": 1927066871,
+    "eventDesc": 1133378417,
+    "iconResId": "$UI_Img_Event_LeftTab_MockBattle.png",
+    "naRule": 1279493344,
+    "conditions": 304097,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1001,
+    "rule": 1545269575,
+    "rank": 5,
+    "phase": 1,
+    "name": 1908157524
+  },
+  "20000005": {
+    "eventType": 24,
+    "name": 2066522012,
+    "rank": 1,
+    "conditions": 62012,
+    "switch": 1,
+    "timeControlRule": 11,
+    "tabEndDayTime": {
+      "3": 1796860799,
+      "4": 1796860799,
+      "1": 1796860799,
+      "2": 1796860799
+    },
+    "tabStartDayTime": {
+      "3": 1793239200,
+      "4": 1793239200,
+      "1": 1793239200,
+      "2": 1793239200
+    },
+    "phase": 1
+  },
+  "10000007": {
+    "apRule": 1940191267,
+    "eventType": 2,
+    "euRule": 1295351300,
+    "eventDesc": 1130283865,
+    "iconResId": "$UI_Img_Event_LeftTab_MorphologicalSurvey.png",
+    "naRule": 1768555295,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1128240367,
+    "sendTaskWardMailId": 23,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1790323199,
+      "4": 1790279999,
+      "1": 1790279999,
+      "2": 1790308799
+    },
+    "tabStartDayTime": {
+      "3": 1789545600,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789531200
+    },
+    "rule": 1613405063,
+    "rank": 7
+  },
+  "10000008": {
+    "apRule": 1499169554,
+    "eventType": 4,
+    "euRule": 1636933292,
+    "eventDesc": 1697445188,
+    "iconResId": "$UI_Img_Event_LeftTab_OfficialGroup.png",
+    "naRule": 1180204786,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rule": 1353039422,
+    "rank": 13,
+    "name": 2133968184
+  },
+  "10000052": {
+    "apRule": 1214571891,
+    "eventType": 113,
+    "euRule": 1672124026,
+    "name": 2121774450,
+    "iconResId": "$UI_Img_Event_LeftTab_Superstar.png",
+    "naRule": 1721621113,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1013,
+    "rule": 1115731953,
+    "rank": 1,
+    "phase": 1
+  },
+  "20000004": {
+    "apRule": 1436133227,
+    "eventType": 23,
+    "euRule": 1871143342,
+    "name": 1767219657,
+    "rank": 1,
+    "naRule": 1685729096,
+    "conditions": 62012,
+    "switch": 1,
+    "timeControlRule": 11,
+    "tabStartDayTime": {
+      "3": 1793239200,
+      "4": 1793239200,
+      "1": 1793239200,
+      "2": 1793239200
+    },
+    "tabEndDayTime": {
+      "3": 1796860799,
+      "4": 1796860799,
+      "1": 1796860799,
+      "2": 1796860799
+    },
+    "needPop": 1,
+    "rule": 1602628694,
+    "phase": 1
+  },
+  "10000054": {
+    "apRule": 1613468106,
+    "eventType": 116,
+    "euRule": 2118597723,
+    "eventDesc": 1570363506,
+    "iconResId": "$UI_Img_Event_LeftTab_WelfareRefund.png",
+    "naRule": 1919387456,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1016,
+    "name": 1889207476,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1805097599,
+      "4": 1805054399,
+      "1": 1805054399,
+      "2": 1805083199
+    },
+    "tabStartDayTime": {
+      "3": 1789545600,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789531200
+    },
+    "rule": 1786830499,
+    "rank": 10
+  },
+  "20000002": {
+    "eventType": 24,
+    "name": 1937985536,
+    "rank": 1,
+    "conditions": 62012,
+    "switch": 1,
+    "timeControlRule": 11,
+    "tabEndDayTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "tabStartDayTime": {
+      "3": 1789502400,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789502400
+    },
+    "phase": 1
+  },
+  "10000055": {
+    "apRule": 2022284806,
+    "eventType": 21,
+    "euRule": 1520092688,
+    "name": 1922332109,
+    "iconResId": "$UI_Img_Event_LeftTab_Steam.png",
+    "naRule": 1947105513,
+    "conditions": 304123,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rule": 1317987106,
+    "rank": 11,
+    "phase": 1
+  },
+  "10000015": {
+    "apRule": 1612191531,
+    "eventType": 8,
+    "euRule": 1541615229,
+    "eventDesc": 1901427126,
+    "iconResId": "$UI_Img_Event_LeftTab_EcologicalTraceability.png",
+    "naRule": 1556409760,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 2094230092,
+    "sendTaskWardMailId": 21,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1791532799,
+      "4": 1791489599,
+      "1": 1791489599,
+      "2": 1791518399
+    },
+    "tabStartDayTime": {
+      "3": 1790323200,
+      "4": 1790280000,
+      "1": 1790280000,
+      "2": 1790308800
+    },
+    "rule": 1184756025,
+    "rank": 5
+  },
+  "20000001": {
+    "apRule": 1982293494,
+    "eventType": 23,
+    "euRule": 1816363094,
+    "name": 2046689695,
+    "rank": 1,
+    "naRule": 1978615446,
+    "conditions": 62012,
+    "switch": 1,
+    "timeControlRule": 11,
+    "tabStartDayTime": {
+      "3": 1789502400,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789502400
+    },
+    "tabEndDayTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "needPop": 1,
+    "rule": 1458468903,
+    "phase": 1
+  },
+  "10000001": {
+    "apRule": 2085363973,
+    "eventType": 1,
+    "euRule": 1641877221,
+    "eventDesc": 1739942886,
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "naRule": 1320561499,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 6,
+    "rule": 1268377765,
+    "tabEndDayTime": {
+      "3": 1789631999,
+      "4": 1789588799,
+      "1": 1789588799,
+      "2": 1789617599
+    },
+    "tabStartDayTime": {
+      "3": 1789545600,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789531200
+    },
+    "phase": 1,
+    "name": 1726776698
+  },
+  "11000002": {
+    "apRule": 1794230329,
+    "eventType": 20,
+    "euRule": 2013972789,
+    "eventDesc": 1723507310,
+    "iconResId": "$UI_Img_Event_LeftTab_TikTok.png",
+    "naRule": 2123089884,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 9,
+    "rule": 1346973949,
+    "tabEndDayTime": {
+      "3": 1796889599,
+      "4": 1796846399,
+      "1": 1796846399,
+      "2": 1796875199
+    },
+    "tabStartDayTime": {
+      "3": 1789545600,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789531200
+    },
+    "phase": 1,
+    "name": 1992467566
+  },
+  "10000026": {
+    "apRule": 1151276144,
+    "eventType": 104,
+    "euRule": 1755614084,
+    "eventDesc": 1986105519,
+    "iconResId": "$UI_Img_Event_EggGrabTab.png",
+    "naRule": 1533070431,
+    "conditions": 304026,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1003,
+    "name": 1654993924,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 2108966400,
+      "4": 2108923200,
+      "1": 2108923200,
+      "2": 2108952000
+    },
+    "tabStartDayTime": {
+      "3": 1789804800,
+      "4": 1789761600,
+      "1": 1789761600,
+      "2": 1789790400
+    },
+    "rule": 1359298589,
+    "rank": 6
+  },
+  "10000062": {
+    "apRule": 1836698621,
+    "eventType": 1,
+    "euRule": 1519163874,
+    "eventDesc": 1487888202,
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "naRule": 1662982148,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 6,
+    "rule": 2130117956,
+    "tabEndDayTime": {
+      "3": 1789718399,
+      "4": 1789675199,
+      "1": 1789675199,
+      "2": 1789703999
+    },
+    "tabStartDayTime": {
+      "3": 1789632000,
+      "4": 1789588800,
+      "1": 1789588800,
+      "2": 1789617600
+    },
+    "phase": 2,
+    "name": 1266152126
+  },
+  "10000028": {
+    "apRule": 1359780670,
+    "eventType": 15,
+    "euRule": 1503339723,
+    "eventDesc": 1509708900,
+    "iconResId": "$UI_Img_Event_TabThemeMonth.png",
+    "naRule": 1355645900,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1249918959,
+    "sendTaskWardMailId": 37,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1796889599,
+      "4": 1796846399,
+      "1": 1796846399,
+      "2": 1796875199
+    },
+    "tabStartDayTime": {
+      "3": 1789891200,
+      "4": 1789848000,
+      "1": 1789848000,
+      "2": 1789876800
+    },
+    "rule": 1864764695,
+    "rank": 5
+  },
+  "10000064": {
+    "apRule": 1724604146,
+    "eventType": 1,
+    "euRule": 1856372045,
+    "eventDesc": 1499782397,
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "naRule": 1332553340,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 6,
+    "rule": 1193979287,
+    "tabEndDayTime": {
+      "3": 1789891199,
+      "4": 1789847999,
+      "1": 1789847999,
+      "2": 1789876799
+    },
+    "tabStartDayTime": {
+      "3": 1789804800,
+      "4": 1789761600,
+      "1": 1789761600,
+      "2": 1789790400
+    },
+    "phase": 4,
+    "name": 2010515660
+  },
+  "10000065": {
+    "apRule": 1106381072,
+    "eventType": 1,
+    "euRule": 1827622925,
+    "eventDesc": 1864122267,
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "naRule": 1947663424,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 6,
+    "rule": 2057732480,
+    "tabEndDayTime": {
+      "3": 1789977599,
+      "4": 1789934399,
+      "1": 1789934399,
+      "2": 1789963199
+    },
+    "tabStartDayTime": {
+      "3": 1789891200,
+      "4": 1789848000,
+      "1": 1789848000,
+      "2": 1789876800
+    },
+    "phase": 5,
+    "name": 1167725996
+  },
+  "10000066": {
+    "apRule": 1840036488,
+    "eventType": 1,
+    "euRule": 1211767132,
+    "eventDesc": 1365448267,
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "naRule": 2000580143,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 6,
+    "rule": 1680515621,
+    "tabEndDayTime": {
+      "3": 1791532799,
+      "4": 1791489599,
+      "1": 1791489599,
+      "2": 1791518399
+    },
+    "tabStartDayTime": {
+      "3": 1790928000,
+      "4": 1790884800,
+      "1": 1790884800,
+      "2": 1790913600
+    },
+    "phase": 6,
+    "name": 1732170814
+  },
+  "10000067": {
+    "apRule": 1853024702,
+    "eventType": 1,
+    "euRule": 1382211557,
+    "eventDesc": 1678508716,
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "naRule": 2094529946,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 6,
+    "rule": 1794800392,
+    "tabEndDayTime": {
+      "3": 1792742399,
+      "4": 1792699199,
+      "1": 1792699199,
+      "2": 1792727999
+    },
+    "tabStartDayTime": {
+      "3": 1792137600,
+      "4": 1792094400,
+      "1": 1792094400,
+      "2": 1792123200
+    },
+    "phase": 7,
+    "name": 1282269353
+  },
+  "10000068": {
+    "apRule": 2049745165,
+    "eventType": 28,
+    "euRule": 1825833025,
+    "eventDesc": 2141565666,
+    "iconResId": "$UI_Img_Event_LeftTab_Totallogins.png",
+    "naRule": 1491159319,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 11,
+    "rule": 1794425464,
+    "tabEndDayTime": {
+      "3": 2108361599,
+      "4": 2108318399,
+      "1": 2108318399,
+      "2": 2108347199
+    },
+    "tabStartDayTime": {
+      "3": 1790150400,
+      "4": 1790107200,
+      "1": 1790107200,
+      "2": 1790136000
+    },
+    "phase": 1,
+    "name": 1098483113
+  },
+  "10000069": {
+    "apRule": 2008859408,
+    "eventType": 118,
+    "euRule": 1458747811,
+    "eventDesc": 1666340497,
+    "iconResId": "$UI_Img_Event_LeftTab_Guide.png",
+    "naRule": 1492530640,
+    "conditions": 304125,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1018,
+    "name": 1547312109,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1790236799,
+      "4": 1790193599,
+      "1": 1790193599,
+      "2": 1790222399
+    },
+    "tabStartDayTime": {
+      "3": 1790150400,
+      "4": 1790107200,
+      "1": 1790107200,
+      "2": 1790136000
+    },
+    "rule": 1898651125,
+    "rank": 14
+  },
+  "11000001": {
+    "apRule": 1369966069,
+    "eventType": 115,
+    "euRule": 1906437486,
+    "eventDesc": 1740567208,
+    "iconResId": "$UI_Img_Event_LeftTab_RedBook.png",
+    "naRule": 1182691494,
+    "conditions": 304124,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1015,
+    "name": 2013979192,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1796889599,
+      "4": 1796846399,
+      "1": 1796846399,
+      "2": 1796875199
+    },
+    "tabStartDayTime": {
+      "3": 1789545600,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789531200
+    },
+    "rule": 1716962504,
+    "rank": 10
+  },
+  "10000063": {
+    "apRule": 1150914302,
+    "eventType": 1,
+    "euRule": 1647348261,
+    "eventDesc": 1684273381,
+    "iconResId": "$UI_Img_Event_LeftTab_DailySurvey.png",
+    "naRule": 1733201866,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "rank": 6,
+    "rule": 1667415632,
+    "tabEndDayTime": {
+      "3": 1789804799,
+      "4": 1789761599,
+      "1": 1789761599,
+      "2": 1789790399
+    },
+    "tabStartDayTime": {
+      "3": 1789718400,
+      "4": 1789675200,
+      "1": 1789675200,
+      "2": 1789704000
+    },
+    "phase": 3,
+    "name": 1505125469
+  },
+  "10000060": {
+    "apRule": 1748806955,
+    "eventType": 18,
+    "euRule": 1673104060,
+    "eventDesc": 1589717268,
+    "iconResId": "$UI_Img_Event_LeftTab_LeylinesTree.png",
+    "naRule": 1729944275,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "iconUp": 1,
+    "name": 1864844767,
+    "sendTaskWardMailId": 43,
+    "phase": 6,
+    "tabEndDayTime": {
+      "3": 1793001599,
+      "4": 1792958399,
+      "1": 1792958399,
+      "2": 1792987199
+    },
+    "tabStartDayTime": {
+      "3": 1792396800,
+      "4": 1792353600,
+      "1": 1792353600,
+      "2": 1792382400
+    },
+    "rule": 1798510152,
+    "rank": 3
+  },
+  "11000003": {
+    "apRule": 1924475276,
+    "eventType": 117,
+    "euRule": 2014041265,
+    "eventDesc": 1275160533,
+    "iconResId": "$UI_Img_Event_LeftTab_TikTok_Pet.png",
+    "naRule": 1298574381,
+    "conditions": 304132,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1017,
+    "name": 1392444949,
+    "phase": 1,
+    "tabEndDayTime": {
+      "3": 1796889599,
+      "4": 1796846399,
+      "1": 1796846399,
+      "2": 1796875199
+    },
+    "tabStartDayTime": {
+      "3": 1789545600,
+      "4": 1789502400,
+      "1": 1789502400,
+      "2": 1789531200
+    },
+    "rule": 1563492890,
+    "rank": 8
+  },
+  "10000030": {
+    "eventType": 16,
+    "name": 1880093727,
+    "rank": 4,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 0,
+    "timeControlRule": 11,
+    "tabEndDayTime": {
+      "3": 1793231999,
+      "4": 1793231999,
+      "1": 1793231999,
+      "2": 1793231999
+    },
+    "tabStartDayTime": {
+      "3": 1787558400,
+      "4": 1787515200,
+      "1": 1787515200,
+      "2": 1787544000
+    },
+    "phase": 1
+  },
+  "10000032": {
+    "apRule": 1809374469,
+    "eventType": 108,
+    "euRule": 1787465112,
+    "eventDesc": 1333650260,
+    "iconResId": "$UI_Img_Event_LeftTab_SpeedUpIncubation.png",
+    "naRule": 1758119231,
+    "conditions": 1301,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 31,
+    "guideId": 1008,
+    "weekEventTime": [
+      [
+        5,
+        7
+      ]
+    ],
+    "rule": 1988481779,
+    "rank": 8,
+    "phase": 1,
+    "name": 1179436035
+  },
+  "10000049": {
+    "apRule": 2092480420,
+    "eventType": 7,
+    "euRule": 1652202580,
+    "eventDesc": 1842386844,
+    "iconResId": "$UI_Img_Event_VitalityContest104.png",
+    "naRule": 1943217208,
+    "conditions": 304024,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "name": 1967424149,
+    "sendTaskWardMailId": 20,
+    "phase": 3,
+    "tabEndDayTime": {
+      "3": 1793347199,
+      "4": 1793303999,
+      "1": 1793303999,
+      "2": 1793332799
+    },
+    "tabStartDayTime": {
+      "3": 1792742400,
+      "4": 1792699200,
+      "1": 1792699200,
+      "2": 1792728000
+    },
+    "rule": 1809988816,
+    "rank": 6
+  },
+  "10000051": {
+    "apRule": 1120560445,
+    "eventType": 112,
+    "euRule": 1278672244,
+    "eventDesc": 1726575018,
+    "iconResId": "$UI_Img_Event_LeftTab_SecretStore.png",
+    "naRule": 2079772579,
+    "conditions": 62012,
+    "switch": 1,
+    "textColor": 1,
+    "timeControlRule": 11,
+    "guideId": 1012,
+    "rule": 1223766645,
+    "rank": 9,
+    "phase": 1,
+    "name": 1382142353
+  }
+}

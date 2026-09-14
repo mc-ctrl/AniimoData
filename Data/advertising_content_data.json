@@ -1,0 +1,468 @@
+{
+  "1012": {
+    "picRes": "ARK_MonitorDemo_0_2P10",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1013": {
+    "picRes": "ARK_MonitorDemo_0_2P11",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1014": {
+    "picRes": "ARK_MonitorDemo_0_2P12",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1015": {
+    "picRes": "ARK_MonitorDemo_0_2P13",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1016": {
+    "picRes": "ARK_MonitorDemo_0_2P14",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 20,
+    "modelScale": 1
+  },
+  "2001": {
+    "audioRes": "SFX_AMB_ARK_BigScreen01",
+    "duration": 30,
+    "restype": 2,
+    "videoUrl": "Video_PVP.mp4",
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 1
+  },
+  "2002": {
+    "audioRes": "SFX_AMB_ARK_BigScreen03",
+    "duration": 40,
+    "restype": 2,
+    "videoUrl": "Video_Login_For_ARK.mp4",
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 1
+  },
+  "2003": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Xiaotanquan.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "1002": {
+    "picRes": "ARK_MonitorDemo_0_2P2",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "2004": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Mimengzai.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2005": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Shanhuyu.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2006": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Langdoushi.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 20,
+    "modelScale": 1
+  },
+  "2007": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Xiuxiuta.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2008": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Gangkuizai.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 20,
+    "modelScale": 1
+  },
+  "2009": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Yingbinglong.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2010": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Yunduoyang.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2011": {
+    "audioRes": "SFX_AMB_ARK_BigScreen01",
+    "duration": 30,
+    "restype": 2,
+    "videoUrl": "Video_PVP.mp4",
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 1
+  },
+  "2012": {
+    "audioRes": "SFX_AMB_ARK_BigScreen03",
+    "duration": 40,
+    "restype": 2,
+    "videoUrl": "Video_Login_For_ARK.mp4",
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelScale": 1
+  },
+  "2013": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Xiaotanquan.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2014": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Mimengzai.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2015": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Shanhuyu.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2016": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Langdoushi.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 20,
+    "modelScale": 1
+  },
+  "2017": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Xiuxiuta.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2018": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Gangkuizai.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 20,
+    "modelScale": 1
+  },
+  "2019": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Yingbinglong.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2020": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "Video_Yunduoyang.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "2021": {
+    "picRes": "ARK_MonitorDemo_0_2V1",
+    "restype": 2,
+    "videoUrl": "ARK_LittleFireman.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 10,
+    "modelScale": 1
+  },
+  "1001": {
+    "picRes": "ARK_MonitorDemo_0_2P1",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "3002": {
+    "picRes": "ARK_MonitorDemo_0_2C1",
+    "restype": 3,
+    "videoUrl": "CrossScreen_Pangpangta.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 15,
+    "modelScale": 1
+  },
+  "1003": {
+    "picRes": "ARK_MonitorDemo_0_2P1",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1004": {
+    "picRes": "ARK_MonitorDemo_0_2P2",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1005": {
+    "picRes": "ARK_MonitorDemo_0_2P3",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1006": {
+    "picRes": "ARK_MonitorDemo_0_2P4",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1007": {
+    "picRes": "ARK_MonitorDemo_0_2P5",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1008": {
+    "picRes": "ARK_MonitorDemo_0_2P6",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1009": {
+    "picRes": "ARK_MonitorDemo_0_2P7",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "1010": {
+    "picRes": "ARK_MonitorDemo_0_2P8",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "4001": {
+    "modelScale": 1,
+    "duration": 60,
+    "restype": 4,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "1011": {
+    "picRes": "ARK_MonitorDemo_0_2P9",
+    "restype": 1,
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 5,
+    "modelScale": 1
+  },
+  "3001": {
+    "picRes": "ARK_MonitorDemo_0_2C1",
+    "restype": 3,
+    "videoUrl": "CrossScreen_Pangpangta.mp4",
+    "modelOffset": [
+      0,
+      0,
+      0
+    ],
+    "duration": 19,
+    "modelScale": 1
+  }
+}

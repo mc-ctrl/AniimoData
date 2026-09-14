@@ -1,0 +1,202 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_215640102",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        32
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "2d50d61f-1e73-40a0-8d6e-b4a820d1c5d0",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "7": {
+      "calcId": 215640102,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "d6a566be-68b3-4088-8148-3101ffdc8dd0",
+      "name": "getParamByLuaConfig"
+    },
+    "9": {
+      "UID": "378a771d-b646-48a1-a9b0-8158c0b529f1",
+      "name": "mergeAttackCalcInfo",
+      "calcInfo": {
+        "instant_bp_add_ratio": {
+          "calcId": 215640102,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 7,
+          "UID": "d6a566be-68b3-4088-8148-3101ffdc8dd0",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "NodeID": 9
+    },
+    "20": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1f9c231c-daba-4914-b005-ef8f75560817",
+      "effectId": "Eff_Parmon_10564_Skill_Sword_Yellow_01",
+      "speed": 1,
+      "NodeID": 20
+    },
+    "21": {
+      "name": "checkPetPrototypeId",
+      "UID": "3b53d2db-6500-4bfd-ad62-63c159757401",
+      "target": "OWNER",
+      "petPrototypeId": 1056100,
+      "NodeID": 21
+    },
+    "4": {
+      "UID": "78906814-4379-4a62-9054-ec398c3cb7a9",
+      "destroyReason": "timeout",
+      "name": "buffDestroyReason",
+      "NodeID": 4
+    },
+    "14": {
+      "actionIds": [
+        27,
+        29
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "229760c0-64fc-4ec4-9e5c-6a7a06963cbd",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12,
+        15
+      ],
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "659823b8-42d5-4a25-8718-a4714d2f646c",
+      "name": "registerMergeAttackCalcInfo",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "0640a7d2-3da4-4930-b16d-8fc4746e58fc",
+      "effectId": "Eff_Parmon_10564_Skill_Sword_Yellow_01",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "82e8779b-9b77-4cd1-845e-79bfe3be033b",
+      "effectId": "Eff_Parmon_10561_Skill_Sword_Yellow_01",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "26": {
+      "name": "checkPetPrototypeId",
+      "UID": "82634633-bc24-4555-8e6d-b604206e938d",
+      "target": "OWNER",
+      "petPrototypeId": 1056100,
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "c5eaeefb-2e5d-4b6b-a315-bac8b8b624a4",
+      "name": "stopPreset",
+      "presetName": "PM_Eff_Parmon_10564_Skill_Sword_Yellow",
+      "NodeID": 27
+    },
+    "17": {
+      "renderNameFilter": [
+        "M_Parmon_10564_Body01"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 17,
+      "UID": "02dc6fa2-9ef2-4a99-b834-0d3942461a3b",
+      "target": "OWNER",
+      "presetName": "PM_Eff_Parmon_10564_Skill_Sword_Yellow",
+      "name": "playPreset"
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "ad16209a-b4e2-4158-9da3-a9bb7ff63426",
+      "effectId": "Eff_Parmon_10561_Skill_Sword_Yellow_01",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "32": {
+      "key": "BladeColor1",
+      "name": "setServerCacheVal",
+      "UID": "30c0053c-f5c4-4c43-b8c3-81341fcd00f1",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "sub",
+        "UID": "7f433abd-4620-4a9c-893f-aa01a019320a",
+        "NodeID": 31,
+        "lValue": {
+          "key": "BladeColor1",
+          "name": "getServerCacheVal",
+          "UID": "5cbb34f9-1f3e-491e-b4e0-1c80f0880924",
+          "target": "OWNER",
+          "NodeID": 30
+        }
+      },
+      "NodeID": 32
+    },
+    "19": {
+      "actionIds": [
+        23,
+        25
+      ],
+      "conditionActionIds": [
+        21
+      ],
+      "UID": "f34fdcec-1796-404b-b3a5-5224448b80cb",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17,
+        20
+      ],
+      "NodeID": 19
+    },
+    "12": {
+      "UID": "3e12c359-3725-4103-a961-55eed17b09d2",
+      "name": "stopPreset",
+      "presetName": "PM_Eff_Parmon_10564_Skill_Sword_Yellow",
+      "NodeID": 12
+    },
+    "23": {
+      "renderNameFilter": [
+        "M_Parmon_10561_Body01"
+      ],
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 23,
+      "UID": "70cd10a6-b773-4d3d-8b0d-ce2cd1435fb0",
+      "target": "OWNER",
+      "presetName": "PM_Eff_Parmon_10564_Skill_Sword_Yellow",
+      "name": "playPreset"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14,
+    5
+  ],
+  "onBuffStartIds": [
+    19,
+    10
+  ]
+}

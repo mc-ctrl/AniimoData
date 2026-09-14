@@ -1,0 +1,203 @@
+{
+  "duration": 14.5,
+  "acceleration": 1,
+  "allowHitCaster": true,
+  "angularIncreaseDuration": 4,
+  "BPName": "timeline_2164301",
+  "NodeID": 80,
+  "UID": "88a192b7-baa4-4807-8b20-057c2df96953",
+  "effectId": "Eff_Parmon_10643_Skill_Note_Bullet01",
+  "effectTimeInitOffset": 0,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxAngularOffset": 1800,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 10,
+  "minAngularOffset": 60,
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    70
+  ],
+  "onProjectileHitIds": [
+    66
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 700,
+  "relation": 1,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.05,
+  "sweepShape": 0,
+  "targetPos": {
+    "UID": "eaa89e9f-43d6-4cde-abe2-243a3a2b6e1f",
+    "target": "CASTER",
+    "name": "getTargetId",
+    "NodeID": 79
+  },
+  "tickInterval": 0,
+  "destroyOnHit": true,
+  "defaultHitSoundType": "h",
+  "calcResultNodeId": 66,
+  "nodeMap": {
+    "70": {
+      "actionIds": [
+        69
+      ],
+      "conditionActionIds": [
+        85
+      ],
+      "UID": "5b81c8f8-ac62-45f9-84bc-278aa78888e7",
+      "name": "doActionsByConditions",
+      "NodeID": 70
+    },
+    "81": {
+      "NodeID": 81,
+      "name": "getTargetOffsetPos",
+      "UID": "76cd6db3-449f-44ae-b0d1-d6107185faf6",
+      "target": "CASTER",
+      "offset": [
+        1,
+        2.2,
+        0.8
+      ],
+      "rotType": "CASTER"
+    },
+    "71": {
+      "pos": {
+        "NodeID": 91,
+        "name": "getTargetOffsetPos",
+        "UID": "13b29b0d-94bf-436b-a158-9464d037baca",
+        "target": "PROJECTILE",
+        "offset": [
+          0,
+          0.3,
+          0
+        ],
+        "rotType": "MASTER"
+      },
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "rotationTowardsPos": {
+        "NodeID": 86,
+        "name": "getTargetOffsetPos",
+        "UID": "68c5f536-65cc-4686-b1ff-d6d3ce2d62aa",
+        "target": "CASTER",
+        "offset": [
+          -1,
+          2.2,
+          0
+        ],
+        "rotType": "CASTER"
+      },
+      "name": "createSegmentedProjectile",
+      "UID": "8a86de5f-59cc-41d9-838b-f90588acb220",
+      "templateId": 2164301212,
+      "NodeID": 71
+    },
+    "90": {
+      "buffId": 916430101,
+      "name": "hasBuff",
+      "UID": "dbc994f8-a315-4df9-b23c-ae6b07b4969f",
+      "target": "MASTER",
+      "NodeID": 90
+    },
+    "91": {
+      "NodeID": 91,
+      "name": "getTargetOffsetPos",
+      "UID": "13b29b0d-94bf-436b-a158-9464d037baca",
+      "target": "PROJECTILE",
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "rotType": "MASTER"
+    },
+    "66": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 4,
+        "id": 2164301
+      },
+      "UID": "6c6f83c3-c7d2-45ab-a3a3-f7cb741b3b51",
+      "target": "TARGET",
+      "NodeID": 66,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "parmon_starmage_skill_charm_hit_Psychic",
+        "disableShowJumpWord": true,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10643_Skill_Note_Hit01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "hitCameraShakeId": 21104
+      }
+    },
+    "85": {
+      "buffId": 916430101,
+      "name": "hasBuff",
+      "UID": "2410f393-4165-428d-81a8-d92ceec7bfb4",
+      "target": "MASTER",
+      "NodeID": 85
+    },
+    "86": {
+      "NodeID": 86,
+      "name": "getTargetOffsetPos",
+      "UID": "68c5f536-65cc-4686-b1ff-d6d3ce2d62aa",
+      "target": "CASTER",
+      "offset": [
+        -1,
+        2.2,
+        0
+      ],
+      "rotType": "CASTER"
+    },
+    "69": {
+      "pos": {
+        "NodeID": 91,
+        "name": "getTargetOffsetPos",
+        "UID": "13b29b0d-94bf-436b-a158-9464d037baca",
+        "target": "PROJECTILE",
+        "offset": [
+          0,
+          0.3,
+          0
+        ],
+        "rotType": "MASTER"
+      },
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "rotationTowardsPos": {
+        "NodeID": 81,
+        "name": "getTargetOffsetPos",
+        "UID": "76cd6db3-449f-44ae-b0d1-d6107185faf6",
+        "target": "CASTER",
+        "offset": [
+          1,
+          2.2,
+          0.8
+        ],
+        "rotType": "CASTER"
+      },
+      "name": "createSegmentedProjectile",
+      "UID": "af56ac42-53e3-40ef-9e7b-a10f04764070",
+      "templateId": 2164301210,
+      "NodeID": 69
+    }
+  },
+  "rotation": "ToPos"
+}

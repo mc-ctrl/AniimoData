@@ -1,0 +1,188 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "UID": "3de8168e-34ec-48df-99e9-530644b1b59f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    },
+    "4": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2126301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "536f7a56-acfd-45da-b24c-c09c067bcd0f",
+      "target": "TARGET",
+      "NodeID": 4,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30201,
+        "hitFrameFreezeId": -1,
+        "elementType": 12,
+        "isPlayRadialBlur": true,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Dark_Blunt"
+      }
+    },
+    "14": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          17,
+          12
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "5e2616c7-2fba-45f2-8854-2e4935d67ef8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "5c561198-b8cd-46b4-93c4-73b95f39dac3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "21": {
+      "buffId": 9126302,
+      "name": "removeBuff",
+      "UID": "b26d14ff-3db9-40a5-a7c4-f8d3a3aa6742",
+      "target": "MASTER",
+      "NodeID": 21
+    },
+    "17": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 17,
+      "UID": "f6c32ee7-b205-4582-91ed-8107af811c87",
+      "effectId": "Eff_Parmon_10263_Skill_Throw_02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "9": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2126301,
+      "NodeID": 9,
+      "UID": "b70c67e3-f13b-45cb-a2ed-dbf90d72e650",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "11abacd2-b07d-483c-8a59-6583d7792299",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10263_Skill_Throw_03",
+      "NodeID": 18
+    },
+    "6": {
+      "calcResultNodeId": 4,
+      "actionIds": [
+        10,
+        4,
+        18
+      ],
+      "NodeID": 6,
+      "UID": "953454fb-228a-4bf3-9865-043d87153739",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0,
+            0,
+            180,
+            0.8,
+            0
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargetsSpreadAnnularSector",
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "innerRadius": 0,
+      "maxRadius": 4,
+      "needEcs": true,
+      "needUpdateCenter": true,
+      "speed": 6,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "11": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2126301,
+      "NodeID": 11,
+      "UID": "6b6b10ab-ac84-49b8-9b36-1affaefbea9f",
+      "layer": 2,
+      "name": "addBuff",
+      "level": 1
+    },
+    "20": {
+      "buffId": 9126302,
+      "name": "hasBuff",
+      "UID": "40b28c97-0cfb-45e9-a00d-9a2f59e36057",
+      "target": "MASTER",
+      "NodeID": 20
+    },
+    "12": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 12,
+      "UID": "d8400a3b-93d7-4e03-8b6c-2fec95d42a45",
+      "effectId": "Eff_Parmon_10263_Skill_Throw_03",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    }
+  },
+  "BPName": "timeline_2126301",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    14,
+    7,
+    22
+  ],
+  "layer": "Base",
+  "length": 1
+}

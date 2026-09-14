@@ -1,0 +1,325 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f9e11100-0feb-4b37-be52-1038aa2c5ce1",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Mjdm_2",
+      "NodeID": 37
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.73333,
+      "NodeID": 38,
+      "UID": "0d1b8251-af03-4ad9-9df4-989d36f99157"
+    },
+    "39": {
+      "templateId": 9021301,
+      "name": "destroyCreatedEntity",
+      "UID": "9c824c4e-55eb-489b-8917-0592836eaa04",
+      "target": "OWNER",
+      "entityType": "Creation",
+      "NodeID": 39
+    },
+    "6": {
+      "UID": "8f377c88-bb7e-44f1-a2b2-c2de6d76f2c5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          15,
+          41,
+          21,
+          39,
+          47
+        ]
+      },
+      "NodeID": 6
+    },
+    "41": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 9021302,
+      "name": "createEntity",
+      "UID": "b9ffc1aa-f5dc-4a57-b13a-2111f890f633",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "CASTER",
+      "NodeID": 41,
+      "pos": {
+        "UID": "acd2cd70-097c-4b08-b1e5-c6ca62281ee9",
+        "name": "getBornPos",
+        "NodeID": 40
+      }
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "de56edf1-0d17-4777-9e30-2a1655bce26e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Mjdm_1",
+      "NodeID": 35
+    },
+    "44": {
+      "UID": "c0e6d6bf-3319-4dd7-87a3-e522da8fa4e3",
+      "name": "callClientAction",
+      "actionIds": [
+        43
+      ],
+      "NodeID": 44
+    },
+    "33": {
+      "UID": "c9478c0a-6c39-4d58-b10b-46978af3b6d9",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "BlueSkill",
+      "NodeID": 33
+    },
+    "31": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d02abd13-4c3a-4962-a0eb-2e1720534aeb",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_kuosan",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 13.8,
+      "NodeID": 26,
+      "UID": "9f34c77e-a29d-4c1c-9b40-55587e2ee3e5"
+    },
+    "45": {
+      "UID": "ff7adf9e-e145-4722-b308-31dac3d6e6dc",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "BlueDestroy",
+      "NodeID": 45
+    },
+    "43": {
+      "checkGroundLayer": true,
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "UID": "6946a648-e10f-44e9-a619-fde7c4ec7e90",
+        "name": "getBornPos",
+        "NodeID": 42
+      },
+      "name": "teleport",
+      "UID": "ac9ebacb-e56b-4f17-9f08-a9a212cd70fd",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "performer": "OWNER",
+      "NodeID": 43
+    },
+    "17": {
+      "disableAllInput": false,
+      "maxTime": 9.5,
+      "UID": "66256832-74d8-4130-afb7-b2b518ade473",
+      "resetInput": true,
+      "name": "hideAllUI",
+      "NodeID": 17
+    },
+    "20": {
+      "UID": "a001e2f6-a0db-47ad-87f7-edde0df7942f",
+      "name": "restoreAllUI",
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "acb9c8ae-a63f-4c3e-829e-11f6f8bcbe47",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 21
+    },
+    "22": {
+      "UID": "3134e1dd-40a6-49c8-bf91-29f359322cd7",
+      "value": false,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "fa5e8a2c-328b-44a4-aaf8-e5ec63e1b46c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "f17ee754-c4fe-436f-a961-59185c05b792",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "337bc2e0-5473-47ba-81e4-334b7fea1f7d",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          16,
+          20,
+          22
+        ]
+      },
+      "NodeID": 14
+    },
+    "46": {
+      "action": {
+        "actionIds": [
+          45
+        ]
+      },
+      "eventType": "Notify",
+      "time": 13.25,
+      "NodeID": 46,
+      "UID": "75dc52e2-65a6-4658-beac-6807385d9b1d"
+    },
+    "15": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 10011,
+      "NodeID": 15,
+      "UID": "3e468c0f-be69-47d6-b9b9-670d4a3ec0ba",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "47": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "8d1e376e-29ac-4b9d-ba07-f2ff79d0c659",
+      "target": "OWNER",
+      "NodeID": 47,
+      "animId": "Skill_Mjdm_01"
+    },
+    "16": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "fef17ef6-4923-48cf-9e37-60ea9d7bd275",
+      "target": "CASTER",
+      "NodeID": 16
+    },
+    "27": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7f58e40d-9906-4221-882c-ddd332d38335",
+      "target": "OWNER",
+      "NodeID": 27,
+      "animId": "Skill_MjdmEnd"
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cfbd69fd-8f04-4871-aa98-af0105a7e2cd",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "12": {
+      "UID": "7576462b-1566-42ce-a5e6-ac81c5d4d922",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 12
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          32,
+          31,
+          28,
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 10.8,
+      "NodeID": 30,
+      "UID": "57c0a8bc-66ad-476c-82e8-f0af4ea748e5"
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e3991355-26c4-41f3-bd1e-1e68eb75a77b",
+      "effectId": "Eff_Monster_90213_Mon_Skill_Blue_Wings_Sky",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          33,
+          35,
+          17,
+          34,
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.8,
+      "NodeID": 19,
+      "UID": "89b6a348-0106-4176-af79-ca95f96957bc"
+    },
+    "34": {
+      "name": "hideModel",
+      "UID": "8560c64c-459d-4f68-b8f0-82cb32b2b3e3",
+      "target": "OWNER",
+      "NodeID": 34,
+      "maxHideTime": 10
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "aa5d99fd-5a82-40ad-b1d3-407f9340df78",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Mjdm_3",
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_902132100",
+  "NodeID": 8,
+  "UID": "83b252ed-d240-4b18-a943-38a70708dd83",
+  "eventIds": [
+    6,
+    14,
+    26,
+    19,
+    46,
+    30,
+    38
+  ],
+  "layer": "Base",
+  "length": 16.8
+}

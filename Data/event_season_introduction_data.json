@@ -1,0 +1,104 @@
+{
+  "20000002": [
+    {
+      "sort": 1,
+      "endTime": {
+        "3": 1793231999,
+        "4": 1793231999,
+        "1": 1793231999,
+        "2": 1793231999
+      },
+      "name": "同行手册",
+      "size": 2,
+      "sourceId": 8197,
+      "startTime": {
+        "3": 1789502400,
+        "4": 1789502400,
+        "1": 1789502400,
+        "2": 1789502400
+      },
+      "title": 1254054209,
+      "displayTimeType": 1,
+      "image": "$UI_Img_Event_Season_Overview_Btn_BP.png"
+    },
+    {
+      "sort": 2,
+      "endTime": {
+        "3": 1793231999,
+        "4": 1793231999,
+        "1": 1793231999,
+        "2": 1793231999
+      },
+      "name": "赛季伊莫",
+      "size": 2,
+      "sourceId": 8196,
+      "startTime": {
+        "3": 1789502400,
+        "4": 1789502400,
+        "1": 1789502400,
+        "2": 1789502400
+      },
+      "title": 2067854819,
+      "displayTimeType": 1,
+      "type": 0,
+      "image": "$UI_Img_Event_Season_Overview_Btn_Mileage.png"
+    },
+    {
+      "sort": 3,
+      "name": "传说伊莫",
+      "size": 2,
+      "sourceId": 7002,
+      "type": 4
+    },
+    {
+      "sort": 4,
+      "type": 1,
+      "name": "奖章商店",
+      "image": "$UI_Img_Event_Season_Overview_Btn_Shop1.png",
+      "sourceId": 8195,
+      "size": 2,
+      "title": 1297629982
+    },
+    {
+      "sort": 5,
+      "type": 1,
+      "name": "惊奇杂货铺",
+      "image": "$UI_Img_Event_Season_Overview_Btn_Shop2.png",
+      "sourceId": 8241,
+      "size": 2,
+      "title": 1393166697
+    },
+    {
+      "sort": 6,
+      "type": 3,
+      "size": 4,
+      "name": "地脉丰盈",
+      "image": "$UI_Img_Event_Season_Overview_Btn_Super.png",
+      "sourceId": 8242,
+      "TreeActivityTime": 1,
+      "title": 1599722014
+    },
+    {
+      "sort": 7,
+      "name": "新地区",
+      "size": 2,
+      "sourceId": 8243,
+      "startTime": {
+        "3": 1793246400,
+        "4": 1793246400,
+        "1": 1793246400,
+        "2": 1793246400
+      },
+      "title": 1189736437,
+      "displayTimeType": 2,
+      "type": 0,
+      "image": "$UI_Img_Event_Season_Overview_Btn_Newmap.png"
+    },
+    {
+      "size": 2,
+      "type": 2,
+      "sort": 8,
+      "name": "玩法集合"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6003037",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 6003038,
+      "NodeID": 3,
+      "UID": "44a5d945-53e5-4408-81a8-80593081e09a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "13": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6003038,
+      "NodeID": 13,
+      "UID": "69ec7564-1255-4668-b9b0-3c28bf84dac0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "value": true,
+      "name": "disableMotion",
+      "UID": "183aa265-76f3-4235-a107-52b8e3d58b18",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "buffId": 6003038,
+      "name": "removeBuff",
+      "UID": "7304b06c-94d3-45bc-906d-6e833333cd45",
+      "target": "CURPET",
+      "NodeID": 10
+    },
+    "15": {
+      "value": false,
+      "name": "disableMotion",
+      "UID": "b26305a0-5fdd-4efe-bd54-b806c6f8eb06",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "actionIds": [
+        5,
+        13
+      ],
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "537eedc6-ddc5-446b-8212-7202e0992ab2",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "16": {
+      "name": "checkTargetLifeState",
+      "UID": "802c2da7-5857-4965-892c-e9eca04f8623",
+      "target": "OWNER",
+      "NodeID": 16,
+      "life": 1
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "registerLifeStateChangeEvent",
+      "UID": "dec9c8d6-7334-4d99-afcd-32d5575186b3",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "47f7d68e-3da6-4d2f-a5d5-eb0bee638bd3",
+      "name": "registerPetListChangeEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 9
+    },
+    "5": {
+      "key": "delayAddBuff",
+      "duration": 0.01,
+      "actionIds": [
+        3
+      ],
+      "NodeID": 5,
+      "UID": "b42b0a97-55e3-4ac8-b7e7-1072db69d21b",
+      "name": "addTimer"
+    },
+    "12": {
+      "buffId": 6003038,
+      "name": "removeBuff",
+      "UID": "d47d494f-0425-4a87-aacb-1702c3668dd0",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    10,
+    12,
+    15
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    13,
+    3,
+    14,
+    8,
+    9
+  ]
+}

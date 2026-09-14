@@ -1,0 +1,507 @@
+{
+  "710069": {
+    "previewIcon": "$UI_Avatar_Preview_Suit_710069.png",
+    "preview": 1,
+    "appearanceList": [
+      711069,
+      712069,
+      713069,
+      714069,
+      715069
+    ],
+    "body": [
+      11
+    ]
+  },
+  "720021": {
+    "hair": 1202100,
+    "jewelryList": [
+      812030
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710021.png",
+    "preview": 0,
+    "uiBack": "$T_LVUIMall_BackGround_Binglang_CA.png",
+    "shopAction": "Show_Charm",
+    "appearanceList": [
+      721021,
+      722021,
+      723021,
+      725021
+    ],
+    "body": [
+      21
+    ]
+  },
+  "710022": {
+    "action": [
+      801905
+    ],
+    "jewelryList": [
+      811073,
+      816030
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710022.png",
+    "preview": 0,
+    "shopAction": "Show_Handsome",
+    "shopHideJewelryList": [
+      816030
+    ],
+    "uiBack": "$T_LVUIMall_BackGround_Tanglang_CA.png",
+    "hair": 1102200,
+    "appearanceList": [
+      711022,
+      715022
+    ],
+    "body": [
+      11
+    ]
+  },
+  "720025": {
+    "preview": 0,
+    "appearanceList": [
+      721025,
+      722025,
+      723025,
+      725025
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720010": {
+    "jewelryList": [
+      811008
+    ],
+    "preview": 1,
+    "previewIcon": "$UI_Avatar_Preview_Suit_720010.png",
+    "appearanceList": [
+      721010,
+      723010,
+      725010
+    ],
+    "body": [
+      21
+    ]
+  },
+  "710004": {
+    "hair": 1100400,
+    "jewelryList": [
+      816031
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710004.png",
+    "preview": 0,
+    "uiBack": "$T_LVUIMall_BackGround_Xingluli_CA.png",
+    "shopAction": "Show_Grace",
+    "appearanceList": [
+      711004,
+      712004,
+      713004,
+      715004
+    ],
+    "body": [
+      11
+    ]
+  },
+  "720011": {
+    "hair": 1201100,
+    "jewelryList": [
+      811089
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710011.png",
+    "preview": 0,
+    "uiBack": "$T_LVUIMall_BackGround_Xiaotanquan_CA.png",
+    "shopHideJewelryList": [
+      811089
+    ],
+    "appearanceList": [
+      721011,
+      722011,
+      723011,
+      725011
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720020": {
+    "hair": 1202000,
+    "jewelryList": [
+      816024
+    ],
+    "preview": 1,
+    "previewIcon": "$UI_Avatar_Preview_Suit_720020.png",
+    "appearanceList": [
+      721020,
+      722020,
+      723020,
+      724020,
+      725020
+    ],
+    "body": [
+      21
+    ]
+  },
+  "710010": {
+    "jewelryList": [
+      811008
+    ],
+    "preview": 0,
+    "previewIcon": "$UI_Avatar_Preview_Suit_710010.png",
+    "appearanceList": [
+      711010,
+      713010,
+      715010
+    ],
+    "body": [
+      11
+    ]
+  },
+  "720049": {
+    "preview": 0,
+    "jewelryList": [
+      811090
+    ],
+    "appearanceList": [
+      721049,
+      722049,
+      723049,
+      725049
+    ],
+    "body": [
+      21
+    ]
+  },
+  "710011": {
+    "hair": 1101100,
+    "jewelryList": [
+      811075
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710011.png",
+    "preview": 1,
+    "previewIcon": "$UI_Avatar_Preview_Suit_710011.png",
+    "shopAction": "Show_ShopCute",
+    "shopHideJewelryList": [
+      811075
+    ],
+    "uiBack": "$T_LVUIMall_BackGround_Xiaotanquan_CA.png",
+    "appearanceList": [
+      711011,
+      713011,
+      715011
+    ],
+    "body": [
+      11
+    ]
+  },
+  "720026": {
+    "hair": 1202600,
+    "preview": 0,
+    "appearanceList": [
+      721026,
+      722026,
+      723026,
+      725026
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720039": {
+    "hair": 1203900,
+    "jewelryList": [
+      812024,
+      816056
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710039.png",
+    "preview": 0,
+    "uiBack": "$T_LVUIMall_BackGround_Pengkexi_CA.png",
+    "shopAction": "Show_Bad",
+    "appearanceList": [
+      721039,
+      722039,
+      723039,
+      724039,
+      725039
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720048": {
+    "preview": 0,
+    "appearanceList": [
+      721048,
+      722048,
+      725048
+    ],
+    "body": [
+      21
+    ]
+  },
+  "710020": {
+    "hair": 1102000,
+    "jewelryList": [
+      816024
+    ],
+    "preview": 1,
+    "previewIcon": "$UI_Avatar_Preview_Suit_710020.png",
+    "appearanceList": [
+      711020,
+      712020,
+      713020,
+      714020,
+      715020
+    ],
+    "body": [
+      11
+    ]
+  },
+  "720054": {
+    "preview": 0,
+    "appearanceList": [
+      721054,
+      722054,
+      724054,
+      725054
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720055": {
+    "preview": 0,
+    "appearanceList": [
+      721055,
+      722055,
+      723055,
+      725055
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720056": {
+    "preview": 0,
+    "appearanceList": [
+      721056,
+      722056,
+      725056
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720069": {
+    "previewIcon": "$UI_Avatar_Preview_Suit_720069.png",
+    "preview": 1,
+    "appearanceList": [
+      721069,
+      722069,
+      723069,
+      724069,
+      725069
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720022": {
+    "action": [
+      801905
+    ],
+    "jewelryList": [
+      811030,
+      816030
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710022.png",
+    "preview": 1,
+    "previewIcon": "$UI_Avatar_Preview_Suit_720022.png",
+    "shopAction": "Show_Handsome",
+    "shopHideJewelryList": [
+      816030
+    ],
+    "uiBack": "$T_LVUIMall_BackGround_Tanglang_CA.png",
+    "hair": 1202200,
+    "appearanceList": [
+      721022,
+      725022
+    ],
+    "body": [
+      21
+    ]
+  },
+  "720092": {
+    "preview": 0,
+    "appearanceList": [
+      721092,
+      722092,
+      724092,
+      725092
+    ],
+    "body": [
+      21
+    ]
+  },
+  "710025": {
+    "preview": 0,
+    "appearanceList": [
+      711025,
+      713025,
+      715025
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710026": {
+    "hair": 1102600,
+    "preview": 0,
+    "shopAction": "Show_Neuter",
+    "appearanceList": [
+      711026,
+      712026,
+      713026,
+      714026,
+      715026
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710039": {
+    "hair": 1103900,
+    "jewelryList": [
+      811099,
+      813016,
+      813017
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710039.png",
+    "preview": 0,
+    "uiBack": "$T_LVUIMall_BackGround_Pengkexi_CA.png",
+    "shopAction": "Show_Grace",
+    "appearanceList": [
+      711039,
+      713039,
+      715039
+    ],
+    "body": [
+      11
+    ]
+  },
+  "720004": {
+    "hair": 1200400,
+    "jewelryList": [
+      816031
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710004.png",
+    "preview": 1,
+    "previewIcon": "$UI_Avatar_Preview_Suit_720004.png",
+    "shopAction": "Shop_Common",
+    "uiBack": "$T_LVUIMall_BackGround_Xingluli_CA.png",
+    "appearanceList": [
+      721004,
+      722004,
+      723004,
+      725004
+    ],
+    "body": [
+      21
+    ]
+  },
+  "710021": {
+    "hair": 1102100,
+    "jewelryList": [
+      813019,
+      811116
+    ],
+    "logo": "$UI_Img_CashShop_Logo_710021.png",
+    "preview": 1,
+    "previewIcon": "$UI_Avatar_Preview_Suit_710021.png",
+    "shopAction": "Show_Idle",
+    "uiBack": "$T_LVUIMall_BackGround_Binglang_CA.png",
+    "appearanceList": [
+      711021,
+      712021,
+      713021,
+      715021
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710048": {
+    "preview": 0,
+    "appearanceList": [
+      711048,
+      712048,
+      714048,
+      715048
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710049": {
+    "preview": 0,
+    "jewelryList": [
+      811055
+    ],
+    "appearanceList": [
+      711049,
+      713049,
+      714049,
+      715049
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710052": {
+    "preview": 0,
+    "shopAction": "Show_ShopCute",
+    "appearanceList": [
+      711052,
+      712052,
+      715052
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710053": {
+    "preview": 0,
+    "appearanceList": [
+      711053,
+      712053,
+      714053,
+      715053
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710055": {
+    "preview": 0,
+    "appearanceList": [
+      711055,
+      712055,
+      713055,
+      715055
+    ],
+    "body": [
+      11
+    ]
+  },
+  "710056": {
+    "preview": 0,
+    "appearanceList": [
+      711056,
+      712056,
+      714056,
+      715056
+    ],
+    "body": [
+      11
+    ]
+  }
+}

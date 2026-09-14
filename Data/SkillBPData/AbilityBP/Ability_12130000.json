@@ -1,0 +1,91 @@
+{
+  "BPName": "ability_12130000",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 14200000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "52": {
+      "recoverOnExit": false,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "d1501e18-7851-49e7-b286-4de9cfb1c512",
+      "to": 12130010,
+      "NodeID": 52,
+      "from": 12130000
+    },
+    "55": {
+      "leaveGroundOffset": 0,
+      "NodeID": 55,
+      "UID": "89b4ed06-14cd-4ebf-a407-098da473e2e5",
+      "velocity": 4.5,
+      "enable": false,
+      "name": "enableSkillGliding"
+    },
+    "6": {
+      "timelineId": 12130000001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 6
+    },
+    "54": {
+      "buffId": 2121301,
+      "name": "hasBuff",
+      "UID": "a1908edd-f693-4160-83a0-61c7a4119b97",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "7": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        54
+      ],
+      "UID": "cb01fe42-650f-4a2a-a043-0925cfdaa0b6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        6
+      ],
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10213_Attack01",
+    "Eff_Parmon_10213_Attack01_01",
+    "Eff_Parmon_10213_Skill_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "subAbilityIds": [
+    12130001,
+    12130002,
+    12130003,
+    12130010,
+    12130011,
+    12130012,
+    12130013,
+    12130014
+  ],
+  "notCastInState": [
+    "FLYRIDE_ST",
+    "FLY_CHARGING_ST",
+    "FLY_ST"
+  ],
+  "onAbilityEndIds": [
+    55
+  ],
+  "searchTargetRangeDown": 1
+}

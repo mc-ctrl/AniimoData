@@ -1,0 +1,319 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2163301",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    30
+  ],
+  "onBuffInheritIds": [
+    33
+  ],
+  "nodeMap": {
+    "5": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "b4d7ae7e-a3b3-48cf-a7a5-11f60a3d0a00",
+      "name": "buffStartThink",
+      "NodeID": 5
+    },
+    "38": {
+      "name": "stopSoundStr",
+      "UID": "9233868d-e17c-4066-9d96-c96371aa3bd3",
+      "soundId": "SFX_Combat_10633_Skill_ThrowMoney_Loop",
+      "target": "OWNER",
+      "NodeID": 38
+    },
+    "7": {
+      "UID": "a255e07f-476e-42a5-991e-3f6d897e845d",
+      "destroyReason": "timeout",
+      "name": "buffDestroyReason",
+      "NodeID": 7
+    },
+    "8": {
+      "UID": "52f6bf66-5335-45ad-a625-a148ab6edc7b",
+      "conditionIds": [
+        7,
+        10
+      ],
+      "name": "conditionOr",
+      "NodeID": 8
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8e84b121-158b-4956-a5eb-a99119e73986",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10633_Skill_ThrowMoney_Loop",
+      "NodeID": 37
+    },
+    "9": {
+      "actionIds": [
+        22
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "0a2c01ad-4df7-4567-9d7d-e2a599012357",
+      "name": "doActionsByConditions",
+      "NodeID": 9
+    },
+    "22": {
+      "key": "9163301",
+      "name": "setCacheVal",
+      "UID": "9a3f0381-5528-4231-b4cd-0c96ce9d88ec",
+      "target": {
+        "UID": "fd1a54f7-638f-4eeb-b3b6-e6c54039f113",
+        "target": "SRC",
+        "name": "getPlayer",
+        "NodeID": 21
+      },
+      "val": 0,
+      "NodeID": 22
+    },
+    "12": {
+      "key": "9163301",
+      "name": "setCacheVal",
+      "UID": "27b63494-3601-4742-8e5a-3d9e4d5e67b8",
+      "target": {
+        "UID": "9d6bf40c-5e72-4d42-81b8-5462a0852fe0",
+        "target": "SRC",
+        "name": "getPlayer",
+        "NodeID": 20
+      },
+      "val": {
+        "UID": "8628238b-54a6-41f2-81cf-31a94e9ff293",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 11
+      },
+      "NodeID": 12
+    },
+    "33": {
+      "key": "9163301",
+      "name": "setCacheVal",
+      "UID": "d230b8fd-26ff-465b-af41-7b086f97fc36",
+      "target": {
+        "UID": "ea6bc04f-1b83-4407-b76d-c7498eb56a6a",
+        "target": "SRC",
+        "name": "getPlayer",
+        "NodeID": 34
+      },
+      "val": {
+        "UID": "c1210edd-a314-4dc0-8e3e-7dc1eb0e489d",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 32
+      },
+      "NodeID": 33
+    },
+    "20": {
+      "UID": "9d6bf40c-5e72-4d42-81b8-5462a0852fe0",
+      "target": "SRC",
+      "name": "getPlayer",
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "fd1a54f7-638f-4eeb-b3b6-e6c54039f113",
+      "target": "SRC",
+      "name": "getPlayer",
+      "NodeID": 21
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "40877c92-73a4-4753-b102-cdf0d59c8786",
+      "effectId": "Eff_Parmon_10633_Skill_ThrowMoney_Mark",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "23": {
+      "UID": "a804e39a-6042-4d70-84ff-c98da3170f13",
+      "target": "SRC",
+      "name": "getPlayer",
+      "NodeID": 23
+    },
+    "24": {
+      "key": "DeathPos",
+      "name": "setServerCacheVal",
+      "UID": "c06ee661-7b80-42a6-9974-194cd64feb8a",
+      "target": {
+        "UID": "a804e39a-6042-4d70-84ff-c98da3170f13",
+        "target": "SRC",
+        "name": "getPlayer",
+        "NodeID": 23
+      },
+      "val": {
+        "UID": "a2a9dcc3-7e78-4278-9a0c-5b32c2317553",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 35
+      },
+      "NodeID": 24
+    },
+    "14": {
+      "conditionActionIds": [
+        18
+      ],
+      "UID": "a39dab30-e498-43cb-9485-838c39cf00a1",
+      "name": "doActionsByConditions",
+      "NodeID": 14,
+      "elseActionIds": [
+        17,
+        19,
+        12
+      ]
+    },
+    "10": {
+      "UID": "b401af8f-496e-4a41-bb01-3c870bbdc1a8",
+      "destroyReason": "death",
+      "name": "buffDestroyReason",
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "0bf75b18-985e-4781-9d9c-1a6574f0c75b",
+      "target": "SRC",
+      "name": "getPlayer",
+      "NodeID": 15
+    },
+    "30": {
+      "value": {
+        "calcId": 2163301,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 29,
+        "UID": "b9ef92ba-626b-46b4-9fb9-0576b9ed0a6b",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "recoverEp",
+      "UID": "94117677-d2b2-4119-b2c9-ab70b6ab46d8",
+      "target": "SRC",
+      "NodeID": 30
+    },
+    "26": {
+      "actionIds": [
+        24,
+        28
+      ],
+      "name": "registerDeadEvent",
+      "UID": "c30e511c-2297-418a-8dea-5c24bc7f033e",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "8ad661ac-19f6-480f-a860-ab26329d2782",
+      "target": "SRC",
+      "name": "getPlayer",
+      "NodeID": 27
+    },
+    "17": {
+      "buffId": 2163301,
+      "name": "removeBuff",
+      "UID": "dc026ce0-e8b0-4c7f-b151-95eb8d9d12c2",
+      "target": {
+        "key": "9163301",
+        "name": "getCacheVal",
+        "UID": "2f9adc3f-ab69-4b61-a13f-7bd7a5f77251",
+        "target": {
+          "UID": "0bf75b18-985e-4781-9d9c-1a6574f0c75b",
+          "target": "SRC",
+          "name": "getPlayer",
+          "NodeID": 15
+        },
+        "NodeID": 16
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "calcId": 2163301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 29,
+      "UID": "b9ef92ba-626b-46b4-9fb9-0576b9ed0a6b",
+      "name": "getParamByLuaConfig"
+    },
+    "18": {
+      "rValue": {
+        "key": "9163301",
+        "name": "getCacheVal",
+        "UID": "2f9adc3f-ab69-4b61-a13f-7bd7a5f77251",
+        "target": {
+          "UID": "0bf75b18-985e-4781-9d9c-1a6574f0c75b",
+          "target": "SRC",
+          "name": "getPlayer",
+          "NodeID": 15
+        },
+        "NodeID": 16
+      },
+      "name": "equal",
+      "UID": "bbf5037b-7ebe-4696-8363-01697f8b43f2",
+      "NodeID": 18,
+      "lValue": {
+        "UID": "2047d9be-6cb7-412c-876d-097e9fb170ca",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 31
+      }
+    },
+    "28": {
+      "eventName": "targetDead",
+      "name": "notifyCustomEvent",
+      "UID": "e62287d5-54c8-46e1-9c3b-fa18d1494c03",
+      "target": {
+        "UID": "8ad661ac-19f6-480f-a860-ab26329d2782",
+        "target": "SRC",
+        "name": "getPlayer",
+        "NodeID": 27
+      },
+      "NodeID": 28
+    },
+    "19": {
+      "buffId": 2163304,
+      "name": "removeBuff",
+      "UID": "2b3767fa-c0b1-4ab0-a652-031c0703c9fc",
+      "target": {
+        "key": "9163301",
+        "name": "getCacheVal",
+        "UID": "2f9adc3f-ab69-4b61-a13f-7bd7a5f77251",
+        "target": {
+          "UID": "0bf75b18-985e-4781-9d9c-1a6574f0c75b",
+          "target": "SRC",
+          "name": "getPlayer",
+          "NodeID": 15
+        },
+        "NodeID": 16
+      },
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "ea6bc04f-1b83-4407-b76d-c7498eb56a6a",
+      "target": "SRC",
+      "name": "getPlayer",
+      "NodeID": 34
+    },
+    "36": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b7895152-2420-4100-b4d3-729743b42d5c",
+      "effectId": "Eff_Parmon_10633_Skill_ThrowMoney_Mark",
+      "speed": 1,
+      "NodeID": 36
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    3,
+    38,
+    9
+  ],
+  "onBuffStartIds": [
+    14,
+    36,
+    5,
+    37,
+    26
+  ]
+}

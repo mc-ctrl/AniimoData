@@ -1,0 +1,38 @@
+{
+  "nodeMap": {
+    "5": {
+      "eventName": "OnCustomHitBoxBeAttacked",
+      "name": "notifyCustomEvent",
+      "UID": "b2cd41be-40f4-49db-83e2-2e0b36f797f3",
+      "target": "MASTER",
+      "NodeID": 5
+    },
+    "7": {
+      "UID": "de2601c2-4dcd-4277-adc2-78d0505894d4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          6
+        ]
+      },
+      "NodeID": 7
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "interval": 9999,
+      "UID": "a7693a09-222c-4556-9ab7-7aa8770baaa1",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 6
+    }
+  },
+  "BPName": "timeline_2105304",
+  "NodeID": 1,
+  "UID": "77f74044-6554-4fcd-9348-cce07886c5d6",
+  "eventIds": [
+    7
+  ],
+  "layer": "Base",
+  "length": 9999
+}

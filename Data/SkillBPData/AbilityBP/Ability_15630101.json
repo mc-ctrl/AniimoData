@@ -1,0 +1,30 @@
+{
+  "preloadAnims": [
+    "Skill_SporeCloud"
+  ],
+  "searchTargetRangeRadius": 3,
+  "BPName": "ability_15630101",
+  "name": "",
+  "UID": "caa3bb94-bd20-484f-9ede-e396aa33208a",
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600811,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "searchTargetRangeDown": 0.5,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15630101001,
+      "name": "setCombatActionTimeline",
+      "UID": "16aa2e3e-3366-4933-bcf5-a6490b956797",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

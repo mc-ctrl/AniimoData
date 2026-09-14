@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_11430230",
+  "NodeID": 1,
+  "UID": "f9b223be-67fc-41cf-873a-f177296a914f",
+  "abilityParamId": 11300120,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11430230001,
+      "name": "setCombatActionTimeline",
+      "UID": "11690ff7-6080-4dbb-8f10-9fbd7be5acff",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 7,
+  "preloadAnims": [
+    "Skill_Wave_Start",
+    "Skill_Wave_Loop",
+    "Skill_Wave_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10143_Skill_HolyBreath",
+    "Eff_Skill_Common_Warning",
+    "Eff_Hit_Holy_Blunt_Big",
+    "Eff_Buff_Disperse"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "searchTargetRangeDown": 2,
+  "isAim": true,
+  "onlyHasActOnTargets": true,
+  "desc": "",
+  "refBones": [
+    "Root"
+  ]
+}

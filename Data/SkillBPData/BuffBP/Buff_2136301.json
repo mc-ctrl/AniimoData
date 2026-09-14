@@ -1,0 +1,82 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2136301",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "10363_BianShen_New",
+      "name": "applyMaterialEffect",
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "55edbc10-316d-44cd-b3f8-1a0163495e2f",
+      "effectId": "Eff_Parmon_10363_Buff_End_01",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "9": {
+      "reclaim": false,
+      "name": "stopEffectStr",
+      "UID": "9388f97d-0ad7-4a40-ba77-0c4e13763904",
+      "effectId": "Eff_Parmon_10363_Character",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "237b1dda-8dc7-4acf-bd59-9a0d431faa1d",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        3,
+        7
+      ],
+      "NodeID": 6
+    },
+    "14": {
+      "UID": "6708e7ac-8cb5-4b4e-895a-d4003ce2d3b5",
+      "name": "removeMaterialEffect",
+      "key": "10363_BianShen_New",
+      "NodeID": 14
+    },
+    "11": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "6b35e266-b0ab-466a-99e6-c651db683ac7",
+      "NodeID": 11,
+      "groupKey": 0
+    },
+    "7": {
+      "switchTag": "Spark",
+      "name": "setModelSwitchTag",
+      "UID": "47b6c060-d063-422a-9192-68bd95222809",
+      "NodeID": 7,
+      "groupKey": 0
+    },
+    "12": {
+      "key": "1",
+      "duration": 0.3,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12,
+      "UID": "1ddade0a-c64e-4c5c-9dcf-820f8eebf91c",
+      "name": "addEntityTimer"
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    14,
+    13,
+    9,
+    12
+  ],
+  "onBuffStartIds": [
+    3,
+    7,
+    6
+  ]
+}

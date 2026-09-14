@@ -1,0 +1,76 @@
+{
+  "501": {
+    "seamlessGroup": {
+      "5010001": {
+        "sceneId": 5010001,
+        "seamlessRange": [
+          69441575,
+          1
+        ]
+      },
+      "5010002": {
+        "autoCutSeamless": 1,
+        "sceneId": 5010002,
+        "seamlessRange": [
+          72461650,
+          3
+        ]
+      },
+      "5010004": {
+        "autoCutSeamless": 1,
+        "sceneId": 5010004,
+        "seamlessRange": [
+          91273039,
+          3
+        ]
+      }
+    }
+  },
+  "3000": {
+    "seamlessGroup": {
+      "3000101": {
+        "autoCutSeamless": 1,
+        "sceneId": 3000101,
+        "seamlessRange": [
+          84748005,
+          1
+        ]
+      },
+      "3000102": {
+        "autoCutSeamless": 1,
+        "sceneId": 3000102,
+        "seamlessRange": [
+          84750931,
+          1
+        ]
+      },
+      "3000001": {
+        "autoCutSeamless": 1,
+        "sceneId": 3000001,
+        "seamlessRange": [
+          69111822,
+          3
+        ]
+      },
+      "3000103": {
+        "autoCutSeamless": 1,
+        "sceneId": 3000103,
+        "seamlessRange": [
+          84750983,
+          1
+        ]
+      },
+      "3000100": {
+        "autoCutSeamless": 1,
+        "sceneId": 3000100,
+        "seamlessRange": [
+          83981881,
+          1
+        ]
+      },
+      "3002": {
+        "sceneId": 3002
+      }
+    }
+  }
+}

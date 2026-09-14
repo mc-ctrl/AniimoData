@@ -1,0 +1,118 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "31": {
+      "calcId": 3033001,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 31,
+      "UID": "86c35c89-9405-4664-ad45-1bec8c224133",
+      "name": "getParamByLuaConfig"
+    },
+    "13": {
+      "UID": "486bf2e1-aec8-408a-b848-5f08878da136",
+      "name": "callClientAction",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "18": {
+      "unsummonValid": false,
+      "actionIds": [
+        16
+      ],
+      "name": "registerGroupEvent",
+      "UID": "5024576f-07e9-4de0-8e1e-c56fc2ae76f1",
+      "NodeID": 18
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "NodeID": 14,
+      "UID": "bd0c91cc-1456-41c8-9094-9278a7ef9373",
+      "cd": 1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "16": {
+      "UID": "720b27f7-ba96-419b-8388-4e1d74ccee50",
+      "name": "registerHealEvent",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "11": {
+      "pos": "TARGET",
+      "timelineId": 3033001101,
+      "name": "createSpellField",
+      "NodeID": 11,
+      "UID": "fae0b115-10ec-447c-9200-757f496d4e9d",
+      "maxCount": 9,
+      "destroyOnMasterDead": true,
+      "isOnGround": true
+    },
+    "15": {
+      "actionIds": [
+        14
+      ],
+      "NodeID": 15,
+      "UID": "4911d063-ac70-46ea-b4b0-afc51dbc38ba",
+      "count": {
+        "calcId": 3033001,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 31,
+        "UID": "86c35c89-9405-4664-ad45-1bec8c224133",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "doCounterAction"
+    },
+    "12": {
+      "needEcs": true,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12,
+      "UID": "7ebf816a-6595-47e8-8dbe-eeb6ef2eab89",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": {
+            "NodeID": 28,
+            "name": "constVector3",
+            "UID": "8cac5ac4-ac0d-43c6-8254-fba72868a68f",
+            "x": 20,
+            "y": 3,
+            "z": 3
+          },
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 3
+        }
+      ],
+      "impulseId": 3000,
+      "name": "actOnTargets"
+    }
+  },
+  "BPName": "buff_3033001",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    18
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 236,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Skill_Charm_Bullet_02_Rogue",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    234,
+    218,
+    238
+  ],
+  "nodeMap": {
+    "234": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 236,
+      "NodeID": 234,
+      "UID": "d250dc2a-39e1-4f9c-a8a3-0a48aeb30a0c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2.7,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5003,
+      "actionIds": [
+        236
+      ]
+    },
+    "236": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 10121810,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "9b8a5a43-675f-4520-a02e-77fd8fbee2b9",
+      "target": "TARGET",
+      "NodeID": 236,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 5003,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20100
+      }
+    },
+    "218": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "06a5f94b-9b92-4c98-8daa-a31a6c29dc43",
+      "effectId": "Eff_Parmon_10011_Skill_Charm_Creation",
+      "speed": 1,
+      "NodeID": 218
+    },
+    "238": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "8e185340-0d7a-45c2-b3c2-4bd800baf921",
+      "target": "OWNER",
+      "NodeID": 238
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.2,
+  "sweepRadius": 0.5,
+  "sweepShape": 0,
+  "BPName": "ability_10121810",
+  "tickInterval": 0.05,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 5003,
+  "acceleration": 0
+}

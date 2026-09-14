@@ -1,0 +1,17 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 5000043,
+    "crit_rate_v": "param0",
+    "type": 1
+  },
+  "BPName": "buff_5000043",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

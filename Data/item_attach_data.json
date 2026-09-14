@@ -1,0 +1,447 @@
+{
+  "11013": {
+    "isPhysics": 1,
+    "offset": [
+      0,
+      -0.5,
+      0
+    ]
+  },
+  "11014": {
+    "isPhysics": 1,
+    "offset": [
+      0,
+      1.6,
+      0
+    ]
+  },
+  "11015": {
+    "targetHP": "chestcontainer",
+    "isPhysics": 1,
+    "selfHP": "chestcontainer"
+  },
+  "11016": {
+    "targetHP": "chestcontainer",
+    "selfHP": "chestcontainer"
+  },
+  "11017": {
+    "targetHP": "chestcontainer",
+    "breakForce": 10,
+    "ejectForcePercent": 1,
+    "noBreak": true,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer"
+  },
+  "11010": {
+    "offset": [
+      1,
+      1.3,
+      0.5
+    ],
+    "breakForce": 600,
+    "ejectForcePercent": 1,
+    "isPhysics": 1
+  },
+  "11028": {
+    "targetHP": "Bone C Ball Base",
+    "selfHP": "Bip001"
+  },
+  "11011": {
+    "targetHP": "MineralSite1",
+    "breakForce": 2700,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "MineralSite1"
+  },
+  "11030": {
+    "isPhysics": 1,
+    "offset": [
+      0,
+      -0.9,
+      0
+    ]
+  },
+  "11000": {
+    "breakForce": 10,
+    "ejectForcePercent": 1,
+    "noBreak": true,
+    "isPhysics": 1,
+    "offset": [
+      0,
+      0.6,
+      0
+    ]
+  },
+  "11001": {
+    "isPhysics": 1,
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "11002": {
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "11003": {
+    "offset": [
+      0,
+      0.6,
+      0
+    ]
+  },
+  "11004": {
+    "targetHP": "chestcontainer",
+    "breakForce": 30000,
+    "ejectForcePercent": 0,
+    "ignoreGroundWall": 1,
+    "offset": [
+      0,
+      -1.3,
+      0
+    ],
+    "selfHP": "chestcontainer"
+  },
+  "11022": {
+    "targetHP": "FruitLinkPoint1",
+    "breakForce": 1000,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "FruitLinkPoint1"
+  },
+  "11005": {
+    "isPhysics": 1,
+    "offset": [
+      0,
+      1,
+      0
+    ]
+  },
+  "11023": {
+    "targetHP": "FruitLinkPoint2",
+    "breakForce": 1000,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "FruitLinkPoint2"
+  },
+  "11024": {
+    "targetHP": "FruitLinkPoint3",
+    "breakForce": 1000,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "FruitLinkPoint3"
+  },
+  "11033": {
+    "targetHP": "FruitSite_3",
+    "breakForce": 1000,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "FruitSite_3"
+  },
+  "11034": {
+    "offset": [
+      0,
+      4.5,
+      -0.6
+    ]
+  },
+  "10020": {
+    "boneWithAnim": 1,
+    "ignoreEntityCollide": 1,
+    "ignoreGroundWall": 1,
+    "isCheckCurtain": 1,
+    "targetHP": "Bip001 Prop1",
+    "selfHP": "Bip001 Prop1"
+  },
+  "10008": {
+    "boneWithAnim": 1,
+    "breakForce": 10000,
+    "ejectForcePercent": 0,
+    "ignoreEntityCollide": 1,
+    "ignoreGroundWall": 1,
+    "isCheckCurtain": 1,
+    "isPhysics": 1,
+    "selfHP": "Bip001 Prop1",
+    "targetHP": "Bip001 Prop1"
+  },
+  "10009": {
+    "targetHP": "chestcontainer",
+    "breakForce": 5500,
+    "ejectForcePercent": 1,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer"
+  },
+  "10014": {
+    "targetHP": "chestcontainer2",
+    "breakForce": 10,
+    "ejectForcePercent": 1,
+    "ignoreGroundWall": 1,
+    "noBreak": true,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer2"
+  },
+  "10010": {
+    "targetHP": "chestcontainer",
+    "breakForce": 30000,
+    "ejectForcePercent": 0.3,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer"
+  },
+  "11036": {
+    "targetHP": "MudBall_Small",
+    "breakForce": 15000,
+    "ejectForcePercent": 0.5,
+    "ignoreEntityCollide": 1,
+    "isPhysics": 1,
+    "selfHP": "MudBall_Small"
+  },
+  "10015": {
+    "targetHP": "chestcontainer",
+    "breakForce": 4200,
+    "ejectForcePercent": 1,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer"
+  },
+  "10016": {
+    "targetHP": "chestcontainer2",
+    "breakForce": 5500,
+    "ejectForcePercent": 1,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer2"
+  },
+  "10017": {
+    "targetHP": "chestcontainer",
+    "breakForce": 8000,
+    "ejectForcePercent": 0.7,
+    "ignoreEntityCollide": 1,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer"
+  },
+  "10018": {
+    "targetHP": "chestcontainer",
+    "breakForce": 4200,
+    "ejectForcePercent": 0.01,
+    "ignoreGroundWall": 1,
+    "selfHP": "chestcontainer"
+  },
+  "10019": {
+    "ignoreGroundWall": 1,
+    "targetHP": "bubbleAttach",
+    "freeRotation": true,
+    "selfHP": "bubbleAttach"
+  },
+  "11038": {
+    "targetHP": "MudBall_Small (2)",
+    "breakForce": 15000,
+    "ejectForcePercent": 0.5,
+    "ignoreEntityCollide": 1,
+    "isPhysics": 1,
+    "selfHP": "MudBall_Small (2)"
+  },
+  "10011": {
+    "targetHP": "chestcontainer",
+    "breakForce": 5500,
+    "ejectForcePercent": 0.7,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer"
+  },
+  "10012": {
+    "boneWithAnim": 1,
+    "breakForce": 10000,
+    "ejectForcePercent": 0,
+    "ignoreEntityCollide": 1,
+    "ignoreGroundWall": 1,
+    "isCheckCurtain": 1,
+    "isPhysics": 1,
+    "selfHP": "Bip001 Spine",
+    "targetHP": "Bip001 Spine",
+    "offset": [
+      -0.5,
+      -0.5,
+      0
+    ]
+  },
+  "10013": {
+    "targetHP": "chestcontainer1",
+    "breakForce": 10,
+    "ejectForcePercent": 1,
+    "ignoreGroundWall": 1,
+    "noBreak": true,
+    "isPhysics": 1,
+    "selfHP": "chestcontainer1"
+  },
+  "11040": {
+    "offset": [
+      0,
+      0.6,
+      0
+    ]
+  },
+  "11035": {
+    "targetHP": "MudBall_Big",
+    "breakForce": 15000,
+    "ejectForcePercent": 0.5,
+    "ignoreEntityCollide": 1,
+    "isPhysics": 1,
+    "selfHP": "MudBall_Big"
+  },
+  "11041": {
+    "ignoreGroundWall": 1,
+    "targetHP": "chestcontainer",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "selfHP": "chestcontainer"
+  },
+  "11039": {
+    "targetHP": "MudBall_Small (3)",
+    "breakForce": 15000,
+    "ejectForcePercent": 0.5,
+    "ignoreEntityCollide": 1,
+    "isPhysics": 1,
+    "selfHP": "MudBall_Small (3)"
+  },
+  "11037": {
+    "targetHP": "MudBall_Small (1)",
+    "breakForce": 15000,
+    "ejectForcePercent": 0.5,
+    "ignoreEntityCollide": 1,
+    "isPhysics": 1,
+    "selfHP": "MudBall_Small (1)"
+  },
+  "11042": {
+    "targetHP": "CM_Common_Buff_Head",
+    "offset": [
+      0,
+      1,
+      0
+    ],
+    "selfHP": "Root"
+  },
+  "11032": {
+    "targetHP": "FruitSite_2",
+    "breakForce": 1000,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "FruitSite_2"
+  },
+  "11031": {
+    "targetHP": "FruitSite_1",
+    "breakForce": 1000,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "FruitSite_1"
+  },
+  "11029": {
+    "targetHP": "Bip001",
+    "offset": [
+      0,
+      0.5,
+      0
+    ],
+    "ejectForcePercent": 0,
+    "selfHP": "Bip001"
+  },
+  "11027": {
+    "targetHP": "ChestLinkPoint2",
+    "breakForce": 1000,
+    "ejectForcePercent": 6,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "ChestLinkPoint2"
+  },
+  "11026": {
+    "targetHP": "ChestLinkPoint1",
+    "breakForce": 1000,
+    "ejectForcePercent": 6,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "ChestLinkPoint1"
+  },
+  "10007": {
+    "ignoreGroundWall": 1,
+    "targetHP": "chestcontainer",
+    "selfHP": "chestcontainer"
+  },
+  "11021": {
+    "targetHP": "Bip001 Prop1",
+    "ignoreEntityCollide": 1,
+    "selfHP": "Bip001 Prop1"
+  },
+  "11020": {
+    "ignoreGroundWall": 1,
+    "targetHP": "FruitSite",
+    "selfHP": "FruitSite"
+  },
+  "11012": {
+    "targetHP": "MineralSite2",
+    "breakForce": 2700,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "MineralSite2"
+  },
+  "11025": {
+    "targetHP": "FruitLinkPoint4",
+    "breakForce": 1000,
+    "ejectForcePercent": 0.5,
+    "ignoreGroundWall": 1,
+    "isPhysics": 1,
+    "selfHP": "FruitLinkPoint4"
+  },
+  "11006": {
+    "ignoreGroundWall": 1,
+    "targetHP": "chestcontainer",
+    "offset": [
+      0,
+      -0.8,
+      0
+    ],
+    "selfHP": "chestcontainer"
+  },
+  "11007": {
+    "ignoreGroundWall": 1,
+    "targetHP": "chestcontainer",
+    "offset": [
+      0,
+      0.2,
+      2
+    ],
+    "selfHP": "chestcontainer"
+  },
+  "11008": {
+    "isPhysics": 1,
+    "offset": [
+      0,
+      3,
+      0
+    ]
+  },
+  "11009": {
+    "isPhysics": 1,
+    "offset": [
+      0,
+      0.35,
+      0
+    ]
+  }
+}

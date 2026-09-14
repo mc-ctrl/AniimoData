@@ -1,0 +1,57 @@
+{
+  "42050457": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      4.41,
+      1,
+      24.33
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42049328,
+    "id": 42050457,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42050454,
+          42050461
+        ],
+        "deadTime": 0,
+        "desc": ""
+      }
+    ]
+  },
+  "42050333": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      24.63,
+      1,
+      23.92
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 42049328,
+    "id": 42050333,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          42050331
+        ],
+        "deadTime": 0,
+        "desc": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_13330002",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10331_Attack03_Bullet",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "duration": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "defaultHitSoundType": "h",
+  "onProjectileHitIds": [
+    86
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "nodeMap": {
+    "84": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13330002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "56862342-2453-4c8f-8944-6c5b344499cf",
+      "target": "TARGET",
+      "NodeID": 84,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt_Big"
+      }
+    },
+    "86": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 84,
+      "NodeID": 86,
+      "UID": "5e0d4086-ffe0-413f-92f3-49c388c49eff",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        84,
+        90
+      ]
+    },
+    "90": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "71c2c40e-ed18-4f1d-b530-42cb28bd309d",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1.01,
+      "NodeID": 90
+    }
+  },
+  "tickInterval": 0.01,
+  "calcResultNodeId": 84,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt_Big",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

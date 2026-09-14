@@ -1,0 +1,85 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_12120001",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10212_Attack01",
+  "trackingNoOffsetRotationRange": 5,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "duration": 1,
+  "minAngularOffset": 50,
+  "moveSpeed": 10,
+  "defaultHitSoundType": "s",
+  "onProjectileHitIds": [
+    33,
+    53
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "52": {
+      "UID": "37f960a4-888a-4435-a0ed-d91afa550346",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 52
+    },
+    "33": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12120001,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "1cb72386-2e48-4940-a82e-ae86d59a5432",
+      "target": "TARGET",
+      "NodeID": 33,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "impulseId": 2000,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt"
+      }
+    },
+    "53": {
+      "actionIds": [
+        55
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "ffa4dd61-fed9-47bd-a160-d1534b10a706",
+      "name": "doActionsByConditions",
+      "NodeID": 53
+    },
+    "55": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.34
+      },
+      "name": "calcResult",
+      "UID": "10d233e6-61ad-409c-820e-eb749e6f59ae",
+      "target": "CASTER",
+      "NodeID": 55
+    }
+  },
+  "tickInterval": 0,
+  "calcResultNodeId": 33,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

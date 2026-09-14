@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91122042",
+  "NodeID": 1,
+  "UID": "8c9497fb-57e7-46ee-9dfc-f6eea6990fa9",
+  "onBuffRefreshIds": [
+    3,
+    7
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "epCostAddFix": 0,
+      "epCostAddRatio": -0.5,
+      "UID": "4f83ba74-af85-4ecf-87f6-d0923c0d6bec",
+      "name": "setOverrideAbilityEpCost",
+      "NodeID": 3
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "3f929d39-1ec1-46e7-bf1d-82b49ac70b2e",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "8": {
+      "UID": "638d25cd-3c09-43f2-9b3d-22231f1c9ece",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 8
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "2f976ded-15e3-4225-ac60-feba7b79bbb3",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "5": {
+      "buffId": 91122042,
+      "name": "removeBuff",
+      "UID": "6b935b3b-87cc-4d41-8c3a-548f597e8eb8",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7
+  ]
+}

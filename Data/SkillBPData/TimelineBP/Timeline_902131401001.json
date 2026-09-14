@@ -1,0 +1,3090 @@
+{
+  "nodeMap": {
+    "53": {
+      "action": {
+        "actionIds": [
+          51,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.3,
+      "NodeID": 53,
+      "UID": "0aa08366-2fc2-40bf-900c-1c5b4e185039"
+    },
+    "54": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "a4553425-ec62-489f-bbb5-54db3ea6bf42",
+        "target": "OWNER",
+        "offset": [
+          -5,
+          4,
+          2
+        ],
+        "NodeID": 104
+      },
+      "UID": "030cf95d-6a18-49a8-992a-941b190f02a7",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 47,
+        "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 99
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 54,
+      "generateCount": 1
+    },
+    "115": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9fa78cf3-6da8-4fdb-9552-61fa01dc529b",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Release_02",
+      "speed": 1,
+      "NodeID": 115
+    },
+    "117": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8602e7e6-107d-4de7-a2e7-cbba23ad83d2",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Abosrd",
+      "speed": 1,
+      "NodeID": 117
+    },
+    "118": {
+      "action": {
+        "actionIds": [
+          117
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.1,
+      "NodeID": 118,
+      "UID": "7ae0d1d4-33cd-40f3-9a95-ead10e261a0d"
+    },
+    "119": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "de87e676-7f55-4cd1-b224-96ac1ce93cc9",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Release_03",
+      "speed": 1,
+      "NodeID": 119
+    },
+    "137": {
+      "name": "getTargetOffsetPos",
+      "UID": "74a69e47-d8b9-4d7b-bf86-23528786caad",
+      "target": "OWNER",
+      "offset": [
+        1.8705,
+        1.6545,
+        0
+      ],
+      "NodeID": 137
+    },
+    "60": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "d31bea37-bdfc-4770-b217-6c3b9dc64727",
+        "target": "OWNER",
+        "offset": [
+          -4.75,
+          3.75,
+          2
+        ],
+        "NodeID": 121
+      },
+      "UID": "c8649b55-a32d-4b8a-915c-841ddaf57dfa",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 47,
+        "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 99
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 60,
+      "generateCount": 1
+    },
+    "122": {
+      "name": "getTargetOffsetPos",
+      "UID": "0a2b5710-7c9a-40bc-9262-89953c28b6f1",
+      "target": "OWNER",
+      "offset": [
+        -5.25,
+        4.25,
+        2
+      ],
+      "NodeID": 122
+    },
+    "123": {
+      "name": "getTargetOffsetPos",
+      "UID": "97f9f0c5-6b9a-4022-99e6-5d0d0b50076d",
+      "target": "OWNER",
+      "offset": [
+        -5.75,
+        4.75,
+        2
+      ],
+      "NodeID": 123
+    },
+    "150": {
+      "action": {
+        "actionIds": [
+          149
+        ]
+      },
+      "eventType": "Notify",
+      "time": 8,
+      "NodeID": 150,
+      "UID": "e6519f10-a777-47eb-baad-2bfd4583c9d2"
+    },
+    "149": {
+      "time": 0.5,
+      "rotateSpeed": 360,
+      "name": "rotateTo",
+      "UID": "6f9ae7ba-d477-4b45-9e26-36245c204593",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 149
+    },
+    "148": {
+      "action": {
+        "actionIds": [
+          147
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.5,
+      "NodeID": 148,
+      "UID": "1ca17b0a-7319-4165-a24b-7a414fb7f5f0"
+    },
+    "126": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28c77b8d-0604-444c-a03f-ad45c75df121",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Zzdm_01",
+      "NodeID": 126
+    },
+    "147": {
+      "time": 0.1,
+      "rotateSpeed": 3600,
+      "name": "rotateTo",
+      "UID": "82707da9-7dcb-4016-926a-19c035bfe606",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 147
+    },
+    "146": {
+      "action": {
+        "actionIds": [
+          145
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 146,
+      "UID": "dc020135-aab7-43be-92f3-42a81210b0f2"
+    },
+    "145": {
+      "time": 0.1,
+      "rotateSpeed": 3600,
+      "name": "rotateTo",
+      "UID": "0ec24023-5073-42a2-a66d-97867b476127",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 145
+    },
+    "5": {
+      "UID": "cc84f036-099c-4dc0-8bf8-c1987940dc07",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          106,
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "127": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28bdf868-484b-4f8e-86ac-977911935daa",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_90213_Skill_Zzdm_02",
+      "NodeID": 127
+    },
+    "129": {
+      "relation": 2,
+      "heightDown": 20,
+      "heightUp": 20,
+      "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+      "radius": 100,
+      "name": "searchEntity",
+      "NodeID": 129
+    },
+    "144": {
+      "name": "getTargetOffsetPos",
+      "UID": "91c646aa-56c2-4715-b0f7-00c70b68f8e4",
+      "target": "OWNER",
+      "offset": [
+        -1.8705,
+        1.6545,
+        0
+      ],
+      "NodeID": 144
+    },
+    "90": {
+      "action": {
+        "actionIds": [
+          88,
+          97,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.475,
+      "NodeID": 90,
+      "UID": "08656d95-1de3-4b05-8f87-73be3084f5e1"
+    },
+    "110": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "45446be9-72b6-4087-92fb-e6ed5793b98f",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Release_01",
+      "speed": 1,
+      "NodeID": 110
+    },
+    "131": {
+      "name": "getTargetOffsetPos",
+      "UID": "b5ba2d27-0c7c-4cee-99d3-e53f6f055f81",
+      "target": "OWNER",
+      "offset": [
+        2.7029,
+        5.3016,
+        0
+      ],
+      "NodeID": 131
+    },
+    "133": {
+      "name": "getTargetOffsetPos",
+      "UID": "7e35777a-bfb4-4b2d-aeff-17c660819a53",
+      "target": "OWNER",
+      "offset": [
+        2.7029,
+        2.6984,
+        0
+      ],
+      "NodeID": 133
+    },
+    "132": {
+      "relation": 2,
+      "heightDown": 20,
+      "heightUp": 20,
+      "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+      "radius": 100,
+      "name": "searchEntity",
+      "NodeID": 132
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 29,
+      "UID": "9444aa52-21e6-4bc6-997b-08bff019bb14"
+    },
+    "81": {
+      "action": {
+        "actionIds": [
+          79,
+          93,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 81,
+      "UID": "960da855-1014-4168-b5b9-ad334579fe3b"
+    },
+    "140": {
+      "name": "getTargetOffsetPos",
+      "UID": "ed695819-5fc3-4e57-a495-dd99f32dcbaa",
+      "target": "OWNER",
+      "offset": [
+        -2.7029,
+        2.6984,
+        0
+      ],
+      "NodeID": 140
+    },
+    "114": {
+      "action": {
+        "actionIds": [
+          113
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.216,
+      "NodeID": 114,
+      "UID": "eabda44d-7b2e-43b7-aec7-7624d4e0ec26"
+    },
+    "11": {
+      "UID": "21511214-4563-4210-823e-8183e2c39b1f",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 20,
+      "UID": "62d59f80-809c-4473-b01c-f10919446f59"
+    },
+    "21": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "b6b10761-113f-40b1-a25d-3a83ec215f18",
+        "target": "OWNER",
+        "offset": [
+          5.5,
+          4.5,
+          2
+        ],
+        "NodeID": 43
+      },
+      "UID": "db4b3d75-2553-4ee3-950b-782f1ef366bd",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 46,
+        "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 17
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 21,
+      "generateCount": 1
+    },
+    "107": {
+      "name": "getTargetOffsetPos",
+      "UID": "157422ba-23b9-44a3-b45b-61a30bf07411",
+      "target": "OWNER",
+      "offset": [
+        5.75,
+        4.75,
+        2
+      ],
+      "NodeID": 107
+    },
+    "13": {
+      "UID": "cb5d16dc-4b09-4a3a-addf-932070cf8dfb",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "60809f1c-15d6-48ad-9756-97c97c94ba76",
+        "target": "OWNER",
+        "offset": [
+          5,
+          4,
+          2
+        ],
+        "NodeID": 101
+      },
+      "UID": "b86410c0-7fbc-4c40-ad6d-5f984bdc4453",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 46,
+        "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 17
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 24,
+      "generateCount": 1
+    },
+    "30": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "157422ba-23b9-44a3-b45b-61a30bf07411",
+        "target": "OWNER",
+        "offset": [
+          5.75,
+          4.75,
+          2
+        ],
+        "NodeID": 107
+      },
+      "UID": "9ef14f9c-2cc5-4e90-9239-e5a2c1cf36d3",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 46,
+        "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 17
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 30,
+      "generateCount": 1
+    },
+    "56": {
+      "action": {
+        "actionIds": [
+          54,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.95,
+      "NodeID": 56,
+      "UID": "547913aa-063d-4041-a544-d98c258a271c"
+    },
+    "75": {
+      "action": {
+        "actionIds": [
+          73,
+          95,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.3,
+      "NodeID": 75,
+      "UID": "c68e7b74-8701-49fa-8b54-95ffaca3793d"
+    },
+    "57": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "65935030-2d82-4542-b2be-129a77d11495",
+        "target": "OWNER",
+        "offset": [
+          -5.5,
+          4.5,
+          2
+        ],
+        "NodeID": 103
+      },
+      "UID": "5f321f5c-43e3-4469-aaca-87a5587c21e5",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 47,
+        "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 99
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 57,
+      "generateCount": 1
+    },
+    "76": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "7e35777a-bfb4-4b2d-aeff-17c660819a53",
+        "target": "OWNER",
+        "offset": [
+          2.7029,
+          2.6984,
+          0
+        ],
+        "NodeID": 133
+      },
+      "UID": "6379b5cb-8540-405c-bea3-17f8d40800f7",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 69,
+        "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -15
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 129
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 76,
+      "generateCount": 1
+    },
+    "27": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "5de3fd57-7201-49d2-875d-c917a3a1731c",
+        "target": "OWNER",
+        "offset": [
+          4.5,
+          3.5,
+          2
+        ],
+        "NodeID": 102
+      },
+      "UID": "aa38371b-1bf3-4c68-8ba7-d2814b27ffeb",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 46,
+        "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 17
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 27,
+      "generateCount": 1
+    },
+    "17": {
+      "relation": 2,
+      "heightDown": 20,
+      "heightUp": 20,
+      "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+      "radius": 100,
+      "name": "searchEntity",
+      "NodeID": 17
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          57,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.6,
+      "NodeID": 59,
+      "UID": "d081ee46-497d-4b29-a8b4-6e4b53963b49"
+    },
+    "78": {
+      "action": {
+        "actionIds": [
+          76,
+          94,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.65,
+      "NodeID": 78,
+      "UID": "e26dfe4a-c0f7-48bb-a4c4-388852650573"
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.325,
+      "NodeID": 32,
+      "UID": "5ea9c84c-3119-4335-9be3-78fa546a1990"
+    },
+    "79": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "5171b316-5272-46f3-a428-d0e5daaab360",
+        "target": "OWNER",
+        "offset": [
+          0.6676,
+          1.0752,
+          0
+        ],
+        "NodeID": 134
+      },
+      "UID": "8b1e2a5d-d72e-47fa-ae46-867201e8165b",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 69,
+        "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -45
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 129
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 79,
+      "generateCount": 1
+    },
+    "136": {
+      "name": "getTargetOffsetPos",
+      "UID": "c70ea0b0-9da0-41a9-ab41-962dd6d01833",
+      "target": "OWNER",
+      "offset": [
+        3,
+        4,
+        0
+      ],
+      "NodeID": 136
+    },
+    "36": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "2b3d51fc-01d6-45c4-b237-0c88806a9314",
+        "target": "OWNER",
+        "offset": [
+          4.75,
+          3.75,
+          2
+        ],
+        "NodeID": 109
+      },
+      "UID": "de103683-3ed8-4d91-aca7-451804ddcfe9",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 46,
+        "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 17
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 36,
+      "generateCount": 1
+    },
+    "62": {
+      "action": {
+        "actionIds": [
+          60,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.125,
+      "NodeID": 62,
+      "UID": "794f8b72-d7d8-41d0-908d-a16eb495ac13"
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          36,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.025,
+      "NodeID": 38,
+      "UID": "58505d83-9f2b-449c-8721-f2a829e64331"
+    },
+    "39": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "eadfedca-7de2-405c-b7da-333702c82952",
+      "target": "OWNER",
+      "NodeID": 39,
+      "animId": "Skill_Zzdm"
+    },
+    "63": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "0a2b5710-7c9a-40bc-9262-89953c28b6f1",
+        "target": "OWNER",
+        "offset": [
+          -5.25,
+          4.25,
+          2
+        ],
+        "NodeID": 122
+      },
+      "UID": "219b3c2f-12b3-471a-a5ce-7db43916e6d3",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 47,
+        "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 99
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 63,
+      "generateCount": 1
+    },
+    "41": {
+      "UID": "243e14fd-8cc2-428e-833e-81cb198e0979",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "NodeID": 41
+    },
+    "42": {
+      "name": "getTargetOffsetPos",
+      "UID": "c29dfe46-cc27-47ed-9ecd-a42580a00642",
+      "target": "OWNER",
+      "offset": [
+        6,
+        5,
+        2
+      ],
+      "NodeID": 42
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          33,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.675,
+      "NodeID": 35,
+      "UID": "1767fa18-58c3-4116-a66d-6baf3cf1ccf6"
+    },
+    "65": {
+      "action": {
+        "actionIds": [
+          63,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.775,
+      "NodeID": 65,
+      "UID": "889f5b03-a786-4a5f-9392-7739ea2ecf2f"
+    },
+    "84": {
+      "action": {
+        "actionIds": [
+          82,
+          98,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.125,
+      "NodeID": 84,
+      "UID": "3826a362-6246-4be9-9b79-3ce43ffb21e3"
+    },
+    "66": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "97f9f0c5-6b9a-4022-99e6-5d0d0b50076d",
+        "target": "OWNER",
+        "offset": [
+          -5.75,
+          4.75,
+          2
+        ],
+        "NodeID": 123
+      },
+      "UID": "7141df06-1528-4648-a290-907ea93c8370",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 47,
+        "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 99
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 66,
+      "generateCount": 1
+    },
+    "135": {
+      "name": "getTargetOffsetPos",
+      "UID": "ec1ea429-3037-48ee-a07c-a877cb30d4e8",
+      "target": "OWNER",
+      "offset": [
+        1.8705,
+        6.3455,
+        0
+      ],
+      "NodeID": 135
+    },
+    "85": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "74a69e47-d8b9-4d7b-bf86-23528786caad",
+        "target": "OWNER",
+        "offset": [
+          1.8705,
+          1.6545,
+          0
+        ],
+        "NodeID": 137
+      },
+      "UID": "f27ba60f-74af-42a4-b805-aa1a7f427c03",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 69,
+        "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -30
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 129
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 85,
+      "generateCount": 1
+    },
+    "134": {
+      "name": "getTargetOffsetPos",
+      "UID": "5171b316-5272-46f3-a428-d0e5daaab360",
+      "target": "OWNER",
+      "offset": [
+        0.6676,
+        1.0752,
+        0
+      ],
+      "NodeID": 134
+    },
+    "68": {
+      "action": {
+        "actionIds": [
+          66,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.425,
+      "NodeID": 68,
+      "UID": "ec51987a-d4d7-4bd2-8ce9-e4d489daae63"
+    },
+    "33": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "8cdfe49d-6956-4307-9b87-12803fc52bc7",
+        "target": "OWNER",
+        "offset": [
+          5.25,
+          4.25,
+          2
+        ],
+        "NodeID": 108
+      },
+      "UID": "69017b8a-653a-48f9-8eb3-f0abe3ba2786",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 46,
+        "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 17
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 33,
+      "generateCount": 1
+    },
+    "69": {
+      "refControlPos": [
+        [
+          4,
+          12.5,
+          3
+        ],
+        [
+          0,
+          10,
+          5
+        ]
+      ],
+      "refEndPos": [
+        0,
+        10,
+        10
+      ],
+      "NodeID": 69,
+      "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+      "hitActionIds": [
+        45
+      ],
+      "radius": 1,
+      "sleepTime": 1.4,
+      "refStartPos": [
+        0,
+        10,
+        0
+      ],
+      "name": "bezierProjectile",
+      "duration": 0.7
+    },
+    "3": {
+      "UID": "82441300-1338-4c21-a86e-72b3bdff14c3",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "inBackswing": 0,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "88": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "c70ea0b0-9da0-41a9-ab41-962dd6d01833",
+        "target": "OWNER",
+        "offset": [
+          3,
+          4,
+          0
+        ],
+        "NodeID": 136
+      },
+      "UID": "35bc440e-71bb-4ad0-b01c-45816981900a",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 69,
+        "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 129
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 88,
+      "generateCount": 1
+    },
+    "121": {
+      "name": "getTargetOffsetPos",
+      "UID": "d31bea37-bdfc-4770-b217-6c3b9dc64727",
+      "target": "OWNER",
+      "offset": [
+        -4.75,
+        3.75,
+        2
+      ],
+      "NodeID": 121
+    },
+    "95": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "2c8a8818-f725-4d5d-8965-85cd106d618a",
+        "target": "OWNER",
+        "offset": [
+          -2.7029,
+          5.3016,
+          0
+        ],
+        "NodeID": 139
+      },
+      "UID": "7977a24b-5f2c-425c-882e-54a8ae8dc9e2",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 91,
+        "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -15
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 132
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 95,
+      "generateCount": 1
+    },
+    "101": {
+      "name": "getTargetOffsetPos",
+      "UID": "60809f1c-15d6-48ad-9756-97c97c94ba76",
+      "target": "OWNER",
+      "offset": [
+        5,
+        4,
+        2
+      ],
+      "NodeID": 101
+    },
+    "72": {
+      "action": {
+        "actionIds": [
+          70,
+          92,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4.95,
+      "NodeID": 72,
+      "UID": "1f60033a-1310-4a56-b6f0-71c5977ea194"
+    },
+    "120": {
+      "action": {
+        "actionIds": [
+          119
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.15,
+      "NodeID": 120,
+      "UID": "bbb7b807-667c-4513-af7f-194eb73c44ad"
+    },
+    "73": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "b5ba2d27-0c7c-4cee-99d3-e53f6f055f81",
+        "target": "OWNER",
+        "offset": [
+          2.7029,
+          5.3016,
+          0
+        ],
+        "NodeID": 131
+      },
+      "UID": "5fbd8e96-0abb-4e91-9e04-9b0dc935677b",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 69,
+        "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        15
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 129
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 73,
+      "generateCount": 1
+    },
+    "116": {
+      "action": {
+        "actionIds": [
+          115
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.45,
+      "NodeID": 116,
+      "UID": "ed323104-5e90-4ebf-946d-6461f4c20c8b"
+    },
+    "92": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "8644c1f9-6ac8-42ea-95d1-0bc45ef845d0",
+        "target": "OWNER",
+        "offset": [
+          -0.6676,
+          6.9248,
+          0
+        ],
+        "NodeID": 138
+      },
+      "UID": "835927b7-6aaf-4720-aea7-db6560cfcf86",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 91,
+        "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -45
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 132
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 92,
+      "generateCount": 1
+    },
+    "113": {
+      "duration": 8.15,
+      "target": "OWNER",
+      "NodeID": 113,
+      "UID": "be33d198-6334-467f-9f43-b5f27bb56c75",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Trail_01",
+      "speed": 1,
+      "name": "playEffectStr"
+    },
+    "93": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "005f2347-bbfc-459b-a64a-8c2e148c621f",
+        "target": "OWNER",
+        "offset": [
+          -0.6676,
+          1.0752,
+          0
+        ],
+        "NodeID": 141
+      },
+      "UID": "4b8206fd-d16e-4b42-8a09-8f365ca4d8de",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 91,
+        "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        45
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 132
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 93,
+      "generateCount": 1
+    },
+    "112": {
+      "action": {
+        "actionIds": [
+          110,
+          126
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.23333,
+      "NodeID": 112,
+      "UID": "66e1b7a9-2e7b-4ed5-9035-d758466ffc83"
+    },
+    "94": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "ed695819-5fc3-4e57-a495-dd99f32dcbaa",
+        "target": "OWNER",
+        "offset": [
+          -2.7029,
+          2.6984,
+          0
+        ],
+        "NodeID": 140
+      },
+      "UID": "ceac3721-2369-4a14-aa51-58fd8b6ee424",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 91,
+        "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        15
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 132
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 94,
+      "generateCount": 1
+    },
+    "138": {
+      "name": "getTargetOffsetPos",
+      "UID": "8644c1f9-6ac8-42ea-95d1-0bc45ef845d0",
+      "target": "OWNER",
+      "offset": [
+        -0.6676,
+        6.9248,
+        0
+      ],
+      "NodeID": 138
+    },
+    "108": {
+      "name": "getTargetOffsetPos",
+      "UID": "8cdfe49d-6956-4307-9b87-12803fc52bc7",
+      "target": "OWNER",
+      "offset": [
+        5.25,
+        4.25,
+        2
+      ],
+      "NodeID": 108
+    },
+    "139": {
+      "name": "getTargetOffsetPos",
+      "UID": "2c8a8818-f725-4d5d-8965-85cd106d618a",
+      "target": "OWNER",
+      "offset": [
+        -2.7029,
+        5.3016,
+        0
+      ],
+      "NodeID": 139
+    },
+    "96": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "91c646aa-56c2-4715-b0f7-00c70b68f8e4",
+        "target": "OWNER",
+        "offset": [
+          -1.8705,
+          1.6545,
+          0
+        ],
+        "NodeID": 144
+      },
+      "UID": "65fb5cdd-1897-48fb-a449-6c586dbdedbc",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 91,
+        "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        30
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 132
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 96,
+      "generateCount": 1
+    },
+    "106": {
+      "UID": "86799b2b-89a2-4861-bcb2-c2ad3e796443",
+      "target": "TARGET",
+      "name": "lockTarget",
+      "NodeID": 106
+    },
+    "97": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "277c7c26-6856-47f9-bb94-3c7abf62e898",
+        "target": "OWNER",
+        "offset": [
+          -3,
+          4,
+          0
+        ],
+        "NodeID": 143
+      },
+      "UID": "4a4b6370-0bb7-47ea-8e7c-c49dc1e1f7de",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 91,
+        "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 132
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 97,
+      "generateCount": 1
+    },
+    "105": {
+      "name": "getTargetOffsetPos",
+      "UID": "7407e557-ebdf-473d-a558-29b11e923825",
+      "target": "OWNER",
+      "offset": [
+        -4.5,
+        3.5,
+        2
+      ],
+      "NodeID": 105
+    },
+    "98": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "c25724be-1ba7-4a43-9c82-73da89a3c465",
+        "target": "OWNER",
+        "offset": [
+          -1.8705,
+          6.3455,
+          0
+        ],
+        "NodeID": 142
+      },
+      "UID": "7065b372-c78e-4ca8-98d6-43add6574110",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 91,
+        "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -30
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "8c2f23f2-2555-446e-90bd-77424970e1d4",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 132
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 98,
+      "generateCount": 1
+    },
+    "142": {
+      "name": "getTargetOffsetPos",
+      "UID": "c25724be-1ba7-4a43-9c82-73da89a3c465",
+      "target": "OWNER",
+      "offset": [
+        -1.8705,
+        6.3455,
+        0
+      ],
+      "NodeID": 142
+    },
+    "141": {
+      "name": "getTargetOffsetPos",
+      "UID": "005f2347-bbfc-459b-a64a-8c2e148c621f",
+      "target": "OWNER",
+      "offset": [
+        -0.6676,
+        1.0752,
+        0
+      ],
+      "NodeID": 141
+    },
+    "143": {
+      "name": "getTargetOffsetPos",
+      "UID": "277c7c26-6856-47f9-bb94-3c7abf62e898",
+      "target": "OWNER",
+      "offset": [
+        -3,
+        4,
+        0
+      ],
+      "NodeID": 143
+    },
+    "91": {
+      "refControlPos": [
+        [
+          -4,
+          12.5,
+          3
+        ],
+        [
+          0,
+          10,
+          5
+        ]
+      ],
+      "refEndPos": [
+        0,
+        10,
+        10
+      ],
+      "NodeID": 91,
+      "UID": "a3ac069e-3f26-4649-baea-d66e81153d7c",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+      "hitActionIds": [
+        45
+      ],
+      "radius": 1,
+      "sleepTime": 1.4,
+      "refStartPos": [
+        0,
+        10,
+        0
+      ],
+      "name": "bezierProjectile",
+      "duration": 0.7
+    },
+    "100": {
+      "name": "getTargetOffsetPos",
+      "UID": "311a77a6-e9a8-4d88-aec2-236fb8015696",
+      "target": "OWNER",
+      "offset": [
+        -6,
+        5,
+        2
+      ],
+      "NodeID": 100
+    },
+    "99": {
+      "relation": 2,
+      "heightDown": 20,
+      "heightUp": 20,
+      "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+      "radius": 100,
+      "name": "searchEntity",
+      "NodeID": 99
+    },
+    "102": {
+      "name": "getTargetOffsetPos",
+      "UID": "5de3fd57-7201-49d2-875d-c917a3a1731c",
+      "target": "OWNER",
+      "offset": [
+        4.5,
+        3.5,
+        2
+      ],
+      "NodeID": 102
+    },
+    "130": {
+      "name": "getTargetOffsetPos",
+      "UID": "33d08646-52d5-4846-bb05-6d6190c7d054",
+      "target": "OWNER",
+      "offset": [
+        0.6676,
+        6.9248,
+        0
+      ],
+      "NodeID": 130
+    },
+    "103": {
+      "name": "getTargetOffsetPos",
+      "UID": "65935030-2d82-4542-b2be-129a77d11495",
+      "target": "OWNER",
+      "offset": [
+        -5.5,
+        4.5,
+        2
+      ],
+      "NodeID": 103
+    },
+    "18": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "c29dfe46-cc27-47ed-9ecd-a42580a00642",
+        "target": "OWNER",
+        "offset": [
+          6,
+          5,
+          2
+        ],
+        "NodeID": 42
+      },
+      "UID": "820485e2-fa31-400a-b1f2-bea82dca4882",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 46,
+        "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "799c3748-e59d-417b-b8cd-2734f9e83e37",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 17
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 18,
+      "generateCount": 1
+    },
+    "104": {
+      "name": "getTargetOffsetPos",
+      "UID": "a4553425-ec62-489f-bbb5-54db3ea6bf42",
+      "target": "OWNER",
+      "offset": [
+        -5,
+        4,
+        2
+      ],
+      "NodeID": 104
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          24,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.85,
+      "NodeID": 26,
+      "UID": "5a5d1eea-bbba-41e9-951c-da9e048da757"
+    },
+    "45": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "hitEffect": [
+          {
+            "id": "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "weaponSoundType": "blunt",
+        "hitSoundStr": "ParadoxNotion.Serialization.LUASerializer+playSoundStrActionNodeInfo",
+        "elementType": 6
+      },
+      "UID": "fc40845b-1b64-4323-a0ac-1816e8432e72",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 45
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 16,
+      "UID": "332e5661-a67a-40ab-91ab-44bb7535d39b"
+    },
+    "46": {
+      "refControlPos": [
+        [
+          4,
+          12.5,
+          3
+        ],
+        [
+          0,
+          10,
+          5
+        ]
+      ],
+      "refEndPos": [
+        0,
+        10,
+        10
+      ],
+      "NodeID": 46,
+      "UID": "74ce83c7-7e9a-45a7-b455-c24f70035da6",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+      "hitActionIds": [
+        45
+      ],
+      "radius": 1,
+      "sleepTime": 1.4,
+      "refStartPos": [
+        0,
+        10,
+        0
+      ],
+      "name": "bezierProjectile",
+      "duration": 0.7
+    },
+    "15": {
+      "UID": "ae628b97-3290-43cb-a526-0fdc8b449e0d",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 15
+    },
+    "47": {
+      "refControlPos": [
+        [
+          -4,
+          12.5,
+          3
+        ],
+        [
+          0,
+          10,
+          5
+        ]
+      ],
+      "refEndPos": [
+        0,
+        10,
+        10
+      ],
+      "NodeID": 47,
+      "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+      "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+      "hitActionIds": [
+        45
+      ],
+      "radius": 1,
+      "sleepTime": 1.4,
+      "refStartPos": [
+        0,
+        10,
+        0
+      ],
+      "name": "bezierProjectile",
+      "duration": 0.7
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 23,
+      "UID": "bbf7a856-215a-41ab-b03d-9f1ffe263846"
+    },
+    "48": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "311a77a6-e9a8-4d88-aec2-236fb8015696",
+        "target": "OWNER",
+        "offset": [
+          -6,
+          5,
+          2
+        ],
+        "NodeID": 100
+      },
+      "UID": "dd35da65-5669-4604-80aa-03ae0ffab9d5",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 47,
+        "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 99
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 48,
+      "generateCount": 1
+    },
+    "43": {
+      "name": "getTargetOffsetPos",
+      "UID": "b6b10761-113f-40b1-a25d-3a83ec215f18",
+      "target": "OWNER",
+      "offset": [
+        5.5,
+        4.5,
+        2
+      ],
+      "NodeID": 43
+    },
+    "109": {
+      "name": "getTargetOffsetPos",
+      "UID": "2b3d51fc-01d6-45c4-b237-0c88806a9314",
+      "target": "OWNER",
+      "offset": [
+        4.75,
+        3.75,
+        2
+      ],
+      "NodeID": 109
+    },
+    "70": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "33d08646-52d5-4846-bb05-6d6190c7d054",
+        "target": "OWNER",
+        "offset": [
+          0.6676,
+          6.9248,
+          0
+        ],
+        "NodeID": 130
+      },
+      "UID": "aa622347-d946-4b16-ae09-16851526c355",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 69,
+        "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        45
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 129
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 70,
+      "generateCount": 1
+    },
+    "50": {
+      "action": {
+        "actionIds": [
+          48,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.25,
+      "NodeID": 50,
+      "UID": "5f7096d7-5932-4c01-8c33-6b184f70815c"
+    },
+    "87": {
+      "action": {
+        "actionIds": [
+          85,
+          96,
+          127
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.825,
+      "NodeID": 87,
+      "UID": "2c60367f-dace-4f82-a34c-aab64bbe88a8"
+    },
+    "51": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "7407e557-ebdf-473d-a558-29b11e923825",
+        "target": "OWNER",
+        "offset": [
+          -4.5,
+          3.5,
+          2
+        ],
+        "NodeID": 105
+      },
+      "UID": "4af58aa3-16d5-436b-8024-a9a3a5fee531",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            -4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 47,
+        "UID": "e294d609-82f8-496b-972c-4e6d20e762ae",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "6b4f62b1-fde5-4d53-b6bf-5568b3ca0442",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 99
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 51,
+      "generateCount": 1
+    },
+    "82": {
+      "position": {
+        "name": "getTargetOffsetPos",
+        "UID": "ec1ea429-3037-48ee-a07c-a877cb30d4e8",
+        "target": "OWNER",
+        "offset": [
+          1.8705,
+          6.3455,
+          0
+        ],
+        "NodeID": 135
+      },
+      "UID": "91a9b7b8-d488-407f-8d1c-963ee7ca6bf7",
+      "offsetRotation": [
+        0,
+        0,
+        -20
+      ],
+      "tickInterval": 1,
+      "projectile": {
+        "refControlPos": [
+          [
+            4,
+            12.5,
+            3
+          ],
+          [
+            0,
+            10,
+            5
+          ]
+        ],
+        "refEndPos": [
+          0,
+          10,
+          10
+        ],
+        "NodeID": 69,
+        "UID": "86a0918d-4dcb-4839-8e61-78ac65159a5e",
+        "effectId": "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+        "hitActionIds": [
+          45
+        ],
+        "radius": 1,
+        "sleepTime": 1.4,
+        "refStartPos": [
+          0,
+          10,
+          0
+        ],
+        "name": "bezierProjectile",
+        "duration": 0.7
+      },
+      "startOffsetRotation": [
+        0,
+        0,
+        30
+      ],
+      "target": {
+        "relation": 2,
+        "heightDown": 20,
+        "heightUp": 20,
+        "UID": "4840b05d-4268-44c8-9e5e-9c6b2739d968",
+        "radius": 100,
+        "name": "searchEntity",
+        "NodeID": 129
+      },
+      "name": "createOffsetRotProjectiles",
+      "count": 1,
+      "NodeID": 82,
+      "generateCount": 1
+    }
+  },
+  "BPName": "ability_902131401",
+  "NodeID": 7,
+  "UID": "ea935137-216c-4679-997b-ef8eb3673834",
+  "eventIds": [
+    5,
+    13,
+    16,
+    41,
+    20,
+    32,
+    23,
+    35,
+    26,
+    38,
+    29,
+    146,
+    148,
+    150,
+    50,
+    68,
+    59,
+    65,
+    56,
+    62,
+    53,
+    72,
+    84,
+    75,
+    90,
+    78,
+    87,
+    81,
+    114,
+    112,
+    116,
+    118,
+    120
+  ],
+  "layer": "Base",
+  "length": 9
+}

@@ -1,0 +1,5768 @@
+{
+  "77114636": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1023971,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 77300028,
+    "levelItems": {
+      "77300025": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          316.75,
+          24.57,
+          49.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 77300025,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              5.24,
+              1.6,
+              4.21
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1.56,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "77302476": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          412.48,
+          16.23,
+          0.62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 77302476,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              3.17,
+              1.6,
+              4.84
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1.48
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": [
+      77114755,
+      77114805,
+      89697212,
+      89698944
+    ],
+    "sandboxType": 2,
+    "sightLevel": 256,
+    "sightLevelType": 256,
+    "spawners": [
+      89694642,
+      89738046,
+      91017637,
+      91017647,
+      91017701,
+      91017708,
+      91017735,
+      91017744,
+      91017757,
+      91017784
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_77114636_GraphRef.asset",
+    "owner": "yan.lv",
+    "position": [
+      305.08,
+      19.75,
+      36.2
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 77114636,
+    "autoEndType": 0,
+    "name": "布怪-森林遗迹"
+  },
+  "91022746": {
+    "owner": "蔡龙辉",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandboxType": 2,
+    "name": "正式翻倍符金币怪配置",
+    "spawners": [
+      91033381,
+      91033384,
+      91033388,
+      91033395,
+      91033399,
+      91033403,
+      91033408,
+      91033413
+    ],
+    "activeOnInit": 1,
+    "sightLevel": -1,
+    "id": 91022746,
+    "position": [
+      -125.64,
+      13.49,
+      -221.37
+    ]
+  },
+  "77115508": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1022944,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": [
+      77116388,
+      88617485,
+      88619500,
+      89636668
+    ],
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "布怪-伐木场",
+    "sightLevelType": 256,
+    "spawners": [
+      91017590,
+      91017596,
+      91017599,
+      91017601,
+      91017613
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      221.88,
+      30.6,
+      -148.39
+    ],
+    "poiType": 0,
+    "owner": "yan.lv",
+    "forceSync": false,
+    "id": 77115508,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "80343889": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1011682,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "码头钥匙门",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 40,
+    "position": [
+      -456.28,
+      23.49,
+      -40.51
+    ],
+    "owner": "汪岩嵩",
+    "id": 80343889,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "80353582": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1016801,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 80353932,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "神庙自爆陷阱",
+    "sightLevelType": 256,
+    "spawners": [
+      80353771
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80353582_GraphRef.asset",
+    "position": [
+      -149.46,
+      27.9,
+      -113.4
+    ],
+    "owner": "汪岩嵩",
+    "id": 80353582,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "80353813": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -149.73,
+          27.9,
+          -112.54
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 4,
+        "id": 80353813,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          5,
+          1,
+          9.01
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80353601": {
+        "majorCompId": 79795784,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB_GrabEgg",
+        "position": [
+          -149.64,
+          29.62,
+          -111.24
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 80353601,
+        "scale": [
+          10,
+          8,
+          11
+        ],
+        "componentsInfo": {
+          "79795784": {
+            "maxHitCount": 3
+          },
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 478,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80353603": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          -145.34,
+          25.9,
+          -111.79
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 80353603,
+        "serializeVersion": 3,
+        "scale": [
+          3,
+          2,
+          3
+        ],
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80353604": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence (1)",
+        "position": [
+          -153.99,
+          25.9,
+          -112.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 80353604,
+        "scale": [
+          2,
+          2,
+          3
+        ],
+        "path": "",
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80353605": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence (2)",
+        "position": [
+          -149.84,
+          25.9,
+          -106.88
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 80353605,
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "path": "",
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "79977410": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017826,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 79979341,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "神庙入口下落栅栏陷阱",
+    "sightLevelType": 256,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_79977410_GraphRef.asset",
+    "position": [
+      -92.84,
+      10.39,
+      -55.32
+    ],
+    "owner": "汪岩嵩",
+    "id": 79977410,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "79980385": {
+        "majorCompId": 79795784,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB_GrabEgg",
+        "position": [
+          -92.59,
+          12.92,
+          -56
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "serializeVersion": 3,
+        "id": 79980385,
+        "scale": [
+          5,
+          5,
+          5
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 478,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "79977902": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          -90.27,
+          12.63,
+          -55.62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 79977902,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "79977904": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence (1)",
+        "position": [
+          -92.56,
+          10.38,
+          -53.44
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 79977904,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "79979100": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -92.94,
+          10.39,
+          -57.03
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 79979100,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          2.69,
+          1,
+          2.63
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "80056490": {
+    "owner": "汪岩嵩",
+    "autoSave": true,
+    "chunk": 1016802,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 80242216,
+    "levelItems": {
+      "80231763": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "触发1",
+        "position": [
+          -162.1,
+          11.34,
+          -42.61
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80231763,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068346": {
+            "detectType": 4099
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          11,
+          1,
+          1.5
+        ],
+        "isActive": true
+      },
+      "80231516": {
+        "majorCompId": 55701939,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_FireMechanism3",
+        "position": [
+          -170.22,
+          11.46,
+          -58.58
+        ],
+        "rotation": [
+          0,
+          180,
+          90
+        ],
+        "id": 80231516,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80231762": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "触发2",
+        "position": [
+          -164.37,
+          11.34,
+          -50.64
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80231762,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068346": {
+            "detectType": 4099
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          11,
+          1,
+          1.5
+        ],
+        "isActive": true
+      },
+      "80231715": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "触发3",
+        "position": [
+          -164.37,
+          11.34,
+          -58.56
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80231715,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068346": {
+            "detectType": 4099
+          }
+        },
+        "configId": 3,
+        "scale": [
+          11,
+          1,
+          1.5
+        ],
+        "isActive": true
+      },
+      "80231505": {
+        "majorCompId": 55701939,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_FireMechanism",
+        "position": [
+          -156.03,
+          11.46,
+          -42.58
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 80231505,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80231512": {
+        "majorCompId": 55701939,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_FireMechanism4",
+        "position": [
+          -156.03,
+          11.41,
+          -64.36
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "id": 80231512,
+        "configId": 145,
+        "defaultValue": {
+          "onceSpurtTime": 10,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80231761": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "触发4",
+        "position": [
+          -162.17,
+          11.34,
+          -64.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80231761,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          },
+          "52068346": {
+            "detectType": 4099
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          11,
+          1,
+          1.5
+        ],
+        "isActive": true
+      },
+      "80231514": {
+        "majorCompId": 55701939,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_FireMechanism2",
+        "position": [
+          -170.22,
+          11.46,
+          -50.6
+        ],
+        "rotation": [
+          0,
+          180,
+          90
+        ],
+        "id": 80231514,
+        "configId": 145,
+        "defaultValue": {
+          "delaySpurtTime": 0,
+          "state": 1,
+          "onceSpurtTime": 1,
+          "spurtInterval": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "神庙一层火炎喷射宝箱",
+    "spawners": {},
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80056490_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -163.52,
+      10.41,
+      -39.68
+    ],
+    "id": 80056490,
+    "enableFinishMark": false
+  },
+  "80367136": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017825,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 90578180,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "神庙机制怪补充",
+    "sightLevelType": 256,
+    "spawners": [
+      80367139,
+      80367366,
+      80367369,
+      80367372,
+      80367377
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -119.13,
+      10.38,
+      -88.81
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80367136_GraphRef.asset",
+    "poiType": 0,
+    "owner": "汪岩嵩",
+    "id": 80367136,
+    "keepGraphOnFinished": false,
+    "levelItems": {}
+  },
+  "80372921": {
+    "sightLevel": 40,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1026016,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 80373162,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "右侧民宅陷阱",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      384.54,
+      13.42,
+      -171.99
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80372921_GraphRef.asset",
+    "poiType": 0,
+    "owner": "汪岩嵩",
+    "id": 80372921,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "80373018": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          382.68,
+          13.41,
+          -190.31
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 80373018,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          10,
+          1,
+          4
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80372923": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          380.52,
+          13.5,
+          -187.32
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 80372923,
+        "serializeVersion": 3,
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80372925": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence (1)",
+        "position": [
+          384.96,
+          13.5,
+          -187.32
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 80372925,
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "path": "",
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80372927": {
+        "majorCompId": 79795784,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB_GrabEgg",
+        "position": [
+          382.52,
+          15.95,
+          -187.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 80372927,
+        "scale": [
+          11,
+          5,
+          1
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 478,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "80116806": {
+    "areaType": 999,
+    "position": [
+      -125.84,
+      77.72,
+      -104.45
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 3001,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_地图区域划分_桩点布局",
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80116806,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "汪岩嵩",
+    "autoEndType": 0,
+    "chunk": 1017825
+  },
+  "80290250": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018848,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 80292038,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "神庙钥匙门",
+    "sightLevelType": 256,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80290250_GraphRef.asset",
+    "position": [
+      -47.1,
+      25.54,
+      -146.54
+    ],
+    "owner": "汪岩嵩",
+    "id": 80290250,
+    "keepGraphOnFinished": false,
+    "levelItems": {}
+  },
+  "80296441": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018852,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "祭坛钥匙门",
+    "sightLevelType": 256,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -35.73,
+      26.22,
+      82.61
+    ],
+    "owner": "汪岩嵩",
+    "id": 80296441,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "80373169": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1022944,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 80373170,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "伐木场陷阱补充",
+    "sightLevelType": 64,
+    "spawners": [
+      80373480,
+      80373482
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80373169_GraphRef.asset",
+    "position": [
+      221.56,
+      30.04,
+      -165.84
+    ],
+    "owner": "汪岩嵩",
+    "id": 80373169,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "80374080": {
+        "majorCompId": 79795784,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB_GrabEgg",
+        "position": [
+          220.84,
+          33.07,
+          -171.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 4,
+        "serializeVersion": 3,
+        "id": 80374080,
+        "scale": [
+          14,
+          5,
+          2
+        ],
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 478,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80373475": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          225.05,
+          30.1,
+          -171.18
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 80373475,
+        "serializeVersion": 3,
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80373476": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence (1)",
+        "position": [
+          221.28,
+          30.1,
+          -171.18
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 80373476,
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "path": "",
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80373477": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_LevelItem_Fence (2)",
+        "position": [
+          216.84,
+          30.1,
+          -171.18
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 80373477,
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "path": "",
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80373478": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          220.87,
+          31.68,
+          -177.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 80373478,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          13,
+          3,
+          8
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "80340689": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1024992,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 80340762,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "海滩二层楼钥匙门",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80340689_GraphRef.asset",
+    "position": [
+      362.64,
+      13.42,
+      -183.33
+    ],
+    "owner": "汪岩嵩",
+    "id": 80340689,
+    "keepGraphOnFinished": false,
+    "levelItems": {}
+  },
+  "80341142": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1027044,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "海滩民宅钥匙门",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 40,
+    "position": [
+      508.07,
+      13.49,
+      116.59
+    ],
+    "owner": "汪岩嵩",
+    "id": 80341142,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "80342380": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1012704,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "码头仓库钥匙门",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 40,
+    "position": [
+      -403.68,
+      17.44,
+      -159.24
+    ],
+    "owner": "汪岩嵩",
+    "id": 80342380,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "84565079": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017825,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "极巨蛋生成点",
+    "sightLevelType": 256,
+    "spawners": [
+      91021283
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 4,
+    "position": [
+      -90.22,
+      11.05,
+      -107.44
+    ],
+    "poiType": 0,
+    "owner": "姚铭明",
+    "forceSync": false,
+    "id": 84565079,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "85917778": {
+    "owner": "陈宇杰",
+    "sandboxType": 1,
+    "chunk": 1012707,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 85917778,
+    "spawners": [
+      91016430,
+      91016437,
+      91016439,
+      91016441,
+      91016444,
+      91016445,
+      91016446,
+      91016447,
+      91016448,
+      91016449,
+      91016450,
+      91016452,
+      91016453,
+      91016454,
+      91016455,
+      91016456,
+      91016457,
+      91016458,
+      91016459,
+      91016460,
+      91016461,
+      91016462,
+      91016463,
+      91016465,
+      91016466,
+      91016467,
+      91016468,
+      91016469,
+      91016470,
+      91016471,
+      91016472,
+      91260507,
+      91260637,
+      91260650,
+      91260659,
+      91260772,
+      91260843,
+      91260865,
+      91260868,
+      91260876,
+      91260904,
+      91269133,
+      91270774,
+      91270776,
+      91270780,
+      91284867
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -445,
+      10,
+      32
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "name": "区域1-LOOT-基础"
+  },
+  "85923346": {
+    "owner": "陈宇杰",
+    "sandboxType": 1,
+    "chunk": 1018852,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 85923346,
+    "spawners": [
+      91016490,
+      91016491,
+      91016494,
+      91016495,
+      91016497,
+      91016498,
+      91016499,
+      91016500,
+      91016501,
+      91016502,
+      91016503,
+      91016504,
+      91016505,
+      91016507,
+      91016508,
+      91016509,
+      91016510,
+      91016511,
+      91016513,
+      91016514,
+      91016515,
+      91016517,
+      91016518,
+      91016519,
+      91016520,
+      91016521,
+      91018589,
+      91260995,
+      91261014,
+      91261025,
+      91261029,
+      91261060,
+      91261077,
+      91261092,
+      91261094,
+      91261102,
+      91261104,
+      91261113,
+      91261115,
+      91261161,
+      91261166,
+      91269209,
+      91269280,
+      91269283,
+      91269287,
+      91269292,
+      91269294,
+      91269297,
+      91270802,
+      91270804,
+      91270811,
+      91285883
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -15,
+      10,
+      95
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "name": "区域2-LOOT-基础"
+  },
+  "85947477": {
+    "owner": "陈宇杰",
+    "sandboxType": 1,
+    "chunk": 1024996,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 85947477,
+    "spawners": [
+      91016091,
+      91016100,
+      91016107,
+      91016117,
+      91016128,
+      91016134,
+      91016184,
+      91016188,
+      91016200,
+      91016204,
+      91016219,
+      91016235,
+      91016254,
+      91260774,
+      91260775,
+      91260781,
+      91260783,
+      91260785,
+      91260790,
+      91260792,
+      91260794,
+      91260796,
+      91260798,
+      91260801,
+      91260805,
+      91260808,
+      91260814,
+      91260817,
+      91260821,
+      91270259,
+      91284872
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      365,
+      10,
+      109
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "name": "区域3-LOOT-基础"
+  },
+  "76710525": {
+    "owner": "王圣雨",
+    "autoSave": true,
+    "chunk": 1018852,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 77281862,
+    "levelItems": {
+      "79616585": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_Empty_SB (1)",
+        "position": [
+          25.3,
+          16,
+          95.36
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 79616585,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79616586": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Prefab_Container_fx (1)",
+        "position": [
+          26.58,
+          16.17,
+          95.31
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 79616586,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Levelitem_Eff_Parmon_LevelAppear_Normal_starfriut.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Levelitem_Eff_Parmon_LevelAppear_Normal_starfriut.prefab"
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80079285": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Levelitem_BrokenFloor_New",
+        "position": [
+          -64.9,
+          11.11,
+          94.45
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80079285,
+        "componentsInfo": {
+          "91136702": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80079316": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Levelitem_BrokenFloor_New (1)",
+        "position": [
+          -61.9,
+          11.11,
+          88.45
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80079316,
+        "componentsInfo": {
+          "91136702": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80079318": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Levelitem_BrokenFloor_New (2)",
+        "position": [
+          -60.65,
+          11.86,
+          82.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80079318,
+        "componentsInfo": {
+          "91136702": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80096294": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          -20.48,
+          16.01,
+          93.81
+        ],
+        "rotation": [
+          0,
+          270,
+          0
+        ],
+        "id": 80096294,
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80097322": {
+        "majorCompId": 79795784,
+        "owner": "姚铭明",
+        "EditorName": "栅栏计数器",
+        "position": [
+          -20.41,
+          17.51,
+          93.81
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80097322,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              4,
+              3,
+              1.2
+            ]
+          }
+        },
+        "configId": 478,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "80103113": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "栅栏触发器",
+        "position": [
+          -20.19,
+          16.74,
+          89.99
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 80103113,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              4,
+              1,
+              3
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "82092338": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_LevelItem_Fence",
+        "position": [
+          20.1,
+          16.25,
+          72.92
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82092338,
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1.2,
+          1.55
+        ],
+        "isActive": true
+      },
+      "82093930": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_LevelItem_Fence (1)",
+        "position": [
+          20.1,
+          16.25,
+          90.42
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82093930,
+        "configId": 156,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1.2,
+          1.55
+        ],
+        "isActive": true
+      },
+      "82094234": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          22.54,
+          16.51,
+          75.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82094234,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              1.51,
+              0,
+              -2.05
+            ],
+            "size": [
+              4.01,
+              1,
+              5.88
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "82094235": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_Trigger_SB (1)",
+        "position": [
+          22.54,
+          16.51,
+          92.09
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82094235,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              1.51,
+              0,
+              -2.05
+            ],
+            "size": [
+              4.01,
+              1,
+              5.88
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "82094236": {
+        "majorCompId": 79795784,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_Trigger_SB_GrabEgg",
+        "position": [
+          20.23,
+          16.65,
+          72.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82094236,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              0,
+              1.12,
+              0.37
+            ],
+            "size": [
+              1,
+              3.23,
+              5.73
+            ]
+          }
+        },
+        "configId": 478,
+        "defaultValue": {
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "82094616": {
+        "majorCompId": 79795784,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_Trigger_SB_GrabEgg (1)",
+        "position": [
+          20.23,
+          16.65,
+          89.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 82094616,
+        "componentsInfo": {
+          "54919957": {
+            "center": [
+              0,
+              1.12,
+              0.37
+            ],
+            "size": [
+              1,
+              3.23,
+              5.73
+            ]
+          }
+        },
+        "configId": 478,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "77282682": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -75.79,
+          16.37,
+          81.32
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 77282682,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              -6.17,
+              1.6,
+              5.09
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79366714": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Prefab_Container_fx",
+        "position": [
+          -9.9,
+          26.1,
+          70.71
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79366714,
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Levelitem_Eff_Parmon_LevelAppear_Normal_starfriut.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Levelitem_Eff_Parmon_LevelAppear_Normal_starfriut.prefab"
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "79366836": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -9.95,
+          26,
+          69.43
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 79366836,
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "刷怪-祭坛",
+    "spawners": [
+      91018075,
+      91018083,
+      91018088,
+      91018095,
+      91018099,
+      91018143,
+      91018159,
+      91018168,
+      91018204,
+      91018221,
+      91018238,
+      91018243,
+      91018248,
+      91018255,
+      91018264,
+      91018274,
+      91018279,
+      91018289,
+      91018293,
+      91018298,
+      91019720
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_76710525_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -41.4,
+      15.48,
+      68
+    ],
+    "id": 76710525,
+    "enableFinishMark": false
+  },
+  "85952449": {
+    "owner": "陈宇杰",
+    "sandboxType": 1,
+    "chunk": 1022944,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 85952449,
+    "spawners": [
+      91012515,
+      91012530,
+      91012537,
+      91012546,
+      91012552,
+      91012561,
+      91012899,
+      91012943,
+      91012976,
+      91013047,
+      91013060,
+      91013069,
+      91013087,
+      91013091,
+      91013104,
+      91013136,
+      91013137,
+      91013231,
+      91013321,
+      91013385,
+      91013393,
+      91013404,
+      91013406,
+      91013408,
+      91013420,
+      91013425,
+      91013431,
+      91013441,
+      91013581,
+      91013743,
+      91013749,
+      91013765,
+      91013816,
+      91013832,
+      91016152,
+      91016154,
+      91260873,
+      91260878,
+      91260880,
+      91260882,
+      91260884,
+      91260886,
+      91260892,
+      91270248,
+      91284874
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      220,
+      10,
+      -156
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "name": "区域4-LOOT-基础"
+  },
+  "85952809": {
+    "owner": "陈宇杰",
+    "sandboxType": 1,
+    "chunk": 1015774,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 85952809,
+    "spawners": [
+      91016175,
+      91016182,
+      91016189,
+      91016198,
+      91016212,
+      91016233,
+      91016245,
+      91016250,
+      91016255,
+      91016261,
+      91016263,
+      91016267,
+      91016270,
+      91016279,
+      91016282,
+      91016289,
+      91016293,
+      91016298,
+      91016311,
+      91016314,
+      91016320,
+      91016324,
+      91016329,
+      91016332,
+      91016335,
+      91016338,
+      91016341,
+      91016349,
+      91016352,
+      91016356,
+      91016375,
+      91016378,
+      91016384,
+      91016388,
+      91016392,
+      91016394,
+      91016396,
+      91260080,
+      91260087,
+      91270507,
+      91270526,
+      91284877
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -249,
+      9.72,
+      -285
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "name": "区域5-LOOT-基础"
+  },
+  "85954826": {
+    "owner": "姚铭明",
+    "sandboxType": 1,
+    "chunk": 1017825,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 85954826,
+    "spawners": [
+      91016644,
+      91016646,
+      91016649,
+      91016652,
+      91016660,
+      91016666,
+      91016673,
+      91016677,
+      91016683,
+      91016775,
+      91016778,
+      91016781,
+      91016783,
+      91016787,
+      91016794,
+      91016799,
+      91016802,
+      91016806,
+      91016810,
+      91016812,
+      91016814,
+      91016816,
+      91016830,
+      91016834,
+      91016851,
+      91016853,
+      91016856,
+      91016861,
+      91016901,
+      91016904,
+      91016907,
+      91016909,
+      91016911,
+      91016913,
+      91016915,
+      91016917,
+      91016920,
+      91016922,
+      91016924,
+      91016926,
+      91016928,
+      91016931,
+      91016934,
+      91024297,
+      91168922,
+      91168982,
+      91260138,
+      91260140,
+      91260142,
+      91260145,
+      91260166,
+      91260170,
+      91260172,
+      91260174,
+      91260176,
+      91260182,
+      91260184,
+      91260186,
+      91260458,
+      91260462,
+      91260464,
+      91260466,
+      91270530,
+      91270531,
+      91270533,
+      91270535,
+      91284857,
+      91284859
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -118,
+      15,
+      -105
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 0,
+    "name": "核心区-LOOT-基础"
+  },
+  "86382698": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "areaIds": [
+      86384111,
+      86387566,
+      86387708,
+      90614186
+    ],
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "祭坛分区",
+    "sightLevelType": 256,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -69.15,
+      22.16,
+      82.55
+    ],
+    "poiType": 0,
+    "owner": "姚铭明",
+    "envobjs": {},
+    "id": 86382698,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "86636178": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017825,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 256,
+    "sightLevelType": 256,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "owner": "姚铭明",
+    "position": [
+      -108.17,
+      9.67,
+      -110.5
+    ],
+    "areaIds": [
+      86637838,
+      86640580,
+      86641643,
+      90618764,
+      90619238,
+      90622734,
+      90622744,
+      90828333
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 86636178,
+    "autoEndType": 0,
+    "name": "神庙分区"
+  },
+  "86982970": {
+    "areaType": 999,
+    "chunk": 1017825,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 3001,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_地图区域划分(新)_桩点布局",
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 86982970,
+    "startVersion": "0.0",
+    "lastModifiedBy": "",
+    "spawnerId": 0,
+    "position": [
+      -125.84,
+      77.72,
+      -104.45
+    ],
+    "autoEndType": 0,
+    "owner": "蔡龙辉"
+  },
+  "90790518": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1012707,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域1地图名称",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -404.3,
+      14.25,
+      20.4
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 90790518,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90790519": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019877,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域2地图名称",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      3,
+      16.26,
+      144.3
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 90790519,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90790520": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1024996,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域3地图名称",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      363.7,
+      20.97,
+      70.3
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 90790520,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90790523": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1022944,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域4地图名称",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      221.5,
+      30.57,
+      -132.1
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 90790523,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90790525": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1014750,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域5地图名称",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -261.18,
+      15.25,
+      -291.69
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 90790525,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90790526": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1016801,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "核心区地图名称",
+    "sightLevelType": 64,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -139.8,
+      77.72,
+      -108.3
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 90790526,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90870389": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1013731,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90850839,
+      90850848,
+      90850852,
+      90850856,
+      90850858,
+      90850869,
+      90850871,
+      90850927,
+      90850937,
+      90850945,
+      90850947,
+      90850950,
+      90850957,
+      90850960,
+      90850962,
+      90850965,
+      90850999,
+      90851002,
+      90851005,
+      90851007,
+      90851009,
+      90851016,
+      90851020,
+      90851022,
+      90871028
+    ],
+    "sandboxType": 2,
+    "name": "区域1-山崖附近-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90850838,
+      90850847,
+      90850862,
+      90850868,
+      90850878,
+      90850909,
+      90850936,
+      90850952,
+      90850967,
+      90851013,
+      90851024,
+      90851030,
+      90851179
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "position": [
+      -357.3,
+      18.56,
+      15.1
+    ],
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90870389,
+    "autoEndType": 0,
+    "sightLevel": 128
+  },
+  "76710526": {
+    "owner": "王圣雨",
+    "autoSave": true,
+    "position": [
+      -320.8,
+      21.52,
+      -127.1
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "刷怪-营地",
+    "spawners": [
+      91017950,
+      91017952,
+      91017971,
+      91017982
+    ],
+    "id": 76710526,
+    "sightLevel": 256,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 1013729
+  },
+  "76710529": {
+    "owner": "王圣雨",
+    "autoSave": true,
+    "chunk": 1017825,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 77401688,
+    "levelItems": {
+      "77400762": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_TempleComponent_MachineGate_8m",
+        "position": [
+          -132.01,
+          10.28,
+          -156.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 77400762,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "77400776": {
+        "majorCompId": 44987560,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -136.53,
+          11.51,
+          -156.98
+        ],
+        "rotation": [
+          0,
+          90,
+          270
+        ],
+        "id": 77400776,
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "77400907": {
+        "majorCompId": 44987560,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -127.64,
+          11.23,
+          -155.04
+        ],
+        "rotation": [
+          0,
+          90,
+          90
+        ],
+        "id": 77400907,
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "77416335": {
+        "majorCompId": 0,
+        "owner": "yan.lv",
+        "EditorName": "P_TempleComponent_MachineGate_8m",
+        "position": [
+          -52.56,
+          25.51,
+          -125.45
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 77416335,
+        "componentsInfo": {
+          "91136686": {
+            "subCompType": "DynamicVoxelSB"
+          }
+        },
+        "configId": 196,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "77416336": {
+        "majorCompId": 44987560,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -56.99,
+          26.57,
+          -126.42
+        ],
+        "rotation": [
+          0,
+          270,
+          90
+        ],
+        "id": 77416336,
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      },
+      "77416337": {
+        "majorCompId": 44987560,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -48.11,
+          26.82,
+          -124.49
+        ],
+        "rotation": [
+          0,
+          90,
+          90
+        ],
+        "id": 77416337,
+        "configId": 1,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "刷怪-神庙",
+    "spawners": [
+      76765488,
+      76767396,
+      76903147,
+      77375503,
+      77375558,
+      91260502,
+      91260700,
+      91271782
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_76710529_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -101.35,
+      0,
+      -117.8
+    ],
+    "id": 76710529,
+    "enableFinishMark": false
+  },
+  "90871038": {
+    "sightLevel": 128,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90839713,
+      90839750,
+      90840594,
+      90840602,
+      90840615,
+      90840674,
+      90840691,
+      90840709,
+      90840737,
+      90842563,
+      90842574,
+      90842593,
+      90842608,
+      90842617,
+      90842700,
+      90842702,
+      90842710,
+      90842720,
+      90842723,
+      90842741,
+      90850620,
+      90850625,
+      90850631,
+      90850633,
+      90850636,
+      90850639,
+      90850641,
+      90850644,
+      90850646,
+      90850649,
+      90850655,
+      90850721,
+      90850723,
+      90850725
+    ],
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "区域2-遗迹侧-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90839693,
+      90839749,
+      90840611,
+      90840687,
+      90840732,
+      90842540,
+      90842603,
+      90842688,
+      90842709,
+      90842719,
+      90842746,
+      90850461,
+      90850600,
+      90850615,
+      90850619,
+      90850622,
+      90850720
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -100.2,
+      16.43,
+      86.08
+    ],
+    "poiType": 0,
+    "owner": "徐梦璇",
+    "forceSync": false,
+    "id": 90871038,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90871042": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90850526,
+      90850528,
+      90850552,
+      90850554,
+      90850556,
+      90941490,
+      90941492,
+      90941493,
+      90941494,
+      90941498,
+      90941499
+    ],
+    "sandboxType": 2,
+    "sightLevel": 128,
+    "sightLevelType": 128,
+    "spawners": [
+      90850502,
+      90850518,
+      90850525,
+      90850535,
+      90850551,
+      90850562,
+      90850574,
+      90850584,
+      90871111
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "position": [
+      61.6,
+      21.4,
+      55.6
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90871042,
+    "autoEndType": 0,
+    "name": "区域2-大树内侧-野外生态布怪"
+  },
+  "91016822": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017823,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "前人遗留的传送阵，可以从这里撤离",
+      "autoSetContent1": true,
+      "initState": 2,
+      "inactiveDesc": "前人遗留的传送台，可以从这里撤离",
+      "mapAreaId": 0,
+      "markConfigId": 1000,
+      "markContent1": 91016822,
+      "nearState": 2,
+      "openMapState": 2,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": false,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "exportOwnerInfo": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 41004,
+      "image": "$UI_Img_Map_Preview_GrabEgg_Extraction.png",
+      "SloganPlayOnce": false,
+      "POIIcon": "$UI_Img_Camp.png",
+      "title": "撤离点",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "撤离点",
+      "markType": 115,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "arriveParam": {},
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "inactiveImage": "$UI_Img_Map_Preview_GrabEgg_Extraction.png",
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "91016823": {
+        "majorCompId": 0,
+        "owner": "姚铭明",
+        "EditorName": "P_QuitArea",
+        "position": [
+          10.17,
+          15.78,
+          31.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 91016823,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 456,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": -1,
+    "sightLevelType": -1,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "owner": "姚铭明",
+    "position": [
+      10.17,
+      14.59,
+      31.68
+    ],
+    "areaIds": [
+      91016832
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 91016822,
+    "disposable": true,
+    "autoEndType": 0,
+    "name": "随机撤离点"
+  },
+  "90871104": {
+    "sightLevel": 128,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1019877,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90850442,
+      90850472,
+      90850483,
+      90850485,
+      90850491,
+      90850496,
+      90850682,
+      90850684,
+      90850694
+    ],
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "区域2-大树外侧-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90842843,
+      90850433,
+      90850467,
+      90850471,
+      90850476,
+      90850481,
+      90850676,
+      90850711
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      39.8,
+      13.75,
+      136.4
+    ],
+    "poiType": 0,
+    "owner": "徐梦璇",
+    "forceSync": false,
+    "id": 90871104,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "91011362": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 256,
+    "sightLevelType": 256,
+    "spawners": [
+      91011363,
+      91011365,
+      91011367
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "姚铭明",
+    "position": [
+      396.58,
+      12.97,
+      -51.09
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 91011362,
+    "autoEndType": 0,
+    "name": "右撤离点3"
+  },
+  "90871132": {
+    "sightLevel": 128,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1026020,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90858546,
+      90858553,
+      90858555,
+      90858557,
+      90858559,
+      90858561,
+      90858563,
+      90858567,
+      90858575,
+      90858598,
+      90858606,
+      90858612,
+      90858614,
+      90858616,
+      90858618
+    ],
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "区域3-沙滩-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90858545,
+      90858566,
+      90858583,
+      90858595,
+      90858605,
+      90858622
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      440.9,
+      13.98,
+      89.3
+    ],
+    "poiType": 0,
+    "owner": "徐梦璇",
+    "forceSync": false,
+    "id": 90871132,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "91011355": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 256,
+    "sightLevelType": 256,
+    "spawners": [
+      91011356,
+      91011358,
+      91011360
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "姚铭明",
+    "position": [
+      414.1,
+      13,
+      -101.1
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 91011355,
+    "autoEndType": 0,
+    "name": "右撤离点2"
+  },
+  "90871136": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1023973,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90858656,
+      90858682,
+      90858684,
+      90858695,
+      90858699,
+      90858746,
+      90858752,
+      90858756,
+      90858759,
+      90858764,
+      90858766,
+      90858768
+    ],
+    "sandboxType": 2,
+    "name": "区域3-山地-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90858655,
+      90858674,
+      90858694,
+      90858698,
+      90858744,
+      90858755
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "position": [
+      319.3,
+      23.94,
+      138.3
+    ],
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90871136,
+    "autoEndType": 0,
+    "sightLevel": 128
+  },
+  "91011348": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 256,
+    "sightLevelType": 256,
+    "spawners": [
+      91011349,
+      91011351,
+      91011353
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "姚铭明",
+    "position": [
+      396.7,
+      13,
+      -95.7
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 91011348,
+    "autoEndType": 0,
+    "name": "右撤离点1"
+  },
+  "90871155": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1023968,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90857626,
+      90857629,
+      90857632,
+      90857795,
+      90857803,
+      90857808,
+      90857811,
+      90857815,
+      90857817,
+      90857823,
+      90857829,
+      90857832,
+      90857834,
+      90857838,
+      90857841,
+      90857848,
+      90857852,
+      90858418,
+      90858424
+    ],
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域4-枯木区-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90857568,
+      90857592,
+      90857775,
+      90857793,
+      90857800,
+      90857806,
+      90857822,
+      90857836,
+      90857844,
+      90858416
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "position": [
+      290.16,
+      27.38,
+      -172.23
+    ],
+    "poiType": 0,
+    "owner": "徐梦璇",
+    "id": 90871155,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "91011318": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1010657,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 256,
+    "sightLevelType": 256,
+    "spawners": [
+      91011319,
+      91011321,
+      91011323
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "姚铭明",
+    "position": [
+      -576.79,
+      13,
+      -67.28
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 91011318,
+    "autoEndType": 0,
+    "name": "左撤离点3"
+  },
+  "90871157": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1021920,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90858050,
+      90858060,
+      90858063,
+      90858240,
+      90858243,
+      90858246,
+      90858248,
+      90858254,
+      90858261,
+      90858308,
+      90858314,
+      90858320,
+      90858359,
+      90858362,
+      90858363,
+      90858364,
+      90858365,
+      90858374,
+      90858376,
+      90858378,
+      90858380,
+      90858382,
+      90858386,
+      90858394,
+      90858396,
+      90858400,
+      90858402,
+      90858405,
+      90858407,
+      90858410,
+      90858436,
+      90858446,
+      90858451,
+      90858453,
+      90858464,
+      90858469,
+      90858473,
+      90858481,
+      90858487
+    ],
+    "sandboxType": 2,
+    "name": "区域4-黄树林-野外生态布怪",
+    "sightLevelType": 256,
+    "spawners": [
+      90858049,
+      90858059,
+      90858062,
+      90858238,
+      90858256,
+      90858328,
+      90858350,
+      90858433,
+      90858450,
+      90858468
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "position": [
+      131.4,
+      44.82,
+      -172.8
+    ],
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90871157,
+    "autoEndType": 0,
+    "sightLevel": 256
+  },
+  "91011285": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": 256,
+    "sightLevelType": 256,
+    "spawners": [
+      91011286,
+      91011288,
+      91011290
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "姚铭明",
+    "position": [
+      -572.77,
+      13,
+      2.29
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 91011285,
+    "autoEndType": 0,
+    "name": "左撤离点2"
+  },
+  "90871162": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1026017,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90858003,
+      90858011,
+      90858016,
+      90858019,
+      90858021,
+      90858039
+    ],
+    "sandboxType": 2,
+    "name": "区域4-沙滩-野外生态布怪",
+    "sightLevelType": 64,
+    "spawners": [
+      90857859,
+      90858023,
+      90858038
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "position": [
+      393.71,
+      16.68,
+      -121.63
+    ],
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90871162,
+    "autoEndType": 0,
+    "sightLevel": 64
+  },
+  "76757580": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018849,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {
+      "76758931": {
+        "majorCompId": 56220611,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_LevelItem_SpringBoard",
+        "position": [
+          -37.45,
+          10.27,
+          -104.11
+        ],
+        "rotation": [
+          0,
+          0,
+          3
+        ],
+        "siblingIndex": 1,
+        "id": 76758931,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "76758910": {
+            "localPosition": [
+              0,
+              1.06,
+              0
+            ],
+            "localScale": [
+              5,
+              0.45,
+              5
+            ]
+          },
+          "56220611": {
+            "leaveVelocity": 28
+          }
+        },
+        "configId": 272,
+        "scale": [
+          0.4,
+          1,
+          0.4
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "76760198": {
+        "majorCompId": 56220611,
+        "owner": "yan.lv",
+        "EditorName": "P_Item_LevelItem_SpringBoard",
+        "position": [
+          -137.11,
+          10,
+          -57.73
+        ],
+        "rotation": [
+          357,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 76760198,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "76758910": {
+            "localPosition": [
+              0,
+              1.06,
+              0
+            ],
+            "localScale": [
+              5,
+              0.45,
+              5
+            ]
+          },
+          "56220611": {
+            "leaveVelocity": 28
+          }
+        },
+        "configId": 272,
+        "scale": [
+          0.5,
+          1,
+          0.5
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "机关",
+    "sightLevelType": 256,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "position": [
+      -37.86,
+      10.88,
+      -98.25
+    ],
+    "poiType": 0,
+    "owner": "yan.lv",
+    "id": 76757580,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90871219": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017821,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90853739,
+      90853782,
+      90853783,
+      90853784,
+      90853790,
+      90853791,
+      90853796,
+      90853797,
+      90853798,
+      90853799,
+      90853929,
+      90853932,
+      90853935,
+      90854001,
+      90854004,
+      90854006,
+      90854105,
+      90854110,
+      90854115,
+      90854117,
+      90854123,
+      90854156,
+      90854161,
+      90854164,
+      90854519,
+      90854717,
+      90854827,
+      90855284,
+      90855543,
+      90855856,
+      90855887,
+      90855895,
+      90855907
+    ],
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域5-鲸骨-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90853737,
+      90853778,
+      90853788,
+      90853794,
+      90853805,
+      90853818,
+      90853881,
+      90854017,
+      90854113,
+      90854153,
+      90854160,
+      90855095,
+      90855854,
+      90855886,
+      90855900
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "position": [
+      -100.7,
+      14.12,
+      -374.9
+    ],
+    "poiType": 0,
+    "owner": "徐梦璇",
+    "id": 90871219,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76903809": {
+    "owner": "吕康杰",
+    "autoSave": true,
+    "position": [
+      -194.7,
+      12.64,
+      110.9
+    ],
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "enableFinishMark": false,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "区域2-出生点",
+    "spawners": [
+      84380411,
+      91010289,
+      91018304
+    ],
+    "id": 76903809,
+    "sightLevel": -1,
+    "markIconSpawnerId": 0,
+    "activeOnInit": 1,
+    "chunk": 0
+  },
+  "90871222": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1015774,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90851312,
+      90851314,
+      90851318,
+      90851320,
+      90851322,
+      90851327,
+      90851330,
+      90851332,
+      90851334,
+      90851338,
+      90851341,
+      90851343,
+      90851345,
+      90851357,
+      90851359,
+      90851361,
+      90851366,
+      90851776,
+      90851809,
+      90852231,
+      90852235,
+      90852244,
+      90852247,
+      90852263,
+      90852420,
+      90853479,
+      90853712,
+      90853717,
+      90853720,
+      90855938,
+      90941502
+    ],
+    "sandboxType": 2,
+    "sightLevel": 128,
+    "sightLevelType": 128,
+    "spawners": [
+      90851311,
+      90851326,
+      90851337,
+      90851340,
+      90851368,
+      90851775,
+      90852230,
+      90852240,
+      90853022,
+      90853215
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "position": [
+      -236.8,
+      14.21,
+      -304.5
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90871222,
+    "autoEndType": 0,
+    "name": "区域5-弯道沙滩-野外生态布怪"
+  },
+  "90885566": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1023967,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 90885571,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": -1,
+    "sightLevelType": -1,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_90885566_GraphRef.asset",
+    "owner": "陈宇杰",
+    "position": [
+      287.29,
+      33.75,
+      -209.25
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90885566,
+    "autoEndType": 0,
+    "name": "抢蛋帮助提示"
+  },
+  "90871223": {
+    "owner": "徐梦璇",
+    "autoSave": true,
+    "chunk": 1013728,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "区域5-星落林-野外生态布怪",
+    "spawners": [
+      90851172,
+      90851204,
+      90851208,
+      90851228,
+      90851250,
+      90851252,
+      90851258,
+      90851260,
+      90851267,
+      90851281,
+      90851288,
+      90851294,
+      90851299,
+      90855936,
+      90855948
+    ],
+    "id": 90871223,
+    "lastModifiedBy": "",
+    "sightLevel": 128,
+    "position": [
+      -350.2,
+      13.4,
+      -169.9
+    ],
+    "activeOnInit": 1
+  },
+  "80365433": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017825,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 80365525,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "神庙破碎地板",
+    "sightLevelType": 256,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 256,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_80365433_GraphRef.asset",
+    "position": [
+      -113.59,
+      25.56,
+      -104.67
+    ],
+    "owner": "汪岩嵩",
+    "id": 80365433,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "80366955": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_New (3)",
+        "position": [
+          -167.96,
+          10.08,
+          -151.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 7,
+        "serializeVersion": 3,
+        "id": 80366955,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80366863": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_Double_New (1)",
+        "position": [
+          -163.83,
+          10.08,
+          -151.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 4,
+        "serializeVersion": 3,
+        "id": 80366863,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 482,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80366953": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_New",
+        "position": [
+          -167.96,
+          10.08,
+          -147.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 6,
+        "id": 80366953,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80366867": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_Double_New (2)",
+        "position": [
+          -163.83,
+          10.08,
+          -147.48
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 5,
+        "serializeVersion": 3,
+        "id": 80366867,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 482,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80365520": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_New",
+        "position": [
+          -113.19,
+          25.21,
+          -109.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 80365520,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80365522": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_New (1)",
+        "position": [
+          -111.53,
+          25.21,
+          -105.11
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 80365522,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80365523": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_New (2)",
+        "position": [
+          -111.57,
+          25.21,
+          -101.17
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "serializeVersion": 3,
+        "id": 80365523,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "path": "",
+        "configId": 480,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "80366788": {
+        "majorCompId": 0,
+        "owner": "汪岩嵩",
+        "EditorName": "P_Levelitem_BrokenFloor_Double_New",
+        "position": [
+          -159.92,
+          10.08,
+          -151.49
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 80366788,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 482,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "76903945": {
+    "sightLevel": -1,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1027043,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "区域3-出生点",
+    "sightLevelType": -1,
+    "spawners": [
+      84381254,
+      91010705
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      503.16,
+      13.25,
+      7.5
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "forceSync": false,
+    "id": 76903945,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90871023": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1011682,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90851063,
+      90851080,
+      90851083,
+      90851085,
+      90851087,
+      90851092,
+      90851094,
+      90851096,
+      90851098,
+      90851101
+    ],
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "区域1-遗迹内测-野外生态布怪",
+    "sightLevelType": 128,
+    "spawners": [
+      90851044,
+      90851062,
+      90851066,
+      90851079,
+      90851091
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "position": [
+      -494.6,
+      13.08,
+      -36.8
+    ],
+    "poiType": 0,
+    "owner": "徐梦璇",
+    "id": 90871023,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76903946": {
+    "owner": "吕康杰",
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 77983284,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "区域4-出生点",
+    "spawners": [
+      84381592,
+      91010297,
+      91010709,
+      91010711,
+      91018408,
+      91018550,
+      91033721
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_76903946_GraphRef.asset",
+    "sightLevel": -1,
+    "position": [
+      441.9,
+      12.64,
+      -143.31
+    ],
+    "id": 76903946,
+    "enableFinishMark": false
+  },
+  "91010784": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 0,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "左撤离点1",
+    "sightLevelType": 256,
+    "spawners": [
+      91010790,
+      91011274,
+      91011276
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -564.19,
+      13,
+      -21.7
+    ],
+    "poiType": 0,
+    "owner": "姚铭明",
+    "forceSync": false,
+    "id": 91010784,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76484607": {
+    "owner": "王圣雨",
+    "autoSave": true,
+    "chunk": 1011682,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "sandBoxLevel": 0,
+    "sandboxType": 2,
+    "name": "刷怪-码头",
+    "spawners": [
+      88499801,
+      88520080,
+      88572847,
+      91017087,
+      91017137,
+      91017151,
+      91017156,
+      91017169,
+      91017175,
+      91017183,
+      91017194,
+      91017254,
+      91017330,
+      91017332,
+      91017336,
+      91017338,
+      91017341
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/3004/Sandbox_76484607_GraphRef.asset",
+    "sightLevel": 256,
+    "position": [
+      -495,
+      24.3,
+      -6.5
+    ],
+    "id": 76484607,
+    "enableFinishMark": false
+  },
+  "76903984": {
+    "sightLevel": -1,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1012703,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "区域5-出生点",
+    "sightLevelType": -1,
+    "spawners": [
+      84381974,
+      91010702
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -409.37,
+      13.48,
+      -241.57
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "forceSync": false,
+    "id": 76903984,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76710533": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1024993,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      91017585
+    ],
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "刷怪-二层民宅",
+    "sightLevelType": 256,
+    "spawners": [
+      91017566,
+      91017568,
+      91017570,
+      91017572,
+      91017575,
+      91017577,
+      91017584
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      336.7,
+      21.5,
+      -127.3
+    ],
+    "poiType": 0,
+    "owner": "王圣雨",
+    "forceSync": false,
+    "id": 76710533,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76903986": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1016799,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "核心区1登陆点",
+    "sightLevelType": 64,
+    "spawners": [
+      84653221,
+      84653223,
+      84653225,
+      84653247
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -177,
+      13.08,
+      -217.45
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 76903986,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76903897": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1010657,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "sightLevel": -1,
+    "sightLevelType": -1,
+    "spawners": [
+      84380821,
+      91010692,
+      91010695
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "owner": "吕康杰",
+    "position": [
+      -566.96,
+      12.64,
+      -74.97
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 76903897,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "巨大伊莫蛋壳制作的简易小船。\\\n在此处可以<style=Hint_BgL>提交伊莫蛋</style>和从岛内<style=Hint_BgL>撤离</style>",
+      "autoSetContent1": true,
+      "initState": 2,
+      "inactiveDesc": "巨大伊莫蛋壳制作的简易小船。\\\n在此处可以<style=Hint_BgL>提交伊莫蛋</style>和从岛内<style=Hint_BgL>撤离</style>",
+      "inactiveImage": "$UI_Img_Map_Preview_GrabEgg_EggBoat.png",
+      "markConfigId": 1007,
+      "markContent1": 76903897,
+      "nearState": 2,
+      "openMapState": 2,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": false,
+      "scale1": 1,
+      "scale2": 1,
+      "scale3": 1,
+      "exportOwnerInfo": false,
+      "positionParam": [
+        0,
+        0
+      ],
+      "largeAreaId": 41003,
+      "image": "$UI_Img_Map_Preview_GrabEgg_EggBoat.png",
+      "SloganPlayOnce": false,
+      "showPortalOffset": false,
+      "POIIcon": "$UI_Img_Monster_Unknown.png",
+      "title": "蛋船",
+      "POIOrNot": false,
+      "yaw": 0,
+      "mapAreaId": 0,
+      "entityStaticIdType": 0,
+      "inactiveTitle": "蛋船",
+      "arriveType": 1,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "hudShowDistance": [
+        1,
+        30
+      ],
+      "affiliatedCamp": {},
+      "arriveParam": {},
+      "markType": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "autoEndType": 0,
+    "name": "区域1-出生点"
+  },
+  "76904063": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018847,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "核心区2登陆点",
+    "sightLevelType": 64,
+    "spawners": [
+      84745702,
+      84747081,
+      84747084,
+      84747086
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -17.77,
+      12.73,
+      -215.1
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 76904063,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76710534": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1027043,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "刷怪-民宅群",
+    "sightLevelType": 256,
+    "spawners": [
+      91017481,
+      91017483,
+      91017488,
+      91017491,
+      91017499
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      454.3,
+      23.73,
+      34.7
+    ],
+    "poiType": 0,
+    "owner": "王圣雨",
+    "forceSync": false,
+    "id": 76710534,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76904065": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018849,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "核心区3登陆点",
+    "sightLevelType": 64,
+    "spawners": [
+      84747096,
+      84747098,
+      84747100,
+      84747102
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -0.96,
+      12.82,
+      -73.95
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 76904065,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "77123656": {
+    "sightLevel": 128,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017820,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "布怪-海岛",
+    "sightLevelType": 128,
+    "spawners": [
+      91018157
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -96.12,
+      14.23,
+      -407.08
+    ],
+    "poiType": 0,
+    "owner": "yan.lv",
+    "forceSync": false,
+    "id": 77123656,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "76904084": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1017826,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "核心区4登陆点",
+    "sightLevelType": 64,
+    "spawners": [
+      84747742,
+      84747863,
+      84747865,
+      84747985
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -88.11,
+      13.11,
+      -11.67
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 76904084,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "90870395": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1012708,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      90850830,
+      90850832,
+      90850842,
+      90850845,
+      90850875,
+      90850887,
+      90850894,
+      90851105,
+      90851108,
+      90851111,
+      90851113,
+      90851115,
+      90851156
+    ],
+    "sandboxType": 2,
+    "sightLevel": 128,
+    "sightLevelType": 128,
+    "spawners": [
+      90850824,
+      90850829,
+      90850841,
+      90850873,
+      90850886,
+      90851104,
+      90851107,
+      90851117,
+      90851151,
+      90851155,
+      90851184
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "position": [
+      -444.9,
+      15.56,
+      82.3
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 90870395,
+    "autoEndType": 0,
+    "name": "区域1-遗迹附近-野外生态布怪"
+  },
+  "76904085": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1015778,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 2,
+    "name": "核心区5登陆点",
+    "sightLevelType": 64,
+    "spawners": [
+      84748847,
+      84749487,
+      84749813,
+      84750032
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 40,
+    "position": [
+      -204.24,
+      12.79,
+      -6.97
+    ],
+    "poiType": 0,
+    "owner": "吕康杰",
+    "id": 76904085,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  },
+  "77118011": {
+    "sightLevel": 256,
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1016800,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "startVersion": "0.0",
+    "envobjs": {},
+    "graphId": 0,
+    "levelItems": {},
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "difficultyLevel": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "spawnerId": 0,
+    "sandboxType": 2,
+    "name": "布怪-神庙",
+    "sightLevelType": 256,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -155.86,
+      10.6,
+      -185.86
+    ],
+    "poiType": 0,
+    "owner": "yan.lv",
+    "forceSync": false,
+    "id": 77118011,
+    "keepGraphOnFinished": false,
+    "autoEndType": 0
+  }
+}

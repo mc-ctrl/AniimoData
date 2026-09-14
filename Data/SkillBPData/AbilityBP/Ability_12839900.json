@@ -1,0 +1,43 @@
+{
+  "cutSceneDuration": 2.26,
+  "preloadCutScenes": [
+    "$Parmon_10283_Skill_Ex_Timeline.prefab"
+  ],
+  "UID": "040a3163-8816-4fef-915a-d12ff5a6e3c8",
+  "abilityParamId": 10500350,
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12839900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a6dad859-cee3-46f0-8d18-fa52a08a3a24",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 20,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10283_OutEx_Punch_01",
+    "Eff_Parmon_10283_OutEx_Boom_02",
+    "Eff_Parmon_10283_OutEx_Fly_01",
+    "Eff_Parmon_10283_OutEx_Boom_01"
+  ],
+  "searchRelation": 2,
+  "name": "火花",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "火花",
+  "searchTargetRangeDown": 0.5,
+  "desc": "",
+  "BPName": "ability_12839900",
+  "NodeID": 1
+}

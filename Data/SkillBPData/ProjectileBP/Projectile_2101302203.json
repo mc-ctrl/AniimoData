@@ -1,0 +1,46 @@
+{
+  "duration": 2,
+  "BPName": "timeline_2101302",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Skill_Money_Equip_Bullet_Boss",
+  "gravityRatio": 3,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 4,
+  "onProjectileFinishIds": [
+    25
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "acceleration": 0,
+  "nodeMap": {
+    "25": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "5daf9cd8-f813-4e7f-bc8b-8d2be3b8cd80",
+      "effectId": "Eff_Buff_Rogue_Skill_Money_Equip_Bullet_Hit_Boss",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "48": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "68bd3f50-6628-4a44-b32c-df63142e07c4",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10012_Skill_CoinBullet_Fire",
+      "NodeID": 48
+    }
+  },
+  "onProjectileStartIds": [
+    48
+  ]
+}

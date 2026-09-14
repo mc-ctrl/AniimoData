@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_902070103",
+  "NodeID": 1,
+  "UID": "4490a65a-f1f3-4f83-b7e9-e0e3a8fd1e03",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "13": {
+      "timelineId": 902070103001,
+      "name": "setCombatActionTimeline",
+      "UID": "d0734830-ff4a-42f9-ae65-0a58b9dae76a",
+      "target": "CASTER",
+      "NodeID": 13
+    }
+  },
+  "onAbilityCastIds": [
+    13
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MedBlast"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90207_MedBlast_Attack",
+    "Eff_Monster_90207_Skill_MedBlast_Explosion1s",
+    "Eff_Monster_90207_Skill_MedBlast_creation1s"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 10800163,
+  "name": ""
+}

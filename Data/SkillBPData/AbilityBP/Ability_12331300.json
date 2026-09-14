@@ -1,0 +1,37 @@
+{
+  "BPName": "ability_12331300",
+  "NodeID": 1,
+  "UID": "b3fcd902-c03a-498b-b2dd-3f61333fc5e8",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 12331300001,
+      "name": "setCombatActionTimeline",
+      "UID": "b3a1482b-106d-4ffa-9bd2-981912b9955d",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Dance"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10233_Mon_Skill_WingScales",
+    "Eff_Parmon_10233_Mon_Skill_WingScales02",
+    "Eff_Hit_Psychic_Blunt"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 40900002,
+  "name": ""
+}

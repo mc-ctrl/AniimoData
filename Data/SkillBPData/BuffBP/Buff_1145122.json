@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145122",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "73ae3018-eeb4-4121-98a4-b0d33fd58a87",
+      "effectId": "Eff_Yuanwei_KeyItem_Green_Loop",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7f86f8cd-9272-4da9-bbf9-4a47b76118ce",
+      "effectId": "Eff_Yuanwei_KeyItem_Green_End",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "a64e4a4d-1809-4aff-b3c9-34b183eccbe3",
+      "effectId": "Eff_Yuanwei_KeyItem_Green_Loop",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    3,
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

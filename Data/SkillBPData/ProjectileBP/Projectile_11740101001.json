@@ -1,0 +1,117 @@
+{
+  "duration": 10,
+  "calcResultNodeId": 81,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10174_Skill_Pressurizing_Ballistics",
+  "ignoreActorCollision": true,
+  "onProjectileGroundedIds": [
+    79,
+    77,
+    32,
+    91
+  ],
+  "gravityRatio": 0,
+  "kind": "Free3d",
+  "nodeMap": {
+    "77": {
+      "cameraShakeId": 20101,
+      "checkCasterIsPlayer": false,
+      "UID": "09e33f06-f28f-4545-842a-d6e6485e0db6",
+      "target": "OWNER",
+      "name": "playCameraImpulseById",
+      "NodeID": 77
+    },
+    "81": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 5001
+      },
+      "UID": "fd5ac623-8fc9-40a2-8776-3b53c60d3002",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 81
+    },
+    "32": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4e6a389b-613a-456c-8531-3eae25460765",
+      "effectId": "Eff_Parmon_10174_Skill_Pressurizing_4",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "79": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 81,
+      "NodeID": 79,
+      "UID": "f20306ed-c8bf-47a0-9a8e-9a87774c646a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.65,
+            1.6,
+            1.6
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5001,
+      "actionIds": [
+        81
+      ]
+    },
+    "91": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3931c69e-4a4a-430b-ade2-233a360bf24c",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_Dramotter_skill_pressurizing_boom",
+      "NodeID": 91
+    }
+  },
+  "moveSpeed": 60,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "BPName": "ability_11740101",
+  "startSleepTime": 0,
+  "maxHitNum": 99,
+  "defaultHitSoundType": "h",
+  "impulseId": 5001,
+  "acceleration": 0
+}

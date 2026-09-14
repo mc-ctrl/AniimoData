@@ -1,0 +1,433 @@
+[
+  {
+    "controlLevel": 15,
+    "catchLevel": 15
+  },
+  {
+    "rewardManual": 20002,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 200
+  },
+  {
+    "rewardManual": 20003,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 225
+  },
+  {
+    "rewardManual": 20004,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 250
+  },
+  {
+    "rewardManual": 20005,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 275
+  },
+  {
+    "rewardManual": 20006,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 300
+  },
+  {
+    "rewardManual": 20007,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 325
+  },
+  {
+    "rewardManual": 20008,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 350
+  },
+  {
+    "rewardManual": 20009,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 375
+  },
+  {
+    "rewardManual": 20010,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 400
+  },
+  {
+    "rewardManual": 20011,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 425
+  },
+  {
+    "rewardManual": 20012,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 450
+  },
+  {
+    "rewardManual": 20013,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 475
+  },
+  {
+    "rewardManual": 20014,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 500
+  },
+  {
+    "rewardManual": 20015,
+    "catchLevel": 15,
+    "controlLevel": 15,
+    "needExp": 525
+  },
+  {
+    "rewardManual": 20016,
+    "catchLevel": 16,
+    "controlLevel": 16,
+    "needExp": 550
+  },
+  {
+    "rewardManual": 20017,
+    "catchLevel": 17,
+    "controlLevel": 17,
+    "needExp": 575
+  },
+  {
+    "rewardManual": 20018,
+    "catchLevel": 18,
+    "controlLevel": 18,
+    "needExp": 600
+  },
+  {
+    "rewardManual": 20019,
+    "catchLevel": 19,
+    "controlLevel": 19,
+    "needExp": 625
+  },
+  {
+    "rewardManual": 20020,
+    "catchLevel": 20,
+    "controlLevel": 20,
+    "needExp": 650
+  },
+  {
+    "rewardManual": 20021,
+    "catchLevel": 21,
+    "controlLevel": 21,
+    "needExp": 700
+  },
+  {
+    "rewardManual": 20022,
+    "catchLevel": 22,
+    "controlLevel": 22,
+    "needExp": 750
+  },
+  {
+    "rewardManual": 20023,
+    "catchLevel": 23,
+    "controlLevel": 23,
+    "needExp": 800
+  },
+  {
+    "rewardManual": 20024,
+    "catchLevel": 24,
+    "controlLevel": 24,
+    "needExp": 850
+  },
+  {
+    "catchLevel": 25,
+    "controlLevel": 25,
+    "needExp": 900,
+    "needTitle": 3,
+    "rewardManual": 20025
+  },
+  {
+    "rewardManual": 20026,
+    "catchLevel": 26,
+    "controlLevel": 26,
+    "needExp": 1000
+  },
+  {
+    "rewardManual": 20027,
+    "catchLevel": 27,
+    "controlLevel": 27,
+    "needExp": 1100
+  },
+  {
+    "rewardManual": 20028,
+    "catchLevel": 28,
+    "controlLevel": 28,
+    "needExp": 1200
+  },
+  {
+    "rewardManual": 20029,
+    "catchLevel": 29,
+    "controlLevel": 29,
+    "needExp": 1300
+  },
+  {
+    "rewardManual": 20030,
+    "catchLevel": 30,
+    "controlLevel": 30,
+    "needExp": 1400
+  },
+  {
+    "rewardManual": 20031,
+    "catchLevel": 31,
+    "controlLevel": 31,
+    "needExp": 1700
+  },
+  {
+    "rewardManual": 20032,
+    "catchLevel": 32,
+    "controlLevel": 32,
+    "needExp": 2000
+  },
+  {
+    "rewardManual": 20033,
+    "catchLevel": 33,
+    "controlLevel": 33,
+    "needExp": 2300
+  },
+  {
+    "rewardManual": 20034,
+    "catchLevel": 34,
+    "controlLevel": 34,
+    "needExp": 2600
+  },
+  {
+    "catchLevel": 35,
+    "controlLevel": 35,
+    "needExp": 2900,
+    "needTitle": 4,
+    "rewardManual": 20035
+  },
+  {
+    "rewardManual": 20036,
+    "catchLevel": 36,
+    "controlLevel": 36,
+    "needExp": 3500
+  },
+  {
+    "rewardManual": 20037,
+    "catchLevel": 37,
+    "controlLevel": 37,
+    "needExp": 4000
+  },
+  {
+    "rewardManual": 20038,
+    "catchLevel": 38,
+    "controlLevel": 38,
+    "needExp": 4500
+  },
+  {
+    "rewardManual": 20039,
+    "catchLevel": 39,
+    "controlLevel": 39,
+    "needExp": 5000
+  },
+  {
+    "catchLevel": 40,
+    "controlLevel": 40,
+    "needExp": 5500,
+    "needTitle": 5,
+    "rewardManual": 20040
+  },
+  {
+    "rewardManual": 20041,
+    "catchLevel": 41,
+    "controlLevel": 41,
+    "needExp": 6000
+  },
+  {
+    "rewardManual": 20042,
+    "catchLevel": 42,
+    "controlLevel": 42,
+    "needExp": 6500
+  },
+  {
+    "rewardManual": 20043,
+    "catchLevel": 43,
+    "controlLevel": 43,
+    "needExp": 7000
+  },
+  {
+    "rewardManual": 20044,
+    "catchLevel": 44,
+    "controlLevel": 44,
+    "needExp": 7500
+  },
+  {
+    "catchLevel": 45,
+    "controlLevel": 45,
+    "needExp": 8000,
+    "needTitle": 6,
+    "rewardManual": 20045
+  },
+  {
+    "rewardManual": 20046,
+    "catchLevel": 46,
+    "controlLevel": 46,
+    "needExp": 8400
+  },
+  {
+    "rewardManual": 20047,
+    "catchLevel": 47,
+    "controlLevel": 47,
+    "needExp": 8800
+  },
+  {
+    "rewardManual": 20048,
+    "catchLevel": 48,
+    "controlLevel": 48,
+    "needExp": 9200
+  },
+  {
+    "rewardManual": 20049,
+    "catchLevel": 49,
+    "controlLevel": 49,
+    "needExp": 9600
+  },
+  {
+    "catchLevel": 50,
+    "controlLevel": 50,
+    "needExp": 10000,
+    "needTitle": 7,
+    "rewardManual": 20050
+  },
+  {
+    "rewardManual": 20051,
+    "catchLevel": 51,
+    "controlLevel": 51,
+    "needExp": 10500
+  },
+  {
+    "rewardManual": 20052,
+    "catchLevel": 52,
+    "controlLevel": 52,
+    "needExp": 11000
+  },
+  {
+    "rewardManual": 20053,
+    "catchLevel": 53,
+    "controlLevel": 53,
+    "needExp": 11500
+  },
+  {
+    "rewardManual": 20054,
+    "catchLevel": 54,
+    "controlLevel": 54,
+    "needExp": 12000
+  },
+  {
+    "catchLevel": 55,
+    "controlLevel": 55,
+    "needExp": 12500,
+    "needTitle": 8,
+    "rewardManual": 20055
+  },
+  {
+    "rewardManual": 20056,
+    "catchLevel": 56,
+    "controlLevel": 56,
+    "needExp": 13500
+  },
+  {
+    "rewardManual": 20057,
+    "catchLevel": 57,
+    "controlLevel": 57,
+    "needExp": 14500
+  },
+  {
+    "rewardManual": 20058,
+    "catchLevel": 58,
+    "controlLevel": 58,
+    "needExp": 15500
+  },
+  {
+    "rewardManual": 20059,
+    "catchLevel": 59,
+    "controlLevel": 59,
+    "needExp": 16500
+  },
+  {
+    "rewardManual": 20060,
+    "catchLevel": 60,
+    "controlLevel": 60,
+    "needExp": 17500
+  },
+  {
+    "rewardManual": 20061,
+    "catchLevel": 61,
+    "controlLevel": 61,
+    "needExp": 30000
+  },
+  {
+    "rewardManual": 20062,
+    "catchLevel": 62,
+    "controlLevel": 62,
+    "needExp": 42500
+  },
+  {
+    "rewardManual": 20063,
+    "catchLevel": 63,
+    "controlLevel": 63,
+    "needExp": 55000
+  },
+  {
+    "rewardManual": 20064,
+    "catchLevel": 64,
+    "controlLevel": 64,
+    "needExp": 67500
+  },
+  {
+    "catchLevel": 65,
+    "controlLevel": 65,
+    "needExp": 80000,
+    "needTitle": 9,
+    "rewardManual": 20065
+  },
+  {
+    "rewardManual": 20066,
+    "catchLevel": 66,
+    "controlLevel": 66,
+    "needExp": 105000
+  },
+  {
+    "rewardManual": 20067,
+    "catchLevel": 67,
+    "controlLevel": 67,
+    "needExp": 130000
+  },
+  {
+    "rewardManual": 20068,
+    "catchLevel": 68,
+    "controlLevel": 68,
+    "needExp": 155000
+  },
+  {
+    "rewardManual": 20069,
+    "catchLevel": 69,
+    "controlLevel": 69,
+    "needExp": 180000
+  },
+  {
+    "rewardManual": 20070,
+    "catchLevel": 70,
+    "controlLevel": 70,
+    "needExp": 205000
+  },
+  {
+    "rewardManual": 20070,
+    "catchLevel": 71,
+    "controlLevel": 71,
+    "needExp": 99999999
+  }
+]

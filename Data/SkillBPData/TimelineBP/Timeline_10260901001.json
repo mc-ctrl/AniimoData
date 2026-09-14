@@ -1,0 +1,414 @@
+{
+  "nodeMap": {
+    "63": {
+      "UID": "5a82e98e-f761-4b91-add5-917024647dcd",
+      "name": "triggerAbilityDelayEnterCd",
+      "NodeID": 63
+    },
+    "41": {
+      "UID": "86a5ef90-b02b-4ff6-8977-5980e5d7c22f",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          40
+        ]
+      },
+      "NodeID": 41
+    },
+    "64": {
+      "UID": "7a487237-d93b-454c-a720-e957acf6fe9f",
+      "name": "triggerAbilityDelayEnterCd",
+      "NodeID": 64
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f3d881a6-b8c9-4c38-a85c-9ae45c0b723b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Success_Hit",
+      "NodeID": 44
+    },
+    "66": {
+      "NodeID": 66,
+      "UID": "9eb1f9ca-4be2-4956-b941-db69a6aefae8",
+      "blendTime": 0.4,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1.2,
+      "cameraYawOffset": 0,
+      "maxPitch": 60,
+      "shoulderX": 1.1,
+      "shoulderY": 0,
+      "shoulderZ": -1.2,
+      "name": "setIsInAim",
+      "aimAnim": "",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": true,
+      "minPitch": -60,
+      "showAimUI": true,
+      "val": false,
+      "targetAimLength": 2.5
+    },
+    "67": {
+      "UID": "de82ebba-f405-4786-9538-3e94af1d0440",
+      "name": "notifyTransitionToHookStart",
+      "NodeID": 67
+    },
+    "3": {
+      "UID": "b3a08477-2037-4e65-bd75-99fd0444b4e1",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "23bc8e72-c598-4ecb-ae47-ef57181a4d2e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "65": {
+      "isNot": false,
+      "stateName": "HOOKFAILEND",
+      "isParentState": false,
+      "NodeID": 65,
+      "UID": "d2aa539a-7673-43ce-9ec7-d5843bf15d88",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "40": {
+      "NodeID": 40,
+      "UID": "53f96524-547d-4113-be83-69a1aab25925",
+      "blendTime": 0.4,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1.2,
+      "cameraYawOffset": 0,
+      "maxPitch": 60,
+      "shoulderX": 1.1,
+      "shoulderY": 0,
+      "shoulderZ": -1.2,
+      "name": "setIsInAim",
+      "aimAnim": "",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": true,
+      "minPitch": -60,
+      "showAimUI": true,
+      "val": false,
+      "targetAimLength": 2.5
+    },
+    "34": {
+      "NodeID": 34,
+      "UID": "e63e82c2-24a1-4bf9-b9d0-9f96ff3c78f9",
+      "blendTime": 0.4,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1.2,
+      "cameraYawOffset": 0,
+      "maxPitch": 60,
+      "shoulderX": 1.1,
+      "shoulderY": 0,
+      "shoulderZ": -1.2,
+      "name": "setIsInAim",
+      "aimAnim": "",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": true,
+      "minPitch": -60,
+      "showAimUI": true,
+      "val": true,
+      "targetAimLength": 2.5
+    },
+    "54": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3f018587-244f-4e0a-9313-7d93770ac1ea",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Fail_Back",
+      "NodeID": 54
+    },
+    "32": {
+      "UID": "2d49ab28-ce55-44ba-92af-c8b8a92a71fe",
+      "name": "getHookSprintHitPos",
+      "NodeID": 32
+    },
+    "51": {
+      "key": "shoot",
+      "duration": 0.4,
+      "actionIds": [
+        50
+      ],
+      "NodeID": 51,
+      "UID": "c1036fb8-619a-4513-a6fe-f4d7b6151d56",
+      "name": "addTimer"
+    },
+    "29": {
+      "UID": "d24a5e09-45a9-451e-b7c9-a5cadd77739d",
+      "target": "CASTER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 29
+    },
+    "21": {
+      "timelineId": 10260901002,
+      "name": "jumpToNextTimeline",
+      "UID": "89d38da7-ab6b-4292-8307-c9016376c9b8",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "27": {
+      "duration": 3,
+      "name": "playFovCameraAnim",
+      "UID": "ae9dfb7d-e7ad-4616-a0ea-4a5de1fdb4a5",
+      "blendInTime": 0.35,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CommonFOV_Far",
+      "target": "CASTER",
+      "blendOutTime": 0.2,
+      "NodeID": 27
+    },
+    "11": {
+      "key": "backswing",
+      "duration": 1,
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11,
+      "UID": "adb8b76c-01cd-4cd0-a5c4-9ce8be644676",
+      "name": "addTimer"
+    },
+    "16": {
+      "UID": "a07a0186-4eea-4f5e-877a-37370e2302d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          49
+        ]
+      },
+      "NodeID": 16
+    },
+    "12": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        65
+      ],
+      "UID": "847c757e-4dd9-4373-98b1-031e0e9c7279",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    },
+    "48": {
+      "actionIds": [
+        47
+      ],
+      "name": "registerPawnMovedDistanceReachThresholdEvent",
+      "UID": "6c943b50-203f-4d82-a7f2-e5ad685a339a",
+      "threshold": 20,
+      "onlyConsiderXZ": false,
+      "NodeID": 48
+    },
+    "49": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "db231205-10b6-406c-b12a-9d34e1978b2c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Start",
+      "NodeID": 49
+    },
+    "24": {
+      "chargeTimeActions": [
+        {
+          "actionIds": [
+            21
+          ],
+          "chargeTime": 0
+        },
+        {
+          "actionIds": [
+            51,
+            67
+          ],
+          "chargeTime": 0.2
+        }
+      ],
+      "minChargeTime": 0,
+      "NodeID": 24,
+      "UID": "6b08ca57-871b-44df-9cab-ba6e6ecc8c4b",
+      "name": "registerStopChargeEvent"
+    },
+    "14": {
+      "allowAutoLockAsTarget": true,
+      "UID": "6e694dff-b16c-4b24-ba4d-66d19ca8ac27",
+      "deformableRootName": "Bip001 R Forearm",
+      "emitAcceleration": -20,
+      "emitDuration": 0.8,
+      "emitVelocity": 40,
+      "emitVelocityMax": 40,
+      "emitVelocityMin": 20,
+      "fixedLengthRootName": "Bip001 R UpperArm",
+      "hookEndTrigger": [
+        12,
+        29,
+        61
+      ],
+      "hookExitTrigger": [
+        30
+      ],
+      "hookFailRecoverDuration": 0.5,
+      "hookFailTrigger": [
+        54,
+        58,
+        63
+      ],
+      "hookSuccessTrigger": [
+        33,
+        27,
+        44,
+        60,
+        48,
+        64,
+        66
+      ],
+      "sprintAcceleration": -10,
+      "sprintOffset": 3,
+      "name": "hookSprint",
+      "sprintVelocityMax": 30,
+      "sprintVelocityMin": 20,
+      "tipName": "Bip001 R Hand",
+      "weaponRootName": "Bone R Weapon",
+      "weaponTipName": "VFXpoint_zhuaquguadian",
+      "sprintVelocity": 30,
+      "allowForceLockAsTarget": true,
+      "NodeID": 14
+    },
+    "56": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "01015310-237e-48eb-a3f9-50114287feef",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Fail_End",
+      "NodeID": 56
+    },
+    "10": {
+      "UID": "e663af42-eb7d-4f56-a16e-b208a9f7e1ea",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 10
+    },
+    "47": {
+      "petTarget": "OWNER",
+      "triggerId": 1002601,
+      "name": "onEntityTrigger",
+      "UID": "150fcbd6-0b93-4bf2-b176-debfc01c092d",
+      "target": "OWNER",
+      "NodeID": 47
+    },
+    "26": {
+      "UID": "6e95691a-2e15-462f-921b-0a2a80513337",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "NodeID": 26
+    },
+    "58": {
+      "key": "end",
+      "duration": 0.5,
+      "actionIds": [
+        56,
+        66
+      ],
+      "NodeID": 58,
+      "UID": "83839cb6-e5d8-476e-9092-68bf909ad5ab",
+      "name": "addTimer"
+    },
+    "50": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5983b46b-8a41-445d-a5e1-f73cd4906904",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Shoot",
+      "NodeID": 50
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2f27da73-b272-48b0-8bab-7fefc2e10ae8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Success_End",
+      "NodeID": 59
+    },
+    "30": {
+      "name": "enableBoneScaleActive",
+      "NodeID": 30,
+      "UID": "709be8bf-a070-44d1-a62b-3b01af740a71",
+      "target": "OWNER",
+      "enable": false,
+      "boneName": "Bone R Weapon A"
+    },
+    "60": {
+      "key": "fly",
+      "duration": 0.2,
+      "actionIds": [
+        59
+      ],
+      "NodeID": 60,
+      "UID": "907a5dfb-5668-4fe1-b2f5-8f305ba89ef5",
+      "name": "addTimer"
+    },
+    "33": {
+      "pos": {
+        "UID": "2d49ab28-ce55-44ba-92af-c8b8a92a71fe",
+        "name": "getHookSprintHitPos",
+        "NodeID": 32
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a68e8921-64ce-40df-a400-2173691cd0cb",
+      "effectId": "Eff_Parmon_10026_Skill_GrapplingHook_Hit",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "61": {
+      "name": "stopSoundStr",
+      "UID": "032eb044-c3de-4428-ab10-e3cbe759c004",
+      "soundId": "SFX_Combat_Parmon_10026_Skill_GrapplingHook_Success_End",
+      "target": "OWNER",
+      "NodeID": 61
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 36,
+      "UID": "00077167-44ea-4666-bde2-d6179ccdea50"
+    }
+  },
+  "BPName": "ability_10260901",
+  "NodeID": 6,
+  "UID": "0c485358-2f88-4133-92d9-ddad1b38674a",
+  "eventIds": [
+    4,
+    16,
+    26,
+    36,
+    41
+  ],
+  "layer": "Base",
+  "length": 9999
+}

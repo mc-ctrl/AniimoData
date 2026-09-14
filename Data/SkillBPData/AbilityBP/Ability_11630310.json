@@ -1,0 +1,63 @@
+{
+  "stopBurrowActOnTgtNodeId": 0,
+  "stopBurrowTimelineId": 11630310001,
+  "BPName": "ability_11630310",
+  "NodeID": 1,
+  "UID": "70f6ee68-2ff5-45b9-83fc-bb0a3e44994b",
+  "abilityIndicator": 1,
+  "abilityParamId": 10200130,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11630310001,
+      "name": "setCombatActionTimeline",
+      "UID": "54101fa9-9e49-4f12-a7a6-d487bdaa64b6",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 6,
+  "preloadAnims": [
+    "Skill_SpikeAttack",
+    "Skill_SpikeAttack_BurrowState"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10163_Skill_RollingRock_Ice_S",
+    "Eff_Hit_Ice_Blunt_Big",
+    "Eff_Parmon_10161_Skill_SpikeAttack_BurrowState_ICE",
+    "Eff_Parmon_10163_Skill_SpikeAttack_Prepare_L",
+    "Eff_Parmon_10163_Skill_SpikeAttack_Prepare_R"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 1,
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 5,
+  "selectPosTarget": {
+    "offsetXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeArgs": [
+      6,
+      35,
+      1,
+      0.5
+    ],
+    "shapeKind": "Sector3D",
+    "relation": 2,
+    "offsetRotation": [
+      0,
+      0,
+      0
+    ],
+    "center": "OWNER",
+    "maxNum": 0
+  }
+}

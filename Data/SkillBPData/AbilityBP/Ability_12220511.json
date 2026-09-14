@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_12220511",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "冲！",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12220511001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Backstab"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10222_Skill_Backstab_Start",
+    "Eff_Parmon_10222_Skill_Backstab_Disappear",
+    "Eff_Parmon_10222_Skill_Backstab_Appear",
+    "Eff_Parmon_10222_Skill_Backstab_Attack",
+    "Eff_Hit_Electric_Blunt_Big"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10400263
+}

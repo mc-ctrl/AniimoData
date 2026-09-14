@@ -1,0 +1,167 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9139303",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "d9d3a2cf-abbc-40b1-b33f-0f5fb0c6c834",
+      "to": 13910110,
+      "NodeID": 3,
+      "from": 13910100
+    },
+    "13": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "b4665ff5-b262-4bea-88b9-432b46e6c587",
+      "to": 13930130,
+      "NodeID": 13,
+      "from": 13930120
+    },
+    "14": {
+      "NodeID": 14,
+      "UID": "d352962a-5299-4227-af2d-59f9a6eb5d81",
+      "applyAbilityIds": [
+        13930100,
+        13930120
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "10": {
+      "name": "checkPetPrototypeId",
+      "UID": "5e0e5ab9-f2af-413e-936b-aa6591d04017",
+      "target": "OWNER",
+      "petPrototypeId": 1039300,
+      "NodeID": 10
+    },
+    "15": {
+      "NodeID": 15,
+      "UID": "98369fbf-7441-48f6-8569-336e6870c17b",
+      "applyAbilityIds": [
+        13930100,
+        13930120,
+        13910100
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 0,
+      "isOpen": false,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "7": {
+      "buffId": 9139302,
+      "name": "removeBuff",
+      "UID": "e9bef456-21ac-4d6f-850e-8483aa9a320a",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "NodeID": 16,
+      "UID": "977745d4-70cc-44ba-9500-9cbad817dce2",
+      "applyAbilityIds": [
+        13910100
+      ],
+      "applyToFinalSkill": false,
+      "applyToNormalAttack": false,
+      "applyToNormalSkill": false,
+      "intensityStyle": 1,
+      "isOpen": true,
+      "openDuration": 0,
+      "tagId": 0,
+      "name": "setIntensitySkillStyle"
+    },
+    "17": {
+      "key": "9139301",
+      "name": "setCacheVal",
+      "UID": "6bc79d6e-4293-456b-843c-aa0ea1710672",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 17
+    },
+    "9": {
+      "eventName": "91393",
+      "name": "notifyCustomEvent",
+      "UID": "eac734f6-27c3-4735-9652-dd20af107d52",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "key": "9139301",
+      "name": "setCacheVal",
+      "UID": "c6563672-fa59-4cda-86dd-de30f6c70fb3",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 18
+    },
+    "19": {
+      "UID": "290885b1-2516-428c-9452-fa56cbf73eb6",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": true,
+      "NodeID": 19
+    },
+    "11": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "67dffa3b-865d-4c3e-89fd-2433d012fafa",
+      "to": 13930110,
+      "NodeID": 11,
+      "from": 13930100
+    },
+    "20": {
+      "UID": "88624702-35c2-44cc-8714-bc8e7ed88fc3",
+      "name": "notifyPassiveEnergySuperBoosted",
+      "enable": false,
+      "NodeID": 20
+    },
+    "5": {
+      "actionIds": [
+        11,
+        13,
+        14,
+        17
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "dc395cab-41d7-46a4-8965-4e6de898c6e7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        3,
+        16
+      ],
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    9,
+    7,
+    15,
+    18,
+    20
+  ],
+  "onBuffStartIds": [
+    19,
+    5
+  ]
+}

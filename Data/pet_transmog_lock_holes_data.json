@@ -1,0 +1,46 @@
+{
+  "3": {
+    "goldenProbability": 0.08839779,
+    "goldenProbabilityReduce": 0.5,
+    "hitProbability": [
+      [
+        0.1,
+        2
+      ]
+    ],
+    "expReduce": 1
+  },
+  "0": {
+    "goldenProbability": 0.032258065,
+    "goldenProbabilityReduce": 0,
+    "hitProbability": [
+      [
+        0.1,
+        2
+      ]
+    ],
+    "expReduce": 1
+  },
+  "1": {
+    "goldenProbability": 0.042895442,
+    "goldenProbabilityReduce": 0,
+    "hitProbability": [
+      [
+        0.1,
+        2
+      ]
+    ],
+    "expReduce": 1
+  },
+  "2": {
+    "goldenProbability": 0.059701493,
+    "goldenProbabilityReduce": 0,
+    "hitProbability": [
+      [
+        0.1,
+        2
+      ]
+    ],
+    "expReduce": 1
+  }
+}

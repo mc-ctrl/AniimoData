@@ -1,0 +1,277 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21222001",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    33
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "buffId": 10003,
+      "name": "hasBuff",
+      "UID": "4b85a632-7b7a-4c6a-8ca5-ac91cb59ba52",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "79fe2135-8aab-4e40-8db4-647074ed0434",
+      "name": "hideBossMechanismTip",
+      "id": 2046,
+      "NodeID": 38
+    },
+    "39": {
+      "id": 2047,
+      "duration": 5,
+      "NodeID": 39,
+      "UID": "eacb0855-7dba-4f06-bb1c-fc7fb1423c40",
+      "name": "showBossMechanismTip"
+    },
+    "6": {
+      "switchTag": "Spark",
+      "name": "setModelSwitchTag",
+      "UID": "9d12e61a-5083-408c-92ab-0975ff7228e6",
+      "NodeID": 6,
+      "groupKey": 0
+    },
+    "23": {
+      "actionIds": [
+        21
+      ],
+      "NodeID": 23,
+      "UID": "d123f38e-12cf-4cb0-bf24-c42ac9078910",
+      "target": "OWNER",
+      "buffId": 10003,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": false,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    },
+    "31": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "2777316c-b70a-4322-93f0-3d4cc73e46b3",
+      "name": "buffStartThink",
+      "NodeID": 31
+    },
+    "9": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "697877a1-2ca2-4776-a027-20d46f4f0608",
+      "NodeID": 9,
+      "groupKey": 0
+    },
+    "22": {
+      "actionIds": [
+        21
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "db1f3fa6-8094-4b6f-8410-e9e28f5ec9cd",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "33": {
+      "UID": "2f3ddb31-a9e6-478a-b676-035e9d2c9a17",
+      "value": {
+        "templateId": 21222001,
+        "name": "getBuffRemainingTime",
+        "UID": "6f018fd5-9c24-4856-8ac6-f5fbf89d4958",
+        "target": "OWNER",
+        "NodeID": 32
+      },
+      "name": "setBossMechanismIconProgress",
+      "NodeID": 33
+    },
+    "11": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "beea183d-41fa-42a2-b51d-835096a85e07",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "name": "stopEffectStr",
+      "UID": "43bfbef6-ccdc-4ef7-9f53-87110db485ae",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount03",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "buffId": 21222001,
+      "name": "removeBuff",
+      "UID": "fc2209aa-a11e-4e9e-802a-0bf874ed9b19",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "eb1ad7ed-2d19-4a5c-a757-288cbdee73b1",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "13": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9073d7ce-877e-4554-bc62-03a08d6a493a",
+      "effectId": "Eff_Parmon_10072_ChargeFur_Biu",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "24": {
+      "target": "OWNER",
+      "duration": 8,
+      "buffId": 1000601,
+      "NodeID": 24,
+      "UID": "0f742e8d-d043-4fbc-af10-8535ed7d3f1f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "14": {
+      "duration": -1,
+      "disableWhenFinished": false,
+      "NodeID": 14,
+      "UID": "4445fdea-fe69-48ff-aa83-775a34e1e84a",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body_Spark",
+      "name": "playPreset"
+    },
+    "26": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "00f2bfd2-c1f4-41b0-8411-ebf65020c7ff",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "15": {
+      "UID": "81ad7877-510e-4e50-ba3d-a5ab09a770d4",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10222_Skill_AngryClaw_Body_Spark",
+      "NodeID": 15
+    },
+    "25": {
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "73bdaf8b-abee-48d1-8128-6e91760b20b4",
+      "name": "doActionsByConditions",
+      "NodeID": 25,
+      "elseActionIds": [
+        24
+      ]
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "be4cfd25-6436-4645-aa15-2402ca779fcd",
+      "effectId": "Eff_Parmon_10221_Skill_ElectroShield",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "name": "isInCombat",
+      "UID": "c26315d5-ea55-4d3d-8065-fb46dac14fa4",
+      "target": "OWNER",
+      "NodeID": 27,
+      "not": false
+    },
+    "28": {
+      "UID": "db782f87-94f4-4fb4-98e2-0e91b4a944bc",
+      "name": "showBossMechanismIconVX",
+      "NodeID": 28
+    },
+    "30": {
+      "type": 1,
+      "max": 40,
+      "name": "initBossMechanismIcon",
+      "NodeID": 30,
+      "UID": "026bbc32-f222-4274-a0a5-377012ce5f67",
+      "assetId": "$UI_Node_Hud_Boss_Property_Lightning.prefab",
+      "initProgress": 40,
+      "needFlash": false
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "e6bd3625-448c-489c-811d-dc8d23e48b7c",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "32": {
+      "templateId": 21222001,
+      "name": "getBuffRemainingTime",
+      "UID": "6f018fd5-9c24-4856-8ac6-f5fbf89d4958",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "c85a72a4-8c31-4b13-888c-6fa7f7567403",
+      "effectId": "Eff_Parmon_10221_Skill_CritCount02",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "34": {
+      "type": 1,
+      "max": 30,
+      "name": "initBossMechanismIcon",
+      "NodeID": 34,
+      "UID": "e5f25b6a-8792-4f80-8fa6-80416e61833e",
+      "assetId": "$UI_Node_Hud_Boss_Property_Claw.prefab",
+      "initProgress": 0,
+      "needFlash": true
+    },
+    "36": {
+      "UID": "85fc5bef-1a39-49d2-8f11-5ad07a00611f",
+      "name": "hideBossMechanismIconVX",
+      "NodeID": 36
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    3,
+    9,
+    15,
+    16,
+    18,
+    19,
+    20,
+    26,
+    36,
+    34
+  ],
+  "onBuffStartIds": [
+    30,
+    28,
+    38,
+    6,
+    13,
+    11,
+    14,
+    22,
+    31,
+    23,
+    39
+  ]
+}

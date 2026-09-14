@@ -1,0 +1,53 @@
+{
+  "angularIncreaseDuration": 2,
+  "BPName": "buff_2105503",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10055_Skill_WolfGhost_Bullet02",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 1800,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 3,
+  "onProjectileFinishIds": [
+    14,
+    12
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 1800,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.05,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "trackingNoOffsetRotationRange": 8,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "14": {
+      "value": 1,
+      "name": "recoverEp",
+      "UID": "6453352f-f808-4bd6-9ff1-8f6358e74347",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0.7,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "84d544b7-df22-41e5-a496-ba8fa370d743",
+      "effectId": "Eff_Parmon_10055_Skill_WolfGhost_EPUp",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "groundSweepRadius": 0.05,
+  "duration": 6,
+  "acceleration": 10
+}

@@ -1,0 +1,170 @@
+{
+  "91035712": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -602.89,
+      1273.07,
+      -604.45,
+      1278.62,
+      -601.18,
+      1281.74,
+      -597.32,
+      1280.72,
+      -590.35,
+      1277.73,
+      -585.5,
+      1269.52,
+      -588.08,
+      1269.27,
+      -594.38,
+      1265.85,
+      -595.57,
+      1263.94,
+      -599.71,
+      1258.73,
+      -604.9,
+      1259.36,
+      -608.81,
+      1262.54,
+      -609.24,
+      1266.92,
+      -604.81,
+      1267.86
+    ],
+    "areaShapeType": 2,
+    "entityType": 7,
+    "entityTypeList": [
+      1,
+      2,
+      4
+    ],
+    "id": 91035712,
+    "logics": [
+      {
+        "condition": [
+          "And",
+          [
+            "CheckActorType",
+            3
+          ],
+          [
+            "CheckTemplateId",
+            1102910001
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "Buff",
+            21293042
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 12,
+    "sandboxId": 91035704,
+    "position": [
+      -598.08,
+      150.52,
+      1272.33
+    ],
+    "pointType": 1,
+    "name": "区域_91035712"
+  },
+  "91035714": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 0,
+    "areaPoints": [
+      -612.44,
+      1260.87,
+      -610.39,
+      1256.85,
+      -608.31,
+      1254.82,
+      -605.96,
+      1249.55,
+      -610.44,
+      1246.04,
+      -616.85,
+      1246.5,
+      -619.34,
+      1250.43,
+      -623.87,
+      1253.75,
+      -624.78,
+      1261.26,
+      -620.74,
+      1268,
+      -615.77,
+      1269.93,
+      -612.56,
+      1266.31
+    ],
+    "areaShapeType": 2,
+    "entityType": 7,
+    "entityTypeList": [
+      1,
+      2,
+      4
+    ],
+    "id": 91035714,
+    "logics": [
+      {
+        "condition": [
+          "And",
+          [
+            "CheckActorType",
+            3
+          ],
+          [
+            "CheckTemplateId",
+            1102910001
+          ]
+        ],
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "Buff",
+            21293042
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 14.79,
+    "sandboxId": 91035704,
+    "position": [
+      -612.42,
+      146.49,
+      1248.52
+    ],
+    "pointType": 1,
+    "name": "区域_91035714"
+  }
+}

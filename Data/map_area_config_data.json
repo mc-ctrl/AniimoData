@@ -1,0 +1,105 @@
+{
+  "1000": {
+    "areaName": 1690186910,
+    "areaNameEn": "S1 collection",
+    "belongNation": 1000,
+    "specialNation": 1,
+    "treeId": 0,
+    "sort": 3,
+    "portalId": 0,
+    "Campid": 0,
+    "Mapid": 1000,
+    "areaBackground1": "$UI_CountryBg_3.png",
+    "areaBackground2": "$UI_CountryFrame_3.png",
+    "areaImageBig": "$UI_CountryImg_3.png",
+    "areaImageSmall": "$ui_countryIcon_3.png",
+    "areaImageWord": "$UI_Img_ElectronicManual_CountryDeco3.png"
+  },
+  "400001": {
+    "areaName": 2029987959,
+    "Campid": 0,
+    "Mapid": 3004,
+    "treeId": 0,
+    "portalId": 0
+  },
+  "400002": {
+    "areaName": 1957050223,
+    "Campid": 0,
+    "Mapid": 3005,
+    "treeId": 0,
+    "portalId": 0
+  },
+  "500001": {
+    "areaName": 1611455449,
+    "Campid": 0,
+    "Mapid": 515,
+    "treeId": 0,
+    "portalId": 0
+  },
+  "300001": {
+    "areaName": 1866921918,
+    "areaNameEn": "Breezy Plains",
+    "belongNation": 1,
+    "dialogueGraph": 91123780,
+    "image": "$UI_Img_Map_LeylinesTree_Reward_XinyeHill.png",
+    "meteorologyDetailDes": 6,
+    "nourishCamBlendTime": 1.5,
+    "nourishCamFov": 31.4,
+    "nourishCamPos": [
+      -1220.4,
+      162,
+      932.968
+    ],
+    "nourishCamRot": [
+      0.976,
+      -166.984,
+      0.245
+    ],
+    "portalId": 52418043,
+    "probabilityDes": [
+      3,
+      4
+    ],
+    "timeline": "$P_TL_Plot_TeleportFlower.prefab",
+    "treeDes": "生长在风吻平原的地脉树，似乎能感知周边的生态环境。随着能量的充沛，能够获得地脉树的秘宝。",
+    "treeId": 200011,
+    "treePos": [
+      -1219.9,
+      107.7,
+      921.7
+    ],
+    "sort": 1,
+    "treePos3": [
+      -1222.83,
+      162.63,
+      921.88
+    ],
+    "treeRot": [
+      0,
+      -68.303,
+      0
+    ],
+    "treeRot2": [
+      -0.753,
+      -61.436,
+      1.398
+    ],
+    "treeRot3": [
+      -0.36,
+      -0.032,
+      2.058
+    ],
+    "treePos2": [
+      -1224.61,
+      168.96,
+      924.66
+    ],
+    "Campid": 45329648,
+    "Mapid": 3000,
+    "areaBackground1": "$UI_CountryBg_1.png",
+    "areaBackground2": "$UI_CountryFrame_1.png",
+    "areaImageBig": "$UI_CountryImg_1.png",
+    "areaImageSmall": "$ui_countryIcon_1.png",
+    "areaImageWord": "$UI_Img_ElectronicManual_CountryDeco1.png"
+  }
+}

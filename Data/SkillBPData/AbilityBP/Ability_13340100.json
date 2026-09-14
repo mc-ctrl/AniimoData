@@ -1,0 +1,66 @@
+{
+  "BPName": "ability_13340100",
+  "NodeID": 1,
+  "UID": "5f7c282c-2ff6-4eb0-a771-c580949539a1",
+  "abilityParamId": 10500480,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "actionIds": [
+        52
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "e84ce73c-bb7c-4adf-b1ce-97baf5c3de54",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "52": {
+      "timelineId": 13340100002,
+      "name": "setCombatActionTimeline",
+      "UID": "c8c41e6a-5759-4440-99a1-b8a8d379a458",
+      "target": "CASTER",
+      "NodeID": 52
+    },
+    "9": {
+      "timelineId": 13340100001,
+      "name": "setCombatActionTimeline",
+      "UID": "ef3716da-afe0-4978-bc72-ceb2f1c96554",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "45": {
+      "buffId": 9133402,
+      "name": "hasBuff",
+      "UID": "bdab9233-ced0-4a02-9292-e74f8c3253ae",
+      "target": "OWNER",
+      "NodeID": 45
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Burn"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_Skill_WaterHeal",
+    "Eff_Parmon_10043_Heal_Arrow",
+    "Eff_Parmon_10043_Skill_WaterHeal_Loop",
+    "Eff_Parmon_10043_Skill_Ex_Field02",
+    "Eff_Parmon_10043_Skill_Ex01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 0,
+  "notTurnToTarget": true,
+  "searchTargetRangeDown": 0
+}

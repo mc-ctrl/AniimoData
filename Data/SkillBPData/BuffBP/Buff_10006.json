@@ -1,0 +1,145 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_10006",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba75494e-e2c3-4001-814c-863703ef144d",
+      "effectId": "Eff_Boss_Debuff_Weak",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "589d6b7b-db4c-44e4-bdbf-d291cf215c86",
+      "name": "callClientAction",
+      "actionIds": [
+        4,
+        8,
+        20
+      ],
+      "NodeID": 6
+    },
+    "21": {
+      "name": "stopSoundStr",
+      "UID": "95817bcd-1364-4026-ba91-63c8db262505",
+      "soundId": "SFX_Combat_Buff_Weak",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "15": {
+      "name": "changeControlState",
+      "UID": "34f784bd-5c6c-4571-a347-bd8c3a7c5667",
+      "target": "OWNER",
+      "controlState": "IDLE",
+      "NodeID": 15
+    },
+    "13": {
+      "buffId": 10006,
+      "name": "removeBuff",
+      "UID": "8f07091b-d6c2-4dcf-908e-c22b8141f265",
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "16": {
+      "UID": "691aac64-047f-4c58-9d15-a13c1835959e",
+      "name": "callClientAction",
+      "actionIds": [
+        15
+      ],
+      "NodeID": 16
+    },
+    "8": {
+      "id": 2042,
+      "duration": 8,
+      "NodeID": 8,
+      "UID": "9b0e4a22-7670-4115-b74d-e4c7a47c00ed",
+      "name": "showBossMechanismTip",
+      "hasCountDown": true
+    },
+    "19": {
+      "buffId": 10006,
+      "name": "removeBuff",
+      "UID": "2ed5f9c3-f801-4e42-80fd-003e2249f110",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "12f99d5e-4edc-4ff3-96f2-af961a81e544",
+      "effectId": "Eff_Boss_Debuff_Weak",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "actionIds": [
+        19,
+        16
+      ],
+      "NodeID": 18,
+      "UID": "370cc340-17ec-48d2-8b3d-c550375aa041",
+      "target": "OWNER",
+      "buffId": 10003,
+      "isListenDestroy": false,
+      "isListenLayerDecrease": false,
+      "isListenLayerIncrease": false,
+      "isListenStart": true,
+      "name": "registerBuffLifeEvent"
+    },
+    "14": {
+      "actionIds": [
+        13
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "7e20a39f-193e-4687-b5e4-7b84a05b1867",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "11": {
+      "UID": "a06fe415-8ff7-4210-8c5b-dd7dedc33285",
+      "name": "callClientAction",
+      "actionIds": [
+        9,
+        12,
+        21
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "target": "OWNER",
+      "stopTime": 8,
+      "name": "playSoundStr",
+      "UID": "fb52d907-5f81-4bc2-83e8-e0194f46675e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Buff_Weak",
+      "NodeID": 20
+    },
+    "12": {
+      "id": 2042,
+      "hasCountDown": true,
+      "NodeID": 12,
+      "UID": "15a106a6-2893-4ce8-91cd-7ed9c32550f3",
+      "name": "hideBossMechanismTip"
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 10006,
+    "type": 1,
+    "bp_reduce_rate_v": "param0"
+  },
+  "onBuffDestroyIds": [
+    11
+  ],
+  "onBuffStartIds": [
+    6,
+    18,
+    14
+  ]
+}

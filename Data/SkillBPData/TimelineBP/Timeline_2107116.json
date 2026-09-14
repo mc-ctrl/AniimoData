@@ -1,0 +1,373 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "cameraShakeId": 10101,
+      "name": "playCameraImpulseById",
+      "UID": "a2e0c4a6-6fce-4c41-88f4-c21b485a889a",
+      "target": "MASTER",
+      "NodeID": 37
+    },
+    "38": {
+      "key": "Water1",
+      "name": "setCacheVal",
+      "UID": "c5c04d2f-c895-427e-b6c5-b6b3019122ea",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 38
+    },
+    "39": {
+      "UID": "3f1dc0ef-f043-49f7-9a15-596deda69b9c",
+      "name": "callClientAction",
+      "actionIds": [
+        38
+      ],
+      "NodeID": 39
+    },
+    "6": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 4,
+      "NodeID": 6,
+      "UID": "e5a610b2-70a8-4e46-a243-4c840a704270",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.8,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        4,
+        28
+      ]
+    },
+    "41": {
+      "delayTime": 0,
+      "duration": 0.3,
+      "NodeID": 41,
+      "UID": "8e1bc0be-f923-4f9a-bb09-2e81d8e8a6dd",
+      "radius": 8,
+      "waterPoolDissolveRange": [
+        1,
+        2
+      ],
+      "commonMount": "CM_common_warning",
+      "levelActions": [
+        {
+          "actionIds": [
+            39
+          ],
+          "count": 1
+        }
+      ],
+      "notConsumeRate": 0,
+      "waterPoolDelayTime": 0,
+      "maxCount": 1,
+      "waterPoolVanishDuration": 0,
+      "name": "waterAbsorb"
+    },
+    "42": {
+      "UID": "fd9c0535-eb1f-4abd-bc99-e28b108819d2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          41
+        ]
+      },
+      "NodeID": 42
+    },
+    "7": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        44
+      ],
+      "UID": "2fd3d142-3d0f-43aa-9c2e-4bae88a88bb4",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "44": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "6afdd476-8627-43c3-a619-f3eaa34facf0",
+      "NodeID": 44,
+      "lValue": {
+        "key": "Water1",
+        "name": "getCacheVal",
+        "UID": "400bbfbf-7607-4767-bf17-60b0c23c4a49",
+        "target": "OWNER",
+        "NodeID": 43
+      }
+    },
+    "31": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2107116,
+        "instant_dmg_rate_v": "param1",
+        "reduce_cur_tp_rate": "param1",
+        "type": 4
+      },
+      "UID": "5178da5d-ab13-4147-9a83-d2b527e8732b",
+      "target": "TARGET",
+      "NodeID": 31,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 2001
+      }
+    },
+    "9": {
+      "actionIds": [
+        41,
+        7
+      ],
+      "NodeID": 9,
+      "UID": "bec9fe98-25e4-4d2d-b55b-986e5b50739f",
+      "cd": 0.4,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "11": {
+      "tickInterval": 0.25,
+      "eventType": "NotifyState",
+      "endTime": 3,
+      "NodeID": 11,
+      "UID": "1ec6d47a-6e80-4f68-a014-0aae6128a4e8",
+      "onUpdate": {
+        "actionIds": [
+          21,
+          9
+        ]
+      },
+      "startTime": 0.1,
+      "onEnter": {
+        "actionIds": [
+          21,
+          9
+        ]
+      }
+    },
+    "20": {
+      "notBlockInput": true,
+      "duration": 1,
+      "NodeID": 20,
+      "UID": "f3900061-a192-43fa-94e3-83f6db7b921c",
+      "target": "TARGET",
+      "name": "forceDisplacement",
+      "speed": 3,
+      "displacementTarget": "OWNER",
+      "displacementDir": "IN"
+    },
+    "21": {
+      "actionIds": [
+        20
+      ],
+      "name": "actOnTargets",
+      "UID": "04111a71-91e8-4bbc-9082-cf0695c42784",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            6.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 21
+    },
+    "4": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2107116,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 4
+      },
+      "UID": "0d2d1bc1-8a57-426b-b867-9ac5d6053860",
+      "target": "TARGET",
+      "NodeID": 4,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10001,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 6,
+        "impulseId": 2001
+      }
+    },
+    "15": {
+      "name": "stopEffectStr",
+      "UID": "2cdff757-ba18-4064-9db1-16d367137ab8",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind05_Grass",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "25": {
+      "name": "stopSoundStr",
+      "UID": "403faf48-39b7-4c71-b182-f1e418a52975",
+      "soundId": "SFX_Combat_Parmon_10184_Skill_Whirlwind_Grass",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "action": {
+        "actionIds": [
+          25
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 26,
+      "UID": "b06784a9-ceff-4acf-9b8b-54566594cb35"
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "283e236f-909b-4c8c-9176-a05e91923f57",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_Whirlwind_Grass",
+      "NodeID": 27
+    },
+    "28": {
+      "cameraShakeId": 10101,
+      "name": "playCameraImpulseById",
+      "UID": "8cff49a8-6472-45f8-ab7f-581ed2d8bd62",
+      "target": "MASTER",
+      "NodeID": 28
+    },
+    "33": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 31,
+      "NodeID": 33,
+      "UID": "8d75563f-0b36-4d78-a709-e5e5faa67eb9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.8,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        31,
+        37
+      ]
+    },
+    "19": {
+      "UID": "c89c932a-4dce-41a9-bb85-829c277936c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          17
+        ]
+      },
+      "NodeID": 19
+    },
+    "17": {
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "870137ae-8f3b-45b8-83b4-2f4aebf7318a",
+      "effectId": "Eff_Parmon_Horngull_10187_Skill_Whirlwind05_Grass",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.8,
+      "NodeID": 16,
+      "UID": "a421d480-32a3-4891-af6e-63840f27a7a3"
+    }
+  },
+  "BPName": "timeline_2107116",
+  "NodeID": 1,
+  "UID": "fed0390b-61d5-41f0-b009-32f669367ff4",
+  "eventIds": [
+    19,
+    26,
+    16,
+    42,
+    11
+  ],
+  "layer": "Base",
+  "length": 3.5
+}

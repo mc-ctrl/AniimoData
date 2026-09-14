@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145124",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 1145124,
+      "name": "removeBuff",
+      "UID": "9c5374a0-3cd7-4aa9-af55-d163189e5806",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerReceiveDamageThreshold",
+      "UID": "eff8d80d-7fa5-4951-98e2-899368462b09",
+      "thresholdCount": 1,
+      "NodeID": 4
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

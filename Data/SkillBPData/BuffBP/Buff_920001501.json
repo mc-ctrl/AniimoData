@@ -1,0 +1,52 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "final_taken_dmg_dec_rate_v": 0.3,
+    "final_taken_dmg_inc_rate_v": -0.2
+  },
+  "NodeID": 1,
+  "UID": "3c6df93a-e32e-43ee-ad5e-a5c620986638",
+  "isOnControlRemove": true,
+  "parentDynamicRPCStates": {},
+  "desc": "",
+  "BPName": "buff_920001501",
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "fd153f54-e219-48b4-8924-1e7414610fc8",
+      "effectId": "Eff_Buff_Hurt_Defense",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2a4c4e79-2728-4f29-a658-d6a0d07c27e4",
+      "effectId": "Eff_Buff_Hurt_Defense_Disappear",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8b15794a-891b-4e22-8e90-333e03050e00",
+      "effectId": "Eff_Buff_Hurt_Defense",
+      "speed": 1,
+      "NodeID": 6
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Hurt_Defense"
+    }
+  ],
+  "name": "",
+  "onBuffDestroyIds": [
+    3,
+    5
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

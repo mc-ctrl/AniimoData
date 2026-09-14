@@ -1,0 +1,2067 @@
+{
+  "78767933": {
+    "id": 78767933,
+    "wayPoints": [
+      {
+        "position": [
+          47.39,
+          51.76,
+          1027.31
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 20.13,
+        "position": [
+          44.76,
+          51.76,
+          1030.78
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          47.39,
+          51.76,
+          1037.47
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          48.33,
+          51.76,
+          1043.48
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          48.33,
+          58.45,
+          1060.92
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 5,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 324.68,
+        "position": [
+          48.03,
+          58.45,
+          1065.56
+        ]
+      }
+    ],
+    "pos": [
+      47.39,
+      51.76,
+      1027.31
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76707205
+  },
+  "84042557": {
+    "id": 84042557,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "yaw": 66.04,
+        "position": [
+          33.69,
+          51.76,
+          1022.74
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 1.8
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          39.86,
+          51.76,
+          1025.27
+        ]
+      },
+      {
+        "speed": 1.8,
+        "position": [
+          47.37,
+          51.76,
+          1027.28
+        ]
+      }
+    ],
+    "firstWayPointSelectType": 1,
+    "pos": [
+      44.18,
+      51.76,
+      1023.7
+    ],
+    "sandboxId": 76707205
+  },
+  "91042312": {
+    "id": 91042312,
+    "editorName": "水母路线",
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 1.15,
+        "position": [
+          53.43,
+          51.76,
+          1024.25
+        ]
+      },
+      {
+        "yaw": 193.43,
+        "speed": 1.15,
+        "position": [
+          62.76,
+          51.84,
+          1035.19
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      49.87,
+      51.76,
+      1023.65
+    ],
+    "sandboxId": 76707174
+  },
+  "91120277": {
+    "id": 91120277,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "SquatObserve",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 0,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": true,
+                  "name": "tNeedLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 41.96,
+        "ignoreRotation": true,
+        "position": [
+          57.23,
+          51.76,
+          1016.03
+        ]
+      }
+    ],
+    "pos": [
+      57.23,
+      51.95,
+      1016.03
+    ],
+    "quaternion": [
+      0,
+      0.36,
+      0,
+      0.93
+    ],
+    "sandboxId": 91025674
+  },
+  "91133257": {
+    "id": 91133257,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          68.3,
+          59.37,
+          1095.79
+        ],
+        "facingDir": [
+          -0.66,
+          0,
+          -0.75
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "facingDir": [
+          0.83,
+          0,
+          0.56
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.68,
+          0,
+          -0.73
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91133258": {
+    "id": 91133258,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "facingDir": [
+          -0.68,
+          0,
+          -0.73
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "facingDir": [
+          0.83,
+          0,
+          0.56
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91147170": {
+    "id": 91147170,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Emotion_Think_Loop",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 0,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": true,
+                  "name": "tNeedLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 219.15,
+        "position": [
+          69.61,
+          51.95,
+          1030.32
+        ]
+      }
+    ],
+    "pos": [
+      69.61,
+      51.95,
+      1030.32
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76707178
+  },
+  "91151885": {
+    "id": 91151885,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          46.4,
+          51.76,
+          984.19
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.01,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          50.15,
+          51.76,
+          980.55
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          -0.17,
+          0,
+          0.99
+        ]
+      },
+      {
+        "position": [
+          55.76,
+          51.76,
+          986.94
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0.03,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          55.01,
+          51.76,
+          996.56
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          49.75,
+          51.76,
+          1000.38
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          44.89,
+          51.76,
+          995.91
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      50.61,
+      51.76,
+      984.23
+    ],
+    "sandboxId": 72422356
+  },
+  "91151887": {
+    "id": 91151887,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          65.32,
+          51.76,
+          1002.8
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          67.75,
+          51.76,
+          1009.68
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          70.67,
+          51.76,
+          1018.06
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          64.99,
+          51.76,
+          1024
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          64.99,
+          51.76,
+          1011.56
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "position": [
+          62.76,
+          51.76,
+          1004.28
+        ],
+        "animHashKey1": "WalkLoop",
+        "facingDir": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      63.7,
+      51.76,
+      1000.99
+    ],
+    "sandboxId": 72422356
+  },
+  "91154500": {
+    "id": 91154500,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          33.8,
+          51.76,
+          1018.7
+        ],
+        "facingDir": [
+          -0.85,
+          0,
+          0.52
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.74,
+          0,
+          0.68
+        ],
+        "position": [
+          26.25,
+          51.76,
+          1020.5
+        ],
+        "behaviorSpeedRateType": 1,
+        "leaveNotifyInfoList": [
+          {
+            "timeout": 2,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Cry"
+          }
+        ]
+      },
+      {
+        "position": [
+          24.69,
+          51.76,
+          1013.76
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          31.98,
+          51.76,
+          1012.97
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      33.98,
+      51.76,
+      1016.48
+    ],
+    "sandboxId": 91036067
+  },
+  "91136591": {
+    "id": 91136591,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          26.35,
+          51.76,
+          1011.52
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.3,
+          0,
+          -0.96
+        ]
+      },
+      {
+        "position": [
+          26.35,
+          51.76,
+          1011.52
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HitHead",
+        "facingDir": [
+          0.3,
+          0,
+          -0.96
+        ]
+      },
+      {
+        "position": [
+          26.35,
+          51.76,
+          1011.52
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          0.3,
+          0,
+          -0.96
+        ]
+      },
+      {
+        "position": [
+          26.35,
+          51.76,
+          1011.52
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HeadBeHit",
+        "facingDir": [
+          0.3,
+          0,
+          -0.96
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      32.33,
+      51.76,
+      1029.43
+    ],
+    "sandboxId": 91036067
+  },
+  "91136590": {
+    "id": 91136590,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          26.79,
+          51.76,
+          1010.74
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.3,
+          0,
+          0.96
+        ]
+      },
+      {
+        "position": [
+          26.79,
+          51.76,
+          1010.74
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HeadBeHit",
+        "facingDir": [
+          -0.3,
+          0,
+          0.96
+        ]
+      },
+      {
+        "position": [
+          26.79,
+          51.76,
+          1010.74
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.3,
+          0,
+          0.96
+        ]
+      },
+      {
+        "position": [
+          26.79,
+          51.76,
+          1010.74
+        ],
+        "isStatic": true,
+        "animHashKey1": "EnvBehav_HitHead",
+        "facingDir": [
+          -0.3,
+          0,
+          0.96
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      32.2,
+      51.76,
+      1030.37
+    ],
+    "sandboxId": 91036067
+  },
+  "91133224": {
+    "id": 91133224,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          68.3,
+          59.37,
+          1095.79
+        ],
+        "facingDir": [
+          -0.66,
+          0,
+          -0.75
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "facingDir": [
+          0.83,
+          0,
+          0.56
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "animHashKey1": "RunLoop",
+        "facingDir": [
+          -0.68,
+          0,
+          -0.73
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91133225": {
+    "id": 91133225,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "facingDir": [
+          -0.68,
+          0,
+          -0.73
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "facingDir": [
+          0.83,
+          0,
+          0.56
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91128433": {
+    "id": 91128433,
+    "routeType": 1,
+    "simpleMoveRouteSnapToGround": false,
+    "wayPoints": [
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ],
+        "animHashKey1": "FlyMove",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Down",
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_EatLoop",
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Up",
+        "facingDir": [
+          -1,
+          0,
+          0.03
+        ]
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ],
+        "animHashKey1": "FlyMove",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Down",
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ]
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_EatLoop",
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ]
+      },
+      {
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ],
+        "isStatic": true,
+        "animHashKey1": "Fly_Up",
+        "facingDir": [
+          1,
+          0,
+          -0.02
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      40.58,
+      53.48,
+      991.89
+    ],
+    "sandboxId": 91025674
+  },
+  "77920426": {
+    "id": 77920426,
+    "editorName": "学员男路点",
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          52.03,
+          51.76,
+          1022.43
+        ]
+      },
+      {
+        "yaw": 359.21,
+        "position": [
+          63.99,
+          51.84,
+          1033
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      47.87,
+      51.76,
+      1023.69
+    ],
+    "sandboxId": 76707174
+  },
+  "77920383": {
+    "id": 77920383,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          52.62,
+          51.76,
+          1023.95
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Talk",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 186.84,
+        "position": [
+          63.36,
+          51.84,
+          1034.69
+        ]
+      }
+    ],
+    "pos": [
+      49.1,
+      51.76,
+      1023.85
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76707174
+  },
+  "72868102": {
+    "id": 72868102,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 223.23,
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "yaw": 55.91,
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "behaviorSpeedRateType": 2
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "72868103": {
+    "id": 72868103,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 221.2,
+        "position": [
+          68.3,
+          59.37,
+          1095.79
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "yaw": 55.91,
+        "behaviorSpeedRateType": 2,
+        "position": [
+          66.24,
+          59.14,
+          1093.73
+        ]
+      },
+      {
+        "position": [
+          69.43,
+          59.37,
+          1094.68
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "yaw": 223.23,
+        "position": [
+          70.75,
+          59.64,
+          1098.24
+        ]
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 72671018
+  },
+  "91035734": {
+    "id": 91035734,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_SwitchToGround"
+            },
+            {
+              "templateKey": "ST_Eat",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 6,
+                  "name": "eatTimeOut"
+                }
+              ]
+            },
+            {
+              "templateKey": "ST_SwitchToFly",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 4,
+                  "name": "tFlyHeight"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 271.78,
+        "position": [
+          41.63,
+          53.83,
+          988.15
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_SwitchToGround"
+            },
+            {
+              "templateKey": "ST_Eat"
+            },
+            {
+              "templateKey": "ST_SwitchToFly"
+            }
+          ]
+        },
+        "yaw": 91.05,
+        "position": [
+          56.73,
+          53.9,
+          987.95
+        ]
+      }
+    ],
+    "pos": [
+      40.58,
+      53.48,
+      991.89
+    ],
+    "ignoreAILod": true,
+    "sandboxId": 91025674
+  },
+  "91120034": {
+    "id": 91120034,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "IdleSpecial",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": "Cool",
+                  "name": "tEmojiBubbleKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 145.04,
+        "position": [
+          71.72,
+          51.76,
+          1028.89
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "behaviorSpeedRateType": 3
+      }
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91025674
+  },
+  "91058776": {
+    "id": 91058776,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Sleep"
+            }
+          ]
+        },
+        "position": [
+          34.12,
+          59.86,
+          988.58
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 352.61,
+        "behaviorSpeedRateType": 1,
+        "position": [
+          34.33,
+          59.86,
+          989.28
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Doubt"
+            }
+          ]
+        },
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          33.81,
+          58.19,
+          990.79
+        ]
+      },
+      {
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          33.81,
+          59.34,
+          991.91
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Happy"
+            }
+          ]
+        },
+        "yaw": 70.61,
+        "position": [
+          34.17,
+          59.26,
+          992.83
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "yaw": 176.82,
+        "behaviorSpeedRateType": 1,
+        "position": [
+          34.09,
+          59.3,
+          991.96
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Alert"
+            }
+          ]
+        },
+        "yaw": 193.16,
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          34.19,
+          58.18,
+          990.47
+        ]
+      },
+      {
+        "yaw": 230.48,
+        "behaviorPatrolMoveType": 1,
+        "position": [
+          34.71,
+          59.9,
+          989.06
+        ]
+      }
+    ],
+    "pos": [
+      34.12,
+      59.86,
+      988.58
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91025674
+  },
+  "77239111": {
+    "id": 77239111,
+    "quaternion": [
+      0,
+      0.86,
+      0,
+      0.51
+    ],
+    "wayPoints": [
+      {
+        "yaw": 67.6,
+        "position": [
+          37.52,
+          52.03,
+          1007.92
+        ],
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "speed": 1.8
+      },
+      {
+        "yaw": 172.69,
+        "speed": 1.8,
+        "position": [
+          46.39,
+          52.23,
+          1011.34
+        ]
+      }
+    ],
+    "firstWayPointSelectType": 1,
+    "pos": [
+      25.62,
+      52.03,
+      1001.9
+    ],
+    "sandboxId": 76707205
+  },
+  "77652767": {
+    "id": 77652767,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "position": [
+          46.39,
+          52.23,
+          1011.31
+        ]
+      },
+      {
+        "yaw": 278.13,
+        "position": [
+          44.17,
+          51.76,
+          1023.59
+        ]
+      }
+    ],
+    "pos": [
+      47.26,
+      52.12,
+      1011.05
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76707205
+  },
+  "91120048": {
+    "id": 91120048,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1.1,
+                  "name": "tWaitTime"
+                },
+                {
+                  "realValue": "Behav_Happy",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": 4,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": "Surprise2",
+                  "name": "tEmojiBubbleKey"
+                },
+                {
+                  "realValue": 4,
+                  "name": "tEmojiBubbleTimeout"
+                },
+                {
+                  "realValue": true,
+                  "name": "tEmojiBubbleMustPlayFull"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 297.11,
+        "position": [
+          73.82,
+          51.76,
+          1027.45
+        ],
+        "behaviorSpeedRateType": 2
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "behaviorSpeedRateType": 3
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "behaviorSpeedRateType": 3
+      }
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 91025674
+  },
+  "91128411": {
+    "id": 91128411,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          71.72,
+          51.76,
+          1028.89
+        ],
+        "speed": 7,
+        "facingDir": [
+          0.57,
+          0,
+          -0.82
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 5,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "emojiName": "Cool"
+          }
+        ],
+        "facingDir": [
+          0.57,
+          0,
+          -0.82
+        ],
+        "position": [
+          71.72,
+          51.76,
+          1028.89
+        ],
+        "isStatic": true,
+        "animHashKey1": "IdleSpecial"
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "animHashKey1": "RunLoop",
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "speed": 7,
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "sandboxId": 91025674
+  },
+  "91128412": {
+    "id": 91128412,
+    "routeType": 1,
+    "wayPoints": [
+      {
+        "position": [
+          73.82,
+          51.76,
+          1027.45
+        ],
+        "facingDir": [
+          -0.89,
+          0,
+          0.46
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "enterNotifyInfoList": [
+          {
+            "timeout": 4,
+            "callbackFunctionName": "smShowEmojiBubble",
+            "matchMultiple": true,
+            "emojiName": "Surprise2"
+          }
+        ],
+        "facingDir": [
+          -0.89,
+          0,
+          0.46
+        ],
+        "position": [
+          73.82,
+          51.76,
+          1027.45
+        ],
+        "isStatic": true,
+        "animHashKey1": "Behav_Happy"
+      },
+      {
+        "position": [
+          69.15,
+          51.84,
+          1033.22
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          69.42,
+          51.84,
+          1039.3
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          72.29,
+          51.84,
+          1045.5
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          78.39,
+          51.84,
+          1048.05
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          85.41,
+          51.76,
+          1043.58
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          85.84,
+          51.84,
+          1034.82
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "position": [
+          79.32,
+          51.91,
+          1028.5
+        ],
+        "facingDir": [
+          0,
+          0,
+          1
+        ],
+        "animHashKey1": "RunLoop",
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "pos": [
+      66.84,
+      51.76,
+      1027.53
+    ],
+    "sandboxId": 91025674
+  },
+  "77920817": {
+    "id": 77920817,
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          51.39,
+          51.76,
+          1023.6
+        ]
+      },
+      {
+        "yaw": 20.58,
+        "position": [
+          62.43,
+          51.84,
+          1033.21
+        ]
+      }
+    ],
+    "pos": [
+      47.85,
+      51.76,
+      1022.88
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 76707174
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2137302",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "8c708833-1a85-4d8e-aaaf-3dd5fea3fd55",
+      "NodeID": 3,
+      "groupKey": 0
+    },
+    "4": {
+      "key": "1",
+      "duration": 0.3,
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4,
+      "UID": "01124911-5201-4c09-b8c9-67c215ce3dcb",
+      "name": "addEntityTimer"
+    },
+    "9": {
+      "UID": "6481a921-bf91-4c6c-9d12-89aef56af97a",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        14,
+        6
+      ],
+      "NodeID": 9
+    },
+    "6": {
+      "switchTag": "Spark",
+      "name": "setModelSwitchTag",
+      "UID": "4a489013-793b-419f-8336-f07798e9145e",
+      "NodeID": 6,
+      "groupKey": 0
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "42220b8c-a555-4782-a9cc-878418b6ecca",
+      "effectId": "Eff_Parmon_10373_Buff_End_01",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "15": {
+      "UID": "3fef4686-e72d-49ba-85be-137e257d4606",
+      "name": "removeMaterialEffect",
+      "key": "10373_BianShen_New",
+      "NodeID": 15
+    },
+    "14": {
+      "key": "10373_BianShen_New",
+      "name": "applyMaterialEffect",
+      "NodeID": 14
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    15,
+    11,
+    4
+  ],
+  "onBuffStartIds": [
+    14,
+    6,
+    9
+  ]
+}

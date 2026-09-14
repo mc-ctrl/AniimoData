@@ -1,0 +1,84 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 24,
+  "defaultHitSoundType": "s",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10623_Skill_Bubble_4",
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "33": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "afce5160-9bba-4002-a6f1-09de5bab8ca5",
+      "effectId": "Eff_Parmon_10623_Skill_Bubble_Hit_4",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "24": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 16230304,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "f7e28df3-3f92-42fd-9021-45ae09bff24e",
+      "target": "TARGET",
+      "NodeID": 24,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      }
+    },
+    "39": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2162304,
+      "name": "createEntity",
+      "UID": "eb6cf11f-0798-4381-bfa5-5cf4032a994f",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "PROJECTILE",
+      "NodeID": 39,
+      "pos": "PROJECTILE"
+    }
+  },
+  "moveSpeed": 8,
+  "onProjectileFinishIds": [
+    33,
+    39
+  ],
+  "onProjectileHitIds": [
+    24
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "BPName": "ability_16230304",
+  "tickInterval": 0,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.2,
+  "impulseId": 2000,
+  "acceleration": 0
+}

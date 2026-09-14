@@ -1,0 +1,632 @@
+{
+  "10015": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10015",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10016": {
+    "perceiveOtherPetIDList": [
+      20002,
+      20003,
+      210053001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10016",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10004,
+      10024
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10017": {
+    "perceiveOtherPetIDList": [
+      210071001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10017",
+    "perceiveEnvIDList": [
+      30004
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10018": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10018",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10019": {
+    "perceiveOtherPetIDList": [
+      210083001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10019",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10023": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10023",
+    "perceiveEnvIDList": [
+      30005
+    ],
+    "perceivePlayerIDList": [
+      10021
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10011": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001,
+      20002
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10011",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10004
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10012": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001,
+      20002
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10012",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10012,
+      10013
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10013": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      210043003
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10013",
+    "perceiveEnvIDList": [
+      30005,
+      30007
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10027": {
+    "perceivePlayerIDList": [
+      10023
+    ],
+    "interactComment": "基础互动10027"
+  },
+  "10002": {
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "二阶宠基础互动"
+  },
+  "10003": {
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003,
+      10023
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "三阶宠基础互动"
+  },
+  "10030": {
+    "perceivePlayerIDList": [
+      10026
+    ],
+    "interactComment": "基础互动10030"
+  },
+  "10029": {
+    "perceivePlayerIDList": [
+      10024
+    ],
+    "interactComment": "基础互动10029"
+  },
+  "10028": {
+    "perceivePlayerIDList": [
+      10023
+    ],
+    "interactComment": "基础互动10028"
+  },
+  "10026": {
+    "perceiveOtherPetIDList": [
+      210051002,
+      210051005
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10026",
+    "perceiveEnvIDList": [
+      30005
+    ],
+    "perceivePlayerIDList": [
+      10022
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10025": {
+    "perceiveOtherPetIDList": [
+      210051003,
+      210051004
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10025",
+    "perceiveEnvIDList": [
+      30005
+    ],
+    "perceivePlayerIDList": [
+      10022
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10024": {
+    "perceiveOtherPetIDList": [
+      210051003,
+      210051002
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10024",
+    "perceiveEnvIDList": [
+      30007
+    ],
+    "perceivePlayerIDList": [
+      10022
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10022": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10022",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10008": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10008",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10018
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10020": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10020",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10004": {
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10004"
+  },
+  "10001": {
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "一阶宠基础互动"
+  },
+  "10006": {
+    "interactComment": "基础互动10006"
+  },
+  "10005": {
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10005"
+  },
+  "10021": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10021",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10007": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10007",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10009": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10009",
+    "perceiveEnvIDList": [
+      30006
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10004
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10014": {
+    "perceiveOtherPetIDList": [
+      210051001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10014",
+    "perceiveEnvIDList": [
+      30005
+    ],
+    "perceivePlayerIDList": [
+      10022
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  },
+  "10010": {
+    "perceiveOtherPetIDList": [
+      2100410001,
+      2100110001
+    ],
+    "elitePerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "interactComment": "基础互动10010",
+    "perceiveEnvIDList": [
+      30001,
+      30002,
+      30003
+    ],
+    "perceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ],
+    "shinningPerceivePlayerIDList": [
+      10001,
+      10002,
+      10003
+    ]
+  }
+}

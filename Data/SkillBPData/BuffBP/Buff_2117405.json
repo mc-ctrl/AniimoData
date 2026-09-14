@@ -1,0 +1,33 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117405",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "tags": [
+    10
+  ],
+  "calcInfoByLuaConfig": {
+    "id": 2117405,
+    "hp_max_p": "param0",
+    "type": 1
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "name": "calcResult",
+      "UID": "8c379b3b-0ce7-4f75-b297-cb1c5c8ccccc",
+      "target": "OWNER",
+      "NodeID": 22,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 2117405
+      }
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    22
+  ]
+}

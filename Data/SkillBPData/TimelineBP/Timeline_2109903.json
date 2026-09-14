@@ -1,0 +1,74 @@
+{
+  "nodeMap": {
+    "10": {
+      "tickInterval": 0.05,
+      "eventType": "NotifyState",
+      "endTime": 99999,
+      "NodeID": 10,
+      "UID": "7ed372d1-21a4-48f7-89b7-58b4323eab1b",
+      "onUpdate": {
+        "actionIds": [
+          9
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          9
+        ]
+      }
+    },
+    "9": {
+      "actionIds": [
+        12
+      ],
+      "name": "actOnTargets",
+      "UID": "15249aa9-40ff-4010-8bcc-2f8ceba90ff1",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            -1.25
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            2.5,
+            1.4,
+            0.5
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 9
+    },
+    "12": {
+      "target": "TARGET",
+      "duration": 0.5,
+      "speed": 10,
+      "NodeID": 12,
+      "UID": "76107ab7-cb42-4a96-abca-b41263b5765a",
+      "displacementDir": "OUT",
+      "displacementTarget": "TARGET",
+      "name": "forceDisplacement"
+    }
+  },
+  "BPName": "timeline_2109903",
+  "NodeID": 1,
+  "UID": "17de6fcd-d578-424c-a62e-156bc4e93532",
+  "eventIds": [
+    10
+  ],
+  "layer": "Base",
+  "length": 99999
+}

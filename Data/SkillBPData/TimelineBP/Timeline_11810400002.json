@@ -1,0 +1,211 @@
+{
+  "nodeMap": {
+    "52": {
+      "action": {
+        "actionIds": [
+          51
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 52,
+      "UID": "5f84048d-91ec-4d18-8b49-d97579e3c681"
+    },
+    "81": {
+      "offsetXYZ": [
+        0,
+        1,
+        1
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "43dfd0f0-d212-4799-8b4f-ee9e06785c2a",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_01",
+      "speed": 1,
+      "NodeID": 81
+    },
+    "63": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 63,
+      "UID": "e59f7ba4-8d61-4dcf-9f31-7767f1e10f86",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "82": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "8fe97bba-2a9b-4adb-b7cf-c77b2d574d8a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_AerialAce_After",
+      "NodeID": 82
+    },
+    "65": {
+      "actionIds": [
+        63,
+        89
+      ],
+      "conditionActionIds": [
+        67
+      ],
+      "UID": "f57c5879-cd38-4ee4-866e-61edf61f7502",
+      "name": "doActionsByConditions",
+      "NodeID": 65
+    },
+    "66": {
+      "UID": "1016acfe-afcc-4da8-bcd4-e6ba5f4e1e6b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          65
+        ]
+      },
+      "NodeID": 66
+    },
+    "67": {
+      "UID": "4b362753-3efc-4a1c-9d90-c8d63f1642a7",
+      "name": "checkIsInAutoAim",
+      "NodeID": 67
+    },
+    "88": {
+      "name": "stopEffectStr",
+      "UID": "aec12a13-f185-4b4c-ba04-0c702378b075",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_01",
+      "target": "OWNER",
+      "NodeID": 88
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 55,
+      "UID": "fe31a9b4-cb31-4977-9528-dd7f1cfe62f7"
+    },
+    "89": {
+      "name": "stopEffectStr",
+      "UID": "fb28543a-0683-4b71-b51a-2cf13866cee9",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_01",
+      "target": "OWNER",
+      "NodeID": 89
+    },
+    "48": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "eda45247-89f5-474d-b98c-7fdc1baef2b0",
+      "target": "OWNER",
+      "NodeID": 48,
+      "animId": "Attack03"
+    },
+    "54": {
+      "UID": "4fcfdd95-eced-4826-a60f-fe73c4787c37",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 54
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          30,
+          88,
+          62,
+          80
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 32,
+      "UID": "6390d364-7c50-4079-be56-44ef9ccc475b"
+    },
+    "30": {
+      "offsetXYZ": [
+        0,
+        1,
+        1
+      ],
+      "templateId": 11810400001,
+      "name": "createProjectile",
+      "UID": "95a45a62-0b7b-42bf-923f-9b23fe1040d0",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 30,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "50": {
+      "UID": "a9d7904f-18d8-41ea-9fa0-23b85581b3d0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          81,
+          48,
+          82
+        ]
+      },
+      "NodeID": 50
+    },
+    "62": {
+      "UID": "b3649956-2577-4499-96d6-1fba26fa3e03",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 62
+    },
+    "51": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 51,
+      "UID": "3f0a1eb8-1ef9-473d-ba07-3e4b0048e518",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "80": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "83fba988-fe26-4153-a146-77ac94a76b25",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_whisbird_skill_attack03",
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_11810400",
+  "NodeID": 34,
+  "UID": "3c8124ba-c649-477e-9d9a-c1ba5dcb730e",
+  "eventIds": [
+    32,
+    50,
+    55,
+    52,
+    66
+  ],
+  "layer": "Base",
+  "length": 2.1
+}

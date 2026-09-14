@@ -1,0 +1,39 @@
+{
+  "62077913": {
+    "areaType": 0,
+    "autoSave": false,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "14号地宫",
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 0,
+    "publishTags": [
+      "3DAY_神庙"
+    ],
+    "routes": {},
+    "sandboxType": 2,
+    "name": "Level_FB_Temple_14",
+    "sightLevelType": 512,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 512,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "owner": "徐一乘",
+    "forceSync": true,
+    "id": 62077913,
+    "levelItems": {}
+  }
+}

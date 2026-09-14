@@ -1,0 +1,89 @@
+{
+  "duration": 0.3,
+  "BPName": "ability_14610002",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10461_Attack_03_01",
+  "heightAboveGround": 0.4,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "62": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "3c08ecc8-cc80-4cce-a6d8-6a0d85110f3d",
+      "effectId": "Eff_Parmon_10461_Attack_03_End_01",
+      "speed": 1,
+      "NodeID": 62
+    },
+    "64": {
+      "UID": "dae54a3a-6d33-4d89-b88d-af7cd49803c0",
+      "name": "getBodySize",
+      "NodeID": 64
+    },
+    "39": {
+      "pos": "PROJECTILE",
+      "offsetXYZ": {
+        "NodeID": 66,
+        "name": "constVector3",
+        "UID": "83a53bf4-9679-4e07-8245-736e552eb089",
+        "x": 0,
+        "y": {
+          "rValue": 0.5,
+          "name": "multiply",
+          "UID": "6e045ff6-dcdf-44c8-ba1e-c30de18cf6ba",
+          "NodeID": 65,
+          "lValue": {
+            "UID": "dae54a3a-6d33-4d89-b88d-af7cd49803c0",
+            "name": "getBodySize",
+            "NodeID": 64
+          }
+        },
+        "z": 0
+      },
+      "templateId": 14610002002,
+      "name": "createProjectile",
+      "UID": "ef28cf21-586f-478a-8c34-01d7d2a67b3d",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 39
+    },
+    "43": {
+      "key": "4539901",
+      "name": "setCacheVal",
+      "UID": "a96ac609-1a13-475f-afcf-ec8a0cc4b605",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 43
+    }
+  },
+  "maxHeightOffset": 5,
+  "stickGravity": 0.5,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    62
+  ],
+  "onProjectileHitIds": [
+    43,
+    39
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 9999,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "stickPitchMaxOffset": 40,
+  "tickInterval": 0.1,
+  "gravityRatio": 0,
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

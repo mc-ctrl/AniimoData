@@ -1,0 +1,77 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118703",
+  "NodeID": 1,
+  "UID": "2a14a626-d43b-4bb4-a23e-4d193ffd76cf",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "d47a7c80-2d74-45ce-9508-b5fa65dbe3b9",
+        "NodeID": 8,
+        "lValue": {
+          "rValue": 0.1,
+          "name": "multiply",
+          "UID": "420721d4-09b9-4229-9342-026a427dfb5b",
+          "NodeID": 7,
+          "lValue": {
+            "key": "10187Times",
+            "name": "getCacheVal",
+            "UID": "9e1e3846-e555-4288-97fc-d3d37b011056",
+            "target": "OWNER",
+            "NodeID": 6
+          }
+        }
+      },
+      "name": "multiply",
+      "UID": "86c8dba3-c6f7-436f-8a39-f35a0ab5fd8c",
+      "NodeID": 4,
+      "lValue": {
+        "rValue": {
+          "calcId": 2118703,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 9,
+          "UID": "76eda2c2-1670-4e96-9cb4-a646ca40edec",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "d8a2e461-f124-4ae3-a259-e576fc1c70ff",
+        "NodeID": 3,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "91e05c4d-2d6d-4bde-ba55-5138bdff6549",
+          "target": "OWNER",
+          "NodeID": 2,
+          "attributeName": "hp_max_cur"
+        }
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Shield_Wind"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "9": {
+      "calcId": 2118703,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "76eda2c2-1670-4e96-9cb4-a646ca40edec",
+      "name": "getParamByLuaConfig"
+    }
+  }
+}

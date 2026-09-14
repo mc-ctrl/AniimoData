@@ -1,0 +1,155 @@
+{
+  "nodeMap": {
+    "37": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 35,
+      "NodeID": 37,
+      "UID": "d3c42a85-8cc0-4346-91cd-c495a394fc01",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2001,
+      "actionIds": [
+        35,
+        50
+      ]
+    },
+    "38": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 38,
+      "UID": "db0e0377-2a9e-47b4-ae0f-ce5eb991a7ec"
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3e9e7384-cc19-433b-9e0f-0b453cba270e",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10184_Skill_AerialAce_Explosion",
+      "NodeID": 55
+    },
+    "46": {
+      "cameraShakeId": 21124,
+      "name": "playCameraImpulseById",
+      "UID": "43955ba9-7032-41ae-bbbb-96922e6c97ff",
+      "target": "OWNER",
+      "NodeID": 46
+    },
+    "42": {
+      "UID": "00487590-1a1f-4b08-89fa-8ccb98d3e791",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11840410,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "7f760ed8-605a-491b-aa7b-96e5b0653194",
+      "target": "TARGET",
+      "NodeID": 35,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Wind_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 9,
+        "impulseId": 2001
+      }
+    },
+    "48": {
+      "UID": "d657f340-7406-4f2f-9da4-47a1cb920566",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          55,
+          58,
+          46
+        ]
+      },
+      "NodeID": 48
+    },
+    "50": {
+      "target": "TARGET",
+      "duration": 1,
+      "buffId": 2118408,
+      "NodeID": 50,
+      "UID": "342eae82-efc0-47a0-bb77-233fb32d72f1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "58": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "8b90fd79-7a12-49d6-b882-d15fc7b19ab2",
+      "effectId": "Eff_Parmon_10184_Skill_AerialAce_Explosion_Wind",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 43,
+      "UID": "35506b2b-429e-46d4-a24f-7b9d2d6d087e"
+    }
+  },
+  "BPName": "ability_11840410",
+  "NodeID": 40,
+  "UID": "f0fcbb60-9169-4ec8-b34d-472faed83956",
+  "eventIds": [
+    48,
+    42,
+    43,
+    38
+  ],
+  "layer": "Base",
+  "length": 2.08
+}

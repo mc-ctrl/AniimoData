@@ -1,0 +1,54 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "UID": "394be614-7b26-441e-b795-71fc02cfb67d",
+      "name": "registerDeadEvent",
+      "NodeID": 3
+    },
+    "8": {
+      "UID": "1cecf20d-6845-4023-aace-91ab8eea42d6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          7
+        ]
+      },
+      "NodeID": 8
+    },
+    "7": {
+      "duration": 1,
+      "name": "moveByDirection",
+      "UID": "ddbbf85c-78db-4704-a0bc-8364c33e8bdf",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "velocity": [
+        0,
+        10,
+        0
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 7
+    },
+    "5": {
+      "UID": "425974fc-4996-4a04-9896-7e80d28205d5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    }
+  },
+  "BPName": "timeline_2102701",
+  "NodeID": 1,
+  "UID": "4021d051-67a0-4a2a-ba0f-dff6704f3d3d",
+  "eventIds": [
+    5,
+    8
+  ],
+  "layer": "Base",
+  "length": 15
+}

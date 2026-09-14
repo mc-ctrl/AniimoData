@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_10250005",
+  "NodeID": 1,
+  "UID": "23d6176d-1be4-4703-a3be-f1dfbdc0fed9",
+  "abilityParamId": 11800000,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "9": {
+      "timelineId": 10250005001,
+      "name": "setCombatActionTimeline",
+      "UID": "f072a373-0a8e-4e54-bd87-ed57fc785dca",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Fly_HeavyBreath_Enter",
+    "Fly_HeavyBreath_Loop",
+    "Fly_HeavyBreath_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10025_Skill_Attack04_Air",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "parentDynamicRPCStates": [
+    "FLYING"
+  ],
+  "searchTargetRangeDown": 1
+}

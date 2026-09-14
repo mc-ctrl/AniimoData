@@ -1,0 +1,349 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 1026,
+    "speed_ratio_swim_dash_v": "param2",
+    "speed_ratio_swim_fast_v": "param1",
+    "speed_ratio_swim_v": "param0",
+    "type": 1
+  },
+  "BPName": "buff_1026",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    13,
+    15,
+    22
+  ],
+  "stackRule": 0,
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    28
+  ],
+  "nodeMap": {
+    "51": {
+      "UID": "4c75ee5a-1af0-4458-b507-1de7f49f4ca0",
+      "name": "delVolumeEffect",
+      "index": 5,
+      "NodeID": 51
+    },
+    "38": {
+      "duration": 9999,
+      "name": "playFovCameraAnim",
+      "UID": "56a68f27-c338-4b1b-b11d-f236e7f889dc",
+      "blendInTime": 0,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CommonFOV_60",
+      "target": "CURPET",
+      "blendOutTime": 0.2,
+      "NodeID": 38
+    },
+    "39": {
+      "name": "stopEffectStr",
+      "UID": "f7255f26-d88d-4a31-b06e-11a78cac38bb",
+      "effectId": "Eff_Buff_Swim_Acc",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "6": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 6,
+      "UID": "11cee11b-7af8-47d6-b055-a7701f4c96b9",
+      "effectId": "Eff_Buff_Swim_Acc",
+      "applyInCharacterStates": [
+        "SWIMFASTMOVE",
+        "SWIMDASH",
+        "SWIMMOVE"
+      ],
+      "name": "playEffectStr"
+    },
+    "41": {
+      "name": "fadeFovCameraAnimOnVelocityChange",
+      "UID": "745bae35-41d5-4b63-be18-c06de747f355",
+      "target": "OWNER",
+      "fadeTime": 0.5,
+      "NodeID": 41
+    },
+    "42": {
+      "key": "enableFadeByVelocity1",
+      "duration": 1,
+      "actionIds": [
+        41
+      ],
+      "NodeID": 42,
+      "UID": "45b1de06-ef56-4852-93ab-b620c1c8189c",
+      "name": "addTimer"
+    },
+    "7": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "1354bc76-d098-4a8e-a5e7-99edb34d0464",
+      "effectId": "Eff_Buff_Swim_Acc_Start",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "44": {
+      "name": "fadeFovCameraAnimOnVelocityChange",
+      "UID": "d6c7ae5c-e97f-4818-bebc-e3fb9a3bcf80",
+      "target": "CURPET",
+      "fadeTime": 0.5,
+      "NodeID": 44
+    },
+    "28": {
+      "actionIds": [
+        30,
+        32
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "e27b5b8b-70e8-4f56-8897-020ab0e16a26",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "45": {
+      "key": "enableFadeByVelocity2",
+      "duration": 1,
+      "actionIds": [
+        44
+      ],
+      "NodeID": 45,
+      "UID": "3d5a9b58-accc-4c65-bda9-eb7837fa43fa",
+      "name": "addTimer"
+    },
+    "9": {
+      "UID": "0bacbda4-fa34-4934-8b97-36252b185118",
+      "newPetActionIds": [
+        7,
+        10,
+        25
+      ],
+      "name": "registerPetOnSwitchEvent",
+      "NodeID": 9
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "506ca779-5bdb-45c2-8150-ec8270adcea2",
+      "effectId": "Eff_Buff_Swim_Acc",
+      "target": "CURPET",
+      "NodeID": 40
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "532b0c49-3e43-45a9-b6a5-503ae9d2e540",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "11": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "0f012446-3f26-4e92-a7a1-833a769da7ca",
+      "effectId": "Eff_Buff_Swim_Acc_Start",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "88b4a78d-142d-4f81-b230-6fe27589fe69",
+      "NodeID": 20,
+      "lValue": {
+        "UID": "b759ee34-2529-412c-85fc-e5c9e8ffb163",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 19
+      }
+    },
+    "12": {
+      "target": "CURPET",
+      "speed": 1,
+      "NodeID": 12,
+      "UID": "435ce1d4-43a3-41ea-a7fa-b96759feb2ab",
+      "effectId": "Eff_Buff_Swim_Acc",
+      "applyInCharacterStates": [
+        "SWIMFASTMOVE",
+        "SWIMDASH",
+        "SWIMMOVE"
+      ],
+      "name": "playEffectStr"
+    },
+    "22": {
+      "actionIds": [
+        36,
+        38
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "77045d46-149f-4580-b164-6d82fb354e4b",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0d403085-7198-494e-ae48-64fefa426f7f",
+      "effectId": "Eff_Buff_Swim_Acc_Start",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "24": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "2d940aa4-b1c4-4ea2-b599-916c7f5ba3f6",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "35": {
+      "UID": "8f24071b-daa6-4327-91a3-1fa673b8cad3",
+      "target": "CURPET",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 35
+    },
+    "10": {
+      "target": "CURPET",
+      "speed": 1,
+      "NodeID": 10,
+      "UID": "915658f2-e76b-408a-9c9c-2034aaee68db",
+      "effectId": "Eff_Buff_Swim_Acc",
+      "applyInCharacterStates": [
+        "SWIMDASH",
+        "SWIMFASTMOVE",
+        "SWIMMOVE"
+      ],
+      "name": "playEffectStr"
+    },
+    "15": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "e1051350-ff57-4399-91eb-7437241d184d",
+      "effectId": "Eff_Buff_Swim_Acc_Start",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "25": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "384dd93a-2201-42ba-9af9-6a26f72e2ab5",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7d852081-8c81-4d1a-b3cb-5ced55cd5a2e",
+      "effectId": "Eff_Buff_Swim_Acc_Start",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "27": {
+      "rValue": 1,
+      "name": "greater",
+      "UID": "01578e2a-0593-4c6a-943e-882817f3eae1",
+      "NodeID": 27,
+      "lValue": {
+        "UID": "5b7d174e-e301-4f8d-a16d-e8400acdf1cc",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 26
+      }
+    },
+    "17": {
+      "UID": "06f0e7c0-1e9b-4041-ad04-535e2dcfd944",
+      "target": "OWNER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 17
+    },
+    "49": {
+      "NodeID": 49,
+      "UID": "5889dbb1-54aa-45b4-842a-1c8e9d4471ec",
+      "name": "addVolumeEffect",
+      "applyInCharacterStates": [
+        "SWIMFASTMOVE",
+        "SWIMDASH",
+        "SWIMMOVE",
+        "SWIMJUMP",
+        "FALL"
+      ],
+      "index": 5
+    },
+    "30": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "9120a442-6d88-4c02-b361-1367ce771aba",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "speed": 1,
+      "NodeID": 30
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ff38e2a2-7b45-4a03-8047-e3aa8582cdf5",
+      "effectId": "Eff_Buff_Swim_Acc_Speedline",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "33": {
+      "duration": 9999,
+      "name": "playFovCameraAnim",
+      "UID": "5fc9e183-11e6-4845-8c2f-3818c0284d21",
+      "blendInTime": 0.2,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "FOV_Swim_Acc01",
+      "target": "OWNER",
+      "blendOutTime": 0.35,
+      "NodeID": 33
+    },
+    "34": {
+      "duration": 9999,
+      "name": "playFovCameraAnim",
+      "UID": "bbdd1a17-99b6-4e15-bfd3-67ca92ab6121",
+      "blendInTime": 0.2,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "FOV_Swim_Acc01",
+      "target": "CURPET",
+      "blendOutTime": 0.35,
+      "NodeID": 34
+    },
+    "36": {
+      "duration": 9999,
+      "name": "playFovCameraAnim",
+      "UID": "db53eda3-2eb7-4340-b72f-06036a31b024",
+      "blendInTime": 0,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CommonFOV_60",
+      "target": "OWNER",
+      "blendOutTime": 0.2,
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    17,
+    35,
+    39,
+    40,
+    51
+  ],
+  "onBuffStartIds": [
+    4,
+    6,
+    23,
+    11,
+    12,
+    24,
+    9,
+    33,
+    34,
+    42,
+    45,
+    49
+  ]
+}

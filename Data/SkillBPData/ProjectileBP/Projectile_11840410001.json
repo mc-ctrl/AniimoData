@@ -1,0 +1,52 @@
+{
+  "refControlPoint": [
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "duration": 4,
+  "calcResultNodeId": 35,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10184_Skill_AerialAce_Bullet_Wind",
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "BezierCurve",
+  "nodeMap": {
+    "41": {
+      "pos": "PROJECTILE",
+      "name": "createSpellField",
+      "UID": "9520208c-4ce4-40d9-93b8-9850fd398190",
+      "timelineId": 11840410002,
+      "destroyOnMasterDead": false,
+      "NodeID": 41
+    }
+  },
+  "moveSpeed": 16,
+  "onProjectileHitIds": [
+    41
+  ],
+  "refTargetPoint": [
+    0,
+    0,
+    -2
+  ],
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "BPName": "ability_11840410",
+  "tickInterval": 0,
+  "refStartPoint": [
+    0,
+    0,
+    8
+  ],
+  "startSleepTime": 0,
+  "maxHitNum": 0,
+  "defaultHitSoundType": "h",
+  "impulseId": 2001,
+  "acceleration": 0
+}

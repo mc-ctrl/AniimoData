@@ -1,0 +1,170 @@
+[
+  {
+    "tableConnectName": "load_tips_data",
+    "tableName": "load_tips_data",
+    "content": "button",
+    "contentConnect": "txt"
+  },
+  {
+    "tableConnectName": "pet_research_content_data",
+    "tableName": "puppet_instance_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_research_content_data",
+    "tableName": "pet_prototype_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_character_data",
+    "tableName": "pet_character_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_nature_data",
+    "tableName": "pet_nature_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_research_content_data",
+    "tableName": "pet_research_content_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_prototype_data",
+    "tableName": "pet_avatar_data",
+    "content": "desc",
+    "contentConnect": "name"
+  },
+  {
+    "tableConnectName": "pet_prototype_data",
+    "tableName": "pet_research_photo_data",
+    "content": "name",
+    "contentConnect": "name"
+  },
+  {
+    "tableConnectName": "pet_prototype_data",
+    "tableName": "pet_research_photo_data",
+    "content": "clue",
+    "contentConnect": "name"
+  },
+  {
+    "tableConnectName": "pet_prototype_data",
+    "tableName": "pet_research_photo_data",
+    "content": "bief",
+    "contentConnect": "name"
+  },
+  {
+    "tableConnectName": "pet_prototype_data",
+    "tableName": "pet_research_photo_data",
+    "content": "story",
+    "contentConnect": "name"
+  },
+  {
+    "tableConnectName": "item_data",
+    "tableName": "item_data",
+    "content": "itemName",
+    "contentConnect": "funcRep"
+  },
+  {
+    "tableConnectName": "ability_param_data",
+    "tableName": "ability_param_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "player_skill_data",
+    "tableName": "player_skill_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "quest_delegation",
+    "tableName": "quest_delegation",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "npc_dialogue_data",
+    "tableName": "npc_dialogue_data",
+    "content": "chat",
+    "contentConnect": "npcName"
+  },
+  {
+    "tableConnectName": "buff_config_data",
+    "tableName": "buff_config_data",
+    "content": "buffName",
+    "contentConnect": "buffDesc"
+  },
+  {
+    "tableConnectName": "buff_config_data",
+    "tableName": "buff_config_data",
+    "content": "buffDesc",
+    "contentConnect": "buffName"
+  },
+  {
+    "tableConnectName": "guidence_item_data",
+    "tableName": "guidence_item_data",
+    "content": "name",
+    "contentConnect": "text"
+  },
+  {
+    "tableConnectName": "pet_character_data",
+    "tableName": "pet_character_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_nature_data",
+    "tableName": "pet_nature_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_research_content_data",
+    "tableName": "pet_research_content_data",
+    "content": "firstShowDesc",
+    "contentConnect": "name"
+  },
+  {
+    "tableConnectName": "item_data",
+    "tableName": "item_data",
+    "content": "itemName",
+    "contentConnect": "funcRep"
+  },
+  {
+    "tableConnectName": "player_skill_data",
+    "tableName": "player_skill_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "pet_chat_data",
+    "tableName": "pet_chat_data",
+    "content": "DialogueText",
+    "contentConnect": "DialogueTrans"
+  },
+  {
+    "tableConnectName": "quest_delegation",
+    "tableName": "quest_delegation",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "setting_func_list_data",
+    "tableName": "setting_func_list_data",
+    "content": "name",
+    "contentConnect": "desc"
+  },
+  {
+    "tableConnectName": "gamestring_config_data",
+    "tableName": "gamestring_config_data",
+    "content": "desc",
+    "contentConnect": "func"
+  }
+]

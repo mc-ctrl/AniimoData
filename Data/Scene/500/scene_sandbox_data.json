@@ -1,0 +1,415 @@
+{
+  "80343538": {
+    "areaType": 999,
+    "position": [
+      -68.85,
+      6.01,
+      269.92
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK",
+      "3DAY_支线"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_体素活动_故障招牌",
+    "spawners": [
+      80343540,
+      80343542,
+      80343544,
+      80343546,
+      80343548,
+      80343550,
+      80343552,
+      80343554,
+      80343556,
+      80343558,
+      80343560,
+      80343562,
+      80343564,
+      80343568,
+      80343570,
+      80343572,
+      80343574,
+      80343588,
+      80343590,
+      80343592,
+      80343594,
+      80343596,
+      80343598
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343538,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "胡鹏",
+    "autoEndType": 0,
+    "chunk": 1017831
+  },
+  "80343610": {
+    "areaType": 999,
+    "position": [
+      -70.67,
+      6.56,
+      243.94
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_座椅打开报纸",
+    "spawners": [
+      80343612,
+      80343614,
+      80343616,
+      80343618,
+      80343620,
+      80343622,
+      80343624,
+      80343626,
+      80343628,
+      80343630,
+      80343632,
+      80343634,
+      80343636,
+      80343638,
+      80343640,
+      80343642
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343610,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "刘飘扬",
+    "autoEndType": 0,
+    "chunk": 1017830
+  },
+  "80343658": {
+    "areaType": 999,
+    "chunk": 1017825,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_老虎机",
+    "spawners": [
+      80343660,
+      80343662,
+      80343664,
+      80343666,
+      80343668,
+      80343670,
+      80343672,
+      80343674,
+      80343676,
+      80343678
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343658,
+    "startVersion": "0.0",
+    "lastModifiedBy": "",
+    "spawnerId": 0,
+    "position": [
+      -67.16,
+      2.3,
+      -72.51
+    ],
+    "autoEndType": 0,
+    "owner": "刘飘扬"
+  },
+  "80343680": {
+    "areaType": 999,
+    "position": [
+      -60.84,
+      7.92,
+      188.39
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_秋千",
+    "spawners": [
+      80343682,
+      80343684
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343680,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "刘飘扬",
+    "autoEndType": 0,
+    "chunk": 1018853
+  },
+  "80343686": {
+    "areaType": 999,
+    "position": [
+      -72.37,
+      12.43,
+      65.07
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_地面音乐灯带",
+    "spawners": [
+      80343688,
+      80343690,
+      80343692,
+      80343694,
+      80343696,
+      80343698,
+      80343700,
+      80343702,
+      80343704,
+      80343706,
+      80343708,
+      80343710,
+      80343712,
+      80343714,
+      80343716,
+      80343718
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343686,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "胡鹏",
+    "autoEndType": 0,
+    "chunk": 1017828
+  },
+  "80343723": {
+    "areaType": 999,
+    "position": [
+      -70.69,
+      2.24,
+      160.7
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_跷跷板",
+    "spawners": [
+      80343725,
+      80343727
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343723,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "刘飘扬",
+    "autoEndType": 0,
+    "chunk": 1017829
+  },
+  "80343515": {
+    "areaType": 999,
+    "position": [
+      -67.38,
+      8.24,
+      306.28
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_音序器",
+    "spawners": [
+      80343517
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343515,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "刘飘扬",
+    "autoEndType": 0,
+    "chunk": 1017831
+  },
+  "80356346": {
+    "areaType": 999,
+    "position": [
+      -71.55,
+      7.97,
+      -105.57
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_街头艺宠",
+    "spawners": [
+      80356348
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80356346,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "刘飘扬",
+    "autoEndType": 0,
+    "chunk": 1017825
+  },
+  "80367378": {
+    "areaType": 999,
+    "position": [
+      -69.99,
+      8.05,
+      336.85
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_收集奖励-7day",
+    "spawners": [
+      80367443,
+      80367445,
+      80367468,
+      80367470,
+      80367472,
+      80367474,
+      80367476,
+      80367480,
+      80367491,
+      80367493,
+      80367495,
+      80367497,
+      80367500,
+      80367502,
+      80367505,
+      80367507,
+      80367509,
+      80367511,
+      80367513,
+      80367515,
+      80367517
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80367378,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "旺旺",
+    "autoEndType": 0,
+    "chunk": 1017832
+  },
+  "80343521": {
+    "areaType": 999,
+    "position": [
+      -46.49,
+      41.64,
+      445.72
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 601,
+    "publishTags": [
+      "3DAY_ARK"
+    ],
+    "routes": {},
+    "sandboxType": 3,
+    "name": "全局_多人城市_打开商店招牌",
+    "spawners": [
+      80343523,
+      80343525,
+      80343527,
+      80343529,
+      80343531,
+      80343533,
+      80343535,
+      80343537
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 80343521,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "刘飘扬",
+    "autoEndType": 0,
+    "chunk": 1018857
+  }
+}

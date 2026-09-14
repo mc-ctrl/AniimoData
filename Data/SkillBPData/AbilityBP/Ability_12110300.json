@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_12110300",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "冲！",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12110300001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicFlower"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10211_Skill_MagicFlower_Body",
+    "Eff_Parmon_Futternym_10232_Skill_Shadowcure_05"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600920,
+  "name": "普通冲撞"
+}

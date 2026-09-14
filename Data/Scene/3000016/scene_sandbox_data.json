@@ -1,0 +1,23 @@
+{
+  "81925476": {
+    "owner": "曾楠",
+    "sandboxType": 3,
+    "chunk": 1008632,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "id": 81925476,
+    "spawners": [
+      81928398
+    ],
+    "enableFinishMark": false,
+    "sandBoxLevel": 0,
+    "position": [
+      -700.9,
+      150.4,
+      1373.47
+    ],
+    "markIconSpawnerId": 0,
+    "poiType": 503,
+    "name": "板块1青石台_其他关卡_螳螂头目篝火"
+  }
+}

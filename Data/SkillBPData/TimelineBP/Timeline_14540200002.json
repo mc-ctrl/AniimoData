@@ -1,0 +1,120 @@
+{
+  "nodeMap": {
+    "52": {
+      "UID": "9d221516-82de-4629-8cce-595fa445dd3c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50,
+          127,
+          155,
+          178
+        ]
+      },
+      "NodeID": 52
+    },
+    "82": {
+      "UID": "55eadd0c-3773-48c2-ab75-77ba5f82b2a6",
+      "name": "setMask",
+      "mask": {},
+      "NodeID": 82
+    },
+    "76": {
+      "UID": "76dd1c53-3e39-4698-b1bf-9abc0925afac",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 1
+      },
+      "NodeID": 76
+    },
+    "84": {
+      "UID": "269bd30b-933a-4c7c-8651-4ff8ff2f5850",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          82
+        ]
+      },
+      "NodeID": 84
+    },
+    "77": {
+      "action": {
+        "actionIds": [
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 77,
+      "UID": "e836f212-9c3b-4352-bbb0-7e6d796b84b8"
+    },
+    "178": {
+      "NodeID": 178,
+      "from": 14540200,
+      "to": 14540200,
+      "isAutoRecoverByDuration": true,
+      "overrideDuration": 5,
+      "recoverOnExit": true,
+      "name": "switchSkill",
+      "UID": "182ab2b4-c8ac-4690-9cf9-9fcddc657360",
+      "notShowCountDown": false
+    },
+    "155": {
+      "name": "stopEffectStr",
+      "UID": "036d5a5c-24db-49e5-a93f-5d69e4270869",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_move_02",
+      "target": "OWNER",
+      "NodeID": 155
+    },
+    "50": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "06c90e55-2af9-4973-b87d-f12e45e70839",
+      "target": "OWNER",
+      "NodeID": 50,
+      "animId": "Skill_RollingBall_End"
+    },
+    "79": {
+      "UID": "bfa594d7-8adc-4904-b10a-550bdea517a9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "cancellable": 0
+      },
+      "NodeID": 79
+    },
+    "127": {
+      "name": "stopEffectStr",
+      "UID": "a4d77854-5519-4956-a7bb-fc3b1e0bdbfe",
+      "effectId": "Eff_Parmon_10454_Skill_RollingBall_move",
+      "target": "OWNER",
+      "NodeID": 127
+    },
+    "80": {
+      "UID": "30f60e14-a314-41ab-8fa3-64241fc4d410",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          79
+        ]
+      },
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_14540200",
+  "NodeID": 54,
+  "UID": "21a9359e-d471-4629-888c-c321593a2bb8",
+  "eventIds": [
+    80,
+    77,
+    84,
+    52
+  ],
+  "layer": "Base",
+  "length": 2
+}

@@ -1,0 +1,117 @@
+{
+  "20040": {
+    "source": 661,
+    "limitId": 38,
+    "totalLimitId": 36
+  },
+  "1005": {
+    "source": 661,
+    "limitId": 38,
+    "totalLimitId": 36
+  },
+  "10040": {
+    "sort": 6,
+    "limitId": 42,
+    "name": 1313341013,
+    "source": 748,
+    "icon": "$UI_Event_Icon_MedalDetail_HomeOrderIcon.png",
+    "desc": 1747030378,
+    "reward": 1013087,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration1.png",
+    "totalLimitId": 36,
+    "showCondition": 60001
+  },
+  "10051": {
+    "source": 507,
+    "limitId": 39,
+    "totalLimitId": 36
+  },
+  "10053": {
+    "sort": 7,
+    "limitId": 45,
+    "name": 2108649358,
+    "source": 793,
+    "icon": "$UI_Event_Icon_SchoolGuide_Medal.png",
+    "desc": 1326918474,
+    "reward": 1013088,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration8.png",
+    "totalLimitId": 36
+  },
+  "20022": {
+    "sort": 2,
+    "limitId": 38,
+    "name": 1515694652,
+    "source": 661,
+    "icon": "$UI_Event_Icon_MedalDetail_ChieftainIcon.png",
+    "desc": 1251318380,
+    "reward": 1013082,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration3.png",
+    "totalLimitId": 36
+  },
+  "2033": {
+    "sort": 1,
+    "limitId": 43,
+    "name": 2108729415,
+    "source": 749,
+    "icon": "$UI_Event_Icon_MedalDetail_SmallWhiteBallIcon.png",
+    "desc": 2127535372,
+    "reward": 1013081,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration7.png",
+    "totalLimitId": 36
+  },
+  "2008": {
+    "reward": 1013081,
+    "limitId": 37,
+    "totalLimitId": 36,
+    "name": 1969112725,
+    "source": 658,
+    "icon": "$UI_Event_Icon_MedalDetail_CaptureIcon.png",
+    "desc": 2078085888,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration4.png"
+  },
+  "20017": {
+    "sort": 5,
+    "limitId": 41,
+    "name": 1475455353,
+    "source": 712,
+    "icon": "$UI_Event_Icon_MedalDetail_PetEggIcon.png",
+    "desc": 1402631726,
+    "reward": 1013085,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration5.png",
+    "totalLimitId": 36,
+    "showCondition": 1305
+  },
+  "5104": {
+    "reward": 1013088,
+    "limitId": 43,
+    "totalLimitId": 36,
+    "name": 1241881605,
+    "source": 749,
+    "icon": "$UI_Event_Icon_MedalDetail_SmallWhiteBallIcon.png",
+    "desc": 1436822763,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration9.png"
+  },
+  "10036": {
+    "sort": 3,
+    "limitId": 39,
+    "name": 1527803151,
+    "source": 507,
+    "icon": "$UI_Img_Traning_TabIcon_Nml4.png",
+    "desc": 1241681996,
+    "reward": 1013083,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration6.png",
+    "totalLimitId": 36
+  },
+  "10029": {
+    "sort": 4,
+    "limitId": 40,
+    "name": 1418821727,
+    "source": 713,
+    "icon": "$UI_Img_Traning_TabIcon_Nml4.png",
+    "desc": 1749540855,
+    "reward": 1013084,
+    "picture": "$UI_Img_Event_MedalDetail_Illustration2.png",
+    "totalLimitId": 36,
+    "showCondition": 1102
+  }
+}

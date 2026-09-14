@@ -1,0 +1,195 @@
+{
+  "76700580": {
+    "areaType": 999,
+    "chunk": 1014755,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      76706065,
+      76706066
+    ],
+    "sandboxType": 1,
+    "name": "全局_生态点_烟囱蚁跑步锻炼",
+    "spawners": [
+      76700582
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 76700580,
+    "spawnerId": 0,
+    "owner": "戴婧",
+    "position": [
+      -263.25,
+      0.1,
+      20.5
+    ]
+  },
+  "77194683": {
+    "areaType": 999,
+    "autoSave": false,
+    "chunk": 1014755,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "autoSetContent1": true,
+      "compassShowDistance": 0,
+      "initState": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 77194683,
+      "nearState": 0,
+      "poiStaticIdType": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "positionParam": [
+        0,
+        0
+      ],
+      "SloganPlayOnce": false,
+      "POIBoundStaticId": 0,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "inactiveTitle": "关键生态点",
+      "markType": 0,
+      "openMapState": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "arriveParam": {},
+      "affiliatedCamp": {},
+      "arriveType": 1,
+      "entityStaticIdType": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      77352760,
+      81536162
+    ],
+    "startVersion": "0.0",
+    "sandboxType": 6,
+    "name": "全局_关键生态点_烟囱蚁滑翔练习",
+    "sightLevelType": 128,
+    "spawners": [
+      77194687
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "position": [
+      -312.28,
+      0.1,
+      21.46
+    ],
+    "owner": "戴婧",
+    "id": 77194683,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "77361571": {
+        "majorCompId": 0,
+        "owner": "戴婧",
+        "EditorName": "P_NoLeafFan_NonPhysics_SB",
+        "position": [
+          -312.47,
+          0.1,
+          21.61
+        ],
+        "rotation": [
+          270,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 77361571,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 86,
+        "defaultValue": {
+          "isOn": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "disposable": true
+  },
+  "76778205": {
+    "areaType": 999,
+    "position": [
+      -288.46,
+      0.1,
+      21.07
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "30DAY_通用"
+    ],
+    "routes": [
+      76779111,
+      76954306,
+      76954307
+    ],
+    "sandboxType": 1,
+    "name": "全局_生态点_烟囱蚁打靶训练",
+    "spawners": [
+      76778208
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 76778205,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "戴婧",
+    "autoEndType": 0,
+    "chunk": 1014755
+  }
+}

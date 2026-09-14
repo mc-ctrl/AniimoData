@@ -1,0 +1,61 @@
+{
+  "20004": {
+    "hitFrameFreezeId": 10001,
+    "Type": "Skill_normal",
+    "stage": 2,
+    "impulseId": 2000,
+    "hitCameraShakeId": 10001
+  },
+  "20005": {
+    "stage": 2,
+    "Type": "Skill_ex",
+    "impulseId": 5003
+  },
+  "10004": {
+    "hitFrameFreezeId": 10001,
+    "Type": "Skill_normal",
+    "stage": 1,
+    "impulseId": 2000,
+    "hitCameraShakeId": 10001
+  },
+  "10001": {
+    "hitFrameFreezeId": 10011,
+    "Type": "NormAtk_normal",
+    "stage": 1,
+    "impulseId": 2000,
+    "hitCameraShakeId": 20100
+  },
+  "10002": {
+    "hitFrameFreezeId": 10013,
+    "Type": "NormAtk_end",
+    "stage": 1,
+    "impulseId": 3000,
+    "hitCameraShakeId": 20101
+  },
+  "10003": {
+    "hitFrameFreezeId": 10011,
+    "Type": "Skill_end",
+    "stage": 1,
+    "impulseId": 5000,
+    "hitCameraShakeId": 20101
+  },
+  "20001": {
+    "impulseId": 2000,
+    "stage": 2,
+    "Type": "NormAtk_normal",
+    "hitCameraShakeId": 20100
+  },
+  "20002": {
+    "hitFrameFreezeId": 10014,
+    "Type": "NormAtk_end",
+    "stage": 2,
+    "impulseId": 5002,
+    "hitCameraShakeId": 20101
+  },
+  "20003": {
+    "impulseId": 5002,
+    "stage": 2,
+    "Type": "Skill_end",
+    "hitCameraShakeId": 10003
+  }
+}

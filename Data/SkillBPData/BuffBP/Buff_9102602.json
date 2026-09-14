@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "atk_fix": {
+      "rValue": {
+        "calcId": 9102602,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 12,
+        "UID": "4206e8af-18c2-4c22-8471-34297fc73fd2",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "88072da0-2e92-4ddc-9e40-21caf1d2cea7",
+      "NodeID": 10,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "562fe235-41ad-455c-a17c-a4df4474c03a",
+        "target": "OWNER",
+        "NodeID": 9,
+        "attributeName": "def_cur"
+      }
+    }
+  },
+  "NodeID": 1,
+  "UID": "f2aa1a8d-0678-47e1-83f5-0e5a225a2890",
+  "icon": "",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_9102602"
+}

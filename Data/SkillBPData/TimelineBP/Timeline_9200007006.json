@@ -1,0 +1,38 @@
+{
+  "nodeMap": {
+    "285": {
+      "UID": "71234a50-e7e2-4ada-adf1-29ff35b3106e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          290,
+          283
+        ]
+      },
+      "NodeID": 285
+    },
+    "283": {
+      "timelineId": 92000072,
+      "name": "jumpToNextTimeline",
+      "UID": "232e3493-a205-4754-937f-2f5fe06fa5cd",
+      "target": "OWNER",
+      "NodeID": 283
+    },
+    "290": {
+      "UID": "f8c734f0-7a8b-4cb2-942a-90691c3a610a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 290
+    }
+  },
+  "BPName": "ability_9200007",
+  "NodeID": 287,
+  "UID": "97946550-d715-4081-ab46-dd2ef9b6ef42",
+  "eventIds": [
+    285
+  ],
+  "layer": "Base",
+  "length": 2.73
+}

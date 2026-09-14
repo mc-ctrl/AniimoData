@@ -1,0 +1,30 @@
+[
+  {
+    "stopMatchTime": 15,
+    "useCd": 10,
+    "stopMatchDistance": 10,
+    "minscore": 0,
+    "formulaId": 6003,
+    "guidemaxNum": 10,
+    "maxMatchTime": 180,
+    "meetmaxNum": 1,
+    "itemId": 6000,
+    "sameaction": 2,
+    "socialFormulaId": 6004,
+    "actionId": 801105
+  },
+  {
+    "stopMatchTime": 15,
+    "useCd": 10,
+    "stopMatchDistance": 10,
+    "minscore": 0,
+    "formulaId": 6005,
+    "guidemaxNum": 10,
+    "maxMatchTime": 180,
+    "meetmaxNum": 1,
+    "itemId": 6000,
+    "sameaction": 2,
+    "socialFormulaId": 6006,
+    "actionId": 801104
+  }
+]

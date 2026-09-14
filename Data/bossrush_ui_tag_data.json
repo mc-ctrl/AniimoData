@@ -1,0 +1,59 @@
+{
+  "Ongoing_Skill": {
+    "ui_tag_name": 1654928590
+  },
+  "Phy_Dmg": {
+    "ui_tag_name": 1413870509
+  },
+  "Fly": {
+    "ui_tag_name": 1665314235
+  },
+  "Range_Attack": {
+    "ui_tag_name": 2107950988
+  },
+  "Rock": {
+    "ui_tag_name": 1164736200
+  },
+  "Shield_Break": {
+    "ui_tag_name": 1137776988
+  },
+  "Under": {
+    "ui_tag_name": 1150207736
+  },
+  "Water_Buff": {
+    "ui_tag_name": 1915450392
+  },
+  "Quake": {
+    "ui_tag_name": 1408712199
+  },
+  "Charge_Skill": {
+    "ui_tag_name": 1215067014
+  },
+  "Field_Create": {
+    "ui_tag_name": 1543673442
+  },
+  "Fire_Buff": {
+    "ui_tag_name": 2062750199
+  },
+  "Grass_Buff": {
+    "ui_tag_name": 1558615726
+  },
+  "Heal": {
+    "ui_tag_name": 1115906477
+  },
+  "Mag_Dmg": {
+    "ui_tag_name": 2029937693
+  },
+  "Many_Dmg": {
+    "ui_tag_name": 1737157086
+  },
+  "Many_Skill": {
+    "ui_tag_name": 1479779339
+  },
+  "Melee_Attack": {
+    "ui_tag_name": 2104427615
+  },
+  "Normal_Attack": {
+    "ui_tag_name": 1522516968
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "Fire": {
+    "Fire": 0.625,
+    "Grass": 1.6,
+    "Ice": 1.6,
+    "Rock": 0.625,
+    "Wind": 1,
+    "Holy": 0.625,
+    "Dark": 1,
+    "Water": 0.625,
+    "Electric": 1
+  },
+  "Grass": {
+    "Fire": 0.625,
+    "Grass": 0.625,
+    "Ice": 1,
+    "Rock": 1.6,
+    "Wind": 1,
+    "Holy": 0.625,
+    "Dark": 1,
+    "Water": 1.6,
+    "Electric": 1
+  },
+  "Ice": {
+    "Fire": 0.625,
+    "Grass": 1,
+    "Ice": 0.625,
+    "Rock": 0.625,
+    "Wind": 1,
+    "Holy": 1,
+    "Dark": 1,
+    "Water": 1.6,
+    "Electric": 1.6
+  },
+  "Rock": {
+    "Fire": 1.6,
+    "Grass": 0.625,
+    "Ice": 1.6,
+    "Rock": 0.625,
+    "Wind": 1,
+    "Holy": 1,
+    "Dark": 0.625,
+    "Water": 0.625,
+    "Electric": 1
+  },
+  "Wind": {
+    "Fire": 1,
+    "Grass": 1.6,
+    "Ice": 1,
+    "Rock": 1,
+    "Wind": 0.625,
+    "Holy": 1,
+    "Dark": 1.6,
+    "Water": 1,
+    "Electric": 0.625
+  },
+  "Holy": {
+    "Fire": 1,
+    "Grass": 1,
+    "Ice": 1,
+    "Rock": 1,
+    "Wind": 1.6,
+    "Holy": 0.625,
+    "Dark": 1.6,
+    "Water": 1,
+    "Electric": 0.625
+  },
+  "Dark": {
+    "Fire": 1,
+    "Grass": 1.6,
+    "Ice": 1,
+    "Rock": 1,
+    "Wind": 0.625,
+    "Holy": 1.6,
+    "Dark": 1,
+    "Water": 0.625,
+    "Electric": 1.6
+  },
+  "Water": {
+    "Fire": 1.6,
+    "Grass": 0.625,
+    "Ice": 0.625,
+    "Rock": 1.6,
+    "Wind": 1,
+    "Holy": 0.625,
+    "Dark": 1,
+    "Water": 0.625,
+    "Electric": 1
+  },
+  "Electric": {
+    "Fire": 1,
+    "Grass": 1,
+    "Ice": 0.625,
+    "Rock": 0.625,
+    "Wind": 1.6,
+    "Holy": 1,
+    "Dark": 1,
+    "Water": 1.6,
+    "Electric": 0.625
+  }
+}

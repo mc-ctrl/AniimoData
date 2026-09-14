@@ -1,0 +1,159 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10510560",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10051_Fireball",
+  "duration": 1,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "defaultHitSoundType": "s",
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    84
+  ],
+  "onProjectileHitIds": [
+    30,
+    84
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "48": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "10569c43-8c48-4c52-84cb-9b4d661a39d5",
+      "name": "doActionsByConditions",
+      "NodeID": 48
+    },
+    "28": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 20101,
+        "hitFrameFreezeId": -1,
+        "elementType": 0,
+        "isPlayRadialBlur": true,
+        "impulseId": 3000,
+        "defaultHitEffect": "Eff_Hit_Fire_Blunt"
+      },
+      "UID": "eb004df1-af24-4ee1-88cf-afe856658460",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 28
+    },
+    "49": {
+      "UID": "ff292ded-2168-4d4a-a0bf-82de53c92b71",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 49
+    },
+    "30": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 28,
+      "NodeID": 30,
+      "UID": "00069a97-6512-4572-834c-aede82e8b18c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3000,
+      "actionIds": [
+        28,
+        52,
+        82,
+        48
+      ]
+    },
+    "82": {
+      "UID": "6e9f9a72-2759-4333-a563-7bab2ec9ad22",
+      "value": "ball",
+      "name": "print",
+      "NodeID": 82
+    },
+    "84": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 101312,
+      "name": "createEntity",
+      "UID": "919761b6-f83a-455a-8bf5-1a879a03b587",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "NodeID": 84,
+      "pos": {
+        "UID": "0339e17a-fe9b-4c6b-8e10-43b03e0ea65e",
+        "name": "getProjectilePos",
+        "NodeID": 83
+      }
+    },
+    "47": {
+      "calcInfo": {},
+      "name": "calcResult",
+      "UID": "e17ee39a-9601-499a-9b37-785339728c67",
+      "target": "CASTER",
+      "NodeID": 47
+    },
+    "52": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "6389513e-3527-4efa-abe8-21b7735072ce",
+      "effectId": "Eff_Parmon_10051_Fireball_Hit",
+      "speed": 1.01,
+      "NodeID": 52
+    }
+  },
+  "tickInterval": 0.01,
+  "calcResultNodeId": 28,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Fire_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 3000,
+  "acceleration": 0
+}

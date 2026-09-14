@@ -1,0 +1,53 @@
+{
+  "BPName": "ability_910230423",
+  "NodeID": 1,
+  "UID": "829d2bff-ae0b-47be-bbf3-f1c3a9e5e797",
+  "desc": "",
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "62": {
+      "timelineId": 910230423001,
+      "name": "setCombatActionTimeline",
+      "UID": "091bb744-6ae2-4084-97f2-fa861668a56e",
+      "target": "CASTER",
+      "NodeID": 62
+    },
+    "160": {
+      "buffId": 2102323,
+      "name": "removeBuff",
+      "UID": "ae846132-6577-40b7-a566-fd4d910c91a5",
+      "target": "CURPET",
+      "NodeID": 160
+    }
+  },
+  "onAbilityCastIds": [
+    62
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Tornado_Start",
+    "Skill_Tornado_Loop",
+    "Skill_Tornado_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10012_Boss_Warning",
+    "Eff_Monster_10023_Mon_Skill_Tornado_WindField",
+    "Eff_Monster_10023_Mon_Skill_Tornado_Angry"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1,
+  "shortDesc": "",
+  "tags": [
+    1
+  ],
+  "onAbilityEndIds": [
+    160
+  ],
+  "selectPos": 1,
+  "searchTargetRangeDown": 1,
+  "abilityParamId": 10700251
+}

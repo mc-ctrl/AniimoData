@@ -1,0 +1,35 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11144",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "10": {
+      "UID": "8940d64f-c363-4146-a447-57138a21d4cd",
+      "name": "setPlayerSightOfViewRange",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "36856710-9a95-4308-928a-e021cc63ec37",
+      "name": "setPlayerSightOfViewRange",
+      "NodeID": 11
+    },
+    "12": {
+      "UID": "a6e19448-b570-411f-8c38-46fb03f9a22b",
+      "name": "setPlayerSightOfViewRange",
+      "NodeID": 12
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    12
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    11
+  ],
+  "onBuffStartIds": [
+    10
+  ]
+}

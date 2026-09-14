@@ -1,0 +1,56 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132412",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    13
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "10": {
+      "delay": 0,
+      "interval": 0.5,
+      "UID": "8cabb5b1-485e-4119-9d25-74a191ad1280",
+      "name": "buffStartThink",
+      "NodeID": 10
+    },
+    "13": {
+      "actOnTag": "plantGrass",
+      "name": "actOnTargets",
+      "UID": "3ccba0db-f407-40d8-8395-068259be8786",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 13
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    10
+  ]
+}

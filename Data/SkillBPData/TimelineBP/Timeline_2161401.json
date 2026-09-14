@@ -1,0 +1,237 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "024a4c34-9837-4e86-b903-cac2f81ca531",
+      "target": "MASTER",
+      "val": 1,
+      "NodeID": 37
+    },
+    "38": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        -2,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "62c75baf-fdc2-456d-aecd-ac95ac5b77a5",
+      "effectId": "Eff_Parmon_10614_Skill_BeeBombFly_Loop_02",
+      "scale": 1,
+      "NodeID": 38
+    },
+    "6": {
+      "UID": "178724e4-aa6e-4c5b-a16d-26d2f5571d56",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          34,
+          4,
+          7,
+          12,
+          38
+        ]
+      },
+      "NodeID": 6
+    },
+    "41": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "f0bbbe02-558f-444e-967f-fad741e2d826",
+      "soundId": "SFX_Combat_10614_Skill_BeeBomb_Fall",
+      "NodeID": 41
+    },
+    "42": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "e0d075a4-72a9-4fd4-8e03-485f9188d288",
+      "soundId": "SFX_Combat_10614_Skill_BeeBomb_End",
+      "NodeID": 42
+    },
+    "7": {
+      "duration": 3,
+      "name": "moveByDirection",
+      "UID": "52f09098-efc7-4ad1-a776-01764bc4415e",
+      "target": "OWNER",
+      "isLocalDir": true,
+      "needForceOnGround": false,
+      "velocity": [
+        0,
+        0,
+        6
+      ],
+      "collisionTestDistance": 0,
+      "NodeID": 7
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "a5af957f-c619-4ffa-b5f0-0c87e2248052",
+      "effectId": "Eff_Parmon_10614_Skill_BeeBombFly_Loop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "9": {
+      "key": "DelayTimer",
+      "duration": 0.1,
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "8a37c8af-85c9-431e-9fd2-dec700d0c64a",
+      "name": "addTimer"
+    },
+    "11": {
+      "actionIds": [
+        16,
+        15,
+        9,
+        33,
+        19,
+        41,
+        42
+      ],
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "3ceed22a-e332-4b9a-90b0-ae12cc8f0896",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "2": {
+      "UID": "cabdc063-9cff-46b8-8f91-c83e7a2f5273",
+      "eventType": "EventExit",
+      "NodeID": 2
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "34703391-842d-4248-8565-c6f55c570aa0",
+      "effectId": "Eff_Parmon_10614_Skill_BeeBombFly_Loop",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          11,
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 14,
+      "UID": "68a69a86-3744-4e3a-a4f6-0fb01d9a4947"
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "22b73175-b82d-4c05-9bec-c7308963daf4",
+      "effectId": "Eff_Parmon_10614_Skill_BeeBombFly_End",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "16": {
+      "UID": "5bc7f252-7243-4a37-bca0-d609c418f117",
+      "target": "OWNER",
+      "name": "stopMoveByDirection",
+      "NodeID": 16
+    },
+    "17": {
+      "name": "getTargetOffsetPos",
+      "UID": "5469ae88-ceec-4904-aed7-4bcba54cfd4f",
+      "target": "OWNER",
+      "offset": [
+        0,
+        2,
+        0
+      ],
+      "NodeID": 17
+    },
+    "12": {
+      "eventName": "BeeBomb",
+      "NodeID": 12,
+      "UID": "30487514-2fb3-4682-8c8e-7ab222edf624",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        11
+      ]
+    },
+    "19": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2161401201,
+      "name": "createProjectile",
+      "UID": "dc63e449-b55f-4da6-9da1-bc2be2da4c68",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": "OWNER",
+      "projectileType": "Tracking",
+      "NodeID": 19,
+      "targetPos": {
+        "UID": "8ef3bd40-94ca-44f9-988b-c61a34bfaded",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "name": "getTargetOffsetPos",
+          "UID": "5469ae88-ceec-4904-aed7-4bcba54cfd4f",
+          "target": "OWNER",
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "NodeID": 17
+        },
+        "NodeID": 18
+      }
+    },
+    "33": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "67a06ffe-8e24-4bc4-a6df-b2c050db0ddb",
+      "target": "MASTER",
+      "val": 1,
+      "NodeID": 33
+    },
+    "34": {
+      "key": "Bullet1",
+      "name": "setCacheVal",
+      "UID": "05bfa30c-b7c6-4b67-8233-382a6bd8c8b1",
+      "target": "MASTER",
+      "val": 0,
+      "NodeID": 34
+    },
+    "36": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "4db40a5a-ee50-43e4-8475-8279975be6c7",
+      "NodeID": 36,
+      "lValue": {
+        "key": "Bullet1",
+        "name": "getCacheVal",
+        "UID": "65e4410f-22f4-475c-a7fc-d12f39cebb21",
+        "target": "MASTER",
+        "NodeID": 35
+      }
+    }
+  },
+  "BPName": "timeline_2161401",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    6,
+    14,
+    2
+  ],
+  "layer": "Base",
+  "length": 8
+}

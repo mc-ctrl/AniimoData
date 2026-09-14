@@ -1,0 +1,71 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126303",
+  "name": "花舞鸢尾舞力值特性buff",
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "desc": "草地上每次造成技能伤害积累1点舞力值，续满后下一次释放技能时提高100%魔攻持续2s",
+  "tags": [
+    11
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "buffId": 21233051,
+      "name": "removeBuff",
+      "UID": "5b071228-7215-4076-976b-c3ba9e8f2b59",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "5bba7546-735e-4c18-893a-09974e44fff6",
+      "effectId": "Eff_Parmon_10233_Skill_Hypnospore_Smog_003",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "8ed66be3-97ff-4668-a9fa-e427c89033bb",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "UID": "2fadc173-a389-4246-9b5d-5848d564a1f3",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        8,
+        9,
+        3
+      ],
+      "NodeID": 5
+    },
+    "7": {
+      "eventName": "WeakUp",
+      "NodeID": 7,
+      "UID": "8da760de-24f0-4236-ac4c-0d0e9bf9c809",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        8,
+        9,
+        3
+      ]
+    },
+    "12": {
+      "buffId": 2126301,
+      "name": "removeBuff",
+      "UID": "003c4c81-3cee-4eeb-981f-7b846afc1d4f",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    12,
+    7
+  ]
+}

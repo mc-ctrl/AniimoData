@@ -1,0 +1,184 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2165301",
+  "name": "水元素增伤buff",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "onBuffRefreshIds": [
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        10,
+        15
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "13611d52-27fa-46b8-981c-0e2eabe11069",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": 0,
+      "name": "greater",
+      "UID": "656b5245-ed79-4e4c-bcb1-db6722e3445a",
+      "NodeID": 4,
+      "lValue": {
+        "templateId": 10086,
+        "name": "getBuffLayer",
+        "UID": "2855695c-7a7f-48ce-9a2e-ef93b2d1e7d7",
+        "target": "OWNER",
+        "NodeID": 3
+      }
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "942094e3-82ed-4a6a-8f6a-43a92ca3cdc8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10653_Skill_TidalResonance_End",
+      "NodeID": 24
+    },
+    "14": {
+      "calcId": 2165301,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 14,
+      "UID": "931f52dc-0bd4-459a-aac0-bfb0cbdda0de",
+      "name": "getParamByLuaConfig"
+    },
+    "10": {
+      "UID": "c023a929-a69f-4cf1-8e4f-0849879b36a3",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "dmg_water_add_ratio": {
+          "rValue": {
+            "calcId": 2165301,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 7,
+            "UID": "63e03813-aef2-4fd1-b5c4-20f52eff572b",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "add",
+          "UID": "4a808285-4758-40bd-a966-ae8eab336ea0",
+          "NodeID": 8,
+          "lValue": {
+            "rValue": {
+              "calcId": 2165301,
+              "calcType": 1,
+              "paramName": "param1",
+              "NodeID": 14,
+              "UID": "931f52dc-0bd4-459a-aac0-bfb0cbdda0de",
+              "name": "getParamByLuaConfig"
+            },
+            "name": "multiply",
+            "UID": "dd8c226d-da2c-4236-8323-96e5cea8cfa5",
+            "NodeID": 13,
+            "lValue": {
+              "templateId": 10086,
+              "name": "getBuffLayer",
+              "UID": "810f2825-2dba-45f5-b2e0-08b1c240281f",
+              "target": "OWNER",
+              "NodeID": 12
+            }
+          }
+        }
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "NodeID": 15,
+      "UID": "7f862d26-3cf4-4aa3-8e91-d3533191a767",
+      "layer": 9999,
+      "name": "clearElement",
+      "elementType": 1
+    },
+    "7": {
+      "calcId": 2165301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 7,
+      "UID": "63e03813-aef2-4fd1-b5c4-20f52eff572b",
+      "name": "getParamByLuaConfig"
+    },
+    "16": {
+      "UID": "00092b3d-bc71-40a6-8885-9bb413a7df2d",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 16
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d772d740-007d-4e5d-bcdd-6f71ab10d66a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10653_Skill_TidalResonance_Loop",
+      "NodeID": 25
+    },
+    "18": {
+      "calcId": 2165301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 18,
+      "UID": "f145852c-0228-48e5-9cf0-91f73b738905",
+      "name": "getParamByLuaConfig"
+    },
+    "23": {
+      "name": "stopSoundStr",
+      "UID": "f5a60d85-a6e4-4fed-ae38-57f7bb80f161",
+      "soundId": "SFX_Combat_10653_Skill_TidalResonance_Loop",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "22": {
+      "name": "stopEffectStr",
+      "UID": "521d592f-3f44-4014-88c1-e3660623d550",
+      "effectId": "Eff_Parmon_10653_Skill_TidalResonance_WaterFlow",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "20": {
+      "UID": "01b35db1-bc8f-4941-92a0-dc3041fc8f4b",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "dmg_water_add_ratio": {
+          "calcId": 2165301,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 18,
+          "UID": "f145852c-0228-48e5-9cf0-91f73b738905",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1c9ad755-29bb-4088-9d66-f6ec86f96b82",
+      "effectId": "Eff_Parmon_10653_Skill_TidalResonance_WaterFlow",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    16,
+    22,
+    23,
+    24
+  ],
+  "onBuffStartIds": [
+    21,
+    5,
+    25
+  ]
+}

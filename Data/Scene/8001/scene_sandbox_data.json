@@ -1,0 +1,777 @@
+{
+  "41188390": {
+    "areaType": 0,
+    "chunk": 1018849,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "出生点",
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 41188390,
+    "owner": "路司机",
+    "position": [
+      -13.78,
+      6.37,
+      -126.38
+    ]
+  },
+  "42478733": {
+    "areaType": 0,
+    "autoSave": true,
+    "chunk": 1018849,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 42479014,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 0,
+    "publishTags": [
+      "CE_通用"
+    ],
+    "routes": {},
+    "startVersion": "0.0",
+    "sandboxType": 4,
+    "name": "宝宝3c教学",
+    "sightLevelType": 512,
+    "spawners": {},
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 512,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/8001/Sandbox_42478733_GraphRef.asset",
+    "position": [
+      -13.68,
+      7,
+      -115.92
+    ],
+    "owner": "贺桥",
+    "id": 42478733,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "42478850": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头2-攀爬3",
+        "position": [
+          -13.9,
+          17.21,
+          -95.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 42478850,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478869": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头3-滑翔",
+        "position": [
+          -13.9,
+          17.09,
+          -78.41
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 11,
+        "id": 42478869,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478883": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点3-滑翔后",
+        "position": [
+          -13.9,
+          10.17,
+          -50.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42478883,
+        "siblingIndex": 12,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42478883_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -13.9,
+            10.17,
+            -50.05
+          ],
+          "arriveType": 1,
+          "author": "yuntao.xu"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478912": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头4-游泳1",
+        "position": [
+          -13.9,
+          10.51,
+          -40.68
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 14,
+        "id": 42478912,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478929": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头4-游泳2",
+        "position": [
+          -13.9,
+          10.52,
+          -31.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 13,
+        "id": 42478929,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478931": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头4-游泳3",
+        "position": [
+          -13.9,
+          10.6,
+          -21.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 10,
+        "id": 42478931,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478951": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点4-游泳前",
+        "position": [
+          -13.9,
+          10.18,
+          -15.56
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 8,
+        "id": 42478951,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42478951_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -13.9,
+            10.18,
+            -15.56
+          ],
+          "arriveType": 1,
+          "author": "yuntao.xu"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478974": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "终点大门",
+        "position": [
+          -13.9,
+          11.05,
+          19.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42478974,
+        "siblingIndex": 9,
+        "componentsInfo": {
+          "43015735": {
+            "expressionKey": "42478974_43015735"
+          }
+        },
+        "configId": 73,
+        "targetPositionData": {
+          "position": [
+            -13.9,
+            11.05,
+            19.02
+          ],
+          "hookType": 0,
+          "isTargetPosition": true,
+          "author": "yuntao.xu"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478738": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头1-附身星乐蒂",
+        "position": [
+          -13.9,
+          7,
+          -115.71
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 42478738,
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "configId": 71,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42478988": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头4-游泳4",
+        "position": [
+          -13.9,
+          10.25,
+          -2.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 7,
+        "id": 42478988,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "42478777": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点1-附身星乐蒂",
+        "position": [
+          -13.9,
+          6.69,
+          -107.06
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "id": 42478777,
+        "siblingIndex": 5,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42478777_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -13.9,
+            6.69,
+            -107.06
+          ],
+          "name": "",
+          "arriveType": 1,
+          "author": "yuntao.xu"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42833376": {
+        "majorCompId": 42742113,
+        "scale": [
+          100,
+          9.46,
+          50
+        ],
+        "EditorName": "P_Item_DeathBox_SB",
+        "position": [
+          -14.16,
+          -0.42,
+          -72.08
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 42833376,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.1,
+            "detectType": 3,
+            "playerRevivePos": [
+              -14.47,
+              17.13,
+              -77.9
+            ],
+            "playerReviveType": 3
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "58536151": {
+        "majorCompId": 42742113,
+        "owner": "路司机",
+        "EditorName": "P_Item_DeathBox_SB (1)",
+        "position": [
+          -14.16,
+          9.99,
+          3.1
+        ],
+        "siblingIndex": 4,
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "serializeVersion": 3,
+        "scale": [
+          22.01,
+          1,
+          25.67
+        ],
+        "id": 58536151,
+        "path": "",
+        "componentsInfo": {
+          "42742113": {
+            "playerBloodProportion": 0.1,
+            "detectType": 1,
+            "playerRevivePos": [
+              -14.79,
+              10.55,
+              -16.4
+            ],
+            "playerReviveType": 3
+          }
+        },
+        "configId": 8,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42478791": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头2-攀爬1",
+        "position": [
+          -13.9,
+          10.34,
+          -100.36
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "siblingIndex": 6,
+        "id": 42478791,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "76287099": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockBox_SB (1)",
+        "position": [
+          -21.31,
+          14,
+          11.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 19,
+        "serializeVersion": 3,
+        "id": 76287099,
+        "scale": [
+          4,
+          6,
+          1
+        ],
+        "path": "",
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42478805": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "指引箭头2-攀爬2",
+        "position": [
+          -13.9,
+          15.15,
+          -100.36
+        ],
+        "rotation": [
+          270,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 42478805,
+        "serializeVersion": 3,
+        "path": "",
+        "configId": 71,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "76287060": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_BlockBox_SB",
+        "position": [
+          -7.4,
+          14,
+          11.46
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 18,
+        "id": 76287060,
+        "serializeVersion": 3,
+        "scale": [
+          4,
+          6,
+          1
+        ],
+        "configId": 80,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "42478811": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "绿色目标点2-攀爬后",
+        "position": [
+          -13.9,
+          16.83,
+          -84.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "path": "",
+        "siblingIndex": 15,
+        "id": 42478811,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "43015308": {
+            "expressionKey": "42478811_43015308"
+          }
+        },
+        "configId": 72,
+        "targetPositionData": {
+          "hookType": 0,
+          "isTargetPosition": true,
+          "arriveParam": [
+            3
+          ],
+          "position": [
+            -13.9,
+            16.83,
+            -84.02
+          ],
+          "arriveType": 1,
+          "author": "yuntao.xu"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": false
+      },
+      "73952307": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "P_Item_Empty_SB",
+        "position": [
+          -16.37,
+          7,
+          -101.44
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 17,
+        "id": 73952307,
+        "serializeVersion": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "configId": 5,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "73927341": {
+        "majorCompId": 0,
+        "owner": "唐睿尚",
+        "EditorName": "攀爬提示触发",
+        "position": [
+          -13.98,
+          7.98,
+          -101.39
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 16,
+        "id": 73927341,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              10,
+              2,
+              2
+            ]
+          }
+        },
+        "configId": 3,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

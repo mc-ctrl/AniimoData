@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_12120140",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "冲！",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12120140001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MagicFlower"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_MagicFlower_Body",
+    "Eff_Parmon_10212_Skill_MagicFlower_Bullet",
+    "Eff_Parmon_10211_Skill_MagicFlower_01"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10600911,
+  "refBones": [
+    "Bip001 R Hand"
+  ]
+}

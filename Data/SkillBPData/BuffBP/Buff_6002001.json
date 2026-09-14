@@ -1,0 +1,46 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6002001",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_addition_dmg": 100
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 1,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitCameraShakeId": 30304,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 8,
+        "impulseId": 3001
+      },
+      "UID": "4a3b1ea6-91a0-4f3d-960e-d05c86b071c7",
+      "target": "OWNER",
+      "calcInfoByLuaConfig": {
+        "id": 6002001,
+        "instant_addition_dmg": "param0",
+        "type": 1
+      },
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

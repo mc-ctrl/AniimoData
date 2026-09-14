@@ -1,0 +1,176 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "NodeID": 22
+    },
+    "6": {
+      "actionIds": [
+        12
+      ],
+      "name": "actOnTargets",
+      "UID": "363ef7a8-285f-41a0-978f-1af6306b71a6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.8,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 4,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 6
+    },
+    "10": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3,
+        "add_cur_ep_max_p": 0.3,
+        "sp_cur": 100
+      },
+      "name": "calcResult",
+      "UID": "35207808-dfdb-43c5-a145-94b1e6afe5fb",
+      "target": {
+        "petIndex": 1,
+        "UID": "ec2db687-f075-4ad0-9d78-92a4843dd14f",
+        "target": "TARGET",
+        "NodeID": 9,
+        "name": "getPetByIdx"
+      },
+      "NodeID": 10
+    },
+    "7": {
+      "eventType": "NotifyState",
+      "endTime": 99999,
+      "NodeID": 7,
+      "UID": "11f4d7d9-ed40-4613-8bf5-21cda13c0bdf",
+      "onUpdate": {
+        "actionIds": [
+          6
+        ]
+      },
+      "startTime": 0,
+      "tickInterval": 0.5
+    },
+    "16": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3,
+        "add_cur_ep_max_p": 0.3,
+        "sp_cur": 100
+      },
+      "name": "calcResult",
+      "UID": "89a8cb18-003f-4190-9826-787447752cec",
+      "target": {
+        "petIndex": 3,
+        "UID": "373ec893-cd88-4a85-9175-46e529ccbb73",
+        "target": "TARGET",
+        "NodeID": 15,
+        "name": "getPetByIdx"
+      },
+      "NodeID": 16
+    },
+    "26": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3,
+        "add_cur_ep_max_p": 0.3,
+        "sp_cur": 100
+      },
+      "name": "calcResult",
+      "UID": "6b9970e1-38c3-4c54-8618-3bbee9ff0614",
+      "target": {
+        "petIndex": 4,
+        "UID": "f9b49bad-3596-40c0-bb88-d56b9d93e4ad",
+        "target": "TARGET",
+        "NodeID": 25,
+        "name": "getPetByIdx"
+      },
+      "NodeID": 26
+    },
+    "18": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3
+      },
+      "name": "calcResult",
+      "UID": "6e38ae7e-97bf-4c7b-b143-e26ed0e3b3ee",
+      "target": "MASTER",
+      "NodeID": 18
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "07d4ab8b-b008-4f14-afb2-19c66543cd7d",
+      "effectId": "Eff_Parmon_10083_Skill_GreenField_Field_HealPool",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "14": {
+      "calcInfo": {
+        "add_cur_hp_max_p": 0.3,
+        "add_cur_ep_max_p": 0.3,
+        "sp_cur": 100
+      },
+      "name": "calcResult",
+      "UID": "241c6ae7-b028-4123-9bc8-10592c334be5",
+      "target": {
+        "petIndex": 2,
+        "UID": "e0ab72cd-821b-42d5-9073-77ded26582ba",
+        "target": "TARGET",
+        "NodeID": 13,
+        "name": "getPetByIdx"
+      },
+      "NodeID": 14
+    },
+    "20": {
+      "name": "isActorType",
+      "UID": "bfa45013-66bb-48e0-bee3-ec984482948b",
+      "target": "TARGET",
+      "NodeID": 20,
+      "actorType": 2
+    },
+    "12": {
+      "actionIds": [
+        10,
+        14,
+        16,
+        18,
+        26
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "64e27f82-ac17-4b02-9cd7-a03c3df6004c",
+      "name": "doActionsByConditions",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_50005",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    22,
+    7
+  ],
+  "layer": "Base",
+  "length": 99999
+}

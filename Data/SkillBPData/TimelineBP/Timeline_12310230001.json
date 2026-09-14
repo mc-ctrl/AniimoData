@@ -1,0 +1,232 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "e0b77c65-a6f4-4dff-bc7b-5bbe5edc7e68",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          40
+        ]
+      },
+      "NodeID": 5
+    },
+    "40": {
+      "key": "effect",
+      "name": "setAbilityCacheVal",
+      "UID": "5aad74d6-8101-47d7-9dd1-d6257fe98746",
+      "value": 0,
+      "NodeID": 40
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bcccdffd-eedd-4043-88fa-2158ead5c230",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Sprinkle"
+    },
+    "20": {
+      "UID": "8fc92437-9c41-4710-8602-fbd41327df57",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c557c91e-7f28-4e16-8b76-787fb6779703",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Sprinkle02_Rock",
+      "speed": 1,
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "8a2c75c9-a78a-4e92-b028-741ee8493d9c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 13,
+      "UID": "dad5a629-23ca-4114-89f3-13a02c4ea83b"
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b49ce0b0-fd4b-49d9-a069-195157167c3e",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Sprinkle01_02_Rock",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "3f29c4f9-3663-448c-a912-f0b322af52cb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "37": {
+      "key": "effect",
+      "name": "setAbilityCacheVal",
+      "UID": "631e8f8d-e1b2-4556-9b84-2a19778548c0",
+      "value": 1,
+      "NodeID": 37
+    },
+    "18": {
+      "UID": "2a248bc2-641f-4e4f-96dc-15848f758389",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 18
+    },
+    "16": {
+      "UID": "edbf3b92-d46f-42f8-a9a5-4a19cab12ef2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          33,
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "12": {
+      "UID": "e2794f2c-962d-4ef3-92e9-565fb5a50be7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26,
+          37,
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.233,
+      "NodeID": 28,
+      "UID": "4ddc0074-e9a6-40e9-8ba2-e069827d3b82"
+    },
+    "29": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2123105,
+      "NodeID": 29,
+      "UID": "a3c3595c-364b-42e6-807d-e006d68cce40",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "30": {
+      "actionIds": [
+        29
+      ],
+      "name": "actOnTargets",
+      "UID": "3a6891dd-1b4a-4d55-9f7b-13a711c76e1a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            7,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 30
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bdaa6a9f-d8fc-4728-95a0-834cf46ba228",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Sprinkle01_01_Rock",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "fab4f169-7046-4a78-af25-950d4ca97409",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_Sprinkle",
+      "NodeID": 33
+    },
+    "26": {
+      "key": "hp10231",
+      "name": "setCacheVal",
+      "UID": "c2879cd6-4b6e-4ae9-b123-50f09228913f",
+      "target": "OWNER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "99235d7a-fee1-4667-bee4-716cdd9767b9",
+        "target": "OWNER",
+        "NodeID": 25,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 26
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          21,
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.233,
+      "NodeID": 23,
+      "UID": "3ef99054-8329-4448-9d9d-8233a0cfb7c4"
+    }
+  },
+  "BPName": "ability_12310230",
+  "NodeID": 7,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    5,
+    10,
+    13,
+    20,
+    23,
+    16,
+    28
+  ],
+  "layer": "Base",
+  "length": 2.1
+}

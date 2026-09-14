@@ -1,0 +1,102 @@
+{
+  "BPName": "ability_11870520",
+  "NodeID": 1,
+  "UID": "dbedf8ae-54aa-4ae6-8f1a-a26caf92afe7",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11870520001,
+      "name": "setCombatActionTimeline",
+      "UID": "3dc91cb4-0974-48cf-bc37-9b8a2d0f06a7",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "92": {
+      "UID": "fecf2d54-acb1-420d-bb6c-710c0d4777db",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Parmon_10187_Skill_DefenseStance_01",
+      "NodeID": 92
+    },
+    "96": {
+      "buffId": 2118707,
+      "name": "hasBuff",
+      "UID": "517ea9be-ded1-4c17-992b-097d7697f4c0",
+      "target": "OWNER",
+      "NodeID": 96
+    },
+    "89": {
+      "name": "stopEffectStr",
+      "UID": "06dd1e72-4a82-410d-843f-24e6b5135fac",
+      "effectId": "Eff_Parmon_10187_Skill_DefenseStance_liuli",
+      "target": "OWNER",
+      "NodeID": 89
+    },
+    "95": {
+      "conditionActionIds": [
+        96
+      ],
+      "UID": "87751d5a-ce21-401c-b601-6bf96447f17e",
+      "name": "doActionsByConditions",
+      "NodeID": 95,
+      "elseActionIds": [
+        94
+      ]
+    },
+    "94": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 2118707,
+      "NodeID": 94,
+      "UID": "c12c9892-0401-41a8-af04-3d9c46010456",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "93": {
+      "buffId": 2118704,
+      "name": "removeBuff",
+      "UID": "9d16fd8e-20bb-472f-9c52-dbb70fff7d2c",
+      "target": "OWNER",
+      "NodeID": 93
+    },
+    "91": {
+      "UID": "2c2cb7a1-e5e3-44cc-b1f3-087d97e05f08",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10187_Skill_DefenseStance_01",
+      "NodeID": 91
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_DefenseStanceStart",
+    "Skill_DefenseStanceLoop",
+    "Skill_DefenseStanceEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Horngull_10187_Skill_DefenseStance_Hit_liuli",
+    "Eff_Parmon_10187_Skill_DefenseStanceOnHit_liuli",
+    "Eff_Parmon_10187_Skill_DefenseStance_liuli",
+    "Eff_Hit_Wind_Blunt_Big"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    89,
+    91,
+    92,
+    93,
+    95
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 3,
+  "abilityParamId": 10900162
+}

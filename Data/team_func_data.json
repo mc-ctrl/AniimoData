@@ -1,0 +1,156 @@
+[
+  {
+    "sort": 1,
+    "label": 1122315799,
+    "checkFunc": "checkShowPlayerInfo",
+    "func": "showPlayerCard",
+    "icon": "$UI_Icon_TeamRoom_ViewCard.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515
+    ]
+  },
+  {
+    "noShowSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ],
+    "label": 1604891313,
+    "checkFunc": "checkIsFriend",
+    "func": "addFriend",
+    "icon": "$UI_Icon_TeamRoom_AddFriend.png",
+    "sort": 2
+  },
+  {
+    "sort": 3,
+    "label": 1263064361,
+    "checkFunc": "checkTeamLeader",
+    "func": "changeTeamLeader",
+    "icon": "$UI_Icon_TeamRoom_TransferCaption.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      1070,
+      550
+    ]
+  },
+  {
+    "sort": 4,
+    "label": 1407988172,
+    "checkFunc": "checkCanKickTeamMember",
+    "func": "kickTeamMember",
+    "icon": "$UI_Icon_TeamRoom_RemoveTeam.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  },
+  {
+    "sort": 5,
+    "label": 2042385287,
+    "checkFunc": "checkNotTeamLeader",
+    "func": "leaveTeam",
+    "icon": "$UI_Icon_TeamRoom_RemoveTeam.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  },
+  {
+    "sort": 6,
+    "label": 1220509467,
+    "checkFunc": "checkCanDisbandTeam",
+    "func": "disbandTeam",
+    "icon": "$UI_Icon_TeamRoom_DisbandTeam.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  },
+  {
+    "sort": 8,
+    "label": 2102143189,
+    "checkFunc": "checkInLeaderWorld",
+    "func": "leaveLeaderWorld",
+    "icon": "$UI_Icon_TeamRoom_LeaveWorld.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  },
+  {
+    "sort": 9,
+    "label": 1896116230,
+    "checkFunc": "checkCanKickSpaceFollowMember",
+    "func": "removeSpaceFollowMember",
+    "icon": "$UI_Icon_TeamRoom_ExitTravel.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  },
+  {
+    "sort": 10,
+    "label": 1973899123,
+    "checkFunc": "checkCanQuitSpaceFollow",
+    "func": "quitSpaceFollow",
+    "icon": "$UI_Icon_TeamRoom_DissolveTravel.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  },
+  {
+    "sort": 11,
+    "label": 1487231550,
+    "checkFunc": "checkCanComeToMe",
+    "func": "comeToMe",
+    "icon": "$UI_Icon_TeamRoom_Come.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  },
+  {
+    "sort": 12,
+    "label": 1321970374,
+    "checkFunc": "checkCanComeToPlayer",
+    "func": "comeToPlayer",
+    "icon": "$UI_Icon_TeamRoom_Go.png",
+    "showSceneId": [
+      3000,
+      3003,
+      501,
+      515,
+      550
+    ]
+  }
+]

@@ -1,0 +1,368 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "UID": "981d963e-7ecb-4a52-a1fe-d2250ab7f6e2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10,
+          16,
+          30
+        ]
+      },
+      "NodeID": 5
+    },
+    "38": {
+      "UID": "543222ad-550f-4b8a-b9b2-2648580aba74",
+      "name": "getEventTrapTarget",
+      "NodeID": 38
+    },
+    "39": {
+      "relation": 2,
+      "name": "checkRelationWithReferenceTarget",
+      "UID": "0ce74ac0-4874-4a62-896a-ada7f22eb5a7",
+      "target": "OWNER",
+      "referenceTarget": {
+        "UID": "543222ad-550f-4b8a-b9b2-2648580aba74",
+        "name": "getEventTrapTarget",
+        "NodeID": 38
+      },
+      "NodeID": 39
+    },
+    "7": {
+      "UID": "80860ae6-99c1-452b-9876-e5cd6763d061",
+      "name": "getEventTrapTarget",
+      "NodeID": 7
+    },
+    "8": {
+      "target": {
+        "UID": "80860ae6-99c1-452b-9876-e5cd6763d061",
+        "name": "getEventTrapTarget",
+        "NodeID": 7
+      },
+      "duration": 20,
+      "buffId": 2126102,
+      "NodeID": 8,
+      "UID": "d9ae2dc6-b1b3-4143-94c5-4ac38614ee1e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "31": {
+      "target": "TARGET",
+      "duration": 20,
+      "buffId": 2126105,
+      "NodeID": 31,
+      "UID": "da6a9953-f20e-42bd-ab17-38f7c89cce41",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "d941a2d3-1a8a-4a1e-9bb3-322770cdc78a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        25
+      ],
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "134f21d3-b552-4642-a565-b9b754ffb449",
+      "name": "getEventTrapTarget",
+      "NodeID": 11
+    },
+    "20": {
+      "needEcs": true,
+      "actionIds": [
+        23
+      ],
+      "NodeID": 20,
+      "UID": "52ae9cc4-905f-4b32-ae0f-6298ff54fb6a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "0"
+    },
+    "12": {
+      "buffId": 2126102,
+      "name": "removeBuff",
+      "UID": "4f503d38-ede9-4cf4-aa5b-015dd43e1731",
+      "target": {
+        "UID": "134f21d3-b552-4642-a565-b9b754ffb449",
+        "name": "getEventTrapTarget",
+        "NodeID": 11
+      },
+      "NodeID": 12
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "71129185-e7ab-4400-9965-296301d79c5e",
+      "effectId": "Eff_Parmon_10261_PassiveSkill_CloudField_Small",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "59f1c7dd-46db-41f6-b538-0dc9e181f85d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 13
+    },
+    "24": {
+      "UID": "00fb58cd-4680-4859-b9ab-ec1bcb397730",
+      "name": "getEventTrapTarget",
+      "NodeID": 24
+    },
+    "37": {
+      "relation": 2,
+      "name": "checkRelationWithReferenceTarget",
+      "UID": "7443f841-8c4b-4e8a-be0c-e50e148166d7",
+      "target": "OWNER",
+      "referenceTarget": {
+        "UID": "a3630f2c-9a31-4158-99c3-6ce397cd37d0",
+        "name": "getEventTrapTarget",
+        "NodeID": 36
+      },
+      "NodeID": 37
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 10,
+      "UID": "6b28425e-7b00-43f9-8447-f227c9319ef6",
+      "enterTrapActionIds": [
+        9
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        13
+      ],
+      "shapeArgs": [
+        2
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 4,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "23": {
+      "buffId": 2126102,
+      "name": "removeBuff",
+      "UID": "bc2ad5a8-7660-480d-b4ec-99c7e7e367e2",
+      "target": "TARGET",
+      "NodeID": 23
+    },
+    "25": {
+      "target": {
+        "UID": "00fb58cd-4680-4859-b9ab-ec1bcb397730",
+        "name": "getEventTrapTarget",
+        "NodeID": 24
+      },
+      "duration": 20,
+      "buffId": 2126105,
+      "NodeID": 25,
+      "UID": "5ea95d36-f13b-4ba0-af81-589a51be4a85",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "16": {
+      "needEcs": true,
+      "actionIds": [
+        17
+      ],
+      "NodeID": 16,
+      "UID": "04345687-7b26-42b7-acbf-37c06d6f2584",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "12620500"
+    },
+    "27": {
+      "buffId": 2126105,
+      "name": "removeBuff",
+      "UID": "133cc33f-591a-43e4-bb27-e462ee0bc24b",
+      "target": {
+        "UID": "00b4930e-b7c8-46cb-b447-c662a0fc3bf9",
+        "name": "getEventTrapTarget",
+        "NodeID": 26
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "target": "TARGET",
+      "duration": 20,
+      "buffId": 2126102,
+      "NodeID": 17,
+      "UID": "e5d58e4e-841b-4527-a428-8d6958e6e85c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "35": {
+      "buffId": 2126105,
+      "name": "removeBuff",
+      "UID": "0e6de1ec-6023-4117-88c2-2b25c6adbe28",
+      "target": "TARGET",
+      "NodeID": 35
+    },
+    "30": {
+      "needEcs": true,
+      "actionIds": [
+        31
+      ],
+      "NodeID": 30,
+      "UID": "3d058cd9-e727-49ae-99d9-393a4b1017c1",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "12620500"
+    },
+    "22": {
+      "UID": "52edc944-0f6e-469b-9fc4-0acbd9e46b62",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          20,
+          34
+        ]
+      },
+      "NodeID": 22
+    },
+    "26": {
+      "UID": "00b4930e-b7c8-46cb-b447-c662a0fc3bf9",
+      "name": "getEventTrapTarget",
+      "NodeID": 26
+    },
+    "34": {
+      "needEcs": true,
+      "actionIds": [
+        35
+      ],
+      "NodeID": 34,
+      "UID": "d569f89e-ec43-45b8-b880-cc8fadc6cd4b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 1,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "name": "actOnTargets",
+      "hitBoxId": "0"
+    },
+    "36": {
+      "UID": "a3630f2c-9a31-4158-99c3-6ce397cd37d0",
+      "name": "getEventTrapTarget",
+      "NodeID": 36
+    }
+  },
+  "BPName": "timeline_2126103",
+  "NodeID": 1,
+  "UID": "e1b0645e-2145-4017-a99e-ad3d773c0fd5",
+  "eventIds": [
+    5,
+    22
+  ],
+  "layer": "Base",
+  "length": 20
+}

@@ -1,0 +1,87 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2119402",
+  "calcInfoByLuaConfig": {
+    "id": 2119402,
+    "taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "fc51e131-5a9d-4f67-ac61-4522f3d2763c",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_Hit",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "collider": [
+        {
+          "centerOffsetXYZ": [
+            0,
+            0.75,
+            0
+          ],
+          "shapeArgs": [
+            1.115
+          ],
+          "shapeKind": "Sphere"
+        }
+      ],
+      "hitEffectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_Hit",
+      "interactDuration": 20,
+      "NodeID": 4,
+      "UID": "edd9b12e-3bd6-4965-bcd0-df5de3424bf4",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_Loop2",
+      "target": "OWNER",
+      "speed": 1,
+      "interactType": "Receive_Atk",
+      "name": "playInteractableEffect"
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "34b1f6a0-9595-4a53-8a6b-c539f4a96c85",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wishytar_flowingwatershield_hit",
+      "NodeID": 9
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "59c49744-0841-4092-9406-38fac127f72f",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_Loop2",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "dda4312e-7888-47ca-95f2-639c36104772",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0ab3d032-792c-4bee-9ec2-5cab639c3259",
+      "effectId": "Eff_Parmon_10194_Skill_FlowingWaterShield_End",
+      "speed": 1,
+      "NodeID": 11
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    8,
+    11
+  ],
+  "onBuffStartIds": [
+    4,
+    10
+  ]
+}

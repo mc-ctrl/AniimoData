@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920000704",
+  "NodeID": 1,
+  "UID": "01fa85de-98ad-4b5e-bcec-f1bcac114545",
+  "onBuffRefreshIds": [
+    6,
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "enterTime": 0.2,
+      "exitTime": 0.3,
+      "presetName": "1",
+      "NodeID": 3,
+      "UID": "00157bff-93e9-4088-8551-360f7e471240",
+      "name": "setShaderSquash",
+      "degree": 0.65
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a1dc5c25-67e8-4e26-9c12-445b2d21aca2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 8
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f4da36ca-c5ca-4fff-b613-de50fcea0632",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 9
+    },
+    "6": {
+      "enterTime": 0.2,
+      "exitTime": 0.3,
+      "presetName": "1",
+      "NodeID": 6,
+      "UID": "840b43ab-1d53-498b-82b9-25cb965a4590",
+      "name": "setShaderSquash",
+      "degree": 0.65
+    }
+  },
+  "isUnSummonKeep": false,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    8
+  ]
+}

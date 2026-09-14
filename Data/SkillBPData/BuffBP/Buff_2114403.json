@@ -1,0 +1,17 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "dmg_dark_dec_ratio": "param0",
+    "type": 1,
+    "id": 2114403
+  },
+  "BPName": "buff_2114403",
+  "NodeID": 1,
+  "UID": "77aca12a-4cb4-420a-b1f3-bfdbd6bef953",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "stackRule": 0
+}

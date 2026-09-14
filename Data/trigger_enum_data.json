@@ -1,0 +1,224 @@
+[
+  {
+    "param": "note",
+    "name": "宠物图鉴数据统计中显示",
+    "cs": "cs",
+    "paramType": [
+      "S"
+    ],
+    "paramName": [
+      "宠物图鉴数据统计中显示"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "required": "{\"Y\"}",
+    "paramName": [
+      "条件用途"
+    ],
+    "param": "conditionUse",
+    "name": "条件用途",
+    "cs": "cs",
+    "paramType": [
+      "I"
+    ],
+    "desc": [
+      "--自定义条件触发应用对象\nTRIGGER_SYSTEM_PLAYER        = 0, --玩家监听\nTRIGGER_SYSTEM_PET           = 1, --宠物监听       需使用对象petId\nTRIGGER_SYSTEM_PLAYER_COND   = 2, --玩家条件判断。不触发事件\nTRIGGER_SYSTEM_PET_COND      = 3, --宠物条件判断   需使用对象petId"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "required": "{\"Y\"}",
+    "paramName": [
+      "使用对象"
+    ],
+    "param": "userId",
+    "name": "使用对象",
+    "cs": "cs",
+    "paramType": [
+      "I"
+    ],
+    "desc": [
+      "使用该条件的具体对象id\n如任务则填任务id\n成就填写成就基本配置表中成就id"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "paramName": [
+      "生效次数"
+    ],
+    "param": "triggerTimes",
+    "name": "生效次数",
+    "cs": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": [
+      "若通用条件有伴随事件，该逻辑的执行次数。\n有明确条件用途的，条件生效后注销侦听逻辑；无条件用途的（用途0或其他），触发次数用尽后注销侦听逻辑。\n不填默认为1，伴随事件为接取任务等重要事件的，建议触发次数为3\n-1 表示无限制"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "paramName": [
+      "跨服生效次数"
+    ],
+    "param": "triggerTimesCrossCount",
+    "name": "跨服生效次数",
+    "cs": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": [
+      "1：一定时间内限次触发，\n如握手，每2分钟最多增加一次友好度\n2：按计时单位连续执行才能触发，如连续3天，和某NPC交谈2次以上（目前及时单位只支持天）"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "paramName": [
+      "时间统计类型"
+    ],
+    "param": "timeStatisticsType",
+    "name": "时间统计类型",
+    "cs": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": [
+      "1：分钟\n2：小时\n3：天\n连续执行（时间统计类型2）只支持天"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "paramName": [
+      "计时单位"
+    ],
+    "param": "timeUnit",
+    "name": "计时单位",
+    "cs": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": [
+      "时间触发类型为1时，表示时间单位的数量，如“每3分钟……”\n时间触发类型为2时，表示连续执行的时间单位数量，如“5天每天需要……”"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "param": "timeLength",
+    "name": "计时时长",
+    "cs": "s",
+    "paramType": [
+      "I"
+    ],
+    "paramName": [
+      "计时时长"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "param": "timeStatisticsTimes",
+    "name": "时间统计次数",
+    "cs": "s",
+    "paramType": [
+      "I"
+    ],
+    "paramName": [
+      "时间统计次数"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "required": "{\"Y\"}",
+    "param": "conditionExpression",
+    "name": "条件关系",
+    "cs": "cs",
+    "paramType": [
+      "Elua"
+    ],
+    "paramName": [
+      "条件关系"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "paramName": [
+      [
+        "条件数据"
+      ]
+    ],
+    "name": "条件数据",
+    "cs": "cs",
+    "paramType": [
+      [
+        "Elua"
+      ]
+    ],
+    "refData": [
+      [
+        [
+          "$T"
+        ]
+      ]
+    ],
+    "required": "{\"Y\"}",
+    "param": "condition",
+    "desc": [
+      "详见触发器库配置表。关系运算符，不填默认为>=\n可填类型包括:\n>  >= < <= =  !=\n最后一个值表示，基于条件类型和参数，取到的值，和这里填的值进行对比，来判断是否满足条件"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "paramName": [
+      "伴随事件"
+    ],
+    "param": "comEvent",
+    "name": "伴随事件",
+    "cs": "cs",
+    "paramType": [
+      "Elua"
+    ],
+    "desc": [
+      "多个概率分支只执行一个或不执行（概率和小于1）\n格式为\n\\{\\{event1.event2,……\\},prob\\}\n概率可以是形如0.5的浮点数，也可以是整形公式ID"
+    ],
+    "author": "lupeng"
+  },
+  {
+    "param": "eventBranch",
+    "name": "概率分支",
+    "cs": "cs",
+    "paramType": [
+      [
+        "Elua"
+      ]
+    ],
+    "paramName": [
+      [
+        "分支数据"
+      ]
+    ],
+    "author": "lupeng"
+  },
+  {
+    "paramName": [
+      [
+        "事件数据"
+      ]
+    ],
+    "param": "event",
+    "name": "事件数据",
+    "cs": "cs",
+    "paramType": [
+      [
+        "Elua"
+      ]
+    ],
+    "refData": [
+      [
+        [
+          "$E"
+        ]
+      ]
+    ],
+    "author": "lupeng"
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "angularIncreaseDuration": 0,
+  "BPName": "ability_10124002",
+  "defaultHitSoundType": "s",
+  "effectId": "Eff_Parmon_10011_Attack",
+  "enableMaxAngleTime": 0.3,
+  "gravityRatio": 0.1,
+  "kind": "Tracking",
+  "maxAngularOffset": 0,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    24
+  ],
+  "onProjectileHitIds": [
+    30,
+    34
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "24": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "29abd753-e7e7-46c5-bfc1-7352f0e8dade",
+      "effectId": "Eff_Parmon_10011_Attack_Hit",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "30": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.19
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10001
+      },
+      "UID": "82eb6b39-1e98-4c6f-9685-5a068c15b155",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 30
+    },
+    "33": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.19
+      },
+      "name": "calcResult",
+      "UID": "30235388-aa32-470b-bc71-a4463e765057",
+      "target": "CASTER",
+      "NodeID": 33
+    },
+    "34": {
+      "actionIds": [
+        33
+      ],
+      "conditionActionIds": [
+        36
+      ],
+      "UID": "7f8b524e-896b-42ad-8ff0-b03adb2686b8",
+      "name": "doActionsByConditions",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "0898effd-acda-4c16-9019-9d5d5ac487bc",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 36
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 1.5,
+  "calcResultNodeId": 30,
+  "impulseId": 2000,
+  "acceleration": 0
+}

@@ -1,0 +1,791 @@
+{
+  "57182208": {
+    "spawnType": 0,
+    "owner": "徐一乘",
+    "sandboxType": 2,
+    "position": [
+      -249.19,
+      29.04,
+      118.5
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 57182208,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          57182207
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "60967737": {
+    "spawnType": 0,
+    "owner": "peng.ding",
+    "sandboxType": 2,
+    "position": [
+      -242.5,
+      28,
+      236.25
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 60967737,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60967736
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "66064447": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -176.39,
+      31.93,
+      160.32
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 66064447,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          66064444
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "66064738": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -250.79,
+      35.12,
+      60.85
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 66064738,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          66064735
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "66064996": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -196.16,
+      22.61,
+      218.51
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 66064996,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          66064994
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70368744": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      28.53,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70368744,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70368743
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70368746": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      26.28,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70368746,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70368745
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70368748": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      34,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70368748,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70368747
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70368750": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      24.02,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70368750,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70368749
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70368752": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.47,
+      38,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70368752,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70368751
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70368754": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.55,
+      30.72,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70368754,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70368753
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70368756": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.47,
+      40.75,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70368756,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70368755
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70369006": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.58,
+      31.1,
+      103.34
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70369006,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70369004,
+          70369149,
+          70369156,
+          70369158,
+          70369162,
+          70369170,
+          70369175
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "70369066": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -238.55,
+      30.84,
+      109.2
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 70369066,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          70369067
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "73316344": {
+    "spawnType": 0,
+    "owner": "钟雪儿",
+    "sandboxType": 2,
+    "position": [
+      -150.49,
+      40.38,
+      186.56
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 73316344,
+    "SpawnState": 0,
+    "weatherRefreshType": 0,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          73316343
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "49496058": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -198.47,
+      29.3,
+      182.54
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 49496058,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          49496057
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "49496070": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -180.64,
+      38,
+      166.55
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 49049717,
+    "id": 49496070,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          49496069
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51365160": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -239.33,
+      30.81,
+      197.78
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 49049717,
+    "id": 51365160,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51365159
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51365168": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -241.07,
+      30.81,
+      197.12
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 49049717,
+    "id": 51365168,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51365167
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51365175": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -242.87,
+      30.81,
+      196.1
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 49049717,
+    "id": 51365175,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51365174
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51365234": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -244.39,
+      30.81,
+      197.3
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 49049717,
+    "id": 51365234,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51365233
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51365241": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -246.34,
+      30.81,
+      197.53
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 49049717,
+    "id": 51365241,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51365240
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51558193": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      28.53,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 51558193,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51558192
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51558207": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      26.28,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 51558207,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51558206
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51558234": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      34,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 51558234,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51558233
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51558253": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -238.45,
+      24.02,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 51558253,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51558252
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "51794796": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -238.55,
+      30.72,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 51794796,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          51794795
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54496255": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -238.47,
+      38,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 54496255,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54496254
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "54496267": {
+    "spawnType": 0,
+    "sandboxType": 2,
+    "position": [
+      -238.47,
+      40.75,
+      112
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 49049717,
+    "id": 54496267,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          54496266
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  }
+}

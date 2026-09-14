@@ -1,0 +1,174 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        24,
+        30
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "4846f860-2571-4c7a-80ca-c4e4f0827504",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "d9e9f944-bc14-469c-9609-b6827e50394b",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "24": {
+      "UID": "b2fa06c5-c392-4f63-b4d6-f94d14113646",
+      "actorId": {
+        "UID": "677623ab-38b2-4960-9ebb-0ea5eeb26525",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 23
+      },
+      "name": "destroyEntity",
+      "NodeID": 24
+    },
+    "5": {
+      "UID": "fa3f8ad1-9c0d-4b17-ad89-4d187b751c5c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 5
+    },
+    "2": {
+      "UID": "db0e87c7-9e3d-49e4-98a3-01e2d7fc78df",
+      "name": "isReceiveDamageEventElementType",
+      "elementType": 3,
+      "NodeID": 2
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "5c12d67d-c400-4a62-aed6-23050567620c",
+      "effectId": "Eff_Monster_90207_Skill_MedBlast_Explosion5s",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2d27b7b2-48df-457c-9a51-9e88ac65dd06",
+      "effectId": "Eff_Monster_90207_Skill_MedBlast_creation5s",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "f16dc67e-a516-456c-bdc7-83f7de5484b0",
+      "effectId": "Eff_Monster_90207_Skill_MedBlast_creation5s",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "29": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          33
+        ]
+      },
+      "NodeID": 29
+    },
+    "18": {
+      "actionIds": [
+        21
+      ],
+      "name": "actOnTargets",
+      "UID": "cfe3e961-0d6f-4b7e-8f88-cb3de98e97e4",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3.5,
+            0.5,
+            0.3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 18
+    },
+    "32": {
+      "UID": "3cb63e4f-1ce5-4072-9224-441fbaff38ee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "NodeID": 32
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3d4ab6b5-641d-4934-86ea-f73108f63c76",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_90207_Skill_MedBlast_Explosion",
+      "NodeID": 33
+    },
+    "20": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 5,
+      "NodeID": 20,
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886",
+      "onUpdate": {
+        "actionIds": [
+          18
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          18
+        ]
+      }
+    },
+    "21": {
+      "target": "TARGET",
+      "duration": 0.5,
+      "buffId": 29020701,
+      "NodeID": 21,
+      "UID": "1d05f6c7-8a96-46ef-bab7-89185d119b0e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "timeline_9020708",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    5,
+    20,
+    29,
+    32
+  ],
+  "layer": "Base",
+  "length": 5
+}

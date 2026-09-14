@@ -1,0 +1,171 @@
+{
+  "nodeMap": {
+    "58": {
+      "key": "Rotate",
+      "name": "setProjectileCacheVal",
+      "UID": "af52ac64-de1b-44f6-999c-998c168dd8f0",
+      "val": {
+        "listId": "targetList1",
+        "NodeID": 57,
+        "UID": "dfb64132-5a33-4d7e-bcb0-b7b20b99222e",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "convertType": 3,
+          "name": "toInt",
+          "UID": "80461964-ab64-42cf-9e33-19708ffe0a3c",
+          "val": {
+            "NodeID": 55,
+            "UID": "0fc9de55-7e53-4308-9fd2-7c35fcf28a3e",
+            "min": 1,
+            "max": {
+              "listId": "targetList1",
+              "name": "getDynamicListCount",
+              "UID": "534d6d80-5fa7-4d9d-8826-9f2213c951b4",
+              "target": "OWNER",
+              "NodeID": 54
+            },
+            "name": "random"
+          },
+          "NodeID": 56
+        }
+      },
+      "NodeID": 58
+    },
+    "24": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 9,
+        "impulseId": 2000
+      },
+      "UID": "d7a17df3-369a-4520-970c-d15780599f8a",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 14340110,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "NodeID": 24
+    },
+    "54": {
+      "listId": "targetList1",
+      "name": "getDynamicListCount",
+      "UID": "534d6d80-5fa7-4d9d-8826-9f2213c951b4",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "55": {
+      "NodeID": 55,
+      "UID": "0fc9de55-7e53-4308-9fd2-7c35fcf28a3e",
+      "min": 1,
+      "max": {
+        "listId": "targetList1",
+        "name": "getDynamicListCount",
+        "UID": "534d6d80-5fa7-4d9d-8826-9f2213c951b4",
+        "target": "OWNER",
+        "NodeID": 54
+      },
+      "name": "random"
+    },
+    "57": {
+      "listId": "targetList1",
+      "NodeID": 57,
+      "UID": "dfb64132-5a33-4d7e-bcb0-b7b20b99222e",
+      "target": "OWNER",
+      "name": "getDynamicListItem",
+      "index": {
+        "convertType": 3,
+        "name": "toInt",
+        "UID": "80461964-ab64-42cf-9e33-19708ffe0a3c",
+        "val": {
+          "NodeID": 55,
+          "UID": "0fc9de55-7e53-4308-9fd2-7c35fcf28a3e",
+          "min": 1,
+          "max": {
+            "listId": "targetList1",
+            "name": "getDynamicListCount",
+            "UID": "534d6d80-5fa7-4d9d-8826-9f2213c951b4",
+            "target": "OWNER",
+            "NodeID": 54
+          },
+          "name": "random"
+        },
+        "NodeID": 56
+      }
+    },
+    "56": {
+      "convertType": 3,
+      "name": "toInt",
+      "UID": "80461964-ab64-42cf-9e33-19708ffe0a3c",
+      "val": {
+        "NodeID": 55,
+        "UID": "0fc9de55-7e53-4308-9fd2-7c35fcf28a3e",
+        "min": 1,
+        "max": {
+          "listId": "targetList1",
+          "name": "getDynamicListCount",
+          "UID": "534d6d80-5fa7-4d9d-8826-9f2213c951b4",
+          "target": "OWNER",
+          "NodeID": 54
+        },
+        "name": "random"
+      },
+      "NodeID": 56
+    }
+  },
+  "angularIncreaseDuration": 0.15,
+  "BPName": "ability_14340110",
+  "defaultHitSoundType": "s",
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10434_Skill_Missile_01_Liuli",
+  "effectTimeInitOffset": 0,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 1200,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 100,
+  "minAngularOffset": 0,
+  "moveSpeed": 5,
+  "onProjectileStartIds": [
+    58
+  ],
+  "onProjectileHitIds": [
+    24
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 700,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "targetPos": {
+    "UID": "d8fc979b-c48d-484d-9012-4d0ba8b3d385",
+    "name": "getProjectileCacheVal",
+    "key": "Rotate",
+    "NodeID": 65
+  },
+  "tickInterval": 0,
+  "NodeID": 66,
+  "duration": 2,
+  "calcResultNodeId": 24,
+  "UID": "231149da-11cb-4795-b84c-cdd412142d7e",
+  "impulseId": 2000,
+  "acceleration": 50
+}

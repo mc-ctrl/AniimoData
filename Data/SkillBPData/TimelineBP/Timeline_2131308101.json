@@ -1,0 +1,92 @@
+{
+  "BPName": "buff_2131308",
+  "NodeID": 5,
+  "UID": "dad81ced-ba83-464f-8d11-96be5096a927",
+  "layer": "Parallel",
+  "isSkillTimeline": false,
+  "length": 2,
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": {
+        "NodeID": 19,
+        "name": "constVector3",
+        "UID": "adcfa8f4-bb5c-476b-a253-0f6c5cfa8ae8",
+        "x": 0,
+        "y": {
+          "rValue": 1.2,
+          "name": "add",
+          "UID": "433009e8-c0c3-4348-85ad-de829c00e690",
+          "NodeID": 18,
+          "lValue": {
+            "rValue": 2,
+            "name": "multiply",
+            "UID": "6b7ded6a-748f-4251-87a8-f4a36e71073c",
+            "NodeID": 17,
+            "lValue": {
+              "UID": "96f3b53d-8921-4c6c-b34c-78446d652521",
+              "target": {
+                "key": "10313Pos",
+                "name": "getCacheVal",
+                "UID": "809fc15e-7597-4b77-ab52-345bf48e48ef",
+                "target": "OWNER",
+                "NodeID": 15
+              },
+              "name": "getBodySize",
+              "NodeID": 16
+            }
+          }
+        },
+        "z": 0
+      },
+      "templateId": 2131308101,
+      "name": "createProjectile",
+      "UID": "da784250-913d-487a-8ca5-02fe7fa57131",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "pos": {
+        "key": "10313Pos",
+        "name": "getCacheVal",
+        "UID": "2f9a658e-120e-43ef-a2ff-ebfd11fa1e8d",
+        "target": "OWNER",
+        "NodeID": 14
+      },
+      "projectileType": "Free3d",
+      "startSleepTime": {
+        "UID": "6ef9e339-33f8-4159-b8f7-503c17bf10a5",
+        "number": 0.3,
+        "name": "constNumber",
+        "NodeID": 2
+      },
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "6f39876d-70cb-4f89-87b7-ec5ebc02ffbf",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "16": {
+      "UID": "96f3b53d-8921-4c6c-b34c-78446d652521",
+      "target": {
+        "key": "10313Pos",
+        "name": "getCacheVal",
+        "UID": "809fc15e-7597-4b77-ab52-345bf48e48ef",
+        "target": "OWNER",
+        "NodeID": 15
+      },
+      "name": "getBodySize",
+      "NodeID": 16
+    }
+  },
+  "eventIds": [
+    4
+  ]
+}

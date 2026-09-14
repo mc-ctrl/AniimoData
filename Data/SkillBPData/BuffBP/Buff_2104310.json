@@ -1,0 +1,113 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2104310",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "06ca7101-40c1-4b17-bd67-57a1dc64c1c7",
+      "effectId": "Eff_Parmon_10172_Skill_Shield_Water_break",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6d92032d-047b-4c60-a14a-1c9ebc8fbb76",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_Muscotter_skill_shield",
+      "NodeID": 17
+    },
+    "9": {
+      "delay": 0.11,
+      "interval": 1,
+      "UID": "05d66f50-dd49-4ddd-b924-79528a55fffe",
+      "name": "buffStartThink",
+      "NodeID": 9
+    },
+    "14": {
+      "calcInfo": {
+        "add_cur_hp_fix": 0,
+        "add_cur_hp_max_p": 0.02286
+      },
+      "name": "calcResult",
+      "UID": "2698f3af-7c3d-4721-b0d2-3a779a42eb86",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "10": {
+      "duration": 0.4,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "d9967726-bb4f-4d6b-bba8-8d74533c4886",
+      "name": "addTimer"
+    },
+    "16": {
+      "name": "stopSoundStr",
+      "UID": "f4a85363-442e-4e08-9176-2fcec242c165",
+      "soundId": "parmon_ottery_skill_shield_loop",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_ottery_skill_shield_ice_destroy",
+      "NodeID": 5
+    },
+    "12": {
+      "duration": 0.11,
+      "actionIds": [
+        17,
+        10
+      ],
+      "NodeID": 12,
+      "UID": "d730678c-2f1a-4fae-b9df-e08499508345",
+      "name": "addTimer"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffThinkIds": [
+    14
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.1,
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 7,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10172_Skill_Shield_Water"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    16,
+    3,
+    5
+  ],
+  "onBuffStartIds": [
+    12
+  ]
+}

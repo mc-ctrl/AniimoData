@@ -1,0 +1,143 @@
+{
+  "duration": 1.15,
+  "calcResultNodeId": 19,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10222_Skill_Cross_Bullet_Rogue",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "maxHitNum": 5,
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    41
+  ],
+  "onProjectileHitIds": [
+    21,
+    40
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "36a9c092-ff28-4aa1-9664-63479b01f29d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Cross_Star",
+      "NodeID": 44
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7592e1e4-0c54-480b-8acb-ff7dd90fb86a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10224_Skill_Cross_Hit",
+      "NodeID": 40
+    },
+    "41": {
+      "name": "stopSoundStr",
+      "UID": "97170e7f-cbac-407b-884e-b3449499340e",
+      "soundId": "SFX_Combat_10223_Skill_Cross_Loop",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "19": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "hitEffectByAction": {
+          "NodeID": 0
+        },
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30304,
+        "hitFrameFreezeId": 10023,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10222_Skill_Cross_Bullet_Hit",
+            "rotAngle": 60,
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "attackRotateMode": "CasterPos",
+        "impulseId": 3000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "a819530c-6b17-484f-96fe-841245da8c60",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 19
+    },
+    "42": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7b972e0d-9ed9-4eb5-add5-e12d06e4a542",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10223_Skill_Cross_Loop",
+      "NodeID": 42
+    },
+    "21": {
+      "calcResultNodeId": 19,
+      "name": "actOnTargets",
+      "UID": "238acc4d-b7be-4728-9d47-d4db6b71fa03",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            -2
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            4,
+            2,
+            2
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        19
+      ],
+      "impulseId": 3000,
+      "NodeID": 21
+    }
+  },
+  "tickInterval": 0.2,
+  "onProjectileStartIds": [
+    44,
+    42
+  ],
+  "startSleepTime": 0,
+  "BPName": "ability_912220701",
+  "NodeID": 0,
+  "impulseId": 3000,
+  "acceleration": 0
+}

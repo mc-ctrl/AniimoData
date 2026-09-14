@@ -1,0 +1,463 @@
+{
+  "nodeMap": {
+    "52": {
+      "key": "BulblyDeath",
+      "name": "setServerCacheVal",
+      "UID": "62f700de-a349-4ebd-a2df-069b645c9fc6",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 52
+    },
+    "39": {
+      "eventName": "11331411",
+      "name": "notifyCustomEvent",
+      "UID": "ab4af0c0-a0e9-4415-8b9b-5c0ca636abc3",
+      "target": {
+        "key": "Bulbly_02",
+        "name": "getServerCacheVal",
+        "UID": "51659646-0826-4957-ba03-b1b38e60d068",
+        "target": "OWNER",
+        "NodeID": 38
+      },
+      "NodeID": 39
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 40,
+      "UID": "2ee4e675-cb62-4027-ab13-8490e9fd76a7"
+    },
+    "54": {
+      "key": "11331411Start",
+      "name": "setServerCacheVal",
+      "UID": "23d3c16b-75d3-457c-b5c2-31316a963ea9",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 54
+    },
+    "42": {
+      "eventName": "11331411",
+      "name": "notifyCustomEvent",
+      "UID": "ba5c4d13-d9f9-4a3c-9752-332fadc15200",
+      "target": {
+        "key": "Bulbly_03",
+        "name": "getServerCacheVal",
+        "UID": "e7e4ea21-2b4a-441e-bad3-d5ab10bf453f",
+        "target": "OWNER",
+        "NodeID": 41
+      },
+      "NodeID": 42
+    },
+    "35": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b84636b7-630d-4671-a4c0-55ef9326c986",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glynsera_Skill_BladeBack_Boom",
+      "NodeID": 35
+    },
+    "68": {
+      "timelineId": 11331411002,
+      "name": "jumpToNextTimeline",
+      "UID": "58cbb5ba-9955-4375-8e50-e7b7dcc51c49",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "3": {
+      "UID": "2a33781a-ff24-4bc6-915b-857d6d3d5d85",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 3
+    },
+    "71": {
+      "target": "OWNER",
+      "duration": 3.9,
+      "buffId": 10011,
+      "NodeID": 71,
+      "UID": "e4a691b4-0875-4733-bf52-c19582f711fb",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          14,
+          3,
+          53,
+          27,
+          57,
+          61,
+          62,
+          71
+        ]
+      },
+      "NodeID": 5
+    },
+    "75": {
+      "UID": "0bdfc89b-dfa5-4eab-8db4-a5534d5290ad",
+      "value": "jumptoweak",
+      "name": "print",
+      "NodeID": 75
+    },
+    "74": {
+      "tag": 1,
+      "name": "removeBuffByTag",
+      "UID": "1f17a6bc-a9ee-47b3-b897-806138896e1d",
+      "target": "OWNER",
+      "NodeID": 74
+    },
+    "62": {
+      "id": 2045,
+      "duration": 5,
+      "NodeID": 62,
+      "UID": "779f71af-8326-4ce7-aa7c-d6de238201b4",
+      "name": "showBossMechanismTip",
+      "hasCountDown": false
+    },
+    "61": {
+      "duration": 5,
+      "NodeID": 61,
+      "UID": "1bb909c2-6cd6-4f1a-b8ba-c66ed30b6bdd",
+      "effectId": "Eff_Skill_Common_Warning_Red01",
+      "target": "OWNER",
+      "isAbilityEndRemove": true,
+      "speed": 1,
+      "name": "playEffectStr",
+      "scale": 1
+    },
+    "60": {
+      "action": {
+        "actionIds": [
+          59
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 60,
+      "UID": "f33f01f6-5a3e-407f-b11d-d59768648cda"
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "472014db-69b1-4116-a992-d596bb650267",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Glynsera_Skill_BladeBack",
+      "NodeID": 59
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          42
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 43,
+      "UID": "e01986b2-b5b3-4b26-881f-8c2a348848af"
+    },
+    "34": {
+      "UID": "d9deb3eb-de6c-4f93-b252-b27bb46b8554",
+      "name": "callClientAction",
+      "actionIds": [
+        32,
+        35
+      ],
+      "NodeID": 34
+    },
+    "37": {
+      "eventName": "11331411",
+      "name": "notifyCustomEvent",
+      "UID": "d5e90ad4-bd67-4a3e-aab2-1e4fc24bbf0b",
+      "target": {
+        "key": "Bulbly_01",
+        "name": "getServerCacheVal",
+        "UID": "2f783c49-6cd3-44cc-a19c-b1db3eaa0a66",
+        "target": "OWNER",
+        "NodeID": 36
+      },
+      "NodeID": 37
+    },
+    "32": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5cbd75c7-dda7-4bdb-80dd-fc2303da13c1",
+      "effectId": "Eff_Monster_10133_Mon_Skill_Throw_Boom",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "46": {
+      "key": "Bulbly_01",
+      "name": "setServerCacheVal",
+      "UID": "9d70e16e-97b6-4856-8ada-6a4fb3a93648",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 46
+    },
+    "11": {
+      "UID": "45aaea66-c74a-46aa-86a1-645a6ad3a826",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "actionIds": [
+        75,
+        68
+      ],
+      "conditionActionIds": [
+        56
+      ],
+      "UID": "0cebcb03-a222-4dd0-9cf0-0490d547277b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        19
+      ],
+      "NodeID": 20
+    },
+    "25": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 30,
+      "NodeID": 25,
+      "UID": "f9016fd6-a85f-4b1f-9661-df6d91ad969f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            30,
+            5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        30
+      ]
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          45,
+          74,
+          20,
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 22,
+      "UID": "8079df95-17d7-4ae3-ba37-2f23fe6bf2a9"
+    },
+    "13": {
+      "UID": "0a4c72e7-3ef9-40a7-b2a3-30ad558a5fcb",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          11,
+          52,
+          46,
+          49,
+          50,
+          51,
+          54
+        ]
+      },
+      "NodeID": 13
+    },
+    "45": {
+      "eventName": "11331411",
+      "name": "notifyCustomEvent",
+      "UID": "a6a77c48-b4e1-494e-9048-312b90cca331",
+      "target": {
+        "key": "Bulbly_04",
+        "name": "getServerCacheVal",
+        "UID": "efe1981b-e166-42a8-a76d-50b5688264bd",
+        "target": "OWNER",
+        "NodeID": 44
+      },
+      "NodeID": 45
+    },
+    "14": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5f91bc77-bc5b-4594-a0c0-d399e6788e6c",
+      "target": "OWNER",
+      "NodeID": 14,
+      "animId": "Behav_HappyStart"
+    },
+    "56": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "6fdb41da-c0f7-493e-9ead-8e50455c7d2d",
+      "NodeID": 56,
+      "lValue": {
+        "key": "BulblyDeath",
+        "name": "getServerCacheVal",
+        "UID": "315ceeea-2dd6-47cd-b43a-1dba1b1fdd8e",
+        "target": "OWNER",
+        "NodeID": 55
+      }
+    },
+    "15": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ff776b39-c0db-4a40-8db7-40ad37f923c9",
+      "target": "OWNER",
+      "NodeID": 15,
+      "animId": "Behav_HappyLoop"
+    },
+    "57": {
+      "duration": 4,
+      "disableWhenFinished": true,
+      "NodeID": 57,
+      "UID": "9f3bcb0c-076e-4c3c-947c-b2926aa686e3",
+      "target": "OWNER",
+      "presetName": "Eff_Monster_10133_Mon_Skill_Strike_Cast",
+      "name": "playPreset"
+    },
+    "27": {
+      "eventName": "11331411_Boom",
+      "NodeID": 27,
+      "UID": "d91ff9ef-2b20-43d8-bb66-b27678870472",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        34,
+        25
+      ]
+    },
+    "58": {
+      "templateId": 9113302,
+      "name": "destroyCreatedEntity",
+      "UID": "4b0d2649-9ff0-4fc7-b27f-0ba22c5c0a1e",
+      "target": "OWNER",
+      "entityType": "Creation",
+      "NodeID": 58
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 17,
+      "UID": "98ceb4d8-9c1e-4262-ae22-f41202edc6b4"
+    },
+    "49": {
+      "key": "Bulbly_02",
+      "name": "setServerCacheVal",
+      "UID": "76e2050d-ca05-45e6-8443-748de758ef45",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 49
+    },
+    "30": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 11331411,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "e3d5457f-1706-496f-b60e-9b888880210f",
+      "target": "TARGET",
+      "NodeID": 30,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10002,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 3002
+      }
+    },
+    "50": {
+      "key": "Bulbly_03",
+      "name": "setServerCacheVal",
+      "UID": "2f7a5463-3fe9-4889-a2ec-f5582df45131",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 50
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "b18c8f34-a349-4c08-8a50-74a2adc739ed",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Behav_HappyEnd"
+    },
+    "51": {
+      "key": "Bulbly_04",
+      "name": "setServerCacheVal",
+      "UID": "f159d50b-388b-4232-bbe4-6b6ad1f746d4",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 51
+    },
+    "53": {
+      "key": "11331411Start",
+      "name": "setServerCacheVal",
+      "UID": "7067f27c-fac7-4b1d-8213-200c846bd930",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 53
+    }
+  },
+  "BPName": "ability_11331411",
+  "NodeID": 7,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    5,
+    60,
+    13,
+    17,
+    40,
+    43,
+    22
+  ],
+  "layer": "Base",
+  "length": 5.65
+}

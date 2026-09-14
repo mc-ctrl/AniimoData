@@ -1,0 +1,3251 @@
+{
+  "51982064": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51983888,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room1_4",
+    "sightLevelType": 128,
+    "spawners": [
+      42315224
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51982064_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -90,
+      0.45,
+      85
+    ],
+    "owner": "丁宇航",
+    "id": 51982064,
+    "levelItems": {
+      "51982228": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -98.73,
+          0.45,
+          76.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982228,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "91047865": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018853,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 91047927,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "7DAY_战斗",
+      "CBT3_宠物战斗"
+    ],
+    "routes": [
+      91047878,
+      91047881
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_多路线 - EntityTag限制",
+    "sightLevelType": 128,
+    "spawners": [
+      91047871
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_91047865_GraphRef.asset",
+    "position": [
+      -40.08,
+      0.5,
+      160.05
+    ],
+    "owner": "徐逸芸",
+    "id": 91047865,
+    "levelItems": {},
+    "markConfig": {
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "entityStaticIdType": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 91047865,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": true,
+      "positionParam": {},
+      "SloganPlayOnce": false,
+      "POIDesc": "=\"这是\"&J67&\"，具体描述自助修改\"",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "inactiveTitle": "关键生态点",
+      "markType": 0,
+      "arriveType": 1,
+      "initState": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    }
+  },
+  "51982285": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017829,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51983535,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      51990138
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room1_6 规矩控制，起飞和降落",
+    "sightLevelType": 128,
+    "spawners": [
+      51990968
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51982285_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -90,
+      0.45,
+      135
+    ],
+    "owner": "丁宇航",
+    "id": 51982285,
+    "levelItems": {
+      "51983391": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -98.73,
+          0.45,
+          126.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51983391,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51385814": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51385815,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      55456235
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_模板",
+    "sightLevelType": 128,
+    "spawners": [
+      51385813
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51385814_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      0,
+      -500,
+      0
+    ],
+    "owner": "周晓晨",
+    "id": 51385814,
+    "levelItems": {
+      "51385810": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -8.73,
+          -500,
+          -8.74
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51385810,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51982545": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51984778,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room3_3 拟态演示",
+    "sightLevelType": 128,
+    "spawners": [
+      53347863
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51982545_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -40,
+      0.45,
+      60
+    ],
+    "owner": "丁宇航",
+    "id": 51982545,
+    "levelItems": {
+      "51982697": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -48.73,
+          0.45,
+          51.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982697,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51386377": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51386378,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      51468699,
+      51468700,
+      51468701
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room3_1 生态拍照，活动",
+    "sightLevelType": 128,
+    "spawners": [
+      51468694
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51386377_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -40,
+      0.45,
+      10
+    ],
+    "owner": "周晓晨",
+    "id": 51386377,
+    "levelItems": {}
+  },
+  "51982565": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018852,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51984703,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room3_4 三种活动演示",
+    "sightLevelType": 128,
+    "spawners": [
+      51984695,
+      52497151
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51982565_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -40,
+      0.45,
+      85
+    ],
+    "owner": "丁宇航",
+    "id": 51982565,
+    "levelItems": {
+      "51984683": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -48.73,
+          0.45,
+          76.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51984683,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51982595": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018852,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51984584,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      53352117,
+      53799958
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room3_5 轮流滑翔",
+    "sightLevelType": 128,
+    "spawners": [
+      53716193
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51982595_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -40,
+      0.45,
+      110
+    ],
+    "owner": "丁宇航",
+    "id": 51982595,
+    "levelItems": {
+      "51982735": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -48.73,
+          0.45,
+          101.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982735,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51982648": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018853,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51984500,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room3_6",
+    "sightLevelType": 128,
+    "spawners": [
+      53889467
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51982648_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -40,
+      0.45,
+      135
+    ],
+    "owner": "丁宇航",
+    "id": 51982648,
+    "levelItems": {
+      "51982754": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -48.73,
+          0.45,
+          126.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982754,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51982886": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 51984079,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      41523612,
+      41524957
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room1_2 原地起跳，蹦床跳跃",
+    "sightLevelType": 128,
+    "spawners": [
+      41513950,
+      51967815
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51982886_GraphRef.asset",
+    "sightLevel": 128,
+    "position": [
+      -90,
+      0.45,
+      35
+    ],
+    "owner": "丁宇航",
+    "id": 51982886,
+    "levelItems": {
+      "51982957": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -98.73,
+          0.45,
+          26.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982957,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "53361611": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 53361612,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      53361607,
+      53361608,
+      53362164,
+      62799448,
+      62803946
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room4_1 AI漂浮，路点",
+    "sightLevelType": 128,
+    "spawners": [
+      53361610,
+      62714498,
+      62719602
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_53361611_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -15,
+      0.45,
+      10
+    ],
+    "owner": "周晓晨",
+    "id": 53361611,
+    "levelItems": {
+      "53361728": {
+        "majorCompId": 51219203,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_POI_Cloud_1",
+        "position": [
+          -15.57,
+          0.5,
+          -28.91
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 53361728,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "51219203": {
+            "areaRadius": 20
+          }
+        },
+        "configId": 184,
+        "defaultValue": {
+          "flame": 0,
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53361606": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -23.73,
+          0.45,
+          1.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 53361606,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53361727": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Virtual_Puppet_Container",
+        "position": [
+          -20.27,
+          0.5,
+          1.31
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 0,
+        "id": 53361727,
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "configId": 4,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51964009": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51983768,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "sightLevel": 128,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      42738074
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room1-5 钻地后移动",
+    "sightLevelType": 128,
+    "spawners": [
+      42738054
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -90,
+      0.45,
+      110
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51964009_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "丁宇航",
+    "id": 51964009,
+    "levelItems": {
+      "51983754": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -98.73,
+          0.45,
+          101.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51983754,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "这是关键生态点，具体描述自助修改",
+      "autoSetContent1": true,
+      "compassShowDistance": 100,
+      "initState": 0,
+      "inactiveDesc": "这是关键生态点，具体描述自助修改",
+      "mapAreaId": 0,
+      "inactiveTitle": "关键生态点",
+      "markContent1": 51964009,
+      "nearState": 2,
+      "openMapState": 1,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "showPortalOffset": false,
+      "scale2": 1,
+      "scale3": 0,
+      "positionParam": {},
+      "SloganPlayOnce": false,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 128,
+      "title": "关键生态点",
+      "activeShapes": {},
+      "compassTxt": "关键生态点",
+      "arriveParam": {},
+      "arriveType": 1,
+      "markConfigId": 10405,
+      "circleRadius": 0,
+      "markType": 0,
+      "scale1": 1
+    }
+  },
+  "51398736": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51398737,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      52398165
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room2_4 滑翔接风场",
+    "sightLevelType": 128,
+    "spawners": [
+      51398738
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51398736_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -65,
+      0.45,
+      85
+    ],
+    "owner": "周晓晨",
+    "id": 51398736,
+    "levelItems": {
+      "51984356": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -73.73,
+          0.45,
+          76.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51984356,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "55455189": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 55455190,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "sightLevel": 128,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      55456432,
+      55525516,
+      55525544,
+      55525586,
+      55525642
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room4_2 集体跳跃",
+    "sightLevelType": 128,
+    "spawners": [
+      55455188
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "position": [
+      -15,
+      0.45,
+      35
+    ],
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_55455189_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "周晓晨",
+    "id": 55455189,
+    "levelItems": {
+      "55455186": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -23.73,
+          0.45,
+          26.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 55455186,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "这是关键生态点，具体描述自助修改",
+      "autoSetContent1": true,
+      "compassShowDistance": 100,
+      "initState": 0,
+      "inactiveDesc": "这是关键生态点，具体描述自助修改",
+      "mapAreaId": 0,
+      "inactiveTitle": "关键生态点",
+      "markContent1": 55455189,
+      "nearState": 2,
+      "openMapState": 1,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "showPortalOffset": false,
+      "scale2": 1,
+      "scale3": 0,
+      "positionParam": {},
+      "SloganPlayOnce": false,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 128,
+      "title": "关键生态点",
+      "activeShapes": {},
+      "compassTxt": "关键生态点",
+      "arriveParam": {},
+      "arriveType": 1,
+      "markConfigId": 10405,
+      "circleRadius": 0,
+      "markType": 0,
+      "scale1": 1
+    }
+  },
+  "51398745": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51398746,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      52245111,
+      52245293,
+      52245332
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room2_5 不同距离跳跃",
+    "sightLevelType": 128,
+    "spawners": [
+      51398747
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51398745_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -65,
+      0.45,
+      110
+    ],
+    "owner": "周晓晨",
+    "id": 51398745,
+    "levelItems": {
+      "51982784": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -73.73,
+          0.45,
+          101.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982784,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "53869952": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 53869953,
+    "levelItems": {
+      "53869945": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          1.27,
+          0.45,
+          26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 53869945,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      53869947,
+      78223997,
+      78224104,
+      78224124
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room5_2 游泳",
+    "sightLevelType": 128,
+    "spawners": [
+      53869951,
+      78223973,
+      78223982,
+      78223984
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_53869952_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "周晓晨",
+    "position": [
+      10,
+      0.45,
+      35.61
+    ],
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "onlySyncOwner": false,
+    "id": 53869952,
+    "keepGraphOnFinished": false,
+    "sightLevel": 128
+  },
+  "56838137": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "这是关键生态点，具体描述自助修改",
+      "autoSetContent1": true,
+      "compassShowDistance": 100,
+      "entityStaticIdType": 0,
+      "inactiveDesc": "这是关键生态点，具体描述自助修改",
+      "mapAreaId": 0,
+      "inactiveTitle": "关键生态点",
+      "markContent1": 56838137,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "showPortalOffset": false,
+      "scale2": 0,
+      "scale3": 0,
+      "positionParam": {},
+      "SloganPlayOnce": false,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "title": "关键生态点",
+      "activeShapes": {},
+      "compassTxt": "关键生态点",
+      "initState": 0,
+      "arriveType": 1,
+      "markConfigId": 10405,
+      "circleRadius": 0,
+      "markType": 0,
+      "scale1": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      58815274
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room4_3 主角变量测试",
+    "sightLevelType": 128,
+    "spawners": [
+      56839181,
+      71427909
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      -13.63,
+      0.5,
+      58.11
+    ],
+    "owner": "",
+    "id": 56838137,
+    "levelItems": {},
+    "disposable": true
+  },
+  "53727180": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1019875,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 53727181,
+    "levelItems": {
+      "53727172": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          1.27,
+          0.45,
+          1.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 53727172,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      53727577,
+      59484408,
+      59495408,
+      72081430,
+      72104754
+    ],
+    "sandboxType": 4,
+    "sightLevel": 128,
+    "sightLevelType": 128,
+    "spawners": [
+      53727179,
+      59323930,
+      59484394,
+      72040342,
+      72040344,
+      72059001,
+      72081429,
+      72104753,
+      91000549,
+      91000551
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_53727180_GraphRef.asset",
+    "lastModifiedBy": "",
+    "owner": "周晓晨",
+    "position": [
+      10,
+      0.45,
+      10
+    ],
+    "forceSync": false,
+    "keepGraphOnFinished": false,
+    "spawnerId": 0,
+    "difficultyLevel": 0,
+    "onlySyncOwner": false,
+    "id": 53727180,
+    "autoEndType": 0,
+    "name": "全局_关键生态点_Room5_1 游泳"
+  },
+  "51471448": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51471449,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room0_5",
+    "sightLevelType": 128,
+    "spawners": [
+      51471447
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51471448_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -115,
+      0.45,
+      110
+    ],
+    "owner": "周晓晨",
+    "id": 51471448,
+    "levelItems": {
+      "51471445": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -123.73,
+          0.45,
+          101.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51471445,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51471402": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51471403,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      43512195
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room0_2 上坡",
+    "sightLevelType": 128,
+    "spawners": [
+      45829161,
+      45829317
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51471402_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -115,
+      0.45,
+      35
+    ],
+    "owner": "周晓晨",
+    "id": 51471402,
+    "levelItems": {
+      "51983145": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -123.27,
+          0.45,
+          26.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51983145,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 0
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51398671": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51463854,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      52150588,
+      71854309
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room2_1 吃饭睡觉",
+    "sightLevelType": 128,
+    "spawners": [
+      51984204,
+      71854276
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51398671_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -65,
+      0.45,
+      10
+    ],
+    "owner": "周晓晨",
+    "id": 51398671,
+    "levelItems": {
+      "51982518": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -73.73,
+          0.45,
+          1.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982518,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "59397905": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1016806,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "desc": "这是关键生态点，具体描述自助修改",
+      "autoSetContent1": true,
+      "compassShowDistance": 100,
+      "initState": 0,
+      "inactiveDesc": "这是关键生态点，具体描述自助修改",
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 59397905,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "POILevel": 0,
+      "positionParam": {},
+      "timeLimit": false,
+      "SloganPlayOnce": false,
+      "chest": 0,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "yaw": 0,
+      "title": "关键生态点",
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "showPortalOffset": false,
+      "activeShapes": {},
+      "markType": 0,
+      "hudTips": false,
+      "arriveType": 1,
+      "compassTxt": "关键生态点",
+      "circleRadius": 0,
+      "inactiveTitle": "关键生态点",
+      "reward": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      59407964,
+      59481672,
+      59652671,
+      59655073,
+      59674716,
+      59676477,
+      59680878,
+      59739066,
+      59740885,
+      59743624,
+      59763656,
+      59763668,
+      59763669
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_ai落地项目",
+    "sightLevelType": 256,
+    "spawners": [
+      59409869,
+      59412531,
+      59501141,
+      59671827,
+      59674798,
+      59676838,
+      59680876,
+      59738397,
+      59741410,
+      59756647,
+      59762819
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 256,
+    "position": [
+      -147.7,
+      0.5,
+      240.44
+    ],
+    "owner": "丁宇航",
+    "id": 59397905,
+    "levelItems": {},
+    "disposable": true
+  },
+  "51532520": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51532521,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      51532761
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room3_2 生态拍照，单体路点",
+    "sightLevelType": 128,
+    "spawners": [
+      51532519
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51532520_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -40,
+      0.45,
+      35
+    ],
+    "owner": "周晓晨",
+    "id": 51532520,
+    "levelItems": {}
+  },
+  "51471358": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51471359,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      42758228
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room0_1 躲避障碍物",
+    "sightLevelType": 128,
+    "spawners": [
+      42757799,
+      51471357,
+      76866925
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51471358_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -115,
+      0.45,
+      10
+    ],
+    "owner": "周晓晨",
+    "id": 51471358,
+    "levelItems": {
+      "51471355": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -123.73,
+          0.45,
+          1.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51471355,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51471417": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51471418,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      51213174,
+      51220146,
+      51220175
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room0_3银盔龙三个状态",
+    "sightLevelType": 128,
+    "spawners": [
+      51471416
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51471417_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -115,
+      0.45,
+      60
+    ],
+    "owner": "周晓晨",
+    "id": 51471417,
+    "levelItems": {
+      "53125173": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_Trigger_SB (1)",
+        "position": [
+          -117.39,
+          0.9,
+          54.19
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 53125173,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53125174": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_Trigger_SB (2)",
+        "position": [
+          -112.99,
+          0.9,
+          54.19
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 3,
+        "id": 53125174,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51471414": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -123.73,
+          0.45,
+          51.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51471414,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53125153": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -120.95,
+          0.9,
+          54.19
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "id": 53125153,
+        "siblingIndex": 1,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "serializeVersion": 3,
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51796527": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51796528,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      42218109,
+      51815686,
+      51816145
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room1_3 前后衔接路点，轨迹控制，提前结束路点，滑翔",
+    "sightLevelType": 128,
+    "spawners": [
+      51796526
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51796527_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -90,
+      0.45,
+      60
+    ],
+    "owner": "周晓晨",
+    "id": 51796527,
+    "levelItems": {
+      "51815294": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -98.73,
+          0.45,
+          51.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51815294,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51471431": {
+    "owner": "周晓晨",
+    "autoSave": true,
+    "chunk": 1017828,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51471432,
+    "levelItems": {
+      "51983291": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -123.27,
+          0.45,
+          76.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "id": 51983291,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 0
+        },
+        "path": "",
+        "isActive": true
+      }
+    },
+    "markIconSpawnerId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room0_4 特殊移动",
+    "spawners": [
+      51471433,
+      58705695,
+      79369985,
+      79369987
+    ],
+    "activeOnInit": 1,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51471431_GraphRef.asset",
+    "lastModifiedBy": "",
+    "sightLevel": 128,
+    "position": [
+      -115,
+      0.45,
+      85
+    ],
+    "id": 51471431
+  },
+  "60260536": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018852,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "autoSetContent1": true,
+      "compassShowDistance": 100,
+      "initState": 0,
+      "mapAreaId": 0,
+      "inactiveTitle": "关键生态点",
+      "markContent1": 60260536,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "showPortalOffset": false,
+      "scale2": 0,
+      "scale3": 0,
+      "positionParam": {},
+      "timeLimit": false,
+      "SloganPlayOnce": false,
+      "chest": 0,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "markType": 0,
+      "activeShapes": {},
+      "hudTips": false,
+      "markConfigId": 10405,
+      "arriveType": 1,
+      "compassTxt": "关键生态点",
+      "circleRadius": 0,
+      "reward": 0,
+      "scale1": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room4_4 呼朋引伴",
+    "sightLevelType": 128,
+    "spawners": [
+      60898983,
+      60899348,
+      60899351,
+      62095499,
+      62095502
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      -15,
+      0.5,
+      85
+    ],
+    "owner": "",
+    "id": 60260536,
+    "levelItems": {},
+    "disposable": true
+  },
+  "82124968": {
+    "areaType": 999,
+    "position": [
+      86.5,
+      0.5,
+      15.05
+    ],
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "keepGraphOnFinished": false,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "7DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_生态点_特殊出生状态测试",
+    "spawners": [
+      82124970
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "id": 82124968,
+    "startVersion": "0.0",
+    "spawnerId": 0,
+    "owner": "周晓晨",
+    "autoEndType": 0,
+    "chunk": 1020899
+  },
+  "51904974": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1018851,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room3_3",
+    "sightLevelType": 128,
+    "spawners": {},
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51904974_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -40,
+      0.45,
+      60
+    ],
+    "owner": "周晓晨",
+    "id": 51904974,
+    "levelItems": {
+      "51904969": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -48.73,
+          0.45,
+          51.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51904969,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "80341880": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017829,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "infoPage": 0,
+      "autoSetContent1": true,
+      "entityStaticIdType": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 80341880,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": false,
+      "positionParam": {},
+      "SloganPlayOnce": false,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "inactiveTitle": "关键生态点",
+      "markType": 0,
+      "arriveType": 1,
+      "initState": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "areaIds": [
+      80341885
+    ],
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "7DAY_战斗"
+    ],
+    "routes": [
+      80375561,
+      80375564,
+      80375830,
+      81163109
+    ],
+    "spawnerId": 0,
+    "sandboxType": 4,
+    "name": "全局_关键生态点_矮洞",
+    "sightLevelType": 128,
+    "spawners": [
+      80375403,
+      80375405,
+      80375744,
+      81165965,
+      81668497,
+      82087447,
+      90871752
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "position": [
+      -114.73,
+      0.5,
+      161.43
+    ],
+    "owner": "徐逸芸",
+    "envobjs": {},
+    "id": 80341880,
+    "levelItems": {},
+    "disposable": true
+  },
+  "51398640": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017829,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51398641,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room2_6 不同出生状态演示",
+    "sightLevelType": 128,
+    "spawners": [
+      51398639
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51398640_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -65,
+      0.45,
+      135
+    ],
+    "owner": "周晓晨",
+    "id": 51398640,
+    "levelItems": {
+      "51398637": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -73.73,
+          0.45,
+          126.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51398637,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "51398657": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51398658,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      52158722
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room2_2 跟随",
+    "sightLevelType": 128,
+    "spawners": [
+      51398659
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51398657_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -65,
+      0.45,
+      35
+    ],
+    "owner": "周晓晨",
+    "id": 51398657,
+    "levelItems": {
+      "51982524": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -73.73,
+          0.45,
+          26.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 51982524,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "91047831": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 0,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "entityStaticIdType": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 91047831,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": true,
+      "positionParam": {},
+      "SloganPlayOnce": false,
+      "POIDesc": "=\"这是\"&J67&\"，具体描述自助修改\"",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "inactiveTitle": "关键生态点",
+      "markType": 0,
+      "arriveType": 1,
+      "initState": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "7DAY_战斗"
+    ],
+    "routes": {},
+    "sandboxType": 4,
+    "name": "全局_关键生态点_大眼盔主动退出落叶堆",
+    "sightLevelType": 128,
+    "spawners": [
+      80344390,
+      80344478
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      -90,
+      0.45,
+      160
+    ],
+    "owner": "徐逸芸",
+    "id": 91047831,
+    "levelItems": {},
+    "disposable": true
+  },
+  "51398642": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 51398643,
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      52221730,
+      52221759,
+      52221800,
+      52221817,
+      52221864,
+      52221882
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room2_3 动态避让",
+    "sightLevelType": 128,
+    "spawners": [
+      51398646
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51398642_GraphRef.asset",
+    "lastModifiedBy": "",
+    "position": [
+      -65,
+      0.45,
+      60
+    ],
+    "owner": "周晓晨",
+    "id": 51398642,
+    "levelItems": {
+      "53371757": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_Trigger_SB (2)",
+        "position": [
+          -64.2,
+          0.9,
+          52.33
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 1,
+        "id": 53371757,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53370933": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_Trigger_SB (1)",
+        "position": [
+          -66.39,
+          0.9,
+          52.33
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 2,
+        "id": 53370933,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "51982819": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -73.73,
+          0.45,
+          51.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 1,
+        "serializeVersion": 3,
+        "id": 51982819,
+        "path": "",
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      },
+      "53370793": {
+        "majorCompId": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_Trigger_SB",
+        "position": [
+          -68.56,
+          0.9,
+          52.33
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 53370793,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "54919957": {
+            "size": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "configId": 3,
+        "path": "",
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  },
+  "55700595": {
+    "areaType": 999,
+    "chunk": 1019875,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "spawnerId": 0,
+    "npcStaticId": 0,
+    "poiType": 501,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      55704369,
+      56318203,
+      57150814,
+      57150815
+    ],
+    "sandboxType": 1,
+    "name": "全局_生态点_游泳",
+    "spawners": [
+      55704337,
+      56220617,
+      58114249
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 55700595,
+    "owner": "周晓晨",
+    "position": [
+      48.53,
+      0.5,
+      22.49
+    ]
+  },
+  "91047841": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 0,
+    "markConfig": {
+      "hideToplogoMark": false,
+      "infoPage": 2,
+      "autoSetContent1": true,
+      "entityStaticIdType": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 91047841,
+      "nearState": 0,
+      "openMapState": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "exportOwnerInfo": false,
+      "showTeleportBtn": true,
+      "positionParam": {},
+      "SloganPlayOnce": false,
+      "POIDesc": "=\"这是\"&J67&\"，具体描述自助修改\"",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "inactiveTitle": "关键生态点",
+      "markType": 0,
+      "arriveType": 1,
+      "initState": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    },
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "7DAY_战斗"
+    ],
+    "routes": [
+      82923131,
+      83234124,
+      83246664,
+      83409655,
+      83413338
+    ],
+    "sandboxType": 4,
+    "name": "全局_关键生态点_是否执行路点行为 - 飞行测试",
+    "sightLevelType": 128,
+    "spawners": [
+      83246663
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "spawnerId": 0,
+    "sightLevel": 128,
+    "position": [
+      -65,
+      0.45,
+      160
+    ],
+    "owner": "徐逸芸",
+    "id": 91047841,
+    "levelItems": {},
+    "disposable": true
+  },
+  "51359523": {
+    "areaType": 999,
+    "autoSave": true,
+    "chunk": 1017827,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "spawnerId": 0,
+    "envobjs": {},
+    "graphId": 51359771,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_战斗"
+    ],
+    "routes": [
+      42664475,
+      52523973,
+      78543152
+    ],
+    "startVersion": "0.0",
+    "sandboxType": 4,
+    "name": "全局_关键生态点_Room1_1 路点",
+    "sightLevelType": 128,
+    "spawners": [
+      41523601,
+      52523970,
+      53189269,
+      78543099
+    ],
+    "onlySyncOwner": false,
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "graphRef": "Assets/Res/Level/LevelLogic/SandboxGraph/103/Sandbox_51359523_GraphRef.asset",
+    "position": [
+      -90,
+      0.45,
+      10
+    ],
+    "owner": "周晓晨",
+    "id": 51359523,
+    "keepGraphOnFinished": false,
+    "levelItems": {
+      "51374973": {
+        "majorCompId": 44987560,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "EditorName": "P_Item_SceneObject_Switch_SB",
+        "position": [
+          -98.73,
+          0.45,
+          1.26
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "siblingIndex": 0,
+        "id": 51374973,
+        "serializeVersion": 3,
+        "componentsInfo": {
+          "44987560": {
+            "actionPrototypeId": 141
+          }
+        },
+        "configId": 1,
+        "defaultValue": {
+          "state": 1
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    }
+  }
+}

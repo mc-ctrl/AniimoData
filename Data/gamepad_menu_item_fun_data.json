@@ -1,0 +1,118 @@
+{
+  "APPEARANCE": {
+    "name": 1221312230,
+    "icon": "$UI_HUD_Entry_Appearance.png"
+  },
+  "BAG": {
+    "name": 1329186028,
+    "icon": "$UI_HUD_Entry_Inventory.png"
+  },
+  "SeasonLobby": {
+    "name": 1955906684,
+    "icon": "$UI_HUD_Entry_Event_Season.png"
+  },
+  "CASHSHOP": {
+    "name": 1826219298,
+    "icon": "$UI_HUD_Entry_Purchase.png"
+  },
+  "HOMECAR_MANAGEMENT": {
+    "name": 1654174310,
+    "icon": "$UI_HUD_Entry_PetTravel.png"
+  },
+  "ALBUM": {
+    "name": 1828173292,
+    "icon": "$UI_HUD_Entry_Photo.png"
+  },
+  "CONFIG": {
+    "name": 1510904685,
+    "icon": "$UI_HUD_Entry_Setting.png"
+  },
+  "HOMELANDLOG": {
+    "name": 1892288052,
+    "icon": "$UI_HUD_Entry_Log.png"
+  },
+  "HOMELANDPLANTHANDBOOK": {
+    "name": 1582674712,
+    "icon": "$UI_HUD_Entry_PlantHandbook.png"
+  },
+  "HOMELANDREPORT": {
+    "name": 1330996495,
+    "icon": "$UI_HUD_Entry_Report.png"
+  },
+  "HOMELANDSEASON": {
+    "name": 1812879193,
+    "icon": "$UI_HUD_Entry_HomeSeason.png"
+  },
+  "MAP": {
+    "name": 2017941060,
+    "icon": "$UI_HUD_Entry_Map.png"
+  },
+  "RULE": {
+    "name": 1680166335,
+    "icon": "$UI_HUD_Entry_Help.png"
+  },
+  "STATIONMANAGE": {
+    "name": 1476966594,
+    "icon": "$UI_HUD_Entry_StationManage.png"
+  },
+  "PETENTRY": {
+    "name": 1596419683,
+    "icon": "$UI_HUD_Entry_Manage.png"
+  },
+  "TOWER_PETS": {
+    "name": 2052598503,
+    "icon": "$UI_Img_TowNewSet_icon8.png"
+  },
+  "paytest": {
+    "name": 1174275050,
+    "icon": "$UI_HUD_Entry_BP.png"
+  },
+  "QUEST": {
+    "name": 2111946779,
+    "icon": "$UI_HUD_Entry_Task.png"
+  },
+  "TOWER_BUFF": {
+    "name": 1143524312,
+    "icon": "$UI_Img_TowNewSet_icon7.png"
+  },
+  "TAKEPHOTO": {
+    "name": 1613113919,
+    "icon": "$UI_HUD_Entry_Photo.png"
+  },
+  "PETRESEARCH": {
+    "name": 1313396840,
+    "icon": "$UI_HUD_Entry_ResearchLog.png"
+  },
+  "SPECIALTRAIN": {
+    "name": 1407699773,
+    "icon": "$UI_HUD_Entry_Training.png"
+  },
+  "GRABEGG_BAG": {
+    "name": 1161436575,
+    "icon": "$UI_HUD_Entry_Inventory.png"
+  },
+  "PLAYERENHANCEMENT": {
+    "name": 1318643062,
+    "icon": "$UI_HUD_Entry_Character.png"
+  },
+  "PHOTOINVITE": {
+    "name": 1874363355,
+    "icon": "$UI_HUD_Entry_PhotoInvitation.png"
+  },
+  "HOMELANDDESIGN": {
+    "name": 1787570876,
+    "icon": "$UI_HUD_Entry_HomeDesign.png"
+  },
+  "HOMECAMPREPORT": {
+    "name": 1911184676,
+    "icon": "$UI_HUD_Entry_Report.png"
+  },
+  "ACTIVITYCENTER": {
+    "name": 1572230373,
+    "icon": "$UI_HUD_Entry_EventMain.png"
+  },
+  "SCHOOLGUIDE": {
+    "name": 1728776611,
+    "icon": "$UI_HUD_Entry_Guiding.png"
+  }
+}

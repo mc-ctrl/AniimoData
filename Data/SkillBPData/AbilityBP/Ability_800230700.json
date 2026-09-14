@@ -1,0 +1,40 @@
+{
+  "BPName": "ability_800230700",
+  "NodeID": 1,
+  "UID": "10b4eadf-0c53-4a83-97eb-dfc25eaff025",
+  "abilityParamId": 10500190,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 800230700001,
+      "name": "setCombatActionTimeline",
+      "UID": "29c7f0cf-a844-445c-ac85-96ddee6306e5",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Monster_Flylongbreath_Start",
+    "Skill_Monster_Flylongbreath_Loop",
+    "Skill_Monster_Flylongbreath_End"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_80023_Mon_Skill_Flylongbreath_Fire",
+    "Eff_Hit_Dragon_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "火远程攻击",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "refBones": [
+    "Bone M Tongue 02"
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "3": {
+    "dmg_dec_ratio_name": "dmg_water_dec_ratio",
+    "dmg_ratio_name": "dmg_water_add_ratio",
+    "hitRipplePreset": "HitRipple_Ice",
+    "hitRipplePreset_pet": "HitRipple_Ice_01",
+    "name_ch": 1460082496,
+    "particle_starcolor": [
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ],
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ]
+    ],
+    "desc": 1328599212,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_water_rate_v",
+    "skillHValue": 207,
+    "homeAbility": 1002,
+    "projectileHitSound": "water",
+    "name": "Water",
+    "colourValue": "#1e90ff"
+  },
+  "4": {
+    "dmg_dec_ratio_name": "dmg_electric_dec_ratio",
+    "dmg_ratio_name": "dmg_electric_add_ratio",
+    "hitRipplePreset": "HitRipple_Electric",
+    "hitRipplePreset_pet": "HitRipple_Electric_01",
+    "name_ch": 1420367645,
+    "particle_starcolor": [
+      [
+        0.937255,
+        0.372549,
+        0.372549,
+        1
+      ],
+      [
+        0.9433962,
+        0.6185475,
+        0.6185475,
+        1
+      ]
+    ],
+    "desc": 1306120501,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_electric_rate_v",
+    "skillHValue": 51,
+    "homeAbility": 1004,
+    "projectileHitSound": "electric",
+    "name": "Electric",
+    "colourValue": "#e2c10b"
+  },
+  "6": {
+    "dmg_dec_ratio_name": "dmg_grass_dec_ratio",
+    "dmg_ratio_name": "dmg_grass_add_ratio",
+    "hitRipplePreset": "HitRipple_Grass",
+    "hitRipplePreset_pet": "HitRipple_Grass_01",
+    "name_ch": 2012653348,
+    "particle_starcolor": [
+      [
+        0.6868548,
+        0.9000368,
+        0.990566,
+        1
+      ],
+      [
+        0.8160377,
+        0.9457547,
+        1,
+        1
+      ]
+    ],
+    "desc": 1784084202,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_grass_rate_v",
+    "skillHValue": 95,
+    "homeAbility": 1001,
+    "projectileHitSound": "grass",
+    "name": "Grass",
+    "colourValue": "#43a061"
+  },
+  "10": {
+    "dmg_dec_ratio_name": "dmg_poison_dec_ratio",
+    "dmg_ratio_name": "dmg_poison_add_ratio",
+    "hitRipplePreset": "HitRipple_Default",
+    "hitRipplePreset_pet": "HitRipple_Default",
+    "name_ch": 1886718017,
+    "particle_starcolor": [
+      [
+        0.5479708,
+        0.736929,
+        0.8867924,
+        1
+      ],
+      [
+        0.6556604,
+        0.8476959,
+        1,
+        1
+      ]
+    ],
+    "desc": 1614441929,
+    "isShow": 0,
+    "tp_reduce_rate_name": "tp_reduce_poison_rate_v",
+    "skillHValue": 253,
+    "projectileHitSound": "poison",
+    "name": "Poison"
+  },
+  "7": {
+    "dmg_dec_ratio_name": "dmg_metal_dec_ratio",
+    "dmg_ratio_name": "dmg_metal_add_ratio",
+    "hitRipplePreset": "HitRipple_Default",
+    "hitRipplePreset_pet": "HitRipple_Default",
+    "name_ch": 1918410671,
+    "particle_starcolor": [
+      [
+        0.5137255,
+        0.6509804,
+        0.8705883,
+        1
+      ],
+      [
+        0.6662958,
+        0.7474738,
+        0.8773585,
+        1
+      ]
+    ],
+    "desc": 1863985458,
+    "isShow": 0,
+    "tp_reduce_rate_name": "tp_reduce_metal_rate_v",
+    "skillHValue": 238,
+    "projectileHitSound": "metal",
+    "name": "Metal",
+    "colourValue": "#708c9c"
+  },
+  "13": {
+    "dmg_dec_ratio_name": "dmg_holy_dec_ratio",
+    "dmg_ratio_name": "dmg_holy_add_ratio",
+    "hitRipplePreset": "HitRipple_Electric",
+    "hitRipplePreset_pet": "HitRipple_Electric_01",
+    "name_ch": 1282708551,
+    "particle_starcolor": [
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ],
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ]
+    ],
+    "desc": 1780966784,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_holy_rate_v",
+    "skillHValue": 248,
+    "homeAbility": 1008,
+    "projectileHitSound": "holy",
+    "name": "Holy",
+    "colourValue": "#f6a93c"
+  },
+  "8": {
+    "dmg_dec_ratio_name": "dmg_rock_dec_ratio",
+    "dmg_ratio_name": "dmg_rock_add_ratio",
+    "hitRipplePreset": "HitRipple_Rock",
+    "hitRipplePreset_pet": "HitRipple_Rock_01",
+    "name_ch": 2093603622,
+    "particle_starcolor": [
+      [
+        1,
+        0.895523,
+        0.5235849,
+        1
+      ],
+      [
+        1,
+        0.9484251,
+        0.7688679,
+        1
+      ]
+    ],
+    "desc": 1737010031,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_rock_rate_v",
+    "skillHValue": 35,
+    "homeAbility": 1003,
+    "projectileHitSound": "rock",
+    "name": "Rock",
+    "colourValue": "#b8a278"
+  },
+  "12": {
+    "dmg_dec_ratio_name": "dmg_dark_dec_ratio",
+    "dmg_ratio_name": "dmg_dark_add_ratio",
+    "hitRipplePreset": "HitRipple_Dark",
+    "hitRipplePreset_pet": "HitRipple_Dark_01",
+    "name_ch": 1826602900,
+    "particle_starcolor": [
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ],
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ]
+    ],
+    "desc": 1170664082,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_dark_rate_v",
+    "skillHValue": 248,
+    "homeAbility": 1007,
+    "projectileHitSound": "dark",
+    "name": "Dark",
+    "colourValue": "#7b4ca9"
+  },
+  "9": {
+    "dmg_dec_ratio_name": "dmg_wind_dec_ratio",
+    "dmg_ratio_name": "dmg_wind_add_ratio",
+    "hitRipplePreset": "HitRipple_Wind",
+    "hitRipplePreset_pet": "HitRipple_Wind_01",
+    "name_ch": 1831147807,
+    "particle_starcolor": [
+      [
+        0.9433962,
+        0.7680007,
+        0.6541474,
+        1
+      ],
+      [
+        0.9622642,
+        0.8325351,
+        0.748932,
+        1
+      ]
+    ],
+    "desc": 2108814162,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_wind_rate_v",
+    "skillHValue": 161,
+    "homeAbility": 1006,
+    "projectileHitSound": "wind",
+    "name": "Wind",
+    "colourValue": "#2a52be"
+  },
+  "11": {
+    "dmg_dec_ratio_name": "dmg_psychic_dec_ratio",
+    "dmg_ratio_name": "dmg_psychic_add_ratio",
+    "hitRipplePreset": "HitRipple_Default",
+    "hitRipplePreset_pet": "HitRipple_Default",
+    "name_ch": 1910621579,
+    "particle_starcolor": [
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ],
+      [
+        0.6061766,
+        0.9245283,
+        0.7854781,
+        1
+      ]
+    ],
+    "desc": 1687837633,
+    "isShow": 0,
+    "tp_reduce_rate_name": "tp_reduce_psychic_rate_v",
+    "skillHValue": 345,
+    "projectileHitSound": "psychic",
+    "name": "Psychic",
+    "colourValue": "#ef65b0"
+  },
+  "5": {
+    "dmg_dec_ratio_name": "dmg_fire_dec_ratio",
+    "dmg_ratio_name": "dmg_fire_add_ratio",
+    "hitRipplePreset": "HitRipple_Fire",
+    "hitRipplePreset_pet": "HitRipple_Fire_01",
+    "name_ch": 1265310137,
+    "particle_starcolor": [
+      [
+        0.3884835,
+        0.8490566,
+        0.7808236,
+        1
+      ],
+      [
+        0.5050285,
+        0.9150943,
+        0.8525419,
+        1
+      ]
+    ],
+    "desc": 1182196211,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_fire_rate_v",
+    "skillHValue": 20,
+    "homeAbility": 1000,
+    "projectileHitSound": "fire",
+    "name": "Fire",
+    "colourValue": "#e03d3d"
+  },
+  "0": {
+    "dmg_dec_ratio_name": "dmg_null_dec_ratio",
+    "dmg_ratio_name": "dmg_null_add_ratio",
+    "hitRipplePreset": "HitRipple_Default",
+    "hitRipplePreset_pet": "HitRipple_Default",
+    "name_ch": 1865008905,
+    "particle_starcolor": [
+      [
+        0.8497241,
+        0.8640325,
+        0.8962264,
+        1
+      ],
+      [
+        0.8944464,
+        0.9066839,
+        0.9433962,
+        1
+      ]
+    ],
+    "isShow": 0,
+    "tp_reduce_rate_name": "tp_reduce_null_rate_v",
+    "name": "null"
+  },
+  "1": {
+    "dmg_dec_ratio_name": "dmg_normal_dec_ratio",
+    "dmg_ratio_name": "dmg_normal_add_ratio",
+    "hitRipplePreset": "HitRipple_Default",
+    "hitRipplePreset_pet": "HitRipple_Default",
+    "name_ch": 1497972369,
+    "particle_starcolor": [
+      [
+        0.8497241,
+        0.8640325,
+        0.8962264,
+        1
+      ],
+      [
+        0.8944464,
+        0.9066839,
+        0.9433962,
+        1
+      ]
+    ],
+    "desc": 2017988536,
+    "isShow": 0,
+    "tp_reduce_rate_name": "tp_reduce_normal_rate_v",
+    "skillHValue": 60,
+    "projectileHitSound": "none",
+    "name": "Normal",
+    "colourValue": "#b7b7be"
+  },
+  "2": {
+    "dmg_dec_ratio_name": "dmg_ice_dec_ratio",
+    "dmg_ratio_name": "dmg_ice_add_ratio",
+    "hitRipplePreset": "HitRipple_Ice",
+    "hitRipplePreset_pet": "HitRipple_Ice_01",
+    "name_ch": 1709653465,
+    "particle_starcolor": [
+      [
+        0.9056604,
+        0.864197,
+        0.764685,
+        1
+      ],
+      [
+        0.9056604,
+        0.864197,
+        0.764685,
+        1
+      ]
+    ],
+    "desc": 1341865715,
+    "isShow": 1,
+    "tp_reduce_rate_name": "tp_reduce_ice_rate_v",
+    "skillHValue": 201,
+    "homeAbility": 1005,
+    "projectileHitSound": "ice",
+    "name": "Ice",
+    "colourValue": "#58d0e8"
+  }
+}

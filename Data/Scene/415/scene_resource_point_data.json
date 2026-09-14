@@ -1,0 +1,107 @@
+{
+  "76705905": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": [
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 90,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 3,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          -0.12,
+          0,
+          -0.36
+        ]
+      },
+      {
+        "interactDirDescs": [
+          {
+            "towardsYaw": 90,
+            "dirInteractMaxNum": 1,
+            "towardsYawType": 3,
+            "limitYawRangeType": 0
+          }
+        ],
+        "portPosition": [
+          0,
+          0,
+          -2.91
+        ]
+      }
+    ],
+    "routeIds": [
+      76706065,
+      76706066
+    ],
+    "usePointOverride": false,
+    "usePortOverride": true,
+    "roleConditionStaticIds": {
+      "role01": 76700581,
+      "role02": 76703450
+    },
+    "sandboxId": 76700580,
+    "yaw": 0,
+    "templateId": 76705301,
+    "name": "10431Run",
+    "id": 76705905,
+    "routeId": 76706065,
+    "activeRangeOverride": 0,
+    "position": [
+      -269.16,
+      0.1,
+      18.24
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "77348140": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "name": "滑翔用资源点",
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 77352760,
+    "sandboxId": 77194683,
+    "id": 77348140,
+    "yaw": 0,
+    "templateId": 42399579,
+    "routeIds": {},
+    "activeRangeOverride": 0,
+    "position": [
+      -312.79,
+      0.1,
+      21.84
+    ],
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "81536280": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "routeIds": {},
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 81536162,
+    "sandboxId": 77194683,
+    "yaw": 327.22,
+    "templateId": 42399579,
+    "name": "滑翔用资源点",
+    "id": 81536280,
+    "position": [
+      -310.54,
+      0.1,
+      17.23
+    ],
+    "activeRangeOverride": 0,
+    "additiveTags": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  }
+}

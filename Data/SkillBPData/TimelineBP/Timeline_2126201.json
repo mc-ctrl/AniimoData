@@ -1,0 +1,67 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "0cd489d1-9182-4f05-9887-57ebf46acee3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          6,
+          7
+        ]
+      },
+      "NodeID": 4
+    },
+    "9": {
+      "UID": "739134a8-0340-4746-93c9-875037b4437a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 9
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5d7c743c-73f0-433e-8502-9aea3193e07f",
+      "effectId": "Eff_Parmon_10262_Skill_StrikeBounce",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 10,
+      "UID": "96456c49-5f46-47ac-ad1a-f3661e5658b4"
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "793c6c15-ddeb-4d07-8c4f-98a648f73ab6",
+      "effectId": "Eff_Parmon_10261_Skill_Strike",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ffe6368d-0f5c-4442-ae42-0ed725bab360",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_StrikeBounce"
+    }
+  },
+  "BPName": "timeline_2126201",
+  "NodeID": 1,
+  "UID": "7ee874a3-713e-46f1-9201-9d2904643e27",
+  "eventIds": [
+    4,
+    10
+  ],
+  "layer": "Base",
+  "length": 2.5
+}

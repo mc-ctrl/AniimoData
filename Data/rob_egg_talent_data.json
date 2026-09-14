@@ -1,0 +1,747 @@
+{
+  "5": {
+    "position": [
+      5,
+      2
+    ],
+    "Rarity": 2,
+    "baseCost": 100000,
+    "event": "reCalcWeights",
+    "itemCost": [
+      [
+        5901001,
+        2
+      ],
+      [
+        5901003,
+        1
+      ]
+    ],
+    "prerequisite": [
+      3,
+      4
+    ],
+    "effect": {
+      "weight": 4
+    },
+    "talentName": 1777446384,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_FullLaden1.png",
+    "des": 1161403277
+  },
+  "6": {
+    "position": [
+      6,
+      1
+    ],
+    "Rarity": 1,
+    "baseCost": 150000,
+    "des": 1982614295,
+    "itemCost": [
+      [
+        5901001,
+        3
+      ],
+      [
+        5901003,
+        2
+      ]
+    ],
+    "prerequisite": [
+      5
+    ],
+    "effect": {
+      "pvp_taken_dmg_dec_rate_v": 0.05
+    },
+    "talentName": 2137212009,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_DmgCush2.png"
+  },
+  "7": {
+    "position": [
+      7,
+      2
+    ],
+    "Rarity": 1,
+    "baseCost": 200000,
+    "des": 1917483636,
+    "itemCost": [
+      [
+        5901001,
+        6
+      ],
+      [
+        5901003,
+        3
+      ]
+    ],
+    "prerequisite": [
+      5
+    ],
+    "effect": {
+      "stamina_max_v": 10
+    },
+    "talentName": 1142769279,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_RobustBody2.png"
+  },
+  "30": {
+    "position": [
+      13,
+      6
+    ],
+    "Rarity": 3,
+    "baseCost": 2500000,
+    "des": 1299041490,
+    "itemCost": [
+      [
+        5901004,
+        8
+      ],
+      [
+        5901002,
+        10
+      ]
+    ],
+    "prerequisite": [
+      27
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_DiscItem3.png",
+    "talentName": 2056153574,
+    "type": 2
+  },
+  "8": {
+    "position": [
+      8,
+      2
+    ],
+    "Rarity": 2,
+    "baseCost": 250000,
+    "event": "reCalcWeights",
+    "itemCost": [
+      [
+        5901002,
+        1
+      ],
+      [
+        5901001,
+        10
+      ]
+    ],
+    "prerequisite": [
+      6,
+      7
+    ],
+    "effect": {
+      "weight": 4
+    },
+    "talentName": 1370270194,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_FullLaden2.png",
+    "des": 1205057524
+  },
+  "28": {
+    "position": [
+      14,
+      5
+    ],
+    "Rarity": 1,
+    "baseCost": 4000000,
+    "des": 1825958935,
+    "itemCost": [
+      [
+        5901004,
+        12
+      ],
+      [
+        5901002,
+        15
+      ]
+    ],
+    "prerequisite": [
+      25
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_SafeRein.png",
+    "talentName": 2037816082,
+    "eventParam": [
+      10
+    ],
+    "type": 2,
+    "event": "robEggAddSafeBoxWeightLimit"
+  },
+  "9": {
+    "position": [
+      8,
+      3
+    ],
+    "Rarity": 1,
+    "baseCost": 250000,
+    "des": 1452473427,
+    "itemCost": [
+      [
+        5901002,
+        1
+      ],
+      [
+        5901001,
+        10
+      ]
+    ],
+    "prerequisite": [
+      5
+    ],
+    "effect": {
+      "speed_ratio_fallen_v": 0.3
+    },
+    "talentName": 2127809343,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_SwiftEscape.png"
+  },
+  "22": {
+    "position": [
+      6,
+      6
+    ],
+    "Rarity": 1,
+    "baseCost": 150000,
+    "des": 2092021670,
+    "itemCost": [
+      [
+        5901001,
+        3
+      ],
+      [
+        5901003,
+        2
+      ]
+    ],
+    "prerequisite": [
+      20
+    ],
+    "effect": {
+      "egg_mode_taken_dmg_dec_rate_v": 0.1
+    },
+    "talentName": 2032135473,
+    "type": 2,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_HardyEgg1.png"
+  },
+  "26": {
+    "position": [
+      10,
+      5
+    ],
+    "Rarity": 1,
+    "baseCost": 450000,
+    "des": 2119604575,
+    "itemCost": [
+      [
+        5901002,
+        5
+      ],
+      [
+        5901001,
+        4
+      ]
+    ],
+    "prerequisite": [
+      23
+    ],
+    "effect": {
+      "speed_ratio_egg_mode_v": 0.1
+    },
+    "talentName": 1352075565,
+    "type": 2,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_AgileEgg2.png"
+  },
+  "11": {
+    "position": [
+      11,
+      2
+    ],
+    "Rarity": 1,
+    "baseCost": 550000,
+    "des": 1867978239,
+    "itemCost": [
+      [
+        5901002,
+        6
+      ],
+      [
+        5901001,
+        5
+      ]
+    ],
+    "prerequisite": [
+      8
+    ],
+    "effect": {
+      "stamina_regen_p": 0.05
+    },
+    "talentName": 1625393308,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_SwiftRecover2.png"
+  },
+  "1": {
+    "talentIcon": "$UI_SkillIcon_GrabEgg_DmgCush1.png",
+    "talentName": 1996222434,
+    "effect": {
+      "pvp_taken_dmg_dec_rate_v": 0.05
+    },
+    "position": [
+      2,
+      1
+    ],
+    "type": 1,
+    "Rarity": 1,
+    "baseCost": 40000,
+    "des": 1928437754
+  },
+  "12": {
+    "position": [
+      10,
+      3
+    ],
+    "Rarity": 1,
+    "baseCost": 450000,
+    "des": 2088008449,
+    "itemCost": [
+      [
+        5901002,
+        5
+      ],
+      [
+        5901001,
+        4
+      ]
+    ],
+    "prerequisite": [
+      9
+    ],
+    "effect": {
+      "fallen_hp_decay_ratio": -0.3
+    },
+    "talentName": 2077030388,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_FirmWill.png"
+  },
+  "3": {
+    "position": [
+      3,
+      1
+    ],
+    "Rarity": 1,
+    "baseCost": 60000,
+    "des": 1693755805,
+    "itemCost": [
+      [
+        5901003,
+        2
+      ]
+    ],
+    "prerequisite": [
+      1
+    ],
+    "effect": {
+      "pvp_taken_dmg_inc_rate_v": 0.05
+    },
+    "talentName": 1760688862,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_AccuBlow1.png"
+  },
+  "4": {
+    "position": [
+      4,
+      3
+    ],
+    "Rarity": 1,
+    "baseCost": 80000,
+    "des": 1847310787,
+    "itemCost": [
+      [
+        5901001,
+        1
+      ],
+      [
+        5901003,
+        2
+      ]
+    ],
+    "prerequisite": [
+      2
+    ],
+    "effect": {
+      "stamina_regen_p": 0.05
+    },
+    "talentName": 1097095162,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_SwiftRecover1.png"
+  },
+  "24": {
+    "position": [
+      9,
+      4
+    ],
+    "Rarity": 1,
+    "baseCost": 350000,
+    "des": 1829019703,
+    "itemCost": [
+      [
+        5901002,
+        4
+      ],
+      [
+        5901001,
+        3
+      ]
+    ],
+    "prerequisite": [
+      20
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_ExpertScav3.png",
+    "talentName": 1315484450,
+    "eventParam": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "type": 2,
+    "event": "robEggsetupLootSpeed"
+  },
+  "23": {
+    "position": [
+      8,
+      5
+    ],
+    "Rarity": 2,
+    "baseCost": 250000,
+    "des": 1307643308,
+    "itemCost": [
+      [
+        5901002,
+        1
+      ],
+      [
+        5901001,
+        10
+      ]
+    ],
+    "prerequisite": [
+      21,
+      22
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_SafeExpand1.png",
+    "talentName": 1275517180,
+    "eventParam": [
+      1
+    ],
+    "type": 2,
+    "event": "openSafeSlot"
+  },
+  "10": {
+    "position": [
+      9,
+      1
+    ],
+    "Rarity": 1,
+    "baseCost": 350000,
+    "des": 1527404994,
+    "itemCost": [
+      [
+        5901002,
+        4
+      ],
+      [
+        5901001,
+        3
+      ]
+    ],
+    "prerequisite": [
+      8
+    ],
+    "effect": {
+      "pvp_taken_dmg_inc_rate_v": 0.05
+    },
+    "talentName": 1483145226,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_AccuBlow2.png"
+  },
+  "15": {
+    "position": [
+      13,
+      3
+    ],
+    "Rarity": 3,
+    "baseCost": 2500000,
+    "des": 2013529868,
+    "itemCost": [
+      [
+        5901004,
+        8
+      ],
+      [
+        5901002,
+        10
+      ]
+    ],
+    "prerequisite": [
+      12
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_SelfSurv.png",
+    "talentName": 2138079254,
+    "eventParam": [
+      "can_fallen_self_help",
+      1
+    ],
+    "type": 1,
+    "event": "robEggAddSelfHelp"
+  },
+  "25": {
+    "position": [
+      12,
+      5
+    ],
+    "Rarity": 2,
+    "baseCost": 650000,
+    "des": 2026131471,
+    "itemCost": [
+      [
+        5901002,
+        7
+      ],
+      [
+        5901001,
+        6
+      ]
+    ],
+    "prerequisite": [
+      26
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_SafeExpand2.png",
+    "talentName": 1145459709,
+    "eventParam": [
+      1
+    ],
+    "type": 2,
+    "event": "openSafeSlot"
+  },
+  "16": {
+    "position": [
+      2,
+      4
+    ],
+    "Rarity": 1,
+    "baseCost": 40000,
+    "des": 1686201482,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_ExpertScav1.png",
+    "talentName": 1813076892,
+    "eventParam": [
+      0.2,
+      0.2,
+      0.2,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "type": 2,
+    "event": "robEggsetupLootSpeed"
+  },
+  "27": {
+    "position": [
+      11,
+      6
+    ],
+    "Rarity": 1,
+    "baseCost": 550000,
+    "des": 2023221256,
+    "itemCost": [
+      [
+        5901002,
+        6
+      ],
+      [
+        5901001,
+        5
+      ]
+    ],
+    "prerequisite": [
+      23
+    ],
+    "effect": {
+      "egg_mode_taken_dmg_dec_rate_v": 0.1
+    },
+    "talentName": 1568805005,
+    "type": 2,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_HardyEgg2.png"
+  },
+  "17": {
+    "itemCost": [
+      [
+        5901003,
+        2
+      ]
+    ],
+    "talentName": 2043273030,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_DiscItem1.png",
+    "position": [
+      3,
+      6
+    ],
+    "type": 2,
+    "Rarity": 2,
+    "baseCost": 60000,
+    "des": 2114119271
+  },
+  "21": {
+    "position": [
+      7,
+      5
+    ],
+    "Rarity": 1,
+    "baseCost": 200000,
+    "des": 2141804040,
+    "itemCost": [
+      [
+        5901001,
+        6
+      ],
+      [
+        5901003,
+        3
+      ]
+    ],
+    "prerequisite": [
+      20
+    ],
+    "effect": {
+      "speed_ratio_egg_mode_v": 0.1
+    },
+    "talentName": 1688627353,
+    "type": 2,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_AgileEgg1.png"
+  },
+  "18": {
+    "position": [
+      4,
+      4
+    ],
+    "Rarity": 1,
+    "baseCost": 80000,
+    "des": 1168788912,
+    "itemCost": [
+      [
+        5901001,
+        1
+      ],
+      [
+        5901003,
+        2
+      ]
+    ],
+    "prerequisite": [
+      16
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_ExpertScav2.png",
+    "talentName": 1940466992,
+    "eventParam": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "type": 2,
+    "event": "robEggsetupLootSpeed"
+  },
+  "20": {
+    "position": [
+      5,
+      5
+    ],
+    "Rarity": 2,
+    "baseCost": 100000,
+    "des": 1739210855,
+    "itemCost": [
+      [
+        5901001,
+        2
+      ],
+      [
+        5901003,
+        1
+      ]
+    ],
+    "prerequisite": [
+      17,
+      18,
+      19
+    ],
+    "talentIcon": "$UI_SkillIcon_GrabEgg_DiscItem2.png",
+    "talentName": 1877569823,
+    "type": 2
+  },
+  "19": {
+    "position": [
+      1,
+      5
+    ],
+    "Rarity": 3,
+    "baseCost": 10000,
+    "des": 1986838019,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_EggSafe.png",
+    "talentName": 1113994866,
+    "eventParam": [
+      1
+    ],
+    "type": 2,
+    "event": "openSafeSlot"
+  },
+  "2": {
+    "talentIcon": "$UI_SkillIcon_GrabEgg_RobustBody1.png",
+    "talentName": 1782084475,
+    "effect": {
+      "stamina_max_v": 10
+    },
+    "position": [
+      1,
+      3
+    ],
+    "type": 1,
+    "Rarity": 1,
+    "baseCost": 20000,
+    "des": 1979336403
+  },
+  "13": {
+    "position": [
+      12,
+      2
+    ],
+    "Rarity": 2,
+    "baseCost": 650000,
+    "event": "reCalcWeights",
+    "itemCost": [
+      [
+        5901002,
+        7
+      ],
+      [
+        5901001,
+        6
+      ]
+    ],
+    "prerequisite": [
+      10,
+      11
+    ],
+    "effect": {
+      "weight": 6
+    },
+    "talentName": 1931451695,
+    "type": 1,
+    "talentIcon": "$UI_SkillIcon_GrabEgg_FullLaden3.png",
+    "des": 1344476476
+  }
+}

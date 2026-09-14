@@ -1,0 +1,106 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "089a0627-faa5-43fb-b1e0-3bbb602bf8b6",
+      "NodeID": 3,
+      "lValue": {
+        "UID": "a0f3ebf1-d1e1-40f6-b930-8cf36d50e141",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 2
+      }
+    },
+    "4": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "4be507d8-3040-48e6-90f6-4e82c924421a",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 21012081,
+      "NodeID": 6,
+      "UID": "b54fc3ad-e7cb-4fca-bcff-6b24309e61b1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "rValue": {
+        "UID": "8de55f00-fc42-45b1-83ff-50c5986b1a73",
+        "target": "SRC",
+        "name": "getTargetId",
+        "NodeID": 16
+      },
+      "name": "equal",
+      "UID": "a6213619-4589-47e3-8375-960f3c8abacb",
+      "NodeID": 15,
+      "lValue": {
+        "UID": "236bcd10-1c4b-4cd7-a149-790cb88a5ea6",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 14
+      }
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "e623a791-8e88-48c5-8850-87913667206c",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "8": {
+      "actionIds": [
+        7
+      ],
+      "name": "actOnTargets",
+      "UID": "8797d602-a49b-464e-bfea-823e2ef931a9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            15,
+            10,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 8
+    }
+  },
+  "BPName": "buff_2101208",
+  "dynamicRPCStates": {},
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "onBuffLayerChangeIds": [
+    4
+  ],
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

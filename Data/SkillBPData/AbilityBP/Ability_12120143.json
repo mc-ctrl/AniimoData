@@ -1,0 +1,41 @@
+{
+  "preloadAnims": [
+    "Skill_MagicFlower_Loop",
+    "Skill_MagicFlower",
+    "Behav_SleepStart",
+    "Behav_SleepLoop",
+    "Behav_SleepEnd"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_Ex_Flower",
+    "Eff_Parmon_10212_Skill_MagicFlower_Bullet",
+    "Eff_Parmon_10212_Skill_Ex_Bullet_Hit",
+    "Eff_Parmon_10212_Skill_MagicFlower_Body_002",
+    "Eff_Parmon_10212_Skill_Ex_Atmosphere",
+    "Eff_Skill_Common_Warning"
+  ],
+  "BPName": "ability_12120143",
+  "NodeID": 1,
+  "UID": "cdf1bbda-a630-4a48-84fc-56a5b274e204",
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600994,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "searchTargetRangeRadius": 30,
+  "checkExistBurrow": false,
+  "searchTargetRangeDown": 0.5,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12120143001,
+      "name": "setCombatActionTimeline",
+      "UID": "b4119110-ec88-4a47-8157-ded98dca754f",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "searchRelation": 2
+}

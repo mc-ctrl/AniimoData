@@ -1,0 +1,118 @@
+{
+  "allowHitCaster": false,
+  "angularIncreaseDuration": 1.5,
+  "BPName": "timeline_2164301",
+  "NodeID": 0,
+  "destroyOnHit": true,
+  "effectId": "Eff_Parmon_10643_Skill_Note_Bullet01",
+  "nodeMap": {
+    "37": {
+      "actionIds": [
+        36
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "14c66f81-8d83-41e3-a39f-b4f0b3ac6663",
+      "name": "doActionsByConditions",
+      "NodeID": 37
+    },
+    "40": {
+      "buffId": 916430101,
+      "name": "hasBuff",
+      "UID": "d1902050-c529-404f-86f9-5f6ac5938305",
+      "target": "MASTER",
+      "NodeID": 40
+    },
+    "56": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2164301,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "6989a286-177c-4339-bab6-004009caab3d",
+      "target": "TARGET",
+      "NodeID": 56,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 21104,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10643_Skill_Note_Hit01",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2000
+      }
+    },
+    "35": {
+      "name": "getRotationFromTo",
+      "UID": "3f90015c-154c-4ed9-a1ba-9714246fde98",
+      "to": "CURPET_OR_TEAM_PET",
+      "NodeID": 35,
+      "from": "PROJECTILE"
+    },
+    "36": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2164301205,
+      "name": "createProjectile",
+      "UID": "4ec1a8d9-c8cd-4c33-b8a9-6e5ed2bc814d",
+      "rotation": "Direct",
+      "pos": "PROJECTILE",
+      "projectileType": "Tracking",
+      "targetRotation": {
+        "name": "getRotationFromTo",
+        "UID": "3f90015c-154c-4ed9-a1ba-9714246fde98",
+        "to": "CURPET_OR_TEAM_PET",
+        "NodeID": 35,
+        "from": "PROJECTILE"
+      },
+      "targetPos": "CURPET_OR_TEAM_PET",
+      "NodeID": 36,
+      "offsetRotation": [
+        80,
+        20,
+        20
+      ]
+    }
+  },
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxAngularOffset": 1000,
+  "maxHitNum": 1,
+  "maxMoveSpeed": 15,
+  "minAngularOffset": 30,
+  "moveSpeed": 8,
+  "onProjectileFinishIds": [
+    37
+  ],
+  "onProjectileHitIds": [
+    56
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "defaultHitSoundType": "h",
+  "tickInterval": 0.2,
+  "calcResultNodeId": 56,
+  "startSleepTime": 0,
+  "duration": 15,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 2
+}

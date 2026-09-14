@@ -1,0 +1,130 @@
+{
+  "28483538": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28483538,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      35.46,
+      32.15,
+      -5.46
+    ]
+  },
+  "28497151": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28497151,
+    "rotation": [
+      0.38,
+      0,
+      0,
+      0.93
+    ],
+    "position": [
+      35.46,
+      35.27,
+      -6.1
+    ]
+  },
+  "28497262": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28497262,
+    "rotation": [
+      0.61,
+      0,
+      0,
+      0.79
+    ],
+    "position": [
+      35.46,
+      35.54,
+      -3.1
+    ]
+  },
+  "28497286": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28497286,
+    "rotation": [
+      0.61,
+      0,
+      0,
+      0.79
+    ],
+    "position": [
+      35,
+      35.16,
+      -0.44
+    ]
+  },
+  "28497301": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28497301,
+    "rotation": [
+      0.61,
+      0,
+      0,
+      0.79
+    ],
+    "position": [
+      34.57,
+      34.72,
+      2.73
+    ]
+  },
+  "28497315": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28497315,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      31.74,
+      31.09,
+      6.82
+    ]
+  },
+  "28497352": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28497352,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      34.43,
+      33.1,
+      6.16
+    ]
+  },
+  "28497371": {
+    "createType": 1,
+    "templateId": 36,
+    "staticId": 28497371,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      21.39,
+      25.7,
+      8.94
+    ]
+  }
+}

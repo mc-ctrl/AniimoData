@@ -1,0 +1,129 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2902503,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "0c9cb0cb-fab9-41b9-b132-ed599f0bef7f",
+      "target": "TARGET",
+      "NodeID": 8,
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "openStunOnCollison": true,
+        "hitCameraShakeId": -1,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Fire_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 5,
+        "impulseId": 0
+      }
+    },
+    "4": {
+      "UID": "2649dc0c-6023-4715-9f72-f3537c656a11",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 4
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 16,
+      "UID": "a3b920c8-5f33-4538-8b8b-e3a6ea030c24"
+    },
+    "10": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 8,
+      "NodeID": 10,
+      "UID": "e4cad771-5105-4a8f-9884-93b7a0787fa4",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 0,
+      "actionIds": [
+        8
+      ]
+    },
+    "15": {
+      "UID": "04ec2522-ce9e-434d-b67a-afc90e36d7fe",
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "12": {
+      "tickInterval": 0.8,
+      "eventType": "NotifyState",
+      "endTime": 2,
+      "NodeID": 12,
+      "UID": "2b411bda-b1cc-4816-b37f-600952e319f7",
+      "onUpdate": {
+        "actionIds": [
+          10
+        ]
+      },
+      "startTime": 1,
+      "onEnter": {
+        "actionIds": [
+          10
+        ]
+      }
+    },
+    "2": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "660f0930-284e-458f-a4e5-ececf7fd35ab",
+      "effectId": "Eff_Monster_80023_Mon_Skill_JumpBomb_01",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2902503",
+  "NodeID": 1,
+  "UID": "c5f957ab-050f-4b6c-95dc-869abfcaf882",
+  "eventIds": [
+    4,
+    12,
+    16
+  ],
+  "layer": "Base",
+  "length": 600
+}

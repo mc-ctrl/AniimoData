@@ -1,0 +1,74 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9120105",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "27": {
+      "actionIds": [
+        37
+      ],
+      "conditionActionIds": [
+        26
+      ],
+      "UID": "b93531b1-edcc-436b-b480-a2864b3937c7",
+      "name": "doActionsByConditions",
+      "NodeID": 27
+    },
+    "28": {
+      "UID": "d11fa34d-dfa2-43b7-ba8b-8ec2220e46bf",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        27
+      ],
+      "NodeID": 28
+    },
+    "29": {
+      "unsummonValid": false,
+      "actionIds": [
+        28
+      ],
+      "name": "registerGroupEvent",
+      "UID": "16be0d2c-9422-43e0-b17c-b750038f753e",
+      "NodeID": 29
+    },
+    "37": {
+      "UID": "2b230bf3-93a1-4ae2-87e7-d6585aa79074",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 9120105,
+        "taken_dmg_dec_rate_v": "param0",
+        "type": 1
+      },
+      "NodeID": 37
+    },
+    "25": {
+      "eventName": "onReceiveBeAttacked",
+      "name": "getEventCombatContextTarget",
+      "UID": "6b049972-32c6-4f03-bf33-d20f58e303b7",
+      "target": "CASTER",
+      "NodeID": 25
+    },
+    "26": {
+      "name": "hasBuffTag",
+      "UID": "d5fde320-f911-4c93-8e87-4fa2e9746ec9",
+      "target": {
+        "eventName": "onReceiveBeAttacked",
+        "name": "getEventCombatContextTarget",
+        "UID": "6b049972-32c6-4f03-bf33-d20f58e303b7",
+        "target": "CASTER",
+        "NodeID": 25
+      },
+      "NodeID": 26,
+      "buffTag": 11
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    29
+  ]
+}

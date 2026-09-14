@@ -1,0 +1,30 @@
+{
+  "searchTargetRangeRadius": 3,
+  "preloadEffs": [
+    "Eff_Skill_Common_Warning"
+  ],
+  "BPName": "ability_70020101",
+  "name": "暗普通攻击",
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 10101211,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "10": {
+      "timelineId": 70020101001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

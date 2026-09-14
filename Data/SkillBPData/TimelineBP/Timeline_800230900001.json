@@ -1,0 +1,153 @@
+{
+  "nodeMap": {
+    "22": {
+      "UID": "d65d0a33-9c02-441a-bc5d-2b2ec6747dc3",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "5da328e2-3fff-403a-8a32-36bbc4f20189",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          28,
+          2,
+          22,
+          24
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "heightOffset": 1,
+      "maxLockTime": 0.9,
+      "NodeID": 24,
+      "UID": "f583832b-fa4d-4ca7-b01c-8a1da22b036a",
+      "target": "OWNER",
+      "name": "cameraFaceTo"
+    },
+    "29": {
+      "target": "CASTER",
+      "duration": 9999,
+      "buffId": 9802303,
+      "NodeID": 29,
+      "UID": "b71a3ada-7d68-4de5-b133-ecb516a12e48",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "action": {
+        "actionIds": [
+          13,
+          23
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.91,
+      "NodeID": 15,
+      "UID": "74e19982-bd7c-4fea-9734-fdf8b1a90df3"
+    },
+    "23": {
+      "heightOffset": 1,
+      "maxLockTime": 0.5,
+      "NodeID": 23,
+      "UID": "9b4d0bea-01b8-4892-bc4b-c29a696f737c",
+      "target": "OWNER",
+      "name": "cameraFaceTo"
+    },
+    "16": {
+      "UID": "448ef8ef-441e-4eab-8872-15fc1dbf9943",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 16
+    },
+    "26": {
+      "UID": "34fc12cb-f8d2-445e-b67a-a9fdc6595c53",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 26
+    },
+    "28": {
+      "UID": "807d3cb9-ce10-405e-8d83-be4f3b6ef249",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 28
+    },
+    "9": {
+      "UID": "50eb5173-eaed-4f9b-b51f-c82301e85022",
+      "name": "fly",
+      "NodeID": 9
+    },
+    "18": {
+      "UID": "6ee94e1b-1467-41d3-8b1b-0e7d584b9f31",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          26,
+          16,
+          29
+        ]
+      },
+      "NodeID": 18
+    },
+    "2": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "80534805-d78d-4102-ae45-6f84110cca47",
+      "target": "CASTER",
+      "NodeID": 2
+    },
+    "11": {
+      "UID": "f2a19ff3-e5ec-4835-979d-a01366d6a54d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          12,
+          9
+        ]
+      },
+      "NodeID": 11
+    },
+    "13": {
+      "key": "flyingState",
+      "name": "setServerCacheVal",
+      "UID": "37ed2983-409a-401c-9609-f25db998d477",
+      "target": "CASTER",
+      "val": 1,
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "2bb7ed36-36e2-4d04-8f98-1c1c731c1481",
+      "value": true,
+      "name": "forceUngrounded",
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_800230900",
+  "NodeID": 6,
+  "UID": "fc966318-bc90-4977-be6a-7730bfe3b3ab",
+  "eventIds": [
+    4,
+    18,
+    11,
+    15
+  ],
+  "layer": "Base",
+  "length": 1.8
+}

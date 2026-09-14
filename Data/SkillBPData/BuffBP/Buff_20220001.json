@@ -1,0 +1,90 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20220001",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "onBuffStartIds": [
+    7,
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": true,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 20220001,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 11,
+        "UID": "3b22af95-3e85-488f-9c36-89f805706c4d",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "99578dde-fbaf-491a-91c1-ad0787633c09",
+      "NodeID": 3,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "04d6e8c9-a198-4f78-819f-eaed74830a0f",
+        "target": "CURPET",
+        "NodeID": 2,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Buff_Rogue_Skill_Shield"
+    }
+  ],
+  "nodeMap": {
+    "5": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "39c8f294-9e7c-47f0-8ea5-d0c35176191f",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "891d6b3a-cec6-4bf1-9872-ec42500a4e80",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 10
+    },
+    "11": {
+      "calcId": 20220001,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 11,
+      "UID": "3b22af95-3e85-488f-9c36-89f805706c4d",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "6848c874-c9f4-46af-b243-8e1a81725f1e",
+      "oldPetActionIds": [
+        10
+      ],
+      "NodeID": 7,
+      "newPetActionIds": [
+        5
+      ]
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "a178ec58-67be-41c0-b5ee-eaeb33856d96",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "CURPET",
+      "NodeID": 8
+    }
+  },
+  "onBuffDestroyIds": [
+    8
+  ],
+  "isUnSummonFreeze": true
+}

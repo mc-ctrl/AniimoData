@@ -1,0 +1,74 @@
+[
+  {
+    "reward": 160003,
+    "label": 1,
+    "eventId": 1,
+    "name": 1262041938,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  },
+  {
+    "reward": 160003,
+    "label": 3,
+    "eventId": 2,
+    "name": 1219242054,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  },
+  {
+    "reward": 160003,
+    "label": 3,
+    "eventId": 3,
+    "name": 1711770599,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  },
+  {
+    "reward": 160003,
+    "label": 2,
+    "eventId": 4,
+    "name": 1926582531,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  },
+  {
+    "reward": 160003,
+    "label": 1,
+    "eventId": 5,
+    "name": 1098089725,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  },
+  {
+    "reward": 160003,
+    "label": 2,
+    "eventId": 6,
+    "name": 2078905801,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  },
+  {
+    "reward": 160003,
+    "label": 1,
+    "eventId": 7,
+    "name": 1734324955,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  },
+  {
+    "reward": 160003,
+    "label": 2,
+    "eventId": 8,
+    "name": 1206000073,
+    "type": 1,
+    "icon": "$ui_item_GrabEgg_Collection_Icon_DiamondEgg.png",
+    "collectGroup": 1003
+  }
+]

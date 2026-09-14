@@ -1,0 +1,41 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "key": "EquipAttr",
+      "calcInfo": {
+        "instant_crit_rate_v": {
+          "rValue": 0.1,
+          "name": "add",
+          "UID": "373e8848-3763-447b-b4e8-0a0c0a0292a2",
+          "NodeID": 3,
+          "lValue": {
+            "key": "EquipAttr",
+            "attributeName": "instant_crit_rate_v",
+            "UID": "cc274374-cd0a-4f8c-a8ef-4340dbed95a0",
+            "name": "getRogueProp",
+            "NodeID": 2
+          }
+        }
+      },
+      "NodeID": 5,
+      "UID": "513f3247-f7db-477c-a5b9-19adda178f67",
+      "name": "setRogueProp"
+    },
+    "2": {
+      "key": "EquipAttr",
+      "attributeName": "instant_crit_rate_v",
+      "UID": "cc274374-cd0a-4f8c-a8ef-4340dbed95a0",
+      "name": "getRogueProp",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_270010016",
+  "dynamicRPCStates": {},
+  "UID": "a29df3cb-4153-43a0-ae81-1db6138f460c",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

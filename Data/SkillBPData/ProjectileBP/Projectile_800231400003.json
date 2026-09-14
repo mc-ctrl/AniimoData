@@ -1,0 +1,115 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 22,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10023_Mon_Skill_SplitBomb_Ballistics03",
+  "gravityRatio": 0.1,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "22": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "battle_elementhit_none_blunt_h",
+        "hitCameraShakeId": -1
+      },
+      "UID": "e60b1721-e23f-4c9e-a358-c806c7930aa5",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 22
+    },
+    "24": {
+      "calcResultNodeId": 22,
+      "name": "actOnTargets",
+      "UID": "e9e30776-cfcf-41ea-abb4-4ab70a740130",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "1400",
+      "hitBoxMaxHitCnt": 2,
+      "needEcs": true,
+      "actionIds": [
+        36,
+        37,
+        22,
+        34
+      ],
+      "impulseId": 3002,
+      "NodeID": 24
+    },
+    "37": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "633b08b8-0511-4723-ba34-008e80d084ec",
+      "isAbilityEndRemove": false,
+      "soundId": "monster_helgonboss_skill_fireball_explosion",
+      "NodeID": 37
+    },
+    "34": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0
+      },
+      "name": "calcResult",
+      "UID": "59d8f4f6-be1f-45b1-9601-2c38be003f8f",
+      "target": "CASTER",
+      "NodeID": 34
+    },
+    "36": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 36,
+      "UID": "f652bb57-b9d1-48ec-bb92-477af4076c72",
+      "effectId": "Eff_Parmon_10023_Mon_Skill_Fireball_03",
+      "global": true,
+      "name": "playEffectOnPosRot"
+    }
+  },
+  "moveSpeed": 40,
+  "onProjectileFinishIds": [
+    24
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1.5,
+  "sweepRadius": 0.8,
+  "sweepShape": 0,
+  "BPName": "ability_800231400",
+  "tickInterval": 0.01,
+  "ignoreAbilityElement": true,
+  "startSleepTime": 0,
+  "defaultHitSoundType": "h",
+  "maxHitNum": 0,
+  "impulseId": 3002,
+  "acceleration": 0
+}

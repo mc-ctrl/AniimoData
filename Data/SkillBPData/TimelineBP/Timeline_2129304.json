@@ -1,0 +1,285 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "5c1f03fe-20eb-4eeb-bc88-86cc9aa40fab",
+      "target": "MASTER",
+      "NodeID": 37
+    },
+    "38": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "be24772e-7509-4b41-9421-026c4bdd98a0",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10293_Skill_LightningBoomerang_Loop",
+      "NodeID": 38
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4f4262ca-75a4-47e4-80df-29b58bcabe98",
+      "effectId": "Eff_Parmon_10293_Skill_LightningBoomerang",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "8": {
+      "tickInterval": 0.1,
+      "eventType": "NotifyState",
+      "endTime": 9999,
+      "NodeID": 8,
+      "UID": "bf124ae6-27a9-4247-b2ce-0fc965d2387f",
+      "onUpdate": {
+        "actionIds": [
+          11
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          6,
+          11,
+          38
+        ]
+      }
+    },
+    "31": {
+      "buffId": 9129302,
+      "name": "hasBuff",
+      "UID": "2c6098a4-af5c-42ec-b966-d8223f1c7eae",
+      "target": "MASTER",
+      "NodeID": 31
+    },
+    "9": {
+      "notBlockInput": true,
+      "duration": 0.1,
+      "name": "forceDisplacement",
+      "UID": "2444ca92-b687-4687-a78d-b6320b2dec40",
+      "target": "TARGET",
+      "speed": 5,
+      "ignoreYAxis": true,
+      "displacementDir": "IN",
+      "displacementTarget": "OWNER",
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        9
+      ],
+      "NodeID": 11,
+      "UID": "9b7bedb6-ea93-4870-9122-cb43e2051525",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            2.5,
+            180,
+            1.6,
+            0.5
+          ],
+          "shapeKind": "AnnularSector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "innerRadius": 1.5,
+      "maxRadius": 2,
+      "needEcs": true,
+      "name": "actOnTargetsSpreadAnnularSector",
+      "speed": 0,
+      "useStartTransform": true,
+      "acceleration": 0
+    },
+    "2": {
+      "UID": "1b80ce4f-f8b0-46c8-8609-a034aa66bfad",
+      "name": "destroyEntity",
+      "NodeID": 2
+    },
+    "3": {
+      "eventName": "11330410",
+      "NodeID": 3,
+      "UID": "4782b3ee-a3f3-4afc-ad2d-3ffda14fef2f",
+      "target": "MASTER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        2
+      ]
+    },
+    "4": {
+      "UID": "a96e1e16-ffe3-4a94-a407-7e275115a46e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "15": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 22,
+      "NodeID": 15,
+      "UID": "ffb1d3be-c16c-4788-bf85-aa568b995366",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        22,
+        30
+      ]
+    },
+    "22": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Slash_Y",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 4,
+        "impulseId": 1000
+      },
+      "UID": "4e89d94d-0973-46e7-935b-141729eedeca",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 2129304,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "NodeID": 22
+    },
+    "28": {
+      "buffId": 2129301,
+      "name": "hasBuff",
+      "UID": "4db4fdbb-7ce0-4ebe-bd5a-e51cb7648472",
+      "target": "MASTER",
+      "NodeID": 28
+    },
+    "29": {
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "4769c98a-bfe1-40f1-82ae-21eb9d7f5f77",
+      "name": "doActionsByConditions",
+      "NodeID": 29,
+      "elseActionIds": [
+        34,
+        37
+      ]
+    },
+    "30": {
+      "actionIds": [
+        29
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "8882bd9e-bfcc-4236-b37e-194457a13db6",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "32": {
+      "name": "stopSoundStr",
+      "UID": "bb8f6148-8cfa-48e1-a41a-037b43197655",
+      "soundId": "SFX_Combat_10293_Skill_LightningBoomerang_Loop",
+      "target": "MASTER",
+      "NodeID": 32
+    },
+    "33": {
+      "UID": "c36ae166-0b70-4dce-8d5f-79271102b863",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "NodeID": 33
+    },
+    "34": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 91293021,
+      "NodeID": 34,
+      "UID": "df24f34a-8a81-4054-8275-36f6accb2cd9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "17": {
+      "tickInterval": 0.3,
+      "eventType": "NotifyState",
+      "endTime": 9999,
+      "NodeID": 17,
+      "UID": "f08c146a-e084-4d5b-8202-29d76814f6b9",
+      "onUpdate": {
+        "actionIds": [
+          15
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          15
+        ]
+      }
+    }
+  },
+  "BPName": "timeline_2129304",
+  "NodeID": 1,
+  "UID": "d62a301e-d5d0-4d37-bc93-e12a81c597e0",
+  "eventIds": [
+    4,
+    8,
+    17,
+    33
+  ],
+  "layer": "Base",
+  "length": 5
+}

@@ -1,0 +1,1807 @@
+{
+  "1012": {
+    "dungeonId": 300012,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "1013": {
+    "dungeonId": 300013,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "1014": {
+    "dungeonId": 300014,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "1015": {
+    "dungeonId": 300015,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "7502": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1304443588
+  },
+  "511": {
+    "standardlevel": 40,
+    "name": 1509853688,
+    "HelpRewardId": 80001,
+    "RareRewardId": 80001,
+    "RareRewardRate": 0.1,
+    "dungeonId": 400000,
+    "notFirstTimeRewardId": 80001,
+    "playerNumMin": 1,
+    "rewardId": 80001,
+    "playerNumMax": 1
+  },
+  "2001": {
+    "rewardType": 3,
+    "fb_type": 1,
+    "name": 1093857258,
+    "describe": 1288114847,
+    "dungeonId": 200000,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "playerNumMax": 2,
+    "petOrNot": 0,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMin": 1,
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59504276,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ]
+  },
+  "8002": {
+    "dungeonId": 100002,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8003": {
+    "dungeonId": 100003,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8004": {
+    "dungeonId": 100004,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "2002": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "matchId": 8,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMin": 2,
+    "describe": 2065564341,
+    "dungeonId": 200002,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59503158,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59502936
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          595029361
+        ]
+      ]
+    ],
+    "petOrNot": 0,
+    "readyTime": 0,
+    "playerNumMax": 2,
+    "name": 1246438334,
+    "loadingID": 16
+  },
+  "8006": {
+    "dungeonId": 100006,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8007": {
+    "dungeonId": 100007,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "2003": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1698305612,
+    "rewardType": 3,
+    "describe": 1174628294,
+    "dungeonId": 200003,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59321339,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59320976
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          593209761
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "8009": {
+    "dungeonId": 100009,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "2004": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1117789246,
+    "rewardType": 3,
+    "describe": 1774368063,
+    "dungeonId": 200004,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59496872,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59496781
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          594967811
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "6001": {
+    "rewardType": 3,
+    "name": 1650784194,
+    "dungeonId": 600001,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          78163712,
+          {
+            "1000": 1001
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          76684098
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "rewardId": 40012
+  },
+  "6002": {
+    "rewardType": 3,
+    "name": 1378978098,
+    "dungeonId": 600002,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          91002510,
+          {
+            "1000": 1001
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91002430
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "rewardId": 40012
+  },
+  "6004": {
+    "rewardType": 3,
+    "name": 1605148547,
+    "dungeonId": 600004,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          91012360,
+          {
+            "1000": 1001
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91010660
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "rewardId": 40012
+  },
+  "6005": {
+    "rewardType": 3,
+    "name": 1832056267,
+    "dungeonId": 600005,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          91089112,
+          {
+            "1000": 1001
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91089107
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "rewardId": 40012
+  },
+  "6006": {
+    "rewardType": 3,
+    "name": 1197153399,
+    "dungeonId": 600006,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          91067358,
+          {
+            "1000": 1001
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91067357
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "rewardId": 40012
+  },
+  "2007": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1189920845,
+    "rewardType": 3,
+    "describe": 1705973571,
+    "dungeonId": 200007,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59502383,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59502374
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          595023741
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "2008": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1832342286,
+    "rewardType": 3,
+    "describe": 1623861711,
+    "dungeonId": 200008,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59501782,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59501511
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          595015111
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "8101": {
+    "dungeonId": 100013,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "2009": {
+    "dungeonId": 201000,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59331131,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 2,
+    "fb_type": 1,
+    "forceSkillQ": 9220020
+  },
+  "8103": {
+    "dungeonId": 100015,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "2010": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1203130763,
+    "rewardType": 3,
+    "describe": 1493221391,
+    "dungeonId": 200010,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          64064182,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          64064184
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          640641841
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "2011": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1911145332,
+    "rewardType": 3,
+    "describe": 2140116551,
+    "dungeonId": 200012,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59504276,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59504240
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          595042401
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "1070": {
+    "aiGroupId": [
+      301001,
+      301002,
+      301003,
+      301004
+    ],
+    "fb_type": 2,
+    "matchId": 1001,
+    "playerTitleCondition": 8,
+    "dungeonId": 600001,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "name": 1210771345
+  },
+  "2015": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200015,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2016": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200016,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2017": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200017,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2018": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200018,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2019": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200019,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2020": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200020,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2021": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200021,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "4005": {
+    "BossElement": "Wind",
+    "BossTemplateId": 1026200,
+    "HelpRewardId": 45300,
+    "RareRewardId": 45106,
+    "RareRewardRate": 0.1,
+    "describe": 1510571597,
+    "dungeonId": 500005,
+    "isActivity": 1,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "respawnButtonTxt": 1864636748,
+    "respawnCheckTxt": 2054573648,
+    "respawnTo": [
+      3000,
+      52418043
+    ],
+    "rewardType": 5,
+    "standardlevel": 30,
+    "name": 1206813825,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "petOrNot": 1,
+    "notFirstTimeRewardId": 45206
+  },
+  "30001": {
+    "dungeonId": 600006,
+    "playerNumMax": 4,
+    "name": 1514783324,
+    "playerNumMin": 1,
+    "describe": 1655907692
+  },
+  "1000": {
+    "rewardType": 1,
+    "playerLevel": 10,
+    "taskCompleted": 1,
+    "taskPickUp": 1,
+    "waitTime": 30,
+    "dungeonId": 5000,
+    "playerNumMax": 1,
+    "playerNumMin": 1,
+    "readyTime": 60,
+    "rewardId": 1
+  },
+  "2022": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200022,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2023": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200023,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "2024": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "loadingID": 15,
+    "dungeonId": 200024,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "playerNumMax": 1
+  },
+  "413": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1841271269,
+    "rewardType": 3,
+    "describe": 1772513750,
+    "dungeonId": 200014,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59498358,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59498329
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          594983291
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "2026": {
+    "forceSkillQ": 9200021,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1946597590,
+    "rewardType": 3,
+    "describe": 1784005992,
+    "dungeonId": 200026,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          72085481,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          72085399
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          720853991
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "2027": {
+    "forceSkillQ": 9200021,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1995357875,
+    "rewardType": 3,
+    "describe": 2024699213,
+    "dungeonId": 200027,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          72662790,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          72662792
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          726627921
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "2028": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1103309686,
+    "rewardType": 3,
+    "describe": 2111843713,
+    "dungeonId": 200028,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          86694179,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          86692173
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          866921731
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "2029": {
+    "forceSkillQ": 9200021,
+    "isTemple": 1,
+    "fb_type": 1,
+    "matchId": 8,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "describe": 1131147260,
+    "dungeonId": 200029,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          86734836,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          86734832
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          867348321
+        ]
+      ]
+    ],
+    "playerNumMin": 2,
+    "readyTime": 0,
+    "playerNumMax": 2,
+    "name": 1889257628,
+    "loadingID": 16
+  },
+  "5010003": {
+    "dungeonId": 400002,
+    "playerNumMin": 1,
+    "playerNumMax": 4,
+    "name": 2144894346
+  },
+  "420": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1115075287,
+    "rewardType": 3,
+    "describe": 1272444463,
+    "dungeonId": 200009,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59324294,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59324184
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          593241841
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "7501": {
+    "dungeonId": 150001,
+    "events": [
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91296674
+        ]
+      ]
+    ],
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "playerNumMax": 1,
+    "name": 1593895498
+  },
+  "421": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1796197280,
+    "rewardType": 3,
+    "describe": 2009194404,
+    "dungeonId": 200011,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59331131,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59331068
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          593310681
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "8104": {
+    "dungeonId": 100016,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "4001": {
+    "BossElement": "Fire",
+    "BossTemplateId": 1005300,
+    "HelpRewardId": 45300,
+    "RareRewardId": 45102,
+    "RareRewardRate": 0.1,
+    "describe": 1114485107,
+    "dungeonId": 500001,
+    "isActivity": 1,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "respawnButtonTxt": 1778072897,
+    "respawnCheckTxt": 1207381821,
+    "respawnTo": [
+      3000,
+      52418043
+    ],
+    "rewardType": 5,
+    "standardlevel": 30,
+    "name": 1695309792,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "petOrNot": 1,
+    "notFirstTimeRewardId": 45202
+  },
+  "101": {
+    "dungeonId": 5101,
+    "playerNumMax": 4,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1133989342
+  },
+  "4002": {
+    "BossElement": "Water",
+    "BossTemplateId": 1017400,
+    "HelpRewardId": 45300,
+    "RareRewardId": 45103,
+    "RareRewardRate": 0.1,
+    "describe": 1937336899,
+    "dungeonId": 500002,
+    "isActivity": 1,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "respawnButtonTxt": 1458650001,
+    "respawnCheckTxt": 1618262629,
+    "respawnTo": [
+      3000,
+      52418043
+    ],
+    "rewardType": 5,
+    "standardlevel": 30,
+    "name": 1622735637,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "petOrNot": 1,
+    "notFirstTimeRewardId": 45203
+  },
+  "8102": {
+    "dungeonId": 100014,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "1040": {
+    "dungeonId": 300040,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8100": {
+    "dungeonId": 100012,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8011": {
+    "dungeonId": 100011,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "7509": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1853534048
+  },
+  "8008": {
+    "dungeonId": 100008,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8005": {
+    "dungeonId": 100005,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8001": {
+    "dungeonId": 100001,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "8000": {
+    "dungeonId": 100000,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "1048": {
+    "dungeonId": 300041,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "7515": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1321988165
+  },
+  "7514": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 2081542499
+  },
+  "2006": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 2094075769,
+    "rewardType": 3,
+    "describe": 1611451549,
+    "dungeonId": 200006,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59504838,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59504773
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          595047731
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "3004": {
+    "levelRestriction": 40,
+    "loadingID": 17,
+    "rewardTime": 180,
+    "rewardList": [
+      5900121,
+      5900410,
+      5900220,
+      5900318,
+      5900117
+    ],
+    "describe": 1080111854,
+    "dungeonId": 5003,
+    "teamsNumber": 1,
+    "playerNumMax": 3,
+    "playerNumMin": 1,
+    "readyTime": 10,
+    "fb_type": 3,
+    "matchId": 10001,
+    "waitTime": 60,
+    "dangerLevel": 1,
+    "name": 1747650349,
+    "enemyLevel": [
+      45
+    ],
+    "petOrNot": 1
+  },
+  "3005": {
+    "levelRestriction": 40,
+    "loadingID": 17,
+    "rewardTime": 180,
+    "rewardList": [
+      5900121,
+      5900410,
+      5900220,
+      5900318,
+      5900117
+    ],
+    "describe": 1075240492,
+    "dungeonId": 5004,
+    "teamsNumber": 0,
+    "playerNumMax": 3,
+    "playerNumMin": 1,
+    "readyTime": 10,
+    "fb_type": 3,
+    "matchId": 10002,
+    "waitTime": 60,
+    "dangerLevel": 1,
+    "name": 2114283126,
+    "enemyLevel": [
+      45,
+      50
+    ],
+    "petOrNot": 1
+  },
+  "7512": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1381423466
+  },
+  "7511": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 2048198038
+  },
+  "7510": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1120344537
+  },
+  "8010": {
+    "dungeonId": 100010,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "2025": {
+    "forceSkillQ": 9200021,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 1490560396,
+    "rewardType": 3,
+    "describe": 1531417575,
+    "dungeonId": 200025,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          72149579,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          72149581
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          721495811
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "5010": {
+    "dungeonId": 400001,
+    "standardlevel": 40,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1490884105,
+    "describe": 1714089975
+  },
+  "2005": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "matchId": 8,
+    "rewardType": 3,
+    "rewardId": 40012,
+    "describe": 1252142283,
+    "dungeonId": 200005,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          59493040,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          59492916
+        ]
+      ],
+      [
+        "activateLeylineTreePoint",
+        [
+          594929161
+        ]
+      ]
+    ],
+    "playerNumMin": 2,
+    "readyTime": 0,
+    "playerNumMax": 2,
+    "name": 1830100917,
+    "loadingID": 16
+  },
+  "104001": {
+    "rewardType": 3,
+    "name": 1379498884,
+    "dungeonId": 610401,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          91012360,
+          {
+            "1000": 1001
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91010660
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "rewardId": 40012
+  },
+  "1001": {
+    "dungeonId": 5003,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "2013": {
+    "forceSkillQ": 9220020,
+    "isTemple": 1,
+    "fb_type": 1,
+    "name": 2090218089,
+    "rewardType": 3,
+    "describe": 1208077308,
+    "dungeonId": 200013,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          62692753,
+          {
+            "105": 110,
+            "0": 109
+          }
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "rewardId": 40012,
+    "playerNumMax": 1,
+    "loadingID": 15
+  },
+  "259": {
+    "dungeonId": 5002,
+    "playerNumMax": 1,
+    "playerNumMin": 1,
+    "enemyLevel": {},
+    "rewardList": {}
+  },
+  "6003": {
+    "rewardType": 3,
+    "name": 1922807391,
+    "dungeonId": 600003,
+    "pic": "$UI_Img_GameInstance_002.png",
+    "events": [
+      [
+        "setNpcContentByDict",
+        [
+          91004878,
+          {
+            "1000": 1001
+          }
+        ]
+      ],
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91004873
+        ]
+      ]
+    ],
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "rewardId": 40012
+  },
+  "7503": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1852771168
+  },
+  "7504": {
+    "dungeonId": 150001,
+    "events": [
+      [
+        "setMarkStateClose",
+        [
+          3000,
+          91299735
+        ]
+      ]
+    ],
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "playerNumMax": 1,
+    "name": 1494688597
+  },
+  "7505": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1583234101
+  },
+  "7506": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1773250202
+  },
+  "7507": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1380452069
+  },
+  "7508": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1339935624
+  },
+  "4000": {
+    "BossElement": "Dark",
+    "BossTemplateId": 1001200,
+    "HelpRewardId": 45300,
+    "RareRewardId": 45101,
+    "RareRewardRate": 0.1,
+    "describe": 1483188841,
+    "dungeonId": 500000,
+    "isActivity": 1,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "respawnButtonTxt": 1583066279,
+    "respawnCheckTxt": 1352968119,
+    "respawnTo": [
+      3000,
+      52418043
+    ],
+    "rewardType": 5,
+    "standardlevel": 30,
+    "name": 1713456064,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "petOrNot": 1,
+    "notFirstTimeRewardId": 45201
+  },
+  "4003": {
+    "BossElement": "Electric",
+    "BossTemplateId": 1022200,
+    "HelpRewardId": 45300,
+    "RareRewardId": 45104,
+    "RareRewardRate": 0.1,
+    "describe": 1682646850,
+    "dungeonId": 500003,
+    "isActivity": 1,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "respawnButtonTxt": 1937990871,
+    "respawnCheckTxt": 1746037102,
+    "respawnTo": [
+      3000,
+      52418043
+    ],
+    "rewardType": 5,
+    "standardlevel": 30,
+    "name": 1912829793,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "petOrNot": 1,
+    "notFirstTimeRewardId": 45204
+  },
+  "4004": {
+    "BossElement": "Grass",
+    "BossTemplateId": 1021200,
+    "HelpRewardId": 45300,
+    "RareRewardId": 45105,
+    "RareRewardRate": 0.1,
+    "describe": 2079732882,
+    "dungeonId": 500004,
+    "isActivity": 1,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "respawnButtonTxt": 1861175656,
+    "respawnCheckTxt": 1785920129,
+    "respawnTo": [
+      3000,
+      52418043
+    ],
+    "rewardType": 5,
+    "standardlevel": 30,
+    "name": 1663520153,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "petOrNot": 1,
+    "notFirstTimeRewardId": 45205
+  },
+  "4006": {
+    "BossElement": "Rock",
+    "BossTemplateId": 1028500,
+    "HelpRewardId": 45300,
+    "RareRewardId": 45107,
+    "RareRewardRate": 0.1,
+    "describe": 1240212630,
+    "dungeonId": 500006,
+    "isActivity": 1,
+    "playerNumMax": 4,
+    "playerNumMin": 1,
+    "readyTime": 0,
+    "respawnButtonTxt": 1935037876,
+    "respawnCheckTxt": 1318563369,
+    "respawnTo": [
+      3000,
+      52418043
+    ],
+    "rewardType": 5,
+    "standardlevel": 30,
+    "name": 1376182302,
+    "pic": "$UI_Img_GameMod_Dungen_001.png",
+    "petOrNot": 1,
+    "notFirstTimeRewardId": 45207
+  },
+  "7513": {
+    "dungeonId": 150001,
+    "playerNumMax": 1,
+    "petOrNot": 1,
+    "readyTime": 0,
+    "playerNumMin": 1,
+    "name": 1729328599
+  },
+  "1010": {
+    "dungeonId": 300010,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "267": {
+    "dungeonId": 5001,
+    "enemyLevel": {},
+    "rewardList": {}
+  },
+  "1011": {
+    "dungeonId": 300011,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  },
+  "1016": {
+    "dungeonId": 300016,
+    "readyTime": 0,
+    "playerNumMax": 1,
+    "playerNumMin": 1
+  }
+}

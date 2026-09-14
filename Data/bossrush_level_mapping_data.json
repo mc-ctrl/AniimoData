@@ -1,0 +1,32 @@
+{
+  "Level_Boss_Epic_01": {
+    "mappingId": 11
+  },
+  "Level_Boss_Grass_01": {
+    "mappingId": 21
+  },
+  "Level_Boss_Grass_02": {
+    "mappingId": 22
+  },
+  "Level_Boss_Grass_03": {
+    "mappingId": 23
+  },
+  "Level_Boss_Rock_01": {
+    "mappingId": 12
+  },
+  "Level_Boss_Rock_02": {
+    "mappingId": 13
+  },
+  "Level_Boss_Water_01": {
+    "mappingId": 2
+  },
+  "Level_Boss_Water_02": {
+    "mappingId": 1
+  },
+  "Level_Boss_Water_03": {
+    "mappingId": 3
+  },
+  "Level_Prepare": {
+    "mappingId": 0
+  }
+}

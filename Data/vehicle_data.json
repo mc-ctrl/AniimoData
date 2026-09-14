@@ -1,0 +1,4430 @@
+{
+  "104": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "新手宜家套1·沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_002.prefab",
+    "name": 1264908086,
+    "editorDesc": "新手宜家套1·沙发",
+    "seats": [
+      149,
+      150
+    ],
+    "vehicleAccessType": 2
+  },
+  "105": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "小沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_003.prefab",
+    "name": 2129793619,
+    "editorDesc": "小沙发",
+    "seats": [
+      68
+    ],
+    "vehicleAccessType": 2
+  },
+  "99": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "藤编椅子",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Chair_005.prefab",
+    "name": 1580702579,
+    "editorDesc": "藤编椅子",
+    "seats": [
+      68
+    ],
+    "vehicleAccessType": 2
+  },
+  "6": {
+    "withPet": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 209,
+    "forbiddenTopLogo": true,
+    "notSendNotice": false,
+    "petMountType": 3,
+    "editorDesc": "ARK跷跷板",
+    "seats": [
+      7,
+      8
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK跷跷板",
+    "vehicleType": "Seesaw",
+    "petDismountBuff": 10013,
+    "resId": "$P_Item_SceneObject_Ark_TeeterBoard_02.prefab",
+    "vehicleAccessType": 2,
+    "successNotice": 10899,
+    "name": 1865776692,
+    "fixCameraDir": [
+      -5,
+      0,
+      0
+    ],
+    "fixCameraFov": 60,
+    "fixCameraPos": [
+      5,
+      2,
+      0
+    ],
+    "progressId": 1,
+    "rideDuration": 120
+  },
+  "7": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 171,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "editorDesc": "ARK椅子2单人",
+    "seats": [
+      3
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK椅子2单人",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat.prefab",
+    "vehicleAccessType": 2,
+    "name": 1559892151,
+    "seatManage": 1
+  },
+  "8": {
+    "withPet": true,
+    "failNotice": 10922,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 256,
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "editorDesc": "ARK宠物座椅",
+    "seats": [
+      12
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK宠物座椅",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_Parkbench_02.prefab",
+    "successNotice": 10921,
+    "vehicleAccessType": 2,
+    "seatManage": 1,
+    "name": 2081780386,
+    "rideDuration": 300
+  },
+  "56": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_站立观望",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_OverlookPoint.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "动作pose_站立观望",
+    "name": 2132273653,
+    "seats": [
+      59
+    ]
+  },
+  "57": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 427,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1560
+    ],
+    "forbiddenTopLogo": true,
+    "notSendNotice": true,
+    "editorDesc": "饮水机",
+    "seats": [
+      66,
+      67
+    ],
+    "sendSuccessNotice": false,
+    "editorName": "饮水机",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 426,
+    "resId": "$P_Item_SceneObject_Ark_WaterDispenser.prefab",
+    "name": 1906565750,
+    "vehicleAccessType": 2
+  },
+  "58": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isopenchat": 1,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -2,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "空座椅_回忆之馆沙发2人",
+    "vehicleType": "Bench",
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_MemorySofa.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      97,
+      98
+    ],
+    "seatManage": 1,
+    "name": 1520604546,
+    "editorDesc": "空座椅_回忆之馆沙发"
+  },
+  "59": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -2,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "空座椅_中心广场1人1宠",
+    "vehicleType": "Bench",
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_CentralBench.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      1,
+      2
+    ],
+    "name": 2068541155,
+    "editorDesc": "空座椅_中心广场",
+    "seatManage": 1
+  },
+  "61": {
+    "editorDesc": "家具_便携折椅_人",
+    "seats": [
+      68
+    ],
+    "sendSuccessNotice": true,
+    "name": 1363208245,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 185,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_Chair.prefab",
+    "editorName": "家具_便携折椅_人",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "62": {
+    "withPet": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": true,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "家具_四叶草毯_宠",
+    "seats": [
+      69,
+      175
+    ],
+    "sendSuccessNotice": true,
+    "name": 1502432815,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_Carpet.prefab",
+    "successNotice": 12506,
+    "editorName": "家具_四叶草毯_宠",
+    "vehicleAccessType": 2
+  },
+  "63": {
+    "editorDesc": "家具_藤编座椅_人",
+    "seats": [
+      70
+    ],
+    "sendSuccessNotice": true,
+    "name": 1379843628,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_Chair01.prefab",
+    "editorName": "家具_藤编座椅_人",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "64": {
+    "withPet": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": true,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "家具_藤编坐垫_宠",
+    "seats": [
+      71
+    ],
+    "sendSuccessNotice": true,
+    "name": 1937605655,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_Chair02.prefab",
+    "successNotice": 12506,
+    "editorName": "家具_藤编坐垫_宠",
+    "vehicleAccessType": 2
+  },
+  "65": {
+    "withPet": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": true,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "家具_简约坐垫_宠",
+    "seats": [
+      72
+    ],
+    "sendSuccessNotice": true,
+    "name": 1501863824,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_Divan.prefab",
+    "successNotice": 12506,
+    "editorName": "家具_简约坐垫_宠",
+    "vehicleAccessType": 2
+  },
+  "14": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸3",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸3",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_04.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 1724418827,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "67": {
+    "editorDesc": "家具_矮床",
+    "seats": [
+      73,
+      74
+    ],
+    "sendSuccessNotice": true,
+    "name": 1450406122,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "vehicleAccessType": 2,
+    "successNotice": 12507,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Bed_002.prefab",
+    "editorName": "家具_矮床",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "15": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸4",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸4",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_04.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 2051335422,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "69": {
+    "editorDesc": "家具_木质高脚凳",
+    "seats": [
+      79
+    ],
+    "sendSuccessNotice": true,
+    "name": 2018818986,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_Stool02.prefab",
+    "editorName": "家具_木质高脚凳",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "70": {
+    "editorDesc": "家具_木质矮凳",
+    "seats": [
+      81
+    ],
+    "sendSuccessNotice": true,
+    "name": 1228592668,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_FV_Chair.prefab",
+    "editorName": "家具_木质矮凳",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "71": {
+    "editorDesc": "家具_地毯",
+    "seats": [
+      83,
+      84
+    ],
+    "sendSuccessNotice": true,
+    "name": 2017741635,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "vehicleAccessType": 2,
+    "successNotice": 12507,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_Carpet01.prefab",
+    "editorName": "家具_地毯",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "72": {
+    "editorDesc": "家具_蹦床",
+    "seats": [
+      85,
+      91
+    ],
+    "sendSuccessNotice": true,
+    "name": 1178928893,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_PetClimbingFrame03.prefab",
+    "editorName": "家具_蹦床",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "73": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": true,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "家具_秋千",
+    "seats": [
+      86,
+      87
+    ],
+    "sendSuccessNotice": true,
+    "name": 1959936806,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_PetClimbingFrame01.prefab",
+    "rideBodyAnimNames": [
+      "Ani_LVH_Props_PetClimbingFrame_001_A"
+    ],
+    "rideBodyAnimNodeNames": [
+      "EPrefab_LVH_Props_PetClimbingFrame_001_A"
+    ],
+    "editorName": "家具_秋千",
+    "vehicleAccessType": 2
+  },
+  "74": {
+    "editorDesc": "设施_谜立方_人",
+    "seats": [
+      88
+    ],
+    "sendSuccessNotice": true,
+    "name": 1747911618,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 412,
+    "vehicleAccessType": 2,
+    "successNotice": 12508,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_BallCatcher.prefab",
+    "editorName": "设施_谜立方_人",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "75": {
+    "editorDesc": "设施_烘干器1_人",
+    "seats": [
+      89
+    ],
+    "sendSuccessNotice": true,
+    "name": 1450587518,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 457,
+    "vehicleAccessType": 2,
+    "successNotice": 12510,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_Dryer01.prefab",
+    "editorName": "设施_烘干器1_人",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "76": {
+    "editorDesc": "设施_烘干器2_人",
+    "seats": [
+      89
+    ],
+    "sendSuccessNotice": true,
+    "name": 1466944636,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 457,
+    "vehicleAccessType": 2,
+    "successNotice": 12510,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_Dryer02.prefab",
+    "editorName": "设施_烘干器2_人",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "77": {
+    "editorDesc": "设施_火炉1_人",
+    "seats": [
+      90
+    ],
+    "sendSuccessNotice": true,
+    "name": 2109273725,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 271,
+    "vehicleAccessType": 2,
+    "successNotice": 12510,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_Furnace01.prefab",
+    "editorName": "设施_火炉1_人",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "78": {
+    "editorDesc": "设施_火炉2_人",
+    "seats": [
+      90
+    ],
+    "sendSuccessNotice": true,
+    "name": 1127237107,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 271,
+    "vehicleAccessType": 2,
+    "successNotice": 12510,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_Furnace02.prefab",
+    "editorName": "设施_火炉2_人",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "79": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_坐栏杆上2",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_Railing2.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "动作pose_坐栏杆上2",
+    "name": 1390581051,
+    "seats": [
+      54
+    ]
+  },
+  "81": {
+    "duration": 20,
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "warningDuration": 3,
+    "editorDesc": "水板块专用",
+    "beforeBornEffect": "Eff_Env_SceneObject_BubblePlant_KeyItem_Start",
+    "controllerCls": "DandelionController",
+    "editorName": "水板块_可漂浮泡泡",
+    "isFreeRotation": true,
+    "petDismountBuff": 11154,
+    "playInteractId": 179,
+    "resId": "$P_Item_Vehicle_FloatingBubble.prefab",
+    "vehicleType": "Balloon",
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "seats": [
+      96
+    ],
+    "enterConflictType": "ENTER_BUBBLE_VEHICLE",
+    "destroyEffect": "Eff_Env_SceneObject_BubblePlant_KeyItem_End",
+    "name": 1863048005,
+    "quitVehicleDestroy": true
+  },
+  "84": {
+    "duration": 20,
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "editorDesc": "水板块专用",
+    "beforeBornEffect": "Eff_Env_SceneObject_BubblePlant_KeyItem_Start_Black",
+    "controllerCls": "DandelionController",
+    "editorName": "水板块_油污泡泡",
+    "isFreeRotation": true,
+    "warningDuration": 3,
+    "playInteractId": 179,
+    "resId": "$P_Item_Vehicle_DarkBubble.prefab",
+    "vehicleType": "Balloon",
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "seats": [
+      96
+    ],
+    "enterConflictType": "ENTER_BUBBLE_VEHICLE",
+    "destroyEffect": "Eff_Env_SceneObject_BubblePlant_KeyItem_End_Black",
+    "name": 1728651097,
+    "quitVehicleDestroy": true
+  },
+  "85": {
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "editorDesc": "格拉斯博士玩法",
+    "seats": [
+      110
+    ],
+    "controllerCls": "DandelionController",
+    "editorName": "云朵羊格拉斯博士_浮空场",
+    "isFreeRotation": true,
+    "playInteractId": 179,
+    "resId": "$P_Item_Vehicle_ProfQuest_FloatingSite.prefab",
+    "warningDuration": 3,
+    "vehicleType": "Balloon",
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "destroyEffect": "Eff_Env_Level_IOT_DandelionVehicle_Boom",
+    "quitVehicleDestroy": true,
+    "name": 2000279391,
+    "rideDuration": 8
+  },
+  "86": {
+    "editorDesc": "家具_新秋千",
+    "seats": [
+      111
+    ],
+    "sendSuccessNotice": true,
+    "name": 1911271909,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 185,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_Swing_001.prefab",
+    "editorName": "家具_新秋千",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "87": {
+    "duration": 20,
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "editorDesc": "技能专用",
+    "seats": [
+      96
+    ],
+    "controllerCls": "DandelionController",
+    "editorName": "水板块_可漂浮泡泡（技能创）",
+    "isFreeRotation": true,
+    "petDismountBuff": 11154,
+    "playInteractId": 179,
+    "resId": "$P_Item_Vehicle_FloatingBubble_Skill_NoBornEffect.prefab",
+    "warningDuration": 3,
+    "vehicleType": "Balloon",
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "enterConflictType": "ENTER_BUBBLE_VEHICLE",
+    "destroyEffect": "Eff_Env_SceneObject_BubblePlant_KeyItem_End",
+    "name": 1590030796,
+    "quitVehicleDestroy": true
+  },
+  "88": {
+    "editorDesc": "家具_吧台凳",
+    "seats": [
+      113
+    ],
+    "sendSuccessNotice": true,
+    "name": 1729309963,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 185,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_Stool03.prefab",
+    "editorName": "金属高脚凳",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "89": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 5,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "ARK社交聚集吧台5人",
+    "seats": [
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK社交聚集吧台5人",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_5P_Stool.prefab",
+    "vehicleAccessType": 2,
+    "name": 1074414203,
+    "seatManage": 1
+  },
+  "90": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 3,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "ARK社交聚集吧台3人",
+    "seats": [
+      121,
+      122,
+      123
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK社交聚集吧台3人",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_3P_Stool.prefab",
+    "vehicleAccessType": 2,
+    "name": 1961072525,
+    "seatManage": 1
+  },
+  "91": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "ARK社交聚集卡座2人（1）",
+    "seats": [
+      97,
+      98,
+      99,
+      100
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK社交聚集卡座2人（1）",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_2P_Armchair_01.prefab",
+    "vehicleAccessType": 2,
+    "name": 1791717873,
+    "seatManage": 1
+  },
+  "92": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "ARK社交聚集卡座2人（1）",
+    "seats": [
+      97,
+      98,
+      99,
+      100
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK社交聚集卡座2人（1）",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_2P_Armchair_02.prefab",
+    "vehicleAccessType": 2,
+    "name": 1165210654,
+    "seatManage": 1
+  },
+  "93": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 8,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "ARK社交聚集屋顶4人4宠",
+    "seats": [
+      97,
+      98,
+      115,
+      116,
+      99,
+      100,
+      118,
+      119
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK社交聚集屋顶4人4宠",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_3P_CoffeeChair_01.prefab",
+    "vehicleAccessType": 2,
+    "name": 1678778538,
+    "seatManage": 1
+  },
+  "94": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 3,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "ARK社交聚集3人",
+    "seats": [
+      97,
+      98,
+      115
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK社交聚集3人",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_3P_CoffeeChair_02.prefab",
+    "vehicleAccessType": 2,
+    "name": 1109777436,
+    "seatManage": 1
+  },
+  "95": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "ARK社交聚集2人",
+    "seats": [
+      97,
+      98
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK社交聚集2人",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_2P_CoffeeChair.prefab",
+    "vehicleAccessType": 2,
+    "name": 1340221704,
+    "seatManage": 1
+  },
+  "96": {
+    "withPet": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 210,
+    "forbiddenTopLogo": true,
+    "vehicleAccessType": 2,
+    "notSendNotice": false,
+    "petMountType": 3,
+    "editorDesc": "秋千-无奖励",
+    "seats": [
+      6,
+      5
+    ],
+    "controllerCls": "SwingController",
+    "editorName": "秋千-无奖励",
+    "vehicleType": "Swing",
+    "petDismountBuff": 10013,
+    "successNotice": 10897,
+    "resId": "$P_Item_Swing.prefab",
+    "sendSuccessNotice": true,
+    "name": 1996827068,
+    "controllerData": {
+      "arkGameInteractId": 2
+    },
+    "fixCameraDir": [
+      -1,
+      -1,
+      -1
+    ],
+    "fixCameraFov": 60,
+    "fixCameraPos": [
+      7,
+      7,
+      7
+    ],
+    "progressId": 3,
+    "rideDuration": 120
+  },
+  "97": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "田园椅子",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Chair_003.prefab",
+    "name": 1706477819,
+    "editorDesc": "田园椅子",
+    "seats": [
+      68
+    ],
+    "vehicleAccessType": 2
+  },
+  "98": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "椅子",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Chair_004.prefab",
+    "name": 1077526402,
+    "editorDesc": "椅子",
+    "seats": [
+      68
+    ],
+    "vehicleAccessType": 2
+  },
+  "106": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "超大沙发·漏包装",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_004.prefab",
+    "name": 1143977415,
+    "editorDesc": "超大沙发·漏包装",
+    "seats": [
+      165,
+      168,
+      166,
+      169
+    ],
+    "vehicleAccessType": 2
+  },
+  "107": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "宜家·大宠物沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_005.prefab",
+    "name": 1960225833,
+    "editorDesc": "宜家·大宠物沙发",
+    "seats": [
+      151,
+      159
+    ],
+    "vehicleAccessType": 2
+  },
+  "108": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "宜家·小宠物沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_006.prefab",
+    "name": 2115337130,
+    "editorDesc": "宜家·小宠物沙发",
+    "seats": [
+      160
+    ],
+    "vehicleAccessType": 2
+  },
+  "109": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "小沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_007.prefab",
+    "name": 1807285864,
+    "editorDesc": "小沙发",
+    "seats": [
+      149
+    ],
+    "vehicleAccessType": 2
+  },
+  "110": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "宜家·小宠沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_008.prefab",
+    "name": 2126686388,
+    "editorDesc": "宜家·小宠沙发",
+    "seats": [
+      154
+    ],
+    "vehicleAccessType": 2
+  },
+  "113": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "绿沙发椅",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_011.prefab",
+    "name": 1461356875,
+    "editorDesc": "绿沙发椅",
+    "seats": [
+      68
+    ],
+    "vehicleAccessType": 2
+  },
+  "116": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_跳舞",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_OverlookPoint.prefab",
+    "vehicleAccessType": 2,
+    "specialVehicleRide": 324994872,
+    "editorDesc": "动作pose_跳舞",
+    "name": 1169804334,
+    "seats": [
+      126
+    ]
+  },
+  "117": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 3,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "家园圆形大沙发3人",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_012.prefab",
+    "vehicleAccessType": 2,
+    "specialVehicleRide": 996363986,
+    "name": 1264385665,
+    "editorDesc": "家园圆形大沙发3人",
+    "seats": [
+      127,
+      128,
+      129
+    ]
+  },
+  "122": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100012,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "森语浴桶",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Bathtub_002.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Bathtub_002",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "successNotice": 100059,
+    "vehicleAccessType": 2,
+    "name": 2125615342,
+    "editorDesc": "单人浴桶",
+    "seats": [
+      139
+    ]
+  },
+  "115": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 1056,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK露天对决观众座椅2（二人二宠）",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_4P_BattleArea_01.prefab",
+    "vehicleAccessType": 2,
+    "specialVehicleRide": 350920103,
+    "seats": [
+      99,
+      97,
+      98,
+      100
+    ],
+    "name": 1681786332,
+    "editorDesc": "ARK露天对决观众座椅2（二人二宠）",
+    "seatManage": 1
+  },
+  "118": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 8,
+    "enterInteractId": 1056,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK露天对决观众座椅（四人四宠）",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_8P_BattleArea_01.prefab",
+    "vehicleAccessType": 2,
+    "specialVehicleRide": 267796655,
+    "seats": [
+      99,
+      97,
+      98,
+      100,
+      118,
+      115,
+      116,
+      119
+    ],
+    "name": 1316058303,
+    "editorDesc": "ARK露天对决观众座椅（四人四宠）",
+    "seatManage": 1
+  },
+  "119": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 8,
+    "enterInteractId": 1056,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK露天对决观众座椅2（二人二宠）",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Seat_4P_BattleArea_02.prefab",
+    "vehicleAccessType": 2,
+    "specialVehicleRide": 973292051,
+    "seats": [
+      99,
+      97,
+      98,
+      100,
+      118,
+      115,
+      116,
+      119
+    ],
+    "name": 1692050033,
+    "editorDesc": "ARK露天对决观众座椅2（二人二宠）",
+    "seatManage": 1
+  },
+  "120": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 6,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK黄色三人座椅",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Shopseats_02.prefab",
+    "vehicleAccessType": 2,
+    "specialVehicleRide": 742606052,
+    "seats": [
+      34,
+      35,
+      36
+    ],
+    "name": 1373205134,
+    "editorDesc": "ARK黄色三人座椅",
+    "seatManage": 1
+  },
+  "121": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100012,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "沐雨青瓷·浴缸",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Bathtub_001.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Bathtub_001",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "successNotice": 100059,
+    "vehicleAccessType": 2,
+    "name": 1810774877,
+    "editorDesc": "单人浴缸",
+    "seats": [
+      139
+    ]
+  },
+  "127": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "圆盘编织沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_013.prefab",
+    "successNotice": 12506,
+    "vehicleAccessType": 2,
+    "name": 1635972594,
+    "editorDesc": "圆盘编织沙发",
+    "seats": [
+      162,
+      163
+    ]
+  },
+  "128": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "藤巢沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_014.prefab",
+    "successNotice": 12506,
+    "vehicleAccessType": 2,
+    "name": 2092308499,
+    "editorDesc": "藤巢沙发",
+    "seats": [
+      91
+    ]
+  },
+  "129": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "怀旧风料理台",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Storage_Cabinet_010.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Storage_Cabinet_010",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1333049193,
+    "editorDesc": "怀旧风料理台",
+    "seats": [
+      147
+    ]
+  },
+  "130": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "怀旧风洗手柜",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Storage_Cabinet_012.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Storage_Cabinet_012",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1769212276,
+    "editorDesc": "怀旧风洗手柜",
+    "seats": [
+      141
+    ]
+  },
+  "131": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "木食记·洗手柜",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Storage_Cabinet_025.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Storage_Cabinet_025",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1853630797,
+    "editorDesc": "木食记·洗手柜",
+    "seats": [
+      147
+    ]
+  },
+  "132": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "林曦小憩·双人床",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bed_Bed_001.prefab",
+    "successNotice": 12507,
+    "vehicleAccessType": 2,
+    "name": 2088876884,
+    "editorDesc": "林曦小憩·双人床",
+    "seats": [
+      143,
+      144
+    ]
+  },
+  "133": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "布艺双人床·奶咖",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bed_Bed_002.prefab",
+    "successNotice": 12507,
+    "vehicleAccessType": 2,
+    "name": 1359726503,
+    "editorDesc": "布艺双人床·奶咖",
+    "seats": [
+      143,
+      144
+    ]
+  },
+  "100": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "藤编木椅",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Chair_006.prefab",
+    "name": 1609653520,
+    "editorDesc": "藤编木椅",
+    "seats": [
+      68
+    ],
+    "vehicleAccessType": 2
+  },
+  "45": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "seats": [
+      40,
+      41
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK咖啡店座椅（小）3",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_CoffeeChair_03.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "ARK咖啡店座椅（小）3",
+    "name": 2132296852
+  },
+  "46": {
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "editorDesc": "沐羽鸟泡泡",
+    "seats": [
+      47
+    ],
+    "controllerCls": "DandelionController",
+    "editorName": "沐羽鸟泡泡",
+    "isFreeRotation": true,
+    "playInteractId": 179,
+    "resId": "$P_Vehicle_Physics_Bubble_Big.prefab",
+    "warningDuration": 5,
+    "vehicleType": "Bubble",
+    "controllerData": {
+      "antiGravityPercent": 1,
+      "drivePower": 30,
+      "mountDelay": 0.5,
+      "ridingAntiGravity": 1.35
+    },
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "name": 1331067616,
+    "quitVehicleDestroy": true,
+    "rideDuration": 12
+  },
+  "47": {
+    "editorDesc": "能量聚合器玩家参与",
+    "seats": [
+      45,
+      46
+    ],
+    "sendSuccessNotice": true,
+    "name": 1961516656,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 412,
+    "successNotice": 12509,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_ExpItemMaker.prefab",
+    "editorName": "能量聚合器_游玩",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "48": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1.2,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK高脚凳1",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_Stool_01.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      48,
+      49
+    ],
+    "name": 1509021117,
+    "editorDesc": "ARK高脚凳1"
+  },
+  "49": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1.2,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK高脚凳餐厅1人",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_Stool_02.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      121
+    ],
+    "seatManage": 1,
+    "name": 1208347623,
+    "editorDesc": "ARK高脚凳2"
+  },
+  "50": {
+    "editorDesc": "果汁桶Lv1",
+    "seats": [
+      52,
+      53
+    ],
+    "sendSuccessNotice": true,
+    "name": 2146637529,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 424,
+    "successNotice": 12505,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_WineBarre01.prefab",
+    "editorName": "果汁桶Lv1",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "111": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "懒人沙发+沙发毯",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_009.prefab",
+    "name": 1795675807,
+    "editorDesc": "懒人沙发+沙发毯",
+    "seats": [
+      161
+    ],
+    "vehicleAccessType": 2
+  },
+  "52": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_趴栏杆上",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_Railing.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "动作pose_趴栏杆上",
+    "name": 1570890131,
+    "seats": [
+      55
+    ]
+  },
+  "148": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "原木洗手台·橡木",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Sink_002.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Sink_002",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1830078872,
+    "editorDesc": "原木洗手台·橡木",
+    "seats": [
+      147
+    ]
+  },
+  "53": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_坐楼梯上1",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_StairsPoint.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "动作pose_坐楼梯上1",
+    "name": 1793860944,
+    "seats": [
+      56
+    ]
+  },
+  "54": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_坐楼梯上2",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_StairsPoint.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "动作pose_坐楼梯上2",
+    "name": 1777503030,
+    "seats": [
+      57
+    ]
+  },
+  "60": {
+    "editorDesc": "果汁桶Lv2",
+    "seats": [
+      52,
+      53
+    ],
+    "sendSuccessNotice": true,
+    "name": 2065034650,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 424,
+    "successNotice": 12505,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_WineBarre02.prefab",
+    "editorName": "果汁桶Lv2",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "31": {
+    "editorDesc": "家园纺车",
+    "seats": [
+      27
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "纺车_2",
+    "vehicleType": "HomeVehicle",
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "resId": "$P_Item_Home_Build_SpinningWheel_002.prefab",
+    "forbiddenTopLogo": true,
+    "playInteractId": 172,
+    "name": 1318257118,
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "43": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK咖啡店座椅（小）1",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_CoffeeChair_01.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      40,
+      44
+    ],
+    "name": 1163740899,
+    "editorDesc": "ARK咖啡店座椅（小）1"
+  },
+  "51": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_坐栏杆上",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_Railing.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "动作pose_坐栏杆上",
+    "name": 2097707492,
+    "seats": [
+      54
+    ]
+  },
+  "112": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "懒人沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_010.prefab",
+    "name": 1586266908,
+    "editorDesc": "懒人沙发",
+    "seats": [
+      161
+    ],
+    "vehicleAccessType": 2
+  },
+  "20": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK椅子1人1宠公园",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Seat_01_Eff.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      1,
+      2
+    ],
+    "seatManage": 1,
+    "editorDesc": "ARK椅子 -1",
+    "name": 1626642059
+  },
+  "21": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "editorDesc": "ARK椅子 公交站",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK椅子 公交站",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Seat_02_Eff.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      1,
+      2
+    ],
+    "name": 1809459367,
+    "seatManage": 1
+  },
+  "22": {
+    "editorDesc": "篝火点椅子",
+    "seats": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "篝火点椅子",
+    "vehicleType": "Bonfire",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 367,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "resId": "$P_Levelitem_BonfireStump.prefab",
+    "notSendNotice": false,
+    "name": 1633600708
+  },
+  "23": {
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "editorDesc": "蒲公英",
+    "seats": [
+      17
+    ],
+    "controllerCls": "DandelionController",
+    "editorName": "蒲公英",
+    "isFreeRotation": true,
+    "playInteractId": 179,
+    "resId": "$P_Vehicle_Physics_Dandelion.prefab",
+    "warningDuration": 5,
+    "vehicleType": "Dandelion",
+    "controllerData": {
+      "antiGravityPercent": 1,
+      "drivePower": 10,
+      "mountDelay": 0.5,
+      "ridingAntiGravity": 1.35
+    },
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "name": 2038914448,
+    "quitVehicleDestroy": true,
+    "rideDuration": 5
+  },
+  "24": {
+    "editorDesc": "耶耶毛团",
+    "seats": [
+      18
+    ],
+    "sendSuccessNotice": false,
+    "editorName": "耶耶毛团",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 508,
+    "vehicleAccessType": 2,
+    "seatManage": 1,
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "resId": "$P_BounceFurr_Temp.prefab",
+    "notSendNotice": true,
+    "name": 2069319186
+  },
+  "55": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_靠墙站立",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_OverlookPoint.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "动作pose_靠墙站立",
+    "name": 1712868766,
+    "seats": [
+      58
+    ]
+  },
+  "134": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "林曦小憩·伊莫睡床",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bed_Bed_003.prefab",
+    "successNotice": 12507,
+    "vehicleAccessType": 2,
+    "name": 1542231707,
+    "editorDesc": "林曦小憩·伊莫睡床",
+    "seats": [
+      145
+    ]
+  },
+  "136": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "甜梦帐篷床·小",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bed_Bed_005.prefab",
+    "successNotice": 12507,
+    "vehicleAccessType": 2,
+    "name": 1776809377,
+    "editorDesc": "甜梦帐篷床·小",
+    "seats": [
+      145
+    ]
+  },
+  "25": {
+    "editorDesc": "家园磨坊木马",
+    "seats": [
+      19,
+      20
+    ],
+    "sendSuccessNotice": true,
+    "name": 1668140073,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 401,
+    "successNotice": 12500,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_Mill01.prefab",
+    "editorName": "家园磨坊_木马",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "26": {
+    "editorDesc": "家园磨坊木马",
+    "seats": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "sendSuccessNotice": true,
+    "name": 1598020583,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 401,
+    "successNotice": 12500,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_Mill02.prefab",
+    "editorName": "家园磨坊_木马",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "27": {
+    "duration": 12,
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "editorDesc": "浴球鸟泡泡",
+    "seats": [
+      42
+    ],
+    "controllerCls": "DandelionController",
+    "editorName": "浴球鸟泡泡",
+    "isFreeRotation": true,
+    "playInteractId": 179,
+    "resId": "$P_Vehicle_Physics_Bubble_Small.prefab",
+    "warningDuration": 5,
+    "vehicleType": "Bubble",
+    "controllerData": {
+      "antiGravityPercent": 1,
+      "drivePower": 30,
+      "mountDelay": 0.5,
+      "ridingAntiGravity": 1.35
+    },
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "quitVehicleDestroy": true,
+    "name": 1316097948,
+    "rideDuration": 12
+  },
+  "28": {
+    "editorDesc": "家园纺车",
+    "seats": [
+      23,
+      24,
+      25,
+      27
+    ],
+    "sendSuccessNotice": true,
+    "name": 1200265445,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 4,
+    "enterInteractId": 399,
+    "successNotice": 12501,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_SpinningWheel01.prefab",
+    "editorName": "纺车_1",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "29": {
+    "editorDesc": "家园纺车",
+    "seats": [
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "sendSuccessNotice": true,
+    "name": 1444925422,
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 5,
+    "enterInteractId": 399,
+    "successNotice": 12501,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_SpinningWheel02.prefab",
+    "editorName": "纺车_2",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "30": {
+    "editorDesc": "家园纺车",
+    "seats": [
+      27
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "纺车_1",
+    "vehicleType": "HomeVehicle",
+    "canLeaveSeat": 1,
+    "capacityLimit": 3,
+    "resId": "$P_Item_Home_Build_SpinningWheel_001.prefab",
+    "forbiddenTopLogo": true,
+    "playInteractId": 172,
+    "name": 1491357846,
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "32": {
+    "editorDesc": "滚滚郎泥坑",
+    "seats": [
+      28
+    ],
+    "sendSuccessNotice": false,
+    "editorName": "滚滚郎泥坑",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 620,
+    "vehicleAccessType": 2,
+    "seatManage": 1,
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "resId": "$P_Gugu_Dandelion.prefab",
+    "notSendNotice": true,
+    "name": 1756242676
+  },
+  "33": {
+    "editorDesc": "手工台工作",
+    "seats": [
+      29
+    ],
+    "disableSyncAnimState": 1,
+    "editorName": "手工台_1",
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 400,
+    "sendSuccessNotice": false,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_CraftingTable01.prefab",
+    "name": 1747394999,
+    "notSendNotice": true,
+    "petMountType": 2
+  },
+  "34": {
+    "editorDesc": "手工台工作",
+    "seats": [
+      29
+    ],
+    "disableSyncAnimState": 1,
+    "editorName": "手工台_2",
+    "vehicleType": "HomeVehicle",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 400,
+    "sendSuccessNotice": false,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Produce_Process_CraftingTable02.prefab",
+    "name": 1723264854,
+    "notSendNotice": true,
+    "petMountType": 2
+  },
+  "36": {
+    "petMountBuff": 920000102,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 623,
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "notSendNotice": true,
+    "editorDesc": "泡温泉",
+    "seats": [
+      33
+    ],
+    "sendSuccessNotice": false,
+    "editorName": "熔岩龙洞穴泡温泉",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_Bath.prefab",
+    "vehicleAccessType": 2,
+    "name": 1230851767,
+    "petDismountBuff": 2128303,
+    "seatManage": 1
+  },
+  "37": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 6,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": true,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "ARK商店座椅3人",
+    "vehicleType": "Bench",
+    "resId": "$P_Item_SceneObject_Ark_Shopseats_01.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      34,
+      35,
+      36
+    ],
+    "seatManage": 1,
+    "name": 1132353743,
+    "editorDesc": "ARK商店座椅"
+  },
+  "38": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "editorDesc": "空载具_眺望",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "空载具_眺望",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_OverlookPoint.prefab",
+    "name": 2029888161,
+    "seats": [
+      37,
+      43
+    ],
+    "vehicleAccessType": 2
+  },
+  "39": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "seats": [
+      38,
+      39
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK咖啡店座椅（大）1",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_Armchair_001.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "ARK咖啡店座椅（大）1",
+    "name": 1213429976
+  },
+  "40": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "seats": [
+      38,
+      39
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK咖啡店座椅（大）2",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_Armchair_002.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "ARK咖啡店座椅（大）2",
+    "name": 1512556026
+  },
+  "41": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "seats": [
+      38,
+      39
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK咖啡店座椅（大）3",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_Armchair_003.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "ARK咖啡店座椅（大）3",
+    "name": 2062983053
+  },
+  "42": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "seats": [
+      38,
+      39
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK咖啡店座椅（大）4",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_Armchair_004.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "ARK咖啡店座椅（大）4",
+    "name": 1452411291
+  },
+  "35": {
+    "fullSeatEffect": "$Eff_Common_CommonCross_Chat01.prefab",
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 435,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1607
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "isopenchat": 1,
+    "notSendNotice": false,
+    "editorDesc": "偶遇笛子双人长椅",
+    "seats": [
+      31,
+      32
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "偶遇笛子双人长椅",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_FluteBench.prefab",
+    "vehicleAccessType": 2,
+    "name": 1095853358
+  },
+  "44": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "seats": [
+      40,
+      41
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK咖啡店座椅（小）2",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Item_SceneObject_Ark_CoffeeChair_02.prefab",
+    "vehicleAccessType": 2,
+    "editorDesc": "ARK咖啡店座椅（小）2",
+    "name": 1316544044
+  },
+  "137": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "甜梦帐篷床·中",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bed_Bed_006.prefab",
+    "successNotice": 12507,
+    "vehicleAccessType": 2,
+    "name": 1991807400,
+    "editorDesc": "甜梦帐篷床·中",
+    "seats": [
+      143,
+      144
+    ]
+  },
+  "163": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1798422075,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "resId": "$P_Home_Furniture_Textile_ThrowPillow_008.prefab",
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "successNotice": 12506,
+    "forbiddenTopLogo": false,
+    "editorName": "圆形坐垫·印花",
+    "editorDesc": "圆形坐垫·印花",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "140": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1258194814,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "resId": "$P_Home_Furniture_Textile_Carpet_016_A.prefab",
+    "enterInteractId": 440,
+    "vehicleAccessType": 2,
+    "successNotice": 12506,
+    "forbiddenTopLogo": false,
+    "editorName": "回纹地毯",
+    "editorDesc": "回纹地毯",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "123": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100012,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "米格泳池浴缸",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Bathtub_003.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Bathtub_003",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "successNotice": 100059,
+    "vehicleAccessType": 2,
+    "name": 1650572547,
+    "editorDesc": "大浴缸",
+    "seats": [
+      139
+    ]
+  },
+  "125": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "马桶·雾灰",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Toilet_002.prefab",
+    "name": 1728315781,
+    "editorDesc": "马桶·雾灰",
+    "seats": [
+      141
+    ],
+    "vehicleAccessType": 2
+  },
+  "126": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "木纹盖马桶",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Toilet_003.prefab",
+    "name": 1268730727,
+    "editorDesc": "木纹盖马桶",
+    "seats": [
+      141
+    ],
+    "vehicleAccessType": 2
+  },
+  "1": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 171,
+    "eventWeights": [
+      1,
+      1,
+      1,
+      1,
+      4
+    ],
+    "events": [
+      1153,
+      1154,
+      1155,
+      1156,
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "notSendNotice": false,
+    "editorDesc": "测试椅子",
+    "seats": [
+      1,
+      2
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "测试椅子",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_Bench.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 1481570875
+  },
+  "2": {
+    "editorDesc": "测试跷跷板",
+    "seats": [
+      7,
+      8
+    ],
+    "sendSuccessNotice": true,
+    "name": 2029195546,
+    "vehicleType": "Seesaw",
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 171,
+    "vehicleAccessType": 2,
+    "successNotice": 10899,
+    "forbiddenTopLogo": true,
+    "seatManage": 1,
+    "resId": "$P_Vehicle_Seesaw.prefab",
+    "notSendNotice": false,
+    "editorName": "测试跷跷板"
+  },
+  "3": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "isInScene": 1,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "ARK椅子1人1宠广场",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Parkbench_01.prefab",
+    "vehicleAccessType": 2,
+    "seats": [
+      1,
+      2
+    ],
+    "seatManage": 1,
+    "name": 1236127807,
+    "editorDesc": "ARK椅子1"
+  },
+  "4": {
+    "withPet": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 210,
+    "forbiddenTopLogo": true,
+    "vehicleAccessType": 2,
+    "notSendNotice": false,
+    "petMountType": 3,
+    "editorDesc": "秋千",
+    "seats": [
+      6,
+      5
+    ],
+    "controllerCls": "SwingController",
+    "editorName": "秋千",
+    "vehicleType": "Swing",
+    "petDismountBuff": 10013,
+    "successNotice": 10897,
+    "resId": "$P_Item_Swing.prefab",
+    "sendSuccessNotice": true,
+    "name": 1925320902,
+    "controllerData": {
+      "arkGameInteractId": 2
+    },
+    "fixCameraDir": [
+      -1,
+      -1,
+      -1
+    ],
+    "fixCameraFov": 60,
+    "fixCameraPos": [
+      7,
+      7,
+      7
+    ],
+    "progressId": 2,
+    "rideDuration": 120
+  },
+  "138": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "甜梦帐篷床·大",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bed_Bed_007.prefab",
+    "successNotice": 12507,
+    "vehicleAccessType": 2,
+    "name": 1739785176,
+    "editorDesc": "甜梦帐篷床·大",
+    "seats": [
+      143,
+      144
+    ]
+  },
+  "139": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1127613825,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "resId": "$P_Home_Furniture_Textile_Carpet_016.prefab",
+    "enterInteractId": 440,
+    "vehicleAccessType": 2,
+    "successNotice": 12506,
+    "forbiddenTopLogo": false,
+    "editorName": "几何地毯",
+    "editorDesc": "几何地毯",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "101": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "椅子",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Chair_007.prefab",
+    "name": 1368906813,
+    "editorDesc": "椅子",
+    "seats": [
+      68
+    ],
+    "vehicleAccessType": 2
+  },
+  "141": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1580640289,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "resId": "$P_Home_Furniture_Textile_Carpet_016_C.prefab",
+    "enterInteractId": 440,
+    "vehicleAccessType": 2,
+    "successNotice": 12506,
+    "forbiddenTopLogo": false,
+    "editorName": "格纹地毯·姜黄",
+    "editorDesc": "格纹地毯·姜黄",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "142": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "纽扣坐垫·落日橙",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Textile_Carpet_019.prefab",
+    "name": 1600641165,
+    "editorDesc": "纽扣坐垫·落日橙",
+    "seats": [
+      94
+    ],
+    "vehicleAccessType": 2
+  },
+  "143": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "编绳坐垫·亚麻",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Textile_Carpet_018.prefab",
+    "name": 1104921290,
+    "editorDesc": "编绳坐垫·亚麻",
+    "seats": [
+      94
+    ],
+    "vehicleAccessType": 2
+  },
+  "144": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100013,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -0.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "沐雨青瓷·花洒",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Showerhead_001.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Shower_001",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1595462723,
+    "editorDesc": "沐雨青瓷·花洒",
+    "seats": [
+      140
+    ]
+  },
+  "145": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100013,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -0.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "云瀑花洒",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Showerhead_002.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Shower_002",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1657426774,
+    "editorDesc": "云瀑花洒",
+    "seats": [
+      140
+    ]
+  },
+  "146": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100013,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -0.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "蓝调花洒",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Showerhead_003.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Shower_003",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1334180015,
+    "editorDesc": "蓝调花洒",
+    "seats": [
+      140
+    ]
+  },
+  "147": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "沐雨青瓷·洗手台",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Sink_001.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Sink_001",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1787665659,
+    "editorDesc": "沐雨青瓷·洗手台",
+    "seats": [
+      147
+    ]
+  },
+  "149": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "洗手台·雾灰",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Sink_003.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Sink_003",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1349371017,
+    "editorDesc": "洗手台·雾灰",
+    "seats": [
+      147
+    ]
+  },
+  "150": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "伊莫洗手台·雾灰",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Sink_004.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Sink_004",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1342274747,
+    "editorDesc": "伊莫洗手台·雾灰",
+    "seats": [
+      148
+    ]
+  },
+  "151": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "橱柜洗手台·枫木",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Sink_005.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Sink_005",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1716498651,
+    "editorDesc": "橱柜洗手台·枫木",
+    "seats": [
+      147
+    ]
+  },
+  "152": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100015,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "抽屉洗手台·枫木",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Sink_006.prefab",
+    "rideBodyEffects": [
+      {
+        "effectKey": "Eff_Env_Home_Bath_Sink_006",
+        "nodeName": "PlayerBody"
+      }
+    ],
+    "vehicleAccessType": 2,
+    "name": 1910752089,
+    "editorDesc": "抽屉洗手台·枫木",
+    "seats": [
+      148
+    ]
+  },
+  "153": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "编织草窝",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_SeatCushion_002.prefab",
+    "successNotice": 12506,
+    "vehicleAccessType": 2,
+    "name": 1374200746,
+    "editorDesc": "编织草窝",
+    "seats": [
+      71
+    ]
+  },
+  "154": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "盈月丰收·矮凳",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_MoonChairS.prefab",
+    "name": 2117407869,
+    "editorDesc": "盈月丰收·矮凳",
+    "seats": [
+      146
+    ],
+    "vehicleAccessType": 2
+  },
+  "155": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "盈月丰收·高凳",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_MoonChairB.prefab",
+    "name": 1227795552,
+    "editorDesc": "盈月丰收·高凳",
+    "seats": [
+      167
+    ],
+    "vehicleAccessType": 2
+  },
+  "156": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1940297870,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "resId": "$P_Home_Furniture_Chair_Sofa_012.prefab",
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": false,
+    "editorName": "苍翠圆岛沙发",
+    "editorDesc": "苍翠圆岛沙发",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "157": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "凉夏·沙滩躺椅",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_SummerChair_A.prefab",
+    "name": 1755690081,
+    "editorDesc": "凉夏·沙滩躺椅",
+    "seats": [
+      162
+    ],
+    "vehicleAccessType": 2
+  },
+  "158": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "凉夏·圆凳",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_SummerChair_B.prefab",
+    "name": 2020144784,
+    "editorDesc": "凉夏·圆凳",
+    "seats": [
+      81
+    ],
+    "vehicleAccessType": 2
+  },
+  "159": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "凉夏·泳池",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Decorations_Deco_SummerPool.prefab",
+    "name": 1809520570,
+    "editorDesc": "凉夏·泳池",
+    "seats": [
+      153,
+      170
+    ],
+    "vehicleAccessType": 2
+  },
+  "160": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1425075114,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "resId": "$P_Home_Decorations_Deco_OutToilet01.prefab",
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": false,
+    "editorName": "叶顶树屋",
+    "editorDesc": "叶顶树屋",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "161": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1356554682,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "resId": "$P_Home_Decorations_Deco_OutToilet.prefab",
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": false,
+    "editorName": "树桩马桶",
+    "editorDesc": "树桩马桶",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "162": {
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "name": 1673126356,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": false,
+    "editorName": "青石洗手台",
+    "editorDesc": "青石洗手台",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "124": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "沐雨青瓷·马桶",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Bath_Toilet_001.prefab",
+    "name": 1605065211,
+    "editorDesc": "沐雨青瓷·马桶",
+    "seats": [
+      141
+    ],
+    "vehicleAccessType": 2
+  },
+  "164": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "椅子",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Pet_BabySeat_001.prefab",
+    "name": 2076238523,
+    "editorDesc": "椅子",
+    "seats": [
+      158
+    ],
+    "vehicleAccessType": 2
+  },
+  "165": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "坐垫",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Pet_PetBed_003.prefab",
+    "name": 1335111513,
+    "editorDesc": "坐垫",
+    "seats": [
+      157
+    ],
+    "vehicleAccessType": 2
+  },
+  "166": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "坐垫",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Pet_PetBed_002.prefab",
+    "name": 1978589276,
+    "editorDesc": "坐垫",
+    "seats": [
+      157
+    ],
+    "vehicleAccessType": 2
+  },
+  "167": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "坐垫",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Pet_PetBed_004.prefab",
+    "name": 1499539774,
+    "editorDesc": "坐垫",
+    "seats": [
+      157
+    ],
+    "vehicleAccessType": 2
+  },
+  "168": {
+    "specialVehicleRideInteractDistance": 3,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "forbiddenTopLogo": true,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "editorDesc": "滑板车",
+    "seats": [
+      171,
+      172
+    ],
+    "controllerCls": "SpecialVehicleRideController",
+    "editorName": "滑板车",
+    "isFreeRotation": false,
+    "specialVehicleRide": true,
+    "vehicleType": "Bench",
+    "controllerData": {
+      "jumpLandAnim": "Float_End",
+      "jumpLandCheckInterval": 0.05,
+      "jumpLandDistance": 0.2,
+      "jumpLoopAnim": "Float_Idle",
+      "jumpLoopDelay": 0.2,
+      "jumpSpeed": 6,
+      "jumpStartAnim": "Float_Start",
+      "landDuration": 0.2,
+      "maxFallSpeed": 30,
+      "maxVisualSlopeAngle": 45,
+      "minMoveSpeed": 0,
+      "minTurnRadius": 5.5,
+      "moveAnim": "Skill_Skate_Move",
+      "moveEndAnim": "Skill_Skate_End",
+      "gravity": -25,
+      "moveStartAnim": "Skill_Skate_Start",
+      "moveStartDuration": 0.2,
+      "rearWheelOffset": -0.4,
+      "slopeAlignmentEnabled": true,
+      "slopeVisualAlignSpeed": 12,
+      "speedRecoveryAcceleration": 4,
+      "maxMoveSpeed": 12,
+      "moveSpeed": 9,
+      "wheelProbeHeight": 0.6,
+      "wheelProbeDistance": 1.4,
+      "rotationSpeed": 120,
+      "moveEndDuration": 0.2,
+      "jumpDuration": 2,
+      "slopeAcceleration": 1,
+      "waterWaveContactDistance": 0.3,
+      "waterWaveEnabled": true,
+      "waterWaveProbeDistance": 1.4,
+      "wheelGroundInteractionEnabled": true,
+      "frontWheelOffset": 0.4,
+      "idleAnim": "Sit_Idle",
+      "mountDelay": 0.5,
+      "jumpEndAnim": "Float_End"
+    },
+    "successNotice": 12507,
+    "vehicleAccessType": 2,
+    "name": 1903462506,
+    "resId": "$P_Home_Decorations_Scooter_001.prefab",
+    "sendSuccessNotice": true
+  },
+  "169": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 408,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": true,
+    "IndicatorIconHeight": [
+      0,
+      -1.5,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": false,
+    "editorName": "动作pose_站立",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Temp_Item_SceneObject_Ark_OverlookPoint.prefab",
+    "vehicleAccessType": 2,
+    "specialVehicleRide": 324994872,
+    "editorDesc": "一个交互点，交互后做一个pose",
+    "name": 1973203365,
+    "seats": [
+      174
+    ]
+  },
+  "12": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸1",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸1",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_04.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 1274913389,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "13": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸2",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸2",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_04.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 2104954910,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "9": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "editorDesc": "ARK人宠阳伞座椅1",
+    "seats": [
+      3,
+      4
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK人宠阳伞座椅1",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_03.prefab",
+    "vehicleAccessType": 2,
+    "name": 2049757620
+  },
+  "10": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      0
+    ],
+    "forbiddenTopLogo": true,
+    "isInScene": 1,
+    "notSendNotice": false,
+    "editorDesc": "ARK人宠阳伞座椅2",
+    "seats": [
+      3,
+      4
+    ],
+    "sendSuccessNotice": true,
+    "editorName": "ARK人宠阳伞座椅2",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_04.prefab",
+    "vehicleAccessType": 2,
+    "name": 1605721232
+  },
+  "11": {
+    "capacityLimit": 1,
+    "hideCountDown": 1,
+    "forbiddenTopLogo": true,
+    "speed": 1,
+    "notSendNotice": true,
+    "editorDesc": "物理蒲公英",
+    "seats": [
+      11
+    ],
+    "controllerCls": "DandelionController",
+    "editorName": "物理蒲公英",
+    "isFreeRotation": true,
+    "playInteractId": 179,
+    "resId": "$P_Vehicle_Physics_Dandelion.prefab",
+    "warningDuration": 5,
+    "vehicleType": "Dandelion",
+    "controllerData": {
+      "antiGravityPercent": 1,
+      "drivePower": 10,
+      "mountDelay": 0.5,
+      "ridingAntiGravity": 1.35
+    },
+    "vehicleAccessType": 2,
+    "sendSuccessNotice": false,
+    "name": 1374575694,
+    "quitVehicleDestroy": true,
+    "rideDuration": 8
+  },
+  "66": {
+    "editorDesc": "家具_高床",
+    "seats": [
+      75,
+      76
+    ],
+    "sendSuccessNotice": true,
+    "name": 1830003666,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 440,
+    "vehicleAccessType": 2,
+    "successNotice": 12507,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Bed_001.prefab",
+    "editorName": "家具_高床",
+    "notSendNotice": false,
+    "petMountType": 1
+  },
+  "68": {
+    "editorDesc": "家具_吧台凳",
+    "seats": [
+      77
+    ],
+    "sendSuccessNotice": true,
+    "name": 1815121019,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_Decorations_Deco_Stool01.prefab",
+    "editorName": "家具_吧台凳",
+    "notSendNotice": false,
+    "petMountType": 2
+  },
+  "114": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "夏日草秋千",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_StyleDecor_Jul_Grass.prefab",
+    "rideBodyAnimNames": [
+      "Ani_LVH_Props_StyleDecor_Jul_Grass_Idle"
+    ],
+    "rideBodyAnimNodeNames": [
+      "EPrefab_LVH_Props_StyleDecor_Jul_Grass"
+    ],
+    "vehicleAccessType": 2,
+    "name": 1657510912,
+    "editorDesc": "夏日草秋千",
+    "seats": [
+      173
+    ]
+  },
+  "19": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸8",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸8",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_03.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 2077497542,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "18": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸7",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸7",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_03.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 1647865793,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "17": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸6",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸6",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_03.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 1370069288,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "16": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 185,
+    "eventWeights": [
+      1
+    ],
+    "events": [
+      1153
+    ],
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "editorDesc": "ARK座椅_报纸5",
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "ARK座椅_报纸5",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "playInteractId": 172,
+    "resId": "$P_Item_SceneObject_Ark_Sunshade_01_Seat_03.prefab",
+    "successNotice": 10898,
+    "vehicleAccessType": 2,
+    "name": 1081601904,
+    "seats": [
+      3,
+      4
+    ]
+  },
+  "102": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 2,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "椅子",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Chair_008.prefab",
+    "name": 1261788123,
+    "editorDesc": "椅子",
+    "seats": [
+      146
+    ],
+    "vehicleAccessType": 2
+  },
+  "103": {
+    "canLeaveSeat": 1,
+    "capacityLimit": 2,
+    "enterInteractId": 100020,
+    "forbiddenTopLogo": false,
+    "notSendNotice": false,
+    "petMountType": 1,
+    "IndicatorIconHeight": [
+      0,
+      -1,
+      0
+    ],
+    "needIndicatorIcon": 1,
+    "sendSuccessNotice": true,
+    "editorName": "海墩墩双人沙发",
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "resId": "$P_Home_Furniture_Chair_Sofa_001.prefab",
+    "name": 2032134272,
+    "editorDesc": "海墩墩双人沙发",
+    "seats": [
+      155,
+      156
+    ],
+    "vehicleAccessType": 2
+  },
+  "80": {
+    "editorDesc": "载具_沙滩椅",
+    "seats": [
+      94
+    ],
+    "sendSuccessNotice": true,
+    "name": 1885113653,
+    "vehicleType": "Bench",
+    "moveLeave": true,
+    "canLeaveSeat": 1,
+    "capacityLimit": 1,
+    "enterInteractId": 100020,
+    "vehicleAccessType": 2,
+    "successNotice": 10801,
+    "forbiddenTopLogo": true,
+    "resId": "$P_Home_SetDressing_CampingTent04_A.prefab",
+    "editorName": "载具_沙滩椅",
+    "notSendNotice": false,
+    "petMountType": 1
+  }
+}

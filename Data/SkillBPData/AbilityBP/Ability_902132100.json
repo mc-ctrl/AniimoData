@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_902132100",
+  "NodeID": 1,
+  "UID": "21d347c4-1fee-4def-b06d-c94f129c8234",
+  "abilityParamId": 49220010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 902132100001,
+      "name": "setCombatActionTimeline",
+      "UID": "f2fc1c0d-808a-4104-859f-0c8eee497b0b",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MjdmEnd",
+    "Skill_Mjdm_01"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Skill_Blue_Wings",
+    "Eff_Monster_90213_Mon_Skill_Blue_Wings_kuosan",
+    "Eff_Monster_90213_Mon_Skill_Blue_Wings_Sky"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 10,
+  "searchTargetRangeDown": 5
+}

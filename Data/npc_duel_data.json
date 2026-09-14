@@ -1,0 +1,6755 @@
+{
+  "1151": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 5010003,
+      "halfDistance": 7.5,
+      "loadingTitle": 2005997456,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154051,
+      "npcTitle": 1391586759,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "firstRewardId": 2010051,
+      "startDialogue": 98115101,
+      "tagList": [
+        "ark",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009380
+        ]
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98115111
+    }
+  ],
+  "1152": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 5010003,
+      "halfDistance": 7.5,
+      "loadingTitle": 1702319707,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154052,
+      "npcTitle": 1216724501,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "firstRewardId": 2010052,
+      "startDialogue": 98115201,
+      "tagList": [
+        "ark",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009381
+        ]
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98115211
+    }
+  ],
+  "1153": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 5010003,
+      "halfDistance": 7.5,
+      "loadingTitle": 1434025433,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154053,
+      "npcTitle": 1585992253,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "firstRewardId": 2010053,
+      "startDialogue": 98115301,
+      "tagList": [
+        "ark",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009382
+        ]
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Water"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98115311
+    }
+  ],
+  "1154": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "endStateDialogue": 98125411,
+      "halfDistance": 7.5,
+      "loadingTitle": 1468750184,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155254,
+      "npcPetCastSkillDialogue": [
+        [
+          14740100,
+          70009805
+        ],
+        [
+          11220600,
+          70009806
+        ],
+        [
+          12120130,
+          70009807
+        ],
+        [
+          13240100,
+          70009808
+        ],
+        [
+          11229900,
+          70009809
+        ],
+        [
+          14749900,
+          70009810
+        ]
+      ],
+      "npcTitle": 2101730905,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 65,
+      "firstRewardId": 2010057,
+      "startDialogue": 98115401,
+      "tagList": [
+        "ark",
+        "hard"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 8,
+      "sceneId": 5010003,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98115401
+    }
+  ],
+  "10050": [
+    {
+      "distanceWithMaster": 0.5,
+      "startDialogue": 98100511,
+      "sceneId": 30001,
+      "halfDistance": 5,
+      "loadingTitle": 1675076431,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010052,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "npcPetCastSkillDialogue": [
+        [
+          11840200,
+          98100534
+        ]
+      ],
+      "npcTitle": 1569969045,
+      "initState": 0,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 50,
+      "relativeAngleWithMaster": 295,
+      "startBattleDialogue": 98100512,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2005,
+      "titleId": 4,
+      "winCondition": [
+        1
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Holy",
+        "Electric"
+      ],
+      "openingType": 1,
+      "npcPetGetBuffDialogue": [
+        [
+          2118702,
+          98100535
+        ]
+      ],
+      "openingNpcPetAnimTimestamp": 3,
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_9",
+      "centerPos": 91124360,
+      "clearDialogue": 98100514
+    }
+  ],
+  "1003": [
+    {
+      "sceneId": 30001,
+      "badgeId": 201030,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "initState": 0,
+      "failConditionDialogue": 98100305,
+      "playerPetGetBuffDialogue": [
+        [
+          2135205,
+          98100331
+        ]
+      ],
+      "startBattleDialogue": 98100302,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_5",
+      "centerPos": 91116104,
+      "clearDialogue": 98100304,
+      "distanceWithMaster": 0.5,
+      "halfDistance": 5,
+      "loadingTitle": 2082608019,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010030,
+      "npcPetCastSkillDialogue": [
+        [
+          10120521,
+          98100332
+        ]
+      ],
+      "npcTitle": 1160237769,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 40,
+      "relativeAngleWithMaster": 300,
+      "startDialogue": 98100301,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2003,
+      "winCondition": [
+        1
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          98100333
+        ]
+      ],
+      "openingNpcPetAnimTimestamp": 3,
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ]
+    },
+    {
+      "sceneId": 30001,
+      "badgeId": 201030,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcPetAnimTimestamp": 3,
+      "startCondition": 5608012,
+      "failConditionDialogue": 98100305,
+      "playerPetGetBuffDialogue": [
+        [
+          2135205,
+          98100331
+        ]
+      ],
+      "startBattleDialogue": 98100312,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_6",
+      "centerPos": 91116104,
+      "clearDialogue": 98100314,
+      "distanceWithMaster": 0.5,
+      "endStateDialogue": 98100341,
+      "halfDistance": 5,
+      "loadingTitle": 1602332642,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010031,
+      "npcPetCastSkillDialogue": [
+        [
+          10120521,
+          98100332
+        ]
+      ],
+      "npcTitle": 1854903406,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 60,
+      "firstRewardId": 2009003,
+      "startDialogue": 98100311,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "hard"
+      ],
+      "helpId": 2003,
+      "unstartDialogue": 98100315,
+      "winCondition": [
+        1
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          98100333
+        ]
+      ],
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300
+    }
+  ],
+  "1004": [
+    {
+      "sceneId": 30001,
+      "badgeId": 201040,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "initState": 0,
+      "failConditionDialogue": 98100405,
+      "startBattleDialogue": 98100402,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_7",
+      "centerPos": 91124316,
+      "clearDialogue": 98100404,
+      "distanceWithMaster": 0.5,
+      "halfDistance": 5,
+      "loadingTitle": 1424140740,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010040,
+      "npcPetCastSkillDialogue": [
+        [
+          13240100,
+          98100432
+        ]
+      ],
+      "npcTitle": 2013479955,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 45,
+      "relativeAngleWithMaster": 300,
+      "startDialogue": 98100401,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2004,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          98100433
+        ]
+      ],
+      "npcPetGetBuffDialogue": [
+        [
+          213230201,
+          98100431
+        ]
+      ],
+      "openingNpcPetAnimTimestamp": 3,
+      "recommendedElements": [
+        "Wind",
+        "Fire",
+        "Dark"
+      ]
+    },
+    {
+      "sceneId": 30001,
+      "badgeId": 201040,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcPetAnimTimestamp": 3,
+      "startCondition": 6518014,
+      "failConditionDialogue": 98100405,
+      "startBattleDialogue": 98100412,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_8",
+      "centerPos": 91124316,
+      "clearDialogue": 98100414,
+      "distanceWithMaster": 0.5,
+      "endStateDialogue": 98100441,
+      "halfDistance": 5,
+      "loadingTitle": 2146454949,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010041,
+      "npcPetCastSkillDialogue": [
+        [
+          13240100,
+          98100432
+        ]
+      ],
+      "npcTitle": 1890607108,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 60,
+      "firstRewardId": 2009004,
+      "startDialogue": 98100411,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "hard"
+      ],
+      "helpId": 2004,
+      "unstartDialogue": 98100415,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          98100433
+        ]
+      ],
+      "npcPetGetBuffDialogue": [
+        [
+          213230201,
+          98100431
+        ]
+      ],
+      "recommendedElements": [
+        "Wind",
+        "Fire",
+        "Dark"
+      ],
+      "relativeAngleWithMaster": 300
+    }
+  ],
+  "1129": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1500111942,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154029,
+      "npcPetCastSkillDialogue": [
+        [
+          14830300,
+          70009678
+        ],
+        [
+          13520500,
+          70009679
+        ]
+      ],
+      "npcTitle": 1977587109,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 59,
+      "firstRewardId": 2010029,
+      "startDialogue": 98112901,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009359
+        ]
+      ],
+      "titleId": 7,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A7.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A7",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072405,
+      "clearDialogue": 98112911
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A7.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A7",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072405,
+      "clearDialogue": 98122911,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009839,
+      "halfDistance": 7.5,
+      "loadingTitle": 1621105889,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155029,
+      "npcPetCastSkillDialogue": [
+        [
+          14830300,
+          70009678
+        ],
+        [
+          13520500,
+          70009679
+        ]
+      ],
+      "npcTitle": 1728288804,
+      "openingType": 2,
+      "buffName": 1494805101,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010087,
+      "startDialogue": 98122901,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009768,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_73.png",
+      "buffDesc": 1744389023,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Electric",
+        "Ice"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1122": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1936427613,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154022,
+      "npcPetAppearDialogue": [
+        [
+          3,
+          70009664
+        ]
+      ],
+      "npcTitle": 1961795056,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 50,
+      "firstRewardId": 2010022,
+      "startDialogue": 98112201,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 6,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072397,
+      "clearDialogue": 98112211
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072397,
+      "clearDialogue": 98122211,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009832,
+      "halfDistance": 7.5,
+      "loadingTitle": 1822724191,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155022,
+      "npcTitle": 1344146664,
+      "buffIcon": "$UI_Img_Skill_Icon_BossRush_Affix_Buff_201.png",
+      "buffName": 1329496769,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010080,
+      "startDialogue": 98122201,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009761,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1194877675,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1007": [
+    {
+      "distanceWithMaster": 0.5,
+      "openingType": 1,
+      "sceneId": 5010003,
+      "halfDistance": 5,
+      "loadingTitle": 1557410660,
+      "maxClearCount": 1,
+      "badgeId": 201070,
+      "npcBotPlayerId": 1010070,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01_Unique_Lita.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "npcTitle": 2121640072,
+      "initState": 0,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 60,
+      "relativeAngleWithMaster": 300,
+      "startDialogue": 98100701,
+      "tagList": [
+        "ark",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2051,
+      "recommendedElements": {},
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          1,
+          98100732
+        ]
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          98100733
+        ]
+      ],
+      "openingNpcPetAnimTimestamp": 3,
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "battleDurationDialogue": [
+        [
+          120,
+          98100731,
+          0,
+          1
+        ]
+      ],
+      "maxDuration": 300,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98100704
+    },
+    {
+      "sceneId": 5010003,
+      "badgeId": 201070,
+      "battleDurationDialogue": [
+        [
+          120,
+          98100731,
+          0,
+          1
+        ]
+      ],
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01_Unique_Lita.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcPetAnimTimestamp": 3,
+      "startCondition": 6711008,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98100714,
+      "distanceWithMaster": 0.5,
+      "halfDistance": 5,
+      "loadingTitle": 1764547853,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010071,
+      "npcTitle": 1622015138,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 70,
+      "firstRewardId": 2009007,
+      "startDialogue": 98100711,
+      "tagList": [
+        "ark",
+        "elite",
+        "hard"
+      ],
+      "helpId": 2051,
+      "unstartDialogue": 98100715,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          1,
+          98100732
+        ]
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          98100733
+        ]
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300
+    }
+  ],
+  "1131": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1191646357,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154031,
+      "npcPetCastSkillDialogue": [
+        [
+          12220500,
+          70009685
+        ],
+        [
+          10530530,
+          70009687
+        ]
+      ],
+      "npcTitle": 1514286674,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "firstRewardId": 2010031,
+      "startDialogue": 98113101,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A5.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A5",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072411,
+      "clearDialogue": 98113111
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A5.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A5",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072411,
+      "clearDialogue": 98123111,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009841,
+      "halfDistance": 7.5,
+      "loadingTitle": 1880410994,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155031,
+      "npcPetCastSkillDialogue": [
+        [
+          12220500,
+          70009686
+        ],
+        [
+          10530530,
+          70009688
+        ]
+      ],
+      "npcTitle": 1678813473,
+      "buffIcon": "$UI_Icon_BossRush_Affix_405.png",
+      "buffName": 1644847732,
+      "recommendedLevel": 50,
+      "firstRewardId": 2010089,
+      "startDialogue": 98123101,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 6,
+      "unstartDialogue": 70009770,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1917712072,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1146": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1670327478,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154046,
+      "npcTitle": 1490554950,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 28,
+      "firstRewardId": 2010046,
+      "startDialogue": 98114601,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009377
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -3,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072428,
+      "clearDialogue": 98114611
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -3,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A8.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A8",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308853,
+      "clearDialogue": 98124611,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009856,
+      "halfDistance": 7.5,
+      "loadingTitle": 2012610351,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155046,
+      "npcPetCastSkillDialogue": [
+        [
+          13520600,
+          70009738
+        ],
+        [
+          13520300,
+          70009739
+        ]
+      ],
+      "npcTitle": 1456120189,
+      "buffIcon": "$ui_img_skill_icon_buff_61.png",
+      "buffName": 1698546911,
+      "recommendedLevel": 43,
+      "firstRewardId": 2010102,
+      "startDialogue": 98124601,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009782,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1729210576,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1132": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1514796554,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154032,
+      "npcPetCastSkillDialogue": [
+        [
+          12120130,
+          70009689
+        ],
+        [
+          13240100,
+          70009690
+        ]
+      ],
+      "npcTitle": 1845168504,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 58,
+      "firstRewardId": 2010032,
+      "startDialogue": 98113201,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "titleId": 7,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009362
+        ]
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009363
+        ]
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A7.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A7",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072412,
+      "clearDialogue": 98113211
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A7.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A7",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072412,
+      "clearDialogue": 98123211,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009842,
+      "halfDistance": 7.5,
+      "loadingTitle": 1231050403,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155032,
+      "npcPetCastSkillDialogue": [
+        [
+          12120130,
+          70009689
+        ],
+        [
+          13240100,
+          70009690
+        ]
+      ],
+      "npcTitle": 1751376328,
+      "buffIcon": "$UI_Skillicon_Common_Cure.png",
+      "buffName": 1364878357,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010090,
+      "startDialogue": 98123201,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009771,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 2143583802,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1119": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1958850602,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154019,
+      "npcPetAppearDialogue": [
+        [
+          2,
+          70009659
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          12630200,
+          70009658
+        ]
+      ],
+      "npcTitle": 2000187888,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010019,
+      "startDialogue": 98111901,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          2,
+          70009350
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072400,
+      "clearDialogue": 98111911
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072394,
+      "clearDialogue": 98121911,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009829,
+      "halfDistance": 7.5,
+      "loadingTitle": 1895507814,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155019,
+      "npcPetAppearDialogue": [
+        [
+          2,
+          70009659
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          12630200,
+          70009658
+        ]
+      ],
+      "npcTitle": 1907382521,
+      "openingType": 2,
+      "buffName": 1430428768,
+      "recommendedLevel": 45,
+      "firstRewardId": 2010077,
+      "startDialogue": 98121901,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009758,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_1026301.png",
+      "buffDesc": 2072293288,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Water",
+        "Wind",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "titleId": 5
+    }
+  ],
+  "1121": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1457517120,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154021,
+      "npcPetCastSkillDialogue": [
+        [
+          10320600,
+          70009661
+        ],
+        [
+          12120130,
+          70009662
+        ],
+        [
+          15030100,
+          70009663
+        ]
+      ],
+      "npcTitle": 1600913485,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 39,
+      "firstRewardId": 2010021,
+      "startDialogue": 98112101,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009352
+        ]
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A13.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A13",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072396,
+      "clearDialogue": 98112111
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A13.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A13",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072396,
+      "clearDialogue": 98122111,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009831,
+      "halfDistance": 7.5,
+      "loadingTitle": 1583244871,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155021,
+      "npcPetCastSkillDialogue": [
+        [
+          10320600,
+          70009661
+        ],
+        [
+          12120130,
+          70009662
+        ],
+        [
+          15030100,
+          70009663
+        ]
+      ],
+      "npcTitle": 1427793474,
+      "buffIcon": "$ui_img_skill_icon_buff_63.png",
+      "buffName": 1645113335,
+      "recommendedLevel": 54,
+      "firstRewardId": 2010079,
+      "startDialogue": 98122101,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 6,
+      "unstartDialogue": 70009760,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1486702631,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1134": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "endStateDialogue": 70009844,
+      "halfDistance": 5,
+      "loadingTitle": 1689794500,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154034,
+      "npcPetCastSkillDialogue": [
+        [
+          10430100,
+          70009704
+        ],
+        [
+          12320210,
+          70009705
+        ],
+        [
+          14750300,
+          70009706
+        ]
+      ],
+      "npcTitle": 2083860573,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 58,
+      "firstRewardId": 2010034,
+      "startDialogue": 98113401,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "titleId": 7,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009366
+        ]
+      ],
+      "sceneId": 30001,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A7.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072413,
+      "clearDialogue": 98113411
+    }
+  ],
+  "1002": [
+    {
+      "sceneId": 30001,
+      "badgeId": 201020,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "initState": 0,
+      "failConditionDialogue": 98100205,
+      "playerPetGetBuffDialogue": [
+        [
+          10003,
+          98100233
+        ]
+      ],
+      "startBattleDialogue": 98100202,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_3",
+      "centerPos": 91116095,
+      "clearDialogue": 98100204,
+      "distanceWithMaster": 0.5,
+      "halfDistance": 5,
+      "loadingTitle": 2066677526,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010020,
+      "npcPetAppearDialogue": [
+        [
+          2,
+          98100231
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          12330400,
+          98100232
+        ]
+      ],
+      "npcTitle": 1109484754,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "relativeAngleWithMaster": 285,
+      "startDialogue": 98100201,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2002,
+      "winCondition": [
+        1
+      ],
+      "openingNpcPetAnimTimestamp": 3,
+      "recommendedElements": [
+        "Water",
+        "Holy"
+      ]
+    },
+    {
+      "sceneId": 30001,
+      "badgeId": 201020,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcPetAnimTimestamp": 3,
+      "startCondition": 6517014,
+      "failConditionDialogue": 98100205,
+      "playerPetGetBuffDialogue": [
+        [
+          10003,
+          98100233
+        ]
+      ],
+      "startBattleDialogue": 98100212,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_4",
+      "centerPos": 91116095,
+      "clearDialogue": 98100214,
+      "distanceWithMaster": 0.5,
+      "endStateDialogue": 98100241,
+      "halfDistance": 5,
+      "loadingTitle": 1624258694,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010021,
+      "npcPetAppearDialogue": [
+        [
+          2,
+          98100231
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          12330400,
+          98100232
+        ]
+      ],
+      "npcTitle": 1989431805,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 55,
+      "firstRewardId": 2009002,
+      "startDialogue": 98100211,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "hard"
+      ],
+      "helpId": 2002,
+      "unstartDialogue": 98100215,
+      "winCondition": [
+        1
+      ],
+      "recommendedElements": [
+        "Water",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 285
+    }
+  ],
+  "1135": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "endStateDialogue": 70009845,
+      "halfDistance": 7.5,
+      "loadingTitle": 1751174855,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154035,
+      "npcPetCastSkillDialogue": [
+        [
+          10260230,
+          70009707
+        ],
+        [
+          10430230,
+          70009708
+        ],
+        [
+          14750210,
+          70009709
+        ],
+        [
+          14540201,
+          70009710
+        ]
+      ],
+      "npcTitle": 2060702063,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 42,
+      "firstRewardId": 2010035,
+      "startDialogue": 98113501,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "titleId": 4,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009367
+        ]
+      ],
+      "sceneId": 30001,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Fire"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A13.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A13",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072415,
+      "clearDialogue": 98113511
+    }
+  ],
+  "1118": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1625479984,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154018,
+      "recommendedElements": {},
+      "titleId": 6,
+      "npcTitle": 1550284403,
+      "initState": 1,
+      "buffName": 1687565318,
+      "recommendedLevel": 52,
+      "firstRewardId": 2010018,
+      "startDialogue": 98111801,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "relativeAngleWithMaster": 300,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009349
+        ]
+      ],
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "openingType": 2,
+      "buffIcon": "$UI_Img_Weather_Windstorm.png",
+      "buffDesc": 1171852765,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072393,
+      "clearDialogue": 98111811
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072393,
+      "clearDialogue": 98121811,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009828,
+      "halfDistance": 7.5,
+      "loadingTitle": 1668028385,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155018,
+      "npcTitle": 2102463714,
+      "buffIcon": "$UI_Img_Weather_Windstorm.png",
+      "buffName": 1311563634,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010076,
+      "startDialogue": 98121801,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009757,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 2039894895,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1136": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "endStateDialogue": 70009846,
+      "halfDistance": 7.5,
+      "loadingTitle": 2056156093,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154036,
+      "sceneId": 30001,
+      "npcPetCastSkillDialogue": [
+        [
+          13230110,
+          70009711
+        ],
+        [
+          10530220,
+          70009712
+        ],
+        [
+          11940110,
+          70009713
+        ],
+        [
+          11430210,
+          70009714
+        ]
+      ],
+      "npcTitle": 1810344344,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 33,
+      "firstRewardId": 2010036,
+      "startDialogue": 98113601,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "titleId": 2,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009367
+        ]
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009368
+        ]
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Ice",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -3,
+      "airWallRadius": 18,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A10.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A10",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072416,
+      "clearDialogue": 98113611
+    }
+  ],
+  "1143": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 2010787128,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154043,
+      "npcTitle": 1171624009,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 38,
+      "firstRewardId": 2010043,
+      "startDialogue": 98114301,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009374
+        ]
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Grass",
+        "Electric",
+        "Ice"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A10.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A10",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072425,
+      "clearDialogue": 98114311
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A10.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A10",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072425,
+      "clearDialogue": 98124311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009853,
+      "halfDistance": 7.5,
+      "loadingTitle": 1635972601,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155043,
+      "npcPetAppearDialogue": [
+        [
+          1,
+          70009733
+        ],
+        [
+          2,
+          70009732
+        ]
+      ],
+      "npcTitle": 1846749877,
+      "openingType": 2,
+      "buffName": 1578827707,
+      "recommendedLevel": 53,
+      "firstRewardId": 2010099,
+      "startDialogue": 98124301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 6,
+      "unstartDialogue": 70009779,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_1005501.png",
+      "buffDesc": 1387452177,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Electric",
+        "Ice"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1137": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "endStateDialogue": 70009847,
+      "halfDistance": 7.5,
+      "loadingTitle": 1759395783,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154037,
+      "npcTitle": 1360290776,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "firstRewardId": 2010037,
+      "startDialogue": 98113701,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 3,
+      "sceneId": 30001,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A5.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A5",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072417,
+      "clearDialogue": 98113711
+    }
+  ],
+  "1142": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1347742898,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154042,
+      "npcPetCastSkillDialogue": [
+        [
+          10550100,
+          70009730
+        ],
+        [
+          10559900,
+          70009731
+        ]
+      ],
+      "npcTitle": 1141340003,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 33,
+      "firstRewardId": 2010042,
+      "startDialogue": 98114201,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          2,
+          70009373
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Water"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072424,
+      "clearDialogue": 98114211
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072424,
+      "clearDialogue": 98124211,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009852,
+      "halfDistance": 7.5,
+      "loadingTitle": 1925467401,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155042,
+      "npcPetCastSkillDialogue": [
+        [
+          10550100,
+          70009730
+        ],
+        [
+          10559900,
+          70009731
+        ]
+      ],
+      "npcTitle": 1324961589,
+      "openingType": 2,
+      "buffName": 1435980807,
+      "recommendedLevel": 48,
+      "firstRewardId": 2010098,
+      "startDialogue": 98124201,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009778,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_1005501.png",
+      "buffDesc": 1937460823,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1138": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "endStateDialogue": 70009848,
+      "halfDistance": 7.5,
+      "loadingTitle": 1948783974,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154038,
+      "npcPetCastSkillDialogue": [
+        [
+          11330140,
+          70009718
+        ],
+        [
+          11730420,
+          70009719
+        ],
+        [
+          12320310,
+          70009720
+        ]
+      ],
+      "npcTitle": 1244416644,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010038,
+      "startDialogue": 98113801,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009369
+        ]
+      ],
+      "titleId": 2,
+      "sceneId": 30001,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072418,
+      "clearDialogue": 98113811
+    }
+  ],
+  "1117": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1967051472,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154017,
+      "npcPetCastSkillDialogue": [
+        [
+          10450320,
+          70009654
+        ],
+        [
+          12320210,
+          70009655
+        ]
+      ],
+      "npcTitle": 1192737219,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 34,
+      "firstRewardId": 2010017,
+      "startDialogue": 98111701,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009348
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072392,
+      "clearDialogue": 98111711
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072392,
+      "clearDialogue": 98121711,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009827,
+      "halfDistance": 7.5,
+      "loadingTitle": 1965452419,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155017,
+      "npcPetCastSkillDialogue": [
+        [
+          10450410,
+          70009654
+        ],
+        [
+          12320210,
+          70009655
+        ],
+        [
+          12930200,
+          70009656
+        ],
+        [
+          11430400,
+          70009657
+        ]
+      ],
+      "npcTitle": 1165686931,
+      "buffIcon": "$ui_img_skill_icon_buff_08.png",
+      "buffName": 2034415915,
+      "recommendedLevel": 49,
+      "firstRewardId": 2010075,
+      "startDialogue": 98121701,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009756,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1141651883,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1139": [
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072419,
+      "clearDialogue": 98113911,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "halfDistance": 7.5,
+      "loadingTitle": 1192462855,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154039,
+      "npcPetCastSkillDialogue": [
+        [
+          12830200,
+          70009721
+        ],
+        [
+          11870510,
+          70009722
+        ],
+        [
+          12070410,
+          70009723
+        ]
+      ],
+      "npcTitle": 1780107284,
+      "openingType": 2,
+      "buffName": 1855983881,
+      "recommendedLevel": 55,
+      "firstRewardId": 2010039,
+      "startDialogue": 98113901,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "titleId": 7,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009370
+        ]
+      ],
+      "buffDesc": 1226507090,
+      "buffIcon": "$UI_Img_Weather_Windstorm.png",
+      "playerForwardDir": [
+        0,
+        370,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072419,
+      "clearDialogue": 98123911,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009849,
+      "halfDistance": 7.5,
+      "loadingTitle": 1270515333,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155039,
+      "npcPetCastSkillDialogue": [
+        [
+          12830200,
+          70009721
+        ],
+        [
+          11870510,
+          70009722
+        ],
+        [
+          12070410,
+          70009723
+        ]
+      ],
+      "npcTitle": 1830476782,
+      "buffIcon": "$UI_Img_Weather_Windstorm.png",
+      "buffName": 1888003563,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010095,
+      "startDialogue": 98123901,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009775,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1919435956,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        370,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1140": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1357509426,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154040,
+      "npcPetCastSkillDialogue": [
+        [
+          10320300,
+          70009724
+        ],
+        [
+          13230210,
+          70009725
+        ],
+        [
+          12930301,
+          70009726
+        ]
+      ],
+      "npcTitle": 2037541113,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 43,
+      "firstRewardId": 2010040,
+      "startDialogue": 98114001,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009371
+        ]
+      ],
+      "titleId": 4,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072420,
+      "clearDialogue": 98114011
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072420,
+      "clearDialogue": 98124011,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009850,
+      "halfDistance": 7.5,
+      "loadingTitle": 1641865114,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155040,
+      "npcPetCastSkillDialogue": [
+        [
+          10320300,
+          70009724
+        ],
+        [
+          13230210,
+          70009725
+        ],
+        [
+          12930301,
+          70009726
+        ],
+        [
+          15030500,
+          70009727
+        ]
+      ],
+      "npcTitle": 1313920009,
+      "buffIcon": "$ui_img_skill_icon_buff_08.png",
+      "buffName": 1820746644,
+      "recommendedLevel": 58,
+      "firstRewardId": 2010096,
+      "startDialogue": 98124001,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 7,
+      "unstartDialogue": 70009776,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1808629150,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1120": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 2026140563,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154020,
+      "npcPetCastSkillDialogue": [
+        [
+          12320220,
+          70009385
+        ],
+        [
+          12320220,
+          70009660
+        ]
+      ],
+      "npcTitle": 1249909186,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 28,
+      "firstRewardId": 2010020,
+      "startDialogue": 98112001,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 2,
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009351
+        ]
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072395,
+      "clearDialogue": 98112011
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072395,
+      "clearDialogue": 98122011,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009830,
+      "halfDistance": 7.5,
+      "loadingTitle": 1723919171,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155020,
+      "npcPetCastSkillDialogue": [
+        [
+          12320220,
+          70009660
+        ]
+      ],
+      "npcTitle": 2024823736,
+      "buffIcon": "$UI_Skillicon_Common_Cure.png",
+      "buffName": 1252116537,
+      "recommendedLevel": 43,
+      "firstRewardId": 2010078,
+      "startDialogue": 98122001,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009759,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1868664355,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Electric",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1116": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1933907332,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154016,
+      "npcPetCastSkillDialogue": [
+        [
+          10230200,
+          70009392
+        ],
+        [
+          10239900,
+          70009393
+        ],
+        [
+          13230201,
+          70009394
+        ]
+      ],
+      "npcTitle": 1617514627,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 44,
+      "firstRewardId": 2010016,
+      "startDialogue": 98111601,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009347
+        ]
+      ],
+      "titleId": 4,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Fire",
+        "Electric",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallRadius": 18,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A8.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A8",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072391,
+      "clearDialogue": 98111611
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 18,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A8.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A8",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072391,
+      "clearDialogue": 98121611,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009826,
+      "halfDistance": 7.5,
+      "loadingTitle": 1856142743,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155016,
+      "npcPetCastSkillDialogue": [
+        [
+          10230200,
+          70009392
+        ],
+        [
+          10239900,
+          70009393
+        ],
+        [
+          13230201,
+          70009394
+        ]
+      ],
+      "npcTitle": 1528214681,
+      "openingType": 2,
+      "buffName": 1415377372,
+      "recommendedLevel": 59,
+      "firstRewardId": 2010074,
+      "startDialogue": 98121601,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 7,
+      "unstartDialogue": 70009755,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_68.png",
+      "buffDesc": 1475874333,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Electric",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1128": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1250809472,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154028,
+      "npcPetCastSkillDialogue": [
+        [
+          12070410,
+          70009677
+        ]
+      ],
+      "npcTitle": 1096060430,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 54,
+      "firstRewardId": 2010028,
+      "startDialogue": 98112801,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009358
+        ]
+      ],
+      "titleId": 6,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -3,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072404,
+      "clearDialogue": 98112811
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -3,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072404,
+      "clearDialogue": 98122811,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009838,
+      "halfDistance": 7.5,
+      "loadingTitle": 1100088604,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155028,
+      "npcPetCastSkillDialogue": [
+        [
+          12070410,
+          70009677
+        ]
+      ],
+      "npcTitle": 1296714957,
+      "buffIcon": "$UI_Skillicon_Common_Cure.png",
+      "buffName": 1344924025,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010086,
+      "startDialogue": 98122801,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009767,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1149955558,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1113": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 5,
+      "loadingTitle": 2080137096,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154013,
+      "npcPetCastSkillDialogue": [
+        [
+          11850700,
+          70009647
+        ],
+        [
+          11850510,
+          70009648
+        ],
+        [
+          11850330,
+          70009649
+        ]
+      ],
+      "npcTitle": 1642033766,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 43,
+      "firstRewardId": 2010013,
+      "startDialogue": 98111301,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009331
+        ]
+      ],
+      "titleId": 4,
+      "npcPetGetBuffDialogue": [
+        [
+          214711001,
+          70009342
+        ]
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallRadius": 7,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A8.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A8",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072388,
+      "clearDialogue": 98111311
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 7,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A8.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A8",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072388,
+      "clearDialogue": 98121311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009823,
+      "halfDistance": 5,
+      "loadingTitle": 1684644495,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155013,
+      "npcPetAppearDialogue": [
+        [
+          3,
+          70009649
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          11850700,
+          70009647
+        ],
+        [
+          11850510,
+          70009648
+        ]
+      ],
+      "npcTitle": 2095618435,
+      "openingType": 2,
+      "buffName": 1551038851,
+      "recommendedLevel": 58,
+      "firstRewardId": 2010071,
+      "startDialogue": 98121301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009752,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_1005501.png",
+      "buffDesc": 1789203631,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "titleId": 7
+    }
+  ],
+  "1126": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1136998379,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154026,
+      "npcPetCastSkillDialogue": [
+        [
+          11940530,
+          70009673
+        ]
+      ],
+      "npcTitle": 1604794733,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010026,
+      "startDialogue": 98112601,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009356
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Grass"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072402,
+      "clearDialogue": 98112611
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072402,
+      "clearDialogue": 98122611,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009836,
+      "halfDistance": 7.5,
+      "loadingTitle": 1440023854,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155026,
+      "npcPetCastSkillDialogue": [
+        [
+          11940530,
+          70009673
+        ]
+      ],
+      "npcTitle": 1547810374,
+      "openingType": 2,
+      "buffName": 2122176155,
+      "recommendedLevel": 45,
+      "firstRewardId": 2010084,
+      "startDialogue": 98122601,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009765,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$UI_Skillicon_Common_Cure.png",
+      "buffDesc": 1832960607,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1001": [
+    {
+      "distanceWithMaster": 0.5,
+      "recommendedLevel": 25,
+      "sceneId": 30001,
+      "halfDistance": 5,
+      "loadingTitle": 1654840752,
+      "maxClearCount": 1,
+      "badgeId": 201010,
+      "npcBotPlayerId": 1010010,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "npcPetCastSkillDialogue": [
+        [
+          10120521,
+          98100131
+        ],
+        [
+          12120130,
+          98100132
+        ]
+      ],
+      "npcTitle": 2029171288,
+      "initState": 0,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "failConditionDialogue": 98100105,
+      "relativeAngleWithMaster": 300,
+      "startBattleDialogue": 98100102,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2001,
+      "startDialogue": 98100101,
+      "winCondition": [
+        1
+      ],
+      "recommendedElements": [
+        "Electric",
+        "Fire",
+        "Holy"
+      ],
+      "openingType": 1,
+      "npcPetGetBuffDialogue": [
+        [
+          912120104,
+          98100133
+        ]
+      ],
+      "openingNpcPetAnimTimestamp": 3,
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91116079,
+      "maxDuration": 300
+    },
+    {
+      "sceneId": 30001,
+      "badgeId": 201010,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcPetAnimTimestamp": 3,
+      "startCondition": 2607012,
+      "failConditionDialogue": 98100105,
+      "startBattleDialogue": 98100112,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_2",
+      "centerPos": 91116079,
+      "clearDialogue": 98100114,
+      "distanceWithMaster": 0.5,
+      "endStateDialogue": 98100141,
+      "halfDistance": 5,
+      "loadingTitle": 1914421775,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010011,
+      "npcPetCastSkillDialogue": [
+        [
+          10120521,
+          98100131
+        ],
+        [
+          12120130,
+          98100132
+        ]
+      ],
+      "npcTitle": 1571192532,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 50,
+      "firstRewardId": 2009001,
+      "startDialogue": 98100111,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "hard"
+      ],
+      "helpId": 2001,
+      "unstartDialogue": 98100115,
+      "winCondition": [
+        1
+      ],
+      "npcPetGetBuffDialogue": [
+        [
+          912120104,
+          98100133
+        ]
+      ],
+      "recommendedElements": [
+        "Electric",
+        "Fire",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300
+    }
+  ],
+  "1106": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1891364641,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154006,
+      "npcPetCastSkillDialogue": [
+        [
+          10110300,
+          70009626
+        ],
+        [
+          10110210,
+          70009627
+        ]
+      ],
+      "npcTitle": 1928632265,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 23,
+      "firstRewardId": 2010006,
+      "startDialogue": 98110601,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 2,
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009338
+        ]
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 16,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A12.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A12",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072380,
+      "clearDialogue": 98110611
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 16,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A12.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A12",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072380,
+      "clearDialogue": 98120611,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009816,
+      "halfDistance": 7.5,
+      "loadingTitle": 1493710979,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155006,
+      "npcPetCastSkillDialogue": [
+        [
+          10120400,
+          70009628
+        ],
+        [
+          10120520,
+          70009629
+        ],
+        [
+          10270400,
+          70009630
+        ],
+        [
+          13520600,
+          70009631
+        ]
+      ],
+      "npcTitle": 1448867413,
+      "buffIcon": "$ui_img_skill_icon_buff_06.png",
+      "buffName": 1514054423,
+      "recommendedLevel": 40,
+      "firstRewardId": 2010064,
+      "startDialogue": 98120601,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009745,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1715681808,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1107": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1723515166,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154007,
+      "npcPetAppearDialogue": [
+        [
+          1,
+          70009632
+        ],
+        [
+          2,
+          70009633
+        ],
+        [
+          3,
+          70009634
+        ]
+      ],
+      "npcTitle": 1864142074,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 40,
+      "firstRewardId": 2010007,
+      "startDialogue": 98110701,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009339
+        ]
+      ],
+      "titleId": 4,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Fire",
+        "Rock"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 9,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A13.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A13",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072381,
+      "clearDialogue": 98110711
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 9,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A13.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A13",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072381,
+      "clearDialogue": 98120711,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009817,
+      "halfDistance": 7.5,
+      "loadingTitle": 1718116912,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155007,
+      "npcPetAppearDialogue": [
+        [
+          2,
+          70009635
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          11630220,
+          70009636
+        ],
+        [
+          10430100,
+          70009637
+        ]
+      ],
+      "npcTitle": 1610700866,
+      "buffIcon": "$ui_img_skill_icon_buff_1046302.png",
+      "buffName": 1199069818,
+      "recommendedLevel": 55,
+      "firstRewardId": 2010065,
+      "startDialogue": 98120701,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009746,
+      "winCondition": [
+        1
+      ],
+      "titleId": 7,
+      "buffDesc": 1531055000,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Rock"
+      ],
+      "relativeAngleWithMaster": 300
+    }
+  ],
+  "1108": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1599273606,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154008,
+      "npcPetCastSkillDialogue": [
+        [
+          14530300,
+          70009638
+        ],
+        [
+          12850200,
+          70009639
+        ],
+        [
+          14330300,
+          70009640
+        ]
+      ],
+      "npcTitle": 1472646045,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 41,
+      "firstRewardId": 2010008,
+      "startDialogue": 98110801,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009340
+        ]
+      ],
+      "titleId": 4,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Grass",
+        "Water"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072382,
+      "clearDialogue": 98110811
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072382,
+      "clearDialogue": 98120811,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009818,
+      "halfDistance": 7.5,
+      "loadingTitle": 1117244122,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155008,
+      "npcPetCastSkillDialogue": [
+        [
+          14530300,
+          70009638
+        ],
+        [
+          12850200,
+          70009639
+        ],
+        [
+          14330300,
+          70009640
+        ]
+      ],
+      "npcTitle": 2005891223,
+      "openingType": 2,
+      "buffName": 1194717109,
+      "recommendedLevel": 54,
+      "firstRewardId": 2010066,
+      "startDialogue": 98120801,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 6,
+      "unstartDialogue": 70009747,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$UI_Icon_BossRush_Affix_405.png",
+      "buffDesc": 2124969990,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Water"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1109": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1726339642,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154009,
+      "npcTitle": 1844079442,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010009,
+      "startDialogue": 98110901,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 2,
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009341
+        ]
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Electric",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072383,
+      "clearDialogue": 98110911
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072383,
+      "clearDialogue": 98120911,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009819,
+      "halfDistance": 7.5,
+      "loadingTitle": 1327689321,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155009,
+      "npcPetCastSkillDialogue": [
+        [
+          11870510,
+          70009641
+        ],
+        [
+          12620300,
+          70009642
+        ],
+        [
+          11740600,
+          70009643
+        ]
+      ],
+      "npcTitle": 1257014280,
+      "buffIcon": "$ui_img_skill_icon_buff_physics.png",
+      "buffName": 1402420808,
+      "recommendedLevel": 45,
+      "firstRewardId": 2010067,
+      "startDialogue": 98120901,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009748,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1549281033,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1110": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1558820364,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154010,
+      "npcTitle": 1955453422,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 34,
+      "firstRewardId": 2010010,
+      "startDialogue": 98111001,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009343
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Water",
+        "Rock"
+      ],
+      "openingType": 2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072384,
+      "clearDialogue": 98111011
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072384,
+      "clearDialogue": 98121011,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009820,
+      "halfDistance": 7.5,
+      "loadingTitle": 1715967830,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155010,
+      "npcPetCastSkillDialogue": [
+        [
+          10250500,
+          70009644
+        ],
+        [
+          12830100,
+          70009645
+        ],
+        [
+          13330300,
+          70009646
+        ]
+      ],
+      "npcTitle": 1329522317,
+      "openingType": 2,
+      "buffName": 1218177886,
+      "recommendedLevel": 49,
+      "firstRewardId": 2010068,
+      "startDialogue": 98121001,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009749,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_Fire.png",
+      "buffDesc": 1493865498,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Water"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1101": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 2003573192,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154001,
+      "npcPetCastSkillDialogue": [
+        [
+          12010110,
+          70009600
+        ],
+        [
+          13210100,
+          70009601
+        ]
+      ],
+      "npcTitle": 1886751260,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010001,
+      "startDialogue": 98110101,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009333
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072385,
+      "clearDialogue": 98110111
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A1.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A1",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072385,
+      "clearDialogue": 98120111,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009811,
+      "halfDistance": 7.5,
+      "loadingTitle": 1957522857,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155001,
+      "npcPetCastSkillDialogue": [
+        [
+          12030330,
+          70009602
+        ],
+        [
+          12120130,
+          70009603
+        ],
+        [
+          10450320,
+          70009606
+        ]
+      ],
+      "npcTitle": 2103807188,
+      "buffIcon": "$UI_Icon_BossRush_Affix_405.png",
+      "buffName": 1896845468,
+      "recommendedLevel": 45,
+      "firstRewardId": 2010058,
+      "startDialogue": 98120101,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009740,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1096230291,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Wind"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1114": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 2005434286,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154014,
+      "npcPetCastSkillDialogue": [
+        [
+          11870510,
+          70009345
+        ],
+        [
+          12620300,
+          70009650
+        ],
+        [
+          11740600,
+          70009651
+        ]
+      ],
+      "npcTitle": 1505691560,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 40,
+      "firstRewardId": 2010014,
+      "startDialogue": 98111401,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 4,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Electric"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A10.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A10",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072389,
+      "clearDialogue": 98111411
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A10.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A10",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072389,
+      "clearDialogue": 98121411,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009824,
+      "halfDistance": 7.5,
+      "loadingTitle": 2048784779,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155014,
+      "npcPetCastSkillDialogue": [
+        [
+          11870510,
+          70009345
+        ],
+        [
+          12620300,
+          70009650
+        ],
+        [
+          11740600,
+          70009651
+        ]
+      ],
+      "npcTitle": 1651921354,
+      "openingType": 2,
+      "buffName": 2074937191,
+      "recommendedLevel": 53,
+      "firstRewardId": 2010072,
+      "startDialogue": 98121401,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 6,
+      "unstartDialogue": 70009753,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_physics.png",
+      "buffDesc": 1977326479,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1115": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1522171781,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154015,
+      "npcPetCastSkillDialogue": [
+        [
+          10279900,
+          70009388
+        ],
+        [
+          14549900,
+          70009389
+        ],
+        [
+          14540200,
+          70009652
+        ],
+        [
+          10270400,
+          70009653
+        ]
+      ],
+      "npcTitle": 1833435928,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 40,
+      "firstRewardId": 2010015,
+      "startDialogue": 98111501,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "titleId": 4,
+      "winCondition": [
+        1
+      ],
+      "relativeAngleWithMaster": 300,
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009346
+        ]
+      ],
+      "npcPetGetBuffDialogue": [
+        [
+          214711001,
+          70009387
+        ]
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Water",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072390,
+      "clearDialogue": 98111511
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072390,
+      "clearDialogue": 98121511,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009825,
+      "halfDistance": 7.5,
+      "loadingTitle": 1738285283,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155015,
+      "npcPetCastSkillDialogue": [
+        [
+          14540200,
+          70009652
+        ],
+        [
+          10270400,
+          70009653
+        ]
+      ],
+      "npcTitle": 1347131429,
+      "buffIcon": "$ui_img_skill_icon_buff_06.png",
+      "buffName": 2096878871,
+      "recommendedLevel": 53,
+      "firstRewardId": 2010073,
+      "startDialogue": 98121501,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 6,
+      "unstartDialogue": 70009754,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1131122753,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Water",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1102": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1127853461,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154002,
+      "npcPetCastSkillDialogue": [
+        [
+          11910100,
+          70009607
+        ],
+        [
+          11910300,
+          70009608
+        ],
+        [
+          10420210,
+          70009609
+        ]
+      ],
+      "npcTitle": 2035427280,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 27,
+      "firstRewardId": 2010002,
+      "startDialogue": 98110201,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009334
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Grass",
+        "Electric",
+        "Ice"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91071563,
+      "clearDialogue": 98110211
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91071563,
+      "clearDialogue": 98120211,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009812,
+      "halfDistance": 7.5,
+      "loadingTitle": 2118903293,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155002,
+      "npcPetCastSkillDialogue": [
+        [
+          14830300,
+          70009610
+        ],
+        [
+          11730610,
+          70009611
+        ],
+        [
+          11940530,
+          70009612
+        ]
+      ],
+      "npcTitle": 1200329809,
+      "openingType": 2,
+      "buffName": 2132289007,
+      "recommendedLevel": 42,
+      "firstRewardId": 2010059,
+      "startDialogue": 98120201,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009741,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_31.png",
+      "buffDesc": 1684369947,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Ice"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1103": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1878369505,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154003,
+      "npcPetAppearDialogue": [
+        [
+          1,
+          70009613
+        ],
+        [
+          3,
+          70009613
+        ],
+        [
+          4,
+          70009613
+        ]
+      ],
+      "npcTitle": 1637314389,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 25,
+      "firstRewardId": 2010003,
+      "startDialogue": 98110301,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009335
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Water",
+        "Rock"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A12.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A12",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072375,
+      "clearDialogue": 98110311
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A12.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A12",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308770,
+      "clearDialogue": 98120311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "halfDistance": 7.5,
+      "loadingTitle": 2093687377,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155003,
+      "npcPetAppearDialogue": [
+        [
+          1,
+          70009613
+        ],
+        [
+          2,
+          70009613
+        ],
+        [
+          3,
+          70009613
+        ],
+        [
+          4,
+          70009613
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          10530530,
+          70009614
+        ],
+        [
+          12820200,
+          70009615
+        ],
+        [
+          10530210,
+          70009616
+        ]
+      ],
+      "npcTitle": 1689207542,
+      "openingType": 2,
+      "buffName": 1139567935,
+      "recommendedLevel": 40,
+      "firstRewardId": 2010060,
+      "startDialogue": 98120301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009742,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1239401517,
+      "buffIcon": "$ui_img_skill_icon_buff_06.png",
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Water"
+      ],
+      "relativeAngleWithMaster": 300,
+      "titleId": 4
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A12.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A12",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308778,
+      "clearDialogue": 98130311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009813,
+      "halfDistance": 7.5,
+      "loadingTitle": 1481436369,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155103,
+      "npcPetAppearDialogue": [
+        [
+          1,
+          70009613
+        ],
+        [
+          2,
+          70009613
+        ],
+        [
+          3,
+          70009613
+        ],
+        [
+          4,
+          70009613
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          10530530,
+          70009614
+        ],
+        [
+          10530210,
+          70009616
+        ],
+        [
+          12830200,
+          70009617
+        ]
+      ],
+      "npcTitle": 1988682047,
+      "buffIcon": "$ui_img_skill_icon_buff_06.png",
+      "buffName": 1139600670,
+      "recommendedLevel": 55,
+      "firstRewardId": 2010061,
+      "startDialogue": 98130301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009742,
+      "winCondition": [
+        1
+      ],
+      "titleId": 7,
+      "buffDesc": 1429842377,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Water"
+      ],
+      "relativeAngleWithMaster": 300
+    }
+  ],
+  "1104": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1147171170,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154004,
+      "npcPetCastSkillDialogue": [
+        [
+          11810200,
+          70009618
+        ],
+        [
+          12610100,
+          70009619
+        ]
+      ],
+      "npcTitle": 1990688570,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 25,
+      "firstRewardId": 2010004,
+      "startDialogue": 98110401,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009336
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Electric",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072377,
+      "clearDialogue": 98110411
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072377,
+      "clearDialogue": 98120411,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009814,
+      "halfDistance": 7.5,
+      "loadingTitle": 1350921370,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155004,
+      "npcPetCastSkillDialogue": [
+        [
+          11870000,
+          70009620
+        ],
+        [
+          11870430,
+          70009621
+        ],
+        [
+          11840200,
+          70009622
+        ],
+        [
+          11850700,
+          70009623
+        ]
+      ],
+      "npcTitle": 1723432825,
+      "openingType": 2,
+      "buffName": 1829619578,
+      "recommendedLevel": 40,
+      "firstRewardId": 2010062,
+      "startDialogue": 98120401,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009743,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_06.png",
+      "buffDesc": 1614225402,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Electric",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1105": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1832305170,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154005,
+      "npcPetCastSkillDialogue": [
+        [
+          12220500,
+          70009624
+        ],
+        [
+          12930200,
+          70009625
+        ]
+      ],
+      "npcTitle": 1629402922,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010005,
+      "startDialogue": 98110501,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009337
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Ice",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A5.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A5",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072379,
+      "clearDialogue": 98110511
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A5.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A5",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072379,
+      "clearDialogue": 98120511,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009815,
+      "halfDistance": 7.5,
+      "loadingTitle": 1859576042,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155005,
+      "npcPetCastSkillDialogue": [
+        [
+          12220500,
+          70009624
+        ],
+        [
+          12930200,
+          70009625
+        ]
+      ],
+      "npcTitle": 1357066658,
+      "buffIcon": "$ui_img_skill_icon_buff_08.png",
+      "buffName": 1494803293,
+      "recommendedLevel": 45,
+      "firstRewardId": 2010063,
+      "startDialogue": 98120501,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009744,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1756211873,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Ice",
+        "Dark"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1112": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 2135753323,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154012,
+      "npcTitle": 1970066399,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010012,
+      "startDialogue": 98111201,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009329
+        ]
+      ],
+      "titleId": 2,
+      "npcPetGetBuffDialogue": [
+        [
+          214711001,
+          70009386
+        ]
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Wind",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072387,
+      "clearDialogue": 98111211
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308789,
+      "clearDialogue": 98121211,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009822,
+      "halfDistance": 7.5,
+      "loadingTitle": 1510639868,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155012,
+      "npcPetCastSkillDialogue": [
+        [
+          11620900,
+          70009604
+        ],
+        [
+          11610900,
+          70009605
+        ]
+      ],
+      "npcTitle": 1271902985,
+      "openingType": 2,
+      "buffName": 1153495034,
+      "recommendedLevel": 45,
+      "firstRewardId": 2010070,
+      "startDialogue": 98121201,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009751,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_06.png",
+      "buffDesc": 1707956610,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1123": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1596863596,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154023,
+      "npcPetAppearDialogue": [
+        [
+          2,
+          70009383
+        ],
+        [
+          3,
+          70009384
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          15030300,
+          70009666
+        ]
+      ],
+      "npcTitle": 1758842402,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 45,
+      "firstRewardId": 2010023,
+      "startDialogue": 98112301,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009353
+        ]
+      ],
+      "titleId": 5,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A8.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A8",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072398,
+      "clearDialogue": 98112311
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A8.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A8",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072398,
+      "clearDialogue": 98122311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009833,
+      "halfDistance": 7.5,
+      "loadingTitle": 1126197126,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155023,
+      "npcPetCastSkillDialogue": [
+        [
+          12939900,
+          70009665
+        ],
+        [
+          15030300,
+          70009666
+        ]
+      ],
+      "npcTitle": 1702079881,
+      "buffIcon": "$ui_img_skill_icon_buff_63.png",
+      "buffName": 1144711162,
+      "recommendedLevel": 60,
+      "firstRewardId": 2010081,
+      "startDialogue": 98122301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009762,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 2050103381,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1125": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1793050621,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154025,
+      "npcPetAppearDialogue": [
+        [
+          1,
+          70009672
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          10520210,
+          70009670
+        ]
+      ],
+      "npcTitle": 1320878359,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 33,
+      "firstRewardId": 2010025,
+      "startDialogue": 98112501,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009355
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072401,
+      "clearDialogue": 98112511
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072401,
+      "clearDialogue": 98122511,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009835,
+      "halfDistance": 7.5,
+      "loadingTitle": 1352588155,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155025,
+      "npcPetAppearDialogue": [
+        [
+          1,
+          70009672
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          10530210,
+          70009670
+        ],
+        [
+          11330520,
+          70009671
+        ]
+      ],
+      "npcTitle": 1867812101,
+      "openingType": 2,
+      "buffName": 2133896889,
+      "recommendedLevel": 48,
+      "firstRewardId": 2010083,
+      "startDialogue": 98122501,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009764,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_63.png",
+      "buffDesc": 1840088009,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "titleId": 5
+    }
+  ],
+  "1005": [
+    {
+      "distanceWithMaster": 0.5,
+      "recommendedElements": [
+        "Fire",
+        "Holy",
+        "Electric"
+      ],
+      "sceneId": 30001,
+      "halfDistance": 5,
+      "loadingTitle": 2129969784,
+      "maxClearCount": 1,
+      "badgeId": 201050,
+      "npcBotPlayerId": 1010050,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "npcPetCastSkillDialogue": [
+        [
+          11840200,
+          98100531
+        ]
+      ],
+      "npcTitle": 1534148300,
+      "initState": 0,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 45,
+      "relativeAngleWithMaster": 295,
+      "startBattleDialogue": 98100502,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2005,
+      "startDialogue": 98100501,
+      "winCondition": [
+        1
+      ],
+      "openingType": 1,
+      "openingNpcPetAnimTimestamp": 3,
+      "npcPetGetBuffDialogue": [
+        [
+          2118702,
+          98100532
+        ]
+      ],
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "maxDuration": 300,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_9",
+      "centerPos": 91124360,
+      "clearDialogue": 98100504
+    },
+    {
+      "sceneId": 30001,
+      "badgeId": 201050,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcPetAnimTimestamp": 3,
+      "startCondition": 8302003,
+      "startBattleDialogue": 98100522,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_10",
+      "centerPos": 91124360,
+      "clearDialogue": 98100524,
+      "distanceWithMaster": 0.5,
+      "endStateDialogue": 98100541,
+      "halfDistance": 5,
+      "loadingTitle": 1855721962,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010051,
+      "npcPetCastSkillDialogue": [
+        [
+          11840200,
+          98100531
+        ]
+      ],
+      "npcTitle": 1165791982,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 65,
+      "firstRewardId": 2009005,
+      "startDialogue": 98100521,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "hard"
+      ],
+      "helpId": 2005,
+      "winCondition": [
+        1
+      ],
+      "npcPetGetBuffDialogue": [
+        [
+          2118702,
+          98100532
+        ]
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Holy",
+        "Electric"
+      ],
+      "relativeAngleWithMaster": 295
+    }
+  ],
+  "1127": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1894791276,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154027,
+      "npcPetCastSkillDialogue": [
+        [
+          14530200,
+          70009674
+        ]
+      ],
+      "npcTitle": 2098576448,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 28,
+      "firstRewardId": 2010027,
+      "startDialogue": 98112701,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009357
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Grass",
+        "Wind",
+        "Water"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072403,
+      "clearDialogue": 98112711
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072403,
+      "clearDialogue": 98122711,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009837,
+      "halfDistance": 7.5,
+      "loadingTitle": 1604513528,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155027,
+      "npcPetCastSkillDialogue": [
+        [
+          14530300,
+          70009675
+        ],
+        [
+          14330300,
+          70009676
+        ]
+      ],
+      "npcTitle": 2042554852,
+      "openingType": 2,
+      "buffName": 2029183053,
+      "recommendedLevel": 43,
+      "firstRewardId": 2010085,
+      "startDialogue": 98122701,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009766,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_61.png",
+      "buffDesc": 1387183899,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Water"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1006": [
+    {
+      "sceneId": 30001,
+      "badgeId": 201060,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "initState": 0,
+      "failConditionDialogue": 98100605,
+      "startBattleDialogue": 98100602,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R2A1.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R2A1",
+      "battleState": "NPCDUEL_STATE_11",
+      "centerPos": 91059490,
+      "clearDialogue": 98100604,
+      "distanceWithMaster": 0.5,
+      "halfDistance": 5,
+      "loadingTitle": 1356216113,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010060,
+      "npcPetCastSkillDialogue": [
+        [
+          14830300,
+          98100631
+        ],
+        [
+          10439900,
+          98100632
+        ]
+      ],
+      "npcTitle": 2116579685,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 55,
+      "relativeAngleWithMaster": 295,
+      "startDialogue": 98100601,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "easy"
+      ],
+      "helpId": 2006,
+      "winCondition": [
+        1
+      ],
+      "npcPetGetBuffDialogue": [
+        [
+          2119406,
+          98100633
+        ]
+      ],
+      "openingNpcPetAnimTimestamp": 3,
+      "recommendedElements": [
+        "Electric",
+        "Ice",
+        "Grass"
+      ]
+    },
+    {
+      "sceneId": 30001,
+      "badgeId": 201060,
+      "openingCameraAnim": "$CameraAni_Activity_GymBattle_Intro_01.asset",
+      "openingNpcAnimStateName": "NPCDuel_Intro_01",
+      "openingNpcPetAnimStateName": "Behav_Angry",
+      "openingNpcPetAnimTimestamp": 3,
+      "startCondition": 6710012,
+      "failConditionDialogue": 98100605,
+      "startBattleDialogue": 98100612,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R2A1.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R2A1",
+      "battleState": "NPCDUEL_STATE_12",
+      "centerPos": 91059490,
+      "clearDialogue": 98100614,
+      "distanceWithMaster": 0.5,
+      "endStateDialogue": 98100641,
+      "halfDistance": 5,
+      "loadingTitle": 1266337101,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 1010061,
+      "npcPetCastSkillDialogue": [
+        [
+          14830300,
+          98100631
+        ],
+        [
+          10439900,
+          98100632
+        ]
+      ],
+      "npcTitle": 1909493471,
+      "openingType": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 65,
+      "firstRewardId": 2009006,
+      "startDialogue": 98100611,
+      "tagList": [
+        "area_3000",
+        "elite",
+        "hard"
+      ],
+      "helpId": 2006,
+      "unstartDialogue": 98100615,
+      "winCondition": [
+        1
+      ],
+      "npcPetGetBuffDialogue": [
+        [
+          2119406,
+          98100633
+        ]
+      ],
+      "recommendedElements": [
+        "Electric",
+        "Ice",
+        "Grass"
+      ],
+      "relativeAngleWithMaster": 295
+    }
+  ],
+  "1130": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1950265173,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154030,
+      "npcPetCastSkillDialogue": [
+        [
+          10250500,
+          70009680
+        ],
+        [
+          10230500,
+          70009681
+        ],
+        [
+          12830200,
+          70009682
+        ],
+        [
+          10259900,
+          70009683
+        ],
+        [
+          12839900,
+          70009684
+        ]
+      ],
+      "npcTitle": 1295209605,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 55,
+      "firstRewardId": 2010030,
+      "startDialogue": 98113001,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009360
+        ]
+      ],
+      "playerPetBeKilledDialogue": [
+        [
+          0,
+          70009361
+        ]
+      ],
+      "titleId": 7,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072406,
+      "clearDialogue": 98113011
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A16_2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A16_2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072406,
+      "clearDialogue": 98123011,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009840,
+      "halfDistance": 7.5,
+      "loadingTitle": 1612730602,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155030,
+      "npcPetCastSkillDialogue": [
+        [
+          10250500,
+          70009680
+        ],
+        [
+          10230500,
+          70009681
+        ],
+        [
+          12830200,
+          70009682
+        ],
+        [
+          10259900,
+          70009683
+        ],
+        [
+          12839900,
+          70009684
+        ]
+      ],
+      "npcTitle": 1603531170,
+      "openingType": 2,
+      "buffName": 1893180786,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010088,
+      "startDialogue": 98123001,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009769,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_Fire.png",
+      "buffDesc": 2094165025,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1124": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1413315768,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154024,
+      "npcTitle": 1461109691,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 25,
+      "firstRewardId": 2010024,
+      "startDialogue": 98112401,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009354
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 19,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A2.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A2",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072394,
+      "clearDialogue": 98112411
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 19,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A1.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A1",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072400,
+      "clearDialogue": 98122411,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009834,
+      "halfDistance": 7.5,
+      "loadingTitle": 1765846868,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155024,
+      "npcPetAppearDialogue": [
+        [
+          4,
+          70009667
+        ]
+      ],
+      "npcPetCastSkillDialogue": [
+        [
+          10530530,
+          70009668
+        ]
+      ],
+      "npcTitle": 2144686332,
+      "buffIcon": "$ui_img_skill_icon_buff_63.png",
+      "buffName": 2143402165,
+      "recommendedLevel": 40,
+      "firstRewardId": 2010082,
+      "startDialogue": 98122401,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009763,
+      "winCondition": [
+        1
+      ],
+      "titleId": 4,
+      "buffDesc": 1668125156,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300
+    }
+  ],
+  "1133": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1909968541,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154033,
+      "npcTitle": 1489840546,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 26,
+      "firstRewardId": 2010033,
+      "startDialogue": 98113301,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009364
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -3,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A7",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072414,
+      "clearDialogue": 98113311
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -3,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A9.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A9",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308807,
+      "clearDialogue": 98123311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "halfDistance": 7.5,
+      "loadingTitle": 1595116986,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155033,
+      "npcPetCastSkillDialogue": [
+        [
+          10320310,
+          70009694
+        ],
+        [
+          10320300,
+          70009695
+        ],
+        [
+          10320110,
+          70009696
+        ],
+        [
+          10320130,
+          70009697
+        ]
+      ],
+      "npcTitle": 1771309331,
+      "openingType": 2,
+      "buffName": 1987321585,
+      "recommendedLevel": 41,
+      "firstRewardId": 2010094,
+      "startDialogue": 98123301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009772,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1534368862,
+      "buffIcon": "$ui_img_skill_icon_buff_73.png",
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -3,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A11.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A11",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308808,
+      "clearDialogue": 98133311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "halfDistance": 7.5,
+      "loadingTitle": 1734112453,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155133,
+      "npcPetCastSkillDialogue": [
+        [
+          10530210,
+          70009691
+        ],
+        [
+          10530220,
+          70009692
+        ],
+        [
+          10530230,
+          70009693
+        ]
+      ],
+      "npcTitle": 1320020146,
+      "openingType": 2,
+      "buffName": 1190023082,
+      "recommendedLevel": 41,
+      "firstRewardId": 2010091,
+      "startDialogue": 98133301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009772,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 2015956572,
+      "buffIcon": "$UI_Img_Skill_Icon_BossRush_Affix_Buff_201.png",
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Water"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -3,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308810,
+      "clearDialogue": 98153311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "halfDistance": 7.5,
+      "loadingTitle": 1786205481,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155233,
+      "npcPetCastSkillDialogue": [
+        [
+          14750210,
+          70009702
+        ],
+        [
+          14750200,
+          70009703
+        ]
+      ],
+      "npcTitle": 1168690137,
+      "openingType": 2,
+      "buffName": 1791665742,
+      "recommendedLevel": 41,
+      "firstRewardId": 2010092,
+      "startDialogue": 98153301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009772,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1871514942,
+      "buffIcon": "$ui_img_skill_icon_buff_06.png",
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Dark"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -3,
+      "airWallRadius": 15,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91308812,
+      "clearDialogue": 98143311,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009843,
+      "halfDistance": 7.5,
+      "loadingTitle": 1960020065,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155333,
+      "npcPetCastSkillDialogue": [
+        [
+          13230210,
+          70009698
+        ],
+        [
+          13230110,
+          70009699
+        ],
+        [
+          13230200,
+          70009700
+        ],
+        [
+          13230100,
+          70009701
+        ]
+      ],
+      "npcTitle": 1704220012,
+      "buffIcon": "$ui_img_skill_icon_buff_08.png",
+      "buffName": 1422082237,
+      "recommendedLevel": 41,
+      "firstRewardId": 2010093,
+      "startDialogue": 98143301,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009772,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1964330006,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Dark"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1141": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1711543066,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154041,
+      "npcTitle": 1446486969,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 33,
+      "firstRewardId": 2010041,
+      "startDialogue": 98114101,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009372
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072422,
+      "clearDialogue": 98114111
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -2,
+      "airWallRadius": 17,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072422,
+      "clearDialogue": 98124111,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009851,
+      "halfDistance": 7.5,
+      "loadingTitle": 1347169204,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155041,
+      "npcPetCastSkillDialogue": [
+        [
+          10320600,
+          70009728
+        ],
+        [
+          10320110,
+          70009729
+        ]
+      ],
+      "npcTitle": 1126821503,
+      "buffIcon": "$ui_img_skill_icon_buff_1005501.png",
+      "buffName": 1283498766,
+      "recommendedLevel": 48,
+      "firstRewardId": 2010097,
+      "startDialogue": 98124101,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009777,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1616798271,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Wind",
+        "Holy"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1144": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 6.5,
+      "loadingTitle": 2010730755,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154044,
+      "npcPetAppearDialogue": [
+        [
+          0,
+          70009734
+        ]
+      ],
+      "npcTitle": 1154834479,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 52,
+      "firstRewardId": 2010044,
+      "startDialogue": 98114401,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009375
+        ]
+      ],
+      "titleId": 6,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 10,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072426,
+      "clearDialogue": 98114411
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 10,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072426,
+      "clearDialogue": 98124411,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009854,
+      "halfDistance": 6.5,
+      "loadingTitle": 1937914755,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155044,
+      "npcPetAppearDialogue": [
+        [
+          0,
+          70009734
+        ]
+      ],
+      "npcTitle": 2019219516,
+      "openingType": 2,
+      "buffName": 1746650441,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010100,
+      "startDialogue": 98124401,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009780,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_1026301.png",
+      "buffDesc": 1331404902,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Grass",
+        "Water"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1145": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3162,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1254396727,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154045,
+      "npcPetAppearDialogue": [
+        [
+          0,
+          70009735
+        ]
+      ],
+      "npcTitle": 1129580437,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 50,
+      "firstRewardId": 2010045,
+      "startDialogue": 98114501,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009376
+        ]
+      ],
+      "titleId": 6,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallRadius": 14,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072427,
+      "clearDialogue": 98114511
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 14,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A15.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A15",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072427,
+      "clearDialogue": 98124511,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3165,
+      "endStateDialogue": 70009855,
+      "halfDistance": 7.5,
+      "loadingTitle": 1653640188,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155045,
+      "npcPetAppearDialogue": [
+        [
+          0,
+          70009736
+        ]
+      ],
+      "npcTitle": 1964552924,
+      "openingType": 2,
+      "buffName": 1938748671,
+      "recommendedLevel": 65,
+      "firstRewardId": 2010101,
+      "startDialogue": 98124501,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 8,
+      "unstartDialogue": 70009781,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$ui_img_skill_icon_buff_1005501.png",
+      "buffDesc": 1243440013,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": [
+        "Fire",
+        "Wind",
+        "Dark"
+      ],
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1111": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3164,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1520480750,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154011,
+      "npcPetCastSkillDialogue": [
+        [
+          11810330,
+          70009786
+        ]
+      ],
+      "npcTitle": 1813217778,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 28,
+      "firstRewardId": 2010011,
+      "startDialogue": 98111101,
+      "tagList": [
+        "area_3000",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009344
+        ]
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Grass",
+        "Electric",
+        "Ice",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallRadius": 13,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A4.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A4",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91071557,
+      "clearDialogue": 98111111
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallRadius": 13,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A3.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A3",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91071557,
+      "clearDialogue": 98121111,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3167,
+      "endStateDialogue": 70009821,
+      "halfDistance": 7.5,
+      "loadingTitle": 1194905334,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155011,
+      "npcPetCastSkillDialogue": [
+        [
+          12030230,
+          70009391
+        ],
+        [
+          11870370,
+          70009785
+        ],
+        [
+          13230210,
+          70009787
+        ]
+      ],
+      "npcTitle": 1266866005,
+      "openingType": 2,
+      "buffName": 1969763335,
+      "recommendedLevel": 43,
+      "firstRewardId": 2010069,
+      "startDialogue": 98121101,
+      "tagList": [
+        "area_3000",
+        "hard"
+      ],
+      "titleId": 4,
+      "unstartDialogue": 70009750,
+      "winCondition": [
+        1
+      ],
+      "buffIcon": "$UI_Img_Skill_Icon_BossRush_Affix_Buff_201.png",
+      "buffDesc": 1546294616,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1147": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 1188072385,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154047,
+      "npcTitle": 1178238594,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 25,
+      "firstRewardId": 2010047,
+      "startDialogue": 98114701,
+      "tagList": [
+        "area_3000",
+        "season1",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Ice",
+        "Dark"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072429,
+      "clearDialogue": 98114711
+    },
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009857,
+      "halfDistance": 7.5,
+      "loadingTitle": 1622846794,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155047,
+      "sceneId": 30001,
+      "titleId": 4,
+      "npcTitle": 1400639541,
+      "initState": 1,
+      "buffName": 1427494556,
+      "recommendedLevel": 40,
+      "firstRewardId": 2010103,
+      "startDialogue": 98124701,
+      "tagList": [
+        "area_3000",
+        "hard",
+        "season1"
+      ],
+      "helpId": 2000,
+      "unstartDialogue": 70009783,
+      "winCondition": [
+        1
+      ],
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Ice",
+        "Dark"
+      ],
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "openingType": 2,
+      "buffDesc": 2004420142,
+      "buffIcon": "$ui_img_skill_icon_buff_68.png",
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072429,
+      "clearDialogue": 98124711
+    }
+  ],
+  "1148": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 30001,
+      "halfDistance": 7.5,
+      "loadingTitle": 2046086049,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154048,
+      "npcTitle": 1855129235,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 30,
+      "firstRewardId": 2010048,
+      "startDialogue": 98114801,
+      "tagList": [
+        "area_3000",
+        "season1",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "titleId": 2,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallOffsetY": -1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072430,
+      "clearDialogue": 98114811
+    },
+    {
+      "sceneId": 30001,
+      "initState": 1,
+      "airWallOffsetY": -1,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_COT_R1A6.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_COT_R1A6",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91072430,
+      "clearDialogue": 98124811,
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3166,
+      "endStateDialogue": 70009858,
+      "halfDistance": 7.5,
+      "loadingTitle": 1204523565,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 155048,
+      "npcTitle": 1270982409,
+      "buffIcon": "$ui_img_skill_icon_buff_63.png",
+      "buffName": 1725728654,
+      "recommendedLevel": 45,
+      "firstRewardId": 2010104,
+      "startDialogue": 98124801,
+      "tagList": [
+        "area_3000",
+        "hard",
+        "season1"
+      ],
+      "titleId": 5,
+      "unstartDialogue": 70009784,
+      "winCondition": [
+        1
+      ],
+      "buffDesc": 1082061346,
+      "openingType": 2,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedElements": {},
+      "relativeAngleWithMaster": 300,
+      "helpId": 2000
+    }
+  ],
+  "1149": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 5010003,
+      "halfDistance": 7.5,
+      "loadingTitle": 1771192966,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154049,
+      "npcTitle": 1963623413,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "firstRewardId": 2010049,
+      "startDialogue": 98114901,
+      "tagList": [
+        "ark",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009378
+        ]
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": {},
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98114911
+    }
+  ],
+  "1150": [
+    {
+      "distanceWithMaster": 0.5,
+      "dynamicLevelAdjustment": 3163,
+      "sceneId": 5010003,
+      "halfDistance": 7.5,
+      "loadingTitle": 1493716766,
+      "maxClearCount": 1,
+      "maxDuration": 300,
+      "npcBotPlayerId": 154050,
+      "npcTitle": 1410795919,
+      "initState": 1,
+      "playerForwardDir": [
+        0,
+        345,
+        0
+      ],
+      "recommendedLevel": 35,
+      "firstRewardId": 2010050,
+      "startDialogue": 98115001,
+      "tagList": [
+        "ark",
+        "easy"
+      ],
+      "helpId": 2000,
+      "winCondition": [
+        1
+      ],
+      "npcPetBeKilledDialogue": [
+        [
+          0,
+          70009378
+        ]
+      ],
+      "titleId": 3,
+      "relativeAngleWithMaster": 300,
+      "recommendedElements": [
+        "Electric",
+        "Holy"
+      ],
+      "openingType": 2,
+      "airWallRadius": 20,
+      "backgroundImage": "$UI_Img_BattleRoom_Bg_Ark.png",
+      "backgroundMat": "MI_LVUIBattleRoom_BackGround_BG_Ark",
+      "battleState": "NPCDUEL_STATE_1",
+      "centerPos": 91127320,
+      "clearDialogue": 98115011
+    }
+  ]
+}

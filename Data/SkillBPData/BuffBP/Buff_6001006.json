@@ -1,0 +1,169 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6001006",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "UID": "6a9afd17-226b-4e9c-a528-68d5da3df417",
+      "name": "closeFlashlightTrigger",
+      "triggerKey": "1",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "74517380-3a00-4f3f-932d-c3cc55d7d8ce",
+      "name": "addFlashlightLockTargetByContext",
+      "NodeID": 4
+    },
+    "6": {
+      "offsetXYZ": [
+        -0.5,
+        2,
+        0
+      ],
+      "triggerKey": "1",
+      "name": "createFlashlightTrigger",
+      "UID": "5d384733-0592-412d-aa2b-e4f231232233",
+      "visualScale": [
+        45,
+        45,
+        20
+      ],
+      "enterActionIds": [
+        4
+      ],
+      "leaveActionIds": [
+        11
+      ],
+      "triggerOffsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "shapeArgs": [
+        15,
+        45,
+        2,
+        0
+      ],
+      "entityName": "Eff_Env_GrabEgg_TorchLightMask_KeyItem",
+      "shapeKind": "Sector3D",
+      "relation": 2,
+      "NodeID": 6,
+      "pos": "OWNER"
+    },
+    "10": {
+      "UID": "d1862fe3-a718-4285-8c2d-ded7ab26cb85",
+      "name": "registerPetEnterControlEvent",
+      "actionIds": [
+        14,
+        6
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "72a3a63e-342a-4414-b764-135af5984284",
+      "name": "addFlashlightLockTargetByContext",
+      "NodeID": 15
+    },
+    "8": {
+      "actionIds": [
+        14,
+        6
+      ],
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "500600ed-28fa-470e-89c4-09ac554f1c71",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22,
+        17
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "offsetXYZ": [
+        -0.5,
+        2,
+        0
+      ],
+      "triggerKey": "2",
+      "name": "createFlashlightTrigger",
+      "UID": "fa8cf4ee-de6b-49e8-8447-24dfbabcb4a3",
+      "visualScale": [
+        45,
+        45,
+        20
+      ],
+      "enterActionIds": [
+        15
+      ],
+      "leaveActionIds": [
+        20
+      ],
+      "triggerOffsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "shapeArgs": [
+        15,
+        45,
+        2,
+        0
+      ],
+      "entityName": "Eff_Env_GrabEgg_TorchLightMask_KeyItem",
+      "shapeKind": "Sector3D",
+      "relation": 2,
+      "NodeID": 17,
+      "pos": "MASTER"
+    },
+    "13": {
+      "UID": "3ab020e1-0e1d-47d7-91b7-7c85c01fc0b2",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 13
+    },
+    "19": {
+      "UID": "ea6c53f0-52fc-41e9-a03c-fbf1d1e5d58c",
+      "name": "registerPetLeaveControlEvent",
+      "actionIds": [
+        22,
+        17
+      ],
+      "NodeID": 19
+    },
+    "11": {
+      "UID": "025e5e93-a391-422a-9e76-20a213a4169c",
+      "name": "removeFlashlightLockTargetByContext",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "f5070140-23c4-49fe-9fab-8534f1046ade",
+      "name": "removeFlashlightLockTargetByContext",
+      "NodeID": 20
+    },
+    "14": {
+      "UID": "1405555c-4cc0-4e0b-b155-9da62c969151",
+      "name": "closeFlashlightTrigger",
+      "triggerKey": "2",
+      "NodeID": 14
+    }
+  },
+  "onBuffInheritIds": [
+    8,
+    19,
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    19,
+    10
+  ]
+}

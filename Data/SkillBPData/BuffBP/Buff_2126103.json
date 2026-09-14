@@ -1,0 +1,28 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "UID": "a224692d-b7f6-4e5f-84b8-df7b8c961fe2",
+      "name": "registerDeadEvent",
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3
+    },
+    "2": {
+      "eventName": "Msg_SummonDead",
+      "name": "sendAIMsg",
+      "UID": "a014b874-2234-4e1e-a33e-2ef756c06fc5",
+      "target": "MASTER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_2126103",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9123101",
+  "NodeID": 1,
+  "UID": "5d06a842-7e3e-4f4c-bf41-66a416157f1e",
+  "onBuffRefreshIds": [
+    4,
+    9,
+    15,
+    19
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "scale": 0.525,
+      "actionIds": [
+        6,
+        11,
+        8
+      ],
+      "NodeID": 4,
+      "UID": "a237da3b-f9a7-4225-b323-c49d17f091b3",
+      "idleState": "Idle",
+      "moveState": "RunLoop",
+      "offsetBack": 0.3,
+      "offsetHeight": 1,
+      "offsetHorizontal": 0.3,
+      "templateList": [
+        1023100,
+        1023101,
+        1023102,
+        1023200,
+        1023201,
+        1023202,
+        1023103,
+        1023203
+      ],
+      "skillState": "Skill_Synergy",
+      "name": "createFollowingPhantom"
+    },
+    "6": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "add2b3f4-fd6c-44df-a795-d28cab7eee4f",
+      "effectId": "Eff_Parmon_Futternym_10231_Skill_Dance",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "15": {
+      "UID": "5ac15aae-0c11-4337-9445-0c278ba09bec",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        13,
+        17
+      ],
+      "NodeID": 15
+    },
+    "16": {
+      "buffId": 91231011,
+      "name": "removeBuff",
+      "UID": "ff74f7a0-db4c-40db-87bb-cf2ce8547bfb",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "petTarget": "OWNER",
+      "triggerId": 20002052,
+      "name": "onEntityTrigger",
+      "UID": "b7c93e53-77c7-48dd-a27e-75cbdc4c4e6c",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "83412f88-137a-476c-b2c8-41002255347d",
+      "name": "registerOnUnSummonEvent",
+      "actionIds": [
+        16
+      ],
+      "NodeID": 17
+    },
+    "9": {
+      "petTarget": "OWNER",
+      "triggerId": 20002052,
+      "name": "onEntityTrigger",
+      "UID": "207fa6e7-73d3-4d8b-9483-62cfc8a94173",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "18": {
+      "buffId": 91231011,
+      "name": "removeBuff",
+      "UID": "52bb7241-3f12-4066-b6da-4844fe4096e1",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "19": {
+      "actionIds": [
+        18
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "ee71f9e1-e48d-4f06-bf52-022e59da01c0",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "name": "calcResult",
+      "UID": "0b25bf10-bf1e-417a-acf1-2e42e49ae984",
+      "target": "CURPET",
+      "NodeID": 11,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param0",
+        "type": 1,
+        "id": 9123101
+      }
+    },
+    "13": {
+      "UID": "e9a2b62a-53e5-41c6-a250-7b011f805706",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13
+    },
+    "12": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91231011,
+      "NodeID": 12,
+      "UID": "98a1f36f-bf2d-438f-bcf8-fbeb8cad4680",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    9,
+    15,
+    19
+  ]
+}

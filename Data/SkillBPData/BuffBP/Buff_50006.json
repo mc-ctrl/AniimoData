@@ -1,0 +1,162 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_50006",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "570ca558-b915-4c89-8d96-00b429af8b3a",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        12,
+        8
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "33e7d675-3644-470b-ab9d-bc9e87d7f3c9",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17
+      ],
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "1427f7b1-f899-4c6a-99a3-30aca941e95f",
+      "name": "isNot",
+      "action": {
+        "rValue": 0,
+        "name": "equal",
+        "UID": "9681b517-e0dc-4925-bb12-2c61b273a7e9",
+        "NodeID": 13,
+        "lValue": {
+          "data": {
+            "UID": "1b10b480-bb44-4c8f-96ed-50b1146172f5",
+            "name": "getEventData",
+            "eventName": "onCastAbility",
+            "NodeID": 6
+          },
+          "propertyName": "abilityId",
+          "name": "getProperty",
+          "UID": "66ad7f67-9061-4199-bc7d-2244b75650aa",
+          "NodeID": 7
+        }
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "rValue": {
+        "data": {
+          "UID": "1b10b480-bb44-4c8f-96ed-50b1146172f5",
+          "name": "getEventData",
+          "eventName": "onCastAbility",
+          "NodeID": 6
+        },
+        "propertyName": "abilityId",
+        "name": "getProperty",
+        "UID": "66ad7f67-9061-4199-bc7d-2244b75650aa",
+        "NodeID": 7
+      },
+      "name": "equal",
+      "UID": "b29ff181-094e-4ca6-ba88-aebe68c2ba85",
+      "NodeID": 10,
+      "lValue": {
+        "key": "abilityId",
+        "name": "getCacheVal",
+        "UID": "64c71668-b439-4693-a0ef-b40faea9cfac",
+        "target": "OWNER",
+        "NodeID": 15
+      }
+    },
+    "16": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5000601,
+      "NodeID": 16,
+      "UID": "5827f787-d30c-446f-8224-84ee71968efa",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "key": "abilityId",
+      "name": "setCacheVal",
+      "UID": "29e53788-28a9-4494-945c-28259bee6720",
+      "target": "OWNER",
+      "val": {
+        "data": {
+          "UID": "1b10b480-bb44-4c8f-96ed-50b1146172f5",
+          "name": "getEventData",
+          "eventName": "onCastAbility",
+          "NodeID": 6
+        },
+        "propertyName": "abilityId",
+        "name": "getProperty",
+        "UID": "66ad7f67-9061-4199-bc7d-2244b75650aa",
+        "NodeID": 7
+      },
+      "NodeID": 8
+    },
+    "17": {
+      "buffId": 5000601,
+      "name": "removeBuff",
+      "UID": "db0dcc49-172f-4010-adfd-c43759a61837",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "buffId": 5000601,
+      "name": "removeBuff",
+      "UID": "c2a880b3-ce76-4291-9962-c6e793888367",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "11": {
+      "UID": "7f5fdeb9-4f1a-4cf1-b024-77b6507ca153",
+      "conditionIds": [
+        14,
+        10
+      ],
+      "name": "conditionAnd",
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "92fe802a-a07d-4e9e-bdf6-0bd82dfe85ad",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "12": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "b52a88a5-6ba2-4947-9544-009a447e2ab1",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17
+      ],
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    18
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

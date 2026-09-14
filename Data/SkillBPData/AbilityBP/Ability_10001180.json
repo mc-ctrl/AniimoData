@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_10001180",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "6": {
+      "timelineId": 10001180001,
+      "name": "setCombatActionTimeline",
+      "UID": "6b929fc0-9c7a-4ccc-a510-d5731b841ff7",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "EnvBehav_NectarSucking"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10351_CatchHoney_Collect",
+    "Eff_Parmon_10351_CatchHoney_Delivery"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "isStealAbility": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10001180
+}

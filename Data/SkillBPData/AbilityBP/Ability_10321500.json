@@ -1,0 +1,28 @@
+{
+  "searchTargetRangeDown": 0.5,
+  "searchTargetRangeRadius": 5,
+  "BPName": "ability_10321500",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "searchTargetRangeUp": 1.5,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "searchRelation": 2,
+  "checkExistBurrow": false,
+  "name": "暗暗袭斩",
+  "nodeMap": {
+    "8": {
+      "timelineId": 10321500001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "abilityParamId": 11200319
+}

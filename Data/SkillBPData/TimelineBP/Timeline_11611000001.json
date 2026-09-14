@@ -1,0 +1,188 @@
+{
+  "nodeMap": {
+    "37": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "b441e45e-214a-4799-b14d-897dc9c8e841",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "d98d74de-2d1c-4efe-84f9-e07c1d5604db",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 38
+    },
+    "6": {
+      "UID": "62b988e5-bfac-4bed-b5c2-cf860bf6d394",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "35": {
+      "actionIds": [
+        34
+      ],
+      "conditionActionIds": [
+        38
+      ],
+      "UID": "be91d4c0-e7ed-426c-b3be-88df854b7a21",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        37
+      ],
+      "NodeID": 35
+    },
+    "20": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "54063de4-765e-4fd9-8282-77e2fa139f0a",
+      "target": "OWNER",
+      "NodeID": 20,
+      "animId": "Skill_MagicLeaf"
+    },
+    "22": {
+      "actionIds": [
+        28
+      ],
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "e217bcf8-d723-4146-911d-5d9c566d094a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20
+      ],
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "800e142e-c3a3-4652-b04e-f08c503f929d",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "duration": 8,
+      "buffId": 2117404,
+      "NodeID": 24,
+      "UID": "ed4b7873-0092-4929-943c-9cef3d4d7ba8",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "15": {
+      "UID": "da4475b8-8ca8-42e9-a35f-969519145021",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "26": {
+      "UID": "566ee59a-f013-4919-b314-de0ce38dd03a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "UID": "bdceedfb-d888-4b8c-a462-6b78429b3bc3",
+      "target": "OWNER",
+      "name": "isInBurrow",
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "9253e48c-f5fc-48d3-911b-23d3b1299f88",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 17
+    },
+    "13": {
+      "UID": "628dfa3a-f125-449a-9c78-542091331bfa",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 13
+    },
+    "28": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bf6ae330-b936-4764-96be-845daf0e7383",
+      "target": "OWNER",
+      "NodeID": 28,
+      "animId": "Skill_MagicLeaf_BurrowState"
+    },
+    "23": {
+      "UID": "4fcbd51c-1c3d-4ffa-b19c-fa05ae597445",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 23
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 19,
+      "UID": "8dbfc440-3e97-4a24-b4e3-dd71a2579482"
+    },
+    "34": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "ae811e31-be28-40ff-959d-4aae5cf80da5",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "d3122c2c-8fec-4d69-948c-8db8e8c53084",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          35
+        ]
+      },
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11611000",
+  "NodeID": 8,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    6,
+    15,
+    23,
+    19,
+    26,
+    36
+  ],
+  "layer": "Base",
+  "length": 2
+}

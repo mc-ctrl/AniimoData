@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_9200021",
+  "NodeID": 1,
+  "UID": "736d9b36-3c40-4ce7-97df-312536837d47",
+  "abilityParamId": 9200021,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200021001,
+      "name": "setCombatActionTimeline",
+      "UID": "3693c471-8f5f-467e-b796-79ab948773a5",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "68": {
+      "name": "stopEffectStr",
+      "UID": "7cd0c4da-7e5f-4df5-acea-f07c04a7c6b1",
+      "effectId": "Eff_Avatar_Female_Skill_Mushroom_Bullet",
+      "target": "OWNER",
+      "NodeID": 68
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Mushroom"
+  ],
+  "preloadEffs": [
+    "Eff_VEG_Avatar_Mushroom",
+    "Eff_Avatar_Female_Skill_Mushroom_Bullet",
+    "Eff_Avatar_Female_Skill_Mushroom_Small",
+    "Eff_Avatar_Female_Skill_Mushroom_Disappear",
+    "Eff_Avatar_Female_Skill_Mushroom_Disappear01"
+  ],
+  "searchRelation": 1,
+  "name": "迷灵巨大化",
+  "searchTargetRangeRadius": 20,
+  "searchTargetRangeUp": 2,
+  "onAbilityEndIds": [
+    68
+  ],
+  "searchTargetRangeDown": 2
+}

@@ -1,0 +1,49 @@
+{
+  "BPName": "ability_11331520",
+  "NodeID": 1,
+  "UID": "6b2c8053-71c6-4d50-a9f2-aab290286336",
+  "abilityParamId": 10211332,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 11331520001,
+      "name": "setCombatActionTimeline",
+      "UID": "a33b4f58-6784-4a88-99a7-d727cd451817",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "53": {
+      "buffId": 2113305,
+      "name": "removeBuff",
+      "UID": "67c86d1a-36b9-48c2-96a6-287d68948bc0",
+      "target": "OWNER",
+      "NodeID": 53
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 5,
+  "preloadAnims": [
+    "Skill_IceboundSlash"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Blunt_Big",
+    "Eff_Parmon_10133_Skill_TailSmash_Ice_Explosion_Boss",
+    "Eff_Parmon_10133_Skill_TailSmash_Ice_Attack_Boss",
+    "Eff_Parmon_10133_Skill_IceBreak",
+    "Eff_Skill_Common_Warning_NoFrame"
+  ],
+  "searchRelation": 2,
+  "name": "0",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "onAbilityEndIds": [
+    53
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2
+}

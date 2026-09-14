@@ -1,0 +1,118 @@
+{
+  "nodeMap": {
+    "62": {
+      "UID": "982f673d-9c81-46b6-a7fc-9089b0dfcbf9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          64,
+          65,
+          66,
+          68,
+          67,
+          60,
+          69
+        ]
+      },
+      "NodeID": 62
+    },
+    "38": {
+      "UID": "34658de3-ad6e-4be9-9341-3349672fe446",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0,
+        "inCombo": 0
+      },
+      "NodeID": 38
+    },
+    "55": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 90213005,
+      "NodeID": 55,
+      "UID": "a7c3778c-bca6-4022-842c-dee2375cedf7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "40": {
+      "UID": "b4516232-5661-4e4b-947b-ad32abe23510",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          38
+        ]
+      },
+      "NodeID": 40
+    },
+    "56": {
+      "UID": "c2868269-1b3b-4b51-b0e6-7fb84af786cd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          55
+        ]
+      },
+      "NodeID": 56
+    },
+    "64": {
+      "UID": "7f578b46-48aa-4e3d-8a07-7619230e6085",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 64
+    },
+    "65": {
+      "UID": "4ae3a59e-28c4-4dc8-ac56-124d6a3a34ec",
+      "value": true,
+      "name": "setIgnoreLockDistanceCheck",
+      "NodeID": 65
+    },
+    "66": {
+      "UID": "c0847e82-2753-44e1-9a98-ad209ef09fdb",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "LuoDi",
+      "NodeID": 66
+    },
+    "67": {
+      "heightOffset": 0.2,
+      "maxLockTime": 1,
+      "NodeID": 67,
+      "UID": "9631d621-511f-4f21-829c-448896af21cc",
+      "target": "OWNER",
+      "name": "cameraFaceTo"
+    },
+    "68": {
+      "buffId": 1145116,
+      "name": "removeBuff",
+      "UID": "15b48bfb-7f1d-4d6c-b2bf-4445e08b1380",
+      "target": "CASTER",
+      "NodeID": 68
+    },
+    "60": {
+      "buffId": 1145108,
+      "name": "removeBuff",
+      "UID": "88a11c7e-5c0a-4779-9df9-cdd0015f42c0",
+      "target": "CASTER",
+      "NodeID": 60
+    },
+    "69": {
+      "UID": "3e9cd5c1-0815-40d3-8c32-5fbafe0e6ff1",
+      "name": "hideBubbleMsg",
+      "msgId": 2242,
+      "NodeID": 69
+    }
+  },
+  "BPName": "ability_902132303",
+  "NodeID": 42,
+  "UID": "8cc98d12-8ee5-4049-8b99-26b4933661ff",
+  "eventIds": [
+    62,
+    40,
+    56
+  ],
+  "layer": "Base",
+  "length": 8
+}

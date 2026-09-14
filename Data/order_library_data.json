@@ -1,0 +1,4593 @@
+[
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60002,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300000,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4001000,
+      20
+    ],
+    "Conditions": 60001
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60003,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300001,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4001018,
+      38
+    ],
+    "Conditions": 60002
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60006,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300002,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010032,
+      2
+    ],
+    "Conditions": 60002
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60009,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300003,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010035,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60009,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300004,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4001063,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300005,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010145,
+      4
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300006,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010152,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300007,
+    "reward2": 200736,
+    "shopType": 5,
+    "unlockItem1": [
+      4010137,
+      6
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300008,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010163,
+      8
+    ],
+    "Conditions": 60016
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300009,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010024,
+      8
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010036,
+      8
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300010,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010164,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300011,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60008,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300012,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010073,
+      2
+    ],
+    "Conditions": 60004
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60009,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300013,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010072,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300014,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010133,
+      4
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300015,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010074,
+      4
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300016,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010071,
+      4
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300017,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010068,
+      4
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300018,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010066,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300019,
+    "reward2": 200736,
+    "shopType": 5,
+    "unlockItem1": [
+      4010138,
+      6
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60018,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300020,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010069,
+      6
+    ],
+    "Conditions": 60014
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60018,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300021,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010076,
+      6
+    ],
+    "Conditions": 60014
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010070,
+      8
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300022,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010075,
+      8
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300023,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60008,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300024,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010053,
+      1
+    ],
+    "Conditions": 60004
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60009,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300025,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010191,
+      1
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300026,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010154,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300027,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010162,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300028,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010160,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300029,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010104,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300030,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010101,
+      2
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300031,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010077,
+      2
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300032,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010051,
+      4
+    ],
+    "Conditions": 60016
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300033,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010056,
+      4
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010113,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300034,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010144,
+      2
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300035,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300036,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010039,
+      4
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300037,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010040,
+      4
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300038,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010042,
+      4
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300039,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010043,
+      6
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300040,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010041,
+      6
+    ],
+    "Conditions": 60015
+  },
+  {
+    "shopType": 7,
+    "unlockItem1": [
+      4010193,
+      3
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300041,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60010,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300042,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010027,
+      2
+    ],
+    "Conditions": 60006
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300043,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010018,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300044,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010020,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300045,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010017,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300046,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010022,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60018,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300047,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010139,
+      3
+    ],
+    "Conditions": 60014
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010025,
+      3
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300048,
+    "Conditions": 60017
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010023,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300049,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010019,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300050,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60010,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300051,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010001,
+      2
+    ],
+    "Conditions": 60006
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60010,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300052,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010000,
+      2
+    ],
+    "Conditions": 60006
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300053,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010094,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300054,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010161,
+      4
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300055,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010096,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300056,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010003,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300057,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010008,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300058,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010159,
+      2
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300059,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010185,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010095,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300060,
+    "Conditions": 60017
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010194,
+      8
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300061,
+    "Conditions": 60017
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010186,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300062,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010058,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300063,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010187,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300064,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 2,
+    "unlockItem1": [
+      4010015,
+      3
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300065,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60007,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300066,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010081,
+      2
+    ],
+    "Conditions": 60003
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60009,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300067,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010080,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60009,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300068,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010168,
+      1
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300069,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010028,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300070,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010078,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300071,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010092,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300072,
+    "reward2": 200736,
+    "shopType": 8,
+    "unlockItem1": [
+      4010084,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300073,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010136,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300074,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010085,
+      2
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300075,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010090,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300076,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010091,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300077,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010190,
+      6
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300078,
+    "reward2": 200736,
+    "shopType": 8,
+    "unlockItem1": [
+      4010082,
+      3
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300079,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010089,
+      6
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300080,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010079,
+      3
+    ],
+    "Conditions": 60015
+  },
+  {
+    "shopType": 7,
+    "unlockItem1": [
+      4010087,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300081,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 8,
+    "unlockItem1": [
+      4010083,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300082,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 3,
+    "unlockItem1": [
+      4010088,
+      2
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300083,
+    "Conditions": 60020
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60009,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300084,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010155,
+      1
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300085,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010165,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300086,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010046,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300087,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010098,
+      4
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300088,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010100,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300089,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010157,
+      6
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300090,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010097,
+      6
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300091,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010047,
+      6
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60019,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300092,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010045,
+      2
+    ],
+    "Conditions": 60015
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010142,
+      2
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300093,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010099,
+      2
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300094,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010156,
+      4
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300095,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60012,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300096,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010134,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60012,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300097,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010064,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60012,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300098,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010062,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300099,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010061,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300100,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010112,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300101,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010049,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300102,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010184,
+      2
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300103,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010141,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300104,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010055,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300105,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010060,
+      3
+    ],
+    "Conditions": 60016
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300106,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010158,
+      3
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010054,
+      3
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300107,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010143,
+      2
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300108,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60012,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300109,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010135,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60012,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300110,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010012,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300111,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010002,
+      1
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60014,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300112,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010009,
+      4
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300113,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010011,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60017,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300114,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010192,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300115,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010188,
+      4
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010189,
+      3
+    ],
+    "flushWeight": 10,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300116,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60006,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300117,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010032,
+      4
+    ],
+    "Conditions": 60002
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300118,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010035,
+      4
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300119,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4001063,
+      4
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300120,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010145,
+      6
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300121,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010152,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300122,
+    "reward2": 200736,
+    "shopType": 5,
+    "unlockItem1": [
+      4010137,
+      8
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300123,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010163,
+      10
+    ],
+    "Conditions": 60016
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300124,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010024,
+      10
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010036,
+      10
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300125,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010164,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300126,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60008,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300127,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010073,
+      4
+    ],
+    "Conditions": 60004
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300128,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010072,
+      4
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300129,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010133,
+      6
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300130,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010074,
+      6
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300131,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010071,
+      6
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300132,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010068,
+      6
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300133,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010066,
+      4
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300134,
+    "reward2": 200736,
+    "shopType": 5,
+    "unlockItem1": [
+      4010138,
+      8
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60018,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300135,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010069,
+      8
+    ],
+    "Conditions": 60014
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60018,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300136,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010076,
+      8
+    ],
+    "Conditions": 60014
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010070,
+      10
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300137,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010075,
+      10
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300138,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60008,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300139,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010053,
+      2
+    ],
+    "Conditions": 60004
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300140,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010191,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300141,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010154,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300142,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010162,
+      3
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300143,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010160,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300144,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010104,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300145,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010101,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300146,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010077,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300147,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010051,
+      5
+    ],
+    "Conditions": 60016
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300148,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010056,
+      5
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010113,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300149,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010144,
+      2
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300150,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300151,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010039,
+      6
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300152,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010040,
+      6
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300153,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010042,
+      6
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300154,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010043,
+      8
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300155,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010041,
+      8
+    ],
+    "Conditions": 60015
+  },
+  {
+    "shopType": 7,
+    "unlockItem1": [
+      4010193,
+      4
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300156,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60010,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300157,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010027,
+      3
+    ],
+    "Conditions": 60006
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300158,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010018,
+      3
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300159,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010020,
+      3
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300160,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010017,
+      3
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300161,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010022,
+      3
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60018,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300162,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010139,
+      4
+    ],
+    "Conditions": 60014
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010025,
+      4
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300163,
+    "Conditions": 60017
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010023,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300164,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010019,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300165,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60010,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300166,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010001,
+      3
+    ],
+    "Conditions": 60006
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60010,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300167,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010000,
+      3
+    ],
+    "Conditions": 60006
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300168,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010094,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300169,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010161,
+      6
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300170,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010096,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300171,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010003,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300172,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010008,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300173,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010159,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300174,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010185,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010095,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300175,
+    "Conditions": 60017
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010194,
+      10
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300176,
+    "Conditions": 60017
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010186,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300177,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010058,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300178,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010187,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300179,
+    "Conditions": 60019
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010015,
+      4
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300180,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60007,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300181,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010081,
+      4
+    ],
+    "Conditions": 60003
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300182,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010080,
+      4
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300183,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010168,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300184,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010028,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300185,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010078,
+      3
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300186,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010092,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300187,
+    "reward2": 200736,
+    "shopType": 8,
+    "unlockItem1": [
+      4010084,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300188,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010136,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300189,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010085,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300190,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010090,
+      4
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300191,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010091,
+      4
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300192,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010190,
+      8
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300193,
+    "reward2": 200736,
+    "shopType": 8,
+    "unlockItem1": [
+      4010082,
+      4
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300194,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010089,
+      8
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300195,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010079,
+      4
+    ],
+    "Conditions": 60015
+  },
+  {
+    "shopType": 7,
+    "unlockItem1": [
+      4010087,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300196,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 8,
+    "unlockItem1": [
+      4010083,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300197,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 3,
+    "unlockItem1": [
+      4010088,
+      3
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300198,
+    "Conditions": 60020
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300199,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010155,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300200,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010165,
+      3
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300201,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010046,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300202,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010098,
+      6
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300203,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010100,
+      3
+    ],
+    "Conditions": 60009
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300204,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010157,
+      8
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300205,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010097,
+      8
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300206,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010047,
+      8
+    ],
+    "Conditions": 60015
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300207,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010045,
+      3
+    ],
+    "Conditions": 60015
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010142,
+      3
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300208,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010099,
+      3
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300209,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010156,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300210,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60012,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300211,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010134,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60012,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300212,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010064,
+      3
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60012,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300213,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010062,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300214,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010061,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300215,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010112,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300216,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010049,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300217,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010184,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300218,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010141,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300219,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010055,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300220,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010060,
+      4
+    ],
+    "Conditions": 60016
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300221,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010158,
+      4
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010054,
+      4
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300222,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010143,
+      2
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300223,
+    "Conditions": 60018
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60012,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300224,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010135,
+      3
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60012,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300225,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010012,
+      3
+    ],
+    "Conditions": 60008
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300226,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010002,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300227,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010009,
+      6
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300228,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010011,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300229,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010192,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300230,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010188,
+      5
+    ],
+    "Conditions": 60016
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010189,
+      4
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300231,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60010,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300232,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4020067,
+      2
+    ],
+    "Conditions": 60004
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4020072,
+      2
+    ],
+    "flushWeight": 4,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300233,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300234,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4020068,
+      3
+    ],
+    "Conditions": 60008
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4020071,
+      4
+    ],
+    "flushWeight": 4,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300235,
+    "Conditions": 60016
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300236,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4020069,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300237,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4020070,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300238,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4020075,
+      3
+    ],
+    "Conditions": 60010
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4020076,
+      4
+    ],
+    "flushWeight": 4,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300239,
+    "Conditions": 60017
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4020078,
+      5
+    ],
+    "flushWeight": 4,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300240,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300241,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4020073,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300242,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4020074,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "flushWeight": 4,
+    "noFlushCondition": 60018,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300243,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4020052,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "shopType": 8,
+    "unlockItem1": [
+      4020077,
+      5
+    ],
+    "flushWeight": 4,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300244,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 8,
+    "unlockItem1": [
+      4010121,
+      12
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 3,
+    "orderStar": 4,
+    "reward1": 300245,
+    "Conditions": 60006
+  },
+  {
+    "shopType": 7,
+    "unlockItem1": [
+      4010128,
+      10
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 4,
+    "reward1": 300246,
+    "Conditions": 60011
+  },
+  {
+    "shopType": 6,
+    "unlockItem1": [
+      4010122,
+      6
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 4,
+    "reward1": 300247,
+    "Conditions": 60016
+  },
+  {
+    "shopType": 2,
+    "unlockItem1": [
+      4010129,
+      12
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 3,
+    "orderStar": 4,
+    "reward1": 300248,
+    "Conditions": 60006
+  },
+  {
+    "shopType": 3,
+    "unlockItem1": [
+      4010123,
+      10
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 4,
+    "reward1": 300249,
+    "Conditions": 60011
+  },
+  {
+    "shopType": 7,
+    "unlockItem1": [
+      4010124,
+      6
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 4,
+    "reward1": 300250,
+    "Conditions": 60016
+  },
+  {
+    "shopType": 8,
+    "unlockItem1": [
+      4010125,
+      12
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 3,
+    "orderStar": 4,
+    "reward1": 300251,
+    "Conditions": 60006
+  },
+  {
+    "shopType": 5,
+    "unlockItem1": [
+      4010130,
+      10
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 4,
+    "reward1": 300252,
+    "Conditions": 60011
+  },
+  {
+    "shopType": 6,
+    "unlockItem1": [
+      4010132,
+      6
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 4,
+    "reward1": 300253,
+    "Conditions": 60016
+  },
+  {
+    "shopType": 6,
+    "unlockItem1": [
+      4010126,
+      12
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 3,
+    "orderStar": 4,
+    "reward1": 300254,
+    "Conditions": 60006
+  },
+  {
+    "shopType": 7,
+    "unlockItem1": [
+      4010131,
+      10
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 4,
+    "reward1": 300255,
+    "Conditions": 60011
+  },
+  {
+    "shopType": 5,
+    "unlockItem1": [
+      4010127,
+      6
+    ],
+    "flushWeight": 3,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 4,
+    "reward1": 300256,
+    "Conditions": 60016
+  },
+  {
+    "shopType": 2,
+    "unlockItem1": [
+      4010166,
+      3
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 5,
+    "reward1": 300257,
+    "Conditions": 60007
+  },
+  {
+    "shopType": 2,
+    "unlockItem1": [
+      4010006,
+      2
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 5,
+    "reward1": 300258,
+    "Conditions": 60009
+  },
+  {
+    "shopType": 5,
+    "unlockItem1": [
+      4010140,
+      4
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 4,
+    "orderStar": 5,
+    "reward1": 300259,
+    "Conditions": 60012
+  },
+  {
+    "shopType": 1,
+    "unlockItem1": [
+      4010102,
+      3
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 5,
+    "reward1": 300260,
+    "Conditions": 60016
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010093,
+      4
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 5,
+    "reward1": 300261,
+    "Conditions": 60018
+  },
+  {
+    "shopType": 4,
+    "unlockItem1": [
+      4010030,
+      5
+    ],
+    "flushWeight": 2,
+    "reward2": 200736,
+    "orderQuality": 5,
+    "orderStar": 5,
+    "reward1": 300262,
+    "Conditions": 60019
+  },
+  {
+    "flushWeight": 10,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300263,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010146,
+      2
+    ],
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300264,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010147,
+      2
+    ],
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300265,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010148,
+      2
+    ],
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300266,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010149,
+      4
+    ],
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "Conditions": 60012
+  },
+  {
+    "flushWeight": 10,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300267,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010150,
+      2
+    ],
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "Conditions": 60010
+  },
+  {
+    "flushWeight": 10,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300268,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010151,
+      3
+    ],
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "Conditions": 60012
+  },
+  {
+    "carLevelOrder": 2,
+    "flushWeight": 10,
+    "noFlushCondition": 60003,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300001,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4001018,
+      38
+    ],
+    "Conditions": 60002
+  },
+  {
+    "carLevelOrder": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60006,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300117,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010032,
+      4
+    ],
+    "Conditions": 60002
+  },
+  {
+    "carLevelOrder": 3,
+    "flushWeight": 10,
+    "noFlushCondition": 60007,
+    "orderQuality": 1,
+    "orderStar": 2,
+    "reward1": 300066,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010081,
+      2
+    ],
+    "Conditions": 60003
+  },
+  {
+    "carLevelOrder": 3,
+    "flushWeight": 2,
+    "noFlushCondition": 60007,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300181,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010081,
+      4
+    ],
+    "Conditions": 60003
+  },
+  {
+    "carLevelOrder": 4,
+    "flushWeight": 2,
+    "noFlushCondition": 60008,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300127,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010073,
+      4
+    ],
+    "Conditions": 60004
+  },
+  {
+    "carLevelOrder": 4,
+    "flushWeight": 4,
+    "noFlushCondition": 60010,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300232,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4020067,
+      2
+    ],
+    "Conditions": 60004
+  },
+  {
+    "carLevelOrder": 5,
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300140,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010191,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "carLevelOrder": 5,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60009,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300199,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010155,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "carLevelOrder": 5,
+    "flushWeight": 4,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 3,
+    "reward1": 300241,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4020073,
+      2
+    ],
+    "Conditions": 60005
+  },
+  {
+    "carLevelOrder": 6,
+    "flushWeight": 2,
+    "noFlushCondition": 60010,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300157,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010027,
+      3
+    ],
+    "Conditions": 60006
+  },
+  {
+    "carLevelOrder": 6,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60010,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300166,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010001,
+      3
+    ],
+    "Conditions": 60006
+  },
+  {
+    "carLevelOrder": 6,
+    "flushWeight": 3,
+    "orderQuality": 3,
+    "orderStar": 4,
+    "reward1": 300248,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010129,
+      12
+    ],
+    "Conditions": 60006
+  },
+  {
+    "carLevelOrder": 7,
+    "flushWeight": 10,
+    "noFlushCondition": 60011,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300070,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010078,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "carLevelOrder": 7,
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300129,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010133,
+      6
+    ],
+    "Conditions": 60007
+  },
+  {
+    "carLevelOrder": 7,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60011,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300141,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010154,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "carLevelOrder": 7,
+    "flushWeight": 4,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300242,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4020074,
+      2
+    ],
+    "Conditions": 60007
+  },
+  {
+    "carLevelOrder": 8,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60012,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300211,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010134,
+      2
+    ],
+    "Conditions": 60008
+  },
+  {
+    "carLevelOrder": 8,
+    "flushWeight": 2,
+    "noFlushCondition": 60012,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300225,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010012,
+      3
+    ],
+    "Conditions": 60008
+  },
+  {
+    "carLevelOrder": 8,
+    "flushWeight": 4,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300234,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4020068,
+      3
+    ],
+    "Conditions": 60008
+  },
+  {
+    "carLevelOrder": 9,
+    "flushWeight": 10,
+    "noFlushCondition": 60013,
+    "orderQuality": 2,
+    "orderStar": 2,
+    "reward1": 300072,
+    "reward2": 200736,
+    "shopType": 8,
+    "unlockItem1": [
+      4010084,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "carLevelOrder": 9,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300144,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010104,
+      2
+    ],
+    "Conditions": 60009
+  },
+  {
+    "carLevelOrder": 9,
+    "flushWeight": 2,
+    "noFlushCondition": 60013,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300202,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010098,
+      6
+    ],
+    "Conditions": 60009
+  },
+  {
+    "carLevelOrder": 9,
+    "flushWeight": 3,
+    "orderQuality": 3,
+    "orderStar": 4,
+    "reward1": 300245,
+    "reward2": 200736,
+    "shopType": 8,
+    "unlockItem1": [
+      4010121,
+      12
+    ],
+    "Conditions": 60006
+  },
+  {
+    "carLevelOrder": 10,
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300152,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010040,
+      6
+    ],
+    "Conditions": 60010
+  },
+  {
+    "carLevelOrder": 10,
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300160,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010017,
+      3
+    ],
+    "Conditions": 60010
+  },
+  {
+    "carLevelOrder": 10,
+    "defaultMult": 2,
+    "flushWeight": 4,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300236,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4020069,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "carLevelOrder": 11,
+    "flushWeight": 2,
+    "noFlushCondition": 60014,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300215,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010112,
+      2
+    ],
+    "Conditions": 60010
+  },
+  {
+    "carLevelOrder": 11,
+    "defaultMult": 2,
+    "flushWeight": 4,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 3,
+    "reward1": 300238,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4020075,
+      3
+    ],
+    "Conditions": 60010
+  },
+  {
+    "carLevelOrder": 11,
+    "flushWeight": 3,
+    "orderQuality": 4,
+    "orderStar": 4,
+    "reward1": 300249,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010123,
+      10
+    ],
+    "Conditions": 60011
+  },
+  {
+    "carLevelOrder": 12,
+    "flushWeight": 10,
+    "noFlushCondition": 60016,
+    "orderQuality": 3,
+    "orderStar": 2,
+    "reward1": 300075,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010090,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "carLevelOrder": 12,
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300133,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010066,
+      4
+    ],
+    "Conditions": 60012
+  },
+  {
+    "carLevelOrder": 12,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60016,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300146,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010077,
+      3
+    ],
+    "Conditions": 60012
+  },
+  {
+    "carLevelOrder": 12,
+    "flushWeight": 2,
+    "orderQuality": 4,
+    "orderStar": 5,
+    "reward1": 300259,
+    "reward2": 200736,
+    "shopType": 5,
+    "unlockItem1": [
+      4010140,
+      4
+    ],
+    "Conditions": 60012
+  },
+  {
+    "carLevelOrder": 13,
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300173,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010159,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "carLevelOrder": 13,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300217,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010184,
+      3
+    ],
+    "Conditions": 60013
+  },
+  {
+    "carLevelOrder": 13,
+    "flushWeight": 2,
+    "noFlushCondition": 60017,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300218,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010141,
+      4
+    ],
+    "Conditions": 60013
+  },
+  {
+    "carLevelOrder": 14,
+    "flushWeight": 2,
+    "noFlushCondition": 60018,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300136,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010076,
+      8
+    ],
+    "Conditions": 60014
+  },
+  {
+    "carLevelOrder": 14,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60018,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300162,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010139,
+      4
+    ],
+    "Conditions": 60014
+  },
+  {
+    "carLevelOrder": 14,
+    "flushWeight": 3,
+    "orderQuality": 4,
+    "orderStar": 4,
+    "reward1": 300252,
+    "reward2": 200736,
+    "shopType": 5,
+    "unlockItem1": [
+      4010130,
+      10
+    ],
+    "Conditions": 60011
+  },
+  {
+    "carLevelOrder": 15,
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300194,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010089,
+      8
+    ],
+    "Conditions": 60015
+  },
+  {
+    "carLevelOrder": 15,
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300195,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010079,
+      4
+    ],
+    "Conditions": 60015
+  },
+  {
+    "carLevelOrder": 15,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60019,
+    "orderQuality": 4,
+    "orderStar": 3,
+    "reward1": 300207,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010045,
+      3
+    ],
+    "Conditions": 60015
+  },
+  {
+    "carLevelOrder": 16,
+    "flushWeight": 10,
+    "noFlushCondition": 60020,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300009,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010024,
+      8
+    ],
+    "Conditions": 60016
+  },
+  {
+    "carLevelOrder": 16,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300221,
+    "reward2": 200736,
+    "shopType": 2,
+    "unlockItem1": [
+      4010158,
+      4
+    ],
+    "Conditions": 60016
+  },
+  {
+    "carLevelOrder": 16,
+    "flushWeight": 2,
+    "noFlushCondition": 60020,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300230,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010188,
+      5
+    ],
+    "Conditions": 60016
+  },
+  {
+    "carLevelOrder": 16,
+    "flushWeight": 3,
+    "orderQuality": 5,
+    "orderStar": 4,
+    "reward1": 300253,
+    "reward2": 200736,
+    "shopType": 6,
+    "unlockItem1": [
+      4010132,
+      6
+    ],
+    "Conditions": 60016
+  },
+  {
+    "carLevelOrder": 17,
+    "flushWeight": 10,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300061,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010194,
+      8
+    ],
+    "Conditions": 60017
+  },
+  {
+    "carLevelOrder": 17,
+    "flushWeight": 2,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300175,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010095,
+      5
+    ],
+    "Conditions": 60017
+  },
+  {
+    "carLevelOrder": 17,
+    "defaultMult": 2,
+    "flushWeight": 4,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300239,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4020076,
+      4
+    ],
+    "Conditions": 60017
+  },
+  {
+    "carLevelOrder": 18,
+    "flushWeight": 10,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300082,
+    "reward2": 200736,
+    "shopType": 8,
+    "unlockItem1": [
+      4010083,
+      4
+    ],
+    "Conditions": 60018
+  },
+  {
+    "carLevelOrder": 18,
+    "flushWeight": 2,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300222,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010054,
+      4
+    ],
+    "Conditions": 60018
+  },
+  {
+    "carLevelOrder": 18,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300223,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010143,
+      2
+    ],
+    "Conditions": 60018
+  },
+  {
+    "carLevelOrder": 19,
+    "flushWeight": 10,
+    "orderQuality": 4,
+    "orderStar": 2,
+    "reward1": 300050,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010019,
+      4
+    ],
+    "Conditions": 60019
+  },
+  {
+    "carLevelOrder": 19,
+    "flushWeight": 2,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300156,
+    "reward2": 200736,
+    "shopType": 7,
+    "unlockItem1": [
+      4010193,
+      4
+    ],
+    "Conditions": 60019
+  },
+  {
+    "carLevelOrder": 19,
+    "defaultMult": 2,
+    "flushWeight": 2,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300231,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4010189,
+      4
+    ],
+    "Conditions": 60019
+  },
+  {
+    "carLevelOrder": 20,
+    "flushWeight": 2,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300198,
+    "reward2": 200736,
+    "shopType": 3,
+    "unlockItem1": [
+      4010088,
+      3
+    ],
+    "Conditions": 60020
+  },
+  {
+    "carLevelOrder": 20,
+    "defaultMult": 2,
+    "flushWeight": 4,
+    "orderQuality": 5,
+    "orderStar": 3,
+    "reward1": 300233,
+    "reward2": 200736,
+    "shopType": 1,
+    "unlockItem1": [
+      4020072,
+      2
+    ],
+    "Conditions": 60019
+  },
+  {
+    "carLevelOrder": 20,
+    "flushWeight": 2,
+    "orderQuality": 5,
+    "orderStar": 5,
+    "reward1": 300262,
+    "reward2": 200736,
+    "shopType": 4,
+    "unlockItem1": [
+      4010030,
+      5
+    ],
+    "Conditions": 60019
+  }
+]

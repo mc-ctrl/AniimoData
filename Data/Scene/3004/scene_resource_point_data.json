@@ -1,0 +1,94 @@
+{
+  "90850923": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "routeIds": {},
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 90870395,
+    "yaw": 0,
+    "templateId": 42137762,
+    "name": "",
+    "id": 90850923,
+    "position": [
+      -420.93,
+      16.15,
+      71.33
+    ],
+    "activeRangeOverride": 0,
+    "additiveTags": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "90850919": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "routeIds": {},
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 90870395,
+    "yaw": 0,
+    "templateId": 42132691,
+    "name": "",
+    "id": 90850919,
+    "position": [
+      -429.46,
+      17.21,
+      78.18
+    ],
+    "activeRangeOverride": 0,
+    "additiveTags": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "90850920": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "routeIds": {},
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 90870395,
+    "yaw": 0,
+    "templateId": 42132691,
+    "name": "",
+    "id": 90850920,
+    "position": [
+      -427.53,
+      17.23,
+      76.89
+    ],
+    "activeRangeOverride": 0,
+    "additiveTags": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  },
+  "90850921": {
+    "groupBehaviourSandboxId": 0,
+    "photoId": 0,
+    "portOverrideDatas": {},
+    "routeIds": {},
+    "usePointOverride": false,
+    "usePortOverride": false,
+    "routeId": 0,
+    "sandboxId": 90870395,
+    "yaw": 0,
+    "templateId": 42137762,
+    "name": "",
+    "id": 90850921,
+    "position": [
+      -414.79,
+      15.01,
+      96.94
+    ],
+    "activeRangeOverride": 0,
+    "additiveTags": {},
+    "climbTreeId": 0,
+    "groupBehaviourLevelItemId": 0
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "BPName": "ability_14310100",
+  "NodeID": 1,
+  "UID": "9fea0257-a909-458e-8074-da7c10429097",
+  "abilityParamId": 10800330,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "75": {
+      "startPosOffset": [
+        0,
+        0,
+        0
+      ],
+      "duration": 0,
+      "name": "enableSupportAimEffect",
+      "UID": "95575802-62f0-401c-9579-f05f03e79500",
+      "startNoGravityTime": 0,
+      "gravityRatio": 0,
+      "rotationOffset": [
+        0,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 75,
+      "enable": false,
+      "moveSpeed": 0
+    },
+    "15": {
+      "timelineId": 14310100002,
+      "name": "setCombatActionTimeline",
+      "UID": "d53cb538-9417-4af7-892a-a3290fdd3ead",
+      "target": "CASTER",
+      "NodeID": 15
+    },
+    "78": {
+      "UID": "1a94d864-e533-431e-8f09-053c1fd36dd4",
+      "name": "enableSkillThrowState",
+      "enable": false,
+      "NodeID": 78
+    }
+  },
+  "onAbilityCastIds": [
+    15
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_MudBowling_Fire",
+    "Skill_MudBowling_Start"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10431_Skill_TurretForm_02",
+    "Eff_Parmon_10431_Skill_TurretForm_01",
+    "Eff_Parmon_10431_Skill_TurretForm_03"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    78,
+    75
+  ],
+  "searchTargetRangeDown": 2,
+  "isAim": true
+}

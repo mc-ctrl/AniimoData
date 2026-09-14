@@ -1,0 +1,197 @@
+{
+  "nodeMap": {
+    "37": {
+      "action": {
+        "actionIds": [
+          36
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 37,
+      "UID": "90d375a3-84ab-4e24-8c78-59228c74863b"
+    },
+    "38": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "f4963ed4-6edf-4526-b049-cf76e35bdef8",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 38
+    },
+    "39": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "c120e966-ceb9-436e-a09b-a0a2a9e4923d",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 39
+    },
+    "6": {
+      "UID": "136b87a3-5b19-47f5-99f5-09d0021d9a3e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          27
+        ]
+      },
+      "NodeID": 6
+    },
+    "35": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "89029da6-aaef-4120-bb1b-49dcfcce5479",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "12": {
+      "UID": "bfb1c600-ad3a-48cd-a7ef-41974fb7ba14",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "014b5b2f-2948-465d-9619-ba622b8ad2d6",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_realse",
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "0838fc12-dd8e-4c99-ba05-47c59f7a3d46",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.15,
+      "NodeID": 14,
+      "UID": "24bf2513-deaa-4557-9deb-df738cdd459f"
+    },
+    "16": {
+      "UID": "ae7d8a77-6d6b-4ace-8d10-c8e47f543ceb",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "19efbdd3-a81f-4127-89e4-9b708d6f560c",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "21": {
+      "UID": "fd76dfc0-5591-4a6c-9a0a-46c7d646a7db",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          22,
+          33,
+          34
+        ]
+      },
+      "NodeID": 21
+    },
+    "18": {
+      "UID": "db7fa89d-5356-4487-80b1-54b459de9026",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "19": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "145b2409-c8c0-4266-87ac-7d27c6a86352",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Skill_RunAway"
+    },
+    "33": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "85bfa50d-f3b6-45c6-a003-74e4816cddb6",
+      "effectId": "Eff_Parmon_10143_Skill_RunAway_Trail",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "34": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 114106,
+      "name": "createEntity",
+      "UID": "699c76b9-b1ad-4249-9d48-6c60d68a20b4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 0,
+      "rot": "OWNER",
+      "NodeID": 34,
+      "pos": "CASTER"
+    },
+    "36": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "5278b15f-27f3-4c43-8773-691035ba4cc6",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        39
+      ],
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_11420100",
+  "NodeID": 8,
+  "UID": "49a5a0b4-fef2-414f-b2fd-03a9522f36f7",
+  "eventIds": [
+    6,
+    18,
+    14,
+    21,
+    37
+  ],
+  "layer": "Base",
+  "length": 2.3
+}

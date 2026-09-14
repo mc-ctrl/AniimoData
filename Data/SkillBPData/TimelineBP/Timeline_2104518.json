@@ -1,0 +1,195 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "offsetXYZ": [
+        0,
+        0.3,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "b3b8886a-f57d-48aa-bc90-3cb9b82663c9",
+      "effectId": "Eff_Buff_Rogue_Heal_Drop",
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 3,
+      "scale": 2
+    },
+    "13": {
+      "actionIds": [
+        11,
+        19,
+        21
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "9fac24e5-11fa-4525-914f-48644de47e19",
+      "target": "MASTER",
+      "NodeID": 13
+    },
+    "6": {
+      "UID": "3277e952-f1c0-4c0b-96be-10d8e96e1519",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          5
+        ]
+      },
+      "NodeID": 6
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 10,
+      "relation": 1,
+      "enterTrapActionIds": [
+        17,
+        25,
+        8,
+        18,
+        15
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        1
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "a7d895ff-7470-4ddd-927f-cebdeb06c432"
+    },
+    "15": {
+      "UID": "657aa533-71d9-4d96-8c38-27b39fbe1049",
+      "actorId": {
+        "UID": "231029c3-3620-45fd-9830-cc7b0bd9cafe",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 14
+      },
+      "name": "destroyEntity",
+      "NodeID": 15
+    },
+    "25": {
+      "calcInfo": {
+        "add_cur_hp_max_p": {
+          "calcId": 2104518,
+          "calcType": 4,
+          "paramName": "param0",
+          "NodeID": 23,
+          "UID": "e6a0c79a-d1c4-42c0-8251-3ae193aea708",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "calcResult",
+      "UID": "11295a9a-b941-4d15-a877-07314530f735",
+      "target": "TrapTarget",
+      "NodeID": 25
+    },
+    "23": {
+      "calcId": 2104518,
+      "calcType": 4,
+      "paramName": "param0",
+      "NodeID": 23,
+      "UID": "e6a0c79a-d1c4-42c0-8251-3ae193aea708",
+      "name": "getParamByLuaConfig"
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "822697fe-ed2a-4fc9-809d-f6fb9019988e",
+      "effectId": "Eff_Buff_Rogue_Heal_Drop",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "17": {
+      "target": "TrapTarget",
+      "name": "playEffectStr",
+      "UID": "155c2486-5869-4b77-a013-2e112df6a6e0",
+      "effectId": "Eff_Buff_Rogue_Heal_Pickup",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "22": {
+      "name": "isInCombat",
+      "UID": "5013bf67-7f66-4c91-adb9-3c5643ef85e0",
+      "target": "MASTER",
+      "NodeID": 22,
+      "not": false
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "94e2b0e1-2243-453d-aad9-69a31ef23e87",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Heal_Drop",
+      "NodeID": 18
+    },
+    "5": {
+      "actionIds": [
+        3,
+        10,
+        13
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "6251e37b-11f1-405d-96e0-115709d49092",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        11,
+        19,
+        21
+      ],
+      "NodeID": 5
+    },
+    "11": {
+      "offsetXYZ": [
+        0,
+        1,
+        0
+      ],
+      "templateId": 2104518201,
+      "name": "createProjectile",
+      "UID": "e6247307-0a48-4cb3-b8d2-4c43a7c3daa6",
+      "rotation": "ToTarget",
+      "pos": "OWNER",
+      "projectileType": "Tracking",
+      "targetPos": "MASTER",
+      "NodeID": 11,
+      "offsetRotation": [
+        0,
+        30,
+        0
+      ]
+    },
+    "19": {
+      "name": "stopEffectStr",
+      "UID": "35ce6b72-c362-4d9c-8cb7-718d2f5904a0",
+      "effectId": "Eff_Buff_Rogue_Heal_Drop",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "21": {
+      "UID": "6f471e44-0221-4c10-8c15-82cae73d723b",
+      "actorId": {
+        "UID": "76f16122-834d-4d65-9941-4ba604cb0bfb",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 20
+      },
+      "name": "destroyEntity",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2104518",
+  "NodeID": 1,
+  "UID": "04f1a29c-ec7a-44f6-bb3b-08d0e59b5711",
+  "eventIds": [
+    6
+  ],
+  "layer": "Base",
+  "length": 99999
+}

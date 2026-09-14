@@ -1,0 +1,110 @@
+{
+  "1011": {
+    "name": "TW-SH"
+  },
+  "1023": {
+    "name": "Aniimo-OS"
+  },
+  "1012": {
+    "name": "KO-SH"
+  },
+  "1013": {
+    "name": "VN-SH"
+  },
+  "1014": {
+    "name": "ST-Review"
+  },
+  "1016": {
+    "name": "Aniimo-GT"
+  },
+  "1015": {
+    "name": "EP-Review"
+  },
+  "4003": {
+    "name": "publish服"
+  },
+  "4004": {
+    "name": "feature服"
+  },
+  "1002": {
+    "name": "EN-Official"
+  },
+  "1025": {
+    "name": "Aniimo-QATT"
+  },
+  "2001": {
+    "name": "Aniimo-ZH"
+  },
+  "2002": {
+    "name": "Aniimo-EN"
+  },
+  "2003": {
+    "name": "CN-Press"
+  },
+  "2004": {
+    "name": "NA-Press"
+  },
+  "2005": {
+    "name": "EU-Press"
+  },
+  "2006": {
+    "name": "AP-Press"
+  },
+  "1001": {
+    "name": "CN-Official"
+  },
+  "4002": {
+    "name": "release服"
+  },
+  "4001": {
+    "name": "ver001"
+  },
+  "1003": {
+    "name": "AP-Official"
+  },
+  "1004": {
+    "name": "ST-Official"
+  },
+  "1005": {
+    "name": "Aniimo-CN"
+  },
+  "1010": {
+    "name": "Review-Global"
+  },
+  "1006": {
+    "name": "Aniimo-America"
+  },
+  "1009": {
+    "name": "Review-CN"
+  },
+  "1007": {
+    "name": "Aniimo-Europe"
+  },
+  "1024": {
+    "name": "CN-MIRROR"
+  },
+  "1008": {
+    "name": "Aniimo-Apac"
+  },
+  "1022": {
+    "name": "Aniimo-Pioneer"
+  },
+  "3001": {
+    "name": "release-cloud"
+  },
+  "1017": {
+    "name": "PS-Review"
+  },
+  "1018": {
+    "name": "AOS-TT"
+  },
+  "1019": {
+    "name": "Review-CN2"
+  },
+  "1020": {
+    "name": "Aniimo-mirror"
+  },
+  "1021": {
+    "name": "Aniimo-NA"
+  }
+}

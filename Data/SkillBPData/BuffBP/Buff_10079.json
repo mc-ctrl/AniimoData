@@ -1,0 +1,183 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 10079,
+    "dmg_fire_dec_ratio": "param0",
+    "type": 1
+  },
+  "BPName": "buff_10079",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "parentDynamicRPCStates": {},
+  "stackRule": 0,
+  "tags": [
+    11,
+    24
+  ],
+  "onBuffThinkIds": [
+    10,
+    13
+  ],
+  "onBuffLayerChangeIds": [
+    19
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "4ae35e6c-183a-4cef-a065-29af1e536110",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "4": {
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "12fe3d14-d60d-4c04-b1df-f7ee77491995",
+      "name": "doActionsByConditions",
+      "NodeID": 4,
+      "elseActionIds": [
+        7
+      ]
+    },
+    "6": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "9d10341a-6d54-4c22-a1aa-950e7fc13c07",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "tag": "TE_Env_InflameState",
+      "name": "addEntityTag",
+      "UID": "0d5fc626-57ce-41a5-a6d4-d01d6a602b54",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "15": {
+      "tag": "TE_Env_InflameState",
+      "name": "removeEntityTag",
+      "UID": "734b0b94-28fb-40a7-b97b-3b7c2a8ea41f",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "06c5c077-80dd-4641-a28f-66b0823fafe0",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        9
+      ]
+    },
+    "23": {
+      "rValue": {
+        "key": "FireLayer",
+        "name": "getCacheVal",
+        "UID": "6f663fc3-9e52-4e57-ad5e-f424d9bb1d96",
+        "target": "OWNER",
+        "NodeID": 24
+      },
+      "name": "greater",
+      "UID": "ae4a4bc9-465f-44bf-9a8a-9e1417ee7a52",
+      "NodeID": 23,
+      "lValue": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "7eca5d57-76b1-4e64-b1d3-9362c6a4601a",
+        "target": "OWNER",
+        "NodeID": 20
+      }
+    },
+    "22": {
+      "key": "FireLayer",
+      "name": "setCacheVal",
+      "UID": "61d05e05-caf3-4dc8-af1d-b6aa1aa3690c",
+      "target": "OWNER",
+      "val": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "7eca5d57-76b1-4e64-b1d3-9362c6a4601a",
+        "target": "OWNER",
+        "NodeID": 20
+      },
+      "NodeID": 22
+    },
+    "17": {
+      "eventName": "Qxxz_FireLayer",
+      "name": "notifyCustomEvent",
+      "UID": "5768b084-ee1f-453e-9915-482f9e337ad7",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "eec9060c-653d-47e9-ad38-ac605a0bc1ec",
+      "name": "buffStartThink",
+      "NodeID": 9
+    },
+    "21": {
+      "key": "FireLayer",
+      "name": "setCacheVal",
+      "UID": "3df7fc32-7119-47c1-875c-ba89278c6328",
+      "target": "OWNER",
+      "val": {
+        "templateId": 10079,
+        "name": "getBuffLayer",
+        "UID": "7eca5d57-76b1-4e64-b1d3-9362c6a4601a",
+        "target": "OWNER",
+        "NodeID": 20
+      },
+      "NodeID": 21
+    },
+    "14": {
+      "delay": 4,
+      "interval": 10,
+      "UID": "98b8e89b-1214-4f8f-a337-07a96bdb51af",
+      "name": "buffStartThink",
+      "NodeID": 14
+    },
+    "19": {
+      "actionIds": [
+        17,
+        21
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "d1af5373-eb14-428a-a2e8-4ad24bac4475",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        22
+      ],
+      "NodeID": 19
+    },
+    "13": {
+      "duration": 0.5,
+      "actionIds": [
+        12
+      ],
+      "NodeID": 13,
+      "UID": "85fcbfe5-83e9-4b1e-b501-6b7320445dc1",
+      "name": "addTimer"
+    },
+    "12": {
+      "tag": "TE_Env_InflameState",
+      "name": "removeEntityTag",
+      "UID": "372a188f-c77b-4407-be05-3b308c0b1716",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    15
+  ],
+  "onBuffStartIds": [
+    14,
+    4
+  ]
+}

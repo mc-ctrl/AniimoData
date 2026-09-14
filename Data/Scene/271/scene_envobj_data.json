@@ -1,0 +1,50 @@
+{
+  "33302037": {
+    "createType": 1,
+    "templateId": 18,
+    "staticId": 33302037,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      5.5,
+      0,
+      3.86
+    ]
+  },
+  "33302047": {
+    "createType": 1,
+    "templateId": 62,
+    "staticId": 33302047,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      5.59,
+      0,
+      6.59
+    ]
+  },
+  "33170769": {
+    "createType": 1,
+    "templateId": 45,
+    "staticId": 33170769,
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "position": [
+      -5.1,
+      0,
+      -10.56
+    ]
+  }
+}

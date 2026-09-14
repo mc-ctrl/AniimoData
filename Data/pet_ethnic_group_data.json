@@ -1,0 +1,890 @@
+{
+  "1017": [
+    {
+      "1017200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1017400": {
+        "stage": 3,
+        "position": 1
+      },
+      "1017100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1017300": {
+        "stage": 3,
+        "position": 2
+      }
+    },
+    {
+      "1017301": {
+        "stage": 3,
+        "position": 2
+      },
+      "1017201": {
+        "stage": 2,
+        "position": 1
+      },
+      "1017101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1017401": {
+        "stage": 3,
+        "position": 1
+      }
+    }
+  ],
+  "1018": [
+    {
+      "1018700": {
+        "stage": 3,
+        "position": 2
+      },
+      "1018400": {
+        "stage": 3,
+        "position": 0
+      },
+      "1018500": {
+        "stage": 3,
+        "position": 1
+      },
+      "1018100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1018401": {
+        "stage": 3,
+        "position": 0
+      },
+      "1018701": {
+        "stage": 3,
+        "position": 2
+      },
+      "1018101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1018501": {
+        "stage": 3,
+        "position": 1
+      }
+    },
+    {
+      "1018503": {
+        "stage": 3,
+        "position": 1
+      },
+      "1018403": {
+        "stage": 3,
+        "position": 0
+      },
+      "1018703": {
+        "stage": 3,
+        "position": 2
+      },
+      "1018103": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1019": [
+    {
+      "1019200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1019400": {
+        "stage": 3,
+        "position": 2
+      },
+      "1019100": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1020": [
+    {
+      "1020300": {
+        "stage": 2,
+        "position": 0
+      },
+      "1020100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1020700": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1020101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1020301": {
+        "stage": 2,
+        "position": 0
+      },
+      "1020701": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1014": [
+    {
+      "1014200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1014300": {
+        "stage": 3,
+        "position": 2
+      },
+      "1014100": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1022": [
+    {
+      "1022200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1022100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1022202": {
+        "stage": 2,
+        "position": 1
+      },
+      "1022102": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1023": [
+    {
+      "1023200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1023100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1023201": {
+        "stage": 2,
+        "position": 1
+      },
+      "1023101": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1023102": {
+        "stage": 1,
+        "position": 0
+      },
+      "1023202": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1023203": {
+        "stage": 2,
+        "position": 1
+      },
+      "1023103": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1016": [
+    {
+      "1016200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1016300": {
+        "stage": 2,
+        "position": 0
+      },
+      "1016100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1016101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1016201": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1016202": {
+        "stage": 2,
+        "position": 1
+      },
+      "1016102": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1016203": {
+        "stage": 2,
+        "position": 1
+      },
+      "1016103": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1026": [
+    {
+      "1026300": {
+        "stage": 2,
+        "position": 0
+      },
+      "1026200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1026100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1026101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1026201": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1026102": {
+        "stage": 1,
+        "position": 0
+      },
+      "1026202": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1026105": {
+        "stage": 1,
+        "position": 0
+      },
+      "1026205": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1028": [
+    {
+      "1028500": {
+        "stage": 3,
+        "position": 2
+      },
+      "1028200": {
+        "stage": 2,
+        "position": 0
+      },
+      "1028300": {
+        "stage": 3,
+        "position": 0
+      },
+      "1028100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1028400": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1029": [
+    {
+      "1029100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1029300": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1001": [
+    {
+      "1001200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1001100": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "2002": [
+    {
+      "1002400": {
+        "stage": 1,
+        "position": 0
+      },
+      "1002300": {
+        "stage": 3,
+        "position": 1
+      },
+      "1002500": {
+        "stage": 3,
+        "position": 2
+      },
+      "1002200": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1002201": {
+        "stage": 2,
+        "position": 1
+      },
+      "1002301": {
+        "stage": 3,
+        "position": 1
+      },
+      "1002401": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1032": [
+    {
+      "1032400": {
+        "stage": 2,
+        "position": 1
+      },
+      "1032100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1032300": {
+        "stage": 2,
+        "position": 0
+      }
+    },
+    {
+      "1032103": {
+        "stage": 1,
+        "position": 0
+      },
+      "1032303": {
+        "stage": 2,
+        "position": 0
+      }
+    }
+  ],
+  "1003": [
+    {
+      "1003300": {
+        "stage": 2,
+        "position": 0
+      },
+      "1003100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1003200": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1003101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1003201": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1003203": {
+        "stage": 2,
+        "position": 1
+      },
+      "1003103": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1004": [
+    {
+      "1004300": {
+        "stage": 3,
+        "position": 1
+      },
+      "1004500": {
+        "stage": 3,
+        "position": 2
+      },
+      "1004100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1004200": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1004101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1004301": {
+        "stage": 3,
+        "position": 1
+      },
+      "1004201": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1004202": {
+        "stage": 2,
+        "position": 1
+      },
+      "1004302": {
+        "stage": 3,
+        "position": 1
+      },
+      "1004102": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1002": [
+    {
+      "1002700": {
+        "stage": 2,
+        "position": 1
+      },
+      "1002600": {
+        "stage": 2,
+        "position": 0
+      },
+      "1002100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1002601": {
+        "stage": 2,
+        "position": 0
+      },
+      "1002101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1002701": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1002702": {
+        "stage": 2,
+        "position": 1
+      },
+      "1002602": {
+        "stage": 2,
+        "position": 0
+      },
+      "1002102": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1051": [
+    {
+      "1051100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1051200": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1050": [
+    {
+      "1050300": {
+        "stage": 2,
+        "position": 1
+      },
+      "1050100": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1021": [
+    {
+      "1021200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1021100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1021101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1021201": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1021202": {
+        "stage": 2,
+        "position": 1
+      },
+      "1021102": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1021103": {
+        "stage": 1,
+        "position": 0
+      },
+      "1021203": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1021206": {
+        "stage": 2,
+        "position": 1
+      },
+      "1021106": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1021105": {
+        "stage": 1,
+        "position": 0
+      },
+      "1021205": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1021204": {
+        "stage": 2,
+        "position": 1
+      },
+      "1021104": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1005": [
+    {
+      "1005500": {
+        "stage": 3,
+        "position": 2
+      },
+      "1005200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1005300": {
+        "stage": 3,
+        "position": 1
+      },
+      "1005100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1005201": {
+        "stage": 2,
+        "position": 1
+      },
+      "1005301": {
+        "stage": 3,
+        "position": 2
+      },
+      "1005101": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1005104": {
+        "stage": 1,
+        "position": 0
+      },
+      "1005204": {
+        "stage": 2,
+        "position": 1
+      },
+      "1005304": {
+        "stage": 3,
+        "position": 2
+      }
+    }
+  ],
+  "1033": [
+    {
+      "1033100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1033300": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1033301": {
+        "stage": 2,
+        "position": 1
+      },
+      "1033101": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1033102": {
+        "stage": 1,
+        "position": 0
+      },
+      "1033302": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1033303": {
+        "stage": 2,
+        "position": 1
+      },
+      "1033103": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1035": [
+    {
+      "1035100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1035200": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1043": [
+    {
+      "1043300": {
+        "stage": 2,
+        "position": 1
+      },
+      "1043100": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1044": [
+    {
+      "1044100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1044300": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1045": [
+    {
+      "1045300": {
+        "stage": 2,
+        "position": 0
+      },
+      "1045100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1045400": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1045301": {
+        "stage": 2,
+        "position": 0
+      },
+      "1045401": {
+        "stage": 2,
+        "position": 1
+      },
+      "1045101": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1013": [
+    {
+      "1013100": {
+        "stage": 1,
+        "position": 0
+      },
+      "1013200": {
+        "stage": 2,
+        "position": 1
+      },
+      "1013300": {
+        "stage": 3,
+        "position": 2
+      }
+    },
+    {
+      "1013202": {
+        "stage": 2,
+        "position": 1
+      },
+      "1013302": {
+        "stage": 3,
+        "position": 2
+      },
+      "1013102": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ],
+  "1047": [
+    {
+      "1047400": {
+        "stage": 2,
+        "position": 0
+      },
+      "1047500": {
+        "stage": 2,
+        "position": 1
+      },
+      "1047100": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1047101": {
+        "stage": 1,
+        "position": 0
+      },
+      "1047501": {
+        "stage": 2,
+        "position": 1
+      }
+    },
+    {
+      "1047502": {
+        "stage": 2,
+        "position": 1
+      },
+      "1047102": {
+        "stage": 1,
+        "position": 0
+      }
+    },
+    {
+      "1047103": {
+        "stage": 1,
+        "position": 0
+      },
+      "1047503": {
+        "stage": 2,
+        "position": 1
+      }
+    }
+  ],
+  "1048": [
+    {
+      "1048300": {
+        "stage": 2,
+        "position": 1
+      },
+      "1048100": {
+        "stage": 1,
+        "position": 0
+      }
+    }
+  ]
+}

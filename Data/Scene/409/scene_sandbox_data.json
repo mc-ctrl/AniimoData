@@ -1,0 +1,197 @@
+{
+  "58027677": {
+    "areaType": 999,
+    "chunk": 1013728,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "CE_通用",
+      "本地测试_关卡"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_生态点_羞羞獭求爱亲亲_资源点",
+    "spawners": [
+      58027682,
+      58027685
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 58027677,
+    "spawnerId": 0,
+    "owner": "徐梦璇",
+    "position": [
+      -333.9,
+      0,
+      -130.33
+    ]
+  },
+  "45238485": {
+    "areaType": 101,
+    "autoSave": false,
+    "chunk": 1013727,
+    "disposable": true,
+    "ecologyTriggers": {},
+    "desc": "",
+    "envobjs": {},
+    "graphId": 0,
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "onFinished": 1,
+    "otherExportSceneIds": {},
+    "poiType": 405,
+    "publishTags": [
+      "3DAY_草原",
+      "本地测试_关卡"
+    ],
+    "routes": [
+      45238468,
+      45238472,
+      45238473,
+      45238474
+    ],
+    "spawnerId": 0,
+    "sandboxType": 6,
+    "name": "玩跳跳菇_羞羞獭",
+    "sightLevelType": 128,
+    "spawners": [
+      45238476,
+      45238484
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "activeOnInit": 1,
+    "sightLevel": 128,
+    "position": [
+      -332.6,
+      0.1,
+      -213.84
+    ],
+    "lastModifiedBy": "",
+    "owner": "徐梦璇",
+    "id": 45238485,
+    "levelItems": {
+      "74689033": {
+        "majorCompId": 0,
+        "owner": "黄琦睿",
+        "EditorName": "P_Prefab_Container",
+        "position": [
+          -328.21,
+          0.21,
+          -213.76
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "siblingIndex": 0,
+        "serializeVersion": 3,
+        "id": 74689033,
+        "scale": [
+          2.9,
+          1.59,
+          3.71
+        ],
+        "componentsInfo": {
+          "52068382": {
+            "resId": "$P_Item_SceneObject_Transparent_Water.prefab"
+          }
+        },
+        "configId": 81,
+        "defaultValue": {
+          "resId": "$P_Item_SceneObject_Transparent_Water.prefab"
+        },
+        "hierarchyInfos": {},
+        "ignoreDistanceCheck": false,
+        "isActive": true
+      }
+    },
+    "markConfig": {
+      "hideToplogoMark": false,
+      "autoSetContent1": true,
+      "compassShowDistance": 0,
+      "entityStaticIdType": 0,
+      "mapAreaId": 0,
+      "markConfigId": 10405,
+      "markContent1": 45238485,
+      "nearState": 0,
+      "poiStaticIdType": 0,
+      "portalOffset": [
+        0,
+        0,
+        0
+      ],
+      "randomType": 0,
+      "refresTimeType": 0,
+      "showActiveDistance": true,
+      "scale1": 0,
+      "scale2": 0,
+      "scale3": 0,
+      "positionParam": [
+        0,
+        0
+      ],
+      "SloganPlayOnce": false,
+      "POIBoundStaticId": 0,
+      "POIDesc": "这是关键生态点，具体描述自助修改",
+      "POIOrNot": false,
+      "yaw": 0,
+      "showPortalOffset": false,
+      "inactiveTitle": "关键生态点",
+      "markType": 0,
+      "activeDisplayType": 1,
+      "activeDistance": 30,
+      "activeHigh": [
+        5,
+        -5
+      ],
+      "activeShapes": {},
+      "openMapState": 0,
+      "arriveType": 1,
+      "arriveParam": {},
+      "initState": 0,
+      "circleRadius": 0,
+      "enableHudShow": 1,
+      "entityId": 0
+    }
+  },
+  "56654489": {
+    "areaType": 999,
+    "chunk": 1013728,
+    "ecologyTriggers": {},
+    "envobjs": {},
+    "autoEndType": 0,
+    "markIconSpawnerId": 0,
+    "npcStaticId": 0,
+    "otherExportSceneIds": {},
+    "poiType": 501,
+    "publishTags": [
+      "CE_通用",
+      "本地测试_关卡"
+    ],
+    "routes": {},
+    "sandboxType": 1,
+    "name": "全局_生态点_互相锤头_羞羞獭",
+    "spawners": [
+      56654521,
+      56654524
+    ],
+    "startVersion": "0.0",
+    "stateId": 0,
+    "id": 56654489,
+    "spawnerId": 0,
+    "owner": "徐梦璇",
+    "position": [
+      -337.34,
+      0.05,
+      -158.26
+    ]
+  }
+}

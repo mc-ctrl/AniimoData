@@ -1,0 +1,38 @@
+[
+  {
+    "adventureCd": 120,
+    "adventureMaxnum": 1,
+    "adventureSandboxlist": [
+      [
+        72113431,
+        1
+      ],
+      [
+        72403609,
+        0.5
+      ]
+    ],
+    "adventureTime": 60,
+    "adventureType": 1,
+    "adventureWeight": 1,
+    "adventurename": "狼烟奇遇1",
+    "adventureActivationTime": 600,
+    "adventureAreaId": 20800
+  },
+  {
+    "adventureCd": 120,
+    "adventureMaxnum": 1,
+    "adventureSandboxlist": [
+      [
+        72403612,
+        1
+      ]
+    ],
+    "adventureTime": 60,
+    "adventureType": 1,
+    "adventureWeight": 1,
+    "adventurename": "狼烟奇遇2",
+    "adventureActivationTime": 600,
+    "adventureAreaId": 20800
+  }
+]

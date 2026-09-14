@@ -1,0 +1,87 @@
+{
+  "BPName": "ability_10210500",
+  "NodeID": 1,
+  "UID": "e2af8c1e-e820-47bc-a780-7deff92ab513",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "37": {
+      "key": "HelmonBoxValue",
+      "actionIds": [
+        36
+      ],
+      "NodeID": 37,
+      "UID": "22c2c0fa-87a8-4f99-97a3-f376cd2ae04b",
+      "name": "registerServerCacheValChange"
+    },
+    "38": {
+      "UID": "721f6f11-410b-4a30-8a0b-acd2dbba5693",
+      "name": "delVolumeEffect",
+      "index": 2,
+      "NodeID": 38
+    },
+    "9": {
+      "timelineId": 10210500001,
+      "name": "setCombatActionTimeline",
+      "UID": "db7a8134-9f8d-4cb5-bad5-14177f6d8dbe",
+      "target": "CASTER",
+      "NodeID": 9
+    },
+    "39": {
+      "UID": "b4ec7fb7-bee4-46ff-9630-621837d35102",
+      "name": "addVolumeEffect",
+      "index": 2,
+      "NodeID": 39
+    },
+    "35": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "f5b28ed5-0448-4280-9415-bc25245fcb7e",
+      "NodeID": 35,
+      "lValue": {
+        "UID": "2505d514-2082-43a4-bb65-8e5c17c5804a",
+        "name": "getServerCacheVal",
+        "key": "HelmonBoxValue",
+        "NodeID": 34
+      }
+    },
+    "36": {
+      "actionIds": [
+        38
+      ],
+      "conditionActionIds": [
+        35
+      ],
+      "UID": "3ca853f8-fed6-427c-a507-317ed98b0bec",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        39
+      ],
+      "NodeID": 36
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "TimeTravelGrab",
+    "TimeTravelSkill"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10021_Helmonbox_Switch_02"
+  ],
+  "searchRelation": 2,
+  "name": "时间漫游",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "",
+  "selectPos": 1,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 10700190,
+  "onAbilityAddedIds": [
+    37
+  ]
+}

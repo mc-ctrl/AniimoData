@@ -1,0 +1,47 @@
+{
+  "BPName": "ability_12129900",
+  "preloadCutScenes": [
+    "$Parmon_10212_Skill_Ex_Timeline.prefab"
+  ],
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 4,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 12129900001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10212_Skill_Ex_Trail_R",
+    "Eff_Parmon_10212_Skill_Ex_Bullet",
+    "Eff_Parmon_10212_Skill_Ex_Bullet_Hit",
+    "Eff_Parmon_10212_Skill_Ex_Hit",
+    "Eff_Parmon_10212_Skill_Ex_Bullet_Small",
+    "Eff_Parmon_10212_Skill_Ex_Trail_L",
+    "Eff_Parmon_10212_Skill_Ex_Atmosphere",
+    "Eff_Parmon_10212_Skill_Ex_Flower",
+    "Eff_Parmon_10212_Skill_Ex_Cam"
+  ],
+  "searchRelation": 2,
+  "name": "镜花水月",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1.5,
+  "searchTargetRangeDown": 0.5,
+  "cutSceneDuration": 2.3,
+  "abilityParamId": 10600930,
+  "NodeID": 1
+}

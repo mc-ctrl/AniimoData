@@ -1,0 +1,134 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9138301",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "afd5c76f-2878-4d54-b332-2d44ce1f70bd",
+      "name": "buffStartThink",
+      "NodeID": 3
+    },
+    "4": {
+      "key": "RockCount",
+      "name": "setCacheVal",
+      "UID": "8f3ce77b-d113-4db6-b634-74f09a001921",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 4
+    },
+    "6": {
+      "actionIds": [
+        4,
+        9,
+        15
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "bd0323bd-80c2-431f-8c6e-0b8f5f5207c1",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "15": {
+      "value": {
+        "rValue": {
+          "key": "RockCount",
+          "name": "getCacheVal",
+          "UID": "1209a021-58bf-4a22-bb89-4d2a11c8151c",
+          "target": "OWNER",
+          "NodeID": 16
+        },
+        "name": "multiply",
+        "UID": "d74a565a-948f-466e-aadc-d5aaf0d47ed4",
+        "NodeID": 14,
+        "lValue": {
+          "calcId": 9138301,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 13,
+          "UID": "429e48d0-fca0-45c1-93b5-0aa9b6daa706",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "name": "recoverEp",
+      "UID": "259febdb-185d-4669-9f0a-8548a84a7ebb",
+      "target": "OWNER",
+      "NodeID": 15,
+      "applyIncRatio": true
+    },
+    "7": {
+      "name": "checkElementType",
+      "UID": "254b623f-7708-40d8-b644-0a2db40b9d88",
+      "target": "TARGET",
+      "NodeID": 7,
+      "elementType": 8
+    },
+    "8": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "18414f46-1f8b-4cc2-9599-e9c1562cd726",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "17": {
+      "UID": "74834aec-cef5-45c5-93ec-de126279b32a",
+      "target": "OWNER",
+      "name": "isTargetActiveForBattle",
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "d4c19530-9d85-4ea0-b21c-64cd4b5da570",
+      "name": "doPetsActions",
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9
+    },
+    "13": {
+      "calcId": 9138301,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "429e48d0-fca0-45c1-93b5-0aa9b6daa706",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "key": "RockCount",
+      "name": "setCacheVal",
+      "UID": "39aedad8-8768-4b24-a78f-17e1f5865e2a",
+      "target": "OWNER",
+      "val": {
+        "rValue": {
+          "key": "RockCount",
+          "name": "getCacheVal",
+          "UID": "f03e95ad-1c22-4760-8b0e-1697047787c3",
+          "target": "OWNER",
+          "NodeID": 10
+        },
+        "name": "add",
+        "UID": "303fc8d6-3ba9-48b9-8a6b-af66c19482d3",
+        "NodeID": 11,
+        "lValue": 1
+      },
+      "NodeID": 12
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

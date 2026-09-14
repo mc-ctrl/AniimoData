@@ -1,0 +1,210 @@
+{
+  "angularIncreaseDuration": 1.5,
+  "BPName": "ability_10420300",
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 0.5,
+  "maxHitNum": 1,
+  "effectId": "Eff_Parmon_10042_Skill_Ice_Bullet_Fly",
+  "minAngularOffset": 60,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    39
+  ],
+  "calcResultNodeId": 35,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "37": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 35,
+      "NodeID": 37,
+      "UID": "46057341-e7fc-477b-b6a0-be3f59c345a9",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        35
+      ]
+    },
+    "39": {
+      "actionIds": [
+        58,
+        48,
+        37,
+        61
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "21be343f-afb0-41ab-9387-46ec58c5a931",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        59,
+        56,
+        43,
+        62
+      ],
+      "NodeID": 39
+    },
+    "56": {
+      "pos": {
+        "UID": "3d0cbe8c-f604-4f06-bd89-26c365036090",
+        "name": "getGroundPosFromRefPos",
+        "refPos": {
+          "UID": "15c39e96-949f-42a1-a545-4b6f3fd54a77",
+          "name": "getProjectilePos",
+          "NodeID": 54
+        },
+        "NodeID": 55
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "501b4e2b-5218-4465-8d8e-c1d814b350bc",
+      "effectId": "Eff_Parmon_10042_Skill_Ice_Bullet_Bomb",
+      "speed": 1,
+      "NodeID": 56
+    },
+    "43": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 35,
+      "NodeID": 43,
+      "UID": "4f85aec9-c59e-435e-8990-90263aa94099",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2.5,
+            2,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        35
+      ]
+    },
+    "58": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "22204a03-b739-4b65-b4e1-c2fa15e10759",
+      "target": "OWNER",
+      "NodeID": 58
+    },
+    "59": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "7f9d869e-9e82-4066-a9c2-42d71361d302",
+      "target": "OWNER",
+      "NodeID": 59
+    },
+    "62": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "047f1164-8c1d-4d54-9f9c-851b70470c1b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_boom_Ice",
+      "NodeID": 62
+    },
+    "61": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "27806034-ce5a-4f72-86ae-13862cf87621",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_starly_skill_charm_boom_Ice",
+      "NodeID": 61
+    },
+    "35": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_laricander_attack_hit",
+        "hitCameraShakeId": 10005
+      },
+      "UID": "73e831a1-6f24-4cc4-8552-ec5d835d7c4c",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 35
+    },
+    "51": {
+      "UID": "adb9e92a-83f0-476a-8a45-90b7ff3cfa84",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 51
+    },
+    "48": {
+      "pos": "TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "068880fb-ad6e-4585-8429-a007174f4f5d",
+      "effectId": "Eff_Parmon_10042_Skill_Ice_Bullet_Bomb",
+      "speed": 1,
+      "NodeID": 48
+    }
+  },
+  "tickInterval": 0,
+  "duration": 2,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.2,
+  "impulseId": 2000,
+  "acceleration": 0
+}

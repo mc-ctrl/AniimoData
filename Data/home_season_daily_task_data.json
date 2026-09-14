@@ -1,0 +1,70 @@
+[
+  {
+    "reward": 200715,
+    "targetId": 306007,
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "targetValue": 3,
+    "sourceId": 765,
+    "taskType": 1001,
+    "des": 1253196338
+  },
+  {
+    "reward": 200716,
+    "targetId": 306008,
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "targetValue": 1,
+    "sourceId": 100021,
+    "taskType": 1001,
+    "des": 1540087260
+  },
+  {
+    "reward": 200717,
+    "targetId": 306009,
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "targetValue": 1,
+    "sourceId": 102054,
+    "taskType": 1001,
+    "des": 1790970565
+  },
+  {
+    "reward": 200718,
+    "targetId": 306010,
+    "seasonId": 1,
+    "stageId": [
+      101,
+      102,
+      103
+    ],
+    "targetValue": 1,
+    "sourceId": 102056,
+    "taskType": 1001,
+    "des": 1278425443
+  },
+  {
+    "reward": 200719,
+    "targetId": 306011,
+    "seasonId": 1,
+    "stageId": [
+      103
+    ],
+    "targetValue": 1,
+    "sourceId": 100042,
+    "taskType": 1001,
+    "des": 1756752986
+  }
+]

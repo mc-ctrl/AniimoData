@@ -1,0 +1,110 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 11,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10012_Skill_Swift_Bullet",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    13,
+    60,
+    80
+  ],
+  "nodeMap": {
+    "60": {
+      "name": "playEffectOnPosRot",
+      "UID": "8a117c71-a4f4-457f-8415-f01b353b8995",
+      "effectId": "Eff_Parmon_10011_Skill_Swift_Hit",
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "NodeID": 60,
+      "speed": 1,
+      "rotTo": "PROJECTILE",
+      "rot": "PROJECTILE"
+    },
+    "13": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 11,
+      "NodeID": 13,
+      "UID": "a9c91562-e120-4458-bff6-7a28cbdcf51d",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.8,
+            1.5,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        11
+      ]
+    },
+    "11": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.2
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 2000,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10011_Attack_Hit",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "parmon_starly_attack_hit",
+        "hitCameraShakeId": 10002
+      },
+      "UID": "8cf793ab-d063-4ec3-9b5a-64da56454d91",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 11
+    },
+    "80": {
+      "cameraShakeId": 21114,
+      "name": "playCameraImpulseById",
+      "UID": "2a46e8d3-b63c-4e45-8b3f-75aaac9cf991",
+      "target": "OWNER",
+      "NodeID": 80
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.3,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "BPName": "ability_10120410",
+  "tickInterval": 0,
+  "defaultHitSoundType": "h",
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

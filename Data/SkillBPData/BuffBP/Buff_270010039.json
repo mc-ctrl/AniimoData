@@ -1,0 +1,39 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010039",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "7": {
+      "key": "hasgetmoney2",
+      "name": "setRoguePersistData",
+      "UID": "5b522830-5a84-46c2-9473-7c48d617fd1d",
+      "value": {
+        "UID": "1c647c45-64bf-4abe-84c4-cdcde9e9acc8",
+        "number": 0,
+        "name": "constNumber",
+        "NodeID": 6
+      },
+      "NodeID": 7
+    },
+    "4": {
+      "key": "hasgetmoney",
+      "name": "setRoguePersistData",
+      "UID": "9854e916-3b3f-4723-b38a-cc968bef838b",
+      "value": {
+        "UID": "c780cef5-36fc-4ffa-b8b5-d44bf1686ee8",
+        "number": 0,
+        "name": "constNumber",
+        "NodeID": 3
+      },
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    7
+  ]
+}

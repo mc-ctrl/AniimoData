@@ -1,0 +1,196 @@
+{
+  "nodeMap": {
+    "37": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "e414cb36-40e5-4532-b1a8-4fe8697cb108",
+      "to": 10000011,
+      "NodeID": 37,
+      "from": 10000010
+    },
+    "38": {
+      "recoverOnExit": false,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "1dd71c48-d9ff-4788-b67d-b106c5e7371e",
+      "to": 10000010,
+      "NodeID": 38,
+      "from": 10000010
+    },
+    "6": {
+      "UID": "d9be6ef3-fff8-4fb1-b308-db9fff780d1d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          25,
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "35": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.75,
+      "NodeID": 35,
+      "UID": "7aca4f26-9144-499e-923a-6db82b9e8220"
+    },
+    "2": {
+      "name": "stopActionTimeline",
+      "UID": "9f1279f5-d17b-4519-aa5c-fbe60cf77cd2",
+      "layer": "Base",
+      "target": "OWNER",
+      "NodeID": 2
+    },
+    "4": {
+      "startActionIds": [
+        37,
+        18
+      ],
+      "duration": 1500,
+      "exitActinIds": [
+        10,
+        23,
+        29,
+        2,
+        30,
+        38
+      ],
+      "NodeID": 4,
+      "UID": "3bf3a341-ddef-4cc3-b840-0ad6ebac47ad",
+      "showCountDown": false,
+      "endActionIds": [
+        10,
+        23,
+        29,
+        28
+      ],
+      "name": "enterSpeedBurst"
+    },
+    "23": {
+      "UID": "62bfa926-0f87-43f5-8e2e-ee8de1b46382",
+      "target": "OWNER",
+      "name": "cancelFovCameraAnim",
+      "NodeID": 23
+    },
+    "10": {
+      "param": "ResetDamp,0.5",
+      "name": "cameraEvent",
+      "UID": "06f68e2e-74ba-4103-a8d1-5aeadd864174",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "18": {
+      "timelineId": 10000010002,
+      "name": "setCombatActionTimeline",
+      "UID": "b35cec57-07ec-48c8-b1a7-5eab2479bfa9",
+      "target": "CASTER",
+      "NodeID": 18
+    },
+    "25": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "996ede96-798b-47cf-afd5-d14e3054f662",
+      "effectId": "Eff_Parmon_Common_ExploreSkill_SpeedBurst_Start",
+      "speed": 1,
+      "NodeID": 25
+    },
+    "26": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "4e79fb3d-00ac-4608-827c-da417c73c97b",
+      "effectId": "Eff_Parmon_Common_ExploreSkill_SpeedBurst_Loop",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 27,
+      "UID": "143e4ca4-c2dd-4c9c-b7b4-e3189293a280"
+    },
+    "28": {
+      "target": "CASTER",
+      "name": "playEffectStr",
+      "UID": "4cdca8b5-452f-4a7a-a353-39e7e9fcb9cf",
+      "effectId": "Eff_Parmon_Common_ExploreSkill_SpeedBurst_End",
+      "speed": 1,
+      "NodeID": 28
+    },
+    "29": {
+      "name": "stopEffectStr",
+      "UID": "b09ff427-0546-4400-be4a-209ce3f1233f",
+      "effectId": "Eff_Parmon_Common_ExploreSkill_SpeedBurst_Loop",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "391a6314-d5ac-43a1-bff7-d1d108fc99e9",
+      "effectId": "Eff_Parmon_Common_ExploreSkill_SpeedBurst_End",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "rValue": 2,
+      "name": "greater",
+      "UID": "6408f30f-dd42-4da3-93b1-4f49af2e3d49",
+      "NodeID": 32,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "cd73b195-7861-4e4e-8862-8f035b93b68b",
+        "target": "MASTER",
+        "NodeID": 31,
+        "attributeName": "stamina_cur"
+      }
+    },
+    "33": {
+      "conditionActionIds": [
+        32
+      ],
+      "UID": "bfdfe4b1-baf2-4604-b838-e952e79f6d7c",
+      "name": "doActionsByConditions",
+      "NodeID": 33,
+      "elseActionIds": [
+        36
+      ]
+    },
+    "34": {
+      "target": "MASTER",
+      "actionIds": [
+        33
+      ],
+      "attributeName": "stamina_cur",
+      "UID": "607e2176-5b4b-4753-8110-8a744be1320c",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 34
+    },
+    "36": {
+      "UID": "8a47ffe0-0203-41f0-9a98-3da73a53648e",
+      "name": "leaveSpeedBurst",
+      "NodeID": 36
+    }
+  },
+  "layer": "Base",
+  "BPName": "ability_10000010",
+  "NodeID": 8,
+  "UID": "2f177381-ed2b-448e-a52c-fc9496151615",
+  "eventIds": [
+    6,
+    27,
+    35
+  ],
+  "isSkillTimeline": false,
+  "length": 1500
+}

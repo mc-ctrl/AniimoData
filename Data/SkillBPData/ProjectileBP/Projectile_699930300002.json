@@ -1,0 +1,117 @@
+{
+  "duration": 5,
+  "calcResultNodeId": 102,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_69993_Skill_FireBall_Bullet",
+  "gravityRatio": 2,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "102": {
+      "name": "calcResult",
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "80c316ef-7291-4b3a-af13-2a781c7566ab",
+      "target": "TARGET",
+      "calcInfoByLuaConfig": {
+        "id": 699930300,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "NodeID": 102
+    },
+    "110": {
+      "targetPos": {
+        "UID": "027d7c09-d0c1-4387-8523-ee26ed126825",
+        "name": "getProjectilePos",
+        "NodeID": 108
+      },
+      "name": "playSoundAtPos",
+      "UID": "fa7bec56-77bf-4897-b85a-ae29235341d6",
+      "soundId": "SFX_Combat_69993_Skill_FireBall_Explode",
+      "NodeID": 110
+    },
+    "103": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 102,
+      "NodeID": 103,
+      "UID": "a1c793fa-a12e-4a37-a175-ea8f5c8a9714",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 3002,
+      "actionIds": [
+        102
+      ]
+    },
+    "109": {
+      "pos": {
+        "UID": "027d7c09-d0c1-4387-8523-ee26ed126825",
+        "name": "getProjectilePos",
+        "NodeID": 108
+      },
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "7c360424-2147-45c3-ae78-fab5afdfa238",
+      "effectId": "Eff_Parmon_69993_Skill_FireBall_Explode",
+      "speed": 1,
+      "NodeID": 109
+    }
+  },
+  "maxHitNum": 1,
+  "maxHeightOffset": 5,
+  "stickGravity": 0.5,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    103,
+    109,
+    110
+  ],
+  "stickPitchMaxOffset": 40,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.4,
+  "sweepShape": 0,
+  "BPName": "ability_699930300",
+  "tickInterval": 0.05,
+  "NodeID": 0,
+  "startSleepTime": 0,
+  "ignoreAbilityElement": true,
+  "groundSweepRadius": 0.05,
+  "impulseId": 3002,
+  "acceleration": 0
+}

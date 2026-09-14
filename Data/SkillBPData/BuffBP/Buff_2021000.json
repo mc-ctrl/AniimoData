@@ -1,0 +1,31 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "19": {
+      "key": "ShieldCri",
+      "calcInfo": {
+        "instant_crit_rate_v": 0.5,
+        "instant_over_crit_rate_to_crit_dmg": 1.5,
+        "instant_crit_dmg_v": 0.5
+      },
+      "calcInfoByLuaConfig": {
+        "id": 2021000,
+        "instant_crit_dmg_v": "param1",
+        "instant_crit_rate_v": "param0",
+        "type": 1,
+        "instant_over_crit_rate_to_crit_dmg": "param2"
+      },
+      "UID": "01d30b20-219f-433d-a04e-3d8c6803b981",
+      "name": "setRogueProp",
+      "NodeID": 19
+    }
+  },
+  "BPName": "buff_2021000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    19
+  ]
+}

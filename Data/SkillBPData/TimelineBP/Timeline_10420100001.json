@@ -1,0 +1,271 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0a0419c5-e0ea-427e-897e-f5bffb277205",
+      "effectId": "Eff_Parmon_10042_Skill_WaterHeal",
+      "speed": 1,
+      "NodeID": 37
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          45,
+          44,
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 39,
+      "UID": "f981fe08-bba7-451a-b090-afa4d3d821ea"
+    },
+    "6": {
+      "UID": "e40691d6-8eae-4621-9721-877806bfd765",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 6
+    },
+    "43": {
+      "calcInfo": {
+        "add_cur_hp_fix": {
+          "rValue": {
+            "calcId": 10420100,
+            "calcType": 2,
+            "paramName": "param1",
+            "NodeID": 46,
+            "UID": "e88437a9-b96c-4bca-9bf4-9b8efa91e421",
+            "name": "getParamByLuaConfig"
+          },
+          "name": "multiply",
+          "UID": "58ca5bde-3b5f-4a2d-91a8-f3f202cef68d",
+          "NodeID": 41,
+          "lValue": {
+            "key": "hp10041",
+            "name": "getCacheVal",
+            "UID": "4433d2b3-17a1-4335-b2a6-841ebb1cea08",
+            "target": "SRC",
+            "NodeID": 40
+          }
+        },
+        "hp_max_p": 0
+      },
+      "name": "calcResult",
+      "UID": "556f2772-5144-477b-8780-003ba9c2fea6",
+      "target": "TARGET",
+      "NodeID": 43
+    },
+    "44": {
+      "UID": "3f5c2a6f-20af-49c9-b44e-a343258ec840",
+      "name": "doPetsActions",
+      "actionIds": [
+        43
+      ],
+      "NodeID": 44
+    },
+    "51": {
+      "UID": "8d968377-7611-4bd6-adb8-0ea7b5c62f25",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 51
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 20,
+      "UID": "16fd2256-0d7a-4b46-a389-b44ed24db44a"
+    },
+    "4": {
+      "UID": "c489fbbf-e7c4-4ae4-8edf-a8daf728d74a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "22": {
+      "UID": "5bee872a-7adc-4299-85e1-9652e7e4f592",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "0e93be3b-1412-47f5-b5c2-bf2630797d34",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 24,
+      "UID": "139ddfd8-5dbe-4803-8a7b-93a91fcc6be9"
+    },
+    "49": {
+      "UID": "067a84dc-0dd4-450a-84ad-d194738bf320",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          48
+        ]
+      },
+      "NodeID": 49
+    },
+    "46": {
+      "calcId": 10420100,
+      "calcType": 2,
+      "paramName": "param1",
+      "NodeID": 46,
+      "UID": "e88437a9-b96c-4bca-9bf4-9b8efa91e421",
+      "name": "getParamByLuaConfig"
+    },
+    "15": {
+      "UID": "d8658b1c-fdd4-41b5-8fe3-d98da13952c4",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "47": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "52d572db-8df9-4b4a-8fc2-046b56a73581",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 47
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d018a5f4-7dac-46c4-ba1a-6b718e873c14",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_WaterHeal"
+    },
+    "48": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "98ed069b-d19d-43ae-910c-a624177511c2",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        50
+      ],
+      "NodeID": 48
+    },
+    "45": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2104301,
+      "NodeID": 45,
+      "UID": "ee3102d2-e024-40e6-baf9-64c632186cac",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "29": {
+      "key": "hp10041",
+      "name": "setCacheVal",
+      "UID": "2c0a0677-e590-404e-800a-93d8ff4cccf4",
+      "target": "CASTER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "c4f318c3-c686-456f-b348-73ea9eb88120",
+        "target": "CASTER",
+        "NodeID": 28,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 29
+    },
+    "18": {
+      "UID": "0962916a-9595-4ee1-b4a4-da62be9caa9e",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          29
+        ]
+      },
+      "NodeID": 18
+    },
+    "50": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "7afda1a8-da67-49fc-9575-4e70d5b4f613",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 50
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "37dfda75-eeb3-4fde-8c97-758e699b4bcd",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10043_skill_waterheal_release",
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "d82fa32a-b1eb-46e4-8e51-a1b76ca8f988",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 34
+    },
+    "36": {
+      "action": {
+        "actionIds": [
+          34
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 36,
+      "UID": "560c91ba-68aa-4cd3-84f9-cf765c370624"
+    }
+  },
+  "BPName": "ability_10420100",
+  "NodeID": 8,
+  "UID": "4ff5036d-f440-4dde-84d9-f90c66fcaa7a",
+  "eventIds": [
+    6,
+    15,
+    18,
+    20,
+    36,
+    39,
+    24,
+    49
+  ],
+  "layer": "Base",
+  "length": 1.1
+}

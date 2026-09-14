@@ -1,0 +1,62 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2132416",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    11,
+    5,
+    10
+  ],
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a707b54c-081b-4c0e-aa42-471dc40e9bfd",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsField_03",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "76a30ff3-1356-4a49-a4a8-b72da7071e47",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10324_Skill_ThornsField_03",
+      "NodeID": 11
+    },
+    "10": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.1
+      },
+      "attackData": {
+        "hitFrameFreezeId": 10011,
+        "impulseId": 1000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30102
+      },
+      "UID": "77e9ca46-efd5-47e2-a9d7-8bc27262c0a4",
+      "target": "OWNER",
+      "name": "calcResult",
+      "NodeID": 10
+    },
+    "12": {
+      "delay": 0,
+      "interval": 3,
+      "UID": "3934f402-4958-45a8-889e-d040ad3d0894",
+      "name": "buffStartThink",
+      "NodeID": 12
+    }
+  },
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    12
+  ]
+}

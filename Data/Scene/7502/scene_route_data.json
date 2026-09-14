@@ -1,0 +1,238 @@
+{
+  "91310955": {
+    "id": 91310955,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1,
+                  "name": "tWaitTime"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          6.24,
+          -0.6,
+          -10.77
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dialogue",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1070212,
+                  "name": "tDialogueId"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          6.24,
+          -0.6,
+          -10.77
+        ]
+      }
+    ],
+    "pos": [
+      6.24,
+      0.58,
+      -10.77
+    ],
+    "quaternion": [
+      0,
+      -0.15,
+      0,
+      0.99
+    ],
+    "sandboxId": 91310847
+  },
+  "91310952": {
+    "id": 91310952,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 3,
+                  "name": "tWaitTime"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          3.3,
+          -0.44,
+          -6.88
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 3,
+                  "name": "tWaitTime"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          3.3,
+          -0.44,
+          -6.88
+        ]
+      }
+    ],
+    "pos": [
+      3.3,
+      -0.02,
+      -6.88
+    ],
+    "quaternion": [
+      0,
+      -0.15,
+      0,
+      0.99
+    ],
+    "sandboxId": 91310847
+  },
+  "91310953": {
+    "id": 91310953,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1,
+                  "name": "tWaitTime"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          13.54,
+          -0.35,
+          -4.49
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_Dialogue",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 1070215,
+                  "name": "tDialogueId"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          13.54,
+          -0.35,
+          -4.49
+        ]
+      }
+    ],
+    "pos": [
+      13.54,
+      -0.32,
+      -4.49
+    ],
+    "quaternion": [
+      0,
+      -0.15,
+      0,
+      0.99
+    ],
+    "sandboxId": 91310847
+  },
+  "91310954": {
+    "id": 91310954,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 3,
+                  "name": "tWaitTime"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          13.06,
+          -0.31,
+          -8.82
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": 3,
+                  "name": "tWaitTime"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 342.66,
+        "position": [
+          13.06,
+          -0.31,
+          -8.82
+        ]
+      }
+    ],
+    "pos": [
+      13.06,
+      -0.02,
+      -8.82
+    ],
+    "quaternion": [
+      0,
+      -0.15,
+      0,
+      0.99
+    ],
+    "sandboxId": 91310847
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_13230200",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "abilityParamId": 10600370,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 13230200001,
+      "name": "setCombatActionTimeline",
+      "UID": "a81be6c3-e269-46a4-a5df-685b5e466df3",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Block_Start",
+    "Skill_Block_Loop"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10323_Skill_Block_Start"
+  ],
+  "searchRelation": 2,
+  "name": "普通冲撞",
+  "searchTargetRangeRadius": 4,
+  "searchTargetRangeUp": 1.5,
+  "delayStartCd": true,
+  "searchTargetRangeDown": 0.5,
+  "desc": ""
+}

@@ -1,0 +1,30 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "key": "delay",
+      "duration": 10,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "781a3426-9924-4402-9965-edbd391864c0",
+      "name": "addEntityTimer"
+    },
+    "2": {
+      "buffId": 11134,
+      "name": "removeBuff",
+      "UID": "a9f5a526-427e-4d4e-846f-0a57f091dc7a",
+      "target": "OWNER",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_11135",
+  "dynamicRPCStates": {},
+  "UID": "3fafcb1c-301e-46d6-9f40-ebc04bb0fe0a",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

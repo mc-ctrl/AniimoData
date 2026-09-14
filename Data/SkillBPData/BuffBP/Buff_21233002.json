@@ -1,0 +1,46 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21233002",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "tags": [
+    21,
+    11,
+    26,
+    15
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 10,
+      "name": "playStartLoopEndAni",
+      "NodeID": 3,
+      "UID": "69701c4e-16fc-4f7d-a556-7b7db998029a",
+      "endAni": "Behav_SleepEnd",
+      "loopAni": "Behav_SleepLoop",
+      "startAni": "Behav_SleepStart"
+    },
+    "5": {
+      "blackScreenId": 181,
+      "name": "serverPlayBlackScreen",
+      "UID": "30a133b6-5dfd-4296-9934-9ab0786c8f3b",
+      "target": "MASTER",
+      "NodeID": 5
+    },
+    "6": {
+      "key": "blackscreen",
+      "duration": 3,
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6,
+      "UID": "b26990a3-c6e1-465b-abd6-d2eab5b33823",
+      "name": "addTimer"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    6
+  ]
+}

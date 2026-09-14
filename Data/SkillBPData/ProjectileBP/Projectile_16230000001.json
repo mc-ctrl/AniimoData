@@ -1,0 +1,191 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_16230000",
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "ignoreAbilityElement": true,
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "effectId": {
+    "str": "Eff_Parmon_10623_Skill_Bubble_",
+    "name": "constString",
+    "UID": "1688846c-86a1-4aa9-b68b-c6615b0b6753",
+    "NodeID": 38,
+    "concatenateNumber": {
+      "key": "10623RandomBubble",
+      "name": "getCacheVal",
+      "UID": "1340ad6e-a9d3-4a70-879a-cd5a1b85a87f",
+      "target": "OWNER",
+      "NodeID": 37
+    }
+  },
+  "minAngularOffset": 0,
+  "moveSpeed": 20,
+  "onProjectileFinishIds": [
+    49,
+    52,
+    22
+  ],
+  "calcResultNodeId": 20,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "nodeMap": {
+    "22": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        53
+      ],
+      "UID": "335e39c8-f524-4c50-9bf9-2ad25e54534e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        21
+      ],
+      "NodeID": 22
+    },
+    "49": {
+      "key": "10623Bubble2",
+      "name": "setProjectileCacheVal",
+      "UID": "0932138e-1ea8-46b7-9a29-93fad05691c1",
+      "val": {
+        "key": "10623RandomBubble",
+        "name": "getCacheVal",
+        "UID": "ec2bc788-4da8-4ffa-81c4-5a51bafaa588",
+        "target": "OWNER",
+        "NodeID": 48
+      },
+      "NodeID": 49
+    },
+    "53": {
+      "buffId": 9162304,
+      "name": "hasBuff",
+      "UID": "9a61f483-9bcf-4e53-a878-52163fa78ecd",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "52": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "afce5160-9bba-4002-a6f1-09de5bab8ca5",
+      "effectId": {
+        "str": "Eff_Parmon_10623_Skill_Bubble_Hit_",
+        "name": "constString",
+        "UID": "abdbbf4e-f855-4ba5-ab7f-54c3068da6bc",
+        "NodeID": 51,
+        "concatenateNumber": {
+          "UID": "20bac316-791f-475f-a681-57451a25395c",
+          "name": "getProjectileCacheVal",
+          "key": "10623Bubble2",
+          "NodeID": 50
+        }
+      },
+      "speed": 1,
+      "NodeID": 52
+    },
+    "27": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 20,
+      "NodeID": 27,
+      "UID": "284979b8-f23c-4a73-a426-734ebe2fb24f",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.2,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        20
+      ]
+    },
+    "20": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 16230000,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "f7e28df3-3f92-42fd-9021-45ae09bff24e",
+      "target": "TARGET",
+      "NodeID": 20,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 3,
+        "hitSoundStr": "SFX_Combat_10623_Skill_Attack01_hit",
+        "hitCameraShakeId": 10100
+      }
+    },
+    "21": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 20,
+      "NodeID": 21,
+      "UID": "a69bcfce-ab26-4f5a-9e46-aa388b28e350",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1,
+            1,
+            1
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 1
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        20
+      ]
+    }
+  },
+  "tickInterval": 0,
+  "duration": 1,
+  "startSleepTime": 0,
+  "NodeID": 0,
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

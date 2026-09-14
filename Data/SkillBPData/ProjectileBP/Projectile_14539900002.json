@@ -1,0 +1,176 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 32,
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10453_Skill_EX_spere",
+  "ignoreAbilityElement": true,
+  "heightAboveGround": 0.4,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "stickGravity": 0.5,
+  "maxHitNum": 1,
+  "maxHeightOffset": 5,
+  "stickPitchMaxOffset": 40,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    35
+  ],
+  "onProjectileHitIds": [
+    45,
+    70,
+    26
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 9999,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "nodeMap": {
+    "70": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e2067dd1-9d2d-4af5-8bcf-ab306b57e21f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10453_Skill_EX_QieGe",
+      "NodeID": 70
+    },
+    "45": {
+      "key": "4539901",
+      "name": "setCacheVal",
+      "UID": "82189bd3-1179-481d-b310-a07be578d846",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 45
+    },
+    "42": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a21a6df4-0bda-422c-af3e-f4407467ec16",
+      "effectId": "Eff_Parmon_10453_Skill_EX_boom",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "47": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "730c4c48-c139-4c3b-936f-1bcf6b1e93d6",
+      "NodeID": 47,
+      "lValue": {
+        "key": "4539901",
+        "name": "getCacheVal",
+        "UID": "f19d7feb-0a07-445d-a138-847837a37c11",
+        "target": "OWNER",
+        "NodeID": 46
+      }
+    },
+    "26": {
+      "pos": "PROJECTILE",
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 14539900001,
+      "name": "createProjectile",
+      "UID": "e77d8814-908d-45fe-9cc0-8eb6cfe8806b",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 26
+    },
+    "32": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 14539900,
+        "instant_dmg_rate_v": "param1",
+        "type": 2
+      },
+      "UID": "4a948256-8871-4f62-bdb9-410b0fc61234",
+      "target": "TARGET",
+      "NodeID": 32,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 5002,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30404
+      }
+    },
+    "33": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 32,
+      "NodeID": 33,
+      "UID": "0408a584-2e47-4f32-a994-6780f20c9e2c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            3,
+            1.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 5002,
+      "actionIds": [
+        32
+      ]
+    },
+    "72": {
+      "targetPos": "PROJECTILE",
+      "name": "playSoundAtPos",
+      "UID": "a7e581d1-c2d6-4e22-b18b-f6bc08f46900",
+      "soundId": "SFX_Combat_10453_Skill_EX_Boom",
+      "NodeID": 72
+    },
+    "35": {
+      "conditionActionIds": [
+        47
+      ],
+      "UID": "670fb182-d822-471b-b48b-462ded4a9940",
+      "name": "doActionsByConditions",
+      "NodeID": 35,
+      "elseActionIds": [
+        42,
+        33,
+        72
+      ]
+    }
+  },
+  "tickInterval": 0.05,
+  "BPName": "ability_14539900",
+  "startSleepTime": 0,
+  "defaultHitSoundType": "s",
+  "groundSweepRadius": 0.05,
+  "impulseId": 5002,
+  "acceleration": 0
+}

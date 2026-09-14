@@ -1,0 +1,76 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123102",
+  "NodeID": 1,
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "onBuffRefreshIds": [
+    11,
+    6
+  ],
+  "transferGroup": 1,
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91231021,
+      "NodeID": 5,
+      "UID": "a64ce165-7bcc-4f0b-ad76-a85adbd7f678",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "buffId": 91231021,
+      "name": "removeBuff",
+      "UID": "ce052ad4-59f1-4043-83a4-302022c9ca72",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "7cc814cb-b599-4f73-b585-a89e1a252e96",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "11": {
+      "UID": "b5ad9402-09bd-4345-918e-5d74b980951f",
+      "name": "addBuffDynamicAttribute",
+      "calcInfoByLuaConfig": {
+        "id": 2123102,
+        "combat_ep_regen_p": "param0",
+        "type": 1
+      },
+      "NodeID": 11
+    },
+    "8": {
+      "buffId": 9123102,
+      "name": "hasBuff",
+      "UID": "d040fd27-576a-44a7-b3f7-9600e577acae",
+      "target": "SRC",
+      "NodeID": 8
+    },
+    "2": {
+      "UID": "645836d9-d026-49f4-974b-66d8acf2a101",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 2
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    9,
+    2
+  ],
+  "onBuffStartIds": [
+    11,
+    6
+  ]
+}

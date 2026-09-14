@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "unsummonValid": false,
+      "actionIds": [
+        4
+      ],
+      "name": "registerGroupEvent",
+      "UID": "57372d62-07eb-4402-b422-1fa57b7dfbc7",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "a99c5bb5-87d3-408b-8712-0ccb2e2f5b9a",
+      "name": "registerOverHealEvent",
+      "actionIds": [
+        7,
+        2
+      ],
+      "NodeID": 4
+    },
+    "7": {
+      "key": "2031000",
+      "name": "setCacheVal",
+      "UID": "0e24f540-2b4b-47ad-b9f6-04e0164e1c8e",
+      "target": "OWNER",
+      "val": {
+        "UID": "c813c94e-4edc-4d03-baa9-2862796fe671",
+        "name": "getOverHealPoint",
+        "NodeID": 6
+      },
+      "NodeID": 7
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 20310000,
+      "NodeID": 2,
+      "UID": "aa125826-6d44-43dd-95d3-0a93c47b0826",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    }
+  },
+  "BPName": "buff_2031000",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

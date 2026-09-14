@@ -1,0 +1,53 @@
+{
+  "300001": {
+    "3": {
+      "reward": 21003,
+      "needResearchPoint": 2400
+    },
+    "4": {
+      "reward": 21004,
+      "needResearchPoint": 4000
+    },
+    "6": {
+      "reward": 21006,
+      "needResearchPoint": 9000
+    },
+    "10": {
+      "reward": 21010,
+      "needResearchPoint": 30000
+    },
+    "7": {
+      "reward": 21007,
+      "needResearchPoint": 13000
+    },
+    "8": {
+      "reward": 21008,
+      "needResearchPoint": 17000
+    },
+    "12": {
+      "reward": 21012,
+      "needResearchPoint": 48000
+    },
+    "9": {
+      "reward": 21009,
+      "needResearchPoint": 23000
+    },
+    "11": {
+      "reward": 21011,
+      "needResearchPoint": 38000
+    },
+    "5": {
+      "reward": 21005,
+      "needResearchPoint": 6000
+    },
+    "0": {},
+    "1": {
+      "reward": 21001,
+      "needResearchPoint": 500
+    },
+    "2": {
+      "reward": 21002,
+      "needResearchPoint": 1200
+    }
+  }
+}

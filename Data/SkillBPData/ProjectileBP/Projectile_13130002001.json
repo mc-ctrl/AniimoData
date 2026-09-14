@@ -1,0 +1,102 @@
+{
+  "refControlPoint": [
+    [
+      -2.98,
+      1.5,
+      4.55
+    ]
+  ],
+  "duration": 3.2,
+  "calcResultNodeId": 38,
+  "defaultHitSoundType": "s",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10313_Skill_Attack_07_2",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "BezierCurve",
+  "maxHitNum": 1,
+  "nodeMap": {
+    "40": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 38,
+      "NodeID": 40,
+      "UID": "931b0aaf-ddb8-4cf6-b592-94c1795e8cbb",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            0.8,
+            1.5,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        38
+      ]
+    },
+    "38": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 13130002,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "25b3a862-5e29-47f4-977c-baabb297b8b0",
+      "target": "TARGET",
+      "NodeID": 38,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "elementType": 3,
+        "attackRotateMode": "CasterPos",
+        "defaultHitEffect": "Eff_Hit_Water_Blunt_Big",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10102
+      }
+    }
+  },
+  "moveSpeed": 18,
+  "onProjectileFinishIds": [
+    40
+  ],
+  "refTargetPoint": [
+    0,
+    0.41,
+    9.5
+  ],
+  "ignoreAbilityElement": true,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.35,
+  "sweepShape": 0,
+  "refStartPoint": [
+    0,
+    0,
+    0
+  ],
+  "tickInterval": 0,
+  "BPName": "ability_13130002",
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Water_Blunt_Big",
+  "NodeID": 0,
+  "impulseId": 2000,
+  "acceleration": 0
+}

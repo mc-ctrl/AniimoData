@@ -1,0 +1,136 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2101104",
+  "NodeID": 1,
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "onBuffRefreshIds": [
+    3,
+    11
+  ],
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": [
+    "SKILLGLIDING",
+    "JUMP",
+    "RUNSTOP",
+    "DASH"
+  ],
+  "nodeMap": {
+    "3": {
+      "leaveGroundOffset": 1,
+      "NodeID": 3,
+      "UID": "916f5e98-a12a-4254-9611-303234105b52",
+      "velocity": 5,
+      "enable": true,
+      "name": "enableSkillGliding"
+    },
+    "14": {
+      "isNot": false,
+      "stateName": "JUMP",
+      "isParentState": false,
+      "NodeID": 14,
+      "UID": "7267c04a-2563-4811-b98e-e5f840da2c32",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "10": {
+      "actionIds": [
+        12,
+        17
+      ],
+      "conditionActionIds": [
+        9
+      ],
+      "UID": "8a18f47d-2b22-465b-814b-18bbcbeba9f9",
+      "name": "doActionsByConditions",
+      "NodeID": 10
+    },
+    "15": {
+      "isNot": false,
+      "stateName": "RUNSTOP",
+      "isParentState": false,
+      "NodeID": 15,
+      "UID": "7703f35f-2a19-4bb4-99b5-c9eab2164b0b",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "820c6f0a-62b1-4552-bb62-ff196caf12c8",
+      "effectId": "Eff_Parmon_10012_Model_StarTail_Water",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "isNot": false,
+      "stateName": "DASH",
+      "isParentState": false,
+      "NodeID": 16,
+      "UID": "ad87cb14-ca99-4659-8bd6-b00a526bf9d8",
+      "target": "OWNER",
+      "name": "isInCharacterState"
+    },
+    "8": {
+      "UID": "3699a5e3-afba-405c-8a47-72dbfff15108",
+      "name": "isLeaveCharacterState",
+      "characterState": [
+        "SKILLGLIDING"
+      ],
+      "NodeID": 8
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "de5bb5a1-3d47-47d5-9374-9d1b32b192a5",
+      "effectId": "Eff_Parmon_10012_Model_StarTail_Water",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "UID": "65595f7b-b21e-43f8-8ed1-b4b047bb81ec",
+      "conditionIds": [
+        14,
+        8,
+        15,
+        16
+      ],
+      "name": "conditionOr",
+      "NodeID": 9
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerCharacterStateChangeEvent",
+      "UID": "82a5fa44-cf55-46a6-a422-4453709d4cb1",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "leaveGroundOffset": 1,
+      "NodeID": 5,
+      "UID": "768296fa-2ce1-489c-82ba-93456da12871",
+      "velocity": 5,
+      "enable": false,
+      "name": "enableSkillGliding"
+    },
+    "12": {
+      "buffId": 2101104,
+      "name": "removeBuff",
+      "UID": "7db4977e-d042-4863-9c1e-224945cae667",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "parentDynamicRPCStates": [
+    "SKILLGLIDING"
+  ],
+  "onBuffDestroyIds": [
+    5,
+    7
+  ],
+  "onBuffStartIds": [
+    3,
+    11
+  ]
+}

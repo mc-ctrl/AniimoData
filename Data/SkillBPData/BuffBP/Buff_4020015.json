@@ -1,0 +1,79 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4020015",
+  "NodeID": 1,
+  "UID": "dc762cb0-4e53-4a21-84b0-6a9ae87f1ff0",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "onBuffInheritIds": [
+    8
+  ],
+  "nodeMap": {
+    "5": {
+      "UID": "51d714b6-3c2e-4351-bb38-9977d44947e1",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 5
+    },
+    "6": {
+      "actionIds": [
+        11
+      ],
+      "conditionActionIds": [
+        5
+      ],
+      "UID": "df567b82-ef20-413d-a5f0-80699d4ac285",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "calcId": 4020015,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 10,
+      "UID": "01906560-3510-4264-b0a7-4ead74a408b0",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "target": "CURPET",
+      "duration": {
+        "calcId": 4020015,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 10,
+        "UID": "01906560-3510-4264-b0a7-4ead74a408b0",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 402001501,
+      "NodeID": 11,
+      "UID": "d3d9e58d-1a2d-44df-a806-ab1181d7ca5d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "7": {
+      "UID": "0ad1f159-068a-4211-8965-c821c08495e0",
+      "name": "registerAttackEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "8": {
+      "unsummonValid": false,
+      "actionIds": [
+        7
+      ],
+      "name": "registerGroupEvent",
+      "UID": "fe4ce846-a9ed-4200-871f-ddfe7c3d5658",
+      "NodeID": 8
+    }
+  },
+  "isDeathKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8
+  ]
+}

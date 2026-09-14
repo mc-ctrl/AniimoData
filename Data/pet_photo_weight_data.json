@@ -1,0 +1,410 @@
+[
+  {
+    "S": {
+      "alert": 0.34,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.1,
+      "sleep": 0
+    },
+    "T": {
+      "alert": 0.32,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.1,
+      "sleep": 0
+    },
+    "E": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0.3,
+      "sleep": 0
+    },
+    "F": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.38,
+      "sleep": 0
+    },
+    "I": {
+      "alert": 0.4,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.1,
+      "sleep": 0
+    },
+    "J": {
+      "alert": 0.32,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.1,
+      "sleep": 0
+    },
+    "N": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.36,
+      "sleep": 0
+    },
+    "P": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.3,
+      "sleep": 0
+    }
+  },
+  {
+    "501": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.2,
+      "love": 0.2,
+      "sleep": 0
+    }
+  },
+  {
+    "30602": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "30603": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "30604": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "30701": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.5
+    },
+    "30801": {
+      "alert": 0.3,
+      "angry": 0.1,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30802": {
+      "alert": 0.3,
+      "angry": 0.1,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30803": {
+      "alert": 0.3,
+      "angry": 0.1,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30804": {
+      "alert": 0.3,
+      "angry": 0.1,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30901": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0.1,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30902": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0.1,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31001": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31002": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31003": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0.3,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31101": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31102": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31201": {
+      "alert": 0.3,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31202": {
+      "alert": 0.3,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "31203": {
+      "alert": 0.3,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30201": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.2
+    },
+    "30202": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.2
+    },
+    "30203": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "30204": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "30205": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "30301": {
+      "alert": 0.5,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30302": {
+      "alert": 0.5,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30401": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30402": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30403": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30501": {
+      "alert": 0.3,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30502": {
+      "alert": 0.3,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0,
+      "sleep": 0.1
+    },
+    "30601": {
+      "alert": 0,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0,
+      "love": 0.3,
+      "sleep": 0.1
+    }
+  },
+  {
+    "Daily_Fighting": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "Daily_Hello": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "Show_Dance02": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "Daily_Thanks": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "Show_Pose01": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0.1,
+      "sleep": 0.1
+    },
+    "Show_Dance01": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.1,
+      "love": 0.3,
+      "sleep": 0.1
+    },
+    "Show_Pose03": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0.1,
+      "sleep": 0.1
+    },
+    "Show_Pose04": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0.1,
+      "sleep": 0.1
+    },
+    "Show_Pose05": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0.1,
+      "sleep": 0.1
+    },
+    "Show_Pose02": {
+      "alert": 0.1,
+      "angry": 0,
+      "cry": 0,
+      "happy": 0.3,
+      "love": 0.1,
+      "sleep": 0.1
+    }
+  }
+]

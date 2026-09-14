@@ -1,0 +1,104 @@
+[
+  {
+    "unlockOpenDays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "unlockTime": [
+      {
+        "3": 1789891200,
+        "4": 1789848000,
+        "1": 1789848000,
+        "2": 1789876800
+      },
+      {
+        "3": 1789977600,
+        "4": 1789934400,
+        "1": 1789934400,
+        "2": 1789963200
+      },
+      {
+        "3": 1790064000,
+        "4": 1790020800,
+        "1": 1790020800,
+        "2": 1790049600
+      },
+      {
+        "3": 1790150400,
+        "4": 1790107200,
+        "1": 1790107200,
+        "2": 1790136000
+      },
+      {
+        "3": 1790236800,
+        "4": 1790193600,
+        "1": 1790193600,
+        "2": 1790222400
+      }
+    ],
+    "mapBlockId": [
+      20200,
+      21200,
+      21000,
+      20600,
+      20700
+    ],
+    "adventureReward": [
+      [
+        1,
+        100190
+      ],
+      [
+        2,
+        100159
+      ],
+      [
+        2,
+        100160
+      ],
+      [
+        2,
+        100161
+      ]
+    ],
+    "adventureRewardWeight": [
+      10,
+      20,
+      30,
+      40
+    ],
+    "clueImage": [
+      "$UI_Img_Event_Dispatch_Photo_01.png",
+      "$UI_Img_Event_Dispatch_Photo_05.png",
+      "$UI_Img_Event_Dispatch_Photo_04.png",
+      "$UI_Img_Event_Dispatch_Photo_02.png",
+      "$UI_Img_Event_Dispatch_Photo_03.png"
+    ],
+    "clueTaskGroupId": 17000,
+    "imageDesc": [
+      1160120279,
+      1554691556,
+      1553236254,
+      1809494221,
+      1726149645
+    ],
+    "mapBlockDispatchTaskId": [
+      820001,
+      820002,
+      820003,
+      820004,
+      820005
+    ],
+    "pityCount": 4,
+    "taskBackImage": [
+      "$UI_Img_Event_ChooseSurvey_01.png",
+      "$UI_Img_Event_ChooseSurvey_02.png",
+      "$UI_Img_Event_ChooseSurvey_04.png",
+      "$UI_Img_Event_ChooseSurvey_05.png",
+      "$UI_Img_Event_ChooseSurvey_03.png"
+    ]
+  }
+]

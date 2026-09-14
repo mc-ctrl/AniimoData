@@ -1,0 +1,68 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9116113",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 9116113,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 8,
+        "UID": "7a593cd4-a28d-47ff-b205-ed957d268191",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "aff82748-73f4-4d87-a2b2-6208babf905a",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "e165502e-d943-4d7e-b527-7e273ea001d9",
+        "target": "CURPET",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "calcId": 9116113,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 8,
+      "UID": "7a593cd4-a28d-47ff-b205-ed957d268191",
+      "name": "getParamByLuaConfig"
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "a7df7c30-a3fe-4dae-a172-e168001d6401",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4053da90-cbb7-4c9e-82e6-86f11dab9805",
+      "effectId": "Eff_Parmon_Common_Skill_Shield_Soil",
+      "speed": 1,
+      "NodeID": 6
+    }
+  },
+  "onBuffDestroyIds": [
+    7
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

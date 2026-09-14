@@ -1,0 +1,182 @@
+{
+  "duration": 1.8,
+  "calcResultNodeId": 40,
+  "defaultHitSoundType": "h",
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10133_Skill_Throw_Ice02_small",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Tracking",
+  "maxHitNum": 99,
+  "onProjectileTickIds": [
+    32,
+    43
+  ],
+  "moveSpeed": 12,
+  "onProjectileFinishIds": [
+    55,
+    44,
+    48
+  ],
+  "relation": 2,
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepBoxSize": [
+    2.4,
+    2.4,
+    2.4
+  ],
+  "sweepShape": 1,
+  "destroyOnHit": false,
+  "tickInterval": 0.2,
+  "nodeMap": {
+    "53": {
+      "calcId": 2113201,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 53,
+      "UID": "77799899-15a1-4044-ae24-6d3a9844c0fc",
+      "name": "getParamByLuaConfig"
+    },
+    "40": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2113201,
+        "instant_dmg_rate_v": "param2",
+        "type": 1
+      },
+      "UID": "d563fd8d-67d8-4eb6-b141-c25a415bf68b",
+      "target": "TARGET",
+      "NodeID": 40,
+      "attackData": {
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10106,
+        "hitFrameFreezeId": -1,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Ice_Slash_Big",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 2,
+        "impulseId": 3001
+      }
+    },
+    "54": {
+      "value": {
+        "calcId": 2113201,
+        "calcType": 1,
+        "paramName": "param3",
+        "NodeID": 53,
+        "UID": "77799899-15a1-4044-ae24-6d3a9844c0fc",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "applyECSElement",
+      "UID": "75359c42-09d6-4a44-8da3-081f9cd9c561",
+      "element": 2,
+      "target": "TARGET",
+      "NodeID": 54
+    },
+    "42": {
+      "targetA": "PROJECTILE",
+      "targetB": "CASTER",
+      "NodeID": 42,
+      "UID": "108c7fcf-84aa-4251-b018-72b438567cab",
+      "name": "checkDistanceLess",
+      "ignoreYAxis": false,
+      "distance": 1.4
+    },
+    "47": {
+      "UID": "8306acd2-aeb6-4fde-9d4f-27fe5b0d15ec",
+      "projInstanceId": {
+        "UID": "65822f0b-09fd-4960-8c62-de9b6282ae2c",
+        "name": "getProjectileInstanceId",
+        "NodeID": 46
+      },
+      "name": "destroyProjectile",
+      "NodeID": 47
+    },
+    "44": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c7428f28-12ac-4e81-a118-3727b2be3f74",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_parmon_10133_skill_throw_ice_loop",
+      "NodeID": 44
+    },
+    "48": {
+      "name": "stopSoundStr",
+      "UID": "3d56c331-0c6f-451c-b9d2-041167ac1f03",
+      "soundId": "parmon_10133_skill_throw_ice_loop",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "32": {
+      "calcResultNodeId": 40,
+      "name": "actOnTargets",
+      "UID": "2db49ba7-eaf5-42f3-babf-63129d9626cf",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            2,
+            2.2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "2",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        54,
+        40
+      ],
+      "impulseId": 3001,
+      "NodeID": 32
+    },
+    "55": {
+      "buffId": 2113201,
+      "name": "removeBuff",
+      "UID": "84a15381-2735-48f9-b969-3250df387017",
+      "target": "OWNER",
+      "NodeID": 55
+    },
+    "43": {
+      "actionIds": [
+        47
+      ],
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "18fd88e7-143f-44cd-b57d-ecb8cb13138e",
+      "name": "doActionsByConditions",
+      "NodeID": 43
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "buff_2113201",
+  "NodeID": 0,
+  "impulseId": 3001,
+  "acceleration": 0
+}

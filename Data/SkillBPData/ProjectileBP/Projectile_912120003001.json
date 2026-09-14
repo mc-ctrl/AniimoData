@@ -1,0 +1,89 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_912120003",
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10212_Attack04_03",
+  "trackingNoOffsetRotationRange": 5,
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 720,
+  "maxHitNum": 1,
+  "duration": 3.2,
+  "minAngularOffset": 0,
+  "moveSpeed": 10,
+  "defaultHitSoundType": "s",
+  "onProjectileHitIds": [
+    31,
+    52
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 720,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "nodeMap": {
+    "52": {
+      "actionIds": [
+        54
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "75637894-9f13-4cd3-9760-da762b8a170d",
+      "name": "doActionsByConditions",
+      "NodeID": 52
+    },
+    "31": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1.55,
+        "reduce_cur_tp_rate": 1.55
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10301,
+        "hitFrameFreezeId": -1,
+        "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+        "elementType": 0,
+        "impulseId": 2000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "f4298ad1-ffd6-4a41-8f1f-779da8f5aaf2",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 31
+    },
+    "51": {
+      "UID": "d4f947b8-9a3f-46b7-a07d-cda345c1337b",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 51
+    },
+    "54": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.24
+      },
+      "name": "calcResult",
+      "UID": "668fe0a7-262c-4b02-934b-bdd348272973",
+      "target": "CASTER",
+      "NodeID": 54
+    }
+  },
+  "tickInterval": 0,
+  "calcResultNodeId": 31,
+  "startSleepTime": 0,
+  "defaultHitEffect": "Eff_Hit_Grass_Blunt",
+  "groundSweepRadius": 0.05,
+  "impulseId": 2000,
+  "acceleration": 0
+}

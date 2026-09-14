@@ -1,0 +1,171 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "8a2c75c9-a78a-4e92-b028-741ee8493d9c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "UID": "e2794f2c-962d-4ef3-92e9-565fb5a50be7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "24": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.233,
+      "NodeID": 24,
+      "UID": "3ef99054-8329-4448-9d9d-8233a0cfb7c4"
+    },
+    "14": {
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.4,
+      "NodeID": 14,
+      "UID": "dad5a629-23ca-4114-89f3-13a02c4ea83b"
+    },
+    "10": {
+      "UID": "3f29c4f9-3663-448c-a912-f0b322af52cb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b49ce0b0-fd4b-49d9-a069-195157167c3e",
+      "effectId": "Eff_Parmon_Futternym_1023201_Skill_Sprinkle01_02",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "29": {
+      "action": {
+        "actionIds": [
+          27,
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.233,
+      "NodeID": 29,
+      "UID": "16c53db3-e24c-4ef9-a26f-c0d497fb06c5"
+    },
+    "27": {
+      "key": "hp10231",
+      "name": "setCacheVal",
+      "UID": "9a3e9446-5b05-44c4-a458-fc6a72433994",
+      "target": "OWNER",
+      "val": {
+        "name": "getAttribute",
+        "UID": "bc35665f-6cd9-4d6b-90ca-c14dac427cf9",
+        "target": "OWNER",
+        "NodeID": 26,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "edbf3b92-d46f-42f8-a9a5-4a19cab12ef2",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bcccdffd-eedd-4043-88fa-2158ead5c230",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Sprinkle"
+    },
+    "30": {
+      "pos": "OWNER",
+      "timelineId": 2123104,
+      "name": "createSpellField",
+      "UID": "a997e0d5-b543-4128-a93f-9721409b0803",
+      "rot": "OWNER",
+      "destroyOnMasterDead": true,
+      "NodeID": 30
+    },
+    "22": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0,
+        0.4,
+        0
+      ],
+      "speed": 1,
+      "name": "playEffectStr",
+      "UID": "c557c91e-7f28-4e16-8b76-787fb6779703",
+      "effectId": "Eff_Parmon_Futternym_1023201_Skill_Sprinkle02",
+      "scale": 0.8,
+      "NodeID": 22
+    },
+    "19": {
+      "UID": "2a248bc2-641f-4e4f-96dc-15848f758389",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 19
+    },
+    "5": {
+      "UID": "e0b77c65-a6f4-4dff-bc7b-5bbe5edc7e68",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "21": {
+      "UID": "8fc92437-9c41-4710-8602-fbd41327df57",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19
+        ]
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_12310220",
+  "NodeID": 7,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    5,
+    10,
+    14,
+    21,
+    24,
+    17,
+    29
+  ],
+  "layer": "Base",
+  "length": 2.1
+}

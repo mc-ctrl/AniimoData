@@ -1,0 +1,143 @@
+{
+  "duration": 5,
+  "BPName": "ability_70000200",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Bullet",
+  "ignoreActorCollision": true,
+  "gravityRatio": 2,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "52": {
+      "name": "checkPetPrototypeId",
+      "UID": "5667b0b3-35a2-4756-8099-b152481a7a3a",
+      "target": "OWNER",
+      "petPrototypeId": 7000020,
+      "NodeID": 52
+    },
+    "53": {
+      "actionIds": [
+        55
+      ],
+      "conditionActionIds": [
+        52
+      ],
+      "UID": "7e0b924e-7bfb-4237-a728-eb80b5bbd54a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        56
+      ],
+      "NodeID": 53
+    },
+    "56": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 70030042,
+      "name": "createEntity",
+      "UID": "0588dd82-82e0-4c9e-a39d-b0419806807e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "bornHp": 0,
+      "pos": "PROJECTILE",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 56
+    },
+    "50": {
+      "actionIds": [
+        54
+      ],
+      "conditionActionIds": [
+        49
+      ],
+      "UID": "fc17775b-0631-4c9c-82b3-989974cf4775",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        53
+      ],
+      "NodeID": 50
+    },
+    "55": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 70030043,
+      "name": "createEntity",
+      "UID": "762d5b63-4721-4c46-8aa4-5233af598a5f",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "bornHp": 0,
+      "pos": "PROJECTILE",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 55
+    },
+    "54": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 70030041,
+      "name": "createEntity",
+      "UID": "084cc426-4ec3-4f2b-bf85-6c350d0b4853",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "bornHp": 0,
+      "pos": "PROJECTILE",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 6,
+      "setLevel": true,
+      "NodeID": 54
+    },
+    "49": {
+      "name": "checkPetPrototypeId",
+      "UID": "513edcb9-a7a2-40bd-8dbd-2a6fdadb0739",
+      "target": "OWNER",
+      "petPrototypeId": 7000030,
+      "NodeID": 49
+    }
+  },
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    50
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

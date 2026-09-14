@@ -1,0 +1,185 @@
+{
+  "nodeMap": {
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "2203efdb-ff4e-421e-82b0-475929429677",
+      "target": "CASTER",
+      "NodeID": 3,
+      "animId": "Skill_MagicFlower"
+    },
+    "4": {
+      "UID": "6f52ca36-1251-4a1a-af9d-a53696ab5923",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 4
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 10,
+      "UID": "3ef8d312-c58a-4a51-9f47-e08b99c2d94a"
+    },
+    "15": {
+      "key": "Bulbly_01",
+      "name": "setServerCacheVal",
+      "UID": "2b9802a7-4b00-45e4-9ab0-be5fdfbfef10",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          -1.5,
+          1,
+          -0.721
+        ],
+        "templateId": 80000072,
+        "NodeID": 14,
+        "UID": "e3cccb69-9dce-4f3a-9170-22edc6c6eb00",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "stick": 1,
+        "pos": "OWNER",
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 15
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          15,
+          21,
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.5,
+      "NodeID": 17,
+      "UID": "8aa76bbc-457c-4639-b2e1-999cf28e105d"
+    },
+    "9": {
+      "UID": "fd51c511-f3e7-47c1-9c95-6236d7d096ba",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1
+      },
+      "NodeID": 9
+    },
+    "22": {
+      "UID": "2d6c574f-7ca0-48a9-b86e-0cd726fc57ff",
+      "name": "showBubbleMsg",
+      "msgId": 2193,
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "9befcbf7-cc67-4cd5-891d-9ff6f80d5d05",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22,
+          11
+        ]
+      },
+      "NodeID": 13
+    },
+    "11": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "259ed318-3320-4705-95fe-57601ee6c3c0",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "19": {
+      "key": "Bulbly_03",
+      "name": "setServerCacheVal",
+      "UID": "626eaf8f-43c9-4201-8e20-f2d092d2c5dd",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          1.5,
+          1,
+          -0.721
+        ],
+        "templateId": 80000072,
+        "NodeID": 18,
+        "UID": "cb4c7856-42fa-4a97-a601-220a7a1add27",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "stick": 1,
+        "pos": "OWNER",
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 19
+    },
+    "21": {
+      "key": "Bulbly_02",
+      "name": "setServerCacheVal",
+      "UID": "d6cecd9a-b17a-4808-a1e8-b11086be6f4c",
+      "target": "OWNER",
+      "val": {
+        "offsetXYZ": [
+          0,
+          1,
+          -1.442
+        ],
+        "templateId": 80000072,
+        "NodeID": 20,
+        "UID": "eb2e3d33-8e87-465b-957b-12919a286f23",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "stick": 1,
+        "pos": "OWNER",
+        "bornHp": 0,
+        "deadOnMasterDestroy": true,
+        "deadOnMasterLeaveCombat": true,
+        "entityName": "Puppet",
+        "followMasterCamp": true,
+        "rot": "OWNER",
+        "setLevel": true,
+        "name": "createEntity"
+      },
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_12120400",
+  "NodeID": 6,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    13,
+    10,
+    4,
+    17
+  ],
+  "layer": "Base",
+  "length": 3.1
+}

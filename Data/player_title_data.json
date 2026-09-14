@@ -1,0 +1,400 @@
+{
+  "3": {
+    "skillDisplayByTitleInPush": [
+      [
+        10104,
+        1
+      ],
+      [
+        10102,
+        1
+      ],
+      [
+        120003,
+        1
+      ]
+    ],
+    "iconSmall": "$UI_Icon_Nation_Small_2_01.png",
+    "nameFirst": 1270332711,
+    "icon": "$UI_Icon_Nation_02.png",
+    "nameLast": 1749619020,
+    "quest": 6517001,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        4,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        4,
+        1
+      ]
+    ],
+    "specialTrain": 8101018,
+    "nameFirstInIcon": 1462887798,
+    "quality": 1,
+    "needLevel": 35,
+    "skillDisplayByTitleInList": [
+      [
+        10104,
+        1
+      ],
+      [
+        10102,
+        1
+      ],
+      [
+        120003,
+        1
+      ]
+    ]
+  },
+  "4": {
+    "skillDisplayByTitleInPush": [
+      [
+        40415,
+        1
+      ],
+      [
+        40406,
+        1
+      ],
+      [
+        120002,
+        1
+      ]
+    ],
+    "iconSmall": "$UI_Icon_Nation_Small_2_01.png",
+    "nameFirst": 2005178544,
+    "icon": "$UI_Icon_Nation_02.png",
+    "nameLast": 1415149927,
+    "quest": 5608001,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        6,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        6,
+        1
+      ]
+    ],
+    "specialTrain": 8101019,
+    "nameFirstInIcon": 1719563857,
+    "quality": 1,
+    "needLevel": 40,
+    "skillDisplayByTitleInList": [
+      [
+        40415,
+        1
+      ],
+      [
+        40406,
+        1
+      ],
+      [
+        120002,
+        1
+      ]
+    ]
+  },
+  "6": {
+    "skillDisplayByTitleInPush": [
+      [
+        40414,
+        1
+      ],
+      [
+        110101,
+        1
+      ]
+    ],
+    "iconSmall": "$UI_Icon_Nation_Small_3_02.png",
+    "nameFirst": 1096901259,
+    "icon": "$UI_Icon_Nation_03.png",
+    "nameLast": 1242211552,
+    "quest": 2608001,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        8,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        8,
+        1
+      ]
+    ],
+    "specialTrain": 8101021,
+    "nameFirstInIcon": 1923025373,
+    "quality": 2,
+    "needLevel": 50,
+    "skillDisplayByTitleInList": [
+      [
+        40414,
+        1
+      ],
+      [
+        110101,
+        1
+      ]
+    ]
+  },
+  "7": {
+    "skillDisplayByTitleInPush": [
+      [
+        40202,
+        1
+      ],
+      [
+        120006,
+        1
+      ],
+      [
+        130005,
+        1
+      ]
+    ],
+    "iconSmall": "$UI_Icon_Nation_Small_3_03.png",
+    "nameFirst": 1764075256,
+    "icon": "$UI_Icon_Nation_03.png",
+    "nameLast": 1715057228,
+    "quest": 6710001,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        8,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        8,
+        1
+      ]
+    ],
+    "specialTrain": 8101022,
+    "nameFirstInIcon": 1978618869,
+    "quality": 2,
+    "needLevel": 55,
+    "skillDisplayByTitleInList": [
+      [
+        40202,
+        1
+      ],
+      [
+        120006,
+        1
+      ],
+      [
+        130005,
+        1
+      ]
+    ]
+  },
+  "8": {
+    "skillDisplayByTitleInPush": [
+      [
+        120005,
+        1
+      ]
+    ],
+    "iconSmall": "$UI_Icon_Nation_Small_4_01.png",
+    "nameFirst": 1554982456,
+    "icon": "$UI_Icon_Nation_04.png",
+    "nameLast": 1204044286,
+    "needLevel": 60,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        10,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        10,
+        1
+      ]
+    ],
+    "specialTrain": 8101023,
+    "quality": 3,
+    "nameFirstInIcon": 2147131734,
+    "skillDisplayByTitleInList": [
+      [
+        120005,
+        1
+      ]
+    ]
+  },
+  "9": {
+    "iconSmall": "$UI_Icon_Nation_Small_4_01.png",
+    "hideRedPoint": 1,
+    "nameFirst": 1225318291,
+    "nameFirstInIcon": 1643436253,
+    "nameLast": 1927727090,
+    "needLevel": 65,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        10,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        10,
+        1
+      ]
+    ],
+    "specialTrain": 8101026,
+    "quality": 3,
+    "icon": "$UI_Icon_Nation_04.png"
+  },
+  "5": {
+    "skillDisplayByTitleInPush": [
+      [
+        40201,
+        1
+      ],
+      [
+        120004,
+        1
+      ],
+      [
+        130006,
+        1
+      ]
+    ],
+    "iconSmall": "$UI_Icon_Nation_Small_3_01.png",
+    "nameFirst": 1883739425,
+    "icon": "$UI_Icon_Nation_03.png",
+    "nameLast": 1324090467,
+    "quest": 6518001,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        6,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        6,
+        1
+      ]
+    ],
+    "specialTrain": 8101020,
+    "nameFirstInIcon": 1772024030,
+    "quality": 2,
+    "needLevel": 45,
+    "skillDisplayByTitleInList": [
+      [
+        40201,
+        1
+      ],
+      [
+        120004,
+        1
+      ],
+      [
+        130006,
+        1
+      ]
+    ]
+  },
+  "0": {
+    "iconSmall": "$UI_Icon_Nation_Small_0_00.png",
+    "quality": 0,
+    "icon": "$UI_Icon_Nation_00.png",
+    "nameFirst": 1264653400,
+    "nameFirstInIcon": 1421345244,
+    "nameLast": 1449680653,
+    "needLevel": 1
+  },
+  "1": {
+    "quality": 0,
+    "iconSmall": "$UI_Icon_Nation_Small_1_01.png",
+    "nameFirstInIcon": 2067603636,
+    "nameLast": 1812185126,
+    "nameFirst": 2028568473,
+    "icon": "$UI_Icon_Nation_01.png",
+    "isShowUpstarUI": 1,
+    "needLevel": 1
+  },
+  "2": {
+    "skillDisplayByTitleInPush": [
+      [
+        40401,
+        1
+      ],
+      [
+        10103,
+        1
+      ],
+      [
+        120001,
+        1
+      ],
+      [
+        130001,
+        1
+      ]
+    ],
+    "iconSmall": "$UI_Icon_Nation_Small_2_01.png",
+    "nameFirst": 2092108273,
+    "icon": "$UI_Icon_Nation_02.png",
+    "nameLast": 1813982999,
+    "quest": 2607001,
+    "skillPointDisplayByTitleInList": [
+      [
+        1000,
+        4,
+        1
+      ]
+    ],
+    "skillPointDisplayByTitleInPush": [
+      [
+        1000,
+        4,
+        1
+      ]
+    ],
+    "specialTrain": 8101017,
+    "nameFirstInIcon": 1751830747,
+    "quality": 1,
+    "needLevel": 25,
+    "skillDisplayByTitleInList": [
+      [
+        40401,
+        1
+      ],
+      [
+        10103,
+        1
+      ],
+      [
+        120001,
+        1
+      ],
+      [
+        130001,
+        1
+      ]
+    ]
+  }
+}

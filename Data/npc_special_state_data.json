@@ -1,0 +1,423 @@
+{
+  "50013703": {
+    "specialDialogue": [
+      1,
+      1002,
+      88499250
+    ]
+  },
+  "50013801": {
+    "specialDialogue": [
+      1,
+      1002,
+      83579268
+    ]
+  },
+  "113": {
+    "state": "Skill_NoiseWave"
+  },
+  "50013803": {
+    "specialDialogue": [
+      1,
+      1002,
+      83579275
+    ]
+  },
+  "50013804": {
+    "specialDialogue": [
+      1,
+      1002,
+      83579276
+    ]
+  },
+  "50013805": {
+    "specialDialogue": [
+      1,
+      1002,
+      83579280
+    ]
+  },
+  "115": {
+    "actionPrototypeIds": {},
+    "prefabResID": "$P_Item_Temple_TempleEntrance_Active_Idle_Underground.prefab"
+  },
+  "50015201": {
+    "trapEventId": 50015201
+  },
+  "50015202": {
+    "trapEventId": 50015202
+  },
+  "50017501": {
+    "trapEventId": 50017501
+  },
+  "117": {
+    "actionPrototypeIds": [
+      217
+    ]
+  },
+  "206": {
+    "actionPrototypeIds": [
+      206
+    ]
+  },
+  "118": {
+    "actionPrototypeIds": [
+      218
+    ]
+  },
+  "119": {
+    "actionPrototypeIds": [
+      219
+    ]
+  },
+  "801": {
+    "actionPrototypeIds": {},
+    "effs": [
+      "Eff_SceneObject_AugurShop_StarTrail_A"
+    ]
+  },
+  "802": {
+    "actionPrototypeIds": {},
+    "effs": [
+      "Eff_SceneObject_BowlingAlley_Sign_Repair"
+    ]
+  },
+  "122": {
+    "actionPrototypeIds": [
+      466
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "804": {
+    "name": 2081223150,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_02_Champion1_b"
+    ]
+  },
+  "990061": {
+    "icon": "$UI_Icon_TopLogoBuff_Order.png",
+    "funcRep": 1171280285,
+    "name": 1653137101
+  },
+  "806": {
+    "name": 1862878144,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_04_Cafe1_b"
+    ]
+  },
+  "807": {
+    "name": 2062456739,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_05_Clothing1_b"
+    ]
+  },
+  "125": {
+    "actionPrototypeIds": [
+      283
+    ],
+    "state": "OpenIdle"
+  },
+  "809": {
+    "name": 1239495565,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_07_idyll1_b"
+    ]
+  },
+  "810": {
+    "name": 1474837887,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_08_Peatles_b"
+    ]
+  },
+  "126": {
+    "actionPrototypeIds": {},
+    "state": "Sprout"
+  },
+  "500154": {
+    "trapEventId": 500154
+  },
+  "401081": {
+    "icon": "\"\""
+  },
+  "5": {
+    "funcRep": 1893392445,
+    "iconMap": "$UI_icon_MarkPoint_store.png",
+    "name": 1155223656,
+    "icon": "$UI_icon_store.png",
+    "actionPrototypeIds": [
+      159,
+      172
+    ]
+  },
+  "110": {
+    "interactLocalOffset": [
+      0,
+      4.5,
+      0
+    ],
+    "actionPrototypeIds": [
+      139
+    ],
+    "prefabResID": "$P_Item_Temple_TempleEntrance_Pass_Idle.prefab"
+  },
+  "114": {
+    "state": "Mimicry_Start"
+  },
+  "112": {},
+  "500182": {
+    "specialDialogue": [
+      1,
+      1029,
+      90672281
+    ]
+  },
+  "120": {
+    "name": 1459245286
+  },
+  "500178": {
+    "trapEventId": 500178
+  },
+  "500179": {
+    "trapEventId": 500179
+  },
+  "500180": {
+    "trapEventId": 500180
+  },
+  "1000": {},
+  "116": {
+    "actionPrototypeIds": [
+      216
+    ]
+  },
+  "1100550001": {
+    "trapEventId": 1100550001
+  },
+  "50100402": {
+    "state": "Idle",
+    "name": 1303852845
+  },
+  "1": {
+    "trapEventId": 800003,
+    "funcRep": 2092075638,
+    "state": "fallInSleep",
+    "name": 1419293051
+  },
+  "2": {
+    "funcRep": 1960567021,
+    "name": 1781382659,
+    "behavGroupId": "BG_Npc_Test"
+  },
+  "3": {},
+  "4": {
+    "trapEventId": 4000211
+  },
+  "50100401": {
+    "state": "Mimicry_Idle",
+    "name": 1659735992
+  },
+  "881152": {
+    "prefabResID": "$P_Item_SceneObject_Ark_TakeoutBox.prefab",
+    "name": 1340217568
+  },
+  "101": {
+    "actionPrototypeIds": [
+      131
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "40015701": {
+    "name": 1095755989
+  },
+  "40015702": {
+    "name": 1538721899
+  },
+  "50009500": {
+    "trapEventId": 50009500
+  },
+  "50009600": {
+    "trapEventId": 50009600,
+    "name": 1245754860
+  },
+  "50009601": {
+    "trapEventId": 50009601,
+    "name": 2142629364
+  },
+  "50009602": {
+    "name": 1666359080
+  },
+  "50009700": {
+    "trapEventId": 50009700
+  },
+  "50010100": {
+    "trapEventId": 50010100
+  },
+  "50013901": {
+    "specialDialogue": [
+      1,
+      2002,
+      83579281
+    ]
+  },
+  "50013802": {
+    "specialDialogue": [
+      1,
+      1002,
+      83579269
+    ]
+  },
+  "123": {
+    "actionPrototypeIds": [
+      282
+    ],
+    "state": "SproutToBud"
+  },
+  "50013701": {
+    "specialDialogue": [
+      1,
+      1002,
+      83579271
+    ]
+  },
+  "50010103": {
+    "trapEventId": 50010103
+  },
+  "50010102": {
+    "trapEventId": 50010102
+  },
+  "50010101": {
+    "trapEventId": 50010101
+  },
+  "805": {
+    "name": 1505071046,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_03_Apartment_b"
+    ]
+  },
+  "109": {
+    "actionPrototypeIds": [
+      140
+    ]
+  },
+  "803": {
+    "name": 1672095861,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_01_BlindBox_b"
+    ]
+  },
+  "108": {
+    "actionPrototypeIds": [
+      158,
+      160
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "401080": {
+    "trapEventId": 401080
+  },
+  "100": {
+    "actionPrototypeIds": {},
+    "state": "TeleportFlower_Activate"
+  },
+  "808": {
+    "name": 1310572669,
+    "effs": [
+      "Eff_Env_SceneObject_MediaPuzzle_06_FashionPet_b"
+    ]
+  },
+  "5140033": {
+    "name": 1195886012
+  },
+  "102": {
+    "actionPrototypeIds": [
+      131
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "1001": {},
+  "103": {
+    "actionPrototypeIds": [
+      131
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "500156": {
+    "trapEventId": 500156
+  },
+  "104": {
+    "actionPrototypeIds": [
+      131
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "121": {},
+  "105": {
+    "interactLocalOffset": [
+      0,
+      4.5,
+      0
+    ],
+    "actionPrototypeIds": [
+      139
+    ],
+    "prefabResID": "$P_Item_Temple_TempleEntrance_Active_Idle.prefab"
+  },
+  "500153": {
+    "trapEventId": 500153
+  },
+  "106": {
+    "actionPrototypeIds": [
+      158
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "124": {
+    "actionPrototypeIds": {},
+    "state": "BudToOpen"
+  },
+  "107": {
+    "actionPrototypeIds": [
+      158,
+      160
+    ],
+    "state": "TeleportFlower_Activate"
+  },
+  "500175": {
+    "trapEventId": 500175
+  },
+  "880340": {
+    "prefabResID": "$P_Item_SceneObject_Ark_Info_01.prefab",
+    "name": 1880994552
+  },
+  "880341": {
+    "prefabResID": "$P_Item_SceneObject_Ark_Info_02.prefab",
+    "name": 1882347239
+  },
+  "880342": {
+    "prefabResID": "$P_Item_SceneObject_Ark_Info_03.prefab",
+    "name": 2135168858
+  },
+  "880343": {
+    "prefabResID": "$P_Item_SceneObject_Ark_Info_04.prefab",
+    "name": 1731739292
+  },
+  "880344": {
+    "prefabResID": "$P_Item_SceneObject_Ark_Info_05.prefab",
+    "name": 1801381530
+  },
+  "880345": {
+    "prefabResID": "$P_Item_SceneObject_Ark_Info_06.prefab",
+    "name": 1879409272
+  },
+  "111": {
+    "state": "Shrink",
+    "actionPrototypeIds": {},
+    "effs": {}
+  },
+  "50013702": {
+    "specialDialogue": [
+      1,
+      1002,
+      83579273
+    ]
+  }
+}

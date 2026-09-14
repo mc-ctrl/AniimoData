@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_10450603",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "化作圆月迅速的攻击前方的敌人，将敌人聚集在面前，再释放火焰力量攻击敌人。",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10450603001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_WaterBall"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_Common_Skill_Water_Bullet_Fly",
+    "Eff_Parmon_10045_Skill_Water_Bullet_Start"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 2,
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 3,
+  "abilityParamId": 13000101,
+  "name": "普通冲撞"
+}

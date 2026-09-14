@@ -1,0 +1,328 @@
+[
+  {
+    "elementType": 5,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1005300
+          },
+          {
+            "petPrototypeId": 1002500
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1028300
+          },
+          {
+            "petPrototypeId": 1051200
+          }
+        ],
+        "petFunction": "BREAK"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1033300
+          }
+        ],
+        "petFunction": "SUP"
+      }
+    ]
+  },
+  {
+    "elementType": 6,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1021200
+          },
+          {
+            "petPrototypeId": 1021300
+          },
+          {
+            "petPrototypeId": 1032300
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1020700
+          },
+          {
+            "petPrototypeId": 1047500
+          }
+        ],
+        "petFunction": "BREAK"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1023300
+          },
+          {
+            "petPrototypeId": 1032400
+          }
+        ],
+        "petFunction": "SUP"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1004500
+          }
+        ],
+        "petFunction": "ENERGY"
+      }
+    ]
+  },
+  {
+    "elementType": 3,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1019400
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1017400
+          }
+        ],
+        "petFunction": "BREAK"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1017300
+          }
+        ],
+        "petFunction": "SUP"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1048300
+          }
+        ],
+        "petFunction": "ENERGY"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1004300
+          }
+        ],
+        "petFunction": "HEAL"
+      }
+    ]
+  },
+  {
+    "elementType": 12,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1001200
+          },
+          {
+            "petPrototypeId": 1002600
+          },
+          {
+            "petPrototypeId": 1003200
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1002700
+          },
+          {
+            "petPrototypeId": 1005500
+          }
+        ],
+        "petFunction": "BREAK"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1026300
+          },
+          {
+            "petPrototypeId": 1035200
+          }
+        ],
+        "petFunction": "SUP"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1020300
+          }
+        ],
+        "petFunction": "ENERGY"
+      }
+    ]
+  },
+  {
+    "elementType": 9,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1018500
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1002300
+          },
+          {
+            "petPrototypeId": 1018700
+          }
+        ],
+        "petFunction": "BREAK"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1018400
+          },
+          {
+            "petPrototypeId": 1026200
+          },
+          {
+            "petPrototypeId": 1044300
+          }
+        ],
+        "petFunction": "SUP"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1023200
+          }
+        ],
+        "petFunction": "HEAL"
+      }
+    ]
+  },
+  {
+    "elementType": 4,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1003300
+          },
+          {
+            "petPrototypeId": 1029300
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1022200
+          }
+        ],
+        "petFunction": "BREAK"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1014300
+          },
+          {
+            "petPrototypeId": 1047400
+          }
+        ],
+        "petFunction": "SUP"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1012200
+          }
+        ],
+        "petFunction": "ENERGY"
+      }
+    ]
+  },
+  {
+    "elementType": 2,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1013300
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1016300
+          }
+        ],
+        "petFunction": "BREAK"
+      }
+    ]
+  },
+  {
+    "elementType": 8,
+    "petSet": [
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1045300
+          },
+          {
+            "petPrototypeId": 1050300
+          }
+        ],
+        "petFunction": "DPS"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1016200
+          },
+          {
+            "petPrototypeId": 1028500
+          }
+        ],
+        "petFunction": "BREAK"
+      },
+      {
+        "petList": [
+          {
+            "petPrototypeId": 1043300
+          },
+          {
+            "petPrototypeId": 1045400
+          }
+        ],
+        "petFunction": "SUP"
+      }
+    ]
+  }
+]

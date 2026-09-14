@@ -1,0 +1,102 @@
+{
+  "209": [
+    {
+      "needNum1": 1,
+      "skillDesc": -295568279
+    },
+    {
+      "needNum1": 2,
+      "skillDesc": -1626614703
+    }
+  ],
+  "10": {
+    "3": {
+      "needNum1": 6,
+      "reward": 21003
+    },
+    "4": {
+      "needNum1": 8,
+      "reward": 21004
+    },
+    "6": {
+      "needNum1": 12,
+      "reward": 21006
+    },
+    "7": {
+      "needNum1": 14,
+      "reward": 21007
+    },
+    "8": {
+      "reward": 21008,
+      "displayType": 1,
+      "needNum1": 15
+    },
+    "5": {
+      "needNum1": 10,
+      "reward": 21005
+    },
+    "0": {},
+    "1": {
+      "needNum1": 2,
+      "reward": 21001
+    },
+    "2": {
+      "needNum1": 4,
+      "reward": 21002
+    }
+  },
+  "208": [
+    {
+      "needNum1": 1,
+      "skillDesc": -2121848435
+    }
+  ],
+  "202": [
+    {
+      "needNum1": 1,
+      "skillDesc": -806128178
+    }
+  ],
+  "204": [
+    {
+      "needNum1": 1,
+      "skillDesc": -98517677
+    },
+    {
+      "needNum1": 2,
+      "skillDesc": -286284088
+    }
+  ],
+  "210": [
+    {
+      "needNum1": 1,
+      "skillDesc": -874125744
+    }
+  ],
+  "203": [
+    {
+      "needNum1": 1,
+      "skillDesc": -727770217
+    }
+  ],
+  "201": [
+    {
+      "needNum1": 1,
+      "skillDesc": -733411225
+    }
+  ],
+  "200": [
+    {
+      "needNum1": 1,
+      "skillDesc": -1618242455
+    },
+    {
+      "needNum1": 2,
+      "skillDesc": -337055645
+    },
+    {
+      "needNum1": 3,
+      "skillDesc": -1519722938
+    }
+  ]
+}

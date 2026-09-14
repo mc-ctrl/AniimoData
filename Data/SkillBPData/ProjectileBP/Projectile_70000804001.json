@@ -1,0 +1,52 @@
+{
+  "duration": 1,
+  "BPName": "ability_70000804",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Bullet",
+  "ignoreActorCollision": true,
+  "gravityRatio": 0.3,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "24": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 70030073,
+      "name": "createEntity",
+      "UID": "37f80a7a-15bd-4624-b3b6-b2b437cdae8e",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 0,
+      "bornHp": 0,
+      "pos": "OWNER",
+      "rot": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "maxCount": 101,
+      "setLevel": true,
+      "NodeID": 24
+    }
+  },
+  "moveSpeed": 4,
+  "onProjectileFinishIds": [
+    24
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.6,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 1,
+  "acceleration": 0
+}

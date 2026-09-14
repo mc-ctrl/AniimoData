@@ -1,0 +1,42 @@
+{
+  "BPName": "ability_902131700",
+  "NodeID": 1,
+  "UID": "b6c15e17-506b-4d9b-ae58-53ff3d5cd96b",
+  "abilityParamId": 49217010,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "10": {
+      "timelineId": 902131700001,
+      "name": "setCombatActionTimeline",
+      "UID": "2092cbff-9987-419b-9546-fbbbca456316",
+      "target": "CASTER",
+      "NodeID": 10
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_CcEnd",
+    "Skill_CcStart",
+    "Skill_CcLoop"
+  ],
+  "preloadEffs": [
+    "Eff_Monster_90213_Mon_Attack_Crystal_Trail_01",
+    "Eff_Monster_90213_Mon_Attack_Sprint_Absorb",
+    "Eff_Monster_90213_Mon_Attack_Sprint_End",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02",
+    "Eff_Monster_90213_Mon_Attack_Crystal_Trail_02",
+    "Eff_Monster_90213_Mon_Attack_Water006",
+    "Eff_Monster_90213_Mon_Skill_Sprint_01"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 100,
+  "searchTargetRangeUp": 20,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 20
+}

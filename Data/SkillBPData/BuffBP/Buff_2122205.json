@@ -1,0 +1,31 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2122205",
+  "NodeID": 1,
+  "UID": "cb531716-1390-4ecb-8d4a-72833f6c0cd5",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "10222_Canying",
+      "name": "applyMaterialEffect",
+      "NodeID": 3
+    },
+    "5": {
+      "UID": "8c3569fd-a660-418e-b3b7-08f78420cefa",
+      "name": "removeMaterialEffect",
+      "key": "10222_Canying",
+      "NodeID": 5
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    3
+  ]
+}

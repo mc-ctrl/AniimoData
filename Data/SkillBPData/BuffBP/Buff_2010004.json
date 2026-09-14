@@ -1,0 +1,32 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "10": {
+      "name": "calcResult",
+      "UID": "d5f2db60-94af-41c2-904f-3f376cb8d727",
+      "target": "CURPET",
+      "NodeID": 10,
+      "calcInfoByLuaConfig": {
+        "id": 2010004,
+        "sp_cur": "param0",
+        "type": 1
+      }
+    },
+    "11": {
+      "UID": "d9298c8f-60e5-4974-8767-2b0cffd4c5b2",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    }
+  },
+  "BPName": "buff_2010004",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

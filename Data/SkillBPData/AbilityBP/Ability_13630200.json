@@ -1,0 +1,49 @@
+{
+  "BPName": "ability_13630200",
+  "NodeID": 1,
+  "UID": "efddf221-4924-48eb-9326-562af256bba0",
+  "abilityParamId": 11300020,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 13630200001,
+      "name": "setCombatActionTimeline",
+      "UID": "7d8cee22-643a-48db-b69d-5e440653cc6f",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "65": {
+      "key": "Pos",
+      "name": "setCacheVal",
+      "UID": "4f8641b0-9ff7-42d1-a1e8-89e64834f2c2",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 65
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3,
+  "preloadAnims": [
+    "Skill_RoarAttack"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10363_Skill_Roar_Start",
+    "Eff_Parmon_10363_Skill_Roar"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onAbilityEndIds": [
+    65
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

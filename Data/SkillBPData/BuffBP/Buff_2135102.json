@@ -1,0 +1,34 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2135102",
+  "NodeID": 1,
+  "UID": "a28babba-d0ed-4559-a486-ec5d8d701779",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "cd3c2cb8-7661-4d0f-8aef-71d7253e283a",
+      "effectId": "Eff_Parmon_10351_Buff_Frenzy_01",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "236d3514-c373-404b-8146-c5eedaa768dd",
+      "effectId": "Eff_Parmon_10351_Buff_Frenzy_01",
+      "speed": 1,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

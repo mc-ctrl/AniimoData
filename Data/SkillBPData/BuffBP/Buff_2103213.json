@@ -1,0 +1,155 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103213",
+  "NodeID": 1,
+  "UID": "8796dbe1-de5e-42af-92c8-569d2089ce2e",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "3bf46446-4827-4398-9884-597145d159f5",
+      "effectId": "Eff_Parmon_10031_GhostFlame_End",
+      "speed": 1,
+      "NodeID": 12
+    },
+    "4": {
+      "petTarget": "OWNER",
+      "triggerId": 20002022,
+      "name": "onEntityTrigger",
+      "UID": "0013eaa3-c341-4c0f-a464-da5d6bf411a4",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "19": {
+      "UID": "54e48c98-a186-4fcb-a616-9b21a42f2cd0",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 19
+    },
+    "6": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "78202318-1911-4a1e-933b-c4a3a82be472",
+      "target": "OWNER",
+      "val": 3,
+      "NodeID": 6
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2d57d03c-ca00-473c-9771-472cab90c1d3",
+      "effectId": "Eff_Parmon_10031_GhostFlame",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "3c2f27af-f27e-4190-ac4c-6edd5bafdd6c",
+      "effectId": "Eff_Parmon_10032_GhostFlame",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "7": {
+      "key": "CatchProbBuffVal",
+      "name": "setServerCacheVal",
+      "UID": "d19fcf8d-0510-42cc-b48c-8dd793d1055d",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "aa00f2b9-7277-4d37-b218-4d594668d065",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": 0.5
+      },
+      "NodeID": 16
+    },
+    "8": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "8f79fe36-2a43-4bb2-a0b4-fadcb14cac21",
+      "to": 10310900,
+      "NodeID": 8,
+      "from": 10310910
+    },
+    "17": {
+      "actionIds": [
+        16
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "af841847-c660-4212-aa59-0e43de4ead72",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "9": {
+      "recoverOnExit": true,
+      "notShowCountDown": false,
+      "name": "switchSkill",
+      "UID": "8beceaf7-b66f-43f6-85e4-6b76a6c4f7ff",
+      "to": 10310910,
+      "NodeID": 9,
+      "from": 10310900
+    },
+    "18": {
+      "UID": "d999a86d-ab36-46e0-be87-d354054595f8",
+      "name": "registerRepeatEvent",
+      "actionIds": [
+        17
+      ],
+      "NodeID": 18
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4e73cc43-54a1-49b8-b29b-c8d0d8e6e537",
+      "effectId": "Eff_Parmon_10032_GhostFlame",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "86feda17-812d-4f23-a331-8a57f9493b3c",
+      "effectId": "Eff_Parmon_10031_GhostFlame",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "key": "buff_210321320",
+      "duration": 1,
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20,
+      "UID": "7442eb18-6628-4815-8f6f-eea44f04d6ba",
+      "name": "addEntityTimer"
+    },
+    "2": {
+      "name": "enableCamouFlage",
+      "leaveStateDamage": 1,
+      "UID": "17b622ba-8465-4220-8431-1ef6a615deea",
+      "lerpTime": 0.5,
+      "enable": true,
+      "NodeID": 2
+    }
+  },
+  "onBuffDestroyIds": [
+    4,
+    7,
+    8,
+    11,
+    14,
+    12,
+    20
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    6,
+    9,
+    10,
+    13,
+    18
+  ]
+}

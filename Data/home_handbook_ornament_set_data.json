@@ -1,0 +1,202 @@
+{
+  "40000005": {
+    "sortId": 5,
+    "positionOffset": [
+      -0.02,
+      -0.1,
+      0
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5001,
+    "thirdType": 5001001,
+    "modelRotationInit": [
+      0,
+      -70,
+      0
+    ],
+    "modelScale": 0.4
+  },
+  "40000008": {
+    "sortId": 8,
+    "positionOffset": [
+      -0.2,
+      -0.15,
+      -1.7
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5002,
+    "thirdType": 5002001,
+    "modelRotationInit": [
+      0,
+      45,
+      0
+    ],
+    "modelScale": 0.3
+  },
+  "40000003": {
+    "sortId": 3,
+    "positionOffset": [
+      0,
+      -0.3,
+      -0.9
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5001,
+    "thirdType": 5001001,
+    "modelRotationInit": [
+      0,
+      -25,
+      0
+    ],
+    "modelScale": 0.34
+  },
+  "40000006": {
+    "sortId": 6,
+    "positionOffset": [
+      0,
+      -0.2,
+      0
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5002,
+    "thirdType": 5002001,
+    "modelRotationInit": [
+      0,
+      -25,
+      0
+    ],
+    "modelScale": 0.2
+  },
+  "40000001": {
+    "sortId": 1,
+    "positionOffset": [
+      -0.2,
+      -0.1,
+      0
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5001,
+    "thirdType": 5001001,
+    "modelRotationInit": [
+      0,
+      60,
+      0
+    ],
+    "modelScale": 0.3
+  },
+  "40000004": {
+    "sortId": 4,
+    "positionOffset": [
+      0.02,
+      -0.1,
+      -0.7
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5001,
+    "thirdType": 5001001,
+    "modelRotationInit": [
+      0,
+      60,
+      0
+    ],
+    "modelScale": 0.4
+  },
+  "40000007": {
+    "sortId": 7,
+    "positionOffset": [
+      0,
+      -0.2,
+      0
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5002,
+    "thirdType": 5002001,
+    "modelRotationInit": [
+      0,
+      -15,
+      0
+    ],
+    "modelScale": 0.5
+  },
+  "40000002": {
+    "sortId": 2,
+    "positionOffset": [
+      0.03,
+      -0.1,
+      0
+    ],
+    "rotationXLimit": [
+      0,
+      0
+    ],
+    "rotationYLimit": [
+      0,
+      360
+    ],
+    "firstType": 5,
+    "secondType": 5001,
+    "thirdType": 5001001,
+    "modelRotationInit": [
+      0,
+      -150,
+      0
+    ],
+    "modelScale": 0.25
+  }
+}

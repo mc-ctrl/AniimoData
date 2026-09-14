@@ -1,0 +1,360 @@
+{
+  "nodeMap": {
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          74,
+          75
+        ]
+      },
+      "NodeID": 5
+    },
+    "81": {
+      "duration": 20,
+      "disableWhenFinished": true,
+      "NodeID": 81,
+      "UID": "f7997aff-cc8c-4f9f-8776-8ca5658bf691",
+      "target": "OWNER",
+      "presetName": "Parmon_10027_DefMode_Metal",
+      "name": "playPreset"
+    },
+    "82": {
+      "duration": 20,
+      "disableWhenFinished": true,
+      "NodeID": 82,
+      "UID": "bcf1ad1c-f97d-4153-b663-0ff84309c121",
+      "target": "OWNER",
+      "presetName": "Parmon_10027_DefMode_Metal",
+      "name": "playPreset"
+    },
+    "42": {
+      "timelineId": 910270320002,
+      "name": "jumpToNextTimeline",
+      "UID": "9ebf2506-7a13-4378-9f6e-6908d41f3c0b",
+      "target": "OWNER",
+      "NodeID": 42
+    },
+    "43": {
+      "duration": 0.5,
+      "NodeID": 43,
+      "UID": "2a91371b-3679-4739-b9e0-d33c9f914c9a",
+      "actorMaxSearchCount": 2,
+      "endActionIds": [
+        42
+      ],
+      "filterEntityType": "Puppet",
+      "filterEntityType2": "Creation",
+      "filterRelation": 4,
+      "height": 2.1,
+      "initSpeed": 100,
+      "searchHeightUp": 3,
+      "maxCount": 20,
+      "maxSpeed": 100,
+      "minSpeed": 20,
+      "reboundAcceleration": 0,
+      "reboundDuration": 0.6,
+      "name": "reboundDash",
+      "waitTime": 0,
+      "searchRadius": 15,
+      "searchHeightDown": 3,
+      "reboundMinSpeed": 20,
+      "radius": 1,
+      "reboundMaxSpeed": 50,
+      "reboundInitSpeed": 50,
+      "hitActionIds": [
+        68,
+        86,
+        83
+      ],
+      "acceleration": -30
+    },
+    "86": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2102711,
+      "NodeID": 86,
+      "UID": "112102f9-8f42-45df-a60a-a4d396eacd65",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "83": {
+      "duration": 0.15,
+      "disableWhenFinished": true,
+      "NodeID": 83,
+      "UID": "d0df60ef-1ca7-4afd-8dbb-db67e2f60ab0",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10027_Skill_Hit",
+      "name": "playPreset"
+    },
+    "31": {
+      "UID": "6a7c478e-ff70-41d7-b752-bab0a0488555",
+      "target": "OWNER",
+      "name": "isInSpecialDefenseST",
+      "NodeID": 31
+    },
+    "17": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 17,
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7"
+    },
+    "57": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4c16808a-e0c1-4b63-84b9-30f877deefb7",
+      "effectId": "Eff_Parmon_10027_Skill_Slingshot_Loop_DefMode_Metal",
+      "speed": 1,
+      "NodeID": 57
+    },
+    "74": {
+      "time": 0.01,
+      "rotateSpeed": 9999,
+      "name": "rotateTo",
+      "UID": "aa714dcf-f747-47ae-a3d0-6fdfbbcfa11d",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 74
+    },
+    "68": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 66,
+      "NodeID": 68,
+      "UID": "0d044d03-7fc4-4bf5-bc1d-aa978f88dad1",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            1.7
+          ],
+          "shapeArgs": [
+            2,
+            180,
+            1.5,
+            0
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 6000,
+      "actionIds": [
+        66,
+        80
+      ]
+    },
+    "66": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "blunt",
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30103,
+        "hitFrameFreezeId": 10012,
+        "hitEffect": [
+          {
+            "id": "Eff_Parmon_10027_Skill_Slingshot_Hit_DefMode_Metal",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 6000,
+        "dmgWordUITypes": [
+          "FROM_EQUIPMENT"
+        ]
+      },
+      "UID": "5bcfaf1d-9f74-41cc-a1f9-4c0f832380db",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 66
+    },
+    "60": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f2d7f88c-73f1-4460-bada-91dceeb9b5af",
+      "effectId": "Eff_Parmon_10027_Skill_Slingshot_Charge_Metal",
+      "speed": 1,
+      "NodeID": 60
+    },
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0e2df160-2662-46ee-abe4-de6c6c18657a",
+      "target": "OWNER",
+      "NodeID": 23,
+      "animId": "Skill_Slingshot_Loop"
+    },
+    "59": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0980fee8-da16-4d3a-be9b-d5366ded0a57",
+      "effectId": "Eff_Parmon_10027_Skill_Slingshot_Charge_DefMode_Metal",
+      "speed": 1.7,
+      "NodeID": 59
+    },
+    "14": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 14,
+      "animId": "Skill_Slingshot_Charge"
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "67a67721-653f-4a92-9915-47afb347aa08",
+      "effectId": "Eff_Parmon_10027_Skill_Slingshot_Loop_Metal",
+      "speed": 1,
+      "NodeID": 58
+    },
+    "75": {
+      "UID": "aedf0cd1-2068-4cc9-a7f5-969b3bed42fd",
+      "searchRadius": 18,
+      "name": "lockTargetBySearchRadius",
+      "NodeID": 75
+    },
+    "25": {
+      "actionIds": [
+        32,
+        57,
+        81
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "ab53080f-9ac6-454a-afe7-454d47a66355",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23,
+        58,
+        82
+      ],
+      "NodeID": 25
+    },
+    "16": {
+      "actionIds": [
+        29,
+        59
+      ],
+      "conditionActionIds": [
+        28
+      ],
+      "UID": "7636f629-ad3d-40ff-a42f-f3d0d049fb35",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        14,
+        60
+      ],
+      "NodeID": 16
+    },
+    "27": {
+      "action": {
+        "actionIds": [
+          25,
+          43
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 27,
+      "UID": "64412a4d-cac2-4088-a3fe-1e97dfa38028"
+    },
+    "28": {
+      "UID": "3d847b6c-463a-477d-a30e-df232598938f",
+      "target": "OWNER",
+      "name": "isInSpecialDefenseST",
+      "NodeID": 28
+    },
+    "29": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "e5d4c339-de61-48a1-8dc8-0ce07089c9e1",
+      "target": "OWNER",
+      "NodeID": 29,
+      "animId": "Skill_Slingshot_Charge_DefMode"
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7e96e07e-5a0e-489a-ae5e-d3c685442f22",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10027_Skill_Slingshot_Charge",
+      "NodeID": 18
+    },
+    "32": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "d898bddb-bb00-47d3-a5f9-f72ae7a35b21",
+      "target": "OWNER",
+      "NodeID": 32,
+      "animId": "Skill_Slingshot_Loop_DefMode"
+    },
+    "19": {
+      "UID": "c7785be1-a8e9-4262-8fd5-68cb7099db84",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "NodeID": 19
+    },
+    "22": {
+      "UID": "d3e81a8e-6811-4aa8-b4cd-fd95d07a7337",
+      "eventType": "Notify",
+      "time": 1.33,
+      "NodeID": 22
+    },
+    "80": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "1665aa1c-b833-4b18-98d6-22f0c60f2ad9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10027_Skill_Slingshot_Hit",
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_910270320",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    17,
+    19,
+    22,
+    27
+  ],
+  "layer": "Base",
+  "length": 20
+}

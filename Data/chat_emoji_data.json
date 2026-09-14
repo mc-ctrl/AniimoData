@@ -1,0 +1,194 @@
+[
+  {
+    "emojiTab": 1,
+    "res": "$UI_Emoji_Chat.prefab"
+  },
+  {
+    "emojiTab": 1,
+    "res": "$UI_Emoji_Dizzy.prefab"
+  },
+  {
+    "emojiTab": 1,
+    "res": "$UI_Emoji_CatchHint.prefab"
+  },
+  {
+    "emojiTab": 1,
+    "res": "$UI_Emoji_Proud.prefab"
+  },
+  {
+    "emojiTab": 1,
+    "res": "$UI_Emoji_Shy.prefab"
+  },
+  {
+    "emojiTab": 1,
+    "res": "$UI_Emoji_Surprise.prefab"
+  },
+  {
+    "itemId": 851001,
+    "res": "$UI_Icon_Emoji_Static_Female1.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851002,
+    "res": "$UI_Icon_Emoji_Static_Female2.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851003,
+    "res": "$UI_Icon_Emoji_Static_Female3.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851004,
+    "res": "$UI_Icon_Emoji_Static_Female4.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851005,
+    "res": "$UI_Icon_Emoji_Static_Female5.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851006,
+    "res": "$UI_Icon_Emoji_Static_Female6.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851007,
+    "res": "$UI_Icon_Emoji_Static_Female7.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851008,
+    "res": "$UI_Icon_Emoji_Static_Female8.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851009,
+    "res": "$UI_Icon_Emoji_Static_Female9.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851010,
+    "res": "$UI_Icon_Emoji_Static_Male1.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851011,
+    "res": "$UI_Icon_Emoji_Static_Male2.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851012,
+    "res": "$UI_Icon_Emoji_Static_Male3.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851013,
+    "res": "$UI_Icon_Emoji_Static_Male4.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851014,
+    "res": "$UI_Icon_Emoji_Static_Male5.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851015,
+    "res": "$UI_Icon_Emoji_Static_Male6.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851016,
+    "res": "$UI_Icon_Emoji_Static_Male7.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851017,
+    "res": "$UI_Icon_Emoji_Static_Male8.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "itemId": 851018,
+    "res": "$UI_Icon_Emoji_Static_Male9.png",
+    "emojiTab": 2,
+    "emojiType": 1
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Believe.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Charming.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Cry.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_FeelOut.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Laugh.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Love.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Noodles.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Poor.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Sad.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Scream.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Silly.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_SpeakUp.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_Try.prefab"
+  },
+  {
+    "emojiTab": 3,
+    "res": "$UI_Market_Emoji_What.prefab"
+  },
+  {
+    "emojiTab": 4,
+    "res": "$UI_Market_Emoji_Continue.prefab"
+  }
+]

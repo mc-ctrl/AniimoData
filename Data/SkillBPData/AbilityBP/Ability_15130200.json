@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_15130200",
+  "NodeID": 1,
+  "UID": "bf950733-0c13-4a37-ad38-52c6af1cf15a",
+  "abilityParamId": 10500500,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15130200001,
+      "name": "setCombatActionTimeline",
+      "UID": "06ffd96c-506c-4fec-b55d-fe55bbc93b3a",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3.3,
+  "preloadAnims": [
+    "Skill_Punch01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10513_Skill_Punch_Attack03",
+    "Eff_Parmon_10513_Skill_Punch_Attack01",
+    "Eff_Hit_Fire_Blunt",
+    "Eff_Parmon_10513_Skill_Punch_Attack01_01",
+    "Eff_Debuff_stun"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 10,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 2,
+  "desc": ""
+}

@@ -1,0 +1,104 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9101207",
+  "NodeID": 1,
+  "UID": "ec2dc841-88d7-4996-ad4c-75336db66765",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 910120701,
+      "NodeID": 3,
+      "UID": "db945d29-d1f8-4a89-9b94-8839f49866c5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "793f6018-d54c-4dbd-8640-17b6f6ec4f81",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        12
+      ],
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "da3aeeff-5d27-45c1-b3c0-c064470049ae",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "db555d61-6685-460b-84fa-7f62d5091e1a",
+      "effectId": "Eff_Buff_Attack_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "023606f2-4a08-4d74-ace6-a4bd8a92e306",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 7
+    },
+    "8": {
+      "buffId": 910120701,
+      "name": "removeBuff",
+      "UID": "f9101d93-977c-4121-94da-439a777ee401",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "11": {
+      "name": "isActorType",
+      "UID": "412a14b3-edf1-4288-bc66-cdc8709b6037",
+      "target": "OWNER",
+      "NodeID": 11,
+      "actorType": 2
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "e3e8d7a6-447a-4612-8738-02208abd849f",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "12": {
+      "target": "MASTER",
+      "duration": 0,
+      "buffId": 910120701,
+      "NodeID": 12,
+      "UID": "8ce16160-0517-42fe-9153-bd809fda8b4a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8,
+    10
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

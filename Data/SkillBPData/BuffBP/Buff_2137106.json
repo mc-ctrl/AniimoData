@@ -1,0 +1,491 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2137106",
+  "NodeID": 1,
+  "UID": "9fc6e081-19b0-45e8-a20a-350f05dd609e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "name": "stopEffectStr",
+      "UID": "40186751-46e5-4ccc-a022-b8452bf46a57",
+      "effectId": "Eff_Parmon_10371_Buff_Lv1",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "39": {
+      "rValue": 3,
+      "name": "equal",
+      "UID": "3c2b292b-9a94-4aa6-8d3e-a2e26fb6b366",
+      "NodeID": 39,
+      "lValue": {
+        "UID": "baf253cc-a6c6-4d2e-b620-345e9911149d",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 38
+      }
+    },
+    "40": {
+      "name": "stopEffectStr",
+      "UID": "06715711-b1be-4a8a-9c16-69066aee7508",
+      "effectId": "Eff_Parmon_10371_Buff_Lv2",
+      "target": "OWNER",
+      "NodeID": 40
+    },
+    "41": {
+      "name": "stopEffectStr",
+      "UID": "f6708bda-1b5c-437c-af6b-13e24b981810",
+      "effectId": "Eff_Parmon_10371_Buff_Lv1",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "35": {
+      "name": "stopEffectStr",
+      "UID": "835290dc-28a3-4159-88b1-0cc09d88e1c8",
+      "effectId": "Eff_Parmon_10371_Buff_Lv3",
+      "target": "OWNER",
+      "NodeID": 35
+    },
+    "44": {
+      "actionIds": [
+        49,
+        48,
+        45,
+        47
+      ],
+      "conditionActionIds": [
+        43
+      ],
+      "UID": "3a7ce3c6-5395-4462-acdb-53af0e335eae",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        52
+      ],
+      "NodeID": 44
+    },
+    "66": {
+      "name": "stopEffectStr",
+      "UID": "cae6e169-32fe-4e8a-a7be-2eafb8285d0b",
+      "effectId": "Eff_Parmon_10373_Skill_Buff_MoonSeal",
+      "target": "OWNER",
+      "NodeID": 66
+    },
+    "67": {
+      "UID": "d609e583-5284-459f-8dc2-68872fd4bf41",
+      "name": "getCombatContextAbilityId",
+      "eventName": "onPostAttack",
+      "NodeID": 67
+    },
+    "68": {
+      "rValue": {
+        "key": "MonnSeal",
+        "name": "getCacheVal",
+        "UID": "17087557-a889-452e-8ff5-51d8779fff9c",
+        "target": "OWNER",
+        "NodeID": 74
+      },
+      "name": "equal",
+      "UID": "b4790c7f-5549-4933-83e6-f442fd33fbb3",
+      "NodeID": 68,
+      "lValue": {
+        "UID": "d609e583-5284-459f-8dc2-68872fd4bf41",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onPostAttack",
+        "NodeID": 67
+      }
+    },
+    "69": {
+      "key": "MonnSeal",
+      "name": "setCacheVal",
+      "UID": "f4cab745-451f-4a95-b1ff-925ef9058e9c",
+      "target": "OWNER",
+      "val": {
+        "UID": "d609e583-5284-459f-8dc2-68872fd4bf41",
+        "name": "getCombatContextAbilityId",
+        "eventName": "onPostAttack",
+        "NodeID": 67
+      },
+      "NodeID": 69
+    },
+    "70": {
+      "key": "MonnSeal",
+      "name": "setCacheVal",
+      "UID": "8a2fc2bf-bffa-4cd4-a3ee-fcb6fbcee61b",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 70
+    },
+    "71": {
+      "UID": "8e051d1b-5440-42b6-b604-a489e41c1929",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        70
+      ],
+      "NodeID": 71
+    },
+    "141": {
+      "name": "calcResult",
+      "UID": "dff9ac0b-be45-40ec-b7e1-8ffc692d7577",
+      "target": "OWNER",
+      "NodeID": 141,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param1",
+        "type": 1,
+        "id": 2137106
+      }
+    },
+    "72": {
+      "key": "MonnSeal",
+      "name": "setCacheVal",
+      "UID": "75624a9e-b7af-401f-834a-303d930abfc1",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 72
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "4fb412c5-9720-47f5-9393-2fb31cd84238",
+      "effectId": "Eff_Parmon_10371_Buff_Lv4",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "45": {
+      "name": "stopEffectStr",
+      "UID": "dc52928d-04d7-43ee-b6cb-9c0c4426a1f1",
+      "effectId": "Eff_Parmon_10371_Buff_Lv4",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "1999421e-bff4-4e4a-a749-b9c3388d60be",
+      "effectId": "Eff_Parmon_10371_Buff_Lv4",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "143": {
+      "conditionActionIds": [
+        142
+      ],
+      "UID": "a46b71c9-d4ae-4944-8dee-c901b207b7f6",
+      "name": "doActionsByConditions",
+      "NodeID": 143,
+      "elseActionIds": [
+        145
+      ]
+    },
+    "139": {
+      "buffId": 2137102,
+      "name": "removeBuff",
+      "UID": "0798a77e-7a45-41f1-a953-266de3ed4ff0",
+      "target": "OWNER",
+      "NodeID": 139
+    },
+    "142": {
+      "name": "isInCombat",
+      "UID": "f13e2b04-58b8-4fe5-9bcb-8f578e837d73",
+      "target": "OWNER",
+      "NodeID": 142,
+      "not": true
+    },
+    "77": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "db4e4f32-ced0-479e-8c90-60552970c3c9",
+      "effectId": "Eff_Parmon_10371_Buff_Lv4",
+      "speed": 1,
+      "NodeID": 77
+    },
+    "6": {
+      "UID": "dab737a8-409e-4c30-8391-333310c23f16",
+      "name": "isAbilityType",
+      "abilityType": 1,
+      "NodeID": 6
+    },
+    "65": {
+      "name": "stopEffectStr",
+      "UID": "8d29b51a-a2c6-4350-84db-0a4732f71cdf",
+      "effectId": "Eff_Parmon_10371_Skill_Buff_MoonSeal",
+      "target": "OWNER",
+      "NodeID": 65
+    },
+    "57": {
+      "name": "stopEffectStr",
+      "UID": "79d95060-e172-4070-8e2f-5746a5464001",
+      "effectId": "Eff_Parmon_10371_Buff_Lv2",
+      "target": "OWNER",
+      "NodeID": 57
+    },
+    "7": {
+      "actionIds": [
+        16
+      ],
+      "conditionActionIds": [
+        6
+      ],
+      "UID": "48aff696-467d-4563-b5c7-1762265a9f64",
+      "name": "doActionsByConditions",
+      "NodeID": 7
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b9d7db60-bd54-430d-95a4-bb65a01d3030",
+      "effectId": "Eff_Parmon_10371_Buff_Lv3",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "8": {
+      "UID": "f311a4b2-6c78-41fb-bbc1-b6384c982e2f",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "a503c86f-0bb3-41a4-b029-58f34d7e12d1",
+      "effectId": "Eff_Parmon_10371_Buff_Lv3",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "144": {
+      "buffId": 2137106,
+      "name": "removeBuff",
+      "UID": "3abc5aa5-8a73-4d24-9175-b9df90707c42",
+      "target": "OWNER",
+      "NodeID": 144
+    },
+    "52": {
+      "actionIds": [
+        57,
+        56,
+        53,
+        55
+      ],
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "9c4548c3-909b-484f-a2be-07a59da933e5",
+      "name": "doActionsByConditions",
+      "NodeID": 52
+    },
+    "145": {
+      "key": "buff_2137106145",
+      "duration": 3,
+      "actionIds": [
+        144
+      ],
+      "NodeID": 145,
+      "UID": "894d5290-b6a1-4597-9c29-5a866915705f",
+      "name": "addEntityTimer"
+    },
+    "13": {
+      "templateId": 2137106,
+      "name": "removeBuffLayer",
+      "UID": "e2439857-9cd1-4b28-89f7-a9b363b5e3ef",
+      "layer": 1,
+      "target": "OWNER",
+      "NodeID": 13
+    },
+    "146": {
+      "actionIds": [
+        145
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "bfa1e0e7-b4cf-4c44-9484-0a79093c0afa",
+      "target": "OWNER",
+      "NodeID": 146
+    },
+    "21": {
+      "UID": "8d1be1d7-47e2-4ea4-bf64-94aaa6d7050e",
+      "name": "registerOnSummonEvent",
+      "actionIds": [
+        19
+      ],
+      "NodeID": 21
+    },
+    "43": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "6ae9aa2d-1555-4248-a828-e40fad914de9",
+      "NodeID": 43,
+      "lValue": {
+        "UID": "6214a27a-7a79-457f-b948-b53d270579c0",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 42
+      }
+    },
+    "23": {
+      "rValue": 4,
+      "name": "equal",
+      "UID": "4c254f43-60d7-44ec-b076-e95d259c8128",
+      "NodeID": 23,
+      "lValue": {
+        "UID": "7b36b908-0d88-4739-b4bc-402f9b9b3bed",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 22
+      }
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c25e3ae2-bdf5-4a4a-97a6-9154fc01df92",
+      "effectId": "Eff_Parmon_10371_Buff_Lv1",
+      "speed": 1,
+      "NodeID": 55
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8b481a42-1854-4a14-bf06-057684a8444a",
+      "effectId": "Eff_Parmon_10371_Buff_Lv4",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "56": {
+      "name": "stopEffectStr",
+      "UID": "6fec4a09-3b05-4d9e-af59-88522200aec9",
+      "effectId": "Eff_Parmon_10371_Buff_Lv3",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "26": {
+      "actionIds": [
+        41,
+        40,
+        24,
+        27
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "37194f14-dade-4810-aa92-c10ca20bc28f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        44
+      ],
+      "NodeID": 26
+    },
+    "47": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "47b504c9-ec0f-4144-9c95-7bd22037df29",
+      "effectId": "Eff_Parmon_10371_Buff_Lv2",
+      "speed": 1,
+      "NodeID": 47
+    },
+    "16": {
+      "conditionActionIds": [
+        68
+      ],
+      "UID": "e255b78c-9fb6-412c-990c-7c83a2880a8d",
+      "name": "doActionsByConditions",
+      "NodeID": 16,
+      "elseActionIds": [
+        69,
+        13,
+        141,
+        71
+      ]
+    },
+    "48": {
+      "name": "stopEffectStr",
+      "UID": "b3aef556-5886-458b-ada3-deb53580d567",
+      "effectId": "Eff_Parmon_10371_Buff_Lv3",
+      "target": "OWNER",
+      "NodeID": 48
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "b35ea3b3-4747-4ce7-9efe-e790d9aec755",
+      "effectId": "Eff_Parmon_10371_Buff_Lv1",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "49": {
+      "name": "stopEffectStr",
+      "UID": "0a9cef41-70a6-41bf-9e1f-c0343a522df4",
+      "effectId": "Eff_Parmon_10371_Buff_Lv1",
+      "target": "OWNER",
+      "NodeID": 49
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "6f887bae-0c73-47a1-ac1b-8628eb7c3e8f",
+      "effectId": "Eff_Parmon_10371_Buff_Lv2",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "a62a3ab8-7ada-4dc0-83e6-c2385fbf8c7b",
+      "effectId": "Eff_Parmon_10371_Buff_Lv4",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "19": {
+      "actionIds": [
+        17,
+        37,
+        36,
+        35
+      ],
+      "conditionActionIds": [
+        23
+      ],
+      "UID": "0c4bb0b6-398a-4ba4-9bf3-30f7214a4f1c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        26
+      ],
+      "NodeID": 19
+    },
+    "51": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "e671a752-762d-4434-98c2-63a866bf9ba4",
+      "NodeID": 51,
+      "lValue": {
+        "UID": "df552cca-3e42-42de-b5d7-6fb0ba8af89e",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 50
+      }
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "7e70b48d-1470-45ee-9b7d-651c2246e1fd",
+      "effectId": "Eff_Parmon_10371_Buff_Lv2",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "dynamicRPCStates": {},
+  "onBuffLayerChangeIds": [
+    19
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    28,
+    30,
+    31,
+    32,
+    65,
+    66,
+    72
+  ],
+  "onBuffStartIds": [
+    8,
+    77,
+    139,
+    21,
+    143,
+    146
+  ]
+}

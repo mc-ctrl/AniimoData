@@ -1,0 +1,46 @@
+{
+  "duration": 2,
+  "BPName": "timeline_2101301",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10013_OutEx_fly",
+  "gravityRatio": 3,
+  "groundDestroy": true,
+  "kind": "Free3d",
+  "maxHitNum": 1,
+  "moveSpeed": 4,
+  "onProjectileFinishIds": [
+    26
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "acceleration": 0,
+  "nodeMap": {
+    "72": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "7c1f3565-4967-4c28-aa5d-b61ebddb4e75",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10013_Skill_Ex_02",
+      "NodeID": 72
+    },
+    "26": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "33b45b97-3d3d-4018-afb5-c05c771a39a2",
+      "effectId": "Eff_Parmon_10013_OutEx_hit",
+      "speed": 1,
+      "NodeID": 26
+    }
+  },
+  "onProjectileStartIds": [
+    72
+  ]
+}

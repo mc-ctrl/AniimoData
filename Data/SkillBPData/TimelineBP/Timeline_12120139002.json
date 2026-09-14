@@ -1,0 +1,141 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "104": {
+      "UID": "06421ae9-620f-4e5c-abee-2ee2f883952f",
+      "name": "stopAnimation",
+      "anim": "Skill_MagicFlower",
+      "NodeID": 104
+    },
+    "88": {
+      "action": {
+        "actionIds": [
+          87
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 88,
+      "UID": "e01dce8e-4c89-4535-b182-6eb0475e2fd4"
+    },
+    "148": {
+      "UID": "8d50f5f4-a6ba-4b86-b73a-d35d5bd8fa6f",
+      "name": "stopPreset",
+      "presetName": "Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 148
+    },
+    "74": {
+      "action": {
+        "actionIds": [
+          104,
+          116,
+          72
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.03,
+      "NodeID": 74,
+      "UID": "261396c2-ac6f-4549-bd81-db44c57c978e"
+    },
+    "149": {
+      "UID": "31735871-94af-48ee-b1a2-b8a442094b62",
+      "name": "stopPreset",
+      "presetName": "Ctrl_Eff_Parmon_10143_Skill_Charge001",
+      "NodeID": 149
+    },
+    "90": {
+      "UID": "70d21fe7-ea72-4a50-be5c-b07da45d4bf4",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 90
+    },
+    "83": {
+      "UID": "0d07be7a-c84a-4646-a4e1-ee44715c7f7a",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 83
+    },
+    "91": {
+      "UID": "7a42457f-1ca5-491d-86bd-bfa9928ccd4e",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          90
+        ]
+      },
+      "NodeID": 91
+    },
+    "116": {
+      "UID": "17deb65b-a374-4b7f-bbc2-acb721b75cff",
+      "name": "stopAnimation",
+      "anim": "Skill_MagicFlower2",
+      "NodeID": 116
+    },
+    "85": {
+      "UID": "9cf5b58b-3aa5-4fb0-a58b-6f5a31e0902a",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          83,
+          103,
+          146,
+          149,
+          148
+        ]
+      },
+      "NodeID": 85
+    },
+    "146": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "f9682b4d-ec7c-4c39-bac1-d759b5ce1b1f",
+      "target": "OWNER",
+      "NodeID": 146
+    },
+    "72": {
+      "offsetTime": 1.5,
+      "name": "playAnimation",
+      "UID": "d572052b-0cdd-41da-afff-37e4eefb6b65",
+      "target": "OWNER",
+      "NodeID": 72,
+      "animId": "Skill_MagicFlower"
+    },
+    "103": {
+      "UID": "53d619e3-877d-4707-b417-426fb9b06ec2",
+      "target": "OWNER",
+      "name": "stopMoveByInput",
+      "NodeID": 103
+    },
+    "87": {
+      "UID": "4b1dbc6e-a676-4c43-82ce-949bd54734fc",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 87
+    }
+  },
+  "BPName": "ability_12120139",
+  "NodeID": 76,
+  "UID": "346afb4f-f7d0-4860-95d1-01c86b112920",
+  "eventIds": [
+    74,
+    88,
+    91,
+    85
+  ],
+  "layer": "Base",
+  "length": 4.4
+}

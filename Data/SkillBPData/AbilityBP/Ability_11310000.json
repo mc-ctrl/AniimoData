@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_11310000",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10200000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 11310000001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack01"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10131_Attack01",
+    "Eff_Hit_Ice_Slash"
+  ],
+  "searchRelation": 2,
+  "name": "寒刃雷狼第一段冰元素近战普攻",
+  "searchTargetRangeRadius": 2,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": [
+    11310001,
+    11310002
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

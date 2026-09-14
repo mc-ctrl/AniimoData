@@ -1,0 +1,240 @@
+{
+  "45238474": {
+    "id": 45238474,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 90,
+        "position": [
+          -344.22,
+          0.21,
+          -213.84
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0,
+              "templateKey": "ST_Jump"
+            }
+          ]
+        },
+        "yaw": 85.86,
+        "position": [
+          -331.46,
+          5.64,
+          -213.84
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -337.6,
+          0.21,
+          -216.84
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -332.6,
+      0.1,
+      -213.84
+    ],
+    "ignoreAILod": true,
+    "sandboxId": 45238485
+  },
+  "45238468": {
+    "id": 45238468,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 90,
+        "position": [
+          -344.22,
+          0.21,
+          -212.73
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0,
+              "templateKey": "ST_Jump"
+            }
+          ]
+        },
+        "yaw": 90,
+        "position": [
+          -331.46,
+          5.64,
+          -212.76
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -337.6,
+          0.21,
+          -222.84
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -332.6,
+      0.1,
+      -213.84
+    ],
+    "ignoreAILod": true,
+    "sandboxId": 45238485
+  },
+  "45238472": {
+    "id": 45238472,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 90,
+        "position": [
+          -345.17,
+          0.21,
+          -213.81
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0,
+              "templateKey": "ST_Jump"
+            }
+          ]
+        },
+        "yaw": 93.41,
+        "position": [
+          -330.76,
+          5.64,
+          -213.84
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -331.23,
+          0.21,
+          -220.84
+        ]
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -337.6,
+          0.21,
+          -220.84
+        ]
+      }
+    ],
+    "pos": [
+      -332.6,
+      0.1,
+      -213.84
+    ],
+    "ignoreAILod": true,
+    "sandboxId": 45238485
+  },
+  "45238473": {
+    "id": 45238473,
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "wayPoints": [
+      {
+        "ignoreRotation": true,
+        "yaw": 90,
+        "position": [
+          -344.22,
+          0.21,
+          -214.95
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "probability": 0,
+              "templateKey": "ST_Jump"
+            }
+          ]
+        },
+        "position": [
+          -331.46,
+          5.64,
+          -214.92
+        ],
+        "speed": 6.5,
+        "yaw": 97.1,
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -331.23,
+          0.21,
+          -218.84
+        ],
+        "behaviorSpeedRateType": 1
+      },
+      {
+        "ignoreRotation": true,
+        "inexecutionAction": true,
+        "position": [
+          -337.6,
+          0.21,
+          -218.84
+        ],
+        "behaviorSpeedRateType": 1
+      }
+    ],
+    "pos": [
+      -332.6,
+      0.1,
+      -213.84
+    ],
+    "ignoreAILod": true,
+    "sandboxId": 45238485
+  }
+}

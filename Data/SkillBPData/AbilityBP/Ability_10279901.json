@@ -1,0 +1,58 @@
+{
+  "BPName": "ability_10279901",
+  "NodeID": 1,
+  "UID": "456f351f-5f7e-4921-b8d5-6eff78254d4c",
+  "abilityParamId": 11200520,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10279901001,
+      "name": "setCombatActionTimeline",
+      "UID": "3ea66c8d-3e16-48ce-a4e9-0cac519e92dd",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "52": {
+      "UID": "39ff1156-fcaa-4c7d-9523-05dc3aee19b5",
+      "value": false,
+      "name": "forceUngrounded",
+      "NodeID": 52
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 2,
+  "preloadAnims": [
+    "Skill_Ex",
+    "Skill_DefMode_Start02",
+    "Skill_DefMode_Start01",
+    "Skill_DefMode_Start03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10027_Skill_Ex_01",
+    "Eff_Parmon_10027_Skill_Ex_02",
+    "Eff_Parmon_10027_Skill_Ex_03",
+    "Eff_Hit_Dark_Blunt",
+    "Eff_Parmon_10027_Skill_Ex_04",
+    "Eff_Parmon_10027_Skill_Ex_05",
+    "Eff_Parmon_10027_Skill_Ex_06",
+    "Eff_Parmon_10027_Skill_Ex_07"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 10,
+  "tags": [
+    1
+  ],
+  "onAbilityEndIds": [
+    52
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 10,
+  "desc": ""
+}

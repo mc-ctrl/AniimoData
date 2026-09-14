@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "def_mag_p": 0.12,
+    "def_p": 0.12
+  },
+  "calcInfoByLuaConfig": {
+    "def_mag_p": "param0",
+    "type": 1,
+    "def_p": "param0",
+    "id": 20300000
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_20300000",
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

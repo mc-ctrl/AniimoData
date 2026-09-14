@@ -1,0 +1,91 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004021",
+  "NodeID": 1,
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        9,
+        6
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "5178c63e-6e64-468d-b845-1e6c85d26a5f",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "rValue": {
+        "calcId": 4004021,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 8,
+        "UID": "c497b1af-8514-42c3-970d-43b9c52940ac",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "equal",
+      "UID": "0ed11786-1c28-4fd9-93be-23284fdde9bd",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "b532f12c-9a2a-417e-922a-97c7dc9f7595",
+        "target": "OWNER",
+        "name": "getBuffLayer",
+        "NodeID": 3
+      }
+    },
+    "9": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 4004022,
+      "NodeID": 9,
+      "UID": "a829167b-b6ca-4e80-bd59-d34a6a0a7b1f",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "6": {
+      "buffId": 4004021,
+      "name": "removeBuff",
+      "UID": "ea360d49-d5c2-41ad-93a2-be8aa81a9546",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "buffId": 4004021,
+      "name": "removeBuff",
+      "UID": "dc7fc963-d00b-489a-ab1a-47bf1f478176",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "f7f231a8-fb8c-415a-bced-bbb593c20dd1",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "8": {
+      "calcId": 4004021,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 8,
+      "UID": "c497b1af-8514-42c3-970d-43b9c52940ac",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "onBuffLayerChangeIds": [
+    5
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    11
+  ]
+}

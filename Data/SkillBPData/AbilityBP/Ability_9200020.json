@@ -1,0 +1,45 @@
+{
+  "BPName": "ability_9200020",
+  "NodeID": 1,
+  "UID": "4f0df6c0-9fcc-4264-aa85-6b8a5415ab13",
+  "abilityParamId": 9200020,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 9200020001,
+      "name": "setCombatActionTimeline",
+      "UID": "f809d9c0-ee24-4dfe-aa9e-eb22eabeb17a",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "34": {
+      "name": "stopEffectStr",
+      "UID": "ba520cf5-39d6-466b-bc91-bab8155e1706",
+      "effectId": "Eff_Avatar_Girl_Skill_Bubble",
+      "target": "OWNER",
+      "NodeID": 34
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_BubbleMachine"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Girl_Skill_Bubble_End",
+    "Eff_Avatar_Girl_Skill_Bubble",
+    "Eff_VEG_Avatar_BubbleMachine"
+  ],
+  "searchRelation": 1,
+  "name": "点到为止",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "onAbilityEndIds": [
+    34
+  ],
+  "searchTargetRangeDown": 0
+}

@@ -1,0 +1,59 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6004005",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "duration": 0,
+      "templateId": 70100004,
+      "name": "playerDeformToEggMan",
+      "UID": "8022e711-0135-40ad-809b-4de86ab63785",
+      "target": "OWNER",
+      "proactive": true,
+      "NodeID": 3
+    },
+    "5": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "e43bcb72-cd41-4417-95fc-5abee1c22a3a",
+      "effectId": "Eff_EggMan_Buff_WearEgg_Loop_01",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 5,
+      "scale": 2
+    },
+    "6": {
+      "offsetXYZ": [
+        0,
+        0.8,
+        0
+      ],
+      "name": "playEffectOnPosRot",
+      "UID": "631d9b25-b128-472c-9562-f0a7ade70d6c",
+      "effectId": "Eff_EggMan_Buff_WearEgg_Loop_01",
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 0.5,
+      "NodeID": 6,
+      "scale": 3
+    }
+  },
+  "onBuffDestroyIds": [
+    6
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    3
+  ]
+}

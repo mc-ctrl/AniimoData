@@ -1,0 +1,103 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6005027",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": {},
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 6005028,
+      "NodeID": 3,
+      "UID": "60b8ebd9-437b-41aa-b1aa-a18cea4d949c",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "0d22d62c-36cd-4bc5-95ce-3d1767289368",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "6": {
+      "unsummonValid": false,
+      "actionIds": [
+        5
+      ],
+      "name": "registerGroupEvent",
+      "UID": "d6041505-d164-4372-841c-e61f0cae4328",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "277ad751-bda2-449c-8586-74c4e8a37ece",
+      "conditionIds": [
+        9,
+        11
+      ],
+      "name": "conditionOr",
+      "NodeID": 10
+    },
+    "8": {
+      "UID": "0508180f-dc8c-4670-863b-c37c3ced5fa9",
+      "name": "getEventReceiveDamageAttackTarget",
+      "NodeID": 8
+    },
+    "9": {
+      "name": "isActorType",
+      "UID": "3821a3b8-0441-4ba5-801a-c6f02f41d571",
+      "target": {
+        "UID": "0508180f-dc8c-4670-863b-c37c3ced5fa9",
+        "name": "getEventReceiveDamageAttackTarget",
+        "NodeID": 8
+      },
+      "NodeID": 9,
+      "actorType": 1
+    },
+    "11": {
+      "name": "isActorType",
+      "UID": "df10b73b-4d2b-4e04-8042-cb555c3f962c",
+      "target": {
+        "UID": "0508180f-dc8c-4670-863b-c37c3ced5fa9",
+        "name": "getEventReceiveDamageAttackTarget",
+        "NodeID": 8
+      },
+      "NodeID": 11,
+      "actorType": 2
+    },
+    "5": {
+      "UID": "0db0a1c2-e8c3-4022-983e-c3e27b2a8dd9",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "buffId": 6005028,
+      "name": "removeBuff",
+      "UID": "a10bebee-c2dd-41d4-832f-63ce4cf9cb3a",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "calcInfoByLuaConfig": {
+    "id": 6005027,
+    "taken_dmg_dec_rate_v": "param0",
+    "type": 1
+  },
+  "onBuffDestroyIds": [
+    12
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

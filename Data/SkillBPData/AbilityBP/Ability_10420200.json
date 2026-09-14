@@ -1,0 +1,57 @@
+{
+  "BPName": "ability_10420200",
+  "NodeID": 1,
+  "isAim": true,
+  "abilityParamId": 10300010,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10420200001,
+      "name": "setCombatActionTimeline",
+      "UID": "3e547238-65ea-482c-a3ff-c6faf12ef3fd",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "57": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 57,
+      "UID": "c39fa48d-aa29-404e-a13c-01db2c566415",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Bubble"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10043_Skill_Bubble_Large_New_S",
+    "Eff_Parmon_10041_Skill_Bubble_Release",
+    "Eff_Skill_Common_Warning",
+    "Eff_Parmon_10041_Skill_Bubble_Hit"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "onAbilityEndIds": [
+    57
+  ],
+  "searchTargetRangeDown": 2,
+  "UID": "abf20d9c-c057-4038-8011-f6d32fa5ca32"
+}

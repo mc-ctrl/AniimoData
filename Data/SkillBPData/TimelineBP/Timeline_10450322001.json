@@ -1,0 +1,171 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "7c6297d1-1c50-42ca-8288-c646a08a3f69",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "e900ab44-ca45-437a-aca9-c51bf1f50482",
+      "effectId": "Eff_Parmon_10045_Skill_GrassTail_Start_01",
+      "speed": 1,
+      "NodeID": 23
+    },
+    "14": {
+      "UID": "f5ca11e8-b024-4d6f-a7d8-b3397477cad3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12,
+          31
+        ]
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "738062a0-0d97-49b6-94da-f789cdb28805",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "30": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "2b36421a-f35e-44b2-a33e-b3340b197148",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10045_Skill_Tornado_Start",
+      "NodeID": 30
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          23,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.6,
+      "NodeID": 25,
+      "UID": "cd060f9e-9680-46be-b220-914abce85d33"
+    },
+    "16": {
+      "UID": "8e94d027-3d11-4d36-99b6-943a344814b3",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 16
+    },
+    "27": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "templateId": 10450322001,
+      "name": "createProjectile",
+      "UID": "7d49d73b-64c8-4e4d-91f3-abfd47f7a078",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Free3d",
+      "NodeID": 27
+    },
+    "31": {
+      "name": "stopEffectStr",
+      "UID": "4ca6f54a-fcc0-497b-b92e-16c95d9d0268",
+      "effectId": "Eff_Parmon_10045_Skill_GrassTail_Start_01",
+      "target": "OWNER",
+      "NodeID": 31
+    },
+    "29": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "54554e38-9a66-43b9-8c8a-72e86e2e65ab",
+      "target": "OWNER",
+      "val": {
+        "UID": "b6d24d35-ae92-4e7d-9a2f-3804efba78b5",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 28
+      },
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.7,
+      "NodeID": 18,
+      "UID": "be5372b1-c735-47e7-ad6a-a8b7dd74ee3e"
+    },
+    "21": {
+      "UID": "25931a62-2bc3-403b-b76a-f1f3579884b7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          19,
+          29,
+          30
+        ]
+      },
+      "NodeID": 21
+    },
+    "19": {
+      "timelineTag": "",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "20e34c85-947a-48c5-92f8-3ec1fa7a8169",
+      "target": "OWNER",
+      "NodeID": 19,
+      "animId": "Boss_Skill_Tail"
+    },
+    "5": {
+      "UID": "cf6a0575-2b1f-4a8a-b0ca-d7b7d7cfbc70",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          10
+        ]
+      },
+      "NodeID": 5
+    },
+    "12": {
+      "UID": "99f7200a-faf5-4435-bd2d-f903d2bf4049",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_10450322",
+  "NodeID": 7,
+  "UID": "a67da22c-ba7b-4920-96a1-de6276a6a7d3",
+  "eventIds": [
+    5,
+    14,
+    18,
+    21,
+    25
+  ],
+  "layer": "Base",
+  "length": 1.9
+}

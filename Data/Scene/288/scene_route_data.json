@@ -1,0 +1,202 @@
+{
+  "82137390": {
+    "id": 82137390,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "PBT_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "AI_Walk",
+                  "name": "tAnimationKey"
+                },
+                {
+                  "realValue": -1,
+                  "name": "tAnimationTimeout"
+                },
+                {
+                  "realValue": true,
+                  "name": "tNeedLoop"
+                }
+              ]
+            }
+          ]
+        },
+        "position": [
+          803.4,
+          0.5,
+          57.85
+        ]
+      }
+    ],
+    "pos": [
+      803.4,
+      0.5,
+      57.85
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 77458805
+  },
+  "82145910": {
+    "id": 82145910,
+    "wayPoints": [
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Hit_Shake",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 212.43,
+        "ignoreRotation": true,
+        "position": [
+          808.64,
+          0.5,
+          51.58
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Hit_Shake",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "ignoreRotation": true,
+        "position": [
+          808.65,
+          0.5,
+          57.29
+        ]
+      },
+      {
+        "behaviorTreeTemplate": {
+          "behaviors": [
+            {
+              "templateKey": "ST_CustomAnimation",
+              "behaviorTreeTemplateParameters": [
+                {
+                  "realValue": "Hit_Shake",
+                  "name": "tAnimationKey"
+                }
+              ]
+            }
+          ]
+        },
+        "yaw": 111.47,
+        "ignoreRotation": true,
+        "position": [
+          813.22,
+          0.5,
+          54.97
+        ]
+      }
+    ],
+    "pos": [
+      808.64,
+      0.5,
+      57.37
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 77458805
+  },
+  "86057165": {
+    "id": 86057165,
+    "wayPoints": [
+      {
+        "position": [
+          789.67,
+          0.5,
+          89.43
+        ]
+      }
+    ],
+    "pos": [
+      791.94,
+      0.5,
+      89.43
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 77458805
+  },
+  "86059706": {
+    "id": 86059706,
+    "wayPoints": [
+      {
+        "position": [
+          786.87,
+          0.5,
+          85.38
+        ]
+      }
+    ],
+    "pos": [
+      771.2,
+      0.5,
+      87.73
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 77458805
+  },
+  "86059867": {
+    "id": 86059867,
+    "wayPoints": [
+      {
+        "yaw": 104.63,
+        "position": [
+          786.85,
+          1.1,
+          89.96
+        ]
+      }
+    ],
+    "pos": [
+      769.38,
+      0.5,
+      91.98
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "sandboxId": 77458805
+  }
+}

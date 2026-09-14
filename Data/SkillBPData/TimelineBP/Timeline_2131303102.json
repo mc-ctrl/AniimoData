@@ -1,0 +1,81 @@
+{
+  "nodeMap": {
+    "27": {
+      "buffId": 2131302,
+      "name": "hasBuff",
+      "UID": "5fbad658-633a-469a-b4e0-15dc63221443",
+      "target": "TrapTarget",
+      "NodeID": 27
+    },
+    "24": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 2131302,
+      "NodeID": 24,
+      "UID": "b0ea0c11-0086-479a-947c-0738633e4232",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "e14db47e-44ed-4089-842b-2a98c60b203e",
+      "effectId": "Eff_Parmon_10313_Skill_Bullet_07",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "20": {
+      "UID": "911732fe-1362-4bb3-bf10-bc17a4d206e9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          26,
+          18
+        ]
+      },
+      "NodeID": 20
+    },
+    "25": {
+      "conditionActionIds": [
+        27
+      ],
+      "UID": "8c8c2156-eab8-4310-a422-29fadd85a6b8",
+      "name": "doActionsByConditions",
+      "NodeID": 25,
+      "elseActionIds": [
+        24
+      ]
+    },
+    "26": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 26,
+      "relation": 2,
+      "enterTrapActionIds": [
+        25
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        3
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "name": "registerTrapEvent",
+      "center": "OWNER",
+      "UID": "8cdcb360-654d-476a-9102-a930af629a71"
+    }
+  },
+  "BPName": "buff_2131303",
+  "NodeID": 22,
+  "UID": "f45d2d3b-2ac8-408c-80bf-46719c7d5f72",
+  "eventIds": [
+    20
+  ],
+  "layer": "Base",
+  "length": 1
+}

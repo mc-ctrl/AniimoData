@@ -1,0 +1,81 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_1145106",
+  "NodeID": 1,
+  "UID": "3fafcb1c-301e-46d6-9f40-ebc04bb0fe0a",
+  "tags": [
+    1,
+    2,
+    20,
+    27
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "fd6ab695-2123-43da-a4a1-5aac05382894",
+      "name": "cancelLock",
+      "NodeID": 3
+    },
+    "8": {
+      "UID": "d44bd194-eb90-480d-a5a2-849c2e79212f",
+      "name": "ignoreVelocityProjection",
+      "enable": true,
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "9e091ae7-5b46-44d0-983f-e713219b764b",
+      "name": "ignoreVelocityProjection",
+      "enable": false,
+      "NodeID": 9
+    },
+    "6": {
+      "value": false,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "bedbcfd1-888a-45d8-bcd7-aa467bcfac82",
+      "ignoreSelf": false,
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "ddf9b500-7b51-49da-92f4-f7f4640b95a6",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "ZaiJinFY",
+      "NodeID": 10
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        12
+      ],
+      "UID": "eae3658f-272a-42c9-9c2b-dbf9f6a5a76a",
+      "name": "doActionsByConditions",
+      "NodeID": 11
+    },
+    "5": {
+      "value": true,
+      "name": "setIgnoreActorCollisionEnabled",
+      "UID": "ddc30e8c-0920-4156-ac60-753e48ee3145",
+      "ignoreSelf": true,
+      "NodeID": 5
+    },
+    "12": {
+      "buffId": 90213009,
+      "name": "hasBuff",
+      "UID": "16593e80-3e77-409d-8b69-36cb52b2d6c3",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    6,
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    3,
+    8,
+    11
+  ]
+}

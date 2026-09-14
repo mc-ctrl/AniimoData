@@ -1,0 +1,53 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2126206",
+  "calcInfoByLuaConfig": {
+    "id": 2126206,
+    "type": 1,
+    "bp_add_ratio": "param0",
+    "taken_dmg_inc_rate_v": "param0"
+  },
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_AttackUp"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "09dc8d23-a250-4b7c-9e09-154e20b9188a",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "8": {
+      "buffId": 2126105,
+      "name": "removeBuff",
+      "UID": "f6f7abc0-0bb5-4305-a911-ea8701b605d7",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "803e6d96-69ce-444f-ada1-a872ef2fcdab",
+      "effectId": "Eff_Common_Buff_AttackUp",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "NodeID": 1,
+  "onBuffDestroyIds": [
+    5
+  ],
+  "onBuffStartIds": [
+    8,
+    3
+  ]
+}

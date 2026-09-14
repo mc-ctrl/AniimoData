@@ -1,0 +1,262 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "8": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "cd15d48d-c2aa-4ef7-b12b-26c89bbd7f73",
+      "val": {
+        "UID": "c064ac33-8141-439a-89e9-7fc5e1bf1b1a",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 7
+      },
+      "NodeID": 8
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 5.2,
+      "NodeID": 31,
+      "UID": "89c3e1f6-eeb8-483a-a49a-557ae3d6c20a"
+    },
+    "9": {
+      "UID": "f470e813-7477-484a-afaa-839bc6adb1eb",
+      "eventType": "Notify",
+      "time": 1.2,
+      "NodeID": 9
+    },
+    "11": {
+      "offsetXYZ": [
+        -9,
+        0,
+        1
+      ],
+      "templateId": 107115,
+      "name": "createEntity",
+      "UID": "091c0ff9-28b5-4739-96d3-f12b6df8e605",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 11,
+      "pos": "CASTER"
+    },
+    "13": {
+      "UID": "4400deda-eb74-4c8d-95f9-ab11b7dbc2e9",
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 13
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          24,
+          19
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.6,
+      "NodeID": 21,
+      "UID": "de867d8a-74a7-4df9-aac5-c83e72155e32"
+    },
+    "12": {
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 12,
+      "UID": "48bf197b-f71d-451d-80b5-0fa9652b5b0c"
+    },
+    "4": {
+      "action": {
+        "actionIds": [
+          8,
+          10,
+          2
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 4,
+      "UID": "e1787e70-3368-4ec8-9423-463d6d678796"
+    },
+    "24": {
+      "key": "targetId",
+      "name": "setCacheVal",
+      "UID": "c7eb8993-b091-4f10-a1e1-69ced6745dd9",
+      "val": {
+        "UID": "ba086549-243e-4a41-8ac2-83e20d422799",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 23
+      },
+      "NodeID": 24
+    },
+    "30": {
+      "offsetXYZ": [
+        -3,
+        0,
+        1
+      ],
+      "templateId": 107115,
+      "name": "createEntity",
+      "UID": "193ba7fa-86be-4aad-8a2a-57fedb7c3143",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 30,
+      "pos": "CASTER"
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "templateId": 107115,
+      "name": "createEntity",
+      "UID": "978748cf-ffa1-4f83-8688-8268a8856cd2",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 10,
+      "pos": "CASTER"
+    },
+    "15": {
+      "UID": "ff7eedfb-bcfc-4247-b629-0bd78138ad16",
+      "eventType": "Notify",
+      "time": 2.4,
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "8f2b4fc6-debb-430d-bb12-5034956e8125",
+      "eventType": "Notify",
+      "time": 4,
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "d3a7181d-246b-4a68-be48-ec9cee7ded09",
+      "eventType": "Notify",
+      "time": 2.8,
+      "NodeID": 16
+    },
+    "28": {
+      "UID": "902946b3-5ea8-455b-b391-914cec9031a3",
+      "eventType": "Notify",
+      "time": 4.4,
+      "NodeID": 28
+    },
+    "17": {
+      "offsetXYZ": [
+        -6,
+        0,
+        1
+      ],
+      "templateId": 107115,
+      "name": "createEntity",
+      "UID": "3cc630dc-3efe-4161-8146-d90946c475c4",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CASTER",
+      "NodeID": 17,
+      "pos": "CASTER"
+    },
+    "29": {
+      "UID": "cf924f56-27ce-450a-9e0d-7d8ee2ffcb62",
+      "eventType": "Notify",
+      "time": 4.8,
+      "NodeID": 29
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.2,
+      "NodeID": 18,
+      "UID": "f2c89c47-d6d0-4f02-bbe5-b05b0f46efe0"
+    },
+    "32": {
+      "UID": "53b9eaf4-eb26-4dc2-9825-b9a14a17a20b",
+      "eventType": "Notify",
+      "time": 5.6,
+      "NodeID": 32
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "4b0fc00f-a137-420a-8d75-3d90e8ba284f",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_cast",
+      "NodeID": 19
+    },
+    "34": {
+      "UID": "65e83851-cd7a-4f4f-b4af-849c2dfec746",
+      "eventType": "Notify",
+      "time": 6,
+      "NodeID": 34
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "86fc59a7-2d45-4a9d-a306-df0a64592a7b",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_10073_skill_wind_cast",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2107120",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    4,
+    9,
+    12,
+    13,
+    15,
+    16,
+    18,
+    21,
+    25,
+    28,
+    29,
+    31,
+    32,
+    34
+  ],
+  "layer": "Base",
+  "length": 8
+}

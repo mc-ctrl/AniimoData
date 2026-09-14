@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_15640005",
+  "NodeID": 1,
+  "UID": "23900209-ec3c-4ee3-bf40-fa18ebefb947",
+  "abilityParamId": 16500000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 15640005001,
+      "name": "setCombatActionTimeline",
+      "UID": "84b5eafb-db82-4a0c-b0a6-37ebd711b1e9",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack06"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10564_Skill_Sword_Hit",
+    "Eff_Parmon_10564_Skill_Sword_Red"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 1.5,
+  "subAbilityIds": {},
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5
+}

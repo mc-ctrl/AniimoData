@@ -1,0 +1,103 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000180",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 5000180,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "f0a1dfb0-7ac9-4118-b654-1af9858a64c1",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "key": "1",
+      "duration": {
+        "calcId": 5000180,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "f0a1dfb0-7ac9-4118-b654-1af9858a64c1",
+        "name": "getParamByLuaConfig"
+      },
+      "actionIds": [
+        7
+      ],
+      "NodeID": 4,
+      "UID": "35dd4cea-1321-41b7-b4fe-64e0a53cfa13",
+      "name": "addTimer"
+    },
+    "6": {
+      "actionIds": [
+        5
+      ],
+      "name": "registerMoveChangeEvent",
+      "UID": "61e466fa-7094-4d70-9dcd-91554a30f980",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 5000183,
+      "NodeID": 7,
+      "UID": "bac43ba2-3474-4da6-a9c1-a3c417e80748",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "8": {
+      "UID": "656d7210-0b16-4fe0-b2ca-8515a55e063d",
+      "name": "checkIsMoving",
+      "NodeID": 8
+    },
+    "9": {
+      "UID": "e46fe730-60d6-475a-a0bd-d1402fceb2c3",
+      "name": "removeTimer",
+      "key": "1",
+      "NodeID": 9
+    },
+    "11": {
+      "buffId": 5000183,
+      "name": "removeBuff",
+      "UID": "98094bae-51ac-42aa-b1c3-bb1f73adc7e6",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "5": {
+      "actionIds": [
+        9,
+        11
+      ],
+      "conditionActionIds": [
+        8
+      ],
+      "UID": "d33bfe43-299d-44f7-bed3-f70586a0cf70",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4
+      ],
+      "NodeID": 5
+    },
+    "12": {
+      "buffId": 5000183,
+      "name": "removeBuff",
+      "UID": "04c5cbb5-b91b-4711-99c3-e16fd78fd9e8",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    12
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

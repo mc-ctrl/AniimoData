@@ -1,0 +1,38 @@
+[
+  {
+    "rankDesc": 1678747614,
+    "rankName": 1574352146,
+    "reqTagScr": -5000,
+    "doubleMul": 0.1
+  },
+  {
+    "rankDesc": 1125956367,
+    "rankName": 1245583730,
+    "reqTagScr": 0,
+    "doubleMul": 0.5
+  },
+  {
+    "rankDesc": 2076291110,
+    "rankName": 2124365802,
+    "reqTagScr": 3000,
+    "doubleMul": 1
+  },
+  {
+    "rankDesc": 1095121431,
+    "rankName": 1850891435,
+    "reqTagScr": 10000,
+    "doubleMul": 1.2
+  },
+  {
+    "rankDesc": 1250678490,
+    "rankName": 1156177108,
+    "reqTagScr": 20000,
+    "doubleMul": 2
+  },
+  {
+    "rankDesc": 1517483209,
+    "rankName": 2012786877,
+    "reqTagScr": 50000,
+    "doubleMul": 5
+  }
+]

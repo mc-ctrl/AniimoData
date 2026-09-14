@@ -1,0 +1,138 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2123308",
+  "NodeID": 1,
+  "UID": "dce2b8ab-3296-40a7-9ce9-6a091e404b0c",
+  "onBuffRefreshIds": [
+    6,
+    9
+  ],
+  "tags": [
+    21
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "name": "playStartLoopEndAni",
+      "NodeID": 3,
+      "UID": "9af234eb-2ce9-4a7d-a2c4-930629884582",
+      "endAni": "Behav_SleepEnd",
+      "loopAni": "Behav_SleepLoop",
+      "startAni": "Behav_SleepStart"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "89e81f10-33b2-4ef2-a9e5-9e42c00a3f3c",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 6
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "a9b0c4e0-172f-44d5-846d-7759d25e94fb",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "96874b66-ba82-4a11-9117-9f75fffc9016",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "16": {
+      "key": "sleep_start",
+      "duration": 2,
+      "actionIds": [
+        14,
+        20
+      ],
+      "NodeID": 16,
+      "UID": "d50fc03c-1c94-4220-9cdb-9cba54ef09a9",
+      "name": "addTimer"
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "b93d23fe-1781-4099-8820-359e3d0c1243",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 8
+    },
+    "17": {
+      "target": "OWNER",
+      "duration": 2,
+      "buffId": 2123306,
+      "NodeID": 17,
+      "UID": "cab16845-8acf-4d6e-b4f4-fb75f79f6061",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1884c845-8b20-4a2d-9773-a18e470ceff4",
+      "effectId": "Eff_Common_Behav_Sleep",
+      "speed": 1,
+      "NodeID": 9
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "b355c7d4-f6b6-4a48-9ecc-b6d4fb4c7980",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Avatar_Female_Skill_ShaderSquash",
+      "NodeID": 5
+    },
+    "14": {
+      "UID": "6fb09bd3-ed01-47a9-9d1e-b8de2b355997",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        12,
+        17,
+        21
+      ],
+      "NodeID": 14
+    },
+    "11": {
+      "buffId": 2123308,
+      "name": "removeBuff",
+      "UID": "e709d4ac-76ee-4bba-8a53-8c9a7cd300cc",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "20": {
+      "calcInfo": {
+        "taken_dmg_dec_rate_v": -1
+      },
+      "name": "addDynamicAttrInNextSkillByBeAttacked",
+      "UID": "d4b4d927-8665-43e6-852e-8dbfc9941993",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "12": {
+      "key": "sleep_end",
+      "duration": 2,
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12,
+      "UID": "0878d47d-82ab-4cc6-993a-2216543c15a1",
+      "name": "addTimer"
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    10
+  ],
+  "onBuffStartIds": [
+    3,
+    5,
+    8,
+    16
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.044,
+        0.006,
+        0.017
+      ],
+      "speed": 1,
+      "NodeID": 37,
+      "UID": "433ea0ee-4143-4dd7-aeea-170579a6e466",
+      "bone": "Bone L Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "39": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.016,
+        0.016,
+        0.013
+      ],
+      "speed": 1,
+      "NodeID": 39,
+      "UID": "dd0c0120-0626-4b06-b593-b14f60167300",
+      "bone": "Bone R Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    },
+    "40": {
+      "name": "checkPetPrototypeId",
+      "UID": "2f7973c0-25bf-438f-8438-a6f777d0bd92",
+      "target": "OWNER",
+      "petPrototypeId": 1014302,
+      "NodeID": 40
+    },
+    "54": {
+      "name": "checkPetPrototypeId",
+      "UID": "7012158d-36c7-49ac-b4c8-8ee6fe63c8ca",
+      "target": "OWNER",
+      "petPrototypeId": 1014303,
+      "NodeID": 54
+    },
+    "35": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.045,
+        0.007,
+        0.017
+      ],
+      "speed": 1,
+      "NodeID": 35,
+      "UID": "298074c2-5f1d-4d54-ad14-2b065201a32b",
+      "bone": "Bone R Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "44": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 44,
+      "UID": "687c1f31-503d-46d8-9b61-c539c1a4c98d",
+      "bone": "Bone R Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "4": {
+      "UID": "c6e5158e-f560-4cfb-8862-4499fb842bcf",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "6": {
+      "UID": "a88e1ffb-0ef0-4a12-b356-25cda37581df",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          11
+        ]
+      },
+      "NodeID": 6
+    },
+    "59": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 59,
+      "UID": "4745faf5-36e4-420e-a96f-eefd907fff2f",
+      "bone": "Bone R Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    },
+    "58": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 58,
+      "UID": "d872a79f-1cb9-4ac2-b186-f5a2bfbf0dab",
+      "bone": "Bone L Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "57": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 57,
+      "UID": "12bbd7d8-181f-417d-9603-e13c282ed6b8",
+      "bone": "Bone R Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "55": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.012,
+        -0.012,
+        -0.003
+      ],
+      "speed": 1,
+      "NodeID": 55,
+      "UID": "e449aa65-cc99-470b-99e1-0c7dc8043d61",
+      "bone": "Bone L Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    },
+    "16": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "33c40b74-5e8b-47b9-a829-05f2cc427959",
+      "target": "OWNER",
+      "NodeID": 16,
+      "animId": "Skill_Halo"
+    },
+    "53": {
+      "UID": "cdd1fc42-578e-4c5e-81ba-882a252234f1",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 53
+    },
+    "32": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.012,
+        -0.012,
+        -0.003
+      ],
+      "speed": 1,
+      "NodeID": 32,
+      "UID": "d10ed088-2bdb-423d-bcb5-592aea7fc648",
+      "bone": "Bone L Hat 1014301 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    },
+    "18": {
+      "UID": "c3832f6f-6a80-4d66-b19d-f69417288c10",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16,
+          29,
+          23
+        ]
+      },
+      "NodeID": 18
+    },
+    "29": {
+      "actionIds": [
+        32,
+        39,
+        37,
+        35
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "c95ba4fd-a984-4d89-a629-8b2f85de0049",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        28
+      ],
+      "NodeID": 29
+    },
+    "11": {
+      "UID": "a5faca67-ffb0-4783-9627-db0a203e9ea2",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "dda9af96-9c2e-4c86-8399-6ff0810250bc",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 20
+    },
+    "13": {
+      "UID": "7d4c90be-2ac3-4095-aeb8-3e077ab6bd28",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 22,
+      "UID": "37659278-a974-4496-a97b-6c783477dda3"
+    },
+    "23": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 2114103,
+      "NodeID": 23,
+      "UID": "4d1a8d95-ec09-4555-9f3b-2c9b52b51c53",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "04e81909-5457-4c52-8d43-84a69716675d",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_laricander_skill_heal",
+      "NodeID": 24
+    },
+    "27": {
+      "actionIds": [
+        55,
+        59,
+        58,
+        57
+      ],
+      "conditionActionIds": [
+        54
+      ],
+      "UID": "59a36a05-c400-4574-88d3-e10a04ee9b9e",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        26
+      ],
+      "NodeID": 27
+    },
+    "46": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 46,
+      "UID": "2b01d52e-4477-4017-951d-ebe68df963c9",
+      "bone": "Bone L Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+    },
+    "15": {
+      "UID": "e1247915-ef1b-4913-aed4-c2beea652aee",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.2,
+      "NodeID": 25,
+      "UID": "73eaa7cc-fad0-43be-b3e2-4d0af82819d7"
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "10a58560-145a-421b-8105-ff6a972072e2",
+      "effectId": "Eff_Parmon_10143_Light",
+      "speed": 1,
+      "NodeID": 26
+    },
+    "48": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 48,
+      "UID": "ee1a9aec-2223-454a-927b-068a3b219eab",
+      "bone": "Bone R Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    },
+    "28": {
+      "actionIds": [
+        41,
+        48,
+        46,
+        44
+      ],
+      "conditionActionIds": [
+        40
+      ],
+      "UID": "2a207425-8fac-41f8-ab55-10e155d8438f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        27
+      ],
+      "NodeID": 28
+    },
+    "49": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "eb17b53e-f328-4068-8d26-9a36a716e7cc",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 49
+    },
+    "30": {
+      "name": "checkPetPrototypeId",
+      "UID": "3a6a070b-faf2-4a49-b0a7-31d4f3a016b5",
+      "target": "OWNER",
+      "petPrototypeId": 1014301,
+      "NodeID": 30
+    },
+    "50": {
+      "actionIds": [
+        49
+      ],
+      "conditionActionIds": [
+        53
+      ],
+      "UID": "ead041b3-d780-4257-aa7b-76b9459708c7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        52
+      ],
+      "NodeID": 50
+    },
+    "52": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "34b92b46-8496-4ddd-bbdd-58d41fb55113",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 52
+    },
+    "51": {
+      "UID": "70ad20a4-ad7c-48fa-b797-b627fa507afb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "NodeID": 51
+    },
+    "41": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.012,
+        -0.012,
+        -0.003
+      ],
+      "speed": 1,
+      "NodeID": 41,
+      "UID": "8200ef88-fde6-4915-8f65-8965329e1a00",
+      "bone": "Bone L Jiao 02",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10143_Buff_ChargeLightStart_001"
+    }
+  },
+  "BPName": "ability_11430900",
+  "NodeID": 8,
+  "UID": "2cf52b96-c03f-47ac-a456-a3b028e6a949",
+  "eventIds": [
+    6,
+    15,
+    18,
+    51,
+    25,
+    22
+  ],
+  "layer": "Base",
+  "length": 10
+}

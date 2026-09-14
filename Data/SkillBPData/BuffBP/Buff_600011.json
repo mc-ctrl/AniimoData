@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_600011",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "CURPET",
+      "duration": 0,
+      "buffId": 6000101,
+      "NodeID": 3,
+      "UID": "1199e256-7702-4984-8951-202ddff08ce6",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3
+  ]
+}

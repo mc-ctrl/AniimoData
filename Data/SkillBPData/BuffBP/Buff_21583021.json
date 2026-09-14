@@ -1,0 +1,97 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21583021",
+  "NodeID": 1,
+  "UID": "105be258-20fd-4954-aae9-eee42c0ed9b8",
+  "tags": [
+    10
+  ],
+  "onBuffRefreshIds": [
+    11,
+    13
+  ],
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 21583021,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 9,
+        "UID": "21ccf45f-5b38-4ada-8007-0e03b1b2de05",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "5deca616-5f0c-43b6-ae1b-6026bbc6a24d",
+      "NodeID": 6,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "77aa1017-5c98-4e72-a935-1dffac6abde4",
+        "target": "SRC",
+        "NodeID": 5,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f6923e3d-e36e-4b59-8852-64d6afee1916",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_SmashGround_ShieldEnd",
+      "NodeID": 3
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4c4bb9d8-2209-4f48-bea1-9cca6bc04646",
+      "effectId": "Eff_Parmon_10583_Skill_SheepBubble_Shield_Dark",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "9": {
+      "calcId": 21583021,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 9,
+      "UID": "21ccf45f-5b38-4ada-8007-0e03b1b2de05",
+      "name": "getParamByLuaConfig"
+    },
+    "10": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9f9c80cb-8d71-4bab-ae9f-675151445abc",
+      "effectId": "Eff_Parmon_10583_Skill_SheepBubble_Shield_Dark",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "d21ef5f9-d85b-447c-ab8a-c2a68ff34683",
+      "effectId": "Eff_Parmon_10583_Skill_SheepBubble_Shield_Dark",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "8": {
+      "name": "stopEffectStr",
+      "UID": "66676f1f-f805-46b7-a425-f605e1960856",
+      "effectId": "Eff_Parmon_10583_Skill_SheepBubble_Shield_Dark",
+      "target": "OWNER",
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8,
+    3
+  ],
+  "onBuffStartIds": [
+    10
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "BPName": "ability_10270321",
+  "NodeID": 1,
+  "UID": "b7754470-e9d2-4d98-af52-e2ab2f9d79e5",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10270321001,
+      "name": "setCombatActionTimeline",
+      "UID": "a2378b05-4c0a-489e-a12f-2d867f512ccb",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "98": {
+      "timelineId": 10270321003,
+      "name": "setCombatActionTimeline",
+      "UID": "8b189ca6-f9b2-46b3-9d04-c7d74adabc2c",
+      "target": "CASTER",
+      "NodeID": 98
+    },
+    "10": {
+      "actionIds": [
+        8
+      ],
+      "conditionActionIds": [
+        91
+      ],
+      "UID": "5210eca3-8fee-40d3-b96f-a08fa4040971",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        98
+      ],
+      "NodeID": 10
+    },
+    "91": {
+      "name": "isActorType",
+      "UID": "e03e5c1a-bb18-47a6-acad-8795a547e584",
+      "target": "OWNER",
+      "NodeID": 91,
+      "actorType": 2
+    }
+  },
+  "onAbilityCastIds": [
+    10
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Slingshot_Charge",
+    "Skill_Slingshot_Loop",
+    "Skill_Slingshot_Charge_DefMode",
+    "Skill_Slingshot_Loop_DefMode",
+    "Skill_Slingshot_End",
+    "Skill_Slingshot_End_DefMode"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10027_Skill_Slingshot_End_Metal_liuli",
+    "Eff_Parmon_10027_Skill_Slingshot_End_DefMode_Metal_liuli",
+    "Eff_Parmon_10027_Skill_Slingshot_Loop_DefMode_Metal_liuli",
+    "Eff_Parmon_10027_Skill_Slingshot_Loop_Metal_liuli",
+    "Eff_Parmon_10027_Skill_Slingshot_Charge_DefMode_Metal_liuli",
+    "Eff_Parmon_10027_Skill_Slingshot_Charge_Metal_liuli",
+    "Eff_Parmon_10027_Skill_Slingshot_Hit_DefMode_Metal_liuli",
+    "Eff_Buff_Defense_Arrow_Down",
+    "Eff_Parmon_10027_Skill_Slingshot_Hit_DefMode_Metal",
+    "Eff_Parmon_10027_Skill_DefMode_Start3_liuli"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 12,
+  "searchTargetRangeUp": 1.5,
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 0.5,
+  "abilityParamId": 11200203
+}

@@ -1,0 +1,65 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_100621",
+  "NodeID": 1,
+  "UID": "7b863a99-e402-4d70-92da-e8b60add2433",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "084f9985-a9ce-4d0e-9ff2-4a35f13fdede",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "388873c9-3795-4045-b855-645fdb8e851f",
+      "effectId": "Eff_Buff_Heal_Arrow_Up",
+      "target": "CURPET",
+      "NodeID": 9
+    },
+    "14": {
+      "unsummonValid": false,
+      "actionIds": [
+        12
+      ],
+      "name": "registerGroupEvent",
+      "UID": "bc081d84-e166-4738-9d6d-70241b93d757",
+      "NodeID": 14
+    },
+    "11": {
+      "target": "TARGET",
+      "calcInfo": {
+        "instant_dmg_hp_by_cur_hp_rate": 0.8
+      },
+      "attackData": {
+        "attackRotateMode": "CasterPos",
+        "elementType": 1
+      },
+      "UID": "d97b8fc5-c434-4784-a1c7-1e62d0ae4fd0",
+      "checkValidTarget": false,
+      "name": "calcResult",
+      "NodeID": 11
+    },
+    "12": {
+      "UID": "56e2de68-83e3-4682-869f-35f629d6b123",
+      "name": "doPetsActions",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12
+    }
+  },
+  "onBuffDestroyIds": [
+    4,
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    14
+  ]
+}

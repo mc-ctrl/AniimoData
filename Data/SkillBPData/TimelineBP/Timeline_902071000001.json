@@ -1,0 +1,315 @@
+{
+  "nodeMap": {
+    "6": {
+      "UID": "4d930af7-c928-46d4-9262-cd0723ec8da3",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          13,
+          14
+        ]
+      },
+      "NodeID": 6
+    },
+    "42": {
+      "pos": {
+        "key": "targetPosThunder",
+        "name": "getCacheVal",
+        "UID": "eaaa8034-ceef-4450-bde5-d689165cd83f",
+        "target": "OWNER",
+        "NodeID": 41
+      },
+      "scale": 1.5,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "bd9d6dc4-a13d-41db-b2c8-18d7f067fec7",
+      "effectId": "Eff_Parmon_90207_Skill_MagicZone_Rock",
+      "speed": 1,
+      "NodeID": 42
+    },
+    "35": {
+      "eventType": "NotifyState",
+      "endTime": 2.7,
+      "NodeID": 35,
+      "UID": "daff8f16-23c9-4c1c-83a0-ce9f2e60c05c",
+      "onUpdate": {
+        "actionIds": {}
+      },
+      "startTime": 1.8,
+      "tickInterval": 0.2
+    },
+    "44": {
+      "UID": "84be2a9f-35ca-4e24-b05c-a8c3c250274a",
+      "name": "triggerSandboxBlueprintEvent",
+      "eventName": "guide_4200",
+      "NodeID": 44
+    },
+    "31": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 29,
+      "NodeID": 31,
+      "UID": "91190e13-a050-4884-9c44-281711c3f049",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "key": "targetPosThunder",
+            "name": "getCacheVal",
+            "UID": "eaaa8034-ceef-4450-bde5-d689165cd83f",
+            "target": "OWNER",
+            "NodeID": 41
+          },
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        29
+      ]
+    },
+    "11": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bb0f0953-d6d4-4422-b607-b48f6cddeeee",
+      "target": "OWNER",
+      "NodeID": 11,
+      "animId": "Skill_BothPunch"
+    },
+    "20": {
+      "UID": "12028f4c-e172-4404-bbad-bc1af06bf3e2",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 20
+    },
+    "21": {
+      "actionIds": [
+        24,
+        27
+      ],
+      "conditionActionIds": [
+        20
+      ],
+      "UID": "98836f7f-4e1d-422a-b59f-2bbf44afca2a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        23
+      ],
+      "NodeID": 21
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          21
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 22,
+      "UID": "7737e94b-d14f-4c90-a2d0-d2175e76fbb0"
+    },
+    "4": {
+      "UID": "2388113b-f01b-44b6-851f-af91ecd98a4f",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 0
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "scale": 0.6,
+      "NodeID": 24,
+      "UID": "e54d5a13-77d8-431b-89cf-aaf3b63280e0",
+      "effectId": "Eff_Parmon_10012_Mon_Skill_Warning_Boss",
+      "global": true,
+      "pos": "TARGET",
+      "speed": 1.2,
+      "target": "TARGET",
+      "name": "playEffectOnPosRot"
+    },
+    "14": {
+      "target": "OWNER",
+      "duration": 5,
+      "buffId": 10011,
+      "NodeID": 14,
+      "UID": "6c1497be-a50e-4aea-9d81-9a9eac137db5",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "45": {
+      "action": {
+        "actionIds": [
+          44
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 45,
+      "UID": "fb8dddf6-ce95-430b-9a75-7c22d9445253"
+    },
+    "15": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "06aa690e-63a2-43b4-8462-993ffbcbca31",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "43": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "861bce03-93a7-49b7-830d-4a23767b47a2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10203_Skill_MagicZone_Rock",
+      "NodeID": 43
+    },
+    "26": {
+      "UID": "8b0050ac-6ee9-43c1-8ec6-b6f60f16681d",
+      "target": "TARGET_HIT",
+      "name": "getTargetPosition",
+      "NodeID": 26
+    },
+    "27": {
+      "key": "targetPosThunder",
+      "name": "setCacheVal",
+      "UID": "f576cc5c-69e3-495e-ad88-b74212eac44b",
+      "target": "OWNER",
+      "val": {
+        "UID": "8b0050ac-6ee9-43c1-8ec6-b6f60f16681d",
+        "target": "TARGET_HIT",
+        "name": "getTargetPosition",
+        "NodeID": 26
+      },
+      "NodeID": 27
+    },
+    "17": {
+      "UID": "03e16777-bad0-4689-a48f-fbdbc9d74245",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          19,
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "impulseId": 1000,
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 8,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30102
+      },
+      "UID": "204464f9-df12-4130-ab62-e8c94623783e",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 29
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          42,
+          43,
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.8,
+      "NodeID": 33,
+      "UID": "2db38ffc-9f07-4291-93d0-bca2e95de780"
+    },
+    "12": {
+      "UID": "4dc3e8c6-5722-4c28-8635-f99ec5245af4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    },
+    "19": {
+      "UID": "67a7da30-393e-4870-a619-7b3146fc936f",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 19
+    },
+    "13": {
+      "time": 1,
+      "rotateSpeed": 120,
+      "name": "rotateTo",
+      "UID": "8729db5d-6f13-49ce-9a2b-ef404422a79c",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 13
+    },
+    "23": {
+      "offsetXYZ": [
+        0,
+        0,
+        2.5
+      ],
+      "NodeID": 23,
+      "UID": "6c8e0b16-1b72-4ef0-959e-170216eedf75",
+      "effectId": "Eff_Parmon_10012_Mon_Skill_Warning_Boss",
+      "global": true,
+      "pos": "OWNER",
+      "target": "OWNER",
+      "speed": 1.2,
+      "name": "playEffectOnPosRot",
+      "scale": 0.6
+    }
+  },
+  "BPName": "ability_902071000",
+  "NodeID": 8,
+  "UID": "d07aaba8-2c00-49b6-8298-43e9ab24b9fd",
+  "eventIds": [
+    6,
+    17,
+    35,
+    33,
+    12,
+    22,
+    45
+  ],
+  "layer": "Base",
+  "length": 3.5
+}

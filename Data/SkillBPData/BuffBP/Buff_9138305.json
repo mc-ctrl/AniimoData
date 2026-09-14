@@ -1,0 +1,171 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9138305",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "onBuffRefreshIds": [
+    6
+  ],
+  "tags": [
+    9,
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "06c5c077-80dd-4641-a28f-66b0823fafe0",
+      "name": "doActionsByConditions",
+      "NodeID": 5,
+      "elseActionIds": [
+        21,
+        18,
+        3,
+        19
+      ]
+    },
+    "6": {
+      "conditionActionIds": [
+        13
+      ],
+      "UID": "12fe3d14-d60d-4c04-b1df-f7ee77491995",
+      "name": "doActionsByConditions",
+      "NodeID": 6,
+      "elseActionIds": [
+        5
+      ]
+    },
+    "7": {
+      "UID": "c62f6d12-4bfd-4c9f-923a-8765ad479ce2",
+      "scale": 1,
+      "name": "setAnimFreezeScale",
+      "NodeID": 7
+    },
+    "8": {
+      "key": "wait",
+      "duration": 0.1,
+      "actionIds": [
+        7
+      ],
+      "NodeID": 8,
+      "UID": "b3d83f17-ab4d-4343-b4e7-32fa3c860726",
+      "name": "addEntityTimer"
+    },
+    "11": {
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "69292eb0-03d8-47c7-9ee2-a380c4f50761",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "20": {
+      "name": "stopSoundStr",
+      "UID": "b9dc10b9-d852-4f73-bf22-1f0016da7dfe",
+      "soundId": "SFX_Parmon_10383_Skill_Confine_02",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "21": {
+      "delay": 1.5,
+      "interval": 999,
+      "UID": "ba401220-b92e-4ed2-a499-178af77928e4",
+      "name": "buffStartThink",
+      "NodeID": 21
+    },
+    "3": {
+      "UID": "3f76f03d-9cad-43e1-b18d-bbb5e8222e0b",
+      "scale": 0,
+      "name": "setAnimFreezeScale",
+      "NodeID": 3
+    },
+    "13": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "4ae35e6c-183a-4cef-a065-29af1e536110",
+      "target": "CURPET",
+      "NodeID": 13
+    },
+    "14": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "9d10341a-6d54-4c22-a1aa-950e7fc13c07",
+      "target": "CURPET",
+      "NodeID": 14
+    },
+    "10": {
+      "conditionActionIds": [
+        16
+      ],
+      "UID": "54e06855-f654-488b-ad9f-7ef3e34894db",
+      "name": "doActionsByConditions",
+      "NodeID": 10,
+      "elseActionIds": [
+        17,
+        8,
+        22
+      ]
+    },
+    "15": {
+      "label": 2,
+      "name": "isPuppetLabel",
+      "UID": "458c30a6-c6e8-48cf-a4b2-ccc49e54f0a8",
+      "target": "CURPET",
+      "NodeID": 15
+    },
+    "16": {
+      "label": 4,
+      "name": "isPuppetLabel",
+      "UID": "a07e35fd-6775-4719-8534-3f101a40bde5",
+      "target": "CURPET",
+      "NodeID": 16
+    },
+    "17": {
+      "name": "stopEffectStr",
+      "UID": "080b822a-f959-42e3-b304-dee1e4060302",
+      "effectId": "Eff_Parmon_10383_Skill_Confine_02",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "18": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 18,
+      "UID": "0b61b04d-0aad-462c-9a17-70a3ec565116",
+      "effectId": "Eff_Parmon_10383_Skill_Confine_02",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "19": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5b819b00-dc02-4b71-8d21-0085a2858e48",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Parmon_10383_Skill_Confine_02",
+      "NodeID": 19
+    },
+    "22": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 22,
+      "UID": "d9c36623-a33e-4d7a-9f7f-173294abc954",
+      "effectId": "Eff_Parmon_10383_Skill_Confine_02_End",
+      "name": "playEffectOnPosRot",
+      "isAbilityEndRemove": true
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    11,
+    20
+  ],
+  "onBuffStartIds": [
+    6
+  ]
+}

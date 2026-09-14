@@ -1,0 +1,529 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9162301",
+  "NodeID": 1,
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "rValue": 4,
+      "name": "equal",
+      "UID": "f9dbfe1e-e215-453f-825b-fdc0392ccd98",
+      "NodeID": 37,
+      "lValue": {
+        "key": "10623RandomBubble",
+        "name": "getCacheVal",
+        "UID": "344ad0f2-d810-438b-914d-5e6c4c90a818",
+        "target": "OWNER",
+        "NodeID": 36
+      }
+    },
+    "38": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 9162304,
+      "NodeID": 38,
+      "UID": "83d2b18f-167b-42b9-97a6-ad35b52fab1f",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "39": {
+      "buffId": 9162304,
+      "name": "hasBuff",
+      "UID": "ed9afa4e-f889-4587-b0aa-c746cc6ce42d",
+      "target": "OWNER",
+      "NodeID": 39
+    },
+    "40": {
+      "key": "10623RandomBubble",
+      "name": "setCacheVal",
+      "UID": "5b5aca15-137e-4139-86ec-8773a133dc15",
+      "target": "OWNER",
+      "val": 5,
+      "NodeID": 40
+    },
+    "41": {
+      "listId": "BubbleList",
+      "name": "getDynamicListCount",
+      "UID": "7e84c4b4-04d9-4804-be8c-db70e44ada4d",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "42": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "d90ea682-07c2-45f6-a6b8-2d036286f13b",
+      "NodeID": 42,
+      "lValue": {
+        "listId": "BubbleList",
+        "name": "getDynamicListCount",
+        "UID": "7e84c4b4-04d9-4804-be8c-db70e44ada4d",
+        "target": "OWNER",
+        "NodeID": 41
+      }
+    },
+    "43": {
+      "listId": "BubbleList",
+      "NodeID": 43,
+      "UID": "71cee926-b1d2-4a14-8d36-764479d8411f",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": true
+    },
+    "66": {
+      "key": "OverrideBubble",
+      "name": "setCacheVal",
+      "UID": "3f633b88-5aff-455f-bbf4-b0fd9ff3ded5",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 66
+    },
+    "2": {
+      "listId": "BubbleList",
+      "NodeID": 2,
+      "UID": "52a01836-04c9-450e-ac27-15424948bc7f",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": true
+    },
+    "4": {
+      "NodeID": 4,
+      "UID": "8ebc0884-29c7-42ec-8b72-226928970a50",
+      "forbidSameAsPrev": true,
+      "randomMaxVal": 4,
+      "key": "RandomValue",
+      "specialRatio": 0.01,
+      "specialValue": 4,
+      "triggerEventName": "RandomBubble",
+      "name": "genRandomIntForAsyncActions",
+      "randomMinVal": 1
+    },
+    "64": {
+      "key": "10623RandomBubble",
+      "name": "setCacheVal",
+      "UID": "4ad989ea-4752-49ec-86a4-ecb4a7fbe7be",
+      "target": "OWNER",
+      "val": {
+        "key": "OverrideBubble",
+        "name": "getCacheVal",
+        "UID": "515bfb36-3d6b-461d-9b48-a8f7fd5d4022",
+        "target": "OWNER",
+        "NodeID": 63
+      },
+      "NodeID": 64
+    },
+    "62": {
+      "rValue": 0,
+      "name": "equal",
+      "UID": "c9d84077-4e71-45b7-b184-c311782c5eb2",
+      "NodeID": 62,
+      "lValue": {
+        "key": "OverrideBubble",
+        "name": "getCacheVal",
+        "UID": "58cbcbbb-6f55-43f2-8eb9-980c6bc55a59",
+        "target": "OWNER",
+        "NodeID": 61
+      }
+    },
+    "60": {
+      "value": true,
+      "eventName": "Won",
+      "name": "notifyOctopusEvent",
+      "UID": "c1ea5c63-7295-45e3-9c20-a4e3aceebac5",
+      "wonColor": 3,
+      "NodeID": 60
+    },
+    "28": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 28,
+      "UID": "cdd4d732-83c7-4995-b31b-b7d3b1acfef0",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "58": {
+      "actionIds": [
+        59
+      ],
+      "conditionActionIds": [
+        57
+      ],
+      "UID": "d428677e-65c8-4dcb-9931-bc0b7f36188a",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        60
+      ],
+      "NodeID": 58
+    },
+    "57": {
+      "rValue": 2,
+      "name": "equal",
+      "UID": "478ad5a7-c136-438e-88d8-d193dd3cb519",
+      "NodeID": 57,
+      "lValue": {
+        "key": "10623RandomBubble",
+        "name": "getCacheVal",
+        "UID": "bd7568c7-eb4b-4a80-893a-0f6803a5033f",
+        "target": "OWNER",
+        "NodeID": 56
+      }
+    },
+    "55": {
+      "value": true,
+      "eventName": "Won",
+      "name": "notifyOctopusEvent",
+      "UID": "82962410-388e-4eb1-b73f-d8d76884a218",
+      "wonColor": 1,
+      "NodeID": 55
+    },
+    "54": {
+      "target": "OWNER",
+      "duration": 10,
+      "buffId": 9162304,
+      "NodeID": 54,
+      "UID": "6ebba439-c637-4729-aef3-7c859edeac2a",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "53": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 53,
+      "UID": "9a2f216a-b2ec-4e69-bc9c-f18a23becbb8",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": true
+    },
+    "52": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 52,
+      "UID": "71be7641-2803-4ddf-affb-31f9383e6c1f",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "51": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 51,
+      "UID": "44ed534b-2ce9-49d4-ab5c-1c789fcc972a",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "7": {
+      "actionIds": [
+        40
+      ],
+      "conditionActionIds": [
+        39
+      ],
+      "UID": "7ecdeec0-4bde-4919-a342-5ab55d65b82d",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        4,
+        15,
+        20
+      ],
+      "NodeID": 7
+    },
+    "50": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 50,
+      "UID": "8866f76d-79f2-4c41-bc92-f0d2c5452a48",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "8": {
+      "actionIds": [
+        43,
+        7
+      ],
+      "conditionActionIds": [
+        42
+      ],
+      "UID": "c8a2e452-9d68-4db5-b6ca-fd9d659a712b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "31": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 31,
+      "UID": "f34a598a-5307-4a73-b284-cc8cf2d4588a",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "9": {
+      "eventName": "AddRandomBubble",
+      "NodeID": 9,
+      "UID": "f01b1c39-7052-4cb0-8a03-328967f3168b",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        8
+      ]
+    },
+    "48": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 48,
+      "UID": "275e65bd-ec3e-4fd8-9b7c-7a193e12d4b6",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "12": {
+      "key": "10623RandomBubble",
+      "name": "setCacheVal",
+      "UID": "91b4ca33-c1a7-4284-9680-63333e269a9a",
+      "target": "OWNER",
+      "val": {
+        "UID": "c68f3e06-6270-4c5c-9914-f1fd410ce013",
+        "name": "getRandomValueForAsyncActions",
+        "key": "RandomValue",
+        "NodeID": 11
+      },
+      "NodeID": 12
+    },
+    "23": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 23,
+      "UID": "745e2f0e-db20-4711-9043-3904bd899512",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "20": {
+      "actionIds": [
+        23,
+        17,
+        27
+      ],
+      "conditionActionIds": [
+        22
+      ],
+      "UID": "06fb6fb6-3dd8-4100-8c23-4899c1e42824",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        17,
+        27
+      ],
+      "NodeID": 20
+    },
+    "21": {
+      "listId": "BubbleList",
+      "name": "getDynamicListCount",
+      "UID": "c6f47ee1-c78a-47de-81df-775fa73f6241",
+      "target": "OWNER",
+      "NodeID": 21
+    },
+    "22": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "11ec6110-b632-4d34-bd6f-6de6d7654aab",
+      "NodeID": 22,
+      "lValue": {
+        "listId": "BubbleList",
+        "name": "getDynamicListCount",
+        "UID": "c6f47ee1-c78a-47de-81df-775fa73f6241",
+        "target": "OWNER",
+        "NodeID": 21
+      }
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        62
+      ],
+      "UID": "9bc42993-6f09-46f2-ab6c-35895372f33f",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        64,
+        66
+      ],
+      "NodeID": 13
+    },
+    "45": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "3ec9da1f-2fa5-4672-a73d-f5de34bc8231",
+      "NodeID": 45,
+      "lValue": {
+        "key": "10623RandomBubble",
+        "name": "getCacheVal",
+        "UID": "ef133cd8-53c7-4822-bd3a-0026cd1815fa",
+        "target": "OWNER",
+        "NodeID": 44
+      }
+    },
+    "24": {
+      "listId": "BubbleList",
+      "name": "getDynamicListMaxRepeatCount",
+      "UID": "2c67e1c4-16f1-449f-8900-e1cddf14d16e",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "46": {
+      "actionIds": [
+        55
+      ],
+      "conditionActionIds": [
+        45
+      ],
+      "UID": "7eb0db1c-2365-4c7a-86c5-60eff7cbe8e8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        58
+      ],
+      "NodeID": 46
+    },
+    "15": {
+      "key": "RandomValue",
+      "eventName": "RandomBubble",
+      "NodeID": 15,
+      "UID": "5e8ef779-6254-4c85-b9f7-adcbb1223b9b",
+      "randomValType": 1,
+      "name": "triggerOrRegisterAsyncEvent",
+      "actionIds": [
+        13
+      ]
+    },
+    "25": {
+      "rValue": 5,
+      "name": "equal",
+      "UID": "df422888-5593-41c2-8173-2f904868f43f",
+      "NodeID": 25,
+      "lValue": {
+        "listId": "BubbleList",
+        "name": "getDynamicListMaxRepeatCount",
+        "UID": "2c67e1c4-16f1-449f-8900-e1cddf14d16e",
+        "target": "OWNER",
+        "NodeID": 24
+      }
+    },
+    "26": {
+      "actionIds": [
+        46,
+        54,
+        48,
+        50,
+        51,
+        52,
+        53
+      ],
+      "conditionActionIds": [
+        25
+      ],
+      "UID": "f54e6fc0-1703-4b1f-bec4-621a6e3dbbc1",
+      "name": "doActionsByConditions",
+      "NodeID": 26
+    },
+    "27": {
+      "actionIds": [
+        30
+      ],
+      "conditionActionIds": [
+        37
+      ],
+      "UID": "494f9cb3-1fff-40c5-ace0-3d9248c9d1a8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        26
+      ],
+      "NodeID": 27
+    },
+    "17": {
+      "listId": "BubbleList",
+      "name": "addDynamicListItem",
+      "UID": "5e5b93c9-75a5-41d6-b4ec-535807fa2555",
+      "target": "OWNER",
+      "value": {
+        "key": "10623RandomBubble",
+        "name": "getCacheVal",
+        "UID": "1f50612d-6355-492e-90e7-2fb5f71e7892",
+        "target": "OWNER",
+        "NodeID": 16
+      },
+      "NodeID": 17
+    },
+    "59": {
+      "value": true,
+      "eventName": "Won",
+      "name": "notifyOctopusEvent",
+      "UID": "bfac3667-baea-461f-a415-c79fdf24e405",
+      "wonColor": 2,
+      "NodeID": 59
+    },
+    "30": {
+      "key": "jinqiu",
+      "duration": 0.2,
+      "actionIds": [
+        35,
+        38,
+        28,
+        31,
+        32,
+        33,
+        34
+      ],
+      "NodeID": 30,
+      "UID": "2033ff19-5466-4bd0-b308-553d712dd364",
+      "name": "addTimer"
+    },
+    "32": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 32,
+      "UID": "7fee3814-9356-4d4b-a1f8-5d55012dc422",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "33": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 33,
+      "UID": "79ccb5e0-ffce-4186-8361-76670456f35e",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": false
+    },
+    "34": {
+      "listId": "BubbleList",
+      "name": "removeDynamicListItemByIndex",
+      "NodeID": 34,
+      "UID": "de4791ee-9c1f-4b73-96ff-deaf872cca1a",
+      "target": "OWNER",
+      "index": 1,
+      "isSendMsgToClient": true
+    },
+    "35": {
+      "value": true,
+      "eventName": "Won",
+      "name": "notifyOctopusEvent",
+      "UID": "11c0a97a-e4e4-4fb8-8bd5-bc6b16ec7979",
+      "wonColor": 4,
+      "NodeID": 35
+    }
+  },
+  "isUnSummonFreeze": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2,
+    9
+  ]
+}

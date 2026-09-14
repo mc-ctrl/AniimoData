@@ -1,0 +1,122 @@
+{
+  "BPName": "ability_11331411",
+  "NodeID": 1,
+  "UID": "7ad71bea-389f-4b0f-882a-35ecd1d8a4de",
+  "abilityParamId": 10211334,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "52": {
+      "key": "BulblyDeath",
+      "name": "setServerCacheVal",
+      "UID": "62f700de-a349-4ebd-a2df-069b645c9fc6",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 52
+    },
+    "70": {
+      "id": 2045,
+      "hasCountDown": false,
+      "NodeID": 70,
+      "UID": "1b7cd8d5-f9db-48d1-b15e-1f0b02bebdbf",
+      "name": "hideBossMechanismTip"
+    },
+    "54": {
+      "key": "11331411Start",
+      "name": "setServerCacheVal",
+      "UID": "23d3c16b-75d3-457c-b5c2-31316a963ea9",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 54
+    },
+    "73": {
+      "buffId": 10011,
+      "name": "removeBuff",
+      "UID": "6d2793dc-b587-4679-8890-c2da8d4a89db",
+      "target": "OWNER",
+      "NodeID": 73
+    },
+    "8": {
+      "timelineId": 11331411001,
+      "name": "setCombatActionTimeline",
+      "UID": "45bf9bb1-2539-43e4-8001-b7102adc37fd",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "49": {
+      "key": "Bulbly_02",
+      "name": "setServerCacheVal",
+      "UID": "76e2050d-ca05-45e6-8443-748de758ef45",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 49
+    },
+    "50": {
+      "key": "Bulbly_03",
+      "name": "setServerCacheVal",
+      "UID": "2f7a5463-3fe9-4889-a2ec-f5582df45131",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 50
+    },
+    "51": {
+      "key": "Bulbly_04",
+      "name": "setServerCacheVal",
+      "UID": "f159d50b-388b-4232-bbe4-6b6ad1f746d4",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 51
+    },
+    "46": {
+      "key": "Bulbly_01",
+      "name": "setServerCacheVal",
+      "UID": "9d70e16e-97b6-4856-8ada-6a4fb3a93648",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 46
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "onAbilityRemovedIds": [
+    70,
+    73,
+    52,
+    46,
+    49,
+    50,
+    51,
+    54
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Ice_Slash_Big",
+    "Eff_Monster_10133_Mon_Skill_Throw_Boom",
+    "Eff_Skill_Common_Warning_Red01",
+    "Eff_Boss_Debuff_Weak"
+  ],
+  "searchRelation": 2,
+  "name": "砸地",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 3,
+  "notTurnToTarget": true,
+  "onAbilityEndIds": [
+    70,
+    73,
+    52,
+    46,
+    49,
+    50,
+    51,
+    54
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 3,
+  "preloadAnims": [
+    "Behav_HappyStart",
+    "Behav_HappyLoop",
+    "Behav_HappyEnd"
+  ]
+}

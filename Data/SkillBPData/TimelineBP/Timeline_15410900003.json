@@ -1,0 +1,200 @@
+{
+  "nodeMap": {
+    "82": {
+      "UID": "17723e5a-ebfe-49e6-a0aa-51d230de3375",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          80,
+          91
+        ]
+      },
+      "NodeID": 82
+    },
+    "65": {
+      "UID": "c353df83-8d0c-4b1a-a43f-72ca63c25f2e",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 65
+    },
+    "84": {
+      "UID": "a277f93d-397b-4acb-b55c-52ed219571e9",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 84
+    },
+    "67": {
+      "action": {
+        "actionIds": [
+          65,
+          78
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.07,
+      "NodeID": 67,
+      "UID": "e5783d2f-7fa7-4f0b-9945-5b4208d11443"
+    },
+    "86": {
+      "UID": "5e8888c9-82e7-4ec6-b313-c836de76c7dd",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          84
+        ]
+      },
+      "NodeID": 86
+    },
+    "88": {
+      "UID": "a94d0213-d1a0-4fb6-8adf-1d6b9dbe9653",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 88
+    },
+    "71": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f1d86d3d-d127-4745-b96a-072eef7c8afd",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_charge_punch03",
+      "NodeID": 71
+    },
+    "75": {
+      "UID": "500a48fb-bee4-428b-aa00-99174b7b5314",
+      "name": "setMask",
+      "mask": {
+        "cancellable": 1
+      },
+      "NodeID": 75
+    },
+    "160": {
+      "offsetXYZ": [
+        0,
+        1.4,
+        0.6
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "68abd575-9e62-479d-8e3e-9b16152440d4",
+      "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Release01",
+      "speed": 1,
+      "NodeID": 160
+    },
+    "91": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "ca0ce545-bd22-4da5-9a1d-8cf1ac9248f9",
+      "target": "OWNER",
+      "NodeID": 91,
+      "animId": "ExploreSkill_WaterBullet_End"
+    },
+    "77": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "e0036817-6494-4c9a-b5ef-9fd7ae743052",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_wolferno_skill_charge_punch01_fire",
+      "NodeID": 77
+    },
+    "156": {
+      "offsetXYZ": [
+        0,
+        1.4,
+        0.9
+      ],
+      "templateId": 15410900002,
+      "name": "createProjectile",
+      "UID": "e20655d4-c8b5-42c8-aadf-18df3ce29c6b",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 156,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "90": {
+      "action": {
+        "actionIds": [
+          88
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.35,
+      "NodeID": 90,
+      "UID": "ef0b0724-03f6-4126-bcc6-ee21e0a3f04d"
+    },
+    "78": {
+      "name": "stopEffectStr",
+      "UID": "57b2d394-2b1b-4433-acad-7b992e58aa46",
+      "effectId": "Eff_Parmon_10543_Skill_WaterBullet_Hold02",
+      "target": "OWNER",
+      "NodeID": 78
+    },
+    "73": {
+      "action": {
+        "actionIds": [
+          71,
+          77
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 73,
+      "UID": "f2d25d7a-17e8-4854-b8bb-24ba7ecf59fc"
+    },
+    "158": {
+      "action": {
+        "actionIds": [
+          156,
+          160
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.26,
+      "NodeID": 158,
+      "UID": "22473cae-8999-42f8-b970-f88b7bed24fc"
+    },
+    "76": {
+      "action": {
+        "actionIds": [
+          75
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 76,
+      "UID": "9671308b-aeb7-4f3b-b080-c2a61e5c8ff5"
+    },
+    "80": {
+      "UID": "93f3c5ec-3d6c-417a-b40e-5263742f04a9",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 80
+    }
+  },
+  "BPName": "ability_15410900",
+  "NodeID": 69,
+  "UID": "8a225312-51d7-41db-9c5c-c99f4eab4c06",
+  "eventIds": [
+    90,
+    82,
+    86,
+    67,
+    158,
+    73,
+    76
+  ],
+  "layer": "Base",
+  "length": 1.167
+}

@@ -1,0 +1,78 @@
+{
+  "11": {
+    "desc": 1967196292,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "20": {
+    "desc": 1823881063,
+    "icon": "$UI_Icon_Task_Combat.png"
+  },
+  "21": {
+    "desc": 1158941779,
+    "icon": "$UI_Icon_Task_Combat.png"
+  },
+  "3": {
+    "desc": 1402429221,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "4": {
+    "desc": 1722195490,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "24": {
+    "desc": 1881462219,
+    "icon": "$UI_Icon_Task_Combat.png"
+  },
+  "14": {
+    "desc": 1689789057,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "23": {
+    "desc": 1079193620,
+    "icon": "$UI_Icon_Task_Combat.png"
+  },
+  "15": {
+    "desc": 1133346447,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "25": {
+    "desc": 2123296750,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "16": {
+    "desc": 1559902967,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "12": {
+    "desc": 1654717841,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "17": {
+    "desc": 1491910372,
+    "icon": "$UI_Icon_Task_Evolve.png"
+  },
+  "1": {
+    "desc": 1536307794,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "18": {
+    "desc": 1167587900,
+    "icon": "$UI_Icon_Task_Evolve.png"
+  },
+  "13": {
+    "desc": 1978605575,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "19": {
+    "desc": 1872300296,
+    "icon": "$UI_Icon_Task_Combat.png"
+  },
+  "2": {
+    "desc": 1835728124,
+    "icon": "$UI_Icon_Task_Catch.png"
+  },
+  "22": {
+    "desc": 1177468856,
+    "icon": "$UI_Icon_Task_Combat.png"
+  }
+}

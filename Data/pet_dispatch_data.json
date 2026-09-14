@@ -1,0 +1,23 @@
+[
+  {
+    "iconId": "$UI_Img_Home_CampManage_Hiking.png",
+    "time": 21600,
+    "name": 1743633950,
+    "sortId": 1,
+    "unlockCondition": 61001
+  },
+  {
+    "iconId": "$UI_Img_Home_CampManage_Explore.png",
+    "time": 43200,
+    "name": 1779738144,
+    "sortId": 2,
+    "unlockCondition": 61002
+  },
+  {
+    "iconId": "$UI_Img_Home_CampManage_Camping.png",
+    "time": 72000,
+    "name": 1891095129,
+    "sortId": 3,
+    "unlockCondition": 61003
+  }
+]

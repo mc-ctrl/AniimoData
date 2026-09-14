@@ -1,0 +1,116 @@
+{
+  "nodeMap": {
+    "88": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "e95b8731-3fa9-4a8c-aa7c-20b78929eb99",
+      "target": "OWNER",
+      "NodeID": 88
+    },
+    "89": {
+      "actionIds": [
+        91
+      ],
+      "conditionActionIds": [
+        88
+      ],
+      "UID": "a11cff75-417e-49b2-8538-c1dd16fb0e13",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        92
+      ],
+      "NodeID": 89
+    },
+    "54": {
+      "timelineId": 12810200003,
+      "name": "jumpToNextTimeline",
+      "UID": "07f064be-ab62-4e35-adda-774da9a75d42",
+      "target": "OWNER",
+      "NodeID": 54
+    },
+    "90": {
+      "action": {
+        "actionIds": [
+          89
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 90,
+      "UID": "39dfe29d-12a8-4799-a9ca-025a9b024a65"
+    },
+    "7": {
+      "timelineId": 12810200001,
+      "name": "jumpToNextTimeline",
+      "UID": "e0e96f53-0923-4827-b243-03464542427a",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "91": {
+      "duration": 0.25,
+      "name": "puppetPreCastAction",
+      "UID": "0810b9c4-b671-4984-afaf-34d1ed547826",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 91
+    },
+    "8": {
+      "actionIds": [
+        54
+      ],
+      "conditionActionIds": [
+        83
+      ],
+      "UID": "fca41c0d-200f-49e5-a727-0f396f0d490c",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        7
+      ],
+      "NodeID": 8
+    },
+    "92": {
+      "duration": 0.5,
+      "name": "puppetPreCastAction",
+      "UID": "acb5a91f-37bb-4e88-bc40-49cc9618887f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 92
+    },
+    "9": {
+      "UID": "e1603798-6fcc-49e1-bd72-314ec47b98e6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "NodeID": 9
+    },
+    "83": {
+      "name": "isInBurrow",
+      "UID": "57d00ea6-f7e8-402b-bee8-985510b5d0af",
+      "target": "CASTER",
+      "NodeID": 83,
+      "not": false
+    }
+  },
+  "BPName": "ability_12810200",
+  "NodeID": 11,
+  "UID": "fa6db034-9bbe-4b99-ae45-3c5cb86e793a",
+  "eventIds": [
+    9,
+    90
+  ],
+  "layer": "Base",
+  "length": 1.75
+}

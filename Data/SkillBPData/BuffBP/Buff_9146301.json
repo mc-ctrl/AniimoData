@@ -1,0 +1,73 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9146301",
+  "NodeID": 1,
+  "UID": "bfaa47bf-23b2-4384-b1fe-9c22451869f7",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        7,
+        17
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "313ed140-7ab9-409c-996d-8c4a29dda49d",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "a031cdd8-d653-423a-9525-062ea3b089c6",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "9": {
+      "normalIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Nml.png",
+      "spEnergyGridCount": 3,
+      "spEnergyInitV": 0,
+      "UID": "9aef1d25-2499-4e26-bcd1-b0cfa62a1216",
+      "superBoosted": true,
+      "spEnergyMaxV": 3,
+      "name": "registerPassiveEnergyInfo",
+      "NodeID": 9,
+      "fullEnergyIcon": "$UI_HUD_Special_Energy_Bar_Power_Icon_Full.png",
+      "naturalDecayInterval": 1
+    },
+    "17": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "ee0f639a-0e8b-4fb3-ae13-94c0b172b3da",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "7": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91463011,
+      "NodeID": 7,
+      "UID": "c09016ae-b32b-44c1-bbbe-f736f6f94fe1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "2": {
+      "UID": "d0c6dd72-51f3-410d-bae3-2df342d380dc",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4,
+    9
+  ]
+}

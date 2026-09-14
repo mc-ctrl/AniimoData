@@ -1,0 +1,35 @@
+{
+  "searchTargetRangeRadius": 10,
+  "preloadEffs": [
+    "Eff_Parmon_10174_Boss_Warning",
+    "Eff_Parmon_10213_Skill_Shoot_Move01",
+    "Eff_Parmon_10213_Skill_Shoot_Bullet01",
+    "Eff_Parmon_10213_Skill_Shoot_Move02",
+    "Eff_Monster_90213_Mon_Attack_Crystal_Bullet",
+    "Eff_Monster_90213_Mon_Attack_Common_Hit_02"
+  ],
+  "BPName": "ability_902131402",
+  "name": "电近战普攻",
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "searchTargetRangeUp": 2,
+  "abilityParamId": 10600630,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 1,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "6": {
+      "timelineId": 902131402001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 6
+    }
+  },
+  "onAbilityCastIds": [
+    6
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

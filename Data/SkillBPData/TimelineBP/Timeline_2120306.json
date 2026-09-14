@@ -1,0 +1,287 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2120306,
+        "instant_dmg_rate_v": "param0",
+        "type": 4
+      },
+      "UID": "f3638683-6786-469e-9a23-c2a23bd9c2b7",
+      "target": "TARGET",
+      "NodeID": 5,
+      "attackData": {
+        "impulseId": 1000,
+        "hitSoundType": "h",
+        "soundRangeType": 2,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Rock_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 8,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30102
+      }
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "e5db1dde-7ae7-4c6e-a506-dce88f2fef63",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            1.6,
+            0.8
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 1000,
+      "actionIds": [
+        5,
+        22,
+        33,
+        37
+      ]
+    },
+    "31": {
+      "key": "912031",
+      "name": "setCacheVal",
+      "UID": "ae9501a7-2c75-4888-99eb-70abd81d06ba",
+      "target": "MASTER",
+      "val": 1,
+      "NodeID": 31
+    },
+    "9": {
+      "tickInterval": 0.2,
+      "eventType": "NotifyState",
+      "endTime": 1.2,
+      "NodeID": 9,
+      "UID": "1e09aecc-1db8-4b4a-a25c-223b453f7886",
+      "onUpdate": {
+        "actionIds": [
+          7
+        ]
+      },
+      "startTime": 0.3,
+      "onEnter": {
+        "actionIds": [
+          7
+        ]
+      }
+    },
+    "20": {
+      "buffId": 91201071,
+      "name": "removeBuff",
+      "UID": "3760a94b-de52-4ac1-a202-bae950ad36b6",
+      "target": "MASTER",
+      "NodeID": 20
+    },
+    "21": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2120308,
+      "NodeID": 21,
+      "UID": "e143a486-83e4-49c6-9301-14baac701b56",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "22": {
+      "actionIds": [
+        21
+      ],
+      "conditionActionIds": [
+        24
+      ],
+      "UID": "2299601c-1784-442c-8431-a8efdf3d207b",
+      "name": "doActionsByConditions",
+      "NodeID": 22
+    },
+    "37": {
+      "target": "TARGET",
+      "duration": {
+        "calcId": 2120306,
+        "calcType": 4,
+        "paramName": "param1",
+        "NodeID": 36,
+        "UID": "492b7e19-df48-4a1c-957e-768e69cca6a7",
+        "name": "getParamByLuaConfig"
+      },
+      "buffId": 10072,
+      "NodeID": 37,
+      "UID": "4e03bd67-4ab1-4bbd-9dcb-dce0a361481b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "24": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "9ac9563d-4c08-4554-a229-764114bb0f50",
+      "NodeID": 24,
+      "lValue": {
+        "key": "91203",
+        "name": "getCacheVal",
+        "UID": "0e52a265-169e-4be0-9946-a7a35598620f",
+        "target": "OWNER",
+        "NodeID": 23
+      }
+    },
+    "14": {
+      "buffId": 91201071,
+      "name": "hasBuff",
+      "UID": "acc12837-befa-4875-8303-fa816ebe32ba",
+      "target": "MASTER",
+      "NodeID": 14
+    },
+    "17": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          35,
+          27,
+          15
+        ]
+      },
+      "NodeID": 17
+    },
+    "15": {
+      "actionIds": [
+        18,
+        20
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "5f595b99-0912-4551-b799-4e952bff6cf5",
+      "name": "doActionsByConditions",
+      "NodeID": 15
+    },
+    "25": {
+      "key": "91203",
+      "name": "setCacheVal",
+      "UID": "f53f3bb2-bc7a-4305-9887-f94c53d0f599",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 25
+    },
+    "35": {
+      "pos": "POS_OR_TARGET",
+      "target": "OWNER",
+      "speed": 1,
+      "name": "playEffectOnPosRot",
+      "UID": "feb0e2a1-028d-495e-a4a8-08749e90fcd7",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_Rock",
+      "rot": {
+        "refPos": "OWNER",
+        "name": "getGroundTangentRotation",
+        "UID": "335333a1-d60d-4ccc-a1b6-046f9038495f",
+        "simpleTest": false,
+        "refYawRot": "OWNER",
+        "NodeID": 34
+      },
+      "NodeID": 35
+    },
+    "27": {
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "1ca5469a-dbe2-4519-a6d2-a8c0d62ef62a",
+      "name": "doActionsByConditions",
+      "NodeID": 27,
+      "elseActionIds": [
+        25,
+        31,
+        32
+      ]
+    },
+    "28": {
+      "buffId": 91201071,
+      "name": "hasBuff",
+      "UID": "f0ca7be4-e529-4f3f-97b5-5abd78c3f16f",
+      "target": "MASTER",
+      "NodeID": 28
+    },
+    "29": {
+      "UID": "b437c451-df51-4e96-a5bd-6fa6934614c9",
+      "conditionIds": [
+        28,
+        30
+      ],
+      "name": "conditionOr",
+      "NodeID": 29
+    },
+    "30": {
+      "buffId": 91201073,
+      "name": "hasBuff",
+      "UID": "ce8cda31-9572-4e09-b577-ee20c7011d69",
+      "target": "MASTER",
+      "NodeID": 30
+    },
+    "32": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91201073,
+      "NodeID": 32,
+      "UID": "341aaf11-88b0-46b4-8bbf-bf607bf37add",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "33": {
+      "key": "912031",
+      "name": "setCacheVal",
+      "UID": "9d885040-136e-4d43-b0f4-3127b80dfa5e",
+      "target": "MASTER",
+      "val": 0,
+      "NodeID": 33
+    },
+    "18": {
+      "key": "91203",
+      "name": "setCacheVal",
+      "UID": "c75273d5-5522-463b-b257-6ff8d2451791",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 18
+    },
+    "36": {
+      "calcId": 2120306,
+      "calcType": 4,
+      "paramName": "param1",
+      "NodeID": 36,
+      "UID": "492b7e19-df48-4a1c-957e-768e69cca6a7",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "timeline_2120306",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    17,
+    9
+  ],
+  "layer": "Base",
+  "length": 1.7
+}

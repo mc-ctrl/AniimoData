@@ -1,0 +1,99 @@
+{
+  "element": {
+    "Earth": {
+      "id": 206,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -298506155
+    },
+    "Grass": {
+      "id": 202,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1334637622
+    },
+    "Ice": {
+      "id": 204,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -120699060
+    },
+    "Light": {
+      "id": 212,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1325229542
+    },
+    "Metal": {
+      "id": 205,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1427212717
+    },
+    "Poison": {
+      "id": 210,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1966330778
+    },
+    "Psychic": {
+      "id": 209,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -973919165
+    },
+    "Wind": {
+      "id": 207,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -141274084
+    },
+    "Water": {
+      "id": 201,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1775893487
+    },
+    "Electric": {
+      "id": 203,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1597161161
+    },
+    "Normal": {
+      "id": 208,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1055994872
+    },
+    "Fire": {
+      "id": 200,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1269122004
+    },
+    "Dark": {
+      "id": 211,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -991401223
+    }
+  },
+  "total": {
+    "total": {
+      "id": 1,
+      "showMeetNum": 1,
+      "showResearchNum": 1,
+      "name": -1055846199,
+      "showCatchNum": 1
+    }
+  },
+  "country": {
+    "time": {
+      "id": 10,
+      "showCatchNum": 1,
+      "showResearchNum": 1,
+      "name": -1727797101
+    }
+  }
+}

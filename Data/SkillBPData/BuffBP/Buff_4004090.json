@@ -1,0 +1,203 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_4004090",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "isDeathKeep": true,
+  "onBuffInheritIds": [
+    16,
+    4,
+    7,
+    12
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "UID": "80306067-b86c-4495-8562-ecfd59a76111",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 22
+    },
+    "4": {
+      "value": {
+        "name": "getAttribute",
+        "UID": "d4f16c4d-5aa9-4b0f-bd21-60ba01e47963",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "ep_max_cur"
+      },
+      "name": "recoverEp",
+      "UID": "b16e20d9-c4ce-4946-80d9-26ae0695aaf7",
+      "target": "OWNER",
+      "NodeID": 4,
+      "applyIncRatio": false
+    },
+    "6": {
+      "buffId": 4004090,
+      "name": "removeBuff",
+      "UID": "ca3dcc58-9af5-4ed5-a39f-c8eb84f9ddb4",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "value": {
+        "rValue": {
+          "calcId": 4004090,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 13,
+          "UID": "76d4781e-da0f-4a26-99c1-f7fa45fccb96",
+          "name": "getParamByLuaConfig"
+        },
+        "name": "multiply",
+        "UID": "e4c2472c-b6d3-40e9-b0e0-efc7fadf24cd",
+        "NodeID": 9,
+        "lValue": {
+          "UID": "947b0509-a16d-46c3-a085-823f4bbcc0c8",
+          "name": "getCostEpValue",
+          "NodeID": 8
+        }
+      },
+      "name": "recoverEp",
+      "UID": "f89ab621-2017-4ece-9082-1aa6e4bff91c",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "7": {
+      "actionIds": [
+        6
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "b56ac6d0-10b7-4bb8-b71f-8136c8a25df3",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "16": {
+      "UID": "3a96637e-3d10-42e6-b66a-b897e6c94fd2",
+      "name": "addBuffDynamicAttribute",
+      "calcInfo": {
+        "ep_max_fix": {
+          "calcId": 4004090,
+          "calcType": 1,
+          "paramName": "param3",
+          "NodeID": 14,
+          "UID": "91b90638-d0ef-425a-90c9-2b7eebfe2f33",
+          "name": "getParamByLuaConfig"
+        }
+      },
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "947b0509-a16d-46c3-a085-823f4bbcc0c8",
+      "name": "getCostEpValue",
+      "NodeID": 8
+    },
+    "21": {
+      "calcId": 4004090,
+      "calcType": 1,
+      "paramName": "param4",
+      "NodeID": 21,
+      "UID": "27177e1b-181f-42a0-b15d-8668311c541e",
+      "name": "getParamByLuaConfig"
+    },
+    "19": {
+      "rValue": {
+        "calcId": 4004090,
+        "calcType": 1,
+        "paramName": "param4",
+        "NodeID": 21,
+        "UID": "27177e1b-181f-42a0-b15d-8668311c541e",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "greater",
+      "UID": "c1e363b8-9df3-48a6-8ad6-44fb903d4305",
+      "NodeID": 19,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "f72f87cc-0b4d-4e87-b3be-f37de8f098f6",
+          "target": "OWNER",
+          "NodeID": 20,
+          "attributeName": "ep_max_cur"
+        },
+        "name": "div",
+        "UID": "e538072e-678c-4408-b4a6-288dc2b3446d",
+        "NodeID": 18,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "6e38c0d9-d532-4a19-94e3-e2cf93375a1b",
+          "target": "OWNER",
+          "NodeID": 17,
+          "attributeName": "ep_cur"
+        }
+      }
+    },
+    "18": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "f72f87cc-0b4d-4e87-b3be-f37de8f098f6",
+        "target": "OWNER",
+        "NodeID": 20,
+        "attributeName": "ep_max_cur"
+      },
+      "name": "div",
+      "UID": "e538072e-678c-4408-b4a6-288dc2b3446d",
+      "NodeID": 18,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "6e38c0d9-d532-4a19-94e3-e2cf93375a1b",
+        "target": "OWNER",
+        "NodeID": 17,
+        "attributeName": "ep_cur"
+      }
+    },
+    "14": {
+      "calcId": 4004090,
+      "calcType": 1,
+      "paramName": "param3",
+      "NodeID": 14,
+      "UID": "91b90638-d0ef-425a-90c9-2b7eebfe2f33",
+      "name": "getParamByLuaConfig"
+    },
+    "11": {
+      "conditionActionIds": [
+        19
+      ],
+      "UID": "42259163-bbbb-41d9-bbeb-b6650cecb0b7",
+      "name": "doActionsByConditions",
+      "NodeID": 11,
+      "elseActionIds": [
+        10
+      ]
+    },
+    "13": {
+      "calcId": 4004090,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 13,
+      "UID": "76d4781e-da0f-4a26-99c1-f7fa45fccb96",
+      "name": "getParamByLuaConfig"
+    },
+    "12": {
+      "UID": "90e44e11-24b8-4816-a124-d26b42c34b72",
+      "name": "registerCostEpEvent",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    22
+  ],
+  "onBuffStartIds": [
+    16,
+    4,
+    7,
+    12
+  ]
+}

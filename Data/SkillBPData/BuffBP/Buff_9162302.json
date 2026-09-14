@@ -1,0 +1,21 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "2": {
+      "listId": "BubbleList",
+      "NodeID": 2,
+      "UID": "12b07ffc-689a-4a26-ae9a-84384581038e",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": true
+    }
+  },
+  "BPName": "buff_9162302",
+  "dynamicRPCStates": {},
+  "UID": "26b15892-0221-4633-894a-4f68b80f6df8",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    2
+  ]
+}

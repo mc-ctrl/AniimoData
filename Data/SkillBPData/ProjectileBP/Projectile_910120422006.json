@@ -1,0 +1,132 @@
+{
+  "duration": 5,
+  "BPName": "ability_910120422",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Buff_Rogue_Money_Drop_Fly",
+  "ignoreActorCollision": true,
+  "gravityRatio": 1,
+  "groundDestroy": true,
+  "kind": "Parabola3d",
+  "nodeMap": {
+    "104": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062001,
+      "name": "createEntity",
+      "UID": "2fe595a1-93eb-42ed-9c5a-86d61d317865",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 104,
+      "pos": "PROJECTILE"
+    },
+    "100": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062003,
+      "name": "createEntity",
+      "UID": "9c2d68d4-2531-4a6f-a377-c4c15843b786",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 100,
+      "pos": "PROJECTILE"
+    },
+    "92": {
+      "actionIds": [
+        100
+      ],
+      "conditionActionIds": [
+        102
+      ],
+      "UID": "faa9b5e0-a3c9-4ac4-b6f2-2c8357f0b1aa",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        91
+      ],
+      "NodeID": 92
+    },
+    "102": {
+      "UID": "ea52ca72-1ca2-4177-ab9d-e5a4cee83650",
+      "randomPercent": 5,
+      "name": "isRandom",
+      "NodeID": 102
+    },
+    "90": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 2062002,
+      "name": "createEntity",
+      "UID": "77172d3d-bf14-43e5-a1a6-fb321dd43653",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "entityName": "Creation",
+      "stick": 1,
+      "rot": "CURPET",
+      "NodeID": 90,
+      "pos": "PROJECTILE"
+    },
+    "103": {
+      "UID": "4ae975b1-9a02-48e3-84b7-3525ddb82a42",
+      "randomPercent": 42,
+      "name": "isRandom",
+      "NodeID": 103
+    },
+    "91": {
+      "actionIds": [
+        90
+      ],
+      "conditionActionIds": [
+        103
+      ],
+      "UID": "d5506f17-7064-4819-ade8-88ee065fe1a8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        104
+      ],
+      "NodeID": 91
+    }
+  },
+  "moveSpeed": 7,
+  "onProjectileFinishIds": [
+    92
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "keepRot": true,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "tickInterval": 0.05,
+  "startSleepTime": 0,
+  "relation": 2,
+  "groundSweepRadius": 0.05,
+  "maxHitNum": 0,
+  "acceleration": 1
+}

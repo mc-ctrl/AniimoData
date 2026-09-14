@@ -1,0 +1,92 @@
+{
+  "duration": 2,
+  "calcResultNodeId": 24,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10194_Skill_FlowingWaterSword_Chop_Rogue",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "nodeMap": {
+    "20": {
+      "calcResultNodeId": 24,
+      "name": "actOnTargets",
+      "UID": "c0cd3249-d112-48dd-8581-3136e54c1dc6",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            3,
+            90,
+            1.5,
+            1
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        24
+      ],
+      "impulseId": 2000,
+      "NodeID": 20
+    },
+    "24": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0.02
+      },
+      "attackData": {
+        "hitSoundType": "h",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10033,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Water_Slash",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 3,
+        "impulseId": 2000
+      },
+      "UID": "1219e4e3-e0d5-475c-98ce-aa4abae76e03",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 24
+    }
+  },
+  "moveSpeed": 20,
+  "onProjectileHitIds": [
+    20
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 10,
+  "sweepRadius": 2,
+  "sweepShape": 0,
+  "tickInterval": 0.2,
+  "BPName": "buff_2119405",
+  "startSleepTime": 0,
+  "maxHitNum": 9999,
+  "NodeID": 0,
+  "impulseId": 2000,
+  "acceleration": 0
+}

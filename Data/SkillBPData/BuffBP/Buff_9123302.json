@@ -1,0 +1,70 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_9123302",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    8
+  ],
+  "tags": [
+    10
+  ],
+  "UID": "114d36ec-d014-4b0e-9769-3762fd267b3b",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "buffId": 912330201,
+      "name": "removeBuff",
+      "UID": "a9ce7f9e-86c0-4295-93b7-0a1b603412c5",
+      "target": "OWNER",
+      "NodeID": 8
+    },
+    "4": {
+      "target": "OWNER",
+      "duration": 20,
+      "buffId": 912330201,
+      "NodeID": 4,
+      "UID": "3b4f6447-1541-4d32-931c-195127adf88e",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "delay": 20,
+      "interval": 20,
+      "UID": "4e137e61-7fe7-473e-bc2f-facec47a9863",
+      "name": "buffStartThink",
+      "NodeID": 9
+    },
+    "6": {
+      "actionIds": [
+        9,
+        4
+      ],
+      "conditionActionIds": [
+        10
+      ],
+      "UID": "20db2cf9-2681-42b5-9a31-0ab7ae998754",
+      "name": "doActionsByConditions",
+      "NodeID": 6
+    },
+    "10": {
+      "UID": "3d72e530-f773-4a67-a4ba-2730ffed61fb",
+      "name": "isAbilityType",
+      "abilityType": 2,
+      "NodeID": 10
+    },
+    "7": {
+      "UID": "32eea1d7-3553-42b2-bf33-c576baefb730",
+      "name": "registerCastAbilityEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "91228746": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 3,
+    "areaPoints": [
+      -972.53,
+      -424.65,
+      -973.67,
+      -415.35,
+      -971.69,
+      -410.07,
+      -965.14,
+      -408.01,
+      -959.68,
+      -407.96,
+      -957.45,
+      -410.92,
+      -959.13,
+      -418.37,
+      -961.18,
+      -423.1,
+      -964.16,
+      -423.97
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 91228746,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "INFO_DISABLE_1_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 20,
+    "sandboxId": 91228743,
+    "position": [
+      -959.32,
+      435.63,
+      -431.25
+    ],
+    "pointType": 1,
+    "enable": false,
+    "name": "螳螂虾篝火区域_91228746"
+  },
+  "91228661": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 3,
+    "areaPoints": [
+      -917.66,
+      356.67,
+      -916.82,
+      371.25,
+      -904.81,
+      373.36,
+      -902.58,
+      370.4,
+      -904.26,
+      362.95
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 91228661,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "INFO_DISABLE_1_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 20,
+    "sandboxId": 91228658,
+    "position": [
+      -904.45,
+      116.46,
+      350.07
+    ],
+    "pointType": 1,
+    "enable": false,
+    "name": "螳螂虾篝火区域_91228661"
+  },
+  "91103548": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "sandboxId": 91103540,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 91103548,
+    "logics": {},
+    "height": 80,
+    "radius": 55,
+    "position": [
+      591.01,
+      86.66,
+      104.35
+    ],
+    "pointType": 1,
+    "enable": false,
+    "name": "区域_草原房车营地"
+  },
+  "91171882": {
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 3,
+    "areaPoints": [
+      -1168.29,
+      -13.76,
+      -1169.43,
+      -4.46,
+      -1167.45,
+      0.82,
+      -1160.9,
+      2.88,
+      -1155.44,
+      2.93,
+      -1153.21,
+      -0.03
+    ],
+    "areaShapeType": 2,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 91171882,
+    "logics": [
+      {
+        "checkEntityInControl": false,
+        "doTeleport": false,
+        "enterEvents": {},
+        "exitEvents": {},
+        "states": [
+          [
+            "ConflictState",
+            "INFO_DISABLE_1_ST"
+          ]
+        ],
+        "stayEvents": {}
+      }
+    ],
+    "height": 20,
+    "sandboxId": 91171878,
+    "position": [
+      -1155.08,
+      113.68,
+      -20.36
+    ],
+    "pointType": 1,
+    "enable": false,
+    "name": "螳螂虾篝火区域_91171882"
+  }
+}

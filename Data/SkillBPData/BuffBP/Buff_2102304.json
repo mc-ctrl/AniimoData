@@ -1,0 +1,65 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102304",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "nodeMap": {
+    "3": {
+      "name": "stopEffectStr",
+      "UID": "57da27d2-8738-4c6c-8983-d6a374482c5d",
+      "effectId": "Eff_Parmon_10023_Skill_Petrifaction_Enter",
+      "target": "OWNER",
+      "NodeID": 3
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7a9b6369-7a09-41ae-a0d4-0beb52968075",
+      "effectId": "Eff_Parmon_10023_Skill_Petrifaction_EndLight",
+      "speed": 1,
+      "NodeID": 7
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a96b7fd5-0433-481e-82c4-0d169e20279f",
+      "isAbilityEndRemove": false,
+      "soundId": "parmon_helgon_skill_shield_spawn",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": false,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.2,
+      "name": "multiply",
+      "UID": "68f91d4b-3ab9-4399-8939-6712a257800d",
+      "NodeID": 9,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "e61b7db1-9f8c-429c-8290-9422d505e894",
+        "target": "OWNER",
+        "NodeID": 8,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10023_Skill_Petrifaction_Enter"
+    }
+  ],
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    3,
+    7
+  ],
+  "onBuffStartIds": [
+    5
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "buffToastDesc": "增加30秒通关时间",
+    "buffUi": "$UI_Icon_TopLogoBuff_Time.png",
+    "events": [
+      [
+        "addGameTime",
+        [
+          30
+        ]
+      ]
+    ],
+    "buffDesc": "加时赛：击杀/捕捉对应伊莫后，通关时间增加30秒",
+    "topLogoUi": "$UI_Icon_TopLogoBuff_Time.png",
+    "ifBuffToast": 1
+  },
+  {
+    "buffToastDesc": "大幅提升伊莫break效率",
+    "buffUi": "$UI_Icon_TopLogoBuff_Shield.png",
+    "buffId": 11138,
+    "buffDesc": "破盾手：大幅提升伊莫的break效率及break后捕捉概率",
+    "topLogoUi": "$UI_Icon_TopLogoBuff_Shield.png",
+    "ifBuffToast": 1
+  },
+  {
+    "buffToastDesc": "必定成功捕捉对应伊莫",
+    "buffUi": "$UI_Icon_TopLogoBuff_GoldCube.png",
+    "buffId": 11139,
+    "buffDesc": "精准制导：必定能捕捉对应的伊莫",
+    "topLogoUi": "$UI_Icon_TopLogoBuff_GoldCube.png",
+    "ifBuffToast": 1
+  },
+  {
+    "buffToastDesc": "连续成功捕捉后，提升捕捉概率",
+    "buffUi": "$UI_Icon_TopLogoBuff_Combo.png",
+    "buffId": 11140,
+    "buffDesc": "熟练工：冒险家连续捕捉成功后，大幅提高后续捕捉的成功率",
+    "topLogoUi": "$UI_Icon_TopLogoBuff_Combo.png",
+    "ifBuffToast": 1
+  },
+  {
+    "buffToastDesc": "震荡波使周围伊莫进入眩晕状态",
+    "buffUi": "$UI_Icon_TopLogoBuff_Shockwave.png",
+    "ifBuffToast": 1,
+    "buffDesc": "震荡波：击杀/捕捉伊莫后，在其位置发射震荡波，眩晕周围伊莫。",
+    "topLogoUi": "$UI_Icon_TopLogoBuff_Shockwave.png",
+    "npcCreateBuffId": 11141
+  },
+  {
+    "buffToastDesc": "睡眠花粉使周围伊莫进入睡眠状态",
+    "buffUi": "$UI_Icon_TopLogoBuff_Pollen.png",
+    "ifBuffToast": 1,
+    "buffDesc": "催眠花粉：击杀/捕捉伊莫后，在其位置散布睡眠花粉，睡眠周围伊莫。",
+    "topLogoUi": "$UI_Icon_TopLogoBuff_Pollen.png",
+    "npcCreateBuffId": 11142
+  }
+]

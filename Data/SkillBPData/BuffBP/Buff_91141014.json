@@ -1,0 +1,79 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91141014",
+  "NodeID": 1,
+  "UID": "cb6f7ca2-dd6c-4791-87fa-2e82a77e0a3a",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "17": {
+      "name": "checkPetPrototypeId",
+      "UID": "1047a632-ebaf-480c-8118-c9e15c8ba527",
+      "target": "OWNER",
+      "petPrototypeId": 1014101,
+      "NodeID": 17
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "e7c8ebdb-8f27-46d5-b5c5-c281ba182433",
+      "effectId": "Eff_Parmon_10141_Light_Red",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f13554dc-3820-400c-9a4a-2d5f5fb370f6",
+      "effectId": "Eff_Parmon_10141_Light_Red",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "19": {
+      "petTarget": "OWNER",
+      "triggerId": 1014101,
+      "name": "onEntityTrigger",
+      "UID": "a14b30b7-56ab-42e9-96dd-dcffd0c09c8a",
+      "target": "OWNER",
+      "NodeID": 19
+    },
+    "11": {
+      "name": "checkPetPrototypeId",
+      "UID": "233ba796-fa61-47e8-bf2b-13f632d0585d",
+      "target": "OWNER",
+      "petPrototypeId": 1014301,
+      "NodeID": 11
+    },
+    "7": {
+      "conditionActionIds": [
+        11
+      ],
+      "UID": "2c795257-4c7c-4778-9341-2c7231271519",
+      "name": "doActionsByConditions",
+      "NodeID": 7,
+      "elseActionIds": [
+        6
+      ]
+    },
+    "18": {
+      "actionIds": [
+        19
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "0280a3ce-8087-46db-b9c6-47fa797c37b3",
+      "name": "doActionsByConditions",
+      "NodeID": 18
+    }
+  },
+  "onBuffDestroyIds": [
+    9
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7,
+    18
+  ]
+}

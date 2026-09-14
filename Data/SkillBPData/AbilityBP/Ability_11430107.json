@@ -1,0 +1,50 @@
+{
+  "BPName": "ability_11430107",
+  "NodeID": 1,
+  "UID": "c88f312d-c9fd-474b-945a-cb212274c879",
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "0e159a34-b0e3-43ae-9dea-a6c2eac8e718",
+      "name": "doActionsByConditions",
+      "NodeID": 8,
+      "elseActionIds": [
+        7
+      ]
+    },
+    "15": {
+      "buffId": 2114303,
+      "name": "hasBuff",
+      "UID": "1e60d461-256b-4f81-9dc9-338fe97322b8",
+      "target": "OWNER",
+      "NodeID": 15
+    },
+    "7": {
+      "timelineId": 11430107001,
+      "name": "setCombatActionTimeline",
+      "UID": "a0fada19-9d09-4acd-8625-5ef95b60924c",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadEffs": [
+    "Eff_Parmon_10143_Skill_Charge_Gather01"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 3,
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 3,
+  "shortDesc": "",
+  "abilityParamId": 10400257,
+  "name": ""
+}

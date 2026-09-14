@@ -1,0 +1,48 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "6": {
+      "UID": "d0e1112d-7be0-427b-b12d-6e4ed50b1708",
+      "name": "showBubbleMsg",
+      "msgId": 2192,
+      "NodeID": 6
+    },
+    "4": {
+      "UID": "36cf65de-cc36-441f-88c1-1c86fe2b89c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          7
+        ]
+      },
+      "NodeID": 4
+    },
+    "7": {
+      "UID": "41226a08-85fb-4a1c-a0b5-52f75ba18a6c",
+      "name": "registerReceiveBeAttackedEvent",
+      "actionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "2": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 10012,
+      "NodeID": 2,
+      "UID": "64ff354a-767a-49af-854e-4a282fff9b61",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "timeline_9020710",
+  "NodeID": 1,
+  "UID": "75765db6-181f-408f-92fb-25d379a5aebf",
+  "eventIds": [
+    4
+  ],
+  "layer": "Base",
+  "length": 30
+}

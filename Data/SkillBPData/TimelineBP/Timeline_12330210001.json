@@ -1,0 +1,184 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "8a2c75c9-a78a-4e92-b028-741ee8493d9c",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3.1,
+      "NodeID": 13,
+      "UID": "dad5a629-23ca-4114-89f3-13a02c4ea83b"
+    },
+    "24": {
+      "UID": "2a248bc2-641f-4e4f-96dc-15848f758389",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 24
+    },
+    "10": {
+      "UID": "3f29c4f9-3663-448c-a912-f0b322af52cb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "33": {
+      "UID": "1e66e99a-0964-423e-8a72-2a437f4701c7",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "NodeID": 33
+    },
+    "12": {
+      "UID": "e2794f2c-962d-4ef3-92e9-565fb5a50be7",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 12
+    },
+    "26": {
+      "UID": "8fc92437-9c41-4710-8602-fbd41327df57",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          24
+        ]
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c557c91e-7f28-4e16-8b76-787fb6779703",
+      "effectId": "Eff_Parmon_Futternym_10233_Skill_Sprinkle02",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.16,
+      "NodeID": 31,
+      "UID": "cd15db8e-89d4-41ee-9a00-803f9a16f12c"
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bcccdffd-eedd-4043-88fa-2158ead5c230",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "Skill_Sprinkle"
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "346cb749-7ff8-4724-95a8-ae3f8384851d",
+      "effectId": "Eff_Parmon_Futternym_10233_Skill_Sprinkle01_01",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a7741526-d257-42aa-a634-a4687c622d92",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10231_Skill_Sprinkle",
+      "NodeID": 32
+    },
+    "19": {
+      "key": "hp10231",
+      "name": "setCacheVal",
+      "UID": "19c9ad3a-afe4-41d3-b7ab-1ef67d17fb9f",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "templateId": 123103,
+        "name": "createEntity",
+        "UID": "e94e725d-6ac4-4f58-bc8e-a62688fb7782",
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "bornHp": 0,
+        "entityName": "Creation",
+        "stick": 1,
+        "rot": "OWNER",
+        "NodeID": 18,
+        "pos": "OWNER"
+      },
+      "val": {
+        "name": "getAttribute",
+        "UID": "af7b573d-ea98-4474-9ac5-d11f7baad024",
+        "target": "OWNER",
+        "NodeID": 22,
+        "attributeName": "hp_max_cur"
+      },
+      "NodeID": 19
+    },
+    "5": {
+      "UID": "e0b77c65-a6f4-4dff-bc7b-5bbe5edc7e68",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3
+        ]
+      },
+      "NodeID": 5
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          19,
+          27
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.73,
+      "NodeID": 21,
+      "UID": "16c53db3-e24c-4ef9-a26f-c0d497fb06c5"
+    }
+  },
+  "BPName": "ability_12330210",
+  "NodeID": 7,
+  "UID": "300acc03-2af4-4b72-a062-71706b9cd40e",
+  "eventIds": [
+    5,
+    10,
+    33,
+    13,
+    26,
+    31,
+    21
+  ],
+  "layer": "Base",
+  "length": 3.32
+}

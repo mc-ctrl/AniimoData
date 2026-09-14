@@ -1,0 +1,72 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_5000122",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "d2d0ead3-dd68-44d2-9675-9914a7bc602f",
+      "name": "isAbilityType",
+      "abilityType": 4,
+      "NodeID": 3
+    },
+    "4": {
+      "actionIds": [
+        9
+      ],
+      "conditionActionIds": [
+        3
+      ],
+      "UID": "4b3862ec-f65b-4a6a-8208-03b684203134",
+      "name": "doActionsByConditions",
+      "NodeID": 4
+    },
+    "9": {
+      "calcInfo": {
+        "sp_cur": {
+          "rValue": 100,
+          "name": "multiply",
+          "UID": "59e8737e-3c69-4ac6-b4f9-ca80a730bbdf",
+          "NodeID": 7,
+          "lValue": {
+            "calcId": 5000122,
+            "calcType": 1,
+            "paramName": "param0",
+            "NodeID": 6,
+            "UID": "3d0a4d34-db52-4efd-986e-90b36641b2cc",
+            "name": "getParamByLuaConfig"
+          }
+        }
+      },
+      "name": "calcResult",
+      "UID": "8af2045b-e5e3-421f-9254-8b55b17f8aed",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "calcId": 5000122,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 6,
+      "UID": "3d0a4d34-db52-4efd-986e-90b36641b2cc",
+      "name": "getParamByLuaConfig"
+    },
+    "5": {
+      "actionIds": [
+        4
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "58a6deb3-867f-45b8-bb7d-a6c2a2fcb092",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5
+  ]
+}

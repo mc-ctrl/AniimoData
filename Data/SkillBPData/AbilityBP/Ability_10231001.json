@@ -1,0 +1,41 @@
+{
+  "BPName": "ability_10231001",
+  "NodeID": 1,
+  "UID": "3fdd10c5-7d2a-4360-be49-9585ff07229c",
+  "abilityParamId": 10700000,
+  "abilityType": 1,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10231001001,
+      "name": "setCombatActionTimeline",
+      "UID": "da5696c6-3727-418f-8a36-9773413860c5",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Attack02"
+  ],
+  "preloadEffs": [
+    "Eff_Hit_Metal_Blunt",
+    "Eff_Parmon_10023_Attack02"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 3,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "switchSkillByState": {
+    "FLYRISE": 10230003,
+    "FLYHOVER": 10230003,
+    "FLYMOVE": 10230003,
+    "FLYING": 10230003
+  },
+  "searchTargetRangeDown": 1
+}

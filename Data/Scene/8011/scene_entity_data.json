@@ -1,0 +1,49 @@
+{
+  "42891238": {
+    "AddAdditiveBehavList": {},
+    "AddBehavList": {},
+    "enableOverride_percept_group_Id": true,
+    "override_perceptGroupId": "PG_ DefaultNoSense",
+    "attachId": 0,
+    "attachToSpawnerId": 0,
+    "attachToStaticId": 0,
+    "behavOverrideType": 0,
+    "chestSpawnerStaticId": 0,
+    "enable_Morphling_Detail": false,
+    "enable_elite_rate": false,
+    "enable_shiny_rate": false,
+    "entityTags": {},
+    "idInType": 11016100,
+    "isAuto": false,
+    "isCancelBubble": false,
+    "isCancelDialogue": false,
+    "isGhost": false,
+    "isTeleportMarkIds": false,
+    "unknowDialogue": false,
+    "persistEntityInfoFlag": false,
+    "position": [
+      1.6,
+      6,
+      -138.73
+    ],
+    "resourcePointInfos": {},
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "routeId": 42891244,
+    "sandboxId": 42834374,
+    "sizeCoefficient": 1,
+    "spawnerId": 42891240,
+    "staticId": 42891238,
+    "stick": true,
+    "subType": "Puppet",
+    "trigger": false,
+    "voxelConstraints": 0,
+    "yaw": 0,
+    "LuaForCsClass": "LevelDesigner.Editor.Entity.EntityConfig",
+    "routeRefs": {}
+  }
+}

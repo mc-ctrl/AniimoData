@@ -1,0 +1,89 @@
+{
+  "layerCalcInfoByLuaConfig": {
+    "id": 2700200100,
+    "type": 1,
+    "atk_p": "param1"
+  },
+  "BPName": "buff_2700200100",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "stackRule": 0,
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": true,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": {
+        "calcId": 2700200100,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 12,
+        "UID": "baedccf0-4e28-4f7f-b1f3-d06c00843d89",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "multiply",
+      "UID": "1bd066a4-7b92-464a-b75a-f5660e66c06b",
+      "NodeID": 4,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "1ad93d41-919e-4616-8f22-66012616751c",
+        "target": "OWNER",
+        "NodeID": 3,
+        "attributeName": "hp_max_cur"
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "name": "registerPetOnSwitchEvent",
+      "UID": "56c3f7cb-a151-49b2-b713-a75aa699932f",
+      "oldPetActionIds": [
+        11
+      ],
+      "NodeID": 8,
+      "newPetActionIds": [
+        6
+      ]
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "90a293c1-23c2-463b-91dd-1ed4f37dd2f6",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "fd492735-6d30-40c5-93d1-97929020b842",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "eb07b378-765f-4248-9f5f-364f3bbf7ef7",
+      "effectId": "Eff_Buff_Rogue_Skill_Shield",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "12": {
+      "calcId": 2700200100,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 12,
+      "UID": "baedccf0-4e28-4f7f-b1f3-d06c00843d89",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffDestroyIds": [
+    9
+  ],
+  "onBuffStartIds": [
+    8,
+    6
+  ]
+}

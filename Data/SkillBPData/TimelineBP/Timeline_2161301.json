@@ -1,0 +1,231 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "7": {
+      "rValue": {
+        "UID": "d644e125-87ed-4105-b3b7-5ae1fe2a5bf2",
+        "target": "TrapTarget",
+        "name": "getTargetId",
+        "NodeID": 11
+      },
+      "name": "equal",
+      "UID": "f06e6121-580e-48ea-9ef1-bead50e5d587",
+      "NodeID": 7,
+      "lValue": {
+        "UID": "d20ddd38-a6fc-40c0-99a3-6ff500c3a78a",
+        "target": "MASTER",
+        "name": "getTargetId",
+        "NodeID": 6
+      }
+    },
+    "8": {
+      "actionIds": [
+        20,
+        14,
+        18,
+        24,
+        28,
+        17
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "2a99127b-cb1f-4677-bcee-813508d954df",
+      "name": "doActionsByConditions",
+      "NodeID": 8
+    },
+    "31": {
+      "UID": "6ce4a286-edb1-43e1-ae8f-9b0c93c7acad",
+      "conditionIds": [
+        30,
+        34
+      ],
+      "name": "conditionAnd",
+      "NodeID": 31
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "name": "registerTrapEvent",
+      "UID": "f1556fc2-77d8-4844-8450-85b2798044d6",
+      "enterTrapActionIds": [
+        8
+      ],
+      "isCreationStandAlone": true,
+      "isNotifyLeaveWhenExit": true,
+      "shapeArgs": [
+        1
+      ],
+      "shapeKind": "Sphere",
+      "trapKey": "",
+      "relation": 1,
+      "center": "OWNER",
+      "NodeID": 9
+    },
+    "20": {
+      "calcInfo": {
+        "add_cur_ep_fix": 5
+      },
+      "calcInfoByLuaConfig": {
+        "id": 2161301,
+        "type": 4,
+        "add_cur_ep_fix": "param0"
+      },
+      "UID": "d85f8840-6cd3-4f4d-961b-226f14f12983",
+      "target": "TrapTarget",
+      "name": "calcResult",
+      "NodeID": 20
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2fee2606-8f5d-4d56-b4a6-ba25eb21e770",
+      "effectId": "Eff_Parmon_10613_Skill_RoyalJelly_Start",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "ba2109c3-5de5-42b9-a0d1-a3e6b9e745b8",
+      "effectId": "Eff_Parmon_10613_Skill_RoyalJelly_Start_Hit",
+      "speed": 1,
+      "NodeID": 22
+    },
+    "4": {
+      "UID": "f5b06e11-09d7-455b-99a0-99a5f7dffd76",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22,
+          2,
+          27
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "pos": "OWNER",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "cf8e73c8-379d-4259-aab6-20ef79d68fbe",
+      "effectId": "Eff_Parmon_10613_Skill_RoyalJelly_End",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "14": {
+      "actionIds": [
+        12,
+        33
+      ],
+      "conditionActionIds": [
+        31
+      ],
+      "UID": "09cbf7b3-63d0-4b20-b5d4-d25d3749007a",
+      "name": "doActionsByConditions",
+      "NodeID": 14
+    },
+    "10": {
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 10,
+      "UID": "d8509c40-26cd-4bf5-b52a-faaf3e93c24f"
+    },
+    "26": {
+      "UID": "829d383c-3b94-4cba-b4fd-dc071c78022b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 26
+    },
+    "27": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "e1588495-2d0f-48b8-83a9-70b1a0f5ef16",
+      "soundId": "SFX_Combat_10613_Skill_RoyalJelly_FallToGrd",
+      "NodeID": 27
+    },
+    "28": {
+      "targetPos": "OWNER",
+      "name": "playSoundAtPos",
+      "UID": "61ee1bfa-9e22-4c3a-8187-af6903a4ecad",
+      "soundId": "SFX_Combat_10613_Skill_RoyalJelly_Eat",
+      "NodeID": 28
+    },
+    "12": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 9161302,
+      "NodeID": 12,
+      "UID": "1e91a608-8df0-4dd5-9205-9072bba86fc9",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "18": {
+      "name": "stopEffectStr",
+      "UID": "99c55c1f-31d3-4c45-9cd5-53d626996b1a",
+      "effectId": "Eff_Parmon_10613_Skill_RoyalJelly_Start",
+      "target": "OWNER",
+      "NodeID": 18
+    },
+    "30": {
+      "UID": "af0695c2-cc32-46ad-9178-35099250cde7",
+      "name": "isNot",
+      "action": {
+        "buffId": 9161303,
+        "name": "hasBuff",
+        "UID": "9b2733b0-3390-4b09-b6ba-d73eb3eaff7c",
+        "target": "TrapTarget",
+        "NodeID": 29
+      },
+      "NodeID": 30
+    },
+    "33": {
+      "calcInfo": {
+        "passive_energy_cur": 1
+      },
+      "name": "calcResult",
+      "UID": "eb75ee6b-f525-4ca7-a4d7-887e1ca23fe6",
+      "target": "TrapTarget",
+      "NodeID": 33
+    },
+    "34": {
+      "name": "isInCombat",
+      "UID": "1d4f9b7b-f245-4074-b576-32f8f35438d6",
+      "target": "TrapTarget",
+      "NodeID": 34,
+      "not": true
+    },
+    "17": {
+      "UID": "a19672eb-cb3a-4aca-969d-8b14c2278120",
+      "actorId": {
+        "UID": "adbac8d9-8a81-490c-a5e1-3093f0e43286",
+        "target": "OWNER",
+        "name": "getTargetId",
+        "NodeID": 16
+      },
+      "name": "destroyEntity",
+      "NodeID": 17
+    }
+  },
+  "BPName": "timeline_2161301",
+  "NodeID": 1,
+  "UID": "6ed677cd-c47b-4d1d-9e11-9c7e75a73e72",
+  "eventIds": [
+    4,
+    10,
+    26
+  ],
+  "layer": "Base",
+  "length": 5
+}

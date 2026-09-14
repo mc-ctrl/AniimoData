@@ -1,0 +1,105 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_920002001",
+  "NodeID": 1,
+  "UID": "3c6df93a-e32e-43ee-ad5e-a5c620986638",
+  "desc": "",
+  "onBuffRefreshIds": [
+    19,
+    14,
+    13,
+    18
+  ],
+  "tags": [
+    16
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "conditionActionIds": [
+        17
+      ],
+      "UID": "e39a1a98-78be-4098-a70d-e67537544e65",
+      "name": "doActionsByConditions",
+      "NodeID": 13
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "deaf02f4-dd82-4cd8-9787-a46869d87ddb",
+      "effectId": "Eff_Avatar_Girl_Skill_BloodLock",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "17": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "18eb0c91-e519-4cb4-a645-8613e234e1ab",
+        "target": "OWNER",
+        "NodeID": 16,
+        "attributeName": "hp_cur"
+      },
+      "name": "greater",
+      "UID": "91176957-0a29-42eb-bdf5-a5c38899dd76",
+      "NodeID": 17,
+      "lValue": 2
+    },
+    "14": {
+      "target": "OWNER",
+      "actionIds": [
+        13
+      ],
+      "attributeName": "hp_cur",
+      "UID": "70fd2b50-9071-41c1-8b85-9bf001847314",
+      "changeType": 2,
+      "name": "registerAttributeChange",
+      "NodeID": 14
+    },
+    "18": {
+      "outTime": 5,
+      "times": 14,
+      "NodeID": 18,
+      "UID": "ebd7d87d-ba0a-4e54-a10d-f62ee3a65053",
+      "name": "enableUIBubbleLockHp",
+      "endFactor": 1,
+      "f": 2
+    },
+    "19": {
+      "duration": 30,
+      "disableWhenFinished": true,
+      "NodeID": 19,
+      "UID": "33cb4492-0dba-4cd0-8d47-9c2fa100c794",
+      "target": "OWNER",
+      "presetName": "Eff_Buff_Bubble_Fresnel",
+      "name": "playPreset"
+    },
+    "20": {
+      "UID": "b3d6cac9-24e3-4229-85d0-1168c61e0b17",
+      "name": "stopPreset",
+      "presetName": "Eff_Buff_Bubble_Fresnel",
+      "NodeID": 20
+    },
+    "12": {
+      "UID": "696c0cb8-c2ad-4a3d-aed1-2ed1e44d0e6a",
+      "tags": [
+        20
+      ],
+      "name": "addBuffTag",
+      "NodeID": 12
+    }
+  },
+  "name": "",
+  "onBuffDestroyIds": [
+    4,
+    20
+  ],
+  "onBuffStartIds": [
+    19,
+    14,
+    13,
+    18
+  ]
+}

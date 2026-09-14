@@ -1,0 +1,33 @@
+{
+  "84750931": {
+    "airWallAssetUrl": "",
+    "areaFreedomPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaGroundCenterPoint": [
+      0,
+      0,
+      0
+    ],
+    "areaLoadType": 2,
+    "areaShapeType": 0,
+    "entityType": 1,
+    "entityTypeList": [
+      1
+    ],
+    "id": 84750931,
+    "logics": {},
+    "height": 80,
+    "radius": 60,
+    "sandboxId": 84750948,
+    "position": [
+      -1832.8,
+      -1.7,
+      1440.4
+    ],
+    "pointType": 1,
+    "name": "区域_海滩房车营地"
+  }
+}

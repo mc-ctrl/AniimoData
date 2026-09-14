@@ -1,0 +1,26 @@
+{
+  "802402": {
+    "bgPrefab": "$P_Avatar_Bg_Black_Scene.prefab",
+    "icon": "$UI_Icon_Photostudio_BlackBackground.png",
+    "showStatus": 1,
+    "initialClaim": 1
+  },
+  "802401": {
+    "bgPrefab": "$P_Avatar_Bg_1_Scene.prefab",
+    "icon": "$UI_Icon_Photostudio_DefaultBackground.png",
+    "showStatus": 1,
+    "initialClaim": 1
+  },
+  "802404": {
+    "bgPrefab": "$P_Avatar_Bg_3_Scene.prefab",
+    "icon": "$UI_Icon_Photostudio_PinkBackground.png",
+    "showStatus": 1,
+    "initialClaim": 1
+  },
+  "802403": {
+    "bgPrefab": "$P_Avatar_Bg_Pink_Scene.prefab",
+    "icon": "$UI_Icon_Photostudio_Pinkground.png",
+    "showStatus": 1,
+    "initialClaim": 1
+  }
+}

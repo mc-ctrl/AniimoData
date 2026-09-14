@@ -1,0 +1,61 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        5
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "9383def8-0a6c-496a-8be9-28886004b41a",
+      "name": "doActionsByConditions",
+      "NodeID": 3
+    },
+    "4": {
+      "UID": "84ab4ebc-8631-4685-bcff-c0a750d49b21",
+      "name": "registerReceiveDamageEvent",
+      "actionIds": [
+        3
+      ],
+      "NodeID": 4
+    },
+    "5": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "templateId": 107122,
+      "NodeID": 5,
+      "UID": "221397b1-f046-4b59-9f59-3876b4df6b03",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "stick": 1,
+      "bornHp": 0,
+      "deadOnMasterDestroy": false,
+      "deadOnMasterLeaveCombat": false,
+      "entityName": "Creation",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "pos": "OWNER",
+      "name": "createEntity"
+    },
+    "2": {
+      "UID": "fc095b01-ce55-4f4e-9678-07bd1e5ab165",
+      "name": "isGoingBeKilled",
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_270020008",
+  "dynamicRPCStates": {},
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "BPName": "ability_4003041",
+  "NodeID": 1,
+  "UID": "6f06c50b-3e01-4486-975b-de3c2c4e521e",
+  "abilityParamId": 49223011,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 4003041001,
+      "name": "setCombatActionTimeline",
+      "UID": "3cd004a6-414a-4eaf-a105-121055593f8c",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Gauntlet_Skill_Summon_Start",
+    "Gauntlet_Skill_Summon_Loop",
+    "Gauntlet_Skill_Summon_End"
+  ],
+  "searchRelation": 2,
+  "name": "手套普攻",
+  "searchTargetRangeRadius": 30,
+  "searchTargetRangeUp": 1,
+  "shortDesc": "",
+  "searchTargetRangeDown": 1
+}

@@ -1,0 +1,50 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2116308",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11,
+    9
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "3f76f03d-9cad-43e1-b18d-bbb5e8222e0b",
+      "scale": 0,
+      "name": "setAnimFreezeScale",
+      "NodeID": 3
+    },
+    "8": {
+      "name": "setShaderFrozen",
+      "NodeID": 8,
+      "UID": "dfb93edc-3982-495c-a36a-6a6b6c8e1db7",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": false
+    },
+    "7": {
+      "name": "setShaderFrozen",
+      "NodeID": 7,
+      "UID": "e9267757-f8e8-47c2-9dae-6edae89267d3",
+      "target": "OWNER",
+      "lerpTime": 0,
+      "enable": true
+    },
+    "5": {
+      "UID": "c62f6d12-4bfd-4c9f-923a-8765ad479ce2",
+      "scale": 1,
+      "name": "setAnimFreezeScale",
+      "NodeID": 5
+    }
+  },
+  "onBuffDestroyIds": [
+    5,
+    8
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    7
+  ]
+}

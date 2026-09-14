@@ -1,0 +1,43 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_21203012",
+  "NodeID": 1,
+  "UID": "19db056d-89b5-4877-b296-1079540db92e",
+  "tags": [
+    11
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "a7473f01-c165-49b1-8e95-dd181449d112",
+      "effectId": "Eff_Buff_LeechRipe",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "4": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "25953c32-49e1-46e1-9a99-03d08186e72f",
+      "effectId": "Eff_Buff_LeechRipe",
+      "speed": 1,
+      "NodeID": 4
+    },
+    "7": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "f5dcc5b5-9b0b-4079-b563-57d2caec7ec0",
+      "effectId": "Eff_Buff_Leech_End",
+      "speed": 1,
+      "NodeID": 7
+    }
+  },
+  "onBuffDestroyIds": [
+    5,
+    7
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

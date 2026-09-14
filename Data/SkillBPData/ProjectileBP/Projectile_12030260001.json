@@ -1,0 +1,115 @@
+{
+  "allowHitCaster": true,
+  "duration": 1.2,
+  "BPName": "ability_12030260",
+  "NodeID": 0,
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10203_Skill_NoiseWave_Grass_Liuli",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "ignoreNonCurPetCollision": true,
+  "onProjectileTickIds": [
+    51
+  ],
+  "moveSpeed": 10,
+  "nodeMap": {
+    "59": {
+      "target": "TARGET",
+      "duration": 0,
+      "buffId": 2120308,
+      "NodeID": 59,
+      "UID": "f306e02c-4f7d-4d88-a327-77aac2b2ddcd",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "49": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12030260,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "216e8e19-29e4-444a-abc4-ee28c496bb2a",
+      "target": "TARGET",
+      "NodeID": 49,
+      "attackData": {
+        "hitSoundType": "s",
+        "soundRangeType": 2,
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10103,
+        "hitFrameFreezeId": 10011,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 1,
+        "impulseId": 3002
+      }
+    },
+    "51": {
+      "calcResultNodeId": 49,
+      "name": "actOnTargets",
+      "UID": "b7b43f3d-92d5-48ba-9edc-b7a2e57bd203",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            -1
+          ],
+          "shapeArgs": [
+            1.5,
+            1.5,
+            3,
+            1,
+            1
+          ],
+          "shapeKind": "Trapezoid3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "PROJECTILE",
+          "rotFrom": {
+            "UID": "920bfe2b-cf8f-42f7-a7b9-50b0de4a6342",
+            "name": "getProjectileRotation",
+            "NodeID": 73
+          }
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 3,
+      "needEcs": true,
+      "actionIds": [
+        59,
+        49
+      ],
+      "impulseId": 3002,
+      "NodeID": 51
+    }
+  },
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1,
+  "sweepShape": 0,
+  "calcResultNodeId": 49,
+  "tickInterval": 0.1,
+  "maxHitNum": 9999,
+  "startSleepTime": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "defaultHitSoundType": "s",
+  "impulseId": 3002,
+  "acceleration": 0
+}

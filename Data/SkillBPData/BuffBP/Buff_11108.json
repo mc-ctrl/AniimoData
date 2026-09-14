@@ -1,0 +1,99 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_11108",
+  "NodeID": 1,
+  "UID": "f04515a5-8822-49d5-830d-46ba31037b38",
+  "tags": [
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "key": "Teleport",
+      "duration": 1.5,
+      "actionIds": [
+        2
+      ],
+      "NodeID": 3,
+      "UID": "0755d36c-6099-4a70-a62d-d6da99386218",
+      "name": "addTimer"
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "fb3c57ff-37ca-4add-b475-bb210ea09c40",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Env_Losing",
+      "NodeID": 13
+    },
+    "6": {
+      "name": "stopEffectStr",
+      "UID": "7e7eaddc-4b95-4186-868f-babf15a156b3",
+      "effectId": "Eff_Avatar_Losing_Buff",
+      "target": "OWNER",
+      "NodeID": 6
+    },
+    "10": {
+      "blackScreenId": 112,
+      "name": "serverPlayBlackScreen",
+      "UID": "6f59a17b-ecf9-414e-95b2-2938cc37b373",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "9": {
+      "duration": 3,
+      "name": "playStartLoopEndAni",
+      "NodeID": 9,
+      "UID": "504e53ae-6db2-41d5-8869-ffed54fc9926",
+      "endAni": "StunEnd",
+      "loopAni": "StunLoop",
+      "startAni": "StunStart"
+    },
+    "2": {
+      "delay": 1.5,
+      "name": "gameplayRandomTeleportToMarkId",
+      "UID": "50a1d39b-41de-4c78-8972-dd42b95f7f6c",
+      "target": "OWNER",
+      "srcEnt": "SRC",
+      "NodeID": 2
+    },
+    "11": {
+      "key": "BlackScreen",
+      "duration": 0.5,
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11,
+      "UID": "24d027b0-4b03-4546-a032-f79c609fc387",
+      "name": "addTimer"
+    },
+    "5": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5960a8ee-77f3-4e4a-bd1d-aa6bdd5ece29",
+      "effectId": "Eff_Avatar_Losing_Buff",
+      "speed": 1,
+      "NodeID": 5
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "fdd24561-0752-41db-955c-61b9755170ea",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    6,
+    12
+  ],
+  "onBuffStartIds": [
+    5,
+    13,
+    9,
+    3,
+    11
+  ]
+}

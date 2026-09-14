@@ -1,0 +1,62 @@
+{
+  "nodeMap": {
+    "27": {
+      "duration": 2,
+      "ignoreCamp": true,
+      "NodeID": 27,
+      "UID": "b9cf6285-76c7-4f6b-be4d-09102725104a",
+      "timeScale": 0.2,
+      "name": "createTimeScaleZone"
+    },
+    "14": {
+      "UID": "d8f228cd-49a8-43bf-b2f2-3ecb24c970ab",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          27,
+          12,
+          26,
+          25
+        ]
+      },
+      "NodeID": 14
+    },
+    "26": {
+      "UID": "2853f00c-b815-43b8-beb5-f5a13397ddcf",
+      "name": "registerCustomEvent",
+      "eventName": "qteGroupFail",
+      "NodeID": 26
+    },
+    "11": {
+      "timelineId": 9200003001,
+      "name": "setCombatActionTimeline",
+      "UID": "ffb2e4a6-c0a4-40f2-93bf-be59534fccd6",
+      "target": "CASTER",
+      "NodeID": 11
+    },
+    "25": {
+      "name": "startQteTimeline",
+      "UID": "cb446748-c1c6-4cdd-9abf-5d005649e011",
+      "target": "OWNER",
+      "NodeID": 25,
+      "qteGroupId": "QTE_Group_Avatar_Skill_FirstAid"
+    },
+    "12": {
+      "eventName": "qteGroupSuccess",
+      "NodeID": 12,
+      "UID": "0a498f10-fc75-4173-b75a-9eaf1ed057b5",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        11
+      ]
+    }
+  },
+  "BPName": "ability_9200003",
+  "NodeID": 15,
+  "UID": "01a2bfac-4301-4895-8a2a-4272a9b47ccc",
+  "eventIds": [
+    14
+  ],
+  "layer": "Base",
+  "length": 3
+}

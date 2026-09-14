@@ -1,0 +1,13 @@
+{
+  "FOLLOW": 10,
+  "FOLLOW_GIVEPET": 11,
+  "PVP": 4,
+  "TEAM": 3,
+  "TEAM_BOSS": 8,
+  "TEAM_DUNGEON": 7,
+  "ACTION": 9,
+  "CHAT": 2,
+  "EXCHANGE_PET": 6,
+  "VIST_WORLD": 5,
+  "VIST_HOMELAND": 1
+}

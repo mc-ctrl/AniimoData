@@ -1,0 +1,206 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2150301",
+  "NodeID": 1,
+  "UID": "418fe78f-c358-449e-b2c9-5394db265b78",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        3,
+        26
+      ],
+      "conditionActionIds": [
+        15
+      ],
+      "UID": "df4c29cc-eb58-4f44-be8f-000a265fda22",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "6": {
+      "UID": "203af52f-fc19-4a6f-ac3f-40a7b204078b",
+      "name": "registerAbilityEndEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "8": {
+      "key": "IsOnTarget",
+      "name": "setCacheVal",
+      "UID": "8dcf4f98-1563-4924-842c-1ca5c26cc913",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 8
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "name": "registerCastAbilityEvent",
+      "UID": "05c7bf47-79fb-4d56-aa2b-4993b5ae5ccb",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "11": {
+      "UID": "17deb1a1-118e-47aa-890e-c4fb7993f734",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        10
+      ],
+      "NodeID": 11
+    },
+    "20": {
+      "UID": "e6d3cfd6-00ff-48e0-88c9-d5ed12c6b3b0",
+      "name": "hideBossMechanismIconVX",
+      "NodeID": 20
+    },
+    "3": {
+      "target": "OWNER",
+      "duration": 3600,
+      "buffId": 215030101,
+      "NodeID": 3,
+      "UID": "20128a25-4205-46f2-8db5-17f49ddd1ea0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "23": {
+      "UID": "e90677da-1312-46a6-a549-7f90c0bfffed",
+      "name": "destroyBossMechanismIcon",
+      "NodeID": 23
+    },
+    "24": {
+      "buffId": 215030101,
+      "name": "removeBuff",
+      "UID": "efde21ef-8732-411d-bd1e-0bf84942eade",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "UID": "09d1676b-0c27-44f8-aee4-016ea23f83a7",
+      "name": "isNot",
+      "action": {
+        "rValue": 1,
+        "name": "equal",
+        "UID": "6f8e7415-befa-4b22-bb28-45f9447f8541",
+        "NodeID": 13,
+        "lValue": {
+          "key": "IsOnTarget",
+          "name": "getCacheVal",
+          "UID": "9e23c258-0530-4929-879b-f84bea72f50e",
+          "target": "OWNER",
+          "NodeID": 12
+        }
+      },
+      "NodeID": 14
+    },
+    "10": {
+      "key": "IsOnTarget",
+      "name": "setCacheVal",
+      "UID": "2bc99c6d-9653-4c04-b097-7bbccd7391f5",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "b894ad95-b113-48b8-9310-4e819866c7bb",
+      "conditionIds": [
+        14,
+        17,
+        27
+      ],
+      "name": "conditionAnd",
+      "NodeID": 15
+    },
+    "26": {
+      "value": {
+        "templateId": 215030101,
+        "name": "getBuffLayer",
+        "UID": "e1ecd924-abef-4494-bf92-dd38e39dcd2c",
+        "target": "OWNER",
+        "NodeID": 25
+      },
+      "name": "setBossMechanismIconProgress",
+      "UID": "2a78fea0-c2b3-4823-a1e8-9c4c76b3e4db",
+      "NodeID": 26,
+      "needFlash": true
+    },
+    "27": {
+      "name": "isInCombat",
+      "UID": "67b4f5a3-37ac-4057-9dd8-f8613971d866",
+      "target": "OWNER",
+      "NodeID": 27,
+      "not": false
+    },
+    "17": {
+      "UID": "70cc9b51-ab07-472a-b96a-c9818beaadbe",
+      "name": "isNot",
+      "action": {
+        "buffId": 2150106,
+        "name": "hasBuff",
+        "UID": "74d5db14-ef93-49df-b97f-8d6e3d62f6e6",
+        "target": "OWNER",
+        "NodeID": 16
+      },
+      "NodeID": 17
+    },
+    "29": {
+      "buffId": 2150106,
+      "name": "removeBuff",
+      "UID": "cd578388-62f5-4b37-8b85-3b51fce61502",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "18": {
+      "type": 1,
+      "max": 5,
+      "name": "initBossMechanismIcon",
+      "NodeID": 18,
+      "UID": "6a1e951d-3469-4aa3-a87d-b258b09d59d5",
+      "assetId": "$UI_Node_Hud_Boss_Property_Bear.prefab",
+      "initProgress": 0,
+      "needFlash": false
+    },
+    "19": {
+      "UID": "931a761a-664c-4323-9701-b18905f5185c",
+      "name": "registerEnterCombatEvent",
+      "actionIds": [
+        18
+      ],
+      "NodeID": 19
+    },
+    "28": {
+      "buffId": 2150303,
+      "name": "removeBuff",
+      "UID": "3547340d-4f66-49a8-a15a-c29f917f994e",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "22": {
+      "actionIds": [
+        20,
+        23,
+        24,
+        28,
+        29
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "f294c248-cbd8-4d3e-8536-48b8b3878ba0",
+      "target": "OWNER",
+      "NodeID": 22
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    19,
+    9,
+    11,
+    6,
+    22
+  ]
+}

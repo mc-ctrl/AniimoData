@@ -1,0 +1,40 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_91583012",
+  "name": "控制帽子模型显隐",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "calcId": 91583012,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "a4e967bf-c22d-4c41-b378-527528e9061f",
+      "name": "getParamByLuaConfig"
+    },
+    "4": {
+      "target": "OWNER",
+      "duration": 0,
+      "buffId": 91583011,
+      "NodeID": 4,
+      "UID": "fc5fa36e-bdf6-4503-8308-a1dac7193277",
+      "layer": {
+        "calcId": 91583012,
+        "calcType": 1,
+        "paramName": "param0",
+        "NodeID": 3,
+        "UID": "a4e967bf-c22d-4c41-b378-527528e9061f",
+        "name": "getParamByLuaConfig"
+      },
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4
+  ],
+  "NodeID": 1
+}

@@ -1,0 +1,286 @@
+{
+  "87848559": {
+    "graphId": 87848559,
+    "blackboard": {},
+    "connections": [
+      {
+        "isValuePort": false,
+        "sourceNode": 0,
+        "sourcePortName": "Out",
+        "targetNode": 1,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "1",
+        "targetNode": 2,
+        "targetPortName": "Start"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "2",
+        "targetNode": 4,
+        "targetPortName": "Start"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 1,
+        "sourcePortName": "3",
+        "targetNode": 6,
+        "targetPortName": "Start"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 2,
+        "sourcePortName": "Trigger",
+        "targetNode": 3,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 4,
+        "sourcePortName": "Trigger",
+        "targetNode": 5,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 6,
+        "sourcePortName": "Trigger",
+        "targetNode": 7,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 8,
+        "sourcePortName": "1",
+        "targetNode": 9,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 8,
+        "sourcePortName": "2",
+        "targetNode": 10,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 11,
+        "sourcePortName": "Out",
+        "targetNode": 12,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": true,
+        "sourceNode": 11,
+        "sourcePortName": "state",
+        "targetNode": 12,
+        "targetPortName": "Value"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 11,
+        "sourcePortName": "Init",
+        "targetNode": 12,
+        "targetPortName": "In"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 12,
+        "sourcePortName": "0",
+        "targetNode": 13,
+        "targetPortName": "in"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 12,
+        "sourcePortName": "1",
+        "targetNode": 14,
+        "targetPortName": "in"
+      },
+      {
+        "isValuePort": false,
+        "sourceNode": 12,
+        "sourcePortName": "2",
+        "targetNode": 15,
+        "targetPortName": "in"
+      }
+    ],
+    "isSandbox": true,
+    "md5": "70ee159ae6f6a320ed288a7715b956cf",
+    "nodes": {
+      "3": {
+        "_inputPortValues": {
+          "SpawnerId": 91112962,
+          "Pos": [
+            9.11,
+            30,
+            0
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "c64d7d38-2707-4f5b-a2b7-de4190802fda"
+      },
+      "4": {
+        "_inputPortValues": {
+          "CD": 5,
+          "MaxCount": -1,
+          "AllowRestart": false
+        },
+        "_outputPortValues": [
+          "Count"
+        ],
+        "className": "PeriodicTriggerNode",
+        "uid": "20cfb7a4-e84e-4c5f-bd11-28e5b0ce0847"
+      },
+      "14": {
+        "_inputPortValues": {
+          "Text1": "状态2"
+        },
+        "_outputPortValues": {},
+        "className": "DebugPrintNode",
+        "textCount": 1,
+        "uid": "2c023c74-3b6e-482f-9a01-3d20a3f94796"
+      },
+      "6": {
+        "_inputPortValues": {
+          "CD": 5,
+          "MaxCount": -1,
+          "AllowRestart": false
+        },
+        "_outputPortValues": [
+          "Count"
+        ],
+        "className": "PeriodicTriggerNode",
+        "uid": "5adb4350-7c8d-41e0-8b58-666f8fb0a253"
+      },
+      "10": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "levelItemId": 91112953,
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "actorId",
+          "entityId"
+        ],
+        "className": "ListenTriggerNode",
+        "uid": "18038505-ca2f-4ea4-ad59-8ba90e6aaaf6"
+      },
+      "15": {
+        "_inputPortValues": {
+          "Text1": "状态3"
+        },
+        "_outputPortValues": {},
+        "className": "DebugPrintNode",
+        "textCount": 1,
+        "uid": "50711cb4-fb4f-4832-ab2e-6317caf51a23"
+      },
+      "7": {
+        "_inputPortValues": {
+          "SpawnerId": 91115724,
+          "Pos": [
+            9,
+            25,
+            17
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "23dfda6b-1024-44b0-a392-974f5dcef056"
+      },
+      "13": {
+        "_inputPortValues": {
+          "Text1": "状态1"
+        },
+        "_outputPortValues": {},
+        "className": "DebugPrintNode",
+        "textCount": 1,
+        "uid": "dbe75ee2-3257-490f-a3eb-ede8e338856f"
+      },
+      "8": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "1101057f-ba48-4c3f-9e80-f293c6f39fe1",
+        "portCount": 5
+      },
+      "12": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "SwitchIntNode",
+        "startInt": 0,
+        "uid": "ff0f5596-c778-49af-b743-96b95ace21b9",
+        "endInt": 2
+      },
+      "9": {
+        "_inputPortValues": {
+          "DoOnce": false,
+          "TimeOutSecond": 0,
+          "EventName": "onSpawnerDeath"
+        },
+        "_outputPortValues": {},
+        "className": "ListenerEventNode",
+        "eventParams": {
+          "spawnerId": 91112962
+        },
+        "uid": "8c9c956a-714f-442d-a0dd-af36f6229102"
+      },
+      "11": {
+        "_inputPortValues": {
+          "LevelItemId": 87846804,
+          "DoOnce": false,
+          "fieldName": "state",
+          "TimeOutSecond": 0
+        },
+        "_outputPortValues": [
+          "state"
+        ],
+        "className": "ListenLevelItemFieldChangeNode",
+        "uid": "a5add4a5-1542-4081-b898-bd8cc73772e5"
+      },
+      "5": {
+        "_inputPortValues": {
+          "SpawnerId": 91115722,
+          "Pos": [
+            9.11,
+            45,
+            9
+          ]
+        },
+        "_outputPortValues": {},
+        "className": "CreateSpawnerNode",
+        "uid": "70502eea-442b-4604-b64e-8194a172f425"
+      },
+      "0": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerGraphStartNode",
+        "uid": "c1f68f44-bf1c-464d-9534-236adb4d96c0"
+      },
+      "1": {
+        "_inputPortValues": {},
+        "_outputPortValues": {},
+        "className": "ServerFlowSplit",
+        "uid": "ea7c8a82-f3df-4e6a-acbb-0ee0ce6b6044",
+        "portCount": 5
+      },
+      "2": {
+        "_inputPortValues": {
+          "CD": 5,
+          "MaxCount": -1,
+          "AllowRestart": false
+        },
+        "_outputPortValues": [
+          "Count"
+        ],
+        "className": "PeriodicTriggerNode",
+        "uid": "9ace1872-2821-49a2-935b-0ae52edc8e24"
+      }
+    }
+  }
+}

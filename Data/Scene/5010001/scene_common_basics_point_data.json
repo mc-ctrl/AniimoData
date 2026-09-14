@@ -1,0 +1,457 @@
+{
+  "72822069": {
+    "name": "基础点位_72822069",
+    "rotation": [
+      0,
+      95,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246,
+    "id": 72822069,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        48.79,
+        126.05,
+        1143.49
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      48.79,
+      126.05,
+      1143.49
+    ]
+  },
+  "72887644": {
+    "id": 72887644,
+    "logics": {},
+    "pointType": 2,
+    "name": "妮可走向点位_72887644",
+    "position": [
+      40.91,
+      125,
+      1146.38
+    ],
+    "rotation": [
+      0,
+      253.33,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246
+  },
+  "66657016": {
+    "id": 66657016,
+    "logics": {},
+    "pointType": 2,
+    "name": "校长室到达_66657016",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3.2
+      ],
+      "position": [
+        47.81,
+        126.13,
+        1147.41
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      47.81,
+      126.13,
+      1147.41
+    ],
+    "sandboxId": 66656971
+  },
+  "66657017": {
+    "id": 66657017,
+    "logics": {},
+    "pointType": 2,
+    "name": "宠物区到达检测_66657017",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        5
+      ],
+      "position": [
+        57.27,
+        125.56,
+        1150.93
+      ],
+      "name": "宠物区",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      57.27,
+      125.56,
+      1150.93
+    ],
+    "sandboxId": 66656971
+  },
+  "73821207": {
+    "id": 73821207,
+    "logics": {},
+    "pointType": 2,
+    "name": "利威尔补光点位_73821207",
+    "position": [
+      47.48,
+      126.64,
+      1144.16
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246
+  },
+  "66657019": {
+    "id": 66657019,
+    "logics": {},
+    "pointType": 2,
+    "name": "校长室传送点_66657019",
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        40.1,
+        125.2,
+        1164.61
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "position": [
+      40.1,
+      125.2,
+      1164.61
+    ],
+    "sandboxId": 66656971
+  },
+  "66657020": {
+    "id": 66657020,
+    "logics": {},
+    "pointType": 2,
+    "name": "狐狸定位点_66657020",
+    "position": [
+      58.17,
+      124.67,
+      1150.94
+    ],
+    "rotation": [
+      0,
+      242.12,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 66656971
+  },
+  "66657021": {
+    "id": 66657021,
+    "logics": {},
+    "pointType": 2,
+    "name": "狮子定位点_64593523",
+    "position": [
+      56.71,
+      124.67,
+      1152.41
+    ],
+    "rotation": [
+      0,
+      230.97,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 66656971
+  },
+  "66657022": {
+    "id": 66657022,
+    "logics": {},
+    "pointType": 2,
+    "name": "妮可定位点_64593523",
+    "position": [
+      47.89,
+      124.65,
+      1148.22
+    ],
+    "rotation": [
+      0,
+      185.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 66656971
+  },
+  "66657023": {
+    "id": 66657023,
+    "logics": {},
+    "pointType": 2,
+    "name": "利威尔定位点_64593523",
+    "position": [
+      47.04,
+      124.61,
+      1146.83
+    ],
+    "rotation": [
+      0,
+      1.45,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 66656971
+  },
+  "72128651": {
+    "name": "基础点位_72128651",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246,
+    "id": 72128651,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        1.5
+      ],
+      "position": [
+        47.66,
+        124.61,
+        1145.37
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      47.66,
+      124.61,
+      1145.37
+    ]
+  },
+  "72128652": {
+    "name": "校长室传送点_66657019",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246,
+    "id": 72128652,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        3
+      ],
+      "position": [
+        40.1,
+        125.2,
+        1164.61
+      ],
+      "name": "",
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      40.1,
+      125.2,
+      1164.61
+    ]
+  },
+  "72134794": {
+    "id": 72134794,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72134794",
+    "position": [
+      50.82,
+      125,
+      1143.91
+    ],
+    "rotation": [
+      0,
+      239.1,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246
+  },
+  "72135732": {
+    "name": "基础点位_72135732",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246,
+    "id": 72135732,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2.5
+      ],
+      "position": [
+        56.11,
+        125.63,
+        1152.96
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      56.11,
+      125.63,
+      1152.96
+    ]
+  },
+  "72138778": {
+    "id": 72138778,
+    "logics": {},
+    "pointType": 2,
+    "name": "基础点位_72138778",
+    "position": [
+      40.14,
+      124.63,
+      1163.96
+    ],
+    "rotation": [
+      0,
+      338.3,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246
+  },
+  "72335619": {
+    "id": 72335619,
+    "logics": {},
+    "pointType": 2,
+    "name": "利威尔转身点位_72335619",
+    "position": [
+      46.95,
+      125,
+      1143.6
+    ],
+    "rotation": [
+      0,
+      36.99,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246
+  },
+  "73764910": {
+    "name": "基础点位_73764910",
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246,
+    "id": 73764910,
+    "logics": {},
+    "pointType": 2,
+    "targetPositionData": {
+      "hookType": 0,
+      "isTargetPosition": true,
+      "arriveParam": [
+        2
+      ],
+      "position": [
+        39.7,
+        125,
+        1145.9
+      ],
+      "arriveType": 1,
+      "author": "worldx_ch"
+    },
+    "position": [
+      39.7,
+      125,
+      1145.9
+    ]
+  },
+  "72339221": {
+    "id": 72339221,
+    "logics": {},
+    "pointType": 2,
+    "name": "玩家移动点位_72339221",
+    "position": [
+      48.49,
+      124.61,
+      1145.9
+    ],
+    "rotation": [
+      0,
+      163.9,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246
+  },
+  "72887645": {
+    "id": 72887645,
+    "logics": {},
+    "pointType": 2,
+    "name": "玩家走向点位_72887645",
+    "position": [
+      41.09,
+      125,
+      1145.45
+    ],
+    "rotation": [
+      0,
+      273.6,
+      0
+    ],
+    "entityType": 0,
+    "sandboxId": 72102246
+  }
+}

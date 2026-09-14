@@ -1,0 +1,494 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114303",
+  "NodeID": 1,
+  "UID": "2ea184be-47f0-45d4-9cc7-bf1cf4a63278",
+  "onBuffRefreshIds": [
+    32,
+    33,
+    13,
+    3,
+    23,
+    34,
+    27,
+    22,
+    10,
+    17,
+    30,
+    31,
+    37
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "37": {
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": 0.35
+      },
+      "isClearOld": true,
+      "UID": "05a30f4b-bd86-4532-ba43-d40386601f29",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "40a15ecd-9579-4163-b5c9-3ef7e60d874b",
+      "name": "clearBuffDynamicAttribute",
+      "NodeID": 38
+    },
+    "39": {
+      "value": 3,
+      "name": "setBossMechanismIconProgress",
+      "UID": "e0f09cc9-8b4c-406d-819f-4a42ef622e3c",
+      "NodeID": 39,
+      "needFlash": true
+    },
+    "40": {
+      "UID": "4fe4e386-1b1b-422c-ad7e-688bd71704bb",
+      "name": "showBossMechanismIconVX",
+      "NodeID": 40
+    },
+    "41": {
+      "UID": "a9d046cd-bac9-43a1-899f-ca8032a3a41c",
+      "name": "hideBossMechanismIconVX",
+      "NodeID": 41
+    },
+    "42": {
+      "type": 1,
+      "max": 38.7,
+      "name": "initBossMechanismIcon",
+      "NodeID": 42,
+      "UID": "66886873-f3b2-470b-91c8-193013e32414",
+      "assetId": "$UI_Node_Hud_Boss_Property_Lightning.prefab",
+      "initProgress": 38.7,
+      "needFlash": false
+    },
+    "43": {
+      "delay": 0,
+      "interval": 0.1,
+      "UID": "44197738-01dd-443b-8eeb-e573511de925",
+      "name": "buffStartThink",
+      "NodeID": 43
+    },
+    "44": {
+      "type": 2,
+      "max": 3,
+      "name": "initBossMechanismIcon",
+      "NodeID": 44,
+      "UID": "a5eb24cd-09e7-4e59-88c4-fc32cdb58788",
+      "assetId": "$UI_Node_Hud_Boss_Property_Lightning.prefab",
+      "initProgress": 0,
+      "needFlash": true
+    },
+    "3": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "4f28946a-649f-47d0-b22c-4416f69cad4b",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_Red",
+      "speed": 1,
+      "NodeID": 3
+    },
+    "58": {
+      "actionIds": [
+        57
+      ],
+      "name": "actOnTargets",
+      "UID": "a0119e69-db16-435f-b73d-8d8b3a5c1068",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            30,
+            10,
+            10
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "NodeID": 58
+    },
+    "57": {
+      "petTarget": "OWNER",
+      "triggerId": 1014303,
+      "name": "onEntityTrigger",
+      "UID": "1a97c0e5-b3a7-40cc-8ec5-9c9788c9bcce",
+      "target": "TARGET",
+      "NodeID": 57
+    },
+    "55": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "fba7a577-2b30-44c0-945c-3aa14c86eb6a",
+      "NodeID": 55,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "12082057-a26c-4451-b550-acfb77f1ae66",
+          "target": "OWNER",
+          "NodeID": 56,
+          "attributeName": "bp_max_cur"
+        },
+        "name": "div",
+        "UID": "17bebc6c-bc93-4a56-aaa0-d68e807313e7",
+        "NodeID": 54,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "4290b3aa-57a5-4fdc-a70d-a04acacd36ed",
+          "target": "OWNER",
+          "NodeID": 53,
+          "attributeName": "bp_cur"
+        }
+      }
+    },
+    "54": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "12082057-a26c-4451-b550-acfb77f1ae66",
+        "target": "OWNER",
+        "NodeID": 56,
+        "attributeName": "bp_max_cur"
+      },
+      "name": "div",
+      "UID": "17bebc6c-bc93-4a56-aaa0-d68e807313e7",
+      "NodeID": 54,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "4290b3aa-57a5-4fdc-a70d-a04acacd36ed",
+        "target": "OWNER",
+        "NodeID": 53,
+        "attributeName": "bp_cur"
+      }
+    },
+    "51": {
+      "rValue": 1,
+      "name": "equal",
+      "UID": "f4799ea4-f953-4e99-9691-4c0f9ea05a01",
+      "NodeID": 51,
+      "lValue": {
+        "rValue": {
+          "name": "getAttribute",
+          "UID": "22a999c2-3dbe-40cf-b30d-375674fd08be",
+          "target": "OWNER",
+          "NodeID": 52,
+          "attributeName": "bp_max_cur"
+        },
+        "name": "div",
+        "UID": "ff0258f7-4d22-47d2-a179-dcc9cd1a63d9",
+        "NodeID": 50,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "4fb11e0b-d306-4f1c-8366-ed18feca08cd",
+          "target": "OWNER",
+          "NodeID": 49,
+          "attributeName": "bp_cur"
+        }
+      }
+    },
+    "50": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "22a999c2-3dbe-40cf-b30d-375674fd08be",
+        "target": "OWNER",
+        "NodeID": 52,
+        "attributeName": "bp_max_cur"
+      },
+      "name": "div",
+      "UID": "ff0258f7-4d22-47d2-a179-dcc9cd1a63d9",
+      "NodeID": 50,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "4fb11e0b-d306-4f1c-8366-ed18feca08cd",
+        "target": "OWNER",
+        "NodeID": 49,
+        "attributeName": "bp_cur"
+      }
+    },
+    "48": {
+      "key": "10143electric",
+      "name": "setCacheVal",
+      "UID": "9f7a21f1-41cb-4f8d-80ce-af11b0e2db3e",
+      "target": "OWNER",
+      "val": 0,
+      "NodeID": 48
+    },
+    "7": {
+      "name": "stopEffectStr",
+      "UID": "8fbe85aa-4ddf-49ec-aa66-15f11aadffd5",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_White",
+      "target": "OWNER",
+      "NodeID": 7
+    },
+    "46": {
+      "UID": "6e74a1c7-3b44-41d5-b412-1f24ce4601e5",
+      "value": {
+        "templateId": 2114303,
+        "name": "getBuffRemainingTime",
+        "UID": "9107810e-f8d1-412f-aeee-ee19907b53ca",
+        "target": "OWNER",
+        "NodeID": 45
+      },
+      "name": "setBossMechanismIconProgress",
+      "NodeID": 46
+    },
+    "45": {
+      "templateId": 2114303,
+      "name": "getBuffRemainingTime",
+      "UID": "9107810e-f8d1-412f-aeee-ee19907b53ca",
+      "target": "OWNER",
+      "NodeID": 45
+    },
+    "31": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "dca82fd0-d7e0-44cc-ae5e-fdfb461c1d74",
+      "effectId": "Eff_Parmon_10143_Skill_Charge03",
+      "speed": 1,
+      "NodeID": 31
+    },
+    "9": {
+      "conditionActionIds": [
+        51
+      ],
+      "UID": "87f5e538-6bec-4fbf-9c7e-819e698acb34",
+      "name": "doActionsByConditions",
+      "NodeID": 9,
+      "elseActionIds": [
+        14,
+        7,
+        42,
+        40,
+        58,
+        43
+      ]
+    },
+    "23": {
+      "duration": 2.5,
+      "name": "frameFreeze",
+      "UID": "fd2f84a1-7134-436c-9bc3-66ea770067c9",
+      "target": "OWNER",
+      "timeScale": 0.35,
+      "NodeID": 23
+    },
+    "17": {
+      "key": "10143electric",
+      "name": "setCacheVal",
+      "UID": "5ef3f831-f419-4fa4-a5d2-67ae1241e538",
+      "target": "OWNER",
+      "val": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "27db7bc5-feba-40db-b47b-459891993814",
+        "NodeID": 16,
+        "lValue": {
+          "key": "10143electric",
+          "name": "getCacheVal",
+          "UID": "384966e9-622c-4354-b3a6-8fc223661fa8",
+          "target": "OWNER",
+          "NodeID": 15
+        }
+      },
+      "NodeID": 17
+    },
+    "11": {
+      "name": "stopEffectStr",
+      "UID": "1b598518-0350-4172-b2ae-d09832864f3f",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Light_Red",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "19": {
+      "key": "ele01",
+      "duration": 0.4,
+      "actionIds": [
+        18
+      ],
+      "NodeID": 19,
+      "UID": "b949c0f8-77fe-42d7-aa98-4473fb8ad114",
+      "name": "addEntityTimer"
+    },
+    "21": {
+      "conditionActionIds": [
+        55
+      ],
+      "UID": "6657386a-eb74-4aa8-87b5-1b5fc16e2f88",
+      "name": "doActionsByConditions",
+      "NodeID": 21,
+      "elseActionIds": [
+        19,
+        28
+      ]
+    },
+    "22": {
+      "key": "ele",
+      "duration": 0.8,
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "713a70ff-8820-4e76-8675-5f82c57f6185",
+      "name": "addEntityTimer"
+    },
+    "13": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "90891287-3873-4a9b-9539-c7413c7ae0f0",
+      "target": "OWNER",
+      "NodeID": 13,
+      "animId": "Boss_Skill_Field"
+    },
+    "24": {
+      "name": "stopEffectStr",
+      "UID": "f5a8b752-c73f-42f5-bfe0-fed40350ab42",
+      "effectId": "Eff_Parmon_10143_Skill_Shield_Spark",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "14": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "595a39f6-15a1-4a7b-adaa-e0694e7bdc92",
+      "effectId": "Eff_Parmon_10143_Skill_Charge",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "10": {
+      "key": "delay",
+      "duration": 1.3,
+      "actionIds": [
+        9
+      ],
+      "NodeID": 10,
+      "UID": "7cb54482-233f-423a-bf3c-848fc0faf5da",
+      "name": "addEntityTimer"
+    },
+    "18": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7696f632-98fd-4c5b-901b-bfea5ce3600a",
+      "effectId": "Eff_Parmon_10143_Skill_Shield_Spark",
+      "speed": 1,
+      "NodeID": 18
+    },
+    "25": {
+      "name": "stopEffectStr",
+      "UID": "3f80fdd9-04ca-452f-8d65-1a63f5cffd5c",
+      "effectId": "Eff_Parmon_10143_Skill_Charge",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "8bc1ad3b-63bd-4435-b4c2-513fe2149d09",
+      "name": "stopAnimation",
+      "anim": "Skill_HaloMax",
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f8997a7c-d7cd-4cb3-a526-d72d85167576",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Parmon_10143_Skill_Field_Star",
+      "NodeID": 27
+    },
+    "28": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "f1606c68-85c0-4fe1-bd45-b4e3889a4858",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10222_Skill_Spark_Start",
+      "NodeID": 28
+    },
+    "29": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "64e9ef4f-c215-4d83-ab2b-6ea466ff14de",
+      "effectId": "Eff_Parmon_10143_Skill_Ex_Star",
+      "speed": 1,
+      "NodeID": 29
+    },
+    "30": {
+      "key": "light",
+      "duration": 1.1,
+      "actionIds": [
+        29
+      ],
+      "NodeID": 30,
+      "UID": "b9b28b53-615a-4718-ac83-e6c7738c3d5a",
+      "name": "addEntityTimer"
+    },
+    "32": {
+      "name": "stopEffectStr",
+      "UID": "c7ac79c8-d9f1-4d4c-bf34-62c66eb33f24",
+      "effectId": "Eff_Parmon_10143_Skill_Charge02",
+      "target": "OWNER",
+      "NodeID": 32
+    },
+    "33": {
+      "name": "stopEffectStr",
+      "UID": "cc488d6b-74c5-46a1-846e-99d98d2a70da",
+      "effectId": "Eff_Parmon_10143_Skill_Charge01",
+      "target": "OWNER",
+      "NodeID": 33
+    },
+    "34": {
+      "UID": "af3cd0b5-8e33-4933-a243-4698ac697c37",
+      "name": "showBossMechanismTip",
+      "id": 2009,
+      "NodeID": 34
+    },
+    "35": {
+      "UID": "a2aba3ff-7efd-403f-ac67-9e2a578c68bc",
+      "name": "hideBossMechanismTip",
+      "id": 2009,
+      "NodeID": 35
+    }
+  },
+  "onBuffThinkIds": [
+    46,
+    58
+  ],
+  "onBuffDestroyIds": [
+    11,
+    24,
+    25,
+    26,
+    38,
+    35,
+    44,
+    41
+  ],
+  "onBuffStartIds": [
+    39,
+    32,
+    33,
+    13,
+    3,
+    23,
+    34,
+    27,
+    22,
+    10,
+    17,
+    30,
+    31,
+    37,
+    48
+  ]
+}

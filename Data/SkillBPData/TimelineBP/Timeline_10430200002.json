@@ -1,0 +1,141 @@
+{
+  "nodeMap": {
+    "37": {
+      "cameraShakeId": 21104,
+      "name": "playCameraImpulseById",
+      "UID": "a83fc95b-481e-47a4-8692-d34daec5ceee",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          63,
+          37
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 39,
+      "UID": "faeb040c-ff21-4034-b0d4-e7b94f5c5868"
+    },
+    "63": {
+      "rotation": "ToAim",
+      "offsetXYZ": [
+        0,
+        0.8,
+        2.5
+      ],
+      "templateId": 10430200001,
+      "name": "createProjectile",
+      "UID": "8ae99a26-fc2f-41c9-86ce-795b3130e296",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 63
+    },
+    "101": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 101,
+      "UID": "850a200e-0398-4125-a5c6-54c76f2b725b",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "99": {
+      "UID": "fc2e62d7-a8dd-45a8-8ffe-4929ff0a0b40",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 99
+    },
+    "100": {
+      "action": {
+        "actionIds": [
+          99
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.7,
+      "NodeID": 100,
+      "UID": "b68e6f7f-bd89-46e6-a437-ad63e86da5a8"
+    },
+    "106": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 106,
+      "UID": "38b0bf6f-5d07-4268-9d93-f819ef1e72e5",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "102": {
+      "action": {
+        "actionIds": [
+          101
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.3,
+      "NodeID": 102,
+      "UID": "82f76e0a-f080-4f25-887f-cfbdf54bd6ec"
+    },
+    "105": {
+      "UID": "75da78f1-3746-4919-b985-b76edc3d805c",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          104
+        ]
+      },
+      "NodeID": 105
+    },
+    "103": {
+      "UID": "2aff77f9-1236-4806-bb93-d6576ef1199a",
+      "name": "checkIsInAutoAim",
+      "NodeID": 103
+    },
+    "104": {
+      "actionIds": [
+        106
+      ],
+      "conditionActionIds": [
+        103
+      ],
+      "UID": "311d5daf-7fa4-417d-873d-e440e47f56f9",
+      "name": "doActionsByConditions",
+      "NodeID": 104
+    }
+  },
+  "BPName": "ability_10430200",
+  "NodeID": 41,
+  "UID": "769b08c0-e9b6-4d88-9651-d246d9536219",
+  "eventIds": [
+    39,
+    100,
+    102,
+    105
+  ],
+  "layer": "Base",
+  "length": 2.3
+}

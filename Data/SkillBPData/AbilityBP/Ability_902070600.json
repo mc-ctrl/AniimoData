@@ -1,0 +1,32 @@
+{
+  "preloadAnims": [
+    "WeakStart",
+    "WeakLoop",
+    "WeakEnd"
+  ],
+  "searchTargetRangeRadius": 3,
+  "BPName": "ability_902070600",
+  "name": "",
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "searchTargetRangeUp": 1.5,
+  "abilityParamId": 10600240,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "searchTargetRangeDown": 0.5,
+  "checkExistBurrow": false,
+  "searchRelation": 2,
+  "nodeMap": {
+    "8": {
+      "timelineId": 902070600001,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "NodeID": 1
+}

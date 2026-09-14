@@ -1,0 +1,45 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2117406",
+  "NodeID": 1,
+  "UID": "9accfbf5-4542-4fb3-b3f5-9b9e874a7396",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "6": {
+      "UID": "7eef4cdd-fd94-459f-bf89-a0a1825936b5",
+      "name": "print",
+      "NodeID": 6
+    }
+  },
+  "calcInfo": {
+    "atk_cur": {
+      "rValue": {
+        "name": "getAttribute",
+        "UID": "dd5ccf5d-a49c-4ad4-8b27-6c7b89f3434e",
+        "target": "OWNER",
+        "NodeID": 7,
+        "attributeName": "atk_cur"
+      },
+      "name": "sub",
+      "UID": "abb3ddf2-6470-453c-b4b1-50160ec1631c",
+      "NodeID": 4,
+      "lValue": {
+        "rValue": 0.04,
+        "name": "multiply",
+        "UID": "6fd32166-1f87-4b0c-9f69-72a830446697",
+        "NodeID": 3,
+        "lValue": {
+          "name": "getAttribute",
+          "UID": "fdb5b67d-89b2-4af2-ab10-6c7f53234448",
+          "target": "OWNER",
+          "NodeID": 2,
+          "attributeName": "hp_max_cur"
+        }
+      }
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "rank": 1,
+    "icon": "$UI_Img_PlayerInfoCard_IconHomepage.png",
+    "responseFunc": "profilePage",
+    "name": 1188240652
+  },
+  {
+    "responseFunc": "createNewChat",
+    "name": 1978930030,
+    "rank": 5,
+    "icon": "$UI_Img_PlayerInfoCard_IconChat.png",
+    "checkCommonSwitch": "CHAT"
+  },
+  {
+    "responseFunc": "teamHandle",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "name": 1813633307,
+    "rank": 4,
+    "icon": "$UI_Img_PlayerInfoCard_IconTeamInvite.png"
+  },
+  {
+    "responseFunc": "addFriend",
+    "checkFunc": "checkNoFriendState",
+    "name": 1852204718,
+    "rank": 2,
+    "icon": "$UI_Img_PlayerInfoCard_IconAddFriend_1.png",
+    "checkCommonSwitch": "CHAT"
+  },
+  {
+    "responseFunc": "meetFriend",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "name": 1940808838,
+    "rank": 10,
+    "icon": "$UI_Img_PlayerInfoCard_IconCome.png"
+  },
+  {
+    "responseFunc": "comeToPlayer",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkCanComeToPlayer",
+    "name": 1324675125,
+    "rank": 11,
+    "icon": "$UI_Icon_TeamRoom_Go.png"
+  },
+  {
+    "responseFunc": "giveGift",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkFriendState",
+    "name": 1236397356,
+    "rank": 7,
+    "icon": "$UI_Img_PlayerInfoCard_IconBox.png",
+    "checkCommonSwitch": "SEND_GIFT"
+  },
+  {
+    "responseFunc": "petExchange",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "name": 1738150405,
+    "rank": 8,
+    "icon": "$UI_Img_PlayerInfoCard_IconImoExchange.png",
+    "checkCommonSwitch": "PET_EXCHANGE"
+  },
+  {
+    "responseFunc": "leaveLeaderWorld",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkSameWorld",
+    "name": 2101408287,
+    "rank": 12,
+    "icon": "$UI_Img_PlayerInfoCard_IconEarth2.png"
+  },
+  {
+    "responseFunc": "visitHome",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkinsameworld",
+    "name": 1862824048,
+    "rank": 6,
+    "icon": "$UI_Img_PlayerInfoCard_IconHouse.png"
+  },
+  {
+    "responseFunc": "removeFriend",
+    "checkFunc": "checkFriendState",
+    "name": 1398862872,
+    "rank": 15,
+    "icon": "$UI_Img_PlayerInfoCard_IconPersonX.png",
+    "checkCommonSwitch": "CHAT"
+  },
+  {
+    "responseFunc": "delBlacklist",
+    "checkFunc": "checkOutblacklist",
+    "name": 1269192748,
+    "rank": 16,
+    "icon": "$UI_Img_PlayerInfoCard_IconPerson1.png"
+  },
+  {
+    "responseFunc": "addBlacklist",
+    "checkFunc": "checkInBlacklist",
+    "name": 1190745479,
+    "rank": 17,
+    "icon": "$UI_Img_PlayerInfoCard_IconPersonCircle.png"
+  },
+  {
+    "rank": 18,
+    "icon": "$UI_Img_PlayerInfoCard_IconExclamation.png",
+    "responseFunc": "reportChat",
+    "name": 1745944612
+  },
+  {
+    "responseFunc": "setRemark",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkFriendState",
+    "name": 1364260265,
+    "rank": 13,
+    "icon": "$UI_Img_PlayerInfoCard_IconEditNote.png",
+    "checkCommonSwitch": "CHAT"
+  },
+  {
+    "responseFunc": "changeFriendGroup",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkCanChangeFriendGroup",
+    "name": 2030799699,
+    "rank": 14,
+    "icon": "$UI_Img_PlayerInfoCard_IconEditGroup.png",
+    "checkCommonSwitch": "CHAT"
+  },
+  {
+    "responseFunc": "platformProfile",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkPlatformProfileCard",
+    "name": 2140382212,
+    "rank": 0
+  },
+  {
+    "responseFunc": "inviteTeamFollow",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "onlyFaceToFace": 1,
+    "name": 1281960334,
+    "rank": 19,
+    "icon": "$UI_Icon_Friend_InviteToTravel_1.png",
+    "checkFunc": "checkCanInviteTeamFollow"
+  },
+  {
+    "responseFunc": "joinTeamFollow",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "onlyFaceToFace": 1,
+    "name": 1294085471,
+    "rank": 20,
+    "icon": "$UI_Icon_Friend_ApplyToTravel_1.png",
+    "checkFunc": "checkCanJoinTeamFollow"
+  },
+  {
+    "responseFunc": "openEmoticonPanel",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "onlyFaceToFace": 1,
+    "name": 1564595048,
+    "rank": 21,
+    "icon": "$UI_Img_PlayerInfoCard_IconInteraction.png",
+    "checkFunc": "checkCanOpenEmoticonPanel"
+  },
+  {
+    "responseFunc": "petVariantInteract",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "name": 1193732555,
+    "rank": 9,
+    "icon": "$UI_Img_PlayerInfoCard_IconNormal.png",
+    "checkCommonSwitch": "PET_VARIANT_INTERACT"
+  },
+  {
+    "responseFunc": "openFriendTree",
+    "sceneTypeLimit": [
+      1,
+      2,
+      3,
+      16,
+      18
+    ],
+    "checkFunc": "checkFriendState",
+    "name": 1115914352,
+    "rank": 3,
+    "checkCommonSwitch": "CHAT"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "BPName": "ability_12220801",
+  "NodeID": 1,
+  "UID": "7bd07315-993d-4f5c-a542-05fad4384a6f",
+  "abilityParamId": 10400267,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "9": {
+      "timelineId": 12220801001,
+      "name": "setCombatActionTimeline",
+      "UID": "516b3b08-ce7b-489a-a90c-755cbb3e6bec",
+      "target": "CASTER",
+      "NodeID": 9
+    }
+  },
+  "onAbilityCastIds": [
+    9
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "JumpBack"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 3,
+  "subAbilityIds": [
+    10120521
+  ],
+  "notCastInState": [
+    "SKILL_GLIDING_ST"
+  ],
+  "searchTargetRangeDown": 2
+}

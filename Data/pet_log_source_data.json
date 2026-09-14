@@ -1,0 +1,98 @@
+{
+  "5": {
+    "logName": "PET_FROM_GM"
+  },
+  "101": {
+    "logName": "PET_REMOVE_RECYCLE"
+  },
+  "20": {
+    "logName": "PET_FROM_TRADE_BUY"
+  },
+  "6": {
+    "logName": "PET_FROM_EGG"
+  },
+  "999999": {
+    "logName": "PET_FROM_NONE"
+  },
+  "103": {
+    "logName": "PET_REMOVE_EXCHANGE"
+  },
+  "7": {
+    "logName": "PET_FROM_EVENT"
+  },
+  "106": {
+    "logName": "PET_REMOVE_REASON_GIVE_TO_FOLLOWER"
+  },
+  "8": {
+    "logName": "PET_FROM_DROP"
+  },
+  "100": {
+    "logName": "PET_REMOVE_GM"
+  },
+  "9": {
+    "logName": "PET_FROM_MAIL"
+  },
+  "104": {
+    "logName": "PET_REMOVE_EVENT"
+  },
+  "102": {
+    "logName": "PET_REMOVE_SUBMIT"
+  },
+  "11": {
+    "logName": "PET_FROM_EXCHANGE"
+  },
+  "1": {
+    "logName": "PET_FROM_BATTLE"
+  },
+  "12": {
+    "logName": "PET_FROM_LEGACY_IMPORT"
+  },
+  "3": {
+    "logName": "PET_FROM_CATCH_SMALLBALL"
+  },
+  "4": {
+    "logName": "PET_FROM_CATCH_TRAP"
+  },
+  "105": {
+    "logName": "PET_REMOVE_LEGACY_EXPORT"
+  },
+  "14": {
+    "logName": "PET_FROM_GIVE"
+  },
+  "10": {
+    "logName": "PET_FROM_EVOLVE"
+  },
+  "15": {
+    "logName": "PET_FROM_FISHING_CAPTURE"
+  },
+  "107": {
+    "logName": "PET_REMOVE_CHANGE_FORM"
+  },
+  "16": {
+    "logName": "PET_FROM_RESTORE_RELEASE"
+  },
+  "108": {
+    "logName": "PET_REMOVE_EVOLVE"
+  },
+  "17": {
+    "logName": "PET_FROM_NORMAL_EGG"
+  },
+  "109": {
+    "logName": "PET_REMOVE_CONSUME_TRADE_LIST"
+  },
+  "18": {
+    "logName": "PET_FROM_CHANGE_FORM"
+  },
+  "2": {
+    "logName": "PET_FROM_CATCH_BIGBALL"
+  },
+  "19": {
+    "logName": "PET_FROM_TRADE_LIST_BACK"
+  },
+  "0": {
+    "logName": "PET_FROM_INIT"
+  },
+  "13": {
+    "logName": "PET_FROM_HOMELAND_EGG"
+  }
+}

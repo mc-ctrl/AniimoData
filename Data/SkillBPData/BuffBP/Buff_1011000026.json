@@ -1,0 +1,69 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "offsetXYZ": [
+        5,
+        0,
+        5
+      ],
+      "templateId": 70030031,
+      "name": "createEntity",
+      "UID": "261e4677-a4b3-4c2f-9ffb-e7320905cbe9",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "pos": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "setLevel": true,
+      "NodeID": 5
+    },
+    "4": {
+      "actionIds": [
+        2,
+        5
+      ],
+      "name": "registerDeadEvent",
+      "UID": "9fbacaba-62d0-43d1-9568-f24dc0897258",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "2": {
+      "offsetXYZ": [
+        -5,
+        0,
+        5
+      ],
+      "templateId": 70030031,
+      "name": "createEntity",
+      "UID": "f43b0852-6931-412b-9531-527e74a8827c",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "bornHp": 0,
+      "stick": 0,
+      "pos": "OWNER",
+      "entityName": "Puppet",
+      "followMasterCamp": true,
+      "rot": "OWNER",
+      "setLevel": true,
+      "NodeID": 2
+    }
+  },
+  "BPName": "buff_1011000026",
+  "dynamicRPCStates": {},
+  "UID": "8d39860f-b6a1-48ab-aeb6-76f2d89d1be4",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

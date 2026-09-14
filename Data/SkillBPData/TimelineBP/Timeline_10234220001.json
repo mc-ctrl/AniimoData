@@ -1,0 +1,80 @@
+{
+  "nodeMap": {
+    "13": {
+      "UID": "468266e7-eed8-407a-9525-7af5d818f198",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "17": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2102316,
+      "NodeID": 17,
+      "UID": "dd87c50e-36cb-43b5-9eb3-08e92b182ed7",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "6": {
+      "UID": "ebc200f5-5468-4d22-92e3-5f851e38aea5",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          11,
+          16,
+          17
+        ]
+      },
+      "NodeID": 6
+    },
+    "4": {
+      "UID": "1c052bdf-8b32-4151-8c36-c9dc4673ded3",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 4
+    },
+    "11": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "8f9af7e1-fee6-42bb-ae8a-10881a322b2d",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "15": {
+      "UID": "66159711-d72a-4566-8624-e0e368b88e5b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "16": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2102315,
+      "NodeID": 16,
+      "UID": "832585b7-9ebb-4c00-91cd-e07fdb82dd8d",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    }
+  },
+  "BPName": "ability_10234220",
+  "NodeID": 8,
+  "UID": "93f94866-5581-4a9e-a7da-dbefc8eccb4f",
+  "eventIds": [
+    6,
+    15
+  ],
+  "layer": "Base",
+  "length": 1
+}

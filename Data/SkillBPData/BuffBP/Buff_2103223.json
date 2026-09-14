@@ -1,0 +1,22 @@
+{
+  "stackRule": 0,
+  "layerCalcInfo": {
+    "taken_dmg_inc_rate_v": {
+      "calcId": 2103223,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 3,
+      "UID": "46bee26e-b5a6-46f4-9cba-c1a4b4ffc05f",
+      "name": "getParamByLuaConfig"
+    }
+  },
+  "BPName": "buff_2103223",
+  "NodeID": 1,
+  "UID": "ed5e7fc1-c8e5-422f-86d6-5f68695b0034",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {}
+}

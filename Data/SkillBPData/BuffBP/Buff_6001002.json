@@ -1,0 +1,306 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6001002",
+  "NodeID": 1,
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 6001003,
+      "NodeID": 5,
+      "UID": "0bd78176-b5f9-4e57-b329-cf90893faee3",
+      "layer": 1,
+      "name": "addBuff",
+      "level": {
+        "UID": "1173003a-b9ef-42f6-a0e8-fa0f1fb48976",
+        "target": "OWNER",
+        "name": "getBuffLevel",
+        "NodeID": 4
+      }
+    },
+    "38": {
+      "scale": {
+        "calcId": 6001002,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 37,
+        "UID": "6ed7aa32-b463-4052-8700-36fe5cf938a8",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "MASTER",
+      "name": "playEffectStr",
+      "UID": "b5207a60-5273-4aed-adb1-d22d87d7d05d",
+      "effectId": "Eff_Buff_Rogue_Defense_Aoe_Loop",
+      "speed": 1,
+      "NodeID": 38
+    },
+    "39": {
+      "calcId": 6001002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 39,
+      "UID": "c63f50f8-a0c0-4205-8889-22b6ae900241",
+      "name": "getParamByLuaConfig"
+    },
+    "6": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 6,
+      "UID": "14134ce9-65e3-4231-b8b2-1430038a327c",
+      "enterTrapActionIds": [
+        5
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        11
+      ],
+      "shapeArgs": {
+        "NodeID": 16,
+        "name": "constVector3",
+        "UID": "847053b9-f08d-4914-b81b-760952f8d7e1",
+        "x": {
+          "calcId": 6001002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 15,
+          "UID": "94dc69d9-245f-4393-879e-4270a45066ca",
+          "name": "getParamByLuaConfig"
+        },
+        "y": 0,
+        "z": 0
+      },
+      "shapeKind": "Sphere",
+      "trapKey": "1",
+      "relation": 2,
+      "center": "OWNER",
+      "name": "registerTrapEvent"
+    },
+    "41": {
+      "name": "stopEffectStr",
+      "UID": "30c2fea1-0cb8-4219-aad6-55f843aedb16",
+      "effectId": "Eff_Buff_Rogue_Defense_Aoe_Loop",
+      "target": "OWNER",
+      "NodeID": 41
+    },
+    "35": {
+      "buffId": 6001003,
+      "name": "removeBuff",
+      "UID": "f67ff53d-7b45-49ec-bbb0-00cbbfa470a4",
+      "target": "TrapTarget",
+      "NodeID": 35
+    },
+    "44": {
+      "isNotifyLeaveWhenExit": true,
+      "NodeID": 44,
+      "UID": "103fa095-16ea-445e-bb8b-ff1154803aae",
+      "trapKey": "1",
+      "center": "OWNER",
+      "name": "removeTrapEvent"
+    },
+    "8": {
+      "actionIds": [
+        12,
+        45,
+        14,
+        6
+      ],
+      "conditionActionIds": [
+        29
+      ],
+      "UID": "69d5977c-233d-4b40-93ce-d71de6f6add8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        36,
+        44,
+        38,
+        32
+      ],
+      "NodeID": 8
+    },
+    "31": {
+      "target": "TrapTarget",
+      "duration": 0,
+      "buffId": 6001003,
+      "NodeID": 31,
+      "UID": "98dc531e-eb02-4845-b999-c06b73e9b823",
+      "layer": 1,
+      "name": "addBuff",
+      "level": {
+        "UID": "f07d610c-6e0c-4500-ab2d-41f41642a927",
+        "target": "OWNER",
+        "name": "getBuffLevel",
+        "NodeID": 30
+      }
+    },
+    "11": {
+      "buffId": 6001003,
+      "name": "removeBuff",
+      "UID": "7823a523-7e89-4a83-8d03-d5efcde694b5",
+      "target": "TrapTarget",
+      "NodeID": 11
+    },
+    "12": {
+      "name": "stopEffectStr",
+      "UID": "1069bc91-4fb7-46d5-ac9c-2645d5038829",
+      "effectId": "Eff_Buff_Rogue_Defense_Aoe_Loop",
+      "target": "MASTER",
+      "NodeID": 12
+    },
+    "4": {
+      "UID": "1173003a-b9ef-42f6-a0e8-fa0f1fb48976",
+      "target": "OWNER",
+      "name": "getBuffLevel",
+      "NodeID": 4
+    },
+    "45": {
+      "isNotifyLeaveWhenExit": true,
+      "NodeID": 45,
+      "UID": "2dc8461e-98cb-47db-a217-be7c50ca2a5e",
+      "trapKey": "2",
+      "center": "MASTER",
+      "name": "removeTrapEvent"
+    },
+    "14": {
+      "scale": {
+        "calcId": 6001002,
+        "calcType": 1,
+        "paramName": "param1",
+        "NodeID": 13,
+        "UID": "4b719419-bd5a-4913-a3c9-3706f5f47a87",
+        "name": "getParamByLuaConfig"
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "d40ce60c-1eda-48c2-9172-0ed41df9fe87",
+      "effectId": "Eff_Buff_Rogue_Defense_Aoe_Loop",
+      "speed": 1,
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "5398cfce-0758-4780-89a4-a24f190c8902",
+      "name": "registerPetEnterControlEvent",
+      "actionIds": [
+        12,
+        45,
+        14,
+        6
+      ],
+      "NodeID": 10
+    },
+    "15": {
+      "calcId": 6001002,
+      "calcType": 1,
+      "paramName": "param0",
+      "NodeID": 15,
+      "UID": "94dc69d9-245f-4393-879e-4270a45066ca",
+      "name": "getParamByLuaConfig"
+    },
+    "43": {
+      "name": "stopEffectStr",
+      "UID": "3f4abb23-cb4a-464d-8926-a8be63c3977a",
+      "effectId": "Eff_Buff_Rogue_Defense_Aoe_Loop",
+      "target": "MASTER",
+      "NodeID": 43
+    },
+    "37": {
+      "calcId": 6001002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 37,
+      "UID": "6ed7aa32-b463-4052-8700-36fe5cf938a8",
+      "name": "getParamByLuaConfig"
+    },
+    "29": {
+      "UID": "b27dac8a-3c6e-43df-a26f-6d09bc7a57b8",
+      "name": "isInControlState",
+      "controlState": 3,
+      "NodeID": 29
+    },
+    "30": {
+      "UID": "f07d610c-6e0c-4500-ab2d-41f41642a927",
+      "target": "OWNER",
+      "name": "getBuffLevel",
+      "NodeID": 30
+    },
+    "32": {
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "NodeID": 32,
+      "UID": "4dc91314-d07c-4e47-9ecb-2353181cf681",
+      "enterTrapActionIds": [
+        31
+      ],
+      "isNotifyLeaveWhenExit": true,
+      "leaveTrapActionIds": [
+        35
+      ],
+      "shapeArgs": {
+        "NodeID": 40,
+        "name": "constVector3",
+        "UID": "2222abcc-e34f-4f02-8dfa-f9fd47283783",
+        "x": {
+          "calcId": 6001002,
+          "calcType": 1,
+          "paramName": "param0",
+          "NodeID": 39,
+          "UID": "c63f50f8-a0c0-4205-8889-22b6ae900241",
+          "name": "getParamByLuaConfig"
+        },
+        "y": 0,
+        "z": 0
+      },
+      "shapeKind": "Sphere",
+      "trapKey": "2",
+      "relation": 2,
+      "center": "MASTER",
+      "name": "registerTrapEvent"
+    },
+    "13": {
+      "calcId": 6001002,
+      "calcType": 1,
+      "paramName": "param1",
+      "NodeID": 13,
+      "UID": "4b719419-bd5a-4913-a3c9-3706f5f47a87",
+      "name": "getParamByLuaConfig"
+    },
+    "34": {
+      "UID": "681163c0-ed83-43f6-b39f-7712d33243ac",
+      "name": "registerPetLeaveControlEvent",
+      "actionIds": [
+        36,
+        44,
+        38,
+        32
+      ],
+      "NodeID": 34
+    },
+    "36": {
+      "name": "stopEffectStr",
+      "UID": "031d9a09-6512-45ce-b577-0f33fe0b8efe",
+      "effectId": "Eff_Buff_Rogue_Defense_Aoe_Loop",
+      "target": "OWNER",
+      "NodeID": 36
+    }
+  },
+  "onBuffDestroyIds": [
+    41,
+    43
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    8,
+    34,
+    10
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_90207001",
+  "calcInfoByLuaConfig": {
+    "id": 90207001,
+    "type": 1,
+    "play_taken_dmg_dec_rate_v": "param0"
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "parentDynamicRPCStates": {},
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_SkillObj_90207_SoilShield"
+    }
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "14": {
+      "UID": "2a4b7a97-ffa0-4d4f-8f2c-905230da9171",
+      "name": "hideBattleDialog",
+      "dialogId": 20000190,
+      "NodeID": 14
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "d122f993-9e92-4043-b324-7287061fc73c",
+      "effectId": "Eff_SkillObj_90207_SoilShield_BeHit",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "9": {
+      "duration": 1,
+      "disableWhenFinished": false,
+      "NodeID": 9,
+      "UID": "c3b0401c-594c-4e5f-a276-fb84671fff1f",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_90207_BodyFresnel_01",
+      "name": "playPreset"
+    },
+    "6": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "91011229-18c4-40dd-8ba4-9c0848c3acd9",
+      "effectId": "Eff_SkillObj_90207_SoilShield_Break",
+      "speed": 1,
+      "NodeID": 6
+    },
+    "10": {
+      "duration": 0.5,
+      "disableWhenFinished": true,
+      "NodeID": 10,
+      "UID": "5676cbf5-be83-40b2-9968-f550a046f245",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_90207_BodyFresnel_02",
+      "name": "playPreset"
+    },
+    "13": {
+      "actionIds": [
+        12
+      ],
+      "interval": 3,
+      "UID": "abde191b-6d38-4c3c-bf13-0969d43e5201",
+      "name": "registerReceiveBeAttackedEvent",
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "19faa69b-dff8-407a-a160-eae6e822dc32",
+      "name": "showDialog",
+      "dialogId": 20000190,
+      "NodeID": 12
+    },
+    "2": {
+      "UID": "a856b571-65b3-497a-a094-fdf3771734de",
+      "name": "replaceHitEffect",
+      "effect": "Eff_SkillObj_90207_SoilShield_BeHit",
+      "NodeID": 2
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    4,
+    6,
+    14,
+    10
+  ],
+  "onBuffStartIds": [
+    2,
+    9,
+    13
+  ]
+}

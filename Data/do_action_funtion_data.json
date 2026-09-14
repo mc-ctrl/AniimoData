@@ -1,0 +1,183 @@
+{
+  "recoverPlayerHp": {
+    "id": 10,
+    "paramName": [
+      "百分比"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "F"
+    ],
+    "desc": "恢复所有玩家指定百分比的血量",
+    "displayName": "恢复所有玩家血量"
+  },
+  "removeAllBuff": {
+    "id": 8,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "清除的玩家所有buff",
+    "displayName": "清除的玩家所有buff"
+  },
+  "removeAllPetAllbuff": {
+    "id": 9,
+    "paramName": {},
+    "eventFlag": "s",
+    "paramType": {},
+    "desc": "清除所有宠物buff",
+    "displayName": "清除所有宠物buff"
+  },
+  "addBuff": {
+    "id": 6,
+    "paramName": [
+      "buffId"
+    ],
+    "refData": [
+      [
+        "Data.buff_config_data",
+        [
+          "$L#buffId"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "人和宠物都添加指定buff",
+    "displayName": "添加指定buff"
+  },
+  "teleportEntity": {
+    "id": 4,
+    "paramName": [
+      "staticId",
+      "传送点id"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I",
+      "I"
+    ],
+    "desc": "将指定staticId对象传送到指定传送点{portalId}",
+    "displayName": "根据staticId传送服务器entity"
+  },
+  "teleportPlayer": {
+    "id": 3,
+    "paramName": [
+      "传送点id"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "指定同场景的其他传送点{portalId}进行传送行为",
+    "displayName": "传送玩家"
+  },
+  "selectBuff": {
+    "id": 5,
+    "paramName": [
+      "超时时间"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "displayName": "调用buff选择界面"
+  },
+  "removeBuff": {
+    "id": 7,
+    "paramName": [
+      "buffId"
+    ],
+    "refData": [
+      [
+        "Data.buff_config_data",
+        [
+          "$L#buffId"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "人和宠物都移除指定buff",
+    "displayName": "清除指定buff"
+  },
+  "createSpawner": {
+    "id": 1,
+    "paramName": [
+      "spawnerId"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "指定spawnerId创建spawner对象",
+    "displayName": "创建spawner"
+  },
+  "destroySpawner": {
+    "id": 2,
+    "paramName": [
+      "spawnerId"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "销毁spawner, 不触发死亡",
+    "displayName": "销毁spawner"
+  },
+  "petCastAbility": {
+    "id": 13,
+    "paramName": [
+      "技能id"
+    ],
+    "refData": [
+      [
+        "Data.ability_param_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "指定玩家宠物使用指定技能",
+    "displayName": "玩家出战宠物使用指定技能"
+  },
+  "playerCastAbility": {
+    "id": 12,
+    "paramName": [
+      "技能id"
+    ],
+    "refData": [
+      [
+        "Data.ability_param_data",
+        [
+          "$L#name"
+        ]
+      ]
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "I"
+    ],
+    "desc": "强制玩家使用指定技能",
+    "displayName": "玩家使用指定技能"
+  },
+  "recoverAllPetHp": {
+    "id": 11,
+    "paramName": [
+      "百分比"
+    ],
+    "eventFlag": "s",
+    "paramType": [
+      "F"
+    ],
+    "desc": "恢复所有玩家宠物指定百分比的血量",
+    "displayName": "恢复所有玩家宠物血量"
+  }
+}

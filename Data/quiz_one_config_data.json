@@ -1,0 +1,370 @@
+{
+  "1000": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1000,
+        1
+      ],
+      [
+        1001,
+        1
+      ],
+      [
+        1002,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  },
+  "1022": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1022,
+        1
+      ],
+      [
+        1023,
+        1
+      ],
+      [
+        1024,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  },
+  "1012": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1012,
+        1
+      ],
+      [
+        1013,
+        1
+      ],
+      [
+        1014,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  },
+  "1019": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1019,
+        1
+      ],
+      [
+        1020,
+        1
+      ],
+      [
+        1021,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  },
+  "1006": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1006,
+        1
+      ],
+      [
+        1007,
+        1
+      ],
+      [
+        1008,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  },
+  "1016": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1016,
+        1
+      ],
+      [
+        1017,
+        1
+      ],
+      [
+        1018,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  },
+  "1009": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1009,
+        1
+      ],
+      [
+        1010,
+        1
+      ],
+      [
+        1011,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  },
+  "1003": {
+    "failDialogue": 166,
+    "groupList": [
+      [
+        1003,
+        1
+      ],
+      [
+        1004,
+        1
+      ],
+      [
+        1005,
+        1
+      ]
+    ],
+    "passNumber": 3,
+    "questionNumber": 3,
+    "settleTime": 0,
+    "stateRight": [
+      [
+        "Daily_Encourage_Start",
+        "Daily_Encourage_End"
+      ],
+      [
+        "Emotion_Excited_Start",
+        "Emotion_Excited_End"
+      ],
+      [
+        "Emotion_Firm_Start",
+        "Emotion_Firm_End"
+      ]
+    ],
+    "stateWrong": [
+      [
+        "Emotion_Confused_Start",
+        "Emotion_Confused_Loop",
+        "Emotion_Confused_End"
+      ]
+    ],
+    "successDialogue": 165,
+    "readyTime": 3,
+    "type": 3,
+    "timeline": {},
+    "answerTime": 20
+  }
+}

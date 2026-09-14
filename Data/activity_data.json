@@ -1,0 +1,25 @@
+{
+  "10001": {
+    "activityParam": 1,
+    "activityType": 1,
+    "playerNum": [
+      1,
+      4
+    ],
+    "rewardRefresh": 2,
+    "rewardShow": [
+      [
+        10001,
+        1
+      ],
+      [
+        10001,
+        2
+      ]
+    ],
+    "desc": 1863098097,
+    "pic": "$UI_Img_GameInstance_005.png",
+    "rewardTimes": 5,
+    "name": 2091786061
+  }
+}

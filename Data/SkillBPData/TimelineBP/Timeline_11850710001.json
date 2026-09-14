@@ -1,0 +1,430 @@
+{
+  "nodeMap": {
+    "62": {
+      "actionIds": [
+        63
+      ],
+      "conditionActionIds": [
+        61
+      ],
+      "UID": "46cfe2ad-9855-4667-9280-f9678d8f5792",
+      "name": "doActionsByConditions",
+      "NodeID": 62
+    },
+    "53": {
+      "name": "stopEffectStr",
+      "UID": "13b01ebc-530b-4108-b08f-8fb80a65ce1c",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_01_liuli",
+      "target": "OWNER",
+      "NodeID": 53
+    },
+    "63": {
+      "time": 5,
+      "rotateSpeed": 45,
+      "name": "rotateTo",
+      "UID": "c435bdb4-6b9f-40c7-9584-9d22cb36f874",
+      "referenceOffsetRotY": 0,
+      "target": "TARGET",
+      "NodeID": 63
+    },
+    "54": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "097f485f-6baf-4b03-889a-8e501e88394d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10185_Skill_WindCannon_Fire",
+      "NodeID": 54
+    },
+    "3": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "17c72111-a06e-4901-9d10-aef3f11a450f",
+      "target": "OWNER",
+      "NodeID": 3,
+      "animId": "Skill_WindCannon_Start"
+    },
+    "71": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        1,
+        1.3
+      ],
+      "templateId": 11850710001,
+      "name": "createProjectile",
+      "UID": "db91d28b-5040-47ef-baf7-adf4805a9844",
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ],
+      "projectileType": "Tracking",
+      "NodeID": 71
+    },
+    "72": {
+      "offsetXYZ": [
+        0,
+        1,
+        1.3
+      ],
+      "templateId": 11850710002,
+      "name": "createProjectile",
+      "UID": "65fbeda2-094c-4ac3-814a-93dc0de58921",
+      "rotation": "ToAim",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "NodeID": 72,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "5": {
+      "UID": "82f34d7a-cc54-473b-9e34-1f728e0176e9",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          62,
+          3,
+          16
+        ]
+      },
+      "NodeID": 5
+    },
+    "82": {
+      "NodeID": 82,
+      "UID": "26fb38fc-3ffa-4b7f-9e5c-b086890bf461",
+      "blendTime": 0.3,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 2,
+      "cameraPivotOffsetXOverride": 0.7,
+      "cameraPivotOffsetZOverride": -2,
+      "cameraYawOffset": 0,
+      "maxPitch": 60,
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "name": "setIsInAim",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": false,
+      "minPitch": -60,
+      "showAimUI": true,
+      "val": true,
+      "enableLookAtCameraCenter": true,
+      "targetAimLength": 1
+    },
+    "48": {
+      "duration": 0.05,
+      "actionIds": [
+        60,
+        46,
+        53
+      ],
+      "NodeID": 48,
+      "UID": "5e59cabb-69db-48f9-8986-c66456d7fafa",
+      "name": "addTimer"
+    },
+    "34": {
+      "eventType": "NotifyState",
+      "endTime": 5.6,
+      "NodeID": 34,
+      "onExit": {
+        "actionIds": [
+          29
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          57,
+          48,
+          55
+        ]
+      },
+      "startTime": 1.1,
+      "tickInterval": 0.3,
+      "onEnter": {
+        "actionIds": [
+          57,
+          48,
+          55
+        ]
+      },
+      "UID": "589e92f1-a27c-462d-a420-6cf418deb6d7"
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          82,
+          17,
+          50,
+          52,
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 19,
+      "UID": "d23e9c40-f610-4849-9ee0-338ce0840bad"
+    },
+    "32": {
+      "time": 4.5,
+      "notShowCountDown": false,
+      "actionIds": [
+        29
+      ],
+      "aiTriggerTime": 1,
+      "UID": "9ac41e38-03a3-4c0b-b0a2-d28d3cfd70ea",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 32
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 6.1,
+      "NodeID": 31,
+      "UID": "c563add8-324c-49a9-98cb-04c7e25f30f7"
+    },
+    "52": {
+      "offsetXYZ": [
+        0,
+        0.7,
+        1.2
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bc6b19ab-93d5-4e04-9da8-5b51966052e9",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_01_liuli",
+      "speed": 1,
+      "NodeID": 52
+    },
+    "29": {
+      "timelineId": 11850710002,
+      "name": "jumpToNextTimeline",
+      "UID": "9c436814-0327-44fb-aed8-6d2e9c29635e",
+      "target": "OWNER",
+      "NodeID": 29
+    },
+    "46": {
+      "offsetXYZ": [
+        0,
+        0,
+        -0.1
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8c2c5004-9212-4046-8e38-3e56feb77d08",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_02_liuli",
+      "speed": 1,
+      "NodeID": 46
+    },
+    "11": {
+      "UID": "4cc48593-b344-41a1-96cf-482854a9036e",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "NodeID": 20,
+      "UID": "b00ab90f-dc82-46c9-a868-656045c6aa84",
+      "aimAnim": "Skill_FullBodyAim",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "cameraPitchOffset": 0,
+      "checkHookClawReachDistance": false,
+      "val": false,
+      "showAimUI": true,
+      "cameraYawOffset": 0,
+      "name": "setIsInAim",
+      "blendTime": 0
+    },
+    "12": {
+      "UID": "d8f5e8d0-e59e-4088-a858-c773d8a0afbe",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    },
+    "22": {
+      "UID": "ef5400eb-1f0c-447a-9d7d-9a2ea374f779",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          23,
+          56,
+          20,
+          29
+        ]
+      },
+      "NodeID": 22
+    },
+    "23": {
+      "tags": 1,
+      "name": "setEffectOpacityByPerformanceTag",
+      "UID": "75fd8679-4a14-415e-8936-0331ede90cea",
+      "opacity": -1,
+      "NodeID": 23
+    },
+    "55": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "6bb9cf94-1f2f-44ea-b00e-b31ef2bbc318",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10185_Skill_WindCannon_Charge",
+      "NodeID": 55
+    },
+    "14": {
+      "UID": "0ee3b7b8-2bd5-48b5-b669-d4e482261f50",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 14
+    },
+    "56": {
+      "name": "stopEffectStr",
+      "UID": "a8f11dc0-4a35-4905-b36f-2164166cf734",
+      "effectId": "Eff_Parmon_10185_Skill_WindCannon_Charge_01_liuli",
+      "target": "OWNER",
+      "NodeID": 56
+    },
+    "15": {
+      "UID": "1f96ae63-e55f-4c13-9800-f6c9bbd1bcf4",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 15
+    },
+    "57": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "647fdda8-9cbc-4406-be6d-a701e54b5b22",
+      "target": "OWNER",
+      "NodeID": 57,
+      "animId": "Skill_WindCannon_Fast"
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "896929a2-5441-4102-8d96-61a2346df7c6",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10185_Skill_WindCannon_Enter",
+      "NodeID": 16
+    },
+    "58": {
+      "name": "isActorType",
+      "UID": "809f5516-9319-4df1-98cc-a25cb3db76ae",
+      "target": "OWNER",
+      "NodeID": 58,
+      "actorType": 3
+    },
+    "17": {
+      "tags": 1,
+      "name": "setEffectOpacityByPerformanceTag",
+      "UID": "d18584ed-196c-4624-94b1-8f845b9f3b1d",
+      "opacity": 0.5,
+      "NodeID": 17
+    },
+    "59": {
+      "name": "isActorType",
+      "UID": "13972ff5-68cf-4c1e-8ced-ffe33d0ab03d",
+      "target": "OWNER",
+      "NodeID": 59,
+      "actorType": 3
+    },
+    "30": {
+      "actionIds": [
+        29
+      ],
+      "conditionActionIds": [
+        58
+      ],
+      "UID": "2cdbf0f7-a5d6-495b-b306-ce654dbd4748",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "60": {
+      "actionIds": [
+        71
+      ],
+      "conditionActionIds": [
+        59
+      ],
+      "UID": "23e25432-e8f4-4ac4-bf1a-fb3eaa954d39",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        72
+      ],
+      "NodeID": 60
+    },
+    "33": {
+      "action": {
+        "actionIds": [
+          32
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.1,
+      "NodeID": 33,
+      "UID": "cab6df59-b08a-4b7d-936f-4615c4c118ae"
+    },
+    "61": {
+      "name": "isActorType",
+      "UID": "ec195f0d-0525-46e3-96c3-e1cb46c3fd46",
+      "target": "OWNER",
+      "NodeID": 61,
+      "actorType": 3
+    },
+    "50": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "7a89bad7-6d65-4d71-bf76-fa8a0674914e",
+      "target": "OWNER",
+      "NodeID": 50,
+      "animId": "Skill_WindCannon_Charge"
+    }
+  },
+  "BPName": "ability_11850710",
+  "NodeID": 7,
+  "UID": "13ae237c-cea1-49af-9637-40a6dac2894e",
+  "eventIds": [
+    12,
+    15,
+    5,
+    19,
+    33,
+    22,
+    31,
+    34
+  ],
+  "layer": "Base",
+  "length": 10.1
+}

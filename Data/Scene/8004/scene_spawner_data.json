@@ -1,0 +1,224 @@
+{
+  "41623714": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -18.92,
+      5.61,
+      -97.78
+    ],
+    "refresTimeType": 0,
+    "sandboxId": 41619341,
+    "id": 41623714,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          41623713,
+          42485313,
+          60632346
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "41706915": {
+    "spawnType": 0,
+    "overrideDiedRefreshInterval": false,
+    "sandboxType": 0,
+    "position": [
+      -84.04,
+      11.67,
+      -136.54
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "sandboxId": 41619341,
+    "id": 41706915,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          60981722,
+          60981721,
+          60981720,
+          60981719,
+          60981718,
+          60981717,
+          60981716,
+          41707452,
+          64767049
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "41707978": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -82.01,
+      9.81,
+      -106.24
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 41619341,
+    "id": 41707978,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          41707972
+        ],
+        "deadTime": 0,
+        "desc": ""
+      }
+    ]
+  },
+  "41707984": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -86.14,
+      10.11,
+      -106.5
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 41619341,
+    "id": 41707984,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          41707980
+        ],
+        "deadTime": 0,
+        "desc": ""
+      }
+    ]
+  },
+  "41708023": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -84,
+      10.58,
+      -106.62
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 41619341,
+    "id": 41708023,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          41708020
+        ],
+        "deadTime": 0,
+        "desc": ""
+      }
+    ]
+  },
+  "73259826": {
+    "spawnType": 2,
+    "owner": "唐睿尚",
+    "sandboxType": 0,
+    "position": [
+      -84.08,
+      13.08,
+      -137.35
+    ],
+    "refresTimeType": 0,
+    "weatherRefreshType": 0,
+    "overrideDiedRefreshInterval": false,
+    "sandboxId": 41619341,
+    "id": 73259826,
+    "SpawnState": 0,
+    "isAuto": false,
+    "manualInit": false,
+    "maxEntityCount": 0,
+    "meteorologyRefreshType": 0,
+    "refreshIntervalRange": [
+      0,
+      0
+    ],
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          73259825,
+          73259827,
+          73259828,
+          73260423,
+          73260424,
+          73259832,
+          73259833,
+          73260427,
+          73260419
+        ],
+        "deadTime": 0,
+        "desc": "",
+        "enableRandomMaxChild": false
+      }
+    ]
+  },
+  "41621210": {
+    "spawnType": 0,
+    "sandboxType": 0,
+    "position": [
+      -8.25,
+      6,
+      -98.15
+    ],
+    "refresTimeType": 0,
+    "refreshFOVType": 0,
+    "sandboxId": 41619341,
+    "id": 41621210,
+    "SpawnState": 0,
+    "maxEntityCount": 0,
+    "mapAreaId": 0,
+    "isAuto": false,
+    "spawnGroups": [
+      {
+        "weight": 1,
+        "spawnIds": [
+          41621217,
+          41624335
+        ],
+        "deadTime": 0,
+        "desc": ""
+      }
+    ]
+  }
+}

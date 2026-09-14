@@ -1,0 +1,205 @@
+{
+  "nodeMap": {
+    "8": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "0c205ee8-02b2-4f11-a426-f252d5a5ea12",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "31": {
+      "templateId": 22331303,
+      "name": "destroyCreatedEntity",
+      "UID": "44f6419c-921c-44ce-b5a2-a13f3aa32362",
+      "target": "OWNER",
+      "entityType": "Creation",
+      "NodeID": 31
+    },
+    "20": {
+      "name": "hideModel",
+      "UID": "9b29f721-52ff-49d9-98b8-5c64344148ac",
+      "target": "OWNER",
+      "NodeID": 20,
+      "maxHideTime": 10
+    },
+    "2": {
+      "target": "OWNER",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "5762aad5-18f0-478e-ac1b-d2845a52dd37",
+      "speed": 1,
+      "NodeID": 2,
+      "animId": "Skill_MirrorImage"
+    },
+    "22": {
+      "action": {
+        "actionIds": [
+          20,
+          23,
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 22,
+      "UID": "d95c10d7-5e1e-454e-88b8-131cc9fce3f2"
+    },
+    "4": {
+      "UID": "08fea954-ba76-4f5e-9f20-492e349e40c8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          19,
+          24,
+          25,
+          27,
+          28,
+          31,
+          30
+        ]
+      },
+      "NodeID": 4
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "419c4ae7-13df-4a3e-b988-461b36510779",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Velouria_Skill_MirrorImage",
+      "NodeID": 24
+    },
+    "30": {
+      "templateId": 22331302,
+      "name": "destroyCreatedEntity",
+      "UID": "be68c924-bafd-4536-a78a-f24d09a6a611",
+      "target": "OWNER",
+      "entityType": "Creation",
+      "NodeID": 30
+    },
+    "10": {
+      "UID": "2011fe5f-c977-4841-b293-a949e2c925be",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          15,
+          8
+        ]
+      },
+      "NodeID": 10
+    },
+    "15": {
+      "UID": "d69cd523-7b46-4f81-9d8e-5c4b79213d50",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 1,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 15
+    },
+    "25": {
+      "UID": "55305d5e-d418-4204-b677-bf3333b56c91",
+      "name": "showDialog",
+      "dialogId": 71000005,
+      "NodeID": 25
+    },
+    "26": {
+      "UID": "156b0a6d-7b0d-436f-9760-75ddc256717e",
+      "name": "destroyEntity",
+      "NodeID": 26
+    },
+    "27": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 21233003,
+      "NodeID": 27,
+      "UID": "acb77391-c487-46f5-95e5-eba650358f67",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "28": {
+      "templateId": 22331301,
+      "name": "destroyCreatedEntity",
+      "UID": "38d70375-5ef3-4073-b190-8ca24ce312dc",
+      "target": "OWNER",
+      "entityType": "Creation",
+      "NodeID": 28
+    },
+    "12": {
+      "UID": "3b7a896c-a433-48e9-946f-b0433c052dd0",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 0
+      },
+      "NodeID": 12
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.16,
+      "NodeID": 18,
+      "UID": "b8dfc2df-0f4f-48eb-a4c9-94981e060bd8"
+    },
+    "13": {
+      "UID": "335dfa73-0543-4a49-99ba-720fc23c4d19",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          12
+        ]
+      },
+      "NodeID": 13
+    },
+    "19": {
+      "duration": 1,
+      "disableWhenFinished": true,
+      "NodeID": 19,
+      "UID": "cb5507af-409b-4b7d-921c-5b5ae3b06f7d",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10233_Mon_Skill_MirrorImage",
+      "name": "playPreset"
+    },
+    "23": {
+      "name": "dropEffectStr",
+      "UID": "729148eb-f8bd-4bd2-a6c2-275237a6aecf",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_MirrorImage",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "16": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 16,
+      "UID": "2e0d7986-85b1-4524-8091-d5dabd4aa1d7",
+      "bone": "Bone R Hair C",
+      "name": "playEffectStr",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_MirrorImage"
+    }
+  },
+  "BPName": "ability_12331901",
+  "NodeID": 6,
+  "UID": "2eacd8b1-fcdf-4450-b860-d994ede83097",
+  "eventIds": [
+    10,
+    13,
+    4,
+    22,
+    18
+  ],
+  "layer": "Base",
+  "length": 2.99
+}

@@ -1,0 +1,63 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 3,
+  "NodeID": 0,
+  "effectId": "Eff_Parmon_10072_Skill_ChainLightening_Ballistics",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "nodeMap": {
+    "3": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.5
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 3002,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10101
+      },
+      "UID": "86e213f1-8ac1-45b3-a493-b96bcba9cddc",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "20": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "587447f5-4b29-4cac-8ab0-cc3fb6c240d5",
+      "effectId": "Eff_Parmon_10072_Skill_Hit",
+      "speed": 1,
+      "NodeID": 20
+    }
+  },
+  "moveSpeed": 15,
+  "onProjectileFinishIds": [
+    20
+  ],
+  "onProjectileHitIds": [
+    3
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 1,
+  "sweepRadius": 0.3,
+  "sweepShape": 0,
+  "BPName": "ability_10720420",
+  "tickInterval": 0.05,
+  "reboundData": {
+    "reboundRelation": 2,
+    "maxCount": 5,
+    "searchRadius": 10
+  },
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "defaultHitSoundType": "s",
+  "impulseId": 3002,
+  "acceleration": 0
+}

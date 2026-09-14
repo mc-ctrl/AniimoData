@@ -1,0 +1,695 @@
+{
+  "2040001": {
+    "buffItemName": "【不破】近身蓄能",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2040001,
+    "goodsId": 120045
+  },
+  "2040002": {
+    "buffItemName": "【不破】炽热滚烫",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2040002,
+    "goodsId": 120046
+  },
+  "2050001": {
+    "buffItemName": "【无双】绝境铁壁",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2050001,
+    "goodsId": 120056
+  },
+  "2050002": {
+    "buffItemName": "【无双】绝境活力",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2050002,
+    "goodsId": 120057
+  },
+  "2060001": {
+    "buffItemName": "【财富】兑奖券碎片II",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2060001,
+    "goodsId": 120067
+  },
+  "2060002": {
+    "buffItemName": "【财富】会员折扣",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2060002,
+    "goodsId": 120068
+  },
+  "2060003": {
+    "buffItemName": "【财富】血汗钱",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2060003,
+    "goodsId": 120069
+  },
+  "2060004": {
+    "buffItemName": "【财富】利滚利",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2060004,
+    "goodsId": 120070
+  },
+  "2031000": {
+    "buffItemName": "【活力】过量护盾",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2031000,
+    "goodsId": 120039
+  },
+  "2000000": {
+    "buffItemName": "【聚能】破甲一击",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2000000,
+    "goodsId": 120000
+  },
+  "2000001": {
+    "buffItemName": "【聚能】聚能感应",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2000001,
+    "goodsId": 120001
+  },
+  "2000002": {
+    "buffItemName": "【聚能】会心突击",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2000002,
+    "goodsId": 120002
+  },
+  "2000003": {
+    "buffItemName": "【聚能】稳定蓄能",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2000003,
+    "goodsId": 120003
+  },
+  "2000004": {
+    "buffItemName": "【聚能】多重能级",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2000004,
+    "goodsId": 120004
+  },
+  "2000005": {
+    "buffItemName": "【聚能】能量扩容",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2000005,
+    "goodsId": 120005
+  },
+  "2001000": {
+    "buffItemName": "【聚能】元素扩张",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2001000,
+    "goodsId": 120006
+  },
+  "2001001": {
+    "buffItemName": "【聚能】无损供能",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2001001,
+    "goodsId": 120007
+  },
+  "2001002": {
+    "buffItemName": "【聚能】趁热打铁",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2001002,
+    "goodsId": 120008
+  },
+  "2001003": {
+    "buffItemName": "【聚能】惠身庇佑",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2001003,
+    "goodsId": 120009
+  },
+  "2002000": {
+    "buffItemName": "【聚能】聚能护臂",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2002000,
+    "goodsId": 120010
+  },
+  "2010000": {
+    "buffItemName": "【超频】破壁一击",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2010000,
+    "goodsId": 120011
+  },
+  "2010001": {
+    "buffItemName": "【超频】超频感应",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2010001,
+    "goodsId": 120012
+  },
+  "2010002": {
+    "buffItemName": "【超频】会心锐击",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2010002,
+    "goodsId": 120013
+  },
+  "2010003": {
+    "buffItemName": "【超频】威能累积",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2010003,
+    "goodsId": 120014
+  },
+  "2010004": {
+    "buffItemName": "【超频】初始能源",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2010004,
+    "goodsId": 120015
+  },
+  "2010005": {
+    "buffItemName": "【超频】稳定充能",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2010005,
+    "goodsId": 120016
+  },
+  "2011000": {
+    "buffItemName": "【超频】零耗供能",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2011000,
+    "goodsId": 120017
+  },
+  "2011001": {
+    "buffItemName": "【超频】生机迸发",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2011001,
+    "goodsId": 120018
+  },
+  "2011002": {
+    "buffItemName": "【超频】奋不顾身",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2011002,
+    "goodsId": 120019
+  },
+  "2011003": {
+    "buffItemName": "【超频】元素侵蚀",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2011003,
+    "goodsId": 120020
+  },
+  "2012000": {
+    "buffItemName": "【超频】超频引擎",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2012000,
+    "goodsId": 120021
+  },
+  "2020000": {
+    "buffItemName": "【铁壁】铜墙铁壁",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2020000,
+    "goodsId": 120022
+  },
+  "2020001": {
+    "buffItemName": "【铁壁】持盾蓄能",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2020001,
+    "goodsId": 120023
+  },
+  "2020002": {
+    "buffItemName": "【铁壁】百炼成钢",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2020002,
+    "goodsId": 120024
+  },
+  "2020003": {
+    "buffItemName": "【铁壁】加倍奉还",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2020003,
+    "goodsId": 120025
+  },
+  "2020004": {
+    "buffItemName": "【铁壁】严守密防",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2020004,
+    "goodsId": 120026
+  },
+  "2020005": {
+    "buffItemName": "【铁壁】强健体魄",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2020005,
+    "goodsId": 120027
+  },
+  "2021000": {
+    "buffItemName": "【铁壁】重弹强袭",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2021000,
+    "goodsId": 120028
+  },
+  "2021001": {
+    "buffItemName": "【铁壁】砥身苦修",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2021001,
+    "goodsId": 120029
+  },
+  "2021002": {
+    "buffItemName": "【铁壁】无懈可击",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2021002,
+    "goodsId": 120030
+  },
+  "2021003": {
+    "buffItemName": "【铁壁】不动如山",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2021003,
+    "goodsId": 120031
+  },
+  "2022000": {
+    "buffItemName": "【铁壁】反射屏障",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2022000,
+    "goodsId": 120032
+  },
+  "2030000": {
+    "buffItemName": "【活力】治防兼济",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2030000,
+    "goodsId": 120033
+  },
+  "2030001": {
+    "buffItemName": "【活力】休养蓄能",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2030001,
+    "goodsId": 120034
+  },
+  "2030002": {
+    "buffItemName": "【活力】生机勃勃",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2030002,
+    "goodsId": 120035
+  },
+  "2030003": {
+    "buffItemName": "【活力】矩阵增效",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2030003,
+    "goodsId": 120036
+  },
+  "2030004": {
+    "buffItemName": "【活力】速效急救",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2030004,
+    "goodsId": 120037
+  },
+  "2030005": {
+    "buffItemName": "【活力】治疗补给",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2030005,
+    "goodsId": 120038
+  },
+  "2031001": {
+    "buffItemName": "【活力】临危不乱",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2031001,
+    "goodsId": 120040
+  },
+  "2031002": {
+    "buffItemName": "【活力】弹射增幅",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2031002,
+    "goodsId": 120041
+  },
+  "2031003": {
+    "buffItemName": "【活力】绝处逢生",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2031003,
+    "goodsId": 120042
+  },
+  "2032000": {
+    "buffItemName": "【活力】修复矩阵",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2032000,
+    "goodsId": 120043
+  },
+  "2040000": {
+    "buffItemName": "【不破】钢筋铁骨",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2040000,
+    "goodsId": 120044
+  },
+  "2040003": {
+    "buffItemName": "【不破】以守为攻",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2040003,
+    "goodsId": 120047
+  },
+  "2040004": {
+    "buffItemName": "【不破】热力攀升",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2040004,
+    "goodsId": 120048
+  },
+  "2040005": {
+    "buffItemName": "【不破】防御训练",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2040005,
+    "goodsId": 120049
+  },
+  "2041000": {
+    "buffItemName": "【不破】燎原烈火",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2041000,
+    "goodsId": 120050
+  },
+  "2041001": {
+    "buffItemName": "【不破】钝其锋芒",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2041001,
+    "goodsId": 120051
+  },
+  "2041002": {
+    "buffItemName": "【不破】不屈不挠",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2041002,
+    "goodsId": 120052
+  },
+  "2041003": {
+    "buffItemName": "【不破】坚不可摧",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2041003,
+    "goodsId": 120053
+  },
+  "2042000": {
+    "buffItemName": "【不破】炽热铠甲",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2042000,
+    "goodsId": 120054
+  },
+  "2050000": {
+    "buffItemName": "【无双】绝境潜能",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2050000,
+    "goodsId": 120055
+  },
+  "2050003": {
+    "buffItemName": "【无双】逆势蓄能",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2050003,
+    "goodsId": 120058
+  },
+  "2050004": {
+    "buffItemName": "【无双】热血沸腾",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2050004,
+    "goodsId": 120059
+  },
+  "2050005": {
+    "buffItemName": "【无双】延迟痛觉",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2050005,
+    "goodsId": 120060
+  },
+  "2051000": {
+    "buffItemName": "【无双】背水一战",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2051000,
+    "goodsId": 120061
+  },
+  "2051001": {
+    "buffItemName": "【无双】逆势看破",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2051001,
+    "goodsId": 120062
+  },
+  "2051002": {
+    "buffItemName": "【无双】逆势爆发",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2051002,
+    "goodsId": 120063
+  },
+  "2051003": {
+    "buffItemName": "【无双】绝境守护",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2051003,
+    "goodsId": 120064
+  },
+  "2052000": {
+    "buffItemName": "【无双】热血面具",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2052000,
+    "goodsId": 120065
+  },
+  "2060000": {
+    "buffItemName": "【财富】兑奖券碎片I",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2060000,
+    "goodsId": 120066
+  },
+  "2060005": {
+    "buffItemName": "【财富】兑奖券碎片III",
+    "goodsWeight": [
+      10,
+      10
+    ],
+    "itemId": 2060005,
+    "goodsId": 120071
+  },
+  "2061000": {
+    "buffItemName": "【财富】赏金猎人",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2061000,
+    "goodsId": 120072
+  },
+  "2061001": {
+    "buffItemName": "【财富】财产升值",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2061001,
+    "goodsId": 120073
+  },
+  "2061002": {
+    "buffItemName": "【财富】聚宝生财",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2061002,
+    "goodsId": 120074
+  },
+  "2061003": {
+    "buffItemName": "【财富】撒币打击",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2061003,
+    "goodsId": 120075
+  },
+  "2062000": {
+    "buffItemName": "【财富】投机终端",
+    "goodsWeight": [
+      5,
+      5
+    ],
+    "itemId": 2062000,
+    "goodsId": 120076
+  }
+}

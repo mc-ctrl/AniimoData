@@ -1,0 +1,83 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_30530000",
+  "NodeID": 1,
+  "onBuffThinkIds": [
+    3
+  ],
+  "tags": [
+    1
+  ],
+  "immuneTags": [
+    3,
+    5,
+    8,
+    9,
+    21,
+    17
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "actionIds": [
+        5,
+        8
+      ],
+      "conditionActionIds": [
+        2
+      ],
+      "UID": "bba2b6f6-fd07-41e2-a2f8-e13fe1efcf5b",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        9
+      ],
+      "NodeID": 3
+    },
+    "9": {
+      "actionIds": [
+        8
+      ],
+      "NodeID": 9,
+      "UID": "011d62ad-2057-49f6-8db6-7b3d73913ebc",
+      "count": 3,
+      "name": "doCounterAction"
+    },
+    "8": {
+      "UID": "f58bde5e-4c14-4d5f-8b85-b5ee816c883b",
+      "name": "buffStopThink",
+      "NodeID": 8
+    },
+    "5": {
+      "calcInfo": {
+        "taken_dmg_inc_rate_v": 0
+      },
+      "calcInfoByLuaConfig": {
+        "id": 30530000,
+        "taken_dmg_inc_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "91965176-4471-423c-a78b-5b52d98ce631",
+      "name": "addBuffDynamicAttribute",
+      "NodeID": 5
+    },
+    "7": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "e988e6de-62d1-46fe-87e6-a33f8d359a4f",
+      "name": "buffStartThink",
+      "NodeID": 7
+    },
+    "2": {
+      "buffId": 3053000,
+      "name": "hasBuff",
+      "UID": "e8474b73-2107-4c95-bbc9-3b61a38c342c",
+      "target": "MASTER",
+      "NodeID": 2
+    }
+  },
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    7
+  ]
+}

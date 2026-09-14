@@ -1,0 +1,17 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_912810201",
+  "calcInfoByLuaConfig": {
+    "id": 912810201,
+    "skill_bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "1e97d4c1-c882-4133-9182-d9f541c69fa8",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

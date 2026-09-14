@@ -1,0 +1,17 @@
+{
+  "1703": {
+    "beginSum": 3000,
+    "endsum": 9999999,
+    "rebateRate": 110
+  },
+  "1701": {
+    "beginSum": 0,
+    "endsum": 200,
+    "rebateRate": 200
+  },
+  "1702": {
+    "beginSum": 200,
+    "endsum": 3000,
+    "rebateRate": 150
+  }
+}

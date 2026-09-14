@@ -1,0 +1,52 @@
+[
+  [
+    [
+      {
+        "maxRanking": 300,
+        "openType": 2,
+        "frequency": 300,
+        "resetPeriod": 1,
+        "serverShow": 1,
+        "rewardId": [
+          1
+        ],
+        "rule": 1,
+        "resetType": 5,
+        "refreshType": 1,
+        "openTime": [
+          1,
+          2
+        ],
+        "classShow": 0,
+        "dataType": 1,
+        "displayList": 100,
+        "extraInfo1": 1,
+        "extraInfo2": 5,
+        "extraInfo3": 4
+      },
+      {
+        "maxRanking": 500,
+        "openType": 3,
+        "frequency": 300,
+        "resetPeriod": 1,
+        "serverShow": 0,
+        "rewardId": [
+          1
+        ],
+        "rule": 2,
+        "resetType": 2,
+        "refreshType": 1,
+        "openTime": [
+          1,
+          "2026/8/1/4:00:00"
+        ],
+        "classShow": 1,
+        "dataType": 1,
+        "displayList": 100,
+        "extraInfo1": 1,
+        "extraInfo2": 5,
+        "extraInfo3": 4
+      }
+    ]
+  ]
+]

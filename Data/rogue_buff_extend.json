@@ -1,0 +1,90 @@
+{
+  "202200002": {
+    "buffName": 1609787513,
+    "buffLayer": 2,
+    "buffSeriesName": 2022000,
+    "buffDescFinal": 1920438298
+  },
+  "202200003": {
+    "buffName": 1788791755,
+    "buffLayer": 3,
+    "buffSeriesName": 2022000,
+    "buffDescFinal": 2106482492
+  },
+  "203200002": {
+    "buffName": 2074801990,
+    "buffLayer": 2,
+    "buffSeriesName": 2032000,
+    "buffDescFinal": 1676552024
+  },
+  "203200003": {
+    "buffName": 1133252226,
+    "buffLayer": 3,
+    "buffSeriesName": 2032000,
+    "buffDescFinal": 1904899098
+  },
+  "204200002": {
+    "buffDescFinal": 1814751206,
+    "buffName": 2113368324,
+    "buffLayer": 2,
+    "buffSeriesName": 2042000,
+    "param0": "3"
+  },
+  "204200003": {
+    "param1": "1",
+    "buffDescFinal": 1921197164,
+    "buffName": 2023410265,
+    "buffLayer": 3,
+    "buffSeriesName": 2042000,
+    "param0": "3"
+  },
+  "205200002": {
+    "buffName": 1925215448,
+    "buffLayer": 2,
+    "buffSeriesName": 2052000,
+    "buffDescFinal": 1235701016
+  },
+  "205200003": {
+    "buffName": 1799814628,
+    "buffLayer": 3,
+    "buffSeriesName": 2052000,
+    "buffDescFinal": 1806701721
+  },
+  "206200002": {
+    "buffName": 1606725723,
+    "buffLayer": 2,
+    "buffSeriesName": 2062000,
+    "buffDescFinal": 2108748803
+  },
+  "206200003": {
+    "buffDescFinal": 1586754610,
+    "buffName": 2106061207,
+    "buffLayer": 3,
+    "buffSeriesName": 2062000,
+    "param0": "5"
+  },
+  "200200002": {
+    "buffName": 1948564987,
+    "buffLayer": 2,
+    "buffSeriesName": 2002000,
+    "buffDescFinal": 1698248696
+  },
+  "200200003": {
+    "buffName": 1217193252,
+    "buffLayer": 3,
+    "buffSeriesName": 2002000,
+    "buffDescFinal": 1210277900
+  },
+  "201200002": {
+    "buffName": 1876072061,
+    "buffLayer": 2,
+    "buffSeriesName": 2012000,
+    "buffDescFinal": 1376441404
+  },
+  "201200003": {
+    "buffName": 1189405625,
+    "buffLayer": 3,
+    "buffSeriesName": 2012000,
+    "buffDescFinal": 1563094703
+  }
+}

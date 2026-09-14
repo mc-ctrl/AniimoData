@@ -1,0 +1,457 @@
+{
+  "2040001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2040002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2050001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2050002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2060001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2060002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2060003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2060004": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2031000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2000000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2000001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2000002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2000003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2000004": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2000005": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2001000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2001001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2001002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2001003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2002000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2010000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2010001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2010002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2010003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2010004": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2010005": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2011000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2011001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2011002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2011003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2012000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2020000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2020001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2020002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2020003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2020004": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2020005": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2021000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2021001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2021002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2021003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2022000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2030000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2030001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2030002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2030003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2030004": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2030005": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2031001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2031002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2031003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2032000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2040000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2040003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2040004": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2040005": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2041000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2041001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2041002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2041003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2042000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2050000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2050003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2050004": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2050005": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2051000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2051001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2051002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2051003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2052000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2060000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2060005": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2061000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2061001": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2061002": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2061003": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "2062000": {
+    "reward": 160003,
+    "buffLayer": 1,
+    "collectGroup": 1001
+  },
+  "206200003": {
+    "reward": 160003,
+    "buffLayer": 3,
+    "collectGroup": 1001
+  },
+  "206200002": {
+    "reward": 160003,
+    "buffLayer": 2,
+    "collectGroup": 1001
+  },
+  "205200003": {
+    "reward": 160003,
+    "buffLayer": 3,
+    "collectGroup": 1001
+  },
+  "205200002": {
+    "reward": 160003,
+    "buffLayer": 2,
+    "collectGroup": 1001
+  },
+  "204200003": {
+    "reward": 160003,
+    "buffLayer": 3,
+    "collectGroup": 1001
+  },
+  "204200002": {
+    "reward": 160003,
+    "buffLayer": 2,
+    "collectGroup": 1001
+  },
+  "203200003": {
+    "reward": 160003,
+    "buffLayer": 3,
+    "collectGroup": 1001
+  },
+  "203200002": {
+    "reward": 160003,
+    "buffLayer": 2,
+    "collectGroup": 1001
+  },
+  "202200003": {
+    "reward": 160003,
+    "buffLayer": 3,
+    "collectGroup": 1001
+  },
+  "202200002": {
+    "reward": 160003,
+    "buffLayer": 2,
+    "collectGroup": 1001
+  },
+  "201200003": {
+    "reward": 160003,
+    "buffLayer": 3,
+    "collectGroup": 1001
+  },
+  "201200002": {
+    "reward": 160003,
+    "buffLayer": 2,
+    "collectGroup": 1001
+  },
+  "200200003": {
+    "reward": 160003,
+    "buffLayer": 3,
+    "collectGroup": 1001
+  },
+  "200200002": {
+    "reward": 160003,
+    "buffLayer": 2,
+    "collectGroup": 1001
+  }
+}

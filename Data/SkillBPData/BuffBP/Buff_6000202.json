@@ -1,0 +1,19 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_6000202",
+  "calcInfoByLuaConfig": {
+    "id": 6000202,
+    "dmg_break_add_ratio": "param1",
+    "bp_add_ratio": "param0",
+    "type": 1
+  },
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "tags": [
+    10
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "parentDynamicRPCStates": {},
+  "NodeID": 1
+}

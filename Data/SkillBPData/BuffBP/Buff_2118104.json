@@ -1,0 +1,152 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2118104",
+  "calcInfoByLuaConfig": {
+    "id": 2118104,
+    "type": 1,
+    "stamina_cost_ratio_v": "param3",
+    "crit_dmg_v": "param1"
+  },
+  "UID": "d937d7e7-dc7e-41dc-9f86-a249b3c6b819",
+  "transferGroup": 1,
+  "onBuffThinkIds": [
+    15,
+    24
+  ],
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Common_Buff_AttackUp"
+    },
+    {
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11"
+    }
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "name": "stopEffectStr",
+      "UID": "dcaf42c4-d5df-415f-9ed9-6d04b1302057",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11",
+      "target": "OWNER",
+      "NodeID": 5
+    },
+    "23": {
+      "eventName": "10185Remove",
+      "name": "notifyCustomEvent",
+      "UID": "fcd52201-a9e5-4d01-9a8a-8d78f5c695e0",
+      "target": "MASTER",
+      "NodeID": 23
+    },
+    "24": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "8db30179-294e-41a7-915c-de9696244afa",
+      "effectId": "Eff_Common_Buff_Healing",
+      "speed": 1,
+      "NodeID": 24
+    },
+    "10": {
+      "duration": 0.516,
+      "disableWhenFinished": true,
+      "NodeID": 10,
+      "UID": "4567e9a4-25c2-46bb-be7d-aad5b41fc089",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10184_Fresnel_01",
+      "name": "playPreset"
+    },
+    "15": {
+      "name": "calcResult",
+      "UID": "5539a79c-eaa4-4ff4-8943-a923338ed187",
+      "target": "OWNER",
+      "NodeID": 15,
+      "calcInfoByLuaConfig": {
+        "add_cur_hp_max_p": "param2",
+        "type": 1,
+        "id": 2118104
+      }
+    },
+    "8": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "3a792ae3-1355-41b2-a79b-0046a3b594d1",
+      "name": "buffStartThink",
+      "NodeID": 8
+    },
+    "22": {
+      "key": "10185Num",
+      "name": "setCacheVal",
+      "UID": "df54a967-f15d-4634-88bb-a37c6fb57f42",
+      "target": "MASTER",
+      "val": {
+        "rValue": -3,
+        "name": "add",
+        "UID": "6e6f0a1f-4946-4a47-b6fd-a0a4101b46de",
+        "NodeID": 21,
+        "lValue": {
+          "key": "10185Num",
+          "name": "getCacheVal",
+          "UID": "2037b415-199a-477c-a0ae-dd334f72ece5",
+          "target": "MASTER",
+          "NodeID": 20
+        }
+      },
+      "NodeID": 22
+    },
+    "19": {
+      "key": "10185Num",
+      "name": "setCacheVal",
+      "UID": "a4c964db-fc27-44bf-add8-e7e27e4497b5",
+      "target": "MASTER",
+      "val": {
+        "rValue": 3,
+        "name": "add",
+        "UID": "e15023f8-0e6e-45d6-9e7c-a185d0a7f21a",
+        "NodeID": 18,
+        "lValue": {
+          "key": "10185Num",
+          "name": "getCacheVal",
+          "UID": "4e09fab6-4247-4d41-916f-b5efc03dc079",
+          "target": "MASTER",
+          "NodeID": 17
+        }
+      },
+      "NodeID": 19
+    },
+    "11": {
+      "duration": 0.516,
+      "disableWhenFinished": true,
+      "NodeID": 11,
+      "UID": "b34d781f-1bef-4836-8554-e9efbd74a4c3",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10184_Fresnel_01",
+      "name": "playPreset"
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "92ea1bf1-4877-405c-9ccf-2cc1acab7175",
+      "effectId": "Eff_Parmon_Whisbird_10181_Skill_Conjure11_Blast",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    23,
+    22,
+    5
+  ],
+  "onBuffStartIds": [
+    8,
+    11,
+    10,
+    12,
+    19,
+    23
+  ]
+}

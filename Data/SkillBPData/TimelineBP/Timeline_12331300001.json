@@ -1,0 +1,220 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "de1a2316-0ba6-43dd-b60d-fe3c4f08f599",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          10,
+          11,
+          12
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        1.5,
+        0
+      ],
+      "templateId": 12331300001,
+      "name": "createProjectile",
+      "UID": "e12d43a2-4f66-4f81-9db5-63e6e1e887a5",
+      "offsetRotation": {
+        "NodeID": 19,
+        "name": "constVector3",
+        "UID": "f092f570-69f1-498f-958c-da9a84c21141",
+        "x": 45,
+        "y": {
+          "NodeID": 18,
+          "UID": "61fdb9be-b0fa-485c-84a7-ffe4568687fe",
+          "min": -60,
+          "max": -30,
+          "name": "random"
+        },
+        "z": 0
+      },
+      "projectileType": "Free3d",
+      "NodeID": 14
+    },
+    "10": {
+      "UID": "13fde584-2bcc-43b0-a914-62ad88cfd69a",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "cancellable": 1
+      },
+      "NodeID": 10
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "16e0ac69-457d-44dd-9c35-68fb95200ff1",
+      "target": "CASTER",
+      "NodeID": 2,
+      "animId": "Skill_Dance"
+    },
+    "31": {
+      "calcResultNodeId": 30,
+      "name": "actOnTargets",
+      "UID": "ae4ee5eb-16e4-4be7-bd25-c6cfc4ef9094",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            5,
+            2
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "actionIds": [
+        30
+      ],
+      "isScaleWithModel": false,
+      "impulseId": 5010,
+      "NodeID": 31
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          14,
+          17,
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.43,
+      "NodeID": 16,
+      "UID": "087a4b80-05ff-4818-9716-1fe91970f3d8"
+    },
+    "30": {
+      "calcInfo": {
+        "reduce_cur_tp_rate": 1000,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 5010,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Psychic_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "parmon_starmage_skill_charm_hit_Psychic",
+        "hitCameraShakeId": 21113
+      },
+      "UID": "88c31305-e682-43d2-8791-588a9d32bacc",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 30
+    },
+    "17": {
+      "pos": "CASTER",
+      "offsetXYZ": [
+        0,
+        1.5,
+        0
+      ],
+      "templateId": 12331300002,
+      "name": "createProjectile",
+      "UID": "bd77bf5f-db2d-4ca5-8788-8c8c7cdf0cab",
+      "offsetRotation": {
+        "NodeID": 21,
+        "name": "constVector3",
+        "UID": "a9db9351-6082-4711-8140-46d1d8f7b8fb",
+        "x": 45,
+        "y": {
+          "NodeID": 20,
+          "UID": "c1037705-4044-4975-a398-828c6621bbda",
+          "min": 30,
+          "max": 60,
+          "name": "random"
+        },
+        "z": 0
+      },
+      "projectileType": "Free3d",
+      "NodeID": 17
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c9dc8437-77d5-416b-9f2e-74c47c160b73",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Velouria_Skill_WingScales_ThrowBullet",
+      "NodeID": 26
+    },
+    "18": {
+      "NodeID": 18,
+      "UID": "61fdb9be-b0fa-485c-84a7-ffe4568687fe",
+      "min": -60,
+      "max": -30,
+      "name": "random"
+    },
+    "32": {
+      "action": {
+        "actionIds": [
+          31
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.8,
+      "NodeID": 32,
+      "UID": "fedb1a13-8e22-4a9c-a31e-72e5f2315a0f"
+    },
+    "11": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "5b1d1f6d-a291-41e8-bb4f-07095f615f94",
+      "effectId": "Eff_Parmon_10233_Mon_Skill_WingScales",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "20": {
+      "NodeID": 20,
+      "UID": "c1037705-4044-4975-a398-828c6621bbda",
+      "min": 30,
+      "max": 60,
+      "name": "random"
+    },
+    "12": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "14da576f-486d-4e29-85de-28a97321e1f9",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Velouria_Skill_WingScales",
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_12331300",
+  "NodeID": 6,
+  "UID": "565084b5-9852-411f-8059-eb08aec2712d",
+  "eventIds": [
+    4,
+    16,
+    32
+  ],
+  "layer": "Base",
+  "length": 3.3
+}

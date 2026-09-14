@@ -1,0 +1,34 @@
+{
+  "BPName": "ability_9200002",
+  "NodeID": 1,
+  "UID": "58ae34f0-00ad-4fde-97cc-410eaf88b801",
+  "abilityParamId": 9200002,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 9200002001,
+      "name": "setCombatActionTimeline",
+      "UID": "f3f7a2c6-6afa-405d-abc7-f76f6c63b4a9",
+      "target": "CASTER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FlashHeal"
+  ],
+  "preloadEffs": [
+    "Eff_Avatar_Girl_Skill_Revive"
+  ],
+  "searchRelation": 1,
+  "name": "复活",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "shortDesc": "",
+  "searchTargetRangeDown": 0
+}

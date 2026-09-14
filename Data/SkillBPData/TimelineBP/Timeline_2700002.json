@@ -1,0 +1,71 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "3": {
+      "rValue": {
+        "UID": "97fe1ddc-7c62-42c8-93e3-0666dfc8deed",
+        "number": 0.4,
+        "name": "constNumber",
+        "NodeID": 7
+      },
+      "name": "div",
+      "UID": "4559e306-aeb6-40da-a381-9aa6f0b5c09f",
+      "NodeID": 3,
+      "lValue": {
+        "UID": "3a274b5f-eb38-4b53-9e26-12198dbb7971",
+        "target": "MASTER",
+        "name": "getBodySize",
+        "NodeID": 2
+      }
+    },
+    "4": {
+      "scale": {
+        "rValue": {
+          "UID": "97fe1ddc-7c62-42c8-93e3-0666dfc8deed",
+          "number": 0.4,
+          "name": "constNumber",
+          "NodeID": 7
+        },
+        "name": "div",
+        "UID": "4559e306-aeb6-40da-a381-9aa6f0b5c09f",
+        "NodeID": 3,
+        "lValue": {
+          "UID": "3a274b5f-eb38-4b53-9e26-12198dbb7971",
+          "target": "MASTER",
+          "name": "getBodySize",
+          "NodeID": 2
+        }
+      },
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "443cd6a5-7626-430e-aae9-9ef7948c48b0",
+      "effectId": "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Creation_New",
+      "speed": 1.5,
+      "NodeID": 4
+    },
+    "5": {
+      "UID": "12efcf9d-13aa-42e1-b331-b70be11e6b02",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4
+        ]
+      },
+      "NodeID": 5
+    },
+    "2": {
+      "UID": "3a274b5f-eb38-4b53-9e26-12198dbb7971",
+      "target": "MASTER",
+      "name": "getBodySize",
+      "NodeID": 2
+    }
+  },
+  "BPName": "timeline_2700002",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    5
+  ],
+  "layer": "Base",
+  "length": 5
+}

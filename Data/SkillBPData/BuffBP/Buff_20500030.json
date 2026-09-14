@@ -1,0 +1,37 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_20500030",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "shieldData": {
+    "absorbRate": 1,
+    "isGeneral": true,
+    "isTeamShare": true,
+    "elementType": 0,
+    "shieldPoint": {
+      "rValue": 0.3,
+      "name": "multiply",
+      "UID": "e147c475-d10f-4954-a9fc-1dcf665caf7f",
+      "NodeID": 4,
+      "lValue": {
+        "UID": "a7b9d46b-027a-464b-8f76-569e9a721d64",
+        "target": "CURPET",
+        "name": "getLossHp",
+        "NodeID": 3
+      }
+    }
+  },
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "a7b9d46b-027a-464b-8f76-569e9a721d64",
+      "target": "CURPET",
+      "name": "getLossHp",
+      "NodeID": 3
+    }
+  },
+  "parentDynamicRPCStates": {}
+}

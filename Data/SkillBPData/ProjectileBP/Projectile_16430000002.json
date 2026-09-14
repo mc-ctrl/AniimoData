@@ -1,0 +1,47 @@
+{
+  "refControlPoint": [
+    [
+      -2.42,
+      1.862,
+      4.8
+    ],
+    [
+      1.9,
+      2.818,
+      7.41
+    ]
+  ],
+  "duration": 2,
+  "BPName": "ability_16430000",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10643_Attack_Bullet01",
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "autoSwitchTrack": true,
+  "nodeMap": {},
+  "maxMoveSpeed": 25,
+  "moveSpeed": 20,
+  "performRatio": 0.9,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.2,
+  "sweepShape": 0,
+  "refStartPoint": [
+    0,
+    0.6,
+    0.5
+  ],
+  "tickInterval": 0.05,
+  "refTargetPoint": [
+    0,
+    1,
+    10
+  ],
+  "startSleepTime": 0,
+  "maxHitNum": 1,
+  "groundSweepRadius": 0.05,
+  "kind": "BezierCurve",
+  "acceleration": 1
+}

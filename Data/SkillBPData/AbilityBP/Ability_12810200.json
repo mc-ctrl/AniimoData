@@ -1,0 +1,33 @@
+{
+  "BPName": "ability_12810200",
+  "NodeID": 1,
+  "UID": "7825a09a-8176-459c-a46b-c5ba9bf8838c",
+  "abilityParamId": 10800140,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "12": {
+      "timelineId": 12810200002,
+      "name": "setCombatActionTimeline",
+      "UID": "205639eb-eab5-410d-b402-9047ff01db6f",
+      "target": "CASTER",
+      "NodeID": 12
+    }
+  },
+  "onAbilityCastIds": [
+    12
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3.5,
+  "preloadAnims": [
+    "Skill_Talus",
+    "Skill_BurrowAttack"
+  ],
+  "searchRelation": 2,
+  "searchTargetRangeDown": 1,
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "onlyHasActOnTargets": true,
+  "name": "地刺"
+}

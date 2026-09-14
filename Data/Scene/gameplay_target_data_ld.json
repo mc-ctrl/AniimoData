@@ -1,0 +1,418 @@
+{
+  "7941344512": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_SDD_2",
+    "conditionId1": 79413445121,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "name": "Dr_Glass_SDD_1",
+    "timer": 7941344512
+  },
+  "8090177712": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_Mimbi_2",
+    "conditionId1": 80901777121,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_Mimbi_1",
+    "timer": 8090177712
+  },
+  "8259334759": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_2_1",
+    "name": "HELP_WHITEANTNEST_2",
+    "resettable": 0,
+    "conditionId1": 82593347591,
+    "trace1": 0
+  },
+  "8259334770": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_2_1",
+    "name": "HELP_WHITEANTNEST_2",
+    "resettable": 0,
+    "conditionId1": 82593347701,
+    "trace1": 0
+  },
+  "8670009920": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_2_1",
+    "name": "HELP_WHITEANTNEST_2",
+    "resettable": 0,
+    "conditionId1": 86700099201,
+    "trace1": 0
+  },
+  "8670009938": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_2_1",
+    "name": "HELP_WHITEANTNEST_2",
+    "resettable": 0,
+    "conditionId1": 86700099381,
+    "trace1": 0
+  },
+  "8746078624": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_Susuta_2",
+    "conditionId1": 87460786241,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_Susuta_1",
+    "timer": 8746078624
+  },
+  "9100611523": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_4_1",
+    "name": "HELP_WHITEANTNEST_4",
+    "resettable": 0,
+    "conditionId1": 91006115231,
+    "trace1": 0
+  },
+  "9100611524": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_4_2",
+    "name": "HELP_WHITEANTNEST_4",
+    "resettable": 0,
+    "conditionId1": 91006115241,
+    "trace1": 0
+  },
+  "9100656017": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_5_1",
+    "name": "HELP_WHITEANTNEST_5",
+    "resettable": 0,
+    "conditionId1": 91006560171,
+    "trace1": 0
+  },
+  "9100656018": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_5_3",
+    "name": "HELP_WHITEANTNEST_5",
+    "resettable": 0,
+    "conditionId1": 91006560181,
+    "trace1": 0
+  },
+  "9100719759": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "addType": 5,
+    "conditionDesc1": "Morphling_GamePlay_Quest",
+    "name": "Morphling_GamePlay_Title",
+    "resettable": 0,
+    "conditionId1": 91007197591,
+    "trace1": 0
+  },
+  "9100825710": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_3_2",
+    "name": "HELP_WHITEANTNEST_3",
+    "resettable": 0,
+    "conditionId1": 91008257101,
+    "trace1": 0
+  },
+  "9101259973": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "addType": 5,
+    "conditionDesc1": "Morphling_GamePlay_Quest",
+    "name": "Morphling_GamePlay_Title",
+    "resettable": 0,
+    "conditionId1": 91012599731,
+    "trace1": 0
+  },
+  "9106706168": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "addType": 5,
+    "conditionDesc1": "Morphling_GamePlay_Quest",
+    "name": "Morphling_GamePlay_Title",
+    "resettable": 0,
+    "conditionId1": 91067061681,
+    "trace1": 0
+  },
+  "76696193122": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "addType": 5,
+    "conditionDesc1": "Morphling_GamePlay_Quest",
+    "name": "Morphling_GamePlay_Title",
+    "resettable": 0,
+    "conditionId1": 766961931221,
+    "trace1": 0
+  },
+  "91068453126": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "addType": 5,
+    "conditionDesc1": "Morphling_GamePlay_Quest",
+    "name": "Morphling_GamePlay_Title",
+    "resettable": 0,
+    "conditionId1": 910684531261,
+    "trace1": 0
+  },
+  "91085968102": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "addType": 5,
+    "conditionDesc1": "Morphling_GamePlay_Quest",
+    "name": "Morphling_GamePlay_Title",
+    "resettable": 0,
+    "conditionId1": 910859681021,
+    "trace1": 0
+  },
+  "723070496": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_Celestis_2",
+    "conditionId1": 7230704961,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_Celestis_1",
+    "timer": 723070496
+  },
+  "787866568": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_Budsquire_2",
+    "conditionId1": 7878665681,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_Budsquire_1",
+    "timer": 787866568
+  },
+  "816003705": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_1_1",
+    "name": "HELP_WHITEANTNEST_1",
+    "resettable": 0,
+    "conditionId1": 8160037051,
+    "trace1": 0
+  },
+  "816003706": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_1_2",
+    "name": "HELP_WHITEANTNEST_1",
+    "resettable": 0,
+    "conditionId1": 8160037061,
+    "trace1": 0
+  },
+  "816003708": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_1_3",
+    "name": "HELP_WHITEANTNEST_1",
+    "resettable": 0,
+    "conditionId1": 8160037081,
+    "trace1": 0
+  },
+  "849854506": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_1_1",
+    "name": "HELP_WHITEANTNEST_1",
+    "resettable": 0,
+    "conditionId1": 8498545061,
+    "trace1": 0
+  },
+  "849854507": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_1_2",
+    "name": "HELP_WHITEANTNEST_1",
+    "resettable": 0,
+    "conditionId1": 8498545071,
+    "trace1": 90711935
+  },
+  "849854509": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_1_3",
+    "name": "HELP_WHITEANTNEST_1",
+    "resettable": 0,
+    "conditionId1": 8498545091,
+    "trace1": 90713753
+  },
+  "910071504": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_6_1",
+    "name": "HELP_WHITEANTNEST_6",
+    "resettable": 0,
+    "conditionId1": 9100715041,
+    "trace1": 0
+  },
+  "910071505": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_6_2",
+    "name": "HELP_WHITEANTNEST_6",
+    "resettable": 0,
+    "conditionId1": 9100715051,
+    "trace1": 0
+  },
+  "910082579": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "conditionDesc1": "HELP_WHITEANTNEST_3_1",
+    "name": "HELP_WHITEANTNEST_3",
+    "resettable": 0,
+    "conditionId1": 9100825791,
+    "trace1": 0
+  },
+  "911052446": {
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 0,
+    "addType": 5,
+    "name": "RoundTimeTest",
+    "resettable": 0,
+    "conditionId1": 9110524461,
+    "trace1": 0
+  },
+  "5500660551": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_ZDC_2",
+    "conditionId1": 55006605511,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_ZDC_1",
+    "timer": 5500660551
+  },
+  "6026219154": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_Shelly_2",
+    "conditionId1": 60262191541,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_Shelly_1",
+    "timer": 6026219154
+  },
+  "7878665612": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_Budsquire_2",
+    "conditionId1": 78786656121,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_Budsquire_1",
+    "timer": 7878665612
+  },
+  "7878665616": {
+    "resettable": 0,
+    "addType": 5,
+    "conditionDesc1": "Dr_Glass_Budsquire_2",
+    "conditionId1": 78786656161,
+    "trace1": 0,
+    "conditionExpression": [
+      1
+    ],
+    "conditionNum1": 1,
+    "name": "Dr_Glass_Budsquire_1",
+    "timer": 7878665616
+  }
+}

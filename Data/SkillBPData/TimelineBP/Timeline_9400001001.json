@@ -1,0 +1,400 @@
+{
+  "nodeMap": {
+    "82": {
+      "delayTime": 0.5,
+      "name": "setExtraTempPet",
+      "templateId": 102220000,
+      "appearPresetDuration": 1,
+      "UID": "67f7e5b0-6657-4789-a53c-0d3de97e5aa5",
+      "loopPresetDuration": 30,
+      "NodeID": 82,
+      "delayActionIds": [
+        109,
+        80,
+        133
+      ]
+    },
+    "83": {
+      "UID": "cc573a52-ec56-4d97-9510-13ce232162cb",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          82
+        ]
+      },
+      "NodeID": 83
+    },
+    "84": {
+      "target": "CURPET",
+      "duration": 1,
+      "buffId": 10012,
+      "NodeID": 84,
+      "UID": "a1f53787-c2dc-42b8-95e8-be38c52faac0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "85": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "a5181500-f419-4336-8fdc-edc0e4f0aa14",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Transform_Exit_01",
+      "NodeID": 85
+    },
+    "87": {
+      "eventName": "RunOut",
+      "NodeID": 87,
+      "UID": "70443721-c091-4887-b45d-709d7f32d09f",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        85,
+        108,
+        106,
+        103
+      ]
+    },
+    "89": {
+      "action": {
+        "actionIds": [
+          87,
+          90
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2,
+      "NodeID": 89,
+      "UID": "7474251f-c4e1-4593-9940-fdb66fe0168c"
+    },
+    "122": {
+      "UID": "eb3707a7-ddb5-4866-a22e-88cb3e630a4a",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 122
+    },
+    "90": {
+      "time": 999,
+      "notShowCountDown": true,
+      "actionIds": [
+        85,
+        108,
+        106,
+        103
+      ],
+      "aiTriggerTime": 1,
+      "UID": "1dea7a37-10a9-4636-8970-18ed24fb6025",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 90
+    },
+    "123": {
+      "rValue": 40,
+      "name": "greater",
+      "UID": "f09f2709-01ac-4ba5-897f-73f848c3b179",
+      "NodeID": 123,
+      "lValue": {
+        "UID": "eb3707a7-ddb5-4866-a22e-88cb3e630a4a",
+        "name": "getRoguePersistData",
+        "key": "rogueSkillEp",
+        "NodeID": 122
+      }
+    },
+    "99": {
+      "actionIds": [
+        97,
+        124
+      ],
+      "name": "registerDeadEvent",
+      "UID": "76b625ec-b193-4092-a59c-5a8f9c312bd8",
+      "target": "CURPET",
+      "NodeID": 99
+    },
+    "92": {
+      "UID": "90c3dc5f-7e27-4756-8c99-979ad65451e3",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          85,
+          108,
+          106,
+          103
+        ]
+      },
+      "NodeID": 92
+    },
+    "126": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "807f2d2d-ad7c-473f-9dcb-e38e6b90e4f4",
+      "value": {
+        "UID": "12aa7ab1-835e-407d-b68d-4f071895f26e",
+        "number": 40,
+        "name": "constNumber",
+        "NodeID": 125
+      },
+      "NodeID": 126
+    },
+    "94": {
+      "actionIds": [
+        129,
+        85,
+        108,
+        106,
+        103
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "24576c46-b7b3-4300-9a6a-dd281cc83a1f",
+      "target": "CURPET",
+      "NodeID": 94
+    },
+    "128": {
+      "rValue": 40,
+      "name": "greater",
+      "UID": "5bc9e924-6cb0-4070-baa4-bf2209e0034e",
+      "NodeID": 128,
+      "lValue": {
+        "UID": "ccae334c-6749-4a52-b656-580f19c5d919",
+        "name": "getRoguePersistData",
+        "key": "rogueSkillEp",
+        "NodeID": 127
+      }
+    },
+    "96": {
+      "UID": "f5ac0f4e-bd80-472d-8aa4-153b08382e97",
+      "name": "cancelSkill",
+      "force": true,
+      "NodeID": 96
+    },
+    "129": {
+      "actionIds": [
+        131
+      ],
+      "conditionActionIds": [
+        128
+      ],
+      "UID": "9f0c9a7a-1fc1-4403-a3e0-7abc8911849e",
+      "name": "doActionsByConditions",
+      "NodeID": 129
+    },
+    "97": {
+      "UID": "676b6c12-c5ea-4c6f-92ac-9491c2319359",
+      "name": "callClientAction",
+      "actionIds": [
+        96
+      ],
+      "NodeID": 97
+    },
+    "110": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "234da0a1-7ad3-455e-a1a9-c9dfaae0d06d",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Transform_Exit_02",
+      "NodeID": 110
+    },
+    "131": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "95133355-cb48-4880-aeab-21f1c83ad75c",
+      "value": {
+        "UID": "0198a167-816c-4c49-94f1-b59d8c2cf166",
+        "number": 40,
+        "name": "constNumber",
+        "NodeID": 130
+      },
+      "NodeID": 131
+    },
+    "133": {
+      "key": "2",
+      "duration": 0.5,
+      "actionIds": [
+        132
+      ],
+      "NodeID": 133,
+      "UID": "2b006add-3b79-49af-8b4b-402c4822c891",
+      "name": "addTimer"
+    },
+    "132": {
+      "scale": 1,
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "22bf292f-51c0-4297-ab31-1b966696523b",
+      "effectId": "Eff_Buff_Rogue_Trailing_01",
+      "speed": 1,
+      "NodeID": 132
+    },
+    "100": {
+      "UID": "070fa332-f630-4db3-a682-9963d6d27b27",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          99
+        ]
+      },
+      "NodeID": 100
+    },
+    "124": {
+      "actionIds": [
+        126
+      ],
+      "conditionActionIds": [
+        123
+      ],
+      "UID": "59ea404e-4357-40ea-9d06-c4a44938e7d1",
+      "name": "doActionsByConditions",
+      "NodeID": 124
+    },
+    "114": {
+      "key": "rogueSkillEp",
+      "name": "setRoguePersistData",
+      "UID": "a344ebdf-d586-4c6c-971b-a7078308e58c",
+      "value": {
+        "UID": "d4a0dbce-9305-4519-9637-7830d4d59b59",
+        "number": 100,
+        "name": "constNumber",
+        "NodeID": 113
+      },
+      "NodeID": 114
+    },
+    "103": {
+      "delayTime": 0.5,
+      "actionIds": [
+        101
+      ],
+      "NodeID": 103,
+      "UID": "82f0527d-94dc-47d3-a050-19aa9dd0c248",
+      "removeActionIds": [
+        110
+      ],
+      "name": "removeExtraTempPet"
+    },
+    "127": {
+      "UID": "ccae334c-6749-4a52-b656-580f19c5d919",
+      "name": "getRoguePersistData",
+      "key": "rogueSkillEp",
+      "NodeID": 127
+    },
+    "106": {
+      "name": "stopEffectStr",
+      "UID": "1f6f5868-5b2f-4089-ac3b-855d12acbcd6",
+      "effectId": "Eff_Skill_Rogue_Transform_Screen_Appear",
+      "target": "OWNER",
+      "NodeID": 106
+    },
+    "71": {
+      "duration": 2,
+      "name": "playFovCameraAnim",
+      "UID": "65bead90-0eb0-46aa-b409-87d94e1d5fc4",
+      "blendInTime": 0.3,
+      "forbidFovCameraOnRepeat": 0,
+      "fovCurveName": "CommonFOV_25",
+      "target": "CURPET",
+      "blendOutTime": 0.3,
+      "NodeID": 71
+    },
+    "107": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "8ef0888b-748f-46c4-92d7-735977429864",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Transform_Enter_01",
+      "NodeID": 107
+    },
+    "95": {
+      "UID": "cc369f22-394c-457b-8ad6-4d49ffeb9bea",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          94
+        ]
+      },
+      "NodeID": 95
+    },
+    "108": {
+      "name": "stopSoundStr",
+      "UID": "86ecb8e1-bccc-49c7-b7cd-9ca4dc3f9e76",
+      "soundId": "BGM_Rogue_Transform",
+      "target": "CURPET",
+      "NodeID": 108
+    },
+    "73": {
+      "UID": "807f5ede-3036-4aec-858b-21943c0ac362",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          111,
+          114,
+          84,
+          71,
+          107,
+          78
+        ]
+      },
+      "NodeID": 73
+    },
+    "109": {
+      "target": "CURPET",
+      "name": "playSoundStr",
+      "UID": "36bd45d5-197f-46cb-bd17-058431917ba8",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Rogue_Transform_Enter_02",
+      "NodeID": 109
+    },
+    "78": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "e1e7c754-a861-4788-aede-77a2b2d9cddb",
+      "effectId": "Eff_Skill_Rogue_Transform_Start_DisAppear",
+      "speed": 1,
+      "NodeID": 78
+    },
+    "101": {
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "1f5d4195-0646-4639-85ed-4cad74125a4e",
+      "effectId": "Eff_Skill_Rogue_Transform_End",
+      "speed": 1,
+      "NodeID": 101
+    },
+    "79": {
+      "scale": 1,
+      "target": "CURPET",
+      "name": "playEffectStr",
+      "UID": "36113fc2-3c6f-466f-afdd-4808ff63803c",
+      "effectId": "Eff_Skill_Rogue_Transform_Start_Appear",
+      "speed": 1,
+      "NodeID": 79
+    },
+    "111": {
+      "key": "RogueTransform",
+      "name": "setCacheVal",
+      "UID": "02819a31-4d5c-480f-b2e2-793a15583048",
+      "target": "OWNER",
+      "val": 1,
+      "NodeID": 111
+    },
+    "80": {
+      "duration": 0.1,
+      "actionIds": [
+        79
+      ],
+      "NodeID": 80,
+      "UID": "32cd1825-d0ef-4b23-9182-ab513adf33f8",
+      "name": "addTimer"
+    }
+  },
+  "BPName": "ability_9400001",
+  "NodeID": 75,
+  "UID": "bd70766a-fc50-4fa1-aceb-db18bc2b38a2",
+  "eventIds": [
+    73,
+    83,
+    100,
+    92,
+    89,
+    95
+  ],
+  "layer": "Base",
+  "length": 999
+}

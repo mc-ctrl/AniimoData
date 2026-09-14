@@ -1,0 +1,108 @@
+{
+  "BPName": "ability_10120400",
+  "NodeID": 1,
+  "UID": "3b920889-dcc2-407a-82cc-b45031291735",
+  "abilityParamId": 11100030,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "autoCastDisByLockDis": true,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "244": {
+      "buffId": 2101206,
+      "name": "hasBuff",
+      "UID": "6db52d0d-0401-4ef2-a0db-dc9b66c5ab93",
+      "target": "CASTER",
+      "NodeID": 244
+    },
+    "239": {
+      "buffId": 2101104,
+      "name": "hasBuff",
+      "UID": "0346a466-467b-4247-a0f2-5c1a6df09c9d",
+      "target": "CASTER",
+      "NodeID": 239
+    },
+    "236": {
+      "buffId": 2101102,
+      "name": "hasBuff",
+      "UID": "4343abc6-638d-4b6b-aace-abab246a6d6b",
+      "target": "CASTER",
+      "NodeID": 236
+    },
+    "137": {
+      "timelineId": 10120400002,
+      "name": "setCombatActionTimeline",
+      "UID": "d36cef95-1363-47aa-951e-0dcb93d0a75e",
+      "target": "CASTER",
+      "NodeID": 137
+    },
+    "237": {
+      "UID": "0fdee03b-3a4e-4d80-bd09-3dc8ba61642a",
+      "conditionIds": [
+        236,
+        238,
+        239,
+        244
+      ],
+      "name": "conditionOr",
+      "NodeID": 237
+    },
+    "6": {
+      "timelineId": 10120400001,
+      "name": "setCombatActionTimeline",
+      "UID": "8503fe97-6c91-436e-827f-31de9a57a2f4",
+      "target": "CASTER",
+      "NodeID": 6
+    },
+    "7": {
+      "actionIds": [
+        137
+      ],
+      "conditionActionIds": [
+        237
+      ],
+      "UID": "05a19efc-69d7-4e91-85ec-074cbf4755cf",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        6
+      ],
+      "NodeID": 7
+    },
+    "238": {
+      "buffId": 2101103,
+      "name": "hasBuff",
+      "UID": "13a999ca-d26d-47bc-9566-a39029156853",
+      "target": "CASTER",
+      "NodeID": 238
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Swift"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10011_Attack_Hit",
+    "Eff_Parmon_10012_Skill_Swift_Bullet_Delay",
+    "Eff_Parmon_10012_Skill_Swift_Start_Delay",
+    "Eff_Parmon_10012_Skill_Swift_Trail_Delay",
+    "Eff_Parmon_10012_Skill_Swift_B_Delay1",
+    "Eff_Parmon_10012_Skill_Swift_B_Delay2",
+    "Eff_Parmon_10012_Skill_Swift_B_Delay3",
+    "Eff_Parmon_10012_Boss_Warning",
+    "Eff_Parmon_10012_Skill_Swift_End",
+    "Eff_Parmon_10012_Skill_Swift_Bullet",
+    "Eff_Parmon_10012_Skill_Swift_Start",
+    "Eff_Parmon_10012_Skill_Swift_Trail",
+    "Eff_Parmon_10012_Skill_Swift_B"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "shortDesc": "",
+  "searchTargetRangeDown": 3,
+  "desc": ""
+}

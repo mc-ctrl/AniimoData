@@ -1,0 +1,35 @@
+{
+  "BPName": "ability_13610102",
+  "NodeID": 1,
+  "UID": "c6d9d9dc-72e8-4e2a-839a-2318877d41da",
+  "abilityParamId": 10100170,
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "7": {
+      "timelineId": 13610102001,
+      "name": "setCombatActionTimeline",
+      "UID": "0f453f32-5594-4e9c-bc69-5c41920f0f75",
+      "target": "OWNER",
+      "NodeID": 7
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_Attack03"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10361_Skill_Attack03_Normal"
+  ],
+  "searchRelation": 2,
+  "name": "念力远程攻击",
+  "searchTargetRangeRadius": 15,
+  "searchTargetRangeUp": 4.5,
+  "overrideIcon": "$UI_Skillicon_Common_Slap.png",
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 3
+}

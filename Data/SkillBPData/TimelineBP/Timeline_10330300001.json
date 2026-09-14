@@ -1,0 +1,294 @@
+{
+  "nodeMap": {
+    "5": {
+      "NodeID": 5,
+      "UID": "0b624272-5331-4bea-b43d-2947118f4379",
+      "blendTime": 0.3,
+      "cameraPitchOffset": 0,
+      "cameraPivotHeightOverride": 1.1,
+      "cameraPivotOffsetXOverride": 0.8,
+      "cameraPivotOffsetZOverride": -1.7,
+      "cameraYawOffset": 0,
+      "maxPitch": 8,
+      "shoulderX": 0,
+      "shoulderY": 0,
+      "shoulderZ": 0,
+      "name": "setIsInAim",
+      "aimAnim": "Skill_FlyBlade_AimLoop",
+      "aimOffsetMaxPitch": 60,
+      "aimOffsetParam": "PitchValue",
+      "checkHookClawReachDistance": false,
+      "minPitch": -20,
+      "showAimUI": true,
+      "val": true,
+      "targetAimLength": 1
+    },
+    "81": {
+      "UID": "13110adc-2529-45dc-9cbd-9f85c0f34087",
+      "name": "checkIsInAutoAim",
+      "NodeID": 81
+    },
+    "41": {
+      "renderNameFilter": [
+        "M_Parmon_10033_Body1"
+      ],
+      "duration": 2.146,
+      "disableWhenFinished": false,
+      "NodeID": 41,
+      "UID": "a9b7a1d6-0ace-4974-b427-f52e2c8c2358",
+      "target": "OWNER",
+      "presetName": "Eff_Parmon_10033_Skill_FlyBlade_Start",
+      "name": "playPreset"
+    },
+    "7": {
+      "action": {
+        "actionIds": [
+          5,
+          24
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.26,
+      "NodeID": 7,
+      "UID": "ab2d265b-d53e-41a6-a073-14258ed484e6"
+    },
+    "95": {
+      "duration": 0.6,
+      "name": "puppetPreCastAction",
+      "UID": "fd4350df-4c67-4a46-941e-ec2d4d053d9b",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 95
+    },
+    "94": {
+      "duration": 0.3,
+      "name": "puppetPreCastAction",
+      "UID": "39ad9ef8-0db7-4c8f-9097-fa138dcf7128",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.05,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 94
+    },
+    "93": {
+      "action": {
+        "actionIds": [
+          92
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 93,
+      "UID": "1bd9688e-8874-40ed-9d18-c31c92b8ccac"
+    },
+    "20": {
+      "chargeTimeActions": [
+        {
+          "actionIds": [
+            19
+          ],
+          "chargeTime": 0
+        }
+      ],
+      "actionIds": [
+        19
+      ],
+      "NodeID": 20,
+      "UID": "d4fd546c-8e6f-4104-905c-57a9e32d0168",
+      "onlyTriggerOnce": true,
+      "name": "registerAimSkillEndEvent",
+      "autoAimTime": 0.3
+    },
+    "92": {
+      "actionIds": [
+        94
+      ],
+      "conditionActionIds": [
+        91
+      ],
+      "UID": "202e757f-3659-4bc7-8c2d-36e975eb2fc8",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        95
+      ],
+      "NodeID": 92
+    },
+    "22": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        80
+      ],
+      "UID": "267fda02-b178-461d-a572-44bbec6a04d7",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        78,
+        20
+      ],
+      "NodeID": 22
+    },
+    "23": {
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.01,
+      "NodeID": 23,
+      "UID": "1fd638b7-b00b-4156-bb31-3b905ac78097"
+    },
+    "24": {
+      "actionIds": [
+        17
+      ],
+      "conditionActionIds": [
+        81
+      ],
+      "UID": "4d1ddc4a-c389-42a6-b631-19f045f02bd5",
+      "name": "doActionsByConditions",
+      "NodeID": 24
+    },
+    "43": {
+      "action": {
+        "actionIds": [
+          41,
+          48
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 43,
+      "UID": "13bf6630-ac5d-4c5f-be6d-a0e0bf8a8e18"
+    },
+    "83": {
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          82
+        ]
+      },
+      "NodeID": 83
+    },
+    "72": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "31fec1a4-d174-449c-a9f0-e887138f110b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10033_Skill_FlyBlade_Start",
+      "NodeID": 72
+    },
+    "82": {
+      "duration": 2,
+      "name": "puppetPreCastAction",
+      "UID": "0916611c-39cd-4b2a-bd02-4bcef13a91c3",
+      "effectId": "Eff_Skill_Common_Warning",
+      "timeScale": 0.1,
+      "target": "OWNER",
+      "enableOverrideSkillHitPos": false,
+      "enablePlayEffectStr": true,
+      "speed": 1,
+      "enableFrameFreeze": true,
+      "NodeID": 82
+    },
+    "91": {
+      "label": 16,
+      "name": "isPuppetLabel",
+      "UID": "c519c338-194f-4af2-a2a4-be0eff8d4441",
+      "target": "OWNER",
+      "NodeID": 91
+    },
+    "48": {
+      "renderNameFilter": [
+        "M_Parmon_10033_Body1"
+      ],
+      "duration": 999,
+      "disableWhenFinished": false,
+      "NodeID": 48,
+      "UID": "949dd31e-5f56-4d2d-8968-7787d01c03f1",
+      "target": "OWNER",
+      "presetName": "Ctrl_Eff_Parmon_10033_Skill_FlyBlade_Start",
+      "name": "playPreset"
+    },
+    "17": {
+      "timelineId": 10330300002,
+      "name": "jumpToNextTimeline",
+      "UID": "292ddbbc-cfad-445c-8638-34bd73e0e982",
+      "target": "OWNER",
+      "NodeID": 17
+    },
+    "19": {
+      "conditionActionIds": [
+        79
+      ],
+      "UID": "9dfbf7a1-6645-4f29-b4be-1eca760a320d",
+      "name": "doActionsByConditions",
+      "NodeID": 19,
+      "elseActionIds": [
+        17
+      ]
+    },
+    "78": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "050e948f-d210-406d-98e1-7d94124a96c7",
+      "target": "OWNER",
+      "NodeID": 78,
+      "animId": "Skill_FlyBlade_Start"
+    },
+    "50": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "2ab4f050-5b2d-4a63-a7e7-46c70035d31c",
+      "effectId": "Eff_Parmon_10033_Skill_FlyBlade_Start",
+      "speed": 1,
+      "NodeID": 50
+    },
+    "79": {
+      "UID": "baf195a3-a7fb-42b9-bf61-7ac9758ad239",
+      "name": "checkIsInAutoAim",
+      "NodeID": 79
+    },
+    "52": {
+      "UID": "94907fe9-f883-4901-8e17-3283d32d2f15",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          50,
+          72
+        ]
+      },
+      "NodeID": 52
+    },
+    "80": {
+      "name": "isActorType",
+      "UID": "a8cd1c70-0879-4499-8882-9216a855027a",
+      "target": "OWNER",
+      "NodeID": 80,
+      "actorType": 3
+    }
+  },
+  "BPName": "ability_10330300",
+  "NodeID": 9,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    83,
+    43,
+    52,
+    23,
+    7,
+    93
+  ],
+  "layer": "Base",
+  "length": 999
+}

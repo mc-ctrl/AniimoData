@@ -1,0 +1,52 @@
+[
+  {
+    "type": 1,
+    "shopItemId": 61,
+    "scene": "$P_Studio_710100_Scene.prefab",
+    "name": 1228141472,
+    "shopId": 54,
+    "icon": "$UI_HUD_Entry_Purchase.png",
+    "bgm": "BGM_Avatar_S_ForestSpirit",
+    "golden_need": {
+      "pityCount": 150,
+      "poolId": 101
+    },
+    "currency": [
+      1,
+      3
+    ],
+    "awardPoolId": [
+      {
+        "probability": 1,
+        "poolId": 101
+      },
+      {
+        "probability": 9,
+        "poolId": 102
+      },
+      {
+        "probability": 10,
+        "poolId": 103
+      },
+      {
+        "probability": 80,
+        "poolId": 104
+      }
+    ],
+    "closeTime": [
+      1,
+      "2026/11/11/23:59:59"
+    ],
+    "discount": 0.8,
+    "drawNumber": [
+      1,
+      10
+    ],
+    "openTime": [
+      1,
+      "2026/3/26/4:00:00"
+    ],
+    "sceneTimeLine": "$P_TL_UIScene_Avatar_Set_10035_Entrance.prefab",
+    "itemId": 1601006
+  }
+]

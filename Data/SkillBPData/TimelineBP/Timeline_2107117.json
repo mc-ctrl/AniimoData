@@ -1,0 +1,205 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "37": {
+      "offsetXYZ": [
+        0,
+        0.15,
+        0
+      ],
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "62d4483b-36f7-4c68-a74b-202daa07c0b7",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Hit_",
+        "name": "constString",
+        "UID": "c41e30ac-d2e8-4eb0-8e40-1e19567919b6",
+        "NodeID": 36,
+        "concatenateNumber": {
+          "UID": "acdf528e-c900-4714-b34f-5a8cb73e2d42",
+          "target": "MASTER",
+          "name": "getMainElementName",
+          "NodeID": 35
+        }
+      },
+      "speed": 1,
+      "NodeID": 37
+    },
+    "38": {
+      "UID": "cb4acd63-1923-438f-a93d-6d11582dc805",
+      "target": "MASTER",
+      "name": "getMainElementName",
+      "NodeID": 38
+    },
+    "14": {
+      "calcResultNodeId": 12,
+      "name": "actOnTargets",
+      "UID": "89cbf86a-b51f-42a1-9194-07145262960b",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4.5,
+            3,
+            5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "hitBoxId": "",
+      "needEcs": true,
+      "actionIds": [
+        12,
+        26,
+        37
+      ],
+      "impulseId": 1000,
+      "NodeID": 14
+    },
+    "35": {
+      "UID": "acdf528e-c900-4714-b34f-5a8cb73e2d42",
+      "target": "MASTER",
+      "name": "getMainElementName",
+      "NodeID": 35
+    },
+    "26": {
+      "target": "TARGET",
+      "duration": 0.5,
+      "buffId": 270010006,
+      "NodeID": 26,
+      "UID": "db1a9584-9cea-4d98-b1c5-0b594a21e4c1",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c06484a6-6104-442e-91d7-e8a074491e4b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10203_Skill_MagicZone_BlackHole",
+      "NodeID": 27
+    },
+    "40": {
+      "scale": 1.25,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "1fc8a6f7-d63d-4add-addf-852a7ed5c7e2",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Normal_Atk_Shield_Skill_SlowDown_",
+        "name": "constString",
+        "UID": "3143c1db-3f85-4109-a0d3-d918ffe5e604",
+        "NodeID": 39,
+        "concatenateNumber": {
+          "UID": "cb4acd63-1923-438f-a93d-6d11582dc805",
+          "target": "MASTER",
+          "name": "getMainElementName",
+          "NodeID": 38
+        }
+      },
+      "speed": 1,
+      "NodeID": 40
+    },
+    "9": {
+      "eventType": "NotifyState",
+      "endTime": 7,
+      "NodeID": 9,
+      "UID": "cefcd2ff-e421-40c8-b8e6-fe8b77b13dcd",
+      "startTime": 0,
+      "tickInterval": 0.3
+    },
+    "30": {
+      "name": "stopEffectStr",
+      "UID": "8094e973-cbbf-4f29-aa5e-1d5fcd5bf877",
+      "effectId": "Eff_Parmon_10203_Skill_MagicZone_BlackHole",
+      "target": "OWNER",
+      "NodeID": 30
+    },
+    "32": {
+      "UID": "8717ebaa-0728-45e3-ae74-855eba6f892a",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "NodeID": 32
+    },
+    "16": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 7,
+      "NodeID": 16,
+      "UID": "e4bd5e74-123e-4b6c-8c69-872a9d74b8d1",
+      "onUpdate": {
+        "actionIds": [
+          14
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          14
+        ]
+      }
+    },
+    "29": {
+      "UID": "246fa402-2070-4ba2-9469-f9834ea12784",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          40,
+          27
+        ]
+      },
+      "NodeID": 29
+    },
+    "12": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 0.5,
+        "reduce_cur_tp_rate": 0.5
+      },
+      "attackData": {
+        "impulseId": 1000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Dark_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "forceOverrideElementType": true,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "elementType": 0
+      },
+      "UID": "1dd1a0ec-f39a-42eb-9b9a-f3e7e03f6dec",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 12
+    }
+  },
+  "BPName": "timeline_2107117",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    29,
+    9,
+    32,
+    16
+  ],
+  "layer": "Base",
+  "length": 7
+}

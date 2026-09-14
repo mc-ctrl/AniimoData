@@ -1,0 +1,51 @@
+{
+  "BPName": "ability_10250500",
+  "NodeID": 1,
+  "UID": "34c7b4a7-ba2f-4bb0-9af5-3f3d084970b1",
+  "abilityParamId": 10500380,
+  "abilityType": 2,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "7": {
+      "timelineId": 10250500001,
+      "name": "setCombatActionTimeline",
+      "UID": "da757e96-5c4c-4855-89dd-236f12edb6f1",
+      "target": "CASTER",
+      "NodeID": 7
+    },
+    "36": {
+      "buffId": 9102502,
+      "name": "removeBuff",
+      "UID": "167807af-2e36-4403-a588-2155260d916a",
+      "target": "CASTER",
+      "NodeID": 36
+    }
+  },
+  "onAbilityCastIds": [
+    7
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 4.5,
+  "preloadAnims": [
+    "Skill_Breath"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10025_Skill_Breath_Strong",
+    "Eff_Parmon_10025_Skill_Breath_Charge",
+    "Eff_Hit_Fire_Blunt"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 2,
+  "shortDesc": "",
+  "selectPos": 1,
+  "onAbilityEndIds": [
+    36
+  ],
+  "onlyHasActOnTargets": true,
+  "searchTargetRangeDown": 1,
+  "desc": ""
+}

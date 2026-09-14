@@ -1,0 +1,117 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "taken_dmg_dec_rate_v": 0.3
+  },
+  "NodeID": 1,
+  "UID": "b618e1a3-c3b0-4a87-a696-337b5fb1193e",
+  "tags": [
+    10,
+    1
+  ],
+  "parentDynamicRPCStates": {},
+  "BPName": "buff_2102708",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "0f1da8a8-977d-4007-ae85-ec748f83dcfc",
+      "target": "OWNER",
+      "NodeID": 4,
+      "animId": "Skill_DefMode_Loop"
+    },
+    "6": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "109ebee7-63cb-475f-a0e6-eaea06a083c9",
+      "target": "OWNER",
+      "NodeID": 6,
+      "animId": "Skill_DefMode_End"
+    },
+    "10": {
+      "drag": 0,
+      "inputAcceleration": 0,
+      "NodeID": 10,
+      "UID": "a84e8086-6d7f-42d4-ba08-c49c2e3131e1",
+      "name": "enableSpecialDefenseST",
+      "enable": false,
+      "maxVelocity": 0
+    },
+    "15": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cdb65ae6-a166-4f65-96fe-92bb4f9882c2",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "speed": 1,
+      "NodeID": 15
+    },
+    "16": {
+      "name": "stopEffectStr",
+      "UID": "dae136c4-06dd-49fa-adbc-3073c9541b68",
+      "effectId": "Eff_Parmon_10027_Skill_DefMode_Loop",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "8": {
+      "UID": "f0734016-6f5a-4138-9322-866b463766c1",
+      "name": "stopAnimation",
+      "anim": "Skill_DefMode_Loop",
+      "NodeID": 8
+    },
+    "9": {
+      "drag": 0,
+      "inputAcceleration": 0,
+      "NodeID": 9,
+      "UID": "c74535d3-04f0-4330-a67a-9e5959c1249b",
+      "name": "enableSpecialDefenseST",
+      "enable": true,
+      "maxVelocity": 0
+    },
+    "14": {
+      "UID": "393592bf-ba04-43c7-8759-26d9bfbd6c13",
+      "name": "disableWeightPush",
+      "NodeID": 14
+    },
+    "11": {
+      "UID": "1842dbde-4535-414b-9b5d-9d56cd548768",
+      "name": "registerReceiveBeAttackedEvent",
+      "interval": 0.1,
+      "NodeID": 11
+    },
+    "13": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "690d6cab-2eee-401e-86fd-c80ac2a6f14f",
+      "to": 10270400,
+      "NodeID": 13,
+      "from": 10270401
+    },
+    "12": {
+      "recoverOnExit": true,
+      "notShowCountDown": true,
+      "name": "switchSkill",
+      "UID": "65ae78c0-efc5-4c8d-94fc-1662b87304c7",
+      "to": 10270401,
+      "NodeID": 12,
+      "from": 10270400
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    8,
+    6,
+    10,
+    13,
+    16
+  ],
+  "onBuffStartIds": [
+    4,
+    9,
+    11,
+    12,
+    14,
+    15
+  ]
+}

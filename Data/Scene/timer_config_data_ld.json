@@ -1,0 +1,62 @@
+{
+  "723070496": {
+    "type": 1,
+    "value": 35,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Celestis_2"
+  },
+  "787866568": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Budsquire_2"
+  },
+  "8746078624": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Susuta_2"
+  },
+  "8090177712": {
+    "type": 2,
+    "value": 120,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Mimbi_1"
+  },
+  "7941344512": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 0,
+    "txt": " "
+  },
+  "911052446": {
+    "type": 2,
+    "value": 1,
+    "useHUDTarget": 0,
+    "txt": "RoundTimeTest"
+  },
+  "5500660551": {
+    "type": 2,
+    "value": 50,
+    "useHUDTarget": 0,
+    "txt": "       "
+  },
+  "6026219154": {
+    "type": 2,
+    "value": 45,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Shelly_2"
+  },
+  "7878665612": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Budsquire_2"
+  },
+  "7878665616": {
+    "type": 2,
+    "value": 60,
+    "useHUDTarget": 3000,
+    "txt": "Dr_Glass_Budsquire_2"
+  }
+}

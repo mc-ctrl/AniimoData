@@ -1,0 +1,571 @@
+{
+  "nodeMap": {
+    "37": {
+      "key": {
+        "str": "timer",
+        "name": "constString",
+        "UID": "87b3c637-0bf7-4960-9316-46bbf51be33a",
+        "NodeID": 43,
+        "concatenateNumber": {
+          "UID": "cffff344-2d67-4329-b281-3d86d371ccc0",
+          "name": "getIterNumber",
+          "NodeID": 41
+        }
+      },
+      "duration": {
+        "rValue": 0.04,
+        "name": "multiply",
+        "UID": "3736bb17-dbb5-4b29-a6aa-57910de08c29",
+        "NodeID": 42,
+        "lValue": {
+          "UID": "cffff344-2d67-4329-b281-3d86d371ccc0",
+          "name": "getIterNumber",
+          "NodeID": 41
+        }
+      },
+      "actionIds": [
+        78,
+        35
+      ],
+      "NodeID": 37,
+      "UID": "4cdee081-246a-4ec3-a9e1-b1dc70a04682",
+      "name": "addEntityTimer"
+    },
+    "78": {
+      "actionIds": [
+        79
+      ],
+      "conditionActionIds": [
+        77
+      ],
+      "UID": "ca64f32c-226a-4752-8742-e5edabcaa300",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        83
+      ],
+      "NodeID": 78
+    },
+    "39": {
+      "endNum": 2,
+      "actionIds": [
+        37
+      ],
+      "NodeID": 39,
+      "UID": "bcf7fe42-5cc3-4946-893e-64a18ac9ba9b",
+      "stepNum": 1,
+      "startNum": 0,
+      "name": "forEach"
+    },
+    "6": {
+      "UID": "93790821-c57f-4249-b959-698d9a329c1d",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          4,
+          12,
+          25,
+          75,
+          82
+        ]
+      },
+      "NodeID": 6
+    },
+    "82": {
+      "listId": "ability_13710220116",
+      "NodeID": 82,
+      "UID": "5ec4d3d3-570a-4b66-ad1c-4e7ec5dbf3d7",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": false
+    },
+    "83": {
+      "listId": "ability_13710220116",
+      "name": "addDynamicListItem",
+      "UID": "78d04c5a-798d-4901-9f5b-d69a71b15cfb",
+      "target": "OWNER",
+      "value": {
+        "UID": "ea266dc8-1c57-41cc-b04b-a472ad989730",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 86
+      },
+      "NodeID": 83
+    },
+    "35": {
+      "pos": {
+        "rValue": {
+          "NodeID": 66,
+          "name": "constVector3",
+          "UID": "da82ec3d-038f-4a57-a5df-e78a29169522",
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "name": "add",
+        "UID": "b6447fca-744b-4414-bee5-8fd0d26c81b8",
+        "NodeID": 63,
+        "lValue": {
+          "rotation": {
+            "name": "getTargetRotation",
+            "UID": "f645d34b-8137-4836-9d49-1c62752e92da",
+            "offsetRotation": [
+              0,
+              0,
+              60
+            ],
+            "target": "OWNER",
+            "NodeID": 67
+          },
+          "radius": 1.25,
+          "NodeID": 62,
+          "UID": "46a3624d-91d8-4b51-9aaf-7ea491d4397e",
+          "angle": {
+            "rValue": {
+              "UID": "d529c530-8867-417b-b812-312a95542073",
+              "val": -140,
+              "name": "getConstVal",
+              "NodeID": 64
+            },
+            "name": "add",
+            "UID": "815356ca-0bfe-4001-a08b-83e9d22ce673",
+            "NodeID": 61,
+            "lValue": {
+              "rValue": {
+                "UID": "0212359d-9829-4238-8daf-825e7b98b556",
+                "val": -40,
+                "name": "getConstVal",
+                "NodeID": 65
+              },
+              "name": "multiply",
+              "UID": "520c3557-4f8a-428d-ab03-c7b6915f688f",
+              "NodeID": 60,
+              "lValue": {
+                "UID": "ac038776-20be-442b-b603-b70da0533340",
+                "name": "getIterNumber",
+                "NodeID": 59
+              }
+            }
+          },
+          "center": "OWNER",
+          "name": "getRotatedPoint"
+        }
+      },
+      "offsetXYZ": [
+        0,
+        0,
+        0
+      ],
+      "rotationTowardsPos": {
+        "rValue": {
+          "listId": 53,
+          "NodeID": 54,
+          "UID": "88591a5f-9bd9-4d1f-8ad7-1ceb5da8d5d1",
+          "name": "getListItem",
+          "index": {
+            "rValue": 1,
+            "name": "add",
+            "UID": "983372a7-102a-43f6-ae15-923117e1c9d9",
+            "NodeID": 58,
+            "lValue": {
+              "UID": "53c26a93-f235-4e2a-b67e-c0b4fa639041",
+              "name": "getIterNumber",
+              "NodeID": 57
+            }
+          }
+        },
+        "name": "add",
+        "UID": "928af0f8-fbb4-4457-9b70-9ecebd5eb0a2",
+        "NodeID": 48,
+        "lValue": {
+          "rotation": "OWNER",
+          "radius": 3,
+          "NodeID": 47,
+          "UID": "280262de-9936-4e6a-8057-9b82f0a29068",
+          "angle": {
+            "rValue": {
+              "UID": "47514818-b869-479f-9e82-ac8dc5f27451",
+              "val": -40,
+              "name": "getConstVal",
+              "NodeID": 50
+            },
+            "name": "add",
+            "UID": "968be88f-66d5-42dd-a53f-5c9f47bd1527",
+            "NodeID": 46,
+            "lValue": {
+              "rValue": {
+                "UID": "24a130a9-ad94-4c1c-b7ba-b98af31c067f",
+                "val": 40,
+                "name": "getConstVal",
+                "NodeID": 51
+              },
+              "name": "multiply",
+              "UID": "b9883357-ecb6-4323-9984-1ce3d16c6ae6",
+              "NodeID": 45,
+              "lValue": {
+                "UID": "a01c283b-2c0f-497d-8023-0721c7046330",
+                "name": "getIterNumber",
+                "NodeID": 44
+              }
+            }
+          },
+          "center": "OWNER",
+          "name": "getRotatedPoint"
+        }
+      },
+      "name": "createSegmentedProjectile",
+      "UID": "19a002fa-28f8-4985-81fb-dd80d86c3c25",
+      "templateId": 13710200001,
+      "NodeID": 35
+    },
+    "18": {
+      "UID": "f2938420-4267-4bb6-92de-49752712c05d",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0,
+        "cancellable": 1
+      },
+      "NodeID": 18
+    },
+    "84": {
+      "listId": "ability_13710220116",
+      "NodeID": 84,
+      "UID": "1f8f330a-170f-489f-bb4c-b06b00b2dc06",
+      "target": "OWNER",
+      "name": "getDynamicListItem",
+      "index": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "e316ab36-f6b9-4550-97fd-9e6aacb85b8c",
+        "NodeID": 88,
+        "lValue": {
+          "UID": "08ce9036-180a-429f-93c4-e095fbb0d5ee",
+          "name": "getIterNumber",
+          "NodeID": 87
+        }
+      }
+    },
+    "77": {
+      "UID": "191b35db-56db-4844-9d2d-0d8a44314eb9",
+      "target": {
+        "listId": "ability_13710220109",
+        "NodeID": 76,
+        "UID": "b81533cc-277e-432e-809f-b0c867d83f6d",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "rValue": 1,
+          "name": "add",
+          "UID": "449338b2-f0bc-4c32-bb57-660884138152",
+          "NodeID": 81,
+          "lValue": {
+            "UID": "f953169e-ac5f-45b5-8047-67b6b66961f1",
+            "name": "getIterNumber",
+            "NodeID": 80
+          }
+        }
+      },
+      "name": "hasTarget",
+      "NodeID": 77
+    },
+    "76": {
+      "listId": "ability_13710220109",
+      "NodeID": 76,
+      "UID": "b81533cc-277e-432e-809f-b0c867d83f6d",
+      "target": "OWNER",
+      "name": "getDynamicListItem",
+      "index": {
+        "rValue": 1,
+        "name": "add",
+        "UID": "449338b2-f0bc-4c32-bb57-660884138152",
+        "NodeID": 81,
+        "lValue": {
+          "UID": "f953169e-ac5f-45b5-8047-67b6b66961f1",
+          "name": "getIterNumber",
+          "NodeID": 80
+        }
+      }
+    },
+    "52": {
+      "NodeID": 52,
+      "name": "constVector3",
+      "UID": "6c1b08db-87e0-468d-97e8-3ee73ff7f9f8",
+      "x": 0,
+      "y": 2,
+      "z": 0
+    },
+    "71": {
+      "checkCanLock": true,
+      "actionIds": [
+        69
+      ],
+      "NodeID": 71,
+      "UID": "afd09f4d-80bc-47d3-9cca-cb6f9eae7b6a",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            5,
+            3,
+            3
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": {
+            "UID": "26206ab7-cf21-4365-a864-4619de5e2c48",
+            "name": "getLockedTarget",
+            "NodeID": 73
+          },
+          "maxNum": 0
+        }
+      ],
+      "needEcs": true,
+      "name": "actOnTargets"
+    },
+    "69": {
+      "listId": "ability_13710220109",
+      "name": "addDynamicListItem",
+      "UID": "9525c26e-4643-4cfb-8df0-2e26c09ddf8b",
+      "target": "OWNER",
+      "value": {
+        "UID": "459cf514-0149-4a8d-8430-c7b870404bc7",
+        "target": "TARGET",
+        "name": "getTargetId",
+        "NodeID": 68
+      },
+      "NodeID": 69
+    },
+    "20": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.7,
+      "NodeID": 20,
+      "UID": "da7cc76d-76d6-4e34-abd5-d4372974eb81"
+    },
+    "12": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "990f1cfb-fb0c-4dc8-abad-712abf1a8318",
+      "target": "OWNER",
+      "NodeID": 12
+    },
+    "53": {
+      "UID": "26815a7f-787b-40c1-bec9-64f089bbf63d",
+      "name": "createList",
+      "list": [
+        {
+          "NodeID": 52,
+          "name": "constVector3",
+          "UID": "6c1b08db-87e0-468d-97e8-3ee73ff7f9f8",
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "NodeID": 55,
+          "name": "constVector3",
+          "UID": "91e40d67-0471-4f17-bd5f-1f2c4e40c060",
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "NodeID": 56,
+          "name": "constVector3",
+          "UID": "c1b6434b-6a28-46cc-bc66-09fd525b0bf2",
+          "x": 0,
+          "y": 2,
+          "z": 0
+        }
+      ],
+      "NodeID": 53
+    },
+    "4": {
+      "UID": "ea46a060-a942-4d52-a35e-391301cf77d2",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1,
+        "canMove": 0,
+        "cancellable": 1
+      },
+      "NodeID": 4
+    },
+    "55": {
+      "NodeID": 55,
+      "name": "constVector3",
+      "UID": "91e40d67-0471-4f17-bd5f-1f2c4e40c060",
+      "x": 0,
+      "y": 4,
+      "z": 0
+    },
+    "14": {
+      "UID": "cd6f4a9f-2721-49ea-b7e1-9adba8757ed8",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 14
+    },
+    "56": {
+      "NodeID": 56,
+      "name": "constVector3",
+      "UID": "c1b6434b-6a28-46cc-bc66-09fd525b0bf2",
+      "x": 0,
+      "y": 2,
+      "z": 0
+    },
+    "75": {
+      "listId": "ability_13710220109",
+      "NodeID": 75,
+      "UID": "eaacf7e0-34d4-421d-a7c1-339b0cda4de6",
+      "target": "OWNER",
+      "name": "initDynamicList",
+      "isOnlyServer": false
+    },
+    "25": {
+      "key": "count",
+      "name": "setAbilityCacheVal",
+      "UID": "e0999d2c-6561-46aa-a716-650cfb9686eb",
+      "value": {
+        "NodeID": 24,
+        "name": "constVector3",
+        "UID": "79915ba5-5786-44cb-b3ac-ad5e90638865",
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "UID": "3b9351c4-0ecf-443a-ae86-ac647317da37",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          14
+        ]
+      },
+      "NodeID": 16
+    },
+    "40": {
+      "action": {
+        "actionIds": [
+          39
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 40,
+      "UID": "aa5909ce-1179-4033-8736-bea3b6793f5f"
+    },
+    "28": {
+      "action": {
+        "actionIds": [
+          26
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.4,
+      "NodeID": 28,
+      "UID": "a1dc1f7b-e059-4181-bb00-3741339e3c10"
+    },
+    "29": {
+      "target": "OWNER",
+      "speed": 1,
+      "NodeID": 29,
+      "UID": "86d71bee-8fef-43d0-bac8-875c9d8e0a78",
+      "effectId": "Eff_Parmon_10371_Skill_Tail_Light_Release",
+      "name": "playEffectStr",
+      "isAbilityEndRemove": true
+    },
+    "30": {
+      "UID": "97d53718-49c8-413e-a39c-cefc4d0839da",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          29
+        ]
+      },
+      "NodeID": 30
+    },
+    "21": {
+      "timelineTag": "",
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "aa6177d9-d030-460d-b23d-b4aab5f77efb",
+      "target": "OWNER",
+      "NodeID": 21,
+      "animId": "Skill_Sweep_Tail"
+    },
+    "79": {
+      "listId": "ability_13710220116",
+      "name": "addDynamicListItem",
+      "UID": "b4e273b5-ca8d-419b-a9ff-02dd5720104a",
+      "target": "OWNER",
+      "value": {
+        "listId": "ability_13710220109",
+        "NodeID": 76,
+        "UID": "b81533cc-277e-432e-809f-b0c867d83f6d",
+        "target": "OWNER",
+        "name": "getDynamicListItem",
+        "index": {
+          "rValue": 1,
+          "name": "add",
+          "UID": "449338b2-f0bc-4c32-bb57-660884138152",
+          "NodeID": 81,
+          "lValue": {
+            "UID": "f953169e-ac5f-45b5-8047-67b6b66961f1",
+            "name": "getIterNumber",
+            "NodeID": 80
+          }
+        }
+      },
+      "NodeID": 79
+    },
+    "26": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "3de97e86-d307-4014-a553-50b4a44a23f3",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10371_Skill_Sweep_Tail",
+      "NodeID": 26
+    },
+    "23": {
+      "UID": "e6fd1261-5b36-44fa-a871-d7c2cdb0f339",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          71,
+          21
+        ]
+      },
+      "NodeID": 23
+    }
+  },
+  "BPName": "ability_13710200",
+  "NodeID": 8,
+  "UID": "2cd31654-7cb2-44ef-9f4e-5bb1bb18869b",
+  "eventIds": [
+    6,
+    16,
+    20,
+    23,
+    28,
+    40,
+    30
+  ],
+  "layer": "Base",
+  "length": 4.34
+}

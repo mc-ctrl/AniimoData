@@ -1,0 +1,58 @@
+{
+  "BPName": "ability_11439900",
+  "NodeID": 1,
+  "UID": "cc09a6b4-771c-4977-b797-44e980976a67",
+  "desc": "水母大招自爆",
+  "abilityType": 4,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 11439900001,
+      "name": "setCombatActionTimeline",
+      "UID": "aad6f3ee-733f-400b-a9a6-1e165c188a50",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "51": {
+      "name": "stopEffectStr",
+      "UID": "e24fadef-c6ab-439b-b550-8931276929e9",
+      "effectId": "Eff_Parmon_10143_Skill_Ex02",
+      "target": "OWNER",
+      "NodeID": 51
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "overrideAutoCastDis": 3,
+  "preloadAnims": [
+    "Skill_Ex"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10143_Skill_Ex",
+    "Eff_Hit_Electric_Blunt",
+    "Eff_Parmon_10143_Skill_Ex02",
+    "Eff_Parmon_10143_Light",
+    "Eff_Parmon_10143_Buff_ChargeLightStart_001",
+    "Eff_Parmon_10143_Buff_ChargeLightLoop_001"
+  ],
+  "searchRelation": 2,
+  "name": "水母大招自爆",
+  "searchTargetRangeRadius": 5,
+  "searchTargetRangeUp": 1.5,
+  "shortDesc": "水母大招自爆",
+  "searchTargetRangeDown": 0.5,
+  "preloadCutScenes": [
+    "$Parmon_10143_Skill_Ex_Timeline.prefab",
+    "$Parmon_1014301_Skill_Ex_Timeline.prefab",
+    "$Parmon_1014302_Skill_Ex_Timeline.prefab"
+  ],
+  "onAbilityEndIds": [
+    51
+  ],
+  "onlyHasActOnTargets": true,
+  "abilityParamId": 10400150,
+  "cutSceneDuration": 2.49
+}

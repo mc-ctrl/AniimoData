@@ -1,0 +1,43 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_902130100",
+  "NodeID": 0,
+  "hasAttackDataInOnProjectileHit": false,
+  "effectId": "Eff_Parmon_10011_Attack",
+  "enableMaxAngleTime": 0,
+  "gravityRatio": 0,
+  "groundDestroy": true,
+  "kind": "Tracking",
+  "maxAngularOffset": 100,
+  "maxHitNum": 1,
+  "minAngularOffset": 50,
+  "moveSpeed": 8,
+  "onProjectileFinishIds": [
+    21
+  ],
+  "onProjectileHitIds": [
+    21
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 100,
+  "relation": 2,
+  "startNoGravityTime": 0.8,
+  "sweepRadius": 0.15,
+  "sweepShape": 0,
+  "tickInterval": 0,
+  "startSleepTime": 0,
+  "nodeMap": {
+    "21": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "7293bc7d-d863-4aa4-aa95-aef6716056b5",
+      "effectId": "Eff_Parmon_10011_Attack_Hit",
+      "speed": 1,
+      "NodeID": 21
+    }
+  },
+  "groundSweepRadius": 0.05,
+  "duration": 2.5,
+  "acceleration": 0
+}

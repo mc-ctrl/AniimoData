@@ -1,0 +1,2674 @@
+{
+  "109010": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 8,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 25,
+      "distanceStart": 15,
+      "multiple": 1.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "109014": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 96,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 64,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "109016": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 32,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 16,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 9.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "109018": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": 45,
+      "angleStart": -45
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 96,
+      "angleEnd": 45,
+      "angleStart": -45
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 64,
+      "angleEnd": 45,
+      "angleStart": -45
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 15,
+      "multiple": 48,
+      "angleEnd": 45,
+      "angleStart": -45
+    }
+  ],
+  "109019": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 9.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 50,
+      "distanceStart": 14,
+      "multiple": 0.008,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110001": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 2,
+      "multiple": 4.8,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 7,
+      "multiple": 2.4,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 12,
+      "multiple": 1.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110002": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 9.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3.5,
+      "distanceStart": 1,
+      "multiple": 2.4,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3.5,
+      "multiple": 1.2,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 8.5,
+      "distanceStart": 6,
+      "multiple": 0.8,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110003": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 2,
+      "multiple": 4.8,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 7,
+      "multiple": 2.4,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 12,
+      "multiple": 1.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110004": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 1.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3.5,
+      "distanceStart": 1,
+      "multiple": 1.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 8.5,
+      "distanceStart": 3.5,
+      "multiple": 1.6,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 8.5,
+      "multiple": 0.08,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110005": [
+    {
+      "distanceEnd": 4.5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110007": [
+    {
+      "distanceEnd": 12,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110008": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 3,
+      "multiple": 40,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 7,
+      "multiple": 16,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 12,
+      "multiple": 0,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110009": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 60,
+      "angleStart": -60,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 3.2,
+      "angleEnd": 60,
+      "angleStart": -60,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 10,
+      "multiple": 1.6,
+      "angleEnd": 60,
+      "angleStart": -60,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110010": [
+    {
+      "distanceEnd": 0.2,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110011": [
+    {
+      "distanceEnd": 7,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 45,
+      "angleStart": -45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110012": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 40,
+      "distanceStart": 10,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110022": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 4.8,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 10,
+      "multiple": 3.2,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110032": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 10,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110042": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1,
+      "multiple": 4,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110052": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 5,
+      "distanceStart": 2,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "110062": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 15,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "124011": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 3,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 32,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "124012": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "124013": [
+    {
+      "distanceEnd": 7,
+      "distanceStart": 0,
+      "multiple": 12,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "124014": [
+    {
+      "distanceEnd": 4,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 8,
+      "distanceStart": 4,
+      "multiple": 8,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "124015": [
+    {
+      "distanceEnd": 10,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 10,
+      "multiple": 12,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "124016": [
+    {
+      "distanceEnd": 10,
+      "distanceStart": 0,
+      "multiple": 40,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 10,
+      "multiple": 32,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "124017": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 32,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 6.4,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 3.2,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "124018": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "190012": [
+    {
+      "distanceEnd": 100,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "210012": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 6,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "210022": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 6,
+      "multiple": 3.2,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "210032": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 6,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "210042": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1,
+      "multiple": 4,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 5,
+      "distanceStart": 3,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "210052": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "210062": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 15,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "210063": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 6,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "212011": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 5,
+      "distanceStart": 2,
+      "multiple": 64,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 8,
+      "distanceStart": 5,
+      "multiple": 32,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "212012": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "212013": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 12,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "212014": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 8,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "212015": [
+    {
+      "distanceEnd": 10,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 10,
+      "multiple": 12,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "212016": [
+    {
+      "distanceEnd": 10,
+      "distanceStart": 0,
+      "multiple": 40,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 10,
+      "multiple": 32,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "212017": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 32,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 2,
+      "multiple": 6.4,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 4,
+      "multiple": 3.2,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "212018": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 32,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "218010": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 2,
+      "multiple": 8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 4,
+      "multiple": 3.2,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 16,
+      "distanceStart": 8,
+      "multiple": 0.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "218014": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 96,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 64,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "218016": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 32,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 4.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 2.4,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "218018": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": 270,
+      "angleStart": 90
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 96,
+      "angleEnd": 270,
+      "angleStart": 90
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 64,
+      "angleEnd": 270,
+      "angleStart": 90
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 15,
+      "multiple": 48,
+      "angleEnd": 270,
+      "angleStart": 90
+    }
+  ],
+  "218019": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 9.6,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 50,
+      "distanceStart": 14,
+      "multiple": 0.008,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220001": [
+    {
+      "distanceEnd": 2.5,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 2.5,
+      "multiple": 2.4,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 5.5,
+      "distanceStart": 4,
+      "multiple": 1.6,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 8,
+      "distanceStart": 5.5,
+      "multiple": 0.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220002": [
+    {
+      "distanceEnd": 1.25,
+      "distanceStart": 0,
+      "multiple": 9.6,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 2.5,
+      "distanceStart": 1.25,
+      "multiple": 1.2,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3.75,
+      "distanceStart": 2.5,
+      "multiple": 0.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 5,
+      "distanceStart": 3.75,
+      "multiple": 0.4,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220003": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 2,
+      "multiple": 4.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 7,
+      "multiple": 2.4,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 12,
+      "multiple": 1.6,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220004": [
+    {
+      "distanceEnd": 1.25,
+      "distanceStart": 0,
+      "multiple": 1.6,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 2.5,
+      "distanceStart": 1.25,
+      "multiple": 1.6,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 5,
+      "distanceStart": 2.5,
+      "multiple": 1.6,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 5,
+      "multiple": 0.08,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220007": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 24,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 2,
+      "multiple": 4.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220008": [
+    {
+      "distanceEnd": 2.5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 2.5,
+      "multiple": 40,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 5.5,
+      "distanceStart": 4,
+      "multiple": 16,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 5.5,
+      "multiple": 8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220009": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 0,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 2,
+      "distanceStart": 1,
+      "multiple": 0,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220010": [
+    {
+      "distanceEnd": 0.2,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "220011": [
+    {
+      "distanceEnd": 1.5,
+      "distanceStart": 0,
+      "multiple": 24,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 1.5,
+      "multiple": 4.8,
+      "angleEnd": 270,
+      "angleStart": 90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "290012": [
+    {
+      "distanceEnd": 100,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "304510": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 9,
+      "distanceStart": 6,
+      "multiple": 4.8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 18,
+      "distanceStart": 9,
+      "multiple": 1.6,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "304514": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 96,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 64,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "304516": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 32,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 12.8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "304518": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": -45,
+      "angleStart": -90
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 96,
+      "angleEnd": -45,
+      "angleStart": -90
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 64,
+      "angleEnd": -45,
+      "angleStart": -90
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 15,
+      "multiple": 48,
+      "angleEnd": -45,
+      "angleStart": -90
+    }
+  ],
+  "304519": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 9.6,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 50,
+      "distanceStart": 14,
+      "multiple": 0.008,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "324011": [
+    {
+      "distanceEnd": 10,
+      "distanceStart": 0,
+      "multiple": 64,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 30,
+      "distanceStart": 10,
+      "multiple": 36,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330001": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 4.8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 9,
+      "distanceStart": 6,
+      "multiple": 2.8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 9,
+      "multiple": 2.4,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330002": [
+    {
+      "distanceEnd": 1.5,
+      "distanceStart": 0,
+      "multiple": 9.6,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1.5,
+      "multiple": 2.4,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4.5,
+      "distanceStart": 3,
+      "multiple": 1.4,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 4.5,
+      "multiple": 1.2,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330003": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 2,
+      "multiple": 4.8,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 7,
+      "multiple": 2.4,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 12,
+      "multiple": 1.6,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330004": [
+    {
+      "distanceEnd": 1.5,
+      "distanceStart": 0,
+      "multiple": 1.6,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1.5,
+      "multiple": 1.6,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 3,
+      "multiple": 1.6,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 7,
+      "multiple": 0.08,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330007": [
+    {
+      "distanceEnd": 9,
+      "distanceStart": 0,
+      "multiple": 72,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330008": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 40,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 9,
+      "distanceStart": 6,
+      "multiple": 16,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 9,
+      "multiple": 0,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330009": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 0,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 2,
+      "distanceStart": 1,
+      "multiple": 0,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330010": [
+    {
+      "distanceEnd": 0.2,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "330011": [
+    {
+      "distanceEnd": 7,
+      "distanceStart": 0,
+      "multiple": 72,
+      "angleEnd": -45,
+      "angleStart": -90,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "404510": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 9,
+      "distanceStart": 6,
+      "multiple": 4.8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 18,
+      "distanceStart": 9,
+      "multiple": 1.6,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "404514": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 96,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 64,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "404516": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 32,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 12.8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "404518": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 128,
+      "angleEnd": 90,
+      "angleStart": 45
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 96,
+      "angleEnd": 90,
+      "angleStart": 45
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 10,
+      "multiple": 64,
+      "angleEnd": 90,
+      "angleStart": 45
+    },
+    {
+      "distanceEnd": 20,
+      "distanceStart": 15,
+      "multiple": 48,
+      "angleEnd": 90,
+      "angleStart": 45
+    }
+  ],
+  "404519": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 9.6,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 10,
+      "multiple": 4.8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 50,
+      "distanceStart": 14,
+      "multiple": 0.008,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "412011": [
+    {
+      "distanceEnd": 10,
+      "distanceStart": 0,
+      "multiple": 64,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 30,
+      "distanceStart": 10,
+      "multiple": 36,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440001": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 4.8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 9,
+      "distanceStart": 6,
+      "multiple": 2.8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 9,
+      "multiple": 2.4,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440002": [
+    {
+      "distanceEnd": 1.5,
+      "distanceStart": 0,
+      "multiple": 9.6,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1.5,
+      "multiple": 2.4,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4.5,
+      "distanceStart": 3,
+      "multiple": 1.4,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 4.5,
+      "multiple": 1.2,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440003": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 19.2,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 2,
+      "multiple": 4.8,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 7,
+      "multiple": 2.4,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 12,
+      "multiple": 1.6,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440004": [
+    {
+      "distanceEnd": 1.5,
+      "distanceStart": 0,
+      "multiple": 1.6,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1.5,
+      "multiple": 1.6,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 7,
+      "distanceStart": 3,
+      "multiple": 1.6,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 15,
+      "distanceStart": 7,
+      "multiple": 0.08,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440007": [
+    {
+      "distanceEnd": 9,
+      "distanceStart": 0,
+      "multiple": 72,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440008": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 40,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 9,
+      "distanceStart": 6,
+      "multiple": 16,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 9,
+      "multiple": 0,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440009": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 0,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    },
+    {
+      "distanceEnd": 2,
+      "distanceStart": 1,
+      "multiple": 0,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440010": [
+    {
+      "distanceEnd": 0.2,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "440011": [
+    {
+      "distanceEnd": 7,
+      "distanceStart": 0,
+      "multiple": 72,
+      "angleEnd": 90,
+      "angleStart": 45,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240001": [
+    {
+      "distanceEnd": 4,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 8,
+      "distanceStart": 4,
+      "multiple": 3.2,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 13,
+      "distanceStart": 8,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240002": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 2,
+      "multiple": 4,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4.5,
+      "distanceStart": 3,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240003": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 5.36,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 14,
+      "distanceStart": 5,
+      "multiple": 1.04,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 14,
+      "multiple": 0.56,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240004": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 3.2,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "1240006": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 80,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 10,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240007": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 3.2,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 6,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240008": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 2,
+      "distanceStart": 1,
+      "multiple": 4,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 2,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240009": [
+    {
+      "distanceEnd": 20,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1240010": [
+    {
+      "distanceEnd": 5,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 10,
+      "distanceStart": 5,
+      "multiple": 16,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 17,
+      "distanceStart": 10,
+      "multiple": 1.6,
+      "angleEnd": 120,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "1360101": [
+    {
+      "distanceEnd": 10,
+      "distanceStart": 0,
+      "multiple": 0.8,
+      "angleEnd": 240,
+      "angleStart": -120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "2120001": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 5,
+      "distanceStart": 2,
+      "multiple": 3.2,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 9,
+      "distanceStart": 5,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "2120002": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 3,
+      "distanceStart": 1,
+      "multiple": 4,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 3,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "2120003": [
+    {
+      "distanceEnd": 4,
+      "distanceStart": 0,
+      "multiple": 5.36,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 8,
+      "distanceStart": 4,
+      "multiple": 1.04,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 8,
+      "multiple": 0.56,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "2120004": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 3.2,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "2120007": [
+    {
+      "distanceEnd": 2,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 2,
+      "multiple": 3.2,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 4,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "2120008": [
+    {
+      "distanceEnd": 1,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 2,
+      "distanceStart": 1,
+      "multiple": 4,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 4,
+      "distanceStart": 2,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ],
+  "2120009": [
+    {
+      "distanceEnd": 20,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    }
+  ],
+  "2120010": [
+    {
+      "distanceEnd": 3,
+      "distanceStart": 0,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 6,
+      "distanceStart": 3,
+      "multiple": 16,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 1
+    },
+    {
+      "distanceEnd": 12,
+      "distanceStart": 6,
+      "multiple": 1.6,
+      "angleEnd": 240,
+      "angleStart": 120,
+      "deformationTerrorFlag": 0
+    }
+  ]
+}

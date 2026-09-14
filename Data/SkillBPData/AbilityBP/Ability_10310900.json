@@ -1,0 +1,39 @@
+{
+  "BPName": "ability_10310900",
+  "NodeID": 1,
+  "UID": "0416f57a-057a-4854-96aa-dda9a83aa240",
+  "abilityParamId": 9400061,
+  "abilityType": 9,
+  "aiSelectWeight": 1,
+  "checkExistBurrow": false,
+  "nodeMap": {
+    "8": {
+      "timelineId": 10310900001,
+      "name": "setCombatActionTimeline",
+      "UID": "5a656db1-4b4f-4c4c-a694-377b45bf89b2",
+      "target": "CASTER",
+      "NodeID": 8
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_ShadowBuff"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_10031_Skill_ShadowBbuff_Hide",
+    "Eff_Parmon_10031_GhostFlame",
+    "Eff_Parmon_10031_GhostFlame_End",
+    "Eff_Parmon_10032_GhostFlame"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 0,
+  "searchTargetRangeUp": 0,
+  "subAbilityIds": [
+    10310910
+  ],
+  "searchTargetRangeDown": 0
+}

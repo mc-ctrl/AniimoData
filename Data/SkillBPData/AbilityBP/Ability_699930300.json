@@ -1,0 +1,95 @@
+{
+  "BPName": "ability_699930300",
+  "NodeID": 1,
+  "isAim": true,
+  "desc": "",
+  "abilityType": 2,
+  "aiSelectWeight": 0,
+  "checkExistBurrow": false,
+  "isCharge": true,
+  "nodeMap": {
+    "8": {
+      "timelineId": 699930300001,
+      "name": "setCombatActionTimeline",
+      "UID": "d65a6cb7-d6ce-493d-b0c0-f0631640c4fa",
+      "target": "CASTER",
+      "NodeID": 8
+    },
+    "78": {
+      "name": "stopEffectStr",
+      "UID": "b84362c3-8cab-4607-b9f8-74cbfa22a4e2",
+      "effectId": "Eff_Parmon_69993_Skill_FireBall_Loop",
+      "target": "OWNER",
+      "NodeID": 78
+    },
+    "76": {
+      "startPosOffset": [
+        0,
+        0.1,
+        0
+      ],
+      "duration": 5,
+      "name": "enableSupportAimEffect",
+      "UID": "3e3b9b25-fa1e-40c5-9901-c87df93ce921",
+      "startNoGravityTime": 0,
+      "gravityRatio": 1,
+      "rotationOffset": [
+        20,
+        0,
+        0
+      ],
+      "acceleration": 0,
+      "NodeID": 76,
+      "enable": false,
+      "moveSpeed": 20
+    },
+    "74": {
+      "NodeID": 74,
+      "UID": "935d8e45-1957-4ccc-addd-1dcc05c0c034",
+      "blendTime": 0.6,
+      "cameraPitchOffset": 0,
+      "cameraYawOffset": -5,
+      "maxPitch": 25,
+      "shoulderX": 0.8,
+      "shoulderY": 0,
+      "shoulderZ": -0.3,
+      "name": "setIsInAim",
+      "aimAnim": "Skill_MudBowling_Loop",
+      "aimOffsetAnim": "",
+      "aimOffsetMaxPitch": 0,
+      "aimOffsetParam": "",
+      "checkHookClawReachDistance": false,
+      "minPitch": -35,
+      "showAimUI": false,
+      "val": false
+    }
+  },
+  "onAbilityCastIds": [
+    8
+  ],
+  "onlyCastWithPet": false,
+  "preloadAnims": [
+    "Skill_FireBall_Start",
+    "Skill_FireBall_Loop",
+    "Skill_FireBall_End"
+  ],
+  "preloadEffs": [
+    "Eff_Parmon_69993_Skill_FireBall_Bullet",
+    "Eff_Parmon_69993_Skill_FireBall_Explode",
+    "Eff_Parmon_69993_Skill_FireBall_Loop",
+    "Eff_Parmon_69993_Skill_FireBall_Fire",
+    "Eff_Parmon_69993_Skill_FireBall_Start"
+  ],
+  "searchRelation": 2,
+  "name": "",
+  "searchTargetRangeRadius": 8,
+  "searchTargetRangeUp": 5,
+  "onAbilityEndIds": [
+    74,
+    78,
+    76
+  ],
+  "searchTargetRangeDown": 5,
+  "abilityParamId": 10500600,
+  "UID": "a6e839a9-1bba-435b-9417-5a0b531bb63f"
+}

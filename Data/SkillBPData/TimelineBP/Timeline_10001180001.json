@@ -1,0 +1,101 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "f8066761-91ff-436c-b3d1-dcf6edf4cf3f",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "13": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "22743e5d-3be3-47a8-922e-6434199d6d9d",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 13
+    },
+    "14": {
+      "UID": "72ddf266-e9a4-43d1-b5e0-af66ee6ee4f7",
+      "label": 0,
+      "name": "isPuppetLabel",
+      "NodeID": 14
+    },
+    "10": {
+      "enablePlayEffectStr": false,
+      "name": "puppetPreCastAction",
+      "enableOverrideSkillHitPos": false,
+      "UID": "12e691e4-e93e-4746-9340-d3f866c5ea43",
+      "target": "OWNER",
+      "enableFrameFreeze": false,
+      "NodeID": 10
+    },
+    "8": {
+      "target": "CASTER",
+      "duration": 0,
+      "buffId": 11115,
+      "NodeID": 8,
+      "UID": "aabc1578-833e-4809-8d34-56b66f9746b0",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "9": {
+      "action": {
+        "actionIds": [
+          8
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 9,
+      "UID": "e048a020-a2e4-445f-878b-b649029e89e9"
+    },
+    "11": {
+      "actionIds": [
+        10
+      ],
+      "conditionActionIds": [
+        14
+      ],
+      "UID": "65d847b7-fa8c-4d8c-84b4-63bab461b9c5",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        13
+      ],
+      "NodeID": 11
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "f5171493-7b82-4053-8312-4f50e2d4a3b3",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "EnvBehav_NectarSucking"
+    },
+    "12": {
+      "UID": "b2e662ae-ad18-4115-8ff7-9979df04c602",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          11
+        ]
+      },
+      "NodeID": 12
+    }
+  },
+  "BPName": "ability_10001180",
+  "NodeID": 5,
+  "UID": "d5219f23-91c1-4c1e-acd8-d97e9e8681c9",
+  "eventIds": [
+    3,
+    9,
+    12
+  ],
+  "layer": "Base",
+  "length": 6
+}

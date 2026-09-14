@@ -1,0 +1,79 @@
+{
+  "stackRule": 0,
+  "nodeMap": {
+    "5": {
+      "actionIds": [
+        9,
+        12,
+        13
+      ],
+      "conditionActionIds": [
+        4
+      ],
+      "UID": "6ac1fcd5-e744-423f-ab2e-e7ac63dd9fd7",
+      "name": "doActionsByConditions",
+      "NodeID": 5
+    },
+    "4": {
+      "UID": "a1fc9e5f-0719-45e1-b990-83e4fc0168b1",
+      "name": "isCalcResultCritical",
+      "NodeID": 4
+    },
+    "9": {
+      "key": "10324Target",
+      "name": "setCacheVal",
+      "UID": "f8f5201a-5725-492b-90aa-336e899cd72d",
+      "target": "SRC",
+      "val": {
+        "UID": "c7061c86-fba1-4be2-9ad5-29455016fe65",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 8
+      },
+      "NodeID": 9
+    },
+    "6": {
+      "UID": "01c34215-3e5b-4ca3-a9aa-9ff01724d9d7",
+      "name": "registerPostAttackEvent",
+      "actionIds": [
+        5
+      ],
+      "NodeID": 6
+    },
+    "11": {
+      "pos": "POS_OR_TARGET",
+      "target": {
+        "UID": "c7061c86-fba1-4be2-9ad5-29455016fe65",
+        "name": "getEventPostAttackTarget",
+        "NodeID": 8
+      },
+      "name": "playEffectOnPosRot",
+      "UID": "823f3edb-abf3-480e-a083-ffea65bf9cfc",
+      "effectId": "Eff_Parmon_10324_Skill_ThornsField_03",
+      "speed": 1,
+      "NodeID": 11
+    },
+    "13": {
+      "eventName": "beHit",
+      "name": "notifyCustomEvent",
+      "UID": "2a4b8990-13f8-4df4-8f17-4072a71c9991",
+      "target": "SRC",
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "a4510e34-01e8-406e-8bc7-1f676d69b3ec",
+      "name": "callClientAction",
+      "actionIds": [
+        11
+      ],
+      "NodeID": 12
+    }
+  },
+  "BPName": "buff_2132401",
+  "dynamicRPCStates": {},
+  "UID": "dc3e583e-b485-43f7-8656-9dce91d2be15",
+  "NodeID": 1,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    6
+  ]
+}

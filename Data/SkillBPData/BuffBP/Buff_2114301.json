@@ -1,0 +1,92 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2114301",
+  "NodeID": 1,
+  "UID": "3968bd98-3f1e-4a34-9800-891767903f6d",
+  "desc": "",
+  "parentDynamicRPCStates": {},
+  "tags": [
+    10
+  ],
+  "onBuffThinkIds": [
+    9
+  ],
+  "inheritGroupEffect": [
+    {
+      "effectId": "Eff_Parmon_10143_Skill_HaloMax_Huan"
+    }
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "22": {
+      "UID": "3a6a980f-386a-4c53-ba74-794c261f6ebe",
+      "effectId": "Eff_Parmon_10143_Skill_HaloMax_Huan",
+      "name": "dropEffectStr",
+      "NodeID": 22
+    },
+    "4": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "a272a239-55f5-458f-ba06-62b278d9b5aa",
+      "name": "buffStartThink",
+      "NodeID": 4
+    },
+    "9": {
+      "actionIds": [
+        25
+      ],
+      "conditionActionIds": [
+        7
+      ],
+      "UID": "339404f6-7da2-4ee3-a8dd-a7840cd0b2ce",
+      "name": "doActionsByConditions",
+      "elseActionIds": [
+        20,
+        24
+      ],
+      "NodeID": 9
+    },
+    "25": {
+      "value": 10,
+      "epCostReason": 1,
+      "name": "costEp",
+      "UID": "d86a9c1e-5086-4cc7-8ac6-344f2ffb1fda",
+      "target": "OWNER",
+      "NodeID": 25
+    },
+    "24": {
+      "buffId": 2114302,
+      "name": "removeBuff",
+      "UID": "79092613-1bee-40bc-ab30-6821728bef36",
+      "target": "OWNER",
+      "NodeID": 24
+    },
+    "20": {
+      "buffId": 2114301,
+      "name": "removeBuff",
+      "UID": "20f4c70e-d185-45c6-a105-1b80bd0efa03",
+      "target": "OWNER",
+      "NodeID": 20
+    },
+    "7": {
+      "rValue": 90,
+      "name": "greater",
+      "UID": "bf395ee7-3708-4587-b21c-ad8987541785",
+      "NodeID": 7,
+      "lValue": {
+        "name": "getAttribute",
+        "UID": "aa12746e-9900-4360-a9ca-47264254878c",
+        "target": "OWNER",
+        "NodeID": 6,
+        "attributeName": "ep_cur"
+      }
+    }
+  },
+  "isUnSummonKeep": false,
+  "onBuffDestroyIds": [
+    22
+  ],
+  "onBuffStartIds": [
+    4
+  ]
+}

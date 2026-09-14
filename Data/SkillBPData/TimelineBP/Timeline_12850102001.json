@@ -1,0 +1,642 @@
+{
+  "nodeMap": {
+    "37": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.3,
+        1,
+        0.5
+      ],
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "a1598fa1-3617-4e49-ae0a-bf89fe9209ad",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+      "offsetRotation": [
+        -40,
+        0,
+        0
+      ],
+      "NodeID": 37
+    },
+    "39": {
+      "action": {
+        "actionIds": [
+          37,
+          40
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.3,
+      "NodeID": 39,
+      "UID": "facad3c4-f008-4076-a5cc-71485fe3b910"
+    },
+    "40": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "916b05fd-85d1-4884-a8cd-5f5da3dc1fed",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "NodeID": 40
+    },
+    "54": {
+      "targetPos": "TARGET",
+      "innerRadius": 0,
+      "name": "randomPoint",
+      "UID": "c17d9d8d-7b2d-4948-8e17-e9b0bd006654",
+      "radius": 5,
+      "NodeID": 54
+    },
+    "64": {
+      "offsetXYZ": [
+        0.3,
+        2,
+        0
+      ],
+      "templateId": 12850102003,
+      "name": "createProjectile",
+      "UID": "394e5a62-5447-41ca-9856-2b588ca6c844",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "RANDOM_POINT",
+      "NodeID": 64,
+      "offsetRotation": [
+        40,
+        0,
+        0
+      ]
+    },
+    "35": {
+      "pos": "RANDOM_POINT",
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "54740c1b-af0d-48cf-9a75-424fde9d3d21",
+      "effectId": "Eff_Parmon_10023_Skill_Warning_Landingattack",
+      "speed": 0.95,
+      "NodeID": 35
+    },
+    "84": {
+      "action": {
+        "actionIds": [
+          90,
+          82,
+          89
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.14,
+      "NodeID": 84,
+      "UID": "62208c7f-031c-487d-a1d4-00a638a209b4"
+    },
+    "66": {
+      "action": {
+        "actionIds": [
+          72,
+          64,
+          71
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.34,
+      "NodeID": 66,
+      "UID": "c035b42b-d5d8-483d-b54a-7893a4cf156d"
+    },
+    "118": {
+      "offsetXYZ": [
+        0.3,
+        2,
+        -0.5
+      ],
+      "templateId": 12850102006,
+      "name": "createProjectile",
+      "UID": "6db344c2-7967-4740-8806-750fc5037439",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "RANDOM_POINT",
+      "NodeID": 118,
+      "offsetRotation": [
+        40,
+        0,
+        0
+      ]
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "241345f5-2c34-4759-b2e8-79904d855810",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Skill_Ex"
+    },
+    "3": {
+      "UID": "8de77bbb-e2fc-48cb-b5e3-0836dcd7c052",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2
+        ]
+      },
+      "NodeID": 3
+    },
+    "71": {
+      "pos": "RANDOM_POINT",
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "ecdcd5c4-8b20-424d-b17a-a25e55656554",
+      "effectId": "Eff_Parmon_10023_Skill_Warning_Landingattack",
+      "speed": 0.95,
+      "NodeID": 71
+    },
+    "72": {
+      "targetPos": "TARGET",
+      "innerRadius": 0,
+      "name": "randomPoint",
+      "UID": "ad5b205a-8f6a-46dc-9cfe-b83045eaacdc",
+      "radius": 5,
+      "NodeID": 72
+    },
+    "73": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.3,
+        1,
+        0
+      ],
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "d1d9ddde-b0ef-4e70-ab5f-efa184baf437",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+      "offsetRotation": [
+        -40,
+        0,
+        0
+      ],
+      "NodeID": 73
+    },
+    "125": {
+      "pos": "RANDOM_POINT",
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "4eef36cc-c308-46c5-9ae1-4c85ed3722a0",
+      "effectId": "Eff_Parmon_10023_Skill_Warning_Landingattack",
+      "speed": 0.95,
+      "NodeID": 125
+    },
+    "93": {
+      "action": {
+        "actionIds": [
+          91,
+          94
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.2,
+      "NodeID": 93,
+      "UID": "8edd6024-72bd-40cd-86c4-b971000efd3f"
+    },
+    "94": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "0b95c5b9-b542-46ab-8266-2059ebc29094",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "NodeID": 94
+    },
+    "127": {
+      "UID": "62728335-0656-4f24-985c-b6769eb9073d",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 127
+    },
+    "126": {
+      "targetPos": "TARGET",
+      "innerRadius": 0,
+      "name": "randomPoint",
+      "UID": "5ea2f8ac-c608-410b-9118-36e68ad468b5",
+      "radius": 5,
+      "NodeID": 126
+    },
+    "120": {
+      "action": {
+        "actionIds": [
+          126,
+          118,
+          125
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.94,
+      "NodeID": 120,
+      "UID": "3501da94-8ac5-4d35-8730-57605092746e"
+    },
+    "112": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "affb016d-1ad9-4502-a42d-1e3357aaf85f",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "NodeID": 112
+    },
+    "15": {
+      "UID": "71b2a897-6750-49e5-8705-71d160e05d7b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 15
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          17
+        ]
+      },
+      "eventType": "Notify",
+      "time": 3,
+      "NodeID": 18,
+      "UID": "731a6d88-b9bf-43dd-b764-f021e525e588"
+    },
+    "108": {
+      "targetPos": "TARGET",
+      "innerRadius": 0,
+      "name": "randomPoint",
+      "UID": "cfd0f752-0a5d-4d87-a453-31f31abc431b",
+      "radius": 5,
+      "NodeID": 108
+    },
+    "107": {
+      "pos": "RANDOM_POINT",
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "1496bac0-6383-464c-8975-14768d0866d9",
+      "effectId": "Eff_Parmon_10023_Skill_Warning_Landingattack",
+      "speed": 0.95,
+      "NodeID": 107
+    },
+    "82": {
+      "offsetXYZ": [
+        -0.3,
+        2,
+        0
+      ],
+      "templateId": 12850102004,
+      "name": "createProjectile",
+      "UID": "67262497-eb56-4949-843d-03a7e2426a08",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "RANDOM_POINT",
+      "NodeID": 82,
+      "offsetRotation": [
+        40,
+        0,
+        0
+      ]
+    },
+    "90": {
+      "targetPos": "TARGET",
+      "innerRadius": 0,
+      "name": "randomPoint",
+      "UID": "4f33bad0-64f6-4d9a-8b4e-4abc418a6772",
+      "radius": 5,
+      "NodeID": 90
+    },
+    "91": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.3,
+        1,
+        -0.5
+      ],
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "eab69b4b-b802-48bc-af6e-b1e6b6535189",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+      "offsetRotation": [
+        -40,
+        0,
+        0
+      ],
+      "NodeID": 91
+    },
+    "100": {
+      "offsetXYZ": [
+        -0.3,
+        2,
+        -0.5
+      ],
+      "templateId": 12850102005,
+      "name": "createProjectile",
+      "UID": "98f15d7a-89cf-4110-ac49-3b329e0749ee",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "RANDOM_POINT",
+      "NodeID": 100,
+      "offsetRotation": [
+        40,
+        0,
+        0
+      ]
+    },
+    "9": {
+      "UID": "904b0d11-0b4e-4729-929d-57356c794b22",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 9
+    },
+    "89": {
+      "pos": "RANDOM_POINT",
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "ea92f8c7-1d6f-487c-b3f4-1865498173fa",
+      "effectId": "Eff_Parmon_10023_Skill_Warning_Landingattack",
+      "speed": 0.95,
+      "NodeID": 89
+    },
+    "102": {
+      "action": {
+        "actionIds": [
+          108,
+          100,
+          107
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.64,
+      "NodeID": 102,
+      "UID": "166194d7-9f12-450a-91d2-f1f16f8e6899"
+    },
+    "11": {
+      "UID": "2fc2498d-180b-43b9-a52d-4f9945ca35f0",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9,
+          127
+        ]
+      },
+      "NodeID": 11
+    },
+    "53": {
+      "pos": "RANDOM_POINT",
+      "scale": 2,
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "9dc57471-112b-4bfc-9b93-0ad588ba16ff",
+      "effectId": "Eff_Parmon_10023_Skill_Warning_Landingattack",
+      "speed": 0.95,
+      "NodeID": 53
+    },
+    "21": {
+      "action": {
+        "actionIds": [
+          19,
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 21,
+      "UID": "bd5b00dc-e571-4b10-9515-5920676da5d1"
+    },
+    "22": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5adf0c02-e863-4cb3-a477-7101a1c1e1c2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "NodeID": 22
+    },
+    "13": {
+      "UID": "d738e7b0-9f31-4cf8-932d-3a0c19ded357",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0
+      },
+      "NodeID": 13
+    },
+    "55": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.3,
+        1,
+        0
+      ],
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "7addbba2-30c4-4a3b-a963-0937c35d536a",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+      "offsetRotation": [
+        -40,
+        0,
+        0
+      ],
+      "NodeID": 55
+    },
+    "48": {
+      "action": {
+        "actionIds": [
+          54,
+          46,
+          53
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.84,
+      "NodeID": 48,
+      "UID": "c9a818ac-547b-4695-88ea-0824cb288037"
+    },
+    "46": {
+      "offsetXYZ": [
+        0.3,
+        2,
+        0.5
+      ],
+      "templateId": 12850102002,
+      "name": "createProjectile",
+      "UID": "2028494d-fe8c-42a4-893f-8c6e92a0780a",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "RANDOM_POINT",
+      "NodeID": 46,
+      "offsetRotation": [
+        40,
+        0,
+        0
+      ]
+    },
+    "75": {
+      "action": {
+        "actionIds": [
+          73,
+          76
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.6,
+      "NodeID": 75,
+      "UID": "e0718ba1-2d47-46e9-928e-5e1baedc699b"
+    },
+    "57": {
+      "action": {
+        "actionIds": [
+          55,
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 57,
+      "UID": "6bd7ce13-ba7e-48bd-9afb-927fe8359053"
+    },
+    "76": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "c5fcc915-0e92-48ca-b6ed-9ed88d6d3053",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "NodeID": 76
+    },
+    "58": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "28e63506-5439-4094-b36f-89766655da1b",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10285_Skill_Bullet_Soil",
+      "NodeID": 58
+    },
+    "28": {
+      "offsetXYZ": [
+        -0.3,
+        2,
+        0.5
+      ],
+      "templateId": 12850102001,
+      "name": "createProjectile",
+      "UID": "87c4d879-6ce8-4ec6-89d1-957de5485e43",
+      "rotation": "ToTarget",
+      "pos": "CASTER",
+      "projectileType": "Tracking",
+      "targetPos": "RANDOM_POINT",
+      "NodeID": 28,
+      "offsetRotation": [
+        40,
+        0,
+        0
+      ]
+    },
+    "109": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        0.3,
+        1,
+        -0.5
+      ],
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "6f734f5c-b6c6-41b3-b9b1-a8093f3e25f6",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+      "offsetRotation": [
+        -40,
+        0,
+        0
+      ],
+      "NodeID": 109
+    },
+    "30": {
+      "action": {
+        "actionIds": [
+          36,
+          28,
+          35
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.54,
+      "NodeID": 30,
+      "UID": "db8b35f1-6b08-4566-a457-e7bc03423ce3"
+    },
+    "17": {
+      "UID": "91317ed3-5089-4b49-b58c-574a53f12dae",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "cancellable": 1
+      },
+      "NodeID": 17
+    },
+    "19": {
+      "target": "OWNER",
+      "offsetXYZ": [
+        -0.3,
+        1,
+        0.5
+      ],
+      "speed": 2,
+      "name": "playEffectStr",
+      "UID": "3e7cd340-e4e8-4928-b8d5-3179d23f9de9",
+      "effectId": "Eff_Parmon_10285_Skill_Bullet_Soil_Start_02",
+      "offsetRotation": [
+        -40,
+        0,
+        0
+      ],
+      "NodeID": 19
+    },
+    "111": {
+      "action": {
+        "actionIds": [
+          109,
+          112
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 111,
+      "UID": "545d261d-02b9-4b4b-8023-8f0e987081b1"
+    },
+    "36": {
+      "targetPos": "TARGET",
+      "innerRadius": 0,
+      "name": "randomPoint",
+      "UID": "d4dd8fb8-66ea-44c5-a768-68f08d0ff4cb",
+      "radius": 5,
+      "NodeID": 36
+    }
+  },
+  "BPName": "ability_12850102",
+  "NodeID": 5,
+  "UID": "8975dfa1-f998-44b4-801b-e16211b03f1d",
+  "eventIds": [
+    11,
+    15,
+    18,
+    111,
+    3,
+    48,
+    39,
+    93,
+    102,
+    120,
+    57,
+    66,
+    75,
+    84,
+    21,
+    30
+  ],
+  "layer": "Base",
+  "length": 5
+}

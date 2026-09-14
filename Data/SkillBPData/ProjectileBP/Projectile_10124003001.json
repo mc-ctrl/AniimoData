@@ -1,0 +1,88 @@
+{
+  "angularIncreaseDuration": 0,
+  "BPName": "ability_10124003",
+  "defaultHitSoundType": "h",
+  "effectId": "Eff_Parmon_10012_Attack04_Bullet",
+  "enableMaxAngleTime": 0.3,
+  "gravityRatio": 0.1,
+  "kind": "Tracking",
+  "maxAngularOffset": 0,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    20
+  ],
+  "onProjectileHitIds": [
+    24,
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0.2,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "27": {
+      "calcInfo": {
+        "add_cur_ep_rate": 1.4
+      },
+      "name": "calcResult",
+      "UID": "228007ae-5bbe-4f8b-a010-56da01ed0697",
+      "target": "CASTER",
+      "NodeID": 27
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "6b83711e-2f43-4165-b380-63c6b9a84279",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    },
+    "24": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 1.4
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "impulseId": 3001,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": 10001
+      },
+      "UID": "1668ecc9-38e4-4451-b624-9f01415fc619",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 24
+    },
+    "30": {
+      "UID": "38708b00-c5e2-4d5d-bee8-7de0640feb1d",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 30
+    },
+    "20": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "a93f9c9f-16c9-462a-b60b-bf44d4ea49d2",
+      "effectId": "Eff_Parmon_10012_Attack04_Hit",
+      "speed": 1,
+      "NodeID": 20
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 1.5,
+  "calcResultNodeId": 24,
+  "impulseId": 3001,
+  "acceleration": 0
+}

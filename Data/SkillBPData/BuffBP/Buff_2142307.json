@@ -1,0 +1,85 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2142307",
+  "name": "战斗非战斗模型显隐",
+  "UID": "b950e056-810a-43c7-bd21-e55045dbc927",
+  "tags": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffRefreshIds": [
+    8,
+    11
+  ],
+  "onBuffThinkIds": [
+    7
+  ],
+  "NodeID": 1,
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "target": "OWNER",
+      "NodeID": 5,
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2142307,
+        "instant_dmg_rate_v": "param0",
+        "type": 1
+      },
+      "UID": "04b9416b-8164-4c81-ab1a-da5225fca200",
+      "checkValidTarget": false,
+      "overridePower": 1,
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 30101,
+        "hitFrameFreezeId": 10022,
+        "elementType": 2,
+        "isPlayRadialBlur": true,
+        "impulseId": 2000
+      }
+    },
+    "10": {
+      "name": "stopEffectStr",
+      "UID": "883f53a2-7a4a-40f9-89c0-8225ffc0a97c",
+      "effectId": "Eff_Parmon_10133_Debuff_Deceleration",
+      "target": "OWNER",
+      "NodeID": 10
+    },
+    "11": {
+      "delay": 0,
+      "interval": 1,
+      "UID": "ec4c7d5c-891b-45bb-853b-996e19ad05b7",
+      "name": "buffStartThink",
+      "NodeID": 11
+    },
+    "7": {
+      "actionIds": [
+        5
+      ],
+      "NodeID": 7,
+      "UID": "7ed1f25b-8138-42af-b490-562da799c6b4",
+      "cd": 1,
+      "target": "OWNER",
+      "name": "doActionsInCd"
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bb74c908-c813-4fb9-991c-47031f43538e",
+      "effectId": "Eff_Parmon_10133_Debuff_Deceleration",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    10
+  ],
+  "onBuffStartIds": [
+    8,
+    11
+  ]
+}

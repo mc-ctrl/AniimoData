@@ -1,0 +1,216 @@
+[
+  {
+    "invincible": 3,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "dead": 3,
+    "partner": 2
+  },
+  {
+    "self": 2
+  },
+  {
+    "group": 2,
+    "dead": 1,
+    "partner": 2
+  },
+  {
+    "partner": 2,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "spectator": 3,
+    "owner": 2,
+    "dead": 3,
+    "team": 2
+  },
+  {
+    "enemy": 2
+  },
+  {
+    "player": 2,
+    "dead": 3,
+    "spectator": 3
+  },
+  {
+    "spirit": 3,
+    "neutral": 2,
+    "self": 3,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "masterspirit": 2,
+    "selfmaster": 2,
+    "dead": 3,
+    "self": 2
+  },
+  {
+    "partner": 2
+  },
+  {
+    "self": 2,
+    "dead": 3,
+    "spirit": 2
+  },
+  {
+    "self": 3,
+    "dead": 3,
+    "partner": 2
+  },
+  {
+    "neutral": 2,
+    "partner": 2,
+    "self": 3,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "dead": 1,
+    "self": 2
+  },
+  {
+    "neutral": 2,
+    "partner": 2,
+    "enemy": 2
+  },
+  {
+    "partner": 1,
+    "self": 2,
+    "selfmaster": 2,
+    "dead": 3,
+    "team": 2
+  },
+  {
+    "spirit": 3,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "partner": 1,
+    "self": 2,
+    "selfspirit": 2,
+    "dead": 3,
+    "team": 2
+  },
+  {
+    "halfblood": 1,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "spirit": 3,
+    "boss": 2,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "dead": 3,
+    "spirit": 1
+  },
+  {
+    "spirit": 1,
+    "player": 3,
+    "self": 2,
+    "selfspirit": 2,
+    "masterspirit": 2,
+    "selfmaster": 3,
+    "dead": 3,
+    "team": 2
+  },
+  {
+    "self": 3,
+    "team": 2,
+    "dead": 3,
+    "partner": 1
+  },
+  {
+    "dead": 1,
+    "player": 2
+  },
+  {
+    "owner": 2,
+    "player": 1,
+    "self": 3,
+    "spectator": 3,
+    "dead": 3,
+    "team": 2
+  },
+  {
+    "dead": 3,
+    "selfmaster": 1
+  },
+  {
+    "spirit": 3,
+    "partner": 1,
+    "self": 2,
+    "dead": 3,
+    "team": 2
+  },
+  {
+    "owner": 2,
+    "self": 3,
+    "spectator": 3,
+    "dead": 3,
+    "player": 1
+  },
+  {
+    "owner": 3,
+    "boss": 3,
+    "dead": 3,
+    "neutral": 3,
+    "npc": 3,
+    "partner": 3,
+    "self": 3,
+    "selfspirit": 3,
+    "spectator": 3,
+    "team": 3
+  },
+  {
+    "player": 1,
+    "enemy": 1
+  },
+  {
+    "spirit": 3,
+    "player": 1,
+    "partner": 2,
+    "self": 3,
+    "dead": 3,
+    "spectator": 3
+  },
+  {
+    "spirit": 3,
+    "player": 1,
+    "partner": 2,
+    "self": 3,
+    "dead": 3,
+    "team": 1
+  },
+  {
+    "spirit": 3,
+    "neutral": 2,
+    "partner": 2,
+    "self": 3,
+    "dead": 3,
+    "enemy": 2
+  },
+  {
+    "spirit": 1,
+    "team": 2,
+    "dead": 3,
+    "partner": 1
+  },
+  {
+    "spirit": 1,
+    "dead": 3,
+    "partner": 1
+  },
+  {
+    "spirit": 2,
+    "player": 2,
+    "enemy": 1
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_270010033",
+  "NodeID": 1,
+  "UID": "9e577bf2-7e0e-4f9e-a2f7-c0a3fa832569",
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "4": {
+      "key": "WaterTower",
+      "name": "setRoguePersistData",
+      "UID": "2800a1d6-9e33-4f41-a72e-48aa056be189",
+      "value": {
+        "UID": "c7be285e-a68e-441f-9f6f-55ae202e7607",
+        "number": 1,
+        "name": "constNumber",
+        "NodeID": 3
+      },
+      "NodeID": 4
+    }
+  },
+  "isUnSummonKeep": true,
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    4
+  ]
+}

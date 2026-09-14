@@ -1,0 +1,233 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "5": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2146304,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 4
+      },
+      "UID": "8418d968-d959-4513-bee1-7ef79ccce158",
+      "target": "TARGET",
+      "NodeID": 5,
+      "attackData": {
+        "applyRootMotion": false,
+        "impulseId": 6000,
+        "elementType": 6,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "hitFrameFreezeId": 10001,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 0
+      }
+    },
+    "13": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "d21b6c1b-e3db-4583-92d4-4751b62fe687",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_IceSurf_Break",
+      "NodeID": 13
+    },
+    "24": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 22,
+      "NodeID": 24,
+      "UID": "a298db41-97c4-4b62-a117-bfe003697073",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 6000,
+      "actionIds": [
+        22
+      ]
+    },
+    "15": {
+      "UID": "246fa402-2070-4ba2-9469-f9834ea12784",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          32,
+          13,
+          33
+        ]
+      },
+      "NodeID": 15
+    },
+    "7": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 5,
+      "NodeID": 7,
+      "UID": "e857b73b-e8ee-49ca-af35-80f93297bb8e",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            4.5,
+            2,
+            0.5
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "OWNER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 6000,
+      "actionIds": [
+        5
+      ]
+    },
+    "16": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "97be48e0-0965-4460-929b-8df9e8904532",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10463_Skill_IceSurf_Storm_Loop",
+      "NodeID": 16
+    },
+    "27": {
+      "name": "stopEffectStr",
+      "UID": "fa827300-0690-4271-93d2-f8c79d310cfe",
+      "effectId": "Eff_Parmon_10463_Skill_IceSurf_02_Loop_01",
+      "target": "OWNER",
+      "NodeID": 27
+    },
+    "29": {
+      "UID": "aa19b1d8-a03e-4f20-b461-5bb91eb5b639",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          27,
+          34
+        ]
+      },
+      "NodeID": 29
+    },
+    "9": {
+      "tickInterval": 0.5,
+      "eventType": "NotifyState",
+      "endTime": 6.5,
+      "NodeID": 9,
+      "UID": "3c134837-3f7d-4f6e-ae49-c8b4a53dffa0",
+      "onUpdate": {
+        "actionIds": [
+          7
+        ]
+      },
+      "startTime": 0,
+      "onEnter": {
+        "actionIds": [
+          24,
+          16
+        ]
+      }
+    },
+    "18": {
+      "UID": "187d9c3f-7f77-4c6d-98ea-61c5bc865588",
+      "eventType": "Notify",
+      "time": 0.9,
+      "NodeID": 18
+    },
+    "32": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c7836448-e456-40d6-b37e-4e8c16d45a6e",
+      "effectId": "Eff_Parmon_10463_Skill_IceSurf_02_Start_01",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "33": {
+      "scale": 1,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "886daeef-c3cb-4fee-9544-1ccfba29ce59",
+      "effectId": "Eff_Parmon_10463_Skill_IceSurf_02_Loop_01",
+      "speed": 1,
+      "NodeID": 33
+    },
+    "34": {
+      "name": "stopSoundStr",
+      "UID": "c07657c8-5934-41b6-b552-f3ca2abfa4d4",
+      "soundId": "SFX_Combat_10463_Skill_IceSurf_Storm_Loop",
+      "target": "OWNER",
+      "NodeID": 34
+    },
+    "22": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 2146304,
+        "instant_dmg_rate_v": "param0",
+        "reduce_cur_tp_rate": "param0",
+        "type": 4
+      },
+      "UID": "2f0ff8f9-155e-45c4-a50a-5343efad35cd",
+      "target": "TARGET",
+      "NodeID": 22,
+      "attackData": {
+        "hitFrameFreezeId": 10001,
+        "impulseId": 6000,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Grass_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "elementType": 6,
+        "hitSoundStr": "parmon_wolferno_attack_hit",
+        "hitCameraShakeId": 20100
+      }
+    }
+  },
+  "BPName": "timeline_2146304",
+  "NodeID": 1,
+  "UID": "75d10128-1466-4479-af3e-490614340aa0",
+  "eventIds": [
+    15,
+    9,
+    29,
+    18
+  ],
+  "layer": "Base",
+  "length": 6.5
+}

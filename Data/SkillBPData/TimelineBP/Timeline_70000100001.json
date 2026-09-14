@@ -1,0 +1,503 @@
+{
+  "nodeMap": {
+    "37": {
+      "name": "stopEffectStr",
+      "UID": "386e3cc0-1a4b-4b37-b08b-f517bc022013",
+      "effectId": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Right_Fire",
+      "target": "OWNER",
+      "NodeID": 37
+    },
+    "63": {
+      "UID": "c3a9e604-b95a-454d-bcec-0313fa2b1a35",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 63
+    },
+    "54": {
+      "scale": 0.7,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "0a8e0c7e-f420-42e7-a1f3-d09926eab36c",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Left_",
+        "name": "constString",
+        "UID": "f15c7c05-83d6-4703-9612-f2214c18317f",
+        "NodeID": 53,
+        "concatenateNumber": {
+          "UID": "d759c3c9-b512-4ecc-8ecd-fc0ffa6ffdca",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 52
+        }
+      },
+      "speed": 1,
+      "NodeID": 54
+    },
+    "65": {
+      "offsetXYZ": [
+        0,
+        0.15,
+        0
+      ],
+      "target": "TARGET",
+      "name": "playEffectStr",
+      "UID": "592f67c3-05f3-4210-a092-1295f79b3599",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Hit_",
+        "name": "constString",
+        "UID": "ad5a879d-6d93-4c03-8cc7-25ce58f7e99b",
+        "NodeID": 64,
+        "concatenateNumber": {
+          "UID": "c3a9e604-b95a-454d-bcec-0313fa2b1a35",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 63
+        }
+      },
+      "speed": 1,
+      "NodeID": 65
+    },
+    "66": {
+      "actionIds": [
+        65
+      ],
+      "conditionActionIds": [
+        73
+      ],
+      "UID": "9849fff6-2660-46c6-a27b-274bc1bf7f49",
+      "name": "doActionsByConditions",
+      "NodeID": 66
+    },
+    "67": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "690bb25e-f066-43fc-ba0a-cdd17889ea2a",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_Monster_Robot_Skill_Consec_Dmg",
+      "NodeID": 67
+    },
+    "68": {
+      "action": {
+        "actionIds": [
+          67
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 68,
+      "UID": "de6aef8e-df2c-4e28-8bd6-4344e5933c5a"
+    },
+    "69": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "5e727c3e-b0a9-4192-b02d-d9c2a316e0c6",
+      "isAbilityEndRemove": false,
+      "soundId": "stop_SFX_Combat_Monster_Robot_Skill_Consec_Dmg",
+      "NodeID": 69
+    },
+    "3": {
+      "calcInfo": {
+        "instant_dmg_hp_max_p": 0,
+        "instant_dmg_rate_v": 1
+      },
+      "attackData": {
+        "hitSoundType": "s",
+        "weaponSoundType": "slash",
+        "attackRotateMode": "CasterPos",
+        "hitSoundStr": "",
+        "hitCameraShakeId": 0,
+        "hitFrameFreezeId": 10021,
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_None_Blunt",
+            "posMode": "HitPos"
+          }
+        ],
+        "elementType": 0,
+        "impulseId": 2000,
+        "useCasterMainElement": true
+      },
+      "UID": "77bef9ff-ab2a-4bdc-ae0a-5f4d7f9e7de0",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 3
+    },
+    "60": {
+      "name": "stopEffectStr",
+      "UID": "644c9d27-9f64-4527-b255-8e0c33370986",
+      "effectId": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Normal",
+      "target": "OWNER",
+      "NodeID": 60
+    },
+    "71": {
+      "action": {
+        "actionIds": [
+          69,
+          72
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1.9,
+      "NodeID": 71,
+      "UID": "7f981730-4de0-432f-98a4-8e08af03e721"
+    },
+    "72": {
+      "name": "stopSoundStr",
+      "UID": "bdcf3191-85ae-400a-8d75-25bf76a015b1",
+      "soundId": "SFX_Combat_Monster_Robot_Skill_Consec_Dmg",
+      "target": "OWNER",
+      "NodeID": 72
+    },
+    "73": {
+      "name": "isActorType",
+      "UID": "e65e07d2-8c26-4508-925c-179fd0c9091a",
+      "target": "TARGET",
+      "NodeID": 73,
+      "actorType": 2
+    },
+    "58": {
+      "scale": 0.7,
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "707325be-613d-497c-bcde-20ede54e8153",
+      "effectId": {
+        "str": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Right_",
+        "name": "constString",
+        "UID": "852076b1-f6d4-40a9-8985-4958d2a25516",
+        "NodeID": 57,
+        "concatenateNumber": {
+          "UID": "b5e77dbd-c1e8-4d0f-a25b-fa74d56452cc",
+          "target": "CASTER",
+          "name": "getMainElementName",
+          "NodeID": 56
+        }
+      },
+      "speed": 1,
+      "NodeID": 58
+    },
+    "5": {
+      "name": "actOnTargets",
+      "needEcs": true,
+      "calcResultNodeId": 3,
+      "NodeID": 5,
+      "UID": "3410ce54-e4ae-435b-8116-7792e43dc23c",
+      "target": [
+        {
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.8,
+            75,
+            1.5,
+            0
+          ],
+          "shapeKind": "Sector3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "CASTER",
+          "maxNum": 0
+        }
+      ],
+      "impulseId": 2000,
+      "actionIds": [
+        3,
+        13,
+        66
+      ]
+    },
+    "7": {
+      "eventType": "NotifyState",
+      "endTime": 1.9,
+      "NodeID": 7,
+      "onExit": {
+        "actionIds": [
+          37,
+          60,
+          61,
+          62,
+          74,
+          76,
+          77
+        ]
+      },
+      "onUpdate": {
+        "actionIds": [
+          5
+        ]
+      },
+      "startTime": 1.1,
+      "tickInterval": 0.2,
+      "onEnter": {
+        "actionIds": [
+          5
+        ]
+      },
+      "UID": "bbe6df62-85a7-4b26-b372-52eb6327c8af"
+    },
+    "77": {
+      "name": "stopEffectStr",
+      "UID": "bea66e1d-eaa8-4658-b10c-2d6588029304",
+      "effectId": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Left_Water",
+      "target": "OWNER",
+      "NodeID": 77
+    },
+    "76": {
+      "name": "stopEffectStr",
+      "UID": "1d8d076f-c1a8-4f64-8d75-21c130d43076",
+      "effectId": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Left_Grass",
+      "target": "OWNER",
+      "NodeID": 76
+    },
+    "31": {
+      "action": {
+        "actionIds": [
+          30
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.1,
+      "NodeID": 31,
+      "UID": "2b088c14-43e8-426a-9b70-18235d93f6dd"
+    },
+    "30": {
+      "actionIds": [
+        28,
+        32
+      ],
+      "conditionActionIds": [
+        33
+      ],
+      "UID": "3a3176be-be5b-4fd6-a217-0a84446b1a21",
+      "name": "doActionsByConditions",
+      "NodeID": 30
+    },
+    "51": {
+      "action": {
+        "actionIds": [
+          50
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.15,
+      "NodeID": 51,
+      "UID": "13aa0c4f-a065-4021-a45d-e57c7ee93bca"
+    },
+    "24": {
+      "UID": "40c4a539-17d0-4318-b351-8234d0e5815c",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          22
+        ]
+      },
+      "NodeID": 24
+    },
+    "32": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "757c5a67-31fb-4027-b3de-bdd227227a9f",
+      "effectId": "Eff_Skill_Common_Warning",
+      "speed": 1,
+      "NodeID": 32
+    },
+    "20": {
+      "UID": "d8b239da-f6be-4c58-8a77-ef753a972845",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": {}
+      },
+      "NodeID": 20
+    },
+    "21": {
+      "UID": "dfd20175-a5eb-4b02-88f8-d89aed93f862",
+      "eventType": "Notify",
+      "time": 0.58,
+      "NodeID": 21
+    },
+    "22": {
+      "name": "playAnimation",
+      "offsetTime": 0,
+      "NodeID": 22,
+      "UID": "a5cd0f6f-c4f6-4bfd-a8ed-f659dcc36499",
+      "target": "OWNER",
+      "disableMotion": true,
+      "animId": "Gauntlet_Skill_Consec_Dmg"
+    },
+    "13": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.4
+      },
+      "name": "calcResult",
+      "UID": "4dd5ebc5-b8d5-4c4d-96bf-b5f20c5ad07f",
+      "target": "CASTER",
+      "NodeID": 13
+    },
+    "55": {
+      "action": {
+        "actionIds": [
+          54
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 55,
+      "UID": "e25ddcfb-148b-4cb2-8ea4-010b8d6e6914"
+    },
+    "74": {
+      "name": "stopEffectStr",
+      "UID": "199013b7-8bd9-400f-9376-8e16bbe6d3f7",
+      "effectId": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Left_Fire",
+      "target": "OWNER",
+      "NodeID": 74
+    },
+    "56": {
+      "UID": "b5e77dbd-c1e8-4d0f-a25b-fa74d56452cc",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 56
+    },
+    "46": {
+      "UID": "caf495fd-574d-4a02-a33f-44fd15bf6780",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 0,
+        "inCast": 0,
+        "inCombo": 0,
+        "inHit": 0,
+        "canMove": 0,
+        "inBackswing": 1
+      },
+      "NodeID": 46
+    },
+    "47": {
+      "action": {
+        "actionIds": [
+          46
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.2,
+      "NodeID": 47,
+      "UID": "033b5a31-9bf8-46e7-b387-46a0cd5f6a79"
+    },
+    "16": {
+      "lockTarget": "TARGET",
+      "name": "lockTarget",
+      "UID": "9fa6de09-a1b6-4aea-8493-b1bd71a636c6",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "52": {
+      "UID": "d759c3c9-b512-4ecc-8ecd-fc0ffa6ffdca",
+      "target": "CASTER",
+      "name": "getMainElementName",
+      "NodeID": 52
+    },
+    "28": {
+      "duration": 0.5,
+      "name": "frameFreeze",
+      "UID": "0e3d2ff6-8546-4e0b-a953-7b754de1f8eb",
+      "target": "OWNER",
+      "timeScale": 0.05,
+      "NodeID": 28
+    },
+    "59": {
+      "action": {
+        "actionIds": [
+          58
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 59,
+      "UID": "de2a7150-9e19-4093-8ec1-a835e790bd0f"
+    },
+    "18": {
+      "UID": "00b95b1f-b828-4e3b-94ce-a1b1afce4ac6",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "NodeID": 18
+    },
+    "50": {
+      "playTime": 0.9,
+      "stayTime": 0.2,
+      "name": "playIndicatorEff",
+      "UID": "7515be7d-6542-414a-9557-a68e89d3af0b",
+      "target": {
+        "offsetXYZ": [
+          0,
+          0,
+          0
+        ],
+        "shapeArgs": [
+          1.45,
+          1.45,
+          5,
+          0,
+          0
+        ],
+        "shapeKind": "Trapezoid3D",
+        "relation": 2,
+        "offsetRotation": [
+          0,
+          0,
+          0
+        ],
+        "center": "OWNER",
+        "maxNum": 0
+      },
+      "NodeID": 50
+    },
+    "33": {
+      "name": "isActorType",
+      "UID": "73622733-8ce8-4585-a3c3-0151e61164bc",
+      "target": "OWNER",
+      "NodeID": 33,
+      "actorType": 3
+    },
+    "61": {
+      "name": "stopEffectStr",
+      "UID": "48097f3f-3d4b-4cb7-ad92-b36562523480",
+      "effectId": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Right_Grass",
+      "target": "OWNER",
+      "NodeID": 61
+    },
+    "62": {
+      "name": "stopEffectStr",
+      "UID": "79bc56de-9916-46b5-87f6-d266ec5a51b8",
+      "effectId": "Eff_Monster_Robot_Atk_Gauntlet_Skill_Consec_Dmg_start_Right_Water",
+      "target": "OWNER",
+      "NodeID": 62
+    }
+  },
+  "BPName": "ability_70000100",
+  "NodeID": 9,
+  "UID": "8743a723-83d8-4fb6-b28c-d25af0344c2f",
+  "eventIds": [
+    18,
+    20,
+    24,
+    21,
+    55,
+    47,
+    7,
+    51,
+    31,
+    71,
+    68,
+    59
+  ],
+  "layer": "Base",
+  "length": 2.3
+}

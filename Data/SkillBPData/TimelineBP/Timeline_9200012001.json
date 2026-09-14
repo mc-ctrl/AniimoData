@@ -1,0 +1,105 @@
+{
+  "nodeMap": {
+    "4": {
+      "UID": "33aae208-9a12-4d00-b6b1-c2ad4fd56ad8",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          9,
+          11,
+          19,
+          20
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "UID": "ceb4c265-e743-4396-9051-13b7f3990f7b",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          13
+        ]
+      },
+      "NodeID": 14
+    },
+    "16": {
+      "UID": "677fb8f3-69dc-49ff-af7e-bdf6e5e74161",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 1,
+        "inCast": 0
+      },
+      "NodeID": 16
+    },
+    "13": {
+      "UID": "cd1b3151-350b-4636-90e0-e045fa73e39a",
+      "name": "setMask",
+      "mask": {
+        "inBackswing": 0,
+        "inCast": 0
+      },
+      "NodeID": 13
+    },
+    "9": {
+      "UID": "58212d45-ad3d-48ef-9905-4fd5cd44d68e",
+      "petState": 2,
+      "name": "setPetState",
+      "NodeID": 9
+    },
+    "18": {
+      "action": {
+        "actionIds": [
+          16
+        ]
+      },
+      "eventType": "Notify",
+      "time": 0.5,
+      "NodeID": 18,
+      "UID": "73fe4374-e1ae-46af-b059-2990a603c661"
+    },
+    "19": {
+      "UID": "50c1f074-13f3-4472-b876-d37fa15e9b65",
+      "target": "OWNER",
+      "name": "lockTarget",
+      "NodeID": 19
+    },
+    "11": {
+      "UID": "af340bad-d37c-41d8-93c7-73963c2593e1",
+      "name": "setMask",
+      "mask": {
+        "inCast": 1
+      },
+      "NodeID": 11
+    },
+    "20": {
+      "target": "OWNER",
+      "duration": 50,
+      "buffId": 920001201,
+      "NodeID": 20,
+      "UID": "3c923356-1d87-400a-b2a0-cfa918c3854d",
+      "layer": 1,
+      "name": "addTeamBuff",
+      "level": 1
+    },
+    "2": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "bd897ad5-4276-401e-9d19-a2eb67536eec",
+      "target": "OWNER",
+      "NodeID": 2,
+      "animId": "Command_Go"
+    }
+  },
+  "BPName": "ability_9200012",
+  "NodeID": 6,
+  "UID": "20c1c0f1-e709-45bc-ad60-adf6c014fd5d",
+  "eventIds": [
+    4,
+    18,
+    14
+  ],
+  "layer": "Base",
+  "length": 1.5
+}

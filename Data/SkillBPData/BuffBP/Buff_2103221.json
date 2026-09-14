@@ -1,0 +1,34 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2103221",
+  "NodeID": 1,
+  "UID": "06750221-9d46-444d-87e1-5c823fad4414",
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "target": "OWNER",
+      "duration": -1,
+      "buffId": 2103219,
+      "NodeID": 3,
+      "UID": "eeba5d6a-494b-4e7f-9db0-99cb97642b3b",
+      "layer": 1,
+      "name": "addBuff",
+      "level": 1
+    },
+    "5": {
+      "actionIds": [
+        3
+      ],
+      "name": "registerLeaveCombatEvent",
+      "UID": "1dd4c639-b5e4-4f2f-9377-8bbf3a1ca7d9",
+      "target": "OWNER",
+      "NodeID": 5
+    }
+  },
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    3,
+    5
+  ]
+}

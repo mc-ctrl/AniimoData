@@ -1,0 +1,72 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2107102",
+  "NodeID": 1,
+  "UID": "4e4245e2-f29d-498a-976f-53cf92d38e4d",
+  "tags": [
+    10
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "8": {
+      "switchTag": "Default",
+      "name": "setModelSwitchTag",
+      "UID": "5c563913-0f58-424c-a708-6427ec09c880",
+      "NodeID": 8,
+      "groupKey": 0
+    },
+    "4": {
+      "name": "stopEffectStr",
+      "UID": "e2320d92-3fbd-428e-8207-8db730668d99",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "target": "OWNER",
+      "NodeID": 4
+    },
+    "6": {
+      "switchTag": "Scare",
+      "name": "setModelSwitchTag",
+      "UID": "6c6c66b0-9282-4c21-b10c-ad9a902c206c",
+      "NodeID": 6,
+      "groupKey": 0
+    },
+    "10": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "9430be32-0ca3-43e6-95ec-414d88072736",
+      "effectId": "Eff_Parmon_10072_ChargeFur",
+      "speed": 1,
+      "NodeID": 10
+    },
+    "12": {
+      "offsetXYZ": [
+        0,
+        0.2,
+        0
+      ],
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cca49454-10e0-46b0-9408-f008189d9511",
+      "effectId": "Eff_Parmon_10072_ChargeFur_Biu",
+      "speed": 1,
+      "NodeID": 12
+    }
+  },
+  "calcInfo": {
+    "atk_mag_p": 0.2
+  },
+  "onBuffDestroyIds": [
+    4,
+    8
+  ],
+  "onBuffStartIds": [
+    12,
+    10,
+    6
+  ]
+}

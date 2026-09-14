@@ -1,0 +1,18 @@
+{
+  "stackRule": 0,
+  "calcInfo": {
+    "speed_ratio_speedburst_start_v": 0.2,
+    "speed_ratio_speedburst_loop_v": 0.2
+  },
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "immuneTags": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {},
+  "BPName": "buff_1040",
+  "parentDynamicRPCStates": {},
+  "name": "大世界竞速增益-疾行"
+}

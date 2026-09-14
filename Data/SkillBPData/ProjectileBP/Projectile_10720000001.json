@@ -1,0 +1,88 @@
+{
+  "angularIncreaseDuration": 1,
+  "BPName": "ability_10720000",
+  "defaultHitSoundType": "s",
+  "effectId": "Eff_Parmon_10072_Attack01",
+  "enableMaxAngleTime": 5,
+  "gravityRatio": 0,
+  "kind": "Tracking",
+  "maxAngularOffset": 30,
+  "maxHitNum": 1,
+  "minAngularOffset": 0,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    13
+  ],
+  "onProjectileHitIds": [
+    24,
+    28
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 0.1,
+  "sweepShape": 0,
+  "NodeID": 0,
+  "tickInterval": 0.05,
+  "nodeMap": {
+    "27": {
+      "calcInfo": {
+        "add_cur_ep_rate": 0.33
+      },
+      "name": "calcResult",
+      "UID": "bbefe01f-b0b8-499d-966b-772a417ff227",
+      "target": "CASTER",
+      "NodeID": 27
+    },
+    "13": {
+      "pos": "PROJECTILE",
+      "target": "OWNER",
+      "name": "playEffectOnPosRot",
+      "UID": "82b28c5c-b412-4dc6-848b-4e0d60c16225",
+      "effectId": "Eff_Parmon_10072_Skill_Hit",
+      "speed": 1,
+      "NodeID": 13
+    },
+    "24": {
+      "calcInfo": {
+        "instant_dmg_rate_v": 0.33
+      },
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "s",
+        "impulseId": 2000,
+        "attackRotateMode": "CasterPos",
+        "elementType": 0,
+        "hitSoundStr": "",
+        "hitCameraShakeId": -1
+      },
+      "UID": "0d1105c8-03ce-4a9f-b6fc-8fdd6b59aa29",
+      "target": "TARGET",
+      "name": "calcResult",
+      "NodeID": 24
+    },
+    "30": {
+      "UID": "eb3f6481-9156-4b76-b0a7-4c6298bcb2fb",
+      "target": "TARGET",
+      "name": "hasTarget",
+      "NodeID": 30
+    },
+    "28": {
+      "actionIds": [
+        27
+      ],
+      "conditionActionIds": [
+        30
+      ],
+      "UID": "099f76c1-daa2-4a11-8a36-a7290830f8a8",
+      "name": "doActionsByConditions",
+      "NodeID": 28
+    }
+  },
+  "startSleepTime": 0,
+  "duration": 1,
+  "calcResultNodeId": 24,
+  "impulseId": 2000,
+  "acceleration": 0
+}

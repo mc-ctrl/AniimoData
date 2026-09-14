@@ -1,0 +1,102 @@
+{
+  "loop": false,
+  "nodeMap": {
+    "22": {
+      "key": "2",
+      "duration": 0.9,
+      "actionIds": [
+        21
+      ],
+      "NodeID": 22,
+      "UID": "e52a4902-4e9e-4f1e-b5b7-72da3be5c86f",
+      "name": "addTimer"
+    },
+    "4": {
+      "UID": "40bdce56-e94d-48eb-8b2d-f587c7d5b2b4",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          2,
+          12
+        ]
+      },
+      "NodeID": 4
+    },
+    "14": {
+      "name": "stopEffectStr",
+      "UID": "f720bb8d-236e-4516-9d1d-ff96b0bce1f6",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_02",
+      "target": "OWNER",
+      "NodeID": 14
+    },
+    "25": {
+      "target": "OWNER",
+      "name": "playSoundStr",
+      "UID": "a85e386d-8478-497e-9bcb-dacbc90740e2",
+      "isAbilityEndRemove": false,
+      "soundId": "SFX_Combat_10286_Skill_Talus_End",
+      "NodeID": 25
+    },
+    "16": {
+      "action": {
+        "actionIds": [
+          17,
+          14,
+          25,
+          22
+        ]
+      },
+      "eventType": "Notify",
+      "time": 2.5,
+      "NodeID": 16,
+      "UID": "c3aa4c70-f3bc-4af1-8caa-889f5c357e4f"
+    },
+    "17": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "7fa4e128-e9c8-4b63-bf50-e39b0e15703d",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_02_End",
+      "speed": 1,
+      "NodeID": 17
+    },
+    "12": {
+      "eventName": "gesila10",
+      "NodeID": 12,
+      "UID": "bf29469f-6df7-4582-b57c-9a3405bee4f0",
+      "target": "OWNER",
+      "name": "registerCustomEvent",
+      "actionIds": [
+        11
+      ]
+    },
+    "11": {
+      "timelineId": 2128503201,
+      "name": "jumpToNextTimeline",
+      "UID": "292cc8fd-8730-4fe4-b5bb-c225ecb0e5dd",
+      "target": "OWNER",
+      "NodeID": 11
+    },
+    "2": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "bb7906ba-104b-42c2-977e-c55de96b0180",
+      "effectId": "Eff_Parmon_10285_Skill_Talus_02",
+      "speed": 1,
+      "NodeID": 2
+    },
+    "21": {
+      "UID": "3243b6a4-85ba-4899-8831-de1f403a053d",
+      "name": "destroyEntity",
+      "NodeID": 21
+    }
+  },
+  "BPName": "timeline_2128503",
+  "NodeID": 1,
+  "UID": "95399671-8696-485d-bb82-7250e32d0acb",
+  "eventIds": [
+    4,
+    16
+  ],
+  "layer": "Base",
+  "length": 6
+}

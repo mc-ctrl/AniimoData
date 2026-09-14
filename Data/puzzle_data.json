@@ -1,0 +1,670 @@
+[
+  {
+    "difficulty": 0,
+    "afterEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_01_BlindBox_b"
+    ],
+    "arkRewardId": 20001,
+    "beforeEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_01_BlindBox_a"
+    ],
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Blindbox_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1238553285,
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "mode": 0,
+    "problem": [
+      0,
+      2,
+      2,
+      0
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Blindbox_9(1).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(2).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(3).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(4).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(5).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(6).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(7).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(8).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(9).png"
+    ],
+    "successName": 1823996487,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Blindbox_wholeK.png",
+    "troubleTime": 0.2,
+    "editorName": "ARK拼图1盲盒",
+    "name": 1971018988,
+    "keyRes": "$UI_IMG_MediaPuzzle_Blindbox_whole.png"
+  },
+  {
+    "difficulty": 1,
+    "afterEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_02_Champion1_b"
+    ],
+    "arkRewardId": 20002,
+    "beforeEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_02_Champion1_a"
+    ],
+    "frameRes": [
+      "$UI_Img_Jigsaw_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1208993038,
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "mode": 0,
+    "problem": [
+      2,
+      2,
+      0,
+      3,
+      0
+    ],
+    "puzzleRes": [
+      "$UI_Img_Jigsaw_Times3_1_1.png",
+      "$UI_Img_Jigsaw_Times3_1_2.png",
+      "$UI_Img_Jigsaw_Times3_1_3.png",
+      "$UI_Img_Jigsaw_Times3_1_4.png",
+      "$UI_Img_Jigsaw_Times3_1_5.png",
+      "$UI_Img_Jigsaw_Times3_1_6.png",
+      "$UI_Img_Jigsaw_Times3_1_7.png",
+      "$UI_Img_Jigsaw_Times3_1_8.png",
+      "$UI_Img_Jigsaw_Times3_1_9.png"
+    ],
+    "successName": 1313640717,
+    "tipsRes": "$UI_Img_Jigsaw_Whole_1K.png",
+    "troubleTime": 0.2,
+    "editorName": "ARK拼图2冠军",
+    "name": 1323991465,
+    "keyRes": "$UI_Img_Jigsaw_Whole_1.png"
+  },
+  {
+    "difficulty": 1,
+    "name": 1907595654,
+    "editorName": "ARK拼图3宠家",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Apartment_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1821044849,
+    "keyRes": "$UI_IMG_MediaPuzzle_Apartment_whole.png",
+    "mode": 0,
+    "problem": [
+      2,
+      0,
+      3,
+      0,
+      2,
+      2
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Apartment_9(1).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(2).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(3).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(4).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(5).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(6).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(7).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(8).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(9).png"
+    ],
+    "successName": 1987331557,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Apartment_wholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20003
+  },
+  {
+    "difficulty": 0,
+    "name": 1935805757,
+    "editorName": "ARK拼图4咖啡",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Coffee_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1410230477,
+    "keyRes": "$UI_IMG_MediaPuzzle_Coffee_Whole.png",
+    "mode": 0,
+    "problem": [
+      0,
+      2,
+      2,
+      0
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Coffee(1).png",
+      "$UI_IMG_MediaPuzzle_Coffee(2).png",
+      "$UI_IMG_MediaPuzzle_Coffee(3).png",
+      "$UI_IMG_MediaPuzzle_Coffee(4).png",
+      "$UI_IMG_MediaPuzzle_Coffee(5).png",
+      "$UI_IMG_MediaPuzzle_Coffee(6).png",
+      "$UI_IMG_MediaPuzzle_Coffee(7).png",
+      "$UI_IMG_MediaPuzzle_Coffee(8).png",
+      "$UI_IMG_MediaPuzzle_Coffee(9).png"
+    ],
+    "successName": 1267502304,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Coffee_Wholek.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20004
+  },
+  {
+    "difficulty": 2,
+    "name": 1458923103,
+    "editorName": "ARK拼图5衣服",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Clothing1_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1093188163,
+    "keyRes": "$UI_IMG_MediaPuzzle_Clothing1_Whole.png",
+    "mode": 1,
+    "problem": [
+      2,
+      2,
+      2,
+      0,
+      3,
+      0,
+      0,
+      2
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Clothing1(1).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(2).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(3).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(4).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(5).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(6).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(7).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(8).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(9).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(10).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(11).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(12).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(13).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(14).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(15).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(16).png"
+    ],
+    "successName": 1552108601,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Clothing1_WholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20005
+  },
+  {
+    "difficulty": 2,
+    "name": 1989726274,
+    "editorName": "ARK拼图6时尚",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_FashionPet16_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1893684139,
+    "keyRes": "$UI_IMG_MediaPuzzle_FashionPet16_Whole.png",
+    "mode": 1,
+    "problem": [
+      0,
+      2,
+      2,
+      2,
+      0,
+      3,
+      0,
+      3,
+      3
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_FashionPet16(1).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(2).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(3).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(4).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(5).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(6).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(7).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(8).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(9).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(10).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(11).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(12).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(13).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(14).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(15).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(16).png"
+    ],
+    "successName": 1365333850,
+    "tipsRes": "$UI_IMG_MediaPuzzle_FashionPet16_WholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20006
+  },
+  {
+    "difficulty": 0,
+    "name": 1128314903,
+    "editorName": "ARK拼图7艾德尔地理",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Idyll1_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1852020095,
+    "keyRes": "$UI_IMG_MediaPuzzle_Idyll1_Whole.png",
+    "mode": 0,
+    "problem": [
+      2,
+      0,
+      0,
+      3
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Idyll1(1).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(2).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(3).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(4).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(5).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(6).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(7).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(8).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(9).png"
+    ],
+    "successName": 1268332588,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Idyll1_WholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20007
+  },
+  {
+    "difficulty": 2,
+    "name": 1993986362,
+    "editorName": "ARK拼图8皮头士",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Peatles_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1479989131,
+    "keyRes": "$UI_IMG_MediaPuzzle_Peatles_whole.png",
+    "mode": 1,
+    "problem": [
+      0,
+      2,
+      1,
+      3,
+      0,
+      0,
+      2,
+      2,
+      0,
+      3
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Peatles16(1).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(2).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(3).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(4).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(5).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(6).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(7).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(8).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(9).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(10).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(11).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(12).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(13).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(14).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(15).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(16).png"
+    ],
+    "successName": 1102463283,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Peatles_wholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20008
+  },
+  {
+    "difficulty": 0,
+    "afterEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_01_BlindBox_b"
+    ],
+    "arkRewardId": 20009,
+    "beforeEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_01_BlindBox_a"
+    ],
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Blindbox_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1904409553,
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "mode": 0,
+    "problem": [
+      0,
+      2,
+      2,
+      0
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Blindbox_9(1).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(2).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(3).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(4).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(5).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(6).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(7).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(8).png",
+      "$UI_IMG_MediaPuzzle_Blindbox_9(9).png"
+    ],
+    "successName": 1387381231,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Blindbox_wholeK.png",
+    "troubleTime": 0.2,
+    "editorName": "ARK拼图盲盒2",
+    "name": 1641679945,
+    "keyRes": "$UI_IMG_MediaPuzzle_Blindbox_whole.png"
+  },
+  {
+    "difficulty": 0,
+    "name": 1463814000,
+    "editorName": "ARK拼图咖啡2",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Coffee_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1735980178,
+    "keyRes": "$UI_IMG_MediaPuzzle_Coffee_Whole.png",
+    "mode": 0,
+    "problem": [
+      0,
+      2,
+      0,
+      2
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Coffee(1).png",
+      "$UI_IMG_MediaPuzzle_Coffee(2).png",
+      "$UI_IMG_MediaPuzzle_Coffee(3).png",
+      "$UI_IMG_MediaPuzzle_Coffee(4).png",
+      "$UI_IMG_MediaPuzzle_Coffee(5).png",
+      "$UI_IMG_MediaPuzzle_Coffee(6).png",
+      "$UI_IMG_MediaPuzzle_Coffee(7).png",
+      "$UI_IMG_MediaPuzzle_Coffee(8).png",
+      "$UI_IMG_MediaPuzzle_Coffee(9).png"
+    ],
+    "successName": 2086849960,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Coffee_Wholek.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20010
+  },
+  {
+    "name": 1518427796,
+    "difficulty": 0,
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "editorName": "ARK拼图艾德尔地理2",
+    "arkRewardId": 20011,
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Idyll1_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1211346099,
+    "keyRes": "$UI_IMG_MediaPuzzle_Idyll1_Whole.png",
+    "mode": 0,
+    "problem": [
+      0,
+      3,
+      0,
+      2
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Idyll1(1).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(2).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(3).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(4).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(5).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(6).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(7).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(8).png",
+      "$UI_IMG_MediaPuzzle_Idyll1(9).png"
+    ],
+    "successName": 1599542466,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Idyll1_WholeK2.png",
+    "troubleTime": 0.2,
+    "stopPosition": 8
+  },
+  {
+    "difficulty": 1,
+    "afterEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_02_Champion1_b"
+    ],
+    "arkRewardId": 20012,
+    "beforeEffs": [
+      "Eff_Env_SceneObject_MediaPuzzle_02_Champion1_a"
+    ],
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Champion1_Frame2.png"
+    ],
+    "game": 1,
+    "hint": 1075608963,
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "mode": 1,
+    "problem": [
+      0,
+      2,
+      0,
+      2,
+      0,
+      3,
+      3
+    ],
+    "puzzleRes": [
+      "$UI_Img_Jigsaw_Times4_1_1.png",
+      "$UI_Img_Jigsaw_Times4_1_2.png",
+      "$UI_Img_Jigsaw_Times4_1_3.png",
+      "$UI_Img_Jigsaw_Times4_1_4.png",
+      "$UI_Img_Jigsaw_Times4_1_5.png",
+      "$UI_Img_Jigsaw_Times4_1_6.png",
+      "$UI_Img_Jigsaw_Times4_1_7.png",
+      "$UI_Img_Jigsaw_Times4_1_8.png",
+      "$UI_Img_Jigsaw_Times4_1_9.png",
+      "$UI_Img_Jigsaw_Times4_1_10.png",
+      "$UI_Img_Jigsaw_Times4_1_11.png",
+      "$UI_Img_Jigsaw_Times4_1_12.png",
+      "$UI_Img_Jigsaw_Times4_1_13.png",
+      "$UI_Img_Jigsaw_Times4_1_14.png",
+      "$UI_Img_Jigsaw_Times4_1_15.png",
+      "$UI_Img_Jigsaw_Times4_1_16.png"
+    ],
+    "successName": 1952270250,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Champion1_16key.png",
+    "troubleTime": 0.2,
+    "editorName": "ARK拼图冠军2",
+    "name": 1674013890,
+    "keyRes": "$UI_Img_Jigsaw_Whole_1.png"
+  },
+  {
+    "difficulty": 1,
+    "name": 2039440647,
+    "editorName": "ARK拼图衣服2",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Clothing1_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1472372279,
+    "keyRes": "$UI_IMG_MediaPuzzle_Clothing1_Whole.png",
+    "mode": 1,
+    "problem": [
+      2,
+      2,
+      2,
+      0,
+      3,
+      0,
+      0,
+      2
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Clothing1(1).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(2).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(3).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(4).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(5).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(6).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(7).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(8).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(9).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(10).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(11).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(12).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(13).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(14).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(15).png",
+      "$UI_IMG_MediaPuzzle_Clothing1(16).png"
+    ],
+    "successName": 1603102686,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Clothing1_WholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20013
+  },
+  {
+    "difficulty": 2,
+    "name": 1256240101,
+    "editorName": "ARK拼图皮头士2",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Peatles_Frame.png"
+    ],
+    "game": 1,
+    "hint": 2074837830,
+    "keyRes": "$UI_IMG_MediaPuzzle_Peatles_whole.png",
+    "mode": 1,
+    "problem": [
+      0,
+      2,
+      1,
+      3,
+      0,
+      0,
+      2,
+      2,
+      0,
+      3,
+      3
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Peatles16(1).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(2).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(3).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(4).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(5).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(6).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(7).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(8).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(9).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(10).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(11).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(12).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(13).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(14).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(15).png",
+      "$UI_IMG_MediaPuzzle_Peatles16(16).png"
+    ],
+    "successName": 1697757135,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Peatles_wholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20014
+  },
+  {
+    "difficulty": 0,
+    "name": 2017177316,
+    "editorName": "ARK拼图宠家2",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_Apartment_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1704183504,
+    "keyRes": "$UI_IMG_MediaPuzzle_Apartment_whole.png",
+    "mode": 0,
+    "problem": [
+      2,
+      0,
+      3,
+      0,
+      2,
+      2,
+      1,
+      1,
+      3
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_Apartment_9(1).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(2).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(3).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(4).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(5).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(6).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(7).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(8).png",
+      "$UI_IMG_MediaPuzzle_Apartment_9(9).png"
+    ],
+    "successName": 2095066229,
+    "tipsRes": "$UI_IMG_MediaPuzzle_Apartment_wholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20015
+  },
+  {
+    "difficulty": 2,
+    "name": 2072031577,
+    "editorName": "ARK拼图时尚2",
+    "prefabResID": "$P_SceneObject_MediaPuzzle_1.prefab",
+    "frameRes": [
+      "$UI_IMG_MediaPuzzle_FashionPet16_Frame.png"
+    ],
+    "game": 1,
+    "hint": 1833223915,
+    "keyRes": "$UI_IMG_MediaPuzzle_FashionPet16_Whole.png",
+    "mode": 1,
+    "problem": [
+      1,
+      2,
+      1,
+      2,
+      2,
+      0,
+      3,
+      0,
+      2,
+      0,
+      3,
+      1,
+      1,
+      3,
+      0,
+      0,
+      3
+    ],
+    "puzzleRes": [
+      "$UI_IMG_MediaPuzzle_FashionPet16(1).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(2).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(3).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(4).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(5).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(6).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(7).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(8).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(9).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(10).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(11).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(12).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(13).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(14).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(15).png",
+      "$UI_IMG_MediaPuzzle_FashionPet16(16).png"
+    ],
+    "successName": 1249864705,
+    "tipsRes": "$UI_IMG_MediaPuzzle_FashionPet16_WholeK.png",
+    "troubleTime": 0.2,
+    "arkRewardId": 20016
+  }
+]

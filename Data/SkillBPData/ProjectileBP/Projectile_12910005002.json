@@ -1,0 +1,104 @@
+{
+  "duration": 1,
+  "calcResultNodeId": 56,
+  "defaultHitSoundType": "h",
+  "destroyOnHit": false,
+  "effectId": "Eff_Parmon_10293_SpecialAttack_LightningBlade01",
+  "ignoreActorCollision": false,
+  "gravityRatio": 0,
+  "groundDestroy": false,
+  "kind": "Free3d",
+  "ignoreNonActorCollision": true,
+  "maxHitNum": 9999,
+  "moveSpeed": 30,
+  "onProjectileFinishIds": [
+    68
+  ],
+  "onProjectileHitIds": [
+    58
+  ],
+  "performRatio": 0,
+  "puppetTrackingMaxAngular": 0,
+  "relation": 2,
+  "startNoGravityTime": 0,
+  "sweepRadius": 1.5,
+  "sweepShape": 0,
+  "tickInterval": 0.1,
+  "nodeMap": {
+    "56": {
+      "name": "calcResult",
+      "calcInfoByLuaConfig": {
+        "id": 12910005,
+        "instant_dmg_rate_v": "param0",
+        "type": 2
+      },
+      "UID": "0694a40a-f08f-45ef-9385-db48bd4c59e5",
+      "target": "TARGET",
+      "NodeID": 56,
+      "attackData": {
+        "hitFrameFreezeId": -1,
+        "hitSoundType": "h",
+        "hitEffect": [
+          {
+            "id": "Eff_Hit_Electric_Slash_Big",
+            "rotAngle": 80,
+            "posMode": "HitPos"
+          }
+        ],
+        "attackRotateMode": "CasterPos",
+        "impulseId": 2000,
+        "hitSoundStr": "battle_projectilehit_electric_s",
+        "elementType": 4
+      }
+    },
+    "68": {
+      "name": "stopSoundStr",
+      "UID": "bd80ea75-425b-46ad-aa5a-833a0e422ca4",
+      "soundId": "SFX_Combat_10291_Skill_SpecialAttack01_Loop",
+      "target": "OWNER",
+      "NodeID": 68
+    },
+    "58": {
+      "calcResultNodeId": 56,
+      "name": "actOnTargets",
+      "UID": "0d4e7da4-c907-41ec-9847-79a9e5959093",
+      "target": [
+        {
+          "maxNum": 0,
+          "offsetXYZ": [
+            0,
+            0,
+            0
+          ],
+          "shapeArgs": [
+            1.5,
+            3,
+            0
+          ],
+          "shapeKind": "Circle3D",
+          "relation": 2,
+          "offsetRotation": [
+            0,
+            0,
+            0
+          ],
+          "center": "TARGET",
+          "rotFrom": "TARGET_HIT"
+        }
+      ],
+      "hitBoxId": "1",
+      "hitBoxMaxHitCnt": 1,
+      "needEcs": true,
+      "actionIds": [
+        56
+      ],
+      "impulseId": 2000,
+      "NodeID": 58
+    }
+  },
+  "startSleepTime": 0,
+  "BPName": "ability_12910005",
+  "NodeID": 0,
+  "impulseId": 2000,
+  "acceleration": 0
+}

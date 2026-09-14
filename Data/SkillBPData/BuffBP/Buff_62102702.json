@@ -1,0 +1,82 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_62102702",
+  "NodeID": 1,
+  "UID": "42e8905e-9a14-4704-8414-11aa71186e24",
+  "tags": [
+    10
+  ],
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "5": {
+      "NodeID": 5,
+      "UID": "6764e7db-849e-4cd1-b82d-f1f46a89200b",
+      "name": "setProjAroundSelfData",
+      "isRoundSelf": true,
+      "rotateSpeed": 30,
+      "radius": 2,
+      "launchIntervalActionId": 4,
+      "maxCountActionId": 12,
+      "projectileActionId": 9,
+      "triggerCountActionId": 13
+    },
+    "4": {
+      "UID": "f4726e4f-c3ec-455b-b3ac-da02e49ea090",
+      "number": 0.1,
+      "name": "constNumber",
+      "NodeID": 4
+    },
+    "9": {
+      "offsetXYZ": [
+        0,
+        0.5,
+        0.2
+      ],
+      "templateId": 62102702101,
+      "name": "createProjectile",
+      "UID": "1541392e-f8e5-4385-9a1c-8c250ec04f05",
+      "rotation": "ToTarget",
+      "pos": "MASTER",
+      "projectileType": "Tracking",
+      "targetPos": "MASTER",
+      "NodeID": 9,
+      "offsetRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "10": {
+      "UID": "fd75f51d-b07f-483f-8b76-5cf6d2d7ebc9",
+      "number": 1,
+      "name": "constNumber",
+      "NodeID": 10
+    },
+    "11": {
+      "UID": "a4407761-b1dc-443a-824c-64b3287775b9",
+      "triggerCountActionId": 10,
+      "name": "addProjAroundSelf",
+      "NodeID": 11
+    },
+    "13": {
+      "UID": "5e78d4a2-7f66-447f-81be-a8cdfaf2f3a9",
+      "number": 1,
+      "name": "constNumber",
+      "NodeID": 13
+    },
+    "12": {
+      "UID": "0f344eb0-7fd9-4aa7-830b-042e3c02c0ca",
+      "number": 5,
+      "name": "constNumber",
+      "NodeID": 12
+    }
+  },
+  "onBuffLayerChangeIds": [
+    11
+  ],
+  "parentDynamicRPCStates": {},
+  "onBuffStartIds": [
+    5,
+    11
+  ]
+}

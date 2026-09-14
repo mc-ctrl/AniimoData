@@ -1,0 +1,156 @@
+{
+  "nodeMap": {
+    "3": {
+      "UID": "ed53cb38-534c-4ee7-b67a-78604fc0a144",
+      "name": "setMask",
+      "mask": {
+        "canRotate": 1,
+        "inCast": 0,
+        "canMove": 1,
+        "cancellable": 0
+      },
+      "NodeID": 3
+    },
+    "23": {
+      "name": "dropEffectStr",
+      "UID": "a1649694-243b-4292-984d-9cc285987044",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 23
+    },
+    "29": {
+      "UID": "a1c28809-2722-474a-b166-4c649919dc30",
+      "name": "triggerAbilityDelayEnterCd",
+      "NodeID": 29
+    },
+    "22": {
+      "name": "dropEffectStr",
+      "UID": "e8cf430f-84f3-4751-ba25-18828f9cfbab",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 22
+    },
+    "10": {
+      "UID": "bf15df61-f37c-49d5-b5dc-579c337b00da",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          9
+        ]
+      },
+      "NodeID": 10
+    },
+    "26": {
+      "name": "stopEffectStr",
+      "UID": "cfbe644c-e063-427e-9ae5-a5143fbf05a8",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 26
+    },
+    "25": {
+      "UID": "9a6cf16e-29b8-4ab1-8168-b63343d4dc46",
+      "eventType": "EventExit",
+      "action": {
+        "actionIds": [
+          23,
+          26,
+          29
+        ]
+      },
+      "NodeID": 25
+    },
+    "16": {
+      "timelineId": 12110900002,
+      "name": "jumpToNextTimeline",
+      "UID": "82d2704e-824e-4ca0-9ebe-7ab4e0bd319d",
+      "target": "OWNER",
+      "NodeID": 16
+    },
+    "27": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "cfe2b238-44d6-492d-bbe5-1dcfa663cf3a",
+      "effectId": "Eff_Parmon_10212_Skill_MagicFlower_Body_003",
+      "speed": 1,
+      "NodeID": 27
+    },
+    "28": {
+      "name": "stopEffectStr",
+      "UID": "36f9a289-1f80-4bf4-b822-74d10b9882e2",
+      "effectId": "Eff_Parmon_10212_Skill_MagicFlower_Body_003",
+      "target": "OWNER",
+      "NodeID": 28
+    },
+    "9": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "3c2f2b98-5a3a-41e4-bbd8-92a14a79572d",
+      "target": "OWNER",
+      "NodeID": 9,
+      "animId": "EnvBehav_Bloom"
+    },
+    "18": {
+      "time": 14,
+      "notShowCountDown": false,
+      "actionIds": [
+        22,
+        21,
+        28,
+        29,
+        16
+      ],
+      "aiTriggerTime": 1,
+      "UID": "746f3c62-cbd1-46c6-bc81-a215398841d8",
+      "onlyTriggerOnce": true,
+      "name": "registerRePressSkillSlot",
+      "NodeID": 18
+    },
+    "5": {
+      "UID": "363a0275-a5d0-41b8-b7e2-c7ac562652af",
+      "eventType": "EventEnter",
+      "action": {
+        "actionIds": [
+          3,
+          20,
+          27
+        ]
+      },
+      "NodeID": 5
+    },
+    "19": {
+      "action": {
+        "actionIds": [
+          18
+        ]
+      },
+      "eventType": "Notify",
+      "time": 1,
+      "NodeID": 19,
+      "UID": "8eb7ea59-20d8-43bf-822c-12155e557722"
+    },
+    "20": {
+      "UID": "97569e9b-3c6e-4661-9b59-34250e7c1a8a",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "name": "playGroundFlowerEffect",
+      "NodeID": 20
+    },
+    "21": {
+      "name": "stopEffectStr",
+      "UID": "c8bf3f55-d371-440d-9e6f-c43b9a3dad73",
+      "effectId": "Eff_Parmon_10211_Skill_FlowerDanceTrails",
+      "target": "OWNER",
+      "NodeID": 21
+    }
+  },
+  "BPName": "ability_12110900",
+  "NodeID": 7,
+  "UID": "4c63f8eb-1458-4b49-976a-835585a5e7e4",
+  "eventIds": [
+    5,
+    10,
+    25,
+    19
+  ],
+  "layer": "Base",
+  "length": 14
+}

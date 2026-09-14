@@ -1,0 +1,59 @@
+{
+  "stackRule": 0,
+  "BPName": "buff_2102712",
+  "NodeID": 1,
+  "UID": "19311f9f-056f-4ace-ab80-07b1d9a37bbd",
+  "tags": [
+    11,
+    3
+  ],
+  "parentDynamicRPCStates": {},
+  "dynamicRPCStates": {},
+  "nodeMap": {
+    "3": {
+      "UID": "b6743696-84ed-46b2-8911-3d449424e63f",
+      "name": "stopAnimation",
+      "anim": "StunLoop",
+      "NodeID": 3
+    },
+    "9": {
+      "name": "stopEffectStr",
+      "UID": "eff25b7f-2dae-4f3f-9bf4-dcbf68fcc2ac",
+      "effectId": "Eff_Debuff_stun",
+      "target": "OWNER",
+      "NodeID": 9
+    },
+    "5": {
+      "offsetTime": 0,
+      "name": "playAnimation",
+      "UID": "54fe6c2c-763e-4414-a7e1-db4e5ab92693",
+      "target": "OWNER",
+      "NodeID": 5,
+      "animId": "StunLoop"
+    },
+    "7": {
+      "UID": "5e89bbcc-db35-4405-b952-8119c4099171",
+      "name": "stopAnimation",
+      "anim": "StunEnd",
+      "NodeID": 7
+    },
+    "8": {
+      "target": "OWNER",
+      "name": "playEffectStr",
+      "UID": "c2d84f79-581c-43ba-9240-fdb4cd4dcdf8",
+      "effectId": "Eff_Debuff_stun",
+      "speed": 1,
+      "NodeID": 8
+    }
+  },
+  "isUnSummonKeep": true,
+  "onBuffDestroyIds": [
+    9,
+    3,
+    7
+  ],
+  "onBuffStartIds": [
+    5,
+    8
+  ]
+}
